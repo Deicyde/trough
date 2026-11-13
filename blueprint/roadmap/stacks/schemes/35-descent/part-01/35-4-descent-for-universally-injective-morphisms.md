@@ -8,13 +8,13 @@ proof: formalized
 
 # 35.4 Descent for universally injective morphisms
 
-Section 35.4 of the Stacks Project, [Tag 08WE](https://stacks.math.columbia.edu/tag/08WE). 23 tags here are carried by 39 declarations of the repository (all in StacksFrontier) and 10 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 35.4 of the Stacks Project, [Tag 08WE](https://stacks.math.columbia.edu/tag/08WE). 23 tags here are carried by 39 declarations of the repository (all in StacksFrontier) and 10 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 08WG, an equation
 
 [Tag 08WG](https://stacks.math.columbia.edu/tag/08WG) in the Stacks Project.
 
-**`Stacks.Descent.IsEqualizerDiagram`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/EqualizerDiagram.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/EqualizerDiagram.lean#L60). The attribute's comment: “the displayed diagram is an equalizer”.
+**`Stacks.Descent.IsEqualizerDiagram`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/EqualizerDiagram.lean, line 60](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/EqualizerDiagram.lean#L60). The attribute's comment: “the displayed diagram is an equalizer”.
 
 > The diagram `A ⟶ B ⇉ C` consisting of `f : A ⟶ B` and a parallel pair `g₁, g₂ : B ⟶ C`
 > *is an equalizer*: the two composites `f ≫ g₁` and `f ≫ g₂` agree, and `f` is universal for
@@ -31,13 +31,13 @@ structure IsEqualizerDiagram (f : A ⟶ B) (g₁ g₂ : B ⟶ C) : Prop
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.IsSplitEqualizer`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.IsSplitEqualizer#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch35.lean, line 19](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch35.lean#L19) (StacksFrontier): “as a structure carrying `h` and `i`; 'is a split equalizer' is its `Nonempty`”.
+- [`CategoryTheory.IsSplitEqualizer`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.IsSplitEqualizer#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch35.lean, line 19](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch35.lean#L19) (StacksFrontier): “as a structure carrying `h` and `i`; 'is a split equalizer' is its `Nonempty`”.
 
 ## Tag 08WK, a remark
 
 [Tag 08WK](https://stacks.math.columbia.edu/tag/08WK) in the Stacks Project.
 
-**`CategoryTheory.Functor.reflectsMonomorphisms_of_preservesFiniteLimits_of_reflectsZeroObjects`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/Exactness.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/Exactness.lean#L59). The attribute's comment: “monomorphisms”.
+**`CategoryTheory.Functor.reflectsMonomorphisms_of_preservesFiniteLimits_of_reflectsZeroObjects`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/Exactness.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/Exactness.lean#L59). The attribute's comment: “monomorphisms”.
 
 > A left exact functor between abelian categories which reflects zero objects reflects
 > monomorphisms.
@@ -48,7 +48,7 @@ theorem reflectsMonomorphisms_of_preservesFiniteLimits_of_reflectsZeroObjects
     (hF : ∀ X, IsZero (F.obj X) → IsZero X) : F.ReflectsMonomorphisms
 ```
 
-**`CategoryTheory.Functor.reflectsEpimorphisms_of_preservesFiniteColimits_of_reflectsZeroObjects`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/Exactness.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/Exactness.lean#L68). The attribute's comment: “epimorphisms”.
+**`CategoryTheory.Functor.reflectsEpimorphisms_of_preservesFiniteColimits_of_reflectsZeroObjects`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/Exactness.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/Exactness.lean#L68). The attribute's comment: “epimorphisms”.
 
 > A right exact functor between abelian categories which reflects zero objects reflects
 > epimorphisms.
@@ -59,7 +59,7 @@ theorem reflectsEpimorphisms_of_preservesFiniteColimits_of_reflectsZeroObjects
     (hF : ∀ X, IsZero (F.obj X) → IsZero X) : F.ReflectsEpimorphisms
 ```
 
-**`ModuleCat.extendScalars_isZero_iff_of_faithfullyFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/Exactness.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/Exactness.lean#L83). The attribute's comment: “faithfully flat extension of scalars detects zero objects”. References: EGA IV (2.2.7), “special case”.
+**`ModuleCat.extendScalars_isZero_iff_of_faithfullyFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/Exactness.lean, line 83](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/Exactness.lean#L83). The attribute's comment: “faithfully flat extension of scalars detects zero objects”. References: EGA IV (2.2.7), “special case”.
 
 > Extension of scalars along a faithfully flat ring homomorphism detects zero modules.
 
@@ -69,7 +69,7 @@ theorem extendScalars_isZero_iff_of_faithfullyFlat (f : R →+* S)
     IsZero ((ModuleCat.extendScalars f).obj M) ↔ IsZero M
 ```
 
-**`ModuleCat.extendScalars_reflectsMonomorphisms_of_faithfullyFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/Exactness.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/Exactness.lean#L95). The attribute's comment: “faithfully flat extension of scalars reflects monomorphisms”. References: SGA 1 IV (2.1), “special case”; SGA 4½ Arcata (1.4.2), “Clause (i), special case”.
+**`ModuleCat.extendScalars_reflectsMonomorphisms_of_faithfullyFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/Exactness.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/Exactness.lean#L95). The attribute's comment: “faithfully flat extension of scalars reflects monomorphisms”. References: SGA 1 IV (2.1), “special case”; SGA 4½ Arcata (1.4.2), “Clause (i), special case”.
 
 > Extension of scalars along a faithfully flat ring homomorphism reflects monomorphisms.
 
@@ -79,7 +79,7 @@ theorem extendScalars_reflectsMonomorphisms_of_faithfullyFlat (f : R →+* S)
     (ModuleCat.extendScalars.{u, u, u} f).ReflectsMonomorphisms
 ```
 
-**`ModuleCat.extendScalars_reflectsEpimorphisms_of_faithfullyFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/Exactness.lean, line 105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/Exactness.lean#L105). The attribute's comment: “faithfully flat extension of scalars reflects epimorphisms”. References: SGA 1 IV (2.1), “special case”.
+**`ModuleCat.extendScalars_reflectsEpimorphisms_of_faithfullyFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/Exactness.lean, line 105](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/Exactness.lean#L105). The attribute's comment: “faithfully flat extension of scalars reflects epimorphisms”. References: SGA 1 IV (2.1), “special case”.
 
 > Extension of scalars along a faithfully flat ring homomorphism reflects epimorphisms.
 
@@ -91,13 +91,13 @@ theorem extendScalars_reflectsEpimorphisms_of_faithfullyFlat (f : R →+* S)
 
 Declarations registered for the tag:
 
-- [`ModuleCat.preservesFiniteLimits_extendScalars_of_flat`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=ModuleCat.preservesFiniteLimits_extendScalars_of_flat#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/Exactness.lean, line 47](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/Exactness.lean#L47) (StacksFrontier): “exactness of extension of scalars”. References: EGA 0 (20.6.21), “partial”.
+- [`ModuleCat.preservesFiniteLimits_extendScalars_of_flat`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=ModuleCat.preservesFiniteLimits_extendScalars_of_flat#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/Exactness.lean, line 47](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/Exactness.lean#L47) (StacksFrontier): “exactness of extension of scalars”. References: EGA 0 (20.6.21), “partial”.
 
 ## Tag 08WL, a definition
 
 [Tag 08WL](https://stacks.math.columbia.edu/tag/08WL) in the Stacks Project.
 
-**`Algebra.UniversallyInjective`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/Defs.lean, line 45](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/Defs.lean#L45).
+**`Algebra.UniversallyInjective`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/Defs.lean, line 45](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/Defs.lean#L45).
 
 > A ring map `R → S` is universally injective as a map of `R`-modules: for every `R`-module
 > `Q`, the map `(Algebra.linearMap R S) ⊗ id_Q` is injective.
@@ -111,7 +111,7 @@ def Algebra.UniversallyInjective (R : Type u) [CommRing R] (S : Type u) [CommRin
 
 [Tag 08WM](https://stacks.math.columbia.edu/tag/08WM) in the Stacks Project.
 
-**`UniversallyInjective.of_split`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/Defs.lean, line 51](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/Defs.lean#L51). The attribute's comment: “module maps”.
+**`UniversallyInjective.of_split`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/Defs.lean, line 51](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/Defs.lean#L51). The attribute's comment: “module maps”.
 
 > A split injection of modules is universally injective.
 
@@ -123,7 +123,7 @@ theorem UniversallyInjective.of_split
     UniversallyInjective f
 ```
 
-**`Algebra.UniversallyInjective.of_split`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/Defs.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/Defs.lean#L62). The attribute's comment: “ring maps”.
+**`Algebra.UniversallyInjective.of_split`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/Defs.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/Defs.lean#L62). The attribute's comment: “ring maps”.
 
 > A split ring map is universally injective.
 
@@ -138,7 +138,7 @@ theorem Algebra.UniversallyInjective.of_split
 
 [Tag 08WN](https://stacks.math.columbia.edu/tag/08WN) in the Stacks Project.
 
-**`Algebra.UniversallyInjective.pi_localizationAway`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/Localization.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/Localization.lean#L107).
+**`Algebra.UniversallyInjective.pi_localizationAway`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/Localization.lean, line 107](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/Localization.lean#L107).
 
 > A family of principal localizations covering `Spec R` yields a universally injective
 > canonical map from `R` to their product.
@@ -156,13 +156,13 @@ theorem Algebra.UniversallyInjective.pi_localizationAway
 
 Declarations registered for the tag:
 
-- [`faithfullyFlat_universallyInjective`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/UniversallyInjective.lean#L485), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/Defs.lean, line 73](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/Defs.lean#L73) (StacksFrontier).
+- [`faithfullyFlat_universallyInjective`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/UniversallyInjective.lean#L499), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/Defs.lean, line 73](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/Defs.lean#L73) (StacksFrontier).
 
 ## Tag 08WQ, a definition
 
 [Tag 08WQ](https://stacks.math.columbia.edu/tag/08WQ) in the Stacks Project.
 
-**`CharacterModule.dualFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/CharacterModule/Duality.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/CharacterModule/Duality.lean#L55).
+**`CharacterModule.dualFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/CharacterModule/Duality.lean, line 55](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/CharacterModule/Duality.lean#L55).
 
 > The contravariant functor `M ↦ M^∨ = Hom_ℤ(M, ℚ/ℤ)` on modules over a commutative ring,
 > acting on a linear map by precomposition (`CharacterModule.dual`).
@@ -178,15 +178,15 @@ noncomputable def dualFunctor (R : Type u) [CommRing R] :
 
 Declarations registered for the tag:
 
-- [`CharacterModule.dual_exact`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/CharacterModule/Duality.lean#L88), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/CharacterModule.lean, line 61](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/CharacterModule.lean#L61) (StacksFrontier): “exactness”.
-- [`CharacterModule.dual_surjective_iff_injective`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CharacterModule.dual_surjective_iff_injective#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/CharacterModule.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/CharacterModule.lean#L63) (StacksFrontier): “reflection of injections”.
-- [`CharacterModule.dual_injective_iff_surjective`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CharacterModule.dual_injective_iff_surjective#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/CharacterModule.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/CharacterModule.lean#L66) (StacksFrontier): “reflection of surjections”.
+- [`CharacterModule.dual_exact`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/CharacterModule/Duality.lean#L88), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/CharacterModule.lean, line 61](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/CharacterModule.lean#L61) (StacksFrontier): “exactness”.
+- [`CharacterModule.dual_surjective_iff_injective`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CharacterModule.dual_surjective_iff_injective#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/CharacterModule.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/CharacterModule.lean#L63) (StacksFrontier): “reflection of injections”.
+- [`CharacterModule.dual_injective_iff_surjective`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CharacterModule.dual_injective_iff_surjective#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/CharacterModule.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/CharacterModule.lean#L66) (StacksFrontier): “reflection of surjections”.
 
 ## Tag 08WS, a remark
 
 [Tag 08WS](https://stacks.math.columbia.edu/tag/08WS) in the Stacks Project.
 
-**`CharacterModule.dual_map_conj_homEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/TensorHomAdjunction.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/TensorHomAdjunction.lean#L74). The attribute's comment: “naturality of the adjunction isomorphism”.
+**`CharacterModule.dual_map_conj_homEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/TensorHomAdjunction.lean, line 74](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/TensorHomAdjunction.lean#L74). The attribute's comment: “naturality of the adjunction isomorphism”.
 
 > **Stacks 08WS.** The adjunction isomorphism `C(• ⊗_R •) ≅ Hom_R(•, C(•))` is natural in
 > both variables: conjugating `C(f ⊗ g)` by it gives `φ ↦ C(g) ∘ φ ∘ f`.
@@ -197,7 +197,7 @@ theorem dual_map_conj_homEquiv (f : M₁ →ₗ[R] M₁') (g : M₂ →ₗ[R] M�
       LinearMap.compRight R (dual g) ∘ₗ LinearMap.lcomp R (CharacterModule M₂') f
 ```
 
-**`CharacterModule.isSplitCoequalizer_dual_rTensor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/TensorHomAdjunction.lean, line 178](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/TensorHomAdjunction.lean#L178). The attribute's comment: “split coequalizers of character modules are preserved by tensoring inside C”.
+**`CharacterModule.isSplitCoequalizer_dual_rTensor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/TensorHomAdjunction.lean, line 177](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/TensorHomAdjunction.lean#L177). The attribute's comment: “split coequalizers of character modules are preserved by tensoring inside C”.
 
 > **Stacks 08WS**, the corollary of the adjunction. If
 > `C(M) ⇉ C(N) → C(P)` is a split coequalizer diagram of `R`-modules, the arrows being the
@@ -214,14 +214,14 @@ noncomputable def isSplitCoequalizer_dual_rTensor (u v : N →ₗ[R] M) (w : P �
 
 Declarations registered for the tag:
 
-- [`CharacterModule.homEquiv`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CharacterModule.homEquiv#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/TensorHomAdjunction.lean, line 222](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/TensorHomAdjunction.lean#L222) (StacksFrontier): “adjunction isomorphism”. References: SGA 5 IIIB (5.2), “5.2.1 with K = B = Z”.
-- [`CharacterModule.homEquiv_symm_apply_apply_apply`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CharacterModule.homEquiv_symm_apply_apply_apply#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/TensorHomAdjunction.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/TensorHomAdjunction.lean#L225) (StacksFrontier): “the displayed formula for the isomorphism”.
+- [`CharacterModule.homEquiv`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CharacterModule.homEquiv#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/TensorHomAdjunction.lean, line 221](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/TensorHomAdjunction.lean#L221) (StacksFrontier): “adjunction isomorphism”. References: SGA 5 IIIB (5.2), “5.2.1 with K = B = Z”.
+- [`CharacterModule.homEquiv_symm_apply_apply_apply`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CharacterModule.homEquiv_symm_apply_apply_apply#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/TensorHomAdjunction.lean, line 224](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/TensorHomAdjunction.lean#L224) (StacksFrontier): “the displayed formula for the isomorphism”.
 
 ## Tag 08WU, a lemma
 
 [Tag 08WU](https://stacks.math.columbia.edu/tag/08WU) in the Stacks Project.
 
-**`universallyInjective_iff_dual_splitSurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/CharacterModule.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/CharacterModule.lean#L91).
+**`universallyInjective_iff_dual_splitSurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/CharacterModule.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/CharacterModule.lean#L88).
 
 > A module map is universally injective exactly when its character-module dual admits a
 > linear section.
@@ -240,7 +240,7 @@ theorem universallyInjective_iff_dual_splitSurjective
 
 [Tag 08WV](https://stacks.math.columbia.edu/tag/08WV) in the Stacks Project.
 
-**`exists_functorialCharacterModuleSplitting`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/CharacterModule.lean, line 128](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/CharacterModule.lean#L128).
+**`exists_functorialCharacterModuleSplitting`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/CharacterModule.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/UniversallyInjective/CharacterModule.lean#L125).
 
 > A universally injective map admits a section after applying the character
 > module functor, and the section obtained on `C(P ⊗ -)` by postcomposition is a splitting
@@ -269,7 +269,7 @@ theorem exists_functorialCharacterModuleSplitting
 
 [Tag 08WX](https://stacks.math.columbia.edu/tag/08WX) in the Stacks Project.
 
-**`ModuleCat.DescentData`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Module/DescentData.lean, line 244](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Module/DescentData.lean#L244). The attribute's comment: “the cocycle condition, as the cocycle field”.
+**`ModuleCat.DescentData`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Module/DescentData.lean, line 244](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Module/DescentData.lean#L244). The attribute's comment: “the cocycle condition, as the cocycle field”.
 
 > A descent datum for modules for an `R`-algebra `A`.
 >
@@ -284,7 +284,7 @@ structure DescentData
 
 [Tag 08WY](https://stacks.math.columbia.edu/tag/08WY) in the Stacks Project.
 
-**`ModuleCat.baseExtension`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Module/BaseExtension.lean, line 236](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Module/BaseExtension.lean#L236). The attribute's comment: “the functor”.
+**`ModuleCat.baseExtension`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Module/BaseExtension.lean, line 223](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Module/BaseExtension.lean#L223). The attribute's comment: “the functor”.
 
 > **Stacks Project, Tag 08WY.** The base-extension functor from `R`-modules to descent data
 > for modules along `R → A`, bundled with its canonical objectwise description.
@@ -293,7 +293,7 @@ structure DescentData
 def baseExtension : BaseExtension.{u, v, w} R A
 ```
 
-**`ModuleCat.IsDescentMorphismForModules`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Module/BaseExtension.lean, line 252](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Module/BaseExtension.lean#L252). The attribute's comment: “descent morphism”.
+**`ModuleCat.IsDescentMorphismForModules`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Module/BaseExtension.lean, line 238](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Module/BaseExtension.lean#L238). The attribute's comment: “descent morphism”.
 
 > **Stacks Project, Tag 08WY.** An algebra map is a descent morphism for modules when its
 > base-extension functor is fully faithful.
@@ -302,7 +302,7 @@ def baseExtension : BaseExtension.{u, v, w} R A
 abbrev IsDescentMorphismForModules : Prop
 ```
 
-**`ModuleCat.IsEffectiveDescentMorphismForModules`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Module/BaseExtension.lean, line 260](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Module/BaseExtension.lean#L260). The attribute's comment: “effective descent morphism”. References: SGA 4 Vbis (2.4.10), “modules over a ring map”; SGA 4 Vbis (2.2.2), “modules over rings”.
+**`ModuleCat.IsEffectiveDescentMorphismForModules`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Module/BaseExtension.lean, line 246](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Module/BaseExtension.lean#L246). The attribute's comment: “effective descent morphism”. References: SGA 4 Vbis (2.4.10), “modules over a ring map”; SGA 4 Vbis (2.2.2), “modules over rings”.
 
 > **Stacks Project, Tag 08WY.** An algebra map is an effective descent morphism for modules
 > when its base-extension functor is an equivalence of categories.
@@ -315,7 +315,7 @@ abbrev IsEffectiveDescentMorphismForModules : Prop
 
 [Tag 08WZ](https://stacks.math.columbia.edu/tag/08WZ) in the Stacks Project.
 
-**`ModuleCat.DescentData.isSplitEqualizer_descentComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Module/SplitEqualizer.lean, line 457](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Module/SplitEqualizer.lean#L457).
+**`ModuleCat.DescentData.isSplitEqualizer_descentComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Module/SplitEqualizer.lean, line 450](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Module/SplitEqualizer.lean#L450).
 
 > **Stacks Project, Tag 08WZ.** The canonically associated diagram is a split equalizer of
 > `A`-modules.
@@ -329,7 +329,7 @@ theorem isSplitEqualizer_descentComparison
       (ModuleCat.ofHom (descentComparisonHom R A D)))
 ```
 
-**`ModuleCat.DescentData.isSplitEqualizer_inverseTransitionUnitHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Module/TransitionSplitEqualizer.lean, line 602](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Module/TransitionSplitEqualizer.lean#L602).
+**`ModuleCat.DescentData.isSplitEqualizer_inverseTransitionUnitHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Module/TransitionSplitEqualizer.lean, line 602](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Module/TransitionSplitEqualizer.lean#L602).
 
 > **Stacks Project, Tag 08WZ.** For a descent datum `(M, θ)` relative to `R → S`, the diagram
 > ```
@@ -353,7 +353,7 @@ theorem isSplitEqualizer_inverseTransitionUnitHom (D : DescentData.{u, v, w} R A
 
 [Tag 08X1](https://stacks.math.columbia.edu/tag/08X1) in the Stacks Project.
 
-**`ModuleCat.DescentData.isSplitCoequalizer_characterModule_descentComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Module/SplitEqualizer.lean, line 523](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Module/SplitEqualizer.lean#L523).
+**`ModuleCat.DescentData.isSplitCoequalizer_characterModule_descentComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Module/SplitEqualizer.lean, line 516](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Module/SplitEqualizer.lean#L516).
 
 > **Stacks Project, Tag 08X1.** Character duality turns the descent equalizer into a split
 > coequalizer.
@@ -371,7 +371,7 @@ theorem isSplitCoequalizer_characterModule_descentComparison
 
 [Tag 08X3](https://stacks.math.columbia.edu/tag/08X3) in the Stacks Project.
 
-**`Stacks.Descent.isSplitEqualizerTensorInsertOne`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Module/TensorPowerSplitEqualizer.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Module/TensorPowerSplitEqualizer.lean#L83).
+**`Stacks.Descent.isSplitEqualizerTensorInsertOne`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Module/TensorPowerSplitEqualizer.lean, line 83](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Module/TensorPowerSplitEqualizer.lean#L83).
 
 > **Stacks Project, Tag 08X3.** The diagram `S₁ --δ¹₁--> S₂ ⇉ S₃` of tensor powers of `A`
 > over `R`, whose parallel arrows are `δ²₂` and `δ²₁`, is a split equalizer of commutative
@@ -387,7 +387,7 @@ noncomputable def isSplitEqualizerTensorInsertOne :
 
 [Tag 08X5](https://stacks.math.columbia.edu/tag/08X5) in the Stacks Project.
 
-**`ModuleCat.pushforward`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Module/Pushforward.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Module/Pushforward.lean#L78).
+**`ModuleCat.pushforward`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Module/Pushforward.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Module/Pushforward.lean#L78).
 
 > Pushforward sends a module descent datum to the equalizer of its two pullbacks to
 > `A ⊗[R] A`.
@@ -400,7 +400,7 @@ def pushforward : DescentData.{u, v, w} R A ⥤ ModuleCat.{w} R
 
 [Tag 08X7](https://stacks.math.columbia.edu/tag/08X7) in the Stacks Project.
 
-**`ModuleCat.tensorPushforwardComparison_tmul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Modules/TensorEqualizer/Comparison.lean, line 302](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Modules/TensorEqualizer/Comparison.lean#L302). The attribute's comment: “comparison formula”.
+**`ModuleCat.tensorPushforwardComparison_tmul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Modules/TensorEqualizer/Comparison.lean, line 298](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Modules/TensorEqualizer/Comparison.lean#L298). The attribute's comment: “comparison formula”.
 
 > Under tensor symmetry, the first arrow applies the descent transition to
 > the unit pullback of the scalar multiple of an invariant section.
@@ -414,7 +414,7 @@ public theorem tensorPushforwardComparison_tmul
         ((a • (m.1 : restrictModule R A D.module)) ⊗ₜ[R] (1 : A))
 ```
 
-**`ModuleCat.tensorPushforwardComparison_condition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Modules/TensorEqualizer/Comparison.lean, line 320](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Modules/TensorEqualizer/Comparison.lean#L320). The attribute's comment: “fork condition”.
+**`ModuleCat.tensorPushforwardComparison_condition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Modules/TensorEqualizer/Comparison.lean, line 316](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Modules/TensorEqualizer/Comparison.lean#L316). The attribute's comment: “fork condition”.
 
 > The base-changed inclusion equalizes the two pullbacks of a descent datum.
 
@@ -427,7 +427,7 @@ public theorem tensorPushforwardComparison_condition
         ModuleCat.ofHom (DescentData.rightUnitBaseChangeHom R A D)
 ```
 
-**`ModuleCat.tensorPushforward_isEqualizer`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Modules/TensorEqualizer/Equalizer.lean, line 536](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Modules/TensorEqualizer/Equalizer.lean#L536). The attribute's comment: “equalizer”.
+**`ModuleCat.tensorPushforward_isEqualizer`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Modules/TensorEqualizer/Equalizer.lean, line 528](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Modules/TensorEqualizer/Equalizer.lean#L528). The attribute's comment: “equalizer”.
 
 > For a universally injective ring map, the displayed diagram of `A`-modules
 > is an equalizer. The middle and right objects and both parallel arrows use the
@@ -448,7 +448,7 @@ public noncomputable def tensorPushforward_isEqualizer
 
 [Tag 08XA](https://stacks.math.columbia.edu/tag/08XA) in the Stacks Project.
 
-**`ModuleCat.isDescentMorphismForModules_iff_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Modules/EffectiveDescent.lean, line 689](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Modules/EffectiveDescent.lean#L689). The attribute's comment: “descent morphism”.
+**`ModuleCat.isDescentMorphismForModules_iff_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Modules/EffectiveDescent.lean, line 684](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Modules/EffectiveDescent.lean#L684). The attribute's comment: “descent morphism”.
 
 > A ring map is a descent morphism for modules exactly when it is universally injective.
 
@@ -458,7 +458,7 @@ public theorem isDescentMorphismForModules_iff_universallyInjective :
       Algebra.UniversallyInjective R A
 ```
 
-**`ModuleCat.isEffectiveDescentMorphismForModules_iff_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Modules/EffectiveDescent.lean, line 697](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Modules/EffectiveDescent.lean#L697). The attribute's comment: “effective descent morphism”.
+**`ModuleCat.isEffectiveDescentMorphismForModules_iff_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Modules/EffectiveDescent.lean, line 692](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Modules/EffectiveDescent.lean#L692). The attribute's comment: “effective descent morphism”.
 
 > A ring map is an effective descent morphism for modules exactly when it is universally
 > injective.
@@ -475,14 +475,14 @@ public theorem isEffectiveDescentMorphismForModules_iff_universallyInjective :
 
 Declarations registered for the tag:
 
-- [`Module.Flat.iff_characterModule_injective`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Module.Flat.iff_characterModule_injective#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch35.lean, line 24](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch35.lean#L24) (StacksFrontier): “Mathlib proves the equivalence, under `[Small.{v} R]`”. References: SGA 4 V (1.2), “(ii) ⇒ (i)”.
-- [`Module.Flat.iff_characterModule_baer`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Module.Flat.iff_characterModule_baer#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch35.lean, line 26](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch35.lean#L26) (StacksFrontier): “universe-free form, with `Module.Baer.injective`”. References: SGA 4 V (1.2), “(ii) ⇒ (i)”.
+- [`Module.Flat.iff_characterModule_injective`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Module.Flat.iff_characterModule_injective#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch35.lean, line 24](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch35.lean#L24) (StacksFrontier): “Mathlib proves the equivalence, under `[Small.{v} R]`”. References: SGA 4 V (1.2), “(ii) ⇒ (i)”.
+- [`Module.Flat.iff_characterModule_baer`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Module.Flat.iff_characterModule_baer#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch35.lean, line 26](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch35.lean#L26) (StacksFrontier): “universe-free form, with `Module.Baer.injective`”. References: SGA 4 V (1.2), “(ii) ⇒ (i)”.
 
 ## Tag 08XD, a theorem
 
 [Tag 08XD](https://stacks.math.columbia.edu/tag/08XD) in the Stacks Project.
 
-**`Module.finite_iff_baseChange_of_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Modules/BaseChangeFiniteness.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Modules/BaseChangeFiniteness.lean#L53). The attribute's comment: “finite”. References: EGA IV (2.5.2), “(i), affine case”; EGA IV (2.5.4), “(i), affine case”; SGA 1 VIII (1.11), “finite type”; SGA 4½ Arcata (1.4.2), “(ii) finite type”.
+**`Module.finite_iff_baseChange_of_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Modules/BaseChangeFiniteness.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Modules/BaseChangeFiniteness.lean#L53). The attribute's comment: “finite”. References: EGA IV (2.5.2), “(i), affine case”; EGA IV (2.5.4), “(i), affine case”; SGA 1 VIII (1.11), “finite type”; SGA 4½ Arcata (1.4.2), “(ii) finite type”.
 
 > Finite generation descends and ascends along a universally injective ring map.
 
@@ -494,7 +494,7 @@ theorem finite_iff_baseChange_of_universallyInjective
     Module.Finite R M ↔ Module.Finite S (TensorProduct R S M)
 ```
 
-**`Module.finitePresentation_iff_baseChange_of_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Modules/BaseChangeFiniteness.lean, line 213](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Modules/BaseChangeFiniteness.lean#L213). The attribute's comment: “finite\_presentation”. References: EGA IV (2.5.2), “(ii), affine case”; EGA IV (2.5.4), “(ii), affine case”; SGA 1 VIII (1.11), “finite presentation”; SGA 4½ Arcata (1.4.2), “(ii) finite presentation”.
+**`Module.finitePresentation_iff_baseChange_of_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Modules/BaseChangeFiniteness.lean, line 213](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Modules/BaseChangeFiniteness.lean#L213). The attribute's comment: “finite\_presentation”. References: EGA IV (2.5.2), “(ii), affine case”; EGA IV (2.5.4), “(ii), affine case”; SGA 1 VIII (1.11), “finite presentation”; SGA 4½ Arcata (1.4.2), “(ii) finite presentation”.
 
 > Finite presentation descends and ascends along a universally injective ring map.
 
@@ -507,7 +507,7 @@ theorem finitePresentation_iff_baseChange_of_universallyInjective
     Module.FinitePresentation S (TensorProduct R S M)
 ```
 
-**`Module.flat_iff_baseChange_of_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Modules/BaseChangeFlat.lean, line 204](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Modules/BaseChangeFlat.lean#L204). The attribute's comment: “flat”.
+**`Module.flat_iff_baseChange_of_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Modules/BaseChangeFlat.lean, line 203](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Modules/BaseChangeFlat.lean#L203). The attribute's comment: “flat”.
 
 > Flatness descends and ascends along a universally injective ring map.
 
@@ -519,7 +519,7 @@ theorem flat_iff_baseChange_of_universallyInjective
     Module.Flat R M ↔ Module.Flat S (TensorProduct R S M)
 ```
 
-**`Module.faithfullyFlat_iff_baseChange_of_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Modules/BaseChangeFlat.lean, line 238](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Modules/BaseChangeFlat.lean#L238). The attribute's comment: “faithfully\_flat”. References: EGA 0 (6.6.3), “more general”.
+**`Module.faithfullyFlat_iff_baseChange_of_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Modules/BaseChangeFlat.lean, line 237](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Modules/BaseChangeFlat.lean#L237). The attribute's comment: “faithfully\_flat”. References: EGA 0 (6.6.3), “more general”.
 
 > Faithful flatness descends and ascends along a universally injective ring map.
 
@@ -531,7 +531,7 @@ theorem faithfullyFlat_iff_baseChange_of_universallyInjective
     Module.FaithfullyFlat R M ↔ Module.FaithfullyFlat S (TensorProduct R S M)
 ```
 
-**`Module.finite_projective_iff_baseChange_of_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Modules/BaseChangeProjective.lean, line 40](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Modules/BaseChangeProjective.lean#L40). The attribute's comment: “finite\_projective”.
+**`Module.finite_projective_iff_baseChange_of_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Modules/BaseChangeProjective.lean, line 40](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Modules/BaseChangeProjective.lean#L40). The attribute's comment: “finite\_projective”.
 
 > Finite projectivity descends and ascends along a universally injective ring map.
 
@@ -549,7 +549,7 @@ theorem finite_projective_iff_baseChange_of_universallyInjective
 
 [Tag 08XE](https://stacks.math.columbia.edu/tag/08XE) in the Stacks Project.
 
-**`Algebra.finiteType_iff_tensorProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Modules/AlgebraBaseChangeFiniteness.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Modules/AlgebraBaseChangeFiniteness.lean#L53). The attribute's comment: “finite\_type”. References: EGA IV (1.3.1), “special case”.
+**`Algebra.finiteType_iff_tensorProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Modules/AlgebraBaseChangeFiniteness.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Modules/AlgebraBaseChangeFiniteness.lean#L53). The attribute's comment: “finite\_type”. References: EGA IV (1.3.1), “special case”.
 
 > **Stacks Project, Tag 08XE (finite type).** Finite type descends along a
 > universally injective ring map and is preserved by base change.
@@ -561,7 +561,7 @@ theorem finiteType_iff_tensorProduct
     Algebra.FiniteType R A ↔ Algebra.FiniteType S (A ⊗[R] S)
 ```
 
-**`Algebra.finitePresentation_iff_baseChange_of_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Modules/AlgebraBaseChangeFiniteness.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Modules/AlgebraBaseChangeFiniteness.lean#L146). The attribute's comment: “finite\_presentation”.
+**`Algebra.finitePresentation_iff_baseChange_of_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Modules/AlgebraBaseChangeFiniteness.lean, line 146](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Modules/AlgebraBaseChangeFiniteness.lean#L146). The attribute's comment: “finite\_presentation”.
 
 > Finite presentation of an algebra descends and ascends along a universally injective
 > ring map.
@@ -575,7 +575,7 @@ theorem finitePresentation_iff_baseChange_of_universallyInjective
       Algebra.FinitePresentation S (TensorProduct R S A)
 ```
 
-**`Algebra.formallyUnramified_iff_tensorProduct_of_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Modules/AlgebraBaseChangeUnramified.lean, line 52](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Modules/AlgebraBaseChangeUnramified.lean#L52). The attribute's comment: “formally\_unramified”.
+**`Algebra.formallyUnramified_iff_tensorProduct_of_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Modules/AlgebraBaseChangeUnramified.lean, line 52](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Modules/AlgebraBaseChangeUnramified.lean#L52). The attribute's comment: “formally\_unramified”.
 
 > Formal unramifiedness descends and ascends along a universally injective base-ring map.
 
@@ -587,7 +587,7 @@ theorem formallyUnramified_iff_tensorProduct_of_universallyInjective
       Algebra.FormallyUnramified S (TensorProduct R A S)
 ```
 
-**`Algebra.unramified_iff_baseChange_of_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Modules/AlgebraBaseChangeUnramified.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Modules/AlgebraBaseChangeUnramified.lean#L72). The attribute's comment: “unramified”.
+**`Algebra.unramified_iff_baseChange_of_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Modules/AlgebraBaseChangeUnramified.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Modules/AlgebraBaseChangeUnramified.lean#L72). The attribute's comment: “unramified”.
 
 > Unramifiedness descends and ascends along a universally injective ring map.
 
@@ -599,7 +599,7 @@ theorem unramified_iff_baseChange_of_universallyInjective
     Algebra.Unramified R A ↔ Algebra.Unramified S (A ⊗[R] S)
 ```
 
-**`Algebra.etale_iff_baseChange_of_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Modules/AlgebraBaseChangeUnramified.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Modules/AlgebraBaseChangeUnramified.lean#L91). The attribute's comment: “etale”.
+**`Algebra.etale_iff_baseChange_of_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Modules/AlgebraBaseChangeUnramified.lean, line 91](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Modules/AlgebraBaseChangeUnramified.lean#L91). The attribute's comment: “etale”.
 
 > Étaleness descends and ascends along a universally injective ring map.
 
@@ -618,4 +618,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 35.4, Tag 08WE](https://stacks.math.columbia.edu/tag/08WE)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

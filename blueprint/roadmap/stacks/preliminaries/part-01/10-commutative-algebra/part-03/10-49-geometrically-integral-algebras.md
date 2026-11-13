@@ -8,13 +8,13 @@ proof: formalized
 
 # 10.49 Geometrically integral algebras
 
-Section 10.49 of the Stacks Project, [Tag 05DW](https://stacks.math.columbia.edu/tag/05DW). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 10.49 of the Stacks Project, [Tag 05DW](https://stacks.math.columbia.edu/tag/05DW). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 05DX, a definition
 
 [Tag 05DX](https://stacks.math.columbia.edu/tag/05DX) in the Stacks Project.
 
-**`Algebra.IsGeometricallyIntegral`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GeometricallyIntegral/Defs.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GeometricallyIntegral/Defs.lean#L120). References: EGA IV (4.6.2), “affine, special case”; SGA 6 XII (1.2), “special case”.
+**`Algebra.IsGeometricallyIntegral`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GeometricallyIntegral/Defs.lean, line 120](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/GeometricallyIntegral/Defs.lean#L120). References: EGA IV (4.6.2), “affine, special case”; SGA 6 XII (1.2), “special case”.
 
 > A `k`-algebra `S` is **geometrically integral over `k`** if every base change of
 > `Spec S ⟶ Spec k` along a field-valued point of `Spec k` is an integral scheme, equivalently
@@ -30,7 +30,7 @@ public abbrev Algebra.IsGeometricallyIntegral (k S : Type u) [Field k] [CommRing
 
 [Tag 05DY](https://stacks.math.columbia.edu/tag/05DY) in the Stacks Project.
 
-**`geometricallyIntegral_iff_irreducible_and_reduced`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GeometricallyIntegral/Defs.lean, line 238](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GeometricallyIntegral/Defs.lean#L238). References: EGA IV (4.6.14), “special case”; EGA IV (4.6.2), “affine, special case”; SGA 3 XIX (2.1), “partial”.
+**`geometricallyIntegral_iff_irreducible_and_reduced`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GeometricallyIntegral/Defs.lean, line 238](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/GeometricallyIntegral/Defs.lean#L238). References: EGA IV (4.6.14), “special case”; EGA IV (4.6.2), “affine, special case”; SGA 3 XIX (2.1), “partial”.
 
 > A `k`-algebra `S` is geometrically integral over `k` if and only if it is both
 > geometrically irreducible and geometrically reduced over `k`. This is Stacks tag 05DY.
@@ -50,7 +50,7 @@ theorem geometricallyIntegral_iff_irreducible_and_reduced
 
 [Tag 0FWF](https://stacks.math.columbia.edu/tag/0FWF) in the Stacks Project.
 
-**`Algebra.isGeometricallyIntegral_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GeometricallyIntegral/TFAE.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GeometricallyIntegral/TFAE.lean#L124).
+**`Algebra.isGeometricallyIntegral_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GeometricallyIntegral/TFAE.lean, line 124](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/GeometricallyIntegral/TFAE.lean#L124).
 
 > **Stacks 0FWF.** Let `k` be a field and let `S` be a `k`-algebra. The following are
 > equivalent: (1) `S` is geometrically integral over `k`; (2) `S ⊗[k] k'` is a domain for every
@@ -71,7 +71,7 @@ public theorem Algebra.isGeometricallyIntegral_tfae (k S : Type u) [Field k] [Co
 
 [Tag 09P9](https://stacks.math.columbia.edu/tag/09P9) in the Stacks Project.
 
-**`Algebra.IsGeometricallyIntegral.isDomain_tensorProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GeometricallyIntegral/TensorProduct.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GeometricallyIntegral/TensorProduct.lean#L100).
+**`Algebra.IsGeometricallyIntegral.isDomain_tensorProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GeometricallyIntegral/TensorProduct.lean, line 100](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/GeometricallyIntegral/TensorProduct.lean#L100).
 
 > Let `k` be a field, let `S` be a geometrically integral `k`-algebra and let `R` be a
 > `k`-algebra which is an integral domain. Then `R ⊗[k] S` is an integral domain.
@@ -89,4 +89,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.49, Tag 05DW](https://stacks.math.columbia.edu/tag/05DW)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

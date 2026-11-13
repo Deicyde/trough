@@ -8,13 +8,13 @@ proof: formalized
 
 # 18.44 Localizing sheaves of rings
 
-Section 18.44 of the Stacks Project, [Tag 0EMB](https://stacks.math.columbia.edu/tag/0EMB). 2 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 18.44 of the Stacks Project, [Tag 0EMB](https://stacks.math.columbia.edu/tag/0EMB). 2 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0EMC, a lemma
 
 [Tag 0EMC](https://stacks.math.columbia.edu/tag/0EMC) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSite.MultiplicativeSubpresheaf.toLocalizationSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/StructureSheafLocalization.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/StructureSheafLocalization.lean#L110). The attribute's comment: “canonical homomorphism of sheaves of rings”.
+**`AlgebraicGeometry.RingedSite.MultiplicativeSubpresheaf.toLocalizationSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/StructureSheafLocalization.lean, line 110](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/StructureSheafLocalization.lean#L110). The attribute's comment: “canonical homomorphism of sheaves of rings”.
 
 > The canonical map from the ring sheaf to the sheafified localization.
 
@@ -24,7 +24,7 @@ noncomputable def toLocalizationSheaf (S : MultiplicativeSubpresheaf X)
     X.O ⟶ (presheafToSheaf X.J CommRingCat.{w}).obj S.localizationPresheaf
 ```
 
-**`AlgebraicGeometry.RingedSite.MultiplicativeSubpresheaf.isUnit_toLocalizationSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/StructureSheafLocalization.lean, line 154](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/StructureSheafLocalization.lean#L154). The attribute's comment: “inversion of the prescribed sections”.
+**`AlgebraicGeometry.RingedSite.MultiplicativeSubpresheaf.isUnit_toLocalizationSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/StructureSheafLocalization.lean, line 154](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/StructureSheafLocalization.lean#L154). The attribute's comment: “inversion of the prescribed sections”.
 
 > The canonical map sends each prescribed section to a unit.
 
@@ -35,7 +35,7 @@ theorem isUnit_toLocalizationSheaf (S : MultiplicativeSubpresheaf X)
     IsUnit (((S.toLocalizationSheaf).hom.app U).hom (s : X.O.obj.obj U))
 ```
 
-**`AlgebraicGeometry.RingedSite.MultiplicativeSubpresheaf.existsUnique_lift_toLocalizationSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/StructureSheafLocalization.lean, line 165](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/StructureSheafLocalization.lean#L165). The attribute's comment: “universal property”.
+**`AlgebraicGeometry.RingedSite.MultiplicativeSubpresheaf.existsUnique_lift_toLocalizationSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/StructureSheafLocalization.lean, line 165](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/StructureSheafLocalization.lean#L165). The attribute's comment: “universal property”.
 
 > A morphism inverting every prescribed section factors uniquely through the
 > sheafified sectionwise localization.
@@ -54,7 +54,7 @@ theorem existsUnique_lift_toLocalizationSheaf (S : MultiplicativeSubpresheaf X)
 
 [Tag 0EMD](https://stacks.math.columbia.edu/tag/0EMD) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSite.MultiplicativeSubpresheaf.existsUnique_lift_localizationModuleSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/ModuleSheafLocalization.lean, line 443](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/ModuleSheafLocalization.lean#L443). The attribute's comment: “localization\_universal\_property”. References: EGA 0 (1.2.4), “more general”.
+**`AlgebraicGeometry.RingedSite.MultiplicativeSubpresheaf.existsUnique_lift_localizationModuleSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/ModuleSheafLocalization.lean, line 443](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/ModuleSheafLocalization.lean#L443). The attribute's comment: “localization\_universal\_property”. References: EGA 0 (1.2.4), “more general”.
 
 > **The universal property of `(S⁻¹F)^#`.**  A map of sheaves of `O_X`-modules `φ : F ⟶ G`
 > such that each prescribed local section of `S` acts invertibly on `G` factors uniquely through
@@ -69,7 +69,7 @@ theorem existsUnique_lift_localizationModuleSheaf
     ∃! ψ : S.localizationModuleSheaf F ⟶ G, S.toLocalizationModuleSheaf F ≫ ψ = φ
 ```
 
-**`AlgebraicGeometry.RingedSite.MultiplicativeSubpresheaf.localizationModuleSheafIsoTensor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/ModuleSheafLocalization.lean, line 478](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/ModuleSheafLocalization.lean#L478). The attribute's comment: “localization\_tensor\_iso”.
+**`AlgebraicGeometry.RingedSite.MultiplicativeSubpresheaf.localizationModuleSheafIsoTensor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/ModuleSheafLocalization.lean, line 478](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/ModuleSheafLocalization.lean#L478). The attribute's comment: “localization\_tensor\_iso”.
 
 > **`(S⁻¹F)^# = (S⁻¹O_X)^# ⊗_{O_X} F` as sheaves of `(S⁻¹O_X)^#`-modules.**  The
 > sheafification of the sectionwise localization of `F` is the extension of scalars of `F` along
@@ -82,7 +82,7 @@ def localizationModuleSheafIsoTensor
       (SheafOfModules.pullback (S.localizationRingSheafHom σ)).obj F
 ```
 
-**`AlgebraicGeometry.RingedSite.MultiplicativeSubpresheaf.unit_comp_localizationModuleSheafIsoTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/ModuleSheafLocalization.lean, line 489](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/ModuleSheafLocalization.lean#L489). The attribute's comment: “localization\_tensor\_iso”.
+**`AlgebraicGeometry.RingedSite.MultiplicativeSubpresheaf.unit_comp_localizationModuleSheafIsoTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/ModuleSheafLocalization.lean, line 489](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/ModuleSheafLocalization.lean#L489). The attribute's comment: “localization\_tensor\_iso”.
 
 > The identification `(S⁻¹F)^# = (S⁻¹O_X)^# ⊗_{O_X} F` is compatible with the canonical maps
 > out of `F`: the unit of the pullback--pushforward adjunction corresponds to the sectionwise
@@ -105,4 +105,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 18.44, Tag 0EMB](https://stacks.math.columbia.edu/tag/0EMB)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

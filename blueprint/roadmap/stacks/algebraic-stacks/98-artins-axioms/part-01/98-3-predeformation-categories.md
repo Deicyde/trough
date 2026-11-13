@@ -8,13 +8,13 @@ proof: formalized
 
 # 98.3 Predeformation categories
 
-Section 98.3 of the Stacks Project, [Tag 07T2](https://stacks.math.columbia.edu/tag/07T2). 7 tags here are carried by 11 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 98.3 of the Stacks Project, [Tag 07T2](https://stacks.math.columbia.edu/tag/07T2). 7 tags here are carried by 11 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 07T2, the section
 
 [Tag 07T2](https://stacks.math.columbia.edu/tag/07T2) in the Stacks Project.
 
-**`Deformation.Artin.factorizationEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Predeformation/Factorization.lean, line 395](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Predeformation/Factorization.lean#L395). The attribute's comment: “the category 𝒞\_Λ is equivalent to the opposite of the category of factorizations Spec k ⟶ Spec A ⟶ S of the point, with A Artinian local and its residue field identified with k”.
+**`Deformation.Artin.factorizationEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Predeformation/Factorization.lean, line 398](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Predeformation/Factorization.lean#L398). The attribute's comment: “the category 𝒞\_Λ is equivalent to the opposite of the category of factorizations Spec k ⟶ Spec A ⟶ S of the point, with A Artinian local and its residue field identified with k”.
 
 > **The category `𝒞_Λ` is equivalent to the opposite of the category of factorizations
 > `Spec k ⟶ Spec A ⟶ S` of the given point by the spectrum of an Artinian local ring with
@@ -25,7 +25,7 @@ public def factorizationEquivalence :
     ArtinianLocalAlgCat.{u, u, u} Λ k ≌ (ArtinianLocalFactorization S k x)ᵒᵖ
 ```
 
-**`Deformation.Artin.artinianLocalAlgCatEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Predeformation/Factorization.lean, line 419](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Predeformation/Factorization.lean#L419). The attribute's comment: “the category 𝒞\_Λ is independent, up to canonical equivalence, of the choice of the affine open Spec Λ ⊂ S the point factors through”.
+**`Deformation.Artin.artinianLocalAlgCatEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Predeformation/Factorization.lean, line 422](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Predeformation/Factorization.lean#L422). The attribute's comment: “the category 𝒞\_Λ is independent, up to canonical equivalence, of the choice of the affine open Spec Λ ⊂ S the point factors through”.
 
 > **The category `𝒞_Λ` does not depend, up to canonical equivalence, on the choice of the
 > affine open `Spec Λ ⊂ S` through which the point factors.** Both are equivalent to the
@@ -38,13 +38,13 @@ public def artinianLocalAlgCatEquiv :
 
 Declarations registered for the tag:
 
-- [`Deformation.Artin.predeformationCategory`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Predeformation.lean#L225), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Deformation/Artin/Predeformation.lean, line 271](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Predeformation.lean#L271) (StacksFrontier): “the construction of the category 𝓕\_\{𝓧,k,x₀} of deformations of x₀, its objects and its reversed morphisms, together with its projection to 𝒞\_Λ”.
+- [`Deformation.Artin.predeformationCategory`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Predeformation.lean#L225), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Deformation/Artin/Predeformation.lean, line 271](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Predeformation.lean#L271) (StacksFrontier): “the construction of the category 𝓕\_\{𝓧,k,x₀} of deformations of x₀, its objects and its reversed morphisms, together with its projection to 𝒞\_Λ”.
 
 ## Tag 07T3, an equation
 
 [Tag 07T3](https://stacks.math.columbia.edu/tag/07T3) in the Stacks Project.
 
-**`Deformation.Artin.ArtinianLocalFactorization`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Predeformation.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Predeformation.lean#L72).
+**`Deformation.Artin.ArtinianLocalFactorization`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Predeformation.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Predeformation.lean#L72).
 
 > A factorization `Spec(k) ⟶ Spec(A) ⟶ S` of a finite-type field-valued point
 > of a locally Noetherian scheme, where `A` is an Artinian local ring and the first arrow
@@ -60,7 +60,7 @@ public structure ArtinianLocalFactorization (S : Scheme.{u}) (k : Type u) [Field
 
 [Tag 07T4](https://stacks.math.columbia.edu/tag/07T4) in the Stacks Project.
 
-**`Deformation.Artin.predeformationCategory`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Predeformation.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Predeformation.lean#L225).
+**`Deformation.Artin.predeformationCategory`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Predeformation.lean, line 225](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Predeformation.lean#L225).
 
 > The predeformation category `𝓕_{𝓧,k,x₀}` and its canonical functor to `𝒞_Λ`.
 
@@ -73,7 +73,7 @@ public noncomputable def predeformationCategory :
 
 [Tag 07T5](https://stacks.math.columbia.edu/tag/07T5) in the Stacks Project.
 
-**`Deformation.Artin.predeformationCategory_isPredeformationCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ArtinCriteria/Predeformation.lean, line 646](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ArtinCriteria/Predeformation.lean#L646).
+**`Deformation.Artin.predeformationCategory_isPredeformationCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ArtinCriteria/Predeformation.lean, line 646](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ArtinCriteria/Predeformation.lean#L646).
 
 > The canonical deformation category of a point of a fibred category is a
 > predeformation category.
@@ -91,7 +91,7 @@ public theorem predeformationCategory_isPredeformationCategory
 
 [Tag 07WJ](https://stacks.math.columbia.edu/tag/07WJ) in the Stacks Project.
 
-**`Deformation.Artin.mapPredeformationCategory`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Predeformation.lean, line 439](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Predeformation.lean#L439).
+**`Deformation.Artin.mapPredeformationCategory`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Predeformation.lean, line 439](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Predeformation.lean#L439).
 
 > A morphism over the base induces a canonical functor of predeformation
 > categories over `𝒞_Λ`.
@@ -105,7 +105,7 @@ public def mapPredeformationCategory :
 
 [Tag 07WK](https://stacks.math.columbia.edu/tag/07WK) in the Stacks Project.
 
-**`Deformation.Artin.isSmoothOnPredeformationCategories_of_isFormallySmoothOnObjects`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/SmoothPredeformation.lean, line 523](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Versality/SmoothPredeformation.lean#L523). The attribute's comment: “formally smooth on objects”.
+**`Deformation.Artin.isSmoothOnPredeformationCategories_of_isFormallySmoothOnObjects`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/SmoothPredeformation.lean, line 523](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Versality/SmoothPredeformation.lean#L523). The attribute's comment: “formally smooth on objects”.
 
 > **Stacks 07WK**, case (1). A 1-morphism of categories fibred in groupoids over the big
 > fppf category of `S` which is formally smooth on objects induces a smooth functor of
@@ -125,7 +125,7 @@ public theorem isSmoothOnPredeformationCategories_of_isFormallySmoothOnObjects
       (CatFiberedInGroupoids.homFunctor_comp_p p)
 ```
 
-**`Deformation.Artin.isSmoothOnPredeformationCategories_of_isRelativelyFormallySmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/SmoothPredeformation.lean, line 847](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Versality/SmoothPredeformation.lean#L847). The attribute's comment: “representably formally smooth”.
+**`Deformation.Artin.isSmoothOnPredeformationCategories_of_isRelativelyFormallySmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/SmoothPredeformation.lean, line 847](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Versality/SmoothPredeformation.lean#L847). The attribute's comment: “representably formally smooth”.
 
 > **Stacks 07WK**, case (2). A 1-morphism of categories fibred in groupoids over the big fppf
 > category of `S` which is representable by algebraic spaces and formally smooth induces a smooth
@@ -142,7 +142,7 @@ public theorem isSmoothOnPredeformationCategories_of_isRelativelyFormallySmooth
       (CatFiberedInGroupoids.homFunctor_comp_p p)
 ```
 
-**`Deformation.Artin.isSmoothOnPredeformationCategories_of_formallySmooth_or_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/SmoothPredeformationCases.lean, line 52](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Versality/SmoothPredeformationCases.lean#L52).
+**`Deformation.Artin.isSmoothOnPredeformationCategories_of_formallySmooth_or_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Versality/SmoothPredeformationCases.lean, line 52](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Versality/SmoothPredeformationCases.lean#L52).
 
 > **Stacks 07WK.** Let `S` be a locally Noetherian scheme and `F : 𝒳 → 𝒴` a 1-morphism of
 > categories fibred in groupoids over the big fppf category of `S` which is (1) formally smooth on
@@ -165,13 +165,13 @@ theorem isSmoothOnPredeformationCategories_of_formallySmooth_or_smooth
 
 Declarations registered for the tag:
 
-- [`Deformation.Artin.isSmoothOnPredeformationCategories_of_isRelativelySmooth'`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Versality/RepresentableSmoothVersality.lean#L57), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Deformation/Artin/Versality/RepresentablySmoothPredeformation.lean, line 37](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Versality/RepresentablySmoothPredeformation.lean#L37) (StacksFrontier): “representably smooth”.
+- [`Deformation.Artin.isSmoothOnPredeformationCategories_of_isRelativelySmooth'`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Versality/RepresentableSmoothVersality.lean#L57), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Deformation/Artin/Versality/RepresentablySmoothPredeformation.lean, line 37](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Versality/RepresentablySmoothPredeformation.lean#L37) (StacksFrontier): “representably smooth”.
 
 ## Tag 07WL, a lemma
 
 [Tag 07WL](https://stacks.math.columbia.edu/tag/07WL) in the Stacks Project.
 
-**`Deformation.Artin.fibreProductOfPredeformationCategories`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Predeformation/FibreProduct.lean, line 1248](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Predeformation/FibreProduct.lean#L1248).
+**`Deformation.Artin.fibreProductOfPredeformationCategories`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Predeformation/FibreProduct.lean, line 1248](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Predeformation/FibreProduct.lean#L1248).
 
 > Let `𝒲` be a 2-fibre product of `𝒳 ⟶ 𝒴` and `𝒵 ⟶ 𝒴` in categories fibred in groupoids over
 > schemes over `S`, and let `w₀` be an object of `𝒲` over `Spec k` with images `x₀`, `z₀`,
@@ -187,7 +187,7 @@ public def fibreProductOfPredeformationCategories (hG : G ⋙ qY = qZ)
     PredeformationFibreProductData iΛ qW qX qZ qY A B F G hA hB hF ψ w₀ hw₀
 ```
 
-**`Deformation.Artin.fibreProductOfPredeformationCategoriesOfEssSurj`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Predeformation/FibreProduct.lean, line 1263](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Predeformation/FibreProduct.lean#L1263). The attribute's comment: “the essential surjectivity of the ambient comparison functor supplied directly”.
+**`Deformation.Artin.fibreProductOfPredeformationCategoriesOfEssSurj`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Predeformation/FibreProduct.lean, line 1263](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Predeformation/FibreProduct.lean#L1263). The attribute's comment: “the essential surjectivity of the ambient comparison functor supplied directly”.
 
 > The square of predeformation categories of a 2-fibre product is a 2-fibre product, given the
 > essential surjectivity of the ambient comparison functor strictly over the base in place of the
@@ -212,4 +212,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 98.3, Tag 07T2](https://stacks.math.columbia.edu/tag/07T2)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

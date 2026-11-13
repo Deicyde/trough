@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: AlgebraicGeometry.Space.stalkDerivedPushforwardIso, AlgebraicGeometry.Space.stalkDerivedPushforwardIso_naturality, AlgebraicGeometry.Space.stalkRightDerivedDirectImageIso, AlgebraicGeometry.Space.stalkRightDerivedDirectImageIso_naturality, AlgebraicGeometry.Space.isIso_kernelMap_and_mono_cokernelMap_pushforwardStalkMap, AlgebraicGeometry.Space.isIso_kernelMap_and_mono_cokernelMap_directImageStalkMap, AlgebraicGeometry.Space.exists_geometricModuleStalkGerm_modulePushforward, AlgebraicGeometry.Space.geometricModuleStalkGerm_modulePushforward_eq_iff
+lean: AlgebraicGeometry.Space.stalkDerivedPushforwardIso, AlgebraicGeometry.Space.stalkDerivedPushforwardIso_naturality, AlgebraicGeometry.Space.stalkRightDerivedDirectImageIso, AlgebraicGeometry.Space.stalkRightDerivedDirectImageIso_naturality, AlgebraicGeometry.Space.isIso_kernelMap_and_mono_cokernelMap_directImageStalkMap, AlgebraicGeometry.Space.exists_geometricModuleStalkGerm_modulePushforward, AlgebraicGeometry.Space.geometricModuleStalkGerm_modulePushforward_eq_iff, AlgebraicGeometry.Space.directImageGeometricStalkAddEquiv
 statement: formalized
 proof: formalized
 ---
 
 # 81.10 Formal glueing of quasi-coherent modules
 
-Section 81.10 of the Stacks Project, [Tag 0AEP](https://stacks.math.columbia.edu/tag/0AEP). 13 tags here are carried by 31 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 81.10 of the Stacks Project, [Tag 0AEP](https://stacks.math.columbia.edu/tag/0AEP). 13 tags here are carried by 30 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0AEQ, a lemma
 
 [Tag 0AEQ](https://stacks.math.columbia.edu/tag/0AEQ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.stalkDerivedPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SupportedComplexDerivedStalk.lean, line 293](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SupportedComplexDerivedStalk.lean#L293). The attribute's comment: “the comparison isomorphism, for a commutative (not necessarily cartesian) square and a geometric point of Y lifted to the closed subspace, on the two carried inputs 0AEH part (1) and 015N bundled as DerivedPushforwardSquareData”.
+**`AlgebraicGeometry.Space.stalkDerivedPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SupportedComplexDerivedStalk.lean, line 293](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SupportedComplexDerivedStalk.lean#L293). The attribute's comment: “the comparison isomorphism, for a commutative (not necessarily cartesian) square and a geometric point of Y lifted to the closed subspace, on the two carried inputs 0AEH part (1) and 015N bundled as DerivedPushforwardSquareData”.
 
 > **Stacks 0AEQ.** Let `f : Y ⟶ X` be a morphism of algebraic spaces over a scheme `S`, let
 > `i : Z ⟶ X` and `i' : W ⟶ Y` be closed immersions and let `f' : W ⟶ Z` be an integral
@@ -36,7 +36,7 @@ def stalkDerivedPushforwardIso
       (smallEtaleDerivedAbelianStalk B S hS y).obj Q
 ```
 
-**`AlgebraicGeometry.Space.stalkDerivedPushforwardIso_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SupportedComplexDerivedStalk.lean, line 309](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SupportedComplexDerivedStalk.lean#L309). The attribute's comment: “naturality of the comparison isomorphism in the supported complex”.
+**`AlgebraicGeometry.Space.stalkDerivedPushforwardIso_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SupportedComplexDerivedStalk.lean, line 309](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SupportedComplexDerivedStalk.lean#L309). The attribute's comment: “naturality of the comparison isomorphism in the supported complex”.
 
 > **Stacks 0AEQ: the comparison is natural.** The identification
 > `(Rf_*Q)_{x̄} ≅ Q_ȳ` is natural in the complex `Q` supported on `|W|`.
@@ -61,7 +61,7 @@ theorem stalkDerivedPushforwardIso_naturality
         (smallEtaleDerivedAbelianStalk B S hS y).map g
 ```
 
-**`AlgebraicGeometry.Space.stalkRightDerivedDirectImageIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SupportedComplexRightDerivedStalk.lean, line 358](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SupportedComplexRightDerivedStalk.lean#L358).
+**`AlgebraicGeometry.Space.stalkRightDerivedDirectImageIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SupportedComplexRightDerivedStalk.lean, line 358](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SupportedComplexRightDerivedStalk.lean#L358).
 
 > **Stacks 0AEQ.** Let `f : Y ⟶ X` be a morphism of algebraic spaces over a scheme `S`, let
 > `i : Z ⟶ X` be a closed immersion and let `f^{-1}Z` be its inverse image, a cartesian square
@@ -91,7 +91,7 @@ def stalkRightDerivedDirectImageIso (f : Y ⟶ X) (i : Z ⟶ X) (hi : IsClosedIm
       (smallEtaleAbelianStalk B S hS y).mapDerivedCategory.obj Q
 ```
 
-**`AlgebraicGeometry.Space.stalkRightDerivedDirectImageIso_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SupportedComplexRightDerivedStalk.lean, line 381](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SupportedComplexRightDerivedStalk.lean#L381). The attribute's comment: “naturality of the comparison in the supported complex”.
+**`AlgebraicGeometry.Space.stalkRightDerivedDirectImageIso_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SupportedComplexRightDerivedStalk.lean, line 381](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SupportedComplexRightDerivedStalk.lean#L381). The attribute's comment: “naturality of the comparison in the supported complex”.
 
 > **Stacks 0AEQ: the comparison is natural** in the complex `Q` supported on `|f^{-1}Z|`,
 > being the value at `Q` of an isomorphism of functors.
@@ -126,7 +126,7 @@ theorem stalkRightDerivedDirectImageIso_naturality (f : Y ⟶ X) (i : Z ⟶ X)
 
 [Tag 0AER](https://stacks.math.columbia.edu/tag/0AER) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isIso_kernelMap_and_mono_cokernelMap_pushforwardStalkMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormalGlueingTwoTermStalkComplex.lean, line 425](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormalGlueingTwoTermStalkComplex.lean#L425). The attribute's comment: “isomorphism on kernels and injection on cokernels of the two-term stalk complexes”.
+**`AlgebraicGeometry.Space.isIso_kernelMap_and_mono_cokernelMap_directImageStalkMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormalGlueingTwoTermStalkComplexGeneral.lean, line 199](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FormalGlueingTwoTermStalkComplexGeneral.lean#L199). The attribute's comment: “isomorphism on kernels and injection on cokernels of the two-term stalk complexes, for an arbitrary morphism of algebraic spaces”.
 
 > **Stacks 0AER.** Let `f : Y ⟶ X` be a morphism of algebraic spaces over a scheme `S` and
 > let `Z ⊆ X` be a closed subspace such that `f^{-1}Z ⟶ Z` is integral and universally
@@ -137,51 +137,7 @@ theorem stalkRightDerivedDirectImageIso_naturality (f : Y ⟶ X) (i : Z ⟶ X)
 > ((f_*G)_x̄ ⟶ (f_*(j'_*(G|_V)))_x̄) ⟶ (G_ȳ ⟶ (j'_*(G|_V))_ȳ)
 > ```
 > given by the canonical comparison of
-> `AlgebraicGeometry.Space.smallEtaleAbelianPushforwardStalkMap` induces an isomorphism on
-> kernels and an injection on cokernels.
-
-```lean
-theorem isIso_kernelMap_and_mono_cokernelMap_pushforwardStalkMap (f : Y ⟶ X)
-    (hfr : yoneda.relativelyRepresentable f.hom) (Z : ClosedSubspaces B S hS X.1)
-    (hint : IsIntegralHom B S hS (Z.1.fromPreimage f.hom))
-    (hinj : UniversallyInjective B S hS (Z.1.fromPreimage f.hom))
-    (y : GeometricPoint B S hS Y.1) (G : abelianSheaves.{u + 1} B S hS Y) :
-    IsIso (kernel.map
-        ((smallEtaleAbelianPushforward.{u + 1} B S hS f hfr ⋙
-            smallEtaleAbelianStalk B S hS (geometricPointMap f.hom y)).map
-          (smallEtaleAbelianRestrictionUnit B S hS f Z G))
-        ((smallEtaleAbelianStalk B S hS y).map
-          (smallEtaleAbelianRestrictionUnit B S hS f Z G))
-        ((smallEtaleAbelianPushforwardStalkMap B S hS f hfr y).app G)
-        ((smallEtaleAbelianPushforwardStalkMap B S hS f hfr y).app
-          (smallEtaleAbelianRestrictionPushforward B S hS f Z G))
-        ((smallEtaleAbelianPushforwardStalkMap B S hS f hfr y).naturality
-          (smallEtaleAbelianRestrictionUnit B S hS f Z G))) ∧
-      Mono (cokernel.map
-        ((smallEtaleAbelianPushforward.{u + 1} B S hS f hfr ⋙
-            smallEtaleAbelianStalk B S hS (geometricPointMap f.hom y)).map
-          (smallEtaleAbelianRestrictionUnit B S hS f Z G))
-        ((smallEtaleAbelianStalk B S hS y).map
-          (smallEtaleAbelianRestrictionUnit B S hS f Z G))
-        ((smallEtaleAbelianPushforwardStalkMap B S hS f hfr y).app G)
-        ((smallEtaleAbelianPushforwardStalkMap B S hS f hfr y).app
-          (smallEtaleAbelianRestrictionPushforward B S hS f Z G))
-        ((smallEtaleAbelianPushforwardStalkMap B S hS f hfr y).naturality
-          (smallEtaleAbelianRestrictionUnit B S hS f Z G)))
-```
-
-**`AlgebraicGeometry.Space.isIso_kernelMap_and_mono_cokernelMap_directImageStalkMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormalGlueingTwoTermStalkComplexGeneral.lean, line 199](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormalGlueingTwoTermStalkComplexGeneral.lean#L199). The attribute's comment: “isomorphism on kernels and injection on cokernels of the two-term stalk complexes, for an arbitrary morphism of algebraic spaces”.
-
-> **Stacks 0AER.** Let `f : Y ⟶ X` be a morphism of algebraic spaces over a scheme `S` and
-> let `Z ⊆ X` be a closed subspace such that `f^{-1}Z ⟶ Z` is integral and universally
-> injective. Let `ȳ` be a geometric point of `Y`, let `x̄ = f(ȳ)` and let `G` be an abelian sheaf
-> on the small étale site of `Y`. Writing `V = Y ∖ f^{-1}Z` and `j' : V ⟶ Y` for the inclusion,
-> the map of two-term complexes
-> ```
-> ((f_*G)_x̄ ⟶ (f_*(j'_*(G|_V)))_x̄) ⟶ (G_ȳ ⟶ (j'_*(G|_V))_ȳ)
-> ```
-> given by the canonical comparison of
-> `AlgebraicGeometry.Space.smallEtaleAbelianPushforwardStalkMap` induces an isomorphism on
+> `AlgebraicGeometry.Space.smallEtaleAbelianDirectImageStalkMap` induces an isomorphism on
 > kernels and an injection on cokernels.
 
 ```lean
@@ -218,7 +174,7 @@ theorem isIso_kernelMap_and_mono_cokernelMap_directImageStalkMap (f : Y ⟶ X)
 
 [Tag 0AES](https://stacks.math.columbia.edu/tag/0AES) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_geometricModuleStalkGerm_modulePushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DirectImageGeometricStalk.lean, line 232](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DirectImageGeometricStalk.lean#L232). The attribute's comment: “generation half, for the geometric point stalk expressed as the filtered colimit over the etale neighbourhoods of x-bar, with the sections on Y times\_X V read chartwise; the canonical morphism Spec(O\_\{X, x-bar}) -> X is not constructed, since the etale local ring lives one universe up and its spectrum is not an object of the site, so neither the source's formula nor its quasi-compact, quasi-separated and quasi-coherent hypotheses appear”.
+**`AlgebraicGeometry.Space.exists_geometricModuleStalkGerm_modulePushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DirectImageGeometricStalk.lean, line 232](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DirectImageGeometricStalk.lean#L232). The attribute's comment: “generation half, for the geometric point stalk expressed as the filtered colimit over the etale neighbourhoods of x-bar, with the sections on Y times\_X V read chartwise; the canonical morphism Spec(O\_\{X, x-bar}) -> X is not constructed, since the etale local ring lives one universe up and its spectrum is not an object of the site, so neither the source's formula nor its quasi-compact, quasi-separated and quasi-coherent hypotheses appear”.
 
 > **Stacks 0AES, the generation half of the colimit form.**  Every element of the geometric
 > stalk `(f_*G)_{x̄}` is the germ at `x̄` of a section of `p_V^*G` on `Y ×_X V`, for some small
@@ -233,7 +189,7 @@ theorem exists_geometricModuleStalkGerm_modulePushforward (f : Y ⟶ X)
         ((directImageChartSectionsEquiv B S hS f G N.chart).symm a) = z
 ```
 
-**`AlgebraicGeometry.Space.geometricModuleStalkGerm_modulePushforward_eq_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DirectImageGeometricStalk.lean, line 253](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DirectImageGeometricStalk.lean#L253). The attribute's comment: “separation half, for the geometric point stalk expressed as the filtered colimit over the etale neighbourhoods of x-bar, with the sections on Y times\_X V read chartwise; the canonical morphism Spec(O\_\{X, x-bar}) -> X is not constructed, since the etale local ring lives one universe up and its spectrum is not an object of the site, so neither the source's formula nor its quasi-compact, quasi-separated and quasi-coherent hypotheses appear”.
+**`AlgebraicGeometry.Space.geometricModuleStalkGerm_modulePushforward_eq_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DirectImageGeometricStalk.lean, line 253](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DirectImageGeometricStalk.lean#L253). The attribute's comment: “separation half, for the geometric point stalk expressed as the filtered colimit over the etale neighbourhoods of x-bar, with the sections on Y times\_X V read chartwise; the canonical morphism Spec(O\_\{X, x-bar}) -> X is not constructed, since the etale local ring lives one universe up and its spectrum is not an object of the site, so neither the source's formula nor its quasi-compact, quasi-separated and quasi-coherent hypotheses appear”.
 
 > **Stacks 0AES, the separation half of the colimit form.**  Two sections of the direct image
 > `f_*G` over the chart of a small étale neighbourhood `N` of `x̄` have the same germ in the
@@ -254,7 +210,7 @@ theorem geometricModuleStalkGerm_modulePushforward_eq_iff (f : Y ⟶ X)
             (((modulePushforward B S hS f).obj G).val.map g.hom.op t)
 ```
 
-**`AlgebraicGeometry.Space.directImageGeometricStalkAddEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DirectImageStalkStrictHenselization.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DirectImageStalkStrictHenselization.lean#L162). The attribute's comment: “(f\_*G)\_xbar = Γ(Y ×\_X Spec(O\_\{X,xbar}), p^*G) for f quasi-compact and quasi-separated and G quasi-coherent, as an isomorphism of abelian groups; the source's p^*F is a misprint for p^*G”.
+**`AlgebraicGeometry.Space.directImageGeometricStalkAddEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DirectImageStalkStrictHenselization.lean, line 162](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DirectImageStalkStrictHenselization.lean#L162). The attribute's comment: “(f\_*G)\_xbar = Γ(Y ×\_X Spec(O\_\{X,xbar}), p^*G) for f quasi-compact and quasi-separated and G quasi-coherent, as an isomorphism of abelian groups; the source's p^*F is a misprint for p^*G”.
 
 > **The stalk of a direct image at a geometric point, over the strict henselization.**  Let `X`
 > be an algebraic space over `S`, `f : Y ⟶ X` a quasi-compact and quasi-separated morphism, `x̄` a
@@ -284,7 +240,7 @@ def directImageGeometricStalkAddEquiv :
 
 [Tag 0AET](https://stacks.math.columbia.edu/tag/0AET) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.closedSubspaceStalkIdeal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/StalkTorsionOfSupportedComplex.lean, line 355](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/StalkTorsionOfSupportedComplex.lean#L355). The attribute's comment: “the stalk I\_x̄ of the ideal sheaf of Z”.
+**`AlgebraicGeometry.Space.closedSubspaceStalkIdeal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/StalkTorsionOfSupportedComplex.lean, line 355](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/StalkTorsionOfSupportedComplex.lean#L355). The attribute's comment: “the stalk I\_x̄ of the ideal sheaf of Z”.
 
 > **Stacks 0AET.** The stalk `I_x̄ ⊆ 𝒪_{X, x̄}` at a geometric point of the ideal sheaf of a
 > closed subspace: the ideal of the étale local ring generated by the germs of the local sections
@@ -296,7 +252,7 @@ noncomputable def closedSubspaceStalkIdeal (X : AlgebraicSpaces B S hS)
     Ideal (etaleLocalRing B S hS X.1 x)
 ```
 
-**`AlgebraicGeometry.Space.isIPowerTorsion_geometricModuleStalk_homology_of_cohomologySupportedOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/StalkTorsionOfSupportedComplex.lean, line 423](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/StalkTorsionOfSupportedComplex.lean#L423). The attribute's comment: “asserted for the stalk Hⁿ(Q)\_x̄ of the cohomology sheaf rather than for the cohomology Hⁿ(Q\_x̄) of the stalk of Q in D(Ab); the two agree by exactness of the stalk functor at a geometric point, which this development does not have. Stated at module universe m = u”.
+**`AlgebraicGeometry.Space.isIPowerTorsion_geometricModuleStalk_homology_of_cohomologySupportedOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/StalkTorsionOfSupportedComplex.lean, line 423](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/StalkTorsionOfSupportedComplex.lean#L423). The attribute's comment: “asserted for the stalk Hⁿ(Q)\_x̄ of the cohomology sheaf rather than for the cohomology Hⁿ(Q\_x̄) of the stalk of Q in D(Ab); the two agree by exactness of the stalk functor at a geometric point, which this development does not have. Stated at module universe m = u”.
 
 > **Stacks 0AET.** Let `X` be an algebraic space over `S`, let `Z ⊆ X` be a closed subspace
 > whose inclusion is of finite presentation and let `Q ∈ D_QCoh(𝒪_X)` have all its cohomology
@@ -323,23 +279,23 @@ theorem isIPowerTorsion_geometricModuleStalk_homology_of_cohomologySupportedOn
 
 [Tag 0AEU](https://stacks.math.columbia.edu/tag/0AEU) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isIso_derivedAdjunction_counit_app_of_cohomologySupportedOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingDerivedEquivalence.lean, line 167](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingDerivedEquivalence.lean#L167). The attribute's comment: “with `Z ⟶ X` of finite presentation, which the source's proof uses and without which the statement fails”.
+**`AlgebraicGeometry.Space.isIso_derivedAdjunction_counit_app_of_cohomologySupportedOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingDerivedEquivalence.lean, line 169](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingDerivedEquivalence.lean#L169). The attribute's comment: “corrected statement: the printed one omits that `Z ⟶ X` is of finite presentation, which the source's proof uses and without which it is false (see `errata.md`)”.
 
-> **Stacks 0AEU.** Let `f : Y ⟶ X` be a morphism of algebraic spaces over `S` and `Z ⊆ X` a
-> closed subspace of finite presentation such that `f⁻¹Z ⟶ Z` is an isomorphism and `f` is flat at
-> every point of `f⁻¹Z`. Then for every `Q ∈ D_QCoh(𝒪_Y)` supported on `|f⁻¹Z|` the counit
+> **Stacks 0AEU** (corrected). Let `f : Y ⟶ X` be a morphism of algebraic spaces over `S` and
+> `Z ⊆ X` a closed subspace of finite presentation such that `f⁻¹Z ⟶ Z` is an isomorphism and `f` is
+> flat at every point of `f⁻¹Z`. Then for every `Q ∈ D_QCoh(𝒪_Y)` supported on `|f⁻¹Z|` the counit
 > `Lf^*Rf_*Q ⟶ Q` of the derived adjunction of the morphism of small étale ringed topoi is an
 > isomorphism.
 >
-> The finite presentation of `Z ⟶ X` is not in the source's statement, but the source's proof uses
-> it (through Stacks 0AET and 05E9, which need the ideal of `Z` finitely generated), and the
-> assertion is false without it. Let `A` be a valuation ring of rank one with divisible value group,
-> `X = Spec A` and `Z = V(m)` for the maximal ideal `m = m²`, which is not finitely generated.
-> Choose `g ∈ m` of valuation `1` and `c_n ∈ A` whose valuations increase strictly to `1`, and let
-> `Y = Spec B` for `B = A[t/c_1, t/c_2, …] ⊂ K[t]`. Then `B` is flat over `A`, `B/mB = A/m`, so
-> `f⁻¹Z ⟶ Z` is an isomorphism, and `M = B/gB` is supported on `V(mB)`; but the counit
-> `M ⊗_A B ⟶ M` is not an isomorphism, because `t ∉ A + gB`. In Stacks 0AFJ, the application
-> the source makes of this lemma, `Z ⟶ X` is of finite presentation by Situation 0AEV.
+> The finite presentation of `Z ⟶ X` is missing from the printed statement (an erratum, recorded in
+> `errata.md`); the source's proof uses it (through Stacks 0AET and 05E9, which need the ideal of `Z`
+> finitely generated), and the printed statement is false without it. Let `A` be the valuation ring
+> of the field `ℚ((t^ℚ))` of Hahn series and `I` its maximal ideal, so `I = I²` is not finitely
+> generated; let `X = Spec A`, `Z = V(I)`, `Y = Spec B` for the square-zero extension `B = A ⊕ Iε`,
+> and `Q = M~` for `M = B / t¹B`. Then `B` is flat over `A`, `A / I ⟶ B / IB` is bijective (so
+> `f⁻¹Z ⟶ Z` is an isomorphism) and `M` is supported on `V(IB)`, but the counit, which is the
+> action map `M ⊗_A B ⟶ M`, is not injective: this is the machine-checked
+> `IPowerTorsion.exists_not_bijective_actionMap_of_support_subset`.
 
 ```lean
 theorem isIso_derivedAdjunction_counit_app_of_cohomologySupportedOn
@@ -359,7 +315,7 @@ theorem isIso_derivedAdjunction_counit_app_of_cohomologySupportedOn
 
 [Tag 0AEV](https://stacks.math.columbia.edu/tag/0AEV) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.FormalGlueingSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingModules.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingModules.lean#L59). The attribute's comment: “standing data and hypotheses”.
+**`AlgebraicGeometry.Space.FormalGlueingSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingModules.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingModules.lean#L59). The attribute's comment: “standing data and hypotheses”.
 
 > **Stacks 0AEV.** The standing situation for formal glueing of quasi-coherent modules: a
 > quasi-compact, quasi-separated morphism `f : Y ⟶ X` of algebraic spaces over `S`, a finitely
@@ -371,7 +327,7 @@ structure FormalGlueingSituation
     (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS : B.Contains S)
 ```
 
-**`AlgebraicGeometry.Space.FormalGlueingSituation.V_eq_openComplement_preimage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingModules.lean, line 105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingModules.lean#L105). The attribute's comment: “V = Y minus the inverse image of Z”.
+**`AlgebraicGeometry.Space.FormalGlueingSituation.V_eq_openComplement_preimage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingModules.lean, line 105](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingModules.lean#L105). The attribute's comment: “V = Y minus the inverse image of Z”.
 
 > **Stacks 0AEV.** The inverse image of the open complement of `Z` is the open complement
 > of the inverse image of `Z`.
@@ -381,7 +337,7 @@ theorem V_eq_openComplement_preimage (D : FormalGlueingSituation B S hS) :
     D.V = openComplement B S hS (D.Z.preimage D.f)
 ```
 
-**`AlgebraicGeometry.Space.FormalGlueingSituation.isOpenSubspace_U`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingModules.lean, line 115](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingModules.lean#L115). The attribute's comment: “openness of U”.
+**`AlgebraicGeometry.Space.FormalGlueingSituation.isOpenSubspace_U`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingModules.lean, line 115](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingModules.lean#L115). The attribute's comment: “openness of U”.
 
 > **Stacks 0AEV.** The complement of `Z` is an open subspace of `X`.
 
@@ -390,7 +346,7 @@ theorem isOpenSubspace_U (D : FormalGlueingSituation B S hS) :
     IsOpenSubspace B S hS D.U
 ```
 
-**`AlgebraicGeometry.Space.FormalGlueingSituation.isOpenSubspace_V`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingModules.lean, line 121](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingModules.lean#L121). The attribute's comment: “openness of V”.
+**`AlgebraicGeometry.Space.FormalGlueingSituation.isOpenSubspace_V`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingModules.lean, line 121](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingModules.lean#L121). The attribute's comment: “openness of V”.
 
 > **Stacks 0AEV.** The complement of the inverse image of `Z` is an open subspace of `Y`.
 
@@ -403,7 +359,7 @@ theorem isOpenSubspace_V (D : FormalGlueingSituation B S hS) :
 
 [Tag 0AEW](https://stacks.math.columbia.edu/tag/0AEW) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.FormalGlueingSituation.overlapPullbackComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingModulesFunctor.lean, line 244](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingModulesFunctor.lean#L244). The attribute's comment: “the comparison over the overlap”.
+**`AlgebraicGeometry.Space.FormalGlueingSituation.overlapPullbackComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingModulesFunctor.lean, line 244](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingModulesFunctor.lean#L244). The attribute's comment: “the comparison over the overlap”.
 
 > The canonical identification `(f|_V)^* ∘ j^* ≅ (j')^* ∘ f^*` of the two ways of
 > transporting an `𝒪_X`-module to the overlap `V`: both are the inverse image along the common
@@ -415,7 +371,7 @@ def overlapPullbackComparison :
       modulePullback B S hS D.ambientMorphism ⋙ modulePullback B S hS D.openImmersionOver
 ```
 
-**`AlgebraicGeometry.Space.FormalGlueingSituation.moduleGlueingData`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingModulesFunctor.lean, line 262](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingModulesFunctor.lean#L262). The attribute's comment: “the category of glueing data”.
+**`AlgebraicGeometry.Space.FormalGlueingSituation.moduleGlueingData`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingModulesFunctor.lean, line 262](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingModulesFunctor.lean#L262). The attribute's comment: “the category of glueing data”.
 
 > **The category `QCoh(Y → X, Z)` of formal glueing data for quasi-coherent modules**: the
 > triples `(H, G, φ)` of a quasi-coherent `𝒪_U`-module `H`, a quasi-coherent `𝒪_Y`-module `G` and
@@ -429,7 +385,7 @@ def overlapPullbackComparison :
 abbrev moduleGlueingData
 ```
 
-**`AlgebraicGeometry.Space.FormalGlueingSituation.glueingModulesUnconditional`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingModulesFunctorUnconditional.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingModulesFunctorUnconditional.lean#L67).
+**`AlgebraicGeometry.Space.FormalGlueingSituation.glueingModulesUnconditional`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingModulesFunctorUnconditional.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingModulesFunctorUnconditional.lean#L67).
 
 > The functor `QCoh(𝒪_X) ⥤ QCoh(Y → X, Z)` of formal glueing: a quasi-coherent `𝒪_X`-module
 > goes to its restriction to the open complement `U`, its pullback to `Y`, and the canonical
@@ -440,7 +396,7 @@ def glueingModulesUnconditional :
     QuasicoherentSheaves.{u, u} B S hS D.spaceX.1 D.spaceX.2 ⥤ D.moduleGlueingData
 ```
 
-**`AlgebraicGeometry.Space.FormalGlueingSituation.glueingModulesFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingModulesUnconditional.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingModulesUnconditional.lean#L55). The attribute's comment: “the functor, with no hypothesis”.
+**`AlgebraicGeometry.Space.FormalGlueingSituation.glueingModulesFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingModulesUnconditional.lean, line 55](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingModulesUnconditional.lean#L55). The attribute's comment: “the functor, with no hypothesis”.
 
 > The functor `QCoh(𝒪_X) ⥤ QCoh(Y → X, Z)` of formal glueing: a quasi-coherent `𝒪_X`-module
 > `F` goes to `(F|_U, f^*F, can)`.
@@ -454,7 +410,7 @@ def glueingModulesFunctor :
 
 [Tag 0AEX](https://stacks.math.columbia.edu/tag/0AEX) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.FormalGlueingSituation.glueingKernelMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingModulesKernel.lean, line 287](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingModulesKernel.lean#L287). The attribute's comment: “the map out of the direct sum”.
+**`AlgebraicGeometry.Space.FormalGlueingSituation.glueingKernelMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingModulesKernel.lean, line 287](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingModulesKernel.lean#L287). The attribute's comment: “the map out of the direct sum”.
 
 > **The map `j_*H ⊕ f_*G ⟶ (f ∘ j')_*(G|_V)` of Stacks 0AEX**: the difference of the two
 > canonical maps to the direct image from the overlap, so that a pair of sections lies in its
@@ -465,7 +421,7 @@ def glueingKernelMap :
     D.restrictionDirectImage ⊞ D.ambientDirectImage ⟶ D.overlapDirectImage
 ```
 
-**`AlgebraicGeometry.Space.FormalGlueingSituation.glueingKernelDiagram`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingModulesKernel.lean, line 301](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingModulesKernel.lean#L301). The attribute's comment: “the kernel module, as a functor of the glueing triple”.
+**`AlgebraicGeometry.Space.FormalGlueingSituation.glueingKernelDiagram`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingModulesKernel.lean, line 301](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingModulesKernel.lean#L301). The attribute's comment: “the kernel module, as a functor of the glueing triple”.
 
 > **The `𝒪_X`-module `Ker(j_*H ⊕ f_*G ⟶ (f ∘ j')_*(G|_V))` of Stacks 0AEX**, as a functor of
 > the glueing triple.  It is the kernel in the category of functors to the `𝒪_X`-modules, so no
@@ -476,7 +432,7 @@ def glueingKernelDiagram :
     D.moduleGlueingComma ⥤ Modules.{u, u} B S hS D.spaceX.1 D.spaceX.2
 ```
 
-**`AlgebraicGeometry.Space.FormalGlueingSituation.glueingKernelFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingModulesUnconditional.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingModulesUnconditional.lean#L97). The attribute's comment: “the functor, with no hypothesis”.
+**`AlgebraicGeometry.Space.FormalGlueingSituation.glueingKernelFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingModulesUnconditional.lean, line 97](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingModulesUnconditional.lean#L97). The attribute's comment: “the functor, with no hypothesis”.
 
 > The functor `QCoh(Y → X, Z) ⥤ QCoh(𝒪_X)`,
 > `(H, G, φ) ↦ Ker(j_*H ⊕ f_*G ⟶ (f ∘ j')_*(G|_V))`.
@@ -490,7 +446,7 @@ def glueingKernelFunctor :
 
 [Tag 0AEY](https://stacks.math.columbia.edu/tag/0AEY) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.FormalGlueingSituation.glueingAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingModulesUnconditional.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingModulesUnconditional.lean#L118). The attribute's comment: “with no hypothesis”.
+**`AlgebraicGeometry.Space.FormalGlueingSituation.glueingAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingModulesUnconditional.lean, line 118](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingModulesUnconditional.lean#L118). The attribute's comment: “with no hypothesis”.
 
 > The functor `glueingModulesFunctor` is left adjoint to the functor
 > `glueingKernelFunctor`.
@@ -503,7 +459,7 @@ def glueingAdjunction : D.glueingModulesFunctor ⊣ D.glueingKernelFunctor
 
 [Tag 0AEZ](https://stacks.math.columbia.edu/tag/0AEZ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.FormalGlueingSituation.FlatBaseChange.glueingModulesFunctorPullbackIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingModulesFlatBaseChangeUnconditional.lean, line 473](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingModulesFlatBaseChangeUnconditional.lean#L473). The attribute's comment: “compatibility with the functor of Tag 0AEW”.
+**`AlgebraicGeometry.Space.FormalGlueingSituation.FlatBaseChange.glueingModulesFunctorPullbackIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingModulesFlatBaseChangeUnconditional.lean, line 473](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingModulesFlatBaseChangeUnconditional.lean#L473). The attribute's comment: “compatibility with the functor of Tag 0AEW”.
 
 > **Stacks 0AEZ, compatibility with the functor of Stacks 0AEW.**  For the base change of the
 > formal glueing situation along a flat morphism `g : X' ⟶ X`, the pullback
@@ -517,7 +473,7 @@ def glueingModulesFunctorPullbackIso :
       quasicoherentPullbackFunctor B S hS c.g ⋙ D'.glueingModulesFunctor
 ```
 
-**`AlgebraicGeometry.Space.FormalGlueingSituation.FlatBaseChange.glueingKernelFunctorPullbackIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingModulesFlatBaseChangeUnconditional.lean, line 500](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingModulesFlatBaseChangeUnconditional.lean#L500). The attribute's comment: “compatibility with the functor of Tag 0AEX”.
+**`AlgebraicGeometry.Space.FormalGlueingSituation.FlatBaseChange.glueingKernelFunctorPullbackIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingModulesFlatBaseChangeUnconditional.lean, line 500](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingModulesFlatBaseChangeUnconditional.lean#L500). The attribute's comment: “compatibility with the functor of Tag 0AEX”.
 
 > **Stacks 0AEZ, compatibility with the functor of Stacks 0AEX.**  For the base change of the
 > formal glueing situation along a flat morphism `g : X' ⟶ X`, the pullback
@@ -536,7 +492,7 @@ def glueingKernelFunctorPullbackIso :
       c.glueingDataPullback ⋙ D'.glueingKernelFunctor
 ```
 
-**`AlgebraicGeometry.Space.FormalGlueingSituation.glueingModulesFunctorBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingModulesFlatBaseChangeUnconditional.lean, line 519](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingModulesFlatBaseChangeUnconditional.lean#L519). The attribute's comment: “compatibility with the functor of Tag 0AEW, for the constructed base change along a flat morphism”.
+**`AlgebraicGeometry.Space.FormalGlueingSituation.glueingModulesFunctorBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingModulesFlatBaseChangeUnconditional.lean, line 519](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingModulesFlatBaseChangeUnconditional.lean#L519). The attribute's comment: “compatibility with the functor of Tag 0AEW, for the constructed base change along a flat morphism”.
 
 > **Stacks 0AEZ, compatibility with the functor of Stacks 0AEW**, for the base change of the
 > situation along a flat morphism `k : X' ⟶ X`, with `Z' = X' ×_X Z` and `Y' = X' ×_X Y`.
@@ -547,7 +503,7 @@ def glueingModulesFunctorBaseChangeIso :
       quasicoherentPullbackFunctor B S hS k ⋙ (D.baseChange k).glueingModulesFunctor
 ```
 
-**`AlgebraicGeometry.Space.FormalGlueingSituation.glueingKernelFunctorBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingModulesFlatBaseChangeUnconditional.lean, line 528](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingModulesFlatBaseChangeUnconditional.lean#L528). The attribute's comment: “compatibility with the functor of Tag 0AEX, for the constructed base change along a flat morphism”.
+**`AlgebraicGeometry.Space.FormalGlueingSituation.glueingKernelFunctorBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingModulesFlatBaseChangeUnconditional.lean, line 528](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingModulesFlatBaseChangeUnconditional.lean#L528). The attribute's comment: “compatibility with the functor of Tag 0AEX, for the constructed base change along a flat morphism”.
 
 > **Stacks 0AEZ, compatibility with the functor of Stacks 0AEX**, for the base change of the
 > situation along a flat morphism `k : X' ⟶ X`, with `Z' = X' ×_X Z` and `Y' = X' ×_X Y`.
@@ -562,7 +518,7 @@ def glueingKernelFunctorBaseChangeIso :
 
 [Tag 0AF0](https://stacks.math.columbia.edu/tag/0AF0) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.FormalGlueingSituation.isIso_glueingAdjunction_unit_counit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingModulesQCohEquivalence.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingModulesQCohEquivalence.lean#L83).
+**`AlgebraicGeometry.Space.FormalGlueingSituation.isIso_glueingAdjunction_unit_counit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingModulesQCohEquivalence.lean, line 83](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingModulesQCohEquivalence.lean#L83).
 
 > **Stacks 0AF0.**  In Situation 0AEV the functor `QCoh(𝒪_X) ⥤ QCoh(Y → X, Z)` of Stacks 0AEW is
 > an equivalence with quasi-inverse the functor of Stacks 0AEX: the unit and the counit of the
@@ -577,7 +533,7 @@ theorem isIso_glueingAdjunction_unit_counit :
 
 [Tag 0AFJ](https://stacks.math.columbia.edu/tag/0AFJ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.FormalGlueingSituation.exists_supportedQuasicoherentDerived_equivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingDerivedEquivalence.lean, line 198](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingDerivedEquivalence.lean#L198).
+**`AlgebraicGeometry.Space.FormalGlueingSituation.exists_supportedQuasicoherentDerived_equivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingDerivedEquivalence.lean, line 200](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingDerivedEquivalence.lean#L200).
 
 > **Stacks 0AFJ.** In Situation 0AEV (`AlgebraicGeometry.Space.FormalGlueingSituation`), the
 > derived direct image `Rf_*` of the morphism of small étale ringed topoi of `f` induces an
@@ -612,7 +568,7 @@ theorem FormalGlueingSituation.exists_supportedQuasicoherentDerived_equivalence
 
 [Tag 0AF1](https://stacks.math.columbia.edu/tag/0AF1) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_fpqcCovering_refining_openComplement_and_source`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingCovering.lean, line 950](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingCovering.lean#L950).
+**`AlgebraicGeometry.Space.exists_fpqcCovering_refining_openComplement_and_source`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingCovering.lean, line 950](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/FormalGlueingCovering.lean#L950).
 
 > The open complement and the formal-glueing morphism admit an fpqc
 > covering refinement.
@@ -637,4 +593,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 81.10, Tag 0AEP](https://stacks.math.columbia.edu/tag/0AEP)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -1,6 +1,6 @@
 # 68 Decent Algebraic Spaces
 
-Chapter 68 of the Stacks Project, *Decent Algebraic Spaces*, [Tag 06NK](https://stacks.math.columbia.edu/tag/06NK): the 23 sections of its 25 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 135 tags are carried by 387 declarations of the repository (all in StacksFrontier) and 12 registered declarations.
+Chapter 68 of the Stacks Project, *Decent Algebraic Spaces*, [Tag 06NK](https://stacks.math.columbia.edu/tag/06NK): the 23 sections of its 25 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 135 tags are carried by 385 declarations of the repository (all in StacksFrontier) and 12 registered declarations.
 
 ## [68.3 Universally bounded fibres to 68.17 Relative conditions](part-01/README.md)
 

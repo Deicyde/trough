@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.71 Injective dimension
 
-Section 15.71 of the Stacks Project, [Tag 0A5R](https://stacks.math.columbia.edu/tag/0A5R). 7 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.71 of the Stacks Project, [Tag 0A5R](https://stacks.math.columbia.edu/tag/0A5R). 7 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0A5S, a definition
 
 [Tag 0A5S](https://stacks.math.columbia.edu/tag/0A5S) in the Stacks Project.
 
-**`StacksDraft.InjectiveDimension.HasInjectiveAmplitude`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/InjectiveDimension.lean, line 44](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/InjectiveDimension.lean#L44). The attribute's comment: “injective amplitude”. References: SGA 6 I (5.7), “(i) definition”.
+**`StacksDraft.InjectiveDimension.HasInjectiveAmplitude`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/InjectiveDimension.lean, line 44](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/InjectiveDimension.lean#L44). The attribute's comment: “injective amplitude”. References: SGA 6 I (5.7), “(i) definition”.
 
 > An object of a derived category has *injective amplitude in `[a, b]`* if it is isomorphic
 > to the image of a cochain complex which vanishes below `a` and above `b` and whose terms are
@@ -24,7 +24,7 @@ Section 15.71 of the Stacks Project, [Tag 0A5R](https://stacks.math.columbia.edu
 public def HasInjectiveAmplitude (K : DerivedCategory C) (a b : ℤ) : Prop
 ```
 
-**`StacksDraft.InjectiveDimension.HasFiniteInjectiveDimension`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/InjectiveDimension.lean, line 51](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/InjectiveDimension.lean#L51). The attribute's comment: “finite injective dimension”.
+**`StacksDraft.InjectiveDimension.HasFiniteInjectiveDimension`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/InjectiveDimension.lean, line 51](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/InjectiveDimension.lean#L51). The attribute's comment: “finite injective dimension”.
 
 > An object of a derived category has *finite injective dimension* if it has injective
 > amplitude in some finite integer interval.
@@ -37,7 +37,7 @@ public def HasFiniteInjectiveDimension (K : DerivedCategory C) : Prop
 
 [Tag 0A5T](https://stacks.math.columbia.edu/tag/0A5T) in the Stacks Project.
 
-**`StacksDraft.InjectiveDimension.hasInjectiveAmplitude_iff_ext_vanishing_iff_quotient_vanishing`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/InjectiveDimension/Criteria.lean, line 362](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/InjectiveDimension/Criteria.lean#L362). References: EGA 0 (17.2.1), “partial”.
+**`StacksDraft.InjectiveDimension.hasInjectiveAmplitude_iff_ext_vanishing_iff_quotient_vanishing`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/InjectiveDimension/Criteria.lean, line 362](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/InjectiveDimension/Criteria.lean#L362). References: EGA 0 (17.2.1), “partial”.
 
 > **Stacks 0A5T.** An object of the derived category of modules has injective amplitude in
 > `[a, b]` if and only if its Ext groups from all modules vanish in degrees outside `[a, b]`; this
@@ -67,7 +67,7 @@ public lemma hasInjectiveAmplitude_iff_ext_vanishing_iff_quotient_vanishing
 
 [Tag 0EX0](https://stacks.math.columbia.edu/tag/0EX0) in the Stacks Project.
 
-**`StacksDraft.InjectiveDimension.dedekindDomain_ideal_projective_and_bounded_complex_splitting`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/InjectiveDimension/Examples.lean, line 464](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/InjectiveDimension/Examples.lean#L464).
+**`StacksDraft.InjectiveDimension.dedekindDomain_ideal_projective_and_bounded_complex_splitting`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/InjectiveDimension/Examples.lean, line 464](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/InjectiveDimension/Examples.lean#L464).
 
 > **Stacks 0EX0.** Ideals over a Dedekind domain are finite projective. Hence cyclic modules
 > have projective dimension at most one, every module has injective dimension at most one, all Ext
@@ -93,7 +93,7 @@ public theorem dedekindDomain_ideal_projective_and_bounded_complex_splitting
 
 [Tag 0A5U](https://stacks.math.columbia.edu/tag/0A5U) in the Stacks Project.
 
-**`StacksDraft.InjectiveDimension.dualNumber_residueField_infinite_injectiveDimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/InjectiveDimension/Examples.lean, line 422](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/InjectiveDimension/Examples.lean#L422).
+**`StacksDraft.InjectiveDimension.dualNumber_residueField_infinite_injectiveDimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/InjectiveDimension/Examples.lean, line 422](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/InjectiveDimension/Examples.lean#L422).
 
 > **Stacks 0A5U.** Let `R` be the ring of dual numbers over a field and let `M = R/(ε)`.
 > Then `R` is injective as an `R`-module, `M` is quasi-isomorphic to the left-unbounded complex of
@@ -122,7 +122,7 @@ public theorem dualNumber_residueField_infinite_injectiveDimension (k : Type u) 
 
 [Tag 0A5V](https://stacks.math.columbia.edu/tag/0A5V) in the Stacks Project.
 
-**`StacksDraft.InjectiveDimension.hasFiniteInjectiveDimension_of_bounded`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/InjectiveDimension/Criteria.lean, line 505](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/InjectiveDimension/Criteria.lean#L505).
+**`StacksDraft.InjectiveDimension.hasFiniteInjectiveDimension_of_bounded`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/InjectiveDimension/Criteria.lean, line 505](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/InjectiveDimension/Criteria.lean#L505).
 
 > **Stacks 0A5V.** A bounded object of the derived category of modules has finite injective
 > dimension if all its cohomology modules have finite injective dimension. Likewise, a derived
@@ -149,7 +149,7 @@ public theorem hasFiniteInjectiveDimension_of_bounded
 
 [Tag 0DW2](https://stacks.math.columbia.edu/tag/0DW2) in the Stacks Project.
 
-**`StacksDraft.InjectiveDimension.hasFiniteInjectiveDimension_iff_quotient_ext_vanishing`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/InjectiveDimension/Noetherian.lean, line 451](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/InjectiveDimension/Noetherian.lean#L451).
+**`StacksDraft.InjectiveDimension.hasFiniteInjectiveDimension_iff_quotient_ext_vanishing`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/InjectiveDimension/Noetherian.lean, line 451](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/InjectiveDimension/Noetherian.lean#L451).
 
 > **Stacks 0DW2.** For a bounded below complex with finite cohomology over a Noetherian ring,
 > finite injective dimension can be tested by uniform high-degree Ext vanishing against the
@@ -176,7 +176,7 @@ public lemma hasFiniteInjectiveDimension_iff_quotient_ext_vanishing
 
 [Tag 0AVJ](https://stacks.math.columbia.edu/tag/0AVJ) in the Stacks Project.
 
-**`StacksDraft.InjectiveDimension.hasFiniteInjectiveDimension_iff_residueField_ext_vanishing`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/InjectiveDimension/Noetherian.lean, line 498](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/InjectiveDimension/Noetherian.lean#L498).
+**`StacksDraft.InjectiveDimension.hasFiniteInjectiveDimension_iff_residueField_ext_vanishing`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/InjectiveDimension/Noetherian.lean, line 498](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/InjectiveDimension/Noetherian.lean#L498).
 
 > **Stacks 0AVJ.** A bounded below complex with finite cohomology over a Noetherian local ring
 > has finite injective dimension if and only if its Ext groups from the residue field vanish in all
@@ -205,4 +205,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.71, Tag 0A5R](https://stacks.math.columbia.edu/tag/0A5R)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

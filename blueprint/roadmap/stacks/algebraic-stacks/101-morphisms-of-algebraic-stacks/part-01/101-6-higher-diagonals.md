@@ -8,13 +8,13 @@ proof: formalized
 
 # 101.6 Higher diagonals
 
-Section 101.6 of the Stacks Project, [Tag 04YX](https://stacks.math.columbia.edu/tag/04YX). 6 tags here are carried by 32 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 101.6 of the Stacks Project, [Tag 04YX](https://stacks.math.columbia.edu/tag/04YX). 6 tags here are carried by 32 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0CL0, a lemma
 
 [Tag 0CL0](https://stacks.math.columbia.edu/tag/0CL0) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isRelativelyUnramified_relativeInertiaProjection_iff_isDM_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/DeligneMumfordRelativeInertiaConverse.lean, line 356](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/DeligneMumfordRelativeInertiaConverse.lean#L356). The attribute's comment: “part (4): the relative inertia projection is unramified iff f is DM, both directions and with no hypothesis. The direction (b) implies (a) is Stacks 0457 and 045C at the packaged unramified property; the converse needs no pseudo-torsor, being an instance of isUnramified\_of\_isUnramified\_pullbackSnd, because the shear identifies the self-fibre-product of a fibre of the relative diagonal with the base change of the relative automorphism presheaf the inertia projection is tested on”.
+**`AlgebraicGeometry.Stack.isRelativelyUnramified_relativeInertiaProjection_iff_isDM_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/DeligneMumfordRelativeInertiaConverse.lean, line 356](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/DeligneMumfordRelativeInertiaConverse.lean#L356). The attribute's comment: “part (4): the relative inertia projection is unramified iff f is DM, both directions and with no hypothesis. The direction (b) implies (a) is Stacks 0457 and 045C at the packaged unramified property; the converse needs no pseudo-torsor, being an instance of isUnramified\_of\_isUnramified\_pullbackSnd, because the shear identifies the self-fibre-product of a fibre of the relative diagonal with the base change of the relative automorphism presheaf the inertia projection is tested on”.
 
 > **Stacks 0CL0, part (4).** For a 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks over `S`, the
 > relative inertia projection `π : I_{𝒳/𝒴} ⟶ 𝒳` is unramified, in the relative sense of
@@ -31,7 +31,7 @@ theorem isRelativelyUnramified_relativeInertiaProjection_iff_isDM_unconditional
     IsRelativelyUnramified B S hS (relativeInertiaProjection B S hS f).hom ↔ IsDM B S hS f
 ```
 
-**`AlgebraicGeometry.Stack.isLocallyQuasiFinite_relativeInertiaProjection_iff_isQuasiDM_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/DeligneMumfordRelativeInertiaConverse.lean, line 376](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/DeligneMumfordRelativeInertiaConverse.lean#L376). The attribute's comment: “part (5): the relative inertia projection is locally quasi-finite iff f is quasi-DM, both directions and with no hypothesis. The direction (b) implies (a) is Stacks 0457 and 045C at the packaged locally-quasi-finite property; the converse is an instance of isLocallyQuasiFinite\_of\_isLocallyQuasiFinite\_pullbackSnd, the generic half of Stacks 0DSK, fed by the shear identification rather than by a pseudo-torsor”.
+**`AlgebraicGeometry.Stack.isLocallyQuasiFinite_relativeInertiaProjection_iff_isQuasiDM_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/DeligneMumfordRelativeInertiaConverse.lean, line 376](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/DeligneMumfordRelativeInertiaConverse.lean#L376). The attribute's comment: “part (5): the relative inertia projection is locally quasi-finite iff f is quasi-DM, both directions and with no hypothesis. The direction (b) implies (a) is Stacks 0457 and 045C at the packaged locally-quasi-finite property; the converse is an instance of isLocallyQuasiFinite\_of\_isLocallyQuasiFinite\_pullbackSnd, the generic half of Stacks 0DSK, fed by the shear identification rather than by a pseudo-torsor”.
 
 > **Stacks 0CL0, part (5).** For a 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks over `S`, the
 > relative inertia projection `π : I_{𝒳/𝒴} ⟶ 𝒳` is locally quasi-finite, in the relative sense of
@@ -50,7 +50,7 @@ theorem isLocallyQuasiFinite_relativeInertiaProjection_iff_isQuasiDM_uncondition
       AlgebraicStacks.IsQuasiDM B S hS f
 ```
 
-**`AlgebraicGeometry.Stack.isLocallySeparated_relativeInertiaProjection_iff_relativeDiagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LocalSeparatednessRelativeInertia.lean, line 172](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/LocalSeparatednessRelativeInertia.lean#L172). The attribute's comment: “part (3), conditions (a) and (b): the relative diagonal is locally separated exactly when the first projection of the relative inertia is”.
+**`AlgebraicGeometry.Stack.isLocallySeparated_relativeInertiaProjection_iff_relativeDiagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/LocalSeparatednessRelativeInertia.lean, line 172](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/LocalSeparatednessRelativeInertia.lean#L172). The attribute's comment: “part (3), conditions (a) and (b): the relative diagonal is locally separated exactly when the first projection of the relative inertia is”.
 
 > For a 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks over `S`, the relative inertia projection
 > `π : I_{𝒳/𝒴} ⟶ 𝒳` is locally separated, in the relative sense of Properties of Stacks,
@@ -64,7 +64,7 @@ theorem isLocallySeparated_relativeInertiaProjection_iff_relativeDiagonal (f : �
         (relativeDiagonal.{u, u, u + 1} B S hS 𝒳.val 𝒴.val f.hom)
 ```
 
-**`AlgebraicGeometry.Stack.isLocallySeparated_relativeDiagonal_iff_isImmersion_neutralSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SecondRelativeDiagonalInertia.lean, line 406](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SecondRelativeDiagonalInertia.lean#L406). The attribute's comment: “part (3), conditions (b) and (c): the relative diagonal is locally separated exactly when the neutral section of the relative inertia is an immersion”.
+**`AlgebraicGeometry.Stack.isLocallySeparated_relativeDiagonal_iff_isImmersion_neutralSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SecondRelativeDiagonalInertia.lean, line 406](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SecondRelativeDiagonalInertia.lean#L406). The attribute's comment: “part (3), conditions (b) and (c): the relative diagonal is locally separated exactly when the neutral section of the relative inertia is an immersion”.
 
 > For a 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks over `S`, the relative diagonal
 > `Δ_{f, 1} = Δ_f` is locally separated in the sense of Stacks 04XB exactly when
@@ -85,7 +85,7 @@ theorem isLocallySeparated_relativeDiagonal_iff_isImmersion_neutralSection (f : 
       AlgebraicStacks.IsImmersion B S hS (relativeInertiaStackNeutralSection B S hS f)
 ```
 
-**`AlgebraicGeometry.Stack.isSeparated_relativeInertiaProjection_iff_relativeDiagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationRelativeInertia.lean, line 370](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationRelativeInertia.lean#L370). The attribute's comment: “part (1), conditions (a) and (b): the relative inertia projection is separated exactly when the first relative diagonal is”.
+**`AlgebraicGeometry.Stack.isSeparated_relativeInertiaProjection_iff_relativeDiagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationRelativeInertia.lean, line 370](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationRelativeInertia.lean#L370). The attribute's comment: “part (1), conditions (a) and (b): the relative inertia projection is separated exactly when the first relative diagonal is”.
 
 > **Stacks 0CL0, part (1), conditions (a) and (b).** For a 1-morphism `f : 𝒳 ⟶ 𝒴` of
 > algebraic stacks over `S`, the relative inertia projection `π : I_{𝒳/𝒴} ⟶ 𝒳` is separated, in
@@ -120,7 +120,7 @@ theorem isSeparated_relativeInertiaProjection_iff_relativeDiagonal (f : 𝒳 ⟶
         (relativeDiagonal.{u, u, u + 1} B S hS 𝒳.val 𝒴.val f.hom)
 ```
 
-**`AlgebraicGeometry.Stack.isQuasiSeparated_relativeInertiaProjection_iff_relativeDiagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationRelativeInertia.lean, line 406](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationRelativeInertia.lean#L406). The attribute's comment: “part (2), conditions (a) and (b): the relative inertia projection is quasi-separated exactly when the first relative diagonal is”.
+**`AlgebraicGeometry.Stack.isQuasiSeparated_relativeInertiaProjection_iff_relativeDiagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationRelativeInertia.lean, line 406](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationRelativeInertia.lean#L406). The attribute's comment: “part (2), conditions (a) and (b): the relative inertia projection is quasi-separated exactly when the first relative diagonal is”.
 
 > **Stacks 0CL0, part (2), conditions (a) and (b).** For a 1-morphism `f : 𝒳 ⟶ 𝒴` of
 > algebraic stacks over `S`, the relative inertia projection `π : I_{𝒳/𝒴} ⟶ 𝒳` is
@@ -146,7 +146,7 @@ theorem isQuasiSeparated_relativeInertiaProjection_iff_relativeDiagonal (f : �
         (relativeDiagonal.{u, u, u + 1} B S hS 𝒳.val 𝒴.val f.hom)
 ```
 
-**`AlgebraicGeometry.Stack.isSeparated_relativeDiagonal_iff_isClosedImmersion_neutralSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationRelativeInertia.lean, line 437](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationRelativeInertia.lean#L437). The attribute's comment: “part (1), conditions (b) and (c): the relative diagonal is separated exactly when the neutral section of the relative inertia is a closed immersion”.
+**`AlgebraicGeometry.Stack.isSeparated_relativeDiagonal_iff_isClosedImmersion_neutralSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationRelativeInertia.lean, line 437](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationRelativeInertia.lean#L437). The attribute's comment: “part (1), conditions (b) and (c): the relative diagonal is separated exactly when the neutral section of the relative inertia is a closed immersion”.
 
 > **Stacks 0CL0, part (1), conditions (b) and (c).** For a 1-morphism `f : 𝒳 ⟶ 𝒴` of
 > algebraic stacks over `S`, the relative diagonal `Δ_{f, 1} = Δ_f` is separated in the sense of
@@ -167,7 +167,7 @@ theorem isSeparated_relativeDiagonal_iff_isClosedImmersion_neutralSection (f : �
       AlgebraicStacks.IsClosedImmersion B S hS (relativeInertiaStackNeutralSection B S hS f)
 ```
 
-**`AlgebraicGeometry.Stack.isQuasiSeparated_relativeDiagonal_iff_isQuasiCompact_neutralSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationRelativeInertia.lean, line 458](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationRelativeInertia.lean#L458). The attribute's comment: “part (2), conditions (b) and (c): the relative diagonal is quasi-separated exactly when the neutral section of the relative inertia is quasi-compact”.
+**`AlgebraicGeometry.Stack.isQuasiSeparated_relativeDiagonal_iff_isQuasiCompact_neutralSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationRelativeInertia.lean, line 458](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationRelativeInertia.lean#L458). The attribute's comment: “part (2), conditions (b) and (c): the relative diagonal is quasi-separated exactly when the neutral section of the relative inertia is quasi-compact”.
 
 > **Stacks 0CL0, part (2), conditions (b) and (c).** For a 1-morphism `f : 𝒳 ⟶ 𝒴` of
 > algebraic stacks over `S`, the relative diagonal `Δ_{f, 1} = Δ_f` is quasi-separated in the
@@ -190,7 +190,7 @@ theorem isQuasiSeparated_relativeDiagonal_iff_isQuasiCompact_neutralSection (f :
 
 [Tag 04YY](https://stacks.math.columbia.edu/tag/04YY) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isRepresentableByAlgebraicSpaces_of_isEquivalence_secondRelativeDiagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FaithfulRepresentableUnconditional.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FaithfulRepresentableUnconditional.lean#L98). The attribute's comment: “the implication (2) ⟹ (1)”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isRepresentableByAlgebraicSpaces_of_isEquivalence_secondRelativeDiagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FaithfulRepresentableUnconditional.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FaithfulRepresentableUnconditional.lean#L98). The attribute's comment: “the implication (2) ⟹ (1)”.
 
 > **Stacks 04YY, the implication (2) ⟹ (1).** A 1-morphism of algebraic stacks over `S` whose
 > second diagonal `Δ_{f, 2}` is an isomorphism is representable by algebraic spaces: the second
@@ -203,7 +203,7 @@ theorem isRepresentableByAlgebraicSpaces_of_isEquivalence_secondRelativeDiagonal
     IsRepresentableByAlgebraicSpaces B S hS f.hom.hom
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isRepresentableByAlgebraicSpaces_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RepresentableSecondDiagonalTFAE.lean, line 54](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RepresentableSecondDiagonalTFAE.lean#L54).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isRepresentableByAlgebraicSpaces_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RepresentableSecondDiagonalTFAE.lean, line 54](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/RepresentableSecondDiagonalTFAE.lean#L54).
 
 > **Stacks 04YY.** For a 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks over `S` the following are
 > equivalent:
@@ -227,7 +227,7 @@ theorem isRepresentableByAlgebraicSpaces_tfae (f : 𝒳 ⟶ 𝒴) :
           (CatFiberedInGroupoids.homFunctor f.hom).map a = 𝟙 _ → a = 𝟙 x]
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isEquivalence_secondRelativeDiagonal_iff_relativeInertiaTrivial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SecondDiagonalRepresentable.lean, line 239](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SecondDiagonalRepresentable.lean#L239). The attribute's comment: “the equivalence of parts (2) and (3)”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isEquivalence_secondRelativeDiagonal_iff_relativeInertiaTrivial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SecondDiagonalRepresentable.lean, line 239](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SecondDiagonalRepresentable.lean#L239). The attribute's comment: “the equivalence of parts (2) and (3)”.
 
 > **Stacks 04YY, the equivalence of parts (2) and (3).** For a 1-morphism `f : 𝒳 ⟶ 𝒴` of
 > algebraic stacks over `S`, the second diagonal `Δ_{f, 2}` is an isomorphism exactly when the
@@ -241,7 +241,7 @@ theorem isEquivalence_secondRelativeDiagonal_iff_relativeInertiaTrivial (f : �
         (relativeInertiaStackNeutralSection B S hS f).hom.hom.toFunctor
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.relativeInertiaTrivial_iff_isomKernel_trivial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SecondDiagonalRepresentable.lean, line 250](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SecondDiagonalRepresentable.lean#L250). The attribute's comment: “the equivalence of parts (3) and (4)”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.relativeInertiaTrivial_iff_isomKernel_trivial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SecondDiagonalRepresentable.lean, line 250](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SecondDiagonalRepresentable.lean#L250). The attribute's comment: “the equivalence of parts (3) and (4)”.
 
 > **Stacks 04YY, the equivalence of parts (3) and (4).** The relative inertia `I_{𝒳/𝒴}` of a
 > 1-morphism of algebraic stacks is trivial over `𝒳` exactly when, for every scheme `T` and every
@@ -256,7 +256,7 @@ theorem relativeInertiaTrivial_iff_isomKernel_trivial (f : 𝒳 ⟶ 𝒴) :
         (CatFiberedInGroupoids.homFunctor f.hom).map a = 𝟙 _ → a = 𝟙 x
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.secondRelativeDiagonal_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SecondDiagonalRepresentable.lean, line 262](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SecondDiagonalRepresentable.lean#L262). The attribute's comment: “the equivalence of parts (2), (3) and (4)”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.secondRelativeDiagonal_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SecondDiagonalRepresentable.lean, line 262](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SecondDiagonalRepresentable.lean#L262). The attribute's comment: “the equivalence of parts (2), (3) and (4)”.
 
 > **Stacks 04YY, the equivalence of parts (2), (3) and (4).** For a 1-morphism `f : 𝒳 ⟶ 𝒴` of
 > algebraic stacks over `S` the following are equivalent: the second diagonal `Δ_{f, 2}` is an
@@ -273,7 +273,7 @@ theorem secondRelativeDiagonal_tfae (f : 𝒳 ⟶ 𝒴) :
           (CatFiberedInGroupoids.homFunctor f.hom).map a = 𝟙 _ → a = 𝟙 x]
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isEquivalence_secondRelativeDiagonal_of_isRepresentableByAlgebraicSpaces`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SecondDiagonalRepresentable.lean, line 280](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SecondDiagonalRepresentable.lean#L280). The attribute's comment: “the implication (1) ⟹ (2)”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isEquivalence_secondRelativeDiagonal_of_isRepresentableByAlgebraicSpaces`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SecondDiagonalRepresentable.lean, line 280](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SecondDiagonalRepresentable.lean#L280). The attribute's comment: “the implication (1) ⟹ (2)”.
 
 > **Stacks 04YY, the implication (1) ⟹ (2).** If a 1-morphism of algebraic stacks over `S` is
 > representable by algebraic spaces then its second diagonal `Δ_{f, 2}` is an isomorphism.
@@ -291,7 +291,7 @@ theorem isEquivalence_secondRelativeDiagonal_of_isRepresentableByAlgebraicSpaces
 
 [Tag 0AHJ](https://stacks.math.columbia.edu/tag/0AHJ) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isMonomorphism_iff_isEquivalence_relativeDiagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/HigherDiagonalMonomorphism.lean, line 140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/HigherDiagonalMonomorphism.lean#L140). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isMonomorphism_iff_isEquivalence_relativeDiagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/HigherDiagonalMonomorphism.lean, line 140](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/HigherDiagonalMonomorphism.lean#L140). The attribute's comment: “part (1)”.
 
 > **Stacks 0AHJ, part (1).** A 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks over `S` is a
 > monomorphism (Stacks 04ZW) if and only if its first relative diagonal `Δ_{f,1}` is an isomorphism,
@@ -311,7 +311,7 @@ theorem isMonomorphism_iff_isEquivalence_relativeDiagonal (f : 𝒳 ⟶ 𝒴) :
         (CatFiberedInGroupoids.homFunctor (relativeDiagonalAlgebraicStacks B S hS f).hom)
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isRepresentableByAlgebraicSpaces_iff_isMonomorphism_relativeDiagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/HigherDiagonalMonomorphism.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/HigherDiagonalMonomorphism.lean#L162). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isRepresentableByAlgebraicSpaces_iff_isMonomorphism_relativeDiagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/HigherDiagonalMonomorphism.lean, line 162](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/HigherDiagonalMonomorphism.lean#L162). The attribute's comment: “part (2)”.
 
 > **Stacks 0AHJ, part (2).** A 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks over `S` is
 > representable by algebraic spaces if and only if its first relative diagonal `Δ_{f,1}` is a
@@ -330,7 +330,7 @@ theorem isRepresentableByAlgebraicSpaces_iff_isMonomorphism_relativeDiagonal (f 
       IsMonomorphism B S hS (relativeDiagonalAlgebraicStacks B S hS f)
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isMonomorphism_secondRelativeDiagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/HigherDiagonalMonomorphism.lean, line 178](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/HigherDiagonalMonomorphism.lean#L178). The attribute's comment: “the second diagonal is always a monomorphism”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isMonomorphism_secondRelativeDiagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/HigherDiagonalMonomorphism.lean, line 178](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/HigherDiagonalMonomorphism.lean#L178). The attribute's comment: “the second diagonal is always a monomorphism”.
 
 > **Stacks 0AHJ, the final assertion.** The second relative diagonal `Δ_{f,2}` of any
 > 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks over `S` is a monomorphism (Stacks 04ZW). No
@@ -349,7 +349,7 @@ theorem isMonomorphism_secondRelativeDiagonal (f : 𝒳 ⟶ 𝒴) :
 
 [Tag 04YZ](https://stacks.math.columbia.edu/tag/04YZ) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isSeparated_firstRelativeDiagonal_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/HigherDiagonalSeparation.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/HigherDiagonalSeparation.lean#L67). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.Stack.isSeparated_firstRelativeDiagonal_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/HigherDiagonalSeparation.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/HigherDiagonalSeparation.lean#L67). The attribute's comment: “part (1)”.
 
 > For a 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks over `S` the
 > following are equivalent: the first relative diagonal `Δ_{f,1}` is separated; the second relative
@@ -371,7 +371,7 @@ theorem isSeparated_firstRelativeDiagonal_tfae (f : 𝒳 ⟶ 𝒴) :
            (relativeDiagonalAlgebraicStacks B S hS f)).hom]
 ```
 
-**`AlgebraicGeometry.Stack.isQuasiSeparated_firstRelativeDiagonal_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/HigherDiagonalSeparation.lean, line 86](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/HigherDiagonalSeparation.lean#L86). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.Stack.isQuasiSeparated_firstRelativeDiagonal_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/HigherDiagonalSeparation.lean, line 86](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/HigherDiagonalSeparation.lean#L86). The attribute's comment: “part (2)”.
 
 > For a 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks over `S` the
 > following are equivalent: the first relative diagonal `Δ_{f,1}` is quasi-separated; the second
@@ -390,7 +390,7 @@ theorem isQuasiSeparated_firstRelativeDiagonal_tfae (f : 𝒳 ⟶ 𝒴) :
            (relativeDiagonalAlgebraicStacks B S hS f)).hom]
 ```
 
-**`AlgebraicGeometry.Stack.isLocallySeparated_firstRelativeDiagonal_iff_isImmersion_second`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/HigherDiagonalSeparation.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/HigherDiagonalSeparation.lean#L111). The attribute's comment: “part (3)”.
+**`AlgebraicGeometry.Stack.isLocallySeparated_firstRelativeDiagonal_iff_isImmersion_second`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/HigherDiagonalSeparation.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/HigherDiagonalSeparation.lean#L111). The attribute's comment: “part (3)”.
 
 > The first relative diagonal `Δ_{f,1}` of a 1-morphism
 > `f : 𝒳 ⟶ 𝒴` of algebraic stacks over `S` is locally separated, in the relative sense of
@@ -408,7 +408,7 @@ theorem isLocallySeparated_firstRelativeDiagonal_iff_isImmersion_second (f : �
 
 [Tag 04Z0](https://stacks.math.columbia.edu/tag/04Z0) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isDM_iff_isUnramifiedRelative_diagonals`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/DMSecondDiagonal.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/DMSecondDiagonal.lean#L149). The attribute's comment: “dm”.
+**`AlgebraicGeometry.Stack.isDM_iff_isUnramifiedRelative_diagonals`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/DMSecondDiagonal.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/DMSecondDiagonal.lean#L149). The attribute's comment: “dm”.
 
 > **Stacks 04Z0, part (4).** A 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks over `S` — with no
 > representability hypothesis — is DM, in the sense of Definition 04YW, if and only if its first
@@ -433,7 +433,7 @@ theorem isDM_iff_isUnramifiedRelative_diagonals (f : 𝒳 ⟶ 𝒴) :
           (relativeDiagonalAlgebraicStacks B S hS f)).hom)
 ```
 
-**`AlgebraicGeometry.Stack.isQuasiDM_iff_isLocallyQuasiFinite_diagonals`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasiDMSecondDiagonal.lean, line 54](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/QuasiDMSecondDiagonal.lean#L54). The attribute's comment: “quasi\_dm”.
+**`AlgebraicGeometry.Stack.isQuasiDM_iff_isLocallyQuasiFinite_diagonals`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasiDMSecondDiagonal.lean, line 54](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/QuasiDMSecondDiagonal.lean#L54). The attribute's comment: “quasi\_dm”.
 
 > A 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks over `S` — with no representability
 > hypothesis — is quasi-DM, in the sense of Definition 04YW, if and only if its first relative
@@ -449,7 +449,7 @@ theorem isQuasiDM_iff_isLocallyQuasiFinite_diagonals (f : 𝒳 ⟶ 𝒴) :
           (relativeDiagonalAlgebraicStacks B S hS f)).hom)
 ```
 
-**`AlgebraicGeometry.Stack.isQuasiSeparated_iff_isQuasiCompactMorphism_diagonals`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasiSeparatedSecondDiagonal.lean, line 323](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/QuasiSeparatedSecondDiagonal.lean#L323). The attribute's comment: “quasi\_separated”.
+**`AlgebraicGeometry.Stack.isQuasiSeparated_iff_isQuasiCompactMorphism_diagonals`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasiSeparatedSecondDiagonal.lean, line 329](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/QuasiSeparatedSecondDiagonal.lean#L329). The attribute's comment: “quasi\_separated”.
 
 > **Stacks 04Z0, part (2).** A 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks over `S` — with no
 > representability hypothesis — is quasi-separated, in the sense of Definition 04YW, if and only if
@@ -476,7 +476,7 @@ theorem isQuasiSeparated_iff_isQuasiCompactMorphism_diagonals (f : 𝒳 ⟶ 𝒴
           (relativeDiagonalAlgebraicStacks B S hS f)))
 ```
 
-**`AlgebraicGeometry.Stack.isSeparated_iff_universallyClosed_diagonals`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparatedSecondDiagonal.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparatedSecondDiagonal.lean#L117). The attribute's comment: “separated”.
+**`AlgebraicGeometry.Stack.isSeparated_iff_universallyClosed_diagonals`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparatedSecondDiagonal.lean, line 117](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparatedSecondDiagonal.lean#L117). The attribute's comment: “separated”.
 
 > **Stacks 04Z0, part (1).** A 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks over `S` — with no
 > representability hypothesis — is separated, in the sense of Definition 04YW, if and only if its
@@ -502,7 +502,7 @@ theorem isSeparated_iff_universallyClosed_diagonals (f : 𝒳 ⟶ 𝒴) :
 
 [Tag 0CPL](https://stacks.math.columbia.edu/tag/0CPL) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.HigherDiagonal.isProper_mapBase_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparatedIsomPullback.lean, line 235](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparatedIsomPullback.lean#L235). The attribute's comment: “part (1): proper”.
+**`AlgebraicGeometry.Stack.HigherDiagonal.isProper_mapBase_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparatedIsomPullback.lean, line 235](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparatedIsomPullback.lean#L235). The attribute's comment: “part (1): proper”.
 
 > **Stacks 0CPL, part (1), the separated case.** If `f : 𝒳 ⟶ 𝒴` is separated then the
 > comparison `T₁ ×_{x₁, 𝒳, x₂} T₂ ⟶ T₁ ×_{y₁, 𝒴, y₂} T₂` of algebraic-space-valued points of `𝒳`
@@ -515,7 +515,7 @@ theorem isProper_mapBase_of_isSeparated (hf : AlgebraicStacks.IsSeparated B S hS
     Stack.IsProper.{u, u, u + 1} B S hS (AlgebraicStacks.mapBase B S hS x₁ x₂ f).hom
 ```
 
-**`AlgebraicGeometry.Stack.HigherDiagonal.isQuasiCompactAndQuasiSeparated_mapBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparatedIsomPullback.lean, line 245](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparatedIsomPullback.lean#L245). The attribute's comment: “part (1): quasi-compact and quasi-separated”.
+**`AlgebraicGeometry.Stack.HigherDiagonal.isQuasiCompactAndQuasiSeparated_mapBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparatedIsomPullback.lean, line 245](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparatedIsomPullback.lean#L245). The attribute's comment: “part (1): quasi-compact and quasi-separated”.
 
 > **Stacks 0CPL, part (1), the quasi-separated case.** If `f : 𝒳 ⟶ 𝒴` is quasi-separated then
 > the comparison `T₁ ×_{x₁, 𝒳, x₂} T₂ ⟶ T₁ ×_{y₁, 𝒴, y₂} T₂` of algebraic-space-valued points of
@@ -532,7 +532,7 @@ theorem isQuasiCompactAndQuasiSeparated_mapBase
         (AlgebraicStacks.mapBase B S hS x₁ x₂ f).hom
 ```
 
-**`AlgebraicGeometry.Stack.HigherDiagonal.isLocallyQuasiFinite_mapBase_of_isQuasiDM`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparatedIsomPullback.lean, line 259](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparatedIsomPullback.lean#L259). The attribute's comment: “part (1): locally quasi-finite”.
+**`AlgebraicGeometry.Stack.HigherDiagonal.isLocallyQuasiFinite_mapBase_of_isQuasiDM`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparatedIsomPullback.lean, line 259](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparatedIsomPullback.lean#L259). The attribute's comment: “part (1): locally quasi-finite”.
 
 > **Stacks 0CPL, part (1), the quasi-DM case.** If `f : 𝒳 ⟶ 𝒴` is quasi-DM then the comparison
 > `T₁ ×_{x₁, 𝒳, x₂} T₂ ⟶ T₁ ×_{y₁, 𝒴, y₂} T₂` of algebraic-space-valued points of `𝒳` is locally
@@ -547,7 +547,7 @@ theorem isLocallyQuasiFinite_mapBase_of_isQuasiDM
       (AlgebraicStacks.mapBase B S hS x₁ x₂ f).hom
 ```
 
-**`AlgebraicGeometry.Stack.HigherDiagonal.isUnramified_mapBase_of_isDM`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparatedIsomPullback.lean, line 271](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparatedIsomPullback.lean#L271). The attribute's comment: “part (1): unramified”.
+**`AlgebraicGeometry.Stack.HigherDiagonal.isUnramified_mapBase_of_isDM`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparatedIsomPullback.lean, line 271](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparatedIsomPullback.lean#L271). The attribute's comment: “part (1): unramified”.
 
 > **Stacks 0CPL, part (1), the Deligne–Mumford case.** If `f : 𝒳 ⟶ 𝒴` is Deligne–Mumford then
 > the comparison `T₁ ×_{x₁, 𝒳, x₂} T₂ ⟶ T₁ ×_{y₁, 𝒴, y₂} T₂` of algebraic-space-valued points of
@@ -575,7 +575,7 @@ theorem isUnramified_mapBase_of_isDM (hf : Stack.IsDM B S hS f) :
             ((spacesOverSmallerBaseFunctor B U.left.1 S U.left.2 hS U.hom).obj ⟨F, hF⟩)).hom
 ```
 
-**`AlgebraicGeometry.Stack.HigherDiagonal.isProper_isomMap_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparatedIsomPullback.lean, line 445](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparatedIsomPullback.lean#L445). The attribute's comment: “part (2): proper”.
+**`AlgebraicGeometry.Stack.HigherDiagonal.isProper_isomMap_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparatedIsomPullback.lean, line 445](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparatedIsomPullback.lean#L445). The attribute's comment: “part (2): proper”.
 
 > **Stacks 0CPL, part (2), the separated case.** If `f : 𝒳 ⟶ 𝒴` is separated then the induced
 > map `Isom_𝒳(x₁, x₂) ⟶ Isom_𝒴(y₁, y₂)` is proper, in the sense of Stacks 04XB.
@@ -585,7 +585,7 @@ theorem isProper_isomMap_of_isSeparated (hf : AlgebraicStacks.IsSeparated B S hS
     Stack.IsProper.{u, u, u + 1} B S hS (isomMap B S hS f T hT x₁ x₂)
 ```
 
-**`AlgebraicGeometry.Stack.HigherDiagonal.isQuasiCompactAndQuasiSeparated_isomMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparatedIsomPullback.lean, line 455](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparatedIsomPullback.lean#L455). The attribute's comment: “part (2): quasi-compact and quasi-separated”.
+**`AlgebraicGeometry.Stack.HigherDiagonal.isQuasiCompactAndQuasiSeparated_isomMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparatedIsomPullback.lean, line 455](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparatedIsomPullback.lean#L455). The attribute's comment: “part (2): quasi-compact and quasi-separated”.
 
 > **Stacks 0CPL, part (2), the quasi-separated case.** If `f : 𝒳 ⟶ 𝒴` is quasi-separated then
 > the induced map `Isom_𝒳(x₁, x₂) ⟶ Isom_𝒴(y₁, y₂)` is quasi-compact and quasi-separated, in the
@@ -598,7 +598,7 @@ theorem isQuasiCompactAndQuasiSeparated_isomMap
       Stack.IsQuasiSeparated.{u, u, u + 1} B S hS (isomMap B S hS f T hT x₁ x₂)
 ```
 
-**`AlgebraicGeometry.Stack.HigherDiagonal.isLocallyQuasiFinite_isomMap_of_isQuasiDM`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparatedIsomPullback.lean, line 469](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparatedIsomPullback.lean#L469). The attribute's comment: “part (2): locally quasi-finite”.
+**`AlgebraicGeometry.Stack.HigherDiagonal.isLocallyQuasiFinite_isomMap_of_isQuasiDM`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparatedIsomPullback.lean, line 469](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparatedIsomPullback.lean#L469). The attribute's comment: “part (2): locally quasi-finite”.
 
 > **Stacks 0CPL, part (2), the quasi-DM case.** If `f : 𝒳 ⟶ 𝒴` is quasi-DM then the induced
 > map `Isom_𝒳(x₁, x₂) ⟶ Isom_𝒴(y₁, y₂)` is locally quasi-finite, in the sense of Stacks 04XB.
@@ -609,7 +609,7 @@ theorem isLocallyQuasiFinite_isomMap_of_isQuasiDM
     Stack.IsLocallyQuasiFinite.{u, u, u + 1} B S hS (isomMap B S hS f T hT x₁ x₂)
 ```
 
-**`AlgebraicGeometry.Stack.HigherDiagonal.isUnramified_isomMap_of_isDM`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparatedIsomPullback.lean, line 480](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparatedIsomPullback.lean#L480). The attribute's comment: “part (2): unramified”.
+**`AlgebraicGeometry.Stack.HigherDiagonal.isUnramified_isomMap_of_isDM`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparatedIsomPullback.lean, line 480](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparatedIsomPullback.lean#L480). The attribute's comment: “part (2): unramified”.
 
 > **Stacks 0CPL, part (2), the Deligne–Mumford case.** If `f : 𝒳 ⟶ 𝒴` is Deligne–Mumford then
 > the induced map `Isom_𝒳(x₁, x₂) ⟶ Isom_𝒴(y₁, y₂)` is unramified, in the sense of
@@ -641,4 +641,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 101.6, Tag 04YX](https://stacks.math.columbia.edu/tag/04YX)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

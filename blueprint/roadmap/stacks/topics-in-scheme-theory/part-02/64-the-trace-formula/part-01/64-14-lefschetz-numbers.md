@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: Stacks.EtaleCohomology.globalLefschetzNumber, Stacks.EtaleCohomology.globalLefschetzNumberOfCtf, Stacks.EtaleCohomology.localLefschetzNumberOfCtf, Stacks.EtaleCohomology.LefschetzGaloisDescent.globalLefschetzNumber_eq_localLefschetzNumber, Stacks.EtaleCohomology.globalLefschetzNumberOfCtf_eq_sum_rationalPointStalkTrace, Stacks.EtaleCohomology.JacobianCorrespondence.fixedPointNumber_eq, AlgebraicGeometry.CurveGraph.fixedPointIntersection_eq, Stacks.EtaleCohomology.sum_trace_etaleConstantCohomologyPullback_eq_fixedPointIntersection
+lean: Stacks.EtaleCohomology.globalLefschetzNumber, Stacks.EtaleCohomology.globalLefschetzNumberOfCtf, Stacks.EtaleCohomology.localLefschetzNumberOfCtf, Stacks.EtaleCohomology.globalLefschetzNumberOfCtf_eq_sum_rationalPointStalkTrace, Stacks.EtaleCohomology.JacobianCorrespondence.fixedPointNumber_eq, AlgebraicGeometry.CurveGraph.fixedPointIntersection_eq, Stacks.EtaleCohomology.sum_trace_etaleConstantCohomologyPullback_eq_fixedPointIntersection
 statement: formalized
 proof: formalized
 ---
 
 # 64.14 Lefschetz numbers
 
-Section 64.14 of the Stacks Project, [Tag 03TW](https://stacks.math.columbia.edu/tag/03TW). 5 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 64.14 of the Stacks Project, [Tag 03TW](https://stacks.math.columbia.edu/tag/03TW). 5 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 03TX, a definition
 
 [Tag 03TX](https://stacks.math.columbia.edu/tag/03TX) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.globalLefschetzNumber`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GlobalLefschetzNumber.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GlobalLefschetzNumber.lean#L72).
+**`Stacks.EtaleCohomology.globalLefschetzNumber`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GlobalLefschetzNumber.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GlobalLefschetzNumber.lean#L72).
 
 > The global Lefschetz number of `K`: the trace of the action `π_X^*` on the perfect complex
 > `RΓ(X_k̄, K|_{X_k̄})`, an element of the additive commutator quotient `Λ^natural`.
@@ -27,7 +27,7 @@ public def globalLefschetzNumber (Λ : Type u) [Ring Λ] [Finite Λ]
     CategoryTheory.FilteredDerived.AdditiveCommutatorQuotient Λ
 ```
 
-**`Stacks.EtaleCohomology.globalLefschetzNumberOfCtf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GlobalLefschetzNumberOfCtfTrace.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GlobalLefschetzNumberOfCtfTrace.lean#L110).
+**`Stacks.EtaleCohomology.globalLefschetzNumberOfCtf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GlobalLefschetzNumberOfCtfTrace.lean, line 110](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/GlobalLefschetzNumberOfCtfTrace.lean#L110).
 
 > **Stacks, Tag 03TX: the global Lefschetz number of `K`.** Let `Λ` be a finite, possibly
 > noncommutative, ring, `X` a projective curve over a finite field `k` with `p ^ q` elements, `k̄`
@@ -52,7 +52,7 @@ public def globalLefschetzNumberOfCtf (hcurve : IsCurve k gk)
 
 [Tag 03TY](https://stacks.math.columbia.edu/tag/03TY) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.localLefschetzNumberOfCtf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/LocalLefschetzNumberConstructibleFlat.lean, line 265](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/LocalLefschetzNumberConstructibleFlat.lean#L265). The attribute's comment: “the local Lefschetz number of an object K of D\_ctf(X\_étale, Λ) on a scheme X over a finite field k: the sum over the k-rational points x of X of the traces of the geometric Frobenius π\_x of 03SW on the stalk K\_x̄, an element of the additive commutator quotient Λ^natural. Λ is the arbitrary finite, possibly noncommutative, ring of 03TX and 03SZ. X(k), the stalks K\_x̄ and the actions π\_x are all computed from K and X — K\_x̄ is the derived étale stalk of K at the geometric point above x and π\_x is the induced action of the geometric Frobenius — and perfection of each K\_x̄ is derived from membership of D\_ctf, as in the source. Membership of D\_ctf(X\_étale, Λ) is written as condition (2) of 03TT, that K be represented by a bounded complex of constructible flat sheaves of Λ-modules, which is also how SGA 4½ Rapport 4.6 defines D\_ctf”. References: SGA 4½ Rapport (4.6), “D\_ctf(X, Λ)”.
+**`Stacks.EtaleCohomology.localLefschetzNumberOfCtf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/LocalLefschetzNumberConstructibleFlat.lean, line 271](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/LocalLefschetzNumberConstructibleFlat.lean#L271). The attribute's comment: “the local Lefschetz number of an object K of D\_ctf(X\_étale, Λ) on a scheme X over a finite field k: the sum over the k-rational points x of X of the traces of the geometric Frobenius π\_x of 03SW on the stalk K\_x̄, an element of the additive commutator quotient Λ^natural. Λ is the arbitrary finite, possibly noncommutative, ring of 03TX and 03SZ. X(k), the stalks K\_x̄ and the actions π\_x are all computed from K and X — K\_x̄ is the derived étale stalk of K at the geometric point above x and π\_x is the induced action of the geometric Frobenius — and perfection of each K\_x̄ is derived from membership of D\_ctf, as in the source. Membership of D\_ctf(X\_étale, Λ) is written as condition (2) of 03TT, that K be represented by a bounded complex of constructible flat sheaves of Λ-modules, which is also how SGA 4½ Rapport 4.6 defines D\_ctf”. References: SGA 4½ Rapport (4.6), “D\_ctf(X, Λ)”.
 
 > **Stacks, Tag 03TY: the local Lefschetz number of `K`.**  For a finite field `k` with `p ^ q`
 > elements, an algebraically closed extension `k̄` of `k`, a scheme `X` over `k` with structure
@@ -86,25 +86,7 @@ public def localLefschetzNumberOfCtf (hcard : Fintype.card k = p ^ q)
 
 [Tag 03TZ](https://stacks.math.columbia.edu/tag/03TZ) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.LefschetzGaloisDescent.globalLefschetzNumber_eq_localLefschetzNumber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/LefschetzTraceFormula.lean, line 989](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/LefschetzTraceFormula.lean#L989). The attribute's comment: “the global and local Lefschetz numbers agree, with the Galois decomposition of the trace on the open complement (Stacks 03UC and 03UD) and the annihilation of each coefficient trace by the order of its stabiliser (Stacks 03UB, and Weil's formula Stacks 03U1 through the absence of fixed points on the Galois cover) as hypotheses; the reductions of Steps 3 to 6 of Stacks 03UG are not formalized”.
-
-> **The Lefschetz trace formula (Stacks 03TZ).** Let `X` be a projective curve over a finite
-> field `k`, let `Λ` be a finite ring and let `K` be an object of `D_ctf(X, Λ)`. Then the global
-> and local Lefschetz numbers of `K` are equal:
->
->   `Tr(π_X^* | RΓ(X_k̄, K)) = ∑_{x ∈ X(k)} Tr(π_x | K_x̄)`
->
-> in `Λ^natural`. The dévissage of `RΓ(X_k̄, K)` along the rational points of `X` splits the left
-> hand side into the trace on the open complement of `X(k)` plus the right hand side, and the
-> Galois descent of `Stacks.EtaleCohomology.LefschetzGaloisDescent` makes the trace on the open
-> complement vanish.
-
-```lean
-public theorem globalLefschetzNumber_eq_localLefschetzNumber [Fintype points] :
-    globalLefschetzNumber Λ D.globalDatum = localLefschetzNumber Λ points D.stalkDatum
-```
-
-**`Stacks.EtaleCohomology.globalLefschetzNumberOfCtf_eq_sum_rationalPointStalkTrace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/ProjectiveCurveLefschetzTraceFormula.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/ProjectiveCurveLefschetzTraceFormula.lean#L93). The attribute's comment: “the Lefschetz trace formula for a projective curve over a finite field: global Lefschetz number (03TX) = sum over X(k) of the traces of the geometric Frobenius on the stalks, in Λ^natural, with K in D\_ctf(X, Λ) given by a bounded below complex. Λ is a finite ring of cardinality prime to p, the standing hypothesis of the chapter fixed in 03SZ (trace.tex:386: 'Fix a finite ring Λ with cardinality prime to p'); the literal reading with an arbitrary finite Λ is false (k = F\_5, E : y^2 = x^3 + 1 supersingular, Λ = Z/25, K = Λ: global number 1, local number #E(F\_5) = 6). Λ : Type as in the formalization of 03UG”. References: SGA 4½ Rapport (3.2), “partial”; SGA 5 IIIB (1.3), “special case”.
+**`Stacks.EtaleCohomology.globalLefschetzNumberOfCtf_eq_sum_rationalPointStalkTrace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/ProjectiveCurveLefschetzTraceFormula.lean, line 100](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/ProjectiveCurveLefschetzTraceFormula.lean#L100). The attribute's comment: “the Lefschetz trace formula for a projective curve over a finite field: global Lefschetz number (03TX) = sum over X(k) of the traces of the geometric Frobenius on the stalks, in Λ^natural, with K in D\_ctf(X, Λ) given by a bounded below complex. Λ is a finite ring of cardinality prime to p, the standing hypothesis of the chapter fixed in 03SZ (trace.tex:386: 'Fix a finite ring Λ with cardinality prime to p'); the literal reading with an arbitrary finite Λ is false (k = F\_5, E : y^2 = x^3 + 1 supersingular, Λ = Z/25, K = Λ: global number 1, local number #E(F\_5) = 6). Λ : Type as in the formalization of 03UG, which is no restriction: a finite ring is isomorphic to one in Type”. References: SGA 4½ Rapport (3.2), “partial”; SGA 5 IIIB (1.3), “special case”.
 
 > **Stacks, Tag 03TZ: the Lefschetz trace formula.** Let `X` be a projective curve over a finite
 > field `k` with `p ^ q` elements, `k̄` an algebraic closure of `k`, `Λ` a finite, possibly
@@ -142,7 +124,7 @@ theorem globalLefschetzNumberOfCtf_eq_sum_rationalPointStalkTrace (B : BigEtaleS
 
 [Tag 03U1](https://stacks.math.columbia.edu/tag/03U1) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.JacobianCorrespondence.fixedPointNumber_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/WeilTraceFormula.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/WeilTraceFormula.lean#L187).
+**`Stacks.EtaleCohomology.JacobianCorrespondence.fixedPointNumber_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/WeilTraceFormula.lean, line 187](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/WeilTraceFormula.lean#L187).
 
 > **Weil's trace formula (Stacks 03U1).** Let `C` be a nonsingular projective curve over an
 > algebraically closed field `k` and `φ : C → C` a `k`-endomorphism of `C` distinct from the
@@ -155,10 +137,11 @@ public theorem fixedPointNumber_eq (D : W.EndomorphismData) :
     W.fixedPointNumber D = 1 - W.trace D.pullback + D.degree
 ```
 
-**`AlgebraicGeometry.CurveGraph.fixedPointIntersection_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/WeilTraceFormulaCurve.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/WeilTraceFormulaCurve.lean#L124).
+**`AlgebraicGeometry.CurveGraph.fixedPointIntersection_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/WeilTraceFormulaCurve.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/WeilTraceFormulaCurve.lean#L125).
 
 > **Stacks Project, Tag 03U1 (Weil).** Let `C` be a smooth projective curve over an
-> algebraically closed field `k` and `φ : C ⟶ C` a `k`-endomorphism distinct from the identity.
+> algebraically closed field `k` and `φ : C ⟶ C` a `k`-endomorphism
+> (the source assumes `φ ≠ 𝟙 C`; it is not needed here).
 > Let `V(φ) = (Δ · Γ_φ)` be the intersection number of the diagonal and the graph of `φ` on
 > `C ×_k C`. Then `V(φ) = 1 - Tr_J(φ^*) + deg φ`, where `φ^*` is the endomorphism of the Jacobian
 > `J = Pic⁰_{C/k}` induced by pullback and `Tr_J(φ^*)` is its trace on the `ℓ`-adic Tate module of
@@ -168,7 +151,7 @@ public theorem fixedPointNumber_eq (D : W.EndomorphismData) :
 ```lean
 theorem fixedPointIntersection_eq {k : Type u} [Field k] [IsAlgClosed k] {C : Scheme.{u}}
     (f : C ⟶ Spec (.of k)) [IsCurve k f] [Smooth f] [IsProper f]
-    (hdim : topologicalKrullDim C ≤ 1) (φ : C ⟶ C) (w : φ ≫ f = f) (hφ : φ ≠ 𝟙 C)
+    (hdim : topologicalKrullDim C ≤ 1) (φ : C ⟶ C) (w : φ ≫ f = f)
     (ℓ : ℕ) [Fact ℓ.Prime] (hℓ : IsUnit (ℓ : k)) :
     ((fixedPointIntersection f hdim φ w : ℤ) : ℤ_[ℓ]) =
       1 - jacobianTateTrace f hdim φ w ℓ + (curveMapDegree f φ w : ℤ_[ℓ])
@@ -178,7 +161,7 @@ theorem fixedPointIntersection_eq {k : Type u} [Field k] [IsAlgClosed k] {C : Sc
 
 [Tag 03U3](https://stacks.math.columbia.edu/tag/03U3) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.sum_trace_etaleConstantCohomologyPullback_eq_fixedPointIntersection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/WeilFormulaEtaleCohomologyCurve.lean, line 56](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/WeilFormulaEtaleCohomologyCurve.lean#L56).
+**`Stacks.EtaleCohomology.sum_trace_etaleConstantCohomologyPullback_eq_fixedPointIntersection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/WeilFormulaEtaleCohomologyCurve.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/WeilFormulaEtaleCohomologyCurve.lean#L82). The attribute's comment: “the étale cohomology H^i(C, Z/ℓ^n Z) of a smooth proper curve over an algebraically closed field is free of finite rank, and the alternating sum of the traces of φ^* is the intersection number V(φ) = Δ\_C · Γ\_φ modulo ℓ^n”.
 
 > **Weil's trace formula modulo `ℓ^n` (Stacks 03U3).** Let `C` be a nonsingular projective curve
 > over an algebraically closed field `k`, let `φ : C → C` be a `k`-endomorphism of `C` distinct from
@@ -199,7 +182,7 @@ theorem fixedPointIntersection_eq {k : Type u} [Field k] [IsAlgClosed k] {C : Sc
 ```lean
 theorem sum_trace_etaleConstantCohomologyPullback_eq_fixedPointIntersection
     {k : Type u} [Field k] [IsAlgClosed k] {C : Scheme.{u}} (f : C ⟶ Spec (.of k))
-    [IsCurve k f] [Smooth f] [IsProper f] (φ : C ⟶ C) (w : φ ≫ f = f) (hφ : φ ≠ 𝟙 C)
+    [IsCurve k f] [Smooth f] [IsProper f] (φ : C ⟶ C) (w : φ ≫ f = f)
     (ℓ : ℕ) [Fact ℓ.Prime] (hℓ : IsUnit (ℓ : k)) (n : ℕ) :
     (∀ i : ℕ, Module.Free (ZMod (ℓ ^ n))
         (Sheaf.H.{u + 1} (etaleConstantSheaf.{u, 0} C (ZMod (ℓ ^ n))) i) ∧
@@ -211,23 +194,6 @@ theorem sum_trace_etaleConstantCohomologyPullback_eq_fixedPointIntersection
         ZMod (ℓ ^ n))
 ```
 
-**`Stacks.EtaleCohomology.JacobianCorrespondence.EtaleFrobeniusAction.alternatingTrace_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/WeilFormulaModPrimePower.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/WeilFormulaModPrimePower.lean#L157). The attribute's comment: “the alternating sum of the traces on the étale cohomology of the curve is the fixed point number V(φ) modulo ℓ^n, with the three degreewise traces — 1 in degree zero, Tr\_J(φ^*) in degree one and deg φ in degree two — as hypotheses, the situation of Stacks 03U1 being the JacobianCorrespondence datum”.
-
-> **Weil's trace formula modulo `ℓ^n` (Stacks 03U3).** In the situation of Weil's theorem,
-> Tag 03U1, let `ℓ` be a prime invertible in `k`. Then
->
->   `∑_{i=0}^{2} (-1)^i Tr(φ^* | H^i(C, Z/ℓ^n Z)) = V(φ) mod ℓ^n`,
->
-> the alternating sum of the traces of `φ^*` on the étale cohomology of `C` with coefficients in
-> `Z/ℓ^n Z` being `1 - Tr_J(φ^*) + deg φ` by the three degreewise computations carried by
-> `Stacks.EtaleCohomology.JacobianCorrespondence.EtaleFrobeniusAction`, and that being `V(φ)` by
-> Weil's formula.
-
-```lean
-public theorem alternatingTrace_eq :
-    T.alternatingTrace = (W.fixedPointNumber D : ZMod (ℓ ^ n))
-```
-
 ## Depends on
 
 No dependencies are recorded: this chapter reads the repository's source text without running Lean, which edges between declarations need.
@@ -235,4 +201,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 64.14, Tag 03TW](https://stacks.math.columbia.edu/tag/03TW)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

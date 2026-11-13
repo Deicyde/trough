@@ -17937,6 +17937,12 @@
    "order": 192,
    "kind": "example"
   },
+  "003T": {
+   "chapter": "categories",
+   "section": 35,
+   "order": 234,
+   "kind": "definition"
+  },
   "003V": {
    "chapter": "categories",
    "section": 35,
@@ -17966,6 +17972,12 @@
    "section": 35,
    "order": 241,
    "kind": "lemma"
+  },
+  "0043": {
+   "chapter": "categories",
+   "section": 38,
+   "order": 263,
+   "kind": "definition"
   },
   "0044": {
    "chapter": "categories",
@@ -18085,6 +18097,12 @@
    "chapter": "topology",
    "section": 10,
    "order": 87,
+   "kind": "definition"
+  },
+  "005A": {
+   "chapter": "topology",
+   "section": 12,
+   "order": 96,
    "kind": "definition"
   },
   "005C": {
@@ -19341,6 +19359,12 @@
    "order": 219,
    "kind": "lemma"
   },
+  "00ES": {
+   "chapter": "algebra",
+   "section": 26,
+   "order": 226,
+   "kind": "lemma"
+  },
   "00ET": {
    "chapter": "algebra",
    "section": 26,
@@ -19477,6 +19501,12 @@
    "chapter": "algebra",
    "section": 30,
    "order": 266,
+   "kind": "lemma"
+  },
+  "00FL": {
+   "chapter": "algebra",
+   "section": 30,
+   "order": 268,
    "kind": "lemma"
   },
   "00FN": {
@@ -19753,6 +19783,12 @@
    "chapter": "algebra",
    "section": 38,
    "order": 371,
+   "kind": "lemma"
+  },
+  "00H6": {
+   "chapter": "algebra",
+   "section": 38,
+   "order": 372,
    "kind": "lemma"
   },
   "00H7": {
@@ -21129,6 +21165,18 @@
    "order": 1139,
    "kind": "lemma"
   },
+  "00PL": {
+   "chapter": "algebra",
+   "section": 122,
+   "order": 1140,
+   "kind": "definition"
+  },
+  "00PM": {
+   "chapter": "algebra",
+   "section": 122,
+   "order": 1142,
+   "kind": "lemma"
+  },
   "00PN": {
    "chapter": "algebra",
    "section": 122,
@@ -21837,6 +21885,12 @@
    "order": 1374,
    "kind": "lemma"
   },
+  "00U1": {
+   "chapter": "algebra",
+   "section": 143,
+   "order": 1383,
+   "kind": "definition"
+  },
   "00U2": {
    "chapter": "algebra",
    "section": 143,
@@ -21927,6 +21981,18 @@
    "order": 1402,
    "kind": "lemma"
   },
+  "00UH": {
+   "chapter": "algebra",
+   "section": 143,
+   "order": 1395,
+   "kind": "lemma"
+  },
+  "00UJ": {
+   "chapter": "algebra",
+   "section": 145,
+   "order": 1405,
+   "kind": "lemma"
+  },
   "00UK": {
    "chapter": "algebra",
    "section": 145,
@@ -21973,6 +22039,12 @@
    "chapter": "algebra",
    "section": 151,
    "order": 1443,
+   "kind": "lemma"
+  },
+  "00UW": {
+   "chapter": "algebra",
+   "section": 151,
+   "order": 1445,
    "kind": "lemma"
   },
   "00UX": {
@@ -22040,6 +22112,12 @@
    "section": 5,
    "order": 20,
    "kind": "lemma"
+  },
+  "00VH": {
+   "chapter": "sites",
+   "section": 6,
+   "order": 25,
+   "kind": "definition"
   },
   "00VJ": {
    "chapter": "sites",
@@ -22238,6 +22316,12 @@
    "section": 13,
    "order": 84,
    "kind": "definition"
+  },
+  "00WW": {
+   "chapter": "sites",
+   "section": 13,
+   "order": 85,
+   "kind": "lemma"
   },
   "00WX": {
    "chapter": "sites",
@@ -22592,6 +22676,18 @@
    "section": 47,
    "order": 311,
    "kind": "definition"
+  },
+  "00Z9": {
+   "chapter": "sites",
+   "section": 47,
+   "order": 312,
+   "kind": "lemma"
+  },
+  "00ZC": {
+   "chapter": "sites",
+   "section": 48,
+   "order": 315,
+   "kind": "lemma"
   },
   "00ZD": {
    "chapter": "sites",
@@ -23360,6 +23456,12 @@
    "section": 24,
    "order": 205,
    "kind": "lemma"
+  },
+  "0145": {
+   "chapter": "derived",
+   "section": 3,
+   "order": 6,
+   "kind": "definition"
   },
   "0147": {
    "chapter": "derived",
@@ -26001,6 +26103,12 @@
    "order": 129,
    "kind": "example"
   },
+  "01KM": {
+   "chapter": "schemes",
+   "section": 21,
+   "order": 130,
+   "kind": "lemma"
+  },
   "01KN": {
    "chapter": "schemes",
    "section": 21,
@@ -28485,6 +28593,12 @@
    "order": 22,
    "kind": "lemma"
   },
+  "01Z5": {
+   "chapter": "limits",
+   "section": 4,
+   "order": 23,
+   "kind": "lemma"
+  },
   "01Z6": {
    "chapter": "limits",
    "section": 4,
@@ -29019,10 +29133,22 @@
    "order": 62,
    "kind": "definition"
   },
+  "022B": {
+   "chapter": "topologies",
+   "section": 9,
+   "order": 101,
+   "kind": "definition"
+  },
   "022C": {
    "chapter": "topologies",
    "section": 9,
    "order": 107,
+   "kind": "lemma"
+  },
+  "022D": {
+   "chapter": "topologies",
+   "section": 9,
+   "order": 108,
    "kind": "lemma"
   },
   "022E": {
@@ -30789,6 +30915,12 @@
    "order": 180,
    "kind": "lemma"
   },
+  "02L4": {
+   "chapter": "descent",
+   "section": 23,
+   "order": 181,
+   "kind": "lemma"
+  },
   "02L5": {
    "chapter": "descent",
    "section": 23,
@@ -30957,6 +31089,12 @@
    "order": 530,
    "kind": "lemma"
   },
+  "02M3": {
+   "chapter": "algebra",
+   "section": 63,
+   "order": 630,
+   "kind": "lemma"
+  },
   "02M5": {
    "chapter": "algebra",
    "section": 67,
@@ -31070,6 +31208,12 @@
    "section": 10,
    "order": 76,
    "kind": "definition"
+  },
+  "02MS": {
+   "chapter": "homology",
+   "section": 10,
+   "order": 77,
+   "kind": "lemma"
   },
   "02MU": {
    "chapter": "homology",
@@ -33391,6 +33535,12 @@
    "chapter": "algebra",
    "section": 44,
    "order": 441,
+   "kind": "lemma"
+  },
+  "0310": {
+   "chapter": "algebra",
+   "section": 63,
+   "order": 642,
    "kind": "lemma"
   },
   "0311": {
@@ -36007,6 +36157,12 @@
    "chapter": "spaces-properties",
    "section": 29,
    "order": 174,
+   "kind": "lemma"
+  },
+  "03GE": {
+   "chapter": "algebra",
+   "section": 147,
+   "order": 1413,
    "kind": "lemma"
   },
   "03GF": {
@@ -47389,6 +47545,12 @@
    "chapter": "algebra",
    "section": 79,
    "order": 779,
+   "kind": "lemma"
+  },
+  "05GG": {
+   "chapter": "algebra",
+   "section": 96,
+   "order": 886,
    "kind": "lemma"
   },
   "05GH": {
@@ -63411,6 +63573,12 @@
    "order": 77,
    "kind": "lemma"
   },
+  "089R": {
+   "chapter": "constructions",
+   "section": 22,
+   "order": 138,
+   "kind": "section"
+  },
   "089S": {
    "chapter": "constructions",
    "section": 22,
@@ -70143,6 +70311,12 @@
    "order": 129,
    "kind": "definition"
   },
+  "09DW": {
+   "chapter": "fields",
+   "section": 21,
+   "order": 133,
+   "kind": "theorem"
+  },
   "09DX": {
    "chapter": "fields",
    "section": 24,
@@ -70515,6 +70689,12 @@
    "order": 44,
    "kind": "lemma"
   },
+  "09GH": {
+   "chapter": "fields",
+   "section": 8,
+   "order": 45,
+   "kind": "lemma"
+  },
   "09GQ": {
    "chapter": "fields",
    "section": 10,
@@ -70526,6 +70706,12 @@
    "section": 10,
    "order": 56,
    "kind": "lemma"
+  },
+  "09GT": {
+   "chapter": "fields",
+   "section": 10,
+   "order": 58,
+   "kind": "theorem"
   },
   "09GX": {
    "chapter": "fields",
@@ -70609,6 +70795,12 @@
    "chapter": "fields",
    "section": 16,
    "order": 105,
+   "kind": "lemma"
+  },
+  "09HX": {
+   "chapter": "fields",
+   "section": 17,
+   "order": 112,
    "kind": "lemma"
   },
   "09I3": {
@@ -77979,6 +78171,12 @@
    "order": 20,
    "kind": "lemma"
   },
+  "0ARF": {
+   "chapter": "examples",
+   "section": 76,
+   "order": 170,
+   "kind": "lemma"
+  },
   "0ARH": {
    "chapter": "spaces-morphisms",
    "section": 41,
@@ -80275,6 +80473,12 @@
    "chapter": "algebra",
    "section": 62,
    "order": 626,
+   "kind": "lemma"
+  },
+  "0B52": {
+   "chapter": "algebra",
+   "section": 63,
+   "order": 637,
    "kind": "lemma"
   },
   "0B53": {
@@ -83313,6 +83517,12 @@
    "order": 50,
    "kind": "lemma"
   },
+  "0BME": {
+   "chapter": "fields",
+   "section": 15,
+   "order": 100,
+   "kind": "lemma"
+  },
   "0BMF": {
    "chapter": "fields",
    "section": 16,
@@ -84181,6 +84391,12 @@
    "chapter": "algebra",
    "section": 154,
    "order": 1469,
+   "kind": "lemma"
+  },
+  "0BSI": {
+   "chapter": "algebra",
+   "section": 154,
+   "order": 1470,
    "kind": "lemma"
   },
   "0BSJ": {
@@ -89715,6 +89931,12 @@
    "order": 350,
    "kind": "definition"
   },
+  "0CT5": {
+   "chapter": "exercises",
+   "section": 18,
+   "order": 123,
+   "kind": "exercise"
+  },
   "0CT7": {
    "chapter": "more-algebra",
    "section": 11,
@@ -91244,6 +91466,12 @@
    "section": 14,
    "order": 95,
    "kind": "remark"
+  },
+  "0D1R": {
+   "chapter": "examples",
+   "section": 73,
+   "order": 159,
+   "kind": "lemma"
   },
   "0D1U": {
    "chapter": "algebra",
@@ -94166,12 +94394,6 @@
    "section": 35,
    "order": 236,
    "kind": "lemma"
-  },
-  "0DJV": {
-   "chapter": "perfect",
-   "section": 35,
-   "order": 237,
-   "kind": "remark"
   },
   "0DJX": {
    "chapter": "more-morphisms",
@@ -104611,6 +104833,18 @@
    "chapter": "homology",
    "section": 9,
    "order": 64,
+   "kind": "definition"
+  },
+  "0FCF": {
+   "chapter": "homology",
+   "section": 9,
+   "order": 65,
+   "kind": "definition"
+  },
+  "0FCG": {
+   "chapter": "homology",
+   "section": 9,
+   "order": 66,
    "kind": "definition"
   },
   "0FCH": {
@@ -116121,10 +116355,202 @@
    "order": 733,
    "kind": "lemma"
   },
+  "0H9M": {
+   "chapter": "algebra",
+   "section": 18,
+   "order": 192,
+   "kind": "remark"
+  },
+  "0H9N": {
+   "chapter": "homology",
+   "section": 3,
+   "order": 18,
+   "kind": "remark"
+  },
+  "0H9P": {
+   "chapter": "homology",
+   "section": 3,
+   "order": 19,
+   "kind": "lemma"
+  },
+  "0H9Q": {
+   "chapter": "homology",
+   "section": 3,
+   "order": 20,
+   "kind": "lemma"
+  },
+  "0H9R": {
+   "chapter": "homology",
+   "section": 3,
+   "order": 21,
+   "kind": "lemma"
+  },
+  "0H9S": {
+   "chapter": "homology",
+   "section": 3,
+   "order": 22,
+   "kind": "lemma"
+  },
+  "0HA1": {
+   "chapter": "schemes",
+   "section": 18,
+   "order": 107,
+   "kind": "lemma"
+  },
+  "0HA3": {
+   "chapter": "properties",
+   "section": 14,
+   "order": 91,
+   "kind": "definition"
+  },
+  "0HA4": {
+   "chapter": "properties",
+   "section": 14,
+   "order": 92,
+   "kind": "lemma"
+  },
+  "0HA5": {
+   "chapter": "properties",
+   "section": 14,
+   "order": 93,
+   "kind": "lemma"
+  },
+  "0HA7": {
+   "chapter": "morphisms",
+   "section": 20,
+   "order": 145,
+   "kind": "definition"
+  },
+  "0HA8": {
+   "chapter": "morphisms",
+   "section": 20,
+   "order": 146,
+   "kind": "lemma"
+  },
+  "0HA9": {
+   "chapter": "morphisms",
+   "section": 20,
+   "order": 147,
+   "kind": "lemma"
+  },
+  "0HAA": {
+   "chapter": "morphisms",
+   "section": 20,
+   "order": 148,
+   "kind": "lemma"
+  },
+  "0HAB": {
+   "chapter": "morphisms",
+   "section": 20,
+   "order": 149,
+   "kind": "lemma"
+  },
+  "0HAC": {
+   "chapter": "morphisms",
+   "section": 20,
+   "order": 150,
+   "kind": "lemma"
+  },
+  "0HAD": {
+   "chapter": "morphisms",
+   "section": 20,
+   "order": 151,
+   "kind": "lemma"
+  },
+  "0HAF": {
+   "chapter": "divisors",
+   "section": 12,
+   "order": 82,
+   "kind": "definition"
+  },
+  "0HAG": {
+   "chapter": "divisors",
+   "section": 12,
+   "order": 83,
+   "kind": "lemma"
+  },
+  "0HAH": {
+   "chapter": "divisors",
+   "section": 12,
+   "order": 84,
+   "kind": "lemma"
+  },
+  "0HAI": {
+   "chapter": "divisors",
+   "section": 12,
+   "order": 85,
+   "kind": "lemma"
+  },
+  "0HAJ": {
+   "chapter": "divisors",
+   "section": 12,
+   "order": 86,
+   "kind": "lemma"
+  },
+  "0HAK": {
+   "chapter": "divisors",
+   "section": 12,
+   "order": 87,
+   "kind": "lemma"
+  },
   "0HAP": {
    "chapter": "spaces-cohomology",
    "section": 11,
    "order": 44,
+   "kind": "lemma"
+  },
+  "0HAR": {
+   "chapter": "examples",
+   "section": 57,
+   "order": 123,
+   "kind": "lemma"
+  },
+  "0HAT": {
+   "chapter": "examples",
+   "section": 66,
+   "order": 145,
+   "kind": "lemma"
+  },
+  "0HAW": {
+   "chapter": "categories",
+   "section": 43,
+   "order": 296,
+   "kind": "lemma"
+  },
+  "0HAX": {
+   "chapter": "categories",
+   "section": 43,
+   "order": 297,
+   "kind": "lemma"
+  },
+  "0HAY": {
+   "chapter": "categories",
+   "section": 43,
+   "order": 299,
+   "kind": "lemma"
+  },
+  "0HB0": {
+   "chapter": "categories",
+   "section": 43,
+   "order": 309,
+   "kind": "lemma"
+  },
+  "0HB1": {
+   "chapter": "morphisms",
+   "section": 37,
+   "order": 345,
+   "kind": "lemma"
+  },
+  "0HB2": {
+   "chapter": "dualizing",
+   "section": 21,
+   "order": 147,
+   "kind": "lemma"
+  },
+  "0HB3": {
+   "chapter": "examples",
+   "section": 10,
+   "order": 17,
    "kind": "lemma"
   }
  }

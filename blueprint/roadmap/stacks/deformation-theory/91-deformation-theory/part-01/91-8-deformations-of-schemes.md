@@ -8,13 +8,13 @@ proof: formalized
 
 # 91.8 Deformations of schemes
 
-Section 91.8 of the Stacks Project, [Tag 0D13](https://stacks.math.columbia.edu/tag/0D13). 1 tag here is carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 91.8 of the Stacks Project, [Tag 0D13](https://stacks.math.columbia.edu/tag/0D13). 1 tag here is carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0D14, a lemma
 
 [Tag 0D14](https://stacks.math.columbia.edu/tag/0D14) in the Stacks Project.
 
-**`Stacks.Thickenings.FlatDeformation.exists_addTorsor_classes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/FlatDeformation/Torsor.lean, line 223](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/FlatDeformation/Torsor.lean#L223). References: SGA 7 VI (4.16), “(b), special case”.
+**`Stacks.Thickenings.FlatDeformation.exists_addTorsor_classes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/FlatDeformation/Torsor.lean, line 223](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/FlatDeformation/Torsor.lean#L223). References: SGA 7 VI (4.16), “(b), special case”.
 
 > Let `S ⊂ S'` be a first order thickening of schemes (`t : S ⟶ S'` a closed immersion whose
 > ideal sheaf squares to zero) and let `f : X ⟶ S` be flat. Suppose there exist a flat morphism
@@ -48,7 +48,7 @@ theorem exists_addTorsor_classes [Flat f]
             extIso f (pullbackConormalModule f t) 1 ξ
 ```
 
-**`Stacks.Thickenings.flatThickeningAutEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/FlatThickeningAutomorphisms.lean, line 488](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/FlatThickeningAutomorphisms.lean#L488).
+**`Stacks.Thickenings.flatThickeningAutEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/FlatThickeningAutomorphisms.lean, line 489](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/FlatThickeningAutomorphisms.lean#L489).
 
 > **[Stacks Project, Tag 0D14], part (2).** Let `S ⊂ S'` be a first order thickening of
 > schemes, let `f : X ⟶ S` be a morphism, let `f' : X' ⟶ S'` be flat and let `i : X ⟶ X'` make the
@@ -80,4 +80,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 91.8, Tag 0D13](https://stacks.math.columbia.edu/tag/0D13)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

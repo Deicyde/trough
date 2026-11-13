@@ -1,14 +1,14 @@
 ---
 declaration: section
 origin: cited
-lean: AlgebraicGeometry.Space.exists_isBlowupAlong_isFlat_isFinitePresentation_strictTransformSpaceToBlowUp_of_isFiniteType, AlgebraicGeometry.Space.exists_admissibleBlowup_isFiniteLocallyFree_strictTransform, AlgebraicGeometry.Space.exists_isBlowupAlong_isIso_strictTransformSpaceToBlowUp_of_isProper_unconditional, AlgebraicGeometry.Space.exists_isBlowupAlong_isOpenImmersion_strictTransformSpaceToBlowUp_unconditional, AlgebraicGeometry.Space.exists_isAdmissibleBlowup_dominating_of_isProper, AlgebraicGeometry.Space.exists_isAdmissibleBlowup_extending_section_of_isProper
+lean: exists_isBlowupAlong_isFlat_isFinitePresentation_strictTransformSpaceToBlowUp_of_isFiniteType, AlgebraicGeometry.Space.exists_admissibleBlowup_isFiniteLocallyFree_strictTransform, AlgebraicGeometry.Space.exists_isBlowupAlong_isIso_strictTransformSpaceToBlowUp_of_isProper_unconditional, AlgebraicGeometry.Space.exists_isBlowupAlong_isOpenImmersion_strictTransformSpaceToBlowUp_unconditional, AlgebraicGeometry.Space.exists_isAdmissibleBlowup_dominating_of_isProper, AlgebraicGeometry.Space.exists_isAdmissibleBlowup_extending_section_of_isProper
 statement: formalized
 proof: formalized
 ---
 
 # 76.39 Applications
 
-Section 76.39 of the Stacks Project, [Tag 087D](https://stacks.math.columbia.edu/tag/087D). 6 tags here are carried by 5 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 76.39 of the Stacks Project, [Tag 087D](https://stacks.math.columbia.edu/tag/087D). 6 tags here are carried by 5 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 087E, a lemma
 
@@ -16,13 +16,13 @@ Section 76.39 of the Stacks Project, [Tag 087D](https://stacks.math.columbia.edu
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Space.exists_isBlowupAlong_isFlat_isFinitePresentation_strictTransformSpaceToBlowUp_of_isFiniteType`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FlatteningFiniteTypeMorphismByBlowup.lean#L68), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/FlatteningFiniteTypeMorphismByBlowupTag.lean, line 36](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FlatteningFiniteTypeMorphismByBlowupTag.lean#L36) (StacksFrontier).
+- [`exists_isBlowupAlong_isFlat_isFinitePresentation_strictTransformSpaceToBlowUp_of_isFiniteType`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=exists_isBlowupAlong_isFlat_isFinitePresentation_strictTransformSpaceToBlowUp_of_isFiniteType#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/FlatteningFiniteTypeMorphismByBlowupTag.lean, line 37](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FlatteningFiniteTypeMorphismByBlowupTag.lean#L37) (StacksFrontier).
 
 ## Tag 0B4K, a lemma
 
 [Tag 0B4K](https://stacks.math.columbia.edu/tag/0B4K) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_admissibleBlowup_isFiniteLocallyFree_strictTransform`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperFiniteLocallyFreeAdmissibleBlowup.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ProperFiniteLocallyFreeAdmissibleBlowup.lean#L63).
+**`AlgebraicGeometry.Space.exists_admissibleBlowup_isFiniteLocallyFree_strictTransform`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperFiniteLocallyFreeAdmissibleBlowup.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ProperFiniteLocallyFreeAdmissibleBlowup.lean#L63).
 
 > Let `f : X ⟶ A` be a morphism of algebraic spaces over `S` and let `U ⊆ A` be an open
 > subspace.  Assume that
@@ -54,7 +54,7 @@ theorem exists_admissibleBlowup_isFiniteLocallyFree_strictTransform
 
 [Tag 0GUW](https://stacks.math.columbia.edu/tag/0GUW) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isBlowupAlong_isIso_strictTransformSpaceToBlowUp_of_isProper_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperIsomorphismOverOpenBlowupUnconditional.lean, line 52](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ProperIsomorphismOverOpenBlowupUnconditional.lean#L52).
+**`AlgebraicGeometry.Space.exists_isBlowupAlong_isIso_strictTransformSpaceToBlowUp_of_isProper_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ProperIsomorphismOverOpenBlowupUnconditional.lean, line 52](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ProperIsomorphismOverOpenBlowupUnconditional.lean#L52).
 
 > Let `f : X ⟶ A` be a morphism of algebraic spaces over `S` and let `U ⊆ A` be an open subspace.
 > Assume that `A` is quasi-compact and quasi-separated, that `U` is quasi-compact, that `f` is proper
@@ -81,7 +81,7 @@ theorem exists_isBlowupAlong_isIso_strictTransformSpaceToBlowUp_of_isProper_unco
 
 [Tag 087F](https://stacks.math.columbia.edu/tag/087F) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isBlowupAlong_isOpenImmersion_strictTransformSpaceToBlowUp_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/OpenImmersionAfterAdmissibleBlowupUnconditional.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/OpenImmersionAfterAdmissibleBlowupUnconditional.lean#L68). The attribute's comment: “corrected: f separated; as published the statement is false (the affine line with doubled origin over 𝐀¹, with U = 𝐀¹ minus the origin)”.
+**`AlgebraicGeometry.Space.exists_isBlowupAlong_isOpenImmersion_strictTransformSpaceToBlowUp_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/OpenImmersionAfterAdmissibleBlowupUnconditional.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/OpenImmersionAfterAdmissibleBlowupUnconditional.lean#L68). The attribute's comment: “corrected: f separated; as published the statement is false (the affine line with doubled origin over 𝐀¹, with U = 𝐀¹ minus the origin)”.
 
 > **Stacks 087F, corrected.**  Let `f : X ⟶ A` be a morphism of algebraic spaces over `S` and
 > let `U ⊆ A` be an open subspace.  Assume that `A` is quasi-compact and quasi-separated, that `U`
@@ -113,7 +113,7 @@ theorem exists_isBlowupAlong_isOpenImmersion_strictTransformSpaceToBlowUp_uncond
 
 [Tag 087G](https://stacks.math.columbia.edu/tag/087G) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isAdmissibleBlowup_dominating_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModificationDomination/QcqsBase.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ModificationDomination/QcqsBase.lean#L92).
+**`AlgebraicGeometry.Space.exists_isAdmissibleBlowup_dominating_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModificationDomination/QcqsBase.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ModificationDomination/QcqsBase.lean#L92).
 
 > **Stacks 087G.** Let `S` be a scheme, let `f : X ⟶ Y` be a morphism of algebraic spaces over
 > `S` and let `U ⊆ Y` be an open subspace. Assume that `Y` is quasi-compact and quasi-separated,
@@ -139,7 +139,7 @@ theorem exists_isAdmissibleBlowup_dominating_of_isProper {X Y : AlgebraicSpaces 
 
 [Tag 0CPI](https://stacks.math.columbia.edu/tag/0CPI) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isAdmissibleBlowup_extending_section_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModificationDomination/SectionExtension.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ModificationDomination/SectionExtension.lean#L112).
+**`AlgebraicGeometry.Space.exists_isAdmissibleBlowup_extending_section_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ModificationDomination/SectionExtension.lean, line 112](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ModificationDomination/SectionExtension.lean#L112).
 
 > **Stacks 0CPI.** Let `S` be a scheme, let `X`, `Y` be algebraic spaces over `S`, let
 > `U ⊆ W ⊆ Y` be open subspaces, and let `f : X ⟶ W` and `s : U ⟶ X` be morphisms with
@@ -176,4 +176,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 76.39, Tag 087D](https://stacks.math.columbia.edu/tag/087D)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

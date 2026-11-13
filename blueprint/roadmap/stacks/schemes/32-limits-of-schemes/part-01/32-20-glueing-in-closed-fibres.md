@@ -8,13 +8,13 @@ proof: formalized
 
 # 32.20 Glueing in closed fibres
 
-Section 32.20 of the Stacks Project, [Tag 0E8P](https://stacks.math.columbia.edu/tag/0E8P). 5 tags here are carried by 17 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 32.20 of the Stacks Project, [Tag 0E8P](https://stacks.math.columbia.edu/tag/0E8P). 5 tags here are carried by 17 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0BPA, a lemma
 
 [Tag 0BPA](https://stacks.math.columbia.edu/tag/0BPA) in the Stacks Project.
 
-**`AlgebraicGeometry.GlueingNearPoint.restrictionFunctorAtPoint_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GlueingNearClosedPoints/Germ.lean, line 4310](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GlueingNearClosedPoints/Germ.lean#L4310).
+**`AlgebraicGeometry.GlueingNearPoint.restrictionFunctorAtPoint_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GlueingNearClosedPoints/Germ.lean, line 4308](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/GlueingNearClosedPoints/Germ.lean#L4308).
 
 > **Stacks Project, Tag 0BPA.** Let `s` be a closed point of a scheme `S` whose open
 > complement `U = S \ {s}` has quasi-compact inclusion.  Restricting a scheme of finite
@@ -32,7 +32,7 @@ public theorem restrictionFunctorAtPoint_isEquivalence (S : Scheme.{u}) (s : S)
 
 [Tag 0F21](https://stacks.math.columbia.edu/tag/0F21) in the Stacks Project.
 
-**`AlgebraicGeometry.GlueingNearPoint.moduleRestrictionFunctorAtPoint`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GlueingNearClosedPoints/FinitePresentationModules.lean, line 365](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GlueingNearClosedPoints/FinitePresentationModules.lean#L365). The attribute's comment: “the canonical functor”.
+**`AlgebraicGeometry.GlueingNearPoint.moduleRestrictionFunctorAtPoint`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GlueingNearClosedPoints/FinitePresentationModules.lean, line 365](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/GlueingNearClosedPoints/FinitePresentationModules.lean#L365). The attribute's comment: “the canonical functor”.
 
 > **Stacks 0F21**, the canonical functor.  A module of finite presentation on `S` goes to its
 > restriction to `U`, its restriction to `Spec 𝒪_{S, s}`, and the canonical identification of the
@@ -43,7 +43,7 @@ noncomputable def moduleRestrictionFunctorAtPoint (S : Scheme.{u}) (U : S.Opens)
     FinitePresentationModules S ⥤ moduleGlueingDataNearPoint S U s
 ```
 
-**`AlgebraicGeometry.GlueingNearPoint.moduleGlueingEquivalenceNearClosedPoint`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GlueingNearClosedPoints/FinitePresentationModules.lean, line 661](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GlueingNearClosedPoints/FinitePresentationModules.lean#L661).
+**`AlgebraicGeometry.GlueingNearPoint.moduleGlueingEquivalenceNearClosedPoint`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GlueingNearClosedPoints/FinitePresentationModules.lean, line 661](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/GlueingNearClosedPoints/FinitePresentationModules.lean#L661).
 
 > **Stacks 0F21.** Let `s` be a closed point of a scheme `S` whose open complement
 > `U = S \ {s}` has quasi-compact inclusion, and let `V = Spec 𝒪_{S, s} ∖ {s}`.  Restricting a
@@ -61,7 +61,7 @@ noncomputable def moduleGlueingEquivalenceNearClosedPoint (S : Scheme.{u}) (s : 
 
 [Tag 0BQ5](https://stacks.math.columbia.edu/tag/0BQ5) in the Stacks Project.
 
-**`AlgebraicGeometry.GlueingNearPoint.glueingEquivalenceNearPoint`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GlueingNearClosedPoints/Germ.lean, line 4045](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GlueingNearClosedPoints/Germ.lean#L4045).
+**`AlgebraicGeometry.GlueingNearPoint.glueingEquivalenceNearPoint`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GlueingNearClosedPoints/Germ.lean, line 4043](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/GlueingNearClosedPoints/Germ.lean#L4043).
 
 > **Stacks Project, Tag 0BQ5.** Finite-presentation schemes on open neighbourhoods of a
 > retrocompact open together with a point are equivalent, as a germ, to compatible
@@ -71,7 +71,7 @@ noncomputable def moduleGlueingEquivalenceNearClosedPoint (S : Scheme.{u}) (s : 
 
 ```lean
 public noncomputable def glueingEquivalenceNearPoint
-    (S : Scheme.{u}) (U : S.Opens) (s : S) (hs : s ∉ U)
+    (S : Scheme.{u}) (U : S.Opens) (s : S)
     (hU : IsRetrocompact (U : Set S)) :
     { e : FinitePresentationGerm S U s ≌ glueingDataNearPoint S U s //
       ∃ a : (((FinitePresentationNeighborhoodModel.restrictionMorphisms
@@ -87,7 +87,7 @@ public noncomputable def glueingEquivalenceNearPoint
 
 [Tag 0EY3](https://stacks.math.columbia.edu/tag/0EY3) in the Stacks Project.
 
-**`AlgebraicGeometry.GlueingNearPoint.exists_open_isSeparated_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GlueingNearClosedPoints/Properties.lean, line 348](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GlueingNearClosedPoints/Properties.lean#L348). The attribute's comment: “properties\_of\_relative\_morphism”.
+**`AlgebraicGeometry.GlueingNearPoint.exists_open_isSeparated_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GlueingNearClosedPoints/Properties.lean, line 348](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/GlueingNearClosedPoints/Properties.lean#L348). The attribute's comment: “properties\_of\_relative\_morphism”.
 
 > Let `U ⊆ S` be a retrocompact open, let `s` be a point of `S` outside `U` and let `a` be a
 > morphism of schemes of finite presentation over an open neighbourhood `U'` of `U ∪ {s}`. If `a` is
@@ -109,7 +109,7 @@ theorem exists_open_isSeparated_baseChange
         ((Over.map U'.ι).obj X₂) ((Over.map U'.ι).map a))
 ```
 
-**`AlgebraicGeometry.GlueingNearPoint.exists_open_isProper_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GlueingNearClosedPoints/Properties.lean, line 371](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GlueingNearClosedPoints/Properties.lean#L371). The attribute's comment: “properties\_of\_relative\_morphism”. References: EGA IV (8.1.2), “partial”.
+**`AlgebraicGeometry.GlueingNearPoint.exists_open_isProper_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GlueingNearClosedPoints/Properties.lean, line 371](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/GlueingNearClosedPoints/Properties.lean#L371). The attribute's comment: “properties\_of\_relative\_morphism”. References: EGA IV (8.1.2), “partial”.
 
 > Let `U ⊆ S` be a retrocompact open, let `s` be a point of `S` outside `U` and let `a` be a
 > morphism of schemes of finite presentation over an open neighbourhood `U'` of `U ∪ {s}`. If `a` is
@@ -131,7 +131,7 @@ theorem exists_open_isProper_baseChange
         ((Over.map U'.ι).obj X₂) ((Over.map U'.ι).map a))
 ```
 
-**`AlgebraicGeometry.GlueingNearPoint.exists_open_isFinite_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GlueingNearClosedPoints/Properties.lean, line 394](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GlueingNearClosedPoints/Properties.lean#L394). The attribute's comment: “properties\_of\_relative\_morphism”.
+**`AlgebraicGeometry.GlueingNearPoint.exists_open_isFinite_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GlueingNearClosedPoints/Properties.lean, line 394](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/GlueingNearClosedPoints/Properties.lean#L394). The attribute's comment: “properties\_of\_relative\_morphism”.
 
 > Let `U ⊆ S` be a retrocompact open, let `s` be a point of `S` outside `U` and let `a` be a
 > morphism of schemes of finite presentation over an open neighbourhood `U'` of `U ∪ {s}`. If `a` is
@@ -153,7 +153,7 @@ theorem exists_open_isFinite_baseChange
         ((Over.map U'.ι).obj X₂) ((Over.map U'.ι).map a))
 ```
 
-**`AlgebraicGeometry.GlueingNearPoint.exists_open_etale_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GlueingNearClosedPoints/Properties.lean, line 419](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GlueingNearClosedPoints/Properties.lean#L419). The attribute's comment: “properties\_of\_relative\_morphism”.
+**`AlgebraicGeometry.GlueingNearPoint.exists_open_etale_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GlueingNearClosedPoints/Properties.lean, line 419](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/GlueingNearClosedPoints/Properties.lean#L419). The attribute's comment: “properties\_of\_relative\_morphism”.
 
 > Let `U ⊆ S` be a retrocompact open, let `s` be a point of `S` outside `U` and let `a` be a
 > morphism of schemes of finite presentation over an open neighbourhood `U'` of `U ∪ {s}`. If `a` is
@@ -175,7 +175,7 @@ theorem exists_open_etale_baseChange
         ((Over.map U'.ι).obj X₂) ((Over.map U'.ι).map a))
 ```
 
-**`AlgebraicGeometry.GlueingNearPoint.exists_open_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GlueingNearClosedPoints/Properties.lean, line 482](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GlueingNearClosedPoints/Properties.lean#L482). The attribute's comment: “properties\_of\_glued\_morphism”.
+**`AlgebraicGeometry.GlueingNearPoint.exists_open_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GlueingNearClosedPoints/Properties.lean, line 482](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/GlueingNearClosedPoints/Properties.lean#L482). The attribute's comment: “properties\_of\_glued\_morphism”.
 
 > A scheme of finite presentation over an open neighbourhood of `U ∪ {s}` whose restrictions to
 > the retrocompact open `U` and to the local scheme `Spec 𝒪_{S, s}` are separated is separated over
@@ -195,7 +195,7 @@ theorem exists_open_isSeparated
         ((neighborhoodModelToAmbient S U s).obj X)).hom
 ```
 
-**`AlgebraicGeometry.GlueingNearPoint.exists_open_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GlueingNearClosedPoints/Properties.lean, line 503](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GlueingNearClosedPoints/Properties.lean#L503). The attribute's comment: “properties\_of\_glued\_morphism”.
+**`AlgebraicGeometry.GlueingNearPoint.exists_open_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GlueingNearClosedPoints/Properties.lean, line 503](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/GlueingNearClosedPoints/Properties.lean#L503). The attribute's comment: “properties\_of\_glued\_morphism”.
 
 > A scheme of finite presentation over an open neighbourhood of `U ∪ {s}` whose restrictions to
 > the retrocompact open `U` and to the local scheme `Spec 𝒪_{S, s}` are proper is proper over some
@@ -215,7 +215,7 @@ theorem exists_open_isProper
         ((neighborhoodModelToAmbient S U s).obj X)).hom
 ```
 
-**`AlgebraicGeometry.GlueingNearPoint.exists_open_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GlueingNearClosedPoints/Properties.lean, line 524](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GlueingNearClosedPoints/Properties.lean#L524). The attribute's comment: “properties\_of\_glued\_morphism”.
+**`AlgebraicGeometry.GlueingNearPoint.exists_open_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GlueingNearClosedPoints/Properties.lean, line 524](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/GlueingNearClosedPoints/Properties.lean#L524). The attribute's comment: “properties\_of\_glued\_morphism”.
 
 > A scheme of finite presentation over an open neighbourhood of `U ∪ {s}` whose restrictions to
 > the retrocompact open `U` and to the local scheme `Spec 𝒪_{S, s}` are finite is finite over some
@@ -235,7 +235,7 @@ theorem exists_open_isFinite
         ((neighborhoodModelToAmbient S U s).obj X)).hom
 ```
 
-**`AlgebraicGeometry.GlueingNearPoint.exists_open_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GlueingNearClosedPoints/Properties.lean, line 547](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GlueingNearClosedPoints/Properties.lean#L547). The attribute's comment: “properties\_of\_glued\_morphism”.
+**`AlgebraicGeometry.GlueingNearPoint.exists_open_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GlueingNearClosedPoints/Properties.lean, line 547](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/GlueingNearClosedPoints/Properties.lean#L547). The attribute's comment: “properties\_of\_glued\_morphism”.
 
 > A scheme of finite presentation over an open neighbourhood of `U ∪ {s}` whose restrictions to
 > the retrocompact open `U` and to the local scheme `Spec 𝒪_{S, s}` are étale is étale over some
@@ -259,7 +259,7 @@ theorem exists_open_etale
 
 [Tag 0E8Q](https://stacks.math.columbia.edu/tag/0E8Q) in the Stacks Project.
 
-**`AlgebraicGeometry.canonicalRestrictionFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GlueingNearClosedPoints/Basic.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GlueingNearClosedPoints/Basic.lean#L131). The attribute's comment: “canonical functor”.
+**`AlgebraicGeometry.canonicalRestrictionFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GlueingNearClosedPoints/Basic.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/GlueingNearClosedPoints/Basic.lean#L131). The attribute's comment: “canonical functor”.
 
 > **Stacks Project, Tag 0E8Q**, the canonical functor.  The functor taking a scheme of finite
 > presentation over `S` to the gluing datum given by its restriction to the complement of the
@@ -275,7 +275,7 @@ noncomputable def canonicalRestrictionFunctor :
     FinitePresentationOver S ⥤ glueingData s hs
 ```
 
-**`AlgebraicGeometry.canonicalRestrictionFunctor_isEquivalence_of_isEmpty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GlueingNearClosedPoints/Equivalence.lean, line 115](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GlueingNearClosedPoints/Equivalence.lean#L115). The attribute's comment: “equivalence, special case of an empty family of points”.
+**`AlgebraicGeometry.canonicalRestrictionFunctor_isEquivalence_of_isEmpty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GlueingNearClosedPoints/Equivalence.lean, line 115](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/GlueingNearClosedPoints/Equivalence.lean#L115). The attribute's comment: “equivalence, special case of an empty family of points”.
 
 > For an empty family of points, the canonical restriction functor from schemes of finite
 > presentation over `S` to gluing data is an equivalence of categories.
@@ -285,7 +285,7 @@ theorem canonicalRestrictionFunctor_isEquivalence_of_isEmpty [IsEmpty I] :
     (canonicalRestrictionFunctor s hs).IsEquivalence
 ```
 
-**`AlgebraicGeometry.canonicalRestrictionFunctor_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GlueingNearClosedPoints/EquivalenceGeneral.lean, line 153](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GlueingNearClosedPoints/EquivalenceGeneral.lean#L153). The attribute's comment: “equivalence, general finite family of points”.
+**`AlgebraicGeometry.canonicalRestrictionFunctor_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GlueingNearClosedPoints/EquivalenceGeneral.lean, line 153](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/GlueingNearClosedPoints/EquivalenceGeneral.lean#L153). The attribute's comment: “equivalence, general finite family of points”.
 
 > **Stacks Project, Tag 0E8Q.** Let `s : I → S` be a finite family of pairwise distinct closed
 > points of a scheme `S` whose open complement has quasi-compact inclusion.  Then the canonical
@@ -301,7 +301,7 @@ theorem canonicalRestrictionFunctor_isEquivalence {S : Scheme.{u}} {I : Type u} 
     (canonicalRestrictionFunctor s hs).IsEquivalence
 ```
 
-**`AlgebraicGeometry.canonicalRestrictionFunctor_isEquivalence_of_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GlueingNearClosedPoints/EquivalenceSinglePoint.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GlueingNearClosedPoints/EquivalenceSinglePoint.lean#L164). The attribute's comment: “equivalence, special case of a one-element family of points”.
+**`AlgebraicGeometry.canonicalRestrictionFunctor_isEquivalence_of_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GlueingNearClosedPoints/EquivalenceSinglePoint.lean, line 164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/GlueingNearClosedPoints/EquivalenceSinglePoint.lean#L164). The attribute's comment: “equivalence, special case of a one-element family of points”.
 
 > **Stacks Project, Tag 0E8Q**, for a family of closed points indexed by a type with a unique
 > element: the canonical restriction functor from schemes of finite presentation over `S` to gluing
@@ -316,7 +316,7 @@ theorem canonicalRestrictionFunctor_isEquivalence_of_unique [Unique I]
     (canonicalRestrictionFunctor s hs).IsEquivalence
 ```
 
-**`AlgebraicGeometry.canonicalRestrictionComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RestrictionComparison/Basic.lean, line 219](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RestrictionComparison/Basic.lean#L219). The attribute's comment: “canonical comparison”.
+**`AlgebraicGeometry.canonicalRestrictionComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RestrictionComparison/Basic.lean, line 219](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RestrictionComparison/Basic.lean#L219). The attribute's comment: “canonical comparison”.
 
 > **Stacks Project, Tag 0E8Q**, the canonical comparison. The base-change associativity
 > isomorphism identifying the two ways of restricting a scheme of finite presentation over `S`
@@ -347,4 +347,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 32.20, Tag 0E8P](https://stacks.math.columbia.edu/tag/0E8P)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

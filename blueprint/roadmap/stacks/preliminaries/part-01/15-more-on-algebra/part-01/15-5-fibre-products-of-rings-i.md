@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.5 Fibre products of rings, I
 
-Section 15.5 of the Stacks Project, [Tag 08KG](https://stacks.math.columbia.edu/tag/08KG). 5 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.5 of the Stacks Project, [Tag 08KG](https://stacks.math.columbia.edu/tag/08KG). 5 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 00IT, a lemma
 
 [Tag 00IT](https://stacks.math.columbia.edu/tag/00IT) in the Stacks Project.
 
-**`Algebra.FiniteType.pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FibreProduct.lean, line 219](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/FibreProduct.lean#L219).
+**`Algebra.FiniteType.pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FibreProduct.lean, line 219](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/FibreProduct.lean#L219).
 
 > **Stacks Tag 00IT.** Let `R` be a Noetherian ring and let `f : A →ₐ[R] B`
 > and `g : C →ₐ[R] B` be `R`-algebra maps. If `A` and `C` are of finite type over
@@ -32,7 +32,7 @@ theorem Algebra.FiniteType.pullback [IsNoetherianRing R] [Algebra.FiniteType R A
 
 [Tag 08NI](https://stacks.math.columbia.edu/tag/08NI) in the Stacks Project.
 
-**`RingFibreProduct.finiteType_of_pullback_pi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FibreProduct.lean, line 259](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/FibreProduct.lean#L259).
+**`RingFibreProduct.finiteType_of_pullback_pi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FibreProduct.lean, line 259](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/FibreProduct.lean#L259).
 
 > Stacks Tag 08NI: in a cartesian square formed from finite products of surjective maps of
 > finite type algebras over a Noetherian ring, the lower right corner is of finite type.
@@ -65,7 +65,7 @@ public theorem finiteType_of_pullback_pi
 
 [Tag 01Z8](https://stacks.math.columbia.edu/tag/01Z8) in the Stacks Project.
 
-**`RingFibreProduct.isPullback_localization_away`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FibreProduct/Localization.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/FibreProduct/Localization.lean#L143).
+**`RingFibreProduct.isPullback_localization_away`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FibreProduct/Localization.lean, line 143](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/FibreProduct/Localization.lean#L143).
 
 > Let `B' = B ×_R R'` be a fibre product of commutative rings along `s : B → R` and
 > `t : R' → R`, and let `h ∈ B'` map to `g ∈ B` and `f ∈ R'`, with `s g = t f`. Then the square
@@ -102,7 +102,7 @@ theorem isPullback_localization_away
 
 [Tag 0D2E](https://stacks.math.columbia.edu/tag/0D2E) in the Stacks Project.
 
-**`ModuleGlueing.extensionOfScalarsToPullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Localization/Glueing/CategoricalPullback.lean, line 96](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Localization/Glueing/CategoricalPullback.lean#L96).
+**`ModuleGlueing.extensionOfScalarsToPullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Localization/Glueing/CategoricalPullback.lean, line 96](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Localization/Glueing/CategoricalPullback.lean#L96).
 
 > A commutative square of commutative rings induces the
 > extension-of-scalars functor
@@ -124,7 +124,7 @@ noncomputable def extensionOfScalarsToPullback.{u, uB', uB, uA', uA}
 
 [Tag 0D2F](https://stacks.math.columbia.edu/tag/0D2F) in the Stacks Project.
 
-**`MilnorPatching.exists_rightAdjoint_extensionOfScalarsToPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/MilnorPatching/ModuleCategory.lean, line 614](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/MilnorPatching/ModuleCategory.lean#L614).
+**`MilnorPatching.exists_rightAdjoint_extensionOfScalarsToPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/MilnorPatching/ModuleCategory.lean, line 613](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/MilnorPatching/ModuleCategory.lean#L613).
 
 > **Stacks Project, Tag 0D2F.** The extension-of-scalars functor associated to a commutative
 > square of rings has a right adjoint.  Its value on `(N, M', φ)` is naturally the `B'`-module
@@ -158,4 +158,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.5, Tag 08KG](https://stacks.math.columbia.edu/tag/08KG)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -1,6 +1,6 @@
 # SGA
 
-The items of Grothendieck's *Séminaire de géométrie algébrique* (SGA) that the declarations of this chapter's articles carry, 1,968 items, on a page per volume. The repository carries 1,359 more on declarations without a Stacks tag, which have no article here. The index links the articles, which live in their chapters.
+The items of Grothendieck's *Séminaire de géométrie algébrique* (SGA) that the declarations of this chapter's articles carry, 1,944 items, on a page per volume. The repository carries 1,383 more on declarations without a Stacks tag, which have no article here. The index links the articles, which live in their chapters.
 
 - [SGA 1](sga-1/README.md)
 - [SGA 2](sga-2/README.md)

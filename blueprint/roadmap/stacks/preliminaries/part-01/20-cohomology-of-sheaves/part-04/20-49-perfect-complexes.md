@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: Stacks.Cohomology.PerfectComplexes.IsPerfectComplex, Stacks.Cohomology.PerfectComplexes.IsPerfect, AlgebraicGeometry.RingedSpace.isPerfect_of_strictlyPerfect_local_models, AlgebraicGeometry.RingedSpace.isPerfectComplex_of_isPerfect_representation, AlgebraicGeometry.RingedSpace.isPerfect_iff_hasFiniteLocallyFreeRepresentation, AlgebraicGeometry.RingedSpace.hasFiniteLocallyFreeRepresentation_iff_hasFiniteFreeRepresentation, Stacks.Cohomology.PerfectFromTorAmplitude.isPerfect_of_hasTorAmplitude_of_isPseudoCoherentFrom, Stacks.Cohomology.TorAmplitude.isPseudoCoherent_and_locallyHasFiniteTorDimension_of_isPerfect
+lean: Stacks.Cohomology.PerfectComplexes.IsPerfectComplex, Stacks.Cohomology.PerfectComplexes.IsPerfect, AlgebraicGeometry.RingedSpace.isPerfect_of_strictlyPerfect_local_models, AlgebraicGeometry.RingedSpace.isPerfectComplex_of_isPerfect_representation, AlgebraicGeometry.RingedSpace.isPerfect_tfae, Stacks.Cohomology.PerfectFromTorAmplitude.isPerfect_of_hasTorAmplitude_of_isPseudoCoherentFrom, Stacks.Cohomology.TorAmplitude.isPseudoCoherent_and_locallyHasFiniteTorDimension_of_isPerfect, Stacks.Cohomology.TorAmplitude.isPerfect_of_isPseudoCoherent_of_locallyHasFiniteTorDimension
 statement: formalized
 proof: formalized
 ---
 
 # 20.49 Perfect complexes
 
-Section 20.49 of the Stacks Project, [Tag 08CL](https://stacks.math.columbia.edu/tag/08CL). 11 tags here are carried by 23 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 20.49 of the Stacks Project, [Tag 08CL](https://stacks.math.columbia.edu/tag/08CL). 11 tags here are carried by 23 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 08CM, a definition
 
 [Tag 08CM](https://stacks.math.columbia.edu/tag/08CM) in the Stacks Project.
 
-**`Stacks.Cohomology.PerfectComplexes.IsPerfectComplex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/Defs.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/Defs.lean#L59). The attribute's comment: “perfect complexes”.
+**`Stacks.Cohomology.PerfectComplexes.IsPerfectComplex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/Defs.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/Defs.lean#L59). The attribute's comment: “perfect complexes”.
 
 > A complex is perfect if an open cover admits strictly perfect complexes mapping to its
 > restrictions by quasi-isomorphisms.
@@ -24,7 +24,7 @@ def IsPerfectComplex {X : RingedSpace.{u, v}}
     (E : CochainComplex (OXMod.{u, v} X) ℤ) : Prop
 ```
 
-**`Stacks.Cohomology.PerfectComplexes.IsPerfect`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/Defs.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/Defs.lean#L82). The attribute's comment: “perfect derived-category objects”.
+**`Stacks.Cohomology.PerfectComplexes.IsPerfect`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/Defs.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/Defs.lean#L82). The attribute's comment: “perfect derived-category objects”.
 
 > An object of the derived category is perfect if represented by a perfect complex.
 
@@ -38,7 +38,7 @@ def IsPerfect {X : RingedSpace.{u, v}}
 
 [Tag 08CN](https://stacks.math.columbia.edu/tag/08CN) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSpace.isPerfect_of_strictlyPerfect_local_models`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/LocalCriterion.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/LocalCriterion.lean#L59). The attribute's comment: “local\_criterion”.
+**`AlgebraicGeometry.RingedSpace.isPerfect_of_strictlyPerfect_local_models`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/LocalCriterion.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/LocalCriterion.lean#L59). The attribute's comment: “local\_criterion”.
 
 > An object of the derived category of `𝒪_X`-modules which is, on an open covering of `X`,
 > isomorphic in the derived category to a strictly perfect complex is perfect.
@@ -63,7 +63,7 @@ theorem isPerfect_of_strictlyPerfect_local_models (X : RingedSpace.{u, u})
     IsPerfect K
 ```
 
-**`AlgebraicGeometry.RingedSpace.isPerfectComplex_of_isPerfect_representation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/RepresentativeIndependence.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/RepresentativeIndependence.lean#L55). The attribute's comment: “representative\_independence”.
+**`AlgebraicGeometry.RingedSpace.isPerfectComplex_of_isPerfect_representation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/RepresentativeIndependence.lean, line 55](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/RepresentativeIndependence.lean#L55). The attribute's comment: “representative\_independence”.
 
 > **Stacks 08CN.** Every complex representing a perfect object of the derived category of
 > `𝒪_X`-modules is itself a perfect complex.
@@ -85,27 +85,49 @@ theorem isPerfectComplex_of_isPerfect_representation
 
 [Tag 0BCJ](https://stacks.math.columbia.edu/tag/0BCJ) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSpace.isPerfect_iff_hasFiniteLocallyFreeRepresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/LocalRingStalks.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/LocalRingStalks.lean#L58). The attribute's comment: “perfect iff locally finite locally free”.
+**`AlgebraicGeometry.RingedSpace.isPerfect_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/LocalFiniteFreeModels.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/LocalFiniteFreeModels.lean#L90). The attribute's comment: “perfect iff locally represented by finite complexes of finite (locally) free”.
 
-> **Stacks 0BCJ.** On a ringed space whose structure-sheaf stalks are local rings, a derived
-> object is perfect exactly when it has local bounded finite locally free representatives.
+> **Stacks 0BCJ.** Let `X` be a ringed space all of whose stalks `𝒪_{X,x}` are local rings, and
+> let `K` be an object of `D(𝒪_X)`. The following are equivalent:
+>
+> 1. `K` is perfect;
+> 2. there is an open covering `X = ⋃ U i` such that each `K|_{U i}` is isomorphic, in the derived
+>    category of `U i`, to a finite complex of finite locally free `𝒪_{U i}`-modules;
+> 3. there is an open covering `X = ⋃ U i` such that each `K|_{U i}` is isomorphic, in the derived
+>    category of `U i`, to a finite complex of finite free `𝒪_{U i}`-modules.
+>
+> `K|_{U i}` is the restriction of a complex `F` representing `K`, read in the derived category of
+> `U i`; a finite free module is one isomorphic to `𝒪^{⊕ n}`.
 
 ```lean
-theorem isPerfect_iff_hasFiniteLocallyFreeRepresentation
-    [∀ x : X.carrier, IsLocalRing (ToType (X.presheaf.stalk x))]
-    [HasDerivedCategory.{d} (OXMod.{u, u} X)] (K : DerivedCategory (OXMod.{u, u} X)) :
-    IsPerfect K ↔ HasFiniteLocallyFreeRepresentation K
+theorem isPerfect_tfae [∀ x : X.carrier, IsLocalRing (ToType (X.presheaf.stalk x))]
+    [HasDerivedCategory.{d} (OXMod.{u, u} X)]
+    [∀ U : Opens X.carrier, HasDerivedCategory.{d'} (OXMod.{u, u} (X.restrict U.isOpenEmbedding))]
+    (K : DerivedCategory (OXMod.{u, u} X)) :
+    List.TFAE [IsPerfect K,
+      ∃ F : CochainComplex (OXMod.{u, u} X) ℤ, Nonempty (DerivedCategory.Q.obj F ≅ K) ∧
+        ∃ (I : Type u) (U : I → Opens X.carrier), (⨆ i, U i) = ⊤ ∧
+          ∀ i : I, ∃ P : CochainComplex (OXMod.{u, u} (X.restrict (U i).isOpenEmbedding)) ℤ,
+            {j : ℤ | ¬ IsZero (P.X j)}.Finite ∧
+              (∀ j : ℤ, SheafOfModules.IsFiniteLocallyFree.{u, u, u}
+                (R := structureSheafOfRings (X.restrict (U i).isOpenEmbedding)) (P.X j)) ∧
+                Nonempty (DerivedCategory.Q.obj P ≅
+                  DerivedCategory.Q.obj (restrictComplex F (U i))),
+      ∃ F : CochainComplex (OXMod.{u, u} X) ℤ, Nonempty (DerivedCategory.Q.obj F ≅ K) ∧
+        ∃ (I : Type u) (U : I → Opens X.carrier), (⨆ i, U i) = ⊤ ∧
+          ∀ i : I, ∃ P : CochainComplex (OXMod.{u, u} (X.restrict (U i).isOpenEmbedding)) ℤ,
+            {j : ℤ | ¬ IsZero (P.X j)}.Finite ∧
+              (∀ j : ℤ, ∃ n : ℕ,
+                Nonempty (P.X j ≅ finiteFree (X.restrict (U i).isOpenEmbedding) n)) ∧
+                Nonempty (DerivedCategory.Q.obj P ≅
+                  DerivedCategory.Q.obj (restrictComplex F (U i)))]
 ```
-
-Declarations registered for the tag:
-
-- [`AlgebraicGeometry.RingedSpace.hasFiniteLocallyFreeRepresentation_iff_hasFiniteFreeRepresentation`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/FiniteFreeRepresentation.lean#L342), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/LocalRingStalks.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/LocalRingStalks.lean#L81) (StacksFrontier): “finite locally free iff finite free locally”.
 
 ## Tag 08CP, a lemma
 
 [Tag 08CP](https://stacks.math.columbia.edu/tag/08CP) in the Stacks Project.
 
-**`Stacks.Cohomology.PerfectFromTorAmplitude.isPerfect_of_hasTorAmplitude_of_isPseudoCoherentFrom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/BoundedLocalApproximation.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/BoundedLocalApproximation.lean#L191). References: SGA 6 I (5.8), “(ii) ⟹ (i)”.
+**`Stacks.Cohomology.PerfectFromTorAmplitude.isPerfect_of_hasTorAmplitude_of_isPseudoCoherentFrom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/BoundedLocalApproximation.lean, line 191](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/BoundedLocalApproximation.lean#L191). References: SGA 6 I (5.8), “(ii) ⟹ (i)”.
 
 > **Tag 08CP.** An object of `D(O_X)` on a ringed space with Tor amplitude in `[a, b]`, for
 > integers `a ≤ b`, which is `(a - 1)`-pseudo-coherent, is perfect.
@@ -128,7 +150,7 @@ theorem isPerfect_of_hasTorAmplitude_of_isPseudoCoherentFrom
 
 [Tag 08CQ](https://stacks.math.columbia.edu/tag/08CQ) in the Stacks Project.
 
-**`Stacks.Cohomology.TorAmplitude.isPseudoCoherent_and_locallyHasFiniteTorDimension_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/PseudoCoherentAndFiniteTorDimension.lean, line 218](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/PseudoCoherentAndFiniteTorDimension.lean#L218). The attribute's comment: “(1) implies (2)”. References: SGA 6 I (5.8.1), “necessity”; SGA 6 I (8.5), “special case”.
+**`Stacks.Cohomology.TorAmplitude.isPseudoCoherent_and_locallyHasFiniteTorDimension_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/PseudoCoherentAndFiniteTorDimension.lean, line 218](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/PseudoCoherentAndFiniteTorDimension.lean#L218). The attribute's comment: “(1) implies (2)”. References: SGA 6 I (5.8.1), “necessity”; SGA 6 I (8.5), “special case”.
 
 > **Tag 08CQ, the forward implication.** A perfect object of `D(O_X)` is pseudo-coherent and
 > locally has finite Tor dimension.
@@ -140,7 +162,7 @@ theorem isPseudoCoherent_and_locallyHasFiniteTorDimension_of_isPerfect
       LocallyHasFiniteTorDimension X E
 ```
 
-**`Stacks.Cohomology.TorAmplitude.isPerfect_of_isPseudoCoherent_of_locallyHasFiniteTorDimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/PseudoCoherentAndFiniteTorDimension.lean, line 253](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/PseudoCoherentAndFiniteTorDimension.lean#L253). The attribute's comment: “(2) implies (1)”. References: SGA 6 I (5.8.1), “sufficiency”.
+**`Stacks.Cohomology.TorAmplitude.isPerfect_of_isPseudoCoherent_of_locallyHasFiniteTorDimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/PseudoCoherentAndFiniteTorDimension.lean, line 253](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/PseudoCoherentAndFiniteTorDimension.lean#L253). The attribute's comment: “(2) implies (1)”. References: SGA 6 I (5.8.1), “sufficiency”.
 
 > **Tag 08CQ, the converse implication.** A pseudo-coherent object of `D(O_X)` which locally has
 > finite Tor dimension is perfect.
@@ -165,7 +187,7 @@ theorem isPerfect_of_isPseudoCoherent_of_locallyHasFiniteTorDimension
 
 [Tag 09UA](https://stacks.math.columbia.edu/tag/09UA) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSpace.KFlatDerivedPullback.isPerfect_derivedPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/PerfectDerivedPullback.lean, line 167](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/PerfectDerivedPullback.lean#L167).
+**`AlgebraicGeometry.RingedSpace.KFlatDerivedPullback.isPerfect_derivedPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/PerfectDerivedPullback.lean, line 167](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/PerfectDerivedPullback.lean#L167).
 
 > **The derived pullback of a perfect object of `D(𝒪_Y)` is a perfect object of `D(𝒪_X)`**,
 > for any models of the two derived categories.
@@ -189,7 +211,7 @@ theorem isPerfect_derivedPullback {X Y : RingedSpace.{u, u}} (f : X ⟶ Y)
 
 [Tag 08CR](https://stacks.math.columbia.edu/tag/08CR) in the Stacks Project.
 
-**`Stacks.Cohomology.PerfectComplexTriangles.isPerfect_obj₃_of_distinguished`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/Triangles.lean, line 239](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/Triangles.lean#L239). The attribute's comment: “third object”.
+**`Stacks.Cohomology.PerfectComplexTriangles.isPerfect_obj₃_of_distinguished`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/Triangles.lean, line 239](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/Triangles.lean#L239). The attribute's comment: “third object”.
 
 > **Tag 08CR, third object.** The third object of a distinguished triangle is perfect if the
 > first two are. With perfect complexes `E₁`, `E₂` representing the first two vertices, the third
@@ -206,7 +228,7 @@ theorem isPerfect_obj₃_of_distinguished [HasDerivedCategory.{d} (OXMod.{u} X)]
   Stacks.Cohomology.PerfectComplexes.IsPerfect T.obj₃
 ```
 
-**`Stacks.Cohomology.PerfectComplexTriangles.isPerfect_obj₂_of_distinguished`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/Triangles.lean, line 253](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/Triangles.lean#L253). The attribute's comment: “second object”.
+**`Stacks.Cohomology.PerfectComplexTriangles.isPerfect_obj₂_of_distinguished`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/Triangles.lean, line 253](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/Triangles.lean#L253). The attribute's comment: “second object”.
 
 > **Tag 08CR, second object.**
 
@@ -218,7 +240,7 @@ theorem isPerfect_obj₂_of_distinguished [HasDerivedCategory.{d} (OXMod.{u} X)]
   Stacks.Cohomology.PerfectComplexes.IsPerfect T.obj₂
 ```
 
-**`Stacks.Cohomology.PerfectComplexTriangles.isPerfect_obj₁_of_distinguished`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/Triangles.lean, line 263](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/Triangles.lean#L263). The attribute's comment: “first object”.
+**`Stacks.Cohomology.PerfectComplexTriangles.isPerfect_obj₁_of_distinguished`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/Triangles.lean, line 263](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/Triangles.lean#L263). The attribute's comment: “first object”.
 
 > **Tag 08CR, first object.**
 
@@ -234,7 +256,7 @@ theorem isPerfect_obj₁_of_distinguished [HasDerivedCategory.{d} (OXMod.{u} X)]
 
 [Tag 09J5](https://stacks.math.columbia.edu/tag/09J5) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSpace.isPerfect_derivedTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/DerivedTensorDatumBridge.lean, line 96](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/DerivedTensorDatumBridge.lean#L96). The attribute's comment: “at the derived tensor product of the internal Hom development”.
+**`AlgebraicGeometry.RingedSpace.isPerfect_derivedTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/DerivedTensorDatumBridge.lean, line 96](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/DerivedTensorDatumBridge.lean#L96). The attribute's comment: “at the derived tensor product of the internal Hom development”.
 
 > On a ringed space the derived tensor product `Stacks.SheafOfModules.derivedTensor` takes a
 > pair of perfect objects of `D(O_X)` to a perfect object.
@@ -248,7 +270,7 @@ theorem isPerfect_derivedTensor
       (((derivedTensor X.sheaf).obj K).obj L)
 ```
 
-**`AlgebraicGeometry.RingedSpace.isPerfect_derivedTensorProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/TensorProduct.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/TensorProduct.lean#L163). References: SGA 6 I (4.19), “single ringed space”; SGA 6 0 (4.2), “more general”.
+**`AlgebraicGeometry.RingedSpace.isPerfect_derivedTensorProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/TensorProduct.lean, line 163](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/TensorProduct.lean#L163). References: SGA 6 I (4.19), “single ringed space”; SGA 6 0 (4.2), “more general”.
 
 > **The derived tensor product of two perfect objects of `D(𝒪_X)` is perfect.**
 >
@@ -270,7 +292,7 @@ theorem isPerfect_derivedTensorProduct
 
 [Tag 08CS](https://stacks.math.columbia.edu/tag/08CS) in the Stacks Project.
 
-**`Stacks.Cohomology.TorAmplitude.isPerfect_of_biprod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/PseudoCoherentAndFiniteTorDimension.lean, line 296](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/PseudoCoherentAndFiniteTorDimension.lean#L296).
+**`Stacks.Cohomology.TorAmplitude.isPerfect_of_biprod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/PseudoCoherentAndFiniteTorDimension.lean, line 296](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/PseudoCoherentAndFiniteTorDimension.lean#L296).
 
 > **Tag 08CS.** If a binary biproduct in `D(O_X)` is perfect, then so are both of its summands.
 >
@@ -289,7 +311,7 @@ theorem isPerfect_of_biprod (K L : DerivedCategory (OXMod.{u} X))
 
 [Tag 08DP](https://stacks.math.columbia.edu/tag/08DP) in the Stacks Project.
 
-**`Stacks.Cohomology.ClosedSupportPerfect.isPerfect_derivedPushforward_of_closedSupport`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/ClosedSupportPerfect.lean, line 635](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/ClosedSupportPerfect.lean#L635).
+**`Stacks.Cohomology.ClosedSupportPerfect.isPerfect_derivedPushforward_of_closedSupport`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/ClosedSupportPerfect.lean, line 633](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/ClosedSupportPerfect.lean#L633).
 
 > **Stacks 08DP.** The derived pushforward of a perfect object on an open subspace is perfect
 > if its cohomology is supported on a subset closed in the ambient space.
@@ -317,7 +339,7 @@ theorem isPerfect_derivedPushforward_of_closedSupport
 
 [Tag 0GT1](https://stacks.math.columbia.edu/tag/0GT1) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSpace.cohomologyFiniteFreeLocus`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/CohomologyFiniteFreeLocus.lean, line 161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/CohomologyFiniteFreeLocus.lean#L161). The attribute's comment: “the locus”.
+**`AlgebraicGeometry.RingedSpace.cohomologyFiniteFreeLocus`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/CohomologyFiniteFreeLocus.lean, line 161](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/CohomologyFiniteFreeLocus.lean#L161). The attribute's comment: “the locus”.
 
 > **The finite free cohomology locus of a derived object.** These are the points at which every
 > cohomology stalk `H^i(E)_x` is a finite free `𝒪_{X, x}`-module.
@@ -327,7 +349,7 @@ def cohomologyFiniteFreeLocus [HasDerivedCategory.{d} (OXMod.{u, u} X)]
     (E : DerivedCategory (OXMod.{u, u} X)) : Set X.carrier
 ```
 
-**`AlgebraicGeometry.RingedSpace.subset_cohomologyFiniteFreeLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/CohomologyFiniteFreeLocus.lean, line 188](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/CohomologyFiniteFreeLocus.lean#L188). The attribute's comment: “maximality of the locus”.
+**`AlgebraicGeometry.RingedSpace.subset_cohomologyFiniteFreeLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/CohomologyFiniteFreeLocus.lean, line 188](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/CohomologyFiniteFreeLocus.lean#L188). The attribute's comment: “maximality of the locus”.
 
 > **Stacks 0GT1, maximality.** Every open set over which all the cohomology sheaves of a derived
 > object are finite locally free is contained in the finite free cohomology locus: finite local
@@ -341,7 +363,7 @@ theorem subset_cohomologyFiniteFreeLocus [HasDerivedCategory.{d} (OXMod.{u, u} X
     (V : Set X.carrier) ⊆ cohomologyFiniteFreeLocus E
 ```
 
-**`AlgebraicGeometry.RingedSpace.isOpen_cohomologyFiniteFreeLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/CohomologyFiniteFreeLocus.lean, line 698](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/CohomologyFiniteFreeLocus.lean#L698). The attribute's comment: “openness of the locus”.
+**`AlgebraicGeometry.RingedSpace.isOpen_cohomologyFiniteFreeLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/CohomologyFiniteFreeLocus.lean, line 698](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/CohomologyFiniteFreeLocus.lean#L698). The attribute's comment: “openness of the locus”.
 
 > **Stacks 0GT1, openness.** On a ringed space whose structure-sheaf stalks are local rings,
 > the finite free cohomology locus of a perfect object of the derived category of `𝒪_X`-modules is
@@ -356,7 +378,7 @@ theorem isOpen_cohomologyFiniteFreeLocus
     (hE : IsPerfect E) : IsOpen (cohomologyFiniteFreeLocus E)
 ```
 
-**`Stacks.Cohomology.PerfectComplexes.cohomologyFiniteFreeLocus`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/FiniteFreeLocus/Locus.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/FiniteFreeLocus/Locus.lean#L130). The attribute's comment: “the locus”.
+**`Stacks.Cohomology.PerfectComplexes.cohomologyFiniteFreeLocus`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/FiniteFreeLocus/Locus.lean, line 130](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/FiniteFreeLocus/Locus.lean#L130). The attribute's comment: “the locus”.
 
 > The set of points at which every cohomology sheaf of an object of `D(𝒪_X)` has a
 > finite free stalk.
@@ -367,7 +389,7 @@ def cohomologyFiniteFreeLocus {X : RingedSpace.{u, v}}
     (E : DerivedCategory (OXMod.{u, v} X)) : Set X
 ```
 
-**`Stacks.Cohomology.PerfectComplexes.isOpen_cohomologyFiniteFreeLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/FiniteFreeLocus/Openness.lean, line 719](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/FiniteFreeLocus/Openness.lean#L719). The attribute's comment: “openness”.
+**`Stacks.Cohomology.PerfectComplexes.isOpen_cohomologyFiniteFreeLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/FiniteFreeLocus/Openness.lean, line 719](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/FiniteFreeLocus/Openness.lean#L719). The attribute's comment: “openness”.
 
 > The locus where all cohomology stalks of a perfect object are finite free is open.
 
@@ -380,7 +402,7 @@ theorem isOpen_cohomologyFiniteFreeLocus
     IsOpen (cohomologyFiniteFreeLocus E)
 ```
 
-**`Stacks.Cohomology.PerfectComplexes.isFiniteLocallyFree_homology_restrict_locus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/FiniteFreeLocus/Openness.lean, line 747](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/FiniteFreeLocus/Openness.lean#L747). The attribute's comment: “finite locally free”.
+**`Stacks.Cohomology.PerfectComplexes.isFiniteLocallyFree_homology_restrict_locus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/FiniteFreeLocus/Openness.lean, line 747](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/FiniteFreeLocus/Openness.lean#L747). The attribute's comment: “finite locally free”.
 
 > On the finite free locus of a perfect object every cohomology sheaf is finite locally
 > free.
@@ -399,7 +421,7 @@ theorem isFiniteLocallyFree_homology_restrict_locus
         ((DerivedCategory.homologyFunctor (OXMod.{u, v} X) i).obj E))
 ```
 
-**`Stacks.Cohomology.PerfectComplexes.le_cohomologyFiniteFreeLocus_of_isFiniteLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/FiniteFreeLocus/Openness.lean, line 771](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/FiniteFreeLocus/Openness.lean#L771). The attribute's comment: “maximality”.
+**`Stacks.Cohomology.PerfectComplexes.le_cohomologyFiniteFreeLocus_of_isFiniteLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/FiniteFreeLocus/Openness.lean, line 771](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/PerfectComplexes/FiniteFreeLocus/Openness.lean#L771). The attribute's comment: “maximality”.
 
 > An open set on which all cohomology sheaves of a perfect object are finite locally free is
 > contained in its finite free locus; together with the previous result this says the locus is
@@ -426,4 +448,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 20.49, Tag 08CL](https://stacks.math.columbia.edu/tag/08CL)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

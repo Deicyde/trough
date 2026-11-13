@@ -8,13 +8,13 @@ proof: formalized
 
 # 67.50 Separated, locally quasi-finite morphisms
 
-Section 67.50 of the Stacks Project, [Tag 0417](https://stacks.math.columbia.edu/tag/0417). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 67.50 of the Stacks Project, [Tag 0417](https://stacks.math.columbia.edu/tag/0417). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 03XW, a lemma
 
 [Tag 03XW](https://stacks.math.columbia.edu/tag/03XW) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isOpenSubspace_isQuasiCompactSpace_isRepresentable_image`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ImageRepresentableInduction.lean, line 898](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ImageRepresentableInduction.lean#L898).
+**`AlgebraicGeometry.Space.isOpenSubspace_isQuasiCompactSpace_isRepresentable_image`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ImageRepresentableInduction.lean, line 898](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ImageRepresentableInduction.lean#L898).
 
 > **Stacks 03XW.** Let `t : T' ⟶ T` be an étale morphism of affine objects of the big fppf
 > category over `S`, let `f : X ⟶ yoneda.obj T` be a separated and locally quasi-finite morphism
@@ -53,7 +53,7 @@ theorem isOpenSubspace_isQuasiCompactSpace_isRepresentable_image
 
 [Tag 03XX](https://stacks.math.columbia.edu/tag/03XX) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isRepresentable_of_locallyQuasiFinite_separated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiFiniteSeparatedRepresentable.lean, line 413](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasiFiniteSeparatedRepresentable.lean#L413).
+**`AlgebraicGeometry.Space.isRepresentable_of_locallyQuasiFinite_separated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiFiniteSeparatedRepresentable.lean, line 414](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasiFiniteSeparatedRepresentable.lean#L414).
 
 > **Stacks 03XX.** A separated, locally quasi-finite algebraic space over a representable
 > algebraic space over `S` is representable.
@@ -78,4 +78,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 67.50, Tag 0417](https://stacks.math.columbia.edu/tag/0417)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

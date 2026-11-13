@@ -8,13 +8,13 @@ proof: formalized
 
 # 51.16 Hartshorne-Lichtenbaum vanishing
 
-Section 51.16 of the Stacks Project, [Tag 0EB0](https://stacks.math.columbia.edu/tag/0EB0). 7 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 51.16 of the Stacks Project, [Tag 0EB0](https://stacks.math.columbia.edu/tag/0EB0). 7 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0EB1, a lemma
 
 [Tag 0EB1](https://stacks.math.columbia.edu/tag/0EB1) in the Stacks Project.
 
-**`Stacks.LocalCohomology.cohomologicalDimension_lt_of_le_of_le_jacobson`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/Jacobson.lean, line 42](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/Jacobson.lean#L42).
+**`Stacks.LocalCohomology.cohomologicalDimension_lt_of_le_of_le_jacobson`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/Jacobson.lean, line 42](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/Jacobson.lean#L42).
 
 > Let `A` be a Noetherian ring of dimension `d` and let `I ≤ I'` be ideals of `A` with `I'`
 > inside the Jacobson radical. If the cohomological dimension of `I'` is less than `d`, then the
@@ -33,7 +33,7 @@ theorem cohomologicalDimension_lt_of_le_of_le_jacobson
 
 [Tag 0EB2](https://stacks.math.columbia.edu/tag/0EB2) in the Stacks Project.
 
-**`Stacks.LocalCohomology.cohomologicalDimension_lt_of_isZero_localCohomologyModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/HartshorneLichtenbaum.lean, line 363](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/HartshorneLichtenbaum.lean#L363).
+**`Stacks.LocalCohomology.cohomologicalDimension_lt_of_isZero_localCohomologyModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/HartshorneLichtenbaum.lean, line 363](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/HartshorneLichtenbaum.lean#L363).
 
 > **Stacks Project, Tag 0EB2 (Hartshorne–Lichtenbaum vanishing).** Let `A` be a Noetherian ring
 > of dimension `d` and let `I ⊆ A` be an ideal. If `H^d_{V(I)}(M) = 0` for some finite `A`-module
@@ -56,7 +56,7 @@ theorem cohomologicalDimension_lt_of_isZero_localCohomologyModule
 
 [Tag 0EB3](https://stacks.math.columbia.edu/tag/0EB3) in the Stacks Project.
 
-**`Stacks.LocalCohomology.surjective_smul_top_localCohomologyModule_of_avoidsTopMinimalPrimes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/TopDegreeDivisibility.lean, line 184](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/TopDegreeDivisibility.lean#L184).
+**`Stacks.LocalCohomology.surjective_smul_top_localCohomologyModule_of_avoidsTopMinimalPrimes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/TopDegreeDivisibility.lean, line 184](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/TopDegreeDivisibility.lean#L184).
 
 > **Stacks Project, Tag 0EB3.** Let `A` be a Noetherian ring of Krull dimension `d`, let
 > `I ⊆ A` be a finitely generated ideal, let `Y = V(I)` and let `M` be a finite `A`-module. An
@@ -80,7 +80,7 @@ theorem surjective_smul_top_localCohomologyModule_of_avoidsTopMinimalPrimes
 
 [Tag 0EB4](https://stacks.math.columbia.edu/tag/0EB4) in the Stacks Project.
 
-**`Stacks.LocalCohomology.cohomologicalDimension_lt_of_isZero_homology_localCohomologyDerived`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/DualizingComplexVanishing.lean, line 367](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/DualizingComplexVanishing.lean#L367).
+**`Stacks.LocalCohomology.cohomologicalDimension_lt_of_isZero_homology_localCohomologyDerived`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/DualizingComplexVanishing.lean, line 367](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/DualizingComplexVanishing.lean#L367).
 
 > **Stacks Project, Tag 0EB4.** Let `A` be a Noetherian local ring of dimension `d` with a
 > normalized dualizing complex `ω_A^•`, and let `I ⊆ A` be an ideal. If `H^0_{V(I)}(ω_A^•) = 0`,
@@ -110,7 +110,7 @@ theorem cohomologicalDimension_lt_of_isZero_homology_localCohomologyDerived
 
 [Tag 0EB5](https://stacks.math.columbia.edu/tag/0EB5) in the Stacks Project.
 
-**`Ideal.exists_symbolicPower_le_pow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/HartshorneLichtenbaumVanishing/Basic.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/HartshorneLichtenbaumVanishing/Basic.lean#L200).
+**`Ideal.exists_symbolicPower_le_pow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/HartshorneLichtenbaumVanishing/Basic.lean, line 200](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/HartshorneLichtenbaumVanishing/Basic.lean#L200).
 
 > **Stacks Project, Tag 0EB5.** Let `p` be a one-dimensional prime ideal in a complete
 > Noetherian local domain. For every `n ≥ 1`, some symbolic power `p⁽ᵐ⁾`, with `m ≥ n`, is
@@ -128,7 +128,7 @@ theorem exists_symbolicPower_le_pow [IsNoetherianRing A] [IsLocalRing A] [IsDoma
 
 [Tag 0EB6](https://stacks.math.columbia.edu/tag/0EB6) in the Stacks Project.
 
-**`Stacks.LocalCohomology.cohomologicalDimension_lt_of_minimalPrimes_adicCompletion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/HartshorneLichtenbaumCompletion.lean, line 501](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/HartshorneLichtenbaumCompletion.lean#L501).
+**`Stacks.LocalCohomology.cohomologicalDimension_lt_of_minimalPrimes_adicCompletion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/HartshorneLichtenbaumCompletion.lean, line 501](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/HartshorneLichtenbaumCompletion.lean#L501).
 
 > **Hartshorne–Lichtenbaum vanishing.** Let `A` be a Noetherian
 > local ring with completion `A^∧` and let `I ⊆ A` be an ideal such that
@@ -154,7 +154,7 @@ theorem cohomologicalDimension_lt_of_minimalPrimes_adicCompletion
 
 [Tag 0EB7](https://stacks.math.columbia.edu/tag/0EB7) in the Stacks Project.
 
-**`Stacks.LocalCohomology.cohomologicalDimension_lt_of_isExcellent_of_isNormalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/HartshorneLichtenbaumExcellent.lean, line 123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/HartshorneLichtenbaumExcellent.lean#L123). The attribute's comment: “cd(A, I) < dim(A)”.
+**`Stacks.LocalCohomology.cohomologicalDimension_lt_of_isExcellent_of_isNormalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/HartshorneLichtenbaumExcellent.lean, line 123](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/HartshorneLichtenbaumExcellent.lean#L123). The attribute's comment: “cd(A, I) < dim(A)”.
 
 > **[Stacks Project, Tag 0EB7].** Let `A` be an excellent normal Noetherian local ring of
 > dimension `d` and let `I ⊆ A` be an ideal with `dim V(I) ≥ 1`. Then the cohomological dimension
@@ -169,7 +169,7 @@ theorem cohomologicalDimension_lt_of_isExcellent_of_isNormalRing
     cohomologicalDimension A I (Ideal.fg_of_isNoetherianRing I) < (d : ℤ)
 ```
 
-**`Stacks.LocalCohomology.isAffineOpen_complZeroLocusOpen_of_isExcellent_of_isNormalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/HartshorneLichtenbaumExcellent.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/HartshorneLichtenbaumExcellent.lean#L149). The attribute's comment: “Spec(A) ∖ V(I) is affine when dim(A) = 2”.
+**`Stacks.LocalCohomology.isAffineOpen_complZeroLocusOpen_of_isExcellent_of_isNormalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/HartshorneLichtenbaumExcellent.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/CohomologicalDimension/HartshorneLichtenbaumExcellent.lean#L149). The attribute's comment: “Spec(A) ∖ V(I) is affine when dim(A) = 2”.
 
 > **[Stacks Project, Tag 0EB7].** For an excellent normal Noetherian local ring `A` of
 > dimension two and an ideal `I ⊆ A` with `dim V(I) ≥ 1`, the open `Spec A ∖ V(I)` is affine.
@@ -194,4 +194,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 51.16, Tag 0EB0](https://stacks.math.columbia.edu/tag/0EB0)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

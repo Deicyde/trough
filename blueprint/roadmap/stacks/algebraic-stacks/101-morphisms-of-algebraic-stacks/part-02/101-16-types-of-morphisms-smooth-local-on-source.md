@@ -8,13 +8,13 @@ proof: formalized
 
 # 101.16 Types of morphisms smooth local on source-and-target
 
-Section 101.16 of the Stacks Project, [Tag 06FL](https://stacks.math.columbia.edu/tag/06FL). 5 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 101.16 of the Stacks Project, [Tag 06FL](https://stacks.math.columbia.edu/tag/06FL). 5 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 06FM, a lemma
 
 [Tag 06FM](https://stacks.math.columbia.edu/tag/06FM) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.hasPropertyOnEverySmoothDiagram_iff_some`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalMorphismEveryConverse.lean, line 457](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalMorphismEveryConverse.lean#L457). The attribute's comment: “equivalence of parts (1) and (2)”.
+**`AlgebraicGeometry.Stack.hasPropertyOnEverySmoothDiagram_iff_some`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalMorphismEveryConverse.lean, line 457](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalMorphismEveryConverse.lean#L457). The attribute's comment: “equivalence of parts (1) and (2)”.
 
 > For a property `P` of morphisms of algebraic spaces over `S` which is smooth local on the
 > source-and-target and a 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks over `S`: every diagram of
@@ -33,7 +33,7 @@ theorem hasPropertyOnEverySmoothDiagram_iff_some
     HasPropertyOnEverySmoothDiagram B S hS P f ↔ HasPropertyOnSomeSmoothDiagram B S hS P f
 ```
 
-**`AlgebraicGeometry.Stack.hasPropertyOnSomeSmoothDiagram_iff_relative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalMorphismRelative.lean, line 667](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalMorphismRelative.lean#L667). The attribute's comment: “representable morphism”.
+**`AlgebraicGeometry.Stack.hasPropertyOnSomeSmoothDiagram_iff_relative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalMorphismRelative.lean, line 667](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalMorphismRelative.lean#L667). The attribute's comment: “representable morphism”.
 
 > **Stacks 06FM, the assertion for a representable morphism.** Let `P` be a property of
 > morphisms of algebraic spaces over `S` smooth local on the source-and-target which is moreover
@@ -61,7 +61,7 @@ theorem hasPropertyOnSomeSmoothDiagram_iff_relative
       HasRelativeProperty.{u, u, u + 1, v} B S hS (spaceProperty B S hS P) f hf
 ```
 
-**`AlgebraicGeometry.Stack.hasPropertyOnSomeSmoothDiagram_iff_represented`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalMorphismRepresented.lean, line 252](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalMorphismRepresented.lean#L252). The attribute's comment: “representable source and target”.
+**`AlgebraicGeometry.Stack.hasPropertyOnSomeSmoothDiagram_iff_represented`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalMorphismRepresented.lean, line 252](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalMorphismRepresented.lean#L252). The attribute's comment: “representable source and target”.
 
 > **Stacks 06FM, the assertion for representable source and target.** For a property `P` of
 > morphisms of algebraic spaces over `S` smooth local on the source-and-target, and a 1-morphism
@@ -95,7 +95,7 @@ theorem hasPropertyOnSomeSmoothDiagram_iff_represented
 
 [Tag 06FN](https://stacks.math.columbia.edu/tag/06FN) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.HasPropertyOnSomeSmoothDiagram`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalMorphism.lean, line 177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalMorphism.lean#L177). The attribute's comment: “the definition, as condition (2) of Stacks 06FM”.
+**`AlgebraicGeometry.Stack.HasPropertyOnSomeSmoothDiagram`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalMorphism.lean, line 177](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalMorphism.lean#L177). The attribute's comment: “the definition, as condition (2) of Stacks 06FM”.
 
 > **Condition (2) of Stacks 06FM, and the definition of Stacks 06FN.** There is a
 > 2-commutative square of algebraic spaces over `f` whose two vertical 1-morphisms are smooth,
@@ -120,7 +120,7 @@ abbrev HasPropertyOnSomeSmoothDiagram
 
 [Tag 06FP](https://stacks.math.columbia.edu/tag/06FP) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.hasPropertyOnSomeSmoothDiagram_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalMorphismComp.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalMorphismComp.lean#L132).
+**`AlgebraicGeometry.Stack.hasPropertyOnSomeSmoothDiagram_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalMorphismComp.lean, line 132](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalMorphismComp.lean#L132).
 
 > **Stacks 06FP.** Let `P` be a property of morphisms of algebraic spaces over `S` which is
 > smooth local on the source-and-target and whose restriction to algebraic spaces is stable under
@@ -154,7 +154,7 @@ theorem hasPropertyOnSomeSmoothDiagram_comp
     HasPropertyOnSomeSmoothDiagram B S hS P (f ≫ g)
 ```
 
-**`AlgebraicGeometry.Stack.hasPropertyOnSomeSmoothDiagram_comp_of_precomp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalMorphismCompGeneral.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalMorphismCompGeneral.lean#L168).
+**`AlgebraicGeometry.Stack.hasPropertyOnSomeSmoothDiagram_comp_of_precomp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalMorphismCompGeneral.lean, line 168](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalMorphismCompGeneral.lean#L168).
 
 > **Stacks 06FP.** Let `P` be a property of morphisms of algebraic spaces over `S` which is
 > stable under precomposition with a smooth morphism, stable under composition, and whose
@@ -195,7 +195,7 @@ theorem hasPropertyOnSomeSmoothDiagram_comp_of_precomp
 
 [Tag 06FQ](https://stacks.math.columbia.edu/tag/06FQ) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.hasPropertyOnSomeSmoothDiagram_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalMorphismBaseChange.lean, line 529](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalMorphismBaseChange.lean#L529).
+**`AlgebraicGeometry.Stack.hasPropertyOnSomeSmoothDiagram_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalMorphismBaseChange.lean, line 529](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalMorphismBaseChange.lean#L529).
 
 > A property of morphisms of algebraic spaces over `S` which is smooth local on the
 > source-and-target and whose restriction to algebraic spaces is stable under base change induces,
@@ -219,7 +219,7 @@ theorem hasPropertyOnSomeSmoothDiagram_baseChange
 
 [Tag 06PS](https://stacks.math.columbia.edu/tag/06PS) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.hasPropertyOnSomeSmoothDiagram_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalMorphismMonotone.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalMorphismMonotone.lean#L80).
+**`AlgebraicGeometry.Stack.hasPropertyOnSomeSmoothDiagram_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalMorphismMonotone.lean, line 80](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SmoothLocalMorphismMonotone.lean#L80).
 
 > **Stacks 06PS.** An implication between two properties of morphisms of algebraic spaces
 > over `S` induces the same implication for 1-morphisms of algebraic stacks over `S`: the
@@ -248,4 +248,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 101.16, Tag 06FL](https://stacks.math.columbia.edu/tag/06FL)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 82.31 The splitting principle
 
-Section 82.31 of the Stacks Project, [Tag 0ESB](https://stacks.math.columbia.edu/tag/0ESB). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 82.31 of the Stacks Project, [Tag 0ESB](https://stacks.math.columbia.edu/tag/0ESB). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0ESC, a lemma
 
 [Tag 0ESC](https://stacks.math.columbia.edu/tag/0ESC) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_projectiveBundleTower_hasInjectiveChowPullbacks_filtration`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/SplittingPrinciple.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/SplittingPrinciple.lean#L68).
+**`AlgebraicGeometry.Space.exists_projectiveBundleTower_hasInjectiveChowPullbacks_filtration`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/SplittingPrinciple.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/SplittingPrinciple.lean#L68).
 
 > **Stacks 0ESC, the splitting principle.** Let `X/B` be good and `ℰ_i`, `i ∈ ι` finite, finite
 > locally free `𝒪_X`-modules of ranks `r_i`. There are a good algebraic space `P/B` and a morphism
@@ -51,7 +51,7 @@ theorem exists_projectiveBundleTower_hasInjectiveChowPullbacks_filtration
 
 [Tag 0ESD](https://stacks.math.columbia.edu/tag/0ESD) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.PrivateChern.chernCap_moduleDual`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/PrivateChern/ChernClassDual.lean, line 49](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/PrivateChern/ChernClassDual.lean#L49).
+**`AlgebraicGeometry.Space.PrivateChern.chernCap_moduleDual`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/PrivateChern/ChernClassDual.lean, line 49](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/PrivateChern/ChernClassDual.lean#L49).
 
 > **Stacks 0ESD: the Chern classes of the dual.** Let `X/B` be good and `ℰ` a finite locally
 > free `𝒪_X`-module with dual `ℰ^∨ = ℋom(ℰ, 𝒪_X)`. Then `c_i(ℰ^∨) = (-1)^i c_i(ℰ)` in `A^i(X)`: for
@@ -77,7 +77,7 @@ theorem chernCap_moduleDual (E : Modules.{u, u} D.site D.base D.base_mem X hX.1)
 
 [Tag 0ESE](https://stacks.math.columbia.edu/tag/0ESE) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.PrivateChern.chernCap_tensorObj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ChernClassTensorUnconditional.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ChernClassTensorUnconditional.lean#L64). The attribute's comment: “c₂ corrected to the degree-two part of ∏ (1 + x\_i + y\_j); the printed c₂ is false”.
+**`AlgebraicGeometry.Space.PrivateChern.chernCap_tensorObj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ChernClassTensorUnconditional.lean, line 64](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ChernClassTensorUnconditional.lean#L64). The attribute's comment: “c₂ corrected to the degree-two part of ∏ (1 + x\_i + y\_j); the printed c₂ is false”.
 
 > **Stacks 0ESE.** For finite locally free `ℰ`, `ℱ` of ranks `r`, `s` on a good algebraic space
 > `X/B`:
@@ -166,4 +166,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 82.31, Tag 0ESB](https://stacks.math.columbia.edu/tag/0ESB)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

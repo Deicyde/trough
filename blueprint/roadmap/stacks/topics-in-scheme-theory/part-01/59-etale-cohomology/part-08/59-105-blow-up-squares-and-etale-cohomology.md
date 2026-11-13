@@ -8,13 +8,13 @@ proof: formalized
 
 # 59.105 Blow up squares and étale cohomology
 
-Section 59.105 of the Stacks Project, [Tag 0EW4](https://stacks.math.columbia.edu/tag/0EW4). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 59.105 of the Stacks Project, [Tag 0EW4](https://stacks.math.columbia.edu/tag/0EW4). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0EW5, a lemma
 
 [Tag 0EW5](https://stacks.math.columbia.edu/tag/0EW5) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_distTriang_blowUp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BlowUpSquare/BlowUpTriangle.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BlowUpSquare/BlowUpTriangle.lean#L77).
+**`AlgebraicGeometry.exists_distTriang_blowUp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BlowUpSquare/BlowUpTriangle.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BlowUpSquare/BlowUpTriangle.lean#L77).
 
 > **Stacks Project, Tag 0EW5.** Let `X` be a scheme and `Z ⊆ X` the closed subscheme cut out by
 > a quasi-coherent ideal `I` of finite type (finitely generated on every affine open), with blowup
@@ -56,7 +56,7 @@ public theorem exists_distTriang_blowUp {X : Scheme.{u}} (I : X.IdealSheafData)
 
 [Tag 0EW3](https://stacks.math.columbia.edu/tag/0EW3) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_longExactSequence_blowUp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BlowUpSquare/BlowUpLongExactSequence.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BlowUpSquare/BlowUpLongExactSequence.lean#L72).
+**`AlgebraicGeometry.exists_longExactSequence_blowUp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BlowUpSquare/BlowUpLongExactSequence.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BlowUpSquare/BlowUpLongExactSequence.lean#L72).
 
 > **Stacks Project, Tag 0EW3.** Let `X` be a scheme, `K` an object of `D⁺(X_étale)` (a complex
 > of abelian sheaves on the small étale site, bounded below: `K.IsGE n`) with torsion cohomology
@@ -124,7 +124,7 @@ public theorem exists_longExactSequence_blowUp {X : Scheme.{u}} (I : X.IdealShea
 
 [Tag 0EW6](https://stacks.math.columbia.edu/tag/0EW6) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_gluing_blowUp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BlowUpSquare/BlowUpGluing.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BlowUpSquare/BlowUpGluing.lean#L92).
+**`AlgebraicGeometry.exists_gluing_blowUp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/BlowUpSquare/BlowUpGluing.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/BlowUpSquare/BlowUpGluing.lean#L92).
 
 > **Stacks Project, Tag 0EW6.** Let `X` be a scheme and `Z ⊆ X` the closed subscheme cut out by
 > a quasi-coherent ideal `I` of finite type (finitely generated on every affine open), with blowup
@@ -193,4 +193,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 59.105, Tag 0EW4](https://stacks.math.columbia.edu/tag/0EW4)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

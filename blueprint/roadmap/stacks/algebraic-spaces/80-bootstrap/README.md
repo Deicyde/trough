@@ -1,6 +1,6 @@
 # 80 Bootstrap
 
-Chapter 80 of the Stacks Project, *Bootstrap*, [Tag 046A](https://stacks.math.columbia.edu/tag/046A): the 10 sections of its 12 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 38 tags are carried by 76 declarations of the repository (all in StacksFrontier) and 2 registered declarations.
+Chapter 80 of the Stacks Project, *Bootstrap*, [Tag 046A](https://stacks.math.columbia.edu/tag/046A): the 10 sections of its 12 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 38 tags are carried by 73 declarations of the repository (all in StacksFrontier) and 2 registered declarations.
 
 - [80.3 Morphisms representable by algebraic spaces](80-3-morphisms-representable-by-algebraic-spaces.md)
 - [80.4 Properties of maps of presheaves representable by algebraic spaces](80-4-properties-of-maps-of-presheaves-representa.md)

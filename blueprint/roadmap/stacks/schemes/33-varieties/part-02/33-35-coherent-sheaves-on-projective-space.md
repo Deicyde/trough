@@ -8,13 +8,13 @@ proof: formalized
 
 # 33.35 Coherent sheaves on projective space
 
-Section 33.35 of the Stacks Project, [Tag 089X](https://stacks.math.columbia.edu/tag/089X). 14 tags here are carried by 23 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 33.35 of the Stacks Project, [Tag 089X](https://stacks.math.columbia.edu/tag/089X). 14 tags here are carried by 21 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 089Z, a lemma
 
 [Tag 089Z](https://stacks.math.columbia.edu/tag/089Z) in the Stacks Project.
 
-**`Stacks.ProjectiveSpace.exists_iso_projectiveSpace_hyperplane`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveSpace/HyperplaneIsProjectiveSpace.lean, line 530](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjectiveSpace/HyperplaneIsProjectiveSpace.lean#L530). The attribute's comment: “for the hyperplane presented by a nonzero degree-one form”.
+**`Stacks.ProjectiveSpace.exists_iso_projectiveSpace_hyperplane`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveSpace/HyperplaneIsProjectiveSpace.lean, line 530](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjectiveSpace/HyperplaneIsProjectiveSpace.lean#L530). The attribute's comment: “for the hyperplane presented by a nonzero degree-one form”.
 
 > **A hyperplane in `ℙⁿ_k` is `ℙ^{n-1}_k`, and `𝒪(1)` pulls back to `𝒪(1)`.**
 >
@@ -51,7 +51,7 @@ theorem exists_iso_projectiveSpace_hyperplane
             ↥(MvPolynomial.homogeneousSubmodule (Fin (m + 1)) k 0)))
 ```
 
-**`Stacks.ProjectiveSpace.exists_iso_projectiveSpace_hyperplaneOfSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveSpace/HyperplaneIsProjectiveSpace.lean, line 575](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjectiveSpace/HyperplaneIsProjectiveSpace.lean#L575).
+**`Stacks.ProjectiveSpace.exists_iso_projectiveSpace_hyperplaneOfSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveSpace/HyperplaneIsProjectiveSpace.lean, line 575](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjectiveSpace/HyperplaneIsProjectiveSpace.lean#L575).
 
 > **A hyperplane in `ℙⁿ_k` is `ℙ^{n-1}_k`, and `𝒪(1)` pulls back to `𝒪(1)`.**
 >
@@ -92,7 +92,7 @@ theorem exists_iso_projectiveSpace_hyperplaneOfSection
 
 [Tag 08A0](https://stacks.math.columbia.edu/tag/08A0) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.ProjectiveSpaceHyperplaneSection.exists_homogeneousSection_nonvanishing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjectiveSpaceHyperplaneSection.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjectiveSpaceHyperplaneSection.lean#L106). The attribute's comment: “the choice of the hyperplane section — a nonzero `s` vanishing at no associated point of `ℱ`, which is the one step needing `k` infinite; not the exact sequence”.
+**`Stacks.AlgebraicGeometry.ProjectiveSpaceHyperplaneSection.exists_homogeneousSection_nonvanishing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjectiveSpaceHyperplaneSection.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjectiveSpaceHyperplaneSection.lean#L106). The attribute's comment: “the choice of the hyperplane section — a nonzero `s` vanishing at no associated point of `ℱ`, which is the one step needing `k` infinite; not the exact sequence”.
 
 > Let `k` be an infinite field and let `ℱ` be a coherent module on `ℙⁿ_k = Proj k[T₀, …, Tₙ]`.
 > Then some nonzero linear form `f` gives a nonzero global section `f / 1` of `𝒪(1)` whose
@@ -111,7 +111,7 @@ theorem exists_homogeneousSection_nonvanishing [Infinite k]
             Set ↥(AlgebraicGeometry.Proj (polyGrading k n)))
 ```
 
-**`Stacks.AlgebraicGeometry.ProjectiveSpaceHyperplaneSection.shortExact_hyperplaneUnit_of_nonvanishing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjectiveSpaceHyperplaneSection.lean, line 218](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjectiveSpaceHyperplaneSection.lean#L218). The attribute's comment: “the short exact sequence for an arbitrary coherent module”.
+**`Stacks.AlgebraicGeometry.ProjectiveSpaceHyperplaneSection.shortExact_hyperplaneUnit_of_nonvanishing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjectiveSpaceHyperplaneSection.lean, line 218](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjectiveSpaceHyperplaneSection.lean#L218). The attribute's comment: “the short exact sequence for an arbitrary coherent module”.
 
 > Let `S` be a scheme with `ℙⁿ_S` locally Noetherian, let `ℱ` be an `𝒪`-module on `ℙⁿ_S` with
 > `ℱ(-1)` and `ℱ(-1) ⊗ 𝒪(1)` quasi-coherent, and let `s` be a global section of `𝒪(1)` that does
@@ -140,7 +140,7 @@ theorem shortExact_hyperplaneUnit_of_nonvanishing (S : Scheme.{u})
         (hyperplaneUnit n S F s) h).ShortExact
 ```
 
-**`AlgebraicGeometry.exists_section_shortExact_hyperplaneUnit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Projective/HyperplaneSequenceCoherent.lean, line 128](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Projective/HyperplaneSequenceCoherent.lean#L128).
+**`AlgebraicGeometry.exists_section_shortExact_hyperplaneUnit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Projective/HyperplaneSequenceCoherent.lean, line 128](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Projective/HyperplaneSequenceCoherent.lean#L128).
 
 > **[Stacks, Tag 08A0].** Let `k` be an infinite field and let `ℱ` be a coherent sheaf on
 > `ℙⁿ_k`. Then there is a nonzero global section `s` of `𝒪(1)` such that, with `i : H ⟶ ℙⁿ_k` the
@@ -173,7 +173,7 @@ theorem exists_section_shortExact_hyperplaneUnit (k : Type u) [Field k] [Infinit
 
 [Tag 08A1](https://stacks.math.columbia.edu/tag/08A1) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.ProjectiveSpaceSectionFiniteFamily.exists_section_forall_shortExact_coherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Projective/HyperplaneSequenceFiniteFamily.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Projective/HyperplaneSequenceFiniteFamily.lean#L116). The attribute's comment: “one section of O(1) works for a whole finite family of coherent modules”.
+**`Stacks.AlgebraicGeometry.ProjectiveSpaceSectionFiniteFamily.exists_section_forall_shortExact_coherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Projective/HyperplaneSequenceFiniteFamily.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Projective/HyperplaneSequenceFiniteFamily.lean#L116). The attribute's comment: “one section of O(1) works for a whole finite family of coherent modules”.
 
 > **[Stacks, Tag 08A1].** Let `k` be an infinite field, let `n ≥ 1` and let `ℱ_i` be a finite
 > family of coherent `𝒪`-modules on `ℙⁿ_k`. Then a single nonzero global section `s` of `𝒪(1)`
@@ -206,7 +206,7 @@ theorem exists_section_forall_shortExact_coherent {k : Type u} [Field k] [Infini
 
 [Tag 0EGK](https://stacks.math.columbia.edu/tag/0EGK) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.HyperplaneTwistSequence.pullbackTwistModuleIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveSpace/HyperplaneTwistSequence.lean, line 362](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjectiveSpace/HyperplaneTwistSequence.lean#L362). The attribute's comment: “the twist of a module restricted to the hyperplane: i^*(F(d)) = (i^*F)(d)”.
+**`Stacks.AlgebraicGeometry.HyperplaneTwistSequence.pullbackTwistModuleIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveSpace/HyperplaneTwistSequence.lean, line 362](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjectiveSpace/HyperplaneTwistSequence.lean#L362). The attribute's comment: “the twist of a module restricted to the hyperplane: i^*(F(d)) = (i^*F)(d)”.
 
 > **[Stacks, Tag 0EGK], the twist of a module restricted to the closed subscheme.**
 > `i^*(ℱ(d)) ≅ (i^*ℱ)(d)`, the twist on `H` being taken with respect to `i^*L`.  This is
@@ -220,7 +220,7 @@ def pullbackTwistModuleIso (d : ℤ) :
         ((Scheme.Modules.pullback i).obj F) d
 ```
 
-**`Stacks.AlgebraicGeometry.HyperplaneTwistSequence.pushforwardTwistModuleIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveSpace/HyperplaneTwistSequence.lean, line 379](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjectiveSpace/HyperplaneTwistSequence.lean#L379). The attribute's comment: “the projection formula clause: i\_*(G(d)) = i\_*G ⊗ O(d), by [Stacks, Tag 01E8] at a closed immersion”.
+**`Stacks.AlgebraicGeometry.HyperplaneTwistSequence.pushforwardTwistModuleIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveSpace/HyperplaneTwistSequence.lean, line 379](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjectiveSpace/HyperplaneTwistSequence.lean#L379). The attribute's comment: “the projection formula clause: i\_*(G(d)) = i\_*G ⊗ O(d), by [Stacks, Tag 01E8] at a closed immersion”.
 
 > **[Stacks, Tag 0EGK], the projection formula clause.**
 > `i_*𝒢 ⊗_{𝒪_X} L^{⊗ d} ≅ i_*(𝒢(d))`, which is what makes the third term of the twisted sequence
@@ -239,7 +239,7 @@ def pushforwardTwistModuleIso (d : ℤ) :
         (twistModule Hy ((Scheme.Modules.pullback i).obj L) G d)
 ```
 
-**`AlgebraicGeometry.exists_iso_pullbackTwistOver_zeroScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Projective/HyperplaneTwistUnconditional.lean, line 121](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Projective/HyperplaneTwistUnconditional.lean#L121). The attribute's comment: “the Serre twists on the hyperplane in every degree, the degree-one case being this chapter's own [Stacks, Tag 089Z] on the base-change model”.
+**`AlgebraicGeometry.exists_iso_pullbackTwistOver_zeroScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Projective/HyperplaneTwistUnconditional.lean, line 121](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Projective/HyperplaneTwistUnconditional.lean#L121). The attribute's comment: “the Serre twists on the hyperplane in every degree, the degree-one case being this chapter's own [Stacks, Tag 089Z] on the base-change model”.
 
 > **[Stacks, Tag 0EGK], the Serre twists on a hyperplane of `ℙ^{m+1}_k`, in every integer
 > degree.**
@@ -269,7 +269,7 @@ theorem exists_iso_pullbackTwistOver_zeroScheme (k : Type u) [Field k] (m : ℕ)
           ≅ twistOver m (Spec (CommRingCat.of k)) d)
 ```
 
-**`AlgebraicGeometry.exists_hyperplane_twistedSequence_cohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Projective/HyperplaneTwistUnconditional.lean, line 434](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Projective/HyperplaneTwistUnconditional.lean#L434). The attribute's comment: “the whole remark in the situation of Tags 089Z and 08A0: the hyperplane is P^m\_k with O\_H(d) = i^*O(d) in every degree, the twisted sequence 0 → F(d-1) → F(d) → i\_*(G(d)) → 0 is short exact for every d, and its long exact cohomology sequence has H^j(H, G(d)) as its third term”.
+**`AlgebraicGeometry.exists_hyperplane_twistedSequence_cohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Projective/HyperplaneTwistUnconditional.lean, line 434](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Projective/HyperplaneTwistUnconditional.lean#L434). The attribute's comment: “the whole remark in the situation of Tags 089Z and 08A0: the hyperplane is P^m\_k with O\_H(d) = i^*O(d) in every degree, the twisted sequence 0 → F(d-1) → F(d) → i\_*(G(d)) → 0 is short exact for every d, and its long exact cohomology sequence has H^j(H, G(d)) as its third term”.
 
 > **[Stacks, Tag 0EGK] in full.** Let `k` be an infinite field and let `ℱ` be a coherent sheaf
 > on `ℙ^{m+1}_k`. Then there are a nonzero global section `s` of `𝒪(1)`, an isomorphism
@@ -347,7 +347,7 @@ theorem exists_hyperplane_twistedSequence_cohomology (k : Type u) [Field k] [Inf
 
 [Tag 08A3](https://stacks.math.columbia.edu/tag/08A3) in the Stacks Project.
 
-**`AlgebraicGeometry.IsMRegular`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Projective/Regularity.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Projective/Regularity.lean#L53).
+**`AlgebraicGeometry.IsMRegular`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Projective/Regularity.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Projective/Regularity.lean#L53).
 
 > A coherent sheaf on projective `n`-space over `k` is `m`-regular if its
 > cohomology in degree `i` vanishes after the twist by `m - i`, for `1 ≤ i ≤ n`.
@@ -361,7 +361,7 @@ public noncomputable abbrev IsMRegular (k : Type u) [Field k] (n : ℕ)
 
 [Tag 08A4](https://stacks.math.columbia.edu/tag/08A4) in the Stacks Project.
 
-**`AlgebraicGeometry.isMRegular_iff_fieldExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveSpaceBaseChange/FieldExtension.lean, line 267](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjectiveSpaceBaseChange/FieldExtension.lean#L267).
+**`AlgebraicGeometry.isMRegular_iff_fieldExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveSpaceBaseChange/FieldExtension.lean, line 267](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjectiveSpaceBaseChange/FieldExtension.lean#L267).
 
 > **[Stacks, Tag 08A4].** Let `k ⊆ K` be an extension of fields and let `ℱ` be a coherent sheaf
 > on `ℙⁿ_k`. Then `ℱ` is `m`-regular if and only if its pullback to `ℙⁿ_K` is `m`-regular.
@@ -383,7 +383,7 @@ public theorem isMRegular_iff_fieldExtension (k K : Type u) [Field k] [Field K] 
 
 [Tag 08A5](https://stacks.math.columbia.edu/tag/08A5) in the Stacks Project.
 
-**`AlgebraicGeometry.isMRegular_hyperplaneRestriction_of_nonvanishing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Projective/HyperplaneRestrictionRegularity.lean, line 304](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Projective/HyperplaneRestrictionRegularity.lean#L304). The attribute's comment: “in the situation of Tag 08A0, for every nonzero section s of O(1) avoiding the associated points of F: the sequence of Tag 08A0 is short exact, H(s) ≅ P^\{n-1}\_k as in Tag 089Z, and along every such identification the restriction of an m-regular F is m-regular”.
+**`AlgebraicGeometry.isMRegular_hyperplaneRestriction_of_nonvanishing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Projective/HyperplaneRestrictionRegularity.lean, line 304](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Projective/HyperplaneRestrictionRegularity.lean#L304). The attribute's comment: “in the situation of Tag 08A0, for every nonzero section s of O(1) avoiding the associated points of F: the sequence of Tag 08A0 is short exact, H(s) ≅ P^\{n-1}\_k as in Tag 089Z, and along every such identification the restriction of an m-regular F is m-regular”.
 
 > **[Stacks, Tag 08A5].** Let `k` be a field, `n ≥ 1`, `ℱ` a coherent sheaf on `ℙⁿ_k`, and let
 > `s` be a **nonzero** global section of `𝒪(1)` vanishing at no associated point of `ℱ` — the
@@ -447,7 +447,7 @@ theorem isMRegular_hyperplaneRestriction_of_nonvanishing (k : Type u) [Field k] 
 
 [Tag 08A6](https://stacks.math.columbia.edu/tag/08A6) in the Stacks Project.
 
-**`AlgebraicGeometry.isMRegular_add_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Projective/HyperplaneRegularity.lean, line 276](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Projective/HyperplaneRegularity.lean#L276). The attribute's comment: “an m-regular coherent sheaf on projective space is (m+1)-regular”.
+**`AlgebraicGeometry.isMRegular_add_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Projective/HyperplaneRegularity.lean, line 276](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Projective/HyperplaneRegularity.lean#L276). The attribute's comment: “an m-regular coherent sheaf on projective space is (m+1)-regular”.
 
 > **[Stacks, Tag 08A6].** Let `k` be a field, let `n ≥ 0` and let `ℱ` be a coherent sheaf on
 > `ℙⁿ_k`. If `ℱ` is `m`-regular then `ℱ` is `(m + 1)`-regular.
@@ -472,7 +472,7 @@ public theorem isMRegular_add_one
 
 [Tag 08A7](https://stacks.math.columbia.edu/tag/08A7) in the Stacks Project.
 
-**`AlgebraicGeometry.span_mulSections_eq_top_of_isMRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Projective/RegularitySectionMultiplication.lean, line 386](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Projective/RegularitySectionMultiplication.lean#L386). The attribute's comment: “for an arbitrary field, with the hyperplane restriction data of Tags 08A0, 0EGK and 089Z carried in `HyperplaneRestrictionPackage`; the induction on `n`, the base case and the use of `m`-regularity to lift a section off the hyperplane are proved. Over an infinite field every clause of that package but `liftSection` is proved too -- see `AlgebraicGeometry.exists_hyperplaneRestrictionData`. Surjectivity out of the tensor product is stated as the `k`-span of the products being `⊤`.”.
+**`AlgebraicGeometry.span_mulSections_eq_top_of_isMRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Projective/RegularitySectionMultiplication.lean, line 386](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Projective/RegularitySectionMultiplication.lean#L386). The attribute's comment: “for an arbitrary field, with the hyperplane restriction data of Tags 08A0, 0EGK and 089Z carried in `HyperplaneRestrictionPackage`; the induction on `n`, the base case and the use of `m`-regularity to lift a section off the hyperplane are proved. Over an infinite field every clause of that package but `liftSection` is proved too -- see `AlgebraicGeometry.exists_hyperplaneRestrictionData`. Surjectivity out of the tensor product is stated as the `k`-span of the products being `⊤`.”.
 
 > **[Stacks, Tag 08A7].** Let `k` be a field, `n ≥ 0` and `ℱ` a coherent sheaf on `ℙⁿ_k`. If
 > `ℱ` is `m`-regular then the multiplication map
@@ -496,7 +496,7 @@ theorem span_mulSections_eq_top_of_isMRegular (k : Type u) [Field k]
       @IsMRegular k _ n F hFc m → mulSectionsSpan k n F m = ⊤
 ```
 
-**`AlgebraicGeometry.span_mulSections_eq_top_of_isMRegular_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Projective/RegularitySectionMultiplicationArbitraryField.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Projective/RegularitySectionMultiplicationArbitraryField.lean#L65). References: SGA 6 XIII (1.3), “(ii), special case”.
+**`AlgebraicGeometry.span_mulSections_eq_top_of_isMRegular_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Projective/RegularitySectionMultiplicationArbitraryField.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Projective/RegularitySectionMultiplicationArbitraryField.lean#L65). References: SGA 6 XIII (1.3), “(ii), special case”.
 
 > **[Stacks, Tag 08A7] over an arbitrary field.** Let `k` be a field, `n ≥ 0`, and let `ℱ` be a
 > coherent sheaf on `ℙⁿ_k` which is `m`-regular. Then the `k`-span of the products of global
@@ -526,7 +526,7 @@ theorem span_mulSections_eq_top_of_isMRegular_field (k : Type u) [Field k] (n : 
 
 [Tag 08A8](https://stacks.math.columbia.edu/tag/08A8) in the Stacks Project.
 
-**`AlgebraicGeometry.isGeneratedByGlobalSections_projectiveTwist_of_isMRegular_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Projective/RegularityGlobalGenerationUnconditional.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Projective/RegularityGlobalGenerationUnconditional.lean#L97). The attribute's comment: “an m-regular coherent sheaf on projective space over a field is globally generated after the twist by m. Everything the source's proof uses is proved: that `ℱ(d)` is globally generated for all `d ≫ 0` is `Stacks.ProjectiveSpace.exists_isGeneratedByGlobalSections_projectiveTwist_of_isCoherent`, clause (7) of Tag 01Q3 read through the comparison of `projectiveTwist` with the tensor powers of the hyperplane sheaf; the surjectivity of the multiplication map on global sections is Tag 08A7 over an arbitrary field, `AlgebraicGeometry.span_mulSections_eq_top_of_isMRegular_field`; and the regularity at each twist the descent passes through is Tag 08A6, `AlgebraicGeometry.isMRegular_add_one`. The descent is organized as a sequence of single-twist steps rather than the source's one-shot use of degree-`d-m` forms, so that only the degree-one multiplication of Tag 08A7 is needed. Globally generated is `SheafOfModules.IsGeneratedByGlobalSections`, Stacks 03DE (3).”. References: SGA 6 XIII (1.3), “(iii), special case”.
+**`AlgebraicGeometry.isGeneratedByGlobalSections_projectiveTwist_of_isMRegular_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Projective/RegularityGlobalGenerationUnconditional.lean, line 97](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Projective/RegularityGlobalGenerationUnconditional.lean#L97). The attribute's comment: “an m-regular coherent sheaf on projective space over a field is globally generated after the twist by m. Everything the source's proof uses is proved: that `ℱ(d)` is globally generated for all `d ≫ 0` is `Stacks.ProjectiveSpace.exists_isGeneratedByGlobalSections_projectiveTwist_of_isCoherent`, clause (7) of Tag 01Q3 read through the comparison of `projectiveTwist` with the tensor powers of the hyperplane sheaf; the surjectivity of the multiplication map on global sections is Tag 08A7 over an arbitrary field, `AlgebraicGeometry.span_mulSections_eq_top_of_isMRegular_field`; and the regularity at each twist the descent passes through is Tag 08A6, `AlgebraicGeometry.isMRegular_add_one`. The descent is organized as a sequence of single-twist steps rather than the source's one-shot use of degree-`d-m` forms, each step using the degree-one multiplication of Tag 08A7. Globally generated is `SheafOfModules.IsGeneratedByGlobalSections`, Stacks 03DE (3).”. References: SGA 6 XIII (1.3), “(iii), special case”.
 
 > Let `k` be a field, let `n ≥ 0`, and let `ℱ` be a coherent sheaf on `ℙⁿ_k`. If `ℱ` is
 > `m`-regular then `ℱ(m)` is globally generated.
@@ -542,7 +542,7 @@ theorem isGeneratedByGlobalSections_projectiveTwist_of_isMRegular_field (k : Typ
 
 [Tag 08AC](https://stacks.math.columbia.edu/tag/08AC) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_polynomial_eval_eq_hilbertPolynomial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/EulerChar/HilbertPolynomialFiniteDetermination.lean, line 234](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/EulerChar/HilbertPolynomialFiniteDetermination.lean#L234).
+**`AlgebraicGeometry.exists_polynomial_eval_eq_hilbertPolynomial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/EulerChar/HilbertPolynomialFiniteDetermination.lean, line 234](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/EulerChar/HilbertPolynomialFiniteDetermination.lean#L234).
 
 > **[Stacks, Tag 08AC].** Let `k` be a field, let `n ≥ 0` and let `ℱ` be a coherent sheaf on
 > `ℙⁿ_k`. Then the function `d ↦ χ(ℙⁿ_k, ℱ(d))` is a polynomial: there is a `P ∈ ℚ[X]` with
@@ -563,61 +563,11 @@ theorem exists_polynomial_eval_eq_hilbertPolynomial (k : Type u) [Field k] (n : 
     ∃ P : Polynomial ℚ, ∀ d : ℤ, (hilbertPolynomial k n F d : ℚ) = P.eval (d : ℚ)
 ```
 
-**`AlgebraicGeometry.isNumericalPolynomial_hilbertPolynomial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/EulerChar/HilbertPolynomialNumerical.lean, line 369](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/EulerChar/HilbertPolynomialNumerical.lean#L369). The attribute's comment: “the induction on n of the source's proof together with its base case, the triviality of the twists on P^0; its one geometric input is the hypothesis hstep, the hyperplane difference formula of Stacks 0EGK, 08A0, 089Z and 08AA, which is discharged by AlgebraicGeometry.exists\_coherent\_hilbertPolynomial\_sub\_eq”.
-
-> **[Stacks, Tag 08AC], granted the hyperplane difference formula.** For a field `k`, an
-> integer `n ≥ 0` and a coherent sheaf `ℱ` on `ℙⁿ_k`, the function `d ↦ χ(ℙⁿ_k, ℱ(d))` is a
-> numerical polynomial.
->
-> The one hypothesis is the geometric fact the source's inductive step consumes, for the given
-> field: for a coherent sheaf on `ℙ^{m+1}_k` there is a coherent sheaf on `ℙ^m_k` whose Hilbert
-> polynomial is the first difference of the given one — the displayed equation of the source's
-> proof, read through the identification of the hyperplane with `ℙ^m_k`. Everything else is proved:
-> the base case is constant because the twists on `ℙ⁰_k` are trivial
-> (`AlgebraicGeometry.projectiveTwistZeroIso`), the induction on `n` is carried out, and
-> [Stacks, Tag 00JZ] in the form `main_00JZ` turns each difference back into the function.
->
-> `hstep` is itself a theorem, `AlgebraicGeometry.exists_coherent_hilbertPolynomial_sub_eq`; the
-> hypothesis-free form of the tag is
-> `AlgebraicGeometry.isNumericalPolynomial_hilbertPolynomial'`.
-
-```lean
-public theorem isNumericalPolynomial_hilbertPolynomial
-    (hstep : ∀ (m : ℕ) (G : (projectiveSpaceOverRing (m + 1) (.of k)).Modules)
-      (_ : G.IsCoherent), ∃ (H : (projectiveSpaceOverRing m (.of k)).Modules)
-        (hH : H.IsCoherent), ∀ d : ℤ,
-          hilbertPolynomial k (m + 1) G d - hilbertPolynomial k (m + 1) G (d - 1) =
-            @hilbertPolynomial k _ m H hH d)
-    (F : (projectiveSpaceOverRing n (.of k)).Modules) [F.IsCoherent] :
-    IsNumericalPolynomial (hilbertPolynomial k n F)
-```
-
-**`AlgebraicGeometry.isNumericalPolynomial_hilbertPolynomial'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/EulerChar/HilbertPolynomialPolynomial.lean, line 243](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/EulerChar/HilbertPolynomialPolynomial.lean#L243). The attribute's comment: “the conclusion in the eventual reading of Tag 00JX: the Hilbert polynomial agrees with a sum of binomial coefficients for d >> 0; the tag's own every-integer reading is AlgebraicGeometry.exists\_polynomial\_eval\_eq\_hilbertPolynomial”.
-
-> **[Stacks, Tag 08AC] in its eventual reading.** For a field `k`, an integer `n ≥ 0` and a
-> coherent sheaf `ℱ` on `ℙⁿ_k`, the function `d ↦ χ(ℙⁿ_k, ℱ(d))` is a numerical polynomial.
-> **No hypothesis.**
->
-> The source reduces to an infinite base field by [Stacks, Tag 08AB], and so does this proof: the
-> extension is `RatFunc k`, the Hilbert polynomial is unchanged by it
-> (`AlgebraicGeometry.hilbertPolynomial_pullback_fieldExtension`), and over an infinite field the
-> statement is `AlgebraicGeometry.isNumericalPolynomial_hilbertPolynomial_of_infinite`.
->
-> `IsNumericalPolynomial` is [Stacks, Tag 00JX]'s notion, which constrains the function only for
-> `d ≫ 0`. The tag as stated — a polynomial identity at every `d ∈ ℤ` — is
-> `AlgebraicGeometry.exists_polynomial_eval_eq_hilbertPolynomial`.
-
-```lean
-public theorem isNumericalPolynomial_hilbertPolynomial' (k : Type u) [Field k] (n : ℕ)
-    (F : (projectiveSpaceOverRing n (CommRingCat.of k)).Modules) [F.IsCoherent] :
-    IsNumericalPolynomial (hilbertPolynomial k n F)
-```
-
 ## Tag 08AD, a definition
 
 [Tag 08AD](https://stacks.math.columbia.edu/tag/08AD) in the Stacks Project.
 
-**`AlgebraicGeometry.hilbertPolynomial`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/EulerChar/HilbertPolynomial.lean, line 43](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/EulerChar/HilbertPolynomial.lean#L43). References: SGA 6 XIII (6.1), “partial”.
+**`AlgebraicGeometry.hilbertPolynomial`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/EulerChar/HilbertPolynomial.lean, line 43](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/EulerChar/HilbertPolynomial.lean#L43). References: SGA 6 XIII (6.1), “partial”.
 
 > The Hilbert polynomial, viewed as an integer-valued function of the twist
 > degree, of a coherent sheaf on projective space over a field.
@@ -631,7 +581,7 @@ noncomputable def hilbertPolynomial (k : Type u) [Field k] (n : ℕ)
 
 [Tag 08AE](https://stacks.math.columbia.edu/tag/08AE) in the Stacks Project.
 
-**`Stacks.ProjectiveSpace.Cohomology.exists_eval_eq_finrank_cohomologyOverField_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveSpace/Cohomology/HilbertPolynomial.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjectiveSpace/Cohomology/HilbertPolynomial.lean#L126).
+**`Stacks.ProjectiveSpace.Cohomology.exists_eval_eq_finrank_cohomologyOverField_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveSpace/Cohomology/HilbertPolynomial.lean, line 126](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjectiveSpace/Cohomology/HilbertPolynomial.lean#L126).
 
 > **[Stacks, Tag 08AE].** Let `k` be a field, let `n ≥ 0`, let `ℱ` be a coherent sheaf on
 > `ℙⁿ_k = Proj k[T₀, …, Tₙ]` and let `P ∈ ℚ[t]` be its Hilbert polynomial, that is, a polynomial
@@ -666,7 +616,7 @@ public theorem exists_eval_eq_finrank_cohomologyOverField_zero (k : Type u) [Fie
 
 [Tag 08AG](https://stacks.math.columbia.edu/tag/08AG) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isMRegular_kernel_free_of_hilbertPolynomial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Projective/KernelRegularityInduction.lean, line 273](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Projective/KernelRegularityInduction.lean#L273). The attribute's comment: “with the free sheaf of the source, the short exact sequence read as an epimorphism from it, and the Hilbert polynomial of Tag 08AD compared with a rational polynomial at every integer”.
+**`AlgebraicGeometry.exists_isMRegular_kernel_free_of_hilbertPolynomial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Projective/KernelRegularityInduction.lean, line 273](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Projective/KernelRegularityInduction.lean#L273). The attribute's comment: “with the free sheaf of the source, the short exact sequence read as an epimorphism from it, and the Hilbert polynomial of Tag 08AD compared with a rational polynomial at every integer”.
 
 > **[Stacks, Tag 08AG].** Let `n ≥ 0`, `r ≥ 1` and `P ∈ ℚ[t]`. There is a single integer `m`
 > such that for **every** field `k`, every coherent sheaf `𝒬` on `ℙⁿ_k` with Hilbert polynomial `P`
@@ -686,7 +636,7 @@ public theorem exists_eval_eq_finrank_cohomologyOverField_zero (k : Type u) [Fie
 > `AlgebraicGeometry.isMRegular_iff_fieldExtension`.
 
 ```lean
-theorem exists_isMRegular_kernel_free_of_hilbertPolynomial (n r : ℕ) (hr : 1 ≤ r)
+theorem exists_isMRegular_kernel_free_of_hilbertPolynomial (n r : ℕ)
     (P : Polynomial ℚ) :
     ∃ m : ℤ, ∀ (k : Type u) [Field k]
       (Q : (projectiveSpaceOverRing n (.of k)).Modules) [Q.IsCoherent]
@@ -702,4 +652,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 33.35, Tag 089X](https://stacks.math.columbia.edu/tag/089X)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

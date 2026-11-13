@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: Stacks.AlgebraicGeometry.ProjChartGradedTripleTag.tag01NK, Stacks.AlgebraicGeometry.ProjInvertibleLocusEscape.not_range_subset_whereInvertible
+lean: Stacks.AlgebraicGeometry.ProjChartGradedTripleTag.tag01NK, Stacks.AlgebraicGeometry.ProjInvertibleLocusEscape.mapHom_coverHom_surjective_and_not_range_subset_twistInvertibleLocus
 statement: formalized
 proof: formalized
 ---
 
 # 27.14 Invertible sheaves and morphisms into Proj
 
-Section 27.14 of the Stacks Project, [Tag 01NJ](https://stacks.math.columbia.edu/tag/01NJ). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 27.14 of the Stacks Project, [Tag 01NJ](https://stacks.math.columbia.edu/tag/01NJ). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 01NK, a lemma
 
 [Tag 01NK](https://stacks.math.columbia.edu/tag/01NK) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.ProjChartGradedTripleTag.tag01NK`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjChartGradedTripleTag.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjChartGradedTripleTag.lean#L95). The attribute's comment: “the open U(psi), the morphism r\_\{L,psi} : U(psi) -> Proj A and the unital map of Z-graded algebras theta : r^*(sum\_d O\_X(d)) -> sum\_d L^\{tensor d}|\_\{U(psi)}; properties (1) and (2); every triple (U', r', theta') with (1) and (2) equals (U(psi), r, theta); and for d >= 1 and an open V on which psi(A\_d) generates L^\{tensor d}, the pair (phi, alpha) attached to the Veronese restriction of psi to V exists uniquely, r|\_V = phi, and theta|\_V in degree d equals alpha”.
+**`Stacks.AlgebraicGeometry.ProjChartGradedTripleTag.tag01NK`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjChartGradedTripleTag.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjChartGradedTripleTag.lean#L95). The attribute's comment: “the open U(psi), the morphism r\_\{L,psi} : U(psi) -> Proj A and the unital map of Z-graded algebras theta : r^*(sum\_d O\_X(d)) -> sum\_d L^\{tensor d}|\_\{U(psi)}; properties (1) and (2); every triple (U', r', theta') with (1) and (2) equals (U(psi), r, theta); and for d >= 1 and an open V on which psi(A\_d) generates L^\{tensor d}, the pair (phi, alpha) attached to the Veronese restriction of psi to V exists uniquely, r|\_V = phi, and theta|\_V in degree d equals alpha”.
 
 > Let `A` be a graded ring, `X = Proj A`, `T` a scheme, `L` an invertible `𝒪_T`-module and
 > `ψ : A → Γ_*(T, L)` a homomorphism of graded rings. Put
@@ -95,22 +95,41 @@ theorem tag01NK :
 
 [Tag 01NL](https://stacks.math.columbia.edu/tag/01NL) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.ProjInvertibleLocusEscape.not_range_subset_whereInvertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjInvertibleLocusEscape.lean, line 414](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjInvertibleLocusEscape.lean#L414).
+**`Stacks.AlgebraicGeometry.ProjInvertibleLocusEscape.mapHom_coverHom_surjective_and_not_range_subset_twistInvertibleLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjInvertibleLocusEscapeSurjective.lean, line 350](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjInvertibleLocusEscapeSurjective.lean#L350). The attribute's comment: “the remark as one theorem: for S = k[A, B, C] with weights 1, 2, 3 and ψ : S → Γ\_*(P²\_k, O(1)) given by A ↦ X₀, B ↦ X₁², C ↦ X₂³, the morphism r\_\{L,ψ} : P²\_k → Proj S is defined everywhere, satisfies property (1) of Tag 01NK, is surjective, O\_X(1) is not invertible everywhere on X = Proj S, and the image of r\_\{L,ψ} is not contained in the locus where the single sheaf O\_X(1) is invertible”.
 
-> Let `k` be a field, let `S = k[A, B, C]` be graded by
-> `deg A = 1`, `deg B = 2`, `deg C = 3` and set `X = Proj S`. Let `T = 𝐏²_k = Proj k[X₀, X₁, X₂]`
-> with `𝓛 = 𝒪_T(1)`, so `𝒪_T(n) = 𝓛^{⊗ n}`, and let `ψ : S → Γ_*(T, 𝓛)` be the composite of the
-> degree-preserving homomorphism `A ↦ X₀`, `B ↦ X₁²`, `C ↦ X₂³` with the canonical graded ring map
-> of Tag 01MP. The image of the induced morphism `r_{𝓛, ψ} : T → X` is **not** contained in the
-> invertible locus `W₁` of `𝒪_X(1)` — the largest open of `X` on which all the twists `𝒪_X(n)` are
-> invertible and all their multiplication maps are isomorphisms, Tag 01MU. Indeed the point of `X`
-> given by the homogeneous prime `(A, B)` is in the image, and a homogeneous element of `S` outside
-> `(A, B)` has degree divisible by `3`, so no two of them have degrees differing by `1`.
+> **Stacks Tag 01NL.** Let `k` be a field, `S = k[A, B, C]` graded by `deg A = 1`,
+> `deg B = 2`, `deg C = 3`, and `X = Proj S`; let `T = 𝐏²_k` with `𝓛 = 𝒪_T(1)`, and let
+> `ψ : S → Γ_*(T, 𝓛)` be `A ↦ X₀`, `B ↦ X₁²`, `C ↦ X₂³` followed by the canonical map of Tag 01MP.
+> Then:
+>
+> 1. the morphism `r_{𝓛, ψ}` induced by `φ` is defined on all of `T`, so it is a morphism `T → X`;
+> 2. it satisfies property (1) of Tag 01NK, `r^{-1}(D₊(f)) = T_{ψ(f)}` for `f` homogeneous of
+>    positive degree, which characterizes `r_{𝓛, ψ}` (the section appearing is the degree-`deg f`
+>    component of `ψ(f)`, by `psi_apply_homogeneous`);
+> 3. it is surjective;
+> 4. `𝒪_X(1)` is not invertible at every point of `X`; and
+> 5. the image of `r_{𝓛, ψ}` is not contained in the locus where `𝒪_X(1)` is invertible.
+>
+> The locus in (4) and (5) is `twistInvertibleLocus E.naturalGrading 1`, the union of the opens on
+> which the restriction of `𝒪_X(1)` is an invertible module; it contains Tag 01MU's `W₁`, so (5)
+> is stronger than `not_range_subset_whereInvertible`.
 
 ```lean
-public theorem not_range_subset_whereInvertible :
-    ¬ Set.range (mapHom E.naturalGrading (projectiveGrading E) (coverHom E)).base ⊆
-      ↑(whereInvertible E.naturalGrading 1)
+public theorem mapHom_coverHom_surjective_and_not_range_subset_twistInvertibleLocus :
+    mapDomain E.naturalGrading (projectiveGrading E) (coverHom E) = ⊤ ∧
+      (∀ {d : ℕ}, 0 < d → ∀ {f : E.S} (hf : f ∈ E.naturalGrading d)
+        (y : (mapDomain E.naturalGrading (projectiveGrading E) (coverHom E)).toScheme),
+        (mapHom E.naturalGrading (projectiveGrading E) (coverHom E)).base y ∈
+            AlgebraicGeometry.Proj.basicOpen E.naturalGrading f ↔
+          (y.1 : ProjectiveSpectrum (projectiveGrading E)) ∈
+            Stacks.Ample.nonvanishingLocus (X := AlgebraicGeometry.Proj (projectiveGrading E))
+              (twistingSheaf (projectiveGrading E) (d : ℤ))
+              (degreeSection (projectiveGrading E) d
+                ⟨coverHom E f, coverAlgHom_mem_projectiveGrading E hf⟩)) ∧
+      Function.Surjective (mapHom E.naturalGrading (projectiveGrading E) (coverHom E)).base ∧
+      twistInvertibleLocus E.naturalGrading 1 ≠ ⊤ ∧
+      ¬ Set.range (mapHom E.naturalGrading (projectiveGrading E) (coverHom E)).base ⊆
+        ↑(twistInvertibleLocus E.naturalGrading 1)
 ```
 
 ## Depends on
@@ -120,4 +139,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 27.14, Tag 01NJ](https://stacks.math.columbia.edu/tag/01NJ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

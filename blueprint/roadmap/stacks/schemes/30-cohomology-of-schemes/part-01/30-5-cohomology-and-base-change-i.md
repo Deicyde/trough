@@ -8,13 +8,13 @@ proof: formalized
 
 # 30.5 Cohomology and base change, I
 
-Section 30.5 of the Stacks Project, [Tag 02KE](https://stacks.math.columbia.edu/tag/02KE). 4 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 30.5 of the Stacks Project, [Tag 02KE](https://stacks.math.columbia.edu/tag/02KE). 4 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 02KF, an equation
 
 [Tag 02KF](https://stacks.math.columbia.edu/tag/02KF) in the Stacks Project.
 
-**`AlgebraicGeometry.BaseChangeDiagram`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/EulerChar/BaseChange.lean, line 54](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/EulerChar/BaseChange.lean#L54). The attribute's comment: “the cartesian square and quasi-coherent module”.
+**`AlgebraicGeometry.BaseChangeDiagram`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/EulerChar/BaseChange.lean, line 54](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/EulerChar/BaseChange.lean#L54). The attribute's comment: “the cartesian square and quasi-coherent module”.
 
 > **Stacks Project, Tag 02KF.** The base-change diagram: a cartesian square of schemes,
 > together with the quasi-coherent module `𝓕` on `X`.
@@ -23,7 +23,7 @@ Section 30.5 of the Stacks Project, [Tag 02KE](https://stacks.math.columbia.edu/
 structure BaseChangeDiagram
 ```
 
-**`AlgebraicGeometry.BaseChangeDiagram.pulledBack`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/EulerChar/BaseChange.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/EulerChar/BaseChange.lean#L71). The attribute's comment: “the pulled-back module”.
+**`AlgebraicGeometry.BaseChangeDiagram.pulledBack`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/EulerChar/BaseChange.lean, line 71](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/EulerChar/BaseChange.lean#L71). The attribute's comment: “the pulled-back module”.
 
 > The module `𝓕' = (g')^*𝓕` in the base-change diagram.
 
@@ -31,7 +31,7 @@ structure BaseChangeDiagram
 noncomputable abbrev pulledBack (d : BaseChangeDiagram) : d.X'.Modules
 ```
 
-**`AlgebraicGeometry.BaseChangeDiagram.derivedPushforward`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/EulerChar/BaseChange.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/EulerChar/BaseChange.lean#L76). The attribute's comment: “the lower-right derived direct image”.
+**`AlgebraicGeometry.BaseChangeDiagram.derivedPushforward`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/EulerChar/BaseChange.lean, line 76](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/EulerChar/BaseChange.lean#L76). The attribute's comment: “the lower-right derived direct image”.
 
 > The total derived direct image `Rf_*𝓕` in the base-change diagram.
 
@@ -40,7 +40,7 @@ noncomputable abbrev derivedPushforward (d : BaseChangeDiagram) :
     DerivedCategory.Plus d.S.Modules
 ```
 
-**`AlgebraicGeometry.BaseChangeDiagram.derivedPushforward'`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/EulerChar/BaseChange.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/EulerChar/BaseChange.lean#L83). The attribute's comment: “the lower-left derived direct image”.
+**`AlgebraicGeometry.BaseChangeDiagram.derivedPushforward'`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/EulerChar/BaseChange.lean, line 83](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/EulerChar/BaseChange.lean#L83). The attribute's comment: “the lower-left derived direct image”.
 
 > The total derived direct image `Rf'_*𝓕'` in the base-change diagram.
 
@@ -53,7 +53,7 @@ noncomputable abbrev derivedPushforward' (d : BaseChangeDiagram) :
 
 [Tag 02KG](https://stacks.math.columbia.edu/tag/02KG) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.AffineBaseChangeIso.isIso_baseChangeNatTrans_of_isAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AffineBaseChangeIso/Reduction.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AffineBaseChangeIso/Reduction.lean#L176). The attribute's comment: “affine base change”.
+**`Stacks.AlgebraicGeometry.AffineBaseChangeIso.isIso_baseChangeNatTrans_of_isAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AffineBaseChangeIso/Reduction.lean, line 176](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AffineBaseChangeIso/Reduction.lean#L176). The attribute's comment: “affine base change”.
 
 > **The base-change assertion of Stacks Tag 02KG.**  The base-change morphism of a cartesian
 > square of schemes whose right-hand morphism is affine is invertible at every quasi-coherent
@@ -65,7 +65,7 @@ theorem isIso_baseChangeNatTrans_of_isAffineHom (hw : IsPullback g' f' f g) [IsA
     IsIso ((AffinePushforward.baseChangeNatTrans hw.w).app F)
 ```
 
-**`Stacks.AlgebraicGeometry.AffinePushforward.pushforward_isQuasicoherent_of_isAffineHom`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AffinePushforward/Basic.lean, line 251](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AffinePushforward/Basic.lean#L251). The attribute's comment: “quasi-coherence of the direct image”.
+**`Stacks.AlgebraicGeometry.AffinePushforward.pushforward_isQuasicoherent_of_isAffineHom`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AffinePushforward/Basic.lean, line 251](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AffinePushforward/Basic.lean#L251). The attribute's comment: “quasi-coherence of the direct image”.
 
 > **Stacks Project, Tag 02KG.** The direct image of a quasi-coherent module along an affine
 > morphism is quasi-coherent.
@@ -76,7 +76,7 @@ instance pushforward_isQuasicoherent_of_isAffineHom {X S : Scheme.{u}} (f : X �
     ((Scheme.Modules.pushforward f).obj F).IsQuasicoherent
 ```
 
-**`Stacks.Tag02KGDerivedComparison.isIso_rightDerivedFunctorPlusUnit_app_of_isAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedComparison/Basic.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedComparison/Basic.lean#L83). The attribute's comment: “comparison with the derived direct image”. References: EGA III (1.3.2).
+**`Stacks.Tag02KGDerivedComparison.isIso_rightDerivedFunctorPlusUnit_app_of_isAffineHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedComparison/Basic.lean, line 83](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedComparison/Basic.lean#L83). The attribute's comment: “comparison with the derived direct image”. References: EGA III (1.3.2).
 
 > **[Stacks, Tag 02KG], comparison with the derived direct image.** For an affine morphism
 > `f : X ⟶ S` of schemes and a quasi-coherent `𝒪_X`-module `F`, the canonical map from the ordinary
@@ -98,7 +98,7 @@ theorem isIso_rightDerivedFunctorPlusUnit_app_of_isAffineHom
 
 [Tag 02KH](https://stacks.math.columbia.edu/tag/02KH) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.FlatBaseChangeDerived.isIso_baseChangeMap_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FlatBaseChangeCohomology/Derived/FlatBaseChange.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FlatBaseChangeCohomology/Derived/FlatBaseChange.lean#L76). The attribute's comment: “part (1): the base change map of Tag 02N7 is an isomorphism in D⁺(𝒪\_\{S'}), hence in every degree i”.
+**`Stacks.AlgebraicGeometry.FlatBaseChangeDerived.isIso_baseChangeMap_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FlatBaseChangeCohomology/Derived/FlatBaseChange.lean, line 76](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FlatBaseChangeCohomology/Derived/FlatBaseChange.lean#L76). The attribute's comment: “part (1): the base change map of Tag 02N7 is an isomorphism in D⁺(𝒪\_\{S'}), hence in every degree i”.
 
 > **Flat base change in the derived category ([Stacks, Tag 02KH], part (1)).** For a cartesian
 > square of schemes with `g` flat and `f` quasi-compact and quasi-separated, and a quasi-coherent
@@ -116,7 +116,7 @@ theorem isIso_baseChangeMap_of_flat (H : IsPullback g' f' f g) [Flat g] [QuasiCo
       (isFlat_toShHom_of_isPullback H)).app ((DerivedCategory.Plus.singleFunctor _ 0).obj F))
 ```
 
-**`Stacks.AlgebraicGeometry.FlatBaseChangeDerived.isIso_higherBaseChangeMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FlatBaseChangeCohomology/Derived/FlatBaseChange.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FlatBaseChangeCohomology/Derived/FlatBaseChange.lean#L118). The attribute's comment: “part (1), in each degree i”.
+**`Stacks.AlgebraicGeometry.FlatBaseChangeDerived.isIso_higherBaseChangeMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FlatBaseChangeCohomology/Derived/FlatBaseChange.lean, line 118](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FlatBaseChangeCohomology/Derived/FlatBaseChange.lean#L118). The attribute's comment: “part (1), in each degree i”.
 
 > **[Stacks, Tag 02KH], part (1).** For a cartesian square of schemes with `g` flat and `f`
 > quasi-compact and quasi-separated, and a quasi-coherent `𝒪_X`-module `ℱ`, the base change map
@@ -128,7 +128,7 @@ theorem isIso_higherBaseChangeMap (H : IsPullback g' f' f g) [Flat g] [QuasiComp
     IsIso (higherBaseChangeMap H F i)
 ```
 
-**`Stacks.AlgebraicGeometry.FlatBaseChangeDerived.cohomologyBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FlatBaseChangeCohomology/Derived/FlatBaseChange.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FlatBaseChangeCohomology/Derived/FlatBaseChange.lean#L169). The attribute's comment: “part (2)”.
+**`Stacks.AlgebraicGeometry.FlatBaseChangeDerived.cohomologyBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FlatBaseChangeCohomology/Derived/FlatBaseChange.lean, line 169](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FlatBaseChangeCohomology/Derived/FlatBaseChange.lean#L169). The attribute's comment: “part (2)”.
 
 > **[Stacks, Tag 02KH], part (2).** For a cartesian square of schemes with `S` and `S'`
 > affine, `g` flat and `f` quasi-compact and quasi-separated, and a quasi-coherent `𝒪_X`-module
@@ -154,7 +154,7 @@ def cohomologyBaseChangeIso (H : IsPullback g' f' f g) [IsAffine S] [IsAffine S'
 
 [Tag 0CKW](https://stacks.math.columbia.edu/tag/0CKW) in the Stacks Project.
 
-**`Stacks.Tag0CKW.isIso_cohomologyBaseChangeMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FlatBaseChangeCohomology/FiniteLocallyFreeCanonical.lean, line 861](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FlatBaseChangeCohomology/FiniteLocallyFreeCanonical.lean#L861).
+**`Stacks.Tag0CKW.isIso_cohomologyBaseChangeMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FlatBaseChangeCohomology/FiniteLocallyFreeCanonical.lean, line 861](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FlatBaseChangeCohomology/FiniteLocallyFreeCanonical.lean#L861).
 
 > **Finite locally free base change.** For a cartesian square of schemes
 >
@@ -180,7 +180,7 @@ theorem isIso_cohomologyBaseChangeMap [Stacks.Morphisms.IsFiniteLocallyFree q]
     IsIso (cohomologyBaseChangeMap H F n)
 ```
 
-**`Stacks.Tag0CKW.isIso_cohomologyBaseChangeMap_of_isFiniteLocallyFree_module`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FlatBaseChangeCohomology/FiniteLocallyFreeCanonical.lean, line 883](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FlatBaseChangeCohomology/FiniteLocallyFreeCanonical.lean#L883). The attribute's comment: “as stated: B a finite locally free A-module”.
+**`Stacks.Tag0CKW.isIso_cohomologyBaseChangeMap_of_isFiniteLocallyFree_module`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FlatBaseChangeCohomology/FiniteLocallyFreeCanonical.lean, line 883](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FlatBaseChangeCohomology/FiniteLocallyFreeCanonical.lean#L883). The attribute's comment: “as stated: B a finite locally free A-module”.
 
 > **Finite locally free base change.** Let `φ : A ⟶ B` be a ring map making `B` a finite
 > locally free `A`-module, and consider a cartesian square of schemes
@@ -213,4 +213,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 30.5, Tag 02KE](https://stacks.math.columbia.edu/tag/02KE)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

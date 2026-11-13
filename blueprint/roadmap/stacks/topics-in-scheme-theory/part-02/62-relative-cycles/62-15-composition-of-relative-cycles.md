@@ -8,13 +8,13 @@ proof: formalized
 
 # 62.15 Composition of relative cycles
 
-Section 62.15 of the Stacks Project, [Tag 0H6Q](https://stacks.math.columbia.edu/tag/0H6Q). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 62.15 of the Stacks Project, [Tag 0H6Q](https://stacks.math.columbia.edu/tag/0H6Q). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0H6R, a lemma
 
 [Tag 0H6R](https://stacks.math.columbia.edu/tag/0H6R) in the Stacks Project.
 
-**`Stacks.Chow.isRelativeCycle_compFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/CompositionRelativeCyclesGeneral.lean, line 210](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/CompositionRelativeCyclesGeneral.lean#L210).
+**`Stacks.Chow.isRelativeCycle_compFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/CompositionRelativeCyclesGeneral.lean, line 210](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/CompositionRelativeCyclesGeneral.lean#L210).
 
 > **Stacks Project, Lemma 0H6R.** Let `X --f--> Y --g--> S` be morphisms of schemes, both
 > locally of finite type, with `S` locally Noetherian, and let `r, e ≥ 0`. If `α` is a relative
@@ -37,7 +37,7 @@ theorem isRelativeCycle_compFamily {X Y S : Scheme.{u}} (f : X ⟶ Y) [LocallyOf
 
 [Tag 0H6S](https://stacks.math.columbia.edu/tag/0H6S) in the Stacks Project.
 
-**`Stacks.Chow.compFamily_familyAssociatedToSelf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ClosedSubschemeComposition.lean, line 240](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ClosedSubschemeComposition.lean#L240).
+**`Stacks.Chow.compFamily_familyAssociatedToSelf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ClosedSubschemeComposition.lean, line 240](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ClosedSubschemeComposition.lean#L240).
 
 > **Stacks Project, Tag 0H6S.** Let `f : X ⟶ Y` and `g : Y ⟶ S` be morphisms of schemes, both
 > locally of finite type and flat, of relative dimension `r` resp. `e`. Then the composition
@@ -63,4 +63,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 62.15, Tag 0H6Q](https://stacks.math.columbia.edu/tag/0H6Q)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

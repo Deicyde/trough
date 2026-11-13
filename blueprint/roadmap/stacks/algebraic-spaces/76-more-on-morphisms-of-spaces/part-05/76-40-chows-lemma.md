@@ -8,13 +8,13 @@ proof: formalized
 
 # 76.40 Chow's lemma
 
-Section 76.40 of the Stacks Project, [Tag 088P](https://stacks.math.columbia.edu/tag/088P). 5 tags here are carried by 4 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 76.40 of the Stacks Project, [Tag 088P](https://stacks.math.columbia.edu/tag/088P). 5 tags here are carried by 4 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 088Q, a lemma
 
 [Tag 088Q](https://stacks.math.columbia.edu/tag/088Q) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isAdmissibleBlowup_isOpenImmersion_of_isOpenImmersion_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CommonAdmissibleBlowupUnconditional.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CommonAdmissibleBlowupUnconditional.lean#L55).
+**`AlgebraicGeometry.Space.exists_isAdmissibleBlowup_isOpenImmersion_of_isOpenImmersion_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CommonAdmissibleBlowupUnconditional.lean, line 55](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CommonAdmissibleBlowupUnconditional.lean#L55).
 
 > **Stacks 088Q.** Let `Y` be a quasi-compact and quasi-separated algebraic space over `S` and
 > let `j₁ : U ⟶ X₁`, `j₂ : U ⟶ X₂` be open immersions of algebraic spaces over `Y`, with `U`,
@@ -32,7 +32,7 @@ theorem exists_isAdmissibleBlowup_isOpenImmersion_of_isOpenImmersion_uncondition
     (hYqs : IsAbsolutelyQuasiSeparated B S hS B.contains_terminal Y.1)
     (hj₁ : IsOpenImmersion B S hS j₁.hom) (hj₂ : IsOpenImmersion B S hS j₂.hom)
     (hj : j₁ ≫ f₁ = j₂ ≫ f₂)
-    (hUft : IsFiniteType B S hS (j₁ ≫ f₁).hom) (hUsep : IsSeparated B S hS (j₁ ≫ f₁).hom)
+    (hUft : IsFiniteType B S hS (j₁ ≫ f₁).hom)
     (hX₁ft : IsFiniteType B S hS f₁.hom) (hX₁sep : IsSeparated B S hS f₁.hom)
     (hX₂ft : IsFiniteType B S hS f₂.hom) (hX₂sep : IsSeparated B S hS f₂.hom) :
     ∃ (X₁' X₂' X : AlgebraicSpaces B S hS) (b₁ : X₁' ⟶ X₁) (b₂ : X₂' ⟶ X₂)
@@ -52,7 +52,7 @@ theorem exists_isAdmissibleBlowup_isOpenImmersion_of_isOpenImmersion_uncondition
 
 [Tag 088R](https://stacks.math.columbia.edu/tag/088R) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.hasChowBlowupDiagram_of_isFiniteType_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ChowBlowupDiagramExistence.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ChowBlowupDiagramExistence.lean#L88).
+**`AlgebraicGeometry.Space.hasChowBlowupDiagram_of_isFiniteType_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ChowBlowupDiagramExistence.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ChowBlowupDiagramExistence.lean#L88).
 
 > Let `f : X ⟶ Y` be a morphism of algebraic spaces over `S` and let `U ⊆ X` be an open
 > subspace. Assume that `U` is quasi-compact, that `Y` is quasi-compact and quasi-separated, that
@@ -88,7 +88,7 @@ theorem hasChowBlowupDiagram_of_isFiniteType_of_isSeparated
 
 [Tag 088S](https://stacks.math.columbia.edu/tag/088S) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_denseOpen_hasChowBlowupDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ChowBlowupDiagramNoetherian.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ChowBlowupDiagramNoetherian.lean#L62).
+**`AlgebraicGeometry.Space.exists_denseOpen_hasChowBlowupDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ChowBlowupDiagramNoetherian.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ChowBlowupDiagramNoetherian.lean#L62).
 
 > **Stacks 088S.**  Let `f : X ⟶ Y` be a separated morphism of finite type of algebraic spaces
 > over `S`, with `Y` Noetherian.  Then there are a dense open subspace `U ⊆ X`, an integer `n` and
@@ -116,7 +116,7 @@ theorem exists_denseOpen_hasChowBlowupDiagram (hTop : B.Contains (⊤_ Scheme.{u
 
 [Tag 088T](https://stacks.math.columbia.edu/tag/088T) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isRelativelyAmple_of_isAdmissibleBlowup_of_projectiveSpaceImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AdmissibleBlowupProjectiveRelativeAmple.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AdmissibleBlowupProjectiveRelativeAmple.lean#L69).
+**`AlgebraicGeometry.Space.exists_isRelativelyAmple_of_isAdmissibleBlowup_of_projectiveSpaceImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AdmissibleBlowupProjectiveRelativeAmple.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AdmissibleBlowupProjectiveRelativeAmple.lean#L69).
 
 > **Stacks 088T.** Let `Y` be a quasi-compact algebraic space, `i : Z ⟶ ℙⁿ_Y` a closed
 > immersion, `U ⊆ Z` an open subspace and `b : Z' ⟶ Z` a `U`-admissible blowup, as in Lemmas 088R
@@ -157,8 +157,8 @@ theorem exists_isRelativelyAmple_of_isAdmissibleBlowup_of_projectiveSpaceImmersi
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Space.C1573.exists_isAdmissibleBlowup_isImmersion_projectiveSpace`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GrothendieckExistence/EquivalencePort/ChowLemma/Main.lean#L82), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/ChowLemma/Main.lean, line 38](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ChowLemma/Main.lean#L38) (StacksFrontier).
-- [`AlgebraicGeometry.Space.C1573.exists_isAdmissibleBlowup_isImmersion_projectiveSpace`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GrothendieckExistence/EquivalencePort/ChowLemma/Main.lean#L82), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/ChowLemmaTag.lean, line 25](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ChowLemmaTag.lean#L25) (StacksFrontier).
+- [`AlgebraicGeometry.Space.C1573.exists_isAdmissibleBlowup_isImmersion_projectiveSpace`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GrothendieckExistence/EquivalencePort/ChowLemma/Main.lean#L82), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/ChowLemma/Main.lean, line 38](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ChowLemma/Main.lean#L38) (StacksFrontier).
+- [`AlgebraicGeometry.Space.C1573.exists_isAdmissibleBlowup_isImmersion_projectiveSpace`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GrothendieckExistence/EquivalencePort/ChowLemma/Main.lean#L82), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/ChowLemmaTag.lean, line 25](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ChowLemmaTag.lean#L25) (StacksFrontier).
 
 ## Depends on
 
@@ -167,4 +167,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 76.40, Tag 088P](https://stacks.math.columbia.edu/tag/088P)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

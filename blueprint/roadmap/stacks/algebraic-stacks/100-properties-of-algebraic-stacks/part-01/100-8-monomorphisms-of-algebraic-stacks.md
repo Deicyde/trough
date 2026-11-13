@@ -8,13 +8,13 @@ proof: formalized
 
 # 100.8 Monomorphisms of algebraic stacks
 
-Section 100.8 of the Stacks Project, [Tag 04ZV](https://stacks.math.columbia.edu/tag/04ZV). 6 tags here are carried by 10 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 100.8 of the Stacks Project, [Tag 04ZV](https://stacks.math.columbia.edu/tag/04ZV). 6 tags here are carried by 10 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 04ZW, a definition
 
 [Tag 04ZW](https://stacks.math.columbia.edu/tag/04ZW) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.IsMonomorphism`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbe.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbe.lean#L109).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.IsMonomorphism`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbe.lean, line 110](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbe.lean#L110).
 
 > **Stacks 04ZW.** A 1-morphism of algebraic stacks over `S` is a *monomorphism* when it is
 > representable by algebraic spaces and every algebraic space representing one of its base changes
@@ -37,13 +37,13 @@ abbrev AlgebraicStacks.IsMonomorphism
 
 Declarations registered for the tag:
 
-- [`AlgebraicStacks.isMonomorphism_fst_twoFibreProductSquareAlgebraicStacks`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicStacks.isMonomorphism_fst_twoFibreProductSquareAlgebraicStacks#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/MonomorphismPermanence.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/MonomorphismPermanence.lean#L82) (StacksFrontier).
+- [`AlgebraicStacks.isMonomorphism_fst_twoFibreProductSquareAlgebraicStacks`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicStacks.isMonomorphism_fst_twoFibreProductSquareAlgebraicStacks#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/MonomorphismPermanence.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/MonomorphismPermanence.lean#L82) (StacksFrontier).
 
 ## Tag 04ZY, a lemma
 
 [Tag 04ZY](https://stacks.math.columbia.edu/tag/04ZY) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isMonomorphism_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/MonomorphismPermanence.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/MonomorphismPermanence.lean#L65).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isMonomorphism_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/MonomorphismPermanence.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/MonomorphismPermanence.lean#L65).
 
 > **Stacks 04ZY.** A composite of monomorphisms of algebraic stacks over `S` (**Stacks 04ZW**)
 > is a monomorphism.
@@ -58,7 +58,7 @@ theorem isMonomorphism_comp (f : 𝒳 ⟶ 𝒴) (g : 𝒴 ⟶ 𝒵)
 
 [Tag 04ZZ](https://stacks.math.columbia.edu/tag/04ZZ) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.mono_hom_representingMaps_of_full_and_faithful`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FullyFaithfulMonomorphism.lean, line 198](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FullyFaithfulMonomorphism.lean#L198). The attribute's comment: “(2) implies (1), the monomorphism clause for categories fibred in groupoids”.
+**`AlgebraicGeometry.Stack.mono_hom_representingMaps_of_full_and_faithful`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FullyFaithfulMonomorphism.lean, line 198](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FullyFaithfulMonomorphism.lean#L198). The attribute's comment: “(2) implies (1), the monomorphism clause for categories fibred in groupoids”.
 
 > **The implication (2) ⟹ (1) of Stacks 04ZZ.** A fully faithful 1-morphism `j : 𝒳 ⟶ 𝒴` of
 > categories fibred in groupoids over the big fppf site of `S` is a monomorphism in the sense of
@@ -87,7 +87,7 @@ theorem mono_hom_representingMaps_of_full_and_faithful
       ((spacesOverSmallerBaseFunctor B U.left.1 S U.left.2 hS U.hom).obj ⟨F, hF⟩)).hom
 ```
 
-**`AlgebraicGeometry.Stack.mono_representingMaps_of_full_and_faithful`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FullyFaithfulMonomorphism.lean, line 222](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FullyFaithfulMonomorphism.lean#L222). The attribute's comment: “(2) implies (1), the monomorphism clause read in the category of algebraic spaces over S”.
+**`AlgebraicGeometry.Stack.mono_representingMaps_of_full_and_faithful`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FullyFaithfulMonomorphism.lean, line 222](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FullyFaithfulMonomorphism.lean#L222). The attribute's comment: “(2) implies (1), the monomorphism clause read in the category of algebraic spaces over S”.
 
 > **The implication (2) ⟹ (1) of Stacks 04ZZ, in the category of algebraic spaces.** This is
 > `AlgebraicGeometry.Stack.mono_hom_representingMaps_of_full_and_faithful` read in the category of
@@ -112,7 +112,7 @@ theorem mono_representingMaps_of_full_and_faithful
       ((spacesOverSmallerBaseFunctor B U.left.1 S U.left.2 hS U.hom).obj ⟨F, hF⟩))
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isMonomorphism_of_full_and_faithful`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FullyFaithfulMonomorphism.lean, line 251](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FullyFaithfulMonomorphism.lean#L251). The attribute's comment: “(2) implies (1) for 1-morphisms of algebraic stacks”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isMonomorphism_of_full_and_faithful`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FullyFaithfulMonomorphism.lean, line 251](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FullyFaithfulMonomorphism.lean#L251). The attribute's comment: “(2) implies (1) for 1-morphisms of algebraic stacks”.
 
 > **The implication (2) ⟹ (1) of Stacks 04ZZ, for a 1-morphism of algebraic stacks.** A fully
 > faithful 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks over `S` is a monomorphism in the sense of
@@ -131,7 +131,7 @@ theorem isMonomorphism_of_full_and_faithful
     AlgebraicStacks.IsMonomorphism B S hS f
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isMonomorphism_tfae_of_bootstrap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/MonomorphismEquivalentConditions.lean, line 217](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/MonomorphismEquivalentConditions.lean#L217).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isMonomorphism_tfae_of_bootstrap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/MonomorphismEquivalentConditions.lean, line 217](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/MonomorphismEquivalentConditions.lean#L217).
 
 > **Stacks 04ZZ.** For a 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks over `S` the following
 > are equivalent:
@@ -159,7 +159,7 @@ theorem isMonomorphism_tfae_of_bootstrap (f : 𝒳 ⟶ 𝒴) :
         HasMonomorphicFppfSpaceBaseChange B S hS f]
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.full_and_faithful_homFunctor_of_isMonomorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/MonomorphismFullyFaithful.lean, line 333](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/MonomorphismFullyFaithful.lean#L333). The attribute's comment: “the implication (1) ⟹ (2): a monomorphism of algebraic stacks is fully faithful”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.full_and_faithful_homFunctor_of_isMonomorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/MonomorphismFullyFaithful.lean, line 333](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/MonomorphismFullyFaithful.lean#L333). The attribute's comment: “the implication (1) ⟹ (2): a monomorphism of algebraic stacks is fully faithful”.
 
 > **The implication (1) ⟹ (2) of Stacks 04ZZ: a monomorphism of algebraic stacks is fully
 > faithful.** A 1-morphism of algebraic stacks over `S` which is a monomorphism in the sense of
@@ -182,7 +182,7 @@ theorem full_and_faithful_homFunctor_of_isMonomorphism (f : 𝒳 ⟶ 𝒴)
 
 [Tag 0500](https://stacks.math.columbia.edu/tag/0500) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.pointsMap_injective_of_fullyFaithful`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/PointsInjective.lean, line 37](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/PointsInjective.lean#L37).
+**`AlgebraicGeometry.Stack.pointsMap_injective_of_fullyFaithful`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/PointsInjective.lean, line 37](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/PointsInjective.lean#L37).
 
 > A monomorphism of algebraic stacks induces an injective map on points.
 
@@ -202,7 +202,7 @@ public theorem pointsMap_injective_of_fullyFaithful
 
 [Tag 0CBB](https://stacks.math.columbia.edu/tag/0CBB) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isTwoFibreProduct_monomorphismDiagonalSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/MonomorphismDiagonalSquare.lean, line 171](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/MonomorphismDiagonalSquare.lean#L171).
+**`AlgebraicGeometry.Stack.isTwoFibreProduct_monomorphismDiagonalSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/MonomorphismDiagonalSquare.lean, line 171](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/MonomorphismDiagonalSquare.lean#L171).
 
 > **Stacks 0CBB.** Let `f : 𝒳 ⟶ 𝒳'` and `g : 𝒳' ⟶ 𝒴` be 1-morphisms of algebraic stacks over
 > `S`. If `f` is a monomorphism (Stacks 04ZW), then the canonical square
@@ -228,7 +228,7 @@ def isTwoFibreProduct_monomorphismDiagonalSquare (f : 𝒳 ⟶ 𝒳') (g : 𝒳'
     IsTwoFibreProduct (monomorphismDiagonalSquare B S hS f g)
 ```
 
-**`CategoryTheory.Limits.CategoricalPullback.isEquivalence_monomorphism_diagonalComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/TwoFibreProduct/MonomorphismDiagonal.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/TwoFibreProduct/MonomorphismDiagonal.lean#L94).
+**`CategoryTheory.Limits.CategoricalPullback.isEquivalence_monomorphism_diagonalComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/TwoFibreProduct/MonomorphismDiagonal.lean, line 94](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/TwoFibreProduct/MonomorphismDiagonal.lean#L94).
 
 > **Stacks 0CBB.** The square from the relative diagonal of a fully faithful functor `f` to
 > the relative diagonal of `f ⋙ g` is a 2-fibre product square: the induced functor into the
@@ -251,4 +251,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 100.8, Tag 04ZV](https://stacks.math.columbia.edu/tag/04ZV)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

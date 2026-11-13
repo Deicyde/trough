@@ -8,13 +8,13 @@ proof: formalized
 
 # 27.10 Invertible sheaves on Proj
 
-Section 27.10 of the Stacks Project, [Tag 01MM](https://stacks.math.columbia.edu/tag/01MM). 14 tags here are carried by 25 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 27.10 of the Stacks Project, [Tag 01MM](https://stacks.math.columbia.edu/tag/01MM). 14 tags here are carried by 25 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 01MN, a definition
 
 [Tag 01MN](https://stacks.math.columbia.edu/tag/01MN) in the Stacks Project.
 
-**`Stacks.ProjectiveCohomology.coe_sectionsTwistEquivAwayGrading_smul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjStandardOpenScalars.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjStandardOpenScalars.lean#L134). The attribute's comment: “part (1), the scalar action in the standard-open description of the sections of a twist, written out on the underlying elements of the localization”.
+**`Stacks.ProjectiveCohomology.coe_sectionsTwistEquivAwayGrading_smul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjStandardOpenScalars.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjStandardOpenScalars.lean#L134). The attribute's comment: “part (1), the scalar action in the standard-open description of the sections of a twist, written out on the underlying elements of the localization”.
 
 > The identification of `Γ(D₊(f), 𝒪_P(m))` with the degree-`m` part of `A_f` is linear for
 > the action of `Γ(P, D₊(f))` read through `AlgebraicGeometry.Proj.awayToSection`: a section
@@ -32,7 +32,7 @@ theorem coe_sectionsTwistEquivAwayGrading_smul (hf : f ∈ 𝒜 k) (hk : 0 < k) 
         ((sectionsTwistEquivAwayGrading 𝒜 hf hk m s : LocalizedModule.Away f A))
 ```
 
-**`AlgebraicGeometry.ProjectiveSpectrum.Proj.twistingSheaf`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjTwist.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjTwist.lean#L168). The attribute's comment: “part (1), twist of the structure sheaf”.
+**`AlgebraicGeometry.ProjectiveSpectrum.Proj.twistingSheaf`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjTwist.lean, line 168](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjTwist.lean#L168). The attribute's comment: “part (1), twist of the structure sheaf”.
 
 > The `n`-th twist of the structure sheaf on `Proj(S)`.
 
@@ -45,7 +45,7 @@ public noncomputable abbrev twistingSheaf
         (ProjectiveSpectrum.Proj.structureSheaf 𝒜))
 ```
 
-**`AlgebraicGeometry.ProjectiveSpectrum.Proj.twistSheafOfModules`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjTwist.lean, line 178](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjTwist.lean#L178). The attribute's comment: “part (2), twist of a module sheaf”.
+**`AlgebraicGeometry.ProjectiveSpectrum.Proj.twistSheafOfModules`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjTwist.lean, line 178](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjTwist.lean#L178). The attribute's comment: “part (2), twist of a module sheaf”.
 
 > Tensoring an `𝒪_Proj(S)`-module with the `n`-th twisting sheaf.
 
@@ -62,7 +62,7 @@ public noncomputable def twistSheafOfModules
         (ProjectiveSpectrum.Proj.structureSheaf 𝒜))
 ```
 
-**`Stacks.AlgebraicGeometry.ProjTwistAwayPiece.coe_sectionsTwistEquivGradedPiece_smul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjTwistAwayPieceScalars.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjTwistAwayPieceScalars.lean#L58). The attribute's comment: “part (1), the scalar action in the description of the sections of a twist over a standard open as a homogeneous piece of the graded localization, written out on the underlying elements of the localization”.
+**`Stacks.AlgebraicGeometry.ProjTwistAwayPiece.coe_sectionsTwistEquivGradedPiece_smul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjTwistAwayPieceScalars.lean, line 58](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjTwistAwayPieceScalars.lean#L58). The attribute's comment: “part (1), the scalar action in the description of the sections of a twist over a standard open as a homogeneous piece of the graded localization, written out on the underlying elements of the localization”.
 
 > The identification `Γ(D₊(f), 𝒪_X(n)) ≅ (A_f)_n` is semilinear for the action of
 > `Γ(D₊(f), 𝒪_X)` read through `AlgebraicGeometry.ProjectiveSpectrum.Proj.awayToSection`: a section
@@ -86,13 +86,13 @@ theorem coe_sectionsTwistEquivGradedPiece_smul (hf : f ∈ 𝒜 k) (hk : 0 < k) 
 
 Declarations registered for the tag:
 
-- [`twistMultiplicationMap`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=twistMultiplicationMap#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/ProjInvertibleLocus/Basic.lean, line 160](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjInvertibleLocus/Basic.lean#L160) (StacksFrontier).
+- [`twistMultiplicationMap`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=twistMultiplicationMap#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/ProjInvertibleLocus/Basic.lean, line 160](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjInvertibleLocus/Basic.lean#L160) (StacksFrontier).
 
 ## Tag 03GJ, an equation
 
 [Tag 03GJ](https://stacks.math.columbia.edu/tag/03GJ) in the Stacks Project.
 
-**`AlgebraicGeometry.ProjectiveSpectrum.Proj.twistSheafMultiplicationMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjTwistModuleMultiplication.lean, line 51](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjTwistModuleMultiplication.lean#L51).
+**`AlgebraicGeometry.ProjectiveSpectrum.Proj.twistSheafMultiplicationMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjTwistModuleMultiplication.lean, line 51](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjTwistModuleMultiplication.lean#L51).
 
 > **The canonical multiplication map `𝒪_X(n) ⊗ ℱ(m) ⟶ ℱ(n + m)`** on `X = Proj S`, for a
 > sheaf of `𝒪_X`-modules `ℱ`: reassociate, braid `𝒪(n)` past `ℱ`, reassociate again, and
@@ -114,7 +114,7 @@ public noncomputable def twistSheafMultiplicationMap
 
 [Tag 01MP](https://stacks.math.columbia.edu/tag/01MP) in the Stacks Project.
 
-**`AlgebraicGeometry.ProjectiveSpectrum.Proj.globalSectionsRingMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjTwistSectionRing.lean, line 379](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjTwistSectionRing.lean#L379).
+**`AlgebraicGeometry.ProjectiveSpectrum.Proj.globalSectionsRingMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjTwistSectionRing.lean, line 379](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjTwistSectionRing.lean#L379).
 
 > **The canonical homomorphism of graded rings `S → ⨁_{n ≥ 0} Γ(Proj 𝒮, 𝒪(n))`.** Its
 > multiplication on sections is the pointwise product of local fractions, and in each degree it is
@@ -124,7 +124,7 @@ public noncomputable def twistSheafMultiplicationMap
 public noncomputable def globalSectionsRingMap : GlobalSectionsRingMap 𝒮
 ```
 
-**`Stacks.AlgebraicGeometry.ProjTwistSectionRing.globalSectionsRingMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjTwistSectionRing/Statement.lean, line 210](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjTwistSectionRing/Statement.lean#L210).
+**`Stacks.AlgebraicGeometry.ProjTwistSectionRing.globalSectionsRingMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjTwistSectionRing/Statement.lean, line 210](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjTwistSectionRing/Statement.lean#L210).
 
 > The canonical graded ring map
 > `S → ⨁ n ≥ 0, Γ(Proj(S), 𝒪(n))`.
@@ -137,7 +137,7 @@ public def globalSectionsRingMap : GlobalSectionsRingMap 𝒮
 
 [Tag 03GK](https://stacks.math.columbia.edu/tag/03GK) in the Stacks Project.
 
-**`AlgebraicGeometry.ProjectiveSpectrum.Proj.globalSectionsPairing`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjTwistSectionModule.lean, line 278](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjTwistSectionModule.lean#L278).
+**`AlgebraicGeometry.ProjectiveSpectrum.Proj.globalSectionsPairing`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjTwistSectionModule.lean, line 278](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjTwistSectionModule.lean#L278).
 
 > **The pairing `(⨁_{n ≥ 0} Γ(X, 𝒪_X(n))) × (⨁_{m ∈ ℤ} Γ(X, ℱ(m))) ⟶ ⨁_{m ∈ ℤ} Γ(X, ℱ(m))`**
 > on `X = Proj 𝒮`: the biadditive extension of the canonical multiplication of a global section of
@@ -149,7 +149,7 @@ public noncomputable def globalSectionsPairing :
       (twistedGlobalSections 𝒮 F →+ twistedGlobalSections 𝒮 F)
 ```
 
-**`AlgebraicGeometry.ProjectiveSpectrum.Proj.globalSectionsPairing_of_of`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjTwistSectionModule.lean, line 286](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjTwistSectionModule.lean#L286).
+**`AlgebraicGeometry.ProjectiveSpectrum.Proj.globalSectionsPairing_of_of`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjTwistSectionModule.lean, line 286](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjTwistSectionModule.lean#L286).
 
 > The pairing of a global section of `𝒪(n)` with a global section of `ℱ(m)` is their canonical
 > product, a global section of `ℱ(n + m)`.
@@ -161,7 +161,7 @@ public theorem globalSectionsPairing_of_of (n : ℕ) (m : ℤ) (s : twistGlobalS
       DirectSum.of _ ((n : ℤ) + m) (multiplyHomogeneousSections 𝒮 F n m s t)
 ```
 
-**`AlgebraicGeometry.ProjectiveSpectrum.Proj.twistedGlobalSectionsModule`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjTwistSectionModule.lean, line 904](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjTwistSectionModule.lean#L904). The attribute's comment: “the module structure on the twisted global sections”.
+**`AlgebraicGeometry.ProjectiveSpectrum.Proj.twistedGlobalSectionsModule`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjTwistSectionModule.lean, line 903](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjTwistSectionModule.lean#L903). The attribute's comment: “the module structure on the twisted global sections”.
 
 > **The module `⨁_{m ∈ ℤ} Γ(X, ℱ(m))` over the graded ring `⨁_{n ≥ 0} Γ(X, 𝒪_X(n))`** on
 > `X = Proj 𝒮`, for the pairing that multiplies a global section of `𝒪_X(n)` with a global
@@ -178,13 +178,13 @@ public noncomputable instance twistedGlobalSectionsModule :
 
 Declarations registered for the tag:
 
-- [`moduleTwistMap`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=moduleTwistMap#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/ProjShifted/Basic.lean, line 202](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjShifted/Basic.lean#L202) (StacksFrontier).
+- [`moduleTwistMap`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=moduleTwistMap#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/ProjShifted/Basic.lean, line 202](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjShifted/Basic.lean#L202) (StacksFrontier).
 
 ## Tag 01MR, an equation
 
 [Tag 01MR](https://stacks.math.columbia.edu/tag/01MR) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.ProjShiftedSections.globalSectionsModuleMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjShiftedSectionModule.lean, line 473](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjShiftedSectionModule.lean#L473).
+**`Stacks.AlgebraicGeometry.ProjShiftedSections.globalSectionsModuleMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjShiftedSectionModule.lean, line 473](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjShiftedSectionModule.lean#L473).
 
 > **The canonical map of graded `S`-modules `M → ⨁_{n ∈ ℤ} Γ(Proj 𝒮, M(n)~)`.** In degree `n`
 > it is the canonical map from the homogeneous elements of degree `n`, and a homogeneous scalar
@@ -198,7 +198,7 @@ public noncomputable def globalSectionsModuleMap : GlobalSectionsModuleMap 𝒮 
 
 [Tag 01MS](https://stacks.math.columbia.edu/tag/01MS) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.ModuleTwistIso.twistsOnBasicOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ModuleTwistIso/StandardOpen.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ModuleTwistIso/StandardOpen.lean#L66). The attribute's comment: “the lemma's five assertions in one statement”.
+**`Stacks.AlgebraicGeometry.ModuleTwistIso.twistsOnBasicOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ModuleTwistIso/StandardOpen.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ModuleTwistIso/StandardOpen.lean#L66). The attribute's comment: “the lemma's five assertions in one statement”.
 
 > Let `f ∈ S` be homogeneous of degree `d`. Restricted to the standard open `D₊(f)`, the twisting
 > sheaf `𝒪_X(nd)` is invertible and in fact trivial for every integer `n`, and the three families of
@@ -239,7 +239,7 @@ theorem twistsOnBasicOpen {f : S} {d : ℕ} (hf : f ∈ 𝒮 d) :
 
 [Tag 01MT](https://stacks.math.columbia.edu/tag/01MT) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.ProjTwistDegreeOneCover.isInvertible_twistingSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjTwistDegreeOneCover/Basic.lean, line 141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjTwistDegreeOneCover/Basic.lean#L141). The attribute's comment: “the sheaves 𝒪\_X(n) are invertible”. References: EGA II (3.2.5), “Second assertion”.
+**`Stacks.AlgebraicGeometry.ProjTwistDegreeOneCover.isInvertible_twistingSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjTwistDegreeOneCover/Basic.lean, line 141](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjTwistDegreeOneCover/Basic.lean#L141). The attribute's comment: “the sheaves 𝒪\_X(n) are invertible”. References: EGA II (3.2.5), “Second assertion”.
 
 > **Stacks 01MT: the sheaves `𝒪_X(n)` are invertible.**
 >
@@ -254,7 +254,7 @@ public theorem isInvertible_twistingSheaf (hcover : DegreeOneCover 𝒮) (n : �
       (AlgebraicGeometry.Proj 𝒮).ringCatSheaf.2 (twistingSheaf 𝒮 n)
 ```
 
-**`Stacks.AlgebraicGeometry.ProjTwistDegreeOneCover.isIso_twistMultiplicationMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjTwistDegreeOneCover/Basic.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjTwistDegreeOneCover/Basic.lean#L157). The attribute's comment: “equation 01MO is an isomorphism”.
+**`Stacks.AlgebraicGeometry.ProjTwistDegreeOneCover.isIso_twistMultiplicationMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjTwistDegreeOneCover/Basic.lean, line 157](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjTwistDegreeOneCover/Basic.lean#L157). The attribute's comment: “equation 01MO is an isomorphism”.
 
 > **Stacks 01MT: Equation 01MO `𝒪_X(n) ⊗ 𝒪_X(m) ⟶ 𝒪_X(n + m)` is an isomorphism**, for all
 > integers `n` and `m`.
@@ -269,7 +269,7 @@ public theorem isIso_twistMultiplicationMap (hcover : DegreeOneCover 𝒮) (n m 
     IsIso (twistMultiplicationMap 𝒮 n m)
 ```
 
-**`Stacks.AlgebraicGeometry.ProjTwistDegreeOneCover.isIso_twistSheafMultiplicationMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjTwistDegreeOneCover/Basic.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjTwistDegreeOneCover/Basic.lean#L187). The attribute's comment: “equation 03GJ is an isomorphism”.
+**`Stacks.AlgebraicGeometry.ProjTwistDegreeOneCover.isIso_twistSheafMultiplicationMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjTwistDegreeOneCover/Basic.lean, line 187](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjTwistDegreeOneCover/Basic.lean#L187). The attribute's comment: “equation 03GJ is an isomorphism”.
 
 > **Stacks 01MT: Equation 03GJ `𝒪_X(n) ⊗ ℱ(m) ⟶ ℱ(n + m)` is an isomorphism**, for every
 > sheaf of `𝒪_X`-modules `ℱ` and all integers `n` and `m`.
@@ -291,7 +291,7 @@ public theorem isIso_twistSheafMultiplicationMap (hcover : DegreeOneCover 𝒮)
     IsIso (twistSheafMultiplicationMap 𝒮 F n m)
 ```
 
-**`Stacks.AlgebraicGeometry.ProjTwistDegreeOneCover.nonempty_tensorPowModule_iso_twistingSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjTwistDegreeOneCover/Basic.lean, line 258](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjTwistDegreeOneCover/Basic.lean#L258). The attribute's comment: “the induced identification 𝒪\_X(1)^\{⊗ n} ≅ 𝒪\_X(n)”. References: EGA II (2.5.14), “(2.5.14.2)”.
+**`Stacks.AlgebraicGeometry.ProjTwistDegreeOneCover.nonempty_tensorPowModule_iso_twistingSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjTwistDegreeOneCover/Basic.lean, line 258](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjTwistDegreeOneCover/Basic.lean#L258). The attribute's comment: “the induced identification 𝒪\_X(1)^\{⊗ n} ≅ 𝒪\_X(n)”. References: EGA II (2.5.14), “(2.5.14.2)”.
 
 > **Stacks 01MT: the induced identification `𝒪_X(1)^{⊗ n} ≅ 𝒪_X(n)`**, for every integer `n`,
 > at the canonical integral tensor power `Stacks.Ample.tensorPowModule` of Tag 01CU.
@@ -313,7 +313,7 @@ public theorem nonempty_tensorPowModule_iso_twistingSheaf (hcover : DegreeOneCov
       twistingSheaf 𝒮 n)
 ```
 
-**`Stacks.AlgebraicGeometry.ProjTwistDegreeOneCover.isIso_moduleTwistMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjTwistDegreeOneCover/Basic.lean, line 314](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjTwistDegreeOneCover/Basic.lean#L314). The attribute's comment: “equation 01MQ is an isomorphism”. References: EGA II (2.5.15); EGA II (3.2.8).
+**`Stacks.AlgebraicGeometry.ProjTwistDegreeOneCover.isIso_moduleTwistMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjTwistDegreeOneCover/Basic.lean, line 314](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjTwistDegreeOneCover/Basic.lean#L314). The attribute's comment: “equation 01MQ is an isomorphism”. References: EGA II (2.5.15); EGA II (3.2.8).
 
 > **Stacks 01MT: Equation 01MQ `M̃ ⊗ 𝒪_X(n) ⟶ M(n)̃` is an isomorphism**, for every graded
 > `S`-module `M` and every integer `n`.
@@ -325,7 +325,7 @@ public theorem isIso_moduleTwistMap (hcover : DegreeOneCover 𝒮) (n : ℤ) :
     IsIso (ProjShifted.moduleTwistMap 𝒮 𝒨 n)
 ```
 
-**`Stacks.AlgebraicGeometry.ProjTwistDegreeOneCover.moduleTwistIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjTwistDegreeOneCover/Basic.lean, line 324](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjTwistDegreeOneCover/Basic.lean#L324). The attribute's comment: “the induced isomorphism M̃ ⊗ 𝒪\_X(n) ≅ M(n)~”.
+**`Stacks.AlgebraicGeometry.ProjTwistDegreeOneCover.moduleTwistIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjTwistDegreeOneCover/Basic.lean, line 324](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjTwistDegreeOneCover/Basic.lean#L324). The attribute's comment: “the induced isomorphism M̃ ⊗ 𝒪\_X(n) ≅ M(n)~”.
 
 > **Stacks 01MT: the induced isomorphism `M̃ ⊗_{𝒪_X} 𝒪_X(n) = M̃(n) ≅ M(n)̃`.**
 
@@ -342,7 +342,7 @@ public def moduleTwistIso (hcover : DegreeOneCover 𝒮) (n : ℤ) :
 
 [Tag 0AG3](https://stacks.math.columbia.edu/tag/0AG3) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.ProjTwistDegreeOneCover.degreeNToTwistedGlobalSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjTwistDegreeOneCover/GlobalSections.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjTwistDegreeOneCover/GlobalSections.lean#L87).
+**`Stacks.AlgebraicGeometry.ProjTwistDegreeOneCover.degreeNToTwistedGlobalSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjTwistDegreeOneCover/GlobalSections.lean, line 87](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjTwistDegreeOneCover/GlobalSections.lean#L87).
 
 > **Equation 0AG3: the canonical map `M_n ⟶ Γ(X, M̃(n))`.** A homogeneous element of degree
 > `n` gives a global section of `M(n)~`, which the isomorphism `M(n)~ ≅ M̃(n)` of Tag 01MT turns
@@ -357,7 +357,7 @@ public def degreeNToTwistedGlobalSections (hcover : DegreeOneCover 𝒮) (n : �
 
 [Tag 01MU](https://stacks.math.columbia.edu/tag/01MU) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.GoodOpenClose.isGoodOpen_iff_le_whereInvertible_of_pos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GoodOpenClose/Basic.lean, line 156](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GoodOpenClose/Basic.lean#L156). The attribute's comment: “maximality and goodness of the invertible locus”.
+**`Stacks.AlgebraicGeometry.GoodOpenClose.isGoodOpen_iff_le_whereInvertible_of_pos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GoodOpenClose/Basic.lean, line 156](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/GoodOpenClose/Basic.lean#L156). The attribute's comment: “maximality and goodness of the invertible locus”.
 
 > For `0 < d`, an open is good exactly when it lies in the largest good open
 > `whereInvertible 𝒮 d`.
@@ -368,7 +368,7 @@ theorem isGoodOpen_iff_le_whereInvertible_of_pos (d : ℕ) (_hd : 0 < d)
     IsGoodOpen 𝒮 d U ↔ U ≤ whereInvertible 𝒮 d
 ```
 
-**`Stacks.AlgebraicGeometry.GoodOpenClose.whereInvertible_eq_iSup_basicOpen_mul_of_pos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GoodOpenClose/Basic.lean, line 186](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GoodOpenClose/Basic.lean#L186). The attribute's comment: “equality of the two open subsets”.
+**`Stacks.AlgebraicGeometry.GoodOpenClose.whereInvertible_eq_iSup_basicOpen_mul_of_pos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GoodOpenClose/Basic.lean, line 186](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/GoodOpenClose/Basic.lean#L186). The attribute's comment: “equality of the two open subsets”.
 
 > For `0 < d`, the largest good open `whereInvertible 𝒮 d` is the union of the standard opens
 > `D₊(fg)` with `deg f = deg g + d`.
@@ -380,7 +380,7 @@ theorem whereInvertible_eq_iSup_basicOpen_mul_of_pos (d : ℕ) (_hd : 0 < d) :
         AlgebraicGeometry.Proj.basicOpen 𝒮 ((f : S) * (g : S))
 ```
 
-**`Stacks.AlgebraicGeometry.ModuleTwistIso.moduleTwistMap_isIso_on_whereInvertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ModuleTwistIso/Basic.lean, line 391](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ModuleTwistIso/Basic.lean#L391). The attribute's comment: “comparison for associated modules”.
+**`Stacks.AlgebraicGeometry.ModuleTwistIso.moduleTwistMap_isIso_on_whereInvertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ModuleTwistIso/Basic.lean, line 391](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ModuleTwistIso/Basic.lean#L391). The attribute's comment: “comparison for associated modules”.
 
 > On the largest open on which the `d`-divisible twists are invertible and their multiplication
 > maps are isomorphisms, the canonical comparison from the tensor product of an associated sheaf
@@ -397,7 +397,7 @@ theorem moduleTwistMap_isIso_on_whereInvertible (d : ℕ) (_hd : 0 < d) (n : ℤ
 
 [Tag 01MV](https://stacks.math.columbia.edu/tag/01MV) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.ProjInvertibleLocus.nonvanishingLocus_degreeSection_inter`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjInvertibleLocus/NonvanishingLocus.lean, line 534](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjInvertibleLocus/NonvanishingLocus.lean#L534).
+**`Stacks.AlgebraicGeometry.ProjInvertibleLocus.nonvanishingLocus_degreeSection_inter`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjInvertibleLocus/NonvanishingLocus.lean, line 534](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjInvertibleLocus/NonvanishingLocus.lean#L534).
 
 > **Stacks Tag 01MV.** Let `S` be a graded ring, `X = Proj(S)`, `d ≥ 1`, `n ≥ 1` and
 > `f ∈ S_{nd}`. Let `s` be the global section of `𝒪(nd)` attached to `f`. Then, on the open `W_d`
@@ -425,7 +425,7 @@ theorem nonvanishingLocus_degreeSection_inter (d n : ℕ) (f : 𝒮 (n * d)) :
 
 [Tag 01MW](https://stacks.math.columbia.edu/tag/01MW) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.CommonDegreeTwist.exists_degree_forall`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CommonDegreeTwist/AffineSectionBasis.lean, line 285](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/CommonDegreeTwist/AffineSectionBasis.lean#L285). The attribute's comment: “degree\_exists”.
+**`Stacks.AlgebraicGeometry.CommonDegreeTwist.exists_degree_forall`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CommonDegreeTwist/AffineSectionBasis.lean, line 285](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/CommonDegreeTwist/AffineSectionBasis.lean#L285). The attribute's comment: “degree\_exists”.
 
 > **Stacks Tag 01MW.** Let `S` be a graded ring, `X = Proj(S)` and `Y ⊆ X` a quasi-compact
 > open subscheme; write `𝒪_Y(n)` for the restriction of `𝒪_X(n)` to `Y`. Then there is an integer
@@ -479,7 +479,7 @@ theorem exists_degree_forall (Y : (AlgebraicGeometry.Proj 𝒮).Opens)
 
 [Tag 0B5I](https://stacks.math.columbia.edu/tag/0B5I) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.ProjTwistIntegerComparisonStatement.comparison_existsUnique_functorial_degreeZeroId`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TensorSectionNonvanishing/ProjTwistIntegerComparisonStatement.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/TensorSectionNonvanishing/ProjTwistIntegerComparisonStatement.lean#L82). The attribute's comment: “the tag's three assertions in one statement, for the canonical graded-module structure on `M = ⨁_{n ∈ ℤ} Γ(X, ℱ(n))`: the comparison morphism `M̃ ⟶ ℱ` exists and is the unique morphism restricting on each positive-degree standard open to `m / f ^ k ↦ m|_{D₊(f)} ⊗ f ^ (-k)`, it commutes with every morphism of sheaves of modules out of `ℱ`, and it returns each global section of `ℱ` to itself through the identification `ℱ(0) ≅ ℱ`”. References: EGA II (2.6.4), “more general”.
+**`Stacks.AlgebraicGeometry.ProjTwistIntegerComparisonStatement.comparison_existsUnique_functorial_degreeZeroId`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TensorSectionNonvanishing/ProjTwistIntegerComparisonStatement.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/TensorSectionNonvanishing/ProjTwistIntegerComparisonStatement.lean#L82). The attribute's comment: “the tag's three assertions in one statement, for the canonical graded-module structure on `M = ⨁_{n ∈ ℤ} Γ(X, ℱ(n))`: the comparison morphism `M̃ ⟶ ℱ` exists and is the unique morphism restricting on each positive-degree standard open to `m / f ^ k ↦ m|_{D₊(f)} ⊗ f ^ (-k)`, it commutes with every morphism of sheaves of modules out of `ℱ`, and it returns each global section of `ℱ` to itself through the identification `ℱ(0) ≅ ℱ`”. References: EGA II (2.6.4), “more general”.
 
 > Let `S` be a graded ring, `X = Proj S`, let `ℱ` be a sheaf of `𝒪_X`-modules and let
 > `M = ⨁_{n ∈ ℤ} Γ(X, ℱ(n))` be the graded `S`-module of twisted global sections, taken with its
@@ -534,4 +534,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 27.10, Tag 01MM](https://stacks.math.columbia.edu/tag/01MM)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

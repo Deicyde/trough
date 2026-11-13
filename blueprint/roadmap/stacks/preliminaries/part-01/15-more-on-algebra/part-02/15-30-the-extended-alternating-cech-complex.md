@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.30 The extended alternating Čech complex
 
-Section 15.30 of the Stacks Project, [Tag 0G6F](https://stacks.math.columbia.edu/tag/0G6F). 6 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.30 of the Stacks Project, [Tag 0G6F](https://stacks.math.columbia.edu/tag/0G6F). 6 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0G6G, a lemma
 
 [Tag 0G6G](https://stacks.math.columbia.edu/tag/0G6G) in the Stacks Project.
 
-**`ExtendedAlternatingCech.cechd_comp_cechd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Cech/Extended.lean, line 404](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Cech/Extended.lean#L404).
+**`ExtendedAlternatingCech.cechd_comp_cechd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Cech/Extended.lean, line 404](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Cech/Extended.lean#L404).
 
 > **Stacks 0G6G**.
 > For consecutive integer degrees `i, j, k`, the composition `d_{j,k} ∘ d_{i,j}` of the
@@ -30,7 +30,7 @@ theorem cechd_comp_cechd (i j k : ℤ) (hij : (ComplexShape.up ℤ).Rel i j)
 
 [Tag 0G6H](https://stacks.math.columbia.edu/tag/0G6H) in the Stacks Project.
 
-**`ExtendedCech.termTensorEquiv_comm_d`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Cech/Tensor.lean, line 199](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Cech/Tensor.lean#L199).
+**`ExtendedCech.termTensorEquiv_comm_d`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Cech/Tensor.lean, line 198](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Cech/Tensor.lean#L198).
 
 > **Stacks Lemma 15.30.2 (Tag 0G6H).** The degreewise canonical isomorphisms
 > `termTensorEquiv` (induced by `M ⊗_R R_g ≅ M_g`) commute with the Čech
@@ -49,7 +49,7 @@ theorem termTensorEquiv_comm_d (p : ℕ) :
 
 [Tag 0G6I](https://stacks.math.columbia.edu/tag/0G6I) in the Stacks Project.
 
-**`Stacks.CechBaseChange.exists_cechComplexBaseChange_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Cech/BaseChange.lean, line 504](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Cech/BaseChange.lean#L504).
+**`Stacks.CechBaseChange.exists_cechComplexBaseChange_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Cech/BaseChange.lean, line 503](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Cech/BaseChange.lean#L503).
 
 > **Stacks 0G6I**.
 > Let `R → S` be a ring map, `g_i` the image of `f_i` in `S` and `N = S ⊗_R M`. There is an
@@ -68,7 +68,7 @@ theorem exists_cechComplexBaseChange_iso :
 
 [Tag 0G6J](https://stacks.math.columbia.edu/tag/0G6J) in the Stacks Project.
 
-**`Stacks.CechContractible.cechComplex_nullHomotopic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Cech/Contractible.lean, line 677](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Cech/Contractible.lean#L677).
+**`Stacks.CechContractible.cechComplex_nullHomotopic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Cech/Contractible.lean, line 677](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Cech/Contractible.lean#L677).
 
 > **Stacks 0G6J**.
 > If some `f i` is a unit in `R`, then the extended alternating Čech complex of `M` is homotopy
@@ -84,7 +84,7 @@ theorem cechComplex_nullHomotopic
 
 [Tag 0G6K](https://stacks.math.columbia.edu/tag/0G6K) in the Stacks Project.
 
-**`Cech.cechComplex_homology_torsion_support_vanishes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Cech/Cohomology.lean, line 271](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Cech/Cohomology.lean#L271).
+**`Cech.cechComplex_homology_torsion_support_vanishes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Cech/Cohomology.lean, line 271](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Cech/Cohomology.lean#L271).
 
 > **Stacks 0G6K.** The cohomology of the extended alternating Čech complex is
 > concentrated in degrees `0, …, r`; every chosen element acts locally nilpotently
@@ -112,7 +112,7 @@ theorem cechComplex_homology_torsion_support_vanishes
 
 [Tag 0913](https://stacks.math.columbia.edu/tag/0913) in the Stacks Project.
 
-**`Cech.cechComplex_isColimit_koszulPowerComplexes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Cech/KoszulColimit.lean, line 672](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Cech/KoszulColimit.lean#L672).
+**`Cech.cechComplex_isColimit_koszulPowerComplexes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Cech/KoszulColimit.lean, line 672](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Cech/KoszulColimit.lean#L672).
 
 > The extended alternating Čech complex of a finite sequence `f` is the colimit of the
 > regraded Koszul complexes on its positive powers. The transition maps multiply each standard
@@ -167,4 +167,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.30, Tag 0G6F](https://stacks.math.columbia.edu/tag/0G6F)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,7 +8,7 @@ proof: formalized
 
 # 21.44 Strictly perfect complexes
 
-Section 21.44 of the Stacks Project, [Tag 08FK](https://stacks.math.columbia.edu/tag/08FK). 10 tags here are carried by 16 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 21.44 of the Stacks Project, [Tag 08FK](https://stacks.math.columbia.edu/tag/08FK). 10 tags here are carried by 16 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 08FL, a definition
 
@@ -16,13 +16,13 @@ Section 21.44 of the Stacks Project, [Tag 08FK](https://stacks.math.columbia.edu
 
 Declarations registered for the tag:
 
-- [`IsStrictlyPerfect`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/ConeOfAMorphism.lean#L191), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/StrictlyPerfectComplexes.lean, line 41](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/StrictlyPerfectComplexes.lean#L41) (StacksFrontier): “a complex of `O`-modules is strictly perfect”.
+- [`IsStrictlyPerfect`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/ConeOfAMorphism.lean#L191), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/StrictlyPerfectComplexes.lean, line 41](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/StrictlyPerfectComplexes.lean#L41) (StacksFrontier): “a complex of `O`-modules is strictly perfect”.
 
 ## Tag 08FM, a lemma
 
 [Tag 08FM](https://stacks.math.columbia.edu/tag/08FM) in the Stacks Project.
 
-**`mappingCone_isStrictlyPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/ConeOfAMorphism.lean, line 230](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/ConeOfAMorphism.lean#L230).
+**`mappingCone_isStrictlyPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/ConeOfAMorphism.lean, line 230](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/ConeOfAMorphism.lean#L230).
 
 > **Statement 1 (Stacks Tag 08FM).**
 > Let `(C, O)` be a ringed site, and let `f : A ⟶ B` be a morphism of complexes of
@@ -55,7 +55,7 @@ theorem mappingCone_isStrictlyPerfect
 
 [Tag 09J8](https://stacks.math.columbia.edu/tag/09J8) in the Stacks Project.
 
-**`Stacks.StrictlyPerfect.Modules.isStrictlyPerfect_tensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/DirectSummandsOfFiniteFree.lean, line 218](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/DirectSummandsOfFiniteFree.lean#L218).
+**`Stacks.StrictlyPerfect.Modules.isStrictlyPerfect_tensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/DirectSummandsOfFiniteFree.lean, line 218](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/DirectSummandsOfFiniteFree.lean#L218).
 
 > If `E` and `F` are strictly perfect complexes of `R`-modules, then so is their tensor product
 > `E ⊗ F`, the total complex of the tensor product double complex.
@@ -67,7 +67,7 @@ theorem isStrictlyPerfect_tensor
     IsStrictlyPerfect (E ⊗ F)
 ```
 
-**`Stacks.SheafOfModules.Tensor.isStrictlyPerfect_tensorComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/TensorOfStrictlyPerfectComplexes.lean, line 399](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/TensorOfStrictlyPerfectComplexes.lean#L399).
+**`Stacks.SheafOfModules.Tensor.isStrictlyPerfect_tensorComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/TensorOfStrictlyPerfectComplexes.lean, line 399](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/TensorOfStrictlyPerfectComplexes.lean#L399).
 
 > **Stacks 09J8.** The total tensor complex `Tot(K ⊗_O L)` of two strictly perfect complexes
 > of `O`-modules on a ringed site is strictly perfect.
@@ -89,7 +89,7 @@ theorem isStrictlyPerfect_tensorComplex
 
 [Tag 08H3](https://stacks.math.columbia.edu/tag/08H3) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedToposHom.isStrictlyPerfect_pullbackModules`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/PullbackAlongAMorphismOfRingedTopoi.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/PullbackAlongAMorphismOfRingedTopoi.lean#L53).
+**`AlgebraicGeometry.RingedToposHom.isStrictlyPerfect_pullbackModules`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/PullbackAlongAMorphismOfRingedTopoi.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/PullbackAlongAMorphismOfRingedTopoi.lean#L53).
 
 > Let `f : (C, O_C) → (D, O_D)` be a morphism of ringed topoi. If `E` is a strictly perfect
 > complex of `O_D`-modules, then `f^*E`, the degreewise pullback, is a strictly perfect complex of
@@ -103,7 +103,7 @@ theorem isStrictlyPerfect_pullbackModules (f : RingedToposHom X Y)
       (((f.toModulesHom.pullbackModules).mapHomologicalComplex (ComplexShape.up ℤ)).obj E)
 ```
 
-**`Stacks.Sheaves.StrictlyPerfectPullback.pullbackModules_preservesZeroMorphisms`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/ToposPullback.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/ToposPullback.lean#L133). The attribute's comment: “additivity of pullback”.
+**`Stacks.Sheaves.StrictlyPerfectPullback.pullbackModules_preservesZeroMorphisms`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/ToposPullback.lean, line 133](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/ToposPullback.lean#L133). The attribute's comment: “additivity of pullback”.
 
 > **Stacks 08H3, the additivity clause.** Pullback of sheaves of modules along a morphism
 > of ringed topoi preserves zero morphisms, being a left adjoint. This is what lets the functor
@@ -114,7 +114,7 @@ theorem pullbackModules_preservesZeroMorphisms :
     (f.pullbackModules).PreservesZeroMorphisms
 ```
 
-**`Stacks.Sheaves.StrictlyPerfectPullback.isStrictlyPerfect_pullbackModules`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/ToposPullback.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/ToposPullback.lean#L142). The attribute's comment: “strict perfectness of the pullback complex”.
+**`Stacks.Sheaves.StrictlyPerfectPullback.isStrictlyPerfect_pullbackModules`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/ToposPullback.lean, line 142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/ToposPullback.lean#L142). The attribute's comment: “strict perfectness of the pullback complex”.
 
 > **Stacks 08H3, the strict-perfectness clause.** The degreewise pullback of a strictly
 > perfect complex of `O_Y`-modules along a morphism of ringed topoi is a strictly perfect complex
@@ -133,7 +133,7 @@ theorem isStrictlyPerfect_pullbackModules
 
 [Tag 08FN](https://stacks.math.columbia.edu/tag/08FN) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSite.exists_coveringSieve_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/LocalLiftingThroughEpimorphisms.lean, line 277](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/LocalLiftingThroughEpimorphisms.lean#L277).
+**`AlgebraicGeometry.RingedSite.exists_coveringSieve_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/LocalLiftingThroughEpimorphisms.lean, line 277](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/LocalLiftingThroughEpimorphisms.lean#L277).
 
 > **Stacks 08FN.** Let `(C, O)` be a ringed site, `U` an object of `C`, and let
 > `p : G ⟶ F` be an epimorphism of `O|_U`-modules. A map `e : E ⟶ F` whose source is a direct
@@ -165,7 +165,7 @@ theorem exists_coveringSieve_lift (X : RingedSite.{u, t, 0}) (U : X.C)
 
 [Tag 08FP](https://stacks.math.columbia.edu/tag/08FP) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSite.exists_coveringSieve_homotopy_zero_of_acyclic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/LocalNullHomotopy.lean, line 643](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/LocalNullHomotopy.lean#L643). The attribute's comment: “part (1)”. References: SGA 6 I (4.1).
+**`AlgebraicGeometry.RingedSite.exists_coveringSieve_homotopy_zero_of_acyclic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/LocalNullHomotopy.lean, line 643](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/LocalNullHomotopy.lean#L643). The attribute's comment: “part (1)”. References: SGA 6 I (4.1).
 
 > **Stacks 08FP (1).** A map from a strictly perfect complex of `O|_U`-modules to an acyclic
 > complex is null-homotopic after restriction along every arrow of a covering sieve of `U`.
@@ -182,7 +182,7 @@ theorem exists_coveringSieve_homotopy_zero_of_acyclic
             (ComplexShape.up ℤ)).map α) 0)
 ```
 
-**`AlgebraicGeometry.RingedSite.exists_coveringSieve_homotopy_zero_of_isZero_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/LocalNullHomotopy.lean, line 658](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/LocalNullHomotopy.lean#L658). The attribute's comment: “part (2)”. References: SGA 6 I (4.1).
+**`AlgebraicGeometry.RingedSite.exists_coveringSieve_homotopy_zero_of_isZero_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/LocalNullHomotopy.lean, line 658](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/LocalNullHomotopy.lean#L658). The attribute's comment: “part (2)”. References: SGA 6 I (4.1).
 
 > **Stacks 08FP (2).** A map from a strictly perfect complex of `O|_U`-modules supported in
 > degrees `≥ a` is null-homotopic after restriction along every arrow of a covering sieve of `U`,
@@ -205,7 +205,7 @@ theorem exists_coveringSieve_homotopy_zero_of_isZero_homology (a : ℤ)
 
 [Tag 08FQ](https://stacks.math.columbia.edu/tag/08FQ) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSite.exists_coveringSieve_lift_homotopy`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/LocalLiftingThroughCohomologyIsomorphisms.lean, line 199](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/LocalLiftingThroughCohomologyIsomorphisms.lean#L199). References: SGA 6 I (4.2).
+**`AlgebraicGeometry.RingedSite.exists_coveringSieve_lift_homotopy`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/LocalLiftingThroughCohomologyIsomorphisms.lean, line 199](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/LocalLiftingThroughCohomologyIsomorphisms.lean#L199). References: SGA 6 I (4.2).
 
 > **Stacks 08FQ.** Let `(C, O)` be a ringed site and `U` an object of `C`. Given a solid
 > diagram of complexes of `O|_U`-modules
@@ -241,7 +241,7 @@ theorem exists_coveringSieve_lift_homotopy (α : E ⟶ F) (f : G ⟶ F) (a : ℤ
 
 [Tag 08FR](https://stacks.math.columbia.edu/tag/08FR) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSite.exists_coveringSieve_homotopy_zero_of_derived_zero_overMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/LocalComplexMapOfARetraction.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/LocalComplexMapOfARetraction.lean#L117). The attribute's comment: “local\_null\_homotopy, along an arrow of the site”.
+**`AlgebraicGeometry.RingedSite.exists_coveringSieve_homotopy_zero_of_derived_zero_overMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/LocalComplexMapOfARetraction.lean, line 117](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/LocalComplexMapOfARetraction.lean#L117). The attribute's comment: “local\_null\_homotopy, along an arrow of the site”.
 
 > **Stacks 08FR (2), with the restriction to the slice over an arrow `V ⟶ U` of the covering
 > sieve expressed by `SheafOfModules.overMap`** rather than by restriction to an iterated slice.
@@ -263,7 +263,7 @@ theorem exists_coveringSieve_homotopy_zero_of_derived_zero_overMap
           (ComplexShape.up ℤ)).map α) 0)
 ```
 
-**`AlgebraicGeometry.RingedSite.exists_coveringSieve_homotopy_zero_of_derived_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/LocalNullHomotopyOfDerivedZero.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/LocalNullHomotopyOfDerivedZero.lean#L75). The attribute's comment: “local\_null\_homotopy”. References: SGA 6 I (4.1), “special case”.
+**`AlgebraicGeometry.RingedSite.exists_coveringSieve_homotopy_zero_of_derived_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/LocalNullHomotopyOfDerivedZero.lean, line 75](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/LocalNullHomotopyOfDerivedZero.lean#L75). The attribute's comment: “local\_null\_homotopy”. References: SGA 6 I (4.1), “special case”.
 
 > Let `(C, O)` be a ringed site and `U` an object of `C`. Let
 > `α : E ⟶ F` be a map of complexes of `O|_U`-modules with `E` strictly perfect, and suppose the
@@ -283,7 +283,7 @@ theorem exists_coveringSieve_homotopy_zero_of_derived_zero
             (Over.mk f)).mapHomologicalComplex (ComplexShape.up ℤ)).map α) 0)
 ```
 
-**`AlgebraicGeometry.RingedSite.exists_coveringSieve_complexMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/LocalRepresentationOfADerivedMap.lean, line 250](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/LocalRepresentationOfADerivedMap.lean#L250). The attribute's comment: “local\_representation”.
+**`AlgebraicGeometry.RingedSite.exists_coveringSieve_complexMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/LocalRepresentationOfADerivedMap.lean, line 250](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/LocalRepresentationOfADerivedMap.lean#L250). The attribute's comment: “local\_representation”.
 
 > **Stacks 08FR (1).** Let `(C, O)` be a ringed site and `U` an object of `C`. Let `E`, `F` be
 > complexes of `O|_U`-modules with `E` strictly perfect. Any morphism `α : E ⟶ F` of `D(O|_U)` is,
@@ -322,7 +322,7 @@ theorem exists_coveringSieve_complexMap
 
 [Tag 08JH](https://stacks.math.columbia.edu/tag/08JH) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSite.strictlyPerfectHomComparison_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/HomComplexComparison.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/HomComplexComparison.lean#L159). The attribute's comment: “representation by the finite direct-sum Hom complex”.
+**`AlgebraicGeometry.RingedSite.strictlyPerfectHomComparison_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/HomComplexComparison.lean, line 159](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/HomComplexComparison.lean#L159). The attribute's comment: “representation by the finite direct-sum Hom complex”.
 
 > **Stacks 08JH**, the representation statement. For `E` strictly perfect — bounded, with
 > every term a direct summand of a finite free `O`-module — the derived internal Hom
@@ -343,7 +343,7 @@ theorem strictlyPerfectHomComparison_isIso
     IsIso (strictlyPerfectHomComparison X D E F)
 ```
 
-**`AlgebraicGeometry.RingedSite.strictlyPerfectHomDegreeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/HomComplexOfAStrictlyPerfectComplex.lean, line 350](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/HomComplexOfAStrictlyPerfectComplex.lean#L350). The attribute's comment: “finite direct-sum terms and Hom differential”.
+**`AlgebraicGeometry.RingedSite.strictlyPerfectHomDegreeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/HomComplexOfAStrictlyPerfectComplex.lean, line 350](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/HomComplexOfAStrictlyPerfectComplex.lean#L350). The attribute's comment: “finite direct-sum terms and Hom differential”.
 
 > **Stacks 08JH**, degreewise statement. For `E` bounded, the `n`-th term of the internal Hom
 > complex `SheafHom(E, F)` of Stacks 0A8Z is the direct sum, over `q : ℤ`, of the internal Hom
@@ -375,7 +375,7 @@ def strictlyPerfectHomDegreeIso
 
 [Tag 08JI](https://stacks.math.columbia.edu/tag/08JI) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSite.boundedAboveHomRepresentation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedHomOfBoundedAboveSummands.lean, line 145](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedHomOfBoundedAboveSummands.lean#L145). The attribute's comment: “derived internal Hom represented by the Hom complex, with finite direct-sum terms”.
+**`AlgebraicGeometry.RingedSite.boundedAboveHomRepresentation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedHomOfBoundedAboveSummands.lean, line 145](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/InternalHom/DerivedHomOfBoundedAboveSummands.lean#L145). The attribute's comment: “derived internal Hom represented by the Hom complex, with finite direct-sum terms”.
 
 > **Stacks 08JI**, the whole statement. Let `E` be a complex of `O`-modules vanishing above
 > `b` all of whose terms are direct summands of finite free `O`-modules, and let `F` be a complex
@@ -405,4 +405,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 21.44, Tag 08FK](https://stacks.math.columbia.edu/tag/08FK)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

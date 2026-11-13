@@ -1,34 +1,42 @@
 ---
 declaration: section
 origin: cited
-lean: IsRepresentable, StacksRepresentableCFG.representable_iff, StacksRepresentableCFG.representing_object_unique, CategoryTheory.Functor.exists_oneMorphism_inducing_hom, CategoryTheory.Functor.twoIsoQuotientEquivHomOfRepresentableBy
+lean: StacksRepresentableCFG.IsRepresentable, StacksRepresentableCFG.representable_iff, StacksRepresentableCFG.representing_pair_unique, CategoryTheory.Functor.exists_oneMorphism_inducing_hom, CategoryTheory.Functor.twoIsoQuotientEquivHomOfRepresentableBy
 statement: formalized
 proof: formalized
 ---
 
 # 4.40 Representable categories fibred in groupoids
 
-Section 4.40 of the Stacks Project, [Tag 04SE](https://stacks.math.columbia.edu/tag/04SE). 3 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 4.40 of the Stacks Project, [Tag 04SE](https://stacks.math.columbia.edu/tag/04SE). 3 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0046, a definition
 
 [Tag 0046](https://stacks.math.columbia.edu/tag/0046) in the Stacks Project.
 
-**`IsRepresentable`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedInGroupoids/Representability/Defs.lean, line 51](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/FiberedInGroupoids/Representability/Defs.lean#L51).
+**`StacksRepresentableCFG.IsRepresentable`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedInGroupoids/Representability/Criterion.lean, line 254](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedInGroupoids/Representability/Criterion.lean#L254). The attribute's comment: “stated for any category over C; Stacks' case is p fibred in groupoids, where an equivalence over C is an equivalence in the 2-category of groupoids over C (02XS)”.
 
-> A category fibred in groupoids `p : 𝒮 ⥤ 𝒞` is *representable* if there exists
-> an object `X` of `𝒞` and an equivalence `j : 𝒮 ≌ Over X` over `𝒞`.
+> **Stacks 0046.** `p : S ⥤ C` is *representable* if it is representable by some object `X` of
+> `C`: there are an object `X` of `C` and an equivalence `j : S → C/X` over `C`
+> (`StacksRepresentableCFG.RepresentableBy`), i.e. strict 1-morphisms over `C` in both directions
+> with unit and counit 2-isomorphisms over `C`.
+>
+> The predicate is stated for an arbitrary category `p : S ⥤ C` over `C`; Stacks applies it to
+> categories fibred in groupoids. For those it is exactly the source's notion: `C/X` is fibred in
+> groupoids, and the 2-category of categories fibred in groupoids over `C` (Stacks 02XS) has as
+> 1-morphisms the functors strictly over `C` and as 2-morphisms the transformations lying over
+> identities, as in the 2-category of categories over `C` (Stacks 003Y), so an equivalence in it
+> is exactly an equivalence over `C` between `S` and `C/X`.
 
 ```lean
-structure IsRepresentable {𝒞 : Type*} [Category 𝒞] {𝒮 : Type*} [Category 𝒮]
-    (p : 𝒮 ⥤ 𝒞) [IsFibered p] : Prop
+def IsRepresentable (p : 𝒮 ⥤ 𝒞) : Prop
 ```
 
 ## Tag 02Y3, a lemma
 
 [Tag 02Y3](https://stacks.math.columbia.edu/tag/02Y3) in the Stacks Project.
 
-**`StacksRepresentableCFG.representable_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedInGroupoids/Representability/Criterion.lean, line 829](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/FiberedInGroupoids/Representability/Criterion.lean#L829). The attribute's comment: “(1)”. References: SGA 4 I (6.5), “(ii)⇔(iv), special case”.
+**`StacksRepresentableCFG.representable_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedInGroupoids/Representability/Criterion.lean, line 843](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedInGroupoids/Representability/Criterion.lean#L843). The attribute's comment: “(1)”. References: SGA 4 I (6.5), “(ii)⇔(iv), special case”.
 
 > **Stacks 02Y3** (part 1). A category fibred in groupoids `p : S ⥤ C` is representable
 > if and only if `S` is fibred in setoids and its presheaf of isomorphism classes
@@ -39,25 +47,27 @@ theorem representable_iff (p : 𝒮 ⥤ 𝒞) :
     IsRepresentable p ↔ (p.IsFiberedInSetoids ∧ IsoClassRepresentable p)
 ```
 
-**`StacksRepresentableCFG.representing_object_unique`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedInGroupoids/Representability/Criterion.lean, line 841](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/FiberedInGroupoids/Representability/Criterion.lean#L841). The attribute's comment: “(2)”.
+**`StacksRepresentableCFG.representing_pair_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedInGroupoids/Representability/RepresentingPairUnique.lean, line 128](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedInGroupoids/Representability/RepresentingPairUnique.lean#L128). The attribute's comment: “(2); stated for any category over C, Stacks' case is p fibred in groupoids”.
 
-> **Stacks 02Y3** (part 2). If `p : S ⥤ C` is representable by both `X` (via `j`) and `X'`
-> (via `j'`), then the representing objects are **canonically isomorphic** in `C`: this is
-> the isomorphism `X' ≅ X` induced by the composite equivalence over `C`, obtained by
-> transporting the terminal object `(X', 𝟙 X')` of `Over X'` to the terminal object
-> `(X, 𝟙 X)` of `Over X`.
+> **Stacks 02Y3** (part 2). If a category `p : 𝒮 ⥤ 𝒞` is representable, the pair `(X, j)`,
+> with `j : 𝒮 → 𝒞/X` an equivalence over `𝒞`, is uniquely determined up to isomorphism: for
+> two such pairs `(X, j)` and `(X', j')` there is an isomorphism `φ : X' ≅ X` in `𝒞` and a
+> 2-isomorphism `α : (𝒞/φ) ∘ j' ≅ j` over `𝒞`, where `𝒞/φ = Over.map φ.hom : 𝒞/X' ⥤ 𝒞/X`;
+> "over `𝒞`" means that `α` whiskered with `Over.forget X` is the identity 2-cell.
 
 ```lean
-noncomputable def representing_object_unique (p : 𝒮 ⥤ 𝒞)
-    {X X' : 𝒞} (j : RepresentableBy p X) (j' : RepresentableBy p X') :
-    X' ≅ X
+theorem representing_pair_unique (p : 𝒮 ⥤ 𝒞) {X X' : 𝒞} (j : RepresentableBy p X)
+    (j' : RepresentableBy p X') :
+    ∃ φ : X' ≅ X, ∃ α : j'.hom.functor ⋙ Over.map φ.hom ≅ j.hom.functor,
+      Functor.whiskerRight α.hom (Over.forget X) =
+        eqToHom (by rw [Functor.assoc, Over.mapForget_eq, j'.hom.w, j.hom.w])
 ```
 
 ## Tag 04SF, a lemma
 
 [Tag 04SF](https://stacks.math.columbia.edu/tag/04SF) in the Stacks Project.
 
-**`CategoryTheory.Functor.exists_oneMorphism_inducing_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/RepresentableFibred.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/FiberedCategory/RepresentableFibred.lean#L195). The attribute's comment: “Given `φ : X ⟶ Y` there is a 1-morphism inducing it, unique up to unique 2-isomorphism.”.
+**`CategoryTheory.Functor.exists_oneMorphism_inducing_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/RepresentableFibred.lean, line 195](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedCategory/RepresentableFibred.lean#L195). The attribute's comment: “Given `φ : X ⟶ Y` there is a 1-morphism inducing it, unique up to unique 2-isomorphism.”.
 
 > **Stacks 04SF**, the precise form: given `φ : X ⟶ Y` there is a 1-morphism `G : 𝒳 ⥤ 𝒴` over
 > `𝒞` which induces `φ` on isomorphism classes of objects, and any 1-morphism inducing `φ` is
@@ -75,7 +85,7 @@ theorem exists_oneMorphism_inducing_hom (φ : X ⟶ Y) :
         ∃! e : G ≅ H, ∀ x : 𝒳, q.IsHomLift (𝟙 (p.obj x)) (e.hom.app x)
 ```
 
-**`CategoryTheory.Functor.twoIsoQuotientEquivHomOfRepresentableBy`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/RepresentableFibred.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/FiberedCategory/RepresentableFibred.lean#L225).
+**`CategoryTheory.Functor.twoIsoQuotientEquivHomOfRepresentableBy`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/RepresentableFibred.lean, line 225](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedCategory/RepresentableFibred.lean#L225).
 
 > **Stacks 04SF.** Let `𝒳`, `𝒴` be categories fibred in groupoids over `𝒞` representable by
 > objects `X`, `Y` of `𝒞`. Then `Mor_{Cat/𝒞}(𝒳, 𝒴)` modulo 2-isomorphism is `Mor_𝒞(X, Y)`. The
@@ -95,4 +105,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 4.40, Tag 04SE](https://stacks.math.columbia.edu/tag/04SE)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

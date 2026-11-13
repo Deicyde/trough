@@ -8,13 +8,13 @@ proof: formalized
 
 # 24.33 Differential graded modules on a category
 
-Section 24.33 of the Stacks Project, [Tag 0GZ8](https://stacks.math.columbia.edu/tag/0GZ8). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 24.33 of the Stacks Project, [Tag 0GZ8](https://stacks.math.columbia.edu/tag/0GZ8). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0GZ9, a definition
 
 [Tag 0GZ9](https://stacks.math.columbia.edu/tag/0GZ9) in the Stacks Project.
 
-**`SheafOfModules.DifferentialGradedModule.Chaotic.QC`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedSectionQuasiCoherent.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedSectionQuasiCoherent.lean#L125). The attribute's comment: “the full subcategory QC(A, d) of D(A, d)”.
+**`SheafOfModules.DifferentialGradedModule.Chaotic.QC`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedSectionQuasiCoherent.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedSectionQuasiCoherent.lean#L125). The attribute's comment: “the full subcategory QC(A, d) of D(A, d)”.
 
 > **The full subcategory `QC(A, d)` of `D(A, d)`**: an object `X` lies in it when, for every
 > right differential graded `A`-module `M` computing `X` and every morphism `U → V` of the chaotic
@@ -35,7 +35,7 @@ def QC : ObjectProperty (derivedCategory.{t, a, a} A)
 
 [Tag 0GZA](https://stacks.math.columbia.edu/tag/0GZA) in the Stacks Project.
 
-**`SheafOfModules.DifferentialGradedModule.Chaotic.qc_isClosedUnderIsomorphisms_isSaturated_isTriangulated_isClosedUnderCoproducts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedSectionQuasiCoherentSubcategory.lean, line 251](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedSectionQuasiCoherentSubcategory.lean#L251).
+**`SheafOfModules.DifferentialGradedModule.Chaotic.qc_isClosedUnderIsomorphisms_isSaturated_isTriangulated_isClosedUnderCoproducts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedSectionQuasiCoherentSubcategory.lean, line 251](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedSectionQuasiCoherentSubcategory.lean#L251).
 
 > **Stacks 0GZA.** *Let `C` be a category, viewed as a site with the chaotic topology, let `O`
 > be a sheaf of rings on `C` and let `(A, d)` be a sheaf of differential graded `O`-algebras. The
@@ -59,7 +59,7 @@ theorem qc_isClosedUnderIsomorphisms_isSaturated_isTriangulated_isClosedUnderCop
 
 [Tag 0GZC](https://stacks.math.columbia.edu/tag/0GZC) in the Stacks Project.
 
-**`SheafOfModules.DifferentialGradedModule.qc_chaoticDerivedPullback_chaotic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedChaoticPullbackQuasiCoherent.lean, line 315](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedChaoticPullbackQuasiCoherent.lean#L315).
+**`SheafOfModules.DifferentialGradedModule.qc_chaoticDerivedPullback_chaotic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedChaoticPullbackQuasiCoherent.lean, line 318](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedChaoticPullbackQuasiCoherent.lean#L318).
 
 > **Stacks 0GZC.** Let `u : C' ⥤ C` be a functor of categories with the chaotic topology,
 > `g : (Sh(C'), O') → (Sh(C), O)` the induced morphism of ringed topoi together with
@@ -85,4 +85,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 24.33, Tag 0GZ8](https://stacks.math.columbia.edu/tag/0GZ8)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 47.13 Trivial duality for a ring map
 
-Section 47.13 of the Stacks Project, [Tag 0A6Z](https://stacks.math.columbia.edu/tag/0A6Z). 9 tags here are carried by 23 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 47.13 of the Stacks Project, [Tag 0A6Z](https://stacks.math.columbia.edu/tag/0A6Z). 9 tags here are carried by 23 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0A70, a lemma
 
 [Tag 0A70](https://stacks.math.columbia.edu/tag/0A70) in the Stacks Project.
 
-**`Dualizing.AnyModel.restrictScalarsDerived_adj_derivedHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DerivedHomAnyModel.lean, line 141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/DerivedHomAnyModel.lean#L141).
+**`Dualizing.AnyModel.restrictScalarsDerived_adj_derivedHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DerivedHomAnyModel.lean, line 141](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/DerivedHomAnyModel.lean#L141).
 
 > **Stacks 0A70.** Derived coextension of scalars `RHom_A(B, -)` is right adjoint to restriction
 > of scalars from `D(B)` to `D(A)`, for arbitrary chosen models of the two derived categories.
@@ -33,7 +33,7 @@ theorem restrictScalarsDerived_adj_derivedHom (f : A →+* B) :
 
 [Tag 0C0F](https://stacks.math.columbia.edu/tag/0C0F) in the Stacks Project.
 
-**`Dualizing.derivedHomCompIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TrivialDuality.lean, line 356](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/TrivialDuality.lean#L356).
+**`Dualizing.derivedHomCompIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TrivialDuality.lean, line 356](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/TrivialDuality.lean#L356).
 
 > For ring maps `A → B → C`, the composite `RHom_B(C, -) ∘ RHom_A(B, -)` is naturally
 > isomorphic to `RHom_A(C, -)`.
@@ -49,7 +49,7 @@ theorem derivedHomCompIso (f : A →+* B) (g : B →+* C) :
 
 [Tag 0A71](https://stacks.math.columbia.edu/tag/0A71) in the Stacks Project.
 
-**`Dualizing.restrictDerivedHomIsoDerivedHomAlong`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/CoextendRestrictComparison/Constructed.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/CoextendRestrictComparison/Constructed.lean#L107). The attribute's comment: “derived Hom after restriction, with both derived functors constructed: RHom(B, -) is AnyModel.derivedHom, the total right derived functor of coextension of scalars, and RHom\_A(B, -) is derivedHomAlong, that of Hom\_A(B, -). Both rings in one universe, modules in max v u, arbitrary models of the two derived categories”.
+**`Dualizing.restrictDerivedHomIsoDerivedHomAlong`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/CoextendRestrictComparison/Constructed.lean, line 107](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/CoextendRestrictComparison/Constructed.lean#L107). The attribute's comment: “derived Hom after restriction, with both derived functors constructed: RHom(B, -) is AnyModel.derivedHom, the total right derived functor of coextension of scalars, and RHom\_A(B, -) is derivedHomAlong, that of Hom\_A(B, -). Both rings in one universe, modules in max v u, arbitrary models of the two derived categories”.
 
 > **Stacks 0A71**, the displayed formula, with both derived functors constructed:
 > `φ_* RHom(B, K) = RHom_A(B, K)`, where `φ_* : D(B) ⥤ D(A)` is restriction of scalars.
@@ -72,7 +72,7 @@ def restrictDerivedHomIsoDerivedHomAlong (f : A →+* B) :
         derivedHomAlongUnit.{u, v, wA} f }
 ```
 
-**`Dualizing.derivedHomHomologyLinearEquivExt`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/CoextendRestrictComparison/Constructed.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/CoextendRestrictComparison/Constructed.lean#L129). The attribute's comment: “cohomology as Ext, with the derived functor constructed: RHom(B, -) is AnyModel.derivedHom, the total right derived functor of coextension of scalars. Both rings in one universe, modules in max v u, arbitrary models of the two derived categories”.
+**`Dualizing.derivedHomHomologyLinearEquivExt`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/CoextendRestrictComparison/Constructed.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/CoextendRestrictComparison/Constructed.lean#L129). The attribute's comment: “cohomology as Ext, with the derived functor constructed: RHom(B, -) is AnyModel.derivedHom, the total right derived functor of coextension of scalars. Both rings in one universe, modules in max v u, arbitrary models of the two derived categories”.
 
 > **Stacks 0A71**, the "in particular" clause, with the derived functor constructed:
 > `R^q Hom(B, K) = Ext^q_A(B, K)`.
@@ -89,7 +89,7 @@ def derivedHomHomologyLinearEquivExt (f : A →+* B) :
       (AnyModel.derivedHomUnit.{u, v, wA, wB} f)
 ```
 
-**`Dualizing.derivedCoextendScalarsCompDerivedRestrictScalarsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TrivialDualityRing/Basic.lean, line 247](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/TrivialDualityRing/Basic.lean#L247). The attribute's comment: “derived Hom after restriction, for arbitrary right derived functors RF of coextension of scalars and RH of Hom\_A(B, -); the data RF, alpha, RH, beta is discharged by AnyModel.derivedHom with AnyModel.derivedHomUnit and derivedHomAlong with derivedHomAlongUnit, giving the unconditional restrictDerivedHomIsoDerivedHomAlong”.
+**`Dualizing.derivedCoextendScalarsCompDerivedRestrictScalarsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TrivialDualityRing/Basic.lean, line 247](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/TrivialDualityRing/Basic.lean#L247). The attribute's comment: “derived Hom after restriction, for arbitrary right derived functors RF of coextension of scalars and RH of Hom\_A(B, -); the data RF, alpha, RH, beta is discharged by AnyModel.derivedHom with AnyModel.derivedHomUnit and derivedHomAlong with derivedHomAlongUnit, giving the unconditional restrictDerivedHomIsoDerivedHomAlong”.
 
 > Restricting derived coextension gives `RHom_A(B, -)`, with the comparison uniquely
 > specified by its compatibility with the derived units.
@@ -111,7 +111,7 @@ def derivedCoextendScalarsCompDerivedRestrictScalarsIso
       restrictedDerivedUnit f RF α ≫ Functor.whiskerLeft DerivedCategory.Qh e.hom = β }
 ```
 
-**`Dualizing.derivedCoextendScalarsHomologyLinearEquivExt`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TrivialDualityRing/Ext.lean, line 1024](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/TrivialDualityRing/Ext.lean#L1024). The attribute's comment: “cohomology as Ext, for an arbitrary right derived functor RF of coextension of scalars; the data RF, alpha is discharged by AnyModel.derivedHom with AnyModel.derivedHomUnit, giving the unconditional derivedHomHomologyLinearEquivExt”.
+**`Dualizing.derivedCoextendScalarsHomologyLinearEquivExt`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TrivialDualityRing/Ext.lean, line 1024](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/TrivialDualityRing/Ext.lean#L1024). The attribute's comment: “cohomology as Ext, for an arbitrary right derived functor RF of coextension of scalars; the data RF, alpha is discharged by AnyModel.derivedHom with AnyModel.derivedHomUnit, giving the unconditional derivedHomHomologyLinearEquivExt”.
 
 > The cohomology of derived coextension is Ext, naturally and compatibly with the derived
 > unit (and hence with the restriction comparison).
@@ -132,7 +132,7 @@ def derivedCoextendScalarsHomologyLinearEquivExt
 
 [Tag 0A72](https://stacks.math.columbia.edu/tag/0A72) in the Stacks Project.
 
-**`Dualizing.isBoundedBelowCoherent_obj_rightDerivedCoextendScalars`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/CoextendRestrictComparison/A72.lean, line 61](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/CoextendRestrictComparison/A72.lean#L61).
+**`Dualizing.isBoundedBelowCoherent_obj_rightDerivedCoextendScalars`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/CoextendRestrictComparison/A72.lean, line 61](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/CoextendRestrictComparison/A72.lean#L61).
 
 > Derived coextension of scalars along a finite homomorphism of Noetherian rings sends
 > bounded-below complexes with coherent cohomology to bounded-below complexes with coherent
@@ -159,7 +159,7 @@ theorem isBoundedBelowCoherent_obj_rightDerivedCoextendScalars
 
 [Tag 0BZB](https://stacks.math.columbia.edu/tag/0BZB) in the Stacks Project.
 
-**`Dualizing.DGAResolution`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DifferentialGradedResolution.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/DifferentialGradedResolution.lean#L109). The attribute's comment: “resolution data”.
+**`Dualizing.DGAResolution`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DifferentialGradedResolution.lean, line 109](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/DifferentialGradedResolution.lean#L109). The attribute's comment: “resolution data”.
 
 > **Situation 0BZB.** A differential graded resolution of a commutative `R`-algebra `A`: a
 > differential graded `R`-algebra `E` together with a homomorphism to `A`, viewed as a
@@ -170,7 +170,7 @@ theorem isBoundedBelowCoherent_obj_rightDerivedCoextendScalars
 structure DGAResolution (R : Type u) [CommRing R] (A : Type u) [CommRing A] [Algebra R A]
 ```
 
-**`Dualizing.DGAResolution.derivedEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DifferentialGradedResolution.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/DifferentialGradedResolution.lean#L125). The attribute's comment: “ordinary derived equivalence”.
+**`Dualizing.DGAResolution.derivedEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DifferentialGradedResolution.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/DifferentialGradedResolution.lean#L125). The attribute's comment: “ordinary derived equivalence”.
 
 > **The horizontal equivalence of Situation 0BZB.** Extension of scalars along the resolution,
 > followed by the identification of differential graded modules over `A` in degree zero with
@@ -181,7 +181,7 @@ noncomputable def derivedEquivalence :
     derivedCategory' S.E ≌ DerivedCategory (ModuleCat.{u} A)
 ```
 
-**`Dualizing.DGAResolution.restrictionTriangle`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DifferentialGradedResolution.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/DifferentialGradedResolution.lean#L133). The attribute's comment: “restriction triangle”.
+**`Dualizing.DGAResolution.restrictionTriangle`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DifferentialGradedResolution.lean, line 133](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/DifferentialGradedResolution.lean#L133). The attribute's comment: “restriction triangle”.
 
 > **The first diagram of Situation 0BZB commutes.** Passing from `D(A)` to `D(E, d)` through
 > the equivalence and then forgetting the `E`-action is restriction of scalars along `R → A`.
@@ -192,7 +192,7 @@ noncomputable def restrictionTriangle :
       (ModuleCat.restrictScalars.{u} (algebraMap R A)).mapDerivedCategory
 ```
 
-**`Dualizing.DGAResolution.derivedExtension_comp_iso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DifferentialGradedResolution.lean, line 269](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/DifferentialGradedResolution.lean#L269). The attribute's comment: “extension triangle, for an arbitrary left adjoint F of the forgetful functor; its data F, adjF is discharged by derivedExtensionToDGA and derivedExtensionToDGA\_adj, giving the unconditional DGAResolution.derivedExtensionToDGA\_comp\_iso”.
+**`Dualizing.DGAResolution.derivedExtension_comp_iso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DifferentialGradedResolution.lean, line 269](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/DifferentialGradedResolution.lean#L269). The attribute's comment: “extension triangle, for an arbitrary left adjoint F of the forgetful functor; its data F, adjF is discharged by derivedExtensionToDGA and derivedExtensionToDGA\_adj, giving the unconditional DGAResolution.derivedExtensionToDGA\_comp\_iso”.
 
 > **The second diagram of Situation 0BZB commutes.** Derived extension of scalars from `D(R)`
 > to `D(E, d)` followed by the equivalence `- ⊗_E^𝐋 A` is derived extension of scalars
@@ -211,7 +211,7 @@ noncomputable def derivedExtension_comp_iso
     F ⋙ S.derivedEquivalence.functor ≅ ordinaryExtension (R := R) (A := A)
 ```
 
-**`Dualizing.DGAResolution.derivedExtensionToDGA_comp_iso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DifferentialGradedResolutionExtension.lean, line 105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/DifferentialGradedResolutionExtension.lean#L105). The attribute's comment: “extension triangle, with the functor constructed”.
+**`Dualizing.DGAResolution.derivedExtensionToDGA_comp_iso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DifferentialGradedResolutionExtension.lean, line 105](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/DifferentialGradedResolutionExtension.lean#L105). The attribute's comment: “extension triangle, with the functor constructed”.
 
 > **The second diagram of Situation 0BZB commutes, with no assumed functor.** Derived
 > extension of scalars `- ⊗_R^𝐋 E : D(R) ⥤ D(E, d)` followed by the horizontal equivalence
@@ -228,13 +228,13 @@ def derivedExtensionToDGA_comp_iso (S : Dualizing.DGAResolution R A) :
 
 Declarations registered for the tag:
 
-- [`DifferentialGraded.Bimodule.derivedExtensionEquivalence`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceQuasiIso.lean#L329), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/RingTheory/Dualizing/DifferentialGradedResolution.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/DifferentialGradedResolution.lean#L99) (StacksFrontier): “horizontal equivalence”.
+- [`DifferentialGraded.Bimodule.derivedExtensionEquivalence`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedEquivalenceQuasiIso.lean#L329), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/RingTheory/Dualizing/DifferentialGradedResolution.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/DifferentialGradedResolution.lean#L99) (StacksFrontier): “horizontal equivalence”.
 
 ## Tag 0BZC, a lemma
 
 [Tag 0BZC](https://stacks.math.columbia.edu/tag/0BZC) in the Stacks Project.
 
-**`Dualizing.DGAResolution.derivedHom_comp_derivedEquivalence_iso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DifferentialGradedResolution.lean, line 210](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/DifferentialGradedResolution.lean#L210).
+**`Dualizing.DGAResolution.derivedHom_comp_derivedEquivalence_iso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DifferentialGradedResolution.lean, line 210](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/DifferentialGradedResolution.lean#L210).
 
 > **Stacks 0BZC.** In Situation 0BZB the functor `R Hom(A, -) : D(R) ⥤ D(A)` is the
 > composition of `R Hom(E, -) : D(R) ⥤ D(E, d)` with the equivalence `- ⊗_E^𝐋 A : D(E, d) ⥤ D(A)`.
@@ -254,7 +254,7 @@ noncomputable def derivedHom_comp_derivedEquivalence_iso
 
 [Tag 0BZD](https://stacks.math.columbia.edu/tag/0BZD) in the Stacks Project.
 
-**`Dualizing.derivedHomIsoGradedDualTensor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DifferentialGradedResolution.lean, line 366](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/DifferentialGradedResolution.lean#L366).
+**`Dualizing.derivedHomIsoGradedDualTensor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DifferentialGradedResolution.lean, line 366](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/DifferentialGradedResolution.lean#L366).
 
 > **Stacks 0BZD.** Let `(E, d)` be a differential graded algebra over a commutative ring `R` —
 > in Situation 0BZB, the algebra resolving the `R`-algebra `A` — and let
@@ -284,7 +284,7 @@ noncomputable def derivedHomIsoGradedDualTensor
 
 [Tag 0BZE](https://stacks.math.columbia.edu/tag/0BZE) in the Stacks Project.
 
-**`Dualizing.exists_derivedHom_iso_derivedTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DerivedHomPerfectTensor.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/DerivedHomPerfectTensor.lean#L216). The attribute's comment: “the functor R Hom(A, -) is derived tensoring over R with a differential graded (R, A)-bimodule whose class in D(A) is R Hom(A, R), read through the degree-zero equivalences”.
+**`Dualizing.exists_derivedHom_iso_derivedTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DerivedHomPerfectTensor.lean, line 216](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/DerivedHomPerfectTensor.lean#L216). The attribute's comment: “the functor R Hom(A, -) is derived tensoring over R with a differential graded (R, A)-bimodule whose class in D(A) is R Hom(A, R), read through the degree-zero equivalences”.
 
 > **Stacks 0BZE.** Let `R → A` be a map of commutative rings making `A` a
 > perfect `R`-module. Then `R Hom(A, -) : D(R) ⥤ D(A)` is a derived tensor product:
@@ -313,7 +313,7 @@ theorem exists_derivedHom_iso_derivedTensor
               M.rightModule))
 ```
 
-**`Dualizing.nonempty_derivedHom_iso_canonicalDerivedTensor_of_perfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TrivialDualityBundlePerfect.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/TrivialDualityBundlePerfect.lean#L76). The attribute's comment: “in the derived change-of-rings shape of Tag 06Y6, at module universe equal to the ring universe, with no carried hypothesis”.
+**`Dualizing.nonempty_derivedHom_iso_canonicalDerivedTensor_of_perfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TrivialDualityBundlePerfect.lean, line 76](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/TrivialDualityBundlePerfect.lean#L76). The attribute's comment: “in the derived change-of-rings shape of Tag 06Y6, at module universe equal to the ring universe, with no carried hypothesis”.
 
 > **Stacks 0BZE in the derived change-of-rings shape of Tag 06Y6.** Let `f : R → A` make `A` a
 > perfect `R`-module and let `L` be a complex of `A`-modules whose class in `D(A)` is the value
@@ -339,7 +339,7 @@ theorem nonempty_derivedHom_iso_canonicalDerivedTensor_of_perfect (f : R →+* A
       (canonicalDerivedTensorChangeOfRings.{u, u, u} f L).F)
 ```
 
-**`Dualizing.derivedHomIsoCanonicalDerivedTensorOfPerfect`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TrivialDualityBundlePerfect.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/TrivialDualityBundlePerfect.lean#L137). The attribute's comment: “in the derived change-of-rings shape of Tag 06Y6, at module universe equal to the ring universe, with no carried hypothesis; the isomorphism is built, at the canonical tensor factor, rather than shown to exist at an arbitrary representative”.
+**`Dualizing.derivedHomIsoCanonicalDerivedTensorOfPerfect`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TrivialDualityBundlePerfect.lean, line 137](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/TrivialDualityBundlePerfect.lean#L137). The attribute's comment: “in the derived change-of-rings shape of Tag 06Y6, at module universe equal to the ring universe, with no carried hypothesis; the isomorphism is built, at the canonical tensor factor, rather than shown to exist at an arbitrary representative”.
 
 > **Stacks 0BZE in the derived change-of-rings shape of Tag 06Y6, as data.** For `f : R → A`
 > making `A` a perfect `R`-module, `RHom_R(A, -) : D(R) ⥤ D(A)` *is* the canonical derived
@@ -364,7 +364,7 @@ def derivedHomIsoCanonicalDerivedTensorOfPerfect (f : R →+* A)
         (canonicalDerivedHomTensorComplex f)).F
 ```
 
-**`Dualizing.nonempty_derivedHom_iso_canonicalDerivedTensor_of_perfect_anyModuleUniverse`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TrivialDualityBundlePerfectAnyModuleUniverse.lean, line 324](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/TrivialDualityBundlePerfectAnyModuleUniverse.lean#L324). The attribute's comment: “in the derived change-of-rings shape of Tag 06Y6, at an arbitrary module universe above the ring universe, with no carried hypothesis”.
+**`Dualizing.nonempty_derivedHom_iso_canonicalDerivedTensor_of_perfect_anyModuleUniverse`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TrivialDualityBundlePerfectAnyModuleUniverse.lean, line 324](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/TrivialDualityBundlePerfectAnyModuleUniverse.lean#L324). The attribute's comment: “in the derived change-of-rings shape of Tag 06Y6, at an arbitrary module universe above the ring universe, with no carried hypothesis”.
 
 > **Stacks 0BZE in the derived change-of-rings shape of Tag 06Y6, at an arbitrary module
 > universe.** Let `f : R → A` make `A` a perfect `R`-module and let `L` be a complex of `A`-modules,
@@ -396,7 +396,7 @@ theorem nonempty_derivedHom_iso_canonicalDerivedTensor_of_perfect_anyModuleUnive
       (canonicalDerivedTensorChangeOfRings.{u, u, max v u} f L).F)
 ```
 
-**`Dualizing.nonempty_restrictScalars_derivedHom_iso_derivedTensor_unitDual`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TrivialDualityPerfectObjectwise.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/TrivialDualityPerfectObjectwise.lean#L107). The attribute's comment: “objectwise and after restriction of scalars to the base”.
+**`Dualizing.nonempty_restrictScalars_derivedHom_iso_derivedTensor_unitDual`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TrivialDualityPerfectObjectwise.lean, line 107](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/TrivialDualityPerfectObjectwise.lean#L107). The attribute's comment: “objectwise and after restriction of scalars to the base”.
 
 > **Stacks 0BZE, objectwise and after restriction of scalars.** Let `f : R → A` be a
 > homomorphism of commutative rings with `A` perfect as an `R`-module. For every object `K` of
@@ -440,7 +440,7 @@ theorem nonempty_restrictScalars_derivedHom_iso_derivedTensor_unitDual (f : R �
 
 [Tag 0BZH](https://stacks.math.columbia.edu/tag/0BZH) in the Stacks Project.
 
-**`Dualizing.InvertibleKernel.conormal_invertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TrivialDualityInvertibleKernel.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/TrivialDualityInvertibleKernel.lean#L137). The attribute's comment: “the conormal module `I ⊗_R A` is an invertible `A`-module”.
+**`Dualizing.InvertibleKernel.conormal_invertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TrivialDualityInvertibleKernel.lean, line 137](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/TrivialDualityInvertibleKernel.lean#L137). The attribute's comment: “the conormal module `I ⊗_R A` is an invertible `A`-module”.
 
 > **The conormal module of a surjection with invertible kernel is invertible.** Invertibility
 > is stable under base change, here along `R → A` itself.
@@ -454,7 +454,7 @@ theorem conormal_invertible (hI : Module.Invertible R (RingHom.ker (algebraMap R
     Module.Invertible A (conormal.{u, v} R A)
 ```
 
-**`Dualizing.InvertibleKernel.conormalInverse_tensor_conormal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TrivialDualityInvertibleKernel.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/TrivialDualityInvertibleKernel.lean#L148). The attribute's comment: “`N` is the inverse of the invertible `A`-module `I ⊗_R A`”.
+**`Dualizing.InvertibleKernel.conormalInverse_tensor_conormal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TrivialDualityInvertibleKernel.lean, line 148](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/TrivialDualityInvertibleKernel.lean#L148). The attribute's comment: “`N` is the inverse of the invertible `A`-module `I ⊗_R A`”.
 
 > **`N` is a tensor inverse of the conormal module**: `N ⊗_A (I ⊗_R A) ≅ A`.
 >
@@ -468,7 +468,7 @@ def conormalInverse_tensor_conormal
     conormalInverse.{u, v} R A ⊗[A] conormal.{u, v} R A ≃ₗ[A] A
 ```
 
-**`Dualizing.InvertibleKernel.nonempty_derivedHom_iso_derivedTensor_conormalInverseShift_anyModuleUniverse`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TrivialDualityInvertibleKernelAnyModuleUniverse.lean, line 52](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/TrivialDualityInvertibleKernelAnyModuleUniverse.lean#L52). The attribute's comment: “at an arbitrary module universe above the ring universe, with no carried hypothesis”.
+**`Dualizing.InvertibleKernel.nonempty_derivedHom_iso_derivedTensor_conormalInverseShift_anyModuleUniverse`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TrivialDualityInvertibleKernelAnyModuleUniverse.lean, line 52](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/TrivialDualityInvertibleKernelAnyModuleUniverse.lean#L52). The attribute's comment: “at an arbitrary module universe above the ring universe, with no carried hypothesis”.
 
 > For a surjection `f : R → A` whose kernel is an invertible `R`-module, derived coextension of
 > scalars `RHom_R(A, -) : D(R) ⥤ D(A)` is derived tensoring over `R` with the conormal inverse shift
@@ -484,7 +484,7 @@ theorem nonempty_derivedHom_iso_derivedTensor_conormalInverseShift_anyModuleUniv
       Nonempty (Dualizing.derivedHom.{u, v} f ≅ T.F)
 ```
 
-**`Dualizing.InvertibleKernel.nonempty_derivedHom_iso_derivedTensor_conormalInverseShift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/PolynomialEvalDualityProof.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/UpperShriek/PolynomialEvalDualityProof.lean#L103). The attribute's comment: “at module universe equal to the ring universe, with no carried hypothesis”.
+**`Dualizing.InvertibleKernel.nonempty_derivedHom_iso_derivedTensor_conormalInverseShift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/UpperShriek/PolynomialEvalDualityProof.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/UpperShriek/PolynomialEvalDualityProof.lean#L103). The attribute's comment: “at module universe equal to the ring universe, with no carried hypothesis”.
 
 > **Stacks 0BZH.** For a surjection `f : R → A` whose kernel is an invertible `R`-module,
 > derived coextension of scalars `RHom_R(A, -) : D(R) ⥤ D(A)` is derived tensoring over `R` with
@@ -511,4 +511,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 47.13, Tag 0A6Z](https://stacks.math.columbia.edu/tag/0A6Z)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

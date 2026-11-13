@@ -8,13 +8,13 @@ proof: formalized
 
 # 70.5 Descending properties
 
-Section 70.5 of the Stacks Project, [Tag 0826](https://stacks.math.columbia.edu/tag/0826). 17 tags here are carried by 30 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 70.5 of the Stacks Project, [Tag 0826](https://stacks.math.columbia.edu/tag/0826). 17 tags here are carried by 30 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0CUJ, a lemma
 
 [Tag 0CUJ](https://stacks.math.columbia.edu/tag/0CUJ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.existsUnique_point_limit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/Points.lean, line 292](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/Points.lean#L292).
+**`AlgebraicGeometry.Space.existsUnique_point_limit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/Points.lean, line 292](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/Points.lean#L292).
 
 > **Stacks 0CUJ.** Let `D` be a directed inverse system of decent algebraic spaces over `S`
 > with affine transition morphisms, indexed by a category whose object type and whose morphism
@@ -39,7 +39,7 @@ theorem existsUnique_point_limit (D : I ⥤ (BigFppfOver B S hS)ᵒᵖ ⥤ Type 
 
 [Tag 086V](https://stacks.math.columbia.edu/tag/086V) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isHomeomorph_pointsLimitComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/PointsLimitHomeomorph.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/PointsLimitHomeomorph.lean#L78).
+**`AlgebraicGeometry.Space.isHomeomorph_pointsLimitComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/PointsLimitHomeomorph.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/PointsLimitHomeomorph.lean#L78).
 
 > **Stacks 086V.** Let `D` be a directed inverse system of decent algebraic spaces over `S`
 > with affine transition morphisms, indexed by a category small enough for the site, so that
@@ -60,7 +60,7 @@ theorem isHomeomorph_pointsLimitComparison (hSize : #I < B.cutoff.ord.cof)
     IsHomeomorph (pointsLimitComparison B S hS D)
 ```
 
-**`AlgebraicGeometry.Space.pointTopology_limit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/PointTopology.lean, line 223](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/PointTopology.lean#L223).
+**`AlgebraicGeometry.Space.pointTopology_limit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/PointTopology.lean, line 223](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/PointTopology.lean#L223).
 
 > The point topology of the limit of a cofiltered inverse system of algebraic spaces over `S`
 > with affine transition morphisms, indexed by a small enough category, is the infimum of the
@@ -76,7 +76,7 @@ theorem pointTopology_limit (hSize : #I < B.cutoff.ord.cof)
         (pointTopology B S hS (D.obj i))
 ```
 
-**`AlgebraicGeometry.Space.pointTopology_limit_of_isSiteSmall`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/PointTopology.lean, line 375](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/PointTopology.lean#L375).
+**`AlgebraicGeometry.Space.pointTopology_limit_of_isSiteSmall`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/PointTopology.lean, line 375](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/PointTopology.lean#L375).
 
 > The point topology of the limit of a cofiltered inverse system of algebraic spaces over `S`
 > with affine transition morphisms, indexed by a site-small category, is the infimum of the
@@ -95,7 +95,7 @@ theorem pointTopology_limit_of_isSiteSmall (hb : IsSiteSmall B S hS D)
 
 [Tag 086W](https://stacks.math.columbia.edu/tag/086W) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.nonempty_points_limit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/NonemptyLimit.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/NonemptyLimit.lean#L117).
+**`AlgebraicGeometry.Space.nonempty_points_limit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/NonemptyLimit.lean, line 117](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/NonemptyLimit.lean#L117).
 
 > **Stacks 086W.** The inverse limit of a cofiltered inverse system of nonempty
 > quasi-compact algebraic spaces over `S` with affine transition morphisms has a point, provided
@@ -116,7 +116,7 @@ theorem nonempty_points_limit (hSize : #I < B.cutoff.ord.cof)
 
 [Tag 0CUK](https://stacks.math.columbia.edu/tag/0CUK) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.closure_singleton_limit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/ClosureOfPoint.lean, line 150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/ClosureOfPoint.lean#L150). The attribute's comment: “as sets”.
+**`AlgebraicGeometry.Space.closure_singleton_limit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/ClosureOfPoint.lean, line 150](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/ClosureOfPoint.lean#L150). The attribute's comment: “as sets”.
 
 > **Stacks 0CUK, as sets.** Let `x` be a point of the limit `X` of a cofiltered inverse
 > system of algebraic spaces over `S` with affine transition morphisms, with images `x i` in the
@@ -133,7 +133,7 @@ theorem closure_singleton_limit (hSize : #I < B.cutoff.ord.cof)
       closure {pointsMap B S hS (limit D) (limit.π D i) x}
 ```
 
-**`AlgebraicGeometry.Space.existsUnique_point_closure_limit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/ClosureOfPoint.lean, line 215](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/ClosureOfPoint.lean#L215). The attribute's comment: “as sets, for a compatible family of points”.
+**`AlgebraicGeometry.Space.existsUnique_point_closure_limit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/ClosureOfPoint.lean, line 215](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/ClosureOfPoint.lean#L215). The attribute's comment: “as sets, for a compatible family of points”.
 
 > **Stacks 0CUK, as sets.** The set-level assertion read through the identification
 > `|X| = lim |D i|` of Stacks 0CUJ, for a compatible family of points.
@@ -151,7 +151,7 @@ theorem existsUnique_point_closure_limit (hSize : #I < B.cutoff.ord.cof)
       ∀ i, pointsMap B S hS (limit D) (limit.π D i) y = z i
 ```
 
-**`AlgebraicGeometry.Space.exists_iso_limit_reducedClosure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/ClosureOfPoint.lean, line 429](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/ClosureOfPoint.lean#L429). The attribute's comment: “as algebraic spaces with the reduced induced structure”.
+**`AlgebraicGeometry.Space.exists_iso_limit_reducedClosure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/ClosureOfPoint.lean, line 429](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/ClosureOfPoint.lean#L429). The attribute's comment: “as algebraic spaces with the reduced induced structure”.
 
 > **Stacks 0CUK, as algebraic spaces.** Let `x` be a point of the limit `X` of a cofiltered
 > inverse system of algebraic spaces over `S` with affine transition morphisms. The closure of
@@ -187,7 +187,7 @@ theorem exists_iso_limit_reducedClosure (hSize : #I < B.cutoff.ord.cof)
 
 [Tag 084R](https://stacks.math.columbia.edu/tag/084R) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.LimitSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/LimitSituation.lean, line 203](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/LimitSituation.lean#L203).
+**`AlgebraicGeometry.Space.LimitSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/LimitSituation.lean, line 237](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/LimitSituation.lean#L237).
 
 > **Situation 084R.** A *limit situation* for a presheaf `X` on the big fppf site of `S`:
 > a directed index set with a chosen element, an inverse system of algebraic spaces over `S`
@@ -207,13 +207,13 @@ structure LimitSituation (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS : B.Contains
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Space.DescentSituation`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/Limits.lean#L53), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties.lean, line 31](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties.lean#L31) (StacksFrontier).
+- [`AlgebraicGeometry.Space.DescentSituation`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/Limits.lean#L53), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties.lean, line 31](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties.lean#L31) (StacksFrontier).
 
 ## Tag 07SI, a lemma
 
 [Tag 07SI](https://stacks.math.columbia.edu/tag/07SI) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.LimitSituation.isSectionsColimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/QuasicoherentSectionsColimit.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/QuasicoherentSectionsColimit.lean#L65).
+**`AlgebraicGeometry.Space.LimitSituation.isSectionsColimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/QuasicoherentSectionsColimit.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/QuasicoherentSectionsColimit.lean#L65).
 
 > Let `ℱ₀` be a quasi-coherent module on `X₀`, and set `ℱᵢ = f_{0i}^*ℱ₀` and `ℱ = f_0^*ℱ₀`.
 > Then `Γ(X, ℱ) = colim_{i ≥ 0} Γ(Xᵢ, ℱᵢ)`, in the elementwise form
@@ -227,7 +227,7 @@ theorem isSectionsColimit (hI : #A.I < B.cutoff.ord.cof)
     A.IsSectionsColimit F₀ (A.isAlgebraicSpace_of_mk_lt hI)
 ```
 
-**`AlgebraicGeometry.Space.LimitSituation.isSectionsColimit_of_baseChangeSizeBounded`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/QuasicoherentSectionsColimitSizeBounded.lean, line 350](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/QuasicoherentSectionsColimitSizeBounded.lean#L350). The attribute's comment: “Situation 084R on the bounded site, with the size conventions of Tag 07SD read as an index set below the cutoff with uniformly bounded base changes of the stages; with no size condition the statement is false, Refute07SI.not\_forall\_isSectionsColimit”.
+**`AlgebraicGeometry.Space.LimitSituation.isSectionsColimit_of_baseChangeSizeBounded`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/QuasicoherentSectionsColimitSizeBounded.lean, line 352](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/QuasicoherentSectionsColimitSizeBounded.lean#L352). The attribute's comment: “Situation 084R on the bounded site, with the size conventions of Tag 07SD read as an index set below the cutoff with uniformly bounded base changes of the stages; with no size condition the statement is false, Refute07SI.not\_forall\_isSectionsColimit”.
 
 > **Stacks 07SI.**  In Situation 084R, let `ℱ₀` be a quasi-coherent module on `X₀`, and set
 > `ℱᵢ = f_{0i}^*ℱ₀` and `ℱ = f_0^*ℱ₀`.  Then `Γ(X, ℱ) = colim_{i ≥ 0} Γ(Xᵢ, ℱᵢ)`, in the
@@ -247,7 +247,7 @@ theorem isSectionsColimit_of_baseChangeSizeBounded (hI : #A.I < B.cutoff)
 
 [Tag 0827](https://stacks.math.columbia.edu/tag/0827) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isOpenSubspace_isQuasiCompactSpace_preimage_eq_of_isSiteSmall`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendOpens.lean, line 327](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendOpens.lean#L327). References: EGA IV (8.2.11).
+**`AlgebraicGeometry.Space.exists_isOpenSubspace_isQuasiCompactSpace_preimage_eq_of_isSiteSmall`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendOpens.lean, line 327](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendOpens.lean#L327). References: EGA IV (8.2.11).
 
 > **Stacks 0827.** Notation and assumptions as in Situation 084R: let `X = limit D` be the
 > limit of a cofiltered inverse system `D` of algebraic spaces over `S` with affine transition
@@ -269,7 +269,7 @@ theorem exists_isOpenSubspace_isQuasiCompactSpace_preimage_eq_of_isSiteSmall (hb
       IsQuasiCompactSpace B S hS V.toFunctor ∧ V.preimage (limit.π D i) = U
 ```
 
-**`AlgebraicGeometry.Space.exists_isOpenSubspace_isQuasiCompactSpace_preimage_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendOpens.lean, line 348](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendOpens.lean#L348). References: EGA IV (8.2.11).
+**`AlgebraicGeometry.Space.exists_isOpenSubspace_isQuasiCompactSpace_preimage_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendOpens.lean, line 348](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/DescendOpens.lean#L348). References: EGA IV (8.2.11).
 
 > **Stacks 0827.** Notation and assumptions as in Situation 084R: let `X = limit D` be the
 > limit of a cofiltered inverse system `D` of algebraic spaces over `S` with affine transition
@@ -295,7 +295,7 @@ theorem exists_isOpenSubspace_isQuasiCompactSpace_preimage_eq (hSize : #I < B.cu
 
 [Tag 084S](https://stacks.math.columbia.edu/tag/084S) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.MorphismDescentSystem.exists_isIso_mapAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/Isomorphism.lean, line 363](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/Isomorphism.lean#L363). References: EGA IV (8.8.2.5), “f iso ⇒ f\_i iso”.
+**`AlgebraicGeometry.Space.MorphismDescentSituation.exists_isIso_mapAt_of_siteContainsBaseChangeLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/Isomorphism.lean, line 309](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/Isomorphism.lean#L309). The attribute's comment: “without hypothesis (a)”. References: EGA IV (8.8.2.5), “f iso ⇒ f\_i iso”.
 
 > **Stacks 0852**, and **Stacks 084S**. In the situation of Stacks 084W, if the base change
 > `f` of `f₀` to the limit `B` is an isomorphism and `f₀` is locally of finite presentation, then
@@ -305,9 +305,13 @@ theorem exists_isOpenSubspace_isQuasiCompactSpace_preimage_eq (hSize : #I < B.cu
 > 084R, with the source and the target in addition assumed representable over the stage;
 > hypothesis (a) of that tag is not needed here, since the three properties into which being an
 > isomorphism is decomposed all descend without it.
+>
+> This is the statement under the chapter's convention of Section 70.2 (tag 07SD), which asks
+> nothing of the index.
 
 ```lean
-theorem exists_isIso_mapAt (hf : IsIso D.mapLimit)
+theorem exists_isIso_mapAt_of_siteContainsBaseChangeLimits
+    (hconv : SiteContainsBaseChangeLimits B S hS D.base) (hf : IsIso D.mapLimit)
     (hfp : IsLocallyOfFinitePresentation B S hS D.map₀) :
     ∃ (i : I) (hi : D.initial ≤ i), IsIso (D.mapAt i hi)
 ```
@@ -316,7 +320,7 @@ theorem exists_isIso_mapAt (hf : IsIso D.mapLimit)
 
 [Tag 084T](https://stacks.math.columbia.edu/tag/084T) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.DescentSituation.exists_isAbsolutelySeparated_system_obj_of_isSiteSmall`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/SeparatedDescent.lean, line 818](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/SeparatedDescent.lean#L818).
+**`AlgebraicGeometry.Space.DescentSituation.exists_isAbsolutelySeparated_system_obj_of_isSiteSmall`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/SeparatedDescent.lean, line 819](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/SeparatedDescent.lean#L819).
 
 > **Stacks 084T.** In the situation of Stacks 084R, over an arbitrary base scheme, if the
 > limit `X` of the inverse system is separated then some stage `X_i` is separated.
@@ -334,7 +338,7 @@ theorem exists_isAbsolutelySeparated_system_obj_of_isSiteSmall {I : Type u} [Pre
     ∃ i, D.base ≤ i ∧ IsAbsolutelySeparated B S hS hZ (D.system.obj (op i))
 ```
 
-**`AlgebraicGeometry.Space.DescentSituation.exists_isAbsolutelySeparated_system_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/SeparatedDescent.lean, line 838](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/SeparatedDescent.lean#L838).
+**`AlgebraicGeometry.Space.DescentSituation.exists_isAbsolutelySeparated_system_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/SeparatedDescent.lean, line 839](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/SeparatedDescent.lean#L839).
 
 > **Stacks 084T.** In the situation of Stacks 084R, over an arbitrary base scheme, if the
 > limit `X` of the inverse system is separated then some stage `X_i` is separated.
@@ -355,7 +359,7 @@ theorem exists_isAbsolutelySeparated_system_obj {I : Type u} [Preorder I]
 
 [Tag 07SQ](https://stacks.math.columbia.edu/tag/07SQ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.DescentSituation.exists_isAffineSpace_system_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/AffineStage/ExistsAffineStage.lean, line 174](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/AffineStage/ExistsAffineStage.lean#L174). The attribute's comment: “Correction: the index set is taken smaller than the cofinality of the site's size cutoff, the form the convention of Section 70.2 takes in this size model; without it the statement is false here (a system of projective lines over fields of sizes cofinal in the cutoff has empty, hence affine, limit)”.
+**`AlgebraicGeometry.Space.DescentSituation.exists_isAffineSpace_system_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/AffineStage/ExistsAffineStage.lean, line 174](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/AffineStage/ExistsAffineStage.lean#L174). The attribute's comment: “Correction: the index set is taken smaller than the cofinality of the site's size cutoff, the form the convention of Section 70.2 takes in this size model; without it the statement is false here (a system of projective lines over fields of sizes cofinal in the cutoff has empty, hence affine, limit)”.
 
 > **Stacks 07SQ.** In the situation of Stacks 084R over a scheme `S` — a directed inverse
 > system of quasi-compact and quasi-separated algebraic spaces over `S` with affine transition
@@ -383,7 +387,7 @@ theorem DescentSituation.exists_isAffineSpace_system_obj {B : BigFppfSite.{u}} {
     ∃ i, D.base ≤ i ∧ IsAffineSpace B S hS (D.system.obj (op i))
 ```
 
-**`AlgebraicGeometry.Space.hasAffineStageDescent_of_chartsBounded`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/AffineStageDescentChartsBounded.lean, line 161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/AffineStageDescentChartsBounded.lean#L161).
+**`AlgebraicGeometry.Space.hasAffineStageDescent_of_chartsBounded`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/AffineStageDescentChartsBounded.lean, line 161](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/AffineStageDescentChartsBounded.lean#L161).
 
 > In the situation of Stacks 084R, if the limit `X` of the inverse system is an affine algebraic
 > space then `X_i` is an affine algebraic space for some `i` beyond the distinguished index, the
@@ -397,7 +401,7 @@ theorem DescentSituation.exists_isAffineSpace_system_obj {B : BigFppfSite.{u}} {
 theorem hasAffineStageDescent_of_chartsBounded : HasAffineStageDescent B S hS hZ
 ```
 
-**`AlgebraicGeometry.Space.DescentSituation.exists_isAffineSpace_system_obj_of_siteContainsBaseChangeLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/AffineStageSiteSmall.lean, line 716](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/AffineStageSiteSmall.lean#L716).
+**`AlgebraicGeometry.Space.DescentSituation.exists_isAffineSpace_system_obj_of_siteContainsBaseChangeLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/AffineStageSiteSmall.lean, line 717](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/AffineStageSiteSmall.lean#L717).
 
 > **Stacks 07SQ.** In the situation of Stacks 084R, over an arbitrary base scheme, if the limit
 > `X` of the inverse system is an affine algebraic space then so is some stage `X_i` with `i` at or
@@ -440,7 +444,7 @@ theorem exists_isAffineSpace_system_obj_of_siteContainsBaseChangeLimits
 
 [Tag 084U](https://stacks.math.columbia.edu/tag/084U) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.commSq_chart_specOfGlobalFunctions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SpecGlobalFunctionsChartSquare.lean, line 274](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SpecGlobalFunctionsChartSquare.lean#L274).
+**`AlgebraicGeometry.Space.commSq_chart_specOfGlobalFunctions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SpecGlobalFunctionsChartSquare.lean, line 274](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SpecGlobalFunctionsChartSquare.lean#L274).
 
 > Let `A` be a `u`-model of the ring of global functions of an algebraic space `X` over `S`,
 > let `V` be an étale scheme chart of `X`, let `g₁, …, gₙ` be polynomials in `n` variables over `A`
@@ -474,7 +478,7 @@ theorem commSq_chart_specOfGlobalFunctions (X : AlgebraicSpaces B S hS)
 
 [Tag 07SR](https://stacks.math.columbia.edu/tag/07SR) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.DescentSituation.exists_isRepresentable_system_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/SchemeStage.lean, line 207](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/SchemeStage.lean#L207). The attribute's comment: “Correction: the index set is taken smaller than the cofinality of the site's size cutoff, the form the convention of Section 70.2 takes in this size model; without it the statement is false here (base changes of a non locally separated space to fields of sizes cofinal in the cutoff have empty limit, a scheme, and no stage a scheme)”.
+**`AlgebraicGeometry.Space.DescentSituation.exists_isRepresentable_system_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/SchemeStage.lean, line 207](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/SchemeStage.lean#L207). The attribute's comment: “Correction: the index set is taken smaller than the cofinality of the site's size cutoff, the form the convention of Section 70.2 takes in this size model; without it the statement is false here (base changes of a non locally separated space to fields of sizes cofinal in the cutoff have empty limit, a scheme, and no stage a scheme)”.
 
 > In the situation of Stacks 084R over a scheme `S` — a directed inverse system of quasi-compact
 > and quasi-separated algebraic spaces over `S` with affine transition morphisms, together with a
@@ -489,7 +493,7 @@ theorem exists_isRepresentable_system_obj {I : Type v} [Preorder I] [IsDirected 
     ∃ i, (D.system.obj (op i)).IsRepresentable
 ```
 
-**`AlgebraicGeometry.Space.DescentSituation.exists_isRepresentable_system_obj_of_siteContainsBaseChangeLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/SchemeStageSiteSmall.lean, line 283](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/SchemeStageSiteSmall.lean#L283).
+**`AlgebraicGeometry.Space.DescentSituation.exists_isRepresentable_system_obj_of_siteContainsBaseChangeLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/SchemeStageSiteSmall.lean, line 284](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/SchemeStageSiteSmall.lean#L284).
 
 > In the situation of Stacks 084R — a directed inverse system of quasi-compact and
 > quasi-separated algebraic spaces over `S` with affine transition morphisms, together with a chosen
@@ -509,7 +513,7 @@ theorem exists_isRepresentable_system_obj_of_siteContainsBaseChangeLimits {I : T
 
 [Tag 0828](https://stacks.math.columbia.edu/tag/0828) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.eventually_isClosedImmersion_comp_limitπ'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/ClosedImmersionDescent/EventualImmersion.lean, line 502](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/ClosedImmersionDescent/EventualImmersion.lean#L502). The attribute's comment: “part (1): closed immersions”.
+**`AlgebraicGeometry.Space.eventually_isClosedImmersion_comp_limitπ'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/ClosedImmersionDescent/EventualImmersion.lean, line 504](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/ClosedImmersionDescent/EventualImmersion.lean#L504). The attribute's comment: “part (1): closed immersions”.
 
 > **Stacks 0828, part (1).** Let `X = lim Xᵢ` be a directed limit of algebraic spaces over an
 > algebraic space `Bspace`, with affine transition morphisms and quasi-compact stages, and let
@@ -537,7 +541,7 @@ theorem eventually_isClosedImmersion_comp_limitπ'
     ∀ᶠ i in atTop, Space.IsClosedImmersion B S contains (f ≫ c.π.app (op i))
 ```
 
-**`AlgebraicGeometry.Space.eventually_isImmersion_comp_limitπ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/ClosedImmersionDescent/EventualImmersion.lean, line 727](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/ClosedImmersionDescent/EventualImmersion.lean#L727). The attribute's comment: “part (2): immersions”.
+**`AlgebraicGeometry.Space.eventually_isImmersion_comp_limitπ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/ClosedImmersionDescent/EventualImmersion.lean, line 729](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/ClosedImmersionDescent/EventualImmersion.lean#L729). The attribute's comment: “part (2): immersions”.
 
 > **Stacks 0828, part (2).** Let `X = lim Xᵢ` be a directed limit of algebraic spaces over an
 > algebraic space `Bspace`, with affine transition morphisms and quasi-separated stages, and let
@@ -575,7 +579,7 @@ theorem eventually_isImmersion_comp_limitπ
     ∀ᶠ i in atTop, IsImmersion B S contains (f ≫ c.π.app (op i))
 ```
 
-**`AlgebraicGeometry.Space.eventually_isIso_comp_limitπ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/EventualIsomorphism.lean, line 420](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/EventualIsomorphism.lean#L420). The attribute's comment: “part (3): isomorphism”. References: SGA 3 XI (3.11), “more general”.
+**`AlgebraicGeometry.Space.eventually_isIso_comp_limitπ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/EventualIsomorphism.lean, line 422](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/EventualIsomorphism.lean#L422). The attribute's comment: “part (3): isomorphism”. References: SGA 3 XI (3.11), “more general”.
 
 > **An isomorphism onto a directed limit is eventually an isomorphism onto the stages.**  Let
 > `X = lim Xᵢ` be a directed limit of algebraic spaces over an algebraic space `Bspace` and let
@@ -603,7 +607,7 @@ theorem eventually_isIso_comp_limitπ
     ∀ᶠ i in atTop, IsIso (f ≫ c.π.app (op i))
 ```
 
-**`AlgebraicGeometry.Space.eventually_mono_comp_limitπ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/EventualMonomorphism.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/EventualMonomorphism.lean#L162). The attribute's comment: “part (4): monomorphism”.
+**`AlgebraicGeometry.Space.eventually_mono_comp_limitπ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/EventualMonomorphism.lean, line 163](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/EventualMonomorphism.lean#L163). The attribute's comment: “part (4): monomorphism”.
 
 > **Stacks 0828, part (4).** Let `X = lim Xᵢ` be a directed limit of algebraic spaces over an
 > algebraic space `Bspace`, with affine transition morphisms and quasi-separated stages, and let
@@ -635,7 +639,7 @@ theorem eventually_mono_comp_limitπ
 
 [Tag 086X](https://stacks.math.columbia.edu/tag/086X) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.DescentSituation.exists_isSeparated_system_app_of_isSiteSmall`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/SeparatedDescent.lean, line 1093](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/SeparatedDescent.lean#L1093).
+**`AlgebraicGeometry.Space.DescentSituation.exists_isSeparated_system_app_of_isSiteSmall`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/SeparatedDescent.lean, line 1094](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/SeparatedDescent.lean#L1094).
 
 > **Stacks 086X.** Let `Y` be a quasi-separated algebraic space over `S` and let `X = lim X_i`
 > be a directed limit, over `Y` and with affine transition morphisms, of quasi-compact and
@@ -663,7 +667,7 @@ theorem DescentSituation.exists_isSeparated_system_app_of_isSiteSmall [IsDirecte
     ∃ i, D.base ≤ i ∧ ∀ k, i ≤ k → IsSeparated B S hS (t.app (op k))
 ```
 
-**`AlgebraicGeometry.Space.DescentSituation.exists_isSeparated_system_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/SeparatedDescent.lean, line 1160](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/SeparatedDescent.lean#L1160).
+**`AlgebraicGeometry.Space.DescentSituation.exists_isSeparated_system_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/SeparatedDescent.lean, line 1161](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/SeparatedDescent.lean#L1161).
 
 > **Stacks 086X.** Let `Y` be a quasi-separated algebraic space over `S` and let `X = lim X_i`
 > be a directed limit, over `Y` and with affine transition morphisms, of quasi-compact and
@@ -697,13 +701,13 @@ theorem DescentSituation.exists_isSeparated_system_app [IsDirected I (· ≤ ·)
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Space.DescentSituation.exists_isAffineHom_system_app`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/AffineStage/ExistsAffineStage.lean#L213), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/AffineStageSiteSmall.lean, line 754](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/AffineStageSiteSmall.lean#L754) (StacksFrontier).
+- [`AlgebraicGeometry.Space.DescentSituation.exists_isAffineHom_system_app`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/AffineStage/ExistsAffineStage.lean#L213), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/AffineStageSiteSmall.lean, line 755](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DescendingProperties/AffineStageSiteSmall.lean#L755) (StacksFrontier).
 
 ## Tag 0A0S, a lemma
 
 [Tag 0A0S](https://stacks.math.columbia.edu/tag/0A0S) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.eventually_isFinite_of_isLimit_of_isIntegral`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/EventualFiniteness.lean, line 193](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/EventualFiniteness.lean#L193).
+**`AlgebraicGeometry.Space.eventually_isFinite_of_isLimit_of_isIntegral`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/EventualFiniteness.lean, line 195](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/EventualFiniteness.lean#L195).
 
 > **Stacks 0A0S.** Let `X = lim X_i` be a directed limit of algebraic spaces over an algebraic
 > space `Y`, with affine transition morphisms. If `Y` is quasi-compact and quasi-separated, every
@@ -745,7 +749,7 @@ theorem eventually_isFinite_of_isLimit_of_isIntegral
 
 [Tag 0A0T](https://stacks.math.columbia.edu/tag/0A0T) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.eventually_isClosedImmersion_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/EventuallyClosedImmersionOverBase.lean, line 619](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/EventuallyClosedImmersionOverBase.lean#L619).
+**`AlgebraicGeometry.Space.eventually_isClosedImmersion_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/EventuallyClosedImmersionOverBase.lean, line 619](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/EventuallyClosedImmersionOverBase.lean#L619).
 
 > **Stacks 0A0T.** Let `Y` be an algebraic space over `S` and let `X = lim X_i` be a directed
 > limit of algebraic spaces over `Y` with affine transition morphisms. Assume `Y` is quasi-compact
@@ -797,4 +801,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 70.5, Tag 0826](https://stacks.math.columbia.edu/tag/0826)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

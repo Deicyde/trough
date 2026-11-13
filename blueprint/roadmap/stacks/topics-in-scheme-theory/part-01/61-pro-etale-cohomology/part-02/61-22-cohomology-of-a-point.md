@@ -8,13 +8,13 @@ proof: formalized
 
 # 61.22 Cohomology of a point
 
-Section 61.22 of the Stacks Project, [Tag 09B3](https://stacks.math.columbia.edu/tag/09B3). 1 tag here is carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 61.22 of the Stacks Project, [Tag 09B3](https://stacks.math.columbia.edu/tag/09B3). 1 tag here is carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 09B4, a lemma
 
 [Tag 09B4](https://stacks.math.columbia.edu/tag/09B4) in the Stacks Project.
 
-**`AlgebraicGeometry.GaloisSheaf.profiniteSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/CompletedGaloisSheaf.lean, line 207](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/CompletedGaloisSheaf.lean#L207). The attribute's comment: “case (1): the canonical sheaf of a profinite abelian group”.
+**`AlgebraicGeometry.GaloisSheaf.profiniteSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/CompletedGaloisSheaf.lean, line 207](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/CompletedGaloisSheaf.lean#L207). The attribute's comment: “case (1): the canonical sheaf of a profinite abelian group”.
 
 > The canonical pro-étale sheaf `M^∧` attached to a profinite abelian group `M` with continuous
 > action of the absolute Galois group of a field: the inverse limit of the pro-étale pullbacks of the
@@ -29,7 +29,7 @@ def profiniteSheaf (K : Type u) [Field K] (M : Type w) [AddCommGroup M] [Topolog
     Sheaf (Scheme.ProEt.topology (base K)) (ModuleCat.{max (u + 1) w} ℤ)
 ```
 
-**`AlgebraicGeometry.GaloisSheaf.adicSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/CompletedGaloisSheaf.lean, line 237](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/CompletedGaloisSheaf.lean#L237). The attribute's comment: “case (2): the canonical sheaf of an adically complete module”.
+**`AlgebraicGeometry.GaloisSheaf.adicSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/CompletedGaloisSheaf.lean, line 237](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/CompletedGaloisSheaf.lean#L237). The attribute's comment: “case (2): the canonical sheaf of an adically complete module”.
 
 > The canonical pro-étale sheaf `M^∧` attached to an `I`-adically complete module `M` over a
 > Noetherian ring, with continuous action of the absolute Galois group of a field for the `I`-adic
@@ -45,7 +45,7 @@ def adicSheaf (K : Type u) [Field K] [IsNoetherianRing Λ] (I : Ideal Λ) (M : T
     Sheaf (Scheme.ProEt.topology (base K)) (ModuleCat.{max (u + 1) r w} Λ)
 ```
 
-**`AlgebraicGeometry.GaloisSheaf.rightDerivedAdicSheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ContinuousGaloisCohomology.lean, line 317](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/ContinuousGaloisCohomology.lean#L317). The attribute's comment: “case (2), the cohomology comparison”.
+**`AlgebraicGeometry.GaloisSheaf.rightDerivedAdicSheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ContinuousGaloisCohomology.lean, line 317](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/ContinuousGaloisCohomology.lean#L317). The attribute's comment: “case (2), the cohomology comparison”.
 
 > Let `K` be a field with absolute Galois group `G`, let `Λ` be a Noetherian ring with an ideal
 > `I`, and let `M` be an `I`-adically complete `Λ`-module with a continuous action of `G` for the
@@ -75,7 +75,7 @@ def rightDerivedAdicSheafIso
       (underlyingAb.{u, r, w} Λ).obj (continuousCohomology i (uliftRep.{u} ρ hρ))
 ```
 
-**`AlgebraicGeometry.GaloisSheaf.rightDerivedProfiniteSheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ContinuousGaloisCohomology.lean, line 432](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/ContinuousGaloisCohomology.lean#L432). The attribute's comment: “case (1), the cohomology comparison”.
+**`AlgebraicGeometry.GaloisSheaf.rightDerivedProfiniteSheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ContinuousGaloisCohomology.lean, line 432](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/ContinuousGaloisCohomology.lean#L432). The attribute's comment: “case (1), the cohomology comparison”.
 
 > Let `K` be a field with absolute Galois group `G` and let `M` be a profinite abelian group
 > with a continuous action of `G`. Then the pro-étale cohomology of `Spec K` with coefficients in
@@ -100,7 +100,7 @@ def rightDerivedProfiniteSheafIso (i : ℕ) :
       (underlyingAb.{u, 0, w} ℤ).obj (continuousCohomology i (uliftRep.{u} ρ hρ))
 ```
 
-**`AlgebraicGeometry.GaloisSheaf.rightDerivedAdicSheafLinearEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ContinuousGaloisCohomologyLinear.lean, line 371](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/ContinuousGaloisCohomologyLinear.lean#L371). The attribute's comment: “case (2), as Λ-modules”.
+**`AlgebraicGeometry.GaloisSheaf.rightDerivedAdicSheafLinearEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ContinuousGaloisCohomologyLinear.lean, line 371](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/ContinuousGaloisCohomologyLinear.lean#L371). The attribute's comment: “case (2), as Λ-modules”.
 
 > **Stacks Project, Tag 09B4, case (2), as `Λ`-modules.** In the situation of
 > `rightDerivedAdicSheafIso`, the pro-étale cohomology `Hⁱ(Spec(K)_proét, M^∧)`, a `Λ`-module
@@ -125,4 +125,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 61.22, Tag 09B3](https://stacks.math.columbia.edu/tag/09B3)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

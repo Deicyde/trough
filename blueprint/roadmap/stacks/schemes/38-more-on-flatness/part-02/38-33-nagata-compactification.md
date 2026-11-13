@@ -8,13 +8,13 @@ proof: formalized
 
 # 38.33 Nagata compactification
 
-Section 38.33 of the Stacks Project, [Tag 0F3T](https://stacks.math.columbia.edu/tag/0F3T). 8 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 38.33 of the Stacks Project, [Tag 0F3T](https://stacks.math.columbia.edu/tag/0F3T). 8 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0F3U, a lemma
 
 [Tag 0F3U](https://stacks.math.columbia.edu/tag/0F3U) in the Stacks Project.
 
-**`AlgebraicGeometry.isSeparated_of_sup_eq_top_of_isClosedImmersion_mapDesc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Compactification/SeparatedTwoOpens.lean, line 47](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Compactification/SeparatedTwoOpens.lean#L47).
+**`AlgebraicGeometry.isSeparated_of_sup_eq_top_of_isClosedImmersion_mapDesc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Compactification/SeparatedTwoOpens.lean, line 47](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Compactification/SeparatedTwoOpens.lean#L47).
 
 > **Stacks Project, Tag 0F3U.** Two separated open subschemes covering the source, whose
 > overlap is closed in their fibre product over the base, give a separated morphism.
@@ -32,7 +32,7 @@ theorem isSeparated_of_sup_eq_top_of_isClosedImmersion_mapDesc
 
 [Tag 0F3V](https://stacks.math.columbia.edu/tag/0F3V) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isAdmissibleBlowup_disjoint_strictTransforms`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/Separation.lean, line 331](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/Separation.lean#L331). The attribute's comment: “separate\_strict\_transforms”.
+**`AlgebraicGeometry.exists_isAdmissibleBlowup_disjoint_strictTransforms`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/Separation.lean, line 331](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/Separation.lean#L331). The attribute's comment: “separate\_strict\_transforms”.
 
 > **Stacks Project, Tag 0F3V, part (1).** Let `X` be a quasi-compact and quasi-separated scheme
 > and `U ⊆ X` an open. Let `Z₁ = V(ℐ₁)` and `Z₂ = V(ℐ₂)` be closed subschemes of finite
@@ -53,7 +53,7 @@ theorem exists_isAdmissibleBlowup_disjoint_strictTransforms [CompactSpace X]
           (Set.range (strictTransformToBlowUp I₂.subschemeι I).base)
 ```
 
-**`AlgebraicGeometry.exists_isAdmissibleBlowup_disjoint_closures`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/Separation.lean, line 474](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/Separation.lean#L474). The attribute's comment: “separate\_constructible\_closures”.
+**`AlgebraicGeometry.exists_isAdmissibleBlowup_disjoint_closures`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/Separation.lean, line 474](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/Separation.lean#L474). The attribute's comment: “separate\_constructible\_closures”.
 
 > **Stacks Project, Tag 0F3V, part (2).** Let `X` be a quasi-compact and quasi-separated scheme,
 > let `U ⊆ X` be a quasi-compact open and let `T₁, T₂ ⊆ U` be disjoint constructible closed subsets.
@@ -78,7 +78,7 @@ theorem exists_isAdmissibleBlowup_disjoint_closures [CompactSpace X] [QuasiSepar
 
 [Tag 0F3W](https://stacks.math.columbia.edu/tag/0F3W) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isAdmissibleBlowup_strictTransform_isIso_near_closure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Compactification/IsoNearClosure.lean, line 178](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Compactification/IsoNearClosure.lean#L178).
+**`AlgebraicGeometry.exists_isAdmissibleBlowup_strictTransform_isIso_near_closure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Compactification/IsoNearClosure.lean, line 178](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Compactification/IsoNearClosure.lean#L178).
 
 > **Stacks Project, Tag 0F3W.** A proper morphism which is an isomorphism over an open
 > containing a subset `T` closed in a quasi-compact open `V` becomes, after a `V`-admissible
@@ -106,7 +106,7 @@ theorem exists_isAdmissibleBlowup_strictTransform_isIso_near_closure
 
 [Tag 0F3X](https://stacks.math.columbia.edu/tag/0F3X) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_common_isAdmissibleBlowup_isOpenImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Compactification/CommonAdmissibleBlowups.lean, line 214](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Compactification/CommonAdmissibleBlowups.lean#L214).
+**`AlgebraicGeometry.exists_common_isAdmissibleBlowup_isOpenImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Compactification/CommonAdmissibleBlowups.lean, line 214](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Compactification/CommonAdmissibleBlowups.lean#L214).
 
 > **Stacks Project, Tag 0F3X.** Let `S` be a quasi-compact and quasi-separated scheme and let
 > `u₁ : U ⟶ X₁` and `u₂ : U ⟶ X₂` be open immersions of schemes over `S`, with `U`, `X₁` and `X₂`
@@ -139,7 +139,7 @@ theorem exists_common_isAdmissibleBlowup_isOpenImmersion {S U X₁ X₂ : Scheme
 
 [Tag 0F3Y](https://stacks.math.columbia.edu/tag/0F3Y) in the Stacks Project.
 
-**`Stacks.Blowup.exists_iso_image_strictTransform`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/StrictTransformImage.lean, line 242](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/StrictTransformImage.lean#L242).
+**`Stacks.Blowup.exists_iso_image_strictTransform`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/StrictTransformImage.lean, line 242](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/StrictTransformImage.lean#L242).
 
 > **Stacks Project, Tag 0F3Y.** For `f : V ⟶ X ×_S Y` quasi-compact with first projection landing
 > in an open `U ⊆ X`, a `U`-admissible blowup `b : X' ⟶ X` and a lift `g : V ⟶ X' ×_S Y` of `f`, the
@@ -175,7 +175,7 @@ theorem exists_iso_image_strictTransform
 
 [Tag 0F3Z](https://stacks.math.columbia.edu/tag/0F3Z) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isAdmissibleBlowup_properExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Compactification/ProperExtension.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Compactification/ProperExtension.lean#L62).
+**`AlgebraicGeometry.exists_isAdmissibleBlowup_properExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Compactification/ProperExtension.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Compactification/ProperExtension.lean#L62).
 
 > **Stacks Project, Tag 0F3Z.** After a `V`-admissible blowup `b : Y' ⟶ Y` of a
 > compactification `j` of a quasi-compact open subscheme `V` of `U`, the blowup contains an open
@@ -204,7 +204,7 @@ theorem exists_isAdmissibleBlowup_properExtension
 
 [Tag 0F40](https://stacks.math.columbia.edu/tag/0F40) in the Stacks Project.
 
-**`AlgebraicGeometry.hasCompactification_of_two_opens`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Compactification/TwoOpens.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Compactification/TwoOpens.lean#L162).
+**`AlgebraicGeometry.hasCompactification_of_two_opens`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Compactification/TwoOpens.lean, line 162](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Compactification/TwoOpens.lean#L162).
 
 > **Stacks Project, Tag 0F40.** A separated finite-type scheme over a Noetherian base has a
 > compactification as soon as it is covered by two compactifiable open subschemes whose
@@ -224,7 +224,7 @@ theorem hasCompactification_of_two_opens
 
 [Tag 0F41](https://stacks.math.columbia.edu/tag/0F41) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_quasiCompact_compactificationOf_of_isQuasiAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Compactification/QuasiAffineSource.lean, line 86](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Compactification/QuasiAffineSource.lean#L86). The attribute's comment: “the case of a quasi-affine source”. References: SGA 4½ Arcata (4.5.3), “special case”; SGA 4½ Th finitude (2.8), “more general”; SGA 7 XIII (2.1.6), “2.1.6 c), special case”.
+**`AlgebraicGeometry.exists_quasiCompact_compactificationOf_of_isQuasiAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Compactification/QuasiAffineSource.lean, line 86](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Compactification/QuasiAffineSource.lean#L86). The attribute's comment: “the case of a quasi-affine source”. References: SGA 4½ Arcata (4.5.3), “special case”; SGA 4½ Th finitude (2.8), “more general”; SGA 7 XIII (2.1.6), “2.1.6 c), special case”.
 
 > **Nagata compactification for a quasi-affine source (Stacks Project, Tag 0F41).** A
 > separated morphism of finite type from a quasi-affine scheme to a quasi-compact and
@@ -242,7 +242,7 @@ theorem exists_quasiCompact_compactificationOf_of_isQuasiAffine
     ∃ j : CompactificationOf (Over.mk f), QuasiCompact j.immersion
 ```
 
-**`AlgebraicGeometry.hasCompactification_of_compactSpace_quasiSeparatedSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NagataCompactification/Basic.lean, line 152](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/NagataCompactification/Basic.lean#L152). References: SGA 4 XVII (3.2.2), “more general”; SGA 4 XVII (3.2.3), “(iii), special case”; SGA 4½ Th finitude (2.8), “more general”; SGA 7 XIII (2.1.6), “more general”.
+**`AlgebraicGeometry.hasCompactification_of_compactSpace_quasiSeparatedSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NagataCompactification/Basic.lean, line 152](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/NagataCompactification/Basic.lean#L152). References: SGA 4 XVII (3.2.2), “more general”; SGA 4 XVII (3.2.3), “(iii), special case”; SGA 4½ Th finitude (2.8), “more general”; SGA 7 XIII (2.1.6), “more general”.
 
 > **Nagata compactification (Stacks Project, Tag 0F41).** Let `S` be a quasi-compact and
 > quasi-separated scheme and let `f : X ⟶ S` be a separated morphism of finite type. Then `X` has a
@@ -265,4 +265,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 38.33, Tag 0F3T](https://stacks.math.columbia.edu/tag/0F3T)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 4.37 Presheaves of groupoids
 
-Section 4.37 of the Stacks Project, [Tag 0048](https://stacks.math.columbia.edu/tag/0048). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 4.37 of the Stacks Project, [Tag 0048](https://stacks.math.columbia.edu/tag/0048). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0049, an example
 
 [Tag 0049](https://stacks.math.columbia.edu/tag/0049) in the Stacks Project.
 
-**`CategoryTheory.isFiberedInGroupoids_presheafOfGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedInGroupoids/OfPresheaf.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/FiberedInGroupoids/OfPresheaf.lean#L100). References: SGA 4 VI (6.1.3), “strict, groupoid fibers”; SGA 7 VI (1.1(a)), “groupoid-valued F”.
+**`CategoryTheory.isFiberedInGroupoids_presheafOfGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedInGroupoids/OfPresheaf.lean, line 100](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedInGroupoids/OfPresheaf.lean#L100). References: SGA 4 VI (6.1.3), “strict, groupoid fibers”; SGA 7 VI (1.1(a)), “groupoid-valued F”.
 
 > **Stacks 0049.**
 > The category `𝒮_F` attached to a presheaf of groupoids `F : 𝒞ᵒᵖ ⥤ Grpd` is fibred in groupoids
@@ -29,7 +29,7 @@ theorem isFiberedInGroupoids_presheafOfGroupoids :
 
 [Tag 04TL](https://stacks.math.columbia.edu/tag/04TL) in the Stacks Project.
 
-**`CategoryTheory.Functor.IsSplitFiberedInGroupoids`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedInGroupoids/Split.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/FiberedInGroupoids/Split.lean#L89).
+**`CategoryTheory.Functor.IsSplitFiberedInGroupoids`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedInGroupoids/Split.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedInGroupoids/Split.lean#L92).
 
 > **Stacks 04TL.**
 > A *split category fibred in groupoids* over `𝒞` is a category fibred in groupoids `p : 𝒮 ⥤ 𝒞`
@@ -45,7 +45,7 @@ def Functor.IsSplitFiberedInGroupoids (p : 𝒮 ⥤ 𝒞) : Prop
 
 [Tag 02XY](https://stacks.math.columbia.edu/tag/02XY) in the Stacks Project.
 
-**`CategoryTheory.Functor.exists_isFibredEquivalenceOver_presheafOfGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/Strictification.lean, line 955](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/FiberedCategory/Strictification.lean#L955).
+**`CategoryTheory.Functor.exists_isFibredEquivalenceOver_presheafOfGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/FiberedCategory/Strictification.lean, line 961](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/FiberedCategory/Strictification.lean#L961).
 
 > **Stacks 02XY.**
 > Every category fibred in groupoids `p : 𝒳 ⥤ 𝒞` is equivalent, in the 2-category of fibred
@@ -68,4 +68,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 4.37, Tag 0048](https://stacks.math.columbia.edu/tag/0048)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

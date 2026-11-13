@@ -8,7 +8,7 @@ proof: formalized
 
 # 48.4 Right adjoint of pushforward and restriction to opens
 
-Section 48.4 of the Stacks Project, [Tag 0E4G](https://stacks.math.columbia.edu/tag/0E4G). 6 tags here are carried by 13 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 48.4 of the Stacks Project, [Tag 0E4G](https://stacks.math.columbia.edu/tag/0E4G). 6 tags here are carried by 13 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0A9J, an equation
 
@@ -16,13 +16,13 @@ Section 48.4 of the Stacks Project, [Tag 0E4G](https://stacks.math.columbia.edu/
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.IsPullback`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.IsPullback#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch48.lean, line 16](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch48.lean#L16) (StacksFrontier): “the cartesian square of a base change”. References: SGA 4 I (10.1).
+- [`CategoryTheory.IsPullback`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.IsPullback#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch48.lean, line 16](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch48.lean#L16) (StacksFrontier): “the cartesian square of a base change”. References: SGA 4 I (10.1).
 
 ## Tag 0A9K, a lemma
 
 [Tag 0A9K](https://stacks.math.columbia.edu/tag/0A9K) in the Stacks Project.
 
-**`Stacks.Duality.isIso_refinementXi`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/Compactification/ShriekRefinementXi.lean, line 73](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/Compactification/ShriekRefinementXi.lean#L73). The attribute's comment: “for the cartesian square of an interior-preserving morphism of compactifications of a morphism of AlgebraicGeometry.FTS S over a Noetherian base, whose base change morphism is the open immersion of the target compactification. See Stacks.Duality.OpenImmersion.isIso\_twistedInverseImagePushforwardBaseChange\_of\_isOpenImmersion for the scope of the registration and for why the general Tor-independent case is not proved. What this discharges is the instance argument IsIso (Stacks.Duality.refinementXi ..) of Stacks.Duality.refinementBaseChange and of Stacks.Duality.refinementIso; the other instance argument, Stacks 0A9P, is Stacks.Duality.isIso\_refinementBaseChangePlus”.
+**`Stacks.Duality.isIso_refinementXi`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/Compactification/ShriekRefinementXi.lean, line 73](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/Compactification/ShriekRefinementXi.lean#L73). The attribute's comment: “for the cartesian square of an interior-preserving morphism of compactifications of a morphism of AlgebraicGeometry.FTS S over a Noetherian base, whose base change morphism is the open immersion of the target compactification. See Stacks.Duality.OpenImmersion.isIso\_twistedInverseImagePushforwardBaseChange\_of\_isOpenImmersion for the scope of the registration and for why the general Tor-independent case is not proved. What this discharges is the instance argument IsIso (Stacks.Duality.refinementXi ..) of Stacks.Duality.refinementBaseChange and of Stacks.Duality.refinementIso; the other instance argument, Stacks 0A9P, is Stacks.Duality.isIso\_refinementBaseChangePlus”.
 
 > **[Stacks, Tag 0A9K] for the cartesian square of an interior-preserving morphism of
 > compactifications.**  The base change morphism of that square is the open immersion `j₂` of the
@@ -35,7 +35,7 @@ instance isIso_refinementXi (hg : CompactificationOf.PreservesInterior g) :
     IsIso (refinementXi f g hg)
 ```
 
-**`Stacks.Duality.OpenImmersion.isIso_twistedInverseImagePushforwardBaseChange_of_isOpenImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/OpenImmersion/TwistedInverseImageRestrictionBaseChange.lean, line 372](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/OpenImmersion/TwistedInverseImageRestrictionBaseChange.lean#L372). The attribute's comment: “for a cartesian square of schemes whose base change morphism g is an OPEN IMMERSION, hence flat, hence Tor independent of f: the transformation xi = Stacks.Duality.twistedInverseImagePushforwardBaseChange of the Situation of Stacks 0A9J is invertible, with nothing assumed beyond the quasi-coherence of the cohomology of the four derived direct images (Stacks 08D5) and the existence of the two twisted inverse images (Stacks 0A9E), which is what makes xi exist. The general Tor-independent case is NOT proved: by Stacks.Duality.isIso\_twistedInverseImagePushforwardBaseChange\_iff it is equivalent to Stacks 08IB, whose route Stacks 0DJ9 is carried in this repository over three unproved hypotheses (AlgebraicGeometry.BaseChangeAffineOpenCase, AlgebraicGeometry.BaseChangeMayerVietorisStep, and the localization step) at AlgebraicGeometry.isIso\_derivedBaseChangeComp\_of\_affineCase. Along an open immersion none of that is needed, Stacks 08IB being replaced by Stacks 08FE”.
+**`Stacks.Duality.OpenImmersion.isIso_twistedInverseImagePushforwardBaseChange_of_isOpenImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/OpenImmersion/TwistedInverseImageRestrictionBaseChange.lean, line 372](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/OpenImmersion/TwistedInverseImageRestrictionBaseChange.lean#L372). The attribute's comment: “for a cartesian square of schemes whose base change morphism g is an OPEN IMMERSION, hence flat, hence Tor independent of f: the transformation xi = Stacks.Duality.twistedInverseImagePushforwardBaseChange of the Situation of Stacks 0A9J is invertible, with nothing assumed beyond the quasi-coherence of the cohomology of the four derived direct images (Stacks 08D5) and the existence of the two twisted inverse images (Stacks 0A9E), which is what makes xi exist. The general Tor-independent case is NOT proved: by Stacks.Duality.isIso\_twistedInverseImagePushforwardBaseChange\_iff it is equivalent to Stacks 08IB, whose route Stacks 0DJ9 is carried in this repository over three unproved hypotheses (AlgebraicGeometry.BaseChangeAffineOpenCase, AlgebraicGeometry.BaseChangeMayerVietorisStep, and the localization step) at AlgebraicGeometry.isIso\_derivedBaseChangeComp\_of\_affineCase. Along an open immersion none of that is needed, Stacks 08IB being replaced by Stacks 08FE”.
 
 > **[Stacks, Tag 0A9K] for a cartesian square whose base change morphism is an open
 > immersion.**  In the Situation of [Stacks, Tag 0A9J], if `j : V ⟶ Y` is an open immersion — so
@@ -55,7 +55,7 @@ theorem isIso_twistedInverseImagePushforwardBaseChange_of_isOpenImmersion
       hpushf' hpushj sq)
 ```
 
-**`Stacks.Duality.isIso_twistedInverseImagePushforwardBaseChange_of_torIndependent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/TorIndependentBaseChangeIsIso.lean, line 344](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/TorIndependentBaseChangeIsIso.lean#L344).
+**`Stacks.Duality.isIso_twistedInverseImagePushforwardBaseChange_of_torIndependent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/TorIndependentBaseChangeIsIso.lean, line 344](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/TorIndependentBaseChangeIsIso.lean#L344).
 
 > **[Stacks, Tag 0A9K].** Let
 > ```
@@ -88,7 +88,7 @@ theorem isIso_twistedInverseImagePushforwardBaseChange_of_torIndependent
 
 [Tag 0A9L](https://stacks.math.columbia.edu/tag/0A9L) in the Stacks Project.
 
-**`Stacks.Duality.OpenImmersion.qcqsTwistedInverseImageRestrictionMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/OpenImmersion/TwistedInverseImageRestrictionQcqs.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/OpenImmersion/TwistedInverseImageRestrictionQcqs.lean#L106).
+**`Stacks.Duality.OpenImmersion.qcqsTwistedInverseImageRestrictionMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/OpenImmersion/TwistedInverseImageRestrictionQcqs.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/OpenImmersion/TwistedInverseImageRestrictionQcqs.lean#L106).
 
 > **Stacks Project, Tag 0A9L.** For a morphism `f : X ⟶ Y` of quasi-compact and
 > quasi-separated schemes and a quasi-compact open `V ⊆ Y`, with `U = f⁻¹(V)`, `j : V ⟶ Y` and
@@ -109,7 +109,7 @@ def qcqsTwistedInverseImageRestrictionMap :
         twistedInverseImage (f ∣_ V) (isQuasicoherent_homology_derivedPushforward_of_qcqs _)
 ```
 
-**`Stacks.Duality.OpenImmersion.isIso_qcqsTwistedInverseImageRestrictionMap_app_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/OpenImmersion/TwistedInverseImageRestrictionQcqs.lean, line 127](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/OpenImmersion/TwistedInverseImageRestrictionQcqs.lean#L127). The attribute's comment: “the isomorphism criterion: invertible at `K` iff `a(K)|_U ⟶ a(Rj_*(K|_V))|_U` is”.
+**`Stacks.Duality.OpenImmersion.isIso_qcqsTwistedInverseImageRestrictionMap_app_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/OpenImmersion/TwistedInverseImageRestrictionQcqs.lean, line 127](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/OpenImmersion/TwistedInverseImageRestrictionQcqs.lean#L127). The attribute's comment: “the isomorphism criterion: invertible at `K` iff `a(K)|_U ⟶ a(Rj_*(K|_V))|_U` is”.
 
 > **Stacks Project, Tag 0A9L, the criterion.** The transformation
 > `Stacks.Duality.OpenImmersion.qcqsTwistedInverseImageRestrictionMap` is an isomorphism when
@@ -133,7 +133,7 @@ theorem isIso_qcqsTwistedInverseImageRestrictionMap_app_iff
 
 [Tag 0A9M](https://stacks.math.columbia.edu/tag/0A9M) in the Stacks Project.
 
-**`Stacks.Duality.OpenImmersion.exists_not_isIso_qcqsTwistedInverseImageRestrictionMap_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/OpenImmersion/TwistedInverseImageRestrictionExample.lean, line 276](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/OpenImmersion/TwistedInverseImageRestrictionExample.lean#L276).
+**`Stacks.Duality.OpenImmersion.exists_not_isIso_qcqsTwistedInverseImageRestrictionMap_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/OpenImmersion/TwistedInverseImageRestrictionExample.lean, line 276](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/OpenImmersion/TwistedInverseImageRestrictionExample.lean#L276).
 
 > **Stacks Project, Tag 0A9M.** There is a finite morphism `f : X ⟶ Y` of Noetherian schemes, a
 > quasi-compact open `V ⊆ Y` and an object `K` of `D_QCoh(𝒪_Y)` with coherent cohomology sheaves,
@@ -158,7 +158,7 @@ theorem exists_not_isIso_qcqsTwistedInverseImageRestrictionMap_app :
 
 [Tag 0A9N](https://stacks.math.columbia.edu/tag/0A9N) in the Stacks Project.
 
-**`Stacks.Duality.OpenImmersion.qcqs_cohomologySupportedOn_iff_isIso_restrictionMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/OpenImmersion/TwistedInverseImageRestrictionSupportQcqs.lean, line 54](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/OpenImmersion/TwistedInverseImageRestrictionSupportQcqs.lean#L54). The attribute's comment: “part (2)”.
+**`Stacks.Duality.OpenImmersion.qcqs_cohomologySupportedOn_iff_isIso_restrictionMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/OpenImmersion/TwistedInverseImageRestrictionSupportQcqs.lean, line 54](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/OpenImmersion/TwistedInverseImageRestrictionSupportQcqs.lean#L54). The attribute's comment: “part (2)”.
 
 > **[Stacks, Tag 0A9N], part (2), at the source's hypotheses, with nothing carried.** Let
 > `f : X ⟶ Y` be a morphism of quasi-compact and quasi-separated schemes, let `a` be the right
@@ -180,7 +180,7 @@ theorem qcqs_cohomologySupportedOn_iff_isIso_restrictionMap :
         IsIso ((qcqsTwistedInverseImageRestrictionMap f V).app K))
 ```
 
-**`Stacks.Duality.twistedInverseImageRestrictionMap_isIso_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/RestrictionSupport.lean, line 336](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/RestrictionSupport.lean#L336).
+**`Stacks.Duality.twistedInverseImageRestrictionMap_isIso_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/RestrictionSupport.lean, line 336](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/RestrictionSupport.lean#L336).
 
 > **[Stacks, Tag 0A9N].** Let `f : X ⟶ Y` be a morphism of quasi-compact quasi-separated schemes,
 > `a` the right adjoint of `Rf_* : D_QCoh(𝒪_X) ⥤ D_QCoh(𝒪_Y)`, `j : V ⟶ Y` the inclusion of a
@@ -218,7 +218,7 @@ theorem twistedInverseImageRestrictionMap_isIso_iff (sq : IsPullback j' f' f j) 
         IsIso (φ.app K)) → ∀ K : quasiCoherentDerivedCategory Y, IsIso (φ.app K))
 ```
 
-**`Stacks.Duality.qcqs_twistedInverseImageRestrictionMap_isIso_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/RestrictionSupportUnconditional.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/RestrictionSupportUnconditional.lean#L57).
+**`Stacks.Duality.qcqs_twistedInverseImageRestrictionMap_isIso_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/RestrictionSupportUnconditional.lean, line 57](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/RestrictionSupportUnconditional.lean#L57).
 
 > Let `f : X ⟶ Y` be a morphism of quasi-compact quasi-separated schemes, `a` the right adjoint
 > of `Rf_* : D_QCoh(𝒪_X) ⥤ D_QCoh(𝒪_Y)`, `j : V ⟶ Y` the inclusion of a quasi-compact open and
@@ -267,7 +267,7 @@ theorem qcqs_twistedInverseImageRestrictionMap_isIso_iff (sq : IsPullback j' f' 
 
 [Tag 0A9P](https://stacks.math.columbia.edu/tag/0A9P) in the Stacks Project.
 
-**`Stacks.Duality.isIso_twistedInverseImageRestrictionMap_app_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/ProperFlatRestriction.lean, line 73](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/ProperFlatRestriction.lean#L73). The attribute's comment: “(1): f flat and of finite presentation”.
+**`Stacks.Duality.isIso_twistedInverseImageRestrictionMap_app_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/ProperFlatRestriction.lean, line 73](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/ProperFlatRestriction.lean#L73). The attribute's comment: “(1): f flat and of finite presentation”.
 
 > Let `Y` be a quasi-compact and quasi-separated scheme, `f : X ⟶ Y` a proper, flat morphism of
 > finite presentation, and `j : V ⟶ Y` a quasi-compact open immersion with base change
@@ -293,7 +293,7 @@ theorem isIso_twistedInverseImageRestrictionMap_app_of_flat (sq : IsPullback j' 
       sq).app K)
 ```
 
-**`Stacks.Duality.isIso_twistedInverseImageRestrictionMap_app_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/ProperRestriction.lean, line 276](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/ProperRestriction.lean#L276). The attribute's comment: “(2): Y Noetherian”.
+**`Stacks.Duality.isIso_twistedInverseImageRestrictionMap_app_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/ProperRestriction.lean, line 276](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/ProperRestriction.lean#L276). The attribute's comment: “(2): Y Noetherian”.
 
 > **[Stacks, Tag 0A9P] (2).** Let `Y` be Noetherian, `f : X ⟶ Y` proper and `j : V ⟶ Y` an open
 > immersion with base change `j' : U ⟶ X`. The map `(j')^* ∘ a ⟶ a' ∘ j^*` of [Stacks, Tag 0A9L]
@@ -317,7 +317,7 @@ theorem isIso_twistedInverseImageRestrictionMap_app_of_isProper (sq : IsPullback
       sq).app K)
 ```
 
-**`Stacks.Duality.restrictionSupport_and_isIso_twistedInverseImageRestrictionMap_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/ProperRestrictionUnconditional.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/ProperRestrictionUnconditional.lean#L64). The attribute's comment: “(1)”.
+**`Stacks.Duality.restrictionSupport_and_isIso_twistedInverseImageRestrictionMap_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/ProperRestrictionUnconditional.lean, line 64](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/ProperRestrictionUnconditional.lean#L64). The attribute's comment: “(1)”.
 
 > **[Stacks, Tag 0A9P] (1).** Let `Y` be a quasi-compact quasi-separated scheme, `f : X ⟶ Y` a
 > proper, flat morphism of finite presentation, `j : V ⟶ Y` the inclusion of a quasi-compact open and
@@ -356,7 +356,7 @@ theorem restrictionSupport_and_isIso_twistedInverseImageRestrictionMap_of_flat
         IsIso (φ.app K)
 ```
 
-**`Stacks.Duality.restrictionSupport_and_isIso_twistedInverseImageRestrictionMap_of_isNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/ProperRestrictionUnconditional.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/ProperRestrictionUnconditional.lean#L110). The attribute's comment: “(2)”.
+**`Stacks.Duality.restrictionSupport_and_isIso_twistedInverseImageRestrictionMap_of_isNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/ProperRestrictionUnconditional.lean, line 110](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/ProperRestrictionUnconditional.lean#L110). The attribute's comment: “(2)”.
 
 > **[Stacks, Tag 0A9P] (2).** Let `Y` be a Noetherian scheme, `f : X ⟶ Y` a proper morphism,
 > `j : V ⟶ Y` the inclusion of an open (quasi-compact, as `Y` is Noetherian) and `j' : U ⟶ X` its
@@ -401,4 +401,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 48.4, Tag 0E4G](https://stacks.math.columbia.edu/tag/0E4G)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

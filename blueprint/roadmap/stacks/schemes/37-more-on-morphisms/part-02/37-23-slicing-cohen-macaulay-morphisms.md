@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: Stacks.AlgebraicGeometry.exists_affineOpen_effectiveCartierDivisor_of_isRegular_fiber, Stacks.AlgebraicGeometry.exists_affineOpen_regularImmersion_flat_of_isRegular_fiber, Stacks.AlgebraicGeometry.exists_affineOpen_effectiveCartierDivisor_of_one_le_depth, Stacks.AlgebraicGeometry.exists_regularImmersion_flat_locallyQuasiFinite_singleton_fiber_of_isCohenMacaulayAt, AlgebraicGeometry.hasQuasiFiniteSlices, AlgebraicGeometry.exists_flat_locallyQuasiFinite_factorization_through, AlgebraicGeometry.hasLocallyQuasiFiniteRefinement
+lean: Stacks.AlgebraicGeometry.exists_affineOpen_effectiveCartierDivisor_of_isRegular_fiber, Stacks.AlgebraicGeometry.exists_affineOpen_regularImmersion_flat_of_isRegular_fiber, Stacks.AlgebraicGeometry.exists_affineOpen_effectiveCartierDivisor_of_one_le_depth, Stacks.AlgebraicGeometry.exists_regularImmersion_flat_locallyQuasiFinite_singleton_fiber_of_isCohenMacaulayAt, AlgebraicGeometry.exists_flat_locallyQuasiFinite_factorization_through, AlgebraicGeometry.hasLocallyQuasiFiniteRefinement
 statement: formalized
 proof: formalized
 ---
 
 # 37.23 Slicing Cohen-Macaulay morphisms
 
-Section 37.23 of the Stacks Project, [Tag 056X](https://stacks.math.columbia.edu/tag/056X). 6 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 37.23 of the Stacks Project, [Tag 056X](https://stacks.math.columbia.edu/tag/056X). 6 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 056Y, a lemma
 
 [Tag 056Y](https://stacks.math.columbia.edu/tag/056Y) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.exists_affineOpen_effectiveCartierDivisor_of_isRegular_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/CohenMacaulaySlice/EffectiveCartierSlice.lean, line 214](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/CohenMacaulaySlice/EffectiveCartierSlice.lean#L214).
+**`Stacks.AlgebraicGeometry.exists_affineOpen_effectiveCartierDivisor_of_isRegular_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/CohenMacaulaySlice/EffectiveCartierSlice.lean, line 214](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/CohenMacaulaySlice/EffectiveCartierSlice.lean#L214).
 
 > Let `f : X ⟶ S` be locally of finite presentation and flat at `x : X`, and let `h` be an
 > element of the maximal ideal of `𝒪_{X, x}` whose image in the local ring of the fibre `X_{f x}`
@@ -45,9 +45,9 @@ theorem exists_affineOpen_effectiveCartierDivisor_of_isRegular_fiber (f : X ⟶ 
 
 [Tag 06LI](https://stacks.math.columbia.edu/tag/06LI) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.exists_affineOpen_regularImmersion_flat_of_isRegular_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/CohenMacaulaySlice/RegularSliceThroughPoint.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/CohenMacaulaySlice/RegularSliceThroughPoint.lean#L74). References: EGA IV (11.3.8), “c) ⇒ b') for F = O\_X”.
+**`Stacks.AlgebraicGeometry.exists_affineOpen_regularImmersion_flat_of_isRegular_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/CohenMacaulaySlice/RegularSliceThroughPoint.lean, line 74](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/CohenMacaulaySlice/RegularSliceThroughPoint.lean#L74). References: EGA IV (11.3.8), “c) ⇒ b') for F = O\_X”.
 
-> **Stacks Project, Lemma 37.24.1 (Tag 06LI).**  Let `f : X ⟶ S` be locally of finite
+> **Stacks Project, Lemma 37.23.2 (Tag 06LI).**  Let `f : X ⟶ S` be locally of finite
 > presentation and flat at `x : X`, and let `h : Fin r → 𝒪_{X, x}` be a family whose image in the
 > local ring of the fibre `X_{f x}` at `x` is a regular sequence.  Then there is an affine open `U`
 > containing `x` and global sections `a : Fin r → Γ(U, ⊤)` whose germs at `x` are the `h i`, such
@@ -82,7 +82,7 @@ theorem exists_affineOpen_regularImmersion_flat_of_isRegular_fiber
 
 [Tag 056Z](https://stacks.math.columbia.edu/tag/056Z) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.exists_affineOpen_effectiveCartierDivisor_of_one_le_depth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/CohenMacaulaySlice/EffectiveCartierSlice.lean, line 367](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/CohenMacaulaySlice/EffectiveCartierSlice.lean#L367). References: EGA IV (19.9.6), “n = 1, F = O\_X”.
+**`Stacks.AlgebraicGeometry.exists_affineOpen_effectiveCartierDivisor_of_one_le_depth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/CohenMacaulaySlice/EffectiveCartierSlice.lean, line 367](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/CohenMacaulaySlice/EffectiveCartierSlice.lean#L367). References: EGA IV (19.9.6), “n = 1, F = O\_X”.
 
 > Let `f : X ⟶ S` be locally of finite presentation and flat at `x : X`, and assume the local
 > ring of the fibre `X_{f x}` at `x` has depth at least one.  Then some affine open neighbourhood
@@ -107,9 +107,9 @@ theorem exists_affineOpen_effectiveCartierDivisor_of_one_le_depth (f : X ⟶ S)
 
 [Tag 0570](https://stacks.math.columbia.edu/tag/0570) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.exists_regularImmersion_flat_locallyQuasiFinite_singleton_fiber_of_isCohenMacaulayAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/CohenMacaulaySlice/RegularSliceThroughPoint.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/CohenMacaulaySlice/RegularSliceThroughPoint.lean#L110). References: EGA IV (19.2.9), “x closed in fibre”; EGA IV (17.16.1).
+**`Stacks.AlgebraicGeometry.exists_regularImmersion_flat_locallyQuasiFinite_singleton_fiber_of_isCohenMacaulayAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/CohenMacaulaySlice/RegularSliceThroughPoint.lean, line 110](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/CohenMacaulaySlice/RegularSliceThroughPoint.lean#L110). References: EGA IV (19.2.9), “x closed in fibre”; EGA IV (17.16.1).
 
-> **Stacks Project, Lemma 37.24.6 (Tag 0570).**  Let `f : X ⟶ S` be locally of finite
+> **Stacks Project, Lemma 37.23.4 (Tag 0570).**  Let `f : X ⟶ S` be locally of finite
 > presentation, let `x : X` be a point at which `f` is Cohen–Macaulay, and assume `x` is closed in
 > its fibre `X_{f x}`.  Then there is a regular immersion `i : Z ⟶ X` through `x` such that `Z` is
 > flat, locally of finite presentation and locally quasi-finite over `S`, and such that the fibre
@@ -129,26 +129,11 @@ theorem exists_regularImmersion_flat_locallyQuasiFinite_singleton_fiber_of_isCoh
         {z' : Z | (i ≫ f) z' = f x} = {z}
 ```
 
-**`AlgebraicGeometry.hasQuasiFiniteSlices`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/QuasiFiniteSlices.lean, line 508](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/QuasiFiniteSlices.lean#L508). The attribute's comment: “the weak form: only an immersion through the point which is flat, locally of finite presentation and locally quasi-finite over the base, which is what Tag 0571 consumes. The regular-immersion clause and the singleton-fibre clause (c) are not proved.”.
-
-> **The slicing lemma**, in the weak form `AlgebraicGeometry.HasQuasiFiniteSlices`: a point
-> which is closed in its fibre and at which a morphism locally of finite presentation is
-> Cohen-Macaulay admits an immersion through it which is flat, locally of finite presentation and
-> locally quasi-finite over the base.
->
-> The regular-immersion clause and the singleton-fibre clause `Z_s = {x}` of Tag 0570 are *not*
-> proved; `AlgebraicGeometry.HasQuasiFiniteSlice` drops both, and the weaker statement is what
-> [Stacks, Tag 0571] uses.
-
-```lean
-theorem hasQuasiFiniteSlices : HasQuasiFiniteSlices.{u}
-```
-
 ## Tag 0571, a lemma
 
 [Tag 0571](https://stacks.math.columbia.edu/tag/0571) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_flat_locallyQuasiFinite_factorization_through`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/QuasiFiniteSlices.lean, line 559](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/QuasiFiniteSlices.lean#L559).
+**`AlgebraicGeometry.exists_flat_locallyQuasiFinite_factorization_through`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/QuasiFiniteSlices.lean, line 559](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/QuasiFiniteSlices.lean#L559).
 
 > A point in the image of a flat morphism `f : X ⟶ S` locally of
 > finite presentation lies in the image of some `g : S' ⟶ S` which factors as `h ≫ f` through `f`
@@ -167,7 +152,7 @@ theorem exists_flat_locallyQuasiFinite_factorization_through
 
 [Tag 0572](https://stacks.math.columbia.edu/tag/0572) in the Stacks Project.
 
-**`AlgebraicGeometry.hasLocallyQuasiFiniteRefinement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Fppf/LocallyQuasiFiniteRefinement.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Fppf/LocallyQuasiFiniteRefinement.lean#L126).
+**`AlgebraicGeometry.hasLocallyQuasiFiniteRefinement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Fppf/LocallyQuasiFiniteRefinement.lean, line 126](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Fppf/LocallyQuasiFiniteRefinement.lean#L126).
 
 > **Stacks Project, Tag 0572.** An fppf covering `𝒰` of a scheme `S` is refined by an fppf
 > covering `{T_j ⟶ S}`, indexed by the points of `S`, each member of which is locally
@@ -186,4 +171,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 37.23, Tag 056X](https://stacks.math.columbia.edu/tag/056X)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

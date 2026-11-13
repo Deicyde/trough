@@ -1,6 +1,6 @@
 # 23 Divided Power Algebra
 
-Chapter 23 of the Stacks Project, *Divided Power Algebra*, [Tag 09PD](https://stacks.math.columbia.edu/tag/09PD): the 11 sections of its 12 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 63 tags are carried by 149 declarations of the repository (all in StacksFrontier) and 12 registered declarations.
+Chapter 23 of the Stacks Project, *Divided Power Algebra*, [Tag 09PD](https://stacks.math.columbia.edu/tag/09PD): the 11 sections of its 12 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 63 tags are carried by 150 declarations of the repository (all in StacksFrontier) and 12 registered declarations.
 
 - [23.2 Divided powers](23-2-divided-powers.md)
 - [23.3 Divided power rings](23-3-divided-power-rings.md)

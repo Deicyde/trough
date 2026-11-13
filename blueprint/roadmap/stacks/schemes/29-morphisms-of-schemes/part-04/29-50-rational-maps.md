@@ -8,7 +8,7 @@ proof: formalized
 
 # 29.50 Rational maps
 
-Section 29.50 of the Stacks Project, [Tag 01RR](https://stacks.math.columbia.edu/tag/01RR). 12 tags here are carried by 22 declarations of the repository (all in StacksFrontier) and 8 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 29.50 of the Stacks Project, [Tag 01RR](https://stacks.math.columbia.edu/tag/01RR). 12 tags here are carried by 27 declarations of the repository (all in StacksFrontier) and 6 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 01RS, a definition
 
@@ -16,16 +16,16 @@ Section 29.50 of the Stacks Project, [Tag 01RR](https://stacks.math.columbia.edu
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Scheme.PartialMap`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.PartialMap#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch29.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch29.lean#L136) (StacksFrontier): “(1) a morphism defined on a dense open subscheme”. References: SGA 3 XVIII (1.5), “representatives f”.
-- [`AlgebraicGeometry.Scheme.PartialMap.equiv`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.PartialMap.equiv#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch29.lean, line 138](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch29.lean#L138) (StacksFrontier): “(1) equivalence”. References: EGA I (7.1.1); EGA I (7.1.2); EGA IV (20.2.8), “special case”.
-- [`AlgebraicGeometry.Scheme.RationalMap`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.RationalMap#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch29.lean, line 139](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch29.lean#L139) (StacksFrontier): “(2) rational map”. References: EGA I (7.1.2).
-- [`AlgebraicGeometry.Scheme.RationalMap.IsOver`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.RationalMap.IsOver#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch29.lean, line 140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch29.lean#L140) (StacksFrontier): “(3) S-rational map”. References: EGA I (7.1.2); EGA IV (18.10.19); SGA 3 XVIII (1.5), “special case”.
+- [`AlgebraicGeometry.Scheme.PartialMap`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.PartialMap#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch29.lean, line 138](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch29.lean#L138) (StacksFrontier): “(1) a morphism defined on a dense open subscheme”. References: SGA 3 XVIII (1.5), “representatives f”.
+- [`AlgebraicGeometry.Scheme.PartialMap.equiv`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.PartialMap.equiv#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch29.lean, line 140](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch29.lean#L140) (StacksFrontier): “(1) equivalence”. References: EGA I (7.1.1); EGA I (7.1.2); EGA IV (20.2.8), “special case”.
+- [`AlgebraicGeometry.Scheme.RationalMap`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.RationalMap#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch29.lean, line 141](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch29.lean#L141) (StacksFrontier): “(2) rational map”. References: EGA I (7.1.2).
+- [`AlgebraicGeometry.Scheme.RationalMap.IsOver`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.RationalMap.IsOver#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch29.lean, line 142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch29.lean#L142) (StacksFrontier): “(3) S-rational map”. References: EGA I (7.1.2); EGA IV (18.10.19); SGA 3 XVIII (1.5), “special case”.
 
 ## Tag 0BX8, a lemma
 
 [Tag 0BX8](https://stacks.math.columbia.edu/tag/0BX8) in the Stacks Project.
 
-**`AlgebraicGeometry.GenericPointMapContext.bijective_genericPointMapForRationalMaps_of_locallyOfFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Birational/GenericPointMapFinitePresentation.lean, line 279](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Birational/GenericPointMapFinitePresentation.lean#L279). The attribute's comment: “finite\_presentation\_bijectivity”. References: EGA IV (20.3.7), “bijectivity (fin pres)”; EGA I (7.1.11), “bijectivity”.
+**`AlgebraicGeometry.GenericPointMapContext.bijective_genericPointMapForRationalMaps_of_locallyOfFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Birational/GenericPointMapFinitePresentation.lean, line 279](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Birational/GenericPointMapFinitePresentation.lean#L279). The attribute's comment: “finite\_presentation\_bijectivity”. References: EGA IV (20.3.7), “bijectivity (fin pres)”; EGA I (7.1.11), “bijectivity”.
 
 > When the target is locally of finite presentation over the base, every
 > compatible collection of points and local maps at the generic points comes
@@ -37,7 +37,7 @@ public theorem bijective_genericPointMapForRationalMaps_of_locallyOfFinitePresen
     Function.Bijective C.genericPointMapForRationalMaps
 ```
 
-**`AlgebraicGeometry.GenericPointMapContext.genericPointMapForRationalMaps_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Birational/GenericPointMapInjective.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Birational/GenericPointMapInjective.lean#L76). The attribute's comment: “injectivity”. References: EGA IV (20.2.11), “(i)”; EGA IV (20.3.7), “injectivity”; EGA I (7.1.11), “injectivity”.
+**`AlgebraicGeometry.GenericPointMapContext.genericPointMapForRationalMaps_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Birational/GenericPointMapInjective.lean, line 76](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Birational/GenericPointMapInjective.lean#L76). The attribute's comment: “injectivity”. References: EGA IV (20.2.11), “(i)”; EGA IV (20.3.7), “injectivity”; EGA I (7.1.11), “injectivity”.
 
 > A rational map over the base is determined by its values and induced local
 > maps at the generic points of the irreducible components when the target is
@@ -49,7 +49,7 @@ public theorem genericPointMapForRationalMaps_injective
     Function.Injective C.genericPointMapForRationalMaps
 ```
 
-**`AlgebraicGeometry.GenericPointMapContext.bijective_genericPointMapForRationalMaps_of_isReduced`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Birational/GenericPointMapReduced.lean, line 203](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Birational/GenericPointMapReduced.lean#L203). The attribute's comment: “reduced\_source\_bijectivity”. References: EGA IV (20.2.11), “(ii) reduced case”; EGA I (7.1.11), “bijectivity, X reduced”.
+**`AlgebraicGeometry.GenericPointMapContext.bijective_genericPointMapForRationalMaps_of_isReduced`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Birational/GenericPointMapReduced.lean, line 203](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Birational/GenericPointMapReduced.lean#L203). The attribute's comment: “reduced\_source\_bijectivity”. References: EGA IV (20.2.11), “(ii) reduced case”; EGA I (7.1.11), “bijectivity, X reduced”.
 
 > For a reduced source and a target locally of finite type over the base,
 > rational maps over the base are determined by, and realize, arbitrary
@@ -65,7 +65,7 @@ public theorem bijective_genericPointMapForRationalMaps_of_isReduced
 
 [Tag 01RT](https://stacks.math.columbia.edu/tag/01RT) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.rationalFunctions`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RationalFunctions/Basic.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RationalFunctions/Basic.lean#L117). References: EGA I (7.1.2); EGA IV (20.2.8), “special case”.
+**`AlgebraicGeometry.Scheme.rationalFunctions`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RationalFunctions/Basic.lean, line 117](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RationalFunctions/Basic.lean#L117). References: EGA I (7.1.2); EGA IV (20.2.8), “special case”.
 
 > A rational function on a scheme is a rational map to the affine line over the integers.
 
@@ -77,7 +77,7 @@ abbrev Scheme.rationalFunctions (X : Scheme.{u}) : Type u
 
 [Tag 01RU](https://stacks.math.columbia.edu/tag/01RU) in the Stacks Project.
 
-**`Stacks.Chow.rationalFunctionsRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalFunctions.lean, line 466](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RationalFunctions.lean#L466).
+**`Stacks.Chow.rationalFunctionsRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalFunctions.lean, line 466](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RationalFunctions.lean#L466).
 
 > **Stacks 01RU.** The ring structure on rational maps to the affine line is the one induced
 > by the ring operations on sections on every dense open: there is a commutative ring structure on
@@ -97,7 +97,7 @@ theorem rationalFunctionsRing (X : Scheme.{u}) :
 
 [Tag 01RV](https://stacks.math.columbia.edu/tag/01RV) in the Stacks Project.
 
-**`Stacks.Chow.rationalFunctionsEquivStalks`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalFunctions/FunctionField.lean, line 592](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RationalFunctions/FunctionField.lean#L592). The attribute's comment: “product of generic local rings”. References: EGA I (7.1.13), “more general”; EGA I (7.1.5), “more general”; EGA I (7.1.8), “partial”; EGA I (7.3.3), “partial”; SGA 1 I (10.3), “more general”; SGA 4 IX (4.0), “partial”.
+**`Stacks.Chow.rationalFunctionsEquivStalks`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalFunctions/FunctionField.lean, line 592](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RationalFunctions/FunctionField.lean#L592). The attribute's comment: “product of generic local rings”. References: EGA I (7.1.13), “more general”; EGA I (7.1.5), “more general”; EGA I (7.1.8), “partial”; EGA I (7.3.3), “partial”; SGA 1 I (10.3), “more general”; SGA 4 IX (4.0), “partial”.
 
 > **Stacks 01RV.** The rational functions of a scheme with finitely many irreducible
 > components are the product of the local rings at the generic points of those components; the
@@ -112,7 +112,7 @@ def rationalFunctionsEquivStalks (X : Scheme.{u}) [Finite (irreducibleComponents
         e (ofSection X U s) Z = X.presheaf.germ U.1 Z.2.1.genericPoint h s }
 ```
 
-**`Stacks.Chow.rationalFunctionsEquivResidueFields`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalFunctions/FunctionField.lean, line 608](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RationalFunctions/FunctionField.lean#L608). The attribute's comment: “product of generic residue fields”. References: EGA I (7.3.3), “special case”; SGA 1 I (10.3), “special case”; SGA 4 IX (4.0), “special case”.
+**`Stacks.Chow.rationalFunctionsEquivResidueFields`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalFunctions/FunctionField.lean, line 608](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RationalFunctions/FunctionField.lean#L608). The attribute's comment: “product of generic residue fields”. References: EGA I (7.3.3), “special case”; SGA 1 I (10.3), “special case”; SGA 4 IX (4.0), “special case”.
 
 > **Stacks 01RV.** On a reduced scheme the generic local rings are the residue fields at the
 > generic points, so the rational functions are their product.
@@ -127,7 +127,7 @@ def rationalFunctionsEquivResidueFields (X : Scheme.{u}) [Finite (irreducibleCom
         e (ofSection X U s) Z = X.evaluation U.1 Z.2.1.genericPoint h s }
 ```
 
-**`Stacks.Chow.rationalFunctionsEquivFunctionField`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalFunctions/FunctionField.lean, line 625](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RationalFunctions/FunctionField.lean#L625). The attribute's comment: “integral function field”. References: EGA I (7.1.5), “integral case”.
+**`Stacks.Chow.rationalFunctionsEquivFunctionField`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalFunctions/FunctionField.lean, line 625](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RationalFunctions/FunctionField.lean#L625). The attribute's comment: “integral function field”. References: EGA I (7.1.5), “integral case”.
 
 > **Stacks 01RV.** On an integral scheme the rational functions are the function field, that
 > is, the stalk at the generic point.
@@ -139,7 +139,7 @@ def rationalFunctionsEquivFunctionField (X : Scheme.{u}) [IsIntegral X] :
         e (ofSection X U s) = X.presheaf.germ U.1 (genericPoint X) h s }
 ```
 
-**`Stacks.Chow.rationalFunctionsEquivResidueField`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalFunctions/FunctionField.lean, line 666](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RationalFunctions/FunctionField.lean#L666). The attribute's comment: “integral residue field”. References: EGA I (7.1.5), “κ(η) when integral”.
+**`Stacks.Chow.rationalFunctionsEquivResidueField`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalFunctions/FunctionField.lean, line 666](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RationalFunctions/FunctionField.lean#L666). The attribute's comment: “integral residue field”. References: EGA I (7.1.5), “κ(η) when integral”.
 
 > **Stacks 01RV.** On an integral scheme the rational functions are the residue field of the
 > generic point.
@@ -151,7 +151,7 @@ def rationalFunctionsEquivResidueField (X : Scheme.{u}) [IsIntegral X] :
         e (ofSection X U s) = X.evaluation U.1 (genericPoint X) h s }
 ```
 
-**`Stacks.Chow.isField_rationalFunctions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalFunctions/FunctionField.lean, line 682](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RationalFunctions/FunctionField.lean#L682). The attribute's comment: “field property”. References: EGA I (7.1.5), “field when integral”; EGA I (7.1.8), “special case”.
+**`Stacks.Chow.isField_rationalFunctions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalFunctions/FunctionField.lean, line 682](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RationalFunctions/FunctionField.lean#L682). The attribute's comment: “field property”. References: EGA I (7.1.5), “field when integral”; EGA I (7.1.8), “special case”.
 
 > **Stacks 01RV.** The ring of rational functions of an integral scheme is a field.
 
@@ -164,7 +164,7 @@ theorem isField_rationalFunctions (X : Scheme.{u}) [IsIntegral X] :
 
 [Tag 01RW](https://stacks.math.columbia.edu/tag/01RW) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.functionFieldOfRationalFunctions`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RationalFunctions/FunctionField.lean, line 44](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RationalFunctions/FunctionField.lean#L44).
+**`AlgebraicGeometry.Scheme.functionFieldOfRationalFunctions`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RationalFunctions/FunctionField.lean, line 44](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RationalFunctions/FunctionField.lean#L44).
 
 > The *function field*, or *field of rational functions*, of an integral scheme `X`: the ring
 > `R(X)` of rational functions on `X`, which is a field because `X` is integral.
@@ -177,7 +177,7 @@ abbrev functionFieldOfRationalFunctions (X : Scheme.{u}) [IsIntegral X] : Type u
 
 [Tag 02NF](https://stacks.math.columbia.edu/tag/02NF) in the Stacks Project.
 
-**`Stacks.Chow.not_subset_range_genericStalk_of_not_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalFunctions/LocalRings.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RationalFunctions/LocalRings.lean#L69). The attribute's comment: “noninclusion of local rings”. References: EGA I (8.2.4); EGA I (8.2.3), “sufficiency direction”.
+**`Stacks.Chow.not_subset_range_genericStalk_of_not_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalFunctions/LocalRings.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RationalFunctions/LocalRings.lean#L69). The attribute's comment: “noninclusion of local rings”. References: EGA I (8.2.4); EGA I (8.2.3), “sufficiency direction”.
 
 > **Stacks Project, Tag 02NF.** On an integral separated scheme, if an irreducible closed
 > subset `Z₁` is not contained in an irreducible closed subset `Z₂`, then the local ring at the
@@ -192,7 +192,7 @@ theorem not_subset_range_genericStalk_of_not_le (X : Scheme.{u})
         X.functionField)
 ```
 
-**`Stacks.Chow.exists_section_notMem_range_genericStalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalFunctions/LocalRings.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RationalFunctions/LocalRings.lean#L143). The attribute's comment: “closed-point neighbourhood form”. References: EGA I (8.2.4), “closed point case”; EGA I (8.2.3), “closed point, separated”.
+**`Stacks.Chow.exists_section_notMem_range_genericStalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalFunctions/LocalRings.lean, line 143](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RationalFunctions/LocalRings.lean#L143). The attribute's comment: “closed-point neighbourhood form”. References: EGA I (8.2.4), “closed point case”; EGA I (8.2.3), “closed point, separated”.
 
 > **Stacks Project, Tag 02NF.** On an integral separated scheme, a closed point `x` outside an
 > irreducible closed subset `Z` carries a function regular on a neighbourhood of `x` whose class
@@ -215,14 +215,14 @@ theorem exists_section_notMem_range_genericStalk (X : Scheme.{u})
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Scheme.RationalMap.domain`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.RationalMap.domain#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch29.lean, line 265](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch29.lean#L265) (StacksFrontier): “the domain of definition”. References: EGA I (7.2.1); EGA IV (18.10.19); EGA IV (20.2.3), “special case”.
-- [`AlgebraicGeometry.Scheme.RationalMap.mem_domain`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.RationalMap.mem_domain#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch29.lean, line 266](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch29.lean#L266) (StacksFrontier): “a point is in it iff some representative is defined there”. References: EGA I (7.2.1); EGA IV (20.2.3), “special case”.
+- [`AlgebraicGeometry.Scheme.RationalMap.domain`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.RationalMap.domain#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch29.lean, line 268](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch29.lean#L268) (StacksFrontier): “the domain of definition”. References: EGA I (7.2.1); EGA IV (18.10.19); EGA IV (20.2.3), “special case”.
+- [`AlgebraicGeometry.Scheme.RationalMap.mem_domain`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.RationalMap.mem_domain#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch29.lean, line 269](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch29.lean#L269) (StacksFrontier): “a point is in it iff some representative is defined there”. References: EGA I (7.2.1); EGA IV (20.2.3), “special case”.
 
 ## Tag 0A1Y, a lemma
 
 [Tag 0A1Y](https://stacks.math.columbia.edu/tag/0A1Y) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.RationalMap.existsUnique_hom_domain`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RationalFunctions/DomainOfDefinition.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RationalFunctions/DomainOfDefinition.lean#L59). The attribute's comment: “existence and uniqueness of the morphism on the domain of definition”. References: EGA I (7.2.2), “special case”; EGA IV (20.2.4), “special case”; EGA IV (20.2.8), “special case”; EGA IV (20.3.2), “special case”.
+**`AlgebraicGeometry.Scheme.RationalMap.existsUnique_hom_domain`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RationalFunctions/DomainOfDefinition.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RationalFunctions/DomainOfDefinition.lean#L59). The attribute's comment: “existence and uniqueness of the morphism on the domain of definition”. References: EGA I (7.2.2), “special case”; EGA IV (20.2.4), “special case”; EGA IV (20.2.8), “special case”; EGA IV (20.3.2), “special case”.
 
 > Let `X` and `Y` be schemes with `X` reduced and `Y` separated, and let `φ` be a rational map
 > from `X` to `Y` with domain of definition `φ.domain`. There is exactly one morphism
@@ -235,7 +235,7 @@ theorem existsUnique_hom_domain [IsReduced X] [Y.IsSeparated] (φ : X ⤏ Y) :
       (PartialMap.mk φ.domain φ.dense_domain f).toRationalMap = φ
 ```
 
-**`AlgebraicGeometry.Scheme.RationalMap.isOver_of_toRationalMap_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RationalFunctions/DomainOfDefinition.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RationalFunctions/DomainOfDefinition.lean#L77). The attribute's comment: “the morphism on the domain of definition is a morphism over a separated base”. References: EGA IV (20.2.5), “special case”.
+**`AlgebraicGeometry.Scheme.RationalMap.isOver_of_toRationalMap_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RationalFunctions/DomainOfDefinition.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RationalFunctions/DomainOfDefinition.lean#L77). The attribute's comment: “the morphism on the domain of definition is a morphism over a separated base”. References: EGA IV (20.2.5), “special case”.
 
 > Let `X` and `Y` be schemes over a separated scheme `S`, with `X` reduced and `Y` separated,
 > and let `φ` be an `S`-rational map from `X` to `Y`. Then the morphism on the domain of definition
@@ -252,37 +252,84 @@ theorem isOver_of_toRationalMap_eq [X.Over S] [Y.Over S] [IsReduced X] [Y.IsSepa
 
 [Tag 0A20](https://stacks.math.columbia.edu/tag/0A20) in the Stacks Project.
 
-Declarations registered for the tag:
+**`AlgebraicGeometry.IrreducibleDominantRat.Birational`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Birational/IrreducibleDominantRat.lean, line 224](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Birational/IrreducibleDominantRat.lean#L224). The attribute's comment: “(1): isomorphic in the category `IrreducibleDominantRat` of irreducible schemes and dominant rational maps; `birational_iff_birational` identifies it with Mathlib's `Scheme.Birational` (a partial isomorphism between dense opens).”.
 
-- [`AlgebraicGeometry.Scheme.BirationalOver`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.BirationalOver#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/Birational/Basic.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Birational/Basic.lean#L92) (StacksFrontier): “(2)”.
+> **Stacks 0A20 (1).** Irreducible schemes `X` and `Y` are *birational* if they are isomorphic
+> in the category of irreducible schemes and dominant rational maps.
+
+```lean
+def Birational (X Y : Scheme.{u}) [IrreducibleSpace X] [IrreducibleSpace Y] : Prop
+```
+
+**`AlgebraicGeometry.IrreducibleDominantRat.birational_iff_birational`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Birational/IrreducibleDominantRat.lean, line 245](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Birational/IrreducibleDominantRat.lean#L245). The attribute's comment: “(1): the definition by isomorphism in the category of dominant rational maps is equivalent to Mathlib's `Scheme.Birational`.”.
+
+> Birationality in the category of irreducible schemes and dominant rational maps
+> (Stacks 0A20 (1)) is equivalent to the existence of a partial isomorphism, Mathlib's
+> `Scheme.Birational`.
+
+```lean
+theorem birational_iff_birational : Birational X Y ↔ Scheme.Birational X Y
+```
+
+**`AlgebraicGeometry.IrreducibleDominantRatOver.BirationalOver`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Birational/IrreducibleDominantRat.lean, line 304](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Birational/IrreducibleDominantRat.lean#L304). The attribute's comment: “(2): isomorphic in the category `IrreducibleDominantRatOver S` of irreducible schemes over `S` and dominant `S`-rational maps; `birationalOver_iff_birationalOver` identifies it with Mathlib's `Scheme.BirationalOver`.”.
+
+> **Stacks 0A20 (2).** Irreducible schemes `X` and `Y` over `S` are *`S`-birational* if they
+> are isomorphic in the category of irreducible schemes over `S` and dominant `S`-rational maps.
+
+```lean
+def BirationalOver (S X Y : Scheme.{u}) [X.Over S] [Y.Over S] [IrreducibleSpace X]
+    [IrreducibleSpace Y] : Prop
+```
+
+**`AlgebraicGeometry.IrreducibleDominantRatOver.birationalOver_iff_birationalOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Birational/IrreducibleDominantRat.lean, line 329](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Birational/IrreducibleDominantRat.lean#L329). The attribute's comment: “(2): the definition by isomorphism in the category of dominant `S`-rational maps is equivalent to Mathlib's `Scheme.BirationalOver`.”.
+
+> `S`-birationality in the category of irreducible `S`-schemes and dominant `S`-rational maps
+> (Stacks 0A20 (2)) is equivalent to the existence of a partial isomorphism over `S`, Mathlib's
+> `Scheme.BirationalOver`.
+
+```lean
+theorem birationalOver_iff_birationalOver :
+    BirationalOver S X Y ↔ Scheme.BirationalOver (X ↘ S) (Y ↘ S)
+```
 
 ## Tag 0BAA, a lemma
 
 [Tag 0BAA](https://stacks.math.columbia.edu/tag/0BAA) in the Stacks Project.
 
-**`AlgebraicGeometry.birational_iff_exists_nonempty_open_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/DifferentialsAndValuative/BirationalOpenIso.lean, line 40](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/DifferentialsAndValuative/BirationalOpenIso.lean#L40). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.Scheme.dominantBirational_iff_exists_nonempty_open_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Birational/DominantRationalMaps.lean, line 416](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Birational/DominantRationalMaps.lean#L416). The attribute's comment: “(1)”.
 
-> Two irreducible schemes are birational if and only if they have isomorphic
-> nonempty open subschemes.
+> Two irreducible schemes are birational, in the sense of being isomorphic in the category of
+> irreducible schemes and dominant rational maps, if and only if they have isomorphic nonempty
+> open subschemes.
 
 ```lean
-public theorem birational_iff_exists_nonempty_open_iso
-    {X Y : Scheme.{u}} [IrreducibleSpace X] [IrreducibleSpace Y] :
-    Scheme.Birational X Y ↔
+theorem dominantBirational_iff_exists_nonempty_open_iso [IrreducibleSpace X]
+    [IrreducibleSpace Y] :
+    DominantBirational X Y ↔
       ∃ (U : X.Opens) (V : Y.Opens),
-        (U : Set X).Nonempty ∧ (V : Set Y).Nonempty ∧
-          Nonempty (U.toScheme ≅ V.toScheme)
+        (U : Set X).Nonempty ∧ (V : Set Y).Nonempty ∧ Nonempty (U.toScheme ≅ V.toScheme)
 ```
 
-Declarations registered for the tag:
+**`AlgebraicGeometry.Scheme.dominantBirationalOver_iff_exists_nonempty_open_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Birational/DominantRationalMaps.lean, line 427](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Birational/DominantRationalMaps.lean#L427). The attribute's comment: “(2)”.
 
-- [`AlgebraicGeometry.birationalOver_iff_exists_nonempty_open_iso`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Birational/GenericStalkCriterion.lean#L113), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/DifferentialsAndValuative/BirationalOpenIso.lean, line 49](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/DifferentialsAndValuative/BirationalOpenIso.lean#L49) (StacksFrontier): “part (2)”.
+> Two irreducible schemes over `S` are `S`-birational, in the sense of being isomorphic in the
+> category of irreducible schemes over `S` and dominant `S`-rational maps, if and only if there are
+> nonempty opens `U ⊆ X` and `V ⊆ Y` which are isomorphic over `S`.
+
+```lean
+theorem dominantBirationalOver_iff_exists_nonempty_open_iso [X.Over S] [Y.Over S]
+    [IrreducibleSpace X] [IrreducibleSpace Y] :
+    DominantBirationalOver S X Y ↔
+      ∃ (U : X.Opens) (V : Y.Opens),
+        (U : Set X).Nonempty ∧ (V : Set Y).Nonempty ∧
+          ∃ e : U.toScheme ≅ V.toScheme, e.hom ≫ V.ι ≫ Y ↘ S = U.ι ≫ X ↘ S
+```
 
 ## Tag 01RX, a remark
 
 [Tag 01RX](https://stacks.math.columbia.edu/tag/01RX) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.PseudoMap`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Closure/PseudoMorphism.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Closure/PseudoMorphism.lean#L82). The attribute's comment: “the pseudo-maps: morphisms into `Y` defined on scheme-theoretically dense opens of `X`, the objects whose equivalence classes the remark calls pseudo-morphisms”.
+**`AlgebraicGeometry.Scheme.PseudoMap`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Closure/PseudoMorphism.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Closure/PseudoMorphism.lean#L82). The attribute's comment: “the pseudo-maps: morphisms into `Y` defined on scheme-theoretically dense opens of `X`, the objects whose equivalence classes the remark calls pseudo-morphisms”.
 
 > A pseudo-map from `X` to `Y` is a morphism into `Y` defined on a scheme-theoretically dense
 > open subscheme of `X`. This is the variant of `AlgebraicGeometry.Scheme.PartialMap` in which the
@@ -292,7 +339,7 @@ Declarations registered for the tag:
 structure PseudoMap (X Y : Scheme.{u})
 ```
 
-**`AlgebraicGeometry.Scheme.PseudoMap.equiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Closure/PseudoMorphism.lean, line 140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Closure/PseudoMorphism.lean#L140). The attribute's comment: “the equivalence relation on pseudo-maps: agreement after restriction to a scheme-theoretically dense open”. References: EGA IV (20.2.1).
+**`AlgebraicGeometry.Scheme.PseudoMap.equiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Closure/PseudoMorphism.lean, line 140](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Closure/PseudoMorphism.lean#L140). The attribute's comment: “the equivalence relation on pseudo-maps: agreement after restriction to a scheme-theoretically dense open”. References: EGA IV (20.2.1).
 
 > Two pseudo-maps are equivalent if they agree after restriction to a scheme-theoretically
 > dense open subscheme.
@@ -301,7 +348,7 @@ structure PseudoMap (X Y : Scheme.{u})
 protected noncomputable def equiv (f g : X.PseudoMap Y) : Prop
 ```
 
-**`AlgebraicGeometry.Scheme.PseudoMap.equivalence_rel`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Closure/PseudoMorphism.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Closure/PseudoMorphism.lean#L169). The attribute's comment: “equivalence relation, via stability of scheme-theoretic density under intersection (Tag 01RF)”.
+**`AlgebraicGeometry.Scheme.PseudoMap.equivalence_rel`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Closure/PseudoMorphism.lean, line 169](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Closure/PseudoMorphism.lean#L169). The attribute's comment: “equivalence relation, via stability of scheme-theoretic density under intersection (Tag 01RF)”.
 
 > Equivalence of pseudo-maps is an equivalence relation.
 
@@ -309,7 +356,7 @@ protected noncomputable def equiv (f g : X.PseudoMap Y) : Prop
 lemma equivalence_rel : Equivalence (@Scheme.PseudoMap.equiv X Y)
 ```
 
-**`AlgebraicGeometry.Scheme.PseudoMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Closure/PseudoMorphism.lean, line 188](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Closure/PseudoMorphism.lean#L188). The attribute's comment: “the pseudo-morphisms from `X` to `Y`: the equivalence classes of pseudo-maps”.
+**`AlgebraicGeometry.Scheme.PseudoMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Closure/PseudoMorphism.lean, line 188](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Closure/PseudoMorphism.lean#L188). The attribute's comment: “the pseudo-morphisms from `X` to `Y`: the equivalence classes of pseudo-maps”.
 
 > A pseudo-morphism from `X` to `Y` is an equivalence class of pseudo-maps, where two
 > pseudo-maps are equivalent if they agree on a scheme-theoretically dense open subscheme.
@@ -318,7 +365,7 @@ lemma equivalence_rel : Equivalence (@Scheme.PseudoMap.equiv X Y)
 noncomputable def PseudoMorphism (X Y : Scheme.{u}) : Type u
 ```
 
-**`AlgebraicGeometry.Scheme.PseudoMorphism.IsOver`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Closure/PseudoMorphism.lean, line 206](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Closure/PseudoMorphism.lean#L206). The attribute's comment: “the `S`-pseudo-morphisms: the analogue for pseudo-morphisms of part (3) of the definition of an `S`-rational map”.
+**`AlgebraicGeometry.Scheme.PseudoMorphism.IsOver`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Closure/PseudoMorphism.lean, line 206](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Closure/PseudoMorphism.lean#L206). The attribute's comment: “the `S`-pseudo-morphisms: the analogue for pseudo-morphisms of part (3) of the definition of an `S`-rational map”.
 
 > A pseudo-morphism is an `S`-pseudo-morphism if some pseudo-map in the equivalence class is
 > an `S`-morphism.
@@ -327,7 +374,7 @@ noncomputable def PseudoMorphism (X Y : Scheme.{u}) : Type u
 class PseudoMorphism.IsOver [X.Over S] [Y.Over S] (f : X.PseudoMorphism Y) : Prop
 ```
 
-**`AlgebraicGeometry.Scheme.PseudoMorphism.equivRationalMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Closure/PseudoMorphism.lean, line 262](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Closure/PseudoMorphism.lean#L262). The attribute's comment: “agreement of pseudo-morphisms with rational maps for reduced `X`”. References: EGA IV (20.2.7); EGA IV (20.4.3), “Identification”.
+**`AlgebraicGeometry.Scheme.PseudoMorphism.equivRationalMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Closure/PseudoMorphism.lean, line 262](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Closure/PseudoMorphism.lean#L262). The attribute's comment: “agreement of pseudo-morphisms with rational maps for reduced `X`”. References: EGA IV (20.2.7); EGA IV (20.4.3), “Identification”.
 
 > If `X` is reduced, pseudo-morphisms from `X` to `Y` are the same thing as rational maps from
 > `X` to `Y`.
@@ -343,4 +390,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 29.50, Tag 01RR](https://stacks.math.columbia.edu/tag/01RR)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

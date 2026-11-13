@@ -8,13 +8,13 @@ proof: formalized
 
 # 33.27 Normalization
 
-Section 33.27 of the Stacks Project, [Tag 0BXQ](https://stacks.math.columbia.edu/tag/0BXQ). 6 tags here are carried by 13 declarations of the repository (all in StacksFrontier) and 4 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 33.27 of the Stacks Project, [Tag 0BXQ](https://stacks.math.columbia.edu/tag/0BXQ). 6 tags here are carried by 13 declarations of the repository (all in StacksFrontier) and 4 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0BXR, a lemma
 
 [Tag 0BXR](https://stacks.math.columbia.edu/tag/0BXR) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_iso_normalizationSchemeOverField_coproduct_normal_irreducible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/NormalizationOverField.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/NormalizationOverField.lean#L81). The attribute's comment: “finite\_normal\_components”.
+**`AlgebraicGeometry.exists_iso_normalizationSchemeOverField_coproduct_normal_irreducible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/NormalizationOverField.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/NormalizationOverField.lean#L81). The attribute's comment: “finite\_normal\_components”.
 
 > **Stacks Project, Tag 0BXR.** The normalization of a scheme locally of finite type over a
 > field is a coproduct of normal irreducible schemes, each locally of finite type over the field
@@ -29,7 +29,7 @@ public theorem exists_iso_normalizationSchemeOverField_coproduct_normal_irreduci
       ∀ i, LocallyOfFiniteType (Sigma.ι Z i ≫ e.inv ≫ normalizationOverField k p ≫ p)
 ```
 
-**`AlgebraicGeometry.isVariety_normalizationOverField`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/NormalizationOverField.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/NormalizationOverField.lean#L101). The attribute's comment: “normalization\_of\_variety”.
+**`AlgebraicGeometry.isVariety_normalizationOverField`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/NormalizationOverField.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/NormalizationOverField.lean#L101). The attribute's comment: “normalization\_of\_variety”.
 
 > **Stacks Project, Tag 0BXR.** The normalization of a variety is a variety over the same
 > field.
@@ -42,16 +42,16 @@ public instance isVariety_normalizationOverField (k : Type u) [Field k] {X : Sch
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.isFinite_normalizationOverField`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/NagataNormalization/Basic.lean#L265), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/NormalizationOverField.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/NormalizationOverField.lean#L71) (StacksFrontier): “finite\_normal\_components”.
-- [`AlgebraicGeometry.isDominant_normalizationOverField`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/NagataNormalization/Basic.lean#L275), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/NormalizationOverField.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/NormalizationOverField.lean#L72) (StacksFrontier): “finite\_normal\_components”.
-- [`AlgebraicGeometry.Scheme.isBirational_normalization`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/NormalizationBirational/Basic.lean#L158), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/NormalizationOverField.lean, line 73](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/NormalizationOverField.lean#L73) (StacksFrontier): “birational\_reduced”.
-- [`AlgebraicGeometry.Scheme.exists_normalizationScheme_iso_reduction`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/NormalizationBaseChange/UniversalProperty.lean#L716), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/NormalizationOverField.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/NormalizationOverField.lean#L74) (StacksFrontier): “normalization\_of\_reduction”.
+- [`AlgebraicGeometry.isFinite_normalizationOverField`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/NagataNormalization/Basic.lean#L265), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/NormalizationOverField.lean, line 71](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/NormalizationOverField.lean#L71) (StacksFrontier): “finite\_normal\_components”.
+- [`AlgebraicGeometry.isDominant_normalizationOverField`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/NagataNormalization/Basic.lean#L275), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/NormalizationOverField.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/NormalizationOverField.lean#L72) (StacksFrontier): “finite\_normal\_components”.
+- [`AlgebraicGeometry.Scheme.isBirational_normalization`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/NormalizationBirational/Basic.lean#L158), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/NormalizationOverField.lean, line 73](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/NormalizationOverField.lean#L73) (StacksFrontier): “birational\_reduced”.
+- [`AlgebraicGeometry.Scheme.exists_normalizationScheme_iso_reduction`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/NormalizationBaseChange/UniversalProperty.lean#L716), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/NormalizationOverField.lean, line 74](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/NormalizationOverField.lean#L74) (StacksFrontier): “normalization\_of\_reduction”.
 
 ## Tag 0GK4, a lemma
 
 [Tag 0GK4](https://stacks.math.columbia.edu/tag/0GK4) in the Stacks Project.
 
-**`AlgebraicGeometry.isProper_and_isProjective_normalizationOverField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/NormalizationProperProjective.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/NormalizationProperProjective.lean#L81).
+**`AlgebraicGeometry.isProper_and_isProjective_normalizationOverField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/NormalizationProperProjective.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/NormalizationProperProjective.lean#L81).
 
 > **Stacks Project, Tag 0GK4.** Let `k` be a field, let `X` be a proper scheme over `k` and let
 > `ν : X^ν ⟶ X` be the normalization morphism. Then `X^ν` is proper over `k`, and if `X` is
@@ -73,7 +73,7 @@ public theorem isProper_and_isProjective_normalizationOverField (k : Type u) [Fi
 
 [Tag 0BXS](https://stacks.math.columbia.edu/tag/0BXS) in the Stacks Project.
 
-**`AlgebraicGeometry.isFinite_fromNormalization_of_locallyOfFiniteType_over_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/NormalizationOverField.lean, line 145](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/NormalizationOverField.lean#L145).
+**`AlgebraicGeometry.isFinite_fromNormalization_of_locallyOfFiniteType_over_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/NormalizationOverField.lean, line 145](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/NormalizationOverField.lean#L145).
 
 > **Stacks Project, Tag 0BXS.** The relative normalization of a scheme locally of finite type
 > over a field in a reduced scheme locally of finite type over the same field is finite, as soon as
@@ -95,7 +95,7 @@ public theorem isFinite_fromNormalization_of_locallyOfFiniteType_over_field
 
 [Tag 0BXT](https://stacks.math.columbia.edu/tag/0BXT) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isPurelyInseparable_isGeometricallyNormal_normalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/NormalizationPurelyInseparable.lean, line 557](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/NormalizationPurelyInseparable.lean#L557).
+**`AlgebraicGeometry.exists_isPurelyInseparable_isGeometricallyNormal_normalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/NormalizationPurelyInseparable.lean, line 557](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/NormalizationPurelyInseparable.lean#L557).
 
 > **Stacks Project, Tag 0BXT.** Let `k` be a field and `X` an algebraic `k`-scheme. There is a
 > finite purely inseparable extension `k'/k` such that the normalization of `X_{k'}` is
@@ -115,7 +115,7 @@ public theorem exists_isPurelyInseparable_isGeometricallyNormal_normalization
 
 [Tag 0C3N](https://stacks.math.columbia.edu/tag/0C3N) in the Stacks Project.
 
-**`AlgebraicGeometry.normalizationBaseChangeComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NormalizationBaseChange/Basic.lean, line 202](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/NormalizationBaseChange/Basic.lean#L202). The attribute's comment: “canonical morphism”.
+**`AlgebraicGeometry.normalizationBaseChangeComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NormalizationBaseChange/Basic.lean, line 202](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/NormalizationBaseChange/Basic.lean#L202). The attribute's comment: “canonical morphism”.
 
 > **Stacks Project, Tag 0C3N.** The canonical morphism from the normalization after extending
 > the ground field to the base change of the original normalization.
@@ -135,7 +135,7 @@ noncomputable def normalizationBaseChangeComparison
         (Over.mk (X.left.normalization hX ≫ X.hom))).left
 ```
 
-**`AlgebraicGeometry.normalizationBaseChangeComparison_comp_fst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NormalizationBaseChange/Basic.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/NormalizationBaseChange/Basic.lean#L227). The attribute's comment: “projection to the original normalization”.
+**`AlgebraicGeometry.normalizationBaseChangeComparison_comp_fst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NormalizationBaseChange/Basic.lean, line 227](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/NormalizationBaseChange/Basic.lean#L227). The attribute's comment: “projection to the original normalization”.
 
 > **Stacks Project, Tag 0C3N.** The projection of the comparison to the original normalization
 > is the canonical map induced by functoriality of relative normalization.  The map on
@@ -165,7 +165,7 @@ theorem normalizationBaseChangeComparison_comp_fst
         Scheme.Hom.normalizationMap fX fY gY (pullback.fst X.hom σ) sq
 ```
 
-**`AlgebraicGeometry.normalizationBaseChangeComparison_comp_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NormalizationBaseChange/Basic.lean, line 258](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/NormalizationBaseChange/Basic.lean#L258). The attribute's comment: “projection to the extended base field”.
+**`AlgebraicGeometry.normalizationBaseChangeComparison_comp_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NormalizationBaseChange/Basic.lean, line 258](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/NormalizationBaseChange/Basic.lean#L258). The attribute's comment: “projection to the extended base field”.
 
 > **Stacks Project, Tag 0C3N.** The projection of the comparison to `Spec K` is the structural
 > morphism of the normalized base change.  Together with the preceding projection formula, this
@@ -186,7 +186,7 @@ theorem normalizationBaseChangeComparison_comp_snd
         Y.hom
 ```
 
-**`AlgebraicGeometry.normalizationBaseChangeComparison_comp_baseChangeNormalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NormalizationBaseChange/Basic.lean, line 277](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/NormalizationBaseChange/Basic.lean#L277). The attribute's comment: “compatibility with normalization morphisms”.
+**`AlgebraicGeometry.normalizationBaseChangeComparison_comp_baseChangeNormalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NormalizationBaseChange/Basic.lean, line 277](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/NormalizationBaseChange/Basic.lean#L277). The attribute's comment: “compatibility with normalization morphisms”.
 
 > **Stacks Project, Tag 0C3N.** The canonical comparison commutes with the normalization
 > morphisms to the base-changed scheme.
@@ -203,7 +203,7 @@ theorem normalizationBaseChangeComparison_comp_baseChangeNormalization
       Y.left.normalization (finite_irreducibleComponents_of_locallyOfFiniteType K Y.hom)
 ```
 
-**`AlgebraicGeometry.normalizationBaseChangeComparison_isUniversalHomeomorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NormalizationBaseChange/UniversalHomeomorphism.lean, line 930](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/NormalizationBaseChange/UniversalHomeomorphism.lean#L930). The attribute's comment: “universal homeomorphism”.
+**`AlgebraicGeometry.normalizationBaseChangeComparison_isUniversalHomeomorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NormalizationBaseChange/UniversalHomeomorphism.lean, line 930](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/NormalizationBaseChange/UniversalHomeomorphism.lean#L930). The attribute's comment: “universal homeomorphism”.
 
 > **Stacks Project, Tag 0C3N.** The normalization comparison for an arbitrary extension of
 > fields is a universal homeomorphism.
@@ -219,7 +219,7 @@ theorem normalizationBaseChangeComparison_isUniversalHomeomorphism
     UniversalHomeomorphism (normalizationBaseChangeComparison (k := k) (K := K) X)
 ```
 
-**`AlgebraicGeometry.normalizationBaseChangeComparison_isIso_of_isSeparableExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NormalizationBaseChange/UniversalHomeomorphism.lean, line 992](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/NormalizationBaseChange/UniversalHomeomorphism.lean#L992). The attribute's comment: “separable extension”.
+**`AlgebraicGeometry.normalizationBaseChangeComparison_isIso_of_isSeparableExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NormalizationBaseChange/UniversalHomeomorphism.lean, line 992](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/NormalizationBaseChange/UniversalHomeomorphism.lean#L992). The attribute's comment: “separable extension”.
 
 > **Stacks Project, Tag 0C3N.** For a separable extension of fields, the normalization
 > comparison is an isomorphism.
@@ -237,7 +237,7 @@ theorem normalizationBaseChangeComparison_isIso_of_isSeparableExtension
 
 [Tag 0C3P](https://stacks.math.columbia.edu/tag/0C3P) in the Stacks Project.
 
-**`AlgebraicGeometry.isGeometricallyReducedAt_of_normalization_residueField_isSeparable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/NormalizationSeparableResidue.lean, line 577](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/NormalizationSeparableResidue.lean#L577). The attribute's comment: “geometrically reduced at the original point”.
+**`AlgebraicGeometry.isGeometricallyReducedAt_of_normalization_residueField_isSeparable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/NormalizationSeparableResidue.lean, line 577](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/NormalizationSeparableResidue.lean#L577). The attribute's comment: “geometrically reduced at the original point”.
 
 > A reduced one-dimensional point is geometrically reduced if all residue fields above it in
 > the normalization are separable over the ground field.
@@ -258,7 +258,7 @@ public theorem isGeometricallyReducedAt_of_normalization_residueField_isSeparabl
     IsGeometricallyReducedAt f x
 ```
 
-**`AlgebraicGeometry.isGeometricallyRegularAt_normalization_of_residueField_isSeparable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/NormalizationSeparableResidue.lean, line 595](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/NormalizationSeparableResidue.lean#L595). The attribute's comment: “geometrically regular on the normalization”.
+**`AlgebraicGeometry.isGeometricallyRegularAt_normalization_of_residueField_isSeparable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/NormalizationSeparableResidue.lean, line 595](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/NormalizationSeparableResidue.lean#L595). The attribute's comment: “geometrically regular on the normalization”.
 
 > Every point of the normalization above a one-dimensional point is geometrically regular
 > when its residue field is separable over the ground field.
@@ -287,4 +287,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 33.27, Tag 0BXQ](https://stacks.math.columbia.edu/tag/0BXQ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

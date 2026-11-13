@@ -8,13 +8,13 @@ proof: formalized
 
 # 38.28 Grothendieck's Existence Theorem, IV
 
-Section 38.28 of the Stacks Project, [Tag 0CTB](https://stacks.math.columbia.edu/tag/0CTB). 9 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 38.28 of the Stacks Project, [Tag 0CTB](https://stacks.math.columbia.edu/tag/0CTB). 9 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0CTC, a situation
 
 [Tag 0CTC](https://stacks.math.columbia.edu/tag/0CTC) in the Stacks Project.
 
-**`AlgebraicGeometry.GrothendieckExistence.ExistenceSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowingUp/GrothendieckExistenceSituation.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowingUp/GrothendieckExistenceSituation.lean#L60).
+**`AlgebraicGeometry.GrothendieckExistence.ExistenceSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowingUp/GrothendieckExistenceSituation.lean, line 60](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowingUp/GrothendieckExistenceSituation.lean#L60).
 
 > The standing data of Grothendieck's existence theorem for modules: an inverse system of rings
 > with surjective, locally nilpotent transitions, a separated scheme of finite presentation over the
@@ -29,7 +29,7 @@ structure ExistenceSituation
 
 [Tag 0CTD](https://stacks.math.columbia.edu/tag/0CTD) in the Stacks Project.
 
-**`AlgebraicGeometry.GrothendieckExistence.ExistenceSituation.nonempty_derivedLimitQCoh_and_isDerivedLimit_isGE_isLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowingUp/GrothendieckExistenceCoheratorLimit.lean, line 462](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowingUp/GrothendieckExistenceCoheratorLimit.lean#L462).
+**`AlgebraicGeometry.GrothendieckExistence.ExistenceSituation.nonempty_derivedLimitQCoh_and_isDerivedLimit_isGE_isLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowingUp/GrothendieckExistenceCoheratorLimit.lean, line 462](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowingUp/GrothendieckExistenceCoheratorLimit.lean#L462).
 
 > **Stacks Project, Tag 0CTD.** In Situation [Stacks, Tag 0CTC] consider
 > `K = R lim_{D_QCoh(𝒪_X)}(Fₙ) = DQ_X(R lim_{D(𝒪_X)} Fₙ)`. Then `K` is in `D^b_QCoh(𝒪_X)` and in
@@ -50,7 +50,7 @@ theorem nonempty_derivedLimitQCoh_and_isDerivedLimit_isGE_isLE :
       d.K.IsGE 0 ∧ ∃ c : ℤ, d.K.IsLE c
 ```
 
-**`AlgebraicGeometry.GrothendieckExistence.isDerivedLimit_coherator_obj_pushforwardSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowingUp/GrothendieckExistenceDerivedLimit.lean, line 259](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowingUp/GrothendieckExistenceDerivedLimit.lean#L259). The attribute's comment: “the displayed equality only; the coherator of Stacks 0CR0 is an argument, as in Stacks 0CSA and 0CR2”.
+**`AlgebraicGeometry.GrothendieckExistence.isDerivedLimit_coherator_obj_pushforwardSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowingUp/GrothendieckExistenceDerivedLimit.lean, line 259](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowingUp/GrothendieckExistenceDerivedLimit.lean#L259). The attribute's comment: “the displayed equality only; the coherator of Stacks 0CR0 is an argument, as in Stacks 0CSA and 0CR2”.
 
 > **[Stacks, Tag 0CTD], the displayed equality.** In Situation [Stacks, Tag 0CTC], if `K` is a
 > derived limit in `D(𝒪_X)` of the system `(iₙ,* Fₙ)` of
@@ -78,7 +78,7 @@ theorem isDerivedLimit_coherator_obj_pushforwardSystem (adj : quasiCoherentι S.
 
 [Tag 0CTE](https://stacks.math.columbia.edu/tag/0CTE) in the Stacks Project.
 
-**`AlgebraicGeometry.GrothendieckExistence.ExistenceSituation.DerivedLimitQCoh.isPerfect_and_isIso_sheafHomBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowingUp/GrothendieckExistencePerfectSheafHom.lean, line 204](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowingUp/GrothendieckExistencePerfectSheafHom.lean#L204). The attribute's comment: “(2)”.
+**`AlgebraicGeometry.GrothendieckExistence.ExistenceSituation.DerivedLimitQCoh.isPerfect_and_isIso_sheafHomBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowingUp/GrothendieckExistencePerfectSheafHom.lean, line 204](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowingUp/GrothendieckExistencePerfectSheafHom.lean#L204). The attribute's comment: “(2)”.
 
 > **Stacks Project, Tag 0CTE, part (2).** In Situation [Stacks, Tag 0CTC] let `K` be as in
 > [Stacks, Tag 0CTD] and let `E` be a perfect object of `D(𝒪_X)`. Then
@@ -104,7 +104,7 @@ theorem DerivedLimitQCoh.isPerfect_and_isIso_sheafHomBaseChange (d : S.DerivedLi
             (DerivedLimitQCoh.sheafHomLevelMap S d E hE p n))
 ```
 
-**`AlgebraicGeometry.GrothendieckExistence.ExistenceSituation.DerivedLimitQCoh.isPerfect_and_isIso_tensorBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowingUp/GrothendieckExistencePerfectTensor.lean, line 377](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowingUp/GrothendieckExistencePerfectTensor.lean#L377). The attribute's comment: “(1)”.
+**`AlgebraicGeometry.GrothendieckExistence.ExistenceSituation.DerivedLimitQCoh.isPerfect_and_isIso_tensorBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowingUp/GrothendieckExistencePerfectTensor.lean, line 377](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowingUp/GrothendieckExistencePerfectTensor.lean#L377). The attribute's comment: “(1)”.
 
 > **Stacks Project, Tag 0CTE, part (1).** In Situation [Stacks, Tag 0CTC] let `K` be as in
 > [Stacks, Tag 0CTD] and let `E` be a perfect object of `D(𝒪_X)`. Then
@@ -133,7 +133,7 @@ theorem DerivedLimitQCoh.isPerfect_and_isIso_tensorBaseChange (d : S.DerivedLimi
 
 [Tag 0CTF](https://stacks.math.columbia.edu/tag/0CTF) in the Stacks Project.
 
-**`AlgebraicGeometry.GrothendieckExistence.ExistenceSituation.DerivedLimitQCoh.isPseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowingUp/GrothendieckExistencePseudoCoherent.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowingUp/GrothendieckExistencePseudoCoherent.lean#L64).
+**`AlgebraicGeometry.GrothendieckExistence.ExistenceSituation.DerivedLimitQCoh.isPseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowingUp/GrothendieckExistencePseudoCoherent.lean, line 64](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowingUp/GrothendieckExistencePseudoCoherent.lean#L64).
 
 > **[Stacks, Tag 0CTF].** In Situation [Stacks, Tag 0CTC], let `K` be as in
 > [Stacks, Tag 0CTD], i.e. `K = DQ_X(R lim_{D(𝒪_X)} iₙ,* ℱₙ)`. Then `K` is pseudo-coherent relative
@@ -149,7 +149,7 @@ theorem DerivedLimitQCoh.isPseudoCoherent (d : S.DerivedLimitQCoh) :
 
 [Tag 0CTG](https://stacks.math.columbia.edu/tag/0CTG) in the Stacks Project.
 
-**`AlgebraicGeometry.GrothendieckExistence.ExistenceSituation.isIso_sectionsOverComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowingUp/GrothendieckExistenceTheorem.lean, line 54](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowingUp/GrothendieckExistenceTheorem.lean#L54).
+**`AlgebraicGeometry.GrothendieckExistence.ExistenceSituation.isIso_sectionsOverComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowingUp/GrothendieckExistenceTheorem.lean, line 54](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowingUp/GrothendieckExistenceTheorem.lean#L54).
 
 > **[Stacks, Tag 0CTG].** In Situation [Stacks, Tag 0CTC], let `K` be as in
 > [Stacks, Tag 0CTD], with a derived-limit cone `p` of `R lim (iₙ,* ℱₙ)`. For every quasi-compact
@@ -167,7 +167,7 @@ theorem isIso_sectionsOverComparison (d : S.DerivedLimitQCoh)
 
 [Tag 0CTH](https://stacks.math.columbia.edu/tag/0CTH) in the Stacks Project.
 
-**`AlgebraicGeometry.GrothendieckExistence.ExistenceSituation.exists_open_isZero_homology_isFinitePresentation_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowingUp/GrothendieckExistenceTheorem.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowingUp/GrothendieckExistenceTheorem.lean#L69).
+**`AlgebraicGeometry.GrothendieckExistence.ExistenceSituation.exists_open_isZero_homology_isFinitePresentation_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowingUp/GrothendieckExistenceTheorem.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowingUp/GrothendieckExistenceTheorem.lean#L69).
 
 > **[Stacks, Tag 0CTH].** In Situation [Stacks, Tag 0CTC], let `K` be as in
 > [Stacks, Tag 0CTD], with a derived-limit cone `p`. There is an open `W ⊆ X` containing `X₀` such
@@ -193,7 +193,7 @@ theorem exists_open_isZero_homology_isFinitePresentation_isIso (d : S.DerivedLim
 
 [Tag 0CTI](https://stacks.math.columbia.edu/tag/0CTI) in the Stacks Project.
 
-**`AlgebraicGeometry.GrothendieckExistence.ExistenceSituation.exists_open_isProperOver_supp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowingUp/GrothendieckExistenceTheorem.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowingUp/GrothendieckExistenceTheorem.lean#L90).
+**`AlgebraicGeometry.GrothendieckExistence.ExistenceSituation.exists_open_isProperOver_supp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowingUp/GrothendieckExistenceTheorem.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowingUp/GrothendieckExistenceTheorem.lean#L90).
 
 > **[Stacks, Tag 0CTI].** In Situation [Stacks, Tag 0CTC], with `K` as in [Stacks, Tag 0CTD]
 > and `W` as in [Stacks, Tag 0CTH]: after shrinking `W`, the support of `ℱ = H⁰(K)|_W` is proper over
@@ -221,7 +221,7 @@ theorem exists_open_isProperOver_supp (d : S.DerivedLimitQCoh)
 
 [Tag 0CTJ](https://stacks.math.columbia.edu/tag/0CTJ) in the Stacks Project.
 
-**`AlgebraicGeometry.isIso_of_forall_spec_factors_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/QuasiFinite/Monomorphism.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/QuasiFinite/Monomorphism.lean#L101).
+**`AlgebraicGeometry.isIso_of_forall_spec_factors_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/QuasiFinite/Monomorphism.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/QuasiFinite/Monomorphism.lean#L101).
 
 > Let `A` be the limit of a sequence of rings whose transition maps are surjective with locally
 > nilpotent kernels. A monomorphism `f : T ⟶ Spec A` locally of finite type through which every
@@ -240,7 +240,7 @@ theorem isIso_of_forall_spec_factors_of_isLimit (hc : IsLimit c)
 
 [Tag 0CTK](https://stacks.math.columbia.edu/tag/0CTK) in the Stacks Project.
 
-**`AlgebraicGeometry.GrothendieckExistence.ExistenceSituation.exists_algebraization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowingUp/GrothendieckExistenceTheorem.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowingUp/GrothendieckExistenceTheorem.lean#L113).
+**`AlgebraicGeometry.GrothendieckExistence.ExistenceSituation.exists_algebraization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowingUp/GrothendieckExistenceTheorem.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowingUp/GrothendieckExistenceTheorem.lean#L113).
 
 > **[Stacks, Tag 0CTK], Grothendieck's existence theorem for flat modules.** In Situation
 > [Stacks, Tag 0CTC] there is a finitely presented `𝒪_X`-module `ℱ`, flat over `A`, with support
@@ -267,4 +267,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 38.28, Tag 0CTB](https://stacks.math.columbia.edu/tag/0CTB)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

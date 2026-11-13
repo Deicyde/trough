@@ -8,7 +8,7 @@ proof: formalized
 
 # 14.5 Cosimplicial objects
 
-Section 14.5 of the Stacks Project, [Tag 016I](https://stacks.math.columbia.edu/tag/016I). 7 tags here are carried by 4 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 14.5 of the Stacks Project, [Tag 016I](https://stacks.math.columbia.edu/tag/016I). 7 tags here are carried by 4 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 016J, a definition
 
@@ -16,13 +16,13 @@ Section 14.5 of the Stacks Project, [Tag 016I](https://stacks.math.columbia.edu/
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.CosimplicialObject`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.CosimplicialObject#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch14.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch14.lean#L85) (StacksFrontier): “cosimplicial objects of C, the functor category Δ ⥤ C (morphisms are natural transformations); cosimplicial sets and abelian groups are C = sets, abelian groups”. References: SGA 4 XVII (5.5.3).
+- [`CategoryTheory.CosimplicialObject`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.CosimplicialObject#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch14.lean, line 86](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch14.lean#L86) (StacksFrontier): “cosimplicial objects of C, the functor category Δ ⥤ C (morphisms are natural transformations); cosimplicial sets and abelian groups are C = sets, abelian groups”. References: SGA 4 XVII (5.5.3).
 
 ## Tag 016K, a lemma
 
 [Tag 016K](https://stacks.math.columbia.edu/tag/016K) in the Stacks Project.
 
-**`CategoryTheory.CosimplicialObject.existsUnique_comp_toSimplexCategory_and_hom_app_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Basic.lean, line 302](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialObject/Basic.lean#L302). The attribute's comment: “part (1) is `CategoryTheory.CosimplicialObject.δ_comp_δ` and its companions in Mathlib; parts (2) and (3) are stated with the coface–codegeneracy datum encoded as a functor out of the presented category `SimplexCategoryGenRel`, so that no equality of objects of `C` is transported”.
+**`CategoryTheory.CosimplicialObject.existsUnique_comp_toSimplexCategory_and_hom_app_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Basic.lean, line 302](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Basic.lean#L302). The attribute's comment: “part (1) is `CategoryTheory.CosimplicialObject.δ_comp_δ` and its companions in Mathlib; parts (2) and (3) are stated with the coface–codegeneracy datum encoded as a functor out of the presented category `SimplexCategoryGenRel`, so that no equality of objects of `C` is transported”.
 
 > **Stacks 016K** (parts (2) and (3), via the presented category `SimplexCategoryGenRel`).
 > Let `C` be a category. (2) Given objects `Uₙ` of `C` and morphisms `δⁿⱼ : Uₙ ⟶ Uₙ₊₁`,
@@ -48,7 +48,7 @@ public theorem existsUnique_comp_toSimplexCategory_and_hom_app_eq
 
 [Tag 016L](https://stacks.math.columbia.edu/tag/016L) in the Stacks Project.
 
-**`CategoryTheory.CosimplicialObject.cosimplicial_identities_of_val`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Basic.lean, line 381](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialObject/Basic.lean#L381).
+**`CategoryTheory.CosimplicialObject.cosimplicial_identities_of_val`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Basic.lean, line 381](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Basic.lean#L381).
 
 > **Stacks 016L**.
 > Let `X` be a cosimplicial object of a category `C`. Writing `δᵢ : Xₙ₋₁ ⟶ Xₙ` for `X.δ` and
@@ -87,7 +87,7 @@ public theorem cosimplicial_identities_of_val (X : CosimplicialObject C) :
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.CosimplicialObject.const`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.CosimplicialObject.const#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch14.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch14.lean#L89) (StacksFrontier). References: SGA 4 Vbis (2.1.1), “special case”.
+- [`CategoryTheory.CosimplicialObject.const`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.CosimplicialObject.const#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch14.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch14.lean#L90) (StacksFrontier). References: SGA 4 Vbis (2.1.1), “special case”.
 
 ## Tag 016N, an example
 
@@ -95,13 +95,13 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Arrow.cechConerve`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Arrow.cechConerve#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch14.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch14.lean#L91) (StacksFrontier).
+- [`CategoryTheory.Arrow.cechConerve`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Arrow.cechConerve#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch14.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch14.lean#L92) (StacksFrontier).
 
 ## Tag 0B13, an example
 
 [Tag 0B13](https://stacks.math.columbia.edu/tag/0B13) in the Stacks Project.
 
-**`CategoryTheory.CosimplicialObject.uliftCoyoneda_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Basic.lean, line 527](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialObject/Basic.lean#L527). The attribute's comment: “C[n] is Mathlib's uliftCoyoneda.obj (op n), dual to Δ[n] = SSet.stdSimplex.obj n of Tag 0176; the statement records its terms and structure maps, the simplicial structure of the family in n, and the corepresentability that characterises it”.
+**`CategoryTheory.CosimplicialObject.uliftCoyoneda_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Basic.lean, line 527](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Basic.lean#L527). The attribute's comment: “C[n] is Mathlib's uliftCoyoneda.obj (op n), dual to Δ[n] = SSet.stdSimplex.obj n of Tag 0176; the statement records its terms and structure maps, the simplicial structure of the family in n, and the corepresentability that characterises it”.
 
 > **Stacks 0B13** (with `C[n]` as `uliftCoyoneda.obj (op n)`).
 > For every object `n` of `Δ` the cosimplicial set `C[n] = uliftCoyoneda.obj (op n)` is
@@ -126,7 +126,7 @@ public theorem uliftCoyoneda_spec :
 
 [Tag 016O](https://stacks.math.columbia.edu/tag/016O) in the Stacks Project.
 
-**`CategoryTheory.CosimplicialObject.isSplitMono_δ`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Basic.lean, line 470](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialObject/Basic.lean#L470).
+**`CategoryTheory.CosimplicialObject.isSplitMono_δ`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/Basic.lean, line 470](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/Basic.lean#L470).
 
 > **Stacks 016O**.
 > Each coface map `X.δ i : Xₙ ⟶ Xₙ₊₁` of a cosimplicial object `X` of a category `C` has a left
@@ -144,4 +144,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 14.5, Tag 016I](https://stacks.math.columbia.edu/tag/016I)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

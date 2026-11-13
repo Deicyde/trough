@@ -8,13 +8,13 @@ proof: formalized
 
 # 76.15 Universal first order thickenings
 
-Section 76.15 of the Stacks Project, [Tag 0601](https://stacks.math.columbia.edu/tag/0601). 16 tags here are carried by 52 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 76.15 of the Stacks Project, [Tag 0601](https://stacks.math.columbia.edu/tag/0601). 16 tags here are carried by 48 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0602, an equation
 
 [Tag 0602](https://stacks.math.columbia.edu/tag/0602) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsUniversalFirstOrderThickening`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/Universal.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/Universal.lean#L67).
+**`AlgebraicGeometry.Space.IsUniversalFirstOrderThickening`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/Universal.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/Universal.lean#L67).
 
 > **Stacks 0602.** A first-order thickening `Z ⊂ Z'` of algebraic spaces over `S`, equipped
 > with a morphism `p : Z' ⟶ X`, is a *universal first-order thickening* of `Z` over `X` when
@@ -27,7 +27,7 @@ structure IsUniversalFirstOrderThickening (B : BigFppfSite.{u}) (S : Scheme.{u})
     (p : Z' ⟶ X) : Prop
 ```
 
-**`AlgebraicGeometry.Space.IsUniversalFirstOrderThickening'`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalFirstOrderThickening.lean, line 223](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversalFirstOrderThickening.lean#L223). The attribute's comment: “the universal first-order thickening property of diagram (0602)”.
+**`AlgebraicGeometry.Space.IsUniversalFirstOrderThickening'`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalFirstOrderThickening.lean, line 223](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UniversalFirstOrderThickening.lean#L223). The attribute's comment: “the universal first-order thickening property of diagram (0602)”.
 
 > **Stacks 0602.** A first-order thickening `Z ⊆ Z'` over `X`, with structure morphism
 > `p : Z' ⟶ X`, is *universal* when for every solid diagram of Stacks 0602 — a first-order
@@ -44,7 +44,7 @@ structure IsUniversalFirstOrderThickening' {X Z' : AlgebraicSpaces B S hS}
 
 [Tag 0603](https://stacks.math.columbia.edu/tag/0603) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isUniversalFirstOrderThickening_iff_affine_lifting`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/UniversalCriteria.lean, line 553](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/UniversalCriteria.lean#L553). The attribute's comment: “equivalence of (1) and (3)”.
+**`AlgebraicGeometry.Space.isUniversalFirstOrderThickening_iff_affine_lifting`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/UniversalCriteria.lean, line 553](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/UniversalCriteria.lean#L553). The attribute's comment: “equivalence of (1) and (3)”.
 
 > **Stacks 0603, the equivalence of (1) and (3).** The universal property of a first-order
 > thickening of algebraic spaces can already be checked on the diagrams of Stacks 0602 whose
@@ -63,7 +63,7 @@ theorem isUniversalFirstOrderThickening_iff_affine_lifting
           ∃! c : T'.1 ⟶ Z'.1, (T.ι ≫ c = a ≫ Z.ι) ∧ (c ≫ p.hom = b)
 ```
 
-**`AlgebraicGeometry.Space.HasRepresentableLiftingProperty`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalFirstOrderThickeningCriteria.lean, line 144](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversalFirstOrderThickeningCriteria.lean#L144). The attribute's comment: “part (2), the lifting property tested on schemes”.
+**`AlgebraicGeometry.Space.HasRepresentableLiftingProperty`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalFirstOrderThickeningCriteria.lean, line 144](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UniversalFirstOrderThickeningCriteria.lean#L144). The attribute's comment: “part (2), the lifting property tested on schemes”.
 
 > The lifting property of the diagrams of Stacks 0602 whose ambient test object `T'` is a
 > scheme, that is, whose underlying presheaf is representable.
@@ -72,7 +72,7 @@ theorem isUniversalFirstOrderThickening_iff_affine_lifting
 def HasRepresentableLiftingProperty : Prop
 ```
 
-**`AlgebraicGeometry.Space.HasAffineLiftingProperty`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalFirstOrderThickeningCriteria.lean, line 154](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversalFirstOrderThickeningCriteria.lean#L154). The attribute's comment: “part (3), the lifting property tested on affine schemes”.
+**`AlgebraicGeometry.Space.HasAffineLiftingProperty`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalFirstOrderThickeningCriteria.lean, line 154](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UniversalFirstOrderThickeningCriteria.lean#L154). The attribute's comment: “part (3), the lifting property tested on affine schemes”.
 
 > The lifting property of the diagrams of Stacks 0602 whose ambient test object `T'` is an
 > affine scheme.
@@ -81,7 +81,7 @@ def HasRepresentableLiftingProperty : Prop
 def HasAffineLiftingProperty : Prop
 ```
 
-**`AlgebraicGeometry.Space.isUniversalFirstOrderThickening_iff_representable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalFirstOrderThickeningCriteria.lean, line 352](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversalFirstOrderThickeningCriteria.lean#L352). The attribute's comment: “equivalence of (1) and (2)”.
+**`AlgebraicGeometry.Space.isUniversalFirstOrderThickening_iff_representable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalFirstOrderThickeningCriteria.lean, line 352](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UniversalFirstOrderThickeningCriteria.lean#L352). The attribute's comment: “equivalence of (1) and (2)”.
 
 > A first-order thickening `Z ⊂ Z'` of algebraic spaces over `X` is a universal first-order
 > thickening if and only if the dotted arrow of the diagram of Stacks 0602 exists and is unique for
@@ -94,7 +94,7 @@ theorem isUniversalFirstOrderThickening_iff_representable
       HasRepresentableLiftingProperty B S hS Z p
 ```
 
-**`AlgebraicGeometry.Space.HasRepresentableLiftingProperty.hasAffineLiftingProperty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalFirstOrderThickeningCriteria.lean, line 365](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversalFirstOrderThickeningCriteria.lean#L365). The attribute's comment: “(2) implies (3)”.
+**`AlgebraicGeometry.Space.HasRepresentableLiftingProperty.hasAffineLiftingProperty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalFirstOrderThickeningCriteria.lean, line 365](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UniversalFirstOrderThickeningCriteria.lean#L365). The attribute's comment: “(2) implies (3)”.
 
 > The lifting property of the diagrams of Stacks 0602 tested on schemes implies the same
 > property tested on affine schemes.
@@ -109,7 +109,7 @@ theorem HasRepresentableLiftingProperty.hasAffineLiftingProperty
 
 [Tag 0604](https://stacks.math.columbia.edu/tag/0604) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsUniversalFirstOrderThickening.comp_formallyEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/FormallyEtale.lean, line 436](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/FormallyEtale.lean#L436).
+**`AlgebraicGeometry.Space.IsUniversalFirstOrderThickening.comp_formallyEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/FormallyEtale.lean, line 436](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/FormallyEtale.lean#L436).
 
 > **Stacks 0604.** A universal first-order thickening of `Z` over an algebraic space `Y` is
 > also a universal first-order thickening of `Z` over an algebraic space `X` whenever `Y ⟶ X` is
@@ -134,7 +134,7 @@ theorem IsUniversalFirstOrderThickening.comp_formallyEtale {Z' Y X : AlgebraicSp
 
 [Tag 0605](https://stacks.math.columbia.edu/tag/0605) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsUniversalFirstOrderThickening.etalePullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalFirstOrderThickeningDescent.lean, line 184](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversalFirstOrderThickeningDescent.lean#L184). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.Space.IsUniversalFirstOrderThickening.etalePullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalFirstOrderThickeningDescent.lean, line 184](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UniversalFirstOrderThickeningDescent.lean#L184). The attribute's comment: “part (1)”.
 
 > **Stacks 0605, part (1).** Let `Y ⊂ Y'` be a universal first-order thickening of `Y` over an
 > algebraic space `X`, with structure morphism `p : Y' ⟶ X`.  Let `g : Z' ⟶ Y'` be étale and let
@@ -156,7 +156,7 @@ theorem IsUniversalFirstOrderThickening.etalePullback {X Y' Z' : AlgebraicSpaces
     IsUniversalFirstOrderThickening B S hS Z (g ≫ p)
 ```
 
-**`AlgebraicGeometry.Space.IsUniversalFirstOrderThickening.of_surjectiveEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalFirstOrderThickeningDescent.lean, line 513](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversalFirstOrderThickeningDescent.lean#L513). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.Space.IsUniversalFirstOrderThickening.of_surjectiveEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalFirstOrderThickeningDescent.lean, line 513](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UniversalFirstOrderThickeningDescent.lean#L513). The attribute's comment: “part (2)”.
 
 > **Stacks 0605, part (2).** Let `Z ⟶ Y ⟶ X` be morphisms of algebraic spaces over `S` with
 > `a₀ : Z ⟶ Y` surjective étale, let `g : Z' ⟶ Y'` be an étale morphism of first-order
@@ -178,7 +178,7 @@ theorem IsUniversalFirstOrderThickening.of_surjectiveEtale
 
 [Tag 0606](https://stacks.math.columbia.edu/tag/0606) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.nonempty_universalFirstOrderThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/UniversalExistence/ExistenceAndTransport.lean, line 348](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/UniversalExistence/ExistenceAndTransport.lean#L348).
+**`AlgebraicGeometry.Space.nonempty_universalFirstOrderThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/UniversalExistence/ExistenceAndTransport.lean, line 348](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Thickenings/UniversalExistence/ExistenceAndTransport.lean#L348).
 
 > **Stacks 0606.** Every formally unramified morphism `h : Z ⟶ X` of algebraic spaces over
 > `S` admits a universal first order thickening `Z ⊂ Z'` of `Z` over `X`, in the sense of
@@ -196,7 +196,7 @@ theorem nonempty_universalFirstOrderThickening
 
 [Tag 0607](https://stacks.math.columbia.edu/tag/0607) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.UniversalFirstOrderThickening`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningOfFormallyUnramified.lean, line 312](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningOfFormallyUnramified.lean#L312). The attribute's comment: “the universal first order thickening”.
+**`AlgebraicGeometry.Space.UniversalFirstOrderThickening`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningOfFormallyUnramified.lean, line 313](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningOfFormallyUnramified.lean#L313). The attribute's comment: “the universal first order thickening”.
 
 > **Stacks 0607, part (1).**  A *universal first order thickening* of a formally unramified
 > morphism `h : Z ⟶ X` of algebraic spaces over `S`: the thickening `Z ⊂ Z'` of `Z` over `X` whose
@@ -216,7 +216,7 @@ theorem nonempty_universalFirstOrderThickening
 structure UniversalFirstOrderThickening {Z X : AlgebraicSpaces B S hS} (h : Z ⟶ X)
 ```
 
-**`AlgebraicGeometry.Space.conormalSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningOfFormallyUnramified.lean, line 364](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningOfFormallyUnramified.lean#L364). The attribute's comment: “the conormal sheaf”.
+**`AlgebraicGeometry.Space.conormalSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningOfFormallyUnramified.lean, line 365](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningOfFormallyUnramified.lean#L365). The attribute's comment: “the conormal sheaf”.
 
 > **Stacks 0607, part (2).**  The *conormal sheaf* `𝒞_{Z/X}` of a formally unramified
 > morphism `h : Z ⟶ X` of algebraic spaces over `S`, relative to a universal first order
@@ -238,7 +238,7 @@ noncomputable def conormalSheaf {Z X : AlgebraicSpaces B S hS} {h : Z ⟶ X}
 
 [Tag 0608](https://stacks.math.columbia.edu/tag/0608) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.formallyUnramified_of_isImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Immersion.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Immersion.lean#L90). The attribute's comment: “formally unramified”.
+**`AlgebraicGeometry.Space.formallyUnramified_of_isImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Immersion.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Immersion.lean#L90). The attribute's comment: “formally unramified”.
 
 > **The first clause of [Stacks Project, Tag 0608].**  An immersion of algebraic spaces over
 > `S` is formally unramified.
@@ -254,7 +254,7 @@ theorem formallyUnramified_of_isImmersion (B : BigFppfSite.{u}) (S : Scheme.{u})
     FormallyUnramified i
 ```
 
-**`AlgebraicGeometry.Space.isUniversalFirstOrderThickening_infinitesimalNeighbourhood`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningImmersion.lean, line 329](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningImmersion.lean#L329). The attribute's comment: “part (2): the universal first order thickening is the neighbourhood”.
+**`AlgebraicGeometry.Space.isUniversalFirstOrderThickening_infinitesimalNeighbourhood`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningImmersion.lean, line 329](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningImmersion.lean#L329). The attribute's comment: “part (2): the universal first order thickening is the neighbourhood”.
 
 > Let `Z` be a closed subspace of an open subspace `U` of an algebraic space `X` over `S`, so
 > that `Z` is immersed in `X`, and let `N` be the first order infinitesimal neighbourhood of `Z` in
@@ -281,7 +281,7 @@ theorem isUniversalFirstOrderThickening_infinitesimalNeighbourhood
         (⟨N.1.toFunctor, N.2.1⟩ : AlgebraicSpaces B S hS) ⟶ X)
 ```
 
-**`AlgebraicGeometry.Space.conormalSheafIsoConormalModule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningImmersionConormal.lean, line 257](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningImmersionConormal.lean#L257). The attribute's comment: “part (3)”.
+**`AlgebraicGeometry.Space.conormalSheafIsoConormalModule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningImmersionConormal.lean, line 257](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningImmersionConormal.lean#L257). The attribute's comment: “part (3)”.
 
 > Let `i : Z ⟶ X` be an immersion of algebraic spaces over `S`, presented by an open subspace
 > `U ⊆ X` in which `Z` is a closed subspace, and let `Z ⊂ Z'` be a universal first order thickening
@@ -303,7 +303,7 @@ noncomputable def conormalSheafIsoConormalModule {X : AlgebraicSpaces B S hS}
 
 [Tag 0609](https://stacks.math.columbia.edu/tag/0609) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.formallyUnramified_of_isUniversalFirstOrderThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningUnramified.lean, line 175](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningUnramified.lean#L175).
+**`AlgebraicGeometry.Space.formallyUnramified_of_isUniversalFirstOrderThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningUnramified.lean, line 175](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningUnramified.lean#L175).
 
 > Let `Z ⊂ Z'` be a universal first order thickening of `Z` over an algebraic space `X`, with
 > structure morphism `p : Z' ⟶ X`.  Then `p` is formally unramified.
@@ -315,7 +315,7 @@ theorem formallyUnramified_of_isUniversalFirstOrderThickening
     FormallyUnramified p.hom
 ```
 
-**`AlgebraicGeometry.Space.UniversalFirstOrderThickening.formallyUnramified_toBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningUnramified.lean, line 198](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningUnramified.lean#L198). The attribute's comment: “the universal first order thickening of a formally unramified morphism”.
+**`AlgebraicGeometry.Space.UniversalFirstOrderThickening.formallyUnramified_toBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningUnramified.lean, line 198](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningUnramified.lean#L198). The attribute's comment: “the universal first order thickening of a formally unramified morphism”.
 
 > The ambient algebraic space `Z'` of a universal first order thickening of a formally
 > unramified morphism `h : Z ⟶ X` of algebraic spaces over `S` is formally unramified over `X`.
@@ -330,7 +330,7 @@ theorem UniversalFirstOrderThickening.formallyUnramified_toBase
 
 [Tag 060A](https://stacks.math.columbia.edu/tag/060A) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.universalThickeningMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningFunctorial.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningFunctorial.lean#L146). The attribute's comment: “the canonical morphism”.
+**`AlgebraicGeometry.Space.universalThickeningMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningFunctorial.lean, line 146](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningFunctorial.lean#L146). The attribute's comment: “the canonical morphism”.
 
 > **Stacks 060A, the canonical morphism.** Let the square
 >
@@ -360,7 +360,7 @@ noncomputable def universalThickeningMap (g : X ⟶ Y) (f : Z.toFunctor ⟶ W.to
     Z' ⟶ W'
 ```
 
-**`AlgebraicGeometry.Space.universalThickeningMap_restrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningFunctorial.lean, line 167](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningFunctorial.lean#L167). The attribute's comment: “commutativity: the canonical morphism restricts to f”.
+**`AlgebraicGeometry.Space.universalThickeningMap_restrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningFunctorial.lean, line 167](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningFunctorial.lean#L167). The attribute's comment: “commutativity: the canonical morphism restricts to f”.
 
 > **Stacks 060A, commutativity: the canonical morphism restricts to `f`.** The composite
 > `Z ⊂ Z' --f'--→ W'` is `Z --f--→ W ⊂ W'`.  This is the front face of the diagram of the source,
@@ -374,7 +374,7 @@ theorem universalThickeningMap_restrict (g : X ⟶ Y) (f : Z.toFunctor ⟶ W.toF
     Z.ι ≫ (universalThickeningMap B S hS g f hZ hW hsq).hom = f ≫ W.ι
 ```
 
-**`AlgebraicGeometry.Space.universalThickeningMap_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningFunctorial.lean, line 179](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningFunctorial.lean#L179). The attribute's comment: “commutativity: the canonical morphism lies over Y”.
+**`AlgebraicGeometry.Space.universalThickeningMap_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningFunctorial.lean, line 179](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningFunctorial.lean#L179). The attribute's comment: “commutativity: the canonical morphism lies over Y”.
 
 > **Stacks 060A, commutativity: the canonical morphism is a morphism over `Y`.** The
 > composite `Z' --f'--→ W' --q--→ Y` is `Z' --p--→ X --g--→ Y`.  This is the commutativity of the
@@ -389,7 +389,7 @@ theorem universalThickeningMap_over (g : X ⟶ Y) (f : Z.toFunctor ⟶ W.toFunct
     universalThickeningMap B S hS g f hZ hW hsq ≫ q = p ≫ g
 ```
 
-**`AlgebraicGeometry.Space.universalThickeningHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningFunctorial.lean, line 210](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningFunctorial.lean#L210). The attribute's comment: “the canonical morphism of thickenings”.
+**`AlgebraicGeometry.Space.universalThickeningHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningFunctorial.lean, line 210](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningFunctorial.lean#L210). The attribute's comment: “the canonical morphism of thickenings”.
 
 > **Stacks 060A, the canonical morphism as a morphism of thickenings.** The pair `(f, f')`,
 > read as a morphism `Arrow.mk Z.ι ⟶ Arrow.mk W.ι` of the inclusions in the arrow category: a
@@ -409,7 +409,7 @@ noncomputable def universalThickeningHom (g : X ⟶ Y) (f : Z.toFunctor ⟶ W.to
     Arrow.mk Z.ι ⟶ Arrow.mk W.ι
 ```
 
-**`AlgebraicGeometry.Space.universalThickeningConormalMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningFunctorial.lean, line 238](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningFunctorial.lean#L238). The attribute's comment: “the induced map of conormal modules”.
+**`AlgebraicGeometry.Space.universalThickeningConormalMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningFunctorial.lean, line 238](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningFunctorial.lean#L238). The attribute's comment: “the induced map of conormal modules”.
 
 > **Stacks 060A, the induced map of conormal modules.** The morphism `(f, f')` of thickenings
 > induces the map `f^*𝒞_{W/Y} ⟶ 𝒞_{Z/X}` of the source: it is the map of Stacks 04CP,
@@ -448,7 +448,7 @@ noncomputable def universalThickeningConormalMap (g : X ⟶ Y) (f : Z.toFunctor 
 
 [Tag 060B](https://stacks.math.columbia.edu/tag/060B) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.formallyUnramified_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/UnramifiedBaseChange.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/UnramifiedBaseChange.lean#L53). The attribute's comment: “the first assertion: in a fibre product diagram, the base change `h` of a formally unramified `h'` is formally unramified”. References: EGA IV (17.1.3), “more general”.
+**`AlgebraicGeometry.Space.formallyUnramified_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/UnramifiedBaseChange.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/UnramifiedBaseChange.lean#L53). The attribute's comment: “the first assertion: in a fibre product diagram, the base change `h` of a formally unramified `h'` is formally unramified”. References: EGA IV (17.1.3), “more general”.
 
 > **Stacks 0600.** A base change of a formally unramified morphism of algebraic spaces is
 > formally unramified: in a cartesian square with `f` formally unramified, the opposite side `p`
@@ -467,7 +467,7 @@ theorem formallyUnramified_of_isPullback
     FormallyUnramified p.hom
 ```
 
-**`AlgebraicGeometry.Space.isUniversalFirstOrderThickening_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningBaseChange.lean, line 250](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningBaseChange.lean#L250). The attribute's comment: “the second assertion: the base change of the universal first-order thickening is the universal first-order thickening of the base change”.
+**`AlgebraicGeometry.Space.isUniversalFirstOrderThickening_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningBaseChange.lean, line 251](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningBaseChange.lean#L251). The attribute's comment: “the second assertion: the base change of the universal first-order thickening is the universal first-order thickening of the base change”.
 
 > **Stacks 060B, the second assertion.**  Let `W ⊂ W'` be a universal first-order thickening
 > of `W` over `Y`, with structure morphism `q : W' ⟶ Y`, and let `g : X ⟶ Y` be a morphism of
@@ -489,7 +489,7 @@ theorem isUniversalFirstOrderThickening_baseChange
       (baseChangeThickeningFst B S hS q g)
 ```
 
-**`AlgebraicGeometry.Space.epi_universalThickeningConormalMap_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningBaseChange.lean, line 346](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningBaseChange.lean#L346). The attribute's comment: “the third assertion: surjectivity of the induced map of conormal modules”.
+**`AlgebraicGeometry.Space.epi_universalThickeningConormalMap_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningBaseChange.lean, line 347](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningBaseChange.lean#L347). The attribute's comment: “the third assertion: surjectivity of the induced map of conormal modules”.
 
 > **Stacks 060B, the third assertion.**  The canonical map `f^*𝒞_{W/Y} ⟶ 𝒞_{Z/X}` of
 > conormal modules of Stacks 060A, attached to the cartesian square of the source, is surjective.
@@ -512,7 +512,7 @@ theorem epi_universalThickeningConormalMap_baseChange
 
 [Tag 060C](https://stacks.math.columbia.edu/tag/060C) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isFlat_baseChangeThickeningSnd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningBaseChange.lean, line 371](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningBaseChange.lean#L371). The attribute's comment: “the first assertion: the induced morphism of universal first-order thickenings is flat”.
+**`AlgebraicGeometry.Space.isFlat_baseChangeThickeningSnd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningBaseChange.lean, line 372](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningBaseChange.lean#L372). The attribute's comment: “the first assertion: the induced morphism of universal first-order thickenings is flat”.
 
 > **Stacks 060C, the first assertion.**  In the cartesian square of Stacks 060B, if `g` is flat
 > then so is the induced morphism `r : X ×_Y W' ⟶ W'` of universal first-order thickenings.
@@ -530,7 +530,7 @@ theorem isFlat_baseChangeThickeningSnd (g_flat : IsFlat B S hS g.hom) :
     IsFlat B S hS (baseChangeThickeningSnd B S hS q g).hom
 ```
 
-**`AlgebraicGeometry.Space.isIso_universalThickeningConormalMap_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningBaseChange.lean, line 419](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningBaseChange.lean#L419). The attribute's comment: “the second assertion: the induced map of conormal modules is an isomorphism”.
+**`AlgebraicGeometry.Space.isIso_universalThickeningConormalMap_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningBaseChange.lean, line 420](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningBaseChange.lean#L420). The attribute's comment: “the second assertion: the induced map of conormal modules is an isomorphism”.
 
 > **Stacks 060C, the second assertion.**  In the cartesian square of Stacks 060B, if `g` is
 > flat then the canonical map `f^*𝒞_{W/Y} ⟶ 𝒞_{Z/X}` of conormal modules of Stacks 060A is an
@@ -560,7 +560,7 @@ theorem isIso_universalThickeningConormalMap_baseChange
 
 [Tag 060D](https://stacks.math.columbia.edu/tag/060D) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.formallyUnramified_of_etaleLocalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalFirstOrderThickeningDescent.lean, line 490](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversalFirstOrderThickeningDescent.lean#L490). The attribute's comment: “the étale localization of a formally unramified morphism is formally unramified”.
+**`AlgebraicGeometry.Space.formallyUnramified_of_etaleLocalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalFirstOrderThickeningDescent.lean, line 490](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UniversalFirstOrderThickeningDescent.lean#L490). The attribute's comment: “the étale localization of a formally unramified morphism is formally unramified”.
 
 > **Stacks 060D, the first of its three assertions.** Let `h : Z ⟶ X` be a formally unramified
 > morphism of algebraic spaces over `S`, and let `f : V ⟶ U` sit in a commutative square over it
@@ -590,7 +590,7 @@ theorem formallyUnramified_of_etaleLocalization {V U Z X : AlgebraicSpaces B S h
     FormallyUnramified f.hom
 ```
 
-**`AlgebraicGeometry.Space.IsUniversalFirstOrderThickening.etaleLocalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningEtaleLocalization.lean, line 212](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningEtaleLocalization.lean#L212). The attribute's comment: “clause (2): the universal first-order thickening of the etale localization”.
+**`AlgebraicGeometry.Space.IsUniversalFirstOrderThickening.etaleLocalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningEtaleLocalization.lean, line 212](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningEtaleLocalization.lean#L212). The attribute's comment: “clause (2): the universal first-order thickening of the etale localization”.
 
 > **Stacks 060D, clause (2).**  Let `Z ⊂ Z'` be a universal first-order thickening of `Z` over
 > an algebraic space `X`, with structure morphism `p : Z' ⟶ X`, let `φ : U ⟶ X` be étale, let
@@ -621,7 +621,7 @@ theorem IsUniversalFirstOrderThickening.etaleLocalization
     IsUniversalFirstOrderThickening B S hS V r
 ```
 
-**`AlgebraicGeometry.Space.exists_isEtale_of_isUniversalFirstOrderThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningEtaleLocalization.lean, line 268](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningEtaleLocalization.lean#L268). The attribute's comment: “clause (2): the universal first-order thickening is etale over the thickening of Z”.
+**`AlgebraicGeometry.Space.exists_isEtale_of_isUniversalFirstOrderThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningEtaleLocalization.lean, line 268](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningEtaleLocalization.lean#L268). The attribute's comment: “clause (2): the universal first-order thickening is etale over the thickening of Z”.
 
 > **Stacks 060D, clause (2), the étaleness assertion.**  With the data of clause (2), *every*
 > universal first-order thickening `W ⊂ W'` of `V` over `U` is étale over `Z'`: there is a morphism
@@ -655,7 +655,7 @@ theorem exists_isEtale_of_isUniversalFirstOrderThickening
       m ≫ p = q ≫ φ
 ```
 
-**`AlgebraicGeometry.Space.conormalModuleEtaleLocalizationIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningEtaleLocalization.lean, line 322](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningEtaleLocalization.lean#L322). The attribute's comment: “clause (3): the conormal module of the etale localization”.
+**`AlgebraicGeometry.Space.conormalModuleEtaleLocalizationIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningEtaleLocalization.lean, line 322](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningEtaleLocalization.lean#L322). The attribute's comment: “clause (3): the conormal module of the etale localization”.
 
 > **Stacks 060D, clause (3).**  With the data of clause (2), the conormal module of `Z` in `Z'`
 > restricts along the projection `c : V ⟶ Z` to the conormal module of `V` in `V'`:
@@ -685,7 +685,7 @@ noncomputable def conormalModuleEtaleLocalizationIso {Z' V' : AlgebraicSpaces B 
       conormalModule B S hS V' ⟨V, hV⟩
 ```
 
-**`AlgebraicGeometry.Space.IsUniversalFirstOrderThickening.exists_etaleLocalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningEtaleLocalizationFull.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningEtaleLocalizationFull.lean#L137). The attribute's comment: “the thickening assertion, étale extension produced from `V ⟶ Z`, not assumed”.
+**`AlgebraicGeometry.Space.IsUniversalFirstOrderThickening.exists_etaleLocalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningEtaleLocalizationFull.lean, line 137](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningEtaleLocalizationFull.lean#L137). The attribute's comment: “the thickening assertion, étale extension produced from `V ⟶ Z`, not assumed”.
 
 > **Stacks 060D, the thickening assertion, with the étale extension produced.**  Let
 > `Z ⊂ Z'` be a universal
@@ -747,7 +747,7 @@ theorem IsUniversalFirstOrderThickening.exists_etaleLocalization
         IsUniversalFirstOrderThickening B S hS V r
 ```
 
-**`AlgebraicGeometry.Space.etaleLocalization_commutes_universalFirstOrderThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningEtaleLocalizationFull.lean, line 251](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningEtaleLocalizationFull.lean#L251).
+**`AlgebraicGeometry.Space.etaleLocalization_commutes_universalFirstOrderThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningEtaleLocalizationFull.lean, line 251](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningEtaleLocalizationFull.lean#L251).
 
 > **Stacks 060D.**  Taking the universal first-order thickenings commutes with étale
 > localization.  Let `h : Z ⟶ X` be a formally unramified morphism of algebraic spaces over `S`,
@@ -822,57 +822,38 @@ theorem etaleLocalization_commutes_universalFirstOrderThickening
 
 [Tag 060E](https://stacks.math.columbia.edu/tag/060E) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isIso_restrict_of_isSheafOfDifferentialsMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningDifferentials.lean, line 312](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningDifferentials.lean#L312). The attribute's comment: “granted, as `hetale`, the étale localization of 04CU and 060D: over each object of the small étale site of `Z` the restriction along `Z ⟶ Z'` of the comparison map of 04CX is, on sections, the map 04FB of a universal first-order thickening of schemes assembled from charts of `Z'`, `X` and `Y` over that object. The scheme case 04FB is applied, not granted; formal unramifiedness of `h` is not assumed, a universal first-order thickening being given”.
+**`AlgebraicGeometry.Space.UniversalFirstOrderThickening.isIso_modulePullback_map_of_isSheafOfDifferentialsMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningDifferentialsFormallyUnramified.lean, line 96](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningDifferentialsFormallyUnramified.lean#L96).
 
-> **Stacks 060E.**  Let `h : Z ⟶ X` be a morphism of algebraic spaces over `S`, presented as
-> the composite `Z.ι ≫ h'` of the inclusion of a closed subspace `Z` of an algebraic space `Z'`
-> with a structure morphism `h' : Z' ⟶ X`, and let `Z ⊂ Z'` be a universal first-order thickening
-> of `Z` over `X`.  For a morphism `p : X ⟶ Y` to a base algebraic space, the comparison map
-> `c_{h'} : (h')^*Ω_{X/Y} ⟶ Ω_{Z'/Y}` of Stacks 04CX induces an isomorphism
-> `h^*Ω_{X/Y} ⟶ Ω_{Z'/Y} ⊗ 𝒪_Z`, namely its restriction along the inclusion of `Z`.
->
-> The map is named by the characterizing property of Stacks 04CX, which determines it uniquely by
-> `AlgebraicGeometry.Space.eq_of_isSheafOfDifferentialsMap`; that uniqueness carries the
-> étale-local input from the realization `c₀` it is stated for to the realization `c` in hand.
-> The proof is the source's: over an étale chart of `Z` the restricted comparison map is the map
-> of Stacks 04FB of a universal first-order thickening of schemes, which is an isomorphism, and a
-> morphism of `𝒪_Z`-modules which is bijective on the sections over every chart is an
-> isomorphism.
->
-> Formal unramifiedness of `h`, a hypothesis of the source, is not assumed: it is what makes a
-> universal first-order thickening exist, one is given, and by Stacks 0609 it follows.
+> **Stacks 060E.**  Let `h : Z ⟶ X` be a formally unramified morphism of algebraic spaces over
+> `S`, let `Z ⊂ Z'` be its universal first-order thickening `t`, with structure morphism
+> `h' : Z' ⟶ X` and closed immersion `i : Z ⟶ Z'`, and let `p : X ⟶ Y` be a morphism to a base
+> algebraic space.  For any realization `c` of the canonical map
+> `dh' : (h')^*Ω_{X/Y} ⟶ Ω_{Z'/Y}` of Stacks 04CX, the restriction `i^*c` is an isomorphism; its
+> source is `h^*Ω_{X/Y}` through `i ≫ h' = h`, and its target is `Ω_{Z'/Y} ⊗ 𝒪_Z`.
 
 ```lean
-theorem isIso_restrict_of_isSheafOfDifferentialsMap
-    (hZ : IsUniversalFirstOrderThickening B S hS Z h') (p : X ⟶ Y)
-    (c c₀ : (modulePullback B S hS h').obj (sheafOfDifferentials B S hS p) ⟶
-      sheafOfDifferentials B S hS (h' ≫ p))
-    (hc : IsSheafOfDifferentialsMap B S hS h' p (h' ≫ p) c)
-    (hc₀ : IsSheafOfDifferentialsMap B S hS h' p (h' ≫ p) c₀)
-    (hetale : IsEtaleLocalThickeningDifferentialsMap B S hS hZ p
-      ((modulePullback B S hS (universalThickeningInclusion B S hS hZ)).map c₀)) :
-    IsIso ((modulePullback B S hS (universalThickeningInclusion B S hS hZ)).map c)
+theorem isIso_modulePullback_map_of_isSheafOfDifferentialsMap
+    (t : UniversalFirstOrderThickening B S hS h) (p : X ⟶ Y)
+    {c : (modulePullback B S hS t.toBase).obj (sheafOfDifferentials B S hS p) ⟶
+      sheafOfDifferentials B S hS (t.toBase ≫ p)}
+    (hc : IsSheafOfDifferentialsMap B S hS t.toBase p (t.toBase ≫ p) c) :
+    IsIso ((modulePullback B S hS t.sourceToAmbient).map c)
 ```
 
-**`AlgebraicGeometry.Space.isIso_thickeningSheafOfDifferentialsMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningDifferentials.lean, line 349](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningDifferentials.lean#L349). The attribute's comment: “granted, as `hetale`, the étale localization of 04CU and 060D, as for `isIso_restrict_of_isSheafOfDifferentialsMap`; stated for the comparison map of 04CX as constructed”.
+**`AlgebraicGeometry.Space.UniversalFirstOrderThickening.isIso_pullbackSheafOfDifferentialsMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningDifferentialsFormallyUnramified.lean, line 157](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningDifferentialsFormallyUnramified.lean#L157).
 
-> **Stacks 060E** for the comparison map constructed by
-> `AlgebraicGeometry.Space.sheafOfDifferentialsMap`: the map
-> `AlgebraicGeometry.Space.thickeningSheafOfDifferentialsMap` is an isomorphism.
->
-> This is `AlgebraicGeometry.Space.isIso_restrict_of_isSheafOfDifferentialsMap` at the realization
-> of the comparison map which Stacks 04CX constructs, whose characterizing property is
-> `AlgebraicGeometry.Space.isSheafOfDifferentialsMap_sheafOfDifferentialsMap`.
+> **Stacks 060E.**  Let `h : Z ⟶ X` be a formally unramified morphism of algebraic spaces over
+> `S` and `Z ⊂ Z'` its universal first-order thickening `t`, with structure morphism
+> `h' : Z' ⟶ X`.  For a morphism `p : X ⟶ Y` to a base algebraic space, the canonical map
+> `dh' : (h')^*Ω_{X/Y} ⟶ Ω_{Z'/Y}` induces an isomorphism `h^*Ω_{X/Y} ⟶ Ω_{Z'/Y} ⊗ 𝒪_Z`.
 
 ```lean
-theorem isIso_thickeningSheafOfDifferentialsMap
-    (hZ : IsUniversalFirstOrderThickening B S hS Z h') (p : X ⟶ Y)
-    (hetale : IsEtaleLocalThickeningDifferentialsMap B S hS hZ p
-      (thickeningSheafOfDifferentialsMap B S hS hZ p)) :
-    IsIso (thickeningSheafOfDifferentialsMap B S hS hZ p)
+theorem isIso_pullbackSheafOfDifferentialsMap
+    (t : UniversalFirstOrderThickening B S hS h) (p : X ⟶ Y) :
+    IsIso (t.pullbackSheafOfDifferentialsMap p)
 ```
 
-**`AlgebraicGeometry.Space.IsUniversalFirstOrderThickening.isIso_restrict_of_isSheafOfDifferentialsMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningDifferentialsIso.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningDifferentialsIso.lean#L69).
+**`AlgebraicGeometry.Space.IsUniversalFirstOrderThickening.isIso_restrict_of_isSheafOfDifferentialsMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningDifferentialsIso.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningDifferentialsIso.lean#L69).
 
 > For a universal first-order thickening `Z ⊂ Z'` over `X` with structure morphism `h'`, and a
 > morphism `p : X ⟶ Y`, the restriction along the inclusion `ι : Z ⟶ Z'` of any realization `c` of
@@ -887,7 +868,7 @@ theorem isIso_restrict_of_isSheafOfDifferentialsMap
     IsIso ((modulePullback B S hS (universalThickeningInclusion B S hS hZ)).map c)
 ```
 
-**`AlgebraicGeometry.Space.IsUniversalFirstOrderThickening.isIso_thickeningSheafOfDifferentialsMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningDifferentialsIso.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningDifferentialsIso.lean#L93).
+**`AlgebraicGeometry.Space.IsUniversalFirstOrderThickening.isIso_thickeningSheafOfDifferentialsMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningDifferentialsIso.lean, line 93](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningDifferentialsIso.lean#L93).
 
 > For a universal first-order thickening `Z ⊂ Z'` and a morphism `p : X ⟶ Y`, the comparison
 > map `AlgebraicGeometry.Space.thickeningSheafOfDifferentialsMap` is an isomorphism.
@@ -902,140 +883,44 @@ theorem isIso_thickeningSheafOfDifferentialsMap
 
 [Tag 060F](https://stacks.math.columbia.edu/tag/060F) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.thickeningConormalFirstMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalSequenceFormallyUnramified.lean, line 180](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ConormalSequenceFormallyUnramified.lean#L180). The attribute's comment: “the canonical first arrow `𝒞_{Z/X} ⟶ h^*Ω_{X/Y}`, with `𝒞_{Z/X}` the conormal module of `Z ⊂ Z'` of 0607(2) and the middle term read as `ι^*(h')^*Ω_{X/Y}`; granted as `he` that the map of 060E is an isomorphism, which `isIso_thickeningSheafOfDifferentialsMap` supplies”.
+**`AlgebraicGeometry.Space.exists_conormalSequence_exact_of_formallyUnramified`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallyUnramifiedConormalSequenceMorphism.lean, line 215](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FormallyUnramifiedConormalSequenceMorphism.lean#L215).
 
-> **Stacks 060F, the canonical first arrow** `𝒞_{Z/X} ⟶ h^*Ω_{X/Y}`.
->
-> The source `𝒞_{Z/X}` is the conormal module `𝒞_{Z/Z'}` of the closed subspace `Z ⊂ Z'`, which is
-> what Stacks 0607, part (2) defines `𝒞_{Z/X}` to be; the target `h^*Ω_{X/Y}` is read as the double
-> inverse image `ι^*(h')^*Ω_{X/Y}`, as in Stacks 060E.  The arrow is the first arrow
-> `AlgebraicGeometry.Space.conormalSequenceFirstMap` of Stacks 05ZA for `Z ⊂ Z'` over `Y`, followed
-> by the inverse of the isomorphism `AlgebraicGeometry.Space.thickeningSheafOfDifferentialsMap` of
-> Stacks 060E.
->
-> The hypothesis `he` is that isomorphism, which
-> `AlgebraicGeometry.Space.isIso_thickeningSheafOfDifferentialsMap` supplies.
-
-```lean
-noncomputable def thickeningConormalFirstMap
-    (hZ : IsUniversalFirstOrderThickening B S hS Z h') (p : X ⟶ Y)
-    (he : IsIso (thickeningSheafOfDifferentialsMap B S hS hZ p)) :
-    conormalModule B S hS Z' (thickeningClosedSubspace B S hS hZ) ⟶
-      (modulePullback B S hS (universalThickeningInclusion B S hS hZ)).obj
-        ((modulePullback B S hS h').obj (sheafOfDifferentials B S hS p))
-```
-
-**`AlgebraicGeometry.Space.thickeningConormalFirstMap_comp_thickeningSheafOfDifferentialsMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalSequenceFormallyUnramified.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ConormalSequenceFormallyUnramified.lean#L227). The attribute's comment: “the first arrow is induced by `d_{Z'/B}`: composed with the isomorphism of 060E it is the first arrow of 05ZA for `Z ⊂ Z'` over the base, which `conormalSequenceIdealDifferential_val_app_apply` identifies with `d_{Z'/B}` on the defining ideal sheaf; granted as `he` that the map of 060E is an isomorphism”.
-
-> **Stacks 060F, "the first arrow is induced by `d_{Z'/Y}`".**  Composed with the isomorphism
-> of Stacks 060E, the first arrow is the first arrow of Stacks 05ZA for the closed subspace
-> `Z ⊂ Z'` over `Y`; and that arrow is induced by `d_{Z'/Y}` in the sense of
-> `AlgebraicGeometry.Space.conormalSequenceIdealDifferential_val_app_apply`, namely its transpose
-> across `ι^* ⊣ ι_*` carries a section of the defining ideal sheaf of `Z` to the universal
-> differential `d_{Z'/Y}` of that section followed by the unit of the adjunction.
->
-> Since the map of Stacks 060E is an isomorphism, this equation determines the first arrow, so it
-> is the whole of that arrow's dependence on `d_{Z'/Y}`.  It holds by construction — it is the
-> defining equation of `AlgebraicGeometry.Space.thickeningConormalFirstMap`, recorded so that
-> consumers may rewrite with it rather than unfold the definition, as
-> `AlgebraicGeometry.Space.conormalModule_eq` and
-> `AlgebraicGeometry.Space.conormalSheaf_eq` are for their definitions; what carries the
-> mathematical content of the clause is the Stacks 05ZA statement it defers to.
-
-```lean
-theorem thickeningConormalFirstMap_comp_thickeningSheafOfDifferentialsMap
-    (hZ : IsUniversalFirstOrderThickening B S hS Z h') (p : X ⟶ Y)
-    (he : IsIso (thickeningSheafOfDifferentialsMap B S hS hZ p)) :
-    thickeningConormalFirstMap B S hS hZ p he ≫
-        thickeningSheafOfDifferentialsMap B S hS hZ p =
-      conormalSequenceFirstMap B S hS (thickeningClosedSubspace B S hS hZ) (h' ≫ p)
-```
-
-**`AlgebraicGeometry.Space.epi_thickeningConormalSecondMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalSequenceFormallyUnramified.lean, line 248](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ConormalSequenceFormallyUnramified.lean#L248). The attribute's comment: “exactness at the right term: the second arrow `h^*Ω_{X/Y} ⟶ Ω_{Z/Y}` is an epimorphism. Granted as `he` that the map of 060E is an isomorphism, and as `hsharp` local surjectivity of `ι♯` (the inverse-image form of the surjectivity clause of 03MB), which is the same hypothesis as in the exactness at the right term of 05ZA”.
-
-> **Stacks 060F, exactness at the right term.**  The second arrow `h^*Ω_{X/Y} ⟶ Ω_{Z/Y}` is an
-> epimorphism, so the sequence ends in zero.
->
-> It is the isomorphism of Stacks 060E followed by the second arrow of Stacks 05ZA, and the latter
-> is an epimorphism by `AlgebraicGeometry.Space.epi_pullbackDifferentialsMap_of_isLocallySurjective`
-> under local surjectivity of `ι♯`, which is the hypothesis `hsharp` passed straight through.
-
-```lean
-theorem epi_thickeningConormalSecondMap
-    (hZ : IsUniversalFirstOrderThickening B S hS Z h') (p : X ⟶ Y)
-    (he : IsIso (thickeningSheafOfDifferentialsMap B S hS hZ p))
-    (hsharp : Presheaf.IsLocallySurjective
-      (SmallEtale.topology B S hS (universalThickeningSubSpace B S hS hZ).obj)
-      (structureSharpInverseImage B S hS (universalThickeningInclusion B S hS hZ)).hom) :
-    Epi (thickeningConormalSecondMap B S hS hZ p)
-```
-
-**`AlgebraicGeometry.Space.thickeningConormalSequence_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalSequenceFormallyUnramified.lean, line 287](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ConormalSequenceFormallyUnramified.lean#L287). The attribute's comment: “the composite of the two arrows is zero and the short complex is exact at the middle term `h^*Ω_{X/Y}` — the transport across the isomorphism of 060E, which is the whole of the tag's proof. Granted as `he` that the map of 060E is an isomorphism, and as `hzero` and `h05ZA` the same two clauses for the sequence of 05ZA at `Z ⊂ Z'` over the base, which are the two clauses 05ZA leaves open in this tree. Exactness at the right term is separate and is proved: see `epi_thickeningConormalSecondMap`”.
-
-> **Stacks 060F, the two remaining clauses**: the composite of the two arrows is zero, and the
-> resulting short complex `𝒞_{Z/X} ⟶ h^*Ω_{X/Y} ⟶ Ω_{Z/Y}` is exact at the middle term.
->
-> This is the transport the source's proof performs, and it is all that is proved here: both
-> clauses are *granted* for the sequence of Stacks 05ZA at the closed subspace `Z ⊂ Z'` over `Y`,
-> as `hzero` and `h05ZA`, and the isomorphism of Stacks 060E carries them across.  The short
-> complex of the conclusion is isomorphic to the short complex of Stacks 05ZA, by the identity on
-> the two outer terms and that isomorphism on the middle one, so
-> `CategoryTheory.ShortComplex.exact_iff_of_iso` transfers exactness.
->
-> The two granted clauses are precisely the two clauses that
-> `StacksFrontier/AlgebraicGeometry/Spaces/ConormalSequenceDifferentials.lean` leaves open for
-> Stacks 05ZA, stated at its first arrow and at its second arrow
-> `AlgebraicGeometry.Space.pullbackDifferentialsMap`, so proving them there discharges them here
-> verbatim.  Exactness at the right term is not among them: it is proved, by
-> `AlgebraicGeometry.Space.epi_thickeningConormalSecondMap`.
-
-```lean
-theorem thickeningConormalSequence_exact
-    (hZ : IsUniversalFirstOrderThickening B S hS Z h') (p : X ⟶ Y)
-    (he : IsIso (thickeningSheafOfDifferentialsMap B S hS hZ p))
-    (hzero : conormalSequenceFirstMap B S hS (thickeningClosedSubspace B S hS hZ) (h' ≫ p) ≫
-      pullbackDifferentialsMap B S hS (universalThickeningInclusion B S hS hZ) (h' ≫ p) = 0)
-    (h05ZA : (ShortComplex.mk _ _ hzero).Exact) :
-    ∃ hc : thickeningConormalFirstMap B S hS hZ p he ≫
-        thickeningConormalSecondMap B S hS hZ p = 0,
-      (ShortComplex.mk _ _ hc).Exact
-```
-
-**`AlgebraicGeometry.Space.IsUniversalFirstOrderThickening.exists_conormalSequence_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallyUnramifiedConormalSequence.lean, line 152](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallyUnramifiedConormalSequence.lean#L152).
-
-> Let `h = ι ≫ h' : Z ⟶ X` be formally unramified over `Y`, with universal first order
-> neighbourhood `Z ⊂ Z'` over `X` given by `hZ`.  The canonical sequence
+> **Stacks 060F.**  Let `h : Z ⟶ X` be a formally unramified morphism of algebraic spaces
+> over `Y` (the base `B` of the source), and let `Z ⊂ Z'` be the universal first order
+> neighbourhood of `Z` over `X` (it exists by Stacks 0606), with structure morphism `h' : Z' ⟶ X`.
+> There is a canonical exact sequence
 > ```
 >   𝒞_{Z/X} ⟶ h^*Ω_{X/Y} ⟶ Ω_{Z/Y} ⟶ 0
 > ```
-> is exact: the composite of its two arrows is zero, it is exact at `h^*Ω_{X/Y}`, and its second
-> arrow is an epimorphism.  Its first arrow is induced by `d_{Z'/Y}`: followed by the isomorphism
-> `h^*Ω_{X/Y} ≅ ι^*Ω_{Z'/Y}` of Stacks 060E it is the arrow
-> `AlgebraicGeometry.Space.conormalSequenceFirstMap` of the closed subspace `Z ⊂ Z'`, whose
-> transpose sends a local section of the ideal of `Z` to its differential
-> (`AlgebraicGeometry.Space.conormalSequenceIdealDifferential_val_app_apply`).
->
-> The sequence of Stacks 05ZA for `Z ⊂ Z'` is exact, and the isomorphism of Stacks 060E carries
-> it onto this one.
+> of `𝒪_Z`-modules, with `𝒞_{Z/X}` the conormal sheaf of Stacks 0607: the composite of the two
+> arrows is zero, the sequence is exact at `h^*Ω_{X/Y}`, and the second arrow is an epimorphism.
+> The first arrow is induced by `d_{Z'/Y}`: followed by the isomorphism `h^*Ω_{X/Y} ≅ Ω_{Z'/Y} ⊗ 𝒪_Z`
+> of Stacks 060E it is the inverse image along `Z ≅ Z₀` of the arrow
+> `AlgebraicGeometry.Space.conormalSequenceFirstMap` of the closed subspace `Z₀ ⊂ Z'`, whose
+> transpose sends a local section of the ideal of `Z₀` to its differential
+> (`AlgebraicGeometry.Space.conormalSequenceIdealDifferential_val_app_apply`).  The statement
+> for any given universal first order neighbourhood is
+> `AlgebraicGeometry.Space.UniversalFirstOrderThickening.exists_conormalSequence_exact`.
 
 ```lean
-theorem exists_conormalSequence_exact (hZ : IsUniversalFirstOrderThickening B S hS Z h')
-    (p : X ⟶ Y) :
-    ∃ hc : thickeningConormalFirstMap B S hS hZ p
-        (hZ.isIso_thickeningSheafOfDifferentialsMap B S hS p) ≫
-          thickeningConormalSecondMap B S hS hZ p = 0,
-      (ShortComplex.mk _ _ hc).Exact ∧ Epi (thickeningConormalSecondMap B S hS hZ p) ∧
-        thickeningConormalFirstMap B S hS hZ p
-            (hZ.isIso_thickeningSheafOfDifferentialsMap B S hS p) ≫
-          thickeningSheafOfDifferentialsMap B S hS hZ p =
-        conormalSequenceFirstMap B S hS (thickeningClosedSubspace B S hS hZ) (h' ≫ p)
+theorem exists_conormalSequence_exact_of_formallyUnramified {Z X Y : AlgebraicSpaces B S hS}
+    (h : Z ⟶ X) (hh : FormallyUnramified h.hom) (p : X ⟶ Y) :
+    ∃ t : UniversalFirstOrderThickening B S hS h,
+      ∃ hc : t.conormalSequenceFirstMap p ≫ t.conormalSequenceSecondMap p = 0,
+        (ShortComplex.mk _ _ hc).Exact ∧ Epi (t.conormalSequenceSecondMap p) ∧
+          t.conormalSequenceFirstMap p ≫ (t.pullbackDifferentialsIso p).hom ≫
+              (modulePullback B S hS t.sourceIsoSubSpace.hom).map
+                (thickeningSheafOfDifferentialsMap B S hS t.isUniversal p) =
+            (modulePullback B S hS t.sourceIsoSubSpace.hom).map
+              (conormalSequenceFirstMap B S hS
+                (thickeningClosedSubspace B S hS t.isUniversal) (t.toBase ≫ p))
 ```
 
 ## Tag 06BE, a lemma
 
 [Tag 06BE](https://stacks.math.columbia.edu/tag/06BE) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_conormalPairSequence_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalSequenceUnramifiedPairExact.lean, line 242](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ConormalSequenceUnramifiedPairExact.lean#L242).
+**`AlgebraicGeometry.Space.exists_conormalPairSequence_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalSequenceUnramifiedPairExact.lean, line 242](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ConormalSequenceUnramifiedPairExact.lean#L242).
 
 > **Stacks 06BE.**  Let `i : Z ⟶ X` and `j : Z ⟶ Y` be formally unramified morphisms of
 > algebraic spaces over `S` with `i ≫ g = j`, presented by universal first-order thickenings
@@ -1071,7 +956,7 @@ theorem exists_conormalPairSequence_exact (g : X ⟶ Y) {i : Z ⟶ X} {j : Z ⟶
 
 [Tag 06BF](https://stacks.math.columbia.edu/tag/06BF) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.universalThickeningCompConormalSequence_comp_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/ConormalSequenceCompositionExact.lean, line 223](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/ConormalSequenceCompositionExact.lean#L223). The attribute's comment: “clause (2): the composite of the two maps of the sequence vanishes”.
+**`AlgebraicGeometry.Space.universalThickeningCompConormalSequence_comp_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/ConormalSequenceCompositionExact.lean, line 224](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/ConormalSequenceCompositionExact.lean#L224). The attribute's comment: “clause (2): the composite of the two maps of the sequence vanishes”.
 
 > **The composite of the two arrows of the conormal sequence of the composition vanishes.**
 > By the composition law of part (3) of Stacks 04G2,
@@ -1094,7 +979,7 @@ public theorem universalThickeningCompConormalSequence_comp_eq_zero :
       universalThickeningCompConormalRightMap B S hS i hZ hY hfac = 0
 ```
 
-**`AlgebraicGeometry.Space.exact_universalThickeningCompConormalSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/ConormalSequenceCompositionExact.lean, line 320](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/ConormalSequenceCompositionExact.lean#L320). The attribute's comment: “clause (2): exactness at the middle term”.
+**`AlgebraicGeometry.Space.exact_universalThickeningCompConormalSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/ConormalSequenceCompositionExact.lean, line 321](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/LocalCompleteIntersection/ConormalSequenceCompositionExact.lean#L321). The attribute's comment: “clause (2): exactness at the middle term”.
 
 > **Exactness at `𝒞_{Z/X}` of the conormal sequence of the composition** — the middle clause of
 > Stacks 06BD in this presentation.  `AlgebraicGeometry.Space.exact_conormalShortComplex_preimage`
@@ -1113,7 +998,7 @@ public theorem exact_universalThickeningCompConormalSequence :
       (universalThickeningCompConormalSequence_comp_eq_zero B S hS i hZ hY hfac)).Exact
 ```
 
-**`AlgebraicGeometry.Space.universalThickeningCompMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningComposition.lean, line 198](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningComposition.lean#L198). The attribute's comment: “clause (1): the morphism Z' ⟶ Y'”.
+**`AlgebraicGeometry.Space.universalThickeningCompMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningComposition.lean, line 198](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningComposition.lean#L198). The attribute's comment: “clause (1): the morphism Z' ⟶ Y'”.
 
 > **Stacks 06BF, clause (1), the morphism `Z' ⟶ Y'`.**  Let `Z ⊂ Z'` be a universal
 > first-order thickening of `Z` over `X` and let `Y ⊂ Y'` be a universal first-order thickening of
@@ -1125,7 +1010,7 @@ public theorem exact_universalThickeningCompConormalSequence :
 noncomputable def universalThickeningCompMap : Z' ⟶ Y'
 ```
 
-**`AlgebraicGeometry.Space.isUniversalFirstOrderThickening_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningComposition.lean, line 272](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningComposition.lean#L272). The attribute's comment: “clause (1): Y ×\_\{Y'} Z' is the universal first-order thickening of Z over Y, the square-zero condition inside the fibre product being hypothesised”.
+**`AlgebraicGeometry.Space.isUniversalFirstOrderThickening_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningComposition.lean, line 272](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningComposition.lean#L272). The attribute's comment: “clause (1): Y ×\_\{Y'} Z' is the universal first-order thickening of Z over Y, the square-zero condition inside the fibre product being hypothesised”.
 
 > **Stacks 06BF, clause (1), the universal first-order thickening of `Z` over `Y`.**  With the
 > morphism `h : Z' ⟶ Y'` of `AlgebraicGeometry.Space.universalThickeningCompMap`, the fibre
@@ -1154,7 +1039,7 @@ theorem isUniversalFirstOrderThickening_comp
       (universalThickeningCompStructure B S hS i hZ hY hfac)
 ```
 
-**`AlgebraicGeometry.Space.epi_conormalMap_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningComposition.lean, line 306](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningComposition.lean#L306). The attribute's comment: “clause (2): exactness at the right term, the canonical map 𝒞\_\{Z/X} ⟶ 𝒞\_\{Z/Y} being surjective”.
+**`AlgebraicGeometry.Space.epi_conormalMap_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningComposition.lean, line 306](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningComposition.lean#L306). The attribute's comment: “clause (2): exactness at the right term, the canonical map 𝒞\_\{Z/X} ⟶ 𝒞\_\{Z/Y} being surjective”.
 
 > **Stacks 06BF, clause (2), at the right term.**  The canonical map
 > `𝒞_{Z/X} ⟶ 𝒞_{Z/Y}` of Stacks 04CP — the right-hand map of the conormal sequence of the
@@ -1187,7 +1072,7 @@ theorem epi_conormalMap_comp :
         ⟨Z, (IsNthOrderThickening.isThickening B S hS hZ.firstOrder).1⟩))
 ```
 
-**`AlgebraicGeometry.Space.isUniversalFirstOrderThickening_comp'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningCompositionComplex.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningCompositionComplex.lean#L155). The attribute's comment: “clause (1): Y ×\_\{Y'} Z' is the universal first-order thickening of Z over Y”.
+**`AlgebraicGeometry.Space.isUniversalFirstOrderThickening_comp'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningCompositionComplex.lean, line 155](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningCompositionComplex.lean#L155). The attribute's comment: “clause (1): Y ×\_\{Y'} Z' is the universal first-order thickening of Z over Y”.
 
 > **Stacks 06BF, clause (1), the universal first-order thickening of `Z` over `Y`.**  With the
 > morphism `h : Z' ⟶ Y'` of `AlgebraicGeometry.Space.universalThickeningCompMap`, the fibre
@@ -1215,7 +1100,7 @@ theorem isUniversalFirstOrderThickening_comp' :
       (universalThickeningCompStructure B S hS i hZ hY hfac)
 ```
 
-**`AlgebraicGeometry.Space.universalThickeningConormalMap_comp_conormalMap_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningCompositionComplex.lean, line 236](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningCompositionComplex.lean#L236). The attribute's comment: “clause (2): the sequence is a complex, the composite of i^*𝒞\_\{Y/X} ⟶ 𝒞\_\{Z/X} and 𝒞\_\{Z/X} ⟶ 𝒞\_\{Z/Y} being zero”.
+**`AlgebraicGeometry.Space.universalThickeningConormalMap_comp_conormalMap_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningCompositionComplex.lean, line 236](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningCompositionComplex.lean#L236). The attribute's comment: “clause (2): the sequence is a complex, the composite of i^*𝒞\_\{Y/X} ⟶ 𝒞\_\{Z/X} and 𝒞\_\{Z/X} ⟶ 𝒞\_\{Z/Y} being zero”.
 
 > **Stacks 06BF, clause (2): the sequence is a complex.**  The composite of the two maps
 > `i^*𝒞_{Y/X} ⟶ 𝒞_{Z/X} ⟶ 𝒞_{Z/Y}` of the conormal sequence of the composition is zero.
@@ -1274,7 +1159,7 @@ theorem universalThickeningConormalMap_comp_conormalMap_eq_zero :
           ⟨Z, (IsNthOrderThickening.isThickening B S hS hZ.firstOrder).1⟩) = 0
 ```
 
-**`AlgebraicGeometry.Space.exact_and_epi_universalThickeningCompConormalMapSquare`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningCompositionExact.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningCompositionExact.lean#L89). The attribute's comment: “clause (2): the conormal sequence i^*𝒞\_\{Y/X} ⟶ 𝒞\_\{Z/X} ⟶ 𝒞\_\{Z/Y} ⟶ 0 is exact”.
+**`AlgebraicGeometry.Space.exact_and_epi_universalThickeningCompConormalMapSquare`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningCompositionExact.lean, line 89](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UniversalThickeningCompositionExact.lean#L89). The attribute's comment: “clause (2): the conormal sequence i^*𝒞\_\{Y/X} ⟶ 𝒞\_\{Z/X} ⟶ 𝒞\_\{Z/Y} ⟶ 0 is exact”.
 
 > **Stacks 06BF, clause (2).**  Let `Z ⟶ Y ⟶ X` be morphisms of algebraic spaces, `Z ⊂ Z'`
 > and `Y ⊂ Y'` universal first-order thickenings over `X`, and `h : Z' ⟶ Y'` the morphism of
@@ -1316,4 +1201,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 76.15, Tag 0601](https://stacks.math.columbia.edu/tag/0601)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

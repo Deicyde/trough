@@ -8,13 +8,13 @@ proof: formalized
 
 # 109.14 Curves with isolated singularities
 
-Section 109.14 of the Stacks Project, [Tag 0E0K](https://stacks.math.columbia.edu/tag/0E0K). 1 tag here is carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 109.14 of the Stacks Project, [Tag 0E0K](https://stacks.math.columbia.edu/tag/0E0K). 1 tag here is carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0DZW, a lemma
 
 [Tag 0DZW](https://stacks.math.columbia.edu/tag/0DZW) in the Stacks Project.
 
-**`AlgebraicGeometry.CurvesWithFiniteNonSmoothLocus`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurveFamiliesIsolatedSingularities.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurveFamiliesIsolatedSingularities.lean#L79). The attribute's comment: “the substack of curves with isolated singularities”.
+**`AlgebraicGeometry.CurvesWithFiniteNonSmoothLocus`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurveFamiliesIsolatedSingularities.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurveFamiliesIsolatedSingularities.lean#L79). The attribute's comment: “the substack of curves with isolated singularities”.
 
 > **Stacks 0DZW.** The strictly full subcategory `Curves⁺ ⊂ Curves` of the families of
 > curves whose non-smooth locus, with its reduced closed subspace structure, is finite over
@@ -24,7 +24,7 @@ Section 109.14 of the Stacks Project, [Tag 0E0K](https://stacks.math.columbia.ed
 abbrev CurvesWithFiniteNonSmoothLocus
 ```
 
-**`AlgebraicGeometry.curvesWithFiniteNonSmoothLocusProjection`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurveFamiliesIsolatedSingularities.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurveFamiliesIsolatedSingularities.lean#L84). The attribute's comment: “the projection of the substack”.
+**`AlgebraicGeometry.curvesWithFiniteNonSmoothLocusProjection`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurveFamiliesIsolatedSingularities.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurveFamiliesIsolatedSingularities.lean#L84). The attribute's comment: “the projection of the substack”.
 
 > **Stacks 0DZW.** The projection taking a family of curves with isolated singularities to
 > its base scheme, which is how `Curves⁺` is regarded as a category over the big fppf site.
@@ -34,7 +34,7 @@ abbrev curvesWithFiniteNonSmoothLocusProjection :
     CurvesWithFiniteNonSmoothLocus B hZ ⥤ B.Schemes
 ```
 
-**`AlgebraicGeometry.CurvesPlus`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesFiniteSingularities.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesFiniteSingularities.lean#L81). The attribute's comment: “the\_substack\_curves”.
+**`AlgebraicGeometry.CurvesPlus`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesFiniteSingularities.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesFiniteSingularities.lean#L81). The attribute's comment: “the\_substack\_curves”.
 
 > **Stacks 0DZW.** The substack `Curves⁺`: the strictly full subcategory of families of
 > curves whose reduced non-smooth locus is finite over the base.
@@ -43,7 +43,7 @@ abbrev curvesWithFiniteNonSmoothLocusProjection :
 abbrev CurvesPlus
 ```
 
-**`AlgebraicGeometry.CurveFamily.isFiniteNonSmoothLocus_iff_forall_isClosedSubspace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesPlusOpenLocus.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesPlusOpenLocus.lean#L225). The attribute's comment: “part (1), condition (b) with 'any': every closed subspace structure on the singular locus is finite over the base”.
+**`AlgebraicGeometry.CurveFamily.isFiniteNonSmoothLocus_iff_forall_isClosedSubspace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesPlusOpenLocus.lean, line 225](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesPlusOpenLocus.lean#L225). The attribute's comment: “part (1), condition (b) with 'any': every closed subspace structure on the singular locus is finite over the base”.
 
 > **Stacks 0DZW, part (1), condition (b) with "any".** A family of curves `X → S` lies in
 > `Curves⁺` exactly when *every* closed subspace `Z ⊂ X` whose set of points is the singular locus
@@ -58,7 +58,7 @@ theorem CurveFamily.isFiniteNonSmoothLocus_iff_forall_isClosedSubspace (X : Curv
         Space.IsFinite B integerBase hZ (Z.ι ≫ X.toBase.hom)
 ```
 
-**`AlgebraicGeometry.CurveFamily.isFiniteNonSmoothLocus_iff_exists_isClosedSubspace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesPlusOpenLocus.lean, line 242](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesPlusOpenLocus.lean#L242). The attribute's comment: “part (1), condition (b) with 'some': some closed subspace structure on the singular locus is finite over the base”.
+**`AlgebraicGeometry.CurveFamily.isFiniteNonSmoothLocus_iff_exists_isClosedSubspace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesPlusOpenLocus.lean, line 242](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesPlusOpenLocus.lean#L242). The attribute's comment: “part (1), condition (b) with 'some': some closed subspace structure on the singular locus is finite over the base”.
 
 > **Stacks 0DZW, part (1), condition (b) with "some".** A family of curves `X → S` lies in
 > `Curves⁺` exactly when *some* closed subspace `Z ⊂ X` whose set of points is the singular locus of
@@ -73,7 +73,7 @@ theorem CurveFamily.isFiniteNonSmoothLocus_iff_exists_isClosedSubspace (X : Curv
         Space.IsFinite B integerBase hZ (Z.ι ≫ X.toBase.hom)
 ```
 
-**`AlgebraicGeometry.curvesPlus_isOpenSubstack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesPlusOpenSubstack.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesPlusOpenSubstack.lean#L102). The attribute's comment: “Curves⁺ is an open substack of Curves: a strictly full subcategory whose inclusion is representable by algebraic spaces and an open immersion”.
+**`AlgebraicGeometry.curvesPlus_isOpenSubstack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesPlusOpenSubstack.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesPlusOpenSubstack.lean#L102). The attribute's comment: “Curves⁺ is an open substack of Curves: a strictly full subcategory whose inclusion is representable by algebraic spaces and an open immersion”.
 
 > **Stacks 0DZW, the open substack.** `Curves⁺` is an open substack of the stack of curves: it
 > is a strictly full subcategory, and its inclusion into `Curves` is representable by algebraic
@@ -87,7 +87,7 @@ theorem curvesPlus_isOpenSubstack :
       Stack.IsOpenImmersion B integerBase hZ (curvesPlusInclusion B hZ)
 ```
 
-**`AlgebraicGeometry.curvesPlus_classifying_factors_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesPlusOpenSubstack.lean, line 173](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesPlusOpenSubstack.lean#L173). The attribute's comment: “part (1): for every family of curves X → S, the classifying morphism factors through Curves⁺ iff the singular locus with some, equivalently any, closed subspace structure is finite over S”.
+**`AlgebraicGeometry.curvesPlus_classifying_factors_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesPlusOpenSubstack.lean, line 173](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesPlusOpenSubstack.lean#L173). The attribute's comment: “part (1): for every family of curves X → S, the classifying morphism factors through Curves⁺ iff the singular locus with some, equivalently any, closed subspace structure is finite over S”.
 
 > **Stacks 0DZW, part (1).** For a family of curves `X → S` and its classifying morphism
 > `S → Curves`, the classifying morphism factors through `Curves⁺` exactly when *some* closed
@@ -114,7 +114,7 @@ theorem curvesPlus_classifying_factors_iff (X : CurveFamily B hZ)
         Space.IsFinite B integerBase hZ (Z.ι ≫ X.toBase.hom))
 ```
 
-**`AlgebraicGeometry.curvesPlus_classifying_factors_iff_of_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesPlusOpenSubstack.lean, line 284](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesPlusOpenSubstack.lean#L284). The attribute's comment: “part (2): for a proper scheme X of dimension at most one over a field k, the classifying morphism Spec(k) → Curves factors through Curves⁺ iff X → Spec(k) is smooth except at finitely many points”.
+**`AlgebraicGeometry.curvesPlus_classifying_factors_iff_of_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesPlusOpenSubstack.lean, line 284](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesPlusOpenSubstack.lean#L284). The attribute's comment: “part (2): for a proper scheme X of dimension at most one over a field k, the classifying morphism Spec(k) → Curves factors through Curves⁺ iff X → Spec(k) is smooth except at finitely many points”.
 
 > **Stacks 0DZW, part (2).** Let `X` be a proper scheme of dimension at most one over a field
 > `k`. The classifying morphism `Spec(k) → Curves` of the attached family of curves factors through
@@ -131,7 +131,7 @@ theorem curvesPlus_classifying_factors_iff_of_field
         ¬ InfinitesimalLifting.SmoothAt ((BigFppfOver.toScheme B integerBase hZ).map g) x}.Finite
 ```
 
-**`AlgebraicGeometry.exists_curvesPlus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesPlusOpenSubstack.lean, line 311](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesPlusOpenSubstack.lean#L311). The attribute's comment: “the open substack Curves⁺ ⊂ Curves together with parts (1) and (2)”.
+**`AlgebraicGeometry.exists_curvesPlus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesPlusOpenSubstack.lean, line 311](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesPlusOpenSubstack.lean#L311). The attribute's comment: “the open substack Curves⁺ ⊂ Curves together with parts (1) and (2)”.
 
 > **Stacks 0DZW.** There is an open substack `Curves⁺` of the stack of curves — a strictly full
 > subcategory whose inclusion is representable by algebraic spaces and an open immersion — such that
@@ -181,7 +181,7 @@ theorem exists_curvesPlus :
                 ((BigFppfOver.toScheme B integerBase hZ).map g) x}.Finite))
 ```
 
-**`AlgebraicGeometry.curvesPlus_isStrictlyFull`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesPlusStrictlyFull.lean, line 233](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesPlusStrictlyFull.lean#L233). The attribute's comment: “open\_substack”.
+**`AlgebraicGeometry.curvesPlus_isStrictlyFull`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesPlusStrictlyFull.lean, line 233](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesPlusStrictlyFull.lean#L233). The attribute's comment: “open\_substack”.
 
 > **Stacks 0DZW.** Membership in the subcategory `Curves⁺` of families of curves whose
 > reduced non-smooth locus is finite over the base is invariant under isomorphism, so `Curves⁺`
@@ -200,4 +200,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 109.14, Tag 0E0K](https://stacks.math.columbia.edu/tag/0E0K)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

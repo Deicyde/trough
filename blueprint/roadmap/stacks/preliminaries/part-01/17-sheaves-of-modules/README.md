@@ -1,6 +1,6 @@
 # 17 Sheaves of Modules
 
-Chapter 17 of the Stacks Project, *Sheaves of Modules*, [Tag 01AC](https://stacks.math.columbia.edu/tag/01AC): the 29 sections of its 31 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 166 tags are carried by 459 declarations of the repository (all in StacksFrontier) and 63 registered declarations.
+Chapter 17 of the Stacks Project, *Sheaves of Modules*, [Tag 01AC](https://stacks.math.columbia.edu/tag/01AC): the 29 sections of its 31 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 166 tags are carried by 461 declarations of the repository (all in StacksFrontier) and 58 registered declarations.
 
 ## [17.3 The abelian category of… to 17.20 Flat morphisms of ringed…](part-01/README.md)
 

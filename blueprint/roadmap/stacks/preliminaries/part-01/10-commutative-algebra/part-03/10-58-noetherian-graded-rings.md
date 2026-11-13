@@ -8,13 +8,13 @@ proof: formalized
 
 # 10.58 Noetherian graded rings
 
-Section 10.58 of the Stacks Project, [Tag 00JV](https://stacks.math.columbia.edu/tag/00JV). 8 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 10.58 of the Stacks Project, [Tag 00JV](https://stacks.math.columbia.edu/tag/00JV). 8 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 07Z4, a lemma
 
 [Tag 07Z4](https://stacks.math.columbia.edu/tag/07Z4) in the Stacks Project.
 
-**`generates_algebra_iff_generates_irrelevant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GradedAlgebra/FinitelyGenerated.lean, line 459](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GradedAlgebra/FinitelyGenerated.lean#L459). References: EGA II (2.1.3); EGA II (2.1.4), “partial”.
+**`generates_algebra_iff_generates_irrelevant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GradedAlgebra/FinitelyGenerated.lean, line 459](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/GradedAlgebra/FinitelyGenerated.lean#L459). References: EGA II (2.1.3); EGA II (2.1.4), “partial”.
 
 > Stacks Tag 07Z4: for a family `(f i)` of homogeneous elements of strictly
 > positive degree in a graded ring `A` with grading `𝒜` (the `GradedRing 𝒜`
@@ -35,7 +35,7 @@ theorem generates_algebra_iff_generates_irrelevant
 
 [Tag 00JW](https://stacks.math.columbia.edu/tag/00JW) in the Stacks Project.
 
-**`GradedRing.isNoetherianRing_iff_isNoetherianRing_gradeZero_and_irrelevant_fg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GradedAlgebra/Noetherian.lean, line 284](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GradedAlgebra/Noetherian.lean#L284). References: EGA II (2.1.5), “necessity”.
+**`GradedRing.isNoetherianRing_iff_isNoetherianRing_gradeZero_and_irrelevant_fg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GradedAlgebra/Noetherian.lean, line 284](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/GradedAlgebra/Noetherian.lean#L284). References: EGA II (2.1.5), “necessity”.
 
 > A graded ring `A = ⨁_d 𝒜 d` is Noetherian if and only if its degree-zero subring `𝒜 0`
 > is a Noetherian ring and its irrelevant ideal `⨁_{d > 0} 𝒜 d` is finitely generated as an
@@ -52,7 +52,7 @@ public theorem isNoetherianRing_iff_isNoetherianRing_gradeZero_and_irrelevant_fg
 
 [Tag 00JX](https://stacks.math.columbia.edu/tag/00JX) in the Stacks Project.
 
-**`IsNumericalPolynomial`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NumericalPolynomial.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/NumericalPolynomial.lean#L68).
+**`IsNumericalPolynomial`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NumericalPolynomial.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/NumericalPolynomial.lean#L68).
 
 > A function `f : ℤ → A` (with `A` an additive abelian group) is a
 > *numerical polynomial* if there exist `r : ℕ` and elements
@@ -68,7 +68,7 @@ def IsNumericalPolynomial (f : ℤ → A) : Prop
 
 [Tag 00JY](https://stacks.math.columbia.edu/tag/00JY) in the Stacks Project.
 
-**`numerical_polynomial_functorial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NumericalPolynomial.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/NumericalPolynomial.lean#L113).
+**`numerical_polynomial_functorial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NumericalPolynomial.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/NumericalPolynomial.lean#L113).
 
 > Numerical polynomials are functorial: if `φ : A →+ A'` is a homomorphism of abelian groups
 > and `f : ℤ → A` is a numerical polynomial, then `n ↦ φ (f n)` is a numerical polynomial valued in
@@ -85,7 +85,7 @@ theorem numerical_polynomial_functorial
 
 [Tag 00JZ](https://stacks.math.columbia.edu/tag/00JZ) in the Stacks Project.
 
-**`main_00JZ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NumericalPolynomial.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/NumericalPolynomial.lean#L221).
+**`main_00JZ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/NumericalPolynomial.lean, line 221](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/NumericalPolynomial.lean#L221).
 
 > Let `A` be an abelian group and `f : ℤ → A`. If the backward difference
 > `n ↦ f n - f (n - 1)` is a numerical polynomial, then so is `f`.
@@ -100,7 +100,7 @@ theorem main_00JZ {A : Type*} [AddCommGroup A] (f : ℤ → A)
 
 [Tag 00K0](https://stacks.math.columbia.edu/tag/00K0) in the Stacks Project.
 
-**`graded_module_pieces_finite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GradedAlgebra/FinitelyGenerated.lean, line 266](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GradedAlgebra/FinitelyGenerated.lean#L266). References: EGA II (2.1.6), “(i)”.
+**`graded_module_pieces_finite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GradedAlgebra/FinitelyGenerated.lean, line 266](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/GradedAlgebra/FinitelyGenerated.lean#L266). References: EGA II (2.1.6), “(i)”.
 
 > **Stacks 00K0**.
 > Let `S = ⨁_{n ≥ 0} 𝒜 n` be a graded ring and `M = ⨁_{n ∈ ℤ} ℳ n` a graded `S`-module, with
@@ -118,7 +118,7 @@ theorem graded_module_pieces_finite (ℳ : ℤ → Submodule (𝒜 0) M) [Direct
 
 [Tag 00K1](https://stacks.math.columbia.edu/tag/00K1) in the Stacks Project.
 
-**`hilbertFun_isNumericalPolynomial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/HilbertFunction/Polynomiality.lean, line 741](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/HilbertFunction/Polynomiality.lean#L741).
+**`hilbertFun_isNumericalPolynomial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/HilbertFunction/Polynomiality.lean, line 741](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/HilbertFunction/Polynomiality.lean#L741).
 
 > **Main statement (Stacks Tag 00K1, Proposition 10.58.7).**
 > Let `S` be a Noetherian graded ring with degree-zero ring `S_0 = ↥(𝒮 0)`, graded
@@ -136,7 +136,7 @@ theorem hilbertFun_isNumericalPolynomial (hneg : ∀ d : ℤ, d < 0 → 𝒮 d =
 
 [Tag 00K3](https://stacks.math.columbia.edu/tag/00K3) in the Stacks Project.
 
-**`Stacks.HilbertFunction.PolynomialQuotient.hilbertFunction_degree_lt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/HilbertFunction/DegreeBound.lean, line 605](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/HilbertFunction/DegreeBound.lean#L605).
+**`Stacks.HilbertFunction.PolynomialQuotient.hilbertFunction_degree_lt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/HilbertFunction/DegreeBound.lean, line 605](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/HilbertFunction/DegreeBound.lean#L605).
 
 > **Main Theorem (Stacks Lemma 10.58.10, Tag 00K3).**
 > Let `k` be a field, `d ≥ 1`, and `S = k[X_1, …, X_d]` with the standard grading.
@@ -166,4 +166,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.58, Tag 00JV](https://stacks.math.columbia.edu/tag/00JV)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

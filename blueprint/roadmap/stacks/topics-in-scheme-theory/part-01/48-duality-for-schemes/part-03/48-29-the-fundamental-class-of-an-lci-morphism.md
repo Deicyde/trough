@@ -8,13 +8,13 @@ proof: formalized
 
 # 48.29 The fundamental class of an lci morphism
 
-Section 48.29 of the Stacks Project, [Tag 0E9X](https://stacks.math.columbia.edu/tag/0E9X). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 48.29 of the Stacks Project, [Tag 0E9X](https://stacks.math.columbia.edu/tag/0E9X). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0E9Y, a lemma
 
 [Tag 0E9Y](https://stacks.math.columbia.edu/tag/0E9Y) in the Stacks Project.
 
-**`Stacks.Duality.isIso_stalkMap_locallyRingedSpaceDeterminantMap_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/FundamentalClassDeterminantSource.lean, line 617](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/FundamentalClassDeterminantSource.lean#L617).
+**`Stacks.Duality.isIso_stalkMap_locallyRingedSpaceDeterminantMap_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/FundamentalClassDeterminantSource.lean, line 617](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/FundamentalClassDeterminantSource.lean#L617).
 
 > **[Stacks, Tag 0E9Y].** Let `X` be a locally ringed space and `E₁ --α--> E₀ --π--> F ⟶ 0` an
 > exact sequence of `O_X`-modules with `E₁` and `E₀` finite locally free of ranks `r₁` and `r₀`.
@@ -40,7 +40,7 @@ theorem isIso_stalkMap_locallyRingedSpaceDeterminantMap_iff [Epi π]
 
 [Tag 0E9Z](https://stacks.math.columbia.edu/tag/0E9Z) in the Stacks Project.
 
-**`Stacks.Duality.ClosedOpenProperFactorization.exists_fundamentalClass_of_isLocalCompleteIntersection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekLocalCompleteIntersection/Decomposition.lean, line 258](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekLocalCompleteIntersection/Decomposition.lean#L258).
+**`Stacks.Duality.ClosedOpenProperFactorization.exists_fundamentalClass_of_isLocalCompleteIntersection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekLocalCompleteIntersection/Decomposition.lean, line 258](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekLocalCompleteIntersection/Decomposition.lean#L258).
 
 > Let `S` be Noetherian and `f : X ⟶ Y` a local complete intersection morphism of `FTS S`
 > which factors as an immersion `ι : X ⟶ P` followed by a proper smooth morphism `g : P ⟶ Y`; let
@@ -75,7 +75,7 @@ theorem exists_fundamentalClass_of_isLocalCompleteIntersection
 
 [Tag 0EA0](https://stacks.math.columbia.edu/tag/0EA0) in the Stacks Project.
 
-**`Stacks.Duality.SmoothLocus.exists_map_exteriorPower_isIso_of_smoothAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekLocalCompleteIntersection/SmoothLocus.lean, line 409](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekLocalCompleteIntersection/SmoothLocus.lean#L409).
+**`Stacks.Duality.SmoothLocus.exists_map_exteriorPower_isIso_of_smoothAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekLocalCompleteIntersection/SmoothLocus.lean, line 409](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekLocalCompleteIntersection/SmoothLocus.lean#L409).
 
 > **Stacks Project, Tag 0EA0.** Let `S` be Noetherian, `f : X ⟶ Y` a morphism of `FTS S` and
 > `r ≥ 0`. Assume
@@ -121,4 +121,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 48.29, Tag 0E9X](https://stacks.math.columbia.edu/tag/0E9X)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

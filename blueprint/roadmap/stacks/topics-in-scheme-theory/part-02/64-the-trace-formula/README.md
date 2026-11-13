@@ -1,6 +1,6 @@
 # 64 The Trace Formula
 
-Chapter 64 of the Stacks Project, *The Trace Formula*, [Tag 0F5P](https://stacks.math.columbia.edu/tag/0F5P): the 22 sections of its 35 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 76 tags are carried by 213 declarations of the repository (all in StacksFrontier) and 27 registered declarations.
+Chapter 64 of the Stacks Project, *The Trace Formula*, [Tag 0F5P](https://stacks.math.columbia.edu/tag/0F5P): the 22 sections of its 35 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 76 tags are carried by 222 declarations of the repository (all in StacksFrontier) and 28 registered declarations.
 
 ## [64.3 Frobenii to 64.29 Cohomology of curves…](part-01/README.md)
 

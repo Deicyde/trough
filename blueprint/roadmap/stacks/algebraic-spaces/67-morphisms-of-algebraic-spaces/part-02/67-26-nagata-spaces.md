@@ -8,13 +8,13 @@ proof: formalized
 
 # 67.26 Nagata spaces
 
-Section 67.26 of the Stacks Project, [Tag 0BAT](https://stacks.math.columbia.edu/tag/0BAT). 2 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 67.26 of the Stacks Project, [Tag 0BAT](https://stacks.math.columbia.edu/tag/0BAT). 2 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0BAU, a lemma
 
 [Tag 0BAU](https://stacks.math.columbia.edu/tag/0BAU) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isNagata_of_isLocallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ConstructibleSets.lean, line 306](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ConstructibleSets.lean#L306).
+**`AlgebraicGeometry.Space.isNagata_of_isLocallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ConstructibleSets.lean, line 306](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ConstructibleSets.lean#L306).
 
 > **Stacks 0BAU.** A morphism of algebraic spaces over `S` which is locally of finite type
 > and whose target is Nagata has Nagata source.
@@ -37,7 +37,7 @@ theorem isNagata_of_isLocallyOfFiniteType
 
 [Tag 0BAV](https://stacks.math.columbia.edu/tag/0BAV) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isNagata_of_isLocallyOfFiniteType_over_nagataScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ConstructibleSets.lean, line 333](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ConstructibleSets.lean#L333). The attribute's comment: “part (1): over a Nagata scheme”.
+**`AlgebraicGeometry.Space.isNagata_of_isLocallyOfFiniteType_over_nagataScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ConstructibleSets.lean, line 333](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ConstructibleSets.lean#L333). The attribute's comment: “part (1): over a Nagata scheme”.
 
 > **Stacks 0BAV, part (1).** An algebraic space over `S` locally of finite type over a
 > Nagata scheme is Nagata.
@@ -49,7 +49,7 @@ theorem isNagata_of_isLocallyOfFiniteType_over_nagataScheme (hX : IsAlgebraicSpa
     HasEtaleLocalProperty B S hS X (fun Z : Scheme.{u} => IsNagataScheme Z)
 ```
 
-**`AlgebraicGeometry.Space.isNagata_of_isLocallyOfFiniteType_over_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ConstructibleSets.lean, line 345](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ConstructibleSets.lean#L345). The attribute's comment: “part (2): over a field”.
+**`AlgebraicGeometry.Space.isNagata_of_isLocallyOfFiniteType_over_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ConstructibleSets.lean, line 345](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ConstructibleSets.lean#L345). The attribute's comment: “part (2): over a field”.
 
 > **Stacks 0BAV, part (2).** An algebraic space over `S` locally of finite type over a field
 > is Nagata.
@@ -62,7 +62,7 @@ theorem isNagata_of_isLocallyOfFiniteType_over_field (hX : IsAlgebraicSpace B S 
     HasEtaleLocalProperty B S hS X (fun Z : Scheme.{u} => IsNagataScheme Z)
 ```
 
-**`AlgebraicGeometry.Space.isNagata_of_isLocallyOfFiniteType_over_completeLocalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ConstructibleSets.lean, line 358](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ConstructibleSets.lean#L358). The attribute's comment: “part (3): over a Noetherian complete local ring”.
+**`AlgebraicGeometry.Space.isNagata_of_isLocallyOfFiniteType_over_completeLocalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ConstructibleSets.lean, line 358](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ConstructibleSets.lean#L358). The attribute's comment: “part (3): over a Noetherian complete local ring”.
 
 > **Stacks 0BAV, part (3).** An algebraic space over `S` locally of finite type over a
 > Noetherian complete local ring is Nagata. Completeness is
@@ -77,7 +77,7 @@ theorem isNagata_of_isLocallyOfFiniteType_over_completeLocalRing (hX : IsAlgebra
     HasEtaleLocalProperty B S hS X (fun Z : Scheme.{u} => IsNagataScheme Z)
 ```
 
-**`AlgebraicGeometry.Space.isNagata_of_isLocallyOfFiniteType_over_int`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ConstructibleSets.lean, line 372](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ConstructibleSets.lean#L372). The attribute's comment: “part (4): over the integers”.
+**`AlgebraicGeometry.Space.isNagata_of_isLocallyOfFiniteType_over_int`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ConstructibleSets.lean, line 372](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ConstructibleSets.lean#L372). The attribute's comment: “part (4): over the integers”.
 
 > **Stacks 0BAV, part (4).** An algebraic space over `S` locally of finite type over the
 > integers is Nagata. "Over the integers" is read as "over the terminal scheme of the ambient
@@ -90,7 +90,7 @@ theorem isNagata_of_isLocallyOfFiniteType_over_int (hX : IsAlgebraicSpace B S hS
     HasEtaleLocalProperty B S hS X (fun Z : Scheme.{u} => IsNagataScheme Z)
 ```
 
-**`AlgebraicGeometry.Space.isNagata_of_isLocallyOfFiniteType_over_dedekindDomain`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ConstructibleSets.lean, line 385](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ConstructibleSets.lean#L385). The attribute's comment: “part (5): over a Dedekind domain of characteristic zero”.
+**`AlgebraicGeometry.Space.isNagata_of_isLocallyOfFiniteType_over_dedekindDomain`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ConstructibleSets.lean, line 385](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ConstructibleSets.lean#L385). The attribute's comment: “part (5): over a Dedekind domain of characteristic zero”.
 
 > **Stacks 0BAV, part (5).** An algebraic space over `S` locally of finite type over a
 > Dedekind domain of characteristic zero is Nagata.
@@ -110,4 +110,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 67.26, Tag 0BAT](https://stacks.math.columbia.edu/tag/0BAT)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

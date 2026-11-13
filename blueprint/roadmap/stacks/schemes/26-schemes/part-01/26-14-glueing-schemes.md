@@ -1,77 +1,40 @@
 ---
 declaration: section
 origin: cited
-lean: AlgebraicGeometry.isPushout_opens_ι_of_sup_eq_top, AlgebraicGeometry.existsUnique_comp_ι_eq_of_sup_eq_top, AlgebraicGeometry.opensRange_pushout_inl_sup_opensRange_pushout_inr, AlgebraicGeometry.preimage_opensRange_pushout_inl, AlgebraicGeometry.isPullback_pushout_inl_inr, AlgebraicGeometry.LocallyRingedSpace.GlueData.range_overlap, AlgebraicGeometry.LocallyRingedSpace.GlueData.t_f_eq_restrictOverlapIso_comp, AlgebraicGeometry.LocallyRingedSpace.GlueData.homOutEquiv
+lean: AlgebraicGeometry.LocallyRingedSpace.OpensGlueData, AlgebraicGeometry.LocallyRingedSpace.GlueData.range_overlap, AlgebraicGeometry.LocallyRingedSpace.GlueData.t_f_eq_restrictOverlapIso_comp, AlgebraicGeometry.LocallyRingedSpace.GlueData.homOutEquiv, AlgebraicGeometry.LocallyRingedSpace.GlueData.hom_pullbackCharts_jointlySurjective, AlgebraicGeometry.LocallyRingedSpace.GlueData.hom_pullbackCharts_preimage_overlap, AlgebraicGeometry.LocallyRingedSpace.GlueData.hom_pullbackCharts_transition, AlgebraicGeometry.LocallyRingedSpace.GlueData.existsUnique_hom_of_openCover
 statement: formalized
 proof: formalized
 ---
 
 # 26.14 Glueing schemes
 
-Section 26.14 of the Stacks Project, [Tag 01JA](https://stacks.math.columbia.edu/tag/01JA). 5 tags here are carried by 50 declarations of the repository (all in StacksFrontier) and 10 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 26.14 of the Stacks Project, [Tag 01JA](https://stacks.math.columbia.edu/tag/01JA). 5 tags here are carried by 46 declarations of the repository (all in StacksFrontier) and 10 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 01JA, the section
 
 [Tag 01JA](https://stacks.math.columbia.edu/tag/01JA) in the Stacks Project.
 
-**`AlgebraicGeometry.isPushout_opens_ι_of_sup_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/OpenImmersionPushout.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/OpenImmersionPushout.lean#L88). The attribute's comment: “the two-chart glueing as a pushout square of schemes”.
+**`AlgebraicGeometry.LocallyRingedSpace.OpensGlueData`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Geometry/RingedSpace/OpensGlueData.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Geometry/RingedSpace/OpensGlueData.lean#L72). The attribute's comment: “glueing data of locally ringed spaces, conditions (1) and (2); `φ_self` is φᵢᵢ = id”.
 
-> A scheme covered by two opens is glued from them: the square formed by the two inclusions of
-> the intersection and the two inclusions into the ambient scheme is a pushout square.
-
-```lean
-theorem isPushout_opens_ι_of_sup_eq_top {S : Scheme.{u}} {U V : S.Opens} (h : U ⊔ V = ⊤) :
-    IsPushout (S.homOfLE inf_le_left) (S.homOfLE inf_le_right) U.ι V.ι
-```
-
-**`AlgebraicGeometry.existsUnique_comp_ι_eq_of_sup_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/OpenImmersionPushout.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/OpenImmersionPushout.lean#L119). The attribute's comment: “the two-chart case of the mapping property for morphisms out of a glueing”.
-
-> The mapping property for morphisms out of a glueing with two charts: if the opens `U, V` of a
-> scheme `S` satisfy `U ⊔ V = ⊤`, then a morphism out of `S` is the same thing as a pair of
-> morphisms out of `U` and out of `V` agreeing on `U ⊓ V`.
+> **Stacks 01JA.** A glueing data of locally ringed spaces: an index type `ι`, locally ringed
+> spaces `X i`, open subspaces `U i j ⊆ X i` with `U i i = X i`, and isomorphisms of locally ringed
+> spaces `φ i j : U i j ≅ U j i` such that for all `i, j, k`
+>
+> * (1) `φ i j ⁻¹ (U j i ∩ U j k) = U i j ∩ U i k` (field `preimage_iff`, pointwise: a point of
+>   `U i j` is sent by `φ i j` into `U j k` if and only if it lies in `U i k`), and
+> * (2) the restrictions of `φ i j`, `φ j k` and `φ i k` to `U i j ∩ U i k`, `U j i ∩ U j k` and
+>   `U i j ∩ U i k` satisfy `φ j k ∘ φ i j = φ i k` (field `cocycle`, see the implementation notes
+>   of this file).
 
 ```lean
-theorem existsUnique_comp_ι_eq_of_sup_eq_top {S T : Scheme.{u}} {U V : S.Opens}
-    (h : U ⊔ V = ⊤) {a : U.toScheme ⟶ T} {b : V.toScheme ⟶ T}
-    (w : S.homOfLE inf_le_left ≫ a = S.homOfLE inf_le_right ≫ b) :
-    ∃! m : S ⟶ T, U.ι ≫ m = a ∧ V.ι ≫ m = b
-```
-
-**`AlgebraicGeometry.opensRange_pushout_inl_sup_opensRange_pushout_inr`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/OpenImmersionPushout.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/OpenImmersionPushout.lean#L136). The attribute's comment: “the two-chart case of part (1): the charts cover the glued scheme”.
-
-> The two charts of the scheme obtained by glueing `X` and `Y` along a span of open immersions
-> cover it.
-
-```lean
-theorem opensRange_pushout_inl_sup_opensRange_pushout_inr :
-    (pushout.inl f g).opensRange ⊔ (pushout.inr f g).opensRange = ⊤
-```
-
-**`AlgebraicGeometry.preimage_opensRange_pushout_inl`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/OpenImmersionPushout.lean, line 152](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/OpenImmersionPushout.lean#L152). The attribute's comment: “the two-chart case of part (2): the overlap of the two charts”.
-
-> Inside the second chart of the scheme obtained by glueing `X` and `Y` along a span of open
-> immersions, the overlap with the first chart is exactly the image of the span's vertex.
-
-```lean
-theorem preimage_opensRange_pushout_inl :
-    (pushout.inr f g) ⁻¹ᵁ (pushout.inl f g).opensRange = g.opensRange
-```
-
-**`AlgebraicGeometry.isPullback_pushout_inl_inr`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/OpenImmersionPushout.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/OpenImmersionPushout.lean#L169). The attribute's comment: “the two-chart case of part (2), as a cartesian square”.
-
-> The pushout square of a span of open immersions of schemes is also cartesian: the span's
-> vertex is the intersection of the two charts of the glued scheme.
-
-```lean
-theorem isPullback_pushout_inl_inr :
-    IsPullback f g (pushout.inl f g) (pushout.inr f g)
+structure OpensGlueData
 ```
 
 ## Tag 01JB, a lemma
 
 [Tag 01JB](https://stacks.math.columbia.edu/tag/01JB) in the Stacks Project.
 
-**`AlgebraicGeometry.LocallyRingedSpace.GlueData.range_overlap`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/LocallyRingedSpaces.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/LocallyRingedSpaces.lean#L94). The attribute's comment: “part (2): the overlap is the intersection of two charts”.
+**`AlgebraicGeometry.LocallyRingedSpace.GlueData.range_overlap`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/LocallyRingedSpaces.lean, line 94](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/LocallyRingedSpaces.lean#L94). The attribute's comment: “part (2): the overlap is the intersection of two charts”.
 
 > The prescribed overlap `V i j`, viewed inside the chart `U i` through `D.f i j`, is exactly
 > the part of that chart lying over the chart `U j`: `φ i '' U i j = U i ∩ U j` in the glued
@@ -82,7 +45,7 @@ lemma range_overlap (D : LocallyRingedSpace.GlueData.{u}) (i j : D.J) :
     Set.range (D.f i j).base = (D.ι i).base ⁻¹' Set.range (D.ι j).base
 ```
 
-**`AlgebraicGeometry.LocallyRingedSpace.GlueData.t_f_eq_restrictOverlapIso_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/LocallyRingedSpaces.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/LocallyRingedSpaces.lean#L133). The attribute's comment: “part (3): the transition map is the restriction of φ j⁻¹ ∘ φ i”.
+**`AlgebraicGeometry.LocallyRingedSpace.GlueData.t_f_eq_restrictOverlapIso_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/LocallyRingedSpaces.lean, line 133](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/LocallyRingedSpaces.lean#L133). The attribute's comment: “part (3): the transition map is the restriction of φ j⁻¹ ∘ φ i”.
 
 > The transition map is `φ j⁻¹ ∘ φ i` on the overlap: for any morphism `s : U i ∩ U j ⟶ U j`
 > with `s ≫ φ j` the inclusion of `U i ∩ U j` (the restriction of `φ j⁻¹` to `U i ∩ U j`), the
@@ -95,7 +58,7 @@ theorem t_f_eq_restrictOverlapIso_comp (D : LocallyRingedSpace.GlueData.{u}) (i 
     D.t i j ≫ D.f j i = (D.restrictOverlapIso i j).hom ≫ s
 ```
 
-**`AlgebraicGeometry.LocallyRingedSpace.GlueData.homOutEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/LocallyRingedSpaces.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/LocallyRingedSpaces.lean#L146). The attribute's comment: “the mapping property for morphisms out of the glueing”.
+**`AlgebraicGeometry.LocallyRingedSpace.GlueData.homOutEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/LocallyRingedSpaces.lean, line 146](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/LocallyRingedSpaces.lean#L146). The attribute's comment: “the mapping property for morphisms out of the glueing”.
 
 > The mapping property for morphisms *out of* a gluing: a morphism `D.glued ⟶ Y` is the same
 > thing as a family of morphisms `D.U i ⟶ Y` agreeing on the prescribed overlaps, the agreement
@@ -110,7 +73,7 @@ noncomputable def homOutEquiv
           ∀ i j, D.f i j ≫ f i = D.t i j ≫ D.f j i ≫ f j }
 ```
 
-**`AlgebraicGeometry.LocallyRingedSpace.GlueData.hom_pullbackCharts_jointlySurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/LocallyRingedSpaces.lean, line 173](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/LocallyRingedSpaces.lean#L173). The attribute's comment: “canonical inverse-image cover”.
+**`AlgebraicGeometry.LocallyRingedSpace.GlueData.hom_pullbackCharts_jointlySurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/LocallyRingedSpaces.lean, line 173](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/LocallyRingedSpaces.lean#L173). The attribute's comment: “canonical inverse-image cover”.
 
 > The pullbacks of the canonical charts along a morphism into the glued space jointly cover its
 > source.
@@ -122,7 +85,7 @@ theorem hom_pullbackCharts_jointlySurjective (D : LocallyRingedSpace.GlueData.{u
       (pullback.fst g (D.ι i)).base x = y
 ```
 
-**`AlgebraicGeometry.LocallyRingedSpace.GlueData.hom_pullbackCharts_preimage_overlap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/LocallyRingedSpaces.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/LocallyRingedSpaces.lean#L183). The attribute's comment: “inverse images of overlaps”.
+**`AlgebraicGeometry.LocallyRingedSpace.GlueData.hom_pullbackCharts_preimage_overlap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/LocallyRingedSpaces.lean, line 183](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/LocallyRingedSpaces.lean#L183). The attribute's comment: “inverse images of overlaps”.
 
 > On the inverse-image chart indexed by `i`, the inverse image of `V i j` is exactly its
 > intersection with the chart indexed by `j`.
@@ -136,7 +99,7 @@ theorem hom_pullbackCharts_preimage_overlap (D : LocallyRingedSpace.GlueData.{u}
           (pullback.fst g (D.ι j))).base
 ```
 
-**`AlgebraicGeometry.LocallyRingedSpace.GlueData.hom_pullbackCharts_transition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/LocallyRingedSpaces.lean, line 202](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/LocallyRingedSpaces.lean#L202). The attribute's comment: “transition compatibility for morphisms into the gluing”.
+**`AlgebraicGeometry.LocallyRingedSpace.GlueData.hom_pullbackCharts_transition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/LocallyRingedSpaces.lean, line 202](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/LocallyRingedSpaces.lean#L202). The attribute's comment: “transition compatibility for morphisms into the gluing”.
 
 > The local morphisms on the inverse-image charts are related on intersections by the
 > prescribed transition map.
@@ -153,7 +116,7 @@ theorem hom_pullbackCharts_transition (D : LocallyRingedSpace.GlueData.{u})
             pullback.snd g (D.ι j)
 ```
 
-**`AlgebraicGeometry.LocallyRingedSpace.GlueData.existsUnique_hom_of_openCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/MorphismsIntoGluing/GluingReconstruction.lean, line 268](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/MorphismsIntoGluing/GluingReconstruction.lean#L268). The attribute's comment: “morphisms of locally ringed spaces glue over an open covering of the source”.
+**`AlgebraicGeometry.LocallyRingedSpace.GlueData.existsUnique_hom_of_openCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/MorphismsIntoGluing/GluingReconstruction.lean, line 268](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/MorphismsIntoGluing/GluingReconstruction.lean#L268). The attribute's comment: “morphisms of locally ringed spaces glue over an open covering of the source”.
 
 > Morphisms of locally ringed spaces glue over an open covering of the source: a family of
 > morphisms out of the members of the covering which agree on the pairwise overlaps comes from a
@@ -175,7 +138,7 @@ theorem existsUnique_hom_of_openCover
     ∃! f : Y ⟶ Z, ∀ i, v i ≫ f = h i
 ```
 
-**`AlgebraicGeometry.LocallyRingedSpace.GlueData.existsUnique_hom_to_glued_of_compatibleCharts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/MorphismsIntoGluing/GluingReconstruction.lean, line 312](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/MorphismsIntoGluing/GluingReconstruction.lean#L312). The attribute's comment: “reconstruction from compatible charts”.
+**`AlgebraicGeometry.LocallyRingedSpace.GlueData.existsUnique_hom_to_glued_of_compatibleCharts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/MorphismsIntoGluing/GluingReconstruction.lean, line 312](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/MorphismsIntoGluing/GluingReconstruction.lean#L312). The attribute's comment: “reconstruction from compatible charts”.
 
 > Compatible morphisms from an open covering of a locally ringed space to the pieces of a
 > gluing datum determine a unique morphism to the glued space. The two equations for
@@ -196,7 +159,7 @@ theorem existsUnique_hom_to_glued_of_compatibleCharts
     ∃! f : Y ⟶ D.glued, ∀ i, v i ≫ f = g i ≫ D.ι i
 ```
 
-**`AlgebraicGeometry.LocallyRingedSpace.GlueData.hom_chartDatumOfHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/MorphismsIntoGluing/GluingReconstruction.lean, line 418](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/MorphismsIntoGluing/GluingReconstruction.lean#L418). The attribute's comment: “the mapping property for morphisms into the glueing”.
+**`AlgebraicGeometry.LocallyRingedSpace.GlueData.hom_chartDatumOfHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/MorphismsIntoGluing/GluingReconstruction.lean, line 418](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/MorphismsIntoGluing/GluingReconstruction.lean#L418). The attribute's comment: “the mapping property for morphisms into the glueing”.
 
 > The mapping property for morphisms *into* a glueing: a morphism `g : Y ⟶ D.glued` is
 > recovered from the descent datum it induces, so that passing from a morphism to its chart datum
@@ -212,7 +175,7 @@ theorem hom_chartDatumOfHom (D : LocallyRingedSpace.GlueData.{u})
       (∀ i, (D.chartDatumOfHom g).v i ≫ f = (D.chartDatumOfHom g).g i ≫ D.ι i) → f = g
 ```
 
-**`AlgebraicGeometry.LocallyRingedSpace.GlueData.ChartDatum.chartIso_hom_fst_and_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/MorphismsIntoGluing/GluingReconstruction.lean, line 499](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/MorphismsIntoGluing/GluingReconstruction.lean#L499). The attribute's comment: “a descent datum is its own inverse-image covering”.
+**`AlgebraicGeometry.LocallyRingedSpace.GlueData.ChartDatum.chartIso_hom_fst_and_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/MorphismsIntoGluing/GluingReconstruction.lean, line 499](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/MorphismsIntoGluing/GluingReconstruction.lean#L499). The attribute's comment: “a descent datum is its own inverse-image covering”.
 
 > The other half of the round trip for morphisms *into* a glueing: a descent datum is carried
 > isomorphically, chart by chart and compatibly with both the covering maps and the local
@@ -230,7 +193,7 @@ theorem ChartDatum.chartIso_hom_fst_and_snd {D : LocallyRingedSpace.GlueData.{u}
       (C.chartIso hf i).hom ≫ pullback.snd f (D.ι i) = C.g i
 ```
 
-**`AlgebraicGeometry.LocallyRingedSpace.GlueData.homIntoEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/MorphismsIntoGluing/MappingProperty.lean, line 273](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/MorphismsIntoGluing/MappingProperty.lean#L273). The attribute's comment: “Mor(Y, X) is the set of descent data on an open covering of Y”.
+**`AlgebraicGeometry.LocallyRingedSpace.GlueData.homIntoEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/MorphismsIntoGluing/MappingProperty.lean, line 273](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/MorphismsIntoGluing/MappingProperty.lean#L273). The attribute's comment: “Mor(Y, X) is the set of descent data on an open covering of Y”.
 
 > The mapping property for morphisms *into* a gluing, as a bijection: a morphism `Y ⟶ D.glued` is
 > the same thing as a descent datum on `Y`, namely an open covering of `Y` together with compatible
@@ -246,13 +209,13 @@ noncomputable def homIntoEquiv (D : LocallyRingedSpace.GlueData.{u})
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.GlueData.glued`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.GlueData.glued#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/LocallyRingedSpaces.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/LocallyRingedSpaces.lean#L55) (StacksFrontier).
-- [`CategoryTheory.GlueData.ι`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.GlueData.ι#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/LocallyRingedSpaces.lean, line 56](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/LocallyRingedSpaces.lean#L56) (StacksFrontier).
-- [`CategoryTheory.GlueData.glue_condition`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.GlueData.glue_condition#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/LocallyRingedSpaces.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/LocallyRingedSpaces.lean#L57) (StacksFrontier).
-- [`LocallyRingedSpace.GlueData.ι_isOpenImmersion`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=LocallyRingedSpace.GlueData.ι_isOpenImmersion#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/LocallyRingedSpaces.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/LocallyRingedSpaces.lean#L58) (StacksFrontier).
-- [`LocallyRingedSpace.GlueData.ι_jointly_surjective`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=LocallyRingedSpace.GlueData.ι_jointly_surjective#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/LocallyRingedSpaces.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/LocallyRingedSpaces.lean#L59) (StacksFrontier).
-- [`LocallyRingedSpace.GlueData.vPullbackConeIsLimit`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=LocallyRingedSpace.GlueData.vPullbackConeIsLimit#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/LocallyRingedSpaces.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/LocallyRingedSpaces.lean#L60) (StacksFrontier).
-- [`LocallyRingedSpace.IsOpenImmersion.pullback_fst_of_right`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=LocallyRingedSpace.IsOpenImmersion.pullback_fst_of_right#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/LocallyRingedSpaces.lean, line 61](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/LocallyRingedSpaces.lean#L61) (StacksFrontier).
+- [`CategoryTheory.GlueData.glued`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.GlueData.glued#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/LocallyRingedSpaces.lean, line 55](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/LocallyRingedSpaces.lean#L55) (StacksFrontier).
+- [`CategoryTheory.GlueData.ι`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.GlueData.ι#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/LocallyRingedSpaces.lean, line 56](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/LocallyRingedSpaces.lean#L56) (StacksFrontier).
+- [`CategoryTheory.GlueData.glue_condition`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.GlueData.glue_condition#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/LocallyRingedSpaces.lean, line 57](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/LocallyRingedSpaces.lean#L57) (StacksFrontier).
+- [`LocallyRingedSpace.GlueData.ι_isOpenImmersion`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=LocallyRingedSpace.GlueData.ι_isOpenImmersion#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/LocallyRingedSpaces.lean, line 58](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/LocallyRingedSpaces.lean#L58) (StacksFrontier).
+- [`LocallyRingedSpace.GlueData.ι_jointly_surjective`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=LocallyRingedSpace.GlueData.ι_jointly_surjective#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/LocallyRingedSpaces.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/LocallyRingedSpaces.lean#L59) (StacksFrontier).
+- [`LocallyRingedSpace.GlueData.vPullbackConeIsLimit`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=LocallyRingedSpace.GlueData.vPullbackConeIsLimit#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/LocallyRingedSpaces.lean, line 60](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/LocallyRingedSpaces.lean#L60) (StacksFrontier).
+- [`LocallyRingedSpace.IsOpenImmersion.pullback_fst_of_right`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=LocallyRingedSpace.IsOpenImmersion.pullback_fst_of_right#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/LocallyRingedSpaces.lean, line 61](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/LocallyRingedSpaces.lean#L61) (StacksFrontier).
 
 ## Tag 01JC, a lemma
 
@@ -260,14 +223,14 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Scheme.GlueData.glued`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.GlueData.glued#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch26.lean, line 318](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch26.lean#L318) (StacksFrontier): “the glued scheme”. References: EGA I (2.3.1); EGA IV (20.2.16), “more general”; SGA 3 XV (5.5), “more general”; SGA 6 II (AppI.1.2), “more general”.
-- [`AlgebraicGeometry.Scheme.GlueData.isoLocallyRingedSpace`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.GlueData.isoLocallyRingedSpace#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch26.lean, line 319](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch26.lean#L319) (StacksFrontier): “its locally ringed space is the gluing of locally ringed spaces of Stacks 01JB”. References: EGA I (2.3.1).
+- [`AlgebraicGeometry.Scheme.GlueData.glued`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.GlueData.glued#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch26.lean, line 318](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch26.lean#L318) (StacksFrontier): “the glued scheme”. References: EGA I (2.3.1); EGA IV (20.2.16), “more general”; SGA 3 XV (5.5), “more general”; SGA 6 II (AppI.1.2), “more general”.
+- [`AlgebraicGeometry.Scheme.GlueData.isoLocallyRingedSpace`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.GlueData.isoLocallyRingedSpace#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch26.lean, line 319](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch26.lean#L319) (StacksFrontier): “its locally ringed space is the gluing of locally ringed spaces of Stacks 01JB”. References: EGA I (2.3.1).
 
 ## Tag 01JD, an example
 
 [Tag 01JD](https://stacks.math.columbia.edu/tag/01JD) in the Stacks Project.
 
-**`AlgebraicGeometry.affineSpaceWithDoubledZero`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOrigin.lean, line 105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOrigin.lean#L105). The attribute's comment: “doubled\_zero\_construction”. References: EGA I (5.5.11), “doubled origin constr.”.
+**`AlgebraicGeometry.affineSpaceWithDoubledZero`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOrigin.lean, line 105](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOrigin.lean#L105). The attribute's comment: “doubled\_zero\_construction”. References: EGA I (5.5.11), “doubled origin constr.”.
 
 > Affine `n`-space over `k` with its origin doubled, obtained by gluing two copies along the
 > complements of their origins via the coordinate identification.
@@ -277,7 +240,7 @@ noncomputable abbrev affineSpaceWithDoubledZero (k : Type u) [Field k] (n : ℕ)
     Scheme.{u}
 ```
 
-**`AlgebraicGeometry.coordinateMorphismData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOrigin.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOrigin.lean#L125). The attribute's comment: “coordinate\_morphism”. References: EGA I (5.5.11), “morphism to Spec k[t]”; SGA 6 II (2.2.7.2), “more general”.
+**`AlgebraicGeometry.coordinateMorphismData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOrigin.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOrigin.lean#L125). The attribute's comment: “coordinate\_morphism”. References: EGA I (5.5.11), “morphism to Spec k[t]”; SGA 6 II (2.2.7.2), “more general”.
 
 > The coordinate maps on the two charts of affine space with doubled origin glue to a scheme
 > morphism to affine space, restricting to the identity on each chart.
@@ -290,7 +253,7 @@ noncomputable def coordinateMorphismData (k : Type u) [Field k] (n : ℕ) :
         chartInclusion k n i ≫ f = 𝟙 _ }
 ```
 
-**`AlgebraicGeometry.coordinateMorphism_map_origin`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOrigin.lean, line 161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOrigin.lean#L161). The attribute's comment: “origins\_map\_to\_origin”. References: EGA I (5.5.11), “two origins over 0”.
+**`AlgebraicGeometry.coordinateMorphism_map_origin`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOrigin.lean, line 161](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOrigin.lean#L161). The attribute's comment: “origins\_map\_to\_origin”. References: EGA I (5.5.11), “two origins over 0”.
 
 > The coordinate morphism maps the origin of each affine chart to the origin of affine
 > space.
@@ -303,7 +266,7 @@ theorem coordinateMorphism_map_origin (k : Type u) [Field k] (n : ℕ)
           (affineOrigin k n)) = affineOrigin k n
 ```
 
-**`AlgebraicGeometry.intersection_iso_puncturedAffinePlane`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOriginIntersection.lean, line 153](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOriginIntersection.lean#L153). The attribute's comment: “non\_affine\_intersection”.
+**`AlgebraicGeometry.intersection_iso_puncturedAffinePlane`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOriginIntersection.lean, line 153](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOriginIntersection.lean#L153). The attribute's comment: “non\_affine\_intersection”.
 
 > In dimension two, the overlap of the two affine charts of the doubled-origin scheme is the
 > punctured affine plane.
@@ -314,7 +277,7 @@ theorem intersection_iso_puncturedAffinePlane (S : PuncturedAffinePlane.{u}) :
       (chartInclusion S.k 2 1).opensRange).toScheme ≅ S.puncturedScheme)
 ```
 
-**`AlgebraicGeometry.not_isAffineOpen_chartIntersection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOriginIntersection.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOriginIntersection.lean#L162). The attribute's comment: “non\_affine\_intersection”.
+**`AlgebraicGeometry.not_isAffineOpen_chartIntersection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOriginIntersection.lean, line 162](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOriginIntersection.lean#L162). The attribute's comment: “non\_affine\_intersection”.
 
 > For dimension greater than one, the two affine charts of affine space with doubled origin have
 > a non-affine intersection.
@@ -326,7 +289,7 @@ theorem not_isAffineOpen_chartIntersection (k : Type u) [Field k] (n : ℕ)
       (chartInclusion k n 1).opensRange)
 ```
 
-**`AlgebraicGeometry.exists_affineOpens_nonaffine_inf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOriginIntersection.lean, line 174](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOriginIntersection.lean#L174). The attribute's comment: “non\_affine\_intersection”.
+**`AlgebraicGeometry.exists_affineOpens_nonaffine_inf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOriginIntersection.lean, line 174](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOriginIntersection.lean#L174). The attribute's comment: “non\_affine\_intersection”.
 
 > The intersection of two affine opens in a scheme need not be affine.
 
@@ -336,7 +299,7 @@ theorem exists_affineOpens_nonaffine_inf :
       IsAffineOpen U ∧ IsAffineOpen V ∧ ¬ IsAffineOpen (U ⊓ V)
 ```
 
-**`AlgebraicGeometry.infinite_irreducibleClosed_closures`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOriginPoints.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOriginPoints.lean#L132). The attribute's comment: “many\_irreducible\_closed”.
+**`AlgebraicGeometry.infinite_irreducibleClosed_closures`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOriginPoints.lean, line 132](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOriginPoints.lean#L132). The attribute's comment: “many\_irreducible\_closed”.
 
 > In dimension greater than one, infinitely many irreducible closed subsets of affine space with
 > doubled origin are closures of nonclosed points in its first affine chart.
@@ -352,7 +315,7 @@ theorem infinite_irreducibleClosed_closures (k : Type u) [Field k] (n : ℕ) (hn
                 Set (affineSpaceWithDoubledZero k n)) }
 ```
 
-**`AlgebraicGeometry.mem_origin_iff_mem_origin`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOriginPoints.lean, line 264](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOriginPoints.lean#L264). The attribute's comment: “origins\_in\_closed\_subset”.
+**`AlgebraicGeometry.mem_origin_iff_mem_origin`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOriginPoints.lean, line 264](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOriginPoints.lean#L264). The attribute's comment: “origins\_in\_closed\_subset”.
 
 > Apart from the two singleton origins, an irreducible closed subset of affine space with
 > the origin doubled contains either both origins or neither.
@@ -367,7 +330,7 @@ theorem mem_origin_iff_mem_origin (k : Type u) [Field k] (n : ℕ)
       chartInclusion k n 1 (affineOrigin k n) ∈ T)
 ```
 
-**`AlgebraicGeometry.isIso_coordinateMorphism_globalSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOriginSections.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOriginSections.lean#L146). The attribute's comment: “global\_sections”. References: EGA I (5.5.11), “more general”; SGA 6 II (2.2.7.2), “more general”.
+**`AlgebraicGeometry.isIso_coordinateMorphism_globalSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOriginSections.lean, line 146](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOriginSections.lean#L146). The attribute's comment: “global\_sections”. References: EGA I (5.5.11), “more general”; SGA 6 II (2.2.7.2), “more general”.
 
 > In positive dimension, every global function on affine space with doubled origin is induced
 > uniquely by a polynomial via the coordinate morphism.
@@ -379,7 +342,7 @@ theorem isIso_coordinateMorphism_globalSections (k : Type u) [Field k]
       (coordinateMorphism k n).appTop)
 ```
 
-**`AlgebraicGeometry.not_isAffine_affineSpaceWithDoubledZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOriginSections.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOriginSections.lean#L176). The attribute's comment: “not\_affine”.
+**`AlgebraicGeometry.not_isAffine_affineSpaceWithDoubledZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOriginSections.lean, line 176](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOriginSections.lean#L176). The attribute's comment: “not\_affine”.
 
 > Affine space of positive dimension with its origin doubled is not affine.
 
@@ -391,13 +354,13 @@ theorem not_isAffine_affineSpaceWithDoubledZero (k : Type u) [Field k]
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.isAffineOpen_opensRange`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.isAffineOpen_opensRange#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOrigin.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOrigin.lean#L58) (StacksFrontier): “affine\_open\_charts”.
+- [`AlgebraicGeometry.isAffineOpen_opensRange`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.isAffineOpen_opensRange#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOrigin.lean, line 58](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/DoubledOrigin.lean#L58) (StacksFrontier): “affine\_open\_charts”.
 
 ## Tag 01JE, an example
 
 [Tag 01JE](https://stacks.math.columbia.edu/tag/01JE) in the Stacks Project.
 
-**`AlgebraicGeometry.projectiveLineInversionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLine.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLine.lean#L83). The attribute's comment: “projective\_line\_gluing”. References: EGA I (2.3.2), “partial”.
+**`AlgebraicGeometry.projectiveLineInversionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLine.lean, line 83](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLine.lean#L83). The attribute's comment: “projective\_line\_gluing”. References: EGA I (2.3.2), “partial”.
 
 > The isomorphism `φ₁₂` of the gluing datum: the automorphism of the punctured affine line
 > induced by `T ↦ T⁻¹`, which is the identification `y = 1/x` of the two coordinates on the
@@ -408,7 +371,7 @@ noncomputable def projectiveLineInversionIso :
     Spec (.of (LaurentPolynomial k)) ≅ Spec (.of (LaurentPolynomial k))
 ```
 
-**`AlgebraicGeometry.projectiveLineGluingData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLine.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLine.lean#L126). The attribute's comment: “projective\_line\_gluing”.
+**`AlgebraicGeometry.projectiveLineGluingData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLine.lean, line 126](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLine.lean#L126). The attribute's comment: “projective\_line\_gluing”.
 
 > The gluing datum for the projective line: two copies of `Spec k[X]`, glued along
 > `D(X) = Spec k[T,T⁻¹]` by inversion.
@@ -417,7 +380,7 @@ noncomputable def projectiveLineInversionIso :
 noncomputable def projectiveLineGluingData : Scheme.GlueData.{u}
 ```
 
-**`AlgebraicGeometry.projectiveLine`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLine.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLine.lean#L136). The attribute's comment: “projective\_line\_gluing”. References: EGA I (2.3.2), “gluing construction”.
+**`AlgebraicGeometry.projectiveLine`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLine.lean, line 136](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLine.lean#L136). The attribute's comment: “projective\_line\_gluing”. References: EGA I (2.3.2), “gluing construction”.
 
 > The projective line over `k`, constructed by gluing its two standard affine charts.
 
@@ -425,7 +388,7 @@ noncomputable def projectiveLineGluingData : Scheme.GlueData.{u}
 noncomputable abbrev projectiveLine : Scheme.{u}
 ```
 
-**`AlgebraicGeometry.projectiveLineZero`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLine.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLine.lean#L216). The attribute's comment: “projective\_line\_gluing”.
+**`AlgebraicGeometry.projectiveLineZero`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLine.lean, line 216](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLine.lean#L216). The attribute's comment: “projective\_line\_gluing”.
 
 > The point `0` of the projective line, namely the point `(X)` in the `x`-chart.
 
@@ -433,7 +396,7 @@ noncomputable abbrev projectiveLine : Scheme.{u}
 def projectiveLineZero [IsDomain k] : projectiveLine k
 ```
 
-**`AlgebraicGeometry.projectiveLineInfinity`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLine.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLine.lean#L221). The attribute's comment: “projective\_line\_gluing”. References: EGA II (7.4.14).
+**`AlgebraicGeometry.projectiveLineInfinity`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLine.lean, line 221](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLine.lean#L221). The attribute's comment: “projective\_line\_gluing”. References: EGA II (7.4.14).
 
 > The point `∞` of the projective line, namely the point `(X)` in the `y`-chart.
 
@@ -441,7 +404,7 @@ def projectiveLineZero [IsDomain k] : projectiveLine k
 def projectiveLineInfinity [IsDomain k] : projectiveLine k
 ```
 
-**`AlgebraicGeometry.affineLineOne`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean#L162). The attribute's comment: “projective\_line\_one”.
+**`AlgebraicGeometry.affineLineOne`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean, line 162](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean#L162). The attribute's comment: “projective\_line\_one”.
 
 > The point `1` of an affine-line chart, represented by the prime ideal `(X - 1)`.
 
@@ -449,7 +412,7 @@ def projectiveLineInfinity [IsDomain k] : projectiveLine k
 def affineLineOne : Spec (.of (Polynomial k))
 ```
 
-**`AlgebraicGeometry.projectiveLineOne`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean, line 185](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean#L185). The attribute's comment: “projective\_line\_one”.
+**`AlgebraicGeometry.projectiveLineOne`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean, line 185](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean#L185). The attribute's comment: “projective\_line\_one”.
 
 > The point `1` of the projective line, namely the point `(x - 1)` in the `x`-chart.
 
@@ -457,7 +420,7 @@ def affineLineOne : Spec (.of (Polynomial k))
 def projectiveLineOne : projectiveLine k
 ```
 
-**`AlgebraicGeometry.projectiveLineYChart_affineLineOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean#L190). The attribute's comment: “projective\_line\_one”.
+**`AlgebraicGeometry.projectiveLineYChart_affineLineOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean, line 190](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean#L190). The attribute's comment: “projective\_line\_one”.
 
 > The point `1` is *also* the point `(y - 1)` of the second chart.
 
@@ -466,7 +429,7 @@ theorem projectiveLineYChart_affineLineOne :
     projectiveLineYChart k (affineLineOne k) = projectiveLineOne k
 ```
 
-**`AlgebraicGeometry.projectiveLineSChart`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean, line 1075](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean#L1075). The attribute's comment: “projective\_line\_affine\_open\_through\_zero\_and\_infinity”.
+**`AlgebraicGeometry.projectiveLineSChart`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean, line 1075](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean#L1075). The attribute's comment: “projective\_line\_affine\_open\_through\_zero\_and\_infinity”.
 
 > The third chart of the projective line: the affine line with coordinate
 > `s = 1/(x-1) = y/(1-y)`, mapping onto the complement of the point `1`.
@@ -475,7 +438,7 @@ theorem projectiveLineYChart_affineLineOne :
 def projectiveLineSChart : Spec (.of (Polynomial k)) ⟶ projectiveLine k
 ```
 
-**`AlgebraicGeometry.projectiveLineSXPiece_comp_projectiveLineSChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean, line 1082](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean#L1082). The attribute's comment: “projective\_line\_affine\_open\_coordinate\_ring”.
+**`AlgebraicGeometry.projectiveLineSXPiece_comp_projectiveLineSChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean, line 1082](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean#L1082). The attribute's comment: “projective\_line\_affine\_open\_coordinate\_ring”.
 
 > On `D(x-1) ⊂ X₁` the third chart is the inclusion of that open into the first chart;
 > equivalently, `s` restricts to `1/(x-1)` there.
@@ -487,7 +450,7 @@ theorem projectiveLineSXPiece_comp_projectiveLineSChart :
         projectiveLineXChart k
 ```
 
-**`AlgebraicGeometry.projectiveLineSYPiece_comp_projectiveLineSChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean, line 1091](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean#L1091). The attribute's comment: “projective\_line\_affine\_open\_coordinate\_ring”.
+**`AlgebraicGeometry.projectiveLineSYPiece_comp_projectiveLineSChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean, line 1091](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean#L1091). The attribute's comment: “projective\_line\_affine\_open\_coordinate\_ring”.
 
 > On `D(y-1) ⊂ X₂` the third chart is the inclusion of that open into the second chart;
 > equivalently, `s` restricts to `y/(1-y)` there.
@@ -499,7 +462,7 @@ theorem projectiveLineSYPiece_comp_projectiveLineSChart :
         projectiveLineYChart k
 ```
 
-**`AlgebraicGeometry.range_projectiveLineSChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean, line 1345](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean#L1345). The attribute's comment: “projective\_line\_affine\_open\_through\_zero\_and\_infinity”.
+**`AlgebraicGeometry.range_projectiveLineSChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean, line 1345](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean#L1345). The attribute's comment: “projective\_line\_affine\_open\_through\_zero\_and\_infinity”.
 
 > The image of the third chart is exactly the complement of the point `1`: `U = ℙ¹ \ {1}`.
 
@@ -508,7 +471,7 @@ theorem range_projectiveLineSChart :
     Set.range (projectiveLineSChart k).base = {projectiveLineOne k}ᶜ
 ```
 
-**`AlgebraicGeometry.isAffineOpen_projectiveLineSChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean, line 1376](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean#L1376). The attribute's comment: “projective\_line\_affine\_open\_through\_zero\_and\_infinity”.
+**`AlgebraicGeometry.isAffineOpen_projectiveLineSChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean, line 1376](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean#L1376). The attribute's comment: “projective\_line\_affine\_open\_through\_zero\_and\_infinity”.
 
 > `U = ℙ¹ \ {1}` is an affine open.
 
@@ -517,7 +480,7 @@ theorem isAffineOpen_projectiveLineSChart :
     IsAffineOpen (projectiveLineSChart k).opensRange
 ```
 
-**`AlgebraicGeometry.projectiveLineZero_mem_opensRange_projectiveLineSChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean, line 1382](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean#L1382). The attribute's comment: “projective\_line\_affine\_open\_through\_zero\_and\_infinity”.
+**`AlgebraicGeometry.projectiveLineZero_mem_opensRange_projectiveLineSChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean, line 1382](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean#L1382). The attribute's comment: “projective\_line\_affine\_open\_through\_zero\_and\_infinity”.
 
 > The point `0` lies in `U = ℙ¹ \ {1}`.
 
@@ -526,7 +489,7 @@ theorem projectiveLineZero_mem_opensRange_projectiveLineSChart :
     projectiveLineZero k ∈ (projectiveLineSChart k).opensRange
 ```
 
-**`AlgebraicGeometry.projectiveLineInfinity_mem_opensRange_projectiveLineSChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean, line 1393](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean#L1393). The attribute's comment: “projective\_line\_affine\_open\_through\_zero\_and\_infinity”.
+**`AlgebraicGeometry.projectiveLineInfinity_mem_opensRange_projectiveLineSChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean, line 1393](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean#L1393). The attribute's comment: “projective\_line\_affine\_open\_through\_zero\_and\_infinity”.
 
 > The point `∞` lies in `U = ℙ¹ \ {1}`.
 
@@ -535,7 +498,7 @@ theorem projectiveLineInfinity_mem_opensRange_projectiveLineSChart :
     projectiveLineInfinity k ∈ (projectiveLineSChart k).opensRange
 ```
 
-**`AlgebraicGeometry.projectiveLineSChartIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean, line 1408](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean#L1408). The attribute's comment: “projective\_line\_affine\_open\_coordinate\_ring”.
+**`AlgebraicGeometry.projectiveLineSChartIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean, line 1408](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean#L1408). The attribute's comment: “projective\_line\_affine\_open\_coordinate\_ring”.
 
 > `U = ℙ¹ \ {1}` is isomorphic to `Spec k[s]`, and so `Γ(U, O_U) = k[s]`.
 
@@ -544,7 +507,7 @@ def projectiveLineSChartIso :
     Spec (.of (Polynomial k)) ≅ ((projectiveLineSChart k).opensRange).toScheme
 ```
 
-**`AlgebraicGeometry.projectiveLineSChartSectionsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean, line 1422](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean#L1422). The attribute's comment: “projective\_line\_affine\_open\_coordinate\_ring”.
+**`AlgebraicGeometry.projectiveLineSChartSectionsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean, line 1422](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineAffineOpen.lean#L1422). The attribute's comment: “projective\_line\_affine\_open\_coordinate\_ring”.
 
 > `Γ(U, O_U)` is the polynomial ring `k[s]`, for the coordinate `s = 1/(x-1) = y/(1-y)` of
 > `AlgebraicGeometry.affineLineSOnXChart` and `AlgebraicGeometry.affineLineSOnYChart`.
@@ -554,7 +517,7 @@ def projectiveLineSChartSectionsIso :
     CommRingCat.of (Polynomial k) ≅ Γ(((projectiveLineSChart k).opensRange).toScheme, ⊤)
 ```
 
-**`AlgebraicGeometry.mem_range_projectiveLinePuncturedChart_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLinePoints.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLinePoints.lean#L66). The attribute's comment: “projective\_line\_overlap”.
+**`AlgebraicGeometry.mem_range_projectiveLinePuncturedChart_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLinePoints.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLinePoints.lean#L66). The attribute's comment: “projective\_line\_overlap”.
 
 > The overlap `U₁₂` of the two charts of the projective line, seen in the first chart, is
 > `D(x)`, the locus where the coordinate is invertible.
@@ -565,7 +528,7 @@ theorem mem_range_projectiveLinePuncturedChart_iff (y : Spec (.of (Polynomial k)
       (Polynomial.X : Polynomial k) ∉ y.asIdeal
 ```
 
-**`AlgebraicGeometry.mem_range_projectiveLineOverlapYInclusion_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLinePoints.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLinePoints.lean#L80). The attribute's comment: “projective\_line\_overlap”.
+**`AlgebraicGeometry.mem_range_projectiveLineOverlapYInclusion_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLinePoints.lean, line 80](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLinePoints.lean#L80). The attribute's comment: “projective\_line\_overlap”.
 
 > The overlap `U₂₁` of the two charts of the projective line, seen in the second chart, is
 > `D(y)`, the locus where the coordinate of that chart is invertible.
@@ -576,7 +539,7 @@ theorem mem_range_projectiveLineOverlapYInclusion_iff (y : Spec (.of (Polynomial
       (Polynomial.X : Polynomial k) ∉ y.asIdeal
 ```
 
-**`AlgebraicGeometry.eq_affineLineOrigin_of_X_mem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLinePoints.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLinePoints.lean#L106). The attribute's comment: “projective\_line\_overlap”.
+**`AlgebraicGeometry.eq_affineLineOrigin_of_X_mem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLinePoints.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLinePoints.lean#L106). The attribute's comment: “projective\_line\_overlap”.
 
 > The complement of the overlap in a chart is the single point `0` of that chart: the only
 > point of the affine line over a field at which the coordinate vanishes is the origin.
@@ -586,7 +549,7 @@ theorem eq_affineLineOrigin_of_X_mem (y : Spec (.of (Polynomial k)))
     (hy : (Polynomial.X : Polynomial k) ∈ y.asIdeal) : y = affineLineOrigin k
 ```
 
-**`AlgebraicGeometry.projectiveLineZero_ne_projectiveLineInfinity`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLinePoints.lean, line 213](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLinePoints.lean#L213). The attribute's comment: “projective\_line\_gluing”.
+**`AlgebraicGeometry.projectiveLineZero_ne_projectiveLineInfinity`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLinePoints.lean, line 213](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLinePoints.lean#L213). The attribute's comment: “projective\_line\_gluing”.
 
 > The points `0` and `∞` of the projective line are distinct.
 
@@ -595,7 +558,7 @@ theorem projectiveLineZero_ne_projectiveLineInfinity (k : Type u) [Field k] :
     projectiveLineZero k ≠ projectiveLineInfinity k
 ```
 
-**`AlgebraicGeometry.infinite_projectiveLine`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLinePoints.lean, line 262](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLinePoints.lean#L262). The attribute's comment: “projective\_line\_infinite”.
+**`AlgebraicGeometry.infinite_projectiveLine`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLinePoints.lean, line 262](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLinePoints.lean#L262). The attribute's comment: “projective\_line\_infinite”.
 
 > The projective line over a field is infinite.
 
@@ -603,7 +566,7 @@ theorem projectiveLineZero_ne_projectiveLineInfinity (k : Type u) [Field k] :
 instance infinite_projectiveLine (k : Type u) [Field k] : Infinite (projectiveLine k)
 ```
 
-**`AlgebraicGeometry.isIso_constantsToGlobalSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineSections.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineSections.lean#L155). The attribute's comment: “projective\_line\_global\_sections”. References: EGA I (2.3.2), “Γ(X,O\_X) ≅ K”.
+**`AlgebraicGeometry.isIso_constantsToGlobalSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineSections.lean, line 155](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineSections.lean#L155). The attribute's comment: “projective\_line\_global\_sections”. References: EGA I (2.3.2), “Γ(X,O\_X) ≅ K”.
 
 > The canonical map from `k` to the global sections of the structure sheaf
 > on the projective line over `k` is an isomorphism.
@@ -614,7 +577,7 @@ theorem isIso_constantsToGlobalSections (k : Type u) [CommRing k] :
       (projectiveLine k ↘ Spec (.of k)).appTop)
 ```
 
-**`AlgebraicGeometry.not_isAffine_projectiveLine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineSections.lean, line 212](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineSections.lean#L212). The attribute's comment: “projective\_line\_not\_affine”. References: EGA I (2.3.2), “X not affine”.
+**`AlgebraicGeometry.not_isAffine_projectiveLine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineSections.lean, line 212](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/Glueing/ProjectiveLineSections.lean#L212). The attribute's comment: “projective\_line\_not\_affine”. References: EGA I (2.3.2), “X not affine”.
 
 > The projective line over a field is not affine.
 
@@ -630,4 +593,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 26.14, Tag 01JA](https://stacks.math.columbia.edu/tag/01JA)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

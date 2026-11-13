@@ -8,13 +8,13 @@ proof: formalized
 
 # 90.14 Minimal versal formal objects
 
-Section 90.14 of the Stacks Project, [Tag 06T0](https://stacks.math.columbia.edu/tag/06T0). 5 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 90.14 of the Stacks Project, [Tag 06T0](https://stacks.math.columbia.edu/tag/06T0). 5 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 06T1, a lemma
 
 [Tag 06T1](https://stacks.math.columbia.edu/tag/06T1) in the Stacks Project.
 
-**`Deformation.exists_minimal_preimage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/VersalObject/MinimalDescent.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/VersalObject/MinimalDescent.lean#L195). The attribute's comment: “minimality\_lifted”.
+**`Deformation.exists_minimal_preimage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/VersalObject/MinimalDescent.lean, line 195](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/VersalObject/MinimalDescent.lean#L195). The attribute's comment: “minimality\_lifted”.
 
 > Every minimal descent object of `x` is, up to isomorphism, the image of a
 > minimal descent object of `y` when `y ⟶ x` lies over a surjection and (S1)
@@ -35,7 +35,7 @@ theorem exists_minimal_preimage
       IsMinimalObject Y ∧ Nonempty ((descentPushforward p hp g).functor.obj Y ≅ X)
 ```
 
-**`Deformation.isMinimal_descentPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/VersalObject/MinimalDescent.lean, line 280](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/VersalObject/MinimalDescent.lean#L280). The attribute's comment: “minimality\_preserved”.
+**`Deformation.isMinimal_descentPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/VersalObject/MinimalDescent.lean, line 280](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/VersalObject/MinimalDescent.lean#L280). The attribute's comment: “minimality\_preserved”.
 
 > Pushforward along a morphism preserves minimal descent objects under (S1).
 
@@ -57,7 +57,7 @@ theorem isMinimal_descentPushforward
 
 [Tag 06T2](https://stacks.math.columbia.edu/tag/06T2) in the Stacks Project.
 
-**`Deformation.exists_smallestDescent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Formal/MinimalVersal/Existence.lean, line 44](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Formal/MinimalVersal/Existence.lean#L44).
+**`Deformation.exists_smallestDescent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Formal/MinimalVersal/Existence.lean, line 44](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Formal/MinimalVersal/Existence.lean#L44).
 
 > **Stacks Project, Tag 06T2.** A versal formal object of a category cofibered in groupoids
 > satisfying (S1) admits a smallest formal descent: a descent over a complete local subalgebra of
@@ -77,7 +77,7 @@ public theorem exists_smallestDescent
 
 [Tag 06T3](https://stacks.math.columbia.edu/tag/06T3) in the Stacks Project.
 
-**`Deformation.isVersal_smallestDescent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Formal/MinimalVersal/DescentVersality.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Formal/MinimalVersal/DescentVersality.lean#L65). The attribute's comment: “descended object versal”.
+**`Deformation.isVersal_smallestDescent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Formal/MinimalVersal/DescentVersality.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Formal/MinimalVersal/DescentVersality.lean#L65). The attribute's comment: “descended object versal”.
 
 > A smallest descent of a versal formal object of a category cofibered in groupoids is again a
 > versal formal object.
@@ -88,7 +88,7 @@ public theorem isVersal_smallestDescent
     (d : SmallestDescent ξ) : IsVersal hp d.object
 ```
 
-**`Deformation.exists_mvPowerSeries_algEquiv_of_smallestDescent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Formal/MinimalVersal/PowerSeriesDecomposition.lean, line 519](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Formal/MinimalVersal/PowerSeriesDecomposition.lean#L519). The attribute's comment: “power series decomposition”. References: SGA 7 VI (2.10), “smallest descent case”.
+**`Deformation.exists_mvPowerSeries_algEquiv_of_smallestDescent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Formal/MinimalVersal/PowerSeriesDecomposition.lean, line 519](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Formal/MinimalVersal/PowerSeriesDecomposition.lean#L519). The attribute's comment: “power series decomposition”. References: SGA 7 VI (2.10), “smallest descent case”.
 
 > **Stacks Project, Tag 06T3.** The base of a versal formal object is a power series algebra
 > over the base of a smallest descent of it, compatibly with the descended-base inclusion: the
@@ -106,7 +106,7 @@ public theorem exists_mvPowerSeries_algEquiv_of_smallestDescent
 
 [Tag 06T4](https://stacks.math.columbia.edu/tag/06T4) in the Stacks Project.
 
-**`Deformation.IsMinimalVersal`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/MinimalVersal.lean, line 45](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/MinimalVersal.lean#L45). References: SGA 7 VI (1.19), “(2)”.
+**`Deformation.IsMinimalVersal`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/MinimalVersal.lean, line 45](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/MinimalVersal.lean#L45). References: SGA 7 VI (1.19), “(2)”.
 
 > A formal object is minimal versal if it is versal and every morphism from a
 > formal object into it is surjective on its underlying complete local algebra.
@@ -120,7 +120,7 @@ public abbrev IsMinimalVersal (hp : IsCofiberedInGroupoids p)
 
 [Tag 06T5](https://stacks.math.columbia.edu/tag/06T5) in the Stacks Project.
 
-**`Deformation.exists_minimalVersalFormalObject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Formal/VersalObject/MinimalExistence.lean, line 52](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Formal/VersalObject/MinimalExistence.lean#L52). The attribute's comment: “existence”.
+**`Deformation.exists_minimalVersalFormalObject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Formal/VersalObject/MinimalExistence.lean, line 52](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Formal/VersalObject/MinimalExistence.lean#L52). The attribute's comment: “existence”.
 
 > **Stacks 06T5.** A predeformation category with a versal formal object has a minimal
 > versal formal object: a smallest descent of the given versal object is one.
@@ -131,7 +131,7 @@ public theorem exists_minimalVersalFormalObject (hp : IsPredeformationCategory p
     ∃ ξ : FormalObject p, IsMinimalVersal hp.cofibered ξ
 ```
 
-**`Deformation.exists_minimalVersal_powerSeries`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Formal/VersalObject/MinimalPowerSeries.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Formal/VersalObject/MinimalPowerSeries.lean#L62). The attribute's comment: “power\_series\_extension”.
+**`Deformation.exists_minimalVersal_powerSeries`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Formal/VersalObject/MinimalPowerSeries.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Formal/VersalObject/MinimalPowerSeries.lean#L62). The attribute's comment: “power\_series\_extension”.
 
 > **Stacks 06T5.** Any versal formal object `ξ` of a predeformation category is the
 > pushforward of a minimal versal formal object `η` along a power series ring extension: there is
@@ -148,7 +148,7 @@ public theorem exists_minimalVersal_powerSeries [IsNoetherianRing Λ] [Module.Fi
         ∀ a : η.base, e (MvPowerSeries.C a) = f.base.hom a
 ```
 
-**`Deformation.isomorphic_of_isMinimalVersal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Formal/VersalObject/MinimalUniqueness.lean, line 46](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Formal/VersalObject/MinimalUniqueness.lean#L46). The attribute's comment: “uniqueness”. References: SGA 7 VI (1.20), “uniqueness”; SGA 7 VI (1.10), “(ii) uniqueness”.
+**`Deformation.isomorphic_of_isMinimalVersal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Formal/VersalObject/MinimalUniqueness.lean, line 46](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Formal/VersalObject/MinimalUniqueness.lean#L46). The attribute's comment: “uniqueness”. References: SGA 7 VI (1.20), “uniqueness”; SGA 7 VI (1.10), “(ii) uniqueness”.
 
 > Any two minimal versal formal objects are isomorphic.
 
@@ -166,4 +166,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 90.14, Tag 06T0](https://stacks.math.columbia.edu/tag/06T0)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

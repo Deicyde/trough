@@ -8,13 +8,13 @@ proof: formalized
 
 # 10.10 Internal Hom
 
-Section 10.10 of the Stacks Project, [Tag 0581](https://stacks.math.columbia.edu/tag/0581). 2 tags here are carried by 2 declarations of the repository (all in StacksCore) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 10.10 of the Stacks Project, [Tag 0581](https://stacks.math.columbia.edu/tag/0581). 2 tags here are carried by 2 declarations of the repository (all in StacksCore) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0582, a lemma
 
 [Tag 0582](https://stacks.math.columbia.edu/tag/0582) in the Stacks Project.
 
-**`LinearMap.exact_iff_homLeft`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/Algebra/Exact.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Algebra/Exact.lean#L59). The attribute's comment: “part 2”.
+**`LinearMap.exact_iff_homLeft`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/Algebra/Exact.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Algebra/Exact.lean#L59). The attribute's comment: “part 2”.
 
 ```lean
 theorem exact_iff_homLeft : (Function.Injective f ∧ Function.Exact f g) ↔
@@ -23,7 +23,7 @@ theorem exact_iff_homLeft : (Function.Injective f ∧ Function.Exact f g) ↔
       Function.Exact (compRight (M := N) ℕ f) (compRight (M := N) ℕ g)
 ```
 
-**`LinearMap.exact_iff_homRight`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/Algebra/Exact.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Algebra/Exact.lean#L81). The attribute's comment: “part 1”.
+**`LinearMap.exact_iff_homRight`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/Algebra/Exact.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Algebra/Exact.lean#L81). The attribute's comment: “part 1”.
 
 ```lean
 theorem exact_iff_homRight : (Function.Exact f g ∧ Function.Surjective g) ↔ ∀ (N : Type v)
@@ -37,9 +37,9 @@ theorem exact_iff_homRight : (Function.Exact f g ∧ Function.Surjective g) ↔ 
 
 Declarations registered for the tag:
 
-- [`instIsLocalizedModuleLinearMapIdLocalizationLocalizedModuleMapOfFinitePresentation`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=instIsLocalizedModuleLinearMapIdLocalizationLocalizedModuleMapOfFinitePresentation#doc) registered with `add_to_stacks` in [StacksCore/Algebra/Module/FinitePresentation.lean, line 11](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Algebra/Module/FinitePresentation.lean#L11) (StacksCore): “part 1”. References: EGA 0 (1.3.5); EGA 0 (1.5.3), “special case”; EGA 0 (1.5.5), “special case”.
-- [`Module.FinitePresentation.isLocalizedModule_mapExtendScalars`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Module.FinitePresentation.isLocalizedModule_mapExtendScalars#doc) registered with `add_to_stacks` in [StacksCore/Algebra/Module/FinitePresentation.lean, line 13](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Algebra/Module/FinitePresentation.lean#L13) (StacksCore): “part 1”. References: EGA 0 (1.3.5), “more general”.
-- [`Module.FinitePresentation.isLocalizedModule_map`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Module.FinitePresentation.isLocalizedModule_map#doc) registered with `add_to_stacks` in [StacksCore/Algebra/Module/FinitePresentation.lean, line 14](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Algebra/Module/FinitePresentation.lean#L14) (StacksCore): “part 2”. References: EGA 0 (1.3.5), “more general”.
+- [`instIsLocalizedModuleLinearMapIdLocalizationLocalizedModuleMapOfFinitePresentation`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=instIsLocalizedModuleLinearMapIdLocalizationLocalizedModuleMapOfFinitePresentation#doc) registered with `add_to_stacks` in [StacksCore/Algebra/Module/FinitePresentation.lean, line 11](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Algebra/Module/FinitePresentation.lean#L11) (StacksCore): “part 1”. References: EGA 0 (1.3.5); EGA 0 (1.5.3), “special case”; EGA 0 (1.5.5), “special case”.
+- [`Module.FinitePresentation.isLocalizedModule_mapExtendScalars`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Module.FinitePresentation.isLocalizedModule_mapExtendScalars#doc) registered with `add_to_stacks` in [StacksCore/Algebra/Module/FinitePresentation.lean, line 13](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Algebra/Module/FinitePresentation.lean#L13) (StacksCore): “part 1”. References: EGA 0 (1.3.5), “more general”.
+- [`Module.FinitePresentation.isLocalizedModule_map`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Module.FinitePresentation.isLocalizedModule_map#doc) registered with `add_to_stacks` in [StacksCore/Algebra/Module/FinitePresentation.lean, line 14](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Algebra/Module/FinitePresentation.lean#L14) (StacksCore): “part 2”. References: EGA 0 (1.3.5), “more general”.
 
 ## Depends on
 
@@ -48,4 +48,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.10, Tag 0581](https://stacks.math.columbia.edu/tag/0581)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

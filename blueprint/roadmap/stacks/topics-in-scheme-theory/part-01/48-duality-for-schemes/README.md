@@ -1,6 +1,6 @@
 # 48 Duality for Schemes
 
-Chapter 48 of the Stacks Project, *Duality for Schemes*, [Tag 0DWE](https://stacks.math.columbia.edu/tag/0DWE): the 33 sections of its 34 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 205 tags are carried by 504 declarations of the repository (all in StacksFrontier) and 26 registered declarations.
+Chapter 48 of the Stacks Project, *Duality for Schemes*, [Tag 0DWE](https://stacks.math.columbia.edu/tag/0DWE): the 33 sections of its 34 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 205 tags are carried by 486 declarations of the repository (all in StacksFrontier) and 25 registered declarations.
 
 ## [48.2 Dualizing complexes on… to 48.11 Right adjoint of…](part-01/README.md)
 
@@ -15,7 +15,7 @@ Chapter 48 of the Stacks Project, *Duality for Schemes*, [Tag 0DWE](https://stac
 - [48.10 Right adjoint of pushforward for closed immersions and base change](part-01/48-10-right-adjoint-of-pushforward-for-closed-im.md)
 - [48.11 Right adjoint of pushforward for finite morphisms](part-01/48-11-right-adjoint-of-pushforward-for-finite-mo.md)
 
-## [48.12 Right adjoint of… to 48.21 Dimension functions](part-02/README.md)
+## [48.12 Right adjoint of… to 48.22 Dualizing modules](part-02/README.md)
 
 - [48.12 Right adjoint of pushforward for proper flat morphisms](part-02/48-12-right-adjoint-of-pushforward-for-proper-fl.md)
 - [48.13 Right adjoint of pushforward for perfect proper morphisms](part-02/48-13-right-adjoint-of-pushforward-for-perfect-p.md)
@@ -27,10 +27,10 @@ Chapter 48 of the Stacks Project, *Duality for Schemes*, [Tag 0DWE](https://stac
 - [48.19 A duality theory](part-02/48-19-a-duality-theory.md)
 - [48.20 Glueing dualizing complexes](part-02/48-20-glueing-dualizing-complexes.md)
 - [48.21 Dimension functions](part-02/48-21-dimension-functions.md)
+- [48.22 Dualizing modules](part-02/48-22-dualizing-modules.md)
 
-## [48.22 Dualizing modules to 48.31 Preliminaries to…](part-03/README.md)
+## [48.23 Cohen-Macaulay schemes to 48.34 Lichtenbaum's theorem](part-03/README.md)
 
-- [48.22 Dualizing modules](part-03/48-22-dualizing-modules.md)
 - [48.23 Cohen-Macaulay schemes](part-03/48-23-cohen-macaulay-schemes.md)
 - [48.24 Gorenstein schemes](part-03/48-24-gorenstein-schemes.md)
 - [48.25 Gorenstein morphisms](part-03/48-25-gorenstein-morphisms.md)
@@ -40,9 +40,6 @@ Chapter 48 of the Stacks Project, *Duality for Schemes*, [Tag 0DWE](https://stac
 - [48.29 The fundamental class of an lci morphism](part-03/48-29-the-fundamental-class-of-an-lci-morphism.md)
 - [48.30 Extension by zero for coherent modules](part-03/48-30-extension-by-zero-for-coherent-modules.md)
 - [48.31 Preliminaries to compactly supported cohomology](part-03/48-31-preliminaries-to-compactly-supported-cohom.md)
-
-## [48.32 Compactly supported… to 48.34 Lichtenbaum's theorem](part-04/README.md)
-
-- [48.32 Compactly supported cohomology for coherent modules](part-04/48-32-compactly-supported-cohomology-for-coheren.md)
-- [48.33 Duality for compactly supported cohomology](part-04/48-33-duality-for-compactly-supported-cohomology.md)
-- [48.34 Lichtenbaum's theorem](part-04/48-34-lichtenbaums-theorem.md)
+- [48.32 Compactly supported cohomology for coherent modules](part-03/48-32-compactly-supported-cohomology-for-coheren.md)
+- [48.33 Duality for compactly supported cohomology](part-03/48-33-duality-for-compactly-supported-cohomology.md)
+- [48.34 Lichtenbaum's theorem](part-03/48-34-lichtenbaums-theorem.md)

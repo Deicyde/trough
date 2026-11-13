@@ -8,13 +8,13 @@ proof: formalized
 
 # 67.43 Valuative criterion of separatedness
 
-Section 67.43 of the Stacks Project, [Tag 03KT](https://stacks.math.columbia.edu/tag/03KT). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 67.43 of the Stacks Project, [Tag 03KT](https://stacks.math.columbia.edu/tag/03KT). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 03KU, a lemma
 
 [Tag 03KU](https://stacks.math.columbia.edu/tag/03KU) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.valuativeCriterion_uniqueness_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ValuativeCriteria.lean, line 292](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ValuativeCriteria.lean#L292). References: EGA II (7.3.2), “more general”.
+**`AlgebraicGeometry.Space.valuativeCriterion_uniqueness_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ValuativeCriteria.lean, line 292](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ValuativeCriteria.lean#L292). References: EGA II (7.3.2), “more general”.
 
 > **Stacks 03KU.** A separated morphism of algebraic spaces satisfies the uniqueness part
 > of the valuative criterion.
@@ -33,7 +33,7 @@ theorem valuativeCriterion_uniqueness_of_isSeparated (f : X ⟶ Y)
 
 [Tag 03KV](https://stacks.math.columbia.edu/tag/03KV) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isSeparated_of_isQuasiSeparated_of_valuativeCriterion_uniqueness`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ValuativeCriteria.lean, line 1099](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ValuativeCriteria.lean#L1099).
+**`AlgebraicGeometry.Space.isSeparated_of_isQuasiSeparated_of_valuativeCriterion_uniqueness`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ValuativeCriteria.lean, line 1100](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ValuativeCriteria.lean#L1100).
 
 > **Stacks 03KV.** A quasi-separated morphism of algebraic spaces over `S` which satisfies
 > the uniqueness part of the valuative criterion is separated.
@@ -55,7 +55,7 @@ theorem isSeparated_of_isQuasiSeparated_of_valuativeCriterion_uniqueness
 
 [Tag 0A3Z](https://stacks.math.columbia.edu/tag/0A3Z) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isSeparated_and_universallyClosed_tfae_of_isQuasiCompact_of_isQuasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Valuative/SeparatedUniversallyClosed.lean, line 49](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Valuative/SeparatedUniversallyClosed.lean#L49).
+**`AlgebraicGeometry.Space.isSeparated_and_universallyClosed_tfae_of_isQuasiCompact_of_isQuasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Valuative/SeparatedUniversallyClosed.lean, line 49](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Valuative/SeparatedUniversallyClosed.lean#L49).
 
 > For a quasi-compact and quasi-separated morphism `f : X ⟶ Y` of algebraic spaces over `S`,
 > being separated and universally closed, satisfying the valuative criterion of Stacks 03IX, and
@@ -79,4 +79,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 67.43, Tag 03KT](https://stacks.math.columbia.edu/tag/03KT)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

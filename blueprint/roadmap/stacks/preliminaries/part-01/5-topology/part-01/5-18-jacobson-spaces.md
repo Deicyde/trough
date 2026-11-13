@@ -8,13 +8,13 @@ proof: formalized
 
 # 5.18 Jacobson spaces
 
-Section 5.18 of the Stacks Project, [Tag 005T](https://stacks.math.columbia.edu/tag/005T). 7 tags here are carried by 16 declarations of the repository (1 in StacksCore and 15 in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 5.18 of the Stacks Project, [Tag 005T](https://stacks.math.columbia.edu/tag/005T). 7 tags here are carried by 16 declarations of the repository (1 in StacksCore and 15 in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 005V, a lemma
 
 [Tag 005V](https://stacks.math.columbia.edu/tag/005V) in the Stacks Project.
 
-**`jacobson_check_irreducible_closed`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/Topology/Jacobson/Criterion.lean, line 25](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Topology/Jacobson/Criterion.lean#L25).
+**`jacobson_check_irreducible_closed`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/Topology/Jacobson/Criterion.lean, line 25](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Topology/Jacobson/Criterion.lean#L25).
 
 > **Stacks 005V**. Let `X` be a topological space and `X₀` its set of closed
 > points. If for every point `x` the intersection `X₀ ∩ closure {x}` is dense in
@@ -32,7 +32,7 @@ theorem jacobson_check_irreducible_closed
 
 [Tag 02I7](https://stacks.math.columbia.edu/tag/02I7) in the Stacks Project.
 
-**`main_theorem02I7`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Jacobson/CounterexampleQuasiCompact.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Jacobson/CounterexampleQuasiCompact.lean#L55). References: EGA IV (10.4.5.1), “sufficiency”.
+**`main_theorem02I7`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Jacobson/CounterexampleQuasiCompact.lean, line 55](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Jacobson/CounterexampleQuasiCompact.lean#L55). References: EGA IV (10.4.5.1), “sufficiency”.
 
 > **Stacks 02I7**. If `X` is a Kolmogorov topological space with a basis of quasi-compact open
 > sets and `X` is not Jacobson, then there exists a point `x ∈ X` such that `{x}` is not closed
@@ -49,7 +49,7 @@ theorem main_theorem02I7
 
 [Tag 005W](https://stacks.math.columbia.edu/tag/005W) in the Stacks Project.
 
-**`jacobsonSpace_iff_of_isOpenCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Jacobson/OpenCover.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Jacobson/OpenCover.lean#L53). References: EGA IV (10.3.3); EGA IV (10.3.2), “special case”.
+**`jacobsonSpace_iff_of_isOpenCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Jacobson/OpenCover.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Jacobson/OpenCover.lean#L53). References: EGA IV (10.3.3); EGA IV (10.3.2), “special case”.
 
 > For an open covering `U : ι → TopologicalSpace.Opens X` of a topological space `X`, the space
 > `X` is Jacobson if and only if each `U i`, with the subspace topology, is Jacobson.
@@ -62,7 +62,7 @@ theorem jacobsonSpace_iff_of_isOpenCover
     JacobsonSpace X ↔ ∀ i, JacobsonSpace (U i)
 ```
 
-**`closedPoints_eq_iUnion_image_closedPoints_of_isOpenCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Jacobson/OpenCover.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Jacobson/OpenCover.lean#L64). References: EGA IV (10.4.7), “open immersions”; EGA IV (10.9.2), “special case”.
+**`closedPoints_eq_iUnion_image_closedPoints_of_isOpenCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Jacobson/OpenCover.lean, line 64](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Jacobson/OpenCover.lean#L64). References: EGA IV (10.4.7), “open immersions”; EGA IV (10.9.2), “special case”.
 
 > For an open covering `U : ι → TopologicalSpace.Opens X` of a Jacobson space `X`, the set of
 > closed points of `X` is the union over `i` of the images of the closed points of `U i` under the
@@ -81,7 +81,7 @@ theorem closedPoints_eq_iUnion_image_closedPoints_of_isOpenCover
 
 [Tag 005X](https://stacks.math.columbia.edu/tag/005X) in the Stacks Project.
 
-**`jacobson_of_iUnion_isLocallyClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Jacobson/Subspace.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Jacobson/Subspace.lean#L183). References: EGA IV (10.3.2); EGA IV (10.3.3), “necessity”; EGA IV (10.4.3), “more general”.
+**`jacobson_of_iUnion_isLocallyClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Jacobson/Subspace.lean, line 183](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Jacobson/Subspace.lean#L183). References: EGA IV (10.3.2); EGA IV (10.3.3), “necessity”; EGA IV (10.4.3), “more general”.
 
 > **Stacks 005X**. A (possibly infinite) union of locally closed subsets of a Jacobson space
 > is Jacobson, and its closed points are closed in the ambient space.
@@ -94,7 +94,7 @@ theorem jacobson_of_iUnion_isLocallyClosed
       (closedPoints (⋃ i, L i : Set X) ⊆ Subtype.val ⁻¹' closedPoints X)
 ```
 
-**`jacobson_of_isLocallyClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Jacobson/Subspace.lean, line 198](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Jacobson/Subspace.lean#L198). References: EGA IV (10.3.2), “locally closed case”; EGA IV (10.3.3), “necessity”; EGA IV (10.4.3), “more general”; EGA IV (10.4.7), “special case”; EGA IV (10.9.2), “special case”.
+**`jacobson_of_isLocallyClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Jacobson/Subspace.lean, line 198](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Jacobson/Subspace.lean#L198). References: EGA IV (10.3.2), “locally closed case”; EGA IV (10.3.3), “necessity”; EGA IV (10.4.3), “more general”; EGA IV (10.4.7), “special case”; EGA IV (10.9.2), “special case”.
 
 > **Stacks 005X**. A locally closed subset of a Jacobson space is Jacobson, and its closed
 > points are closed in the ambient space.
@@ -106,7 +106,7 @@ theorem jacobson_of_isLocallyClosed
     JacobsonSpace T ∧ (closedPoints T ⊆ Subtype.val ⁻¹' closedPoints X)
 ```
 
-**`jacobson_of_isOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Jacobson/Subspace.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Jacobson/Subspace.lean#L216). References: EGA IV (10.3.2), “special case”; EGA IV (10.3.3), “necessity”; EGA IV (10.4.3), “Open subpreschemes”; EGA IV (10.9.2), “special case”.
+**`jacobson_of_isOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Jacobson/Subspace.lean, line 216](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Jacobson/Subspace.lean#L216). References: EGA IV (10.3.2), “special case”; EGA IV (10.3.3), “necessity”; EGA IV (10.4.3), “Open subpreschemes”; EGA IV (10.9.2), “special case”.
 
 > **Stacks 005X**. An open subset of a Jacobson space is Jacobson, and its closed points are
 > closed in the ambient space.
@@ -118,7 +118,7 @@ theorem jacobson_of_isOpen
     JacobsonSpace T ∧ (closedPoints T ⊆ Subtype.val ⁻¹' closedPoints X)
 ```
 
-**`jacobson_of_isClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Jacobson/Subspace.lean, line 228](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Jacobson/Subspace.lean#L228). References: EGA IV (10.3.2), “closed subspace case”; EGA IV (10.4.3), “Closed subpreschemes”; EGA IV (10.4.7), “closed subschemes”.
+**`jacobson_of_isClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Jacobson/Subspace.lean, line 228](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Jacobson/Subspace.lean#L228). References: EGA IV (10.3.2), “closed subspace case”; EGA IV (10.4.3), “Closed subpreschemes”; EGA IV (10.4.7), “closed subschemes”.
 
 > **Stacks 005X**. A closed subset of a Jacobson space is Jacobson, and its closed points are
 > closed in the ambient space.
@@ -130,7 +130,7 @@ theorem jacobson_of_isClosed
     JacobsonSpace T ∧ (closedPoints T ⊆ Subtype.val ⁻¹' closedPoints X)
 ```
 
-**`jacobson_of_isFiniteUnionLocallyClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Jacobson/Subspace.lean, line 237](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Jacobson/Subspace.lean#L237). References: EGA IV (10.3.2), “special case”.
+**`jacobson_of_isFiniteUnionLocallyClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Jacobson/Subspace.lean, line 237](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Jacobson/Subspace.lean#L237). References: EGA IV (10.3.2), “special case”.
 
 > **Stacks 005X**. A finite union of locally closed subsets of a Jacobson space is Jacobson,
 > and its closed points are closed in the ambient space.
@@ -142,7 +142,7 @@ theorem jacobson_of_isFiniteUnionLocallyClosed
     JacobsonSpace T ∧ (closedPoints T ⊆ Subtype.val ⁻¹' closedPoints X)
 ```
 
-**`jacobson_of_isLocallyUnionOfLocallyClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Jacobson/Subspace.lean, line 252](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Jacobson/Subspace.lean#L252). References: EGA IV (10.3.2), “more general”; EGA IV (10.3.3), “necessity”; EGA IV (10.4.3), “more general”; EGA IV (10.4.7), “special case”.
+**`jacobson_of_isLocallyUnionOfLocallyClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Jacobson/Subspace.lean, line 252](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Jacobson/Subspace.lean#L252). References: EGA IV (10.3.2), “more general”; EGA IV (10.3.3), “necessity”; EGA IV (10.4.3), “more general”; EGA IV (10.4.7), “special case”.
 
 > **Stacks 005X**. A subset of a Jacobson space which locally on `X` is a union of locally
 > closed subsets is Jacobson, and its closed points are closed in the ambient space.
@@ -160,14 +160,14 @@ theorem jacobson_of_isLocallyUnionOfLocallyClosed
 
 Declarations registered for the tag:
 
-- [`instDiscreteTopologyOfFiniteOfJacobsonSpace`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=instDiscreteTopologyOfFiniteOfJacobsonSpace#doc) registered with `add_to_stacks` in [StacksCore/Topology/Jacobson/FinitelyManyClosedPoints.lean, line 20](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Topology/Jacobson/FinitelyManyClosedPoints.lean#L20) (StacksCore): “a finite Jacobson space is discrete”.
-- [`JacobsonSpace.discreteTopology`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=JacobsonSpace.discreteTopology#doc) registered with `add_to_stacks` in [StacksCore/Topology/Jacobson/FinitelyManyClosedPoints.lean, line 21](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Topology/Jacobson/FinitelyManyClosedPoints.lean#L21) (StacksCore): “a Jacobson space with finitely many closed points is discrete”.
+- [`instDiscreteTopologyOfFiniteOfJacobsonSpace`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=instDiscreteTopologyOfFiniteOfJacobsonSpace#doc) registered with `add_to_stacks` in [StacksCore/Topology/Jacobson/FinitelyManyClosedPoints.lean, line 20](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Topology/Jacobson/FinitelyManyClosedPoints.lean#L20) (StacksCore): “a finite Jacobson space is discrete”.
+- [`JacobsonSpace.discreteTopology`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=JacobsonSpace.discreteTopology#doc) registered with `add_to_stacks` in [StacksCore/Topology/Jacobson/FinitelyManyClosedPoints.lean, line 21](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Topology/Jacobson/FinitelyManyClosedPoints.lean#L21) (StacksCore): “a Jacobson space with finitely many closed points is discrete”.
 
 ## Tag 005Z, a lemma
 
 [Tag 005Z](https://stacks.math.columbia.edu/tag/005Z) in the Stacks Project.
 
-**`jacobsonSpace_locallyClosed_bijection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Jacobson/LocallyClosedUnion.lean, line 252](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Jacobson/LocallyClosedUnion.lean#L252). References: EGA IV (10.1.2), “a′ ⇒ c and c′, a′ ⇒ c″”; EGA IV (10.2.7), “special case”; EGA IV (10.3.1), “Forward direction”; EGA IV (10.9.1), “more general”; EGA IV (10.9.2), “partial”.
+**`jacobsonSpace_locallyClosed_bijection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Jacobson/LocallyClosedUnion.lean, line 252](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Jacobson/LocallyClosedUnion.lean#L252). References: EGA IV (10.1.2), “a′ ⇒ c and c′, a′ ⇒ c″”; EGA IV (10.2.7), “special case”; EGA IV (10.3.1), “Forward direction”; EGA IV (10.9.1), “more general”; EGA IV (10.9.2), “partial”.
 
 > **Stacks 005Z**. Let `X` be a Jacobson topological space, and let `X₀ = closedPoints X`
 > carry the subspace topology. There exists a bijection `Φ` between the finite unions of locally
@@ -191,7 +191,7 @@ theorem jacobsonSpace_locallyClosed_bijection
 
 [Tag 005Y](https://stacks.math.columbia.edu/tag/005Y) in the Stacks Project.
 
-**`JacobsonSpace.isConstructible_restrictToClosedPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Jacobson/ConstructibleClosedPoints.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Jacobson/ConstructibleClosedPoints.lean#L187). The attribute's comment: “well-defined”. References: EGA IV (10.4.10), “partial”.
+**`JacobsonSpace.isConstructible_restrictToClosedPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Jacobson/ConstructibleClosedPoints.lean, line 187](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Jacobson/ConstructibleClosedPoints.lean#L187). The attribute's comment: “well-defined”. References: EGA IV (10.4.10), “partial”.
 
 > The correspondence of Stacks 005Y is well defined: for a constructible subset `E` of a
 > Jacobson space `X`, the subset `E ∩ X₀` of the space of closed points is constructible.
@@ -204,7 +204,7 @@ theorem isConstructible_restrictToClosedPoints [JacobsonSpace X] {E : Set X}
     (hE : IsConstructible E) : IsConstructible (restrictToClosedPoints E)
 ```
 
-**`JacobsonSpace.subset_iff_restrictToClosedPoints_subset`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Jacobson/ConstructibleClosedPoints.lean, line 202](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Jacobson/ConstructibleClosedPoints.lean#L202). The attribute's comment: “inclusion-preserving”. References: EGA IV (10.2.7), “special case”; EGA IV (10.4.10), “partial”; EGA IV (8.1.3), “more general”.
+**`JacobsonSpace.subset_iff_restrictToClosedPoints_subset`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Jacobson/ConstructibleClosedPoints.lean, line 202](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Jacobson/ConstructibleClosedPoints.lean#L202). The attribute's comment: “inclusion-preserving”. References: EGA IV (10.2.7), “special case”; EGA IV (10.4.10), “partial”; EGA IV (8.1.3), “more general”.
 
 > The correspondence of Stacks 005Y reflects inclusions: constructible subsets `E, F` of a
 > Jacobson space satisfy `E ⊆ F` if and only if `E ∩ X₀ ⊆ F ∩ X₀`.
@@ -218,7 +218,7 @@ theorem subset_iff_restrictToClosedPoints_subset [JacobsonSpace X] {E F : Set X}
     E ⊆ F ↔ restrictToClosedPoints E ⊆ restrictToClosedPoints F
 ```
 
-**`JacobsonSpace.restrictToClosedPoints_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Jacobson/ConstructibleClosedPoints.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Jacobson/ConstructibleClosedPoints.lean#L227). The attribute's comment: “bijective correspondence”. References: EGA IV (10.4.10), “special case”.
+**`JacobsonSpace.restrictToClosedPoints_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Jacobson/ConstructibleClosedPoints.lean, line 227](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Jacobson/ConstructibleClosedPoints.lean#L227). The attribute's comment: “bijective correspondence”. References: EGA IV (10.4.10), “special case”.
 
 > Stacks 005Y: on a Jacobson space `X`, restriction to the closed points is a bijection from
 > the constructible subsets of `X` onto the constructible subsets of `X₀ = closedPoints X`.
@@ -237,7 +237,7 @@ theorem restrictToClosedPoints_bijective [JacobsonSpace X] :
           {F : Set (closedPoints X) // IsConstructible F}))
 ```
 
-**`JacobsonSpace.isOpen_and_isRetrocompact_iff_on_closedPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Jacobson/ConstructibleClosedPoints.lean, line 262](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Jacobson/ConstructibleClosedPoints.lean#L262). The attribute's comment: “preserves retrocompact opens”.
+**`JacobsonSpace.isOpen_and_isRetrocompact_iff_on_closedPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Jacobson/ConstructibleClosedPoints.lean, line 262](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Jacobson/ConstructibleClosedPoints.lean#L262). The attribute's comment: “preserves retrocompact opens”.
 
 > Stacks 005Y: the correspondence matches the retrocompact opens of `X` with the retrocompact
 > opens of `X₀`. A constructible subset `E` of a Jacobson space is a retrocompact open if and only
@@ -254,7 +254,7 @@ theorem isOpen_and_isRetrocompact_iff_on_closedPoints [JacobsonSpace X] {E : Set
       (IsOpen (restrictToClosedPoints E) ∧ IsRetrocompact (restrictToClosedPoints E))
 ```
 
-**`JacobsonSpace.isOpen_compl_and_isRetrocompact_compl_iff_on_closedPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Jacobson/ConstructibleClosedPoints.lean, line 282](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Jacobson/ConstructibleClosedPoints.lean#L282). The attribute's comment: “preserves complements of retrocompact opens”.
+**`JacobsonSpace.isOpen_compl_and_isRetrocompact_compl_iff_on_closedPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Jacobson/ConstructibleClosedPoints.lean, line 282](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Jacobson/ConstructibleClosedPoints.lean#L282). The attribute's comment: “preserves complements of retrocompact opens”.
 
 > Stacks 005Y: the correspondence matches the complements of retrocompact opens of `X` with the
 > complements of retrocompact opens of `X₀`. This is the previous statement applied to `Eᶜ`, which
@@ -275,4 +275,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 5.18, Tag 005T](https://stacks.math.columbia.edu/tag/005T)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

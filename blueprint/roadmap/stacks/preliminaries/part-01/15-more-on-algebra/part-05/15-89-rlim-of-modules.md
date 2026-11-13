@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.89 Rlim of modules
 
-Section 15.89 of the Stacks Project, [Tag 0CQC](https://stacks.math.columbia.edu/tag/0CQC). 12 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.89 of the Stacks Project, [Tag 0CQC](https://stacks.math.columbia.edu/tag/0CQC). 12 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 091D, a lemma
 
 [Tag 091D](https://stacks.math.columbia.edu/tag/091D) in the Stacks Project.
 
-**`ModuleInverseLimit.inverseLimit_hasRightDerivedFunctor_and_computations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/ModuleInverseLimitFunctor/TermwiseComputation.lean, line 425](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedCategory/InverseSystem/ModuleInverseLimitFunctor/TermwiseComputation.lean#L425).
+**`ModuleInverseLimit.inverseLimit_hasRightDerivedFunctor_and_computations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/ModuleInverseLimitFunctor/TermwiseComputation.lean, line 426](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedCategory/InverseSystem/ModuleInverseLimitFunctor/TermwiseComputation.lean#L426).
 
 > **Stacks 091D.** For modules over an inverse system of rings, the inverse-limit functor has
 > a right derived functor on the unbounded derived category. Higher derived limits vanish above
@@ -96,7 +96,7 @@ public theorem inverseLimit_hasRightDerivedFunctor_and_computations
 
 [Tag 091E](https://stacks.math.columbia.edu/tag/091E) in the Stacks Project.
 
-**`ModuleInverseLimitGlobalSections.derivedInverseLimitIsoDerivedGlobalSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/ModuleInverseLimitGlobalSections.lean, line 667](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedCategory/InverseSystem/ModuleInverseLimitGlobalSections.lean#L667).
+**`ModuleInverseLimitGlobalSections.derivedInverseLimitIsoDerivedGlobalSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/ModuleInverseLimitGlobalSections.lean, line 667](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedCategory/InverseSystem/ModuleInverseLimitGlobalSections.lean#L667).
 
 > On the site `ℕ` with its bottom topology, module sheaves over an inverse system of rings are
 > compatible inverse systems of modules. Under this equivalence, the right derived inverse-limit
@@ -177,7 +177,7 @@ public theorem derivedInverseLimitIsoDerivedGlobalSections (A : ℕᵒᵖ ⥤ Ri
 
 [Tag 0CQD](https://stacks.math.columbia.edu/tag/0CQD) in the Stacks Project.
 
-**`ModuleRightDerivedLimit.rightDerivedInverseLimit_isDerivedLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/ModuleRightDerivedLimit.lean, line 405](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedCategory/InverseSystem/ModuleRightDerivedLimit.lean#L405).
+**`ModuleRightDerivedLimit.rightDerivedInverseLimit_isDerivedLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/ModuleRightDerivedLimit.lean, line 406](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedCategory/InverseSystem/ModuleRightDerivedLimit.lean#L406).
 
 > **Stacks 0CQD.** The right-derived inverse-limit functor for compatible modules over an
 > inverse system of rings is, on every object, a derived limit of the associated inverse system in
@@ -207,7 +207,7 @@ public theorem rightDerivedInverseLimit_isDerivedLimit
 
 [Tag 0CQE](https://stacks.math.columbia.edu/tag/0CQE) in the Stacks Project.
 
-**`ModuleRightDerivedLimit.inverseLimit_hasRightDerivedFunctor_and_homology_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/ModuleRightDerivedLimit.lean, line 581](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedCategory/InverseSystem/ModuleRightDerivedLimit.lean#L581).
+**`ModuleRightDerivedLimit.inverseLimit_hasRightDerivedFunctor_and_homology_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/ModuleRightDerivedLimit.lean, line 582](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedCategory/InverseSystem/ModuleRightDerivedLimit.lean#L582).
 
 > **Stacks 0CQE.** For a complex of compatible modules over an inverse system of rings, the
 > long exact cohomology sequence of its canonical derived-limit triangle breaks into short exact
@@ -305,7 +305,7 @@ public theorem inverseLimit_hasRightDerivedFunctor_and_homology_shortExact
 
 [Tag 091I](https://stacks.math.columbia.edu/tag/091I) in the Stacks Project.
 
-**`Stacks.InverseSystem.ModuleDerivedLift.exists_derivedObject_of_inverseSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/Modules.lean, line 1035](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedCategory/InverseSystem/Modules.lean#L1035).
+**`Stacks.InverseSystem.ModuleDerivedLift.exists_derivedObject_of_inverseSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/Modules.lean, line 1035](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedCategory/InverseSystem/Modules.lean#L1035).
 
 > **Stacks 091I**.
 > Let `(A_n)` be an inverse system of commutative rings with transition maps
@@ -328,7 +328,7 @@ theorem exists_derivedObject_of_inverseSystem
 
 [Tag 07KZ](https://stacks.math.columbia.edu/tag/07KZ) in the Stacks Project.
 
-**`ModuleDerivedLimitTriangle.derivedLimit_iso_and_homology_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/ModuleDerivedLimitTriangle.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedCategory/InverseSystem/ModuleDerivedLimitTriangle.lean#L68).
+**`ModuleDerivedLimitTriangle.derivedLimit_iso_and_homology_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/ModuleDerivedLimitTriangle.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedCategory/InverseSystem/ModuleDerivedLimitTriangle.lean#L68).
 
 > **Stacks 07KZ.** Any two derived limits of the same countable inverse system of complexes of
 > modules are isomorphic. Moreover, after exhibiting a derived limit by its defining distinguished
@@ -382,7 +382,7 @@ public theorem derivedLimit_iso_and_homology_shortExact
 
 [Tag 091F](https://stacks.math.columbia.edu/tag/091F) in the Stacks Project.
 
-**`ModuleSystemRepresentative.exists_representative_with_surjective_transition_maps`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/ModuleRepresentatives.lean, line 312](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedCategory/InverseSystem/ModuleRepresentatives.lean#L312).
+**`ModuleSystemRepresentative.exists_representative_with_surjective_transition_maps`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/ModuleRepresentatives.lean, line 313](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedCategory/InverseSystem/ModuleRepresentatives.lean#L313).
 
 > **Stacks 091F.** Every object of the derived category of inverse systems of modules over an
 > inverse system of rings is represented by a complex whose transition maps are surjective in
@@ -404,7 +404,7 @@ public theorem exists_representative_with_surjective_transition_maps
 
 [Tag 091G](https://stacks.math.columbia.edu/tag/091G) in the Stacks Project.
 
-**`ModuleSystemKFlat.exists_representative_with_kFlat_components`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/ModuleRlimDerived.lean, line 138](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedCategory/InverseSystem/ModuleRlimDerived.lean#L138).
+**`ModuleSystemKFlat.exists_representative_with_kFlat_components`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/ModuleRlimDerived.lean, line 138](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedCategory/InverseSystem/ModuleRlimDerived.lean#L138).
 
 > **Stacks 091G.** Every object of the derived category of inverse systems of modules over an
 > inverse system of commutative rings has a representative whose complex at every index is
@@ -432,7 +432,7 @@ public theorem exists_representative_with_kFlat_components
 
 [Tag 091H](https://stacks.math.columbia.edu/tag/091H) in the Stacks Project.
 
-**`ModuleSystemKFlatComparison.derivedTensorProduct`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/ModuleKFlatComparison/DerivedTensor.lean, line 710](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedCategory/InverseSystem/ModuleKFlatComparison/DerivedTensor.lean#L710).
+**`ModuleSystemKFlatComparison.derivedTensorProduct`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/ModuleKFlatComparison/DerivedTensor.lean, line 714](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedCategory/InverseSystem/ModuleKFlatComparison/DerivedTensor.lean#L714).
 
 > **Stacks 091H.** The derived category of compatible module systems over an inverse system of
 > commutative rings has a canonical symmetric derived tensor product. A componentwise K-flat
@@ -451,7 +451,7 @@ public noncomputable def derivedTensorProduct
 
 [Tag 091J](https://stacks.math.columbia.edu/tag/091J) in the Stacks Project.
 
-**`ModuleSystemRlimTensor.exists_exactFunctor_isDerivedLimit_tensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/ModuleRlimTensorLimit.lean, line 936](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedCategory/InverseSystem/ModuleRlimTensorLimit.lean#L936).
+**`ModuleSystemRlimTensor.exists_exactFunctor_isDerivedLimit_tensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/ModuleRlimTensorLimit.lean, line 936](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedCategory/InverseSystem/ModuleRlimTensorLimit.lean#L936).
 
 > **Stacks 091J.** The construction is the composite of the constant-system functor,
 > derived tensor product with a lift of `E` in the derived category of compatible systems,
@@ -517,7 +517,7 @@ public theorem exists_exactFunctor_isDerivedLimit_tensor
 
 [Tag 091K](https://stacks.math.columbia.edu/tag/091K) in the Stacks Project.
 
-**`ModuleSystemRlimTensor.derivedLimit_tensor_mapTriangle_distinguished`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/ModuleRlimTensorLimit.lean, line 1066](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedCategory/InverseSystem/ModuleRlimTensorLimit.lean#L1066).
+**`ModuleSystemRlimTensor.derivedLimit_tensor_mapTriangle_distinguished`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/ModuleRlimTensorLimit.lean, line 1066](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedCategory/InverseSystem/ModuleRlimTensorLimit.lean#L1066).
 
 > **Stacks 091K.** The canonical composite `Rlim ∘ (ΔK ⊗ᴸ[A] -)` from `D(ℕ, A)` to
 > `D(A)` is exact. Equivalently, its canonical image of every distinguished triangle is
@@ -568,7 +568,7 @@ public theorem derivedLimit_tensor_mapTriangle_distinguished
 
 [Tag 091L](https://stacks.math.columbia.edu/tag/091L) in the Stacks Project.
 
-**`ModuleSystemRlimProTensor.derivedLimit_tensor_map_isIso_of_proIsomorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/ModuleRlimProTensor.lean, line 622](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedCategory/InverseSystem/ModuleRlimProTensor.lean#L622).
+**`ModuleSystemRlimProTensor.derivedLimit_tensor_map_isIso_of_proIsomorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/InverseSystem/ModuleRlimProTensor.lean, line 622](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedCategory/InverseSystem/ModuleRlimProTensor.lean#L622).
 
 > If the morphism between the systems in `D(A)` associated to a morphism in `D(ℕ, A)` is an
 > isomorphism of pro-objects, then for every `K ∈ D(A)` the corresponding map between the derived
@@ -615,4 +615,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.89, Tag 0CQC](https://stacks.math.columbia.edu/tag/0CQC)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

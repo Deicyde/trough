@@ -8,13 +8,13 @@ proof: formalized
 
 # 44.7 Some remarks on Picard groups
 
-Section 44.7 of the Stacks Project, [Tag 0CDS](https://stacks.math.columbia.edu/tag/0CDS). 2 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 44.7 of the Stacks Project, [Tag 0CDS](https://stacks.math.columbia.edu/tag/0CDS). 2 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0CDT, a lemma
 
 [Tag 0CDT](https://stacks.math.columbia.edu/tag/0CDT) in the Stacks Project.
 
-**`Stacks.Picard.continuousSMul_galoisPicardAction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/GaloisDescent/FiniteStageContinuity.lean, line 274](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Picard/GaloisDescent/FiniteStageContinuity.lean#L274). The attribute's comment: “continuity of the action of `Gal(k'/k)` on `Pic(X_{k'})`, proved from Tag 0B8W (2) through `exists_finiteSubextension_schemePullbackClass_eq`”.
+**`Stacks.Picard.continuousSMul_galoisPicardAction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/GaloisDescent/FiniteStageContinuity.lean, line 276](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Picard/GaloisDescent/FiniteStageContinuity.lean#L276). The attribute's comment: “continuity of the action of `Gal(k'/k)` on `Pic(X_{k'})`, proved from Tag 0B8W (2) through `exists_finiteSubextension_schemePullbackClass_eq`”.
 
 > **The continuity clause of Stacks Tag 0CDT.** Let `k` be a field, let `X` be a quasi-compact,
 > quasi-separated scheme over `k`, and let `K/k` be a Galois extension. The action of `Gal(K/k)`
@@ -31,7 +31,7 @@ theorem continuousSMul_galoisPicardAction (X : Over (Spec (.of k)))
     ContinuousSMul (K ≃ₐ[k] K) (ofScheme (SchemeOver.baseChange k K X))
 ```
 
-**`Stacks.Picard.injective_schemePullbackClass_of_globalSectionsIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/GaloisDescent/Injectivity.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Picard/GaloisDescent/Injectivity.lean#L68). The attribute's comment: “injectivity of `Pic(X) → Pic(X_{k'})`, proved from Tag 0CC5; the full identification is `bijOn_schemePullbackClass_galoisFixedClasses`”.
+**`Stacks.Picard.injective_schemePullbackClass_of_globalSectionsIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/GaloisDescent/Injectivity.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Picard/GaloisDescent/Injectivity.lean#L68). The attribute's comment: “injectivity of `Pic(X) → Pic(X_{k'})`, proved from Tag 0CC5; the full identification is `bijOn_schemePullbackClass_galoisFixedClasses`”.
 
 > **The injectivity half of Stacks Tag 0CDT.** Let `X` be a quasi-compact, quasi-separated
 > scheme over a field `k` with `H⁰(X, 𝒪_X) = k`, and let `k'/k` be a field extension. Then the
@@ -46,7 +46,7 @@ theorem injective_schemePullbackClass_of_globalSectionsIso {k k' : Type u} [Fiel
     Function.Injective (schemePullbackClass (pullback.fst f (Spec.map (CommRingCat.ofHom φ))))
 ```
 
-**`Stacks.Picard.bijOn_schemePullbackClass_galoisFixedClasses`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/GaloisDescent/PicardGaloisInvariants.lean, line 178](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Picard/GaloisDescent/PicardGaloisInvariants.lean#L178). The attribute's comment: “the identification `Pic(X) = Pic(X_{k'})^{Gal(k'/k)}`. The continuity clause of the tag is `Stacks.Picard.continuousSMul_galoisPicardAction`”.
+**`Stacks.Picard.bijOn_schemePullbackClass_galoisFixedClasses`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/GaloisDescent/PicardGaloisInvariants.lean, line 180](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Picard/GaloisDescent/PicardGaloisInvariants.lean#L180). The attribute's comment: “the identification `Pic(X) = Pic(X_{k'})^{Gal(k'/k)}`. The continuity clause of the tag is `Stacks.Picard.continuousSMul_galoisPicardAction`”.
 
 > **Stacks Project, Tag 0CDT.** Let `k` be a field, let `X` be a quasi-compact,
 > quasi-separated scheme over `k` with `H⁰(X, 𝒪_X) = k` admitting a `k`-rational point, and let
@@ -68,7 +68,7 @@ theorem bijOn_schemePullbackClass_galoisFixedClasses (k k' : Type u) [Field k] [
 
 [Tag 0CD5](https://stacks.math.columbia.edu/tag/0CD5) in the Stacks Project.
 
-**`Stacks.Picard.bijOn_schemePullbackClass_zsmulTorsion_of_isPurelyInseparable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/TorsionBaseChange.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Picard/TorsionBaseChange.lean#L125).
+**`Stacks.Picard.bijOn_schemePullbackClass_zsmulTorsion_of_isPurelyInseparable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Picard/TorsionBaseChange.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Picard/TorsionBaseChange.lean#L125).
 
 > **Stacks Project, Tag 0CD5.** Let `k` be a field of characteristic `p > 0`, let `X` be a
 > quasi-compact and quasi-separated scheme over `k` with `H⁰(X, 𝒪_X) = k`, and let `n` be an
@@ -102,4 +102,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 44.7, Tag 0CDS](https://stacks.math.columbia.edu/tag/0CDS)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

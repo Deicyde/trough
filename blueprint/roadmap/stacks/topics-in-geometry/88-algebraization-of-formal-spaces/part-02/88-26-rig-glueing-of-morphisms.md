@@ -8,13 +8,13 @@ proof: formalized
 
 # 88.26 Rig glueing of morphisms
 
-Section 88.26 of the Stacks Project, [Tag 0GI2](https://stacks.math.columbia.edu/tag/0GI2). 1 tag here is carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 88.26 of the Stacks Project, [Tag 0GI2](https://stacks.math.columbia.edu/tag/0GI2). 1 tag here is carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0GI3, a proposition
 
 [Tag 0GI3](https://stacks.math.columbia.edu/tag/0GI3) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.morToModificationCompletion_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/MorphismsFromProperModification.lean, line 214](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/MorphismsFromProperModification.lean#L214). The attribute's comment: “injectivity of the comparison map”.
+**`AlgebraicGeometry.Space.morToModificationCompletion_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/MorphismsFromProperModification.lean, line 214](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/MorphismsFromProperModification.lean#L214). The attribute's comment: “injectivity of the comparison map”.
 
 > **Stacks 0GI3**, injectivity. Let `X` be a locally Noetherian algebraic space over `S`, let
 > `T ⊆ |X|` be a closed subset with complementary open subspace `U ⊆ X`, and let `f : X' ⟶ X` be a
@@ -34,7 +34,7 @@ theorem morToModificationCompletion_injective
     Function.Injective (morToModificationCompletion B S hS f T W)
 ```
 
-**`AlgebraicGeometry.Space.morToModificationCompletion_codRestrict_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/MorphismsFromProperModificationExistence.lean, line 173](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/MorphismsFromProperModificationExistence.lean#L173).
+**`AlgebraicGeometry.Space.morToModificationCompletion_codRestrict_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/MorphismsFromProperModificationExistence.lean, line 173](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/MorphismsFromProperModificationExistence.lean#L173).
 
 > **Stacks 0GI3.** Let `S` be a scheme, `X` a locally Noetherian algebraic space over `S`,
 > `T ⊆ |X|` a closed subset with complementary open subspace `U ⊆ X`, and `f : X' ⟶ X` a proper
@@ -66,4 +66,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 88.26, Tag 0GI2](https://stacks.math.columbia.edu/tag/0GI2)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

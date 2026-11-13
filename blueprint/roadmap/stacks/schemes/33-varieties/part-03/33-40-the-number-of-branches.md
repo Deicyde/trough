@@ -8,13 +8,13 @@ proof: formalized
 
 # 33.40 The number of branches
 
-Section 33.40 of the Stacks Project, [Tag 0C3Z](https://stacks.math.columbia.edu/tag/0C3Z). 6 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 33.40 of the Stacks Project, [Tag 0C3Z](https://stacks.math.columbia.edu/tag/0C3Z). 6 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0C1S, a lemma
 
 [Tag 0C1S](https://stacks.math.columbia.edu/tag/0C1S) in the Stacks Project.
 
-**`AlgebraicGeometry.numberOfBranches_eq_encard_normalizationFiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/NormalizationBranches.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/NormalizationBranches.lean#L77). The attribute's comment: “branches”.
+**`AlgebraicGeometry.numberOfBranches_eq_encard_normalizationFiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/NormalizationBranches.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/NormalizationBranches.lean#L77). The attribute's comment: “branches”.
 
 > The number of branches at a point equals the number of points of the normalization above it.
 
@@ -28,7 +28,7 @@ public theorem numberOfBranches_eq_encard_normalizationFiber
         Scheme.normalization X hX y = x}
 ```
 
-**`AlgebraicGeometry.numberOfGeometricBranches_eq_card_sigma_sepDegree_normalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/NormalizationBranches.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/NormalizationBranches.lean#L112). The attribute's comment: “geometric\_branches”.
+**`AlgebraicGeometry.numberOfGeometricBranches_eq_card_sigma_sepDegree_normalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/NormalizationBranches.lean, line 112](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/NormalizationBranches.lean#L112). The attribute's comment: “geometric\_branches”.
 
 > The number of geometric branches at a point is the sum, over the points of the normalization
 > above it, of the separable degrees of the corresponding residue-field extensions, interpreted
@@ -52,7 +52,7 @@ public theorem numberOfGeometricBranches_eq_card_sigma_sepDegree_normalization
 
 [Tag 0C40](https://stacks.math.columbia.edu/tag/0C40) in the Stacks Project.
 
-**`AlgebraicGeometry.numberOfGeometricBranches_baseChange_fieldExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/GeometricBranchesFieldChange.lean, line 1030](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/GeometricBranchesFieldChange.lean#L1030).
+**`AlgebraicGeometry.numberOfGeometricBranches_baseChange_fieldExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/GeometricBranchesFieldChange.lean, line 1030](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/GeometricBranchesFieldChange.lean#L1030).
 
 > The number of geometric branches at a point of a scheme locally of finite type over a field
 > is unchanged after extending the ground field and choosing a point above it.
@@ -73,7 +73,7 @@ public theorem numberOfGeometricBranches_baseChange_fieldExtension
 
 [Tag 0C55](https://stacks.math.columbia.edu/tag/0C55) in the Stacks Project.
 
-**`AlgebraicGeometry.isGeometricallyUnibranchAt_iff_of_fieldExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/GeometricBranchesFieldChange.lean, line 1125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/GeometricBranchesFieldChange.lean#L1125). References: EGA IV (6.15.7), “loc. finite type, at x”.
+**`AlgebraicGeometry.isGeometricallyUnibranchAt_iff_of_fieldExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/GeometricBranchesFieldChange.lean, line 1125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/GeometricBranchesFieldChange.lean#L1125). References: EGA IV (6.15.7), “loc. finite type, at x”.
 
 > **Stacks Project, Tag 0C55.** Geometric unibranchness at a point is invariant under
 > extension of the ground field for a scheme locally of finite type over that field.
@@ -94,7 +94,7 @@ public theorem isGeometricallyUnibranchAt_iff_of_fieldExtension
 
 [Tag 0C41](https://stacks.math.columbia.edu/tag/0C41) in the Stacks Project.
 
-**`IsLocalRing.IsWedge`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Branches/Wedge.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Branches/Wedge.lean#L65).
+**`IsLocalRing.IsWedge`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Branches/Wedge.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Branches/Wedge.lean#L65).
 
 > A local ring `A` is a wedge of the nonempty finite family
 > `B` if their residue fields can be identified and `A` is isomorphic to the subring of the
@@ -109,7 +109,7 @@ public def IsWedge (A : Type u) {n : ℕ} (B : Fin (n + 1) → Type v)
 
 [Tag 0C42](https://stacks.math.columbia.edu/tag/0C42) in the Stacks Project.
 
-**`Ring.deltaInvariant_ge_numberOfGeometricBranches_sub_one_of_strictlyHenselian`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/DeltaBranchBound.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/DeltaBranchBound.lean#L78). The attribute's comment: “delta\_ge\_branches\_sub\_one”.
+**`Ring.deltaInvariant_ge_numberOfGeometricBranches_sub_one_of_strictlyHenselian`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/DeltaBranchBound.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/DeltaBranchBound.lean#L78). The attribute's comment: “delta\_ge\_branches\_sub\_one”.
 
 > The delta invariant of a strictly henselian reduced Nagata
 > local ring is at least the number of its geometric branches minus one.
@@ -123,7 +123,7 @@ public lemma deltaInvariant_ge_numberOfGeometricBranches_sub_one_of_strictlyHens
       numberOfGeometricBranchesOfLocalRing A - 1
 ```
 
-**`Ring.exists_isWedge_of_deltaInvariant_eq_numberOfGeometricBranches_sub_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/DeltaBranchBound.lean, line 350](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/DeltaBranchBound.lean#L350). The attribute's comment: “equality\_implies\_wedge”.
+**`Ring.exists_isWedge_of_deltaInvariant_eq_numberOfGeometricBranches_sub_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/DeltaBranchBound.lean, line 350](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/DeltaBranchBound.lean#L350). The attribute's comment: “equality\_implies\_wedge”.
 
 > A strictly henselian, reduced, one-dimensional Nagata local ring attaining the lower bound
 > for its delta invariant is a wedge of a nonempty finite family of strictly henselian discrete
@@ -147,7 +147,7 @@ public theorem exists_isWedge_of_deltaInvariant_eq_numberOfGeometricBranches_sub
 
 [Tag 0C43](https://stacks.math.columbia.edu/tag/0C43) in the Stacks Project.
 
-**`Ring.deltaInvariant_ge_numberOfGeometricBranches_sub_one`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/DeltaBranches/LowerBound.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/DeltaBranches/LowerBound.lean#L65).
+**`Ring.deltaInvariant_ge_numberOfGeometricBranches_sub_one`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/DeltaBranches/LowerBound.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/DeltaBranches/LowerBound.lean#L65).
 
 > The delta invariant of a reduced one-dimensional Nagata local ring is at least the number
 > of its geometric branches minus one.
@@ -167,4 +167,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 33.40, Tag 0C3Z](https://stacks.math.columbia.edu/tag/0C3Z)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 47.14 Base change for trivial duality
 
-Section 47.14 of the Stacks Project, [Tag 0E28](https://stacks.math.columbia.edu/tag/0E28). 4 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 47.14 of the Stacks Project, [Tag 0E28](https://stacks.math.columbia.edu/tag/0E28). 4 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0E29, an equation
 
 [Tag 0E29](https://stacks.math.columbia.edu/tag/0E29) in the Stacks Project.
 
-**`Dualizing.derivedHomBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TrivialDuality/BaseChange.lean, line 222](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/TrivialDuality/BaseChange.lean#L222).
+**`Dualizing.derivedHomBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TrivialDuality/BaseChange.lean, line 222](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/TrivialDuality/BaseChange.lean#L222).
 
 > The canonical base-change map
 > `RHom_R(A, -) ⊗ᴸ_A (A ⊗_R R') ⟶ RHom_{R'}(A ⊗_R R', - ⊗ᴸ_R R')`,
@@ -52,7 +52,7 @@ noncomputable def derivedHomBaseChange
           R' →ₐ[R] TensorProduct R A R').toRingHom
 ```
 
-**`Dualizing.derivedHomBaseChangeCanonical`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TrivialDuality/BaseChangeCanonical.lean, line 86](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/TrivialDuality/BaseChangeCanonical.lean#L86). The attribute's comment: “at the constructed derived extensions of scalars; one universe for all rings”.
+**`Dualizing.derivedHomBaseChangeCanonical`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TrivialDuality/BaseChangeCanonical.lean, line 86](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/TrivialDuality/BaseChangeCanonical.lean#L86). The attribute's comment: “at the constructed derived extensions of scalars; one universe for all rings”.
 
 > The canonical base-change map
 > `RHom_R(A, -) ⊗ᴸ_A (A ⊗_R R') ⟶ RHom_{R'}(A ⊗_R R', - ⊗ᴸ_R R')`
@@ -79,7 +79,7 @@ noncomputable def derivedHomBaseChangeCanonical
 
 [Tag 0E2A](https://stacks.math.columbia.edu/tag/0E2A) in the Stacks Project.
 
-**`Dualizing.isIso_derivedHomBaseChange_app_iff_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DerivedHomBaseChange/Criterion.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/DerivedHomBaseChange/Criterion.lean#L220).
+**`Dualizing.isIso_derivedHomBaseChange_app_iff_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DerivedHomBaseChange/Criterion.lean, line 220](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/DerivedHomBaseChange/Criterion.lean#L220).
 
 > For `R → A` and `R → R'` with `A` and `R'` Tor independent over `R`, and `A' = A ⊗_R R'`, the
 > base-change morphism `RHom_R(A, K) ⊗ᴸ_A A' ⟶ RHom_{R'}(A', K ⊗ᴸ_R R')` of Stacks 0E29 is an
@@ -105,7 +105,7 @@ theorem isIso_derivedHomBaseChange_app_iff_diagonal
 
 [Tag 0BZM](https://stacks.math.columbia.edu/tag/0BZM) in the Stacks Project.
 
-**`Dualizing.isIso_derivedHomBaseChange_app_of_isModulePseudoCoherent_of_finiteTorDimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TrivialDuality/BaseChangeIsomorphismFiniteTorDimension.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/TrivialDuality/BaseChangeIsomorphismFiniteTorDimension.lean#L126).
+**`Dualizing.isIso_derivedHomBaseChange_app_of_isModulePseudoCoherent_of_finiteTorDimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TrivialDuality/BaseChangeIsomorphismFiniteTorDimension.lean, line 126](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/TrivialDuality/BaseChangeIsomorphismFiniteTorDimension.lean#L126).
 
 > **Stacks 0BZM.** Let `R → A` and `R → R'` be homomorphisms of commutative rings and
 > `A' = A ⊗_R R'`. If `A` is pseudo-coherent as an `R`-module, `R'` has finite Tor dimension as an
@@ -131,7 +131,7 @@ theorem isIso_derivedHomBaseChange_app_of_isModulePseudoCoherent_of_finiteTorDim
 
 [Tag 0BZP](https://stacks.math.columbia.edu/tag/0BZP) in the Stacks Project.
 
-**`Dualizing.isIso_derivedHomBaseChange_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TrivialDuality/BaseChangeIsomorphism.lean, line 233](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/TrivialDuality/BaseChangeIsomorphism.lean#L233).
+**`Dualizing.isIso_derivedHomBaseChange_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TrivialDuality/BaseChangeIsomorphism.lean, line 234](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/TrivialDuality/BaseChangeIsomorphism.lean#L234).
 
 > **Stacks 0BZP.** Let `R → A` and `R → R'` be homomorphisms of commutative rings and
 > `A' = A ⊗_R R'`. If `A` is perfect as an `R`-module and `A` and `R'` are Tor independent over
@@ -159,4 +159,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 47.14, Tag 0E28](https://stacks.math.columbia.edu/tag/0E28)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

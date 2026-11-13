@@ -1,75 +1,49 @@
 ---
 declaration: section
 origin: cited
-lean: Stacks.Chow.regularTameSymbolOfKrullDimOne, Stacks.Chow.tameSymbolOfKrullDimOne, Stacks.Chow.normPushforwardOfIsIntegrallyClosed, Stacks.Chow.tameSymbolOfFiniteIntegralClosure, Stacks.Chow.tameSymbol_apply_eq_of_tameSymbolPreparation, Stacks.Chow.normPushforward_apply_eq_of_tameSymbolPreparation, Stacks.Chow.normPushforwardOfIsIntegrallyClosed_apply_eq_symbolValue, Stacks.Chow.normPushforwardOfFiniteIntegralClosure_apply_eq_symbolValue
+lean: Stacks.Chow.formulaTameSymbol_isTameSymbol, Stacks.Chow.tameSymbol_apply_eq_of_tameSymbolPreparation, Stacks.Chow.normPushforward_apply_eq_of_tameSymbolPreparation, Stacks.Chow.normPushforwardOfIsIntegrallyClosed_apply_eq_symbolValue, Stacks.Chow.normPushforwardOfFiniteIntegralClosure_apply_eq_symbolValue, Stacks.Chow.tameSymbolOfFiniteIntegralClosure_apply_eq_symbolValue, Stacks.Chow.tameSymbolOfFiniteIntegralClosure_eq_symbolValue, Stacks.Chow.tameSymbolFormula_eq
 statement: formalized
 proof: formalized
 ---
 
 # 42.5 Tame symbols
 
-Section 42.5 of the Stacks Project, [Tag 0EAH](https://stacks.math.columbia.edu/tag/0EAH). 7 tags here are carried by 34 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 42.5 of the Stacks Project, [Tag 0EAH](https://stacks.math.columbia.edu/tag/0EAH). 7 tags here are carried by 33 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0EAH, the section
 
 [Tag 0EAH](https://stacks.math.columbia.edu/tag/0EAH) in the Stacks Project.
 
-**`Stacks.Chow.regularTameSymbolOfKrullDimOne`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/KrullDimOne.lean, line 213](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/KrullDimOne.lean#L213). The attribute's comment: “on nonzerodivisors, for every one-dimensional Noetherian local ring”.
+**`Stacks.Chow.formulaTameSymbol_isTameSymbol`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/Properties.lean, line 145](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/Properties.lean#L145). The attribute's comment: “the tame symbol defined by the recipe 0EAQ (formulaTameSymbol, equal on nonzerodivisors to tameSymbolFormula) satisfies properties (1)-(7), for every one-dimensional Noetherian local ring with its total ring of fractions”.
 
-> The tame symbol of a one-dimensional Noetherian local ring `A` on pairs of nonzerodivisors:
-> the symbol of Stacks 02PZ on the module `A` itself, which satisfies Stacks 0EAL, 0EAM, 0EAN and
-> 0EAP.
-
-```lean
-noncomputable def regularTameSymbolOfKrullDimOne : RegularTameSymbol A
-```
-
-**`Stacks.Chow.tameSymbolOfKrullDimOne`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/KrullDimOne.lean, line 239](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/KrullDimOne.lean#L239). The attribute's comment: “on Q(A)^*, for every one-dimensional Noetherian local ring”.
-
-> The tame symbol `∂_A : Q(A)^* × Q(A)^* → κ(𝔪)^*` of a one-dimensional Noetherian local
-> ring `A`, satisfying Stacks 0EAI, 0EAJ and 0EAK: the extension
-> (`Stacks.Chow.RegularTameSymbol.extend`) of the symbol of Stacks 02PZ on pairs of
-> nonzerodivisors.
-
-```lean
-noncomputable def tameSymbolOfKrullDimOne (Q : Type v) [CommRing Q] [Algebra A Q]
-    [IsFractionRing A Q] : TameSymbol A Q
-```
-
-**`Stacks.Chow.normPushforwardOfIsIntegrallyClosed`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/NormalModification.lean, line 160](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/NormalModification.lean#L160). The attribute's comment: “on nonzerodivisors, for a local domain with a normal finite modification”.
-
-> The tame symbol on nonzerodivisors of a one-dimensional Noetherian local domain `A` with a
-> normal finite modification: for `A ⊆ B` module-finite with `B` an integrally closed domain and
-> `B/A` annihilated by a power of `𝔪`,
+> **Stacks 0EAH.** Let `(A, 𝔪)` be a Noetherian local ring of dimension one with total ring of
+> fractions `Q`. The tame symbol `∂_A : Q(A)^* × Q(A)^* → κ(𝔪)^*` defined by the recipe Stacks
+> 0EAQ — on a pair of nonzerodivisors `a₁, a₂` of `A` it is the displayed product
+> `Stacks.Chow.tameSymbolFormula` computed from a finite extension with local factorizations as in
+> Stacks 0EAG, and on `Q(A)^*` it is given by the fraction formula
+> `∂_A(a/b, c/d) = ∂_A(a, c) ∂_A(a, d)^{-1} ∂_A(b, c)^{-1} ∂_A(b, d)` — satisfies all seven
+> properties (1)–(7) of the section (`Stacks.Chow.IsTameSymbol`).
 >
-> `∂_A(a, b) = ∏_𝔮 Norm_{κ(𝔮)/κ(𝔪)}(∂_{B_𝔮}(a, b))`,
->
-> the product over the maximal ideals `𝔮` of `B`.
+> The map is `Stacks.Chow.formulaTameSymbol`; the second clause identifies it on nonzerodivisors
+> with the recipe `Stacks.Chow.tameSymbolFormula`, which does not depend on the choices by
+> `Stacks.Chow.tameSymbolFormula_eq` (Stacks 0EAR). As in the source, no uniqueness is claimed.
 
 ```lean
-noncomputable def normPushforwardOfIsIntegrallyClosed (hA : ¬ IsField A)
-    (hinj : Function.Injective (algebraMap A B))
-    (hquot : ∃ n : ℕ, maximalIdeal A ^ n • (⊤ : Submodule A B) ≤
-      LinearMap.range (Algebra.linearMap A B)) :
-    RegularTameSymbol A
-```
-
-**`Stacks.Chow.tameSymbolOfFiniteIntegralClosure`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/NormalModification.lean, line 246](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/NormalModification.lean#L246). The attribute's comment: “on Q(A)^*, for a local domain with a module-finite integral closure”.
-
-> The tame symbol `∂_A : Q(A)^* × Q(A)^* → κ(𝔪)^*` of a one-dimensional Noetherian local domain
-> `A` whose integral closure in its fraction field is module finite: the extension
-> `Stacks.Chow.RegularTameSymbol.extend` of `Stacks.Chow.normPushforwardOfFiniteIntegralClosure`.
-
-```lean
-noncomputable def tameSymbolOfFiniteIntegralClosure (hA : ¬ IsField A)
-    (Q : Type*) [CommRing Q] [Algebra A Q] [IsFractionRing A Q] : TameSymbol A Q
+theorem formulaTameSymbol_isTameSymbol (hdim : ringKrullDim A = 1) (Q : Type v) [CommRing Q]
+    [Algebra A Q] [IsFractionRing A Q] :
+    IsTameSymbol A Q (formulaTameSymbol hdim Q) ∧
+      ∀ x y : nonZeroDivisors A,
+        formulaTameSymbol hdim Q (regularFractionUnit x) (regularFractionUnit y) =
+          tameSymbolFormula hdim (x : A) (y : A)
+            (isRegular_iff_mem_nonZeroDivisors.mpr x.2)
+            (isRegular_iff_mem_nonZeroDivisors.mpr y.2)
 ```
 
 ## Tag 0EAQ, an equation
 
 [Tag 0EAQ](https://stacks.math.columbia.edu/tag/0EAQ) in the Stacks Project.
 
-**`Stacks.Chow.tameSymbol_apply_eq_of_tameSymbolPreparation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/KeyLemma/TameSymbolPreparationValue.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/KeyLemma/TameSymbolPreparationValue.lean#L82). The attribute's comment: “the factor at a single maximal ideal”.
+**`Stacks.Chow.tameSymbol_apply_eq_of_tameSymbolPreparation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/KeyLemma/TameSymbolPreparationValue.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/KeyLemma/TameSymbolPreparationValue.lean#L82). The attribute's comment: “the factor at a single maximal ideal”.
 
 > **The tame symbol on a localization of a tame-symbol preparation.** At a maximal ideal `q` of
 > the finite extension produced by Stacks 0EAG, two members of the prepared family are unit multiples
@@ -101,7 +75,7 @@ theorem tameSymbol_apply_eq_of_tameSymbolPreparation
         (Ring.ord (Localization.AtPrime q) (P.parameter q)).toNat
 ```
 
-**`Stacks.Chow.normPushforward_apply_eq_of_tameSymbolPreparation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/KeyLemma/TameSymbolPreparationValue.lean, line 115](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/KeyLemma/TameSymbolPreparationValue.lean#L115). The attribute's comment: “the product over the maximal ideals”.
+**`Stacks.Chow.normPushforward_apply_eq_of_tameSymbolPreparation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/KeyLemma/TameSymbolPreparationValue.lean, line 115](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/KeyLemma/TameSymbolPreparationValue.lean#L115). The attribute's comment: “the product over the maximal ideals”.
 
 > **The tame symbol pushed back from a tame-symbol preparation to its base, evaluated on the
 > preparation's data.** The norm pushforward of Stacks 0EAT assembles the symbols on the
@@ -141,7 +115,7 @@ theorem normPushforward_apply_eq_of_tameSymbolPreparation
             (Ring.ord (Localization.AtPrime q.asIdeal) (P.parameter q.asIdeal)).toNat)
 ```
 
-**`Stacks.Chow.normPushforwardOfIsIntegrallyClosed_apply_eq_symbolValue`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/DefiningFormula.lean, line 263](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/DefiningFormula.lean#L263). The attribute's comment: “for the tame symbol of a normal finite modification, on a preparation over that modification”.
+**`Stacks.Chow.normPushforwardOfIsIntegrallyClosed_apply_eq_symbolValue`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/DefiningFormula.lean, line 263](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/DefiningFormula.lean#L263). The attribute's comment: “for the tame symbol of a normal finite modification, on a preparation over that modification”.
 
 > **Stacks 0EAQ for the tame symbol of a normal finite modification.** Let `(A, 𝔪)` be a
 > one-dimensional Noetherian local domain that is not a field and let `A ⊆ B` be module finite with
@@ -172,7 +146,7 @@ theorem normPushforwardOfIsIntegrallyClosed_apply_eq_symbolValue
     normPushforwardOfIsIntegrallyClosed A B hA hinj hquot x y = P.symbolValue i j
 ```
 
-**`Stacks.Chow.normPushforwardOfFiniteIntegralClosure_apply_eq_symbolValue`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/DefiningFormula.lean, line 322](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/DefiningFormula.lean#L322). The attribute's comment: “for the tame symbol on nonzerodivisors of A, on a preparation over the integral closure of A in its fraction field”.
+**`Stacks.Chow.normPushforwardOfFiniteIntegralClosure_apply_eq_symbolValue`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/DefiningFormula.lean, line 322](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/DefiningFormula.lean#L322). The attribute's comment: “for the tame symbol on nonzerodivisors of A, on a preparation over the integral closure of A in its fraction field”.
 
 > **Stacks 0EAQ for the tame symbol on nonzerodivisors of `A`.** With `B` the integral closure
 > of `A` in its fraction field, the symbol of
@@ -188,7 +162,7 @@ theorem normPushforwardOfFiniteIntegralClosure_apply_eq_symbolValue (hA : ¬ IsF
     normPushforwardOfFiniteIntegralClosure A K hA x y = P.symbolValue i j
 ```
 
-**`Stacks.Chow.tameSymbolOfFiniteIntegralClosure_apply_eq_symbolValue`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/DefiningFormula.lean, line 353](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/DefiningFormula.lean#L353). The attribute's comment: “for the tame symbol on Q(A)^*, on a preparation over the integral closure of A in its fraction field”.
+**`Stacks.Chow.tameSymbolOfFiniteIntegralClosure_apply_eq_symbolValue`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/DefiningFormula.lean, line 353](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/DefiningFormula.lean#L353). The attribute's comment: “for the tame symbol on Q(A)^*, on a preparation over the integral closure of A in its fraction field”.
 
 > **Stacks 0EAQ, at the spelling of the source.** For a one-dimensional Noetherian local domain
 > `A` that is not a field and whose integral closure in its fraction field is module finite, the
@@ -216,7 +190,7 @@ theorem tameSymbolOfFiniteIntegralClosure_apply_eq_symbolValue (hA : ¬ IsField 
       P.symbolValue i j
 ```
 
-**`Stacks.Chow.tameSymbolOfFiniteIntegralClosure_eq_symbolValue`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/DefiningFormula.lean, line 392](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/DefiningFormula.lean#L392). The attribute's comment: “unconditionally for a one-dimensional Noetherian local domain with a module-finite integral closure: the symbol of Stacks 0EAH on Q(A)^*, the canonical preparation on the integral closure, and no instance assumed that the finiteness of the extension does not supply”.
+**`Stacks.Chow.tameSymbolOfFiniteIntegralClosure_eq_symbolValue`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/DefiningFormula.lean, line 392](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/DefiningFormula.lean#L392). The attribute's comment: “unconditionally for a one-dimensional Noetherian local domain with a module-finite integral closure: the symbol of Stacks 0EAH on Q(A)^*, the canonical preparation on the integral closure, and no instance assumed that the finiteness of the extension does not supply”.
 
 > **Stacks 0EAQ with nothing assumed beyond the hypotheses on `A`.** For a one-dimensional
 > Noetherian local domain `A` that is not a field whose integral closure in its fraction field is
@@ -252,7 +226,7 @@ theorem tameSymbolOfFiniteIntegralClosure_eq_symbolValue (hA : ¬ IsField A)
       (integralClosurePreparation A K hA a ha).symbolValue i j
 ```
 
-**`Stacks.Chow.tameSymbolFormula_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/Formula.lean, line 346](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/Formula.lean#L346). The attribute's comment: “the tame symbol defined by the formula from one admissible extension, and equal to the displayed product for every admissible extension A ⊆ B and every choice of local factorizations”.
+**`Stacks.Chow.tameSymbolFormula_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/Formula.lean, line 346](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/Formula.lean#L346). The attribute's comment: “the tame symbol defined by the formula from one admissible extension, and equal to the displayed product for every admissible extension A ⊆ B and every choice of local factorizations”.
 
 > **Stacks 0EAQ.** Let `(A, 𝔪)` be a Noetherian local ring of dimension one and `a₁, a₂ ∈ A`
 > nonzerodivisors. For every finite ring extension `A ⊆ B` with `B / A` annihilated by a power of
@@ -289,7 +263,7 @@ theorem tameSymbolFormula_eq (hdim : ringKrullDim A = 1) {a₁ a₂ : A}
 
 [Tag 0EAR](https://stacks.math.columbia.edu/tag/0EAR) in the Stacks Project.
 
-**`AlgebraicGeometry.TameSymbolPreparation.symbolValue_eq_of_preparations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/Independence.lean, line 384](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/Independence.lean#L384). The attribute's comment: “both clauses for the whole symbol: the value of the formula of Stacks 0EAQ depends neither on the choice of the local factorizations nor on the choice of B. Two arbitrary extensions B and B' of A, in unrelated universes, each carrying its own preparation of the family, give the same value; the common refinement that compares them is CONSTRUCTED here, by Stacks.Chow.nonempty\_commonRefinement, not supposed. The hypotheses are the source's own: A Noetherian local of Krull dimension at most one, and the family not all units, which is the standing context of Stacks 0EAG in which the formula is written. The factorization clause alone, at a single maximal ideal, is Stacks.Chow.factorizationValue\_eq\_of\_factorizations”.
+**`AlgebraicGeometry.TameSymbolPreparation.symbolValue_eq_of_preparations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/Independence.lean, line 384](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/Independence.lean#L384). The attribute's comment: “both clauses for the whole symbol: the value of the formula of Stacks 0EAQ depends neither on the choice of the local factorizations nor on the choice of B. Two arbitrary extensions B and B' of A, in unrelated universes, each carrying its own preparation of the family, give the same value; the common refinement that compares them is CONSTRUCTED here, by Stacks.Chow.nonempty\_commonRefinement, not supposed. The hypotheses are the source's own: A Noetherian local of Krull dimension at most one, and the family not all units, which is the standing context of Stacks 0EAG in which the formula is written. The factorization clause alone, at a single maximal ideal, is Stacks.Chow.factorizationValue\_eq\_of\_factorizations”.
 
 > **Stacks 0EAR.** Let `(A, 𝔪)` be a one-dimensional Noetherian local ring and let `a` be a
 > family of elements of `A`, not all units, admitting a simultaneous power factorization after a
@@ -336,7 +310,7 @@ theorem symbolValue_eq_of_preparations (hunit : ¬ ∀ i, IsUnit (a i))
     P.symbolValue i j = P'.symbolValue i j
 ```
 
-**`Stacks.Chow.factorizationValue_eq_of_factorizations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/WellDefined.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/WellDefined.lean#L148). The attribute's comment: “independence of the choice of the local factorizations, at a single maximal ideal”.
+**`Stacks.Chow.factorizationValue_eq_of_factorizations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/WellDefined.lean, line 148](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/WellDefined.lean#L148). The attribute's comment: “independence of the choice of the local factorizations, at a single maximal ideal”.
 
 > **Stacks 0EAR at a single maximal ideal: the formula Stacks 0EAQ does not depend on the chosen
 > local factorization.** If the two elements `a₁`, `a₂` of a one-dimensional Noetherian local ring
@@ -363,7 +337,7 @@ theorem factorizationValue_eq_of_factorizations [IsNoetherianRing R] [Ring.Krull
     factorizationValue π u₁ u₂ e₁ e₂ = factorizationValue θ v₁ v₂ f₁ f₂
 ```
 
-**`AlgebraicGeometry.TameSymbolPreparation.symbolValue_eq_of_sameExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/WellDefined.lean, line 265](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/WellDefined.lean#L265). The attribute's comment: “independence of the choice of the local factorizations; independence of the choice of B is not proved”.
+**`AlgebraicGeometry.TameSymbolPreparation.symbolValue_eq_of_sameExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/WellDefined.lean, line 265](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/WellDefined.lean#L265). The attribute's comment: “independence of the choice of the local factorizations; independence of the choice of B is not proved”.
 
 > **Stacks 0EAR for the choice of local factorizations.** Two tame-symbol preparations of the
 > same family over the *same* finite extension `A ⊆ B` differ only in the local parameters, unit
@@ -381,7 +355,7 @@ theorem symbolValue_eq_of_sameExtension
     P.symbolValue i j = P'.symbolValue i j
 ```
 
-**`Stacks.Chow.factorizationValue_eq_of_factorizations_general`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/WellDefinedRefinement.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/WellDefinedRefinement.lean#L104). The attribute's comment: “the first clause, at a single maximal ideal and in an ARBITRARY local ring: the value of the formula of Stacks 0EAQ does not depend on the choice of the local factorizations. This is strictly more general than the form the source states -- R is neither Noetherian nor one-dimensional here -- and Stacks.Chow.factorizationValue\_eq\_of\_factorizations, the form at the rings of the source, is this statement specialised to them”.
+**`Stacks.Chow.factorizationValue_eq_of_factorizations_general`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/WellDefinedRefinement.lean, line 104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/WellDefinedRefinement.lean#L104). The attribute's comment: “the first clause, at a single maximal ideal and in an ARBITRARY local ring: the value of the formula of Stacks 0EAQ does not depend on the choice of the local factorizations. This is strictly more general than the form the source states -- R is neither Noetherian nor one-dimensional here -- and Stacks.Chow.factorizationValue\_eq\_of\_factorizations, the form at the rings of the source, is this statement specialised to them”.
 
 > **The factorization half of Stacks 0EAR at a single maximal ideal, in an arbitrary local
 > ring.** The same identity as `Stacks.Chow.factorizationValue_eq_of_factorizations`, with `R`
@@ -405,7 +379,7 @@ theorem factorizationValue_eq_of_factorizations_general
 
 [Tag 0EAS](https://stacks.math.columbia.edu/tag/0EAS) in the Stacks Project.
 
-**`Stacks.Chow.RegularTameSymbol.extend`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/Fraction.lean, line 288](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/Fraction.lean#L288). The attribute's comment: “the passage from (4), (5), (6), (7) to (1), (2), (3), for a symbol on nonzerodivisors given as data rather than by the product formula of Stacks 0EAQ”.
+**`Stacks.Chow.RegularTameSymbol.extend`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/Fraction.lean, line 288](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/Fraction.lean#L288). The attribute's comment: “the passage from (4), (5), (6), (7) to (1), (2), (3), for a symbol on nonzerodivisors given as data rather than by the product formula of Stacks 0EAQ”.
 
 > **Stacks 0EAH, the tame symbol of a one-dimensional Noetherian local ring.** The symbol on
 > pairs of nonzerodivisors of `A` extends to the units of the total ring of fractions `Q(A)` by the
@@ -426,7 +400,7 @@ theorem factorizationValue_eq_of_factorizations_general
 def extend : TameSymbol A Q
 ```
 
-**`Stacks.Chow.tameSymbolValue_eq_symbolValue`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/PairSymbol.lean, line 322](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/PairSymbol.lean#L322). The attribute's comment: “that the function of a pair whose properties (4), (5), (6), (7) are proved below is the tame symbol of Stacks 0EAQ: it is the product formula of Stacks 0EAQ at every preparation of every family, over an arbitrary one-dimensional Noetherian local ring”.
+**`Stacks.Chow.tameSymbolValue_eq_symbolValue`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/PairSymbol.lean, line 322](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/PairSymbol.lean#L322). The attribute's comment: “that the function of a pair whose properties (4), (5), (6), (7) are proved below is the tame symbol of Stacks 0EAQ: it is the product formula of Stacks 0EAQ at every preparation of every family, over an arbitrary one-dimensional Noetherian local ring”.
 
 > **The function `Stacks.Chow.tameSymbolValue` is the formula Stacks 0EAQ, at every
 > preparation.** For any preparation of any family over any finite modification of `A`, in any
@@ -454,7 +428,7 @@ theorem tameSymbolValue_eq_symbolValue (hdim : ringKrullDim A = 1)
     tameSymbolValue x y = P.symbolValue i j
 ```
 
-**`Stacks.Chow.tameSymbolValue_mul_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/PairSymbol.lean, line 406](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/PairSymbol.lean#L406). The attribute's comment: “property (4) in the first argument, for the tame symbol of Stacks 0EAQ as a function of an arbitrary pair of nonzerodivisors”.
+**`Stacks.Chow.tameSymbolValue_mul_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/PairSymbol.lean, line 406](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/PairSymbol.lean#L406). The attribute's comment: “property (4) in the first argument, for the tame symbol of Stacks 0EAQ as a function of an arbitrary pair of nonzerodivisors”.
 
 > **Stacks 0EAL in the first argument, for the tame symbol of Stacks 0EAQ on arbitrary pairs of
 > nonzerodivisors.** `∂_A(a a', b) = ∂_A(a, b) ∂_A(a', b)`.
@@ -469,7 +443,7 @@ theorem tameSymbolValue_mul_left (hdim : ringKrullDim A = 1) (x x' y : nonZeroDi
     tameSymbolValue (x * x') y = tameSymbolValue x y * tameSymbolValue x' y
 ```
 
-**`Stacks.Chow.tameSymbolValue_mul_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/PairSymbol.lean, line 419](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/PairSymbol.lean#L419). The attribute's comment: “property (4) in the second argument, for the tame symbol of Stacks 0EAQ as a function of an arbitrary pair of nonzerodivisors”.
+**`Stacks.Chow.tameSymbolValue_mul_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/PairSymbol.lean, line 419](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/PairSymbol.lean#L419). The attribute's comment: “property (4) in the second argument, for the tame symbol of Stacks 0EAQ as a function of an arbitrary pair of nonzerodivisors”.
 
 > **Stacks 0EAL in the second argument, for the tame symbol of Stacks 0EAQ on arbitrary pairs of
 > nonzerodivisors.** `∂_A(a, b b') = ∂_A(a, b) ∂_A(a, b')`.
@@ -479,7 +453,7 @@ theorem tameSymbolValue_mul_right (hdim : ringKrullDim A = 1) (x y y' : nonZeroD
     tameSymbolValue x (y * y') = tameSymbolValue x y * tameSymbolValue x y'
 ```
 
-**`Stacks.Chow.tameSymbolValue_self`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/PairSymbol.lean, line 433](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/PairSymbol.lean#L433). The attribute's comment: “property (5), for the tame symbol of Stacks 0EAQ as a function of an arbitrary pair of nonzerodivisors”.
+**`Stacks.Chow.tameSymbolValue_self`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/PairSymbol.lean, line 433](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/PairSymbol.lean#L433). The attribute's comment: “property (5), for the tame symbol of Stacks 0EAQ as a function of an arbitrary pair of nonzerodivisors”.
 
 > **Stacks 0EAM for the tame symbol of Stacks 0EAQ on arbitrary pairs of nonzerodivisors.**
 > `∂_A(b, b) = (-1)^m` with `m = length_A(A/bA)`. For `b` a unit both sides are `1`, since
@@ -490,7 +464,7 @@ theorem tameSymbolValue_self (hdim : ringKrullDim A = 1) (y : nonZeroDivisors A)
     tameSymbolValue y y = (-1) ^ (Ring.ord A (y : A)).toNat
 ```
 
-**`Stacks.Chow.tameSymbolValue_unit_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/PairSymbol.lean, line 449](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/PairSymbol.lean#L449). The attribute's comment: “property (6), for the tame symbol of Stacks 0EAQ as a function of an arbitrary pair of nonzerodivisors”.
+**`Stacks.Chow.tameSymbolValue_unit_left`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/PairSymbol.lean, line 449](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/PairSymbol.lean#L449). The attribute's comment: “property (6), for the tame symbol of Stacks 0EAQ as a function of an arbitrary pair of nonzerodivisors”.
 
 > **Stacks 0EAN for the tame symbol of Stacks 0EAQ on arbitrary pairs of nonzerodivisors.**
 > `∂_A(u, b) = ū^m` with `m = length_A(A/bA)`, for `u` a unit of `A`. For `b` a unit both sides are
@@ -502,7 +476,7 @@ theorem tameSymbolValue_unit_left (hdim : ringKrullDim A = 1) (x y : nonZeroDivi
     tameSymbolValue x y = Units.map (residue A).toMonoidHom u ^ (Ring.ord A (y : A)).toNat
 ```
 
-**`Stacks.Chow.tameSymbolValue_steinberg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/PairSymbol.lean, line 466](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/PairSymbol.lean#L466). The attribute's comment: “property (7), for the tame symbol of Stacks 0EAQ as a function of an arbitrary pair of nonzerodivisors”.
+**`Stacks.Chow.tameSymbolValue_steinberg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/PairSymbol.lean, line 466](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/PairSymbol.lean#L466). The attribute's comment: “property (7), for the tame symbol of Stacks 0EAQ as a function of an arbitrary pair of nonzerodivisors”.
 
 > **Stacks 0EAP for the tame symbol of Stacks 0EAQ on arbitrary pairs of nonzerodivisors.**
 > `∂_A(a, b - a) ∂_A(b, b) = ∂_A(b, b - a) ∂_A(a, b)` for `a`, `b` and `b - a` nonzerodivisors. If
@@ -514,7 +488,7 @@ theorem tameSymbolValue_steinberg (hdim : ringKrullDim A = 1) (x y z : nonZeroDi
     tameSymbolValue x z * tameSymbolValue y y = tameSymbolValue y z * tameSymbolValue x y
 ```
 
-**`Stacks.Chow.formulaTameSymbol`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/PairSymbol.lean, line 505](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/PairSymbol.lean#L505). The attribute's comment: “that the tame symbol of Stacks 0EAQ, as a function of an arbitrary pair of nonzerodivisors, hence gives a map on Q(A)^* satisfying (1), (2), (3)”.
+**`Stacks.Chow.formulaTameSymbol`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/PairSymbol.lean, line 505](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/PairSymbol.lean#L505). The attribute's comment: “that the tame symbol of Stacks 0EAQ, as a function of an arbitrary pair of nonzerodivisors, hence gives a map on Q(A)^* satisfying (1), (2), (3)”.
 
 > **Stacks 0EAS, the map the formula Stacks 0EAQ gives on the total ring of fractions.** The
 > tame symbol
@@ -533,13 +507,13 @@ noncomputable def formulaTameSymbol (hdim : ringKrullDim A = 1) (Q : Type v) [Co
 
 Declarations registered for the tag:
 
-- [`Stacks.Chow.normPushforwardOfIsIntegrallyClosed`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/NormalModification.lean#L160), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/NormalModification.lean, line 292](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/NormalModification.lean#L292) (StacksFrontier): “that the product formula of Stacks 0EAQ satisfies (4), (5), (6), (7), for a local domain with a normal finite modification, where one extension serves every pair of nonzerodivisors”.
+- [`Stacks.Chow.normPushforwardOfIsIntegrallyClosed`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/NormalModification.lean#L163), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/NormalModification.lean, line 294](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/NormalModification.lean#L294) (StacksFrontier): “that the product formula of Stacks 0EAQ satisfies (4), (5), (6), (7), for a local domain with a normal finite modification, where one extension serves every pair of nonzerodivisors”.
 
 ## Tag 0EAT, a lemma
 
 [Tag 0EAT](https://stacks.math.columbia.edu/tag/0EAT) in the Stacks Project.
 
-**`Stacks.Chow.tameSymbolFormula_eq_finprod_norm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/FormulaTower.lean, line 282](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/FormulaTower.lean#L282). The attribute's comment: “the displayed equation for the tame symbol of Stacks 0EAQ on A and on each local ring B\_j”.
+**`Stacks.Chow.tameSymbolFormula_eq_finprod_norm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/FormulaTower.lean, line 282](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/FormulaTower.lean#L282). The attribute's comment: “the displayed equation for the tame symbol of Stacks 0EAQ on A and on each local ring B\_j”.
 
 > **Stacks 0EAT.** Let `(A, 𝔪)` be a Noetherian local ring of dimension one, let `A ⊆ B` be a
 > finite ring extension with `B / A` annihilated by a power of `𝔪` and `𝔪` not an associated prime
@@ -572,7 +546,7 @@ theorem tameSymbolFormula_eq_finprod_norm (hdim : ringKrullDim A = 1)
             (isRegular_algebraMap_localizationAtPrime hdim hass q hb))
 ```
 
-**`Stacks.Chow.normProd_eq_prod_norm_normProd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/Tower.lean, line 296](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/Tower.lean#L296). The attribute's comment: “the displayed equation, for both symbols read as the recipe of Stacks 0EAQ relative to the common refinement C the statement quantifies over; the non-associated-prime hypothesis of the source is imposed at each stage of the tower, and the correspondence between the maximal ideals of C and those of B is derived here from the semilocalizations rather than assumed. The spelling in which no refinement appears on the right-hand side is Stacks.Chow.normProd\_eq\_prod\_norm\_tameSymbol”.
+**`Stacks.Chow.normProd_eq_prod_norm_normProd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/Tower.lean, line 297](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/Tower.lean#L297). The attribute's comment: “the displayed equation, for both symbols read as the recipe of Stacks 0EAQ relative to the common refinement C the statement quantifies over; the non-associated-prime hypothesis of the source is imposed at each stage of the tower, and the correspondence between the maximal ideals of C and those of B is derived here from the semilocalizations rather than assumed. The spelling in which no refinement appears on the right-hand side is Stacks.Chow.normProd\_eq\_prod\_norm\_tameSymbol”.
 
 > **Stacks 0EAT.** Let `(A, 𝔪)` be a one-dimensional Noetherian local ring, let `A ⊆ B` be a
 > finite ring extension with `𝔪` not an associated prime of `B`, and let `B ⊆ C` be a further finite
@@ -606,7 +580,7 @@ theorem normProd_eq_prod_norm_normProd
             (toExtensionNonZeroDivisor hB q a) (toExtensionNonZeroDivisor hB q b))
 ```
 
-**`Stacks.Chow.normPushforward_apply_eq_prod_norm_normPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/Tower.lean, line 322](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/Tower.lean#L322). The attribute's comment: “the displayed equation between the two tame symbols of Stacks 0EAH that the two sides define, for the recipe of Stacks 0EAQ relative to the common refinement C the statement quantifies over”.
+**`Stacks.Chow.normPushforward_apply_eq_prod_norm_normPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/Tower.lean, line 323](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/Tower.lean#L323). The attribute's comment: “the displayed equation between the two tame symbols of Stacks 0EAH that the two sides define, for the recipe of Stacks 0EAQ relative to the common refinement C the statement quantifies over”.
 
 > **Stacks 0EAT between the two tame symbols the two sides define.** Both the norm pushforward
 > to `A` and each norm pushforward to `B_𝔮` are tame symbols in the sense of Stacks 0EAH, by
@@ -641,7 +615,7 @@ theorem normPushforward_apply_eq_prod_norm_normPushforward [Module.Finite A C]
             (toExtensionNonZeroDivisor hB q a) (toExtensionNonZeroDivisor hB q b))
 ```
 
-**`Stacks.Chow.prod_norm_factorizationValue_tower_maximalSpectrum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/WellDefinedRefinement.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/WellDefinedRefinement.lean#L166). The attribute's comment: “the displayed equation for the symbol as the formula of Stacks 0EAQ defines it, over the maximal ideals of the refinement C the statement quantifies over, and generalized to arbitrary local factorization data on the local rings of C. The correspondence between the maximal ideals of C and those of B (Stacks 0EAE) is derived here from the semilocalizations rather than assumed, as is the tower of local rings along a fibre”.
+**`Stacks.Chow.prod_norm_factorizationValue_tower_maximalSpectrum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/WellDefinedRefinement.lean, line 167](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/WellDefinedRefinement.lean#L167). The attribute's comment: “the displayed equation for the symbol as the formula of Stacks 0EAQ defines it, over the maximal ideals of the refinement C the statement quantifies over, and generalized to arbitrary local factorization data on the local rings of C. The correspondence between the maximal ideals of C and those of B (Stacks 0EAE) is derived here from the semilocalizations rather than assumed, as is the tower of local rings along a fibre”.
 
 > **Stacks 0EAT for the symbol the formula Stacks 0EAQ defines.** Let `(A, 𝔪)` be a
 > one-dimensional Noetherian local ring, let `A ⊆ B` be a finite ring extension and let `B ⊆ C` be a
@@ -661,8 +635,8 @@ theorem normPushforward_apply_eq_prod_norm_normPushforward [Module.Finite A C]
 > `Stacks.Localization.prod_maximalSpectrum_eq_prod_prod`: the maximal ideals of `C` over `𝔪_j` are
 > the maximal ideals of the semilocalization `C_{𝔪_j}`, and the local ring of `C` at the one below
 > `v` is `Stacks.Chow.fibrePoint`. The tower `A → B_{𝔪_j} → C_{𝔪_{j,k}}` and the locality of its
-> structure maps are derived too, by instance resolution out of
-> `Localization.AtPrime.IsLiesOverAlgebra` and `Stacks.Chow.isLocalHom_fibreAlgebraMap`.
+> structure maps are derived too, from the scalar towers `B → B_{𝔪_j} → C_{𝔪_{j,k}}` and
+> `Stacks.Chow.isLocalHom_fibreAlgebraMap`.
 >
 > The statement quantifies over arbitrary local factorization data `(π, u₁, u₂, e₁, e₂)` on the
 > local rings of `C` rather than over data factoring two fixed elements of `A`, which is a
@@ -697,7 +671,7 @@ theorem prod_norm_factorizationValue_tower_maximalSpectrum
 
 [Tag 0EPG](https://stacks.math.columbia.edu/tag/0EPG) in the Stacks Project.
 
-**`Stacks.Chow.units_map_residueField_tameSymbol_pow_eq_of_factorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/KeyLemma/TameSymbolFlatBaseChange.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/KeyLemma/TameSymbolFlatBaseChange.lean#L164). The attribute's comment: “for a pair of nonzerodivisors admitting a simultaneous power factorization over `A` itself, so that the finite extension of Stacks 0EAG used by the source's proof is not needed; the length multiplier is Stacks 02M1”.
+**`Stacks.Chow.units_map_residueField_tameSymbol_pow_eq_of_factorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/KeyLemma/TameSymbolFlatBaseChange.lean, line 164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/KeyLemma/TameSymbolFlatBaseChange.lean#L164). The attribute's comment: “for a pair of nonzerodivisors admitting a simultaneous power factorization over `A` itself, so that the finite extension of Stacks 0EAG used by the source's proof is not needed; the length multiplier is Stacks 02M1”.
 
 > **Stacks 0EPG for a pair with a simultaneous power factorization over the base.** Let
 > `(A, 𝔪, κ) → (A', 𝔪', κ')` be a flat local homomorphism of one-dimensional Noetherian local
@@ -731,7 +705,7 @@ theorem units_map_residueField_tameSymbol_pow_eq_of_factorization
       symb' (flatNonZeroDivisor A' a) (flatNonZeroDivisor A' b)
 ```
 
-**`Stacks.Chow.map_symbolValue_pow_eq_prod_prod_support`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/KeyLemma/TameSymbolFlatBaseChangeFibre.lean, line 647](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/KeyLemma/TameSymbolFlatBaseChangeFibre.lean#L647). The attribute's comment: “for a general pair of nonzerodivisors, in the spelling in which both sides are the formula Stacks 0EAQ: on the left for a tame-symbol preparation over a finite extension `B` of `A`, which Stacks 0EAG provides for every pair, and on the right for the base change of that preparation, with the maximal ideals of the base change presented fibre by fibre over those of `B` and, in each fibre, as those carrying the parameter”.
+**`Stacks.Chow.map_symbolValue_pow_eq_prod_prod_support`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/KeyLemma/TameSymbolFlatBaseChangeFibre.lean, line 647](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/KeyLemma/TameSymbolFlatBaseChangeFibre.lean#L647). The attribute's comment: “for a general pair of nonzerodivisors, in the spelling in which both sides are the formula Stacks 0EAQ: on the left for a tame-symbol preparation over a finite extension `B` of `A`, which Stacks 0EAG provides for every pair, and on the right for the base change of that preparation, with the maximal ideals of the base change presented fibre by fibre over those of `B` and, in each fibre, as those carrying the parameter”.
 
 > **Stacks 0EPG for a general pair of nonzerodivisors, over the supports.** Let
 > `(A, 𝔪, κ) → (A', 𝔪', κ')` be a flat local homomorphism of one-dimensional Noetherian local rings
@@ -780,7 +754,7 @@ theorem map_symbolValue_pow_eq_prod_prod_support
               (P.exponent q.asIdeal i) (P.exponent q.asIdeal j))
 ```
 
-**`Stacks.Chow.map_symbolValue_pow_eq_prod_prod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/KeyLemma/TameSymbolFlatBaseChangeGeneral.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/KeyLemma/TameSymbolFlatBaseChangeGeneral.lean#L200). The attribute's comment: “for a general pair of nonzerodivisors, in the spelling in which both sides are the formula Stacks 0EAQ: on the left for a tame-symbol preparation over a finite extension `B` of `A`, which Stacks 0EAG provides for every pair, and on the right for the base change of that preparation, with the maximal ideals of `A' ⊗_A B` presented fibre by fibre over those of `B`”.
+**`Stacks.Chow.map_symbolValue_pow_eq_prod_prod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/KeyLemma/TameSymbolFlatBaseChangeGeneral.lean, line 201](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/KeyLemma/TameSymbolFlatBaseChangeGeneral.lean#L201). The attribute's comment: “for a general pair of nonzerodivisors, in the spelling in which both sides are the formula Stacks 0EAQ: on the left for a tame-symbol preparation over a finite extension `B` of `A`, which Stacks 0EAG provides for every pair, and on the right for the base change of that preparation, with the maximal ideals of `A' ⊗_A B` presented fibre by fibre over those of `B`”.
 
 > Let `(A, 𝔪, κ) → (A', 𝔪', κ')` be a flat local homomorphism of one-dimensional Noetherian
 > local rings and let `m = length_{A'}(A' / 𝔪A')`. Let `A ⊆ B` be a finite extension carrying a
@@ -814,7 +788,7 @@ theorem map_symbolValue_pow_eq_prod_prod
               (P.exponent q.asIdeal i) (P.exponent q.asIdeal j))
 ```
 
-**`Stacks.Chow.map_normPushforward_pow_eq_prod_prod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/KeyLemma/TameSymbolFlatBaseChangeGeneral.lean, line 223](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/KeyLemma/TameSymbolFlatBaseChangeGeneral.lean#L223). The attribute's comment: “for a general pair of nonzerodivisors, with the symbol on `A` spelled as the norm pushforward of Stacks 0EAT and the symbol on `A'` as the formula Stacks 0EAQ for the base change”.
+**`Stacks.Chow.map_normPushforward_pow_eq_prod_prod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/KeyLemma/TameSymbolFlatBaseChangeGeneral.lean, line 224](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/KeyLemma/TameSymbolFlatBaseChangeGeneral.lean#L224). The attribute's comment: “for a general pair of nonzerodivisors, with the symbol on `A` spelled as the norm pushforward of Stacks 0EAT and the symbol on `A'` as the formula Stacks 0EAQ for the base change”.
 
 > For nonzerodivisors `a₁ = a i` and `a₂ = a j` of `A` and a tame-symbol preparation `P` of `a`
 > over `B`, the tame symbol `∂_A(a₁, a₂)` of Stacks 0EAT, raised to the power `m` and read in `κ'`,
@@ -843,7 +817,7 @@ theorem map_normPushforward_pow_eq_prod_prod [Module.Finite A B]
               (P.exponent q.asIdeal i) (P.exponent q.asIdeal j))
 ```
 
-**`Stacks.Chow.map_symbolValue_pow_eq_prod_maximalSpectrum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/KeyLemma/TameSymbolFlatBaseChangeSingleProduct.lean, line 387](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/KeyLemma/TameSymbolFlatBaseChangeSingleProduct.lean#L387). The attribute's comment: “for a general pair of nonzerodivisors, in the spelling of the source: the formula Stacks 0EAQ over `A` for a tame-symbol preparation on a finite extension `B` of `A`, which Stacks 0EAG provides for every pair, raised to the power `m` and read in `κ'`, is one product over the maximal ideals `𝔭` of `A' ⊗_A B`, the factor at `𝔭` being the norm to `κ'` of the formula Stacks 0EAQ computed in `(A' ⊗_A B)_𝔭` for the image of the factorization data at `𝔭 ∩ B`”.
+**`Stacks.Chow.map_symbolValue_pow_eq_prod_maximalSpectrum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/KeyLemma/TameSymbolFlatBaseChangeSingleProduct.lean, line 388](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/KeyLemma/TameSymbolFlatBaseChangeSingleProduct.lean#L388). The attribute's comment: “for a general pair of nonzerodivisors, in the spelling of the source: the formula Stacks 0EAQ over `A` for a tame-symbol preparation on a finite extension `B` of `A`, which Stacks 0EAG provides for every pair, raised to the power `m` and read in `κ'`, is one product over the maximal ideals `𝔭` of `A' ⊗_A B`, the factor at `𝔭` being the norm to `κ'` of the formula Stacks 0EAQ computed in `(A' ⊗_A B)_𝔭` for the image of the factorization data at `𝔭 ∩ B`”.
 
 > **Stacks 0EPG for a general pair of nonzerodivisors, as a single product over the maximal
 > ideals of the base change.** Let `(A, 𝔪, κ) → (A', 𝔪', κ')` be a flat local homomorphism of
@@ -877,7 +851,7 @@ theorem map_symbolValue_pow_eq_prod_maximalSpectrum
     {m : ℕ} (hm : Module.length A' (A' ⧸ extendedMaximalIdeal A A') = m)
     {r : ℕ} {a : Fin r → A} (P : TameSymbolPreparation a B) (i j : Fin r)
     [∀ q : MaximalSpectrum B,
-      Fintype (Stacks.Length.tensorSupport A A' (P.parameter q.asIdeal))] :
+      Finite (Stacks.Length.tensorSupport A A' (P.parameter q.asIdeal))] :
     Units.map (ResidueField.map (algebraMap A A')).toMonoidHom (P.symbolValue i j) ^ m =
       ∏ 𝔭 : MaximalSpectrum (A' ⊗[A] B),
         Units.map (Algebra.norm (ResidueField A') :
@@ -891,7 +865,7 @@ theorem map_symbolValue_pow_eq_prod_maximalSpectrum
             (P.exponent (baseChangeUnder 𝔭).asIdeal j))
 ```
 
-**`Stacks.Chow.map_tameSymbolFormula_pow_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/FlatBaseChange.lean, line 212](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/FlatBaseChange.lean#L212).
+**`Stacks.Chow.map_tameSymbolFormula_pow_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/FlatBaseChange.lean, line 212](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/FlatBaseChange.lean#L212).
 
 > **Flat base change for the tame symbol.** Let `(A, 𝔪, κ) → (A', 𝔪', κ')` be a local
 > homomorphism of Noetherian local rings, with `A → A'` flat and `dim(A) = dim(A') = 1`, and let
@@ -914,44 +888,141 @@ theorem map_tameSymbolFormula_pow_eq (hdim : ringKrullDim A = 1) (hdim' : ringKr
 
 [Tag 0GU1](https://stacks.math.columbia.edu/tag/0GU1) in the Stacks Project.
 
-**`Stacks.Length.map_norm_pow_length_eq_prod_norm_pow_length`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Length/NormFlatBaseChange.lean, line 473](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Length/NormFlatBaseChange.lean#L473).
+**`Stacks.Chow.map_norm_pow_length_eq_prod_norm_pow_length_localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/FlatBaseChangeNorm.lean, line 76](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/TameSymbol/FlatBaseChangeNorm.lean#L76). The attribute's comment: “with `B'_{j,l}` the local rings of `A' ⊗_A B_j` at its maximal ideals containing `π_j`; at a maximal ideal of `B' = A' ⊗_A B` over `𝔪_j` not containing `π_j` the factor is `1`”.
 
-> Let `A → S` be a flat local homomorphism of local rings with `m = length_S(S / 𝔪_A S)`, let
-> `B` be a local `A`-algebra along a local homomorphism with `κ(B) / κ(A)` finite, and let
-> `π`, `u ∈ B` with `B / πB` of finite length. Then, writing `T = S ⊗_A B`,
+> **The identity (0GU1) in the proof of Stacks 0EPG.** Let `(A, 𝔪, κ) → (A', 𝔪', κ')` be a flat
+> local homomorphism of one-dimensional Noetherian local rings and `m = length_{A'}(A' / 𝔪A')`. Let
+> `B` be a finite `A`-algebra, `𝔪_j` a maximal ideal of `B` with residue field `κ_j`,
+> `B_j = B_{𝔪_j}`, `π_j ∈ B_j` a nonzerodivisor and `m_j = length_{B_j}(B_j / π_j B_j)`. For every
+> unit `u` of `B_j`,
+>
+> `(Norm_{κ_j/κ}(ū)^{m_j})^m = ∏_l Norm_{κ'_{j,l}/κ'}(ū)^{m'_{j,l}}`
+>
+> in `κ'`, where `𝔪'_{j,l}` runs over the maximal ideals of `A' ⊗_A B_j` containing `π_j`,
+> `B'_{j,l}` is the local ring there, `κ'_{j,l}` its residue field and
+> `m'_{j,l} = length_{B'_{j,l}}(B'_{j,l} / π_j B'_{j,l})`. These maximal ideals are finite in number
+> and lie over `𝔪'`, the maps `A' → B'_{j,l}` are local and the extensions `κ'_{j,l} / κ'` are
+> finite (`Stacks.Length.finite_tensorSupport`,
+> `Stacks.Length.isLocalHom_algebraMap_tensorSupport`,
+> `Stacks.Length.finite_residueField_tensorSupport`); the length `m` is finite
+> (`Stacks.Chow.isFiniteLength_closedFibre`) and so is `m_j`
+> (`Stacks.Chow.isFiniteLength_quotient_localization_of_finite`).
+
+```lean
+theorem map_norm_pow_length_eq_prod_norm_pow_length_localization
+    {A : Type u} [CommRing A] [IsNoetherianRing A] [IsLocalRing A]
+    {A' : Type v} [CommRing A'] [IsNoetherianRing A'] [IsLocalRing A'] [Algebra A A']
+    [IsLocalHom (algebraMap A A')] [Module.Flat A A']
+    (hdim : ringKrullDim A = 1) (hdim' : ringKrullDim A' = 1)
+    {B : Type w} [CommRing B] [Algebra A B] [Module.Finite A B] (q : MaximalSpectrum B)
+    {π : Localization.AtPrime q.asIdeal}
+    (hπ : π ∈ nonZeroDivisors (Localization.AtPrime q.asIdeal))
+    (u : (Localization.AtPrime q.asIdeal)ˣ) :
+    letI := Stacks.Length.isLocalHom_algebraMap_localization (A := A) q
+    letI := Stacks.Length.finite_residueField A q
+    letI := @Fintype.ofFinite _ (Stacks.Length.finite_tensorSupport (A := A) (S := A')
+      (isFiniteLength_quotient_localization_of_finite hdim q hπ))
+    ResidueField.map (algebraMap A A')
+      ((Algebra.norm (ResidueField A)
+          (residue (Localization.AtPrime q.asIdeal) (u : Localization.AtPrime q.asIdeal)) ^
+        (Module.length (Localization.AtPrime q.asIdeal)
+          (Localization.AtPrime q.asIdeal ⧸ Ideal.span {π})).toNat) ^
+        (Module.length A' (A' ⧸ Ideal.map (algebraMap A A') (maximalIdeal A))).toNat) =
+      ∏ r : Stacks.Length.tensorSupport A A' π,
+        letI := Stacks.Length.isLocalHom_algebraMap_tensorSupport
+          (isFiniteLength_quotient_localization_of_finite hdim q hπ) r
+        Algebra.norm (ResidueField A') (residue (Localization.AtPrime r.1.asIdeal)
+            (algebraMap (A' ⊗[A] Localization.AtPrime q.asIdeal) (Localization.AtPrime r.1.asIdeal)
+              (Algebra.TensorProduct.includeRight (u : Localization.AtPrime q.asIdeal)))) ^
+          (Module.length (Localization.AtPrime r.1.asIdeal) (Localization.AtPrime r.1.asIdeal ⧸
+            Ideal.span {(algebraMap (A' ⊗[A] Localization.AtPrime q.asIdeal)
+              (Localization.AtPrime r.1.asIdeal)
+                (Algebra.TensorProduct.includeRight π))})).toNat
+```
+
+**`Stacks.Length.map_norm_pow_length_eq_prod_norm_pow_length_support`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Length/NormFlatBaseChange.lean, line 249](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Length/NormFlatBaseChange.lean#L249). The attribute's comment: “with `B` a local `A`-algebra standing for `B_j`”.
+
+> Let `A → S` be a flat local homomorphism of local rings
+> with `m = length_S(S / 𝔪_A S)`, let `B` be a local `A`-algebra along a local homomorphism with
+> `κ(B) / κ(A)` finite, and let `π`, `u ∈ B` with `B / πB` of finite length. Then, writing
+> `T = S ⊗_A B`,
 >
 > `(Norm\_\{κ(B)/κ(A)}(ū) ^ length\_B(B / πB)) ^ m
 >   = ∏\_𝔮 Norm\_\{κ(T\_𝔮)/κ(S)}(ū) ^ length\_\{T\_𝔮}(T\_𝔮 / πT\_𝔮)`,
 >
-> the product running over the maximal ideals of `T` and the left-hand side being read in `κ(S)`
-> through `κ(A) → κ(S)`.
+> the product running over the maximal ideals of `T` that contain the image of `π` and the
+> left-hand side being read in `κ(S)` through `κ(A) → κ(S)`. The instances at those maximal ideals
+> hold whenever `B / πB` has finite length
+> (`Stacks.Length.map_norm_pow_length_eq_prod_norm_pow_length_of_isFiniteLength`).
 
 ```lean
-theorem map_norm_pow_length_eq_prod_norm_pow_length
+theorem map_norm_pow_length_eq_prod_norm_pow_length_support
     {A : Type u} {S : Type v} {B : Type w}
     [CommRing A] [CommRing S] [CommRing B]
     [IsLocalRing A] [IsLocalRing S] [IsLocalRing B]
     [Algebra A S] [Algebra A B] [IsLocalHom (algebraMap A S)]
     [IsLocalHom (algebraMap A B)] [Module.Flat A S]
-    [Fintype (MaximalSpectrum (S ⊗[A] B))]
     [Module.Finite (ResidueField A) (ResidueField B)]
-    [∀ q : MaximalSpectrum (S ⊗[A] B),
-      IsLocalHom (algebraMap S (Localization.AtPrime q.asIdeal))]
-    [∀ q : MaximalSpectrum (S ⊗[A] B),
-      Module.Finite (ResidueField S) (ResidueField (Localization.AtPrime q.asIdeal))]
-    (π u : B) (hM : IsFiniteLength B (B ⧸ Ideal.span {π}))
+    (π u : B) [Fintype (tensorSupport A S π)]
+    [hloc : ∀ r : tensorSupport A S π,
+      IsLocalHom (algebraMap S (Localization.AtPrime r.1.asIdeal))]
+    [hres : ∀ r : tensorSupport A S π,
+      Module.Finite (ResidueField S) (ResidueField (Localization.AtPrime r.1.asIdeal))]
+    (hM : IsFiniteLength B (B ⧸ Ideal.span {π}))
     {m : ℕ} (hm : Module.length S (S ⧸ extendedMaximalIdeal A S) = m) :
     ResidueField.map (algebraMap A S)
       ((Algebra.norm (ResidueField A) (residue B u) ^
         (Module.length B (B ⧸ Ideal.span {π})).toNat) ^ m) =
-      ∏ q : MaximalSpectrum (S ⊗[A] B),
+      ∏ r : tensorSupport A S π,
         Algebra.norm (ResidueField S)
-          (residue (Localization.AtPrime q.asIdeal)
-            ((algebraMap (S ⊗[A] B) (Localization.AtPrime q.asIdeal))
+          (residue (Localization.AtPrime r.1.asIdeal)
+            ((algebraMap (S ⊗[A] B) (Localization.AtPrime r.1.asIdeal))
               (Algebra.TensorProduct.includeRight u))) ^
-            (Module.length (Localization.AtPrime q.asIdeal)
-            (Localization.AtPrime q.asIdeal ⧸
-              Ideal.span {(algebraMap (S ⊗[A] B) (Localization.AtPrime q.asIdeal)
+            (Module.length (Localization.AtPrime r.1.asIdeal)
+            (Localization.AtPrime r.1.asIdeal ⧸
+              Ideal.span {(algebraMap (S ⊗[A] B) (Localization.AtPrime r.1.asIdeal)
+                (Algebra.TensorProduct.includeRight π))})).toNat
+```
+
+**`Stacks.Length.map_norm_pow_length_eq_prod_norm_pow_length_of_isFiniteLength`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Length/NormFlatBaseChangeSupport.lean, line 156](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Length/NormFlatBaseChangeSupport.lean#L156). The attribute's comment: “with `B` a local `A`-algebra standing for `B_j` and `B'_{j,l}` the local rings of `A' ⊗_A B_j` at its maximal ideals containing `π_j`; at a maximal ideal of `B'` over `𝔪_j` not containing `π_j` the factor is `1`”.
+
+> **The identity (0GU1) in the proof of Stacks 0EPG.** Let `A → S` be a flat local
+> homomorphism of local rings with `m = length_S(S / 𝔪_A S)`, let `B` be a local `A`-algebra along a
+> local homomorphism with `κ(B) / κ(A)` finite (for instance the localization `B_𝔪ⱼ` of a finite
+> `A`-algebra at a maximal ideal), and let `π`, `u ∈ B` with `B / πB` of finite length. Then,
+> writing `T = S ⊗_A B`,
+>
+> `(Norm\_\{κ(B)/κ(A)}(ū) ^ length\_B(B / πB)) ^ m
+>   = ∏\_𝔮 Norm\_\{κ(T\_𝔮)/κ(S)}(ū) ^ length\_\{T\_𝔮}(T\_𝔮 / πT\_𝔮)`
+>
+> in `κ(S)`, the product running over the maximal ideals `𝔮` of `T` containing `π`. These are
+> finite in number, lie over the maximal ideal of `S` and have residue fields finite over `κ(S)`
+> (`Stacks.Length.finite_tensorSupport`, `Stacks.Length.isLocalHom_algebraMap_tensorSupport`,
+> `Stacks.Length.finite_residueField_tensorSupport`).
+
+```lean
+theorem map_norm_pow_length_eq_prod_norm_pow_length_of_isFiniteLength
+    {A : Type u} {S : Type v} {B : Type w}
+    [CommRing A] [CommRing S] [CommRing B]
+    [IsLocalRing A] [IsLocalRing S] [IsLocalRing B]
+    [Algebra A S] [Algebra A B] [IsLocalHom (algebraMap A S)]
+    [IsLocalHom (algebraMap A B)] [Module.Flat A S]
+    [Module.Finite (ResidueField A) (ResidueField B)]
+    (π u : B) (hM : IsFiniteLength B (B ⧸ Ideal.span {π}))
+    {m : ℕ} (hm : Module.length S (S ⧸ extendedMaximalIdeal A S) = m) :
+    letI := @Fintype.ofFinite _ (finite_tensorSupport (A := A) (S := S) hM)
+    ResidueField.map (algebraMap A S)
+      ((Algebra.norm (ResidueField A) (residue B u) ^
+        (Module.length B (B ⧸ Ideal.span {π})).toNat) ^ m) =
+      ∏ r : tensorSupport A S π,
+        letI := isLocalHom_algebraMap_tensorSupport hM r
+        Algebra.norm (ResidueField S)
+          (residue (Localization.AtPrime r.1.asIdeal)
+            ((algebraMap (S ⊗[A] B) (Localization.AtPrime r.1.asIdeal))
+              (Algebra.TensorProduct.includeRight u))) ^
+            (Module.length (Localization.AtPrime r.1.asIdeal)
+            (Localization.AtPrime r.1.asIdeal ⧸
+              Ideal.span {((algebraMap (S ⊗[A] B) (Localization.AtPrime r.1.asIdeal))
                 (Algebra.TensorProduct.includeRight π))})).toNat
 ```
 
@@ -962,4 +1033,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 42.5, Tag 0EAH](https://stacks.math.columbia.edu/tag/0EAH)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 61.8 Constructing ind-étale algebras
 
-Section 61.8 of the Stacks Project, [Tag 097Q](https://stacks.math.columbia.edu/tag/097Q). 6 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 61.8 of the Stacks Project, [Tag 097Q](https://stacks.math.columbia.edu/tag/097Q). 6 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 097R, a lemma
 
 [Tag 097R](https://stacks.math.columbia.edu/tag/097R) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.exists_faithfullyFlat_ind_etale_algebra_splitting_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/IndEtaleConstruction/Splitting.lean, line 42](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/IndEtaleConstruction/Splitting.lean#L42).
+**`AlgebraicGeometry.ProEtale.exists_faithfullyFlat_ind_etale_algebra_splitting_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/IndEtaleConstruction/Splitting.lean, line 42](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/IndEtaleConstruction/Splitting.lean#L42).
 
 > There is a faithfully flat ind-étale `A`-algebra such that every faithfully flat étale
 > algebra over it has a retraction.
@@ -36,7 +36,7 @@ theorem exists_faithfullyFlat_ind_etale_algebra_splitting_etale
 
 [Tag 097S](https://stacks.math.columbia.edu/tag/097S) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.mk_splittingAlgebra_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/IndEtaleConstruction/Cardinality.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/IndEtaleConstruction/Cardinality.lean#L110). The attribute's comment: “the bound on T(A)”.
+**`AlgebraicGeometry.ProEtale.mk_splittingAlgebra_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/IndEtaleConstruction/Cardinality.lean, line 110](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/IndEtaleConstruction/Cardinality.lean#L110). The attribute's comment: “the bound on T(A)”.
 
 > The cardinality of `T(A)` is at most every infinite cardinal which bounds the cardinality
 > of `A`.
@@ -47,7 +47,7 @@ theorem mk_splittingAlgebra_le (A : Type u) [CommRing A]
     Cardinal.mk (splittingAlgebra A) ≤ k
 ```
 
-**`AlgebraicGeometry.ProEtale.mk_iteratedSplittingColimit_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/IndEtaleConstruction/Cardinality.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/IndEtaleConstruction/Cardinality.lean#L131). The attribute's comment: “the bound on the iterated construction”.
+**`AlgebraicGeometry.ProEtale.mk_iteratedSplittingColimit_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/IndEtaleConstruction/Cardinality.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/IndEtaleConstruction/Cardinality.lean#L131). The attribute's comment: “the bound on the iterated construction”.
 
 > The colimit ring obtained by iterating `T` has the same cardinality bound as the ring it is
 > built from.
@@ -58,7 +58,7 @@ theorem mk_iteratedSplittingColimit_le (A : CommRingCat.{u})
     Cardinal.mk (iteratedSplittingColimit A) ≤ k
 ```
 
-**`AlgebraicGeometry.ProEtale.iteratedSplittingColimit_splits_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/IndEtaleConstruction/IteratedColimit.lean, line 297](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/IndEtaleConstruction/IteratedColimit.lean#L297). The attribute's comment: “the properties of the iterated construction”.
+**`AlgebraicGeometry.ProEtale.iteratedSplittingColimit_splits_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/IndEtaleConstruction/IteratedColimit.lean, line 297](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/IndEtaleConstruction/IteratedColimit.lean#L297). The attribute's comment: “the properties of the iterated construction”.
 
 > The sequential colimit of the iterated splitting rings is a faithfully flat ind-étale
 > `A`-algebra over which every faithfully flat étale algebra admits a retraction. Its `A`-algebra
@@ -81,7 +81,7 @@ theorem iteratedSplittingColimit_splits_etale (A : Type u) [CommRing A] :
           iteratedSplittingColimit (CommRingCat.of A))
 ```
 
-**`AlgebraicGeometry.ProEtale.exists_small_faithfullyFlat_ind_etale_algebra_splitting_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/IndEtaleConstruction/IteratedColimit.lean, line 362](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/IndEtaleConstruction/IteratedColimit.lean#L362). The attribute's comment: “the bounded form of the first construction”.
+**`AlgebraicGeometry.ProEtale.exists_small_faithfullyFlat_ind_etale_algebra_splitting_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/IndEtaleConstruction/IteratedColimit.lean, line 362](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/IndEtaleConstruction/IteratedColimit.lean#L362). The attribute's comment: “the bounded form of the first construction”.
 
 > The faithfully flat ind-étale `A`-algebra splitting all faithfully flat étale covers can be
 > chosen of cardinality at most any infinite cardinal bounding the cardinality of `A`.
@@ -105,7 +105,7 @@ theorem exists_small_faithfullyFlat_ind_etale_algebra_splitting_etale
 
 [Tag 097U](https://stacks.math.columbia.edu/tag/097U) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.etale_faithfullyFlat_retracts_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/IndEtaleConstruction/QuotientRetraction.lean, line 45](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/IndEtaleConstruction/QuotientRetraction.lean#L45).
+**`AlgebraicGeometry.ProEtale.etale_faithfullyFlat_retracts_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/IndEtaleConstruction/QuotientRetraction.lean, line 45](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/IndEtaleConstruction/QuotientRetraction.lean#L45).
 
 > If every faithfully flat étale `A`-algebra `B` admits an `A`-algebra map `B → A`, then for
 > every ideal `I` of `A`, every faithfully flat étale `A ⧸ I`-algebra admits an `A ⧸ I`-algebra map
@@ -126,7 +126,7 @@ theorem etale_faithfullyFlat_retracts_quotient
 
 [Tag 097V](https://stacks.math.columbia.edu/tag/097V) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.localizationAtPrime_strictlyHenselian_of_etale_faithfullyFlat_retracts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/IndEtaleConstruction/StrictlyHenselianFromRetractions.lean, line 433](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/IndEtaleConstruction/StrictlyHenselianFromRetractions.lean#L433).
+**`AlgebraicGeometry.ProEtale.localizationAtPrime_strictlyHenselian_of_etale_faithfullyFlat_retracts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/IndEtaleConstruction/StrictlyHenselianFromRetractions.lean, line 433](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/IndEtaleConstruction/StrictlyHenselianFromRetractions.lean#L433).
 
 > If every faithfully flat étale algebra over `A` has a retraction, then the localization
 > of `A` at any maximal ideal is strictly henselian.
@@ -144,7 +144,7 @@ theorem localizationAtPrime_strictlyHenselian_of_etale_faithfullyFlat_retracts
 
 [Tag 097W](https://stacks.math.columbia.edu/tag/097W) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.etale_faithfullyFlat_retracts_localizationRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/IndEtaleConstruction/LocalizationRetraction.lean, line 423](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/IndEtaleConstruction/LocalizationRetraction.lean#L423).
+**`AlgebraicGeometry.ProEtale.etale_faithfullyFlat_retracts_localizationRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/IndEtaleConstruction/LocalizationRetraction.lean, line 424](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/IndEtaleConstruction/LocalizationRetraction.lean#L424).
 
 > The property that every faithfully flat étale algebra admits a retraction
 > passes to the canonical localization along any closed subscheme.
@@ -167,7 +167,7 @@ theorem etale_faithfullyFlat_retracts_localizationRing
 
 [Tag 097X](https://stacks.math.columbia.edu/tag/097X) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.exists_wLocal_faithfullyFlat_indEtale_extensions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/WLocalIndEtaleSquare.lean, line 653](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/WLocalIndEtaleSquare.lean#L653).
+**`AlgebraicGeometry.ProEtale.exists_wLocal_faithfullyFlat_indEtale_extensions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/WLocalIndEtaleSquare.lean, line 653](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/WLocalIndEtaleSquare.lean#L653).
 
 > A ring map inducing algebraic extensions on residue fields admits a commutative square of
 > faithfully flat ind-étale extensions with w-local spectra, compatible closed points, and strictly
@@ -216,4 +216,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 61.8, Tag 097Q](https://stacks.math.columbia.edu/tag/097Q)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

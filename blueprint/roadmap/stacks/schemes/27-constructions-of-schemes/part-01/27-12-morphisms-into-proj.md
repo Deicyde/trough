@@ -8,13 +8,13 @@ proof: formalized
 
 # 27.12 Morphisms into Proj
 
-Section 27.12 of the Stacks Project, [Tag 01N4](https://stacks.math.columbia.edu/tag/01N4). 9 tags here are carried by 23 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 27.12 of the Stacks Project, [Tag 01N4](https://stacks.math.columbia.edu/tag/01N4). 9 tags here are carried by 23 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 01N4, the section
 
 [Tag 01N4](https://stacks.math.columbia.edu/tag/01N4) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.ProjTriple.Triple`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjTriple.lean, line 199](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjTriple.lean#L199). The attribute's comment: “triple”.
+**`Stacks.AlgebraicGeometry.ProjTriple.Triple`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjTriple.lean, line 199](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjTriple.lean#L199). The attribute's comment: “triple”.
 
 > **A triple `(d, L, ψ)` of Stacks Tag 01N4**, with the integer `d` and the invertible
 > `𝒪_Y`-module `L` as parameters: a graded ring map `ψ : S^{(d)} ⟶ Γ_*(Y, L)` such that `L` is
@@ -28,7 +28,7 @@ Section 27.12 of the Stacks Project, [Tag 01N4](https://stacks.math.columbia.edu
 structure Triple
 ```
 
-**`Stacks.AlgebraicGeometry.ProjTriple.BundledTriple`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjTriple.lean, line 217](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjTriple.lean#L217). The attribute's comment: “triple, bundled”.
+**`Stacks.AlgebraicGeometry.ProjTriple.BundledTriple`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjTriple.lean, line 217](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjTriple.lean#L217). The attribute's comment: “triple, bundled”.
 
 > **A triple of Stacks Tag 01N4 in the literal shape of the source**: an integer `d ≥ 1`, an
 > invertible `𝒪_Y`-module `L`, and a graded ring map `ψ : S^{(d)} ⟶ Γ_*(Y, L)` for which `L` is
@@ -38,7 +38,7 @@ structure Triple
 structure BundledTriple
 ```
 
-**`Stacks.AlgebraicGeometry.ProjTriple.StrictEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjTriple.lean, line 246](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjTriple.lean#L246). The attribute's comment: “strict equivalence”.
+**`Stacks.AlgebraicGeometry.ProjTriple.StrictEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjTriple.lean, line 246](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjTriple.lean#L246). The attribute's comment: “strict equivalence”.
 
 > **Strict equivalence of two triples with the same `d`**, Stacks Tag 01N4: there is an
 > isomorphism `β : L ⟶ L'` of invertible `𝒪_Y`-modules with `β ∘ ψ = ψ'`.
@@ -51,7 +51,7 @@ structure BundledTriple
 def StrictEquiv (t : Triple 𝒮 Y L d) (t' : Triple 𝒮 Y L' d) : Prop
 ```
 
-**`Stacks.AlgebraicGeometry.ProjTripleDegreeFunctor.Fd.functor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjTripleDegreeFunctor.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjTripleDegreeFunctor.lean#L195). The attribute's comment: “the functor F\_d : Sch^opp ⟶ Sets of this section at a fixed weight d, with both functor laws proved (Fd.pullback\_id and Fd.pullback\_comp): on objects the set F\_d(Y) of strict equivalence classes of weight-d triples (d, L, ψ) over Y, on morphisms the pullback of a triple. The weight is a parameter rather than a field, so that SectionsEquiv applies with no transport. The target is Type (u+1), not Type u, because a triple carries an 𝒪\_Y-module. Representability of F\_d by U\_d is Tag 01N9 and of the colimit F by Proj(A) is Tag 01NC; neither is proved in this file (Tag 01NC's is the carrier ProjTripleDegreeFunctor.F.representableBy, which is built on top of this functor)”.
+**`Stacks.AlgebraicGeometry.ProjTripleDegreeFunctor.Fd.functor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjTripleDegreeFunctor.lean, line 195](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjTripleDegreeFunctor.lean#L195). The attribute's comment: “the functor F\_d : Sch^opp ⟶ Sets of this section at a fixed weight d, with both functor laws proved (Fd.pullback\_id and Fd.pullback\_comp): on objects the set F\_d(Y) of strict equivalence classes of weight-d triples (d, L, ψ) over Y, on morphisms the pullback of a triple. The weight is a parameter rather than a field, so that SectionsEquiv applies with no transport. The target is Type (u+1), not Type u, because a triple carries an 𝒪\_Y-module. Representability of F\_d by U\_d is Tag 01N9 and of the colimit F by Proj(A) is Tag 01NC; neither is proved in this file (Tag 01NC's is the carrier ProjTripleDegreeFunctor.F.representableBy, which is built on top of this functor)”.
 
 > **The functor `F_d : Sch^{opp} ⟶ Sets`** at a fixed weight `d`. It sends a scheme `Y` to the
 > set `F_d(Y)` of strict equivalence classes of weight-`d` triples `(d, L, ψ)` over `Y`, and a
@@ -62,7 +62,7 @@ def StrictEquiv (t : Triple 𝒮 Y L d) (t' : Triple 𝒮 Y L' d) : Prop
 def Fd.functor (d : ℕ) : Scheme.{u}ᵒᵖ ⥤ Type (u + 1)
 ```
 
-**`Stacks.AlgebraicGeometry.ProjTripleFunctorLaws.sectionsEquiv_pullbackTriple_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjTripleFunctorLaws.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjTripleFunctorLaws.lean#L163). The attribute's comment: “the identity functor law for the pullback of a triple of this section: the pullback along the identity is STRICTLY EQUIVALENT to the triple, in the SectionsEquiv sense of the section; the composition law is sectionsEquiv\_pullbackTriple\_comp below”.
+**`Stacks.AlgebraicGeometry.ProjTripleFunctorLaws.sectionsEquiv_pullbackTriple_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjTripleFunctorLaws.lean, line 163](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjTripleFunctorLaws.lean#L163). The attribute's comment: “the identity functor law for the pullback of a triple of this section: the pullback along the identity is STRICTLY EQUIVALENT to the triple, in the SectionsEquiv sense of the section; the composition law is sectionsEquiv\_pullbackTriple\_comp below”.
 
 > The identity functor law for the pullback of a triple: the pullback
 > `(d, (𝟙 Y)^*L, (𝟙 Y)^* ∘ ψ)` of a triple `(d, L, ψ)` along `𝟙 Y` is strictly equivalent to it.
@@ -73,7 +73,7 @@ theorem sectionsEquiv_pullbackTriple_id (t : ProjTripleClassifying.Triple 𝒜 Y
       t.psi
 ```
 
-**`Stacks.AlgebraicGeometry.ProjTripleFunctorLaws.sectionsEquiv_pullbackTriple_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjTripleFunctorLaws.lean, line 368](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjTripleFunctorLaws.lean#L368). The attribute's comment: “the composition functor law for the pullback of a triple of this section: the pullback along f of the pullback along g is STRICTLY EQUIVALENT to the pullback along f ≫ g, in the SectionsEquiv sense of the section”.
+**`Stacks.AlgebraicGeometry.ProjTripleFunctorLaws.sectionsEquiv_pullbackTriple_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjTripleFunctorLaws.lean, line 368](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjTripleFunctorLaws.lean#L368). The attribute's comment: “the composition functor law for the pullback of a triple of this section: the pullback along f of the pullback along g is STRICTLY EQUIVALENT to the pullback along f ≫ g, in the SectionsEquiv sense of the section”.
 
 > The composition functor law for the pullback of a triple: the pullback along `f` of the
 > pullback along `g` of a triple is strictly equivalent to its pullback along `f ≫ g`.
@@ -85,7 +85,7 @@ theorem sectionsEquiv_pullbackTriple_comp (t : ProjTripleClassifying.Triple 𝒜
       (ProjTriplePullback.pullbackTriple 𝒜 t (f ≫ g)).psi
 ```
 
-**`Stacks.AlgebraicGeometry.ProjTriplePullback.pullbackTriple`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjTriplePullback.lean, line 170](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjTriplePullback.lean#L170). The attribute's comment: “the pullback of a triple along a morphism of schemes h : Y' ⟶ Y: the triple (d, h^*L, h^* ∘ ψ), in the VeroneseSections spelling of the graded map that Tag 01N8 and Tag 01N9 are stated in. The two functor laws — that the pullback along an identity and the pullback along a composite are STRICTLY EQUIVALENT to the triple and to the twice-pulled-back triple — are ProjTripleFunctorLaws.sectionsEquiv\_pullbackTriple\_id and sectionsEquiv\_pullbackTriple\_comp. The functor F\_d itself, i.e. the quotient of the triples by strict equivalence with this pullback on morphisms, is ProjTripleDegreeFunctor.Fd.functor; it is built at a fixed weight, on a carrier that takes the weight as a parameter rather than as a field, because strict equivalence compares two graded maps of the same weight and a triple-level version would need a transport”.
+**`Stacks.AlgebraicGeometry.ProjTriplePullback.pullbackTriple`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjTriplePullback.lean, line 168](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjTriplePullback.lean#L168). The attribute's comment: “the pullback of a triple along a morphism of schemes h : Y' ⟶ Y: the triple (d, h^*L, h^* ∘ ψ), in the VeroneseSections spelling of the graded map that Tag 01N8 and Tag 01N9 are stated in. The two functor laws — that the pullback along an identity and the pullback along a composite are STRICTLY EQUIVALENT to the triple and to the twice-pulled-back triple — are ProjTripleFunctorLaws.sectionsEquiv\_pullbackTriple\_id and sectionsEquiv\_pullbackTriple\_comp. The functor F\_d itself, i.e. the quotient of the triples by strict equivalence with this pullback on morphisms, is ProjTripleDegreeFunctor.Fd.functor; it is built at a fixed weight, on a carrier that takes the weight as a parameter rather than as a field, because strict equivalence compares two graded maps of the same weight and a triple-level version would need a transport”.
 
 > For `h : Y' ⟶ Y`, the pullback of the triple `(d, L, ψ)` over `Y` is the triple
 > `(d, h^*L, h^* ∘ ψ)` over `Y'`: the same integer `d`, the pullback of the invertible module, and
@@ -100,7 +100,7 @@ def pullbackTriple (t : ProjTripleClassifying.Triple 𝒜 Y) (h : Y' ⟶ Y) :
 
 [Tag 01N5](https://stacks.math.columbia.edu/tag/01N5) in the Stacks Project.
 
-**`AlgebraicGeometry.Proj.degreeOpen`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjDegreeOpen.lean, line 49](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjDegreeOpen.lean#L49).
+**`AlgebraicGeometry.Proj.degreeOpen`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjDegreeOpen.lean, line 49](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjDegreeOpen.lean#L49).
 
 > **The degree `d` open of `Proj 𝒜`**, the union `U_d = ⋃_{f ∈ 𝒜 d} D₊(f)` of the projective
 > standard opens of the homogeneous elements of degree exactly `d`.
@@ -109,7 +109,7 @@ def pullbackTriple (t : ProjTripleClassifying.Triple 𝒜 Y) (h : Y' ⟶ Y) :
 public def degreeOpen (d : ℕ) : (Proj 𝒜).Opens
 ```
 
-**`AlgebraicGeometry.Proj.degreeOpen_le_of_dvd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjDegreeOpen.lean, line 61](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjDegreeOpen.lean#L61). The attribute's comment: “divisibility”.
+**`AlgebraicGeometry.Proj.degreeOpen_le_of_dvd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjDegreeOpen.lean, line 61](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjDegreeOpen.lean#L61). The attribute's comment: “divisibility”.
 
 > **The degree opens grow along divisibility**: if `d ∣ d'` and `d'` is positive then
 > `U_d ⊆ U_{d'}`. A homogeneous `f` of degree `d` has `f ^ k` of degree `d' = d * k`, and
@@ -120,7 +120,7 @@ public theorem degreeOpen_le_of_dvd {d d' : ℕ} (hdvd : d ∣ d') (hd' : 0 < d'
     degreeOpen 𝒜 d ≤ degreeOpen 𝒜 d'
 ```
 
-**`AlgebraicGeometry.Proj.iSup_degreeOpen_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjDegreeOpen.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjDegreeOpen.lean#L74). The attribute's comment: “covering”.
+**`AlgebraicGeometry.Proj.iSup_degreeOpen_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjDegreeOpen.lean, line 74](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjDegreeOpen.lean#L74). The attribute's comment: “covering”.
 
 > **The degree opens cover `Proj 𝒜`**: every point lies in `U_d` for some positive `d`, because
 > a homogeneous prime of `Proj 𝒜` does not contain the irrelevant ideal, which is generated by the
@@ -135,20 +135,22 @@ public theorem iSup_degreeOpen_eq_top :
 
 [Tag 01N6](https://stacks.math.columbia.edu/tag/01N6) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.ProjDegreeOpenSections.psi`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjDegreeOpenSections.lean, line 484](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjDegreeOpenSections.lean#L484).
+**`Stacks.AlgebraicGeometry.ProjDegreeOpenPsiTensor.psiTensor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjDegreeOpenPsiTensor.lean, line 258](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjDegreeOpenPsiTensor.lean#L258).
 
-> The graded ring homomorphism `ψ^d : S^(d) ⟶ Γ_*(Y, 𝒪_Y(d))`, sending a homogeneous element
-> of degree `nd` to the restriction to `Y` of the global section of `𝒪(nd)` it determines. Taken at
-> `Y = U_d` this is `ψ^d : S^(d) ⟶ Γ_*(U_d, 𝒪_{U_d}(d))`.
+> **Stacks Equation 01N6: the graded ring homomorphism
+> `ψ^d : S^(d) ⟶ Γ_*(U_d, 𝒪_{U_d}(d)) = ⨁_{n ≥ 0} Γ(U_d, 𝒪_{U_d}(d)^{⊗ n})`.** The target is the
+> section ring of [Stacks, Tag 01CV] of the invertible module `𝒪_{U_d}(d)`, graded by the tensor
+> power. A homogeneous element of Veronese degree `n`, that is an element of `S_{nd}`, goes to the
+> restriction to `U_d` of the global section of `𝒪_X(nd)` it defines, read as a section of
+> `𝒪_{U_d}(d)^{⊗ n}` through the canonical isomorphism `𝒪_{U_d}(d)^{⊗ n} ≅ 𝒪_{U_d}(nd)`.
 
 ```lean
-public def psi (hd : 0 < d) :
+def psiTensor (hd : 0 < d) :
     letI := veroneseGradingGradedRing 𝒮 d hd
-    letI := veroneseGradedRing 𝒮 Y d
-    veroneseGrading 𝒮 d →+*ᵍ veroneseSectionRingGrading 𝒮 Y d
+    veroneseGrading 𝒮 d →+*ᵍ tensorPowGrading (universalTwist 𝒮 d)
 ```
 
-**`Stacks.AlgebraicGeometry.ProjDegreeOpenSections.nonvanishingLocus_veroneseSection_inter`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjDegreeOpenSections.lean, line 519](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjDegreeOpenSections.lean#L519). The attribute's comment: “global generation in degree one”.
+**`Stacks.AlgebraicGeometry.ProjDegreeOpenSections.nonvanishingLocus_veroneseSection_inter`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjDegreeOpenSections.lean, line 527](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjDegreeOpenSections.lean#L527). The attribute's comment: “global generation in degree one”.
 
 > **Global generation of `𝒪_{U_d}(d)` by the image of `ψ^d` in degree one.** The nonvanishing
 > locus on `U_d` of the section attached to a homogeneous `f` of degree `d` is `D₊(f) ∩ U_d`; since
@@ -170,43 +172,40 @@ public theorem nonvanishingLocus_veroneseSection_inter (f : 𝒮 (1 * d)) :
 
 [Tag 01N7](https://stacks.math.columbia.edu/tag/01N7) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.MorphismsIntoProj.psiPullback_gradedRingHom_and_generatesStalks`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MorphismsIntoProjGradedRing.lean, line 290](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MorphismsIntoProjGradedRing.lean#L290). The attribute's comment: “the graded ring homomorphism ψ^d\_φ : S^(d) ⟶ Γ\_*(Y, φ⁎𝒪\_X(d)) attached to a morphism φ : Y ⟶ U\_d, whose degree n component sends a homogeneous element of degree nd to the pullback along φ of the global section of 𝒪\_X(nd) it determines, together with the global generation of φ⁎𝒪\_X(d) by the sections in the image of its degree-one component S\_d”.
+**`Stacks.AlgebraicGeometry.MorphismsIntoProj.psiPullbackSectionRing_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MorphismsIntoProjSectionRing.lean, line 295](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MorphismsIntoProjSectionRing.lean#L295). The attribute's comment: “the graded ring homomorphism ψ^d\_φ : S^(d) ⟶ Γ\_*(Y, L) = ⨁\_n Γ(Y, L^\{⊗ n}) into the section ring of the invertible sheaf L = φ⁎O\_\{U\_d}(d), obtained by composing ψ^d with pullback along φ : Y ⟶ U\_d, together with invertibility of L and its generation by the sections ψ^d\_φ(f), f ∈ S\_d”.
 
-> Let `S` be a graded ring, `X = Proj(S)`, let `d ≥ 1`, let `U_d ⊂ X` be the degree `d` open and
-> let `φ : Y ⟶ U_d` be a morphism of schemes. Then the degreewise maps assemble into a graded ring
-> homomorphism
+> Let `S` be a graded ring, `X = Proj(S)`, let `d ≥ 1`, let `U_d ⊆ X` be the degree `d` open and
+> let `φ : Y ⟶ U_d` be a morphism of schemes. Put `L = φ⁎𝒪_{U_d}(d)`. Composing the graded ring map
+> `ψ^d : S^{(d)} ⟶ Γ_*(U_d, 𝒪_{U_d}(d))` with pullback along `φ` gives a graded ring homomorphism
 >
-> `ψ^d_φ : S^{(d)} ⟶ Γ_*(Y, φ⁎𝒪_X(d))`,
+> `ψ^d_φ : S^{(d)} ⟶ Γ_*(Y, L) = ⨁_{n ≥ 0} Γ(Y, L^{⊗ n})`
 >
-> sending a homogeneous element of degree `nd` to the pullback along `φ` of the global section of
-> `𝒪_X(nd)` it determines, and the invertible sheaf `φ⁎𝒪_X(d)` is generated by the global sections
-> in the image of the degree-one component `(S^{(d)})_1 = S_d ⟶ Γ(Y, φ⁎𝒪_X(d))`.
->
-> The target is the twist model of `Γ_*`: its degree `n` piece is `Γ(Y, φ⁎𝒪_X(nd))` rather than
-> `Γ(Y, (φ⁎𝒪_X(d))^{⊗ n})`, and the grading index type lives in the same universe as the ring. The
-> graded ring homomorphism itself is available as `psiPullback`, and the two conjuncts separately as
-> `psiPullback_apply_homogeneous` and `generatesStalks_psiPullbackVeroneseHom_one`.
+> into the section ring of Tag 01CV: a homogeneous `a ∈ S_{nd}` is sent to the pullback along `φ`
+> of the section of `𝒪_{U_d}(d)^{⊗ n}` corresponding, under `θ : 𝒪_{U_d}(d)^{⊗ n} ≅ 𝒪_{U_d}(nd)`,
+> to the global section of `𝒪_{U_d}(nd)` attached to `a`, placed in degree `n`. Moreover `L` is an
+> invertible `𝒪_Y`-module, and it is generated by the global sections `ψ^d_φ(f)`, `f ∈ S_d`.
 
 ```lean
-theorem psiPullback_gradedRingHom_and_generatesStalks (hd : 0 < d)
-    (φ : Y ⟶ (degreeOpen 𝒜 d).toScheme) :
+theorem psiPullbackSectionRing_spec (hd : 0 < d) (φ : Y ⟶ (degreeOpen 𝒜 d).toScheme) :
     (letI := veroneseGradingGradedRing 𝒜 d hd
-     letI := veroneseSectionGradedRing 𝒜 (toProjRS 𝒜 φ) d (op ⊤)
-     ∃ ψ : veroneseGrading 𝒜 d →+*ᵍ veroneseSectionRingGrading 𝒜 (toProjRS 𝒜 φ) d (op ⊤),
+     ∃ ψ : veroneseGrading 𝒜 d →+*ᵍ
+         Stacks.ExternalGrading.summand (powSections (pullbackUniversalTwist 𝒜 φ)),
        ∀ (n : ℕ) (a : veroneseGrading 𝒜 d n),
          ψ (a : veroneseSubring 𝒜 d) =
-           DirectSum.of (veroneseSections 𝒜 (toProjRS 𝒜 φ) d (op ⊤)) n
-             (psiPullbackVeroneseHom 𝒜 φ n a)) ∧
-      Stacks.ProjectiveFromSections.GeneratesStalks
-        (L := pullbackTwist 𝒜 φ ((1 * d : ℕ) : ℤ))
-        (fun x : ↥(veroneseGrading 𝒜 d 1) => psiPullbackVeroneseHom 𝒜 φ 1 x)
+           DirectSum.of (powSections (pullbackUniversalTwist 𝒜 φ)) n
+             (secOf (pullbackUniversalTwist 𝒜 φ)
+               (pullSection φ (universalTwist 𝒜 d) n
+                 ((universalVeroneseSections 𝒜 d).toFun n (veroneseToGrade 𝒜 d n a))))) ∧
+      Stacks.Ample.IsInvertibleModule Y (pullbackUniversalTwist 𝒜 φ) ∧
+      Stacks.ProjectiveFromSections.GeneratesStalks (L := pullbackUniversalTwist 𝒜 φ)
+        (fun f : 𝒜 d => psiSection 𝒜 (psiPullbackPowSections 𝒜 φ) f)
 ```
 
 ## Tag 01N8, a lemma
 
 [Tag 01N8](https://stacks.math.columbia.edu/tag/01N8) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.MorphismToProjSquare.existsUnique_square`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/MorphismToProjSquare.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/MorphismToProjSquare.lean#L114). The attribute's comment: “the unique pair (φ, α) of φ : Y ⟶ U\_d and α : φ^*O\_\{U\_d}(d) ≅ L making the square α^\{⊗n}(φ^*(ψ^d(x))) = ψ(x) commute in every degree n”.
+**`Stacks.AlgebraicGeometry.MorphismToProjSquare.existsUnique_square`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/MorphismToProjSquare.lean, line 114](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/MorphismToProjSquare.lean#L114). The attribute's comment: “the unique pair (φ, α) of φ : Y ⟶ U\_d and α : φ^*O\_\{U\_d}(d) ≅ L making the square α^\{⊗n}(φ^*(ψ^d(x))) = ψ(x) commute in every degree n”.
 
 > Let `A` be a graded ring, `X = Proj(A)`, let `d ≥ 1` and let `U_d ⊆ X` be the open of
 > Equation 27.12.0.1. Let `Y` be a scheme, `L` an invertible `𝒪_Y`-module and
@@ -240,7 +239,7 @@ theorem existsUnique_square (hd : 0 < d) (ψ : VeroneseSections 𝒜 d L)
 
 [Tag 01N9](https://stacks.math.columbia.edu/tag/01N9) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.ProjChartAlphaInstance.isInvertibleModule_pullbackTwist`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjChartAlphaInstance.lean, line 211](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjChartAlphaInstance.lean#L211). The attribute's comment: “the universal family (d, 𝒪\_\{U\_d}(d), ψ^d): 𝒪\_\{U\_d}(d) is an invertible 𝒪\_\{U\_d}-module”.
+**`Stacks.AlgebraicGeometry.ProjChartAlphaInstance.isInvertibleModule_pullbackTwist`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjChartAlphaInstance.lean, line 211](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjChartAlphaInstance.lean#L211). The attribute's comment: “the universal family (d, 𝒪\_\{U\_d}(d), ψ^d): 𝒪\_\{U\_d}(d) is an invertible 𝒪\_\{U\_d}-module”.
 
 > **`φ⁎𝒪_{U_d}(d)` is an invertible `𝒪_Y`-module.** The twist `𝒪_X(d)` is invertible only after
 > restriction to `U_d` ([Stacks, Tag 01MU]), the pullback along `φ` of an invertible module is
@@ -254,7 +253,7 @@ instance isInvertibleModule_pullbackTwist (φ : Y ⟶ (degreeOpen 𝒜 d).toSche
     Stacks.Ample.IsInvertibleModule Y (pullbackTwist 𝒜 φ (d : ℤ))
 ```
 
-**`Stacks.AlgebraicGeometry.ProjDegreeOpenRepresents.iSup_nonvanishingOpen_universalSection_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjDegreeOpenRepresents.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjDegreeOpenRepresents.lean#L163). The attribute's comment: “the universal family (d, 𝒪\_\{U\_d}(d), ψ^d): the degree-one values ψ^d(f), f ∈ A\_d, generate 𝒪\_\{U\_d}(d), their nonvanishing opens covering U\_d”.
+**`Stacks.AlgebraicGeometry.ProjDegreeOpenRepresents.iSup_nonvanishingOpen_universalSection_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjDegreeOpenRepresents.lean, line 163](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjDegreeOpenRepresents.lean#L163). The attribute's comment: “the universal family (d, 𝒪\_\{U\_d}(d), ψ^d): the degree-one values ψ^d(f), f ∈ A\_d, generate 𝒪\_\{U\_d}(d), their nonvanishing opens covering U\_d”.
 
 > **The universal family of [Stacks, Tag 01N9] is generated in degree one.** The nonvanishing
 > open of `ψ^d(f)` on `U_d` is the preimage of `D₊(f)` under the open immersion `U_d ⟶ X`
@@ -269,7 +268,7 @@ theorem iSup_nonvanishingOpen_universalSection_eq_top :
       (universalSection 𝒜 d f)) = ⊤
 ```
 
-**`Stacks.AlgebraicGeometry.ProjDegreeOpenRepresents.existsUnique_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjDegreeOpenRepresents.lean, line 209](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjDegreeOpenRepresents.lean#L209). The attribute's comment: “U\_d represents F\_d, with (d, 𝒪\_\{U\_d}(d), ψ^d) the universal family: a unique morphism Y ⟶ U\_d for every triple over Y. The strict equivalence between the pullback of the universal family and the given triple is IsCompatible, whose degree-n clause for n ≥ 2 is the source's local identity ψ(a)|\_V = φ♯(a/f^n)·ψ(f)^n|\_V rather than the tensor-power square α^\{⊗n}(ψ^d\_φ(x)) = ψ(x); the square implies it, so the uniqueness assertion is at least as strong as the source's, and the caveat is inherited verbatim from Tag 01N8. Degree 1 is the square itself. The source quantifies over strict equivalence classes; this statement quantifies over representatives, which is stronger.”.
+**`Stacks.AlgebraicGeometry.ProjDegreeOpenRepresents.existsUnique_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjDegreeOpenRepresents.lean, line 209](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjDegreeOpenRepresents.lean#L209). The attribute's comment: “U\_d represents F\_d, with (d, 𝒪\_\{U\_d}(d), ψ^d) the universal family: a unique morphism Y ⟶ U\_d for every triple over Y. The strict equivalence between the pullback of the universal family and the given triple is IsCompatible, whose degree-n clause for n ≥ 2 is the source's local identity ψ(a)|\_V = φ♯(a/f^n)·ψ(f)^n|\_V rather than the tensor-power square α^\{⊗n}(ψ^d\_φ(x)) = ψ(x); the square implies it, so the uniqueness assertion is at least as strong as the source's, and the caveat is inherited verbatim from Tag 01N8. Degree 1 is the square itself. The source quantifies over strict equivalence classes; this statement quantifies over representatives, which is stronger.”.
 
 > **Stacks Tag 01N9, Lemma 27.12.2.** Let `A` be a graded ring, `X = Proj(A)`, let `d > 0` and
 > let `U_d ⊆ X` be the open of Equation 27.12.0.1. The open subscheme `U_d` **represents the
@@ -300,7 +299,7 @@ theorem existsUnique_hom (hd : 0 < d) (ψ : VeroneseSections 𝒜 d L)
 
 [Tag 01NA](https://stacks.math.columbia.edu/tag/01NA) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.ProjDegreeOneRepresents.degreeOpen_one_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjDegreeOneRepresents.lean, line 145](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjDegreeOneRepresents.lean#L145). The attribute's comment: “X = U₁”.
+**`Stacks.AlgebraicGeometry.ProjDegreeOneRepresents.degreeOpen_one_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjDegreeOneRepresents.lean, line 145](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjDegreeOneRepresents.lean#L145). The attribute's comment: “X = U₁”.
 
 > **`X = U_1`.** When `A` is generated as an `𝒜 0`-algebra by its degree-one part, the open
 > `U_1 = ⋃_{f ∈ 𝒜 1} D₊(f)` of Equation 27.12.0.1 is all of `Proj A`. This is the one input the
@@ -313,7 +312,7 @@ theorem degreeOpen_one_eq_top (hgen : Algebra.adjoin (𝒜 0) ((𝒜 1 : Set A))
     degreeOpen 𝒜 1 = ⊤
 ```
 
-**`Stacks.AlgebraicGeometry.ProjDegreeOneRepresents.isInvertibleModule_twistingSheafOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjDegreeOneRepresents.lean, line 219](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjDegreeOneRepresents.lean#L219). The attribute's comment: “the universal family on X: 𝒪\_X(1) is invertible”. References: EGA II (2.6.1); EGA II (3.2.5), “special case”.
+**`Stacks.AlgebraicGeometry.ProjDegreeOneRepresents.isInvertibleModule_twistingSheafOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjDegreeOneRepresents.lean, line 219](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjDegreeOneRepresents.lean#L219). The attribute's comment: “the universal family on X: 𝒪\_X(1) is invertible”. References: EGA II (2.6.1); EGA II (3.2.5), “special case”.
 
 > **`𝒪_X(1)` is an invertible `𝒪_X`-module on all of `Proj A`** when `A` is generated in degree
 > one over `𝒜 0`. Without that hypothesis the twist is invertible only on `U_1`; this is
@@ -328,7 +327,7 @@ theorem isInvertibleModule_twistingSheafOne
       (twistingSheaf 𝒜 ((1 : ℕ) : ℤ))
 ```
 
-**`Stacks.AlgebraicGeometry.ProjDegreeOneRepresents.exists_mem_nonvanishingLocus_degreeSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjDegreeOneRepresents.lean, line 234](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjDegreeOneRepresents.lean#L234). The attribute's comment: “the universal family on X: global generation in degree one”.
+**`Stacks.AlgebraicGeometry.ProjDegreeOneRepresents.exists_mem_nonvanishingLocus_degreeSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjDegreeOneRepresents.lean, line 234](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjDegreeOneRepresents.lean#L234). The attribute's comment: “the universal family on X: global generation in degree one”.
 
 > **The universal family of [Stacks, Tag 01NA] generates `𝒪_X(1)` on all of `X`.** The global
 > section of `𝒪_X(1)` attached to a degree-one element `f` is nonvanishing exactly on `D₊(f)`
@@ -343,7 +342,7 @@ theorem exists_mem_nonvanishingLocus_degreeSection
       (twistingSheaf 𝒜 ((1 : ℕ) : ℤ)) (degreeSection 𝒜 1 f)
 ```
 
-**`Stacks.AlgebraicGeometry.ProjDegreeOneRepresents.existsUnique_classifies`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjDegreeOneRepresents.lean, line 353](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjDegreeOneRepresents.lean#L353). The attribute's comment: “the universal property of Proj”.
+**`Stacks.AlgebraicGeometry.ProjDegreeOneRepresents.existsUnique_classifies`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjDegreeOneRepresents.lean, line 353](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjDegreeOneRepresents.lean#L353). The attribute's comment: “the universal property of Proj”.
 
 > **The universal property of `Proj A` of [Stacks, Tag 01NA].** Let `A` be a graded ring
 > generated as an `𝒜 0`-algebra by its degree-one part, let `Y` be a scheme, `L` an invertible
@@ -366,7 +365,7 @@ theorem existsUnique_classifies (hgen : Algebra.adjoin (𝒜 0) ((𝒜 1 : Set A
 
 [Tag 01NB](https://stacks.math.columbia.edu/tag/01NB) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.ProjEquivalenceCycle.tfae_triple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjEquivalenceCycle.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjEquivalenceCycle.lean#L134). The attribute's comment: “all four clauses of the tag are equivalent, for two triples over a scheme, as a single statement; the list entries are clauses (1), (2), (3), (4) in that order”.
+**`Stacks.AlgebraicGeometry.ProjEquivalenceCycle.tfae_triple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjEquivalenceCycle.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjEquivalenceCycle.lean#L134). The attribute's comment: “all four clauses of the tag are equivalent, for two triples over a scheme, as a single statement; the list entries are clauses (1), (2), (3), (4) in that order”.
 
 > For two triples `t`, `t'` over a scheme the following are equivalent: the agreement condition
 > at the weights `(lcm(d, d') / d, lcm(d, d') / d')`; the agreement condition at the weights
@@ -386,7 +385,7 @@ theorem tfae_triple (t t' : Triple 𝒜 Y) :
 
 [Tag 01NC](https://stacks.math.columbia.edu/tag/01NC) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.ProjTripleDegreeFunctor.F.representableBy`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjFunctorRepresentable.lean, line 337](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjFunctorRepresentable.lean#L337). The attribute's comment: “the FULL statement of this tag: Proj(A) represents the functor F of Section 01N4. F.functor is F as a functor Sch^opp ⟶ Type (u+1) on ALL schemes (the colimit Fcolim of the F\_d along divisibility on a quasi-compact T, by F.fcolimEquiv, and the limit over the quasi-compact test objects in general, which is the limit over the quasi-compact opens the source writes — see the module docstring for why the index is the morphisms out of quasi-compact schemes), F.classifyingEquiv is the bijection F(T) ≃ Mor(T, Proj(A)) for every scheme T, and this is the RepresentableBy datum. The two halves of the bijection remain available separately as Fd.veronese\_eq\_weightCongr\_veronese\_of\_classifyingMorphism\_eq (injectivity) and Fd.exists\_pos\_classifyingMorphism\_eq (surjectivity for a quasi-compact Y). The grading is taken with its index type in the same universe as the graded ring, which is the generality of Tag 01N9's universal family here; the functor F itself and F.fcolimEquiv are unrestricted.”.
+**`Stacks.AlgebraicGeometry.ProjTripleDegreeFunctor.F.representableBy`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjFunctorRepresentable.lean, line 337](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjFunctorRepresentable.lean#L337). The attribute's comment: “the FULL statement of this tag: Proj(A) represents the functor F of Section 01N4. F.functor is F as a functor Sch^opp ⟶ Type (u+1) on ALL schemes (the colimit Fcolim of the F\_d along divisibility on a quasi-compact T, by F.fcolimEquiv, and the limit over the quasi-compact test objects in general, which is the limit over the quasi-compact opens the source writes — see the module docstring for why the index is the morphisms out of quasi-compact schemes), F.classifyingEquiv is the bijection F(T) ≃ Mor(T, Proj(A)) for every scheme T, and this is the RepresentableBy datum. The two halves of the bijection remain available separately as Fd.veronese\_eq\_weightCongr\_veronese\_of\_classifyingMorphism\_eq (injectivity) and Fd.exists\_pos\_classifyingMorphism\_eq (surjectivity for a quasi-compact Y). The grading is taken with its index type in the same universe as the graded ring, which is the generality of Tag 01N9's universal family here; the functor F itself and F.fcolimEquiv are unrestricted.”.
 
 > **`Proj(A)` represents the functor `F` of Section 01N4.** Let `A` be a graded ring and
 > `X = Proj(A)`. The functor `F : Sch^{opp} ⟶ Sets` which sends a quasi-compact scheme `T` to
@@ -409,4 +408,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 27.12, Tag 01N4](https://stacks.math.columbia.edu/tag/01N4)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

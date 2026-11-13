@@ -8,13 +8,13 @@ proof: formalized
 
 # 33.15 Change of fields and ample invertible sheaves
 
-Section 33.15 of the Stacks Project, [Tag 0BDB](https://stacks.math.columbia.edu/tag/0BDB). 5 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 33.15 of the Stacks Project, [Tag 0BDB](https://stacks.math.columbia.edu/tag/0BDB). 5 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0BDC, a lemma
 
 [Tag 0BDC](https://stacks.math.columbia.edu/tag/0BDC) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isAmple_of_fieldExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FieldExtensionDescent/Unconditional.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FieldExtensionDescent/Unconditional.lean#L91).
+**`AlgebraicGeometry.exists_isAmple_of_fieldExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FieldExtensionDescent/Unconditional.lean, line 91](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FieldExtensionDescent/Unconditional.lean#L91).
 
 > Let `k` be a field and `X` a scheme over `k`. If there exists an ample invertible sheaf on
 > `X_K` for some field extension `K/k`, then `X` has an ample invertible sheaf.
@@ -37,7 +37,7 @@ public theorem exists_isAmple_of_fieldExtension
 
 [Tag 0BDD](https://stacks.math.columbia.edu/tag/0BDD) in the Stacks Project.
 
-**`AlgebraicGeometry.isQuasiAffine_of_fieldExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FieldExtensionDescent/QuasiAffine.lean, line 123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FieldExtensionDescent/QuasiAffine.lean#L123).
+**`AlgebraicGeometry.isQuasiAffine_of_fieldExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FieldExtensionDescent/QuasiAffine.lean, line 123](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FieldExtensionDescent/QuasiAffine.lean#L123).
 
 > Let `k` be a field and `X` a scheme over `k`. If `X_K` is quasi-affine for some field
 > extension `K/k`, then `X` is quasi-affine.
@@ -49,7 +49,7 @@ public theorem isQuasiAffine_of_fieldExtension
     Scheme.IsQuasiAffine X
 ```
 
-**`AlgebraicGeometry.isQuasiAffine_of_isQuasiAffine_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/QuasiAffine.lean, line 49](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/QuasiAffine.lean#L49).
+**`AlgebraicGeometry.isQuasiAffine_of_isQuasiAffine_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/QuasiAffine.lean, line 49](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/QuasiAffine.lean#L49).
 
 > **Stacks Project, Tag 0BDD.** Quasi-affineness descends along an extension of the base
 > field: if the base change of `X` to `K` is quasi-affine, then so is `X`.
@@ -67,7 +67,7 @@ theorem isQuasiAffine_of_isQuasiAffine_baseChange
 
 [Tag 0BDE](https://stacks.math.columbia.edu/tag/0BDE) in the Stacks Project.
 
-**`AlgebraicGeometry.isQuasiProjective_of_fieldExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FieldExtensionDescent/Unconditional.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FieldExtensionDescent/Unconditional.lean#L114). References: EGA IV (9.1.5), “quasi-projective case”; EGA II (6.6.5), “quasi-proj. descent”.
+**`AlgebraicGeometry.isQuasiProjective_of_fieldExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FieldExtensionDescent/Unconditional.lean, line 114](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FieldExtensionDescent/Unconditional.lean#L114). References: EGA IV (9.1.5), “quasi-projective case”; EGA II (6.6.5), “quasi-proj. descent”.
 
 > Let `k` be a field and `X` a scheme over `k`. If `X_K` is quasi-projective over `K` for some
 > field extension `K/k`, then `X` is quasi-projective over `k`.
@@ -82,7 +82,7 @@ public theorem isQuasiProjective_of_fieldExtension
 
 [Tag 0BDF](https://stacks.math.columbia.edu/tag/0BDF) in the Stacks Project.
 
-**`AlgebraicGeometry.isProper_of_fieldExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FieldExtensionDescent/Proper.lean, line 96](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FieldExtensionDescent/Proper.lean#L96).
+**`AlgebraicGeometry.isProper_of_fieldExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FieldExtensionDescent/Proper.lean, line 96](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FieldExtensionDescent/Proper.lean#L96).
 
 > **[Stacks Project, Tag 0BDF].** Let `k` be a field and `X` a scheme over `k`. If `X_K` is
 > proper over `K` for some field extension `K/k`, then `X` is proper over `k`.
@@ -101,7 +101,7 @@ public theorem isProper_of_fieldExtension
 
 [Tag 0BDG](https://stacks.math.columbia.edu/tag/0BDG) in the Stacks Project.
 
-**`AlgebraicGeometry.isProjective_of_fieldExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FieldExtensionDescent/Projective.lean, line 161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FieldExtensionDescent/Projective.lean#L161).
+**`AlgebraicGeometry.isProjective_of_fieldExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FieldExtensionDescent/Projective.lean, line 161](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FieldExtensionDescent/Projective.lean#L161).
 
 > **[Stacks Project, Tag 0BDG].** Let `k` be a field and `X` a scheme over `k`. If `X_K` is
 > projective over `K` for some field extension `K/k`, then `X` is projective over `k`.
@@ -126,4 +126,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 33.15, Tag 0BDB](https://stacks.math.columbia.edu/tag/0BDB)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

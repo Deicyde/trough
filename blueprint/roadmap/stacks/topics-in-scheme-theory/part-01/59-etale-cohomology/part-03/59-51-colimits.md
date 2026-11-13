@@ -8,13 +8,13 @@ proof: formalized
 
 # 59.51 Colimits
 
-Section 59.51 of the Stacks Project, [Tag 03Q4](https://stacks.math.columbia.edu/tag/03Q4). 10 tags here are carried by 40 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 59.51 of the Stacks Project, [Tag 03Q4](https://stacks.math.columbia.edu/tag/03Q4). 10 tags here are carried by 40 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0EZL, a definition
 
 [Tag 0EZL](https://stacks.math.columbia.edu/tag/0EZL) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.inverseImageSystem`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/InverseImageSystem.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/InverseImageSystem.lean#L111). The attribute's comment: “the system of INVERSE IMAGES of a single sheaf: for a cocone on the inverse system with vertex `S` and an abelian sheaf on the small etale site of `S`, the system `𝒢_i = (D_i ⟶ S)^{-1} ℱ` together with its cocycle condition, constructed and not assumed. Coefficients are `Ab.{u + 1}` on Mathlib's `Scheme.smallEtaleTopology`, which is where the inverse image of abelian sheaves exists unconditionally”.
+**`Stacks.EtaleCohomology.inverseImageSystem`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/InverseImageSystem.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/InverseImageSystem.lean#L111). The attribute's comment: “the system of INVERSE IMAGES of a single sheaf: for a cocone on the inverse system with vertex `S` and an abelian sheaf on the small etale site of `S`, the system `𝒢_i = (D_i ⟶ S)^{-1} ℱ` together with its cocycle condition, constructed and not assumed. Coefficients are `Ab.{u + 1}` on Mathlib's `Scheme.smallEtaleTopology`, which is where the inverse image of abelian sheaves exists unconditionally”.
 
 > **The system of inverse images of a single sheaf, constructed.** Let `D` be an inverse system
 > of schemes, let `d` be a cocone on it with vertex `S` — so every `D_i` carries a morphism
@@ -30,12 +30,14 @@ Section 59.51 of the Stacks Project, [Tag 03Q4](https://stacks.math.columbia.edu
 def inverseImageSystem : EtaleSheafSystem D Ab.{u + 1}
 ```
 
-**`Stacks.EtaleCohomology.EtaleSheafSystem`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/SheafSystems.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/SheafSystems.lean#L110).
+**`Stacks.EtaleCohomology.EtaleSheafSystem`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/SheafSystems.lean, line 115](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/SheafSystems.lean#L115). The attribute's comment: “a system of sheaves: sheaves on the small étale sites of the members and maps f\_\{i'i}^\{-1}F\_i ⟶ F\_\{i'} satisfying the cocycle condition, the only condition the source imposes; arbitrary coefficient category”.
 
 > A *system of sheaves* on an inverse system of schemes `D`: a sheaf on the small étale site of
 > each member, together with a map from the inverse image of the sheaf at an index to the sheaf at
 > any larger index, compatible with composition of the transition morphisms through the canonical
 > comparison `Stacks.EtaleCohomology.systemPullbackComp`.
+>
+> As in the source, no condition is imposed on the map attached to an identity index.
 
 ```lean
 public structure EtaleSheafSystem
@@ -45,7 +47,7 @@ public structure EtaleSheafSystem
 
 [Tag 0EYL](https://stacks.math.columbia.edu/tag/0EYL) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.affineEtaleSiteColimit`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/AffineEtaleSites/ColimitSite.lean, line 40](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/AffineEtaleSites/ColimitSite.lean#L40). The attribute's comment: “canonical site system”.
+**`Stacks.EtaleCohomology.affineEtaleSiteColimit`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/AffineEtaleSites/ColimitSite.lean, line 40](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/AffineEtaleSites/ColimitSite.lean#L40). The attribute's comment: “canonical site system”.
 
 > **Stacks 0EYL.** Let `I` be a directed set, let `(X_i, f_{i'i})` be an inverse system of
 > schemes over `I` with affine transition morphisms and let `X = lim X_i`.  Then
@@ -57,7 +59,7 @@ public noncomputable def affineEtaleSiteColimit (hc : IsLimit c)
     AffineEtaleSiteColimit D c B hD hX
 ```
 
-**`Stacks.EtaleCohomology.affineEtaleSiteColimit_level_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/AffineEtaleSites/ColimitSite.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/AffineEtaleSites/ColimitSite.lean#L88). The attribute's comment: “level coverings”.
+**`Stacks.EtaleCohomology.affineEtaleSiteColimit_level_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/AffineEtaleSites/ColimitSite.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/AffineEtaleSites/ColimitSite.lean#L88). The attribute's comment: “level coverings”.
 
 > The level equivalences identify the Grothendieck topologies: a presieve is covering at a
 > stage exactly when its image generates a covering sieve of the corresponding affine étale site.
@@ -77,7 +79,7 @@ public theorem affineEtaleSiteColimit_level_cover
           (((affineEtaleSiteColimit D c B hD hX hc).levelEquiv i).functor.obj Y)
 ```
 
-**`Stacks.EtaleCohomology.affineEtaleSiteColimit_levelEquiv_isDenseSubsite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/AffineEtaleSites/ColimitSite.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/AffineEtaleSites/ColimitSite.lean#L112). The attribute's comment: “level coverings, as a dense subsite”.
+**`Stacks.EtaleCohomology.affineEtaleSiteColimit_levelEquiv_isDenseSubsite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/AffineEtaleSites/ColimitSite.lean, line 112](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/AffineEtaleSites/ColimitSite.lean#L112). The attribute's comment: “level coverings, as a dense subsite”.
 
 > **The level equivalences identify the Grothendieck topologies, in the form of a dense
 > subsite.** The topology of a level is the topology induced on the category of representatives by
@@ -101,7 +103,7 @@ public theorem affineEtaleSiteColimit_levelEquiv_isDenseSubsite
         (hD ((affineEtaleSiteColimit D c B hD hX hc).indexEquiv.functor.obj i)))
 ```
 
-**`Stacks.EtaleCohomology.affineEtaleSiteColimit_levelToSmallEtale_isContinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/AffineEtaleSites/ColimitSite.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/AffineEtaleSites/ColimitSite.lean#L133). The attribute's comment: “levels as morphisms of sites to the small étale sites”.
+**`Stacks.EtaleCohomology.affineEtaleSiteColimit_levelToSmallEtale_isContinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/AffineEtaleSites/ColimitSite.lean, line 133](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/AffineEtaleSites/ColimitSite.lean#L133). The attribute's comment: “levels as morphisms of sites to the small étale sites”.
 
 > **A level of the system, carried into the small étale site of its scheme, is a morphism of
 > sites.** The composite of the level equivalence with the inclusion of Stacks 04HR is continuous
@@ -129,7 +131,7 @@ public theorem affineEtaleSiteColimit_levelToSmallEtale_isContinuous
         (hD ((affineEtaleSiteColimit D c B hD hX hc).indexEquiv.functor.obj i)))
 ```
 
-**`Stacks.EtaleCohomology.affineEtaleSiteColimit_levelToSmallEtale_sheafEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/AffineEtaleSites/ColimitSite.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/AffineEtaleSites/ColimitSite.lean#L155). The attribute's comment: “sheaves of a level are sheaves of the small étale site of its scheme”.
+**`Stacks.EtaleCohomology.affineEtaleSiteColimit_levelToSmallEtale_sheafEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/AffineEtaleSites/ColimitSite.lean, line 155](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/AffineEtaleSites/ColimitSite.lean#L155). The attribute's comment: “sheaves of a level are sheaves of the small étale site of its scheme”.
 
 > **Restriction of sheaves of sets from the small étale site of `X_i` to a level is an
 > equivalence.** Both factors of the crossing are: the level equivalence by
@@ -156,7 +158,7 @@ public theorem affineEtaleSiteColimit_levelToSmallEtale_sheafEquiv
           i)))).IsEquivalence
 ```
 
-**`Stacks.EtaleCohomology.affineEtaleSiteColimit_obj_descends`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/AffineEtaleSites/ColimitSite.lean, line 180](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/AffineEtaleSites/ColimitSite.lean#L180). The attribute's comment: “objects”.
+**`Stacks.EtaleCohomology.affineEtaleSiteColimit_obj_descends`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/AffineEtaleSites/ColimitSite.lean, line 180](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/AffineEtaleSites/ColimitSite.lean#L180). The attribute's comment: “objects”.
 
 > Every affine étale object over the limit descends to a finite stage.
 
@@ -168,7 +170,7 @@ public theorem affineEtaleSiteColimit_obj_descends
       ((affineEtaleSiteColimit D c B hD hX hc).toLimit i).obj Y = Z
 ```
 
-**`Stacks.EtaleCohomology.affineEtaleSiteColimit_hom_descends`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/AffineEtaleSites/ColimitSite.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/AffineEtaleSites/ColimitSite.lean#L190). The attribute's comment: “morphisms”.
+**`Stacks.EtaleCohomology.affineEtaleSiteColimit_hom_descends`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/AffineEtaleSites/ColimitSite.lean, line 190](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/AffineEtaleSites/ColimitSite.lean#L190). The attribute's comment: “morphisms”.
 
 > Every morphism between objects descended from one stage descends after increasing the
 > stage.
@@ -189,7 +191,7 @@ public theorem affineEtaleSiteColimit_hom_descends
             ((affineEtaleSiteColimit D c B hD hX hc).toLimit_transition a) Y).symm
 ```
 
-**`Stacks.EtaleCohomology.affineEtaleSiteColimit_hom_eventually_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/AffineEtaleSites/ColimitSite.lean, line 334](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/AffineEtaleSites/ColimitSite.lean#L334). The attribute's comment: “faithfulness”.
+**`Stacks.EtaleCohomology.affineEtaleSiteColimit_hom_eventually_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/AffineEtaleSites/ColimitSite.lean, line 334](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/AffineEtaleSites/ColimitSite.lean#L334). The attribute's comment: “faithfulness”.
 
 > Two morphisms that agree over the limit agree after increasing the stage.
 
@@ -205,7 +207,7 @@ public theorem affineEtaleSiteColimit_hom_eventually_eq
         ((affineEtaleSiteColimit D c B hD hX hc).system.u a).map g
 ```
 
-**`Stacks.EtaleCohomology.affineEtaleSiteColimit_mem_precoverage_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/AffineEtaleSites/ColimitSite.lean, line 569](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/AffineEtaleSites/ColimitSite.lean#L569). The attribute's comment: “coverings”.
+**`Stacks.EtaleCohomology.affineEtaleSiteColimit_mem_precoverage_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/AffineEtaleSites/ColimitSite.lean, line 569](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/AffineEtaleSites/ColimitSite.lean#L569). The attribute's comment: “coverings”.
 
 > Coverings of the small affine étale site of the limit are exactly the images of finite
 > coverings from a stage.
@@ -223,7 +225,7 @@ public theorem affineEtaleSiteColimit_mem_precoverage_iff
           R = h ▸ S.map ((affineEtaleSiteColimit D c B hD hX hc).toLimit i)
 ```
 
-**`Stacks.EtaleCohomology.affineEtaleSiteColimit_isColimitPrecoverage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/AffineEtaleSites/ColimitSite.lean, line 626](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/AffineEtaleSites/ColimitSite.lean#L626). The attribute's comment: “colimit site”.
+**`Stacks.EtaleCohomology.affineEtaleSiteColimit_isColimitPrecoverage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/AffineEtaleSites/ColimitSite.lean, line 626](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/AffineEtaleSites/ColimitSite.lean#L626). The attribute's comment: “colimit site”.
 
 > **Stacks 0EYL**, the clause "as sites in the sense of Stacks 09YL". The standard étale
 > precoverage of the small affine étale site of the limit `X = lim X_i` *is* the colimit
@@ -261,7 +263,7 @@ public theorem affineEtaleSiteColimit_isColimitPrecoverage :
                 AlgebraicGeometry.SmallAffineEtale.precoverage B c.pt hX W
 ```
 
-**`AlgebraicGeometry.smallEtaleStagesCoveringsRefine_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/SmallEtaleCoveringsRefine.lean, line 382](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/SmallEtaleCoveringsRefine.lean#L382). The attribute's comment: “coverings of the final object, for the small étale site”.
+**`AlgebraicGeometry.smallEtaleStagesCoveringsRefine_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/SmallEtaleCoveringsRefine.lean, line 382](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/SmallEtaleCoveringsRefine.lean#L382). The attribute's comment: “coverings of the final object, for the small étale site”.
 
 > **Stacks 0EYL for the small étale site.** Let `X = lim X_i` be the limit of a directed
 > inverse system of quasi-compact, quasi-separated schemes with affine transition morphisms inside
@@ -288,7 +290,7 @@ public theorem smallEtaleStagesCoveringsRefine_of_isLimit (hc : IsLimit c)
 
 [Tag 09YQ](https://stacks.math.columbia.edu/tag/09YQ) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.AffineLimitCohomology.transitionImage_isoLevelTerminal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/AffineEtaleCohomologyColimit.lean, line 444](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/AffineEtaleCohomologyColimit.lean#L444). The attribute's comment: “the affine case: the transition image of the terminal object `X_i` is the terminal object `X_j`, so the value of the cohomology diagram at `a : j ⟶ i` is the cohomology over `X_j`”.
+**`Stacks.EtaleCohomology.AffineLimitCohomology.transitionImage_isoLevelTerminal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/AffineEtaleCohomologyColimit.lean, line 444](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/AffineEtaleCohomologyColimit.lean#L444). The attribute's comment: “the affine case: the transition image of the terminal object `X_i` is the terminal object `X_j`, so the value of the cohomology diagram at `a : j ⟶ i` is the cohomology over `X_j`”.
 
 > **Stacks 09YQ, the diagram values.** The transition image of `X_i` at a level `j` below `i`
 > is `X_j`: the value of the cohomology diagram at `a : j ⟶ i` is the cohomology of `F_j` over the
@@ -300,7 +302,7 @@ def transitionImage_isoLevelTerminal {i j : (sys D c B hD hX hc).I} (a : j ⟶ i
       levelTerminal D c B hD hX hc j
 ```
 
-**`Stacks.EtaleCohomology.AffineLimitCohomology.toLimitImage_isoLimitTerminal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/AffineEtaleCohomologyColimit.lean, line 457](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/AffineEtaleCohomologyColimit.lean#L457). The attribute's comment: “the affine case: the image of the terminal object `X_i` in the site of the limit is the terminal object `X`, so the vertex of the cohomology cocone is the cohomology over `X`”.
+**`Stacks.EtaleCohomology.AffineLimitCohomology.toLimitImage_isoLimitTerminal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/AffineEtaleCohomologyColimit.lean, line 457](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/AffineEtaleCohomologyColimit.lean#L457). The attribute's comment: “the affine case: the image of the terminal object `X_i` in the site of the limit is the terminal object `X`, so the vertex of the cohomology cocone is the cohomology over `X`”.
 
 > **Stacks 09YQ, the cocone vertex.** The image of `X_i` in the site of the limit is `X`: the
 > vertex of the cohomology cocone is the cohomology of `𝒢` over the terminal object of the site of
@@ -312,7 +314,7 @@ def toLimitImage_isoLimitTerminal (i : (sys D c B hD hX hc).I) :
       limitTerminal D c B hX hc
 ```
 
-**`Stacks.EtaleCohomology.AffineLimitCohomology.etaleCohomologyColimit_isColimit_of_affine`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/AffineEtaleCohomologyColimit.lean, line 487](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/AffineEtaleCohomologyColimit.lean#L487). The attribute's comment: “the affine case: the schemes `X_i` of the system are affine, so that `X_i` is itself an object of its own small affine etale site and is the terminal one; the sites are the small AFFINE etale sites and the cohomology of THIS statement is the right-derived `sheafSections` of Stacks 09YP on them. The comparison across Stacks 04HR that turns those groups into the library's mainstream etale cohomology of a scheme is `Stacks.EtaleCohomology.AffineLimitCohomology.limitCohomologyFunctorIsoEtaleCohomology` at the limit and `...levelTerminalCohomologyIsoEtaleCohomology` at a level”.
+**`Stacks.EtaleCohomology.AffineLimitCohomology.etaleCohomologyColimit_isColimit_of_affine`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/AffineEtaleCohomologyColimit.lean, line 487](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/AffineEtaleCohomologyColimit.lean#L487). The attribute's comment: “the affine case: the schemes `X_i` of the system are affine, so that `X_i` is itself an object of its own small affine etale site and is the terminal one; the sites are the small AFFINE etale sites and the cohomology of THIS statement is the right-derived `sheafSections` of Stacks 09YP on them. The comparison across Stacks 04HR that turns those groups into the library's mainstream etale cohomology of a scheme is `Stacks.EtaleCohomology.AffineLimitCohomology.limitCohomologyFunctorIsoEtaleCohomology` at the limit and `...levelTerminalCohomologyIsoEtaleCohomology` at a level”.
 
 > **Stacks 09YQ, the affine case.** Let `I` be a directed set, let `(X_i)` be an inverse system
 > of *affine* schemes over `I` with affine transition morphisms, and let `X = lim X_i`. Let `F` be a
@@ -346,7 +348,7 @@ def etaleCohomologyColimit_isColimit_of_affine
     IsColimit E.cocone
 ```
 
-**`Stacks.EtaleCohomology.AffineLimitCohomology.etaleCohomologyColimit_isColimit_of_affine_colimitSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/AffineEtaleCohomologyColimit.lean, line 550](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/AffineEtaleCohomologyColimit.lean#L550). The attribute's comment: “the affine case with the colimit sheaf CONSTRUCTED: the sheaf `𝒢` presenting `colim f_i^{-1} F_i` on the site of the limit, its legs and its universal property are the left Kan extension of the system and are no longer hypotheses. The system `F` itself is still given, and the cohomology of THIS statement is the right-derived `sheafSections` of Stacks 09YP on the small AFFINE etale sites; `AffineLimitCohomology.etaleCohomologyColimit_isColimit_of_affine_etaleVertex` is the same colimit with its vertex the library's mainstream etale cohomology of the limit.”.
+**`Stacks.EtaleCohomology.AffineLimitCohomology.etaleCohomologyColimit_isColimit_of_affine_colimitSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/AffineEtaleCohomologyColimit.lean, line 550](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/AffineEtaleCohomologyColimit.lean#L550). The attribute's comment: “the affine case with the colimit sheaf CONSTRUCTED: the sheaf `𝒢` presenting `colim f_i^{-1} F_i` on the site of the limit, its legs and its universal property are the left Kan extension of the system and are no longer hypotheses. The system `F` itself is still given, and the cohomology of THIS statement is the right-derived `sheafSections` of Stacks 09YP on the small AFFINE etale sites; `AffineLimitCohomology.etaleCohomologyColimit_isColimit_of_affine_etaleVertex` is the same colimit with its vertex the library's mainstream etale cohomology of the limit.”.
 
 > **Stacks 09YQ in the affine case, with the colimit sheaf constructed.** Let `(X_i)` be an
 > inverse system of affine schemes with affine transitions, `X = lim X_i`, and let `F` be a system
@@ -368,7 +370,7 @@ def etaleCohomologyColimit_isColimit_of_affine_colimitSheaf
     IsColimit E.cocone
 ```
 
-**`Stacks.EtaleCohomology.QcqsLimitCohomology.etaleCohomologyColimit_isColimit`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/QcqsEtaleCohomologyColimit.lean, line 233](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/QcqsEtaleCohomologyColimit.lean#L233). The attribute's comment: “the general case of the levels: the schemes `X_i` are arbitrary — only the transition morphisms are affine — and the cohomology is taken over an arbitrary object `Z` of the small affine etale site of `X_i`, whose transition images and whose image in the site of the limit carry the groups of the diagram and the vertex. For an affine `X_i` the terminal object of that site is `X_i` itself and this specializes to the affine case already recorded in `Stacks.EtaleCohomology.AffineLimitCohomology`; for a merely quasi-compact and quasi-separated `X_i`, which is NOT an object of its own small affine etale site, the identification of this cohomology with `H^p(X_i, F_i)` is the Cech / Mayer-Vietoris descent along a finite affine cover and is NOT performed here — only the covering input is, in `exists_finite_jointlySurjective_smallAffineEtale`. The sites are the small AFFINE etale sites and the cohomology is the right-derived `sheafSections` of the weak-system Stacks 09YP on them, not the library's mainstream etale cohomology of a scheme, the comparison across Stacks 04HR not being performed here. No hypothesis of this statement is an instance of its own conclusion.”.
+**`Stacks.EtaleCohomology.QcqsLimitCohomology.etaleCohomologyColimit_isColimit`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/QcqsEtaleCohomologyColimit.lean, line 233](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/QcqsEtaleCohomologyColimit.lean#L233). The attribute's comment: “the general case of the levels: the schemes `X_i` are arbitrary — only the transition morphisms are affine — and the cohomology is taken over an arbitrary object `Z` of the small affine etale site of `X_i`, whose transition images and whose image in the site of the limit carry the groups of the diagram and the vertex. For an affine `X_i` the terminal object of that site is `X_i` itself and this specializes to the affine case already recorded in `Stacks.EtaleCohomology.AffineLimitCohomology`; for a merely quasi-compact and quasi-separated `X_i`, which is NOT an object of its own small affine etale site, the identification of this cohomology with `H^p(X_i, F_i)` is the Cech / Mayer-Vietoris descent along a finite affine cover and is NOT performed here — only the covering input is, in `exists_finite_jointlySurjective_smallAffineEtale`. The sites are the small AFFINE etale sites and the cohomology is the right-derived `sheafSections` of the weak-system Stacks 09YP on them, not the library's mainstream etale cohomology of a scheme, the comparison across Stacks 04HR not being performed here. No hypothesis of this statement is an instance of its own conclusion.”.
 
 > **Stacks 09YQ for arbitrary levels, over an arbitrary object of a level.** Let `I` be a
 > directed set, let `(X_i)` be an inverse system of schemes over `I` whose transition morphisms are
@@ -408,7 +410,7 @@ def etaleCohomologyColimit_isColimit
     IsColimit E.cocone
 ```
 
-**`Stacks.EtaleCohomology.EtaleSheafSystem.isSystemColimit_etaleCohomologyPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/SheafSystemCohomologyColimit.lean, line 453](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/SheafSystemCohomologyColimit.lean#L453).
+**`Stacks.EtaleCohomology.EtaleSheafSystem.isSystemColimit_etaleCohomologyPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/SheafSystemCohomologyColimit.lean, line 453](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/SheafSystemCohomologyColimit.lean#L453).
 
 > **Étale cohomology commutes with limits of quasi-compact quasi-separated schemes with affine
 > transition morphisms** ([Stacks, Tag 09YQ]). Let `X = lim X_i` be the limit of a directed
@@ -430,7 +432,7 @@ theorem EtaleSheafSystem.isSystemColimit_etaleCohomologyPullback (p : ℕ)
       (fun i => AddCommGrpCat.ofHom (etaleCohomologyPullback (c.π.app i) (ι i) p))
 ```
 
-**`Stacks.EtaleCohomology.SmallEtaleLimitCohomology.isCohomologyColimit_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/SmallEtaleColimitUnconditional.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/SmallEtaleColimitUnconditional.lean#L132). The attribute's comment: “the whole tag, for ALL degrees `p ≥ 0` and every system of abelian sheaves in the sense of Tag 0EZL, with no hypothesis beyond the source's. The source assumes a directed set, affine transition morphisms, `X = lim X_i` and that every `X_i` is quasi-compact and quasi-separated; those are `IsDirected`, `IsAffineHom (D.map a)`, `hc : IsLimit c`, and the per-level `CompactSpace`/`QuasiSeparatedSpace` instances. The big etale site `B` with `hD`/`hX` is a SIZE device and not a source hypothesis: it fixes which small sites are meant, and `AlgebraicGeometry.BigEtaleSite.exists_contains_of_small` produces one for any small family. The corresponding instances on the VERTEX are derived, not assumed. The conclusion is the tag's equality of groups in elementwise form -- joint surjectivity of the legs together with eventual vanishing, which for a filtered index and abelian coefficients is exactly the assertion that the cocone is colimiting -- and `Stacks.EtaleCohomology.SmallEtaleLimitCohomology.isColimit_stableCohomologyCocone` transports it, in both directions, to a genuine `CategoryTheory.Limits.IsColimit` whose vertex is the full `H^p(X, 𝒢)`. No identity law is used: Definition 59.51.1 imposes only the cocycle condition, so the naive diagram `i ↦ H^p(X_i, F_i)` is not a functor in general, and `hasCohomologyIdentityLaw_iff_forall_stableCohomologySubgroup_eq_top` says precisely when the two spellings coincide. No hypothesis of this statement is an instance of its own conclusion.”.
+**`Stacks.EtaleCohomology.SmallEtaleLimitCohomology.isCohomologyColimit_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/SmallEtaleColimitUnconditional.lean, line 132](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/SmallEtaleColimitUnconditional.lean#L132). The attribute's comment: “the whole tag, for ALL degrees `p ≥ 0` and every system of abelian sheaves in the sense of Tag 0EZL, with no hypothesis beyond the source's. The source assumes a directed set, affine transition morphisms, `X = lim X_i` and that every `X_i` is quasi-compact and quasi-separated; those are `IsDirected`, `IsAffineHom (D.map a)`, `hc : IsLimit c`, and the per-level `CompactSpace`/`QuasiSeparatedSpace` instances. The big etale site `B` with `hD`/`hX` is a SIZE device and not a source hypothesis: it fixes which small sites are meant, and `AlgebraicGeometry.BigEtaleSite.exists_contains_of_small` produces one for any small family. The corresponding instances on the VERTEX are derived, not assumed. The conclusion is the tag's equality of groups in elementwise form -- joint surjectivity of the legs together with eventual vanishing, which for a filtered index and abelian coefficients is exactly the assertion that the cocone is colimiting -- and `Stacks.EtaleCohomology.SmallEtaleLimitCohomology.isColimit_stableCohomologyCocone` transports it, in both directions, to a genuine `CategoryTheory.Limits.IsColimit` whose vertex is the full `H^p(X, 𝒢)`. No identity law is used: Definition 59.51.1 imposes only the cocycle condition, so the naive diagram `i ↦ H^p(X_i, F_i)` is not a functor in general, and `hasCohomologyIdentityLaw_iff_forall_stableCohomologySubgroup_eq_top` says precisely when the two spellings coincide. No hypothesis of this statement is an instance of its own conclusion.”.
 
 > **[Stacks, Tag 09YQ] on Mathlib's small étale sites, in every degree, unconditionally.** Let
 > `I` be a nonempty directed index, let `(X_i)` be an inverse system of schemes over `Iᵒᵖ` with
@@ -458,7 +460,7 @@ theorem isCohomologyColimit_of_isLimit (p : ℕ)
 
 [Tag 03Q5](https://stacks.math.columbia.edu/tag/03Q5) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.isIso_colimit_post_rightDerived_Γ_smallEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FilteredColimitsOfEtaleCohomology.lean, line 305](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FilteredColimitsOfEtaleCohomology.lean#L305).
+**`Stacks.EtaleCohomology.isIso_colimit_post_rightDerived_Γ_smallEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FilteredColimitsOfEtaleCohomology.lean, line 305](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FilteredColimitsOfEtaleCohomology.lean#L305).
 
 > **Stacks 03Q5.** Let `X` be a quasi-compact and quasi-separated scheme. For every degree `p`
 > and every filtered system `F` of abelian sheaves on the small étale site of `X`, the canonical map
@@ -481,7 +483,7 @@ theorem isIso_colimit_post_rightDerived_Γ_smallEtale (X : Scheme.{u})
       ((Sheaf.Γ X.smallEtaleTopology AddCommGrpCat.{max (u + 1) v}).rightDerived p))
 ```
 
-**`AlgebraicGeometry.isIso_vanishingCyclesFibreMap_app_constantComplex_of_isColimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/LocallyConstantCoefficientsUnconditional.lean, line 337](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/LocallyConstantCoefficientsUnconditional.lean#L337). The attribute's comment: “for the canonical map of Tag 0GJN at a variety of vanishing cycles, in the unbounded derived category: the locus where the map is invertible on constant coefficients is closed under filtered colimits of the coefficient group”.
+**`AlgebraicGeometry.isIso_vanishingCyclesFibreMap_app_constantComplex_of_isColimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/LocallyConstantCoefficientsUnconditional.lean, line 336](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/LocallyConstantCoefficientsUnconditional.lean#L336). The attribute's comment: “for the canonical map of Tag 0GJN at a variety of vanishing cycles, in the unbounded derived category: the locus where the map is invertible on constant coefficients is closed under filtered colimits of the coefficient group”.
 
 > **Stacks 03Q5 for the canonical map of Tag 0GJN on constant coefficients.** The locus where
 > the canonical map `α_{K,x,t}` is an isomorphism on constant coefficients is closed under filtered
@@ -516,7 +518,7 @@ theorem isIso_vanishingCyclesFibreMap_app_constantComplex_of_isColimit
 
 [Tag 03Q6](https://stacks.math.columbia.edu/tag/03Q6) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.ColimitBaseChange.isIso_colimitDesc_algebraCohomologyCocone`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/AlgebraColimitCohomology.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/AlgebraColimitCohomology.lean#L159).
+**`Stacks.EtaleCohomology.ColimitBaseChange.isIso_colimitDesc_algebraCohomologyCocone`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/AlgebraColimitCohomology.lean, line 158](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/AlgebraColimitCohomology.lean#L158).
 
 > Let `A` be a ring, `(B_i)` a directed system of `A`-algebras with colimit `B`, `f : X ⟶ Spec A`
 > quasi-compact and quasi-separated, and `F` an abelian sheaf on `X_étale`. With
@@ -530,7 +532,7 @@ theorem isIso_colimitDesc_algebraCohomologyCocone [Nonempty I] [IsDirected I (·
       (algebraCohomologyCocone A B cB f F n))
 ```
 
-**`Stacks.EtaleCohomology.BaseChangeAlgebraSystem.etaleCohomologyColimit_baseChange_systemLimit_isColimit`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/BaseChangeAlgebraSystemCohomology.lean, line 622](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/BaseChangeAlgebraSystemCohomology.lean#L622). The attribute's comment: “the case of an AFFINE `X`: the source allows `X ⟶ Spec(A)` quasi-compact and quasi-separated, and the passage from an affine `X` to a general qcqs one is the Cech descent along a finite affine cover, which this library does not carry. The system is geometric rather than ring-level: `T`, the `Z_i` and `X` are affine schemes over `T`, and `A`, `B_i`, `B = colim B_i` are reached through `Spec(colim B_i) = lim Spec B_i` of Stacks 01YW, no `CommRingCat`-level wrapper taking a ring and a functor `I ⟶ CommRingCat` being stated. The base change is written `Z_i ×_T X`. The cohomology is the right-derived `sheafSections` of Stacks 09YP on the small AFFINE etale sites, inherited from `etaleCohomologyColimit_isColimit_of_affine`, and is NOT yet identified with the mainstream `Stacks.EtaleCohomology.etaleCohomologyFunctor`: the 04HR half of that identification is supplied here by `affineEtaleCohomologyFunctorIso`, but transporting cohomology across `AsSmall.equiv` onto the universe-raised site Stacks 09YP is stated on does not exist in this library”.
+**`Stacks.EtaleCohomology.BaseChangeAlgebraSystem.etaleCohomologyColimit_baseChange_systemLimit_isColimit`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/BaseChangeAlgebraSystemCohomology.lean, line 622](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/BaseChangeAlgebraSystemCohomology.lean#L622). The attribute's comment: “the case of an AFFINE `X`: the source allows `X ⟶ Spec(A)` quasi-compact and quasi-separated, and the passage from an affine `X` to a general qcqs one is the Cech descent along a finite affine cover, which this library does not carry. The system is geometric rather than ring-level: `T`, the `Z_i` and `X` are affine schemes over `T`, and `A`, `B_i`, `B = colim B_i` are reached through `Spec(colim B_i) = lim Spec B_i` of Stacks 01YW, no `CommRingCat`-level wrapper taking a ring and a functor `I ⟶ CommRingCat` being stated. The base change is written `Z_i ×_T X`. The cohomology is the right-derived `sheafSections` of Stacks 09YP on the small AFFINE etale sites, inherited from `etaleCohomologyColimit_isColimit_of_affine`, and is NOT yet identified with the mainstream `Stacks.EtaleCohomology.etaleCohomologyFunctor`: the 04HR half of that identification is supplied here by `affineEtaleCohomologyFunctorIso`, but transporting cohomology across `AsSmall.equiv` onto the universe-raised site Stacks 09YP is stated on does not exist in this library”.
 
 > **Stacks 03Q6 for an affine `X`, at the canonical limit.** This is
 > `etaleCohomologyColimit_baseChange_isColimit`
@@ -570,7 +572,7 @@ def etaleCohomologyColimit_baseChange_systemLimit_isColimit
     IsColimit E.cocone
 ```
 
-**`Stacks.EtaleCohomology.etaleCohomology_specBaseChange_colimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/BaseChangeAlgebraSystemQcqs.lean, line 431](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/BaseChangeAlgebraSystemQcqs.lean#L431). The attribute's comment: “the whole lemma, at the source's hypotheses: a ring `A`, a directed set `I` (nonempty, as directed sets are in the source), a system of `A`-algebras `B : I ⥤ Under A` with a colimit cocone `cB` (so `B = colim B_i` is `cB.pt`), a quasi-compact and quasi-separated `g : X ⟶ Spec A`, an abelian sheaf `F` on Mathlib's small etale site of `X` and every degree `p`. `Y_i` and `Y` are the fibre products `Spec B_i ×_{Spec A} X` and `Spec B ×_{Spec A} X` (the factors in Mathlib's `pullback` order), `G_i`, `G` the inverse images of `F` along their projections to `X`, and the cohomology is the library's etale cohomology `Sheaf.H` on the small etale sites, with coefficients in `AddCommGrpCat.{u + 1}`, the first universe in which these sites have sheafification. The equality of the source is stated as the elementwise form of a filtered colimit of abelian groups along the restriction maps: joint surjectivity of the maps `H^p(Y_i, G_i) to H^p(Y, G)` and eventual vanishing of a class killed on `Y`, which over a directed index is exactly the assertion that the cohomology cocone is colimiting. The proof is the source's, Tag 09YQ at the inverse system of base changes.”.
+**`Stacks.EtaleCohomology.etaleCohomology_specBaseChange_colimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/BaseChangeAlgebraSystemQcqs.lean, line 431](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/BaseChangeAlgebraSystemQcqs.lean#L431). The attribute's comment: “the whole lemma, at the source's hypotheses: a ring `A`, a directed set `I` (nonempty, as directed sets are in the source), a system of `A`-algebras `B : I ⥤ Under A` with a colimit cocone `cB` (so `B = colim B_i` is `cB.pt`), a quasi-compact and quasi-separated `g : X ⟶ Spec A`, an abelian sheaf `F` on Mathlib's small etale site of `X` and every degree `p`. `Y_i` and `Y` are the fibre products `Spec B_i ×_{Spec A} X` and `Spec B ×_{Spec A} X` (the factors in Mathlib's `pullback` order), `G_i`, `G` the inverse images of `F` along their projections to `X`, and the cohomology is the library's etale cohomology `Sheaf.H` on the small etale sites, with coefficients in `AddCommGrpCat.{u + 1}`, the first universe in which these sites have sheafification. The equality of the source is stated as the elementwise form of a filtered colimit of abelian groups along the restriction maps: joint surjectivity of the maps `H^p(Y_i, G_i) to H^p(Y, G)` and eventual vanishing of a class killed on `Y`, which over a directed index is exactly the assertion that the cohomology cocone is colimiting. The proof is the source's, Tag 09YQ at the inverse system of base changes.”.
 
 > **[Stacks, Tag 03Q6].** Let `A` be a ring, `I` a nonempty directed set, `(B_i)` a system of
 > `A`-algebras over `I` (a functor `B : I ⥤ Under A`) and `cB` a colimit cocone of it, with vertex
@@ -629,7 +631,7 @@ theorem etaleCohomology_specBaseChange_colimit (A : CommRingCat.{u}) (I : Type u
 
 [Tag 03Q8](https://stacks.math.columbia.edu/tag/03Q8) in the Stacks Project.
 
-**`Stacks.HigherDirectImage.higherDirectImageComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Comparison/HigherDirectImage.lean, line 460](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Comparison/HigherDirectImage.lean#L460). The attribute's comment: “abelian sheaves”.
+**`Stacks.HigherDirectImage.higherDirectImageComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Comparison/HigherDirectImage.lean, line 460](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Comparison/HigherDirectImage.lean#L460). The attribute's comment: “abelian sheaves”.
 
 > **Stacks 03Q8 for abelian sheaves.** The higher direct image `R^p f_*` is the sheafification
 > of the presheaf `V ↦ H^p_ét(X ×_Y V, F)`, by a natural isomorphism whose components are the
@@ -641,7 +643,7 @@ public def higherDirectImageComparison (p : ℕ) :
     HigherDirectImageComparison.{u, w} B f p
 ```
 
-**`Stacks.HigherDirectImage.derivedPushforwardComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Comparison/HigherDirectImageDerived.lean, line 273](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Comparison/HigherDirectImageDerived.lean#L273). The attribute's comment: “unbounded complexes”.
+**`Stacks.HigherDirectImage.derivedPushforwardComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Comparison/HigherDirectImageDerived.lean, line 273](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Comparison/HigherDirectImageDerived.lean#L273). The attribute's comment: “unbounded complexes”.
 
 > **Stacks 03Q8, unbounded complexes.** The canonical comparison of `Rf_*` with the sheafified
 > derived presheaf of sections over the étale base changes is invertible, evaluating the derived
@@ -653,7 +655,7 @@ public def higherDirectImageComparison (p : ℕ) :
 public theorem derivedPushforwardComparison : DerivedPushforwardComparison.{u, w} B f
 ```
 
-**`Stacks.HigherDirectImage.higherDirectImageStalkCohomologyPresheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/HigherDirectImageStalkColimit.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/HigherDirectImageStalkColimit.lean#L103). The attribute's comment: “the stalk form: the stalk at a geometric point `s` of `R^p f_* F` is the stalk at `s` of the cohomology presheaf `V ↦ H^p(X ×_Y V, F)`, hence the colimit of that presheaf over the étale neighbourhoods of `s`. This is the first display in the source's proof of Stacks 03Q9, which the source attributes to this tag. The base, the morphism `f` and the geometric point are arbitrary. It is NOT Stacks 03Q9: that tag identifies the colimit with the cohomology of the base change of `X` to `Spec(O^{sh}_{Y,s})`, which is Stacks 03Q6 and is not available in a consumable shape”. References: SGA 4 VIII (5.1), “partial”; SGA 4½ Arcata (2.3.3).
+**`Stacks.HigherDirectImage.higherDirectImageStalkCohomologyPresheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/HigherDirectImageStalkColimit.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/HigherDirectImageStalkColimit.lean#L103). The attribute's comment: “the stalk form: the stalk at a geometric point `s` of `R^p f_* F` is the stalk at `s` of the cohomology presheaf `V ↦ H^p(X ×_Y V, F)`, hence the colimit of that presheaf over the étale neighbourhoods of `s`. This is the first display in the source's proof of Stacks 03Q9, which the source attributes to this tag. The base, the morphism `f` and the geometric point are arbitrary. It is NOT Stacks 03Q9: that tag identifies the colimit with the cohomology of the base change of `X` to `Spec(O^{sh}_{Y,s})`, which is Stacks 03Q6 and is not available in a consumable shape”. References: SGA 4 VIII (5.1), “partial”; SGA 4½ Arcata (2.3.3).
 
 > **Stacks 03Q8 at a geometric point.** The stalk at `s` of the `p`-th higher direct image of
 > `F` along `f` is the stalk at `s` of the cohomology presheaf `V ↦ H^p_ét(X ×_Y V, F)`, which by
@@ -674,7 +676,7 @@ public def higherDirectImageStalkCohomologyPresheafIso
 
 [Tag 09Z1](https://stacks.math.columbia.edu/tag/09Z1) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.FixedBaseHigherDirectImage.transitionMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/LimitHigherDirectImageFixedBase.lean, line 128](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/LimitHigherDirectImageFixedBase.lean#L128). The attribute's comment: “the transition maps `ψ_{i'i} : R^p g_{i, *} ℱ_i ⟶ R^p g_{i', *} ℱ_{i'}` of the diagram whose colimit the lemma computes, constructed from the base change map on higher direct images of Stacks 0F02 for the square over the fixed base and the transition map of the system of sheaves. The cocycle condition `ψ_{i''i} = ψ_{i''i'} ∘ ψ_{i'i}` is NOT proved here: the pasting law it reduces to, `Stacks.EtaleCohomology.higherBaseChangeMapAb_paste_app`, is unconditional, and the cocycle condition for the transition maps of a system of bases is `Stacks.EtaleCohomology.LimitHigherDirectImage.transitionMap_comp`, but neither is transported to the fixed base, where the comparisons of the inverse image along `𝟙_S` have to be moved past them. The colimit assertion `R^p g_* ℱ = colim_i R^p g_{i, *} ℱ_i` is NOT proved either; it additionally needs Theorem 09YQ at quasi-compact quasi-separated levels and the comparison of Stacks 04HR at the level of cohomology, the carriers of 09YQ in this repository being stated for the right-derived `CategoryTheory.sheafSections` of the small AFFINE étale sites.”.
+**`Stacks.EtaleCohomology.FixedBaseHigherDirectImage.transitionMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/LimitHigherDirectImageFixedBase.lean, line 128](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/LimitHigherDirectImageFixedBase.lean#L128). The attribute's comment: “the transition maps `ψ_{i'i} : R^p g_{i, *} ℱ_i ⟶ R^p g_{i', *} ℱ_{i'}` of the diagram whose colimit the lemma computes, constructed from the base change map on higher direct images of Stacks 0F02 for the square over the fixed base and the transition map of the system of sheaves. The cocycle condition `ψ_{i''i} = ψ_{i''i'} ∘ ψ_{i'i}` is NOT proved here: the pasting law it reduces to, `Stacks.EtaleCohomology.higherBaseChangeMapAb_paste_app`, is unconditional, and the cocycle condition for the transition maps of a system of bases is `Stacks.EtaleCohomology.LimitHigherDirectImage.transitionMap_comp`, but neither is transported to the fixed base, where the comparisons of the inverse image along `𝟙_S` have to be moved past them. The colimit assertion `R^p g_* ℱ = colim_i R^p g_{i, *} ℱ_i` is NOT proved either; it additionally needs Theorem 09YQ at quasi-compact quasi-separated levels and the comparison of Stacks 04HR at the level of cohomology, the carriers of 09YQ in this repository being stated for the right-derived `CategoryTheory.sheafSections` of the small AFFINE étale sites.”.
 
 > The transition map `ψ_{i'i} : R^p g_{i, *} ℱ_i ⟶ R^p g_{i', *} ℱ_{i'}`: the base change map
 > `higherBaseChangeMapAb` for the square `g_{i'} ≫ 𝟙_S = f_{i'i} ≫ g_i`, read through the
@@ -688,7 +690,7 @@ def transitionMap (F : EtaleSheafSystem D Ab.{u + 1}) {i j : Iᵒᵖ} (a : i ⟶
     stage g p F j ⟶ stage g p F i
 ```
 
-**`Stacks.EtaleCohomology.FixedBaseHigherDirectImage.projectionMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/LimitHigherDirectImageFixedBase.lean, line 171](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/LimitHigherDirectImageFixedBase.lean#L171). The attribute's comment: “the cocone maps `ψ_i : R^p g_{i, *} ℱ_i ⟶ R^p g_* ℱ` whose universality the lemma asserts, constructed from the base change map on higher direct images of Stacks 0F02 for the square over the fixed base and the map `ι_i : f_i^{-1}ℱ_i ⟶ ℱ` presenting the colimit. The compatibility `ψ_{i'} ∘ ψ_{i'i} = ψ_i`, which would exhibit these maps as a cocone, is NOT proved, for the reason recorded on `Stacks.EtaleCohomology.FixedBaseHigherDirectImage.transitionMap`. The colimit assertion `R^p g_* ℱ = colim_i R^p g_{i, *} ℱ_i` is NOT proved.”.
+**`Stacks.EtaleCohomology.FixedBaseHigherDirectImage.projectionMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/LimitHigherDirectImageFixedBase.lean, line 171](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/LimitHigherDirectImageFixedBase.lean#L171). The attribute's comment: “the cocone maps `ψ_i : R^p g_{i, *} ℱ_i ⟶ R^p g_* ℱ` whose universality the lemma asserts, constructed from the base change map on higher direct images of Stacks 0F02 for the square over the fixed base and the map `ι_i : f_i^{-1}ℱ_i ⟶ ℱ` presenting the colimit. The compatibility `ψ_{i'} ∘ ψ_{i'i} = ψ_i`, which would exhibit these maps as a cocone, is NOT proved, for the reason recorded on `Stacks.EtaleCohomology.FixedBaseHigherDirectImage.transitionMap`. The colimit assertion `R^p g_* ℱ = colim_i R^p g_{i, *} ℱ_i` is NOT proved.”.
 
 > The map `ψ_i : R^p g_{i, *} ℱ_i ⟶ R^p g_* ℱ`: the base change map `higherBaseChangeMapAb`
 > for the square `g ≫ 𝟙_S = f_i ≫ g_i`, read through the identification of the inverse image along
@@ -702,7 +704,7 @@ def projectionMap (F : EtaleSheafSystem D Ab.{u + 1})
     stage g p F i ⟶ ((smallEtalePushforwardAb gX).rightDerived p).obj 𝓕
 ```
 
-**`Stacks.EtaleCohomology.FixedBaseHigherDirectImage.isSystemColimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/LimitHigherDirectImageFixedBaseColimit.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/LimitHigherDirectImageFixedBaseColimit.lean#L169). References: SGA 4 VII (5.11), “special case”.
+**`Stacks.EtaleCohomology.FixedBaseHigherDirectImage.isSystemColimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/LimitHigherDirectImageFixedBaseColimit.lean, line 169](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/LimitHigherDirectImageFixedBaseColimit.lean#L169). References: SGA 4 VII (5.11), “special case”.
 
 > Let `X = lim X_i` be the limit of a directed inverse system of schemes over `S` with affine
 > transition morphisms and quasi-compact and quasi-separated structure morphisms `g_i : X_i ⟶ S`,
@@ -728,7 +730,7 @@ theorem isSystemColimit (p : ℕ) (F : EtaleSheafSystem D Ab.{u + 1})
 
 [Tag 0EYM](https://stacks.math.columbia.edu/tag/0EYM) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.LimitHigherDirectImage.transitionMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/LimitHigherDirectImage.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/LimitHigherDirectImage.lean#L143). The attribute's comment: “the transition maps `ψ_{i'i} : h_{i'i}^{-1} R^p g_{i, *} ℱ_i ⟶ R^p g_{i', *} ℱ_{i'}` of the first paragraph of the proof, constructed from the base change map on higher direct images of Stacks 0F02 and the transition map of the system of sheaves. The cocycle condition `ψ_{i''i} = ψ_{i''i'} ∘ h_{i''i'}^{-1}ψ_{i'i}`, which the source gets from Stacks 0E47, is NOT proved: pasting of base change maps is carried for ringed topoi on sheaves of modules and for the unbounded derived étale base change map, but not for the bounded below `Stacks.EtaleCohomology.smallEtaleDerivedBaseChangeAb` that `Stacks.EtaleCohomology.higherBaseChangeMapAb` descends from. The colimit assertion `R^p g_* ℱ = colim_i h_i^{-1} R^p g_{i, *} ℱ_i` is NOT proved either; it additionally needs the comparison of Stacks 04HR at the level of cohomology, the carried Stacks 09YQ being stated for the right-derived `sheafSections` of the small AFFINE étale sites.”.
+**`Stacks.EtaleCohomology.LimitHigherDirectImage.transitionMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/LimitHigherDirectImage.lean, line 143](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/LimitHigherDirectImage.lean#L143). The attribute's comment: “the transition maps `ψ_{i'i} : h_{i'i}^{-1} R^p g_{i, *} ℱ_i ⟶ R^p g_{i', *} ℱ_{i'}` of the first paragraph of the proof, constructed from the base change map on higher direct images of Stacks 0F02 and the transition map of the system of sheaves. The cocycle condition `ψ_{i''i} = ψ_{i''i'} ∘ h_{i''i'}^{-1}ψ_{i'i}`, which the source gets from Stacks 0E47, is NOT proved: pasting of base change maps is carried for ringed topoi on sheaves of modules and for the unbounded derived étale base change map, but not for the bounded below `Stacks.EtaleCohomology.smallEtaleDerivedBaseChangeAb` that `Stacks.EtaleCohomology.higherBaseChangeMapAb` descends from. The colimit assertion `R^p g_* ℱ = colim_i h_i^{-1} R^p g_{i, *} ℱ_i` is NOT proved either; it additionally needs the comparison of Stacks 04HR at the level of cohomology, the carried Stacks 09YQ being stated for the right-derived `sheafSections` of the small AFFINE étale sites.”.
 
 > **The transition maps of Stacks 0EYM**, `ψ\_\{i'i} : h\_\{i'i}^\{-1} R^p g\_\{i, *} ℱ\_i ⟶
 > R^p g\_\{i', *} ℱ\_\{i'}`: the base change map of the transition square
@@ -742,7 +744,7 @@ def transitionMap (F : EtaleSheafSystem DX Ab.{u + 1}) {i j : Iᵒᵖ} (a : i �
       ((smallEtalePushforwardAb (γ.app i)).rightDerived p).obj (F.obj i)
 ```
 
-**`Stacks.EtaleCohomology.LimitHigherDirectImage.projectionMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/LimitHigherDirectImage.lean, line 179](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/LimitHigherDirectImage.lean#L179). The attribute's comment: “the cocone maps `ψ_i : h_i^{-1} R^p g_{i, *} ℱ_i ⟶ R^p g_* ℱ` of the first paragraph of the proof, constructed from the base change map on higher direct images of Stacks 0F02 and the map `ι_i : f_i^{-1}ℱ_i ⟶ ℱ` presenting the colimit. The compatibility `ψ_{i'} ∘ h_{i'}^{-1}ψ_{i'i} = ψ_i`, which the source gets from Stacks 0E47, is NOT proved, for the reason recorded on `transitionMap`; so these maps are not exhibited as a cocone. The colimit assertion `R^p g_* ℱ = colim_i h_i^{-1} R^p g_{i, *} ℱ_i` is NOT proved.”.
+**`Stacks.EtaleCohomology.LimitHigherDirectImage.projectionMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/LimitHigherDirectImage.lean, line 179](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/LimitHigherDirectImage.lean#L179). The attribute's comment: “the cocone maps `ψ_i : h_i^{-1} R^p g_{i, *} ℱ_i ⟶ R^p g_* ℱ` of the first paragraph of the proof, constructed from the base change map on higher direct images of Stacks 0F02 and the map `ι_i : f_i^{-1}ℱ_i ⟶ ℱ` presenting the colimit. The compatibility `ψ_{i'} ∘ h_{i'}^{-1}ψ_{i'i} = ψ_i`, which the source gets from Stacks 0E47, is NOT proved, for the reason recorded on `transitionMap`; so these maps are not exhibited as a cocone. The colimit assertion `R^p g_* ℱ = colim_i h_i^{-1} R^p g_{i, *} ℱ_i` is NOT proved.”.
 
 > **The cocone maps of Stacks 0EYM**, `ψ_i : h_i^{-1} R^p g_{i, *} ℱ_i ⟶ R^p g_* ℱ`: the base
 > change map of the projection square `g ≫ h_i = f_i ≫ g_i` on higher direct images, followed by
@@ -756,7 +758,7 @@ def projectionMap (F : EtaleSheafSystem DX Ab.{u + 1})
       ((smallEtalePushforwardAb (limitMorphism γ cX cS hcS)).rightDerived p).obj 𝓕
 ```
 
-**`Stacks.EtaleCohomology.LimitHigherDirectImage.isHigherDirectImageColimit_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/LimitHigherDirectImageColimitAssertion.lean, line 280](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/LimitHigherDirectImageColimitAssertion.lean#L280). References: SGA 4 VII (5.11), “more general”.
+**`Stacks.EtaleCohomology.LimitHigherDirectImage.isHigherDirectImageColimit_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/LimitHigherDirectImageColimitAssertion.lean, line 280](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/LimitHigherDirectImageColimitAssertion.lean#L280). References: SGA 4 VII (5.11), “more general”.
 
 > Let `I` be a directed set, let `(X_i, f_{i'i})` and `(S_i, h_{i'i})` be inverse systems of
 > schemes over `I` with affine transition morphisms, let `g_i : X_i ⟶ S_i` be a morphism of inverse
@@ -787,7 +789,7 @@ theorem isHigherDirectImageColimit_of_isLimit (p : ℕ)
     IsHigherDirectImageColimit γ p cX cS hcS 𝓕 F ι
 ```
 
-**`Stacks.EtaleCohomology.LimitHigherDirectImage.higherDirectImageColimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/LimitHigherDirectImageColimitTheorem.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/LimitHigherDirectImageColimitTheorem.lean#L92). References: SGA 4 VII (5.11), “more general”.
+**`Stacks.EtaleCohomology.LimitHigherDirectImage.higherDirectImageColimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/LimitHigherDirectImageColimitTheorem.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/LimitHigherDirectImageColimitTheorem.lean#L92). References: SGA 4 VII (5.11), “more general”.
 
 > Let `I` be a directed set, `g_i : X_i ⟶ S_i` an inverse system of quasi-compact and
 > quasi-separated morphisms of schemes with affine transition morphisms `f_{i'i}`, `h_{i'i}`,
@@ -826,7 +828,7 @@ theorem higherDirectImageColimit (p : ℕ) (F : EtaleSheafSystem DX Ab.{u + 1})
 
 [Tag 0EYN](https://stacks.math.columbia.edu/tag/0EYN) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.directImageSystem`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/DirectImageSystem.lean, line 342](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/DirectImageSystem.lean#L342). The attribute's comment: “the system of sheaves”.
+**`Stacks.EtaleCohomology.directImageSystem`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/DirectImageSystem.lean, line 342](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/DirectImageSystem.lean#L342). The attribute's comment: “the system of sheaves”.
 
 > Let `(X_i, f_{i'i})` be an inverse system of schemes, let `f_i : X ⟶ X_i` be the projections
 > of a cone over it, and let `𝓕` be a sheaf on the small étale site of `X`. The direct images
@@ -838,7 +840,7 @@ theorem higherDirectImageColimit (p : ℕ) (F : EtaleSheafSystem DX Ab.{u + 1})
 public def directImageSystem : EtaleSheafSystem D A
 ```
 
-**`Stacks.EtaleCohomology.isPullbackColimitPresentation_directImageSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/DirectImageSystemColimitPresentation.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/DirectImageSystemColimitPresentation.lean#L94). The attribute's comment: “the colimit `𝓕 = colim f_i⁻¹f_{i,*}𝓕`”.
+**`Stacks.EtaleCohomology.isPullbackColimitPresentation_directImageSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/DirectImageSystemColimitPresentation.lean, line 94](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/DirectImageSystemColimitPresentation.lean#L94). The attribute's comment: “the colimit `𝓕 = colim f_i⁻¹f_{i,*}𝓕`”.
 
 > **[Stacks, Tag 0EYN], the colimit.** Let `X = lim X_i` be a directed limit of schemes with
 > affine transition morphisms and projections `f_i : X ⟶ X_i`, and let `𝓕` be an abelian sheaf on
@@ -851,7 +853,7 @@ theorem isPullbackColimitPresentation_directImageSystem (hc : IsLimit c) :
       (directImageSystem D Ab.{u + 1} c 𝓕) (coneDirectImageCounit c 𝓕)
 ```
 
-**`Stacks.EtaleCohomology.isColimitPullbackDirectImageCocone`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/DirectImageSystemIsColimit.lean, line 377](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/DirectImageSystemIsColimit.lean#L377). The attribute's comment: “part (2): `𝓕 = colim_i f_i^{-1}f_{i,*}𝓕` for the system of part (1), on Mathlib's small étale site, for sheaves of sets”.
+**`Stacks.EtaleCohomology.isColimitPullbackDirectImageCocone`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/DirectImageSystemIsColimit.lean, line 378](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/DirectImageSystemIsColimit.lean#L378). The attribute's comment: “part (2): `𝓕 = colim_i f_i^{-1}f_{i,*}𝓕` for the system of part (1), on Mathlib's small étale site, for sheaves of sets”.
 
 > **[Stacks, Tag 0EYN] (2), for sheaves of sets.** Let `X = lim X_i` be a directed limit of
 > schemes with affine transition morphisms `f_{i'i}` and projection morphisms `f_i : X ⟶ X_i`, and
@@ -868,7 +870,7 @@ def isColimitPullbackDirectImageCocone
     IsColimit (pullbackDirectImageCocone D (Type (max u v + 1)) c F)
 ```
 
-**`Stacks.EtaleCohomology.AffineLimitCohomology.restrictionIsColimit_limitToSmallEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/SmallEtaleLimitColimitSheaf.lean, line 721](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/SmallEtaleLimitColimitSheaf.lean#L721). The attribute's comment: “part (2): `F = colim_i p_i^{-1}p_{i,*}F`, on the site of Stacks 021B”.
+**`Stacks.EtaleCohomology.AffineLimitCohomology.restrictionIsColimit_limitToSmallEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/SmallEtaleLimitColimitSheaf.lean, line 723](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/SmallEtaleLimitColimitSheaf.lean#L723). The attribute's comment: “part (2): `F = colim_i p_i^{-1}p_{i,*}F`, on the site of Stacks 021B”.
 
 > **Stacks 0EYN, second half, on the small étale site of a limit of schemes.** Let `(X_i)` be
 > an inverse system of schemes with affine transition morphisms over a nonempty directed index, all
@@ -925,7 +927,7 @@ theorem restrictionIsColimit_limitToSmallEtale
 
 [Tag 0DV2](https://stacks.math.columbia.edu/tag/0DV2) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.LimitHigherDirectImage.isColimit_pushforwardStage_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/PushforwardStageColimit.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/PushforwardStageColimit.lean#L76). The attribute's comment: “the colimit assertion for the canonical diagram and the canonical cocone, with the cocycle condition of the diagram and the cocone identity of its legs”.
+**`Stacks.EtaleCohomology.LimitHigherDirectImage.isColimit_pushforwardStage_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/PushforwardStageColimit.lean, line 76](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Colimits/PushforwardStageColimit.lean#L76). The attribute's comment: “the colimit assertion for the canonical diagram and the canonical cocone, with the cocycle condition of the diagram and the cocone identity of its legs”.
 
 > **Stacks 0DV2.** Let `I` be a directed set, let `(X_i, f_{i'i})` and `(S_i, h_{i'i})` be
 > inverse systems of schemes with affine transition morphisms, let `g_i : X_i ⟶ S_i` be a morphism
@@ -977,4 +979,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 59.51, Tag 03Q4](https://stacks.math.columbia.edu/tag/03Q4)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 7.39 Criterion for existence of points
 
-Section 7.39 of the Stacks Project, [Tag 00YN](https://stacks.math.columbia.edu/tag/00YN). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 7.39 of the Stacks Project, [Tag 00YN](https://stacks.math.columbia.edu/tag/00YN). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 00YO, a lemma
 
 [Tag 00YO](https://stacks.math.columbia.edu/tag/00YO) in the Stacks Project.
 
-**`CategoryTheory.GrothendieckTopology.exists_refinement_of_ne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/CriterionForExistenceOfPoints/RefinementStep.lean, line 520](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Point/CriterionForExistenceOfPoints/RefinementStep.lean#L520). The attribute's comment: “The inductive step of Deligne's criterion: a cofiltered system can be refined so as to keep two germs of a separated presheaf distinct while a given section of `u'(W)` becomes covered by a given finite covering of `W`.”. References: SGA 4 VI (9.3).
+**`CategoryTheory.GrothendieckTopology.exists_refinement_of_ne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/CriterionForExistenceOfPoints/RefinementStep.lean, line 520](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Point/CriterionForExistenceOfPoints/RefinementStep.lean#L520). The attribute's comment: “The inductive step of Deligne's criterion: a cofiltered system can be refined so as to keep two germs of a separated presheaf distinct while a given section of `u'(W)` becomes covered by a given finite covering of `W`.”. References: SGA 4 VI (9.3).
 
 > **Stacks 00YO.** Let `(C, J)` be a site, let `F` be a separated presheaf of sets on `C` and let
 > `p : N ⥤ C` be a cofiltered system in `C`, with associated fibre functor
@@ -46,7 +46,7 @@ public theorem exists_refinement_of_ne {C : Type u} [Category.{v} C] (J : Grothe
 
 [Tag 00YP](https://stacks.math.columbia.edu/tag/00YP) in the Stacks Project.
 
-**`CategoryTheory.GrothendieckTopology.exists_refinement_forall_covering_of_ne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/CriterionForExistenceOfPoints/UniformRefinement.lean, line 669](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Point/CriterionForExistenceOfPoints/UniformRefinement.lean#L669). The attribute's comment: “The main step of Deligne's criterion: a cofiltered system can be refined so as to keep two germs of a separated presheaf distinct while every section of `u'` becomes covered by every finite covering of the site.”. References: SGA 4 VI (9.2); SGA 4 VI (9.4).
+**`CategoryTheory.GrothendieckTopology.exists_refinement_forall_covering_of_ne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/CriterionForExistenceOfPoints/UniformRefinement.lean, line 669](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Point/CriterionForExistenceOfPoints/UniformRefinement.lean#L669). The attribute's comment: “The main step of Deligne's criterion: a cofiltered system can be refined so as to keep two germs of a separated presheaf distinct while every section of `u'` becomes covered by every finite covering of the site.”. References: SGA 4 VI (9.2); SGA 4 VI (9.4).
 
 > **Stacks 00YP.** Let `(C, J)` be a site in which the members of a finite covering admit fibre
 > products along arbitrary morphisms to its base (`hpb`), let `F` be a separated presheaf of sets on
@@ -92,7 +92,7 @@ public theorem exists_refinement_forall_covering_of_ne {C : Type u} [Category.{v
 
 [Tag 00YQ](https://stacks.math.columbia.edu/tag/00YQ) in the Stacks Project.
 
-**`CategoryTheory.GrothendieckTopology.hasEnoughPoints_of_exists_finite_refinement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/CriterionForExistenceOfPoints/DeligneCriterion.lean, line 734](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Point/CriterionForExistenceOfPoints/DeligneCriterion.lean#L734). The attribute's comment: “Deligne's criterion: a site with fibre products in which every covering has a finite refinement has enough points.”. References: SGA 4 VI (9.0); SGA 4 VI (9.5), “existence of points”; SGA 2 XIV (1.9), “special case”.
+**`CategoryTheory.GrothendieckTopology.hasEnoughPoints_of_exists_finite_refinement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/CriterionForExistenceOfPoints/DeligneCriterion.lean, line 735](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Point/CriterionForExistenceOfPoints/DeligneCriterion.lean#L735). The attribute's comment: “Deligne's criterion: a site with fibre products in which every covering has a finite refinement has enough points.”. References: SGA 4 VI (9.0); SGA 4 VI (9.5), “existence of points”; SGA 2 XIV (1.9), “special case”.
 
 > **Stacks 00YQ** (Deligne's criterion for the existence of enough points). Let `(C, J)` be a
 > site in which fibre products exist and in which every covering sieve `S` of an object `X` admits a
@@ -119,7 +119,7 @@ public theorem hasEnoughPoints_of_exists_finite_refinement {C : Type u} [Categor
 
 [Tag 0DW0](https://stacks.math.columbia.edu/tag/0DW0) in the Stacks Project.
 
-**`CategoryTheory.GrothendieckTopology.hasEnoughPoints_of_coversTop_of_exists_finite_refinement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/CriterionForExistenceOfPoints/DeligneCriterion.lean, line 896](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Point/CriterionForExistenceOfPoints/DeligneCriterion.lean#L896). The attribute's comment: “A site covered by objects whose localizations satisfy Deligne's criterion has enough points.”. References: SGA 2 XIV (1.9), “special case”; SGA 4 VI (4.12), “more general”; SGA 4 VI (9.0).
+**`CategoryTheory.GrothendieckTopology.hasEnoughPoints_of_coversTop_of_exists_finite_refinement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/CriterionForExistenceOfPoints/DeligneCriterion.lean, line 897](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Point/CriterionForExistenceOfPoints/DeligneCriterion.lean#L897). The attribute's comment: “A site covered by objects whose localizations satisfy Deligne's criterion has enough points.”. References: SGA 2 XIV (1.9), “special case”; SGA 4 VI (4.12), “more general”; SGA 4 VI (9.0).
 
 > **Stacks 0DW0**. Let `(C, J)` be a site and let `U : I → C` be a family of objects, indexed by
 > a `w`-small type, which covers the final object of the topos of sheaves on `C`: for every object
@@ -152,4 +152,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 7.39, Tag 00YN](https://stacks.math.columbia.edu/tag/00YN)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

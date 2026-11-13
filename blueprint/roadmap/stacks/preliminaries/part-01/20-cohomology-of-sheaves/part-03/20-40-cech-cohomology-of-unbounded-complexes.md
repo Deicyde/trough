@@ -8,13 +8,13 @@ proof: formalized
 
 # 20.40 Čech cohomology of unbounded complexes
 
-Section 20.40 of the Stacks Project, [Tag 08BZ](https://stacks.math.columbia.edu/tag/08BZ). 3 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 20.40 of the Stacks Project, [Tag 08BZ](https://stacks.math.columbia.edu/tag/08BZ). 3 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 08C0, an equation
 
 [Tag 08C0](https://stacks.math.columbia.edu/tag/08C0) in the Stacks Project.
 
-**`Stacks.Cech.globalSectionsToAlternatingCech`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Cech/AlternatingGlobalSections.lean, line 180](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/Cech/AlternatingGlobalSections.lean#L180).
+**`Stacks.Cech.globalSectionsToAlternatingCech`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Cech/AlternatingGlobalSections.lean, line 180](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/Cech/AlternatingGlobalSections.lean#L180).
 
 > **Stacks Project, Tag 08C0.** The functorial map from the complex of global sections to the
 > total alternating Čech complex: in each cohomological degree a section is sent, in Čech degree
@@ -25,7 +25,7 @@ noncomputable def globalSectionsToAlternatingCech :
     globalSectionsUliftComplexFunctor.{u, v, w} X ⟶ alternatingCechTotalComplexFunctor U
 ```
 
-**`Stacks.Cech.globalSectionsToAlternatingCech_app_f`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Cech/AlternatingGlobalSections.lean, line 208](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/Cech/AlternatingGlobalSections.lean#L208). The attribute's comment: “degree-zero restrictions and vanishing higher components”.
+**`Stacks.Cech.globalSectionsToAlternatingCech_app_f`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Cech/AlternatingGlobalSections.lean, line 208](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/Cech/AlternatingGlobalSections.lean#L208). The attribute's comment: “degree-zero restrictions and vanishing higher components”.
 
 > **Stacks Project, Tag 08C0.** In every cohomological degree the canonical map restricts a
 > global section into alternating Čech degree zero and includes that summand into the total
@@ -43,7 +43,7 @@ lemma globalSectionsToAlternatingCech_app_f
 
 [Tag 08C1](https://stacks.math.columbia.edu/tag/08C1) in the Stacks Project.
 
-**`Stacks.Cech.alternatingCechToDerivedGlobalSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechTotalComplex/AlternatingDerivedGlobalSections.lean, line 275](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/CechTotalComplex/AlternatingDerivedGlobalSections.lean#L275).
+**`Stacks.Cech.alternatingCechToDerivedGlobalSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechTotalComplex/AlternatingDerivedGlobalSections.lean, line 275](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/CechTotalComplex/AlternatingDerivedGlobalSections.lean#L275).
 
 > **Stacks Project, Tag 08C1.** For a ringed space `(X, O_X)` and a finite open covering `U`
 > of `X`, the total alternating Čech complex of an unbounded complex of `O_X`-modules has a
@@ -59,7 +59,7 @@ noncomputable def alternatingCechToDerivedGlobalSections :
 
 [Tag 08C2](https://stacks.math.columbia.edu/tag/08C2) in the Stacks Project.
 
-**`Stacks.Cech.isIso_alternatingCechToDerivedComparison_of_acyclicBasis`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechTotalComplex/AlternatingCechComputesDerivedSections.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/CechTotalComplex/AlternatingCechComputesDerivedSections.lean#L93).
+**`Stacks.Cech.isIso_alternatingCechToDerivedComparison_of_acyclicBasis`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechTotalComplex/AlternatingCechComputesDerivedSections.lean, line 93](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/CechTotalComplex/AlternatingCechComputesDerivedSections.lean#L93).
 
 > **[Stacks, Tag 08C2]** Let `(X, O_X)` be a ringed space, let `U : I → Opens X` be a finite
 > open covering of `X` and let `F^•` be a complex of `O_X`-modules. Let `B` be a set of open
@@ -92,4 +92,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 20.40, Tag 08BZ](https://stacks.math.columbia.edu/tag/08BZ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

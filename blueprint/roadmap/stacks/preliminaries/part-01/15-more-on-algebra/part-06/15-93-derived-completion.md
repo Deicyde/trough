@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.93 Derived Completion
 
-Section 15.93 of the Stacks Project, [Tag 091N](https://stacks.math.columbia.edu/tag/091N). 25 tags here are carried by 26 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.93 of the Stacks Project, [Tag 091N](https://stacks.math.columbia.edu/tag/091N). 25 tags here are carried by 26 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 091P, a lemma
 
 [Tag 091P](https://stacks.math.columbia.edu/tag/091P) in the Stacks Project.
 
-**`DerivedHomAway.tfae_ext_localization_vanishing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/DerivedHomCompletionVanishing/VanishingCriteria.lean, line 599](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedComplete/DerivedHomCompletionVanishing/VanishingCriteria.lean#L599).
+**`DerivedHomAway.tfae_ext_localization_vanishing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/DerivedHomCompletionVanishing/VanishingCriteria.lean, line 599](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedComplete/DerivedHomCompletionVanishing/VanishingCriteria.lean#L599).
 
 > The cohomology of `RHom_A(A_f, K)` is `Ext_A(A_f, K)`. Moreover, the
 > following are equivalent: all those Ext groups vanish; `K` is right orthogonal to every object
@@ -60,7 +60,7 @@ public theorem tfae_ext_localization_vanishing (A : Type u) [CommRing A] (f : A)
 
 [Tag 091Q](https://stacks.math.columbia.edu/tag/091Q) in the Stacks Project.
 
-**`exists_isRadical_ideal_isDerivedCompleteAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/CompleteAdic.lean, line 174](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedComplete/CompleteAdic.lean#L174).
+**`exists_isRadical_ideal_isDerivedCompleteAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/CompleteAdic.lean, line 174](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedComplete/CompleteAdic.lean#L174).
 
 > For `K ∈ D(A)`, the elements `f : A` at which `K` is derived complete —
 > equivalently, for which the derived limit of `⋯ → K → K`, with every transition map
@@ -77,7 +77,7 @@ public theorem exists_isRadical_ideal_isDerivedCompleteAt (A : Type u) [CommRing
 
 [Tag 091R](https://stacks.math.columbia.edu/tag/091R) in the Stacks Project.
 
-**`isDerivedCompleteModule_of_isAdicComplete_and_adicCompletion_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/CompleteAdic.lean, line 418](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedComplete/CompleteAdic.lean#L418).
+**`isDerivedCompleteModule_of_isAdicComplete_and_adicCompletion_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/CompleteAdic.lean, line 418](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedComplete/CompleteAdic.lean#L418).
 
 > An `I`-adically complete module is derived complete with respect to `I`. Conversely, for a
 > finitely generated ideal `I`, derived completeness makes the canonical map to the `I`-adic
@@ -97,7 +97,7 @@ public theorem isDerivedCompleteModule_of_isAdicComplete_and_adicCompletion_surj
 
 [Tag 091S](https://stacks.math.columbia.edu/tag/091S) in the Stacks Project.
 
-**`IsDerivedComplete`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete.lean, line 172](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedComplete.lean#L172). The attribute's comment: “(1)”.
+**`IsDerivedComplete`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete.lean, line 172](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedComplete.lean#L172). The attribute's comment: “(1)”.
 
 > `K` is derived complete with respect to the ideal `I` if `T(K,f) = 0` for every `f ∈ I`.
 
@@ -106,7 +106,7 @@ def IsDerivedComplete {C : Type*} [Category C] [Preadditive C] [Linear A C]
     [HasProductsOfShape ℕ C] (I : Ideal A) (K : C) : Prop
 ```
 
-**`IsDerivedCompleteModule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete.lean, line 378](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedComplete.lean#L378). The attribute's comment: “(2)”.
+**`IsDerivedCompleteModule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete.lean, line 378](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedComplete.lean#L378). The attribute's comment: “(2)”.
 
 > An `A`-module is derived complete with respect to `I` when the corresponding object of
 > `D(A)`, concentrated in degree zero, is derived complete.
@@ -119,7 +119,7 @@ def IsDerivedCompleteModule (I : Ideal A) (M : ModuleCat.{v} A) : Prop
 
 [Tag 091T](https://stacks.math.columbia.edu/tag/091T) in the Stacks Project.
 
-**`isAdicComplete_iff_isDerivedCompleteModule_and_iInf_pow_smul_top_eq_bot`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/CompleteAdic.lean, line 454](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedComplete/CompleteAdic.lean#L454).
+**`isAdicComplete_iff_isDerivedCompleteModule_and_iInf_pow_smul_top_eq_bot`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/CompleteAdic.lean, line 454](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedComplete/CompleteAdic.lean#L454).
 
 > For a finitely generated ideal `I`, an `A`-module `M` is `I`-adically complete if and only
 > if it is derived complete with respect to `I` and the intersection of the submodules `I ^ n M`
@@ -139,7 +139,7 @@ public theorem isAdicComplete_iff_isDerivedCompleteModule_and_iInf_pow_smul_top_
 
 [Tag 091U](https://stacks.math.columbia.edu/tag/091U) in the Stacks Project.
 
-**`AdicWeakSerre.derivedCompleteModules_isWeakSerreClass_and_homology_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/AdicWeakSerreClass.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedComplete/AdicWeakSerreClass.lean#L97).
+**`AdicWeakSerre.derivedCompleteModules_isWeakSerreClass_and_homology_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/AdicWeakSerreClass.lean, line 97](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedComplete/AdicWeakSerreClass.lean#L97).
 
 > **Stacks 091U.** The derived complete modules with respect to `I` form a weak Serre
 > subcategory of `ModuleCat A`. Moreover, an object of `D(A)` is derived complete exactly when all
@@ -164,7 +164,7 @@ public theorem derivedCompleteModules_isWeakSerreClass_and_homology_iff
 
 [Tag 09B9](https://stacks.math.columbia.edu/tag/09B9) in the Stacks Project.
 
-**`subsingleton_of_isDerivedCompleteModule_of_quotient_smul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/NakayamaModule.lean, line 256](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedComplete/NakayamaModule.lean#L256).
+**`subsingleton_of_isDerivedCompleteModule_of_quotient_smul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/NakayamaModule.lean, line 256](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedComplete/NakayamaModule.lean#L256).
 
 > **Stacks 09B9.** A derived complete module with zero reduction modulo a finitely generated
 > ideal is zero.
@@ -182,7 +182,7 @@ theorem subsingleton_of_isDerivedCompleteModule_of_quotient_smul
 
 [Tag 0A05](https://stacks.math.columbia.edu/tag/0A05) in the Stacks Project.
 
-**`isDerivedComplete_of_isPseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/PseudoCoherentComplete.lean, line 232](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedComplete/PseudoCoherentComplete.lean#L232).
+**`isDerivedComplete_of_isPseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/PseudoCoherentComplete.lean, line 232](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedComplete/PseudoCoherentComplete.lean#L232).
 
 > **Stacks 0A05.** A pseudo-coherent object over a ring that is derived complete with respect
 > to `I` is itself derived complete with respect to `I`. Pseudo-coherence is spelled out as in
@@ -205,7 +205,7 @@ theorem isDerivedComplete_of_isPseudoCoherent
 
 [Tag 0A6C](https://stacks.math.columbia.edu/tag/0A6C) in the Stacks Project.
 
-**`DerivedHomLocalization.derivedHom_localization_comp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/DerivedHomCompletionLocalizationComp.lean, line 48](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedComplete/DerivedHomCompletionLocalizationComp.lean#L48).
+**`DerivedHomLocalization.derivedHom_localization_comp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/DerivedHomCompletionLocalizationComp.lean, line 48](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedComplete/DerivedHomCompletionLocalizationComp.lean#L48).
 
 > **Stacks 0A6C.** For `f, g ∈ A` and `K ∈ D(A)`, there is a canonical isomorphism
 > `RHom_A(A_f, RHom_A(A_g, K)) ≅ RHom_A(A_{fg}, K)`.
@@ -225,7 +225,7 @@ public noncomputable def derivedHom_localization_comp {A : Type u} [CommRing A]
 
 [Tag 091V](https://stacks.math.columbia.edu/tag/091V) in the Stacks Project.
 
-**`CechCompletion.cechCompletion_isReflection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/CechCompletion.lean, line 1129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedComplete/CechCompletion.lean#L1129).
+**`CechCompletion.cechCompletion_isReflection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/CechCompletion.lean, line 1131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedComplete/CechCompletion.lean#L1131).
 
 > Derived completion with respect to the ideal generated by a finite family
 > `f` is computed functorially as derived Hom from its extended alternating Čech complex. It is
@@ -249,7 +249,7 @@ public theorem cechCompletion_isReflection (A : Type u) [CommRing A] {r : ℕ}
 
 [Tag 0G3E](https://stacks.math.columbia.edu/tag/0G3E) in the Stacks Project.
 
-**`DerivedCompletion.derivedCompletion_isReflection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/CechReflection.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedComplete/CechReflection.lean#L69).
+**`DerivedCompletion.derivedCompletion_isReflection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/CechReflection.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedComplete/CechReflection.lean#L69).
 
 > Derived completion with respect to a finitely generated ideal is the reflection into the
 > derived-complete objects: it takes derived-complete values, and its unit `K ⟶ K̂` induces a
@@ -272,7 +272,7 @@ public theorem derivedCompletion_isReflection (A : Type u) [CommRing A] {r : ℕ
 
 [Tag 0A6D](https://stacks.math.columbia.edu/tag/0A6D) in the Stacks Project.
 
-**`CechCompletion.isZero_cechCompletion_of_isIso_smul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/CechCompletionVanishing.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedComplete/CechCompletionVanishing.lean#L129).
+**`CechCompletion.isZero_cechCompletion_of_isIso_smul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/CechCompletionVanishing.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedComplete/CechCompletionVanishing.lean#L129).
 
 > **Stacks 0A6D.** Let `I` be the ideal generated by a finite family `g`. If some `x ∈ I`
 > acts invertibly on `K ∈ D(A)`, then the derived completion of `K` with respect to `I` is zero.
@@ -289,7 +289,7 @@ public theorem isZero_cechCompletion_of_isIso_smul (A : Type u) [CommRing A] {r 
 
 [Tag 0A6E](https://stacks.math.columbia.edu/tag/0A6E) in the Stacks Project.
 
-**`DerivedHomCechCompletion.derivedHom_cechCompletion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/DerivedHomCompletionHom.lean, line 276](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedComplete/DerivedHomCompletionHom.lean#L276).
+**`DerivedHomCechCompletion.derivedHom_cechCompletion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/DerivedHomCompletionHom.lean, line 276](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedComplete/DerivedHomCompletionHom.lean#L276).
 
 > For a finite family `f` generating an ideal of `A`, derived completion commutes naturally
 > with derived Hom in its target: `RHom_A(K, L)^∧ ≅ RHom_A(K, L^∧)`. If `η : K ⟶ K^∧` is the
@@ -326,7 +326,7 @@ public theorem derivedHom_cechCompletion (A : Type u) [CommRing A] {r : ℕ}
 
 [Tag 091W](https://stacks.math.columbia.edu/tag/091W) in the Stacks Project.
 
-**`isDerivedComplete_of_isMilnorTriangle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete.lean, line 449](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedComplete.lean#L449).
+**`isDerivedComplete_of_isMilnorTriangle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete.lean, line 449](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedComplete.lean#L449).
 
 > Let `A` be a ring and `I ⊂ A` an ideal. Let `(Kₙ)` be an inverse system of objects of `D(A)`
 > (objects `Ksys n`, transition maps `Kt n : Ksys (n+1) ⟶ Ksys n`) such that for every `f ∈ I` and
@@ -349,7 +349,7 @@ theorem
 
 [Tag 0BKC](https://stacks.math.columbia.edu/tag/0BKC) in the Stacks Project.
 
-**`koszulPowerComplexes_form_inverseSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/CompleteKoszulPowers.lean, line 416](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedComplete/CompleteKoszulPowers.lean#L416). References: SGA 2 II (Lemma9), “partial”.
+**`koszulPowerComplexes_form_inverseSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/CompleteKoszulPowers.lean, line 416](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedComplete/CompleteKoszulPowers.lean#L416). References: SGA 2 II (Lemma9), “partial”.
 
 > **Stacks Project, Tag 0BKC.** The Koszul complexes on the positive powers of a finite
 > sequence form an inverse system. The displayed formula says that its transition maps are the
@@ -407,7 +407,7 @@ public theorem koszulPowerComplexes_form_inverseSystem
 
 [Tag 091Y](https://stacks.math.columbia.edu/tag/091Y) in the Stacks Project.
 
-**`AdicKoszul.rlim_derivedTensor_koszulPowers_isDerivedComplete`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/AdicKoszulTower.lean, line 244](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedComplete/AdicKoszulTower.lean#L244).
+**`AdicKoszul.rlim_derivedTensor_koszulPowers_isDerivedComplete`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/AdicKoszulTower.lean, line 244](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedComplete/AdicKoszulTower.lean#L244).
 
 > **Stacks 091Y.** Let `I` be generated by a finite sequence `f`. For any inverse system whose
 > `n`-th term is the Koszul complex on `f i ^ (n + 1)`, the derived limit after derived tensoring
@@ -429,7 +429,7 @@ theorem rlim_derivedTensor_koszulPowers_isDerivedComplete
 
 [Tag 091Z](https://stacks.math.columbia.edu/tag/091Z) in the Stacks Project.
 
-**`AdicKoszul.isDerivedComplete_iff_isIso_to_rlim_derivedTensor_koszulPowers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/AdicDerivedCompletionKoszul.lean, line 778](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedComplete/AdicDerivedCompletionKoszul.lean#L778).
+**`AdicKoszul.isDerivedComplete_iff_isIso_to_rlim_derivedTensor_koszulPowers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/AdicDerivedCompletionKoszul.lean, line 778](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedComplete/AdicDerivedCompletionKoszul.lean#L778).
 
 > The Koszul derived limit and its canonical natural map exist for every complex. A complex is
 > derived complete for the ideal generated by `f` if and only if the component of this map is an
@@ -449,7 +449,7 @@ public theorem isDerivedComplete_iff_isIso_to_rlim_derivedTensor_koszulPowers
 
 [Tag 0920](https://stacks.math.columbia.edu/tag/0920) in the Stacks Project.
 
-**`AdicKoszulAdjunction.koszulPowerDerivedLimit_isLeftAdjoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/AdicDerivedCompletion/Adjunction.lean, line 226](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedComplete/AdicDerivedCompletion/Adjunction.lean#L226).
+**`AdicKoszulAdjunction.koszulPowerDerivedLimit_isLeftAdjoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/AdicDerivedCompletion/Adjunction.lean, line 226](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedComplete/AdicDerivedCompletion/Adjunction.lean#L226).
 
 > For a finite family `f`, the functor whose value at `K` is the derived
 > inverse limit of `K ⊗ᴸ Kₙ`, where `Kₙ` runs through the Koszul complexes on the positive
@@ -477,7 +477,7 @@ public theorem koszulPowerDerivedLimit_isLeftAdjoint
 
 [Tag 0H83](https://stacks.math.columbia.edu/tag/0H83) in the Stacks Project.
 
-**`KoszulTensorVanishing.positive_homology_isZero_iff_derivedTensorProduct_mod_ideal_iff_koszul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/KoszulTensorVanishing.lean, line 605](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedComplete/KoszulTensorVanishing.lean#L605).
+**`KoszulTensorVanishing.positive_homology_isZero_iff_derivedTensorProduct_mod_ideal_iff_koszul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/KoszulTensorVanishing.lean, line 605](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedComplete/KoszulTensorVanishing.lean#L605).
 
 > **Stacks Project, Tag 0H83.** For a complex derived complete with respect to the ideal
 > generated by a finite sequence, the following are equivalent: it has no positive cohomology,
@@ -513,7 +513,7 @@ theorem positive_homology_isZero_iff_derivedTensorProduct_mod_ideal_iff_koszul
 
 [Tag 0G1U](https://stacks.math.columbia.edu/tag/0G1U) in the Stacks Project.
 
-**`KoszulTensorVanishing.isZero_of_isDerivedComplete_of_derivedTensorProduct_mod_ideal_isZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/KoszulTensorVanishing.lean, line 659](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedComplete/KoszulTensorVanishing.lean#L659).
+**`KoszulTensorVanishing.isZero_of_isDerivedComplete_of_derivedTensorProduct_mod_ideal_isZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/KoszulTensorVanishing.lean, line 659](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedComplete/KoszulTensorVanishing.lean#L659).
 
 > **Derived Nakayama lemma, Stacks Project, Tag 0G1U.** A derived-complete complex with
 > respect to a finitely generated ideal is zero if its derived reduction modulo that ideal is
@@ -537,7 +537,7 @@ theorem isZero_of_isDerivedComplete_of_derivedTensorProduct_mod_ideal_isZero
 
 [Tag 0AAJ](https://stacks.math.columbia.edu/tag/0AAJ) in the Stacks Project.
 
-**`CompletionAdjunction.derivedCompletion_finiteCohomologicalDimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/CompletionAdjunction.lean, line 593](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedComplete/CompletionAdjunction.lean#L593).
+**`CompletionAdjunction.derivedCompletion_finiteCohomologicalDimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/CompletionAdjunction.lean, line 593](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedComplete/CompletionAdjunction.lean#L593).
 
 > Derived completion along an ideal generated by `r` elements has cohomological amplitude
 > contained in `[-r, 0]`: it preserves isomorphisms in positive cohomological degrees and
@@ -576,7 +576,7 @@ public theorem derivedCompletion_finiteCohomologicalDimension
 
 [Tag 0BKD](https://stacks.math.columbia.edu/tag/0BKD) in the Stacks Project.
 
-**`AdicFilteredCompletion.exists_derivedCompletion_spectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/FilteredCompletionSpectralSequence.lean, line 184](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedComplete/FilteredCompletionSpectralSequence.lean#L184).
+**`AdicFilteredCompletion.exists_derivedCompletion_spectralSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/FilteredCompletionSpectralSequence.lean, line 184](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedComplete/FilteredCompletionSpectralSequence.lean#L184).
 
 > **Stacks 0BKD.** Let `I` be a finitely generated ideal, and let `K^•` be a decreasingly
 > filtered complex of `A`-modules. There is a filtered representative `M^•` of the derived
@@ -655,7 +655,7 @@ theorem exists_derivedCompletion_spectralSequence
 
 [Tag 0BKE](https://stacks.math.columbia.edu/tag/0BKE) in the Stacks Project.
 
-**`AdicFilteredCompletion.exists_spectralSequence_derivedCompletion_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/FilteredCompletionTruncation.lean, line 765](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedComplete/FilteredCompletionTruncation.lean#L765).
+**`AdicFilteredCompletion.exists_spectralSequence_derivedCompletion_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/FilteredCompletionTruncation.lean, line 765](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedComplete/FilteredCompletionTruncation.lean#L765).
 
 > **Stacks 0BKE.** For a finitely generated ideal `I` and `K ∈ D(A)`, the truncation
 > filtration gives a bounded cohomological spectral sequence `S₁^{p,q} ≅ H^{2p+q}(H^{-p}(K)^∧)`
@@ -739,7 +739,7 @@ theorem exists_spectralSequence_derivedCompletion_homology
 
 [Tag 0924](https://stacks.math.columbia.edu/tag/0924) in the Stacks Project.
 
-**`isDerivedComplete_restrictScalars_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/CompleteRestrictScalars.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedComplete/CompleteRestrictScalars.lean#L142).
+**`isDerivedComplete_restrictScalars_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/CompleteRestrictScalars.lean, line 142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedComplete/CompleteRestrictScalars.lean#L142).
 
 > A complex of `B`-modules is derived complete for the extension of `I` to
 > `B` if and only if its restriction to `A` is derived complete for `I`. Equivalently, the inverse
@@ -757,7 +757,7 @@ public theorem isDerivedComplete_restrictScalars_iff
 
 [Tag 0925](https://stacks.math.columbia.edu/tag/0925) in the Stacks Project.
 
-**`CompleteRestrictScalarsEquivalence.restrictScalars_equivalence_derivedComplete`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/CompleteRestrictScalarsEquivalence/SmallQuotients.lean, line 694](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedComplete/CompleteRestrictScalarsEquivalence/SmallQuotients.lean#L694).
+**`CompleteRestrictScalarsEquivalence.restrictScalars_equivalence_derivedComplete`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/CompleteRestrictScalarsEquivalence/SmallQuotients.lean, line 694](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedComplete/CompleteRestrictScalarsEquivalence/SmallQuotients.lean#L694).
 
 > If `A → B` is flat and induces an isomorphism modulo a finitely generated ideal `I`, then
 > restriction of scalars induces an equivalence from the full subcategory of `I B`-derived complete
@@ -790,4 +790,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.93, Tag 091N](https://stacks.math.columbia.edu/tag/091N)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

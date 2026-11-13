@@ -8,13 +8,13 @@ proof: formalized
 
 # 67.38 Unramified morphisms
 
-Section 67.38 of the Stacks Project, [Tag 03ZG](https://stacks.math.columbia.edu/tag/03ZG). 11 tags here are carried by 20 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 67.38 of the Stacks Project, [Tag 03ZG](https://stacks.math.columbia.edu/tag/03ZG). 11 tags here are carried by 20 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 03ZH, a definition
 
 [Tag 03ZH](https://stacks.math.columbia.edu/tag/03ZH) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsUnramified`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Unramified.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Unramified.lean#L124). The attribute's comment: “part (1): unramified morphisms”.
+**`AlgebraicGeometry.Space.IsUnramified`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Unramified.lean, line 124](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Unramified.lean#L124). The attribute's comment: “part (1): unramified morphisms”.
 
 > **Stacks 03ZH, part (1).** A morphism of algebraic spaces over `S` is *unramified* when the
 > scheme morphism in every commuting square of étale scheme charts is unramified.
@@ -23,7 +23,7 @@ Section 67.38 of the Stacks Project, [Tag 03ZG](https://stacks.math.columbia.edu
 abbrev IsUnramified (f : X ⟶ Y) : Prop
 ```
 
-**`AlgebraicGeometry.Space.IsGUnramified`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Unramified.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Unramified.lean#L131). The attribute's comment: “part (3): G-unramified morphisms”.
+**`AlgebraicGeometry.Space.IsGUnramified`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Unramified.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Unramified.lean#L131). The attribute's comment: “part (3): G-unramified morphisms”.
 
 > **Stacks 03ZH, part (3).** A morphism of algebraic spaces over `S` is *G-unramified* when the
 > scheme morphism in every commuting square of étale scheme charts is G-unramified.
@@ -32,7 +32,7 @@ abbrev IsUnramified (f : X ⟶ Y) : Prop
 abbrev IsGUnramified (f : X ⟶ Y) : Prop
 ```
 
-**`AlgebraicGeometry.Space.IsUnramifiedAt`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Unramified.lean, line 139](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Unramified.lean#L139). The attribute's comment: “part (2): unramified at a point”.
+**`AlgebraicGeometry.Space.IsUnramifiedAt`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Unramified.lean, line 139](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Unramified.lean#L139). The attribute's comment: “part (2): unramified at a point”.
 
 > **Stacks 03ZH, part (2).** A morphism of algebraic spaces over `S` is *unramified at* a point
 > `x` of its source when it is unramified on some open subspace of the source having a point
@@ -42,7 +42,7 @@ abbrev IsGUnramified (f : X ⟶ Y) : Prop
 abbrev IsUnramifiedAt (f : X ⟶ Y) (x : points B S hS X) : Prop
 ```
 
-**`AlgebraicGeometry.Space.IsGUnramifiedAt`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Unramified.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Unramified.lean#L148). The attribute's comment: “part (4): G-unramified at a point”.
+**`AlgebraicGeometry.Space.IsGUnramifiedAt`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Unramified.lean, line 148](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Unramified.lean#L148). The attribute's comment: “part (4): G-unramified at a point”.
 
 > **Stacks 03ZH, part (4).** A morphism of algebraic spaces over `S` is *G-unramified at* a
 > point `x` of its source when it is G-unramified on some open subspace of the source having a
@@ -56,7 +56,7 @@ abbrev IsGUnramifiedAt (f : X ⟶ Y) (x : points B S hS X) : Prop
 
 [Tag 04G1](https://stacks.math.columbia.edu/tag/04G1) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isGUnramified_iff_isUnramified_and_isLocallyOfFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Unramified.lean, line 274](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Unramified.lean#L274).
+**`AlgebraicGeometry.Space.isGUnramified_iff_isUnramified_and_isLocallyOfFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Unramified.lean, line 274](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Unramified.lean#L274).
 
 > **Stacks 04G1.** A morphism of algebraic spaces over `S` is G-unramified exactly when it
 > is unramified and locally of finite presentation.
@@ -76,7 +76,7 @@ theorem isGUnramified_iff_isUnramified_and_isLocallyOfFinitePresentation (f : X 
 
 [Tag 03ZI](https://stacks.math.columbia.edu/tag/03ZI) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isUnramified_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Unramified.lean, line 165](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Unramified.lean#L165).
+**`AlgebraicGeometry.Space.isUnramified_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Unramified.lean, line 165](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Unramified.lean#L165).
 
 > **Stacks 03ZI.** The composite of two unramified morphisms of algebraic spaces over `S`
 > is unramified.
@@ -95,7 +95,7 @@ theorem isUnramified_comp (hX : IsAlgebraicSpace B S hS X) (hY : IsAlgebraicSpac
 
 [Tag 03ZJ](https://stacks.math.columbia.edu/tag/03ZJ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isUnramified_isStableUnderBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Unramified.lean, line 188](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Unramified.lean#L188). References: SGA 1 I (3.5), “(iii)”.
+**`AlgebraicGeometry.Space.isUnramified_isStableUnderBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Unramified.lean, line 188](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Unramified.lean#L188). References: SGA 1 I (3.5), “(iii)”.
 
 > **Stacks 03ZJ.** Unramified morphisms of algebraic spaces over `S` are stable under base
 > change.
@@ -113,7 +113,7 @@ theorem isUnramified_isStableUnderBaseChange :
 
 [Tag 03ZK](https://stacks.math.columbia.edu/tag/03ZK) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isUnramified_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Unramified.lean, line 578](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Unramified.lean#L578).
+**`AlgebraicGeometry.Space.isUnramified_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Unramified.lean, line 578](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Unramified.lean#L578).
 
 > **Stacks 03ZK.** Nine criteria for a morphism of algebraic spaces over `S` to be
 > unramified: pointwise unramifiedness, unramifiedness of every base change to a scheme or to an
@@ -160,7 +160,7 @@ theorem isUnramified_tfae (hX : IsAlgebraicSpace B S hS X) (hY : IsAlgebraicSpac
 
 [Tag 05VZ](https://stacks.math.columbia.edu/tag/05VZ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isLocallyOfFiniteType_of_isUnramified`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Unramified.lean, line 194](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Unramified.lean#L194).
+**`AlgebraicGeometry.Space.isLocallyOfFiniteType_of_isUnramified`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Unramified.lean, line 194](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Unramified.lean#L194).
 
 > **Stacks 05VZ.** An unramified morphism of algebraic spaces is locally of finite type. In
 > every étale chart the underlying scheme morphism is unramified, hence locally of finite type by
@@ -178,7 +178,7 @@ theorem isLocallyOfFiniteType_of_isUnramified {f : X ⟶ Y} (hf : IsUnramified B
 
 [Tag 05W0](https://stacks.math.columbia.edu/tag/05W0) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isQuasiFiniteAt_of_isUnramifiedAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Unramified.lean, line 295](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Unramified.lean#L295). The attribute's comment: “pointwise statement”.
+**`AlgebraicGeometry.Space.isQuasiFiniteAt_of_isUnramifiedAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Unramified.lean, line 295](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Unramified.lean#L295). The attribute's comment: “pointwise statement”.
 
 > **Stacks 05W0**, the pointwise statement: a morphism of algebraic spaces over `S` which is
 > unramified at a point of its source is quasi-finite at that point.
@@ -191,7 +191,7 @@ theorem isQuasiFiniteAt_of_isUnramifiedAt {f : X ⟶ Y} {x : points B S hS X}
     (hf : IsUnramifiedAt B S hS f x) : IsQuasiFiniteAt B S hS f x
 ```
 
-**`AlgebraicGeometry.Space.isLocallyQuasiFinite_of_isUnramified`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedQuasiFinite.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedQuasiFinite.lean#L67). The attribute's comment: “global consequence”. References: EGA IV (17.4.3).
+**`AlgebraicGeometry.Space.isLocallyQuasiFinite_of_isUnramified`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedQuasiFinite.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedQuasiFinite.lean#L68). The attribute's comment: “global consequence”. References: EGA IV (17.4.3).
 
 > **Stacks 05W0, the global consequence.** An unramified morphism of algebraic spaces over `S`
 > is locally quasi-finite: on every commuting square of étale scheme charts the induced scheme
@@ -203,7 +203,7 @@ theorem isLocallyQuasiFinite_of_isUnramified {X Y : (BigFppfOver B S hS)ᵒᵖ �
     IsLocallyQuasiFinite B S hS f
 ```
 
-**`AlgebraicGeometry.Space.isLocallyQuasiFinite_of_isUnramified`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedQuasiFinite.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedQuasiFinite.lean#L67). The attribute's comment: “an unramified morphism is locally quasi-finite”. References: EGA IV (17.4.3).
+**`AlgebraicGeometry.Space.isLocallyQuasiFinite_of_isUnramified`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedQuasiFinite.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedQuasiFinite.lean#L68). The attribute's comment: “an unramified morphism is locally quasi-finite”. References: EGA IV (17.4.3).
 
 > **Stacks 05W0, the global consequence.** An unramified morphism of algebraic spaces over `S`
 > is locally quasi-finite: on every commuting square of étale scheme charts the induced scheme
@@ -219,7 +219,7 @@ theorem isLocallyQuasiFinite_of_isUnramified {X Y : (BigFppfOver B S hS)ᵒᵖ �
 
 [Tag 06CQ](https://stacks.math.columbia.edu/tag/06CQ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isUnramified_of_isImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Unramified.lean, line 232](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Unramified.lean#L232).
+**`AlgebraicGeometry.Space.isUnramified_of_isImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Unramified.lean, line 232](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Unramified.lean#L232).
 
 > **Stacks 06CQ.** An immersion of algebraic spaces over `S` is unramified.
 >
@@ -237,7 +237,7 @@ theorem isUnramified_of_isImmersion (hX : IsAlgebraicSpace B S hS X)
 
 [Tag 05W1](https://stacks.math.columbia.edu/tag/05W1) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isUnramified_of_isOpenImmersion_pullbackDiagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Unramified.lean, line 515](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Unramified.lean#L515). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.Space.isUnramified_of_isOpenImmersion_pullbackDiagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Unramified.lean, line 515](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Unramified.lean#L515). The attribute's comment: “part (2)”.
 
 > **Stacks 05W1, part (2).** A morphism of algebraic spaces over `S` which is locally of
 > finite type and whose relative diagonal is an open immersion is unramified.
@@ -258,7 +258,7 @@ theorem isUnramified_of_isOpenImmersion_pullbackDiagonal (hX : IsAlgebraicSpace 
     IsUnramified B S hS f
 ```
 
-**`AlgebraicGeometry.Space.isOpenImmersion_diagonal_of_isUnramified`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedDiagonal.lean, line 487](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedDiagonal.lean#L487). The attribute's comment: “part (1)”. References: EGA IV (17.4.2), “a) ⇒ b)”; SGA 1 I (3.4), “diagonal case (g = id)”; SGA 3 XI (1.3), “more general”.
+**`AlgebraicGeometry.Space.isOpenImmersion_diagonal_of_isUnramified`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedDiagonal.lean, line 487](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedDiagonal.lean#L487). The attribute's comment: “part (1)”. References: EGA IV (17.4.2), “a) ⇒ b)”; SGA 1 I (3.4), “diagonal case (g = id)”; SGA 3 XI (1.3), “more general”.
 
 > **Stacks 05W1, part (1).** The relative diagonal of an unramified morphism of algebraic
 > spaces over `S` is an open immersion.
@@ -280,7 +280,7 @@ theorem isOpenImmersion_diagonal_of_isUnramified
     IsOpenImmersion B S hS (pullback.diagonal f)
 ```
 
-**`AlgebraicGeometry.Space.isUnramified_of_isOpenImmersion_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedDiagonal.lean, line 524](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedDiagonal.lean#L524). The attribute's comment: “part (2)”. References: EGA IV (17.4.2), “b) ⇒ a)”; SGA 3 XI (1.3), “more general”.
+**`AlgebraicGeometry.Space.isUnramified_of_isOpenImmersion_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedDiagonal.lean, line 524](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UnramifiedDiagonal.lean#L524). The attribute's comment: “part (2)”. References: EGA IV (17.4.2), “b) ⇒ a)”; SGA 3 XI (1.3), “more general”.
 
 > **Stacks 05W1, part (2).** A morphism of algebraic spaces over `S` which is locally of
 > finite type and whose relative diagonal is an open immersion is unramified.
@@ -315,7 +315,7 @@ theorem isUnramified_of_isOpenImmersion_diagonal (f : X ⟶ Y)
 
 [Tag 05W2](https://stacks.math.columbia.edu/tag/05W2) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.unramifiedLocus`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Unramified.lean, line 644](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Unramified.lean#L644). The attribute's comment: “part (1): the open unramified locus”.
+**`AlgebraicGeometry.Space.unramifiedLocus`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Unramified.lean, line 644](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Unramified.lean#L644). The attribute's comment: “part (1): the open unramified locus”.
 
 > **Stacks 05W2, part (1).** The open subspace of the source of a morphism of algebraic
 > spaces over `S` cut out by the points at which the morphism is unramified.
@@ -332,7 +332,7 @@ noncomputable def unramifiedLocus (hX : IsAlgebraicSpace B S hS X) (f : X ⟶ Y)
     {U : Subfunctor X // IsOpenSubspace B S hS U}
 ```
 
-**`AlgebraicGeometry.Space.range_pointsMap_unramifiedLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Unramified.lean, line 652](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Unramified.lean#L652). The attribute's comment: “part (1): the points of the open unramified locus”.
+**`AlgebraicGeometry.Space.range_pointsMap_unramifiedLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Unramified.lean, line 652](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Unramified.lean#L652). The attribute's comment: “part (1): the points of the open unramified locus”.
 
 > **Stacks 05W2, part (1).** The points of `AlgebraicGeometry.Space.unramifiedLocus` are
 > exactly the points at which the morphism is unramified.
@@ -344,7 +344,7 @@ theorem range_pointsMap_unramifiedLocus (hX : IsAlgebraicSpace B S hS X) (f : X 
       {x : points B S hS X | IsUnramifiedAt B S hS f x}
 ```
 
-**`AlgebraicGeometry.Space.isUnramifiedAt_iff_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UnramifiedLocusOnBase.lean, line 212](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UnramifiedLocusOnBase.lean#L212). The attribute's comment: “part (2): base-change invariance of the unramified locus, pointwise”.
+**`AlgebraicGeometry.Space.isUnramifiedAt_iff_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UnramifiedLocusOnBase.lean, line 212](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/UnramifiedLocusOnBase.lean#L212). The attribute's comment: “part (2): base-change invariance of the unramified locus, pointwise”.
 
 > **Part (2) of Stacks 05W2, read at a point.** In a cartesian square of algebraic spaces over
 > `S` whose right vertical arrow `f` is locally of finite type, the base change `f'` is unramified
@@ -373,7 +373,7 @@ theorem isUnramifiedAt_iff_of_isPullback {X' X Y' Y : (BigFppfOver B S hS)ᵒᵖ
 
 [Tag 06G6](https://stacks.math.columbia.edu/tag/06G6) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isUnramified_of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Unramified.lean, line 203](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Unramified.lean#L203).
+**`AlgebraicGeometry.Space.isUnramified_of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Unramified.lean, line 203](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Unramified.lean#L203).
 
 > **Stacks 06G6.** If a composite of morphisms of algebraic spaces over `S` is unramified,
 > then so is its first factor.
@@ -396,4 +396,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 67.38, Tag 03ZG](https://stacks.math.columbia.edu/tag/03ZG)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

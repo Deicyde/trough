@@ -8,7 +8,7 @@ proof: formalized
 
 # 100.4 Points of algebraic stacks
 
-Section 100.4 of the Stacks Project, [Tag 04XE](https://stacks.math.columbia.edu/tag/04XE). 10 tags here are carried by 16 declarations of the repository (all in StacksFrontier) and 6 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 100.4 of the Stacks Project, [Tag 04XE](https://stacks.math.columbia.edu/tag/04XE). 10 tags here are carried by 16 declarations of the repository (all in StacksFrontier) and 6 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 04XE, the section
 
@@ -16,18 +16,18 @@ Section 100.4 of the Stacks Project, [Tag 04XE](https://stacks.math.columbia.edu
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Stack.FieldValuedPoint.HasCommonExtension`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Points.lean#L170), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/PointsTopology.lean, line 653](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/PointsTopology.lean#L653) (StacksFrontier): “the equivalence of morphisms from spectra of fields: a common refinement”.
-- [`AlgebraicGeometry.Stack.pointsMap`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Points.lean#L309), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/PointsTopology.lean, line 655](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/PointsTopology.lean#L655) (StacksFrontier): “the induced map |f| : |𝒳| → |𝒴| of a 1-morphism”.
-- [`AlgebraicGeometry.Stack.pointsMap_eq_of_basedNatTrans`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Points.lean#L337), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/PointsTopology.lean, line 657](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/PointsTopology.lean#L657) (StacksFrontier): “2-isomorphic 1-morphisms induce the same map on points, so a 2-commutative square of stacks gives a commutative square of sets”.
-- [`AlgebraicGeometry.Stack.pointsMap_comp`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Points.lean#L346), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/PointsTopology.lean, line 660](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/PointsTopology.lean#L660) (StacksFrontier): “the map on points of a composite is the composite of the maps”.
-- [`AlgebraicGeometry.Stack.pointsEquivOfBasedEquivalence`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/PointsTopology.lean#L185), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/PointsTopology.lean, line 662](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/PointsTopology.lean#L662) (StacksFrontier): “an equivalence 𝒳 → 𝒴 induces a bijection |𝒳| → |𝒴|”.
-- [`AlgebraicGeometry.Stack.spacePointMap_id_bijective`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/PointsTopology.lean#L261), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/PointsTopology.lean, line 664](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/PointsTopology.lean#L664) (StacksFrontier): “agreement with the points of an algebraic space (Definition 03BU)”.
+- [`AlgebraicGeometry.Stack.FieldValuedPoint.HasCommonExtension`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Points.lean#L170), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/PointsTopology.lean, line 653](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/PointsTopology.lean#L653) (StacksFrontier): “the equivalence of morphisms from spectra of fields: a common refinement”.
+- [`AlgebraicGeometry.Stack.pointsMap`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Points.lean#L309), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/PointsTopology.lean, line 655](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/PointsTopology.lean#L655) (StacksFrontier): “the induced map |f| : |𝒳| → |𝒴| of a 1-morphism”.
+- [`AlgebraicGeometry.Stack.pointsMap_eq_of_basedNatTrans`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Points.lean#L337), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/PointsTopology.lean, line 657](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/PointsTopology.lean#L657) (StacksFrontier): “2-isomorphic 1-morphisms induce the same map on points, so a 2-commutative square of stacks gives a commutative square of sets”.
+- [`AlgebraicGeometry.Stack.pointsMap_comp`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Points.lean#L346), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/PointsTopology.lean, line 660](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/PointsTopology.lean#L660) (StacksFrontier): “the map on points of a composite is the composite of the maps”.
+- [`AlgebraicGeometry.Stack.pointsEquivOfBasedEquivalence`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/PointsTopology.lean#L185), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/PointsTopology.lean, line 662](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/PointsTopology.lean#L662) (StacksFrontier): “an equivalence 𝒳 → 𝒴 induces a bijection |𝒳| → |𝒴|”.
+- [`AlgebraicGeometry.Stack.spacePointMap_id_bijective`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/PointsTopology.lean#L261), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Stacks/PointsTopology.lean, line 664](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/PointsTopology.lean#L664) (StacksFrontier): “agreement with the points of an algebraic space (Definition 03BU)”.
 
 ## Tag 04XF, a lemma
 
 [Tag 04XF](https://stacks.math.columbia.edu/tag/04XF) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.FieldValuedPoint.hasCommonExtension_equivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Points.lean, line 250](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Points.lean#L250).
+**`AlgebraicGeometry.Stack.FieldValuedPoint.hasCommonExtension_equivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Points.lean, line 250](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Points.lean#L250).
 
 > **Stacks 04XF.** Common field-valued refinement is an equivalence relation on the
 > field-valued points of a category fibred in groupoids.
@@ -44,7 +44,7 @@ theorem hasCommonExtension_equivalence
 
 [Tag 04XG](https://stacks.math.columbia.edu/tag/04XG) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.points`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Points.lean, line 273](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Points.lean#L273).
+**`AlgebraicGeometry.Stack.points`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Points.lean, line 273](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Points.lean#L273).
 
 > **Stacks 04XG.** The points of a category fibred in groupoids, in particular of an
 > algebraic stack, are the equivalence classes of its field-valued points.
@@ -57,7 +57,7 @@ abbrev points (h𝒳 : 𝒳.p.IsFiberedInGroupoids) : Type (max (u + 1) t)
 
 [Tag 04XH](https://stacks.math.columbia.edu/tag/04XH) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.exists_point_of_isTwoFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/PointsFibreProduct.lean, line 249](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/PointsFibreProduct.lean#L249). The attribute's comment: “for a 2-fibre product of categories fibred in groupoids”.
+**`AlgebraicGeometry.Stack.exists_point_of_isTwoFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/PointsFibreProduct.lean, line 249](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/PointsFibreProduct.lean#L249). The attribute's comment: “for a 2-fibre product of categories fibred in groupoids”.
 
 > **Points of a 2-fibre product of categories fibred in groupoids**: a point of `𝒵` and a
 > point of `𝒳` with the same image in `|𝒴|` lift to a point of any 2-fibre product of
@@ -77,7 +77,7 @@ theorem exists_point_of_isTwoFibreProduct
         pointsMap B S hS P.pt.val P.pt.property 𝒳.property P.snd.hom p = x
 ```
 
-**`AlgebraicGeometry.Stack.exists_point_of_isTwoFibreProduct_algebraicStacks`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/PointsFibreProductAlgebraicStack.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/PointsFibreProductAlgebraicStack.lean#L102).
+**`AlgebraicGeometry.Stack.exists_point_of_isTwoFibreProduct_algebraicStacks`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/PointsFibreProductAlgebraicStack.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/PointsFibreProductAlgebraicStack.lean#L102).
 
 > **Stacks 04XH.** Let `g : 𝒵 ⟶ 𝒴` and `f : 𝒳 ⟶ 𝒴` be 1-morphisms of algebraic stacks over
 > `S` and let `P` be a 2-fibre product of that cospan in the 2-category of algebraic stacks. A
@@ -101,7 +101,7 @@ theorem exists_point_of_isTwoFibreProduct_algebraicStacks
           (Classical.choose 𝒳.property) P.snd.hom.hom p = x
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.exists_point_of_isTwoFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SurjectiveBaseChange.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SurjectiveBaseChange.lean#L129).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.exists_point_of_isTwoFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SurjectiveBaseChange.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SurjectiveBaseChange.lean#L129).
 
 > **Stacks 04XH** for a 2-fibre product in the 2-category of algebraic stacks: a point of `𝒵`
 > and a point of `𝒳` with the same image in `|𝒴|` lift to a point of any 2-fibre product of
@@ -126,7 +126,7 @@ theorem exists_point_of_isTwoFibreProduct {g : 𝒵 ⟶ 𝒴} {f : 𝒳 ⟶ 𝒴
 
 [Tag 04XI](https://stacks.math.columbia.edu/tag/04XI) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.pointsMap_surjective_iff_isRelativelySurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/PointsSurjective.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/PointsSurjective.lean#L143).
+**`AlgebraicGeometry.Stack.pointsMap_surjective_iff_isRelativelySurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/PointsSurjective.lean, line 143](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/PointsSurjective.lean#L143).
 
 > **Stacks 04XI.** A 1-morphism of algebraic stacks over `S` which is representable by
 > algebraic spaces is surjective — the relative property of Stacks 03YK at surjectivity of
@@ -148,7 +148,7 @@ theorem pointsMap_surjective_iff_isRelativelySurjective
 
 [Tag 04XJ](https://stacks.math.columbia.edu/tag/04XJ) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.GroupoidPresentation.range_pointsMap_source_target`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/PointsGroupoidPresentation.lean, line 435](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/PointsGroupoidPresentation.lean#L435). The attribute's comment: “part 1: the image of |R| → |U| × |U| is an equivalence relation”.
+**`AlgebraicGeometry.Stack.GroupoidPresentation.range_pointsMap_source_target`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/PointsGroupoidPresentation.lean, line 435](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/PointsGroupoidPresentation.lean#L435). The attribute's comment: “part 1: the image of |R| → |U| × |U| is an equivalence relation”.
 
 > **Stacks 04XJ, the equivalence relation.** Let `𝒳 = [U/R]` be a presentation of a category
 > `𝒳` over the big fppf site of `S` which is fibred in groupoids. Then the image of
@@ -164,7 +164,7 @@ theorem range_pointsMap_source_target (P : GroupoidPresentation B S hS 𝒳)
         (Setoid.ker (P.presentingPointsMap h𝒳)).r q.1 q.2}
 ```
 
-**`AlgebraicGeometry.Stack.GroupoidPresentation.pointsQuotientEquivOfPresentation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/PointsGroupoidPresentation.lean, line 454](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/PointsGroupoidPresentation.lean#L454). The attribute's comment: “part 2: |X| is the quotient of |U| by that relation”.
+**`AlgebraicGeometry.Stack.GroupoidPresentation.pointsQuotientEquivOfPresentation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/PointsGroupoidPresentation.lean, line 454](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/PointsGroupoidPresentation.lean#L454). The attribute's comment: “part 2: |X| is the quotient of |U| by that relation”.
 
 > **Stacks 04XJ, the quotient.** Let `𝒳 = [U/R]` be a presentation of a category `𝒳` over the
 > big fppf site of `S` which is fibred in groupoids. Then `|𝒳|` is the quotient of `|U|` by the
@@ -182,7 +182,7 @@ noncomputable def pointsQuotientEquivOfPresentation (P : GroupoidPresentation B 
 
 [Tag 04XK](https://stacks.math.columbia.edu/tag/04XK) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.range_prod_pointsMapToSpace_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/PointsQuotientOfSpaceAtlas.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/PointsQuotientOfSpaceAtlas.lean#L84). The attribute's comment: “image of the relation on points”.
+**`AlgebraicGeometry.Stack.range_prod_pointsMapToSpace_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/PointsQuotientOfSpaceAtlas.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/PointsQuotientOfSpaceAtlas.lean#L84). The attribute's comment: “image of the relation on points”.
 
 > **The image of the relation on points.** For a 2-fibre product `R` of a chart
 > `f : U ⟶ 𝒳` by an algebraic space with itself, the image of `|R| ⟶ |U| × |U|` is exactly the
@@ -201,7 +201,7 @@ theorem range_prod_pointsMapToSpace_eq
           spacePointMap B S hS F 𝒳.val p.hom.hom q.2}
 ```
 
-**`AlgebraicGeometry.Stack.equivalence_mem_range_prod_pointsMapToSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/PointsQuotientOfSpaceAtlas.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/PointsQuotientOfSpaceAtlas.lean#L113). The attribute's comment: “equivalence relation on points”.
+**`AlgebraicGeometry.Stack.equivalence_mem_range_prod_pointsMapToSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/PointsQuotientOfSpaceAtlas.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/PointsQuotientOfSpaceAtlas.lean#L113). The attribute's comment: “equivalence relation on points”.
 
 > **The relation on points is an equivalence relation.** The image of
 > `|R| ⟶ |U| × |U|` is the kernel of `|f|`.
@@ -217,7 +217,7 @@ theorem equivalence_mem_range_prod_pointsMapToSpace
         (pointsMapToSpace B S hS hF P.fst r, pointsMapToSpace B S hS hF P.snd r)))
 ```
 
-**`AlgebraicGeometry.Stack.spacePointsQuotientEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/PointsQuotientOfSpaceAtlas.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/PointsQuotientOfSpaceAtlas.lean#L129). The attribute's comment: “the points of the stack as a quotient”.
+**`AlgebraicGeometry.Stack.spacePointsQuotientEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/PointsQuotientOfSpaceAtlas.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/PointsQuotientOfSpaceAtlas.lean#L129). The attribute's comment: “the points of the stack as a quotient”.
 
 > **The points of the stack as a quotient.** For a surjective chart
 > `f : U ⟶ 𝒳` by an algebraic space, `|𝒳|` is the quotient of `|U|` by the kernel of `|f|`,
@@ -237,7 +237,7 @@ noncomputable def spacePointsQuotientEquiv
 
 [Tag 04XL](https://stacks.math.columbia.edu/tag/04XL) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.spacePointMap_class`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/PointsTopology.lean, line 138](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/PointsTopology.lean#L138). The attribute's comment: “canonical map on points”.
+**`AlgebraicGeometry.Stack.spacePointMap_class`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/PointsTopology.lean, line 138](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/PointsTopology.lean#L138). The attribute's comment: “canonical map on points”.
 
 > The chosen quotient representative in `AlgebraicGeometry.Stack.spacePointMap` has the same
 > image as any field-valued representative of the point.
@@ -253,7 +253,7 @@ theorem spacePointMap_class (F : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u)
           (spaceFieldValuedPoint B S hS F p))
 ```
 
-**`AlgebraicGeometry.Stack.existsUnique_pointTopologyFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/PointsTopology.lean, line 623](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/PointsTopology.lean#L623). The attribute's comment: “existence and uniqueness of topology”.
+**`AlgebraicGeometry.Stack.existsUnique_pointTopologyFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/PointsTopology.lean, line 623](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/PointsTopology.lean#L623). The attribute's comment: “existence and uniqueness of topology”.
 
 > There is a unique family of topologies on the points of the algebraic stacks over `S` which
 > makes every 1-morphism continuous on points and makes a 1-morphism from an algebraic space whose
@@ -269,7 +269,7 @@ theorem existsUnique_pointTopologyFamily :
 
 [Tag 04Y8](https://stacks.math.columbia.edu/tag/04Y8) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.pointTopology`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/PointsTopology.lean, line 345](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/PointsTopology.lean#L345). The attribute's comment: “the underlying topological space of an algebraic stack”.
+**`AlgebraicGeometry.Stack.pointTopology`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/PointsTopology.lean, line 345](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/PointsTopology.lean#L345). The attribute's comment: “the underlying topological space of an algebraic stack”.
 
 > The topology on the points of a category fibred in groupoids over the big fppf site of `S`:
 > the supremum, over all charts by algebraic spaces, of the topologies coinduced from the point
@@ -285,7 +285,7 @@ noncomputable def pointTopology
 
 [Tag 04Y9](https://stacks.math.columbia.edu/tag/04Y9) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.hasBasis_nhds_isOpen_isCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/PointsLocallyQuasiCompact.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/PointsLocallyQuasiCompact.lean#L97). The attribute's comment: “fundamental system of quasi-compact open neighbourhoods”.
+**`AlgebraicGeometry.Stack.hasBasis_nhds_isOpen_isCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/PointsLocallyQuasiCompact.lean, line 97](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/PointsLocallyQuasiCompact.lean#L97). The attribute's comment: “fundamental system of quasi-compact open neighbourhoods”.
 
 > The quasi-compact open neighbourhoods of a point of the space of points of an algebraic
 > stack over `S` are a fundamental system of neighbourhoods of that point.
@@ -297,7 +297,7 @@ theorem hasBasis_nhds_isOpen_isCompact (h𝒳 : IsAlgebraicStack.{u, w} B S hS �
       (fun W : Set (points B S hS 𝒳.val 𝒳.property) ↦ IsOpen W ∧ IsCompact W ∧ x ∈ W) id
 ```
 
-**`AlgebraicGeometry.Stack.locallyCompactSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/PointsLocallyQuasiCompact.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/PointsLocallyQuasiCompact.lean#L109). The attribute's comment: “local quasi-compactness”.
+**`AlgebraicGeometry.Stack.locallyCompactSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/PointsLocallyQuasiCompact.lean, line 109](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/PointsLocallyQuasiCompact.lean#L109). The attribute's comment: “local quasi-compactness”.
 
 > The space of points of an algebraic stack over `S` is locally quasi-compact, that is, a
 > `LocallyCompactSpace`.
@@ -314,4 +314,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 100.4, Tag 04XE](https://stacks.math.columbia.edu/tag/04XE)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

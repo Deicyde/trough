@@ -8,13 +8,13 @@ proof: formalized
 
 # 51.7 Finiteness of local cohomology, I
 
-Section 51.7 of the Stacks Project, [Tag 0AW7](https://stacks.math.columbia.edu/tag/0AW7). 4 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 51.7 of the Stacks Project, [Tag 0AW7](https://stacks.math.columbia.edu/tag/0AW7). 4 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0AW8, a lemma
 
 [Tag 0AW8](https://stacks.math.columbia.edu/tag/0AW8) in the Stacks Project.
 
-**`Stacks.LocalCohomology.exists_annihilator_iff_exists_power_annihilator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/AnnihilatorPower.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/AnnihilatorPower.lean#L68). The attribute's comment: “equivalence of (2) and (3) for closed support”.
+**`Stacks.LocalCohomology.exists_annihilator_iff_exists_power_annihilator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/AnnihilatorPower.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/AnnihilatorPower.lean#L68). The attribute's comment: “equivalence of (2) and (3) for closed support”.
 
 > **Stacks 0AW8, equivalence of (2) and (3) for closed support.** For support `V(I)` in a
 > Noetherian ring, an ideal supported in `V(I)` annihilates local cohomology through degree `n`
@@ -34,7 +34,7 @@ theorem exists_annihilator_iff_exists_power_annihilator
           ((DerivedCategory.singleFunctor (ModuleCat.{max u v} A) 0).obj M) i))
 ```
 
-**`Stacks.LocalCohomology.finite_localCohomologyWithSupportIn_iff_exists_annihilator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/FinitenessAnnihilatorCriterion.lean, line 479](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/FinitenessAnnihilatorCriterion.lean#L479). The attribute's comment: “equivalence of (1) and (2)”.
+**`Stacks.LocalCohomology.finite_localCohomologyWithSupportIn_iff_exists_annihilator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/FinitenessAnnihilatorCriterion.lean, line 479](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/FinitenessAnnihilatorCriterion.lean#L479). The attribute's comment: “equivalence of (1) and (2)”.
 
 > **Stacks 0AW8, equivalence of (1) and (2).** Let `A` be a Noetherian ring, `T ⊆ Spec(A)` a
 > subset stable under specialization, `M` a finite `A`-module and `n ≥ 0`. The local cohomology
@@ -61,7 +61,7 @@ theorem finite_localCohomologyWithSupportIn_iff_exists_annihilator (A : Type u) 
 
 [Tag 0AW9](https://stacks.math.columbia.edu/tag/0AW9) in the Stacks Project.
 
-**`Stacks.LocalCohomology.localCohomology_finite_iff_localizations_finite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/FinitenessIsLocal.lean, line 724](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/FinitenessIsLocal.lean#L724).
+**`Stacks.LocalCohomology.localCohomology_finite_iff_localizations_finite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/FinitenessIsLocal.lean, line 724](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/FinitenessIsLocal.lean#L724).
 
 > **Stacks 0AW9.** For a finite module over a Noetherian ring, finiteness of
 > local cohomology through degree `n` can be checked after localization at every
@@ -89,7 +89,7 @@ public theorem localCohomology_finite_iff_localizations_finite
 
 [Tag 0BPX](https://stacks.math.columbia.edu/tag/0BPX) in the Stacks Project.
 
-**`Stacks.LocalCohomology.exists_pow_smul_localCohomology_eq_bot`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/F6Rank301/AnnihilatingLocalCohomology.lean, line 264](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/F6Rank301/AnnihilatingLocalCohomology.lean#L264).
+**`Stacks.LocalCohomology.exists_pow_smul_localCohomology_eq_bot`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/F6Rank301/AnnihilatingLocalCohomology.lean, line 264](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/F6Rank301/AnnihilatingLocalCohomology.lean#L264).
 
 > **Stacks 0BPX.** If a power of `J` annihilates the `i`-th local cohomology of `A` supported
 > on `V(I)`, then a power of `J` annihilates the corresponding local cohomology of every finitely
@@ -114,7 +114,7 @@ theorem exists_pow_smul_localCohomology_eq_bot (J I : Ideal A) (hJI : J ≤ I) (
 
 [Tag 0BPY](https://stacks.math.columbia.edu/tag/0BPY) in the Stacks Project.
 
-**`Stacks.LocalCohomology.localCohomologyWithSupportIn_finite_of_finiteLocallyFree_away`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/FiniteLocallyFreeFiniteness.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/FiniteLocallyFreeFiniteness.lean#L83).
+**`Stacks.LocalCohomology.localCohomologyWithSupportIn_finite_of_finiteLocallyFree_away`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/FiniteLocallyFreeFiniteness.lean, line 83](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/FiniteLocallyFreeFiniteness.lean#L83).
 
 > **Stacks 0BPY.** Let `A` be a Noetherian ring, `I ⊆ A` an ideal, `Z = V(I)` and `n ≥ 0`. If
 > the local cohomology `H^i_Z(A)` of the ring is finite for `0 ≤ i ≤ n`, then `H^i_Z(M)` is finite
@@ -148,4 +148,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 51.7, Tag 0AW7](https://stacks.math.columbia.edu/tag/0AW7)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

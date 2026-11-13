@@ -8,13 +8,13 @@ proof: formalized
 
 # 25.9 Homotopies
 
-Section 25.9 of the Stacks Project, [Tag 01GO](https://stacks.math.columbia.edu/tag/01GO). 2 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 25.9 of the Stacks Project, [Tag 01GO](https://stacks.math.columbia.edu/tag/01GO). 2 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 01GP, a lemma
 
 [Tag 01GP](https://stacks.math.columbia.edu/tag/01GP) in the Stacks Project.
 
-**`Stacks.CategoryTheory.Hypercovering.boundaryIntervalRepresentable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/CoveringAndHomotopies/MatchingSquare.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/CoveringAndHomotopies/MatchingSquare.lean#L82). The attribute's comment: “the two endpoint copies”.
+**`Stacks.CategoryTheory.Hypercovering.boundaryIntervalRepresentable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/CoveringAndHomotopies/MatchingSquare.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/CoveringAndHomotopies/MatchingSquare.lean#L82). The attribute's comment: “the two endpoint copies”.
 
 > Restriction to the two vertices of the interval is represented by the product of two copies
 > of a simplicial semi-representable object.
@@ -25,7 +25,7 @@ theorem boundaryIntervalRepresentable
     Nonempty (SimplicialObject.IsHomFromSSet (SSet.boundary.{max v w} 1) L (L ⨯ L))
 ```
 
-**`Stacks.CategoryTheory.Hypercovering.intervalEndpointMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/CoveringAndHomotopies/MatchingSquare.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/CoveringAndHomotopies/MatchingSquare.lean#L90). The attribute's comment: “the ordered endpoint map”.
+**`Stacks.CategoryTheory.Hypercovering.intervalEndpointMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/CoveringAndHomotopies/MatchingSquare.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/CoveringAndHomotopies/MatchingSquare.lean#L90). The attribute's comment: “the ordered endpoint map”.
 
 > The fixed endpoint-evaluation morphism `Hom(Δ[1], L) ⟶ L × L`. Its two components are, in
 > order, the restrictions of the universal interval map to the vertices zero and one.
@@ -45,7 +45,7 @@ noncomputable def intervalEndpointMap
             (SSet.stdSimplex.const 1 1 m)) }
 ```
 
-**`Stacks.CategoryTheory.Hypercovering.homotopyMatchingSquare`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/CoveringAndHomotopies/MatchingSquare.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/CoveringAndHomotopies/MatchingSquare.lean#L116).
+**`Stacks.CategoryTheory.Hypercovering.homotopyMatchingSquare`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/CoveringAndHomotopies/MatchingSquare.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/CoveringAndHomotopies/MatchingSquare.lean#L116).
 
 > **Stacks Project, Tag 01GP.** The four matching objects are represented by the corresponding
 > simplicial sets, and the `Hom` object of the union is their fibre product. All arrows in the
@@ -101,7 +101,7 @@ theorem homotopyMatchingSquare
 
 [Tag 01GS](https://stacks.math.columbia.edu/tag/01GS) in the Stacks Project.
 
-**`Stacks.CategoryTheory.Hypercovering.exists_homotopy_after_hypercovering_refinement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/CoveringAndHomotopies/Homotopy.lean, line 366](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/CoveringAndHomotopies/Homotopy.lean#L366).
+**`Stacks.CategoryTheory.Hypercovering.exists_homotopy_after_hypercovering_refinement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/CoveringAndHomotopies/Homotopy.lean, line 367](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/CoveringAndHomotopies/Homotopy.lean#L367).
 
 > **Stacks Project, Tag 01GS.** Two morphisms between hypercoverings become simplicially
 > homotopic after precomposition with a morphism from a further hypercovering.
@@ -123,4 +123,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 25.9, Tag 01GO](https://stacks.math.columbia.edu/tag/01GO)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: Stacks.AlgebraicGeometry.ProperFlatGlobalSections.isPerfect_derivedGlobalSections, Stacks.AlgebraicGeometry.ProperFlatGlobalSections.isIso_derivedGlobalSectionsBaseChangeMap, Stacks.AlgebraicGeometry.ProperFlatGlobalSections.exists_finiteProjectiveModel_homology_iso_functorial
+lean: Stacks.AlgebraicGeometry.ProperFlatGlobalSections.isPerfect_derivedGlobalSections, Stacks.AlgebraicGeometry.ProperFlatGlobalSections.isPerfect_and_isIso_baseChange, Stacks.AlgebraicGeometry.ProperFlatGlobalSections.exists_finiteProjectiveModel_homology_iso_functorial
 statement: formalized
 proof: formalized
 ---
 
 # 30.22 Cohomology and base change, III
 
-Section 30.22 of the Stacks Project, [Tag 07VJ](https://stacks.math.columbia.edu/tag/07VJ). 2 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 30.22 of the Stacks Project, [Tag 07VJ](https://stacks.math.columbia.edu/tag/07VJ). 2 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 07VK, a lemma
 
 [Tag 07VK](https://stacks.math.columbia.edu/tag/07VK) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.ProperFlatGlobalSections.isPerfect_derivedGlobalSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/ProperFlatGlobalSections.lean, line 644](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/ProperFlatGlobalSections.lean#L644). The attribute's comment: “(1)”. References: SGA 6 0 (3.1), “affine-target flat case”; SGA 6 0 (4.1), “special case”; SGA 6 XIV (2.2), “special case”.
+**`Stacks.AlgebraicGeometry.ProperFlatGlobalSections.isPerfect_derivedGlobalSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/ProperFlatGlobalSections.lean, line 644](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/ProperFlatGlobalSections.lean#L644). The attribute's comment: “(1)”. References: SGA 6 0 (3.1), “affine-target flat case”; SGA 6 0 (4.1), “special case”; SGA 6 XIV (2.2), “special case”.
 
 > **[Stacks, Tag 07VK] (1).** Let `A` be a Noetherian ring, let `f : X ⟶ Spec A` be proper and
 > let `F` be a coherent `𝒪_X`-module flat over `Spec A`. Then `RΓ(X, F)` is a perfect object of
@@ -41,41 +41,51 @@ theorem isPerfect_derivedGlobalSections [IsNoetherianRing A] [IsProper f] [F.IsC
     StacksDraft.Perfect.IsPerfect (derivedGlobalSectionsOverBase f F)
 ```
 
-**`Stacks.AlgebraicGeometry.ProperFlatGlobalSections.isIso_derivedGlobalSectionsBaseChangeMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/ProperFlatGlobalSectionsBaseChange.lean, line 257](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/ProperFlatGlobalSectionsBaseChange.lean#L257). The attribute's comment: “(2), for the Čech base-change comparison of a finite affine cover”.
+**`Stacks.AlgebraicGeometry.ProperFlatGlobalSections.isPerfect_and_isIso_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/ProperFlatGlobalSectionsPerfectBaseChange.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/ProperFlatGlobalSectionsPerfectBaseChange.lean#L99).
 
-> **[Stacks, Tag 07VK] (2).** Let `φ : A ⟶ A'` be a homomorphism of commutative rings, let
-> `f : X ⟶ Spec A` be separated, let `g : X' ⟶ X` and `f' : X' ⟶ Spec A'` exhibit `X'` as the base
-> change of `X` along `Spec A' ⟶ Spec A`, and let `F` be a quasi-coherent `𝒪_X`-module flat over
-> `Spec A`. Then the base-change map
+> **[Stacks, Tag 07VK].** Let `A` be a Noetherian ring, let `f : X ⟶ Spec A` be a proper
+> morphism of schemes and let `F` be a coherent `𝒪_X`-module flat over `Spec A`. Then
 >
-> `RΓ(X, F) ⊗^L_A A' ⟶ RΓ(X', g^* F)`
+> 1. `RΓ(X, F)` is a perfect object of `D(A)`, and
+> 2. for every ring map `φ : A ⟶ A'` and every cartesian square exhibiting `X'` (with
+>    `g : X' ⟶ X` and `f' : X' ⟶ Spec A'`) as `X_{A'} = X ×_{Spec A} Spec A'`, the base change of
+>    `RΓ(X, F)` to `A'` is `RΓ(X', g^* F)`:
+>    * the canonical base-change map `L(Spec φ)^* Rf_* F ⟶ Rf'_* g^* F` (the map of
+>      [Stacks, Tag 08HY] followed by `Rf'_*` of `L(g)^* F ⟶ g^* F`) is an isomorphism, and
+>    * for every finite affine open cover `U` of `X` with affine finite intersections, the
+>      base-change map `RΓ(X, F) ⊗^L_A A' ⟶ RΓ(X', g^* F)` in `D(A')` computed on the alternating
+>      Čech complex of `U`, `derivedGlobalSectionsBaseChangeMap`, is an isomorphism.
 >
-> is an isomorphism in `D(A')`.
->
-> The proof is the source's. The alternating Čech complex of a finite affine cover whose finite
-> intersections are affine computes `RΓ(X, F)` ([Stacks, Tag 01FM] and [Stacks, Tag 01ET]), it is
-> bounded, and flatness of `F` over the base makes it termwise flat ([Stacks, Tag 01U4]); for such
-> a complex the ordinary extension of scalars is the derived one ([Stacks, Tag 06XY]), and the
-> ordinary extension of scalars of the model is the model of the inverse-image cover on `X'`
-> ([Stacks, Tag 01XL]), which computes `RΓ(X', g^* F)`.
->
-> **Unconditional.** No Noetherian hypothesis, no properness, no coherence, and in particular no
-> appeal to `AlgebraicGeometry.ProperCoherentImage.HigherDirectImageIsCoherentOverAffineBase`,
-> which clause (1) threads and clause (2) does not need. The hypotheses are weaker than the
-> source's: for `A` Noetherian, `f` proper and `F` coherent and flat they hold, a suitable cover
-> being supplied by `exists_finiteAffineCover_of_isProper`.
+> The proof is the source's: the alternating Čech complex of a finite affine cover computes
+> `RΓ(X, F)`, is bounded and termwise flat over `A`, and has finite cohomology modules, which gives
+> clause (1) by [Stacks, Tag 0658] and the Čech form of clause (2) because derived and ordinary
+> extension of scalars agree on it ([Stacks, Tag 06XY]).
 
 ```lean
-theorem isIso_derivedGlobalSectionsBaseChangeMap
+theorem isPerfect_and_isIso_baseChange [IsNoetherianRing A] [IsProper f] [F.IsCoherent]
     (hflat : IsFlatOver f.toLRSHom.toShHom F) :
-    IsIso (derivedGlobalSectionsBaseChangeMap φ hsq F U hU hUaff haff)
+    StacksDraft.Perfect.IsPerfect (derivedGlobalSectionsOverBase f F) ∧
+      ∀ {A' : Type u} [CommRing A'] (φ : A →+* A') {X' : Scheme.{u}}
+        {f' : X' ⟶ Spec (.of A')} {g : X' ⟶ X}
+        (hsq : IsPullback g f' f (Spec.map (CommRingCat.ofHom φ))),
+        IsIso (derivedBaseChangeComp f (Spec.map (CommRingCat.ofHom φ)) f' g hsq.w
+            (DerivedCategory.Q.obj (singleDegreeComplex F))
+            (DerivedCategory.Q.obj
+              ((pullbackComplex g.toLRSHom.toShHom).obj (singleDegreeComplex F)))
+            ((derivedPullbackNatTrans g.toLRSHom.toShHom).app (singleDegreeComplex F))) ∧
+          ∀ {I : Type u} [Finite I] [LinearOrder I] (U : I → X.Opens)
+            (hU : (⊤ : X.Opens) = ⨆ i, U i) (hUaff : ∀ i, IsAffineOpen (U i))
+            (haff : ∀ (r : ℕ) (s : Fin (r + 1) → I), IsAffineOpen (⨅ k, U (s k))),
+            haveI : F.IsQuasicoherent :=
+              (CoherentTFAE.isQuasicoherent_isFiniteType_of_isCoherent F).1
+            IsIso (derivedGlobalSectionsBaseChangeMap φ hsq F U hU hUaff haff)
 ```
 
 ## Tag 07VL, a remark
 
 [Tag 07VL](https://stacks.math.columbia.edu/tag/07VL) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.ProperFlatGlobalSections.exists_finiteProjectiveModel_homology_iso_functorial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/ProperFlatGlobalSectionsFunctorialModel.lean, line 322](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/ProperFlatGlobalSectionsFunctorialModel.lean#L322). The attribute's comment: “Remark 30.22.2 in full: one bounded complex M of finite projective A-modules, the identification H^i(X\_\{A'}, F\_\{A'}) = H^i(M ⊗\_A A') for every base change given as a family of isomorphisms indexed by the ring map, the cartesian square and the degree and pinned to the single chain-level model over A, and the functoriality in A' as the cocycle square for a second base change A' ⟶ A''; under exactly the source's conditions — A Noetherian, f proper, F coherent and flat over A — with the finite affine cover bound inside the existential and supplied by properness. The closing citation to Hartshorne that flatness is essential is remark-level and appears as documentation in the module docstring.”.
+**`Stacks.AlgebraicGeometry.ProperFlatGlobalSections.exists_finiteProjectiveModel_homology_iso_functorial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/ProperFlatGlobalSectionsFunctorialModel.lean, line 323](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/ProperFlatGlobalSectionsFunctorialModel.lean#L323). The attribute's comment: “Remark 30.22.2 in full: one bounded complex M of finite projective A-modules, the identification H^i(X\_\{A'}, F\_\{A'}) = H^i(M ⊗\_A A') for every base change given as a family of isomorphisms indexed by the ring map, the cartesian square and the degree and pinned to the single chain-level model over A, and the functoriality in A' as the cocycle square for a second base change A' ⟶ A''; under exactly the source's conditions — A Noetherian, f proper, F coherent and flat over A — with the finite affine cover bound inside the existential and supplied by properness. The closing citation to Hartshorne that flatness is essential is remark-level and appears as documentation in the module docstring.”.
 
 > **[Stacks, Tag 07VL], Remark 30.22.2, both clauses.** Let `A` be a Noetherian ring,
 > `f : X ⟶ Spec A` a proper morphism of schemes and `F` a coherent `𝒪_X`-module flat over `A`. Then
@@ -176,4 +186,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 30.22, Tag 07VJ](https://stacks.math.columbia.edu/tag/07VJ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

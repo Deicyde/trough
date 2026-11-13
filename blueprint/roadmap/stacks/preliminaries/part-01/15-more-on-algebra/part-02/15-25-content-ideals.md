@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.25 Content ideals
 
-Section 15.25 of the Stacks Project, [Tag 0AS9](https://stacks.math.columbia.edu/tag/0AS9). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.25 of the Stacks Project, [Tag 0AS9](https://stacks.math.columbia.edu/tag/0AS9). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0ASA, a definition
 
 [Tag 0ASA](https://stacks.math.columbia.edu/tag/0ASA) in the Stacks Project.
 
-**`IsContentIdeal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/ContentIdeal.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/ContentIdeal.lean#L58). References: SGA 3 XXII (5.1.1), “more general”.
+**`IsContentIdeal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/ContentIdeal.lean, line 58](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/ContentIdeal.lean#L58). References: SGA 3 XXII (5.1.1), “more general”.
 
 > `I₀` is a *content ideal* of `x`: it is the least element of `S_x` under inclusion,
 > i.e. `x ∈ I₀ M` and any ideal `I` with `x ∈ I M` contains `I₀`. Here the submodule `I M`
@@ -31,7 +31,7 @@ def IsContentIdeal (x : M) (I₀ : Ideal A) : Prop
 
 [Tag 0ASB](https://stacks.math.columbia.edu/tag/0ASB) in the Stacks Project.
 
-**`contentIdeal_fg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/ContentIdeal.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/ContentIdeal.lean#L95).
+**`contentIdeal_fg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/ContentIdeal.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/ContentIdeal.lean#L95).
 
 > **Stacks Tag 0ASB.** If a content ideal `I₀` of `x` exists, then `I₀` is finitely
 > generated.
@@ -51,7 +51,7 @@ theorem contentIdeal_fg {A : Type*} [CommRing A] {M : Type*} [AddCommGroup M] [M
 
 [Tag 0ASC](https://stacks.math.columbia.edu/tag/0ASC) in the Stacks Project.
 
-**`isContentIdeal_map_of_injective_mapQ_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/ContentIdeal.lean, line 279](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/ContentIdeal.lean#L279).
+**`isContentIdeal_map_of_injective_mapQ_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/ContentIdeal.lean, line 276](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/ContentIdeal.lean#L276).
 
 > **Stacks Tag 0ASC.** A map between flat modules over a local ring which is injective modulo
 > the maximal ideal preserves content ideals of elements.
@@ -74,7 +74,7 @@ theorem isContentIdeal_map_of_injective_mapQ_maximalIdeal
 
 [Tag 0ASD](https://stacks.math.columbia.edu/tag/0ASD) in the Stacks Project.
 
-**`exists_isContentIdeal_of_flat_isMittagLeffler`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/ContentIdeal.lean, line 445](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/ContentIdeal.lean#L445).
+**`exists_isContentIdeal_of_flat_isMittagLeffler`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/ContentIdeal.lean, line 439](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/ContentIdeal.lean#L439).
 
 > **Stacks Tag 0ASD.** Every element of a flat Mittag-Leffler module has a content ideal.
 
@@ -94,4 +94,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.25, Tag 0AS9](https://stacks.math.columbia.edu/tag/0AS9)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

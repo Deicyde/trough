@@ -8,13 +8,13 @@ proof: formalized
 
 # 42.12 Proper pushforward
 
-Section 42.12 of the Stacks Project, [Tag 02R3](https://stacks.math.columbia.edu/tag/02R3). 4 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 42.12 of the Stacks Project, [Tag 02R3](https://stacks.math.columbia.edu/tag/02R3). 4 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 02R4, a definition
 
 [Tag 02R4](https://stacks.math.columbia.edu/tag/02R4) in the Stacks Project.
 
-**`Stacks.Chow.properPushforward`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Vocabulary.lean, line 286](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Vocabulary.lean#L286). The attribute's comment: “pushforward of cycles”.
+**`Stacks.Chow.properPushforward`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Vocabulary.lean, line 286](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Vocabulary.lean#L286). The attribute's comment: “pushforward of cycles”.
 
 > Proper pushforward of cycles of delta-dimension `k`.
 
@@ -24,7 +24,7 @@ def properPushforward (C : ChowSituation.{u}) {X Y : Scheme.{u}} (sX : X ⟶ C.S
     (hf : f ≫ sY = sX) (k : ℤ) : CycleGroup C sX k → CycleGroup C sY k
 ```
 
-**`Stacks.Chow.properPushforward_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Vocabulary.lean, line 297](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Vocabulary.lean#L297). The attribute's comment: “coefficient formula”.
+**`Stacks.Chow.properPushforward_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Vocabulary.lean, line 297](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Vocabulary.lean#L297). The attribute's comment: “coefficient formula”.
 
 > The coefficient of the proper pushforward at a point is the locally finite sum of the
 > coefficients above it, weighted by their residue-field degrees when the delta-dimension is
@@ -41,7 +41,7 @@ theorem properPushforward_apply (C : ChowSituation.{u}) {X Y : Scheme.{u}} (sX :
           then (f.residueDegree x : ℤ) else 0)
 ```
 
-**`Stacks.Chow.properPushforward_single`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Vocabulary.lean, line 340](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Vocabulary.lean#L340). The attribute's comment: “pushforward of an integral component”.
+**`Stacks.Chow.properPushforward_single`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Vocabulary.lean, line 340](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Vocabulary.lean#L340). The attribute's comment: “pushforward of an integral component”.
 
 > An integral closed subscheme maps to its image with multiplicity the degree of the
 > function-field extension if its delta-dimension is preserved, and to zero otherwise.
@@ -62,7 +62,7 @@ theorem properPushforward_single (C : ChowSituation.{u}) {X Y : Scheme.{u}} (sX 
 
 [Tag 02R5](https://stacks.math.columbia.edu/tag/02R5) in the Stacks Project.
 
-**`Stacks.Chow.properPushforward_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ProperPushforwardChow/Functoriality.lean, line 268](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ProperPushforwardChow/Functoriality.lean#L268).
+**`Stacks.Chow.properPushforward_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ProperPushforwardChow/Functoriality.lean, line 268](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ProperPushforwardChow/Functoriality.lean#L268).
 
 > **Stacks 02R5.** Proper pushforward of `k`-cycles is functorial: pushing forward along
 > `f : X ⟶ Y` and then along `g : Y ⟶ Z` is pushing forward along the composite.
@@ -80,7 +80,7 @@ theorem properPushforward_comp (C : ChowSituation.{u}) {X Y Z : Scheme.{u}} (sX 
 
 [Tag 0F92](https://stacks.math.columbia.edu/tag/0F92) in the Stacks Project.
 
-**`Stacks.Chow.exact_intersectionToSummands_summandsToUnion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Degrees/UnionOfClosedSubschemes.lean, line 222](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Degrees/UnionOfClosedSubschemes.lean#L222). The attribute's comment: “exactness in the middle”.
+**`Stacks.Chow.exact_intersectionToSummands_summandsToUnion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Degrees/UnionOfClosedSubschemes.lean, line 222](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Degrees/UnionOfClosedSubschemes.lean#L222). The attribute's comment: “exactness in the middle”.
 
 > The sequence of a union of two closed subschemes is exact in the middle: a pair of
 > `k`-cycles on the two closed subschemes has vanishing sum of pushforwards exactly when it comes
@@ -91,7 +91,7 @@ theorem exact_intersectionToSummands_summandsToUnion :
     Function.Exact (intersectionToSummands C sX I J k) (summandsToUnion C sX I J k)
 ```
 
-**`Stacks.Chow.surjective_summandsToUnion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Degrees/UnionOfClosedSubschemes.lean, line 234](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Degrees/UnionOfClosedSubschemes.lean#L234). The attribute's comment: “surjectivity”.
+**`Stacks.Chow.surjective_summandsToUnion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Degrees/UnionOfClosedSubschemes.lean, line 234](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Degrees/UnionOfClosedSubschemes.lean#L234). The attribute's comment: “surjectivity”.
 
 > If two closed subschemes cover the ambient scheme set-theoretically, every `k`-cycle on it is
 > the sum of the pushforwards of a `k`-cycle on each of them.
@@ -105,7 +105,7 @@ theorem surjective_summandsToUnion (hcover : I.support ⊔ J.support = ⊤) :
 
 [Tag 02R6](https://stacks.math.columbia.edu/tag/02R6) in the Stacks Project.
 
-**`Stacks.Chow.properPushforward_cycleAssociatedToCoherentSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ProperPushforwardCoherent/Basic.lean, line 196](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ProperPushforwardCoherent/Basic.lean#L196). The attribute's comment: “part (2)”.
+**`Stacks.Chow.properPushforward_cycleAssociatedToCoherentSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ProperPushforwardCoherent/Basic.lean, line 196](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ProperPushforwardCoherent/Basic.lean#L196). The attribute's comment: “part (2)”.
 
 > Let `f : X ⟶ Y` be a proper morphism of schemes locally of finite type over the base `S` of
 > chapter 42, and let `F` be a coherent `𝒪_X`-module whose support has delta-dimension at most
@@ -123,7 +123,7 @@ theorem properPushforward_cycleAssociatedToCoherentSheaf (C : ChowSituation.{u})
         (schemeDeltaDimension_reducedSupport_pushforward_le C sX sY f hf F hFk)
 ```
 
-**`Stacks.Chow.properPushforward_cycleAssociatedToClosedSubscheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ProperPushforwardCoherent/Basic.lean, line 251](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ProperPushforwardCoherent/Basic.lean#L251). The attribute's comment: “part (1)”.
+**`Stacks.Chow.properPushforward_cycleAssociatedToClosedSubscheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ProperPushforwardCoherent/Basic.lean, line 251](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ProperPushforwardCoherent/Basic.lean#L251). The attribute's comment: “part (1)”.
 
 > Let `f : X ⟶ Y` be a proper morphism of schemes locally of finite type over the base `S` of
 > chapter 42, and let `i : Z ⟶ X` be a closed subscheme with `dim_δ(Z) ≤ k`, with `f_* (i_* 𝒪_Z)`
@@ -148,7 +148,7 @@ theorem properPushforward_cycleAssociatedToClosedSubscheme (C : ChowSituation.{u
           (schemeDeltaDimension_reducedSupport_pushforwardStructureSheaf_le C sX i hZ))
 ```
 
-**`Stacks.Chow.properPushforward_cycleAssociatedToCoherentSheaf_eq_directImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ProperPushforwardCoherent/DirectImageCycle.lean, line 51](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ProperPushforwardCoherent/DirectImageCycle.lean#L51). The attribute's comment: “part (2)”.
+**`Stacks.Chow.properPushforward_cycleAssociatedToCoherentSheaf_eq_directImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ProperPushforwardCoherent/DirectImageCycle.lean, line 51](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ProperPushforwardCoherent/DirectImageCycle.lean#L51). The attribute's comment: “part (2)”.
 
 > **Stacks 02R6, part (2).** Let `f : X ⟶ Y` be a proper morphism of schemes locally of finite
 > type over the base `S` of chapter 42, and let `F` be a coherent `𝒪_X`-module whose support has
@@ -167,7 +167,7 @@ theorem properPushforward_cycleAssociatedToCoherentSheaf_eq_directImage (C : Cho
         (schemeDeltaDimension_reducedSupport_pushforward_le C sX sY f hf F hFk)
 ```
 
-**`Stacks.Chow.properPushforward_cycleAssociatedToClosedSubscheme_eq_directImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ProperPushforwardCoherent/DirectImageCycle.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ProperPushforwardCoherent/DirectImageCycle.lean#L70). The attribute's comment: “part (1)”.
+**`Stacks.Chow.properPushforward_cycleAssociatedToClosedSubscheme_eq_directImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ProperPushforwardCoherent/DirectImageCycle.lean, line 70](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ProperPushforwardCoherent/DirectImageCycle.lean#L70). The attribute's comment: “part (1)”.
 
 > **Stacks 02R6, part (1).** Let `f : X ⟶ Y` be a proper morphism of schemes locally of finite
 > type over the base `S` of chapter 42, and let `i : Z ⟶ X` be a closed subscheme with
@@ -194,7 +194,7 @@ theorem properPushforward_cycleAssociatedToClosedSubscheme_eq_directImage (C : C
           (schemeDeltaDimension_reducedSupport_pushforwardStructureSheaf_le C sX i hZ))
 ```
 
-**`Stacks.Chow.properPushforward_cycleAssociatedToCoherentSheaf_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ProperPushforwardCoherent/Unconditional.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ProperPushforwardCoherent/Unconditional.lean#L66). The attribute's comment: “part (2)”.
+**`Stacks.Chow.properPushforward_cycleAssociatedToCoherentSheaf_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ProperPushforwardCoherent/Unconditional.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ProperPushforwardCoherent/Unconditional.lean#L66). The attribute's comment: “part (2)”.
 
 > **[Stacks, Tag 02R6], part (2).** Let `f : X ⟶ Y` be a proper morphism of schemes locally of
 > finite type over the base `S` of chapter 42, and let `F` be a coherent `𝒪_X`-module whose support
@@ -220,7 +220,7 @@ theorem properPushforward_cycleAssociatedToCoherentSheaf_unconditional (C : Chow
         (schemeDeltaDimension_reducedSupport_pushforward_le C sX sY f hf F hFk)
 ```
 
-**`Stacks.Chow.properPushforward_cycleAssociatedToClosedSubscheme_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ProperPushforwardCoherent/Unconditional.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ProperPushforwardCoherent/Unconditional.lean#L89). The attribute's comment: “part (1)”.
+**`Stacks.Chow.properPushforward_cycleAssociatedToClosedSubscheme_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ProperPushforwardCoherent/Unconditional.lean, line 89](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ProperPushforwardCoherent/Unconditional.lean#L89). The attribute's comment: “part (1)”.
 
 > **[Stacks, Tag 02R6], part (1).** Let `f : X ⟶ Y` be a proper morphism of schemes locally of
 > finite type over the base `S` of chapter 42, and let `i : Z ⟶ X` be a closed subscheme with
@@ -257,4 +257,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 42.12, Tag 02R3](https://stacks.math.columbia.edu/tag/02R3)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

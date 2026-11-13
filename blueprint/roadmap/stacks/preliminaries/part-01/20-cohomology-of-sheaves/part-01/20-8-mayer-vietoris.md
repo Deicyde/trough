@@ -8,13 +8,13 @@ proof: formalized
 
 # 20.8 Mayer-Vietoris
 
-Section 20.8 of the Stacks Project, [Tag 01E9](https://stacks.math.columbia.edu/tag/01E9). 3 tags here are carried by 7 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 20.8 of the Stacks Project, [Tag 01E9](https://stacks.math.columbia.edu/tag/01E9). 3 tags here are carried by 7 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 01EA, a lemma
 
 [Tag 01EA](https://stacks.math.columbia.edu/tag/01EA) in the Stacks Project.
 
-**`Stacks.Cohomology.InjectiveRestriction.injective_restriction_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechAcyclicity/InjectiveSheavesRestrictOnto.lean, line 192](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/CechAcyclicity/InjectiveSheavesRestrictOnto.lean#L192).
+**`Stacks.Cohomology.InjectiveRestriction.injective_restriction_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechAcyclicity/InjectiveSheavesRestrictOnto.lean, line 192](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/CechAcyclicity/InjectiveSheavesRestrictOnto.lean#L192).
 
 > An injective sheaf of modules has surjective restriction maps.
 
@@ -31,7 +31,7 @@ public theorem injective_restriction_surjective
 
 [Tag 01EB](https://stacks.math.columbia.edu/tag/01EB) in the Stacks Project.
 
-**`Stacks.Cohomology.AbsoluteMayerVietoris.mayerVietoris_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MayerVietorisHgroup/Basic.lean, line 512](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MayerVietorisHgroup/Basic.lean#L512). The attribute's comment: “in the right-derived model `Hgroup`”.
+**`Stacks.Cohomology.AbsoluteMayerVietoris.mayerVietoris_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MayerVietorisHgroup/Basic.lean, line 512](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MayerVietorisHgroup/Basic.lean#L512). The attribute's comment: “in the right-derived model `Hgroup`”.
 
 > **Stacks Project, Tag 01EB (Mayer--Vietoris), in the right-derived model of cohomology.**
 > Every six-term window
@@ -46,7 +46,7 @@ public theorem mayerVietoris_exact (n : ℕ) (F : SheafOfModules.{u} O) :
       ((mvSecond O U V (n + 1)).app F)).Exact
 ```
 
-**`Stacks.Cohomology.AbsoluteMayerVietoris.mono_mvFirst_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MayerVietorisHgroup/Basic.lean, line 558](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MayerVietorisHgroup/Basic.lean#L558). The attribute's comment: “the leading zero, in the right-derived model `Hgroup`”.
+**`Stacks.Cohomology.AbsoluteMayerVietoris.mono_mvFirst_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MayerVietorisHgroup/Basic.lean, line 558](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MayerVietorisHgroup/Basic.lean#L558). The attribute's comment: “the leading zero, in the right-derived model `Hgroup`”.
 
 > **The Mayer--Vietoris sequence starts with a zero**: the pair of restriction maps
 > `H⁰(X,F) ⟶ H⁰(U,F) ⊞ H⁰(V,F)` is a monomorphism.
@@ -56,7 +56,7 @@ public theorem mono_mvFirst_zero (F : SheafOfModules.{u} O) :
     Mono ((mvFirst O U V 0).app F)
 ```
 
-**`Stacks.Cohomology.MayerVietoris.mayerVietorisInitialSequence_exact`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/MayerVietoris/LongExactSequence.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/MayerVietoris/LongExactSequence.lean#L87). The attribute's comment: “initial segment”.
+**`Stacks.Cohomology.MayerVietoris.mayerVietorisInitialSequence_exact`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/MayerVietoris/LongExactSequence.lean, line 87](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/MayerVietoris/LongExactSequence.lean#L87). The attribute's comment: “initial segment”.
 
 > The Mayer--Vietoris sequence is exact at its initial segment, including the leading zero.
 
@@ -65,7 +65,7 @@ lemma mayerVietorisInitialSequence_exact :
     (mayerVietorisInitialSequence S F).Exact
 ```
 
-**`Stacks.Cohomology.MayerVietoris.mayerVietoris_delta_naturality`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/MayerVietoris/LongExactSequence.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/MayerVietoris/LongExactSequence.lean#L129). The attribute's comment: “functoriality”.
+**`Stacks.Cohomology.MayerVietoris.mayerVietoris_delta_naturality`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/MayerVietoris/LongExactSequence.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/MayerVietoris/LongExactSequence.lean#L129). The attribute's comment: “functoriality”.
 
 > The connecting morphisms in the Mayer--Vietoris long exact sequence are natural in the
 > coefficient sheaf.
@@ -79,13 +79,13 @@ lemma mayerVietoris_delta_naturality {G : Sheaf J AddCommGrpCat.{v}} (f : F ⟶ 
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.GrothendieckTopology.MayerVietorisSquare.sequence_exact`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.GrothendieckTopology.MayerVietorisSquare.sequence_exact#doc) registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Cohomology/MayerVietoris/LongExactSequence.lean, line 141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/MayerVietoris/LongExactSequence.lean#L141) (StacksFrontier): “successive windows”.
+- [`CategoryTheory.GrothendieckTopology.MayerVietorisSquare.sequence_exact`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.GrothendieckTopology.MayerVietorisSquare.sequence_exact#doc) registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Cohomology/MayerVietoris/LongExactSequence.lean, line 141](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/MayerVietoris/LongExactSequence.lean#L141) (StacksFrontier): “successive windows”.
 
 ## Tag 01EC, a lemma
 
 [Tag 01EC](https://stacks.math.columbia.edu/tag/01EC) in the Stacks Project.
 
-**`Stacks.Cohomology.RelativeMayerVietoris.relativeMayerVietoris`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/RelativeMayerVietoris/LongExactSequence.lean, line 395](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/RelativeMayerVietoris/LongExactSequence.lean#L395).
+**`Stacks.Cohomology.RelativeMayerVietoris.relativeMayerVietoris`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/RelativeMayerVietoris/LongExactSequence.lean, line 395](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/RelativeMayerVietoris/LongExactSequence.lean#L395).
 
 > For a morphism `f : X → Y`, two open subspaces covering `X`, and their intersection, the
 > higher direct images of every module fit into a long exact Mayer--Vietoris sequence, naturally
@@ -102,7 +102,7 @@ public theorem relativeMayerVietoris
     Nonempty (RelativeMayerVietorisSequence f iU iV iW)
 ```
 
-**`Stacks.Cohomology.RelativeMayerVietoris.relativeMayerVietorisPlus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/RelativeMayerVietoris/LongExactSequence.lean, line 701](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/RelativeMayerVietoris/LongExactSequence.lean#L701). The attribute's comment: “bounded-below integer-indexed sequence”.
+**`Stacks.Cohomology.RelativeMayerVietoris.relativeMayerVietorisPlus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/RelativeMayerVietoris/LongExactSequence.lean, line 701](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/RelativeMayerVietoris/LongExactSequence.lean#L701). The attribute's comment: “bounded-below integer-indexed sequence”.
 
 > The bounded below higher direct images of a module and of its restrictions to a two-open
 > cover and to the intersection form a functorial long exact sequence indexed by the integers.
@@ -125,4 +125,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 20.8, Tag 01E9](https://stacks.math.columbia.edu/tag/01E9)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

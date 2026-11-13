@@ -8,13 +8,13 @@ proof: formalized
 
 # 86.9 Relative dualizing complexes for proper flat morphisms
 
-Section 86.9 of the Stacks Project, [Tag 0E5W](https://stacks.math.columbia.edu/tag/0E5W). 6 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 86.9 of the Stacks Project, [Tag 0E5W](https://stacks.math.columbia.edu/tag/0E5W). 6 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0E5X, a definition
 
 [Tag 0E5X](https://stacks.math.columbia.edu/tag/0E5X) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.RelativeDualizingComplex`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeDualizingComplex.lean, line 189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeDualizingComplex.lean#L189).
+**`AlgebraicGeometry.Space.RelativeDualizingComplex`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeDualizingComplex.lean, line 189](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeDualizingComplex.lean#L189).
 
 > Let `f : X ⟶ Y` be a proper, flat morphism of algebraic spaces over `S` of finite
 > presentation. A *relative dualizing complex* for `X/Y` is a pair `(ω, τ)` of a `Y`-perfect object
@@ -33,7 +33,7 @@ structure RelativeDualizingComplex {X Y : AlgebraicSpaces B S hS} (f : X ⟶ Y)
 
 [Tag 0E5Y](https://stacks.math.columbia.edu/tag/0E5Y) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.RelativeDualizingComplex.isIso_smallEtaleDerivedHomothety_and_isLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeDualizingComplexAffinePerfect.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeDualizingComplexAffinePerfect.lean#L159).
+**`AlgebraicGeometry.Space.RelativeDualizingComplex.isIso_smallEtaleDerivedHomothety_and_isLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeDualizingComplexAffinePerfect.lean, line 159](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeDualizingComplexAffinePerfect.lean#L159).
 
 > **Stacks 0E5Y.** Let `f : X ⟶ Y` be a proper, flat morphism of algebraic spaces of finite
 > presentation. For a relative dualizing complex `(ω, τ)`, the map `𝒪_X ⟶ R𝓗om(ω, ω)` is an
@@ -49,7 +49,7 @@ theorem isIso_smallEtaleDerivedHomothety_and_isLE (ω : RelativeDualizingComplex
 
 [Tag 0E5Z](https://stacks.math.columbia.edu/tag/0E5Z) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.RelativeDualizingComplex.existsUnique_iso_of_relativeDualizingComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeDualizingComplexAffinePerfect.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeDualizingComplexAffinePerfect.lean#L169).
+**`AlgebraicGeometry.Space.RelativeDualizingComplex.existsUnique_iso_of_relativeDualizingComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeDualizingComplexAffinePerfect.lean, line 169](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeDualizingComplexAffinePerfect.lean#L169).
 
 > **Stacks 0E5Z.** Let `f : X ⟶ Y` be a proper, flat morphism of algebraic spaces of finite
 > presentation. Two relative dualizing complexes `(ω₁, τ₁)`, `(ω₂, τ₂)` on `X/Y` have a unique
@@ -65,7 +65,7 @@ theorem existsUnique_iso_of_relativeDualizingComplex
 
 [Tag 0E60](https://stacks.math.columbia.edu/tag/0E60) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.RelativeDualizingPair.isAffineBaseChangePair_of_isEtaleCovering_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeDualizingComplexAffinePerfect.lean, line 189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeDualizingComplexAffinePerfect.lean#L189).
+**`AlgebraicGeometry.Space.RelativeDualizingPair.isAffineBaseChangePair_of_isEtaleCovering_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeDualizingComplexAffinePerfect.lean, line 189](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeDualizingComplexAffinePerfect.lean#L189).
 
 > **Stacks 0E60.** Let `f : X ⟶ Y` be a proper, flat morphism of algebraic spaces of finite
 > presentation, `(ω, τ)` a pair of a `Y`-perfect object of `D(𝒪_X)` and a map
@@ -91,7 +91,7 @@ theorem isAffineBaseChangePair_of_isEtaleCovering_of_isProper
 
 [Tag 0E61](https://stacks.math.columbia.edu/tag/0E61) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.RelativeDualizingComplex.nonempty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeDualizingComplexExistence.lean, line 412](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeDualizingComplexExistence.lean#L412).
+**`AlgebraicGeometry.Space.RelativeDualizingComplex.nonempty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeDualizingComplexExistence.lean, line 410](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeDualizingComplexExistence.lean#L410).
 
 > **Stacks 0E61: existence of relative dualizing complexes.** Let `f : X ⟶ Y` be a proper,
 > flat morphism of algebraic spaces over `S` which is of finite presentation. Then there exists a
@@ -108,7 +108,7 @@ theorem RelativeDualizingComplex.nonempty (hZ : B.Contains (⊤_ Scheme.{u}))
 
 [Tag 0E6C](https://stacks.math.columbia.edu/tag/0E6C) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.RelativeDualizingComplex.baseChange_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeDualizingComplexBaseChange.lean, line 237](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelativeDualizingComplexBaseChange.lean#L237).
+**`AlgebraicGeometry.Space.RelativeDualizingComplex.baseChange_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelativeDualizingComplexBaseChange.lean, line 237](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelativeDualizingComplexBaseChange.lean#L237).
 
 > **Stacks 0E6C.** Let `g' ≫ f = f' ≫ g` be a cartesian square of algebraic spaces over `S`
 > with `f : X ⟶ Y` proper, flat and of finite presentation, and let `(ω, τ)` be a relative
@@ -143,4 +143,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 86.9, Tag 0E5W](https://stacks.math.columbia.edu/tag/0E5W)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

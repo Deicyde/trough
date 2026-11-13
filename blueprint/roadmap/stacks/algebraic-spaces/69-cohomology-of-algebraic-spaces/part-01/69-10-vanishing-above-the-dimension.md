@@ -8,13 +8,13 @@ proof: formalized
 
 # 69.10 Vanishing above the dimension
 
-Section 69.10 of the Stacks Project, [Tag 0A4Q](https://stacks.math.columbia.edu/tag/0A4Q). 1 tag here is carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 69.10 of the Stacks Project, [Tag 0A4Q](https://stacks.math.columbia.edu/tag/0A4Q). 1 tag here is carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0A4R, a lemma
 
 [Tag 0A4R](https://stacks.math.columbia.edu/tag/0A4R) in the Stacks Project.
 
-**`AlgebraicGeometry.subsingleton_smallEtaleCohomology_quasicoherent_of_topologicalKrullDim_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/VanishingAboveTheDimension.lean, line 261](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/VanishingAboveTheDimension.lean#L261). The attribute's comment: “clause (1) for a scheme: for a quasi-compact quasi-separated scheme X of dimension at most d and a quasi-coherent module F, the small étale cohomology of the associated abelian sheaf Fᵃ vanishes above degree d”.
+**`AlgebraicGeometry.subsingleton_smallEtaleCohomology_quasicoherent_of_topologicalKrullDim_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/VanishingAboveTheDimension.lean, line 261](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/VanishingAboveTheDimension.lean#L261). The attribute's comment: “clause (1) for a scheme: for a quasi-compact quasi-separated scheme X of dimension at most d and a quasi-coherent module F, the small étale cohomology of the associated abelian sheaf Fᵃ vanishes above degree d”.
 
 > **Stacks 0A4R, clause (1), for a quasi-compact quasi-separated scheme.** Let `X` be a
 > quasi-compact quasi-separated scheme whose dimension — the Krull dimension of its underlying
@@ -40,7 +40,7 @@ theorem subsingleton_smallEtaleCohomology_quasicoherent_of_topologicalKrullDim_l
     Subsingleton (Sheaf.H' (smallEtaleAssociatedSheaf X F) q ((opensToEtale X).obj ⊤))
 ```
 
-**`AlgebraicGeometry.Space.isZero_rightDerived_globalSectionsFunctor_of_dimension_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/VanishingAboveTheDimensionQcqs.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/VanishingAboveTheDimensionQcqs.lean#L120). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.Space.isZero_rightDerived_globalSectionsFunctor_of_dimension_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/VanishingAboveTheDimensionQcqs.lean, line 120](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/VanishingAboveTheDimensionQcqs.lean#L120). The attribute's comment: “part (1)”.
 
 > **Stacks 0A4R, clause (1).**  Let `S` be a scheme and `X` a quasi-compact quasi-separated
 > algebraic space over `S` with `dim X ≤ d`, and let `F` be a quasi-coherent `𝒪_X`-module.  Then
@@ -66,7 +66,7 @@ theorem isZero_rightDerived_globalSectionsFunctor_of_dimension_le (B : BigFppfSi
       (smallEtaleRingedSite B S hS X.1 X.2).O)).rightDerived q).obj F)
 ```
 
-**`AlgebraicGeometry.Space.surjective_cohomologyRestriction_of_dimension_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/VanishingAboveTheDimensionQcqs.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/VanishingAboveTheDimensionQcqs.lean#L162). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.Space.surjective_cohomologyRestriction_of_dimension_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/VanishingAboveTheDimensionQcqs.lean, line 162](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/VanishingAboveTheDimensionQcqs.lean#L162). The attribute's comment: “part (2)”.
 
 > **Stacks 0A4R, clause (2).**  Let `S` be a scheme and `X` a quasi-compact quasi-separated
 > algebraic space over `S` with `dim X ≤ d`, and let `F` be a quasi-coherent `𝒪_X`-module.  Then
@@ -95,7 +95,7 @@ theorem surjective_cohomologyRestriction_of_dimension_le (B : BigFppfSite.{u})
       (cohomologyRestriction B S hS j (isEtale_of_isOpenImmersion B S hS hj) F d)
 ```
 
-**`AlgebraicGeometry.Space.isZero_rightDerived_globalSectionsAbRestrictionKer_of_dimension_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/VanishingAboveTheDimensionQcqs.lean, line 193](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/VanishingAboveTheDimensionQcqs.lean#L193). The attribute's comment: “part (3)”.
+**`AlgebraicGeometry.Space.isZero_rightDerived_globalSectionsAbRestrictionKer_of_dimension_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/VanishingAboveTheDimensionQcqs.lean, line 193](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/VanishingAboveTheDimensionQcqs.lean#L193). The attribute's comment: “part (3)”.
 
 > **Stacks 0A4R, clause (3).**  Let `S` be a scheme and `X` a quasi-compact quasi-separated
 > algebraic space over `S` with `dim X ≤ d`, and let `F` be a quasi-coherent `𝒪_X`-module.  Then
@@ -132,4 +132,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 69.10, Tag 0A4Q](https://stacks.math.columbia.edu/tag/0A4Q)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

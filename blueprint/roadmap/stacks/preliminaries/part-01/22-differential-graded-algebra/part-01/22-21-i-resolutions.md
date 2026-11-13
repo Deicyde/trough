@@ -8,13 +8,13 @@ proof: formalized
 
 # 22.21 I-resolutions
 
-Section 22.21 of the Stacks Project, [Tag 09KQ](https://stacks.math.columbia.edu/tag/09KQ). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 22.21 of the Stacks Project, [Tag 09KQ](https://stacks.math.columbia.edu/tag/09KQ). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 09KR, a lemma
 
 [Tag 09KR](https://stacks.math.columbia.edu/tag/09KR) in the Stacks Project.
 
-**`DifferentialGradedModule.exists_isAdmissibleShortExact_uliftProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DualTelescopeProduct.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DualTelescopeProduct.lean#L81).
+**`DifferentialGradedModule.exists_isAdmissibleShortExact_uliftProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DualTelescopeProduct.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/DualTelescopeProduct.lean#L81).
 
 > **Stacks 09KR.** *"Let `(A, d)` be a differential graded algebra. Let `I` be a differential
 > graded `A`-module. If `F_•` is a filtration as in property (I), then we obtain an admissible
@@ -50,7 +50,7 @@ theorem exists_isAdmissibleShortExact_uliftProduct {I : DifferentialGradedModule
 
 [Tag 09KS](https://stacks.math.columbia.edu/tag/09KS) in the Stacks Project.
 
-**`DifferentialGradedModule.rightOrthogonal_acyclic_of_propertyI`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/RightOrthogonalAcyclic.lean, line 266](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/RightOrthogonalAcyclic.lean#L266).
+**`DifferentialGradedModule.rightOrthogonal_acyclic_of_propertyI`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/RightOrthogonalAcyclic.lean, line 266](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/RightOrthogonalAcyclic.lean#L266).
 
 > **Stacks 09KS.** A right differential graded module with property (I) is orthogonal on the
 > right to the acyclic objects of the homotopy category: every morphism of `K(A, d)` from an
@@ -66,7 +66,7 @@ theorem rightOrthogonal_acyclic_of_propertyI {I : DifferentialGradedModule A}
 
 [Tag 09KT](https://stacks.math.columbia.edu/tag/09KT) in the Stacks Project.
 
-**`DifferentialGradedModule.exists_dual_injection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DualCover.lean, line 327](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DualCover.lean#L327).
+**`DifferentialGradedModule.exists_dual_injection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DualCover.lean, line 327](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/DualCover.lean#L327).
 
 > **Stacks 09KT.** Every right differential graded `A`-module `M` admits an injection `φ` into
 > the graded dual `I` of a direct sum of cells of left modules, such that
@@ -95,7 +95,7 @@ theorem exists_dual_injection (A : DifferentialGradedAlgebra R)
 
 [Tag 09KU](https://stacks.math.columbia.edu/tag/09KU) in the Stacks Project.
 
-**`DifferentialGradedModule.exists_propertyI_resolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/PropertyIResolutionExists.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/PropertyIResolutionExists.lean#L71).
+**`DifferentialGradedModule.exists_propertyI_resolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/PropertyIResolutionExists.lean, line 71](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/PropertyIResolutionExists.lean#L71).
 
 > **Property-(I) resolutions exist** (Tag 09KU). Every right differential graded module `M`
 > over a differential graded algebra `(A, d)` admits a quasi-isomorphism into a differential
@@ -121,4 +121,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 22.21, Tag 09KQ](https://stacks.math.columbia.edu/tag/09KQ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 62.13 Action on chow groups
 
-Section 62.13 of the Stacks Project, [Tag 0H6C](https://stacks.math.columbia.edu/tag/0H6C). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 62.13 of the Stacks Project, [Tag 0H6C](https://stacks.math.columbia.edu/tag/0H6C). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0H6D, a lemma
 
 [Tag 0H6D](https://stacks.math.columbia.edu/tag/0H6D) in the Stacks Project.
 
-**`Stacks.Chow.properPushforward_gysinCycleMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GysinTrivialRestrictionPushforward.lean, line 367](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/GysinTrivialRestrictionPushforward.lean#L367).
+**`Stacks.Chow.properPushforward_gysinCycleMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GysinTrivialRestrictionPushforward.lean, line 368](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/GysinTrivialRestrictionPushforward.lean#L368).
 
 > **Stacks 0H6D.** The Gysin map on cycles of Stacks 0B6Z commutes with proper pushforward:
 > in the cartesian square of Stacks 0B6Y
@@ -49,7 +49,7 @@ theorem properPushforward_gysinCycleMap
 
 [Tag 0H6E](https://stacks.math.columbia.edu/tag/0H6E) in the Stacks Project.
 
-**`Stacks.Chow.cap_baseChangeFamily_gysinCycleMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/GysinAction.lean, line 582](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/GysinAction.lean#L582).
+**`Stacks.Chow.cap_baseChangeFamily_gysinCycleMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/GysinAction.lean, line 582](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/GysinAction.lean#L582).
 
 > **Stacks Project, Tag 0H6E.** Let `(S, δ)` be as in Section 0H65, let `p : X ⟶ Y` be a
 > morphism of schemes locally of finite type over `S`, let `r ≥ 0` and let `α ∈ z(X/Y, r)` be a
@@ -104,7 +104,7 @@ theorem cap_baseChangeFamily_gysinCycleMap (C : ChowSituation.{u}) {X Y : Scheme
 
 [Tag 0H6F](https://stacks.math.columbia.edu/tag/0H6F) in the Stacks Project.
 
-**`Stacks.Chow.exists_bivariantClass_cap_mk_eq_relativeCycleCap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/RelativeCycleGysin.lean, line 649](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/RelativeCycleGysin.lean#L649).
+**`Stacks.Chow.exists_bivariantClass_cap_mk_eq_relativeCycleCap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/RelativeCycleGysin.lean, line 649](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/RelativeCycleGysin.lean#L649).
 
 > **Stacks Project, Proposition 0H6F.** Let `(S, δ)` be as in Section 0H65, let `p : X ⟶ Y` be
 > a morphism of schemes locally of finite type over `S`, let `r ≥ 0` and let `α ∈ z(X/Y, r)` be a
@@ -129,7 +129,7 @@ theorem exists_bivariantClass_cap_mk_eq_relativeCycleCap :
 
 [Tag 0H6G](https://stacks.math.columbia.edu/tag/0H6G) in the Stacks Project.
 
-**`Stacks.Chow.CompatibleCycleCapRule.exists_relativeCycle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/CycleCapRuleRelative.lean, line 185](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/CycleCapRuleRelative.lean#L185).
+**`Stacks.Chow.CompatibleCycleCapRule.exists_relativeCycle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/CycleCapRuleRelative.lean, line 185](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/CycleCapRuleRelative.lean#L185).
 
 > **Stacks Project, Tag 0H6G.** Let `(S, δ)` be as in Section 0H65, let `p : X ⟶ Y` be a morphism
 > of schemes locally of finite type over `S` and let `r ≥ 0`. Let `c` be a rule that to every
@@ -155,4 +155,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 62.13, Tag 0H6C](https://stacks.math.columbia.edu/tag/0H6C)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

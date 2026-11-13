@@ -8,13 +8,13 @@ proof: formalized
 
 # 22.30 Bimodules and internal hom
 
-Section 22.30 of the Stacks Project, [Tag 0FQP](https://stacks.math.columbia.edu/tag/0FQP). 3 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 22.30 of the Stacks Project, [Tag 0FQP](https://stacks.math.columbia.edu/tag/0FQP). 3 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0FQQ, a lemma
 
 [Tag 0FQQ](https://stacks.math.columbia.edu/tag/0FQQ) in the Stacks Project.
 
-**`DifferentialGradedModule.homHomotopyDescent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedRestriction.lean, line 561](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedRestriction.lean#L561). The attribute's comment: “descent of the functor on DG modules”.
+**`DifferentialGradedModule.homHomotopyDescent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedRestriction.lean, line 561](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedRestriction.lean#L561). The attribute's comment: “descent of the functor on DG modules”.
 
 > The internal hom functor on homotopy categories is the descent of the internal hom functor on
 > differential graded modules: both send `P` to the chosen presentation of `Hom^•_B(N, P)` and a
@@ -26,7 +26,7 @@ def homHomotopyDescent (N : DifferentialGradedModule B) (L : BimoduleStructure A
       homModuleFunctor A B N L ⋙ toHomotopyCategory A
 ```
 
-**`DifferentialGradedModule.homDGFunctorData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/InternalHomFunctor.lean, line 315](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/InternalHomFunctor.lean#L315). The attribute's comment: “the DG functor”.
+**`DifferentialGradedModule.homDGFunctorData`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/InternalHomFunctor.lean, line 315](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/InternalHomFunctor.lean#L315). The attribute's comment: “the DG functor”.
 
 > **Stacks 0FQQ.** The internal hom functor of a differential graded bimodule, as a functor of
 > differential graded categories.
@@ -35,7 +35,7 @@ def homHomotopyDescent (N : DifferentialGradedModule B) (L : BimoduleStructure A
 noncomputable def homDGFunctorData : HomDGFunctorData A B N L
 ```
 
-**`DifferentialGradedModule.homModuleFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/InternalHomFunctor.lean, line 477](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/InternalHomFunctor.lean#L477). The attribute's comment: “the functor on DG modules”.
+**`DifferentialGradedModule.homModuleFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/InternalHomFunctor.lean, line 477](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/InternalHomFunctor.lean#L477). The attribute's comment: “the functor on DG modules”.
 
 > **Stacks 0FQQ.** The internal hom functor on the categories of differential graded
 > modules.
@@ -45,7 +45,7 @@ noncomputable def homModuleFunctor :
     DifferentialGradedModule B ⥤ DifferentialGradedModule A
 ```
 
-**`DifferentialGradedModule.homHomotopyCategoryFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/InternalHomFunctor.lean, line 485](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/InternalHomFunctor.lean#L485). The attribute's comment: “the functor on homotopy categories”.
+**`DifferentialGradedModule.homHomotopyCategoryFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/InternalHomFunctor.lean, line 485](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/InternalHomFunctor.lean#L485). The attribute's comment: “the functor on homotopy categories”.
 
 > **Stacks 0FQQ.** The internal hom functor on the homotopy categories of differential graded
 > modules.
@@ -59,7 +59,7 @@ noncomputable def homHomotopyCategoryFunctor :
 
 [Tag 0FQR](https://stacks.math.columbia.edu/tag/0FQR) in the Stacks Project.
 
-**`DifferentialGradedModule.shiftHomIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/BimoduleHomShift.lean, line 1116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DGA/BimoduleHomShift.lean#L1116).
+**`DifferentialGradedModule.shiftHomIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DGA/BimoduleHomShift.lean, line 1116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DGA/BimoduleHomShift.lean#L1116).
 
 > The canonical, sign-free isomorphism
 > `Hom_B^gr(N,P)[k] ≅ Hom_B^gr(N,P[k])` of right DG `A`-modules.
@@ -79,7 +79,7 @@ public theorem shiftHomIso (k : ℤ) :
               simpa only [DifferentialGradedModule.shift_grading] using f.property⟩).1 x
 ```
 
-**`DifferentialGradedModule.shiftHomModuleIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/InternalHom.lean, line 515](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/InternalHom.lean#L515).
+**`DifferentialGradedModule.shiftHomModuleIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/InternalHom.lean, line 515](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/InternalHom.lean#L515).
 
 > **Stacks 0FQR.** The canonical, sign-free isomorphism `Hom^•_B(N, P)[k] ≅ Hom^•_B(N, P[k])`
 > of right differential graded `A`-modules. The displayed equation says that the homogeneous maps
@@ -101,7 +101,7 @@ theorem shiftHomModuleIso (k : ℤ) :
 
 [Tag 09LN](https://stacks.math.columbia.edu/tag/09LN) in the Stacks Project.
 
-**`Bimod.tensorHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Bimod/TensorHom.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Bimod/TensorHom.lean#L132). The attribute's comment: “ordinary\_tensor\_hom”. References: SGA 4 IV (12.14), “punctual topos”.
+**`Bimod.tensorHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Bimod/TensorHom.lean, line 132](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Bimod/TensorHom.lean#L132). The attribute's comment: “ordinary\_tensor\_hom”. References: SGA 4 IV (12.14), “punctual topos”.
 
 > **Stacks 09LN, ordinary tensor--hom.**  For a right `A`-module `M`, an `(A,B)`-bimodule
 > `N`, and a right `B`-module `P`, `B`-linear maps from `M ⊗_A N` to `P` are canonically the
@@ -114,7 +114,7 @@ public noncomputable def tensorHomEquiv {A B : Mon (ModuleCat.{u} R)}
     rightLinearMaps (M.tensorBimod N) P ≃ₗ[R] balancedRightLinearMaps M N P
 ```
 
-**`Bimod.tensorHomEquiv_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Bimod/TensorHom.lean, line 254](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Bimod/TensorHom.lean#L254). The attribute's comment: “ordinary\_tensor\_hom”.
+**`Bimod.tensorHomEquiv_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Bimod/TensorHom.lean, line 248](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Bimod/TensorHom.lean#L248). The attribute's comment: “ordinary\_tensor\_hom”.
 
 > The forward tensor-hom correspondence is evaluation on pure tensors.
 
@@ -129,7 +129,7 @@ public theorem tensorHomEquiv_apply {A B : Mon (ModuleCat.{u} R)}
         (m ⊗ₜ[R] n))
 ```
 
-**`DifferentialGraded.Bimodule.tensorCompFunctor_adj_homModuleFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/BimoduleTensorHom.lean, line 535](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/BimoduleTensorHom.lean#L535). The attribute's comment: “the differential graded case in degree zero”.
+**`DifferentialGraded.Bimodule.tensorCompFunctor_adj_homModuleFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/BimoduleTensorHom.lean, line 535](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/BimoduleTensorHom.lean#L535). The attribute's comment: “the differential graded case in degree zero”.
 
 > **Stacks 09LN, the differential graded case.** Tensoring with a differential graded
 > `(A, B)`-bimodule `N` is left adjoint to the internal hom out of `N`, as functors between the
@@ -146,7 +146,7 @@ def tensorCompFunctor_adj_homModuleFunctor (N : Bimodule A B) :
     tensorCompFunctor N ⊣ homModuleFunctor A B N.rightModule N.leftAction
 ```
 
-**`DifferentialGraded.Bimodule.tensorHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/BimoduleTensorHom.lean, line 550](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/BimoduleTensorHom.lean#L550). The attribute's comment: “the differential graded case in degree zero, as a bijection”.
+**`DifferentialGraded.Bimodule.tensorHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/BimoduleTensorHom.lean, line 550](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/BimoduleTensorHom.lean#L550). The attribute's comment: “the differential graded case in degree zero, as a bijection”.
 
 > **Stacks 09LN, the differential graded case**, as the bijection of morphism groups
 > `Hom_{Mod^{dg}_{(B,d)}}(M ⊗_A N, P) = Hom_{Mod^{dg}_{(A,d)}}(M, Hom^•_B(N, P))`. It is natural
@@ -160,7 +160,7 @@ def tensorHomEquiv (N : Bimodule A B) (M : DifferentialGradedModule A)
       (M ⟶ (homModuleFunctor A B N.rightModule N.leftAction).obj P)
 ```
 
-**`DifferentialGraded.Bimodule.tensorHomotopyFunctor_adj_homHomotopyCategoryFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/BimoduleTensorHom.lean, line 569](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/BimoduleTensorHom.lean#L569). The attribute's comment: “the differential graded case in degree zero, on the homotopy categories”. References: SGA 5 IIIB (5.2), “partial”.
+**`DifferentialGraded.Bimodule.tensorHomotopyFunctor_adj_homHomotopyCategoryFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/BimoduleTensorHom.lean, line 569](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/BimoduleTensorHom.lean#L569). The attribute's comment: “the differential graded case in degree zero, on the homotopy categories”. References: SGA 5 IIIB (5.2), “partial”.
 
 > **Stacks 09LN for differential graded modules, on the homotopy categories.** Tensoring with a
 > differential graded `(A, B)`-bimodule `N` is left adjoint to the internal hom out of `N` as
@@ -177,7 +177,7 @@ def tensorHomotopyFunctor_adj_homHomotopyCategoryFunctor (N : Bimodule A B) :
     tensorHomotopyFunctor N ⊣ homHomotopyCategoryFunctor A B N.rightModule N.leftAction
 ```
 
-**`DifferentialGraded.Bimodule.exists_tensorHomComplexIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/BimoduleTensorHom.lean, line 981](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/BimoduleTensorHom.lean#L981). The attribute's comment: “the differential graded case in every degree, as an isomorphism of Hom complexes”.
+**`DifferentialGraded.Bimodule.exists_tensorHomComplexIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/BimoduleTensorHom.lean, line 981](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/BimoduleTensorHom.lean#L981). The attribute's comment: “the differential graded case in every degree, as an isomorphism of Hom complexes”.
 
 > **Stacks 09LN, in every degree.** For a right differential graded `A`-module `M`, a
 > differential graded `(A, B)`-bimodule `N` and a right differential graded `B`-module `P` the two
@@ -221,4 +221,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 22.30, Tag 0FQP](https://stacks.math.columbia.edu/tag/0FQP)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

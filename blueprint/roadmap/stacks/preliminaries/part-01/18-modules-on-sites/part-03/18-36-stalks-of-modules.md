@@ -1,91 +1,62 @@
 ---
 declaration: section
 origin: cited
-lean: stalkSheafificationComparison_isIso, sheafStalk_preservesFiniteLimits, sheafStalk_preservesColimits, sheafStalk_preservesFiniteColimits, presheafStalk_preservesFiniteLimits, presheafStalk_preservesColimits, presheafStalk_preservesFiniteColimits, Stacks.exactFunctor_abelianSheafFiber
+lean: CategoryTheory.Precoverage.Point.isIso_stalkSheafificationComparison, CategoryTheory.Precoverage.Point.sheafStalk_exact_preservesColimits, CategoryTheory.Precoverage.Point.presheafStalk_exact_preservesColimits, Stacks.exactFunctor_abelianSheafFiber, Stacks.exactFunctor_abelianPresheafFiber, Stacks.isIso_abelianPresheafFiber_map_toSheafify, CategoryTheory.GrothendieckTopology.SitePoint.exactFunctor_abelianSheafStalk, CategoryTheory.GrothendieckTopology.SitePoint.exactFunctor_abelianPresheafStalk
 statement: formalized
 proof: formalized
 ---
 
 # 18.36 Stalks of modules
 
-Section 18.36 of the Stacks Project, [Tag 04EM](https://stacks.math.columbia.edu/tag/04EM). 4 tags here are carried by 19 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 18.36 of the Stacks Project, [Tag 04EM](https://stacks.math.columbia.edu/tag/04EM). 4 tags here are carried by 18 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 04EN, a lemma
 
 [Tag 04EN](https://stacks.math.columbia.edu/tag/04EN) in the Stacks Project.
 
-**`stalkSheafificationComparison_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/StalkPreservesFiniteLimits.lean, line 305](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Point/StalkPreservesFiniteLimits.lean#L305). The attribute's comment: “(1)”. References: SGA 4 IV (6.8.2), “formula (6.8.4)”.
+**`CategoryTheory.Precoverage.Point.isIso_stalkSheafificationComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/PrecoveragePoint.lean, line 194](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Point/PrecoveragePoint.lean#L194). The attribute's comment: “(1), for a point of a site in the source's sense (Tag 00Y5)”.
 
-> The comparison natural transformation `stalkSheafificationComparison p`, from the stalk at
-> `p` of a presheaf of sets to the stalk at `p` of its sheafification, is an isomorphism.
+> **Stacks 04EN (1).** For a point `p` of the site `(C, K)`, the canonical map `F_p → (F^#)_p`
+> from the stalk of a presheaf of sets to the stalk of its sheafification is an isomorphism,
+> naturally in `F`.
 
 ```lean
-theorem stalkSheafificationComparison_isIso [HasWeakSheafify J (Type w)] :
-    IsIso (stalkSheafificationComparison.{w} p)
+theorem isIso_stalkSheafificationComparison : IsIso p.stalkSheafificationComparison
 ```
 
-**`sheafStalk_preservesFiniteLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/StalkPreservesFiniteLimits.lean, line 323](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Point/StalkPreservesFiniteLimits.lean#L323). The attribute's comment: “(2)”. References: SGA 4 VIII (3.5), “more general”.
+**`CategoryTheory.Precoverage.Point.sheafStalk_exact_preservesColimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/PrecoveragePoint.lean, line 230](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Point/PrecoveragePoint.lean#L230). The attribute's comment: “(2), for a point of a site in the source's sense (Tag 00Y5)”.
 
-> The sheaf stalk functor at `p` preserves finite limits.
+> **Stacks 04EN (2).** For a point `p` of the site `(C, K)`, the stalk functor
+> `Sh(C) ⥤ Sets`, `F ↦ F_p`, is exact (it commutes with finite limits and finite colimits) and
+> commutes with arbitrary colimits.
 
 ```lean
-theorem sheafStalk_preservesFiniteLimits [HasWeakSheafify J (Type w)] :
-    PreservesFiniteLimits (p.sheafFiber (A := Type w))
+theorem sheafStalk_exact_preservesColimits :
+    (PreservesFiniteLimits p.sheafStalk ∧ PreservesFiniteColimits p.sheafStalk) ∧
+      PreservesColimitsOfSize.{w', w''} p.sheafStalk
 ```
 
-**`sheafStalk_preservesColimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/StalkPreservesFiniteLimits.lean, line 333](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Point/StalkPreservesFiniteLimits.lean#L333). The attribute's comment: “(2)”. References: SGA 4 VIII (3.5), “more general”.
+**`CategoryTheory.Precoverage.Point.presheafStalk_exact_preservesColimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/PrecoveragePoint.lean, line 240](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Point/PrecoveragePoint.lean#L240). The attribute's comment: “(3), for a point of a site in the source's sense (Tag 00Y5)”.
 
-> The sheaf stalk functor at `p` preserves all small colimits.
-
-```lean
-theorem sheafStalk_preservesColimits [HasWeakSheafify J (Type w)] :
-    PreservesColimits (p.sheafFiber (A := Type w))
-```
-
-**`sheafStalk_preservesFiniteColimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/StalkPreservesFiniteLimits.lean, line 338](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Point/StalkPreservesFiniteLimits.lean#L338). The attribute's comment: “(2)”. References: SGA 4 VIII (3.5), “Clause a)”.
-
-> The sheaf stalk functor at `p` preserves finite colimits.
+> **Stacks 04EN (3).** For a point `p` of the site `(C, K)`, the stalk functor
+> `PSh(C) ⥤ Sets`, `F ↦ F_p`, is exact (it commutes with finite limits and finite colimits) and
+> commutes with arbitrary colimits.
 
 ```lean
-theorem sheafStalk_preservesFiniteColimits [HasWeakSheafify J (Type w)] :
-    PreservesFiniteColimits (p.sheafFiber (A := Type w))
-```
-
-**`presheafStalk_preservesFiniteLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/StalkPreservesFiniteLimits.lean, line 348](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Point/StalkPreservesFiniteLimits.lean#L348). The attribute's comment: “(3)”. References: SGA 4 VIII (3.5), “a) finite limits”; SGA 4 IV (6.8.6), “left-exactness clause of”; SGA 4 IV (6.8.7), “(iii)⇒(i), special case”.
-
-> The presheaf stalk functor at `p` preserves finite limits.
-
-```lean
-theorem presheafStalk_preservesFiniteLimits :
-    PreservesFiniteLimits (p.presheafFiber (A := Type w))
-```
-
-**`presheafStalk_preservesColimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/StalkPreservesFiniteLimits.lean, line 354](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Point/StalkPreservesFiniteLimits.lean#L354). The attribute's comment: “(3)”. References: SGA 4 VIII (3.5), “a) colimits”; SGA 4 IV (6.8.6), “partial”.
-
-> The presheaf stalk functor at `p` preserves all small colimits.
-
-```lean
-theorem presheafStalk_preservesColimits :
-    PreservesColimits (p.presheafFiber (A := Type w))
-```
-
-**`presheafStalk_preservesFiniteColimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/StalkPreservesFiniteLimits.lean, line 359](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Point/StalkPreservesFiniteLimits.lean#L359). The attribute's comment: “(3)”.
-
-> The presheaf stalk functor at `p` preserves finite colimits.
-
-```lean
-theorem presheafStalk_preservesFiniteColimits :
-    PreservesFiniteColimits (p.presheafFiber (A := Type w))
+theorem presheafStalk_exact_preservesColimits :
+    (PreservesFiniteLimits p.presheafStalk ∧ PreservesFiniteColimits p.presheafStalk) ∧
+      PreservesColimitsOfSize.{w', w''} p.presheafStalk
 ```
 
 ## Tag 04EP, a lemma
 
 [Tag 04EP](https://stacks.math.columbia.edu/tag/04EP) in the Stacks Project.
 
-**`Stacks.exactFunctor_abelianSheafFiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/AbelianStalkExact.lean, line 54](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Point/AbelianStalkExact.lean#L54). The attribute's comment: “part (1)”.
+**`Stacks.exactFunctor_abelianSheafFiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/AbelianStalkExact.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Point/AbelianStalkExact.lean#L62). The attribute's comment: “(1) for Mathlib's points of a site (SGA 4 IV 6.3 fibre functors)”.
 
-> **Stacks Project, Tag 04EP, part (1).** Taking the stalk at a point of a site is an exact
-> functor from abelian sheaves to abelian groups.
+> **Stacks Project, Tag 04EP, part (1).** Taking the stalk at a point of a site in
+> Mathlib's sense (`GrothendieckTopology.Point`) is an exact functor from abelian sheaves to
+> abelian groups.
 
 ```lean
 theorem exactFunctor_abelianSheafFiber :
@@ -93,10 +64,11 @@ theorem exactFunctor_abelianSheafFiber :
       (Φ.sheafFiber (A := AddCommGrpCat.{w}))
 ```
 
-**`Stacks.exactFunctor_abelianPresheafFiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/AbelianStalkExact.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Point/AbelianStalkExact.lean#L62). The attribute's comment: “part (2)”.
+**`Stacks.exactFunctor_abelianPresheafFiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/AbelianStalkExact.lean, line 71](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Point/AbelianStalkExact.lean#L71). The attribute's comment: “(2) for Mathlib's points of a site (SGA 4 IV 6.3 fibre functors)”.
 
-> **Stacks Project, Tag 04EP, part (2).** Taking the stalk at a point of a site is an exact
-> functor from abelian presheaves to abelian groups.
+> **Stacks Project, Tag 04EP, part (2).** Taking the stalk at a point of a site in
+> Mathlib's sense (`GrothendieckTopology.Point`) is an exact functor from abelian presheaves to
+> abelian groups.
 
 ```lean
 theorem exactFunctor_abelianPresheafFiber :
@@ -104,7 +76,7 @@ theorem exactFunctor_abelianPresheafFiber :
       (Φ.presheafFiber (A := AddCommGrpCat.{w}))
 ```
 
-**`Stacks.isIso_abelianPresheafFiber_map_toSheafify`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/AbelianStalkExact.lean, line 73](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Point/AbelianStalkExact.lean#L73). The attribute's comment: “part (3)”.
+**`Stacks.isIso_abelianPresheafFiber_map_toSheafify`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/AbelianStalkExact.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Point/AbelianStalkExact.lean#L82). The attribute's comment: “(3) for Mathlib's points of a site (SGA 4 IV 6.3 fibre functors)”.
 
 > **Stacks Project, Tag 04EP, part (3).** Sheafification of an abelian presheaf `F` does not
 > change its stalk: the stalk at `Φ` of the canonical map `F ⟶ F^#` is an isomorphism
@@ -116,11 +88,43 @@ theorem isIso_abelianPresheafFiber_map_toSheafify [HasWeakSheafify J AddCommGrpC
     IsIso ((Φ.presheafFiber (A := AddCommGrpCat.{w})).map (toSheafify J F))
 ```
 
+**`CategoryTheory.GrothendieckTopology.SitePoint.exactFunctor_abelianSheafStalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/SitePoint.lean, line 312](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Point/SitePoint.lean#L312). The attribute's comment: “(1)”.
+
+> **Stacks 04EP, part (1).** For a point `p` of a site, the stalk functor
+> `Ab(C) ⥤ Ab`, `F ↦ F_p`, is exact.
+
+```lean
+theorem exactFunctor_abelianSheafStalk :
+    exactFunctor (Sheaf J AddCommGrpCat.{w}) AddCommGrpCat.{w}
+      (sheafToPresheaf J AddCommGrpCat.{w} ⋙ elementColimit p.fiber AddCommGrpCat.{w})
+```
+
+**`CategoryTheory.GrothendieckTopology.SitePoint.exactFunctor_abelianPresheafStalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/SitePoint.lean, line 320](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Point/SitePoint.lean#L320). The attribute's comment: “(2)”.
+
+> **Stacks 04EP, part (2).** For a point `p` of a site, the stalk functor
+> `PAb(C) ⥤ Ab`, `F ↦ F_p`, is exact.
+
+```lean
+theorem exactFunctor_abelianPresheafStalk :
+    exactFunctor (Cᵒᵖ ⥤ AddCommGrpCat.{w}) AddCommGrpCat.{w}
+      (elementColimit p.fiber AddCommGrpCat.{w})
+```
+
+**`CategoryTheory.GrothendieckTopology.SitePoint.isIso_abelianPresheafStalk_map_toSheafify`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/SitePoint.lean, line 328](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Point/SitePoint.lean#L328). The attribute's comment: “(3)”.
+
+> **Stacks 04EP, part (3).** For a point `p` of a site and an abelian presheaf `F`, the stalk
+> at `p` of the canonical map `F ⟶ F^#` is an isomorphism `F_p ≅ (F^#)_p`.
+
+```lean
+theorem isIso_abelianPresheafStalk_map_toSheafify (F : Cᵒᵖ ⥤ AddCommGrpCat.{w}) :
+    IsIso ((elementColimit p.fiber AddCommGrpCat.{w}).map (CategoryTheory.toSheafify J F))
+```
+
 ## Tag 04EQ, a lemma
 
 [Tag 04EQ](https://stacks.math.columbia.edu/tag/04EQ) in the Stacks Project.
 
-**`Stacks.exactFunctor_presheafModuleFiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/ModuleStalkPresheafExact.lean, line 54](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Point/ModuleStalkPresheafExact.lean#L54). The attribute's comment: “part (2)”.
+**`Stacks.exactFunctor_presheafModuleFiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/ModuleStalkPresheafExact.lean, line 54](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Point/ModuleStalkPresheafExact.lean#L54). The attribute's comment: “part (2)”.
 
 > **Stacks 04EQ, part (2).** Taking the stalk at a point of a site is an exact functor from
 > presheaves of `R`-modules to modules over the stalk of `R`.
@@ -132,7 +136,7 @@ theorem exactFunctor_presheafModuleFiber :
       (presheafModuleFiber Φ R)
 ```
 
-**`Stacks.exactFunctor_sheafModuleFiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/ModuleStalkSheafExact.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Point/ModuleStalkSheafExact.lean#L63). The attribute's comment: “part (1)”.
+**`Stacks.exactFunctor_sheafModuleFiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/ModuleStalkSheafExact.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Point/ModuleStalkSheafExact.lean#L63). The attribute's comment: “part (1)”.
 
 > **Stacks Project, Tag 04EQ, part (1).** Taking the stalk at a point of a site is an exact
 > functor from sheaves of `R`-modules to modules over the stalk of `R`.
@@ -144,7 +148,7 @@ theorem exactFunctor_sheafModuleFiber :
       (sheafModuleFiber Φ R)
 ```
 
-**`Stacks.isIso_moduleFiberSheafificationComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/ModuleStalkSheafExact.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Point/ModuleStalkSheafExact.lean#L113). The attribute's comment: “part (3)”.
+**`Stacks.isIso_moduleFiberSheafificationComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/ModuleStalkSheafExact.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Point/ModuleStalkSheafExact.lean#L113). The attribute's comment: “part (3)”.
 
 > **Stacks Project, Tag 04EQ, part (3).** Sheafification of a presheaf of modules does not
 > change its module-valued stalk.
@@ -158,7 +162,7 @@ theorem isIso_moduleFiberSheafificationComparison :
 
 [Tag 05V5](https://stacks.math.columbia.edu/tag/05V5) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedToposHom.pullbackModulesSquareIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/RingedToposPullbackModulesComp.lean, line 140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/RingedToposPullbackModulesComp.lean#L140). The attribute's comment: “the formula, for a commutative square of morphisms of ringed topoi; the square over a point `p` and the point `q = f ∘ p` is not constructed”.
+**`AlgebraicGeometry.RingedToposHom.pullbackModulesSquareIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/RingedToposPullbackModulesComp.lean, line 141](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/RingedToposPullbackModulesComp.lean#L141). The attribute's comment: “the formula, for a commutative square of morphisms of ringed topoi; the square over a point `p` and the point `q = f ∘ p` is not constructed”.
 
 > **The formula of Stacks 05V5.** Let
 >
@@ -196,7 +200,7 @@ def pullbackModulesSquareIso {P : RingedTopos.{v, u, w}} {Q : RingedTopos.{v', u
       ρ.toModulesHom.pullbackModules ⋙ γ.toModulesHom.pullbackModules
 ```
 
-**`Stacks.Sheaves.StalkPullback.pointStalkFunctorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/StalkPullbackAtAPoint.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/StalkPullbackAtAPoint.lean#L124). The attribute's comment: “the formula `(f^*𝓕)_p ≅ 𝓕_q ⊗_{𝒪'_q} 𝒪_p`, naturally in `𝓕`, for an arbitrary morphism of ringed topoi and a point `p` of the source site, with `q = f ∘ p` built from the morphism and the point by Stacks 00YA”.
+**`Stacks.Sheaves.StalkPullback.pointStalkFunctorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/StalkPullbackAtAPoint.lean, line 124](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/StalkPullbackAtAPoint.lean#L124). The attribute's comment: “the formula `(f^*𝓕)_p ≅ 𝓕_q ⊗_{𝒪'_q} 𝒪_p`, naturally in `𝓕`, for an arbitrary morphism of ringed topoi and a point `p` of the source site, with `q = f ∘ p` built from the morphism and the point by Stacks 00YA”.
 
 > **Stacks 05V5**, for a morphism of ringed topoi `f : (Sh(C), 𝒪) ⟶ (Sh(D), 𝒪')` and a point
 > `Φ` of the source site `C`: the stalk at `Φ` of the pullback of a sheaf of `𝒪'`-modules is the
@@ -213,7 +217,7 @@ def pointStalkFunctorIso :
         ModuleCat.extendScalars (pointStalkRingMap f Φ)
 ```
 
-**`Stacks.Sheaves.StalkPullback.toposPointStalkFunctorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/StalkPullbackAtAPoint.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/StalkPullbackAtAPoint.lean#L176). The attribute's comment: “the formula `(f^*𝓕)_p ≅ 𝓕_q ⊗_{𝒪'_q} 𝒪_p`, naturally in `𝓕`, for an arbitrary morphism of ringed topoi and a point `p` of the source topos `Sh(C)`, with `q = f ∘ p` built from the morphism and the point by Stacks 00YA”.
+**`Stacks.Sheaves.StalkPullback.toposPointStalkFunctorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/StalkPullbackAtAPoint.lean, line 176](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/StalkPullbackAtAPoint.lean#L176). The attribute's comment: “the formula `(f^*𝓕)_p ≅ 𝓕_q ⊗_{𝒪'_q} 𝒪_p`, naturally in `𝓕`, for an arbitrary morphism of ringed topoi and a point `p` of the source topos `Sh(C)`, with `q = f ∘ p` built from the morphism and the point by Stacks 00YA”.
 
 > **Stacks 05V5**, for a morphism of ringed topoi and a point `p` of the source *topos*
 > `Sh(C)`: the stalk at `p` of the pullback of a sheaf of `𝒪'`-modules is the extension of scalars
@@ -230,7 +234,7 @@ def toposPointStalkFunctorIso :
         ModuleCat.extendScalars (toposPointStalkRingMap f p)
 ```
 
-**`Stacks.Sheaves.StalkPullback.stalkFunctorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/StalkPullbackAtAPointPair.lean, line 375](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/StalkPullbackAtAPointPair.lean#L375). The attribute's comment: “the formula `(f^*G)_Φ ≅ G_Ψ ⊗_{O'_Ψ} O_Φ`, naturally in the `O'`-module `G`, for a morphism of ringed topoi together with a point `Ψ` of the target site whose stalk functor on sheaves of sets is the inverse image followed by the stalk functor at `Φ`”.
+**`Stacks.Sheaves.StalkPullback.stalkFunctorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/StalkPullbackAtAPointPair.lean, line 375](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/StalkPullbackAtAPointPair.lean#L375). The attribute's comment: “the formula `(f^*G)_Φ ≅ G_Ψ ⊗_{O'_Ψ} O_Φ`, naturally in the `O'`-module `G`, for a morphism of ringed topoi together with a point `Ψ` of the target site whose stalk functor on sheaves of sets is the inverse image followed by the stalk functor at `Φ`”.
 
 > **Stacks 05V5 at a matched pair of points**, as a natural isomorphism of stalk functors:
 > the stalk at `Φ` of the pullback of a sheaf of `𝒪'`-modules is the extension of scalars along
@@ -248,7 +252,7 @@ def stalkFunctorIso :
         ModuleCat.extendScalars (stalkRingMap f Φ Ψ e)
 ```
 
-**`Stacks.Sheaves.DerivedPullback.KFlatPullbackMorphismOfSites.stalkFunctorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/StalkBaseChangeAtTheTargetPoint.lean, line 258](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/StalkBaseChangeAtTheTargetPoint.lean#L258). The attribute's comment: “the formula `(f^*F)_p ≅ F_q ⊗_{O'_q} O_p` at a point `p` of the source site, naturally in the `O'`-module `F`, with `q = f ∘ p` the point of the target site induced by `p`; for a morphism of ringed topoi whose underlying functor is a morphism of the underlying sites, at `RingedTopos.{u, u, u}`”. References: EGA 0 (4.3.1), “more general”.
+**`Stacks.Sheaves.DerivedPullback.KFlatPullbackMorphismOfSites.stalkFunctorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/StalkBaseChangeAtTheTargetPoint.lean, line 258](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/StalkBaseChangeAtTheTargetPoint.lean#L258). The attribute's comment: “the formula `(f^*F)_p ≅ F_q ⊗_{O'_q} O_p` at a point `p` of the source site, naturally in the `O'`-module `F`, with `q = f ∘ p` the point of the target site induced by `p`; for a morphism of ringed topoi whose underlying functor is a morphism of the underlying sites, at `RingedTopos.{u, u, u}`”. References: EGA 0 (4.3.1), “more general”.
 
 > **Stacks 05V5 at the point `Ψ` of the target site**, as a natural isomorphism of stalk
 > functors: the stalk at `Φ` of the pullback of a sheaf of `O'`-modules is the extension of
@@ -266,7 +270,7 @@ def stalkFunctorIso :
         ModuleCat.extendScalars (stalkRingMap f hu Φ)
 ```
 
-**`Stacks.Sheaves.DerivedPullback.StalkBaseChangeOfToposHom.stalkFunctorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/StalkBaseChangeOfToposHom.lean, line 305](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/StalkBaseChangeOfToposHom.lean#L305). The attribute's comment: “the formula `(f^*F)_p ≅ F_q ⊗_{O'_q} O_p` at a point `p` of the source site, naturally in the `O'`-module `F`, with `q = f ∘ p` the point of the target site induced by `p`; for an arbitrary morphism of ringed topoi, at `RingedTopos.{u, u, u}`”.
+**`Stacks.Sheaves.DerivedPullback.StalkBaseChangeOfToposHom.stalkFunctorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/StalkBaseChangeOfToposHom.lean, line 305](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedPullback/StalkBaseChangeOfToposHom.lean#L305). The attribute's comment: “the formula `(f^*F)_p ≅ F_q ⊗_{O'_q} O_p` at a point `p` of the source site, naturally in the `O'`-module `F`, with `q = f ∘ p` the point of the target site induced by `p`; for an arbitrary morphism of ringed topoi, at `RingedTopos.{u, u, u}`”.
 
 > **Stacks 05V5 at the point `Ψ` of the target site, for an arbitrary morphism of ringed
 > topoi**, as a natural isomorphism of stalk functors: the stalk at `Φ` of the pullback of a sheaf
@@ -291,4 +295,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 18.36, Tag 04EM](https://stacks.math.columbia.edu/tag/04EM)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

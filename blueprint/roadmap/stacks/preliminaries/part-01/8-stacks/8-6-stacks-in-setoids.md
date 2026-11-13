@@ -8,13 +8,13 @@ proof: formalized
 
 # 8.6 Stacks in setoids
 
-Section 8.6 of the Stacks Project, [Tag 042Y](https://stacks.math.columbia.edu/tag/042Y). 11 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 8.6 of the Stacks Project, [Tag 042Y](https://stacks.math.columbia.edu/tag/042Y). 11 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 042Z, a definition
 
 [Tag 042Z](https://stacks.math.columbia.edu/tag/042Z) in the Stacks Project.
 
-**`CategoryTheory.Functor.IsStackInSetoids`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/Setoid.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Stack/Setoid.lean#L91). The attribute's comment: “(1)”.
+**`CategoryTheory.Functor.IsStackInSetoids`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/Setoid.lean, line 91](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stack/Setoid.lean#L91). The attribute's comment: “(1)”.
 
 > **Stacks 042Z**.
 > A *stack in setoids* over the site `(𝒞, J)`: a stack over `𝒞` all of whose fibre categories are
@@ -24,7 +24,7 @@ Section 8.6 of the Stacks Project, [Tag 042Y](https://stacks.math.columbia.edu/t
 structure Functor.IsStackInSetoids (p : 𝒮 ⥤ 𝒞) (J : GrothendieckTopology 𝒞) : Prop
 ```
 
-**`CategoryTheory.Functor.IsStackInSets`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/Setoid.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Stack/Setoid.lean#L104). The attribute's comment: “(2)”.
+**`CategoryTheory.Functor.IsStackInSets`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/Setoid.lean, line 104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stack/Setoid.lean#L104). The attribute's comment: “(2)”.
 
 > **Stacks 042Z**.
 > A *stack in sets*, also called a *stack in discrete categories*, over the site `(𝒞, J)`: a stack
@@ -38,7 +38,7 @@ structure Functor.IsStackInSets (p : 𝒮 ⥤ 𝒞) (J : GrothendieckTopology �
 
 [Tag 0430](https://stacks.math.columbia.edu/tag/0430) in the Stacks Project.
 
-**`CategoryTheory.Functor.isStackInSets_iff_isSheaf_objPresheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/FiberedInSets.lean, line 272](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Stack/FiberedInSets.lean#L272).
+**`CategoryTheory.Functor.isStackInSets_iff_isSheaf_objPresheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/FiberedInSets.lean, line 272](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stack/FiberedInSets.lean#L272).
 
 > Let `(𝒞, J)` be a site. Under the equivalence of Categories, Stacks 02Y2 between presheaves of
 > sets on `𝒞` and categories fibred in sets over `𝒞`, the stacks in sets correspond precisely to the
@@ -54,7 +54,7 @@ theorem isStackInSets_iff_isSheaf_objPresheaf (J : GrothendieckTopology 𝒞) :
 
 [Tag 0432](https://stacks.math.columbia.edu/tag/0432) in the Stacks Project.
 
-**`CategoryTheory.BasedCategory.isStackInSetoids_iff_isStackInSets_of_equivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/SetoidToSets.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Stack/SetoidToSets.lean#L117).
+**`CategoryTheory.BasedCategory.isStackInSetoids_iff_isStackInSets_of_equivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/SetoidToSets.lean, line 117](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stack/SetoidToSets.lean#L117).
 
 > Let `(𝒞, J)` be a site, let `𝒳` be a category fibred in setoids over `𝒞`, and let `𝒴` be a
 > category fibred in sets equivalent to `𝒳` as a category over `𝒞`. Then `𝒳` is a stack in setoids if
@@ -68,7 +68,7 @@ theorem BasedCategory.isStackInSetoids_iff_isStackInSets_of_equivalence
     𝒳.p.IsStackInSetoids J ↔ 𝒴.p.IsStackInSets J
 ```
 
-**`CategoryTheory.BasedCategory.isStackInSetoids_iff_isSheaf_objPresheaf_of_equivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/SetoidToSets.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Stack/SetoidToSets.lean#L131). The attribute's comment: “the "in other words" sentence: iff the presheaf `U ↦ Ob(𝒮_U)/≅` is a sheaf”.
+**`CategoryTheory.BasedCategory.isStackInSetoids_iff_isSheaf_objPresheaf_of_equivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/SetoidToSets.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stack/SetoidToSets.lean#L131). The attribute's comment: “the "in other words" sentence: iff the presheaf `U ↦ Ob(𝒮_U)/≅` is a sheaf”.
 
 > Let `(𝒞, J)` be a site, let `𝒳` be a category fibred in setoids over `𝒞`, and let `𝒴` be a
 > category fibred in sets equivalent to `𝒳` as a category over `𝒞`. Then `𝒳` is a stack in setoids if
@@ -88,7 +88,7 @@ theorem BasedCategory.isStackInSetoids_iff_isSheaf_objPresheaf_of_equivalence
 
 [Tag 0431](https://stacks.math.columbia.edu/tag/0431) in the Stacks Project.
 
-**`CategoryTheory.BasedCategory.isStackInSetoids_iff_of_equivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/Transport.lean, line 40](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Stack/Transport.lean#L40).
+**`CategoryTheory.BasedCategory.isStackInSetoids_iff_of_equivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/Transport.lean, line 40](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stack/Transport.lean#L40).
 
 > Let `(𝒞, J)` be a site and let `𝒳`, `𝒴` be categories over `𝒞`. If `𝒳` and `𝒴` are equivalent
 > as categories over `𝒞`, then `𝒳` is a stack in setoids over `𝒞` if and only if `𝒴` is.
@@ -103,7 +103,7 @@ theorem BasedCategory.isStackInSetoids_iff_of_equivalence
 
 [Tag 0433](https://stacks.math.columbia.edu/tag/0433) in the Stacks Project.
 
-**`CategoryTheory.StackInSetoids`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/Setoid.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Stack/Setoid.lean#L134).
+**`CategoryTheory.StackInSetoids`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/Setoid.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stack/Setoid.lean#L134).
 
 > **Stacks 0433**.
 > An object of the 2-category of stacks in setoids over the site `(𝒞, J)`: a category over `𝒞`
@@ -113,7 +113,7 @@ theorem BasedCategory.isStackInSetoids_iff_of_equivalence
 structure StackInSetoids (𝒞 : Type u₁) [Category.{v₁} 𝒞] (J : GrothendieckTopology 𝒞)
 ```
 
-**`CategoryTheory.StackInSetoids.bicategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/Setoid.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Stack/Setoid.lean#L148).
+**`CategoryTheory.StackInSetoids.bicategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/Setoid.lean, line 148](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stack/Setoid.lean#L148).
 
 > **Stacks 0433**.
 > The 2-category of stacks in setoids over the site `(𝒞, J)`: the full sub-2-category of the
@@ -129,7 +129,7 @@ instance StackInSetoids.bicategory : Bicategory (StackInSetoids.{v₁, v₂, u�
 
 [Tag 0434](https://stacks.math.columbia.edu/tag/0434) in the Stacks Project.
 
-**`CategoryTheory.TwoFibreProductOver.isStackInSetoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/SetoidTwoFibreProduct.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Stack/SetoidTwoFibreProduct.lean#L143).
+**`CategoryTheory.TwoFibreProductOver.isStackInSetoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/SetoidTwoFibreProduct.lean, line 144](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stack/SetoidTwoFibreProduct.lean#L144).
 
 > **Stacks 0434.** The 2-fibre product of stacks in setoids over a site `(𝒞, J)` is a stack in
 > setoids: the construction of Stacks 0040 does not leave the 2-category of stacks in setoids.
@@ -150,7 +150,7 @@ theorem isStackInSetoids {J : GrothendieckTopology 𝒞} (h𝒳 : p𝒳.IsStackI
 
 [Tag 05UI](https://stacks.math.columbia.edu/tag/05UI) in the Stacks Project.
 
-**`CategoryTheory.Functor.isStackInSetoids_twoFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InheritedTopology/TwoFibreProductSetoid.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/InheritedTopology/TwoFibreProductSetoid.lean#L98).
+**`CategoryTheory.Functor.isStackInSetoids_twoFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InheritedTopology/TwoFibreProductSetoid.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/InheritedTopology/TwoFibreProductSetoid.lean#L98).
 
 > Let `𝒯` be a stack in groupoids and `𝒮` a stack over the site `(𝒞, J)`, and let `ℛ` be a
 > stack in setoids. Let `f : 𝒯 ⥤ 𝒮` and `g : ℛ ⥤ 𝒮` be 1-morphisms with `f` faithful. Then the
@@ -168,7 +168,7 @@ theorem Functor.isStackInSetoids_twoFibreProduct (J : GrothendieckTopology 𝒞)
 
 [Tag 05UJ](https://stacks.math.columbia.edu/tag/05UJ) in the Stacks Project.
 
-**`CategoryTheory.Functor.isStackInSetoids_twoFibreProduct_of_isStackInSetoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InheritedTopology/TwoFibreProductSetoid.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/InheritedTopology/TwoFibreProductSetoid.lean#L109).
+**`CategoryTheory.Functor.isStackInSetoids_twoFibreProduct_of_isStackInSetoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InheritedTopology/TwoFibreProductSetoid.lean, line 109](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/InheritedTopology/TwoFibreProductSetoid.lean#L109).
 
 > Let `𝒮` be a stack over the site `(𝒞, J)` and let `𝒮₁`, `𝒮₂` be stacks in setoids, with
 > 1-morphisms `f_i : 𝒮_i ⥤ 𝒮`. Then `𝒮₁ ×_{f₁, 𝒮, f₂} 𝒮₂` is a stack in setoids.
@@ -186,7 +186,7 @@ theorem Functor.isStackInSetoids_twoFibreProduct_of_isStackInSetoids
 
 [Tag 06DV](https://stacks.math.columbia.edu/tag/06DV) in the Stacks Project.
 
-**`CategoryTheory.Functor.faithful_of_faithful_fst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/FaithfulDescent.lean, line 253](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Stack/FaithfulDescent.lean#L253).
+**`CategoryTheory.Functor.faithful_of_faithful_fst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/FaithfulDescent.lean, line 253](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stack/FaithfulDescent.lean#L253).
 
 > **Stacks 06DV**. In a 2-cartesian diagram of categories fibred in groupoids over a site with
 > `𝒯₁` a stack, if every object of a fibre of `𝒮₁` is locally in the essential image of
@@ -211,7 +211,7 @@ theorem faithful_of_faithful_fst (hFeq : F ⋙ p𝒮₁ = p𝒮₂) (hGeq : G �
 
 [Tag 05W9](https://stacks.math.columbia.edu/tag/05W9) in the Stacks Project.
 
-**`CategoryTheory.Functor.isStackInSetoids_of_isStackInSetoids_twoFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/SetoidDescent.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Stack/SetoidDescent.lean#L124).
+**`CategoryTheory.Functor.isStackInSetoids_of_isStackInSetoids_twoFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/SetoidDescent.lean, line 124](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stack/SetoidDescent.lean#L124).
 
 > **Stacks 05W9**. In a 2-cartesian diagram of stacks in groupoids over a site, if `F` is fully
 > faithful, every object of a fibre of `𝒮₁` is locally in the essential image of `F`, and the 2-fibre
@@ -236,7 +236,7 @@ theorem isStackInSetoids_of_isStackInSetoids_twoFibreProduct (hFeq : F ⋙ p𝒮
 
 [Tag 0CKJ](https://stacks.math.columbia.edu/tag/0CKJ) in the Stacks Project.
 
-**`CategoryTheory.Functor.isStack_of_faithful_of_isSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/FaithfulGroupoidDescent.lean, line 320](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Stack/FaithfulGroupoidDescent.lean#L320).
+**`CategoryTheory.Functor.isStack_of_faithful_of_isSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/FaithfulGroupoidDescent.lean, line 320](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stack/FaithfulGroupoidDescent.lean#L320).
 
 > **Descent along a faithful 1-morphism into a stack in groupoids.** Let `(𝒞, J)` be a site and
 > let `F : 𝒮 ⥤ 𝒯` be a 1-morphism of categories fibred in groupoids over `𝒞`, that is a functor
@@ -281,4 +281,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 8.6, Tag 042Y](https://stacks.math.columbia.edu/tag/042Y)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -1,59 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: Stacks.Duality.isDerivedSheafHomRightAdjoint_of_fts_closedImmersion, Stacks.Duality.LocallySmall.upperShriek_closedImmersion_of_fts, Stacks.Divisors.isDualizingModule_homologyOne_derivedSheafHomExactSupport, Stacks.Duality.isNormalTensorPullbackRightAdjoint_of_fts, Stacks.Duality.upperShriek_isRightAdjointOnBoundedBelow_of_isProper, Stacks.Duality.isDualizingComplex_upperShriek_of_fts
+lean: Stacks.Duality.LocallySmall.upperShriek_closedImmersion_of_fts, Stacks.Duality.isNormalTensorPullbackRightAdjoint_of_fts, Stacks.Duality.nonempty_upperShriekFiniteIsoDerivedHomSheaf, Stacks.Duality.nonempty_upperShriekIsoPullbackTensorOfKoszulRegular, Stacks.Duality.upperShriek_rightAdjoint_and_duality_of_isProper, Stacks.Duality.nonempty_sheafHomDualizingIsoOfIsProper, Stacks.Duality.nonempty_upperShriekIsoPullbackTensorOfSmoothOfIsProper, Stacks.Duality.exists_upperShriekPseudofunctor
 statement: formalized
 proof: formalized
 ---
 
 # 48.19 A duality theory
 
-Section 48.19 of the Stacks Project, [Tag 0AU3](https://stacks.math.columbia.edu/tag/0AU3). 1 tag here is carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 48.19 of the Stacks Project, [Tag 0AU3](https://stacks.math.columbia.edu/tag/0AU3). 1 tag here is carried by 7 declarations of the repository (all in StacksFrontier) and 4 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0AU3, the section
 
 [Tag 0AU3](https://stacks.math.columbia.edu/tag/0AU3) in the Stacks Project.
 
-**`Stacks.Duality.isDerivedSheafHomRightAdjoint_of_fts_closedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ClosedImmersionTwistedInverseImage.lean, line 244](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ClosedImmersionTwistedInverseImage.lean#L244). The attribute's comment: “clause (5) of Section 48.19: for a closed immersion f^! is derived sheaf Hom out of the structure sheaf, with the conclusion of Tag 0A9X discharged by Stacks.Duality.tag0A9XHypothesis; i^! is the explicit parameter a with its adjunction, the existence statement being Tag 0A9E”.
-
-> **Stacks Project, Tag 0AA2 (Lemma 48.17.4), with nothing about Tag 0A9X assumed.** In
-> Situation 48.16.1, let `i : X ⟶ Y` be a morphism of `FTS S` whose underlying morphism of schemes
-> is a closed immersion, and let `a` be a right adjoint of
-> `Ri_* : D_QCoh(𝒪_X) ⥤ D_QCoh(𝒪_Y)`. Then `a`, which is `i^!`, is derived sheaf Hom out of `𝒪_X`:
-> `i^!(-) = R𝓗om_{𝒪_Y}(𝒪_X, -)` on bounded-below complexes with quasi-coherent cohomology.
->
-> This is `Stacks.Duality.isDerivedSheafHomRightAdjoint_of_fts` with its hypothesis `h0A9X`
-> discharged by `Stacks.Duality.tag0A9XHypothesis`, which is the content of [Stacks, Tag 0A9X]
-> (`Stacks.Duality.tag0A9X`) read at the canonical restriction of `Ri_*` to the quasi-coherent
-> derived categories. Two of the three things the tag's proof needs are therefore not hypotheses:
-> the conclusion of [Stacks, Tag 0A9X], and the preservation of quasi-coherent cohomology by `Ri_*`
-> (part (1) of [Stacks, Tag 08D5], a closed immersion being affine).
->
-> What remains a parameter is `i^!` itself, the functor `a` together with the adjunction `adj`
-> characterising it, exactly as in `Stacks.Duality.isDerivedSheafHomRightAdjoint_of_pseudoCoherent`
-> ([Stacks, Tag 0A9X]) and in `Stacks.Duality.sheafyTrace`. Its existence is [Stacks, Tag 0A9E],
-> which is not proved unconditionally in this tree —
-> `Stacks.Duality.DerivedPushforward.isLeftAdjoint_qcqsRestrictedDerivedPushforward` carries
-> [Stacks, Tag 08DZ] at the locally small model and [Stacks, Tag 09IS]; a right adjoint being
-> unique up to canonical isomorphism, the
-> statement about an arbitrary one says the same thing as the statement about the one that tag
-> produces.
->
-> This declaration is not registered as [Stacks, Tag 0AA2]: the full statement, with `i^!`
-> produced for every object of `FTS S` and no affineness or quasi-affineness hypothesis, is
-> `Stacks.Duality.LocallySmall.upperShriek_closedImmersion_of_fts` in
-> `StacksFrontier/AlgebraicGeometry/Duality/ClosedImmersionTwistedInverseImageQcqs.lean`.
-
-```lean
-theorem isDerivedSheafHomRightAdjoint_of_fts_closedImmersion
-    {S : Scheme.{u}} [IsNoetherian S] {X Y : FTS S} (i : X ⟶ Y)
-    [IsClosedImmersion i.left]
-    (a : quasiCoherentDerivedCategory Y.left ⥤ quasiCoherentDerivedCategory X.left)
-    (adj : affineHomQuasiCoherentDerivedPushforward i.left ⊣ a) :
-    IsDerivedSheafHomRightAdjoint i.left a
-```
-
-**`Stacks.Duality.LocallySmall.upperShriek_closedImmersion_of_fts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ClosedImmersionTwistedInverseImageQcqs.lean, line 160](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/ClosedImmersionTwistedInverseImageQcqs.lean#L160). The attribute's comment: “clause (5): for a closed immersion f^! = RHom(O\_X, -), at the locally small derived categories”.
+**`Stacks.Duality.LocallySmall.upperShriek_closedImmersion_of_fts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/ClosedImmersionTwistedInverseImageQcqs.lean, line 160](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/ClosedImmersionTwistedInverseImageQcqs.lean#L160). The attribute's comment: “clause (5): for a closed immersion f^! = RHom(O\_X, -), at the locally small derived categories”.
 
 > **Stacks Project, Tag 0AA2 (Lemma 48.17.4).** In Situation 48.16.1 — `S` a Noetherian scheme
 > and `FTS S` the schemes separated and of finite type over `S` — let `i : X ⟶ Y` be a morphism of
@@ -91,30 +52,7 @@ theorem upperShriek_closedImmersion_of_fts {S : Scheme.{u}} [IsNoetherian S] {X 
             K.obj)
 ```
 
-**`Stacks.Divisors.isDualizingModule_homologyOne_derivedSheafHomExactSupport`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/EffectiveCartierDualizingModule.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/EffectiveCartierDualizingModule.lean#L118). The attribute's comment: “clauses (4)(a) and (7) for the inclusion i : D to X of an effective Cartier divisor into a locally Noetherian scheme, read on a module: clause (7) identifies i^! with Li^*(-) tensor N[-1], so for a module omega the degree-one cohomology of i^!omega is N tensor i^*omega, which is H^1(a(omega)) for a the right adjoint of Tag 0A76; clause (4)(a) is that this is dualizing on D. Nothing is carried: the reduction to affine charts of D lying over affine opens of X on which the ideal of D is principal on a nonzerodivisor is Tag 0A86, the chart-level input is Tag 0AX0 at the surjection Gamma(X,U) to Gamma(D, i^-1 U) whose kernel that nonzerodivisor generates, and the identification of H^1(a(omega)) with the twist is Tag 0AA4 at the level of modules. The general finite-type case of clause (4)(a) is Stacks.Duality.isDualizingComplex\_upperShriek\_of\_fts, stated for an unconstructed f^!”.
-
-> **[Stacks, Tag 0AA3] for the inclusion of an effective Cartier divisor, read on a module.**
-> Let `D ⊆ X` be an effective Cartier divisor on a locally Noetherian scheme, with closed immersion
-> `i : D ⟶ X`, and let `a(-)` be the right adjoint of derived pushforward along `i` of
-> [Stacks, Tag 0A76]. If a quasi-coherent `𝒪_X`-module `ω` placed in some degree is a dualizing
-> complex on `X`, then the `𝒪_D`-module `H¹(a(ω))` is a dualizing module on `D`.
->
-> Degree one is the degree [Stacks, Remark 0B4R] selects, and
-> `Stacks.Divisors.nonempty_homologyOne_derivedSheafHomExactSupport_iso` identifies `H¹(a(ω))` with
-> the normal sheaf twist `𝒩 ⊗ i^*ω` of the restriction.
-
-```lean
-theorem isDualizingModule_homologyOne_derivedSheafHomExactSupport (ω : X.Modules)
-    [ω.IsQuasicoherent] (n : ℤ) (hω : Stacks.Duality.IsDualizingComplex
-      ((DerivedCategory.singleFunctor X.Modules n).obj ω)) :
-    letI : IsLocallyNoetherian D.subscheme := D.isLocallyNoetherian_subscheme
-    Stacks.Duality.IsDualizingModule
-      ((DerivedCategory.homologyFunctor D.subscheme.Modules 1).obj
-        ((closedQuotient D).derivedSheafHomExactSupport.obj
-          ((DerivedCategory.singleFunctor X.Modules 0).obj ω)))
-```
-
-**`Stacks.Duality.isNormalTensorPullbackRightAdjoint_of_fts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/DualityTheoryDivisor.lean, line 174](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/DualityTheoryDivisor.lean#L174). The attribute's comment: “clause (7) of Section 48.19: for the inclusion of an effective Cartier divisor into an object of FTS S, f^! is derived pullback tensored with the shifted normal sheaf i^*O\_Y(D)[-1]. Both inputs are proved unconditionally: clause (5) of the same section (Tag 0AA2) as Stacks.Duality.isDerivedSheafHomRightAdjoint\_of\_fts\_closedImmersion, and Tag 0AA4 as Stacks.Divisors.normalTensorDerivedSheafHomIso. As in clause (5), i^! is the explicit parameter a with its adjunction, the existence statement being Tag 0A9E”.
+**`Stacks.Duality.isNormalTensorPullbackRightAdjoint_of_fts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/DualityTheoryDivisor.lean, line 175](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/DualityTheoryDivisor.lean#L175). The attribute's comment: “clause (7) of Section 48.19: for the inclusion of an effective Cartier divisor into an object of FTS S, f^! is derived pullback tensored with the shifted normal sheaf i^*O\_Y(D)[-1]. Both inputs are proved unconditionally: clause (5) of the same section (Tag 0AA2) as Stacks.Duality.isDerivedSheafHomRightAdjoint\_of\_fts\_closedImmersion, and Tag 0AA4 as Stacks.Divisors.normalTensorDerivedSheafHomIso. As in clause (5), i^! is the explicit parameter a with its adjunction, the existence statement being Tag 0A9E”.
 
 > **Stacks Project, Section 0AU3, clause (7).** Let `S` be a Noetherian scheme, let `Y` be an
 > object of `AlgebraicGeometry.FTS S` — a scheme separated and of finite type over `S` — and let
@@ -138,53 +76,121 @@ theorem isNormalTensorPullbackRightAdjoint_of_fts
     IsNormalTensorPullbackRightAdjoint D a
 ```
 
-**`Stacks.Duality.upperShriek_isRightAdjointOnBoundedBelow_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/DualityTheoryProper.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/DualityTheoryProper.lean#L117). The attribute's comment: “clause (2), first assertion: for a proper morphism f^! is a right adjoint of Rf\_* and carries the bounded-below part of D\_QCoh into the bounded-below part, so it is the restriction of that right adjoint to D^+\_QCoh. The f^! is Stacks.Duality.upperShriek at the identity compactification, which is the one the source uses for a proper morphism; independence of the compactification is Tag 0AA0, which in this repository still carries the Tag 0A9L invertibility of Tag 0A9P. The SECOND assertion of clause (2), the duality isomorphism Rf\_* RHom(K, f^! M) = RHom(Rf\_* K, M), is not claimed: its map is Stacks.Duality.sheafyTrace and its invertibility is Tag 0GEW, which is open here”.
+**`Stacks.Duality.nonempty_upperShriekFiniteIsoDerivedHomSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/DualityTheoryFinite.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/DualityTheoryFinite.lean#L72). The attribute's comment: “clause (6): for a finite morphism f : Y to X of FTS S and any compactification, f\_* f^! = RHom(f\_* O\_Y, -) as functors from D^+\_QCoh(O\_X) to D(f\_* O\_Y), f\_* read as an f\_* O\_Y-module through the equivalence of Tag 0AVW; from clause (2) and Tag 0AX2”.
 
-> **Stacks Project, Section 0AU3, clause (2), first assertion.** Let `S` be a quasi-compact
-> quasi-separated scheme (in the source, a Noetherian one) and let `f : X ⟶ Y` be a morphism of
-> `AlgebraicGeometry.FTS S`, the schemes separated and of finite type over `S`, whose underlying
-> morphism of schemes is proper. Then `f^!` is the restriction of the right adjoint of
-> `Rf_* : D_QCoh(𝒪_X) ⥤ D_QCoh(𝒪_Y)` to `D⁺_QCoh(𝒪_Y)`: the upper shriek functor of
-> [Stacks, Tag 0A9Y] is a right adjoint of `Rf_*`, and it carries `D⁺_QCoh(𝒪_Y)` into
-> `D⁺_QCoh(𝒪_X)`.
+> **Stacks Project, Section 0AU3, clause (6).** Let `S` be a Noetherian scheme and let
+> `f : Y ⟶ X` be a finite morphism of `FTS S`, with `f^!` computed at any compactification. Then
+> `f_* f^!(-) = R𝓗om_{𝒪_X}(f_*𝒪_Y, -)` as functors `D⁺_QCoh(𝒪_X) ⥤ D(f_*𝒪_Y)`.
+
+```lean
+theorem nonempty_upperShriekFiniteIsoDerivedHomSheaf :
+    haveI := pseudoCoherent_of_isFinite_of_isLocallyNoetherian f.left
+    Nonempty (upperShriekPlus f j ⋙ ObjectProperty.ι _ ⋙
+        (derivedQuasicoherentPushforwardOverRingEquivalence f.left).functor ⋙
+          ObjectProperty.ι _ ≅
+      ObjectProperty.ι _ ⋙ ObjectProperty.ι _ ⋙ (structureSheafModelEquiv X.left).inverse ⋙
+        derivedHomSheaf f.left ⋙ (pushforwardRingModelEquiv f.left).functor)
+```
+
+**`Stacks.Duality.nonempty_upperShriekIsoPullbackTensorOfKoszulRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/DualityTheoryKoszul.lean, line 136](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/DualityTheoryKoszul.lean#L136). The attribute's comment: “clause (8): for a Koszul-regular immersion f : X to Y of codimension c into an object of FTS S (the conormal sheaf of its canonical closed factor into an open of Y finite locally free of rank c) and any compactification, f^!(-) = Lf^*(-) tensor wedge^c N[-c] as functors on D^+\_QCoh(O\_Y), N the normal sheaf; from Tag 0BR0 and Tag 0B6U (e)”.
+
+> **Stacks Project, Section 0AU3, clause (8).** Let `S` be a Noetherian scheme and let
+> `f : X ⟶ Y` be a Koszul-regular immersion of codimension `c` into an object of `FTS S`: an
+> immersion whose canonical closed factor `i = f.liftCoborder : X ⟶ f.coborderRange` (a closed
+> immersion into an open of `Y`) has conormal sheaf finite locally free of rank `c`. Write `𝒩` for
+> the normal sheaf of `f`, the dual of the conormal sheaf of `i`. Then, with `f^!` computed at any
+> compactification,
 >
-> Both conjuncts are needed for the clause: the first says `f^!` *is* the right adjoint, the second
-> says the restriction of that right adjoint to the bounded-below parts is defined.
+> `f^!(-) ≅ Lf^*(-) ⊗ᴸ_{𝒪_X} ∧^c 𝒩[-c]`
+>
+> as functors on `D⁺_QCoh(𝒪_Y)`.
 
 ```lean
-theorem upperShriek_isRightAdjointOnBoundedBelow_of_isProper :
-    Nonempty (DerivedPushforward.qcqsRestrictedDerivedPushforward f.left ⊣
-        upperShriek f (properCompactification f)) ∧
-      ∀ K : quasiCoherentDerivedCategory Y.left, DerivedCategoryB.IsBoundedBelow K.obj →
-        DerivedCategoryB.IsBoundedBelow
-          ((upperShriek f (properCompactification f)).obj K).obj
+theorem nonempty_upperShriekIsoPullbackTensorOfKoszulRegular [IsImmersion f.left]
+    (hf : IsKoszulRegularImmersion f.left)
+    [AlgebraicGeometry.SheafOfModules.IsFiniteLocallyFreeOfRank.{u, u, u}
+      (R := X.left.ringCatSheaf) (Stacks.Conormal.conormalSheaf f.left.liftCoborder) c] :
+    Nonempty (((ObjectProperty.ι _ : quasiCoherentDerivedCategoryPlusOfModel Y.left ⥤ _) ⋙
+        quasiCoherentDerivedPullback' f.left ⋙ ObjectProperty.ι _) ⋙
+      (derivedTensor X.left).flip.obj
+        ((DerivedCategory.singleFunctor X.left.Modules (c : ℤ)).obj
+          (Scheme.Modules.exteriorPower (Stacks.Divisors.normalSheaf f.left.liftCoborder) c)) ≅
+      (ObjectProperty.ι _ : quasiCoherentDerivedCategoryPlusOfModel Y.left ⥤ _) ⋙
+        upperShriek f j ⋙ ObjectProperty.ι _)
 ```
 
-**`Stacks.Duality.isDualizingComplex_upperShriek_of_fts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekDualizingComplex.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekDualizingComplex.lean#L148). The attribute's comment: “clause (4)(a) of Section 48.19: the normalized complex f^! of a dualizing complex is dualizing, under the same carried hypotheses as the Tag 0AA3 key below”.
+**`Stacks.Duality.upperShriek_rightAdjoint_and_duality_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/DualityTheoryProperDuality.lean, line 147](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/DualityTheoryProperDuality.lean#L147). The attribute's comment: “clause (2) in full: for a proper morphism f of FTS S and any compactification, f^! carries D^+\_QCoh into D^+\_QCoh and is the restriction to D^+\_QCoh of every right adjoint of Rf\_* on D\_QCoh, and Rf\_* RHom(K, f^! M) = RHom(Rf\_* K, M) for K in D^-\_Coh(O\_X) and M in D^+\_QCoh(O\_Y) (the sheafy trace of Tag 0B6H, invertible by Tag 0GEW)”.
 
-> **Stacks Project, Tag 0AA3 (Lemma 48.17.7).** In Situation 48.16.1, let `f : X ⟶ Y` be a
-> morphism of `FTS S` and let `f^!` be an exceptional inverse image functor
-> `D⁺_QCoh(𝒪_Y) ⥤ D⁺_QCoh(𝒪_X)` for it, in the sense that on affine charts it is the algebraic
-> upper shriek of a polynomial presentation of the chart ring map. If `K` is a dualizing complex
-> for `Y`, then `f^!K` is a dualizing complex for `X`.
+> **Stacks Project, Section 0AU3, clause (2).** Let `S` be a Noetherian scheme and let
+> `f : X ⟶ Y` be a proper morphism of `FTS S`, with `f^!` computed at any compactification `j`.
+> Then `f^!` is the restriction of the right adjoint of `Rf_* : D_QCoh(𝒪_X) ⥤ D_QCoh(𝒪_Y)` to
+> `D⁺_QCoh(𝒪_Y)`, and there is a canonical isomorphism
+>
+> `Rf_* R𝓗om_{𝒪_X}(K, f^!M) ≅ R𝓗om_{𝒪_Y}(Rf_*K, M)`
+>
+> for all `K ∈ D⁻_Coh(𝒪_X)` and `M ∈ D⁺_QCoh(𝒪_Y)`:
+>
+> 1. `f^!` carries `D⁺_QCoh(𝒪_Y)` into `D⁺_QCoh(𝒪_X)`;
+> 2. for every right adjoint `a` of `Rf_*`, the functor `f^! : D⁺_QCoh(𝒪_Y) ⥤ D⁺_QCoh(𝒪_X)` is
+>    isomorphic to the restriction of `a`;
+> 3. the isomorphism, `Stacks.Duality.sheafHomUpperShriekIsoOfIsProper`, with the derived internal
+>    Homs and `Rf_*` read at the standard model.
 
 ```lean
-theorem isDualizingComplex_upperShriek_of_fts {S : Scheme.{u}} [IsNoetherian S] {X Y : FTS S}
-    (f : X ⟶ Y)
-    (fShriek : quasiCoherentDerivedCategoryPlus Y.left ⥤ quasiCoherentDerivedCategoryPlus X.left)
-    (K : quasiCoherentDerivedCategoryPlus Y.left)
-    (h0A86 : ∀ L : DerivedCategory X.left.Modules,
-      (∀ x : X.left, ∃ (U : X.left.Opens) (hU : IsAffineOpen U),
-        x ∈ U ∧ HasDualizingModelOn L U hU) → IsDualizingComplex L)
-    (h0AA1 : ∀ (U : X.left.Opens) (hU : IsAffineOpen U) (V : Y.left.Opens)
-      (hV : IsAffineOpen V) (hUV : U ≤ f.left ⁻¹ᵁ V)
-      (ω : DerivedCategory (ModuleCat.{u} Γ(Y.left, V))),
-      IsTildeModelOn K.obj.obj V hV ω →
-      ∃ p : Dualizing.PolynomialPresentation (f.left.appLE V U hUV).hom,
-        IsTildeModelOn (fShriek.obj K).obj.obj U hU (p.upperShriekFunctor.{u, u}.obj ω))
-    (hK : IsDualizingComplex K.obj.obj) :
-    IsDualizingComplex (fShriek.obj K).obj.obj
+theorem upperShriek_rightAdjoint_and_duality_of_isProper :
+    (∀ M : quasiCoherentDerivedCategory Y.left, DerivedCategoryB.IsBoundedBelow M.obj →
+        DerivedCategoryB.IsBoundedBelow ((upperShriek f j).obj M).obj) ∧
+      (∀ (a : quasiCoherentDerivedCategory Y.left ⥤ quasiCoherentDerivedCategory X.left)
+          (_ : DerivedPushforward.qcqsRestrictedDerivedPushforward f.left ⊣ a),
+        Nonempty (upperShriekPlus f j ⋙ ObjectProperty.ι _ ≅ ObjectProperty.ι _ ⋙ a)) ∧
+      ∀ (K : Std X.left) (_ : minusCoh X.left K) (M : (qcoh Y.left).FullSubcategory)
+        (_ : @DerivedCategoryB.IsBoundedBelow Y.left.Modules _ _
+          (PerfectApproximation.standardModel Y.left) M.obj),
+        Nonempty ((push f.left).obj (((sheafHom X.left).obj (op K)).obj
+            ((comparison X.left).inverse.obj
+              ((upperShriek f j).obj ⟨(comparison Y.left).functor.obj M.obj, M.property⟩).obj)) ≅
+          ((sheafHom Y.left).obj (op ((push f.left).obj K))).obj M.obj)
 ```
+
+**`Stacks.Duality.nonempty_sheafHomDualizingIsoOfIsProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/DualityTheoryProperDuality.lean, line 187](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/DualityTheoryProperDuality.lean#L187). The attribute's comment: “clause (4)(c): for a proper morphism f : X to Y of FTS S, a dualizing complex omega\_Y on Y and omega\_X = f^! omega\_Y at any compactification, Rf\_* RHom(K, omega\_X) = RHom(Rf\_* K, omega\_Y) for K in D^-\_Coh(O\_X); clause (2) at M = omega\_Y”.
+
+> **Stacks Project, Section 0AU3, clause (4)(c).** Let `S` be a Noetherian scheme, let
+> `f : X ⟶ Y` be a proper morphism of `FTS S`, let `ω_Y` be a dualizing complex on `Y` and
+> `ω_X = f^!ω_Y` (at any compactification). Then
+> `Rf_* R𝓗om_{𝒪_X}(K, ω_X) ≅ R𝓗om_{𝒪_Y}(Rf_*K, ω_Y)` for `K ∈ D⁻_Coh(𝒪_X)`.
+
+```lean
+theorem nonempty_sheafHomDualizingIsoOfIsProper {ω : Std Y.left}
+    (hω : TwistedInverseImageDuality.IsDualizing ω) (K : Std X.left) (hK : minusCoh X.left K) :
+    Nonempty ((push f.left).obj (((sheafHom X.left).obj (op K)).obj
+        (upperShriekDualizing f j hω)) ≅
+      ((sheafHom Y.left).obj (op ((push f.left).obj K))).obj ω)
+```
+
+**`Stacks.Duality.nonempty_upperShriekIsoPullbackTensorOfSmoothOfIsProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/DualityTheorySmooth.lean, line 87](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/DualityTheorySmooth.lean#L87). The attribute's comment: “clause (9): for a smooth proper morphism f of relative dimension d of FTS S and any compactification, f^!(-) = Lf^*(-) tensor Omega^d\_\{X/Y}[d] as functors on D^+\_QCoh(O\_Y); from Tag 0B6U (e) (f is perfect), clause (2) and Tag 0BRT”.
+
+> **Stacks Project, Section 0AU3, clause (9).** Let `S` be a Noetherian scheme and let
+> `f : X ⟶ Y` be a smooth proper morphism of relative dimension `d` of `FTS S`, with `f^!`
+> computed at any compactification. Then `f^!(-) ≅ Lf^*(-) ⊗ᴸ_{𝒪_X} Ω^d_{X/Y}[d]` as functors on
+> `D⁺_QCoh(𝒪_Y)`, where `Ω^d_{X/Y} = ∧^d Ω_{X/Y}` and `[d]` places it in degree `-d`.
+
+```lean
+theorem nonempty_upperShriekIsoPullbackTensorOfSmoothOfIsProper :
+    Nonempty (((ObjectProperty.ι _ : quasiCoherentDerivedCategoryPlusOfModel Y.left ⥤ _) ⋙
+        quasiCoherentDerivedPullback' f.left ⋙ ObjectProperty.ι _) ⋙
+      (derivedTensor X.left).flip.obj
+        ((DerivedCategory.singleFunctor X.left.Modules (-(d : ℤ))).obj
+          (Scheme.Modules.exteriorPower (Scheme.Hom.relativeDifferentials f.left) d)) ≅
+      (ObjectProperty.ι _ : quasiCoherentDerivedCategoryPlusOfModel Y.left ⥤ _) ⋙
+        upperShriek f j ⋙ ObjectProperty.ι _)
+```
+
+Declarations registered for the tag:
+
+- [`Stacks.Duality.exists_upperShriekPseudofunctor`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/Compactification/ShriekPseudofunctor/Pseudofunctor.lean#L222), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/DualityTheory.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/DualityTheory.lean#L53) (StacksFrontier): “clause (1): the functors f^! of Tag 0AA0 on D^+\_QCoh, with the canonical isomorphisms (g o f)^! = f^! o g^! of Tag 0ATX, form a pseudofunctor on FTS\_S (Tag 0ATY)”.
+- [`Stacks.Duality.coherentDuality_spec`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizing/CoherentDuality.lean#L226), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/DualityTheory.lean, line 57](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/DualityTheory.lean#L57) (StacksFrontier): “clause (3): for a dualizing complex omega on a locally Noetherian scheme X (in particular an object of FTS\_S), D = RHom(-, omega) is an anti-equivalence of D\_Coh(O\_X) with the canonical isomorphism id = D o D, exchanging D^+\_Coh and D^-\_Coh and inducing an anti-equivalence of D^b\_Coh when X is quasi-compact (Tag 0A89)”.
+- [`Stacks.Duality.isDualizingComplex_upperShriek_obj`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekDualizingComplexOfCharts.lean#L72), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/DualityTheory.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/DualityTheory.lean#L63) (StacksFrontier): “clause (4)(a): for f : X to Y in FTS\_S and omega\_Y a dualizing complex on Y, f^! omega\_Y (at any compactification) is a dualizing complex on X (Tag 0AA3)”.
+- [`Stacks.Duality.UpperShriekDuality.upperShriekDualityIso`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekDuality.lean#L272), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/DualityTheory.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/DualityTheory.lean#L67) (StacksFrontier): “clause (4)(b): for f : X to Y in FTS\_S and K a dualizing complex on Y, f^! M = D\_X(Lf^* D\_Y(M)) naturally in M in D^+\_Coh(O\_Y), D\_Y = RHom(-, K), D\_X = RHom(-, f^! K) (Tag 0AU2)”.
 
 ## Depends on
 
@@ -193,4 +199,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 48.19, Tag 0AU3](https://stacks.math.columbia.edu/tag/0AU3)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

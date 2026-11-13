@@ -8,13 +8,13 @@ proof: formalized
 
 # 91.5 Infinitesimal deformations of modules on ringed spaces
 
-Section 91.5 of the Stacks Project, [Tag 08LG](https://stacks.math.columbia.edu/tag/08LG). 7 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 91.5 of the Stacks Project, [Tag 08LG](https://stacks.math.columbia.edu/tag/08LG). 7 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 08LH, a lemma
 
 [Tag 08LH](https://stacks.math.columbia.edu/tag/08LH) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSpaceThickening.mapLift_isPrincipalHomogeneous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/MapLift.lean, line 360](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingedSpaceThickening/MapLift.lean#L360).
+**`AlgebraicGeometry.RingedSpaceThickening.mapLift_isPrincipalHomogeneous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/MapLift.lean, line 371](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RingedSpaceThickening/MapLift.lean#L371).
 
 > **Stacks Project, Tag 08LH.** Let `i : X ⟶ X'` be a first-order thickening of ringed spaces
 > with ideal `ℐ`, let `ℱ'` and `𝒢'` be `𝒪_{X'}`-modules and let `φ : i^* ℱ' ⟶ i^* 𝒢'`. If `φ`
@@ -34,7 +34,7 @@ theorem mapLift_isPrincipalHomogeneous (hi : IsFirstOrderThickening i)
         infinitesimalHomEquiv i hi F' G' δ ≫ infinitesimalι i G' + φ₁.1 = φ₂.1
 ```
 
-**`AlgebraicGeometry.RingedSpaceThickening.exists_addTorsor_mapLift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/MapLiftTorsor.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingedSpaceThickening/MapLiftTorsor.lean#L168).
+**`AlgebraicGeometry.RingedSpaceThickening.exists_addTorsor_mapLift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/MapLiftTorsor.lean, line 168](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RingedSpaceThickening/MapLiftTorsor.lean#L168).
 
 > **Stacks Project, Tag 08LH.** Let `i : X ⟶ X'` be a first-order thickening of ringed spaces
 > with ideal `ℐ`, let `ℱ'` and `𝒢'` be `𝒪_{X'}`-modules, `ℱ = i^* ℱ'`, `𝒢 = i^* 𝒢'`, and let
@@ -63,7 +63,7 @@ theorem exists_addTorsor_mapLift (hi : IsFirstOrderThickening i)
 
 [Tag 08LI](https://stacks.math.columbia.edu/tag/08LI) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSpaceThickening.isFlatOver_iff_baseToInfinitesimal_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/FlatCriterion.lean, line 1799](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingedSpaceThickening/FlatCriterion.lean#L1799). The attribute's comment: “flatness criterion”. References: SGA 3 XV (2.7), “more general”.
+**`AlgebraicGeometry.RingedSpaceThickening.isFlatOver_iff_baseToInfinitesimal_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/FlatCriterion.lean, line 1865](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RingedSpaceThickening/FlatCriterion.lean#L1865). The attribute's comment: “flatness criterion”. References: SGA 3 XV (2.7), “more general”.
 
 > **Stacks Project, Tag 08LI.** For a strict morphism of first-order thickenings of ringed
 > spaces and an `𝒪_{X'}`-module `ℱ'` whose restriction `ℱ = i^* ℱ'` is flat over `S`, the module
@@ -85,7 +85,7 @@ theorem isFlatOver_iff_baseToInfinitesimal_isIso (D : MorphismOfThickenings.{u})
     AlgebraicGeometry.IsFlatOver D.f' F' ↔ IsIso (baseToInfinitesimal D F')
 ```
 
-**`AlgebraicGeometry.RingedSpaceThickening.baseToSourceIdealTensor_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/FlatCriterion.lean, line 1886](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingedSpaceThickening/FlatCriterion.lean#L1886). The attribute's comment: “first isomorphism in the final assertion”.
+**`AlgebraicGeometry.RingedSpaceThickening.baseToSourceIdealTensor_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/FlatCriterion.lean, line 1954](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RingedSpaceThickening/FlatCriterion.lean#L1954). The attribute's comment: “first isomorphism in the final assertion”.
 
 > **Stacks Project, Tag 08LI.** Under the hypotheses of the criterion and flatness of `ℱ'`
 > over `S'`, the reduced canonical ideal map tensored with `ℱ` is an isomorphism: it is an
@@ -101,7 +101,7 @@ theorem baseToSourceIdealTensor_isIso (D : MorphismOfThickenings.{u})
     IsIso (baseToSourceIdealTensor D F')
 ```
 
-**`AlgebraicGeometry.RingedSpaceThickening.sourceIdealActionImage_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/FlatCriterion.lean, line 1906](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingedSpaceThickening/FlatCriterion.lean#L1906). The attribute's comment: “second isomorphism in the final assertion”.
+**`AlgebraicGeometry.RingedSpaceThickening.sourceIdealActionImage_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/FlatCriterion.lean, line 1974](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RingedSpaceThickening/FlatCriterion.lean#L1974). The attribute's comment: “second isomorphism in the final assertion”.
 
 > **Stacks Project, Tag 08LI.** Under the hypotheses of the criterion and flatness of `ℱ'`
 > over `S'`, the ideal action on the reduced source identifies `i^* ℐ ⊗_{𝒪_X} ℱ` with the ideal
@@ -120,7 +120,7 @@ theorem sourceIdealActionImage_isIso (D : MorphismOfThickenings.{u})
 
 [Tag 08LJ](https://stacks.math.columbia.edu/tag/08LJ) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSpaceThickening.mapLift_isTorsor_tensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/FlatCriterion.lean, line 2039](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingedSpaceThickening/FlatCriterion.lean#L2039).
+**`AlgebraicGeometry.RingedSpaceThickening.mapLift_isTorsor_tensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/FlatCriterion.lean, line 2113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RingedSpaceThickening/FlatCriterion.lean#L2113).
 
 > **Stacks Project, Tag 08LJ.** Let `(f, f')` be a morphism of thickenings with `i` a first
 > order thickening, let `ℱ'` and `𝒢'` be `𝒪_{X'}`-modules, set `ℱ = i^* ℱ'` and `𝒢 = i^* 𝒢'`,
@@ -160,7 +160,7 @@ theorem mapLift_isTorsor_tensor (D : MorphismOfThickenings.{u})
 
 [Tag 08LK](https://stacks.math.columbia.edu/tag/08LK) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSpaceThickening.exists_derivedMapLiftingObstruction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/DerivedLiftingObstruction.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingedSpaceThickening/DerivedLiftingObstruction.lean#L149).
+**`AlgebraicGeometry.RingedSpaceThickening.exists_derivedMapLiftingObstruction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/DerivedLiftingObstruction.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RingedSpaceThickening/DerivedLiftingObstruction.lean#L149).
 
 > **Stacks Project, Tag 08LK.** Let `i : (X, 𝒪_X) ⟶ (X', 𝒪_{X'})` be a first order thickening
 > of ringed spaces with ideal `ℐ`, let `ℱ'` and `𝒢'` be `𝒪_{X'}`-modules and let
@@ -183,7 +183,7 @@ theorem exists_derivedMapLiftingObstruction (hi : IsFirstOrderThickening i)
 
 [Tag 08LL](https://stacks.math.columbia.edu/tag/08LL) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSpaceThickening.mapLiftObstruction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/MapLiftObstruction.lean, line 405](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingedSpaceThickening/MapLiftObstruction.lean#L405). The attribute's comment: “the obstruction class”.
+**`AlgebraicGeometry.RingedSpaceThickening.mapLiftObstruction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/MapLiftObstruction.lean, line 405](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RingedSpaceThickening/MapLiftObstruction.lean#L405). The attribute's comment: “the obstruction class”.
 
 > **Stacks Project, Tag 08LL.** The obstruction class
 > `o(φ) ∈ Ext¹_{𝒪_X}(ℱ, 𝒢 ⊗_{𝒪_X} f^* 𝒥)` to lifting an `𝒪_X`-linear `φ : ℱ ⟶ 𝒢` between the
@@ -205,7 +205,7 @@ noncomputable def mapLiftObstruction (hi : IsFirstOrderThickening D.i) (hs : D.I
       (restrictionTensorBaseIdeal D G') 1
 ```
 
-**`AlgebraicGeometry.RingedSpaceThickening.mapLiftObstruction_eq_zero_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/MapLiftObstruction.lean, line 419](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingedSpaceThickening/MapLiftObstruction.lean#L419). The attribute's comment: “the vanishing criterion”.
+**`AlgebraicGeometry.RingedSpaceThickening.mapLiftObstruction_eq_zero_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/MapLiftObstruction.lean, line 419](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RingedSpaceThickening/MapLiftObstruction.lean#L419). The attribute's comment: “the vanishing criterion”.
 
 > **Stacks Project, Tag 08LL.** The vanishing of the obstruction class `o(φ)` is necessary and
 > sufficient for `φ` to lift to an `𝒪_{X'}`-linear map `φ' : ℱ' ⟶ 𝒢'`, that is one with
@@ -220,7 +220,7 @@ theorem mapLiftObstruction_eq_zero_iff (hi : IsFirstOrderThickening D.i) (hs : D
     mapLiftObstruction hi hs F' G' hF' hG' φ = 0 ↔ Nonempty (MapLift D.i F' G' φ)
 ```
 
-**`AlgebraicGeometry.RingedSpaceThickening.exists_mapLiftObstruction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/MapLiftObstruction.lean, line 451](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingedSpaceThickening/MapLiftObstruction.lean#L451).
+**`AlgebraicGeometry.RingedSpaceThickening.exists_mapLiftObstruction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/MapLiftObstruction.lean, line 451](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RingedSpaceThickening/MapLiftObstruction.lean#L451).
 
 > **Stacks Project, Tag 08LL.** Let `(f, f')` be a morphism of thickenings of ringed spaces
 > whose upper arrow `i : X ⟶ X'` is a first order thickening, let `ℱ'` and `𝒢'` be
@@ -251,7 +251,7 @@ theorem exists_mapLiftObstruction (hi : IsFirstOrderThickening D.i) (hs : D.IsSt
 
 [Tag 08LM](https://stacks.math.columbia.edu/tag/08LM) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSpaceThickening.flatLiftClassDifference_isPrincipalHomogeneous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/FlatLiftTorsor.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingedSpaceThickening/FlatLiftTorsor.lean#L148).
+**`AlgebraicGeometry.RingedSpaceThickening.flatLiftClassDifference_isPrincipalHomogeneous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/FlatLiftTorsor.lean, line 148](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RingedSpaceThickening/FlatLiftTorsor.lean#L148).
 
 > Let `(f, f')` be a strict morphism of first order thickenings of ringed spaces and let `ℱ` be
 > an `𝒪_X`-module flat over `S`. The isomorphism classes of pairs `(ℱ', α)` of an `𝒪_{X'}`-module
@@ -276,7 +276,7 @@ theorem flatLiftClassDifference_isPrincipalHomogeneous (hi : IsFirstOrderThicken
 
 [Tag 08LN](https://stacks.math.columbia.edu/tag/08LN) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSpaceThickening.nonempty_flatLift_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/FlatLiftExistence.lean, line 516](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RingedSpaceThickening/FlatLiftExistence.lean#L516).
+**`AlgebraicGeometry.RingedSpaceThickening.nonempty_flatLift_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/RingedSpaceThickening/FlatLiftExistence.lean, line 551](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RingedSpaceThickening/FlatLiftExistence.lean#L551).
 
 > **Stacks Project, Tag 08LN.** Let `(f, f')` be a strict morphism of first order thickenings
 > of ringed spaces and let `ℱ` be an `𝒪_X`-module flat over `S`. There is an `𝒪_{X'}`-module `ℱ'`
@@ -308,4 +308,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 91.5, Tag 08LG](https://stacks.math.columbia.edu/tag/08LG)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 83.5 Quotients as orbit spaces
 
-Section 83.5 of the Stacks Project, [Tag 048M](https://stacks.math.columbia.edu/tag/048M). 21 tags here are carried by 53 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 83.5 of the Stacks Project, [Tag 048M](https://stacks.math.columbia.edu/tag/048M). 21 tags here are carried by 54 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 048N, a definition
 
 [Tag 048N](https://stacks.math.columbia.edu/tag/048N) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.PreRelation.pointOrbit`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/PointOrbits.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/PointOrbits.lean#L81).
+**`AlgebraicGeometry.Space.PreRelation.pointOrbit`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/PointOrbits.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/PointOrbits.lean#L81).
 
 > **Stacks 048N.** The *orbit* of a point of `|U|` under a pre-relation `j : R ⟶ U ×_Z U`:
 > the set of points joined to it by a finite chain of arrows of `j`, traversed in either
@@ -29,7 +29,7 @@ noncomputable abbrev PreRelation.pointOrbit (j : PreRelation R U)
 
 [Tag 048O](https://stacks.math.columbia.edu/tag/048O) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.PreRelation.pointOrbit_eq_targets_of_source`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/PointOrbits.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/PointOrbits.lean#L90).
+**`AlgebraicGeometry.Space.PreRelation.pointOrbit_eq_targets_of_source`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/PointOrbits.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/PointOrbits.lean#L90).
 
 > **Stacks 048O.** For a pre-equivalence relation an orbit is cut out by a single arrow: it
 > consists of the targets of the arrows of the pre-relation whose source is the given point.
@@ -47,7 +47,7 @@ theorem PreRelation.pointOrbit_eq_targets_of_source (j : PreRelation R U)
 
 [Tag 048P](https://stacks.math.columbia.edu/tag/048P) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.pointsMap_eq_of_mem_pointOrbit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/PointOrbits.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/PointOrbits.lean#L119).
+**`AlgebraicGeometry.Space.pointsMap_eq_of_mem_pointOrbit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/PointOrbits.lean, line 119](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/PointOrbits.lean#L119).
 
 > **Stacks 048P.** A morphism out of `U` which is invariant under a pre-relation takes the
 > same value at any two points in one orbit.
@@ -64,7 +64,7 @@ theorem pointsMap_eq_of_mem_pointOrbit (j : PreRelation R U)
 
 [Tag 048Q](https://stacks.math.columbia.edu/tag/048Q) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.PreRelation.WeaklyEquivalent`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/GeometricOrbits.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/GeometricOrbits.lean#L76). The attribute's comment: “part (1): weak equivalence”.
+**`AlgebraicGeometry.Space.PreRelation.WeaklyEquivalent`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/GeometricOrbits.lean, line 76](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/GeometricOrbits.lean#L76). The attribute's comment: “part (1): weak equivalence”.
 
 > Two points of `U` over a field-valued point `p` of `Z` are
 > *weakly equivalent* when they are joined by a finite chain of arrows of the pre-relation over
@@ -75,7 +75,7 @@ abbrev WeaklyEquivalent (j : PreRelation R U) (p : FieldValuedPoint B S hS Z)
     (x y : TestPoint (p.siteObject B S hS Z) (yonedaEquiv.symm p.value) U) : Prop
 ```
 
-**`AlgebraicGeometry.Space.PreRelation.Equivalent`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/GeometricOrbits.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/GeometricOrbits.lean#L84). The attribute's comment: “part (2): equivalence after extension”.
+**`AlgebraicGeometry.Space.PreRelation.Equivalent`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/GeometricOrbits.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/GeometricOrbits.lean#L84). The attribute's comment: “part (2): equivalence after extension”.
 
 > Two points of `U` over a field-valued point `p` of `Z` are
 > *equivalent* when their restrictions to some extension of the field of `p` are weakly
@@ -86,7 +86,7 @@ abbrev Equivalent (j : PreRelation R U) (p : FieldValuedPoint B S hS Z)
     (x y : TestPoint (p.siteObject B S hS Z) (yonedaEquiv.symm p.value) U) : Prop
 ```
 
-**`AlgebraicGeometry.Space.PreRelation.weakOrbit`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/GeometricOrbits.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/GeometricOrbits.lean#L94). The attribute's comment: “part (3): weak orbit”.
+**`AlgebraicGeometry.Space.PreRelation.weakOrbit`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/GeometricOrbits.lean, line 94](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/GeometricOrbits.lean#L94). The attribute's comment: “part (3): weak orbit”.
 
 > The *weak orbit* of a point of `U` over a geometric point of
 > `Z`: its class for weak equivalence over the given algebraically closed field.
@@ -97,7 +97,7 @@ abbrev weakOrbit (j : PreRelation R U) (p : GeometricPoint B S hS Z)
     Set (TestPoint (p.val.siteObject B S hS Z) (yonedaEquiv.symm p.val.value) U)
 ```
 
-**`AlgebraicGeometry.Space.PreRelation.orbit`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/GeometricOrbits.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/GeometricOrbits.lean#L102). The attribute's comment: “part (4): orbit”.
+**`AlgebraicGeometry.Space.PreRelation.orbit`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/GeometricOrbits.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/GeometricOrbits.lean#L102). The attribute's comment: “part (4): orbit”.
 
 > The *orbit* of a point of `U` over a geometric point of `Z`:
 > its class for equivalence, that is after allowing one extension of the field.
@@ -112,7 +112,7 @@ abbrev orbit (j : PreRelation R U) (p : GeometricPoint B S hS Z)
 
 [Tag 048R](https://stacks.math.columbia.edu/tag/048R) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.PreRelation.weakOrbit_eq_targets`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/GeometricOrbits.lean, line 115](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/GeometricOrbits.lean#L115). The attribute's comment: “weak orbit”.
+**`AlgebraicGeometry.Space.PreRelation.weakOrbit_eq_targets`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/GeometricOrbits.lean, line 115](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/GeometricOrbits.lean#L115). The attribute's comment: “weak orbit”.
 
 > For a pre-equivalence relation the weak orbit of a point is cut out by a
 > single arrow: it consists of the targets of the arrows whose source is that point.
@@ -124,7 +124,7 @@ theorem weakOrbit_eq_targets (j : PreRelation R U) (hj : IsPreEquivalenceRelatio
     j.weakOrbit p x = {y | j.Rel (yonedaEquiv.symm p.val.value) y x}
 ```
 
-**`AlgebraicGeometry.Space.PreRelation.orbit_eq_targets_after_extension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/GeometricOrbits.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/GeometricOrbits.lean#L125). The attribute's comment: “orbit”.
+**`AlgebraicGeometry.Space.PreRelation.orbit_eq_targets_after_extension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/GeometricOrbits.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/GeometricOrbits.lean#L125). The attribute's comment: “orbit”.
 
 > For a pre-equivalence relation the orbit of a point is cut out by a
 > single arrow over some extension of the field of the geometric point.
@@ -146,7 +146,7 @@ theorem orbit_eq_targets_after_extension (j : PreRelation R U)
 
 [Tag 048S](https://stacks.math.columbia.edu/tag/048S) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.flippedRelation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/InvariantMorphisms.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/InvariantMorphisms.lean#L80). The attribute's comment: “flip map”.
+**`AlgebraicGeometry.Space.flippedRelation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/InvariantMorphisms.lean, line 80](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/InvariantMorphisms.lean#L80). The attribute's comment: “flip map”.
 
 > The *flipped* arrow of a pre-relation, `r ↦ (s(r), t(r))`: the map to `U ×_B U` that
 > reverses each arrow of `j`.
@@ -155,7 +155,7 @@ theorem orbit_eq_targets_after_extension (j : PreRelation R U)
 noncomputable def flippedRelation {R U : Over B} (j : PreRelation R U) : R ⟶ U ⨯ U
 ```
 
-**`AlgebraicGeometry.Space.composedRelation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/InvariantMorphisms.lean, line 86](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/InvariantMorphisms.lean#L86). The attribute's comment: “composable-pair map”.
+**`AlgebraicGeometry.Space.composedRelation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/InvariantMorphisms.lean, line 86](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/InvariantMorphisms.lean#L86). The attribute's comment: “composable-pair map”.
 
 > The endpoint map on composable pairs, `(r, r') ↦ (t(r), s(r'))`: the map to `U ×_B U`
 > recording the outer endpoints of a pair of arrows of `j` that compose.
@@ -167,13 +167,13 @@ noncomputable def composedRelation {R U : Over B} (j : PreRelation R U) :
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Limits.diag`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.diag#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/InvariantMorphisms.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/InvariantMorphisms.lean#L71) (StacksFrontier): “diagonal map”. References: EGA I (10.15.1); EGA I (5.3.1); EGA IV (17.13.9), “binary diagonal”; SGA 4 IV (5.11.1).
+- [`CategoryTheory.Limits.diag`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.diag#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/InvariantMorphisms.lean, line 71](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/InvariantMorphisms.lean#L71) (StacksFrontier): “diagonal map”. References: EGA I (10.15.1); EGA I (5.3.1); EGA IV (17.13.9), “binary diagonal”; SGA 4 IV (5.11.1).
 
 ## Tag 048T, a lemma
 
 [Tag 048T](https://stacks.math.columbia.edu/tag/048T) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.allPathsRelation_source_locallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/GeneratedRelationFiniteType.lean, line 127](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/GeneratedRelationFiniteType.lean#L127). The attribute's comment: “part (5): locally of finite type”.
+**`AlgebraicGeometry.Space.allPathsRelation_source_locallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/GeneratedRelationFiniteType.lean, line 127](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/GeneratedRelationFiniteType.lean#L127). The attribute's comment: “part (5): locally of finite type”.
 
 > **Stacks 048T, part (5).** The source map of the relation of all finite paths is locally of
 > finite type when both endpoint maps of the original pre-relation are.
@@ -185,7 +185,7 @@ theorem allPathsRelation_source_locallyOfFiniteType (P : PathConstruction j)
     IsLocallyOfFiniteType site S hS P.allPathsRelation.source.left.hom
 ```
 
-**`AlgebraicGeometry.Space.allPathsRelation_target_locallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/GeneratedRelationFiniteType.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/GeneratedRelationFiniteType.lean#L142). The attribute's comment: “part (5): locally of finite type”.
+**`AlgebraicGeometry.Space.allPathsRelation_target_locallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/GeneratedRelationFiniteType.lean, line 142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/GeneratedRelationFiniteType.lean#L142). The attribute's comment: “part (5): locally of finite type”.
 
 > **Stacks 048T, part (5).** The target map of the relation of all finite paths is locally of
 > finite type when both endpoint maps of the original pre-relation are.
@@ -197,7 +197,7 @@ theorem allPathsRelation_target_locallyOfFiniteType (P : PathConstruction j)
     IsLocallyOfFiniteType site S hS P.allPathsRelation.target.left.hom
 ```
 
-**`AlgebraicGeometry.Space.isInvariant_allPathsRelation_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/GeneratedRelationInvariance.lean, line 160](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/GeneratedRelationInvariance.lean#L160). The attribute's comment: “part (1): invariance under the generated relation”.
+**`AlgebraicGeometry.Space.isInvariant_allPathsRelation_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/GeneratedRelationInvariance.lean, line 160](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/GeneratedRelationInvariance.lean#L160). The attribute's comment: “part (1): invariance under the generated relation”.
 
 > **Stacks 048T, part (1).** A morphism out of `U` is invariant under a pre-relation exactly
 > when it is invariant under the relation of all finite paths that the pre-relation generates.
@@ -210,7 +210,7 @@ theorem isInvariant_allPathsRelation_iff (P : PathConstruction j) (φ : U.left �
     IsInvariant P.allPathsRelation φ ↔ IsInvariant j φ
 ```
 
-**`AlgebraicGeometry.Space.weakOrbit_allPathsRelation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/GeneratedRelationOrbits.lean, line 184](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/GeneratedRelationOrbits.lean#L184). The attribute's comment: “part (3): weak orbits are unchanged”.
+**`AlgebraicGeometry.Space.weakOrbit_allPathsRelation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/GeneratedRelationOrbits.lean, line 184](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/GeneratedRelationOrbits.lean#L184). The attribute's comment: “part (3): weak orbits are unchanged”.
 
 > **Stacks 048T, part (3).** The weak orbit of a point of `U` at a geometric point of `B` is
 > unchanged when the pre-relation is replaced by the relation of all finite paths it
@@ -223,7 +223,7 @@ theorem weakOrbit_allPathsRelation (p : GeometricPoint site S hS B.obj)
       (presheafPreRelation j).weakOrbit p x
 ```
 
-**`AlgebraicGeometry.Space.orbit_allPathsRelation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/GeneratedRelationOrbits.lean, line 209](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/GeneratedRelationOrbits.lean#L209). The attribute's comment: “part (4): orbits are unchanged”.
+**`AlgebraicGeometry.Space.orbit_allPathsRelation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/GeneratedRelationOrbits.lean, line 209](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/GeneratedRelationOrbits.lean#L209). The attribute's comment: “part (4): orbits are unchanged”.
 
 > **Stacks 048T, part (4).** The orbit of a point of `U` at a geometric point of `B` is
 > unchanged when the pre-relation is replaced by the relation of all finite paths it
@@ -236,7 +236,7 @@ theorem orbit_allPathsRelation (p : GeometricPoint site S hS B.obj)
       (presheafPreRelation j).orbit p x
 ```
 
-**`AlgebraicGeometry.Space.isPreEquivalenceRelation_allPathsRelation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/GeneratedRelationPreEquivalence.lean, line 324](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/GeneratedRelationPreEquivalence.lean#L324). The attribute's comment: “the generated relation is a pre-equivalence relation”.
+**`AlgebraicGeometry.Space.isPreEquivalenceRelation_allPathsRelation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/GeneratedRelationPreEquivalence.lean, line 324](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/GeneratedRelationPreEquivalence.lean#L324). The attribute's comment: “the generated relation is a pre-equivalence relation”.
 
 > **Stacks 048T.** The relation generated by a pre-relation of algebraic spaces over `B`,
 > whose arrows are the finite composable paths of original, identity and reversed arrows, is a
@@ -251,7 +251,7 @@ theorem isPreEquivalenceRelation_allPathsRelation (P : PathConstruction j) :
     IsPreEquivalenceRelation (presheafPreRelation P.allPathsRelation)
 ```
 
-**`AlgebraicGeometry.Space.isIso_quotientSheafToAllPaths`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/GeneratedRelationQuotientSheaf.lean, line 231](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/GeneratedRelationQuotientSheaf.lean#L231). The attribute's comment: “part (2): the quotient sheaf is unchanged”.
+**`AlgebraicGeometry.Space.isIso_quotientSheafToAllPaths`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/GeneratedRelationQuotientSheaf.lean, line 231](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/GeneratedRelationQuotientSheaf.lean#L231). The attribute's comment: “part (2): the quotient sheaf is unchanged”.
 
 > **Stacks 048T**, part (2). The canonical map of quotient sheaves `U/R ⟶ U/R_∞`, from the
 > quotient by a pre-relation to the quotient by the relation of all the finite paths it generates,
@@ -266,7 +266,7 @@ theorem isIso_quotientSheafToAllPaths (P : PathConstruction j) :
 
 [Tag 048U](https://stacks.math.columbia.edu/tag/048U) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.equivalent_iff_weaklyEquivalent_of_locallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/GeometricQuotient.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/GeometricQuotient.lean#L84). The attribute's comment: “finite\_type\_equivalence”.
+**`AlgebraicGeometry.Space.equivalent_iff_weaklyEquivalent_of_locallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/GeometricQuotient.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/GeometricQuotient.lean#L84). The attribute's comment: “finite\_type\_equivalence”.
 
 > **Stacks 048U.** For a pre-relation whose source and target are locally of finite type,
 > two points of `U` over a geometric point of `B` are equivalent exactly when they are already
@@ -284,7 +284,7 @@ theorem equivalent_iff_weaklyEquivalent_of_locallyOfFiniteType (j : PreRelation 
       (presheafPreRelation j).WeaklyEquivalent p.val x y
 ```
 
-**`AlgebraicGeometry.Space.orbit_eq_weakOrbit_of_large_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/LargeFields.lean, line 198](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/LargeFields.lean#L198). The attribute's comment: “large\_field\_orbits”.
+**`AlgebraicGeometry.Space.orbit_eq_weakOrbit_of_large_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/LargeFields.lean, line 198](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/LargeFields.lean#L198). The attribute's comment: “large\_field\_orbits”.
 
 > **Stacks 048U, part (2).** Over a sufficiently large algebraically closed field the orbit
 > of a point of `U` under a pre-relation is its weak orbit over the same field: no extension of
@@ -300,7 +300,7 @@ theorem orbit_eq_weakOrbit_of_large_field {j : PreRelation R U} (P : PathConstru
     (presheafPreRelation j).orbit p x = (presheafPreRelation j).weakOrbit p x
 ```
 
-**`AlgebraicGeometry.Space.equivalent_iff_weaklyEquivalent_of_large_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/LargeFields.lean, line 213](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/LargeFields.lean#L213). The attribute's comment: “large\_field\_equivalence”.
+**`AlgebraicGeometry.Space.equivalent_iff_weaklyEquivalent_of_large_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/LargeFields.lean, line 213](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/LargeFields.lean#L213). The attribute's comment: “large\_field\_equivalence”.
 
 > **Stacks 048U, part (2).** Over a sufficiently large algebraically closed field,
 > equivalence of two points of `U` under a pre-relation is their weak equivalence over the same
@@ -321,7 +321,7 @@ theorem equivalent_iff_weaklyEquivalent_of_large_field {j : PreRelation R U}
 
 [Tag 048V](https://stacks.math.columbia.edu/tag/048V) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsSetTheoreticallyInvariant`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/OrbitSeparation.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/OrbitSeparation.lean#L68). The attribute's comment: “part (1): set-theoretic invariance”.
+**`AlgebraicGeometry.Space.IsSetTheoreticallyInvariant`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/OrbitSeparation.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/OrbitSeparation.lean#L68). The attribute's comment: “part (1): set-theoretic invariance”.
 
 > A morphism out of `U` is *set-theoretically invariant* under a
 > pre-relation when it takes the same value at the two endpoints of every arrow of the
@@ -331,7 +331,7 @@ theorem equivalent_iff_weaklyEquivalent_of_large_field {j : PreRelation R U}
 abbrev IsSetTheoreticallyInvariant (j : PreRelation R U) (φ : U.left ⟶ X) : Prop
 ```
 
-**`AlgebraicGeometry.Space.SeparatesOrbits`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/OrbitSeparation.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/OrbitSeparation.lean#L77). The attribute's comment: “part (2): separation of orbits”.
+**`AlgebraicGeometry.Space.SeparatesOrbits`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/OrbitSeparation.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/OrbitSeparation.lean#L77). The attribute's comment: “part (2): separation of orbits”.
 
 > A morphism out of `U` *separates the orbits* of a pre-relation
 > when it is set-theoretically invariant and two points over an algebraically closed field with
@@ -345,7 +345,7 @@ abbrev SeparatesOrbits (j : PreRelation R U) (φ : U.left ⟶ X) : Prop
 
 [Tag 048W](https://stacks.math.columbia.edu/tag/048W) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isSetTheoreticallyInvariant_iff_eq_of_mem_orbit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/InvarianceOnOrbits.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/InvarianceOnOrbits.lean#L190).
+**`AlgebraicGeometry.Space.isSetTheoreticallyInvariant_iff_eq_of_mem_orbit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/InvarianceOnOrbits.lean, line 190](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/InvarianceOnOrbits.lean#L190).
 
 > A morphism from `U` to an algebraic space is set-theoretically invariant under a
 > pre-relation if and only if, for every algebraically closed field over the base, the induced map
@@ -364,7 +364,7 @@ theorem isSetTheoreticallyInvariant_iff_eq_of_mem_orbit (hX : IsAlgebraicSpace B
 
 [Tag 048X](https://stacks.math.columbia.edu/tag/048X) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isSetTheoreticallyInvariant_of_isInvariant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/OrbitSeparation.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/OrbitSeparation.lean#L85).
+**`AlgebraicGeometry.Space.isSetTheoreticallyInvariant_of_isInvariant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/OrbitSeparation.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/OrbitSeparation.lean#L85).
 
 > A morphism which is invariant under a pre-relation is set-theoretically invariant.
 
@@ -378,7 +378,7 @@ theorem isSetTheoreticallyInvariant_of_isInvariant (j : PreRelation R U) (φ : U
 
 [Tag 048Y](https://stacks.math.columbia.edu/tag/048Y) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isInvariant_of_isSetTheoreticallyInvariant_of_reduced`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/ReducedRelation.lean, line 230](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/ReducedRelation.lean#L230).
+**`AlgebraicGeometry.Space.isInvariant_of_isSetTheoreticallyInvariant_of_reduced`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/ReducedRelation.lean, line 230](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/ReducedRelation.lean#L230).
 
 > **Stacks 048Y.** On a reduced relation space, set-theoretic invariance of a morphism to a
 > locally separated target implies that the morphism is invariant under the pre-relation.
@@ -397,7 +397,7 @@ theorem isInvariant_of_isSetTheoreticallyInvariant_of_reduced {R U X : Over Z}
 
 [Tag 048Z](https://stacks.math.columbia.edu/tag/048Z) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.diskToInvolutionQuotient`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NonInvariantFormalDiskExample.lean, line 328](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NonInvariantFormalDiskExample.lean#L328). The attribute's comment: “the coordinate map to the quotient”.
+**`AlgebraicGeometry.Space.diskToInvolutionQuotient`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NonInvariantFormalDiskExample.lean, line 333](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/NonInvariantFormalDiskExample.lean#L333). The attribute's comment: “the coordinate map to the quotient”.
 
 > **Stacks 048Z.** The morphism from the formal disk to the quotient of the affine line by
 > the involution relation given by the power-series variable.
@@ -408,7 +408,7 @@ noncomputable def diskToInvolutionQuotient
     yoneda.obj (siteFormalDisk k B hS hD) ⟶ (involutionQuotient k B hS).obj
 ```
 
-**`AlgebraicGeometry.Space.diskToInvolutionQuotientNeg`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NonInvariantFormalDiskExample.lean, line 337](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NonInvariantFormalDiskExample.lean#L337). The attribute's comment: “the negated coordinate map to the quotient”.
+**`AlgebraicGeometry.Space.diskToInvolutionQuotientNeg`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NonInvariantFormalDiskExample.lean, line 342](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/NonInvariantFormalDiskExample.lean#L342). The attribute's comment: “the negated coordinate map to the quotient”.
 
 > **Stacks 048Z.** The morphism from the formal disk to the quotient of the affine line by
 > the involution relation given by the negative of the power-series variable.
@@ -419,7 +419,7 @@ noncomputable def diskToInvolutionQuotientNeg
     yoneda.obj (siteFormalDisk k B hS hD) ⟶ (involutionQuotient k B hS).obj
 ```
 
-**`AlgebraicGeometry.Space.diskMaps_agree_on_fieldPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NonInvariantFormalDiskExample.lean, line 412](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NonInvariantFormalDiskExample.lean#L412). The attribute's comment: “agreement on field-valued points”.
+**`AlgebraicGeometry.Space.diskMaps_agree_on_fieldPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NonInvariantFormalDiskExample.lean, line 417](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/NonInvariantFormalDiskExample.lean#L417). The attribute's comment: “agreement on field-valued points”.
 
 > **Stacks 048Z.** The two morphisms from the formal disk to the quotient agree after
 > every field-valued point of the disk.
@@ -435,7 +435,7 @@ theorem diskMaps_agree_on_fieldPoints
       yoneda.map g ≫ diskToInvolutionQuotientNeg k B hS hD
 ```
 
-**`AlgebraicGeometry.Space.diskMaps_ne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NonInvariantFormalDiskExample.lean, line 563](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NonInvariantFormalDiskExample.lean#L563). The attribute's comment: “distinct morphisms”.
+**`AlgebraicGeometry.Space.diskMaps_ne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NonInvariantFormalDiskExample.lean, line 568](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/NonInvariantFormalDiskExample.lean#L568). The attribute's comment: “distinct morphisms”.
 
 > **Stacks 048Z.** Away from characteristic two, the two morphisms from the formal disk to
 > the quotient are nevertheless distinct.
@@ -446,49 +446,86 @@ theorem diskMaps_ne (hchar : (2 : k) ≠ 0)
     diskToInvolutionQuotient k B hS hD ≠ diskToInvolutionQuotientNeg k B hS hD
 ```
 
-**`AlgebraicGeometry.Space.exists_setTheoreticallyInvariant_not_invariant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NonInvariantFormalDiskExample.lean, line 618](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NonInvariantFormalDiskExample.lean#L618). The attribute's comment: “quasi-separatedness does not suffice”.
+**`AlgebraicGeometry.Space.exists_algebraicSpaces_setTheoreticallyInvariant_not_invariant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NonInvariantFormalDiskExample.lean, line 637](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/NonInvariantFormalDiskExample.lean#L637). The attribute's comment: “quasi-separatedness does not suffice in 048Y”.
 
 > **Stacks 048Z.** Quasi-separatedness of the target cannot replace local separatedness in
 > the criterion `AlgebraicGeometry.Space.isInvariant_of_isSetTheoreticallyInvariant_of_reduced`
-> (**Stacks 048Y**): over a field in which two is invertible there is a pre-relation on a
-> reduced algebraic space, with quasi-separated target, carrying a set-theoretically invariant
-> morphism which is not invariant.
+> (**Stacks 048Y**): over a field in which two is invertible there are an algebraic space `Z`
+> and algebraic spaces `R`, `U`, `X` over `Z`, a pre-relation `j : R ⟶ U ×_Z U` and a morphism
+> `φ : U ⟶ X` over `Z` such that `φ` is set-theoretically invariant, `R` is reduced, `X` is
+> quasi-separated over `Z` (and an fppf sheaf), and yet `φ` is not invariant.
 >
-> The relation is the formal disk, acting on itself by the identity and by negation of the
-> coordinate, and the morphism is the coordinate map to the quotient of the affine line by the
-> involution relation.  Quasi-separatedness of that quotient is **Stacks 02Z1**, taken from
-> `AlgebraicGeometry.AffineLineInvolution.isAbsolutelyQuasiSeparated_involutionQuotient` and
+> The base `Z` is `Spec k`, the relation is the formal disk `Spec k[[x]]` acting on itself by
+> the identity and by negation of the coordinate, and the morphism is the coordinate map to the
+> quotient of the affine line by the involution relation of **Stacks 02Z1**, whose
+> quasi-separatedness is
+> `AlgebraicGeometry.AffineLineInvolution.isAbsolutelyQuasiSeparated_involutionQuotient`,
 > converted to quasi-separatedness of the structure morphism by **Stacks 073B** part (2).
 
 ```lean
-theorem exists_setTheoreticallyInvariant_not_invariant (hchar : (2 : k) ≠ 0)
+theorem exists_algebraicSpaces_setTheoreticallyInvariant_not_invariant (hchar : (2 : k) ≠ 0)
     (hZ : B.Contains (⊤_ Scheme.{u}))
     [HasSheafify (BigFppfOver.topology B (Spec (.of k)) hS) (Type u)] :
     ∃ (Z : (BigFppfOver B (Spec (.of k)) hS)ᵒᵖ ⥤ Type u) (R U X : Over Z)
       (j : PreRelation R U) (φ : U ⟶ X),
-      HasEtaleLocalProperty B (Spec (.of k)) hS R.left (fun T : Scheme.{u} ↦ IsReduced T) ∧
+      IsAlgebraicSpace B (Spec (.of k)) hS Z ∧
+        IsAlgebraicSpace B (Spec (.of k)) hS R.left ∧
+        IsAlgebraicSpace B (Spec (.of k)) hS U.left ∧
+        IsAlgebraicSpace B (Spec (.of k)) hS X.left ∧
+        IsSetTheoreticallyInvariant j φ.left ∧
+        HasEtaleLocalProperty B (Spec (.of k)) hS R.left (fun T : Scheme.{u} ↦ IsReduced T) ∧
         IsQuasiSeparated B (Spec (.of k)) hS X.hom ∧
-        IsSetTheoreticallyInvariant j φ.left ∧ ¬ IsInvariant j φ.left
+        Presheaf.IsSheaf (BigFppfOver.topology B (Spec (.of k)) hS) X.left ∧
+        ¬ IsInvariant j φ.left
 ```
 
-**`AlgebraicGeometry.Space.exists_agree_on_fieldPoints_ne_and_not_invariant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NonInvariantFormalDiskExample.lean, line 755](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NonInvariantFormalDiskExample.lean#L755).
+**`AlgebraicGeometry.Space.not_forall_isInvariant_of_isQuasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NonInvariantFormalDiskExample.lean, line 698](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/NonInvariantFormalDiskExample.lean#L698). The attribute's comment: “048Y fails for quasi-separated targets”.
+
+> **Stacks 048Z.** **Stacks 048Y** fails with local separatedness of the target replaced by
+> quasi-separatedness: over a field in which two is invertible it is not true that for every
+> algebraic space `Z`, all algebraic spaces `R`, `U`, `X` over `Z`, every pre-relation
+> `j : R ⟶ U ×_Z U` and every morphism `φ : U ⟶ X` over `Z`, set-theoretic invariance of `φ`,
+> reducedness of `R`, quasi-separatedness of `X` over `Z` and the sheaf condition on `X` imply
+> that `φ` is invariant.  This is the hypothesis list of
+> `AlgebraicGeometry.Space.isInvariant_of_isSetTheoreticallyInvariant_of_reduced` with
+> `IsLocallySeparated` replaced by `IsQuasiSeparated`.
+
+```lean
+theorem not_forall_isInvariant_of_isQuasiSeparated (hchar : (2 : k) ≠ 0)
+    (hZ : B.Contains (⊤_ Scheme.{u}))
+    [HasSheafify (BigFppfOver.topology B (Spec (.of k)) hS) (Type u)] :
+    ¬ ∀ (Z : (BigFppfOver B (Spec (.of k)) hS)ᵒᵖ ⥤ Type u) (R U X : Over Z)
+      (j : PreRelation R U) (φ : U ⟶ X),
+      IsAlgebraicSpace B (Spec (.of k)) hS Z →
+        IsAlgebraicSpace B (Spec (.of k)) hS R.left →
+        IsAlgebraicSpace B (Spec (.of k)) hS U.left →
+        IsAlgebraicSpace B (Spec (.of k)) hS X.left →
+        IsSetTheoreticallyInvariant j φ.left →
+        HasEtaleLocalProperty B (Spec (.of k)) hS R.left (fun T : Scheme.{u} ↦ IsReduced T) →
+        IsQuasiSeparated B (Spec (.of k)) hS X.hom →
+        Presheaf.IsSheaf (BigFppfOver.topology B (Spec (.of k)) hS) X.left →
+        IsInvariant j φ.left
+```
+
+**`AlgebraicGeometry.Space.exists_agree_on_fieldPoints_ne_and_algebraicSpaces_not_invariant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NonInvariantFormalDiskExample.lean, line 872](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/NonInvariantFormalDiskExample.lean#L872).
 
 > **Stacks 048Z.** Over a field in which two is invertible there are reduced
 > quasi-separated algebraic spaces `X`, `Y` and two morphisms `a, b : Y ⟶ X` which agree on
-> every field-valued point of `Y` yet are not equal; consequently quasi-separatedness of the
-> target cannot replace local separatedness in the criterion
-> `AlgebraicGeometry.Space.isInvariant_of_isSetTheoreticallyInvariant_of_reduced` (**Stacks
-> 048Y**), because there is a pre-relation on a reduced algebraic space with quasi-separated
-> target carrying a set-theoretically invariant morphism which is not invariant.
+> every field-valued point of `Y` yet are not equal; consequently **Stacks 048Y**
+> (`AlgebraicGeometry.Space.isInvariant_of_isSetTheoreticallyInvariant_of_reduced`) does not
+> hold with local separatedness of the target replaced by quasi-separatedness: there are an
+> algebraic space `Z`, algebraic spaces `R`, `U`, `X` over `Z`, a pre-relation
+> `j : R ⟶ U ×_Z U` with `R` reduced and `X` quasi-separated over `Z`, and a set-theoretically
+> invariant morphism `φ : U ⟶ X` over `Z` which is not invariant.
 >
 > The spaces are `Y = Spec k[[x]]` and `X = 𝔸¹_k/(Δ ⨿ {(x, -x) | x ≠ 0})`, the algebraic space
 > of **Stacks 02Z1**, and the two morphisms are the coordinate and its negative followed by the
-> projection to the quotient.  The pre-relation witnessing the second assertion is `Y` acting
-> on itself by the identity and by negation of the coordinate.
+> projection to the quotient.  For the second assertion `Z = Spec k`, `R = U = Y` with
+> `s = 1`, `t = -1`, and `φ = a`.
 
 ```lean
-theorem exists_agree_on_fieldPoints_ne_and_not_invariant (hchar : (2 : k) ≠ 0)
-    (hZ : B.Contains (⊤_ Scheme.{u}))
+theorem exists_agree_on_fieldPoints_ne_and_algebraicSpaces_not_invariant
+    (hchar : (2 : k) ≠ 0) (hZ : B.Contains (⊤_ Scheme.{u}))
     [HasSheafify (BigFppfOver.topology B (Spec (.of k)) hS) (Type u)] :
     (∃ (X Y : (BigFppfOver B (Spec (.of k)) hS)ᵒᵖ ⥤ Type u) (a b : Y ⟶ X),
         IsAlgebraicSpace B (Spec (.of k)) hS X ∧
@@ -505,17 +542,23 @@ theorem exists_agree_on_fieldPoints_ne_and_not_invariant (hchar : (2 : k) ≠ 0)
         a ≠ b) ∧
       ∃ (Z : (BigFppfOver B (Spec (.of k)) hS)ᵒᵖ ⥤ Type u) (R U X : Over Z)
         (j : PreRelation R U) (φ : U ⟶ X),
-        HasEtaleLocalProperty B (Spec (.of k)) hS R.left
+        IsAlgebraicSpace B (Spec (.of k)) hS Z ∧
+          IsAlgebraicSpace B (Spec (.of k)) hS R.left ∧
+          IsAlgebraicSpace B (Spec (.of k)) hS U.left ∧
+          IsAlgebraicSpace B (Spec (.of k)) hS X.left ∧
+          IsSetTheoreticallyInvariant j φ.left ∧
+          HasEtaleLocalProperty B (Spec (.of k)) hS R.left
             (fun T : Scheme.{u} ↦ IsReduced T) ∧
           IsQuasiSeparated B (Spec (.of k)) hS X.hom ∧
-          IsSetTheoreticallyInvariant j φ.left ∧ ¬ IsInvariant j φ.left
+          Presheaf.IsSheaf (BigFppfOver.topology B (Spec (.of k)) hS) X.left ∧
+          ¬ IsInvariant j φ.left
 ```
 
 ## Tag 0490, a definition
 
 [Tag 0490](https://stacks.math.columbia.edu/tag/0490) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsSetTheoreticPreEquivalenceRelation`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/SetTheoreticEquivalence.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/SetTheoreticEquivalence.lean#L131). The attribute's comment: “part (1): set-theoretic pre-equivalence relation”.
+**`AlgebraicGeometry.Space.IsSetTheoreticPreEquivalenceRelation`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/SetTheoreticEquivalence.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/SetTheoreticEquivalence.lean#L131). The attribute's comment: “part (1): set-theoretic pre-equivalence relation”.
 
 > **Stacks 0490, part (1).** A pre-relation is a *set-theoretic pre-equivalence relation*
 > when the relation it induces on the fibres of the points over every algebraically closed
@@ -526,7 +569,7 @@ theorem exists_agree_on_fieldPoints_ne_and_not_invariant (hchar : (2 : k) ≠ 0)
 abbrev IsSetTheoreticPreEquivalenceRelation (j : PreRelation R U) : Prop
 ```
 
-**`AlgebraicGeometry.Space.IsSetTheoreticEquivalenceRelation`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/SetTheoreticEquivalence.lean, line 139](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/SetTheoreticEquivalence.lean#L139). The attribute's comment: “part (2): set-theoretic equivalence relation”.
+**`AlgebraicGeometry.Space.IsSetTheoreticEquivalenceRelation`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/SetTheoreticEquivalence.lean, line 139](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/SetTheoreticEquivalence.lean#L139). The attribute's comment: “part (2): set-theoretic equivalence relation”.
 
 > **Stacks 0490, part (2).** A *set-theoretic equivalence relation* is a universally
 > injective set-theoretic pre-equivalence relation.
@@ -539,7 +582,7 @@ abbrev IsSetTheoreticEquivalenceRelation (j : PreRelation R U) : Prop
 
 [Tag 0491](https://stacks.math.columbia.edu/tag/0491) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.PreRelation.ContainsRelationImages`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/PreEquivalenceGeometricCriterion.lean, line 837](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/PreEquivalenceGeometricCriterion.lean#L837). The attribute's comment: “part (2): the three image containments”.
+**`AlgebraicGeometry.Space.PreRelation.ContainsRelationImages`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/PreEquivalenceGeometricCriterion.lean, line 837](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/PreEquivalenceGeometricCriterion.lean#L837). The attribute's comment: “part (2): the three image containments”.
 
 > **Stacks 0491, part (2).** A pre-relation *contains the relation images* when its image on
 > topological points contains the images of the diagonal of `U`, of the flip of the pre-relation
@@ -549,7 +592,7 @@ abbrev IsSetTheoreticEquivalenceRelation (j : PreRelation R U) : Prop
 noncomputable abbrev PreRelation.ContainsRelationImages (j : PreRelation R U) : Prop
 ```
 
-**`AlgebraicGeometry.Space.isSetTheoreticPreEquivalenceRelation_iff_containsRelationImages`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/PreEquivalenceGeometricCriterion.lean, line 850](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/PreEquivalenceGeometricCriterion.lean#L850). The attribute's comment: “parts (1) and (2)”.
+**`AlgebraicGeometry.Space.isSetTheoreticPreEquivalenceRelation_iff_containsRelationImages`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/PreEquivalenceGeometricCriterion.lean, line 850](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/PreEquivalenceGeometricCriterion.lean#L850). The attribute's comment: “parts (1) and (2)”.
 
 > **Stacks 0491, parts (1) and (2).** A pre-relation is a set-theoretic pre-equivalence
 > relation exactly when its image on points contains the images of the diagonal, of the flip and
@@ -562,7 +605,7 @@ theorem isSetTheoreticPreEquivalenceRelation_iff_containsRelationImages
       j.ContainsRelationImages
 ```
 
-**`AlgebraicGeometry.Space.containsRelationImages_iff_exists_geometricRel_equivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/PreEquivalenceGeometricCriterion.lean, line 1051](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/PreEquivalenceGeometricCriterion.lean#L1051). The attribute's comment: “parts (2) and (3)”.
+**`AlgebraicGeometry.Space.containsRelationImages_iff_exists_geometricRel_equivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/PreEquivalenceGeometricCriterion.lean, line 1051](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/PreEquivalenceGeometricCriterion.lean#L1051). The attribute's comment: “parts (2) and (3)”.
 
 > **Stacks 0491, parts (2) and (3).** The three image containments hold exactly when the
 > relation cut out by the arrows already present over `k` is an equivalence relation for every
@@ -578,7 +621,7 @@ theorem containsRelationImages_iff_exists_geometricRel_equivalence (j : PreRelat
         κ < Cardinal.mk k → Equivalence ((presheafPreRelation j).GeometricRel k hk b β)
 ```
 
-**`AlgebraicGeometry.Space.isSetTheoreticPreEquivalenceRelation_iff_geometricRel_equivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/PreEquivalenceGeometricCriterion.lean, line 1080](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/PreEquivalenceGeometricCriterion.lean#L1080). The attribute's comment: “part (4)”.
+**`AlgebraicGeometry.Space.isSetTheoreticPreEquivalenceRelation_iff_geometricRel_equivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/PreEquivalenceGeometricCriterion.lean, line 1080](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/PreEquivalenceGeometricCriterion.lean#L1080). The attribute's comment: “part (4)”.
 
 > **Stacks 0491, part (4).** For a pre-relation whose source and target are locally of
 > finite type no cardinal bound is needed: the set-theoretic pre-equivalence condition is
@@ -600,7 +643,7 @@ theorem isSetTheoreticPreEquivalenceRelation_iff_geometricRel_equivalence
 
 [Tag 049X](https://stacks.math.columbia.edu/tag/049X) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isSetTheoreticEquivalenceRelation_iff_containsRelationImages`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/SetTheoreticEquivalenceCriterion.lean, line 405](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/SetTheoreticEquivalenceCriterion.lean#L405). The attribute's comment: “conditions (1) and (2)”.
+**`AlgebraicGeometry.Space.isSetTheoreticEquivalenceRelation_iff_containsRelationImages`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/SetTheoreticEquivalenceCriterion.lean, line 407](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/SetTheoreticEquivalenceCriterion.lean#L407). The attribute's comment: “conditions (1) and (2)”.
 
 > **Stacks 049X, conditions (1) and (2).** A pre-relation of algebraic spaces is a
 > set-theoretic equivalence relation exactly when it is universally injective and its image on
@@ -617,7 +660,7 @@ theorem isSetTheoreticEquivalenceRelation_iff_containsRelationImages (j : PreRel
         j.ContainsRelationImages
 ```
 
-**`AlgebraicGeometry.Space.isSetTheoreticEquivalenceRelation_iff_exists_hasGeometricEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/SetTheoreticEquivalenceCriterion.lean, line 421](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/SetTheoreticEquivalenceCriterion.lean#L421). The attribute's comment: “conditions (1) and (3)”.
+**`AlgebraicGeometry.Space.isSetTheoreticEquivalenceRelation_iff_exists_hasGeometricEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/SetTheoreticEquivalenceCriterion.lean, line 423](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/SetTheoreticEquivalenceCriterion.lean#L423). The attribute's comment: “conditions (1) and (3)”.
 
 > **Stacks 049X, conditions (1) and (3).** A pre-relation of algebraic spaces is a
 > set-theoretic equivalence relation exactly when, over every algebraically closed field in the
@@ -639,7 +682,7 @@ theorem isSetTheoreticEquivalenceRelation_iff_exists_hasGeometricEquivalence
         κ < Cardinal.mk k → j.HasGeometricEquivalence k hk b β
 ```
 
-**`AlgebraicGeometry.Space.isSetTheoreticEquivalenceRelation_iff_hasGeometricEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/SetTheoreticEquivalenceCriterion.lean, line 547](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/SetTheoreticEquivalenceCriterion.lean#L547). The attribute's comment: “condition (4)”.
+**`AlgebraicGeometry.Space.isSetTheoreticEquivalenceRelation_iff_hasGeometricEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/SetTheoreticEquivalenceCriterion.lean, line 549](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/SetTheoreticEquivalenceCriterion.lean#L549). The attribute's comment: “condition (4)”.
 
 > **Stacks 049X, condition (4).** For a pre-relation of algebraic spaces which is decent,
 > locally separated or quasi-separated the cardinality restriction can be dropped: it is a
@@ -670,7 +713,7 @@ theorem isSetTheoreticEquivalenceRelation_iff_hasGeometricEquivalence
 
 [Tag 0492](https://stacks.math.columbia.edu/tag/0492) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isSetTheoreticPreEquivalenceRelation_of_isPreEquivalenceRelation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/SetTheoreticEquivalence.lean, line 182](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/SetTheoreticEquivalence.lean#L182). The attribute's comment: “part (1): a pre-equivalence relation”.
+**`AlgebraicGeometry.Space.isSetTheoreticPreEquivalenceRelation_of_isPreEquivalenceRelation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/SetTheoreticEquivalence.lean, line 182](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/SetTheoreticEquivalence.lean#L182). The attribute's comment: “part (1): a pre-equivalence relation”.
 
 > **Stacks 0492, part (1).** A pre-equivalence relation is a set-theoretic pre-equivalence
 > relation: over every algebraically closed field over the base, the relation its arrows induce
@@ -683,7 +726,7 @@ theorem isSetTheoreticPreEquivalenceRelation_of_isPreEquivalenceRelation
     IsSetTheoreticPreEquivalenceRelation j
 ```
 
-**`AlgebraicGeometry.Space.isSetTheoreticPreEquivalenceRelation_groupoidPreRelation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/SetTheoreticEquivalence.lean, line 249](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/SetTheoreticEquivalence.lean#L249). The attribute's comment: “part (1): a groupoid in algebraic spaces”.
+**`AlgebraicGeometry.Space.isSetTheoreticPreEquivalenceRelation_groupoidPreRelation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/SetTheoreticEquivalence.lean, line 249](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/SetTheoreticEquivalence.lean#L249). The attribute's comment: “part (1): a groupoid in algebraic spaces”.
 
 > **Stacks 0492, part (1).** The pre-relation of a groupoid in algebraic spaces is a
 > set-theoretic pre-equivalence relation.
@@ -694,7 +737,7 @@ theorem isSetTheoreticPreEquivalenceRelation_groupoidPreRelation
     IsSetTheoreticPreEquivalenceRelation (groupoidPreRelation G)
 ```
 
-**`AlgebraicGeometry.Space.isSetTheoreticPreEquivalenceRelation_groupoidOfAction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/SetTheoreticEquivalence.lean, line 258](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/SetTheoreticEquivalence.lean#L258). The attribute's comment: “part (1): an action of a group algebraic space”.
+**`AlgebraicGeometry.Space.isSetTheoreticPreEquivalenceRelation_groupoidOfAction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/SetTheoreticEquivalence.lean, line 258](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/SetTheoreticEquivalence.lean#L258). The attribute's comment: “part (1): an action of a group algebraic space”.
 
 > **Stacks 0492, part (1).** The pre-relation of the groupoid of an action of a group
 > algebraic space on an algebraic space is a set-theoretic pre-equivalence relation.
@@ -707,7 +750,7 @@ theorem isSetTheoreticPreEquivalenceRelation_groupoidOfAction
       (groupoidPreRelation (groupoidOfAction A G W hG hW).groupoid)
 ```
 
-**`AlgebraicGeometry.Space.isSetTheoreticEquivalenceRelation_of_isEquivalenceRelation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/SetTheoreticEquivalence.lean, line 269](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/SetTheoreticEquivalence.lean#L269). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.Space.isSetTheoreticEquivalenceRelation_of_isEquivalenceRelation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/SetTheoreticEquivalence.lean, line 269](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/SetTheoreticEquivalence.lean#L269). The attribute's comment: “part (2)”.
 
 > **Stacks 0492, part (2).** An equivalence relation is a set-theoretic equivalence
 > relation: it is a monomorphism, hence universally injective, and a pre-equivalence relation,
@@ -723,7 +766,7 @@ theorem isSetTheoreticEquivalenceRelation_of_isEquivalenceRelation (j : PreRelat
 
 [Tag 049Y](https://stacks.math.columbia.edu/tag/049Y) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isSetTheoreticallyInvariant_iff_isSurjective_invarianceToRelation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/InvarianceSquare.lean, line 714](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/InvarianceSquare.lean#L714). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.Space.isSetTheoreticallyInvariant_iff_isSurjective_invarianceToRelation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/InvarianceSquare.lean, line 716](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/InvarianceSquare.lean#L716). The attribute's comment: “part (1)”.
 
 > **Stacks 049Y, part (1).** A morphism `φ : U ⟶ X` over the base, with `X` an algebraic
 > space, is set-theoretically invariant under a pre-relation `j : R ⟶ U ×_Z U` if and only if
@@ -736,7 +779,7 @@ theorem isSetTheoreticallyInvariant_iff_isSurjective_invarianceToRelation
       IsSurjective B S hS (j.invarianceToRelation φ).left
 ```
 
-**`AlgebraicGeometry.Space.separatesOrbits_of_isSurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/InvarianceSquare.lean, line 735](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/InvarianceSquare.lean#L735). The attribute's comment: “part (3): separation of orbits”.
+**`AlgebraicGeometry.Space.separatesOrbits_of_isSurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/InvarianceSquare.lean, line 737](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/InvarianceSquare.lean#L737). The attribute's comment: “part (3): separation of orbits”.
 
 > **Stacks 049Y, part (3).** If both projections of the square are surjective, then the
 > morphism `φ` separates the orbits of the pre-relation.
@@ -749,7 +792,7 @@ theorem separatesOrbits_of_isSurjective (hX : IsAlgebraicSpace B S hS X.left)
     SeparatesOrbits j φ.left
 ```
 
-**`AlgebraicGeometry.Space.isSetTheoreticPreEquivalenceRelation_of_isSurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/InvarianceSquare.lean, line 770](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/InvarianceSquare.lean#L770). The attribute's comment: “part (3): set-theoretic pre-equivalence relation”.
+**`AlgebraicGeometry.Space.isSetTheoreticPreEquivalenceRelation_of_isSurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/InvarianceSquare.lean, line 772](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/InvarianceSquare.lean#L772). The attribute's comment: “part (3): set-theoretic pre-equivalence relation”.
 
 > **Stacks 049Y, part (3).** If both projections of the square are surjective, then the
 > pre-relation is a set-theoretic pre-equivalence relation.
@@ -762,7 +805,7 @@ theorem isSetTheoreticPreEquivalenceRelation_of_isSurjective
     IsSetTheoreticPreEquivalenceRelation j
 ```
 
-**`AlgebraicGeometry.Space.separatesOrbits_iff_isSurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/InvarianceSquare.lean, line 791](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/InvarianceSquare.lean#L791). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.Space.separatesOrbits_iff_isSurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/InvarianceSquare.lean, line 793](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/InvarianceSquare.lean#L793). The attribute's comment: “part (2)”.
 
 > **Stacks 049Y, part (2).** For a set-theoretic pre-equivalence relation, a morphism
 > `φ : U ⟶ X` over the base, with `X` an algebraic space, separates the orbits of the
@@ -776,7 +819,7 @@ theorem separatesOrbits_iff_isSurjective (hX : IsAlgebraicSpace B S hS X.left)
         IsSurjective B S hS (j.invarianceToSelfFibreProduct φ).left)
 ```
 
-**`AlgebraicGeometry.Space.separatesOrbits_iff_isSurjective_toSelfFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/InvarianceSquare.lean, line 857](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/InvarianceSquare.lean#L857). The attribute's comment: “part (4)”.
+**`AlgebraicGeometry.Space.separatesOrbits_iff_isSurjective_toSelfFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/InvarianceSquare.lean, line 859](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/InvarianceSquare.lean#L859). The attribute's comment: “part (4)”.
 
 > **Stacks 049Y, part (4).** If `φ : U ⟶ X` is invariant under a set-theoretic
 > pre-equivalence relation `j : R ⟶ U ×_Z U`, with `X` an algebraic space, then `φ` separates
@@ -795,7 +838,7 @@ theorem separatesOrbits_iff_isSurjective_toSelfFibreProduct
 
 [Tag 0493](https://stacks.math.columbia.edu/tag/0493) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsOrbitSpace`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/OrbitSeparation.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/OrbitSeparation.lean#L95).
+**`AlgebraicGeometry.Space.IsOrbitSpace`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/OrbitSeparation.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/OrbitSeparation.lean#L95).
 
 > A morphism out of `U` is an *orbit space* for a pre-relation when it is
 > invariant under the pre-relation, separates its orbits, and is surjective on points.
@@ -808,7 +851,7 @@ abbrev IsOrbitSpace (j : PreRelation R U) (φ : U.left ⟶ X) : Prop
 
 [Tag 049Z](https://stacks.math.columbia.edu/tag/049Z) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isOrbitSpace_iff_isSurjective_toSelfFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/OrbitSpaceCriterion.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/OrbitSpaceCriterion.lean#L84).
+**`AlgebraicGeometry.Space.isOrbitSpace_iff_isSurjective_toSelfFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/OrbitSpaceCriterion.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/OrbitSpaceCriterion.lean#L84).
 
 > **Stacks 049Z.** Let `j : R ⟶ U ×_Z U` be a set-theoretic pre-equivalence relation and
 > let `φ : U ⟶ X` be a morphism over the base whose target is an algebraic space. Then `φ` is
@@ -835,7 +878,7 @@ theorem isOrbitSpace_iff_isSurjective_toSelfFibreProduct
 
 [Tag 04A0](https://stacks.math.columbia.edu/tag/04A0) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isOrbitSpace_iff_geometricPoints_quotient_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/GeometricQuotient.lean, line 196](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/GeometricQuotient.lean#L196).
+**`AlgebraicGeometry.Space.isOrbitSpace_iff_geometricPoints_quotient_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/GeometricQuotient.lean, line 196](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Quotients/OrbitSpaces/GeometricQuotient.lean#L196).
 
 > **Stacks 04A0.** For a pre-relation whose relation space and whose source are locally of
 > finite type over the base, an invariant morphism out of `U` is an orbit space for the
@@ -870,4 +913,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 83.5, Tag 048M](https://stacks.math.columbia.edu/tag/048M)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

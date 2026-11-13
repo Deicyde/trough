@@ -8,13 +8,13 @@ proof: formalized
 
 # 42.3 Calculation of some multiplicities
 
-Section 42.3 of the Stacks Project, [Tag 0EAA](https://stacks.math.columbia.edu/tag/0EAA). 4 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 42.3 of the Stacks Project, [Tag 0EAA](https://stacks.math.columbia.edu/tag/0EAA). 4 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 02QF, a lemma
 
 [Tag 02QF](https://stacks.math.columbia.edu/tag/02QF) in the Stacks Project.
 
-**`AlgebraicGeometry.periodicLength_mul_eq_finsum_support`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/CalculationMultiplicities/Multiplication.lean, line 390](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/CalculationMultiplicities/Multiplication.lean#L390).
+**`AlgebraicGeometry.periodicLength_mul_eq_finsum_support`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/CalculationMultiplicities/Multiplication.lean, line 390](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/CalculationMultiplicities/Multiplication.lean#L390).
 
 > **Stacks Project, Tag 02QF.** The multiplicity of the periodic complex `(M, 0, x)` is
 > the sum, over the nonclosed points in the support of `M`, of the order of `x` modulo that
@@ -40,7 +40,7 @@ public theorem periodicLength_mul_eq_finsum_support
 
 [Tag 02QG](https://stacks.math.columbia.edu/tag/02QG) in the Stacks Project.
 
-**`AlgebraicGeometry.length_quotSMulTop_eq_sum_minimal_support`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/CalculationMultiplicities/RestrictedDivisors.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/CalculationMultiplicities/RestrictedDivisors.lean#L143). The attribute's comment: “Cohen-Macaulay module formula”.
+**`AlgebraicGeometry.length_quotSMulTop_eq_sum_minimal_support`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/CalculationMultiplicities/RestrictedDivisors.lean, line 143](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/CalculationMultiplicities/RestrictedDivisors.lean#L143). The attribute's comment: “Cohen-Macaulay module formula”.
 
 > **Stacks Project, Tag 02QG, first assertion.** If `M` is a finite
 > Cohen--Macaulay module whose support has dimension one and whose quotient by
@@ -62,7 +62,7 @@ public theorem length_quotSMulTop_eq_sum_minimal_support
             (LocalizedModule q.asIdeal.primeCompl M)
 ```
 
-**`AlgebraicGeometry.length_quotient_span_sup_eq_sum_minimalPrimes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/CalculationMultiplicities/RestrictedDivisors.lean, line 161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/CalculationMultiplicities/RestrictedDivisors.lean#L161). The attribute's comment: “quotient-ring formula”.
+**`AlgebraicGeometry.length_quotient_span_sup_eq_sum_minimalPrimes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/CalculationMultiplicities/RestrictedDivisors.lean, line 161](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/CalculationMultiplicities/RestrictedDivisors.lean#L161). The attribute's comment: “quotient-ring formula”.
 
 > **Stacks Project, Tag 02QG, second assertion.** If `x` is a
 > nonzerodivisor on the one-dimensional quotient `R / I`, then the colength of
@@ -85,7 +85,7 @@ public theorem length_quotient_span_sup_eq_sum_minimalPrimes
 
 [Tag 0EAB](https://stacks.math.columbia.edu/tag/0EAB) in the Stacks Project.
 
-**`AlgebraicGeometry.periodicLength_powers_eq_zero_of_nilpotent`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/CalculationMultiplicities/NilpotentPowers.lean, line 397](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/CalculationMultiplicities/NilpotentPowers.lean#L397).
+**`AlgebraicGeometry.periodicLength_powers_eq_zero_of_nilpotent`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/CalculationMultiplicities/NilpotentPowers.lean, line 397](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/CalculationMultiplicities/NilpotentPowers.lean#L397).
 
 > If `φ` is nilpotent of order at most `n` and
 > `ker φ / range (φ ^ (n - 1))` has finite length, then the periodic length associated to
@@ -109,7 +109,7 @@ public lemma periodicLength_powers_eq_zero_of_nilpotent {R : Type u} [Ring R]
           (by rw [← pow_add, Nat.sub_add_cancel hi, hnil])) = 0
 ```
 
-**`AlgebraicGeometry.isFiniteLength_homology_and_periodicLength_powers_eq_zero_of_nilpotent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/CalculationMultiplicities/NilpotentPowers.lean, line 428](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/CalculationMultiplicities/NilpotentPowers.lean#L428).
+**`AlgebraicGeometry.isFiniteLength_homology_and_periodicLength_powers_eq_zero_of_nilpotent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/CalculationMultiplicities/NilpotentPowers.lean, line 428](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/CalculationMultiplicities/NilpotentPowers.lean#L428).
 
 > **Stacks 0EAB.** Let `φ` be an endomorphism of an `R`-module `M` and `n > 0` with
 > `φ ^ n = 0` such that `ker φ / range (φ ^ (n - 1))` has finite length. Then for every
@@ -142,7 +142,7 @@ public theorem isFiniteLength_homology_and_periodicLength_powers_eq_zero_of_nilp
 
 [Tag 0EAC](https://stacks.math.columbia.edu/tag/0EAC) in the Stacks Project.
 
-**`AlgebraicGeometry.periodicLength_smul_fst`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/CalculationMultiplicities/ScalarMultiple.lean, line 243](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/CalculationMultiplicities/ScalarMultiple.lean#L243). The attribute's comment: “multiplying the first differential”.
+**`AlgebraicGeometry.periodicLength_smul_fst`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/CalculationMultiplicities/ScalarMultiple.lean, line 243](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/CalculationMultiplicities/ScalarMultiple.lean#L243). The attribute's comment: “multiplying the first differential”.
 
 > Multiplying the first differential of a two-periodic complex by `x` subtracts the periodic
 > length of its image with differentials zero and multiplication by `x`.
@@ -167,7 +167,7 @@ public lemma periodicLength_smul_fst {R : Type u} [CommRing R]
             (LinearMap.lsmul R (LinearMap.range φ) x) (zero_mul _) (mul_zero _))
 ```
 
-**`AlgebraicGeometry.periodicLength_smul_snd`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/CalculationMultiplicities/ScalarMultiple.lean, line 294](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/CalculationMultiplicities/ScalarMultiple.lean#L294). The attribute's comment: “multiplying the second differential”.
+**`AlgebraicGeometry.periodicLength_smul_snd`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/CalculationMultiplicities/ScalarMultiple.lean, line 294](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/CalculationMultiplicities/ScalarMultiple.lean#L294). The attribute's comment: “multiplying the second differential”.
 
 > Multiplying the second differential of a two-periodic complex by `x` adds the periodic
 > length of its image with differentials zero and multiplication by `x`.
@@ -202,4 +202,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 42.3, Tag 0EAA](https://stacks.math.columbia.edu/tag/0EAA)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

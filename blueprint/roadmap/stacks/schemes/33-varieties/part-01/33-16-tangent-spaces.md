@@ -8,7 +8,7 @@ proof: formalized
 
 # 33.16 Tangent spaces
 
-Section 33.16 of the Stacks Project, [Tag 0B28](https://stacks.math.columbia.edu/tag/0B28). 10 tags here are carried by 19 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 33.16 of the Stacks Project, [Tag 0B28](https://stacks.math.columbia.edu/tag/0B28). 10 tags here are carried by 19 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0B29, a definition
 
@@ -16,15 +16,15 @@ Section 33.16 of the Stacks Project, [Tag 0B28](https://stacks.math.columbia.edu
 
 Declarations registered for the tag:
 
-- [`DualNumber`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=DualNumber#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch33.lean, line 41](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch33.lean#L41) (StacksFrontier): “the dual numbers `R[ε]`; as an `R`-module `R × R`, free on `1` and `ε`”. References: EGA 0 (22.1.3); EGA 0 (22.1.3.2); SGA 3 II (2.1), “special case”; SGA 3 II (3.14), “partial”; SGA 3 II (4.5.1); SGA 3 II (4.7.1), “special case”; SGA 3 III (4.38); SGA 3 VIIA (1.2.0), “partial”; SGA 3 VIIB (2.6); SGA 3 XI (1.9), “partial”; SGA 4½ Fonctions L (4.5); SGA 7 VI (1.2); SGA 7 VI (1.15), “special case”; SGA 7 VI (1.3(c)), “dual numbers k[ε] = k[k]”.
-- [`DualNumber.eps`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=DualNumber.eps#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch33.lean, line 43](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch33.lean#L43) (StacksFrontier): “the element `ε`”. References: SGA 3 II (4.5.1); SGA 3 II (4.7.1), “partial”.
-- [`DualNumber.eps_mul_eps`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=DualNumber.eps_mul_eps#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch33.lean, line 44](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch33.lean#L44) (StacksFrontier): “`ε² = 0`”. References: SGA 3 II (4.7.1), “partial”; SGA 7 VI (1.15), “relation ε² = 0”.
+- [`DualNumber`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=DualNumber#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch33.lean, line 41](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch33.lean#L41) (StacksFrontier): “the dual numbers `R[ε]`; as an `R`-module `R × R`, free on `1` and `ε`”. References: EGA 0 (22.1.3); EGA 0 (22.1.3.2); SGA 3 II (2.1), “special case”; SGA 3 II (3.14), “partial”; SGA 3 II (4.5.1); SGA 3 II (4.7.1), “special case”; SGA 3 III (4.38); SGA 3 VIIA (1.2.0), “partial”; SGA 3 VIIB (2.6); SGA 3 XI (1.9), “partial”; SGA 4½ Fonctions L (4.5); SGA 7 VI (1.2); SGA 7 VI (1.15), “special case”; SGA 7 VI (1.3(c)), “dual numbers k[ε] = k[k]”.
+- [`DualNumber.eps`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=DualNumber.eps#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch33.lean, line 43](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch33.lean#L43) (StacksFrontier): “the element `ε`”. References: SGA 3 II (4.5.1); SGA 3 II (4.7.1), “partial”.
+- [`DualNumber.eps_mul_eps`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=DualNumber.eps_mul_eps#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch33.lean, line 44](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch33.lean#L44) (StacksFrontier): “`ε² = 0`”. References: SGA 3 II (4.7.1), “partial”; SGA 7 VI (1.15), “relation ε² = 0”.
 
 ## Tag 0B2A, an equation
 
 [Tag 0B2A](https://stacks.math.columbia.edu/tag/0B2A) in the Stacks Project.
 
-**`AlgebraicGeometry.DottedTangentArrow`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Tangent/Defs.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Tangent/Defs.lean#L90). The attribute's comment: “the dotted arrows”.
+**`AlgebraicGeometry.DottedTangentArrow`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Tangent/Defs.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Tangent/Defs.lean#L90). The attribute's comment: “the dotted arrows”.
 
 > A dotted arrow in the tangent-space diagram: a morphism from the spectrum of the dual
 > numbers which restricts to the point `x` and is a morphism over `S`. Carrying the canonical
@@ -39,7 +39,7 @@ def DottedTangentArrow {X S : Scheme.{u}} (f : X ⟶ S) (x : X)
 
 [Tag 0B2B](https://stacks.math.columbia.edu/tag/0B2B) in the Stacks Project.
 
-**`AlgebraicGeometry.dottedTangentArrowModule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Tangent/Defs.lean, line 537](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Tangent/Defs.lean#L537).
+**`AlgebraicGeometry.dottedTangentArrowModule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Tangent/Defs.lean, line 537](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Tangent/Defs.lean#L537).
 
 > The dotted arrows in the tangent-space diagram carry a canonical vector space structure over
 > the residue field `κ(x)`. Its operations are characterized by the square-zero pushout and by
@@ -54,7 +54,7 @@ noncomputable def dottedTangentArrowModule {X S : Scheme.{u}} (f : X ⟶ S) (x :
 
 [Tag 0B2C](https://stacks.math.columbia.edu/tag/0B2C) in the Stacks Project.
 
-**`AlgebraicGeometry.DottedTangentArrow`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Tangent/Defs.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Tangent/Defs.lean#L90). The attribute's comment: “the tangent space as a set”.
+**`AlgebraicGeometry.DottedTangentArrow`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Tangent/Defs.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Tangent/Defs.lean#L90). The attribute's comment: “the tangent space as a set”.
 
 > A dotted arrow in the tangent-space diagram: a morphism from the spectrum of the dual
 > numbers which restricts to the point `x` and is a morphism over `S`. Carrying the canonical
@@ -65,7 +65,7 @@ noncomputable def dottedTangentArrowModule {X S : Scheme.{u}} (f : X ⟶ S) (x :
 def DottedTangentArrow {X S : Scheme.{u}} (f : X ⟶ S) (x : X)
 ```
 
-**`AlgebraicGeometry.dottedTangentArrowAddCommGroup`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Tangent/Defs.lean, line 610](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Tangent/Defs.lean#L610). The attribute's comment: “the additive group of tangent vectors”.
+**`AlgebraicGeometry.dottedTangentArrowAddCommGroup`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Tangent/Defs.lean, line 610](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Tangent/Defs.lean#L610). The attribute's comment: “the additive group of tangent vectors”.
 
 > The canonical additive commutative group structure on dotted tangent arrows, i.e. the
 > addition of tangent vectors of `X/S` at `x`.
@@ -75,7 +75,7 @@ noncomputable instance dottedTangentArrowAddCommGroup {X S : Scheme.{u}}
     (f : X ⟶ S) (x : X) : AddCommGroup (DottedTangentArrow f x)
 ```
 
-**`AlgebraicGeometry.dottedTangentArrowModuleInstance`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Tangent/Defs.lean, line 617](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Tangent/Defs.lean#L617). The attribute's comment: “the canonical κ(x)-vector space structure on the tangent space”.
+**`AlgebraicGeometry.dottedTangentArrowModuleInstance`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Tangent/Defs.lean, line 617](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Tangent/Defs.lean#L617). The attribute's comment: “the canonical κ(x)-vector space structure on the tangent space”.
 
 > The canonical `κ(x)`-vector space structure on dotted tangent arrows; with it the dotted
 > arrows are the tangent space `T_{X/S, x}`.
@@ -89,7 +89,7 @@ noncomputable instance dottedTangentArrowModuleInstance {X S : Scheme.{u}}
 
 [Tag 0BEA](https://stacks.math.columbia.edu/tag/0BEA) in the Stacks Project.
 
-**`AlgebraicGeometry.tangentSpaceEquivFiber`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/TangentFibre.lean, line 767](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/TangentFibre.lean#L767).
+**`AlgebraicGeometry.tangentSpaceEquivFiber`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/TangentFibre.lean, line 767](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/TangentFibre.lean#L767).
 
 > The tangent space of `X` over `S` at `x` is canonically identified with the tangent space of
 > the fibre `X_{f(x)}` at its corresponding point.
@@ -102,7 +102,7 @@ noncomputable def tangentSpaceEquivFiber : TangentSpaceFiberEquiv f x
 
 [Tag 0B2D](https://stacks.math.columbia.edu/tag/0B2D) in the Stacks Project.
 
-**`AlgebraicGeometry.tangentSpaceEquivCotangentSpace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Tangent/Cotangent.lean, line 279](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Tangent/Cotangent.lean#L279). References: EGA IV (16.5.13), “(16.5.13.1)”.
+**`AlgebraicGeometry.tangentSpaceEquivCotangentSpace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Tangent/Cotangent.lean, line 279](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Tangent/Cotangent.lean#L279). References: EGA IV (16.5.13), “(16.5.13.1)”.
 
 > **Stacks Project, Tag 0B2D.** The relative tangent space at a point is canonically the
 > `𝒪_{X,x}`-linear dual of the stalk of relative differentials, as a vector space over the residue
@@ -113,7 +113,7 @@ noncomputable def tangentSpaceEquivCotangentSpace :
     DottedTangentArrow f x ≃ₗ[X.residueField x] CotangentSpace f x
 ```
 
-**`AlgebraicGeometry.tangentSpaceEquivCotangentSpace_apply_germ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Tangent/Cotangent.lean, line 298](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Tangent/Cotangent.lean#L298). The attribute's comment: “characterization”.
+**`AlgebraicGeometry.tangentSpaceEquivCotangentSpace_apply_germ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Tangent/Cotangent.lean, line 298](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Tangent/Cotangent.lean#L298). The attribute's comment: “characterization”.
 
 > **Stacks Project, Tag 0B2D.** The canonical equivalence sends a dual-number arrow to the
 > functional which, on the germ `d a` of a universal relative differential, returns the
@@ -133,7 +133,7 @@ theorem tangentSpaceEquivCotangentSpace_apply_germ (θ : DottedTangentArrow f x)
 
 [Tag 0B2E](https://stacks.math.columbia.edu/tag/0B2E) in the Stacks Project.
 
-**`AlgebraicGeometry.relativeCotangentSpaceEquivDifferentialFiber`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Tangent/MaximalIdealCotangent.lean, line 128](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Tangent/MaximalIdealCotangent.lean#L128). The attribute's comment: “cotangent space”. References: EGA IV (16.5.13), “partial”.
+**`AlgebraicGeometry.relativeCotangentSpaceEquivDifferentialFiber`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Tangent/MaximalIdealCotangent.lean, line 128](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Tangent/MaximalIdealCotangent.lean#L128). The attribute's comment: “cotangent space”. References: EGA IV (16.5.13), “partial”.
 
 > Let `f : X ⟶ S` be a morphism of schemes and let `x` be a point of `X` whose residue field
 > extension `κ(f x) → κ(x)` is separable.  The relative cotangent space
@@ -147,7 +147,7 @@ noncomputable def relativeCotangentSpaceEquivDifferentialFiber
       X.residueField x ⊗[X.presheaf.stalk x] relativeDifferentialStalk f x
 ```
 
-**`AlgebraicGeometry.relativeCotangentSpaceEquivDifferentialFiber_apply_germ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Tangent/MaximalIdealCotangent.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Tangent/MaximalIdealCotangent.lean#L155). The attribute's comment: “canonical map on differentials”.
+**`AlgebraicGeometry.relativeCotangentSpaceEquivDifferentialFiber_apply_germ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Tangent/MaximalIdealCotangent.lean, line 155](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Tangent/MaximalIdealCotangent.lean#L155). The attribute's comment: “canonical map on differentials”.
 
 > The identification of the relative cotangent space with the residue-field fibre of the
 > relative differentials carries the class of the germ at `x` of a local section of `𝒪_X` vanishing
@@ -169,7 +169,7 @@ theorem relativeCotangentSpaceEquivDifferentialFiber_apply_germ
             ((Scheme.Hom.universalRelativeDerivation f).d a))
 ```
 
-**`AlgebraicGeometry.dottedTangentArrowEquivDualRelativeCotangentSpace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Tangent/MaximalIdealCotangent.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Tangent/MaximalIdealCotangent.lean#L191). The attribute's comment: “tangent space”.
+**`AlgebraicGeometry.dottedTangentArrowEquivDualRelativeCotangentSpace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Tangent/MaximalIdealCotangent.lean, line 191](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Tangent/MaximalIdealCotangent.lean#L191). The attribute's comment: “tangent space”.
 
 > If the residue field extension `κ(f x) → κ(x)` is separable, the relative tangent space at
 > `x` — the space of dual-number arrows into `X` over `S` extending the residue-field point `x` — is
@@ -184,7 +184,7 @@ noncomputable def dottedTangentArrowEquivDualRelativeCotangentSpace
         X.residueField x)
 ```
 
-**`AlgebraicGeometry.dottedTangentArrowEquivDualRelativeCotangentSpace_apply_germ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Tangent/MaximalIdealCotangent.lean, line 206](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Tangent/MaximalIdealCotangent.lean#L206). The attribute's comment: “canonical map on tangent vectors”.
+**`AlgebraicGeometry.dottedTangentArrowEquivDualRelativeCotangentSpace_apply_germ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Tangent/MaximalIdealCotangent.lean, line 206](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Tangent/MaximalIdealCotangent.lean#L206). The attribute's comment: “canonical map on tangent vectors”.
 
 > The identification of the relative tangent space with the dual of the relative cotangent space
 > evaluates a dual-number arrow on the class of the germ of a local section vanishing at `x` by the
@@ -206,7 +206,7 @@ theorem dottedTangentArrowEquivDualRelativeCotangentSpace_apply_germ
 
 [Tag 0B2F](https://stacks.math.columbia.edu/tag/0B2F) in the Stacks Project.
 
-**`AlgebraicGeometry.tangentMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Tangent/Functorial.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Tangent/Functorial.lean#L200). The attribute's comment: “canonical tangent map”. References: EGA IV (16.5.13), “(16.5.13.5)”.
+**`AlgebraicGeometry.tangentMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Tangent/Functorial.lean, line 200](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Tangent/Functorial.lean#L200). The attribute's comment: “canonical tangent map”. References: EGA IV (16.5.13), “(16.5.13.5)”.
 
 > The tangent map of a morphism over `S`, with the scalar fields identified by the canonical
 > residue-field isomorphism.
@@ -217,7 +217,7 @@ noncomputable def tangentMap (h : f ≫ q = p) (x : X) [IsIso (f.residueFieldMap
       DottedTangentArrow q (f x)
 ```
 
-**`AlgebraicGeometry.tangentMap_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Tangent/Functorial.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Tangent/Functorial.lean#L216). The attribute's comment: “characterization by composition of dual-number arrows”.
+**`AlgebraicGeometry.tangentMap_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Tangent/Functorial.lean, line 216](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Tangent/Functorial.lean#L216). The attribute's comment: “characterization by composition of dual-number arrows”.
 
 > The tangent map is induced by composition of dual-number arrows: a tangent arrow is sent to its
 > composite with `f`, pulled back along any ring homomorphism of dual numbers whose two components
@@ -235,7 +235,7 @@ theorem tangentMap_apply (h : f ≫ q = p) (x : X) [IsIso (f.residueFieldMap x)]
       Spec.map (CommRingCat.ofHom α) ≫ θ.val ≫ f
 ```
 
-**`AlgebraicGeometry.tangentSpaceEquivDualDifferentialFiber_tangentMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Tangent/TangentMapDual.lean, line 405](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Tangent/TangentMapDual.lean#L405). The attribute's comment: “dual to the map Ω\_\{Y/S,y} ⊗ κ(y) → Ω\_\{X/S,x} ⊗ κ(x) via the identifications of Tag 0B2D”. References: EGA IV (16.5.13), “partial, special case”.
+**`AlgebraicGeometry.tangentSpaceEquivDualDifferentialFiber_tangentMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Tangent/TangentMapDual.lean, line 404](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Tangent/TangentMapDual.lean#L404). The attribute's comment: “dual to the map Ω\_\{Y/S,y} ⊗ κ(y) → Ω\_\{X/S,x} ⊗ κ(x) via the identifications of Tag 0B2D”. References: EGA IV (16.5.13), “partial, special case”.
 
 > **The tangent map is dual to the map on residue-field fibres.** Let `f : X ⟶ Y` be a morphism
 > of schemes over `S`, let `x` be a point of `X` with `κ(f x) = κ(x)`. Under the identifications
@@ -255,7 +255,7 @@ theorem tangentSpaceEquivDualDifferentialFiber_tangentMap (h : f ≫ q = p) (x :
 
 [Tag 0BEB](https://stacks.math.columbia.edu/tag/0BEB) in the Stacks Project.
 
-**`AlgebraicGeometry.tangentSpaceProductEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/TangentProduct.lean, line 545](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/TangentProduct.lean#L545).
+**`AlgebraicGeometry.tangentSpaceProductEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/TangentProduct.lean, line 545](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/TangentProduct.lean#L545).
 
 > The tangent space of a fibre product at a pair of points rational over the same base point
 > is the direct sum of the tangent spaces of the factors. The equivalence is induced by the
@@ -269,7 +269,7 @@ noncomputable def tangentSpaceProductEquiv {X Y S : Scheme.{u}}
     TangentSpaceProductEquiv f g z
 ```
 
-**`AlgebraicGeometry.tangentSpaceProductFiberEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/TangentProductFibre.lean, line 404](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/TangentProductFibre.lean#L404). The attribute's comment: “T\_\{X ×\_S Y/S,(x,y)} = T\_\{X/S,x} ⊕ T\_\{Y/S,y} at the unique point (x,y): left to right by the projections, right to left by 1 × y and x × 1 on the fibres via 0BEA”. References: SGA 3 V (4.1.2), “more general”.
+**`AlgebraicGeometry.tangentSpaceProductFiberEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/TangentProductFibre.lean, line 404](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/TangentProductFibre.lean#L404). The attribute's comment: “T\_\{X ×\_S Y/S,(x,y)} = T\_\{X/S,x} ⊕ T\_\{Y/S,y} at the unique point (x,y): left to right by the projections, right to left by 1 × y and x × 1 on the fibres via 0BEA”. References: SGA 3 V (4.1.2), “more general”.
 
 > **Stacks Project, Tag 0BEB.** Let `X`, `Y` be schemes over `S` and let `z = (x, y)` be a point
 > of `X ×_S Y` whose projections `x ∈ X`, `y ∈ Y` have residue fields `κ(x) = κ(s) = κ(y)`, where
@@ -292,7 +292,7 @@ noncomputable def tangentSpaceProductFiberEquiv {X Y S : Scheme.{u}}
 
 [Tag 0B2G](https://stacks.math.columbia.edu/tag/0B2G) in the Stacks Project.
 
-**`AlgebraicGeometry.injective_tangentMap_iff_unramifiedAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Tangent/Unramified.lean, line 212](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Tangent/Unramified.lean#L212).
+**`AlgebraicGeometry.injective_tangentMap_iff_unramifiedAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Tangent/Unramified.lean, line 212](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Tangent/Unramified.lean#L212).
 
 > **Stacks Project, Tag 0B2G.** Let `f : X ⟶ Y` be a morphism of schemes over `S`, locally of
 > finite type, and let `x` be a point of `X` whose residue field agrees with that of `f x`. Then
@@ -305,7 +305,7 @@ theorem injective_tangentMap_iff_unramifiedAt (h : f ≫ q = p) [LocallyOfFinite
     Function.Injective (tangentMap f p q h x) ↔ UnramifiedAt f x
 ```
 
-**`AlgebraicGeometry.injective_tangentMap_iff_unramifiedAt_of_locallyOfFiniteType_base`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Tangent/Unramified.lean, line 223](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Tangent/Unramified.lean#L223). The attribute's comment: “with the source locally of finite type over the base”.
+**`AlgebraicGeometry.injective_tangentMap_iff_unramifiedAt_of_locallyOfFiniteType_base`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Tangent/Unramified.lean, line 223](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Tangent/Unramified.lean#L223). The attribute's comment: “with the source locally of finite type over the base”.
 
 > **Stacks Project, Tag 0B2G** under the hypotheses of the source: for `X` locally of finite
 > type over `S`, the tangent map of a morphism `f : X ⟶ Y` over `S` is injective at a point where
@@ -325,4 +325,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 33.16, Tag 0B28](https://stacks.math.columbia.edu/tag/0B28)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

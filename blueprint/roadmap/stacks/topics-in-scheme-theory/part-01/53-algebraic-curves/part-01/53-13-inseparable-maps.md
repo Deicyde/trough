@@ -8,13 +8,13 @@ proof: formalized
 
 # 53.13 Inseparable maps
 
-Section 53.13 of the Stacks Project, [Tag 0CCV](https://stacks.math.columbia.edu/tag/0CCV). 10 tags here are carried by 13 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 53.13 of the Stacks Project, [Tag 0CCV](https://stacks.math.columbia.edu/tag/0CCV). 10 tags here are carried by 13 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0CCW, a lemma
 
 [Tag 0CCW](https://stacks.math.columbia.edu/tag/0CCW) in the Stacks Project.
 
-**`AlgebraicGeometry.smooth_of_surjective_of_isNormal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/FlatMorphism.lean, line 105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/FlatMorphism.lean#L105).
+**`AlgebraicGeometry.smooth_of_surjective_of_isNormal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/FlatMorphism.lean, line 105](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/FlatMorphism.lean#L105).
 
 > **Stacks Project, Tag 0CCW.** A normal curve over a field is smooth if it is surjectively
 > dominated by a smooth curve over that field. A surjection onto a curve has nontrivial range, so
@@ -35,7 +35,7 @@ theorem smooth_of_surjective_of_isNormal
 
 [Tag 0CCX](https://stacks.math.columbia.edu/tag/0CCX) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_chain_isInseparableDegreePrime`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/InseparableFactorizationChain.lean, line 724](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/InseparableFactorizationChain.lean#L724). The attribute's comment: “the factorization into steps of degree p”.
+**`AlgebraicGeometry.exists_chain_isInseparableDegreePrime`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/InseparableFactorizationChain.lean, line 724](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/InseparableFactorizationChain.lean#L724). The attribute's comment: “the factorization into steps of degree p”.
 
 > **Stacks Project, Tag 0CCX.** Let `k` be a field of characteristic `p`. A nonconstant
 > morphism `f` of proper nonsingular curves over `k` whose extension of function fields is purely
@@ -72,7 +72,7 @@ theorem exists_chain_isInseparableDegreePrime (p : ℕ) [Fact p.Prime] [CharP k 
 
 [Tag 0CCY](https://stacks.math.columbia.edu/tag/0CCY) in the Stacks Project.
 
-**`AlgebraicGeometry.existsUnique_iso_frobeniusTwist_of_inseparable_degree_prime`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/InseparableFrobeniusFactorization.lean, line 349](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/InseparableFrobeniusFactorization.lean#L349).
+**`AlgebraicGeometry.existsUnique_iso_frobeniusTwist_of_inseparable_degree_prime`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/InseparableFrobeniusFactorization.lean, line 349](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/InseparableFrobeniusFactorization.lean#L349).
 
 > **Stacks Project, Tag 0CCY.** A nonconstant morphism of proper nonsingular curves over a
 > field of characteristic `p`, with smooth source, whose extension of function fields is
@@ -106,7 +106,7 @@ theorem existsUnique_iso_frobeniusTwist_of_inseparable_degree_prime
 
 [Tag 0CCZ](https://stacks.math.columbia.edu/tag/0CCZ) in the Stacks Project.
 
-**`AlgebraicGeometry.existsUnique_nat_existsUnique_iso_nFoldFrobeniusTwist`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/InseparableFrobeniusChainAssembly.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/InseparableFrobeniusChainAssembly.lean#L191). The attribute's comment: “the unique number of iterations and the unique isomorphism of the correspondingly iterated Frobenius twist of X with Y carrying the iterated relative Frobenius to f”.
+**`AlgebraicGeometry.existsUnique_nat_existsUnique_iso_nFoldFrobeniusTwist`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/InseparableFrobeniusChainAssembly.lean, line 191](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/InseparableFrobeniusChainAssembly.lean#L191). The attribute's comment: “the unique number of iterations and the unique isomorphism of the correspondingly iterated Frobenius twist of X with Y carrying the iterated relative Frobenius to f”.
 
 > **Stacks Project, Tag 0CCZ.** Let `f : X ⟶ Y` be a nonconstant morphism of proper nonsingular
 > curves over a field `k` of characteristic `p`, with `X` smooth and the induced extension of
@@ -136,7 +136,7 @@ theorem existsUnique_nat_existsUnique_iso_nFoldFrobeniusTwist
 
 [Tag 0CD0](https://stacks.math.columbia.edu/tag/0CD0) in the Stacks Project.
 
-**`AlgebraicGeometry.smooth_of_isPurelyInseparable_residueFieldMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/InseparableFrobeniusGenus.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/InseparableFrobeniusGenus.lean#L95). The attribute's comment: “the smoothness of the target”.
+**`AlgebraicGeometry.smooth_of_isPurelyInseparable_residueFieldMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/InseparableFrobeniusGenus.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/InseparableFrobeniusGenus.lean#L95). The attribute's comment: “the smoothness of the target”.
 
 > **Stacks Project, Tag 0CD0, the smoothness of the target.** Let `f : X ⟶ Y` be a nonconstant
 > morphism of proper nonsingular curves over a field `k` of characteristic `p`.  If `X` is smooth
@@ -155,7 +155,7 @@ theorem smooth_of_isPurelyInseparable_residueFieldMap
     Smooth pY
 ```
 
-**`AlgebraicGeometry.isIso_globalSections_of_isPurelyInseparable_residueFieldMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/InseparableFrobeniusGenus.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/InseparableFrobeniusGenus.lean#L113). The attribute's comment: “the global regular functions on the target”.
+**`AlgebraicGeometry.isIso_globalSections_of_isPurelyInseparable_residueFieldMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/InseparableFrobeniusGenus.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/InseparableFrobeniusGenus.lean#L113). The attribute's comment: “the global regular functions on the target”.
 
 > **Stacks Project, Tag 0CD0, the global regular functions on the target.** Let `f : X ⟶ Y` be
 > a nonconstant morphism of proper nonsingular curves over a field `k` of characteristic `p`.  If
@@ -175,7 +175,7 @@ theorem isIso_globalSections_of_isPurelyInseparable_residueFieldMap
     IsIso ((Scheme.ΓSpecIso (.of k)).inv ≫ pY.appTop)
 ```
 
-**`AlgebraicGeometry.genus_eq_of_isPurelyInseparable_residueFieldMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/InseparableFrobeniusGenus.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/InseparableFrobeniusGenus.lean#L132). The attribute's comment: “the genus of the target”.
+**`AlgebraicGeometry.genus_eq_of_isPurelyInseparable_residueFieldMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/InseparableFrobeniusGenus.lean, line 132](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/InseparableFrobeniusGenus.lean#L132). The attribute's comment: “the genus of the target”.
 
 > **Stacks Project, Tag 0CD0, the genus of the target.** Let `f : X ⟶ Y` be a nonconstant
 > morphism of proper nonsingular curves over a field `k` of characteristic `p`.  If `X` is smooth
@@ -198,7 +198,7 @@ theorem genus_eq_of_isPurelyInseparable_residueFieldMap
 
 [Tag 0CD1](https://stacks.math.columbia.edu/tag/0CD1) in the Stacks Project.
 
-**`Stacks.Curves.InseparableGenus.exists_charThree_notCube`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/InseparableGenusChange.lean, line 179](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/InseparableGenusChange.lean#L179). The attribute's comment: “the example's remark that k = 𝐅₃(a) works: a field of characteristic three with an element that is not a cube”.
+**`Stacks.Curves.InseparableGenus.exists_charThree_notCube`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/InseparableGenusChange.lean, line 179](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/InseparableGenusChange.lean#L179). The attribute's comment: “the example's remark that k = 𝐅₃(a) works: a field of characteristic three with an element that is not a cube”.
 
 > **The hypotheses of [Stacks, Tag 0CD1] are satisfiable: `𝐅₃(a)` works.** There is a field of
 > characteristic three, in any universe, carrying an element which is not a cube.
@@ -208,7 +208,7 @@ theorem exists_charThree_notCube :
     ∃ (K : Type u) (_ : Field K), CharP K 3 ∧ ∃ a : K, ∀ b : K, b ^ 3 ≠ a
 ```
 
-**`Stacks.Curves.InseparableGenus.planeCubicProjection_inseparable_genus_change`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/InseparableGenusChangeProperCurves.lean, line 144](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/InseparableGenusChangeProperCurves.lean#L144).
+**`Stacks.Curves.InseparableGenus.planeCubicProjection_inseparable_genus_change`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/InseparableGenusChangeProperCurves.lean, line 144](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/InseparableGenusChangeProperCurves.lean#L144).
 
 > **[Stacks, Tag 0CD1].** Let `k` be a field of characteristic three and `a ∈ k` an element
 > which is not a cube (for instance `k = 𝐅₃(a)`, `exists_charThree_notCube`). Let
@@ -268,7 +268,7 @@ theorem planeCubicProjection_inseparable_genus_change (k : Type u) [Field k] [Ex
 
 [Tag 0CD2](https://stacks.math.columbia.edu/tag/0CD2) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_nFoldRelativeFrobenius_comp_isSeparable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/SeparableFrobeniusFactorization.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/SeparableFrobeniusFactorization.lean#L166).
+**`AlgebraicGeometry.exists_nFoldRelativeFrobenius_comp_isSeparable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/SeparableFrobeniusFactorization.lean, line 166](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/SeparableFrobeniusFactorization.lean#L166).
 
 > **Stacks Project, Tag 0CD2.** Let `k` be a field of characteristic `p > 0` and let
 > `f : X ⟶ Y` be a nonconstant morphism of proper smooth curves over `k`.  Then `f` factors as
@@ -299,7 +299,7 @@ theorem exists_nFoldRelativeFrobenius_comp_isSeparable {k : Type u} [Field k] (p
 
 [Tag 0CD3](https://stacks.math.columbia.edu/tag/0CD3) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_genericallyEtale_pencil_or_linearSeries_frobeniusTwist`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/InseparableLinearSeries.lean, line 569](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/InseparableLinearSeries.lean#L569). The attribute's comment: “both alternatives: a pencil of the same degree whose morphism to the projective line is generically etale, or a linear series of the same dimension and degree at most d / p on the Frobenius twist”.
+**`AlgebraicGeometry.exists_genericallyEtale_pencil_or_linearSeries_frobeniusTwist`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/InseparableLinearSeries.lean, line 569](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/InseparableLinearSeries.lean#L569). The attribute's comment: “both alternatives: a pencil of the same degree whose morphism to the projective line is generically etale, or a linear series of the same dimension and degree at most d / p on the Frobenius twist”.
 
 > **Stacks Project, Tag 0CD3.** Let `k` be a field of characteristic `p > 0`, let `X` be a
 > smooth proper curve over `k` and let `(ℒ, V)` be a `𝔤^r_d` on `X` with `r ≥ 1`. Then one of the
@@ -343,7 +343,7 @@ theorem exists_genericallyEtale_pencil_or_linearSeries_frobeniusTwist
 
 [Tag 0CD4](https://stacks.math.columbia.edu/tag/0CD4) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isClosed_isSeparable_finrank_residueField_le_two_mul_genus_sub_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/SeparableClosedPointGenus.lean, line 105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/SeparableClosedPointGenus.lean#L105).
+**`AlgebraicGeometry.exists_isClosed_isSeparable_finrank_residueField_le_two_mul_genus_sub_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/SeparableClosedPointGenus.lean, line 105](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/SeparableClosedPointGenus.lean#L105).
 
 > A smooth proper curve `X` over a field `k` with `H⁰(X, 𝒪_X) = k` and genus `g ≥ 2` has a
 > closed point `x` with `κ(x)/k` finite separable of degree at most `2g - 2`.
@@ -361,7 +361,7 @@ theorem exists_isClosed_isSeparable_finrank_residueField_le_two_mul_genus_sub_tw
 
 [Tag 0C1G](https://stacks.math.columbia.edu/tag/0C1G) in the Stacks Project.
 
-**`AlgebraicGeometry.ramificationIdx_baseChange_algClosure_eq_finInsepDegree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/RamificationAlgebraicClosure.lean, line 261](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Curve/RamificationAlgebraicClosure.lean#L261).
+**`AlgebraicGeometry.ramificationIdx_baseChange_algClosure_eq_finInsepDegree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/RamificationAlgebraicClosure.lean, line 261](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Curve/RamificationAlgebraicClosure.lean#L261).
 
 > The ramification index at a closed point of a smooth curve after extension to an algebraic
 > closure is the inseparable degree of the original residue field.
@@ -394,4 +394,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 53.13, Tag 0CCV](https://stacks.math.columbia.edu/tag/0CCV)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

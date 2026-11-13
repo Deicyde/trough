@@ -8,13 +8,13 @@ proof: formalized
 
 # 95.8 The stack of finite type algebraic spaces
 
-Section 95.8 of the Stacks Project, [Tag 04UC](https://stacks.math.columbia.edu/tag/04UC). 2 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 95.8 of the Stacks Project, [Tag 04UC](https://stacks.math.columbia.edu/tag/04UC). 2 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 04UD, a lemma
 
 [Tag 04UD](https://stacks.math.columbia.edu/tag/04UD) in the Stacks Project.
 
-**`AlgebraicGeometry.finiteTypeSpacesProjection_isStack_of_bootstrap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/VaryingBase/FiniteTypeEffective.lean, line 154](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/VaryingBase/FiniteTypeEffective.lean#L154).
+**`AlgebraicGeometry.finiteTypeSpacesProjection_isStack_of_bootstrap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/VaryingBase/FiniteTypeEffective.lean, line 154](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/VaryingBase/FiniteTypeEffective.lean#L154).
 
 > **Stacks 04UD.** The projection from finite-type algebraic spaces over varying base schemes
 > is a stack over the big fppf site of `S`: it satisfies all three conditions of Stacks 026F.
@@ -37,7 +37,7 @@ theorem finiteTypeSpacesProjection_isStack_of_bootstrap :
     (finiteTypeSpacesProjection B S hS).IsStack (BigFppfOver.topology B S hS)
 ```
 
-**`AlgebraicGeometry.finiteTypeSpacesProjection_isFibered`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteTypeStack.lean, line 184](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteTypeStack.lean#L184). The attribute's comment: “condition (1)”.
+**`AlgebraicGeometry.finiteTypeSpacesProjection_isFibered`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteTypeStack.lean, line 184](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteTypeStack.lean#L184). The attribute's comment: “condition (1)”.
 
 > **Condition (1) of Stacks 04UD.** The projection from finite-type algebraic spaces over
 > varying schemes to the big fppf site of `S` is a fibred category.
@@ -47,7 +47,7 @@ theorem finiteTypeSpacesProjection_isFibered :
     (finiteTypeSpacesProjection B S hS).IsFibered
 ```
 
-**`AlgebraicGeometry.finiteTypeSpacesProjection_isMorSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteTypeStack.lean, line 193](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteTypeStack.lean#L193). The attribute's comment: “condition (2)”.
+**`AlgebraicGeometry.finiteTypeSpacesProjection_isMorSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteTypeStack.lean, line 193](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteTypeStack.lean#L193). The attribute's comment: “condition (2)”.
 
 > **Condition (2) of Stacks 04UD.** Morphisms of finite-type algebraic spaces over a fixed
 > scheme satisfy fppf descent.
@@ -62,7 +62,7 @@ theorem finiteTypeSpacesProjection_isMorSheaf :
         (BigFppfOver.topology B S hS) U X Y
 ```
 
-**`AlgebraicGeometry.finiteTypeSpacesProjection_hasEffectiveDescent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteTypeStackDescent.lean, line 207](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteTypeStackDescent.lean#L207). The attribute's comment: “condition (3)”.
+**`AlgebraicGeometry.finiteTypeSpacesProjection_hasEffectiveDescent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteTypeStackDescent.lean, line 207](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteTypeStackDescent.lean#L207). The attribute's comment: “condition (3)”.
 
 > Every descent datum of finite-type algebraic spaces relative to an fppf covering sieve of the
 > big fppf site of `S` is effective.
@@ -78,7 +78,7 @@ theorem finiteTypeSpacesProjection_hasEffectiveDescent :
 
 [Tag 04UE](https://stacks.math.columbia.edu/tag/04UE) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_small_finiteTypeSpaces_stack_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/VaryingBase/FiniteTypeEffective.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/VaryingBase/FiniteTypeEffective.lean#L191). The attribute's comment: “the small stack of finite-type algebraic spaces”.
+**`AlgebraicGeometry.exists_small_finiteTypeSpaces_stack_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/VaryingBase/FiniteTypeEffective.lean, line 191](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/VaryingBase/FiniteTypeEffective.lean#L191). The attribute's comment: “the small stack of finite-type algebraic spaces”.
 
 > **Stacks 04UE.** There is a strictly full subcategory of the stack of finite-type
 > algebraic spaces over varying base schemes with set-sized fibres whose inclusion is essentially
@@ -102,7 +102,7 @@ theorem exists_small_finiteTypeSpaces_stack_unconditional :
           (BigFppfOver.topology B S hS)
 ```
 
-**`AlgebraicGeometry.exists_small_finiteTypeSpaces_stack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteTypeStackSmall.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteTypeStackSmall.lean#L135). The attribute's comment: “the small stack of finite-type algebraic spaces”.
+**`AlgebraicGeometry.exists_small_finiteTypeSpaces_stack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteTypeStackSmall.lean, line 135](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteTypeStackSmall.lean#L135). The attribute's comment: “the small stack of finite-type algebraic spaces”.
 
 > **Stacks 04UE.** Granted that the projection from finite-type algebraic spaces over
 > varying base schemes is a stack over the big fppf site of `S` — Stacks 04UD, whose condition
@@ -129,4 +129,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 95.8, Tag 04UC](https://stacks.math.columbia.edu/tag/04UC)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

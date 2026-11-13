@@ -8,13 +8,13 @@ proof: formalized
 
 # 101.11 Open morphisms
 
-Section 101.11 of the Stacks Project, [Tag 06U0](https://stacks.math.columbia.edu/tag/06U0). 4 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 101.11 of the Stacks Project, [Tag 06U0](https://stacks.math.columbia.edu/tag/06U0). 4 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 06U1, a lemma
 
 [Tag 06U1](https://stacks.math.columbia.edu/tag/06U1) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.representable_universallyOpen_iff_openMap_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversallyOpenCriterion.lean, line 511](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/UniversallyOpenCriterion.lean#L511).
+**`AlgebraicGeometry.Stack.representable_universallyOpen_iff_openMap_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversallyOpenCriterion.lean, line 510](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/UniversallyOpenCriterion.lean#L510).
 
 > **Stacks 06U1.** For a 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks over `S` which is
 > representable by algebraic spaces, the two conditions
@@ -38,7 +38,7 @@ theorem representable_universallyOpen_iff_openMap_baseChange
 
 [Tag 06U2](https://stacks.math.columbia.edu/tag/06U2) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.IsOpen`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/OpenAlgebraicStack.lean, line 50](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/OpenAlgebraicStack.lean#L50). The attribute's comment: “part (1): open”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.IsOpen`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/OpenAlgebraicStack.lean, line 50](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/OpenAlgebraicStack.lean#L50). The attribute's comment: “part (1): open”.
 
 > A 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks over `S` *is open* when the map `|𝒳| → |𝒴|` it
 > induces on the topological spaces of points is an open map.
@@ -47,7 +47,7 @@ theorem representable_universallyOpen_iff_openMap_baseChange
 abbrev IsOpen {𝒳 𝒴 : Stack.AlgebraicStacks.{u, w} B S hS} (f : 𝒳 ⟶ 𝒴) : Prop
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.UniversallyOpen`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/OpenAlgebraicStack.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/OpenAlgebraicStack.lean#L59). The attribute's comment: “part (2): universally open”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.UniversallyOpen`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/OpenAlgebraicStack.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/OpenAlgebraicStack.lean#L59). The attribute's comment: “part (2): universally open”.
 
 > A 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks over `S` *is universally open* when, for every
 > 1-morphism `g : 𝒵 ⟶ 𝒴` of algebraic stacks over `S`, the base change `𝒵 ×_{g, 𝒴, f} 𝒳 ⟶ 𝒵` of `f`
@@ -61,7 +61,7 @@ abbrev UniversallyOpen {𝒳 𝒴 : Stack.AlgebraicStacks.{u, w} B S hS} (f : �
 
 [Tag 06U3](https://stacks.math.columbia.edu/tag/06U3) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.universallyOpen_baseChange_of_isTwoFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversallyOpenSubmersiveBaseChange.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/UniversallyOpenSubmersiveBaseChange.lean#L200).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.universallyOpen_baseChange_of_isTwoFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversallyOpenSubmersiveBaseChange.lean, line 200](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/UniversallyOpenSubmersiveBaseChange.lean#L200).
 
 > **Stacks 06U3.** Universal openness is stable under base change: let `f : 𝒳 ⟶ 𝒴` be a
 > universally open 1-morphism of algebraic stacks over `S` and let `R` be a 2-fibre product square
@@ -83,7 +83,7 @@ theorem universallyOpen_baseChange_of_isTwoFibreProduct
 
 [Tag 06U4](https://stacks.math.columbia.edu/tag/06U4) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isOpen_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/OpenSubmersiveComposition.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/OpenSubmersiveComposition.lean#L70). The attribute's comment: “composition\_open”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isOpen_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/OpenSubmersiveComposition.lean, line 70](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/OpenSubmersiveComposition.lean#L70). The attribute's comment: “composition\_open”.
 
 > **Stacks 06U4.** The composite of two open 1-morphisms of algebraic stacks over `S` is
 > open.
@@ -94,7 +94,7 @@ theorem isOpen_comp {𝒳 𝒴 𝒵 : Stack.AlgebraicStacks.{u, w} B S hS}
     IsOpen B S hS (f ≫ g)
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.universallyOpen_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/OpenSubmersiveUniversalComposition.lean, line 115](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/OpenSubmersiveUniversalComposition.lean#L115). The attribute's comment: “composition\_universally\_open”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.universallyOpen_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/OpenSubmersiveUniversalComposition.lean, line 115](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/OpenSubmersiveUniversalComposition.lean#L115). The attribute's comment: “composition\_universally\_open”.
 
 > **Stacks 06U4.** The composite of two universally open 1-morphisms of algebraic stacks over
 > `S` is universally open.
@@ -113,4 +113,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 101.11, Tag 06U0](https://stacks.math.columbia.edu/tag/06U0)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

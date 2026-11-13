@@ -8,13 +8,13 @@ proof: formalized
 
 # 58.6 Fundamental groups
 
-Section 58.6 of the Stacks Project, [Tag 0BQ8](https://stacks.math.columbia.edu/tag/0BQ8). 3 tags here are carried by 17 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 58.6 of the Stacks Project, [Tag 0BQ8](https://stacks.math.columbia.edu/tag/0BQ8). 3 tags here are carried by 17 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0BNC, a definition
 
 [Tag 0BNC](https://stacks.math.columbia.edu/tag/0BNC) in the Stacks Project.
 
-**`AlgebraicGeometry.EtaleFundamentalGroup`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/EtaleFundamentalGroup.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/EtaleFundamentalGroup.lean#L80).
+**`AlgebraicGeometry.EtaleFundamentalGroup`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/EtaleFundamentalGroup.lean, line 80](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/EtaleFundamentalGroup.lean#L80).
 
 > **Stacks Project, Tag 0BNC.** The étale fundamental group of a connected scheme at a
 > geometric point is the automorphism group of its finite-étale fibre functor, endowed with the
@@ -29,7 +29,7 @@ public def EtaleFundamentalGroup (X : Scheme.{u}) [ConnectedSpace X]
 
 [Tag 0BND](https://stacks.math.columbia.edu/tag/0BND) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_finiteEtaleEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/EtaleFundamental/FundamentalGroupTheorem.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/EtaleFundamental/FundamentalGroupTheorem.lean#L85). The attribute's comment: “(1) the equivalence of FÉt\_X with the finite continuous π₁(X, x)-sets; (2) and (3) not covered here”.
+**`AlgebraicGeometry.exists_finiteEtaleEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/EtaleFundamental/FundamentalGroupTheorem.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/EtaleFundamental/FundamentalGroupTheorem.lean#L85). The attribute's comment: “(1) the equivalence of FÉt\_X with the finite continuous π₁(X, x)-sets; (2) and (3) not covered here”.
 
 > **Stacks Project, Tags 0BND (1) and 03VF (3).** Finite étale covers of a connected scheme `X`
 > are equivalent to finite sets with a continuous action of `π₁(X, x)`, by an equivalence whose
@@ -49,7 +49,7 @@ theorem exists_finiteEtaleEquivalence (X : Scheme.{u}) [ConnectedSpace X]
             (σ.asIso.app Y).hom ((α.hom.app Y) y)
 ```
 
-**`AlgebraicGeometry.nonempty_finiteEtaleFiberFunctorIso_of_connectedSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/EtaleFundamental/FundamentalGroupTheorem.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/EtaleFundamental/FundamentalGroupTheorem.lean#L104). The attribute's comment: “(2) existence of an isomorphism t : F\_x ≅ F\_x' of the geometric fibre functors at two base points; the comparison of fundamental groups it induces, that comparison's independence up to inner conjugation and its compatibility with (1) are separate, and (1) and (3) are not covered here”.
+**`AlgebraicGeometry.nonempty_finiteEtaleFiberFunctorIso_of_connectedSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/EtaleFundamental/FundamentalGroupTheorem.lean, line 104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/EtaleFundamental/FundamentalGroupTheorem.lean#L104). The attribute's comment: “(2) existence of an isomorphism t : F\_x ≅ F\_x' of the geometric fibre functors at two base points; the comparison of fundamental groups it induces, that comparison's independence up to inner conjugation and its compatibility with (1) are separate, and (1) and (3) are not covered here”.
 
 > **Stacks Project, Tag 0BND (2), existence of the isomorphism of fibre functors.** Given a
 > second geometric point `x'` of a connected scheme `X`, there is an isomorphism
@@ -61,7 +61,7 @@ theorem nonempty_finiteEtaleFiberFunctorIso_of_connectedSpace (X : Scheme.{u}) [
     Nonempty (finiteEtaleFiberFunctor x ≅ finiteEtaleFiberFunctor x')
 ```
 
-**`AlgebraicGeometry.nonempty_etaleFundamentalGroupContinuousMulEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/EtaleFundamental/FundamentalGroupTheorem.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/EtaleFundamental/FundamentalGroupTheorem.lean#L116). The attribute's comment: “(2) existence of the comparison of two base points, as topological groups; its independence up to inner conjugation and its compatibility with (1) are separate, and (1) and (3) are not covered here”.
+**`AlgebraicGeometry.nonempty_etaleFundamentalGroupContinuousMulEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/EtaleFundamental/FundamentalGroupTheorem.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/EtaleFundamental/FundamentalGroupTheorem.lean#L116). The attribute's comment: “(2) existence of the comparison of two base points, as topological groups; its independence up to inner conjugation and its compatibility with (1) are separate, and (1) and (3) are not covered here”.
 
 > **Stacks Project, Tag 0BND (2), existence.** The étale fundamental groups of a connected
 > scheme at two geometric points are isomorphic as topological groups: the two geometric fibre
@@ -74,7 +74,7 @@ theorem nonempty_etaleFundamentalGroupContinuousMulEquiv (X : Scheme.{u}) [Conne
     Nonempty (EtaleFundamentalGroup X x ≃ₜ* EtaleFundamentalGroup X x')
 ```
 
-**`AlgebraicGeometry.isInnerConjugate_etaleFundamentalGroupContinuousMulEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/EtaleFundamental/FundamentalGroupTheorem.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/EtaleFundamental/FundamentalGroupTheorem.lean#L134). The attribute's comment: “(2) independence of the base-point comparison up to inner conjugation; its existence and its compatibility with (1) are separate, and (1) and (3) are not covered here”.
+**`AlgebraicGeometry.isInnerConjugate_etaleFundamentalGroupContinuousMulEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/EtaleFundamental/FundamentalGroupTheorem.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/EtaleFundamental/FundamentalGroupTheorem.lean#L134). The attribute's comment: “(2) independence of the base-point comparison up to inner conjugation; its existence and its compatibility with (1) are separate, and (1) and (3) are not covered here”.
 
 > **Stacks Project, Tag 0BND (2), independence of the choice.** Two isomorphisms of the geometric
 > fibre functors at two geometric points induce isomorphisms of étale fundamental groups that differ
@@ -88,7 +88,7 @@ theorem isInnerConjugate_etaleFundamentalGroupContinuousMulEquiv {X : Scheme.{u}
       (etaleFundamentalGroupContinuousMulEquiv t₂).toMulEquiv.toMonoidHom
 ```
 
-**`AlgebraicGeometry.etaleFundamentalGroupContinuousMulEquiv_action`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/EtaleFundamental/FundamentalGroupTheorem.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/EtaleFundamental/FundamentalGroupTheorem.lean#L147). The attribute's comment: “(2) compatibility of the base-point comparison with the actions of (1); its existence and its independence up to inner conjugation are separate, and (1) and (3) are not covered here”.
+**`AlgebraicGeometry.etaleFundamentalGroupContinuousMulEquiv_action`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/EtaleFundamental/FundamentalGroupTheorem.lean, line 147](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/EtaleFundamental/FundamentalGroupTheorem.lean#L147). The attribute's comment: “(2) compatibility of the base-point comparison with the actions of (1); its existence and its independence up to inner conjugation are separate, and (1) and (3) are not covered here”.
 
 > **Stacks Project, Tag 0BND (2), compatibility with the equivalences.** The change-of-base-point
 > isomorphism of topological groups intertwines the actions on the geometric fibres underlying the
@@ -112,7 +112,7 @@ theorem etaleFundamentalGroupContinuousMulEquiv_action {X : Scheme.{u}} [Connect
               ((finiteEtaleEquivalenceOfIsGaloisCategoryFiberIso X x).hom.app Y y))))
 ```
 
-**`AlgebraicGeometry.exists_finiteEtaleEquivalence_mapIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/EtaleFundamental/FundamentalGroupTheorem.lean, line 171](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/EtaleFundamental/FundamentalGroupTheorem.lean#L171). The attribute's comment: “(3) the square comparing base change with restriction along the induced homomorphism; the homomorphism and the equation determining it are separate, and (1) and (2) are not covered here”.
+**`AlgebraicGeometry.exists_finiteEtaleEquivalence_mapIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/EtaleFundamental/FundamentalGroupTheorem.lean, line 171](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/EtaleFundamental/FundamentalGroupTheorem.lean#L171). The attribute's comment: “(3) the square comparing base change with restriction along the induced homomorphism; the homomorphism and the equation determining it are separate, and (1) and (2) are not covered here”.
 
 > **Stacks Project, Tag 0BND (3), the commuting square.** For a morphism `f : X ⟶ Y` of connected
 > schemes, base change `FÉt_Y ⥤ FÉt_X` agrees under the equivalences of Tag 0BND (1) with restriction
@@ -136,7 +136,7 @@ theorem exists_finiteEtaleEquivalence_mapIso {X Y : Scheme.{u}} [ConnectedSpace 
               ((finiteEtaleBaseChange f).obj V) a)
 ```
 
-**`AlgebraicGeometry.etaleFundamentalGroupMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/MorphismMap.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/MorphismMap.lean#L191). The attribute's comment: “(3) the induced continuous homomorphism; the equation determining it and the commuting square are separate, and (1) and (2) are not covered here”.
+**`AlgebraicGeometry.etaleFundamentalGroupMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/MorphismMap.lean, line 191](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/MorphismMap.lean#L191). The attribute's comment: “(3) the induced continuous homomorphism; the equation determining it and the commuting square are separate, and (1) and (2) are not covered here”.
 
 > **Stacks Project, Tag 0BND (3).** The continuous homomorphism of étale fundamental groups
 > induced by a morphism of connected schemes and a geometric point of its source.
@@ -147,7 +147,7 @@ def etaleFundamentalGroupMap {X Y : Scheme.{u}} [ConnectedSpace X] [ConnectedSpa
     EtaleFundamentalGroup X x →ₜ* EtaleFundamentalGroup Y (x.map f)
 ```
 
-**`AlgebraicGeometry.etaleFundamentalGroupMap_finiteEtaleFiberProjection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/MorphismMap.lean, line 222](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/MorphismMap.lean#L222). The attribute's comment: “(3) the equation determining the induced continuous homomorphism; the homomorphism itself and the commuting square are separate, and (1) and (2) are not covered here”.
+**`AlgebraicGeometry.etaleFundamentalGroupMap_finiteEtaleFiberProjection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/MorphismMap.lean, line 222](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/MorphismMap.lean#L222). The attribute's comment: “(3) the equation determining the induced continuous homomorphism; the homomorphism itself and the commuting square are separate, and (1) and (2) are not covered here”.
 
 > **Stacks Project, Tag 0BND (3).** The induced homomorphism commutes with the canonical
 > projection from the geometric fibre of a base-changed finite étale cover to the original
@@ -168,7 +168,7 @@ theorem etaleFundamentalGroupMap_finiteEtaleFiberProjection {X Y : Scheme.{u}}
 
 [Tag 0BNE](https://stacks.math.columbia.edu/tag/0BNE) in the Stacks Project.
 
-**`AlgebraicGeometry.finiteEtaleEquivalenceGaloisSets`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategory/FieldFundamentalGroup/FiberComparison.lean, line 184](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategory/FieldFundamentalGroup/FiberComparison.lean#L184). The attribute's comment: “part (1): equivalence”. References: SGA 4½ Arcata (2.4.2), “partial”; SGA 4½ Arcata (2.4.3).
+**`AlgebraicGeometry.finiteEtaleEquivalenceGaloisSets`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategory/FieldFundamentalGroup/FiberComparison.lean, line 184](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategory/FieldFundamentalGroup/FiberComparison.lean#L184). The attribute's comment: “part (1): equivalence”. References: SGA 4½ Arcata (2.4.2), “partial”; SGA 4½ Arcata (2.4.3).
 
 > Finite étale covers of a field are finite continuous sets for its absolute
 > Galois group.
@@ -183,7 +183,7 @@ public noncomputable def finiteEtaleEquivalenceGaloisSets
       ContAction FintypeCat.{u} Gal(L/K)
 ```
 
-**`AlgebraicGeometry.finiteEtaleFiberIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategory/FieldFundamentalGroup/FiberComparison.lean, line 259](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategory/FieldFundamentalGroup/FiberComparison.lean#L259). The attribute's comment: “part (1): natural fibre comparison”.
+**`AlgebraicGeometry.finiteEtaleFiberIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategory/FieldFundamentalGroup/FiberComparison.lean, line 259](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategory/FieldFundamentalGroup/FiberComparison.lean#L259). The attribute's comment: “part (1): natural fibre comparison”.
 
 > The underlying finite Galois set of a cover is naturally its geometric
 > fibre over the algebraic closure.
@@ -201,7 +201,7 @@ public noncomputable def finiteEtaleFiberIso
         (algebraicClosureGeometricPoint K Ω)
 ```
 
-**`AlgebraicGeometry.separableFiberEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategory/FieldFundamentalGroup/FiberComparison.lean, line 354](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategory/FieldFundamentalGroup/FiberComparison.lean#L354). The attribute's comment: “part (1): separable-closure fibre”.
+**`AlgebraicGeometry.separableFiberEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategory/FieldFundamentalGroup/FiberComparison.lean, line 354](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategory/FieldFundamentalGroup/FiberComparison.lean#L354). The attribute's comment: “part (1): separable-closure fibre”.
 
 > The Galois set attached to a finite étale cover is the set of its points
 > over the separable closure.
@@ -218,7 +218,7 @@ public noncomputable def separableFiberEquiv
         f ≫ Y.hom = Spec.map (CommRingCat.ofHom (algebraMap K L)) }
 ```
 
-**`AlgebraicGeometry.finiteEtaleFiberIso_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategory/FieldFundamentalGroup/FiberComparison.lean, line 386](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategory/FieldFundamentalGroup/FiberComparison.lean#L386). The attribute's comment: “part (1): fibre comparison formula”.
+**`AlgebraicGeometry.finiteEtaleFiberIso_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategory/FieldFundamentalGroup/FiberComparison.lean, line 386](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategory/FieldFundamentalGroup/FiberComparison.lean#L386). The attribute's comment: “part (1): fibre comparison formula”.
 
 > The natural fibre comparison is extension of a separable-closure point
 > to the algebraic closure.
@@ -236,7 +236,7 @@ public theorem finiteEtaleFiberIso_apply
         (separableFiberEquiv K L Ω Y y).1
 ```
 
-**`AlgebraicGeometry.separableFiberEquiv_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategory/FieldFundamentalGroup/FiberComparison.lean, line 405](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategory/FieldFundamentalGroup/FiberComparison.lean#L405). The attribute's comment: “part (1): naturality over the separable closure”.
+**`AlgebraicGeometry.separableFiberEquiv_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategory/FieldFundamentalGroup/FiberComparison.lean, line 405](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategory/FieldFundamentalGroup/FiberComparison.lean#L405). The attribute's comment: “part (1): naturality over the separable closure”.
 
 > The separable-closure description is natural in a finite étale cover.
 
@@ -254,7 +254,7 @@ public theorem separableFiberEquiv_map
       (separableFiberEquiv K L Ω Y y).1 ≫ f.left
 ```
 
-**`AlgebraicGeometry.separableFiberEquiv_smul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategory/FieldFundamentalGroup/FiberComparison.lean, line 425](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategory/FieldFundamentalGroup/FiberComparison.lean#L425). The attribute's comment: “part (1): Galois action”.
+**`AlgebraicGeometry.separableFiberEquiv_smul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategory/FieldFundamentalGroup/FiberComparison.lean, line 425](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategory/FieldFundamentalGroup/FiberComparison.lean#L425). The attribute's comment: “part (1): Galois action”.
 
 > The Galois action on a separable-closure point is precomposition with
 > the corresponding field automorphism.
@@ -275,7 +275,7 @@ public theorem separableFiberEquiv_smul
         (separableFiberEquiv K L Ω Y y).1
 ```
 
-**`AlgebraicGeometry.galoisEquivEtaleFundamentalGroup`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategory/FieldFundamentalGroup/GaloisGroupIso.lean, line 175](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategory/FieldFundamentalGroup/GaloisGroupIso.lean#L175). The attribute's comment: “part (2)”. References: SGA 1 IX (6.1), “π₁(Spec k, special case”; SGA 1 V (8.1), “special case”; SGA 4½ Arcata (2.4.1).
+**`AlgebraicGeometry.galoisEquivEtaleFundamentalGroup`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategory/FieldFundamentalGroup/GaloisGroupIso.lean, line 175](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategory/FieldFundamentalGroup/GaloisGroupIso.lean#L175). The attribute's comment: “part (2)”. References: SGA 1 IX (6.1), “π₁(Spec k, special case”; SGA 1 V (8.1), “special case”; SGA 4½ Arcata (2.4.1).
 
 > The canonical isomorphism from the absolute Galois group to the étale
 > fundamental group: its action on a fibre is precomposition on the corresponding
@@ -292,7 +292,7 @@ public noncomputable def galoisEquivEtaleFundamentalGroup
         (algebraicClosureGeometricPoint K Ω)
 ```
 
-**`AlgebraicGeometry.galoisEquivEtaleFundamentalGroup_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategory/FieldFundamentalGroup/GaloisGroupIso.lean, line 344](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategory/FieldFundamentalGroup/GaloisGroupIso.lean#L344). The attribute's comment: “part (2): action formula”. References: SGA 1 V (8.1), “Canonicity clause”; SGA 4½ Arcata (2.4.2), “partial”.
+**`AlgebraicGeometry.galoisEquivEtaleFundamentalGroup_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategory/FieldFundamentalGroup/GaloisGroupIso.lean, line 344](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategory/FieldFundamentalGroup/GaloisGroupIso.lean#L344). The attribute's comment: “part (2): action formula”. References: SGA 1 V (8.1), “Canonicity clause”; SGA 4½ Arcata (2.4.2), “partial”.
 
 > The canonical group isomorphism acts on geometric fibres through the
 > absolute Galois action on separable-closure points.
@@ -321,4 +321,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 58.6, Tag 0BQ8](https://stacks.math.columbia.edu/tag/0BQ8)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

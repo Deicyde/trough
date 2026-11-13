@@ -1,66 +1,106 @@
 ---
 declaration: section
 origin: cited
-lean: AlgebraicGeometry.Space.isAlgebraicSpace_limit_of_isAffineHom_app, AlgebraicGeometry.Space.isAffineHom_limitπ_comp_app, AlgebraicGeometry.Space.exists_isAffine_representation_limit, AlgebraicGeometry.Space.isAlgebraicSpace_limit, AlgebraicGeometry.Space.isAlgebraicSpace_limit_of_isSiteSmall, AlgebraicGeometry.Space.isAlgebraicSpace_limit_of_limitInSite, AlgebraicGeometry.Space.isLimitPullbackLimitOverPost, AlgebraicGeometry.Space.isAffineHom_limitπ
+lean: AlgebraicGeometry.Space.isAlgebraicSpace_limit_and_isAffineHom_limitπ_of_limitInSite, AlgebraicGeometry.Space.isAlgebraicSpace_limit_of_isAffineHom_app_of_limitInSite, AlgebraicGeometry.Space.isAffineHom_limitπ_comp_app_of_limitInSite, AlgebraicGeometry.Space.exists_isAffine_representation_limit_of_limitInSite, AlgebraicGeometry.Space.isAlgebraicSpace_limit, AlgebraicGeometry.Space.isAlgebraicSpace_limit_of_isSiteSmall, AlgebraicGeometry.Space.isAlgebraicSpace_limit_of_limitInSite, AlgebraicGeometry.Space.isLimitPullbackLimitOverPost
 statement: formalized
 proof: formalized
 ---
 
 # 70.4 Limits of algebraic spaces
 
-Section 70.4 of the Stacks Project, [Tag 07SE](https://stacks.math.columbia.edu/tag/07SE). 7 tags here are carried by 19 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 70.4 of the Stacks Project, [Tag 07SE](https://stacks.math.columbia.edu/tag/07SE). 7 tags here are carried by 19 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 07SE, the section
 
 [Tag 07SE](https://stacks.math.columbia.edu/tag/07SE) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isAlgebraicSpace_limit_of_isAffineHom_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/AffineOverBase.lean, line 141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/AffineOverBase.lean#L141). The attribute's comment: “the content the section is cited for: a cofiltered inverse limit of algebraic spaces affine over a base is an algebraic space; the section's own numbered results 07SF, 07SG, 07SH, 0CUH, 0CUI and 0CP4 are not proved here”.
+**`AlgebraicGeometry.Space.isAlgebraicSpace_limit_and_isAffineHom_limitπ_of_limitInSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/AffineOverBase.lean, line 268](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/AffineOverBase.lean#L268). The attribute's comment: “the description of limits of algebraic spaces the section sets up: a cofiltered limit of algebraic spaces with affine transitions is an algebraic space with affine projections, and base change commutes with it; its numbered results are 07SF (existence, parts (1) and (2)), 07SG (the presentation U/R of the limit), 07SH, 0CUH, 0CUI and 0CP4, each registered on its own declaration”.
 
-> **Stacks 07SE.** The inverse limit of a cofiltered inverse system of algebraic spaces
-> over `S`, each affine over one fixed algebraic space `T`, is an algebraic space over `S`,
-> provided the index category is small enough for the site.
+> **Stacks 07SE.** Let `D` be a cofiltered inverse system of algebraic spaces over `S` whose
+> transition morphisms are affine. Then the inverse limit of `D`, computed as a presheaf (hence as
+> an fppf sheaf), is an algebraic space over `S`; every projection from it to a stage is affine;
+> and for every stage `i` and every morphism `g : T ⟶ D i` the base change of the limit along `g`
+> is the limit of the base changes along `g` of the stages over `i`.
 >
-> Affineness of the transition morphisms, which is what Stacks 07SF asks for, is supplied by
-> `AlgebraicGeometry.Space.isAffineHom_map_of_isAffineHom_app`.
+> This is the description of limits of algebraic spaces which the section sets up and uses in
+> the rest of the chapter, under the chapter's standing convention (Stacks 07SD). The three
+> conclusions are Stacks 07SF: its existence assertion is
+> `AlgebraicGeometry.Space.isAlgebraicSpace_limit_of_limitInSite`, part (1) is
+> `AlgebraicGeometry.Space.isAffineHom_limitπ_of_siteContainsBaseChangeLimits`, and part (2),
+> which is also Stacks 07SH, is `AlgebraicGeometry.Space.isLimitPullbackLimitOverPost`.
 
 ```lean
-theorem isAlgebraicSpace_limit_of_isAffineHom_app (hSize : #I < B.cutoff.ord.cof)
-    (hHomSize : ∀ i j : I, #(i ⟶ j) < B.cutoff.ord.cof)
+theorem isAlgebraicSpace_limit_and_isAffineHom_limitπ_of_limitInSite
+    (hconv : ∀ (i : I) (Z : BigFppfOver B S hS) (g : yoneda.obj Z ⟶ D.obj i)
+      (W : Over i ⥤ BigFppfOver B S hS),
+      (W ⋙ yoneda ≅ (Over.post (X := i) D ⋙ Over.pullback g) ⋙
+        Over.forget (yoneda.obj Z)) → BigFppfOver.LimitInSite W)
+    (hD : ∀ i, IsAlgebraicSpace B S hS (D.obj i))
+    (hAffine : ∀ {i j : I} (f : i ⟶ j), IsAffineHom B S hS (D.map f)) :
+    IsAlgebraicSpace B S hS (limit D) ∧ (∀ i, IsAffineHom B S hS (limit.π D i)) ∧
+      ∀ (i : I) {T : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u} (g : T ⟶ D.obj i),
+        Nonempty (IsLimit ((Over.forget T).mapCone
+          ((Over.pullback g).mapCone ((limit.cone D).overPost i))))
+```
+
+**`AlgebraicGeometry.Space.isAlgebraicSpace_limit_of_isAffineHom_app_of_limitInSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/AffineOverBase.lean, line 294](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/AffineOverBase.lean#L294). The attribute's comment: “a cofiltered limit of algebraic spaces affine over a fixed algebraic space is an algebraic space, the form in which the section is cited in the proof of 08K6”.
+
+> **Stacks 07SE, systems affine over a base.** The inverse limit of a cofiltered inverse
+> system of algebraic spaces over `S`, each affine over one fixed algebraic space `T`, is an
+> algebraic space over `S`, under the chapter's standing convention (Stacks 07SD).
+>
+> The transition morphisms are affine by
+> `AlgebraicGeometry.Space.isAffineHom_map_of_isAffineHom_app`, so Stacks 07SF applies.
+
+```lean
+theorem isAlgebraicSpace_limit_of_isAffineHom_app_of_limitInSite
+    (hconv : ∀ (i : I) (Z : BigFppfOver B S hS) (g : yoneda.obj Z ⟶ D.obj i)
+      (W : Over i ⥤ BigFppfOver B S hS),
+      (W ⋙ yoneda ≅ (Over.post (X := i) D ⋙ Over.pullback g) ⋙
+        Over.forget (yoneda.obj Z)) → BigFppfOver.LimitInSite W)
     (hD : ∀ i, IsAlgebraicSpace B S hS (D.obj i)) (hT : IsAlgebraicSpace B S hS T)
     (hτ : ∀ i, IsAffineHom B S hS (τ.app i)) :
     IsAlgebraicSpace B S hS (limit D)
 ```
 
-**`AlgebraicGeometry.Space.isAffineHom_limitπ_comp_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/AffineOverBase.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/AffineOverBase.lean#L157). The attribute's comment: “the content the section is cited for: the structure morphism of a cofiltered inverse limit of algebraic spaces affine over a base is affine; the section's own numbered results 07SF, 07SG, 07SH, 0CUH, 0CUI and 0CP4 are not proved here”.
+**`AlgebraicGeometry.Space.isAffineHom_limitπ_comp_app_of_limitInSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/AffineOverBase.lean, line 313](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/AffineOverBase.lean#L313). The attribute's comment: “the structure morphism of a cofiltered limit of algebraic spaces affine over a fixed algebraic space is affine, the form in which the section is cited in the proof of 08K6”.
 
-> **Stacks 07SE.** The structure morphism of the inverse limit of a cofiltered inverse
-> system of algebraic spaces each affine over one fixed algebraic space `T` is affine over `T`.
+> **Stacks 07SE, systems affine over a base.** The structure morphism to `T` of the inverse
+> limit of a cofiltered inverse system of algebraic spaces, each affine over one fixed algebraic
+> space `T`, is affine, under the chapter's standing convention (Stacks 07SD).
 >
-> It factors as the projection to a stage, which is affine by Stacks 07SF, part (1), followed
-> by the structure morphism of that stage.
+> It factors as the projection to a stage, which is affine by Stacks 07SF, part (1), followed by
+> the structure morphism of that stage; a composite of affine morphisms is affine.
 
 ```lean
-theorem isAffineHom_limitπ_comp_app (hSize : #I < B.cutoff.ord.cof)
-    (hHomSize : ∀ i j : I, #(i ⟶ j) < B.cutoff.ord.cof)
+theorem isAffineHom_limitπ_comp_app_of_limitInSite
+    (hconv : ∀ (i : I) (Z : BigFppfOver B S hS) (g : yoneda.obj Z ⟶ D.obj i)
+      (W : Over i ⥤ BigFppfOver B S hS),
+      (W ⋙ yoneda ≅ (Over.post (X := i) D ⋙ Over.pullback g) ⋙
+        Over.forget (yoneda.obj Z)) → BigFppfOver.LimitInSite W)
     (hD : ∀ i, IsAlgebraicSpace B S hS (D.obj i)) (hT : IsAlgebraicSpace B S hS T)
     (hτ : ∀ i, IsAffineHom B S hS (τ.app i)) (i : I) :
     IsAffineHom B S hS (limit.π D i ≫ τ.app i)
 ```
 
-**`AlgebraicGeometry.Space.exists_isAffine_representation_limit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/AffineOverBase.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/AffineOverBase.lean#L187). The attribute's comment: “the content the section is cited for, combined with Limits, Section 01YV: a cofiltered inverse limit of algebraic spaces affine over an affine base is represented by an affine object of the site; the section's own numbered results 07SF, 07SG, 07SH, 0CUH, 0CUI and 0CP4 are not proved here”.
+**`AlgebraicGeometry.Space.exists_isAffine_representation_limit_of_limitInSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/AffineOverBase.lean, line 347](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/AffineOverBase.lean#L347). The attribute's comment: “a cofiltered limit of algebraic spaces affine over an affine scheme is an affine scheme, the form in which the section is cited, together with Limits, Section 01YV, in the proof of 08K6”.
 
 > **Stacks 07SE, over an affine base.** The inverse limit of a cofiltered inverse system of
 > algebraic spaces over `S`, each affine over one fixed affine object `Z` of the site, is
-> represented by an affine object of the site, by an isomorphism carrying the structure
-> morphism of the limit to a morphism of the site.
+> represented by an affine object of the site, by an isomorphism carrying the structure morphism
+> of the limit to a morphism of the site, under the chapter's standing convention (Stacks 07SD).
 >
-> The structure morphism of the limit is affine, so its base change along the identity of
-> `yoneda Z` is represented by an affine object of the site; a base change along an identity is
-> an isomorphism.
+> The structure morphism of the limit is affine by
+> `AlgebraicGeometry.Space.isAffineHom_limitπ_comp_app_of_limitInSite`, so its base change along
+> the identity of `yoneda Z` is represented by an affine object of the site; a base change along
+> an identity is an isomorphism.
 
 ```lean
-theorem exists_isAffine_representation_limit (hSize : #I < B.cutoff.ord.cof)
-    (hHomSize : ∀ i j : I, #(i ⟶ j) < B.cutoff.ord.cof)
+theorem exists_isAffine_representation_limit_of_limitInSite
+    (hconv : ∀ (i : I) (Z : BigFppfOver B S hS) (g : yoneda.obj Z ⟶ D.obj i)
+      (W : Over i ⥤ BigFppfOver B S hS),
+      (W ⋙ yoneda ≅ (Over.post (X := i) D ⋙ Over.pullback g) ⋙
+        Over.forget (yoneda.obj Z)) → BigFppfOver.LimitInSite W)
     (hD : ∀ i, IsAlgebraicSpace B S hS (D.obj i))
     (hτ : ∀ i, IsAffineHom B S hS (τ.app i)) (i₀ : I) :
     ∃ (W : BigAffineFppf B S hS)
@@ -74,7 +114,7 @@ theorem exists_isAffine_representation_limit (hSize : #I < B.cutoff.ord.cof)
 
 [Tag 07SF](https://stacks.math.columbia.edu/tag/07SF) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isAlgebraicSpace_limit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineLimitExistence.lean, line 599](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineLimitExistence.lean#L599). The attribute's comment: “existence”.
+**`AlgebraicGeometry.Space.isAlgebraicSpace_limit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineLimitExistence.lean, line 599](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AffineLimitExistence.lean#L599). The attribute's comment: “existence”.
 
 > **Stacks 07SF, existence.** The inverse limit of a cofiltered inverse system of algebraic
 > spaces over `S` with affine transition morphisms is an algebraic space over `S`, provided the
@@ -94,7 +134,7 @@ theorem isAlgebraicSpace_limit (hSize : #I < B.cutoff.ord.cof)
     IsAlgebraicSpace B S hS (limit D)
 ```
 
-**`AlgebraicGeometry.Space.isAlgebraicSpace_limit_of_isSiteSmall`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineLimitExistence.lean, line 707](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineLimitExistence.lean#L707). The attribute's comment: “existence”.
+**`AlgebraicGeometry.Space.isAlgebraicSpace_limit_of_isSiteSmall`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineLimitExistence.lean, line 707](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AffineLimitExistence.lean#L707). The attribute's comment: “existence”.
 
 > **Stacks 07SF, existence.** The inverse limit of a cofiltered inverse system of algebraic
 > spaces over `S` with affine transition morphisms is an algebraic space over `S`, provided the
@@ -114,7 +154,7 @@ theorem isAlgebraicSpace_limit_of_isSiteSmall (hb : IsSiteSmall B S hS D)
     IsAlgebraicSpace B S hS (limit D)
 ```
 
-**`AlgebraicGeometry.Space.isAlgebraicSpace_limit_of_limitInSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineLimitExistence.lean, line 729](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AffineLimitExistence.lean#L729). The attribute's comment: “existence”.
+**`AlgebraicGeometry.Space.isAlgebraicSpace_limit_of_limitInSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AffineLimitExistence.lean, line 729](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AffineLimitExistence.lean#L729). The attribute's comment: “existence”.
 
 > **Stacks 07SF, existence, under the chapter's standing convention.** The inverse limit of a
 > cofiltered inverse system of algebraic spaces over `S` with affine transition morphisms is an
@@ -142,7 +182,7 @@ theorem isAlgebraicSpace_limit_of_limitInSite
     IsAlgebraicSpace B S hS (limit D)
 ```
 
-**`AlgebraicGeometry.Space.isLimitPullbackLimitOverPost`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ApproximationSteps.lean, line 483](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ApproximationSteps.lean#L483). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.Space.isLimitPullbackLimitOverPost`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ApproximationSteps.lean, line 483](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ApproximationSteps.lean#L483). The attribute's comment: “part (2)”.
 
 > For a cofiltered inverse system `D` of presheaves on the big fppf site of `S`, a stage `i`
 > and a morphism `g : T ⟶ D i`, the base changes of the stages over `i` along `g` form an inverse
@@ -156,7 +196,7 @@ noncomputable def isLimitPullbackLimitOverPost (i : I)
       ((Over.pullback g).mapCone ((limit.cone D).overPost i)))
 ```
 
-**`AlgebraicGeometry.Space.isAffineHom_limitπ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ApproximationSteps.lean, line 548](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ApproximationSteps.lean#L548). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.Space.isAffineHom_limitπ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ApproximationSteps.lean, line 548](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ApproximationSteps.lean#L548). The attribute's comment: “part (1)”.
 
 > Every projection from the inverse limit of a cofiltered inverse system of algebraic spaces
 > with affine transition morphisms is affine, provided the index category is small enough for the
@@ -170,7 +210,7 @@ theorem isAffineHom_limitπ (hSize : #I < B.cutoff.ord.cof)
     (i : I) : IsAffineHom B S hS (limit.π D i)
 ```
 
-**`AlgebraicGeometry.Space.isAffineHom_limitπ_of_siteContainsBaseChangeLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ApproximationSteps.lean, line 1082](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ApproximationSteps.lean#L1082). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.Space.isAffineHom_limitπ_of_siteContainsBaseChangeLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ApproximationSteps.lean, line 1082](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ApproximationSteps.lean#L1082). The attribute's comment: “part (1)”.
 
 > Every projection from the inverse limit of a cofiltered inverse system of algebraic spaces
 > with affine transition morphisms is affine, provided the system satisfies
@@ -183,7 +223,7 @@ theorem isAffineHom_limitπ_of_siteContainsBaseChangeLimits
     (i : I) : IsAffineHom B S hS (limit.π D i)
 ```
 
-**`AlgebraicGeometry.Space.isAffineHom_limitπ_of_isSiteSmall`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ApproximationSteps.lean, line 1095](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ApproximationSteps.lean#L1095). The attribute's comment: “part (1)”. References: SGA 3 XI (4.3), “partial”.
+**`AlgebraicGeometry.Space.isAffineHom_limitπ_of_isSiteSmall`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ApproximationSteps.lean, line 1095](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ApproximationSteps.lean#L1095). The attribute's comment: “part (1)”. References: SGA 3 XI (4.3), “partial”.
 
 > Every projection from the inverse limit of a cofiltered inverse system of algebraic spaces
 > with affine transition morphisms is affine, provided the system is small for the site in the
@@ -195,7 +235,7 @@ theorem isAffineHom_limitπ_of_isSiteSmall (hb : IsSiteSmall B S hS D)
     (i : I) : IsAffineHom B S hS (limit.π D i)
 ```
 
-**`AlgebraicGeometry.Space.AffineChartSystem.limitBridge`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/AffineChartSystem.lean, line 338](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/AffineChartSystem.lean#L338). The attribute's comment: “limit of the affine charts at a stage”.
+**`AlgebraicGeometry.Space.AffineChartSystem.limitBridge`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/AffineChartSystem.lean, line 338](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/AffineChartSystem.lean#L338). The attribute's comment: “limit of the affine charts at a stage”.
 
 > **The limit of a chart system.** A chart system indexed by a slice of a sufficiently small
 > index category has a limit in the big fppf site of `S`, whose underlying scheme is a limit of
@@ -208,7 +248,7 @@ noncomputable def limitBridge [IsCofiltered I] (C : AffineChartSystem B S hS i�
     LimitBridge C
 ```
 
-**`AlgebraicGeometry.Space.AffineChartSystem.limitBridgeOfLimitInSite`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/AffineChartSystem.lean, line 629](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/AffineChartSystem.lean#L629). The attribute's comment: “limit of the affine charts at a stage”.
+**`AlgebraicGeometry.Space.AffineChartSystem.limitBridgeOfLimitInSite`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/AffineChartSystem.lean, line 629](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/AffineChartSystem.lean#L629). The attribute's comment: “limit of the affine charts at a stage”.
 
 > **The limit of a chart system whose limit of charts lies in the site.** A chart system whose
 > limit of charts lies in the site has a limit in the big fppf site of `S`, whose underlying
@@ -222,7 +262,7 @@ noncomputable def limitBridgeOfLimitInSite [IsCofiltered I]
     LimitBridge C
 ```
 
-**`AlgebraicGeometry.Space.AffineChartSystem.limitBridgeOfIsSiteSmall`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/AffineChartSystem.lean, line 660](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/AffineChartSystem.lean#L660). The attribute's comment: “limit of the affine charts at a stage”.
+**`AlgebraicGeometry.Space.AffineChartSystem.limitBridgeOfIsSiteSmall`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/AffineChartSystem.lean, line 660](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/AffineChartSystem.lean#L660). The attribute's comment: “limit of the affine charts at a stage”.
 
 > **The limit of a chart system of a system small for the site.** A chart system of a system
 > which is small for the site has a limit in the big fppf site of `S`, whose underlying scheme is
@@ -240,7 +280,7 @@ noncomputable def limitBridgeOfIsSiteSmall [IsCofiltered I]
 
 [Tag 07SG](https://stacks.math.columbia.edu/tag/07SG) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_quotient_presentation_of_affine_transition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/QuotientPresentation.lean, line 1354](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/QuotientPresentation.lean#L1354).
+**`AlgebraicGeometry.Space.exists_quotient_presentation_of_affine_transition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/QuotientPresentation.lean, line 1354](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/QuotientPresentation.lean#L1354).
 
 > Let `D` be a cofiltered inverse system of algebraic spaces over `S` with affine transition
 > morphisms and `p₀ : U₀ ⟶ D i₀` a surjective étale atlas of one stage. Then there are a scheme
@@ -293,7 +333,7 @@ public theorem exists_quotient_presentation_of_affine_transition
 
 [Tag 07SH](https://stacks.math.columbia.edu/tag/07SH) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isLimitPullbackLimitOverPost`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ApproximationSteps.lean, line 483](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ApproximationSteps.lean#L483). The attribute's comment: “base change of the limit is the limit of the base changes”.
+**`AlgebraicGeometry.Space.isLimitPullbackLimitOverPost`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ApproximationSteps.lean, line 483](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ApproximationSteps.lean#L483). The attribute's comment: “base change of the limit is the limit of the base changes”.
 
 > For a cofiltered inverse system `D` of presheaves on the big fppf site of `S`, a stage `i`
 > and a morphism `g : T ⟶ D i`, the base changes of the stages over `i` along `g` form an inverse
@@ -311,7 +351,7 @@ noncomputable def isLimitPullbackLimitOverPost (i : I)
 
 [Tag 0CUH](https://stacks.math.columbia.edu/tag/0CUH) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isClosedImmersion_limitMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/LimitClosedImmersion.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/LimitClosedImmersion.lean#L111).
+**`AlgebraicGeometry.Space.isClosedImmersion_limitMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/LimitClosedImmersion.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/LimitClosedImmersion.lean#L111).
 
 > A stagewise closed immersion between inverse systems of algebraic spaces with affine
 > transition morphisms induces a closed immersion of their inverse limits.
@@ -334,7 +374,7 @@ theorem isClosedImmersion_limitMap
 
 [Tag 0CUI](https://stacks.math.columbia.edu/tag/0CUI) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isReduced_limit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/Reduced.lean, line 495](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Limits/Reduced.lean#L495).
+**`AlgebraicGeometry.Space.isReduced_limit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Limits/Reduced.lean, line 494](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Limits/Reduced.lean#L494).
 
 > A cofiltered inverse limit of reduced algebraic spaces with affine
 > transition morphisms is reduced.
@@ -359,31 +399,43 @@ public theorem Space.isReduced_limit
 
 [Tag 0CP4](https://stacks.math.columbia.edu/tag/0CP4) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.affineLimitSquare_iff_qcqsLimitSquare`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation/QcqsCriterion.lean, line 1116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation/QcqsCriterion.lean#L1116).
+**`AlgebraicGeometry.Space.isLocallyOfFinitePresentation_tfae_qcqsLimitSquare`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation/QcqsCriterionTfae.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation/QcqsCriterionTfae.lean#L149). The attribute's comment: “condition (3) is read for systems satisfying the chapter's standing convention (tag 07SD), at index categories in the universe of the schemes”.
 
-> **Stacks 0CP4.** For a morphism of algebraic spaces over `S`, the affine-limit
-> comparison square is cartesian for every sufficiently small cofiltered inverse system of
-> affine objects exactly when the comparison square of morphism sets is cartesian for every
-> sufficiently small cofiltered inverse system of quasi-compact and quasi-separated algebraic
-> spaces with affine transition morphisms.
+> **Stacks 0CP4.** For a morphism `f : X ⟶ Y` of algebraic spaces over `S`, the following are
+> equivalent:
+>
+> 1. `f` is locally of finite presentation;
+> 2. `f` is relatively limit preserving (the two equivalent conditions of Stacks 04AK);
+> 3. for every cofiltered inverse system `D` of quasi-compact and quasi-separated algebraic spaces
+>    over `S` with affine transition morphisms and every limit `c` of it, the square of morphism
+>    sets `colim_i Mor(D_i, X) → Mor(c, X)` over `colim_i Mor(D_i, Y) → Mor(c, Y)` is cartesian.
+>
+> The limits in (3) are those of the chapter's standing convention of Section 70.2 (tag 07SD),
+> `AlgebraicGeometry.Space.SiteContainsBaseChangeLimits`; relative limit preservation and the
+> systems of (3) are read at index categories in the universe of the schemes.
 
 ```lean
-theorem affineLimitSquare_iff_qcqsLimitSquare (f : X ⟶ Y)
+theorem isLocallyOfFinitePresentation_tfae_qcqsLimitSquare (f : X ⟶ Y)
     (hX : IsAlgebraicSpace B S hS X) (hY : IsAlgebraicSpace B S hS Y) :
-    AffineLimitSquare B S hS f ↔ QcqsLimitSquare B S hS hZ f
-```
-
-**`AlgebraicGeometry.Space.qcqsLimitSquare_of_isLocallyOfFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation/QcqsCriterion.lean, line 1141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation/QcqsCriterion.lean#L1141). The attribute's comment: “the implication from locally of finite presentation”.
-
-> **Stacks 0CP4.** A morphism of algebraic spaces over `S` which is locally of finite
-> presentation satisfies the comparison condition for cofiltered limits of quasi-compact and
-> quasi-separated algebraic spaces with affine transition morphisms.
-
-```lean
-theorem qcqsLimitSquare_of_isLocallyOfFinitePresentation (f : X ⟶ Y)
-    (hX : IsAlgebraicSpace B S hS X) (hY : IsAlgebraicSpace B S hS Y)
-    (hf : IsLocallyOfFinitePresentation B S hS f) :
-    QcqsLimitSquare B S hS hZ f
+    List.TFAE
+      [IsLocallyOfFinitePresentation B S hS f,
+        RelativelyLimitPreserving.{u, u, u, u} B S hS f,
+        ∀ (I : Type u) [Category.{u} I] [IsCofiltered I]
+          (D : I ⥤ (BigFppfOver B S hS)ᵒᵖ ⥤ Type u) (c : Cone D),
+          SiteContainsBaseChangeLimits B S hS D →
+          (∀ i, IsAlgebraicSpace B S hS (D.obj i)) →
+          (∀ i, IsQuasiCompactSpace B S hS (D.obj i)) →
+          (∀ i, IsAbsolutelyQuasiSeparated B S hS hZ (D.obj i)) →
+          (∀ {i j : I} (a : i ⟶ j), IsAffineHom B S hS (D.map a)) →
+          IsLimit c →
+          IsPullback
+            (colimit.desc (D.op ⋙ yoneda.obj X ⋙ uliftFunctor.{u + 1, u + 1})
+              ((yoneda.obj X ⋙ uliftFunctor.{u + 1, u + 1}).mapCocone c.op))
+            (colimMap (Functor.whiskerLeft D.op
+              (Functor.whiskerRight (yoneda.map f) uliftFunctor.{u + 1, u + 1})))
+            (uliftFunctor.{u + 1, u + 1}.map ((yoneda.map f).app (op c.pt)))
+            (colimit.desc (D.op ⋙ yoneda.obj Y ⋙ uliftFunctor.{u + 1, u + 1})
+              ((yoneda.obj Y ⋙ uliftFunctor.{u + 1, u + 1}).mapCocone c.op))]
 ```
 
 ## Depends on
@@ -393,4 +445,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 70.4, Tag 07SE](https://stacks.math.columbia.edu/tag/07SE)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

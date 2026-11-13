@@ -8,13 +8,13 @@ proof: formalized
 
 # 67.47 Rational maps
 
-Section 67.47 of the Stacks Project, [Tag 0EML](https://stacks.math.columbia.edu/tag/0EML). 8 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 67.47 of the Stacks Project, [Tag 0EML](https://stacks.math.columbia.edu/tag/0EML). 8 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0EMM, a definition
 
 [Tag 0EMM](https://stacks.math.columbia.edu/tag/0EMM) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.PartialMap.Equivalent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RationalFunctions.lean, line 173](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RationalFunctions.lean#L173). The attribute's comment: “part (1): equivalence of representatives”. References: EGA I (7.1.1), “equivalence definition”.
+**`AlgebraicGeometry.Space.PartialMap.Equivalent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RationalFunctions.lean, line 173](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RationalFunctions.lean#L173). The attribute's comment: “part (1): equivalence of representatives”. References: EGA I (7.1.1), “equivalence definition”.
 
 > Two partial maps agree after restriction to a common dense open subspace.
 
@@ -22,7 +22,7 @@ Section 67.47 of the Stacks Project, [Tag 0EML](https://stacks.math.columbia.edu
 def Equivalent (f g : PartialMap B S hS hX Y) : Prop
 ```
 
-**`AlgebraicGeometry.Space.PartialMap.equivalence_equivalent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RationalFunctions.lean, line 186](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RationalFunctions.lean#L186). The attribute's comment: “part (1): equivalence relation”. References: EGA I (7.1.1), “is an equivalence rel.”.
+**`AlgebraicGeometry.Space.PartialMap.equivalence_equivalent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RationalFunctions.lean, line 186](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RationalFunctions.lean#L186). The attribute's comment: “part (1): equivalence relation”. References: EGA I (7.1.1), “is an equivalence rel.”.
 
 > **Stacks 0EMM, part (1).** Agreement on a common dense open subspace is an equivalence
 > relation.
@@ -35,7 +35,7 @@ theorem equivalence_equivalent :
     Equivalence (Equivalent B S hS (X := X) (Y := Y) (hX := hX))
 ```
 
-**`AlgebraicGeometry.Space.RationalMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RationalFunctions.lean, line 214](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RationalFunctions.lean#L214). The attribute's comment: “part (2): rational maps”. References: EGA I (7.1.2), “rational map”.
+**`AlgebraicGeometry.Space.RationalMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RationalFunctions.lean, line 214](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RationalFunctions.lean#L214). The attribute's comment: “part (2): rational maps”. References: EGA I (7.1.2), “rational map”.
 
 > **Stacks 0EMM, part (2).** A rational map of algebraic spaces is a class of dense-open
 > representatives.
@@ -45,7 +45,7 @@ def RationalMap (hX : IsAlgebraicSpace B S hS X)
     (Y : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u) : Type _
 ```
 
-**`AlgebraicGeometry.Space.RationalMap.IsOver`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RationalFunctions.lean, line 250](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RationalFunctions.lean#L250). The attribute's comment: “part (3): relative rational maps”.
+**`AlgebraicGeometry.Space.RationalMap.IsOver`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RationalFunctions.lean, line 250](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RationalFunctions.lean#L250). The attribute's comment: “part (3): relative rational maps”.
 
 > **Stacks 0EMM, part (3).** A rational map is over another algebraic space if one
 > representative is.
@@ -59,7 +59,7 @@ abbrev IsOver {T : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u} (xToT : X ⟶ T) (yToT
 
 [Tag 0EMN](https://stacks.math.columbia.edu/tag/0EMN) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.rationalFunctions`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RationalFunctions.lean, line 490](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RationalFunctions.lean#L490). The attribute's comment: “rational functions as rational maps to the relative affine line”.
+**`AlgebraicGeometry.Space.rationalFunctions`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RationalFunctions.lean, line 490](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RationalFunctions.lean#L490). The attribute's comment: “rational functions as rational maps to the relative affine line”.
 
 > A rational function is a rational map to the relative affine line.
 
@@ -71,7 +71,7 @@ noncomputable abbrev rationalFunctions (hX : IsAlgebraicSpace B S hS X) : Type (
 
 [Tag 0EMP](https://stacks.math.columbia.edu/tag/0EMP) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.rationalFunctionsRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RationalFunctions.lean, line 499](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RationalFunctions.lean#L499).
+**`AlgebraicGeometry.Space.rationalFunctionsRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RationalFunctions.lean, line 499](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RationalFunctions.lean#L499).
 
 > **Stacks 0EMP.** Pointwise ring operations on common dense-open representatives
 > determine the commutative ring structure on rational functions.
@@ -127,7 +127,7 @@ theorem rationalFunctionsRing (hX : IsAlgebraicSpace B S hS X) :
 
 [Tag 0EMQ](https://stacks.math.columbia.edu/tag/0EMQ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.RationalMap.IsDefinedAt`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/RationalMaps.lean, line 211](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/RationalMaps.lean#L211). The attribute's comment: “defined at a point”. References: EGA I (7.2.1), “defined at a point”; EGA IV (20.2.3), “defined at a point”.
+**`AlgebraicGeometry.Space.RationalMap.IsDefinedAt`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/RationalMaps.lean, line 211](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/RationalMaps.lean#L211). The attribute's comment: “defined at a point”. References: EGA I (7.2.1), “defined at a point”; EGA IV (20.2.3), “defined at a point”.
 
 > A rational map is *defined at a point* of its source when it has a representative whose
 > domain contains that point.
@@ -136,7 +136,7 @@ theorem rationalFunctionsRing (hX : IsAlgebraicSpace B S hS X) :
 abbrev IsDefinedAt (φ : RationalMap B S hS hX Y) (x : points B S hS X) : Prop
 ```
 
-**`AlgebraicGeometry.Space.RationalMap.domainOfDefinition`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/RationalMaps.lean, line 219](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/RationalMaps.lean#L219). The attribute's comment: “domain of definition”. References: EGA I (7.2.1), “domain of definition”; EGA IV (20.2.3), “dom(ω)”.
+**`AlgebraicGeometry.Space.RationalMap.domainOfDefinition`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/RationalMaps.lean, line 219](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/RationalMaps.lean#L219). The attribute's comment: “domain of definition”. References: EGA I (7.2.1), “domain of definition”; EGA IV (20.2.3), “dom(ω)”.
 
 > The *domain of definition* of a rational map is the set of points at which it is defined.
 
@@ -148,7 +148,7 @@ abbrev domainOfDefinition (φ : RationalMap B S hS hX Y) : Set (points B S hS X)
 
 [Tag 0EMR](https://stacks.math.columbia.edu/tag/0EMR) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.existsUnique_hom_of_eq_domainOfDefinition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/RationalMapDomainOfDefinition.lean, line 401](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/RationalMapDomainOfDefinition.lean#L401). References: EGA I (7.2.2).
+**`AlgebraicGeometry.Space.existsUnique_hom_of_eq_domainOfDefinition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/RationalMapDomainOfDefinition.lean, line 401](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/RationalMapDomainOfDefinition.lean#L401). References: EGA I (7.2.2).
 
 > **Stacks 0EMR.** Let `X` be a reduced algebraic space over `S` and let `Y` be an algebraic
 > space separated over `S`. A rational map from `X` to `Y` is represented by exactly one morphism
@@ -171,7 +171,7 @@ theorem existsUnique_hom_of_eq_domainOfDefinition
 
 [Tag 0EMS](https://stacks.math.columbia.edu/tag/0EMS) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.RationalMap.IsDominant`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/RationalMaps.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/RationalMaps.lean#L225).
+**`AlgebraicGeometry.Space.RationalMap.IsDominant`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/RationalMaps.lean, line 225](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/RationalMaps.lean#L225).
 
 > A rational map is *dominant* when every one of its dense-open representatives is a dominant
 > morphism.
@@ -184,7 +184,7 @@ abbrev IsDominant (φ : RationalMap B S hS hX Y) : Prop
 
 [Tag 0EMT](https://stacks.math.columbia.edu/tag/0EMT) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.Birational`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/RationalMaps.lean, line 273](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/RationalMaps.lean#L273).
+**`AlgebraicGeometry.Space.Birational`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/RationalMaps.lean, line 273](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/RationalMaps.lean#L273).
 
 > Two algebraic spaces over `S` with irreducible point spaces are *birational* when they have
 > mutually inverse dominant rational maps: two dominant rational maps whose composites agree with
@@ -200,7 +200,7 @@ abbrev Birational (hX : IsAlgebraicSpace B S hS X) (hY : IsAlgebraicSpace B S hS
 
 [Tag 0EMU](https://stacks.math.columbia.edu/tag/0EMU) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.birational_iff_exists_isOpenSubspace_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/RationalMaps.lean, line 319](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/RationalMaps.lean#L319).
+**`AlgebraicGeometry.Space.birational_iff_exists_isOpenSubspace_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/RationalMaps.lean, line 319](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/RationalMaps.lean#L319).
 
 > Two algebraic spaces over `S` with irreducible point spaces are birational if and only if
 > they contain nonempty open subspaces which are isomorphic as algebraic spaces over `S`.
@@ -222,4 +222,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 67.47, Tag 0EML](https://stacks.math.columbia.edu/tag/0EML)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

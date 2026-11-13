@@ -8,13 +8,13 @@ proof: formalized
 
 # 97.4 Morphisms of stacks in groupoids
 
-Section 97.4 of the Stacks Project, [Tag 05XJ](https://stacks.math.columbia.edu/tag/05XJ). 4 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 97.4 of the Stacks Project, [Tag 05XJ](https://stacks.math.columbia.edu/tag/05XJ). 4 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 05XK, a lemma
 
 [Tag 05XK](https://stacks.math.columbia.edu/tag/05XK) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpaces_of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Criteria/EtalePermanence.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Criteria/EtalePermanence.lean#L94). The attribute's comment: “representability”.
+**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpaces_of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Criteria/EtalePermanence.lean, line 94](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Criteria/EtalePermanence.lean#L94). The attribute's comment: “representability”.
 
 > **Stacks 05XK.** Let `f : 𝒳 ⟶ 𝒴` and `g : 𝒴 ⟶ 𝒵` be 1-morphisms of categories fibred in
 > groupoids over the big fppf site of `S`. If `f ≫ g` and `g` are representable by algebraic
@@ -34,7 +34,7 @@ theorem isRepresentableByAlgebraicSpaces_of_comp
     IsRepresentableByAlgebraicSpaces B S hS f.hom
 ```
 
-**`AlgebraicGeometry.Stack.isEtale_algebraicSpaceMap_of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Criteria/EtalePermanence.lean, line 115](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Criteria/EtalePermanence.lean#L115). The attribute's comment: “étaleness”.
+**`AlgebraicGeometry.Stack.isEtale_algebraicSpaceMap_of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Criteria/EtalePermanence.lean, line 115](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Criteria/EtalePermanence.lean#L115). The attribute's comment: “étaleness”.
 
 > **Stacks 05XK.** Let `f : 𝒳 ⟶ 𝒴` and `g : 𝒴 ⟶ 𝒵` be 1-morphisms of categories fibred in
 > groupoids over the big fppf site of `S`, with `f ≫ g` and `g` representable by algebraic spaces.
@@ -93,7 +93,7 @@ theorem isEtale_algebraicSpaceMap_of_comp
 
 [Tag 05XL](https://stacks.math.columbia.edu/tag/05XL) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isStackInSetoids_of_fppf_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Criteria/StackInSetoidsDescent.lean, line 202](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/Criteria/StackInSetoidsDescent.lean#L202).
+**`AlgebraicGeometry.Stack.isStackInSetoids_of_fppf_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/Criteria/StackInSetoidsDescent.lean, line 202](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/Criteria/StackInSetoidsDescent.lean#L202).
 
 > **Stacks 05XL.** Let `𝒳 ⟶ 𝒵` and `𝒴 ⟶ 𝒵` be 1-morphisms of categories fibred in groupoids over
 > the big fppf site of `S`, with `𝒳` a stack. If `𝒴` and `𝒵` are represented by algebraic spaces `Y`
@@ -129,7 +129,7 @@ theorem isStackInSetoids_of_fppf_baseChange
 
 [Tag 05XW](https://stacks.math.columbia.edu/tag/05XW) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.hasRepresentableDiagonal_of_flatPresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FlatPresentationRepresentableDiagonal.lean, line 174](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FlatPresentationRepresentableDiagonal.lean#L174).
+**`AlgebraicGeometry.Stack.hasRepresentableDiagonal_of_flatPresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FlatPresentationRepresentableDiagonal.lean, line 174](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FlatPresentationRepresentableDiagonal.lean#L174).
 
 > Let `u : 𝒰 ⟶ 𝒳` be a 1-morphism of categories fibred in groupoids over the
 > big fppf site of `S` with `𝒳` a stack, `𝒰` representable by an algebraic space and `u`
@@ -158,7 +158,7 @@ theorem hasRepresentableDiagonal_of_flatPresentation (u : 𝒰 ⟶ 𝒳)
 
 [Tag 07WG](https://stacks.math.columbia.edu/tag/07WG) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpaces_secondDiagonal_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SecondDiagonalCriterion.lean, line 724](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SecondDiagonalCriterion.lean#L724).
+**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpaces_secondDiagonal_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SecondDiagonalCriterion.lean, line 724](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SecondDiagonalCriterion.lean#L724).
 
 > **Stacks 07WG.** The second diagonal of a category fibred in groupoids `𝒳` over the big fppf
 > site of `S` — the relative diagonal of its diagonal — is representable by algebraic spaces if and
@@ -187,4 +187,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 97.4, Tag 05XJ](https://stacks.math.columbia.edu/tag/05XJ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

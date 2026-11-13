@@ -8,13 +8,13 @@ proof: formalized
 
 # 42.67 Change of base scheme
 
-Section 42.67 of the Stacks Project, [Tag 0FVF](https://stacks.math.columbia.edu/tag/0FVF). 10 tags here are carried by 26 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 42.67 of the Stacks Project, [Tag 0FVF](https://stacks.math.columbia.edu/tag/0FVF). 10 tags here are carried by 26 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0FVG, a situation
 
 [Tag 0FVG](https://stacks.math.columbia.edu/tag/0FVG) in the Stacks Project.
 
-**`Stacks.Chow.FlatBaseChangeSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/Basic.lean, line 34](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/Basic.lean#L34).
+**`Stacks.Chow.FlatBaseChangeSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/Basic.lean, line 34](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/Basic.lean#L34).
 
 > A flat morphism between two bases for Chow homology whose dimension functions differ by a
 > fixed integer on the generic points of the irreducible components of every fibre.
@@ -27,7 +27,7 @@ structure FlatBaseChangeSituation
 
 [Tag 0FVH](https://stacks.math.columbia.edu/tag/0FVH) in the Stacks Project.
 
-**`Stacks.Chow.deltaDimension_component_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/BaseChangeComponentDimension.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/BaseChangeComponentDimension.lean#L148).
+**`Stacks.Chow.deltaDimension_component_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/BaseChangeComponentDimension.lean, line 148](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/BaseChangeComponentDimension.lean#L148).
 
 > In the flat base-change situation of Stacks 0FVG, if `X` is integral and locally of finite
 > type over `S` with `dim_δ(X) = k`, then every irreducible component of the base change
@@ -49,7 +49,7 @@ theorem deltaDimension_component_baseChange (B : FlatBaseChangeSituation.{u})
 
 [Tag 0FVI](https://stacks.math.columbia.edu/tag/0FVI) in the Stacks Project.
 
-**`Stacks.Chow.schemeDeltaDimension_baseChange_closedSubscheme_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/Dimension.lean, line 245](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/Dimension.lean#L245). The attribute's comment: “part (1): dimension bound”.
+**`Stacks.Chow.schemeDeltaDimension_baseChange_closedSubscheme_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/Dimension.lean, line 245](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/Dimension.lean#L245). The attribute's comment: “part (1): dimension bound”.
 
 > **Stacks 0FVI, part (1), dimension bound.** In the flat base-change situation of Stacks
 > 0FVG, the base change `Z' = Z ×_X X'` of a closed subscheme `Z ⊆ X` of delta-dimension at most
@@ -64,7 +64,7 @@ theorem schemeDeltaDimension_baseChange_closedSubscheme_le (B : FlatBaseChangeSi
         (pullback.snd i (pullback.fst f B.g) ≫ pullback.snd f B.g) ≤ ((k + B.c : ℤ) : EInt)
 ```
 
-**`Stacks.Chow.schemeDeltaDimension_baseChange_support_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/Dimension.lean, line 264](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/Dimension.lean#L264). The attribute's comment: “part (2): support dimension bound”.
+**`Stacks.Chow.schemeDeltaDimension_baseChange_support_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/Dimension.lean, line 264](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/Dimension.lean#L264). The attribute's comment: “part (2): support dimension bound”.
 
 > **Stacks 0FVI, part (2), dimension bound.** In the flat base-change situation of Stacks
 > 0FVG, if a coherent sheaf on `X` has support of delta-dimension at most `k`, then the support of
@@ -87,7 +87,7 @@ theorem schemeDeltaDimension_baseChange_support_le (B : FlatBaseChangeSituation.
           pullback.snd f B.g) ≤ ((k + B.c : ℤ) : EInt)
 ```
 
-**`Stacks.Chow.baseChangeCyclePullback_cycleAssociatedToCoherentSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/Dimension.lean, line 379](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/Dimension.lean#L379). The attribute's comment: “part (2): cycle identity”.
+**`Stacks.Chow.baseChangeCyclePullback_cycleAssociatedToCoherentSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/Dimension.lean, line 379](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/Dimension.lean#L379). The attribute's comment: “part (2): cycle identity”.
 
 > **Stacks 0FVI, part (2), cycle identity.** In the flat base-change situation of Stacks 0FVG,
 > the base change of the cycle of a coherent sheaf `F` on `X` whose support has delta-dimension at
@@ -119,7 +119,7 @@ theorem baseChangeCyclePullback_cycleAssociatedToCoherentSheaf (B : FlatBaseChan
         (schemeDeltaDimension_baseChange_support_le B f F hFk)
 ```
 
-**`Stacks.Chow.baseChangeCyclePullback_cycleAssociatedToClosedSubscheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/Dimension.lean, line 496](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/Dimension.lean#L496). The attribute's comment: “part (1): cycle identity”.
+**`Stacks.Chow.baseChangeCyclePullback_cycleAssociatedToClosedSubscheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/Dimension.lean, line 496](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/Dimension.lean#L496). The attribute's comment: “part (1): cycle identity”.
 
 > **Stacks 0FVI, part (1), cycle identity.** In the flat base-change situation of Stacks 0FVG,
 > the base change of the cycle of a closed subscheme `Z ⊆ X` of delta-dimension at most `k` is the
@@ -143,13 +143,13 @@ theorem baseChangeCyclePullback_cycleAssociatedToClosedSubscheme (B : FlatBaseCh
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.isCoherent_pullback`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/CoherentPullback/Basic.lean#L48), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/Dimension.lean, line 239](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/Dimension.lean#L239) (StacksFrontier): “part (2): coherence of the base change”.
+- [`AlgebraicGeometry.isCoherent_pullback`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/CoherentPullback/Basic.lean#L48), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/Dimension.lean, line 239](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/Dimension.lean#L239) (StacksFrontier): “part (2): coherence of the base change”.
 
 ## Tag 0FVJ, a lemma
 
 [Tag 0FVJ](https://stacks.math.columbia.edu/tag/0FVJ) in the Stacks Project.
 
-**`Stacks.Chow.baseChangeCyclePullback_maps_rationalEquivalences`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/ChowPullback.lean, line 291](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/ChowPullback.lean#L291). The attribute's comment: “preservation of rational equivalence”.
+**`Stacks.Chow.baseChangeCyclePullback_maps_rationalEquivalences`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/ChowPullback.lean, line 291](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/ChowPullback.lean#L291). The attribute's comment: “preservation of rational equivalence”.
 
 > **Stacks Project, Tag 0FVJ, preservation of rational equivalence.** In a flat base-change
 > situation with dimension shift `c`, the base-change homomorphism on cycle groups carries
@@ -174,7 +174,7 @@ theorem baseChangeCyclePullback_maps_rationalEquivalences (k : ℤ) :
         (baseChangeCyclePullback B f k)
 ```
 
-**`Stacks.Chow.baseChangeChowPullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/ChowPullback.lean, line 348](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/ChowPullback.lean#L348). The attribute's comment: “induced map on Chow groups”.
+**`Stacks.Chow.baseChangeChowPullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/ChowPullback.lean, line 348](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/ChowPullback.lean#L348). The attribute's comment: “induced map on Chow groups”.
 
 > **Stacks Project, Tag 0FVJ, the map on Chow groups.** The homomorphism
 > `g^* : CH_k(X) ⟶ CH_{k+c}(X ×_S S')` induced on Chow groups by the base-change homomorphism
@@ -190,7 +190,7 @@ def baseChangeChowPullback (k : ℤ) :
 
 [Tag 0FVK](https://stacks.math.columbia.edu/tag/0FVK) in the Stacks Project.
 
-**`Stacks.Chow.flat_relativeDimension_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/FlatPullback.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/FlatPullback.lean#L135). The attribute's comment: “flatness and relative dimension of the base-changed morphism”.
+**`Stacks.Chow.flat_relativeDimension_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/FlatPullback.lean, line 135](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/FlatPullback.lean#L135). The attribute's comment: “flatness and relative dimension of the base-changed morphism”.
 
 > **Stacks 0FVK.** In a flat base-change situation, the base change of a morphism locally of
 > finite type and flat of relative dimension `r` is again locally of finite type and flat of
@@ -210,7 +210,7 @@ theorem flat_relativeDimension_baseChange (B : FlatBaseChangeSituation.{u}) {Y X
     Flat f' ∧ AlgebraicGeometry.RelativeDimension f' r
 ```
 
-**`Stacks.Chow.baseChange_flatPullback_cycles`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/FlatPullback.lean, line 419](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/FlatPullback.lean#L419). The attribute's comment: “commuting diagram of cycle groups”.
+**`Stacks.Chow.baseChange_flatPullback_cycles`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/FlatPullback.lean, line 419](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/FlatPullback.lean#L419). The attribute's comment: “commuting diagram of cycle groups”.
 
 > **Stacks 0FVK.** The square of cycle groups commutes: base change after flat pullback is
 > flat pullback after base change, as homomorphisms `Z_k(X) ⟶ Z_{k+c+r}(Y')`.
@@ -236,7 +236,7 @@ theorem baseChange_flatPullback_cycles
           (k + B.c)).comp (baseChangeCyclePullback B sX k))
 ```
 
-**`Stacks.Chow.baseChange_flatPullback_chow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/FlatPullback.lean, line 446](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/FlatPullback.lean#L446). The attribute's comment: “commuting diagram of Chow groups”.
+**`Stacks.Chow.baseChange_flatPullback_chow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/FlatPullback.lean, line 446](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/FlatPullback.lean#L446). The attribute's comment: “commuting diagram of Chow groups”.
 
 > **Stacks 0FVK.** The square of Chow groups commutes: base change after flat pullback is flat
 > pullback after base change, as homomorphisms `A_k(X) ⟶ A_{k+c+r}(Y')`.
@@ -271,7 +271,7 @@ theorem baseChange_flatPullback_chow
 
 [Tag 0FVL](https://stacks.math.columbia.edu/tag/0FVL) in the Stacks Project.
 
-**`Stacks.Chow.isProper_baseChangeMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/ProperPushforward.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/ProperPushforward.lean#L131). The attribute's comment: “properness of the base change”.
+**`Stacks.Chow.isProper_baseChangeMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/ProperPushforward.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/ProperPushforward.lean#L131). The attribute's comment: “properness of the base change”.
 
 > **Stacks Project, Tag 0FVL, properness of the base change.** In a flat base change of Chow
 > situations, the morphism `f' : Y ×_S S' ⟶ X ×_S S'` induced by a proper morphism `f : Y ⟶ X` is
@@ -281,7 +281,7 @@ theorem baseChange_flatPullback_chow
 theorem isProper_baseChangeMorphism [IsProper f] : IsProper (baseChangeMorphism B sX f)
 ```
 
-**`Stacks.Chow.properPushforward_baseChangeCyclePullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/ProperPushforward.lean, line 309](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/ProperPushforward.lean#L309). The attribute's comment: “the cycle square”.
+**`Stacks.Chow.properPushforward_baseChangeCyclePullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/ProperPushforward.lean, line 309](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/ProperPushforward.lean#L309). The attribute's comment: “the cycle square”.
 
 > **Stacks Project, Tag 0FVL, the cycle square.** In a flat base change of Chow situations,
 > proper pushforward commutes with the base-change map on cycle groups: for `f : Y ⟶ X` proper
@@ -310,7 +310,7 @@ theorem properPushforward_baseChangeCyclePullback
       baseChangeCyclePullback B sX k (properPushforward B.base (f ≫ sX) sX f rfl k z)
 ```
 
-**`Stacks.Chow.properChowPushforward_baseChangeChowPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/ProperPushforward.lean, line 418](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/ProperPushforward.lean#L418). The attribute's comment: “the Chow square, in the generality of every Chow base-change map induced by the cycle-level one of Tag 0FVJ; instantiated at that map, with nothing left to supply, by properChowPushforward\_baseChangeChowPullback\_of\_baseChangeChowPullback below”.
+**`Stacks.Chow.properChowPushforward_baseChangeChowPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/ProperPushforward.lean, line 418](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/ProperPushforward.lean#L418). The attribute's comment: “the Chow square, in the generality of every Chow base-change map induced by the cycle-level one of Tag 0FVJ; instantiated at that map, with nothing left to supply, by properChowPushforward\_baseChangeChowPullback\_of\_baseChangeChowPullback below”.
 
 > **Stacks Project, Tag 0FVL, the Chow square.** In a flat base change of Chow situations,
 > proper pushforward commutes with the base-change map on Chow groups: for `f : Y ⟶ X` proper over
@@ -353,7 +353,7 @@ theorem properChowPushforward_baseChangeChowPullback
           k) w)
 ```
 
-**`Stacks.Chow.properChowPushforward_baseChangeChowPullback_of_baseChangeChowPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/ProperPushforward.lean, line 460](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/ProperPushforward.lean#L460). The attribute's comment: “the Chow square for the base-change map of Tag 0FVJ”.
+**`Stacks.Chow.properChowPushforward_baseChangeChowPullback_of_baseChangeChowPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/ProperPushforward.lean, line 460](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/ProperPushforward.lean#L460). The attribute's comment: “the Chow square for the base-change map of Tag 0FVJ”.
 
 > **Stacks Project, Tag 0FVL, the Chow square for the base-change map of Stacks 0FVJ.** In a
 > flat base change of Chow situations, proper pushforward commutes with the base-change map
@@ -388,7 +388,7 @@ theorem properChowPushforward_baseChangeChowPullback_of_baseChangeChowPullback
 
 [Tag 0FVM](https://stacks.math.columbia.edu/tag/0FVM) in the Stacks Project.
 
-**`Stacks.Chow.baseChange_firstChernClassCapChow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/FirstChernClass.lean, line 562](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/FirstChernClass.lean#L562).
+**`Stacks.Chow.baseChange_firstChernClassCapChow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/FirstChernClass.lean, line 562](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/FirstChernClass.lean#L562).
 
 > **[Stacks, Tag 0FVM].** In the flat base-change situation of [Stacks, Tag 0FVG] let `X` be
 > locally of finite type over `S`, let `X' = X ×_S S'` be the base change by `S' ⟶ S`, and let `ℒ`
@@ -436,7 +436,7 @@ theorem baseChange_firstChernClassCapChow (k : ℤ) (α : chowGroup B.base sX (k
 
 [Tag 0FVN](https://stacks.math.columbia.edu/tag/0FVN) in the Stacks Project.
 
-**`Stacks.Chow.baseChange_chowCohomologyCap_chernClassOfLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/GenuineChernClasses.lean, line 307](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/GenuineChernClasses.lean#L307).
+**`Stacks.Chow.baseChange_chowCohomologyCap_chernClassOfLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/GenuineChernClasses.lean, line 307](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/GenuineChernClasses.lean#L307).
 
 > **[Stacks, Tag 0FVN].** Let `g : S' ⟶ S` be a flat base change of Chow situations with
 > dimension shift `c` ([Stacks, Tag 0FVG]), let `X` be locally of finite type over `S` with base
@@ -474,7 +474,7 @@ theorem baseChange_chowCohomologyCap_chernClassOfLocallyFree (i : ℕ) (k : ℤ)
 
 [Tag 0FVP](https://stacks.math.columbia.edu/tag/0FVP) in the Stacks Project.
 
-**`Stacks.Chow.composed_dimensionFunction_eq_add`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/FlatBaseChangeComposition.lean, line 209](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/FlatBaseChangeComposition.lean#L209). The attribute's comment: “part (1): the composite dimension shift is the sum of the two shifts”.
+**`Stacks.Chow.composed_dimensionFunction_eq_add`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/FlatBaseChangeComposition.lean, line 209](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/FlatBaseChangeComposition.lean#L209). The attribute's comment: “part (1): the composite dimension shift is the sum of the two shifts”.
 
 > **Stacks Project, Tag 0FVP, part (1).** For composable flat base changes of Chow situations
 > with dimension shifts `B.c` and `c'`, every generic point `s''` of the fibre of `g' ≫ B.g` over
@@ -486,7 +486,7 @@ theorem composed_dimensionFunction_eq_add (s : B.base.S)
     C.dimensionFunction s''.1.1 = B.base.dimensionFunction s + (B.c + c')
 ```
 
-**`Stacks.Chow.baseChangeCyclePullbackSquare_comp_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/FlatBaseChangeComposition.lean, line 396](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/FlatBaseChangeComposition.lean#L396). The attribute's comment: “part (2): pullback on cycle groups respects composition, coefficientwise”.
+**`Stacks.Chow.baseChangeCyclePullbackSquare_comp_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/FlatBaseChangeComposition.lean, line 396](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/FlatBaseChangeComposition.lean#L396). The attribute's comment: “part (2): pullback on cycle groups respects composition, coefficientwise”.
 
 > **Stacks Project, Tag 0FVP, part (2).** The pullbacks on cycle groups of two composable flat
 > base changes compose to the pullback of the composite, read coefficientwise.
@@ -506,7 +506,7 @@ theorem baseChangeCyclePullbackSquare_comp_apply (k : ℤ) (z : CycleGroup B.bas
         (sq'.paste_horiz sq) k z).1 y
 ```
 
-**`Stacks.Chow.baseChangeCyclePullbackSquare_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/FlatBaseChangeComposition.lean, line 437](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/FlatBaseChangeComposition.lean#L437). The attribute's comment: “part (2): pullback on cycle groups respects composition”.
+**`Stacks.Chow.baseChangeCyclePullbackSquare_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/FlatBaseChangeComposition.lean, line 437](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/FlatBaseChangeComposition.lean#L437). The attribute's comment: “part (2): pullback on cycle groups respects composition”.
 
 > **Stacks Project, Tag 0FVP, part (2).** The pullbacks on cycle groups of two composable flat
 > base changes compose to the pullback of the composite.
@@ -521,7 +521,7 @@ theorem baseChangeCyclePullbackSquare_comp (k : ℤ) :
           (sq'.paste_horiz sq) k)
 ```
 
-**`Stacks.Chow.baseChangeChowPullbackSquare_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/FlatBaseChangeComposition.lean, line 453](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/FlatBaseChangeComposition.lean#L453). The attribute's comment: “part (3): pullback on Chow groups respects composition”.
+**`Stacks.Chow.baseChangeChowPullbackSquare_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/FlatBaseChangeComposition.lean, line 453](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/FlatBaseChangeComposition.lean#L453). The attribute's comment: “part (3): pullback on Chow groups respects composition”.
 
 > **Stacks Project, Tag 0FVP, part (3).** The pullbacks on Chow groups of two composable flat
 > base changes compose to the pullback of the composite: both are induced by the corresponding
@@ -542,7 +542,7 @@ theorem baseChangeChowPullbackSquare_comp (k : ℤ) :
 
 [Tag 0FVQ](https://stacks.math.columbia.edu/tag/0FVQ) in the Stacks Project.
 
-**`Stacks.Chow.FilteredBaseChangeSystem.exists_stageChowPullback_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/FilteredLimitChow.lean, line 346](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/FilteredLimitChow.lean#L346). The attribute's comment: “Chow groups, surjectivity: every k-cycle class on X' comes from some X\_i”.
+**`Stacks.Chow.FilteredBaseChangeSystem.exists_stageChowPullback_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/FilteredLimitChow.lean, line 346](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/FilteredLimitChow.lean#L346). The attribute's comment: “Chow groups, surjectivity: every k-cycle class on X' comes from some X\_i”.
 
 > **Stacks Project, Tag 0FVQ, surjectivity for Chow groups.** Every `k`-cycle class on `X'` is
 > the image of a `k`-cycle class on `X_i` for some finite stage `i`.
@@ -556,7 +556,7 @@ theorem exists_stageChowPullback_eq (k : ℤ)
       s.stageChowPullback i k β = α
 ```
 
-**`Stacks.Chow.FilteredBaseChangeSystem.exists_transitionChowPullback_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/FilteredLimitChow.lean, line 626](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/FilteredLimitChow.lean#L626). The attribute's comment: “Chow groups, eventual injectivity: a k-cycle class on X\_j killed by base change to X' is killed by some transition X\_i -> X\_j”.
+**`Stacks.Chow.FilteredBaseChangeSystem.exists_transitionChowPullback_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/FilteredLimitChow.lean, line 626](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/FilteredLimitChow.lean#L626). The attribute's comment: “Chow groups, eventual injectivity: a k-cycle class on X\_j killed by base change to X' is killed by some transition X\_i -> X\_j”.
 
 > **Stacks Project, Tag 0FVQ, eventual injectivity for Chow groups.** A `k`-cycle class on
 > `X_j` whose image in `CH_k(X')` vanishes is annihilated by the comparison homomorphism along
@@ -569,7 +569,7 @@ theorem exists_transitionChowPullback_eq_zero (j : I) (k : ℤ)
     ∃ (i : I) (f : i ⟶ j), s.transitionChowPullback f k β = 0
 ```
 
-**`Stacks.Chow.FilteredBaseChangeSystem.exists_stageCyclePullback_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/FilteredLimitCycles.lean, line 374](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/FilteredLimitCycles.lean#L374). The attribute's comment: “cycle groups, surjectivity: every k-cycle on X' is the image of a k-cycle on X\_i”.
+**`Stacks.Chow.FilteredBaseChangeSystem.exists_stageCyclePullback_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/FilteredLimitCycles.lean, line 374](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/FilteredLimitCycles.lean#L374). The attribute's comment: “cycle groups, surjectivity: every k-cycle on X' is the image of a k-cycle on X\_i”.
 
 > **Stacks Project, Tag 0FVQ, surjectivity for cycle groups.** Every `k`-cycle on `X'` is the
 > image of a `k`-cycle on `X_i` for some finite stage `i`.
@@ -586,7 +586,7 @@ theorem exists_stageCyclePullback_eq (k : ℤ)
       s.stageCyclePullback i k w = z
 ```
 
-**`Stacks.Chow.FilteredBaseChangeSystem.exists_transitionCyclePullback_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/FilteredLimitCycles.lean, line 448](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/FilteredLimitCycles.lean#L448). The attribute's comment: “cycle groups, eventual injectivity: a k-cycle on X\_j killed by base change to X' is killed by some transition X\_i -> X\_j”.
+**`Stacks.Chow.FilteredBaseChangeSystem.exists_transitionCyclePullback_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/FilteredLimitCycles.lean, line 448](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/FilteredLimitCycles.lean#L448). The attribute's comment: “cycle groups, eventual injectivity: a k-cycle on X\_j killed by base change to X' is killed by some transition X\_i -> X\_j”.
 
 > **Stacks Project, Tag 0FVQ, eventual injectivity for cycle groups.** A `k`-cycle on `X_j`
 > whose image in `Z_k(X')` vanishes is annihilated by the transition to some finite stage
@@ -608,7 +608,7 @@ theorem exists_transitionCyclePullback_eq_zero (j : I) (k : ℤ)
     ∃ (i : I) (f : i ⟶ j), s.transitionCyclePullback f k z = 0
 ```
 
-**`Stacks.Chow.FilteredBaseChangeSystem.exists_projectiveLineStageCyclePullback_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/FilteredLimitProjectiveLine.lean, line 294](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/FilteredLimitProjectiveLine.lean#L294). The attribute's comment: “cycle groups, surjectivity for the projective line family”.
+**`Stacks.Chow.FilteredBaseChangeSystem.exists_projectiveLineStageCyclePullback_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/FilteredLimitProjectiveLine.lean, line 294](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChangeBaseScheme/FilteredLimitProjectiveLine.lean#L294). The attribute's comment: “cycle groups, surjectivity for the projective line family”.
 
 > **Stacks Project, Tag 0FVQ, surjectivity for the projective-line family.** Every `k`-cycle on
 > `X' ×_{S'} 𝐏¹_{S'}` is the image of a `k`-cycle on `X_i ×_{S_i} 𝐏¹_{S_i}` for some finite stage
@@ -634,4 +634,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 42.67, Tag 0FVF](https://stacks.math.columbia.edu/tag/0FVF)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

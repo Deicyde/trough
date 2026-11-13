@@ -8,13 +8,13 @@ proof: formalized
 
 # 85.9 Cohomology and augmentations of simplicial sites
 
-Section 85.9 of the Stacks Project, [Tag 0D9A](https://stacks.math.columbia.edu/tag/0D9A). 3 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 85.9 of the Stacks Project, [Tag 0D9A](https://stacks.math.columbia.edu/tag/0D9A). 3 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0D78, a lemma
 
 [Tag 0D78](https://stacks.math.columbia.edu/tag/0D78) in the Stacks Project.
 
-**`CategoryTheory.SimplicialSiteSituation.Augmentation.resolution`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/AugmentationResolutionTerms.lean, line 939](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/AugmentationResolutionTerms.lean#L939).
+**`CategoryTheory.SimplicialSiteSituation.Augmentation.resolution`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/AugmentationResolutionTerms.lean, line 939](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/AugmentationResolutionTerms.lean#L939).
 
 > **Stacks 0D78.** The exact complex
 > `… ⟶ g_{1!}(a_1⁻¹𝒢) ⟶ g_{0!}(a_0⁻¹𝒢) ⟶ a⁻¹𝒢 ⟶ 0`
@@ -29,7 +29,7 @@ def resolution : Resolution S D K a G
 
 [Tag 0D79](https://stacks.math.columbia.edu/tag/0D79) in the Stacks Project.
 
-**`CategoryTheory.SimplicialSiteSituation.Augmentation.augmentedCechComplex_exactAt_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/AugmentationCechComplex.lean, line 485](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/AugmentationCechComplex.lean#L485). The attribute's comment: “exactness in degree -1”.
+**`CategoryTheory.SimplicialSiteSituation.Augmentation.augmentedCechComplex_exactAt_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/AugmentationCechComplex.lean, line 485](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/AugmentationCechComplex.lean#L485). The attribute's comment: “exactness in degree -1”.
 
 > Exactness in degree `-1`: the complex
 >
@@ -42,7 +42,7 @@ def resolution : Resolution S D K a G
 theorem augmentedCechComplex_exactAt_zero : (augmentedCechComplex S D K a F).ExactAt 0
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.Augmentation.augmentedCechComplex_exactAt_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/AugmentationCechComplex.lean, line 496](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/AugmentationCechComplex.lean#L496). The attribute's comment: “exactness in degree 0”.
+**`CategoryTheory.SimplicialSiteSituation.Augmentation.augmentedCechComplex_exactAt_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/AugmentationCechComplex.lean, line 496](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/AugmentationCechComplex.lean#L496). The attribute's comment: “exactness in degree 0”.
 
 > Exactness in degree `0`: the complex
 >
@@ -55,7 +55,7 @@ theorem augmentedCechComplex_exactAt_zero : (augmentedCechComplex S D K a F).Exa
 theorem augmentedCechComplex_exactAt_one : (augmentedCechComplex S D K a F).ExactAt 1
 ```
 
-**`CategoryTheory.SimplicialSiteSituation.Augmentation.augmentedCechComplex_exactAt_of_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/AugmentationCechExact.lean, line 210](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/AugmentationCechExact.lean#L210). The attribute's comment: “exactness in every degree for an injective abelian sheaf”.
+**`CategoryTheory.SimplicialSiteSituation.Augmentation.augmentedCechComplex_exactAt_of_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/AugmentationCechExact.lean, line 210](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/AugmentationCechExact.lean#L210). The attribute's comment: “exactness in every degree for an injective abelian sheaf”.
 
 > **Stacks 0D79**, exactness in every degree for an injective abelian sheaf: the complex
 >
@@ -79,7 +79,7 @@ theorem augmentedCechComplex_exactAt_of_injective (F : Sheaf S.totalTopology Ab.
 
 [Tag 0D7A](https://stacks.math.columbia.edu/tag/0D7A) in the Stacks Project.
 
-**`CategoryTheory.SimplicialSiteSituation.Augmentation.higherDirectImageSpectralSequence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/AugmentationDerivedSpectralSequence.lean, line 179](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/AugmentationDerivedSpectralSequence.lean#L179).
+**`CategoryTheory.SimplicialSiteSituation.Augmentation.higherDirectImageSpectralSequence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/AugmentationDerivedSpectralSequence.lean, line 179](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/AugmentationDerivedSpectralSequence.lean#L179).
 
 > **Stacks 0D7A.** For an augmentation `a` of a simplicial-site situation towards a site
 > `(D, K)` and `M` in `D⁺(C_total)` there is a spectral sequence
@@ -101,4 +101,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 85.9, Tag 0D9A](https://stacks.math.columbia.edu/tag/0D9A)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

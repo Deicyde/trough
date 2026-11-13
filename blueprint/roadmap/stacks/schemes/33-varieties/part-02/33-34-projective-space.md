@@ -8,13 +8,13 @@ proof: formalized
 
 # 33.34 Projective space
 
-Section 33.34 of the Stacks Project, [Tag 0B2N](https://stacks.math.columbia.edu/tag/0B2N). 4 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 33.34 of the Stacks Project, [Tag 0B2N](https://stacks.math.columbia.edu/tag/0B2N). 4 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0B2P, a lemma
 
 [Tag 0B2P](https://stacks.math.columbia.edu/tag/0B2P) in the Stacks Project.
 
-**`AlgebraicGeometry.topologicalKrullDim_projectiveSpaceOverRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveSpace/Dimension/OverField.lean, line 36](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjectiveSpace/Dimension/OverField.lean#L36). The attribute's comment: “projective\_space\_dimension”.
+**`AlgebraicGeometry.topologicalKrullDim_projectiveSpaceOverRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveSpace/Dimension/OverField.lean, line 36](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjectiveSpace/Dimension/OverField.lean#L36). The attribute's comment: “projective\_space\_dimension”.
 
 > **Stacks Project, Tag 0B2P (dimension).** Projective `n`-space over a field has Krull
 > dimension `n` as a topological space.
@@ -24,7 +24,7 @@ theorem topologicalKrullDim_projectiveSpaceOverRing (k : Type u) [Field k] (n : 
     topologicalKrullDim (projectiveSpaceOverRing n (CommRingCat.of k)) = (n : WithBot ℕ∞)
 ```
 
-**`AlgebraicGeometry.projectiveSpaceOver.smooth`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveSpace/SmoothProjectiveVariety.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjectiveSpace/SmoothProjectiveVariety.lean#L93). The attribute's comment: “projective\_space\_smooth”. References: EGA IV (17.3.9), “free E, P^n\_S”.
+**`AlgebraicGeometry.projectiveSpaceOver.smooth`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveSpace/SmoothProjectiveVariety.lean, line 93](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjectiveSpace/SmoothProjectiveVariety.lean#L93). The attribute's comment: “projective\_space\_smooth”. References: EGA IV (17.3.9), “free E, P^n\_S”.
 
 > **Stacks Project, Tag 0B2P (smoothness).** Projective `n`-space over a scheme `S` is smooth
 > over `S`, being the base change of the integral model, which is smooth over the terminal
@@ -34,7 +34,7 @@ theorem topologicalKrullDim_projectiveSpaceOverRing (k : Type u) [Field k] (n : 
 public instance smooth (n : ℕ) (S : Scheme.{u}) : Smooth (projectiveSpaceOver n S ↘ S)
 ```
 
-**`AlgebraicGeometry.isProjectiveMorphism_projectiveSpaceOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveSpace/SmoothProjectiveVariety.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjectiveSpace/SmoothProjectiveVariety.lean#L106). The attribute's comment: “projective\_space\_projective”.
+**`AlgebraicGeometry.isProjectiveMorphism_projectiveSpaceOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveSpace/SmoothProjectiveVariety.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjectiveSpace/SmoothProjectiveVariety.lean#L106). The attribute's comment: “projective\_space\_projective”.
 
 > **Stacks Project, Tag 0B2P (projectivity).** Projective `n`-space over a scheme `S` is
 > projective over `S`: the identity is a closed immersion of `ℙⁿ_S` into `ℙⁿ_S` over `S`.
@@ -44,7 +44,7 @@ public theorem isProjectiveMorphism_projectiveSpaceOver (n : ℕ) (S : Scheme.{u
     IsProjectiveMorphism (projectiveSpaceOver n S ↘ S)
 ```
 
-**`AlgebraicGeometry.projectiveSpaceOverRing.isVariety`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveSpace/SmoothProjectiveVariety.lean, line 153](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjectiveSpace/SmoothProjectiveVariety.lean#L153). The attribute's comment: “projective\_space\_variety”.
+**`AlgebraicGeometry.projectiveSpaceOverRing.isVariety`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveSpace/SmoothProjectiveVariety.lean, line 153](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjectiveSpace/SmoothProjectiveVariety.lean#L153). The attribute's comment: “projective\_space\_variety”.
 
 > **Stacks Project, Tag 0B2P (variety).** Projective `n`-space over a field is a variety over
 > that field: it is integral, and its structure morphism is separated and of finite type because it
@@ -59,7 +59,7 @@ public instance isVariety (k : Type u) [Field k] (n : ℕ) :
 
 [Tag 0B2Q](https://stacks.math.columbia.edu/tag/0B2Q) in the Stacks Project.
 
-**`AlgebraicGeometry.add_le_add_topologicalKrullDim_irreducibleComponent_inter`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/AffineIntersection.lean, line 464](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/AffineIntersection.lean#L464).
+**`AlgebraicGeometry.add_le_add_topologicalKrullDim_irreducibleComponent_inter`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/AffineIntersection.lean, line 464](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/AffineIntersection.lean#L464).
 
 > **Stacks Project, Tag 0B2Q.** Let `k` be a field and let `Xs` and `Ys` be closed subsets of
 > affine `n`-space over `k`, that is, of the prime spectrum of `MvPolynomial (Fin n) k`. If `Xs`
@@ -80,7 +80,7 @@ theorem add_le_add_topologicalKrullDim_irreducibleComponent_inter (k : Type u) [
 
 [Tag 0B2R](https://stacks.math.columbia.edu/tag/0B2R) in the Stacks Project.
 
-**`AlgebraicGeometry.inter_nonempty_projectiveSpaceOverRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/ProjectiveIntersection.lean, line 394](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/ProjectiveIntersection.lean#L394). The attribute's comment: “nonemptiness”.
+**`AlgebraicGeometry.inter_nonempty_projectiveSpaceOverRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/ProjectiveIntersection.lean, line 394](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/ProjectiveIntersection.lean#L394). The attribute's comment: “nonemptiness”.
 
 > Let `k` be a field and let `X` and `Y` be nonempty closed subsets of `ℙⁿ_k` of dimensions `r`
 > and `s`. If `n ≤ r + s` then `X` and `Y` meet.
@@ -94,7 +94,7 @@ theorem inter_nonempty_projectiveSpaceOverRing
     (hrs : n ≤ r + s) : (X ∩ Y).Nonempty
 ```
 
-**`AlgebraicGeometry.le_topologicalKrullDim_inter_projectiveSpaceOverRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/ProjectiveIntersection.lean, line 410](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/ProjectiveIntersection.lean#L410). The attribute's comment: “dimension bound”.
+**`AlgebraicGeometry.le_topologicalKrullDim_inter_projectiveSpaceOverRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/ProjectiveIntersection.lean, line 410](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Defs/Dimension/ProjectiveIntersection.lean#L410). The attribute's comment: “dimension bound”.
 
 > Let `k` be a field and let `X` and `Y` be nonempty closed subsets of `ℙⁿ_k` of dimensions `r`
 > and `s`. If `n ≤ r + s` then `X ∩ Y` has dimension at least `r + s - n`.
@@ -112,7 +112,7 @@ theorem le_topologicalKrullDim_inter_projectiveSpaceOverRing
 
 [Tag 0BXU](https://stacks.math.columbia.edu/tag/0BXU) in the Stacks Project.
 
-**`AlgebraicGeometry.ProjectiveSpectrum.Proj.projectiveSpace_idealOfClosedSubscheme_isPrincipal_of_dimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CodimOneSubscheme/ProjHeightOne.lean, line 365](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/CodimOneSubscheme/ProjHeightOne.lean#L365).
+**`AlgebraicGeometry.ProjectiveSpectrum.Proj.projectiveSpace_idealOfClosedSubscheme_isPrincipal_of_dimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CodimOneSubscheme/ProjHeightOne.lean, line 365](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/CodimOneSubscheme/ProjHeightOne.lean#L365).
 
 > **Stacks Project, Tag 0BXU.** Let `k` be a field and let `Z` be a closed subscheme of
 > `P^n_k = Proj k[T₀, …, Tₙ]` which has no embedded points and every irreducible component of which
@@ -140,4 +140,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 33.34, Tag 0B2N](https://stacks.math.columbia.edu/tag/0B2N)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

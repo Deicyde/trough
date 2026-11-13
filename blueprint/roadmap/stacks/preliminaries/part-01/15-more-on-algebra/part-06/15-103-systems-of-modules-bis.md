@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.103 Systems of modules, bis
 
-Section 15.103 of the Stacks Project, [Tag 0G3J](https://stacks.math.columbia.edu/tag/0G3J). 7 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.103 of the Stacks Project, [Tag 0G3J](https://stacks.math.columbia.edu/tag/0G3J). 7 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0G3K, a lemma
 
 [Tag 0G3K](https://stacks.math.columbia.edu/tag/0G3K) in the Stacks Project.
 
-**`Stacks.AdicSystem.Homology.homologyIdealPowers_proIsomorphic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/AdicSystem/Homology/IdealPowerComparison.lean, line 408](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Module/AdicSystem/Homology/IdealPowerComparison.lean#L408).
+**`Stacks.AdicSystem.Homology.homologyIdealPowers_proIsomorphic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/AdicSystem/Homology/IdealPowerComparison.lean, line 408](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/AdicSystem/Homology/IdealPowerComparison.lean#L408).
 
 > **Stacks 0G3K.** The homology of the complex of ideal powers is canonically
 > pro-isomorphic to the ideal powers of the homology.
@@ -92,7 +92,7 @@ public theorem homologyIdealPowers_proIsomorphic
 
 [Tag 0G3L](https://stacks.math.columbia.edu/tag/0G3L) in the Stacks Project.
 
-**`Stacks.AdicSystem.ExtIdealPowerRestriction.ext_ideal_power_restriction_factors`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/AdicSystem/ExtRestriction.lean, line 527](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Module/AdicSystem/ExtRestriction.lean#L527).
+**`Stacks.AdicSystem.ExtIdealPowerRestriction.ext_ideal_power_restriction_factors`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/AdicSystem/ExtRestriction.lean, line 527](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/AdicSystem/ExtRestriction.lean#L527).
 
 > **Stacks 0G3L.** Restriction on positive-degree Ext from a finite module to a sufficiently
 > high ideal power factors through Ext into a shifted ideal power of the second module.
@@ -118,7 +118,7 @@ public theorem ext_ideal_power_restriction_factors
 
 [Tag 0927](https://stacks.math.columbia.edu/tag/0927) in the Stacks Project.
 
-**`Stacks.AdicSystem.ExtRestrictionVanishing.ext_ideal_power_restriction_eq_zero_of_annihilated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/AdicSystem/ExtRestriction.lean, line 560](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Module/AdicSystem/ExtRestriction.lean#L560).
+**`Stacks.AdicSystem.ExtRestrictionVanishing.ext_ideal_power_restriction_eq_zero_of_annihilated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/AdicSystem/ExtRestriction.lean, line 560](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/AdicSystem/ExtRestriction.lean#L560).
 
 > **Stacks 0927.** If a power of an ideal annihilates `N`, then in every positive degree,
 > restriction on Ext from a finite module to some ideal power is zero.
@@ -140,7 +140,7 @@ public theorem ext_ideal_power_restriction_eq_zero_of_annihilated
 
 [Tag 0DYI](https://stacks.math.columbia.edu/tag/0DYI) in the Stacks Project.
 
-**`Stacks.ExtIdealPowerImage.range_ext_map_ideal_pow_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/AdicSystem/ExtRestriction.lean, line 847](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Module/AdicSystem/ExtRestriction.lean#L847).
+**`Stacks.ExtIdealPowerImage.range_ext_map_ideal_pow_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/AdicSystem/ExtRestriction.lean, line 847](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/AdicSystem/ExtRestriction.lean#L847).
 
 > **Stacks 0DYI.** In each degree, the image in `Ext(K, M)` of the Ext group with second
 > argument `I ^ n M` is eventually contained in `I ^ (n - c) Ext(K, M)`.
@@ -167,7 +167,7 @@ public theorem range_ext_map_ideal_pow_le
 
 [Tag 0G3M](https://stacks.math.columbia.edu/tag/0G3M) in the Stacks Project.
 
-**`Stacks.AdicSystem.KoszulIdealPower.idealPowerSystem_proIso_koszulIdealComplexSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/AdicSystem/IdealPowerTensor.lean, line 929](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Module/AdicSystem/IdealPowerTensor.lean#L929).
+**`Stacks.AdicSystem.KoszulIdealPower.idealPowerSystem_proIso_koszulIdealComplexSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/AdicSystem/IdealPowerTensor.lean, line 932](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/AdicSystem/IdealPowerTensor.lean#L932).
 
 > **Stacks Project, Tag 0G3M.** Over a Noetherian ring, the inverse system of positive
 > powers of the ideal generated by a finite sequence and the inverse system of shifted,
@@ -206,7 +206,7 @@ public theorem idealPowerSystem_proIso_koszulIdealComplexSystem
 
 [Tag 0G3N](https://stacks.math.columbia.edu/tag/0G3N) in the Stacks Project.
 
-**`Stacks.AdicSystem.IdealPowerTensorComparison.derivedTensor_idealPowers_proIsomorphic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/AdicSystem/CanonicalDerivedTensor.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Module/AdicSystem/CanonicalDerivedTensor.lean#L100).
+**`Stacks.AdicSystem.IdealPowerTensorComparison.derivedTensor_idealPowers_proIsomorphic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/AdicSystem/CanonicalDerivedTensor.lean, line 100](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/AdicSystem/CanonicalDerivedTensor.lean#L100).
 
 > **Stacks Project, Tag 0G3N.** For a bounded complex of finite modules over a Noetherian
 > ring, the inverse system of maps `Iⁿ ⊗ᴸ M → Iⁿ M` formed from the canonical derived tensor
@@ -240,7 +240,7 @@ public theorem derivedTensor_idealPowers_proIsomorphic {A : Type u} [CommRing A]
 
 [Tag 0928](https://stacks.math.columbia.edu/tag/0928) in the Stacks Project.
 
-**`Stacks.AdicSystem.IdealPowerDerivedTensor.idealPowerInclusion_factors_through_derivedTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/AdicSystem/CanonicalDerivedTensor.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Module/AdicSystem/CanonicalDerivedTensor.lean#L134).
+**`Stacks.AdicSystem.IdealPowerDerivedTensor.idealPowerInclusion_factors_through_derivedTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/AdicSystem/CanonicalDerivedTensor.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/AdicSystem/CanonicalDerivedTensor.lean#L134).
 
 > **Stacks Project, Tag 0928.** For a finite module over a Noetherian ring, the inclusion of
 > some positive ideal power factors through the canonical map from the canonical derived tensor
@@ -277,4 +277,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.103, Tag 0G3J](https://stacks.math.columbia.edu/tag/0G3J)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

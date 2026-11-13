@@ -8,13 +8,13 @@ proof: formalized
 
 # 48.5 Right adjoint of pushforward and base change, I
 
-Section 48.5 of the Stacks Project, [Tag 0AA5](https://stacks.math.columbia.edu/tag/0AA5). 4 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 48.5 of the Stacks Project, [Tag 0AA5](https://stacks.math.columbia.edu/tag/0AA5). 4 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0AA6, an equation
 
 [Tag 0AA6](https://stacks.math.columbia.edu/tag/0AA6) in the Stacks Project.
 
-**`Stacks.Duality.twistedInverseImageBaseChangeMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/BaseChange.lean, line 223](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/BaseChange.lean#L223). The attribute's comment: “variant: the composite for any cartesian square at which ξ is invertible; the tag is Stacks.Duality.torIndependentTwistedInverseImageBaseChange”.
+**`Stacks.Duality.twistedInverseImageBaseChangeMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/BaseChange.lean, line 223](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/BaseChange.lean#L223). The attribute's comment: “variant: the composite for any cartesian square at which ξ is invertible; the tag is Stacks.Duality.torIndependentTwistedInverseImageBaseChange”.
 
 > **The base change map `L(g')^* ∘ a ⟶ a' ∘ Lg^*`** of [Stacks, Tag 0AA6], Equation 48.5.0.1,
 > for a cartesian square of schemes: the unit of `Lg^* ⊣ Rg_*`, then the inverse of
@@ -32,7 +32,7 @@ def twistedInverseImageBaseChangeMap (sq : IsPullback g' f' f g)
       quasiCoherentDerivedPullback' g ⋙ twistedInverseImage f' hpushf'
 ```
 
-**`Stacks.Duality.torIndependentTwistedInverseImageBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/TorIndependentBaseChangeMap.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/TorIndependentBaseChangeMap.lean#L70).
+**`Stacks.Duality.torIndependentTwistedInverseImageBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/TorIndependentBaseChangeMap.lean, line 70](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/TorIndependentBaseChangeMap.lean#L70).
 
 > **The base change map `L(g')^* ∘ a ⟶ a' ∘ Lg^*` of [Stacks, Tag 0AA6]**, Equation 48.5.0.1,
 > for a cartesian square of quasi-compact and quasi-separated schemes with `f` and `g` Tor
@@ -48,7 +48,7 @@ def torIndependentTwistedInverseImageBaseChange (sq : IsPullback g' f' f g)
         twistedInverseImage f' (isQuasicoherent_homology_derivedPushforward_of_qcqs f')
 ```
 
-**`Stacks.Duality.torIndependentTwistedInverseImageBaseChange_homEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/TorIndependentBaseChangeMap.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/TorIndependentBaseChangeMap.lean#L88). The attribute's comment: “the adjoint form a ⟶ a ∘ Rg\_* ∘ Lg^* ⟵ Rg'\_* ∘ a' ∘ Lg^*”.
+**`Stacks.Duality.torIndependentTwistedInverseImageBaseChange_homEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/TorIndependentBaseChangeMap.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/TorIndependentBaseChangeMap.lean#L88). The attribute's comment: “the adjoint form a ⟶ a ∘ Rg\_* ∘ Lg^* ⟵ Rg'\_* ∘ a' ∘ Lg^*”.
 
 > **The adjoint form of the base change map of [Stacks, Tag 0AA6].** Under
 > `L(g')^* ⊣ Rg'_*` the component at `K` of `L(g')^* ∘ a ⟶ a' ∘ Lg^*` corresponds to
@@ -77,7 +77,7 @@ theorem torIndependentTwistedInverseImageBaseChange_homEquiv (sq : IsPullback g'
 
 [Tag 0ATQ](https://stacks.math.columbia.edu/tag/0ATQ) in the Stacks Project.
 
-**`Stacks.Duality.twistedInverseImageBaseChangeMap_vcomp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/BaseChangeStackingMate.lean, line 380](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/BaseChangeStackingMate.lean#L380). The attribute's comment: “for the base change map of Stacks 0AA6 attached to the twisted inverse image f^x of Stacks 0A9E -- the right adjoint of Rf\_* on D\_QCoh -- and for the comparison (f then g)^x = g^x then f^x of Stacks 0ATX: the map of the outer rectangle of a vertical stack of two cartesian squares is the horizontal composite of the maps of the two squares, read through those comparisons. The source's quasi-compactness and quasi-separatedness enter as the preservation of quasi-coherent cohomology by derived direct and inverse image along the morphisms of the diagram and as the existence of the six right adjoints, which is what Stacks 08D5 part (1) and Stacks 0A9E produce for a quasi-compact quasi-separated morphism; Stacks.Duality.twistedInverseImageCompIsoOfQcqs is the pattern that discharges them. Invertibility of the transformation xi of Stacks 0A9K for each of the two squares is an instance argument, exactly as in Stacks.Duality.twistedInverseImageBaseChangeMap where the base change map is defined, and it is Stacks 0A9K that produces it for a Tor-independent square. What is NOT claimed is the passage from f^x to the f^! of a general compactification, Stacks.Duality.upperShriek, which needs the independence of the chosen compactification, Stacks 0AA0”.
+**`Stacks.Duality.twistedInverseImageBaseChangeMap_vcomp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/BaseChangeStackingMate.lean, line 380](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/BaseChangeStackingMate.lean#L380). The attribute's comment: “for the base change map of Stacks 0AA6 attached to the twisted inverse image f^x of Stacks 0A9E -- the right adjoint of Rf\_* on D\_QCoh -- and for the comparison (f then g)^x = g^x then f^x of Stacks 0ATX: the map of the outer rectangle of a vertical stack of two cartesian squares is the horizontal composite of the maps of the two squares, read through those comparisons. The source's quasi-compactness and quasi-separatedness enter as the preservation of quasi-coherent cohomology by derived direct and inverse image along the morphisms of the diagram and as the existence of the six right adjoints, which is what Stacks 08D5 part (1) and Stacks 0A9E produce for a quasi-compact quasi-separated morphism; Stacks.Duality.twistedInverseImageCompIsoOfQcqs is the pattern that discharges them. Invertibility of the transformation xi of Stacks 0A9K for each of the two squares is an instance argument, exactly as in Stacks.Duality.twistedInverseImageBaseChangeMap where the base change map is defined, and it is Stacks 0A9K that produces it for a Tor-independent square. What is NOT claimed is the passage from f^x to the f^! of a general compactification, Stacks.Duality.upperShriek, which needs the independence of the chosen compactification, Stacks 0AA0”.
 
 > **[Stacks, Tag 0ATQ] (Lemma 48.5.1): the base change maps of a vertical stack of two
 > cartesian squares compose to the base change map of the outer rectangle.** For
@@ -119,7 +119,7 @@ theorem twistedInverseImageBaseChangeMap_vcomp (sq₁ : IsPullback k f' f l)
         (twistedInverseImageCompIso f' g' hpushf' hpushg' hpushf'g').inv
 ```
 
-**`Stacks.Duality.twistedInverseImageBaseChangeMap_paste_vert_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/TorIndependentBaseChangePasteVert.lean, line 175](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/TorIndependentBaseChangePasteVert.lean#L175).
+**`Stacks.Duality.twistedInverseImageBaseChangeMap_paste_vert_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/TorIndependentBaseChangePasteVert.lean, line 175](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/TorIndependentBaseChangePasteVert.lean#L175).
 
 > **[Stacks, Tag 0ATQ].** Consider a commutative diagram
 > ```
@@ -179,7 +179,7 @@ theorem twistedInverseImageBaseChangeMap_paste_vert_app (sqT : IsPullback k f' f
 
 [Tag 0ATR](https://stacks.math.columbia.edu/tag/0ATR) in the Stacks Project.
 
-**`Stacks.Duality.twistedInverseImageBaseChangeMap_hcomp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/BaseChangeHorizontal.lean, line 401](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/BaseChangeHorizontal.lean#L401). The attribute's comment: “for the base change map of Stacks 0AA6 attached to the twisted inverse image f^x of Stacks 0A9E -- the right adjoint of Rf\_* on D\_QCoh: the map of the outer rectangle of a row of two cartesian squares is the vertical composite of the maps of the two squares, read through the composition formula for derived pullback along the two composite horizontal morphisms. The source's quasi-compactness and quasi-separatedness enter as the preservation of quasi-coherent cohomology by derived direct and inverse image along the morphisms of the diagram and as the existence of the three right adjoints, which is what Stacks 08D5 part (1) and Stacks 0A9E produce for a quasi-compact quasi-separated morphism. Invertibility of the transformation xi of Stacks 0A9K for each of the two squares is an instance argument, exactly as in Stacks.Duality.twistedInverseImageBaseChangeMap where the base change map is defined, and it is Stacks 0A9K that produces it for a Tor-independent square; the rectangle's needs no third input, by Stacks.Duality.isIso\_twistedInverseImagePushforwardBaseChange\_hcomp”.
+**`Stacks.Duality.twistedInverseImageBaseChangeMap_hcomp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/BaseChangeHorizontal.lean, line 401](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/BaseChangeHorizontal.lean#L401). The attribute's comment: “for the base change map of Stacks 0AA6 attached to the twisted inverse image f^x of Stacks 0A9E -- the right adjoint of Rf\_* on D\_QCoh: the map of the outer rectangle of a row of two cartesian squares is the vertical composite of the maps of the two squares, read through the composition formula for derived pullback along the two composite horizontal morphisms. The source's quasi-compactness and quasi-separatedness enter as the preservation of quasi-coherent cohomology by derived direct and inverse image along the morphisms of the diagram and as the existence of the three right adjoints, which is what Stacks 08D5 part (1) and Stacks 0A9E produce for a quasi-compact quasi-separated morphism. Invertibility of the transformation xi of Stacks 0A9K for each of the two squares is an instance argument, exactly as in Stacks.Duality.twistedInverseImageBaseChangeMap where the base change map is defined, and it is Stacks 0A9K that produces it for a Tor-independent square; the rectangle's needs no third input, by Stacks.Duality.isIso\_twistedInverseImagePushforwardBaseChange\_hcomp”.
 
 > **[Stacks, Tag 0ATR] (Lemma 48.5.2): the base change maps of a row of two cartesian squares
 > compose to the base change map of the outer rectangle.** For
@@ -225,10 +225,10 @@ theorem twistedInverseImageBaseChangeMap_hcomp (sq₁ : IsPullback k' f'' f' l')
         (quasiCoherentDerivedPullbackCompIsoConj k' k hpushk' hpushk hpushkk
           (isQuasicoherent_homology_derivedPullback' k')
           (isQuasicoherent_homology_derivedPullback' k)
-          (isQuasicoherent_homology_derivedPullback' (k' ≫ k))).inv).natTrans
+          (isQuasicoherent_homology_derivedPullback' (k' ≫ k))).inv)
 ```
 
-**`Stacks.Duality.twistedInverseImageBaseChangeMap_paste_horiz_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/TorIndependentBaseChangePasteHoriz.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/TorIndependentBaseChangePasteHoriz.lean#L191).
+**`Stacks.Duality.twistedInverseImageBaseChangeMap_paste_horiz_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/TorIndependentBaseChangePasteHoriz.lean, line 191](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/TorIndependentBaseChangePasteHoriz.lean#L191).
 
 > **[Stacks, Tag 0ATR].** Consider a commutative diagram
 > ```
@@ -278,7 +278,7 @@ theorem twistedInverseImageBaseChangeMap_paste_horiz_app (sqR : IsPullback g f' 
 
 [Tag 0ATS](https://stacks.math.columbia.edu/tag/0ATS) in the Stacks Project.
 
-**`Stacks.Duality.twistedInverseImageBaseChangeMap_grid_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/TorIndependentBaseChangeGrid.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/TorIndependentBaseChangeGrid.lean#L169).
+**`Stacks.Duality.twistedInverseImageBaseChangeMap_grid_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/TorIndependentBaseChangeGrid.lean, line 169](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/TorIndependentBaseChangeGrid.lean#L169).
 
 > **[Stacks, Tag 0ATS].** Consider a commutative diagram
 > ```
@@ -374,4 +374,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 48.5, Tag 0AA5](https://stacks.math.columbia.edu/tag/0AA5)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

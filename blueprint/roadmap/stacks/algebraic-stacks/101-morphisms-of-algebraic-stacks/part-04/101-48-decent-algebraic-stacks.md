@@ -8,13 +8,13 @@ proof: formalized
 
 # 101.48 Decent algebraic stacks
 
-Section 101.48 of the Stacks Project, [Tag 0GW0](https://stacks.math.columbia.edu/tag/0GW0). 5 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 101.48 of the Stacks Project, [Tag 0GW0](https://stacks.math.columbia.edu/tag/0GW0). 5 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0GW1, a definition
 
 [Tag 0GW1](https://stacks.math.columbia.edu/tag/0GW1) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.IsDecent`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/DecentStack.lean, line 105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/DecentStack.lean#L105).
+**`AlgebraicGeometry.Stack.IsDecent`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/DecentStack.lean, line 105](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/DecentStack.lean#L105).
 
 > A category fibred in groupoids over the big fppf site of `S` — in particular an algebraic
 > stack — is *decent* when every one of its points admits a quasi-compact field-valued
@@ -28,7 +28,7 @@ abbrev IsDecent : Prop
 
 [Tag 0GW2](https://stacks.math.columbia.edu/tag/0GW2) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isDecent_of_isQuasiCompact_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasiCompactDiagonalDecent.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/QuasiCompactDiagonalDecent.lean#L88). The attribute's comment: “quasi-compact diagonal”.
+**`AlgebraicGeometry.Stack.isDecent_of_isQuasiCompact_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasiCompactDiagonalDecent.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/QuasiCompactDiagonalDecent.lean#L88). The attribute's comment: “quasi-compact diagonal”.
 
 > **An algebraic stack whose absolute diagonal is quasi-compact is decent.**
 
@@ -42,7 +42,7 @@ theorem isDecent_of_isQuasiCompact_diagonal
     IsDecent B S hS 𝒳.val
 ```
 
-**`AlgebraicGeometry.Stack.isDecent_of_isQuasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasiSeparatedDecent.lean, line 44](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/QuasiSeparatedDecent.lean#L44). The attribute's comment: “quasi-separated case”.
+**`AlgebraicGeometry.Stack.isDecent_of_isQuasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasiSeparatedDecent.lean, line 44](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/QuasiSeparatedDecent.lean#L44). The attribute's comment: “quasi-separated case”.
 
 > **A quasi-separated algebraic stack is decent.** If `𝒳` is quasi-separated in the absolute
 > sense, then every point of `𝒳` has a field-valued representative which is quasi-compact.
@@ -57,7 +57,7 @@ theorem isDecent_of_isQuasiSeparated (𝒳 : AlgebraicStacks.{u, w} B S hS)
 
 [Tag 0GW3](https://stacks.math.columbia.edu/tag/0GW3) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isDecent_of_representable_or_quasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RepresentableDecent.lean, line 445](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RepresentableDecent.lean#L445).
+**`AlgebraicGeometry.Stack.isDecent_of_representable_or_quasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RepresentableDecent.lean, line 446](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/RepresentableDecent.lean#L446).
 
 > **Stacks 0GW3.** The source of a 1-morphism of algebraic stacks over `S` with decent target
 > is decent as soon as the 1-morphism is representable by schemes, or is representable by algebraic
@@ -93,7 +93,7 @@ theorem isDecent_of_representable_or_quasiSeparated
 
 [Tag 0GW4](https://stacks.math.columbia.edu/tag/0GW4) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isDecent_of_isQuasiCompactMorphism_of_isSurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasiCompactSurjectiveDecent.lean, line 127](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/QuasiCompactSurjectiveDecent.lean#L127).
+**`AlgebraicGeometry.Stack.isDecent_of_isQuasiCompactMorphism_of_isSurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasiCompactSurjectiveDecent.lean, line 127](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/QuasiCompactSurjectiveDecent.lean#L127).
 
 > **Stacks 0GW4.** Let `f : 𝒳 ⟶ 𝒴` be a 1-morphism of algebraic stacks over `S`. If `f` is
 > quasi-compact and surjective and `𝒳` is decent, then `𝒴` is decent.
@@ -117,7 +117,7 @@ theorem isDecent_of_isQuasiCompactMorphism_of_isSurjective
 
 [Tag 0GW5](https://stacks.math.columbia.edu/tag/0GW5) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isDecent_of_isGerbeOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeDecent.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GerbeDecent.lean#L109).
+**`AlgebraicGeometry.Stack.isDecent_of_isGerbeOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GerbeDecent.lean, line 109](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/GerbeDecent.lean#L109).
 
 > **Stacks 0GW5.** Let `f : 𝒳 ⟶ 𝒴` be a 1-morphism of algebraic stacks over `S`. If `f`
 > exhibits `𝒳` as a gerbe over `𝒴` (**Stacks 06QC**) and `𝒳` is decent (**Stacks 0GW1**), then `𝒴`
@@ -143,4 +143,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 101.48, Tag 0GW0](https://stacks.math.columbia.edu/tag/0GW0)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

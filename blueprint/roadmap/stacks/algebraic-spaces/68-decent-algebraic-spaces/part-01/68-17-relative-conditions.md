@@ -8,13 +8,13 @@ proof: formalized
 
 # 68.17 Relative conditions
 
-Section 68.17 of the Stacks Project, [Tag 03KW](https://stacks.math.columbia.edu/tag/03KW). 11 tags here are carried by 37 declarations of the repository (all in StacksFrontier) and 5 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 68.17 of the Stacks Project, [Tag 03KW](https://stacks.math.columbia.edu/tag/03KW). 11 tags here are carried by 37 declarations of the repository (all in StacksFrontier) and 5 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 03KZ, a definition
 
 [Tag 03KZ](https://stacks.math.columbia.edu/tag/03KZ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.HasFiniteRelationFibersAtEveryPoint`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent.lean#L104). The attribute's comment: “property beta for an algebraic space”.
+**`AlgebraicGeometry.Space.HasFiniteRelationFibersAtEveryPoint`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent.lean, line 104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent.lean#L104). The attribute's comment: “property beta for an algebraic space”.
 
 > **Stacks 03KZ, property `(β)` for an algebraic space.** This is property `(β)` of
 > Stacks 03JX: every point of `F` satisfies the equivalent conditions of Stacks 03JU, taken
@@ -24,7 +24,7 @@ Section 68.17 of the Stacks Project, [Tag 03KW](https://stacks.math.columbia.edu
 abbrev HasFiniteRelationFibersAtEveryPoint : Prop
 ```
 
-**`AlgebraicGeometry.Space.HasPropertyBeta`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent.lean#L149). The attribute's comment: “property beta for a morphism”.
+**`AlgebraicGeometry.Space.HasPropertyBeta`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent.lean#L149). The attribute's comment: “property beta for a morphism”.
 
 > **Stacks 03KZ, property `(β)` for a morphism.** A morphism of algebraic spaces over `S`
 > has property `(β)` when every base change of it along a morphism from a representable
@@ -34,7 +34,7 @@ abbrev HasFiniteRelationFibersAtEveryPoint : Prop
 abbrev HasPropertyBeta (f : X ⟶ Y) : Prop
 ```
 
-**`AlgebraicGeometry.Space.IsDecent`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent.lean#L157). The attribute's comment: “decent morphism”.
+**`AlgebraicGeometry.Space.IsDecent`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent.lean, line 157](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent.lean#L157). The attribute's comment: “decent morphism”.
 
 > **Stacks 03KZ, decent morphism.** A morphism of algebraic spaces over `S` is *decent*
 > when every base change of it along a morphism from a representable presheaf into its target
@@ -44,7 +44,7 @@ abbrev HasPropertyBeta (f : X ⟶ Y) : Prop
 abbrev IsDecent (f : X ⟶ Y) : Prop
 ```
 
-**`AlgebraicGeometry.Space.IsReasonable`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Reasonable.lean, line 180](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Reasonable.lean#L180). The attribute's comment: “reasonable morphism”.
+**`AlgebraicGeometry.Space.IsReasonable`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Reasonable.lean, line 182](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Reasonable.lean#L182). The attribute's comment: “reasonable morphism”.
 
 > **Stacks 03KZ, reasonable morphism.** A morphism of algebraic spaces over `S` is
 > *reasonable* when every base change of it along a morphism from a representable presheaf
@@ -54,7 +54,7 @@ abbrev IsDecent (f : X ⟶ Y) : Prop
 abbrev IsReasonable (f : X ⟶ Y) : Prop
 ```
 
-**`AlgebraicGeometry.Space.IsVeryReasonable`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Reasonable.lean, line 188](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Reasonable.lean#L188). The attribute's comment: “very reasonable morphism”.
+**`AlgebraicGeometry.Space.IsVeryReasonable`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Reasonable.lean, line 190](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Reasonable.lean#L190). The attribute's comment: “very reasonable morphism”.
 
 > **Stacks 03KZ, very reasonable morphism.** A morphism of algebraic spaces over `S` is
 > *very reasonable* when every base change of it along a morphism from a representable
@@ -68,7 +68,7 @@ abbrev IsVeryReasonable (f : X ⟶ Y) : Prop
 
 [Tag 03M5](https://stacks.math.columbia.edu/tag/03M5) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isVeryReasonable_of_isQuasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/QuasiSeparatedVeryReasonable.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/QuasiSeparatedVeryReasonable.lean#L84). The attribute's comment: “quasi-separated implies very reasonable”.
+**`AlgebraicGeometry.Space.isVeryReasonable_of_isQuasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/QuasiSeparatedVeryReasonable.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/QuasiSeparatedVeryReasonable.lean#L84). The attribute's comment: “quasi-separated implies very reasonable”.
 
 > A quasi-separated morphism of algebraic spaces over `S` is very reasonable.
 
@@ -78,7 +78,7 @@ theorem isVeryReasonable_of_isQuasiSeparated (hX : IsAlgebraicSpace B S hS X)
     IsVeryReasonable B S hS f
 ```
 
-**`AlgebraicGeometry.Space.isVeryReasonable_of_relativelyRepresentable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeConditionComparisons.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeConditionComparisons.lean#L91). The attribute's comment: “representable implies very reasonable”.
+**`AlgebraicGeometry.Space.isVeryReasonable_of_relativelyRepresentable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeConditionComparisons.lean, line 91](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeConditionComparisons.lean#L91). The attribute's comment: “representable implies very reasonable”.
 
 > **Stacks 03M5, representable implies very reasonable.** A representable morphism of
 > algebraic spaces over `S` is very reasonable: each of its represented base changes is again a
@@ -91,7 +91,7 @@ theorem isVeryReasonable_of_relativelyRepresentable (hX : IsAlgebraicSpace B S h
     (hf : yoneda.relativelyRepresentable f) : IsVeryReasonable B S hS f
 ```
 
-**`AlgebraicGeometry.Space.isDecent_of_isReasonable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeConditionComparisons.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeConditionComparisons.lean#L108). The attribute's comment: “reasonable implies decent”.
+**`AlgebraicGeometry.Space.isDecent_of_isReasonable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeConditionComparisons.lean, line 108](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeConditionComparisons.lean#L108). The attribute's comment: “reasonable implies decent”.
 
 > **Stacks 03M5, reasonable implies decent.** A reasonable morphism of algebraic spaces
 > over `S` is decent: each of its represented base changes is a reasonable algebraic space,
@@ -104,7 +104,7 @@ theorem isDecent_of_isReasonable (hX : IsAlgebraicSpace B S hS X)
     IsDecent B S hS f
 ```
 
-**`AlgebraicGeometry.Space.hasPropertyBeta_of_isDecent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeConditionComparisons.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeConditionComparisons.lean#L120). The attribute's comment: “decent implies property (beta)”.
+**`AlgebraicGeometry.Space.hasPropertyBeta_of_isDecent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeConditionComparisons.lean, line 120](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeConditionComparisons.lean#L120). The attribute's comment: “decent implies property (beta)”.
 
 > **Stacks 03M5, decent implies property `(β)`.** A decent morphism of algebraic spaces
 > over `S` has property `(β)`: each of its represented base changes is a decent algebraic
@@ -116,7 +116,7 @@ theorem hasPropertyBeta_of_isDecent (hX : IsAlgebraicSpace B S hS X)
     HasPropertyBeta B S hS f
 ```
 
-**`AlgebraicGeometry.Space.isReasonable_of_isVeryReasonable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/VeryReasonableImpliesReasonable.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/VeryReasonableImpliesReasonable.lean#L221). The attribute's comment: “very reasonable implies reasonable”.
+**`AlgebraicGeometry.Space.isReasonable_of_isVeryReasonable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/VeryReasonableImpliesReasonable.lean, line 221](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/VeryReasonableImpliesReasonable.lean#L221). The attribute's comment: “very reasonable implies reasonable”.
 
 > **Stacks 03M5, very reasonable implies reasonable.** A very reasonable morphism of
 > algebraic spaces over `S` is reasonable.
@@ -136,7 +136,7 @@ theorem isReasonable_of_isVeryReasonable {X Y : (BigFppfOver B S hS)ᵒᵖ ⥤ T
 
 [Tag 0ABX](https://stacks.math.columbia.edu/tag/0ABX) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isDecent_of_isDecentSpace_source`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/FieldFibreTopologicalDimension.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/FieldFibreTopologicalDimension.lean#L99). The attribute's comment: “decent: a morphism whose source is decent is decent”.
+**`AlgebraicGeometry.Space.isDecent_of_isDecentSpace_source`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/FieldFibreTopologicalDimension.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/FieldFibreTopologicalDimension.lean#L99). The attribute's comment: “decent: a morphism whose source is decent is decent”.
 
 > **Stacks 0ABX, the decent case.** A morphism of algebraic spaces over `S` whose source is
 > a decent algebraic space is a decent morphism.
@@ -152,7 +152,7 @@ theorem isDecent_of_isDecentSpace_source (hX : IsAlgebraicSpace B S hS X)
     IsDecent B S hS f
 ```
 
-**`AlgebraicGeometry.Space.hasMonomorphicFieldRepresentative_pullback_of_source`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeConditions.lean, line 330](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeConditions.lean#L330). The attribute's comment: “decent, as condition (4) of Stacks 03JU at every represented base change”.
+**`AlgebraicGeometry.Space.hasMonomorphicFieldRepresentative_pullback_of_source`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeConditions.lean, line 359](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeConditions.lean#L359). The attribute's comment: “decent, as condition (4) of Stacks 03JU at every represented base change”.
 
 > **Stacks 0ABX, the decent case in the form of condition (4) of Stacks 03JU.** Let
 > `f : X ⟶ Y` be a morphism of presheaves on the big fppf site over `S` with `Y` an algebraic
@@ -169,7 +169,7 @@ theorem hasMonomorphicFieldRepresentative_pullback_of_source
     HasMonomorphicFieldRepresentative B S hS (pullback g f) w
 ```
 
-**`AlgebraicGeometry.Space.hasPropertyBeta_of_hasMonomorphicFieldRepresentative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeConditions.lean, line 343](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeConditions.lean#L343). The attribute's comment: “property beta, from condition (4) of Stacks 03JU on the source”.
+**`AlgebraicGeometry.Space.hasPropertyBeta_of_hasMonomorphicFieldRepresentative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeConditions.lean, line 374](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeConditions.lean#L374). The attribute's comment: “property beta, from condition (4) of Stacks 03JU on the source”.
 
 > **Stacks 0ABX, the case `(β)`.** Let `f : X ⟶ Y` be a morphism of algebraic spaces over
 > `S`. If every point of `X` is the class of a field-valued point presenting it by a
@@ -182,7 +182,7 @@ theorem hasPropertyBeta_of_hasMonomorphicFieldRepresentative
     HasPropertyBeta B S hS f
 ```
 
-**`AlgebraicGeometry.Space.hasPropertyBeta_of_hasFiniteRelationFibersAtEveryPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeConditions.lean, line 370](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeConditions.lean#L370). The attribute's comment: “property beta”.
+**`AlgebraicGeometry.Space.hasPropertyBeta_of_hasFiniteRelationFibersAtEveryPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeConditions.lean, line 405](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeConditions.lean#L405). The attribute's comment: “property beta”.
 
 > **Stacks 0ABX, the case `(β)`.** A morphism of algebraic spaces over `S` whose source has
 > property `(β)` of Stacks 03JX has property `(β)`.
@@ -197,7 +197,7 @@ theorem hasPropertyBeta_of_hasFiniteRelationFibersAtEveryPoint
     HasPropertyBeta B S hS f
 ```
 
-**`AlgebraicGeometry.Space.isReasonable_of_isReasonableSpace_source`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeConditions.lean, line 384](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeConditions.lean#L384). The attribute's comment: “reasonable”.
+**`AlgebraicGeometry.Space.isReasonable_of_isReasonableSpace_source`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeConditions.lean, line 421](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeConditions.lean#L421). The attribute's comment: “reasonable”.
 
 > **Stacks 0ABX, the reasonable case.** A morphism of algebraic spaces over `S` whose source
 > is a reasonable algebraic space is a reasonable morphism.
@@ -216,7 +216,7 @@ theorem isReasonable_of_isReasonableSpace_source (hX : IsAlgebraicSpace B S hS X
 
 [Tag 03L0](https://stacks.math.columbia.edu/tag/03L0) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.hasPropertyBeta_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeConditions.lean, line 277](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeConditions.lean#L277). The attribute's comment: “property beta”.
+**`AlgebraicGeometry.Space.hasPropertyBeta_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeConditions.lean, line 296](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeConditions.lean#L296). The attribute's comment: “property beta”.
 
 > **Stacks 03L0, property `(β)`.** Property `(β)` of a morphism of algebraic spaces over `S`
 > is preserved by arbitrary base change: a base change of the base change of `f : X ⟶ Y` along
@@ -227,7 +227,7 @@ theorem hasPropertyBeta_baseChange (f : X ⟶ Y) (g : Y' ⟶ Y)
     (hf : HasPropertyBeta B S hS f) : HasPropertyBeta B S hS (pullback.fst g f)
 ```
 
-**`AlgebraicGeometry.Space.isDecent_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeConditions.lean, line 286](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeConditions.lean#L286). The attribute's comment: “decent”.
+**`AlgebraicGeometry.Space.isDecent_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeConditions.lean, line 307](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeConditions.lean#L307). The attribute's comment: “decent”.
 
 > **Stacks 03L0, decent.** Decency of a morphism of algebraic spaces over `S` is preserved
 > by arbitrary base change: a base change of the base change of `f : X ⟶ Y` along `g : Y' ⟶ Y`
@@ -238,7 +238,7 @@ theorem isDecent_baseChange (f : X ⟶ Y) (g : Y' ⟶ Y) (hf : IsDecent B S hS f
     IsDecent B S hS (pullback.fst g f)
 ```
 
-**`AlgebraicGeometry.Space.isReasonable_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeConditions.lean, line 294](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeConditions.lean#L294). The attribute's comment: “reasonable”.
+**`AlgebraicGeometry.Space.isReasonable_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeConditions.lean, line 317](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeConditions.lean#L317). The attribute's comment: “reasonable”.
 
 > **Stacks 03L0, reasonable.** Reasonableness of a morphism of algebraic spaces over `S` is
 > preserved by arbitrary base change: a base change of the base change of `f : X ⟶ Y` along
@@ -253,7 +253,7 @@ theorem isReasonable_baseChange (f : X ⟶ Y) (g : Y' ⟶ Y) (hf : IsReasonable 
 
 [Tag 0ABY](https://stacks.math.columbia.edu/tag/0ABY) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.hasMonomorphicFieldRepresentative_of_target_of_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeConditions.lean, line 404](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeConditions.lean#L404). The attribute's comment: “property beta, as condition (4) of Stacks 03JU at every point”.
+**`AlgebraicGeometry.Space.hasMonomorphicFieldRepresentative_of_target_of_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeConditions.lean, line 443](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeConditions.lean#L443). The attribute's comment: “property beta, as condition (4) of Stacks 03JU at every point”.
 
 > **Stacks 0ABY, the case `(β)` in the form of condition (4) of Stacks 03JU.** Let
 > `f : X ⟶ Y` be a morphism of presheaves on the big fppf site over `S`. If every point of `Y`
@@ -277,7 +277,7 @@ theorem hasMonomorphicFieldRepresentative_of_target_of_baseChange (f : X ⟶ Y)
     HasMonomorphicFieldRepresentative B S hS X x
 ```
 
-**`AlgebraicGeometry.Space.isDecentSpace_of_isDecent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeDecency.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeDecency.lean#L102). The attribute's comment: “decent”.
+**`AlgebraicGeometry.Space.isDecentSpace_of_isDecent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeDecency.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeDecency.lean#L102). The attribute's comment: “decent”.
 
 > **Stacks 0ABY, decent.** If a morphism of algebraic spaces over `S` is decent and its
 > target is decent, then its source is decent.
@@ -296,7 +296,7 @@ theorem isDecentSpace_of_isDecent (hX : IsAlgebraicSpace B S hS X)
     IsDecentSpace B S hS X
 ```
 
-**`AlgebraicGeometry.Space.isReasonableSpace_of_isReasonable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeReasonablePermanence.lean, line 250](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeReasonablePermanence.lean#L250). The attribute's comment: “reasonable”.
+**`AlgebraicGeometry.Space.isReasonableSpace_of_isReasonable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeReasonablePermanence.lean, line 252](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeReasonablePermanence.lean#L252). The attribute's comment: “reasonable”.
 
 > **Stacks 0ABY, reasonable.** If a morphism of algebraic spaces over `S` is reasonable and
 > its target is reasonable, then its source is reasonable.
@@ -318,7 +318,7 @@ theorem isReasonableSpace_of_isReasonable (hX : IsAlgebraicSpace B S hS X)
 
 [Tag 03L1](https://stacks.math.columbia.edu/tag/03L1) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.hasPropertyBeta_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeConditions.lean, line 466](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeConditions.lean#L466). The attribute's comment: “property beta”.
+**`AlgebraicGeometry.Space.hasPropertyBeta_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeConditions.lean, line 509](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeConditions.lean#L509). The attribute's comment: “property beta”.
 
 > **Stacks 03L1, property `(β)`.** Property `(β)` of a morphism of algebraic spaces over `S`
 > is preserved by composition.
@@ -334,7 +334,7 @@ theorem hasPropertyBeta_comp (hX : IsAlgebraicSpace B S hS X)
     HasPropertyBeta B S hS (f ≫ g)
 ```
 
-**`AlgebraicGeometry.Space.isDecent_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeConditions.lean, line 485](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeConditions.lean#L485). The attribute's comment: “decent”.
+**`AlgebraicGeometry.Space.isDecent_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeConditions.lean, line 530](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeConditions.lean#L530). The attribute's comment: “decent”.
 
 > **Stacks 03L1, decent.** Decency of a morphism of algebraic spaces over `S` is preserved by
 > composition.
@@ -350,7 +350,7 @@ theorem isDecent_comp (hX : IsAlgebraicSpace B S hS X) (hY : IsAlgebraicSpace B 
     IsDecent B S hS (f ≫ g)
 ```
 
-**`AlgebraicGeometry.Space.isReasonable_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeReasonablePermanence.lean, line 349](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeReasonablePermanence.lean#L349). The attribute's comment: “reasonable”.
+**`AlgebraicGeometry.Space.isReasonable_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeReasonablePermanence.lean, line 351](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeReasonablePermanence.lean#L351). The attribute's comment: “reasonable”.
 
 > **Stacks 03L1, reasonable.** Reasonableness of a morphism of algebraic spaces over `S` is
 > preserved by composition.
@@ -370,7 +370,7 @@ theorem isReasonable_comp (hX : IsAlgebraicSpace B S hS X) (hY : IsAlgebraicSpac
 
 [Tag 0ABZ](https://stacks.math.columbia.edu/tag/0ABZ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isDecentSpace_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/FibreProductConditions.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/FibreProductConditions.lean#L100). The attribute's comment: “decent”.
+**`AlgebraicGeometry.Space.isDecentSpace_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/FibreProductConditions.lean, line 100](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/FibreProductConditions.lean#L100). The attribute's comment: “decent”.
 
 > **Stacks 0ABZ, decent.** Let `f : X ⟶ Y` and `g : Z ⟶ Y` be morphisms of algebraic spaces
 > over `S`. If `X` and `Z` are decent algebraic spaces, then so is `X ×_Y Z`.
@@ -386,7 +386,7 @@ theorem isDecentSpace_pullback (hX : IsAlgebraicSpace B S hS X)
     IsDecentSpace B S hS (pullback f g)
 ```
 
-**`AlgebraicGeometry.Space.isReasonableSpace_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/FibreProductConditions.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/FibreProductConditions.lean#L116). The attribute's comment: “reasonable”.
+**`AlgebraicGeometry.Space.isReasonableSpace_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/FibreProductConditions.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/FibreProductConditions.lean#L116). The attribute's comment: “reasonable”.
 
 > **Stacks 0ABZ, reasonable.** Let `f : X ⟶ Y` and `g : Z ⟶ Y` be morphisms of algebraic
 > spaces over `S`. If `X` and `Z` are reasonable algebraic spaces, then so is `X ×_Y Z`.
@@ -402,7 +402,7 @@ theorem isReasonableSpace_pullback (hX : IsAlgebraicSpace B S hS X)
     IsReasonableSpace B S hS (pullback f g)
 ```
 
-**`AlgebraicGeometry.Space.hasFiniteRelationFibersAtEveryPoint_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/FibreProductConditions.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/FibreProductConditions.lean#L133). The attribute's comment: “property beta”.
+**`AlgebraicGeometry.Space.hasFiniteRelationFibersAtEveryPoint_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/FibreProductConditions.lean, line 133](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/FibreProductConditions.lean#L133). The attribute's comment: “property beta”.
 
 > **Stacks 0ABZ, property `(β)`.** Let `f : X ⟶ Y` and `g : Z ⟶ Y` be morphisms of algebraic
 > spaces over `S`. If `X` and `Z` have property `(β)` of Stacks 03JX, then so does `X ×_Y Z`.
@@ -423,7 +423,7 @@ theorem hasFiniteRelationFibersAtEveryPoint_pullback (hX : IsAlgebraicSpace B S 
 
 [Tag 03L2](https://stacks.math.columbia.edu/tag/03L2) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.hasFiniteRelationFibersAtEveryPoint_of_surjective_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PropertyBetaDescent.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PropertyBetaDescent.lean#L70). The attribute's comment: “property (beta)”.
+**`AlgebraicGeometry.Space.hasFiniteRelationFibersAtEveryPoint_of_surjective_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/PropertyBetaDescent.lean, line 70](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/PropertyBetaDescent.lean#L70). The attribute's comment: “property (beta)”.
 
 > **Stacks 03L2, property `(β)`.** Let `f : X ⟶ Y` be a quasi-compact étale morphism of
 > algebraic spaces over `S` which is surjective on points. If `X` has property `(β)` of
@@ -439,7 +439,7 @@ theorem hasFiniteRelationFibersAtEveryPoint_of_surjective_isEtale
     HasFiniteRelationFibersAtEveryPoint B S hS Y
 ```
 
-**`AlgebraicGeometry.Space.isReasonableSpace_of_surjective_isQuasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReasonableEtaleDescent.lean, line 96](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReasonableEtaleDescent.lean#L96). The attribute's comment: “reasonable”.
+**`AlgebraicGeometry.Space.isReasonableSpace_of_surjective_isQuasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReasonableEtaleDescent.lean, line 96](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReasonableEtaleDescent.lean#L96). The attribute's comment: “reasonable”.
 
 > **Stacks 03L2, reasonable.** Let `f` be a quasi-compact morphism of algebraic spaces over
 > `S` which is surjective on points. If its source is reasonable, then so is its target.
@@ -458,7 +458,7 @@ theorem isReasonableSpace_of_surjective_isQuasiCompact
     IsReasonableSpace B S hS Y
 ```
 
-**`AlgebraicGeometry.Space.hasQuasiCompactFieldRepresentative_of_isDecentSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeDecency.lean, line 151](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeDecency.lean#L151). The attribute's comment: “condition (5) of Stacks 03JV at every point of the target”.
+**`AlgebraicGeometry.Space.hasQuasiCompactFieldRepresentative_of_isDecentSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeDecency.lean, line 151](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeDecency.lean#L151). The attribute's comment: “condition (5) of Stacks 03JV at every point of the target”.
 
 > **Stacks 03L2, condition (5) of Stacks 03JV at every point of the target.** Let `f` be a
 > quasi-compact morphism of algebraic spaces over `S` which is surjective on points. If the
@@ -481,7 +481,7 @@ theorem hasQuasiCompactFieldRepresentative_of_isDecentSpace (hX : IsAlgebraicSpa
     HasQuasiCompactFieldRepresentative B S hS Y y
 ```
 
-**`AlgebraicGeometry.Space.isDecentSpace_of_surjective_isQuasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeDecency.lean, line 171](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeDecency.lean#L171). The attribute's comment: “decent”.
+**`AlgebraicGeometry.Space.isDecentSpace_of_surjective_isQuasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeDecency.lean, line 171](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeDecency.lean#L171). The attribute's comment: “decent”.
 
 > **Stacks 03L2, decent.** Let `f` be a quasi-compact morphism of algebraic spaces over `S`
 > which is surjective on points. If its source is decent, then so is its target.
@@ -503,7 +503,7 @@ theorem isDecentSpace_of_surjective_isQuasiCompact (hX : IsAlgebraicSpace B S hS
 
 [Tag 03L3](https://stacks.math.columbia.edu/tag/03L3) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.hasPropertyBeta_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeLocalCriteria.lean, line 603](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeLocalCriteria.lean#L603). The attribute's comment: “property beta”.
+**`AlgebraicGeometry.Space.hasPropertyBeta_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeLocalCriteria.lean, line 604](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeLocalCriteria.lean#L604). The attribute's comment: “property beta”.
 
 > For a morphism `f : X ⟶ Y` of algebraic spaces over `S` the following are equivalent:
 > `(1)` `f` has property `(β)` in the sense of Stacks 03KZ;
@@ -532,7 +532,7 @@ theorem hasPropertyBeta_tfae (hX : IsAlgebraicSpace B S hS X) (hY : IsAlgebraicS
           IsEtale B S hS g ∧ HasPropertyBeta B S hS (pullback.fst g f)]
 ```
 
-**`AlgebraicGeometry.Space.isVeryReasonable_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeLocalCriteria.lean, line 630](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeLocalCriteria.lean#L630). The attribute's comment: “very reasonable”.
+**`AlgebraicGeometry.Space.isVeryReasonable_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeLocalCriteria.lean, line 631](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeLocalCriteria.lean#L631). The attribute's comment: “very reasonable”.
 
 > For a morphism `f : X ⟶ Y` of algebraic spaces over `S` the following are equivalent:
 > `(1)` `f` is very reasonable in the sense of Stacks 03KZ;
@@ -557,7 +557,7 @@ theorem isVeryReasonable_tfae (hX : IsAlgebraicSpace B S hS X)
           ∀ i, IsVeryReasonable B S hS (pullback.fst (Yᵢ i).ι f)]
 ```
 
-**`AlgebraicGeometry.Space.isDecent_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeLocalCriteria.lean, line 652](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeLocalCriteria.lean#L652). The attribute's comment: “decent, conditions (1) to (4)”.
+**`AlgebraicGeometry.Space.isDecent_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeLocalCriteria.lean, line 653](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeLocalCriteria.lean#L653). The attribute's comment: “decent, conditions (1) to (4)”.
 
 > For a morphism `f : X ⟶ Y` of algebraic spaces over `S` the following are equivalent:
 > `(1)` `f` is decent in the sense of Stacks 03KZ;
@@ -582,7 +582,7 @@ theorem isDecent_tfae (hX : IsAlgebraicSpace B S hS X) (hY : IsAlgebraicSpace B 
           ∀ i, IsDecent B S hS (pullback.fst (Yᵢ i).ι f)]
 ```
 
-**`AlgebraicGeometry.Space.isDecent_tfae_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeLocalCriteria.lean, line 671](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeLocalCriteria.lean#L671). The attribute's comment: “decent”.
+**`AlgebraicGeometry.Space.isDecent_tfae_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeLocalCriteria.lean, line 672](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeLocalCriteria.lean#L672). The attribute's comment: “decent”.
 
 > For a morphism `f : X ⟶ Y` of algebraic spaces over `S` the four conditions of
 > `AlgebraicGeometry.Space.isDecent_tfae` are also equivalent to
@@ -606,7 +606,7 @@ theorem isDecent_tfae_etale (hX : IsAlgebraicSpace B S hS X)
           IsEtale B S hS g ∧ IsDecent B S hS (pullback.fst g f)]
 ```
 
-**`AlgebraicGeometry.Space.isReasonable_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeLocalCriteria.lean, line 700](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeLocalCriteria.lean#L700). The attribute's comment: “reasonable”.
+**`AlgebraicGeometry.Space.isReasonable_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeLocalCriteria.lean, line 701](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeLocalCriteria.lean#L701). The attribute's comment: “reasonable”.
 
 > For a morphism `f : X ⟶ Y` of algebraic spaces over `S` the following are equivalent:
 > `(1)` `f` is reasonable in the sense of Stacks 03KZ;
@@ -641,17 +641,17 @@ theorem isReasonable_tfae (hX : IsAlgebraicSpace B S hS X)
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Space.isDecent_of_isReasonable`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeConditionComparisons.lean#L108), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeConditionComparisons.lean, line 139](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeConditionComparisons.lean#L139) (StacksFrontier): “Remark 68.17.10, which states no proposition of its own: its comparative sentence, that being reasonable is a bit stronger than being decent, is sharp only as the implication `reasonable ⇒ decent` of Stacks 03M5, which is this theorem.”.
-- [`AlgebraicGeometry.Space.hasPropertyBeta_tfae`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeLocalCriteria.lean#L603), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeLocalCriteria.lean, line 728](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeLocalCriteria.lean#L728) (StacksFrontier): “Remark 68.17.10, which states no proposition of its own: its one mathematical sentence, that a morphism has one of the conditions of Stacks 03KZ when, in the source's words '(very) loosely speaking', the fibres of the morphism do, is disclaimed there as loose and is sharp only as Stacks 03L3 — here the case of property `(β)`.”.
-- [`AlgebraicGeometry.Space.isVeryReasonable_tfae`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeLocalCriteria.lean#L630), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeLocalCriteria.lean, line 734](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeLocalCriteria.lean#L734) (StacksFrontier): “Remark 68.17.10, which states no proposition of its own: its one mathematical sentence, that a morphism has one of the conditions of Stacks 03KZ when, in the source's words '(very) loosely speaking', the fibres of the morphism do, is disclaimed there as loose and is sharp only as Stacks 03L3 — here the case of very reasonableness.”.
-- [`AlgebraicGeometry.Space.isDecent_tfae_etale`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeLocalCriteria.lean#L671), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeLocalCriteria.lean, line 740](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeLocalCriteria.lean#L740) (StacksFrontier): “Remark 68.17.10, which states no proposition of its own: its one mathematical sentence, that a morphism has one of the conditions of Stacks 03KZ when, in the source's words '(very) loosely speaking', the fibres of the morphism do, is disclaimed there as loose and is sharp only as Stacks 03L3 — here the case of decency.”.
-- [`AlgebraicGeometry.Space.isReasonable_tfae`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeLocalCriteria.lean#L700), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeLocalCriteria.lean, line 746](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeLocalCriteria.lean#L746) (StacksFrontier): “Remark 68.17.10, which states no proposition of its own: its one mathematical sentence, that a morphism has one of the conditions of Stacks 03KZ when, in the source's words '(very) loosely speaking', the fibres of the morphism do, is disclaimed there as loose and is sharp only as Stacks 03L3 — here the case of reasonableness.”.
+- [`AlgebraicGeometry.Space.isDecent_of_isReasonable`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeConditionComparisons.lean#L108), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeConditionComparisons.lean, line 139](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeConditionComparisons.lean#L139) (StacksFrontier): “Remark 68.17.10, which states no proposition of its own: its comparative sentence, that being reasonable is a bit stronger than being decent, is sharp only as the implication `reasonable ⇒ decent` of Stacks 03M5, which is this theorem.”.
+- [`AlgebraicGeometry.Space.hasPropertyBeta_tfae`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeLocalCriteria.lean#L604), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeLocalCriteria.lean, line 729](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeLocalCriteria.lean#L729) (StacksFrontier): “Remark 68.17.10, which states no proposition of its own: its one mathematical sentence, that a morphism has one of the conditions of Stacks 03KZ when, in the source's words '(very) loosely speaking', the fibres of the morphism do, is disclaimed there as loose and is sharp only as Stacks 03L3 — here the case of property `(β)`.”.
+- [`AlgebraicGeometry.Space.isVeryReasonable_tfae`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeLocalCriteria.lean#L631), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeLocalCriteria.lean, line 735](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeLocalCriteria.lean#L735) (StacksFrontier): “Remark 68.17.10, which states no proposition of its own: its one mathematical sentence, that a morphism has one of the conditions of Stacks 03KZ when, in the source's words '(very) loosely speaking', the fibres of the morphism do, is disclaimed there as loose and is sharp only as Stacks 03L3 — here the case of very reasonableness.”.
+- [`AlgebraicGeometry.Space.isDecent_tfae_etale`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeLocalCriteria.lean#L672), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeLocalCriteria.lean, line 741](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeLocalCriteria.lean#L741) (StacksFrontier): “Remark 68.17.10, which states no proposition of its own: its one mathematical sentence, that a morphism has one of the conditions of Stacks 03KZ when, in the source's words '(very) loosely speaking', the fibres of the morphism do, is disclaimed there as loose and is sharp only as Stacks 03L3 — here the case of decency.”.
+- [`AlgebraicGeometry.Space.isReasonable_tfae`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeLocalCriteria.lean#L701), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeLocalCriteria.lean, line 747](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RelativeLocalCriteria.lean#L747) (StacksFrontier): “Remark 68.17.10, which states no proposition of its own: its one mathematical sentence, that a morphism has one of the conditions of Stacks 03KZ when, in the source's words '(very) loosely speaking', the fibres of the morphism do, is disclaimed there as loose and is sharp only as Stacks 03L3 — here the case of reasonableness.”.
 
 ## Tag 03M6, a lemma
 
 [Tag 03M6](https://stacks.math.columbia.edu/tag/03M6) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.universallyClosed_iff_valuativeCriterion_existence_of_isDecent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/UniversallyClosedValuative.lean, line 393](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/UniversallyClosedValuative.lean#L393).
+**`AlgebraicGeometry.Space.universallyClosed_iff_valuativeCriterion_existence_of_isDecent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/UniversallyClosedValuative.lean, line 393](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/UniversallyClosedValuative.lean#L393).
 
 > **Stacks 03M6.** A quasi-compact morphism of algebraic spaces over `S` which is decent as a
 > morphism is universally closed exactly when it satisfies the existence part of the valuative
@@ -678,4 +678,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 68.17, Tag 03KW](https://stacks.math.columbia.edu/tag/03KW)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

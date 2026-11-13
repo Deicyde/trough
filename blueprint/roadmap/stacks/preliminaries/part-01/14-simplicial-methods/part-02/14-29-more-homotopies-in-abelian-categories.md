@@ -8,13 +8,13 @@ proof: formalized
 
 # 14.29 More homotopies in abelian categories
 
-Section 14.29 of the Stacks Project, [Tag 01A1](https://stacks.math.columbia.edu/tag/01A1). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 14.29 of the Stacks Project, [Tag 01A1](https://stacks.math.columbia.edu/tag/01A1). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 01A2, a lemma
 
 [Tag 01A2](https://stacks.math.columbia.edu/tag/01A2) in the Stacks Project.
 
-**`HomologicalComplex.cylinder.exists_map_descEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/ChainHomotopyLift.lean, line 188](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialObject/ChainHomotopyLift.lean#L188).
+**`HomologicalComplex.cylinder.exists_map_descEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/ChainHomotopyLift.lean, line 188](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/ChainHomotopyLift.lean#L188).
 
 > **Stacks 01A2**.
 > Let `C` be an additive category and `c` a complex shape in which every index is the target of a
@@ -46,7 +46,7 @@ public theorem exists_map_descEquiv (hc : ∀ j, ∃ i, c.Rel i j) :
 
 [Tag 01A3](https://stacks.math.columbia.edu/tag/01A3) in the Stacks Project.
 
-**`CochainComplex.diamond.exists_unique_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/ChainHomotopyLift.lean, line 1260](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialObject/ChainHomotopyLift.lean#L1260).
+**`CochainComplex.diamond.exists_unique_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/ChainHomotopyLift.lean, line 1260](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/ChainHomotopyLift.lean#L1260).
 
 > **Stacks 01A3**.
 > Let `0 → A ⊕ A → B → Cpx → 0` be a short exact sequence of complexes, split in each degree by
@@ -79,7 +79,7 @@ theorem exists_unique_comparison
 
 [Tag 01A4](https://stacks.math.columbia.edu/tag/01A4) in the Stacks Project.
 
-**`CategoryTheory.SimplicialObject.exists_homotopy_of_homotopy_normalizedMooreComplex_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/ChainHomotopyLift.lean, line 800](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/SimplicialObject/ChainHomotopyLift.lean#L800). The attribute's comment: “the homotopy of 019K is presented by the family of components `h_{n + 1, i + 1} ∘ sⁿᵢ` it corresponds to under 019L, which is Mathlib's `SimplicialObject.Homotopy`, and out of which the chain homotopy `s(h)` of 019Q is built; `N(h)` is `s(h)` conjugated by the canonical splitting `N ⊆ s` of 019A”.
+**`CategoryTheory.SimplicialObject.exists_homotopy_of_homotopy_normalizedMooreComplex_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/SimplicialObject/ChainHomotopyLift.lean, line 800](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/SimplicialObject/ChainHomotopyLift.lean#L800). The attribute's comment: “the homotopy of 019K is presented by the family of components `h_{n + 1, i + 1} ∘ sⁿᵢ` it corresponds to under 019L, which is Mathlib's `SimplicialObject.Homotopy`, and out of which the chain homotopy `s(h)` of 019Q is built; `N(h)` is `s(h)` conjugated by the canonical splitting `N ⊆ s` of 019A”.
 
 > **Stacks 01A4**.
 > Let `a, b : U ⟶ V` be morphisms of simplicial objects of an abelian category and let `H` be a chain
@@ -107,4 +107,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 14.29, Tag 01A1](https://stacks.math.columbia.edu/tag/01A1)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

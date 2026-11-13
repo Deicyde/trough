@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.70 Projective dimension
 
-Section 15.70 of the Stacks Project, [Tag 0A5M](https://stacks.math.columbia.edu/tag/0A5M). 3 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.70 of the Stacks Project, [Tag 0A5M](https://stacks.math.columbia.edu/tag/0A5M). 3 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0A5N, a definition
 
 [Tag 0A5N](https://stacks.math.columbia.edu/tag/0A5N) in the Stacks Project.
 
-**`StacksDraft.ProjectiveDimension.HasProjectiveAmplitude`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/ProjectiveDimension/Amplitude.lean, line 48](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/ProjectiveDimension/Amplitude.lean#L48). The attribute's comment: “projective amplitude”.
+**`StacksDraft.ProjectiveDimension.HasProjectiveAmplitude`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/ProjectiveDimension/Amplitude.lean, line 48](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/ProjectiveDimension/Amplitude.lean#L48). The attribute's comment: “projective amplitude”.
 
 > An object of `D(R)` has **projective amplitude in `[a, b]`** if it is represented by a
 > complex of projective `R`-modules whose terms vanish outside degrees `a` through `b`.
@@ -24,7 +24,7 @@ public def HasProjectiveAmplitude
     (K : DerivedCategory (ModuleCat.{v} R)) (a b : ℤ) : Prop
 ```
 
-**`StacksDraft.ProjectiveDimension.HasFiniteProjectiveDimension`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/ProjectiveDimension/Amplitude.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/ProjectiveDimension/Amplitude.lean#L58). The attribute's comment: “finite projective dimension”.
+**`StacksDraft.ProjectiveDimension.HasFiniteProjectiveDimension`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/ProjectiveDimension/Amplitude.lean, line 58](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/ProjectiveDimension/Amplitude.lean#L58). The attribute's comment: “finite projective dimension”.
 
 > An object of `D(R)` has **finite projective dimension** if it is represented by a bounded
 > complex of projective `R`-modules.
@@ -38,7 +38,7 @@ public def HasFiniteProjectiveDimension
 
 [Tag 0A5P](https://stacks.math.columbia.edu/tag/0A5P) in the Stacks Project.
 
-**`StacksDraft.ProjectiveDimension.hasProjectiveAmplitude_iff_ext_vanishing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/ProjectiveDimension/Criteria.lean, line 464](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/ProjectiveDimension/Criteria.lean#L464).
+**`StacksDraft.ProjectiveDimension.hasProjectiveAmplitude_iff_ext_vanishing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/ProjectiveDimension/Criteria.lean, line 464](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/ProjectiveDimension/Criteria.lean#L464).
 
 > **Stacks 0A5P.** Projective amplitude in `[a, b]` is equivalent to vanishing of all Ext
 > groups outside degrees `[-b, -a]`; equivalently, it can be detected using upper cohomology
@@ -71,7 +71,7 @@ public theorem hasProjectiveAmplitude_iff_ext_vanishing [Small.{v} R]
 
 [Tag 0A5Q](https://stacks.math.columbia.edu/tag/0A5Q) in the Stacks Project.
 
-**`StacksDraft.ProjectiveDimension.dualNumber_quotient_eps_periodic_resolution_infinite_dimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/ProjectiveDimension/DualNumbers.lean, line 277](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/ProjectiveDimension/DualNumbers.lean#L277).
+**`StacksDraft.ProjectiveDimension.dualNumber_quotient_eps_periodic_resolution_infinite_dimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/ProjectiveDimension/DualNumbers.lean, line 277](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/ProjectiveDimension/DualNumbers.lean#L277).
 
 > **Stacks 0A5Q.** For the ring `R = k[ε]` of dual numbers over a field and `M = R/(ε)`, the
 > module `M` is represented by the periodic free complex with all differentials multiplication by
@@ -104,4 +104,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.70, Tag 0A5M](https://stacks.math.columbia.edu/tag/0A5M)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

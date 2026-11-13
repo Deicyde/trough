@@ -8,13 +8,13 @@ proof: formalized
 
 # 77.11 Universal flattening
 
-Section 77.11 of the Stacks Project, [Tag 0CWQ](https://stacks.math.columbia.edu/tag/0CWQ). 8 tags here are carried by 19 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 77.11 of the Stacks Project, [Tag 0CWQ](https://stacks.math.columbia.edu/tag/0CWQ). 8 tags here are carried by 19 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0CWR, a definition
 
 [Tag 0CWR](https://stacks.math.columbia.edu/tag/0CWR) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.FlatnessSituation.HasUniversalFlattening`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalFlattening.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversalFlattening.lean#L147). The attribute's comment: “the universal flattening of a module”.
+**`AlgebraicGeometry.Space.FlatnessSituation.HasUniversalFlattening`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalFlattening.lean, line 147](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UniversalFlattening.lean#L147). The attribute's comment: “the universal flattening of a module”.
 
 > **Stacks 0CWR.** The universal flattening of `F` exists when the flatness condition of
 > Stacks 0CWX is stable under base change and the functor `F_flat` it cuts out of `Y` is an
@@ -24,7 +24,7 @@ Section 77.11 of the Stacks Project, [Tag 0CWQ](https://stacks.math.columbia.edu
 def HasUniversalFlattening (D : FlatnessSituation.{u} B S hS) : Prop
 ```
 
-**`AlgebraicGeometry.Space.HasUniversalFlattening`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalFlattening.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversalFlattening.lean#L166). The attribute's comment: “the universal flattening of the space”.
+**`AlgebraicGeometry.Space.HasUniversalFlattening`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalFlattening.lean, line 166](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UniversalFlattening.lean#L166). The attribute's comment: “the universal flattening of the space”.
 
 > **Stacks 0CWR.** The universal flattening of an algebraic space `X` over `Y` exists when the
 > universal flattening of its structure sheaf `𝒪_X` does.
@@ -37,7 +37,7 @@ def HasUniversalFlattening {X Y : AlgebraicSpaces B S hS} (f : X ⟶ Y) : Prop
 
 [Tag 0CWS](https://stacks.math.columbia.edu/tag/0CWS) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isFlatOverInDimensionsGEOnSomeChartDiagram_iff_hasTrdegLt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleInDimensionsGE.lean, line 330](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleInDimensionsGE.lean#L330). The attribute's comment: “the equivalence of conditions (1) and (3)”.
+**`AlgebraicGeometry.Space.isFlatOverInDimensionsGEOnSomeChartDiagram_iff_hasTrdegLt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleInDimensionsGE.lean, line 330](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleInDimensionsGE.lean#L330). The attribute's comment: “the equivalence of conditions (1) and (3)”.
 
 > **Stacks 0CWS, conditions (1) and (3).** Flatness in dimensions `≥ n` on some commuting
 > square of surjective étale scheme charts is the bound `trdeg < n` at every point at which `F`
@@ -49,7 +49,7 @@ theorem isFlatOverInDimensionsGEOnSomeChartDiagram_iff_hasTrdegLt (n : ℕ) :
       HasTrdegLtAtNonflatPoints B S hS Xs.2 f.hom F n
 ```
 
-**`AlgebraicGeometry.Space.isFlatOverInDimensionsGEOnEveryChartDiagram_iff_hasTrdegLt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleInDimensionsGE.lean, line 344](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleInDimensionsGE.lean#L344). The attribute's comment: “the equivalence of conditions (2) and (3)”.
+**`AlgebraicGeometry.Space.isFlatOverInDimensionsGEOnEveryChartDiagram_iff_hasTrdegLt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleInDimensionsGE.lean, line 344](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleInDimensionsGE.lean#L344). The attribute's comment: “the equivalence of conditions (2) and (3)”.
 
 > **Stacks 0CWS, conditions (2) and (3).** Flatness in dimensions `≥ n` on every commuting
 > square of étale scheme charts is the bound `trdeg < n` at every point at which `F` is not flat
@@ -61,7 +61,7 @@ theorem isFlatOverInDimensionsGEOnEveryChartDiagram_iff_hasTrdegLt (n : ℕ) :
       HasTrdegLtAtNonflatPoints B S hS Xs.2 f.hom F n
 ```
 
-**`AlgebraicGeometry.Space.isFlatOverInDimensionsGEOnSomeChartDiagram_iff_onEveryChartDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleInDimensionsGE.lean, line 357](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleInDimensionsGE.lean#L357). The attribute's comment: “the equivalence of conditions (1) and (2)”.
+**`AlgebraicGeometry.Space.isFlatOverInDimensionsGEOnSomeChartDiagram_iff_onEveryChartDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleInDimensionsGE.lean, line 357](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleInDimensionsGE.lean#L357). The attribute's comment: “the equivalence of conditions (1) and (2)”.
 
 > **Stacks 0CWS, conditions (1) and (2).** Flatness in dimensions `≥ n` can be tested on one
 > commuting square of surjective étale scheme charts, and then holds on every commuting square of
@@ -73,7 +73,7 @@ theorem isFlatOverInDimensionsGEOnSomeChartDiagram_iff_onEveryChartDiagram (n : 
       IsFlatOverInDimensionsGEOnEveryChartDiagram B S hS Xs.2 f.hom F n
 ```
 
-**`AlgebraicGeometry.Space.isFlatOverInDimensionsGE_modulePullback_of_hasTrdegLt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleInDimensionsGE.lean, line 548](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleInDimensionsGE.lean#L548). The attribute's comment: “the base-change clause: if the transcendence degree over its image of every point at which the module is not flat over the target is < n -- condition (3) of the tag, written out -- then the inverse image of the module is flat over the new target in dimensions >= n”.
+**`AlgebraicGeometry.Space.isFlatOverInDimensionsGE_modulePullback_of_hasTrdegLt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleInDimensionsGE.lean, line 548](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleInDimensionsGE.lean#L548). The attribute's comment: “the base-change clause: if the transcendence degree over its image of every point at which the module is not flat over the target is < n -- condition (3) of the tag, written out -- then the inverse image of the module is flat over the new target in dimensions >= n”.
 
 > **Stacks 0CWS, the base-change clause.** Let `f : X ⟶ Y` be locally of finite type, let `F`
 > be quasi-coherent of finite type, and let the square be cartesian over a morphism `Y' ⟶ Y`.
@@ -115,7 +115,7 @@ theorem isFlatOverInDimensionsGE_modulePullback_of_hasTrdegLt
 
 [Tag 0CWT](https://stacks.math.columbia.edu/tag/0CWT) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsFlatOverInDimensionsGE`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleInDimensionsGE.lean, line 370](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleInDimensionsGE.lean#L370). The attribute's comment: “the definition, taken in the form of condition (2) of Stacks 0CWS; conditions (1) and (3) are interchangeable with it by `isFlatOverInDimensionsGEOnSomeChartDiagram_iff_onEveryChartDiagram` and `isFlatOverInDimensionsGEOnEveryChartDiagram_iff_hasTrdegLt`”.
+**`AlgebraicGeometry.Space.IsFlatOverInDimensionsGE`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleInDimensionsGE.lean, line 370](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FlatModuleInDimensionsGE.lean#L370). The attribute's comment: “the definition, taken in the form of condition (2) of Stacks 0CWS; conditions (1) and (3) are interchangeable with it by `isFlatOverInDimensionsGEOnSomeChartDiagram_iff_onEveryChartDiagram` and `isFlatOverInDimensionsGEOnEveryChartDiagram_iff_hasTrdegLt`”.
 
 > **Stacks 0CWT.** `F` is *flat over `Y` in dimensions `≥ n`*. The source defines this by the
 > equivalent conditions of Stacks 0CWS; condition (2) is taken as the definition, and the three
@@ -129,7 +129,7 @@ abbrev IsFlatOverInDimensionsGE (n : ℕ) : Prop
 
 [Tag 0CWU](https://stacks.math.columbia.edu/tag/0CWU) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.FlatDimensionSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatDimensionFunctor.lean, line 144](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FlatDimensionFunctor.lean#L144). The attribute's comment: “standing data”.
+**`AlgebraicGeometry.Space.FlatDimensionSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatDimensionFunctor.lean, line 144](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FlatDimensionFunctor.lean#L144). The attribute's comment: “standing data”.
 
 > **Situation 0CWU.** The standing data of Situation 0CWU: the flatness situation of
 > Stacks 0CWX — a morphism `f : X ⟶ Y` of algebraic spaces over `S` and a quasi-coherent
@@ -139,7 +139,7 @@ abbrev IsFlatOverInDimensionsGE (n : ℕ) : Prop
 structure FlatDimensionSituation extends FlatnessSituation.{u} B S hS
 ```
 
-**`AlgebraicGeometry.Space.FlatDimensionSituation.isLocallyOfFiniteType_baseChangeInclusion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatDimensionFunctor.lean, line 165](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FlatDimensionFunctor.lean#L165). The attribute's comment: “the base-changed morphism is locally of finite type; corrected from the source's "of finite type", which does not follow from its hypothesis that f is only locally of finite type”.
+**`AlgebraicGeometry.Space.FlatDimensionSituation.isLocallyOfFiniteType_baseChangeInclusion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatDimensionFunctor.lean, line 165](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FlatDimensionFunctor.lean#L165). The attribute's comment: “the base-changed morphism is locally of finite type; corrected from the source's "of finite type", which does not follow from its hypothesis that f is only locally of finite type”.
 
 > **Situation 0CWU, the first observation.** The base change `f_T : X_T ⟶ T` of a locally
 > finite type morphism to a test scheme is again locally of finite type. This is **Stacks 03XH**,
@@ -156,7 +156,7 @@ theorem isLocallyOfFiniteType_baseChangeInclusion (D : FlatDimensionSituation.{u
     IsLocallyOfFiniteType B S hS (baseChangeInclusion D.f T).hom
 ```
 
-**`AlgebraicGeometry.Space.FlatDimensionSituation.isFiniteTypeOnSite_baseChangeModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatDimensionFunctor.lean, line 178](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FlatDimensionFunctor.lean#L178). The attribute's comment: “the base-changed module is of finite type”.
+**`AlgebraicGeometry.Space.FlatDimensionSituation.isFiniteTypeOnSite_baseChangeModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatDimensionFunctor.lean, line 178](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FlatDimensionFunctor.lean#L178). The attribute's comment: “the base-changed module is of finite type”.
 
 > **Situation 0CWU, the second observation.** The base change `F_T` of a finite type module to
 > a test scheme is again of finite type. This is **Stacks 03DO** for the inverse image of
@@ -168,7 +168,7 @@ theorem isFiniteTypeOnSite_baseChangeModule (D : FlatDimensionSituation.{u} B S 
     SheafOfModules.IsFiniteTypeOnSite (D.toFlatnessSituation.baseChangeModule T)
 ```
 
-**`AlgebraicGeometry.Space.FlatDimensionSituation.flatDimensionFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatDimensionFunctor.lean, line 236](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FlatDimensionFunctor.lean#L236). The attribute's comment: “the functor F\_n of equation 0CWV”.
+**`AlgebraicGeometry.Space.FlatDimensionSituation.flatDimensionFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatDimensionFunctor.lean, line 236](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FlatDimensionFunctor.lean#L236). The attribute's comment: “the functor F\_n of equation 0CWV”.
 
 > **Equation 0CWV, the functor `F_n` of Situation 0CWU**: the functor on the test schemes
 > over `Y` whose value at `T` is a one-point set when `F_T` is flat over `T` in dimensions `≥ n`,
@@ -187,7 +187,7 @@ def flatDimensionFunctor (D : FlatDimensionSituation.{u} B S hS) (n : ℕ) :
 
 [Tag 0CWW](https://stacks.math.columbia.edu/tag/0CWW) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.FlatDimensionSituation.flatDimensionFunctor_isSheaf_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatDimensionFunctorDescent.lean, line 385](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FlatDimensionFunctorDescent.lean#L385). The attribute's comment: “clause (1): in Situation 0CWU the functor F\_n of equation 0CWV is a sheaf for the fpqc topology on the test schemes over Y. Proved for every situation of the tag, from nothing but the data of Situation 0CWU: the functor is subterminal, so its sheaf property is fpqc locality of the condition of Stacks 0CWT on the base change, and that locality is the pointwise descent of condition (3) of Stacks 0CWS along the jointly surjective flat family a covering sieve contains”.
+**`AlgebraicGeometry.Space.FlatDimensionSituation.flatDimensionFunctor_isSheaf_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatDimensionFunctorDescent.lean, line 385](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FlatDimensionFunctorDescent.lean#L385). The attribute's comment: “clause (1): in Situation 0CWU the functor F\_n of equation 0CWV is a sheaf for the fpqc topology on the test schemes over Y. Proved for every situation of the tag, from nothing but the data of Situation 0CWU: the functor is subterminal, so its sheaf property is fpqc locality of the condition of Stacks 0CWT on the base change, and that locality is the pointwise descent of condition (3) of Stacks 0CWS along the jointly surjective flat family a covering sieve contains”.
 
 > **Stacks 0CWW, clause (1).** In Situation 0CWU the functor `F_n` of equation 0CWV satisfies
 > the sheaf property for the fpqc topology on the test schemes over `Y`.
@@ -201,7 +201,7 @@ theorem flatDimensionFunctor_isSheaf_fpqc (D : FlatDimensionSituation.{u} B S hS
     Presheaf.IsSheaf (fpqcTopology D.Y) (D.flatDimensionFunctor n)
 ```
 
-**`AlgebraicGeometry.Space.FlatDimensionSituation.flatDimensionFunctor_limitPreserving`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatDimensionFunctorDescent.lean, line 526](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FlatDimensionFunctorDescent.lean#L526). The attribute's comment: “clause (2), limit preservation of F\_n”.
+**`AlgebraicGeometry.Space.FlatDimensionSituation.flatDimensionFunctor_limitPreserving`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatDimensionFunctorDescent.lean, line 526](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FlatDimensionFunctorDescent.lean#L526). The attribute's comment: “clause (2), limit preservation of F\_n”.
 
 > **Stacks 0CWW, clause (2).** In Situation 0CWU, if `f` is quasi-compact and locally of
 > finite presentation and `ℱ` is of finite presentation, then the functor `F_n` of equation 0CWV
@@ -255,7 +255,7 @@ theorem flatDimensionFunctor_limitPreserving
 
 [Tag 0CX0](https://stacks.math.columbia.edu/tag/0CX0) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.FlatDimensionSituation.mono_etalePullbackComparison_and_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatDimensionFunctorEtale.lean, line 411](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FlatDimensionFunctorEtale.lean#L411). The attribute's comment: “the full statement at the source's hypotheses, nothing granted or assumed: Situation 0CWU (f locally of finite type, F quasi-coherent of finite type) and h etale only. 'F\_n is a subfunctor of F'\_n' is that the canonical natural transformation F\_n -> F'\_n between these subterminal functors is a monomorphism, and 'F\_n = F'\_n' is that it is an isomorphism. Ass\_\{X/Y}(F) is the relative weak assassin of Stacks 0CV0, which the source writes Ass\_\{X/Y}(F) as the fibres of f are locally Noetherian, and h(X') is the image of |X'| -> |X|”.
+**`AlgebraicGeometry.Space.FlatDimensionSituation.mono_etalePullbackComparison_and_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatDimensionFunctorEtale.lean, line 411](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FlatDimensionFunctorEtale.lean#L411). The attribute's comment: “Full statement under Situation 0CWU (f locally of finite type, F quasi-coherent of finite type) with h etale, both clauses. 'F\_n is a subfunctor of F'\_n' is that the canonical natural transformation F\_n -> F'\_n between these subterminal functors is a monomorphism, and 'F\_n = F'\_n' is that it is an isomorphism. Ass\_\{X/Y}(F) is the relative weak assassin of Stacks 0CV0, which the source writes Ass\_\{X/Y}(F) as the fibres of f are locally Noetherian, and h(X') is the image of |X'| -> |X|”.
 
 > **Stacks 0CX0.** In Situation 0CWU, let `h : X' ⟶ X` be an étale morphism, set `F' = h^* F`
 > and `f' = f ∘ h`, and let `F'_n` be the functor of equation 0CWV for `(f' : X' ⟶ Y, F')`. Then
@@ -275,7 +275,7 @@ theorem mono_etalePullbackComparison_and_isIso (n : ℕ) :
 
 [Tag 0CX1](https://stacks.math.columbia.edu/tag/0CX1) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.FlatDimensionSituation.isAlgebraicSpace_flatDimensionSubfunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatDimensionFunctorRepresentable.lean, line 277](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FlatDimensionFunctorRepresentable.lean#L277). The attribute's comment: “the full statement under exactly the source's hypotheses, nothing granted or assumed: F\_n is the subfunctor of Y of the maps T ⟶ Y along which F\_T is flat in dimensions ≥ n (equation 0CWV); purity relative to Y is purity above every point of Y (Stacks 0CVD (5)); finite presentation of f is local finite presentation, quasi-compactness and quasi-separatedness (Stacks 03XP (3))”.
+**`AlgebraicGeometry.Space.FlatDimensionSituation.isAlgebraicSpace_flatDimensionSubfunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatDimensionFunctorRepresentable.lean, line 276](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FlatDimensionFunctorRepresentable.lean#L276). The attribute's comment: “the full statement under exactly the source's hypotheses: F\_n is the subfunctor of Y of the maps T ⟶ Y along which F\_T is flat in dimensions ≥ n (equation 0CWV); purity relative to Y is purity above every point of Y (Stacks 0CVD (5)); finite presentation of f is local finite presentation, quasi-compactness and quasi-separatedness (Stacks 03XP (3))”.
 
 > **Stacks Project, Tag 0CX1.** In Situation 0CWU, assume moreover that `f` is of finite
 > presentation, that `F` is an `𝒪_X`-module of finite presentation, and that `F` is pure relative
@@ -301,7 +301,7 @@ theorem isAlgebraicSpace_flatDimensionSubfunctor (n : ℕ)
 
 [Tag 0CX2](https://stacks.math.columbia.edu/tag/0CX2) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.FlatnessSituation.hasUniversalFlattening_of_isPureAbove`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalFlatteningExistence.lean, line 115](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversalFlatteningExistence.lean#L115). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.Space.FlatnessSituation.hasUniversalFlattening_of_isPureAbove`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalFlatteningExistence.lean, line 115](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UniversalFlatteningExistence.lean#L115). The attribute's comment: “part (1)”.
 
 > **Stacks 0CX2, part (1).** Let `f : X ⟶ Y` be a morphism of algebraic spaces of finite
 > presentation and let `F` be a quasi-coherent `𝒪_X`-module of finite presentation which is pure
@@ -321,7 +321,7 @@ theorem hasUniversalFlattening_of_isPureAbove (D : FlatnessSituation.{u} B S hS)
       IsFinitePresentation B S hS (D.flatSubfunctor D.isFlatStableUnderBaseChange).ι
 ```
 
-**`AlgebraicGeometry.Space.FlatnessSituation.hasUniversalFlattening_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalFlatteningExistence.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversalFlatteningExistence.lean#L135). The attribute's comment: “part (3)”.
+**`AlgebraicGeometry.Space.FlatnessSituation.hasUniversalFlattening_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalFlatteningExistence.lean, line 135](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UniversalFlatteningExistence.lean#L135). The attribute's comment: “part (3)”.
 
 > **Stacks 0CX2, part (3).** Let `f : X ⟶ Y` be a proper morphism of algebraic spaces of finite
 > presentation and let `F` be a quasi-coherent `𝒪_X`-module of finite presentation. Then the
@@ -339,7 +339,7 @@ theorem hasUniversalFlattening_of_isProper (D : FlatnessSituation.{u} B S hS)
       IsFinitePresentation B S hS (D.flatSubfunctor D.isFlatStableUnderBaseChange).ι
 ```
 
-**`AlgebraicGeometry.Space.hasUniversalFlattening_of_isPureAbove_structure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalFlatteningExistence.lean, line 158](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversalFlatteningExistence.lean#L158). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.Space.hasUniversalFlattening_of_isPureAbove_structure`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalFlatteningExistence.lean, line 158](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UniversalFlatteningExistence.lean#L158). The attribute's comment: “part (2)”.
 
 > **Stacks 0CX2, part (2).** Let `f : X ⟶ Y` be a morphism of algebraic spaces of finite
 > presentation such that `X` is pure relative to `Y`, that is, `𝒪_X` is pure above every point
@@ -361,7 +361,7 @@ theorem hasUniversalFlattening_of_isPureAbove_structure {X Y : AlgebraicSpaces B
         (structureSheafFlatnessSituation f).isFlatStableUnderBaseChange).ι
 ```
 
-**`AlgebraicGeometry.Space.hasUniversalFlattening_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalFlatteningExistence.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/UniversalFlatteningExistence.lean#L176). The attribute's comment: “part (4)”.
+**`AlgebraicGeometry.Space.hasUniversalFlattening_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/UniversalFlatteningExistence.lean, line 176](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/UniversalFlatteningExistence.lean#L176). The attribute's comment: “part (4)”.
 
 > **Stacks 0CX2, part (4).** Let `f : X ⟶ Y` be a proper morphism of algebraic spaces of finite
 > presentation. Then the universal flattening of `X` exists.
@@ -381,4 +381,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 77.11, Tag 0CWQ](https://stacks.math.columbia.edu/tag/0CWQ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

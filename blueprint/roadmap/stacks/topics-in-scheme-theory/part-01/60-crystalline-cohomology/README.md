@@ -1,6 +1,6 @@
 # 60 Crystalline Cohomology
 
-Chapter 60 of the Stacks Project, *Crystalline Cohomology*, [Tag 07GI](https://stacks.math.columbia.edu/tag/07GI): the 25 sections of its 26 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 124 tags are carried by 517 declarations of the repository (all in StacksFrontier) and 11 registered declarations.
+Chapter 60 of the Stacks Project, *Crystalline Cohomology*, [Tag 07GI](https://stacks.math.columbia.edu/tag/07GI): the 25 sections of its 26 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 124 tags are carried by 510 declarations of the repository (all in StacksFrontier) and 11 registered declarations.
 
 ## [60.2 Divided power envelope to 60.12 Sheaf of differentials](part-01/README.md)
 

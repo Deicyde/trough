@@ -8,13 +8,13 @@ proof: formalized
 
 # 54.13 Implied properties
 
-Section 54.13 of the Stacks Project, [Tag 0BGF](https://stacks.math.columbia.edu/tag/0BGF). 3 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 54.13 of the Stacks Project, [Tag 0BGF](https://stacks.math.columbia.edu/tag/0BGF). 3 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0BGG, a lemma
 
 [Tag 0BGG](https://stacks.math.columbia.edu/tag/0BGG) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_dense_open_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ImpliedProperties/Basic.lean, line 45](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ImpliedProperties/Basic.lean#L45). The attribute's comment: “dense\_regular\_open”.
+**`AlgebraicGeometry.exists_dense_open_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ImpliedProperties/Basic.lean, line 45](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ImpliedProperties/Basic.lean#L45). The attribute's comment: “dense\_regular\_open”.
 
 > An integral locally Noetherian scheme admitting an alteration by a regular scheme has a
 > dense regular open subscheme.
@@ -27,7 +27,7 @@ theorem exists_dense_open_isRegular
     ∃ V : Y.Opens, Dense (V : Set Y) ∧ IsRegular V
 ```
 
-**`AlgebraicGeometry.normalization_isFinite_of_regular_alteration`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ImpliedProperties/FiniteNormalization.lean, line 207](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ImpliedProperties/FiniteNormalization.lean#L207). The attribute's comment: “finiteness of the normalization”.
+**`AlgebraicGeometry.normalization_isFinite_of_regular_alteration`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ImpliedProperties/FiniteNormalization.lean, line 207](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ImpliedProperties/FiniteNormalization.lean#L207). The attribute's comment: “finiteness of the normalization”.
 
 > **The normalization of an integral locally Noetherian scheme admitting an alteration by a
 > regular scheme is finite.** This is the first assertion of [Stacks, Tag 0BGG]. The one input of
@@ -59,7 +59,7 @@ theorem normalization_isFinite_of_regular_alteration
 
 [Tag 0BGH](https://stacks.math.columbia.edu/tag/0BGH) in the Stacks Project.
 
-**`isNormalRing_adicCompletion_of_finite_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AdicCompletion/Normal.lean, line 253](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/AdicCompletion/Normal.lean#L253).
+**`isNormalRing_adicCompletion_of_finite_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AdicCompletion/Normal.lean, line 253](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/AdicCompletion/Normal.lean#L253).
 
 > **Stacks Project, Tag 0BGH.** Let `A` be a Noetherian local ring and `B ⊆ C` finite
 > `A`-algebras. If `B` and the `m_A`-adic completion of `C` are normal, then the `m_A`-adic
@@ -82,7 +82,7 @@ theorem isNormalRing_adicCompletion_of_finite_injective
 
 [Tag 0BGI](https://stacks.math.columbia.edu/tag/0BGI) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isRegularRing_localizationAway_of_regular_alteration`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ImpliedProperties/LocalDomain.lean, line 421](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ImpliedProperties/LocalDomain.lean#L421). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.exists_isRegularRing_localizationAway_of_regular_alteration`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ImpliedProperties/LocalDomain.lean, line 421](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ImpliedProperties/LocalDomain.lean#L421). The attribute's comment: “part (1)”.
 
 > **A Noetherian local domain admitting an alteration by a regular scheme is regular after
 > inverting one nonzero element.** This is part (1) of [Stacks, Tag 0BGI]: the dense regular open
@@ -95,7 +95,7 @@ theorem exists_isRegularRing_localizationAway_of_regular_alteration
     ∃ a : A, a ≠ 0 ∧ IsRegularRing (Localization.Away a)
 ```
 
-**`AlgebraicGeometry.module_finite_integralClosure_of_regular_alteration`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ImpliedProperties/LocalDomain.lean, line 436](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ImpliedProperties/LocalDomain.lean#L436). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.module_finite_integralClosure_of_regular_alteration`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ImpliedProperties/LocalDomain.lean, line 436](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ImpliedProperties/LocalDomain.lean#L436). The attribute's comment: “part (2)”.
 
 > **The integral closure of a Noetherian local domain admitting an alteration by a regular
 > scheme is a finite module over it.** This is part (2) of [Stacks, Tag 0BGI]: the global sections
@@ -111,7 +111,7 @@ theorem module_finite_integralClosure_of_regular_alteration
     Module.Finite A ↥(integralClosure A (FractionRing A))
 ```
 
-**`AlgebraicGeometry.isNormalRing_adicCompletion_integralClosure_of_regular_alteration`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ImpliedProperties/LocalDomain.lean, line 456](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ImpliedProperties/LocalDomain.lean#L456). The attribute's comment: “part (3)”.
+**`AlgebraicGeometry.isNormalRing_adicCompletion_integralClosure_of_regular_alteration`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ImpliedProperties/LocalDomain.lean, line 456](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ImpliedProperties/LocalDomain.lean#L456). The attribute's comment: “part (3)”.
 
 > **The completion of the integral closure is normal.** This is part (3) of
 > [Stacks, Tag 0BGI]. With `C = Γ(X, 𝒪_X)` and `B` the integral closure of `A` in `Frac(A)`, the
@@ -131,7 +131,7 @@ theorem isNormalRing_adicCompletion_integralClosure_of_regular_alteration
         ↥(integralClosure A (FractionRing A)))
 ```
 
-**`AlgebraicGeometry.isRegularRing_genericFormalFibre_of_regular_alteration`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ImpliedProperties/LocalDomain.lean, line 501](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ImpliedProperties/LocalDomain.lean#L501). The attribute's comment: “part (4)”. References: EGA IV (7.9.3), “domain case”.
+**`AlgebraicGeometry.isRegularRing_genericFormalFibre_of_regular_alteration`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ImpliedProperties/LocalDomain.lean, line 501](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/ImpliedProperties/LocalDomain.lean#L501). The attribute's comment: “part (4)”. References: EGA IV (7.9.3), “domain case”.
 
 > **The generic formal fibre of a Noetherian local domain admitting an alteration by a regular
 > scheme is regular.** This is part (4) of [Stacks, Tag 0BGI]. Taking an affine open `U ⊆ X` around
@@ -154,4 +154,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 54.13, Tag 0BGF](https://stacks.math.columbia.edu/tag/0BGF)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.26 Flatness and finiteness conditions
 
-Section 15.26 of the Stacks Project, [Tag 054A](https://stacks.math.columbia.edu/tag/054A). 7 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.26 of the Stacks Project, [Tag 054A](https://stacks.math.columbia.edu/tag/054A). 7 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 053A, a lemma
 
 [Tag 053A](https://stacks.math.columbia.edu/tag/053A) in the Stacks Project.
 
-**`Module.finitePresentation_of_flat_of_localized`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/Finiteness.lean, line 299](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/Finiteness.lean#L299).
+**`Module.finitePresentation_of_flat_of_localized`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/Finiteness.lean, line 299](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/Finiteness.lean#L299).
 
 > **Stacks Tag 053A.** Let `S = R[x₁, …, x_n]` and let `M` be a finite `S`-module which is flat
 > over `R`.  If finitely many prime localizations jointly detect elements of `R` and `M` is
@@ -41,7 +41,7 @@ theorem Module.finitePresentation_of_flat_of_localized
 
 [Tag 053B](https://stacks.math.columbia.edu/tag/053B) in the Stacks Project.
 
-**`Algebra.FinitePresentation.of_flat_of_localized`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/Finiteness.lean, line 358](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/Finiteness.lean#L358).
+**`Algebra.FinitePresentation.of_flat_of_localized`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/Finiteness.lean, line 358](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/Finiteness.lean#L358).
 
 > **Stacks Tag 053B.** Let `R → S` be a flat ring map of finite type.  Suppose finitely many
 > prime localizations jointly detect elements of `R`, and that for every prime `p` of `R` the
@@ -63,7 +63,7 @@ theorem Algebra.FinitePresentation.of_flat_of_localized
 
 [Tag 053C](https://stacks.math.columbia.edu/tag/053C) in the Stacks Project.
 
-**`finitePresentation_of_finite_flat_of_isLocalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/GradedFinitePresentation.lean, line 1056](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/GradedFinitePresentation.lean#L1056). References: EGA IV (11.2.9.4), “special case”; SGA 6 VI (1.6), “partial”.
+**`finitePresentation_of_finite_flat_of_isLocalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/GradedFinitePresentation.lean, line 1056](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/GradedFinitePresentation.lean#L1056). References: EGA IV (11.2.9.4), “special case”; SGA 6 VI (1.6), “partial”.
 
 > **Stacks Tag 053C.** Let `R` be a local ring and let
 > `S = MvPolynomial (Fin n) R = R[x_1, ..., x_n]` be the graded polynomial algebra
@@ -96,7 +96,7 @@ theorem finitePresentation_of_finite_flat_of_isLocalRing
 
 [Tag 053D](https://stacks.math.columbia.edu/tag/053D) in the Stacks Project.
 
-**`finitePresentation_of_flat_of_finiteType_of_finite_degreeZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/Finiteness.lean, line 797](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/Finiteness.lean#L797). References: EGA IV (11.2.9.4), “Module clause”.
+**`finitePresentation_of_flat_of_finiteType_of_finite_degreeZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/Finiteness.lean, line 796](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/Finiteness.lean#L796). References: EGA IV (11.2.9.4), “Module clause”.
 
 > **Stacks Tag 053D.** Let `S = ⨁_d 𝒜 d` be a nonnegatively graded `R`-algebra of finite type
 > whose degree-zero part is finite over `R`, and suppose a finite family of prime localizations
@@ -120,7 +120,7 @@ theorem finitePresentation_of_flat_of_finiteType_of_finite_degreeZero
 
 [Tag 05GS](https://stacks.math.columbia.edu/tag/05GS) in the Stacks Project.
 
-**`hasFiniteDetectingPrimes_of_standard_conditions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/Finiteness.lean, line 1297](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/Finiteness.lean#L1297).
+**`hasFiniteDetectingPrimes_of_standard_conditions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/Finiteness.lean, line 1296](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/Finiteness.lean#L1296).
 
 > **Stacks Tag 05GS.** Let `R` be a commutative ring.  If `R` is local, Noetherian, a domain,
 > reduced with finitely many minimal primes, or has finitely many weakly associated primes, then
@@ -140,7 +140,7 @@ theorem hasFiniteDetectingPrimes_of_standard_conditions
 
 [Tag 053E](https://stacks.math.columbia.edu/tag/053E) in the Stacks Project.
 
-**`finitePresentation_of_flat_of_finiteType_of_valuationRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/Finiteness.lean, line 1174](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/Finiteness.lean#L1174).
+**`finitePresentation_of_flat_of_finiteType_of_valuationRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/Finiteness.lean, line 1173](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/Finiteness.lean#L1173).
 
 > **Stacks Tag 053E (Nagata).** Let `A` be a valuation ring, `B` an `A`-algebra of finite type,
 > and `M` a `B`-module.  If `B` is flat over `A`, then `B` is finitely presented as an
@@ -160,7 +160,7 @@ theorem finitePresentation_of_flat_of_finiteType_of_valuationRing
 
 [Tag 0GSE](https://stacks.math.columbia.edu/tag/0GSE) in the Stacks Project.
 
-**`essentiallyOfFinitePresentation_and_finitePresentation_of_flat_of_valuationRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/Finiteness.lean, line 1229](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/Finiteness.lean#L1229).
+**`essentiallyOfFinitePresentation_and_finitePresentation_of_flat_of_valuationRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/Finiteness.lean, line 1228](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/Finiteness.lean#L1228).
 
 > **Stacks Tag 0GSE.** Let `A` be a valuation ring, `B` an essentially-of-finite-type
 > `A`-algebra, and `M` a `B`-module.  If `B` is flat over `A`, then `A → B` is essentially of
@@ -183,4 +183,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.26, Tag 054A](https://stacks.math.columbia.edu/tag/054A)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

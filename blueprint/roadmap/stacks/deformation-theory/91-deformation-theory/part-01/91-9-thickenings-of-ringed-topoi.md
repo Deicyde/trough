@@ -8,13 +8,13 @@ proof: formalized
 
 # 91.9 Thickenings of ringed topoi
 
-Section 91.9 of the Stacks Project, [Tag 08M6](https://stacks.math.columbia.edu/tag/08M6). 2 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 91.9 of the Stacks Project, [Tag 08M6](https://stacks.math.columbia.edu/tag/08M6). 2 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 08M7, a situation
 
 [Tag 08M7](https://stacks.math.columbia.edu/tag/08M7) in the Stacks Project.
 
-**`Deformation.ToposThickening.IsThickening`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/MorphismOfThickenings.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/MorphismOfThickenings.lean#L119). The attribute's comment: “the horizontal arrows are thickenings”.
+**`Deformation.ToposThickening.IsThickening`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/MorphismOfThickenings.lean, line 119](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/MorphismOfThickenings.lean#L119). The attribute's comment: “the horizontal arrows are thickenings”.
 
 > **Stacks 08M7.** A thickening of ringed topoi: the underlying geometric morphism is an
 > equivalence of topoi, the structure map is locally surjective, and its kernel ideal is locally
@@ -25,7 +25,7 @@ Section 91.9 of the Stacks Project, [Tag 08M6](https://stacks.math.columbia.edu/
 def IsThickening (i : RingedToposHom X Y) : Prop
 ```
 
-**`Deformation.ToposThickening.IdealOfThickening`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/MorphismOfThickenings.lean, line 127](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/MorphismOfThickenings.lean#L127). The attribute's comment: “the defining ideal of a thickening”.
+**`Deformation.ToposThickening.IdealOfThickening`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/MorphismOfThickenings.lean, line 127](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/MorphismOfThickenings.lean#L127). The attribute's comment: “the defining ideal of a thickening”.
 
 > **Stacks 08M7.** The defining ideal `I = Ker(i^♯) ⊂ O'` of a thickening `i`, presented as a
 > sheaf of `O'`-modules together with an inclusion into `O'` whose sections are exactly the
@@ -35,7 +35,7 @@ def IsThickening (i : RingedToposHom X Y) : Prop
 structure IdealOfThickening (i : RingedToposHom X Y)
 ```
 
-**`Deformation.ToposThickening.IsThickening.of_firstOrderThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/MorphismOfThickenings.lean, line 194](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/MorphismOfThickenings.lean#L194). The attribute's comment: “a first order thickening is a thickening”.
+**`Deformation.ToposThickening.IsThickening.of_firstOrderThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/MorphismOfThickenings.lean, line 194](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/MorphismOfThickenings.lean#L194). The attribute's comment: “a first order thickening is a thickening”.
 
 > **Stacks 08M7.** A first order thickening of ringed topoi in the sense of Stacks 08MB is a
 > thickening: its structure map is locally surjective by assumption and its square-zero kernel is
@@ -46,7 +46,7 @@ theorem IsThickening.of_firstOrderThickening {i : RingedToposHom X Y}
     (h : FirstOrderThickening i) : IsThickening i
 ```
 
-**`Deformation.ToposThickening.IsFirstOrderThickening`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/MorphismOfThickenings.lean, line 203](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/MorphismOfThickenings.lean#L203). The attribute's comment: “first order thickening, as a property”.
+**`Deformation.ToposThickening.IsFirstOrderThickening`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/MorphismOfThickenings.lean, line 203](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/MorphismOfThickenings.lean#L203). The attribute's comment: “first order thickening, as a property”.
 
 > **Stacks 08M7.** A first order thickening of ringed topoi, as a property of a morphism: a
 > thickening whose kernel ideal is square zero. This is the predicate form of the structure
@@ -57,7 +57,7 @@ theorem IsThickening.of_firstOrderThickening {i : RingedToposHom X Y}
 def IsFirstOrderThickening (i : RingedToposHom X Y) : Prop
 ```
 
-**`Deformation.ToposThickening.IsFirstOrderThickening.of_firstOrderThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/MorphismOfThickenings.lean, line 215](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/MorphismOfThickenings.lean#L215). The attribute's comment: “08MB implies the property”.
+**`Deformation.ToposThickening.IsFirstOrderThickening.of_firstOrderThickening`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/MorphismOfThickenings.lean, line 215](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/MorphismOfThickenings.lean#L215). The attribute's comment: “08MB implies the property”.
 
 > **Stacks 08M7.** A first order thickening in the sense of Stacks 08MB has the property of
 > being a first order thickening: its kernel is the square-zero ideal it names.
@@ -67,7 +67,7 @@ theorem IsFirstOrderThickening.of_firstOrderThickening {i : RingedToposHom X Y}
     (h : FirstOrderThickening i) : IsFirstOrderThickening i
 ```
 
-**`Deformation.ToposThickening.MorphismOfThickenings`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/MorphismOfThickenings.lean, line 236](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/MorphismOfThickenings.lean#L236). The attribute's comment: “the commutative square”.
+**`Deformation.ToposThickening.MorphismOfThickenings`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/MorphismOfThickenings.lean, line 236](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/MorphismOfThickenings.lean#L236). The attribute's comment: “the commutative square”.
 
 > **Stacks 08M7.** A morphism of thickenings of ringed topoi: a commutative square of
 > morphisms of ringed topoi whose horizontal arrows `i` and `t` are thickenings, together with
@@ -77,7 +77,7 @@ theorem IsFirstOrderThickening.of_firstOrderThickening {i : RingedToposHom X Y}
 structure MorphismOfThickenings
 ```
 
-**`Deformation.ToposThickening.MorphismOfThickenings.firstOrderSurjection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/MorphismOfThickeningsFirstOrder.lean, line 314](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/MorphismOfThickeningsFirstOrder.lean#L314). The attribute's comment: “the first order reduction of the pullback of the lower ideal; the two upper topoi share their section universe, as the closed immersion carried by AlgebraicGeometry.ClosedRingedImmersion requires, the two lower ones staying independent”.
+**`Deformation.ToposThickening.MorphismOfThickenings.firstOrderSurjection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/MorphismOfThickeningsFirstOrder.lean, line 314](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/MorphismOfThickeningsFirstOrder.lean#L314). The attribute's comment: “the first order reduction of the pullback of the lower ideal; the two upper topoi share their section universe, as the closed immersion carried by AlgebraicGeometry.ClosedRingedImmersion requires, the two lower ones staying independent”.
 
 > **Stacks 08M7.** The canonical reduction map `(f')^*J ⟶ f^*J` of a morphism of thickenings of
 > ringed topoi, with the target read as the `O'`-module `i_*f^*t^*J`: the unit of `i^* ⊣ i_*`,
@@ -112,7 +112,7 @@ noncomputable def firstOrderSurjection :
     (pullbackModules D.f'.toModulesHom).obj D.idealJ.I ⟶ D.reducedPullbackIdeal
 ```
 
-**`Deformation.ToposThickening.MorphismOfThickenings.firstOrderSurjection_epi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/MorphismOfThickeningsFirstOrder.lean, line 330](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/MorphismOfThickeningsFirstOrder.lean#L330). The attribute's comment: “surjectivity of the first order reduction; the two upper topoi share their section universe, as the closed immersion carried by AlgebraicGeometry.ClosedRingedImmersion requires, the two lower ones staying independent”.
+**`Deformation.ToposThickening.MorphismOfThickenings.firstOrderSurjection_epi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/MorphismOfThickeningsFirstOrder.lean, line 330](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/MorphismOfThickeningsFirstOrder.lean#L330). The attribute's comment: “surjectivity of the first order reduction; the two upper topoi share their section universe, as the closed immersion carried by AlgebraicGeometry.ClosedRingedImmersion requires, the two lower ones staying independent”.
 
 > **Stacks 08M7.** When both thickenings are first order the canonical reduction map
 > `(f')^*J ⟶ f^*J` is surjective: the unit of `i^* ⊣ i_*` is an epimorphism at every module, and
@@ -126,7 +126,7 @@ theorem firstOrderSurjection_epi (hi : IsFirstOrderThickening D.i)
     (_ht : IsFirstOrderThickening D.t) : Epi D.firstOrderSurjection
 ```
 
-**`Deformation.ToposThickening.MorphismOfThickenings.firstOrderIdealMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/MorphismOfThickeningsFirstOrder.lean, line 348](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/MorphismOfThickeningsFirstOrder.lean#L348). The attribute's comment: “the first order factorization of the induced map of defining ideals; the two upper topoi share their section universe, as the closed immersion carried by AlgebraicGeometry.ClosedRingedImmersion requires, the two lower ones staying independent”.
+**`Deformation.ToposThickening.MorphismOfThickenings.firstOrderIdealMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/MorphismOfThickeningsFirstOrder.lean, line 348](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/MorphismOfThickeningsFirstOrder.lean#L348). The attribute's comment: “the first order factorization of the induced map of defining ideals; the two upper topoi share their section universe, as the closed immersion carried by AlgebraicGeometry.ClosedRingedImmersion requires, the two lower ones staying independent”.
 
 > **Stacks 08M7.** When both thickenings are first order the induced map of defining ideals
 > `(f')^*J ⟶ I` factors uniquely through the canonical reduction `(f')^*J ⟶ f^*J`, giving the
@@ -144,7 +144,7 @@ noncomputable def firstOrderIdealMap (hi : IsFirstOrderThickening D.i)
           D.firstOrderSurjection ≫ g' = D.idealMap → g' = g }
 ```
 
-**`Deformation.ToposThickening.MorphismOfThickenings.canonicalIdealMap_existsUnique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/MorphismOfThickeningsIdealMap.lean, line 248](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/MorphismOfThickeningsIdealMap.lean#L248). The attribute's comment: “the canonical map of defining ideals”.
+**`Deformation.ToposThickening.MorphismOfThickenings.canonicalIdealMap_existsUnique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/MorphismOfThickeningsIdealMap.lean, line 248](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/MorphismOfThickeningsIdealMap.lean#L248). The attribute's comment: “the canonical map of defining ideals”.
 
 > **Stacks 08M7.** There is exactly one map of `O'`-modules `(f')^*J ⟶ I` whose composite into
 > `O'` is the structure map of `f'` applied to the inclusion of `J`.
@@ -160,7 +160,7 @@ theorem canonicalIdealMap_existsUnique :
       D.IsCanonicalIdealMap φ
 ```
 
-**`Deformation.ToposThickening.MorphismOfThickenings.idealMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/MorphismOfThickeningsIdealMap.lean, line 258](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/MorphismOfThickeningsIdealMap.lean#L258). The attribute's comment: “the induced map of defining ideals”.
+**`Deformation.ToposThickening.MorphismOfThickenings.idealMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/MorphismOfThickeningsIdealMap.lean, line 258](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/MorphismOfThickeningsIdealMap.lean#L258). The attribute's comment: “the induced map of defining ideals”.
 
 > **Stacks 08M7.** The induced map of defining ideals `(f')^*J ⟶ I` of a morphism of
 > thickenings of ringed topoi.
@@ -169,7 +169,7 @@ theorem canonicalIdealMap_existsUnique :
 noncomputable def idealMap : (D.f'.toModulesHom.pullbackModules).obj D.idealJ.I ⟶ D.idealI.I
 ```
 
-**`Deformation.ToposThickening.MorphismOfThickenings.idealMap_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/MorphismOfThickeningsIdealMap.lean, line 264](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/MorphismOfThickeningsIdealMap.lean#L264). The attribute's comment: “the induced map of defining ideals is the normalised one”.
+**`Deformation.ToposThickening.MorphismOfThickenings.idealMap_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/MorphismOfThickeningsIdealMap.lean, line 264](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/MorphismOfThickeningsIdealMap.lean#L264). The attribute's comment: “the induced map of defining ideals is the normalised one”.
 
 > **Stacks 08M7.** The induced map of defining ideals has the normalisation that
 > characterises it.
@@ -178,7 +178,7 @@ noncomputable def idealMap : (D.f'.toModulesHom.pullbackModules).obj D.idealJ.I 
 theorem idealMap_spec : D.IsCanonicalIdealMap D.idealMap
 ```
 
-**`Deformation.ToposThickening.MorphismOfThickenings.homEquiv_idealMap_comp_incl`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/MorphismOfThickeningsIdealMap.lean, line 276](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/MorphismOfThickeningsIdealMap.lean#L276). The attribute's comment: “the induced map of defining ideals is the structure map of `f'` on `J`”.
+**`Deformation.ToposThickening.MorphismOfThickenings.homEquiv_idealMap_comp_incl`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/MorphismOfThickeningsIdealMap.lean, line 276](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/MorphismOfThickeningsIdealMap.lean#L276). The attribute's comment: “the induced map of defining ideals is the structure map of `f'` on `J`”.
 
 > **Stacks 08M7.** The induced map of defining ideals, read on the target topos: its adjoint
 > transpose, composed with the inclusion of `I` into `O'`, is the structure map of `f'` applied to
@@ -192,7 +192,7 @@ theorem homEquiv_idealMap_comp_incl :
       D.idealJ.incl ≫ unitStructureMap D.f'
 ```
 
-**`Deformation.ToposThickening.MorphismOfThickenings.pullbackComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/MorphismOfThickeningsIdealMap.lean, line 329](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/MorphismOfThickeningsIdealMap.lean#L329). The attribute's comment: “the canonical comparison of the two iterated pullbacks around the square”.
+**`Deformation.ToposThickening.MorphismOfThickenings.pullbackComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/MorphismOfThickeningsIdealMap.lean, line 329](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/MorphismOfThickeningsIdealMap.lean#L329). The attribute's comment: “the canonical comparison of the two iterated pullbacks around the square”.
 
 > **Stacks 08M7.** The canonical comparison of the two iterated pullbacks around the square:
 > pulling back along `f'` and then `i` is pulling back along `t` and then `f`.
@@ -213,7 +213,7 @@ noncomputable def pullbackComparison :
 
 [Tag 08M9](https://stacks.math.columbia.edu/tag/08M9) in the Stacks Project.
 
-**`Deformation.ToposThickening.MorphismOfThickenings.IsStrict`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/MorphismOfThickeningsIdealMap.lean, line 296](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/ToposThickening/MorphismOfThickeningsIdealMap.lean#L296). The attribute's comment: “strict morphism of thickenings”.
+**`Deformation.ToposThickening.MorphismOfThickenings.IsStrict`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/ToposThickening/MorphismOfThickeningsIdealMap.lean, line 296](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/ToposThickening/MorphismOfThickeningsIdealMap.lean#L296). The attribute's comment: “strict morphism of thickenings”.
 
 > **Stacks 08M9.** A morphism of thickenings of ringed topoi is *strict* when its induced map
 > of defining ideals `(f')^*J ⟶ I` is surjective, i.e. an epimorphism of sheaves of
@@ -230,4 +230,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 91.9, Tag 08M6](https://stacks.math.columbia.edu/tag/08M6)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

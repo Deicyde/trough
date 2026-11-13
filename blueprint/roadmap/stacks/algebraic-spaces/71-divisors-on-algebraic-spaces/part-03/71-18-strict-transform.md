@@ -8,13 +8,13 @@ proof: formalized
 
 # 71.18 Strict transform
 
-Section 71.18 of the Stacks Project, [Tag 0861](https://stacks.math.columbia.edu/tag/0861). 10 tags here are carried by 21 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 71.18 of the Stacks Project, [Tag 0861](https://stacks.math.columbia.edu/tag/0861). 10 tags here are carried by 19 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0862, a definition
 
 [Tag 0862](https://stacks.math.columbia.edu/tag/0862) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.strictTransformSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/StrictTransform.lean, line 252](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/StrictTransform.lean#L252). The attribute's comment: “strict transform of a module”.
+**`AlgebraicGeometry.Space.strictTransformSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/StrictTransform.lean, line 252](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/StrictTransform.lean#L252). The attribute's comment: “strict transform of a module”.
 
 > **Stacks 0862, part (1).** The strict transform of an `𝒪_X`-module `F` along a morphism
 > `b : A' ⟶ A` relative to a subspace `E ⊆ A'`: pull `F` back to `X ×_A A'` along `pr_X` and divide
@@ -39,7 +39,7 @@ noncomputable def strictTransformSheaf (E : Subfunctor A'.1)
       (strictTransformPullback B S hS f b).2
 ```
 
-**`AlgebraicGeometry.Space.strictTransform`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/StrictTransform.lean, line 316](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/StrictTransform.lean#L316). The attribute's comment: “strict transform of a space”.
+**`AlgebraicGeometry.Space.strictTransform`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/StrictTransform.lean, line 316](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/StrictTransform.lean#L316). The attribute's comment: “strict transform of a space”.
 
 > **Stacks 0862, part (2).** The strict transform of an algebraic space `f : X ⟶ A` over `A`
 > along a morphism `b : A' ⟶ A` relative to a subspace `E ⊆ A'`: the closed subspace of `X ×_A A'`
@@ -69,7 +69,7 @@ noncomputable def strictTransform (E : Subfunctor A'.1) :
 
 [Tag 0863](https://stacks.math.columbia.edu/tag/0863) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isEtale_baseChange_blowup_of_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupEtaleLocalization.lean, line 160](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BlowupEtaleLocalization.lean#L160). The attribute's comment: “part (1): the blowup localizes étale-locally, and the induced morphisms are étale”.
+**`AlgebraicGeometry.Space.isEtale_baseChange_blowup_of_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupEtaleLocalization.lean, line 160](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BlowupEtaleLocalization.lean#L160). The attribute's comment: “part (1): the blowup localizes étale-locally, and the induced morphisms are étale”.
 
 > **Stacks 0863, part (1).** Let `Z ⊆ 𝔅` be a closed subspace of an algebraic space over `S`,
 > let `b : 𝔅' ⟶ 𝔅` be the blowup of `𝔅` in `Z` and let `f : X ⟶ 𝔅` be an algebraic space over
@@ -107,7 +107,7 @@ theorem isEtale_baseChange_blowup_of_isEtale
         IsEtale B S hS can.hom
 ```
 
-**`AlgebraicGeometry.Space.exists_isEtale_strictTransformSheaf_restriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupEtaleLocalization.lean, line 241](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BlowupEtaleLocalization.lean#L241). The attribute's comment: “part (3): the strict transform of a module restricts to the strict transform of its restriction; stated for an arbitrary module, the source's quasi-coherence being unused”.
+**`AlgebraicGeometry.Space.exists_isEtale_strictTransformSheaf_restriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupEtaleLocalization.lean, line 241](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BlowupEtaleLocalization.lean#L241). The attribute's comment: “part (3): the strict transform of a module restricts to the strict transform of its restriction; stated for an arbitrary module, the source's quasi-coherence being unused”.
 
 > **Stacks 0863, part (3).** In the situation of part (1), let `F` be an `𝒪_X`-module.  Then
 > there are `m : 𝒱' ⟶ 𝔅'` presenting `𝒱' = 𝒱 ×_𝔅 𝔅'` and a morphism
@@ -156,7 +156,7 @@ theorem exists_isEtale_strictTransformSheaf_restriction
             ((modulePullback B S hS u).obj F))
 ```
 
-**`AlgebraicGeometry.Space.exists_strictTransform_eq_preimage_of_isBlowupAlong`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupStrictTransformSpaceEtale.lean, line 359](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BlowupStrictTransformSpaceEtale.lean#L359). The attribute's comment: “part (2), for the blowups of 085Q themselves: the strict transform of an étale chart U is the base change along u of the strict transform of X”.
+**`AlgebraicGeometry.Space.exists_strictTransform_eq_preimage_of_isBlowupAlong`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupStrictTransformSpaceEtale.lean, line 359](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BlowupStrictTransformSpaceEtale.lean#L359). The attribute's comment: “part (2), for the blowups of 085Q themselves: the strict transform of an étale chart U is the base change along u of the strict transform of X”.
 
 > **Stacks 0863, part (2).** Let `Z ⊆ 𝔅` be a closed subspace of an algebraic space over `S`,
 > let `b : 𝔅' ⟶ 𝔅` be the blowup of `𝔅` in `Z`, let `f : X ⟶ 𝔅` be an algebraic space over `𝔅`,
@@ -239,7 +239,7 @@ theorem exists_strictTransform_eq_preimage_of_isBlowupAlong
             can.hom
 ```
 
-**`AlgebraicGeometry.Space.exists_strictTransform_eq_preimage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupStrictTransformSpaceEtaleUnconditional.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BlowupStrictTransformSpaceEtaleUnconditional.lean#L122). The attribute's comment: “part (2): the strict transform of an étale chart U is the base change along u of the strict transform of X, for an arbitrary blowup and with no assumed inputs”.
+**`AlgebraicGeometry.Space.exists_strictTransform_eq_preimage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupStrictTransformSpaceEtaleUnconditional.lean, line 122](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BlowupStrictTransformSpaceEtaleUnconditional.lean#L122). The attribute's comment: “part (2): the strict transform of an étale chart U is the base change along u of the strict transform of X, for an arbitrary blowup and with no assumed inputs”.
 
 > **Stacks 0863, part (2).** Let `Z ⊆ 𝔅` be a closed subspace of an algebraic space over `S`,
 > let `b : 𝔅' ⟶ 𝔅` be the blowup of `𝔅` in `Z`, let `f : X ⟶ 𝔅` be an algebraic space over `𝔅`,
@@ -288,7 +288,7 @@ theorem exists_strictTransform_eq_preimage
             (preimageClosedSubspace b Z).1).preimage can.hom
 ```
 
-**`AlgebraicGeometry.Space.exists_strictTransform_eq_preimage_strictTransformSheaf_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupStrictTransformSpaceEtaleUnconditional.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BlowupStrictTransformSpaceEtaleUnconditional.lean#L163). The attribute's comment: “parts (2) and (3) for one and the same comparison morphism, for an arbitrary blowup and with no assumed inputs”.
+**`AlgebraicGeometry.Space.exists_strictTransform_eq_preimage_strictTransformSheaf_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupStrictTransformSpaceEtaleUnconditional.lean, line 163](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BlowupStrictTransformSpaceEtaleUnconditional.lean#L163). The attribute's comment: “parts (2) and (3) for one and the same comparison morphism, for an arbitrary blowup and with no assumed inputs”.
 
 > **Stacks 0863, parts (2) and (3).** In the situation of part (1) there are `m : 𝒱' ⟶ 𝔅'`
 > presenting `𝒱' = 𝒱 ×_𝔅 𝔅'` and an étale `can : U ×_𝒱 𝒱' ⟶ X ×_𝔅 𝔅'` over `u` and over `m`,
@@ -339,7 +339,7 @@ theorem exists_strictTransform_eq_preimage_strictTransformSheaf_iso
 
 [Tag 0864](https://stacks.math.columbia.edu/tag/0864) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isBlowupAlong_strictTransform`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/StrictTransformIsBlowup.lean, line 347](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/StrictTransformIsBlowup.lean#L347). The attribute's comment: “part (1): the strict transform of X is the blowup of X in the inverse image of the centre, for an arbitrary blowup of the base and with no assumed inputs”.
+**`AlgebraicGeometry.Space.isBlowupAlong_strictTransform`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/StrictTransformIsBlowup.lean, line 347](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/StrictTransformIsBlowup.lean#L347). The attribute's comment: “part (1): the strict transform of X is the blowup of X in the inverse image of the centre, for an arbitrary blowup of the base and with no assumed inputs”.
 
 > **Stacks 0864, clause (1).**  Let `S` be a scheme, let `A` be an algebraic space over `S`,
 > let `Z ⊆ A` be a closed subspace, let `b : A' ⟶ A` be the blowup of `A` in `Z` and let
@@ -365,7 +365,7 @@ theorem isBlowupAlong_strictTransform (hb : IsBlowupAlong B S hS Z b) :
         strictTransformPullbackToSource B S hS f b)
 ```
 
-**`AlgebraicGeometry.Space.exists_strictTransformSheafIso_modulePushforward_strictTransformSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/StrictTransformSheafBlowupComparison.lean, line 639](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/StrictTransformSheafBlowupComparison.lean#L639). The attribute's comment: “part (2): the strict transform of a module is the direct image, along the closed immersion of the strict transform of X into X ×\_A A', of the strict transform of that module relative to the blowup X' ⟶ X, by the isomorphism carrying the quotient map onto the first to the canonical comparison; for an arbitrary blowup of the base, an arbitrary module, and with no assumed inputs”.
+**`AlgebraicGeometry.Space.exists_strictTransformSheafIso_modulePushforward_strictTransformSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/StrictTransformSheafBlowupComparison.lean, line 641](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/StrictTransformSheafBlowupComparison.lean#L641). The attribute's comment: “part (2): the strict transform of a module is the direct image, along the closed immersion of the strict transform of X into X ×\_A A', of the strict transform of that module relative to the blowup X' ⟶ X, by the isomorphism carrying the quotient map onto the first to the canonical comparison; for an arbitrary blowup of the base, an arbitrary module, and with no assumed inputs”.
 
 > **Stacks 0864, clause (2).**  Let `S` be a scheme, let `A` be an algebraic space over `S`,
 > let `Z ⊆ A` be a closed subspace, let `b : A' ⟶ A` be the blowup of `A` in `Z`, let `f : X ⟶ A`
@@ -412,7 +412,7 @@ theorem exists_strictTransformSheafIso_modulePushforward_strictTransformSpace
 
 [Tag 0865](https://stacks.math.columbia.edu/tag/0865) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.strictTransformSubfunctor_eq_top_of_isFlatAt_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/StrictTransformFlatCompositionUnassumed.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/StrictTransformFlatCompositionUnassumed.lean#L101). The attribute's comment: “part (1), with no assumed inputs”.
+**`AlgebraicGeometry.Space.strictTransformSubfunctor_eq_top_of_isFlatAt_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/StrictTransformFlatCompositionUnassumed.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/StrictTransformFlatCompositionUnassumed.lean#L101). The attribute's comment: “part (1), with no assumed inputs”.
 
 > **Stacks 0865, part (1).** Let `Z ⊆ A` be a closed subspace of an algebraic space over `S`,
 > let `b : A' ⟶ A` be the blowup of `A` in `Z` and let `f : X ⟶ A` be an algebraic space over
@@ -444,7 +444,7 @@ theorem strictTransformSubfunctor_eq_top_of_isFlatAt_unconditional (Z : ClosedSu
     strictTransformSubfunctor B S hS f b (Z.1.preimage b.hom) = ⊤
 ```
 
-**`AlgebraicGeometry.Space.isIso_strictTransformSheafQuotient_of_isFlatOverAtGeometricPoint_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/StrictTransformFlatCompositionUnassumed.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/StrictTransformFlatCompositionUnassumed.lean#L136). The attribute's comment: “part (2), with no assumed inputs”.
+**`AlgebraicGeometry.Space.isIso_strictTransformSheafQuotient_of_isFlatOverAtGeometricPoint_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/StrictTransformFlatCompositionUnassumed.lean, line 136](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/StrictTransformFlatCompositionUnassumed.lean#L136). The attribute's comment: “part (2), with no assumed inputs”.
 
 > **Stacks 0865, part (2).** In the situation of part (1), let `F` be a quasi-coherent
 > `𝒪_X`-module which is flat over `A` at every point lying over `Z`.  Then the canonical quotient
@@ -487,7 +487,7 @@ theorem isIso_strictTransformSheafQuotient_of_isFlatOverAtGeometricPoint_uncondi
 
 [Tag 0866](https://stacks.math.columbia.edu/tag/0866) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_modulePushforward_strictTransformSheaf_iso_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/StrictTransformAffinePushforward.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/StrictTransformAffinePushforward.lean#L108). The attribute's comment: “the hypotheses are the tag's own -- a blowup of the ambient space along a closed subspace, an affine morphism of algebraic spaces over it, and a quasi-coherent module -- and the base-change isomorphism of the base-change clause of Stacks 07U8, Stacks 02KG for an affine morphism of algebraic spaces, is proved on the way”.
+**`AlgebraicGeometry.Space.exists_modulePushforward_strictTransformSheaf_iso_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/StrictTransformAffinePushforward.lean, line 108](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/StrictTransformAffinePushforward.lean#L108). The attribute's comment: “the hypotheses are the tag's own -- a blowup of the ambient space along a closed subspace, an affine morphism of algebraic spaces over it, and a quasi-coherent module -- and the base-change isomorphism of the base-change clause of Stacks 07U8, Stacks 02KG for an affine morphism of algebraic spaces, is proved on the way”.
 
 > **Stacks 0866.** Let `Z ⊆ A` be a closed subspace of an algebraic space over `S`, let
 > `b : A' ⟶ A` be the blowup of `A` in `Z`, let `g : X ⟶ Y` be an affine morphism of algebraic
@@ -549,107 +549,45 @@ theorem exists_modulePushforward_strictTransformSheaf_iso_unconditional
 
 [Tag 0867](https://stacks.math.columbia.edu/tag/0867) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isBlowupAlong_sumClosedSubspaces`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupCentreEnlargedByDivisor.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BlowupCentreEnlargedByDivisor.lean#L130). The attribute's comment: “part (1): granted, as the hypotheses h0809 and h083V, that the inverse image of D along the blowup is an effective Cartier divisor and that the inverse image of Z + D along a morphism is one exactly when those of Z and of D are”.
+**`AlgebraicGeometry.Space.isBlowupAlong_sumClosedSubspaces_and_strictTransformSheaf_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupCentreEnlargedByDivisorUnconditional.lean, line 112](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/BlowupCentreEnlargedByDivisorUnconditional.lean#L112). The attribute's comment: “both parts: (1) the blowup of the space in Z is the blowup in Z + D; (2) for a module on an algebraic space over the base with no nonzero sections supported on the inverse image of D, the strict transforms for the centres Z and Z + D agree; stated for every module, quasi-coherent or not”.
 
-> **Stacks 0867, part (1).** Let `Z ⊆ 𝔅` and `D ⊆ 𝔅` be closed subspaces of an algebraic
-> space over `S` with `D` an effective Cartier divisor, and let `Z + D` be the closed subspace cut
-> out by the product of their defining ideals.  A morphism `b : B' ⟶ 𝔅` which is the blowup of
-> `𝔅` in `Z` is also the blowup of `𝔅` in `Z + D`.
+> **Stacks 0867.** Let `S` be a scheme, let `𝔅` be an algebraic space over `S`, let
+> `Z ⊆ 𝔅` be a closed subspace, let `D ⊆ 𝔅` be an effective Cartier divisor, let `Z + D` be the
+> closed subspace cut out by the product of the ideal sheaves of `Z` and `D`, and let
+> `b : B' ⟶ 𝔅` be the blowup of `𝔅` in `Z`.
 >
-> Granted as hypotheses: that the inverse image of `D` along `b` is an effective Cartier divisor
-> (Stacks 0809 for algebraic spaces), and that the inverse image of `Z + D` along a morphism is an
-> effective Cartier divisor exactly when those of `Z` and of `D` are (Stacks 083V for algebraic
-> spaces, and its converse).  See the module documentation.
+> 1. `b` is also the blowup of `𝔅` in `Z + D`; so every blowup of `𝔅` in `Z + D` is isomorphic
+>    to `b` over `𝔅`
+>    (`AlgebraicGeometry.Space.exists_iso_blowup_sumClosedSubspaces_of_isEffectiveCartierDivisor`).
+> 2. For every morphism of algebraic spaces `f : X ⟶ 𝔅` and every `𝒪_X`-module `F` whose subsheaf
+>    of sections supported on `|f⁻¹D|` is zero, the strict transform of `F` relative to the
+>    blowup of `𝔅` in `Z` agrees with the strict transform of `F` relative to the blowup of `𝔅`
+>    in `Z + D`, which by (1) is the same morphism `b`.
+>
+> Part (1) is
+> `AlgebraicGeometry.Space.isBlowupAlong_sumClosedSubspaces_of_isEffectiveCartierDivisor` and
+> part (2) is `AlgebraicGeometry.Space.strictTransformSheaf_preimage_sumClosedSubspaces`.  The
+> source asks `F` to be quasi-coherent; the statement holds for every `𝒪_X`-module.
 
 ```lean
-theorem isBlowupAlong_sumClosedSubspaces {𝔅 B' : AlgebraicSpaces B S hS}
-    (Z D : ClosedSubspaces B S hS 𝔅.1)
-    (_hD : IsEffectiveCartierDivisor B S hS 𝔅 D)
-    {b : B' ⟶ 𝔅} (hb : IsBlowupAlong B S hS Z b)
-    (h0809 : IsPullbackDefined B S hS b D)
-    (h083V : ∀ {Y : AlgebraicSpaces B S hS} (g : Y ⟶ 𝔅),
-      IsPullbackDefined B S hS g (sumClosedSubspaces B S hS 𝔅 Z D) ↔
-        IsPullbackDefined B S hS g Z ∧ IsPullbackDefined B S hS g D) :
-    IsBlowupAlong B S hS (sumClosedSubspaces B S hS 𝔅 Z D) b
-```
-
-**`AlgebraicGeometry.Space.isBlowupAlong_sumClosedSubspaces_of_presentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupCentreEnlargedByDivisorConstructed.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BlowupCentreEnlargedByDivisorConstructed.lean#L134). The attribute's comment: “part (1): the blowup of the space in Z is the blowup of the space in Z + D, with no assumed inputs beyond the Stacks 085Q construction data — the étale presentation P of the base, the HasSheafify universe choice for the quotient presheaf, and the three B.Contains size conditions on the relative Projs of the chart, relation and double situations — none of which occurs in the conclusion”.
-
-> **Stacks 0867, part (1).** Let `Z ⊆ 𝔅` and `D ⊆ 𝔅` be closed subspaces of an algebraic
-> space over `S` with `D` an effective Cartier divisor, and let `Z + D` be the closed subspace cut
-> out by the product of their defining ideals.  A morphism `b : B' ⟶ 𝔅` which is the blowup of
-> `𝔅` in `Z` is also the blowup of `𝔅` in `Z + D`.
->
-> Nothing is granted: the input `h0809` of
-> `AlgebraicGeometry.Space.isBlowupAlong_sumClosedSubspaces` — that the inverse image of `D` along
-> `b` is an effective Cartier divisor — is Stacks 085X, the algebraic-space counterpart of Stacks
-> 0809, `AlgebraicGeometry.Space.isPullbackDefined_of_isBlowupAlong`.  Its
-> proof goes through the blowup constructed in Stacks 085Q, so the construction data of that
-> tag — an étale presentation `P` of `𝔅` and the three size conditions on the relative `Proj`s —
-> is carried here; it does not appear in the conclusion.
-
-```lean
-theorem isBlowupAlong_sumClosedSubspaces_of_presentation {𝔅 B' : AlgebraicSpaces B S hS}
-    (Z D : ClosedSubspaces B S hS 𝔅.obj)
+theorem isBlowupAlong_sumClosedSubspaces_and_strictTransformSheaf_eq
+    {𝔅 B' : AlgebraicSpaces B S hS} (Z D : ClosedSubspaces B S hS 𝔅.obj)
     (hD : IsEffectiveCartierDivisor B S hS 𝔅 D)
-    (P : Presentation B S hS 𝔅.obj 𝔅.property)
-    (hcU : B.Contains (reesChartSituation (centreIdeal Z)
-        (isCartesianOnAffineCharts_centreIdeal Z) P).relativeProj)
-    (hcR : B.Contains (reesRelationSituation (centreIdeal Z)
-        (isCartesianOnAffineCharts_centreIdeal Z) P).relativeProj)
-    (hcRR : B.Contains (reesDoubleSituation (centreIdeal Z)
-        (isCartesianOnAffineCharts_centreIdeal Z) P).relativeProj)
     {b : B' ⟶ 𝔅} (hb : IsBlowupAlong B S hS Z b) :
-    IsBlowupAlong B S hS (sumClosedSubspaces B S hS 𝔅 Z D) b
-```
-
-**`AlgebraicGeometry.Space.strictTransformSheaf_preimage_sumClosedSubspaces`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/BlowupCentreEnlargedByDivisorConstructed.lean, line 244](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/BlowupCentreEnlargedByDivisorConstructed.lean#L244). The attribute's comment: “part (2), with no assumed inputs”.
-
-> **Stacks 0867, part (2).** Let `Z, D ⊆ 𝔅` be closed subspaces with `D` an effective Cartier
-> divisor, let `b : B' ⟶ 𝔅` be the blowup of `𝔅` in `Z` — hence also the blowup of `𝔅` in `Z + D`,
-> by part (1) — let `f : X ⟶ 𝔅` be an algebraic space over `𝔅` and let `F` be an `𝒪_X`-module whose
-> subsheaf of sections supported on `|f^{-1}D|` is zero.  Then the strict transform of `F` with
-> respect to the blowup of `𝔅` in `Z` and the strict transform of `F` with respect to the blowup of
-> `𝔅` in `Z + D` agree.
->
-> Both strict transforms live on the same `X ×_𝔅 B'`, the two blowups being the same morphism `b`,
-> and both are the quotient of `pr_X^*F` by its sections supported on the respective exceptional
-> preimage.  Those two sets of points differ by the inverse image of `|D|`
-> (`AlgebraicGeometry.Space.exceptionalPreimageSet_preimage_sumClosedSubspaces`), and enlarging the
-> supported set by it changes the supported sections not at all,
-> `AlgebraicGeometry.Space.supportedSectionsSubmodule_union_eq`.
->
-> Nothing is granted: the source's hypothesis `hW`, that `pr_X^*F` has no nonzero sections
-> supported on the inverse image of `|f^{-1}D|` over étale charts of `X ×_𝔅 B'` avoiding the
-> exceptional preimage, is derived here from the hypothesis on `F` rather than assumed.  Away from
-> the exceptional preimage the projection `pr_X : X ×_𝔅 B' ⟶ X` restricts to an isomorphism onto an
-> open subspace `P` of `X ×_𝔅 B'`, by Stacks 085T part (1)
-> (`AlgebraicGeometry.Space.isIso_fromPreimage_openComplement`) applied to the open complement of
-> `Z` in `𝔅` and transported across the pullback square defining the base change
-> (`CategoryTheory.Subfunctor.isIso_fromPreimage_of_isPullback`); in particular the inclusion of `P`
-> is étale.  A chart of `X ×_𝔅 B'` whose points avoid the exceptional preimage then factors through
-> `P`, and `AlgebraicGeometry.Space.sectionSupportedIn_etaleModulePullback_iff`, applied once to the
-> inclusion of `P` and once to its composite with `pr_X`, transports the vanishing of sections of
-> `F` supported on `|f^{-1}D|` to that chart.
-
-```lean
-theorem strictTransformSheaf_preimage_sumClosedSubspaces
-    (Z D : ClosedSubspaces B S hS 𝔅.1)
-    (hD : IsEffectiveCartierDivisor B S hS 𝔅 D)
-    {b : B' ⟶ 𝔅} (hb : IsBlowupAlong B S hS Z b) (f : X ⟶ 𝔅)
-    (F : Modules.{u, u} B S hS X.1 X.2)
-    (hF : HasNoSectionsSupportedIn B S hS X
-      (pointsMap B S hS X.1 f.hom ⁻¹' subspacePointSet B S hS 𝔅.1 D.1) F) :
-    strictTransformSheaf B S hS f b
-        (preimageClosedSubspace b (sumClosedSubspaces B S hS 𝔅 Z D)).1 F =
-      strictTransformSheaf B S hS f b (preimageClosedSubspace b Z).1 F
+    IsBlowupAlong B S hS (sumClosedSubspaces B S hS 𝔅 Z D) b ∧
+      ∀ (X : AlgebraicSpaces B S hS) (f : X ⟶ 𝔅) (F : Modules.{u, u} B S hS X.1 X.2),
+        HasNoSectionsSupportedIn B S hS X
+            (pointsMap B S hS X.1 f.hom ⁻¹' subspacePointSet B S hS 𝔅.1 D.1) F →
+          strictTransformSheaf B S hS f b
+              (preimageClosedSubspace b (sumClosedSubspaces B S hS 𝔅 Z D)).1 F =
+            strictTransformSheaf B S hS f b (preimageClosedSubspace b Z).1 F
 ```
 
 ## Tag 0868, a lemma
 
 [Tag 0868](https://stacks.math.columbia.edu/tag/0868) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_strictTransformSheaf_comp_iso_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/StrictTransformFlatCompositionUnassumed.lean, line 211](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/StrictTransformFlatCompositionUnassumed.lean#L211). The attribute's comment: “part (1): the strict transform of a module for the blowup of the base in the composite centre is the strict transform along the second blowup of the strict transform along the first, by the isomorphism carrying the pullback of the quotient map onto the former to the composite of the two quotient maps onto the latter, over the identification of the two ambient base changes and the identification of the two pullbacks of the module it induces; for an arbitrary module and with no assumed inputs”.
+**`AlgebraicGeometry.Space.exists_strictTransformSheaf_comp_iso_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/StrictTransformFlatCompositionUnassumed.lean, line 211](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/StrictTransformFlatCompositionUnassumed.lean#L211). The attribute's comment: “part (1): the strict transform of a module for the blowup of the base in the composite centre is the strict transform along the second blowup of the strict transform along the first, by the isomorphism carrying the pullback of the quotient map onto the former to the composite of the two quotient maps onto the latter, over the identification of the two ambient base changes and the identification of the two pullbacks of the module it induces; for an arbitrary module and with no assumed inputs”.
 
 > **Stacks 0868, part (1).** Let `Z ⊆ A` be a closed subspace of an algebraic space over `S`,
 > let `b : A' ⟶ A` be the blowup of `A` in `Z`, let `Z' ⊆ A'` be a closed subspace and let
@@ -736,7 +674,7 @@ theorem exists_strictTransformSheaf_comp_iso_unconditional (Z : ClosedSubspaces 
                 (strictTransformSheaf B S hS f b (Z.1.preimage b.hom) F)
 ```
 
-**`AlgebraicGeometry.Space.exists_strictTransformSpace_comp_iso_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/StrictTransformFlatCompositionUnassumed.lean, line 473](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/StrictTransformFlatCompositionUnassumed.lean#L473). The attribute's comment: “part (2): strict transform of a space”.
+**`AlgebraicGeometry.Space.exists_strictTransformSpace_comp_iso_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/StrictTransformFlatCompositionUnassumed.lean, line 473](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/StrictTransformFlatCompositionUnassumed.lean#L473). The attribute's comment: “part (2): strict transform of a space”.
 
 > **Stacks 0868, part (2).** In the situation of part (1), the strict transform of `X` with
 > respect to `c` of the strict transform of `X` with respect to `b` is the strict transform of `X`
@@ -798,7 +736,7 @@ theorem exists_strictTransformSpace_comp_iso_unconditional (Z : ClosedSubspaces 
 
 [Tag 0869](https://stacks.math.columbia.edu/tag/0869) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_strictTransformSheaf_shortComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/StrictTransformShortExact.lean, line 500](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/StrictTransformShortExact.lean#L500). The attribute's comment: “partial: the short complex of strict transforms with its two maps pinned down by the quotient maps, monomorphic on the left and epimorphic on the right, all unconditional; exactness in the middle is NOT proved and is instead reduced, as an equivalence, to epimorphy of the induced map on the subsheaves of sections supported on the exceptional preimage — the statement that Stacks 0863 parts (2) and (3) together with the scheme-level Stacks 080W would supply and that this library cannot reach”.
+**`AlgebraicGeometry.Space.exists_strictTransformSheaf_shortComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/StrictTransformShortExact.lean, line 500](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/StrictTransformShortExact.lean#L500). The attribute's comment: “partial: the short complex of strict transforms with its two maps pinned down by the quotient maps, monomorphic on the left and epimorphic on the right, all unconditional; exactness in the middle is NOT proved and is instead reduced, as an equivalence, to epimorphy of the induced map on the subsheaves of sections supported on the exceptional preimage — the statement that Stacks 0863 parts (2) and (3) together with the scheme-level Stacks 080W would supply and that this library cannot reach”.
 
 > **Stacks 0869, as far as this library reaches it.**  In the situation of Stacks 0862, let
 > `0 ⟶ F₁ ⟶ F₂ ⟶ F₃ ⟶ 0` be a sequence of `𝒪_X`-modules which is short exact after every base
@@ -831,7 +769,7 @@ theorem exists_strictTransformSheaf_shortComplex
           ((modulePullback B S hS (strictTransformPullbackToSource B S hS f b)).map C.g)))
 ```
 
-**`AlgebraicGeometry.Space.exists_strictTransformSheaf_shortComplex_of_isBlowupAlong`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/StrictTransformShortExactBlowup.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/StrictTransformShortExactBlowup.lean#L89). The attribute's comment: “the strict transforms of a short exact sequence of quasi-coherent modules which stays short exact after every base change again form a short exact sequence, with its two maps pinned down by the quotient maps onto the strict transforms”.
+**`AlgebraicGeometry.Space.exists_strictTransformSheaf_shortComplex_of_isBlowupAlong`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/StrictTransformShortExactBlowup.lean, line 89](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/StrictTransformShortExactBlowup.lean#L89). The attribute's comment: “the strict transforms of a short exact sequence of quasi-coherent modules which stays short exact after every base change again form a short exact sequence, with its two maps pinned down by the quotient maps onto the strict transforms”.
 
 > **Stacks 0869.**  In the situation of Stacks 0862 — a blowup `b : A' ⟶ A` of an algebraic
 > space `A` in a closed subspace `Z`, with exceptional divisor `E = b^{-1}Z`, and an algebraic
@@ -873,7 +811,7 @@ theorem exists_strictTransformSheaf_shortComplex_of_isBlowupAlong {Z : ClosedSub
 
 [Tag 0D0P](https://stacks.math.columbia.edu/tag/0D0P) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.strictTransformSheaf_isLocallyGeneratedByOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/StrictTransformLocalGenerators.lean, line 922](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/StrictTransformLocalGenerators.lean#L922).
+**`AlgebraicGeometry.Space.strictTransformSheaf_isLocallyGeneratedByOnSite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/StrictTransformLocalGenerators.lean, line 922](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/StrictTransformLocalGenerators.lean#L922).
 
 > Let `F` be a finite type quasi-coherent module on an algebraic space `Bsp`, let `Z ⊆ Bsp` be
 > the closed subspace cut out by the `k`-th Fitting ideal sheaf of `F`, and let `b : Bsp' ⟶ Bsp` be
@@ -897,7 +835,7 @@ theorem strictTransformSheaf_isLocallyGeneratedByOnSite
 
 [Tag 0D0Q](https://stacks.math.columbia.edu/tag/0D0Q) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isFiniteLocallyFreeOfRank_strictTransformSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/StrictTransformFittingRank.lean, line 518](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/StrictTransformFittingRank.lean#L518).
+**`AlgebraicGeometry.Space.isFiniteLocallyFreeOfRank_strictTransformSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/StrictTransformFittingRank.lean, line 518](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/StrictTransformFittingRank.lean#L518).
 
 > Let `F` be a finite type quasi-coherent module on an algebraic space `Bsp`, let `Z ⊆ Bsp` be
 > the closed subspace cut out by the `k`-th Fitting ideal sheaf of `F`, let `b : Bsp' ⟶ Bsp` be the
@@ -930,4 +868,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 71.18, Tag 0861](https://stacks.math.columbia.edu/tag/0861)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

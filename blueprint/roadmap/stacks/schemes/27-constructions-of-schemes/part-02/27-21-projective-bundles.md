@@ -1,20 +1,62 @@
 ---
 declaration: section
 origin: cited
-lean: Stacks.RelativeProj.projectiveBundle, Stacks.RelativeProj.projectiveBundleToBase, Stacks.AlgebraicGeometry.ProjectiveSpaceOfModuleStatement.coordinates_bundle_points_sections, Stacks.ProjectiveBundle.Noninjective.isSymmetricAlgebra_toQuotientAlgebra, Stacks.ProjectiveBundle.Noninjective.counterexampleSection_mapsTo_zero, Stacks.ProjectiveBundle.Noninjective.iSup_basicOpen_symGen_eq_top, Stacks.ProjectiveBundle.Noninjective.basicOpen_symGen_sup_eq_top, Stacks.ProjectiveBundle.Noninjective.not_injective_toTwistSections
+lean: Stacks.SymGraded.projectiveBundleOfQuasicoherent, Stacks.SymGraded.projectiveBundleProjection, Stacks.SymGraded.twistOfQuasicoherent, Stacks.SymGraded.isInvertible_twistOfQuasicoherent, Stacks.RelativeProj.projectiveBundle, Stacks.RelativeProj.projectiveBundleToBase, Stacks.AlgebraicGeometry.ProjectiveSpaceOfModuleStatement.coordinates_bundle_points_sections, Stacks.ProjectiveBundle.Noninjective.isSymmetricAlgebra_toQuotientAlgebra
 statement: formalized
 proof: formalized
 ---
 
 # 27.21 Projective bundles
 
-Section 27.21 of the Stacks Project, [Tag 01OA](https://stacks.math.columbia.edu/tag/01OA). 5 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 27.21 of the Stacks Project, [Tag 01OA](https://stacks.math.columbia.edu/tag/01OA). 5 tags here are carried by 18 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 01OB, a definition
 
 [Tag 01OB](https://stacks.math.columbia.edu/tag/01OB) in the Stacks Project.
 
-**`Stacks.RelativeProj.projectiveBundle`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjBundle/Basic.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeProjBundle/Basic.lean#L83). The attribute's comment: “the projective bundle and its projection”. References: EGA II (4.1.1), “P(E) itself”.
+**`Stacks.SymGraded.projectiveBundleOfQuasicoherent`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveBundleTwists/Basic.lean, line 272](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjectiveBundleTwists/Basic.lean#L272). The attribute's comment: “P(E) = Proj\_S(Sym(E)) for a quasi-coherent O\_S-module E”.
+
+> **The projective bundle `𝐏(E) = Proj_X(Sym(E))` of a quasi-coherent `𝒪_X`-module `E`**
+> (Stacks Tag 01OB), the relative homogeneous spectrum of the symmetric algebra of `E`. No
+> finiteness of `E` is assumed, as in the source and EGA II 4.1.1.
+
+```lean
+abbrev projectiveBundleOfQuasicoherent : Scheme.{u}
+```
+
+**`Stacks.SymGraded.projectiveBundleProjection`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveBundleTwists/Basic.lean, line 278](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjectiveBundleTwists/Basic.lean#L278). The attribute's comment: “the projection pi : P(E) -> S”.
+
+> **The projection `π : 𝐏(E) ⟶ X`** of the projective bundle (Stacks Tag 01OB), the structure
+> morphism of the relative `Proj`.
+
+```lean
+abbrev projectiveBundleProjection : projectiveBundleOfQuasicoherent E ⟶ X
+```
+
+**`Stacks.SymGraded.twistOfQuasicoherent`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveBundleTwists/Basic.lean, line 285](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjectiveBundleTwists/Basic.lean#L285). The attribute's comment: “the nth twist O\_\{P(E)}(n) of the structure sheaf, the module O\_X(n) of Tag 01O4”.
+
+> **The `n`th twist `𝒪_{𝐏(E)}(n)` of the structure sheaf** of the projective bundle (Stacks
+> Tag 01OB), for every integer `n`: the module `𝒪_X(n)` of Tag 01O4 on `X = Proj_S(Sym(E))`, i.e.
+> the degree-`n` piece of the glued algebra of twists of Tag 01NR's canonical twist datum.
+
+```lean
+abbrev twistOfQuasicoherent (n : ℤ) : (projectiveBundleOfQuasicoherent E).Modules
+```
+
+**`Stacks.SymGraded.isInvertible_twistOfQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveBundleTwists/Basic.lean, line 292](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjectiveBundleTwists/Basic.lean#L292). The attribute's comment: “O\_\{P(E)}(n) is an invertible O\_\{P(E)}-module for every integer n”.
+
+> **Each twist `𝒪_{𝐏(E)}(n)` is an invertible `𝒪_{𝐏(E)}`-module** (Stacks Tag 01OB, by Tag
+> 01O4), for every integer `n` and every quasi-coherent `E`: `Sym(E)` is generated in degree one
+> over its degree-zero part on every affine open.
+
+```lean
+theorem isInvertible_twistOfQuasicoherent (n : ℤ) :
+    AlgebraicGeometry.SheafOfModules.IsInvertible
+      (projectiveBundleOfQuasicoherent E).presheaf
+      (projectiveBundleOfQuasicoherent E).ringCatSheaf.2 (twistOfQuasicoherent E n)
+```
+
+**`Stacks.RelativeProj.projectiveBundle`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjBundle/Basic.lean, line 83](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeProjBundle/Basic.lean#L83). The attribute's comment: “the projective bundle and its projection”. References: EGA II (4.1.1), “P(E) itself”.
 
 > **The projective bundle `𝐏(F) = Proj_X(Sym(F))` of a quasi-coherent sheaf of modules**, the
 > relative projective spectrum of its symmetric algebra.
@@ -23,7 +65,7 @@ Section 27.21 of the Stacks Project, [Tag 01OA](https://stacks.math.columbia.edu
 abbrev projectiveBundle (X : Scheme.{u}) (F : X.Modules) [F.IsQuasicoherent] : Scheme.{u}
 ```
 
-**`Stacks.RelativeProj.projectiveBundleToBase`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjBundle/Basic.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeProjBundle/Basic.lean#L89). The attribute's comment: “the projective bundle and its projection”. References: EGA II (4.1.1), “projection to Y”.
+**`Stacks.RelativeProj.projectiveBundleToBase`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjBundle/Basic.lean, line 89](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeProjBundle/Basic.lean#L89). The attribute's comment: “the projective bundle and its projection”. References: EGA II (4.1.1), “projection to Y”.
 
 > **The projection `π : 𝐏(F) ⟶ X` of a projective bundle**, the structure morphism of the
 > relative projective spectrum of `Sym(F)` over its base.
@@ -37,7 +79,7 @@ abbrev projectiveBundleToBase (X : Scheme.{u}) (F : X.Modules) [F.IsQuasicoheren
 
 [Tag 0FCY](https://stacks.math.columbia.edu/tag/0FCY) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.ProjectiveSpaceOfModuleStatement.coordinates_bundle_points_sections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjectiveSpaceOfModuleStatement.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjectiveSpaceOfModuleStatement.lean#L90). The attribute's comment: “the five assertions of the tag in one statement”.
+**`Stacks.AlgebraicGeometry.ProjectiveSpaceOfModuleStatement.coordinates_bundle_points_sections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjectiveSpaceOfModuleStatement.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjectiveSpaceOfModuleStatement.lean#L90). The attribute's comment: “the five assertions of the tag in one statement”.
 
 > **[Stacks, Tag 0FCY].** Let `k` be a field and `V` a `k`-vector space, and let
 > `𝐏(V) = Proj(Sym_k V)` be the projective space of `V`, with its structure morphism to `Spec k`.
@@ -90,7 +132,7 @@ theorem coordinates_bundle_points_sections :
 
 [Tag 01OC](https://stacks.math.columbia.edu/tag/01OC) in the Stacks Project.
 
-**`Stacks.ProjectiveBundle.Noninjective.isSymmetricAlgebra_toQuotientAlgebra`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveBundle/Noninjective.lean, line 180](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjectiveBundle/Noninjective.lean#L180). The attribute's comment: “the presentation of the symmetric algebra of the module”.
+**`Stacks.ProjectiveBundle.Noninjective.isSymmetricAlgebra_toQuotientAlgebra`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveBundle/Noninjective.lean, line 180](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjectiveBundle/Noninjective.lean#L180). The attribute's comment: “the presentation of the symmetric algebra of the module”.
 
 > **`Sym(M) = A[x, y] / (ū x + v̄ y)`.** This is the displayed identity of Stacks 01OC that
 > makes the example concrete: `M` is `A x ⊕ A y` modulo the single relation `ū x + v̄ y`, so its
@@ -103,7 +145,7 @@ public theorem isSymmetricAlgebra_toQuotientAlgebra :
       (SymmetricAlgebra.toQuotientAlgebra (coefficientRing R) (relationVector R))
 ```
 
-**`Stacks.ProjectiveBundle.Noninjective.counterexampleSection_mapsTo_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveBundle/Noninjective.lean, line 193](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjectiveBundle/Noninjective.lean#L193). The attribute's comment: “the section maps to zero in the first twist”.
+**`Stacks.ProjectiveBundle.Noninjective.counterexampleSection_mapsTo_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveBundle/Noninjective.lean, line 193](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjectiveBundle/Noninjective.lean#L193). The attribute's comment: “the section maps to zero in the first twist”.
 
 > **`m` maps to zero in `Γ(P, 𝒪_P(1))`.**
 
@@ -113,7 +155,7 @@ public theorem counterexampleSection_mapsTo_zero :
       (counterexampleSection R) = 0
 ```
 
-**`Stacks.ProjectiveBundle.Noninjective.iSup_basicOpen_symGen_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveBundle/Noninjective.lean, line 202](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjectiveBundle/Noninjective.lean#L202). The attribute's comment: “the two-chart affine open covering of the projective bundle”.
+**`Stacks.ProjectiveBundle.Noninjective.iSup_basicOpen_symGen_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveBundle/Noninjective.lean, line 202](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjectiveBundle/Noninjective.lean#L202). The attribute's comment: “the two-chart affine open covering of the projective bundle”.
 
 > **`P = D₊(x) ∪ D₊(y)`**: the two standard opens of the degree-one generators cover the
 > projective bundle. This is the affine open covering Stacks 01OC records.
@@ -124,7 +166,7 @@ public theorem iSup_basicOpen_symGen_eq_top :
       (SymmetricAlgebra.grading (coefficientRing R) (presentedModule R)) (symGen R i) = ⊤
 ```
 
-**`Stacks.ProjectiveBundle.Noninjective.basicOpen_symGen_sup_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveBundle/Noninjective.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjectiveBundle/Noninjective.lean#L221). The attribute's comment: “the two-chart affine open covering of the projective bundle”.
+**`Stacks.ProjectiveBundle.Noninjective.basicOpen_symGen_sup_eq_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveBundle/Noninjective.lean, line 221](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjectiveBundle/Noninjective.lean#L221). The attribute's comment: “the two-chart affine open covering of the projective bundle”.
 
 > `P = D₊(x) ∪ D₊(y)`, written as a binary union.
 
@@ -136,7 +178,7 @@ public theorem basicOpen_symGen_sup_eq_top :
         (symGen R 1) = ⊤
 ```
 
-**`Stacks.ProjectiveBundle.Noninjective.not_injective_toTwistSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveBundle/Noninjective.lean, line 245](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjectiveBundle/Noninjective.lean#L245). The attribute's comment: “the map from the first symmetric power is not injective”.
+**`Stacks.ProjectiveBundle.Noninjective.not_injective_toTwistSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveBundle/Noninjective.lean, line 245](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjectiveBundle/Noninjective.lean#L245). The attribute's comment: “the map from the first symmetric power is not injective”.
 
 > **The map `M = Sym¹(ℰ) → Γ(P, 𝒪_P(1))` is not injective.** This is the conclusion of
 > Stacks 01OC: `m` is a nonzero global section of `ℰ` whose image in `Γ(P, 𝒪_P(1))` is zero, so
@@ -149,7 +191,7 @@ public theorem not_injective_toTwistSections :
       (SymmetricAlgebra.toTwistSections (coefficientRing R) (presentedModule R))
 ```
 
-**`Stacks.ProjectiveBundle.Noninjective.counterexampleSection_ne_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveBundle/NoninjectiveAlgebra.lean, line 259](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjectiveBundle/NoninjectiveAlgebra.lean#L259). The attribute's comment: “the section is nonzero”.
+**`Stacks.ProjectiveBundle.Noninjective.counterexampleSection_ne_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveBundle/NoninjectiveAlgebra.lean, line 259](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjectiveBundle/NoninjectiveAlgebra.lean#L259). The attribute's comment: “the section is nonzero”.
 
 > For a nontrivial ring `R`, the element `m = ū s̄₁ x + v̄ t̄₂ y` of `M` is nonzero.
 
@@ -157,7 +199,7 @@ public theorem not_injective_toTwistSections :
 public theorem counterexampleSection_ne_zero : counterexampleSection R ≠ 0
 ```
 
-**`Stacks.ProjectiveBundle.Noninjective.X_zero_mul_counterexampleForm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveBundle/NoninjectiveAlgebra.lean, line 318](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjectiveBundle/NoninjectiveAlgebra.lean#L318). The attribute's comment: “the first displayed congruence”.
+**`Stacks.ProjectiveBundle.Noninjective.X_zero_mul_counterexampleForm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveBundle/NoninjectiveAlgebra.lean, line 318](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjectiveBundle/NoninjectiveAlgebra.lean#L318). The attribute's comment: “the first displayed congruence”.
 
 > In `A[x, y]`, `x (ū s̄₁ x + v̄ t̄₂ y) = (s̄₁ x + s̄₂ y)(ū x + v̄ y)`.
 
@@ -167,7 +209,7 @@ public theorem X_zero_mul_counterexampleForm :
       (C (coefficient R 2) * X 0 + C (coefficient R 3) * X 1) * relationForm R
 ```
 
-**`Stacks.ProjectiveBundle.Noninjective.X_one_mul_counterexampleForm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveBundle/NoninjectiveAlgebra.lean, line 327](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjectiveBundle/NoninjectiveAlgebra.lean#L327). The attribute's comment: “the second displayed congruence”.
+**`Stacks.ProjectiveBundle.Noninjective.X_one_mul_counterexampleForm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveBundle/NoninjectiveAlgebra.lean, line 327](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjectiveBundle/NoninjectiveAlgebra.lean#L327). The attribute's comment: “the second displayed congruence”.
 
 > In `A[x, y]`, `y (ū s̄₁ x + v̄ t̄₂ y) = (t̄₁ x + t̄₂ y)(ū x + v̄ y)`.
 
@@ -181,7 +223,7 @@ public theorem X_one_mul_counterexampleForm :
 
 [Tag 01OD](https://stacks.math.columbia.edu/tag/01OD) in the Stacks Project.
 
-**`Stacks.SymGraded.isSeparated_projectiveBundleToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveBundle/SectionClosedImmersion.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjectiveBundle/SectionClosedImmersion.lean#L81).
+**`Stacks.SymGraded.isSeparated_projectiveBundleToBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveBundle/SectionClosedImmersion.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjectiveBundle/SectionClosedImmersion.lean#L81).
 
 > **The structure morphism of the projective bundle of a quasi-coherent module on an arbitrary
 > scheme is separated.**
@@ -199,7 +241,7 @@ public theorem isSeparated_projectiveBundleToBase :
 
 [Tag 01OE](https://stacks.math.columbia.edu/tag/01OE) in the Stacks Project.
 
-**`Stacks.SymGraded.projectiveBundleIsoProjectiveSpace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SheafSymmetricAlgebra/ProjectiveSpaceMorphism.lean, line 658](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SheafSymmetricAlgebra/ProjectiveSpaceMorphism.lean#L658).
+**`Stacks.SymGraded.projectiveBundleIsoProjectiveSpace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SheafSymmetricAlgebra/ProjectiveSpaceMorphism.lean, line 658](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SheafSymmetricAlgebra/ProjectiveSpaceMorphism.lean#L658).
 
 > **`ℙⁿ_X` is a projective bundle over `X`**: the projective bundle of the free module sheaf
 > `𝒪_X^{n+1}` — that is `Proj_X(Sym(𝒪_X^{n+1}))` — is projective `n`-space over `X`.
@@ -213,7 +255,7 @@ def projectiveBundleIsoProjectiveSpace :
       AlgebraicGeometry.projectiveSpaceOver.{u} n X
 ```
 
-**`Stacks.SymGraded.projectiveBundleIsoProjectiveSpace_hom_comp_fst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SheafSymmetricAlgebra/ProjectiveSpaceMorphism.lean, line 669](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SheafSymmetricAlgebra/ProjectiveSpaceMorphism.lean#L669).
+**`Stacks.SymGraded.projectiveBundleIsoProjectiveSpace_hom_comp_fst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SheafSymmetricAlgebra/ProjectiveSpaceMorphism.lean, line 669](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SheafSymmetricAlgebra/ProjectiveSpaceMorphism.lean#L669).
 
 > **The isomorphism of Tag 01OE is an isomorphism over `X`**: it carries the structure morphism
 > of `ℙⁿ_X` to the projection of the bundle. Together with
@@ -236,4 +278,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 27.21, Tag 01OA](https://stacks.math.columbia.edu/tag/01OA)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

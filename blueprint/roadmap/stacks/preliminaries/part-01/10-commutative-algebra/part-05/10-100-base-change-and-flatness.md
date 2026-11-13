@@ -8,13 +8,13 @@ proof: formalized
 
 # 10.100 Base change and flatness
 
-Section 10.100 of the Stacks Project, [Tag 051D](https://stacks.math.columbia.edu/tag/051D). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 10.100 of the Stacks Project, [Tag 051D](https://stacks.math.columbia.edu/tag/051D). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 00MQ, a lemma
 
 [Tag 00MQ](https://stacks.math.columbia.edu/tag/00MQ) in the Stacks Project.
 
-**`Module.Flat.baseChange_and_of_flat_baseChange_of_isPushout_of_isLocalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/BaseChange.lean, line 267](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/BaseChange.lean#L267). The attribute's comment: “Parts (1) and (2). Of the source's eight locality assumptions only `IsLocalRing S`, `IsLocalRing S'` and `IsLocalHom (algebraMap S S')` are used, by part (2) alone, and they are bound inside the second conjunct together with `Module.Flat R R'`, so that part (1) is stated for an arbitrary commutative square; the rest are dropped. "`S'` is a localization of `S ⊗_R R'`" is `IsLocalization W S'` over an abstract pushout `Algebra.IsPushout R S R' T`, as in the siblings 00P4 and 00RJ, and `M' = S' ⊗_S M` is `IsBaseChange S' f`, as in 00MO. Parts (3) and (4) are the instance `M := S`, `M' := S'` and are not separate declarations. See the module docstring.”.
+**`Module.Flat.baseChange_and_of_flat_baseChange_of_isPushout_of_isLocalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/BaseChange.lean, line 267](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/BaseChange.lean#L267). The attribute's comment: “Parts (1) and (2). Of the source's eight locality assumptions only `IsLocalRing S`, `IsLocalRing S'` and `IsLocalHom (algebraMap S S')` are used, by part (2) alone, and they are bound inside the second conjunct together with `Module.Flat R R'`, so that part (1) is stated for an arbitrary commutative square; the rest are dropped. "`S'` is a localization of `S ⊗_R R'`" is `IsLocalization W S'` over an abstract pushout `Algebra.IsPushout R S R' T`, as in the siblings 00P4 and 00RJ, and `M' = S' ⊗_S M` is `IsBaseChange S' f`, as in 00MO. Parts (3) and (4) are the instance `M := S`, `M' := S'` and are not separate declarations. See the module docstring.”.
 
 > **Stacks 00MQ**, parts (1) and (2). Let `S ← R → R'` be ring maps, let `T` be the pushout
 > `S ⊗_R R'`, let `S'` be a localization of `T` at a submonoid `W`, and let `f : M →ₗ[S] M'` realize
@@ -51,7 +51,7 @@ public theorem baseChange_and_of_flat_baseChange_of_isPushout_of_isLocalization
 
 [Tag 0GEB](https://stacks.math.columbia.edu/tag/0GEB) in the Stacks Project.
 
-**`Module.Flat.baseChange_of_map_maximalIdeal_eq_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/LocalBaseChange.lean, line 254](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/LocalBaseChange.lean#L254). The attribute's comment: “The commutative square is presented by the two scalar towers into `S'`, `M ⊗_S S'` by `IsBaseChange S' f` as in the sibling 00MO, and `𝔪_R R'` by `Ideal.map (algebraMap R R') (IsLocalRing.maximalIdeal R)`. The source's unused hypotheses `S` local, `R → S` local and `S → S'` local are dropped, and `R → R'` local is implied by `hm`. See the module docstring.”.
+**`Module.Flat.baseChange_of_map_maximalIdeal_eq_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/LocalBaseChange.lean, line 254](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/LocalBaseChange.lean#L254). The attribute's comment: “The commutative square is presented by the two scalar towers into `S'`, `M ⊗_S S'` by `IsBaseChange S' f` as in the sibling 00MO, and `𝔪_R R'` by `Ideal.map (algebraMap R R') (IsLocalRing.maximalIdeal R)`. The source's unused hypotheses `S` local, `R → S` local and `S → S'` local are dropped, and `R → R'` local is implied by `hm`. See the module docstring.”.
 
 > **Stacks 0GEB.** Let `S ← R → R'`, `S → S'`, `R' → S'` be a commutative diagram of local
 > rings and local homomorphisms, let `M` be a finite `S`-module and let `f : M → M'` realize `M'` as
@@ -84,4 +84,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.100, Tag 051D](https://stacks.math.columbia.edu/tag/051D)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

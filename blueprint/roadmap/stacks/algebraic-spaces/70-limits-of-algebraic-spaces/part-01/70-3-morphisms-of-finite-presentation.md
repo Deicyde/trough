@@ -8,13 +8,13 @@ proof: formalized
 
 # 70.3 Morphisms of finite presentation
 
-Section 70.3 of the Stacks Project, [Tag 049I](https://stacks.math.columbia.edu/tag/049I). 13 tags here are carried by 17 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 70.3 of the Stacks Project, [Tag 049I](https://stacks.math.columbia.edu/tag/049I). 13 tags here are carried by 17 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 049J, a definition
 
 [Tag 049J](https://stacks.math.columbia.edu/tag/049J) in the Stacks Project.
 
-**`AlgebraicGeometry.LimitPreserving`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/LimitPreserving.lean, line 49](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/LimitPreserving.lean#L49). The attribute's comment: “part (1)”. References: SGA 3 XI (3.2), “definition of (*)”.
+**`AlgebraicGeometry.LimitPreserving`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/LimitPreserving.lean, line 49](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/LimitPreserving.lean#L49). The attribute's comment: “part (1)”. References: SGA 3 XI (3.2), “definition of (*)”.
 
 > **Stacks Project, Tag 049J.** A presheaf of sets preserves inverse limits of affine
 > schemes as filtered colimits of sets, relative to its underlying-scheme functor.
@@ -24,7 +24,7 @@ abbrev LimitPreserving {C : Type z} [Category C]
     (toScheme : C ⥤ Scheme.{u}) (F : Cᵒᵖ ⥤ Type v) : Prop
 ```
 
-**`AlgebraicGeometry.RelativelyLimitPreserving`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/LimitPreserving.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/LimitPreserving.lean#L78). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.RelativelyLimitPreserving`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/LimitPreserving.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/LimitPreserving.lean#L78). The attribute's comment: “part (2)”.
 
 > **Stacks Project, Tag 049J.** A transformation is relatively limit preserving when the
 > presheaf of lifts of every target section is limit preserving over that section's base.
@@ -39,7 +39,7 @@ abbrev RelativelyLimitPreserving
 
 [Tag 049K](https://stacks.math.columbia.edu/tag/049K) in the Stacks Project.
 
-**`AlgebraicGeometry.isPullback_sectionFiberι`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation/SectionFiber.lean, line 121](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation/SectionFiber.lean#L121).
+**`AlgebraicGeometry.isPullback_sectionFiberι`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation/SectionFiber.lean, line 121](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation/SectionFiber.lean#L121).
 
 > **Stacks Project, Tag 049K.** The presheaf of lifts of a section `y` of `G` over `X` through
 > a transformation `a : F ⟶ G` of presheaves of sets on the big fppf site over `S` is the fibre
@@ -64,7 +64,7 @@ theorem isPullback_sectionFiberι :
 
 [Tag 06BC](https://stacks.math.columbia.edu/tag/06BC) in the Stacks Project.
 
-**`AlgebraicGeometry.relativelyLimitPreserving_iff_affineLimit_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation/AffineCriterion.lean, line 563](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation/AffineCriterion.lean#L563).
+**`AlgebraicGeometry.relativelyLimitPreserving_iff_affineLimit_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation/AffineCriterion.lean, line 563](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation/AffineCriterion.lean#L563).
 
 > The affine-limit comparison square characterizes relative limit
 > preservation of a transformation of presheaves.
@@ -94,7 +94,7 @@ public theorem relativelyLimitPreserving_iff_affineLimit_isPullback
 
 [Tag 049L](https://stacks.math.columbia.edu/tag/049L) in the Stacks Project.
 
-**`AlgebraicGeometry.relativelyLimitPreserving_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation/Sorites.lean, line 45](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation/Sorites.lean#L45).
+**`AlgebraicGeometry.relativelyLimitPreserving_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation/Sorites.lean, line 45](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation/Sorites.lean#L45).
 
 > The composition of two relatively limit-preserving transformations is
 > relatively limit preserving.
@@ -113,7 +113,7 @@ public theorem relativelyLimitPreserving_comp
 
 [Tag 0GDY](https://stacks.math.columbia.edu/tag/0GDY) in the Stacks Project.
 
-**`AlgebraicGeometry.relativelyLimitPreserving_of_comp_of_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation/Sorites.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation/Sorites.lean#L74).
+**`AlgebraicGeometry.relativelyLimitPreserving_of_comp_of_right`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation/Sorites.lean, line 74](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation/Sorites.lean#L74).
 
 > If `b` and `a ≫ b` preserve limits relatively, then so does `a`.
 
@@ -131,7 +131,7 @@ public theorem relativelyLimitPreserving_of_comp_of_right
 
 [Tag 049M](https://stacks.math.columbia.edu/tag/049M) in the Stacks Project.
 
-**`AlgebraicGeometry.relativelyLimitPreserving_pullback_fst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation/FibreProducts.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation/FibreProducts.lean#L169).
+**`AlgebraicGeometry.relativelyLimitPreserving_pullback_fst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation/FibreProducts.lean, line 169](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation/FibreProducts.lean#L169).
 
 > A relatively limit-preserving transformation of presheaves remains so
 > after pullback along any transformation.
@@ -150,7 +150,7 @@ public theorem relativelyLimitPreserving_pullback_fst
 
 [Tag 0GDZ](https://stacks.math.columbia.edu/tag/0GDZ) in the Stacks Project.
 
-**`AlgebraicGeometry.relativelyLimitPreserving_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation/FibreProducts.lean, line 364](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation/FibreProducts.lean#L364).
+**`AlgebraicGeometry.relativelyLimitPreserving_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation/FibreProducts.lean, line 364](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation/FibreProducts.lean#L364).
 
 > Relative limit preservation is stable under a fibre product of presheaves
 > over a common intermediate presheaf.
@@ -171,7 +171,7 @@ public theorem relativelyLimitPreserving_pullback
 
 [Tag 049O](https://stacks.math.columbia.edu/tag/049O) in the Stacks Project.
 
-**`AlgebraicGeometry.limitPreserving_of_isLocallyBijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation/Sheafify.lean, line 988](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation/Sheafify.lean#L988). The attribute's comment: “locally bijective comparison”.
+**`AlgebraicGeometry.limitPreserving_of_isLocallyBijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation/Sheafify.lean, line 988](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation/Sheafify.lean#L988). The attribute's comment: “locally bijective comparison”.
 
 > An fppf sheaf receiving a locally bijective map from a limit-preserving presheaf is
 > limit preserving. Local injectivity makes sections that agree at the limit agree at a later
@@ -188,7 +188,7 @@ public theorem limitPreserving_of_isLocallyBijective [UnivLE.{max w w', u}]
     LimitPreserving.{u, v, w, w', u + 1} (BigFppfOver.toScheme B S hS) G
 ```
 
-**`AlgebraicGeometry.limitPreserving_sheafify`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation/Sheafify.lean, line 1012](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation/Sheafify.lean#L1012).
+**`AlgebraicGeometry.limitPreserving_sheafify`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation/Sheafify.lean, line 1012](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation/Sheafify.lean#L1012).
 
 > Fppf sheafification of a limit-preserving presheaf is limit preserving.
 
@@ -207,7 +207,7 @@ public theorem limitPreserving_sheafify [UnivLE.{max w w', u}]
 
 [Tag 049P](https://stacks.math.columbia.edu/tag/049P) in the Stacks Project.
 
-**`AlgebraicGeometry.limitPreserving_of_fppfCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation/FppfLocal.lean, line 532](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation/FppfLocal.lean#L532).
+**`AlgebraicGeometry.limitPreserving_of_fppfCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation/FppfLocal.lean, line 532](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation/FppfLocal.lean#L532).
 
 > Limit preservation for an fppf sheaf can be checked on an fppf cover of
 > the base scheme.
@@ -231,7 +231,7 @@ public theorem limitPreserving_of_fppfCover
 
 [Tag 049Q](https://stacks.math.columbia.edu/tag/049Q) in the Stacks Project.
 
-**`AlgebraicGeometry.relativelyLimitPreserving_sheafifyMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation/SheafifyRelative.lean, line 538](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation/SheafifyRelative.lean#L538).
+**`AlgebraicGeometry.relativelyLimitPreserving_sheafifyMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation/SheafifyRelative.lean, line 538](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation/SheafifyRelative.lean#L538).
 
 > Sheafification preserves relative limit preservation of a transformation
 > of presheaves on the big fppf site.
@@ -251,7 +251,7 @@ public theorem relativelyLimitPreserving_sheafifyMap [UnivLE.{max w w', u}]
 
 [Tag 04AK](https://stacks.math.columbia.edu/tag/04AK) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isLocallyOfFinitePresentation_iff_relativelyLimitPreserving`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation/LimitPreservingIff.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation/LimitPreservingIff.lean#L191).
+**`AlgebraicGeometry.Space.isLocallyOfFinitePresentation_iff_relativelyLimitPreserving`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation/LimitPreservingIff.lean, line 191](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation/LimitPreservingIff.lean#L191).
 
 > **Stacks 04AK.** A morphism of algebraic spaces over a scheme `S` is locally of finite
 > presentation if and only if it is relatively limit preserving as a transformation of functors
@@ -267,7 +267,7 @@ theorem isLocallyOfFinitePresentation_iff_relativelyLimitPreserving
       RelativelyLimitPreserving.{u, u, u, u} B S hS f
 ```
 
-**`AlgebraicGeometry.relativelyLimitPreserving_of_isLocallyOfFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation/LimitPreservingOfFinitePresentation.lean, line 226](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation/LimitPreservingOfFinitePresentation.lean#L226). The attribute's comment: “locally of finite presentation implies relatively limit preserving”.
+**`AlgebraicGeometry.relativelyLimitPreserving_of_isLocallyOfFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation/LimitPreservingOfFinitePresentation.lean, line 226](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation/LimitPreservingOfFinitePresentation.lean#L226). The attribute's comment: “locally of finite presentation implies relatively limit preserving”.
 
 > A morphism of algebraic spaces over `S` which is locally of finite presentation is relatively
 > limit preserving, for index categories in the universe of the schemes.
@@ -280,7 +280,7 @@ theorem relativelyLimitPreserving_of_isLocallyOfFinitePresentation
     RelativelyLimitPreserving.{u, u, u, u} B S hS a
 ```
 
-**`AlgebraicGeometry.Space.isLocallyOfFinitePresentation_of_relativelyLimitPreserving`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation/Representable.lean, line 357](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation/Representable.lean#L357). The attribute's comment: “the implication from relatively limit preserving to locally of finite presentation”.
+**`AlgebraicGeometry.Space.isLocallyOfFinitePresentation_of_relativelyLimitPreserving`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation/Representable.lean, line 357](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation/Representable.lean#L357). The attribute's comment: “the implication from relatively limit preserving to locally of finite presentation”.
 
 > **Stacks 04AK, the implication from relative limit preservation towards local finite
 > presentation.** A relatively limit-preserving transformation of presheaves on the big fppf site
@@ -302,7 +302,7 @@ theorem Space.isLocallyOfFinitePresentation_of_relativelyLimitPreserving
 
 [Tag 05N0](https://stacks.math.columbia.edu/tag/05N0) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isLocallyOfFinitePresentation_terminal_iff_limitPreserving`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation/LimitPreservingFunctorOfPoints.lean, line 291](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation/LimitPreservingFunctorOfPoints.lean#L291).
+**`AlgebraicGeometry.Space.isLocallyOfFinitePresentation_terminal_iff_limitPreserving`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation/LimitPreservingFunctorOfPoints.lean, line 291](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation/LimitPreservingFunctorOfPoints.lean#L291).
 
 > **Stacks 05N0.** An algebraic space `X` over a scheme `S` is locally of finite
 > presentation over `S` if and only if `X`, read as a functor on the big fppf site of `S`, is
@@ -326,7 +326,7 @@ theorem isLocallyOfFinitePresentation_terminal_iff_limitPreserving
 
 [Tag 0CM6](https://stacks.math.columbia.edu/tag/0CM6) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isLocallyOfFinitePresentation_of_affineLimit_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation/SurjectiveCriterion.lean, line 346](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation/SurjectiveCriterion.lean#L346).
+**`AlgebraicGeometry.Space.isLocallyOfFinitePresentation_of_affineLimit_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation/SurjectiveCriterion.lean, line 346](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FinitePresentation/SurjectiveCriterion.lean#L346).
 
 > **Stacks 0CM6.** A morphism of algebraic spaces over `S` is locally of finite
 > presentation as soon as, for every cofiltered inverse limit of affine objects of the site,
@@ -358,4 +358,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 70.3, Tag 049I](https://stacks.math.columbia.edu/tag/049I)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

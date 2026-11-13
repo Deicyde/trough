@@ -8,13 +8,13 @@ proof: formalized
 
 # 87.5 Taut ring maps
 
-Section 87.5 of the Stacks Project, [Tag 0GX1](https://stacks.math.columbia.edu/tag/0GX1). 10 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 87.5 of the Stacks Project, [Tag 0GX1](https://stacks.math.columbia.edu/tag/0GX1). 10 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0AMX, a definition
 
 [Tag 0AMX](https://stacks.math.columbia.edu/tag/0AMX) in the Stacks Project.
 
-**`RingHom.IsTaut`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/Taut.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/Taut.lean#L53).
+**`RingHom.IsTaut`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/Taut.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/AdicTopology/Taut.lean#L53).
 
 > A ring homomorphism is *taut* if the closure of the extension of each open source ideal is
 > open, and the resulting closed extended ideals form a neighbourhood basis of zero in the target.
@@ -32,7 +32,7 @@ public abbrev IsTaut {A B : Type*} [CommRing A] [TopologicalSpace A]
 
 [Tag 0AMY](https://stacks.math.columbia.edu/tag/0AMY) in the Stacks Project.
 
-**`RingHom.isTaut_iff_hasBasis_isWeakIdealOfDefinition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/Taut.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/Taut.lean#L80).
+**`RingHom.isTaut_iff_hasBasis_isWeakIdealOfDefinition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/Taut.lean, line 80](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/AdicTopology/Taut.lean#L80).
 
 > A continuous homomorphism of weakly admissible topological rings is taut exactly when the
 > closed extensions of the weak ideals of definition are weak ideals of definition and form a
@@ -43,7 +43,7 @@ public theorem isTaut_iff_hasBasis_isWeakIdealOfDefinition
     {A B : Type*} [CommRing A] [TopologicalSpace A] [IsTopologicalRing A]
     [IsLinearTopology A A] [CommRing B] [TopologicalSpace B] [IsTopologicalRing B]
     [IsLinearTopology B B] (φ : A →+* B) (hφ : Continuous φ)
-    (hA : TopologicalRing.IsWeaklyAdmissible A) (hB : TopologicalRing.IsWeaklyAdmissible B) :
+    (hA : TopologicalRing.IsWeaklyAdmissible A) :
     RingHom.IsTaut φ ↔
       (∀ I : Ideal A, TopologicalRing.IsWeakIdealOfDefinition I →
         TopologicalRing.IsWeakIdealOfDefinition (Ideal.closure (I.map φ))) ∧
@@ -56,7 +56,7 @@ public theorem isTaut_iff_hasBasis_isWeakIdealOfDefinition
 
 [Tag 0GX2](https://stacks.math.columbia.edu/tag/0GX2) in the Stacks Project.
 
-**`RingHom.isTaut_completion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/Taut.lean, line 352](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/Taut.lean#L352).
+**`RingHom.isTaut_completion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/Taut.lean, line 352](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/AdicTopology/Taut.lean#L352).
 
 > The canonical map from a linearly topologized ring to its completion is taut.
 
@@ -73,7 +73,7 @@ public theorem isTaut_completion {A : Type*} [CommRing A] [TopologicalSpace A]
 
 [Tag 0GX3](https://stacks.math.columbia.edu/tag/0GX3) in the Stacks Project.
 
-**`RingHom.isTaut_comp`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/Taut.lean, line 400](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/Taut.lean#L400).
+**`RingHom.isTaut_comp`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/Taut.lean, line 400](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/AdicTopology/Taut.lean#L400).
 
 > The composite of continuous taut homomorphisms of linearly topologized rings is taut.
 
@@ -82,7 +82,7 @@ public lemma isTaut_comp {A B C : Type*}
     [CommRing A] [TopologicalSpace A] [IsTopologicalRing A] [IsLinearTopology A A]
     [CommRing B] [TopologicalSpace B] [IsTopologicalRing B] [IsLinearTopology B B]
     [CommRing C] [TopologicalSpace C] [IsTopologicalRing C] [IsLinearTopology C C]
-    (φ : A →+* B) (ψ : B →+* C) (hφ : Continuous φ) (hψ : Continuous ψ)
+    (φ : A →+* B) (ψ : B →+* C) (hψ : Continuous ψ)
     (hφ_taut : RingHom.IsTaut φ) (hψ_taut : RingHom.IsTaut ψ) :
     RingHom.IsTaut (ψ.comp φ)
 ```
@@ -91,7 +91,7 @@ public lemma isTaut_comp {A B C : Type*}
 
 [Tag 0GX4](https://stacks.math.columbia.edu/tag/0GX4) in the Stacks Project.
 
-**`RingHom.isTaut_of_comp`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/Taut.lean, line 434](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/Taut.lean#L434).
+**`RingHom.isTaut_of_comp`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/Taut.lean, line 434](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/AdicTopology/Taut.lean#L434).
 
 > If a composite of two continuous ring homomorphisms is taut, then its second
 > map is taut.
@@ -109,7 +109,7 @@ public lemma isTaut_of_comp {A B C : Type*}
 
 [Tag 0GX5](https://stacks.math.columbia.edu/tag/0GX5) in the Stacks Project.
 
-**`RingHom.isTaut_completedTensorProduct_baseChange`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/TautTensor.lean, line 115](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/TautTensor.lean#L115).
+**`RingHom.isTaut_completedTensorProduct_baseChange`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/TautTensor.lean, line 114](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/AdicTopology/TautTensor.lean#L114).
 
 > Completed tensor-product base change preserves a taut homomorphism.
 
@@ -131,7 +131,7 @@ public lemma isTaut_completedTensorProduct_baseChange
 
 [Tag 0GX6](https://stacks.math.columbia.edu/tag/0GX6) in the Stacks Project.
 
-**`RingHom.isCountablyGenerated_nhds_zero_of_isTaut`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/Taut.lean, line 467](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/Taut.lean#L467).
+**`RingHom.isCountablyGenerated_nhds_zero_of_isTaut`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/Taut.lean, line 467](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/AdicTopology/Taut.lean#L467).
 
 > The target of a taut continuous homomorphism of linearly topologized rings has a countable
 > fundamental system of open ideals if the source does.
@@ -140,7 +140,7 @@ public lemma isTaut_completedTensorProduct_baseChange
 public lemma isCountablyGenerated_nhds_zero_of_isTaut
     {A B : Type*} [CommRing A] [TopologicalSpace A] [IsTopologicalRing A]
     [IsLinearTopology A A] [CommRing B] [TopologicalSpace B] [IsTopologicalRing B]
-    [IsLinearTopology B B] (φ : A →+* B) (hφ : Continuous φ)
+    [IsLinearTopology B B] (φ : A →+* B)
     (hφ_taut : RingHom.IsTaut φ) (hA : (nhds (0 : A)).IsCountablyGenerated) :
     (nhds (0 : B)).IsCountablyGenerated
 ```
@@ -149,7 +149,7 @@ public lemma isCountablyGenerated_nhds_zero_of_isTaut
 
 [Tag 0GX7](https://stacks.math.columbia.edu/tag/0GX7) in the Stacks Project.
 
-**`RingHom.isWeaklyPreAdmissible_of_isTaut`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/Taut.lean, line 489](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/Taut.lean#L489).
+**`RingHom.isWeaklyPreAdmissible_of_isTaut`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/Taut.lean, line 489](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/AdicTopology/Taut.lean#L489).
 
 > Weak pre-admissibility ascends along a continuous taut homomorphism of
 > linearly topologized rings.
@@ -167,7 +167,7 @@ public lemma isWeaklyPreAdmissible_of_isTaut
 
 [Tag 0GX8](https://stacks.math.columbia.edu/tag/0GX8) in the Stacks Project.
 
-**`RingHom.isPreAdmissible_of_isTaut`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/Taut.lean, line 525](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/Taut.lean#L525).
+**`RingHom.isPreAdmissible_of_isTaut`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/Taut.lean, line 525](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/AdicTopology/Taut.lean#L525).
 
 > Pre-admissibility ascends along a continuous taut homomorphism of linearly topologized
 > rings.
@@ -175,7 +175,7 @@ public lemma isWeaklyPreAdmissible_of_isTaut
 ```lean
 public lemma isPreAdmissible_of_isTaut {A : Type u} {B : Type v} [CommRing A] [TopologicalSpace A]
     [IsTopologicalRing A] [IsLinearTopology A A] [CommRing B] [TopologicalSpace B]
-    [IsTopologicalRing B] [IsLinearTopology B B] (φ : A →+* B) (hφ : Continuous φ)
+    [IsTopologicalRing B] [IsLinearTopology B B] (φ : A →+* B)
     (hφ_taut : RingHom.IsTaut φ) (hA : TopologicalRing.IsPreAdmissible A) :
     TopologicalRing.IsPreAdmissible B
 ```
@@ -184,7 +184,7 @@ public lemma isPreAdmissible_of_isTaut {A : Type u} {B : Type v} [CommRing A] [T
 
 [Tag 0APT](https://stacks.math.columbia.edu/tag/0APT) in the Stacks Project.
 
-**`RingHom.isOpenMap_of_isTaut_of_denseRange`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/Taut.lean, line 284](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/Taut.lean#L284). The attribute's comment: “openness”.
+**`RingHom.isOpenMap_of_isTaut_of_denseRange`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/Taut.lean, line 284](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/AdicTopology/Taut.lean#L284). The attribute's comment: “openness”.
 
 > A continuous taut map with dense image from a complete countably based linearly
 > topologized ring to a separated linearly topologized ring is open.
@@ -196,7 +196,7 @@ public lemma isOpenMap_of_isTaut_of_denseRange (φ : A →+* B) (hφ : Continuou
     (hdense : DenseRange φ) : IsOpenMap φ
 ```
 
-**`RingHom.surjective_of_isTaut_of_denseRange`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/Taut.lean, line 293](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/Taut.lean#L293). The attribute's comment: “surjectivity”.
+**`RingHom.surjective_of_isTaut_of_denseRange`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/Taut.lean, line 293](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/AdicTopology/Taut.lean#L293). The attribute's comment: “surjectivity”.
 
 > A continuous taut map with dense image under the completeness and countability hypotheses
 > is surjective.
@@ -208,7 +208,7 @@ public lemma surjective_of_isTaut_of_denseRange (φ : A →+* B) (hφ : Continuo
     (hdense : DenseRange φ) : Function.Surjective φ
 ```
 
-**`RingHom.completeSpace_of_isTaut_of_denseRange`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/Taut.lean, line 309](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/Taut.lean#L309). The attribute's comment: “completeness of the target”.
+**`RingHom.completeSpace_of_isTaut_of_denseRange`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/Taut.lean, line 309](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/AdicTopology/Taut.lean#L309). The attribute's comment: “completeness of the target”.
 
 > The separated target of a continuous taut dense map from a complete countably based
 > linearly topologized ring is complete.
@@ -221,7 +221,7 @@ public lemma completeSpace_of_isTaut_of_denseRange (φ : A →+* B) (hφ : Conti
     @CompleteSpace B (IsTopologicalAddGroup.rightUniformSpace B)
 ```
 
-**`RingHom.isClosed_ker_of_continuous`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/Taut.lean, line 323](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/Taut.lean#L323). The attribute's comment: “closed kernel”.
+**`RingHom.isClosed_ker_of_continuous`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/Taut.lean, line 323](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/AdicTopology/Taut.lean#L323). The attribute's comment: “closed kernel”.
 
 > The kernel of a continuous ring homomorphism into a space with closed points is closed.
 
@@ -231,7 +231,7 @@ public lemma isClosed_ker_of_continuous {R S : Type*} [CommRing R] [TopologicalS
     IsClosed (RingHom.ker φ : Set R)
 ```
 
-**`RingHom.quotientKerEquiv_of_isTaut_of_denseRange`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/Taut.lean, line 332](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Algebra/AdicTopology/Taut.lean#L332). The attribute's comment: “quotient presentation”.
+**`RingHom.quotientKerEquiv_of_isTaut_of_denseRange`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/AdicTopology/Taut.lean, line 332](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/AdicTopology/Taut.lean#L332). The attribute's comment: “quotient presentation”.
 
 > The canonical map from the quotient by the kernel to the target is a homeomorphic ring
 > equivalence.
@@ -252,4 +252,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 87.5, Tag 0GX1](https://stacks.math.columbia.edu/tag/0GX1)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

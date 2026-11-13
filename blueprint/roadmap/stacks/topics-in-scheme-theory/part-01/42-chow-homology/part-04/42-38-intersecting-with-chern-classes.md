@@ -8,13 +8,13 @@ proof: formalized
 
 # 42.38 Intersecting with Chern classes
 
-Section 42.38 of the Stacks Project, [Tag 02U4](https://stacks.math.columbia.edu/tag/02U4). 11 tags here are carried by 68 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 42.38 of the Stacks Project, [Tag 02U4](https://stacks.math.columbia.edu/tag/02U4). 11 tags here are carried by 60 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 02U5, a definition
 
 [Tag 02U5](https://stacks.math.columbia.edu/tag/02U5) in the Stacks Project.
 
-**`Stacks.Chow.GenuineChern.chernCapOnCycles`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/CapOnCycles.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/CapOnCycles.lean#L100). The attribute's comment: “the operation”.
+**`Stacks.Chow.GenuineChern.chernCapOnCycles`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/CapOnCycles.lean, line 100](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/CapOnCycles.lean#L100). The attribute's comment: “the operation”.
 
 > **Stacks 02U5.** Intersection with the `j`-th Chern class of a finite locally free module of
 > rank `r`, `c_j(ℰ) ∩ - : Z_k(X) ⟶ A_{k-j}(X)`, for the Chern classes of Stacks 02U0: the
@@ -25,7 +25,7 @@ def chernCapOnCycles (k : ℤ) (j : Fin (r + 1)) :
     CycleGroup C sX k →+ chowGroup C sX (k - (j : ℤ))
 ```
 
-**`Stacks.Chow.GenuineChern.chernCapOnCycles_integral_cycle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/CapOnCycles.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/CapOnCycles.lean#L109). The attribute's comment: “clause (1)”.
+**`Stacks.Chow.GenuineChern.chernCapOnCycles_integral_cycle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/CapOnCycles.lean, line 109](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/CapOnCycles.lean#L109). The attribute's comment: “clause (1)”.
 
 > **Stacks 02U5, clause (1)**, on Chow groups: for an integral closed subscheme
 > `i : W ⟶ X` of delta-dimension `k`, `c_j(ℰ) ∩ [W] = i_*(c_j(i^*ℰ) ∩ [W])`, with the class
@@ -43,7 +43,7 @@ theorem chernCapOnCycles_integral_cycle (k : ℤ) (j : Fin (r + 1)) (W : X.Ideal
           (W.subschemeι ≫ sX) k j)
 ```
 
-**`Stacks.Chow.GenuineChern.chernCapOnCycles_finsum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/CapOnCycles.lean, line 128](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/CapOnCycles.lean#L128). The attribute's comment: “clause (2)”.
+**`Stacks.Chow.GenuineChern.chernCapOnCycles_finsum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/CapOnCycles.lean, line 128](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/CapOnCycles.lean#L128). The attribute's comment: “clause (2)”.
 
 > **Stacks 02U5, clause (2)**, at the level of cycles: on a locally finite presentation
 > `α = ∑ n_t [W_t]` by integral closed subschemes of delta-dimension `k`, `c_j(ℰ) ∩ α` is the class
@@ -65,7 +65,7 @@ theorem chernCapOnCycles_finsum (k : ℤ) (j : Fin (r + 1)) {J : Type u}
           (chernCycleRule C r) (W t) (hW t) (hDim t)).1 x
 ```
 
-**`Stacks.Chow.GenuineChern.chernCapOnCycles_locallyFiniteSum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/CapOnCyclesLocallyFiniteSum.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/CapOnCyclesLocallyFiniteSum.lean#L137). The attribute's comment: “clause (2)”.
+**`Stacks.Chow.GenuineChern.chernCapOnCycles_locallyFiniteSum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/CapOnCyclesLocallyFiniteSum.lean, line 137](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/CapOnCyclesLocallyFiniteSum.lean#L137). The attribute's comment: “clause (2)”.
 
 > **Stacks 02U5, clause (2).** Let `α = ∑ n_t [W_t]` be a `k`-cycle, presented by a locally
 > finite family of integral closed subschemes `i_t : W_t ⟶ X` of delta-dimension `k`, and let
@@ -107,7 +107,7 @@ theorem chernCapOnCycles_locallyFiniteSum (k : ℤ) (j : Fin (r + 1)) {J : Type 
 
 [Tag 02U6](https://stacks.math.columbia.edu/tag/02U6) in the Stacks Project.
 
-**`Stacks.Chow.exists_isChernCapFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassHigher/ProjectiveBundleExistence.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassHigher/ProjectiveBundleExistence.lean#L157). The attribute's comment: “existence; carries the projective bundle as a flat morphism of relative dimension r - 1 with a first Chern class cap operator for its twist (Stacks 01O4, 02SO, 02TI), Stacks 02S1 for its projection, and the surjectivity half of Stacks 02TX”.
+**`Stacks.Chow.exists_isChernCapFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassHigher/ProjectiveBundleExistence.lean, line 157](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChernClassHigher/ProjectiveBundleExistence.lean#L157). The attribute's comment: “existence; carries the projective bundle as a flat morphism of relative dimension r - 1 with a first Chern class cap operator for its twist (Stacks 01O4, 02SO, 02TI), Stacks 02S1 for its projection, and the surjectivity half of Stacks 02TX”.
 
 > Granted the surjectivity of the projective space bundle map of Stacks 02TX, every class
 > `α ∈ A_k(X)` has a family of Chern class cap products: classes `α_j ∈ A_{k-j}(X)` with `α_0 = α`
@@ -121,7 +121,7 @@ theorem exists_isChernCapFamily
       IsChernCapFamily C sX sP π hsP r hπ hfac twist k α c
 ```
 
-**`Stacks.Chow.existsUnique_isChernCapFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassHigher/ProjectiveBundleExistence.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassHigher/ProjectiveBundleExistence.lean#L183). The attribute's comment: “existence and uniqueness together; carries the projective bundle as a flat morphism of relative dimension r - 1 with a first Chern class cap operator for its twist (Stacks 01O4, 02SO, 02TI), Stacks 02S1 for its projection, and both halves of Stacks 02TX”.
+**`Stacks.Chow.existsUnique_isChernCapFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassHigher/ProjectiveBundleExistence.lean, line 183](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChernClassHigher/ProjectiveBundleExistence.lean#L183). The attribute's comment: “existence and uniqueness together; carries the projective bundle as a flat morphism of relative dimension r - 1 with a first Chern class cap operator for its twist (Stacks 01O4, 02SO, 02TI), Stacks 02S1 for its projection, and both halves of Stacks 02TX”.
 
 > Granted both halves of Stacks 02TX, a class `α ∈ A_k(X)` has exactly one family of Chern class
 > cap products.
@@ -135,7 +135,7 @@ theorem existsUnique_isChernCapFamily
       IsChernCapFamily C sX sP π hsP r hπ hfac twist k α c
 ```
 
-**`Stacks.Chow.eq_of_isChernCapFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassHigher/ProjectiveBundleRelation.lean, line 356](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassHigher/ProjectiveBundleRelation.lean#L356). The attribute's comment: “uniqueness; carries the projective bundle as a flat morphism of relative dimension r - 1 with a first Chern class cap operator for its twist (Stacks 01O4, 02SO, 02TI), Stacks 02S1 for its projection, and the injectivity half of Stacks 02TX”.
+**`Stacks.Chow.eq_of_isChernCapFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassHigher/ProjectiveBundleRelation.lean, line 356](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChernClassHigher/ProjectiveBundleRelation.lean#L356). The attribute's comment: “uniqueness; carries the projective bundle as a flat morphism of relative dimension r - 1 with a first Chern class cap operator for its twist (Stacks 01O4, 02SO, 02TI), Stacks 02S1 for its projection, and the injectivity half of Stacks 02TX”.
 
 > **Stacks 02U6, uniqueness.** Granted the injectivity of the projective space bundle map of
 > Stacks 02TX, there is at most one family of Chern class cap products of a given class: the
@@ -152,7 +152,7 @@ theorem eq_of_isChernCapFamily (hinj : ProjectiveBundleRelationInjective C sX sP
     (hd : IsChernCapFamily C sX sP π hsP r hπ hfac twist k α d) : c = d
 ```
 
-**`Stacks.Chow.GenuineChern.isChernCapFamilyOfRank_chernCapOnCycles`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/CapOnCyclesCharacterization.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/CapOnCyclesCharacterization.lean#L74).
+**`Stacks.Chow.GenuineChern.isChernCapFamilyOfRank_chernCapOnCycles`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/CapOnCyclesCharacterization.lean, line 74](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/CapOnCyclesCharacterization.lean#L74).
 
 > **Stacks 02U6.** Let `ℰ` be finite locally free of rank `r` on `X`, with projective bundle
 > `(π : 𝐏(ℰ) ⟶ X, 𝒪_{𝐏(ℰ)}(1))`, and let `α` be a `k`-cycle on `X`. The classes
@@ -173,7 +173,7 @@ theorem isChernCapFamilyOfRank_chernCapOnCycles (k : ℤ) (α : CycleGroup C sX 
 
 [Tag 02U7](https://stacks.math.columbia.edu/tag/02U7) in the Stacks Project.
 
-**`Stacks.Chow.isChernCapFamily_rationallyEquivalent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassHigher/ProjectiveBundleRelation.lean, line 391](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassHigher/ProjectiveBundleRelation.lean#L391). The attribute's comment: “carries the projective bundle as a flat morphism of relative dimension r - 1 with a first Chern class cap operator for its twist (Stacks 01O4, 02SO, 02TI), Stacks 02S1 for its projection, the injectivity half of Stacks 02TX, and the cap products of Stacks 02U5 as families satisfying the characterization of Stacks 02U6”.
+**`Stacks.Chow.isChernCapFamily_rationallyEquivalent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassHigher/ProjectiveBundleRelation.lean, line 391](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChernClassHigher/ProjectiveBundleRelation.lean#L391). The attribute's comment: “carries the projective bundle as a flat morphism of relative dimension r - 1 with a first Chern class cap operator for its twist (Stacks 01O4, 02SO, 02TI), Stacks 02S1 for its projection, the injectivity half of Stacks 02TX, and the cap products of Stacks 02U5 as families satisfying the characterization of Stacks 02U6”.
 
 > **Stacks 02U7.** If `α` and `β` are rationally equivalent `k`-cycles on `X`, then the Chern
 > class cap products of `α` and of `β` agree: `c_j(ℰ) ∩ α = c_j(ℰ) ∩ β` in `A_{k-j}(X)`.
@@ -194,7 +194,7 @@ theorem isChernCapFamily_rationallyEquivalent
       (QuotientAddGroup.mk' (rationalEquivalences C sX k) β) d) : c = d
 ```
 
-**`Stacks.Chow.GenuineChern.chernCapOnCycles_eq_of_rationallyEquivalent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/CapOnCyclesDescent.lean, line 390](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/CapOnCyclesDescent.lean#L390).
+**`Stacks.Chow.GenuineChern.chernCapOnCycles_eq_of_rationallyEquivalent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/CapOnCyclesDescent.lean, line 390](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/CapOnCyclesDescent.lean#L390).
 
 > **Stacks 02U7.** Rationally equivalent `k`-cycles have the same cap products with the Chern
 > classes: the operation of Stacks 02U5 factors through `A_k(X)`.
@@ -209,7 +209,7 @@ theorem chernCapOnCycles_eq_of_rationallyEquivalent (k : ℤ) (j : Fin (r + 1))
 
 [Tag 02U9](https://stacks.math.columbia.edu/tag/02U9) in the Stacks Project.
 
-**`Stacks.Chow.isChernCapFamily_properPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassHigher/ProjectiveBundleProperPushforward.lean, line 214](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassHigher/ProjectiveBundleProperPushforward.lean#L214). The attribute's comment: “carries both projective bundles as flat morphisms of relative dimension r - 1 with first Chern class cap operators for their twists (Stacks 01O4, 02SO, 02TI), Stacks 02S1 for their projections, a proper morphism between the two bundles lying over p, the injectivity half of Stacks 02TX over the target, the compatibility of the summands of the relation with proper pushforward (Stacks 02SU and Stacks 02RG), and the cap products of Stacks 02U5 as families satisfying the characterization of Stacks 02U6”.
+**`Stacks.Chow.isChernCapFamily_properPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassHigher/ProjectiveBundleProperPushforward.lean, line 214](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChernClassHigher/ProjectiveBundleProperPushforward.lean#L214). The attribute's comment: “carries both projective bundles as flat morphisms of relative dimension r - 1 with first Chern class cap operators for their twists (Stacks 01O4, 02SO, 02TI), Stacks 02S1 for their projections, a proper morphism between the two bundles lying over p, the injectivity half of Stacks 02TX over the target, the compatibility of the summands of the relation with proper pushforward (Stacks 02SU and Stacks 02RG), and the cap products of Stacks 02U5 as families satisfying the characterization of Stacks 02U6”.
 
 > **Stacks 02U9.** Proper pushforward commutes with the Chern class cap products: if `c` is the
 > family of Chern class cap products of `α ∈ A_k(X)` for `p^*ℰ` and `e` is the family of Chern
@@ -234,7 +234,7 @@ theorem isChernCapFamily_properPushforward
     e = properPushforwardChernFamily C sX sY r p hp k c
 ```
 
-**`Stacks.Chow.GenuineChern.properChowPushforward_chernCapOnCycles`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/CapOnCyclesCharacterization.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/CapOnCyclesCharacterization.lean#L90).
+**`Stacks.Chow.GenuineChern.properChowPushforward_chernCapOnCycles`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/CapOnCyclesCharacterization.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/CapOnCyclesCharacterization.lean#L90).
 
 > **Stacks 02U9.** Let `p : X ⟶ Y` be a proper morphism of schemes locally of finite type over
 > `S`, `ℰ` finite locally free of rank `r` on `Y` and `α` a `k`-cycle on `X`. Then
@@ -257,7 +257,7 @@ theorem properChowPushforward_chernCapOnCycles {X Y : Scheme.{u}} (sX : X ⟶ C.
 
 [Tag 02U8](https://stacks.math.columbia.edu/tag/02U8) in the Stacks Project.
 
-**`Stacks.Chow.isChernCapFamily_flatPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassHigher/ProjectiveBundleFlatPullback.lean, line 202](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassHigher/ProjectiveBundleFlatPullback.lean#L202). The attribute's comment: “carries both projective bundles as flat morphisms of relative dimension r - 1 with first Chern class cap operators for their twists (Stacks 01O4, 02SO, 02TI), Stacks 02S1 for the three flat morphisms, the injectivity half of Stacks 02TX over X, the compatibility of the summands with flat pullback (Stacks 02SS and 02RD), and the cap products of Stacks 02U5 as families satisfying the characterization of Stacks 02U6”.
+**`Stacks.Chow.isChernCapFamily_flatPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassHigher/ProjectiveBundleFlatPullback.lean, line 202](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChernClassHigher/ProjectiveBundleFlatPullback.lean#L202). The attribute's comment: “carries both projective bundles as flat morphisms of relative dimension r - 1 with first Chern class cap operators for their twists (Stacks 01O4, 02SO, 02TI), Stacks 02S1 for the three flat morphisms, the injectivity half of Stacks 02TX over X, the compatibility of the summands with flat pullback (Stacks 02SS and 02RD), and the cap products of Stacks 02U5 as families satisfying the characterization of Stacks 02U6”.
 
 > Flat pullback commutes with the Chern class cap products. Assume the injectivity `hinjX` of
 > the projective-bundle relation over `X` and the compatibility `hcompat` of its summands with flat
@@ -280,7 +280,7 @@ theorem isChernCapFamily_flatPullback
     e = flatPullbackChernFamily C sX sY r f hf d hd hfacf k c
 ```
 
-**`Stacks.Chow.GenuineChern.flatPullbackChow_chernCapOnCycles`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/CapOnCyclesCharacterization.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/CapOnCyclesCharacterization.lean#L112).
+**`Stacks.Chow.GenuineChern.flatPullbackChow_chernCapOnCycles`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/CapOnCyclesCharacterization.lean, line 112](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/CapOnCyclesCharacterization.lean#L112).
 
 > **Stacks 02U8.** Let `f : X ⟶ Y` be a flat morphism of relative dimension `d` between schemes
 > locally of finite type over `S`, `ℰ` finite locally free of rank `r` on `Y` and `α` a `k`-cycle
@@ -303,7 +303,7 @@ theorem flatPullbackChow_chernCapOnCycles {X Y : Scheme.{u}} (sX : X ⟶ C.S)
           (flatPullback C sX sY f hf d hd k α))
 ```
 
-**`Stacks.Chow.GenuineChern.chernCap_flatPullback_heq_general`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/CapRuleFlatGeneral.lean, line 46](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/CapRuleFlatGeneral.lean#L46). The attribute's comment: “Stated for a module on Y identified with the pullback of E, as a heterogeneous equality between the Chow groups of the two equal degrees (k + d) - j and (k - j) + d.”.
+**`Stacks.Chow.GenuineChern.chernCap_flatPullback_heq_general`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/CapRuleFlatGeneral.lean, line 46](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/CapRuleFlatGeneral.lean#L46). The attribute's comment: “Stated for a module on Y identified with the pullback of E, as a heterogeneous equality between the Chow groups of the two equal degrees (k + d) - j and (k - j) + d.”.
 
 > **Stacks 02U8 for the cap products of Stacks 02U6, in every rank.** For `f : Y ⟶ X` flat of
 > relative dimension `d` over the base, `ℰ` of rank `r` on `X` and `ℰ' ≅ f^*ℰ`,
@@ -335,7 +335,7 @@ theorem chernCap_flatPullback_heq_general {X Y : Scheme.{u}} (sX : X ⟶ C.S)
 
 [Tag 0B7G](https://stacks.math.columbia.edu/tag/0B7G) in the Stacks Project.
 
-**`Stacks.Chow.GenuineChern.chernCapOnCycles_gysin`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/CapOnCyclesGysin.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/CapOnCyclesGysin.lean#L63).
+**`Stacks.Chow.GenuineChern.chernCapOnCycles_gysin`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/CapOnCyclesGysin.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/CapOnCyclesGysin.lean#L63).
 
 > **Stacks 0B7G.** Let `ℰ` be finite locally free of rank `r` on `X` and let
 > `(ℒ, s, i : D ⟶ X)` be as in Definition 02T8. Let `α ∈ A_{k+1}(X)`, let `a` be a cycle
@@ -364,7 +364,7 @@ theorem chernCapOnCycles_gysin (E : X.Modules) (r : ℕ)
           (chernCapOnCycles C sX E r (k + 1) j a))
 ```
 
-**`Stacks.Chow.GenuineChern.chernCap_gysin`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/CapRuleGysin.lean, line 240](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/CapRuleGysin.lean#L240).
+**`Stacks.Chow.GenuineChern.chernCap_gysin`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/CapRuleGysin.lean, line 240](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/CapRuleGysin.lean#L240).
 
 > **Stacks 0B7G.** Let `ℰ` be finite locally free of rank `r` on `Y` and let `(ℒ, s, i : D ⟶ Y)`
 > be a triple as in Definition 02T8. Then for every `0 ≤ j ≤ r` and every `α ∈ A_{k+1}(Y)`
@@ -391,7 +391,7 @@ theorem chernCap_gysin (E : Y.Modules) (r : ℕ)
 
 [Tag 0B7H](https://stacks.math.columbia.edu/tag/0B7H) in the Stacks Project.
 
-**`Stacks.Chow.GenuineChern.chernClassBivariantClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/BivariantChernClass.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/BivariantChernClass.lean#L77).
+**`Stacks.Chow.GenuineChern.chernClassBivariantClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/BivariantChernClass.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/BivariantChernClass.lean#L77).
 
 > For a finite locally free module `ℰ` of rank `r` on `X` and `0 ≤ j ≤ r`, the rule assigning
 > to `f : X' ⟶ X` the operation `c_j(f^*ℰ) ∩ - : A_k(X') ⟶ A_{k-j}(X')` is a bivariant class of
@@ -404,7 +404,7 @@ def chernClassBivariantClass :
         (pullbackPreservesRank_of_isFiniteLocallyFreeOfRank F r) j c}
 ```
 
-**`Stacks.Chow.GenuineChern.chernClassBivariantClassOnCycles`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/BivariantChernClassOnCycles.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/BivariantChernClassOnCycles.lean#L62).
+**`Stacks.Chow.GenuineChern.chernClassBivariantClassOnCycles`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/BivariantChernClassOnCycles.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/BivariantChernClassOnCycles.lean#L62).
 
 > **Stacks 0B7H.** For a locally free module `ℰ` of rank `r` on `X` and `0 ≤ j ≤ r`, the rule
 > assigning to `f : X' ⟶ X` the operation `c_j(f^*ℰ) ∩ - : A_k(X') ⟶ A_{k-j}(X')` of Stacks 02U5 is
@@ -428,7 +428,7 @@ def chernClassBivariantClassOnCycles :
 
 [Tag 0FE1](https://stacks.math.columbia.edu/tag/0FE1) in the Stacks Project.
 
-**`Stacks.Chow.chernClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassHigher/TotalChernClassOfModule.lean, line 127](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassHigher/TotalChernClassOfModule.lean#L127). The attribute's comment: “c\_i(E) is the degree-i bivariant class of Stacks 0B7H”.
+**`Stacks.Chow.chernClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassHigher/TotalChernClassOfModule.lean, line 127](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChernClassHigher/TotalChernClassOfModule.lean#L127). The attribute's comment: “c\_i(E) is the degree-i bivariant class of Stacks 0B7H”.
 
 > **Stacks 0FE1, the `i`-th Chern class.** For `0 ≤ i ≤ r`, the `i`-th Chern class
 > `c_i(ℰ) ∈ A^i(X)` of a module `ℰ` that is finite locally free of rank `r`: it *is* the bivariant
@@ -440,7 +440,7 @@ def chernClass (i : Fin (r + 1)) :
     BivariantClass C G sX sX (𝟙 X) (Category.id_comp sX) (i : ℤ)
 ```
 
-**`Stacks.Chow.totalChernClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassHigher/TotalChernClassOfModule.lean, line 165](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassHigher/TotalChernClassOfModule.lean#L165). The attribute's comment: “c(E) = c\_0(E) + ... + c\_r(E) is the formal sum of the c\_i(E)”.
+**`Stacks.Chow.totalChernClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassHigher/TotalChernClassOfModule.lean, line 165](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChernClassHigher/TotalChernClassOfModule.lean#L165). The attribute's comment: “c(E) = c\_0(E) + ... + c\_r(E) is the formal sum of the c\_i(E)”.
 
 > **Stacks 0FE1, the total Chern class.** The total Chern class
 > `c(ℰ) = c_0(ℰ) + c_1(ℰ) + ⋯ + c_r(ℰ)` of a module `ℰ` that is finite locally free of rank `r`:
@@ -451,7 +451,7 @@ def chernClass (i : Fin (r + 1)) :
 def totalChernClass : nonhomogeneousBivariantGroup C G sX sX (𝟙 X) (Category.id_comp sX)
 ```
 
-**`Stacks.Chow.canonicalChernClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/TotalChernClassOfModule.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/TotalChernClassOfModule.lean#L101). The attribute's comment: “c\_i(E) ∈ A^i(X), the degree-i bivariant class of Stacks 0B7H, with the genuine cap products of Stacks 02U6 and the canonical Gysin system; nothing assumed”.
+**`Stacks.Chow.canonicalChernClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/TotalChernClassOfModule.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/TotalChernClassOfModule.lean#L101). The attribute's comment: “c\_i(E) ∈ A^i(X), the degree-i bivariant class of Stacks 0B7H, with the genuine cap products of Stacks 02U6 and the canonical Gysin system; nothing assumed”.
 
 > **Stacks 0FE1, the `i`-th Chern class.** For a module `ℰ` that is finite locally free of rank
 > `r` on `X` and `0 ≤ i ≤ r`, the `i`-th Chern class `c_i(ℰ) ∈ A^i(X)`: the bivariant class of
@@ -464,7 +464,7 @@ def canonicalChernClass (i : Fin (r + 1)) :
     CanonicalBivariantClass C sX sX (𝟙 X) (Category.id_comp sX) (i : ℤ)
 ```
 
-**`Stacks.Chow.canonicalTotalChernClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/TotalChernClassOfModule.lean, line 144](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/TotalChernClassOfModule.lean#L144). The attribute's comment: “c(E) = c\_0(E) + ... + c\_r(E), the formal sum of the c\_i(E) as a nonhomogeneous bivariant class on X, with the genuine cap products and the canonical Gysin system; nothing assumed”.
+**`Stacks.Chow.canonicalTotalChernClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/TotalChernClassOfModule.lean, line 144](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/TotalChernClassOfModule.lean#L144). The attribute's comment: “c(E) = c\_0(E) + ... + c\_r(E), the formal sum of the c\_i(E) as a nonhomogeneous bivariant class on X, with the genuine cap products and the canonical Gysin system; nothing assumed”.
 
 > **Stacks 0FE1, the total Chern class.** For a module `ℰ` that is finite locally free of rank
 > `r` on `X`, the total Chern class `c(ℰ) = c_0(ℰ) + c_1(ℰ) + ⋯ + c_r(ℰ)`: the formal sum of the
@@ -481,7 +481,7 @@ def canonicalTotalChernClass :
 
 [Tag 02UA](https://stacks.math.columbia.edu/tag/02UA) in the Stacks Project.
 
-**`Stacks.Chow.isChernCapFamily_bivariantClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassHigher/ProjectiveBundleBivariantClass.lean, line 342](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassHigher/ProjectiveBundleBivariantClass.lean#L342). The attribute's comment: “clause (2), read on a test scheme; carries both projective bundles as flat morphisms of relative dimension r - 1 with first Chern class cap operators for their twists (01O4, 02SO, 02TI, 02S1), the injectivity half of 02TX downstairs, the compatibility of the summands with the cap product of the bivariant class (0B7B), and 02U5 as 02U6-families”.
+**`Stacks.Chow.isChernCapFamily_bivariantClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassHigher/ProjectiveBundleBivariantClass.lean, line 342](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChernClassHigher/ProjectiveBundleBivariantClass.lean#L342). The attribute's comment: “clause (2), read on a test scheme; carries both projective bundles as flat morphisms of relative dimension r - 1 with first Chern class cap operators for their twists (01O4, 02SO, 02TI, 02S1), the injectivity half of 02TX downstairs, the compatibility of the summands with the cap product of the bivariant class (0B7B), and 02U5 as 02U6-families”.
 
 > **Stacks 02UA (2).** A bivariant class carries the Chern class cap products of `ℰ` to those
 > of `f^*ℰ`: if `d` is the family of Chern class cap products of `α ∈ A_k(T)` for `ℰ|_T` and `e` is
@@ -510,7 +510,7 @@ theorem isChernCapFamily_bivariantClass
     e = bivariantChernFamily C G sX' sX f hf p c g r k d
 ```
 
-**`Stacks.Chow.chernCapOnChow_comm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassHigher/ProjectiveBundleBivariantClass.lean, line 435](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassHigher/ProjectiveBundleBivariantClass.lean#L435). The attribute's comment: “the 'in particular' clause, for the cap products of Stacks 02U6; carries both projective bundles of F and that of E as flat morphisms of relative dimension one less than the rank, with first Chern class cap operators for their twists (01O4, 02SO, 02TI, 02S1), both halves of 02TX, and the commutation of c\_j(F) with the summands of E's relation (02SS and 02U8)”.
+**`Stacks.Chow.chernCapOnChow_comm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassHigher/ProjectiveBundleBivariantClass.lean, line 435](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChernClassHigher/ProjectiveBundleBivariantClass.lean#L435). The attribute's comment: “the 'in particular' clause, for the cap products of Stacks 02U6; carries both projective bundles of F and that of E as flat morphisms of relative dimension one less than the rank, with first Chern class cap operators for their twists (01O4, 02SO, 02TI, 02S1), both halves of 02TX, and the commutation of c\_j(F) with the summands of E's relation (02SS and 02U8)”.
 
 > **The "in particular" of Stacks 02UA.** The Chern class cap products of two finite locally
 > free modules commute:
@@ -539,7 +539,7 @@ theorem chernCapOnChow_comm
           (chernCapOnChow C sX sP π hsP r hπ hfac twist hinj hsurj k i α))
 ```
 
-**`Stacks.Chow.BivariantClass.heq_bivariantCompositeOfInvertible_chernClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassHigher/ProjectiveBundleBivariantClassGenuine.lean, line 386](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassHigher/ProjectiveBundleBivariantClassGenuine.lean#L386). The attribute's comment: “(2), for a homogeneous c in A^p(X' -> X), the bivariant Chern classes of Stacks 0B7H and the composition of Stacks 0B75 at the Gysin system of the first Chern class of an invertible module; the two composites are classes for f ≫ 𝟙 X and 𝟙 X' ≫ f of degrees p + j and j + p, whence the heterogeneous equality”.
+**`Stacks.Chow.BivariantClass.heq_bivariantCompositeOfInvertible_chernClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassHigher/ProjectiveBundleBivariantClassGenuine.lean, line 386](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChernClassHigher/ProjectiveBundleBivariantClassGenuine.lean#L386). The attribute's comment: “(2), for a homogeneous c in A^p(X' -> X), the bivariant Chern classes of Stacks 0B7H and the composition of Stacks 0B75 at the Gysin system of the first Chern class of an invertible module; the two composites are classes for f ≫ 𝟙 X and 𝟙 X' ≫ f of degrees p + j and j + p, whence the heterogeneous equality”.
 
 > **Stacks 02UA (2).** Let `f : X' ⟶ X` be locally of finite type, let `c ∈ A^p(X' ⟶ X)` and let
 > `ℰ` be finite locally free of rank `r` on `X`. Then for `0 ≤ j ≤ r`
@@ -561,7 +561,7 @@ theorem BivariantClass.heq_bivariantCompositeOfInvertible_chernClass
         (GenuineChern.chernClass C sX' ((Scheme.Modules.pullback f).obj F) r j) c
 ```
 
-**`Stacks.Chow.BivariantClass.heq_mulId_chernClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassHigher/ProjectiveBundleBivariantClassGenuine.lean, line 408](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassHigher/ProjectiveBundleBivariantClassGenuine.lean#L408). The attribute's comment: “(1), for the product of A^*(X) given by the composition of Stacks 0B75 at the Gysin system of the first Chern class of an invertible module, against every homogeneous c in A^q(X); the two products have degrees q + j and j + q, whence the heterogeneous equality”.
+**`Stacks.Chow.BivariantClass.heq_mulId_chernClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassHigher/ProjectiveBundleBivariantClassGenuine.lean, line 408](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChernClassHigher/ProjectiveBundleBivariantClassGenuine.lean#L408). The attribute's comment: “(1), for the product of A^*(X) given by the composition of Stacks 0B75 at the Gysin system of the first Chern class of an invertible module, against every homogeneous c in A^q(X); the two products have degrees q + j and j + q, whence the heterogeneous equality”.
 
 > **Stacks 02UA (1).** The Chern class `c_j(ℰ) ∈ A^j(X)` of a finite locally free module of rank
 > `r` is in the center of `A^*(X)`: for every `c ∈ A^q(X)`,
@@ -580,7 +580,7 @@ theorem BivariantClass.heq_mulId_chernClass {q : ℤ}
       (GenuineChern.chernClass C sX F r j).mulId C sX c
 ```
 
-**`Stacks.Chow.GenuineChern.comp_chernClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/BivariantChernCentral.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/BivariantChernCentral.lean#L124). The attribute's comment: “(2): c ∘ c\_j(E) = c\_j(f^*E) ∘ c in A^\{p+j}(X' → X) for every f : X' → X locally of finite type and every bivariant class c in A^p(X' → X) of Stacks 0B76”.
+**`Stacks.Chow.GenuineChern.comp_chernClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/BivariantChernCentral.lean, line 124](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/BivariantChernCentral.lean#L124). The attribute's comment: “(2): c ∘ c\_j(E) = c\_j(f^*E) ∘ c in A^\{p+j}(X' → X) for every f : X' → X locally of finite type and every bivariant class c in A^p(X' → X) of Stacks 0B76”.
 
 > **Stacks 02UA (2).** Let `ℰ` be a locally free `𝒪_X`-module of rank `r`, let `f : X' ⟶ X` be
 > locally of finite type and let `c ∈ A^p(X' ⟶ X)` be a bivariant class. Then
@@ -604,7 +604,7 @@ theorem comp_chernClass {X' : Scheme.{u}} {sX' : X' ⟶ C.S} [LocallyOfFiniteTyp
         (Iso.refl X') (by simp)
 ```
 
-**`Stacks.Chow.GenuineChern.chernClass_mem_center`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/BivariantChernCentral.lean, line 229](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/BivariantChernCentral.lean#L229). The attribute's comment: “(1): c\_j(E) in A^j(X) is in the center of the Chow cohomology ring A^*(X) of Stacks 0B7E, for the bivariant Chern class of Stacks 0B7H”.
+**`Stacks.Chow.GenuineChern.chernClass_mem_center`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/BivariantChernCentral.lean, line 229](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/BivariantChernCentral.lean#L229). The attribute's comment: “(1): c\_j(E) in A^j(X) is in the center of the Chow cohomology ring A^*(X) of Stacks 0B7E, for the bivariant Chern class of Stacks 0B7H”.
 
 > **Stacks 02UA (1).** The `j`-th Chern class `c_j(ℰ) ∈ A^j(X)` of a locally free `𝒪_X`-module of
 > rank `r` lies in the center of the Chow cohomology ring `A^*(X)` of Stacks 0B7E.
@@ -621,13 +621,13 @@ theorem chernClass_mem_center (F : X.Modules) (r : ℕ)
 
 Declarations registered for the tag:
 
-- [`Stacks.Chow.GenuineChern.chernCap_chernCap_comm`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/CapRuleComm.lean#L148), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/BivariantChernCentral.lean, line 252](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/BivariantChernCentral.lean#L252) (StacksFrontier): “the 'in particular': c\_i(E) ∩ c\_j(F) ∩ α = c\_j(F) ∩ c\_i(E) ∩ α in CH\_\{k-i-j}(X) for locally free E, F of ranks r, s and every α in CH\_k(X)”.
+- [`Stacks.Chow.GenuineChern.chernCap_chernCap_comm`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/CapRuleComm.lean#L148), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/BivariantChernCentral.lean, line 252](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/GenuineChern/BivariantChernCentral.lean#L252) (StacksFrontier): “the 'in particular': c\_i(E) ∩ c\_j(F) ∩ α = c\_j(F) ∩ c\_i(E) ∩ α in CH\_\{k-i-j}(X) for locally free E, F of ranks r, s and every α in CH\_k(X)”.
 
 ## Tag 0ESW, a remark
 
 [Tag 0ESW](https://stacks.math.columbia.edu/tag/0ESW) in the Stacks Project.
 
-**`Stacks.Chow.chernClassArbitraryRank`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/Basic.lean, line 294](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/Basic.lean#L294). The attribute's comment: “chern\_classes\_arbitrary\_rank; the constant-rank Chern classes the remark cites enter as a quantified family; the classes of Tag 0B7H themselves are Stacks.Chow.GenuineChern.chernClassBivariantClass”.
+**`Stacks.Chow.chernClassArbitraryRank`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/Basic.lean, line 296](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/Basic.lean#L296). The attribute's comment: “chern\_classes\_arbitrary\_rank; the constant-rank Chern classes the remark cites enter as a quantified family; the classes of Tag 0B7H themselves are Stacks.Chow.GenuineChern.chernClassBivariantClass”.
 
 > **Stacks 0ESW.** The `n`-th Chern class `c_n(E) ∈ A^n(X)` of a finite locally free module of
 > not necessarily constant rank: the class which preserves the product decomposition of Chow
@@ -637,7 +637,7 @@ Declarations registered for the tag:
 def chernClassArbitraryRank (n : ℕ) : chowCohomologyComponent C G sX (n : ℤ)
 ```
 
-**`Stacks.Chow.rankLocusRestriction_chernClassArbitraryRank`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/Basic.lean, line 301](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/Basic.lean#L301). The attribute's comment: “chern\_classes\_arbitrary\_rank; the constant-rank Chern classes the remark cites enter as a quantified family; the classes of Tag 0B7H themselves are Stacks.Chow.GenuineChern.chernClassBivariantClass”.
+**`Stacks.Chow.rankLocusRestriction_chernClassArbitraryRank`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/Basic.lean, line 305](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/Basic.lean#L305). The attribute's comment: “chern\_classes\_arbitrary\_rank; the constant-rank Chern classes the remark cites enter as a quantified family; the classes of Tag 0B7H themselves are Stacks.Chow.GenuineChern.chernClassBivariantClass”.
 
 > **Stacks 0ESW.** The component of `c_n(E)` on the rank-`r` locus is `c_n(E|_{X_r})`, and is
 > zero when `r < n`.
@@ -649,7 +649,7 @@ theorem rankLocusRestriction_chernClassArbitraryRank (n r : ℕ) :
       rankLocusChernFamily C G sX E cc n r
 ```
 
-**`Stacks.Chow.isChernClassBivariant_rankLocusRestriction_chernClassArbitraryRank`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/Basic.lean, line 311](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/Basic.lean#L311). The attribute's comment: “chern\_classes\_arbitrary\_rank; the constant-rank Chern classes the remark cites enter as a quantified family; the classes of Tag 0B7H themselves are Stacks.Chow.GenuineChern.chernClassBivariantClass”.
+**`Stacks.Chow.isChernClassBivariant_rankLocusRestriction_chernClassArbitraryRank`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/Basic.lean, line 317](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/Basic.lean#L317). The attribute's comment: “chern\_classes\_arbitrary\_rank; the constant-rank Chern classes the remark cites enter as a quantified family; the classes of Tag 0B7H themselves are Stacks.Chow.GenuineChern.chernClassBivariantClass”.
 
 > **Stacks 0ESW.** On the rank-`r` locus, `c_n(E)` acts by the already defined operation
 > `c_n(E|_{X_r}) ∩ -`: its component there satisfies the characterization of Stacks 0B7H for the
@@ -668,7 +668,7 @@ theorem isChernClassBivariant_rankLocusRestriction_chernClassArbitraryRank
         (chernClassArbitraryRank C G sX E hgysO hgysR hgysC cc n) r)
 ```
 
-**`Stacks.Chow.eq_chernClassArbitraryRank_of_rankLocusRestriction_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/Basic.lean, line 329](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/Basic.lean#L329). The attribute's comment: “chern\_classes\_arbitrary\_rank; the constant-rank Chern classes the remark cites enter as a quantified family; the classes of Tag 0B7H themselves are Stacks.Chow.GenuineChern.chernClassBivariantClass”.
+**`Stacks.Chow.eq_chernClassArbitraryRank_of_rankLocusRestriction_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/Basic.lean, line 337](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/Basic.lean#L337). The attribute's comment: “chern\_classes\_arbitrary\_rank; the constant-rank Chern classes the remark cites enter as a quantified family; the classes of Tag 0B7H themselves are Stacks.Chow.GenuineChern.chernClassBivariantClass”.
 
 > **Stacks 0ESW.** `c_n(E)` is the only class with these components, so the definition does
 > not depend on the way the family is assembled.
@@ -681,7 +681,7 @@ theorem eq_chernClassArbitraryRank_of_rankLocusRestriction_eq (n : ℕ)
     c = chernClassArbitraryRank C G sX E hgysO hgysR hgysC cc n
 ```
 
-**`Stacks.Chow.exists_infinite_chernClassOfLocallyFree_ne_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/InfinitelyManyChernClasses.lean, line 398](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/InfinitelyManyChernClasses.lean#L398). The attribute's comment: “it may happen that c\_p(E) is nonzero for infinitely many p”.
+**`Stacks.Chow.exists_infinite_chernClassOfLocallyFree_ne_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/InfinitelyManyChernClasses.lean, line 399](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/InfinitelyManyChernClasses.lean#L399). The attribute's comment: “it may happen that c\_p(E) is nonzero for infinitely many p”.
 
 > **The Chern classes of a module of non-constant rank can be nonzero in infinitely many
 > degrees.** There are a base situation `(S, δ)` of chapter 42, a scheme `X`
@@ -695,7 +695,7 @@ theorem exists_infinite_chernClassOfLocallyFree_ne_zero :
       {p : ℕ | SectionZeroScheme.chernClassOfLocallyFree E C sX p ≠ 0}.Infinite
 ```
 
-**`Stacks.Chow.SectionZeroScheme.rankLocusChowCohomologyEquivOfInvertible`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/LocallyFreeRemark.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/LocallyFreeRemark.lean#L82). The attribute's comment: “A^p(X) = ∏\_r A^p(X\_r) for the rank decomposition X = ∐ X\_r of a finite locally free module (via 0FDZ), at the Gysin system of the first Chern class rule, nothing assumed”.
+**`Stacks.Chow.SectionZeroScheme.rankLocusChowCohomologyEquivOfInvertible`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/LocallyFreeRemark.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/LocallyFreeRemark.lean#L82). The attribute's comment: “A^p(X) = ∏\_r A^p(X\_r) for the rank decomposition X = ∐ X\_r of a finite locally free module (via 0FDZ), at the Gysin system of the first Chern class rule, nothing assumed”.
 
 > **Stacks 0ESW, the decomposition of Chow cohomology.** `A^p(X) = ∏_{r ≥ 0} A^p(X_r)` for the
 > decomposition of `X` by the rank of `ℰ`: restriction to the rank loci is an isomorphism onto the
@@ -707,7 +707,7 @@ def rankLocusChowCohomologyEquivOfInvertible (p : ℤ) :
       ∀ r : ℕ, chowCohomologyComponent C (gysinSystemOfInvertible C) ((rankLocus E r).ι ≫ sX) p
 ```
 
-**`Stacks.Chow.SectionZeroScheme.idRule_chernClassOfLocallyFree_of_rank`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/LocallyFreeRemark.lean, line 178](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/LocallyFreeRemark.lean#L178). The attribute's comment: “c\_p(E) acts on the factors X'\_r by the already defined operations c\_p(E|\_\{X'\_r}) ∩ -: on every test scheme along which E has constant rank r the operation of c\_p(E) is the cap product c\_p(f^*E) ∩ - of 0B7H (zero for p > r)”.
+**`Stacks.Chow.SectionZeroScheme.idRule_chernClassOfLocallyFree_of_rank`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/LocallyFreeRemark.lean, line 178](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/LocallyFreeRemark.lean#L178). The attribute's comment: “c\_p(E) acts on the factors X'\_r by the already defined operations c\_p(E|\_\{X'\_r}) ∩ -: on every test scheme along which E has constant rank r the operation of c\_p(E) is the cap product c\_p(f^*E) ∩ - of 0B7H (zero for p > r)”.
 
 > **Stacks 0ESW, the operation of `c_p(ℰ)`.** On a test scheme `f : X' ⟶ X` along which `f^*ℰ`
 > has constant rank `r` — for instance the part `X'_r` of any test scheme lying over `X_r` — the
@@ -726,7 +726,7 @@ theorem idRule_chernClassOfLocallyFree_of_rank (r p : ℕ) {X' : Scheme.{u}} (f 
       else 0
 ```
 
-**`Stacks.Chow.SectionZeroScheme.chowGroupRestrict_idRule_chernClassOfLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/LocallyFreeRemark.lean, line 255](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/LocallyFreeRemark.lean#L255). The attribute's comment: “explicit form: for every X' → X locally of finite type, c\_p(E) preserves the decomposition CH\_*(X') = ∏\_r CH\_*(X'\_r) and acts on the factor X'\_r by c\_p(E|\_\{X'\_r}) ∩ -”.
+**`Stacks.Chow.SectionZeroScheme.chowGroupRestrict_idRule_chernClassOfLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/LocallyFreeRemark.lean, line 255](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/LocallyFreeRemark.lean#L255). The attribute's comment: “explicit form: for every X' → X locally of finite type, c\_p(E) preserves the decomposition CH\_*(X') = ∏\_r CH\_*(X'\_r) and acts on the factor X'\_r by c\_p(E|\_\{X'\_r}) ∩ -”.
 
 > **Stacks 0ESW, explicitly.** For a test scheme `g : X' ⟶ X` locally of finite type, with the
 > induced decomposition `X' = ∐ X'_r`, `X'_r = g⁻¹(X_r)`, the class `c_p(ℰ)` preserves the
@@ -750,7 +750,7 @@ theorem chowGroupRestrict_idRule_chernClassOfLocallyFree (r p : ℕ) {X' : Schem
       else 0
 ```
 
-**`Stacks.Chow.SectionZeroScheme.chernClassOfLocallyFree_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/LocallyFreeRemark.lean, line 288](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/LocallyFreeRemark.lean#L288). The attribute's comment: “c\_p(E) ∈ A^p(X) as the product of the classes c\_p(E|\_\{X\_r}) ∈ A^p(X\_r) of 0B7H under A^p(X) = ∏\_r A^p(X\_r): existence and uniqueness of the class with these restrictions”.
+**`Stacks.Chow.SectionZeroScheme.chernClassOfLocallyFree_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/LocallyFreeRemark.lean, line 288](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/LocallyFreeRemark.lean#L288). The attribute's comment: “c\_p(E) ∈ A^p(X) as the product of the classes c\_p(E|\_\{X\_r}) ∈ A^p(X\_r) of 0B7H under A^p(X) = ∏\_r A^p(X\_r): existence and uniqueness of the class with these restrictions”.
 
 > **Stacks 0ESW, the Chern classes of a module of non-constant rank.** `c_p(ℰ) ∈ A^p(X)` is the
 > class whose restriction to every rank locus `X_r` is the Chern class `c_p(ℰ|_{X_r})` of
@@ -778,7 +778,7 @@ theorem chernClassOfLocallyFree_spec (p : ℕ) :
       c = chernClassOfLocallyFree E C sX p
 ```
 
-**`Stacks.Chow.SectionZeroScheme.totalChernClassCompleted`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/LocallyFreeRemark.lean, line 398](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/LocallyFreeRemark.lean#L398). The attribute's comment: “the total Chern class c(E) = c\_0(E) + c\_1(E) + ... as an element of the completed bivariant cohomology ring A^*(X)^∧ of 0FE0”.
+**`Stacks.Chow.SectionZeroScheme.totalChernClassCompleted`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/LocallyFreeRemark.lean, line 398](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/LocallyFreeRemark.lean#L398). The attribute's comment: “the total Chern class c(E) = c\_0(E) + c\_1(E) + ... as an element of the completed bivariant cohomology ring A^*(X)^∧ of 0FE0”.
 
 > **Stacks 0ESW, the total Chern class.** The total Chern class
 > `c(ℰ) = c_0(ℰ) + c_1(ℰ) + c_2(ℰ) + … ∈ A^*(X)^∧` of a finite locally free module of arbitrary
@@ -793,7 +793,7 @@ def totalChernClassCompleted :
         totalChernComponent C sX E}
 ```
 
-**`Stacks.Chow.SectionZeroScheme.rankClassOfLocallyFree_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/LocallyFreeRemark.lean, line 443](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/LocallyFreeRemark.lean#L443). The attribute's comment: “the rank r(E) ∈ A^0(X): the class whose restriction to each X\_r is r times the unit of A^0(X\_r), existence and uniqueness”.
+**`Stacks.Chow.SectionZeroScheme.rankClassOfLocallyFree_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/LocallyFreeRemark.lean, line 443](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/LocallyFreeRemark.lean#L443). The attribute's comment: “the rank r(E) ∈ A^0(X): the class whose restriction to each X\_r is r times the unit of A^0(X\_r), existence and uniqueness”.
 
 > **Stacks 0ESW, the rank as the unique class with the given restrictions.** `r(ℰ)` restricts
 > to `r · 1` on each rank locus `X_r`, and it is the only class of `A^0(X)` doing so.
@@ -810,7 +810,7 @@ theorem rankClassOfLocallyFree_spec :
       c = rankClassOfLocallyFree C sX E
 ```
 
-**`Stacks.Chow.SectionZeroScheme.idRule_rankClassOfLocallyFree_of_rank`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/LocallyFreeRemark.lean, line 469](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/LocallyFreeRemark.lean#L469). The attribute's comment: “the rank r(E) ∈ A^0(X) is the bivariant operation sending (α\_r) to (r α\_r): on every test scheme along which E has constant rank r it acts as multiplication by r”.
+**`Stacks.Chow.SectionZeroScheme.idRule_rankClassOfLocallyFree_of_rank`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/LocallyFreeRemark.lean, line 469](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/LocallyFreeRemark.lean#L469). The attribute's comment: “the rank r(E) ∈ A^0(X) is the bivariant operation sending (α\_r) to (r α\_r): on every test scheme along which E has constant rank r it acts as multiplication by r”.
 
 > **Stacks 0ESW, the operation of the rank.** On a test scheme `f : X' ⟶ X` along which
 > `f^*ℰ` has constant rank `r` — for instance the part `X'_r` of any test scheme lying over `X_r` —
@@ -825,7 +825,7 @@ theorem idRule_rankClassOfLocallyFree_of_rank (r : ℕ) {X' : Scheme.{u}} (f : X
       (r : ℤ) • identityCapRule C sX f k α
 ```
 
-**`Stacks.Chow.SectionZeroScheme.chowGroupRestrict_idRule_rankClassOfLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/LocallyFreeRemark.lean, line 493](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/LocallyFreeRemark.lean#L493). The attribute's comment: “explicit form of the rank: r(E) is the bivariant operation sending (α\_r) ∈ ∏\_r CH\_*(X'\_r) to (r α\_r), for every X' → X locally of finite type”.
+**`Stacks.Chow.SectionZeroScheme.chowGroupRestrict_idRule_rankClassOfLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/LocallyFreeRemark.lean, line 493](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/LocallyFreeRemark.lean#L493). The attribute's comment: “explicit form of the rank: r(E) is the bivariant operation sending (α\_r) ∈ ∏\_r CH\_*(X'\_r) to (r α\_r), for every X' → X locally of finite type”.
 
 > **Stacks 0ESW, the rank explicitly.** For a test scheme `g : X' ⟶ X` locally of finite type,
 > with the induced decomposition `X' = ∐ X'_r`, the class `r(ℰ)` sends `(α_r) ∈ ∏_r CH_*(X'_r)` to
@@ -841,7 +841,7 @@ theorem chowGroupRestrict_idRule_rankClassOfLocallyFree (r : ℕ) {X' : Scheme.{
         (g ⁻¹ᵁ rankLocus E r).ι (Category.assoc _ _ _).symm k α
 ```
 
-**`Stacks.Chow.SectionZeroScheme.chernClassOfLocallyFree_mem_center`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/LocallyFreeRemark.lean, line 568](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/LocallyFreeRemark.lean#L568). The attribute's comment: “c\_p(E) is in the center of A^*(X), for E of non-constant rank”.
+**`Stacks.Chow.SectionZeroScheme.chernClassOfLocallyFree_mem_center`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/LocallyFreeRemark.lean, line 568](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/LocallyFreeRemark.lean#L568). The attribute's comment: “c\_p(E) is in the center of A^*(X), for E of non-constant rank”.
 
 > **Stacks 0ESW, centrality of the Chern classes.** For a finite locally free module `ℰ` of
 > arbitrary rank, `c_p(ℰ) ∈ A^p(X)` lies in the center of the Chow cohomology ring `A^*(X)` of
@@ -855,7 +855,7 @@ theorem chernClassOfLocallyFree_mem_center (p : ℕ) :
       Subring.center (chowCohomology C (gysinSystemOfInvertible C) sX)
 ```
 
-**`Stacks.Chow.SectionZeroScheme.rankClassOfLocallyFree_mem_center`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/LocallyFreeRemark.lean, line 592](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/LocallyFreeRemark.lean#L592). The attribute's comment: “r(E) is in the center of A^*(X)”.
+**`Stacks.Chow.SectionZeroScheme.rankClassOfLocallyFree_mem_center`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/LocallyFreeRemark.lean, line 592](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/LocallyFreeRemark.lean#L592). The attribute's comment: “r(E) is in the center of A^*(X)”.
 
 > **Stacks 0ESW, centrality of the rank.** `r(ℰ) ∈ A^0(X)` lies in the center of `A^*(X)`: on
 > each rank locus `X_r` it restricts to `r · 1`.
@@ -867,7 +867,7 @@ theorem rankClassOfLocallyFree_mem_center :
       Subring.center (chowCohomology C (gysinSystemOfInvertible C) sX)
 ```
 
-**`Stacks.Chow.rankBivariantClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/RankClass.lean, line 215](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/RankClass.lean#L215). The attribute's comment: “rank\_bivariant\_class; the flat transport axiom of Stacks 0B76 is proved here, and only the Gysin transport axiom is carried, as for the library's own first Chern class at Tag 0FDW”.
+**`Stacks.Chow.rankBivariantClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/RankClass.lean, line 215](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/RankClass.lean#L215). The attribute's comment: “rank\_bivariant\_class; the flat transport axiom of Stacks 0B76 is proved here, and only the Gysin transport axiom is carried, as for the library's own first Chern class at Tag 0FDW”.
 
 > **Stacks 0ESW.** The rank `r(E) ∈ A^0(X)` of a finite locally free module whose rank need not
 > be constant: the bivariant class which preserves the product decomposition of the Chow groups
@@ -877,7 +877,7 @@ theorem rankClassOfLocallyFree_mem_center :
 def rankBivariantClass : chowCohomologyComponent C G sX 0
 ```
 
-**`Stacks.Chow.rankLocusRestriction_rankBivariantClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/RankClass.lean, line 224](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/RankClass.lean#L224). The attribute's comment: “rank\_bivariant\_class; the flat transport axiom of Stacks 0B76 is proved here, and only the Gysin transport axiom is carried, as for the library's own first Chern class at Tag 0FDW”.
+**`Stacks.Chow.rankLocusRestriction_rankBivariantClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/RankClass.lean, line 224](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/RankClass.lean#L224). The attribute's comment: “rank\_bivariant\_class; the flat transport axiom of Stacks 0B76 is proved here, and only the Gysin transport axiom is carried, as for the library's own first Chern class at Tag 0FDW”.
 
 > **Stacks 0ESW.** The component of `r(E)` on the rank-`r` locus is `r` times the unit.
 
@@ -889,7 +889,7 @@ theorem rankLocusRestriction_rankBivariantClass (r : ℕ) :
         (transportFlatNaturality_rankLocus C sX E r) (hgysin r)
 ```
 
-**`Stacks.Chow.rankBivariantClass_cap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/RankClass.lean, line 236](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/RankClass.lean#L236). The attribute's comment: “rank\_bivariant\_class; the flat transport axiom of Stacks 0B76 is proved here, and only the Gysin transport axiom is carried, as for the library's own first Chern class at Tag 0FDW”.
+**`Stacks.Chow.rankBivariantClass_cap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/RankClass.lean, line 236](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/RankClass.lean#L236). The attribute's comment: “rank\_bivariant\_class; the flat transport axiom of Stacks 0B76 is proved here, and only the Gysin transport axiom is carried, as for the library's own first Chern class at Tag 0FDW”.
 
 > **Stacks 0ESW.** `r(E)` sends `(α_r)` to `(r α_r)`: on a test scheme over the rank-`r` locus,
 > capping with `r(E)` is multiplication by `r`.
@@ -908,7 +908,7 @@ theorem rankBivariantClass_cap (r : ℕ) {T : Scheme.{u}}
         (by omega : k = k - 0) α
 ```
 
-**`Stacks.Chow.eq_rankBivariantClass_of_rankLocusRestriction_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/RankClass.lean, line 256](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/RankClass.lean#L256). The attribute's comment: “rank\_bivariant\_class; the flat transport axiom of Stacks 0B76 is proved here, and only the Gysin transport axiom is carried, as for the library's own first Chern class at Tag 0FDW”.
+**`Stacks.Chow.eq_rankBivariantClass_of_rankLocusRestriction_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/RankClass.lean, line 256](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/RankClass.lean#L256). The attribute's comment: “rank\_bivariant\_class; the flat transport axiom of Stacks 0B76 is proved here, and only the Gysin transport axiom is carried, as for the library's own first Chern class at Tag 0FDW”.
 
 > **Stacks 0ESW.** `r(E)` is the only degree-zero class with those components.
 
@@ -921,7 +921,7 @@ theorem eq_rankBivariantClass_of_rankLocusRestriction_eq
     c = rankBivariantClass C G sX E hgysO hgysR hgysC hgysin
 ```
 
-**`AlgebraicGeometry.Scheme.Modules.rankDecomposition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FiniteLocallyFree/RankDecomposition.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FiniteLocallyFree/RankDecomposition.lean#L114). The attribute's comment: “the decomposition X = ∐ X\_r of a scheme by the rank of a finite locally free module: the rank is locally constant, the loci are open and closed, pairwise disjoint and covering, and the module is free of rank r near each point of X\_r. The Chern classes c\_p(E) ∈ A^p(X) of a module of non-constant rank, the total Chern class in the completed bivariant group, the rank class r(E) ∈ A^0(X) and the centrality of c\_p(E) and r(E) in A^*(X) are not covered”.
+**`AlgebraicGeometry.Scheme.Modules.rankDecomposition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FiniteLocallyFree/RankDecomposition.lean, line 114](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FiniteLocallyFree/RankDecomposition.lean#L114). The attribute's comment: “the decomposition X = ∐ X\_r of a scheme by the rank of a finite locally free module: the rank is locally constant, the loci are open and closed, pairwise disjoint and covering, and the module is free of rank r near each point of X\_r. The Chern classes c\_p(E) ∈ A^p(X) of a module of non-constant rank, the total Chern class in the completed bivariant group, the rank class r(E) ∈ A^0(X) and the centrality of c\_p(E) and r(E) in A^*(X) are not covered”.
 
 > The rank of a finite locally free module `E` on a scheme `X` is locally constant, the loci
 > `X_r` where the rank is `r` are open and closed, pairwise disjoint and cover `X`, and `E` is free
@@ -943,7 +943,7 @@ theorem rankDecomposition :
 
 [Tag 0FA4](https://stacks.math.columbia.edu/tag/0FA4) in the Stacks Project.
 
-**`Stacks.Chow.topChernClassCompleted`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/TopChernClass.lean, line 351](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/TopChernClass.lean#L351). The attribute's comment: “general case: c\_top(E) = ∏ c\_r(E|\_\{X\_r}) ∈ ∏ A^r(X\_r) ⊂ A^*(X)^∧”.
+**`Stacks.Chow.topChernClassCompleted`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/TopChernClass.lean, line 351](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/TopChernClass.lean#L351). The attribute's comment: “general case: c\_top(E) = ∏ c\_r(E|\_\{X\_r}) ∈ ∏ A^r(X\_r) ⊂ A^*(X)^∧”.
 
 > **Stacks 0FA4**, general case. The top Chern class
 > `c_top(ℰ) = ∏_r c_r(ℰ|_{X_r}) ∈ ∏_r A^r(X_r) ⊂ A^*(X)^∧` of a finite locally free module `ℰ` on
@@ -966,7 +966,7 @@ def topChernClassCompleted :
         0}
 ```
 
-**`Stacks.Chow.topChernClassOfFinite`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/TopChernClass.lean, line 407](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/TopChernClass.lean#L407). The attribute's comment: “finite case: c\_top(E) = Σ\_r c\_r(E|\_\{X\_r}) ∈ A^*(X) = ⊕ A^*(X\_r)”.
+**`Stacks.Chow.topChernClassOfFinite`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/TopChernClass.lean, line 407](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChernClassArbitraryRank/TopChernClass.lean#L407). The attribute's comment: “finite case: c\_top(E) = Σ\_r c\_r(E|\_\{X\_r}) ∈ A^*(X) = ⊕ A^*(X\_r)”.
 
 > **Stacks 0FA4**, finite case. If only finitely many of the rank loci `X_r` are nonempty, the
 > top Chern class `c_top(ℰ) = Σ_r c_r(ℰ|_{X_r}) ∈ A^*(X) = ⊕ A^*(X_r)`: the element of the graded
@@ -987,116 +987,7 @@ def topChernClassOfFinite (hfin : {r : ℕ | (rankLocus E r : Set X).Nonempty}.F
           (gysinSystemOfInvertible_isNaturalUnderOpenImmersion C) p (c p) r = 0}
 ```
 
-**`Stacks.Chow.topChernClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TopChernClass.lean, line 209](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/TopChernClass.lean#L209). The attribute's comment: “completed top Chern class”.
-
-> **Stacks 0FA4.** The top Chern class `c_top(E) = Σ_r c_r(E|_{X_r})` of a finite locally free
-> module `E` on `X`, as an element of the completed bivariant group `A^*(X)^∧`: on a connected
-> component `X_i` of `X` the rank of `E` is a constant `r`, and there the class is the `r`-th Chern
-> class `c i` of `E|_{X_i}`, placed in degree `r`.
-
-```lean
-def topChernClass : completedBivariantGroup C G sX sX (𝟙 X) (Category.id_comp sX)
-```
-
-**`Stacks.Chow.topChernClass_rankStratum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TopChernClass.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/TopChernClass.lean#L216). The attribute's comment: “rank-locus Chern component”.
-
-> **Stacks 0FA4.** On the locus where `E` has rank `r` the top Chern class is the `r`-th Chern
-> class, in degree `r`: a connected component `X_i` lies in the locus of the rank `r` of `E` on it,
-> and the degree-`r` part of `c_top(E)` there is `c_r(E|_{X_i})`.
-
-```lean
-theorem topChernClass_rankStratum (i : ConnectedComponents X) :
-    X.connectedComponentOpens i ≤
-        Scheme.Modules.rankStratum E (Scheme.Modules.rankOnConnectedComponent E i) ∧
-      topChernClass C G sX E c i (Scheme.Modules.rankOnConnectedComponent E i : ℤ) = c i
-```
-
-**`Stacks.Chow.topChernClass_of_ne_rank`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TopChernClass.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/TopChernClass.lean#L227). The attribute's comment: “off-rank vanishing”.
-
-> **Stacks 0FA4.** The top Chern class has no component in a degree other than the rank: on a
-> connected component on which `E` has rank `r`, the degree-`p` part of `c_top(E)` vanishes for
-> every `p ≠ r`.
-
-```lean
-theorem topChernClass_of_ne_rank (i : ConnectedComponents X) (p : ℤ)
-    (h : p ≠ (Scheme.Modules.rankOnConnectedComponent E i : ℤ)) :
-    topChernClass C G sX E c i p = 0
-```
-
-**`Stacks.Chow.finite_degrees_topChernClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TopChernClass.lean, line 236](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/TopChernClass.lean#L236). The attribute's comment: “finite-rank-locus case”.
-
-> **Stacks 0FA4.** If only finitely many of the loci `X_r` are nonempty, then only finitely many
-> degrees occur in the top Chern class, so it lies in the ordinary graded group `A^*(X)` inside its
-> completion.
-
-```lean
-theorem finite_degrees_topChernClass
-    (hfin : {r : ℕ | (Scheme.Modules.rankStratum E r : Set X).Nonempty}.Finite) :
-    {p : ℤ | ∃ i : ConnectedComponents X, topChernClass C G sX E c i p ≠ 0}.Finite
-```
-
-**`Stacks.Chow.topChernClassFinite`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TopChernClass.lean, line 271](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/TopChernClass.lean#L271). The attribute's comment: “ordinary finite top Chern class”.
-
-> **Stacks 0FA4.** The top Chern class `c_top(E) = Σ_r c_r(E|_{X_r})` as an ordinary
-> nonhomogeneous bivariant class on `X`, when only finitely many of the loci `X_r` are nonempty: the
-> sum, over the ranks `r` that occur, of the degree-`r` part of the top Chern class.
-
-```lean
-def topChernClassFinite
-    (hfin : {r : ℕ | (Scheme.Modules.rankStratum E r : Set X).Nonempty}.Finite) :
-    nonhomogeneousBivariantGroup C G sX sX (𝟙 X) (Category.id_comp sX)
-```
-
-**`Stacks.Chow.topChernClassFinite_component`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TopChernClass.lean, line 314](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/TopChernClass.lean#L314). The attribute's comment: “finite-class canonical image”.
-
-> **Stacks 0FA4.** The finite sum `Σ_r c_r(E|_{X_r})` has the completed top Chern class as its
-> image under the identification of Stacks 0FDZ: in every degree and on every connected component,
-> its restriction is the corresponding part of `c_top(E)`.
-
-```lean
-theorem topChernClassFinite_component
-    (hfin : {r : ℕ | (Scheme.Modules.rankStratum E r : Set X).Nonempty}.Finite) (p : ℤ)
-    (i : ConnectedComponents X) :
-    connectedComponentBivariantEquiv C G sX p hgysO hgysR hgysC
-        (topChernClassFinite C G sX E c hgysO hgysR hgysC hfin p) i =
-      topChernClass C G sX E c i p
-```
-
-**`Stacks.Chow.topChernClassFinite_rankStratum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TopChernClass.lean, line 337](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/TopChernClass.lean#L337). The attribute's comment: “finite-sum rank component”.
-
-> **Stacks 0FA4.** On the locus where `E` has rank `r`, the component of the finite sum
-> `Σ_r c_r(E|_{X_r})` in degree `r` is the `r`-th Chern class: a connected component `X_i` lies in
-> the locus of the rank `r` of `E` on it, and the degree-`r` component of the sum there is
-> `c_r(E|_{X_i})`.
-
-```lean
-theorem topChernClassFinite_rankStratum
-    (hfin : {r : ℕ | (Scheme.Modules.rankStratum E r : Set X).Nonempty}.Finite)
-    (i : ConnectedComponents X) :
-    X.connectedComponentOpens i ≤
-        Scheme.Modules.rankStratum E (Scheme.Modules.rankOnConnectedComponent E i) ∧
-      connectedComponentBivariantEquiv C G sX
-          (Scheme.Modules.rankOnConnectedComponent E i : ℤ) hgysO hgysR hgysC
-          (topChernClassFinite C G sX E c hgysO hgysR hgysC hfin
-            (Scheme.Modules.rankOnConnectedComponent E i : ℤ)) i = c i
-```
-
-**`Stacks.Chow.topChernClassFinite_of_ne_rank`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TopChernClass.lean, line 355](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/TopChernClass.lean#L355). The attribute's comment: “finite-sum off-rank component”.
-
-> **Stacks 0FA4.** The finite sum `Σ_r c_r(E|_{X_r})` has no component in a degree other than
-> the rank: on a connected component on which `E` has rank `r`, its degree-`p` component vanishes
-> for every `p ≠ r`.
-
-```lean
-theorem topChernClassFinite_of_ne_rank
-    (hfin : {r : ℕ | (Scheme.Modules.rankStratum E r : Set X).Nonempty}.Finite)
-    (i : ConnectedComponents X) (p : ℤ)
-    (h : p ≠ (Scheme.Modules.rankOnConnectedComponent E i : ℤ)) :
-    connectedComponentBivariantEquiv C G sX p hgysO hgysR hgysC
-        (topChernClassFinite C G sX E c hgysO hgysR hgysC hfin p) i = 0
-```
-
-**`Stacks.Chow.topChernTotalClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TopChernClassOfInvertible.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/TopChernClassOfInvertible.lean#L136). The attribute's comment: “top Chern class in the product of the Chow cohomology groups”.
+**`Stacks.Chow.topChernTotalClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TopChernClassOfInvertible.lean, line 136](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/TopChernClassOfInvertible.lean#L136). The attribute's comment: “top Chern class in the product of the Chow cohomology groups”.
 
 > The top Chern class `c_top(E) = Σ_r c_r(E|_{X_r})` of a finite locally free module `E` on `X`,
 > as an element of `∏_{p ≥ 0} A^p(X)`: its degree-`p` component is the class equal, on the locus
@@ -1107,7 +998,7 @@ theorem topChernClassFinite_of_ne_rank
 def topChernTotalClass : TotalChowClass C sX
 ```
 
-**`Stacks.Chow.topChernClassOfInvertible`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TopChernClassOfInvertible.lean, line 289](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/TopChernClassOfInvertible.lean#L289). The attribute's comment: “completed top Chern class”.
+**`Stacks.Chow.topChernClassOfInvertible`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TopChernClassOfInvertible.lean, line 289](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/TopChernClassOfInvertible.lean#L289). The attribute's comment: “completed top Chern class”.
 
 > The top Chern class `c_top(E) = Σ_r c_r(E|_{X_r})` of a finite locally free module `E` on `X`,
 > as an element of the completed bivariant group `A^*(X)^∧`: on a connected component `X_i` of `X`
@@ -1120,7 +1011,7 @@ def topChernClassOfInvertible :
     completedBivariantGroup C (gysinSystemOfInvertible C) sX sX (𝟙 X) (Category.id_comp sX)
 ```
 
-**`Stacks.Chow.topChernClassOfInvertible_rankStratum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TopChernClassOfInvertible.lean, line 301](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/TopChernClassOfInvertible.lean#L301). The attribute's comment: “rank-locus Chern component”.
+**`Stacks.Chow.topChernClassOfInvertible_rankStratum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TopChernClassOfInvertible.lean, line 301](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/TopChernClassOfInvertible.lean#L301). The attribute's comment: “rank-locus Chern component”.
 
 > On the locus where `E` has rank `r` the top Chern class is the `r`-th Chern class, in degree
 > `r`: a connected component `X_i` lies in the locus of the rank `r` of `E` on it, and the degree-`r`
@@ -1138,7 +1029,7 @@ theorem topChernClassOfInvertible_rankStratum (i : _root_.ConnectedComponents X)
           i
 ```
 
-**`Stacks.Chow.topChernClassOfInvertible_of_ne_rank`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TopChernClassOfInvertible.lean, line 316](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/TopChernClassOfInvertible.lean#L316). The attribute's comment: “off-rank vanishing”.
+**`Stacks.Chow.topChernClassOfInvertible_of_ne_rank`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TopChernClassOfInvertible.lean, line 316](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/TopChernClassOfInvertible.lean#L316). The attribute's comment: “off-rank vanishing”.
 
 > The top Chern class has no component in a degree other than the rank: on a connected component
 > on which `E` has rank `r`, the degree-`p` part of `c_top(E)` vanishes for every `p ≠ r`.
@@ -1149,7 +1040,7 @@ theorem topChernClassOfInvertible_of_ne_rank (i : _root_.ConnectedComponents X) 
     topChernClassOfInvertible C sX E i p = 0
 ```
 
-**`Stacks.Chow.finite_degrees_topChernClassOfInvertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TopChernClassOfInvertible.lean, line 324](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/TopChernClassOfInvertible.lean#L324). The attribute's comment: “finite-rank-locus case”.
+**`Stacks.Chow.finite_degrees_topChernClassOfInvertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TopChernClassOfInvertible.lean, line 324](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/TopChernClassOfInvertible.lean#L324). The attribute's comment: “finite-rank-locus case”.
 
 > If only finitely many of the loci `X_r` are nonempty, then only finitely many degrees occur in
 > the top Chern class, so it lies in the ordinary graded group `A^*(X)` inside its completion.
@@ -1161,7 +1052,7 @@ theorem finite_degrees_topChernClassOfInvertible
       topChernClassOfInvertible C sX E i p ≠ 0}.Finite
 ```
 
-**`Stacks.Chow.topChernClassFiniteOfInvertible`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TopChernClassOfInvertible.lean, line 389](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/TopChernClassOfInvertible.lean#L389). The attribute's comment: “ordinary finite top Chern class”.
+**`Stacks.Chow.topChernClassFiniteOfInvertible`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TopChernClassOfInvertible.lean, line 389](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/TopChernClassOfInvertible.lean#L389). The attribute's comment: “ordinary finite top Chern class”.
 
 > The top Chern class `c_top(E) = Σ_r c_r(E|_{X_r})` as an ordinary nonhomogeneous bivariant
 > class on `X`, when only finitely many of the loci `X_r` are nonempty: the sum, over the ranks `r`
@@ -1174,7 +1065,7 @@ def topChernClassFiniteOfInvertible
       (Category.id_comp sX)
 ```
 
-**`Stacks.Chow.topChernClassFiniteOfInvertible_component`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TopChernClassOfInvertible.lean, line 422](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/TopChernClassOfInvertible.lean#L422). The attribute's comment: “finite-class canonical image”.
+**`Stacks.Chow.topChernClassFiniteOfInvertible_component`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TopChernClassOfInvertible.lean, line 422](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/TopChernClassOfInvertible.lean#L422). The attribute's comment: “finite-class canonical image”.
 
 > The finite sum `Σ_r c_r(E|_{X_r})` has the completed top Chern class as its image under the
 > identification of Stacks 0FDZ: in every degree and on every connected component, its restriction is
@@ -1190,7 +1081,7 @@ theorem topChernClassFiniteOfInvertible_component
       topChernClassOfInvertible C sX E i p
 ```
 
-**`Stacks.Chow.topChernClassFiniteOfInvertible_rankStratum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TopChernClassOfInvertible.lean, line 444](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/TopChernClassOfInvertible.lean#L444). The attribute's comment: “finite-sum rank component”.
+**`Stacks.Chow.topChernClassFiniteOfInvertible_rankStratum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TopChernClassOfInvertible.lean, line 444](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/TopChernClassOfInvertible.lean#L444). The attribute's comment: “finite-sum rank component”.
 
 > On the locus where `E` has rank `r`, the component of the finite sum `Σ_r c_r(E|_{X_r})` in
 > degree `r` is the `r`-th Chern class: a connected component `X_i` lies in the locus of the rank `r`
@@ -1213,7 +1104,7 @@ theorem topChernClassFiniteOfInvertible_rankStratum
           i
 ```
 
-**`Stacks.Chow.topChernClassFiniteOfInvertible_of_ne_rank`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TopChernClassOfInvertible.lean, line 465](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/TopChernClassOfInvertible.lean#L465). The attribute's comment: “finite-sum off-rank component”.
+**`Stacks.Chow.topChernClassFiniteOfInvertible_of_ne_rank`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/TopChernClassOfInvertible.lean, line 465](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/TopChernClassOfInvertible.lean#L465). The attribute's comment: “finite-sum off-rank component”.
 
 > The finite sum `Σ_r c_r(E|_{X_r})` has no component in a degree other than the rank: on a
 > connected component on which `E` has rank `r`, its degree-`p` component vanishes for every
@@ -1236,4 +1127,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 42.38, Tag 02U4](https://stacks.math.columbia.edu/tag/02U4)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

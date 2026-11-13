@@ -8,13 +8,13 @@ proof: formalized
 
 # 33.18 Variants of Noether normalization
 
-Section 33.18 of the Stacks Project, [Tag 0CBG](https://stacks.math.columbia.edu/tag/0CBG). 5 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 33.18 of the Stacks Project, [Tag 0CBG](https://stacks.math.columbia.edu/tag/0CBG). 5 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0CBH, a lemma
 
 [Tag 0CBH](https://stacks.math.columbia.edu/tag/0CBH) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_affineOpen_quasiFinite_affineSpace_factorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/NoetherNormalization.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/NoetherNormalization.lean#L155). References: EGA IV (13.3.1.1), “quasi-finite factoriz.”.
+**`AlgebraicGeometry.exists_affineOpen_quasiFinite_affineSpace_factorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/NoetherNormalization.lean, line 155](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/NoetherNormalization.lean#L155). References: EGA IV (13.3.1.1), “quasi-finite factoriz.”.
 
 > Relative Noether normalization on an affine neighbourhood of a point.
 
@@ -35,7 +35,7 @@ theorem exists_affineOpen_quasiFinite_affineSpace_factorization
 
 [Tag 0CBI](https://stacks.math.columbia.edu/tag/0CBI) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_factorization_finite_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/NoetherNormalization.lean, line 407](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/NoetherNormalization.lean#L407).
+**`AlgebraicGeometry.exists_factorization_finite_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/NoetherNormalization.lean, line 407](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/NoetherNormalization.lean#L407).
 
 > Noether normalization for a finite-type map of affine schemes at a chosen fibre.
 
@@ -56,7 +56,7 @@ theorem exists_factorization_finite_fiber {X S : Scheme.{u}} (f : X ⟶ S)
 
 [Tag 0CBJ](https://stacks.math.columbia.edu/tag/0CBJ) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isImmersion_specMap_derivativePair_of_unramifiedAt`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Unramified/LocalStructure.lean, line 346](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Unramified/LocalStructure.lean#L346). The attribute's comment: “unramified case; the étale case is `AlgebraicGeometry.exists_isOpenImmersion_specMap_derivativePair_of_etaleAt`”.
+**`AlgebraicGeometry.exists_isImmersion_specMap_derivativePair_of_unramifiedAt`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Unramified/LocalStructure.lean, line 346](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Unramified/LocalStructure.lean#L346). The attribute's comment: “unramified case; the étale case is `AlgebraicGeometry.exists_isOpenImmersion_specMap_derivativePair_of_etaleAt`”.
 
 > **Stacks Project, Tag 0CBJ, unramified case.** A morphism of schemes unramified at `x`
 > factors, on an affine open neighbourhood of `x` lying over a prescribed affine open `V` of the
@@ -77,7 +77,7 @@ public lemma exists_isImmersion_specMap_derivativePair_of_unramifiedAt
               f.resLE V U hUV ≫ hV.isoSpec.hom
 ```
 
-**`AlgebraicGeometry.exists_isOpenImmersion_specMap_derivativePair_of_etaleAt`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Unramified/LocalStructure.lean, line 383](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Unramified/LocalStructure.lean#L383). The attribute's comment: “étale case; the unramified case”.
+**`AlgebraicGeometry.exists_isOpenImmersion_specMap_derivativePair_of_etaleAt`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Unramified/LocalStructure.lean, line 383](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Unramified/LocalStructure.lean#L383). The attribute's comment: “étale case; the unramified case”.
 
 > **Stacks Project, Tag 0CBJ, étale case.** At a point where the morphism is étale, the
 > immersion of `AlgebraicGeometry.exists_isImmersion_specMap_derivativePair_of_unramifiedAt` may
@@ -101,7 +101,7 @@ public lemma exists_isOpenImmersion_specMap_derivativePair_of_etaleAt
 
 [Tag 0CBK](https://stacks.math.columbia.edu/tag/0CBK) in the Stacks Project.
 
-**`AlgebraicGeometry.finiteDimensional_relativeCotangentSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/NoetherNormalization.lean, line 762](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/NoetherNormalization.lean#L762). The attribute's comment: “finiteness of r”.
+**`AlgebraicGeometry.finiteDimensional_relativeCotangentSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/NoetherNormalization.lean, line 761](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/NoetherNormalization.lean#L761). The attribute's comment: “finiteness of r”.
 
 > **Stacks Project, Tag 0CBK, finiteness of `r`.** For a morphism locally of finite type the
 > residue-field fibre at `x` of the stalk of the sheaf of relative differentials is a
@@ -113,7 +113,7 @@ theorem finiteDimensional_relativeCotangentSpace {X S : Scheme.{u}} (f : X ⟶ S
     FiniteDimensional (X.residueField x) (relativeCotangentSpace f x)
 ```
 
-**`AlgebraicGeometry.finrank_relativeCotangentSpace_eq_fiberRelativeCotangentSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/NoetherNormalization.lean, line 774](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/NoetherNormalization.lean#L774). The attribute's comment: “first equality”.
+**`AlgebraicGeometry.finrank_relativeCotangentSpace_eq_fiberRelativeCotangentSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/NoetherNormalization.lean, line 773](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/NoetherNormalization.lean#L773). The attribute's comment: “first equality”.
 
 > **Stacks Project, Tag 0CBK, first equality defining `r`.** The residue-field fibre of the
 > stalk of `Ω_{X/S}` at `x` and the corresponding fibre computed on the scheme-theoretic fibre
@@ -127,7 +127,7 @@ theorem finrank_relativeCotangentSpace_eq_fiberRelativeCotangentSpace
       Module.finrank (X.residueField x) (fiberRelativeCotangentSpace f x)
 ```
 
-**`AlgebraicGeometry.finrank_relativeCotangentSpace_eq_finrank_dottedTangentArrow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/NoetherNormalization.lean, line 786](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/NoetherNormalization.lean#L786). The attribute's comment: “second equality”.
+**`AlgebraicGeometry.finrank_relativeCotangentSpace_eq_finrank_dottedTangentArrow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/NoetherNormalization.lean, line 785](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/NoetherNormalization.lean#L785). The attribute's comment: “second equality”.
 
 > **Stacks Project, Tag 0CBK, second equality defining `r`.** The residue-field fibre of the
 > stalk of `Ω_{X/S}` at `x` and the relative tangent space at `x` have the same dimension over
@@ -141,7 +141,7 @@ theorem finrank_relativeCotangentSpace_eq_finrank_dottedTangentArrow
       Module.finrank (X.residueField x) (DottedTangentArrow f x)
 ```
 
-**`AlgebraicGeometry.exists_factorization_unramifiedAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/NoetherNormalization.lean, line 986](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/NoetherNormalization.lean#L986).
+**`AlgebraicGeometry.exists_factorization_unramifiedAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/NoetherNormalization.lean, line 984](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/NoetherNormalization.lean#L984).
 
 > **Stacks Project, Tag 0CBK.** Let `f : X ⟶ S` be a finite type morphism of affine schemes
 > and let `x` be a point of `X`. If `r` is the dimension over `κ(x)` of the residue-field fibre at
@@ -164,7 +164,7 @@ theorem exists_factorization_unramifiedAt {X S : Scheme.{u}} (f : X ⟶ S)
 
 [Tag 0CBL](https://stacks.math.columbia.edu/tag/0CBL) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_affineOpen_immersion_into_affineSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/NoetherNormalization.lean, line 1463](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/NoetherNormalization.lean#L1463). The attribute's comment: “clause (1): the immersion into affine (r+1)-space”.
+**`AlgebraicGeometry.exists_affineOpen_immersion_into_affineSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/NoetherNormalization.lean, line 1461](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/NoetherNormalization.lean#L1461). The attribute's comment: “clause (1): the immersion into affine (r+1)-space”.
 
 > **Stacks Project, Tag 0CBL, first clause.** Let `f : X ⟶ S` be locally of finite type, let
 > `x` be a point of `X` and let `V` be an affine open neighbourhood of its image. If `r` is the
@@ -183,7 +183,7 @@ theorem exists_affineOpen_immersion_into_affineSpace {X S : Scheme.{u}} (f : X �
           f.resLE V.1 U.1 hUV
 ```
 
-**`AlgebraicGeometry.exists_closedImmersion_smoothFactorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/NoetherNormalization.lean, line 1481](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/NoetherNormalization.lean#L1481). The attribute's comment: “clause (2): the closed immersion into a smooth scheme”.
+**`AlgebraicGeometry.exists_closedImmersion_smoothFactorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/NoetherNormalization.lean, line 1479](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/GeometricFieldChange/NoetherNormalization.lean#L1479). The attribute's comment: “clause (2): the closed immersion into a smooth scheme”.
 
 > **Stacks Project, Tag 0CBL, second clause.** In the situation of
 > `AlgebraicGeometry.exists_affineOpen_immersion_into_affineSpace`, the affine open `U` may instead
@@ -207,4 +207,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 33.18, Tag 0CBG](https://stacks.math.columbia.edu/tag/0CBG)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

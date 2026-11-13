@@ -8,13 +8,13 @@ proof: formalized
 
 # 53.6 Some vanishing results
 
-Section 53.6 of the Stacks Project, [Tag 0B5C](https://stacks.math.columbia.edu/tag/0B5C). 7 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 53.6 of the Stacks Project, [Tag 0B5C](https://stacks.math.columbia.edu/tag/0B5C). 7 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0BY5, a lemma
 
 [Tag 0BY5](https://stacks.math.columbia.edu/tag/0BY5) in the Stacks Project.
 
-**`AlgebraicGeometry.connectedSpace_of_isIso_globalSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/AutomaticProperties.lean, line 378](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/AutomaticProperties.lean#L378). The attribute's comment: “connectedness”. References: SGA 3 VIB (12.3), “connectedness of N”.
+**`AlgebraicGeometry.connectedSpace_of_isIso_globalSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/AutomaticProperties.lean, line 378](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/AutomaticProperties.lean#L378). The attribute's comment: “connectedness”. References: SGA 3 VIB (12.3), “connectedness of N”.
 
 > **Stacks Project, Tag 0BY5.** A scheme over a field whose only global regular functions
 > are constants is connected.
@@ -26,7 +26,7 @@ theorem connectedSpace_of_isIso_globalSections
     ConnectedSpace X
 ```
 
-**`AlgebraicGeometry.isCohenMacaulay_of_isIso_globalSections_of_dimension_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/AutomaticProperties.lean, line 430](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/AutomaticProperties.lean#L430). The attribute's comment: “Cohen–Macaulayness”.
+**`AlgebraicGeometry.isCohenMacaulay_of_isIso_globalSections_of_dimension_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/AutomaticProperties.lean, line 430](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/AutomaticProperties.lean#L430). The attribute's comment: “Cohen–Macaulayness”.
 
 > **Stacks Project, Tag 0BY5.** A proper one-dimensional scheme over a field whose only
 > global regular functions are constants is Cohen–Macaulay.
@@ -39,7 +39,7 @@ theorem isCohenMacaulay_of_isIso_globalSections_of_dimension_one
     IsCohenMacaulay X
 ```
 
-**`AlgebraicGeometry.equidimensional_of_isIso_globalSections_of_dimension_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/AutomaticProperties.lean, line 648](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/AutomaticProperties.lean#L648). The attribute's comment: “equidimensionality”.
+**`AlgebraicGeometry.equidimensional_of_isIso_globalSections_of_dimension_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/AutomaticProperties.lean, line 648](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/AutomaticProperties.lean#L648). The attribute's comment: “equidimensionality”.
 
 > **Stacks Project, Tag 0BY5.** A proper one-dimensional scheme over a field whose only
 > global regular functions are constants is equidimensional.
@@ -56,7 +56,7 @@ theorem equidimensional_of_isIso_globalSections_of_dimension_one
 
 [Tag 0B5D](https://stacks.math.columbia.edu/tag/0B5D) in the Stacks Project.
 
-**`AlgebraicGeometry.CohenMacaulayCurveSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/Situation.lean, line 40](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/Situation.lean#L40).
+**`AlgebraicGeometry.CohenMacaulayCurveSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/Situation.lean, line 40](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/Situation.lean#L40).
 
 > **Stacks Project, Tag 0B5D.** The standing situation of a proper one-dimensional scheme
 > over a field whose canonical ring of global sections is the base field.
@@ -69,7 +69,7 @@ structure CohenMacaulayCurveSituation
 
 [Tag 0B5E](https://stacks.math.columbia.edu/tag/0B5E) in the Stacks Project.
 
-**`AlgebraicGeometry.CohenMacaulayCurveSituation.isZero_firstCohomology_or_iso_biprod_dualizingSheafOverField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/DualizingSheafExtension.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/DualizingSheafExtension.lean#L78).
+**`AlgebraicGeometry.CohenMacaulayCurveSituation.isZero_firstCohomology_or_iso_biprod_dualizingSheafOverField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/DualizingSheafExtension.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/DualizingSheafExtension.lean#L78).
 
 > **Stacks Project, Tag 0B5E.** In Situation [Stacks, Tag 0B5D], let
 > `ω_X = H^{-1}(f^×(𝒪_{Spec k}))` be the dualizing sheaf of `X` ([Stacks, Tag 0BS2]) and let
@@ -91,7 +91,7 @@ public theorem isZero_firstCohomology_or_iso_biprod_dualizingSheafOverField {F Q
         α ≫ e.hom = biprod.inl ∧ e.hom ≫ biprod.snd = β
 ```
 
-**`AlgebraicGeometry.CohenMacaulayCurveSituation.isZero_firstCohomology_or_iso_biprod_dualizingSheafOverField_of_supp_dim_le_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/DualizingSheafExtension.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/DualizingSheafExtension.lean#L98). The attribute's comment: “the parenthetical example: Q coherent with dim(Supp(Q)) = 0, where H¹(X, Q) = 0 by Tag 0B3J”.
+**`AlgebraicGeometry.CohenMacaulayCurveSituation.isZero_firstCohomology_or_iso_biprod_dualizingSheafOverField_of_supp_dim_le_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/DualizingSheafExtension.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/DualizingSheafExtension.lean#L98). The attribute's comment: “the parenthetical example: Q coherent with dim(Supp(Q)) = 0, where H¹(X, Q) = 0 by Tag 0B3J”.
 
 > **Stacks Project, Tag 0B5E, the parenthetical example.** In Situation [Stacks, Tag 0B5D],
 > for an exact sequence `ω_X ⟶ ℱ ⟶ 𝒬 ⟶ 0` of `𝒪_X`-modules with `𝒬` coherent and
@@ -115,7 +115,7 @@ public theorem isZero_firstCohomology_or_iso_biprod_dualizingSheafOverField_of_s
 
 [Tag 0B62](https://stacks.math.columbia.edu/tag/0B62) in the Stacks Project.
 
-**`AlgebraicGeometry.CohenMacaulayCurveSituation.isZero_firstCohomology_dualizingSheafOverField_tensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/DualizingTwistCanonical.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/DualizingTwistCanonical.lean#L109). The attribute's comment: “at the dualizing sheaf H^\{-1}(f^×(𝒪\_\{Spec k})) of Tag 0BS2, nothing carried”.
+**`AlgebraicGeometry.CohenMacaulayCurveSituation.isZero_firstCohomology_dualizingSheafOverField_tensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/DualizingTwistCanonical.lean, line 109](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/DualizingTwistCanonical.lean#L109). The attribute's comment: “at the dualizing sheaf H^\{-1}(f^×(𝒪\_\{Spec k})) of Tag 0BS2, nothing carried”.
 
 > **Stacks Project, Tag 0B62**, at the dualizing sheaf `ω_X = H^{-1}(f^×(𝒪_{Spec k}))` of
 > [Stacks, Tag 0BS2]. In Situation [Stacks, Tag 0B5D], if `ℒ` is an invertible `𝒪_X`-module which
@@ -140,7 +140,7 @@ public theorem isZero_firstCohomology_dualizingSheafOverField_tensor
 
 [Tag 0B5F](https://stacks.math.columbia.edu/tag/0B5F) in the Stacks Project.
 
-**`AlgebraicGeometry.CohenMacaulayCurveSituation.epi_globalSectionsHom_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/GlobalSectionsGeneration.lean, line 388](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/GlobalSectionsGeneration.lean#L388). The attribute's comment: “two properties of ω are arguments, neither of them an assertion of this tag, because the library has no dualizing sheaf of a proper curve over a field: clause (5) of Tag 0BS2 is hdual and dim\_k H¹(X, ω) = 1 of Section 0B5B is hone. The rest is proved here: both clauses of Tag 0B3J are applied to the zero-dimensional support of Q, as the source does, and the vanishing of H²(X, -) of Tag 02UZ comes from secondCohomologyVanishing”.
+**`AlgebraicGeometry.CohenMacaulayCurveSituation.epi_globalSectionsHom_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/GlobalSectionsGeneration.lean, line 388](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/GlobalSectionsGeneration.lean#L388). The attribute's comment: “two properties of ω are arguments, neither of them an assertion of this tag, because the library has no dualizing sheaf of a proper curve over a field: clause (5) of Tag 0BS2 is hdual and dim\_k H¹(X, ω) = 1 of Section 0B5B is hone. The rest is proved here: both clauses of Tag 0B3J are applied to the zero-dimensional support of Q, as the source does, and the vanishing of H²(X, -) of Tag 02UZ comes from secondCohomologyVanishing”.
 
 > In Situation [Stacks, Tag 0B5D], let `ω` be the dualizing sheaf of `X` and let
 > `ω ⟶ ℱ ⟶ 𝒬 ⟶ 0` be an exact sequence of coherent `𝒪_X`-modules such that the support of `𝒬` has
@@ -160,7 +160,7 @@ public theorem epi_globalSectionsHom_comp {ω F Q : S.X.Modules}
     Epi (globalSectionsHom F ≫ β)
 ```
 
-**`AlgebraicGeometry.CohenMacaulayCurveSituation.epi_globalSectionsHom_comp_dualizingSheafOverField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/GlobalSectionsGenerationDualizing.lean, line 52](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/GlobalSectionsGenerationDualizing.lean#L52).
+**`AlgebraicGeometry.CohenMacaulayCurveSituation.epi_globalSectionsHom_comp_dualizingSheafOverField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/GlobalSectionsGenerationDualizing.lean, line 52](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/GlobalSectionsGenerationDualizing.lean#L52).
 
 > **Stacks Project, Tag 0B5F.** In Situation [Stacks, Tag 0B5D], let
 > `ω_X = H^{-1}(f^×(𝒪_{Spec k}))` be the dualizing sheaf of `X` ([Stacks, Tag 0BS2]) and let
@@ -188,7 +188,7 @@ public theorem epi_globalSectionsHom_comp_dualizingSheafOverField {F Q : S.X.Mod
 
 [Tag 0B5G](https://stacks.math.columbia.edu/tag/0B5G) in the Stacks Project.
 
-**`AlgebraicGeometry.CohenMacaulayCurveSituation.nonempty_generatingSections_of_isTorsionFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/DualizingSheafGenericStalk.lean, line 175](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/DualizingSheafGenericStalk.lean#L175).
+**`AlgebraicGeometry.CohenMacaulayCurveSituation.nonempty_generatingSections_of_isTorsionFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/DualizingSheafGenericStalk.lean, line 175](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/DualizingSheafGenericStalk.lean#L175).
 
 > **Stacks Project, Tag 0B5G.** In Situation [Stacks, Tag 0B5D] assume that `X` is integral,
 > let `ω_X = H^{-1}(f^×(𝒪_{Spec k}))` be the dualizing sheaf of [Stacks, Tag 0BS2], and let
@@ -216,7 +216,7 @@ public theorem nonempty_generatingSections_of_isTorsionFree [IsIntegral S.X] {F 
 
 [Tag 0B5H](https://stacks.math.columbia.edu/tag/0B5H) in the Stacks Project.
 
-**`AlgebraicGeometry.CohenMacaulayCurveSituation.nonempty_generatingSections_dualizingSheafOverField_tensorSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/DualizingSheafCoherence.lean, line 790](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/DualizingSheafCoherence.lean#L790).
+**`AlgebraicGeometry.CohenMacaulayCurveSituation.nonempty_generatingSections_dualizingSheafOverField_tensorSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/DualizingSheafCoherence.lean, line 790](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/DualizingSheafCoherence.lean#L790).
 
 > **[Stacks, Tag 0B5H].** In Situation [Stacks, Tag 0B5D] — a field `k`, a proper scheme `X` of
 > dimension one over `k` with `H⁰(X, 𝒪_X) = k` — let `ℒ` be a very ample invertible `𝒪_X`-module
@@ -242,7 +242,7 @@ theorem nonempty_generatingSections_dualizingSheafOverField_tensorSheaf (L : S.X
       ((Stacks.Duality.dualizingSheafOverField S.f))).obj (L))).GeneratingSections
 ```
 
-**`AlgebraicGeometry.CohenMacaulayCurveSituation.nonempty_generatingSections_tensorSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/DualizingTwistGeneration.lean, line 389](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/DualizingTwistGeneration.lean#L389). The attribute's comment: “k algebraically closed; hsec carries Tag 0B58's section and the count of global sections of the twisted quotient, duality is hdual/hone/hH2, Nakayama is proved”.
+**`AlgebraicGeometry.CohenMacaulayCurveSituation.nonempty_generatingSections_tensorSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/DualizingTwistGeneration.lean, line 389](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/VanishingResults/DualizingTwistGeneration.lean#L389). The attribute's comment: “k algebraically closed; hsec carries Tag 0B58's section and the count of global sections of the twisted quotient, duality is hdual/hone/hH2, Nakayama is proved”.
 
 > **Stacks Project, Tag 0B5H.** In Situation [Stacks, Tag 0B5D], let `ω` be the dualizing sheaf
 > of `X` and let `ℒ` be an invertible `𝒪_X`-module with `deg(ℒ) ≥ 2`. Then `ω ⊗ ℒ` is generated by
@@ -291,4 +291,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 53.6, Tag 0B5C](https://stacks.math.columbia.edu/tag/0B5C)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

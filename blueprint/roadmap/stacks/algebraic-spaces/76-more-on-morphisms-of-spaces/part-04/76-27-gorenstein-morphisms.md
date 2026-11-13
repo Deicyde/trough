@@ -8,13 +8,13 @@ proof: formalized
 
 # 76.27 Gorenstein morphisms
 
-Section 76.27 of the Stacks Project, [Tag 0E12](https://stacks.math.columbia.edu/tag/0E12). 7 tags here are carried by 18 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 76.27 of the Stacks Project, [Tag 0E12](https://stacks.math.columbia.edu/tag/0E12). 7 tags here are carried by 18 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0E13, a lemma
 
 [Tag 0E13](https://stacks.math.columbia.edu/tag/0E13) in the Stacks Project.
 
-**`AlgebraicGeometry.hasGorensteinFiberLocalRing_isEtaleLocalOnSourceAndTarget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Germs/GorensteinFiber.lean, line 456](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Germs/GorensteinFiber.lean#L456).
+**`AlgebraicGeometry.hasGorensteinFiberLocalRing_isEtaleLocalOnSourceAndTarget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Germs/GorensteinFiber.lean, line 455](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Germs/GorensteinFiber.lean#L455).
 
 > **Stacks Project, Tag 0E13.** Having a Noetherian and Gorenstein
 > local ring of the fibre is étale local on the source and target germs.
@@ -29,7 +29,7 @@ public theorem hasGorensteinFiberLocalRing_isEtaleLocalOnSourceAndTarget :
 
 [Tag 0E14](https://stacks.math.columbia.edu/tag/0E14) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsGorensteinAt`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/Defs.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/Defs.lean#L53). The attribute's comment: “part (1): at a point”.
+**`AlgebraicGeometry.Space.IsGorensteinAt`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/Defs.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/Defs.lean#L53). The attribute's comment: “part (1): at a point”.
 
 > **Stacks 0E14, part (1).** A morphism of algebraic spaces over `S` is *Gorenstein at* a
 > point `x` of its source when it is flat at `x` and the local ring of its fibre is Noetherian
@@ -40,7 +40,7 @@ abbrev IsGorensteinAt (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS : B.Contains S)
     {X Y : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u} (f : X ⟶ Y) (x : points B S hS X) : Prop
 ```
 
-**`AlgebraicGeometry.Space.IsGorenstein`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/Defs.lean, line 61](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/Defs.lean#L61). The attribute's comment: “part (2): morphism”.
+**`AlgebraicGeometry.Space.IsGorenstein`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/Defs.lean, line 61](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/Defs.lean#L61). The attribute's comment: “part (2): morphism”.
 
 > **Stacks 0E14, part (2).** A morphism of algebraic spaces over `S` is *Gorenstein* when
 > it is Gorenstein at every point of its source.
@@ -54,7 +54,7 @@ abbrev IsGorenstein (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS : B.Contains S)
 
 [Tag 0E15](https://stacks.math.columbia.edu/tag/0E15) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isGorenstein_tfae_etaleCharts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/EtaleCharts.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/EtaleCharts.lean#L216). The attribute's comment: “global\_gorenstein\_equivalence”.
+**`AlgebraicGeometry.Space.isGorenstein_tfae_etaleCharts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/EtaleCharts.lean, line 216](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/EtaleCharts.lean#L216). The attribute's comment: “global\_gorenstein\_equivalence”.
 
 > **Stacks 0E15.** For a morphism of algebraic spaces over `S` with locally Noetherian fibres,
 > Gorensteinness is equivalent to flatness together with Gorensteinness of the fibres after some,
@@ -77,7 +77,7 @@ theorem isGorenstein_tfae_etaleCharts (hX : IsAlgebraicSpace B S hS X)
           IsEtale B S hS g → HasGorensteinFibersOnChart B S hS f V g]
 ```
 
-**`AlgebraicGeometry.Space.isGorensteinAt_iff_etaleLocalRingMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/EtaleLocalRings.lean, line 238](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/EtaleLocalRings.lean#L238). The attribute's comment: “etale\_local\_ring\_criterion”.
+**`AlgebraicGeometry.Space.isGorensteinAt_iff_etaleLocalRingMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/EtaleLocalRings.lean, line 238](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/EtaleLocalRings.lean#L238). The attribute's comment: “etale\_local\_ring\_criterion”.
 
 > **Stacks 0E15.** A morphism of algebraic spaces over `S` is Gorenstein at the image of a
 > geometric point `x` of its source exactly when the canonical homomorphism of étale local rings
@@ -100,7 +100,7 @@ theorem isGorensteinAt_iff_etaleLocalRingMap (hX : IsAlgebraicSpace B S hS X)
 
 [Tag 0E16](https://stacks.math.columbia.edu/tag/0E16) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isGorensteinAt_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/Composition.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/Composition.lean#L90). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.Space.isGorensteinAt_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/Composition.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/Composition.lean#L90). The attribute's comment: “part (1)”.
 
 > **Stacks 0E16, part (1).** The composite of two morphisms of algebraic spaces with locally
 > Noetherian fibres is Gorenstein at a point of its source as soon as the first is Gorenstein
@@ -119,7 +119,7 @@ theorem isGorensteinAt_comp
     IsGorensteinAt B S hS (f ≫ g) x
 ```
 
-**`AlgebraicGeometry.Space.isGorenstein_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/Composition.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/Composition.lean#L111). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.Space.isGorenstein_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/Composition.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/Composition.lean#L111). The attribute's comment: “part (2)”.
 
 > **Stacks 0E16, part (2).** The composite of two Gorenstein morphisms of algebraic spaces
 > with locally Noetherian fibres is Gorenstein.
@@ -136,7 +136,7 @@ theorem isGorenstein_comp
     IsGorenstein B S hS (f ≫ g)
 ```
 
-**`AlgebraicGeometry.Space.isGorensteinAt_left_of_comp_of_isFlatAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/Composition.lean, line 150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/Composition.lean#L150). The attribute's comment: “part (3), first conclusion”.
+**`AlgebraicGeometry.Space.isGorensteinAt_left_of_comp_of_isFlatAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/Composition.lean, line 150](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/Composition.lean#L150). The attribute's comment: “part (3), first conclusion”.
 
 > **Stacks 0E16, part (3), first conclusion.** If the composite is Gorenstein at `x` and the
 > first morphism is flat at `x`, then the first morphism is Gorenstein at `x`.
@@ -153,7 +153,7 @@ theorem isGorensteinAt_left_of_comp_of_isFlatAt
     (hflat : IsFlatAt B S hS f x) : IsGorensteinAt B S hS f x
 ```
 
-**`AlgebraicGeometry.Space.isGorensteinAt_right_of_comp_of_isFlatAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/Composition.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/Composition.lean#L164). The attribute's comment: “part (3), second conclusion”.
+**`AlgebraicGeometry.Space.isGorensteinAt_right_of_comp_of_isFlatAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/Composition.lean, line 164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/Composition.lean#L164). The attribute's comment: “part (3), second conclusion”.
 
 > **Stacks 0E16, part (3), second conclusion.** If the composite is Gorenstein at `x` and the
 > first morphism is flat at `x`, then the second morphism is Gorenstein at the image of `x`.
@@ -171,7 +171,7 @@ theorem isGorensteinAt_right_of_comp_of_isFlatAt
     IsGorensteinAt B S hS g (pointsMap B S hS X f x)
 ```
 
-**`AlgebraicGeometry.Space.isGorenstein_left_of_comp_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/Composition.lean, line 179](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/Composition.lean#L179). The attribute's comment: “part (4), first conclusion”.
+**`AlgebraicGeometry.Space.isGorenstein_left_of_comp_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/Composition.lean, line 179](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/Composition.lean#L179). The attribute's comment: “part (4), first conclusion”.
 
 > **Stacks 0E16, part (4), first conclusion.** If the composite is Gorenstein and the first
 > morphism is flat, then the first morphism is Gorenstein.
@@ -188,7 +188,7 @@ theorem isGorenstein_left_of_comp_of_isFlat
     IsGorenstein B S hS f
 ```
 
-**`AlgebraicGeometry.Space.isGorensteinAt_right_of_comp_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/Composition.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/Composition.lean#L195). The attribute's comment: “part (4), second conclusion”.
+**`AlgebraicGeometry.Space.isGorensteinAt_right_of_comp_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/Composition.lean, line 195](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/Composition.lean#L195). The attribute's comment: “part (4), second conclusion”.
 
 > **Stacks 0E16, part (4), second conclusion.** If the composite is Gorenstein and the first
 > morphism is flat, then the second morphism is Gorenstein at every point in the image of the
@@ -211,7 +211,7 @@ theorem isGorensteinAt_right_of_comp_of_isFlat
 
 [Tag 0E17](https://stacks.math.columbia.edu/tag/0E17) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isGorenstein_of_isGorenstein_source`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/FlatSource.lean, line 161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/FlatSource.lean#L161). The attribute's comment: “the morphism is Gorenstein”.
+**`AlgebraicGeometry.Space.isGorenstein_of_isGorenstein_source`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/FlatSource.lean, line 161](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/FlatSource.lean#L161). The attribute's comment: “the morphism is Gorenstein”.
 
 > **Stacks 0E17.** A flat morphism of locally Noetherian algebraic spaces over `S` whose
 > source is a Gorenstein algebraic space is a Gorenstein morphism.
@@ -227,7 +227,7 @@ theorem isGorenstein_of_isGorenstein_source (hX : IsAlgebraicSpace B S hS X)
     IsGorenstein B S hS f
 ```
 
-**`AlgebraicGeometry.Space.isGorensteinLocalRing_etaleLocalRing_target`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/FlatSource.lean, line 199](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/FlatSource.lean#L199). The attribute's comment: “the target étale local rings are Gorenstein”.
+**`AlgebraicGeometry.Space.isGorensteinLocalRing_etaleLocalRing_target`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/FlatSource.lean, line 199](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/FlatSource.lean#L199). The attribute's comment: “the target étale local rings are Gorenstein”.
 
 > **Stacks 0E17.** For a flat morphism of locally Noetherian algebraic spaces over `S` whose
 > source is a Gorenstein algebraic space, the étale local ring of the target at the image of any
@@ -253,7 +253,7 @@ theorem isGorensteinLocalRing_etaleLocalRing_target (hX : IsAlgebraicSpace B S h
 
 [Tag 0E18](https://stacks.math.columbia.edu/tag/0E18) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isGorensteinAt_pullback_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/BaseChange.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/BaseChange.lean#L227). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.Space.isGorensteinAt_pullback_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/BaseChange.lean, line 227](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/BaseChange.lean#L227). The attribute's comment: “part (1)”.
 
 > **Stacks 0E18, part (1).** Gorensteinness of a morphism of algebraic spaces with locally
 > Noetherian fibres at a point is preserved by base change along a morphism locally of finite
@@ -271,7 +271,7 @@ theorem isGorensteinAt_pullback_snd
     IsGorensteinAt B S hS (pullback.snd f g) x'
 ```
 
-**`AlgebraicGeometry.Space.isGorensteinAt_of_pullback_snd_of_isFlatAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/BaseChange.lean, line 245](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/BaseChange.lean#L245). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.Space.isGorensteinAt_of_pullback_snd_of_isFlatAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/BaseChange.lean, line 245](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/BaseChange.lean#L245). The attribute's comment: “part (2)”.
 
 > **Stacks 0E18, part (2).** Gorensteinness descends from the base change when the original
 > morphism is flat at the point in question.
@@ -289,7 +289,7 @@ theorem isGorensteinAt_of_pullback_snd_of_isFlatAt
       (pointsMap B S hS (pullback f g) (pullback.fst f g) x')
 ```
 
-**`AlgebraicGeometry.Space.isGorensteinAt_of_pullback_snd_of_isFlatAt_base`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/BaseChange.lean, line 268](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/BaseChange.lean#L268). The attribute's comment: “part (3)”.
+**`AlgebraicGeometry.Space.isGorensteinAt_of_pullback_snd_of_isFlatAt_base`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/BaseChange.lean, line 268](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/BaseChange.lean#L268). The attribute's comment: “part (3)”.
 
 > **Stacks 0E18, part (3).** Gorensteinness descends from the base change when the base
 > morphism is flat at the corresponding point.
@@ -311,7 +311,7 @@ theorem isGorensteinAt_of_pullback_snd_of_isFlatAt_base
 
 [Tag 0E19](https://stacks.math.columbia.edu/tag/0E19) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isOpen_setOf_isGorensteinAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/Locus.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/Locus.lean#L110). The attribute's comment: “openness of the Gorenstein locus”.
+**`AlgebraicGeometry.Space.isOpen_setOf_isGorensteinAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/Locus.lean, line 110](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/Locus.lean#L110). The attribute's comment: “openness of the Gorenstein locus”.
 
 > **Stacks 0E19.** The Gorenstein locus of a flat morphism of algebraic spaces over `S` which
 > is locally of finite presentation is open in the canonical topology of Tag 03BX on the point
@@ -324,7 +324,7 @@ theorem isOpen_setOf_isGorensteinAt {X Y : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u
     IsOpen {x : points B S hS X | IsGorensteinAt B S hS f x}
 ```
 
-**`AlgebraicGeometry.Space.isGorensteinAt_pullback_locus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/Locus.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/Locus.lean#L148). The attribute's comment: “base change of the Gorenstein locus”.
+**`AlgebraicGeometry.Space.isGorensteinAt_pullback_locus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/Locus.lean, line 148](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Gorenstein/Locus.lean#L148). The attribute's comment: “base change of the Gorenstein locus”.
 
 > **Stacks 0E19.** The Gorenstein locus of a flat morphism of algebraic spaces over `S` which
 > is locally of finite presentation commutes with arbitrary base change: the locus of the base
@@ -348,4 +348,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 76.27, Tag 0E12](https://stacks.math.columbia.edu/tag/0E12)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

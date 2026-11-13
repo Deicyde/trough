@@ -8,13 +8,13 @@ proof: formalized
 
 # 61.16 Comparing topologies
 
-Section 61.16 of the Stacks Project, [Tag 0F62](https://stacks.math.columbia.edu/tag/0F62). 3 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 61.16 of the Stacks Project, [Tag 0F62](https://stacks.math.columbia.edu/tag/0F62). 3 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0F63, a lemma
 
 [Tag 0F63](https://stacks.math.columbia.edu/tag/0F63) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.ProEt.bijective_toSheafify_app_of_isWeaklyContractible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WeaklyContractible/SmallSiteSheafificationSections.lean, line 340](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/WeaklyContractible/SmallSiteSheafificationSections.lean#L340). The attribute's comment: “sheafification does not change sections over an affine weakly contractible object”.
+**`AlgebraicGeometry.Scheme.ProEt.bijective_toSheafify_app_of_isWeaklyContractible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WeaklyContractible/SmallSiteSheafificationSections.lean, line 340](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/WeaklyContractible/SmallSiteSheafificationSections.lean#L340). The attribute's comment: “sheafification does not change sections over an affine weakly contractible object”.
 
 > **Stacks 0F63.** Let `S` be a scheme and let `ℱ` be a presheaf of sets on the small
 > pro-étale site of `S` which sends finite disjoint unions to products. Then the unit of
@@ -32,7 +32,7 @@ theorem bijective_toSheafify_app_of_isWeaklyContractible (F : S.ProEtᵒᵖ ⥤ 
 
 [Tag 0F64](https://stacks.math.columbia.edu/tag/0F64) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.ProetaleComparison.smallInverseImageColimitMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/BigSmall/ProetaleComparisonInverseImage.lean, line 487](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/BigSmall/ProetaleComparisonInverseImage.lean#L487). The attribute's comment: “the colimit and the canonical map to the inverse-image sections”.
+**`AlgebraicGeometry.ProEtale.ProetaleComparison.smallInverseImageColimitMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/BigSmall/ProetaleComparisonInverseImage.lean, line 487](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/BigSmall/ProetaleComparisonInverseImage.lean#L487). The attribute's comment: “the colimit and the canonical map to the inverse-image sections”.
 
 > The canonical comparison from `colim_{W ⟶ f^*V} F(V)`, the colimit over the morphisms from
 > `W` to a pro-étale object of `S` over `S`, to the sections of `f_{small}^{-1} F` over `W`.
@@ -46,7 +46,7 @@ public noncomputable def smallInverseImageColimitMap
       ((smallProetaleMorphism B T S f).inverseImage.obj F).obj.obj (op W)
 ```
 
-**`AlgebraicGeometry.ProEtale.ProetaleComparison.bijective_smallInverseImageColimitMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/BigSmall/ProetaleComparisonInverseImage.lean, line 512](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/BigSmall/ProetaleComparisonInverseImage.lean#L512). The attribute's comment: “the canonical map is a bijection at an affine weakly contractible object”.
+**`AlgebraicGeometry.ProEtale.ProetaleComparison.bijective_smallInverseImageColimitMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/BigSmall/ProetaleComparisonInverseImage.lean, line 512](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/BigSmall/ProetaleComparisonInverseImage.lean#L512). The attribute's comment: “the canonical map is a bijection at an affine weakly contractible object”.
 
 > For an affine weakly contractible object `W` of the small pro-étale site
 > of `T`, the sections of `f_{small}^{-1} F` over `W` are the colimit of the sections of `F` over
@@ -65,7 +65,7 @@ public theorem bijective_smallInverseImageColimitMap
 
 [Tag 0F65](https://stacks.math.columbia.edu/tag/0F65) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.bigProetaleInverseImage_sections_and_isSheafFor_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/BigSmall/FpqcSheafCondition.lean, line 477](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/BigSmall/FpqcSheafCondition.lean#L477).
+**`AlgebraicGeometry.ProEtale.bigProetaleInverseImage_sections_and_isSheafFor_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/BigSmall/FpqcSheafCondition.lean, line 477](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/BigSmall/FpqcSheafCondition.lean#L477).
 
 > Let `S` be a scheme of a chosen big pro-étale site and let
 > `π_S : Sh((Sch/S)_proetale) → Sh(S_proetale)` be the projection of topoi. For a sheaf `F` on the
@@ -90,7 +90,7 @@ theorem bigProetaleInverseImage_sections_and_isSheafFor_fpqc (S : B.Scheme) :
           ((bigProetaleToSmallProetaleMorphism B S.obj S.property).inverseImage.obj F).obj R
 ```
 
-**`AlgebraicGeometry.ProEtale.bigProetaleInverseImageSectionsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/BigSmall/Sections.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/BigSmall/Sections.lean#L112). The attribute's comment: “pullback\_value”.
+**`AlgebraicGeometry.ProEtale.bigProetaleInverseImageSectionsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/BigSmall/Sections.lean, line 112](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/BigSmall/Sections.lean#L112). The attribute's comment: “pullback\_value”.
 
 > The value of `π_S⁻¹ F` at `f : T ⟶ S` is the space of global sections of
 > `f_small⁻¹ F` on the small pro-étale site of `T`, naturally in `F`.
@@ -111,4 +111,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 61.16, Tag 0F62](https://stacks.math.columbia.edu/tag/0F62)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

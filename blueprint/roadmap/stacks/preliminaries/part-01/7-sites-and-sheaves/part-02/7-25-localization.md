@@ -8,13 +8,13 @@ proof: formalized
 
 # 7.25 Localization
 
-Section 7.25 of the Stacks Project, [Tag 00XZ](https://stacks.math.columbia.edu/tag/00XZ). 8 tags here are carried by 17 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 7.25 of the Stacks Project, [Tag 00XZ](https://stacks.math.columbia.edu/tag/00XZ). 8 tags here are carried by 19 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 03CD, a lemma
 
 [Tag 03CD](https://stacks.math.columbia.edu/tag/03CD) in the Stacks Project.
 
-**`CategoryTheory.OverShriek.overShriek_sheafify_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/LowerShriekCoproducts.lean, line 245](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Localization/LowerShriekCoproducts.lean#L245).
+**`CategoryTheory.OverShriek.overShriek_sheafify_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/LowerShriekCoproducts.lean, line 245](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Localization/LowerShriekCoproducts.lean#L245).
 
 > **Stacks 03CD**, packaged as the existence of the isomorphism
 > `j_{U!}(G^#) ≅ (∐_{φ : V ⟶ U} G(V →φ U))^#`.
@@ -31,7 +31,7 @@ theorem overShriek_sheafify_iso :
 
 [Tag 03HU](https://stacks.math.columbia.edu/tag/03HU) in the Stacks Project.
 
-**`CategoryTheory.overShriekSheafifyYonedaIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/LowerShriekRepresentable.lean, line 50](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Localization/LowerShriekRepresentable.lean#L50).
+**`CategoryTheory.overShriekSheafifyYonedaIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/LowerShriekRepresentable.lean, line 50](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Localization/LowerShriekRepresentable.lean#L50).
 
 > **Stacks 03HU.** For an object `X/U` of the localized site `C/U`, the lower shriek
 > `j_{U!} = (Over.forget U).sheafPullback` of the sheaf `h_{X/U}^#` associated to the presheaf on
@@ -49,7 +49,7 @@ noncomputable def overShriekSheafifyYonedaIso (X : Over U) :
 
 [Tag 00Y1](https://stacks.math.columbia.edu/tag/00Y1) in the Stacks Project.
 
-**`CategoryTheory.OverShriek.isEquivalence_sheafFunctorToOver`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/SheavesOverRepresentable.lean, line 515](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Localization/SheavesOverRepresentable.lean#L515). The attribute's comment: “the functor j\_\{U!} : Sh(C/U) ⥤ Sh(C)/h\_U^# is an equivalence”.
+**`CategoryTheory.OverShriek.isEquivalence_sheafFunctorToOver`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/SheavesOverRepresentable.lean, line 515](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Localization/SheavesOverRepresentable.lean#L515). The attribute's comment: “the functor j\_\{U!} : Sh(C/U) ⥤ Sh(C)/h\_U^# is an equivalence”.
 
 > **Stacks 00Y1.** The functor `Φ_sh : Sh(C/U) ⥤ Sh(C)/h_U^#` induced by `j_{U!}` is full,
 > faithful and essentially surjective, i.e. an equivalence.
@@ -58,7 +58,7 @@ noncomputable def overShriekSheafifyYonedaIso (X : Over U) :
 instance isEquivalence_sheafFunctorToOver : (sheafFunctorToOver (U := U) J).IsEquivalence
 ```
 
-**`CategoryTheory.OverShriek.sheafEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/SheavesOverRepresentable.lean, line 522](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Localization/SheavesOverRepresentable.lean#L522). The attribute's comment: “the resulting equivalence of categories Sh(C/U) ≌ Sh(C)/h\_U^#”.
+**`CategoryTheory.OverShriek.sheafEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/SheavesOverRepresentable.lean, line 522](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Localization/SheavesOverRepresentable.lean#L522). The attribute's comment: “the resulting equivalence of categories Sh(C/U) ≌ Sh(C)/h\_U^#”.
 
 > **Stacks 00Y1**, as an equivalence of categories `Sh(C/U) ≌ Sh(C)/h_U^#`. Its functor is
 > `sheafFunctorToOver`, the sheaf level `j_{U!}` viewed as a functor into the slice
@@ -70,7 +70,7 @@ def sheafEquivalence :
     Sheaf (J.over U) (Type v) ≌ Over ((presheafToSheaf J (Type v)).obj (yoneda.obj U))
 ```
 
-**`CategoryTheory.OverShriek.sheafFunctorToOverForgetIsoOfAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/SheavesOverRepresentable.lean, line 561](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Localization/SheavesOverRepresentable.lean#L561). The attribute's comment: “j\_\{U!} is Sh(C/U) ≌ Sh(C)/h\_U^# followed by Over.forget, for any left adjoint”.
+**`CategoryTheory.OverShriek.sheafFunctorToOverForgetIsoOfAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/SheavesOverRepresentable.lean, line 561](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Localization/SheavesOverRepresentable.lean#L561). The attribute's comment: “j\_\{U!} is Sh(C/U) ≌ Sh(C)/h\_U^# followed by Over.forget, for any left adjoint”.
 
 > **Stacks 00Y1, in the form the source restates it in**: `j_{U!}` *is* the equivalence
 > `Φ : Sh(C/U) ≌ Sh(C)/h_U^#` followed by `Over.forget : Sh(C)/h_U^# ⥤ Sh(C)`.
@@ -93,7 +93,7 @@ def sheafFunctorToOverForgetIsoOfAdjunction
 
 [Tag 04BB](https://stacks.math.columbia.edu/tag/04BB) in the Stacks Project.
 
-**`CategoryTheory.OverShriek.preservesLimitsOfShape_of_isConnected`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/Localization.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Localization/Localization.lean#L162). The attribute's comment: “j\_\{U!} commutes with fibre products and equalizers, and more generally with connected limits; in particular it preserves subsheaf inclusions.”. References: SGA 4 III (5.1), “fibre products clause”; SGA 4 III (1.9.2), “more general”.
+**`CategoryTheory.OverShriek.preservesLimitsOfShape_of_isConnected`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/Localization.lean, line 162](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Localization/Localization.lean#L162). The attribute's comment: “j\_\{U!} commutes with fibre products and equalizers, and more generally with connected limits; in particular it preserves subsheaf inclusions.”. References: SGA 4 III (5.1), “fibre products clause”; SGA 4 III (1.9.2), “more general”.
 
 > **Stacks 04BB.** Let `C` be a site and let `U` be an object of `C`. Let `L` be a left adjoint
 > of the restriction functor `j_U^{-1} = J.overPullback : Sh(C) ⥤ Sh(C/U)`, i.e. let `L` be
@@ -114,7 +114,7 @@ public theorem preservesLimitsOfShape_of_isConnected {C : Type u} [Category.{v} 
 
 [Tag 0E8E](https://stacks.math.columbia.edu/tag/0E8E) in the Stacks Project.
 
-**`CategoryTheory.OverShriek.reflectsMonomorphisms_and_reflectsEpimorphisms`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/Localization.lean, line 264](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Localization/Localization.lean#L264). The attribute's comment: “j\_\{U!} reflects injections and surjections of sheaves of sets.”.
+**`CategoryTheory.OverShriek.reflectsMonomorphisms_and_reflectsEpimorphisms`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/Localization.lean, line 264](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Localization/Localization.lean#L264). The attribute's comment: “j\_\{U!} reflects injections and surjections of sheaves of sets.”.
 
 > **Stacks 0E8E.** Let `C` be a site and let `U` be an object of `C`. Let `L` be a left adjoint
 > of the restriction functor `j_U^{-1} = J.overPullback : Sh(C) ⥤ Sh(C/U)`, i.e. let `L` be
@@ -134,7 +134,7 @@ public theorem reflectsMonomorphisms_and_reflectsEpimorphisms {C : Type u} [Cate
 
 [Tag 03EE](https://stacks.math.columbia.edu/tag/03EE) in the Stacks Project.
 
-**`CategoryTheory.OverShriek.overShriek_overPullback_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/LowerShriekProduct.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Localization/LowerShriekProduct.lean#L113).
+**`CategoryTheory.OverShriek.overShriek_overPullback_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/LowerShriekProduct.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Localization/LowerShriekProduct.lean#L113).
 
 > **Stacks 03EE**, packaged as the existence of the isomorphism
 > `j_{U!}j_U^{-1}F ≅ F × h_U^#`.
@@ -151,7 +151,7 @@ theorem overShriek_overPullback_iso (F : Sheaf J (Type v)) :
 
 [Tag 03EH](https://stacks.math.columbia.edu/tag/03EH) in the Stacks Project.
 
-**`comp_forget_eq_forget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/RelocalizationTriangle.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Localization/RelocalizationTriangle.lean#L68). The attribute's comment: “triangle”. References: SGA 4 I (5.10), “commutative triangle”; SGA 3 I (1.6).
+**`comp_forget_eq_forget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/RelocalizationTriangle.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Localization/RelocalizationTriangle.lean#L68). The attribute's comment: “triangle”. References: SGA 4 I (5.10), “commutative triangle”; SGA 3 I (1.6).
 
 > Commutativity of the relocalization triangle: `j_U ∘ j = j_V`, i.e.
 > `Over.map f ⋙ Over.forget U = Over.forget V`.
@@ -161,7 +161,7 @@ theorem comp_forget_eq_forget :
     Over.map f ⋙ Over.forget U = Over.forget V
 ```
 
-**`map_eq_forget_iteratedSlice`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/RelocalizationTriangle.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Localization/RelocalizationTriangle.lean#L89). The attribute's comment: “j = j\_\{V/U}”. References: SGA 3 I (1.6), “partial”.
+**`map_eq_forget_iteratedSlice`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/RelocalizationTriangle.lean, line 89](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Localization/RelocalizationTriangle.lean#L89). The attribute's comment: “j = j\_\{V/U}”. References: SGA 3 I (1.6), “partial”.
 
 > Under the identification `(C/U)/(V/U) ≅ C/V` given by
 > `Over.iteratedSliceEquiv (Over.mk f)`, the relocalization functor
@@ -174,7 +174,7 @@ theorem map_eq_forget_iteratedSlice :
       Over.forget (Over.mk f)
 ```
 
-**`inverseImage_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/RelocalizationTriangle.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Localization/RelocalizationTriangle.lean#L113). The attribute's comment: “j\_V^\{-1} = j^\{-1} ∘ j\_U^\{-1}”.
+**`inverseImage_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/RelocalizationTriangle.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Localization/RelocalizationTriangle.lean#L113). The attribute's comment: “j\_V^\{-1} = j^\{-1} ∘ j\_U^\{-1}”.
 
 > (Inverse image, strict equality.)
 > `j_V^{-1} = j^{-1} ∘ j_U^{-1}` as functors `Sheaf J A ⟶ Sheaf (J.over V) A`.
@@ -190,7 +190,7 @@ theorem inverseImage_eq :
         (Over.map f).sheafPushforwardContinuous A (J.over V) (J.over U)
 ```
 
-**`leftAdjointIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/RelocalizationTriangle.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Localization/RelocalizationTriangle.lean#L133). The attribute's comment: “j\_\{V!} = j\_\{U!} ∘ j\_!”.
+**`leftAdjointIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/RelocalizationTriangle.lean, line 133](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Localization/RelocalizationTriangle.lean#L133). The attribute's comment: “j\_\{V!} = j\_\{U!} ∘ j\_!”.
 
 > (Lower-shriek, natural isomorphism.)
 > `j_{V!} ≅ j_{U!} ∘ j_!` as functors `Sheaf (J.over V) A ⟶ Sheaf J A`.
@@ -207,7 +207,7 @@ noncomputable def leftAdjointIso :
         (Over.forget U).sheafPullback A (J.over U) J
 ```
 
-**`leftAdjointIso_hom_app_comp_map_comp_counit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/RelocalizationTriangle.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Localization/RelocalizationTriangle.lean#L169). The attribute's comment: “j\_\{V!} = j\_\{U!} ∘ j\_! carries one transpose to the other”.
+**`leftAdjointIso_hom_app_comp_map_comp_counit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/RelocalizationTriangle.lean, line 169](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Localization/RelocalizationTriangle.lean#L169). The attribute's comment: “j\_\{V!} = j\_\{U!} ∘ j\_! carries one transpose to the other”.
 
 > **Stacks 03EH carries one transpose to the other.**  A morphism `u : T ⟶ j_V^{-1}Z`
 > transposes across `j_{V!} ⊣ j_V^{-1}` on the one hand and across `(j_! ∘ j_{U!}) ⊣ j_V^{-1}` on
@@ -234,11 +234,59 @@ theorem leftAdjointIso_hom_app_comp_map_comp_counit {T : Sheaf (J.over V) A} {Z 
             ((Over.forget U).sheafAdjunctionContinuous A (J.over U) J)).counit.app Z
 ```
 
+**`rightAdjointIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/RelocalizationTriangle.lean, line 204](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Localization/RelocalizationTriangle.lean#L204). The attribute's comment: “j\_\{V*} = j\_\{U*} ∘ j\_*”.
+
+> (Direct image, natural isomorphism.)
+> `j_{V*} ≅ j_{U*} ∘ j_*` as functors `Sheaf (J.over V) A ⥤ Sheaf J A`.
+>
+> Each direct image is the right adjoint `sheafPushforwardCocontinuous` of the inverse image of a
+> continuous and cocontinuous functor (`Functor.sheafAdjunctionCocontinuous`); the composite
+> `j_{U*} ∘ j_*` is right adjoint to `j^{-1} ∘ j_U^{-1}`, which is `j_V^{-1}` by
+> `inverseImage_eq`, so the two are identified by uniqueness of right adjoints.
+
+```lean
+noncomputable def rightAdjointIso :
+    (Over.forget V).sheafPushforwardCocontinuous A (J.over V) J ≅
+      (Over.map f).sheafPushforwardCocontinuous A (J.over V) (J.over U) ⋙
+        (Over.forget U).sheafPushforwardCocontinuous A (J.over U) J
+```
+
+**`relocalization_triangle_sheaf_types`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/RelocalizationTriangleTypes.lean, line 41](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Localization/RelocalizationTriangleTypes.lean#L41).
+
+> **Stacks 03EH.** For a morphism `f : V ⟶ U` of a site `(C, J)`:
+> * the triangle `j_U ∘ j = j_V` of `j = Over.map f`, `j_U = Over.forget U`, `j_V = Over.forget V`
+>   commutes (`comp_forget_eq_forget`);
+> * the three functors are continuous and cocontinuous for the localized topologies;
+> * under the identification `(C/U)/(V/U) ≌ C/V` (`Over.iteratedSliceEquiv`), `j` is the
+>   localization functor `j_{V/U} = Over.forget (V/U)` (`map_eq_forget_iteratedSlice`);
+> * on sheaves of sets, `j_V^{-1} = j^{-1} ∘ j_U^{-1}` strictly (`inverseImage_eq`),
+>   `j_{V!} ≅ j_{U!} ∘ j_!` (`leftAdjointIso`) and `j_{V*} ≅ j_{U*} ∘ j_*` (`rightAdjointIso`),
+>   the last two being the canonical isomorphisms between adjoints of the same functor.
+
+```lean
+theorem relocalization_triangle_sheaf_types :
+    Over.map f ⋙ Over.forget U = Over.forget V ∧
+      ((Over.forget V).IsContinuous (J.over V) J ∧ (Over.forget V).IsCocontinuous (J.over V) J) ∧
+      ((Over.forget U).IsContinuous (J.over U) J ∧ (Over.forget U).IsCocontinuous (J.over U) J) ∧
+      ((Over.map f).IsContinuous (J.over V) (J.over U) ∧
+        (Over.map f).IsCocontinuous (J.over V) (J.over U)) ∧
+      (Over.iteratedSliceEquiv (Over.mk f)).functor ⋙ Over.map f = Over.forget (Over.mk f) ∧
+      Nonempty ((Over.forget V).sheafPullback (Type max u v) (J.over V) J ≅
+        (Over.map f).sheafPullback (Type max u v) (J.over V) (J.over U) ⋙
+          (Over.forget U).sheafPullback (Type max u v) (J.over U) J) ∧
+      (Over.forget V).sheafPushforwardContinuous (Type max u v) (J.over V) J =
+        (Over.forget U).sheafPushforwardContinuous (Type max u v) (J.over U) J ⋙
+          (Over.map f).sheafPushforwardContinuous (Type max u v) (J.over V) (J.over U) ∧
+      Nonempty ((Over.forget V).sheafPushforwardCocontinuous (Type max u v) (J.over V) J ≅
+        (Over.map f).sheafPushforwardCocontinuous (Type max u v) (J.over V) (J.over U) ⋙
+          (Over.forget U).sheafPushforwardCocontinuous (Type max u v) (J.over U) J)
+```
+
 ## Tag 04IL, a lemma
 
 [Tag 04IL](https://stacks.math.columbia.edu/tag/04IL) in the Stacks Project.
 
-**`CategoryTheory.OverShriek.shriekCompSheafFunctorToOverIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/Relocalize.lean, line 355](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Localization/Relocalize.lean#L355). The attribute's comment: “(2): under the identification of 00Y1, j\_! is postcomposition with h\_f^#”.
+**`CategoryTheory.OverShriek.shriekCompSheafFunctorToOverIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/Relocalize.lean, line 355](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Localization/Relocalize.lean#L355). The attribute's comment: “(2): under the identification of 00Y1, j\_! is postcomposition with h\_f^#”.
 
 > **Stacks 04IL (2).**  Under the identification of Stacks 00Y1, used in the forward direction
 > `Φ_U = sheafFunctorToOver J : Sh(C/U) ⥤ Sh(C)/h_U^#`, the relocalization lower shriek `j_!` becomes
@@ -259,7 +307,7 @@ def shriekCompSheafFunctorToOverIso :
         Over.map ((presheafToSheaf J (Type v)).map (yoneda.map f))
 ```
 
-**`CategoryTheory.OverShriek.inverseImageCompSheafFunctorToOverIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/Relocalize.lean, line 400](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Localization/Relocalize.lean#L400). The attribute's comment: “(1): under the identification of 00Y1, j^\{-1} is base change along h\_f^#”.
+**`CategoryTheory.OverShriek.inverseImageCompSheafFunctorToOverIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/Relocalize.lean, line 400](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Localization/Relocalize.lean#L400). The attribute's comment: “(1): under the identification of 00Y1, j^\{-1} is base change along h\_f^#”.
 
 > **Stacks 04IL (1).**  Under the identification of Stacks 00Y1, used in the forward direction
 > `Φ_U = sheafFunctorToOver J`, the relocalization inverse image `j^{-1}` becomes base change along
@@ -282,7 +330,7 @@ def inverseImageCompSheafFunctorToOverIso :
         Over.pullback ((presheafToSheaf J (Type v)).map (yoneda.map f))
 ```
 
-**`CategoryTheory.OverShriek.homEquiv_symm_inverseImageCompSheafFunctorToOverIso_inv_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/Relocalize.lean, line 427](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Localization/Relocalize.lean#L427). The attribute's comment: “(1): the comparison of inverse images is the one its counit prescribes”.
+**`CategoryTheory.OverShriek.homEquiv_symm_inverseImageCompSheafFunctorToOverIso_inv_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/Relocalize.lean, line 427](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Localization/Relocalize.lean#L427). The attribute's comment: “(1): the comparison of inverse images is the one its counit prescribes”.
 
 > **Stacks 04IL (1) is the comparison its counit prescribes.**  Transposing the inverse of the
 > comparison across the adjunction `Φ_V^{-1} ⋙ j_! ⊣ j^{-1} ⋙ Φ_V` — the one whose left adjoint
@@ -314,7 +362,7 @@ theorem homEquiv_symm_inverseImageCompSheafFunctorToOverIso_inv_app
           (sheafEquivalence (U := U) J).symm.toAdjunction).counit.app Z
 ```
 
-**`CategoryTheory.OverShriek.left_inverseImageCompSheafFunctorToOverIso_inv_app_comp_counit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/RelocalizeCounit.lean, line 848](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Localization/RelocalizeCounit.lean#L848). The attribute's comment: “(1) carries the counit of j\_\{V!} to the counit of j\_\{U!}”.
+**`CategoryTheory.OverShriek.left_inverseImageCompSheafFunctorToOverIso_inv_app_comp_counit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Localization/RelocalizeCounit.lean, line 848](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Localization/RelocalizeCounit.lean#L848). The attribute's comment: “(1) carries the counit of j\_\{V!} to the counit of j\_\{U!}”.
 
 > **Stacks 04IL (1) carries the counit of `j_{V!} ⊣ j_V^{-1}` to that of
 > `j_{U!} ⊣ j_U^{-1}`.**  The inverse of Stacks 04IL (1) at a restricted sheaf `j_U^{-1}A`, read
@@ -346,4 +394,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 7.25, Tag 00XZ](https://stacks.math.columbia.edu/tag/00XZ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

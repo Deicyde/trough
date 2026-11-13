@@ -8,13 +8,13 @@ proof: formalized
 
 # 66.28 Recovering morphisms
 
-Section 66.28 of the Stacks Project, [Tag 04KI](https://stacks.math.columbia.edu/tag/04KI). 5 tags here are carried by 9 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 66.28 of the Stacks Project, [Tag 04KI](https://stacks.math.columbia.edu/tag/04KI). 5 tags here are carried by 9 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 04KJ, a lemma
 
 [Tag 04KJ](https://stacks.math.columbia.edu/tag/04KJ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.smallEtaleRingedToposHom_isLocallyRinged`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRingedToposHomLocallyRinged.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRingedToposHomLocallyRinged.lean#L131).
+**`AlgebraicGeometry.Space.smallEtaleRingedToposHom_isLocallyRinged`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRingedToposHomLocallyRinged.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRingedToposHomLocallyRinged.lean#L131).
 
 > For a morphism `f : X ⟶ Y` of algebraic spaces over a scheme `S`, the morphism of small
 > étale ringed topoi `(f_small, f♯)` attached to `f` is a morphism of locally ringed topoi: its
@@ -33,7 +33,7 @@ theorem smallEtaleRingedToposHom_isLocallyRinged :
 
 [Tag 04KK](https://stacks.math.columbia.edu/tag/04KK) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.smallEtaleRingedToposHom_twoMorphism_eq_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRingedToposHomRigidity.lean, line 529](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRingedToposHomRigidity.lean#L529).
+**`AlgebraicGeometry.Space.smallEtaleRingedToposHom_twoMorphism_eq_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRingedToposHomRigidity.lean, line 529](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRingedToposHomRigidity.lean#L529).
 
 > **Stacks 04KK.** A 2-endomorphism of the morphism of small étale ringed topoi induced by a
 > morphism of algebraic spaces is the identity.
@@ -47,7 +47,7 @@ theorem smallEtaleRingedToposHom_twoMorphism_eq_id
       (smallEtaleRingedToposHom B S hS f)
 ```
 
-**`AlgebraicGeometry.Space.smallEtaleRingedToposHom_twoMorphismOfRingedTopoi_eq_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleTwoMorphismRigidity.lean, line 720](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleTwoMorphismRigidity.lean#L720).
+**`AlgebraicGeometry.Space.smallEtaleRingedToposHom_twoMorphismOfRingedTopoi_eq_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleTwoMorphismRigidity.lean, line 749](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleTwoMorphismRigidity.lean#L749).
 
 > **Stacks 04KK.**  A 2-morphism from the morphism of small étale ringed topoi induced by a
 > morphism of algebraic spaces to itself is the identity.
@@ -70,7 +70,7 @@ theorem smallEtaleRingedToposHom_twoMorphismOfRingedTopoi_eq_id (f : X ⟶ Y)
 
 [Tag 04M6](https://stacks.math.columbia.edu/tag/04M6) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.eq_of_smallEtaleRingedToposHom_twoIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleTwoIsoAffineCover.lean, line 171](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleTwoIsoAffineCover.lean#L171).
+**`AlgebraicGeometry.Space.eq_of_smallEtaleRingedToposHom_twoIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleTwoIsoAffineCover.lean, line 171](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleTwoIsoAffineCover.lean#L171).
 
 > **Stacks 04M6.** Let `S` be a scheme and let `X, Y` be algebraic spaces over `S`. Two
 > morphisms `a, b : X ⟶ Y` of algebraic spaces over `S` for which there exists a 2-isomorphism
@@ -87,7 +87,7 @@ theorem eq_of_smallEtaleRingedToposHom_twoIso (a b : X ⟶ Y)
     a = b
 ```
 
-**`AlgebraicGeometry.Space.exists_smallBaseChange_iso_of_twoIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleTwoIsoChartComparison.lean, line 289](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleTwoIsoChartComparison.lean#L289). The attribute's comment: “the étale-chart comparison of the proof: for two representable morphisms the 2-isomorphism of the morphisms of small étale ringed topoi is, through the 03G8 identification of the direct images with étale-chart base change, restriction along an isomorphism of the chart base-change functors”.
+**`AlgebraicGeometry.Space.exists_smallBaseChange_iso_of_twoIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleTwoIsoChartComparison.lean, line 289](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleTwoIsoChartComparison.lean#L289). The attribute's comment: “the étale-chart comparison of the proof: for two representable morphisms the 2-isomorphism of the morphisms of small étale ringed topoi is, through the 03G8 identification of the direct images with étale-chart base change, restriction along an isomorphism of the chart base-change functors”.
 
 > **The étale-chart comparison of Stacks 04M6.** Let `a, b : X ⟶ Y` be two representable
 > morphisms of algebraic spaces whose morphisms of small étale ringed topoi are 2-isomorphic.
@@ -117,7 +117,7 @@ theorem exists_smallBaseChange_iso_of_twoIso {X Y : AlgebraicSpaces B S hS} (a b
 
 [Tag 04KL](https://stacks.math.columbia.edu/tag/04KL) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.existsUnique_spaceHom_twoIso_of_isLocallyRinged`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RecoveringMorphisms/Main.lean, line 172](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RecoveringMorphisms/Main.lean#L172).
+**`AlgebraicGeometry.Space.existsUnique_spaceHom_twoIso_of_isLocallyRinged`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RecoveringMorphisms/Main.lean, line 172](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RecoveringMorphisms/Main.lean#L172).
 
 > **Stacks 04KL.** Let `X` and `Y` be algebraic spaces over `Spec ℤ` (here `Spec (ULift ℤ)`, the
 > terminal scheme at the universe of the site) and let
@@ -135,7 +135,7 @@ theorem existsUnique_spaceHom_twoIso_of_isLocallyRinged (B : BigFppfSite.{u})
       (smallEtaleRingedToposHom B _ hZ f))
 ```
 
-**`AlgebraicGeometry.Space.bijective_smallEtaleLocallyRingedClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RecoveringMorphisms/Main.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RecoveringMorphisms/Main.lean#L216). The attribute's comment: “the reformulation: X ↦ (X\_étale, 𝒪\_X) is fully faithful, morphisms of locally ringed topoi being taken up to 2-isomorphism”.
+**`AlgebraicGeometry.Space.bijective_smallEtaleLocallyRingedClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RecoveringMorphisms/Main.lean, line 216](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RecoveringMorphisms/Main.lean#L216). The attribute's comment: “the reformulation: X ↦ (X\_étale, 𝒪\_X) is fully faithful, morphisms of locally ringed topoi being taken up to 2-isomorphism”.
 
 > **Stacks 04KL, in the form of full faithfulness.** Over `Spec ℤ`, the construction
 > `X ↦ (X_étale, 𝒪_X)` is fully faithful from algebraic spaces to locally ringed topoi, morphisms of
@@ -152,13 +152,13 @@ theorem bijective_smallEtaleLocallyRingedClass (B : BigFppfSite.{u})
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Space.eq_of_twoIso_smallEtaleRingedToposHom`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleTwoIsoAffineCover.lean#L193), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleTwoIsoAffineCover.lean, line 201](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleTwoIsoAffineCover.lean#L201) (StacksFrontier): “the uniqueness clause over a base: at most one morphism of algebraic spaces over S induces a given morphism of the small étale ringed topoi. This is the faithfulness half of the asserted full faithfulness, and it needs neither of the theorem's hypotheses — not local ringedness of the morphism of topoi, and not 2-compatibility with structure morphisms to a further base”.
+- [`AlgebraicGeometry.Space.eq_of_twoIso_smallEtaleRingedToposHom`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleTwoIsoAffineCover.lean#L193), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleTwoIsoAffineCover.lean, line 201](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleTwoIsoAffineCover.lean#L201) (StacksFrontier): “the uniqueness clause over a base: at most one morphism of algebraic spaces over S induces a given morphism of the small étale ringed topoi. This is the faithfulness half of the asserted full faithfulness, and it needs neither of the theorem's hypotheses — not local ringedness of the morphism of topoi, and not 2-compatibility with structure morphisms to a further base”.
 
 ## Tag 05YZ, a lemma
 
 [Tag 05YZ](https://stacks.math.columbia.edu/tag/05YZ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.existsUnique_spaceHom_twoIso_of_smallEtaleRingedToposIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRingedToposIsoLocallyRinged.lean, line 644](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRingedToposIsoLocallyRinged.lean#L644).
+**`AlgebraicGeometry.Space.existsUnique_spaceHom_twoIso_of_smallEtaleRingedToposIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRingedToposIsoLocallyRinged.lean, line 644](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleRingedToposIsoLocallyRinged.lean#L644).
 
 > **Stacks 05YZ.** Let `X` and `Y` be algebraic spaces over `ℤ`, and let
 > `(g, g♯) : (Sh(X_étale), 𝒪_X) ⟶ (Sh(Y_étale), 𝒪_Y)` be an isomorphism of ringed topoi: its
@@ -188,7 +188,7 @@ theorem existsUnique_spaceHom_twoIso_of_smallEtaleRingedToposIso (B : BigFppfSit
       (smallEtaleRingedToposHom B (Spec (CommRingCat.of (ULift.{u} ℤ))) hZ f)) → IsIso f
 ```
 
-**`AlgebraicGeometry.Space.existsUnique_spaceHom_twoIso_of_smallEtaleRingedToposIso'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SpaceRecoveredFromSmallEtale.lean, line 188](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SpaceRecoveredFromSmallEtale.lean#L188). The attribute's comment: “the clause about f ALONE: its existence and uniqueness, together with the 2-isomorphism of (g, g sharp) with (f\_small, f sharp) (Stacks 04IC). Stacks 04KL over a base, which the existence needs, is isRecoveredFromSmallEtale\_holds. The source's further clause that f is an ISOMORPHISM of algebraic spaces lies outside this registration. NARROWER than the source in one further respect: the source states 05YZ for spaces over Spec(Z), where f is an absolute morphism and no compatibility is asked of (g, g sharp), while f here is a morphism over S, so the 2-compatibility hbase is assumed in addition -- it is what Stacks 04SG supplies, and without it the conclusion is FALSE”.
+**`AlgebraicGeometry.Space.existsUnique_spaceHom_twoIso_of_smallEtaleRingedToposIso'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SpaceRecoveredFromSmallEtale.lean, line 188](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SpaceRecoveredFromSmallEtale.lean#L188). The attribute's comment: “the clause about f ALONE: its existence and uniqueness, together with the 2-isomorphism of (g, g sharp) with (f\_small, f sharp) (Stacks 04IC). Stacks 04KL over a base, which the existence needs, is isRecoveredFromSmallEtale\_holds. The source's further clause that f is an ISOMORPHISM of algebraic spaces lies outside this registration. NARROWER than the source in one further respect: the source states 05YZ for spaces over Spec(Z), where f is an absolute morphism and no compatibility is asked of (g, g sharp), while f here is a morphism over S, so the 2-compatibility hbase is assumed in addition -- it is what Stacks 04SG supplies, and without it the conclusion is FALSE”.
 
 > **[Stacks Project, Tag 05YZ], the clause about `f`.**  If `g` is a morphism of the small
 > étale ringed topoi of `X` and `Y` whose direct image is an equivalence and whose structure map
@@ -231,4 +231,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 66.28, Tag 04KI](https://stacks.math.columbia.edu/tag/04KI)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

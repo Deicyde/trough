@@ -8,13 +8,13 @@ proof: formalized
 
 # 33.44 Degrees on curves
 
-Section 33.44 of the Stacks Project, [Tag 0AYQ](https://stacks.math.columbia.edu/tag/0AYQ). 17 tags here are carried by 43 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 33.44 of the Stacks Project, [Tag 0AYQ](https://stacks.math.columbia.edu/tag/0AYQ). 17 tags here are carried by 43 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0AYR, a definition
 
 [Tag 0AYR](https://stacks.math.columbia.edu/tag/0AYR) in the Stacks Project.
 
-**`AlgebraicGeometry.curveDegree`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/Degree.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Curve/Degree.lean#L82). The attribute's comment: “finite locally free case”.
+**`AlgebraicGeometry.curveDegree`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/Degree.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Curve/Degree.lean#L82). The attribute's comment: “finite locally free case”.
 
 > The degree of a finite locally free sheaf of constant rank on a proper scheme of
 > dimension at most one over a field.
@@ -26,7 +26,7 @@ public noncomputable def curveDegree (k : Type u) [Field k]
     [SheafOfModules.IsFiniteLocallyFreeOfRank.{u, u, u} E rank] : ℤ
 ```
 
-**`AlgebraicGeometry.invertibleCurveDegree`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/Degree.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Curve/Degree.lean#L106). The attribute's comment: “invertible case”.
+**`AlgebraicGeometry.invertibleCurveDegree`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/Degree.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Curve/Degree.lean#L106). The attribute's comment: “invertible case”.
 
 > The degree of an invertible sheaf on a proper scheme of dimension at most one over a
 > field: its Euler characteristic minus the Euler characteristic of the structure sheaf.
@@ -42,7 +42,7 @@ public noncomputable def invertibleCurveDegree (k : Type u) [Field k]
 
 [Tag 0B59](https://stacks.math.columbia.edu/tag/0B59) in the Stacks Project.
 
-**`AlgebraicGeometry.curveDegree_baseChange_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/DegreeFieldExtension.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Curve/DegreeFieldExtension.lean#L68).
+**`AlgebraicGeometry.curveDegree_baseChange_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/DegreeFieldExtension.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Curve/DegreeFieldExtension.lean#L68).
 
 > **Stacks Project, Tag 0B59.** Let `k'/k` be an extension of fields, let `X` be a proper
 > scheme of dimension at most one over `k` and let `ℰ` be a finite locally free `𝒪_X`-module of
@@ -66,7 +66,7 @@ theorem curveDegree_baseChange_field (k k' : Type u) [Field k] [Field k'] [Algeb
 
 [Tag 0AYS](https://stacks.math.columbia.edu/tag/0AYS) in the Stacks Project.
 
-**`AlgebraicGeometry.curveDegree_add_of_shortExact_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/DegreeAdditivityUnconditional.lean, line 49](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Curve/DegreeAdditivityUnconditional.lean#L49). The attribute's comment: “deg(ℰ₂) = deg(ℰ₁) + deg(ℰ₃) for a short exact sequence of locally free modules of finite constant rank on a proper scheme of dimension at most one over a field”.
+**`AlgebraicGeometry.curveDegree_add_of_shortExact_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/DegreeAdditivityUnconditional.lean, line 49](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Curve/DegreeAdditivityUnconditional.lean#L49). The attribute's comment: “deg(ℰ₂) = deg(ℰ₁) + deg(ℰ₃) for a short exact sequence of locally free modules of finite constant rank on a proper scheme of dimension at most one over a field”.
 
 > Let `k` be a field and let `X` be a scheme proper over `k` of dimension at most one. For a
 > short exact sequence `0 ⟶ ℰ₁ ⟶ ℰ₂ ⟶ ℰ₃ ⟶ 0` of locally free `𝒪_X`-modules of finite constant
@@ -83,7 +83,7 @@ public theorem curveDegree_add_of_shortExact_of_isProper (k : Type u) [Field k] 
       curveDegree k f hdim S.X₁ r₁ + curveDegree k f hdim S.X₃ r₃
 ```
 
-**`AlgebraicGeometry.curveDegree_add_of_shortExact_of_cohomologyFiniteDimensional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/EulerChar/CoherentFiniteness.lean, line 252](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/EulerChar/CoherentFiniteness.lean#L252). The attribute's comment: “deg(ℰ₂) = deg(ℰ₁) + deg(ℰ₃); `hfin` is [Stacks, Tag 02O6] for `X`”.
+**`AlgebraicGeometry.curveDegree_add_of_shortExact_of_cohomologyFiniteDimensional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/EulerChar/CoherentFiniteness.lean, line 252](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/EulerChar/CoherentFiniteness.lean#L252). The attribute's comment: “deg(ℰ₂) = deg(ℰ₁) + deg(ℰ₃); `hfin` is [Stacks, Tag 02O6] for `X`”.
 
 > **Additivity of the degree along a short exact sequence.** For a short exact sequence
 > `0 ⟶ ℰ₁ ⟶ ℰ₂ ⟶ ℰ₃ ⟶ 0` of finite locally free `𝒪_X`-modules of constant ranks `r₁`, `r₂`, `r₃`
@@ -115,7 +115,7 @@ public theorem curveDegree_add_of_shortExact_of_cohomologyFiniteDimensional (k :
 
 [Tag 0AYU](https://stacks.math.columbia.edu/tag/0AYU) in the Stacks Project.
 
-**`AlgebraicGeometry.curveDegree_pullback_eq_of_bijOn_genericPointsOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CurveDegreeInvariance/Morphism.lean, line 497](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/CurveDegreeInvariance/Morphism.lean#L497). References: SGA 6 X (4.4), “special case”.
+**`AlgebraicGeometry.curveDegree_pullback_eq_of_bijOn_genericPointsOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CurveDegreeInvariance/Morphism.lean, line 497](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/CurveDegreeInvariance/Morphism.lean#L497). References: SGA 6 X (4.4), “special case”.
 
 > **[Stacks, Tag 0AYU], the "more generally" statement.** Let `k` be a field and let
 > `g : X' ⟶ X` be a morphism over `k` between schemes proper over `k` and of dimension at most one
@@ -155,7 +155,7 @@ theorem curveDegree_pullback_eq_of_bijOn_genericPointsOne (k : Type u) [Field k]
       curveDegree k p hdimX E n
 ```
 
-**`AlgebraicGeometry.curveDegree_pullback_eq_of_bijOn_genericPointsOne_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CurveDegreeInvariance/Unconditional.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/CurveDegreeInvariance/Unconditional.lean#L66). The attribute's comment: “the 'more generally' statement, with no hypothesis beyond the tag's own”. References: SGA 6 X (4.4), “special case”.
+**`AlgebraicGeometry.curveDegree_pullback_eq_of_bijOn_genericPointsOne_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CurveDegreeInvariance/Unconditional.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/CurveDegreeInvariance/Unconditional.lean#L66). The attribute's comment: “the 'more generally' statement, with no hypothesis beyond the tag's own”. References: SGA 6 X (4.4), “special case”.
 
 > **[Stacks, Tag 0AYU], the "more generally" statement, with no hypothesis beyond the tag's
 > own.** Let `k` be a field and let `g : X' ⟶ X` be a morphism over `k` between schemes proper
@@ -189,7 +189,7 @@ theorem curveDegree_pullback_eq_of_bijOn_genericPointsOne_of_isProper (k : Type 
 
 [Tag 0AYV](https://stacks.math.columbia.edu/tag/0AYV) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_eulerCharacteristic_tensorSheaf_eq_fiberRank_mul_curveDegree_add_of_isCurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CurveTensorEulerUnit/Unconditional.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/CurveTensorEulerUnit/Unconditional.lean#L65).
+**`AlgebraicGeometry.exists_eulerCharacteristic_tensorSheaf_eq_fiberRank_mul_curveDegree_add_of_isCurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CurveTensorEulerUnit/Unconditional.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/CurveTensorEulerUnit/Unconditional.lean#L65).
 
 > **[Stacks, Tag 0AYV], with no hypothesis.** Let `k` be a field, let `X` be a proper curve
 > over `k` with generic point `ξ`, let `ℰ` be finite locally free of rank `n` and let `ℱ` be
@@ -215,7 +215,7 @@ public theorem exists_eulerCharacteristic_tensorSheaf_eq_fiberRank_mul_curveDegr
           (n : ℤ) * eulerCharacteristic k f F
 ```
 
-**`AlgebraicGeometry.eulerCharacteristic_tensorSheaf_eq_fiberRank_mul_curveDegree_add`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CurveTensorEulerUnit/Unconditional.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/CurveTensorEulerUnit/Unconditional.lean#L92).
+**`AlgebraicGeometry.eulerCharacteristic_tensorSheaf_eq_fiberRank_mul_curveDegree_add`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CurveTensorEulerUnit/Unconditional.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/CurveTensorEulerUnit/Unconditional.lean#L92).
 
 > **[Stacks, Tag 0AYV]**, with the coherence `h` of `ℰ ⊗ ℱ` taken as an argument instead of
 > produced existentially: for `ℰ` finite locally free of rank `n` and `ℱ` coherent on a proper curve
@@ -242,7 +242,7 @@ public theorem eulerCharacteristic_tensorSheaf_eq_fiberRank_mul_curveDegree_add
 
 [Tag 0AYW](https://stacks.math.columbia.edu/tag/0AYW) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.ComponentDegreeDevissage.curveDegree_eq_finsum_componentDegree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ComponentDegreeDevissage/Basic.lean, line 407](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ComponentDegreeDevissage/Basic.lean#L407).
+**`Stacks.AlgebraicGeometry.ComponentDegreeDevissage.curveDegree_eq_finsum_componentDegree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ComponentDegreeDevissage/Basic.lean, line 407](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ComponentDegreeDevissage/Basic.lean#L407).
 
 > The degree of a finite locally free module of constant rank on a scheme proper over a field
 > and of dimension at most one is the multiplicity-weighted sum of its degrees on the reduced
@@ -259,7 +259,7 @@ theorem curveDegree_eq_finsum_componentDegree [IsProper f]
         (componentMultiplicity X ξ : ℤ) * componentDegree k f hX E rank ξ
 ```
 
-**`Stacks.AlgebraicGeometry.ComponentDegreeDevissage.exists_curveDegree_eq_finsum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ComponentDegreeDevissage/Basic.lean, line 431](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ComponentDegreeDevissage/Basic.lean#L431).
+**`Stacks.AlgebraicGeometry.ComponentDegreeDevissage.exists_curveDegree_eq_finsum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ComponentDegreeDevissage/Basic.lean, line 431](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ComponentDegreeDevissage/Basic.lean#L431).
 
 > The component formula for the degree in existential form: each reduced one-dimensional
 > component is proper over the base, has dimension at most one and carries a restriction of `ℰ`
@@ -283,7 +283,7 @@ theorem exists_curveDegree_eq_finsum [IsProper f]
               ((Scheme.Modules.pullback (reducedComponentι X ξ)).obj E) rank (hrank ξ)
 ```
 
-**`Stacks.AlgebraicGeometry.ComponentDegrees.curveDegree_eq_finsum_componentDegree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ComponentMultiplicity/Devissage.lean, line 198](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ComponentMultiplicity/Devissage.lean#L198). The attribute's comment: “the component formula, from the two steps of the source argument”.
+**`Stacks.AlgebraicGeometry.ComponentDegrees.curveDegree_eq_finsum_componentDegree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ComponentMultiplicity/Devissage.lean, line 198](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ComponentMultiplicity/Devissage.lean#L198). The attribute's comment: “the component formula, from the two steps of the source argument”.
 
 > **Stacks 0AYW.** The degree of a finite locally free module of constant rank on a proper
 > scheme of dimension at most one over a field is the multiplicity-weighted sum of its degrees on
@@ -305,7 +305,7 @@ theorem curveDegree_eq_finsum_componentDegree
         (componentMultiplicity X ξ : ℤ) * componentDegree k f hX E rank ξ
 ```
 
-**`Stacks.AlgebraicGeometry.ComponentDegrees.exists_curveDegree_eq_finsum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ComponentMultiplicity/Devissage.lean, line 219](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ComponentMultiplicity/Devissage.lean#L219). The attribute's comment: “the existential form the source states”.
+**`Stacks.AlgebraicGeometry.ComponentDegrees.exists_curveDegree_eq_finsum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ComponentMultiplicity/Devissage.lean, line 219](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ComponentMultiplicity/Devissage.lean#L219). The attribute's comment: “the existential form the source states”.
 
 > **Stacks 0AYW**, in the existential form the source states: each reduced one-dimensional
 > component is proper over the base, has dimension at most one and carries a restriction of `ℰ`
@@ -336,7 +336,7 @@ theorem exists_curveDegree_eq_finsum
               ((Scheme.Modules.pullback (reducedComponentι X ξ)).obj E) rank (hrank ξ)
 ```
 
-**`Stacks.AlgebraicGeometry.ComponentDegrees.curveDegree_eq_sum_componentDegree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ComponentMultiplicity/Devissage.lean, line 246](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ComponentMultiplicity/Devissage.lean#L246). The attribute's comment: “the component formula as a finite sum”.
+**`Stacks.AlgebraicGeometry.ComponentDegrees.curveDegree_eq_sum_componentDegree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ComponentMultiplicity/Devissage.lean, line 246](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ComponentMultiplicity/Devissage.lean#L246). The attribute's comment: “the component formula as a finite sum”.
 
 > **Stacks 0AYW** with the locally finite sum read as a finite sum over the components. This is
 > the shape in which a consumer that already has the components as a `Fintype` uses the formula.
@@ -357,7 +357,7 @@ theorem curveDegree_eq_sum_componentDegree [Fintype (genericPointsOne X)]
         (componentMultiplicity X ξ : ℤ) * componentDegree k f hX E rank ξ
 ```
 
-**`Stacks.AlgebraicGeometry.ComponentDegrees.curveDegree_eq_finsum_componentDegree_of_stalk_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ComponentMultiplicity/Devissage.lean, line 273](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ComponentMultiplicity/Devissage.lean#L273). The attribute's comment: “the component formula, from the reduction to the irreducible case”.
+**`Stacks.AlgebraicGeometry.ComponentDegrees.curveDegree_eq_finsum_componentDegree_of_stalk_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ComponentMultiplicity/Devissage.lean, line 273](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ComponentMultiplicity/Devissage.lean#L273). The attribute's comment: “the component formula, from the reduction to the irreducible case”.
 
 > **Stacks 0AYW**, with the first paragraph of the source proof discharged from the
 > reduction to a finite family of closed subschemes.
@@ -393,7 +393,7 @@ theorem curveDegree_eq_finsum_componentDegree_of_stalk_bijective
         (componentMultiplicity X ξ : ℤ) * componentDegree k f hX E rank ξ
 ```
 
-**`Stacks.AlgebraicGeometry.ComponentDegrees.curveDegree_eq_finsum_componentDegree_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ComponentMultiplicity/Unconditional.lean, line 455](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ComponentMultiplicity/Unconditional.lean#L455).
+**`Stacks.AlgebraicGeometry.ComponentDegrees.curveDegree_eq_finsum_componentDegree_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ComponentMultiplicity/Unconditional.lean, line 455](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ComponentMultiplicity/Unconditional.lean#L455).
 
 > **[Stacks, Tag 0AYW].** The degree of a finite locally free module of constant rank on a
 > proper scheme of dimension at most one over a field is the multiplicity-weighted sum of its
@@ -415,7 +415,7 @@ theorem curveDegree_eq_finsum_componentDegree_of_isProper (k : Type u) [Field k]
         (componentMultiplicity X ξ : ℤ) * componentDegree k f hX E rank ξ
 ```
 
-**`Stacks.AlgebraicGeometry.ComponentDegrees.exists_curveDegree_eq_finsum_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ComponentMultiplicity/Unconditional.lean, line 526](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ComponentMultiplicity/Unconditional.lean#L526). The attribute's comment: “the existential form the source states, with no hypothesis”.
+**`Stacks.AlgebraicGeometry.ComponentDegrees.exists_curveDegree_eq_finsum_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ComponentMultiplicity/Unconditional.lean, line 526](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ComponentMultiplicity/Unconditional.lean#L526). The attribute's comment: “the existential form the source states, with no hypothesis”.
 
 > **[Stacks, Tag 0AYW]**, in the existential form the source states: each reduced
 > one-dimensional component is proper over the base, has dimension at most one and carries a
@@ -444,7 +444,7 @@ theorem exists_curveDegree_eq_finsum_of_isProper (k : Type u) [Field k]
 
 [Tag 0AYX](https://stacks.math.columbia.edu/tag/0AYX) in the Stacks Project.
 
-**`AlgebraicGeometry.curveDegree_tensorSheaf_eq_add`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CurveDegreeTensor/Cohomological.lean, line 185](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/CurveDegreeTensor/Cohomological.lean#L185). The attribute's comment: “on a proper curve; the whole tag, on a proper scheme of dimension at most one, is AlgebraicGeometry.curveDegree\_tensorSheaf\_eq\_add\_of\_topologicalKrullDim\_le\_one”.
+**`AlgebraicGeometry.curveDegree_tensorSheaf_eq_add`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CurveDegreeTensor/Cohomological.lean, line 185](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/CurveDegreeTensor/Cohomological.lean#L185). The attribute's comment: “on a proper curve; the whole tag, on a proper scheme of dimension at most one, is AlgebraicGeometry.curveDegree\_tensorSheaf\_eq\_add\_of\_topologicalKrullDim\_le\_one”.
 
 > **[Stacks, Tag 0AYX] on a proper curve.** For `ℰ` and `𝒱` finite locally free of constant
 > ranks `n` and `m` on a proper curve over a field,
@@ -476,7 +476,7 @@ public theorem curveDegree_tensorSheaf_eq_add
       (m : ℤ) * curveDegree k f hdim E n + (n : ℤ) * curveDegree k f hdim V m
 ```
 
-**`AlgebraicGeometry.curveDegree_tensorSheaf_eq_add_of_topologicalKrullDim_le_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CurveDegreeTensor/Devissage.lean, line 599](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/CurveDegreeTensor/Devissage.lean#L599).
+**`AlgebraicGeometry.curveDegree_tensorSheaf_eq_add_of_topologicalKrullDim_le_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CurveDegreeTensor/Devissage.lean, line 599](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/CurveDegreeTensor/Devissage.lean#L599).
 
 > For `ℰ` and `𝒱` finite locally free of constant ranks `n` and `m` on a scheme `X` proper of
 > dimension at most one over a field `k`,
@@ -500,7 +500,7 @@ theorem curveDegree_tensorSheaf_eq_add_of_topologicalKrullDim_le_one (k : Type u
 
 [Tag 0DJ5](https://stacks.math.columbia.edu/tag/0DJ5) in the Stacks Project.
 
-**`AlgebraicGeometry.curveDegree_eq_curveDegree_exteriorPower_eq_invertibleCurveDegree_determinant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/DegreeExteriorDeterminant.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Curve/DegreeExteriorDeterminant.lean#L147).
+**`AlgebraicGeometry.curveDegree_eq_curveDegree_exteriorPower_eq_invertibleCurveDegree_determinant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/DegreeExteriorDeterminant.lean, line 147](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Curve/DegreeExteriorDeterminant.lean#L147).
 
 > **[Stacks, Tag 0DJ5].** Let `k` be a field, `X` a proper scheme of dimension at most one over
 > `k` and `ℰ` a finite locally free `𝒪_X`-module of constant rank `n`. Then
@@ -536,7 +536,7 @@ theorem curveDegree_eq_curveDegree_exteriorPower_eq_invertibleCurveDegree_determ
 
 [Tag 0AYY](https://stacks.math.columbia.edu/tag/0AYY) in the Stacks Project.
 
-**`AlgebraicGeometry.isFinite_and_curveDegree_tensorSheaf_invertibleSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/DivisorTwistDegree.lean, line 270](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Curve/DivisorTwistDegree.lean#L270).
+**`AlgebraicGeometry.isFinite_and_curveDegree_tensorSheaf_invertibleSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/DivisorTwistDegree.lean, line 270](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Curve/DivisorTwistDegree.lean#L270).
 
 > **[Stacks, Tag 0AYY].** Let `k` be a field, let `X` be a proper scheme of dimension at most
 > one over `k` and let `D` be an effective Cartier divisor on `X`. Then `D` is finite over
@@ -579,7 +579,7 @@ theorem isFinite_and_curveDegree_tensorSheaf_invertibleSheaf (E : X.Modules) (n 
 
 [Tag 0C6P](https://stacks.math.columbia.edu/tag/0C6P) in the Stacks Project.
 
-**`AlgebraicGeometry.isField_and_finite_globalSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/DegreeDivisibility.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Curve/DegreeDivisibility.lean#L103). The attribute's comment: “the global sections are a finite field extension”.
+**`AlgebraicGeometry.isField_and_finite_globalSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/DegreeDivisibility.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Curve/DegreeDivisibility.lean#L103). The attribute's comment: “the global sections are a finite field extension”.
 
 > For a proper scheme over a field which is reduced and connected, the ring of global sections
 > is a finite field extension of the base field.
@@ -591,7 +591,7 @@ theorem isField_and_finite_globalSections (k : Type u) [Field k] {X : Scheme.{u}
     IsField Γ(X, ⊤) ∧ Module.Finite k Γ(X, ⊤)
 ```
 
-**`AlgebraicGeometry.finrank_globalSections_dvd_curveDegree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/DegreeDivisibility.lean, line 156](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Curve/DegreeDivisibility.lean#L156). The attribute's comment: “w divides the degree of a finite locally free sheaf”.
+**`AlgebraicGeometry.finrank_globalSections_dvd_curveDegree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/DegreeDivisibility.lean, line 156](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Curve/DegreeDivisibility.lean#L156). The attribute's comment: “w divides the degree of a finite locally free sheaf”.
 
 > For a proper scheme over a field which is reduced and connected and of dimension at most one,
 > the degree of the extension `Γ(X, 𝒪_X)/k` divides the degree of every finite locally free sheaf
@@ -606,7 +606,7 @@ theorem finrank_globalSections_dvd_curveDegree (k : Type u) [Field k] {X : Schem
     (Module.finrank k Γ(X, ⊤) : ℤ) ∣ curveDegree k f hdim E rank
 ```
 
-**`AlgebraicGeometry.finrank_globalSections_dvd_finrank_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/DegreeDivisibility.lean, line 173](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Curve/DegreeDivisibility.lean#L173). The attribute's comment: “w divides the degree of a residue field”.
+**`AlgebraicGeometry.finrank_globalSections_dvd_finrank_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/DegreeDivisibility.lean, line 173](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Curve/DegreeDivisibility.lean#L173). The attribute's comment: “w divides the degree of a residue field”.
 
 > For a proper scheme over a field which is reduced and connected, the degree of the extension
 > `Γ(X, 𝒪_X)/k` divides the degree over `k` of the residue field at every point.
@@ -620,7 +620,7 @@ theorem finrank_globalSections_dvd_finrank_residueField (k : Type u) [Field k] {
     Module.finrank k Γ(X, ⊤) ∣ Module.finrank k (X.residueField x)
 ```
 
-**`AlgebraicGeometry.finrank_globalSections_dvd_finrank_globalSections_of_dimension_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/DegreeDivisibility.lean, line 186](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Curve/DegreeDivisibility.lean#L186). The attribute's comment: “w divides the degree of a zero-dimensional closed subscheme”.
+**`AlgebraicGeometry.finrank_globalSections_dvd_finrank_globalSections_of_dimension_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/DegreeDivisibility.lean, line 186](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Curve/DegreeDivisibility.lean#L186). The attribute's comment: “w divides the degree of a zero-dimensional closed subscheme”.
 
 > Let `X` be a proper scheme over a field which is reduced and connected and let `D ⊆ X` be a
 > closed subscheme of dimension zero. Then `D` is finite locally free over `k` of rank
@@ -640,7 +640,7 @@ theorem finrank_globalSections_dvd_finrank_globalSections_of_dimension_zero (k :
 
 [Tag 0AYZ](https://stacks.math.columbia.edu/tag/0AYZ) in the Stacks Project.
 
-**`AlgebraicGeometry.curveDegree_pullback_eq_degreeOver_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/PullbackDegree.lean, line 332](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Curve/PullbackDegree.lean#L332).
+**`AlgebraicGeometry.curveDegree_pullback_eq_degreeOver_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/PullbackDegree.lean, line 332](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Curve/PullbackDegree.lean#L332).
 
 > Let `k` be a field, let `f : X ⟶ Y` be a nonconstant morphism of proper curves over `k` and
 > let `ℰ` be a finite locally free `𝒪_Y`-module of constant rank `n`. Then
@@ -663,7 +663,7 @@ theorem curveDegree_pullback_eq_degreeOver_mul (k : Type u) [Field k] {X Y : Sch
         curveDegree k πY (le_of_eq (IsCurve.topologicalKrullDim_eq_one (f := πY))) E n
 ```
 
-**`AlgebraicGeometry.curveDegree_pullback_eq_degreeOver_mul_of_isFiniteLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/PullbackDegree.lean, line 422](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Curve/PullbackDegree.lean#L422). References: SGA 6 X (4.4), “(4.4.3), special case”.
+**`AlgebraicGeometry.curveDegree_pullback_eq_degreeOver_mul_of_isFiniteLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/PullbackDegree.lean, line 422](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Curve/PullbackDegree.lean#L422). References: SGA 6 X (4.4), “(4.4.3), special case”.
 
 > Let `k` be a field, let `f : X ⟶ Y` be a nonconstant morphism of proper curves over `k` and
 > let `ℰ` be a finite locally free `𝒪_Y`-module. Then
@@ -701,7 +701,7 @@ theorem curveDegree_pullback_eq_degreeOver_mul_of_isFiniteLocallyFree (k : Type 
 
 [Tag 0B40](https://stacks.math.columbia.edu/tag/0B40) in the Stacks Project.
 
-**`AlgebraicGeometry.invertibleCurveDegree_nonneg_of_eval_top_ne_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/SectionDegree.lean, line 272](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Curve/SectionDegree.lean#L272). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.invertibleCurveDegree_nonneg_of_eval_top_ne_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/SectionDegree.lean, line 272](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Curve/SectionDegree.lean#L272). The attribute's comment: “part (1)”.
 
 > **The degree of an invertible module with a nonzero global section is nonnegative**, on a
 > proper integral scheme of dimension at most one over a field.
@@ -714,7 +714,7 @@ theorem invertibleCurveDegree_nonneg_of_eval_top_ne_zero [IsProper f] [IsIntegra
     0 ≤ @invertibleCurveDegree k _ X f _ hdim L hL
 ```
 
-**`AlgebraicGeometry.invertibleCurveDegree_pos_of_eval_top_ne_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/SectionDegree.lean, line 377](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Curve/SectionDegree.lean#L377). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.invertibleCurveDegree_pos_of_eval_top_ne_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/SectionDegree.lean, line 377](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Curve/SectionDegree.lean#L377). The attribute's comment: “part (2)”.
 
 > **A nonzero section with a zero forces positive degree.** On a proper integral scheme of
 > dimension at most one over a field, a nonzero global section of an invertible module which
@@ -729,7 +729,7 @@ theorem invertibleCurveDegree_pos_of_eval_top_ne_zero [IsProper f] [IsIntegral X
     0 < @invertibleCurveDegree k _ X f _ hdim L hL
 ```
 
-**`AlgebraicGeometry.isIso_unitHomEquiv_symm_of_invertibleCurveDegree_nonpos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/SectionDegree.lean, line 432](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Curve/SectionDegree.lean#L432). The attribute's comment: “part (4), in the stronger form the source's proof supports and the text does not state: the multiplication map O\_X -> L of the given section is itself an isomorphism, not merely L isomorphic to O\_X abstractly. The weaker reading is the corollary isTrivial\_of\_invertibleCurveDegree\_nonpos beside it”.
+**`AlgebraicGeometry.isIso_unitHomEquiv_symm_of_invertibleCurveDegree_nonpos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/SectionDegree.lean, line 432](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Curve/SectionDegree.lean#L432). The attribute's comment: “part (4), in the stronger form the source's proof supports and the text does not state: the multiplication map O\_X -> L of the given section is itself an isomorphism, not merely L isomorphic to O\_X abstractly. The weaker reading is the corollary isTrivial\_of\_invertibleCurveDegree\_nonpos beside it”.
 
 > **A nonzero section of a module of nonpositive degree trivializes it.** On a proper integral
 > scheme of dimension at most one over a field, let `ℒ` be an invertible module with `deg(ℒ) ≤ 0`
@@ -743,7 +743,7 @@ theorem isIso_unitHomEquiv_symm_of_invertibleCurveDegree_nonpos [IsProper f] [Is
     IsIso (L.unitHomEquiv.symm s)
 ```
 
-**`AlgebraicGeometry.isTrivial_of_invertibleCurveDegree_nonpos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/SectionDegree.lean, line 447](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Curve/SectionDegree.lean#L447). The attribute's comment: “part (4) as stated -- L is isomorphic to O\_X”.
+**`AlgebraicGeometry.isTrivial_of_invertibleCurveDegree_nonpos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/SectionDegree.lean, line 447](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Curve/SectionDegree.lean#L447). The attribute's comment: “part (4) as stated -- L is isomorphic to O\_X”.
 
 > **An invertible module of nonpositive degree with a nonzero global section is trivial**, on
 > a proper integral scheme of dimension at most one over a field.
@@ -756,7 +756,7 @@ theorem isTrivial_of_invertibleCurveDegree_nonpos [IsProper f] [IsIntegral X]
     SheafOfModules.IsTrivial X.presheaf X.ringCatSheaf.property L
 ```
 
-**`AlgebraicGeometry.isTrivial_of_eval_top_ne_zero_of_inverse`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/SectionDegree.lean, line 537](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Curve/SectionDegree.lean#L537). The attribute's comment: “part (3)”.
+**`AlgebraicGeometry.isTrivial_of_eval_top_ne_zero_of_inverse`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/SectionDegree.lean, line 537](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Curve/SectionDegree.lean#L537). The attribute's comment: “part (3)”.
 
 > **An invertible module whose inverse also has a nonzero section is trivial.** If an
 > invertible module `ℒ` on an integral scheme universally closed over a field and its inverse
@@ -770,7 +770,7 @@ theorem isTrivial_of_eval_top_ne_zero_of_inverse [IsIntegral X] [UniversallyClos
     SheafOfModules.IsTrivial X.presheaf X.ringCatSheaf.property L
 ```
 
-**`AlgebraicGeometry.invertibleCurveDegree_le_of_hom_ne_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/SectionDegree.lean, line 706](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Curve/SectionDegree.lean#L706). The attribute's comment: “part (5), the inequality deg(N) <= deg(L)”.
+**`AlgebraicGeometry.invertibleCurveDegree_le_of_hom_ne_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/SectionDegree.lean, line 706](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Curve/SectionDegree.lean#L706). The attribute's comment: “part (5), the inequality deg(N) <= deg(L)”.
 
 > **A nonzero morphism of invertible modules does not decrease the degree.** On a proper
 > curve over a field, a nonzero morphism `𝒩 ⟶ ℒ` of invertible modules forces
@@ -785,7 +785,7 @@ theorem invertibleCurveDegree_le_of_hom_ne_zero [IsCurve k f] [IsProper f]
     invertibleCurveDegree k f hdim N ≤ invertibleCurveDegree k f hdim L
 ```
 
-**`AlgebraicGeometry.isIso_of_invertibleCurveDegree_eq_of_hom_ne_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/SectionDegree.lean, line 724](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Curve/SectionDegree.lean#L724). The attribute's comment: “part (5), the equality case: the morphism is an isomorphism”.
+**`AlgebraicGeometry.isIso_of_invertibleCurveDegree_eq_of_hom_ne_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/SectionDegree.lean, line 724](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Curve/SectionDegree.lean#L724). The attribute's comment: “part (5), the equality case: the morphism is an isomorphism”.
 
 > **A nonzero morphism of invertible modules of equal degree is an isomorphism**, on a proper
 > curve over a field.
@@ -799,7 +799,7 @@ theorem isIso_of_invertibleCurveDegree_eq_of_hom_ne_zero [IsCurve k f] [IsProper
     (heq : invertibleCurveDegree k f hdim N = invertibleCurveDegree k f hdim L) : IsIso φ
 ```
 
-**`AlgebraicGeometry.invertibleCurveDegree_eq_of_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/SectionDegree.lean, line 750](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Curve/SectionDegree.lean#L750). The attribute's comment: “part (5), the converse of the equality case: an isomorphism has equal degrees, so the equality holds exactly when the morphism is an isomorphism”.
+**`AlgebraicGeometry.invertibleCurveDegree_eq_of_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/SectionDegree.lean, line 750](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Curve/SectionDegree.lean#L750). The attribute's comment: “part (5), the converse of the equality case: an isomorphism has equal degrees, so the equality holds exactly when the morphism is an isomorphism”.
 
 > **An isomorphism of invertible modules preserves the degree**, on a proper scheme of
 > dimension at most one over a field.
@@ -817,7 +817,7 @@ theorem invertibleCurveDegree_eq_of_isIso [IsProper f] (hdim : topologicalKrullD
 
 [Tag 0E22](https://stacks.math.columbia.edu/tag/0E22) in the Stacks Project.
 
-**`AlgebraicGeometry.subsingleton_globalSections_or_isTrivial_of_invertibleCurveDegree_nonpos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/NonpositiveDegreeSection.lean, line 238](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Curve/NonpositiveDegreeSection.lean#L238).
+**`AlgebraicGeometry.subsingleton_globalSections_or_isTrivial_of_invertibleCurveDegree_nonpos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/NonpositiveDegreeSection.lean, line 238](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Curve/NonpositiveDegreeSection.lean#L238).
 
 > Let `k` be a field and `X` a proper scheme over `k` which is reduced, connected and
 > equidimensional of dimension one, and let `ℒ` be an invertible `𝒪_X`-module whose restriction to
@@ -856,7 +856,7 @@ theorem subsingleton_globalSections_or_isTrivial_of_invertibleCurveDegree_nonpos
 
 [Tag 0B5X](https://stacks.math.columbia.edu/tag/0B5X) in the Stacks Project.
 
-**`AlgebraicGeometry.isAmple_iff_invertibleCurveDegree_pos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleDegreeCriterion/CurveAmple.lean, line 154](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmpleDegreeCriterion/CurveAmple.lean#L154). The attribute's comment: “both directions, for a proper curve over a field”.
+**`AlgebraicGeometry.isAmple_iff_invertibleCurveDegree_pos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleDegreeCriterion/CurveAmple.lean, line 154](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AmpleDegreeCriterion/CurveAmple.lean#L154). The attribute's comment: “both directions, for a proper curve over a field”.
 
 > **[Stacks, Tag 0B5X].** Let `k` be a field, `X` a proper curve over `k` and `𝓛` an invertible
 > `𝒪_X`-module. Then `𝓛` is ample if and only if `deg(𝓛) > 0`.
@@ -877,7 +877,7 @@ public theorem isAmple_iff_invertibleCurveDegree_pos [IsCurve k f] [IsProper f]
     Scheme.Modules.IsAmple X L ↔ 0 < invertibleCurveDegree k f hdim L
 ```
 
-**`AlgebraicGeometry.invertibleCurveDegree_pos_of_isAmple_of_isCurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleDegreeCriterion/CurveInputs.lean, line 241](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmpleDegreeCriterion/CurveInputs.lean#L241). The attribute's comment: “the implication: `L` ample ⟹ `deg(L) > 0`, with no hypothesis beyond the tag's own; both directions are registered on `isAmple_iff_invertibleCurveDegree_pos`”.
+**`AlgebraicGeometry.invertibleCurveDegree_pos_of_isAmple_of_isCurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleDegreeCriterion/CurveInputs.lean, line 241](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AmpleDegreeCriterion/CurveInputs.lean#L241). The attribute's comment: “the implication: `L` ample ⟹ `deg(L) > 0`, with no hypothesis beyond the tag's own; both directions are registered on `isAmple_iff_invertibleCurveDegree_pos`”.
 
 > **The forward direction of [Stacks, Tag 0B5X], at the source's hypotheses.** On a proper
 > curve over a field an ample invertible module has positive degree.
@@ -900,7 +900,7 @@ public theorem invertibleCurveDegree_pos_of_isAmple_of_isCurve [IsCurve k f] [Is
 
 [Tag 0B5Y](https://stacks.math.columbia.edu/tag/0B5Y) in the Stacks Project.
 
-**`AlgebraicGeometry.isAmple_iff_forall_invertibleCurveDegree_reducedComponent_pos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleDegreeCriterion/ComponentCriterion.lean, line 302](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmpleDegreeCriterion/ComponentCriterion.lean#L302). The attribute's comment: “both directions, at the tag's own indexing by the one-dimensional irreducible components with their reduced induced closed subscheme structure”.
+**`AlgebraicGeometry.isAmple_iff_forall_invertibleCurveDegree_reducedComponent_pos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleDegreeCriterion/ComponentCriterion.lean, line 302](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AmpleDegreeCriterion/ComponentCriterion.lean#L302). The attribute's comment: “both directions, at the tag's own indexing by the one-dimensional irreducible components with their reduced induced closed subscheme structure”.
 
 > **[Stacks, Tag 0B5Y], both directions.** Let `k` be a field, let `X` be a scheme proper of
 > dimension at most one over `k` and let `𝓛` be an invertible `𝒪_X`-module. Then `𝓛` is ample if
@@ -942,7 +942,7 @@ public theorem isAmple_iff_forall_invertibleCurveDegree_reducedComponent_pos
           (SheafOfModules.isInvertible_pullback (reducedComponentι X ζ) L)
 ```
 
-**`AlgebraicGeometry.invertibleCurveDegree_reducedComponent_pos_of_isAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleDegreeCriterion/ComponentPositivity.lean, line 246](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmpleDegreeCriterion/ComponentPositivity.lean#L246). The attribute's comment: “the implication (1) ⟹ (2), at the tag's own indexing by the one-dimensional irreducible components with their reduced induced structure, with no hypothesis beyond the tag's own; the full equivalence is registered on `isAmple_iff_forall_invertibleCurveDegree_reducedComponent_pos`”.
+**`AlgebraicGeometry.invertibleCurveDegree_reducedComponent_pos_of_isAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleDegreeCriterion/ComponentPositivity.lean, line 246](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AmpleDegreeCriterion/ComponentPositivity.lean#L246). The attribute's comment: “the implication (1) ⟹ (2), at the tag's own indexing by the one-dimensional irreducible components with their reduced induced structure, with no hypothesis beyond the tag's own; the full equivalence is registered on `isAmple_iff_forall_invertibleCurveDegree_reducedComponent_pos`”.
 
 > **The implication (1) ⟹ (2) of [Stacks, Tag 0B5Y].** Let `k` be a field, let `X` be proper of
 > dimension at most one over `k` and let `𝓛` be an ample invertible `𝒪_X`-module. Then the degree
@@ -977,7 +977,7 @@ public theorem invertibleCurveDegree_reducedComponent_pos_of_isAmple [IsProper f
 
 [Tag 0B8Z](https://stacks.math.columbia.edu/tag/0B8Z) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_invertible_finrank_cohomologyOverField_zero_eq_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/PrescribedLowCohomology.lean, line 237](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/PrescribedLowCohomology.lean#L237). The attribute's comment: “assertion (1)”.
+**`AlgebraicGeometry.exists_invertible_finrank_cohomologyOverField_zero_eq_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/PrescribedLowCohomology.lean, line 237](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/PrescribedLowCohomology.lean#L237). The attribute's comment: “assertion (1)”.
 
 > **[Stacks, Tag 0B8Z], assertion (1).** On a proper curve over an algebraically closed field
 > there is an invertible module `ℒ` with `dim_k H⁰(X, ℒ) = 1` and `H¹(X, ℒ) = 0`.
@@ -996,7 +996,7 @@ public theorem exists_invertible_finrank_cohomologyOverField_zero_eq_one [IsAlgC
         IsZero (cohomologyOverField k f L 1)
 ```
 
-**`AlgebraicGeometry.exists_invertible_isZero_cohomologyOverField_zero_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/PrescribedLowCohomology.lean, line 256](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/PrescribedLowCohomology.lean#L256). The attribute's comment: “assertion (2), the vanishing of both `H⁰` and `H¹`”.
+**`AlgebraicGeometry.exists_invertible_isZero_cohomologyOverField_zero_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/PrescribedLowCohomology.lean, line 256](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/PrescribedLowCohomology.lean#L256). The attribute's comment: “assertion (2), the vanishing of both `H⁰` and `H¹`”.
 
 > **[Stacks, Tag 0B8Z], assertion (2).** On a proper curve over an algebraically closed field
 > there is an invertible module `𝒩` with `H⁰(X, 𝒩) = 0` and `H¹(X, 𝒩) = 0`.
@@ -1016,7 +1016,7 @@ public theorem exists_invertible_isZero_cohomologyOverField_zero_one [IsAlgClose
 
 [Tag 0B90](https://stacks.math.columbia.edu/tag/0B90) in the Stacks Project.
 
-**`AlgebraicGeometry.isZero_cohomologyOverField_one_of_two_mul_genus_sub_one_le_invertibleCurveDegree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/LargeDegreeVanishing.lean, line 641](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/LargeDegreeVanishing.lean#L641). The attribute's comment: “the whole statement: `H¹(X, L) = 0` for every invertible `O_X`-module `L` with `deg(L) ≥ 2g - 1` on a proper curve `X` over an algebraically closed field, with `g` the genus”.
+**`AlgebraicGeometry.isZero_cohomologyOverField_one_of_two_mul_genus_sub_one_le_invertibleCurveDegree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/LargeDegreeVanishing.lean, line 641](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/LargeDegreeVanishing.lean#L641). The attribute's comment: “the whole statement: `H¹(X, L) = 0` for every invertible `O_X`-module `L` with `deg(L) ≥ 2g - 1` on a proper curve `X` over an algebraically closed field, with `g` the genus”.
 
 > **[Stacks, Tag 0B90].** Let `k` be an algebraically closed field, let `X` be a proper curve
 > over `k` and let `g = dim_k H¹(X, 𝒪_X)`. Then `H¹(X, ℒ) = 0` for every invertible
@@ -1046,4 +1046,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 33.44, Tag 0AYQ](https://stacks.math.columbia.edu/tag/0AYQ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

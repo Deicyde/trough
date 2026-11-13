@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: Stacks.EtaleCohomology.DerivedUpperShriek.isLeftAdjoint_derivedLowerShriek, Stacks.EtaleCohomology.DerivedUpperShriek.CompactificationData.isLeftAdjoint_derivedLowerShriek, Stacks.EtaleCohomology.isLeftAdjoint_derivedLowerShriekUnbounded_of_compactification, AlgebraicGeometry.SmallEtale.exists_compactification_rightAdjointIso_moduleRUpperShriekFunctor, AlgebraicGeometry.SmallEtale.exists_compactification_rightAdjointIso_pullbackMod_mapDerivedCategory, Stacks.EtaleCohomology.DerivedUpperShriek.exists_isZero_homology_derivedUpperShriek_obj, Stacks.EtaleCohomology.derivedUpperShriekUnboundedSheafyTrace, Stacks.EtaleCohomology.DerivedUpperShriek.CompactificationData.sheafyTrace
+lean: Stacks.EtaleCohomology.DerivedUpperShriek.isLeftAdjoint_derivedLowerShriek, Stacks.EtaleCohomology.DerivedUpperShriek.CompactificationData.isLeftAdjoint_derivedLowerShriek, Stacks.EtaleCohomology.isLeftAdjoint_derivedLowerShriekUnbounded_of_compactification, AlgebraicGeometry.SmallEtale.derivedUpperShriekUnboundedIsoModuleRUpperShriekFunctor, Stacks.EtaleCohomology.derivedUpperShriekUnboundedIsoInverseImage, Stacks.EtaleCohomology.DerivedUpperShriek.exists_isZero_homology_derivedUpperShriek_obj, Stacks.EtaleCohomology.derivedUpperShriekUnboundedSheafyTrace, Stacks.EtaleCohomology.DerivedUpperShriek.CompactificationData.sheafyTrace
 statement: formalized
 proof: formalized
 ---
 
 # 63.11 Derived upper shriek
 
-Section 63.11 of the Stacks Project, [Tag 0G2B](https://stacks.math.columbia.edu/tag/0G2B). 9 tags here are carried by 16 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 63.11 of the Stacks Project, [Tag 0G2B](https://stacks.math.columbia.edu/tag/0G2B). 9 tags here are carried by 16 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0G2C, a lemma
 
 [Tag 0G2C](https://stacks.math.columbia.edu/tag/0G2C) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.DerivedUpperShriek.isLeftAdjoint_derivedLowerShriek`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriek/AdjointExistence.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriek/AdjointExistence.lean#L83). The attribute's comment: “Rf\_! = Rf̄\_*j\_!, with its commutation with direct sums (Tag 0G29) assumed”.
+**`Stacks.EtaleCohomology.DerivedUpperShriek.isLeftAdjoint_derivedLowerShriek`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriek/AdjointExistence.lean, line 83](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriek/AdjointExistence.lean#L83). The attribute's comment: “Rf\_! = Rf̄\_*j\_!, with its commutation with direct sums (Tag 0G29) assumed”.
 
 > Let `Λ` be a coefficient ring, let `A` be the Grothendieck abelian category of sheaves of
 > `Λ`-modules on `X_étale`, and let `Rf_! = Rf̄_* ∘ j_!` be the derived lower shriek of a
@@ -27,7 +27,7 @@ Section 63.11 of the Stacks Project, [Tag 0G2B](https://stacks.math.columbia.edu
 theorem isLeftAdjoint_derivedLowerShriek : (shriek ⋙ pushforwardFbar).IsLeftAdjoint
 ```
 
-**`Stacks.EtaleCohomology.DerivedUpperShriek.CompactificationData.isLeftAdjoint_derivedLowerShriek`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriek/AdjointExistence.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriek/AdjointExistence.lean#L117). The attribute's comment: “for a CompactificationData; the commutation with direct sums (Tag 0G29) assumed”.
+**`Stacks.EtaleCohomology.DerivedUpperShriek.CompactificationData.isLeftAdjoint_derivedLowerShriek`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriek/AdjointExistence.lean, line 117](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriek/AdjointExistence.lean#L117). The attribute's comment: “for a CompactificationData; the commutation with direct sums (Tag 0G29) assumed”.
 
 > The functor `Rf_! = Rf̄_* ∘ j_!` read off a `CompactificationData` has a right adjoint as soon
 > as it commutes with direct sums, which is [Stacks, Tag 0G29].
@@ -42,7 +42,7 @@ theorem isLeftAdjoint_derivedLowerShriek
     data.derivedLowerShriek.IsLeftAdjoint
 ```
 
-**`Stacks.EtaleCohomology.isLeftAdjoint_derivedLowerShriekUnbounded_of_compactification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriek/AdjointExistenceUnbounded.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriek/AdjointExistenceUnbounded.lean#L220). The attribute's comment: “Rf\_! = Rf̄\_* ∘ Rj\_! on D(X\_étale, Λ), Λ a torsion ring in any universe, for every compactification”. References: SGA 4 XVII (3.2.6), “(i), special case”.
+**`Stacks.EtaleCohomology.isLeftAdjoint_derivedLowerShriekUnbounded_of_compactification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriek/AdjointExistenceUnbounded.lean, line 220](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriek/AdjointExistenceUnbounded.lean#L220). The attribute's comment: “Rf\_! = Rf̄\_* ∘ Rj\_! on D(X\_étale, Λ), Λ a torsion ring in any universe, for every compactification”. References: SGA 4 XVII (3.2.6), “(i), special case”.
 
 > **[Stacks, Tag 0G2C].** Let `f : X ⟶ Y` be a finite type separated morphism of quasi-compact
 > and quasi-separated schemes and let `Λ` be a torsion ring, in any universe. The functor
@@ -66,89 +66,61 @@ theorem isLeftAdjoint_derivedLowerShriekUnbounded_of_compactification (f : X ⟶
 
 [Tag 0GL8](https://stacks.math.columbia.edu/tag/0GL8) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallEtale.exists_compactification_rightAdjointIso_moduleRUpperShriekFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/RUpperShriekCompactification.lean, line 174](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/RUpperShriekCompactification.lean#L174). The attribute's comment: “Rf^! of Tag 0G2C is the Rf^! of Tag 0F5N, for every right adjoint of Rf\_!”. References: EGA IV (18.12.13), “special case”.
+**`AlgebraicGeometry.SmallEtale.derivedUpperShriekUnboundedIsoModuleRUpperShriekFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriek/QuasiFiniteComparison.lean, line 310](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriek/QuasiFiniteComparison.lean#L310). The attribute's comment: “for every compactification j: Rf^! of Tag 0G2C (right adjoint of Rf̄\_* ∘ j\_!) is the Rf^! of Tag 0F5N, read on Mathlib's small étale sites through the equivalence of the two models of D(X\_étale, Λ)”.
 
-> **[Stacks, Tag 0GL8].** Let `f : X ⟶ Y` be a separated quasi-finite morphism of a big
-> étale site with `Y` quasi-compact and quasi-separated, and let `Λ` be a ring. Then `f` factors
-> as an open immersion `j : X ⟶ X̄` followed by a finite morphism `f̄ : X̄ ⟶ Y` (Zariski's main
-> theorem, [Stacks, Tag 05K0]), and for every model of `D(X̄_étale, Λ)` and every total right
-> derived functor `Rf̄_*` of `f̄_*`, the derived lower shriek `Rf_! = Rf̄_* ∘ j_!` of
-> [Stacks, Tag 0G2C] has a right adjoint, and every right adjoint `Rf^!` of it is isomorphic to
-> the derived upper shriek `Rf^! : D(Y_étale, Λ) ⥤ D(X_étale, Λ)` of [Stacks, Tag 0F5N].
+> **[Stacks, Tag 0GL8].** Let `f : X ⟶ Y` be a separated quasi-finite morphism of a big étale
+> site with `Y` quasi-compact and quasi-separated, let `Λ` be a torsion ring, and let
+> `j : X ⟶ X̄` be **any** compactification of `X` over `Y`. Then the functor
+> `Rf^! : D(Y_étale, Λ) ⥤ D(X_étale, Λ)` of [Stacks, Tag 0G2C], the right adjoint
+> `Stacks.EtaleCohomology.derivedUpperShriekUnbounded Λ j hΛ` of the derived lower shriek
+> `Rf_! = Rf̄_* ∘ j_!` of `j` ([Stacks, Tag 0F7H]), is isomorphic to the `Rf^!` of
+> [Stacks, Tag 0F5N], the total right derived functor `moduleRUpperShriekFunctor B Λ f` of the
+> upper shriek of [Stacks, Tag 0F59].
 >
-> Quasi-finiteness is [Stacks, Tag 02NG]: locally quasi-finite, locally of finite type and
-> quasi-compact together. The compactification is produced, not assumed.
+> The first functor is on Mathlib's small étale sites (`Stacks.EtaleCohomology.EtaleModules`), the
+> second on the small étale sites of Tag 021B of `B` (`AlgebraicGeometry.SmallEtale.ModuleSheaf`,
+> any model of their derived categories); the second is read on the derived categories of the first
+> through the equivalences `moduleSheafDerivedEquiv` induced by the equivalences of the sheaf
+> categories. Quasi-finiteness is [Stacks, Tag 02NG]: locally quasi-finite, locally of finite type
+> and quasi-compact together; `X` is then quasi-compact and quasi-separated as well.
 
 ```lean
-theorem exists_compactification_rightAdjointIso_moduleRUpperShriekFunctor
-    (B : BigEtaleSite.{u}) (Λ : Type u) [Ring Λ] {X Y : B.Scheme} (f : X ⟶ Y)
-    [IsSeparated (B.inclusion.map f)] [LocallyQuasiFinite (B.inclusion.map f)]
-    [LocallyOfFiniteType (B.inclusion.map f)] [QuasiCompact (B.inclusion.map f)]
-    [CompactSpace Y.obj] [QuasiSeparatedSpace Y.obj]
-    [HasDerivedCategory.{w} (ModuleSheaf.{u, u, u} B X Λ)]
-    [HasDerivedCategory.{w} (ModuleSheaf.{u, u, u} B Y Λ)] :
-    ∃ (Xbar : B.Scheme) (j : X ⟶ Xbar) (fbar : Xbar ⟶ Y)
-      (_ : IsOpenImmersion (B.inclusion.map j)) (_ : IsFinite (B.inclusion.map fbar)),
-      f = j ≫ fbar ∧
-      ∀ [HasDerivedCategory.{w} (ModuleSheaf.{u, u, u} B Xbar Λ)]
-        (RFbar : DerivedCategory (ModuleSheaf.{u, u, u} B Xbar Λ) ⥤
-          DerivedCategory (ModuleSheaf.{u, u, u} B Y Λ))
-        (α : (etalePushforwardMod B Λ fbar).mapHomotopyCategory (ComplexShape.up ℤ) ⋙
-          DerivedCategory.Qh ⟶ DerivedCategory.Qh ⋙ RFbar),
-        RFbar.IsRightDerivedFunctor α
-          (HomotopyCategory.quasiIso (ModuleSheaf.{u, u, u} B Xbar Λ) (ComplexShape.up ℤ)) →
-        ((fShriekMod.{u, u, u} B Λ j).mapDerivedCategory ⋙ RFbar).IsLeftAdjoint ∧
-        ∀ (G : DerivedCategory (ModuleSheaf.{u, u, u} B Y Λ) ⥤
-            DerivedCategory (ModuleSheaf.{u, u, u} B X Λ)),
-          ((fShriekMod.{u, u, u} B Λ j).mapDerivedCategory ⋙ RFbar ⊣ G) →
-          Nonempty (G ≅ moduleRUpperShriekFunctor.{u, u, w, u} B Λ f)
+def derivedUpperShriekUnboundedIsoModuleRUpperShriekFunctor
+    (j : CompactificationOf (Over.mk (B.inclusion.map f))) :
+    derivedUpperShriekUnbounded.{u, u} Λ j hΛ ≅
+      (moduleSheafDerivedEquiv B Λ Y).inverse ⋙
+        moduleRUpperShriekFunctor.{u, u, w, u} B Λ f ⋙
+          (moduleSheafDerivedEquiv B Λ X).functor
 ```
 
 ## Tag 0GL9, a lemma
 
 [Tag 0GL9](https://stacks.math.columbia.edu/tag/0GL9) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallEtale.exists_compactification_rightAdjointIso_pullbackMod_mapDerivedCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/EtaleRUpperShriekPullback.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/EtaleRUpperShriekPullback.lean#L147). The attribute's comment: “Rj^! of Tag 0G2C is j^\{-1}, for every right adjoint of Rj\_!”. References: EGA IV (18.12.13), “special case”.
+**`Stacks.EtaleCohomology.derivedUpperShriekUnboundedIsoInverseImage`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriek/EtaleInverseImage.lean, line 176](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriek/EtaleInverseImage.lean#L176). The attribute's comment: “for every compactification of j and every torsion ring Λ, in any universe; j^\{-1} is the inverse image of sheaves of Λ-modules”.
 
-> **[Stacks, Tag 0GL9].** Let `j : U ⟶ X` be a separated étale morphism of a big étale site
-> with `U` quasi-compact and `X` quasi-compact and quasi-separated, and let `Λ` be a ring. Then
-> `j` factors as an open immersion `j' : U ⟶ X̄` followed by a finite morphism `j̄ : X̄ ⟶ X`
-> (Zariski's main theorem), and for every model of `D(X̄_étale, Λ)` and every total right derived
-> functor `Rj̄_*` of `j̄_*`, the derived lower shriek `Rj_! = Rj̄_* ∘ j'_!` of [Stacks, Tag 0G2C]
-> has a right adjoint, and every right adjoint `Rj^!` of it is isomorphic to the inverse image
+> **[Stacks, Tag 0GL9].** Let `j : U ⟶ X` be a separated étale morphism of quasi-compact and
+> quasi-separated schemes and let `Λ` be a torsion ring. For every compactification
+> `j = j̄ ∘ j'` of `U` over `X`, the functor `Rj^! : D(X_étale, Λ) ⥤ D(U_étale, Λ)` of
+> [Stacks, Tag 0G2C], the right adjoint of `Rj_! = Rj̄_* ∘ j'_!`, is the inverse image
 > `j^{-1} : D(X_étale, Λ) ⥤ D(U_étale, Λ)`.
 >
-> The compactification is produced, not assumed.
+> This is the source's proof: both functors are right adjoint to `Rj_! = j_!`. Quasi-separatedness
+> of `U` is not needed and not assumed. The coefficient ring `Λ : Type r` is in an arbitrary
+> universe.
 
 ```lean
-theorem exists_compactification_rightAdjointIso_pullbackMod_mapDerivedCategory
-    (B : BigEtaleSite.{u}) (Λ : Type u) [Ring Λ] {U X : B.Scheme} (j : U ⟶ X)
-    [IsSeparated (B.inclusion.map j)] [Etale (B.inclusion.map j)]
-    [CompactSpace U.obj] [CompactSpace X.obj] [QuasiSeparatedSpace X.obj]
-    [HasDerivedCategory.{w} (ModuleSheaf.{u, u, u} B U Λ)]
-    [HasDerivedCategory.{w} (ModuleSheaf.{u, u, u} B X Λ)] :
-    ∃ (Xbar : B.Scheme) (j' : U ⟶ Xbar) (fbar : Xbar ⟶ X)
-      (_ : IsOpenImmersion (B.inclusion.map j')) (_ : IsFinite (B.inclusion.map fbar)),
-      j = j' ≫ fbar ∧
-      ∀ [HasDerivedCategory.{w} (ModuleSheaf.{u, u, u} B Xbar Λ)]
-        (RFbar : DerivedCategory (ModuleSheaf.{u, u, u} B Xbar Λ) ⥤
-          DerivedCategory (ModuleSheaf.{u, u, u} B X Λ))
-        (α : (etalePushforwardMod B Λ fbar).mapHomotopyCategory (ComplexShape.up ℤ) ⋙
-          DerivedCategory.Qh ⟶ DerivedCategory.Qh ⋙ RFbar),
-        RFbar.IsRightDerivedFunctor α
-          (HomotopyCategory.quasiIso (ModuleSheaf.{u, u, u} B Xbar Λ) (ComplexShape.up ℤ)) →
-        ((fShriekMod.{u, u, u} B Λ j').mapDerivedCategory ⋙ RFbar).IsLeftAdjoint ∧
-        ∀ (G : DerivedCategory (ModuleSheaf.{u, u, u} B X Λ) ⥤
-            DerivedCategory (ModuleSheaf.{u, u, u} B U Λ)),
-          ((fShriekMod.{u, u, u} B Λ j').mapDerivedCategory ⋙ RFbar ⊣ G) →
-          Nonempty (G ≅ (pullbackMod.{u, u, u} B Λ j).mapDerivedCategory)
+def derivedUpperShriekUnboundedIsoInverseImage (c : CompactificationOf (Over.mk j))
+    (hΛ : ∃ m : ℕ, 0 < m ∧ (m : Λ) = 0) :
+    derivedUpperShriekUnbounded.{u, r} Λ c hΛ ≅
+      (etaleModuleInverseImage.{u, r} Λ j).mapDerivedCategory
 ```
 
 ## Tag 0GLA, a lemma
 
 [Tag 0GLA](https://stacks.math.columbia.edu/tag/0GLA) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.DerivedUpperShriek.exists_isZero_homology_derivedUpperShriek_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriek/UpperShriekExistence.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriek/UpperShriekExistence.lean#L95).
+**`Stacks.EtaleCohomology.DerivedUpperShriek.exists_isZero_homology_derivedUpperShriek_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriek/UpperShriekExistence.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriek/UpperShriekExistence.lean#L95).
 
 > Let `f : X ⟶ Y` be a separated morphism of finite type between quasi-compact and
 > quasi-separated schemes, let `j` be a compactification of `f`, and let `Λ` be a torsion ring
@@ -177,7 +149,7 @@ theorem exists_isZero_homology_derivedUpperShriek_obj {X Y : Scheme.{u}} (f : X 
 
 [Tag 0GLB](https://stacks.math.columbia.edu/tag/0GLB) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.derivedUpperShriekUnboundedSheafyTrace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriek/EtaleSheafyTrace.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriek/EtaleSheafyTrace.lean#L221).
+**`Stacks.EtaleCohomology.derivedUpperShriekUnboundedSheafyTrace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriek/EtaleSheafyTrace.lean, line 221](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriek/EtaleSheafyTrace.lean#L221).
 
 > Let `Λ` be a torsion ring and let `f : X ⟶ Y` be a morphism of schemes with a
 > compactification `f = f̄ ∘ j`, so that `Rf_! = Rf̄_* ∘ Rj_! : D(X_étale, Λ) ⟶ D(Y_étale, Λ)`
@@ -208,7 +180,7 @@ def derivedUpperShriekUnboundedSheafyTrace
         K
 ```
 
-**`Stacks.EtaleCohomology.DerivedUpperShriek.CompactificationData.sheafyTrace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriek/SheafyTrace.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriek/SheafyTrace.lean#L74). The attribute's comment: “the map, for a chosen compactification and a chosen adjunction Rf\_! ⊣ Rf^!”.
+**`Stacks.EtaleCohomology.DerivedUpperShriek.CompactificationData.sheafyTrace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriek/SheafyTrace.lean, line 74](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriek/SheafyTrace.lean#L74). The attribute's comment: “the map, for a chosen compactification and a chosen adjunction Rf\_! ⊣ Rf^!”.
 
 > The sheafy trace map
 >
@@ -223,7 +195,7 @@ def sheafyTrace (L : DU) (K : DY) :
       (data.homY.obj (op (data.derivedLowerShriek.obj L))).obj K
 ```
 
-**`Stacks.EtaleCohomology.DerivedUpperShriek.CompactificationData.sheafyTrace_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriek/SheafyTrace.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriek/SheafyTrace.lean#L83). The attribute's comment: “the defining composite through RHom(Rf\_!L, Rf\_!Rf^!K)”.
+**`Stacks.EtaleCohomology.DerivedUpperShriek.CompactificationData.sheafyTrace_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriek/SheafyTrace.lean, line 83](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriek/SheafyTrace.lean#L83). The attribute's comment: “the defining composite through RHom(Rf\_!L, Rf\_!Rf^!K)”.
 
 > The sheafy trace map is the canonical map of [Stacks, Tag 0GL7] followed by the internal Hom
 > of the counit of `Rf_! ⊣ Rf^!`.
@@ -235,7 +207,7 @@ theorem sheafyTrace_eq (L : DU) (K : DY) :
         (data.homY.obj (op (data.derivedLowerShriek.obj L))).map (adj.counit.app K)
 ```
 
-**`Stacks.EtaleCohomology.DerivedUpperShriek.CompactificationData.sheafyTrace_naturality_target`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriek/SheafyTrace.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriek/SheafyTrace.lean#L91). The attribute's comment: “functoriality in K”.
+**`Stacks.EtaleCohomology.DerivedUpperShriek.CompactificationData.sheafyTrace_naturality_target`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriek/SheafyTrace.lean, line 91](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriek/SheafyTrace.lean#L91). The attribute's comment: “functoriality in K”.
 
 > The sheafy trace map is natural in `K`.
 
@@ -247,7 +219,7 @@ theorem sheafyTrace_naturality_target (L : DU) {K K' : DY} (k : K ⟶ K') :
         (data.homY.obj (op (data.derivedLowerShriek.obj L))).map k
 ```
 
-**`Stacks.EtaleCohomology.DerivedUpperShriek.CompactificationData.sheafyTrace_naturality_source`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriek/SheafyTrace.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriek/SheafyTrace.lean#L104). The attribute's comment: “functoriality in L”.
+**`Stacks.EtaleCohomology.DerivedUpperShriek.CompactificationData.sheafyTrace_naturality_source`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriek/SheafyTrace.lean, line 104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriek/SheafyTrace.lean#L104). The attribute's comment: “functoriality in L”.
 
 > The sheafy trace map is natural in `L`, contravariantly.
 
@@ -263,7 +235,7 @@ theorem sheafyTrace_naturality_source {L L' : DU} (l : L' ⟶ L) (K : DY) :
 
 [Tag 0GLC](https://stacks.math.columbia.edu/tag/0GLC) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.isIso_derivedUpperShriekUnboundedSheafyTrace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriek/SheafyTraceIsIso.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriek/SheafyTraceIsIso.lean#L74). References: SGA 7 XIII (2.1.6), “more general”.
+**`Stacks.EtaleCohomology.isIso_derivedUpperShriekUnboundedSheafyTrace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriek/SheafyTraceIsIso.lean, line 74](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriek/SheafyTraceIsIso.lean#L74). References: SGA 7 XIII (2.1.6), “more general”.
 
 > **[Stacks, Tag 0GLC].** Let `f : X ⟶ Y` be a separated finite type morphism of quasi-compact
 > and quasi-separated schemes and let `Λ` be a torsion ring (`m = 0` in `Λ` for some `m ≥ 1`). Then
@@ -287,7 +259,7 @@ theorem isIso_derivedUpperShriekUnboundedSheafyTrace (Λ : Type) [CommRing Λ]
 
 [Tag 0GLD](https://stacks.math.columbia.edu/tag/0GLD) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.isIso_derivedUpperShriekUnboundedGlobalTrace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriek/GlobalTrace.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriek/GlobalTrace.lean#L104). References: SGA 7 XIII (2.1.6), “more general”.
+**`Stacks.EtaleCohomology.isIso_derivedUpperShriekUnboundedGlobalTrace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriek/GlobalTrace.lean, line 104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriek/GlobalTrace.lean#L104). References: SGA 7 XIII (2.1.6), “more general”.
 
 > **[Stacks, Tag 0GLD].** Let `f : X ⟶ Y` be a separated finite type morphism of quasi-compact
 > and quasi-separated schemes and let `Λ` be a torsion ring (`m = 0` in `Λ` for some `m ≥ 1`). Then
@@ -312,7 +284,7 @@ theorem isIso_derivedUpperShriekUnboundedGlobalTrace (Λ : Type) [CommRing Λ]
 
 [Tag 0GLE](https://stacks.math.columbia.edu/tag/0GLE) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.derivedUpperShriekBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriek.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriek.lean#L114).
+**`Stacks.EtaleCohomology.derivedUpperShriekBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriek.lean, line 117](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriek.lean#L117).
 
 > **Stacks Project, Tag 0GLE.** Let
 > ```
@@ -355,7 +327,7 @@ def derivedUpperShriekBaseChange {X' X Y' Y : Scheme.{u}}
       Uf' ⋙ etaleModuleDerivedDirectImage.{u, r} Λ g'
 ```
 
-**`Stacks.EtaleCohomology.derivedUpperShriekUnboundedBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriek/UnboundedProperBaseChange.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriek/UnboundedProperBaseChange.lean#L91).
+**`Stacks.EtaleCohomology.derivedUpperShriekUnboundedBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriek/UnboundedProperBaseChange.lean, line 91](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DerivedUpperShriek/UnboundedProperBaseChange.lean#L91).
 
 > **Stacks Project, Tag 0GLE.** Consider a cartesian square
 > ```
@@ -384,7 +356,7 @@ def derivedUpperShriekUnboundedBaseChange :
 
 [Tag 0GLF](https://stacks.math.columbia.edu/tag/0GLF) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.ChangeOfRings.upperShriek_restrictScalars`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ChangeOfRings/UpperShriekRestrictScalars.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ChangeOfRings/UpperShriekRestrictScalars.lean#L69).
+**`Stacks.EtaleCohomology.ChangeOfRings.upperShriek_restrictScalars`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ChangeOfRings/UpperShriekRestrictScalars.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ChangeOfRings/UpperShriekRestrictScalars.lean#L68).
 
 > **[Stacks, Tag 0GLF].** Let `φ : Λ₁ ⟶ Λ₂` be a homomorphism of torsion rings (`n = 0` in
 > `Λ₁` for some `n ≥ 1`, hence also in `Λ₂`) and let `f : X ⟶ Y` be a separated morphism of finite
@@ -418,4 +390,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 63.11, Tag 0G2B](https://stacks.math.columbia.edu/tag/0G2B)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

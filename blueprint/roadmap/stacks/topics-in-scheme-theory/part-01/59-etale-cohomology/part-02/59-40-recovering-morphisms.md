@@ -8,13 +8,13 @@ proof: formalized
 
 # 59.40 Recovering morphisms
 
-Section 59.40 of the Stacks Project, [Tag 04JH](https://stacks.math.columbia.edu/tag/04JH). 5 tags here are carried by 10 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 59.40 of the Stacks Project, [Tag 04JH](https://stacks.math.columbia.edu/tag/04JH). 5 tags here are carried by 10 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 04I5, a lemma
 
 [Tag 04I5](https://stacks.math.columbia.edu/tag/04I5) in the Stacks Project.
 
-**`AlgebraicGeometry.smallEtaleRingedSiteHom_isLocallyRinged`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/RecoveringMorphisms/LocallyRinged.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/RecoveringMorphisms/LocallyRinged.lean#L130).
+**`AlgebraicGeometry.smallEtaleRingedSiteHom_isLocallyRinged`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/RecoveringMorphisms/LocallyRinged.lean, line 130](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/RecoveringMorphisms/LocallyRinged.lean#L130).
 
 > **Stacks 04I5.** The morphism of ringed sites `(a_small, a_small^♯)` associated to a
 > morphism of schemes `a : X ⟶ Y` is a morphism of locally ringed sites: its square of units
@@ -33,7 +33,7 @@ public theorem smallEtaleRingedSiteHom_isLocallyRinged :
 
 [Tag 04IJ](https://stacks.math.columbia.edu/tag/04IJ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.schemeSmallEtaleRingedToposHom_twoMorphism_eq_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SchemeSmallEtaleTwoMorphismRigidity.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SchemeSmallEtaleTwoMorphismRigidity.lean#L66).
+**`AlgebraicGeometry.Space.schemeSmallEtaleRingedToposHom_twoMorphism_eq_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SchemeSmallEtaleTwoMorphismRigidity.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SchemeSmallEtaleTwoMorphismRigidity.lean#L66).
 
 > **Stacks 04IJ.** A 2-morphism from the morphism of small étale ringed topoi induced by a
 > morphism of schemes to itself is the identity.
@@ -47,7 +47,7 @@ theorem schemeSmallEtaleRingedToposHom_twoMorphism_eq_id
       (smallEtaleRingedToposHom B S hS (schemeSpaceMap g))
 ```
 
-**`AlgebraicGeometry.Space.schemeSmallEtaleRingedToposHom_twoMorphismOfRingedTopoi_eq_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SchemeSmallEtaleTwoMorphismRigidity.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SchemeSmallEtaleTwoMorphismRigidity.lean#L78).
+**`AlgebraicGeometry.Space.schemeSmallEtaleRingedToposHom_twoMorphismOfRingedTopoi_eq_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SchemeSmallEtaleTwoMorphismRigidity.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SchemeSmallEtaleTwoMorphismRigidity.lean#L78).
 
 > **Stacks 04IJ** for a 2-morphism over the four-field morphism of ringed topoi: a 2-morphism
 > from the morphism of small étale ringed topoi induced by a morphism of schemes to itself is the
@@ -66,7 +66,7 @@ theorem schemeSmallEtaleRingedToposHom_twoMorphismOfRingedTopoi_eq_id
 
 [Tag 04LW](https://stacks.math.columbia.edu/tag/04LW) in the Stacks Project.
 
-**`AlgebraicGeometry.eq_of_smallEtale_twoIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/RecoveringMorphisms/Faithful.lean, line 441](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/RecoveringMorphisms/Faithful.lean#L441).
+**`AlgebraicGeometry.eq_of_smallEtale_twoIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/RecoveringMorphisms/Faithful.lean, line 441](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/RecoveringMorphisms/Faithful.lean#L441).
 
 > **Stacks 04LW.** Let `X` and `Y` be schemes. Two morphisms `a, b : X ⟶ Y` for which there
 > is a 2-isomorphism `(a_small, a_small^♯) ≅ (b_small, b_small^♯)` in the 2-category of ringed
@@ -91,7 +91,7 @@ public theorem eq_of_smallEtale_twoIso {X Y : B.Scheme} (a b : X ⟶ Y)
     a = b
 ```
 
-**`AlgebraicGeometry.eq_of_smallEtale_twoIso_comm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/RecoveringMorphisms/Faithful.lean, line 473](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/RecoveringMorphisms/Faithful.lean#L473).
+**`AlgebraicGeometry.eq_of_smallEtale_twoIso_comm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/RecoveringMorphisms/Faithful.lean, line 473](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/RecoveringMorphisms/Faithful.lean#L473).
 
 > **Stacks 04LW**, with the compatibility with the structure maps written as the commuting
 > triangle of a 2-morphism of ringed topoi: the composite of `a_small^♯` with `t`, evaluated at
@@ -116,7 +116,7 @@ public theorem eq_of_smallEtale_twoIso_comm {X Y : B.Scheme} (a b : X ⟶ Y)
     a = b
 ```
 
-**`AlgebraicGeometry.eq_of_smallEtaleRingedToposHom_twoIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/RecoveringMorphisms/RingedToposTwoIso.lean, line 86](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/RecoveringMorphisms/RingedToposTwoIso.lean#L86).
+**`AlgebraicGeometry.eq_of_smallEtaleRingedToposHom_twoIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/RecoveringMorphisms/RingedToposTwoIso.lean, line 86](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/RecoveringMorphisms/RingedToposTwoIso.lean#L86).
 
 > **Stacks 04LW**, in the 2-category of ringed topoi.  Two morphisms of schemes `a, b : X ⟶ Y`
 > for which `(a_small, a_small^♯)` and `(b_small, b_small^♯)` are 2-isomorphic are equal.
@@ -128,7 +128,7 @@ theorem eq_of_smallEtaleRingedToposHom_twoIso (a b : X ⟶ Y)
     a = b
 ```
 
-**`AlgebraicGeometry.eq_of_twoIso_smallEtaleRingedToposHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/RecoveringMorphisms/RingedToposTwoIso.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/RecoveringMorphisms/RingedToposTwoIso.lean#L99). The attribute's comment: “the uniqueness clause of 04I6”.
+**`AlgebraicGeometry.eq_of_twoIso_smallEtaleRingedToposHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/RecoveringMorphisms/RingedToposTwoIso.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/RecoveringMorphisms/RingedToposTwoIso.lean#L99). The attribute's comment: “the uniqueness clause of 04I6”.
 
 > **The uniqueness half of Stacks 04I6.**  A morphism of ringed topoi between the small étale
 > ringed topoi of two schemes is 2-isomorphic to `(f_small, f_small^♯)` for at most one morphism
@@ -149,7 +149,7 @@ theorem eq_of_twoIso_smallEtaleRingedToposHom
 
 [Tag 04I6](https://stacks.math.columbia.edu/tag/04I6) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_schemeHom_twoIso_of_isLocallyRinged`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/RecoveringMorphisms/AffineExistence.lean, line 212](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/RecoveringMorphisms/AffineExistence.lean#L212). The attribute's comment: “the existence clause: 2-isomorphic to some (f\_small, f\_small^sharp)”.
+**`AlgebraicGeometry.exists_schemeHom_twoIso_of_isLocallyRinged`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/RecoveringMorphisms/AffineExistence.lean, line 213](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/RecoveringMorphisms/AffineExistence.lean#L213). The attribute's comment: “the existence clause: 2-isomorphic to some (f\_small, f\_small^sharp)”.
 
 > **The existence half of [Stacks Project, Tag 04I6].**  Let `X` and `Y` be schemes of a big
 > étale site with `Y` affine, and let
@@ -173,7 +173,7 @@ theorem exists_schemeHom_twoIso_of_isLocallyRinged (hg : g.IsLocallyRinged) :
         (smallEtaleRingedToposHom B a))
 ```
 
-**`AlgebraicGeometry.existsUnique_schemeHom_twoIso_of_isLocallyRinged`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/RecoveringMorphisms/AffineExistence.lean, line 237](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/RecoveringMorphisms/AffineExistence.lean#L237).
+**`AlgebraicGeometry.existsUnique_schemeHom_twoIso_of_isLocallyRinged`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/RecoveringMorphisms/AffineExistence.lean, line 238](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/RecoveringMorphisms/AffineExistence.lean#L238).
 
 > **[Stacks Project, Tag 04I6].**  Let `X` and `Y` be schemes of a big étale site with `Y`
 > affine, and let
@@ -202,13 +202,13 @@ theorem existsUnique_schemeHom_twoIso_of_isLocallyRinged (hg : g.IsLocallyRinged
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.eq_of_twoIso_smallEtaleRingedToposHom`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/RecoveringMorphisms/RingedToposTwoIso.lean#L99), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/RecoveringMorphisms/RingedToposTwoIso.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/RecoveringMorphisms/RingedToposTwoIso.lean#L109) (StacksFrontier): “the uniqueness clause: for two affine schemes and a morphism of locally ringed topoi, which this statement covers since it assumes neither”.
+- [`AlgebraicGeometry.eq_of_twoIso_smallEtaleRingedToposHom`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/RecoveringMorphisms/RingedToposTwoIso.lean#L99), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/RecoveringMorphisms/RingedToposTwoIso.lean, line 109](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/RecoveringMorphisms/RingedToposTwoIso.lean#L109) (StacksFrontier): “the uniqueness clause: for two affine schemes and a morphism of locally ringed topoi, which this statement covers since it assumes neither”.
 
 ## Tag 04I7, a theorem
 
 [Tag 04I7](https://stacks.math.columbia.edu/tag/04I7) in the Stacks Project.
 
-**`AlgebraicGeometry.existsUnique_schemeHom_twoIso_smallEtaleRingedToposHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/RecoveringMorphisms/Existence/Assembly.lean, line 345](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/RecoveringMorphisms/Existence/Assembly.lean#L345).
+**`AlgebraicGeometry.existsUnique_schemeHom_twoIso_smallEtaleRingedToposHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/RecoveringMorphisms/Existence/Assembly.lean, line 345](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/RecoveringMorphisms/Existence/Assembly.lean#L345).
 
 > Let `X` and `Y` be schemes (of a big étale site) and let
 > `(g, g^♯) : (Sh(X_étale), 𝒪_X) ⟶ (Sh(Y_étale), 𝒪_Y)` be a morphism of locally ringed topoi.  Then
@@ -232,7 +232,7 @@ theorem existsUnique_schemeHom_twoIso_smallEtaleRingedToposHom (B : BigEtaleSite
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.eq_of_twoIso_smallEtaleRingedToposHom`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/RecoveringMorphisms/RingedToposTwoIso.lean#L99), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/RecoveringMorphisms/RingedToposTwoIso.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/RecoveringMorphisms/RingedToposTwoIso.lean#L113) (StacksFrontier): “the uniqueness clause, i.e. the faithfulness half of the full faithfulness asserted by the theorem”.
+- [`AlgebraicGeometry.eq_of_twoIso_smallEtaleRingedToposHom`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/RecoveringMorphisms/RingedToposTwoIso.lean#L99), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/RecoveringMorphisms/RingedToposTwoIso.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/RecoveringMorphisms/RingedToposTwoIso.lean#L113) (StacksFrontier): “the uniqueness clause, i.e. the faithfulness half of the full faithfulness asserted by the theorem”.
 
 ## Depends on
 
@@ -241,4 +241,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 59.40, Tag 04JH](https://stacks.math.columbia.edu/tag/04JH)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 27.8 Proj of a graded ring
 
-Section 27.8 of the Stacks Project, [Tag 01M3](https://stacks.math.columbia.edu/tag/01M3). 13 tags here are carried by 27 declarations of the repository (all in StacksFrontier) and 5 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 27.8 of the Stacks Project, [Tag 01M3](https://stacks.math.columbia.edu/tag/01M3). 13 tags here are carried by 27 declarations of the repository (all in StacksFrontier) and 5 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 01M4, a lemma
 
 [Tag 01M4](https://stacks.math.columbia.edu/tag/01M4) in the Stacks Project.
 
-**`Stacks.ProjStandardOpenStatement.tag01M4`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjStandardOpenStatement.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjStandardOpenStatement.lean#L89). The attribute's comment: “the ten assertions of the tag in one statement: part (1)(a)-(h) for a standard open D+(g) contained in D+(f), part (2) the finite refinement of an open covering of D+(f) by standard opens, part (3) the unit-ideal criterion”.
+**`Stacks.ProjStandardOpenStatement.tag01M4`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjStandardOpenStatement.lean, line 89](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjStandardOpenStatement.lean#L89). The attribute's comment: “the ten assertions of the tag in one statement: part (1)(a)-(h) for a standard open D+(g) contained in D+(f), part (2) the finite refinement of an open covering of D+(f) by standard opens, part (3) the unit-ideal criterion”.
 
 > **[Stacks, Tag 01M4].** For a graded ring `A` and `f ∈ 𝒜 d` homogeneous of positive degree:
 >
@@ -155,7 +155,7 @@ theorem tag01M4 (𝒜 : ℕ → Submodule R A) [GradedAlgebra 𝒜] {f : A} {d :
 
 [Tag 01M5](https://stacks.math.columbia.edu/tag/01M5) in the Stacks Project.
 
-**`ProjectiveSpectrum.IsStandardOpenCover`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjStandardOpenCover.lean, line 61](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjStandardOpenCover.lean#L61).
+**`ProjectiveSpectrum.IsStandardOpenCover`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjStandardOpenCover.lean, line 61](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjStandardOpenCover.lean#L61).
 
 > A finite family of positive-degree homogeneous elements `gᵢ` gives a standard open
 > covering of the projective standard open `D₊(f)` when their standard opens have union
@@ -171,7 +171,7 @@ public abbrev IsStandardOpenCover {A : Type u} {σ : Type v}
 
 [Tag 01M6](https://stacks.math.columbia.edu/tag/01M6) in the Stacks Project.
 
-**`AlgebraicGeometry.ProjectiveSpectrum.Proj.associatedModuleSheafStandardOpenEquiv_restrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistLocalRestriction.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistLocalRestriction.lean#L67). The attribute's comment: “part (3), the standard-open identification intertwines the restriction map of the associated sheaf with the degree-zero restriction map of Tag 01M4”.
+**`AlgebraicGeometry.ProjectiveSpectrum.Proj.associatedModuleSheafStandardOpenEquiv_restrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistLocalRestriction.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjConeTwistLocalRestriction.lean#L67). The attribute's comment: “part (3), the standard-open identification intertwines the restriction map of the associated sheaf with the degree-zero restriction map of Tag 01M4”.
 
 > The standard-open identification `Γ(D₊(f), M̃) = M₍f₎` intertwines the restriction map of
 > `M̃` with the canonical degree-zero restriction map `M₍f₎ → M₍g₎`, for any two positive-degree
@@ -189,7 +189,7 @@ theorem associatedModuleSheafStandardOpenEquiv_restrict (f g : S) {d e : ℕ}
         (associatedModuleSheafStandardOpenEquiv 𝒜 𝒨 hf hd s)
 ```
 
-**`AlgebraicGeometry.ProjectiveSpectrum.Proj.coe_associatedModuleSheafStandardOpenEquiv_smul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjStandardOpenScalars.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjStandardOpenScalars.lean#L82). The attribute's comment: “part (3), the scalar action in the standard-open identification, written out on the underlying elements of the localization”.
+**`AlgebraicGeometry.ProjectiveSpectrum.Proj.coe_associatedModuleSheafStandardOpenEquiv_smul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjStandardOpenScalars.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjStandardOpenScalars.lean#L82). The attribute's comment: “part (3), the scalar action in the standard-open identification, written out on the underlying elements of the localization”.
 
 > The standard-open identification `Γ(D₊(f), M̃) = M₍f₎` is linear for the action of
 > `Γ(P, D₊(f))` read through `AlgebraicGeometry.Proj.awayToSection`, the action on the target being
@@ -206,7 +206,7 @@ theorem coe_associatedModuleSheafStandardOpenEquiv_smul {f : S} {d : ℕ} (hf : 
         ((associatedModuleSheafStandardOpenEquiv 𝒜 𝒨 hf hd s : LocalizedModule.Away f M))
 ```
 
-**`AlgebraicGeometry.ProjectiveSpectrum.Proj.associatedModuleSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjStructureSheaf.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjStructureSheaf.lean#L221). The attribute's comment: “part (3), the sheaf associated to a graded module”. References: SGA 6 VI (2.3.2), “affine base”.
+**`AlgebraicGeometry.ProjectiveSpectrum.Proj.associatedModuleSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjStructureSheaf.lean, line 221](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjStructureSheaf.lean#L221). The attribute's comment: “part (3), the sheaf associated to a graded module”. References: SGA 6 VI (2.3.2), “affine base”.
 
 > The actual sheaf associated to a graded module. Its sections are locally homogeneous
 > fractions of degree zero, and its restrictions are restrictions of dependent functions.
@@ -219,7 +219,7 @@ public noncomputable def associatedModuleSheaf :
         (ProjectiveSpectrum.Proj.structureSheaf 𝒜))
 ```
 
-**`AlgebraicGeometry.ProjectiveSpectrum.Proj.degreeZeroToSection_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjStructureSheaf.lean, line 710](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjStructureSheaf.lean#L710). The attribute's comment: “part (3), injectivity of the standard-open comparison”.
+**`AlgebraicGeometry.ProjectiveSpectrum.Proj.degreeZeroToSection_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjStructureSheaf.lean, line 710](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjStructureSheaf.lean#L710). The attribute's comment: “part (3), injectivity of the standard-open comparison”.
 
 > Distinct degree-zero fractions give distinct sections on a positive-degree standard open.
 
@@ -229,7 +229,7 @@ public theorem degreeZeroToSection_injective {f : S} {d : ℕ}
     Function.Injective (degreeZeroToSection 𝒜 𝒨 f)
 ```
 
-**`AlgebraicGeometry.ProjectiveSpectrum.Proj.degreeZeroToSection_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjStructureSheaf.lean, line 729](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjStructureSheaf.lean#L729). The attribute's comment: “part (3), surjectivity of the standard-open comparison”.
+**`AlgebraicGeometry.ProjectiveSpectrum.Proj.degreeZeroToSection_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjStructureSheaf.lean, line 729](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjStructureSheaf.lean#L729). The attribute's comment: “part (3), surjectivity of the standard-open comparison”.
 
 > Every section on a positive-degree standard open comes from a degree-zero fraction.
 
@@ -239,7 +239,7 @@ public theorem degreeZeroToSection_surjective {f : S} {d : ℕ}
     Function.Surjective (degreeZeroToSection 𝒜 𝒨 f)
 ```
 
-**`AlgebraicGeometry.ProjectiveSpectrum.Proj.associatedModuleSheafStandardOpenEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjStructureSheaf.lean, line 937](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjStructureSheaf.lean#L937). The attribute's comment: “part (3), canonical linear identification on standard opens”.
+**`AlgebraicGeometry.ProjectiveSpectrum.Proj.associatedModuleSheafStandardOpenEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjStructureSheaf.lean, line 937](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjStructureSheaf.lean#L937). The attribute's comment: “part (3), canonical linear identification on standard opens”.
 
 > The canonical linear identification of sections on `D₊(f)` with `M_(f)`.
 > Its inverse is evaluation of a degree-zero fraction in every homogeneous-prime fiber.
@@ -254,14 +254,14 @@ public noncomputable def associatedModuleSheafStandardOpenEquiv {f : S} {d : ℕ
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.ProjectiveSpectrum.Proj.structureSheaf`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.ProjectiveSpectrum.Proj.structureSheaf#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Constructions/ProjStructureSheaf.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjStructureSheaf.lean#L84) (StacksFrontier): “part (1), the structure sheaf”.
-- [`AlgebraicGeometry.Proj.toLocallyRingedSpace`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Proj.toLocallyRingedSpace#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Constructions/ProjStructureSheaf.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjStructureSheaf.lean#L87) (StacksFrontier): “part (2), the homogeneous spectrum as a locally ringed space”.
+- [`AlgebraicGeometry.ProjectiveSpectrum.Proj.structureSheaf`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.ProjectiveSpectrum.Proj.structureSheaf#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Constructions/ProjStructureSheaf.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjStructureSheaf.lean#L84) (StacksFrontier): “part (1), the structure sheaf”.
+- [`AlgebraicGeometry.Proj.toLocallyRingedSpace`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Proj.toLocallyRingedSpace#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Constructions/ProjStructureSheaf.lean, line 87](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjStructureSheaf.lean#L87) (StacksFrontier): “part (2), the homogeneous spectrum as a locally ringed space”.
 
 ## Tag 01M7, a lemma
 
 [Tag 01M7](https://stacks.math.columbia.edu/tag/01M7) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.ProjSheafFunctoriality.shortExact_map_associatedModuleSheafFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjSheafFunctoriality/Exact.lean, line 167](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjSheafFunctoriality/Exact.lean#L167). The attribute's comment: “the functor M ↦ M~ is exact, in its categorical form: a short exact sequence of graded S-modules goes to a short exact sequence of sheaves of modules on Proj S”.
+**`Stacks.AlgebraicGeometry.ProjSheafFunctoriality.shortExact_map_associatedModuleSheafFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjSheafFunctoriality/Exact.lean, line 167](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjSheafFunctoriality/Exact.lean#L167). The attribute's comment: “the functor M ↦ M~ is exact, in its categorical form: a short exact sequence of graded S-modules goes to a short exact sequence of sheaves of modules on Proj S”.
 
 > **Stacks 01M7: the functor `M ↦ M̃` is exact**, in the form that it carries a short exact
 > sequence of graded `S`-modules to a short exact sequence of sheaves of `𝒪_{Proj 𝒮}`-modules.
@@ -276,7 +276,7 @@ public theorem shortExact_map_associatedModuleSheafFunctor
     (T.map (associatedModuleSheafFunctor 𝒮)).ShortExact
 ```
 
-**`Stacks.AlgebraicGeometry.ProjSheafFunctoriality.sections_restriction_stalks_functorial_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjSheafFunctoriality/Statement.lean, line 115](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjSheafFunctoriality/Statement.lean#L115). The attribute's comment: “the tag's assertions in one statement: the sections of the structure sheaf and of the associated sheaf over a positive-degree standard open are the degree-zero localizations `S₍f₎` and `M₍f₎`, the restriction maps between two standard opens are the canonical maps `S₍f₎ → S₍g₎` and `M₍f₎ → M₍g₎` of degree-zero localizations, the stalks at a homogeneous prime are `S₍𝔭₎` and `M₍𝔭₎`, there are canonical maps `S₀ → Γ(Proj S, 𝒪)` and `M₀ → Γ(Proj S, M̃)` fitting both descriptions, every one of these identifications is natural in the graded module, and `M ↦ M̃` is an exact functor”. References: EGA II (2.5.5), “special case”.
+**`Stacks.AlgebraicGeometry.ProjSheafFunctoriality.sections_restriction_stalks_functorial_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjSheafFunctoriality/Statement.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjSheafFunctoriality/Statement.lean#L116). The attribute's comment: “the tag's assertions in one statement: the sections of the structure sheaf and of the associated sheaf over a positive-degree standard open are the degree-zero localizations `S₍f₎` and `M₍f₎`, the restriction maps between two standard opens are the canonical maps `S₍f₎ → S₍g₎` and `M₍f₎ → M₍g₎` of degree-zero localizations, the stalks at a homogeneous prime are `S₍𝔭₎` and `M₍𝔭₎`, there are canonical maps `S₀ → Γ(Proj S, 𝒪)` and `M₀ → Γ(Proj S, M̃)` fitting both descriptions, every one of these identifications is natural in the graded module, and `M ↦ M̃` is an exact functor”. References: EGA II (2.5.5), “special case”.
 
 > **[Stacks, Tag 01M7].** Let `S` be a graded ring, let `M` be a graded `S`-module and let `M̃`
 > be the sheaf of `𝒪_{Proj(S)}`-modules associated to `M`. Then all of the following hold.
@@ -417,7 +417,7 @@ theorem sections_restriction_stalks_functorial_exact :
 
 [Tag 01MA](https://stacks.math.columbia.edu/tag/01MA) in the Stacks Project.
 
-**`AlgebraicGeometry.Proj.exists_homogeneous_awayι_preimage_basicOpen_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjBasicOpen.lean, line 360](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjBasicOpen.lean#L360).
+**`AlgebraicGeometry.Proj.exists_homogeneous_awayι_preimage_basicOpen_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjBasicOpen.lean, line 360](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjBasicOpen.lean#L360).
 
 > **Stacks Project, Tag 01MA.** Let `f` be a homogeneous element of positive degree `m` in a
 > graded ring `A`, and let `g` be an element of the degree-zero localization `A₍f₎`, so that `D(g)`
@@ -442,7 +442,7 @@ public theorem exists_homogeneous_awayι_preimage_basicOpen_eq {f : A} {m : ℕ}
 
 [Tag 01MB](https://stacks.math.columbia.edu/tag/01MB) in the Stacks Project.
 
-**`AlgebraicGeometry.associatedModuleSheaf_isQuasicoherent`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjGradedRing/Basic.lean, line 454](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjGradedRing/Basic.lean#L454). The attribute's comment: “associated graded-module sheaves are quasi-coherent”. References: EGA II (3.2.1), “affine base”; EGA II (3.2.2), “affine base Y”.
+**`AlgebraicGeometry.associatedModuleSheaf_isQuasicoherent`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjGradedRing/Basic.lean, line 454](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjGradedRing/Basic.lean#L454). The attribute's comment: “associated graded-module sheaves are quasi-coherent”. References: EGA II (3.2.1), “affine base”; EGA II (3.2.2), “affine base Y”.
 
 > The sheaf of degree-zero local homogeneous fractions of a graded module on its projective
 > spectrum is quasi-coherent.
@@ -453,7 +453,7 @@ instance associatedModuleSheaf_isQuasicoherent [Decomposition 𝒨] :
       (ProjectiveSpectrum.Proj.associatedModuleSheaf 𝒮 𝒨)
 ```
 
-**`AlgebraicGeometry.ProjectiveSpectrum.Proj.associatedModuleSheaf_isQuasicoherent`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjGradedModuleQcoh/Quasicoherent.lean, line 247](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjGradedModuleQcoh/Quasicoherent.lean#L247). The attribute's comment: “associated graded-module sheaves are quasi-coherent”. References: EGA II (3.2.1), “affine base”; EGA II (3.2.2), “affine base Y”.
+**`AlgebraicGeometry.ProjectiveSpectrum.Proj.associatedModuleSheaf_isQuasicoherent`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjGradedModuleQcoh/Quasicoherent.lean, line 247](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjGradedModuleQcoh/Quasicoherent.lean#L247). The attribute's comment: “associated graded-module sheaves are quasi-coherent”. References: EGA II (3.2.1), “affine base”; EGA II (3.2.2), “affine base Y”.
 
 > The sheaf of degree-zero local homogeneous fractions of a graded module on its projective
 > spectrum is quasi-coherent.
@@ -465,15 +465,15 @@ public instance associatedModuleSheaf_isQuasicoherent :
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Proj`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Proj#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Constructions/ProjGradedRing/Basic.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjGradedRing/Basic.lean#L74) (StacksFrontier): “the projective spectrum is a scheme”. References: EGA II (2.4.1), “(f)”; EGA II (3.1.1); EGA II (3.1.3), “special case”; EGA II (7.4.14), “more general”; EGA II (8.3.1), “special case”; EGA III (3.3.1), “special case”; EGA III (4.3.13); EGA IV (18.12.17).
-- [`AlgebraicGeometry.Proj.basicOpenIsoSpec`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Proj.basicOpenIsoSpec#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Constructions/ProjGradedRing/Basic.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjGradedRing/Basic.lean#L83) (StacksFrontier): “canonical standard-open identification”. References: EGA II (2.3.5); EGA II (2.3.6), “more general”; EGA II (2.4.1); EGA II (3.1.4), “special case”; EGA II (7.4.14), “partial”; SGA 6 VI (2.3.2), “(f), special case”.
-- [`AlgebraicGeometry.Proj.isAffineOpen_basicOpen`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Proj.isAffineOpen_basicOpen#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Constructions/ProjGradedRing/Basic.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjGradedRing/Basic.lean#L90) (StacksFrontier): “standard opens are affine”. References: EGA II (2.4.1), “(f)”; EGA II (3.1.4), “affineness of X\_f over Y”; EGA II (5.5.7), “special case”; SGA 6 VI (2.3.2), “affineness of D₊(f)”.
+- [`AlgebraicGeometry.Proj`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Proj#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Constructions/ProjGradedRing/Basic.lean, line 74](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjGradedRing/Basic.lean#L74) (StacksFrontier): “the projective spectrum is a scheme”. References: EGA II (2.4.1), “(f)”; EGA II (3.1.1); EGA II (3.1.3), “special case”; EGA II (7.4.14), “more general”; EGA II (8.3.1), “special case”; EGA III (3.3.1), “special case”; EGA III (4.3.13); EGA IV (18.12.17).
+- [`AlgebraicGeometry.Proj.basicOpenIsoSpec`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Proj.basicOpenIsoSpec#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Constructions/ProjGradedRing/Basic.lean, line 83](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjGradedRing/Basic.lean#L83) (StacksFrontier): “canonical standard-open identification”. References: EGA II (2.3.5); EGA II (2.3.6), “more general”; EGA II (2.4.1); EGA II (3.1.4), “special case”; EGA II (7.4.14), “partial”; SGA 6 VI (2.3.2), “(f), special case”.
+- [`AlgebraicGeometry.Proj.isAffineOpen_basicOpen`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Proj.isAffineOpen_basicOpen#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Constructions/ProjGradedRing/Basic.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjGradedRing/Basic.lean#L90) (StacksFrontier): “standard opens are affine”. References: EGA II (2.4.1), “(f)”; EGA II (3.1.4), “affineness of X\_f over Y”; EGA II (5.5.7), “special case”; SGA 6 VI (2.3.2), “affineness of D₊(f)”.
 
 ## Tag 01MD, a lemma
 
 [Tag 01MD](https://stacks.math.columbia.edu/tag/01MD) in the Stacks Project.
 
-**`AlgebraicGeometry.Proj.compactSpace_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjQuasiCompact.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjQuasiCompact.lean#L89). The attribute's comment: “quasi-compactness criterion”.
+**`AlgebraicGeometry.Proj.compactSpace_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjQuasiCompact.lean, line 89](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjQuasiCompact.lean#L89). The attribute's comment: “quasi-compactness criterion”.
 
 > The projective spectrum is quasi-compact exactly when finitely many
 > positive-degree homogeneous elements generate an ideal whose radical contains
@@ -487,7 +487,7 @@ public theorem compactSpace_iff :
           (HomogeneousIdeal.irrelevant 𝒮).toIdeal ≤ (Ideal.span (s : Set S)).radical
 ```
 
-**`AlgebraicGeometry.Proj.iSup_basicOpen_eq_top_of_irrelevant_le_radical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjQuasiCompact.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjQuasiCompact.lean#L124). The attribute's comment: “standard-open cover”. References: EGA II (2.3.14), “special case”.
+**`AlgebraicGeometry.Proj.iSup_basicOpen_eq_top_of_irrelevant_le_radical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjQuasiCompact.lean, line 124](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjQuasiCompact.lean#L124). The attribute's comment: “standard-open cover”. References: EGA II (2.3.14), “special case”.
 
 > Elements whose span contains the irrelevant ideal up to radical have
 > standard opens covering the projective spectrum.
@@ -502,7 +502,7 @@ public theorem iSup_basicOpen_eq_top_of_irrelevant_le_radical (s : Finset S)
 
 [Tag 01ME](https://stacks.math.columbia.edu/tag/01ME) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.ProjToSpecZero.toSpecZero_base_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjToSpecZero.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjToSpecZero.lean#L85). The attribute's comment: “the canonical morphism Proj S → Spec S₀, equal on points to 𝔭 ↦ 𝔭 ∩ S₀”.
+**`Stacks.AlgebraicGeometry.ProjToSpecZero.toSpecZero_base_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjToSpecZero.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjToSpecZero.lean#L85). The attribute's comment: “the canonical morphism Proj S → Spec S₀, equal on points to 𝔭 ↦ 𝔭 ∩ S₀”.
 
 > **The canonical morphism `Proj 𝒜 ⟶ Spec 𝒜₀`** is `Proj.toSpecZero 𝒜`, glued from the ring
 > maps `𝒜₀ → S_(f)` on the standard opens. On underlying topological spaces it is the map of the
@@ -519,7 +519,7 @@ theorem toSpecZero_base_eq :
 
 [Tag 01MF](https://stacks.math.columbia.edu/tag/01MF) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.ProjToSpecZero.valuativeCriterion_toSpecZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjToSpecZero.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjToSpecZero.lean#L95). The attribute's comment: “existence and uniqueness parts of the valuative criterion for Proj S → Spec S₀”.
+**`Stacks.AlgebraicGeometry.ProjToSpecZero.valuativeCriterion_toSpecZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjToSpecZero.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjToSpecZero.lean#L95). The attribute's comment: “existence and uniqueness parts of the valuative criterion for Proj S → Spec S₀”.
 
 > **The valuative criterion for `Proj 𝒜 ⟶ Spec 𝒜₀`.** If `S` is finitely generated as an
 > `𝒜₀`-algebra, then for every valuation ring `O` with fraction field `K` and every commutative
@@ -535,7 +535,7 @@ theorem valuativeCriterion_toSpecZero [Algebra.FiniteType (𝒜 0) A] :
 
 [Tag 01MG](https://stacks.math.columbia.edu/tag/01MG) in the Stacks Project.
 
-**`AlgebraicGeometry.FractionalExponentExample.exists_nonextendable_valuative_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjNonextendableValuativeMap.lean, line 572](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjNonextendableValuativeMap.lean#L572).
+**`AlgebraicGeometry.FractionalExponentExample.exists_nonextendable_valuative_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjNonextendableValuativeMap.lean, line 572](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjNonextendableValuativeMap.lean#L572).
 
 > The specified valuative example: the canonical generic-fibre morphism induced by
 > `polynomialMap` cannot be extended to the spectrum of the local valuation ring.
@@ -566,7 +566,7 @@ theorem exists_nonextendable_valuative_map :
 
 [Tag 01MH](https://stacks.math.columbia.edu/tag/01MH) in the Stacks Project.
 
-**`Stacks.IteratedSquareRootAlgebra.projCanonicalProperties`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjIteratedSquareRootImage.lean, line 367](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjIteratedSquareRootImage.lean#L367). The attribute's comment: “the example's six assertions in one statement”.
+**`Stacks.IteratedSquareRootAlgebra.projCanonicalProperties`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjIteratedSquareRootImage.lean, line 367](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjIteratedSquareRootImage.lean#L367). The attribute's comment: “the example's six assertions in one statement”.
 
 > **Stacks Project, Tag 01MH.** The worked example in a single statement, for the grading the
 > source specifies on `S = ℂ[t][X₁, X₂, …]/(Xᵢ² - t Xᵢ₊₁)`, `deg Xᵢ = 2ⁱ⁻¹`. In order: the image
@@ -602,7 +602,7 @@ public theorem projCanonicalProperties :
 
 [Tag 01MI](https://stacks.math.columbia.edu/tag/01MI) in the Stacks Project.
 
-**`AlgebraicGeometry.ProjectiveSpace.isIso_toSpecZero_oneVariable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjOfPolynomialOneVariable.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjOfPolynomialOneVariable.lean#L119).
+**`AlgebraicGeometry.ProjectiveSpace.isIso_toSpecZero_oneVariable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjOfPolynomialOneVariable.lean, line 119](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjOfPolynomialOneVariable.lean#L119).
 
 > **`Proj` of a polynomial ring in one variable is the spectrum of the coefficient ring.** The
 > canonical morphism `Proj A[T] ⟶ Spec A[T]₀` of a graded ring to the spectrum of its degree-zero
@@ -617,7 +617,7 @@ public theorem isIso_toSpecZero_oneVariable :
 
 [Tag 0G5W](https://stacks.math.columbia.edu/tag/0G5W) in the Stacks Project.
 
-**`AlgebraicGeometry.openProjAlgebra`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjOfOpenInAffine.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjOfOpenInAffine.lean#L88). The attribute's comment: “the graded subring”.
+**`AlgebraicGeometry.openProjAlgebra`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjOfOpenInAffine.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjOfOpenInAffine.lean#L88). The attribute's comment: “the graded subring”.
 
 > The subalgebra of `A[T]` generated by `A` and all `f Tⁿ` with `D(f) ⊆ U`.
 
@@ -626,7 +626,7 @@ public noncomputable def openProjAlgebra (U : (Spec (.of A)).Opens) :
     Subalgebra A (MvPolynomial (Fin 1) A)
 ```
 
-**`AlgebraicGeometry.openProjGrading`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjOfOpenInAffine.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjOfOpenInAffine.lean#L95). The attribute's comment: “the homogeneous components”.
+**`AlgebraicGeometry.openProjGrading`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjOfOpenInAffine.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjOfOpenInAffine.lean#L95). The attribute's comment: “the homogeneous components”.
 
 > The degree-`n` piece of the indicated subalgebra, inherited from polynomial degree.
 
@@ -635,7 +635,7 @@ public noncomputable def openProjGrading (U : (Spec (.of A)).Opens) (n : ℕ) :
     Submodule A (openProjAlgebra U)
 ```
 
-**`AlgebraicGeometry.openProjGradedRing`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjOfOpenInAffine.lean, line 238](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjOfOpenInAffine.lean#L238). The attribute's comment: “the grading”.
+**`AlgebraicGeometry.openProjGradedRing`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjOfOpenInAffine.lean, line 238](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjOfOpenInAffine.lean#L238). The attribute's comment: “the grading”.
 
 > The polynomial-degree decomposition restricts to the algebra of the open.
 
@@ -644,7 +644,7 @@ public noncomputable def openProjGradedRing (U : (Spec (.of A)).Opens) :
     GradedRing (openProjGrading U)
 ```
 
-**`AlgebraicGeometry.openProjDegreeZeroEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjOfOpenInAffine.lean, line 265](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjOfOpenInAffine.lean#L265). The attribute's comment: “the degree-zero ring”.
+**`AlgebraicGeometry.openProjDegreeZeroEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjOfOpenInAffine.lean, line 265](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjOfOpenInAffine.lean#L265). The attribute's comment: “the degree-zero ring”.
 
 > The canonical identification of the degree-zero part with the coefficient ring.
 
@@ -654,7 +654,7 @@ public noncomputable def openProjDegreeZeroEquiv (U : (Spec (.of A)).Opens) :
     A ≃+* openProjGrading U 0
 ```
 
-**`AlgebraicGeometry.openProjDegreeZeroEquiv_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjOfOpenInAffine.lean, line 306](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjOfOpenInAffine.lean#L306). The attribute's comment: “the canonical degree-zero identification”.
+**`AlgebraicGeometry.openProjDegreeZeroEquiv_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjOfOpenInAffine.lean, line 306](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjOfOpenInAffine.lean#L306). The attribute's comment: “the canonical degree-zero identification”.
 
 > The degree-zero identification sends a coefficient to its image in the subalgebra.
 
@@ -665,7 +665,7 @@ public theorem openProjDegreeZeroEquiv_apply (U : (Spec (.of A)).Opens) (a : A) 
       algebraMap A (openProjAlgebra U) a
 ```
 
-**`AlgebraicGeometry.projOpenIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjOfOpenInAffine.lean, line 1033](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjOfOpenInAffine.lean#L1033). The attribute's comment: “the isomorphism with the open subscheme”.
+**`AlgebraicGeometry.projOpenIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjOfOpenInAffine.lean, line 1033](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjOfOpenInAffine.lean#L1033). The attribute's comment: “the isomorphism with the open subscheme”.
 
 > The projective spectrum of the indicated algebra is the chosen open subscheme.
 
@@ -675,7 +675,7 @@ public noncomputable def projOpenIso (U : (Spec (.of A)).Opens) :
     AlgebraicGeometry.Proj (openProjGrading U) ≅ U.toScheme
 ```
 
-**`AlgebraicGeometry.projOpenIso_hom_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjOfOpenInAffine.lean, line 1043](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Constructions/ProjOfOpenInAffine.lean#L1043). The attribute's comment: “compatibility with the structure morphism”.
+**`AlgebraicGeometry.projOpenIso_hom_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Constructions/ProjOfOpenInAffine.lean, line 1043](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Constructions/ProjOfOpenInAffine.lean#L1043). The attribute's comment: “compatibility with the structure morphism”.
 
 > Under the isomorphism, the canonical morphism to `Spec A` is inclusion.
 
@@ -694,4 +694,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 27.8, Tag 01M3](https://stacks.math.columbia.edu/tag/01M3)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

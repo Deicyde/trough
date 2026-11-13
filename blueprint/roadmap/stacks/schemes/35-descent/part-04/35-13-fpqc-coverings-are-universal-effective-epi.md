@@ -8,13 +8,13 @@ proof: formalized
 
 # 35.13 Fpqc coverings are universal effective epimorphisms
 
-Section 35.13 of the Stacks Project, [Tag 023P](https://stacks.math.columbia.edu/tag/023P). 8 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 35.13 of the Stacks Project, [Tag 023P](https://stacks.math.columbia.edu/tag/023P). 8 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 02KI, a lemma
 
 [Tag 02KI](https://stacks.math.columbia.edu/tag/02KI) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.pullbackComparison_forget_self_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/EffectiveEpi/Points.lean, line 43](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/EffectiveEpi/Points.lean#L43).
+**`AlgebraicGeometry.Scheme.pullbackComparison_forget_self_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/EffectiveEpi/Points.lean, line 43](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/EffectiveEpi/Points.lean#L43).
 
 > **Stacks 02KI.** For a morphism of schemes `f : X ⟶ S` the natural map
 > `|X ×_S X| → |X| ×_{|S|} |X|` of underlying sets is surjective.
@@ -28,7 +28,7 @@ public theorem pullbackComparison_forget_self_surjective {X S : Scheme.{u}} (f :
 
 [Tag 0EUA](https://stacks.math.columbia.edu/tag/0EUA) in the Stacks Project.
 
-**`AlgebraicGeometry.quasicoherentSectionsEqualizer_iff_isUniversalEffectiveEpiFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/EffectiveEpi/QuasicoherentSectionsEqualizer/UniversalEffectiveEpi.lean, line 787](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/EffectiveEpi/QuasicoherentSectionsEqualizer/UniversalEffectiveEpi.lean#L787).
+**`AlgebraicGeometry.quasicoherentSectionsEqualizer_iff_isUniversalEffectiveEpiFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/EffectiveEpi/QuasicoherentSectionsEqualizer/UniversalEffectiveEpi.lean, line 784](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/EffectiveEpi/QuasicoherentSectionsEqualizer/UniversalEffectiveEpi.lean#L784).
 
 > **Stacks Project, Tag 0EUA.** A family of morphisms of affine schemes satisfies the
 > global-section equalizer condition for every quasi-coherent module if and only if it is a
@@ -46,7 +46,7 @@ theorem quasicoherentSectionsEqualizer_iff_isUniversalEffectiveEpiFamily
 
 [Tag 0EUB](https://stacks.math.columbia.edu/tag/0EUB) in the Stacks Project.
 
-**`AlgebraicGeometry.jointlySurjective_of_isUniversalEffectiveEpiFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/EffectiveEpi/Surjective.lean, line 56](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/EffectiveEpi/Surjective.lean#L56). The attribute's comment: “schemes\_surjective”. References: SGA 3 IV (6.7.2), “univ. eff. epi ⇒ surj”; SGA 3 IV (1.3), “special case”.
+**`AlgebraicGeometry.jointlySurjective_of_isUniversalEffectiveEpiFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/EffectiveEpi/Surjective.lean, line 56](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/EffectiveEpi/Surjective.lean#L56). The attribute's comment: “schemes\_surjective”. References: SGA 3 IV (6.7.2), “univ. eff. epi ⇒ surj”; SGA 3 IV (1.3), “special case”.
 
 > A universal effective epimorphic family of schemes is jointly surjective
 > on the underlying spaces.
@@ -59,7 +59,7 @@ theorem jointlySurjective_of_isUniversalEffectiveEpiFamily
     ∀ x : X, ∃ i, x ∈ Set.range (f i)
 ```
 
-**`AlgebraicGeometry.exists_preimage_of_isUniversalEffectiveEpiFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/EffectiveEpi/Surjective.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/EffectiveEpi/Surjective.lean#L74). The attribute's comment: “affine\_schemes\_surjective”. References: SGA 3 IV (6.7.2), “affine case”.
+**`AlgebraicGeometry.exists_preimage_of_isUniversalEffectiveEpiFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/EffectiveEpi/Surjective.lean, line 74](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/EffectiveEpi/Surjective.lean#L74). The attribute's comment: “affine\_schemes\_surjective”. References: SGA 3 IV (6.7.2), “affine case”.
 
 > A universal effective epimorphic family of affine schemes is jointly surjective.
 
@@ -76,7 +76,7 @@ theorem exists_preimage_of_isUniversalEffectiveEpiFamily
 
 [Tag 0EUC](https://stacks.math.columbia.edu/tag/0EUC) in the Stacks Project.
 
-**`AlgebraicGeometry.isUniversalEffectiveEpiFamily_of_affine_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/EffectiveEpi/AffineBase.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/EffectiveEpi/AffineBase.lean#L100).
+**`AlgebraicGeometry.isUniversalEffectiveEpiFamily_of_affine_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/EffectiveEpi/AffineBase.lean, line 100](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/EffectiveEpi/AffineBase.lean#L100).
 
 > A family of morphisms of schemes is universally effective epimorphic if all its
 > base changes to affine schemes are effective epimorphic families.
@@ -94,7 +94,7 @@ theorem isUniversalEffectiveEpiFamily_of_affine_baseChange
 
 [Tag 0EUD](https://stacks.math.columbia.edu/tag/0EUD) in the Stacks Project.
 
-**`AlgebraicGeometry.isUniversalEffectiveEpiFamily_of_affine_of_submersive`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/EffectiveEpi/FromAffine.lean, line 403](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/EffectiveEpi/FromAffine.lean#L403).
+**`AlgebraicGeometry.isUniversalEffectiveEpiFamily_of_affine_of_submersive`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/EffectiveEpi/FromAffine.lean, line 403](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/EffectiveEpi/FromAffine.lean#L403).
 
 > **Stacks Project, Tag 0EUD.** A universally effective epimorphic family of affine
 > schemes whose every affine base change is submersive is a universally effective
@@ -118,7 +118,7 @@ public theorem isUniversalEffectiveEpiFamily_of_affine_of_submersive
 
 [Tag 03N0](https://stacks.math.columbia.edu/tag/03N0) in the Stacks Project.
 
-**`AlgebraicGeometry.existsUnique_isOpen_preimage_eq_of_mem_fpqcPrecoverage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/OpenSubsetFpqc.lean, line 202](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/OpenSubsetFpqc.lean#L202). References: SGA 1 VIII (4.4), “more general”.
+**`AlgebraicGeometry.existsUnique_isOpen_preimage_eq_of_mem_fpqcPrecoverage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/OpenSubsetFpqc.lean, line 202](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/OpenSubsetFpqc.lean#L202). References: SGA 1 VIII (4.4), “more general”.
 
 > **Stacks 03N0.** Let `{f i : X i ⟶ T}` be an fpqc covering of schemes and let `W i` be an
 > open subset of `X i` for each `i`, such that the two projections of `X i ×_T X j` pull `W i` and
@@ -134,7 +134,7 @@ theorem existsUnique_isOpen_preimage_eq_of_mem_fpqcPrecoverage {I : Type v} {T :
     ∃! V : T.Opens, ∀ i, f i ⁻¹ᵁ V = W i
 ```
 
-**`AlgebraicGeometry.existsUnique_isOpen_preimage_eq_of_flat_of_quasiCompact_of_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/OpenSubsetSingleMorphism.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/OpenSubsetSingleMorphism.lean#L60). The attribute's comment: “covering by a single surjective flat quasi-compact morphism”.
+**`AlgebraicGeometry.existsUnique_isOpen_preimage_eq_of_flat_of_quasiCompact_of_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/OpenSubsetSingleMorphism.lean, line 60](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/OpenSubsetSingleMorphism.lean#L60). The attribute's comment: “covering by a single surjective flat quasi-compact morphism”.
 
 > **An open subset descends along a surjective flat quasi-compact morphism.** Let
 > `f : T' ⟶ T` be a surjective, flat, quasi-compact morphism of schemes and let `W' ⊆ T'` be open
@@ -148,7 +148,7 @@ theorem existsUnique_isOpen_preimage_eq_of_flat_of_quasiCompact_of_surjective {W
     ∃! W : Set T, IsOpen W ∧ f.base ⁻¹' W = W'
 ```
 
-**`AlgebraicGeometry.existsUnique_opens_preimage_eq_of_flat_of_quasiCompact_of_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/OpenSubsetSingleMorphism.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/OpenSubsetSingleMorphism.lean#L78). The attribute's comment: “covering by a single surjective flat quasi-compact morphism, as open subschemes”.
+**`AlgebraicGeometry.existsUnique_opens_preimage_eq_of_flat_of_quasiCompact_of_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/OpenSubsetSingleMorphism.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/OpenSubsetSingleMorphism.lean#L78). The attribute's comment: “covering by a single surjective flat quasi-compact morphism, as open subschemes”.
 
 > **An open subscheme descends along a surjective flat quasi-compact morphism.** For
 > `f : T' ⟶ T` surjective, flat and quasi-compact, an open subscheme `W'` of `T'` whose two
@@ -165,7 +165,7 @@ theorem existsUnique_opens_preimage_eq_of_flat_of_quasiCompact_of_surjective (W'
 
 [Tag 023Q](https://stacks.math.columbia.edu/tag/023Q) in the Stacks Project.
 
-**`isUniversalEffectiveEpi_of_isFpqcCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Representable/EffectiveEpiFamily.lean, line 365](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Representable/EffectiveEpiFamily.lean#L365). The attribute's comment: “every fpqc covering family of schemes is a universal effective epimorphism, in the unpacked equalizer form of Stacks 00WP: along every base change of the family, a morphism to any scheme is determined by, and glues from, a pullback-compatible family on the members”. References: SGA 1 VIII (5.3), “more general”; SGA 3 IV (3.4), “more general”; SGA 3 IV (6.3.1), “(iii), fpqc case (T1)”; SGA 3 IX (5.4), “more general”; SGA 3 XI (3.9), “partial”.
+**`isUniversalEffectiveEpi_of_isFpqcCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Representable/EffectiveEpiFamily.lean, line 365](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Representable/EffectiveEpiFamily.lean#L365). The attribute's comment: “every fpqc covering family of schemes is a universal effective epimorphism, in the unpacked equalizer form of Stacks 00WP: along every base change of the family, a morphism to any scheme is determined by, and glues from, a pullback-compatible family on the members”. References: SGA 1 VIII (5.3), “more general”; SGA 3 IV (3.4), “more general”; SGA 3 IV (6.3.1), “(iii), fpqc case (T1)”; SGA 3 IX (5.4), “more general”; SGA 3 XI (3.9), “partial”.
 
 > **Main statement (Stacks Tag 023Q).**
 > Every fpqc covering of schemes is a universal effective epimorphism in the category of
@@ -182,7 +182,7 @@ theorem isUniversalEffectiveEpi_of_isFpqcCovering
 
 [Tag 0BMN](https://stacks.math.columbia.edu/tag/0BMN) in the Stacks Project.
 
-**`AlgebraicGeometry.isColimit_cofork_of_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/EffectiveEpi/FpqcCoequalizer.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/EffectiveEpi/FpqcCoequalizer.lean#L65).
+**`AlgebraicGeometry.isColimit_cofork_of_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/EffectiveEpi/FpqcCoequalizer.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/EffectiveEpi/FpqcCoequalizer.lean#L65).
 
 > **Stacks Project, Tag 0BMN.** A coequalizer of schemes can be checked after an fpqc
 > covering provided it is also a coequalizer on every pairwise overlap.
@@ -204,4 +204,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 35.13, Tag 023P](https://stacks.math.columbia.edu/tag/023P)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

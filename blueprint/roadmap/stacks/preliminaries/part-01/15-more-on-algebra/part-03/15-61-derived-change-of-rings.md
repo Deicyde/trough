@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.61 Derived change of rings
 
-Section 15.61 of the Stacks Project, [Tag 06Y5](https://stacks.math.columbia.edu/tag/06Y5). 5 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.61 of the Stacks Project, [Tag 06Y5](https://stacks.math.columbia.edu/tag/06Y5). 5 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 06Y6, a lemma
 
 [Tag 06Y6](https://stacks.math.columbia.edu/tag/06Y6) in the Stacks Project.
 
-**`CochainComplex.DerivedTensor.canonicalDerivedTensorChangeOfRings`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Tor/DerivedChangeOfRings.lean, line 1057](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Tor/DerivedChangeOfRings.lean#L1057).
+**`CochainComplex.DerivedTensor.canonicalDerivedTensorChangeOfRings`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Tor/DerivedChangeOfRings.lean, line 1057](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Tor/DerivedChangeOfRings.lean#L1057).
 
 > The derived tensor product `- ⊗ᴸ_R N` from `D(R)` to `D(A)`, with derived extension of
 > scalars, derived tensoring over `A` and the change-of-rings isomorphism normalized by their
@@ -33,7 +33,7 @@ public noncomputable def canonicalDerivedTensorChangeOfRings
 
 [Tag 0BYK](https://stacks.math.columbia.edu/tag/0BYK) in the Stacks Project.
 
-**`CochainComplex.DerivedTensor.exists_derivedTensorNatTrans_isIso_of_quasiIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Tor/DerivedTensorFunctoriality.lean, line 115](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Tor/DerivedTensorFunctoriality.lean#L115).
+**`CochainComplex.DerivedTensor.exists_derivedTensorNatTrans_isIso_of_quasiIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Tor/DerivedTensorFunctoriality.lean, line 115](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Tor/DerivedTensorFunctoriality.lean#L115).
 
 > A map `f : L ⟶ N` of complexes of `A`-modules induces a natural
 > transformation `1 ⊗ᴸ f` between any chosen left-derived models of the change-of-rings tensor
@@ -86,7 +86,7 @@ public theorem exists_derivedTensorNatTrans_isIso_of_quasiIso
 
 [Tag 0GMT](https://stacks.math.columbia.edu/tag/0GMT) in the Stacks Project.
 
-**`CochainComplex.DerivedExtensionScalars.derivedExtensionScalarsAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Tor/DerivedChangeOfRingsAdjunction.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Tor/DerivedChangeOfRingsAdjunction.lean#L99).
+**`CochainComplex.DerivedExtensionScalars.derivedExtensionScalarsAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Tor/DerivedChangeOfRingsAdjunction.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Tor/DerivedChangeOfRingsAdjunction.lean#L99).
 
 > **Stacks 0GMT.** Derived extension of scalars along a homomorphism of commutative rings is
 > left adjoint to derived restriction of scalars. The extension functor may be any model equipped
@@ -118,7 +118,7 @@ public def derivedExtensionScalarsAdjunction
 
 [Tag 08YT](https://stacks.math.columbia.edu/tag/08YT) in the Stacks Project.
 
-**`CochainComplex.DerivedChangeOfRings.derivedTensorModuleStructuresDiffer`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Tor/ChangeOfRings.lean, line 574](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Tor/ChangeOfRings.lean#L574).
+**`CochainComplex.DerivedChangeOfRings.derivedTensorModuleStructuresDiffer`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Tor/ChangeOfRings.lean, line 574](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Tor/ChangeOfRings.lean#L574).
 
 > In the example `R = k[x,y]`, `A = R/(xy)`, and `N = R/(x)`, the objects
 > `N_R ⊗_R^ᴸ A` and `N ⊗_R^ᴸ A_R` of `D(A)` are not isomorphic. The returned data
@@ -135,7 +135,7 @@ public noncomputable def derivedTensorModuleStructuresDiffer
 
 [Tag 08YU](https://stacks.math.columbia.edu/tag/08YU) in the Stacks Project.
 
-**`CochainComplex.DerivedTensor.IteratedChangeOfRings.derivedTensorProduct_doubleBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Tor/IteratedDerivedChangeOfRings.lean, line 1174](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Tor/IteratedDerivedChangeOfRings.lean#L1174).
+**`CochainComplex.DerivedTensor.IteratedChangeOfRings.derivedTensorProduct_doubleBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Tor/IteratedDerivedChangeOfRings.lean, line 1174](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Tor/IteratedDerivedChangeOfRings.lean#L1174).
 
 > Canonical associativity of derived change of rings, with its signed interchange. The
 > ordinary maps send `(x ⊗ n) ⊗ k` to `x ⊗ (n ⊗ k)` and to `(-1)^(deg n * deg k) (x ⊗ k) ⊗ n`,
@@ -240,4 +240,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.61, Tag 06Y5](https://stacks.math.columbia.edu/tag/06Y5)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

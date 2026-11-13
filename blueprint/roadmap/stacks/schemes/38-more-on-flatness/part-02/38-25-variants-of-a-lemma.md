@@ -8,13 +8,13 @@ proof: formalized
 
 # 38.25 Variants of a lemma
 
-Section 38.25 of the Stacks Project, [Tag 0ASZ](https://stacks.math.columbia.edu/tag/0ASZ). 14 tags here are carried by 21 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 38.25 of the Stacks Project, [Tag 0ASZ](https://stacks.math.columbia.edu/tag/0ASZ). 14 tags here are carried by 23 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0AT0, a situation
 
 [Tag 0AT0](https://stacks.math.columbia.edu/tag/0AT0) in the Stacks Project.
 
-**`AlgebraicGeometry.InjectiveModuloMaximalIdealSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/MaximalIdealInjectivity.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/MaximalIdealInjectivity.lean#L60).
+**`AlgebraicGeometry.InjectiveModuloMaximalIdealSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/MaximalIdealInjectivity.lean, line 60](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/MaximalIdealInjectivity.lean#L60).
 
 > The standing data and hypotheses of Stacks Project, Tag 0AT0: a local homomorphism
 > `A → B` of local rings which is essentially of finite type, a flat `A`-module `M`, a finite
@@ -29,7 +29,7 @@ structure InjectiveModuloMaximalIdealSituation
 
 [Tag 0AT1](https://stacks.math.columbia.edu/tag/0AT1) in the Stacks Project.
 
-**`AlgebraicGeometry.universallyInjective_of_isNoetherianRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/MaximalIdealInjectivity.lean, line 152](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/MaximalIdealInjectivity.lean#L152). The attribute's comment: “universal injectivity”.
+**`AlgebraicGeometry.universallyInjective_of_isNoetherianRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/MaximalIdealInjectivity.lean, line 152](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/MaximalIdealInjectivity.lean#L152). The attribute's comment: “universal injectivity”.
 
 > **Stacks Project, Tag 0AT1.** In Situation 0AT0 over a Noetherian base, the given map is
 > universally injective over the base ring.
@@ -40,7 +40,7 @@ theorem universallyInjective_of_isNoetherianRing
     [IsNoetherianRing S.A] : UniversallyInjectivePoly S.u
 ```
 
-**`AlgebraicGeometry.flat_of_isNoetherianRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/MaximalIdealInjectivity.lean, line 161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/MaximalIdealInjectivity.lean#L161). The attribute's comment: “flatness”.
+**`AlgebraicGeometry.flat_of_isNoetherianRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/MaximalIdealInjectivity.lean, line 161](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/MaximalIdealInjectivity.lean#L161). The attribute's comment: “flatness”.
 
 > **Stacks Project, Tag 0AT1.** In Situation 0AT0 over a Noetherian base, the source module
 > is flat over the base ring.
@@ -53,13 +53,13 @@ theorem flat_of_isNoetherianRing
 
 Declarations registered for the tag:
 
-- [`Module.finitePresentation_of_finite`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Module.finitePresentation_of_finite#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/MaximalIdealInjectivity.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/MaximalIdealInjectivity.lean#L124) (StacksFrontier): “finite presentation”. References: EGA 0 (1.0.5), “more general”; EGA 0 (1.3.5), “more general”.
+- [`Module.finitePresentation_of_finite`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Module.finitePresentation_of_finite#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/MaximalIdealInjectivity.lean, line 124](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/MaximalIdealInjectivity.lean#L124) (StacksFrontier): “finite presentation”. References: EGA 0 (1.0.5), “more general”; EGA 0 (1.3.5), “more general”.
 
 ## Tag 0AT2, a lemma
 
 [Tag 0AT2](https://stacks.math.columbia.edu/tag/0AT2) in the Stacks Project.
 
-**`AlgebraicGeometry.universallyInjective_of_localizedPolynomial_cases`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/PolynomialLocalizationReduction.lean, line 546](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/PolynomialLocalizationReduction.lean#L546). The attribute's comment: “universal injectivity”.
+**`AlgebraicGeometry.universallyInjective_of_localizedPolynomial_cases`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/PolynomialLocalizationReduction.lean, line 546](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/PolynomialLocalizationReduction.lean#L546). The attribute's comment: “universal injectivity”.
 
 > Universal injectivity in Situation 0AT0 reduces to the case of a localization of a finite
 > polynomial algebra with finitely presented source module.
@@ -74,7 +74,7 @@ theorem universallyInjective_of_localizedPolynomial_cases
     UniversallyInjectivePoly.{_, u₅} S.u
 ```
 
-**`AlgebraicGeometry.finitePresentation_of_localizedPolynomial_cases`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/PolynomialLocalizationReduction.lean, line 558](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/PolynomialLocalizationReduction.lean#L558). The attribute's comment: “finite presentation”.
+**`AlgebraicGeometry.finitePresentation_of_localizedPolynomial_cases`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/PolynomialLocalizationReduction.lean, line 558](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/PolynomialLocalizationReduction.lean#L558). The attribute's comment: “finite presentation”.
 
 > Finite presentation in Situation 0AT0 reduces to the case of a localization of a finite
 > polynomial algebra with finitely presented source module.
@@ -89,7 +89,7 @@ theorem finitePresentation_of_localizedPolynomial_cases
     Module.FinitePresentation S.B S.N
 ```
 
-**`AlgebraicGeometry.flat_of_localizedPolynomial_cases`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/PolynomialLocalizationReduction.lean, line 570](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/PolynomialLocalizationReduction.lean#L570). The attribute's comment: “flatness”.
+**`AlgebraicGeometry.flat_of_localizedPolynomial_cases`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/PolynomialLocalizationReduction.lean, line 570](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/PolynomialLocalizationReduction.lean#L570). The attribute's comment: “flatness”.
 
 > Flatness in Situation 0AT0 reduces to the case of a localization of a finite polynomial
 > algebra with finitely presented source module.
@@ -108,7 +108,7 @@ theorem flat_of_localizedPolynomial_cases
 
 [Tag 0AT3](https://stacks.math.columbia.edu/tag/0AT3) in the Stacks Project.
 
-**`AlgebraicGeometry.injectiveModuloMaximalIdealConclusion_of_henselianLocalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/HenselianBase.lean, line 273](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/HenselianBase.lean#L273).
+**`AlgebraicGeometry.injectiveModuloMaximalIdealConclusion_of_henselianLocalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/HenselianBase.lean, line 273](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/HenselianBase.lean#L273).
 
 > **Stacks Project, Tag 0AT3.** In Situation 0AT0 with `A` henselian the lemma holds: if
 > `A → B` is a local homomorphism of local rings essentially of finite type, `M` is a flat
@@ -126,7 +126,7 @@ theorem injectiveModuloMaximalIdealConclusion_of_henselianLocalRing
 
 [Tag 0AT4](https://stacks.math.columbia.edu/tag/0AT4) in the Stacks Project.
 
-**`AlgebraicGeometry.universallyInjective_and_finitePresentation_and_flat_of_linearMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/HenselizationReduction.lean, line 322](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/HenselizationReduction.lean#L322). The attribute's comment: “`N/𝔪_A N → M/𝔪_A M` is the `Submodule.mapQ` of `u` for `𝔪_A • ⊤`, and `A`-universal injectivity is `UniversallyInjectivePoly` of `u` with scalars restricted to `A`.”.
+**`AlgebraicGeometry.universallyInjective_and_finitePresentation_and_flat_of_linearMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/HenselizationReduction.lean, line 317](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/HenselizationReduction.lean#L317). The attribute's comment: “`N/𝔪_A N → M/𝔪_A M` is the `Submodule.mapQ` of `u` for `𝔪_A • ⊤`, and `A`-universal injectivity is `UniversallyInjectivePoly` of `u` with scalars restricted to `A`.”.
 
 > **Stacks Project, Tag 0AT4.** Let `A → B` be a local homomorphism of local rings which is
 > essentially of finite type and let `u : N → M` be a `B`-linear map. If `N` is a finite
@@ -156,7 +156,7 @@ theorem universallyInjective_and_finitePresentation_and_flat_of_linearMap
 
 [Tag 0AT5](https://stacks.math.columbia.edu/tag/0AT5) in the Stacks Project.
 
-**`AlgebraicGeometry.flat_of_valuationRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/ValuationRingBase.lean, line 241](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/ValuationRingBase.lean#L241). The attribute's comment: “the flatness assertion of `the lemma' for Situation 0AT0: in Situation 0AT0 with `A` a valuation ring, `N` is flat over `A`. Proved from 0AT0's own hypotheses together with `ValuationRing A`.”.
+**`AlgebraicGeometry.flat_of_valuationRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/ValuationRingBase.lean, line 234](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/ValuationRingBase.lean#L234). The attribute's comment: “flatness”.
 
 > **Stacks Project, Tag 0AT5 (flatness).** In Situation 0AT0 with the base ring `A` a
 > valuation ring, the finite `B`-module `N` is flat over `A`.
@@ -167,7 +167,7 @@ theorem flat_of_valuationRing
     [IsDomain S.A] [ValuationRing S.A] : Module.Flat S.A S.N
 ```
 
-**`AlgebraicGeometry.finitePresentation_of_valuationRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/ValuationRingBase.lean, line 252](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/ValuationRingBase.lean#L252). The attribute's comment: “the finite-presentation assertion of `the lemma' for Situation 0AT0: in Situation 0AT0 with `A` a valuation ring, `N` is of finite presentation over `B`. Proved from 0AT0's own hypotheses together with `ValuationRing A`.”.
+**`AlgebraicGeometry.finitePresentation_of_valuationRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/ValuationRingBase.lean, line 243](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/ValuationRingBase.lean#L243). The attribute's comment: “finite presentation”.
 
 > **Stacks Project, Tag 0AT5 (finite presentation).** In Situation 0AT0 with the base ring
 > `A` a valuation ring, the finite `B`-module `N` is of finite presentation over `B`.
@@ -178,11 +178,34 @@ theorem finitePresentation_of_valuationRing
     [IsDomain S.A] [ValuationRing S.A] : Module.FinitePresentation S.B S.N
 ```
 
+**`AlgebraicGeometry.universallyInjective_of_valuationRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/ValuationRingBaseUniversalInjectivity.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/ValuationRingBaseUniversalInjectivity.lean#L101). The attribute's comment: “universal injectivity”.
+
+> **Stacks Project, Tag 0AT5 (universal injectivity).** In Situation 0AT0 with the base ring
+> `A` a valuation ring, the map `u : N → M` is `A`-universally injective.
+
+```lean
+theorem universallyInjective_of_valuationRing
+    (S : InjectiveModuloMaximalIdealSituation.{u₁, u₂, u₃, u₄})
+    [IsDomain S.A] [ValuationRing S.A] : UniversallyInjectivePoly.{_, u₅} S.u
+```
+
+**`AlgebraicGeometry.injectiveModuloMaximalIdealConclusion_of_valuationRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/ValuationRingBaseUniversalInjectivity.lean, line 121](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/ValuationRingBaseUniversalInjectivity.lean#L121).
+
+> **Stacks Project, Tag 0AT5.** If in Situation 0AT0 the ring `A` is a valuation ring, then the
+> lemma holds: `u : N → M` is `A`-universally injective, `N` is of finite presentation over `B`,
+> and `N` is flat over `A`.
+
+```lean
+theorem injectiveModuloMaximalIdealConclusion_of_valuationRing
+    (S : InjectiveModuloMaximalIdealSituation.{u₁, u₂, u₃, u₄})
+    [IsDomain S.A] [ValuationRing S.A] : InjectiveModuloMaximalIdealConclusion.{u₅} S
+```
+
 ## Tag 0AT6, an equation
 
 [Tag 0AT6](https://stacks.math.columbia.edu/tag/0AT6) in the Stacks Project.
 
-**`AlgebraicGeometry.FinitelyPresentedLocalizedModuleSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/LocalizedModuleSpreadout.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/LocalizedModuleSpreadout.lean#L60).
+**`AlgebraicGeometry.FinitelyPresentedLocalizedModuleSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/LocalizedModuleSpreadout.lean, line 60](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/LocalizedModuleSpreadout.lean#L60).
 
 > **Stacks Project, Tag 0AT6.** The standing situation of a finitely presented algebra `B`
 > over `A`, a multiplicative subset `S ⊆ B`, and a finitely presented module over a
@@ -196,7 +219,7 @@ structure FinitelyPresentedLocalizedModuleSituation
 
 [Tag 0AT7](https://stacks.math.columbia.edu/tag/0AT7) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isContentIdeal_of_pureSpreadout`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/ContentIdeals.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/ContentIdeals.lean#L125). The attribute's comment: “content\_ideals”.
+**`AlgebraicGeometry.exists_isContentIdeal_of_pureSpreadout`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/ContentIdeals.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/ContentIdeals.lean#L125). The attribute's comment: “content\_ideals”.
 
 > **Stacks Project, Tag 0AT7.** If a pure spreadout exists, every element of the localized
 > module has a content ideal over the base ring.
@@ -208,7 +231,7 @@ theorem exists_isContentIdeal_of_pureSpreadout
     ∃ I : Ideal X.A, IsContentIdeal x I
 ```
 
-**`AlgebraicGeometry.universallyInjective_of_injective_mod_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/UniversalInjectivity.lean, line 312](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/UniversalInjectivity.lean#L312). The attribute's comment: “universal\_injectivity”.
+**`AlgebraicGeometry.universallyInjective_of_injective_mod_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/UniversalInjectivity.lean, line 312](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/UniversalInjectivity.lean#L312). The attribute's comment: “universal\_injectivity”.
 
 > **Stacks Project, Tag 0AT7 (universal injectivity).** A map into a flat
 > module which is injective modulo each maximal ideal is universally injective,
@@ -232,7 +255,7 @@ theorem universallyInjective_of_injective_mod_maximalIdeal
 
 [Tag 0AT8](https://stacks.math.columbia.edu/tag/0AT8) in the Stacks Project.
 
-**`AlgebraicGeometry.FinitelyPresentedLocalizedModuleSituation.exists_fg_ideal_localQuotientBaseChange_pureSpreadout`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/PureSpreadoutQuotient.lean, line 495](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/PureSpreadoutQuotient.lean#L495).
+**`AlgebraicGeometry.FinitelyPresentedLocalizedModuleSituation.exists_fg_ideal_localQuotientBaseChange_pureSpreadout`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/PureSpreadoutQuotient.lean, line 493](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/PureSpreadoutQuotient.lean#L493).
 
 > **Stacks Project, Tag 0AT8.** In the standing situation of Stacks 0AT6, for every prime `𝔭` of
 > the base ring there is a finitely generated ideal `I` of the local ring `A_𝔭`, contained in the
@@ -255,7 +278,7 @@ theorem exists_fg_ideal_localQuotientBaseChange_pureSpreadout (p : Ideal X.A) [p
 
 [Tag 0AT9](https://stacks.math.columbia.edu/tag/0AT9) in the Stacks Project.
 
-**`AlgebraicGeometry.universallyInjective_of_rTensor_residueField_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/PureSpreadoutQuotient.lean, line 531](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/PureSpreadoutQuotient.lean#L531).
+**`AlgebraicGeometry.universallyInjective_of_rTensor_residueField_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/PureSpreadoutQuotient.lean, line 529](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/PureSpreadoutQuotient.lean#L529).
 
 > **Stacks Project, Tag 0AT9**, unconditionally. In the finitely presented localized-module
 > situation, a linear map between flat modules which is injective on every residue-field fibre is
@@ -280,7 +303,7 @@ theorem universallyInjective_of_rTensor_residueField_injective
 
 [Tag 0ATA](https://stacks.math.columbia.edu/tag/0ATA) in the Stacks Project.
 
-**`PrimeSpectrum.sInf_eq_bot_of_iUnion_zeroLocus_eq_compl_genericPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/ZeroLocusOnLocalSpectrum.lean, line 61](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/ZeroLocusOnLocalSpectrum.lean#L61).
+**`PrimeSpectrum.sInf_eq_bot_of_iUnion_zeroLocus_eq_compl_genericPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/ZeroLocusOnLocalSpectrum.lean, line 61](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/ZeroLocusOnLocalSpectrum.lean#L61).
 
 > **Stacks Project, Tag 0ATA.** A multiplicatively closed collection of finitely generated
 > ideals whose zero loci cover every non-generic point of the spectrum of a local domain has
@@ -301,7 +324,7 @@ theorem sInf_eq_bot_of_iUnion_zeroLocus_eq_compl_genericPoint
 
 [Tag 0ATB](https://stacks.math.columbia.edu/tag/0ATB) in the Stacks Project.
 
-**`PrimeSpectrum.closedPoints_compl_zeroLocus_subset_zeroLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/ZeroLocusOnLocalSpectrum.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/ZeroLocusOnLocalSpectrum.lean#L155).
+**`PrimeSpectrum.closedPoints_compl_zeroLocus_subset_zeroLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/ZeroLocusOnLocalSpectrum.lean, line 155](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/ZeroLocusOnLocalSpectrum.lean#L155).
 
 > **Stacks Project, Tag 0ATB.** If `J` is a proper finitely generated ideal of a local ring
 > and `I` is contained in every positive power of `J`, then `V(I)` contains every closed point
@@ -321,7 +344,7 @@ theorem closedPoints_compl_zeroLocus_subset_zeroLocus
 
 [Tag 0ATC](https://stacks.math.columbia.edu/tag/0ATC) in the Stacks Project.
 
-**`AlgebraicGeometry.smallerFlatnessIdeal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowingUp/FlatnessIdeal.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowingUp/FlatnessIdeal.lean#L67). The attribute's comment: “the ideal I₂”.
+**`AlgebraicGeometry.smallerFlatnessIdeal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowingUp/FlatnessIdeal.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowingUp/FlatnessIdeal.lean#L67). The attribute's comment: “the ideal I₂”.
 
 > The ideal `I₂ = Ker (I → Γ(U, (I/I²)~))` of `A`, for an ideal `I` of `A` and an open
 > `U ⊆ Spec A`: the image in `A` of the kernel of the composite of `I → I/I²` with the map
@@ -332,7 +355,7 @@ def smallerFlatnessIdeal {A : Type u} [CommRing A]
     (I : Ideal A) (U : (Spec (.of A)).Opens) : Ideal A
 ```
 
-**`AlgebraicGeometry.flat_quotient_smallerFlatnessIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowingUp/FlatnessIdeal.lean, line 330](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/BlowingUp/FlatnessIdeal.lean#L330). The attribute's comment: “flatness modulo I₂”.
+**`AlgebraicGeometry.flat_quotient_smallerFlatnessIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/BlowingUp/FlatnessIdeal.lean, line 330](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/BlowingUp/FlatnessIdeal.lean#L330). The attribute's comment: “flatness modulo I₂”.
 
 > **Stacks Project, Tag 0ATC.** Let `I` be an ideal of a commutative ring `A` and let
 > `U ⊆ Spec A` be a quasi-compact open. If `M/IM` is flat over `A/I` and `M~` is flat on `U`,
@@ -354,7 +377,7 @@ theorem flat_quotient_smallerFlatnessIdeal
       (M ⧸ smallerFlatnessIdeal I U • (⊤ : Submodule A M))
 ```
 
-**`Stacks.flat_quotient_sectionsKernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/FlatteningSectionsKernel.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/FlatteningSectionsKernel.lean#L132).
+**`Stacks.flat_quotient_sectionsKernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/FlatteningSectionsKernel.lean, line 132](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/FlatteningSectionsKernel.lean#L132).
 
 > Let `I ⊆ A` be an ideal, `M` an `A`-module and `U = ⋃ i, D(f i)` a quasi-compact open of
 > `Spec A`. If `M/IM` is flat over `A/I` and `M` is flat over `U`, that is `M_{f i}` is flat over
@@ -373,7 +396,7 @@ theorem flat_quotient_sectionsKernel (I : Ideal A) {ι : Type w} [Finite ι] (f 
 
 [Tag 05U9](https://stacks.math.columbia.edu/tag/05U9) in the Stacks Project.
 
-**`AlgebraicGeometry.conclusion_of_injectiveModuloMaximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/NilpotentFlatteningClaimOneIndex.lean, line 283](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/NilpotentFlatteningClaimOneIndex.lean#L283). The attribute's comment: “universal injectivity, finite presentation and flatness”.
+**`AlgebraicGeometry.conclusion_of_injectiveModuloMaximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/NilpotentFlatteningClaimOneIndex.lean, line 283](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/NilpotentFlatteningClaimOneIndex.lean#L283). The attribute's comment: “universal injectivity, finite presentation and flatness”.
 
 > **Stacks Project, Tag 05U9.** Let `A → B` be a local homomorphism of local rings which is
 > essentially of finite type, let `M` be a flat `A`-module, let `N` be a finite `B`-module and let
@@ -405,4 +428,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 38.25, Tag 0ASZ](https://stacks.math.columbia.edu/tag/0ASZ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

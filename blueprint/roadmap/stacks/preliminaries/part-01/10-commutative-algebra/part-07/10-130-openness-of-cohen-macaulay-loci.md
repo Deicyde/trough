@@ -8,13 +8,13 @@ proof: formalized
 
 # 10.130 Openness of Cohen-Macaulay loci
 
-Section 10.130 of the Stacks Project, [Tag 00RD](https://stacks.math.columbia.edu/tag/00RD). 8 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 10.130 of the Stacks Project, [Tag 00RD](https://stacks.math.columbia.edu/tag/00RD). 8 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 00RE, a lemma
 
 [Tag 00RE](https://stacks.math.columbia.edu/tag/00RE) in the Stacks Project.
 
-**`Module.Flat.atPrime_iff_isMaximalCohenMacaulay_and_relativeDimensionAt_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CohenMacaulay/Locus.lean, line 398](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CohenMacaulay/Locus.lean#L398). The attribute's comment: “Cohen-Macaulayness of the Noetherian local ring `S_𝔮` (Definition 00N8) is `Module.IsMaximalCohenMacaulay Sq Sq`; `k[y_1, …, y_d]` is `MvPolynomial σ k` with `d = Nat.card σ`; the localization is an abstract `IsLocalization.AtPrime`; and the equality of subsets of `Spec S` is stated pointwise at `𝔮`, with the source's global quasi-finiteness of `φ` weakened to quasi-finiteness at `𝔮` (Definition 00PL). See the module docstring.”.
+**`Module.Flat.atPrime_iff_isMaximalCohenMacaulay_and_relativeDimensionAt_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CohenMacaulay/Locus.lean, line 398](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CohenMacaulay/Locus.lean#L398). The attribute's comment: “Cohen-Macaulayness of the Noetherian local ring `S_𝔮` (Definition 00N8) is `Module.IsMaximalCohenMacaulay Sq Sq`; `k[y_1, …, y_d]` is `MvPolynomial σ k` with `d = Nat.card σ`; the localization is an abstract `IsLocalization.AtPrime`; and the equality of subsets of `Spec S` is stated pointwise at `𝔮`, with the source's global quasi-finiteness of `φ` weakened to quasi-finiteness at `𝔮` (Definition 00PL). See the module docstring.”.
 
 > **Stacks 00RE.** Let `S` be a finite type algebra over a field `k`, let
 > `φ : k[y_1, …, y_d] → S` be a map of `k`-algebras from a polynomial ring in `d = Nat.card σ`
@@ -39,7 +39,7 @@ public theorem Module.Flat.atPrime_iff_isMaximalCohenMacaulay_and_relativeDimens
 
 [Tag 00RF](https://stacks.math.columbia.edu/tag/00RF) in the Stacks Project.
 
-**`PrimeSpectrum.isOpen_setOf_isMaximalCohenMacaulay_localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CohenMacaulay/OpenLocus.lean, line 722](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CohenMacaulay/OpenLocus.lean#L722). The attribute's comment: “Cohen-Macaulayness of the local ring `S_𝔮` (Definition 00N8) is `Module.IsMaximalCohenMacaulay` of `Localization.AtPrime 𝔮` over itself. The proof is the case `R = k` of Lemma 00RH; see the module docstring.”. References: EGA IV (6.11.3), “affine over field, F=O\_X”; EGA IV (12.1.7), “(iii), over a field”.
+**`PrimeSpectrum.isOpen_setOf_isMaximalCohenMacaulay_localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CohenMacaulay/OpenLocus.lean, line 723](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CohenMacaulay/OpenLocus.lean#L723). The attribute's comment: “Cohen-Macaulayness of the local ring `S_𝔮` (Definition 00N8) is `Module.IsMaximalCohenMacaulay` of `Localization.AtPrime 𝔮` over itself. The proof is the case `R = k` of Lemma 00RH; see the module docstring.”. References: EGA IV (6.11.3), “affine over field, F=O\_X”; EGA IV (12.1.7), “(iii), over a field”.
 
 > **Stacks 00RF.** Let `S` be a finite type algebra over a field `k`. The set of primes `𝔮` of
 > `S` such that the local ring `S_𝔮` is Cohen–Macaulay is open in `Spec S`.
@@ -56,7 +56,7 @@ theorem PrimeSpectrum.isOpen_setOf_isMaximalCohenMacaulay_localization (k S : Ty
 
 [Tag 00RG](https://stacks.math.columbia.edu/tag/00RG) in the Stacks Project.
 
-**`PrimeSpectrum.isOpen_and_dense_setOf_isMaximalCohenMacaulay_localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CohenMacaulay/OpenLocus.lean, line 750](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CohenMacaulay/OpenLocus.lean#L750). The attribute's comment: “Cohen-Macaulayness of `S_𝔮` is `Module.IsMaximalCohenMacaulay` of `Localization.AtPrime 𝔮` over itself; "dense open" is the conjunction of `IsOpen` and `Dense`.”. References: EGA IV (6.11.3), “affine over field, F=O\_X”; EGA IV (12.1.7), “(iii), over a field”.
+**`PrimeSpectrum.isOpen_and_dense_setOf_isMaximalCohenMacaulay_localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CohenMacaulay/OpenLocus.lean, line 751](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CohenMacaulay/OpenLocus.lean#L751). The attribute's comment: “Cohen-Macaulayness of `S_𝔮` is `Module.IsMaximalCohenMacaulay` of `Localization.AtPrime 𝔮` over itself; "dense open" is the conjunction of `IsOpen` and `Dense`.”. References: EGA IV (6.11.3), “affine over field, F=O\_X”; EGA IV (12.1.7), “(iii), over a field”.
 
 > **Stacks 00RG.** Let `S` be a finite type algebra over a field `k`. The set of primes `𝔮` of
 > `S` at which `S_𝔮` is Cohen–Macaulay is a dense open subset of `Spec S`: it is open by Lemma 00RF
@@ -77,7 +77,7 @@ theorem PrimeSpectrum.isOpen_and_dense_setOf_isMaximalCohenMacaulay_localization
 
 [Tag 00RH](https://stacks.math.columbia.edu/tag/00RH) in the Stacks Project.
 
-**`Algebra.isOpen_setOf_isMaximalCohenMacaulay_fiber_and_relativeDimensionAt_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CohenMacaulay/OpenLocus.lean, line 626](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CohenMacaulay/OpenLocus.lean#L626). The attribute's comment: “The fibre ring `S_𝔮/𝔭S_𝔮` is `Localization.AtPrime` of the image of `𝔮` in `S/𝔭S`, `𝔭 = 𝔮.under R`, as in 00RK; Cohen-Macaulayness of a local ring (Definition 00N8) is `Module.IsMaximalCohenMacaulay A A`, and `dim_𝔮(S/R)` is `Algebra.relativeDimensionAt R 𝔮`.”. References: EGA IV (12.1.7), “(iii)”.
+**`Algebra.isOpen_setOf_isMaximalCohenMacaulay_fiber_and_relativeDimensionAt_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CohenMacaulay/OpenLocus.lean, line 627](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CohenMacaulay/OpenLocus.lean#L627). The attribute's comment: “The fibre ring `S_𝔮/𝔭S_𝔮` is `Localization.AtPrime` of the image of `𝔮` in `S/𝔭S`, `𝔭 = 𝔮.under R`, as in 00RK; Cohen-Macaulayness of a local ring (Definition 00N8) is `Module.IsMaximalCohenMacaulay A A`, and `dim_𝔮(S/R)` is `Algebra.relativeDimensionAt R 𝔮`.”. References: EGA IV (12.1.7), “(iii)”.
 
 > **Stacks 00RH.** Let `R → S` be flat of finite presentation and let `d ≥ 0`. The set of
 > primes `𝔮` of `S` such that, with `𝔭 = R ∩ 𝔮`, the fibre ring `S_𝔮/𝔭S_𝔮` is Cohen–Macaulay and
@@ -101,7 +101,7 @@ theorem Algebra.isOpen_setOf_isMaximalCohenMacaulay_fiber_and_relativeDimensionA
 
 [Tag 00RI](https://stacks.math.columbia.edu/tag/00RI) in the Stacks Project.
 
-**`Algebra.isOpen_setOf_isMaximalCohenMacaulay_fiber_and_dense_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CohenMacaulay/OpenLocus.lean, line 772](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CohenMacaulay/OpenLocus.lean#L772). The attribute's comment: “The fibre ring is `Localization.AtPrime` of the image of `𝔮` in `S/𝔭S`, as in 00RH and 00RK. The fibre over `𝔭` is the subspace `comap (algebraMap R S) ⁻¹' {𝔭}` of `Spec S` and density is for its subspace topology; openness is asserted in all of `Spec S`, which implies openness in each fibre. See the module docstring.”. References: EGA IV (12.1.1), “(vi), affine, F=O\_X”; EGA IV (12.1.7), “(iii), affine flat”; SGA 4 XVIII (2.3), “affine case”.
+**`Algebra.isOpen_setOf_isMaximalCohenMacaulay_fiber_and_dense_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CohenMacaulay/OpenLocus.lean, line 773](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CohenMacaulay/OpenLocus.lean#L773). The attribute's comment: “The fibre ring is `Localization.AtPrime` of the image of `𝔮` in `S/𝔭S`, as in 00RH and 00RK. The fibre over `𝔭` is the subspace `comap (algebraMap R S) ⁻¹' {𝔭}` of `Spec S` and density is for its subspace topology; openness is asserted in all of `Spec S`, which implies openness in each fibre. See the module docstring.”. References: EGA IV (12.1.1), “(vi), affine, F=O\_X”; EGA IV (12.1.7), “(iii), affine flat”; SGA 4 XVIII (2.3), “affine case”.
 
 > **Stacks 00RI.** Let `R → S` be flat of finite presentation. The set `W` of primes `𝔮` of `S`
 > at which the fibre ring `S_𝔮 ⊗_R κ(𝔭)`, `𝔭 = R ∩ 𝔮`, is Cohen–Macaulay is open in `Spec S`, and
@@ -132,7 +132,7 @@ theorem Algebra.isOpen_setOf_isMaximalCohenMacaulay_fiber_and_dense_fiber
 
 [Tag 00RJ](https://stacks.math.columbia.edu/tag/00RJ) in the Stacks Project.
 
-**`Algebra.IsPushout.isMaximalCohenMacaulay_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CohenMacaulay/LocusBaseChange.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CohenMacaulay/LocusBaseChange.lean#L159). The attribute's comment: “Cohen-Macaulayness of a Noetherian local ring `A` (Definition 00N8) is `Module.IsMaximalCohenMacaulay A A` (tag 00NF); the base change `K ⊗_k S` is an arbitrary pushout square of `k`-algebras `Algebra.IsPushout k K S T`, as in the sibling 00P4; the two local rings are abstract `IsLocalization.AtPrime`s; and `𝔮_K` lying over `𝔮` is `Ideal.LiesOver`. See the module docstring.”. References: EGA IV (6.7.1), “(i), CM, affine”; SGA 3 VIA (1.1.1), “special case”.
+**`Algebra.IsPushout.isMaximalCohenMacaulay_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CohenMacaulay/LocusBaseChange.lean, line 159](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CohenMacaulay/LocusBaseChange.lean#L159). The attribute's comment: “Cohen-Macaulayness of a Noetherian local ring `A` (Definition 00N8) is `Module.IsMaximalCohenMacaulay A A` (tag 00NF); the base change `K ⊗_k S` is an arbitrary pushout square of `k`-algebras `Algebra.IsPushout k K S T`, as in the sibling 00P4; the two local rings are abstract `IsLocalization.AtPrime`s; and `𝔮_K` lying over `𝔮` is `Ideal.LiesOver`. See the module docstring.”. References: EGA IV (6.7.1), “(i), CM, affine”; SGA 3 VIA (1.1.1), “special case”.
 
 > Let `k` be a field, let `S` be a finite type `k`-algebra, let `K/k` be a field extension and
 > let `T = K ⊗_k S` be the base change, presented as a pushout square. Let `𝔮K` be a prime of `T`
@@ -154,7 +154,7 @@ public theorem isMaximalCohenMacaulay_iff (k K S T : Type*) [Field k] [Field K] 
 
 [Tag 00RK](https://stacks.math.columbia.edu/tag/00RK) in the Stacks Project.
 
-**`Algebra.IsPushout.setOf_isMaximalCohenMacaulay_fiber_eq_preimage_comap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CohenMacaulay/LocusBaseChange.lean, line 401](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CohenMacaulay/LocusBaseChange.lean#L401). The attribute's comment: “The base change is an arbitrary pushout square `Algebra.IsPushout R R' S S'`, as in the siblings 00P3, 00P4 and 00SS, so `f` is `PrimeSpectrum.comap (algebraMap S S')`. The fibre ring `S_𝔮 ⊗_R κ(𝔭)` is `Localization.AtPrime` of the image of `𝔮` in `S/𝔭S`, with `𝔭 = 𝔮.under R`, as in 00RH and 00RI, and Cohen-Macaulayness of a local ring (Definition 00N8) is `Module.IsMaximalCohenMacaulay A A` (tag 00NF). The conclusion is the source's equality of sets of primes; `Set.ext_iff` gives the pointwise form. See the module docstring.”.
+**`Algebra.IsPushout.setOf_isMaximalCohenMacaulay_fiber_eq_preimage_comap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CohenMacaulay/LocusBaseChange.lean, line 401](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CohenMacaulay/LocusBaseChange.lean#L401). The attribute's comment: “The base change is an arbitrary pushout square `Algebra.IsPushout R R' S S'`, as in the siblings 00P3, 00P4 and 00SS, so `f` is `PrimeSpectrum.comap (algebraMap S S')`. The fibre ring `S_𝔮 ⊗_R κ(𝔭)` is `Localization.AtPrime` of the image of `𝔮` in `S/𝔭S`, with `𝔭 = 𝔮.under R`, as in 00RH and 00RI, and Cohen-Macaulayness of a local ring (Definition 00N8) is `Module.IsMaximalCohenMacaulay A A` (tag 00NF). The conclusion is the source's equality of sets of primes; `Set.ext_iff` gives the pointwise form. See the module docstring.”.
 
 > Let `R → S` be of finite type, let `R → R'` be any ring map and let `S' = R' ⊗_R S`,
 > presented as a pushout square. Let `f : Spec S' → Spec S` be the map of the ring map `S → S'`.
@@ -186,7 +186,7 @@ public theorem setOf_isMaximalCohenMacaulay_fiber_eq_preimage_comap (R R' S S' :
 
 [Tag 00RL](https://stacks.math.columbia.edu/tag/00RL) in the Stacks Project.
 
-**`Algebra.exists_algEquiv_pi_of_isMaximalCohenMacaulay_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CohenMacaulay/OpenLocus.lean, line 816](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CohenMacaulay/OpenLocus.lean#L816). The attribute's comment: “The fibre ring is `Localization.AtPrime` of the image of `𝔮` in `S/𝔭S`, as in 00RH. "All fibres equidimensional of dimension `d`" is `Algebra.relativeDimensionAt R 𝔮 = d` at every prime `𝔮` of `S_d`, which is equivalent over a field by Lemma 00OT. The factors are indexed by `Fin (n + 1)` and live in the universe of `S`. See the module docstring.”.
+**`Algebra.exists_algEquiv_pi_of_isMaximalCohenMacaulay_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CohenMacaulay/OpenLocus.lean, line 817](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CohenMacaulay/OpenLocus.lean#L817). The attribute's comment: “The fibre ring is `Localization.AtPrime` of the image of `𝔮` in `S/𝔭S`, as in 00RH. "All fibres equidimensional of dimension `d`" is `Algebra.relativeDimensionAt R 𝔮 = d` at every prime `𝔮` of `S_d`, which is equivalent over a field by Lemma 00OT. The factors are indexed by `Fin (n + 1)` and live in the universe of `S`. See the module docstring.”.
 
 > **Stacks 00RL.** Let `R → S` be flat, of finite presentation and with Cohen–Macaulay fibres,
 > that is with every fibre ring `S_𝔮/𝔭S_𝔮` Cohen–Macaulay. Then `S ≅ S_0 × ⋯ × S_n` as
@@ -223,4 +223,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.130, Tag 00RD](https://stacks.math.columbia.edu/tag/00RD)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

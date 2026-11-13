@@ -8,13 +8,13 @@ proof: formalized
 
 # 30.17 Ample invertible sheaves and cohomology
 
-Section 30.17 of the Stacks Project, [Tag 01XO](https://stacks.math.columbia.edu/tag/01XO). 8 tags here are carried by 20 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 30.17 of the Stacks Project, [Tag 01XO](https://stacks.math.columbia.edu/tag/01XO). 8 tags here are carried by 20 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0B5U, a lemma
 
 [Tag 0B5U](https://stacks.math.columbia.edu/tag/0B5U) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Modules.hasEventualTwistCohomologyVanishing_of_isAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleDegreeCriterion/CohomologicalCriterion.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmpleDegreeCriterion/CohomologicalCriterion.lean#L148). The attribute's comment: “the implication (1) ⟹ (2)”.
+**`AlgebraicGeometry.Scheme.Modules.hasEventualTwistCohomologyVanishing_of_isAmple`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleDegreeCriterion/CohomologicalCriterion.lean, line 148](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AmpleDegreeCriterion/CohomologicalCriterion.lean#L148). The attribute's comment: “the implication (1) ⟹ (2)”.
 
 > **The implication (1) ⟹ (2) of [Stacks, Tag 0B5U]**, at the tag's own hypotheses: `R`
 > Noetherian, `f : X ⟶ Spec R` proper, `𝓛` ample.
@@ -31,7 +31,7 @@ public theorem hasEventualTwistCohomologyVanishing_of_isAmple {R : Type u} [Comm
     HasEventualTwistCohomologyVanishing L
 ```
 
-**`AlgebraicGeometry.Scheme.Modules.hasIdealTwistH1Vanishing_of_eventualTwistVanishing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleDegreeCriterion/CohomologicalCriterion.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmpleDegreeCriterion/CohomologicalCriterion.lean#L166). The attribute's comment: “the implication (2) ⟹ (3)”.
+**`AlgebraicGeometry.Scheme.Modules.hasIdealTwistH1Vanishing_of_eventualTwistVanishing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleDegreeCriterion/CohomologicalCriterion.lean, line 166](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AmpleDegreeCriterion/CohomologicalCriterion.lean#L166). The attribute's comment: “the implication (2) ⟹ (3)”.
 
 > **The implication (2) ⟹ (3) of [Stacks, Tag 0B5U]**, on a locally Noetherian scheme and with
 > none of the tag's remaining hypotheses.
@@ -46,7 +46,7 @@ public theorem hasIdealTwistH1Vanishing_of_eventualTwistVanishing [IsLocallyNoet
     (h : HasEventualTwistCohomologyVanishing L) : HasIdealTwistH1Vanishing L
 ```
 
-**`AlgebraicGeometry.Scheme.Modules.isAmple_of_hasIdealTwistH1Vanishing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleDegreeCriterion/CohomologicalCriterion.lean, line 181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmpleDegreeCriterion/CohomologicalCriterion.lean#L181). The attribute's comment: “the implication (3) ⟹ (1)”.
+**`AlgebraicGeometry.Scheme.Modules.isAmple_of_hasIdealTwistH1Vanishing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleDegreeCriterion/CohomologicalCriterion.lean, line 181](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AmpleDegreeCriterion/CohomologicalCriterion.lean#L181). The attribute's comment: “the implication (3) ⟹ (1)”.
 
 > **The implication (3) ⟹ (1) of [Stacks, Tag 0B5U]**, on a quasi-compact scheme and with none
 > of the tag's remaining hypotheses. This is [Stacks, Tag 0B5P].
@@ -56,7 +56,7 @@ public theorem isAmple_of_hasIdealTwistH1Vanishing [CompactSpace X]
     (h : HasIdealTwistH1Vanishing L) : IsAmple X L
 ```
 
-**`AlgebraicGeometry.Scheme.Modules.isAmple_of_eventualTwistVanishing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleDegreeCriterion/CohomologicalCriterion.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmpleDegreeCriterion/CohomologicalCriterion.lean#L195). The attribute's comment: “the implication (2) ⟹ (1)”.
+**`AlgebraicGeometry.Scheme.Modules.isAmple_of_eventualTwistVanishing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleDegreeCriterion/CohomologicalCriterion.lean, line 195](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AmpleDegreeCriterion/CohomologicalCriterion.lean#L195). The attribute's comment: “the implication (2) ⟹ (1)”.
 
 > **The implication (2) ⟹ (1) of [Stacks, Tag 0B5U]**, at the tag's own hypotheses: `R`
 > Noetherian, `f : X ⟶ Spec R` proper. Both steps are unconditional; properness and the Noetherian
@@ -68,7 +68,7 @@ public theorem isAmple_of_eventualTwistVanishing {R : Type u} [CommRing R] [IsNo
     IsAmple X L
 ```
 
-**`AlgebraicGeometry.Scheme.Modules.tfae_isAmple_twistCohomologyVanishing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleDegreeCriterion/CohomologicalCriterion.lean, line 212](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmpleDegreeCriterion/CohomologicalCriterion.lean#L212). The attribute's comment: “the three equivalent conditions”. References: EGA III (5.2.3), “(ii), special case”.
+**`AlgebraicGeometry.Scheme.Modules.tfae_isAmple_twistCohomologyVanishing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleDegreeCriterion/CohomologicalCriterion.lean, line 212](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AmpleDegreeCriterion/CohomologicalCriterion.lean#L212). The attribute's comment: “the three equivalent conditions”. References: EGA III (5.2.3), “(ii), special case”.
 
 > **[Stacks, Tag 0B5U].** For `R` Noetherian, `f : X ⟶ Spec R` proper and `𝓛` an invertible
 > `𝒪_X`-module, the three conditions
@@ -91,7 +91,7 @@ public theorem tfae_isAmple_twistCohomologyVanishing {R : Type u} [CommRing R]
 
 [Tag 0B5V](https://stacks.math.columbia.edu/tag/0B5V) in the Stacks Project.
 
-**`Stacks.AmpleFiniteSurjective.isAmple_modulePullback_of_isFinite_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleFiniteSurjective/Basic.lean, line 278](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmpleFiniteSurjective/Basic.lean#L278). The attribute's comment: “the implication `L` ample ⟹ `f^* L` ample”.
+**`Stacks.AmpleFiniteSurjective.isAmple_modulePullback_of_isFinite_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleFiniteSurjective/Basic.lean, line 278](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AmpleFiniteSurjective/Basic.lean#L278). The attribute's comment: “the implication `L` ample ⟹ `f^* L` ample”.
 
 > **The forward half of [Stacks, Tag 0B5V]**, at the source's hypothesis list: `X` proper over a
 > Noetherian ring `R`, `f` finite and surjective. The hypotheses other than finiteness are inert;
@@ -105,7 +105,7 @@ theorem isAmple_modulePullback_of_isFinite_surjective (R : Type u) [CommRing R]
     IsAmple Y ((modulePullback f.toLRSHom.toShHom).obj L)
 ```
 
-**`Stacks.AmpleFiniteSurjective.isAmple_iff_isAmple_modulePullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleFiniteSurjective/Basic.lean, line 663](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmpleFiniteSurjective/Basic.lean#L663).
+**`Stacks.AmpleFiniteSurjective.isAmple_iff_isAmple_modulePullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleFiniteSurjective/Basic.lean, line 663](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AmpleFiniteSurjective/Basic.lean#L663).
 
 > **[Stacks, Tag 0B5V].** Let `R` be a Noetherian ring, let `f : Y ⟶ X` be a morphism of schemes
 > proper over `R` — `X` through `p` and `Y` through `f ≫ p`, which is automatic since a finite
@@ -127,7 +127,7 @@ theorem isAmple_iff_isAmple_modulePullback (R : Type u) [CommRing R] [IsNoetheri
 
 [Tag 09MR](https://stacks.math.columbia.edu/tag/09MR) in the Stacks Project.
 
-**`Stacks.Cohomology.TwistedLocalizationMap.bijective_canonicalMap_of_le_nonvanishingOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TwistedCohomologyLocalization/CanonicalMap.lean, line 391](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/TwistedCohomologyLocalization/CanonicalMap.lean#L391). The attribute's comment: “for an open U inside the nonvanishing locus X\_s: the canonical map H^p\_*(U,L,F)\_(s) to H^p(U ∩ X\_s,F), xi/s^n to s^(-n) xi, is bijective, on an arbitrary scheme, for an arbitrary module and in every degree. The quasi-compact quasi-separated case of the tag is bijective\_canonicalMap\_of\_isCompact, and neither case subsumes the other.”.
+**`Stacks.Cohomology.TwistedLocalizationMap.bijective_canonicalMap_of_le_nonvanishingOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TwistedCohomologyLocalization/CanonicalMap.lean, line 391](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/TwistedCohomologyLocalization/CanonicalMap.lean#L391). The attribute's comment: “for an open U inside the nonvanishing locus X\_s: the canonical map H^p\_*(U,L,F)\_(s) to H^p(U ∩ X\_s,F), xi/s^n to s^(-n) xi, is bijective, on an arbitrary scheme, for an arbitrary module and in every degree. The quasi-compact quasi-separated case of the tag is bijective\_canonicalMap\_of\_isCompact, and neither case subsumes the other.”.
 
 > **The comparison map is bijective on an open contained in the nonvanishing open of `s`.** Let
 > `X` be a scheme, `ℒ` an invertible `𝒪_X`-module, `s` a global section of `ℒ`, `ℱ` an arbitrary
@@ -148,7 +148,7 @@ theorem bijective_canonicalMap_of_le_nonvanishingOpen (hU : U ≤ nonvanishingOp
     Function.Bijective (canonicalMap X L s F p U)
 ```
 
-**`Stacks.Cohomology.TwistedLocalizationMap.bijective_canonicalMap_of_isCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TwistedCohomologyLocalization/MayerVietorisStep.lean, line 981](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/TwistedCohomologyLocalization/MayerVietorisStep.lean#L981).
+**`Stacks.Cohomology.TwistedLocalizationMap.bijective_canonicalMap_of_isCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TwistedCohomologyLocalization/MayerVietorisStep.lean, line 981](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/TwistedCohomologyLocalization/MayerVietorisStep.lean#L981).
 
 > **[Stacks, Tag 09MR] over a quasi-compact open of a quasi-separated scheme.** For a
 > quasi-compact open `S` of a quasi-separated scheme `X`, an invertible `𝒪_X`-module `ℒ`, a global
@@ -164,7 +164,7 @@ theorem bijective_canonicalMap_of_isCompact [QuasiSeparatedSpace X]
     Function.Bijective (canonicalMap X L s F p S)
 ```
 
-**`Stacks.Cohomology.TwistedLocalizationMap.bijective_canonicalMap_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TwistedCohomologyLocalization/MayerVietorisStep.lean, line 990](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/TwistedCohomologyLocalization/MayerVietorisStep.lean#L990).
+**`Stacks.Cohomology.TwistedLocalizationMap.bijective_canonicalMap_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TwistedCohomologyLocalization/MayerVietorisStep.lean, line 990](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/TwistedCohomologyLocalization/MayerVietorisStep.lean#L990).
 
 > **[Stacks, Tag 09MR] on a quasi-compact quasi-separated scheme.**
 
@@ -177,7 +177,7 @@ theorem bijective_canonicalMap_top [QuasiSeparatedSpace X] [CompactSpace X] (p :
 
 [Tag 01XR](https://stacks.math.columbia.edu/tag/01XR) in the Stacks Project.
 
-**`Stacks.SheafOfModules.exists_sectionPowerAction_eq_zero_of_isAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionPowerCohomology/Basic.lean, line 123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SectionPowerCohomology/Basic.lean#L123). The attribute's comment: “the case of an affine ambient scheme”.
+**`Stacks.SheafOfModules.exists_sectionPowerAction_eq_zero_of_isAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionPowerCohomology/Basic.lean, line 123](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SectionPowerCohomology/Basic.lean#L123). The attribute's comment: “the case of an affine ambient scheme”.
 
 > **The conclusion of [Stacks, Tag 01XR] for an affine ambient scheme.** On an affine scheme the
 > positive-degree cohomology of a quasi-coherent module vanishes, so every class is annihilated
@@ -198,7 +198,7 @@ theorem exists_sectionPowerAction_eq_zero_of_isAffine [IsAffine X] (s : L.sectio
             (structureSheafRing X.toRingedSpace).property L F n t) ξ = 0
 ```
 
-**`Stacks.SheafOfModules.exists_sectionPowerAction_eq_zero_of_finite_affine_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionPowerCohomology/Basic.lean, line 144](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SectionPowerCohomology/Basic.lean#L144). The attribute's comment: “the degrees at least the size of a finite affine cover”.
+**`Stacks.SheafOfModules.exists_sectionPowerAction_eq_zero_of_finite_affine_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionPowerCohomology/Basic.lean, line 144](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SectionPowerCohomology/Basic.lean#L144). The attribute's comment: “the degrees at least the size of a finite affine cover”.
 
 > **The conclusion of [Stacks, Tag 01XR] above the size of a finite affine cover.** On a scheme
 > with affine diagonal covered by `t` affine opens the cohomology of a quasi-coherent module
@@ -222,7 +222,7 @@ theorem exists_sectionPowerAction_eq_zero_of_finite_affine_cover
             (structureSheafRing X.toRingedSpace).property L F n t') ξ = 0
 ```
 
-**`Stacks.SheafOfModules.exists_sectionPowerAction_eq_zero_of_isAffineOpen_nonvanishingOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionPowerCohomology/Localization.lean, line 152](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SectionPowerCohomology/Localization.lean#L152).
+**`Stacks.SheafOfModules.exists_sectionPowerAction_eq_zero_of_isAffineOpen_nonvanishingOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionPowerCohomology/Localization.lean, line 152](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SectionPowerCohomology/Localization.lean#L152).
 
 > **[Stacks, Tag 01XR].** Let `X` be a quasi-compact quasi-separated scheme, `ℒ` an invertible
 > `𝒪_X`-module and `s ∈ Γ(X, ℒ)` a global section whose nonvanishing open `X_s` is affine. Then
@@ -248,7 +248,7 @@ theorem exists_sectionPowerAction_eq_zero_of_isAffineOpen_nonvanishingOpen [Comp
             (structureSheafRing X.toRingedSpace).property L F n t) ξ = 0
 ```
 
-**`Stacks.SheafOfModules.exists_sectionPowerAction_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionPowerCohomology/QuasiCompact.lean, line 141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/SectionPowerCohomology/QuasiCompact.lean#L141).
+**`Stacks.SheafOfModules.exists_sectionPowerAction_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/SectionPowerCohomology/QuasiCompact.lean, line 141](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/SectionPowerCohomology/QuasiCompact.lean#L141).
 
 > **[Stacks, Tag 01XR].** Let `X` be a scheme, `ℒ` an invertible `𝒪_X`-module and
 > `s ∈ Γ(X, ℒ)` a global section. If `X` is quasi-compact and quasi-separated and
@@ -281,7 +281,7 @@ theorem exists_sectionPowerAction_eq_zero (X : Scheme.{u})
 
 [Tag 09MS](https://stacks.math.columbia.edu/tag/09MS) in the Stacks Project.
 
-**`Stacks.AmpleSurjectiveThickening.isAmple_modulePullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleSurjectiveThickening/Basic.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmpleSurjectiveThickening/Basic.lean#L107). The attribute's comment: “the implication `L` ample ⟹ `i^* L` ample”.
+**`Stacks.AmpleSurjectiveThickening.isAmple_modulePullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleSurjectiveThickening/Basic.lean, line 107](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AmpleSurjectiveThickening/Basic.lean#L107). The attribute's comment: “the implication `L` ample ⟹ `i^* L` ample”.
 
 > **`L` ample `⟹` `i^* L` ample.** For a closed immersion `i : Z ⟶ X` of Noetherian schemes
 > inducing a homeomorphism of underlying spaces, ampleness of an invertible `𝒪_X`-module `L` gives
@@ -294,7 +294,7 @@ theorem isAmple_modulePullback [IsClosedImmersion i] [Surjective i] [IsNoetheria
     IsAmple Z ((modulePullback i.toLRSHom.toShHom).obj L)
 ```
 
-**`Stacks.AmpleSurjectiveThickening.isAmple_modulePullback_iff_isAmple_of_isHomeomorph`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleSurjectiveThickening/Basic.lean, line 254](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmpleSurjectiveThickening/Basic.lean#L254).
+**`Stacks.AmpleSurjectiveThickening.isAmple_modulePullback_iff_isAmple_of_isHomeomorph`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleSurjectiveThickening/Basic.lean, line 254](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AmpleSurjectiveThickening/Basic.lean#L254).
 
 > **[Stacks, Tag 09MS].** Let `i : Z ⟶ X` be a closed immersion of Noetherian schemes inducing a
 > homeomorphism of underlying topological spaces, and let `L` be an invertible `𝒪_X`-module. Then
@@ -311,7 +311,7 @@ theorem isAmple_modulePullback_iff_isAmple_of_isHomeomorph [IsClosedImmersion i]
 
 [Tag 0B7K](https://stacks.math.columbia.edu/tag/0B7K) in the Stacks Project.
 
-**`Stacks.AmpleSurjectiveThickening.isQuasiAffine_iff_isQuasiAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleSurjectiveThickening/QuasiAffine.lean, line 145](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/AmpleSurjectiveThickening/QuasiAffine.lean#L145).
+**`Stacks.AmpleSurjectiveThickening.isQuasiAffine_iff_isQuasiAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/AmpleSurjectiveThickening/QuasiAffine.lean, line 145](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/AmpleSurjectiveThickening/QuasiAffine.lean#L145).
 
 > **[Stacks, Tag 0B7K].** Let `i : Z ⟶ X` be a closed immersion of Noetherian schemes inducing a
 > homeomorphism of underlying topological spaces — that is, a closed immersion surjective on
@@ -322,7 +322,7 @@ theorem isQuasiAffine_iff_isQuasiAffine [IsClosedImmersion i] [Surjective i] [Is
     X.IsQuasiAffine ↔ Z.IsQuasiAffine
 ```
 
-**`Stacks.Thickenings.isQuasiAffine_iff_of_isNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/QuasiAffineAscent.lean, line 550](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/QuasiAffineAscent.lean#L550). References: EGA II (5.1.10), “(vi), special case”.
+**`Stacks.Thickenings.isQuasiAffine_iff_of_isNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/QuasiAffineAscent.lean, line 550](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/ThickeningMorphism/QuasiAffineAscent.lean#L550). References: EGA II (5.1.10), “(vi), special case”.
 
 > **[Stacks Project, Tag 0B7K].** For a closed immersion `i : Z ⟶ X` of Noetherian schemes
 > inducing a homeomorphism of underlying spaces — equivalently, a surjective closed immersion — the
@@ -354,7 +354,7 @@ theorem isQuasiAffine_iff_of_isNoetherian {Z X : Scheme.{u}} (i : Z ⟶ X) [IsCl
 
 [Tag 0EBD](https://stacks.math.columbia.edu/tag/0EBD) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.CohomologyColimitReduction.isAffine_of_isZero_cohomology_negative_tensorPower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CohomologyColimitReduction/Basic.lean, line 258](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/CohomologyColimitReduction/Basic.lean#L258).
+**`Stacks.AlgebraicGeometry.CohomologyColimitReduction.isAffine_of_isZero_cohomology_negative_tensorPower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CohomologyColimitReduction/Basic.lean, line 258](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/CohomologyColimitReduction/Basic.lean#L258).
 
 > **[Stacks, Tag 0EBD].** Let `L` be an ample invertible module on a scheme `X` and let `n₀` be
 > an integer such that `Hᵖ(X, L^{⊗ -n}) = 0` for every `n ≥ n₀` and every `p > 0`. Then `X` is
@@ -382,7 +382,7 @@ theorem isAffine_of_isZero_cohomology_negative_tensorPower (L : X.Modules)
 
 [Tag 0EBE](https://stacks.math.columbia.edu/tag/0EBE) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.CohomologyColimitReduction.isAffine_of_isZero_hgroup_unitModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CohomologyColimitReduction/QuasiAffine.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/CohomologyColimitReduction/QuasiAffine.lean#L102).
+**`Stacks.AlgebraicGeometry.CohomologyColimitReduction.isAffine_of_isZero_hgroup_unitModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CohomologyColimitReduction/QuasiAffine.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/CohomologyColimitReduction/QuasiAffine.lean#L102).
 
 > **[Stacks, Tag 0EBE].** Let `X` be a quasi-affine scheme.  If `Hᵖ(X, 𝒪_X) = 0` for every
 > `p > 0`, then `X` is affine.
@@ -409,4 +409,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 30.17, Tag 01XO](https://stacks.math.columbia.edu/tag/01XO)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

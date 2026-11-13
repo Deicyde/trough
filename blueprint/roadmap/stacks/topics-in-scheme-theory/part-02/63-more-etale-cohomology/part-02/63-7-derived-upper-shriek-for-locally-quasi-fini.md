@@ -8,13 +8,13 @@ proof: formalized
 
 # 63.7 Derived upper shriek for locally quasi-finite morphisms
 
-Section 63.7 of the Stacks Project, [Tag 0F5M](https://stacks.math.columbia.edu/tag/0F5M). 4 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 63.7 of the Stacks Project, [Tag 0F5M](https://stacks.math.columbia.edu/tag/0F5M). 4 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0F5N, a lemma
 
 [Tag 0F5N](https://stacks.math.columbia.edu/tag/0F5N) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallEtale.fShriekDerivedAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/DerivedUpperShriekAdjunction.lean, line 178](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/DerivedUpperShriekAdjunction.lean#L178). The attribute's comment: “abelian coefficients, the case Λ = ℤ”. References: SGA 4 XVIII (3.1.5), “special case”.
+**`AlgebraicGeometry.SmallEtale.fShriekDerivedAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/DerivedUpperShriekAdjunction.lean, line 178](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/DerivedUpperShriekAdjunction.lean#L178). The attribute's comment: “abelian coefficients, the case Λ = ℤ”. References: SGA 4 XVIII (3.1.5), “special case”.
 
 > **Stacks 0F5N.** Let `f : X ⟶ Y` be a locally quasi-finite morphism. The direct image with
 > compact support `f_!` of Stacks 0F6R, which is exact and therefore induces a functor
@@ -33,7 +33,7 @@ public def fShriekDerivedAdjunction
     (fShriekFunctor.{u, v} B f).mapDerivedCategory ⊣ RfUpperShriek
 ```
 
-**`AlgebraicGeometry.SmallEtale.fShriekRUpperShriekAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/DerivedUpperShriekAdjunction.lean, line 192](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/DerivedUpperShriekAdjunction.lean#L192). The attribute's comment: “abelian coefficients, for the chosen total right derived functor of f^!”.
+**`AlgebraicGeometry.SmallEtale.fShriekRUpperShriekAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/DerivedUpperShriekAdjunction.lean, line 192](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/DerivedUpperShriekAdjunction.lean#L192). The attribute's comment: “abelian coefficients, for the chosen total right derived functor of f^!”.
 
 > **Stacks 0F5N** for the chosen total right derived functor: `f_!` on unbounded derived
 > categories of abelian étale sheaves is left adjoint to `rUpperShriekFunctor`.
@@ -43,7 +43,7 @@ public def fShriekRUpperShriekAdjunction :
     (fShriekFunctor.{u, v} B f).mapDerivedCategory ⊣ rUpperShriekFunctor.{u, v, w} B f
 ```
 
-**`AlgebraicGeometry.SmallEtale.moduleFShriekDerivedAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/DerivedUpperShriekAdjunction.lean, line 400](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/DerivedUpperShriekAdjunction.lean#L400). The attribute's comment: “general coefficient ring Λ, from a Λ-linear lift of f\_!”.
+**`AlgebraicGeometry.SmallEtale.moduleFShriekDerivedAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/DerivedUpperShriekAdjunction.lean, line 400](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/DerivedUpperShriekAdjunction.lean#L400). The attribute's comment: “general coefficient ring Λ, from a Λ-linear lift of f\_!”.
 
 > **Stacks 0F5N** for a general coefficient ring. Let `f : X ⟶ Y` be a locally quasi-finite
 > morphism and let `fShriekMod` be a `Λ`-linear lift of the direct image with compact support
@@ -66,7 +66,7 @@ public def moduleFShriekDerivedAdjunction (f : X ⟶ Y)
     moduleFShriekDerivedFunctor.{u, v, w, r} B Λ f fShriekMod hlift ⊣ RfUpperShriek
 ```
 
-**`AlgebraicGeometry.SmallEtale.moduleFShriekRUpperShriekAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekModuleAdjunction.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekModuleAdjunction.lean#L116). The attribute's comment: “general coefficient ring Λ, for f\_! and f^! themselves”. References: SGA 4 XVIII (3.1.5), “special case”.
+**`AlgebraicGeometry.SmallEtale.moduleFShriekRUpperShriekAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekModuleAdjunction.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekModuleAdjunction.lean#L116). The attribute's comment: “general coefficient ring Λ, for f\_! and f^! themselves”. References: SGA 4 XVIII (3.1.5), “special case”.
 
 > **Stacks 0F5N.** Let `f : X ⟶ Y` be a locally quasi-finite morphism of schemes and let `Λ` be
 > a ring. The direct image with compact support `f_!` of Stacks 0F6R and the upper shriek `f^!` of
@@ -89,7 +89,7 @@ public def moduleFShriekRUpperShriekAdjunction :
 
 [Tag 0GJX](https://stacks.math.columbia.edu/tag/0GJX) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallEtale.moduleTorsionSheafProperty_fShriekMod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekDerivedTorsion.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekDerivedTorsion.lean#L111). The attribute's comment: “the sheaf-level reduction: a `Λ`-linear lift of `f_!` preserves torsion”.
+**`AlgebraicGeometry.SmallEtale.moduleTorsionSheafProperty_fShriekMod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekDerivedTorsion.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekDerivedTorsion.lean#L111). The attribute's comment: “the sheaf-level reduction: a `Λ`-linear lift of `f_!` preserves torsion”.
 
 > A `Λ`-linear lift of the direct image with compact support sends torsion étale sheaves of
 > `Λ`-modules to torsion étale sheaves of `Λ`-modules: the lift is identified with `f_!` on
@@ -105,7 +105,7 @@ public theorem moduleTorsionSheafProperty_fShriekMod
     moduleTorsionSheafProperty.{u, v, r} B Y Λ (fShriekMod.obj F)
 ```
 
-**`AlgebraicGeometry.SmallEtale.moduleTorsionCohomologyProperty_moduleFShriekDerivedFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekDerivedTorsion.lean, line 152](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekDerivedTorsion.lean#L152). The attribute's comment: “general coefficient ring `Λ`: for a `Λ`-linear lift of `f_!`, the functor `f_! : D(X_étale, Λ) ⥤ D(Y_étale, Λ)` of Tag 0F5N sends complexes with torsion cohomology sheaves to complexes with torsion cohomology sheaves”.
+**`AlgebraicGeometry.SmallEtale.moduleTorsionCohomologyProperty_moduleFShriekDerivedFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekDerivedTorsion.lean, line 152](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekDerivedTorsion.lean#L152). The attribute's comment: “general coefficient ring `Λ`: for a `Λ`-linear lift of `f_!`, the functor `f_! : D(X_étale, Λ) ⥤ D(Y_étale, Λ)` of Tag 0F5N sends complexes with torsion cohomology sheaves to complexes with torsion cohomology sheaves”.
 
 > **Stacks 0GJX.** Let `f : X ⟶ Y` be a locally quasi-finite morphism of schemes and let `Λ` be
 > a ring. The functor `f_! : D(X_étale, Λ) ⥤ D(Y_étale, Λ)` of Stacks 0F5N sends a complex with
@@ -127,7 +127,7 @@ public theorem moduleTorsionCohomologyProperty_moduleFShriekDerivedFunctor
       ((moduleFShriekDerivedFunctor.{u, v, w, r} B Λ f fShriekMod hlift).obj K)
 ```
 
-**`AlgebraicGeometry.SmallEtale.moduleTorsionSheafProperty_fShriekMod_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekDerivedTorsionModule.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekDerivedTorsionModule.lean#L70). The attribute's comment: “the sheaf-level input, for f\_! with coefficients in Λ itself”.
+**`AlgebraicGeometry.SmallEtale.moduleTorsionSheafProperty_fShriekMod_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekDerivedTorsionModule.lean, line 70](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekDerivedTorsionModule.lean#L70). The attribute's comment: “the sheaf-level input, for f\_! with coefficients in Λ itself”.
 
 > The direct image with compact support with coefficients in a ring `Λ` sends torsion étale
 > sheaves of `Λ`-modules to torsion étale sheaves of `Λ`-modules: on underlying abelian sheaves it
@@ -139,7 +139,7 @@ public theorem moduleTorsionSheafProperty_fShriekMod_obj (F : ModuleSheaf.{u, v,
     moduleTorsionSheafProperty.{u, v, r} B Y Λ ((fShriekMod.{u, v, r} B Λ f).obj F)
 ```
 
-**`AlgebraicGeometry.SmallEtale.moduleTorsionCohomologyProperty_moduleFShriekDerivedFunctor_fShriekMod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekDerivedTorsionModule.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekDerivedTorsionModule.lean#L90). The attribute's comment: “f\_! on D(X\_étale, Λ) ⟶ D(Y\_étale, Λ) sends complexes with torsion cohomology sheaves to complexes with torsion cohomology sheaves”.
+**`AlgebraicGeometry.SmallEtale.moduleTorsionCohomologyProperty_moduleFShriekDerivedFunctor_fShriekMod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekDerivedTorsionModule.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekDerivedTorsionModule.lean#L90). The attribute's comment: “f\_! on D(X\_étale, Λ) ⟶ D(Y\_étale, Λ) sends complexes with torsion cohomology sheaves to complexes with torsion cohomology sheaves”.
 
 > **Stacks 0GJX.** Let `f : X ⟶ Y` be a locally quasi-finite morphism of schemes and let `Λ` be
 > a ring. The functor `f_! : D(X_étale, Λ) ⟶ D(Y_étale, Λ)` of Stacks 0F5N sends complexes with
@@ -160,7 +160,7 @@ public theorem moduleTorsionCohomologyProperty_moduleFShriekDerivedFunctor_fShri
         (fShriekModForgetIso.{u, v, r} B Λ f)).obj K)
 ```
 
-**`AlgebraicGeometry.SmallEtale.exists_nsmul_eq_zero_etaleStalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekTorsion.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekTorsion.lean#L82). The attribute's comment: “an input to the proof: the stalk of a torsion abelian étale sheaf at a geometric point is a torsion abelian group”.
+**`AlgebraicGeometry.SmallEtale.exists_nsmul_eq_zero_etaleStalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekTorsion.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekTorsion.lean#L82). The attribute's comment: “an input to the proof: the stalk of a torsion abelian étale sheaf at a geometric point is a torsion abelian group”.
 
 > The stalk of a torsion abelian étale sheaf at a geometric point is a torsion abelian group.
 
@@ -172,7 +172,7 @@ public theorem exists_nsmul_eq_zero_etaleStalk (t : GeometricPoint S)
     ∃ n : ℕ, 0 < n ∧ n • g = 0
 ```
 
-**`AlgebraicGeometry.SmallEtale.torsionSheafProperty_of_forall_etaleStalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekTorsion.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekTorsion.lean#L100). The attribute's comment: “the stalk criterion used by the proof: an abelian étale sheaf whose stalks at all geometric points are torsion is a torsion abelian sheaf”.
+**`AlgebraicGeometry.SmallEtale.torsionSheafProperty_of_forall_etaleStalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekTorsion.lean, line 100](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekTorsion.lean#L100). The attribute's comment: “the stalk criterion used by the proof: an abelian étale sheaf whose stalks at all geometric points are torsion is a torsion abelian sheaf”.
 
 > An abelian étale sheaf whose stalks at all geometric points are torsion abelian groups is a
 > torsion abelian sheaf.
@@ -185,7 +185,7 @@ public theorem torsionSheafProperty_of_forall_etaleStalk
     torsionSheafProperty (SmallEtale.topology B S hS) F
 ```
 
-**`AlgebraicGeometry.SmallEtale.torsionSheafProperty_fShriekFunctor_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekTorsion.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FShriekTorsion.lean#L134). The attribute's comment: “the abelian-sheaf case: `f_!` of a locally quasi-finite morphism sends a torsion abelian sheaf to a torsion abelian sheaf. The statement for a general coefficient ring is `AlgebraicGeometry.SmallEtale.moduleTorsionCohomologyProperty_moduleFShriekDerivedFunctor`”.
+**`AlgebraicGeometry.SmallEtale.torsionSheafProperty_fShriekFunctor_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FShriekTorsion.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FShriekTorsion.lean#L134). The attribute's comment: “the abelian-sheaf case: `f_!` of a locally quasi-finite morphism sends a torsion abelian sheaf to a torsion abelian sheaf. The statement for a general coefficient ring is `AlgebraicGeometry.SmallEtale.moduleTorsionCohomologyProperty_moduleFShriekDerivedFunctor`”.
 
 > The direct image with compact support `f_!` of a locally quasi-finite morphism sends a torsion
 > abelian sheaf on the small étale site of `X` to a torsion abelian sheaf on the small étale site of
@@ -202,7 +202,7 @@ public theorem torsionSheafProperty_fShriekFunctor_obj (F : AbelianSheaf.{u, v} 
 
 [Tag 0GKK](https://stacks.math.columbia.edu/tag/0GKK) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.exists_distTriang_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/CoverTriangle.lean, line 447](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/CoverTriangle.lean#L447). The attribute's comment: “abelian coefficients; first map carries the Mayer-Vietoris sign”.
+**`Stacks.EtaleCohomology.exists_distTriang_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/CoverTriangle.lean, line 447](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/CoverTriangle.lean#L447). The attribute's comment: “abelian coefficients; first map carries the Mayer-Vietoris sign”.
 
 > **Stacks Project, Tag 0GKK, for abelian coefficients.**  Let `X` be a scheme with
 > `X = U ∪ V` for open subschemes `U` and `V`.  For every object `K` of the derived category of
@@ -231,7 +231,7 @@ theorem exists_distTriang_cover
           (Sheaf X.smallEtaleTopology AddCommGrpCat.{max (u + 1) v}))
 ```
 
-**`Stacks.EtaleCohomology.exists_distTriang_etaleModuleCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/CoverTriangleModules.lean, line 517](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/CoverTriangleModules.lean#L517). The attribute's comment: “first map carries the Mayer-Vietoris sign”.
+**`Stacks.EtaleCohomology.exists_distTriang_etaleModuleCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/CoverTriangleModules.lean, line 517](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/CoverTriangleModules.lean#L517). The attribute's comment: “first map carries the Mayer-Vietoris sign”.
 
 > **Stacks Project, Tag 0GKK.**  Let `Λ` be a ring and let `X` be a scheme with `X = U ∪ V`
 > for open subschemes `U` and `V`.  For every object `K` of the derived category of sheaves of
@@ -263,7 +263,7 @@ theorem exists_distTriang_etaleModuleCover
 
 [Tag 0GKL](https://stacks.math.columbia.edu/tag/0GKL) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.exists_distTriang_extensionByZero_etaleAbelianDirectImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/DerivedOpenClosedTriangle.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/DerivedOpenClosedTriangle.lean#L191). The attribute's comment: “abelian coefficients”.
+**`Stacks.EtaleCohomology.exists_distTriang_extensionByZero_etaleAbelianDirectImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/DerivedOpenClosedTriangle.lean, line 191](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/DerivedOpenClosedTriangle.lean#L191). The attribute's comment: “abelian coefficients”.
 
 > **Stacks Project, Tag 0GKL, for abelian coefficients.**  Let `X` be a scheme, let
 > `i : Z ⟶ X` be a closed immersion and let `j : U ⟶ X` be an open immersion whose image is the
@@ -295,7 +295,7 @@ theorem exists_distTriang_extensionByZero_etaleAbelianDirectImage {Z U X : Schem
           (Sheaf X.smallEtaleTopology AddCommGrpCat.{max (u + 1) v}))
 ```
 
-**`Stacks.EtaleCohomology.exists_distTriang_etaleModuleExtensionByZero_directImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/ModuleOpenClosedTriangle.lean, line 386](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/ModuleOpenClosedTriangle.lean#L386).
+**`Stacks.EtaleCohomology.exists_distTriang_etaleModuleExtensionByZero_directImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/ModuleOpenClosedTriangle.lean, line 386](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ExtensionByZero/ModuleOpenClosedTriangle.lean#L386).
 
 > **Stacks Project, Tag 0GKL.**  Let `X` be a scheme, let `i : Z ⟶ X` be a closed immersion and
 > let `j : U ⟶ X` be an open immersion whose image is the complement of the image of `i`, and let
@@ -329,4 +329,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 63.7, Tag 0F5M](https://stacks.math.columbia.edu/tag/0F5M)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

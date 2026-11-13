@@ -8,13 +8,13 @@ proof: formalized
 
 # 97.9 Spaces of sections
 
-Section 97.9 of the Stacks Project, [Tag 05XZ](https://stacks.math.columbia.edu/tag/05XZ). 2 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 97.9 of the Stacks Project, [Tag 05XZ](https://stacks.math.columbia.edu/tag/05XZ). 2 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 05XQ, a lemma
 
 [Tag 05XQ](https://stacks.math.columbia.edu/tag/05XQ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isSurjective_restrictionOfScalars_projection_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ChartComparisonAssembly.lean, line 317](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ChartComparisonAssembly.lean#L317). The attribute's comment: “surjectivity of `Res_{Z_U/U}(W) ⟶ U` for `Z_U` a base change of a finite locally free morphism of algebraic spaces”.
+**`AlgebraicGeometry.Space.isSurjective_restrictionOfScalars_projection_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ChartComparisonAssembly.lean, line 317](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ChartComparisonAssembly.lean#L317). The attribute's comment: “surjectivity of `Res_{Z_U/U}(W) ⟶ U` for `Z_U` a base change of a finite locally free morphism of algebraic spaces”.
 
 > **Stacks 05XQ for the fibre data of Stacks 05YD.**  Let `z : Z ⟶ Q` be a finite locally free
 > morphism of algebraic spaces over `S`, let `U` be an object of the big fppf category over `S`,
@@ -42,7 +42,7 @@ theorem isSurjective_restrictionOfScalars_projection_of_isPullback
     IsSurjective B S hS (restrictionOfScalars B S hS w ζ).projection
 ```
 
-**`AlgebraicGeometry.Space.exists_surjective_etale_sectionsOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SectionSpaces.lean, line 331](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SectionSpaces.lean#L331).
+**`AlgebraicGeometry.Space.exists_surjective_etale_sectionsOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SectionSpaces.lean, line 331](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SectionSpaces.lean#L331).
 
 > **Stacks 05XQ.** Let `Z → U` be a finite morphism of schemes, let `W` be an algebraic space
 > over `U` and let `w : W → Z` be surjective and étale. Then there is a surjective étale morphism
@@ -58,7 +58,7 @@ theorem Space.exists_surjective_etale_sectionsOver (B : BigFppfSite.{u}) (U : Sc
       Etale (B.inclusion.map T.hom) ∧ Nonempty (Space.SectionsOver B U hU Z T W w)
 ```
 
-**`AlgebraicGeometry.Space.isSurjective_restrictionOfScalars_projection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SectionSpaces.lean, line 468](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SectionSpaces.lean#L468). The attribute's comment: “surjectivity of `Res_{Z/U}(W) ⟶ U` for `Z ⟶ U` finite”.
+**`AlgebraicGeometry.Space.isSurjective_restrictionOfScalars_projection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SectionSpaces.lean, line 468](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SectionSpaces.lean#L468). The attribute's comment: “surjectivity of `Res_{Z/U}(W) ⟶ U` for `Z ⟶ U` finite”.
 
 > **Stacks 05XQ.** Let `ζ : Z ⟶ U` be a morphism of the big fppf site of `S` whose underlying
 > morphism of schemes is finite, let `W` be an algebraic space over `S` and let `w : W ⟶ Z` be
@@ -84,7 +84,7 @@ theorem Space.isSurjective_restrictionOfScalars_projection (B : BigFppfSite.{u})
             schemeSpace U)).projection
 ```
 
-**`AlgebraicGeometry.Space.exists_surjective_etale_sectionOverBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SectionSpacesOverBase.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SectionSpacesOverBase.lean#L90).
+**`AlgebraicGeometry.Space.exists_surjective_etale_sectionOverBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SectionSpacesOverBase.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SectionSpacesOverBase.lean#L90).
 
 > **Stacks 05XQ over a base object of the site.** Let `ζ : Z ⟶ U` be a morphism of the big
 > fppf site of `S` whose underlying morphism of schemes is finite, let `W` be an algebraic space
@@ -111,7 +111,7 @@ theorem Space.exists_surjective_etale_sectionOverBase (B : BigFppfSite.{u}) (S :
 
 [Tag 05XR](https://stacks.math.columbia.edu/tag/05XR) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isAlgebraicSpace_isEtale_restrictionOfScalars_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FibreSectionsAlgebraicEtale.lean, line 310](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FibreSectionsAlgebraicEtale.lean#L310). The attribute's comment: “the restriction of scalars of a base change of a finite locally free morphism along an étale morphism is an algebraic space étale over the base”.
+**`AlgebraicGeometry.Space.isAlgebraicSpace_isEtale_restrictionOfScalars_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FibreSectionsAlgebraicEtale.lean, line 310](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FibreSectionsAlgebraicEtale.lean#L310). The attribute's comment: “the restriction of scalars of a base change of a finite locally free morphism along an étale morphism is an algebraic space étale over the base”.
 
 > **Stacks 05XR for the fibre data of Stacks 05YD and Stacks 05Y5.** Let `z : Z ⟶ Q` be a
 > finite locally free morphism of algebraic spaces over `S`, let `U` be an object of the big fppf
@@ -130,7 +130,7 @@ theorem isAlgebraicSpace_isEtale_restrictionOfScalars_of_isPullback
       IsEtale B S hS (restrictionOfScalars B S hS w ζ).projection
 ```
 
-**`AlgebraicGeometry.Space.isAlgebraicSpace_restrictionOfScalars`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IsFibreSectionsGeneral.lean, line 180](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/IsFibreSectionsGeneral.lean#L180). The attribute's comment: “algebraic space”.
+**`AlgebraicGeometry.Space.isAlgebraicSpace_restrictionOfScalars`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IsFibreSectionsGeneral.lean, line 180](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/IsFibreSectionsGeneral.lean#L180). The attribute's comment: “algebraic space”.
 
 > **Stacks 05XR, the algebraic space.** The restriction of scalars `Res_{Z/Q}(X)` of an étale
 > `x : X ⟶ Z` along a finite `z : Z ⟶ Q` is an algebraic space over `S`.
@@ -144,7 +144,7 @@ theorem isAlgebraicSpace_restrictionOfScalars (hx : IsEtale B S hS x.hom)
     IsAlgebraicSpace B S hS (restrictionOfScalars B S hS x z).presheaf
 ```
 
-**`AlgebraicGeometry.Space.isEtale_projection_restrictionOfScalars`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IsFibreSectionsGeneral.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/IsFibreSectionsGeneral.lean#L200). The attribute's comment: “étale morphism”.
+**`AlgebraicGeometry.Space.isEtale_projection_restrictionOfScalars`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IsFibreSectionsGeneral.lean, line 200](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/IsFibreSectionsGeneral.lean#L200). The attribute's comment: “étale morphism”.
 
 > **Stacks 05XR, the étale morphism.** The projection `Res_{Z/Q}(X) ⟶ Q` of the restriction of
 > scalars of an étale `x : X ⟶ Z` along a finite `z : Z ⟶ Q` is étale.
@@ -158,7 +158,7 @@ theorem isEtale_projection_restrictionOfScalars (hx : IsEtale B S hS x.hom)
     IsEtale B S hS (restrictionOfScalars B S hS x z).projection
 ```
 
-**`AlgebraicGeometry.Space.exists_sectionSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SectionSpace.lean, line 177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SectionSpace.lean#L177). The attribute's comment: “the functor”.
+**`AlgebraicGeometry.Space.exists_sectionSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SectionSpace.lean, line 177](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SectionSpace.lean#L177). The attribute's comment: “the functor”.
 
 > The natural, small-valued functor of sections of `W → Z` of Stacks 05XR exists: there
 > is a presheaf on the big fppf site of `U` whose value at `T` is the set of sections of
@@ -177,7 +177,7 @@ theorem exists_sectionSpace (Z : BigFppfOver B U hU)
             prod.map (yoneda.map f) (𝟙 (yoneda.obj Z)) ≫ ((e T) s).1
 ```
 
-**`AlgebraicGeometry.Space.isAlgebraicSpace_sectionSpace_of_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SectionSpaceChartSurjectiveEtale.lean, line 450](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SectionSpaceChartSurjectiveEtale.lean#L450). The attribute's comment: “the space of sections is an algebraic space, with no separatedness”.
+**`AlgebraicGeometry.Space.isAlgebraicSpace_sectionSpace_of_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SectionSpaceChartSurjectiveEtale.lean, line 450](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SectionSpaceChartSurjectiveEtale.lean#L450). The attribute's comment: “the space of sections is an algebraic space, with no separatedness”.
 
 > **Stacks 05XR, the algebraicity of the space of sections, in general.** Let `Z ⟶ U` be a
 > morphism of the big fppf site of `U` whose underlying morphism of schemes is finite, and let
@@ -195,7 +195,7 @@ theorem isAlgebraicSpace_sectionSpace_of_isEtale (hW : IsAlgebraicSpace B U hU W
     IsAlgebraicSpace B U hU (sectionSpace B U hU Z W w)
 ```
 
-**`AlgebraicGeometry.Space.isEtale_sectionSpace_of_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SectionSpaceChartSurjectiveEtale.lean, line 461](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SectionSpaceChartSurjectiveEtale.lean#L461). The attribute's comment: “the space of sections is étale over the base, with no separatedness”.
+**`AlgebraicGeometry.Space.isEtale_sectionSpace_of_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SectionSpaceChartSurjectiveEtale.lean, line 461](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SectionSpaceChartSurjectiveEtale.lean#L461). The attribute's comment: “the space of sections is étale over the base, with no separatedness”.
 
 > **Stacks 05XR, the étaleness of the space of sections over the base, in general.** Under the
 > hypotheses of `AlgebraicGeometry.Space.isAlgebraicSpace_sectionSpace_of_isEtale` the structure
@@ -208,7 +208,7 @@ theorem isEtale_sectionSpace_of_isEtale (hW : IsAlgebraicSpace B U hU W)
     IsEtale B U hU (terminal.from (sectionSpace B U hU Z W w))
 ```
 
-**`AlgebraicGeometry.Space.isAlgebraicSpace_sectionSpace_and_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SectionSpaceEtale.lean, line 618](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SectionSpaceEtale.lean#L618).
+**`AlgebraicGeometry.Space.isAlgebraicSpace_sectionSpace_and_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SectionSpaceEtale.lean, line 618](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SectionSpaceEtale.lean#L618).
 
 > **Stacks 05XR.** Let `Z ⟶ U` be a finite morphism of schemes, let `W` be an algebraic space
 > over `U` and let `w : W ⟶ Z` be étale. Then the functor of sections of `W_T ⟶ Z_T` over `T/U` is an
@@ -230,4 +230,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 97.9, Tag 05XZ](https://stacks.math.columbia.edu/tag/05XZ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

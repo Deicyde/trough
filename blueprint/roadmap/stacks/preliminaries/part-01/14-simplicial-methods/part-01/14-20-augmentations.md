@@ -8,7 +8,7 @@ proof: formalized
 
 # 14.20 Augmentations
 
-Section 14.20 of the Stacks Project, [Tag 018F](https://stacks.math.columbia.edu/tag/018F). 4 tags here are carried by 5 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 14.20 of the Stacks Project, [Tag 018F](https://stacks.math.columbia.edu/tag/018F). 4 tags here are carried by 5 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 018G, a definition
 
@@ -16,13 +16,13 @@ Section 14.20 of the Stacks Project, [Tag 018F](https://stacks.math.columbia.edu
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.SimplicialObject.Augmented`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.SimplicialObject.Augmented#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch14.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch14.lean#L119) (StacksFrontier). References: SGA 4 Vbis (1.2.6).
+- [`CategoryTheory.SimplicialObject.Augmented`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.SimplicialObject.Augmented#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch14.lean, line 120](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch14.lean#L120) (StacksFrontier). References: SGA 4 Vbis (1.2.6).
 
 ## Tag 018H, a lemma
 
 [Tag 018H](https://stacks.math.columbia.edu/tag/018H) in the Stacks Project.
 
-**`CategoryTheory.SimplicialObject.existsUnique_hom_const_app_zero_eq_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/CechNerve.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/CechNerve.lean#L106). The attribute's comment: “restriction to degree 0 is a bijection from augmentations of U towards X onto the morphisms ε₀ : U\_0 ⟶ X with ε₀ ∘ d^1\_0 = ε₀ ∘ d^1\_1”.
+**`CategoryTheory.SimplicialObject.existsUnique_hom_const_app_zero_eq_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/CechNerve.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/CechNerve.lean#L106). The attribute's comment: “restriction to degree 0 is a bijection from augmentations of U towards X onto the morphisms ε₀ : U\_0 ⟶ X with ε₀ ∘ d^1\_0 = ε₀ ∘ d^1\_1”.
 
 > Let `U` be a simplicial object of a category `C`, let `X : C` and let `ε₀ : U_0 ⟶ X`. Then `ε₀`
 > extends to a unique augmentation of `U` towards `X`, i.e. to a unique morphism
@@ -39,7 +39,7 @@ public theorem existsUnique_hom_const_app_zero_eq_iff (U : SimplicialObject C) (
 
 [Tag 018I](https://stacks.math.columbia.edu/tag/018I) in the Stacks Project.
 
-**`CategoryTheory.Arrow.truncation_bijective_into_cechNerve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/CechNerve.lean, line 417](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/CechNerve.lean#L417). The attribute's comment: “(1)”.
+**`CategoryTheory.Arrow.truncation_bijective_into_cechNerve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/CechNerve.lean, line 417](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/CechNerve.lean#L417). The attribute's comment: “(1)”.
 
 > For a simplicial object `V` and the Čech nerve `U` of `f : Y ⟶ X`,
 > the map `Mor(V, U) → Mor(sk₁ V, sk₁ U)`, `g ↦ sk₁ g`, induced by the `1`-truncation functor, is a
@@ -52,7 +52,7 @@ theorem truncation_bijective_into_cechNerve
       (fun g : V ⟶ cechNerve f => (truncation 1).map g)
 ```
 
-**`CategoryTheory.Arrow.truncated_mor_equiv_setOf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/CechNerve.lean, line 437](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/CechNerve.lean#L437). The attribute's comment: “(2)”.
+**`CategoryTheory.Arrow.truncated_mor_equiv_setOf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/CechNerve.lean, line 437](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/CechNerve.lean#L437). The attribute's comment: “(2)”.
 
 > Morphisms `sk₁ V ⟶ sk₁ U` of `1`-truncated simplicial objects
 > correspond bijectively to the morphisms `g₀ : V₀ ⟶ Y` satisfying
@@ -68,7 +68,7 @@ theorem truncated_mor_equiv_setOf
       ∀ g, (e g : V.obj (op (SimplexCategory.mk 0)) ⟶ f.left) = deg0Component g
 ```
 
-**`CategoryTheory.Arrow.cechNerve_isCoskeletal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/CechNerve.lean, line 518](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/CechNerve.lean#L518). The attribute's comment: “(3)”.
+**`CategoryTheory.Arrow.cechNerve_isCoskeletal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/CechNerve.lean, line 518](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/CechNerve.lean#L518). The attribute's comment: “(3)”.
 
 > The Čech nerve `U` is `1`-coskeletal: the unit
 > `U ⟶ cosk₁ (sk₁ U)` of the `sk₁`/`cosk₁` adjunction is an isomorphism.
@@ -83,7 +83,7 @@ theorem cechNerve_isCoskeletal
 
 [Tag 018J](https://stacks.math.columbia.edu/tag/018J) in the Stacks Project.
 
-**`CategoryTheory.SimplicialObject.existsUnique_hom_cechNerve_app_zero_comp_π_eq_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/CechNerve.lean, line 617](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicTopology/CechNerve.lean#L617). The attribute's comment: “the canonical morphism V ⟶ U, pinned as the unique morphism to the Čech nerve of ε₀ which is the identity of V\_0 in degree 0”.
+**`CategoryTheory.SimplicialObject.existsUnique_hom_cechNerve_app_zero_comp_π_eq_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicTopology/CechNerve.lean, line 617](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicTopology/CechNerve.lean#L617). The attribute's comment: “the canonical morphism V ⟶ U, pinned as the unique morphism to the Čech nerve of ε₀ which is the identity of V\_0 in degree 0”.
 
 > Let `C` be a category with fibre products, let `V` be a simplicial object of `C` and let
 > `ε : V ⟶ (const C).obj X` be an augmentation of `V` towards `X : C`, with degree `0` component
@@ -105,4 +105,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 14.20, Tag 018F](https://stacks.math.columbia.edu/tag/018F)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

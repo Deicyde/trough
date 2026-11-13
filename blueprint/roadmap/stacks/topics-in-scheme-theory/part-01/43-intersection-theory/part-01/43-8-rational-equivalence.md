@@ -1,38 +1,59 @@
 ---
 declaration: section
 origin: cited
-lean: Stacks.Chow.fibreDifferences, Stacks.Chow.rationalEquivalencesByFibres
+lean: Stacks.Chow.closedPointFibreDifferences, Stacks.Chow.rationalEquivalencesByClosedPoints, Stacks.Chow.rationalEquivalencesByClosedPoints_eq_rationalEquivalencesByFibres
 statement: formalized
 proof: formalized
 ---
 
 # 43.8 Rational Equivalence
 
-Section 43.8 of the Stacks Project, [Tag 0AZG](https://stacks.math.columbia.edu/tag/0AZG). 1 tag here is carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 43.8 of the Stacks Project, [Tag 0AZG](https://stacks.math.columbia.edu/tag/0AZG). 1 tag here is carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0AZG, the section
 
 [Tag 0AZG](https://stacks.math.columbia.edu/tag/0AZG) in the Stacks Project.
 
-**`Stacks.Chow.fibreDifferences`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/GeometricRationalEquivalence.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/GeometricRationalEquivalence.lean#L116). The attribute's comment: “the basic rational equivalence `[W_a]_k - [W_b]_k` of Section 43.8, with the pair of distinct closed points taken to be `a = 0` and `b = ∞`. That choice is the one the source itself makes (`A traditional choice is to choose a = 0 and b = ∞`); that an arbitrary pair of distinct closed points may be moved to it is the 2-transitivity of the automorphism group of the projective line, Tag 0B2U, which is not invoked here. Proper intersection of `W` with the two fibres is expressed, for an integral `W` of relative dimension `k + 1`, by asking that `W` be contained in neither section.”.
+**`Stacks.Chow.closedPointFibreDifferences`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/RationalEquivalence/ClosedPointFibreDifferences.lean, line 114](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Intersection/RationalEquivalence/ClosedPointFibreDifferences.lean#L114). The attribute's comment: “the basic rational equivalences `[W_a]_k - [W_b]_k` of Section 43.8, over an ARBITRARY pair of distinct closed points `a`, `b` of `P^1`. A closed point is a point of `P^1` whose singleton is closed, `X × a` is the image of `Stacks.Chow.closedPointSection`, and the fibre `W_a` is the scheme-theoretic preimage of `W` along that section, viewed as a closed subscheme of `X` as the source does. Proper intersection of an integral `W` of relative dimension `k + 1` with `X × a` and `X × b` is expressed by asking that `W` be contained in neither.”.
 
-> The basic rational equivalences: the differences `[W₀]ₖ - [W_∞]ₖ` of the cycles of the two
-> distinguished fibres of an integral closed subscheme `W ⊆ X ×_S 𝐏¹_S` of relative dimension
-> `k + 1` which is contained in neither distinguished section.
+> The basic rational equivalences of Section 43.8: the differences `[W_a]ₖ - [W_b]ₖ`, for `a`,
+> `b` an arbitrary pair of distinct closed points of `ℙ¹` and `W ⊆ X ×_S ℙ¹_S` an integral closed
+> subscheme of relative dimension `k + 1` contained in neither `X × a` nor `X × b`.
 
 ```lean
-def fibreDifferences (C : ChowSituation.{u}) {X : Scheme.{u}} (p : X ⟶ C.S)
-    [LocallyOfFiniteType p] (k : ℤ) : Set (CycleGroup C p k)
+def closedPointFibreDifferences (Kf : Type u) [Field Kf] [IsAlgClosed Kf]
+    (C : ChowSituation.{u}) (hC : C.S = AlgebraicGeometry.Spec (CommRingCat.of Kf))
+    {X : Scheme.{u}} (p : X ⟶ C.S) [LocallyOfFiniteType p] (k : ℤ) :
+    Set (CycleGroup C p k)
 ```
 
-**`Stacks.Chow.rationalEquivalencesByFibres`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/GeometricRationalEquivalence.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/GeometricRationalEquivalence.lean#L136). The attribute's comment: “the group of `k`-cycles rationally equivalent to zero of Section 43.8, the cycles `∑ nᵢ([W_{i, aᵢ}]_k - [W_{i, bᵢ}]_k)`, with every pair of closed points taken to be `0` and `∞` as in `Stacks.Chow.fibreDifferences`. The identification of the scheme-theoretic fibre `W_a` with the scheme-theoretic intersection `W ∩ X × a` inside `X × P¹`, also part of Section 43.8, is NOT carried: the fibre here is the scheme-theoretic preimage along the section, which is how the source views it as a closed subscheme of `X`, and no comparison with the intersection in `X × P¹` is proved.”.
+**`Stacks.Chow.rationalEquivalencesByClosedPoints`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/RationalEquivalence/ClosedPointFibreDifferences.lean, line 138](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Intersection/RationalEquivalence/ClosedPointFibreDifferences.lean#L138). The attribute's comment: “the group of `k`-cycles rationally equivalent to zero of Section 43.8, the cycles `∑ nᵢ([W_{i, aᵢ}]_k - [W_{i, bᵢ}]_k)` with an ARBITRARY pair of distinct closed points `aᵢ`, `bᵢ` of `P^1` for each `i`, as in `Stacks.Chow.closedPointFibreDifferences`.”.
 
-> The group of `k`-cycles rationally equivalent to zero in the geometric sense: the subgroup
-> of `Zₖ(X)` generated by the basic rational equivalences.
+> The group of `k`-cycles rationally equivalent to zero of Section 43.8: the subgroup of
+> `Zₖ(X)` generated by the differences `[W_a]ₖ - [W_b]ₖ` over all pairs of distinct closed points
+> of `ℙ¹`, that is, the cycles `∑ nᵢ([W_{i, aᵢ}]ₖ - [W_{i, bᵢ}]ₖ)`.
 
 ```lean
-def rationalEquivalencesByFibres (C : ChowSituation.{u}) {X : Scheme.{u}} (p : X ⟶ C.S)
-    [LocallyOfFiniteType p] (k : ℤ) : AddSubgroup (CycleGroup C p k)
+def rationalEquivalencesByClosedPoints (Kf : Type u) [Field Kf] [IsAlgClosed Kf]
+    (C : ChowSituation.{u}) (hC : C.S = AlgebraicGeometry.Spec (CommRingCat.of Kf))
+    {X : Scheme.{u}} (p : X ⟶ C.S) [LocallyOfFiniteType p] (k : ℤ) :
+    AddSubgroup (CycleGroup C p k)
+```
+
+**`Stacks.Chow.rationalEquivalencesByClosedPoints_eq_rationalEquivalencesByFibres`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/RationalEquivalence/ClosedPointFibreDifferences.lean, line 194](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Intersection/RationalEquivalence/ClosedPointFibreDifferences.lean#L194). The attribute's comment: “the remark of Section 43.8 that the pair of closed points may be moved to any pair we like, the traditional choice being `a = 0`, `b = ∞`: the group `Stacks.Chow.rationalEquivalencesByClosedPoints` built from arbitrary pairs of distinct closed points equals the group `Stacks.Chow.rationalEquivalencesByFibres` built from the pair `0`, `∞`. The source moves the pair by the 2-transitivity of the automorphism group of `P^1`; here the equality goes through the group of cycles rationally equivalent to zero of Chow homology, which both groups equal.”.
+
+> **The traditional choice `a = 0`, `b = ∞` gives the same group.** On a variety over an
+> algebraically closed field the group of `k`-cycles rationally equivalent to zero of Section 43.8,
+> built from arbitrary pairs of distinct closed points of `ℙ¹`, is generated by the fibre
+> differences `Stacks.Chow.fibreDifferences` at the single pair `0`, `∞`.
+
+```lean
+theorem rationalEquivalencesByClosedPoints_eq_rationalEquivalencesByFibres (Kf : Type u)
+    [Field Kf] [IsAlgClosed Kf] (C : ChowSituation.{u})
+    (hC : C.S = AlgebraicGeometry.Spec (CommRingCat.of Kf)) {X : Scheme.{u}}
+    (p : X ⟶ C.S) [LocallyOfFiniteType p]
+    [AlgebraicGeometry.IsVariety Kf (p ≫ eqToHom hC)] (k : ℤ) :
+    rationalEquivalencesByClosedPoints Kf C hC p k = rationalEquivalencesByFibres C p k
 ```
 
 ## Depends on
@@ -42,4 +63,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 43.8, Tag 0AZG](https://stacks.math.columbia.edu/tag/0AZG)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

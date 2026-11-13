@@ -8,13 +8,13 @@ proof: formalized
 
 # 66.16 Étale morphisms of algebraic spaces
 
-Section 66.16 of the Stacks Project, [Tag 03FQ](https://stacks.math.columbia.edu/tag/03FQ). 8 tags here are carried by 13 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 66.16 of the Stacks Project, [Tag 03FQ](https://stacks.math.columbia.edu/tag/03FQ). 8 tags here are carried by 13 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 03EC, a lemma
 
 [Tag 03EC](https://stacks.math.columbia.edu/tag/03EC) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.etale_comp_of_scheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleCharts.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EtaleCharts.lean#L163). The attribute's comment: “composition”.
+**`AlgebraicGeometry.Space.etale_comp_of_scheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleCharts.lean, line 163](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EtaleCharts.lean#L163). The attribute's comment: “composition”.
 
 > **Stacks 03EC.** An étale morphism of the big fppf site of `S` followed by an étale chart
 > of an algebraic space is again an étale chart.
@@ -32,7 +32,7 @@ theorem etale_comp_of_scheme {U U' : BigFppfOver B S hS}
       (BigFppfOver.toScheme B S hS)).presheaf (yoneda.map f ≫ g)
 ```
 
-**`AlgebraicGeometry.Space.etale_of_etale_charts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleCharts.lean, line 186](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EtaleCharts.lean#L186). The attribute's comment: “morphism\_between\_charts”.
+**`AlgebraicGeometry.Space.etale_of_etale_charts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleCharts.lean, line 186](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EtaleCharts.lean#L186). The attribute's comment: “morphism\_between\_charts”.
 
 > **Stacks 03EC.** A morphism of the big fppf site of `S` between two étale charts of a
 > presheaf is an étale morphism of schemes.
@@ -58,7 +58,7 @@ theorem etale_of_etale_charts {F : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u}
     AlgebraicGeometry.Etale ((BigFppfOver.toScheme B S hS).map χ)
 ```
 
-**`AlgebraicGeometry.Space.etale_of_comp_surjective_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleCharts.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EtaleCharts.lean#L220). The attribute's comment: “descent\_from\_chart”.
+**`AlgebraicGeometry.Space.etale_of_comp_surjective_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleCharts.lean, line 220](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EtaleCharts.lean#L220). The attribute's comment: “descent\_from\_chart”.
 
 > **Stacks 03EC.** Étaleness of a chart of an algebraic space descends along a surjective
 > étale morphism of the big fppf site of `S`: if `χ : U ⟶ U'` is surjective étale and
@@ -82,7 +82,7 @@ theorem etale_of_comp_surjective_etale {X : (BigFppfOver B S hS)ᵒᵖ ⥤ Type 
 
 [Tag 03FR](https://stacks.math.columbia.edu/tag/03FR) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsEtale`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms.lean, line 184](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms.lean#L184).
+**`AlgebraicGeometry.Space.IsEtale`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms.lean, line 184](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms.lean#L184).
 
 > **Stacks 03FR.** A morphism of algebraic spaces over `S` is *étale* when its composite
 > with every étale morphism from a representable presheaf into its source is again étale.
@@ -95,7 +95,7 @@ abbrev IsEtale {F G : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u} (f : F ⟶ G) : Pro
 
 [Tag 03FS](https://stacks.math.columbia.edu/tag/03FS) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isEtale_iff_exists_source_chart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleMorphisms.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EtaleMorphisms.lean#L113). The attribute's comment: “condition (2)”.
+**`AlgebraicGeometry.Space.isEtale_iff_exists_source_chart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleMorphisms.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EtaleMorphisms.lean#L113). The attribute's comment: “condition (2)”.
 
 > A morphism of algebraic spaces over `S` is étale exactly when its composite with some
 > surjective étale chart of its source is étale.
@@ -114,7 +114,7 @@ theorem isEtale_iff_exists_source_chart {F G : (BigFppfOver B S hS)ᵒᵖ ⥤ Ty
         IsEtale B S hS (p ≫ f)
 ```
 
-**`AlgebraicGeometry.Space.isEtale_iff_exists_target_chart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleMorphisms.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EtaleMorphisms.lean#L155). The attribute's comment: “condition (3)”.
+**`AlgebraicGeometry.Space.isEtale_iff_exists_target_chart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleMorphisms.lean, line 155](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EtaleMorphisms.lean#L155). The attribute's comment: “condition (3)”.
 
 > A morphism of algebraic spaces over `S` is étale exactly when its base change along some
 > surjective étale chart of its target is étale.
@@ -133,7 +133,7 @@ theorem isEtale_iff_exists_target_chart {F G : (BigFppfOver B S hS)ᵒᵖ ⥤ Ty
         IsEtale B S hS (pullback.snd f q)
 ```
 
-**`AlgebraicGeometry.Space.isEtale_iff_exists_etale_chart_square`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleMorphisms.lean, line 222](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EtaleMorphisms.lean#L222). The attribute's comment: “condition (4)”.
+**`AlgebraicGeometry.Space.isEtale_iff_exists_etale_chart_square`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleMorphisms.lean, line 222](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EtaleMorphisms.lean#L222). The attribute's comment: “condition (4)”.
 
 > A morphism of algebraic spaces over `S` is étale exactly when it fits in a commuting square
 > of charts, with the chart of the source surjective and étale, the chart of the target étale, and
@@ -157,7 +157,7 @@ theorem isEtale_iff_exists_etale_chart_square {F G : (BigFppfOver B S hS)ᵒᵖ 
         AlgebraicGeometry.Etale ((BigFppfOver.toScheme B S hS).map α)
 ```
 
-**`AlgebraicGeometry.Space.isEtale_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleTargetChartCriterion.lean, line 174](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EtaleTargetChartCriterion.lean#L174).
+**`AlgebraicGeometry.Space.isEtale_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleTargetChartCriterion.lean, line 174](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EtaleTargetChartCriterion.lean#L174).
 
 > **Stacks 03FS.** For a morphism `f : F ⟶ G` of algebraic spaces over `S` the following four
 > conditions are equivalent: `f` is étale; there is a surjective étale scheme chart of `F` whose
@@ -209,7 +209,7 @@ theorem isEtale_tfae (hF : IsAlgebraicSpace B S hS F)
 
 [Tag 03FT](https://stacks.math.columbia.edu/tag/03FT) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isEtale_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleMorphisms.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EtaleMorphisms.lean#L75).
+**`AlgebraicGeometry.Space.isEtale_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleMorphisms.lean, line 75](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EtaleMorphisms.lean#L75).
 
 > The composite of two étale morphisms of presheaves on the big fppf site of `S` is étale.
 
@@ -222,7 +222,7 @@ theorem isEtale_comp {F G H : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u} {f : F ⟶ 
 
 [Tag 03FU](https://stacks.math.columbia.edu/tag/03FU) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isEtale_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleMorphisms.lean, line 254](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EtaleMorphisms.lean#L254). References: SGA 1 IX (1.3).
+**`AlgebraicGeometry.Space.isEtale_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleMorphisms.lean, line 254](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EtaleMorphisms.lean#L254). References: SGA 1 IX (1.3).
 
 > A base change of an étale morphism of algebraic spaces over `S` is étale.
 
@@ -237,7 +237,7 @@ theorem isEtale_of_isPullback {X' X Z Y : AlgebraicSpaces B S hS}
 
 [Tag 03FV](https://stacks.math.columbia.edu/tag/03FV) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isEtale_of_isEtale_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleMorphisms.lean, line 378](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EtaleMorphisms.lean#L378).
+**`AlgebraicGeometry.Space.isEtale_of_isEtale_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleMorphisms.lean, line 378](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EtaleMorphisms.lean#L378).
 
 > A morphism between two algebraic spaces which are étale over a common algebraic space is
 > itself étale.
@@ -254,7 +254,7 @@ theorem isEtale_of_isEtale_over {F G H : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u}
 
 [Tag 03IR](https://stacks.math.columbia.edu/tag/03IR) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isOpenMap_pointsMap_of_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleOpenOnPoints.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EtaleOpenOnPoints.lean#L75).
+**`AlgebraicGeometry.Space.isOpenMap_pointsMap_of_isEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleOpenOnPoints.lean, line 75](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EtaleOpenOnPoints.lean#L75).
 
 > **Stacks 03IR.** An étale morphism `f : X ⟶ Y` of algebraic spaces over `S` induces an
 > open map `|X| → |Y|` on the point sets of Tag 03BU, for the topology of Tag 03BX.
@@ -273,7 +273,7 @@ theorem isOpenMap_pointsMap_of_isEtale (f : F ⟶ G) (hF : IsAlgebraicSpace B S 
 
 [Tag 03KX](https://stacks.math.columbia.edu/tag/03KX) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isRepresentable_of_etale_over_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/EtaleOverFieldRepresentable.lean, line 305](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/EtaleOverFieldRepresentable.lean#L305).
+**`AlgebraicGeometry.Space.isRepresentable_of_etale_over_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/EtaleOverFieldRepresentable.lean, line 305](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/EtaleOverFieldRepresentable.lean#L305).
 
 > **Stacks 03KX.** An algebraic space over `S` admitting an étale morphism to an object of the
 > big fppf site over `S` whose underlying scheme is the spectrum of a field is representable.
@@ -295,4 +295,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 66.16, Tag 03FQ](https://stacks.math.columbia.edu/tag/03FQ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

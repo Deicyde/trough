@@ -8,13 +8,13 @@ proof: formalized
 
 # 101.4 Separation axioms
 
-Section 101.4 of the Stacks Project, [Tag 04YV](https://stacks.math.columbia.edu/tag/04YV). 16 tags here are carried by 102 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 101.4 of the Stacks Project, [Tag 04YV](https://stacks.math.columbia.edu/tag/04YV). 16 tags here are carried by 102 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 04YW, a definition
 
 [Tag 04YW](https://stacks.math.columbia.edu/tag/04YW) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.IsDM`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/DeligneMumfordMorphism.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/DeligneMumfordMorphism.lean#L68). The attribute's comment: “dm”.
+**`AlgebraicGeometry.Stack.IsDM`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/DeligneMumfordMorphism.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/DeligneMumfordMorphism.lean#L68). The attribute's comment: “dm”.
 
 > **Stacks 04YW, the DM condition.** A 1-morphism of algebraic stacks over `S` is
 > *Deligne–Mumford* when its relative diagonal is representable by algebraic spaces and
@@ -26,7 +26,7 @@ Section 101.4 of the Stacks Project, [Tag 04YV](https://stacks.math.columbia.edu
 abbrev IsDM {𝒳 𝒴 : AlgebraicStacks.{u, w} B S hS} (f : 𝒳 ⟶ 𝒴) : Prop
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.IsQuasiDM`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationAxioms.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationAxioms.lean#L119). The attribute's comment: “quasi\_dm”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.IsQuasiDM`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationAxioms.lean, line 119](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationAxioms.lean#L119). The attribute's comment: “quasi\_dm”.
 
 > **Stacks 04YW, quasi-DM.** A 1-morphism of algebraic stacks over `S` is *quasi-DM* when its
 > relative diagonal `Δ_f : 𝒳 ⟶ 𝒳 ×_{f, 𝒴, f} 𝒳` is locally quasi-finite in the sense of Stacks
@@ -36,7 +36,7 @@ abbrev IsDM {𝒳 𝒴 : AlgebraicStacks.{u, w} B S hS} (f : 𝒳 ⟶ 𝒴) : Pr
 abbrev IsQuasiDM (f : 𝒳 ⟶ 𝒴) : Prop
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.IsSeparated`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationAxioms.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationAxioms.lean#L126). The attribute's comment: “separated”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.IsSeparated`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationAxioms.lean, line 126](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationAxioms.lean#L126). The attribute's comment: “separated”.
 
 > **Stacks 04YW, separated.** A 1-morphism of algebraic stacks over `S` is *separated* when its
 > relative diagonal `Δ_f : 𝒳 ⟶ 𝒳 ×_{f, 𝒴, f} 𝒳` is proper in the sense of Stacks 04XB.
@@ -45,7 +45,7 @@ abbrev IsQuasiDM (f : 𝒳 ⟶ 𝒴) : Prop
 abbrev IsSeparated (f : 𝒳 ⟶ 𝒴) : Prop
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.IsQuasiSeparated`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationAxioms.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationAxioms.lean#L133). The attribute's comment: “quasi\_separated”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.IsQuasiSeparated`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationAxioms.lean, line 133](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationAxioms.lean#L133). The attribute's comment: “quasi\_separated”.
 
 > **Stacks 04YW, quasi-separated.** A 1-morphism of algebraic stacks over `S` is
 > *quasi-separated* when its relative diagonal `Δ_f : 𝒳 ⟶ 𝒳 ×_{f, 𝒴, f} 𝒳` is quasi-compact and
@@ -59,7 +59,7 @@ abbrev IsQuasiSeparated (f : 𝒳 ⟶ 𝒴) : Prop
 
 [Tag 050D](https://stacks.math.columbia.edu/tag/050D) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.IsAbsolutelyDM`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationAbsolute.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationAbsolute.lean#L88). The attribute's comment: “part (5): absolute DM”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.IsAbsolutelyDM`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationAbsolute.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationAbsolute.lean#L88). The attribute's comment: “part (5): absolute DM”.
 
 > **Stacks 050D, part (5).** An algebraic stack is *DM* when it is DM over the terminal
 > scheme `Spec ℤ`.
@@ -68,7 +68,7 @@ abbrev IsQuasiSeparated (f : 𝒳 ⟶ 𝒴) : Prop
 noncomputable abbrev IsAbsolutelyDM (𝒳 : Stack.AlgebraicStacks.{u, w} B S hS) : Prop
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.IsAbsolutelyQuasiDM`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationAbsolute.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationAbsolute.lean#L94). The attribute's comment: “part (6): absolute quasi-DM”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.IsAbsolutelyQuasiDM`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationAbsolute.lean, line 94](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationAbsolute.lean#L94). The attribute's comment: “part (6): absolute quasi-DM”.
 
 > **Stacks 050D, part (6).** An algebraic stack is *quasi-DM* when it is quasi-DM over the
 > terminal scheme `Spec ℤ`.
@@ -77,7 +77,7 @@ noncomputable abbrev IsAbsolutelyDM (𝒳 : Stack.AlgebraicStacks.{u, w} B S hS)
 noncomputable abbrev IsAbsolutelyQuasiDM (𝒳 : Stack.AlgebraicStacks.{u, w} B S hS) : Prop
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.IsAbsolutelySeparated`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationAbsolute.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationAbsolute.lean#L100). The attribute's comment: “part (7): absolute separatedness”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.IsAbsolutelySeparated`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationAbsolute.lean, line 100](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationAbsolute.lean#L100). The attribute's comment: “part (7): absolute separatedness”.
 
 > **Stacks 050D, part (7).** An algebraic stack is *separated* when it is separated over the
 > terminal scheme `Spec ℤ`.
@@ -86,7 +86,7 @@ noncomputable abbrev IsAbsolutelyQuasiDM (𝒳 : Stack.AlgebraicStacks.{u, w} B 
 noncomputable abbrev IsAbsolutelySeparated (𝒳 : Stack.AlgebraicStacks.{u, w} B S hS) : Prop
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.IsAbsolutelyQuasiSeparated`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationAbsolute.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationAbsolute.lean#L106). The attribute's comment: “part (8): absolute quasi-separatedness”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.IsAbsolutelyQuasiSeparated`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationAbsolute.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationAbsolute.lean#L106). The attribute's comment: “part (8): absolute quasi-separatedness”.
 
 > **Stacks 050D, part (8).** An algebraic stack is *quasi-separated* when it is quasi-separated
 > over the terminal scheme `Spec ℤ`.
@@ -96,7 +96,7 @@ noncomputable abbrev IsAbsolutelyQuasiSeparated (𝒳 : Stack.AlgebraicStacks.{u
     Prop
 ```
 
-**`AlgebraicGeometry.Stack.IsDMAbs`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationAbsolute.lean, line 141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationAbsolute.lean#L141). The attribute's comment: “part (5): DM”.
+**`AlgebraicGeometry.Stack.IsDMAbs`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationAbsolute.lean, line 141](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationAbsolute.lean#L141). The attribute's comment: “part (5): DM”.
 
 > **Stacks 050D, part (5).** An algebraic stack is *DM* when it is DM over `Spec(ℤ)`, viewed as
 > an algebraic stack over `Spec(ℤ)` by **Stacks 04X6**.
@@ -105,7 +105,7 @@ noncomputable abbrev IsAbsolutelyQuasiSeparated (𝒳 : Stack.AlgebraicStacks.{u
 noncomputable abbrev IsDMAbs (𝒳 : AlgebraicStacks.{u, w} B S hS) : Prop
 ```
 
-**`AlgebraicGeometry.Stack.IsQuasiDMAbs`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationAbsolute.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationAbsolute.lean#L147). The attribute's comment: “part (6): quasi-DM”.
+**`AlgebraicGeometry.Stack.IsQuasiDMAbs`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationAbsolute.lean, line 147](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationAbsolute.lean#L147). The attribute's comment: “part (6): quasi-DM”.
 
 > **Stacks 050D, part (6).** An algebraic stack is *quasi-DM* when it is quasi-DM over
 > `Spec(ℤ)`, viewed as an algebraic stack over `Spec(ℤ)` by **Stacks 04X6**.
@@ -114,7 +114,7 @@ noncomputable abbrev IsDMAbs (𝒳 : AlgebraicStacks.{u, w} B S hS) : Prop
 noncomputable abbrev IsQuasiDMAbs (𝒳 : AlgebraicStacks.{u, w} B S hS) : Prop
 ```
 
-**`AlgebraicGeometry.Stack.IsSeparatedAbs`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationAbsolute.lean, line 153](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationAbsolute.lean#L153). The attribute's comment: “part (7): separated”.
+**`AlgebraicGeometry.Stack.IsSeparatedAbs`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationAbsolute.lean, line 153](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationAbsolute.lean#L153). The attribute's comment: “part (7): separated”.
 
 > **Stacks 050D, part (7).** An algebraic stack is *separated* when it is separated over
 > `Spec(ℤ)`, viewed as an algebraic stack over `Spec(ℤ)` by **Stacks 04X6**.
@@ -123,7 +123,7 @@ noncomputable abbrev IsQuasiDMAbs (𝒳 : AlgebraicStacks.{u, w} B S hS) : Prop
 noncomputable abbrev IsSeparatedAbs (𝒳 : AlgebraicStacks.{u, w} B S hS) : Prop
 ```
 
-**`AlgebraicGeometry.Stack.IsQuasiSeparatedAbs`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationAbsolute.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationAbsolute.lean#L159). The attribute's comment: “part (8): quasi-separated”.
+**`AlgebraicGeometry.Stack.IsQuasiSeparatedAbs`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationAbsolute.lean, line 159](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationAbsolute.lean#L159). The attribute's comment: “part (8): quasi-separated”.
 
 > **Stacks 050D, part (8).** An algebraic stack is *quasi-separated* when it is quasi-separated
 > over `Spec(ℤ)`, viewed as an algebraic stack over `Spec(ℤ)` by **Stacks 04X6**.
@@ -132,7 +132,7 @@ noncomputable abbrev IsSeparatedAbs (𝒳 : AlgebraicStacks.{u, w} B S hS) : Pro
 noncomputable abbrev IsQuasiSeparatedAbs (𝒳 : AlgebraicStacks.{u, w} B S hS) : Prop
 ```
 
-**`AlgebraicGeometry.Stack.IsDMOver`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationAxioms.lean, line 177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationAxioms.lean#L177). The attribute's comment: “part (1): DM over the base”.
+**`AlgebraicGeometry.Stack.IsDMOver`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationAxioms.lean, line 177](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationAxioms.lean#L177). The attribute's comment: “part (1): DM over the base”.
 
 > **Stacks 050D, part (1).** An algebraic stack over `S` is *DM over `S`* when its structure
 > morphism to the algebraic stack represented by `S` is DM in the sense of Stacks 04YW.
@@ -141,7 +141,7 @@ noncomputable abbrev IsQuasiSeparatedAbs (𝒳 : AlgebraicStacks.{u, w} B S hS) 
 noncomputable abbrev IsDMOver (𝒳 : AlgebraicStacks.{u, w} B S hS) : Prop
 ```
 
-**`AlgebraicGeometry.Stack.IsQuasiDMOver`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationAxioms.lean, line 184](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationAxioms.lean#L184). The attribute's comment: “part (2): quasi-DM over the base”.
+**`AlgebraicGeometry.Stack.IsQuasiDMOver`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationAxioms.lean, line 184](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationAxioms.lean#L184). The attribute's comment: “part (2): quasi-DM over the base”.
 
 > **Stacks 050D, part (2).** An algebraic stack over `S` is *quasi-DM over `S`* when its
 > structure morphism to the algebraic stack represented by `S` is quasi-DM in the sense of Stacks
@@ -151,7 +151,7 @@ noncomputable abbrev IsDMOver (𝒳 : AlgebraicStacks.{u, w} B S hS) : Prop
 noncomputable abbrev IsQuasiDMOver (𝒳 : AlgebraicStacks.{u, w} B S hS) : Prop
 ```
 
-**`AlgebraicGeometry.Stack.IsSeparatedOver`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationAxioms.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationAxioms.lean#L191). The attribute's comment: “part (3): separated over the base”.
+**`AlgebraicGeometry.Stack.IsSeparatedOver`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationAxioms.lean, line 191](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationAxioms.lean#L191). The attribute's comment: “part (3): separated over the base”.
 
 > **Stacks 050D, part (3).** An algebraic stack over `S` is *separated over `S`* when its
 > structure morphism to the algebraic stack represented by `S` is separated in the sense of Stacks
@@ -161,7 +161,7 @@ noncomputable abbrev IsQuasiDMOver (𝒳 : AlgebraicStacks.{u, w} B S hS) : Prop
 noncomputable abbrev IsSeparatedOver (𝒳 : AlgebraicStacks.{u, w} B S hS) : Prop
 ```
 
-**`AlgebraicGeometry.Stack.IsQuasiSeparatedOver`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationAxioms.lean, line 198](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationAxioms.lean#L198). The attribute's comment: “part (4): quasi-separated over the base”.
+**`AlgebraicGeometry.Stack.IsQuasiSeparatedOver`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationAxioms.lean, line 198](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationAxioms.lean#L198). The attribute's comment: “part (4): quasi-separated over the base”.
 
 > **Stacks 050D, part (4).** An algebraic stack over `S` is *quasi-separated over `S`* when its
 > structure morphism to the algebraic stack represented by `S` is quasi-separated in the sense of
@@ -175,7 +175,7 @@ noncomputable abbrev IsQuasiSeparatedOver (𝒳 : AlgebraicStacks.{u, w} B S hS)
 
 [Tag 050E](https://stacks.math.columbia.edu/tag/050E) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isUnramified_relativeDiagonal_of_isRepresentableByAlgebraicSpaces`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativeDiagonalUnramified.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RelativeDiagonalUnramified.lean#L169). The attribute's comment: “representable\_implies\_dm”.
+**`AlgebraicGeometry.Stack.isUnramified_relativeDiagonal_of_isRepresentableByAlgebraicSpaces`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativeDiagonalUnramified.lean, line 169](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/RelativeDiagonalUnramified.lean#L169). The attribute's comment: “representable\_implies\_dm”.
 
 > **Stacks 050E, part (3).** A 1-morphism of algebraic stacks which is representable by
 > algebraic spaces is Deligne–Mumford: its relative diagonal is representable by algebraic spaces
@@ -191,7 +191,7 @@ noncomputable abbrev IsQuasiSeparatedOver (𝒳 : AlgebraicStacks.{u, w} B S hS)
 theorem isUnramified_relativeDiagonal_of_isRepresentableByAlgebraicSpaces : IsDM B S hS f
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isQuasiDMWithRepresentableDiagonal_of_isDM`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationOverBase.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationOverBase.lean#L131). The attribute's comment: “dm\_implies\_quasi\_dm”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isQuasiDMWithRepresentableDiagonal_of_isDM`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationOverBase.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationOverBase.lean#L131). The attribute's comment: “dm\_implies\_quasi\_dm”.
 
 > **Stacks 050E.** A DM 1-morphism of algebraic stacks over `S` is quasi-DM.
 >
@@ -206,7 +206,7 @@ theorem isQuasiDMWithRepresentableDiagonal_of_isDM
     (hf : Stack.IsDM B S hS f) : IsQuasiDMWithRepresentableDiagonal B S hS f
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isQuasiSeparated_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationTrivialImplications.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationTrivialImplications.lean#L102). The attribute's comment: “part (1): separated implies quasi-separated”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isQuasiSeparated_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationTrivialImplications.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationTrivialImplications.lean#L102). The attribute's comment: “part (1): separated implies quasi-separated”.
 
 > **Stacks 050E, part (1).** A separated 1-morphism of algebraic stacks over `S` is
 > quasi-separated: its relative diagonal is proper, hence separated and of finite type, hence
@@ -217,7 +217,7 @@ theorem isQuasiSeparated_of_isSeparated {f : 𝒳 ⟶ 𝒴} (hf : IsSeparated B 
     IsQuasiSeparated B S hS f
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isQuasiDM_of_isDM`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationTrivialImplications.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationTrivialImplications.lean#L111). The attribute's comment: “part (2): DM implies quasi-DM”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isQuasiDM_of_isDM`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationTrivialImplications.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationTrivialImplications.lean#L111). The attribute's comment: “part (2): DM implies quasi-DM”.
 
 > **Stacks 050E, part (2).** A Deligne–Mumford 1-morphism of algebraic stacks over `S` is
 > quasi-DM: its relative diagonal is unramified, hence locally quasi-finite.
@@ -231,7 +231,7 @@ theorem isQuasiDM_of_isDM {f : 𝒳 ⟶ 𝒴} (hf : Stack.IsDM B S hS f) :
 
 [Tag 050F](https://stacks.math.columbia.edu/tag/050F) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isDM_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationBaseChange.lean, line 214](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationBaseChange.lean#L214). The attribute's comment: “dm”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isDM_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationBaseChange.lean, line 214](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationBaseChange.lean#L214). The attribute's comment: “dm”.
 
 > **Stacks 050F, DM.** The base change `q : 𝒳 ×_𝒴 𝒵 ⟶ 𝒵` of a Deligne–Mumford 1-morphism of
 > algebraic stacks over `S` is Deligne–Mumford: its relative diagonal is representable by algebraic
@@ -243,7 +243,7 @@ theorem isDM_baseChange (hf : Stack.IsDM B S hS f) :
     Stack.IsDM B S hS (twoFibreProductSquare B S hS f g).snd
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isQuasiDM_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationBaseChange.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationBaseChange.lean#L225). The attribute's comment: “quasi\_dm”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isQuasiDM_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationBaseChange.lean, line 225](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationBaseChange.lean#L225). The attribute's comment: “quasi\_dm”.
 
 > **Stacks 050F, quasi-DM.** The base change `q : 𝒳 ×_𝒴 𝒵 ⟶ 𝒵` of a quasi-DM 1-morphism of
 > algebraic stacks over `S` is quasi-DM: `Δ_q` is a base change of `Δ_f`, which is locally
@@ -254,7 +254,7 @@ theorem isQuasiDM_baseChange (hf : IsQuasiDM B S hS f) :
     IsQuasiDM B S hS (twoFibreProductSquare B S hS f g).snd
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isSeparated_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationBaseChange.lean, line 234](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationBaseChange.lean#L234). The attribute's comment: “separated”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isSeparated_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationBaseChange.lean, line 234](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationBaseChange.lean#L234). The attribute's comment: “separated”.
 
 > **Stacks 050F, separated.** The base change `q : 𝒳 ×_𝒴 𝒵 ⟶ 𝒵` of a separated 1-morphism of
 > algebraic stacks over `S` is separated: `Δ_q` is a base change of `Δ_f`, which is proper in the
@@ -265,7 +265,7 @@ theorem isSeparated_baseChange (hf : IsSeparated B S hS f) :
     IsSeparated B S hS (twoFibreProductSquare B S hS f g).snd
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isQuasiSeparated_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationBaseChange.lean, line 243](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationBaseChange.lean#L243). The attribute's comment: “quasi\_separated”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isQuasiSeparated_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationBaseChange.lean, line 243](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationBaseChange.lean#L243). The attribute's comment: “quasi\_separated”.
 
 > **Stacks 050F, quasi-separated.** The base change `q : 𝒳 ×_𝒴 𝒵 ⟶ 𝒵` of a quasi-separated
 > 1-morphism of algebraic stacks over `S` is quasi-separated: `Δ_q` is a base change of `Δ_f`,
@@ -280,7 +280,7 @@ theorem isQuasiSeparated_baseChange (hf : IsQuasiSeparated B S hS f) :
 
 [Tag 06TZ](https://stacks.math.columbia.edu/tag/06TZ) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isDM_of_isDM_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationFppfDescent.lean, line 303](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationFppfDescent.lean#L303). The attribute's comment: “dm\_descent”.
+**`AlgebraicGeometry.Stack.isDM_of_isDM_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationFppfDescent.lean, line 303](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationFppfDescent.lean#L303). The attribute's comment: “dm\_descent”.
 
 > **Stacks 06TZ, the Deligne–Mumford case.** Let `f : 𝒳 ⟶ 𝒴` be a 1-morphism of algebraic
 > stacks over `S` and let `g : 𝒴' ⟶ 𝒴` be surjective, flat and locally of finite presentation with
@@ -304,7 +304,7 @@ theorem isDM_of_isDM_baseChange (f : 𝒳 ⟶ 𝒴) (g : 𝒴' ⟶ 𝒴)
     IsDM B S hS f
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isQuasiDM_of_isQuasiDM_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationFppfDescent.lean, line 332](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationFppfDescent.lean#L332). The attribute's comment: “quasi\_dm\_descent”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isQuasiDM_of_isQuasiDM_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationFppfDescent.lean, line 332](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationFppfDescent.lean#L332). The attribute's comment: “quasi\_dm\_descent”.
 
 > **Stacks 06TZ, the quasi-DM case.** Let `f : 𝒳 ⟶ 𝒴` be a 1-morphism of algebraic stacks over
 > `S` and let `g : 𝒴' ⟶ 𝒴` be surjective, flat and locally of finite presentation with `𝒴'`
@@ -324,7 +324,7 @@ theorem isQuasiDM_of_isQuasiDM_baseChange (f : 𝒳 ⟶ 𝒴) (g : 𝒴' ⟶ �
     IsQuasiDM B S hS f
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isSeparated_of_isSeparated_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationFppfDescent.lean, line 354](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationFppfDescent.lean#L354). The attribute's comment: “separated\_descent”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isSeparated_of_isSeparated_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationFppfDescent.lean, line 354](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationFppfDescent.lean#L354). The attribute's comment: “separated\_descent”.
 
 > **Stacks 06TZ, the separated case.** Let `f : 𝒳 ⟶ 𝒴` be a 1-morphism of algebraic stacks over
 > `S` and let `g : 𝒴' ⟶ 𝒴` be surjective, flat and locally of finite presentation with `𝒴'`
@@ -345,7 +345,7 @@ theorem isSeparated_of_isSeparated_baseChange (f : 𝒳 ⟶ 𝒴) (g : 𝒴' ⟶
     IsSeparated B S hS f
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isQuasiSeparated_of_isQuasiSeparated_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationFppfDescent.lean, line 382](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationFppfDescent.lean#L382). The attribute's comment: “quasi\_separated\_descent”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isQuasiSeparated_of_isQuasiSeparated_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationFppfDescent.lean, line 382](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationFppfDescent.lean#L382). The attribute's comment: “quasi\_separated\_descent”.
 
 > **Stacks 06TZ, the quasi-separated case.** Let `f : 𝒳 ⟶ 𝒴` be a 1-morphism of algebraic
 > stacks over `S` and let `g : 𝒴' ⟶ 𝒴` be surjective, flat and locally of finite presentation with
@@ -372,7 +372,7 @@ theorem isQuasiSeparated_of_isQuasiSeparated_baseChange (f : 𝒳 ⟶ 𝒴) (g :
 
 [Tag 050G](https://stacks.math.columbia.edu/tag/050G) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isQuasiDMOver_changeOfBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationChangeOfBase.lean, line 141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationChangeOfBase.lean#L141). The attribute's comment: “quasi-DM over the base”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isQuasiDMOver_changeOfBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationChangeOfBase.lean, line 142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationChangeOfBase.lean#L142). The attribute's comment: “quasi-DM over the base”.
 
 > **Stacks 050G, the quasi-DM key.** Being quasi-DM over the base is stable under change of
 > base scheme.
@@ -383,7 +383,7 @@ theorem isQuasiDMOver_changeOfBase (𝒳' : AlgebraicStacks.{u, w} B S' hS')
     Stack.IsQuasiDMOver B S hS (Stack.changeOfBase B S S' hS hS' g 𝒳')
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isQuasiSeparatedOver_changeOfBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationChangeOfBase.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationChangeOfBase.lean#L164). The attribute's comment: “quasi-separated over the base”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isQuasiSeparatedOver_changeOfBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationChangeOfBase.lean, line 165](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationChangeOfBase.lean#L165). The attribute's comment: “quasi-separated over the base”.
 
 > **Stacks 050G, the quasi-separated key.** Being quasi-separated over the base is stable under
 > change of base scheme.
@@ -394,7 +394,7 @@ theorem isQuasiSeparatedOver_changeOfBase (𝒳' : AlgebraicStacks.{u, w} B S' h
     Stack.IsQuasiSeparatedOver B S hS (Stack.changeOfBase B S S' hS hS' g 𝒳')
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isSeparatedOver_changeOfBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationChangeOfBase.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationChangeOfBase.lean#L191). The attribute's comment: “separated over the base”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isSeparatedOver_changeOfBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationChangeOfBase.lean, line 192](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationChangeOfBase.lean#L192). The attribute's comment: “separated over the base”.
 
 > **Stacks 050G, the separated key.** Being separated over the base is stable under change of
 > base scheme.
@@ -409,7 +409,7 @@ theorem isSeparatedOver_changeOfBase (𝒳' : AlgebraicStacks.{u, w} B S' hS')
 
 [Tag 050H](https://stacks.math.columbia.edu/tag/050H) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpaces_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FibreProductComparison.lean, line 215](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FibreProductComparison.lean#L215). The attribute's comment: “part (1): representable by algebraic spaces”.
+**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpaces_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FibreProductComparison.lean, line 215](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FibreProductComparison.lean#L215). The attribute's comment: “part (1): representable by algebraic spaces”.
 
 > The comparison 1-morphism `i : 𝒳 ×_𝒵 𝒴 ⟶ 𝒳 ×_𝒯 𝒴` is representable by algebraic spaces.
 
@@ -419,7 +419,7 @@ theorem isRepresentableByAlgebraicSpaces_comparison
     IsRepresentableByAlgebraicSpaces B S hS (comparison B S hS f g h).hom.hom
 ```
 
-**`AlgebraicGeometry.Stack.isUnramified_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FibreProductComparison.lean, line 231](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FibreProductComparison.lean#L231). The attribute's comment: “dm\_unramified”.
+**`AlgebraicGeometry.Stack.isUnramified_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FibreProductComparison.lean, line 231](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FibreProductComparison.lean#L231). The attribute's comment: “dm\_unramified”.
 
 > If `h : 𝒵 ⟶ 𝒯` is Deligne–Mumford then the comparison 1-morphism
 > `i : 𝒳 ×_𝒵 𝒴 ⟶ 𝒳 ×_𝒯 𝒴` is unramified, in the sense of `HasRelativeProperty`. The statement
@@ -445,7 +445,7 @@ theorem isUnramified_comparison (f : 𝒳 ⟶ 𝒵) (g : 𝒴 ⟶ 𝒵) (h : �
       (isRepresentableByAlgebraicSpaces_comparison B S hS f g h)
 ```
 
-**`AlgebraicGeometry.Stack.isLocallyOfFiniteType_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FibreProductComparisonFiniteType.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FibreProductComparisonFiniteType.lean#L93). The attribute's comment: “part (1): locally of finite type”.
+**`AlgebraicGeometry.Stack.isLocallyOfFiniteType_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FibreProductComparisonFiniteType.lean, line 93](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FibreProductComparisonFiniteType.lean#L93). The attribute's comment: “part (1): locally of finite type”.
 
 > **Stacks 050H, part (1), locally-of-finite-type half.** The comparison 1-morphism
 > `i : 𝒳 ×_𝒵 𝒴 ⟶ 𝒳 ×_𝒯 𝒴` is locally of finite type, in the sense of Properties of Stacks,
@@ -462,7 +462,7 @@ theorem isLocallyOfFiniteType_comparison (f : 𝒳 ⟶ 𝒵) (g : 𝒴 ⟶ 𝒵)
     IsLocallyOfFiniteType B S hS (comparison B S hS f g h).hom
 ```
 
-**`AlgebraicGeometry.Stack.isQuasiSeparated_comparison_of_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FibreProductComparisonSeparation.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FibreProductComparisonSeparation.lean#L100). The attribute's comment: “quasi\_separated\_diagonal”.
+**`AlgebraicGeometry.Stack.isQuasiSeparated_comparison_of_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FibreProductComparisonSeparation.lean, line 100](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FibreProductComparisonSeparation.lean#L100). The attribute's comment: “quasi\_separated\_diagonal”.
 
 > If the relative diagonal `Δ_{𝒵/𝒯}` is quasi-separated, then so is the comparison 1-morphism
 > `i : 𝒳 ×_𝒵 𝒴 ⟶ 𝒳 ×_𝒯 𝒴`, both in the sense of Properties of Stacks, Section 04XB.
@@ -473,7 +473,7 @@ theorem isQuasiSeparated_comparison_of_diagonal (f : 𝒳 ⟶ 𝒵) (g : 𝒴 �
     IsQuasiSeparated B S hS (comparison B S hS f g h).hom
 ```
 
-**`AlgebraicGeometry.Stack.isSeparated_comparison_of_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FibreProductComparisonSeparation.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FibreProductComparisonSeparation.lean#L108). The attribute's comment: “separated\_diagonal”.
+**`AlgebraicGeometry.Stack.isSeparated_comparison_of_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FibreProductComparisonSeparation.lean, line 108](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FibreProductComparisonSeparation.lean#L108). The attribute's comment: “separated\_diagonal”.
 
 > If the relative diagonal `Δ_{𝒵/𝒯}` is separated, then so is the comparison 1-morphism
 > `i : 𝒳 ×_𝒵 𝒴 ⟶ 𝒳 ×_𝒯 𝒴`, both in the sense of Properties of Stacks, Section 04XB.
@@ -484,7 +484,7 @@ theorem isSeparated_comparison_of_diagonal (f : 𝒳 ⟶ 𝒵) (g : 𝒴 ⟶ �
     IsSeparated B S hS (comparison B S hS f g h).hom
 ```
 
-**`AlgebraicGeometry.Stack.isLocallyQuasiFinite_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FibreProductComparisonSeparation.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FibreProductComparisonSeparation.lean#L116). The attribute's comment: “quasi\_dm\_lqf”.
+**`AlgebraicGeometry.Stack.isLocallyQuasiFinite_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FibreProductComparisonSeparation.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FibreProductComparisonSeparation.lean#L116). The attribute's comment: “quasi\_dm\_lqf”.
 
 > If `h : 𝒵 ⟶ 𝒯` is quasi-DM then the comparison 1-morphism `i : 𝒳 ×_𝒵 𝒴 ⟶ 𝒳 ×_𝒯 𝒴` is
 > locally quasi-finite, in the sense of Properties of Stacks, Section 04XB.
@@ -495,7 +495,7 @@ theorem isLocallyQuasiFinite_comparison (f : 𝒳 ⟶ 𝒵) (g : 𝒴 ⟶ 𝒵) 
     IsLocallyQuasiFinite B S hS (comparison B S hS f g h).hom
 ```
 
-**`AlgebraicGeometry.Stack.isProper_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FibreProductComparisonSeparation.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FibreProductComparisonSeparation.lean#L125). The attribute's comment: “separated\_proper”.
+**`AlgebraicGeometry.Stack.isProper_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FibreProductComparisonSeparation.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FibreProductComparisonSeparation.lean#L125). The attribute's comment: “separated\_proper”.
 
 > If `h : 𝒵 ⟶ 𝒯` is separated then the comparison 1-morphism `i : 𝒳 ×_𝒵 𝒴 ⟶ 𝒳 ×_𝒯 𝒴` is
 > proper, in the sense of Properties of Stacks, Section 04XB.
@@ -506,7 +506,7 @@ theorem isProper_comparison (f : 𝒳 ⟶ 𝒵) (g : 𝒴 ⟶ 𝒵) (h : 𝒵 �
     IsProper B S hS (comparison B S hS f g h).hom
 ```
 
-**`AlgebraicGeometry.Stack.isQuasiCompact_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FibreProductComparisonSeparation.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FibreProductComparisonSeparation.lean#L134). The attribute's comment: “part (7), the quasi-compactness half”.
+**`AlgebraicGeometry.Stack.isQuasiCompact_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FibreProductComparisonSeparation.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FibreProductComparisonSeparation.lean#L134). The attribute's comment: “part (7), the quasi-compactness half”.
 
 > If `h : 𝒵 ⟶ 𝒯` is quasi-separated as a 1-morphism of algebraic stacks, then the comparison
 > 1-morphism `i : 𝒳 ×_𝒵 𝒴 ⟶ 𝒳 ×_𝒯 𝒴` is quasi-compact, in the sense of Properties of Stacks,
@@ -518,7 +518,7 @@ theorem isQuasiCompact_comparison (f : 𝒳 ⟶ 𝒵) (g : 𝒴 ⟶ 𝒵) (h : �
     IsQuasiCompact B S hS (comparison B S hS f g h).hom
 ```
 
-**`AlgebraicGeometry.Stack.isQuasiSeparated_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FibreProductComparisonSeparation.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FibreProductComparisonSeparation.lean#L146). The attribute's comment: “part (7), the quasi-separatedness half”.
+**`AlgebraicGeometry.Stack.isQuasiSeparated_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FibreProductComparisonSeparation.lean, line 146](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FibreProductComparisonSeparation.lean#L146). The attribute's comment: “part (7), the quasi-separatedness half”.
 
 > If `h : 𝒵 ⟶ 𝒯` is quasi-separated as a 1-morphism of algebraic stacks, then the comparison
 > 1-morphism `i : 𝒳 ×_𝒵 𝒴 ⟶ 𝒳 ×_𝒯 𝒴` is quasi-separated, in the sense of Properties of Stacks,
@@ -530,7 +530,7 @@ theorem isQuasiSeparated_comparison (f : 𝒳 ⟶ 𝒵) (g : 𝒴 ⟶ 𝒵) (h :
     IsQuasiSeparated B S hS (comparison B S hS f g h).hom
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isQuasiSeparated_mapBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationFibreProductProperties.lean, line 178](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationFibreProductProperties.lean#L178). The attribute's comment: “part (2): quasi-separated”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isQuasiSeparated_mapBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationFibreProductProperties.lean, line 178](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationFibreProductProperties.lean#L178). The attribute's comment: “part (2): quasi-separated”.
 
 > **Stacks 050H, part (2).** If the relative diagonal `Δ_{𝒵/𝒯}` is quasi-separated in the sense
 > of Stacks 04XB, then so is the comparison 1-morphism `i : 𝒳 ×_𝒵 𝒴 ⟶ 𝒳 ×_𝒯 𝒴`.
@@ -542,7 +542,7 @@ theorem isQuasiSeparated_mapBase
     Stack.IsQuasiSeparated.{u, u, u + 1} B S hS (mapBase B S hS f g h).hom
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isSeparated_mapBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationFibreProductProperties.lean, line 188](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationFibreProductProperties.lean#L188). The attribute's comment: “part (3): separated”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isSeparated_mapBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationFibreProductProperties.lean, line 188](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationFibreProductProperties.lean#L188). The attribute's comment: “part (3): separated”.
 
 > **Stacks 050H, part (3).** If the relative diagonal `Δ_{𝒵/𝒯}` is separated in the sense of
 > Stacks 04XB, then so is the comparison 1-morphism `i : 𝒳 ×_𝒵 𝒴 ⟶ 𝒳 ×_𝒯 𝒴`.
@@ -554,7 +554,7 @@ theorem isSeparated_mapBase
     Stack.IsSeparated.{u, u, u + 1} B S hS (mapBase B S hS f g h).hom
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isUnramified_mapBase_of_isDM`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationFibreProductProperties.lean, line 199](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationFibreProductProperties.lean#L199). The attribute's comment: “part (4): unramified”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isUnramified_mapBase_of_isDM`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationFibreProductProperties.lean, line 199](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationFibreProductProperties.lean#L199). The attribute's comment: “part (4): unramified”.
 
 > **Stacks 050H, part (4).** If `h : 𝒵 ⟶ 𝒯` is Deligne–Mumford, then the comparison 1-morphism
 > `i : 𝒳 ×_𝒵 𝒴 ⟶ 𝒳 ×_𝒯 𝒴` is unramified in the sense of Stacks 04XB: `i` is a base change of
@@ -579,7 +579,7 @@ theorem isUnramified_mapBase_of_isDM (hh : Stack.IsDM B S hS h) :
             ((spacesOverSmallerBaseFunctor B U.left.1 S U.left.2 hS U.hom).obj ⟨F, hF⟩)).hom
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isLocallyQuasiFinite_mapBase_of_isQuasiDM`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationFibreProductProperties.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationFibreProductProperties.lean#L221). The attribute's comment: “part (5): locally quasi-finite”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isLocallyQuasiFinite_mapBase_of_isQuasiDM`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationFibreProductProperties.lean, line 221](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationFibreProductProperties.lean#L221). The attribute's comment: “part (5): locally quasi-finite”.
 
 > **Stacks 050H, part (5).** If `h : 𝒵 ⟶ 𝒯` is quasi-DM, then the comparison 1-morphism
 > `i : 𝒳 ×_𝒵 𝒴 ⟶ 𝒳 ×_𝒯 𝒴` is locally quasi-finite in the sense of Stacks 04XB.
@@ -589,7 +589,7 @@ theorem isLocallyQuasiFinite_mapBase_of_isQuasiDM (hh : IsQuasiDM B S hS h) :
     Stack.IsLocallyQuasiFinite.{u, u, u + 1} B S hS (mapBase B S hS f g h).hom
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isProper_mapBase_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationFibreProductProperties.lean, line 229](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationFibreProductProperties.lean#L229). The attribute's comment: “part (6): proper”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isProper_mapBase_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationFibreProductProperties.lean, line 229](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationFibreProductProperties.lean#L229). The attribute's comment: “part (6): proper”.
 
 > **Stacks 050H, part (6).** If `h : 𝒵 ⟶ 𝒯` is separated, then the comparison 1-morphism
 > `i : 𝒳 ×_𝒵 𝒴 ⟶ 𝒳 ×_𝒯 𝒴` is proper in the sense of Stacks 04XB.
@@ -599,7 +599,7 @@ theorem isProper_mapBase_of_isSeparated (hh : IsSeparated B S hS h) :
     Stack.IsProper.{u, u, u + 1} B S hS (mapBase B S hS f g h).hom
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isQuasiCompactAndQuasiSeparated_mapBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationFibreProductProperties.lean, line 237](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationFibreProductProperties.lean#L237). The attribute's comment: “part (7): quasi-compact and quasi-separated”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isQuasiCompactAndQuasiSeparated_mapBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationFibreProductProperties.lean, line 237](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationFibreProductProperties.lean#L237). The attribute's comment: “part (7): quasi-compact and quasi-separated”.
 
 > **Stacks 050H, part (7).** If `h : 𝒵 ⟶ 𝒯` is quasi-separated, then the comparison 1-morphism
 > `i : 𝒳 ×_𝒵 𝒴 ⟶ 𝒳 ×_𝒯 𝒴` is quasi-compact and quasi-separated in the sense of Stacks 04XB.
@@ -615,7 +615,7 @@ theorem isQuasiCompactAndQuasiSeparated_mapBase
 
 [Tag 050I](https://stacks.math.columbia.edu/tag/050I) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpaces_graph`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GraphMorphism.lean, line 563](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GraphMorphism.lean#L563). The attribute's comment: “part (1): representable by algebraic spaces”.
+**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpaces_graph`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GraphMorphism.lean, line 563](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/GraphMorphism.lean#L563). The attribute's comment: “part (1): representable by algebraic spaces”.
 
 > **Stacks 050I, part (1), representability half.** The graph of a 1-morphism of algebraic
 > stacks over a base algebraic stack is representable by algebraic spaces.
@@ -630,7 +630,7 @@ theorem isRepresentableByAlgebraicSpaces_graph (g : 𝒳 ⟶ 𝒴) (p : 𝒳 ⟶
     IsRepresentableByAlgebraicSpaces B S hS (graph B S hS g p q η).hom.hom
 ```
 
-**`AlgebraicGeometry.Stack.isUnramified_graph`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GraphMorphism.lean, line 680](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GraphMorphism.lean#L680). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.Stack.isUnramified_graph`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GraphMorphism.lean, line 680](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/GraphMorphism.lean#L680). The attribute's comment: “part (2)”.
 
 > **Stacks 050I, part (2).** If `q : 𝒴 ⟶ 𝒯` is Deligne–Mumford then the graph of `g : 𝒳 ⟶ 𝒴`
 > over `𝒯` is unramified, in the relative sense of Stacks 03YK.
@@ -659,7 +659,7 @@ theorem isUnramified_graph (g : 𝒳 ⟶ 𝒴) (p : 𝒳 ⟶ 𝒯) (q : 𝒴 ⟶
       (isRepresentableByAlgebraicSpaces_graph B S hS g p q η)
 ```
 
-**`AlgebraicGeometry.Stack.isLocallyOfFiniteType_graph`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GraphMorphism.lean, line 712](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GraphMorphism.lean#L712). The attribute's comment: “part (1): locally of finite type”.
+**`AlgebraicGeometry.Stack.isLocallyOfFiniteType_graph`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GraphMorphism.lean, line 712](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/GraphMorphism.lean#L712). The attribute's comment: “part (1): locally of finite type”.
 
 > **Stacks 050I, part (1), locally-of-finite-type half.** The graph of a 1-morphism of
 > algebraic stacks over a base algebraic stack is locally of finite type, in the sense of
@@ -676,7 +676,7 @@ theorem isLocallyOfFiniteType_graph (g : 𝒳 ⟶ 𝒴) (p : 𝒳 ⟶ 𝒯) (q :
     IsLocallyOfFiniteType B S hS (graph B S hS g p q η).hom
 ```
 
-**`AlgebraicGeometry.Stack.isLocallyQuasiFinite_graph`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GraphMorphism.lean, line 726](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GraphMorphism.lean#L726). The attribute's comment: “part (3)”.
+**`AlgebraicGeometry.Stack.isLocallyQuasiFinite_graph`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GraphMorphism.lean, line 726](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/GraphMorphism.lean#L726). The attribute's comment: “part (3)”.
 
 > **Stacks 050I, part (3).** If `q : 𝒴 ⟶ 𝒯` is quasi-DM then the graph of `g : 𝒳 ⟶ 𝒴` over `𝒯`
 > is locally quasi-finite, in the sense of Properties of Stacks, Section 04XB.
@@ -692,7 +692,7 @@ theorem isLocallyQuasiFinite_graph (g : 𝒳 ⟶ 𝒴) (p : 𝒳 ⟶ 𝒯) (q : 
     IsLocallyQuasiFinite B S hS (graph B S hS g p q η).hom
 ```
 
-**`AlgebraicGeometry.Stack.isProper_graph`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GraphMorphism.lean, line 741](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GraphMorphism.lean#L741). The attribute's comment: “part (4)”.
+**`AlgebraicGeometry.Stack.isProper_graph`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GraphMorphism.lean, line 741](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/GraphMorphism.lean#L741). The attribute's comment: “part (4)”.
 
 > **Stacks 050I, part (4).** If `q : 𝒴 ⟶ 𝒯` is separated then the graph of `g : 𝒳 ⟶ 𝒴` over
 > `𝒯` is proper, in the sense of Properties of Stacks, Section 04XB.
@@ -708,7 +708,7 @@ theorem isProper_graph (g : 𝒳 ⟶ 𝒴) (p : 𝒳 ⟶ 𝒯) (q : 𝒴 ⟶ �
     IsProper B S hS (graph B S hS g p q η).hom
 ```
 
-**`AlgebraicGeometry.Stack.isQuasiCompact_graph`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GraphMorphism.lean, line 759](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GraphMorphism.lean#L759). The attribute's comment: “part (5): quasi-compact”.
+**`AlgebraicGeometry.Stack.isQuasiCompact_graph`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GraphMorphism.lean, line 759](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/GraphMorphism.lean#L759). The attribute's comment: “part (5): quasi-compact”.
 
 > **Stacks 050I, part (5), the quasi-compactness half.** If `q : 𝒴 ⟶ 𝒯` is quasi-separated
 > then the graph of `g : 𝒳 ⟶ 𝒴` over `𝒯` is quasi-compact, in the sense of Properties of Stacks,
@@ -727,7 +727,7 @@ theorem isQuasiCompact_graph (g : 𝒳 ⟶ 𝒴) (p : 𝒳 ⟶ 𝒯) (q : 𝒴 �
     IsQuasiCompact B S hS (graph B S hS g p q η).hom
 ```
 
-**`AlgebraicGeometry.Stack.isQuasiSeparated_graph`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GraphMorphism.lean, line 774](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GraphMorphism.lean#L774). The attribute's comment: “part (5): quasi-separated”.
+**`AlgebraicGeometry.Stack.isQuasiSeparated_graph`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GraphMorphism.lean, line 774](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/GraphMorphism.lean#L774). The attribute's comment: “part (5): quasi-separated”.
 
 > **Stacks 050I, part (5), the quasi-separatedness half.** If `q : 𝒴 ⟶ 𝒯` is quasi-separated
 > then the graph of `g : 𝒳 ⟶ 𝒴` over `𝒯` is quasi-separated, in the sense of Properties of Stacks,
@@ -747,7 +747,7 @@ theorem isQuasiSeparated_graph (g : 𝒳 ⟶ 𝒴) (p : 𝒳 ⟶ 𝒯) (q : 𝒴
 
 [Tag 050J](https://stacks.math.columbia.edu/tag/050J) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpaces_section`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SectionMorphism.lean, line 230](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SectionMorphism.lean#L230). The attribute's comment: “part (1): representable by algebraic spaces”.
+**`AlgebraicGeometry.Stack.isRepresentableByAlgebraicSpaces_section`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SectionMorphism.lean, line 231](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SectionMorphism.lean#L231). The attribute's comment: “part (1): representable by algebraic spaces”.
 
 > **Stacks 050J, part (1), representability half.** A section of a 1-morphism of algebraic
 > stacks is representable by algebraic spaces.
@@ -763,7 +763,7 @@ theorem isRepresentableByAlgebraicSpaces_section (f : 𝒳 ⟶ 𝒯) (s : 𝒯 �
     IsRepresentableByAlgebraicSpaces B S hS s.hom.hom
 ```
 
-**`AlgebraicGeometry.Stack.isLocallyOfFiniteType_section`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SectionMorphism.lean, line 359](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SectionMorphism.lean#L359). The attribute's comment: “part (1): locally of finite type”.
+**`AlgebraicGeometry.Stack.isLocallyOfFiniteType_section`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SectionMorphism.lean, line 360](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SectionMorphism.lean#L360). The attribute's comment: “part (1): locally of finite type”.
 
 > **Stacks 050J, part (1), locally-of-finite-type half.** A section of a 1-morphism of
 > algebraic stacks is locally of finite type, in the sense of Properties of Stacks, Section 04XB.
@@ -781,7 +781,7 @@ theorem isLocallyOfFiniteType_section (f : 𝒳 ⟶ 𝒯) (s : 𝒯 ⟶ 𝒳)
     IsLocallyOfFiniteType B S hS s.hom
 ```
 
-**`AlgebraicGeometry.Stack.isUnramified_section`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SectionMorphism.lean, line 375](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SectionMorphism.lean#L375). The attribute's comment: “part (2): unramified”.
+**`AlgebraicGeometry.Stack.isUnramified_section`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SectionMorphism.lean, line 376](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SectionMorphism.lean#L376). The attribute's comment: “part (2): unramified”.
 
 > **Stacks 050J, part (2).** If `f : 𝒳 ⟶ 𝒯` is Deligne–Mumford then a section of `f` is
 > unramified, in the relative sense of Stacks 03YK.
@@ -809,7 +809,7 @@ theorem isUnramified_section (f : 𝒳 ⟶ 𝒯) (s : 𝒯 ⟶ 𝒳) (hs : Nonem
       s.hom (isRepresentableByAlgebraicSpaces_section B S hS f s hs)
 ```
 
-**`AlgebraicGeometry.Stack.isLocallyQuasiFinite_section`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SectionMorphism.lean, line 406](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SectionMorphism.lean#L406). The attribute's comment: “part (3): locally quasi-finite”.
+**`AlgebraicGeometry.Stack.isLocallyQuasiFinite_section`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SectionMorphism.lean, line 407](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SectionMorphism.lean#L407). The attribute's comment: “part (3): locally quasi-finite”.
 
 > **Stacks 050J, part (3).** If `f : 𝒳 ⟶ 𝒯` is quasi-DM then a section of `f` is locally
 > quasi-finite, in the sense of Properties of Stacks, Section 04XB.
@@ -826,7 +826,7 @@ theorem isLocallyQuasiFinite_section (f : 𝒳 ⟶ 𝒯) (s : 𝒯 ⟶ 𝒳) (hs
     IsLocallyQuasiFinite B S hS s.hom
 ```
 
-**`AlgebraicGeometry.Stack.isRelativelyProper_section`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SectionMorphism.lean, line 434](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SectionMorphism.lean#L434). The attribute's comment: “part (4): proper”.
+**`AlgebraicGeometry.Stack.isRelativelyProper_section`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SectionMorphism.lean, line 435](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SectionMorphism.lean#L435). The attribute's comment: “part (4): proper”.
 
 > **Stacks 050J, part (4).** If `f : 𝒳 ⟶ 𝒯` is separated then a section of `f` is proper in
 > the sense of Properties of Stacks, Section 04XB.
@@ -854,7 +854,7 @@ theorem isRelativelyProper_section (f : 𝒳 ⟶ 𝒯) (s : 𝒯 ⟶ 𝒳) (hs :
     IsProper B S hS s.hom
 ```
 
-**`AlgebraicGeometry.Stack.isQuasiCompact_section`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SectionMorphism.lean, line 472](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SectionMorphism.lean#L472). The attribute's comment: “part (5): quasi-compact”.
+**`AlgebraicGeometry.Stack.isQuasiCompact_section`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SectionMorphism.lean, line 473](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SectionMorphism.lean#L473). The attribute's comment: “part (5): quasi-compact”.
 
 > **Stacks 050J, part (5), quasi-compactness half.** If `f : 𝒳 ⟶ 𝒯` is quasi-separated then a
 > section of `f` is quasi-compact in the sense of Stacks 050U: every base change of it by a
@@ -871,7 +871,7 @@ theorem isQuasiCompact_section (f : 𝒳 ⟶ 𝒯) (s : 𝒯 ⟶ 𝒳) (hs : Non
     IsQuasiCompactMorphism B S hS s
 ```
 
-**`AlgebraicGeometry.Stack.isQuasiSeparated_section`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SectionMorphism.lean, line 490](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SectionMorphism.lean#L490). The attribute's comment: “part (5): quasi-separated”.
+**`AlgebraicGeometry.Stack.isQuasiSeparated_section`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SectionMorphism.lean, line 491](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SectionMorphism.lean#L491). The attribute's comment: “part (5): quasi-separated”.
 
 > **Stacks 050J, part (5), quasi-separatedness half.** If `f : 𝒳 ⟶ 𝒯` is quasi-separated then
 > a section of `f` is quasi-separated, in the sense of Properties of Stacks, Section 04XB.
@@ -894,7 +894,7 @@ theorem isQuasiSeparated_section (f : 𝒳 ⟶ 𝒯) (s : 𝒯 ⟶ 𝒳) (hs : N
 
 [Tag 050K](https://stacks.math.columbia.edu/tag/050K) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isDM_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationComposition.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationComposition.lean#L149). The attribute's comment: “dm”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isDM_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationComposition.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationComposition.lean#L149). The attribute's comment: “dm”.
 
 > **Stacks 050K, DM.** The composite of two Deligne–Mumford 1-morphisms of algebraic stacks over
 > `S` is Deligne–Mumford: its relative diagonal is `Δ_f` followed by the comparison 1-morphism `i`,
@@ -908,7 +908,7 @@ theorem isDM_comp (f : 𝒳 ⟶ 𝒴) (g : 𝒴 ⟶ 𝒵) (hf : Stack.IsDM B S h
     (hg : Stack.IsDM B S hS g) : Stack.IsDM B S hS (f ≫ g)
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isQuasiDM_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationComposition.lean, line 247](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationComposition.lean#L247). The attribute's comment: “quasi-DM”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isQuasiDM_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationComposition.lean, line 247](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationComposition.lean#L247). The attribute's comment: “quasi-DM”.
 
 > **Stacks 050K, quasi-DM.** The composite of two quasi-DM 1-morphisms of algebraic stacks over
 > `S` is quasi-DM: `Δ_{f ≫ g}` is `Δ_f` followed by the comparison 1-morphism `i`, `Δ_f` is locally
@@ -922,7 +922,7 @@ theorem isQuasiDM_comp (f : 𝒳 ⟶ 𝒴) (g : 𝒴 ⟶ 𝒵) (hf : IsQuasiDM B
     (hg : IsQuasiDM B S hS g) : IsQuasiDM B S hS (f ≫ g)
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isSeparated_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationComposition.lean, line 264](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationComposition.lean#L264). The attribute's comment: “separated”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isSeparated_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationComposition.lean, line 264](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationComposition.lean#L264). The attribute's comment: “separated”.
 
 > **Stacks 050K, separated.** The composite of two separated 1-morphisms of algebraic stacks
 > over `S` is separated: `Δ_{f ≫ g}` is `Δ_f` followed by the comparison 1-morphism `i`, `Δ_f` is
@@ -936,7 +936,7 @@ theorem isSeparated_comp (f : 𝒳 ⟶ 𝒴) (g : 𝒴 ⟶ 𝒵) (hf : IsSeparat
     (hg : IsSeparated B S hS g) : IsSeparated B S hS (f ≫ g)
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isQuasiSeparated_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationComposition.lean, line 280](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationComposition.lean#L280). The attribute's comment: “quasi-separated”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isQuasiSeparated_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationComposition.lean, line 280](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationComposition.lean#L280). The attribute's comment: “quasi-separated”.
 
 > **Stacks 050K, quasi-separated.** The composite of two quasi-separated 1-morphisms of
 > algebraic stacks over `S` is quasi-separated. Quasi-separatedness of Stacks 04YW is the
@@ -956,7 +956,7 @@ theorem isQuasiSeparated_comp (f : 𝒳 ⟶ 𝒴) (g : 𝒴 ⟶ 𝒵) (hf : IsQu
 
 [Tag 050L](https://stacks.math.columbia.edu/tag/050L) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isAbsolutelyQuasiSeparated_of_isQuasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationAbsoluteQuasiSeparated.lean, line 73](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationAbsoluteQuasiSeparated.lean#L73). The attribute's comment: “quasi\_separated\_absolute”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isAbsolutelyQuasiSeparated_of_isQuasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationAbsoluteQuasiSeparated.lean, line 73](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationAbsoluteQuasiSeparated.lean#L73). The attribute's comment: “quasi\_separated\_absolute”.
 
 > **Stacks 050L, part (8).** If `f : 𝒳 ⟶ 𝒴` is quasi-separated and `𝒴` is quasi-separated, then
 > `𝒳` is quasi-separated.
@@ -974,7 +974,7 @@ theorem isAbsolutelyQuasiSeparated_of_isQuasiSeparated (f : 𝒳 ⟶ 𝒴)
     IsAbsolutelyQuasiSeparated B S hS hZ 𝒳
 ```
 
-**`AlgebraicGeometry.Stack.isSeparatedOver_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationAbsoluteSource.lean, line 341](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationAbsoluteSource.lean#L341). The attribute's comment: “part (3): separated over the base”.
+**`AlgebraicGeometry.Stack.isSeparatedOver_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationAbsoluteSource.lean, line 341](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationAbsoluteSource.lean#L341). The attribute's comment: “part (3): separated over the base”.
 
 > **Stacks 050L, part (3).** If `𝒴` is separated over `S` and the 1-morphism `f : 𝒳 ⟶ 𝒴` is
 > separated, then `𝒳` is separated over `S`.
@@ -989,7 +989,7 @@ theorem isSeparatedOver_of_isSeparated (f : 𝒳 ⟶ 𝒴) (h𝒴 : IsSeparatedO
     (hf : AlgebraicStacks.IsSeparated B S hS f) : IsSeparatedOver B S hS 𝒳
 ```
 
-**`AlgebraicGeometry.Stack.isDMAbs_of_isDM`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationAbsoluteSource.lean, line 372](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationAbsoluteSource.lean#L372). The attribute's comment: “part (5): DM”.
+**`AlgebraicGeometry.Stack.isDMAbs_of_isDM`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationAbsoluteSource.lean, line 372](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationAbsoluteSource.lean#L372). The attribute's comment: “part (5): DM”.
 
 > **Stacks 050L, part (5).** If `𝒴` is DM and the 1-morphism `f : 𝒳 ⟶ 𝒴` is DM, then `𝒳` is
 > DM — the two conditions on objects in the absolute sense of **Stacks 050D**, part (5).
@@ -1006,7 +1006,7 @@ theorem isDMAbs_of_isDM (f : 𝒳 ⟶ 𝒴) (h𝒴 : IsDMAbs.{u, w, w'} B S hS �
     (hf : IsDM B S hS f) : IsDMAbs.{u, w, w'} B S hS 𝒳
 ```
 
-**`AlgebraicGeometry.Stack.isQuasiDMAbs_of_isQuasiDM`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationAbsoluteSource.lean, line 389](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationAbsoluteSource.lean#L389). The attribute's comment: “part (6): quasi-DM”.
+**`AlgebraicGeometry.Stack.isQuasiDMAbs_of_isQuasiDM`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationAbsoluteSource.lean, line 389](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationAbsoluteSource.lean#L389). The attribute's comment: “part (6): quasi-DM”.
 
 > **Stacks 050L, part (6).** If `𝒴` is quasi-DM and the 1-morphism `f : 𝒳 ⟶ 𝒴` is quasi-DM,
 > then `𝒳` is quasi-DM — the two conditions on objects in the absolute sense of **Stacks 050D**,
@@ -1021,7 +1021,7 @@ theorem isQuasiDMAbs_of_isQuasiDM (f : 𝒳 ⟶ 𝒴) (h𝒴 : IsQuasiDMAbs.{u, 
     (hf : AlgebraicStacks.IsQuasiDM B S hS f) : IsQuasiDMAbs.{u, w, w'} B S hS 𝒳
 ```
 
-**`AlgebraicGeometry.Stack.isSeparatedAbs_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationAbsoluteSource.lean, line 409](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationAbsoluteSource.lean#L409). The attribute's comment: “part (7): separated, f's axiom read over Spec(Z) not over S”.
+**`AlgebraicGeometry.Stack.isSeparatedAbs_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationAbsoluteSource.lean, line 409](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationAbsoluteSource.lean#L409). The attribute's comment: “part (7): separated, f's axiom read over Spec(Z) not over S”.
 
 > **Stacks 050L, part (7).** If `𝒴` is separated and the 1-morphism `f : 𝒳 ⟶ 𝒴` is separated,
 > then `𝒳` is separated — the two conditions on objects in the absolute sense of **Stacks 050D**,
@@ -1041,7 +1041,7 @@ theorem isSeparatedAbs_of_isSeparated (f : 𝒳 ⟶ 𝒴) (h𝒴 : IsSeparatedAb
     IsSeparatedAbs.{u, w, w'} B S hS 𝒳
 ```
 
-**`AlgebraicGeometry.Stack.isQuasiSeparatedAbs_of_isQuasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationAbsoluteSource.lean, line 427](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationAbsoluteSource.lean#L427). The attribute's comment: “part (8): quasi-separated, f's axiom read over Spec(Z) not over S”.
+**`AlgebraicGeometry.Stack.isQuasiSeparatedAbs_of_isQuasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationAbsoluteSource.lean, line 427](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationAbsoluteSource.lean#L427). The attribute's comment: “part (8): quasi-separated, f's axiom read over Spec(Z) not over S”.
 
 > **Stacks 050L, part (8).** If `𝒴` is quasi-separated and the 1-morphism `f : 𝒳 ⟶ 𝒴` is
 > quasi-separated, then `𝒳` is quasi-separated — the two conditions on objects in the absolute
@@ -1062,7 +1062,7 @@ theorem isQuasiSeparatedAbs_of_isQuasiSeparated (f : 𝒳 ⟶ 𝒴)
     IsQuasiSeparatedAbs.{u, w, w'} B S hS 𝒳
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isDMOver_of_isDM`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationOverBaseSource.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationOverBaseSource.lean#L94). The attribute's comment: “dm\_over\_s”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isDMOver_of_isDM`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationOverBaseSource.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationOverBaseSource.lean#L95). The attribute's comment: “dm\_over\_s”.
 
 > **Stacks 050L, part (1).** If `f : 𝒳 ⟶ 𝒴` is Deligne–Mumford and `𝒴` is Deligne–Mumford over
 > the base scheme `S`, then `𝒳` is Deligne–Mumford over `S`.
@@ -1076,7 +1076,7 @@ theorem isDMOver_of_isDM (f : 𝒳 ⟶ 𝒴) (hY : Stack.IsDMOver B S hS 𝒴) (
     Stack.IsDMOver B S hS 𝒳
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isQuasiDMOver_of_isQuasiDM`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationOverBaseSource.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationOverBaseSource.lean#L107). The attribute's comment: “quasi\_dm\_over\_s”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isQuasiDMOver_of_isQuasiDM`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationOverBaseSource.lean, line 108](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationOverBaseSource.lean#L108). The attribute's comment: “quasi\_dm\_over\_s”.
 
 > **Stacks 050L, part (2).** If `f : 𝒳 ⟶ 𝒴` is quasi-DM and `𝒴` is quasi-DM over the base
 > scheme `S`, then `𝒳` is quasi-DM over `S`.
@@ -1091,7 +1091,7 @@ theorem isQuasiDMOver_of_isQuasiDM (f : 𝒳 ⟶ 𝒴) (hY : Stack.IsQuasiDMOver
     Stack.IsQuasiDMOver B S hS 𝒳
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isQuasiSeparatedOver_of_isQuasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationOverBaseSource.lean, line 121](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationOverBaseSource.lean#L121). The attribute's comment: “quasi\_separated\_over\_s”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isQuasiSeparatedOver_of_isQuasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationOverBaseSource.lean, line 122](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationOverBaseSource.lean#L122). The attribute's comment: “quasi\_separated\_over\_s”.
 
 > **Stacks 050L, part (4).** If `f : 𝒳 ⟶ 𝒴` is quasi-separated and `𝒴` is quasi-separated over
 > the base scheme `S`, then `𝒳` is quasi-separated over `S`.
@@ -1106,7 +1106,7 @@ theorem isQuasiSeparatedOver_of_isQuasiSeparated (f : 𝒳 ⟶ 𝒴)
     Stack.IsQuasiSeparatedOver B S hS 𝒳
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isAbsolutelyDM_of_isDM`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationOverBaseSource.lean, line 150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationOverBaseSource.lean#L150). The attribute's comment: “dm\_absolute”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isAbsolutelyDM_of_isDM`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationOverBaseSource.lean, line 151](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationOverBaseSource.lean#L151). The attribute's comment: “dm\_absolute”.
 
 > **Stacks 050L, part (5).** If `f : 𝒳 ⟶ 𝒴` is Deligne–Mumford and `𝒴` is Deligne–Mumford,
 > then `𝒳` is Deligne–Mumford.
@@ -1124,7 +1124,7 @@ theorem isAbsolutelyDM_of_isDM (f : 𝒳 ⟶ 𝒴) (hY : IsAbsolutelyDM B S hS h
     IsAbsolutelyDM B S hS hZ 𝒳
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isAbsolutelyQuasiDM_of_isQuasiDM`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationOverBaseSource.lean, line 170](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationOverBaseSource.lean#L170). The attribute's comment: “quasi\_dm\_absolute”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isAbsolutelyQuasiDM_of_isQuasiDM`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationOverBaseSource.lean, line 171](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationOverBaseSource.lean#L171). The attribute's comment: “quasi\_dm\_absolute”.
 
 > **Stacks 050L, part (6).** If `f : 𝒳 ⟶ 𝒴` is quasi-DM and `𝒴` is quasi-DM, then `𝒳` is
 > quasi-DM.
@@ -1143,7 +1143,7 @@ theorem isAbsolutelyQuasiDM_of_isQuasiDM (f : 𝒳 ⟶ 𝒴) (hY : IsAbsolutelyQ
     IsAbsolutelyQuasiDM B S hS hZ 𝒳
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isAbsolutelySeparated_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationOverBaseSource.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationOverBaseSource.lean#L191). The attribute's comment: “separated\_absolute”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isAbsolutelySeparated_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationOverBaseSource.lean, line 192](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationOverBaseSource.lean#L192). The attribute's comment: “separated\_absolute”.
 
 > **Stacks 050L, part (7).** If `f : 𝒳 ⟶ 𝒴` is separated and `𝒴` is separated, then `𝒳` is
 > separated.
@@ -1165,7 +1165,7 @@ theorem isAbsolutelySeparated_of_isSeparated (f : 𝒳 ⟶ 𝒴)
 
 [Tag 050M](https://stacks.math.columbia.edu/tag/050M) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isQuasiSeparated_of_isQuasiSeparated_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasiSeparatedCancellation.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/QuasiSeparatedCancellation.lean#L129). The attribute's comment: “quasi\_separated\_first”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isQuasiSeparated_of_isQuasiSeparated_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasiSeparatedCancellation.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/QuasiSeparatedCancellation.lean#L129). The attribute's comment: “quasi\_separated\_first”.
 
 > **Stacks 050M, part (4).** If a composite `f ≫ g` of 1-morphisms of algebraic stacks over `S`
 > is quasi-separated and the relative diagonal of `g` is quasi-separated, then `f` is
@@ -1189,7 +1189,7 @@ theorem isQuasiSeparated_of_isQuasiSeparated_comp
     IsQuasiSeparated B S hS f
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isQuasiDM_of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationCancellation.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationCancellation.lean#L137). The attribute's comment: “quasi\_dm\_first”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isQuasiDM_of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationCancellation.lean, line 137](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationCancellation.lean#L137). The attribute's comment: “quasi\_dm\_first”.
 
 > **Stacks 050M, part (2).** If a composite `f ≫ g` of 1-morphisms of algebraic stacks over `S`
 > is quasi-DM, then `f` is quasi-DM.
@@ -1207,7 +1207,7 @@ theorem isQuasiDM_of_comp {𝒳 𝒴 𝒵 : Stack.AlgebraicStacks.{u, w} B S hS}
     IsQuasiDM B S hS f
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isDM_of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationCancellation.lean, line 170](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationCancellation.lean#L170). The attribute's comment: “dm\_first”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isDM_of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationCancellation.lean, line 170](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationCancellation.lean#L170). The attribute's comment: “dm\_first”.
 
 > **Stacks 050M, part (1).** If a composite `f ≫ g` of 1-morphisms of algebraic stacks over `S`
 > is Deligne–Mumford, then `f` is Deligne–Mumford.
@@ -1226,7 +1226,7 @@ theorem isDM_of_comp {𝒳 𝒴 𝒵 : Stack.AlgebraicStacks.{u, w} B S hS}
     Stack.IsDM B S hS f
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isSeparated_of_comp_of_isSeparated_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationCancellation.lean, line 290](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationCancellation.lean#L290). The attribute's comment: “part (3): a separated composite whose second factor has separated relative diagonal has separated first factor”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isSeparated_of_comp_of_isSeparated_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationCancellation.lean, line 290](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationCancellation.lean#L290). The attribute's comment: “part (3): a separated composite whose second factor has separated relative diagonal has separated first factor”.
 
 > **Stacks 050M, part (3).** If a composite of 1-morphisms of algebraic stacks over `S` is
 > separated and the relative diagonal `Δ_g` of its second factor is separated in the sense of
@@ -1246,7 +1246,7 @@ theorem isSeparated_of_comp_of_isSeparated_diagonal (f : 𝒳 ⟶ 𝒴) (g : �
     IsSeparated B S hS f
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isQuasiSeparated_of_comp_of_isQuasiSeparated_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationCancellation.lean, line 317](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationCancellation.lean#L317). The attribute's comment: “part (4): a quasi-separated composite whose second factor has quasi-separated relative diagonal has quasi-separated first factor”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isQuasiSeparated_of_comp_of_isQuasiSeparated_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationCancellation.lean, line 317](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationCancellation.lean#L317). The attribute's comment: “part (4): a quasi-separated composite whose second factor has quasi-separated relative diagonal has quasi-separated first factor”.
 
 > **Stacks 050M, part (4).** If a composite of 1-morphisms of algebraic stacks over `S` is
 > quasi-separated and the relative diagonal `Δ_g` of its second factor is quasi-separated in the
@@ -1271,7 +1271,7 @@ theorem isQuasiSeparated_of_comp_of_isQuasiSeparated_diagonal (f : 𝒳 ⟶ 𝒴
 
 [Tag 050N](https://stacks.math.columbia.edu/tag/050N) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isQuasiSeparated_of_isQuasiSeparatedOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasiSeparatedCancellation.lean, line 170](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/QuasiSeparatedCancellation.lean#L170). The attribute's comment: “quasi\_separated\_source”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isQuasiSeparated_of_isQuasiSeparatedOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/QuasiSeparatedCancellation.lean, line 170](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/QuasiSeparatedCancellation.lean#L170). The attribute's comment: “quasi\_separated\_source”.
 
 > **Stacks 050N, part (8).** A 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks over `S` whose source
 > is quasi-separated over `S` and whose target has quasi-separated relative diagonal over `S` is
@@ -1293,7 +1293,7 @@ theorem isQuasiSeparated_of_isQuasiSeparatedOver
     IsQuasiSeparated B S hS f
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isAbsolutelyDM_iff_isDMOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationAbsoluteDMEquivalence.lean, line 165](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationAbsoluteDMEquivalence.lean#L165). The attribute's comment: “dm\_equiv”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isAbsolutelyDM_iff_isDMOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationAbsoluteDMEquivalence.lean, line 165](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationAbsoluteDMEquivalence.lean#L165). The attribute's comment: “dm\_equiv”.
 
 > **Stacks 050N, part (1).** An algebraic stack over `S` is Deligne–Mumford exactly when it is
 > Deligne–Mumford over `S`.
@@ -1303,7 +1303,7 @@ theorem isAbsolutelyDM_iff_isDMOver (𝒳 : Stack.AlgebraicStacks.{u, w} B S hS)
     IsAbsolutelyDM.{u, w} B S hS hZ 𝒳 ↔ Stack.IsDMOver B S hS 𝒳
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isAbsolutelyQuasiDM_iff_isQuasiDMOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationAbsoluteDMEquivalence.lean, line 173](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationAbsoluteDMEquivalence.lean#L173). The attribute's comment: “quasi\_dm\_equiv”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isAbsolutelyQuasiDM_iff_isQuasiDMOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationAbsoluteDMEquivalence.lean, line 173](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationAbsoluteDMEquivalence.lean#L173). The attribute's comment: “quasi\_dm\_equiv”.
 
 > **Stacks 050N, part (2).** An algebraic stack over `S` is quasi-DM exactly when it is
 > quasi-DM over `S`.
@@ -1313,7 +1313,7 @@ theorem isAbsolutelyQuasiDM_iff_isQuasiDMOver (𝒳 : Stack.AlgebraicStacks.{u, 
     IsAbsolutelyQuasiDM.{u, w} B S hS hZ 𝒳 ↔ Stack.IsQuasiDMOver B S hS 𝒳
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isQuasiSeparatedOver_of_isAbsolutelyQuasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationSmallerBase.lean, line 390](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationSmallerBase.lean#L390). The attribute's comment: “quasi\_separated\_base”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isQuasiSeparatedOver_of_isAbsolutelyQuasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationSmallerBase.lean, line 390](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationSmallerBase.lean#L390). The attribute's comment: “quasi\_separated\_base”.
 
 > **Stacks 050N, part (4): a quasi-separated algebraic stack is quasi-separated over its
 > base.** This is part (8) of Stacks 050D implying part (4): absolute quasi-separatedness is
@@ -1329,7 +1329,7 @@ theorem isQuasiSeparatedOver_of_isAbsolutelyQuasiSeparated
     Stack.IsQuasiSeparatedOver B S hS 𝒳
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isSeparatedOver_of_isAbsolutelySeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationSmallerBaseDMAndSeparated.lean, line 211](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationSmallerBaseDMAndSeparated.lean#L211). The attribute's comment: “separated\_base”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isSeparatedOver_of_isAbsolutelySeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationSmallerBaseDMAndSeparated.lean, line 211](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationSmallerBaseDMAndSeparated.lean#L211). The attribute's comment: “separated\_base”.
 
 > **Stacks 050N, the separated assertion: a separated algebraic stack is separated over its
 > base.** This is part (7) of Stacks 050D implying part (3): absolute separatedness is
@@ -1345,7 +1345,7 @@ theorem isSeparatedOver_of_isAbsolutelySeparated
     Stack.IsSeparatedOver B S hS 𝒳
 ```
 
-**`AlgebraicGeometry.Stack.isDMAbs_iff_isDMOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationSourceOverBase.lean, line 239](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationSourceOverBase.lean#L239). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.Stack.isDMAbs_iff_isDMOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationSourceOverBase.lean, line 239](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationSourceOverBase.lean#L239). The attribute's comment: “part (1)”.
 
 > **Stacks 050N, part (1).** An algebraic stack `𝒳` over `S` is DM **if and only if** it is DM
 > over `S`.
@@ -1364,7 +1364,7 @@ theorem isDMAbs_iff_isDMOver (𝒵 : AlgebraicStacks.{u, w} B S hS) :
     IsDMAbs.{u, w, w'} B S hS 𝒵 ↔ IsDMOver B S hS 𝒵
 ```
 
-**`AlgebraicGeometry.Stack.isQuasiDMAbs_iff_isQuasiDMOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationSourceOverBase.lean, line 252](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationSourceOverBase.lean#L252). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.Stack.isQuasiDMAbs_iff_isQuasiDMOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationSourceOverBase.lean, line 252](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationSourceOverBase.lean#L252). The attribute's comment: “part (2)”.
 
 > **Stacks 050N, part (2).** An algebraic stack `𝒳` over `S` is quasi-DM **if and only if** it
 > is quasi-DM over `S`.
@@ -1380,7 +1380,7 @@ theorem isQuasiDMAbs_iff_isQuasiDMOver (𝒵 : AlgebraicStacks.{u, w} B S hS) :
     IsQuasiDMAbs.{u, w, w'} B S hS 𝒵 ↔ IsQuasiDMOver B S hS 𝒵
 ```
 
-**`AlgebraicGeometry.Stack.isDM_of_isDMOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationSourceOverBase.lean, line 266](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationSourceOverBase.lean#L266). The attribute's comment: “part (5)”.
+**`AlgebraicGeometry.Stack.isDM_of_isDMOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationSourceOverBase.lean, line 266](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationSourceOverBase.lean#L266). The attribute's comment: “part (5)”.
 
 > **Stacks 050N, part (5).** If `𝒳` is DM over `S`, then every 1-morphism `f : 𝒳 ⟶ 𝒴` of
 > algebraic stacks over `S` is DM.
@@ -1395,7 +1395,7 @@ theorem isQuasiDMAbs_iff_isQuasiDMOver (𝒵 : AlgebraicStacks.{u, w} B S hS) :
 theorem isDM_of_isDMOver (f : 𝒳 ⟶ 𝒴) (h𝒳 : IsDMOver B S hS 𝒳) : IsDM B S hS f
 ```
 
-**`AlgebraicGeometry.Stack.isQuasiDM_of_isQuasiDMOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationSourceOverBase.lean, line 277](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationSourceOverBase.lean#L277). The attribute's comment: “part (6)”.
+**`AlgebraicGeometry.Stack.isQuasiDM_of_isQuasiDMOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationSourceOverBase.lean, line 277](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationSourceOverBase.lean#L277). The attribute's comment: “part (6)”.
 
 > **Stacks 050N, part (6).** If `𝒳` is quasi-DM over `S`, then every 1-morphism `f : 𝒳 ⟶ 𝒴`
 > of algebraic stacks over `S` is quasi-DM.
@@ -1409,7 +1409,7 @@ theorem isQuasiDM_of_isQuasiDMOver (f : 𝒳 ⟶ 𝒴) (h𝒳 : IsQuasiDMOver B 
     AlgebraicStacks.IsQuasiDM B S hS f
 ```
 
-**`AlgebraicGeometry.Stack.isSeparated_of_isSeparatedOver_of_isSeparated_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationSourceOverBase.lean, line 292](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationSourceOverBase.lean#L292). The attribute's comment: “part (7)”.
+**`AlgebraicGeometry.Stack.isSeparated_of_isSeparatedOver_of_isSeparated_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationSourceOverBase.lean, line 292](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationSourceOverBase.lean#L292). The attribute's comment: “part (7)”.
 
 > **Stacks 050N, part (7).** If `𝒳` is separated over `S` and the relative diagonal `Δ_{𝒴/S}`
 > is separated in the sense of Stacks 04XB, then every 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks
@@ -1431,7 +1431,7 @@ theorem isSeparated_of_isSeparatedOver_of_isSeparated_diagonal (f : 𝒳 ⟶ �
     AlgebraicStacks.IsSeparated B S hS f
 ```
 
-**`AlgebraicGeometry.Stack.isQuasiSeparated_of_isQuasiSeparatedOver_of_isQuasiSeparated_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationSourceOverBase.lean, line 311](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationSourceOverBase.lean#L311). The attribute's comment: “part (8)”.
+**`AlgebraicGeometry.Stack.isQuasiSeparated_of_isQuasiSeparatedOver_of_isQuasiSeparated_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationSourceOverBase.lean, line 311](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationSourceOverBase.lean#L311). The attribute's comment: “part (8)”.
 
 > **Stacks 050N, part (8).** If `𝒳` is quasi-separated over `S` and the relative diagonal
 > `Δ_{𝒴/S}` is quasi-separated in the sense of Stacks 04XB, then every 1-morphism `f : 𝒳 ⟶ 𝒴` of
@@ -1456,7 +1456,7 @@ theorem isQuasiSeparated_of_isQuasiSeparatedOver_of_isQuasiSeparated_diagonal (f
 
 [Tag 06MB](https://stacks.math.columbia.edu/tag/06MB) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isAbsolutelyDM_of_isUnramified_flatCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationFlatCoverDiagonal.lean, line 239](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationFlatCoverDiagonal.lean#L239). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isAbsolutelyDM_of_isUnramified_flatCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationFlatCoverDiagonal.lean, line 239](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationFlatCoverDiagonal.lean#L239). The attribute's comment: “part (1)”.
 
 > **Stacks 06MB, part (1).** Let `𝒳` be an algebraic stack over `S` and let `f : 𝒲 ⟶ 𝒳` be
 > surjective, flat and locally of finite presentation with `𝒲` representable by an algebraic space.
@@ -1487,7 +1487,7 @@ theorem isAbsolutelyDM_of_isUnramified_flatCover
     IsAbsolutelyDM.{u, w} B S hS hZ 𝒳
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isAbsolutelyQuasiDM_of_isLocallyQuasiFinite_flatCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationFlatCoverDiagonal.lean, line 278](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/SeparationFlatCoverDiagonal.lean#L278). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isAbsolutelyQuasiDM_of_isLocallyQuasiFinite_flatCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/SeparationFlatCoverDiagonal.lean, line 278](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/SeparationFlatCoverDiagonal.lean#L278). The attribute's comment: “part (2)”.
 
 > **Stacks 06MB, part (2).** Let `𝒳` be an algebraic stack over `S` and let `f : 𝒲 ⟶ 𝒳` be
 > surjective, flat and locally of finite presentation with `𝒲` representable by an algebraic space.
@@ -1515,7 +1515,7 @@ theorem isAbsolutelyQuasiDM_of_isLocallyQuasiFinite_flatCover
 
 [Tag 06MY](https://stacks.math.columbia.edu/tag/06MY) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isDM_of_isMonomorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/MonomorphismDeligneMumford.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/MonomorphismDeligneMumford.lean#L109). The attribute's comment: “monomorphisms are DM”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isDM_of_isMonomorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/MonomorphismDeligneMumford.lean, line 109](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/MonomorphismDeligneMumford.lean#L109). The attribute's comment: “monomorphisms are DM”.
 
 > **Stacks 06MY, the Deligne–Mumford assertion for monomorphisms.** A monomorphism of
 > algebraic stacks over `S` is Deligne–Mumford.
@@ -1532,7 +1532,7 @@ theorem isDM_of_isMonomorphism (f : 𝒵 ⟶ 𝒳) (hf : IsMonomorphism B S hS f
     Stack.IsDM B S hS f
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isSeparated_of_isMonomorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/MonomorphismDeligneMumford.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/MonomorphismDeligneMumford.lean#L131). The attribute's comment: “monomorphisms are separated”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isSeparated_of_isMonomorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/MonomorphismDeligneMumford.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/MonomorphismDeligneMumford.lean#L131). The attribute's comment: “monomorphisms are separated”.
 
 > **Stacks 06MY, the separatedness assertion for monomorphisms.** A monomorphism of algebraic
 > stacks over `S` is separated.
@@ -1551,7 +1551,7 @@ theorem isSeparated_of_isMonomorphism (f : 𝒵 ⟶ 𝒳) (hf : IsMonomorphism B
     IsSeparated B S hS f
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isSeparated_of_isImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/MonomorphismDeligneMumford.lean, line 151](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/MonomorphismDeligneMumford.lean#L151). The attribute's comment: “immersions are separated”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isSeparated_of_isImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/MonomorphismDeligneMumford.lean, line 151](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/MonomorphismDeligneMumford.lean#L151). The attribute's comment: “immersions are separated”.
 
 > **Stacks 06MY, the separatedness assertion for immersions.** An immersion of algebraic stacks
 > over `S` is separated.
@@ -1565,7 +1565,7 @@ theorem isSeparated_of_isImmersion (j : 𝒵 ⟶ 𝒳) (hj : IsImmersion B S hS 
     IsSeparated B S hS j
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isDM_of_isImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UnramifiedImmersionAlgebraicStack.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/UnramifiedImmersionAlgebraicStack.lean#L92). The attribute's comment: “immersions are DM”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isDM_of_isImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UnramifiedImmersionAlgebraicStack.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/UnramifiedImmersionAlgebraicStack.lean#L92). The attribute's comment: “immersions are DM”.
 
 > **Stacks 06MY, the Deligne–Mumford assertion for immersions.** An immersion of algebraic
 > stacks over `S` is Deligne–Mumford.
@@ -1586,7 +1586,7 @@ theorem isDM_of_isImmersion (j : 𝒵 ⟶ 𝒳) (hj : IsImmersion B S hS j) : St
 
 [Tag 06MZ](https://stacks.math.columbia.edu/tag/06MZ) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isAbsolutelyDM_of_isMonomorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/MonomorphismDeligneMumford.lean, line 165](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/MonomorphismDeligneMumford.lean#L165). The attribute's comment: “DM case”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isAbsolutelyDM_of_isMonomorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/MonomorphismDeligneMumford.lean, line 165](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/MonomorphismDeligneMumford.lean#L165). The attribute's comment: “DM case”.
 
 > **Stacks 06MZ, the Deligne–Mumford clause.** The source of a monomorphism into a
 > Deligne–Mumford algebraic stack is Deligne–Mumford.
@@ -1601,7 +1601,7 @@ theorem isAbsolutelyDM_of_isMonomorphism (f : 𝒵 ⟶ 𝒳) (hf : IsMonomorphis
     IsAbsolutelyDM B S hS hZ 𝒵
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isAbsolutelyQuasiDM_of_isMonomorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/MonomorphismDeligneMumford.lean, line 177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/MonomorphismDeligneMumford.lean#L177). The attribute's comment: “quasi-DM case”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isAbsolutelyQuasiDM_of_isMonomorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/MonomorphismDeligneMumford.lean, line 177](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/MonomorphismDeligneMumford.lean#L177). The attribute's comment: “quasi-DM case”.
 
 > **Stacks 06MZ, the quasi-Deligne–Mumford clause.** The source of a monomorphism into a
 > quasi-Deligne–Mumford algebraic stack is quasi-Deligne–Mumford.
@@ -1616,7 +1616,7 @@ theorem isAbsolutelyQuasiDM_of_isMonomorphism (f : 𝒵 ⟶ 𝒳) (hf : IsMonomo
     IsAbsolutelyQuasiDM B S hS hZ 𝒵
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isAbsolutelySeparated_of_isMonomorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/MonomorphismDeligneMumford.lean, line 189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/MonomorphismDeligneMumford.lean#L189). The attribute's comment: “separated case”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isAbsolutelySeparated_of_isMonomorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/MonomorphismDeligneMumford.lean, line 189](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/MonomorphismDeligneMumford.lean#L189). The attribute's comment: “separated case”.
 
 > **Stacks 06MZ, the separatedness clause.** The source of a monomorphism into a separated
 > algebraic stack is separated.
@@ -1630,7 +1630,7 @@ theorem isAbsolutelySeparated_of_isMonomorphism (f : 𝒵 ⟶ 𝒳) (hf : IsMono
     IsAbsolutelySeparated B S hS hZ 𝒵
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isAbsolutelyQuasiSeparated_of_isMonomorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/MonomorphismDeligneMumford.lean, line 202](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/MonomorphismDeligneMumford.lean#L202). The attribute's comment: “quasi-separated case”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isAbsolutelyQuasiSeparated_of_isMonomorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/MonomorphismDeligneMumford.lean, line 202](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/MonomorphismDeligneMumford.lean#L202). The attribute's comment: “quasi-separated case”.
 
 > **Stacks 06MZ, the quasi-separatedness clause.** The source of a monomorphism into a
 > quasi-separated algebraic stack is quasi-separated.
@@ -1652,4 +1652,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 101.4, Tag 04YV](https://stacks.math.columbia.edu/tag/04YV)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

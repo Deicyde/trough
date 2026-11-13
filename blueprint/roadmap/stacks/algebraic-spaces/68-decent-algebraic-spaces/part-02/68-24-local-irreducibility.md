@@ -8,13 +8,13 @@ proof: formalized
 
 # 68.24 Local irreducibility
 
-Section 68.24 of the Stacks Project, [Tag 0DQ5](https://stacks.math.columbia.edu/tag/0DQ5). 4 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 68.24 of the Stacks Project, [Tag 0DQ5](https://stacks.math.columbia.edu/tag/0DQ5). 4 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0DQ6, a lemma
 
 [Tag 0DQ6](https://stacks.math.columbia.edu/tag/0DQ6) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.forall_existsUnique_minimalPrimes_iff_forall_existsUnique_component`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/LocalIrreducibility.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/LocalIrreducibility.lean#L220). The attribute's comment: “conditions (1) and (2)”.
+**`AlgebraicGeometry.Space.forall_existsUnique_minimalPrimes_iff_forall_existsUnique_component`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/LocalIrreducibility.lean, line 220](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/LocalIrreducibility.lean#L220). The attribute's comment: “conditions (1) and (2)”.
 
 > **Stacks 0DQ6, conditions (1) and (2).** The local ring of every elementary étale
 > neighbourhood of `x` at its distinguished point has a unique minimal prime exactly when exactly
@@ -30,7 +30,7 @@ theorem forall_existsUnique_minimalPrimes_iff_forall_existsUnique_component :
           U.point ∈ (Z : Set U.scheme.left.1)
 ```
 
-**`AlgebraicGeometry.Space.forall_existsUnique_component_iff_forall_isUnibranchAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/LocalIrreducibility.lean, line 238](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/LocalIrreducibility.lean#L238). The attribute's comment: “conditions (2) and (3)”.
+**`AlgebraicGeometry.Space.forall_existsUnique_component_iff_forall_isUnibranchAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/LocalIrreducibility.lean, line 238](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/LocalIrreducibility.lean#L238). The attribute's comment: “conditions (2) and (3)”.
 
 > **Stacks 0DQ6, conditions (2) and (3).** Exactly one irreducible component of every
 > elementary étale neighbourhood of `x` passes through its distinguished point exactly when the
@@ -45,7 +45,7 @@ theorem forall_existsUnique_component_iff_forall_isUnibranchAt :
         _root_.AlgebraicGeometry.IsUnibranchAt U.scheme.left.1 U.point
 ```
 
-**`AlgebraicGeometry.Space.tfae_localIrreducibility`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/LocalIrreducibility.lean, line 414](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/LocalIrreducibility.lean#L414). The attribute's comment: “(1)-(4) equivalent”.
+**`AlgebraicGeometry.Space.tfae_localIrreducibility`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/LocalIrreducibility.lean, line 414](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/LocalIrreducibility.lean#L414). The attribute's comment: “(1)-(4) equivalent”.
 
 > **Stacks 0DQ6.** For a point of a decent algebraic space the four conditions of the source are
 > equivalent: every elementary étale neighbourhood has a local ring with a unique minimal prime, has
@@ -71,7 +71,7 @@ theorem tfae_localIrreducibility (hDecent : IsDecentSpace B S hS X) :
 
 [Tag 0DQ7](https://stacks.math.columbia.edu/tag/0DQ7) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsUnibranchAt`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/LocalIrreducibility.lean, line 476](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/LocalIrreducibility.lean#L476). The attribute's comment: “unibranch at a point”.
+**`AlgebraicGeometry.Space.IsUnibranchAt`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/LocalIrreducibility.lean, line 476](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/LocalIrreducibility.lean#L476). The attribute's comment: “unibranch at a point”.
 
 > **Stacks 0DQ7, unibranch at a point.** A decent algebraic space is *unibranch at `x`* when
 > the local ring of every elementary étale neighbourhood of `x` at its distinguished point is
@@ -81,7 +81,7 @@ theorem tfae_localIrreducibility (hDecent : IsDecentSpace B S hS X) :
 abbrev IsUnibranchAt (_hDecent : IsDecentSpace B S hS X) : Prop
 ```
 
-**`AlgebraicGeometry.Space.IsUnibranch`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/LocalIrreducibility.lean, line 483](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/LocalIrreducibility.lean#L483). The attribute's comment: “unibranch”.
+**`AlgebraicGeometry.Space.IsUnibranch`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/LocalIrreducibility.lean, line 483](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/LocalIrreducibility.lean#L483). The attribute's comment: “unibranch”.
 
 > **Stacks 0DQ7, unibranch.** A decent algebraic space is *unibranch* when it is unibranch at
 > every one of its points.
@@ -94,7 +94,7 @@ abbrev IsUnibranch (hDecent : IsDecentSpace B S hS X) : Prop
 
 [Tag 0DQ8](https://stacks.math.columbia.edu/tag/0DQ8) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.hasMinimalPrimeCount_iff_hasComponentCount`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/LocalIrreducibility.lean, line 291](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/LocalIrreducibility.lean#L291). The attribute's comment: “conditions (1) and (2)”.
+**`AlgebraicGeometry.Space.hasMinimalPrimeCount_iff_hasComponentCount`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/LocalIrreducibility.lean, line 291](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/LocalIrreducibility.lean#L291). The attribute's comment: “conditions (1) and (2)”.
 
 > **Stacks 0DQ8, conditions (1) and (2).** A point of a presheaf on the big fppf site has
 > minimal-prime count `n` on its elementary étale neighbourhoods exactly when it has
@@ -107,7 +107,7 @@ theorem hasMinimalPrimeCount_iff_hasComponentCount (n : ℕ) :
       HasComponentCountOnElementaryNeighborhoods B S hS X hX x n
 ```
 
-**`AlgebraicGeometry.Space.hasComponentCount_iff_hasBranchCount`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/LocalIrreducibility.lean, line 348](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/LocalIrreducibility.lean#L348). The attribute's comment: “conditions (2) and (3)”.
+**`AlgebraicGeometry.Space.hasComponentCount_iff_hasBranchCount`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/LocalIrreducibility.lean, line 348](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/LocalIrreducibility.lean#L348). The attribute's comment: “conditions (2) and (3)”.
 
 > **Stacks 0DQ8, conditions (2) and (3).** A point of a presheaf on the big fppf site has
 > irreducible-component count `n` on its elementary étale neighbourhoods exactly when it has
@@ -119,7 +119,7 @@ theorem hasComponentCount_iff_hasBranchCount (n : ℕ) :
       HasBranchCountOnElementaryNeighborhoods B S hS X hX x n
 ```
 
-**`AlgebraicGeometry.Space.tfae_hasBranchCount`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/LocalIrreducibility.lean, line 457](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/LocalIrreducibility.lean#L457). The attribute's comment: “(1)-(4) equivalent”.
+**`AlgebraicGeometry.Space.tfae_hasBranchCount`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/LocalIrreducibility.lean, line 457](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/LocalIrreducibility.lean#L457). The attribute's comment: “(1)-(4) equivalent”.
 
 > **Stacks 0DQ8.** For a point of a decent algebraic space and a natural number `n` the four
 > conditions of the source are equivalent: the minimal primes of the local ring, the irreducible
@@ -141,7 +141,7 @@ theorem tfae_hasBranchCount (hDecent : IsDecentSpace B S hS X) (n : ℕ) :
 
 [Tag 0DQ9](https://stacks.math.columbia.edu/tag/0DQ9) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.numberOfBranches`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/LocalIrreducibility.lean, line 511](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/LocalIrreducibility.lean#L511).
+**`AlgebraicGeometry.Space.numberOfBranches`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/LocalIrreducibility.lean, line 511](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/LocalIrreducibility.lean#L511).
 
 > **Stacks 0DQ9.** The number of branches of a decent algebraic space at a point: the natural
 > number satisfying the equivalent conditions of Tag 0DQ8 if there is one, and `⊤` otherwise.
@@ -150,7 +150,7 @@ theorem tfae_hasBranchCount (hDecent : IsDecentSpace B S hS X) (n : ℕ) :
 def numberOfBranches (_hDecent : IsDecentSpace B S hS X) : ℕ∞
 ```
 
-**`AlgebraicGeometry.Space.numberOfBranches_eq_top_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/LocalIrreducibility.lean, line 518](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/LocalIrreducibility.lean#L518). The attribute's comment: “infinite value”.
+**`AlgebraicGeometry.Space.numberOfBranches_eq_top_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/LocalIrreducibility.lean, line 518](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/LocalIrreducibility.lean#L518). The attribute's comment: “infinite value”.
 
 > The number of branches of a decent algebraic space at a point is infinite exactly when no
 > natural number satisfies the equivalent conditions of Tag 0DQ8.
@@ -161,7 +161,7 @@ theorem numberOfBranches_eq_top_iff (hDecent : IsDecentSpace B S hS X) :
       ∀ n : ℕ, ¬ HasBranchCountOnElementaryNeighborhoods B S hS X hX x n
 ```
 
-**`AlgebraicGeometry.Space.numberOfBranches_eq_nat_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/LocalIrreducibility.lean, line 528](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/LocalIrreducibility.lean#L528). The attribute's comment: “finite value”.
+**`AlgebraicGeometry.Space.numberOfBranches_eq_nat_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/LocalIrreducibility.lean, line 528](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/LocalIrreducibility.lean#L528). The attribute's comment: “finite value”.
 
 > A finite value of the number of branches of a decent algebraic space at a point is exactly
 > the value appearing in the equivalent conditions of Tag 0DQ8.
@@ -179,4 +179,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 68.24, Tag 0DQ5](https://stacks.math.columbia.edu/tag/0DQ5)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

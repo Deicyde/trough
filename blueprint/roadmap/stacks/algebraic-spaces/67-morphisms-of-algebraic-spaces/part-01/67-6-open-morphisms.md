@@ -8,13 +8,13 @@ proof: formalized
 
 # 67.6 Open morphisms
 
-Section 67.6 of the Stacks Project, [Tag 03Z0](https://stacks.math.columbia.edu/tag/03Z0). 6 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 67.6 of the Stacks Project, [Tag 03Z0](https://stacks.math.columbia.edu/tag/03Z0). 6 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 03Z1, a lemma
 
 [Tag 03Z1](https://stacks.math.columbia.edu/tag/03Z1) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.presheaf_universallyOpen_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Open.lean, line 669](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Open.lean#L669).
+**`AlgebraicGeometry.Space.presheaf_universallyOpen_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Open.lean, line 669](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Open.lean#L669).
 
 > A representable morphism of algebraic spaces over `S` is universally open, that is, every
 > base change of it by an algebraic space over `S` is open on points, exactly when each of its
@@ -32,7 +32,7 @@ theorem presheaf_universallyOpen_iff {f : X ⟶ Y}
 
 [Tag 03Z2](https://stacks.math.columbia.edu/tag/03Z2) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsOpenMorphism`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Open.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Open.lean#L117). The attribute's comment: “part (1): open”.
+**`AlgebraicGeometry.Space.IsOpenMorphism`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Open.lean, line 117](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Open.lean#L117). The attribute's comment: “part (1): open”.
 
 > A morphism of algebraic spaces over `S` is *open* when the map it induces on points is an
 > open map for the topology detected by scheme-valued points.
@@ -41,7 +41,7 @@ theorem presheaf_universallyOpen_iff {f : X ⟶ Y}
 abbrev IsOpenMorphism (f : F ⟶ G) : Prop
 ```
 
-**`AlgebraicGeometry.Space.UniversallyOpen`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Open.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Open.lean#L125). The attribute's comment: “part (2): universally open”.
+**`AlgebraicGeometry.Space.UniversallyOpen`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Open.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Open.lean#L125). The attribute's comment: “part (2): universally open”.
 
 > A morphism of algebraic spaces over `S` is *universally open* when its base change along
 > every morphism to its target from an algebraic space over `S` is open.
@@ -54,7 +54,7 @@ abbrev UniversallyOpen (f : F ⟶ G) : Prop
 
 [Tag 03Z3](https://stacks.math.columbia.edu/tag/03Z3) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.universallyOpen_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Open.lean, line 211](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Open.lean#L211).
+**`AlgebraicGeometry.Space.universallyOpen_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Open.lean, line 211](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Open.lean#L211).
 
 > A base change of a universally open morphism of algebraic spaces over `S` is universally
 > open.
@@ -71,7 +71,7 @@ theorem universallyOpen_pullback {X Y Z : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u}
 
 [Tag 03Z4](https://stacks.math.columbia.edu/tag/03Z4) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsOpenMorphism.comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Open.lean, line 201](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Open.lean#L201). The attribute's comment: “open”.
+**`AlgebraicGeometry.Space.IsOpenMorphism.comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Open.lean, line 201](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Open.lean#L201). The attribute's comment: “open”.
 
 > A composition of open morphisms of algebraic spaces over `S` is open.
 
@@ -81,7 +81,7 @@ theorem IsOpenMorphism.comp {f : F ⟶ G} {g : G ⟶ H} (hg : IsOpenMorphism B S
     IsOpenMorphism B S hS (f ≫ g)
 ```
 
-**`AlgebraicGeometry.Space.universallyOpen_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Open.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Open.lean#L221). The attribute's comment: “universally open”.
+**`AlgebraicGeometry.Space.universallyOpen_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Open.lean, line 221](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Open.lean#L221). The attribute's comment: “universally open”.
 
 > A composition of universally open morphisms of algebraic spaces over `S` is universally
 > open.
@@ -98,7 +98,7 @@ theorem universallyOpen_comp {X Y Z : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u}
 
 [Tag 03Z5](https://stacks.math.columbia.edu/tag/03Z5) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.universallyOpen_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Open.lean, line 422](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Open.lean#L422).
+**`AlgebraicGeometry.Space.universallyOpen_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Open.lean, line 422](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Open.lean#L422).
 
 > For a morphism `f : X ⟶ Y` of algebraic spaces over `S` the following are equivalent:
 >
@@ -131,7 +131,7 @@ theorem universallyOpen_tfae (hX : IsAlgebraicSpace B S hS X)
 
 [Tag 06DN](https://stacks.math.columbia.edu/tag/06DN) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.universallyOpen_to_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Open.lean, line 523](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Open.lean#L523). References: EGA IV (2.4.10); EGA IV (2.4.9), “Y = Spec k”; SGA 4 VIII (9.4.4), “more general”.
+**`AlgebraicGeometry.Space.universallyOpen_to_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Open.lean, line 523](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Open.lean#L523). References: EGA IV (2.4.10); EGA IV (2.4.9), “Y = Spec k”; SGA 4 VIII (9.4.4), “more general”.
 
 > A morphism from an algebraic space over `S` to a representable presheaf whose representing
 > scheme is the spectrum of a field is universally open.
@@ -151,4 +151,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 67.6, Tag 03Z0](https://stacks.math.columbia.edu/tag/03Z0)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

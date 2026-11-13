@@ -8,7 +8,7 @@ proof: formalized
 
 # 61.13 Weakly contractible objects
 
-Section 61.13 of the Stacks Project, [Tag 0F4N](https://stacks.math.columbia.edu/tag/0F4N). 5 tags here are carried by 16 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 61.13 of the Stacks Project, [Tag 0F4N](https://stacks.math.columbia.edu/tag/0F4N). 5 tags here are carried by 16 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 098F, a lemma
 
@@ -16,14 +16,14 @@ Section 61.13 of the Stacks Project, [Tag 0F4N](https://stacks.math.columbia.edu
 
 Declarations registered for the tag:
 
-- [`ProetaleWContractible.everyProetaleCoverHasZariskiRefinement_of_wContractible`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/WeaklyContractible/WContractibleRings.lean#L863), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/WContractible.lean, line 36](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/WContractible.lean#L36) (StacksFrontier): “w-contractible implies the covering-refinement condition”.
-- [`ProetaleWContractible.isWContractible_of_zariskiRefinement`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/WeaklyContractible/WContractibleRings.lean#L320), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/WContractible.lean, line 39](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/WContractible.lean#L39) (StacksFrontier): “the covering-refinement condition implies w-contractibility”.
+- [`ProetaleWContractible.everyProetaleCoverHasZariskiRefinement_of_wContractible`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/WeaklyContractible/WContractibleRings.lean#L863), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/WContractible.lean, line 34](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/WContractible.lean#L34) (StacksFrontier): “w-contractible implies the covering-refinement condition”.
+- [`ProetaleWContractible.isWContractible_of_zariskiRefinement`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/WeaklyContractible/WContractibleRings.lean#L320), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/WContractible.lean, line 37](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/WContractible.lean#L37) (StacksFrontier): “the covering-refinement condition implies w-contractibility”.
 
 ## Tag 098H, a lemma
 
 [Tag 098H](https://stacks.math.columbia.edu/tag/098H) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.isWContractible_globalSections_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WeaklyContractible/ClopenRefinement.lean, line 497](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/WeaklyContractible/ClopenRefinement.lean#L497).
+**`AlgebraicGeometry.ProEtale.isWContractible_globalSections_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WeaklyContractible/ClopenRefinement.lean, line 497](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/WeaklyContractible/ClopenRefinement.lean#L497).
 
 > **Stacks 098H.** For an affine object `T` of a chosen big pro-étale site the following are
 > equivalent: the ring of global sections of `T` is w-contractible; `T` is a weakly contractible
@@ -45,7 +45,7 @@ theorem isWContractible_globalSections_tfae (B : BigProetaleSite.{u}) (T : B.Sch
 
 [Tag 098I](https://stacks.math.columbia.edu/tag/098I) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.BigProetaleOver.hasEnoughObjects_isAffine_isWContractible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/CompactGeneration.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/CompactGeneration.lean#L176). The attribute's comment: “in the big pro-étale site of a scheme”.
+**`AlgebraicGeometry.ProEtale.BigProetaleOver.hasEnoughObjects_isAffine_isWContractible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/CompactGeneration.lean, line 176](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/CompactGeneration.lean#L176). The attribute's comment: “in the big pro-étale site of a scheme”.
 
 > Every object of the big pro-étale site of `S` is covered by objects whose underlying schemes
 > are affine with w-contractible ring of global sections.
@@ -58,7 +58,7 @@ theorem hasEnoughObjects_isAffine_isWContractible (T : BigProetaleOver B S hS) :
           IsWContractible.{u, u} Γ((toScheme B S hS).obj (V i), ⊤)
 ```
 
-**`AlgebraicGeometry.ProEtale.exists_covering_affine_wContractible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/WeaklyContractibleCovers.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/WeaklyContractibleCovers.lean#L81).
+**`AlgebraicGeometry.ProEtale.exists_covering_affine_wContractible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/WeaklyContractibleCovers.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Site/WeaklyContractibleCovers.lean#L81).
 
 > **Stacks 098I.** Every object `T` of a chosen big pro-étale site admits a chosen covering
 > family `{T_i → T}` of that site with each `T_i` affine and the spectrum of a w-contractible
@@ -82,7 +82,7 @@ theorem exists_covering_affine_wContractible :
 
 [Tag 0990](https://stacks.math.columbia.edu/tag/0990) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.hasEnoughObjects_isAffine_isWeaklyContractible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/OpenClosedSequence.lean, line 574](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/OpenClosedSequence.lean#L574). The attribute's comment: “the small pro-etale site of a scheme, in the unrestricted form of AlgebraicGeometry.Scheme.ProEt: every object is covered by affine weakly contractible ones”.
+**`AlgebraicGeometry.ProEtale.hasEnoughObjects_isAffine_isWeaklyContractible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/OpenClosedSequence.lean, line 575](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/OpenClosedSequence.lean#L575). The attribute's comment: “the small pro-etale site of a scheme, in the unrestricted form of AlgebraicGeometry.Scheme.ProEt: every object is covered by affine weakly contractible ones”.
 
 > **Stacks 0990 for the small pro-étale site of a scheme.** Every object of `X_proétale` is
 > covered by affine objects which are weakly contractible objects of the site.
@@ -94,7 +94,7 @@ theorem hasEnoughObjects_isAffine_isWeaklyContractible (X : Scheme.{u}) :
         (Scheme.ProEt.topology X).IsWeaklyContractible V)
 ```
 
-**`AlgebraicGeometry.ProEtale.hasEnoughWeaklyContractibleObjects_proetale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/OpenClosedSequence.lean, line 606](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/OpenClosedSequence.lean#L606). The attribute's comment: “the small pro-etale site of a scheme has enough weakly contractible objects, the form HasEnoughWeaklyContractibleObjects asks for”.
+**`AlgebraicGeometry.ProEtale.hasEnoughWeaklyContractibleObjects_proetale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/OpenClosedSequence.lean, line 607](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/ExtensionByZero/OpenClosedSequence.lean#L607). The attribute's comment: “the small pro-etale site of a scheme has enough weakly contractible objects, the form HasEnoughWeaklyContractibleObjects asks for”.
 
 > **Stacks 0990, in the form the derived-completeness results consume.** The small pro-étale
 > site of a scheme has enough weakly contractible objects.
@@ -110,7 +110,7 @@ theorem hasEnoughWeaklyContractibleObjects_proetale (X : Scheme.{u}) :
     (Scheme.ProEt.topology X).HasEnoughWeaklyContractibleObjects
 ```
 
-**`AlgebraicGeometry.ProEtale.affineIndEtaleProetale_hasEnough_quasiCompact_weaklyContractible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/AffineIndEtaleWeaklyContractible.lean, line 410](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/AffineIndEtaleWeaklyContractible.lean#L410). The attribute's comment: “affine ind-étale pro-étale site”.
+**`AlgebraicGeometry.ProEtale.affineIndEtaleProetale_hasEnough_quasiCompact_weaklyContractible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/AffineIndEtaleWeaklyContractible.lean, line 410](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Site/AffineIndEtaleWeaklyContractible.lean#L410). The attribute's comment: “affine ind-étale pro-étale site”.
 
 > **Stacks 0990, the affine ind-étale pro-étale site.** For an affine base, the affine
 > ind-étale pro-étale site has enough quasi-compact weakly contractible objects: every object is
@@ -124,7 +124,7 @@ theorem affineIndEtaleProetale_hasEnough_quasiCompact_weaklyContractible [IsAffi
         (AffineIndEtaleProetale.topology B S).IsWeaklyContractible U)
 ```
 
-**`AlgebraicGeometry.ProEtale.BigProetaleOver.hasEnough_affine_quasiCompact_weaklyContractible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/EnoughWeaklyContractible.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/EnoughWeaklyContractible.lean#L134). The attribute's comment: “the big pro-étale site (Sch/S)\_proétale”.
+**`AlgebraicGeometry.ProEtale.BigProetaleOver.hasEnough_affine_quasiCompact_weaklyContractible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/EnoughWeaklyContractible.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Site/EnoughWeaklyContractible.lean#L134). The attribute's comment: “the big pro-étale site (Sch/S)\_proétale”.
 
 > **Stacks 0990 for the big pro-étale site `(Sch/S)_proétale`.** Every object of the big
 > pro-étale site of `S` is covered by objects which are affine, quasi-compact objects of the site
@@ -144,7 +144,7 @@ theorem BigProetaleOver.hasEnough_affine_quasiCompact_weaklyContractible :
           (BigProetaleOver.topology B S hS).IsWeaklyContractible T)
 ```
 
-**`AlgebraicGeometry.ProEtale.SmallProetale.hasEnough_affine_quasiCompact_weaklyContractible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/EnoughWeaklyContractible.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/EnoughWeaklyContractible.lean#L159). The attribute's comment: “the small pro-étale site S\_proétale”.
+**`AlgebraicGeometry.ProEtale.SmallProetale.hasEnough_affine_quasiCompact_weaklyContractible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/EnoughWeaklyContractible.lean, line 159](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Site/EnoughWeaklyContractible.lean#L159). The attribute's comment: “the small pro-étale site S\_proétale”.
 
 > **Stacks 0990 for the small pro-étale site `S_proétale`.** Every object of the small
 > pro-étale site of `S` is covered by objects which are affine, quasi-compact objects of the site
@@ -165,7 +165,7 @@ theorem SmallProetale.hasEnough_affine_quasiCompact_weaklyContractible :
           (SmallProetale.topology B S hS).IsWeaklyContractible U)
 ```
 
-**`AlgebraicGeometry.ProEtale.BigAffineProetale.hasEnough_affine_quasiCompact_weaklyContractible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/EnoughWeaklyContractible.lean, line 336](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/EnoughWeaklyContractible.lean#L336). The attribute's comment: “the big affine pro-étale site (Aff/S)\_proétale”.
+**`AlgebraicGeometry.ProEtale.BigAffineProetale.hasEnough_affine_quasiCompact_weaklyContractible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/EnoughWeaklyContractible.lean, line 336](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Site/EnoughWeaklyContractible.lean#L336). The attribute's comment: “the big affine pro-étale site (Aff/S)\_proétale”.
 
 > **Stacks 0990 for the big affine pro-étale site `(Aff/S)_proétale`.** Every object of the
 > big affine pro-étale site of `S` is covered by objects which are affine, quasi-compact objects
@@ -180,7 +180,7 @@ theorem BigAffineProetale.hasEnough_affine_quasiCompact_weaklyContractible :
           (BigAffineProetale.topology B S hS).IsWeaklyContractible U)
 ```
 
-**`AlgebraicGeometry.ProEtale.SmallAffineProetale.hasEnough_affine_quasiCompact_weaklyContractible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/EnoughWeaklyContractible.lean, line 439](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/EnoughWeaklyContractible.lean#L439). The attribute's comment: “the affine small pro-étale site S\_\{affine, pro-étale}”.
+**`AlgebraicGeometry.ProEtale.SmallAffineProetale.hasEnough_affine_quasiCompact_weaklyContractible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/EnoughWeaklyContractible.lean, line 439](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Site/EnoughWeaklyContractible.lean#L439). The attribute's comment: “the affine small pro-étale site S\_\{affine, pro-étale}”.
 
 > **Stacks 0990 for the affine small pro-étale site `S_{affine, proétale}`.** Every object of
 > the affine small pro-étale site of `S` is covered by objects which are affine, quasi-compact
@@ -199,7 +199,7 @@ theorem SmallAffineProetale.hasEnough_affine_quasiCompact_weaklyContractible :
 
 [Tag 0F4P](https://stacks.math.columbia.edu/tag/0F4P) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.exists_weaklyContractible_singleton_covering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/WeaklyContractibleOneElementCovers.lean, line 311](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/WeaklyContractibleOneElementCovers.lean#L311).
+**`AlgebraicGeometry.ProEtale.exists_weaklyContractible_singleton_covering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/WeaklyContractibleOneElementCovers.lean, line 311](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Site/WeaklyContractibleOneElementCovers.lean#L311).
 
 > Every object `U` of a chosen big pro-étale site admits a one-element chosen covering
 > `{V → U}` whose source is a weakly contractible object of the site.
@@ -211,7 +211,7 @@ theorem exists_weaklyContractible_singleton_covering (U : B.Scheme) :
         B.topology.IsWeaklyContractible V
 ```
 
-**`AlgebraicGeometry.ProEtale.exists_affine_weaklyContractible_singleton_covering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/WeaklyContractibleOneElementCovers.lean, line 378](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/WeaklyContractibleOneElementCovers.lean#L378). The attribute's comment: “the quasi-compact case”.
+**`AlgebraicGeometry.ProEtale.exists_affine_weaklyContractible_singleton_covering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/WeaklyContractibleOneElementCovers.lean, line 378](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Site/WeaklyContractibleOneElementCovers.lean#L378). The attribute's comment: “the quasi-compact case”.
 
 > If the underlying scheme of an object `U` of a chosen big pro-étale site is quasi-compact,
 > the one-element covering of
@@ -226,7 +226,7 @@ theorem exists_affine_weaklyContractible_singleton_covering (U : B.Scheme)
         IsAffine V.obj ∧ B.topology.IsWeaklyContractible V
 ```
 
-**`AlgebraicGeometry.ProEtale.exists_weaklyContractible_singleton_covering_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/WeaklyContractibleOneElementCoversSmall.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/WeaklyContractibleOneElementCoversSmall.lean#L117). The attribute's comment: “the big site over a scheme”.
+**`AlgebraicGeometry.ProEtale.exists_weaklyContractible_singleton_covering_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/WeaklyContractibleOneElementCoversSmall.lean, line 117](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Site/WeaklyContractibleOneElementCoversSmall.lean#L117). The attribute's comment: “the big site over a scheme”.
 
 > **Stacks 0F4P for the big pro-étale site over a scheme.** Every object `U` of the big
 > pro-étale site over `S` in a chosen big pro-étale site admits a one-element covering `{V → U}`
@@ -245,7 +245,7 @@ theorem exists_weaklyContractible_singleton_covering_over (U : BigProetaleOver B
         (BigProetaleOver.topology B S hS).IsWeaklyContractible V
 ```
 
-**`AlgebraicGeometry.ProEtale.exists_affine_weaklyContractible_singleton_covering_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/WeaklyContractibleOneElementCoversSmall.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/WeaklyContractibleOneElementCoversSmall.lean#L132). The attribute's comment: “the big site over a scheme, quasi-compact case”.
+**`AlgebraicGeometry.ProEtale.exists_affine_weaklyContractible_singleton_covering_over`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/WeaklyContractibleOneElementCoversSmall.lean, line 132](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Site/WeaklyContractibleOneElementCoversSmall.lean#L132). The attribute's comment: “the big site over a scheme, quasi-compact case”.
 
 > **Stacks 0F4P for the big pro-étale site over a scheme, the quasi-compact case.** If the
 > underlying scheme of an object `U` of the big pro-étale site over `S` is quasi-compact, the
@@ -262,7 +262,7 @@ theorem exists_affine_weaklyContractible_singleton_covering_over
         (BigProetaleOver.topology B S hS).IsWeaklyContractible V
 ```
 
-**`AlgebraicGeometry.ProEtale.exists_weaklyContractible_singleton_covering_small`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/WeaklyContractibleOneElementCoversSmall.lean, line 314](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/WeaklyContractibleOneElementCoversSmall.lean#L314). The attribute's comment: “the small site”.
+**`AlgebraicGeometry.ProEtale.exists_weaklyContractible_singleton_covering_small`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/WeaklyContractibleOneElementCoversSmall.lean, line 314](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Site/WeaklyContractibleOneElementCoversSmall.lean#L314). The attribute's comment: “the small site”.
 
 > **Stacks 0F4P for the small pro-étale site.** Every object `U` of the small pro-étale site
 > of `S` in a chosen big pro-étale site admits a one-element covering `{V → U}` whose source is a
@@ -282,7 +282,7 @@ theorem exists_weaklyContractible_singleton_covering_small (U : SmallProetale B 
         (SmallProetale.topology B S hS).IsWeaklyContractible V
 ```
 
-**`AlgebraicGeometry.ProEtale.exists_affine_weaklyContractible_singleton_covering_small`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/WeaklyContractibleOneElementCoversSmall.lean, line 335](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/WeaklyContractibleOneElementCoversSmall.lean#L335). The attribute's comment: “the small site, quasi-compact case”.
+**`AlgebraicGeometry.ProEtale.exists_affine_weaklyContractible_singleton_covering_small`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/WeaklyContractibleOneElementCoversSmall.lean, line 335](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Site/WeaklyContractibleOneElementCoversSmall.lean#L335). The attribute's comment: “the small site, quasi-compact case”.
 
 > **Stacks 0F4P for the small pro-étale site, the quasi-compact case.** If the underlying
 > scheme of an object `U` of the small pro-étale site of `S` is quasi-compact, the one-element
@@ -309,4 +309,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 61.13, Tag 0F4N](https://stacks.math.columbia.edu/tag/0F4N)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

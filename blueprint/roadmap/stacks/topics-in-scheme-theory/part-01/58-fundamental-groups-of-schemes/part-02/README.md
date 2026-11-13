@@ -2,11 +2,8 @@
 navigation: transparent
 ---
 
-# 58.17 Restriction to a closed… to 58.32 Tricks in positive…
+# 58.20 Purity in local case, I to 58.32 Tricks in positive…
 
-- [58.17 Restriction to a closed subscheme](58-17-restriction-to-a-closed-subscheme.md)
-- [58.18 Pushouts and fundamental groups](58-18-pushouts-and-fundamental-groups.md)
-- [58.19 Finite étale covers of punctured spectra, I](58-19-finite-etale-covers-of-punctured-spectra-i.md)
 - [58.20 Purity in local case, I](58-20-purity-in-local-case-i.md)
 - [58.21 Purity of branch locus](58-21-purity-of-branch-locus.md)
 - [58.22 Finite étale covers of punctured spectra, II](58-22-finite-etale-covers-of-punctured-spectra-i.md)

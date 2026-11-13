@@ -8,13 +8,13 @@ proof: formalized
 
 # 67.46 Finite locally free morphisms
 
-Section 67.46 of the Stacks Project, [Tag 03ZT](https://stacks.math.columbia.edu/tag/03ZT). 6 tags here are carried by 17 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 67.46 of the Stacks Project, [Tag 03ZT](https://stacks.math.columbia.edu/tag/03ZT). 6 tags here are carried by 17 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 03ZU, a lemma
 
 [Tag 03ZU](https://stacks.math.columbia.edu/tag/03ZU) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.presheaf_of_isFiniteLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ChartComparisonAssembly.lean, line 255](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ChartComparisonAssembly.lean#L255). The attribute's comment: “the only if direction: finite locally free in the sense of 03ZV implies every represented base change is a finite locally free morphism of schemes”.
+**`AlgebraicGeometry.Space.presheaf_of_isFiniteLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ChartComparisonAssembly.lean, line 255](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ChartComparisonAssembly.lean#L255). The attribute's comment: “the only if direction: finite locally free in the sense of 03ZV implies every represented base change is a finite locally free morphism of schemes”.
 
 > **Stacks 03ZU, the "only if" direction.**  A representable morphism `f : X ⟶ Y` of algebraic
 > spaces over `S` which is finite locally free in the sense of Stacks 03ZV — affine with `f_*𝒪_X`
@@ -36,7 +36,7 @@ theorem presheaf_of_isFiniteLocallyFree (f : X ⟶ Y)
       (BigFppfOver.toScheme B S hS)).presheaf f.hom
 ```
 
-**`AlgebraicGeometry.Space.presheaf_iff_isFiniteLocallyFree_iff_chartComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeRepresentable.lean, line 256](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeRepresentable.lean#L256). The attribute's comment: “the reduction of the biconditional to the chart comparison: proved unconditionally, that f is finite locally free in the sense of Section 03HA if and only if it is affine with finite locally free pushforward, holds exactly when the chart comparison holds at a surjective etale chart. The biconditional itself is AlgebraicGeometry.Space .presheaf\_iff\_isFiniteLocallyFree, which discharges that chart comparison”.
+**`AlgebraicGeometry.Space.presheaf_iff_isFiniteLocallyFree_iff_chartComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeRepresentable.lean, line 256](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeRepresentable.lean#L256). The attribute's comment: “the reduction of the biconditional to the chart comparison: proved unconditionally, that f is finite locally free in the sense of Section 03HA if and only if it is affine with finite locally free pushforward, holds exactly when the chart comparison holds at a surjective etale chart. The biconditional itself is AlgebraicGeometry.Space .presheaf\_iff\_isFiniteLocallyFree, which discharges that chart comparison”.
 
 > **The equivalence of Stacks 03ZU for a morphism is equivalent to the chart comparison for
 > that morphism.** For a representable `f : X ⟶ Y` and an étale chart `V` of `Y` whose structure
@@ -72,7 +72,7 @@ theorem presheaf_iff_isFiniteLocallyFree_iff_chartComparison (f : X ⟶ Y)
             ((pushforwardStructureModule B S hS f).over V))))
 ```
 
-**`AlgebraicGeometry.Space.presheaf_iff_isFiniteLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeRepresentableChart.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeRepresentableChart.lean#L136).
+**`AlgebraicGeometry.Space.presheaf_iff_isFiniteLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeRepresentableChart.lean, line 136](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeRepresentableChart.lean#L136).
 
 > Let `S` be a scheme and let `f : X ⟶ Y` be a representable morphism of algebraic spaces over
 > `S`.  Then `f` is finite locally free in the sense of Section 03HA — every represented base change
@@ -91,13 +91,13 @@ theorem presheaf_iff_isFiniteLocallyFree (f : X ⟶ Y)
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Space.isFiniteLocallyFree_presheaf_iff_isFiniteLocallyFree`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeCondition2.lean#L125), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeRepresentableIff.lean, line 167](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeRepresentableIff.lean#L167) (StacksFrontier).
+- [`AlgebraicGeometry.Space.isFiniteLocallyFree_presheaf_iff_isFiniteLocallyFree`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeCondition2.lean#L125), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeRepresentableIff.lean, line 167](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeRepresentableIff.lean#L167) (StacksFrontier).
 
 ## Tag 03ZV, a definition
 
 [Tag 03ZV](https://stacks.math.columbia.edu/tag/03ZV) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsFiniteLocallyFree`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFree.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFree.lean#L88). The attribute's comment: “finite locally free”.
+**`AlgebraicGeometry.Space.IsFiniteLocallyFree`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFree.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFree.lean#L88). The attribute's comment: “finite locally free”.
 
 > **Stacks 03ZV.** A morphism of algebraic spaces is *finite locally free* when it is
 > affine and the direct image of the structure sheaf of its source is a finite locally free
@@ -107,7 +107,7 @@ Declarations registered for the tag:
 noncomputable abbrev IsFiniteLocallyFree (f : X ⟶ Y) : Prop
 ```
 
-**`AlgebraicGeometry.Space.IsFiniteLocallyFreeOfRank`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFree.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFree.lean#L95). The attribute's comment: “rank or degree”.
+**`AlgebraicGeometry.Space.IsFiniteLocallyFreeOfRank`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFree.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFree.lean#L95). The attribute's comment: “rank or degree”.
 
 > **Stacks 03ZV.** A finite locally free morphism of algebraic spaces has *rank* (or
 > *degree*) `r` when the direct image of the structure sheaf of its source has rank `r`.
@@ -120,7 +120,7 @@ noncomputable abbrev IsFiniteLocallyFreeOfRank (f : X ⟶ Y) (r : ℕ) : Prop
 
 [Tag 03ZW](https://stacks.math.columbia.edu/tag/03ZW) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isFiniteLocallyFree_presheaf_iff_isFiniteLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeCondition2.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeCondition2.lean#L125). The attribute's comment: “conditions (1) and (2)”.
+**`AlgebraicGeometry.Space.isFiniteLocallyFree_presheaf_iff_isFiniteLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeCondition2.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeCondition2.lean#L125). The attribute's comment: “conditions (1) and (2)”.
 
 > **Stacks 03ZW, conditions (1) and (2).** A morphism of algebraic spaces over `S` is
 > representable with every represented base change a finite locally free morphism of schemes
@@ -139,7 +139,7 @@ theorem isFiniteLocallyFree_presheaf_iff_isFiniteLocallyFree (f : X ⟶ Y) :
       IsFiniteLocallyFree B S hS f
 ```
 
-**`AlgebraicGeometry.Space.isFiniteLocallyFree_iff_exists_etaleChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeCondition2.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeCondition2.lean#L143). The attribute's comment: “conditions (2) and (3)”.
+**`AlgebraicGeometry.Space.isFiniteLocallyFree_iff_exists_etaleChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeCondition2.lean, line 143](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeCondition2.lean#L143). The attribute's comment: “conditions (2) and (3)”.
 
 > **Stacks 03ZW, conditions (2) and (3).** A morphism of algebraic spaces over `S` is finite
 > locally free in the sense of Stacks 03ZV exactly when there is one surjective étale morphism from
@@ -163,7 +163,7 @@ theorem isFiniteLocallyFree_iff_exists_etaleChart (f : X ⟶ Y) :
           (BigFppfOver.toScheme B S hS)).presheaf (pullback.snd f.hom g)
 ```
 
-**`AlgebraicGeometry.Space.isFiniteLocallyFree_iff_exists_zariskiCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeCondition2.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeCondition2.lean#L164). The attribute's comment: “conditions (2) and (4)”.
+**`AlgebraicGeometry.Space.isFiniteLocallyFree_iff_exists_zariskiCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeCondition2.lean, line 164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeCondition2.lean#L164). The attribute's comment: “conditions (2) and (4)”.
 
 > **Stacks 03ZW, conditions (2) and (4).** A morphism of algebraic spaces over `S` is finite
 > locally free in the sense of Stacks 03ZV exactly when there is a Zariski covering `Y = ⋃ Yᵢ` of
@@ -183,7 +183,7 @@ theorem isFiniteLocallyFree_iff_exists_zariskiCover (f : X ⟶ Y) :
           (BigFppfOver.toScheme B S hS)).presheaf (pullback.snd f.hom (U i).ι)
 ```
 
-**`AlgebraicGeometry.Space.isFiniteLocallyFree_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeCondition2.lean, line 193](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeCondition2.lean#L193).
+**`AlgebraicGeometry.Space.isFiniteLocallyFree_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeCondition2.lean, line 193](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeCondition2.lean#L193).
 
 > **Stacks 03ZW.** For a morphism `f : X ⟶ Y` of algebraic spaces over `S` the following are
 > equivalent:
@@ -224,7 +224,7 @@ theorem isFiniteLocallyFree_tfae (f : X ⟶ Y) :
             (BigFppfOver.toScheme B S hS)).presheaf (pullback.snd f.hom (U i).ι)]
 ```
 
-**`AlgebraicGeometry.Space.isFiniteLocallyFree_presheaf_iff_exists_etaleChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeEtaleLocal.lean, line 292](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeEtaleLocal.lean#L292). The attribute's comment: “conditions (1) and (3)”.
+**`AlgebraicGeometry.Space.isFiniteLocallyFree_presheaf_iff_exists_etaleChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeEtaleLocal.lean, line 292](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeEtaleLocal.lean#L292). The attribute's comment: “conditions (1) and (3)”.
 
 > **Stacks 03ZW, conditions (1) and (3).** A morphism of algebraic spaces over `S` is
 > representable and finite locally free exactly when there is one surjective étale morphism from a
@@ -248,7 +248,7 @@ theorem isFiniteLocallyFree_presheaf_iff_exists_etaleChart
           (BigFppfOver.toScheme B S hS)).presheaf (pullback.snd f g)
 ```
 
-**`AlgebraicGeometry.Space.isFiniteLocallyFree_presheaf_iff_exists_zariskiCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeZariskiCover.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeZariskiCover.lean#L64). The attribute's comment: “conditions (1) and (4)”.
+**`AlgebraicGeometry.Space.isFiniteLocallyFree_presheaf_iff_exists_zariskiCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeZariskiCover.lean, line 64](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeZariskiCover.lean#L64). The attribute's comment: “conditions (1) and (4)”.
 
 > **Stacks 03ZW, conditions (1) and (4).** A morphism of algebraic spaces over `S` is
 > representable and finite locally free exactly when there is a Zariski covering `Y = ⋃ Yᵢ` of its
@@ -280,7 +280,7 @@ theorem isFiniteLocallyFree_presheaf_iff_exists_zariskiCover
 
 [Tag 03ZX](https://stacks.math.columbia.edu/tag/03ZX) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isFiniteLocallyFree_presheaf_isStableUnderComposition`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeComp.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeComp.lean#L70). The attribute's comment: “stability under composition”.
+**`AlgebraicGeometry.Space.isFiniteLocallyFree_presheaf_isStableUnderComposition`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeComp.lean, line 70](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeComp.lean#L70). The attribute's comment: “stability under composition”.
 
 > Being representable and finite locally free is a composition-stable class of morphisms of
 > presheaves on the big fppf site of `S`.
@@ -292,7 +292,7 @@ instance isFiniteLocallyFree_presheaf_isStableUnderComposition :
       (BigFppfOver.toScheme B S hS)).presheaf.IsStableUnderComposition
 ```
 
-**`AlgebraicGeometry.Space.isFiniteLocallyFree_presheaf_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeComp.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeComp.lean#L79).
+**`AlgebraicGeometry.Space.isFiniteLocallyFree_presheaf_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeComp.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeComp.lean#L79).
 
 > The composition of representable finite locally free morphisms of algebraic spaces over `S`
 > is representable and finite locally free.
@@ -315,7 +315,7 @@ theorem isFiniteLocallyFree_presheaf_comp
 
 [Tag 03ZY](https://stacks.math.columbia.edu/tag/03ZY) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isFiniteLocallyFree_presheaf_isStableUnderBaseChange`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeBaseChange.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeBaseChange.lean#L110). The attribute's comment: “stability under base change”.
+**`AlgebraicGeometry.Space.isFiniteLocallyFree_presheaf_isStableUnderBaseChange`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeBaseChange.lean, line 110](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeBaseChange.lean#L110). The attribute's comment: “stability under base change”.
 
 > **Stacks 03ZY.** Being representable and finite locally free is a base-change stable class
 > of morphisms of presheaves on the big fppf site of `S`.
@@ -327,7 +327,7 @@ instance isFiniteLocallyFree_presheaf_isStableUnderBaseChange :
       (BigFppfOver.toScheme B S hS)).presheaf.IsStableUnderBaseChange
 ```
 
-**`AlgebraicGeometry.Space.isFiniteLocallyFree_presheaf_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeBaseChange.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeBaseChange.lean#L120).
+**`AlgebraicGeometry.Space.isFiniteLocallyFree_presheaf_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeBaseChange.lean, line 120](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeBaseChange.lean#L120).
 
 > **Stacks 03ZY.** A base change of a representable finite locally free morphism of algebraic
 > spaces over `S` is representable and finite locally free: if `f'` sits in a Cartesian square
@@ -349,7 +349,7 @@ theorem isFiniteLocallyFree_presheaf_of_isPullback
 
 [Tag 0416](https://stacks.math.columbia.edu/tag/0416) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isFiniteLocallyFree_presheaf_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeFiniteFlat.lean, line 174](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeFiniteFlat.lean#L174). The attribute's comment: “conditions (1) and (2), finite local freeness in the representable sense”.
+**`AlgebraicGeometry.Space.isFiniteLocallyFree_presheaf_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeFiniteFlat.lean, line 177](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeFiniteFlat.lean#L177). The attribute's comment: “conditions (1) and (2), finite local freeness in the representable sense”.
 
 > **Stacks 0416, conditions (1) and (2).** A morphism of algebraic spaces over `S` is
 > representable and finite locally free exactly when it is finite, flat and locally of finite
@@ -367,7 +367,7 @@ theorem isFiniteLocallyFree_presheaf_iff (hX : IsAlgebraicSpace B S hS X)
       IsFinite B S hS f ∧ IsFlat B S hS f ∧ IsLocallyOfFinitePresentation B S hS f
 ```
 
-**`AlgebraicGeometry.Space.isFiniteLocallyFree_presheaf_iff_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeFiniteFlat.lean, line 206](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeFiniteFlat.lean#L206). The attribute's comment: “condition (3) over a locally Noetherian target”.
+**`AlgebraicGeometry.Space.isFiniteLocallyFree_presheaf_iff_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeFiniteFlat.lean, line 209](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteLocallyFreeFiniteFlat.lean#L209). The attribute's comment: “condition (3) over a locally Noetherian target”.
 
 > **Stacks 0416, condition (3).** A morphism of algebraic spaces over `S` with locally
 > Noetherian target is representable and finite locally free exactly when it is finite and flat.
@@ -393,4 +393,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 67.46, Tag 03ZT](https://stacks.math.columbia.edu/tag/03ZT)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

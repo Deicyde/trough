@@ -8,13 +8,13 @@ proof: formalized
 
 # 10.66 Weakly associated primes
 
-Section 10.66 of the Stacks Project, [Tag 0546](https://stacks.math.columbia.edu/tag/0546). 17 tags here are carried by 21 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 10.66 of the Stacks Project, [Tag 0546](https://stacks.math.columbia.edu/tag/0546). 17 tags here are carried by 21 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0547, a definition
 
 [Tag 0547](https://stacks.math.columbia.edu/tag/0547) in the Stacks Project.
 
-**`IsWeaklyAssociatedPrime`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/WeaklyAssociatedPrime/Defs.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Ideal/WeaklyAssociatedPrime/Defs.lean#L81). The attribute's comment: “predicate”.
+**`IsWeaklyAssociatedPrime`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/WeaklyAssociatedPrime/Defs.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/WeaklyAssociatedPrime/Defs.lean#L81). The attribute's comment: “predicate”.
 
 > A prime ideal `I` of `R` is *weakly associated* to the `R`-module `M` if `I` is minimal among
 > the prime ideals containing the annihilator `(R ∙ m).annihilator` of some element `m ∈ M`.
@@ -23,7 +23,7 @@ Section 10.66 of the Stacks Project, [Tag 0546](https://stacks.math.columbia.edu
 def IsWeaklyAssociatedPrime (I : Ideal R) : Prop
 ```
 
-**`weaklyAssociatedPrimes`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/WeaklyAssociatedPrime/Defs.lean, line 86](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Ideal/WeaklyAssociatedPrime/Defs.lean#L86). The attribute's comment: “set”.
+**`weaklyAssociatedPrimes`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/WeaklyAssociatedPrime/Defs.lean, line 86](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/WeaklyAssociatedPrime/Defs.lean#L86). The attribute's comment: “set”.
 
 > The set of weakly associated primes of `M` (over `R`).
 
@@ -35,7 +35,7 @@ def weaklyAssociatedPrimes : Set (Ideal R)
 
 [Tag 0566](https://stacks.math.columbia.edu/tag/0566) in the Stacks Project.
 
-**`weaklyAssociated_iff_localization_and_exists_radical_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/WeaklyAssociatedPrime/Defs.lean, line 247](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Ideal/WeaklyAssociatedPrime/Defs.lean#L247).
+**`weaklyAssociated_iff_localization_and_exists_radical_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/WeaklyAssociatedPrime/Defs.lean, line 247](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/WeaklyAssociatedPrime/Defs.lean#L247).
 
 > For a prime `p` of `R`, the following are equivalent:
 >
@@ -60,7 +60,7 @@ theorem weaklyAssociated_iff_localization_and_exists_radical_eq
 
 [Tag 0EMA](https://stacks.math.columbia.edu/tag/0EMA) in the Stacks Project.
 
-**`weakAss_eq_minimalPrimes0EMA`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/WeaklyAssociatedPrime/Defs.lean, line 505](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Ideal/WeaklyAssociatedPrime/Defs.lean#L505).
+**`weakAss_eq_minimalPrimes0EMA`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/WeaklyAssociatedPrime/Defs.lean, line 505](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/WeaklyAssociatedPrime/Defs.lean#L505).
 
 > For a reduced commutative ring `R`, the weakly associated primes of `R` are exactly the minimal
 > primes of `R`.
@@ -74,7 +74,7 @@ theorem weakAss_eq_minimalPrimes0EMA [IsReduced R] :
 
 [Tag 0548](https://stacks.math.columbia.edu/tag/0548) in the Stacks Project.
 
-**`Module.weaklyAssociatedPrimes_subset_of_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/WeaklyAssociated.lean, line 680](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Ideal/AssociatedPrime/WeaklyAssociated.lean#L680).
+**`Module.weaklyAssociatedPrimes_subset_of_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/WeaklyAssociated.lean, line 680](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/AssociatedPrime/WeaklyAssociated.lean#L680).
 
 > **Stacks 0548**, first inclusion. Let `R` be a ring and let `f : M →ₗ[R] M'` be an injective
 > map of `R`-modules. Then `WeakAss(M) ⊆ WeakAss(M')`, where `WeakAss(N)` is the set of primes of `R`
@@ -89,7 +89,7 @@ public theorem Module.weaklyAssociatedPrimes_subset_of_injective
       {p : Ideal R | ∃ m : M', p ∈ (R ∙ m).annihilator.minimalPrimes}
 ```
 
-**`Module.weaklyAssociatedPrimes_subset_union_of_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/WeaklyAssociated.lean, line 695](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Ideal/AssociatedPrime/WeaklyAssociated.lean#L695).
+**`Module.weaklyAssociatedPrimes_subset_union_of_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/WeaklyAssociated.lean, line 695](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/AssociatedPrime/WeaklyAssociated.lean#L695).
 
 > **Stacks 0548**, second inclusion. Let `R` be a ring and let `0 → M → M' → M''` be an exact
 > sequence of `R`-modules, i.e. `f : M →ₗ[R] M'` is injective with image the kernel of
@@ -111,7 +111,7 @@ public theorem Module.weaklyAssociatedPrimes_subset_union_of_exact
 
 [Tag 0588](https://stacks.math.columbia.edu/tag/0588) in the Stacks Project.
 
-**`weakAss_empty_iff_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/WeaklyAssociatedPrime/Basic.lean, line 30](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Ideal/WeaklyAssociatedPrime/Basic.lean#L30).
+**`weakAss_empty_iff_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/WeaklyAssociatedPrime/Basic.lean, line 30](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/WeaklyAssociatedPrime/Basic.lean#L30).
 
 > Stacks Tag 0588 (Lemma 10.66.5): an `R`-module `M` is the zero module if and
 > only if it has no weakly associated primes.
@@ -126,7 +126,7 @@ theorem weakAss_empty_iff_zero {R : Type*} [CommRing R] {M : Type*} [AddCommGrou
 
 [Tag 0589](https://stacks.math.columbia.edu/tag/0589) in the Stacks Project.
 
-**`StacksProblem.ass_subset_weakAss_subset_supp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/Defs.lean, line 313](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Ideal/AssociatedPrime/Defs.lean#L313). References: SGA 2 III (1.2), “(ii) ⇒ (i)”.
+**`StacksProblem.ass_subset_weakAss_subset_supp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/Defs.lean, line 313](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/AssociatedPrime/Defs.lean#L313). References: SGA 2 III (1.2), “(ii) ⇒ (i)”.
 
 > Stacks tag 0589 (Lemma 10.66.6): `Ass(M) ⊆ WeakAss(M) ⊆ Supp(M)`.
 
@@ -140,7 +140,7 @@ theorem ass_subset_weakAss_subset_supp (R : Type*) [CommRing R] (M : Type*)
 
 [Tag 05C3](https://stacks.math.columbia.edu/tag/05C3) in the Stacks Project.
 
-**`iUnion_weaklyAssociatedPrimes_eq_zeroDivisorsOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/WeaklyAssociatedPrime/Defs.lean, line 293](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Ideal/WeaklyAssociatedPrime/Defs.lean#L293).
+**`iUnion_weaklyAssociatedPrimes_eq_zeroDivisorsOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/WeaklyAssociatedPrime/Defs.lean, line 293](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/WeaklyAssociatedPrime/Defs.lean#L293).
 
 > Let `R` be a commutative ring and `M` an `R`-module. The union of the weakly associated primes
 > of `M` is the set of zerodivisors on `M`.
@@ -155,7 +155,7 @@ theorem iUnion_weaklyAssociatedPrimes_eq_zeroDivisorsOn
 
 [Tag 05C4](https://stacks.math.columbia.edu/tag/05C4) in the Stacks Project.
 
-**`Module.exists_mem_minimalPrimes_annihilator_span_singleton_of_minimal_mem_support`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/WeaklyAssociated.lean, line 466](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Ideal/AssociatedPrime/WeaklyAssociated.lean#L466).
+**`Module.exists_mem_minimalPrimes_annihilator_span_singleton_of_minimal_mem_support`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/WeaklyAssociated.lean, line 466](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/AssociatedPrime/WeaklyAssociated.lean#L466).
 
 > **Stacks 05C4.** Let `R` be a ring and `M` an `R`-module. Any prime `𝔭` which is minimal among
 > the elements of the support of `M` is weakly associated to `M`, i.e. `𝔭` is minimal over the
@@ -172,7 +172,7 @@ public theorem Module.exists_mem_minimalPrimes_annihilator_span_singleton_of_min
 
 [Tag 058A](https://stacks.math.columbia.edu/tag/058A) in the Stacks Project.
 
-**`isAssociatedPrime_tfae_of_fg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/WeaklyAssociated.lean, line 312](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Ideal/AssociatedPrime/WeaklyAssociated.lean#L312).
+**`isAssociatedPrime_tfae_of_fg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/WeaklyAssociated.lean, line 312](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/AssociatedPrime/WeaklyAssociated.lean#L312).
 
 > **Stacks 058A.** Let `R` be a ring, `M` an `R`-module and `p` a finitely generated ideal of
 > `R`. Then `p ∈ Ass(M)`, i.e. `p` is prime and is the annihilator of an element of `M`, iff `p` is
@@ -188,7 +188,7 @@ public theorem isAssociatedPrime_tfae_of_fg {R : Type*} [CommSemiring R] {M : Ty
       ∃ m : M, p ∈ (R ∙ m).annihilator.minimalPrimes]
 ```
 
-**`associatedPrimes_eq_setOf_exists_mem_minimalPrimes_annihilator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/WeaklyAssociated.lean, line 323](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Ideal/AssociatedPrime/WeaklyAssociated.lean#L323).
+**`associatedPrimes_eq_setOf_exists_mem_minimalPrimes_annihilator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/WeaklyAssociated.lean, line 323](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/AssociatedPrime/WeaklyAssociated.lean#L323).
 
 > **Stacks 058A**, the Noetherian case. Let `R` be a Noetherian ring and `M` an `R`-module. Then
 > `Ass(M) = WeakAss(M)`: a prime of `R` is the radical of the annihilator of an element of `M` if and
@@ -205,7 +205,7 @@ public theorem associatedPrimes_eq_setOf_exists_mem_minimalPrimes_annihilator {R
 
 [Tag 05C6](https://stacks.math.columbia.edu/tag/05C6) in the Stacks Project.
 
-**`weakAss_subset_image_comap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/WeaklyAssociatedPrime/Basic.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Ideal/WeaklyAssociatedPrime/Basic.lean#L79). References: EGA IV (3.1.10.1), “Lifting inclusion”.
+**`weakAss_subset_image_comap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/WeaklyAssociatedPrime/Basic.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/WeaklyAssociatedPrime/Basic.lean#L79). References: EGA IV (3.1.10.1), “Lifting inclusion”.
 
 > Stacks tag 05C6 (Lemma 10.66.11): for a ring map `φ : R → S` and an `S`-module `M`
 > regarded as an `R`-module by restriction of scalars along `φ`, every prime of `R` weakly
@@ -224,7 +224,7 @@ theorem weakAss_subset_image_comap
 
 [Tag 05E1](https://stacks.math.columbia.edu/tag/05E1) in the Stacks Project.
 
-**`weakAss_eq_comap_image_of_finite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/WeaklyAssociatedPrime/Functoriality.lean, line 262](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Ideal/WeaklyAssociatedPrime/Functoriality.lean#L262).
+**`weakAss_eq_comap_image_of_finite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/WeaklyAssociatedPrime/Functoriality.lean, line 262](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/WeaklyAssociatedPrime/Functoriality.lean#L262).
 
 > For a finite ring map `φ : R → S` and an `S`-module `M`, the weakly associated primes of `M`
 > over `R` are exactly the contractions along `f = Spec(φ)` of the weakly associated primes of `M`
@@ -240,7 +240,7 @@ theorem weakAss_eq_comap_image_of_finite (hfin : Module.Finite R S) :
 
 [Tag 05C8](https://stacks.math.columbia.edu/tag/05C8) in the Stacks Project.
 
-**`weaklyAssociatedPrimes_comap_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/WeaklyAssociatedPrime/Defs.lean, line 342](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Ideal/WeaklyAssociatedPrime/Defs.lean#L342). References: EGA IV (3.1.10.1), “Quotient maps A → A/I”.
+**`weaklyAssociatedPrimes_comap_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/WeaklyAssociatedPrime/Defs.lean, line 342](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/WeaklyAssociatedPrime/Defs.lean#L342). References: EGA IV (3.1.10.1), “Quotient maps A → A/I”.
 
 > For a commutative ring `R`, an ideal `I`, and an `R/I`-module `M` (viewed as an `R`-module by
 > restriction of scalars), the canonical injection `π* = Ideal.comap (R → R/I)` carries the weakly
@@ -256,7 +256,7 @@ theorem weaklyAssociatedPrimes_comap_quotient :
 
 [Tag 05C9](https://stacks.math.columbia.edu/tag/05C9) in the Stacks Project.
 
-**`weakAss_localizedModule_eq_image`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/WeaklyAssociatedPrime/Defs.lean, line 436](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Ideal/WeaklyAssociatedPrime/Defs.lean#L436). The attribute's comment: “(1)”.
+**`weakAss_localizedModule_eq_image`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/WeaklyAssociatedPrime/Defs.lean, line 436](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/WeaklyAssociatedPrime/Defs.lean#L436). The attribute's comment: “(1)”.
 
 > `WeakAss_R(S⁻¹M) = ι(WeakAss_{S⁻¹R}(S⁻¹M))`: the `R`-module weakly associated primes of `S⁻¹M`
 > are the image under `ι` of the `S⁻¹R`-module weakly associated primes of `S⁻¹M`.
@@ -267,7 +267,7 @@ theorem weakAss_localizedModule_eq_image :
       localizationComap S '' (weakAss (Localization S) (LocalizedModule S M))
 ```
 
-**`weakAss_inter_image_eq_weakAss_localizedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/WeaklyAssociatedPrime/Defs.lean, line 466](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Ideal/WeaklyAssociatedPrime/Defs.lean#L466). The attribute's comment: “(2)”.
+**`weakAss_inter_image_eq_weakAss_localizedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/WeaklyAssociatedPrime/Defs.lean, line 466](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/WeaklyAssociatedPrime/Defs.lean#L466). The attribute's comment: “(2)”.
 
 > `{ p ∈ WeakAss_R(M) | p ∈ ι(Spec(S⁻¹R)) } = WeakAss_R(S⁻¹M)`: the primes weakly associated to
 > `M` and lying in the image of `ι` (i.e. disjoint from `S`) are exactly the primes weakly associated
@@ -283,7 +283,7 @@ theorem weakAss_inter_image_eq_weakAss_localizedModule :
 
 [Tag 05CA](https://stacks.math.columbia.edu/tag/05CA) in the Stacks Project.
 
-**`Module.weaklyAssociatedPrimes_eq_of_isSMulRegular_of_isLocalizedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/WeaklyAssociatedPrime/Localization.lean, line 172](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Ideal/WeaklyAssociatedPrime/Localization.lean#L172).
+**`Module.weaklyAssociatedPrimes_eq_of_isSMulRegular_of_isLocalizedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/WeaklyAssociatedPrime/Localization.lean, line 172](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/WeaklyAssociatedPrime/Localization.lean#L172).
 
 > **Stacks 05CA.** Let `R` be a ring, `M` an `R`-module and `S ⊆ R` a multiplicative subset such
 > that every `s ∈ S` is a nonzerodivisor on `M`. Then `M` and its localization `S⁻¹M` have the same
@@ -304,7 +304,7 @@ public theorem Module.weaklyAssociatedPrimes_eq_of_isSMulRegular_of_isLocalizedM
 
 [Tag 05CB](https://stacks.math.columbia.edu/tag/05CB) in the Stacks Project.
 
-**`Module.injective_pi_localization_weaklyAssociatedPrimes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/WeaklyAssociatedPrime/Separation.lean, line 197](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Ideal/WeaklyAssociatedPrime/Separation.lean#L197).
+**`Module.injective_pi_localization_weaklyAssociatedPrimes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/WeaklyAssociatedPrime/Separation.lean, line 197](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/WeaklyAssociatedPrime/Separation.lean#L197).
 
 > **Stacks 05CB.** Let `R` be a ring and `M` an `R`-module. The canonical map
 > `M → ∏_{𝔭 ∈ WeakAss(M)} M_𝔭` from `M` to the product of its localizations at the weakly
@@ -324,7 +324,7 @@ public theorem Module.injective_pi_localization_weaklyAssociatedPrimes
 
 [Tag 05CC](https://stacks.math.columbia.edu/tag/05CC) in the Stacks Project.
 
-**`Stacks.WeaklyAssociatedPrimes.BaseChange.weakAss_eq_of_flat_domain`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/WeaklyAssociatedPrime/Localization.lean, line 341](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Ideal/WeaklyAssociatedPrime/Localization.lean#L341).
+**`Stacks.WeaklyAssociatedPrimes.BaseChange.weakAss_eq_of_flat_domain`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/WeaklyAssociatedPrime/Localization.lean, line 341](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/WeaklyAssociatedPrime/Localization.lean#L341).
 
 > Stacks tag 05CC (Lemma 10.66.18): let `R → S` be a ring map and `N` an `S`-module that
 > is flat over the domain `R` (with `Module R N` compatible with the `S`-action via
@@ -349,7 +349,7 @@ theorem weakAss_eq_of_flat_domain
 
 [Tag 0CUB](https://stacks.math.columbia.edu/tag/0CUB) in the Stacks Project.
 
-**`IsWeaklyAssociatedPrime.comap_tensorProduct_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/WeaklyAssociatedFieldExtension.lean, line 499](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Ideal/AssociatedPrime/WeaklyAssociatedFieldExtension.lean#L499).
+**`IsWeaklyAssociatedPrime.comap_tensorProduct_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Ideal/AssociatedPrime/WeaklyAssociatedFieldExtension.lean, line 489](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Ideal/AssociatedPrime/WeaklyAssociatedFieldExtension.lean#L489).
 
 > **Stacks 0CUB.** Let `K / k` be a field extension, `R` a `k`-algebra and `M` an
 > `R`-module. If a prime `𝔮 ⊂ R ⊗[k] K` is weakly associated to `M ⊗[k] K`, here written as the
@@ -370,4 +370,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.66, Tag 0546](https://stacks.math.columbia.edu/tag/0546)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

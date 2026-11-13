@@ -8,13 +8,13 @@ proof: formalized
 
 # 75.4 Derived category of quasi-coherent modules on the small étale site
 
-Section 75.4 of the Stacks Project, [Tag 071P](https://stacks.math.columbia.edu/tag/071P). 3 tags here are carried by 8 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 75.4 of the Stacks Project, [Tag 071P](https://stacks.math.columbia.edu/tag/071P). 3 tags here are carried by 8 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 08H7, an equation
 
 [Tag 08H7](https://stacks.math.columbia.edu/tag/08H7) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.representedToSchemeZariskiRingedToposHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RepresentedSchemeZariskiRingedToposHom.lean, line 283](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RepresentedSchemeZariskiRingedToposHom.lean#L283). The tag is given by the `attribute` command at [StacksFrontier/AlgebraicGeometry/Spaces/RepresentedSchemeZariskiRingedToposHom.lean, line 296](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RepresentedSchemeZariskiRingedToposHom.lean#L296). The attribute's comment: “the morphism ε of the displayed equation, as a morphism of ringed topoi, for the small étale site of an algebraic space represented by a scheme — the same ε as `AlgebraicGeometry.SmallEtale.toZariskiAbstractRingedToposHom`, read along the equivalence of that site with the small étale site of the representing scheme”.
+**`AlgebraicGeometry.Space.representedToSchemeZariskiRingedToposHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RepresentedSchemeZariskiRingedToposHom.lean, line 283](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RepresentedSchemeZariskiRingedToposHom.lean#L283). The tag is given by the `attribute` command at [StacksFrontier/AlgebraicGeometry/Spaces/RepresentedSchemeZariskiRingedToposHom.lean, line 296](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RepresentedSchemeZariskiRingedToposHom.lean#L296). The attribute's comment: “the morphism ε of the displayed equation, as a morphism of ringed topoi, for the small étale site of an algebraic space represented by a scheme — the same ε as `AlgebraicGeometry.SmallEtale.toZariskiAbstractRingedToposHom`, read along the equivalence of that site with the small étale site of the representing scheme”.
 
 > **`ε : (X_étale, 𝒪_X) ⟶ (X_{0, Zar}, 𝒪_{X_0})` as a morphism of ringed topoi**, for `X = h_U`
 > the algebraic space represented by an object `U` of the big fppf site over `S` and `X_0` the
@@ -41,13 +41,13 @@ public def representedToSchemeZariskiRingedToposHom :
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.SmallEtale.toZariskiRingedToposHom`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleRingedToposHom.lean#L156), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleRingedToposHom.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleRingedToposHom.lean#L166) (StacksFrontier).
+- [`AlgebraicGeometry.SmallEtale.toZariskiRingedToposHom`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleRingedToposHom.lean#L156), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleRingedToposHom.lean, line 166](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleRingedToposHom.lean#L166) (StacksFrontier).
 
 ## Tag 08H8, a lemma
 
 [Tag 08H8](https://stacks.math.columbia.edu/tag/08H8) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallEtale.preservesFiniteLimits_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleExactAssociatedModule.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleExactAssociatedModule.lean#L93). The attribute's comment: “the exactness assertion: `ε^* : Mod(𝒪_S) → Mod(𝒪_étale)` is left exact, hence exact, right exactness being automatic for a left adjoint. The flatness assertion is carried by isFlatMapULift\_inverseImageStructureMap; the zero-detection assertion `ε^*𝓕 = 0 ⟹ 𝓕 = 0` is not carried here, and is available for a quasi-coherent module as isZero\_of\_isZero\_associatedModule”.
+**`AlgebraicGeometry.SmallEtale.preservesFiniteLimits_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleExactAssociatedModule.lean, line 93](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleExactAssociatedModule.lean#L93). The attribute's comment: “the exactness assertion: `ε^* : Mod(𝒪_S) → Mod(𝒪_étale)` is left exact, hence exact, right exactness being automatic for a left adjoint. The flatness assertion is carried by isFlatMapULift\_inverseImageStructureMap; the zero-detection assertion `ε^*𝓕 = 0 ⟹ 𝓕 = 0` is not carried here, and is available for a quasi-coherent module as isZero\_of\_isZero\_associatedModule”.
 
 > **The exactness assertion of Stacks 08H8.**  The associated-module functor
 > `ε^* = (𝓕 ↦ 𝓕^a)` of Stacks 03DU (4) at `τ = étale` is left exact.
@@ -62,7 +62,7 @@ public theorem preservesFiniteLimits_associatedModule :
     PreservesFiniteLimits (associatedModule B S hS)
 ```
 
-**`AlgebraicGeometry.SmallEtale.isZero_of_isZero_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleFiniteType.lean, line 532](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleFiniteType.lean#L532). The attribute's comment: “the zero-detection assertion `ε^*𝓕 = 0 ⟹ 𝓕 = 0`, for quasi-coherent `𝓕`, by a route needing no exactness. The flatness assertion is `isFlatMapULift_inverseImageStructureMap`, the exactness assertion is `preservesFiniteLimits_associatedModule`, and zero detection for an arbitrary `𝒪_X`-module is `isZero_of_isZero_associatedModule_general`.”.
+**`AlgebraicGeometry.SmallEtale.isZero_of_isZero_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleFiniteType.lean, line 532](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleFiniteType.lean#L532). The attribute's comment: “the zero-detection assertion `ε^*𝓕 = 0 ⟹ 𝓕 = 0`, for quasi-coherent `𝓕`, by a route needing no exactness. The flatness assertion is `isFlatMapULift_inverseImageStructureMap`, the exactness assertion is `preservesFiniteLimits_associatedModule`, and zero detection for an arbitrary `𝒪_X`-module is `isZero_of_isZero_associatedModule_general`.”.
 
 > **Stacks 08H8, the zero-detection assertion, for quasi-coherent modules.**  A quasi-coherent
 > `𝒪_X`-module `𝓕` whose pullback `ε^*𝓕` along the morphism of ringed sites
@@ -79,7 +79,7 @@ theorem isZero_of_isZero_associatedModule (F : X.Modules) [F.IsQuasicoherent]
     (h : IsZero ((associatedModule B X hX).obj F)) : IsZero F
 ```
 
-**`AlgebraicGeometry.SmallEtale.isFlatMapULift_inverseImageStructureMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleFlatInverseImage.lean, line 354](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleFlatInverseImage.lean#L354). The attribute's comment: “the flatness assertion: `ε` is a flat morphism of ringed sites. The exactness of `ε^* : Mod(𝒪_X) → Mod(𝒪_étale)` is carried by `AlgebraicGeometry.SmallEtale.exactFunctor_pullbackModules_toZariski`; the faithfulness assertion `ε^*𝓕 = 0 ⟹ 𝓕 = 0` is not carried here and is not in the library”.
+**`AlgebraicGeometry.SmallEtale.isFlatMapULift_inverseImageStructureMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleFlatInverseImage.lean, line 354](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleFlatInverseImage.lean#L354). The attribute's comment: “the flatness assertion: `ε` is a flat morphism of ringed sites. The exactness of `ε^* : Mod(𝒪_X) → Mod(𝒪_étale)` is carried by `AlgebraicGeometry.SmallEtale.exactFunctor_pullbackModules_toZariski`; the faithfulness assertion `ε^*𝓕 = 0 ⟹ 𝓕 = 0` is not carried here and is not in the library”.
 
 > **Stacks 0GNA.**  The morphism of ringed sites `ε = id_{small, étale, Zar} : S_étale → S_Zar`
 > is flat: `𝒪_{S_étale}` is a flat module over `ε⁻¹𝒪_{S_Zar}`, the flatness being asserted for
@@ -100,7 +100,7 @@ public theorem isFlatMapULift_inverseImageStructureMap :
       (inverseImageStructureMap B S hS)
 ```
 
-**`AlgebraicGeometry.SmallEtale.isRightAdjoint_toZariskiModulePushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtalePullbackExact.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtalePullbackExact.lean#L143). The attribute's comment: “the existence assertion: the direct image `ε_*` of sheaves of modules along `ε` has a left adjoint, i.e. `ε^* : Mod(𝒪_S) ⟶ Mod(𝒪_{S_étale})` exists. Both functors are taken in the sense of Stacks 03D6 for the two-field morphism of ringed topoi of Stacks 01D3 (2) carrying `ε`, which is the library's spelling of the pair; the left adjoint is `AlgebraicGeometry.SmallEtale.toZariskiModulePullback`”.
+**`AlgebraicGeometry.SmallEtale.isRightAdjoint_toZariskiModulePushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtalePullbackExact.lean, line 143](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtalePullbackExact.lean#L143). The attribute's comment: “the existence assertion: the direct image `ε_*` of sheaves of modules along `ε` has a left adjoint, i.e. `ε^* : Mod(𝒪_S) ⟶ Mod(𝒪_{S_étale})` exists. Both functors are taken in the sense of Stacks 03D6 for the two-field morphism of ringed topoi of Stacks 01D3 (2) carrying `ε`, which is the library's spelling of the pair; the left adjoint is `AlgebraicGeometry.SmallEtale.toZariskiModulePullback`”.
 
 > **Stacks 08H8, the existence assertion.**  The direct image `ε_*` of sheaves of modules
 > along `ε = id_{small, étale, Zar} : S_étale → S_Zar` has a left adjoint, i.e. the pullback
@@ -114,7 +114,7 @@ public theorem isRightAdjoint_toZariskiModulePushforward :
     (toZariskiModulePushforward B S hS).IsRightAdjoint
 ```
 
-**`AlgebraicGeometry.SmallEtale.exactFunctor_pullbackModules_toZariski`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtalePullbackExact.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtalePullbackExact.lean#L168). The attribute's comment: “the exactness assertion: `ε^* : Mod(𝒪_S) ⟶ Mod(𝒪_{S_étale})` is exact, for `ε` the morphism of ringed topoi of Equation 75.4.0.1 in the two-field shape of Stacks 01D3 (2). The flatness assertion is carried by `AlgebraicGeometry.SmallEtale.isFlatMapULift_inverseImageStructureMap`; the implication `ε^*𝓕 = 0 ⟹ 𝓕 = 0` is not carried here”.
+**`AlgebraicGeometry.SmallEtale.exactFunctor_pullbackModules_toZariski`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtalePullbackExact.lean, line 168](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtalePullbackExact.lean#L168). The attribute's comment: “the exactness assertion: `ε^* : Mod(𝒪_S) ⟶ Mod(𝒪_{S_étale})` is exact, for `ε` the morphism of ringed topoi of Equation 75.4.0.1 in the two-field shape of Stacks 01D3 (2). The flatness assertion is carried by `AlgebraicGeometry.SmallEtale.isFlatMapULift_inverseImageStructureMap`; the implication `ε^*𝓕 = 0 ⟹ 𝓕 = 0` is not carried here”.
 
 > **Stacks 08H8, the exactness assertion.**  The pullback `ε^*` of sheaves of modules along
 > `ε = id_{small, étale, Zar} : S_étale → S_Zar` is exact: it preserves finite limits and finite
@@ -132,7 +132,7 @@ public theorem exactFunctor_pullbackModules_toZariski :
       (toZariskiModulePullback B S hS)
 ```
 
-**`AlgebraicGeometry.SmallEtale.isZero_of_isZero_toZariskiModulePullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtalePullbackExact.lean, line 290](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtalePullbackExact.lean#L290). The attribute's comment: “the faithfulness assertion: `ε^*𝓕 = 0 ⟹ 𝓕 = 0`, for `ε^*` the pullback of sheaves of modules of Stacks 03D6 (2) along the two-field morphism of ringed topoi of Stacks 01D3 (2) carrying `ε`. The flatness assertion is carried by `AlgebraicGeometry.SmallEtale.isFlatMapULift_inverseImageStructureMap`, the exactness assertion by `AlgebraicGeometry.SmallEtale.exactFunctor_pullbackModules_toZariski` and the existence assertion by `AlgebraicGeometry.SmallEtale.isRightAdjoint_toZariskiModulePushforward`”.
+**`AlgebraicGeometry.SmallEtale.isZero_of_isZero_toZariskiModulePullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtalePullbackExact.lean, line 290](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtalePullbackExact.lean#L290). The attribute's comment: “the faithfulness assertion: `ε^*𝓕 = 0 ⟹ 𝓕 = 0`, for `ε^*` the pullback of sheaves of modules of Stacks 03D6 (2) along the two-field morphism of ringed topoi of Stacks 01D3 (2) carrying `ε`. The flatness assertion is carried by `AlgebraicGeometry.SmallEtale.isFlatMapULift_inverseImageStructureMap`, the exactness assertion by `AlgebraicGeometry.SmallEtale.exactFunctor_pullbackModules_toZariski` and the existence assertion by `AlgebraicGeometry.SmallEtale.isRightAdjoint_toZariskiModulePushforward`”.
 
 > **Stacks 08H8, the faithfulness assertion.**  If the pullback `ε^*𝓕` of a sheaf of
 > `𝒪_S`-modules along `ε = id_{small, étale, Zar} : S_étale → S_Zar` vanishes, then `𝓕` vanishes.
@@ -155,7 +155,7 @@ public theorem isZero_of_isZero_toZariskiModulePullback
 
 [Tag 071Q](https://stacks.math.columbia.edu/tag/071Q) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallEtale.derivedAssociatedModule_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleDerivedEquivalence.lean, line 524](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleDerivedEquivalence.lean#L524).
+**`AlgebraicGeometry.SmallEtale.derivedAssociatedModule_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleDerivedEquivalence.lean, line 524](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleDerivedEquivalence.lean#L524).
 
 > **Stacks 071Q.**  For a scheme `S`, the functor `ε^* : D_QCoh(𝒪_S) ⟶ D_QCoh(S_étale, 𝒪)`
 > induced by the exact functor `ε^*` of Stacks 08H8 is an equivalence.
@@ -178,4 +178,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 75.4, Tag 071P](https://stacks.math.columbia.edu/tag/071P)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

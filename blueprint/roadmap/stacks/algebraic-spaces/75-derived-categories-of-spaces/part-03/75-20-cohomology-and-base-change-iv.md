@@ -8,13 +8,13 @@ proof: formalized
 
 # 75.20 Cohomology and base change, IV
 
-Section 75.20 of the Stacks Project, [Tag 08IM](https://stacks.math.columbia.edu/tag/08IM). 7 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 75.20 of the Stacks Project, [Tag 08IM](https://stacks.math.columbia.edu/tag/08IM). 7 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 08IN, a lemma
 
 [Tag 08IN](https://stacks.math.columbia.edu/tag/08IN) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isIso_smallEtaleProjectionFormulaMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleProjectionFormulaIso.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleProjectionFormulaIso.lean#L126).
+**`AlgebraicGeometry.Space.isIso_smallEtaleProjectionFormulaMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleProjectionFormulaIso.lean, line 126](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleProjectionFormulaIso.lean#L126).
 
 > **Stacks 08IN.**  Let `f : X ⟶ Y` be a quasi-compact and quasi-separated morphism of
 > algebraic spaces, `E ∈ D_QCoh(𝒪_X)` and `K ∈ D_QCoh(𝒪_Y)`.  Then the projection formula map
@@ -34,7 +34,7 @@ theorem isIso_smallEtaleProjectionFormulaMap (hfqc : IsQuasiCompact B S hS f.hom
 
 [Tag 08IP](https://stacks.math.columbia.edu/tag/08IP) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.TorIndependent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TorIndependence.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/TorIndependence.lean#L58).
+**`AlgebraicGeometry.Space.TorIndependent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TorIndependence.lean, line 58](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/TorIndependence.lean#L58).
 
 > **Stacks 08IP.** Two algebraic spaces are Tor independent over a base when the geometric
 > étale local rings at every compatible pair of points are Tor independent
@@ -52,7 +52,7 @@ public def TorIndependent {B : BigFppfSite.{u}} {S : Scheme.{u}}
 
 [Tag 08IQ](https://stacks.math.columbia.edu/tag/08IQ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.torIndependent_iff_forall_etale_diagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TorIndependenceEtaleLocal.lean, line 382](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/TorIndependenceEtaleLocal.lean#L382). The attribute's comment: “(1) <=> (2)”.
+**`AlgebraicGeometry.Space.torIndependent_iff_forall_etale_diagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TorIndependenceEtaleLocal.lean, line 382](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/TorIndependenceEtaleLocal.lean#L382). The attribute's comment: “(1) <=> (2)”.
 
 > **Stacks 08IQ, (1) ⟺ (2).**  Let `X` and `Y` be algebraic spaces over an algebraic space
 > `B`.  Then `X` and `Y` are Tor independent over `B` if and only if for every commutative
@@ -88,7 +88,7 @@ public theorem torIndependent_iff_forall_etale_diagram {Bs X Y : AlgebraicSpaces
         vw.hom ≫ c.hom = b.hom ≫ gY.hom → TorIndependent U.2 V.2 W.2 uw.hom vw.hom
 ```
 
-**`AlgebraicGeometry.Space.torIndependent_of_isEtale_surjective_diagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TorIndependenceEtaleLocal.lean, line 524](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/TorIndependenceEtaleLocal.lean#L524). The attribute's comment: “(3) => (1)”.
+**`AlgebraicGeometry.Space.torIndependent_of_isEtale_surjective_diagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TorIndependenceEtaleLocal.lean, line 524](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/TorIndependenceEtaleLocal.lean#L524). The attribute's comment: “(3) => (1)”.
 
 > **Stacks 08IQ, (3) ⟹ (1).**  Let `X` and `Y` be algebraic spaces over an algebraic space
 > `Bs`.  Suppose given one commutative diagram
@@ -123,7 +123,7 @@ public theorem torIndependent_of_isEtale_surjective_diagram
     TorIndependent X.2 Y.2 Bs.2 fX.hom gY.hom
 ```
 
-**`AlgebraicGeometry.Space.exists_isEtale_surjective_diagram_of_torIndependent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TorIndependenceEtaleLocal.lean, line 655](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/TorIndependenceEtaleLocal.lean#L655). The attribute's comment: “(1) => (3)”.
+**`AlgebraicGeometry.Space.exists_isEtale_surjective_diagram_of_torIndependent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TorIndependenceEtaleLocal.lean, line 655](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/TorIndependenceEtaleLocal.lean#L655). The attribute's comment: “(1) => (3)”.
 
 > **Stacks 08IQ, (1) ⟹ (3).**  Let `X` and `Y` be algebraic spaces over an algebraic space
 > `Bs` which are Tor independent over `Bs`.  Then there is a commutative diagram
@@ -157,7 +157,7 @@ public theorem exists_isEtale_surjective_diagram_of_torIndependent
         TorIndependent U.2 V.2 W.2 uw.hom vw.hom
 ```
 
-**`AlgebraicGeometry.Space.torIndependent_of_torIndependent_scheme_diagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TorIndependenceSchemeComparison.lean, line 595](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/TorIndependenceSchemeComparison.lean#L595). The attribute's comment: “(4) => (1)”.
+**`AlgebraicGeometry.Space.torIndependent_of_torIndependent_scheme_diagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TorIndependenceSchemeComparison.lean, line 594](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/TorIndependenceSchemeComparison.lean#L594). The attribute's comment: “(4) => (1)”.
 
 > **Stacks 08IQ, (4) ⟹ (1).**  Let `X` and `Y` be algebraic spaces over an algebraic space
 > `Bs`.  Suppose given one commutative diagram
@@ -199,7 +199,7 @@ theorem torIndependent_of_torIndependent_scheme_diagram
     TorIndependent X.2 Y.2 Bs.2 fX.hom gY.hom
 ```
 
-**`AlgebraicGeometry.Space.exists_torIndependent_scheme_diagram_of_torIndependent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TorIndependenceSchemeConverse.lean, line 601](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/TorIndependenceSchemeConverse.lean#L601). The attribute's comment: “(1) => (4)”.
+**`AlgebraicGeometry.Space.exists_torIndependent_scheme_diagram_of_torIndependent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TorIndependenceSchemeConverse.lean, line 601](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/TorIndependenceSchemeConverse.lean#L601). The attribute's comment: “(1) => (4)”.
 
 > **Stacks 08IQ, (1) ⟹ (4).**  Let `X` and `Y` be algebraic spaces over an algebraic space
 > `Bs` which are Tor independent over `Bs`.  Then there is a commutative diagram
@@ -244,7 +244,7 @@ theorem exists_torIndependent_scheme_diagram_of_torIndependent
 
 [Tag 08IR](https://stacks.math.columbia.edu/tag/08IR) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isIso_smallEtaleDerivedBaseChangeMap_of_torIndependent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleDerivedTorIndependentBaseChange.lean, line 248](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleDerivedTorIndependentBaseChange.lean#L248).
+**`AlgebraicGeometry.Space.isIso_smallEtaleDerivedBaseChangeMap_of_torIndependent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleDerivedTorIndependentBaseChange.lean, line 249](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleDerivedTorIndependentBaseChange.lean#L249).
 
 > **Stacks 08IR.**  Let `g : Y' ⟶ Y` be a morphism of algebraic spaces and `f : X ⟶ Y` a
 > quasi-compact and quasi-separated one, with base change `f' : X' ⟶ Y'`, `g' : X' ⟶ X`.  If `X`
@@ -264,7 +264,7 @@ theorem isIso_smallEtaleDerivedBaseChangeMap_of_torIndependent (sq : IsPullback 
 
 [Tag 0E4S](https://stacks.math.columbia.edu/tag/0E4S) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isIso_globalDerivedHomBaseChangeMap_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/GlobalDerivedHomBaseChangeIso.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/GlobalDerivedHomBaseChangeIso.lean#L93). The attribute's comment: “case (1): M perfect, K in D\_QCoh”.
+**`AlgebraicGeometry.Space.isIso_globalDerivedHomBaseChangeMap_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/GlobalDerivedHomBaseChangeIso.lean, line 93](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/GlobalDerivedHomBaseChangeIso.lean#L93). The attribute's comment: “case (1): M perfect, K in D\_QCoh”.
 
 > **Stacks 0E4S, case (1).** Let `g : S' ⟶ S` be a morphism of affine schemes, `R = Γ(S, 𝒪)`,
 > `R' = Γ(S', 𝒪)`, and let `X' = X ×_S S'` for `f : X ⟶ S` quasi-compact and quasi-separated with
@@ -283,7 +283,7 @@ theorem isIso_globalDerivedHomBaseChangeMap_of_isPerfect
     IsIso (globalDerivedHomBaseChangeMap B S hS g f f' g' sq.w M K)
 ```
 
-**`AlgebraicGeometry.Space.isIso_globalDerivedHomBaseChangeMap_of_isPseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/GlobalDerivedHomBaseChangeIso.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/GlobalDerivedHomBaseChangeIso.lean#L118). The attribute's comment: “case (2): M pseudo-coherent, K in D^+\_QCoh, R' of finite tor dimension over R”.
+**`AlgebraicGeometry.Space.isIso_globalDerivedHomBaseChangeMap_of_isPseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/GlobalDerivedHomBaseChangeIso.lean, line 118](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/GlobalDerivedHomBaseChangeIso.lean#L118). The attribute's comment: “case (2): M pseudo-coherent, K in D^+\_QCoh, R' of finite tor dimension over R”.
 
 > **Stacks 0E4S, case (2).** Let `g : S' ⟶ S` be a morphism of affine schemes, `R = Γ(S, 𝒪)`,
 > `R' = Γ(S', 𝒪)`, and let `X' = X ×_S S'` for `f : X ⟶ S` quasi-compact and quasi-separated with
@@ -312,7 +312,7 @@ theorem isIso_globalDerivedHomBaseChangeMap_of_isPseudoCoherent
 
 [Tag 0E4T](https://stacks.math.columbia.edu/tag/0E4T) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.globalDerivedHomBaseChangeMap_comp_map_counit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/GlobalDerivedHomBaseChange.lean, line 236](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/GlobalDerivedHomBaseChange.lean#L236).
+**`AlgebraicGeometry.Space.globalDerivedHomBaseChangeMap_comp_map_counit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/GlobalDerivedHomBaseChange.lean, line 236](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/GlobalDerivedHomBaseChange.lean#L236).
 
 > For `M ∈ D(𝒪_X)` and `L ∈ D(𝒪_{X'})`, the canonical map of Stacks 0E4S at `(M, Rg'_*L)`
 > followed by `RΓ(X', -)` of `R𝓗om(L(g')^*M, -)` of the counit `L(g')^*Rg'_*L ⟶ L` is the
@@ -343,7 +343,7 @@ theorem globalDerivedHomBaseChangeMap_comp_map_counit
 
 [Tag 0DKD](https://stacks.math.columbia.edu/tag/0DKD) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.hasTorAmplitude_derivedScalarRestriction_smallEtaleDerivedModulePullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/TorIndependentDerivedPullback.lean, line 608](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/TorIndependentDerivedPullback.lean#L608). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.Space.hasTorAmplitude_derivedScalarRestriction_smallEtaleDerivedModulePullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/TorIndependentDerivedPullback.lean, line 608](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/TorIndependentDerivedPullback.lean#L608). The attribute's comment: “part (1)”.
 
 > **Stacks 0DKD (1).** Let `X' → X`, `Y' → Y` be a cartesian square of algebraic spaces over
 > `S` with `X` and `Y'` Tor independent over `Y`. If `E ∈ D(𝒪_X)` has Tor amplitude in `[a, b]`
@@ -361,7 +361,7 @@ theorem hasTorAmplitude_derivedScalarRestriction_smallEtaleDerivedModulePullback
       ((smallEtaleDerivedModulePullback B S hS g').obj E)) a b
 ```
 
-**`AlgebraicGeometry.Space.isIso_smallEtaleDerivedModulePullbackComparison_of_isFlatOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/TorIndependentDerivedPullback.lean, line 764](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/TorIndependentDerivedPullback.lean#L764). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.Space.isIso_smallEtaleDerivedModulePullbackComparison_of_isFlatOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/TorIndependentDerivedPullback.lean, line 764](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/TorIndependentDerivedPullback.lean#L764). The attribute's comment: “part (2)”.
 
 > **Stacks 0DKD (2).** For a cartesian square of algebraic spaces with `X` and `Y'` Tor
 > independent over `Y`, and a quasi-coherent `𝒪_X`-module `𝒢` flat over `Y` (Stacks 05VV), the
@@ -377,7 +377,7 @@ theorem isIso_smallEtaleDerivedModulePullbackComparison_of_isFlatOver
           (SheafOfModules.{u} (ringedToposStructureRingSheaf B S hS X)) 0).obj G)))
 ```
 
-**`AlgebraicGeometry.Space.isIso_smallEtaleDerivedModulePullbackComparison_of_ringedToposHom_isFlatOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/TorIndependentDerivedPullbackRingedFlat.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/TorIndependentDerivedPullbackRingedFlat.lean#L149). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.Space.isIso_smallEtaleDerivedModulePullbackComparison_of_ringedToposHom_isFlatOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/TorIndependentDerivedPullbackRingedFlat.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/TorIndependentDerivedPullbackRingedFlat.lean#L149). The attribute's comment: “part (2)”.
 
 > For a cartesian square of algebraic spaces with `X` and `Y'` Tor independent over `Y`, and an
 > `𝒪_X`-module `𝒢` flat over `Y` — flat as an `f⁻¹𝒪_Y`-module, Stacks 08M5 — the canonical
@@ -402,4 +402,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 75.20, Tag 08IM](https://stacks.math.columbia.edu/tag/08IM)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

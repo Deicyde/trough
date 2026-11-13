@@ -8,13 +8,13 @@ proof: formalized
 
 # 32.7 Relative approximation
 
-Section 32.7 of the Stacks Project, [Tag 09MU](https://stacks.math.columbia.edu/tag/09MU). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 32.7 of the Stacks Project, [Tag 09MU](https://stacks.math.columbia.edu/tag/09MU). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0GS1, a lemma
 
 [Tag 0GS1](https://stacks.math.columbia.edu/tag/0GS1) in the Stacks Project.
 
-**`AlgebraicGeometry.LimitFPObjectDescent.exists_isLimit_finiteType_arrow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LimitFPObjectDescent/Approximation.lean, line 459](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LimitFPObjectDescent/Approximation.lean#L459).
+**`AlgebraicGeometry.LimitFPObjectDescent.exists_isLimit_finiteType_arrow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LimitFPObjectDescent/Approximation.lean, line 459](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LimitFPObjectDescent/Approximation.lean#L459).
 
 > A morphism between quasi-compact and quasi-separated schemes is a limit of morphisms between
 > schemes of finite type over `ℤ`, with affine transition morphisms on sources and targets.
@@ -41,7 +41,7 @@ theorem exists_isLimit_finiteType_arrow
 
 [Tag 09MV](https://stacks.math.columbia.edu/tag/09MV) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isLimit_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/RelativeApproximation/Basic.lean, line 475](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/RelativeApproximation/Basic.lean#L475).
+**`AlgebraicGeometry.exists_isLimit_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/RelativeApproximation/Basic.lean, line 475](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Limits/RelativeApproximation/Basic.lean#L475).
 
 > **Stacks Project, Tag 09MV.** A quasi-compact and quasi-separated scheme over a
 > quasi-separated base is a directed inverse limit of quasi-compact and quasi-separated schemes of
@@ -65,7 +65,7 @@ theorem exists_isLimit_finitePresentation
 
 [Tag 09YZ](https://stacks.math.columbia.edu/tag/09YZ) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.Tag0817PartTwo.nonempty_integralLimitPresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PartTwoResidue/Complete.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PartTwoResidue/Complete.lean#L164). The attribute's comment: “an integral morphism over a quasi-compact and quasi-separated base is the limit of a directed inverse system of schemes finite and of finite presentation over that base”.
+**`Stacks.AlgebraicGeometry.Tag0817PartTwo.nonempty_integralLimitPresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PartTwoResidue/Complete.lean, line 164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PartTwoResidue/Complete.lean#L164). The attribute's comment: “an integral morphism over a quasi-compact and quasi-separated base is the limit of a directed inverse system of schemes finite and of finite presentation over that base”.
 
 > **Stacks Project, Tag 09YZ.**  An integral morphism to a quasi-compact and quasi-separated
 > scheme exhibits its source as the limit of a directed inverse system of schemes finite and of
@@ -98,4 +98,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 32.7, Tag 09MU](https://stacks.math.columbia.edu/tag/09MU)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

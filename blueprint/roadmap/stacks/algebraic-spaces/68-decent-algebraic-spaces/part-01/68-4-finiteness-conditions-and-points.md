@@ -8,13 +8,13 @@ proof: formalized
 
 # 68.4 Finiteness conditions and points
 
-Section 68.4 of the Stacks Project, [Tag 03JR](https://stacks.math.columbia.edu/tag/03JR). 7 tags here are carried by 44 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 68.4 of the Stacks Project, [Tag 03JR](https://stacks.math.columbia.edu/tag/03JR). 7 tags here are carried by 44 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 03II, a remark
 
 [Tag 03II](https://stacks.math.columbia.edu/tag/03II) in the Stacks Project.
 
-**`AlgebraicGeometry.locallyQuasiFinite_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Germs/EtaleQuasiFinite.lean, line 54](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Germs/EtaleQuasiFinite.lean#L54). The attribute's comment: “etale\_locally\_quasi\_finite”.
+**`AlgebraicGeometry.locallyQuasiFinite_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Germs/EtaleQuasiFinite.lean, line 54](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Germs/EtaleQuasiFinite.lean#L54). The attribute's comment: “etale\_locally\_quasi\_finite”.
 
 > An étale morphism of schemes is locally quasi-finite.
 
@@ -23,7 +23,7 @@ theorem locallyQuasiFinite_of_etale {X S : Scheme.{u}} (f : X ⟶ S) [Etale f] :
     LocallyOfFiniteType f ∧ LocallyQuasiFinite f
 ```
 
-**`AlgebraicGeometry.flat_and_generalizingMap_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Germs/EtaleQuasiFinite.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Germs/EtaleQuasiFinite.lean#L63). The attribute's comment: “etale\_flat\_generalizing”. References: EGA IV (2.3.4), “(i), special case”.
+**`AlgebraicGeometry.flat_and_generalizingMap_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Germs/EtaleQuasiFinite.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Germs/EtaleQuasiFinite.lean#L63). The attribute's comment: “etale\_flat\_generalizing”. References: EGA IV (2.3.4), “(i), special case”.
 
 > An étale morphism of schemes is flat, and hence generalizations lift along it.
 
@@ -32,7 +32,7 @@ theorem flat_and_generalizingMap_of_etale {X S : Scheme.{u}} (f : X ⟶ S) [Etal
     Flat f ∧ GeneralizingMap f.base
 ```
 
-**`AlgebraicGeometry.finite_preimage_singleton_of_etale_of_quasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Germs/EtaleQuasiFinite.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Germs/EtaleQuasiFinite.lean#L71). The attribute's comment: “etale\_quasi\_compact\_finite\_fibres”.
+**`AlgebraicGeometry.finite_preimage_singleton_of_etale_of_quasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Germs/EtaleQuasiFinite.lean, line 71](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Germs/EtaleQuasiFinite.lean#L71). The attribute's comment: “etale\_quasi\_compact\_finite\_fibres”.
 
 > A quasi-compact étale morphism of schemes has finite fibres.
 >
@@ -43,7 +43,7 @@ theorem finite_preimage_singleton_of_etale_of_quasiCompact {X S : Scheme.{u}} (f
     [Etale f] [QuasiCompact f] (s : S) : (f.base ⁻¹' {s}).Finite
 ```
 
-**`AlgebraicGeometry.discreteTopology_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/Support/EtaleDiscreteFibres.lean, line 40](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/Support/EtaleDiscreteFibres.lean#L40). The attribute's comment: “etale\_discrete\_fibres”.
+**`AlgebraicGeometry.discreteTopology_fiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/Support/EtaleDiscreteFibres.lean, line 40](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Different/Support/EtaleDiscreteFibres.lean#L40). The attribute's comment: “etale\_discrete\_fibres”.
 
 > Every scheme-theoretic fibre of an étale morphism is a discrete space.
 
@@ -52,7 +52,7 @@ theorem discreteTopology_fiber {X S : Scheme.{u}} (f : X ⟶ S)
     [Etale f] (s : S) : DiscreteTopology (f.fiber s)
 ```
 
-**`AlgebraicGeometry.unramified_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/EtaleUnramified.lean, line 31](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/EtaleUnramified.lean#L31). The attribute's comment: “etale\_unramified”.
+**`AlgebraicGeometry.unramified_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/EtaleUnramified.lean, line 31](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/EtaleUnramified.lean#L31). The attribute's comment: “etale\_unramified”.
 
 > An étale morphism of schemes is unramified.
 
@@ -60,7 +60,7 @@ theorem discreteTopology_fiber {X S : Scheme.{u}} (f : X ⟶ S)
 theorem unramified_of_etale {X S : Scheme.{u}} (f : X ⟶ S) [Etale f] : Unramified f
 ```
 
-**`AlgebraicGeometry.etale_iff_iso_coproduct_spectra_finite_separable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Etale/OverField.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Etale/OverField.lean#L75). The attribute's comment: “etale\_over\_field”. References: EGA IV (17.6.2), “base = Spec k”; SGA 4½ Arcata (2.1.2), “a)”.
+**`AlgebraicGeometry.etale_iff_iso_coproduct_spectra_finite_separable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Etale/OverField.lean, line 75](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Etale/OverField.lean#L75). The attribute's comment: “etale\_over\_field”. References: EGA IV (17.6.2), “base = Spec k”; SGA 4½ Arcata (2.1.2), “a)”.
 
 > **Stacks Project, Tag 03PC (over a field).** A morphism to the spectrum of a field is
 > étale if and only if its source is, over that spectrum, a coproduct of spectra of finite
@@ -81,7 +81,7 @@ public theorem etale_iff_iso_coproduct_spectra_finite_separable
 
 [Tag 03JS](https://stacks.math.columbia.edu/tag/03JS) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_etaleCover_finite_fibre_iff_forall_affine_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/FinitenessConditions.lean, line 449](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/FinitenessConditions.lean#L449).
+**`AlgebraicGeometry.Space.exists_etaleCover_finite_fibre_iff_forall_affine_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/FinitenessConditions.lean, line 449](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/FinitenessConditions.lean#L449).
 
 > For a point `x` of an algebraic space `X` over `S`, the following are equivalent: some
 > jointly locally surjective family of étale charts of `X` has finite fibres above `x`, and every
@@ -104,7 +104,7 @@ theorem exists_etaleCover_finite_fibre_iff_forall_affine_etale (B : BigFppfSite.
         (pointsMap B S hS (yoneda.obj U) φ ⁻¹' {x}).Finite)
 ```
 
-**`AlgebraicGeometry.Space.finite_chartFibre_of_etaleCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsChartFibres.lean, line 309](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsChartFibres.lean#L309). The attribute's comment: “part (1) implies part (2)”.
+**`AlgebraicGeometry.Space.finite_chartFibre_of_etaleCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsChartFibres.lean, line 309](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsChartFibres.lean#L309). The attribute's comment: “part (1) implies part (2)”.
 
 > **Stacks 03JS, part (1) implies part (2).** If some family of étale charts of an algebraic
 > space `F` over `S` whose coproduct is surjective has finite chart fibres above a point `x` of
@@ -126,7 +126,7 @@ theorem finite_chartFibre_of_etaleCover
     (chartFibre B S hS F φ x).Finite
 ```
 
-**`AlgebraicGeometry.Space.exists_etaleCover_finite_chartFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsChartFibres.lean, line 329](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsChartFibres.lean#L329). The attribute's comment: “part (2) implies part (1)”.
+**`AlgebraicGeometry.Space.exists_etaleCover_finite_chartFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsChartFibres.lean, line 329](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsChartFibres.lean#L329). The attribute's comment: “part (2) implies part (1)”.
 
 > **Stacks 03JS, part (2) implies part (1).** An algebraic space over `S` has an étale
 > covering family by affine schemes, so if every étale chart with affine source has a finite chart
@@ -152,7 +152,7 @@ theorem exists_etaleCover_finite_chartFibre
 
 [Tag 03JU](https://stacks.math.columbia.edu/tag/03JU) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.hasEtaleQuasiCompactFieldRepresentative_iff_hasMonomorphicFieldRepresentative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MonomorphicFieldRepresentative.lean, line 239](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/MonomorphicFieldRepresentative.lean#L239). The attribute's comment: “conditions (3) and (4)”.
+**`AlgebraicGeometry.Space.hasEtaleQuasiCompactFieldRepresentative_iff_hasMonomorphicFieldRepresentative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MonomorphicFieldRepresentative.lean, line 239](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/MonomorphicFieldRepresentative.lean#L239). The attribute's comment: “conditions (3) and (4)”.
 
 > For a point of an algebraic space over `S`, having a field-valued representative with étale
 > quasi-compact self-intersection projections is equivalent to having a monomorphic field-valued
@@ -166,7 +166,7 @@ theorem hasEtaleQuasiCompactFieldRepresentative_iff_hasMonomorphicFieldRepresent
       HasMonomorphicFieldRepresentative B S hS F x
 ```
 
-**`AlgebraicGeometry.Space.hasFiniteRelationFiberAt_iff_everyEtaleChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelationFibers.lean, line 964](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelationFibers.lean#L964). The attribute's comment: “conditions (1) and (2)”.
+**`AlgebraicGeometry.Space.hasFiniteRelationFiberAt_iff_everyEtaleChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelationFibers.lean, line 964](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelationFibers.lean#L964). The attribute's comment: “conditions (1) and (2)”.
 
 > **Stacks 03JU, conditions (1) and (2).** For a point of an algebraic space over `S`,
 > finiteness of one relation fibre in one étale chart is equivalent to finiteness of every
@@ -179,7 +179,7 @@ theorem hasFiniteRelationFiberAt_iff_everyEtaleChart (hF : IsAlgebraicSpace B S 
       HasFiniteRelationFiberAtEveryEtaleChart B S hS F x
 ```
 
-**`AlgebraicGeometry.Space.hasFiniteRelationFiberAtEveryEtaleChart_iff_hasEtaleQuasiCompactFieldRepresentative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelationFibers.lean, line 977](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelationFibers.lean#L977). The attribute's comment: “conditions (2) and (3)”.
+**`AlgebraicGeometry.Space.hasFiniteRelationFiberAtEveryEtaleChart_iff_hasEtaleQuasiCompactFieldRepresentative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelationFibers.lean, line 977](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelationFibers.lean#L977). The attribute's comment: “conditions (2) and (3)”.
 
 > **Stacks 03JU, conditions (2) and (3).** For a point of an algebraic space over `S`,
 > finiteness of every relation fibre in every étale chart is equivalent to having a field-valued
@@ -192,7 +192,7 @@ theorem hasFiniteRelationFiberAtEveryEtaleChart_iff_hasEtaleQuasiCompactFieldRep
       HasEtaleQuasiCompactFieldRepresentative B S hS F x
 ```
 
-**`AlgebraicGeometry.Space.HasMonomorphicFieldRepresentative.hasFiniteRelationFiberAtEveryEtaleChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelationFibreEquivalence.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelationFibreEquivalence.lean#L74). The attribute's comment: “part (4) implies part (2)”.
+**`AlgebraicGeometry.Space.HasMonomorphicFieldRepresentative.hasFiniteRelationFiberAtEveryEtaleChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelationFibreEquivalence.lean, line 76](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelationFibreEquivalence.lean#L76). The attribute's comment: “part (4) implies part (2)”.
 
 > **Stacks 03JU, condition (4) implies condition (2).** If a point `x` of an algebraic space
 > `F` over `S` has a field-valued representative presenting it by a monomorphism out of the
@@ -206,7 +206,7 @@ theorem HasMonomorphicFieldRepresentative.hasFiniteRelationFiberAtEveryEtaleChar
     HasFiniteRelationFiberAtEveryEtaleChart B S hS F x
 ```
 
-**`AlgebraicGeometry.Space.HasFiniteRelationFiberAtEveryEtaleChart.hasEtaleQuasiCompactFieldRepresentative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelationFibreFieldRepresentative.lean, line 192](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelationFibreFieldRepresentative.lean#L192). The attribute's comment: “part (2) implies part (3)”.
+**`AlgebraicGeometry.Space.HasFiniteRelationFiberAtEveryEtaleChart.hasEtaleQuasiCompactFieldRepresentative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelationFibreFieldRepresentative.lean, line 194](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelationFibreFieldRepresentative.lean#L194). The attribute's comment: “part (2) implies part (3)”.
 
 > **Stacks 03JU, part (2) implies part (3).** If every pair of points above a point `x` of an
 > algebraic space `F` over `S`, in every étale chart of `F`, has finite relation fibre, then `x`
@@ -233,7 +233,7 @@ theorem HasFiniteRelationFiberAtEveryEtaleChart.hasEtaleQuasiCompactFieldReprese
     HasEtaleQuasiCompactFieldRepresentative B S hS F x
 ```
 
-**`AlgebraicGeometry.Space.HasEtaleQuasiCompactFieldRepresentative.hasMonomorphicFieldRepresentative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelationFibreMonomorphism.lean, line 420](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelationFibreMonomorphism.lean#L420). The attribute's comment: “part (3) implies part (4)”.
+**`AlgebraicGeometry.Space.HasEtaleQuasiCompactFieldRepresentative.hasMonomorphicFieldRepresentative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelationFibreMonomorphism.lean, line 422](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelationFibreMonomorphism.lean#L422). The attribute's comment: “part (3) implies part (4)”.
 
 > **Stacks 03JU, part (3) implies part (4).** If a point `x` of an algebraic space `F` over `S`
 > has a field-valued representative whose two self-intersection projections are étale and
@@ -256,7 +256,7 @@ theorem HasEtaleQuasiCompactFieldRepresentative.hasMonomorphicFieldRepresentativ
     HasMonomorphicFieldRepresentative B S hS F x
 ```
 
-**`AlgebraicGeometry.Space.HasMonomorphicFieldRepresentative.hasEtaleQuasiCompactFieldRepresentative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelationFibreMonomorphism.lean, line 466](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelationFibreMonomorphism.lean#L466). The attribute's comment: “part (4) implies part (3)”.
+**`AlgebraicGeometry.Space.HasMonomorphicFieldRepresentative.hasEtaleQuasiCompactFieldRepresentative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelationFibreMonomorphism.lean, line 468](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelationFibreMonomorphism.lean#L468). The attribute's comment: “part (4) implies part (3)”.
 
 > **Stacks 03JU, part (4) implies part (3).** A field-valued representative presenting a point
 > by a monomorphism has invertible self-intersection projections, and an isomorphism is étale and
@@ -268,7 +268,7 @@ theorem HasMonomorphicFieldRepresentative.hasEtaleQuasiCompactFieldRepresentativ
     HasEtaleQuasiCompactFieldRepresentative B S hS F x
 ```
 
-**`AlgebraicGeometry.Space.HasFiniteRelationFiberAt.hasFiniteRelationFiberAtEveryEtaleChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelationFibreTransfer.lean, line 346](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelationFibreTransfer.lean#L346). The attribute's comment: “part (1) implies part (2)”.
+**`AlgebraicGeometry.Space.HasFiniteRelationFiberAt.hasFiniteRelationFiberAtEveryEtaleChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelationFibreTransfer.lean, line 346](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelationFibreTransfer.lean#L346). The attribute's comment: “part (1) implies part (2)”.
 
 > **Stacks 03JU, part (1) implies part (2).** If some étale chart of an algebraic space `F`
 > over `S` has two points above `x` with finite relation fibre, then every pair of points above
@@ -291,7 +291,7 @@ theorem HasFiniteRelationFiberAt.hasFiniteRelationFiberAtEveryEtaleChart
     HasFiniteRelationFiberAtEveryEtaleChart B S hS F x
 ```
 
-**`AlgebraicGeometry.Space.HasFiniteRelationFiberAtEveryEtaleChart.hasFiniteRelationFiberAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelationFibreTransfer.lean, line 379](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RelationFibreTransfer.lean#L379). The attribute's comment: “part (2) implies part (1)”.
+**`AlgebraicGeometry.Space.HasFiniteRelationFiberAtEveryEtaleChart.hasFiniteRelationFiberAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RelationFibreTransfer.lean, line 379](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RelationFibreTransfer.lean#L379). The attribute's comment: “part (2) implies part (1)”.
 
 > **Stacks 03JU, part (2) implies part (1).** An algebraic space over `S` has a surjective
 > étale chart, which carries a point above `x`, so the universally quantified condition (2) is
@@ -314,7 +314,7 @@ theorem HasFiniteRelationFiberAtEveryEtaleChart.hasFiniteRelationFiberAt
 
 [Tag 040U](https://stacks.math.columbia.edu/tag/040U) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.finiteFibres_of_mono_isFinite_fieldFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteFibresOneChart.lean, line 244](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteFibresOneChart.lean#L244). The attribute's comment: “part (2) implies part (1)”.
+**`AlgebraicGeometry.Space.finiteFibres_of_mono_isFinite_fieldFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteFibresOneChart.lean, line 245](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteFibresOneChart.lean#L245). The attribute's comment: “part (2) implies part (1)”.
 
 > Let `F` be an algebraic space over a scheme `S`, let `x` be a point of `|F|` and let
 > `φ : h_U ⟶ F` be étale. Suppose some field-valued point of `F` in the class of `x` presents it by
@@ -334,7 +334,7 @@ theorem finiteFibres_of_mono_isFinite_fieldFibre (F : (BigFppfOver B S hS)ᵒᵖ
       (chartFibre B S hS F φ x).Finite ∧ (relationFibre B S hS F φ x).Finite
 ```
 
-**`AlgebraicGeometry.Space.exists_mono_isFinite_fieldFibre_of_finiteFibres`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteFibresOneChart.lean, line 267](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteFibresOneChart.lean#L267). The attribute's comment: “part (1) implies part (2)”.
+**`AlgebraicGeometry.Space.exists_mono_isFinite_fieldFibre_of_finiteFibres`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteFibresOneChart.lean, line 268](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteFibresOneChart.lean#L268). The attribute's comment: “part (1) implies part (2)”.
 
 > A point `x` of `|F|` lying in the image of `|U| → |F|` whose chart and relation fibres above
 > it are finite is presented by a monomorphism `Spec(k) ⟶ F` for which `Spec(k) ×_F U` is nonempty
@@ -360,7 +360,7 @@ theorem exists_mono_isFinite_fieldFibre_of_finiteFibres
 
 [Tag 03JV](https://stacks.math.columbia.edu/tag/03JV) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.hasQuasiCompactMonomorphicFieldRepresentative_of_hasQuasiCompactFieldRepresentative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/FieldBaseChange.lean, line 178](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/FieldBaseChange.lean#L178). The attribute's comment: “condition (5) implies condition (4)”.
+**`AlgebraicGeometry.Space.hasQuasiCompactMonomorphicFieldRepresentative_of_hasQuasiCompactFieldRepresentative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/FieldBaseChange.lean, line 179](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/FieldBaseChange.lean#L179). The attribute's comment: “condition (5) implies condition (4)”.
 
 > **Stacks 03JV, condition (5) implies condition (4).** If some field-valued point in the
 > class of `x` presents it by a quasi-compact morphism, then some field-valued point in that
@@ -374,7 +374,7 @@ theorem hasQuasiCompactMonomorphicFieldRepresentative_of_hasQuasiCompactFieldRep
     HasQuasiCompactMonomorphicFieldRepresentative B S hS F x
 ```
 
-**`AlgebraicGeometry.Space.hasFiniteChartAndRelationFibersAt_iff_hasQuasiCompactMonomorphicFieldRepresentative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/QuasiCompactMonomorphicPoint.lean, line 209](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/QuasiCompactMonomorphicPoint.lean#L209). The attribute's comment: “conditions (1) and (4)”.
+**`AlgebraicGeometry.Space.hasFiniteChartAndRelationFibersAt_iff_hasQuasiCompactMonomorphicFieldRepresentative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/QuasiCompactMonomorphicPoint.lean, line 209](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/QuasiCompactMonomorphicPoint.lean#L209). The attribute's comment: “conditions (1) and (4)”.
 
 > For a point of an algebraic space over `S`, finiteness of the fibres of every affine étale
 > chart and of its self-intersection above the point is equivalent to the point being in the class
@@ -387,7 +387,7 @@ theorem hasFiniteChartAndRelationFibersAt_iff_hasQuasiCompactMonomorphicFieldRep
       HasQuasiCompactMonomorphicFieldRepresentative B S hS X x
 ```
 
-**`AlgebraicGeometry.Space.HasQuasiCompactMonomorphicFieldRepresentative`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactMonomorphicFieldRepresentative.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactMonomorphicFieldRepresentative.lean#L62). The attribute's comment: “part (4)”.
+**`AlgebraicGeometry.Space.HasQuasiCompactMonomorphicFieldRepresentative`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactMonomorphicFieldRepresentative.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactMonomorphicFieldRepresentative.lean#L62). The attribute's comment: “part (4)”.
 
 > **Stacks 03JV, condition (4).** A point of `F` has a *quasi-compact monomorphic
 > field-valued representative* when some field-valued point in its class presents it by a
@@ -397,7 +397,7 @@ theorem hasFiniteChartAndRelationFibersAt_iff_hasQuasiCompactMonomorphicFieldRep
 def HasQuasiCompactMonomorphicFieldRepresentative (x : points B S hS F) : Prop
 ```
 
-**`AlgebraicGeometry.Space.HasFiniteFibresOnEveryAffineEtaleChart`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsConditions.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsConditions.lean#L116). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.Space.HasFiniteFibresOnEveryAffineEtaleChart`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsConditions.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsConditions.lean#L116). The attribute's comment: “part (1)”.
 
 > **Stacks 03JV, condition (1).** For every affine scheme `U` and every étale morphism
 > `φ : h_U ⟶ F`, setting `R = h_U ×_F h_U`, the fibres of `|U| → |F|` and of `|R| → |F|`
@@ -407,7 +407,7 @@ def HasQuasiCompactMonomorphicFieldRepresentative (x : points B S hS F) : Prop
 def HasFiniteFibresOnEveryAffineEtaleChart (x : points B S hS F) : Prop
 ```
 
-**`AlgebraicGeometry.Space.HasFiniteFibresOnSomeEtaleCover`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsConditions.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsConditions.lean#L125). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.Space.HasFiniteFibresOnSomeEtaleCover`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsConditions.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsConditions.lean#L125). The attribute's comment: “part (2)”.
 
 > **Stacks 03JV, condition (2).** There is a family of étale morphisms `φ i : h_{U i} ⟶ F`
 > whose coproduct is surjective on points and for which, setting `R i = h_{U i} ×_F h_{U i}`,
@@ -417,7 +417,7 @@ def HasFiniteFibresOnEveryAffineEtaleChart (x : points B S hS F) : Prop
 def HasFiniteFibresOnSomeEtaleCover (x : points B S hS F) : Prop
 ```
 
-**`AlgebraicGeometry.Space.HasMonomorphicFieldRepresentativeWithFiniteCharts`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsConditions.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsConditions.lean#L137). The attribute's comment: “part (3)”.
+**`AlgebraicGeometry.Space.HasMonomorphicFieldRepresentativeWithFiniteCharts`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsConditions.lean, line 137](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsConditions.lean#L137). The attribute's comment: “part (3)”.
 
 > **Stacks 03JV, condition (3).** Some field-valued representative of `x` presents it by a
 > monomorphism `Spec(k) ⟶ F` whose base change along every étale chart of `F` with affine
@@ -427,7 +427,7 @@ def HasFiniteFibresOnSomeEtaleCover (x : points B S hS F) : Prop
 def HasMonomorphicFieldRepresentativeWithFiniteCharts (x : points B S hS F) : Prop
 ```
 
-**`AlgebraicGeometry.Space.HasQuasiCompactFieldRepresentative`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsConditions.lean, line 150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsConditions.lean#L150). The attribute's comment: “part (5)”.
+**`AlgebraicGeometry.Space.HasQuasiCompactFieldRepresentative`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsConditions.lean, line 150](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsConditions.lean#L150). The attribute's comment: “part (5)”.
 
 > **Stacks 03JV, condition (5).** Some field-valued point in the class of `x` presents it
 > by a quasi-compact morphism, the monomorphism condition of condition (4) being dropped.
@@ -436,7 +436,7 @@ def HasMonomorphicFieldRepresentativeWithFiniteCharts (x : points B S hS F) : Pr
 def HasQuasiCompactFieldRepresentative (x : points B S hS F) : Prop
 ```
 
-**`AlgebraicGeometry.Space.EveryFieldRepresentativeIsQuasiCompact`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsConditions.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsConditions.lean#L157). The attribute's comment: “part (6)”.
+**`AlgebraicGeometry.Space.EveryFieldRepresentativeIsQuasiCompact`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsConditions.lean, line 157](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsConditions.lean#L157). The attribute's comment: “part (6)”.
 
 > **Stacks 03JV, condition (6).** *Every* field-valued point in the class of `x` presents
 > it by a quasi-compact morphism.
@@ -445,7 +445,7 @@ def HasQuasiCompactFieldRepresentative (x : points B S hS F) : Prop
 def EveryFieldRepresentativeIsQuasiCompact (x : points B S hS F) : Prop
 ```
 
-**`AlgebraicGeometry.Space.HasQuasiCompactMonomorphicFieldRepresentative.hasQuasiCompactFieldRepresentative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsConditions.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsConditions.lean#L166). The attribute's comment: “part (4) implies part (5)”.
+**`AlgebraicGeometry.Space.HasQuasiCompactMonomorphicFieldRepresentative.hasQuasiCompactFieldRepresentative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsConditions.lean, line 166](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsConditions.lean#L166). The attribute's comment: “part (4) implies part (5)”.
 
 > **Stacks 03JV, condition (4) implies condition (5).** Forgetting that the presenting
 > morphism is a monomorphism leaves a quasi-compact field-valued representative.
@@ -457,7 +457,7 @@ theorem HasQuasiCompactMonomorphicFieldRepresentative.hasQuasiCompactFieldRepres
     HasQuasiCompactFieldRepresentative B S hS F x
 ```
 
-**`AlgebraicGeometry.Space.EveryFieldRepresentativeIsQuasiCompact.hasQuasiCompactFieldRepresentative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsConditions.lean, line 177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsConditions.lean#L177). The attribute's comment: “part (6) implies part (5)”.
+**`AlgebraicGeometry.Space.EveryFieldRepresentativeIsQuasiCompact.hasQuasiCompactFieldRepresentative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsConditions.lean, line 177](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsConditions.lean#L177). The attribute's comment: “part (6) implies part (5)”.
 
 > **Stacks 03JV, condition (6) implies condition (5).** A point of `|F|` is by construction
 > the class of some field-valued point, so a universally quasi-compact class has a
@@ -470,7 +470,7 @@ theorem EveryFieldRepresentativeIsQuasiCompact.hasQuasiCompactFieldRepresentativ
     HasQuasiCompactFieldRepresentative B S hS F x
 ```
 
-**`AlgebraicGeometry.Space.HasQuasiCompactMonomorphicFieldRepresentative.everyFieldRepresentativeIsQuasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsEveryRepresentative.lean, line 39](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsEveryRepresentative.lean#L39). The attribute's comment: “part (4) implies part (6)”.
+**`AlgebraicGeometry.Space.HasQuasiCompactMonomorphicFieldRepresentative.everyFieldRepresentativeIsQuasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsEveryRepresentative.lean, line 39](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsEveryRepresentative.lean#L39). The attribute's comment: “part (4) implies part (6)”.
 
 > If a point `x` of an algebraic space `F` over `S` is the class of a field-valued point whose
 > presenting morphism `Spec(k) ⟶ F` is a quasi-compact monomorphism, then the presenting morphism
@@ -485,7 +485,7 @@ theorem HasQuasiCompactMonomorphicFieldRepresentative.everyFieldRepresentativeIs
     EveryFieldRepresentativeIsQuasiCompact B S hS F x
 ```
 
-**`AlgebraicGeometry.Space.HasQuasiCompactMonomorphicFieldRepresentative.hasMonomorphicFieldRepresentativeWithFiniteCharts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsFiniteCharts.lean, line 141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsFiniteCharts.lean#L141). The attribute's comment: “part (4) implies part (3)”.
+**`AlgebraicGeometry.Space.HasQuasiCompactMonomorphicFieldRepresentative.hasMonomorphicFieldRepresentativeWithFiniteCharts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsFiniteCharts.lean, line 141](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsFiniteCharts.lean#L141). The attribute's comment: “part (4) implies part (3)”.
 
 > **Stacks 03JV, condition (4) implies condition (3).** If a point `x` of a presheaf `F` on
 > the big fppf site of `S` is the class of a field-valued point whose presenting morphism
@@ -504,7 +504,7 @@ theorem hasMonomorphicFieldRepresentativeWithFiniteCharts
     HasMonomorphicFieldRepresentativeWithFiniteCharts B S hS F x
 ```
 
-**`AlgebraicGeometry.Space.HasQuasiCompactMonomorphicFieldRepresentative.hasFiniteFibresOnEveryAffineEtaleChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsFiniteFibres.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsFiniteFibres.lean#L169). The attribute's comment: “part (4) implies part (1)”.
+**`AlgebraicGeometry.Space.HasQuasiCompactMonomorphicFieldRepresentative.hasFiniteFibresOnEveryAffineEtaleChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsFiniteFibres.lean, line 169](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsFiniteFibres.lean#L169). The attribute's comment: “part (4) implies part (1)”.
 
 > **Stacks 03JV, condition (4) implies condition (1).** If a point `x` of an algebraic space
 > `F` over `S` is the class of a field-valued point whose presenting morphism `Spec(k) ⟶ F` is a
@@ -519,7 +519,7 @@ theorem HasQuasiCompactMonomorphicFieldRepresentative.hasFiniteFibresOnEveryAffi
     HasFiniteFibresOnEveryAffineEtaleChart B S hS F x
 ```
 
-**`AlgebraicGeometry.Space.HasFiniteFibresOnEveryAffineEtaleChart.hasFiniteFibresOnSomeEtaleCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsFiniteFibres.lean, line 237](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsFiniteFibres.lean#L237). The attribute's comment: “part (1) implies part (2)”.
+**`AlgebraicGeometry.Space.HasFiniteFibresOnEveryAffineEtaleChart.hasFiniteFibresOnSomeEtaleCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsFiniteFibres.lean, line 237](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsFiniteFibres.lean#L237). The attribute's comment: “part (1) implies part (2)”.
 
 > **Stacks 03JV, condition (1) implies condition (2).** An algebraic space over `S` has an
 > étale covering family by affine schemes, so the finiteness condition of condition (1), which
@@ -534,7 +534,7 @@ theorem HasFiniteFibresOnEveryAffineEtaleChart.hasFiniteFibresOnSomeEtaleCover
     HasFiniteFibresOnSomeEtaleCover B S hS F x
 ```
 
-**`AlgebraicGeometry.Space.HasQuasiCompactMonomorphicFieldRepresentative.hasFiniteFibresOnSomeEtaleCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsFiniteFibres.lean, line 272](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsFiniteFibres.lean#L272). The attribute's comment: “part (4) implies part (2)”.
+**`AlgebraicGeometry.Space.HasQuasiCompactMonomorphicFieldRepresentative.hasFiniteFibresOnSomeEtaleCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsFiniteFibres.lean, line 272](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsFiniteFibres.lean#L272). The attribute's comment: “part (4) implies part (2)”.
 
 > **Stacks 03JV, condition (4) implies condition (2).** The composite of the two implications
 > above: condition (4) gives condition (1), which gives condition (2).
@@ -547,7 +547,7 @@ theorem HasQuasiCompactMonomorphicFieldRepresentative.hasFiniteFibresOnSomeEtale
     HasFiniteFibresOnSomeEtaleCover B S hS F x
 ```
 
-**`AlgebraicGeometry.Space.HasFiniteFibresOnSomeEtaleCover.hasFiniteFibresOnEveryAffineEtaleChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsFromEtaleCover.lean, line 96](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsFromEtaleCover.lean#L96). The attribute's comment: “part (2) implies part (1)”.
+**`AlgebraicGeometry.Space.HasFiniteFibresOnSomeEtaleCover.hasFiniteFibresOnEveryAffineEtaleChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsFromEtaleCover.lean, line 97](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsFromEtaleCover.lean#L97). The attribute's comment: “part (2) implies part (1)”.
 
 > **Stacks 03JV, condition (2) implies condition (1).** If some family of étale charts of an
 > algebraic space `F` over `S` with surjective coproduct has finite chart and relation fibres above
@@ -566,7 +566,7 @@ theorem HasFiniteFibresOnSomeEtaleCover.hasFiniteFibresOnEveryAffineEtaleChart
     HasFiniteFibresOnEveryAffineEtaleChart B S hS F x
 ```
 
-**`AlgebraicGeometry.Space.hasFiniteFibresOnEveryAffineEtaleChart_iff_onSomeEtaleCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsFromEtaleCover.lean, line 151](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsFromEtaleCover.lean#L151). The attribute's comment: “conditions (1) and (2)”.
+**`AlgebraicGeometry.Space.hasFiniteFibresOnEveryAffineEtaleChart_iff_onSomeEtaleCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsFromEtaleCover.lean, line 152](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsFromEtaleCover.lean#L152). The attribute's comment: “conditions (1) and (2)”.
 
 > **Stacks 03JV, conditions (1) and (2) are equivalent.** For a point `x` of an algebraic
 > space `F` over `S`, finiteness of the chart and relation fibres above `x` on *every* étale
@@ -589,7 +589,7 @@ theorem hasFiniteFibresOnEveryAffineEtaleChart_iff_onSomeEtaleCover
       HasFiniteFibresOnSomeEtaleCover B S hS F x
 ```
 
-**`AlgebraicGeometry.Space.HasMonomorphicFieldRepresentativeWithFiniteCharts.hasFiniteFibresOnEveryAffineEtaleChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsFromFiniteCharts.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsFromFiniteCharts.lean#L102). The attribute's comment: “part (3) implies part (1)”.
+**`AlgebraicGeometry.Space.HasMonomorphicFieldRepresentativeWithFiniteCharts.hasFiniteFibresOnEveryAffineEtaleChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsFromFiniteCharts.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsFromFiniteCharts.lean#L102). The attribute's comment: “part (3) implies part (1)”.
 
 > **Stacks 03JV, condition (3) implies condition (1).** If a point `x` of an algebraic space
 > `F` over `S` is presented by a monomorphism `Spec(k) ⟶ F` whose base change along every étale
@@ -612,7 +612,7 @@ theorem HasMonomorphicFieldRepresentativeWithFiniteCharts.hasFiniteFibresOnEvery
     HasFiniteFibresOnEveryAffineEtaleChart B S hS F x
 ```
 
-**`AlgebraicGeometry.Space.HasMonomorphicFieldRepresentativeWithFiniteCharts.hasFiniteFibresOnSomeEtaleCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsFromFiniteCharts.lean, line 121](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsFromFiniteCharts.lean#L121). The attribute's comment: “part (3) implies part (2)”.
+**`AlgebraicGeometry.Space.HasMonomorphicFieldRepresentativeWithFiniteCharts.hasFiniteFibresOnSomeEtaleCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsFromFiniteCharts.lean, line 121](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsFromFiniteCharts.lean#L121). The attribute's comment: “part (3) implies part (2)”.
 
 > **Stacks 03JV, condition (3) implies condition (2).** The composite of the implication
 > above with
@@ -629,7 +629,7 @@ theorem HasMonomorphicFieldRepresentativeWithFiniteCharts.hasFiniteFibresOnSomeE
     HasFiniteFibresOnSomeEtaleCover B S hS F x
 ```
 
-**`AlgebraicGeometry.Space.HasQuasiCompactFieldRepresentative.everyFieldRepresentativeIsQuasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsFromQuasiCompactRepresentative.lean, line 121](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsFromQuasiCompactRepresentative.lean#L121). The attribute's comment: “part (5) implies part (6)”.
+**`AlgebraicGeometry.Space.HasQuasiCompactFieldRepresentative.everyFieldRepresentativeIsQuasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsFromQuasiCompactRepresentative.lean, line 121](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsFromQuasiCompactRepresentative.lean#L121). The attribute's comment: “part (5) implies part (6)”.
 
 > **Stacks 03JV, condition (5) implies condition (6).** If some field-valued point in the
 > class of a point `x` of an algebraic space `F` over `S` presents it by a quasi-compact
@@ -643,7 +643,7 @@ theorem HasQuasiCompactFieldRepresentative.everyFieldRepresentativeIsQuasiCompac
     EveryFieldRepresentativeIsQuasiCompact B S hS F x
 ```
 
-**`AlgebraicGeometry.Space.hasQuasiCompactFieldRepresentative_iff_everyFieldRepresentativeIsQuasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsFromQuasiCompactRepresentative.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsFromQuasiCompactRepresentative.lean#L148). The attribute's comment: “conditions (5) and (6)”.
+**`AlgebraicGeometry.Space.hasQuasiCompactFieldRepresentative_iff_everyFieldRepresentativeIsQuasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsFromQuasiCompactRepresentative.lean, line 148](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsFromQuasiCompactRepresentative.lean#L148). The attribute's comment: “conditions (5) and (6)”.
 
 > **Stacks 03JV, conditions (5) and (6) are equivalent.** For a point `x` of an algebraic
 > space `F` over `S`, *some* field-valued point in the class of `x` has quasi-compact presenting
@@ -657,7 +657,7 @@ theorem hasQuasiCompactFieldRepresentative_iff_everyFieldRepresentativeIsQuasiCo
       EveryFieldRepresentativeIsQuasiCompact B S hS F x
 ```
 
-**`AlgebraicGeometry.Space.hasQuasiCompactMonomorphicFieldRepresentative_of_finiteCharts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsZariskiChart.lean, line 128](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsZariskiChart.lean#L128). The attribute's comment: “part (3) implies part (4)”.
+**`AlgebraicGeometry.Space.hasQuasiCompactMonomorphicFieldRepresentative_of_finiteCharts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsZariskiChart.lean, line 128](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasiCompactPointsZariskiChart.lean#L128). The attribute's comment: “part (3) implies part (4)”.
 
 > **Stacks 03JV, condition (3) implies condition (4).** Let `F` be an algebraic space over
 > `S` and let `x` be a point of `F`. If some field-valued representative of `x` presents it by
@@ -689,7 +689,7 @@ theorem hasQuasiCompactMonomorphicFieldRepresentative_of_finiteCharts
 
 [Tag 03JT](https://stacks.math.columbia.edu/tag/03JT) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isReasonableSpace_iff_exists_boundedEtaleCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReasonableEtaleCover.lean, line 262](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReasonableEtaleCover.lean#L262).
+**`AlgebraicGeometry.Space.isReasonableSpace_iff_exists_boundedEtaleCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReasonableEtaleCover.lean, line 262](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReasonableEtaleCover.lean#L262).
 
 > **Stacks 03JT.** For an algebraic space `X` over `S` the following are equivalent: `(1)`
 > there is a jointly surjective family of étale charts of `X` by schemes, each with universally
@@ -712,7 +712,7 @@ theorem isReasonableSpace_iff_exists_boundedEtaleCover
 
 [Tag 03IH](https://stacks.math.columbia.edu/tag/03IH) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isVeryReasonableSpace_iff_exists_isZariskiCover_quasiCompact_chart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/VeryReasonableAtlas.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/VeryReasonableAtlas.lean#L118).
+**`AlgebraicGeometry.Space.isVeryReasonableSpace_iff_exists_isZariskiCover_quasiCompact_chart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/VeryReasonableAtlas.lean, line 118](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/VeryReasonableAtlas.lean#L118).
 
 > **Stacks 03IH.** An algebraic space over `S` is very reasonable — it has a jointly
 > surjective family of étale charts by schemes whose two self-intersection projections are
@@ -737,4 +737,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 68.4, Tag 03JR](https://stacks.math.columbia.edu/tag/03JR)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

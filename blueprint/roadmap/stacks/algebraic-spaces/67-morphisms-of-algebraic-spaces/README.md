@@ -1,6 +1,6 @@
 # 67 Morphisms of Algebraic Spaces
 
-Chapter 67 of the Stacks Project, *Morphisms of Algebraic Spaces*, [Tag 03H8](https://stacks.math.columbia.edu/tag/03H8): the 50 sections of its 53 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 334 tags are carried by 738 declarations of the repository (all in StacksFrontier) and 22 registered declarations.
+Chapter 67 of the Stacks Project, *Morphisms of Algebraic Spaces*, [Tag 03H8](https://stacks.math.columbia.edu/tag/03H8): the 50 sections of its 53 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 334 tags are carried by 723 declarations of the repository (all in StacksFrontier) and 20 registered declarations.
 
 ## [67.4 Separation axioms to 67.16 Scheme theoretic image](part-01/README.md)
 

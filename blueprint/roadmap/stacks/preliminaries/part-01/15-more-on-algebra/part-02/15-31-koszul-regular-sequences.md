@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.31 Koszul regular sequences
 
-Section 15.31 of the Stacks Project, [Tag 062D](https://stacks.math.columbia.edu/tag/062D). 17 tags here are carried by 22 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.31 of the Stacks Project, [Tag 062D](https://stacks.math.columbia.edu/tag/062D). 17 tags here are carried by 22 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 062E, a definition
 
 [Tag 062E](https://stacks.math.columbia.edu/tag/062E) in the Stacks Project.
 
-**`Koszul.IsKoszulRegularOn`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/Defs.lean, line 226](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Koszul/Defs.lean#L226). The attribute's comment: “(1)”.
+**`Koszul.IsKoszulRegularOn`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/Defs.lean, line 226](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Koszul/Defs.lean#L226). The attribute's comment: “(1)”.
 
 > A sequence `f₁, …, f_r` is `M`-Koszul-regular if `Hᵢ(K_•(f) ⊗_R M) = 0` for all
 > `i ≠ 0`.
@@ -23,7 +23,7 @@ Section 15.31 of the Stacks Project, [Tag 062D](https://stacks.math.columbia.edu
 def IsKoszulRegularOn (f : Fin r → R) (M : Type w) [AddCommGroup M] [Module R M] : Prop
 ```
 
-**`Koszul.IsH1RegularOn`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/Defs.lean, line 231](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Koszul/Defs.lean#L231). The attribute's comment: “(2)”.
+**`Koszul.IsH1RegularOn`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/Defs.lean, line 231](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Koszul/Defs.lean#L231). The attribute's comment: “(2)”.
 
 > A sequence `f₁, …, f_r` is `M`-`H₁`-regular if `H₁(K_•(f) ⊗_R M) = 0`.
 
@@ -31,7 +31,7 @@ def IsKoszulRegularOn (f : Fin r → R) (M : Type w) [AddCommGroup M] [Module R 
 def IsH1RegularOn (f : Fin r → R) (M : Type w) [AddCommGroup M] [Module R M] : Prop
 ```
 
-**`Koszul.IsKoszulRegular`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/Defs.lean, line 236](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Koszul/Defs.lean#L236). The attribute's comment: “(3)”.
+**`Koszul.IsKoszulRegular`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/Defs.lean, line 236](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Koszul/Defs.lean#L236). The attribute's comment: “(3)”.
 
 > A sequence `f₁, …, f_r` is Koszul-regular if `Hᵢ(K_•(f)) = 0` for all `i ≠ 0`.
 
@@ -39,7 +39,7 @@ def IsH1RegularOn (f : Fin r → R) (M : Type w) [AddCommGroup M] [Module R M] :
 def IsKoszulRegular (f : Fin r → R) : Prop
 ```
 
-**`Koszul.IsH1Regular`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/Defs.lean, line 241](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Koszul/Defs.lean#L241). The attribute's comment: “(4)”.
+**`Koszul.IsH1Regular`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/Defs.lean, line 241](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Koszul/Defs.lean#L241). The attribute's comment: “(4)”.
 
 > A sequence `f₁, …, f_r` is `H₁`-regular if `H₁(K_•(f)) = 0`.
 
@@ -51,7 +51,7 @@ def IsH1Regular (f : Fin r → R) : Prop
 
 [Tag 062F](https://stacks.math.columbia.edu/tag/062F) in the Stacks Project.
 
-**`Koszul.isKoszulRegularOn_and_isKoszulRegular_of_regular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/Regular.lean, line 846](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Koszul/Regular.lean#L846).
+**`Koszul.isKoszulRegularOn_and_isKoszulRegular_of_regular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/Regular.lean, line 845](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Koszul/Regular.lean#L845).
 
 > If every term of a finite sequence acts injectively on the quotient of `M` by its predecessors,
 > then the sequence is `M`-Koszul-regular. In particular, an `M`-regular sequence is
@@ -73,7 +73,7 @@ theorem isKoszulRegularOn_and_isKoszulRegular_of_regular
 
 [Tag 0CEM](https://stacks.math.columbia.edu/tag/0CEM) in the Stacks Project.
 
-**`Koszul.IsKoszulRegularOn.isH1RegularOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/Regular.lean, line 336](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Koszul/Regular.lean#L336). The attribute's comment: “(1)”.
+**`Koszul.IsKoszulRegularOn.isH1RegularOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/Regular.lean, line 336](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Koszul/Regular.lean#L336). The attribute's comment: “(1)”.
 
 > If the sequence `f_1, ..., f_r` is `M`-Koszul-regular, then it is `M`-H\_1-regular.
 
@@ -82,7 +82,7 @@ theorem IsKoszulRegularOn.isH1RegularOn {f : Fin r → R} {M : Type v} [AddCommG
     [Module R M] (h : IsKoszulRegularOn f M) : IsH1RegularOn f M
 ```
 
-**`Koszul.IsKoszulRegular.isH1Regular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/Regular.lean, line 342](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Koszul/Regular.lean#L342). The attribute's comment: “(2)”.
+**`Koszul.IsKoszulRegular.isH1Regular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/Regular.lean, line 342](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Koszul/Regular.lean#L342). The attribute's comment: “(2)”.
 
 > If the sequence `f_1, ..., f_r` is Koszul-regular, then it is H\_1-regular.
 
@@ -94,7 +94,7 @@ theorem IsKoszulRegular.isH1Regular {f : Fin r → R} (h : IsKoszulRegular f) : 
 
 [Tag 062G](https://stacks.math.columbia.edu/tag/062G) in the Stacks Project.
 
-**`Koszul.isH1RegularOn_and_isKoszulRegularOn_snoc_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/Regular.lean, line 1073](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Koszul/Regular.lean#L1073).
+**`Koszul.isH1RegularOn_and_isKoszulRegularOn_snoc_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/Regular.lean, line 1072](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Koszul/Regular.lean#L1072).
 
 > Adjoining a product to a finite sequence preserves both `M`-`H₁`-regularity and
 > `M`-Koszul-regularity when adjoining each factor separately has the corresponding property.
@@ -115,7 +115,7 @@ theorem isH1RegularOn_and_isKoszulRegularOn_snoc_mul
 
 [Tag 062H](https://stacks.math.columbia.edu/tag/062H) in the Stacks Project.
 
-**`KoszulC.isH1Regular_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/FlatBaseChange.lean, line 597](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Koszul/FlatBaseChange.lean#L597). The attribute's comment: “(1)”.
+**`KoszulC.isH1Regular_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/FlatBaseChange.lean, line 595](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Koszul/FlatBaseChange.lean#L595). The attribute's comment: “(1)”.
 
 > For a flat ring map `φ : R → S`, if `f_1, ..., f_r` is `M`-`H_1`-regular over `R`, then
 > `φ(f_1), ..., φ(f_r)` is `(S ⊗_R M)`-`H_1`-regular over `S`.
@@ -127,7 +127,7 @@ theorem isH1Regular_baseChange {R S : Type*} [CommRing R] [CommRing S] [Algebra 
     IsH1RegularOn (R := S) (fun i => algebraMap R S (f i)) (S ⊗[R] M)
 ```
 
-**`KoszulC.isKoszulRegular_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/FlatBaseChange.lean, line 606](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Koszul/FlatBaseChange.lean#L606). The attribute's comment: “(2)”. References: SGA 6 VII (1.5), “special case”; SGA 6 VIII (1.3), “VII 1.5, special case”.
+**`KoszulC.isKoszulRegular_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/FlatBaseChange.lean, line 604](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Koszul/FlatBaseChange.lean#L604). The attribute's comment: “(2)”. References: SGA 6 VII (1.5), “special case”; SGA 6 VIII (1.3), “VII 1.5, special case”.
 
 > For a flat ring map `φ : R → S`, if `f_1, ..., f_r` is `M`-Koszul-regular over `R`, then
 > `φ(f_1), ..., φ(f_r)` is `(S ⊗_R M)`-Koszul-regular over `S`.
@@ -143,7 +143,7 @@ theorem isKoszulRegular_baseChange {R S : Type*} [CommRing R] [CommRing S] [Alge
 
 [Tag 062I](https://stacks.math.columbia.edu/tag/062I) in the Stacks Project.
 
-**`Koszul.isQuasiRegular_of_isH1RegularOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/Quasiregular.lean, line 346](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Koszul/Quasiregular.lean#L346).
+**`Koszul.isQuasiRegular_of_isH1RegularOn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/Quasiregular.lean, line 345](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Koszul/Quasiregular.lean#L345).
 
 > **Stacks 062I.** An `M`-`H₁`-regular sequence is `M`-quasi-regular.
 
@@ -158,7 +158,7 @@ public theorem isQuasiRegular_of_isH1RegularOn
 
 [Tag 09CC](https://stacks.math.columbia.edu/tag/09CC) in the Stacks Project.
 
-**`Koszul.regular_koszulRegular_h1Regular_quasiRegular_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/Quasiregular.lean, line 374](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Koszul/Quasiregular.lean#L374). References: EGA 0 (15.1.11), “(1) ⇔ (4), local case”; EGA IV (19.5.1), “a)–c), local case”; EGA 0 (15.2.2), “converse: q-reg ⇒ reg”; EGA 0 (15.1.10), “special case”; EGA 0 (15.1.9), “special case”; EGA IV (16.9.12), “parenthetical”.
+**`Koszul.regular_koszulRegular_h1Regular_quasiRegular_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/Quasiregular.lean, line 373](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Koszul/Quasiregular.lean#L373). References: EGA 0 (15.1.11), “(1) ⇔ (4), local case”; EGA IV (19.5.1), “a)–c), local case”; EGA 0 (15.2.2), “converse: q-reg ⇒ reg”; EGA 0 (15.1.10), “special case”; EGA 0 (15.1.9), “special case”; EGA IV (16.9.12), “parenthetical”.
 
 > **Stacks 09CC.** Let `M` be a nonzero finite module over a local Noetherian ring `R`, and
 > let `f` be a finite sequence in the maximal ideal. Being `M`-regular, `M`-Koszul-regular,
@@ -186,7 +186,7 @@ public theorem regular_koszulRegular_h1Regular_quasiRegular_tfae
 
 [Tag 0665](https://stacks.math.columbia.edu/tag/0665) in the Stacks Project.
 
-**`Koszul.inf_span_eq_smul_span`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/Regular.lean, line 351](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Koszul/Regular.lean#L351).
+**`Koszul.inf_span_eq_smul_span`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/Regular.lean, line 351](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Koszul/Regular.lean#L351).
 
 > Let `A` be a commutative ring, `I` an ideal of `A`, and `g_1, ..., g_m` elements of `A`. If the
 > images of `g_1, ..., g_m` in `A/I` form an `H_1`-regular sequence, then
@@ -202,7 +202,7 @@ theorem inf_span_eq_smul_span (I : Ideal A) (g : Fin m → A)
 
 [Tag 0666](https://stacks.math.columbia.edu/tag/0666) in the Stacks Project.
 
-**`Koszul.inf_sq_eq_mul_of_quotient_generated_by_isH1Regular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/Regular.lean, line 451](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Koszul/Regular.lean#L451).
+**`Koszul.inf_sq_eq_mul_of_quotient_generated_by_isH1Regular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/Regular.lean, line 451](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Koszul/Regular.lean#L451).
 
 > If `I ⊆ J` and `J / I` is generated by an H₁-regular sequence, then `I ∩ J² = I J`.
 
@@ -219,7 +219,7 @@ theorem inf_sq_eq_mul_of_quotient_generated_by_isH1Regular
 
 [Tag 0667](https://stacks.math.columbia.edu/tag/0667) in the Stacks Project.
 
-**`Koszul.isQuasiRegular_append_of_isH1Regular_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/Concatenation/QuasiRegularAppend.lean, line 567](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Koszul/Concatenation/QuasiRegularAppend.lean#L567).
+**`Koszul.isQuasiRegular_append_of_isH1Regular_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/Concatenation/QuasiRegularAppend.lean, line 567](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Koszul/Concatenation/QuasiRegularAppend.lean#L567).
 
 > **Stacks 0667.** If `f` is quasi-regular and the image of `g` modulo the ideal generated
 > by `f` is H₁-regular, then the concatenation of `f` and `g` is quasi-regular.
@@ -237,7 +237,7 @@ public theorem isQuasiRegular_append_of_isH1Regular_quotient
 
 [Tag 0668](https://stacks.math.columbia.edu/tag/0668) in the Stacks Project.
 
-**`Koszul.isH1Regular_append`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/Regular.lean, line 289](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Koszul/Regular.lean#L289).
+**`Koszul.isH1Regular_append`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/Regular.lean, line 289](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Koszul/Regular.lean#L289).
 
 > Let `A` be a commutative ring, let `f : Fin n → A` be an `H_1`-regular sequence, let
 > `I = (f_0, ..., f_{n-1})` be the ideal it generates, and let `g : Fin m → A` be such that the
@@ -257,7 +257,7 @@ theorem isH1Regular_append {A : Type*} [CommRing A] {n m : ℕ}
 
 [Tag 068L](https://stacks.math.columbia.edu/tag/068L) in the Stacks Project.
 
-**`Koszul.isH1Regular_quotient_of_isH1Regular_append`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/Regular.lean, line 421](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Koszul/Regular.lean#L421).
+**`Koszul.isH1Regular_quotient_of_isH1Regular_append`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/Regular.lean, line 421](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Koszul/Regular.lean#L421).
 
 > If `f_1, ..., f_n, g_1, ..., g_m` is an `H₁`-regular sequence in `A`, then the images
 > `ḡ_1, ..., ḡ_m` of the `g_j` in the quotient `A / (f_1, ..., f_n)` form an `H₁`-regular sequence.
@@ -274,7 +274,7 @@ theorem isH1Regular_quotient_of_isH1Regular_append {A : Type*} [CommRing A] {n m
 
 [Tag 0669](https://stacks.math.columbia.edu/tag/0669) in the Stacks Project.
 
-**`Koszul.koszul_regular_append`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/Concatenation/KoszulRegularAppend.lean, line 706](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Koszul/Concatenation/KoszulRegularAppend.lean#L706).
+**`Koszul.koszul_regular_append`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/Concatenation/KoszulRegularAppend.lean, line 702](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Koszul/Concatenation/KoszulRegularAppend.lean#L702).
 
 > If `f` is Koszul-regular and the image of `g` modulo the ideal generated by `f` is
 > Koszul-regular, then the concatenation of `f` and `g` is Koszul-regular.
@@ -292,7 +292,7 @@ public theorem koszul_regular_append {A : Type*} [CommRing A] {n m : ℕ}
 
 [Tag 068M](https://stacks.math.columbia.edu/tag/068M) in the Stacks Project.
 
-**`Koszul.koszulRegular_quotient_of_koszulRegular_append`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/Concatenation/KoszulRegularQuotient.lean, line 172](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Koszul/Concatenation/KoszulRegularQuotient.lean#L172).
+**`Koszul.koszulRegular_quotient_of_koszulRegular_append`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/Concatenation/KoszulRegularQuotient.lean, line 172](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Koszul/Concatenation/KoszulRegularQuotient.lean#L172).
 
 > If `f` and the concatenation of `f` and `g` are Koszul-regular, then the image
 > of `g` in the quotient by the ideal generated by `f` is Koszul-regular.
@@ -310,7 +310,7 @@ public theorem koszulRegular_quotient_of_koszulRegular_append
 
 [Tag 066A](https://stacks.math.columbia.edu/tag/066A) in the Stacks Project.
 
-**`Koszul.regularity_of_generators_of_eq_span_range`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/Concatenation/GeneratorIndependence.lean, line 434](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Koszul/Concatenation/GeneratorIndependence.lean#L434).
+**`Koszul.regularity_of_generators_of_eq_span_range`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/Concatenation/GeneratorIndependence.lean, line 434](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Koszul/Concatenation/GeneratorIndependence.lean#L434).
 
 > **Stacks 066A.** If an ideal generated by `r` elements admits a quasi-regular,
 > `H₁`-regular, or Koszul-regular generating sequence of length `r`, then every generating
@@ -333,7 +333,7 @@ public theorem regularity_of_generators_of_eq_span_range
 
 [Tag 068P](https://stacks.math.columbia.edu/tag/068P) in the Stacks Project.
 
-**`Stacks.GenericLinearForm.linearForm_isNonZeroDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/MvPolynomial/GenericLinearForm.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/MvPolynomial/GenericLinearForm.lean#L149).
+**`Stacks.GenericLinearForm.linearForm_isNonZeroDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/MvPolynomial/GenericLinearForm.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/MvPolynomial/GenericLinearForm.lean#L149).
 
 > **Stacks 068P**.
 > If the only `x ∈ R` with `x a_i = 0` for all `i` is `x = 0`, then `f = ∑ a_i t_i` is a
@@ -349,7 +349,7 @@ theorem linearForm_isNonZeroDivisor (a : Fin n → R)
 
 [Tag 068Q](https://stacks.math.columbia.edu/tag/068Q) in the Stacks Project.
 
-**`Koszul.isRegular_upperTriangular_of_isKoszulRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/Descent.lean, line 1466](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Koszul/Descent.lean#L1466).
+**`Koszul.isRegular_upperTriangular_of_isKoszulRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/Descent.lean, line 1466](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Koszul/Descent.lean#L1466).
 
 > **Stacks 068Q.** A Koszul-regular sequence generating a proper ideal becomes a regular
 > sequence after a generic invertible upper-triangular change of generators. The resulting
@@ -382,4 +382,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.31, Tag 062D](https://stacks.math.columbia.edu/tag/062D)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

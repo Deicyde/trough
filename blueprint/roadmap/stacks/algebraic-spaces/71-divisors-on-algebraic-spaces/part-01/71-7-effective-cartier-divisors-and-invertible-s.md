@@ -8,13 +8,13 @@ proof: formalized
 
 # 71.7 Effective Cartier divisors and invertible sheaves
 
-Section 71.7 of the Stacks Project, [Tag 0CPG](https://stacks.math.columbia.edu/tag/0CPG). 8 tags here are carried by 35 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 71.7 of the Stacks Project, [Tag 0CPG](https://stacks.math.columbia.edu/tag/0CPG). 8 tags here are carried by 35 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0841, a definition
 
 [Tag 0841](https://stacks.math.columbia.edu/tag/0841) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.associatedInvertibleSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EffectiveCartierDivisor.lean, line 179](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EffectiveCartierDivisor.lean#L179). The attribute's comment: “part (1): the associated invertible sheaf”.
+**`AlgebraicGeometry.Space.associatedInvertibleSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EffectiveCartierDivisor.lean, line 179](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EffectiveCartierDivisor.lean#L179). The attribute's comment: “part (1): the associated invertible sheaf”.
 
 > The *invertible sheaf `𝒪_X(D)` associated to an effective Cartier divisor* `D ⊆ X`: the
 > inverse tensor power `𝓘_D^{⊗ -1}` of its defining ideal sheaf.
@@ -25,7 +25,7 @@ noncomputable def associatedInvertibleSheaf (D : ClosedSubspaces B S hS X.1)
     SheafOfModules.{u} (structureRingSheaf B S hS X)
 ```
 
-**`AlgebraicGeometry.Space.associatedInvertibleSheaf_isInvertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EffectiveCartierDivisor.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EffectiveCartierDivisor.lean#L195). The attribute's comment: “part (1): the associated invertible sheaf”.
+**`AlgebraicGeometry.Space.associatedInvertibleSheaf_isInvertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EffectiveCartierDivisor.lean, line 195](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EffectiveCartierDivisor.lean#L195). The attribute's comment: “part (1): the associated invertible sheaf”.
 
 > The sheaf `𝒪_X(D)` associated to an effective Cartier divisor is invertible.
 
@@ -37,7 +37,7 @@ theorem associatedInvertibleSheaf_isInvertible (D : ClosedSubspaces B S hS X.1)
       (associatedInvertibleSheaf B S hS X D hD)
 ```
 
-**`AlgebraicGeometry.Space.idealSheafHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EffectiveCartierDivisor.lean, line 208](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EffectiveCartierDivisor.lean#L208). The attribute's comment: “part (1): the associated invertible sheaf”.
+**`AlgebraicGeometry.Space.idealSheafHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EffectiveCartierDivisor.lean, line 208](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EffectiveCartierDivisor.lean#L208). The attribute's comment: “part (1): the associated invertible sheaf”.
 
 > The sheaf-hom `SheafHom_{𝒪_X}(𝓘_D, 𝒪_X)`, the second description of `𝒪_X(D)`. Its sections over
 > an étale chart `U` are the morphisms `𝓘_D|_U ⟶ 𝒪_X|_U` of `𝒪_X|_U`-modules on the slice site over
@@ -48,7 +48,7 @@ noncomputable def idealSheafHom (Z : ClosedSubspaces B S hS X.1) :
     SheafOfModules.{u + 1} (structureRingSheaf B S hS X)
 ```
 
-**`AlgebraicGeometry.Space.associatedInvertibleSheafHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EffectiveCartierDivisor.lean, line 236](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EffectiveCartierDivisor.lean#L236). The attribute's comment: “part (1): the associated invertible sheaf”.
+**`AlgebraicGeometry.Space.associatedInvertibleSheafHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EffectiveCartierDivisor.lean, line 236](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EffectiveCartierDivisor.lean#L236). The attribute's comment: “part (1): the associated invertible sheaf”.
 
 > The two descriptions of `𝒪_X(D)` agree: a section of `𝓘_D^{⊗ -1}` over an étale chart `U`
 > is the same thing as a morphism `𝓘_D|_U ⟶ 𝒪_X|_U`, by a linear equivalence of sections.
@@ -63,7 +63,7 @@ noncomputable def associatedInvertibleSheafHomEquiv (D : ClosedSubspaces B S hS 
         (modulePresheaf B S hS X (SheafOfModules.unit (structureRingSheaf B S hS X))) U
 ```
 
-**`AlgebraicGeometry.Space.associatedInvertibleSheafHomEquiv_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EffectiveCartierDivisor.lean, line 273](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EffectiveCartierDivisor.lean#L273). The attribute's comment: “part (1): the associated invertible sheaf”.
+**`AlgebraicGeometry.Space.associatedInvertibleSheafHomEquiv_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EffectiveCartierDivisor.lean, line 273](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EffectiveCartierDivisor.lean#L273). The attribute's comment: “part (1): the associated invertible sheaf”.
 
 > The identification of the two descriptions of `𝒪_X(D)` is given by the evaluation pairing: the
 > morphism `𝓘_D|_U ⟶ 𝒪_X|_U` attached to a section `s` of `𝓘_D^{⊗ -1}` over `U` sends a section `t`
@@ -93,7 +93,7 @@ theorem associatedInvertibleSheafHomEquiv_apply (D : ClosedSubspaces B S hS X.1)
           (associatedInvertibleSheaf B S hS X D hD)).restrictₛₗ f.op s ⊗ₜ t)
 ```
 
-**`AlgebraicGeometry.Space.canonicalSection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EffectiveCartierDivisor.lean, line 332](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EffectiveCartierDivisor.lean#L332). The attribute's comment: “part (2): the canonical section”.
+**`AlgebraicGeometry.Space.canonicalSection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EffectiveCartierDivisor.lean, line 332](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EffectiveCartierDivisor.lean#L332). The attribute's comment: “part (2): the canonical section”.
 
 > The *canonical section* `1_D` of `𝒪_X(D)`: the global section corresponding, under the
 > identification of `𝒪_X(D)` with `SheafHom_{𝒪_X}(𝓘_D, 𝒪_X)`, to the inclusion `𝓘_D ⟶ 𝒪_X`.
@@ -104,7 +104,7 @@ noncomputable def canonicalSection (D : ClosedSubspaces B S hS X.1)
     (associatedInvertibleSheaf B S hS X D hD).sections
 ```
 
-**`AlgebraicGeometry.Space.canonicalSection_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EffectiveCartierDivisor.lean, line 348](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EffectiveCartierDivisor.lean#L348). The attribute's comment: “part (2): the canonical section”.
+**`AlgebraicGeometry.Space.canonicalSection_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EffectiveCartierDivisor.lean, line 348](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EffectiveCartierDivisor.lean#L348). The attribute's comment: “part (2): the canonical section”.
 
 > The canonical section of `𝒪_X(D)` is, on every étale chart, the inclusion `𝓘_D ⟶ 𝒪_X` read
 > through the identification of `𝒪_X(D)` with `SheafHom_{𝒪_X}(𝓘_D, 𝒪_X)`.
@@ -117,7 +117,7 @@ theorem canonicalSection_apply (D : ClosedSubspaces B S hS X.1)
       idealInclusionSection B S hS X D U
 ```
 
-**`AlgebraicGeometry.Space.negativeDivisorSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EffectiveCartierDivisor.lean, line 359](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EffectiveCartierDivisor.lean#L359). The attribute's comment: “part (3): the negative of a divisor”.
+**`AlgebraicGeometry.Space.negativeDivisorSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EffectiveCartierDivisor.lean, line 359](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EffectiveCartierDivisor.lean#L359). The attribute's comment: “part (3): the negative of a divisor”.
 
 > The sheaf `𝒪_X(-D) = 𝒪_X(D)^{⊗ -1}`.
 
@@ -127,7 +127,7 @@ noncomputable def negativeDivisorSheaf (D : ClosedSubspaces B S hS X.1)
     SheafOfModules.{u} (structureRingSheaf B S hS X)
 ```
 
-**`AlgebraicGeometry.Space.negativeDivisorSheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EffectiveCartierDivisor.lean, line 370](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EffectiveCartierDivisor.lean#L370). The attribute's comment: “part (3): the negative of a divisor”.
+**`AlgebraicGeometry.Space.negativeDivisorSheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EffectiveCartierDivisor.lean, line 370](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EffectiveCartierDivisor.lean#L370). The attribute's comment: “part (3): the negative of a divisor”.
 
 > The identification `𝒪_X(-D) ≅ 𝓘_D`.
 
@@ -137,7 +137,7 @@ noncomputable def negativeDivisorSheafIso (D : ClosedSubspaces B S hS X.1)
     negativeDivisorSheaf B S hS X D hD ≅ idealSheafOfModules B S hS X D
 ```
 
-**`AlgebraicGeometry.Space.differenceDivisorSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EffectiveCartierDivisor.lean, line 400](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EffectiveCartierDivisor.lean#L400). The attribute's comment: “part (4): the difference of two divisors”.
+**`AlgebraicGeometry.Space.differenceDivisorSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EffectiveCartierDivisor.lean, line 400](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EffectiveCartierDivisor.lean#L400). The attribute's comment: “part (4): the difference of two divisors”.
 
 > The sheaf `𝒪_X(D - D') = 𝒪_X(D) ⊗_{𝒪_X} 𝒪_X(-D')` attached to a pair of effective Cartier
 > divisors.
@@ -153,7 +153,7 @@ noncomputable def differenceDivisorSheaf (D D' : ClosedSubspaces B S hS X.1)
 
 [Tag 0B4F](https://stacks.math.columbia.edu/tag/0B4F) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.conormalModuleIsoPullbackIdealSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleOfEffectiveCartierDivisor.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleOfEffectiveCartierDivisor.lean#L77). The attribute's comment: “the conormal sheaf is the restriction of the ideal sheaf”.
+**`AlgebraicGeometry.Space.conormalModuleIsoPullbackIdealSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleOfEffectiveCartierDivisor.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleOfEffectiveCartierDivisor.lean#L77). The attribute's comment: “the conormal sheaf is the restriction of the ideal sheaf”.
 
 > **The first identification of Stacks 0B4F**, `𝒞_{Z/X} = 𝓘_Z|_Z`: the conormal module of a
 > closed subspace `Z` of an algebraic space `X` is the restriction to `Z` of the defining ideal
@@ -168,7 +168,7 @@ noncomputable def conormalModuleIsoPullbackIdealSheaf (X : AlgebraicSpaces B S h
         (idealSheafOfModules B S hS X Z)
 ```
 
-**`AlgebraicGeometry.Space.pullbackIdealSheafIsoPullbackNegativeDivisorSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleOfEffectiveCartierDivisor.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleOfEffectiveCartierDivisor.lean#L99). The attribute's comment: “the restriction of the ideal sheaf is the restriction of the inverse of O\_X(D)”.
+**`AlgebraicGeometry.Space.pullbackIdealSheafIsoPullbackNegativeDivisorSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleOfEffectiveCartierDivisor.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ConormalModuleOfEffectiveCartierDivisor.lean#L99). The attribute's comment: “the restriction of the ideal sheaf is the restriction of the inverse of O\_X(D)”.
 
 > **The second identification of Stacks 0B4F**, `𝓘_D|_D = 𝒪_X(D)^{⊗ -1}|_D`: for an effective
 > Cartier divisor `D ⊆ X`, the restriction to `D` of the defining ideal sheaf `𝓘_D` agrees with the
@@ -191,7 +191,7 @@ noncomputable def pullbackIdealSheafIsoPullbackNegativeDivisorSheaf
 
 [Tag 0842](https://stacks.math.columbia.edu/tag/0842) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.existsUnique_tensorInvertibleSheafIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EffectiveCartierDivisorTensorIso.lean, line 1310](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EffectiveCartierDivisorTensorIso.lean#L1310).
+**`AlgebraicGeometry.Space.existsUnique_tensorInvertibleSheafIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EffectiveCartierDivisorTensorIso.lean, line 1310](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EffectiveCartierDivisorTensorIso.lean#L1310).
 
 > **Stacks 0842.** For two effective Cartier divisors `D₁, D₂` on an algebraic space `X` with
 > sum `D = D₁ + D₂` there is a *unique* isomorphism
@@ -220,13 +220,13 @@ theorem existsUnique_tensorInvertibleSheafIso :
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.IsRegularSection`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/RegularSections.lean#L107), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/RegularSectionsAndRepresentability.lean, line 27](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RegularSectionsAndRepresentability.lean#L27) (StacksFrontier).
+- [`AlgebraicGeometry.IsRegularSection`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/RegularSections.lean#L107), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/RegularSectionsAndRepresentability.lean, line 27](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/RegularSectionsAndRepresentability.lean#L27) (StacksFrontier).
 
 ## Tag 0844, a lemma
 
 [Tag 0844](https://stacks.math.columbia.edu/tag/0844) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isRegularSection_iff_etaleLocalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RegularSections.lean, line 289](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RegularSections.lean#L289). The attribute's comment: “conditions (1) and (2)”.
+**`AlgebraicGeometry.Space.isRegularSection_iff_etaleLocalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RegularSections.lean, line 289](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RegularSections.lean#L289). The attribute's comment: “conditions (1) and (2)”.
 
 > **Stacks 0844, conditions (1) and (2).** A global regular function on an algebraic space
 > is a regular section of the structure sheaf if and only if its image in the étale local ring
@@ -242,7 +242,7 @@ theorem isRegularSection_iff_etaleLocalRing (f : GlobalFunctions B S hS X hX) :
             (chartValue B S hS X hX f V.chart))
 ```
 
-**`AlgebraicGeometry.Space.isRegularSection_iff_affineEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RegularSections.lean, line 320](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RegularSections.lean#L320). The attribute's comment: “conditions (1) and (3)”.
+**`AlgebraicGeometry.Space.isRegularSection_iff_affineEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RegularSections.lean, line 320](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RegularSections.lean#L320). The attribute's comment: “conditions (1) and (3)”.
 
 > **Stacks 0844, conditions (1) and (3).** A global regular function on an algebraic space
 > is a regular section of the structure sheaf if and only if its restriction to every affine
@@ -257,7 +257,7 @@ theorem isRegularSection_iff_affineEtale (f : GlobalFunctions B S hS X hX) :
           (chartValue B S hS X hX f U)
 ```
 
-**`AlgebraicGeometry.Space.isRegularSection_iff_exists_surjectiveChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RegularSections.lean, line 336](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RegularSections.lean#L336). The attribute's comment: “conditions (1) and (4)”.
+**`AlgebraicGeometry.Space.isRegularSection_iff_exists_surjectiveChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RegularSections.lean, line 336](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RegularSections.lean#L336). The attribute's comment: “conditions (1) and (4)”.
 
 > **Stacks 0844, conditions (1) and (4).** A global regular function on an algebraic space
 > is a regular section of the structure sheaf if and only if there is a surjective étale scheme
@@ -279,7 +279,7 @@ theorem isRegularSection_iff_exists_surjectiveChart (f : GlobalFunctions B S hS 
 
 [Tag 0845](https://stacks.math.columbia.edu/tag/0845) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.zeroSchemeSubfunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZeroScheme.lean, line 305](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ZeroScheme.lean#L305). The attribute's comment: “underlying subfunctor construction”.
+**`AlgebraicGeometry.Space.zeroSchemeSubfunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZeroScheme.lean, line 305](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ZeroScheme.lean#L305). The attribute's comment: “underlying subfunctor construction”.
 
 > **Stacks 0845.** Intersect the closed subspaces whose defining ideals are contained in the
 > ideals generated by local evaluations of the section.
@@ -289,7 +289,7 @@ noncomputable def zeroSchemeSubfunctor (X : AlgebraicSpaces B S hS)
     (L : Modules.{u, u} B S hS X.1 X.2) (s : L.sections) : Subfunctor X.1
 ```
 
-**`AlgebraicGeometry.Space.zeroSchemeSubfunctor_isClosedSubspace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZeroScheme.lean, line 319](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ZeroScheme.lean#L319). The attribute's comment: “closedness”.
+**`AlgebraicGeometry.Space.zeroSchemeSubfunctor_isClosedSubspace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZeroScheme.lean, line 319](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ZeroScheme.lean#L319). The attribute's comment: “closedness”.
 
 > **Stacks 0845.** The subfunctor cut out by evaluation at a section of a module sheaf is a
 > closed subspace.
@@ -304,7 +304,7 @@ theorem zeroSchemeSubfunctor_isClosedSubspace (X : AlgebraicSpaces B S hS)
 
 [Tag 0846](https://stacks.math.columbia.edu/tag/0846) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isGreatest_zeroScheme_of_exists_definingIdealAt_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZeroSchemeAssertions.lean, line 179](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ZeroSchemeAssertions.lean#L179). The attribute's comment: “part (1): maximality, with vanishing on a closed subspace read chartwise and with the realization of the evaluation ideal by a closed subspace assumed”.
+**`AlgebraicGeometry.Space.isGreatest_zeroScheme_of_exists_definingIdealAt_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZeroSchemeAssertions.lean, line 179](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ZeroSchemeAssertions.lean#L179). The attribute's comment: “part (1): maximality, with vanishing on a closed subspace read chartwise and with the realization of the evaluation ideal by a closed subspace assumed”.
 
 > **Stacks 0846 (1).**  Among the closed subspaces of `X` on which the section vanishes — read
 > chartwise: those whose defining ideal contains the evaluation ideal of the section on every
@@ -328,7 +328,7 @@ theorem isGreatest_zeroScheme_of_exists_definingIdealAt_eq (X : AlgebraicSpaces 
       (zeroScheme B S hS X L s)
 ```
 
-**`AlgebraicGeometry.Space.exists_comp_eq_zeroScheme_iff_of_exists_definingIdealAt_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZeroSchemeAssertions.lean, line 205](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ZeroSchemeAssertions.lean#L205). The attribute's comment: “part (2): factorization, with vanishing of the pulled-back section read chartwise and with the realization of the evaluation ideal by a closed subspace assumed”.
+**`AlgebraicGeometry.Space.exists_comp_eq_zeroScheme_iff_of_exists_definingIdealAt_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZeroSchemeAssertions.lean, line 205](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ZeroSchemeAssertions.lean#L205). The attribute's comment: “part (2): factorization, with vanishing of the pulled-back section read chartwise and with the realization of the evaluation ideal by a closed subspace assumed”.
 
 > **Stacks 0846 (2).**  A morphism `f : Y ⟶ X` of algebraic spaces factors through the zero
 > scheme of the section exactly when the section vanishes after pullback along `f` — read
@@ -359,7 +359,7 @@ theorem exists_comp_eq_zeroScheme_iff_of_exists_definingIdealAt_eq
               RingHom.ker (Scheme.Γ.map ((BigFppfOver.toScheme B S hS).map k).op).hom
 ```
 
-**`AlgebraicGeometry.Space.isLocallyPrincipal_zeroScheme_of_epi_inverseTensorPower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZeroSchemeAssertions.lean, line 239](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ZeroSchemeAssertions.lean#L239). The attribute's comment: “part (3): locally principal, assuming an epimorphism onto the ideal sheaf from the inverse tensor power of the invertible module and local generation of that power by one section”.
+**`AlgebraicGeometry.Space.isLocallyPrincipal_zeroScheme_of_epi_inverseTensorPower`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZeroSchemeAssertions.lean, line 239](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ZeroSchemeAssertions.lean#L239). The attribute's comment: “part (3): locally principal, assuming an epimorphism onto the ideal sheaf from the inverse tensor power of the invertible module and local generation of that power by one section”.
 
 > **Stacks 0846 (3).**  The zero scheme of a section of an invertible `𝒪_X`-module is a
 > locally principal closed subspace of `X`.
@@ -388,7 +388,7 @@ theorem isLocallyPrincipal_zeroScheme_of_epi_inverseTensorPower (X : AlgebraicSp
     IsLocallyPrincipal B S hS X (zeroScheme B S hS X L s)
 ```
 
-**`AlgebraicGeometry.Space.definingIdealAt_zeroScheme_eq_span_generator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZeroSchemeAssertions.lean, line 264](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ZeroSchemeAssertions.lean#L264). The attribute's comment: “part (4) read chartwise: the zero scheme is cut out on an affine chart by one regular function, with the realization of the evaluation ideal by a closed subspace assumed”.
+**`AlgebraicGeometry.Space.definingIdealAt_zeroScheme_eq_span_generator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZeroSchemeAssertions.lean, line 264](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ZeroSchemeAssertions.lean#L264). The attribute's comment: “part (4) read chartwise: the zero scheme is cut out on an affine chart by one regular function, with the realization of the evaluation ideal by a closed subspace assumed”.
 
 > **Stacks 0846 (4), first half, read chartwise.**  On an affine étale chart `U` of `X` where
 > `L` is free of rank one, with generator `t` and coordinate functional `l₀`, the zero scheme of
@@ -415,7 +415,7 @@ theorem definingIdealAt_zeroScheme_eq_span_generator (X : AlgebraicSpaces B S hS
       Ideal.span {l₀ (s.eval (op U))}
 ```
 
-**`AlgebraicGeometry.Space.isGreatest_zeroScheme_of_isInvertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZeroSchemeAssertionsInvertible.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ZeroSchemeAssertionsInvertible.lean#L59). The attribute's comment: “part (1): maximality of the zero scheme among the closed subspaces on which the section vanishes, read chartwise, with no assumed inputs”.
+**`AlgebraicGeometry.Space.isGreatest_zeroScheme_of_isInvertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZeroSchemeAssertionsInvertible.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ZeroSchemeAssertionsInvertible.lean#L59). The attribute's comment: “part (1): maximality of the zero scheme among the closed subspaces on which the section vanishes, read chartwise, with no assumed inputs”.
 
 > **Stacks 0846 (1).**  Let `L` be an invertible `𝒪_X`-module and `s` a global section of `L`.
 > Among the closed subspaces of `X` on which `s` vanishes — read chartwise: those whose defining
@@ -439,7 +439,7 @@ theorem isGreatest_zeroScheme_of_isInvertible (X : AlgebraicSpaces B S hS)
       (zeroScheme B S hS X L s)
 ```
 
-**`AlgebraicGeometry.Space.exists_comp_eq_zeroScheme_iff_of_isInvertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZeroSchemeAssertionsInvertible.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ZeroSchemeAssertionsInvertible.lean#L83). The attribute's comment: “part (2): a morphism factors through the zero scheme exactly when the pulled-back section vanishes, read chartwise, with no assumed inputs”.
+**`AlgebraicGeometry.Space.exists_comp_eq_zeroScheme_iff_of_isInvertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZeroSchemeAssertionsInvertible.lean, line 83](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ZeroSchemeAssertionsInvertible.lean#L83). The attribute's comment: “part (2): a morphism factors through the zero scheme exactly when the pulled-back section vanishes, read chartwise, with no assumed inputs”.
 
 > **Stacks 0846 (2).**  Let `L` be an invertible `𝒪_X`-module and `s` a global section of `L`.
 > A morphism `f : Y ⟶ X` of algebraic spaces factors through the zero scheme of `s` exactly when
@@ -468,7 +468,7 @@ theorem exists_comp_eq_zeroScheme_iff_of_isInvertible (X Y : AlgebraicSpaces B S
               RingHom.ker (Scheme.Γ.map ((BigFppfOver.toScheme B S hS).map k).op).hom
 ```
 
-**`AlgebraicGeometry.Space.definingIdealAt_zeroScheme_eq_span_generator_of_isInvertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZeroSchemeAssertionsInvertible.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ZeroSchemeAssertionsInvertible.lean#L117). The attribute's comment: “part (4) read chartwise: the zero scheme is cut out on an affine chart by one regular function, with L carried as free of rank one on that chart by a generator t and a coordinate functional l₀; the chart U and the functional l₀ occur in the conclusion, which names the function as l₀ of the section over U”.
+**`AlgebraicGeometry.Space.definingIdealAt_zeroScheme_eq_span_generator_of_isInvertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZeroSchemeAssertionsInvertible.lean, line 117](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ZeroSchemeAssertionsInvertible.lean#L117). The attribute's comment: “part (4) read chartwise: the zero scheme is cut out on an affine chart by one regular function, with L carried as free of rank one on that chart by a generator t and a coordinate functional l₀; the chart U and the functional l₀ occur in the conclusion, which names the function as l₀ of the section over U”.
 
 > **Stacks 0846 (4), first half, read chartwise.**  Let `L` be an invertible `𝒪_X`-module and
 > `s` a global section of `L`.  On an affine étale chart `U` of `X` where `L` is free of rank one,
@@ -502,7 +502,7 @@ theorem definingIdealAt_zeroScheme_eq_span_generator_of_isInvertible (X : Algebr
       Ideal.span {l₀ (s.eval (op U))}
 ```
 
-**`AlgebraicGeometry.Space.isEffectiveCartierDivisor_zeroScheme_iff_isRegularSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZeroSchemeEffectiveCartier.lean, line 382](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ZeroSchemeEffectiveCartier.lean#L382). The attribute's comment: “part (4): the zero scheme is an effective Cartier divisor exactly when the section is regular, with no assumed inputs”.
+**`AlgebraicGeometry.Space.isEffectiveCartierDivisor_zeroScheme_iff_isRegularSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZeroSchemeEffectiveCartier.lean, line 382](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ZeroSchemeEffectiveCartier.lean#L382). The attribute's comment: “part (4): the zero scheme is an effective Cartier divisor exactly when the section is regular, with no assumed inputs”.
 
 > **Stacks 0846 (4).**  Let `X` be an algebraic space over a scheme `S`, let `L` be an
 > invertible `𝒪_X`-module and let `s` be a global section of `L`.  The zero scheme `Z(s)` of
@@ -524,7 +524,7 @@ theorem isEffectiveCartierDivisor_zeroScheme_iff_isRegularSection
           (smallEtaleRingedSite B S hS X.1 X.2).O).property s
 ```
 
-**`AlgebraicGeometry.Space.isLocallyPrincipal_zeroScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZeroSchemeLocallyPrincipal.lean, line 270](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ZeroSchemeLocallyPrincipal.lean#L270). The attribute's comment: “part (3): the zero scheme of a section of an invertible module is a locally principal closed subspace”.
+**`AlgebraicGeometry.Space.isLocallyPrincipal_zeroScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZeroSchemeLocallyPrincipal.lean, line 270](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ZeroSchemeLocallyPrincipal.lean#L270). The attribute's comment: “part (3): the zero scheme of a section of an invertible module is a locally principal closed subspace”.
 
 > The zero scheme of a global section `s` of an invertible `𝒪_X`-module `L` is a locally
 > principal closed subspace of `X`.
@@ -536,7 +536,7 @@ theorem isLocallyPrincipal_zeroScheme
     IsLocallyPrincipal B S hS X (zeroScheme B S hS X L s)
 ```
 
-**`AlgebraicGeometry.Space.isRegularSection_iff_forall_injective_mul_generator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZeroSchemeProperties.lean, line 224](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ZeroSchemeProperties.lean#L224). The attribute's comment: “part (4) read chartwise: the section is regular exactly when the functions cutting out the zero scheme are nonzerodivisors, with L carried as free of rank one on every chart”.
+**`AlgebraicGeometry.Space.isRegularSection_iff_forall_injective_mul_generator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZeroSchemeProperties.lean, line 224](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ZeroSchemeProperties.lean#L224). The attribute's comment: “part (4) read chartwise: the section is regular exactly when the functions cutting out the zero scheme are nonzerodivisors, with L carried as free of rank one on every chart”.
 
 > **A global section of a module free of rank one on every étale chart is regular exactly when
 > the generators of its evaluation ideals are nonzerodivisors.**  This is the chartwise content of
@@ -566,7 +566,7 @@ theorem isRegularSection_iff_forall_injective_mul_generator (X : AlgebraicSpaces
 
 [Tag 0847](https://stacks.math.columbia.edu/tag/0847) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.iso_eq_of_canonicalSectionHom_comp_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CanonicalSectionIsoUnique.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CanonicalSectionIsoUnique.lean#L169). The attribute's comment: “part (2): uniqueness of the isomorphism — two isomorphisms from the sheaf of an effective Cartier divisor to an invertible module, both carrying the canonical section to the given section, are equal; with no assumed inputs”.
+**`AlgebraicGeometry.Space.iso_eq_of_canonicalSectionHom_comp_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CanonicalSectionIsoUnique.lean, line 169](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CanonicalSectionIsoUnique.lean#L169). The attribute's comment: “part (2): uniqueness of the isomorphism — two isomorphisms from the sheaf of an effective Cartier divisor to an invertible module, both carrying the canonical section to the given section, are equal; with no assumed inputs”.
 
 > **Stacks 0847, part (2): the isomorphism is unique.**  Let `D ⊆ X` be an effective Cartier
 > divisor on an algebraic space `X` and let `s` be a global section of an `𝒪_X`-module `L`.  Two
@@ -586,7 +586,7 @@ theorem iso_eq_of_canonicalSectionHom_comp_eq
     i = j
 ```
 
-**`AlgebraicGeometry.Space.canonicalSection_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CanonicalSectionRegular.lean, line 307](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CanonicalSectionRegular.lean#L307). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.Space.canonicalSection_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CanonicalSectionRegular.lean, line 307](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CanonicalSectionRegular.lean#L307). The attribute's comment: “part (1)”.
 
 > **Stacks 0847, part (1).** The canonical section `1_D` of the invertible sheaf `𝒪_X(D)`
 > attached to an effective Cartier divisor `D ⊆ X` is a regular section: multiplication by it is a
@@ -599,7 +599,7 @@ theorem canonicalSection_isRegular :
       (canonicalSection B S hS X D hD)
 ```
 
-**`AlgebraicGeometry.Space.exists_isEffectiveCartierDivisor_associatedInvertibleSheaf_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RegularSectionEffectiveCartier.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RegularSectionEffectiveCartier.lean#L81). The attribute's comment: “part (2), existence: a regular global section of an invertible module cuts out an effective Cartier divisor whose associated invertible sheaf it is”.
+**`AlgebraicGeometry.Space.exists_isEffectiveCartierDivisor_associatedInvertibleSheaf_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RegularSectionEffectiveCartier.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RegularSectionEffectiveCartier.lean#L81). The attribute's comment: “part (2), existence: a regular global section of an invertible module cuts out an effective Cartier divisor whose associated invertible sheaf it is”.
 
 > **Stacks 0847, part (2), existence.**  Let `X` be an algebraic space over a scheme `S` and
 > let `L` be an invertible `𝒪_X`-module with a regular global section `s`.  Then there is an
@@ -622,7 +622,7 @@ theorem exists_isEffectiveCartierDivisor_associatedInvertibleSheaf_iso
       Nonempty (associatedInvertibleSheaf B S hS X D hD ≅ L)
 ```
 
-**`AlgebraicGeometry.Space.exists_unique_isEffectiveCartierDivisor_iso_canonicalSectionHom_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RegularSectionEffectiveCartierUnique.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RegularSectionEffectiveCartierUnique.lean#L166). The attribute's comment: “part (2): a regular global section of an invertible module cuts out a unique effective Cartier divisor, the zero scheme of the section, carrying a unique isomorphism from its associated invertible sheaf to the module which takes the canonical section to the given section; with no assumed inputs”.
+**`AlgebraicGeometry.Space.exists_unique_isEffectiveCartierDivisor_iso_canonicalSectionHom_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RegularSectionEffectiveCartierUnique.lean, line 166](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RegularSectionEffectiveCartierUnique.lean#L166). The attribute's comment: “part (2): a regular global section of an invertible module cuts out a unique effective Cartier divisor, the zero scheme of the section, carrying a unique isomorphism from its associated invertible sheaf to the module which takes the canonical section to the given section; with no assumed inputs”.
 
 > **Stacks 0847, part (2).**  Let `X` be an algebraic space over a scheme `S` and let `L` be an
 > invertible `𝒪_X`-module with a regular global section `s`.  Then there is a *unique* effective
@@ -659,7 +659,7 @@ theorem exists_unique_isEffectiveCartierDivisor_iso_canonicalSectionHom_comp
         canonicalSectionHom B S hS X D hD ≫ i'.hom = L.unitHomEquiv.symm s → i' = i
 ```
 
-**`AlgebraicGeometry.Space.effectiveCartierDivisor_regularSectionPair_mutuallyInverse`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RegularSectionEffectiveCartierUnique.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/RegularSectionEffectiveCartierUnique.lean#L221). The attribute's comment: “part (3): the constructions D ↦ (𝒪\_X(D), 1\_D) and (L, s) ↦ Z(s) are mutually inverse, hence a bijection between the effective Cartier divisors and the pairs of an invertible module with a regular global section taken up to isomorphism; with no assumed inputs”.
+**`AlgebraicGeometry.Space.effectiveCartierDivisor_regularSectionPair_mutuallyInverse`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/RegularSectionEffectiveCartierUnique.lean, line 221](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/RegularSectionEffectiveCartierUnique.lean#L221). The attribute's comment: “part (3): the constructions D ↦ (𝒪\_X(D), 1\_D) and (L, s) ↦ Z(s) are mutually inverse, hence a bijection between the effective Cartier divisors and the pairs of an invertible module with a regular global section taken up to isomorphism; with no assumed inputs”.
 
 > **Stacks 0847, part (3).**  The constructions `D ↦ (𝒪_X(D), 1_D)` and `(L, s) ↦ Z(s)` are
 > mutually inverse, so they are a bijection between the effective Cartier divisors on `X` and the
@@ -699,7 +699,7 @@ theorem effectiveCartierDivisor_regularSectionPair_mutuallyInverse :
         zeroScheme B S hS X L s = zeroScheme B S hS X L' s'
 ```
 
-**`AlgebraicGeometry.Space.zeroScheme_canonicalSection_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZeroSchemeOfCanonicalSection.lean, line 335](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ZeroSchemeOfCanonicalSection.lean#L335). The attribute's comment: “part (2): the construction D ↦ (𝒪\_X(D), 1\_D) followed by (L, s) ↦ Z(s) is the identity on effective Cartier divisors, with no assumed inputs”.
+**`AlgebraicGeometry.Space.zeroScheme_canonicalSection_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZeroSchemeOfCanonicalSection.lean, line 335](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ZeroSchemeOfCanonicalSection.lean#L335). The attribute's comment: “part (2): the construction D ↦ (𝒪\_X(D), 1\_D) followed by (L, s) ↦ Z(s) is the identity on effective Cartier divisors, with no assumed inputs”.
 
 > **Stacks 0847 (2): an effective Cartier divisor is the zero scheme of its canonical
 > section.**  This is the assertion of the source that the construction `D ↦ (𝒪_X(D), 1_D)` followed
@@ -715,7 +715,7 @@ theorem zeroScheme_canonicalSection_eq :
         (canonicalSection B S hS X D hD) = D
 ```
 
-**`AlgebraicGeometry.Space.eq_zeroScheme_of_canonicalSectionHom_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZeroSchemeOfCanonicalSection.lean, line 396](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ZeroSchemeOfCanonicalSection.lean#L396). The attribute's comment: “part (2): uniqueness of the divisor — an effective Cartier divisor with an isomorphism from its associated invertible sheaf to L carrying the canonical section to s is the zero scheme of s, with no assumed inputs”.
+**`AlgebraicGeometry.Space.eq_zeroScheme_of_canonicalSectionHom_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ZeroSchemeOfCanonicalSection.lean, line 396](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ZeroSchemeOfCanonicalSection.lean#L396). The attribute's comment: “part (2): uniqueness of the divisor — an effective Cartier divisor with an isomorphism from its associated invertible sheaf to L carrying the canonical section to s is the zero scheme of s, with no assumed inputs”.
 
 > **Stacks 0847 (2): the effective Cartier divisor is unique.**  Let `L` be an `𝒪_X`-module with
 > a global section `s`.  An effective Cartier divisor `D ⊆ X` carrying an isomorphism
@@ -741,4 +741,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 71.7, Tag 0CPG](https://stacks.math.columbia.edu/tag/0CPG)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

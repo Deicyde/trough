@@ -8,13 +8,13 @@ proof: formalized
 
 # 59.59 Cohomology of a point
 
-Section 59.59 of the Stacks Project, [Tag 03QQ](https://stacks.math.columbia.edu/tag/03QQ). 4 tags here are carried by 18 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 59.59 of the Stacks Project, [Tag 03QQ](https://stacks.math.columbia.edu/tag/03QQ). 4 tags here are carried by 18 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 04JQ, a lemma
 
 [Tag 04JQ](https://stacks.math.columbia.edu/tag/04JQ) in the Stacks Project.
 
-**`AlgebraicGeometry.abelianEtaleSheafStalkEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/StalkEquivalence/AbelianSheafStalk.lean, line 736](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/StalkEquivalence/AbelianSheafStalk.lean#L736). References: SGA 4 VIII (2.2).
+**`AlgebraicGeometry.abelianEtaleSheafStalkEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/StalkEquivalence/AbelianSheafStalk.lean, line 737](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/StalkEquivalence/AbelianSheafStalk.lean#L737). References: SGA 4 VIII (2.2).
 
 > For a geometric point of the spectrum of a field, taking stalks is an equivalence from abelian
 > sheaves on the small étale site to discrete modules over the absolute Galois group at that point,
@@ -49,13 +49,13 @@ def abelianEtaleSheafStalkEquivalence :
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.etaleContinuousGModuleEquivalence`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/GaloisCohomology/EtaleStalkModules.lean#L245), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/GaloisCohomology/EtaleStalkModules.lean, line 304](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/GaloisCohomology/EtaleStalkModules.lean#L304) (StacksFrontier): “the stalk equivalence in the coefficient category of continuous group cohomology”.
+- [`AlgebraicGeometry.etaleContinuousGModuleEquivalence`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/GaloisCohomology/EtaleStalkModules.lean#L245), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/GaloisCohomology/EtaleStalkModules.lean, line 304](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/GaloisCohomology/EtaleStalkModules.lean#L304) (StacksFrontier): “the stalk equivalence in the coefficient category of continuous group cohomology”.
 
 ## Tag 03QU, a lemma
 
 [Tag 03QU](https://stacks.math.columbia.edu/tag/03QU) in the Stacks Project.
 
-**`AlgebraicGeometry.etaleH0AddEquivGaloisInvariants`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DegreeZero/GaloisInvariants.lean, line 232](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DegreeZero/GaloisInvariants.lean#L232). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.etaleH0AddEquivGaloisInvariants`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DegreeZero/GaloisInvariants.lean, line 232](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DegreeZero/GaloisInvariants.lean#L232). The attribute's comment: “part (2)”.
 
 > Let `K` be a field, let `sbar` be a geometric point of `Spec K` with absolute Galois group
 > `G`, and let `F` be an abelian sheaf on the small étale site of `Spec K` corresponding to the
@@ -69,7 +69,7 @@ def etaleH0AddEquivGaloisInvariants
     Sheaf.H.{w, max u v} F 0 ≃+ ↥(etaleStalkGaloisInvariants.{u, v} B K hK sbar F)
 ```
 
-**`AlgebraicGeometry.etaleH0AddEquivGaloisInvariants_coe`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DegreeZero/GaloisInvariants.lean, line 243](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DegreeZero/GaloisInvariants.lean#L243). The attribute's comment: “part (2), the comparison is taking germs at the geometric point”.
+**`AlgebraicGeometry.etaleH0AddEquivGaloisInvariants_coe`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DegreeZero/GaloisInvariants.lean, line 243](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DegreeZero/GaloisInvariants.lean#L243). The attribute's comment: “part (2), the comparison is taking germs at the geometric point”.
 
 > The identification of degree-zero étale cohomology with the Galois invariants is taking
 > germs at the geometric point: a cohomology class is sent to the germ of the global section which
@@ -85,7 +85,7 @@ theorem etaleH0AddEquivGaloisInvariants_coe
         (Sheaf.H.equiv₀ F (SmallEtale.finalIsTerminal B (Spec (.of K)) hK) x)
 ```
 
-**`AlgebraicGeometry.etaleH0AddEquivGaloisInvariants_abelianEtaleStalkGerm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DegreeZero/GaloisInvariants.lean, line 256](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DegreeZero/GaloisInvariants.lean#L256). The attribute's comment: “part (2), the comparison in the abelian stalk”.
+**`AlgebraicGeometry.etaleH0AddEquivGaloisInvariants_abelianEtaleStalkGerm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/DegreeZero/GaloisInvariants.lean, line 256](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/DegreeZero/GaloisInvariants.lean#L256). The attribute's comment: “part (2), the comparison in the abelian stalk”.
 
 > Read in the abelian-group-valued stalk, the identification of degree-zero étale cohomology
 > with the Galois invariants sends a cohomology class to the germ, at the final pointed étale
@@ -103,7 +103,7 @@ theorem etaleH0AddEquivGaloisInvariants_abelianEtaleStalkGerm
         (Sheaf.H.equiv₀ F (SmallEtale.finalIsTerminal B (Spec (.of K)) hK) x)
 ```
 
-**`AlgebraicGeometry.additiveSheafHAddEquivContinuousGroupCohomology`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/GaloisCohomology/AdditiveGroupGaloisModule.lean, line 269](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/GaloisCohomology/AdditiveGroupGaloisModule.lean#L269). The attribute's comment: “part (3) at 𝐆\_a, in every degree: the degree-q étale cohomology of the spectrum of a field with coefficients in the additive group is the degree-q continuous group cohomology of the absolute Galois group with coefficients in the separable closure under addition. This is the general objectwise form of part (3) on Mathlib's small étale site, smallEtaleSheafCohomologyAddEquivContinuousGroupCohomology, with its Galois module computed at 𝐆\_a by additiveContinuousGModuleIso -- the stalk computation additiveStalkIsoSepClosure packaged with its germwise Galois equivariance additiveSectionEval\_galoisFiberAction into an isomorphism of discrete Galois modules. Nothing is assumed of the field and nothing is carried. NOT proved here: parts (1) and (2) of the tag, which are separate registrations”.
+**`AlgebraicGeometry.additiveSheafHAddEquivContinuousGroupCohomology`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/GaloisCohomology/AdditiveGroupGaloisModule.lean, line 269](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/GaloisCohomology/AdditiveGroupGaloisModule.lean#L269). The attribute's comment: “part (3) at 𝐆\_a, in every degree: the degree-q étale cohomology of the spectrum of a field with coefficients in the additive group is the degree-q continuous group cohomology of the absolute Galois group with coefficients in the separable closure under addition. This is the general objectwise form of part (3) on Mathlib's small étale site, smallEtaleSheafCohomologyAddEquivContinuousGroupCohomology, with its Galois module computed at 𝐆\_a by additiveContinuousGModuleIso -- the stalk computation additiveStalkIsoSepClosure packaged with its germwise Galois equivariance additiveSectionEval\_galoisFiberAction into an isomorphism of discrete Galois modules. Nothing is assumed of the field and nothing is carried. NOT proved here: parts (1) and (2) of the tag, which are separate registrations”.
 
 > **Stacks Project, Tag 03QU, part (3), at `𝐆_a`.**  For a field `K`, a geometric point `sbar`
 > of `Spec K` and every degree `q`,
@@ -123,7 +123,7 @@ def additiveSheafHAddEquivContinuousGroupCohomology (q : ℕ) :
         (sepClosureAddGModule K sbar)
 ```
 
-**`AlgebraicGeometry.etaleRightDerivedGammaIsoContinuousGroupCohomologyFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/GaloisCohomology/EtaleGaloisCohomologyComparison.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/GaloisCohomology/EtaleGaloisCohomologyComparison.lean#L134). The attribute's comment: “part (3), as an isomorphism of functors, with étale cohomology as the right derived functor of global sections”.
+**`AlgebraicGeometry.etaleRightDerivedGammaIsoContinuousGroupCohomologyFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/GaloisCohomology/EtaleGaloisCohomologyComparison.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/GaloisCohomology/EtaleGaloisCohomologyComparison.lean#L134). The attribute's comment: “part (3), as an isomorphism of functors, with étale cohomology as the right derived functor of global sections”.
 
 > In every degree `q`, the `q`-th right derived functor of the global sections functor
 > `CategoryTheory.Sheaf.Γ` of the small étale site of `Spec K` is the stalk equivalence
@@ -138,7 +138,7 @@ def etaleRightDerivedGammaIsoContinuousGroupCohomologyFunctor (q : ℕ) :
           (GeometricPoint.absoluteGaloisGroup sbar) q
 ```
 
-**`AlgebraicGeometry.etaleSheafCohomologyIsoContinuousGroupCohomologyFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/GaloisCohomology/EtaleGaloisCohomologyComparison.lean, line 158](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/GaloisCohomology/EtaleGaloisCohomologyComparison.lean#L158). The attribute's comment: “part (3), in every degree, as a natural isomorphism of functors: sheaf cohomology on the small étale site of the spectrum of a field is the stalk equivalence of 04JQ followed by the continuous group cohomology functor of 04JR”.
+**`AlgebraicGeometry.etaleSheafCohomologyIsoContinuousGroupCohomologyFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/GaloisCohomology/EtaleGaloisCohomologyComparison.lean, line 158](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/GaloisCohomology/EtaleGaloisCohomologyComparison.lean#L158). The attribute's comment: “part (3), in every degree, as a natural isomorphism of functors: sheaf cohomology on the small étale site of the spectrum of a field is the stalk equivalence of 04JQ followed by the continuous group cohomology functor of 04JR”.
 
 > Let `K` be a field, let `sbar` be a geometric point of `Spec K` and let `G` be the absolute
 > Galois group at `sbar`. For every `q`, Mathlib's degree-`q` sheaf cohomology functor
@@ -155,7 +155,7 @@ def etaleSheafCohomologyIsoContinuousGroupCohomologyFunctor (q : ℕ) :
           (GeometricPoint.absoluteGaloisGroup sbar) q
 ```
 
-**`AlgebraicGeometry.etaleSheafCohomologyAddEquivContinuousGroupCohomology`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/GaloisCohomology/EtaleGaloisCohomologyComparison.lean, line 175](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/GaloisCohomology/EtaleGaloisCohomologyComparison.lean#L175). The attribute's comment: “part (3): in every degree q, the degree-q étale cohomology of the spectrum of a field with coefficients in an abelian sheaf is the degree-q continuous group cohomology of the absolute Galois group with coefficients in the sheaf's module of 04JQ”.
+**`AlgebraicGeometry.etaleSheafCohomologyAddEquivContinuousGroupCohomology`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/GaloisCohomology/EtaleGaloisCohomologyComparison.lean, line 175](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/GaloisCohomology/EtaleGaloisCohomologyComparison.lean#L175). The attribute's comment: “part (3): in every degree q, the degree-q étale cohomology of the spectrum of a field with coefficients in an abelian sheaf is the degree-q continuous group cohomology of the absolute Galois group with coefficients in the sheaf's module of 04JQ”.
 
 > Let `K` be a field, let `sbar` be a geometric point of `Spec K` with absolute Galois group `G`,
 > and let `F` be an abelian sheaf on the small étale site of `Spec K`, corresponding to the
@@ -171,7 +171,7 @@ def etaleSheafCohomologyAddEquivContinuousGroupCohomology
         ((etaleContinuousGModuleEquivalence.{u, u + 1} B K hK sbar).functor.obj F)
 ```
 
-**`AlgebraicGeometry.etaleDerivedGlobalSectionsIsoDerivedGaloisInvariants`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/GaloisCohomology/EtaleGaloisCohomologyComparison.lean, line 211](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/GaloisCohomology/EtaleGaloisCohomologyComparison.lean#L211). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.etaleDerivedGlobalSectionsIsoDerivedGaloisInvariants`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/GaloisCohomology/EtaleGaloisCohomologyComparison.lean, line 211](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/GaloisCohomology/EtaleGaloisCohomologyComparison.lean#L211). The attribute's comment: “part (1)”.
 
 > Let `K` be a field, let `sbar` be a geometric point of `Spec K` with absolute Galois group `G`,
 > let `F` be an abelian sheaf on the small étale site of `Spec K` and let `M` be the discrete
@@ -197,7 +197,7 @@ def etaleDerivedGlobalSectionsIsoDerivedGaloisInvariants
               ((etaleContinuousGModuleEquivalence.{u, u + 1} B K hK sbar).functor.obj F)))
 ```
 
-**`AlgebraicGeometry.smallEtaleSheafCohomologyIsoContinuousGroupCohomologyFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/GaloisCohomology/EtaleGaloisCohomologyComparison.lean, line 274](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/GaloisCohomology/EtaleGaloisCohomologyComparison.lean#L274). The attribute's comment: “part (3), in every degree, on Mathlib's small étale site of the spectrum of a field: sheaf cohomology there is restriction to the site of 021B followed by the stalk equivalence of 04JQ and the continuous group cohomology functor of 04JR”.
+**`AlgebraicGeometry.smallEtaleSheafCohomologyIsoContinuousGroupCohomologyFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/GaloisCohomology/EtaleGaloisCohomologyComparison.lean, line 274](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/GaloisCohomology/EtaleGaloisCohomologyComparison.lean#L274). The attribute's comment: “part (3), in every degree, on Mathlib's small étale site of the spectrum of a field: sheaf cohomology there is restriction to the site of 021B followed by the stalk equivalence of 04JQ and the continuous group cohomology functor of 04JR”.
 
 > For every `q`, Mathlib's degree-`q` sheaf cohomology functor on its small étale site of
 > `Spec K` is the restriction `AlgebraicGeometry.smallEtaleSheafRestriction` to the site
@@ -215,7 +215,7 @@ def smallEtaleSheafCohomologyIsoContinuousGroupCohomologyFunctor (q : ℕ) :
             (GeometricPoint.absoluteGaloisGroup sbar) q)
 ```
 
-**`AlgebraicGeometry.smallEtaleSheafCohomologyAddEquivContinuousGroupCohomology`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/GaloisCohomology/EtaleGaloisCohomologyComparison.lean, line 298](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/GaloisCohomology/EtaleGaloisCohomologyComparison.lean#L298). The attribute's comment: “part (3) on Mathlib's small étale site, objectwise: the degree-q étale cohomology group of the spectrum of a field with coefficients in an abelian sheaf is the degree-q continuous group cohomology of the absolute Galois group with coefficients in the sheaf's Galois module”.
+**`AlgebraicGeometry.smallEtaleSheafCohomologyAddEquivContinuousGroupCohomology`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/GaloisCohomology/EtaleGaloisCohomologyComparison.lean, line 298](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/GaloisCohomology/EtaleGaloisCohomologyComparison.lean#L298). The attribute's comment: “part (3) on Mathlib's small étale site, objectwise: the degree-q étale cohomology group of the spectrum of a field with coefficients in an abelian sheaf is the degree-q continuous group cohomology of the absolute Galois group with coefficients in the sheaf's Galois module”.
 
 > For every abelian sheaf `F` on Mathlib's small étale site of `Spec K` and every degree `q`,
 >
@@ -234,7 +234,7 @@ def smallEtaleSheafCohomologyAddEquivContinuousGroupCohomology
           ((smallEtaleSheafRestriction B K hK).obj F))
 ```
 
-**`AlgebraicGeometry.etaleGlobalSectionsIsoInvariants`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/GaloisCohomology/EtaleStalkModules.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/GaloisCohomology/EtaleStalkModules.lean#L225). The attribute's comment: “part (2), as a natural isomorphism of functors, in the abelian-group encoding of discrete Galois modules”.
+**`AlgebraicGeometry.etaleGlobalSectionsIsoInvariants`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/GaloisCohomology/EtaleStalkModules.lean, line 225](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/GaloisCohomology/EtaleStalkModules.lean#L225). The attribute's comment: “part (2), as a natural isomorphism of functors, in the abelian-group encoding of discrete Galois modules”.
 
 > **Stacks Project, Tag 03QU, part (2), as an isomorphism of functors.**  Over a field, global
 > sections of an abelian étale sheaf and the Galois invariants of its module of Tag 04JQ are
@@ -249,7 +249,7 @@ def etaleGlobalSectionsIsoInvariants :
           (GeometricPoint.absoluteGaloisGroup sbar)
 ```
 
-**`AlgebraicGeometry.etaleGlobalSectionsIsoContinuousGModuleInvariants`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/GaloisCohomology/EtaleStalkModules.lean, line 257](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/GaloisCohomology/EtaleStalkModules.lean#L257). The attribute's comment: “part (2), as a natural isomorphism of functors, in the coefficient category of continuousGroupCohomology”.
+**`AlgebraicGeometry.etaleGlobalSectionsIsoContinuousGModuleInvariants`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/GaloisCohomology/EtaleStalkModules.lean, line 257](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/GaloisCohomology/EtaleStalkModules.lean#L257). The attribute's comment: “part (2), as a natural isomorphism of functors, in the coefficient category of continuousGroupCohomology”.
 
 > **Stacks Project, Tag 03QU, part (2), as an isomorphism of functors, in the vocabulary of
 > continuous group cohomology.**  Global sections of an abelian étale sheaf over a field are the
@@ -264,7 +264,7 @@ def etaleGlobalSectionsIsoContinuousGModuleInvariants :
           (GeometricPoint.absoluteGaloisGroup sbar)
 ```
 
-**`AlgebraicGeometry.etaleGammaIsoGaloisInvariants`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/GaloisCohomology/EtaleStalkModules.lean, line 281](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/GaloisCohomology/EtaleStalkModules.lean#L281). The attribute's comment: “part (2), as an isomorphism of functors on the global sections functor”.
+**`AlgebraicGeometry.etaleGammaIsoGaloisInvariants`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/GaloisCohomology/EtaleStalkModules.lean, line 281](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/GaloisCohomology/EtaleStalkModules.lean#L281). The attribute's comment: “part (2), as an isomorphism of functors on the global sections functor”.
 
 > **Stacks Project, Tag 03QU, part (2), functorially, for the global sections functor of the
 > site.**  The global sections functor `CategoryTheory.Sheaf.Γ` of the small étale site of the
@@ -282,7 +282,7 @@ def etaleGammaIsoGaloisInvariants
           (GeometricPoint.absoluteGaloisGroup sbar)
 ```
 
-**`AlgebraicGeometry.etaleGammaIsoContinuousGModuleInvariants`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/GaloisCohomology/EtaleStalkModules.lean, line 295](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/GaloisCohomology/EtaleStalkModules.lean#L295). The attribute's comment: “part (2), as an isomorphism of functors with the module invariants”.
+**`AlgebraicGeometry.etaleGammaIsoContinuousGModuleInvariants`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/GaloisCohomology/EtaleStalkModules.lean, line 295](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/GaloisCohomology/EtaleStalkModules.lean#L295). The attribute's comment: “part (2), as an isomorphism of functors with the module invariants”.
 
 > **Stacks Project, Tag 03QU, part (2), functorially and in the module encoding, for the global
 > sections functor of the site.**  The global sections functor `CategoryTheory.Sheaf.Γ` of the
@@ -298,7 +298,7 @@ def etaleGammaIsoContinuousGModuleInvariants
           (GeometricPoint.absoluteGaloisGroup sbar)
 ```
 
-**`AlgebraicGeometry.multiplicativeSheafHAddEquivContinuousGroupCohomology`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/GaloisCohomology/MultiplicativeGroupGaloisModule.lean, line 260](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/GaloisCohomology/MultiplicativeGroupGaloisModule.lean#L260). The attribute's comment: “part (3) at 𝐆\_m, in every degree: the degree-q étale cohomology of the spectrum of a field with coefficients in the multiplicative group is the degree-q continuous group cohomology of the absolute Galois group with coefficients in the units of the separable closure. This is the general objectwise form of part (3) on Mathlib's small étale site, smallEtaleSheafCohomologyAddEquivContinuousGroupCohomology, with its Galois module computed at 𝐆\_m by multiplicativeContinuousGModuleIso -- the stalk computation multiplicativeStalkIsoUnits packaged with its germwise Galois equivariance multiplicativeSectionEval\_galoisFiberAction into an isomorphism of discrete Galois modules. Nothing is assumed of the field and nothing is carried. NOT proved here: parts (1) and (2) of the tag, which are separate registrations”.
+**`AlgebraicGeometry.multiplicativeSheafHAddEquivContinuousGroupCohomology`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/GaloisCohomology/MultiplicativeGroupGaloisModule.lean, line 260](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/GaloisCohomology/MultiplicativeGroupGaloisModule.lean#L260). The attribute's comment: “part (3) at 𝐆\_m, in every degree: the degree-q étale cohomology of the spectrum of a field with coefficients in the multiplicative group is the degree-q continuous group cohomology of the absolute Galois group with coefficients in the units of the separable closure. This is the general objectwise form of part (3) on Mathlib's small étale site, smallEtaleSheafCohomologyAddEquivContinuousGroupCohomology, with its Galois module computed at 𝐆\_m by multiplicativeContinuousGModuleIso -- the stalk computation multiplicativeStalkIsoUnits packaged with its germwise Galois equivariance multiplicativeSectionEval\_galoisFiberAction into an isomorphism of discrete Galois modules. Nothing is assumed of the field and nothing is carried. NOT proved here: parts (1) and (2) of the tag, which are separate registrations”.
 
 > For a field `K`, a geometric point `sbar` of `Spec K` and every degree `q`,
 >
@@ -318,7 +318,7 @@ def multiplicativeSheafHAddEquivContinuousGroupCohomology (q : ℕ) :
 
 [Tag 03QV](https://stacks.math.columbia.edu/tag/03QV) in the Stacks Project.
 
-**`AlgebraicGeometry.stacks03QV`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/GaloisCohomology/SheavesOnAPoint.lean, line 138](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/GaloisCohomology/SheavesOnAPoint.lean#L138).
+**`AlgebraicGeometry.stacks03QV`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/GaloisCohomology/SheavesOnAPoint.lean, line 138](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/GaloisCohomology/SheavesOnAPoint.lean#L138).
 
 > **Stacks Project, Tag 03QV, whole.**  Sheaves on `Spec(K)_étale` for `K` a field, with
 > `G = Gal(Kˢᵉᵖ/K)` the absolute Galois group.
@@ -376,7 +376,7 @@ public def stacks03QV :
 
 [Tag 0D1W](https://stacks.math.columbia.edu/tag/0D1W) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.SmallEtaleModules.allModules_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/QuasiCoherentSheaves/ZeroDimensionalLocalRing.lean, line 1199](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/QuasiCoherentSheaves/ZeroDimensionalLocalRing.lean#L1199).
+**`Stacks.EtaleCohomology.SmallEtaleModules.allModules_isQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/QuasiCoherentSheaves/ZeroDimensionalLocalRing.lean, line 1199](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/QuasiCoherentSheaves/ZeroDimensionalLocalRing.lean#L1199).
 
 > Every module on the small étale site of a zero-dimensional local ring is
 > quasi-coherent.
@@ -398,4 +398,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 59.59, Tag 03QQ](https://stacks.math.columbia.edu/tag/03QQ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

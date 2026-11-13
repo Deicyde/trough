@@ -8,13 +8,13 @@ proof: formalized
 
 # 61.31 Change of partial universe
 
-Section 61.31 of the Stacks Project, [Tag 0F4R](https://stacks.math.columbia.edu/tag/0F4R). 4 tags here are carried by 23 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 61.31 of the Stacks Project, [Tag 0F4R](https://stacks.math.columbia.edu/tag/0F4R). 4 tags here are carried by 23 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 098J, a lemma
 
 [Tag 098J](https://stacks.math.columbia.edu/tag/098J) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.exists_covering_refining_proetaleCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/PartialUniverseChange.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/PartialUniverseChange.lean#L114).
+**`AlgebraicGeometry.ProEtale.exists_covering_refining_proetaleCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/PartialUniverseChange.lean, line 114](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Site/PartialUniverseChange.lean#L114).
 
 > **Stacks 098J.** Let `B` be a chosen big pro-étale site and `T` one of its objects. Let
 > `{Z i → T}_{i ∈ I}` be an *arbitrary* pro-étale covering of the underlying scheme of `T`: the
@@ -41,7 +41,7 @@ theorem exists_covering_refining_proetaleCovering (B : BigProetaleSite.{u}) (T :
 
 [Tag 098Y](https://stacks.math.columbia.edu/tag/098Y) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.BigProetaleSite.IsContainedIn.fullyFaithfulSmallFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/SmallEnlargement.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/SmallEnlargement.lean#L116). The attribute's comment: “hypothesis (c) of 00XU for the inclusion of the small sites: full faithfulness”.
+**`AlgebraicGeometry.ProEtale.BigProetaleSite.IsContainedIn.fullyFaithfulSmallFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/SmallEnlargement.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Site/SmallEnlargement.lean#L116). The attribute's comment: “hypothesis (c) of 00XU for the inclusion of the small sites: full faithfulness”.
 
 > **Stacks 098Y**, hypothesis (c) of Stacks 00XU: the inclusion of the two small pro-étale
 > sites of `S` is fully faithful.
@@ -53,7 +53,7 @@ theorem exists_covering_refining_proetaleCovering (B : BigProetaleSite.{u}) (T :
 def fullyFaithfulSmallFunctor : (h.smallFunctor S hS).FullyFaithful
 ```
 
-**`AlgebraicGeometry.ProEtale.BigProetaleSite.IsContainedIn.smallFunctor_preservesFiniteLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/SmallEnlargement.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/SmallEnlargement.lean#L142). The attribute's comment: “hypotheses (d) and (e) of 00XU for the inclusion of the small sites: preservation of fibre products and of the final object”.
+**`AlgebraicGeometry.ProEtale.BigProetaleSite.IsContainedIn.smallFunctor_preservesFiniteLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/SmallEnlargement.lean, line 142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Site/SmallEnlargement.lean#L142). The attribute's comment: “hypotheses (d) and (e) of 00XU for the inclusion of the small sites: preservation of fibre products and of the final object”.
 
 > **Stacks 098Y**, hypotheses (d) and (e) of Stacks 00XU: fibre products exist in the smaller
 > small pro-étale site and are preserved by the inclusion, which also carries the final object
@@ -67,7 +67,7 @@ def fullyFaithfulSmallFunctor : (h.smallFunctor S hS).FullyFaithful
 theorem smallFunctor_preservesFiniteLimits : PreservesFiniteLimits (h.smallFunctor S hS)
 ```
 
-**`AlgebraicGeometry.ProEtale.BigProetaleSite.IsContainedIn.smallFunctor_isCocontinuous`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/SmallEnlargement.lean, line 182](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/SmallEnlargement.lean#L182). The attribute's comment: “hypothesis (a) of 00XU for the inclusion of the small sites: cocontinuity”.
+**`AlgebraicGeometry.ProEtale.BigProetaleSite.IsContainedIn.smallFunctor_isCocontinuous`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/SmallEnlargement.lean, line 182](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Site/SmallEnlargement.lean#L182). The attribute's comment: “hypothesis (a) of 00XU for the inclusion of the small sites: cocontinuity”.
 
 > **Stacks 098Y**, hypothesis (a) of Stacks 00XU: the inclusion of the two small pro-étale
 > sites of `S` is cocontinuous.
@@ -87,7 +87,7 @@ instance smallFunctor_isCocontinuous :
       (SmallProetale.topology B' S (h.contains hS))
 ```
 
-**`AlgebraicGeometry.ProEtale.BigProetaleSite.IsContainedIn.smallFunctor_isMorphismOfSites`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/SmallEnlargement.lean, line 263](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/SmallEnlargement.lean#L263). The attribute's comment: “hypothesis (b) of 00XU for the inclusion of the small sites: continuity, in the form of being a morphism of sites”.
+**`AlgebraicGeometry.ProEtale.BigProetaleSite.IsContainedIn.smallFunctor_isMorphismOfSites`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/SmallEnlargement.lean, line 263](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Site/SmallEnlargement.lean#L263). The attribute's comment: “hypothesis (b) of 00XU for the inclusion of the small sites: continuity, in the form of being a morphism of sites”.
 
 > **Stacks 098Y**, hypothesis (b) of Stacks 00XU: the inclusion of the two small pro-étale
 > sites of `S` is continuous, and in fact defines a morphism of sites.
@@ -102,7 +102,7 @@ theorem smallFunctor_isMorphismOfSites :
       (SmallProetale.topology B S hS) (SmallProetale.topology B' S (h.contains hS))
 ```
 
-**`AlgebraicGeometry.ProEtale.BigProetaleSite.IsContainedIn.smallToposRetraction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/SmallEnlargement.lean, line 303](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/SmallEnlargement.lean#L303). The attribute's comment: “the two morphisms of topoi of the small sites, with `f ∘ g` isomorphic to the identity and `f_* = g^{-1}`”.
+**`AlgebraicGeometry.ProEtale.BigProetaleSite.IsContainedIn.smallToposRetraction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/SmallEnlargement.lean, line 303](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Site/SmallEnlargement.lean#L303). The attribute's comment: “the two morphisms of topoi of the small sites, with `f ∘ g` isomorphic to the identity and `f_* = g^{-1}`”.
 
 > **Stacks 098Y**, the conclusion of Stacks 00XU for the two small pro-étale sites of `S`: the
 > morphisms of topoi `g : Sh(S_proetale) → Sh(S'_proetale)` and `f : Sh(S'\_proetale) →
@@ -126,7 +126,7 @@ noncomputable def smallToposRetraction :
       (h.smallFunctor S hS)
 ```
 
-**`AlgebraicGeometry.ProEtale.BigProetaleSite.IsContainedIn.smallCohomologyRestrictionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/SmallEnlargement.lean, line 424](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/SmallEnlargement.lean#L424). The attribute's comment: “part (1): `H^p(S'_proetale, F') = H^p(S_proetale, g^{-1} F')`”.
+**`AlgebraicGeometry.ProEtale.BigProetaleSite.IsContainedIn.smallCohomologyRestrictionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/SmallEnlargement.lean, line 424](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Site/SmallEnlargement.lean#L424). The attribute's comment: “part (1): `H^p(S'_proetale, F') = H^p(S_proetale, g^{-1} F')`”.
 
 > **Stacks 098Y, part (1).** For an abelian sheaf `F'` on the larger small pro-étale site of
 > `S` and every degree `p`,
@@ -148,7 +148,7 @@ noncomputable def smallCohomologyRestrictionIso (p : ℕ) :
         (SmallProetale.topology B' S (h.contains hS)) p
 ```
 
-**`AlgebraicGeometry.ProEtale.BigProetaleSite.IsContainedIn.smallCohomologyPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/SmallEnlargement.lean, line 443](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/SmallEnlargement.lean#L443). The attribute's comment: “part (2), first equality: `H^p(S_proetale, F) = H^p(S'_proetale, g_* F)`”.
+**`AlgebraicGeometry.ProEtale.BigProetaleSite.IsContainedIn.smallCohomologyPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/SmallEnlargement.lean, line 443](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Site/SmallEnlargement.lean#L443). The attribute's comment: “part (2), first equality: `H^p(S_proetale, F) = H^p(S'_proetale, g_* F)`”.
 
 > **Stacks 098Y, part (2), first equality.** For an abelian sheaf `F` on the smaller small
 > pro-étale site of `S` and every degree `p`,
@@ -167,7 +167,7 @@ noncomputable def smallCohomologyPushforwardIso (p : ℕ) :
           (SmallProetale.topology B' S (h.contains hS)) p
 ```
 
-**`AlgebraicGeometry.ProEtale.BigProetaleSite.IsContainedIn.smallCohomologyLowerShriekIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/SmallEnlargement.lean, line 469](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/SmallEnlargement.lean#L469). The attribute's comment: “part (2), second equality: `H^p(S_proetale, F) = H^p(S'_proetale, f^{-1} F)`”.
+**`AlgebraicGeometry.ProEtale.BigProetaleSite.IsContainedIn.smallCohomologyLowerShriekIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/SmallEnlargement.lean, line 469](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Site/SmallEnlargement.lean#L469). The attribute's comment: “part (2), second equality: `H^p(S_proetale, F) = H^p(S'_proetale, f^{-1} F)`”.
 
 > **Stacks 098Y, part (2), second equality.** For an abelian sheaf `F` on the smaller small
 > pro-étale site of `S` and every degree `p`,
@@ -190,7 +190,7 @@ noncomputable def smallCohomologyLowerShriekIso (p : ℕ) :
 
 [Tag 0F4S](https://stacks.math.columbia.edu/tag/0F4S) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.BigProetaleSite.IsContainedIn.fullyFaithfulFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/Enlargement.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/Enlargement.lean#L94). The attribute's comment: “hypothesis (c) of 00XU for the inclusion of the big sites: full faithfulness”.
+**`AlgebraicGeometry.ProEtale.BigProetaleSite.IsContainedIn.fullyFaithfulFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/Enlargement.lean, line 94](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Site/Enlargement.lean#L94). The attribute's comment: “hypothesis (c) of 00XU for the inclusion of the big sites: full faithfulness”.
 
 > Hypothesis (c) of Stacks 00XU for the big sites: the inclusion functor is fully faithful.
 
@@ -198,7 +198,7 @@ noncomputable def smallCohomologyLowerShriekIso (p : ℕ) :
 def fullyFaithfulFunctor : h.functor.FullyFaithful
 ```
 
-**`AlgebraicGeometry.ProEtale.BigProetaleSite.IsContainedIn.functor_isCocontinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/Enlargement.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/Enlargement.lean#L99). The attribute's comment: “hypothesis (a) of 00XU for the inclusion of the big sites: cocontinuity”.
+**`AlgebraicGeometry.ProEtale.BigProetaleSite.IsContainedIn.functor_isCocontinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/Enlargement.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Site/Enlargement.lean#L99). The attribute's comment: “hypothesis (a) of 00XU for the inclusion of the big sites: cocontinuity”.
 
 > Hypothesis (a) of Stacks 00XU for the big sites: the inclusion functor is cocontinuous.
 
@@ -206,7 +206,7 @@ def fullyFaithfulFunctor : h.functor.FullyFaithful
 theorem functor_isCocontinuous : h.functor.IsCocontinuous B.topology B'.topology
 ```
 
-**`AlgebraicGeometry.ProEtale.BigProetaleSite.IsContainedIn.functor_preservesFiniteLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/Enlargement.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/Enlargement.lean#L125). The attribute's comment: “hypotheses (d) and (e) of 00XU for the inclusion of the big sites: preservation of fibre products and of the final object”.
+**`AlgebraicGeometry.ProEtale.BigProetaleSite.IsContainedIn.functor_preservesFiniteLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/Enlargement.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Site/Enlargement.lean#L125). The attribute's comment: “hypotheses (d) and (e) of 00XU for the inclusion of the big sites: preservation of fibre products and of the final object”.
 
 > Hypotheses (d) and (e) of Stacks 00XU for the big sites: fibre products exist in the smaller
 > category and are preserved by the inclusion, which also carries the final object `Spec ℤ` to the
@@ -216,7 +216,7 @@ theorem functor_isCocontinuous : h.functor.IsCocontinuous B.topology B'.topology
 theorem functor_preservesFiniteLimits : PreservesFiniteLimits h.functor
 ```
 
-**`AlgebraicGeometry.ProEtale.BigProetaleSite.IsContainedIn.functor_isMorphismOfSites`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/Enlargement.lean, line 174](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/Enlargement.lean#L174). The attribute's comment: “hypothesis (b) of 00XU for the inclusion of the big sites: continuity, in the form of being a morphism of sites”.
+**`AlgebraicGeometry.ProEtale.BigProetaleSite.IsContainedIn.functor_isMorphismOfSites`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/Enlargement.lean, line 174](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Site/Enlargement.lean#L174). The attribute's comment: “hypothesis (b) of 00XU for the inclusion of the big sites: continuity, in the form of being a morphism of sites”.
 
 > Hypothesis (b) of Stacks 00XU for the big sites: the inclusion functor is continuous, and in
 > fact defines a morphism of sites.
@@ -226,7 +226,7 @@ theorem functor_isMorphismOfSites :
     _root_.IsMorphismOfSites.{u + 1} h.functor B.topology B'.topology
 ```
 
-**`AlgebraicGeometry.ProEtale.BigProetaleSite.IsContainedIn.toposRetraction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/Enlargement.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/Enlargement.lean#L190). The attribute's comment: “the two morphisms of topoi of the big sites, with `f ∘ g` isomorphic to the identity and `f_* = g^{-1}`”.
+**`AlgebraicGeometry.ProEtale.BigProetaleSite.IsContainedIn.toposRetraction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/Enlargement.lean, line 190](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Site/Enlargement.lean#L190). The attribute's comment: “the two morphisms of topoi of the big sites, with `f ∘ g` isomorphic to the identity and `f_* = g^{-1}`”.
 
 > The conclusion of Stacks 00XU for the big sites: the two morphisms of topoi
 > `g : Sh(Sch_proetale) → Sh(Sch'_proetale)` and `f : Sh(Sch'_proetale) → Sh(Sch_proetale)`
@@ -244,7 +244,7 @@ noncomputable def toposRetraction :
     ToposRetraction B.Scheme B'.Scheme B.topology B'.topology h.functor
 ```
 
-**`AlgebraicGeometry.ProEtale.BigProetaleSite.IsContainedIn.fullyFaithfulFunctorOver`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/Enlargement.lean, line 236](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/Enlargement.lean#L236). The attribute's comment: “hypothesis (c) of 00XU for the inclusion of the slices: full faithfulness”.
+**`AlgebraicGeometry.ProEtale.BigProetaleSite.IsContainedIn.fullyFaithfulFunctorOver`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/Enlargement.lean, line 236](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Site/Enlargement.lean#L236). The attribute's comment: “hypothesis (c) of 00XU for the inclusion of the slices: full faithfulness”.
 
 > Hypothesis (c) of Stacks 00XU for the slices: the inclusion functor of the slices over `S` is
 > fully faithful.
@@ -253,7 +253,7 @@ noncomputable def toposRetraction :
 def fullyFaithfulFunctorOver : (h.functorOver S hS).FullyFaithful
 ```
 
-**`AlgebraicGeometry.ProEtale.BigProetaleSite.IsContainedIn.functorOver_isCocontinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/Enlargement.lean, line 242](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/Enlargement.lean#L242). The attribute's comment: “hypothesis (a) of 00XU for the inclusion of the slices: cocontinuity”.
+**`AlgebraicGeometry.ProEtale.BigProetaleSite.IsContainedIn.functorOver_isCocontinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/Enlargement.lean, line 242](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Site/Enlargement.lean#L242). The attribute's comment: “hypothesis (a) of 00XU for the inclusion of the slices: cocontinuity”.
 
 > Hypothesis (a) of Stacks 00XU for the slices: the inclusion functor of the slices over `S` is
 > cocontinuous.
@@ -264,7 +264,7 @@ theorem functorOver_isCocontinuous :
       (BigProetaleOver.topology B' S (h.contains hS))
 ```
 
-**`AlgebraicGeometry.ProEtale.BigProetaleSite.IsContainedIn.functorOver_preservesFiniteLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/Enlargement.lean, line 255](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/Enlargement.lean#L255). The attribute's comment: “hypotheses (d) and (e) of 00XU for the inclusion of the slices: preservation of fibre products and of the final object”.
+**`AlgebraicGeometry.ProEtale.BigProetaleSite.IsContainedIn.functorOver_preservesFiniteLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/Enlargement.lean, line 255](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Site/Enlargement.lean#L255). The attribute's comment: “hypotheses (d) and (e) of 00XU for the inclusion of the slices: preservation of fibre products and of the final object”.
 
 > Hypotheses (d) and (e) of Stacks 00XU for the slices: the inclusion functor of the slices
 > over `S` preserves finite limits.
@@ -273,7 +273,7 @@ theorem functorOver_isCocontinuous :
 theorem functorOver_preservesFiniteLimits : PreservesFiniteLimits (h.functorOver S hS)
 ```
 
-**`AlgebraicGeometry.ProEtale.BigProetaleSite.IsContainedIn.functorOver_isMorphismOfSites`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/Enlargement.lean, line 264](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/Enlargement.lean#L264). The attribute's comment: “hypothesis (b) of 00XU for the inclusion of the slices: continuity, in the form of being a morphism of sites”.
+**`AlgebraicGeometry.ProEtale.BigProetaleSite.IsContainedIn.functorOver_isMorphismOfSites`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/Enlargement.lean, line 264](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Site/Enlargement.lean#L264). The attribute's comment: “hypothesis (b) of 00XU for the inclusion of the slices: continuity, in the form of being a morphism of sites”.
 
 > Hypothesis (b) of Stacks 00XU for the slices: the inclusion functor of the slices over `S` is
 > continuous, and in fact defines a morphism of sites.
@@ -284,7 +284,7 @@ theorem functorOver_isMorphismOfSites :
       (BigProetaleOver.topology B S hS) (BigProetaleOver.topology B' S (h.contains hS))
 ```
 
-**`AlgebraicGeometry.ProEtale.BigProetaleSite.IsContainedIn.toposRetractionOver`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/Enlargement.lean, line 280](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/Enlargement.lean#L280). The attribute's comment: “the two morphisms of topoi of the slices, with `f ∘ g` isomorphic to the identity and `f_* = g^{-1}`”.
+**`AlgebraicGeometry.ProEtale.BigProetaleSite.IsContainedIn.toposRetractionOver`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/Enlargement.lean, line 280](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Site/Enlargement.lean#L280). The attribute's comment: “the two morphisms of topoi of the slices, with `f ∘ g` isomorphic to the identity and `f_* = g^{-1}`”.
 
 > The conclusion of Stacks 00XU for the slices: the two morphisms of topoi
 > `g : Sh((Sch/S)_proetale) → Sh((Sch'/S)_proetale)` and `f` in the other direction induced by the
@@ -306,7 +306,7 @@ noncomputable def toposRetractionOver :
 
 [Tag 0F4T](https://stacks.math.columbia.edu/tag/0F4T) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.BigProetaleSite.IsContainedIn.cohomologyRestrictionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/ChangeOfPartialUniverse.lean, line 139](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/ChangeOfPartialUniverse.lean#L139). The attribute's comment: “part (1), the cohomology over an object of the smaller big pro-étale site of the restriction of an abelian sheaf agrees with its cohomology over the image of that object”.
+**`AlgebraicGeometry.ProEtale.BigProetaleSite.IsContainedIn.cohomologyRestrictionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/ChangeOfPartialUniverse.lean, line 139](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Site/ChangeOfPartialUniverse.lean#L139). The attribute's comment: “part (1), the cohomology over an object of the smaller big pro-étale site of the restriction of an abelian sheaf agrees with its cohomology over the image of that object”.
 
 > Let `S` be a scheme and let `(Sch/S)_proétale` and `(Sch'/S)_proétale` be two big pro-étale
 > sites of `S` as in Definition 098K, the first contained in the second.  For any object `U` of
@@ -338,7 +338,7 @@ noncomputable def cohomologyRestrictionIso
           (op ((h.functorOver S hS).obj U))
 ```
 
-**`AlgebraicGeometry.ProEtale.BigProetaleSite.IsContainedIn.exists_extension_abelianSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/ChangeOfPartialUniverse.lean, line 223](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/ChangeOfPartialUniverse.lean#L223). The attribute's comment: “part (2), every abelian sheaf on the smaller big pro-étale site is the restriction of an abelian sheaf on the bigger site”.
+**`AlgebraicGeometry.ProEtale.BigProetaleSite.IsContainedIn.exists_extension_abelianSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/ChangeOfPartialUniverse.lean, line 223](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Site/ChangeOfPartialUniverse.lean#L223). The attribute's comment: “part (2), every abelian sheaf on the smaller big pro-étale site is the restriction of an abelian sheaf on the bigger site”.
 
 > Let `S` be a scheme and let `(Sch/S)_proétale` and `(Sch'/S)_proétale` be two big pro-étale
 > sites of `S` as in Definition 098K, the first contained in the second.  For any abelian sheaf
@@ -355,7 +355,7 @@ theorem exists_extension_abelianSheaf
       Nonempty ((h.abelianRestrictionOver S hS).obj F' ≅ F)
 ```
 
-**`AlgebraicGeometry.ProEtale.BigProetaleSite.IsContainedIn.cohomologyPresheafRestrictionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/ChangeOfPartialUniverseUnconditional.lean, line 105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/ChangeOfPartialUniverseUnconditional.lean#L105). The attribute's comment: “part (1), the cohomology over an object of the smaller big pro-étale site of the restriction of an abelian sheaf on the bigger site agrees with the cohomology of that sheaf over the same object in the bigger site, naturally in the sheaf, for every degree”.
+**`AlgebraicGeometry.ProEtale.BigProetaleSite.IsContainedIn.cohomologyPresheafRestrictionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/ChangeOfPartialUniverseUnconditional.lean, line 105](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Site/ChangeOfPartialUniverseUnconditional.lean#L105). The attribute's comment: “part (1), the cohomology over an object of the smaller big pro-étale site of the restriction of an abelian sheaf on the bigger site agrees with the cohomology of that sheaf over the same object in the bigger site, naturally in the sheaf, for every degree”.
 
 > **Stacks 0F4T (1).** Let `S` be a scheme and let `(Sch/S)_proétale` and
 > `(Sch'/S)_proétale` be two big pro-étale sites of `S` as in Definition 098K, the first contained
@@ -387,7 +387,7 @@ noncomputable def cohomologyPresheafRestrictionIso
           (op ((h.functorOver S hS).obj U))
 ```
 
-**`AlgebraicGeometry.ProEtale.BigProetaleSite.IsContainedIn.essSurj_abelianRestrictionOver`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/ChangeOfPartialUniverseUnconditional.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/ChangeOfPartialUniverseUnconditional.lean#L131). The attribute's comment: “part (2), restriction of abelian sheaves from the bigger big pro-étale site to the smaller one is essentially surjective: every abelian sheaf on the smaller site is isomorphic to the restriction of an abelian sheaf on the bigger site”.
+**`AlgebraicGeometry.ProEtale.BigProetaleSite.IsContainedIn.essSurj_abelianRestrictionOver`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/ChangeOfPartialUniverseUnconditional.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Site/ChangeOfPartialUniverseUnconditional.lean#L131). The attribute's comment: “part (2), restriction of abelian sheaves from the bigger big pro-étale site to the smaller one is essentially surjective: every abelian sheaf on the smaller site is isomorphic to the restriction of an abelian sheaf on the bigger site”.
 
 > **Stacks 0F4T (2).** Let `S` be a scheme and let `(Sch/S)_proétale` and
 > `(Sch'/S)_proétale` be two big pro-étale sites of `S` as in Definition 098K, the first contained
@@ -410,4 +410,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 61.31, Tag 0F4R](https://stacks.math.columbia.edu/tag/0F4R)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

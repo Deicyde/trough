@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.85 Relatively perfect modules
 
-Section 15.85 of the Stacks Project, [Tag 0DHR](https://stacks.math.columbia.edu/tag/0DHR). 10 tags here are carried by 13 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.85 of the Stacks Project, [Tag 0DHR](https://stacks.math.columbia.edu/tag/0DHR). 10 tags here are carried by 13 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0DHS, a definition
 
 [Tag 0DHS](https://stacks.math.columbia.edu/tag/0DHS) in the Stacks Project.
 
-**`PseudoCoherence.IsRelativelyPerfect`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/PseudoCoherent/RelativelyPerfect.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/PseudoCoherent/RelativelyPerfect.lean#L59). References: SGA 6 III (4.1), “affine, flat f.p. case”.
+**`PseudoCoherence.IsRelativelyPerfect`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/PseudoCoherent/RelativelyPerfect.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/PseudoCoherent/RelativelyPerfect.lean#L59). References: SGA 6 III (4.1), “affine, flat f.p. case”.
 
 > **Stacks 0DHS.** For a flat, finitely presented ring map `R → A`, an object `K` of `D(A)` is
 > perfect relative to `R` if it is pseudo-coherent over `A` and its restriction of scalars has
@@ -46,7 +46,7 @@ public def IsRelativelyPerfect
 
 [Tag 0DHT](https://stacks.math.columbia.edu/tag/0DHT) in the Stacks Project.
 
-**`PseudoCoherence.isClosedUnderIsomorphisms_relativelyPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/RelativelyPerfect/Triangulated.lean, line 267](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/RelativelyPerfect/Triangulated.lean#L267).
+**`PseudoCoherence.isClosedUnderIsomorphisms_relativelyPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/RelativelyPerfect/Triangulated.lean, line 267](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/RelativelyPerfect/Triangulated.lean#L267).
 
 > For a flat, finitely presented ring map `R → A`, the objects of `D(A)` perfect relative to
 > `R` form a *strictly full* subcategory: relative perfectness is invariant under isomorphism in
@@ -58,7 +58,7 @@ theorem isClosedUnderIsomorphisms_relativelyPerfect :
       isLeftDerived).IsClosedUnderIsomorphisms
 ```
 
-**`PseudoCoherence.isTriangulated_relativelyPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/RelativelyPerfect/Triangulated.lean, line 299](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/RelativelyPerfect/Triangulated.lean#L299). References: SGA 6 III (4.2), “affine case, flat f.p.”.
+**`PseudoCoherence.isTriangulated_relativelyPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/RelativelyPerfect/Triangulated.lean, line 299](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/RelativelyPerfect/Triangulated.lean#L299). References: SGA 6 III (4.2), “affine case, flat f.p.”.
 
 > For a flat, finitely presented ring map `R → A`, the objects of `D(A)` perfect relative to
 > `R` form a *triangulated* subcategory: the property contains the zero object, is stable under all
@@ -70,7 +70,7 @@ theorem isTriangulated_relativelyPerfect :
       isLeftDerived).IsTriangulated
 ```
 
-**`PseudoCoherence.isSaturated_relativelyPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/RelativelyPerfect/Triangulated.lean, line 325](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/RelativelyPerfect/Triangulated.lean#L325).
+**`PseudoCoherence.isSaturated_relativelyPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/RelativelyPerfect/Triangulated.lean, line 325](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/RelativelyPerfect/Triangulated.lean#L325).
 
 > For a flat, finitely presented ring map `R → A`, the objects of `D(A)` perfect relative to
 > `R` form a *saturated* (thick) subcategory: a direct summand of a relatively perfect object is
@@ -86,7 +86,7 @@ theorem isSaturated_relativelyPerfect :
 
 [Tag 0DHU](https://stacks.math.columbia.edu/tag/0DHU) in the Stacks Project.
 
-**`PseudoCoherence.isRelativelyPerfect_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/RelativelyPerfect/Tensor.lean, line 631](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/RelativelyPerfect/Tensor.lean#L631).
+**`PseudoCoherence.isRelativelyPerfect_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/RelativelyPerfect/Tensor.lean, line 630](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/RelativelyPerfect/Tensor.lean#L630).
 
 > **Stacks 0DHU.** For a flat, finitely presented ring map `R → A`, a perfect object of `D(A)`
 > is perfect relative to `R`: a bounded complex of finite projective `A`-modules representing it is
@@ -99,7 +99,7 @@ theorem isRelativelyPerfect_of_isPerfect (K : DerivedCategory (ModuleCat.{max u 
     IsRelativelyPerfect.{u, v, w} derivedTensor comparison isLeftDerived K
 ```
 
-**`PseudoCoherence.isRelativelyPerfect_derivedTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/RelativelyPerfect/Tensor.lean, line 696](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/RelativelyPerfect/Tensor.lean#L696).
+**`PseudoCoherence.isRelativelyPerfect_derivedTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/RelativelyPerfect/Tensor.lean, line 695](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/RelativelyPerfect/Tensor.lean#L695).
 
 > **Stacks 0DHU.** For a flat, finitely presented ring map `R → A`, the derived tensor product
 > over `A` of a perfect object of `D(A)` with an `R`-perfect object is `R`-perfect.
@@ -125,7 +125,7 @@ theorem isRelativelyPerfect_derivedTensor
 
 [Tag 0DHV](https://stacks.math.columbia.edu/tag/0DHV) in the Stacks Project.
 
-**`PseudoCoherence.isRelativelyPerfect_iff_exists_bounded_flat_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/RelativelyPerfect/FlatComplex.lean, line 356](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/RelativelyPerfect/FlatComplex.lean#L356).
+**`PseudoCoherence.isRelativelyPerfect_iff_exists_bounded_flat_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/RelativelyPerfect/FlatComplex.lean, line 356](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/RelativelyPerfect/FlatComplex.lean#L356).
 
 > **Stacks 0DHV.** For a flat, finitely presented ring map `R → A`, an object of `D(A)` is
 > perfect relative to `R` if and only if it is isomorphic to a finite complex of `A`-modules that
@@ -147,7 +147,7 @@ theorem isRelativelyPerfect_iff_exists_bounded_flat_finitePresentation
 
 [Tag 0DHW](https://stacks.math.columbia.edu/tag/0DHW) in the Stacks Project.
 
-**`PseudoCoherence.derivedExtensionScalars_isRelativelyPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/RelativelyPerfect/BaseChange.lean, line 121](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/RelativelyPerfect/BaseChange.lean#L121).
+**`PseudoCoherence.derivedExtensionScalars_isRelativelyPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/RelativelyPerfect/BaseChange.lean, line 121](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/RelativelyPerfect/BaseChange.lean#L121).
 
 > **Stacks 0DHW.** If `A` is flat and finitely presented over `R`, then arbitrary base change
 > `R → R'` sends an `R`-perfect object of `D(A)` to an `R'`-perfect object of `D(A ⊗[R] R')`.
@@ -203,77 +203,78 @@ theorem derivedExtensionScalars_isRelativelyPerfect
 
 [Tag 0E1U](https://stacks.math.columbia.edu/tag/0E1U) in the Stacks Project.
 
-**`StacksDraft.RelativelyPerfect.exists_homComplex_representation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/RelativelyPerfect/Representative.lean, line 576](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/RelativelyPerfect/Representative.lean#L576).
+**`StacksDraft.RelativelyPerfect.relativeHomComplex_represents_RHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/RelativelyPerfect/RepresentativeBaseChange.lean, line 207](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/RelativelyPerfect/RepresentativeBaseChange.lean#L207).
 
-> **Stacks 0E1U.** For a flat map `R → A`, a pseudo-coherent complex `K` and a
-> complex `L` of finite Tor-dimension over `R` admit representatives `P` and `F` for which
-> `Homᴬ(P, F)` is a bounded-below complex of `R`-flat `A`-modules computing derived Hom.
-> The construction commutes with every base change `R → R'`. If `A` is finitely presented
-> over `R` and `L` is perfect relative to `R`, the terms of `F` and of the Hom complex may moreover
-> be chosen finitely presented over `A`.
+> **Stacks 0E1U.** Let `R → A` be a flat ring map, and let `K, L ∈ D(A)` with `K`
+> pseudo-coherent and `L` of finite Tor dimension over `R`. Then:
+>
+> (1)–(2) there are a bounded above complex `P` of finite free `A`-modules representing `K` and a
+> bounded complex `F` of `R`-flat `A`-modules representing `L`;
+>
+> given any such choices,
+>
+> (a) `E = Hom^•(P, F)` is a bounded below complex of `R`-flat `A`-modules representing
+> `RHom_A(K, L)`;
+>
+> (b) for every ring map `R → R'`, with `A' = A ⊗_R R'`, the complex `E ⊗_A A'` represents
+> `RHom_{A'}(K ⊗ᴸ_A A', L ⊗ᴸ_A A')`: `P ⊗_A A'` and `F ⊗_A A'` represent the derived base changes
+> of `K` and `L`, their Hom complex computes the morphisms between these, and `E ⊗_A A'` is
+> canonically that Hom complex (see
+> `StacksDraft.RelativelyPerfect.IsRelativeHomRepresentativePair.represents_RHom_baseChange`).
+>
+> If moreover `R → A` is of finite presentation and `L` is `R`-perfect (pseudo-coherent, its finite
+> Tor dimension over `R` being already assumed), the choices can be made with every `F^p`, and
+> consequently every `E^n`, a finitely presented `A`-module.
+>
+> Objects of `D(A)` are presented by cochain complexes `K` and `L`; finite Tor dimension over `R`
+> is Tor amplitude in some `[a, b]` of `L` viewed as a complex of `R`-modules.
 
 ```lean
-public theorem exists_homComplex_representation
-    (R : Type uR) (A : Type uA) [CommRing R] [CommRing A] [Algebra R A] [Module.Flat R A]
-    (K L : CochainComplex (ModuleCat.{max uR uA uM} A) ℤ) :
-    letI : HasDerivedCategory (ModuleCat.{max uR uA uM} R) :=
-      HasDerivedCategory.standard (ModuleCat.{max uR uA uM} R)
-    letI : HasDerivedCategory (ModuleCat.{max uR uA uM} A) :=
-      HasDerivedCategory.standard (ModuleCat.{max uR uA uM} A)
-    (∀ m : ℤ, IsPseudoCoherentFrom ((DerivedCategory.Q).obj K) m) →
-    (∃ a b : ℤ,
-      StacksDraft.TorAmplitude.FaithfullyFlat.HasTorAmplitude
-        (((ModuleCat.restrictScalars
-          ((algebraMap R A).comp
-            (ULift.ringEquiv : ULift.{max uA uM} R ≃+* R).toRingHom)).mapHomologicalComplex
-              (.up ℤ)).obj L)
-        a b) →
-    ∃ (P F : CochainComplex (ModuleCat.{max uR uA uM} A) ℤ)
-      (_eP : (DerivedCategory.Q).obj P ≅ (DerivedCategory.Q).obj K)
-      (_eF : (DerivedCategory.Q).obj F ≅ (DerivedCategory.Q).obj L),
-      (∃ d : ℤ, P.IsStrictlyLE d) ∧
-      (∀ i : ℤ, Module.Finite A (P.X i) ∧ Module.Free A (P.X i)) ∧
-      (∃ a b : ℤ, F.IsStrictlyGE a ∧ F.IsStrictlyLE b) ∧
-      (∀ i : ℤ, Module.Flat R
-        ((ModuleCat.restrictScalars (algebraMap R A)).obj (F.X i))) ∧
-      (∃ c : ℤ, (CochainComplex.HomComplexR A P F).IsStrictlyGE c) ∧
-      (∀ i : ℤ, Module.Flat R
-        ((ModuleCat.restrictScalars (algebraMap R A)).obj
-          ((CochainComplex.HomComplexR A P F).X i))) ∧
-      (∀ n : ℤ, Function.Bijective
-        (fun (z : CochainComplex.HomComplex.CohomologyClass P F n) ↦
-          DerivedCategory.Qh.map
-            (CochainComplex.HomComplex.CohomologyClass.homAddEquiv z))) ∧
-      (∀ (R' : Type uB) [CommRing R'] [Algebra R R'],
-        let A' := A ⊗[R] R'
-        let f : A →+* A' := Algebra.TensorProduct.includeLeftRingHom
-        let Ext := (ModuleCat.extendScalars.{uA, max uA uB, max uR uA uM} f).mapHomologicalComplex
-          (ComplexShape.up ℤ)
-        let P' := Ext.obj P
-        let F' := Ext.obj F
-        let E' := Ext.obj (CochainComplex.HomComplexR A P F)
-        letI : HasDerivedCategory (ModuleCat.{max uR uA uM uB} A') :=
-          HasDerivedCategory.standard (ModuleCat.{max uR uA uM uB} A')
-        ∃! e : E' ≅ CochainComplex.HomComplexR A' P' F',
-          IsCanonicalHomComplexBaseChangeIso f P F e ∧
-            ∀ n : ℤ,
-              IsIso (HomologicalComplex.homologyMap e.hom n) ∧
-                Function.Bijective
-                  (fun (z : CochainComplex.HomComplex.CohomologyClass P' F' n) ↦
-                    DerivedCategory.Qh.map
-                      (CochainComplex.HomComplex.CohomologyClass.homAddEquiv z))) ∧
+theorem relativeHomComplex_represents_RHom [Module.Flat R A]
+    (K L : CochainComplex (ModuleCat.{u} A) ℤ)
+    (hK : ∀ m : ℤ, IsPseudoCoherentFrom (DerivedCategory.Q.obj K) m)
+    (hL : ∃ a b : ℤ, StacksDraft.TorAmplitude.FaithfullyFlat.HasTorAmplitude
+      (((ModuleCat.restrictScalars (algebraMap R A)).mapHomologicalComplex (.up ℤ)).obj L) a b) :
+    (∃ (P F : CochainComplex (ModuleCat.{u} A) ℤ)
+        (_ : DerivedCategory.Q.obj P ≅ DerivedCategory.Q.obj K)
+        (_ : DerivedCategory.Q.obj F ≅ DerivedCategory.Q.obj L),
+        IsRelativeHomRepresentativePair R P F) ∧
+      (∀ (P F : CochainComplex (ModuleCat.{u} A) ℤ)
+        (eP : DerivedCategory.Q.obj P ≅ DerivedCategory.Q.obj K)
+        (eF : DerivedCategory.Q.obj F ≅ DerivedCategory.Q.obj L),
+        IsRelativeHomRepresentativePair R P F →
+        (∃ c : ℤ, (CochainComplex.HomComplexR A P F).IsStrictlyGE c) ∧
+          (∀ i : ℤ, Module.Flat R
+            ((ModuleCat.restrictScalars (algebraMap R A)).obj
+              ((CochainComplex.HomComplexR A P F).X i))) ∧
+          (∀ n : ℤ, Function.Bijective (cohomologyClassToDerivedHom P F eP eF n)) ∧
+          ∀ (R' : Type u) [CommRing R'] [Algebra R R'],
+            let f : A →+* A ⊗[R] R' := Algebra.TensorProduct.includeLeftRingHom
+            let Ext := (ModuleCat.extendScalars.{u, u, u} f).mapHomologicalComplex
+              (ComplexShape.up ℤ)
+            let D := (totalDerivedExtensionScalars.{u, u, u} f).functor
+            ∃ (eP' : DerivedCategory.Q.obj (Ext.obj P) ≅ D.obj (DerivedCategory.Q.obj K))
+              (eF' : DerivedCategory.Q.obj (Ext.obj F) ≅ D.obj (DerivedCategory.Q.obj L)),
+              (∀ n : ℤ, Function.Bijective
+                (cohomologyClassToDerivedHom (Ext.obj P) (Ext.obj F) eP' eF' n)) ∧
+              ∃! e : Ext.obj (CochainComplex.HomComplexR A P F) ≅
+                  CochainComplex.HomComplexR (A ⊗[R] R') (Ext.obj P) (Ext.obj F),
+                IsCanonicalHomComplexBaseChangeIso f P F e) ∧
       (Algebra.FinitePresentation R A →
         (∀ m : ℤ, IsPseudoCoherentFrom (DerivedCategory.Q.obj L) m) →
-        (∀ i : ℤ, Module.FinitePresentation A (F.X i)) ∧
-          ∀ n : ℤ,
-            Module.FinitePresentation A ((CochainComplex.HomComplexR A P F).X n))
+        ∃ (P F : CochainComplex (ModuleCat.{u} A) ℤ)
+          (_ : DerivedCategory.Q.obj P ≅ DerivedCategory.Q.obj K)
+          (_ : DerivedCategory.Q.obj F ≅ DerivedCategory.Q.obj L),
+          IsRelativeHomRepresentativePair R P F ∧
+            (∀ i : ℤ, Module.FinitePresentation A (F.X i)) ∧
+            ∀ n : ℤ, Module.FinitePresentation A ((CochainComplex.HomComplexR A P F).X n))
 ```
 
 ## Tag 0DHX, a lemma
 
 [Tag 0DHX](https://stacks.math.columbia.edu/tag/0DHX) in the Stacks Project.
 
-**`PseudoCoherence.relativelyPerfectComplexes_filteredColimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/RelativelyPerfect/Colimit/FilteredColimit.lean, line 439](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/RelativelyPerfect/Colimit/FilteredColimit.lean#L439).
+**`PseudoCoherence.relativelyPerfectComplexes_filteredColimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/RelativelyPerfect/Colimit/FilteredColimit.lean, line 439](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/RelativelyPerfect/Colimit/FilteredColimit.lean#L439).
 
 > Relatively perfect complexes descend through filtered colimits, derived Hom from a
 > pseudo-coherent complex to a complex of finite Tor-dimension commutes with such a colimit, and
@@ -446,7 +447,7 @@ public theorem relativelyPerfectComplexes_filteredColimit
 
 [Tag 0DJG](https://stacks.math.columbia.edu/tag/0DJG) in the Stacks Project.
 
-**`PseudoCoherence.isRelativelyPerfect_of_derivedExtensionScalars`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/RelativelyPerfect/Nilpotent.lean, line 206](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/RelativelyPerfect/Nilpotent.lean#L206).
+**`PseudoCoherence.isRelativelyPerfect_of_derivedExtensionScalars`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/RelativelyPerfect/Nilpotent.lean, line 206](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/RelativelyPerfect/Nilpotent.lean#L206).
 
 > **Stacks 0DJG.** Let `R' → A'` be a flat ring map of finite presentation, let `R' → R` be a
 > surjective ring map whose kernel is a nilpotent ideal and set `A = A' ⊗[R'] R`. If the derived
@@ -506,7 +507,7 @@ theorem isRelativelyPerfect_of_derivedExtensionScalars
 
 [Tag 0DJH](https://stacks.math.columbia.edu/tag/0DJH) in the Stacks Project.
 
-**`PseudoCoherence.hasTorAmplitude_localization_of_isZero_homology_fibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/RelativelyPerfect/Fibrewise.lean, line 334](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/RelativelyPerfect/Fibrewise.lean#L334).
+**`PseudoCoherence.hasTorAmplitude_localization_of_isZero_homology_fibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/RelativelyPerfect/Fibrewise.lean, line 334](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/RelativelyPerfect/Fibrewise.lean#L334).
 
 > **Stacks 0DJH.** Let `A` be flat and of finite presentation over `R`, presented by `d`
 > variables, let `q ⊂ A` be a prime lying over `p ⊂ R` and let `K ∈ D(A)` be pseudo-coherent. If the
@@ -576,7 +577,7 @@ theorem hasTorAmplitude_localization_of_isZero_homology_fibre
 
 [Tag 0GHJ](https://stacks.math.columbia.edu/tag/0GHJ) in the Stacks Project.
 
-**`PseudoCoherence.isRelativelyPerfect_iff_isBoundedBelow_and_fibres_isBoundedBelow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/RelativelyPerfect/Criterion.lean, line 606](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/RelativelyPerfect/Criterion.lean#L606).
+**`PseudoCoherence.isRelativelyPerfect_iff_isBoundedBelow_and_fibres_isBoundedBelow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/RelativelyPerfect/Criterion.lean, line 605](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/RelativelyPerfect/Criterion.lean#L605).
 
 > **Stacks 0GHJ.** Let `R → A` be a flat ring map of finite presentation and let `K` be a
 > pseudo-coherent object of `D(A)`. Then `K` is perfect relative to `R` if and only if `K` is
@@ -618,4 +619,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.85, Tag 0DHR](https://stacks.math.columbia.edu/tag/0DHR)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

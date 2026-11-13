@@ -8,13 +8,13 @@ proof: formalized
 
 # 51.2 Generalities
 
-Section 51.2 of the Stacks Project, [Tag 0DWQ](https://stacks.math.columbia.edu/tag/0DWQ). 6 tags here are carried by 21 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 51.2 of the Stacks Project, [Tag 0DWQ](https://stacks.math.columbia.edu/tag/0DWQ). 6 tags here are carried by 21 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0A6T, a lemma
 
 [Tag 0A6T](https://stacks.math.columbia.edu/tag/0A6T) in the Stacks Project.
 
-**`Stacks.LocalCohomologySequence.cohomologyWithSupportTildeSpanSingletonIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/ExtendFiniteType/LocalCohomologyDegreewise.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/ExtendFiniteType/LocalCohomologyDegreewise.lean#L125). The attribute's comment: “degreewise, for a module and a principal ideal”. References: EGA III (1.1.10), “principal ideal, Noeth.”.
+**`Stacks.LocalCohomologySequence.cohomologyWithSupportTildeSpanSingletonIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/ExtendFiniteType/LocalCohomologyDegreewise.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Properties/ExtendFiniteType/LocalCohomologyDegreewise.lean#L125). The attribute's comment: “degreewise, for a module and a principal ideal”. References: EGA III (1.1.10), “principal ideal, Noeth.”.
 
 > **Stacks 0A6T degreewise, for a module and a principal ideal.**  Let `A` be a Noetherian
 > ring, `f : A`, `X = Spec A` and `Z = V(f)`.  For an `A`-module `M` the cohomology of `X` with
@@ -28,7 +28,7 @@ def cohomologyWithSupportTildeSpanSingletonIso [IsNoetherianRing A] (f : A)
       (localCohomologySpanSingleton A f n).obj M
 ```
 
-**`Stacks.LocalCohomologyTilde.mem_sectionsWithSupportIn_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/ExtendFiniteType/LocalCohomologyTilde.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/ExtendFiniteType/LocalCohomologyTilde.lean#L98). The attribute's comment: “degree zero”.
+**`Stacks.LocalCohomologyTilde.mem_sectionsWithSupportIn_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/ExtendFiniteType/LocalCohomologyTilde.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Properties/ExtendFiniteType/LocalCohomologyTilde.lean#L98). The attribute's comment: “degree zero”.
 
 > **Stacks 0A6T in degree zero.** An element of `M` is an algebraic section with support in a
 > subset `T` of the spectrum exactly when the corresponding global section of `M̃` has all its
@@ -40,7 +40,7 @@ theorem mem_sectionsWithSupportIn_iff (T : Set (PrimeSpectrum R)) (m : M) :
       (tilde.toOpen M ⊤) m ∈ (supportedSectionsSubmodule T (tilde M)).obj (op ⊤)
 ```
 
-**`Stacks.LocalCohomologyTilde.image_sectionsWithSupportIn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/ExtendFiniteType/LocalCohomologyTilde.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/ExtendFiniteType/LocalCohomologyTilde.lean#L117). The attribute's comment: “degree zero”.
+**`Stacks.LocalCohomologyTilde.image_sectionsWithSupportIn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/ExtendFiniteType/LocalCohomologyTilde.lean, line 117](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Properties/ExtendFiniteType/LocalCohomologyTilde.lean#L117). The attribute's comment: “degree zero”.
 
 > **Stacks 0A6T in degree zero.** The canonical isomorphism from `M` to the global sections of
 > `M̃` carries the algebraic sections with support in `T` onto the geometric ones.
@@ -52,7 +52,7 @@ theorem image_sectionsWithSupportIn (T : Set (PrimeSpectrum R)) :
         Set ((tilde M).val.obj (op ⊤)))
 ```
 
-**`Stacks.LocalCohomologyTilde.image_primaryComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/ExtendFiniteType/LocalCohomologyTilde.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/ExtendFiniteType/LocalCohomologyTilde.lean#L147). The attribute's comment: “degree zero”.
+**`Stacks.LocalCohomologyTilde.image_primaryComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/ExtendFiniteType/LocalCohomologyTilde.lean, line 147](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Properties/ExtendFiniteType/LocalCohomologyTilde.lean#L147). The attribute's comment: “degree zero”.
 
 > **Stacks 0A6T in degree zero.** For a finitely generated ideal `I` and `Z = V(I)`, the
 > canonical isomorphism from `M` to the global sections of `M̃` carries the degree-zero local
@@ -66,7 +66,7 @@ theorem image_primaryComponent :
         Set ((tilde M).val.obj (op ⊤)))
 ```
 
-**`Stacks.LocalCohomologyTilde.sectionsWithSupportTildeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/ExtendFiniteType/LocalCohomologyTildeFunctor.lean, line 354](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/ExtendFiniteType/LocalCohomologyTildeFunctor.lean#L354). The attribute's comment: “degree zero, as a natural isomorphism of functors”.
+**`Stacks.LocalCohomologyTilde.sectionsWithSupportTildeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/ExtendFiniteType/LocalCohomologyTildeFunctor.lean, line 354](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Properties/ExtendFiniteType/LocalCohomologyTildeFunctor.lean#L354). The attribute's comment: “degree zero, as a natural isomorphism of functors”.
 
 > For a closed subset `T` of `Spec A`, the global sections with support in `T` of the sheaf
 > `M̃`, read as an `A`-module, are the algebraic sections of `M` with support in `T`, naturally in
@@ -78,7 +78,7 @@ def sectionsWithSupportTildeIso :
       sectionsWithSupportInFunctor.{u, u} A T
 ```
 
-**`Stacks.LocalCohomologyTilde.localCohomologyIsoDerivedSectionsWithSupport`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/ExtendFiniteType/LocalCohomologyTildeSectionsWithSupport.lean, line 250](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Properties/ExtendFiniteType/LocalCohomologyTildeSectionsWithSupport.lean#L250).
+**`Stacks.LocalCohomologyTilde.localCohomologyIsoDerivedSectionsWithSupport`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Properties/ExtendFiniteType/LocalCohomologyTildeSectionsWithSupport.lean, line 250](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Properties/ExtendFiniteType/LocalCohomologyTildeSectionsWithSupport.lean#L250).
 
 > Let `A` be a ring, let `I ⊆ A` be a finitely generated ideal and set `Z = V(I) ⊆ X = Spec A`.
 > For `K ∈ D(A)`, corresponding to `K̃ ∈ D_QCoh(𝒪_X)` by [Stacks, Tag 06Z0], there is an
@@ -110,7 +110,7 @@ def localCohomologyIsoDerivedSectionsWithSupport :
 
 [Tag 0DWR](https://stacks.math.columbia.edu/tag/0DWR) in the Stacks Project.
 
-**`Stacks.LocalCohomology.nonempty_complementSheafCohomology_iso_localCohomologyModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/Generalities/ComplementCohomologyModule.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/Generalities/ComplementCohomologyModule.lean#L99). The attribute's comment: “higher\_cohomology\_comparison”.
+**`Stacks.LocalCohomology.nonempty_complementSheafCohomology_iso_localCohomologyModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/Generalities/ComplementCohomologyModule.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/Generalities/ComplementCohomologyModule.lean#L99). The attribute's comment: “higher\_cohomology\_comparison”.
 
 > **[Stacks, Tag 0DWR] (2), the isomorphisms above degree zero.** Let `R` be a ring and let
 > `I ⊆ R` be a finitely generated ideal. Set `X = Spec R`, `Z = V(I)` and `U = X ∖ Z`. Let `F` be
@@ -131,7 +131,7 @@ theorem nonempty_complementSheafCohomology_iso_localCohomologyModule (hI : I.FG)
       localCohomologyModule R I hI M ((p + 1 : ℕ) : ℤ))
 ```
 
-**`Stacks.LocalCohomology.exists_module_iso_restrict_tilde`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/Generalities/QuasiCoherentExtension.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/Generalities/QuasiCoherentExtension.lean#L65). The attribute's comment: “extension”.
+**`Stacks.LocalCohomology.exists_module_iso_restrict_tilde`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/Generalities/QuasiCoherentExtension.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/Generalities/QuasiCoherentExtension.lean#L65). The attribute's comment: “extension”.
 
 > **Stacks Project, Tag 0DWR.** Every quasi-coherent module on the complement of the zero
 > locus of a finitely generated ideal in an affine spectrum is the restriction of the sheaf
@@ -147,7 +147,7 @@ theorem exists_module_iso_restrict_tilde
           (complementZeroLocus R I).ι)
 ```
 
-**`Stacks.LocalCohomology.exact_lowDegreeSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/LowDegree/CechSectionsComparison.lean, line 373](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/LowDegree/CechSectionsComparison.lean#L373). The attribute's comment: “low\_degree\_sequence”. References: EGA III (1.4.3), “(1.4.3.2), special case”; SGA 2 II (Corollary4), “(4.2)”; SGA 4 V (6.5), “(6.5.3), special case”.
+**`Stacks.LocalCohomology.exact_lowDegreeSequence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/LowDegree/CechSectionsComparison.lean, line 373](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/LowDegree/CechSectionsComparison.lean#L373). The attribute's comment: “low\_degree\_sequence”. References: EGA III (1.4.3), “(1.4.3.2), special case”; SGA 2 II (Corollary4), “(4.2)”; SGA 4 V (6.5), “(6.5.3), special case”.
 
 > **Stacks 0BK0, the low-degree sequence.** Let `I` be a finitely generated ideal of a
 > commutative ring `A`, let `U = Spec A \ V(I)`, let `M` be an `A`-module and let `F` be a sheaf of
@@ -179,7 +179,7 @@ theorem exact_lowDegreeSequence (M : ModuleCat.{max u v} A)
       Function.Surjective (localizationBoundary (localizationTriangleData.{v} A I hI) M F e)
 ```
 
-**`Stacks.LocalCohomology.iso_restrict_tilde_globalSectionsModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/LowDegree/GlobalSectionsChoice.lean, line 150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/LowDegree/GlobalSectionsChoice.lean#L150). The attribute's comment: “global\_sections\_choice”.
+**`Stacks.LocalCohomology.iso_restrict_tilde_globalSectionsModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/LowDegree/GlobalSectionsChoice.lean, line 150](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/LowDegree/GlobalSectionsChoice.lean#L150). The attribute's comment: “global\_sections\_choice”.
 
 > A quasi-coherent module on the complement of `V(I)` is the restriction of the associated sheaf
 > of its global-sections `R`-module.
@@ -193,7 +193,7 @@ theorem iso_restrict_tilde_globalSectionsModule
         (complementZeroLocus R I).ι)
 ```
 
-**`Stacks.LocalCohomology.isZero_localCohomology_zero_globalSectionsModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/LowDegree/GlobalSectionsChoice.lean, line 161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/LowDegree/GlobalSectionsChoice.lean#L161). The attribute's comment: “global\_sections\_choice”.
+**`Stacks.LocalCohomology.isZero_localCohomology_zero_globalSectionsModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/LowDegree/GlobalSectionsChoice.lean, line 161](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/LowDegree/GlobalSectionsChoice.lean#L161). The attribute's comment: “global\_sections\_choice”.
 
 > The degree-zero local cohomology of the global-sections module vanishes.
 
@@ -203,7 +203,7 @@ theorem isZero_localCohomology_zero_globalSectionsModule
     IsZero (localCohomologyModule R I hI (complementGlobalSections R I F) 0)
 ```
 
-**`Stacks.LocalCohomology.isZero_localCohomology_one_globalSectionsModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/LowDegree/GlobalSectionsChoice.lean, line 181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/LowDegree/GlobalSectionsChoice.lean#L181). The attribute's comment: “global\_sections\_choice”.
+**`Stacks.LocalCohomology.isZero_localCohomology_one_globalSectionsModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/LowDegree/GlobalSectionsChoice.lean, line 181](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/LowDegree/GlobalSectionsChoice.lean#L181). The attribute's comment: “global\_sections\_choice”.
 
 > The degree-one local cohomology of the global-sections module vanishes.
 
@@ -217,7 +217,7 @@ theorem isZero_localCohomology_one_globalSectionsModule
 
 [Tag 0DWS](https://stacks.math.columbia.edu/tag/0DWS) in the Stacks Project.
 
-**`Stacks.LocalCohomology.isIso_homology_localCohomologyComparison_of_isIPowerTorsion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/AlreadyTorsion.lean, line 266](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/AlreadyTorsion.lean#L266).
+**`Stacks.LocalCohomology.isIso_homology_localCohomologyComparison_of_isIPowerTorsion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/AlreadyTorsion.lean, line 266](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/AlreadyTorsion.lean#L266).
 
 > **Stacks 0DWS.** For an `I`-power-torsion module `M`, the canonical map
 > `H^i_{V(I) ∩ V(J)}(M) ⟶ H^i_{V(J)}(M)` is an isomorphism in every degree.
@@ -236,7 +236,7 @@ theorem isIso_homology_localCohomologyComparison_of_isIPowerTorsion
 
 [Tag 0DWT](https://stacks.math.columbia.edu/tag/0DWT) in the Stacks Project.
 
-**`Stacks.LocalCohomology.isIso_colimitPrincipalLocalCohomologyToModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/AwayColimit/MultiplicativeSet.lean, line 369](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/AwayColimit/MultiplicativeSet.lean#L369). The attribute's comment: “degree zero”.
+**`Stacks.LocalCohomology.isIso_colimitPrincipalLocalCohomologyToModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/AwayColimit/MultiplicativeSet.lean, line 369](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/AwayColimit/MultiplicativeSet.lean#L369). The attribute's comment: “degree zero”.
 
 > **Stacks 0DWT, degree zero.** Let `S` be a multiplicative subset of a commutative ring `A`
 > and let `M` be an `A`-module whose localization at `S` vanishes. Then the canonical map
@@ -252,7 +252,7 @@ theorem isIso_colimitPrincipalLocalCohomologyToModule (S : Submonoid A) (M : Mod
     IsIso (colimitPrincipalLocalCohomologyToModule A S M)
 ```
 
-**`Stacks.LocalCohomology.isZero_colimitPrincipalLocalCohomologyOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/AwayColimit/MultiplicativeSet.lean, line 543](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/AwayColimit/MultiplicativeSet.lean#L543). The attribute's comment: “degree one”.
+**`Stacks.LocalCohomology.isZero_colimitPrincipalLocalCohomologyOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/AwayColimit/MultiplicativeSet.lean, line 543](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/AwayColimit/MultiplicativeSet.lean#L543). The attribute's comment: “degree one”.
 
 > **Stacks 0DWT, degree one.** Let `S` be a multiplicative subset of a commutative ring `A` and
 > let `M` be an `A`-module whose localization at `S` vanishes. Then
@@ -271,7 +271,7 @@ theorem isZero_colimitPrincipalLocalCohomologyOne (S : Submonoid A) (M : ModuleC
 
 [Tag 0DWU](https://stacks.math.columbia.edu/tag/0DWU) in the Stacks Project.
 
-**`Stacks.LocalCohomology.range_localCohomologyAwayComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/AwayColimit/Basic.lean, line 281](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/AwayColimit/Basic.lean#L281). The attribute's comment: “part (1)”.
+**`Stacks.LocalCohomology.range_localCohomologyAwayComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/AwayColimit/Basic.lean, line 281](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/AwayColimit/Basic.lean#L281). The attribute's comment: “part (1)”.
 
 > **Stacks 0DWU, part (1).** The image of the comparison out of the colimit of the local
 > cohomology modules on the supports `V(I + (f))`, for `f` outside the prime `𝔭`, is the kernel of
@@ -286,7 +286,7 @@ theorem range_localCohomologyAwayComparison
         (localCohomologyModule A I hI M i))
 ```
 
-**`Stacks.LocalCohomology.localCohomologyAwayComparison_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/AwayColimit/Basic.lean, line 306](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/AwayColimit/Basic.lean#L306). The attribute's comment: “part (2)”.
+**`Stacks.LocalCohomology.localCohomologyAwayComparison_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/AwayColimit/Basic.lean, line 306](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/AwayColimit/Basic.lean#L306). The attribute's comment: “part (2)”.
 
 > **Stacks 0DWU, part (2).** If `Hⁱ⁻¹_{V(I)}(M)` vanishes after localization at the prime `𝔭`,
 > the comparison out of the colimit is injective.
@@ -301,7 +301,7 @@ theorem localCohomologyAwayComparison_injective
       (localCohomologyAwayColimitData A I p hp hI M i).comparison.hom
 ```
 
-**`Stacks.LocalCohomology.localCohomologyAwayComparison_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/AwayColimit/Basic.lean, line 344](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/AwayColimit/Basic.lean#L344). The attribute's comment: “part (3)”.
+**`Stacks.LocalCohomology.localCohomologyAwayComparison_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/AwayColimit/Basic.lean, line 344](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/AwayColimit/Basic.lean#L344). The attribute's comment: “part (3)”.
 
 > **Stacks 0DWU, part (3).** If `Hⁱ⁻¹_{V(I)}(M)` and `Hⁱ_{V(I)}(M)` both vanish after
 > localization at the prime `𝔭`, the comparison out of the colimit is an isomorphism.
@@ -321,7 +321,7 @@ theorem localCohomologyAwayComparison_isIso
 
 [Tag 0DWV](https://stacks.math.columbia.edu/tag/0DWV) in the Stacks Project.
 
-**`Stacks.LocalCohomology.localCohomologyModuleMapOfLE_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/F6Sweep/LocalCohomologySupportSurjectivity.lean, line 1155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/F6Sweep/LocalCohomologySupportSurjectivity.lean#L1155). The attribute's comment: “surjectivity”.
+**`Stacks.LocalCohomology.localCohomologyModuleMapOfLE_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/F6Sweep/LocalCohomologySupportSurjectivity.lean, line 1155](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/F6Sweep/LocalCohomologySupportSurjectivity.lean#L1155). The attribute's comment: “surjectivity”.
 
 > **Stacks 0DWV, part (1).** Surjectivity of the comparison map.
 >
@@ -345,7 +345,7 @@ public theorem localCohomologyModuleMapOfLE_surjective
           ((DerivedCategory.singleFunctor (ModuleCat.{v} A) 0).obj M))).hom
 ```
 
-**`Stacks.LocalCohomology.localCohomologyModuleMapOfLE_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/SupportInjectivity/Basic.lean, line 429](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/SupportInjectivity/Basic.lean#L429). The attribute's comment: “injectivity”.
+**`Stacks.LocalCohomology.localCohomologyModuleMapOfLE_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/SupportInjectivity/Basic.lean, line 429](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/SupportInjectivity/Basic.lean#L429). The attribute's comment: “injectivity”.
 
 > **Injectivity of the change of support.** For finitely generated ideals `I ≤ J` of a
 > Noetherian ring, the canonical map `Hⁱ_{V(J)}(M) ⟶ Hⁱ_{V(I)}(M)` is injective as soon as the
@@ -370,7 +370,7 @@ public theorem localCohomologyModuleMapOfLE_injective
           ((DerivedCategory.singleFunctor (ModuleCat.{v} A) 0).obj M))).hom
 ```
 
-**`Stacks.LocalCohomology.isIso_localCohomologyModuleMapOfLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/SupportInjectivity/Basic.lean, line 533](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/SupportInjectivity/Basic.lean#L533). The attribute's comment: “isomorphism”.
+**`Stacks.LocalCohomology.isIso_localCohomologyModuleMapOfLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/SupportInjectivity/Basic.lean, line 533](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/SupportInjectivity/Basic.lean#L533). The attribute's comment: “isomorphism”.
 
 > **The change of support is an isomorphism.** For finitely generated ideals `I ≤ J` of a
 > Noetherian ring, the canonical map `Hⁱ_{V(J)}(M) ⟶ Hⁱ_{V(I)}(M)` is an isomorphism as soon as the
@@ -404,4 +404,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 51.2, Tag 0DWQ](https://stacks.math.columbia.edu/tag/0DWQ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

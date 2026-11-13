@@ -8,13 +8,13 @@ proof: formalized
 
 # 82.7 Preparation for proper pushforward
 
-Section 82.7 of the Stacks Project, [Tag 0EEF](https://stacks.math.columbia.edu/tag/0EEF). 5 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 82.7 of the Stacks Project, [Tag 0EEF](https://stacks.math.columbia.edu/tag/0EEF). 5 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0EEG, a lemma
 
 [Tag 0EEG](https://stacks.math.columbia.edu/tag/0EEG) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IntegralClosedSubspace.existsUnique_isDominant_hom_of_isGood`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/IntegralClosedImage.lean, line 259](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/IntegralClosedImage.lean#L259).
+**`AlgebraicGeometry.Space.IntegralClosedSubspace.existsUnique_isDominant_hom_of_isGood`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/IntegralClosedImage.lean, line 259](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/IntegralClosedImage.lean#L259).
 
 > **Stacks 0EEG.** In Situation 0EDT, let `X` and `Y` be good algebraic spaces over the base
 > and let `f : X ⟶ Y` be a morphism over the base. For an integral closed subspace `Z ⊂ X` there
@@ -50,7 +50,7 @@ theorem IntegralClosedSubspace.existsUnique_isDominant_hom_of_isGood (pX : X ⟶
 
 [Tag 0ENW](https://stacks.math.columbia.edu/tag/0ENW) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.BaseSpaceDimensionSituation.residueField`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ResidueFieldAtPoint.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ResidueFieldAtPoint.lean#L159).
+**`AlgebraicGeometry.Space.BaseSpaceDimensionSituation.residueField`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ResidueFieldAtPoint.lean, line 159](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ResidueFieldAtPoint.lean#L159).
 
 > The residue field `κ(x)` of a good algebraic space over the base of a
 > `BaseSpaceDimensionSituation` at a point `x` of `|X|`: the field of the monomorphism from a field
@@ -61,7 +61,7 @@ noncomputable abbrev BaseSpaceDimensionSituation.residueField (f : X ⟶ D.space
     (hf : D.IsGood f) (x : points D.site D.base D.base_mem X) : Type u
 ```
 
-**`AlgebraicGeometry.Space.BaseSpaceDimensionSituation.residueFieldMorphism_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ResidueFieldAtPoint.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ResidueFieldAtPoint.lean#L176). The attribute's comment: “a point is represented by a monomorphism from the spectrum of its residue field”.
+**`AlgebraicGeometry.Space.BaseSpaceDimensionSituation.residueFieldMorphism_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ResidueFieldAtPoint.lean, line 176](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ResidueFieldAtPoint.lean#L176). The attribute's comment: “a point is represented by a monomorphism from the spectrum of its residue field”.
 
 > A point `x` of a good algebraic space over the base of a `BaseSpaceDimensionSituation` is
 > represented by the morphism `Spec κ(x) ⟶ X` out of the spectrum of its residue field, and that
@@ -74,7 +74,7 @@ theorem BaseSpaceDimensionSituation.residueFieldMorphism_spec (f : X ⟶ D.space
       Mono (D.residueFieldMorphism f hf x)
 ```
 
-**`AlgebraicGeometry.Space.BaseSpaceDimensionSituation.residueFieldRepresentative_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ResidueFieldAtPoint.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ResidueFieldAtPoint.lean#L187). The attribute's comment: “the monomorphism from a field spectrum representing a point is unique up to unique isomorphism over the space”.
+**`AlgebraicGeometry.Space.BaseSpaceDimensionSituation.residueFieldRepresentative_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ResidueFieldAtPoint.lean, line 187](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ResidueFieldAtPoint.lean#L187). The attribute's comment: “the monomorphism from a field spectrum representing a point is unique up to unique isomorphism over the space”.
 
 > The monomorphism from a field spectrum representing a point `x` of a good algebraic space
 > over the base of a `BaseSpaceDimensionSituation` is unique: any monomorphic field-valued
@@ -92,7 +92,7 @@ theorem BaseSpaceDimensionSituation.residueFieldRepresentative_unique (f : X ⟶
       e.hom ≫ fieldMorphism D.site D.base D.base_mem X q = D.residueFieldMorphism f hf x
 ```
 
-**`AlgebraicGeometry.Space.BaseSpaceDimensionSituation.exists_denseRange_isRepresentable_isOpenSubspace_of_isGood`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ResidueFieldAtPoint.lean, line 202](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ResidueFieldAtPoint.lean#L202). The attribute's comment: “a good algebraic space has a dense open subspace which is a scheme”.
+**`AlgebraicGeometry.Space.BaseSpaceDimensionSituation.exists_denseRange_isRepresentable_isOpenSubspace_of_isGood`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ResidueFieldAtPoint.lean, line 202](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ResidueFieldAtPoint.lean#L202). The attribute's comment: “a good algebraic space has a dense open subspace which is a scheme”.
 
 > A good algebraic space over the base of a `BaseSpaceDimensionSituation` has a dense open
 > subspace which is a scheme.
@@ -105,7 +105,7 @@ theorem BaseSpaceDimensionSituation.exists_denseRange_isRepresentable_isOpenSubs
       DenseRange (pointsMap D.site D.base D.base_mem G.toFunctor G.ι)
 ```
 
-**`AlgebraicGeometry.Space.BaseSpaceDimensionSituation.exists_ringEquiv_residueField_schemeResidueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ResidueFieldAtPoint.lean, line 217](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ResidueFieldAtPoint.lean#L217). The attribute's comment: “at a point of an open subspace which is a scheme the residue field agrees with the residue field of the corresponding point on that scheme”.
+**`AlgebraicGeometry.Space.BaseSpaceDimensionSituation.exists_ringEquiv_residueField_schemeResidueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ResidueFieldAtPoint.lean, line 217](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ResidueFieldAtPoint.lean#L217). The attribute's comment: “at a point of an open subspace which is a scheme the residue field agrees with the residue field of the corresponding point on that scheme”.
 
 > Let `X/B` be good over the base of a `BaseSpaceDimensionSituation` and let `U ⊆ X` be an
 > open subspace which is a scheme, presented by an open immersion out of the presheaf
@@ -136,7 +136,7 @@ theorem BaseSpaceDimensionSituation.exists_ringEquiv_residueField_schemeResidueF
 
 [Tag 0ENX](https://stacks.math.columbia.edu/tag/0ENX) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.BaseSpaceDimensionSituation.isField_functionField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/FunctionFieldAtPoint.lean, line 205](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/FunctionFieldAtPoint.lean#L205). The attribute's comment: “the function field R(X) of a good integral algebraic space is defined: its ring of rational functions is a field”.
+**`AlgebraicGeometry.Space.BaseSpaceDimensionSituation.isField_functionField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/FunctionFieldAtPoint.lean, line 205](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/FunctionFieldAtPoint.lean#L205). The attribute's comment: “the function field R(X) of a good integral algebraic space is defined: its ring of rational functions is a field”.
 
 > In the situation of Stacks 0EDT let `X/B` be good and let `X` be integral. Then the
 > function field `R(X)` of `X` is defined: the ring of rational functions of
@@ -148,7 +148,7 @@ theorem BaseSpaceDimensionSituation.isField_functionField (f : X ⟶ D.space)
     IsField (rationalFunctions D.site D.base D.base_mem hf.1)
 ```
 
-**`AlgebraicGeometry.Space.BaseSpaceDimensionSituation.functionFieldRingEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/FunctionFieldAtPoint.lean, line 214](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/FunctionFieldAtPoint.lean#L214). The attribute's comment: “the function field R(X) of a good integral algebraic space is the residue field at its generic point”.
+**`AlgebraicGeometry.Space.BaseSpaceDimensionSituation.functionFieldRingEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/FunctionFieldAtPoint.lean, line 214](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/FunctionFieldAtPoint.lean#L214). The attribute's comment: “the function field R(X) of a good integral algebraic space is the residue field at its generic point”.
 
 > In the situation of Stacks 0EDT let `X/B` be good and let `X` be integral. Then the
 > function field `R(X)` of `X` is the residue field of `X` at its generic point.
@@ -161,7 +161,7 @@ noncomputable def BaseSpaceDimensionSituation.functionFieldRingEquiv (f : X ⟶ 
         (genericPoint D.site D.base D.base_mem hf.1 hInt)
 ```
 
-**`AlgebraicGeometry.Space.BaseSpaceDimensionSituation.residueFieldRingEquivFunctionField`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/FunctionFieldAtPoint.lean, line 226](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/FunctionFieldAtPoint.lean#L226). The attribute's comment: “for any point x of a good algebraic space, the residue field κ(x) is the function field of the unique integral closed subspace whose generic point is x”.
+**`AlgebraicGeometry.Space.BaseSpaceDimensionSituation.residueFieldRingEquivFunctionField`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/FunctionFieldAtPoint.lean, line 226](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/FunctionFieldAtPoint.lean#L226). The attribute's comment: “for any point x of a good algebraic space, the residue field κ(x) is the function field of the unique integral closed subspace whose generic point is x”.
 
 > In the situation of Stacks 0EDT let `X/B` be good. For a point `ξ` of `X` the residue field
 > `κ(ξ)` is the function field of the unique integral closed subspace `Z ⊆ X` whose generic point
@@ -180,7 +180,7 @@ noncomputable def BaseSpaceDimensionSituation.residueFieldRingEquivFunctionField
 
 [Tag 0ENY](https://stacks.math.columbia.edu/tag/0ENY) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.factorsThrough_properIntegralClosedSubspace_or_isDominant_and_finite_functionField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/EqualDeltaDimension.lean, line 627](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/EqualDeltaDimension.lean#L627).
+**`AlgebraicGeometry.Space.factorsThrough_properIntegralClosedSubspace_or_isDominant_and_finite_functionField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/EqualDeltaDimension.lean, line 627](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/EqualDeltaDimension.lean#L627).
 
 > **Stacks 0ENY.** In Situation 0EDT let `X` and `Y` be good integral algebraic spaces over
 > the fixed base with `dim_δ(X) = dim_δ(Y)`, and let `f : X ⟶ Y` be a morphism over the base.
@@ -227,7 +227,7 @@ theorem factorsThrough_properIntegralClosedSubspace_or_isDominant_and_finite_fun
 
 [Tag 0ENZ](https://stacks.math.columbia.edu/tag/0ENZ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.locallyFinite_closure_image_pointsMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ProperPushforward.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ProperPushforward.lean#L66).
+**`AlgebraicGeometry.Space.locallyFinite_closure_image_pointsMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/ProperPushforward.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/ProperPushforward.lean#L66).
 
 > **Stacks 0ENZ.** Let `X/B` and `Y/B` be good algebraic spaces over the base of the theory
 > of cycles and let `f : X ⟶ Y` be a quasi-compact morphism over `B`. The closures of the images
@@ -253,4 +253,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 82.7, Tag 0EEF](https://stacks.math.columbia.edu/tag/0EEF)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

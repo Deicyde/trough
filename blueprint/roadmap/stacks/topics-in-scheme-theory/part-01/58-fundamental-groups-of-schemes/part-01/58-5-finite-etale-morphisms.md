@@ -1,28 +1,36 @@
 ---
 declaration: section
 origin: cited
-lean: CommAlgCat.FiniteEtale.equivOfIsSepClosed, Stacks.FundamentalGroup.preservesFiniteColimits_finiteEtaleBaseChange, Stacks.FundamentalGroup.hasFiniteColimitsWithLocalCoequalizers, Stacks.FundamentalGroup.hasFiniteLimits_finiteEtaleOver, Stacks.FundamentalGroup.preservesFiniteLimits_finiteEtaleBaseChange, AlgebraicGeometry.preservesFiniteColimits_finiteEtaleOverForgetOver, AlgebraicGeometry.preservesFiniteColimits_finiteEtaleOverForget, AlgebraicGeometry.preservesFiniteLimits_finiteEtaleOverForgetOver
+lean: AlgebraicGeometry.finiteEtaleOverSpecEquivOfIsSepClosed, Stacks.FundamentalGroup.preservesFiniteColimits_finiteEtaleBaseChange, Stacks.FundamentalGroup.hasFiniteColimitsWithLocalCoequalizers, Stacks.FundamentalGroup.hasFiniteLimits_finiteEtaleOver, Stacks.FundamentalGroup.preservesFiniteLimits_finiteEtaleBaseChange, AlgebraicGeometry.preservesFiniteColimits_finiteEtaleOverForgetOver, AlgebraicGeometry.preservesFiniteColimits_finiteEtaleOverForget, AlgebraicGeometry.preservesFiniteLimits_finiteEtaleOverForgetOver
 statement: formalized
 proof: formalized
 ---
 
 # 58.5 Finite étale morphisms
 
-Section 58.5 of the Stacks Project, [Tag 0BL6](https://stacks.math.columbia.edu/tag/0BL6). 5 tags here are carried by 11 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 58.5 of the Stacks Project, [Tag 0BL6](https://stacks.math.columbia.edu/tag/0BL6). 5 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0BN8, an example
 
 [Tag 0BN8](https://stacks.math.columbia.edu/tag/0BN8) in the Stacks Project.
 
-Declarations registered for the tag:
+**`AlgebraicGeometry.finiteEtaleOverSpecEquivOfIsSepClosed`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/EtaleFundamental/GaloisCategoryAxioms.lean, line 258](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/EtaleFundamental/GaloisCategoryAxioms.lean#L258). The attribute's comment: “Stated for `k` separably closed, the general case of the example; an algebraically closed field is separably closed. The scheme-level category `FÉt_{Spec k}` is `FiniteEtaleOver (Spec k)`.”.
 
-- [`CommAlgCat.FiniteEtale.equivOfIsSepClosed`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CommAlgCat.FiniteEtale.equivOfIsSepClosed#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/FiniteEtaleMorphisms/Basic.lean, line 31](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/FiniteEtaleMorphisms/Basic.lean#L31) (StacksFrontier). References: EGA IV (18.3.3), “special case”; SGA 1 IX (1.8), “special case”; SGA 1 IX (1.9), “special case”; SGA 4 VIII (3.2), “partial”; SGA 4½ Arcata (2.4.3), “special case”.
+> For a separably closed field `K`, the category `FÉt_{Spec K}` of schemes finite étale over
+> `Spec K` is equivalent to the category of finite sets. It is the composite of the relative
+> spectrum equivalence `FÉt_{Spec K} ≌ (finite étale K-algebras)ᵒᵖ` with Mathlib's
+> `CommAlgCat.FiniteEtale.equivOfIsSepClosed`.
+
+```lean
+noncomputable def finiteEtaleOverSpecEquivOfIsSepClosed (K : Type u) [Field K] [IsSepClosed K] :
+    FiniteEtaleOver (Spec (.of K)) ≌ FintypeCat.{u}
+```
 
 ## Tag 0BN9, a lemma
 
 [Tag 0BN9](https://stacks.math.columbia.edu/tag/0BN9) in the Stacks Project.
 
-**`Stacks.FundamentalGroup.preservesFiniteColimits_finiteEtaleBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FiniteEtaleColimits/CoequalizerBaseChange.lean, line 572](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FiniteEtaleColimits/CoequalizerBaseChange.lean#L572). The attribute's comment: “base change preserves finite colimits”.
+**`Stacks.FundamentalGroup.preservesFiniteColimits_finiteEtaleBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FiniteEtaleColimits/CoequalizerBaseChange.lean, line 572](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FiniteEtaleColimits/CoequalizerBaseChange.lean#L572). The attribute's comment: “base change preserves finite colimits”.
 
 > **Stacks 0BN9, the fourth assertion: base change of finite étale covers preserves finite
 > colimits.**
@@ -37,7 +45,7 @@ theorem preservesFiniteColimits_finiteEtaleBaseChange {S X : Scheme.{u}} (f : X 
     PreservesFiniteColimits (finiteEtaleBaseChange f)
 ```
 
-**`Stacks.FundamentalGroup.hasFiniteColimitsWithLocalCoequalizers`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FiniteEtaleColimits/LocalCoequalizer.lean, line 403](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FiniteEtaleColimits/LocalCoequalizer.lean#L403). The attribute's comment: “finite colimits”.
+**`Stacks.FundamentalGroup.hasFiniteColimitsWithLocalCoequalizers`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FiniteEtaleColimits/LocalCoequalizer.lean, line 403](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FiniteEtaleColimits/LocalCoequalizer.lean#L403). The attribute's comment: “finite colimits”.
 
 > The category of finite étale covers of a scheme has finite colimits, and the underlying cofork
 > of schemes of a coequalizer of two morphisms of finite étale covers is a coequalizer over an fpqc
@@ -48,7 +56,7 @@ instance hasFiniteColimitsWithLocalCoequalizers (X : Scheme.{u}) :
     HasFiniteColimitsWithLocalCoequalizers X
 ```
 
-**`Stacks.FundamentalGroup.hasFiniteLimits_finiteEtaleOver`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/FiniteEtaleLimits.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/FiniteEtaleLimits.lean#L113). The attribute's comment: “finite limits”.
+**`Stacks.FundamentalGroup.hasFiniteLimits_finiteEtaleOver`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/FiniteEtaleLimits.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/FiniteEtaleLimits.lean#L113). The attribute's comment: “finite limits”.
 
 > **Stacks Project, Tag 0BN9.** The category of finite étale schemes over a scheme has
 > finite limits.
@@ -58,7 +66,7 @@ noncomputable instance hasFiniteLimits_finiteEtaleOver (X : Scheme.{u}) :
     HasFiniteLimits (FiniteEtaleOver X)
 ```
 
-**`Stacks.FundamentalGroup.preservesFiniteLimits_finiteEtaleBaseChange`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/FiniteEtaleLimits.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/FiniteEtaleLimits.lean#L134). The attribute's comment: “base change preserves finite limits”.
+**`Stacks.FundamentalGroup.preservesFiniteLimits_finiteEtaleBaseChange`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/FiniteEtaleLimits.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/FiniteEtaleLimits.lean#L134). The attribute's comment: “base change preserves finite limits”.
 
 > **Stacks Project, Tag 0BN9.** Base change of finite étale schemes preserves finite
 > limits.
@@ -73,7 +81,7 @@ noncomputable instance preservesFiniteLimits_finiteEtaleBaseChange
 
 [Tag 0BNA](https://stacks.math.columbia.edu/tag/0BNA) in the Stacks Project.
 
-**`AlgebraicGeometry.preservesFiniteColimits_finiteEtaleOverForgetOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/ForgetfulFunctors.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/ForgetfulFunctors.lean#L117). The attribute's comment: “part (1), over the base”.
+**`AlgebraicGeometry.preservesFiniteColimits_finiteEtaleOverForgetOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/ForgetfulFunctors.lean, line 117](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/ForgetfulFunctors.lean#L117). The attribute's comment: “part (1), over the base”.
 
 > **Stacks Project, Tag 0BNA.** The forgetful functor from finite étale covers to schemes over
 > the base preserves finite colimits.
@@ -83,7 +91,7 @@ theorem preservesFiniteColimits_finiteEtaleOverForgetOver (X : Scheme.{u}) :
     PreservesFiniteColimits (finiteEtaleOverForgetOver X)
 ```
 
-**`AlgebraicGeometry.preservesFiniteColimits_finiteEtaleOverForget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/ForgetfulFunctors.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/ForgetfulFunctors.lean#L136). The attribute's comment: “part (1), underlying schemes”.
+**`AlgebraicGeometry.preservesFiniteColimits_finiteEtaleOverForget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/ForgetfulFunctors.lean, line 136](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/ForgetfulFunctors.lean#L136). The attribute's comment: “part (1), underlying schemes”.
 
 > **Stacks Project, Tag 0BNA.** The forgetful functor from finite étale covers to schemes
 > preserves finite colimits.
@@ -93,7 +101,7 @@ theorem preservesFiniteColimits_finiteEtaleOverForget (X : Scheme.{u}) :
     PreservesFiniteColimits (finiteEtaleOverForget X)
 ```
 
-**`AlgebraicGeometry.preservesFiniteLimits_finiteEtaleOverForgetOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/ForgetfulFunctors.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/ForgetfulFunctors.lean#L143). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.preservesFiniteLimits_finiteEtaleOverForgetOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/ForgetfulFunctors.lean, line 143](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/ForgetfulFunctors.lean#L143). The attribute's comment: “part (2)”.
 
 > The forgetful functor from finite étale covers to schemes over the base preserves finite
 > limits.
@@ -103,7 +111,7 @@ theorem preservesFiniteLimits_finiteEtaleOverForgetOver (X : Scheme.{u}) :
     PreservesFiniteLimits (finiteEtaleOverForgetOver X)
 ```
 
-**`AlgebraicGeometry.preservesFiniteConnectedLimits_finiteEtaleOverForget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/ForgetfulFunctors.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/ForgetfulFunctors.lean#L149). The attribute's comment: “part (3)”.
+**`AlgebraicGeometry.preservesFiniteConnectedLimits_finiteEtaleOverForget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/ForgetfulFunctors.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/ForgetfulFunctors.lean#L149). The attribute's comment: “part (3)”.
 
 > The forgetful functor from finite étale covers to schemes preserves limits of every finite
 > connected shape, in particular equalizers and fibre products.
@@ -118,7 +126,7 @@ theorem preservesFiniteConnectedLimits_finiteEtaleOverForget
 
 [Tag 0BL7](https://stacks.math.columbia.edu/tag/0BL7) in the Stacks Project.
 
-**`Stacks.FundamentalGroup.exists_finiteEtale_internalHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/FiniteEtaleInternalHom.lean, line 904](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/FiniteEtaleInternalHom.lean#L904).
+**`Stacks.FundamentalGroup.exists_finiteEtale_internalHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/FiniteEtaleInternalHom.lean, line 904](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/FiniteEtaleInternalHom.lean#L904).
 
 > **Stacks Project, Tag 0BL7.** The internal hom between two finite étale schemes over `X` is
 > represented by a finite étale scheme over `X`, compatibly with every base change: the
@@ -137,7 +145,7 @@ public theorem exists_finiteEtale_internalHom (X : Scheme.{u}) (U V : Over X)
 
 [Tag 0BNB](https://stacks.math.columbia.edu/tag/0BNB) in the Stacks Project.
 
-**`Stacks.FundamentalGroup.isGaloisCategory_finiteEtaleFiberFunctor`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/FiniteEtaleGaloisCategory.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/FiniteEtaleGaloisCategory.lean#L107). References: SGA 1 V (3.7), “more general”; SGA 1 XIII (2.1.3), “(C\_t, special case”; SGA 3 X (7.0.3), “special case”; SGA 5 VI (1.2.3.1).
+**`Stacks.FundamentalGroup.isGaloisCategory_finiteEtaleFiberFunctor`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/FiniteEtaleGaloisCategory.lean, line 107](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/FiniteEtaleGaloisCategory.lean#L107). References: SGA 1 V (3.7), “more general”; SGA 1 XIII (2.1.3), “(C\_t, special case”; SGA 3 X (7.0.3), “special case”; SGA 5 VI (1.2.3.1).
 
 > **Stacks Project, Tag 0BNB.** For a connected scheme `X` and a geometric point `x` of `X`,
 > the category `FÉt_X` of finite étale covers of `X` together with the geometric fibre functor
@@ -158,7 +166,7 @@ instance isGaloisCategory_finiteEtaleFiberFunctor {X : Scheme.{u}} [ConnectedSpa
     (x : GeometricPoint X) : IsGaloisCategory (finiteEtaleFiberFunctor x)
 ```
 
-**`AlgebraicGeometry.finiteEtaleFiberFunctor_isGaloisCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategories/FiberFunctorComplete.lean, line 52](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategories/FiberFunctorComplete.lean#L52). References: SGA 1 XIII (2.1.3), “(C\_t, special case”.
+**`AlgebraicGeometry.finiteEtaleFiberFunctor_isGaloisCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategories/FiberFunctorComplete.lean, line 52](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FundamentalGroup/GaloisCategories/FiberFunctorComplete.lean#L52). References: SGA 1 XIII (2.1.3), “(C\_t, special case”.
 
 > The fibre functor at a geometric point makes finite étale covers of a connected scheme into
 > a Galois category.
@@ -176,4 +184,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 58.5, Tag 0BL6](https://stacks.math.columbia.edu/tag/0BL6)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 66.7 Properties of Spaces defined by properties of schemes
 
-Section 66.7 of the Stacks Project, [Tag 03E5](https://stacks.math.columbia.edu/tag/03E5). 6 tags here are carried by 23 declarations of the repository (all in StacksFrontier) and 6 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 66.7 of the Stacks Project, [Tag 03E5](https://stacks.math.columbia.edu/tag/03E5). 6 tags here are carried by 23 declarations of the repository (all in StacksFrontier) and 6 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 03E8, a lemma
 
 [Tag 03E8](https://stacks.math.columbia.edu/tag/03E8) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_atlas_iff_forall_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/EtaleLocalProperty.lean, line 150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/EtaleLocalProperty.lean#L150). The attribute's comment: “equivalence of atlas conditions”.
+**`AlgebraicGeometry.Space.exists_atlas_iff_forall_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/EtaleLocalProperty.lean, line 150](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/EtaleLocalProperty.lean#L150). The attribute's comment: “equivalence of atlas conditions”.
 
 > **Stacks 03E8.** An étale-local property holds on some surjective étale atlas exactly
 > when it holds on every étale scheme over the algebraic space.
@@ -29,7 +29,7 @@ theorem exists_atlas_iff_forall_etale (hF : IsAlgebraicSpace B S hS F) :
       P ((BigFppfOver.toScheme B S hS).obj V))
 ```
 
-**`AlgebraicGeometry.Space.exists_atlas_iff_of_representable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/EtaleLocalProperty.lean, line 196](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/EtaleLocalProperty.lean#L196). The attribute's comment: “representable case”.
+**`AlgebraicGeometry.Space.exists_atlas_iff_of_representable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/EtaleLocalProperty.lean, line 196](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/EtaleLocalProperty.lean#L196). The attribute's comment: “representable case”.
 
 > **Stacks 03E8.** For a represented algebraic space, the atlas condition is equivalent
 > to the property of its representing scheme.
@@ -44,7 +44,7 @@ theorem exists_atlas_iff_of_representable
 
 [Tag 03E6](https://stacks.math.columbia.edu/tag/03E6) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.HasEtaleLocalProperty`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/EtaleLocalProperty.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/EtaleLocalProperty.lean#L137).
+**`AlgebraicGeometry.Space.HasEtaleLocalProperty`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/EtaleLocalProperty.lean, line 137](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/EtaleLocalProperty.lean#L137).
 
 > **Stacks 03E6.** An algebraic space has an étale-local property of schemes if it has a
 > surjective étale atlas by a scheme with that property.
@@ -57,7 +57,7 @@ abbrev HasEtaleLocalProperty : Prop
 
 [Tag 03E7](https://stacks.math.columbia.edu/tag/03E7) in the Stacks Project.
 
-**`AlgebraicGeometry.jacobsonSpace_isLocal_etale`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/LocalProperties/EtaleLocalList.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/LocalProperties/EtaleLocalList.lean#L110). The attribute's comment: “item (2): Jacobson, by Stacks 0368”.
+**`AlgebraicGeometry.jacobsonSpace_isLocal_etale`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/LocalProperties/EtaleLocalList.lean, line 110](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/LocalProperties/EtaleLocalList.lean#L110). The attribute's comment: “item (2): Jacobson, by Stacks 0368”.
 
 > **Stacks Project, Tag 03E7, item (2).** Being a Jacobson scheme is local for étale
 > coverings of schemes: a scheme is Jacobson if and only if the members of an étale covering
@@ -71,7 +71,7 @@ instance jacobsonSpace_isLocal_etale :
     ObjectProperty.IsLocal (fun X : Scheme.{u} => JacobsonSpace X) Scheme.etalePrecoverage
 ```
 
-**`AlgebraicGeometry.isLocallyNoetherian_and_hasPropertySk_isLocal_etale`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/LocalProperties/EtaleLocalList.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/LocalProperties/EtaleLocalList.lean#L122). The attribute's comment: “item (3): locally Noetherian and (S\_k), by Stacks 036A”.
+**`AlgebraicGeometry.isLocallyNoetherian_and_hasPropertySk_isLocal_etale`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/LocalProperties/EtaleLocalList.lean, line 122](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/LocalProperties/EtaleLocalList.lean#L122). The attribute's comment: “item (3): locally Noetherian and (S\_k), by Stacks 036A”.
 
 > **Stacks Project, Tag 03E7, item (3).** Being locally Noetherian and satisfying Serre's
 > condition `(S_k)` is local for étale coverings of schemes.
@@ -86,7 +86,7 @@ instance isLocallyNoetherian_and_hasPropertySk_isLocal_etale (k : ℕ) :
       Scheme.etalePrecoverage
 ```
 
-**`AlgebraicGeometry.isCohenMacaulay_isLocal_etale`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/LocalProperties/EtaleLocalList.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/LocalProperties/EtaleLocalList.lean#L136). The attribute's comment: “item (4): Cohen-Macaulay, by Stacks 036B”.
+**`AlgebraicGeometry.isCohenMacaulay_isLocal_etale`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/LocalProperties/EtaleLocalList.lean, line 136](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/LocalProperties/EtaleLocalList.lean#L136). The attribute's comment: “item (4): Cohen-Macaulay, by Stacks 036B”.
 
 > **Stacks Project, Tag 03E7, item (4).** Being a Cohen-Macaulay scheme is local for étale
 > coverings of schemes.
@@ -99,7 +99,7 @@ instance isCohenMacaulay_isLocal_etale :
     ObjectProperty.IsLocal (fun X : Scheme.{u} => IsCohenMacaulay X) Scheme.etalePrecoverage
 ```
 
-**`AlgebraicGeometry.isGorenstein_isLocal_etale`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/LocalProperties/EtaleLocalList.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/LocalProperties/EtaleLocalList.lean#L169). The attribute's comment: “item (5): Gorenstein, the étale case of Stacks 0C01”.
+**`AlgebraicGeometry.isGorenstein_isLocal_etale`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/LocalProperties/EtaleLocalList.lean, line 169](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/LocalProperties/EtaleLocalList.lean#L169). The attribute's comment: “item (5): Gorenstein, the étale case of Stacks 0C01”.
 
 > **Stacks Project, Tag 03E7, item (5).** Being a Gorenstein scheme is local for étale
 > coverings of schemes: a scheme is Gorenstein if and only if the members of an étale covering
@@ -115,7 +115,7 @@ instance isGorenstein_isLocal_etale :
     ObjectProperty.IsLocal (fun X : Scheme.{u} => IsGorenstein X) Scheme.etalePrecoverage
 ```
 
-**`AlgebraicGeometry.isLocallyNoetherian_and_isRegularInCodimension_isLocal_etale`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/LocalProperties/EtaleLocalList.lean, line 206](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/LocalProperties/EtaleLocalList.lean#L206). The attribute's comment: “item (8): locally Noetherian and (R\_k), by Stacks 036C”. References: EGA IV (17.5.8), “(iii), special case”.
+**`AlgebraicGeometry.isLocallyNoetherian_and_isRegularInCodimension_isLocal_etale`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/LocalProperties/EtaleLocalList.lean, line 206](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/LocalProperties/EtaleLocalList.lean#L206). The attribute's comment: “item (8): locally Noetherian and (R\_k), by Stacks 036C”. References: EGA IV (17.5.8), “(iii), special case”.
 
 > **Stacks Project, Tag 03E7, item (8).** Being locally Noetherian and regular in
 > codimension `k` is local for étale coverings of schemes.
@@ -132,17 +132,17 @@ instance isLocallyNoetherian_and_isRegularInCodimension_isLocal_etale (k : ℕ) 
 
 Declarations registered for the tag:
 
-- [`isLocallyNoetherian_isLocal_etale`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=isLocallyNoetherian_isLocal_etale#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Descent/LocalProperties/EtaleLocalList.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/LocalProperties/EtaleLocalList.lean#L99) (StacksFrontier): “item (1): locally Noetherian, by Stacks 034C”.
-- [`isReduced_isLocal_etale`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=isReduced_isLocal_etale#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Descent/LocalProperties/EtaleLocalList.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/LocalProperties/EtaleLocalList.lean#L191) (StacksFrontier): “item (6): reduced, by Stacks 034E”.
-- [`isLocal_isNormal_etalePrecoverage`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=isLocal_isNormal_etalePrecoverage#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Descent/LocalProperties/EtaleLocalList.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/LocalProperties/EtaleLocalList.lean#L195) (StacksFrontier): “item (7): normal, by Stacks 034F”.
-- [`isRegular_isLocal_etale`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=isRegular_isLocal_etale#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Descent/LocalProperties/EtaleLocalList.lean, line 214](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/LocalProperties/EtaleLocalList.lean#L214) (StacksFrontier): “item (9): regular, by Stacks 036D”.
-- [`isNagataScheme_isLocal_etale`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=isNagataScheme_isLocal_etale#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Descent/LocalProperties/EtaleLocalList.lean, line 218](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/LocalProperties/EtaleLocalList.lean#L218) (StacksFrontier): “item (10): Nagata, by Stacks 036E”.
+- [`isLocallyNoetherian_isLocal_etale`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=isLocallyNoetherian_isLocal_etale#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Descent/LocalProperties/EtaleLocalList.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/LocalProperties/EtaleLocalList.lean#L99) (StacksFrontier): “item (1): locally Noetherian, by Stacks 034C”.
+- [`isReduced_isLocal_etale`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=isReduced_isLocal_etale#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Descent/LocalProperties/EtaleLocalList.lean, line 191](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/LocalProperties/EtaleLocalList.lean#L191) (StacksFrontier): “item (6): reduced, by Stacks 034E”.
+- [`isLocal_isNormal_etalePrecoverage`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=isLocal_isNormal_etalePrecoverage#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Descent/LocalProperties/EtaleLocalList.lean, line 195](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/LocalProperties/EtaleLocalList.lean#L195) (StacksFrontier): “item (7): normal, by Stacks 034F”.
+- [`isRegular_isLocal_etale`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=isRegular_isLocal_etale#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Descent/LocalProperties/EtaleLocalList.lean, line 214](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/LocalProperties/EtaleLocalList.lean#L214) (StacksFrontier): “item (9): regular, by Stacks 036D”.
+- [`isNagataScheme_isLocal_etale`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=isNagataScheme_isLocal_etale#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Descent/LocalProperties/EtaleLocalList.lean, line 218](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/LocalProperties/EtaleLocalList.lean#L218) (StacksFrontier): “item (10): Nagata, by Stacks 036E”.
 
 ## Tag 04N2, a lemma
 
 [Tag 04N2](https://stacks.math.columbia.edu/tag/04N2) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.forall_etale_chart_iff_exists_etale_chart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GermPropertyAtPoint.lean, line 208](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GermPropertyAtPoint.lean#L208). The attribute's comment: “equivalence of chart conditions”.
+**`AlgebraicGeometry.Space.forall_etale_chart_iff_exists_etale_chart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GermPropertyAtPoint.lean, line 208](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GermPropertyAtPoint.lean#L208). The attribute's comment: “equivalence of chart conditions”.
 
 > **Stacks 04N2, conditions (1) and (2).** An étale-local property of germs of schemes
 > holds at every étale scheme chart over a point of an algebraic space exactly when it holds at
@@ -169,7 +169,7 @@ theorem forall_etale_chart_iff_exists_etale_chart (B : BigFppfSite.{u}) (S : Sch
         P ⟨(BigFppfOver.toScheme B S hS).obj U, schemePoint B S hS U p⟩)
 ```
 
-**`AlgebraicGeometry.Space.forall_etale_chart_iff_of_representable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GermPropertyAtPoint.lean, line 247](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GermPropertyAtPoint.lean#L247). The attribute's comment: “representable case”.
+**`AlgebraicGeometry.Space.forall_etale_chart_iff_of_representable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GermPropertyAtPoint.lean, line 247](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GermPropertyAtPoint.lean#L247). The attribute's comment: “representable case”.
 
 > **Stacks 04N2, the representable case.** For a represented algebraic space the
 > every-chart condition is the property of the germ of its representing scheme at the
@@ -191,7 +191,7 @@ theorem forall_etale_chart_iff_of_representable (B : BigFppfSite.{u}) (S : Schem
       P ⟨(BigFppfOver.toScheme B S hS).obj X, schemePoint B S hS X p⟩
 ```
 
-**`AlgebraicGeometry.Space.exists_etale_chart_iff_of_representable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GermPropertyAtPoint.lean, line 271](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GermPropertyAtPoint.lean#L271). The attribute's comment: “representable case, existential condition”.
+**`AlgebraicGeometry.Space.exists_etale_chart_iff_of_representable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GermPropertyAtPoint.lean, line 271](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GermPropertyAtPoint.lean#L271). The attribute's comment: “representable case, existential condition”.
 
 > **Stacks 04N2, the representable case.** For a represented algebraic space the one-chart
 > condition is the property of the germ of its representing scheme at the corresponding scheme
@@ -217,7 +217,7 @@ theorem exists_etale_chart_iff_of_representable (B : BigFppfSite.{u}) (S : Schem
 
 [Tag 04RC](https://stacks.math.columbia.edu/tag/04RC) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.HasPropertyAtPoint`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GermPropertyAtPoint.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GermPropertyAtPoint.lean#L79).
+**`AlgebraicGeometry.Space.HasPropertyAtPoint`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GermPropertyAtPoint.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GermPropertyAtPoint.lean#L79).
 
 > **Stacks 04RC.** A property `P` of germs of schemes holds at a point `x` of an algebraic
 > space `F` when it holds at the germ of some étale scheme chart `yoneda.obj U ⟶ F` at some
@@ -235,7 +235,7 @@ abbrev HasPropertyAtPoint (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS : B.Contain
 
 [Tag 0BBL](https://stacks.math.columbia.edu/tag/0BBL) in the Stacks Project.
 
-**`AlgebraicGeometry.GermOfScheme.isEtaleLocal_stalk_property`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Germ/LocalRingProperty.lean, line 50](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/Germ/LocalRingProperty.lean#L50). The attribute's comment: “germ\_criterion”.
+**`AlgebraicGeometry.GermOfScheme.isEtaleLocal_stalk_property`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/Germ/LocalRingProperty.lean, line 50](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/Germ/LocalRingProperty.lean#L50). The attribute's comment: “germ\_criterion”.
 
 > **Stacks 0BBL, the germ criterion.** A property of local rings which is invariant under
 > isomorphisms and unchanged on passing to a prime above it along an étale ring map induces an
@@ -253,7 +253,7 @@ theorem GermOfScheme.isEtaleLocal_stalk_property (P : (R : Type u) → [CommRing
     GermOfScheme.IsEtaleLocal (fun g => P (g.scheme.presheaf.stalk g.point))
 ```
 
-**`AlgebraicGeometry.Space.HasLocalRingPropertyAtPoint`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ReducedLocalRings.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ReducedLocalRings.lean#L72). The attribute's comment: “local\_ring\_of\_an\_algebraic\_space\_has\_p”.
+**`AlgebraicGeometry.Space.HasLocalRingPropertyAtPoint`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ReducedLocalRings.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ReducedLocalRings.lean#L72). The attribute's comment: “local\_ring\_of\_an\_algebraic\_space\_has\_p”.
 
 > **Stacks 0BBL, the local ring of an algebraic space.** A property `P` of local rings which
 > is invariant under étale localization holds for the local ring of an algebraic space `F` at a
@@ -271,7 +271,7 @@ abbrev HasLocalRingPropertyAtPoint (F : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u)
         (P (Localization.AtPrime p) ↔ P (Localization.AtPrime q))) : Prop
 ```
 
-**`isNoetherianRing_localizationAtPrime_iff_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/LocalRingPropertyList.lean, line 150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Etale/LocalRingPropertyList.lean#L150). The attribute's comment: “Noetherian”.
+**`isNoetherianRing_localizationAtPrime_iff_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/LocalRingPropertyList.lean, line 150](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Etale/LocalRingPropertyList.lean#L150). The attribute's comment: “Noetherian”.
 
 > **Stacks 0BBL, Noetherian.** For prime ideals `p` and `q` corresponding under an étale map
 > `A → B`, the local ring of `A` at `p` is Noetherian if and only if the local ring of `B` at `q`
@@ -283,7 +283,7 @@ theorem isNoetherianRing_localizationAtPrime_iff_of_etale
     IsNoetherianRing (Localization.AtPrime p) ↔ IsNoetherianRing (Localization.AtPrime q)
 ```
 
-**`ringKrullDim_eq_localizationAtPrime_iff_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/LocalRingPropertyList.lean, line 167](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Etale/LocalRingPropertyList.lean#L167). The attribute's comment: “dimension d”.
+**`ringKrullDim_eq_localizationAtPrime_iff_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/LocalRingPropertyList.lean, line 167](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Etale/LocalRingPropertyList.lean#L167). The attribute's comment: “dimension d”.
 
 > **Stacks 0BBL, dimension `d`.** For prime ideals `p` and `q` corresponding under an étale
 > map `A → B`, the local ring of `A` at `p` has dimension `d` if and only if the local ring of `B`
@@ -295,7 +295,7 @@ theorem ringKrullDim_eq_localizationAtPrime_iff_of_etale (d : WithBot ℕ∞)
     ringKrullDim (Localization.AtPrime p) = d ↔ ringKrullDim (Localization.AtPrime q) = d
 ```
 
-**`isRegularLocalRing_localizationAtPrime_iff_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/LocalRingPropertyList.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Etale/LocalRingPropertyList.lean#L176). The attribute's comment: “regular”.
+**`isRegularLocalRing_localizationAtPrime_iff_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/LocalRingPropertyList.lean, line 176](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Etale/LocalRingPropertyList.lean#L176). The attribute's comment: “regular”.
 
 > **Stacks 0BBL, regular.** For prime ideals `p` and `q` corresponding under an étale map
 > `A → B`, the local ring of `A` at `p` is regular if and only if the local ring of `B` at `q` is
@@ -308,7 +308,7 @@ theorem isRegularLocalRing_localizationAtPrime_iff_of_etale
       IsRegularLocalRing (Localization.AtPrime q)
 ```
 
-**`isDiscreteValuationRing_localizationAtPrime_iff_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/LocalRingPropertyList.lean, line 188](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Etale/LocalRingPropertyList.lean#L188). The attribute's comment: “discrete valuation ring”.
+**`isDiscreteValuationRing_localizationAtPrime_iff_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/LocalRingPropertyList.lean, line 188](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Etale/LocalRingPropertyList.lean#L188). The attribute's comment: “discrete valuation ring”.
 
 > **Stacks 0BBL, discrete valuation ring.** For prime ideals `p` and `q` corresponding under
 > an étale map `A → B`, the local ring of `A` at `p` is a discrete valuation ring if and only if
@@ -324,7 +324,7 @@ theorem isDiscreteValuationRing_localizationAtPrime_iff_of_etale
         IsDiscreteValuationRing (Localization.AtPrime q))
 ```
 
-**`isNormalDomain_localizationAtPrime_iff_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/LocalRingPropertyList.lean, line 203](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Etale/LocalRingPropertyList.lean#L203). The attribute's comment: “normal”.
+**`isNormalDomain_localizationAtPrime_iff_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/LocalRingPropertyList.lean, line 203](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Etale/LocalRingPropertyList.lean#L203). The attribute's comment: “normal”.
 
 > **Stacks 0BBL, normal.** For prime ideals `p` and `q` corresponding under an étale map
 > `A → B`, the local ring of `A` at `p` is a normal domain if and only if the local ring of `B` at
@@ -336,7 +336,7 @@ theorem isNormalDomain_localizationAtPrime_iff_of_etale
     IsNormalDomain (Localization.AtPrime p) ↔ IsNormalDomain (Localization.AtPrime q)
 ```
 
-**`isNoetherianRing_and_ringDepth_eq_localizationAtPrime_iff_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/LocalRingPropertyList.lean, line 250](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Etale/LocalRingPropertyList.lean#L250). The attribute's comment: “Noetherian and depth k”.
+**`isNoetherianRing_and_ringDepth_eq_localizationAtPrime_iff_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/LocalRingPropertyList.lean, line 250](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Etale/LocalRingPropertyList.lean#L250). The attribute's comment: “Noetherian and depth k”.
 
 > **Stacks 0BBL, Noetherian and depth `k`.** For prime ideals `p` and `q` corresponding under
 > an étale map `A → B`, the local ring of `A` at `p` is Noetherian of depth `k` if and only if the
@@ -349,7 +349,7 @@ theorem isNoetherianRing_and_ringDepth_eq_localizationAtPrime_iff_of_etale (k : 
       (IsNoetherianRing (Localization.AtPrime q) ∧ ringDepth (Localization.AtPrime q) = k)
 ```
 
-**`isCohenMacaulayLocalRing_localizationAtPrime_iff_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/LocalRingPropertyList.lean, line 263](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Etale/LocalRingPropertyList.lean#L263). The attribute's comment: “Noetherian and Cohen-Macaulay”.
+**`isCohenMacaulayLocalRing_localizationAtPrime_iff_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/LocalRingPropertyList.lean, line 263](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Etale/LocalRingPropertyList.lean#L263). The attribute's comment: “Noetherian and Cohen-Macaulay”.
 
 > **Stacks 0BBL, Noetherian and Cohen-Macaulay.** For prime ideals `p` and `q` corresponding
 > under an étale map `A → B`, the local ring of `A` at `p` is Noetherian and Cohen-Macaulay if and
@@ -364,7 +364,7 @@ theorem isCohenMacaulayLocalRing_localizationAtPrime_iff_of_etale
         @IsCohenMacaulayLocalRing (Localization.AtPrime q) _ h _)
 ```
 
-**`isGorensteinLocalRing_localizationAtPrime_iff_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/LocalRingPropertyList.lean, line 277](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Etale/LocalRingPropertyList.lean#L277). The attribute's comment: “Noetherian and Gorenstein”.
+**`isGorensteinLocalRing_localizationAtPrime_iff_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/LocalRingPropertyList.lean, line 277](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Etale/LocalRingPropertyList.lean#L277). The attribute's comment: “Noetherian and Gorenstein”.
 
 > **Stacks 0BBL, Noetherian and Gorenstein.** For prime ideals `p` and `q` corresponding
 > under an étale map `A → B`, the local ring of `A` at `p` is Noetherian and Gorenstein if and
@@ -379,7 +379,7 @@ theorem isGorensteinLocalRing_localizationAtPrime_iff_of_etale
         @Dualizing.IsGorensteinLocalRing (Localization.AtPrime q) _ h _)
 ```
 
-**`isReduced_localizationAtPrime_iff_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/ReducedLocalization.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Etale/ReducedLocalization.lean#L87). The attribute's comment: “reduced”.
+**`isReduced_localizationAtPrime_iff_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/ReducedLocalization.lean, line 87](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Etale/ReducedLocalization.lean#L87). The attribute's comment: “reduced”.
 
 > **Stacks 0BBL, reducedness.** For prime ideals `p` and `q` corresponding under an étale
 > map `A → B`, the local ring of `A` at `p` is reduced if and only if the local ring of `B` at
@@ -394,7 +394,7 @@ theorem isReduced_localizationAtPrime_iff_of_etale {A : Type u} {B : Type v} [Co
 
 Declarations registered for the tag:
 
-- [`RingHom.Etale.ringKrullDim_localization_atPrime_eq`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Etale/Height.lean#L95), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/EtaleLocalProperty.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/EtaleLocalProperty.lean#L216) (StacksFrontier): “dimension”.
+- [`RingHom.Etale.ringKrullDim_localization_atPrime_eq`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Etale/Height.lean#L95), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/EtaleLocalProperty.lean, line 216](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/PointsAndCoverings/EtaleLocalProperty.lean#L216) (StacksFrontier): “dimension”.
 
 ## Depends on
 
@@ -403,4 +403,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 66.7, Tag 03E5](https://stacks.math.columbia.edu/tag/03E5)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

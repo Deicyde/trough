@@ -8,13 +8,13 @@ proof: formalized
 
 # 41.18 Étale local structure of étale morphisms
 
-Section 41.18 of the Stacks Project, [Tag 04HK](https://stacks.math.columbia.edu/tag/04HK). 3 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 41.18 of the Stacks Project, [Tag 04HK](https://stacks.math.columbia.edu/tag/04HK). 3 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 04HL, a lemma
 
 [Tag 04HL](https://stacks.math.columbia.edu/tag/04HL) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_etaleNeighborhood_openCopies_cover_fibers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Etale/LocalStructure/OpenCopies.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Etale/LocalStructure/OpenCopies.lean#L134).
+**`AlgebraicGeometry.exists_etaleNeighborhood_openCopies_cover_fibers`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Etale/LocalStructure/OpenCopies.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Etale/LocalStructure/OpenCopies.lean#L134).
 
 > **Stacks Project, Tag 04HL.** A morphism which is étale at finitely many distinct points of
 > one fibre admits, after an étale base change, open subschemes of the base change which map
@@ -39,7 +39,7 @@ public theorem exists_etaleNeighborhood_openCopies_cover_fibers
 
 [Tag 04HM](https://stacks.math.columbia.edu/tag/04HM) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_etaleNeighborhood_disjoint_openCopies_decomposition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Etale/LocalStructure/DisjointDecomposition.lean, line 406](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Etale/LocalStructure/DisjointDecomposition.lean#L406).
+**`AlgebraicGeometry.exists_etaleNeighborhood_disjoint_openCopies_decomposition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Etale/LocalStructure/DisjointDecomposition.lean, line 406](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Etale/LocalStructure/DisjointDecomposition.lean#L406).
 
 > **Stacks Project, Tag 04HM.** After an étale base change, a separated morphism which is étale
 > at finitely many points over one point of the base is the disjoint union of copies of the new
@@ -65,7 +65,7 @@ public theorem exists_etaleNeighborhood_disjoint_openCopies_decomposition
 
 [Tag 04HN](https://stacks.math.columbia.edu/tag/04HN) in the Stacks Project.
 
-**`Stacks.Etale.exists_etale_pullback_iso_sigma`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FiniteEtaleLocal.lean, line 243](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FiniteEtaleLocal.lean#L243).
+**`Stacks.Etale.exists_etale_pullback_iso_sigma`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FiniteEtaleLocal.lean, line 243](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FiniteEtaleLocal.lean#L243).
 
 > Let `f : X ⟶ S` be a finite étale morphism of schemes and let `s : S`. There is an étale
 > neighbourhood `g : U ⟶ S` of `s`, a finite index type `ι` and an isomorphism
@@ -80,7 +80,7 @@ theorem exists_etale_pullback_iso_sigma {X S : Scheme.{u}} (f : X ⟶ S) [IsFini
       e.hom ≫ Limits.Sigma.desc (fun _ ↦ 𝟙 U) = pullback.snd f g
 ```
 
-**`Stacks.Etale.exists_etaleCover_pullback_iso_sigma`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FiniteEtaleLocal.lean, line 254](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Etale/FiniteEtaleLocal.lean#L254). The attribute's comment: “étale covering form”.
+**`Stacks.Etale.exists_etaleCover_pullback_iso_sigma`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Etale/FiniteEtaleLocal.lean, line 254](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Etale/FiniteEtaleLocal.lean#L254). The attribute's comment: “étale covering form”.
 
 > A finite étale morphism `f : X ⟶ S` admits an étale covering `𝒰` of `S` together with, for
 > each member `i`, a finite index type `ι i` and an isomorphism `X ×_S 𝒰.X i ≅ ∐_{ι i} 𝒰.X i` over
@@ -94,7 +94,7 @@ theorem exists_etaleCover_pullback_iso_sigma {X S : Scheme.{u}} (f : X ⟶ S)
       ∀ i, (e i).hom ≫ Limits.Sigma.desc (fun _ ↦ 𝟙 (𝒰.X i)) = pullback.snd f (𝒰.f i)
 ```
 
-**`Stacks.Etale.exists_isSplitOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/SplitOver.lean, line 177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/SplitOver.lean#L177). The attribute's comment: “sheets over an étale neighbourhood”.
+**`Stacks.Etale.exists_isSplitOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/SplitOver.lean, line 177](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/FiniteLocallyConstant/SplitOver.lean#L177). The attribute's comment: “sheets over an étale neighbourhood”.
 
 > **Stacks 04HN**, in terms of sheets. Let `f : X ⟶ S` be finite étale and let `q : V ⟶ S`
 > be any scheme over `S`. Every point of `V` has an étale neighbourhood `g : W ⟶ V` over which
@@ -114,4 +114,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 41.18, Tag 04HK](https://stacks.math.columbia.edu/tag/04HK)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

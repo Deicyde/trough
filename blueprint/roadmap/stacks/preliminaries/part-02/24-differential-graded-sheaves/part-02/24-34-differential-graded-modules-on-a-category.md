@@ -8,13 +8,13 @@ proof: formalized
 
 # 24.34 Differential graded modules on a category, bis
 
-Section 24.34 of the Stacks Project, [Tag 0GZD](https://stacks.math.columbia.edu/tag/0GZD). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 24.34 of the Stacks Project, [Tag 0GZD](https://stacks.math.columbia.edu/tag/0GZD). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0GZE, a lemma
 
 [Tag 0GZE](https://stacks.math.columbia.edu/tag/0GZE) in the Stacks Project.
 
-**`SheafOfModules.DifferentialGradedModule.ChaoticExtension.isEquivalence_qcRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedChaoticRestrictionEquivalence.lean, line 402](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedChaoticRestrictionEquivalence.lean#L402).
+**`SheafOfModules.DifferentialGradedModule.ChaoticExtension.isEquivalence_qcRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedChaoticRestrictionEquivalence.lean, line 404](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedChaoticRestrictionEquivalence.lean#L404).
 
 > *Let `C, O, A` be as in Section 0GZ8. Let `C' ⊂ C` be a full subcategory with the following
 > property: for every `U ∈ Ob(C)` the category `U/C'` of arrows `U → U'` is cofiltered. Denote
@@ -40,7 +40,7 @@ theorem isEquivalence_qcRestriction [∀ U : C, IsCofiltered (StructuredArrow U 
 
 [Tag 0GZF](https://stacks.math.columbia.edu/tag/0GZF) in the Stacks Project.
 
-**`SheafOfModules.DifferentialGradedModule.Chaotic.qc_derivedExtension_iff_and_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedChaoticQuasiCoherentQuasiIso.lean, line 160](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedChaoticQuasiCoherentQuasiIso.lean#L160).
+**`SheafOfModules.DifferentialGradedModule.Chaotic.qc_derivedExtension_iff_and_isEquivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedChaoticQuasiCoherentQuasiIso.lean, line 160](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedChaoticQuasiCoherentQuasiIso.lean#L160).
 
 > **Stacks 0GZF.** Let `C` be a category with the chaotic topology, `O` a sheaf of rings on it
 > and `φ : A ⟶ B` a homomorphism of sheaves of differential graded `O`-algebras which induces an
@@ -69,4 +69,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 24.34, Tag 0GZD](https://stacks.math.columbia.edu/tag/0GZD)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

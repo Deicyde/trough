@@ -8,13 +8,13 @@ proof: formalized
 
 # 90.22 Groupoids in functors on the base category
 
-Section 90.22 of the Stacks Project, [Tag 06KC](https://stacks.math.columbia.edu/tag/06KC). 4 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 90.22 of the Stacks Project, [Tag 06KC](https://stacks.math.columbia.edu/tag/06KC). 4 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 06KD, a definition
 
 [Tag 06KD](https://stacks.math.columbia.edu/tag/06KD) in the Stacks Project.
 
-**`Deformation.GroupoidInFunctors.IsProrepresentable`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Groupoid/BaseCategory.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Groupoid/BaseCategory.lean#L102). References: SGA 7 VI (2.13), “prorepresentable”.
+**`Deformation.GroupoidInFunctors.IsProrepresentable`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Groupoid/BaseCategory.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Groupoid/BaseCategory.lean#L102). References: SGA 7 VI (2.13), “prorepresentable”.
 
 > A groupoid in functors on Artinian local `Λ`-algebras is prorepresentable
 > if it is isomorphic to the restriction of a representable groupoid in functors
@@ -31,7 +31,7 @@ public abbrev GroupoidInFunctors.IsProrepresentable {Λ : Type u} {k : Type w} [
 
 [Tag 06KE](https://stacks.math.columbia.edu/tag/06KE) in the Stacks Project.
 
-**`Deformation.GroupoidInFunctors.completion`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Formal/Groupoid/Completion.lean, line 887](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Formal/Groupoid/Completion.lean#L887).
+**`Deformation.GroupoidInFunctors.completion`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Formal/Groupoid/Completion.lean, line 887](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Formal/Groupoid/Completion.lean#L887).
 
 > Completion of a groupoid in functors on Artinian local algebras.
 
@@ -48,7 +48,7 @@ public noncomputable def completion {Λ : Type u} {k : Type w} [CommRing Λ]
 
 [Tag 06KF](https://stacks.math.columbia.edu/tag/06KF) in the Stacks Project.
 
-**`Deformation.GroupoidInFunctors.completionRestrictIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Formal/Groupoid/CompletionRestrict.lean, line 43](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Formal/Groupoid/CompletionRestrict.lean#L43). The attribute's comment: “completion\_restrict”.
+**`Deformation.GroupoidInFunctors.completionRestrictIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Formal/Groupoid/CompletionRestrict.lean, line 43](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Formal/Groupoid/CompletionRestrict.lean#L43). The attribute's comment: “completion\_restrict”.
 
 > The canonical isomorphism from a completed groupoid, restricted back to
 > Artinian local algebras, to the original groupoid. Its two components are the
@@ -70,7 +70,7 @@ public noncomputable def completionRestrictIso
           (Λ := Λ) (k := k)).counit.app G.arrows }
 ```
 
-**`Deformation.GroupoidInFunctors.completionRestrictionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Formal/Groupoid/RestrictCompletion.lean, line 158](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Formal/Groupoid/RestrictCompletion.lean#L158). The attribute's comment: “restrict\_completion”.
+**`Deformation.GroupoidInFunctors.completionRestrictionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Formal/Groupoid/RestrictCompletion.lean, line 158](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Formal/Groupoid/RestrictCompletion.lean#L158). The attribute's comment: “restrict\_completion”.
 
 > The canonical groupoid isomorphism from the completion of a restricted
 > limit-preserving groupoid to the original groupoid.
@@ -96,7 +96,7 @@ public noncomputable def completionRestrictionIso
 
 [Tag 06KG](https://stacks.math.columbia.edu/tag/06KG) in the Stacks Project.
 
-**`Deformation.GroupoidInFunctors.isProrepresentable_iff_isRepresentable_completion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Formal/Groupoid/Prorepresentable.lean, line 461](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Formal/Groupoid/Prorepresentable.lean#L461). The attribute's comment: “part (1)”.
+**`Deformation.GroupoidInFunctors.isProrepresentable_iff_isRepresentable_completion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Formal/Groupoid/Prorepresentable.lean, line 461](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Formal/Groupoid/Prorepresentable.lean#L461). The attribute's comment: “part (1)”.
 
 > A groupoid in functors on Artinian local algebras is prorepresentable if
 > and only if its completion is representable on complete local algebras.
@@ -109,7 +109,7 @@ public theorem isProrepresentable_iff_isRepresentable_completion
       IsRepresentable (GroupoidInFunctors.completion G)
 ```
 
-**`Deformation.GroupoidInFunctors.isProrepresentable_iff_objects_arrows`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Formal/Groupoid/Prorepresentable.lean, line 500](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Formal/Groupoid/Prorepresentable.lean#L500). The attribute's comment: “part (2)”.
+**`Deformation.GroupoidInFunctors.isProrepresentable_iff_objects_arrows`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Formal/Groupoid/Prorepresentable.lean, line 500](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Formal/Groupoid/Prorepresentable.lean#L500). The attribute's comment: “part (2)”.
 
 > A groupoid in functors is prorepresentable if and only if both its object
 > and arrow functors are prorepresentable.
@@ -130,4 +130,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 90.22, Tag 06KC](https://stacks.math.columbia.edu/tag/06KC)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

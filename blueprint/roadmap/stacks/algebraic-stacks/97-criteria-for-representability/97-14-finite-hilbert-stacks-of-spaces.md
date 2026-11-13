@@ -8,13 +8,13 @@ proof: formalized
 
 # 97.14 Finite Hilbert stacks of spaces
 
-Section 97.14 of the Stacks Project, [Tag 05YR](https://stacks.math.columbia.edu/tag/05YR). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 97.14 of the Stacks Project, [Tag 05YR](https://stacks.math.columbia.edu/tag/05YR). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 05YS, a lemma
 
 [Tag 05YS](https://stacks.math.columbia.edu/tag/05YS) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isAlgebraicStack_absoluteHilbertFibered`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/HilbertCoverAlgebraic.lean, line 96](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/HilbertCoverAlgebraic.lean#L96). The attribute's comment: “`NeZero d` restricts nothing: Examples of Stacks, Section 95.18 (Stacks 05WA) introduces `ℋ_d(X)` only `For each integer d ≥ 1`, and the source's proof of this lemma cites Stacks 05YQ, which stands under the `Let d ≥ 1 be an integer` of Section 97.13 (Stacks 05YL)”.
+**`AlgebraicGeometry.Stack.isAlgebraicStack_absoluteHilbertFibered`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/HilbertCoverAlgebraic.lean, line 96](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/HilbertCoverAlgebraic.lean#L96). The attribute's comment: “`NeZero d` restricts nothing: Examples of Stacks, Section 95.18 (Stacks 05WA) introduces `ℋ_d(X)` only `For each integer d ≥ 1`, and the source's proof of this lemma cites Stacks 05YQ, which stands under the `Let d ≥ 1 be an integer` of Section 97.13 (Stacks 05YL)”.
 
 > The finite Hilbert stack `ℋ_d(𝒳)` of an algebraic space `𝒳` over `S` is an algebraic
 > stack.
@@ -33,7 +33,7 @@ theorem isAlgebraicStack_absoluteHilbertFibered [NeZero d]
 
 [Tag 06CI](https://stacks.math.columbia.edu/tag/06CI) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isAlgebraicStack_finiteHilbertFibered`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/RelativeAlgebraicity.lean, line 554](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/RelativeAlgebraicity.lean#L554). The attribute's comment: “for positive degree d, the domain on which the source defines the finite Hilbert stack”.
+**`AlgebraicGeometry.Stack.isAlgebraicStack_finiteHilbertFibered`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/RelativeAlgebraicity.lean, line 554](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/FiniteHilbert/RelativeAlgebraicity.lean#L554). The attribute's comment: “for positive degree d, the domain on which the source defines the finite Hilbert stack”.
 
 > **Stacks 06CI.** For positive degree `d`, the relative finite Hilbert stack `ℋ_d(𝒳/𝒴)` of a
 > 1-morphism `F : 𝒳 ⟶ 𝒴` of stacks in groupoids over the big fppf site of `S` with `𝒳`
@@ -64,4 +64,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 97.14, Tag 05YR](https://stacks.math.columbia.edu/tag/05YR)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

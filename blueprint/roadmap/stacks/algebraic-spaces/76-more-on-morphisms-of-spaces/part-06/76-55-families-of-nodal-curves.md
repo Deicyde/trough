@@ -8,13 +8,13 @@ proof: formalized
 
 # 76.55 Families of nodal curves
 
-Section 76.55 of the Stacks Project, [Tag 0DSD](https://stacks.math.columbia.edu/tag/0DSD). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 76.55 of the Stacks Project, [Tag 0DSD](https://stacks.math.columbia.edu/tag/0DSD). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0DSE, a definition
 
 [Tag 0DSE](https://stacks.math.columbia.edu/tag/0DSE) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsAtWorstNodalOfRelativeDimensionOne`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/Nodal.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/Nodal.lean#L71).
+**`AlgebraicGeometry.Space.IsAtWorstNodalOfRelativeDimensionOne`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/Nodal.lean, line 71](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/Nodal.lean#L71).
 
 > **Stacks 0DSE.** A morphism of algebraic spaces over `S` is *at-worst-nodal of
 > relative dimension one* when every commuting square of étale scheme charts induces a
@@ -29,7 +29,7 @@ abbrev IsAtWorstNodalOfRelativeDimensionOne (B : BigFppfSite.{u}) (S : Scheme.{u
 
 [Tag 0DSF](https://stacks.math.columbia.edu/tag/0DSF) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isAtWorstNodalOfRelativeDimensionOne_isStableUnderBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/Nodal.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/Nodal.lean#L80).
+**`AlgebraicGeometry.Space.isAtWorstNodalOfRelativeDimensionOne_isStableUnderBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/Nodal.lean, line 80](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/Nodal.lean#L80).
 
 > **Stacks 0DSF.** Being at-worst-nodal of relative dimension one is preserved by base
 > change of morphisms of algebraic spaces over `S`.
@@ -46,7 +46,7 @@ theorem isAtWorstNodalOfRelativeDimensionOne_isStableUnderBaseChange (B : BigFpp
 
 [Tag 0DSG](https://stacks.math.columbia.edu/tag/0DSG) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isAtWorstNodalOfRelativeDimensionOne_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/Nodal.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/Nodal.lean#L97).
+**`AlgebraicGeometry.Space.isAtWorstNodalOfRelativeDimensionOne_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/Nodal.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/Nodal.lean#L98).
 
 > **Stacks 0DSG.** Eight criteria for a morphism of algebraic spaces over `S` to be
 > at-worst-nodal of relative dimension one: the condition may be tested after base change to
@@ -92,7 +92,7 @@ theorem isAtWorstNodalOfRelativeDimensionOne_tfae (B : BigFppfSite.{u}) (S : Sch
 
 [Tag 0DSH](https://stacks.math.columbia.edu/tag/0DSH) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isGreatest_isNodalOpen_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/NodalOpenSubspace.lean, line 558](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/NodalOpenSubspace.lean#L558).
+**`AlgebraicGeometry.Space.exists_isGreatest_isNodalOpen_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/NodalOpenSubspace.lean, line 559](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/NodalOpenSubspace.lean#L559).
 
 > **Stacks 0DSH.** Let `S` be a scheme and let `f : X ⟶ Y` be a morphism of algebraic spaces
 > over `S` which is flat and locally of finite presentation. Then there is a maximal open
@@ -123,4 +123,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 76.55, Tag 0DSD](https://stacks.math.columbia.edu/tag/0DSD)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

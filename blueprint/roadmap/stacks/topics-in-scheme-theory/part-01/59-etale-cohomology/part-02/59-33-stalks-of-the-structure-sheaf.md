@@ -8,13 +8,13 @@ proof: formalized
 
 # 59.33 Stalks of the structure sheaf
 
-Section 59.33 of the Stacks Project, [Tag 04HW](https://stacks.math.columbia.edu/tag/04HW). 4 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 59.33 of the Stacks Project, [Tag 04HW](https://stacks.math.columbia.edu/tag/04HW). 4 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 04HX, a lemma
 
 [Tag 04HX](https://stacks.math.columbia.edu/tag/04HX) in the Stacks Project.
 
-**`AlgebraicGeometry.structureSheafStalkFromLocalRing`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/HenselianRings/EtaleLocalRing.lean, line 197](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/HenselianRings/EtaleLocalRing.lean#L197). The attribute's comment: “the ordinary-to-étale germ map”.
+**`AlgebraicGeometry.structureSheafStalkFromLocalRing`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/HenselianRings/EtaleLocalRing.lean, line 197](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/HenselianRings/EtaleLocalRing.lean#L197). The attribute's comment: “the ordinary-to-étale germ map”.
 
 > The canonical map from the ordinary local ring to the stalk of the
 > ring-valued étale structure sheaf.
@@ -28,7 +28,7 @@ public noncomputable def structureSheafStalkFromLocalRing
         (SmallEtale.structureSheaf B S hS).obj)
 ```
 
-**`AlgebraicGeometry.structureSheafStalkToGeometricField`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/HenselianRings/EtaleLocalRing.lean, line 265](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/HenselianRings/EtaleLocalRing.lean#L265). The attribute's comment: “the geometric evaluation map”.
+**`AlgebraicGeometry.structureSheafStalkToGeometricField`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/HenselianRings/EtaleLocalRing.lean, line 265](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/HenselianRings/EtaleLocalRing.lean#L265). The attribute's comment: “the geometric evaluation map”.
 
 > Evaluation of a structure-sheaf stalk germ in the geometric residue field.
 
@@ -40,7 +40,7 @@ public noncomputable def structureSheafStalkToGeometricField
       (SmallEtale.structureSheaf B S hS).obj) →+* s.residueField
 ```
 
-**`AlgebraicGeometry.structureSheafStalkFromLocalRing_germ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/HenselianRings/EtaleLocalRing.lean, line 585](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/HenselianRings/EtaleLocalRing.lean#L585). The attribute's comment: “compatibility with ordinary germs”.
+**`AlgebraicGeometry.structureSheafStalkFromLocalRing_germ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/HenselianRings/EtaleLocalRing.lean, line 585](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/HenselianRings/EtaleLocalRing.lean#L585). The attribute's comment: “compatibility with ordinary germs”.
 
 > The canonical ordinary-to-étale germ map is characterized at every
 > étale neighborhood by ordinary restriction of sections.
@@ -67,7 +67,7 @@ public theorem structureSheafStalkFromLocalRing_germ
           (SmallEtale.structureSheaf B S hS).obj) U).hom a
 ```
 
-**`AlgebraicGeometry.structureSheafStalkToGeometricField_ι`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/HenselianRings/EtaleLocalRing.lean, line 654](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/HenselianRings/EtaleLocalRing.lean#L654). The attribute's comment: “geometric evaluation of germs”.
+**`AlgebraicGeometry.structureSheafStalkToGeometricField_ι`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/HenselianRings/EtaleLocalRing.lean, line 654](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/HenselianRings/EtaleLocalRing.lean#L654). The attribute's comment: “geometric evaluation of germs”.
 
 > Evaluation of a germ of the structure sheaf is its value at the chosen
 > geometric lift on every étale neighborhood.
@@ -83,7 +83,7 @@ public theorem structureSheafStalkToGeometricField_ι
       ((U.unop.2.1).appTop ≫ (Scheme.ΓSpecIso (.of s.residueField)).hom).hom
 ```
 
-**`AlgebraicGeometry.etaleLocalRing_strictHenselization_canonical`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/HenselianRings/EtaleLocalRing.lean, line 982](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/HenselianRings/EtaleLocalRing.lean#L982). The attribute's comment: “the strict-henselization identification”.
+**`AlgebraicGeometry.etaleLocalRing_strictHenselization_canonical`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/HenselianRings/EtaleLocalRing.lean, line 982](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/HenselianRings/EtaleLocalRing.lean#L982). The attribute's comment: “the strict-henselization identification”.
 
 > The étale stalk is canonically the strict henselization of the ordinary
 > local ring, with its residue field identified with the separable subextension
@@ -112,7 +112,7 @@ public noncomputable def etaleLocalRing_strictHenselization_canonical
               s.residueField) : s.residueField)) }
 ```
 
-**`AlgebraicGeometry.etaleLocalRing_strictHenselization_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/HenselianRings/EtaleLocalRing.lean, line 1058](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/HenselianRings/EtaleLocalRing.lean#L1058). The attribute's comment: “uniqueness of the canonical identification”.
+**`AlgebraicGeometry.etaleLocalRing_strictHenselization_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/HenselianRings/EtaleLocalRing.lean, line 1058](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/HenselianRings/EtaleLocalRing.lean#L1058). The attribute's comment: “uniqueness of the canonical identification”.
 
 > The comparison is uniquely determined by the map from the ordinary local
 > ring and by the inclusion of the relative separable closure in the geometric
@@ -141,7 +141,7 @@ public theorem etaleLocalRing_strictHenselization_unique
     e = (etaleLocalRing_strictHenselization_canonical B S hS s T).val
 ```
 
-**`AlgebraicGeometry.isConstant_smallEtalePullbackAb_strictHenselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/StrictHenselizationLocallyConstant.lean, line 150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/StrictHenselizationLocallyConstant.lean#L150). The attribute's comment: “a locally constant abelian étale sheaf becomes constant on the strict henselization, because every étale covering of a strictly henselian local scheme splits”.
+**`AlgebraicGeometry.isConstant_smallEtalePullbackAb_strictHenselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/StrictHenselizationLocallyConstant.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/LocalAcyclicity/StrictHenselizationLocallyConstant.lean#L149). The attribute's comment: “a locally constant abelian étale sheaf becomes constant on the strict henselization, because every étale covering of a strictly henselian local scheme splits”.
 
 > **A locally constant abelian étale sheaf has constant inverse image on the strict
 > henselization.** The inverse image is locally constant by Tag 093R, and over the spectrum of the
@@ -157,7 +157,7 @@ theorem isConstant_smallEtalePullbackAb_strictHenselization
       ((smallEtalePullbackAb (strictHenselizationToBase B X hX x)).obj G)
 ```
 
-**`AlgebraicGeometry.Space.geometricEval`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricEvaluation.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/GeometricEvaluation.lean#L98). The attribute's comment: “the geometric evaluation map, for an algebraic space”.
+**`AlgebraicGeometry.Space.geometricEval`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/GeometricEvaluation.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/GeometricEvaluation.lean#L98). The attribute's comment: “the geometric evaluation map, for an algebraic space”.
 
 > **Evaluation of germs at a geometric point.**  The homomorphism from the étale local ring of
 > `F` at `x̄` to the field of `x̄` sending the germ of a regular function on a small étale
@@ -172,7 +172,7 @@ def geometricEval (x : GeometricPoint B S hS F) :
 
 [Tag 03PS](https://stacks.math.columbia.edu/tag/03PS) in the Stacks Project.
 
-**`AlgebraicGeometry.etaleLocalRing`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/HenselianRings/SchemeLocalRings.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/HenselianRings/SchemeLocalRings.lean#L62). The attribute's comment: “part (1)”. References: SGA 7 I (0.0.4), “strict henselization”; SGA 4 VIII (4.3), “strictly local ring”.
+**`AlgebraicGeometry.etaleLocalRing`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/HenselianRings/SchemeLocalRings.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/HenselianRings/SchemeLocalRings.lean#L62). The attribute's comment: “part (1)”. References: SGA 7 I (0.0.4), “strict henselization”; SGA 4 VIII (4.3), “strictly local ring”.
 
 > The étale local ring of `S` at a geometric point `s`: the stalk at `s` of the structure
 > sheaf of the small étale site of `S`.
@@ -182,7 +182,7 @@ public abbrev etaleLocalRing (B : BigEtaleSite.{u}) (S : Scheme.{u}) (hS : B.Con
     (s : GeometricPoint S) : RingCat.{u}
 ```
 
-**`AlgebraicGeometry.henselizationRing`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/HenselianRings/SchemeLocalRings.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/HenselianRings/SchemeLocalRings.lean#L74). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.henselizationRing`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/HenselianRings/SchemeLocalRings.lean, line 74](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/HenselianRings/SchemeLocalRings.lean#L74). The attribute's comment: “part (2)”.
 
 > The henselization of the local ring of `S` at a point `x`.
 
@@ -190,7 +190,7 @@ public abbrev etaleLocalRing (B : BigEtaleSite.{u}) (S : Scheme.{u}) (hS : B.Con
 public abbrev henselizationRing (S : Scheme.{u}) (x : S) : Type u
 ```
 
-**`AlgebraicGeometry.henselization`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/HenselianRings/SchemeLocalRings.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/HenselianRings/SchemeLocalRings.lean#L95). The attribute's comment: “part (4)”.
+**`AlgebraicGeometry.henselization`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/HenselianRings/SchemeLocalRings.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/HenselianRings/SchemeLocalRings.lean#L95). The attribute's comment: “part (4)”.
 
 > The henselization of a scheme at an ordinary point: the spectrum of the henselization of
 > its local ring.
@@ -199,7 +199,7 @@ public abbrev henselizationRing (S : Scheme.{u}) (x : S) : Type u
 public abbrev henselization (S : Scheme.{u}) (x : S) : Scheme.{u}
 ```
 
-**`AlgebraicGeometry.strictHenselization`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/HenselianRings/StrictHenselization.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/HenselianRings/StrictHenselization.lean#L166). The attribute's comment: “part (3)”. References: SGA 2 XIV (1.1); SGA 4 VIII (4.3); SGA 4 VIII (7.1), “partial”; SGA 4½ Arcata (2.3.3), “Ỹ = Spec(O\_\{Y”; SGA 4½ Arcata (5.1.1); SGA 4½ Th finitude (2.11); SGA 7 I (0.0.4); SGA 7 XIII (2.1.3), “The scheme X\_(x̄)”; SGA 7 XVI (1.6), “S\_(s̄) only”.
+**`AlgebraicGeometry.strictHenselization`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/HenselianRings/StrictHenselization.lean, line 166](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/HenselianRings/StrictHenselization.lean#L166). The attribute's comment: “part (3)”. References: SGA 2 XIV (1.1); SGA 4 VIII (4.3); SGA 4 VIII (7.1), “partial”; SGA 4½ Arcata (2.3.3), “Ỹ = Spec(O\_\{Y”; SGA 4½ Arcata (5.1.1); SGA 4½ Th finitude (2.11); SGA 7 I (0.0.4); SGA 7 XIII (2.1.3), “The scheme X\_(x̄)”; SGA 7 XVI (1.6), “S\_(s̄) only”.
 
 > The strict henselization of a scheme at a geometric point: the spectrum of the étale local
 > ring there.
@@ -212,7 +212,7 @@ public abbrev strictHenselization : Scheme.{u}
 
 [Tag 04HY](https://stacks.math.columbia.edu/tag/04HY) in the Stacks Project.
 
-**`AlgebraicGeometry.instIsFilteredOppositeElementaryEtaleNeighborhood`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/Henselization.lean, line 1253](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/Henselization.lean#L1253). The attribute's comment: “the henselization is the colimit of O(U) over the étale neighbourhoods with κ(s)”. References: EGA IV (18.6.3), “more general”.
+**`AlgebraicGeometry.instIsFilteredOppositeElementaryEtaleNeighborhood`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/Henselization.lean, line 1253](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/Henselization.lean#L1253). The attribute's comment: “the henselization is the colimit of O(U) over the étale neighbourhoods with κ(s)”. References: EGA IV (18.6.3), “more general”.
 
 > **Stacks Project, Tag 05KS.** The opposite of the category of elementary
 > étale neighborhoods of a point is filtered.
@@ -223,7 +223,7 @@ instance instIsFilteredOppositeElementaryEtaleNeighborhood
     IsFiltered (ElementaryEtaleNeighborhood S s)ᵒᵖ
 ```
 
-**`AlgebraicGeometry.isColimit_globalSections`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/Henselization.lean, line 1354](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/Henselization.lean#L1354). The attribute's comment: “the henselization is the colimit of O(U) over the étale neighbourhoods with κ(s)”.
+**`AlgebraicGeometry.isColimit_globalSections`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/Henselization.lean, line 1354](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/EtaleNeighbourhood/Henselization.lean#L1354). The attribute's comment: “the henselization is the colimit of O(U) over the étale neighbourhoods with κ(s)”.
 
 > **Stacks Project, Tag 05KS.** A henselization of the local ring of a
 > scheme at a point is a colimit of the rings of global sections of its
@@ -255,7 +255,7 @@ lemma isColimit_globalSections (S : Scheme.{u}) (s : S)
 
 [Tag 04HZ](https://stacks.math.columbia.edu/tag/04HZ) in the Stacks Project.
 
-**`AlgebraicGeometry.smallEtaleRingedSite_isLocallyRinged`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleRingedSite.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleRingedSite.lean#L159).
+**`AlgebraicGeometry.smallEtaleRingedSite_isLocallyRinged`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleRingedSite.lean, line 159](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleRingedSite.lean#L159).
 
 > The small étale site of a scheme, endowed with its structure sheaf, is a
 > locally ringed site.
@@ -272,4 +272,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 59.33, Tag 04HW](https://stacks.math.columbia.edu/tag/04HW)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

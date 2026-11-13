@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.4 A comment on the Artin-Rees property
 
-Section 15.4 of the Stacks Project, [Tag 07VD](https://stacks.math.columbia.edu/tag/07VD). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.4 of the Stacks Project, [Tag 07VD](https://stacks.math.columbia.edu/tag/07VD). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 07VE, a lemma
 
 [Tag 07VE](https://stacks.math.columbia.edu/tag/07VE) in the Stacks Project.
 
-**`artinRees_stability`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/ArtinRees/Constant.lean, line 233](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/ArtinRees/Constant.lean#L233).
+**`artinRees_stability`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/ArtinRees/Constant.lean, line 233](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/ArtinRees/Constant.lean#L233).
 
 > **Stacks 07VE**.
 > Let `A` be Noetherian and `I ⊆ rad(A)`. Let `L --f--> M --g--> N` and `L --f'--> M --g'--> N` be
@@ -38,7 +38,7 @@ theorem artinRees_stability {A : Type*} [CommRing A] [IsNoetherianRing A] (I : I
 
 [Tag 07VF](https://stacks.math.columbia.edu/tag/07VF) in the Stacks Project.
 
-**`associatedGraded_coker_equiv_of_congr`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/ArtinRees/AssociatedGraded.lean, line 233](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/ArtinRees/AssociatedGraded.lean#L233).
+**`associatedGraded_coker_equiv_of_congr`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/ArtinRees/AssociatedGraded.lean, line 233](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/ArtinRees/AssociatedGraded.lean#L233).
 
 > **Stacks 07VF.** With the hypotheses of `artinRees_stability`, the cokernels of the two
 > nearby maps `g` and `g'` have isomorphic associated graded modules over the associated graded
@@ -66,7 +66,7 @@ public noncomputable def associatedGraded_coker_equiv_of_congr
 
 [Tag 07VG](https://stacks.math.columbia.edu/tag/07VG) in the Stacks Project.
 
-**`artinRees_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/ArtinRees/Constant.lean, line 283](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/ArtinRees/Constant.lean#L283).
+**`artinRees_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/ArtinRees/Constant.lean, line 283](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/ArtinRees/Constant.lean#L283).
 
 > **Stacks 07VG**.
 > Let `A → B` be a flat ring homomorphism, `I ⊆ A` an ideal, and `f : M → N` a map of `A`-modules.
@@ -88,4 +88,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.4, Tag 07VD](https://stacks.math.columbia.edu/tag/07VD)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

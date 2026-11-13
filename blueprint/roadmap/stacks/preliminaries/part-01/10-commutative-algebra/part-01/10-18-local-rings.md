@@ -8,7 +8,7 @@ proof: formalized
 
 # 10.18 Local rings
 
-Section 10.18 of the Stacks Project, [Tag 07BH](https://stacks.math.columbia.edu/tag/07BH). 4 tags here are carried by 5 declarations of the repository (all in StacksCore) and 10 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 10.18 of the Stacks Project, [Tag 07BH](https://stacks.math.columbia.edu/tag/07BH). 5 tags here are carried by 8 declarations of the repository (5 in StacksCore and 3 in StacksFrontier) and 10 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 07BI, a definition
 
@@ -16,18 +16,18 @@ Section 10.18 of the Stacks Project, [Tag 07BH](https://stacks.math.columbia.edu
 
 Declarations registered for the tag:
 
-- [`IsLocalHom`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=IsLocalHom#doc) registered with `add_to_stacks` in [StacksCore/Algebra/Group/Units/Hom.lean, line 21](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Algebra/Group/Units/Hom.lean#L21) (StacksCore): “A local homomorphism of local rings: `φ(𝔪_R) ⊆ 𝔪_S`. Mathlib states the equivalent reflects-units condition, which needs no `IsLocalRing` instance; the equivalence is `IsLocalRing.local_hom_TFAE` (tag 07BJ).”. References: EGA 0 (10.3.1.3); EGA 0 (1.0.7); EGA IV (18.6.1).
-- [`IsLocalRing`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=IsLocalRing#doc) registered with `add_to_stacks` in [StacksCore/RingTheory/LocalRing/Defs.lean, line 20](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/RingTheory/LocalRing/Defs.lean#L20) (StacksCore): “A local ring is a ring with exactly one maximal ideal. Mathlib defines this by the equivalent condition that the ring is nontrivial and `a` or `b` is a unit whenever `a + b = 1`; see `IsLocalRing.maximal_ideal_unique` for the Stacks wording.”. References: EGA 0 (10.3.1.2); EGA 0 (10.3.1.3); EGA 0 (1.0.7); EGA 0 (22.4.1); EGA 0 (22.5.3); SGA 3 VIA (0.2).
-- [`IsLocalRing.maximal_ideal_unique`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=IsLocalRing.maximal_ideal_unique#doc) registered with `add_to_stacks` in [StacksCore/RingTheory/LocalRing/MaximalIdeal/Basic.lean, line 26](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/RingTheory/LocalRing/MaximalIdeal/Basic.lean#L26) (StacksCore): “`∃! I, I.IsMaximal` — the Stacks project's own phrasing of the definition of a local ring, which Mathlib derives from its `a + b = 1` formulation.”. References: EGA 0 (1.0.7), “partial”.
-- [`IsLocalRing.maximalIdeal`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=IsLocalRing.maximalIdeal#doc) registered with `add_to_stacks` in [StacksCore/RingTheory/LocalRing/MaximalIdeal/Defs.lean, line 16](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/RingTheory/LocalRing/MaximalIdeal/Defs.lean#L16) (StacksCore): “The maximal ideal `𝔪_R` of a local ring `R`, realised as the ideal of nonunits.”. References: EGA 0 (10.3.1.3); EGA 0 (1.0.7); EGA 0 (5.5.1); EGA I (1.1.1); EGA IV (17.15.8); EGA IV (3.4.1).
-- [`IsLocalRing.ResidueField`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=IsLocalRing.ResidueField#doc) registered with `add_to_stacks` in [StacksCore/RingTheory/LocalRing/ResidueField/Defs.lean, line 16](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/RingTheory/LocalRing/ResidueField/Defs.lean#L16) (StacksCore): “The residue field `κ = R/𝔪_R` of a local ring.”. References: EGA 0 (10.3.1.2); EGA 0 (10.3.1.3); EGA 0 (1.0.7); EGA 0 (5.5.1); EGA 0 (22.4.1); EGA 0 (22.5.3); EGA I (1.1.1); EGA I (2.4.5); EGA II (7.1.5); SGA 1 I (2.1); SGA 1 I (7.5); SGA 1 III (1.7); SGA 2 III (2.8), “special case”; SGA 3 VIIB (0.2.1); SGA 3 VIA (0.2).
-- [`IsLocalRing.residue`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=IsLocalRing.residue#doc) registered with `add_to_stacks` in [StacksCore/RingTheory/LocalRing/ResidueField/Defs.lean, line 17](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/RingTheory/LocalRing/ResidueField/Defs.lean#L17) (StacksCore): “The quotient map `R → R/𝔪_R = κ` onto the residue field.”. References: EGA I (2.4.5).
+- [`IsLocalHom`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=IsLocalHom#doc) registered with `add_to_stacks` in [StacksCore/Algebra/Group/Units/Hom.lean, line 21](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Algebra/Group/Units/Hom.lean#L21) (StacksCore): “A local homomorphism of local rings: `φ(𝔪_R) ⊆ 𝔪_S`. Mathlib states the equivalent reflects-units condition, which needs no `IsLocalRing` instance; the equivalence is `IsLocalRing.local_hom_TFAE` (tag 07BJ).”. References: EGA 0 (10.3.1.3); EGA 0 (1.0.7); EGA IV (18.6.1).
+- [`IsLocalRing`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=IsLocalRing#doc) registered with `add_to_stacks` in [StacksCore/RingTheory/LocalRing/Defs.lean, line 20](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/RingTheory/LocalRing/Defs.lean#L20) (StacksCore): “A local ring is a ring with exactly one maximal ideal. Mathlib defines this by the equivalent condition that the ring is nontrivial and `a` or `b` is a unit whenever `a + b = 1`; see `IsLocalRing.maximal_ideal_unique` for the Stacks wording.”. References: EGA 0 (10.3.1.2); EGA 0 (10.3.1.3); EGA 0 (1.0.7); EGA 0 (22.4.1); EGA 0 (22.5.3); SGA 3 VIA (0.2).
+- [`IsLocalRing.maximal_ideal_unique`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=IsLocalRing.maximal_ideal_unique#doc) registered with `add_to_stacks` in [StacksCore/RingTheory/LocalRing/MaximalIdeal/Basic.lean, line 26](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/RingTheory/LocalRing/MaximalIdeal/Basic.lean#L26) (StacksCore): “`∃! I, I.IsMaximal` — the Stacks project's own phrasing of the definition of a local ring, which Mathlib derives from its `a + b = 1` formulation.”. References: EGA 0 (1.0.7), “partial”.
+- [`IsLocalRing.maximalIdeal`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=IsLocalRing.maximalIdeal#doc) registered with `add_to_stacks` in [StacksCore/RingTheory/LocalRing/MaximalIdeal/Defs.lean, line 16](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/RingTheory/LocalRing/MaximalIdeal/Defs.lean#L16) (StacksCore): “The maximal ideal `𝔪_R` of a local ring `R`, realised as the ideal of nonunits.”. References: EGA 0 (10.3.1.3); EGA 0 (1.0.7); EGA 0 (5.5.1); EGA I (1.1.1); EGA IV (17.15.8); EGA IV (3.4.1).
+- [`IsLocalRing.ResidueField`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=IsLocalRing.ResidueField#doc) registered with `add_to_stacks` in [StacksCore/RingTheory/LocalRing/ResidueField/Defs.lean, line 16](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/RingTheory/LocalRing/ResidueField/Defs.lean#L16) (StacksCore): “The residue field `κ = R/𝔪_R` of a local ring.”. References: EGA 0 (10.3.1.2); EGA 0 (10.3.1.3); EGA 0 (1.0.7); EGA 0 (5.5.1); EGA 0 (22.4.1); EGA 0 (22.5.3); EGA I (1.1.1); EGA I (2.4.5); EGA II (7.1.5); SGA 1 I (2.1); SGA 1 I (7.5); SGA 1 III (1.7); SGA 2 III (2.8), “special case”; SGA 3 VIIB (0.2.1); SGA 3 VIA (0.2).
+- [`IsLocalRing.residue`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=IsLocalRing.residue#doc) registered with `add_to_stacks` in [StacksCore/RingTheory/LocalRing/ResidueField/Defs.lean, line 17](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/RingTheory/LocalRing/ResidueField/Defs.lean#L17) (StacksCore): “The quotient map `R → R/𝔪_R = κ` onto the residue field.”. References: EGA I (2.4.5).
 
 ## Tag 0H70, an example
 
 [Tag 0H70](https://stacks.math.columbia.edu/tag/0H70) in the Stacks Project.
 
-**`not_isLocalHom_algebraMap_atPrime`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/Counterexamples/LocalHom.lean, line 30](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Counterexamples/LocalHom.lean#L30).
+**`not_isLocalHom_algebraMap_atPrime`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/Counterexamples/LocalHom.lean, line 30](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Counterexamples/LocalHom.lean#L30).
 
 > **Stacks 0H70**: for a local ring `R` and a non-maximal prime `𝔭`, the localization map
 > `R → R_𝔭` is not a local homomorphism.
@@ -46,7 +46,7 @@ theorem not_isLocalHom_algebraMap_atPrime {R : Type*} [CommRing R] [IsLocalRing 
 
 [Tag 00E9](https://stacks.math.columbia.edu/tag/00E9) in the Stacks Project.
 
-**`isLocalRing_iff_exists_maximal_isUnit`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/LocalRing/MaximalIdeal/Basic.lean, line 41](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/RingTheory/LocalRing/MaximalIdeal/Basic.lean#L41). The attribute's comment: “(1) ⇔ (3)”.
+**`isLocalRing_iff_exists_maximal_isUnit`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/LocalRing/MaximalIdeal/Basic.lean, line 41](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/RingTheory/LocalRing/MaximalIdeal/Basic.lean#L41). The attribute's comment: “(1) ⇔ (3)”.
 
 > **Stacks 00E9**, clause (1) ⇔ (3): a ring is local if and only if it has a maximal ideal
 > `m` such that every element outside `m` is a unit.
@@ -62,7 +62,7 @@ theorem isLocalRing_iff_exists_maximal_isUnit {R : Type*} [CommSemiring R] :
     IsLocalRing R ↔ ∃ m : Ideal R, m.IsMaximal ∧ ∀ x : R, x ∉ m → IsUnit x
 ```
 
-**`isLocalRing_iff_existsUnique_isClosed_singleton`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/Spectrum/Prime/Topology.lean, line 145](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/RingTheory/Spectrum/Prime/Topology.lean#L145). The attribute's comment: “(1) ⇔ (2)”. References: EGA I (2.4.1), “more general”.
+**`isLocalRing_iff_existsUnique_isClosed_singleton`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/Spectrum/Prime/Topology.lean, line 145](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/RingTheory/Spectrum/Prime/Topology.lean#L145). The attribute's comment: “(1) ⇔ (2)”. References: EGA I (2.4.1), “more general”.
 
 > **Stacks 00E9**, clause (1) ⇔ (2): a ring is local if and only if its spectrum has exactly
 > one closed point.
@@ -82,14 +82,14 @@ theorem isLocalRing_iff_existsUnique_isClosed_singleton {R : Type*} [CommSemirin
 
 Declarations registered for the tag:
 
-- [`IsLocalRing.isUnit_or_isUnit_one_sub_self`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=IsLocalRing.isUnit_or_isUnit_one_sub_self#doc) registered with `add_to_stacks` in [StacksCore/RingTheory/LocalRing/Basic.lean, line 24](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/RingTheory/LocalRing/Basic.lean#L24) (StacksCore): “(1) ⇒ (4): in a local ring, `x` or `1 - x` is a unit.”.
-- [`IsLocalRing.of_isUnit_or_isUnit_one_sub_self`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=IsLocalRing.of_isUnit_or_isUnit_one_sub_self#doc) registered with `add_to_stacks` in [StacksCore/RingTheory/LocalRing/Basic.lean, line 26](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/RingTheory/LocalRing/Basic.lean#L26) (StacksCore): “(4) ⇒ (1): a nontrivial ring in which `x` or `1 - x` is always a unit is local.”.
+- [`IsLocalRing.isUnit_or_isUnit_one_sub_self`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=IsLocalRing.isUnit_or_isUnit_one_sub_self#doc) registered with `add_to_stacks` in [StacksCore/RingTheory/LocalRing/Basic.lean, line 24](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/RingTheory/LocalRing/Basic.lean#L24) (StacksCore): “(1) ⇒ (4): in a local ring, `x` or `1 - x` is a unit.”.
+- [`IsLocalRing.of_isUnit_or_isUnit_one_sub_self`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=IsLocalRing.of_isUnit_or_isUnit_one_sub_self#doc) registered with `add_to_stacks` in [StacksCore/RingTheory/LocalRing/Basic.lean, line 26](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/RingTheory/LocalRing/Basic.lean#L26) (StacksCore): “(4) ⇒ (1): a nontrivial ring in which `x` or `1 - x` is always a unit is local.”.
 
 ## Tag 00E7, a lemma
 
 [Tag 00E7](https://stacks.math.columbia.edu/tag/00E7) in the Stacks Project.
 
-**`Ideal.nontrivial_fiber_iff`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/Spectrum/Prime/Fiber.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/RingTheory/Spectrum/Prime/Fiber.lean#L75). The attribute's comment: “(2) ⇔ (3)”.
+**`Ideal.nontrivial_fiber_iff`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/Spectrum/Prime/Fiber.lean, line 75](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/RingTheory/Spectrum/Prime/Fiber.lean#L75). The attribute's comment: “(2) ⇔ (3)”.
 
 > **Stacks 00E7**, clause (2) ⇔ clause (3): the fibre `κ(𝔭) ⊗_R S` is nonzero if and only if
 > `S_𝔭 / 𝔭 S_𝔭` is nonzero.
@@ -103,7 +103,7 @@ theorem nontrivial_fiber_iff :
     Nontrivial (p.Fiber S) ↔ Nontrivial (Sp ⧸ p.map (algebraMap R Sp))
 ```
 
-**`Ideal.nontrivial_quotient_localization_iff`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/Spectrum/Prime/Fiber.lean, line 128](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/RingTheory/Spectrum/Prime/Fiber.lean#L128). The attribute's comment: “(3) ⇔ (4)”.
+**`Ideal.nontrivial_quotient_localization_iff`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/RingTheory/Spectrum/Prime/Fiber.lean, line 128](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/RingTheory/Spectrum/Prime/Fiber.lean#L128). The attribute's comment: “(3) ⇔ (4)”.
 
 > **Stacks 00E7**, clause (3) ⇔ clause (4): `S_𝔭 / 𝔭 S_𝔭` is nonzero if and only if
 > `(S/𝔭S)_𝔭` is nonzero.
@@ -115,8 +115,46 @@ theorem nontrivial_quotient_localization_iff :
 
 Declarations registered for the tag:
 
-- [`PrimeSpectrum.mem_range_comap_iff`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=PrimeSpectrum.mem_range_comap_iff#doc) registered with `add_to_stacks` in [StacksCore/RingTheory/Spectrum/Prime/RingHom.lean, line 43](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/RingTheory/Spectrum/Prime/RingHom.lean#L43) (StacksCore): “(1) ⇔ (5): `𝔭` is in the image of `Spec S → Spec R` iff `𝔭 = φ⁻¹(𝔭S)`.”.
-- [`PrimeSpectrum.nontrivial_iff_mem_rangeComap`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=PrimeSpectrum.nontrivial_iff_mem_rangeComap#doc) registered with `add_to_stacks` in [StacksCore/RingTheory/Spectrum/Prime/RingHom.lean, line 45](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/RingTheory/Spectrum/Prime/RingHom.lean#L45) (StacksCore): “(1) ⇔ (2): `𝔭` is in the image of `Spec S → Spec R` iff the fibre `κ(𝔭) ⊗[R] S` is nonzero. The tag writes the tensor product in the other order.”.
+- [`PrimeSpectrum.mem_range_comap_iff`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=PrimeSpectrum.mem_range_comap_iff#doc) registered with `add_to_stacks` in [StacksCore/RingTheory/Spectrum/Prime/RingHom.lean, line 43](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/RingTheory/Spectrum/Prime/RingHom.lean#L43) (StacksCore): “(1) ⇔ (5): `𝔭` is in the image of `Spec S → Spec R` iff `𝔭 = φ⁻¹(𝔭S)`.”.
+- [`PrimeSpectrum.nontrivial_iff_mem_rangeComap`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=PrimeSpectrum.nontrivial_iff_mem_rangeComap#doc) registered with `add_to_stacks` in [StacksCore/RingTheory/Spectrum/Prime/RingHom.lean, line 45](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/RingTheory/Spectrum/Prime/RingHom.lean#L45) (StacksCore): “(1) ⇔ (2): `𝔭` is in the image of `Spec S → Spec R` iff the fibre `κ(𝔭) ⊗[R] S` is nonzero. The tag writes the tensor product in the other order.”.
+
+## Tag 0H9M, a remark
+
+[Tag 0H9M](https://stacks.math.columbia.edu/tag/0H9M) in the Stacks Project.
+
+**`Ideal.Fiber.localizationPrimeOfLiesOverAlgEquivQuotient`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Spectrum/Prime/FiberLocalization.lean, line 64](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Spectrum/Prime/FiberLocalization.lean#L64). The attribute's comment: “composite: F localised at the prime over 𝔮 is S\_𝔮/𝔭S\_𝔮, as R-algebras”.
+
+> **Stacks 0H9M**, the composite isomorphism: for a prime `𝔮 ⊂ S` over `𝔭 ⊂ R` and the
+> corresponding prime `𝔮̄` of the fibre ring `F = κ(𝔭) ⊗_R S`, `F_𝔮̄ ≅ S_𝔮 / 𝔭 S_𝔮`.
+
+```lean
+noncomputable def Fiber.localizationPrimeOfLiesOverAlgEquivQuotient :
+    Localization.AtPrime (Fiber.primeOfLiesOver p q) ≃ₐ[R]
+      Localization.AtPrime q ⧸ p.map (algebraMap R (Localization.AtPrime q))
+```
+
+**`Ideal.Fiber.localizationTensorResidueFieldAlgEquivQuotient`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Spectrum/Prime/FiberLocalization.lean, line 75](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Spectrum/Prime/FiberLocalization.lean#L75). The attribute's comment: “second isomorphism: S\_𝔮 ⊗ κ(𝔭) over R\_𝔭 is S\_𝔮/𝔭S\_𝔮, as S\_𝔮-algebras”.
+
+> **Stacks 0H9M**, the second isomorphism: `S_𝔮 ⊗_{R_𝔭} κ(𝔭) ≅ S_𝔮 / 𝔭 S_𝔮`, because
+> `κ(𝔭) = R_𝔭 / 𝔭R_𝔭`. An isomorphism of `S_𝔮`-algebras.
+
+```lean
+noncomputable def Fiber.localizationTensorResidueFieldAlgEquivQuotient :
+    Localization.AtPrime q ⊗[Localization.AtPrime p] p.ResidueField ≃ₐ[Localization.AtPrime q]
+      Localization.AtPrime q ⧸ p.map (algebraMap R (Localization.AtPrime q))
+```
+
+**`Ideal.Fiber.localizationPrimeOfLiesOverRingEquivTensor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Spectrum/Prime/FiberLocalization.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Spectrum/Prime/FiberLocalization.lean#L88). The attribute's comment: “first isomorphism: F localised at the prime over 𝔮 is S\_𝔮 ⊗ κ(𝔭) over R\_𝔭”.
+
+> **Stacks 0H9M**, the first isomorphism: for a prime `𝔮 ⊂ S` over `𝔭 ⊂ R` and the
+> corresponding prime `𝔮̄` of the fibre ring `F = κ(𝔭) ⊗_R S`,
+> `F_𝔮̄ ≅ S_𝔮 ⊗_{R_𝔭} κ(𝔭)`.
+
+```lean
+noncomputable def Fiber.localizationPrimeOfLiesOverRingEquivTensor :
+    Localization.AtPrime (Fiber.primeOfLiesOver p q) ≃+*
+      Localization.AtPrime q ⊗[Localization.AtPrime p] p.ResidueField
+```
 
 ## Depends on
 
@@ -125,4 +163,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.18, Tag 07BH](https://stacks.math.columbia.edu/tag/07BH)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

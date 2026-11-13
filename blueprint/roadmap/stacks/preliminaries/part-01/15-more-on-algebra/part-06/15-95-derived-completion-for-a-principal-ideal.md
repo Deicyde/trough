@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.95 Derived completion for a principal ideal
 
-Section 15.95 of the Stacks Project, [Tag 0BKF](https://stacks.math.columbia.edu/tag/0BKF). 12 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.95 of the Stacks Project, [Tag 0BKF](https://stacks.math.columbia.edu/tag/0BKF). 12 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 091X, a lemma
 
 [Tag 091X](https://stacks.math.columbia.edu/tag/091X) in the Stacks Project.
 
-**`ProTorsion.proIso_of_torsionBounded`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/ProIsoBoundedTorsion.lean, line 1069](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/ProIsoBoundedTorsion.lean#L1069).
+**`ProTorsion.proIso_of_torsionBounded`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/ProIsoBoundedTorsion.lean, line 1069](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/ProIsoBoundedTorsion.lean#L1069).
 
 > **Main statement.**  Let `A` be a commutative ring, `f ∈ A`, and assume the
 > `f`-power torsion of `A` is bounded, witnessed by `c ≥ 1` (so `A[f^c] = A[f^m]` for
@@ -59,7 +59,7 @@ theorem proIso_of_torsionBounded (c : ℕ)
 
 [Tag 0923](https://stacks.math.columbia.edu/tag/0923) in the Stacks Project.
 
-**`PrincipalNaiveCompletion.derivedCompletionToNaive_isIso_iff_torsionBounded`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/NoetherianCompletePrincipalIdeal.lean, line 4124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedComplete/NoetherianCompletePrincipalIdeal.lean#L4124).
+**`PrincipalNaiveCompletion.derivedCompletionToNaive_isIso_iff_torsionBounded`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/NoetherianCompletePrincipalIdeal.lean, line 4117](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedComplete/NoetherianCompletePrincipalIdeal.lean#L4117).
 
 > **Stacks 0923.** For `f ∈ A`, the canonical natural transformation from derived completion
 > at `(f)` to the naive derived completion formed from the quotients `A/(f^(n+1))` is an
@@ -114,7 +114,7 @@ public theorem derivedCompletionToNaive_isIso_iff_torsionBounded
 
 [Tag 09AT](https://stacks.math.columbia.edu/tag/09AT) in the Stacks Project.
 
-**`PrincipalAdicPresentation.isDerivedCompleteModule_iff_exists_shortExact_isAdicComplete`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/PrincipalAdicPresentation.lean, line 325](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedComplete/PrincipalAdicPresentation.lean#L325).
+**`PrincipalAdicPresentation.isDerivedCompleteModule_iff_exists_shortExact_isAdicComplete`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/PrincipalAdicPresentation.lean, line 325](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedComplete/PrincipalAdicPresentation.lean#L325).
 
 > **Stacks 09AT.** Let `f` be a nonzerodivisor in a commutative ring `A`. An `A`-module `M` is
 > derived complete with respect to `(f)` if and only if it occurs as the cokernel in a short exact
@@ -142,7 +142,7 @@ theorem isDerivedCompleteModule_iff_exists_shortExact_isAdicComplete
 
 [Tag 0G3F](https://stacks.math.columbia.edu/tag/0G3F) in the Stacks Project.
 
-**`PrincipalScaledVariable.scaledVariableCompletionCokernel_isDerivedComplete_not_isAdicComplete`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/PrincipalScaledVariable.lean, line 178](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedComplete/PrincipalScaledVariable.lean#L178).
+**`PrincipalScaledVariable.scaledVariableCompletionCokernel_isDerivedComplete_not_isAdicComplete`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/PrincipalScaledVariable.lean, line 178](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedComplete/PrincipalScaledVariable.lean#L178).
 
 > **Stacks 0G3F.** Let `p` be prime. The cokernel of the map between the `p`-adic
 > completions of `ℤ_[p][X]` induced by `X ↦ pX` is derived complete but not adically complete.
@@ -176,7 +176,7 @@ theorem scaledVariableCompletionCokernel_isDerivedComplete_not_isAdicComplete
 
 [Tag 0BKG](https://stacks.math.columbia.edu/tag/0BKG) in the Stacks Project.
 
-**`CompletionSequences.derivedCompletion_principal_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/CompletionSequences/TruncationSequences.lean, line 456](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedComplete/CompletionSequences/TruncationSequences.lean#L456).
+**`CompletionSequences.derivedCompletion_principal_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/CompletionSequences/TruncationSequences.lean, line 456](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedComplete/CompletionSequences/TruncationSequences.lean#L456).
 
 > **Stacks 0BKG.** The two principal-completion short exact sequences, with their
 > canonical maps. `S` records the fixed mapping-cocone model, its comparison with the
@@ -222,7 +222,7 @@ public theorem derivedCompletion_principal_homology
 
 [Tag 0H32](https://stacks.math.columbia.edu/tag/0H32) in the Stacks Project.
 
-**`PrincipalCompletionDiagram.derivedCompletion_principal_homology_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/CompletionSequencesComparison/ComparisonDiagram.lean, line 760](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedComplete/CompletionSequencesComparison/ComparisonDiagram.lean#L760).
+**`PrincipalCompletionDiagram.derivedCompletion_principal_homology_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/CompletionSequencesComparison/ComparisonDiagram.lean, line 760](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedComplete/CompletionSequencesComparison/ComparisonDiagram.lean#L760).
 
 > **Stacks 0H32.** For `K ∈ D(A)`, the ordinary completion of `Hᵖ(K)`, the cohomology
 > of the derived completion of `Hᵖ(K)`, the cohomology of the derived completion of `K`, and the
@@ -328,7 +328,7 @@ public theorem derivedCompletion_principal_homology_comparison
 
 [Tag 0H33](https://stacks.math.columbia.edu/tag/0H33) in the Stacks Project.
 
-**`PrincipalTorsionTower.isMittagLeffler_principalDerivedTensor_iff_powerTorsion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/PrincipalTorsionTower.lean, line 213](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedComplete/PrincipalTorsionTower.lean#L213).
+**`PrincipalTorsionTower.isMittagLeffler_principalDerivedTensor_iff_powerTorsion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/PrincipalTorsionTower.lean, line 213](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedComplete/PrincipalTorsionTower.lean#L213).
 
 > The cohomology tower of the derived reductions of `K` modulo the positive
 > powers of `f` is Mittag--Leffler if and only if the tower of elements of `H^(p + 1)(K)` killed
@@ -348,7 +348,7 @@ theorem isMittagLeffler_principalDerivedTensor_iff_powerTorsion
 
 [Tag 0CQY](https://stacks.math.columbia.edu/tag/0CQY) in the Stacks Project.
 
-**`DerivedCompleteTorsion.exists_pow_smul_top_eq_bot_of_isDerivedCompleteModule_of_isIPowerTorsion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/TorsionAnnihilation.lean, line 420](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedComplete/TorsionAnnihilation.lean#L420).
+**`DerivedCompleteTorsion.exists_pow_smul_top_eq_bot_of_isDerivedCompleteModule_of_isIPowerTorsion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/TorsionAnnihilation.lean, line 420](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedComplete/TorsionAnnihilation.lean#L420).
 
 > If `I` is finitely generated and `M` is both derived complete and `I`-power torsion, then a
 > single power of `I` annihilates all of `M`.
@@ -365,7 +365,7 @@ theorem exists_pow_smul_top_eq_bot_of_isDerivedCompleteModule_of_isIPowerTorsion
 
 [Tag 0G3G](https://stacks.math.columbia.edu/tag/0G3G) in the Stacks Project.
 
-**`PrincipalCompletionKernel.iInf_principal_powers_annihilates_ker_adicCompletion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/PrincipalCompletionKernel.lean, line 180](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedComplete/PrincipalCompletionKernel.lean#L180).
+**`PrincipalCompletionKernel.iInf_principal_powers_annihilates_ker_adicCompletion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/PrincipalCompletionKernel.lean, line 180](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedComplete/PrincipalCompletionKernel.lean#L180).
 
 > **Stacks 0G3G.** Let `J` be the intersection of all powers of the principal ideal `(f)`.
 > If `M` is derived complete with respect to `f`, then `J` annihilates the kernel of the canonical
@@ -391,7 +391,7 @@ public theorem iInf_principal_powers_annihilates_ker_adicCompletion
 
 [Tag 0G3H](https://stacks.math.columbia.edu/tag/0G3H) in the Stacks Project.
 
-**`PrincipalHenselianPair.henselianPair_of_isDerivedCompleteModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/PrincipalHenselianPair.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedComplete/PrincipalHenselianPair.lean#L149).
+**`PrincipalHenselianPair.henselianPair_of_isDerivedCompleteModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/PrincipalHenselianPair.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedComplete/PrincipalHenselianPair.lean#L149).
 
 > **Stacks 0G3H.** A commutative ring derived complete with respect to an ideal forms a
 > henselian pair with that ideal.
@@ -408,7 +408,7 @@ theorem henselianPair_of_isDerivedCompleteModule
 
 [Tag 0G3I](https://stacks.math.columbia.edu/tag/0G3I) in the Stacks Project.
 
-**`PrincipalCompletionNilpotent.iInf_powers_pow_two_pow_eq_bot_of_isDerivedComplete`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/PrincipalCompletionNilpotent.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedComplete/PrincipalCompletionNilpotent.lean#L114).
+**`PrincipalCompletionNilpotent.iInf_powers_pow_two_pow_eq_bot_of_isDerivedComplete`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/PrincipalCompletionNilpotent.lean, line 114](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedComplete/PrincipalCompletionNilpotent.lean#L114).
 
 > **Stacks 0G3I.** If a commutative ring is derived complete with respect to an ideal `I`
 > generated by `r` elements, then the `2 ^ r`-th power of the intersection of all powers of `I`
@@ -428,7 +428,7 @@ theorem iInf_powers_pow_two_pow_eq_bot_of_isDerivedComplete
 
 [Tag 0G5V](https://stacks.math.columbia.edu/tag/0G5V) in the Stacks Project.
 
-**`PrincipalCompletionNilpotent.isAdicComplete_of_isReduced_of_isDerivedComplete`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/PrincipalCompletionNilpotent.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedComplete/PrincipalCompletionNilpotent.lean#L183).
+**`PrincipalCompletionNilpotent.isAdicComplete_of_isReduced_of_isDerivedComplete`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/PrincipalCompletionNilpotent.lean, line 183](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedComplete/PrincipalCompletionNilpotent.lean#L183).
 
 > **Stacks 0G5V.** A reduced commutative ring which is derived complete with respect to a
 > finitely generated ideal is adically complete with respect to that ideal.
@@ -448,4 +448,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.95, Tag 0BKF](https://stacks.math.columbia.edu/tag/0BKF)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

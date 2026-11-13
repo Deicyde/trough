@@ -2,9 +2,8 @@
 navigation: transparent
 ---
 
-# 59.86 Preliminaries on base… to 59.98 Comparing chaotic and…
+# 59.87 Base change for… to 59.100 Comparing fppf and étale…
 
-- [59.86 Preliminaries on base change](59-86-preliminaries-on-base-change.md)
 - [59.87 Base change for pushforward](59-87-base-change-for-pushforward.md)
 - [59.88 Base change for higher direct images](59-88-base-change-for-higher-direct-images.md)
 - [59.89 Smooth base change](59-89-smooth-base-change.md)
@@ -17,3 +16,5 @@ navigation: transparent
 - [59.96 Finite cohomological dimension](59-96-finite-cohomological-dimension.md)
 - [59.97 Künneth in étale cohomology](59-97-kunneth-in-etale-cohomology.md)
 - [59.98 Comparing chaotic and Zariski topologies](59-98-comparing-chaotic-and-zariski-topologies.md)
+- [59.99 Comparing big and small topoi](59-99-comparing-big-and-small-topoi.md)
+- [59.100 Comparing fppf and étale topologies](59-100-comparing-fppf-and-etale-topologies.md)

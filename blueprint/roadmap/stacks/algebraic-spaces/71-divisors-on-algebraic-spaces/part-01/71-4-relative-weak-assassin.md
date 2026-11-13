@@ -8,13 +8,13 @@ proof: formalized
 
 # 71.4 Relative weak assassin
 
-Section 71.4 of the Stacks Project, [Tag 0CUV](https://stacks.math.columbia.edu/tag/0CUV). 10 tags here are carried by 18 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 71.4 of the Stacks Project, [Tag 0CUV](https://stacks.math.columbia.edu/tag/0CUV). 10 tags here are carried by 18 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0CUW, a lemma
 
 [Tag 0CUW](https://stacks.math.columbia.edu/tag/0CUW) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isLocallyNoetherianFiber_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fibres/LocallyNoetherian.lean, line 400](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fibres/LocallyNoetherian.lean#L400). The attribute's comment: “conditions (1), (2) and (3)”.
+**`AlgebraicGeometry.Space.isLocallyNoetherianFiber_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fibres/LocallyNoetherian.lean, line 400](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fibres/LocallyNoetherian.lean#L400). The attribute's comment: “conditions (1), (2) and (3)”.
 
 > For a morphism `f : X ⟶ Y` of algebraic spaces over `S` and a point `y` of `Y`, local
 > Noetherianity of the fibre of `f` over the residue field of a point of an étale scheme chart of
@@ -49,7 +49,7 @@ theorem isLocallyNoetherianFiber_tfae
     ]
 ```
 
-**`AlgebraicGeometry.Space.isLocallyNoetherianFiberAt_iff_exists`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fibres/LocallyNoetherian.lean, line 479](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fibres/LocallyNoetherian.lean#L479). The attribute's comment: “condition (4): a monomorphic representative”.
+**`AlgebraicGeometry.Space.isLocallyNoetherianFiberAt_iff_exists`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fibres/LocallyNoetherian.lean, line 479](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fibres/LocallyNoetherian.lean#L479). The attribute's comment: “condition (4): a monomorphic representative”.
 
 > If a point `y` of `Y` has a field-valued representative presenting it by a monomorphism,
 > then the fibre of `f` over that representative is locally Noetherian exactly when the fibre over
@@ -70,7 +70,7 @@ theorem isLocallyNoetherianFiberAt_iff_exists
 
 [Tag 0CUX](https://stacks.math.columbia.edu/tag/0CUX) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsLocallyNoetherianFiber`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fibres/LocallyNoetherian.lean, line 506](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fibres/LocallyNoetherian.lean#L506). The attribute's comment: “the fibre over a point”.
+**`AlgebraicGeometry.Space.IsLocallyNoetherianFiber`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fibres/LocallyNoetherian.lean, line 506](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fibres/LocallyNoetherian.lean#L506). The attribute's comment: “the fibre over a point”.
 
 > The fibre of a morphism `f : X ⟶ Y` of algebraic spaces over `S` above a point `y` of `Y`
 > is *locally Noetherian* when the base change of `f` along some field-valued representative of
@@ -85,7 +85,7 @@ abbrev IsLocallyNoetherianFiber {X Y : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u} (f
     (y : points B S hS Y) : Prop
 ```
 
-**`AlgebraicGeometry.Space.HasLocallyNoetherianFibersAtPoints`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fibres/LocallyNoetherian.lean, line 518](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fibres/LocallyNoetherian.lean#L518). The attribute's comment: “all fibres”.
+**`AlgebraicGeometry.Space.HasLocallyNoetherianFibersAtPoints`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fibres/LocallyNoetherian.lean, line 518](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fibres/LocallyNoetherian.lean#L518). The attribute's comment: “all fibres”.
 
 > A morphism of algebraic spaces over `S` has *locally Noetherian fibres* when its fibre
 > above every point of its target is locally Noetherian.
@@ -103,7 +103,7 @@ abbrev HasLocallyNoetherianFibersAtPoints {X Y : (BigFppfOver B S hS)ᵒᵖ ⥤ 
 
 [Tag 0CUY](https://stacks.math.columbia.edu/tag/0CUY) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.hasLocallyNoetherianFibersAtPoints_of_isLocallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fibres/LocallyNoetherian.lean, line 551](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fibres/LocallyNoetherian.lean#L551).
+**`AlgebraicGeometry.Space.hasLocallyNoetherianFibersAtPoints_of_isLocallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fibres/LocallyNoetherian.lean, line 551](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fibres/LocallyNoetherian.lean#L551).
 
 > A morphism of algebraic spaces over `S` which is locally of finite type has locally
 > Noetherian fibres: the spectrum of a field is Noetherian, so Stacks 04ZK applies to the base
@@ -121,7 +121,7 @@ theorem hasLocallyNoetherianFibersAtPoints_of_isLocallyOfFiniteType
 
 [Tag 0CUZ](https://stacks.math.columbia.edu/tag/0CUZ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.relativeWeakAssassin_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceRelativeWeakAssassinTFAE.lean, line 316](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceRelativeWeakAssassinTFAE.lean#L316). The attribute's comment: “conditions (1) to (5)”.
+**`AlgebraicGeometry.Space.relativeWeakAssassin_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceRelativeWeakAssassinTFAE.lean, line 316](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceRelativeWeakAssassinTFAE.lean#L316). The attribute's comment: “conditions (1) to (5)”.
 
 > Let `f : X ⟶ Y` be a morphism of algebraic spaces
 > over `S`, let `𝓕` be a quasi-coherent `𝒪_X`-module and let `x ∈ |X|`. The following are
@@ -146,7 +146,7 @@ theorem relativeWeakAssassin_tfae (f : X ⟶ Y) (F : Modules.{u, u} B S hS X.1 X
       IsRelativeWeaklyAssociatedPoint B S hS f F x]
 ```
 
-**`AlgebraicGeometry.Space.isRelativeWeaklyAssociatedPoint_iff_of_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceRelativeWeakAssassinTFAE.lean, line 348](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceRelativeWeakAssassinTFAE.lean#L348). The attribute's comment: “condition (6), at a monomorphism from the spectrum of a field representing the image point”.
+**`AlgebraicGeometry.Space.isRelativeWeaklyAssociatedPoint_iff_of_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceRelativeWeakAssassinTFAE.lean, line 348](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceRelativeWeakAssassinTFAE.lean#L348). The attribute's comment: “condition (6), at a monomorphism from the spectrum of a field representing the image point”.
 
 > Let `f : X ⟶ Y` be a morphism of algebraic spaces over
 > `S`, let `𝓕` be a quasi-coherent `𝒪_X`-module, let `x ∈ |X|` and let `Spec(k₀) ⟶ Y` be a
@@ -171,7 +171,7 @@ theorem isRelativeWeaklyAssociatedPoint_iff_of_mono (f : X ⟶ Y)
             x₀)
 ```
 
-**`AlgebraicGeometry.Space.isRelativeWeaklyAssociatedPoint_iff_associated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceRelativeWeakAssassinTFAE.lean, line 530](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceRelativeWeakAssassinTFAE.lean#L530). The attribute's comment: “the locally Noetherian case: weakly associated replaced by associated in conditions (1), (2), (3), (4) and (6)”.
+**`AlgebraicGeometry.Space.isRelativeWeaklyAssociatedPoint_iff_associated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceRelativeWeakAssassinTFAE.lean, line 530](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceRelativeWeakAssassinTFAE.lean#L530). The attribute's comment: “the locally Noetherian case: weakly associated replaced by associated in conditions (1), (2), (3), (4) and (6)”.
 
 > Let `f : X ⟶ Y` be a morphism of algebraic
 > spaces over `S`, let `𝓕` be a quasi-coherent `𝒪_X`-module and let `x ∈ |X|` be such that the
@@ -208,7 +208,7 @@ theorem isRelativeWeaklyAssociatedPoint_iff_associated (f : X ⟶ Y)
 
 [Tag 0CV0](https://stacks.math.columbia.edu/tag/0CV0) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsRelativeWeaklyAssociatedPoint`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityCriterion.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityCriterion.lean#L124). The attribute's comment: “the membership predicate, via condition (5) of 0CUZ; stated for every module, not only a quasi-coherent one”.
+**`AlgebraicGeometry.Space.IsRelativeWeaklyAssociatedPoint`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityCriterion.lean, line 124](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityCriterion.lean#L124). The attribute's comment: “the membership predicate, via condition (5) of 0CUZ; stated for every module, not only a quasi-coherent one”.
 
 > A point `x` of `X` lies in the relative weak assassin `WeakAss_{X/Y}(F)` of an `𝒪_X`-module
 > `F` along a morphism `f : X ⟶ Y` of algebraic spaces: for some field-valued representative of
@@ -224,7 +224,7 @@ noncomputable def IsRelativeWeaklyAssociatedPoint {X Y : AlgebraicSpaces B S hS}
     (F : Modules.{u, u} B S hS X.1 X.2) (x : points B S hS X.1) : Prop
 ```
 
-**`AlgebraicGeometry.Space.relativeWeaklyAssociatedPoints`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityCriterion.lean, line 138](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityCriterion.lean#L138). The attribute's comment: “the set WeakAss\_\{X/Y}(F), which under locally Noetherian fibres is Ass\_\{X/Y}(F)”.
+**`AlgebraicGeometry.Space.relativeWeaklyAssociatedPoints`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityCriterion.lean, line 138](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Flat/PurityCriterion.lean#L138). The attribute's comment: “the set WeakAss\_\{X/Y}(F), which under locally Noetherian fibres is Ass\_\{X/Y}(F)”.
 
 > The relative weak assassin `WeakAss_{X/Y}(F) ⊆ |X|` of an `𝒪_X`-module along a morphism of
 > algebraic spaces. When the fibres of `f` are locally Noetherian this is the set written
@@ -239,7 +239,7 @@ noncomputable abbrev relativeWeaklyAssociatedPoints {X Y : AlgebraicSpaces B S h
 
 [Tag 0CV1](https://stacks.math.columbia.edu/tag/0CV1) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.weaklyAssociatedPoints_tensor_modulePullback_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceTensorPullbackLocallyNoetherian.lean, line 204](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceTensorPullbackLocallyNoetherian.lean#L204).
+**`AlgebraicGeometry.Space.weaklyAssociatedPoints_tensor_modulePullback_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceTensorPullbackLocallyNoetherian.lean, line 204](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceTensorPullbackLocallyNoetherian.lean#L204).
 
 > Let `f : X ⟶ Y` be a morphism of algebraic spaces over a scheme `S`, let `𝓕` be a
 > quasi-coherent `𝒪_X`-module and `𝓖` a quasi-coherent `𝒪_Y`-module. Assume `𝓕` is flat over `Y`,
@@ -267,7 +267,7 @@ theorem weaklyAssociatedPoints_tensor_modulePullback_eq (f : X ⟶ Y)
 
 [Tag 0CV2](https://stacks.math.columbia.edu/tag/0CV2) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isRelativeWeaklyAssociatedPoint_of_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceBaseChange.lean, line 199](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceBaseChange.lean#L199). The attribute's comment: “part (1), for the relative weak assassin of Stacks 0CV0 and with no finiteness hypothesis on f, which part (1) does not use: the two fibres are identified outright by pasting the cartesian squares”.
+**`AlgebraicGeometry.Space.isRelativeWeaklyAssociatedPoint_of_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceBaseChange.lean, line 199](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceBaseChange.lean#L199). The attribute's comment: “part (1), for the relative weak assassin of Stacks 0CV0 and with no finiteness hypothesis on f, which part (1) does not use: the two fibres are identified outright by pasting the cartesian squares”.
 
 > In a cartesian square of algebraic spaces over `S` with vertical morphisms `f : X ⟶ Y` and
 > `f' : X' ⟶ Y'` and horizontal morphisms `g : Y' ⟶ Y` and `g' : X' ⟶ X`, and for an
@@ -282,7 +282,7 @@ theorem isRelativeWeaklyAssociatedPoint_of_baseChange
     IsRelativeWeaklyAssociatedPoint B S hS f F (pointsMap B S hS X'.1 g'.hom x')
 ```
 
-**`AlgebraicGeometry.Space.exists_isRelativeWeaklyAssociatedPoint_baseChange_of_pointsMap_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceBaseChange.lean, line 252](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceBaseChange.lean#L252). The attribute's comment: “part (2), for the relative weak assassin of Stacks 0CV0 and with no finiteness hypothesis on f, which the proof does not use: in place of the source's appeal to Stacks 05DC the witness is carried to a representative coming from y' by the ascent of weak association along the flat surjective base change identifying the two fibres”.
+**`AlgebraicGeometry.Space.exists_isRelativeWeaklyAssociatedPoint_baseChange_of_pointsMap_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceBaseChange.lean, line 252](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceBaseChange.lean#L252). The attribute's comment: “part (2), for the relative weak assassin of Stacks 0CV0 and with no finiteness hypothesis on f, which the proof does not use: in place of the source's appeal to Stacks 05DC the witness is carried to a representative coming from y' by the ascent of weak association along the flat surjective base change identifying the two fibres”.
 
 > In a cartesian square of algebraic spaces over `S` with vertical morphisms `f : X ⟶ Y` and
 > `f' : X' ⟶ Y'` and horizontal morphisms `g : Y' ⟶ Y` and `g' : X' ⟶ X`, and for a
@@ -306,7 +306,7 @@ theorem exists_isRelativeWeaklyAssociatedPoint_baseChange_of_pointsMap_eq
 
 [Tag 0CV3](https://stacks.math.columbia.edu/tag/0CV3) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.relativeWeaklyAssociatedPoints_modulePullback_eq_preimage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceBaseChangePreimage.lean, line 351](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceBaseChangePreimage.lean#L351).
+**`AlgebraicGeometry.Space.relativeWeaklyAssociatedPoints_modulePullback_eq_preimage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceBaseChangePreimage.lean, line 351](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceBaseChangePreimage.lean#L351).
 
 > Let
 >
@@ -334,7 +334,7 @@ theorem relativeWeaklyAssociatedPoints_modulePullback_eq_preimage
 
 [Tag 0CV4](https://stacks.math.columbia.edu/tag/0CV4) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.relativeWeaklyAssociatedPoints_modulePushforward_eq_image_of_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceFiniteDirectImage.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceFiniteDirectImage.lean#L225).
+**`AlgebraicGeometry.Space.relativeWeaklyAssociatedPoints_modulePushforward_eq_image_of_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceFiniteDirectImage.lean, line 226](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceFiniteDirectImage.lean#L226).
 
 > **The relative weak assassin of a finite direct image.** Let `f : X ⟶ Y` be a morphism of
 > algebraic spaces over a scheme `S`, let `i : Z ⟶ X` be a finite morphism and let `G` be a
@@ -354,7 +354,7 @@ theorem relativeWeaklyAssociatedPoints_modulePushforward_eq_image_of_isFinite
 
 [Tag 0CVV](https://stacks.math.columbia.edu/tag/0CVV) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isLocallyConstructible_relativeAssassinContainmentLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/RepresentedFibreComparison.lean, line 625](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/RepresentedFibreComparison.lean#L625). The attribute's comment: “the surjective etale scheme chart of X is a hypothesis rather than a construction, and so are the transfers along it of quasi-compactness and quasi-separatedness of alpha, of finite presentation of the chart restriction of F, and of quasi-compactness of U over V”.
+**`AlgebraicGeometry.Space.isLocallyConstructible_relativeAssassinContainmentLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/RepresentedFibreComparison.lean, line 625](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/RepresentedFibreComparison.lean#L625). The attribute's comment: “the surjective etale scheme chart of X is a hypothesis rather than a construction, and so are the transfers along it of quasi-compactness and quasi-separatedness of alpha, of finite presentation of the chart restriction of F, and of quasi-compactness of U over V”.
 
 > Let `V` be a scheme of the site, let `f : X ⟶ schemeSpace V` be a morphism of algebraic
 > spaces which is locally of finite presentation, let `F` be a quasi-coherent `𝒪_X`-module and let
@@ -383,7 +383,7 @@ theorem isLocallyConstructible_relativeAssassinContainmentLocus
     IsLocallyConstructible (relativeAssassinContainmentLocus B S hS V f F U)
 ```
 
-**`AlgebraicGeometry.Space.isLocallyConstructible_relativeAssassinContainmentLocus_of_isFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceContainmentGeneralBase.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceContainmentGeneralBase.lean#L166). The attribute's comment: “with `U → V` quasi-compact read on the point sets”.
+**`AlgebraicGeometry.Space.isLocallyConstructible_relativeAssassinContainmentLocus_of_isFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceContainmentGeneralBase.lean, line 166](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceContainmentGeneralBase.lean#L166). The attribute's comment: “with `U → V` quasi-compact read on the point sets”.
 
 > Let `V` be a scheme of the site, let `X` be an algebraic space of finite presentation over `V`,
 > let `F` be a quasi-coherent `𝒪_X`-module of finite presentation and let `U` be an open subset of
@@ -408,7 +408,7 @@ theorem isLocallyConstructible_relativeAssassinContainmentLocus_of_isFinitePrese
     IsLocallyConstructible (relativeAssassinContainmentLocus B S hS V f F U)
 ```
 
-**`AlgebraicGeometry.Space.isLocallyConstructible_relativeAssassinContainmentLocus_of_isQuasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceContainmentGeneralBase.lean, line 246](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceContainmentGeneralBase.lean#L246).
+**`AlgebraicGeometry.Space.isLocallyConstructible_relativeAssassinContainmentLocus_of_isQuasiCompact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceContainmentGeneralBase.lean, line 246](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/MorphismWeaklyAssociated/SpaceContainmentGeneralBase.lean#L246).
 
 > Let `V` be a scheme of the site, let `X` be an algebraic space of finite presentation over `V`,
 > let `F` be a quasi-coherent `𝒪_X`-module of finite presentation and let `U ⊆ X` be an open subspace
@@ -434,4 +434,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 71.4, Tag 0CUV](https://stacks.math.columbia.edu/tag/0CUV)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 89.9 Examples
 
-Section 89.9 of the Stacks Project, [Tag 0AE8](https://stacks.math.columbia.edu/tag/0AE8). 2 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 89.9 of the Stacks Project, [Tag 0AE8](https://stacks.math.columbia.edu/tag/0AE8). 2 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0AE9, an example
 
 [Tag 0AE9](https://stacks.math.columbia.edu/tag/0AE9) in the Stacks Project.
 
-**`Stacks.Resolution.trinomial_irreducible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/TrinomialHypersurface.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/TrinomialHypersurface.lean#L183). The attribute's comment: “irreducibility”.
+**`Stacks.Resolution.trinomial_irreducible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/TrinomialHypersurface.lean, line 183](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/TrinomialHypersurface.lean#L183). The attribute's comment: “irreducibility”.
 
 > The defining trinomial is irreducible for positive pairwise coprime exponents.
 
@@ -27,7 +27,7 @@ theorem trinomial_irreducible (k : Type u) [Field k]
       MvPolynomial.X (2 : Fin 3) ^ t : MvPolynomial (Fin 3) k)
 ```
 
-**`Stacks.Resolution.trinomialRing_isDomain`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/TrinomialHypersurface.lean, line 201](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/TrinomialHypersurface.lean#L201). The attribute's comment: “integrality”.
+**`Stacks.Resolution.trinomialRing_isDomain`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/TrinomialHypersurface.lean, line 201](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/TrinomialHypersurface.lean#L201). The attribute's comment: “integrality”.
 
 > The trinomial hypersurface is integral.
 
@@ -38,7 +38,7 @@ theorem trinomialRing_isDomain (k : Type u) [Field k]
     IsDomain (trinomialRing k r s t)
 ```
 
-**`Stacks.Resolution.trinomialRing_z_isPrime`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/TrinomialHypersurface.lean, line 263](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/TrinomialHypersurface.lean#L263). The attribute's comment: “the prime element z”.
+**`Stacks.Resolution.trinomialRing_z_isPrime`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/TrinomialHypersurface.lean, line 263](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/TrinomialHypersurface.lean#L263). The attribute's comment: “the prime element z”.
 
 > The image of `z` generates a prime ideal in the hypersurface ring.
 
@@ -50,7 +50,7 @@ theorem trinomialRing_z_isPrime (k : Type u) [Field k]
       Set (trinomialRing k r s t))).IsPrime
 ```
 
-**`Stacks.Resolution.trinomialRing_localization_equiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/TrinomialHypersurface.lean, line 421](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/TrinomialHypersurface.lean#L421). The attribute's comment: “localized polynomial presentation”.
+**`Stacks.Resolution.trinomialRing_localization_equiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/TrinomialHypersurface.lean, line 421](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/TrinomialHypersurface.lean#L421). The attribute's comment: “localized polynomial presentation”.
 
 > When `t = 1 + e r s`, localization at `z` is the localization of a polynomial
 > ring in `x'`, `y'` at `-((x') ^ r + (y') ^ s)`, with the stated coordinate formulas.
@@ -82,7 +82,7 @@ theorem trinomialRing_localization_equiv (k : Type u) [Field k]
             MvPolynomial.X (1 : Fin 2) ^ s))
 ```
 
-**`Stacks.Resolution.trinomialRing_localization_uniqueFactorizationMonoid`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/TrinomialHypersurface.lean, line 491](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/TrinomialHypersurface.lean#L491). The attribute's comment: “factorial localization”.
+**`Stacks.Resolution.trinomialRing_localization_uniqueFactorizationMonoid`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/TrinomialHypersurface.lean, line 491](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/TrinomialHypersurface.lean#L491). The attribute's comment: “factorial localization”.
 
 > In the explicit presentation, inverting `z` gives a unique factorization monoid.
 
@@ -95,7 +95,7 @@ theorem trinomialRing_localization_uniqueFactorizationMonoid (k : Type u) [Field
           trinomialRing k r s (1 + e * r * s)))
 ```
 
-**`Stacks.Resolution.trinomialRing_uniqueFactorizationMonoid`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/TrinomialHypersurface.lean, line 710](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Simplicial/TrinomialHypersurface.lean#L710). The attribute's comment: “unique factorization”.
+**`Stacks.Resolution.trinomialRing_uniqueFactorizationMonoid`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Simplicial/TrinomialHypersurface.lean, line 710](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Simplicial/TrinomialHypersurface.lean#L710). The attribute's comment: “unique factorization”.
 
 > The trinomial hypersurface is a unique factorization domain.
 
@@ -110,7 +110,7 @@ theorem trinomialRing_uniqueFactorizationMonoid (k : Type u) [Field k]
 
 [Tag 0AEA](https://stacks.math.columbia.edu/tag/0AEA) in the Stacks Project.
 
-**`Stacks.MvPowerSeries.Brieskorn.not_uniqueFactorizationMonoid_brieskornHypersurface`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/MvPowerSeries/BrieskornHypersurface.lean, line 963](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/MvPowerSeries/BrieskornHypersurface.lean#L963). The attribute's comment: “the general nonfactoriality assertion”.
+**`Stacks.MvPowerSeries.Brieskorn.not_uniqueFactorizationMonoid_brieskornHypersurface`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/MvPowerSeries/BrieskornHypersurface.lean, line 963](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/MvPowerSeries/BrieskornHypersurface.lean#L963). The attribute's comment: “the general nonfactoriality assertion”.
 
 > Apart from the `E₈` triple `(2, 3, 5)`, a Brieskorn hypersurface with ordered,
 > pairwise coprime exponents greater than one is not factorial.
@@ -123,7 +123,7 @@ public theorem not_uniqueFactorizationMonoid_brieskornHypersurface
     ¬ UniqueFactorizationMonoid (BrieskornHypersurface r s t)
 ```
 
-**`Stacks.MvPowerSeries.Brieskorn.not_uniqueFactorizationMonoid_brieskornHypersurface_two_five_seven`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/MvPowerSeries/BrieskornHypersurface.lean, line 973](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/MvPowerSeries/BrieskornHypersurface.lean#L973). The attribute's comment: “the explicit (2, 5, 7) example”.
+**`Stacks.MvPowerSeries.Brieskorn.not_uniqueFactorizationMonoid_brieskornHypersurface_two_five_seven`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/MvPowerSeries/BrieskornHypersurface.lean, line 973](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/MvPowerSeries/BrieskornHypersurface.lean#L973). The attribute's comment: “the explicit (2, 5, 7) example”.
 
 > The hypersurface `ℂ⟦x,y,z⟧/(x²+y⁵+z⁷)` is not factorial.
 
@@ -139,4 +139,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 89.9, Tag 0AE8](https://stacks.math.columbia.edu/tag/0AE8)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

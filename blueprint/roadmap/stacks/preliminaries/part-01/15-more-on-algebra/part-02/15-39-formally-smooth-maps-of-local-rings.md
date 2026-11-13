@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.39 Formally smooth maps of local rings
 
-Section 15.39 of the Stacks Project, [Tag 0DYF](https://stacks.math.columbia.edu/tag/0DYF). 6 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.39 of the Stacks Project, [Tag 0DYF](https://stacks.math.columbia.edu/tag/0DYF). 6 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0DYG, a lemma
 
 [Tag 0DYG](https://stacks.math.columbia.edu/tag/0DYG) in the Stacks Project.
 
-**`formallySmooth_adic_iff_lifts_local_squareZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormallySmooth/LocalRings/LiftingCriterion.lean, line 480](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/FormallySmooth/LocalRings/LiftingCriterion.lean#L480). References: EGA 0 (22.1.4); SGA 1 III (2.2), “(iv ter)”; SGA 1 III (2.1), “(i) ⇔ (iv bis)”.
+**`formallySmooth_adic_iff_lifts_local_squareZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormallySmooth/LocalRings/LiftingCriterion.lean, line 480](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/FormallySmooth/LocalRings/LiftingCriterion.lean#L480). References: EGA 0 (22.1.4); SGA 1 III (2.2), “(iv ter)”; SGA 1 III (2.1), “(i) ⇔ (iv bis)”.
 
 > A local homomorphism of local rings is formally smooth for the adic
 > topologies if and only if it lifts through all residually trivial square-zero quotients whose
@@ -34,7 +34,7 @@ public theorem formallySmooth_adic_iff_lifts_local_squareZero
 
 [Tag 07EI](https://stacks.math.columbia.edu/tag/07EI) in the Stacks Project.
 
-**`isRegularLocalRing_of_isFormallySmooth_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormallySmooth/LocalRings/CoefficientFieldsAndRegularity.lean, line 199](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/FormallySmooth/LocalRings/CoefficientFieldsAndRegularity.lean#L199). References: EGA 0 (19.6.5), “A regular (k'=k)”; EGA 0 (22.5.8), “a) ⇒ A regular”.
+**`isRegularLocalRing_of_isFormallySmooth_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormallySmooth/LocalRings/CoefficientFieldsAndRegularity.lean, line 199](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/FormallySmooth/LocalRings/CoefficientFieldsAndRegularity.lean#L199). References: EGA 0 (19.6.5), “A regular (k'=k)”; EGA 0 (22.5.8), “a) ⇒ A regular”.
 
 > A Noetherian local algebra over a field that is formally smooth for its
 > maximal-ideal adic topology is a regular local ring.
@@ -47,7 +47,7 @@ public theorem isRegularLocalRing_of_isFormallySmooth_maximalIdeal.{v, w}
     IsRegularLocalRing A
 ```
 
-**`RingHom.FormallySmoothTop.isRegularLocalRing_of_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormallySmooth/RegularLocal.lean, line 368](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/FormallySmooth/RegularLocal.lean#L368). References: EGA 0 (19.6.5), “A regular (k'=k)”; EGA 0 (22.5.8), “a) ⇒ A regular”.
+**`RingHom.FormallySmoothTop.isRegularLocalRing_of_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormallySmooth/RegularLocal.lean, line 368](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/FormallySmooth/RegularLocal.lean#L368). References: EGA 0 (19.6.5), “A regular (k'=k)”; EGA 0 (22.5.8), “a) ⇒ A regular”.
 
 > A Noetherian local algebra over a field is regular if its structure map
 > is formally smooth for the maximal-ideal adic topology.
@@ -71,7 +71,7 @@ theorem isRegularLocalRing_of_maximalIdeal.{v, w}
 
 [Tag 0C34](https://stacks.math.columbia.edu/tag/0C34) in the Stacks Project.
 
-**`exists_residueField_algHom_section`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormallySmooth/LocalRings/CoefficientFieldsAndRegularity.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/FormallySmooth/LocalRings/CoefficientFieldsAndRegularity.lean#L106). References: EGA 0 (19.5.4.4), “special case”.
+**`exists_residueField_algHom_section`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormallySmooth/LocalRings/CoefficientFieldsAndRegularity.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/FormallySmooth/LocalRings/CoefficientFieldsAndRegularity.lean#L106). References: EGA 0 (19.5.4.4), “special case”.
 
 > A complete local algebra over a field whose residue field is separable over the
 > base field has a coefficient field: the residue homomorphism has a section by an
@@ -91,7 +91,7 @@ public theorem exists_residueField_algHom_section
 
 [Tag 0C35](https://stacks.math.columbia.edu/tag/0C35) in the Stacks Project.
 
-**`exists_algEquiv_mvPowerSeries_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormallySmooth/LocalRings/CoefficientFieldsAndRegularity.lean, line 144](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/FormallySmooth/LocalRings/CoefficientFieldsAndRegularity.lean#L144). References: EGA 0 (19.6.4), “special case”; EGA 0 (19.8.8), “(i), special case”; EGA 0 (21.9.2), “special case”; SGA 1 II (5.6), “(iii)”.
+**`exists_algEquiv_mvPowerSeries_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormallySmooth/LocalRings/CoefficientFieldsAndRegularity.lean, line 144](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/FormallySmooth/LocalRings/CoefficientFieldsAndRegularity.lean#L144). References: EGA 0 (19.6.4), “special case”; EGA 0 (19.8.8), “(i), special case”; EGA 0 (21.9.2), “special case”; SGA 1 II (5.6), “(iii)”.
 
 > A complete regular local algebra over a field whose residue field is separable over
 > the base field is isomorphic, as an algebra over that field, to a multivariable formal
@@ -112,7 +112,7 @@ public theorem exists_algEquiv_mvPowerSeries_residueField
 
 [Tag 07EJ](https://stacks.math.columbia.edu/tag/07EJ) in the Stacks Project.
 
-**`isFormallySmooth_maximalIdeal_of_isRegularLocalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormallySmooth/LocalRings/CoefficientFieldsAndRegularity.lean, line 565](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/FormallySmooth/LocalRings/CoefficientFieldsAndRegularity.lean#L565).
+**`isFormallySmooth_maximalIdeal_of_isRegularLocalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormallySmooth/LocalRings/CoefficientFieldsAndRegularity.lean, line 565](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/FormallySmooth/LocalRings/CoefficientFieldsAndRegularity.lean#L565).
 
 > A regular local algebra over a field whose residue field is separable over
 > the base field is formally smooth for its maximal-ideal adic topology.
@@ -129,7 +129,7 @@ public theorem isFormallySmooth_maximalIdeal_of_isRegularLocalRing.{u, v, w}
 
 [Tag 07VH](https://stacks.math.columbia.edu/tag/07VH) in the Stacks Project.
 
-**`smoothAt_iff_formallySmoothNAdic_localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormallySmooth/LocalRings/CoefficientFieldsAndRegularity.lean, line 671](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/FormallySmooth/LocalRings/CoefficientFieldsAndRegularity.lean#L671). References: EGA 0 (22.6.4), “c) <=> d)”; EGA IV (6.8.6), “a) ⇔ c)”; EGA IV (17.5.3), “a) ⇔ d)”; SGA 1 III (1.9), “Noetherian A”.
+**`smoothAt_iff_formallySmoothNAdic_localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/FormallySmooth/LocalRings/CoefficientFieldsAndRegularity.lean, line 671](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/FormallySmooth/LocalRings/CoefficientFieldsAndRegularity.lean#L671). References: EGA 0 (22.6.4), “c) <=> d)”; EGA IV (6.8.6), “a) ⇔ c)”; EGA IV (17.5.3), “a) ⇔ d)”; SGA 1 III (1.9), “Noetherian A”.
 
 > Let `A → B` be a finite type map with `A` Noetherian, and let the prime
 > `q ⊆ B` lie over the prime `p ⊆ A`. Then the map is smooth at `q` if and
@@ -155,4 +155,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.39, Tag 0DYF](https://stacks.math.columbia.edu/tag/0DYF)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

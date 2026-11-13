@@ -8,13 +8,13 @@ proof: formalized
 
 # 62.9 Effective relative cycles
 
-Section 62.9 of the Stacks Project, [Tag 0H5Q](https://stacks.math.columbia.edu/tag/0H5Q). 8 tags here are carried by 20 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 62.9 of the Stacks Project, [Tag 0H5Q](https://stacks.math.columbia.edu/tag/0H5Q). 8 tags here are carried by 20 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0H5R, a definition
 
 [Tag 0H5R](https://stacks.math.columbia.edu/tag/0H5R) in the Stacks Project.
 
-**`Stacks.Chow.IsEffectiveRelativeCycle`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/EffectiveRelative.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/EffectiveRelative.lean#L55). The attribute's comment: “effectivity of a relative r-cycle”.
+**`Stacks.Chow.IsEffectiveRelativeCycle`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/EffectiveRelative.lean, line 55](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/EffectiveRelative.lean#L55). The attribute's comment: “effectivity of a relative r-cycle”.
 
 > A relative `r`-cycle `α` on `X/S` is *effective* when for every point `s` of `S` the
 > `r`-cycle `α_s` it carries on the scheme-theoretic fibre over `s` is an effective cycle.
@@ -24,7 +24,7 @@ def IsEffectiveRelativeCycle {X S : Scheme.{u}} (f : X ⟶ S) [LocallyOfFiniteTy
     [IsLocallyNoetherian S] (r : ℕ) (α : ↥(relativeCycles f r)) : Prop
 ```
 
-**`Stacks.Chow.effectiveRelativeCycles`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/EffectiveRelative.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/EffectiveRelative.lean#L82). The attribute's comment: “the monoid z^eff(X/S, r)”.
+**`Stacks.Chow.effectiveRelativeCycles`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/EffectiveRelative.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/EffectiveRelative.lean#L82). The attribute's comment: “the monoid z^eff(X/S, r)”.
 
 > The monoid `z^eff(X/S, r)` of *effective relative `r`-cycles* on `X/S`: the submonoid of the
 > group `z(X/S, r)` of relative `r`-cycles consisting of those whose cycle on every fibre is
@@ -39,7 +39,7 @@ def effectiveRelativeCycles {X S : Scheme.{u}} (f : X ⟶ S) [LocallyOfFiniteTyp
 
 [Tag 0H5S](https://stacks.math.columbia.edu/tag/0H5S) in the Stacks Project.
 
-**`Stacks.Chow.isEffectiveFamily_restrictedFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Effective.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Effective.lean#L146). The attribute's comment: “restriction”.
+**`Stacks.Chow.isEffectiveFamily_restrictedFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Effective.lean, line 146](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Effective.lean#L146). The attribute's comment: “restriction”.
 
 > **Stacks Project, Tag 0H5S.** The restriction of an effective family of `r`-cycles on the
 > fibres of `X/S` to open subschemes `U ⊆ X` and `V ⊆ S` with `f(U) ⊆ V` is effective.
@@ -55,7 +55,7 @@ theorem isEffectiveFamily_restrictedFamily {X S U V : Scheme.{u}} (f : X ⟶ S)
     IsEffectiveFamily fU r (restrictedFamily f fU j i h r α).1
 ```
 
-**`Stacks.Chow.isEffectiveFamily_baseChangeFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Effective.lean, line 592](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Effective.lean#L592). The attribute's comment: “base change”.
+**`Stacks.Chow.isEffectiveFamily_baseChangeFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Effective.lean, line 592](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Effective.lean#L592). The attribute's comment: “base change”.
 
 > **Stacks Project, Tag 0H5S, base change.** The base change of an effective family of
 > `r`-cycles on the fibres of `X/S` along any morphism `g : S' ⟶ S` of bases is effective; no
@@ -68,7 +68,7 @@ theorem isEffectiveFamily_baseChangeFamily {X S S' : Scheme.{u}} (f : X ⟶ S)
     IsEffectiveFamily (pullback.snd f g) r (baseChangeFamily f g r α)
 ```
 
-**`Stacks.Chow.isEffectiveFamily_flatPullbackFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Effective.lean, line 674](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Effective.lean#L674). The attribute's comment: “flat pullback”.
+**`Stacks.Chow.isEffectiveFamily_flatPullbackFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Effective.lean, line 674](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Effective.lean#L674). The attribute's comment: “flat pullback”.
 
 > **Stacks Project, Tag 0H5S, flat pullback.** The flat pullback of an effective family of
 > `r`-cycles on the fibres of `X/S` along a flat morphism `j : U ⟶ X` of schemes over `S`, locally
@@ -84,7 +84,7 @@ theorem isEffectiveFamily_flatPullbackFamily {X S U : Scheme.{u}} (f : X ⟶ S)
     IsEffectiveFamily fU (r + e) (flatPullbackFamily f fU j h e he r α)
 ```
 
-**`Stacks.Chow.isEffectiveFamily_properPushforwardFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Effective.lean, line 689](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Effective.lean#L689). The attribute's comment: “proper pushforward”.
+**`Stacks.Chow.isEffectiveFamily_properPushforwardFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Effective.lean, line 689](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Effective.lean#L689). The attribute's comment: “proper pushforward”.
 
 > **Stacks Project, Tag 0H5S, proper pushforward.** The proper pushforward of an effective
 > family of `r`-cycles on the fibres of `X/S` along a proper morphism `p : X ⟶ Y` of schemes over
@@ -102,7 +102,7 @@ theorem isEffectiveFamily_properPushforwardFamily {X Y S : Scheme.{u}} (sX : X �
 
 [Tag 0H5T](https://stacks.math.columbia.edu/tag/0H5T) in the Stacks Project.
 
-**`Stacks.Chow.isEffectiveFamily_iff_forall_restrictedFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Effective.lean, line 199](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Effective.lean#L199).
+**`Stacks.Chow.isEffectiveFamily_iff_forall_restrictedFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Effective.lean, line 199](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Effective.lean#L199).
 
 > **Stacks Project, Tag 0H5T.** Effectivity of a family of `r`-cycles on the fibres of `X/S`
 > may be checked Zariski locally on `X` and on `S`: given open subschemes `U a ⊆ X` and
@@ -128,7 +128,7 @@ theorem isEffectiveFamily_iff_forall_restrictedFamily {X S : Scheme.{u}} (f : X 
 
 [Tag 0H5U](https://stacks.math.columbia.edu/tag/0H5U) in the Stacks Project.
 
-**`Stacks.Chow.isEffectiveFamily_iff_baseChangeFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Effective.lean, line 611](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Effective.lean#L611).
+**`Stacks.Chow.isEffectiveFamily_iff_baseChangeFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Effective.lean, line 611](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Effective.lean#L611).
 
 > **Stacks Project, Tag 0H5U.** Let `α` be a family of `r`-cycles on the fibres of `X/S` and
 > let `g : S' ⟶ S` be surjective. Then `α` is effective if and only if its base change `g^*α` is
@@ -153,7 +153,7 @@ theorem isEffectiveFamily_iff_baseChangeFamily {X S S' : Scheme.{u}} (f : X ⟶ 
 
 [Tag 0H5V](https://stacks.math.columbia.edu/tag/0H5V) in the Stacks Project.
 
-**`Stacks.Chow.isEffectiveFamily_iff_forall_flatPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Effective.lean, line 547](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Effective.lean#L547).
+**`Stacks.Chow.isEffectiveFamily_iff_forall_flatPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Effective.lean, line 547](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Effective.lean#L547).
 
 > **Stacks Project, Tag 0H5V.** Let `α` be a family of `r`-cycles on the fibres of `X/S` and
 > let `{g i : X' i ⟶ X}` be a jointly surjective family of flat morphisms, locally of finite type
@@ -184,7 +184,7 @@ theorem isEffectiveFamily_iff_forall_flatPullback {X S : Scheme.{u}} (f : X ⟶ 
 
 [Tag 0H5W](https://stacks.math.columbia.edu/tag/0H5W) in the Stacks Project.
 
-**`Stacks.Chow.isClosed_supportOfFamily_of_isEffectiveFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/EffectiveSupportClosed.lean, line 332](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/EffectiveSupportClosed.lean#L332).
+**`Stacks.Chow.isClosed_supportOfFamily_of_isEffectiveFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/EffectiveSupportClosed.lean, line 332](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/EffectiveSupportClosed.lean#L332).
 
 > **Stacks Project, Tag 0H5W.** Let `f : X ⟶ S` be a morphism of schemes with `S` locally
 > Noetherian and `f` locally of finite type, let `r ≥ 0` be an integer and let `α` be a relative
@@ -200,7 +200,7 @@ theorem isClosed_supportOfFamily_of_isEffectiveFamily (f : X ⟶ S) [LocallyOfFi
 
 [Tag 0H5X](https://stacks.math.columbia.edu/tag/0H5X) in the Stacks Project.
 
-**`Stacks.Chow.isEquidimensional_of_isEffectiveFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/EffectiveEquidimensional.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/EffectiveEquidimensional.lean#L131).
+**`Stacks.Chow.isEquidimensional_of_isEffectiveFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/EffectiveEquidimensional.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/EffectiveEquidimensional.lean#L131).
 
 > **Stacks Project, Tag 0H5X.** Let `f : X ⟶ S` be a morphism of schemes with `S` locally
 > Noetherian and `f` locally of finite type, let `r ≥ 0` be an integer and let `α` be a relative
@@ -216,7 +216,7 @@ theorem isEquidimensional_of_isEffectiveFamily (f : X ⟶ S) [LocallyOfFiniteTyp
 
 [Tag 0H5Y](https://stacks.math.columbia.edu/tag/0H5Y) in the Stacks Project.
 
-**`Stacks.Chow.effectiveRelativeCyclesFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/EffectiveFunctor.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/EffectiveFunctor.lean#L163). The attribute's comment: “the functor S' ↦ z^eff(X'/S', r), X' = S' ×\_S X, on schemes locally of finite type over S”.
+**`Stacks.Chow.effectiveRelativeCyclesFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/EffectiveFunctor.lean, line 163](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/EffectiveFunctor.lean#L163). The attribute's comment: “the functor S' ↦ z^eff(X'/S', r), X' = S' ×\_S X, on schemes locally of finite type over S”.
 
 > The contravariant functor `S' ↦ z^eff(X'/S', r)`, `X' = S' ×_S X`, on the category of
 > schemes locally of finite type over `S`, the map attached to a morphism `S'' ⟶ S'` over `S` being
@@ -226,7 +226,7 @@ theorem isEquidimensional_of_isEffectiveFamily (f : X ⟶ S) [LocallyOfFiniteTyp
 def effectiveRelativeCyclesFunctor : (LocallyOfFiniteTypeOver S)ᵒᵖ ⥤ Type u
 ```
 
-**`Stacks.Chow.not_isRepresentable_effectiveRelativeCyclesFunctor_specFieldExt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/NonRepresentable.lean, line 217](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/NonRepresentable.lean#L217). The attribute's comment: “the functor S' ↦ z^eff(X'/S', r) is not representable, the counter example the remark leaves to the reader, built from z(X'/S', r) = z(X'\_red/S'\_red, r)”.
+**`Stacks.Chow.not_isRepresentable_effectiveRelativeCyclesFunctor_specFieldExt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/NonRepresentable.lean, line 217](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/NonRepresentable.lean#L217). The attribute's comment: “the functor S' ↦ z^eff(X'/S', r) is not representable, the counter example the remark leaves to the reader, built from z(X'/S', r) = z(X'\_red/S'\_red, r)”.
 
 > **Stacks Project, Remark 0H5Y.** Let `k` be a field and let `K/k` be a finite purely
 > inseparable extension of degree `> 1`, so that `S = Spec k` is Noetherian and
@@ -247,7 +247,7 @@ theorem not_isRepresentable_effectiveRelativeCyclesFunctor_specFieldExt
     ¬ (effectiveRelativeCyclesFunctor (specFieldExt k K) 0).IsRepresentable
 ```
 
-**`Stacks.Chow.exists_not_isRepresentable_effectiveRelativeCyclesFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/NonRepresentable.lean, line 310](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/NonRepresentable.lean#L310). The attribute's comment: “the functor S' ↦ z^eff(X'/S', r) cannot be representable in general”.
+**`Stacks.Chow.exists_not_isRepresentable_effectiveRelativeCyclesFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/NonRepresentable.lean, line 310](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/NonRepresentable.lean#L310). The attribute's comment: “the functor S' ↦ z^eff(X'/S', r) cannot be representable in general”.
 
 > **Stacks Project, Remark 0H5Y.** The functor `S' ↦ z^eff(X'/S', r)`, `X' = S' ×_S X`, on
 > schemes locally of finite type over `S` is not representable in general: there are a locally
@@ -261,7 +261,7 @@ theorem exists_not_isRepresentable_effectiveRelativeCyclesFunctor :
       (r : ℕ), ¬ (effectiveRelativeCyclesFunctor f r).IsRepresentable
 ```
 
-**`Stacks.Chow.relativeCyclesAddEquivReductionReduction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ReducedInvariance.lean, line 233](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ReducedInvariance.lean#L233). The attribute's comment: “the invariance z(X/S, r) = z(X\_red/S\_red, r)”.
+**`Stacks.Chow.relativeCyclesAddEquivReductionReduction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ReducedInvariance.lean, line 234](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ReducedInvariance.lean#L234). The attribute's comment: “the invariance z(X/S, r) = z(X\_red/S\_red, r)”.
 
 > **Stacks Project, Remark 0H5Y.** `z(X/S, r) = z(X_red/S_red, r)`: the group of relative
 > `r`-cycles does not change when both the source and the base are replaced by their reductions.
@@ -274,7 +274,7 @@ noncomputable def relativeCyclesAddEquivReductionReduction :
     ↥(relativeCycles f r) ≃+ ↥(relativeCycles (Scheme.reductionMap f) r)
 ```
 
-**`Stacks.Chow.SymPlane.baseChange_quot_ne_alpha`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/SymmetricSquarePlane.lean, line 475](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/SymmetricSquarePlane.lean#L475). The attribute's comment: “in characteristic 2 the cycle α on A² × A² does not descend to Sym²(A²): there is no cycle β whose pullback to W is α”.
+**`Stacks.Chow.SymPlane.baseChange_quot_ne_alpha`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/SymmetricSquarePlane.lean, line 475](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/SymmetricSquarePlane.lean#L475). The attribute's comment: “in characteristic 2 the cycle α on A² × A² does not descend to Sym²(A²): there is no cycle β whose pullback to W is α”.
 
 > **Stacks Project, Remark 0H5Y, the characteristic `2` example: there is no cycle `β`.** Let
 > `k` be a field of characteristic `2`, `X = A²_k`, `W = X ×_k X` and `Sym²(X) = Spec B` with
@@ -292,7 +292,7 @@ theorem baseChange_quot_ne_alpha
       (isPullback_overBaseChange (planeHom k) (quot k).hom) 0 β ≠ (alpha k).1.1
 ```
 
-**`Stacks.Chow.SymPlane.not_isRepresentable_of_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/SymmetricSquarePlane.lean, line 625](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/SymmetricSquarePlane.lean#L625). The attribute's comment: “in characteristic 2 the functor is not representable on any category of schemes of finite type over k containing W and the principal opens of W and of Sym²(X)”.
+**`Stacks.Chow.SymPlane.not_isRepresentable_of_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/SymmetricSquarePlane.lean, line 625](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/SymmetricSquarePlane.lean#L625). The attribute's comment: “in characteristic 2 the functor is not representable on any category of schemes of finite type over k containing W and the principal opens of W and of Sym²(X)”.
 
 > **Stacks Project, Remark 0H5Y, the characteristic `2` example.** Let `k` be a field of
 > characteristic `2` and `X = A²_k`. On any full subcategory of the schemes of finite type over
@@ -316,7 +316,7 @@ theorem not_isRepresentable_of_le (P : ObjectProperty (LocallyOfFiniteTypeOver (
     ¬ (P.ι.op ⋙ effectiveRelativeCyclesFunctor (planeHom k) 0).IsRepresentable
 ```
 
-**`Stacks.Chow.SymPlane.map_sym_diagonalRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/SymmetricSquarePlane.lean, line 701](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/SymmetricSquarePlane.lean#L701). The attribute's comment: “the image of the diagonal in Sym²(X) is V = Spec k[u₁², v₁²]”.
+**`Stacks.Chow.SymPlane.map_sym_diagonalRestriction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/SymmetricSquarePlane.lean, line 701](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/SymmetricSquarePlane.lean#L701). The attribute's comment: “the image of the diagonal in Sym²(X) is V = Spec k[u₁², v₁²]”.
 
 > **The image of the diagonal in `Sym²(X)` is `V = Spec k[u², v²]`**, in characteristic `2`:
 > the coordinate ring of `Sym²(X)` restricts on the diagonal to `k[u², v²]`.
@@ -327,7 +327,7 @@ theorem map_sym_diagonalRestriction :
       Algebra.adjoin k {(X 0 : MvPolynomial (Fin 2) k) ^ 2, X 1 ^ 2}
 ```
 
-**`Stacks.Chow.SymPlane.not_isRepresentable_weaklyNormal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/SymmetricSquarePlane.lean, line 827](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/SymmetricSquarePlane.lean#L827). The attribute's comment: “in characteristic 2 the functor is not representable on the category of weakly normal schemes of finite type over k”.
+**`Stacks.Chow.SymPlane.not_isRepresentable_weaklyNormal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/SymmetricSquarePlane.lean, line 827](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/SymmetricSquarePlane.lean#L827). The attribute's comment: “in characteristic 2 the functor is not representable on the category of weakly normal schemes of finite type over k”.
 
 > **Stacks Project, Remark 0H5Y, the characteristic `2` example, on weakly normal schemes.**
 > Let `k` be a field of characteristic `2` and `X = A²_k`. Call a scheme weakly normal if every
@@ -342,7 +342,7 @@ theorem not_isRepresentable_weaklyNormal :
       effectiveRelativeCyclesFunctor (planeHom k) 0).IsRepresentable
 ```
 
-**`Stacks.Chow.SymPlane.mem_sym_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/SymmetricSquarePlaneRing.lean, line 337](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/SymmetricSquarePlaneRing.lean#L337). The attribute's comment: “Sym²(X) = W/⟨σ⟩ is the spectrum of k[u₁ + u₂, u₁u₂, v₁ + v₂, v₁v₂, u₁v₁ + u₂v₂]”.
+**`Stacks.Chow.SymPlane.mem_sym_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/SymmetricSquarePlaneRing.lean, line 337](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/SymmetricSquarePlaneRing.lean#L337). The attribute's comment: “Sym²(X) = W/⟨σ⟩ is the spectrum of k[u₁ + u₂, u₁u₂, v₁ + v₂, v₁v₂, u₁v₁ + u₂v₂]”.
 
 > **The invariants of the swap.** In characteristic `2`, an element of `k[u₁, u₂, v₁, v₂]` is
 > fixed by the involution exchanging the two factors exactly when it lies in
@@ -359,4 +359,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 62.9, Tag 0H5Q](https://stacks.math.columbia.edu/tag/0H5Q)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

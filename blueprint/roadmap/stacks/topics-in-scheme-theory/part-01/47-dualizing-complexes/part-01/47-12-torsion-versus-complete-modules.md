@@ -8,13 +8,13 @@ proof: formalized
 
 # 47.12 Torsion versus complete modules
 
-Section 47.12 of the Stacks Project, [Tag 0A6V](https://stacks.math.columbia.edu/tag/0A6V). 5 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 47.12 of the Stacks Project, [Tag 0A6V](https://stacks.math.columbia.edu/tag/0A6V). 5 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0A6W, a lemma
 
 [Tag 0A6W](https://stacks.math.columbia.edu/tag/0A6W) in the Stacks Project.
 
-**`Dualizing.isIso_derivedCompletion_map_localCohomologyCounit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TorsionComplete/CompletionAfterLocalCohomology.lean, line 184](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/TorsionComplete/CompletionAfterLocalCohomology.lean#L184). The attribute's comment: “completion\_after\_local”.
+**`Dualizing.isIso_derivedCompletion_map_localCohomologyCounit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TorsionComplete/CompletionAfterLocalCohomology.lean, line 184](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/TorsionComplete/CompletionAfterLocalCohomology.lean#L184). The attribute's comment: “completion\_after\_local”.
 
 > **Stacks 0A6W, completion after local cohomology.** For a finitely generated ideal `I` of a
 > commutative ring `A` and `Z = V(I)`, the counit `RΓ_Z(K) ⟶ K` of the adjunction defining local
@@ -33,7 +33,7 @@ theorem isIso_derivedCompletion_map_localCohomologyCounit
       ((localCohomologyAdjunction A I hI).counit.app K))
 ```
 
-**`Dualizing.isIso_localCohomology_map_derivedCompletionUnit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TorsionComplete/LocalCohomologyAfterCompletion.lean, line 330](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/TorsionComplete/LocalCohomologyAfterCompletion.lean#L330). The attribute's comment: “local\_after\_completion”.
+**`Dualizing.isIso_localCohomology_map_derivedCompletionUnit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TorsionComplete/LocalCohomologyAfterCompletion.lean, line 330](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/TorsionComplete/LocalCohomologyAfterCompletion.lean#L330). The attribute's comment: “local\_after\_completion”.
 
 > **Stacks 0A6W, local cohomology after completion.** For a finitely generated ideal
 > `I = (f₁, …, f_r)` of a commutative ring `A` and `Z = V(I)`, the derived-completion unit
@@ -52,7 +52,7 @@ theorem isIso_localCohomology_map_derivedCompletionUnit (I : Ideal A) (hI : I.FG
 
 [Tag 0A6X](https://stacks.math.columbia.edu/tag/0A6X) in the Stacks Project.
 
-**`Dualizing.torsionCompleteEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TorsionComplete/Equivalence.lean, line 291](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/TorsionComplete/Equivalence.lean#L291).
+**`Dualizing.torsionCompleteEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TorsionComplete/Equivalence.lean, line 291](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/TorsionComplete/Equivalence.lean#L291).
 
 > **Stacks 0A6X.** For a finitely generated ideal `I` of a commutative ring `A` and `Z = V(I)`,
 > derived `I`-completion and local cohomology with support in `Z` are quasi-inverse equivalences
@@ -72,7 +72,7 @@ def torsionCompleteEquivalence (A : Type u) [CommRing A] (I : Ideal A) (hI : I.F
 
 [Tag 0A6Y](https://stacks.math.columbia.edu/tag/0A6Y) in the Stacks Project.
 
-**`Dualizing.derivedHomCompletionTorsionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TorsionComplete/DerivedHomCompletionTorsion.lean, line 435](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/TorsionComplete/DerivedHomCompletionTorsion.lean#L435).
+**`Dualizing.derivedHomCompletionTorsionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TorsionComplete/DerivedHomCompletionTorsion.lean, line 435](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/TorsionComplete/DerivedHomCompletionTorsion.lean#L435).
 
 > For `A` a commutative ring, `I` a finitely generated ideal, `Z = V(I)`, `(-)^∧` derived
 > `I`-adic completion and `RΓ_Z` local cohomology, the canonical isomorphism
@@ -89,7 +89,7 @@ def derivedHomCompletionTorsionIso (I : Ideal A) (hI : I.FG) (f : Fin r → A)
           (localCohomologyEndofunctor A I hI).obj L)
 ```
 
-**`Dualizing.derivedCompletionDerivedHomTorsionNatIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TorsionComplete/DerivedHomCompletionTorsion.lean, line 592](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/TorsionComplete/DerivedHomCompletionTorsion.lean#L592). The attribute's comment: “natural in the source object”.
+**`Dualizing.derivedCompletionDerivedHomTorsionNatIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TorsionComplete/DerivedHomCompletionTorsion.lean, line 592](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/TorsionComplete/DerivedHomCompletionTorsion.lean#L592). The attribute's comment: “natural in the source object”.
 
 > For a finite family `f` generating an ideal `I` of a commutative ring `A`, with `Z = V(I)`,
 > there is an isomorphism `RHom_A(-, L)^∧ ≅ RHom_A(RΓ_Z(-), RΓ_Z(L))` of contravariant functors
@@ -107,7 +107,7 @@ def derivedCompletionDerivedHomTorsionNatIso (I : Ideal A) (hI : I.FG) (f : Fin 
 
 [Tag 0EEW](https://stacks.math.columbia.edu/tag/0EEW) in the Stacks Project.
 
-**`Stacks.Algebraization.isDerivedLimitWithProjections_completedLocalCohomologyNormalizedProjection_of_finite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionUnitLocalCohomology/NormalizedProjections.lean, line 241](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionUnitLocalCohomology/NormalizedProjections.lean#L241). The attribute's comment: “part (1) for the projections normalized against the completion unit”.
+**`Stacks.Algebraization.isDerivedLimitWithProjections_completedLocalCohomologyNormalizedProjection_of_finite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionUnitLocalCohomology/NormalizedProjections.lean, line 241](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/CompletionUnitLocalCohomology/NormalizedProjections.lean#L241). The attribute's comment: “part (1) for the projections normalized against the completion unit”.
 
 > **Stacks 0EEW, part (1), for the projections normalized against the completion unit.** For a
 > finite module over a Noetherian ring, `RΓ_{V(J)}(M)^∧` is a derived limit of the tower
@@ -134,7 +134,7 @@ theorem isDerivedLimitWithProjections_completedLocalCohomologyNormalizedProjecti
       (completedLocalCohomologyNormalizedProjection I J hI hJ M)
 ```
 
-**`Dualizing.exists_isDerivedLimit_adicQuotientLocalCohomologySystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TorsionComplete/CompletedLocalCohomologyLimit.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/TorsionComplete/CompletedLocalCohomologyLimit.lean#L131). The attribute's comment: “the tower of local cohomologies has a derived limit”.
+**`Dualizing.exists_isDerivedLimit_adicQuotientLocalCohomologySystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TorsionComplete/CompletedLocalCohomologyLimit.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/TorsionComplete/CompletedLocalCohomologyLimit.lean#L131). The attribute's comment: “the tower of local cohomologies has a derived limit”.
 
 > The tower `n ↦ RΓ_Z(M/IⁿM)` has a derived limit: countable products exist in `D(A)`, so the
 > difference map `1 - shift` on the product of the terms sits in a distinguished triangle.
@@ -146,7 +146,7 @@ theorem exists_isDerivedLimit_adicQuotientLocalCohomologySystem (I J : Ideal A) 
       IsDerivedLimit (adicQuotientLocalCohomologySystem A I J hJ M) K
 ```
 
-**`Dualizing.exists_milnor_shortExact_of_isDerivedLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TorsionComplete/CompletedLocalCohomologyLimit.lean, line 174](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/TorsionComplete/CompletedLocalCohomologyLimit.lean#L174). The attribute's comment: “the Milnor short exact sequence for the tower”.
+**`Dualizing.exists_milnor_shortExact_of_isDerivedLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TorsionComplete/CompletedLocalCohomologyLimit.lean, line 174](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/TorsionComplete/CompletedLocalCohomologyLimit.lean#L174). The attribute's comment: “the Milnor short exact sequence for the tower”.
 
 > **Stacks 0EEW, part (2), for an arbitrary derived limit of the tower.** The cohomology of a
 > derived limit of `n ↦ RΓ_Z(M/IⁿM)` sits in a short exact sequence between the first derived
@@ -187,7 +187,7 @@ theorem exists_milnor_shortExact_of_isDerivedLimit (I J : Ideal A) (hJ : J.FG)
               (ShortComplex.mk i q w).ShortExact
 ```
 
-**`Dualizing.isZero_homology_of_isDerivedLimit_of_neg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TorsionComplete/CompletedLocalCohomologyLimit.lean, line 381](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/TorsionComplete/CompletedLocalCohomologyLimit.lean#L381). The attribute's comment: “vanishing in negative degrees”.
+**`Dualizing.isZero_homology_of_isDerivedLimit_of_neg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TorsionComplete/CompletedLocalCohomologyLimit.lean, line 381](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/TorsionComplete/CompletedLocalCohomologyLimit.lean#L381). The attribute's comment: “vanishing in negative degrees”.
 
 > **Stacks 0EEW, the negative-degree vanishing, for an arbitrary derived limit of the tower.**
 > A derived limit of `n ↦ RΓ_Z(M/IⁿM)` has no cohomology in negative degrees.
@@ -199,7 +199,7 @@ theorem isZero_homology_of_isDerivedLimit_of_neg (I J : Ideal A) (hJ : J.FG)
     IsZero ((DerivedCategory.homologyFunctor (ModuleCat.{u} A) i).obj K)
 ```
 
-**`Dualizing.isDerivedLimit_completedLocalCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TorsionComplete/CompletedLocalCohomologyLimit.lean, line 421](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/TorsionComplete/CompletedLocalCohomologyLimit.lean#L421). The attribute's comment: “part (1): the derived I-adic completion of RΓ\_J(M) is R lim RΓ\_J(M/IⁿM)”.
+**`Dualizing.isDerivedLimit_completedLocalCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TorsionComplete/CompletedLocalCohomologyLimit.lean, line 421](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/TorsionComplete/CompletedLocalCohomologyLimit.lean#L421). The attribute's comment: “part (1): the derived I-adic completion of RΓ\_J(M) is R lim RΓ\_J(M/IⁿM)”.
 
 > **Stacks 0EEW, part (1).** The derived `I`-adic completion of `RΓ_Z(M)` is a derived limit
 > of the tower `n ↦ RΓ_Z(M/IⁿM)`.
@@ -224,7 +224,7 @@ theorem isDerivedLimit_completedLocalCohomology [IsNoetherianRing A]
 
 [Tag 0EEX](https://stacks.math.columbia.edu/tag/0EEX) in the Stacks Project.
 
-**`Dualizing.exists_iso_homology_zero_completedLocalCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TorsionComplete/CompletedLocalCohomologyDegreeZero.lean, line 643](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/TorsionComplete/CompletedLocalCohomologyDegreeZero.lean#L643).
+**`Dualizing.exists_iso_homology_zero_completedLocalCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TorsionComplete/CompletedLocalCohomologyDegreeZero.lean, line 643](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/TorsionComplete/CompletedLocalCohomologyDegreeZero.lean#L643).
 
 > **Stacks 0EEX.** Let `I` and `J` be ideals of a Noetherian ring `A` which is `I`-adically
 > complete, let `M` be a finite `A`-module and `Z = V(J)`. The degree-zero cohomology of the
@@ -271,4 +271,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 47.12, Tag 0A6V](https://stacks.math.columbia.edu/tag/0A6V)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

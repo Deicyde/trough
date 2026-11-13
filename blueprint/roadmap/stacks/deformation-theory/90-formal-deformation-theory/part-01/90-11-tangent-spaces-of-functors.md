@@ -8,7 +8,7 @@ proof: formalized
 
 # 90.11 Tangent spaces of functors
 
-Section 90.11 of the Stacks Project, [Tag 06I2](https://stacks.math.columbia.edu/tag/06I2). 14 tags here are carried by 35 declarations of the repository (all in StacksFrontier) and 9 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 90.11 of the Stacks Project, [Tag 06I2](https://stacks.math.columbia.edu/tag/06I2). 14 tags here are carried by 39 declarations of the repository (all in StacksFrontier) and 9 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 06I3, a definition
 
@@ -16,9 +16,9 @@ Section 90.11 of the Stacks Project, [Tag 06I2](https://stacks.math.columbia.edu
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Functor.Additive`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.Additive#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch90.lean, line 17](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch90.lean#L17) (StacksFrontier): “additivity on Hom\_R(M, N)”. References: EGA III (7.2.6); SGA 4 XVII (1.1.11); SGA 4 XVII (2.2.13.1); SGA 4½ Etat 0 (1.3.3), “partial”; SGA 5 V (2.3.4); SGA 6 I (1.1.3), “partial”.
-- [`CategoryTheory.Functor.Linear`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.Linear#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch90.lean, line 18](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch90.lean#L18) (StacksFrontier): “R-homogeneity: L(r • f) = r • L(f)”. References: EGA III (7.1.2).
-- [`CategoryTheory.Functor.mapLinearMap`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.mapLinearMap#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch90.lean, line 19](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch90.lean#L19) (StacksFrontier): “L on Hom\_R(M, N) as a map of R-modules”.
+- [`CategoryTheory.Functor.Additive`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.Additive#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch90.lean, line 17](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch90.lean#L17) (StacksFrontier): “additivity on Hom\_R(M, N)”. References: EGA III (7.2.6); SGA 4 XVII (1.1.11); SGA 4 XVII (2.2.13.1); SGA 4½ Etat 0 (1.3.3), “partial”; SGA 5 V (2.3.4); SGA 6 I (1.1.3), “partial”.
+- [`CategoryTheory.Functor.Linear`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.Linear#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch90.lean, line 18](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch90.lean#L18) (StacksFrontier): “R-homogeneity: L(r • f) = r • L(f)”. References: EGA III (7.1.2).
+- [`CategoryTheory.Functor.mapLinearMap`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Functor.mapLinearMap#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch90.lean, line 19](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch90.lean#L19) (StacksFrontier): “L on Hom\_R(M, N) as a map of R-modules”.
 
 ## Tag 06I5, a remark
 
@@ -26,15 +26,15 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`preservesFiniteProductsOfAdditive`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=preservesFiniteProductsOfAdditive#doc) registered with `add_to_stacks` in [StacksFrontier/Deformation/TangentSpace/LinearFunctor.lean, line 675](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/LinearFunctor.lean#L675) (StacksFrontier): “preservation of finite products”.
-- [`map_isZero`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=map_isZero#doc) registered with `add_to_stacks` in [StacksFrontier/Deformation/TangentSpace/LinearFunctor.lean, line 677](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/LinearFunctor.lean#L677) (StacksFrontier): “zero modules are sent to zero modules”.
-- [`fgModuleCat_linearFunctorLift_unique`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=fgModuleCat_linearFunctorLift_unique#doc) registered with `add_to_stacks` in [StacksFrontier/Deformation/TangentSpace/LinearFunctor.lean, line 679](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/LinearFunctor.lean#L679) (StacksFrontier): “unique linear lift”.
+- [`preservesFiniteProductsOfAdditive`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=preservesFiniteProductsOfAdditive#doc) registered with `add_to_stacks` in [StacksFrontier/Deformation/TangentSpace/LinearFunctor.lean, line 675](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/TangentSpace/LinearFunctor.lean#L675) (StacksFrontier): “preservation of finite products”.
+- [`map_isZero`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=map_isZero#doc) registered with `add_to_stacks` in [StacksFrontier/Deformation/TangentSpace/LinearFunctor.lean, line 677](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/TangentSpace/LinearFunctor.lean#L677) (StacksFrontier): “zero modules are sent to zero modules”.
+- [`fgModuleCat_linearFunctorLift_unique`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=fgModuleCat_linearFunctorLift_unique#doc) registered with `add_to_stacks` in [StacksFrontier/Deformation/TangentSpace/LinearFunctor.lean, line 679](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/TangentSpace/LinearFunctor.lean#L679) (StacksFrontier): “unique linear lift”.
 
 ## Tag 06I6, a lemma
 
 [Tag 06I6](https://stacks.math.columbia.edu/tag/06I6) in the Stacks Project.
 
-**`Deformation.linearFunctorLift_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/LinearFunctor.lean, line 613](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/LinearFunctor.lean#L613). The attribute's comment: “arbitrary linear source category”.
+**`Deformation.linearFunctorLift_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/LinearFunctor.lean, line 613](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/TangentSpace/LinearFunctor.lean#L613). The attribute's comment: “arbitrary linear source category”.
 
 > **Stacks Project, Tag 06I6, general source category.** A finite-product-preserving
 > set-valued functor on any preadditive `R`-linear category with a terminal object, binary
@@ -52,7 +52,7 @@ theorem linearFunctorLift_unique
     Nonempty (Unique (LinearFunctorLift R F))
 ```
 
-**`Deformation.fgModuleCat_linearFunctorLift_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/LinearFunctor.lean, line 634](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/LinearFunctor.lean#L634). The attribute's comment: “finitely generated modules”.
+**`Deformation.fgModuleCat_linearFunctorLift_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/LinearFunctor.lean, line 634](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/TangentSpace/LinearFunctor.lean#L634). The attribute's comment: “finitely generated modules”.
 
 > **Stacks Project, Tag 06I6, finitely generated case.** A finite-product-preserving
 > set-valued functor on finitely generated `R`-modules which takes the zero module to a singleton
@@ -65,7 +65,7 @@ theorem fgModuleCat_linearFunctorLift_unique
     Nonempty (Unique (LinearFunctorLift R F))
 ```
 
-**`Deformation.moduleCat_linearFunctorLift_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/LinearFunctor.lean, line 654](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/LinearFunctor.lean#L654). The attribute's comment: “all modules”.
+**`Deformation.moduleCat_linearFunctorLift_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/LinearFunctor.lean, line 654](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/TangentSpace/LinearFunctor.lean#L654). The attribute's comment: “all modules”.
 
 > **Stacks Project, Tag 06I6, unrestricted case.** A finite-product-preserving set-valued
 > functor on `R`-modules which takes the zero module to a singleton has a unique `R`-linear lift
@@ -82,7 +82,7 @@ theorem moduleCat_linearFunctorLift_unique
 
 [Tag 06I7](https://stacks.math.columbia.edu/tag/06I7) in the Stacks Project.
 
-**`Deformation.fgModuleCat_linearFunctorLift_natTrans`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/LinearFunctor.lean, line 746](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/LinearFunctor.lean#L746).
+**`Deformation.fgModuleCat_linearFunctorLift_natTrans`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/LinearFunctor.lean, line 746](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/TangentSpace/LinearFunctor.lean#L746).
 
 > **Stacks Project, Tag 06I7.** A natural transformation between product-preserving
 > set-valued functors on finitely generated modules uniquely lifts to a natural transformation
@@ -108,7 +108,7 @@ theorem fgModuleCat_linearFunctorLift_natTrans
 
 [Tag 06I8](https://stacks.math.columbia.edu/tag/06I8) in the Stacks Project.
 
-**`Deformation.linearFunctor_iso_tensorLeft`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/LinearFunctor.lean, line 912](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/LinearFunctor.lean#L912).
+**`Deformation.linearFunctor_iso_tensorLeft`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/LinearFunctor.lean, line 910](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/TangentSpace/LinearFunctor.lean#L910).
 
 > **Stacks Project, Tag 06I8.** A linear functor from finite-dimensional vector spaces over
 > a field to vector spaces is naturally isomorphic to tensoring with its value on the ground
@@ -126,7 +126,7 @@ theorem linearFunctor_iso_tensorLeft (K : Type u) [Field K]
 
 [Tag 06I9](https://stacks.math.columbia.edu/tag/06I9) in the Stacks Project.
 
-**`Deformation.trivSqZeroExtFunctor_preservesFiniteProducts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/Functor.lean, line 179](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/Functor.lean#L179). References: SGA 7 VI (1.3(c)), “more general”.
+**`Deformation.trivSqZeroExtFunctor_preservesFiniteProducts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/Functor.lean, line 179](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/TangentSpace/Functor.lean#L179). References: SGA 7 VI (1.3(c)), “more general”.
 
 > The trivial square-zero extension functor from `R`-modules to
 > `S`-algebras over `R` preserves finite products.
@@ -140,7 +140,7 @@ theorem trivSqZeroExtFunctor_preservesFiniteProducts :
 
 [Tag 06IA](https://stacks.math.columbia.edu/tag/06IA) in the Stacks Project.
 
-**`Deformation.tangentSpaceModuleStructure`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/Functor.lean, line 346](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/Functor.lean#L346). References: SGA 3 XI (1.9), “partial”.
+**`Deformation.tangentSpaceModuleStructure`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/Functor.lean, line 345](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/TangentSpace/Functor.lean#L345). References: SGA 3 XI (1.9), “partial”.
 
 > **Stacks Project, Tag 06IA.** A set-valued functor on a strictly full
 > subcategory of `S`-algebras over `R` which takes the zero square-zero extension
@@ -161,7 +161,7 @@ noncomputable def tangentSpaceModuleStructure
 
 [Tag 06IB](https://stacks.math.columbia.edu/tag/06IB) in the Stacks Project.
 
-**`Deformation.TangentSpace`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/Functor.lean, line 430](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/Functor.lean#L430). References: SGA 7 VI (1.15), “special case”.
+**`Deformation.TangentSpace`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/Functor.lean, line 429](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/TangentSpace/Functor.lean#L429). References: SGA 7 VI (1.15), “special case”.
 
 > **Stacks Project, Tag 06IB.** The tangent space of a set-valued functor is its value on the
 > dual numbers.
@@ -177,7 +177,7 @@ abbrev TangentSpace
 
 [Tag 06SR](https://stacks.math.columbia.edu/tag/06SR) in the Stacks Project.
 
-**`Deformation.artinianTangentSpace`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/Functor.lean, line 626](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/Functor.lean#L626). The attribute's comment: “Definition 06IB applied to the category of augmented Artinian local algebras”.
+**`Deformation.artinianTangentSpace`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/Functor.lean, line 625](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/TangentSpace/Functor.lean#L625). The attribute's comment: “Definition 06IB applied to the category of augmented Artinian local algebras”.
 
 > The tangent space of a functor on `𝒞_Λ`, through its canonical augmented-algebra model.
 
@@ -186,7 +186,7 @@ noncomputable abbrev artinianTangentSpace
     (F : ArtinianLocalAlgCat.{s, u, u} Λ k ⥤ Type w) : Type w
 ```
 
-**`Deformation.artinianTangentSpace_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/Functor.lean, line 634](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/Functor.lean#L634). The attribute's comment: “Definition 06IB applied to the category of augmented Artinian local algebras”.
+**`Deformation.artinianTangentSpace_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/Functor.lean, line 633](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/TangentSpace/Functor.lean#L633). The attribute's comment: “Definition 06IB applied to the category of augmented Artinian local algebras”.
 
 > Evaluation on the Artinian square-zero object agrees with the Over-model tangent space.
 
@@ -201,7 +201,7 @@ theorem artinianTangentSpace_eq
 
 [Tag 06IC](https://stacks.math.columbia.edu/tag/06IC) in the Stacks Project.
 
-**`Deformation.isProrepresentable_preservesFiniteLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Predeformation/ProrepresentableLimits.lean, line 198](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Predeformation/ProrepresentableLimits.lean#L198). The attribute's comment: “prorepresentable\_preserves\_limits”.
+**`Deformation.isProrepresentable_preservesFiniteLimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Predeformation/ProrepresentableLimits.lean, line 201](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Predeformation/ProrepresentableLimits.lean#L201). The attribute's comment: “prorepresentable\_preserves\_limits”.
 
 > **Stacks Project, Tag 06IC.** A prorepresentable functor on Artinian local
 > `Λ`-algebras preserves finite limits.
@@ -212,21 +212,10 @@ theorem isProrepresentable_preservesFiniteLimits
     PreservesFiniteLimits F
 ```
 
-**`Deformation.tangentSpaceDerivationsLinearEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/Derivations.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/Derivations.lean#L97). The attribute's comment: “tangent\_space\_derivations”.
+**`Deformation.tangentSpaceDerivationsLinearEquiv_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/Derivations.lean, line 146](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/TangentSpace/Derivations.lean#L146). The attribute's comment: “the bijection TF = Der\_Λ(S, k), f ↦ f - q”.
 
-> **Stacks Project, Tag 06IC.** The tangent space of the functor represented by `S`
-> is canonically linearly equivalent to the `Λ`-derivations from `S` to its residue field.
-
-```lean
-noncomputable def tangentSpaceDerivationsLinearEquiv
-    (S : CompleteLocalAlgCat.{u, max v w, w} Λ k) :
-    letI : Algebra S k := (residueHom S).toRingHom.toAlgebra
-    tangentSpaceArtinian Λ k (restrictedCoyoneda S) ≃ₗ[k] Derivation Λ S k
-```
-
-**`Deformation.tangentSpaceDerivationsLinearEquiv_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/Derivations.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/Derivations.lean#L119). The attribute's comment: “tangent\_space\_derivations”.
-
-> A tangent vector corresponds to the downlifted square-zero component.
+> A tangent vector corresponds to the downlifted square-zero component: the bijection is
+> `f ↦ f - q`.
 
 ```lean
 theorem tangentSpaceDerivationsLinearEquiv_apply
@@ -236,7 +225,7 @@ theorem tangentSpaceDerivationsLinearEquiv_apply
     tangentSpaceDerivationsLinearEquiv S f s = (f.hom s).snd.down
 ```
 
-**`Deformation.tangentSpaceDerivationsLinearEquiv_precomp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/Derivations.lean, line 152](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/Derivations.lean#L152). The attribute's comment: “tangent\_space\_derivations”.
+**`Deformation.tangentSpaceDerivationsLinearEquiv_precomp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/Derivations.lean, line 179](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/TangentSpace/Derivations.lean#L179). The attribute's comment: “the bijection TF = Der\_Λ(S, k), f ↦ f - q”.
 
 > The identification commutes with precomposition by morphisms of representing
 > algebras.
@@ -249,18 +238,99 @@ theorem tangentSpaceDerivationsLinearEquiv_precomp
       tangentSpaceDerivationsLinearEquiv S f (g.hom t)
 ```
 
-**`Deformation.tangentSpace_finiteDimensional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/Derivations.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/Derivations.lean#L164). The attribute's comment: “finite\_tangent\_space”. References: SGA 7 VI (1.11), “(ii), special case”.
+**`Deformation.prorepresented_tangentSpaceFunctorConditions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/Derivations.lean, line 346](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/TangentSpace/Derivations.lean#L346). The attribute's comment: “the prorepresented functor satisfies the hypotheses of Lemma 06IA”.
 
-> **Stacks Project, Tag 06IC.** The tangent space of a prorepresentable functor is
-> finite-dimensional, under the chapter's standing assumption that `Λ → k` is finite.
+> **Stacks Project, Tag 06IC.** The functor prorepresented by `S` satisfies the hypotheses
+> of Lemma 06IA: its value on `k[0] = k` is a singleton and it takes `k[M × N]` to the product
+> of its values on `k[M]` and `k[N]`.
 
 ```lean
-theorem tangentSpace_finiteDimensional [Module.Finite Λ k]
-    (S : CompleteLocalAlgCat.{u, max v w, w} Λ k) :
-    FiniteDimensional k (tangentSpaceArtinian Λ k (restrictedCoyoneda S))
+theorem prorepresented_tangentSpaceFunctorConditions :
+    TangentSpaceFunctorConditions Λ k (artinianLocalOver Λ k)
+      (squareZeroExtension_mem_artinianLocalOver Λ k)
+      (artinianLocalOverToArtinian Λ k ⋙ restrictedCoyoneda S)
 ```
 
-**`Deformation.squareZeroPointsDerivationsEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/SquareZero.lean, line 218](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/SquareZero.lean#L218). The attribute's comment: “square\_zero\_points\_derivations”.
+**`Deformation.tangentSpaceModuleStructureDerivationsLinearEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/Derivations.lean, line 426](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/TangentSpace/Derivations.lean#L426). The attribute's comment: “F(k[V]) = Der\_Λ(S, V) as vector spaces, for the canonical structure of 06IA”.
+
+> **Stacks Project, Tag 06IC.** For the functor `F` prorepresented by `S` and a
+> finite-dimensional `k`-vector space `V`, the bijection `F(k[V]) = Der_Λ(S, V)`,
+> `f ↦ f - q`, is `k`-linear for the canonical module structure on `F(k[V])` of Lemma 06IA
+> (the one coming from `F` preserving finite products), so it is a `k`-linear equivalence.
+
+```lean
+noncomputable def tangentSpaceModuleStructureDerivationsLinearEquiv (V : FGModuleCat.{w} k) :
+    (tangentSpaceModuleStructure Λ k (artinianLocalOver Λ k)
+      (squareZeroExtension_mem_artinianLocalOver Λ k)
+      (artinianLocalOverToArtinian Λ k ⋙ restrictedCoyoneda S)
+      (prorepresented_tangentSpaceFunctorConditions S)).functor.obj V ≃ₗ[k]
+        Derivation Λ S V
+```
+
+**`Deformation.tangentSpaceModuleStructureDerivationsLinearEquiv_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/Derivations.lean, line 449](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/TangentSpace/Derivations.lean#L449). The attribute's comment: “F(k[V]) = Der\_Λ(S, V) as vector spaces, for the canonical structure of 06IA”.
+
+> The linear equivalence is the bijection `f ↦ f - q`: it sends `f` to its square-zero
+> component.
+
+```lean
+theorem tangentSpaceModuleStructureDerivationsLinearEquiv_apply (V : FGModuleCat.{w} k)
+    (x : (tangentSpaceModuleStructure Λ k (artinianLocalOver Λ k)
+      (squareZeroExtension_mem_artinianLocalOver Λ k)
+      (artinianLocalOverToArtinian Λ k ⋙ restrictedCoyoneda S)
+      (prorepresented_tangentSpaceFunctorConditions S)).functor.obj V) (s : S) :
+    tangentSpaceModuleStructureDerivationsLinearEquiv S V x s =
+      ((cast (tangentSpaceModuleStructure_prorepresented_carrier S V) x).hom s).snd
+```
+
+**`Deformation.tangentSpaceModuleStructureRankOneDerivationsLinearEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/Derivations.lean, line 491](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/TangentSpace/Derivations.lean#L491). The attribute's comment: “TF = Der\_Λ(S, k) as vector spaces, for the canonical structure of 06IA/06IB”.
+
+> **Stacks Project, Tag 06IC.** For the functor `F` prorepresented by `S`, the tangent space
+> `TF = F(k[ε]) = Der_Λ(S, k)`, and the `k`-vector space structure on `TF` of Lemma 06IA and
+> Definition 06IB (the canonical one, coming from `F` preserving finite products) corresponds
+> to the one on `Der_Λ(S, k)`: the bijection `f ↦ f - q` is a `k`-linear equivalence.
+
+```lean
+noncomputable def tangentSpaceModuleStructureRankOneDerivationsLinearEquiv :
+    letI : Algebra S k := (residueHom S).toRingHom.toAlgebra
+    (tangentSpaceModuleStructure Λ k (artinianLocalOver Λ k)
+      (squareZeroExtension_mem_artinianLocalOver Λ k)
+      (artinianLocalOverToArtinian Λ k ⋙ restrictedCoyoneda S)
+      (prorepresented_tangentSpaceFunctorConditions S)).functor.obj (FGModuleCat.of k k) ≃ₗ[k]
+        Derivation Λ S k
+```
+
+**`Deformation.tangentSpaceModuleStructureRankOneDerivationsLinearEquiv_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/Derivations.lean, line 503](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/TangentSpace/Derivations.lean#L503). The attribute's comment: “TF = Der\_Λ(S, k) as vector spaces, for the canonical structure of 06IA/06IB”.
+
+> The identification sends a tangent vector `f : S → k[ε]` to its `ε`-component.
+
+```lean
+theorem tangentSpaceModuleStructureRankOneDerivationsLinearEquiv_apply
+    (x : (tangentSpaceModuleStructure Λ k (artinianLocalOver Λ k)
+      (squareZeroExtension_mem_artinianLocalOver Λ k)
+      (artinianLocalOverToArtinian Λ k ⋙ restrictedCoyoneda S)
+      (prorepresented_tangentSpaceFunctorConditions S)).functor.obj (FGModuleCat.of k k))
+    (s : S) :
+    letI : Algebra S k := (residueHom S).toRingHom.toAlgebra
+    tangentSpaceModuleStructureRankOneDerivationsLinearEquiv S x s =
+      ((cast (tangentSpaceModuleStructure_prorepresented_carrier_rankOne S) x).hom s).snd
+```
+
+**`Deformation.tangentSpaceModuleStructure_prorepresented_finiteDimensional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/Derivations.lean, line 518](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/TangentSpace/Derivations.lean#L518). The attribute's comment: “dim\_k TF < ∞ for the canonical structure of 06IA/06IB”.
+
+> **Stacks Project, Tag 06IC.** The tangent space of a prorepresentable functor, with its
+> canonical vector space structure of Lemma 06IA and Definition 06IB, is finite-dimensional
+> (by Lemma 06SC), under the chapter's standing assumption that `Λ → k` is finite.
+
+```lean
+theorem tangentSpaceModuleStructure_prorepresented_finiteDimensional [Module.Finite Λ k] :
+    FiniteDimensional k
+      ((tangentSpaceModuleStructure Λ k (artinianLocalOver Λ k)
+        (squareZeroExtension_mem_artinianLocalOver Λ k)
+        (artinianLocalOverToArtinian Λ k ⋙ restrictedCoyoneda S)
+        (prorepresented_tangentSpaceFunctorConditions S)).functor.obj (FGModuleCat.of k k))
+```
+
+**`Deformation.squareZeroPointsDerivationsEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/SquareZero.lean, line 219](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/TangentSpace/SquareZero.lean#L219). The attribute's comment: “square\_zero\_points\_derivations”.
 
 ```lean
 noncomputable def squareZeroPointsDerivationsEquiv
@@ -269,7 +339,7 @@ noncomputable def squareZeroPointsDerivationsEquiv
     SquareZeroPoint S V ≃ Derivations S V
 ```
 
-**`Deformation.squareZeroPointsDerivationsEquiv_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/SquareZero.lean, line 226](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/SquareZero.lean#L226). The attribute's comment: “square\_zero\_points\_derivations”.
+**`Deformation.squareZeroPointsDerivationsEquiv_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/SquareZero.lean, line 227](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/TangentSpace/SquareZero.lean#L227). The attribute's comment: “square\_zero\_points\_derivations”.
 
 > In the forward identification, the derivation associated to `f` is the square-zero
 > component of `f`, i.e. `s ↦ f(s) - q(s)`.
@@ -282,7 +352,7 @@ theorem squareZeroPointsDerivationsEquiv_apply
     squareZeroPointsDerivationsEquiv S V f s = (f.1 s).snd
 ```
 
-**`Deformation.squareZeroPointsDerivationsEquiv_symm_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/SquareZero.lean, line 235](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/SquareZero.lean#L235). The attribute's comment: “square\_zero\_points\_derivations”.
+**`Deformation.squareZeroPointsDerivationsEquiv_symm_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/SquareZero.lean, line 236](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/TangentSpace/SquareZero.lean#L236). The attribute's comment: “square\_zero\_points\_derivations”.
 
 > In the inverse identification, a derivation `D` is sent to the map
 > `s ↦ q(s) + D(s)` into `k[V]`.
@@ -296,7 +366,7 @@ theorem squareZeroPointsDerivationsEquiv_symm_apply
       (residueHom S s, D s)
 ```
 
-**`Deformation.squareZeroPointsDerivationsEquiv_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/SquareZero.lean, line 244](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/SquareZero.lean#L244). The attribute's comment: “square\_zero\_points\_derivations”.
+**`Deformation.squareZeroPointsDerivationsEquiv_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/SquareZero.lean, line 245](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/TangentSpace/SquareZero.lean#L245). The attribute's comment: “square\_zero\_points\_derivations”.
 
 > The canonical identification is functorial in the finite-dimensional vector space.
 
@@ -310,7 +380,7 @@ theorem squareZeroPointsDerivationsEquiv_naturality
       l (squareZeroPointsDerivationsEquiv S V f s)
 ```
 
-**`Deformation.squareZeroPointsDerivationsEquiv_precomp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/SquareZero.lean, line 257](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/SquareZero.lean#L257). The attribute's comment: “square\_zero\_points\_derivations”.
+**`Deformation.squareZeroPointsDerivationsEquiv_precomp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/SquareZero.lean, line 258](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/TangentSpace/SquareZero.lean#L258). The attribute's comment: “square\_zero\_points\_derivations”.
 
 > The canonical identification is natural under precomposition in the representing
 > complete local algebra.
@@ -326,7 +396,7 @@ theorem squareZeroPointsDerivationsEquiv_precomp
       squareZeroPointsDerivationsEquiv S V f (g t)
 ```
 
-**`Deformation.squareZeroExtensionObject`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/SquareZero.lean, line 359](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/SquareZero.lean#L359). The attribute's comment: “square\_zero\_points\_derivations”.
+**`Deformation.squareZeroExtensionObject`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/SquareZero.lean, line 360](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/TangentSpace/SquareZero.lean#L360). The attribute's comment: “square\_zero\_points\_derivations”.
 
 > A finite-dimensional trivial square-zero extension, as an object of the category
 > of complete local `Λ`-algebras, with its algebra coordinates and residue augmentation.
@@ -340,7 +410,7 @@ noncomputable def squareZeroExtensionObject
         (∀ a : A, (e a).fst = residueHom A a) }
 ```
 
-**`Deformation.squareZeroPointsDerivationsEquivHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/SquareZero.lean, line 430](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/SquareZero.lean#L430). The attribute's comment: “square\_zero\_points\_derivations”.
+**`Deformation.squareZeroPointsDerivationsEquivHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/SquareZero.lean, line 431](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/TangentSpace/SquareZero.lean#L431). The attribute's comment: “square\_zero\_points\_derivations”.
 
 > The identification for the actual morphism type of the category of complete local
 > `Λ`-algebras. The equivalence `e` identifies the chosen object `A` with `k[V]`, and
@@ -356,7 +426,7 @@ noncomputable def squareZeroPointsDerivationsEquivHom
     (S ⟶ A) ≃ Derivations S V
 ```
 
-**`Deformation.squareZeroPointsDerivationsEquivHom_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/SquareZero.lean, line 443](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/SquareZero.lean#L443). The attribute's comment: “square\_zero\_points\_derivations”.
+**`Deformation.squareZeroPointsDerivationsEquivHom_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/SquareZero.lean, line 444](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/TangentSpace/SquareZero.lean#L444). The attribute's comment: “square\_zero\_points\_derivations”.
 
 > A categorical morphism `f : S ⟶ k[V]` determines the derivation given by its
 > square-zero component.
@@ -373,7 +443,7 @@ theorem squareZeroPointsDerivationsEquivHom_apply
       (e (f.hom s)).snd
 ```
 
-**`Deformation.squareZeroPointsDerivationsEquivHom_symm_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/SquareZero.lean, line 457](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/SquareZero.lean#L457). The attribute's comment: “square\_zero\_points\_derivations”.
+**`Deformation.squareZeroPointsDerivationsEquivHom_symm_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/SquareZero.lean, line 458](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/TangentSpace/SquareZero.lean#L458). The attribute's comment: “square\_zero\_points\_derivations”.
 
 > Conversely, the categorical morphism determined by `D` is `s ↦ q(s) + D(s)`
 > in square-zero coordinates.
@@ -390,7 +460,7 @@ theorem squareZeroPointsDerivationsEquivHom_symm_apply
       (residueHom S s, D s)
 ```
 
-**`Deformation.squareZeroPointsDerivationsEquivHom_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/SquareZero.lean, line 474](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/SquareZero.lean#L474). The attribute's comment: “square\_zero\_points\_derivations”.
+**`Deformation.squareZeroPointsDerivationsEquivHom_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/SquareZero.lean, line 476](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/TangentSpace/SquareZero.lean#L476). The attribute's comment: “square\_zero\_points\_derivations”.
 
 > The categorical identification commutes with maps between square-zero extensions.
 
@@ -412,7 +482,7 @@ theorem squareZeroPointsDerivationsEquivHom_naturality
       l (squareZeroPointsDerivationsEquivHom S A V eA hΛA heA f s)
 ```
 
-**`Deformation.squareZeroPointsDerivationsEquivHom_precomp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/SquareZero.lean, line 495](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/SquareZero.lean#L495). The attribute's comment: “square\_zero\_points\_derivations”.
+**`Deformation.squareZeroPointsDerivationsEquivHom_precomp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/SquareZero.lean, line 497](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/TangentSpace/SquareZero.lean#L497). The attribute's comment: “square\_zero\_points\_derivations”.
 
 > The categorical identification is natural in the representing algebra.
 
@@ -432,7 +502,7 @@ theorem squareZeroPointsDerivationsEquivHom_precomp
 
 [Tag 06SS](https://stacks.math.columbia.edu/tag/06SS) in the Stacks Project.
 
-**`Deformation.existsUnique_derivationRelativeCotangentDualEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/RelativeCotangentDual.lean, line 275](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/RelativeCotangentDual.lean#L275). The attribute's comment: “derivations are the dual of the relative cotangent space”. References: SGA 3 VIIA (1.3.1), “special case”.
+**`Deformation.existsUnique_derivationRelativeCotangentDualEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/RelativeCotangentDual.lean, line 274](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/TangentSpace/RelativeCotangentDual.lean#L274). The attribute's comment: “derivations are the dual of the relative cotangent space”. References: SGA 3 VIIA (1.3.1), “special case”.
 
 > **Stacks 06SS.** For a base `Λ` whose residue field `k₀` has `k` separable over it, the
 > `Λ`-derivations from an object `S` of `\widehat{𝒞_Λ}` to `k` are the `k`-linear dual of the
@@ -456,7 +526,7 @@ theorem existsUnique_derivationRelativeCotangentDualEquiv
           e D (Submodule.Quotient.mk x) = D (x : S)
 ```
 
-**`Deformation.existsUnique_tangentSpaceRelativeCotangentDualEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/RelativeCotangentDual.lean, line 343](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/RelativeCotangentDual.lean#L343). The attribute's comment: “the tangent space is the relative tangent space”.
+**`Deformation.existsUnique_tangentSpaceRelativeCotangentDualEquiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/RelativeCotangentDual.lean, line 342](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/TangentSpace/RelativeCotangentDual.lean#L342). The attribute's comment: “the tangent space is the relative tangent space”.
 
 > **Stacks 06SS.** The tangent space of the functor prorepresented by `S` is the relative
 > tangent space of `S` over `Λ`, that is the `k`-linear dual of the relative cotangent space.
@@ -480,7 +550,7 @@ theorem existsUnique_tangentSpaceRelativeCotangentDualEquiv
           e t (Submodule.Quotient.mk x) = (t.hom (x : S)).snd.down
 ```
 
-**`Deformation.existsUnique_tangentSpaceRelativeCotangentDualEquiv_of_isClassical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/RelativeCotangentDual.lean, line 378](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/RelativeCotangentDual.lean#L378). The attribute's comment: “classical case”.
+**`Deformation.existsUnique_tangentSpaceRelativeCotangentDualEquiv_of_isClassical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/RelativeCotangentDual.lean, line 377](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/TangentSpace/RelativeCotangentDual.lean#L377). The attribute's comment: “classical case”.
 
 > **Stacks 06SS.** The classical case: when `Λ` is a Noetherian complete local ring with
 > residue field `k`, the tangent space of the functor prorepresented by `S` is the `k`-linear
@@ -506,7 +576,7 @@ theorem existsUnique_tangentSpaceRelativeCotangentDualEquiv_of_isClassical
 
 [Tag 06ID](https://stacks.math.columbia.edu/tag/06ID) in the Stacks Project.
 
-**`Deformation.naturalTransformation_linearMapOnSquareZeroExtensions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/Functor.lean, line 687](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/Functor.lean#L687).
+**`Deformation.naturalTransformation_linearMapOnSquareZeroExtensions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/Functor.lean, line 686](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/TangentSpace/Functor.lean#L686).
 
 > **Stacks Project, Tag 06ID.** A natural transformation between functors
 > satisfying the tangent-space hypotheses is `R`-linear on every trivial
@@ -535,7 +605,7 @@ theorem naturalTransformation_linearMapOnSquareZeroExtensions
 
 [Tag 06ST](https://stacks.math.columbia.edu/tag/06ST) in the Stacks Project.
 
-**`Deformation.tangentSpaceMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/FunctorMap.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/FunctorMap.lean#L60). The attribute's comment: “linear tangent map”.
+**`Deformation.tangentSpaceMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/FunctorMap.lean, line 60](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/TangentSpace/FunctorMap.lean#L60). The attribute's comment: “linear tangent map”.
 
 > The `k`-linear map on tangent spaces induced contravariantly by a morphism `f : R ⟶ S` of
 > complete local `Λ`-algebras, written on derivation spaces: it sends a `Λ`-derivation `S → k` to
@@ -549,7 +619,7 @@ noncomputable def tangentSpaceMap
     Derivation Λ S k →ₗ[k] Derivation Λ R k
 ```
 
-**`Deformation.tangentSpaceMap_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/FunctorMap.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/FunctorMap.lean#L76). The attribute's comment: “action on derivations”.
+**`Deformation.tangentSpaceMap_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/FunctorMap.lean, line 76](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/TangentSpace/FunctorMap.lean#L76). The attribute's comment: “action on derivations”.
 
 > Under the canonical identification of the tangent space with a space of derivations, the
 > induced tangent map is precomposition with the morphism of representing algebras.
@@ -562,7 +632,7 @@ theorem tangentSpaceMap_apply
     tangentSpaceMap f d r = d (f.hom r)
 ```
 
-**`Deformation.tangentSpaceMapArtinian`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/FunctorMap.lean, line 86](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/FunctorMap.lean#L86). The attribute's comment: “linear tangent map on Artinian tangent spaces”.
+**`Deformation.tangentSpaceMapArtinian`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/FunctorMap.lean, line 86](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/TangentSpace/FunctorMap.lean#L86). The attribute's comment: “linear tangent map on Artinian tangent spaces”.
 
 > The induced map on the tangent spaces themselves, the values of the two restricted
 > representable functors at the dual numbers: `tangentSpaceMap` transported along the canonical
@@ -575,7 +645,7 @@ noncomputable def tangentSpaceMapArtinian
       tangentSpaceArtinian Λ k (restrictedCoyoneda R)
 ```
 
-**`Deformation.tangentSpaceMapArtinian_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/FunctorMap.lean, line 96](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/FunctorMap.lean#L96). The attribute's comment: “action on Artinian tangent vectors”.
+**`Deformation.tangentSpaceMapArtinian_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/FunctorMap.lean, line 96](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/TangentSpace/FunctorMap.lean#L96). The attribute's comment: “action on Artinian tangent vectors”.
 
 > On a tangent vector, that is on a `k[ε]`-point of the functor represented by `S`, the
 > induced tangent map is precomposition with the morphism of representing algebras.
@@ -589,15 +659,15 @@ theorem tangentSpaceMapArtinian_apply
 
 Declarations registered for the tag:
 
-- [`Deformation.restrictedCoyonedaMap`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/RestrictedRepresentable.lean#L48), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Deformation/TangentSpace/FunctorMap.lean, line 47](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/FunctorMap.lean#L47) (StacksFrontier): “the transformation of functors induced by a map of representing algebras”.
-- [`Deformation.squareZeroPointsDerivationsEquiv_precomp`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/SquareZero.lean#L257), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Deformation/TangentSpace/FunctorMap.lean, line 50](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/FunctorMap.lean#L50) (StacksFrontier): “naturality of the square-zero-point description of the tangent space”.
-- [`Deformation.tangentSpaceDerivationsLinearEquiv_precomp`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/Derivations.lean#L152), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Deformation/TangentSpace/FunctorMap.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/FunctorMap.lean#L53) (StacksFrontier): “naturality of the identification of the tangent space with derivations”.
+- [`Deformation.restrictedCoyonedaMap`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/RestrictedRepresentable.lean#L48), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Deformation/TangentSpace/FunctorMap.lean, line 47](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/TangentSpace/FunctorMap.lean#L47) (StacksFrontier): “the transformation of functors induced by a map of representing algebras”.
+- [`Deformation.squareZeroPointsDerivationsEquiv_precomp`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/TangentSpace/SquareZero.lean#L258), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Deformation/TangentSpace/FunctorMap.lean, line 50](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/TangentSpace/FunctorMap.lean#L50) (StacksFrontier): “naturality of the square-zero-point description of the tangent space”.
+- [`Deformation.tangentSpaceDerivationsLinearEquiv_precomp`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/TangentSpace/Derivations.lean#L179), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Deformation/TangentSpace/FunctorMap.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/TangentSpace/FunctorMap.lean#L53) (StacksFrontier): “naturality of the identification of the tangent space with derivations”.
 
 ## Tag 06IE, a lemma
 
 [Tag 06IE](https://stacks.math.columbia.edu/tag/06IE) in the Stacks Project.
 
-**`Deformation.tangentSpaceFunctor_iso_tensorLeft`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/Functor.lean, line 741](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/TangentSpace/Functor.lean#L741).
+**`Deformation.tangentSpaceFunctor_iso_tensorLeft`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/TangentSpace/Functor.lean, line 740](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/TangentSpace/Functor.lean#L740).
 
 > **Stacks Project, Tag 06IE.** Over a field, the functor
 > `V ↦ F(K[V])`, with its natural linear structure, is naturally isomorphic
@@ -626,4 +696,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 90.11, Tag 06I2](https://stacks.math.columbia.edu/tag/06I2)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

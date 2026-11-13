@@ -2,9 +2,8 @@
 navigation: transparent
 ---
 
-# 50.17 Blowing up and de Rham… to 50.24 Relative Poincaré duality
+# 50.18 Comparing sheaves of… to 50.24 Relative Poincaré duality
 
-- [50.17 Blowing up and de Rham cohomology](50-17-blowing-up-and-de-rham-cohomology.md)
 - [50.18 Comparing sheaves of differential forms](50-18-comparing-sheaves-of-differential-forms.md)
 - [50.19 Trace maps on de Rham complexes](50-19-trace-maps-on-de-rham-complexes.md)
 - [50.20 Poincaré duality](50-20-poincare-duality.md)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 48.8 Right adjoint of pushforward and pullback
 
-Section 48.8 of the Stacks Project, [Tag 0B6N](https://stacks.math.columbia.edu/tag/0B6N). 5 tags here are carried by 17 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 48.8 of the Stacks Project, [Tag 0B6N](https://stacks.math.columbia.edu/tag/0B6N). 5 tags here are carried by 17 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0A9S, an equation
 
 [Tag 0A9S](https://stacks.math.columbia.edu/tag/0A9S) in the Stacks Project.
 
-**`Stacks.Duality.compareWithPullbackTensor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/PullbackComparison.lean, line 237](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/PullbackComparison.lean#L237). The attribute's comment: “variant: the two-variable map for an arbitrary cotensorator α and right adjoint a; the tag is Stacks.Duality.qcqsCompareWithPullback”.
+**`Stacks.Duality.compareWithPullbackTensor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/PullbackComparison.lean, line 244](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/PullbackComparison.lean#L244). The attribute's comment: “variant: the two-variable map for an arbitrary cotensorator α and right adjoint a; the tag is Stacks.Duality.qcqsCompareWithPullback”.
 
 > **The two-variable comparison map of Equation 48.8.0.1 of [Stacks, Tag 0A9S]**:
 > `Lf^*K ⊗ᴸ_{𝒪_X} a(L) ⟶ a(K ⊗ᴸ_{𝒪_Y} L)`, for a right adjoint `a` of
@@ -29,7 +29,7 @@ def compareWithPullbackTensor (K L : quasiCoherentDerivedCategory Y) :
       a.obj (((quasiCoherentDerivedTensor Y).obj K).obj L)
 ```
 
-**`Stacks.Duality.homEquiv_symm_compareWithPullbackTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/PullbackComparison.lean, line 249](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/PullbackComparison.lean#L249). The attribute's comment: “variant: the adjunction characterization of the two-variable map for an arbitrary α and a; the tag is Stacks.Duality.qcqsCompareWithPullback”.
+**`Stacks.Duality.homEquiv_symm_compareWithPullbackTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/PullbackComparison.lean, line 256](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/PullbackComparison.lean#L256). The attribute's comment: “variant: the adjunction characterization of the two-variable map for an arbitrary α and a; the tag is Stacks.Duality.qcqsCompareWithPullback”.
 
 > **The adjunction characterization of the comparison map.** Its adjoint transpose is the
 > inverse projection formula followed by the identity of `K` tensored with the trace map; this
@@ -42,7 +42,7 @@ theorem homEquiv_symm_compareWithPullbackTensor (K L : quasiCoherentDerivedCateg
         ((quasiCoherentDerivedTensor Y).obj K).map (adj.counit.app L)
 ```
 
-**`Stacks.Duality.projectionFormulaMap_comp_map_compareWithPullbackTensor_comp_counit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/PullbackComparison.lean, line 271](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/PullbackComparison.lean#L271). The attribute's comment: “variant: the characterization without the inverse for an arbitrary α and a; the tag is Stacks.Duality.qcqsCompareWithPullback”.
+**`Stacks.Duality.projectionFormulaMap_comp_map_compareWithPullbackTensor_comp_counit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/PullbackComparison.lean, line 278](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/PullbackComparison.lean#L278). The attribute's comment: “variant: the characterization without the inverse for an arbitrary α and a; the tag is Stacks.Duality.qcqsCompareWithPullback”.
 
 > **Equation 48.8.0.1 as the source states it**: the projection formula, followed by `Rf_*` of
 > the comparison map and the trace map, is the identity of `K` tensored with the trace map. This is
@@ -58,7 +58,7 @@ theorem projectionFormulaMap_comp_map_compareWithPullbackTensor_comp_counit
       ((quasiCoherentDerivedTensor Y).obj K).map (adj.counit.app L)
 ```
 
-**`Stacks.Duality.compareWithPullbackTensor_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/PullbackComparison.lean, line 337](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/PullbackComparison.lean#L337). The attribute's comment: “variant: naturality of the two-variable map for an arbitrary α and a; the tag is Stacks.Duality.qcqsCompareWithPullback”.
+**`Stacks.Duality.compareWithPullbackTensor_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/PullbackComparison.lean, line 344](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/PullbackComparison.lean#L344). The attribute's comment: “variant: naturality of the two-variable map for an arbitrary α and a; the tag is Stacks.Duality.qcqsCompareWithPullback”.
 
 > The comparison map is natural in `K` and `L` jointly.
 
@@ -75,7 +75,7 @@ theorem compareWithPullbackTensor_naturality {K K' L L' : quasiCoherentDerivedCa
           ((quasiCoherentDerivedTensor Y).obj K').map g)
 ```
 
-**`Stacks.Duality.twistedInverseImageCompareWithPullbackTensor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/PullbackComparison.lean, line 366](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/PullbackComparison.lean#L366). The attribute's comment: “variant: the two-variable map at a = f^× for an arbitrary α; the tag is Stacks.Duality.qcqsCompareWithPullback”.
+**`Stacks.Duality.twistedInverseImageCompareWithPullbackTensor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/PullbackComparison.lean, line 373](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/PullbackComparison.lean#L373). The attribute's comment: “variant: the two-variable map at a = f^× for an arbitrary α; the tag is Stacks.Duality.qcqsCompareWithPullback”.
 
 > **Equation 48.8.0.1 for the twisted inverse image `f^×`** of
 > `Stacks.Duality.twistedInverseImage`: the comparison map
@@ -90,7 +90,7 @@ def twistedInverseImageCompareWithPullbackTensor (K L : quasiCoherentDerivedCate
       (twistedInverseImage f hpush).obj (((quasiCoherentDerivedTensor Y).obj K).obj L)
 ```
 
-**`Stacks.Duality.qcqsCompareWithPullbackTensor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/PullbackComparisonQcqs.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/PullbackComparisonQcqs.lean#L89). The attribute's comment: “the two-variable map Lf^*K ⊗ a(L) ⟶ a(K ⊗ L) from which the source obtains the equation, for a morphism of quasi-compact quasi-separated schemes and a = f^× of Tag 0A9E”.
+**`Stacks.Duality.qcqsCompareWithPullbackTensor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/PullbackComparisonQcqs.lean, line 89](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/PullbackComparisonQcqs.lean#L89). The attribute's comment: “the two-variable map Lf^*K ⊗ a(L) ⟶ a(K ⊗ L) from which the source obtains the equation, for a morphism of quasi-compact quasi-separated schemes and a = f^× of Tag 0A9E”.
 
 > **The two-variable map of [Stacks, Tag 0A9S]** for a morphism `f : X ⟶ Y` of quasi-compact
 > quasi-separated schemes: `Lf^*K ⊗ᴸ_{𝒪_X} a(L) ⟶ a(K ⊗ᴸ_{𝒪_Y} L)`, where `a = f^×` is the right
@@ -106,7 +106,7 @@ def qcqsCompareWithPullbackTensor (K L : quasiCoherentDerivedCategory Y) :
         (((quasiCoherentDerivedTensor Y).obj K).obj L)
 ```
 
-**`Stacks.Duality.homEquiv_symm_qcqsCompareWithPullbackTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/PullbackComparisonQcqs.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/PullbackComparisonQcqs.lean#L103). The attribute's comment: “defining property of the two-variable map: its adjoint is the inverse projection formula of Tag 08EU followed by K tensored with the trace map”.
+**`Stacks.Duality.homEquiv_symm_qcqsCompareWithPullbackTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/PullbackComparisonQcqs.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/PullbackComparisonQcqs.lean#L103). The attribute's comment: “defining property of the two-variable map: its adjoint is the inverse projection formula of Tag 08EU followed by K tensored with the trace map”.
 
 > **The defining property of the two-variable map**: its adjoint transpose for `Rf_* ⊣ a` is
 > the inverse of the projection-formula isomorphism followed by the identity of `K` tensored with
@@ -126,7 +126,7 @@ theorem homEquiv_symm_qcqsCompareWithPullbackTensor (K L : quasiCoherentDerivedC
             (isQuasicoherent_homology_derivedPushforward_of_qcqs f)).counit.app L)
 ```
 
-**`Stacks.Duality.qcqsCompareWithPullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/PullbackComparisonQcqs.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/PullbackComparisonQcqs.lean#L162).
+**`Stacks.Duality.qcqsCompareWithPullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/PullbackComparisonQcqs.lean, line 162](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/PullbackComparisonQcqs.lean#L162).
 
 > **Equation 48.8.0.1 of [Stacks, Tag 0A9S].** Let `f : X ⟶ Y` be a morphism of quasi-compact
 > and quasi-separated schemes and let `a = f^×` be the right adjoint of
@@ -146,7 +146,7 @@ def qcqsCompareWithPullback :
       twistedInverseImage f (isQuasicoherent_homology_derivedPushforward_of_qcqs f)
 ```
 
-**`Stacks.Duality.homEquiv_symm_qcqsCompareWithPullback_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/PullbackComparisonQcqs.lean, line 189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/PullbackComparisonQcqs.lean#L189). The attribute's comment: “defining property of the map: its adjoint is the inverse projection formula of Tag 08EU, then K tensored with the trace map, then the unitor”.
+**`Stacks.Duality.homEquiv_symm_qcqsCompareWithPullback_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/PullbackComparisonQcqs.lean, line 189](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/PullbackComparisonQcqs.lean#L189). The attribute's comment: “defining property of the map: its adjoint is the inverse projection formula of Tag 08EU, then K tensored with the trace map, then the unitor”.
 
 > **The defining property of Equation 48.8.0.1**: the adjoint transpose of
 > `Lf^*K ⊗ᴸ a(𝒪_Y) ⟶ a(K)` for `Rf_* ⊣ a` is the inverse of the projection formula
@@ -169,7 +169,7 @@ theorem homEquiv_symm_qcqsCompareWithPullback_app (K : quasiCoherentDerivedCateg
           quasiCoherentRightUnitor.hom.app K
 ```
 
-**`Stacks.Duality.commShift_qcqsCompareWithPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/PullbackComparisonQcqsCommShift.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/PullbackComparisonQcqsCommShift.lean#L132). The attribute's comment: “compatible with distinguished triangles: the map of 48.8.0.1 commutes with the shift, between exact functors”.
+**`Stacks.Duality.commShift_qcqsCompareWithPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/PullbackComparisonQcqsCommShift.lean, line 132](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/PullbackComparisonQcqsCommShift.lean#L132). The attribute's comment: “compatible with distinguished triangles: the map of 48.8.0.1 commutes with the shift, between exact functors”.
 
 > **[Stacks, Tag 0A9S]: Equation 48.8.0.1 is compatible with distinguished triangles.** For a
 > morphism `f : X ⟶ Y` of quasi-compact quasi-separated schemes, the map
@@ -187,7 +187,7 @@ theorem commShift_qcqsCompareWithPullback :
     NatTrans.CommShift (qcqsCompareWithPullback f) ℤ
 ```
 
-**`Stacks.Duality.compareWithPullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/PullbackComparisonStructureSheaf.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/PullbackComparisonStructureSheaf.lean#L92). The attribute's comment: “variant: the map for an arbitrary cotensorator α, right adjoint a and unitor ρ; the tag is Stacks.Duality.qcqsCompareWithPullback”.
+**`Stacks.Duality.compareWithPullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/PullbackComparisonStructureSheaf.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/PullbackComparisonStructureSheaf.lean#L92). The attribute's comment: “variant: the map for an arbitrary cotensorator α, right adjoint a and unitor ρ; the tag is Stacks.Duality.qcqsCompareWithPullback”.
 
 > **Equation 48.8.0.1 of [Stacks, Tag 0A9S]**: the comparison map
 > `Lf^*K ⊗ᴸ_{𝒪_X} a(𝒪_Y) ⟶ a(K)`, the two-variable comparison map at `L = 𝒪_Y` followed by `a`
@@ -201,7 +201,7 @@ def compareWithPullback (K : quasiCoherentDerivedCategory Y) :
       a.obj K
 ```
 
-**`Stacks.Duality.compareWithPullback_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/PullbackComparisonStructureSheaf.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/PullbackComparisonStructureSheaf.lean#L103). The attribute's comment: “variant: functoriality in K for an arbitrary α, a and ρ; the tag is Stacks.Duality.qcqsCompareWithPullback”.
+**`Stacks.Duality.compareWithPullback_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/PullbackComparisonStructureSheaf.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/PullbackComparisonStructureSheaf.lean#L103). The attribute's comment: “variant: functoriality in K for an arbitrary α, a and ρ; the tag is Stacks.Duality.qcqsCompareWithPullback”.
 
 > Equation 48.8.0.1 is functorial in `K`.
 
@@ -214,7 +214,7 @@ theorem compareWithPullback_naturality {K K' : quasiCoherentDerivedCategory Y} (
       compareWithPullback f hpush α adj ρ K ≫ a.map h
 ```
 
-**`Stacks.Duality.twistedInverseImageCompareWithPullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/PullbackComparisonStructureSheaf.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/PullbackComparisonStructureSheaf.lean#L169). The attribute's comment: “variant: the map at a = f^× for an arbitrary α and ρ; the tag is Stacks.Duality.qcqsCompareWithPullback”.
+**`Stacks.Duality.twistedInverseImageCompareWithPullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/PullbackComparisonStructureSheaf.lean, line 169](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/PullbackComparisonStructureSheaf.lean#L169). The attribute's comment: “variant: the map at a = f^× for an arbitrary α and ρ; the tag is Stacks.Duality.qcqsCompareWithPullback”.
 
 > **Equation 48.8.0.1 for the twisted inverse image `f^×`** of
 > `Stacks.Duality.twistedInverseImage`: the comparison map `Lf^*K ⊗ᴸ_{𝒪_X} f^×𝒪_Y ⟶ f^×K` of
@@ -234,7 +234,7 @@ def twistedInverseImageCompareWithPullback
 
 [Tag 0A9T](https://stacks.math.columbia.edu/tag/0A9T) in the Stacks Project.
 
-**`Stacks.Duality.isIso_compareWithPullbackTensor_and_compareWithPullback_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/PullbackComparisonPerfectDual.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/PullbackComparisonPerfectDual.lean#L67).
+**`Stacks.Duality.isIso_compareWithPullbackTensor_and_compareWithPullback_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/PullbackComparisonPerfectDual.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RightAdjointPushforward/PullbackComparisonPerfectDual.lean#L67).
 
 > **[Stacks, Tag 0A9T] (Lemma 48.8.1).** Let `f : X ⟶ Y` be a quasi-compact and
 > quasi-separated morphism of schemes with `Y` quasi-compact (for instance a morphism of
@@ -265,7 +265,7 @@ theorem isIso_compareWithPullbackTensor_and_compareWithPullback_of_isPerfect
 
 [Tag 0B6P](https://stacks.math.columbia.edu/tag/0B6P) in the Stacks Project.
 
-**`Stacks.Duality.map_twistedInverseImageCompareWithPullback_comp_baseChange_of_torIndependent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/BaseChangeTrace.lean, line 206](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/BaseChangeTrace.lean#L206).
+**`Stacks.Duality.map_twistedInverseImageCompareWithPullback_comp_baseChange_of_torIndependent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/BaseChangeTrace.lean, line 206](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/BaseChangeTrace.lean#L206).
 
 > **[Stacks, Tag 0B6P] (Lemma 48.8.2).** For a cartesian square of quasi-compact and
 > quasi-separated schemes with `f` and `g` Tor independent and `K ∈ D_QCoh(𝒪_Y)`, the square
@@ -328,7 +328,7 @@ theorem map_twistedInverseImageCompareWithPullback_comp_baseChange_of_torIndepen
 
 [Tag 0B6Q](https://stacks.math.columbia.edu/tag/0B6Q) in the Stacks Project.
 
-**`Stacks.Duality.isIso_map_twistedInverseImageCompareWithPullback_of_isIso_morphismRestrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekComparisonCharts.lean, line 128](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekComparisonCharts.lean#L128).
+**`Stacks.Duality.isIso_map_twistedInverseImageCompareWithPullback_of_isIso_morphismRestrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekComparisonCharts.lean, line 128](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekComparisonCharts.lean#L128).
 
 > **Stacks Project, Tag 0B6Q (Lemma 48.8.3).** Let `f : X ⟶ Y` be a proper morphism of
 > Noetherian schemes and let `V ⊆ Y` be an open such that `f⁻¹(V) ⟶ V` is an isomorphism. Then for
@@ -350,7 +350,7 @@ theorem isIso_map_twistedInverseImageCompareWithPullback_of_isIso_morphismRestri
 
 [Tag 0B6R](https://stacks.math.columbia.edu/tag/0B6R) in the Stacks Project.
 
-**`Stacks.Duality.twistedInverseImageCompareWithPullback_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/CompositionComparison.lean, line 158](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/CompositionComparison.lean#L158).
+**`Stacks.Duality.twistedInverseImageCompareWithPullback_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/CompositionComparison.lean, line 158](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImage/CompositionComparison.lean#L158).
 
 > Let `f : X ⟶ Y` and `g : Y ⟶ Z` be morphisms of quasi-compact and quasi-separated schemes,
 > `h = f ≫ g`, and `a`, `b`, `c` the right adjoints of `Rf_*`, `Rg_*`, `Rh_*` on `D_QCoh`. For
@@ -423,4 +423,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 48.8, Tag 0B6N](https://stacks.math.columbia.edu/tag/0B6N)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

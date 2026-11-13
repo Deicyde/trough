@@ -8,7 +8,7 @@ proof: formalized
 
 # 9.3 Examples of fields
 
-Section 9.3 of the Stacks Project, [Tag 09FF](https://stacks.math.columbia.edu/tag/09FF). 5 tags here are carried by 2 declarations of the repository (all in StacksCore) and 10 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 9.3 of the Stacks Project, [Tag 09FF](https://stacks.math.columbia.edu/tag/09FF). 5 tags here are carried by 3 declarations of the repository (2 in StacksCore and 1 in StacksFrontier) and 10 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 09FG, an example
 
@@ -16,7 +16,7 @@ Section 9.3 of the Stacks Project, [Tag 09FF](https://stacks.math.columbia.edu/t
 
 Declarations registered for the tag:
 
-- [`Rat.instField`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Rat.instField#doc) registered with `add_to_stacks` in [StacksCore/Algebra/Field/Rat.lean, line 10](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Algebra/Field/Rat.lean#L10) (StacksCore).
+- [`Rat.instField`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Rat.instField#doc) registered with `add_to_stacks` in [StacksCore/Algebra/Field/Rat.lean, line 10](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Algebra/Field/Rat.lean#L10) (StacksCore).
 
 ## Tag 09FH, an example
 
@@ -24,15 +24,15 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`ZMod.instField`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=ZMod.instField#doc) registered with `add_to_stacks` in [StacksCore/Algebra/Field/ZMod.lean, line 14](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Algebra/Field/ZMod.lean#L14) (StacksCore): “first part”.
-- [`ZMod.card`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=ZMod.card#doc) registered with `add_to_stacks` in [StacksCore/Data/ZMod/Defs.lean, line 13](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Data/ZMod/Defs.lean#L13) (StacksCore): “second part”.
-- [`Int.ideal_span_isMaximal_of_prime`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Int.ideal_span_isMaximal_of_prime#doc) registered with `add_to_stacks` in [StacksCore/RingTheory/Ideal/Quotient/Int.lean, line 14](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/RingTheory/Ideal/Quotient/Int.lean#L14) (StacksCore).
+- [`ZMod.instField`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=ZMod.instField#doc) registered with `add_to_stacks` in [StacksCore/Algebra/Field/ZMod.lean, line 14](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Algebra/Field/ZMod.lean#L14) (StacksCore): “first part”.
+- [`ZMod.card`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=ZMod.card#doc) registered with `add_to_stacks` in [StacksCore/Data/ZMod/Defs.lean, line 13](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Data/ZMod/Defs.lean#L13) (StacksCore): “second part”.
+- [`Int.ideal_span_isMaximal_of_prime`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Int.ideal_span_isMaximal_of_prime#doc) registered with `add_to_stacks` in [StacksCore/RingTheory/Ideal/Quotient/Int.lean, line 14](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/RingTheory/Ideal/Quotient/Int.lean#L14) (StacksCore).
 
 ## Tag 09FI, an example
 
 [Tag 09FI](https://stacks.math.columbia.edu/tag/09FI) in the Stacks Project.
 
-**`polynomial_PID_of_field`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/Examples/Stacks09FI.lean, line 20](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Examples/Stacks09FI.lean#L20).
+**`polynomial_PID_of_field`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/Examples/Stacks09FI.lean, line 20](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Examples/Stacks09FI.lean#L20). The attribute's comment: “second part”.
 
 > **Stacks 09FI**.
 > For any field `K`, the polynomial ring `K[X]` is an integral domain and a principal ideal ring.
@@ -43,7 +43,7 @@ Declarations registered for the tag:
 theorem polynomial_PID_of_field (K : Type*) [Field K] : IsDomain K[X] ∧ IsPrincipalIdealRing K[X]
 ```
 
-**`Complex.adjoinRootAlgEquiv`**, a def in StacksCore (human-reviewed), declared in [StacksCore/Examples/Stacks09FI.lean, line 45](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Examples/Stacks09FI.lean#L45).
+**`Complex.adjoinRootAlgEquiv`**, a def in StacksCore (human-reviewed), declared in [StacksCore/Examples/Stacks09FI.lean, line 45](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Examples/Stacks09FI.lean#L45). The attribute's comment: “fifth part”.
 
 > **Stacks 09FI**.
 > The complex numbers are realized as the quotient of `ℝ[X]` by the maximal ideal `(X^2 + 1)`,
@@ -55,18 +55,43 @@ noncomputable def Complex.adjoinRootAlgEquiv : AdjoinRoot (X ^ 2 + 1 : ℝ[X]) �
 
 Declarations registered for the tag:
 
-- [`AdjoinRoot.instField`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AdjoinRoot.instField#doc) registered with `add_to_stacks` in [StacksCore/RingTheory/AdjoinRoot.lean, line 10](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/RingTheory/AdjoinRoot.lean#L10) (StacksCore): “third part”.
-- [`AdjoinRoot.of`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AdjoinRoot.of#doc) registered with `add_to_stacks` in [StacksCore/RingTheory/AdjoinRoot.lean, line 11](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/RingTheory/AdjoinRoot.lean#L11) (StacksCore): “fourth part”.
+- [`AdjoinRoot.instField`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AdjoinRoot.instField#doc) registered with `add_to_stacks` in [StacksCore/RingTheory/AdjoinRoot.lean, line 10](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/RingTheory/AdjoinRoot.lean#L10) (StacksCore): “third part”.
+- [`AdjoinRoot.of`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AdjoinRoot.of#doc) registered with `add_to_stacks` in [StacksCore/RingTheory/AdjoinRoot.lean, line 11](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/RingTheory/AdjoinRoot.lean#L11) (StacksCore): “fourth part”.
+- [`PrincipalIdealRing.isMaximal_of_irreducible`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=PrincipalIdealRing.isMaximal_of_irreducible#doc) registered with `add_to_stacks` in [StacksCore/RingTheory/PrincipalIdealDomain.lean, line 16](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/RingTheory/PrincipalIdealDomain.lean#L16) (StacksCore): “first part”.
 
 ## Tag 09FJ, an example
 
 [Tag 09FJ](https://stacks.math.columbia.edu/tag/09FJ) in the Stacks Project.
 
+**`fractionRing_isField_and_lift_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Localization/QuotientField.lean, line 28](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Localization/QuotientField.lean#L28). The attribute's comment: “the fraction field FractionRing A, the injective map A → FractionRing A, the description of its elements as fractions a / b with b ≠ 0 up to cross-multiplication, and the universal property for injective ring maps into fields with ψ(a / b) = φ(a) φ(b)⁻¹”.
+
+> **Stacks 09FJ** (quotient fields). For a domain `A`, the fraction field `F = FractionRing A`
+> is a field, the map `A → F` is injective, every element of `F` is a fraction `a / b` with
+> `b ≠ 0`, and `a / b = a' / b'` if and only if `a * b' = b * a'` (for `b, b' ≠ 0`). Moreover,
+> for every injective ring map `φ : A →+* K` into a field `K` there is a unique ring map
+> `ψ : F →+* K` with `ψ ∘ (A → F) = φ`, and any such `ψ` sends `a / b` to `φ a * (φ b)⁻¹`.
+
+```lean
+theorem fractionRing_isField_and_lift_unique (A : Type u) [CommRing A] [IsDomain A] :
+    IsField (FractionRing A) ∧
+    Function.Injective (algebraMap A (FractionRing A)) ∧
+    (∀ x : FractionRing A, ∃ a b : A, b ≠ 0 ∧
+      x = algebraMap A (FractionRing A) a / algebraMap A (FractionRing A) b) ∧
+    (∀ a b a' b' : A, b ≠ 0 → b' ≠ 0 →
+      (algebraMap A (FractionRing A) a / algebraMap A (FractionRing A) b =
+          algebraMap A (FractionRing A) a' / algebraMap A (FractionRing A) b' ↔
+        a * b' = b * a')) ∧
+    ∀ (K : Type v) [Field K] (φ : A →+* K), Function.Injective φ →
+      (∃! ψ : FractionRing A →+* K, ψ.comp (algebraMap A (FractionRing A)) = φ) ∧
+      ∀ ψ : FractionRing A →+* K, ψ.comp (algebraMap A (FractionRing A)) = φ →
+        ∀ a b : A, ψ (algebraMap A (FractionRing A) a / algebraMap A (FractionRing A) b) =
+          φ a * (φ b)⁻¹
+```
+
 Declarations registered for the tag:
 
-- [`FractionRing`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=FractionRing#doc) registered with `add_to_stacks` in [StacksCore/RingTheory/Localization/FractionRing.lean, line 14](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/RingTheory/Localization/FractionRing.lean#L14) (StacksCore). References: EGA 0 (10.3.1.1); EGA 0 (1.2.2), “special case”; EGA 0 (21.8.8); EGA II (7.1.5); EGA IV (18.11.12).
-- [`IsFractionRing.lift`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=IsFractionRing.lift#doc) registered with `add_to_stacks` in [StacksCore/RingTheory/Localization/FractionRing.lean, line 15](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/RingTheory/Localization/FractionRing.lean#L15) (StacksCore): “uniqueness is given by IsLocalization.ringHom\_ext”.
-- [`PrincipalIdealRing.isMaximal_of_irreducible`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=PrincipalIdealRing.isMaximal_of_irreducible#doc) registered with `add_to_stacks` in [StacksCore/RingTheory/PrincipalIdealDomain.lean, line 16](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/RingTheory/PrincipalIdealDomain.lean#L16) (StacksCore): “first part”.
+- [`FractionRing`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=FractionRing#doc) registered with `add_to_stacks` in [StacksCore/RingTheory/Localization/FractionRing.lean, line 14](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/RingTheory/Localization/FractionRing.lean#L14) (StacksCore). References: EGA 0 (10.3.1.1); EGA 0 (1.2.2), “special case”; EGA 0 (21.8.8); EGA II (7.1.5); EGA IV (18.11.12).
+- [`IsFractionRing.lift`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=IsFractionRing.lift#doc) registered with `add_to_stacks` in [StacksCore/RingTheory/Localization/FractionRing.lean, line 15](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/RingTheory/Localization/FractionRing.lean#L15) (StacksCore): “uniqueness is given by IsLocalization.ringHom\_ext”.
 
 ## Tag 09FK, an example
 
@@ -74,7 +99,7 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`RatFunc.instIsFractionRingPolynomial`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=RatFunc.instIsFractionRingPolynomial#doc) registered with `add_to_stacks` in [StacksCore/FieldTheory/RatFunc/Basic.lean, line 15](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/FieldTheory/RatFunc/Basic.lean#L15) (StacksCore).
+- [`RatFunc.instIsFractionRingPolynomial`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=RatFunc.instIsFractionRingPolynomial#doc) registered with `add_to_stacks` in [StacksCore/FieldTheory/RatFunc/Basic.lean, line 15](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/FieldTheory/RatFunc/Basic.lean#L15) (StacksCore).
 
 ## Depends on
 
@@ -83,4 +108,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 9.3, Tag 09FF](https://stacks.math.columbia.edu/tag/09FF)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

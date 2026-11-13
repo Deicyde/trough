@@ -8,13 +8,13 @@ proof: formalized
 
 # 33.22 Global generation
 
-Section 33.22 of the Stacks Project, [Tag 0B5W](https://stacks.math.columbia.edu/tag/0B5W). 3 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 33.22 of the Stacks Project, [Tag 0B5W](https://stacks.math.columbia.edu/tag/0B5W). 3 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0B57, a lemma
 
 [Tag 0B57](https://stacks.math.columbia.edu/tag/0B57) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.FlatBaseChange.nonempty_generatingSections_pullback_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FlatBaseChange/GlobalGeneration.lean, line 324](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FlatBaseChange/GlobalGeneration.lean#L324). The attribute's comment: “corrected: for `X ⟶ Spec A` quasi-compact and quasi-separated; without quasi-compactness the statement is false, see `not_forall_nonempty_generatingSections_pullback_iff`”.
+**`Stacks.AlgebraicGeometry.FlatBaseChange.nonempty_generatingSections_pullback_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FlatBaseChange/GlobalGeneration.lean, line 321](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FlatBaseChange/GlobalGeneration.lean#L321). The attribute's comment: “corrected: for `X ⟶ Spec A` quasi-compact and quasi-separated; without quasi-compactness the statement is false, see `not_forall_nonempty_generatingSections_pullback_iff`”.
 
 > **[Stacks, Tag 0B57], corrected.** Let `f : X ⟶ Spec A` be a quasi-compact quasi-separated
 > morphism, let `g : Spec B ⟶ Spec A` be flat and surjective — equivalently, a faithfully flat
@@ -35,7 +35,7 @@ theorem nonempty_generatingSections_pullback_iff (H : IsPullback g' f' f g) [Fla
       Nonempty ((Scheme.Modules.pullback g').obj F).GeneratingSections
 ```
 
-**`Stacks.AlgebraicGeometry.FlatBaseChange.nonempty_generatingSections_pullback_iff_specMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FlatBaseChange/GlobalGeneration.lean, line 346](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FlatBaseChange/GlobalGeneration.lean#L346). The attribute's comment: “corrected, on a faithfully flat ring map: for `X ⟶ Spec A` quasi-compact and quasi-separated; without quasi-compactness the statement is false, see `not_forall_nonempty_generatingSections_pullback_iff_specMap`”.
+**`Stacks.AlgebraicGeometry.FlatBaseChange.nonempty_generatingSections_pullback_iff_specMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FlatBaseChange/GlobalGeneration.lean, line 343](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FlatBaseChange/GlobalGeneration.lean#L343). The attribute's comment: “corrected, on a faithfully flat ring map: for `X ⟶ Spec A` quasi-compact and quasi-separated; without quasi-compactness the statement is false, see `not_forall_nonempty_generatingSections_pullback_iff_specMap`”.
 
 > **[Stacks, Tag 0B57], corrected, read on a faithfully flat ring map.** For a faithfully
 > flat ring map `φ : A ⟶ B` and a quasi-coherent module `F` on a scheme quasi-compact and
@@ -60,7 +60,7 @@ theorem nonempty_generatingSections_pullback_iff_specMap {A B : CommRingCat.{u}}
 
 [Tag 0B58](https://stacks.math.columbia.edu/tag/0B58) in the Stacks Project.
 
-**`AlgebraicGeometry.ProjectiveSpaceOfModule.exists_homogeneousSection_vanishing_at_point`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Projective/RationalPointHyperplane.lean, line 354](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Projective/RationalPointHyperplane.lean#L354). The attribute's comment: “the case `X = 𝐏(V)`, `ℒ = 𝒪(1)` that the source's proof reduces the lemma to; the reduction itself is not formalized”.
+**`AlgebraicGeometry.ProjectiveSpaceOfModule.exists_homogeneousSection_vanishing_at_point`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Projective/RationalPointHyperplane.lean, line 354](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Projective/RationalPointHyperplane.lean#L354). The attribute's comment: “the case `X = 𝐏(V)`, `ℒ = 𝒪(1)` that the source's proof reduces the lemma to; the reduction itself is not formalized”.
 
 > **Stacks Tag 0B58 for `X = 𝐏(V)` and `ℒ = 𝒪(1)`.** Let `k` be an infinite field, `q` a
 > `k`-rational point of `P(V)` and `q₁, …, qₙ` finitely many points of `P(V)` distinct from `q`.
@@ -90,7 +90,7 @@ theorem exists_homogeneousSection_vanishing_at_point
             (SymmetricAlgebra.ι k V v) (ι_mem_symmetricPower_one k V v))
 ```
 
-**`AlgebraicGeometry.exists_globalSection_vanishing_at_rationalPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Projective/VeryAmpleVanishAtPoint.lean, line 105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Projective/VeryAmpleVanishAtPoint.lean#L105).
+**`AlgebraicGeometry.exists_globalSection_vanishing_at_rationalPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Projective/VeryAmpleVanishAtPoint.lean, line 105](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Projective/VeryAmpleVanishAtPoint.lean#L105).
 
 > **Stacks Tag 0B58.** Let `k` be an infinite field, `X` a scheme of finite type over `k`, `L` a
 > very ample invertible `𝒪_X`-module, `x` a `k`-rational point of `X` and `xs` finitely many points
@@ -117,7 +117,7 @@ theorem exists_globalSection_vanishing_at_rationalPoint
 
 [Tag 0B3Z](https://stacks.math.columbia.edu/tag/0B3Z) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_submodule_generatingSections_finrank_le_dimension_add_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/SmoothOverField/InvertibleGlobalGeneration.lean, line 465](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/SmoothOverField/InvertibleGlobalGeneration.lean#L465).
+**`AlgebraicGeometry.exists_submodule_generatingSections_finrank_le_dimension_add_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/SmoothOverField/InvertibleGlobalGeneration.lean, line 465](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/SmoothOverField/InvertibleGlobalGeneration.lean#L465).
 
 > An invertible sheaf generated by a linear family of sections is generated by a
 > subspace of dimension at most one more than the dimension of the scheme.
@@ -148,4 +148,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 33.22, Tag 0B5W](https://stacks.math.columbia.edu/tag/0B5W)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

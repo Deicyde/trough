@@ -1,6 +1,6 @@
 # 62 Relative Cycles
 
-Chapter 62 of the Stacks Project, *Relative Cycles*, [Tag 0H4B](https://stacks.math.columbia.edu/tag/0H4B): the 13 sections of its 17 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 76 tags are carried by 152 declarations of the repository (all in StacksFrontier).
+Chapter 62 of the Stacks Project, *Relative Cycles*, [Tag 0H4B](https://stacks.math.columbia.edu/tag/0H4B): the 13 sections of its 17 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 76 tags are carried by 156 declarations of the repository (all in StacksFrontier).
 
 - [62.3 Cycles relative to fields](62-3-cycles-relative-to-fields.md)
 - [62.4 Specialization of cycles](62-4-specialization-of-cycles.md)

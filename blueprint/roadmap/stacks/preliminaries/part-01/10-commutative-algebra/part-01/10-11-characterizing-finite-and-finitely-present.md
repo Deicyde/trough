@@ -8,13 +8,13 @@ proof: formalized
 
 # 10.11 Characterizing finite and finitely presented modules
 
-Section 10.11 of the Stacks Project, [Tag 0G8M](https://stacks.math.columbia.edu/tag/0G8M). 4 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 10.11 of the Stacks Project, [Tag 0G8M](https://stacks.math.columbia.edu/tag/0G8M). 4 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0G8N, a lemma
 
 [Tag 0G8N](https://stacks.math.columbia.edu/tag/0G8N) in the Stacks Project.
 
-**`Stacks.Module.FinitenessViaHomColimit.finite_iff_comparisonMap_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Finiteness/HomColimit.lean, line 362](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Module/Finiteness/HomColimit.lean#L362). References: EGA IV (8.5.2.1), “Forward implication”.
+**`Stacks.Module.FinitenessViaHomColimit.finite_iff_comparisonMap_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Finiteness/HomColimit.lean, line 362](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/Finiteness/HomColimit.lean#L362). References: EGA IV (8.5.2.1), “Forward implication”.
 
 > **Stacks Tag 0G8N.** An `R`-module `N` is finite (finitely generated) if and
 > only if for every filtered colimit `M = colim_i M_i` of `R`-modules the canonical
@@ -29,7 +29,7 @@ theorem finite_iff_comparisonMap_injective (N : ModuleCat.{w} R) :
 
 [Tag 07N8](https://stacks.math.columbia.edu/tag/07N8) in the Stacks Project.
 
-**`Module.IsRelation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/FinitePresentation/Colimit.lean, line 215](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Module/FinitePresentation/Colimit.lean#L215).
+**`Module.IsRelation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/FinitePresentation/Colimit.lean, line 215](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/FinitePresentation/Colimit.lean#L215).
 
 > `IsRelation f x` says that the coefficients `f` give a relation among the elements
 > `x` of an `R`-module, i.e. `∑ i, f i • x i = 0`.
@@ -43,7 +43,7 @@ def IsRelation {R : Type*} [Semiring R] {M : Type*} [AddCommMonoid M] [Module R 
 
 [Tag 00HA](https://stacks.math.columbia.edu/tag/00HA) in the Stacks Project.
 
-**`Module.exists_linearEquiv_directLimit_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/FinitePresentation/Colimit.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Module/FinitePresentation/Colimit.lean#L162).
+**`Module.exists_linearEquiv_directLimit_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/FinitePresentation/Colimit.lean, line 162](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/FinitePresentation/Colimit.lean#L162).
 
 > Every `R`-module `M` is the colimit of a directed system of finitely
 > presented `R`-modules in the universe of `M`, provided `R` is small in that universe.
@@ -63,7 +63,7 @@ theorem Module.exists_linearEquiv_directLimit_finitePresentation
       Nonempty (M ≃ₗ[R] Module.DirectLimit G f)
 ```
 
-**`Module.exists_linearEquiv_directLimit_finitePresentation_max`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/FinitePresentation/Colimit.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Module/FinitePresentation/Colimit.lean#L195). The attribute's comment: “no smallness assumption on the ring”.
+**`Module.exists_linearEquiv_directLimit_finitePresentation_max`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/FinitePresentation/Colimit.lean, line 195](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/FinitePresentation/Colimit.lean#L195). The attribute's comment: “no smallness assumption on the ring”.
 
 > Every module is a directed colimit of finitely presented modules in the maximum of the
 > universes of the ring and the module.
@@ -85,7 +85,7 @@ theorem Module.exists_linearEquiv_directLimit_finitePresentation_max
 
 [Tag 0G8P](https://stacks.math.columbia.edu/tag/0G8P) in the Stacks Project.
 
-**`finitePresentation_iff_comparisonMap_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Finiteness/HomColimit.lean, line 692](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Module/Finiteness/HomColimit.lean#L692). References: EGA IV (8.5.2), “(i), special case”; EGA IV (8.5.2.1), “more general”; SGA 3 VIIB (0.3.5), “(3), special case”.
+**`finitePresentation_iff_comparisonMap_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Finiteness/HomColimit.lean, line 692](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/Finiteness/HomColimit.lean#L692). References: EGA IV (8.5.2), “(i), special case”; EGA IV (8.5.2.1), “more general”; SGA 3 VIIB (0.3.5), “(3), special case”.
 
 > **Stacks Tag 0G8P.** An `R`-module `N` is finitely presented if and only if for
 > every directed (filtered) system of `R`-modules the canonical comparison map
@@ -114,4 +114,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.11, Tag 0G8M](https://stacks.math.columbia.edu/tag/0G8M)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

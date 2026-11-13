@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# 48.12 Right adjoint of… to 48.21 Dimension functions
+# 48.12 Right adjoint of… to 48.22 Dualizing modules
 
 - [48.12 Right adjoint of pushforward for proper flat morphisms](48-12-right-adjoint-of-pushforward-for-proper-fl.md)
 - [48.13 Right adjoint of pushforward for perfect proper morphisms](48-13-right-adjoint-of-pushforward-for-perfect-p.md)
@@ -14,3 +14,4 @@ navigation: transparent
 - [48.19 A duality theory](48-19-a-duality-theory.md)
 - [48.20 Glueing dualizing complexes](48-20-glueing-dualizing-complexes.md)
 - [48.21 Dimension functions](48-21-dimension-functions.md)
+- [48.22 Dualizing modules](48-22-dualizing-modules.md)

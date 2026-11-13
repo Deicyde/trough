@@ -1,81 +1,85 @@
 ---
 declaration: section
 origin: cited
-lean: CategoryTheory.GrothendieckTopology.locallyRepresentableEquivalence, CategoryTheory.GrothendieckTopology.representableByProdYoneda, CategoryTheory.GrothendieckTopology.effectiveDescentData_toDescentData_iff, CategoryTheory.GrothendieckTopology.effectiveDescentDataSheafified_toDescentData_iff, CategoryTheory.isRepresentable_overMap_iff
+lean: AlgebraicGeometry.DescentData.sheafEquivalence, AlgebraicGeometry.DescentData.representableBy_sheafEquivalence_functor, AlgebraicGeometry.DescentData.representableBy_sheafEquivalence_inverse, AlgebraicGeometry.DescentData.isRepresentable_sheafEquivalence_functor_iff, AlgebraicGeometry.DescentData.isRepresentable_iff_isFamilyEffective_sheafEquivalence_inverse, CategoryTheory.isRepresentable_overMap_iff
 statement: formalized
 proof: formalized
 ---
 
 # 35.39 Descent data in terms of sheaves
 
-Section 35.39 of the Stacks Project, [Tag 02W4](https://stacks.math.columbia.edu/tag/02W4). 2 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 35.39 of the Stacks Project, [Tag 02W4](https://stacks.math.columbia.edu/tag/02W4). 2 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 02W5, a lemma
 
 [Tag 02W5](https://stacks.math.columbia.edu/tag/02W5) in the Stacks Project.
 
-**`CategoryTheory.GrothendieckTopology.locallyRepresentableEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Descent/LocallyRepresentableSheaves.lean, line 381](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Descent/LocallyRepresentableSheaves.lean#L381). The attribute's comment: “the equivalence of categories”. References: SGA 3 IV (4.6.8).
+**`AlgebraicGeometry.DescentData.sheafEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/DescentDataSheaves.lean, line 1059](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/DescentDataSheaves.lean#L1059). The attribute's comment: “the equivalence of categories”.
 
-> Let `(C, J)` be a site, let `{f i : X i ⟶ S}` be a covering of an object `S` of `C`, and let
-> `G` range over the sheaves of types on the slice site `C/S`. The sheaves for which every product
-> `h_{X i} ⨯ G` is representable are equivalent to the descent data for the covering with
-> representable components, via the functor sending a sheaf to its canonical descent datum.
+> **Stacks 02W5.** Let `J` be a subcanonical topology on the category of schemes (for instance
+> the Zariski, étale, smooth, syntomic or fppf topology), let `S` be a scheme and let
+> `{f i : X i ⟶ S}` be a `J`-covering of `S`. Then descent data `(V_i, φ_ij)` of schemes relative to
+> `{f i}` are equivalent to sheaves `F` on `(Sch/S)_J` such that every product `h_{X i} × F` is
+> representable. The functor sends `D` to the sheaf `T ↦ Hom(can T, D)` of morphisms of descent
+> data out of the canonical descent datum of `T`.
 
 ```lean
-noncomputable def locallyRepresentableEquivalence
-    [HasLimitsOfSize.{max u v, max u v} (Type v)] (hf : Sieve.ofArrows X f ∈ J S) :
-    (locallyRepresentable J f).FullSubcategory ≌
-      (descentDataRepresentable J f).FullSubcategory
+noncomputable def sheafEquivalence :
+    DescentData f ≌ (sheavesLocallyRepresentable J f).FullSubcategory
 ```
 
-**`CategoryTheory.GrothendieckTopology.representableByProdYoneda`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Descent/LocallyRepresentableSheaves.lean, line 393](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Descent/LocallyRepresentableSheaves.lean#L393). The attribute's comment: “part (1): the representing objects are the components of the descent datum”.
+**`AlgebraicGeometry.DescentData.representableBy_sheafEquivalence_functor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/DescentDataSheaves.lean, line 1072](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/DescentDataSheaves.lean#L1072). The attribute's comment: “part (1): the objects representing `h_{S_i} × F` are the schemes `X_i`”.
 
-> The object representing the product `h_{X i} ⨯ G` is the object over `X i` representing the
-> `i`-th component of the canonical descent datum of `G`, viewed as an object over `S`.
+> **Stacks 02W5, part (1)**, from left to right: for a descent datum `(V_i, φ_ij)`, the product
+> `h_{X i} × F` with the corresponding sheaf `F` is represented by `V_i`, viewed as a scheme over
+> `S`.
 
 ```lean
-noncomputable def representableByProdYoneda (G : Sheaf (J.over S) (Type v)) (i : ι)
-    {Z : Over (X i)}
-    (r : ((((J.pseudofunctorOver (Type v)).toDescentData f).obj G).obj i).obj.RepresentableBy Z) :
-    (CategoryTheory.yoneda.obj (Over.mk (f i)) ⨯ G.obj).RepresentableBy
-      ((Over.map (f i)).obj Z)
+noncomputable def representableBy_sheafEquivalence_functor (D : DescentData f) (i : ι) :
+    (yoneda.obj (Over.mk (f i)) ⨯ ((sheafEquivalence hf).functor.obj D).obj.obj).RepresentableBy
+      ((Over.map (f i)).obj (D.obj i))
 ```
 
-**`CategoryTheory.GrothendieckTopology.effectiveDescentData_toDescentData_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Descent/LocallyRepresentableSheaves.lean, line 412](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Descent/LocallyRepresentableSheaves.lean#L412). The attribute's comment: “part (2): representable if and only if effective”. References: SGA 3 IV (4.6.8), “partial”.
+**`AlgebraicGeometry.DescentData.representableBy_sheafEquivalence_inverse`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/DescentDataSheaves.lean, line 1081](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/DescentDataSheaves.lean#L1081). The attribute's comment: “part (1), from sheaves to descent data”.
 
-> The canonical descent datum of a sheaf `G` on `C/S` relative to a covering `{f i : X i ⟶ S}` is
-> effective if and only if `G` is representable.
+> **Stacks 02W5, part (1)**, from right to left: for a sheaf `F` on `(Sch/S)_J` with every
+> `h_{X i} × F` representable, the product `h_{X i} × F` is represented by the `i`-th component of
+> the corresponding descent datum, viewed as a scheme over `S`.
 
 ```lean
-theorem effectiveDescentData_toDescentData_iff [J.Subcanonical]
-    [HasLimitsOfSize.{max u v, max u v} (Type v)] (hf : Sieve.ofArrows X f ∈ J S)
-    (G : Sheaf (J.over S) (Type v)) :
-    effectiveDescentData J f (((J.pseudofunctorOver (Type v)).toDescentData f).obj G) ↔
-      G.obj.IsRepresentable
+noncomputable def representableBy_sheafEquivalence_inverse
+    (F : (sheavesLocallyRepresentable J f).FullSubcategory) (i : ι) :
+    (yoneda.obj (Over.mk (f i)) ⨯ F.obj.obj).RepresentableBy
+      ((Over.map (f i)).obj (((sheafEquivalence hf).inverse.obj F).obj i))
 ```
 
-**`CategoryTheory.GrothendieckTopology.effectiveDescentDataSheafified_toDescentData_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Descent/LocallyRepresentableSheavesSheafified.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Descent/LocallyRepresentableSheavesSheafified.lean#L148). The attribute's comment: “part (2), for sheafified ULift Yoneda”. References: SGA 3 IV (4.6.8), “partial”.
+**`AlgebraicGeometry.DescentData.isRepresentable_sheafEquivalence_functor_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/DescentDataSheaves.lean, line 1092](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/DescentDataSheaves.lean#L1092). The attribute's comment: “part (2): `F` is representable if and only if the descent datum is effective”.
 
-> **Stacks 02W5, part (2), for sheaves of large sets.** Let `(C, J)` be a subcanonical site
-> with `C : Type u` and `Category.{v} C`, let `{f i : X i ⟶ S}` be a covering of an object `S`
-> of `C`, and let `G` be a sheaf of `Type (max u v)`-valued sets on the slice site `C/S`. Then the
-> canonical descent datum of `G` is effective — isomorphic to the descent datum of a sheafified
-> representable — if and only if the underlying presheaf of `G` is representable.
+> **Stacks 02W5, part (2)**: the sheaf corresponding to a descent datum is representable if and
+> only if the descent datum is effective.
 
 ```lean
-theorem effectiveDescentDataSheafified_toDescentData_iff [J.Subcanonical]
-    [HasWeakSheafify (J.over S) (Type max u v)] (hf : Sieve.ofArrows X f ∈ J S)
-    (G : Sheaf (J.over S) (Type max u v)) :
-    effectiveDescentDataSheafified J f
-        (((J.pseudofunctorOver (Type max u v)).toDescentData f).obj G) ↔
-      G.obj.IsRepresentable
+theorem isRepresentable_sheafEquivalence_functor_iff (D : DescentData f) :
+    ((sheafEquivalence hf).functor.obj D).obj.obj.IsRepresentable ↔ D.IsFamilyEffective
+```
+
+**`AlgebraicGeometry.DescentData.isRepresentable_iff_isFamilyEffective_sheafEquivalence_inverse`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/DescentDataSheaves.lean, line 1118](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/DescentDataSheaves.lean#L1118). The attribute's comment: “part (2), from sheaves to descent data”.
+
+> **Stacks 02W5, part (2)**, from the side of sheaves: a sheaf `F` on `(Sch/S)_J` with every
+> `h_{X i} × F` representable is representable if and only if the corresponding descent datum is
+> effective.
+
+```lean
+theorem isRepresentable_iff_isFamilyEffective_sheafEquivalence_inverse
+    (F : (sheavesLocallyRepresentable J f).FullSubcategory) :
+    F.obj.obj.IsRepresentable ↔ ((sheafEquivalence hf).inverse.obj F).IsFamilyEffective
 ```
 
 ## Tag 02W6, a remark
 
 [Tag 02W6](https://stacks.math.columbia.edu/tag/02W6) in the Stacks Project.
 
-**`CategoryTheory.isRepresentable_overMap_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Descent/LocallyRepresentableSheaves.lean, line 292](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Descent/LocallyRepresentableSheaves.lean#L292).
+**`CategoryTheory.isRepresentable_overMap_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Descent/LocallyRepresentableSheaves.lean, line 303](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Descent/LocallyRepresentableSheaves.lean#L303).
 
 > Let `S` be an object of a category `C`, let `T` be an object over `S` and let `F` be a presheaf
 > of types on `C/S`. Then the product `h_T ⨯ F` is representable if and only if the restriction of
@@ -94,4 +98,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 35.39, Tag 02W4](https://stacks.math.columbia.edu/tag/02W4)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

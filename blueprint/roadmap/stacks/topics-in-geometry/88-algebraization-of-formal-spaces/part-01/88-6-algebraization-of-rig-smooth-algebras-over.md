@@ -8,13 +8,13 @@ proof: formalized
 
 # 88.6 Algebraization of rig-smooth algebras over G-rings
 
-Section 88.6 of the Stacks Project, [Tag 0ALU](https://stacks.math.columbia.edu/tag/0ALU). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 88.6 of the Stacks Project, [Tag 0ALU](https://stacks.math.columbia.edu/tag/0ALU). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0GAR, a lemma
 
 [Tag 0GAR](https://stacks.math.columbia.edu/tag/0GAR) in the Stacks Project.
 
-**`Rig.PerturbedPresentation.exists_algEquiv_of_perturbation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/RigSmooth/PerturbationAlgEquiv.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/RigSmooth/PerturbationAlgEquiv.lean#L147).
+**`Rig.PerturbedPresentation.exists_algEquiv_of_perturbation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/RigSmooth/PerturbationAlgEquiv.lean, line 147](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/RigSmooth/PerturbationAlgEquiv.lean#L147).
 
 > **Stacks 0GAR.** Let `I` be an ideal of a Noetherian ring `A`, `r ≥ 0` and
 > `P = A[x₁, …, x_r]^∧` the `I`-adic completion. Let `P^⊕t --K--> P^⊕m --(g₁, …, g_m)--> P → B → 0`
@@ -73,7 +73,7 @@ public theorem exists_algEquiv_of_perturbation {t m : ℕ}
 
 [Tag 0GAS](https://stacks.math.columbia.edu/tag/0GAS) in the Stacks Project.
 
-**`Rig.exists_finiteType_adicCompletion_algEquiv_henselization_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/Algebraization/GRing.lean, line 414](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/Algebraization/GRing.lean#L414).
+**`Rig.exists_finiteType_adicCompletion_algEquiv_henselization_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/Algebraization/GRing.lean, line 414](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/Algebraization/GRing.lean#L414).
 
 > A quotient of the henselization of a finite type `A`-algebra has a completion algebraizable
 > by a finite type `A`-algebra.
@@ -97,7 +97,7 @@ public theorem exists_finiteType_adicCompletion_algEquiv_henselization_quotient
 
 [Tag 0GAT](https://stacks.math.columbia.edu/tag/0GAT) in the Stacks Project.
 
-**`Rig.exists_finiteType_adicCompletion_algEquiv_of_isGRing_of_isRigSmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/Algebraization/PerturbationStableQuotients.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Rig/Algebraization/PerturbationStableQuotients.lean#L110).
+**`Rig.exists_finiteType_adicCompletion_algEquiv_of_isGRing_of_isRigSmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Rig/Algebraization/PerturbationStableQuotients.lean, line 110](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Rig/Algebraization/PerturbationStableQuotients.lean#L110).
 
 > **Stacks Project, Proposition 0GAT.** Let `I` be an ideal of a Noetherian G-ring `A` and
 > let `B` be an object of the category of Tag 0AL4. If `B` is rig-smooth over `(A, I)`, then
@@ -123,7 +123,7 @@ public theorem exists_finiteType_adicCompletion_algEquiv_of_isGRing_of_isRigSmoo
 
 [Tag 0AK4](https://stacks.math.columbia.edu/tag/0AK4) in the Stacks Project.
 
-**`Stacks.Smoothing.exists_etale_neighbourhood_algHom_approximation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/ApproximationOfCompletionMaps.lean, line 188](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Smoothing/ApproximationOfCompletionMaps.lean#L188). The attribute's comment: “the full conclusion with NO carried hypotheses, for every `N ≥ 1`: an étale `C`-algebra `C'` inducing an isomorphism `C / IC ≅ C' / IC'` (indeed `C / (IC)^n ≅ C' / (IC)^n C'` for every `n`), and an `A`-algebra map `B → C'` agreeing modulo `I ^ N` with the given map of `I`-adic completions. Stacks 0AH5 is used, not assumed, and the `IsIndSmoothAdicCompletion` hypothesis it carries in place of the source's G-ring is discharged by Popescu's Theorem 07GC (`indSmooth_of_isRegularRingMap`) through `isIndSmoothAdicCompletion_of_isGRing`, applied once to the henselization of (C, IC), which is a G-ring by 0AH3 and whose completion map is regular by 0AH2. Stacks 0AKJ supplies the single étale stage.”.
+**`Stacks.Smoothing.exists_etale_neighbourhood_algHom_approximation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/ApproximationOfCompletionMaps.lean, line 188](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Smoothing/ApproximationOfCompletionMaps.lean#L188). The attribute's comment: “the full conclusion with NO carried hypotheses, for every `N ≥ 1`: an étale `C`-algebra `C'` inducing an isomorphism `C / IC ≅ C' / IC'` (indeed `C / (IC)^n ≅ C' / (IC)^n C'` for every `n`), and an `A`-algebra map `B → C'` agreeing modulo `I ^ N` with the given map of `I`-adic completions. Stacks 0AH5 is used, not assumed, and the `IsIndSmoothAdicCompletion` hypothesis it carries in place of the source's G-ring is discharged by Popescu's Theorem 07GC (`indSmooth_of_isRegularRingMap`) through `isIndSmoothAdicCompletion_of_isGRing`, applied once to the henselization of (C, IC), which is a G-ring by 0AH3 and whose completion map is regular by 0AH2. Stacks 0AKJ supplies the single étale stage.”.
 
 > **Stacks 0AK4.** Let `A` be a Noetherian G-ring, `I ⊆ A` an ideal and `B`, `C` finite type
 > `A`-algebras. Every `A`-algebra map `ψ` between the `I`-adic completions of `B` and `C` is
@@ -164,4 +164,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 88.6, Tag 0ALU](https://stacks.math.columbia.edu/tag/0ALU)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

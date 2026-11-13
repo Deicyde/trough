@@ -8,13 +8,13 @@ proof: formalized
 
 # 75.13 Pseudo-coherent and perfect complexes
 
-Section 75.13 of the Stacks Project, [Tag 08HC](https://stacks.math.columbia.edu/tag/08HC). 11 tags here are carried by 34 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 75.13 of the Stacks Project, [Tag 08HC](https://stacks.math.columbia.edu/tag/08HC). 11 tags here are carried by 34 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 08HD, a lemma
 
 [Tag 08HD](https://stacks.math.columbia.edu/tag/08HD) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallEtale.isFiniteTypeOnSite_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleFiniteType.lean, line 458](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleFiniteType.lean#L458). The attribute's comment: “the implication (1) ⇒ (2), with finite type in the categorical form of 03DL (5). The converse is `AlgebraicGeometry.SmallEtale.isFiniteTypeOnSite_of_associatedModule`.”.
+**`AlgebraicGeometry.SmallEtale.isFiniteTypeOnSite_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleFiniteType.lean, line 458](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleFiniteType.lean#L458). The attribute's comment: “the implication (1) ⇒ (2), with finite type in the categorical form of 03DL (5). The converse is `AlgebraicGeometry.SmallEtale.isFiniteTypeOnSite_of_associatedModule`.”.
 
 > **Stacks 08HD, the implication (1) ⇒ (2).**  The pullback `ε^*𝓕` along the morphism of
 > ringed sites `ε : (X_étale, 𝒪) ⟶ (X_Zar, 𝒪_X)` of an `𝒪_X`-module of finite type is of finite
@@ -30,7 +30,7 @@ theorem isFiniteTypeOnSite_associatedModule (F : X.Modules)
     SheafOfModules.IsFiniteTypeOnSite ((associatedModule B X hX).obj F)
 ```
 
-**`AlgebraicGeometry.SmallEtale.isFiniteTypeOnSite_of_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleFiniteType.lean, line 896](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleFiniteType.lean#L896). The attribute's comment: “the implication (2) ⇒ (1), with finite type in the categorical form of 03DL (5). The source deduces it from the stalk description of `ε^*`; here it is deduced from the zero-detection assertion of 08H8 for an arbitrary `𝒪_X`-module, `AlgebraicGeometry.SmallEtale.isZero_of_isZero_associatedModule_general`.”.
+**`AlgebraicGeometry.SmallEtale.isFiniteTypeOnSite_of_associatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleFiniteType.lean, line 896](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleFiniteType.lean#L896). The attribute's comment: “the implication (2) ⇒ (1), with finite type in the categorical form of 03DL (5). The source deduces it from the stalk description of `ε^*`; here it is deduced from the zero-detection assertion of 08H8 for an arbitrary `𝒪_X`-module, `AlgebraicGeometry.SmallEtale.isZero_of_isZero_associatedModule_general`.”.
 
 > **Stacks 08HD, the implication (2) ⇒ (1).**  An `𝒪_X`-module whose pullback `ε^*𝓕` along
 > the morphism of ringed sites `ε : (X_étale, 𝒪) ⟶ (X_Zar, 𝒪_X)` is of finite type on the small
@@ -56,7 +56,7 @@ theorem isFiniteTypeOnSite_of_associatedModule (F : X.Modules)
 
 [Tag 08HE](https://stacks.math.columbia.edu/tag/08HE) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallEtale.associatedModuleToPseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtalePseudoCoherentDescent.lean, line 549](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtalePseudoCoherentDescent.lean#L549). The attribute's comment: “clause (2) ⇒ (1): if `ε^*E` is `m`-pseudo-coherent on the small étale site of `S` then `E` is `m`-pseudo-coherent on the small Zariski site of `S`, `ε` being the comparison of ringed sites of Stacks 08H7.”.
+**`AlgebraicGeometry.SmallEtale.associatedModuleToPseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtalePseudoCoherentDescent.lean, line 549](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtalePseudoCoherentDescent.lean#L549). The attribute's comment: “clause (2) ⇒ (1): if `ε^*E` is `m`-pseudo-coherent on the small étale site of `S` then `E` is `m`-pseudo-coherent on the small Zariski site of `S`, `ε` being the comparison of ringed sites of Stacks 08H7.”.
 
 > If `ε^*E` is `m`-pseudo-coherent on the small étale site of `S` then `E` is
 > `m`-pseudo-coherent on the small Zariski site of `S`, `ε` being the comparison of ringed sites and
@@ -69,7 +69,7 @@ public theorem associatedModuleToPseudoCoherent
     AssociatedModuleToPseudoCoherent B S hS E m
 ```
 
-**`AlgebraicGeometry.SmallEtale.pseudoCoherentIffAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtalePseudoCoherentDescent.lean, line 565](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtalePseudoCoherentDescent.lean#L565).
+**`AlgebraicGeometry.SmallEtale.pseudoCoherentIffAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtalePseudoCoherentDescent.lean, line 565](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtalePseudoCoherentDescent.lean#L565).
 
 > Let `S` be a scheme, let `E` be an object of `D(𝒪_S)` and let `m` be an integer. Then `E` is
 > `m`-pseudo-coherent on the small Zariski site of `S` if and only if `ε^*E` is `m`-pseudo-coherent
@@ -82,7 +82,7 @@ public theorem pseudoCoherentIffAssociatedModule
     PseudoCoherentIffAssociatedModule B S hS E m
 ```
 
-**`AlgebraicGeometry.SmallEtale.pseudoCoherentToAssociatedModule_of_slice_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtalePseudoCoherentForward.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtalePseudoCoherentForward.lean#L126). The attribute's comment: “clause (1) ⇒ (2) only: if `E` is `m`-pseudo-coherent on the small Zariski site of `S` then `ε^*E` is `m`-pseudo-coherent on the small étale site of `S`, `ε` being the comparison of Stacks 08H7. Clause (2) ⇒ (1) is `AlgebraicGeometry.SmallEtale.associatedModuleToPseudoCoherent`.”. References: SGA 6 I (2.13), “special case”.
+**`AlgebraicGeometry.SmallEtale.pseudoCoherentToAssociatedModule_of_slice_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtalePseudoCoherentForward.lean, line 126](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtalePseudoCoherentForward.lean#L126). The attribute's comment: “clause (1) ⇒ (2) only: if `E` is `m`-pseudo-coherent on the small Zariski site of `S` then `ε^*E` is `m`-pseudo-coherent on the small étale site of `S`, `ε` being the comparison of Stacks 08H7. Clause (2) ⇒ (1) is `AlgebraicGeometry.SmallEtale.associatedModuleToPseudoCoherent`.”. References: SGA 6 I (2.13), “special case”.
 
 > If `E` is `m`-pseudo-coherent on the small Zariski site of `S` then `ε^*E` is
 > `m`-pseudo-coherent on the small étale site of `S`, where the derived functor is
@@ -100,7 +100,7 @@ public theorem pseudoCoherentToAssociatedModule_of_slice_exact
 
 [Tag 08HF](https://stacks.math.columbia.edu/tag/08HF) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallEtale.hasTorAmplitude_derivedPullback_of_hasTorAmplitude`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleTorAmplitudeComparison.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleTorAmplitudeComparison.lean#L130). The attribute's comment: “clause (1): `E` has tor amplitude in `[a, b]` ⟺ `ε^*E` has tor amplitude in `[a, b]`, for `ε` the comparison morphism of Equation 75.4.0.1 (Stacks 08H7) read on the `Type u`-presented model `AlgebraicGeometry.SmallEtale.smallModelRingedTopos` of the small étale ringed topos, and `ε^*` its derived pullback. Stated for an arbitrary derived tensor product datum on either side rather than for the canonical one. Clause (2) is `AlgebraicGeometry.SmallEtale.hasFiniteTorDimension_derivedPullback_of_hasFiniteTorDimension`”.
+**`AlgebraicGeometry.SmallEtale.hasTorAmplitude_derivedPullback_of_hasTorAmplitude`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleTorAmplitudeComparison.lean, line 130](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleTorAmplitudeComparison.lean#L130). The attribute's comment: “clause (1): `E` has tor amplitude in `[a, b]` ⟺ `ε^*E` has tor amplitude in `[a, b]`, for `ε` the comparison morphism of Equation 75.4.0.1 (Stacks 08H7) read on the `Type u`-presented model `AlgebraicGeometry.SmallEtale.smallModelRingedTopos` of the small étale ringed topos, and `ε^*` its derived pullback. Stated for an arbitrary derived tensor product datum on either side rather than for the canonical one. Clause (2) is `AlgebraicGeometry.SmallEtale.hasFiniteTorDimension_derivedPullback_of_hasFiniteTorDimension`”.
 
 > **Stacks 08HF, clause (1).**  An object `E` of `D(𝒪_S)` has Tor amplitude in `[a, b]` for a
 > derived tensor product datum `T` on the small Zariski ringed site of `S` **if and only if** its
@@ -124,7 +124,7 @@ public theorem hasTorAmplitude_derivedPullback_of_hasTorAmplitude
       HasTorAmplitude T E a b
 ```
 
-**`AlgebraicGeometry.SmallEtale.hasFiniteTorDimension_derivedPullback_of_hasFiniteTorDimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleTorAmplitudeComparison.lean, line 154](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleTorAmplitudeComparison.lean#L154). The attribute's comment: “clause (2): `E` has finite tor dimension ⟺ `ε^*E` has finite tor dimension, for `ε` the comparison morphism of Equation 75.4.0.1 (Stacks 08H7) read on the `Type u`-presented model `AlgebraicGeometry.SmallEtale.smallModelRingedTopos` of the small étale ringed topos, and `ε^*` its derived pullback. Stated for an arbitrary derived tensor product datum on either side rather than for the canonical one. Clause (1) is `AlgebraicGeometry.SmallEtale.hasTorAmplitude_derivedPullback_of_hasTorAmplitude`”.
+**`AlgebraicGeometry.SmallEtale.hasFiniteTorDimension_derivedPullback_of_hasFiniteTorDimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleTorAmplitudeComparison.lean, line 154](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleTorAmplitudeComparison.lean#L154). The attribute's comment: “clause (2): `E` has finite tor dimension ⟺ `ε^*E` has finite tor dimension, for `ε` the comparison morphism of Equation 75.4.0.1 (Stacks 08H7) read on the `Type u`-presented model `AlgebraicGeometry.SmallEtale.smallModelRingedTopos` of the small étale ringed topos, and `ε^*` its derived pullback. Stated for an arbitrary derived tensor product datum on either side rather than for the canonical one. Clause (1) is `AlgebraicGeometry.SmallEtale.hasTorAmplitude_derivedPullback_of_hasTorAmplitude`”.
 
 > **Stacks 08HF, clause (2).**  An object `E` of `D(𝒪_S)` has finite Tor dimension for a
 > derived tensor product datum `T` on the small Zariski ringed site of `S` **if and only if** its
@@ -147,7 +147,7 @@ public theorem hasFiniteTorDimension_derivedPullback_of_hasFiniteTorDimension
 
 [Tag 0DK7](https://stacks.math.columbia.edu/tag/0DK7) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallEtale.locallyHasFiniteTorDimension_relativeDerivedAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleRelativeLocalTorDimension.lean, line 523](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleRelativeLocalTorDimension.lean#L523). The attribute's comment: “part (2), with `ε⁻¹f⁻¹𝒪_Y` for `f_small⁻¹𝒪_{Y_étale}`; see the implementation notes of the module of part (1). The form with `f_small⁻¹𝒪_{Y_étale}` itself is, in `AlgebraicGeometry.Space`, `locallyHasFiniteTorDimension_derivedScalarRestriction_iff_representedZariskiDerivedPullback`”.
+**`AlgebraicGeometry.SmallEtale.locallyHasFiniteTorDimension_relativeDerivedAssociatedModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleRelativeLocalTorDimension.lean, line 523](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleRelativeLocalTorDimension.lean#L523). The attribute's comment: “part (2), with `ε⁻¹f⁻¹𝒪_Y` for `f_small⁻¹𝒪_{Y_étale}`; see the implementation notes of the module of part (1). The form with `f_small⁻¹𝒪_{Y_étale}` itself is, in `AlgebraicGeometry.Space`, `locallyHasFiniteTorDimension_derivedScalarRestriction_iff_representedZariskiDerivedPullback`”.
 
 > **Stacks 0DK7, part (2).**  Let `f : X ⟶ Y` be a morphism of schemes and let `E` be an object
 > of `D(f⁻¹𝒪_Y)`.  Then `E` locally has finite Tor dimension if and only if `ε^*E` locally has
@@ -175,7 +175,7 @@ theorem locallyHasFiniteTorDimension_relativeDerivedAssociatedModule
       LocallyHasFiniteTorDimension TW ((relativeDerivedAssociatedModule B X hX f).obj E)
 ```
 
-**`AlgebraicGeometry.SmallEtale.hasTorAmplitude_relativeDerivedAssociatedModule_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleRelativeTorAmplitude.lean, line 536](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleRelativeTorAmplitude.lean#L536). The attribute's comment: “part (1), with `ε⁻¹f⁻¹𝒪_Y` for `f_small⁻¹𝒪_{Y_étale}`; see the implementation notes. The form with `f_small⁻¹𝒪_{Y_étale}` itself is, in `AlgebraicGeometry.Space`, `hasTorAmplitude_derivedScalarRestriction_iff_representedZariskiDerivedPullback`”.
+**`AlgebraicGeometry.SmallEtale.hasTorAmplitude_relativeDerivedAssociatedModule_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleRelativeTorAmplitude.lean, line 536](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/AssociatedModule/SmallEtaleRelativeTorAmplitude.lean#L536). The attribute's comment: “part (1), with `ε⁻¹f⁻¹𝒪_Y` for `f_small⁻¹𝒪_{Y_étale}`; see the implementation notes. The form with `f_small⁻¹𝒪_{Y_étale}` itself is, in `AlgebraicGeometry.Space`, `hasTorAmplitude_derivedScalarRestriction_iff_representedZariskiDerivedPullback`”.
 
 > **Stacks 0DK7, part (1).**  Let `f : X ⟶ Y` be a morphism of schemes and let `E` be an
 > object of `D(f⁻¹𝒪_Y)`.  Then `E` has Tor amplitude in `[a, b]` if and only if `ε^*E` has Tor
@@ -197,7 +197,7 @@ theorem hasTorAmplitude_relativeDerivedAssociatedModule_iff
         ((relativeDerivedAssociatedModule B X hX f).obj E) a b
 ```
 
-**`AlgebraicGeometry.Space.locallyHasFiniteTorDimension_derivedScalarRestriction_iff_representedZariskiDerivedPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RepresentedZariskiLocalTorDimension.lean, line 141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RepresentedZariskiLocalTorDimension.lean#L141). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.Space.locallyHasFiniteTorDimension_derivedScalarRestriction_iff_representedZariskiDerivedPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RepresentedZariskiLocalTorDimension.lean, line 141](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RepresentedZariskiLocalTorDimension.lean#L141). The attribute's comment: “part (2)”.
 
 > **Stacks 0DK7, part (2).**  Let `g₀ : X ⟶ Y` be the morphism of schemes underlying a
 > morphism `g` of the big fppf site and `E ∈ D(𝒪_X)`.  Then `E` read in `D(g₀⁻¹𝒪_Y)` locally has
@@ -226,7 +226,7 @@ theorem locallyHasFiniteTorDimension_derivedScalarRestriction_iff_representedZar
           ((representedZariskiDerivedPullback B S hS T).obj E))
 ```
 
-**`AlgebraicGeometry.Space.hasTorAmplitude_derivedScalarRestriction_iff_representedZariskiDerivedPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RepresentedZariskiTorAmplitude.lean, line 274](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RepresentedZariskiTorAmplitude.lean#L274). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.Space.hasTorAmplitude_derivedScalarRestriction_iff_representedZariskiDerivedPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RepresentedZariskiTorAmplitude.lean, line 274](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RepresentedZariskiTorAmplitude.lean#L274). The attribute's comment: “part (1)”.
 
 > **Stacks 0DK7, part (1).**  Let `g₀ : X ⟶ Y` be the morphism of schemes underlying a
 > morphism `g` of the big fppf site, `E ∈ D(𝒪_X)` and `ε^*E` its pullback to the small étale site.
@@ -259,7 +259,7 @@ theorem hasTorAmplitude_derivedScalarRestriction_iff_representedZariskiDerivedPu
 
 [Tag 08HG](https://stacks.math.columbia.edu/tag/08HG) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallEtale.isPerfectZariski_iff_isPerfectSmallEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SmallEtalePerfectConverse.lean, line 550](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SmallEtalePerfectConverse.lean#L550).
+**`AlgebraicGeometry.SmallEtale.isPerfectZariski_iff_isPerfectSmallEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SmallEtalePerfectConverse.lean, line 552](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SmallEtalePerfectConverse.lean#L552).
 
 > **Stacks 08HG.** Let `S` be a scheme and `E` an object of `D(𝒪_S)`. Then `E` is a perfect
 > object of `D(𝒪_S)` if and only if `ε^*E` is a perfect object of `D(𝒪_étale)`, where
@@ -278,7 +278,7 @@ theorem isPerfectZariski_iff_isPerfectSmallEtale
     IsPerfectZariski S E ↔ IsPerfectSmallEtale B S hS E
 ```
 
-**`AlgebraicGeometry.SmallEtale.perfectToAssociatedModule_of_slice_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SmallEtalePerfectForward.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SmallEtalePerfectForward.lean#L169). The attribute's comment: “the direction `E` perfect ⟹ `ε^*E` perfect ONLY. Left exactness of `SheafOfModules.pullback (SmallEtale.sliceStructureMap B S hS V)` -- the exactness assertion of Stacks 08H8 localized at an open `V` of `S` -- is supplied by `AlgebraicGeometry.SmallEtale.preservesFiniteLimits_pullback_sliceStructureMap`, which localizes the whole-site 08H8 (`preservesFiniteLimits_associatedModule`) along the open immersion. The converse direction `ε^*E` perfect ⟹ `E` perfect is NOT proved: the source derives it from Stacks 08G8 together with the converses of Stacks 08HE and Stacks 08HF, and of those the converse of Stacks 08HE does not exist in this tree.”.
+**`AlgebraicGeometry.SmallEtale.perfectToAssociatedModule_of_slice_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SmallEtalePerfectForward.lean, line 169](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/SmallEtalePerfectForward.lean#L169). The attribute's comment: “the direction `E` perfect ⟹ `ε^*E` perfect ONLY. Left exactness of `SheafOfModules.pullback (SmallEtale.sliceStructureMap B S hS V)` -- the exactness assertion of Stacks 08H8 localized at an open `V` of `S` -- is supplied by `AlgebraicGeometry.SmallEtale.preservesFiniteLimits_pullback_sliceStructureMap`, which localizes the whole-site 08H8 (`preservesFiniteLimits_associatedModule`) along the open immersion. The converse direction `ε^*E` perfect ⟹ `E` perfect is NOT proved: the source derives it from Stacks 08G8 together with the converses of Stacks 08HE and Stacks 08HF, and of those the converse of Stacks 08HE does not exist in this tree.”.
 
 > **Stacks 08HG, the direction `E` perfect ⟹ `ε^*E` perfect.**
 >
@@ -306,7 +306,7 @@ public theorem perfectToAssociatedModule_of_slice_exact
 
 [Tag 08JL](https://stacks.math.columbia.edu/tag/08JL) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isQuasicoherentOnSite_homology_of_isPseudoCoherentFrom_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PseudoCoherentCohomologyUnconditional.lean, line 259](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PseudoCoherentCohomologyUnconditional.lean#L259). The attribute's comment: “cohomology above the approximation degree”.
+**`AlgebraicGeometry.Space.isQuasicoherentOnSite_homology_of_isPseudoCoherentFrom_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PseudoCoherentCohomologyUnconditional.lean, line 259](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/PseudoCoherentCohomologyUnconditional.lean#L259). The attribute's comment: “cohomology above the approximation degree”.
 
 > **Stacks 08JL, first assertion.**  Let `S` be a scheme, let `F` be an algebraic space over
 > `S` and let `E` be an object of `D(𝒪_F)`.  If `E` is `n`-pseudo-coherent, then `Hⁱ(E)` is a
@@ -328,7 +328,7 @@ theorem isQuasicoherentOnSite_homology_of_isPseudoCoherentFrom_unconditional
       (Modules.{u, u} B S hS F hF) i).obj E).IsQuasicoherentOnSite
 ```
 
-**`AlgebraicGeometry.Space.derivedCategoryB_of_isPseudoCoherent_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PseudoCoherentCohomologyUnconditional.lean, line 288](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PseudoCoherentCohomologyUnconditional.lean#L288). The attribute's comment: “pseudo-coherent objects lie in the quasi-coherent derived category”.
+**`AlgebraicGeometry.Space.derivedCategoryB_of_isPseudoCoherent_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PseudoCoherentCohomologyUnconditional.lean, line 288](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/PseudoCoherentCohomologyUnconditional.lean#L288). The attribute's comment: “pseudo-coherent objects lie in the quasi-coherent derived category”.
 
 > **Stacks 08JL, second assertion.**  Let `S` be a scheme, let `F` be an algebraic space over
 > `S` and let `E` be an object of `D(𝒪_F)`.  If `E` is pseudo-coherent, then `E` lies in
@@ -355,7 +355,7 @@ theorem derivedCategoryB_of_isPseudoCoherent_unconditional
 
 [Tag 08IK](https://stacks.math.columbia.edu/tag/08IK) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isCoherentOnSite_homology_of_isPseudoCoherentFrom_of_isNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PseudoCoherent/CoherentCohomology.lean, line 383](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PseudoCoherent/CoherentCohomology.lean#L383). The attribute's comment: “(2) gives the coherence clause of (1)”.
+**`AlgebraicGeometry.Space.isCoherentOnSite_homology_of_isPseudoCoherentFrom_of_isNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PseudoCoherent/CoherentCohomology.lean, line 383](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/PseudoCoherent/CoherentCohomology.lean#L383). The attribute's comment: “(2) gives the coherence clause of (1)”.
 
 > **Stacks 08IK, the coherence clause of (1) derived from (2).**  Let `S` be a scheme, let `F`
 > be a Noetherian algebraic space over `S` and let `E` be an object of `D_QCoh(𝒪_F)`.  If `E` is
@@ -386,7 +386,7 @@ theorem isCoherentOnSite_homology_of_isPseudoCoherentFrom_of_isNoetherian
       ((DerivedCategory.homologyFunctor (Modules.{u, u} B S hS F hF) i).obj E)
 ```
 
-**`AlgebraicGeometry.Space.isCoherentOnSite_homology_of_isPseudoCoherent_of_isNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PseudoCoherent/CoherentCohomology.lean, line 402](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PseudoCoherent/CoherentCohomology.lean#L402). The attribute's comment: “pseudo-coherent gives coherent cohomology”.
+**`AlgebraicGeometry.Space.isCoherentOnSite_homology_of_isPseudoCoherent_of_isNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PseudoCoherent/CoherentCohomology.lean, line 402](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/PseudoCoherent/CoherentCohomology.lean#L402). The attribute's comment: “pseudo-coherent gives coherent cohomology”.
 
 > **Stacks 08IK, the coherence half of the final statement.**  Let `S` be a scheme, let `F` be
 > a Noetherian algebraic space over `S` and let `E` be a pseudo-coherent object of `D(𝒪_F)`.  Then
@@ -406,7 +406,7 @@ theorem isCoherentOnSite_homology_of_isPseudoCoherent_of_isNoetherian
       ((DerivedCategory.homologyFunctor (Modules.{u, u} B S hS F hF) i).obj E)
 ```
 
-**`AlgebraicGeometry.Space.isPseudoCoherentFrom_of_isCoherent_homology_of_isNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PseudoCoherent/CoherentCohomologyConverse.lean, line 161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PseudoCoherent/CoherentCohomologyConverse.lean#L161). The attribute's comment: “(1) ⇒ (2)”.
+**`AlgebraicGeometry.Space.isPseudoCoherentFrom_of_isCoherent_homology_of_isNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PseudoCoherent/CoherentCohomologyConverse.lean, line 161](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/PseudoCoherent/CoherentCohomologyConverse.lean#L161). The attribute's comment: “(1) ⇒ (2)”.
 
 > On a Noetherian algebraic space, an object of `D_QCoh(𝒪_X)` whose cohomology is coherent in
 > degrees `≥ m` and zero in degrees `> b` is `m`-pseudo-coherent.
@@ -424,7 +424,7 @@ theorem isPseudoCoherentFrom_of_isCoherent_homology_of_isNoetherian
     (smallEtaleRingedSite B S hS X.1 X.2).IsPseudoCoherentFrom E m
 ```
 
-**`AlgebraicGeometry.Space.isPseudoCoherent_of_isCoherent_homology_of_isNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PseudoCoherent/CoherentCohomologyConverse.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PseudoCoherent/CoherentCohomologyConverse.lean#L176). The attribute's comment: “in particular: an object of D⁻\_Coh is pseudo-coherent”.
+**`AlgebraicGeometry.Space.isPseudoCoherent_of_isCoherent_homology_of_isNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PseudoCoherent/CoherentCohomologyConverse.lean, line 176](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/PseudoCoherent/CoherentCohomologyConverse.lean#L176). The attribute's comment: “in particular: an object of D⁻\_Coh is pseudo-coherent”.
 
 > On a Noetherian algebraic space an object of `D(𝒪_X)` with coherent cohomology sheaves
 > vanishing in large degrees is pseudo-coherent.
@@ -438,7 +438,7 @@ theorem isPseudoCoherent_of_isCoherent_homology_of_isNoetherian
     (smallEtaleRingedSite B S hS X.1 X.2).IsPseudoCoherent E
 ```
 
-**`AlgebraicGeometry.Space.isPseudoCoherentFrom_iff_and_isPseudoCoherent_iff_of_isNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PseudoCoherent/CoherentCohomologyEquivalence.lean, line 174](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PseudoCoherent/CoherentCohomologyEquivalence.lean#L174).
+**`AlgebraicGeometry.Space.isPseudoCoherentFrom_iff_and_isPseudoCoherent_iff_of_isNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PseudoCoherent/CoherentCohomologyEquivalence.lean, line 174](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/PseudoCoherent/CoherentCohomologyEquivalence.lean#L174).
 
 > **Stacks 08IK.** Let `S` be a scheme, let `F` be a Noetherian algebraic space over `S` and
 > let `E` be an object of `D_QCoh(𝒪_F)`. For every `m ∈ ℤ` the following are equivalent:
@@ -473,7 +473,7 @@ theorem isPseudoCoherentFrom_iff_and_isPseudoCoherent_iff_of_isNoetherian
             ((DerivedCategory.homologyFunctor (Modules.{u, u} B S hS F hF) i).obj E)))
 ```
 
-**`AlgebraicGeometry.Space.isCoherentOnSite_homology_and_isBoundedAbove_of_isPseudoCoherentFrom_of_isNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PseudoCoherent/CoherentCohomologyVanishing.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PseudoCoherent/CoherentCohomologyVanishing.lean#L106). The attribute's comment: “(2) gives (1)”.
+**`AlgebraicGeometry.Space.isCoherentOnSite_homology_and_isBoundedAbove_of_isPseudoCoherentFrom_of_isNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PseudoCoherent/CoherentCohomologyVanishing.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/PseudoCoherent/CoherentCohomologyVanishing.lean#L106). The attribute's comment: “(2) gives (1)”.
 
 > Let `S` be a scheme, let `F` be a Noetherian algebraic space over `S` and let `E` be an
 > object of `D_QCoh(𝒪_F)`.  If `E` is `m`-pseudo-coherent then `Hⁱ(E)` is coherent for every
@@ -491,7 +491,7 @@ theorem isCoherentOnSite_homology_and_isBoundedAbove_of_isPseudoCoherentFrom_of_
       DerivedCategoryB.IsBoundedAbove E
 ```
 
-**`AlgebraicGeometry.Space.isCoherentOnSite_homology_and_isBoundedAbove_of_isPseudoCoherent_of_isNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PseudoCoherent/CoherentCohomologyVanishing.lean, line 123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PseudoCoherent/CoherentCohomologyVanishing.lean#L123). The attribute's comment: “pseudo-coherent gives D⁻\_Coh”.
+**`AlgebraicGeometry.Space.isCoherentOnSite_homology_and_isBoundedAbove_of_isPseudoCoherent_of_isNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PseudoCoherent/CoherentCohomologyVanishing.lean, line 123](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/PseudoCoherent/CoherentCohomologyVanishing.lean#L123). The attribute's comment: “pseudo-coherent gives D⁻\_Coh”.
 
 > Let `S` be a scheme, let `F` be a Noetherian algebraic space over `S` and let `E` be a
 > pseudo-coherent object of `D(𝒪_F)`.  Then `E` is an object of `D⁻_Coh(𝒪_F)`: its cohomology
@@ -507,7 +507,7 @@ theorem isCoherentOnSite_homology_and_isBoundedAbove_of_isPseudoCoherent_of_isNo
         ((DerivedCategory.homologyFunctor (Modules.{u, u} B S hS F hF) i).obj E)
 ```
 
-**`AlgebraicGeometry.Space.isCoherent_homology_iff_isPseudoCoherentFrom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PseudoCoherent/PseudoCoherentIffCoherentHomology.lean, line 264](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PseudoCoherent/PseudoCoherentIffCoherentHomology.lean#L264).
+**`AlgebraicGeometry.Space.isCoherent_homology_iff_isPseudoCoherentFrom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PseudoCoherent/PseudoCoherentIffCoherentHomology.lean, line 265](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/PseudoCoherent/PseudoCoherentIffCoherentHomology.lean#L265).
 
 > **Stacks 08IK.** Let `S` be a scheme, `X` a Noetherian algebraic space over `S` and `E` an
 > object of `D_QCoh(𝒪_X)`. For `m ∈ ℤ` the following are equivalent:
@@ -525,7 +525,7 @@ theorem isCoherent_homology_iff_isPseudoCoherentFrom (hZ : B.Contains (⊤_ Sche
       (smallEtaleRingedSite B S hS X.1 X.2).IsPseudoCoherentFrom E.obj m
 ```
 
-**`AlgebraicGeometry.Space.isPseudoCoherent_iff_isCoherent_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PseudoCoherent/PseudoCoherentIffCoherentHomology.lean, line 284](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PseudoCoherent/PseudoCoherentIffCoherentHomology.lean#L284). The attribute's comment: “pseudo-coherent objects of D\_QCoh are those of D⁻\_Coh”.
+**`AlgebraicGeometry.Space.isPseudoCoherent_iff_isCoherent_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PseudoCoherent/PseudoCoherentIffCoherentHomology.lean, line 285](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/PseudoCoherent/PseudoCoherentIffCoherentHomology.lean#L285). The attribute's comment: “pseudo-coherent objects of D\_QCoh are those of D⁻\_Coh”.
 
 > **Stacks 08IK, the final statement.** Let `X` be a Noetherian algebraic space over `S`. An
 > object `E` of `D_QCoh(𝒪_X)` is pseudo-coherent if and only if it lies in `D⁻_Coh(𝒪_X)`: its
@@ -546,7 +546,7 @@ theorem isPseudoCoherent_iff_isCoherent_homology (hZ : B.Contains (⊤_ Scheme.{
 
 [Tag 08IL](https://stacks.math.columbia.edu/tag/08IL) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.hasTorAmplitude_iff_hasTorAmplitudeOnQuasicoherent_standardModel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TorAmplitudeQuasiCoherentDetection.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/TorAmplitudeQuasiCoherentDetection.lean#L84).
+**`AlgebraicGeometry.Space.hasTorAmplitude_iff_hasTorAmplitudeOnQuasicoherent_standardModel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TorAmplitudeQuasiCoherentDetection.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/TorAmplitudeQuasiCoherentDetection.lean#L84).
 
 > **Stacks 08IL.**  Let `X` be a quasi-separated algebraic space and `E` an object of
 > `D_QCoh(𝒪_X)`.  Then `E` has Tor amplitude in `[a, b]` if and only if
@@ -571,7 +571,7 @@ theorem hasTorAmplitude_iff_hasTorAmplitudeOnQuasicoherent_standardModel
       HasTorAmplitudeOnQuasicoherent B S hS X.2 T E a b
 ```
 
-**`AlgebraicGeometry.Space.hasTorAmplitudeOnQuasicoherent_of_hasTorAmplitude`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TorAmplitudeQuasiCoherentTests.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/TorAmplitudeQuasiCoherentTests.lean#L97). The attribute's comment: “(1) implies (2)”.
+**`AlgebraicGeometry.Space.hasTorAmplitudeOnQuasicoherent_of_hasTorAmplitude`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TorAmplitudeQuasiCoherentTests.lean, line 97](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/TorAmplitudeQuasiCoherentTests.lean#L97). The attribute's comment: “(1) implies (2)”.
 
 > If an object of `D(𝒪_X)` on an algebraic space `X` has Tor amplitude in `[a, b]`, then its
 > derived tensor product with every quasi-coherent `𝒪_X`-module has vanishing cohomology outside
@@ -586,7 +586,7 @@ theorem hasTorAmplitudeOnQuasicoherent_of_hasTorAmplitude
     HasTorAmplitudeOnQuasicoherent B S hS hF T E a b
 ```
 
-**`AlgebraicGeometry.Space.hasTorAmplitude_iff_hasTorAmplitudeOnQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TorAmplitudeQuasiCoherentTestsConverse.lean, line 410](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/TorAmplitudeQuasiCoherentTestsConverse.lean#L410).
+**`AlgebraicGeometry.Space.hasTorAmplitude_iff_hasTorAmplitudeOnQuasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/TorAmplitudeQuasiCoherentTestsConverse.lean, line 410](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/TorAmplitudeQuasiCoherentTestsConverse.lean#L410).
 
 > **Stacks 08IL.**  Let `X` be a quasi-separated algebraic space over `S`, let `E` be an object
 > of `D_QCoh(𝒪_X)`, and let `T` be a derived tensor product on `D(𝒪_X)`.  The following are
@@ -620,7 +620,7 @@ theorem hasTorAmplitude_iff_hasTorAmplitudeOnQuasicoherent
 
 [Tag 08JP](https://stacks.math.columbia.edu/tag/08JP) in the Stacks Project.
 
-**`AlgebraicGeometry.SmallEtale.isIso_derivedAssociatedModuleDerivedSheafHomComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleDerivedSheafHomComparisonIso.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleDerivedSheafHomComparisonIso.lean#L227). The attribute's comment: “case (2), E in the thick closure of 𝒪\_S, over the data T₂, e₂, m”.
+**`AlgebraicGeometry.SmallEtale.isIso_derivedAssociatedModuleDerivedSheafHomComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleDerivedSheafHomComparisonIso.lean, line 227](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleDerivedSheafHomComparisonIso.lean#L227). The attribute's comment: “case (2), E in the thick closure of 𝒪\_S, over the data T₂, e₂, m”.
 
 > **Stacks 08JP, case (2), over the mixed-universe data `T₂`, `e₂`, `m`.**
 >
@@ -679,7 +679,7 @@ theorem isIso_derivedAssociatedModuleDerivedSheafHomComparison
     IsIso (derivedAssociatedModuleDerivedSheafHomComparison B S hS T₂ e₂ m E F)
 ```
 
-**`AlgebraicGeometry.SmallEtale.isIso_derivedPullbackSheafHomMap_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleDerivedSheafHomPerfect.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleDerivedSheafHomPerfect.lean#L118). The attribute's comment: “case (2): E perfect, F arbitrary”.
+**`AlgebraicGeometry.SmallEtale.isIso_derivedPullbackSheafHomMap_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleDerivedSheafHomPerfect.lean, line 118](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleDerivedSheafHomPerfect.lean#L118). The attribute's comment: “case (2): E perfect, F arbitrary”.
 
 > **Stacks 08JP, case (2): `ε^*` commutes with `RSheafHom` out of a perfect object.** Let `S`
 > be a scheme and `ε : (S_étale, 𝒪) ⟶ (S_Zar, 𝒪_S)` the morphism of ringed sites of Stacks 08H7,
@@ -700,7 +700,7 @@ theorem isIso_derivedPullbackSheafHomMap_of_isPerfect
       (isMorphismOfSites_toZariskiSmallModelHom_u B S hS) E F)
 ```
 
-**`AlgebraicGeometry.SmallEtale.isIso_derivedPullbackSheafHomMap_of_isPseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleDerivedSheafHomPseudoCoherent.lean, line 194](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleDerivedSheafHomPseudoCoherent.lean#L194). The attribute's comment: “case (1): E pseudo-coherent, F bounded below”.
+**`AlgebraicGeometry.SmallEtale.isIso_derivedPullbackSheafHomMap_of_isPseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleDerivedSheafHomPseudoCoherent.lean, line 194](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/SmallEtaleDerivedSheafHomPseudoCoherent.lean#L194). The attribute's comment: “case (1): E pseudo-coherent, F bounded below”.
 
 > **Stacks 08JP, case (1): `ε^*` commutes with `RSheafHom` out of a pseudo-coherent object into
 > a bounded below one.** Let `S` be a scheme and `ε : (S_étale, 𝒪) ⟶ (S_Zar, 𝒪_S)` the morphism of
@@ -727,7 +727,7 @@ theorem isIso_derivedPullbackSheafHomMap_of_isPseudoCoherent
 
 [Tag 0A8A](https://stacks.math.columbia.edu/tag/0A8A) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.qcohDerived_smallEtaleDerivedSheafHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedSheafHomQuasicoherent.lean, line 235](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedSheafHomQuasicoherent.lean#L235).
+**`AlgebraicGeometry.Space.qcohDerived_smallEtaleDerivedSheafHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedSheafHomQuasicoherent.lean, line 235](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedSheafHomQuasicoherent.lean#L235).
 
 > **Stacks 0A8A.** Let `X` be an algebraic space and `K`, `L` objects of `D(𝒪_X)`. If either
 > `L` lies in `D^+_QCoh(𝒪_X)` and `K` is pseudo-coherent, or `L` lies in `D_QCoh(𝒪_X)` and `K` is
@@ -749,7 +749,7 @@ theorem qcohDerived_smallEtaleDerivedSheafHom (X : AlgebraicSpaces B S hS)
 
 [Tag 0E4Q](https://stacks.math.columbia.edu/tag/0E4Q) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isIso_derivedTensorHomDiagonal_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedTensorHomDiagonal.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedTensorHomDiagonal.lean#L164). The attribute's comment: “case (1): M perfect”.
+**`AlgebraicGeometry.Space.isIso_derivedTensorHomDiagonal_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedTensorHomDiagonal.lean, line 164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedTensorHomDiagonal.lean#L164). The attribute's comment: “case (1): M perfect”.
 
 > **Stacks 0E4Q case (1).** For objects `K`, `L`, `M` of `D(𝒪_X)` on an algebraic space `X`
 > with `M` perfect, the canonical morphism of Stacks 0BYU
@@ -769,7 +769,7 @@ theorem isIso_derivedTensorHomDiagonal_of_isPerfect
       (smallEtaleModelRingedSite B S hS F hF) K L M)
 ```
 
-**`AlgebraicGeometry.Space.isIso_derivedTensorHomDiagonal_of_isPerfect_tensorFactor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedTensorHomDiagonal.lean, line 185](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedTensorHomDiagonal.lean#L185). The attribute's comment: “case (2): K perfect”.
+**`AlgebraicGeometry.Space.isIso_derivedTensorHomDiagonal_of_isPerfect_tensorFactor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedTensorHomDiagonal.lean, line 185](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedTensorHomDiagonal.lean#L185). The attribute's comment: “case (2): K perfect”.
 
 > **Stacks 0E4Q case (2).** For objects `K`, `L`, `M` of `D(𝒪_X)` on an algebraic space `X`
 > with the tensor factor `K` perfect, the canonical morphism of Stacks 0BYU
@@ -789,7 +789,7 @@ theorem isIso_derivedTensorHomDiagonal_of_isPerfect_tensorFactor
       (smallEtaleModelRingedSite B S hS F hF) K L M)
 ```
 
-**`AlgebraicGeometry.Space.isIso_derivedTensorHomDiagonal_of_isPseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedTensorHomDiagonal.lean, line 212](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedTensorHomDiagonal.lean#L212). The attribute's comment: “case (3): M pseudo-coherent, L bounded below, K of finite Tor dimension”.
+**`AlgebraicGeometry.Space.isIso_derivedTensorHomDiagonal_of_isPseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedTensorHomDiagonal.lean, line 212](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DerivedTensorHomDiagonal.lean#L212). The attribute's comment: “case (3): M pseudo-coherent, L bounded below, K of finite Tor dimension”.
 
 > **Stacks 0E4Q case (3).** For objects `K`, `L`, `M` of `D(𝒪_X)` on an algebraic space `X`
 > with `M` pseudo-coherent, `L` cohomologically bounded below and `K` of finite Tor dimension,
@@ -826,4 +826,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 75.13, Tag 08HC](https://stacks.math.columbia.edu/tag/08HC)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

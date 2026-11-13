@@ -8,7 +8,7 @@ proof: formalized
 
 # 5.7 Connected components
 
-Section 5.7 of the Stacks Project, [Tag 004R](https://stacks.math.columbia.edu/tag/004R). 11 tags here are carried by 5 declarations of the repository (2 in StacksCore and 3 in StacksFrontier) and 20 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 5.7 of the Stacks Project, [Tag 004R](https://stacks.math.columbia.edu/tag/004R). 11 tags here are carried by 6 declarations of the repository (2 in StacksCore and 4 in StacksFrontier) and 20 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 004S, a definition
 
@@ -16,9 +16,9 @@ Section 5.7 of the Stacks Project, [Tag 004R](https://stacks.math.columbia.edu/t
 
 Declarations registered for the tag:
 
-- [`ConnectedSpace`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=ConnectedSpace#doc) registered with `add_to_stacks` in [StacksCore/Topology/Connected/Basic.lean, line 10](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Topology/Connected/Basic.lean#L10) (StacksCore): “1”. References: EGA I (2.1.8); SGA 4 XV (1.3).
-- [`connectedComponent`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=connectedComponent#doc) registered with `add_to_stacks` in [StacksCore/Topology/Connected/Basic.lean, line 11](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Topology/Connected/Basic.lean#L11) (StacksCore): “2”. References: SGA 3 VIA (2.1), “partial”; SGA 3 VIA (2.3); SGA 3 VIB (3.1), “more general”.
-- [`isConnected_connectedComponent`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=isConnected_connectedComponent#doc) registered with `add_to_stacks` in [StacksCore/Topology/Connected/Basic.lean, line 12](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Topology/Connected/Basic.lean#L12) (StacksCore): “2”.
+- [`ConnectedSpace`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=ConnectedSpace#doc) registered with `add_to_stacks` in [StacksCore/Topology/Connected/Basic.lean, line 10](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Topology/Connected/Basic.lean#L10) (StacksCore): “1”. References: EGA I (2.1.8); SGA 4 XV (1.3).
+- [`connectedComponent`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=connectedComponent#doc) registered with `add_to_stacks` in [StacksCore/Topology/Connected/Basic.lean, line 11](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Topology/Connected/Basic.lean#L11) (StacksCore): “2”. References: SGA 3 VIA (2.1), “partial”; SGA 3 VIA (2.3); SGA 3 VIB (3.1), “more general”.
+- [`isConnected_connectedComponent`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=isConnected_connectedComponent#doc) registered with `add_to_stacks` in [StacksCore/Topology/Connected/Basic.lean, line 12](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Topology/Connected/Basic.lean#L12) (StacksCore): “2”.
 
 ## Tag 0376, a lemma
 
@@ -26,7 +26,7 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`IsConnected.image`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=IsConnected.image#doc) registered with `add_to_stacks` in [StacksCore/Topology/Connected/Image.lean, line 19](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Topology/Connected/Image.lean#L19) (StacksCore): “the image of a connected set under a continuous map is connected”.
+- [`IsConnected.image`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=IsConnected.image#doc) registered with `add_to_stacks` in [StacksCore/Topology/Connected/Image.lean, line 19](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Topology/Connected/Image.lean#L19) (StacksCore): “the image of a connected set under a continuous map is connected”.
 
 ## Tag 004T, a lemma
 
@@ -34,18 +34,18 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`IsConnected.closure`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=IsConnected.closure#doc) registered with `add_to_stacks` in [StacksCore/Topology/Connected/Components.lean, line 33](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Topology/Connected/Components.lean#L33) (StacksCore): “(1)”.
-- [`isClosed_connectedComponent`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=isClosed_connectedComponent#doc) registered with `add_to_stacks` in [StacksCore/Topology/Connected/Components.lean, line 34](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Topology/Connected/Components.lean#L34) (StacksCore): “(2)”. References: SGA 3 VIA (2.1), “more general”; SGA 3 X (5.11.0), “more general”.
-- [`IsConnected.subset_connectedComponent`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=IsConnected.subset_connectedComponent#doc) registered with `add_to_stacks` in [StacksCore/Topology/Connected/Components.lean, line 35](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Topology/Connected/Components.lean#L35) (StacksCore): “(3)”.
-- [`connectedComponent_eq`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=connectedComponent_eq#doc) registered with `add_to_stacks` in [StacksCore/Topology/Connected/Components.lean, line 36](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Topology/Connected/Components.lean#L36) (StacksCore): “(3), (4): uniqueness”.
-- [`mem_connectedComponent`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=mem_connectedComponent#doc) registered with `add_to_stacks` in [StacksCore/Topology/Connected/Components.lean, line 37](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Topology/Connected/Components.lean#L37) (StacksCore): “(4)”.
-- [`connectedComponent_disjoint`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=connectedComponent_disjoint#doc) registered with `add_to_stacks` in [StacksCore/Topology/Connected/Components.lean, line 38](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Topology/Connected/Components.lean#L38) (StacksCore): “(4): disjointness”.
+- [`IsConnected.closure`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=IsConnected.closure#doc) registered with `add_to_stacks` in [StacksCore/Topology/Connected/Components.lean, line 33](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Topology/Connected/Components.lean#L33) (StacksCore): “(1)”.
+- [`isClosed_connectedComponent`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=isClosed_connectedComponent#doc) registered with `add_to_stacks` in [StacksCore/Topology/Connected/Components.lean, line 34](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Topology/Connected/Components.lean#L34) (StacksCore): “(2)”. References: SGA 3 VIA (2.1), “more general”; SGA 3 X (5.11.0), “more general”.
+- [`IsConnected.subset_connectedComponent`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=IsConnected.subset_connectedComponent#doc) registered with `add_to_stacks` in [StacksCore/Topology/Connected/Components.lean, line 35](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Topology/Connected/Components.lean#L35) (StacksCore): “(3)”.
+- [`connectedComponent_eq`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=connectedComponent_eq#doc) registered with `add_to_stacks` in [StacksCore/Topology/Connected/Components.lean, line 36](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Topology/Connected/Components.lean#L36) (StacksCore): “(3), (4): uniqueness”.
+- [`mem_connectedComponent`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=mem_connectedComponent#doc) registered with `add_to_stacks` in [StacksCore/Topology/Connected/Components.lean, line 37](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Topology/Connected/Components.lean#L37) (StacksCore): “(4)”.
+- [`connectedComponent_disjoint`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=connectedComponent_disjoint#doc) registered with `add_to_stacks` in [StacksCore/Topology/Connected/Components.lean, line 38](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Topology/Connected/Components.lean#L38) (StacksCore): “(4): disjointness”.
 
 ## Tag 0FIY, a remark
 
 [Tag 0FIY](https://stacks.math.columbia.edu/tag/0FIY) in the Stacks Project.
 
-**`exists_connectedComponent_ne_quasiComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Connected/QuasiComponent.lean, line 346](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Connected/QuasiComponent.lean#L346).
+**`exists_connectedComponent_ne_quasiComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Connected/QuasiComponent.lean, line 346](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Connected/QuasiComponent.lean#L346).
 
 > **Stacks 0FIY** (Engelking, Example 6.1.24). In general the connected component `Z` of a
 > point and its quasi-component `E` — the intersection of all clopen sets containing it — are
@@ -65,7 +65,7 @@ theorem exists_connectedComponent_ne_quasiComponent :
 
 [Tag 0377](https://stacks.math.columbia.edu/tag/0377) in the Stacks Project.
 
-**`connectedComponentsMap_bijective_of_isClosed_iff`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/Topology/Connected/ConnectedFibres.lean, line 29](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Topology/Connected/ConnectedFibres.lean#L29).
+**`connectedComponentsMap_bijective_of_isClosed_iff`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/Topology/Connected/ConnectedFibres.lean, line 29](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Topology/Connected/ConnectedFibres.lean#L29).
 
 > **Stacks 0377.** Let `f : X → Y` be a map of topological spaces such that all fibres of `f` are
 > connected and a subset `T ⊆ Y` is closed if and only if `f ⁻¹' T` is closed. Then `f` induces a
@@ -84,7 +84,7 @@ theorem connectedComponentsMap_bijective_of_isClosed_iff
 
 [Tag 0378](https://stacks.math.columbia.edu/tag/0378) in the Stacks Project.
 
-**`bijective_connectedComponentsMap_of_isOpenMap`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/Topology/Connected/OpenConnectedFibres.lean, line 30](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Topology/Connected/OpenConnectedFibres.lean#L30).
+**`bijective_connectedComponentsMap_of_isOpenMap`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/Topology/Connected/OpenConnectedFibres.lean, line 30](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Topology/Connected/OpenConnectedFibres.lean#L30).
 
 > **Stacks 0378.** A continuous open map with connected fibres induces a bijection between the
 > sets of connected components.
@@ -100,7 +100,7 @@ theorem bijective_connectedComponentsMap_of_isOpenMap
 
 [Tag 07VB](https://stacks.math.columbia.edu/tag/07VB) in the Stacks Project.
 
-**`finite_fibre_connectedComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Connected/FiniteFibres.lean, line 40](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Connected/FiniteFibres.lean#L40).
+**`finite_fibre_connectedComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Connected/FiniteFibres.lean, line 40](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Connected/FiniteFibres.lean#L40).
 
 > **Stacks 07VB.** If `f : X → Y` is a continuous open and closed map between nonempty
 > topological spaces, `Y` is connected, and some fibre `f ⁻¹' {y}` is finite, then `X` has finitely
@@ -118,7 +118,7 @@ theorem finite_fibre_connectedComponents
       Nat.card (ConnectedComponents X) ≤ (f ⁻¹' {y}).ncard
 ```
 
-**`connectedComponent_clopen_and_image_eq_univ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Connected/FiniteFibres.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Connected/FiniteFibres.lean#L90). The attribute's comment: “corollary”. References: SGA 3 X (9.7.3), “more general”.
+**`connectedComponent_clopen_and_image_eq_univ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Connected/FiniteFibres.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Connected/FiniteFibres.lean#L90). The attribute's comment: “corollary”. References: SGA 3 X (9.7.3), “more general”.
 
 > **Stacks 07VB**, corollary. Under the hypotheses of `finite_fibre_connectedComponents`, every
 > connected component `T` of `X` is open and closed in `X`, its image `f '' T` is a nonempty open and
@@ -143,8 +143,8 @@ theorem connectedComponent_clopen_and_image_eq_univ
 
 Declarations registered for the tag:
 
-- [`TotallyDisconnectedSpace`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=TotallyDisconnectedSpace#doc) registered with `add_to_stacks` in [StacksCore/Topology/Connected/TotallyDisconnected.lean, line 10](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Topology/Connected/TotallyDisconnected.lean#L10) (StacksCore).
-- [`totallyDisconnectedSpace_iff_connectedComponent_singleton`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=totallyDisconnectedSpace_iff_connectedComponent_singleton#doc) registered with `add_to_stacks` in [StacksCore/Topology/Connected/TotallyDisconnected.lean, line 11](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Topology/Connected/TotallyDisconnected.lean#L11) (StacksCore).
+- [`TotallyDisconnectedSpace`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=TotallyDisconnectedSpace#doc) registered with `add_to_stacks` in [StacksCore/Topology/Connected/TotallyDisconnected.lean, line 10](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Topology/Connected/TotallyDisconnected.lean#L10) (StacksCore).
+- [`totallyDisconnectedSpace_iff_connectedComponent_singleton`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=totallyDisconnectedSpace_iff_connectedComponent_singleton#doc) registered with `add_to_stacks` in [StacksCore/Topology/Connected/TotallyDisconnected.lean, line 11](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Topology/Connected/TotallyDisconnected.lean#L11) (StacksCore).
 
 ## Tag 08ZL, a lemma
 
@@ -152,10 +152,10 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`ConnectedComponents.totallyDisconnectedSpace`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=ConnectedComponents.totallyDisconnectedSpace#doc) registered with `add_to_stacks` in [StacksCore/Topology/Connected/ComponentSpace.lean, line 22](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Topology/Connected/ComponentSpace.lean#L22) (StacksCore): “π₀(X) is totally disconnected”.
-- [`Continuous.connectedComponentsLift`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Continuous.connectedComponentsLift#doc) registered with `add_to_stacks` in [StacksCore/Topology/Connected/ComponentSpace.lean, line 23](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Topology/Connected/ComponentSpace.lean#L23) (StacksCore): “factorization: the induced map on π₀(X)”.
-- [`Continuous.connectedComponentsLift_continuous`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Continuous.connectedComponentsLift_continuous#doc) registered with `add_to_stacks` in [StacksCore/Topology/Connected/ComponentSpace.lean, line 24](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Topology/Connected/ComponentSpace.lean#L24) (StacksCore): “factorization: the induced map is continuous”.
-- [`Continuous.connectedComponentsLift_comp_coe`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Continuous.connectedComponentsLift_comp_coe#doc) registered with `add_to_stacks` in [StacksCore/Topology/Connected/ComponentSpace.lean, line 26](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Topology/Connected/ComponentSpace.lean#L26) (StacksCore): “factorization: the induced map lifts the original one”.
+- [`ConnectedComponents.totallyDisconnectedSpace`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=ConnectedComponents.totallyDisconnectedSpace#doc) registered with `add_to_stacks` in [StacksCore/Topology/Connected/ComponentSpace.lean, line 22](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Topology/Connected/ComponentSpace.lean#L22) (StacksCore): “π₀(X) is totally disconnected”.
+- [`Continuous.connectedComponentsLift`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Continuous.connectedComponentsLift#doc) registered with `add_to_stacks` in [StacksCore/Topology/Connected/ComponentSpace.lean, line 23](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Topology/Connected/ComponentSpace.lean#L23) (StacksCore): “factorization: the induced map on π₀(X)”.
+- [`Continuous.connectedComponentsLift_continuous`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Continuous.connectedComponentsLift_continuous#doc) registered with `add_to_stacks` in [StacksCore/Topology/Connected/ComponentSpace.lean, line 24](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Topology/Connected/ComponentSpace.lean#L24) (StacksCore): “factorization: the induced map is continuous”.
+- [`Continuous.connectedComponentsLift_comp_coe`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Continuous.connectedComponentsLift_comp_coe#doc) registered with `add_to_stacks` in [StacksCore/Topology/Connected/ComponentSpace.lean, line 26](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Topology/Connected/ComponentSpace.lean#L26) (StacksCore): “factorization: the induced map lifts the original one”.
 
 ## Tag 04MD, a definition
 
@@ -163,17 +163,35 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`LocallyConnectedSpace`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=LocallyConnectedSpace#doc) registered with `add_to_stacks` in [StacksCore/Topology/Connected/LocallyConnected.lean, line 26](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Topology/Connected/LocallyConnected.lean#L26) (StacksCore). References: SGA 3 VIA (2.3); SGA 4 IV (7.6).
+- [`LocallyConnectedSpace`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=LocallyConnectedSpace#doc) registered with `add_to_stacks` in [StacksCore/Topology/Connected/LocallyConnected.lean, line 26](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Topology/Connected/LocallyConnected.lean#L26) (StacksCore). References: SGA 3 VIA (2.3); SGA 4 IV (7.6).
 
 ## Tag 04ME, a lemma
 
 [Tag 04ME](https://stacks.math.columbia.edu/tag/04ME) in the Stacks Project.
 
+**`hasBasis_isConnected_nhds_open_and_isOpen_connectedComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Connected/LocallyConnected.lean, line 60](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Connected/LocallyConnected.lean#L60). The attribute's comment: “The complete lemma under the Stacks definition 04MD of local connectedness (a fundamental system of connected, not necessarily open, neighbourhoods): open subsets are locally connected, connected components of the space and of its open subsets are open, and every point has a fundamental system of open connected neighbourhoods.”.
+
+> **Stacks 04ME.** Let `X` be a topological space in which every point has a fundamental
+> system of connected neighbourhoods (locally connected in the sense of Stacks 04MD). Then
+> (1) every open subset `U` of `X` has the same property, (2) the connected components of `X` are
+> open, (3) the connected components of an open subset `U` are open (as subsets of `X`), and
+> (4) every point has a fundamental system of open connected neighbourhoods.
+
+```lean
+theorem hasBasis_isConnected_nhds_open_and_isOpen_connectedComponent
+    (h : ∀ x : X, (𝓝 x).HasBasis (fun s : Set X => s ∈ 𝓝 x ∧ IsConnected s) id) :
+    (∀ U : Set X, IsOpen U →
+        ∀ x : U, (𝓝 x).HasBasis (fun s : Set U => s ∈ 𝓝 x ∧ IsConnected s) id) ∧
+      (∀ x : X, IsOpen (connectedComponent x)) ∧
+      (∀ U : Set X, IsOpen U → ∀ x : U, IsOpen (Subtype.val '' connectedComponent x)) ∧
+      ∀ x : X, (𝓝 x).HasBasis (fun s : Set X => IsOpen s ∧ x ∈ s ∧ IsConnected s) id
+```
+
 Declarations registered for the tag:
 
-- [`IsOpen.locallyConnectedSpace`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=IsOpen.locallyConnectedSpace#doc) registered with `add_to_stacks` in [StacksCore/Topology/Connected/LocallyConnected.lean, line 28](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Topology/Connected/LocallyConnected.lean#L28) (StacksCore): “(1) an open subset of a locally connected space is locally connected”.
-- [`isOpen_connectedComponent`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=isOpen_connectedComponent#doc) registered with `add_to_stacks` in [StacksCore/Topology/Connected/LocallyConnected.lean, line 30](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Topology/Connected/LocallyConnected.lean#L30) (StacksCore): “(2) the connected components are open”. References: SGA 3 VIA (2.3), “partial”.
-- [`LocallyConnectedSpace.open_connected_basis`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=LocallyConnectedSpace.open_connected_basis#doc) registered with `add_to_stacks` in [StacksCore/Topology/Connected/LocallyConnected.lean, line 31](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Topology/Connected/LocallyConnected.lean#L31) (StacksCore): “in particular, a fundamental system of open connected neighbourhoods”.
+- [`IsOpen.locallyConnectedSpace`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=IsOpen.locallyConnectedSpace#doc) registered with `add_to_stacks` in [StacksCore/Topology/Connected/LocallyConnected.lean, line 28](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Topology/Connected/LocallyConnected.lean#L28) (StacksCore): “(1) an open subset of a locally connected space is locally connected”.
+- [`isOpen_connectedComponent`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=isOpen_connectedComponent#doc) registered with `add_to_stacks` in [StacksCore/Topology/Connected/LocallyConnected.lean, line 30](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Topology/Connected/LocallyConnected.lean#L30) (StacksCore): “(2) the connected components are open”. References: SGA 3 VIA (2.3), “partial”.
+- [`LocallyConnectedSpace.open_connected_basis`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=LocallyConnectedSpace.open_connected_basis#doc) registered with `add_to_stacks` in [StacksCore/Topology/Connected/LocallyConnected.lean, line 31](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Topology/Connected/LocallyConnected.lean#L31) (StacksCore): “in particular, a fundamental system of open connected neighbourhoods”.
 
 ## Depends on
 
@@ -182,4 +200,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 5.7, Tag 004R](https://stacks.math.columbia.edu/tag/004R)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,7 +8,7 @@ proof: formalized
 
 # 5.5 Bases
 
-Section 5.5 of the Stacks Project, [Tag 004O](https://stacks.math.columbia.edu/tag/004O). 6 tags here are carried by 5 declarations of the repository (4 in StacksCore and 1 in StacksFrontier) and 6 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 5.5 of the Stacks Project, [Tag 004O](https://stacks.math.columbia.edu/tag/004O). 6 tags here are carried by 5 declarations of the repository (4 in StacksCore and 1 in StacksFrontier) and 6 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 004P, a definition
 
@@ -16,15 +16,15 @@ Section 5.5 of the Stacks Project, [Tag 004O](https://stacks.math.columbia.edu/t
 
 Declarations registered for the tag:
 
-- [`TopologicalSpace.IsTopologicalBasis`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=TopologicalSpace.IsTopologicalBasis#doc) registered with `add_to_stacks` in [StacksCore/Topology/Bases.lean, line 10](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Topology/Bases.lean#L10) (StacksCore).
-- [`TopologicalSpace.isTopologicalBasis_of_isOpen_of_nhds`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=TopologicalSpace.isTopologicalBasis_of_isOpen_of_nhds#doc) registered with `add_to_stacks` in [StacksCore/Topology/Bases.lean, line 11](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Topology/Bases.lean#L11) (StacksCore).
-- [`TopologicalSpace.IsTopologicalBasis.isOpen_iff`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=TopologicalSpace.IsTopologicalBasis.isOpen_iff#doc) registered with `add_to_stacks` in [StacksCore/Topology/Bases.lean, line 12](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Topology/Bases.lean#L12) (StacksCore). References: EGA 0 (3.2.4), “more general”.
+- [`TopologicalSpace.IsTopologicalBasis`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=TopologicalSpace.IsTopologicalBasis#doc) registered with `add_to_stacks` in [StacksCore/Topology/Bases.lean, line 10](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Topology/Bases.lean#L10) (StacksCore).
+- [`TopologicalSpace.isTopologicalBasis_of_isOpen_of_nhds`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=TopologicalSpace.isTopologicalBasis_of_isOpen_of_nhds#doc) registered with `add_to_stacks` in [StacksCore/Topology/Bases.lean, line 11](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Topology/Bases.lean#L11) (StacksCore).
+- [`TopologicalSpace.IsTopologicalBasis.isOpen_iff`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=TopologicalSpace.IsTopologicalBasis.isOpen_iff#doc) registered with `add_to_stacks` in [StacksCore/Topology/Bases.lean, line 12](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Topology/Bases.lean#L12) (StacksCore). References: EGA 0 (3.2.4), “more general”.
 
 ## Tag 0D5P, a lemma
 
 [Tag 0D5P](https://stacks.math.columbia.edu/tag/0D5P) in the Stacks Project.
 
-**`TopologicalSpace.isTopologicalBasis_generateFrom`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/Topology/Bases/OfCollection.lean, line 37](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Topology/Bases/OfCollection.lean#L37). The attribute's comment: “existence”.
+**`TopologicalSpace.isTopologicalBasis_generateFrom`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/Topology/Bases/OfCollection.lean, line 37](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Topology/Bases/OfCollection.lean#L37). The attribute's comment: “existence”.
 
 > A collection `B` of subsets of `X` which covers `X` and which refines its own pairwise
 > intersections is a topological basis for the topology it generates. The intersection condition
@@ -40,13 +40,13 @@ theorem isTopologicalBasis_generateFrom {X : Type*} {B : Set (Set X)}
 
 Declarations registered for the tag:
 
-- [`TopologicalSpace.IsTopologicalBasis.eq_generateFrom`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=TopologicalSpace.IsTopologicalBasis.eq_generateFrom#doc) registered with `add_to_stacks` in [StacksCore/Topology/Bases/OfCollection.lean, line 45](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Topology/Bases/OfCollection.lean#L45) (StacksCore): “uniqueness”.
+- [`TopologicalSpace.IsTopologicalBasis.eq_generateFrom`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=TopologicalSpace.IsTopologicalBasis.eq_generateFrom#doc) registered with `add_to_stacks` in [StacksCore/Topology/Bases/OfCollection.lean, line 45](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Topology/Bases/OfCollection.lean#L45) (StacksCore): “uniqueness”.
 
 ## Tag 004Q, a lemma
 
 [Tag 004Q](https://stacks.math.columbia.edu/tag/004Q) in the Stacks Project.
 
-**`refine_open_cover_by_basis`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/Topology/Bases/RefineCover.lean, line 25](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Topology/Bases/RefineCover.lean#L25).
+**`refine_open_cover_by_basis`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/Topology/Bases/RefineCover.lean, line 25](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Topology/Bases/RefineCover.lean#L25).
 
 > **Stacks 004Q.** A basis refines any open covering of an open set: given a topological basis
 > `ℬ` of `X` and an open covering `𝓤` of an open `U ⊆ X`, the set `V` of basis elements contained in
@@ -70,14 +70,14 @@ theorem refine_open_cover_by_basis
 
 Declarations registered for the tag:
 
-- [`TopologicalSpace.generateFrom`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=TopologicalSpace.generateFrom#doc) registered with `add_to_stacks` in [StacksCore/Topology/Bases.lean, line 14](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Topology/Bases.lean#L14) (StacksCore).
-- [`TopologicalSpace.isTopologicalBasis_of_subbasis`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=TopologicalSpace.isTopologicalBasis_of_subbasis#doc) registered with `add_to_stacks` in [StacksCore/Topology/Bases.lean, line 15](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Topology/Bases.lean#L15) (StacksCore).
+- [`TopologicalSpace.generateFrom`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=TopologicalSpace.generateFrom#doc) registered with `add_to_stacks` in [StacksCore/Topology/Bases.lean, line 14](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Topology/Bases.lean#L14) (StacksCore).
+- [`TopologicalSpace.isTopologicalBasis_of_subbasis`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=TopologicalSpace.isTopologicalBasis_of_subbasis#doc) registered with `add_to_stacks` in [StacksCore/Topology/Bases.lean, line 15](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Topology/Bases.lean#L15) (StacksCore).
 
 ## Tag 08ZJ, a lemma
 
 [Tag 08ZJ](https://stacks.math.columbia.edu/tag/08ZJ) in the Stacks Project.
 
-**`TopologicalSpace.isTopologicalBasis_sInter_image_generateFrom`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/Topology/Bases/Subbasis.lean, line 36](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Topology/Bases/Subbasis.lean#L36). The attribute's comment: “existence”.
+**`TopologicalSpace.isTopologicalBasis_sInter_image_generateFrom`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/Topology/Bases/Subbasis.lean, line 36](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Topology/Bases/Subbasis.lean#L36). The attribute's comment: “existence”.
 
 > The sets `⋂₀ f`, for `f` a finite subcollection of a collection `B` of subsets of `X`, form a
 > topological basis for the topology generated by `B`.
@@ -88,7 +88,7 @@ theorem isTopologicalBasis_sInter_image_generateFrom {X : Type*} (B : Set (Set X
       ((fun f => ⋂₀ f) '' { f : Set (Set X) | f.Finite ∧ f ⊆ B })
 ```
 
-**`TopologicalSpace.eq_generateFrom_of_isTopologicalBasis_sInter_image`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/Topology/Bases/Subbasis.lean, line 44](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Topology/Bases/Subbasis.lean#L44). The attribute's comment: “uniqueness”.
+**`TopologicalSpace.eq_generateFrom_of_isTopologicalBasis_sInter_image`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/Topology/Bases/Subbasis.lean, line 44](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Topology/Bases/Subbasis.lean#L44). The attribute's comment: “uniqueness”.
 
 > If the finite intersections of a collection `B` form a basis for a topology `t`, then `t`
 > is the topology generated by `B`.
@@ -105,7 +105,7 @@ theorem eq_generateFrom_of_isTopologicalBasis_sInter_image {X : Type*}
 
 [Tag 0D5Q](https://stacks.math.columbia.edu/tag/0D5Q) in the Stacks Project.
 
-**`create_map_from_subcollection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Bases/QuotientRealizing.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Bases/QuotientRealizing.lean#L77).
+**`create_map_from_subcollection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Bases/QuotientRealizing.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Bases/QuotientRealizing.lean#L77).
 
 > **Stacks 0D5Q.** Given a collection `B` of opens covering `X` such that every pairwise
 > intersection of members of `B` is a union of members of `B` contained in it, there is a continuous
@@ -131,4 +131,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 5.5, Tag 004O](https://stacks.math.columbia.edu/tag/004O)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

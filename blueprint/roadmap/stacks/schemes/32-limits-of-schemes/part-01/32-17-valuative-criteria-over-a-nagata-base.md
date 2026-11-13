@@ -8,13 +8,13 @@ proof: formalized
 
 # 32.17 Valuative criteria over a Nagata base
 
-Section 32.17 of the Stacks Project, [Tag 0GWU](https://stacks.math.columbia.edu/tag/0GWU). 3 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 32.17 of the Stacks Project, [Tag 0GWU](https://stacks.math.columbia.edu/tag/0GWU). 3 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0GWV, a lemma
 
 [Tag 0GWV](https://stacks.math.columbia.edu/tag/0GWV) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.Tag05JXGeneral.universallyClosed_tfae_essentiallyFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/General/Nagata.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/General/Nagata.lean#L64).
+**`Stacks.AlgebraicGeometry.Tag05JXGeneral.universallyClosed_tfae_essentiallyFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/General/Nagata.lean, line 64](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/General/Nagata.lean#L64).
 
 > **Stacks Project, Tag 0GWV.**  Over a Nagata base `S`, for a quasi-compact `f : X ⟶ Y` with
 > `X` and `Y` locally of finite type over `S`, universal closedness, closedness of every
@@ -39,7 +39,7 @@ theorem universallyClosed_tfae_essentiallyFiniteType
 
 [Tag 0GWW](https://stacks.math.columbia.edu/tag/0GWW) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.NagataValuativeCriterion.isSeparated_iff_hasEssentiallyFiniteTypeValuativeUniqueness`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NagataValuativeCriterion/SeparatedAndProper.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/NagataValuativeCriterion/SeparatedAndProper.lean#L168).
+**`Stacks.AlgebraicGeometry.NagataValuativeCriterion.isSeparated_iff_hasEssentiallyFiniteTypeValuativeUniqueness`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NagataValuativeCriterion/SeparatedAndProper.lean, line 168](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/NagataValuativeCriterion/SeparatedAndProper.lean#L168).
 
 > **Stacks Project, Tag 0GWW.**  Over a Nagata base `S`, a morphism `f : X ⟶ Y` between schemes
 > locally of finite type over `S` is separated if and only if the lift in every one-dimensional
@@ -58,7 +58,7 @@ theorem isSeparated_iff_hasEssentiallyFiniteTypeValuativeUniqueness
     IsSeparated f ↔ HasEssentiallyFiniteTypeValuativeUniqueness f hY
 ```
 
-**`Stacks.AlgebraicGeometry.NagataValuativeCriterion.isSeparated_iff_hasAtMostOneLiftOverPuncturedCurves`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NagataValuativeCriterion/SeparatedPunctured.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/NagataValuativeCriterion/SeparatedPunctured.lean#L148).
+**`Stacks.AlgebraicGeometry.NagataValuativeCriterion.isSeparated_iff_hasAtMostOneLiftOverPuncturedCurves`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NagataValuativeCriterion/SeparatedPunctured.lean, line 148](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/NagataValuativeCriterion/SeparatedPunctured.lean#L148).
 
 > **Stacks Project, Tag 0GWW.**  Let `S` be a Nagata scheme and let `f : X ⟶ Y` be a morphism
 > of schemes locally of finite type over `S`.  Then `f` is separated if and only if, for every
@@ -82,7 +82,7 @@ theorem isSeparated_iff_hasAtMostOneLiftOverPuncturedCurves
 
 [Tag 0GWX](https://stacks.math.columbia.edu/tag/0GWX) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.NagataValuativeCriterion.isProper_iff_hasEssentiallyFiniteTypeValuativeLift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NagataValuativeCriterion/SeparatedAndProper.lean, line 223](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/NagataValuativeCriterion/SeparatedAndProper.lean#L223).
+**`Stacks.AlgebraicGeometry.NagataValuativeCriterion.isProper_iff_hasEssentiallyFiniteTypeValuativeLift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NagataValuativeCriterion/SeparatedAndProper.lean, line 223](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/NagataValuativeCriterion/SeparatedAndProper.lean#L223).
 
 > **Stacks Project, Tag 0GWX.**  Over a Nagata base `S`, a quasi-compact morphism `f : X ⟶ Y`
 > between schemes locally of finite type over `S` is proper if and only if every one-dimensional
@@ -106,4 +106,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 32.17, Tag 0GWU](https://stacks.math.columbia.edu/tag/0GWU)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

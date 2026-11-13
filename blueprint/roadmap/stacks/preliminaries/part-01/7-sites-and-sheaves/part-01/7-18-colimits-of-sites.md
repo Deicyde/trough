@@ -8,13 +8,13 @@ proof: formalized
 
 # 7.18 Colimits of sites
 
-Section 7.18 of the Stacks Project, [Tag 0EXI](https://stacks.math.columbia.edu/tag/0EXI). 5 tags here are carried by 16 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 7.18 of the Stacks Project, [Tag 0EXI](https://stacks.math.columbia.edu/tag/0EXI). 5 tags here are carried by 16 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0A34, a situation
 
 [Tag 0A34](https://stacks.math.columbia.edu/tag/0A34) in the Stacks Project.
 
-**`InverseSystemOfSites`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InverseSystem/FiniteCoveringsInverseSystem.lean, line 73](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/InverseSystem/FiniteCoveringsInverseSystem.lean#L73).
+**`InverseSystemOfSites`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InverseSystem/FiniteCoveringsInverseSystem.lean, line 73](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/InverseSystem/FiniteCoveringsInverseSystem.lean#L73).
 
 > An *inverse system of sites with finite coverings*, following the Stacks
 > Project tag `situation-inverse-limit-sites`.
@@ -34,7 +34,7 @@ Section 7.18 of the Stacks Project, [Tag 0EXI](https://stacks.math.columbia.edu/
 structure InverseSystemOfSites
 ```
 
-**`InverseSystemOfFiniteSites`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InverseSystem/FiniteCoveringsInverseSystem.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/InverseSystem/FiniteCoveringsInverseSystem.lean#L191).
+**`InverseSystemOfFiniteSites`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InverseSystem/FiniteCoveringsInverseSystem.lean, line 191](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/InverseSystem/FiniteCoveringsInverseSystem.lean#L191).
 
 > An *inverse system of sites with finite coverings* (Stacks 0A34), carrying the finiteness
 > condition the source actually imposes.
@@ -66,7 +66,7 @@ structure InverseSystemOfFiniteSites
 
 [Tag 09YL](https://stacks.math.columbia.edu/tag/09YL) in the Stacks Project.
 
-**`CategoryTheory.Sites.InverseSystem.InverseSystemOfFiniteSites.exists_precoverage_of_colimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InverseSystem/ColimitsOfSites.lean, line 967](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/InverseSystem/ColimitsOfSites.lean#L967).
+**`CategoryTheory.Sites.InverseSystem.InverseSystemOfFiniteSites.exists_precoverage_of_colimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InverseSystem/ColimitsOfSites.lean, line 967](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/InverseSystem/ColimitsOfSites.lean#L967).
 
 > **Colimits of sites.** Let `D` be an inverse system of sites with finite coverings over a
 > cofiltered index category (Stacks 0A34) — so each covering sieve of `D.J i` contains a finite
@@ -117,7 +117,7 @@ public theorem InverseSystemOfFiniteSites.exists_precoverage_of_colimit {C : Typ
             R ∈ K X → R.pullbackArrows f ∈ K Y
 ```
 
-**`CategoryTheory.Sites.InverseSystem.InverseSystemOfSites.exists_precoverage_of_colimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InverseSystem/ColimitsOfSites.lean, line 1015](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/InverseSystem/ColimitsOfSites.lean#L1015). References: SGA 4 VI (8.3.3), “2) (PT0),(PT1)”.
+**`CategoryTheory.Sites.InverseSystem.InverseSystemOfSites.exists_precoverage_of_colimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InverseSystem/ColimitsOfSites.lean, line 1015](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/InverseSystem/ColimitsOfSites.lean#L1015). References: SGA 4 VI (8.3.3), “2) (PT0),(PT1)”.
 
 > **Colimits of sites.** Let `D` be an inverse system of sites with finite coverings over a
 > cofiltered index category (Stacks 0A34), and let the functors `u i : D.C i ⥤ C` exhibit `C` as the
@@ -167,7 +167,7 @@ public theorem InverseSystemOfSites.exists_precoverage_of_colimit {C : Type w} [
 
 [Tag 0A35](https://stacks.math.columbia.edu/tag/0A35) in the Stacks Project.
 
-**`CategoryTheory.Sites.InverseSystem.InverseSystemOfFiniteSites.exists_isMorphismOfSites_sections_pullback_of_colimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InverseSystem/CohomologyOfColimitOfFiniteSites/MorphismOfSitesAndDescent.lean, line 2169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/InverseSystem/CohomologyOfColimitOfFiniteSites/MorphismOfSitesAndDescent.lean#L2169). The attribute's comment: “weak-system variant (Stacks 00VH finite coverings): The functors `u_i` from the members of an inverse system of sites to its colimit define morphisms of sites, and the sections of `f_i^{-1}F` over `u_i(U_i)` are the filtered colimit of the sections of `f_a^{-1}F` over `u_a(U_i)`.”.
+**`CategoryTheory.Sites.InverseSystem.InverseSystemOfFiniteSites.exists_isMorphismOfSites_sections_pullback_of_colimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InverseSystem/CohomologyOfColimitOfFiniteSites/MorphismOfSitesAndDescent.lean, line 2172](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/InverseSystem/CohomologyOfColimitOfFiniteSites/MorphismOfSitesAndDescent.lean#L2172). The attribute's comment: “weak-system variant (Stacks 00VH finite coverings): The functors `u_i` from the members of an inverse system of sites to its colimit define morphisms of sites, and the sections of `f_i^{-1}F` over `u_i(U_i)` are the filtered colimit of the sections of `f_a^{-1}F` over `u_a(U_i)`.”.
 
 > **The colimit of an inverse system of sites.** In the situation of Stacks 0A34, let the
 > functors `u i : D.C i ⥤ C` exhibit the small category `C` as the colimit of the `D.C i` (`hu`,
@@ -252,7 +252,7 @@ public theorem InverseSystemOfFiniteSites.exists_isMorphismOfSites_sections_pull
                       (op ((D.u a).obj U)) t'
 ```
 
-**`CategoryTheory.Sites.InverseSystem.InverseSystemOfSites.exists_isMorphismOfSites_sections_pullback_of_colimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InverseSystem/CohomologyOfColimitOfFiniteSites/MorphismOfSitesAndDescent.lean, line 2869](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/InverseSystem/CohomologyOfColimitOfFiniteSites/MorphismOfSitesAndDescent.lean#L2869). The attribute's comment: “The functors `u_i` from the members of an inverse system of sites to its colimit define morphisms of sites, and the sections of `f_i^{-1}F` over `u_i(U_i)` are the filtered colimit of the sections of `f_a^{-1}F` over `u_a(U_i)`.”.
+**`CategoryTheory.Sites.InverseSystem.InverseSystemOfSites.exists_isMorphismOfSites_sections_pullback_of_colimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InverseSystem/CohomologyOfColimitOfFiniteSites/MorphismOfSitesAndDescent.lean, line 2872](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/InverseSystem/CohomologyOfColimitOfFiniteSites/MorphismOfSitesAndDescent.lean#L2872). The attribute's comment: “The functors `u_i` from the members of an inverse system of sites to its colimit define morphisms of sites, and the sections of `f_i^{-1}F` over `u_i(U_i)` are the filtered colimit of the sections of `f_a^{-1}F` over `u_a(U_i)`.”.
 
 > **The colimit of an inverse system of sites.** In the situation of Stacks 0A34, let the
 > functors `u i : D.C i ⥤ C` exhibit the small category `C` as the colimit of the `D.C i` (`hu`,
@@ -341,7 +341,7 @@ public theorem InverseSystemOfSites.exists_isMorphismOfSites_sections_pullback_o
 
 [Tag 09YN](https://stacks.math.columbia.edu/tag/09YN) in the Stacks Project.
 
-**`CategoryTheory.Sites.InverseSystem.InverseSystemOfFiniteSites.sections_colimit_pullback_of_colimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InverseSystem/CohomologyOfColimitOfFiniteSites/AbelianSystemsAndSections.lean, line 2797](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/InverseSystem/CohomologyOfColimitOfFiniteSites/AbelianSystemsAndSections.lean#L2797). The attribute's comment: “weak-system variant (Stacks 00VH finite coverings): The sections over `u_i(X_i)` of the colimit `colim f_i^{-1}F_i` of a system of sheaves on an inverse system of sites are the filtered colimit of the sections `F_j(u_a(X_i))` over the arrows `a : j → i`.”.
+**`CategoryTheory.Sites.InverseSystem.InverseSystemOfFiniteSites.sections_colimit_pullback_of_colimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InverseSystem/CohomologyOfColimitOfFiniteSites/AbelianSystemsAndSections.lean, line 2799](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/InverseSystem/CohomologyOfColimitOfFiniteSites/AbelianSystemsAndSections.lean#L2799). The attribute's comment: “weak-system variant (Stacks 00VH finite coverings): The sections over `u_i(X_i)` of the colimit `colim f_i^{-1}F_i` of a system of sheaves on an inverse system of sites are the filtered colimit of the sections `F_j(u_a(X_i))` over the arrows `a : j → i`.”.
 
 > **Sections of a colimit of sheaves on a colimit of sites.** In the situation of Stacks 0A34,
 > let the functors `u i : D.C i ⥤ C` exhibit the small category `C` as the colimit of the `D.C i`
@@ -423,7 +423,7 @@ public theorem InverseSystemOfFiniteSites.sections_colimit_pullback_of_colimit {
             (ψ b).app (op ((D.u a).obj X)) t = (ψ b).app (op ((D.u a).obj X)) t'
 ```
 
-**`CategoryTheory.Sites.InverseSystem.InverseSystemOfSites.sections_colimit_pullback_of_colimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InverseSystem/CohomologyOfColimitOfFiniteSites/MorphismOfSitesAndDescent.lean, line 2790](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/InverseSystem/CohomologyOfColimitOfFiniteSites/MorphismOfSitesAndDescent.lean#L2790). The attribute's comment: “The sections over `u_i(X_i)` of the colimit `colim f_i^{-1}F_i` of a system of sheaves on an inverse system of sites are the filtered colimit of the sections `F_j(u_a(X_i))` over the arrows `a : j → i`.”.
+**`CategoryTheory.Sites.InverseSystem.InverseSystemOfSites.sections_colimit_pullback_of_colimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InverseSystem/CohomologyOfColimitOfFiniteSites/MorphismOfSitesAndDescent.lean, line 2793](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/InverseSystem/CohomologyOfColimitOfFiniteSites/MorphismOfSitesAndDescent.lean#L2793). The attribute's comment: “The sections over `u_i(X_i)` of the colimit `colim f_i^{-1}F_i` of a system of sheaves on an inverse system of sites are the filtered colimit of the sections `F_j(u_a(X_i))` over the arrows `a : j → i`.”.
 
 > **Sections of a colimit of sheaves on a colimit of sites.** In the situation of Stacks 0A34,
 > let the functors `u i : D.C i ⥤ C` exhibit the small category `C` as the colimit of the `D.C i`
@@ -509,7 +509,7 @@ public theorem InverseSystemOfSites.sections_colimit_pullback_of_colimit {C : Ty
 
 [Tag 0EXJ](https://stacks.math.columbia.edu/tag/0EXJ) in the Stacks Project.
 
-**`CategoryTheory.Sites.InverseSystem.InverseSystemOfFiniteSites.cocycle_pullback_pushforward_of_colimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InverseSystem/CohomologyOfColimitOfFiniteSites/MorphismOfSitesAndDescent.lean, line 2519](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/InverseSystem/CohomologyOfColimitOfFiniteSites/MorphismOfSitesAndDescent.lean#L2519). The attribute's comment: “weak-system variant (Stacks 00VH finite coverings): the cocycle condition `φ_{b ∘ a} = φ_b ∘ f_b^{-1}φ_a` of Stacks 09YN satisfied by the counits `φ_a : f_a^{-1}f_{i,*}F → f_{j,*}F`.”.
+**`CategoryTheory.Sites.InverseSystem.InverseSystemOfFiniteSites.cocycle_pullback_pushforward_of_colimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InverseSystem/CohomologyOfColimitOfFiniteSites/MorphismOfSitesAndDescent.lean, line 2522](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/InverseSystem/CohomologyOfColimitOfFiniteSites/MorphismOfSitesAndDescent.lean#L2522). The attribute's comment: “weak-system variant (Stacks 00VH finite coverings): the cocycle condition `φ_{b ∘ a} = φ_b ∘ f_b^{-1}φ_a` of Stacks 09YN satisfied by the counits `φ_a : f_a^{-1}f_{i,*}F → f_{j,*}F`.”.
 
 > **The cocycle condition of Stacks 09YN.** The canonical maps
 > `φ_a : f_a^{-1}f_{i, *}F → f_{j, *}F`, in the adjoint form `ψ`, satisfy
@@ -550,7 +550,7 @@ public theorem cocycle_pullback_pushforward_of_colimit
         ((ψ b).app (op ((D.u a).obj V)) ((ψ a).app (op V) x))
 ```
 
-**`CategoryTheory.Sites.InverseSystem.InverseSystemOfFiniteSites.pullbackPushforwardDesc`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InverseSystem/CohomologyOfColimitOfFiniteSites/MorphismOfSitesAndDescent.lean, line 2560](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/InverseSystem/CohomologyOfColimitOfFiniteSites/MorphismOfSitesAndDescent.lean#L2560). The attribute's comment: “weak-system variant (Stacks 00VH finite coverings): the map `F ⟶ H` that a compatible family `g` factors through; its defining property is `pullbackPushforwardDesc_app` and its uniqueness `eq_pullbackPushforwardDesc`.”.
+**`CategoryTheory.Sites.InverseSystem.InverseSystemOfFiniteSites.pullbackPushforwardDesc`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InverseSystem/CohomologyOfColimitOfFiniteSites/MorphismOfSitesAndDescent.lean, line 2563](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/InverseSystem/CohomologyOfColimitOfFiniteSites/MorphismOfSitesAndDescent.lean#L2563). The attribute's comment: “weak-system variant (Stacks 00VH finite coverings): the map `F ⟶ H` that a compatible family `g` factors through; its defining property is `pullbackPushforwardDesc_app` and its uniqueness `eq_pullbackPushforwardDesc`.”.
 
 > **The factorization of a compatible family through the counits.** Writing
 > `F = colim_i f_i^{-1}f_{i, *}F` with the counits as structure maps, this is the map of sheaves
@@ -596,7 +596,7 @@ public noncomputable def pullbackPushforwardDesc
     : F ⟶ H
 ```
 
-**`CategoryTheory.Sites.InverseSystem.InverseSystemOfFiniteSites.pullbackPushforwardDesc_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InverseSystem/CohomologyOfColimitOfFiniteSites/MorphismOfSitesAndDescent.lean, line 2603](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/InverseSystem/CohomologyOfColimitOfFiniteSites/MorphismOfSitesAndDescent.lean#L2603). The attribute's comment: “weak-system variant (Stacks 00VH finite coverings): `pullbackPushforwardDesc` restricts to `g i` at every level.”.
+**`CategoryTheory.Sites.InverseSystem.InverseSystemOfFiniteSites.pullbackPushforwardDesc_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InverseSystem/CohomologyOfColimitOfFiniteSites/MorphismOfSitesAndDescent.lean, line 2606](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/InverseSystem/CohomologyOfColimitOfFiniteSites/MorphismOfSitesAndDescent.lean#L2606). The attribute's comment: “weak-system variant (Stacks 00VH finite coverings): `pullbackPushforwardDesc` restricts to `g i` at every level.”.
 
 > **`pullbackPushforwardDesc` restricts to `g i` at every level**: it is a factorization of the
 > family `g` through the counits.
@@ -642,7 +642,7 @@ public theorem pullbackPushforwardDesc_app
         (op ((u i).obj V)) x
 ```
 
-**`CategoryTheory.Sites.InverseSystem.InverseSystemOfFiniteSites.eq_pullbackPushforwardDesc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InverseSystem/CohomologyOfColimitOfFiniteSites/MorphismOfSitesAndDescent.lean, line 2648](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/InverseSystem/CohomologyOfColimitOfFiniteSites/MorphismOfSitesAndDescent.lean#L2648). The attribute's comment: “weak-system variant (Stacks 00VH finite coverings): uniqueness of the factorization `pullbackPushforwardDesc`.”.
+**`CategoryTheory.Sites.InverseSystem.InverseSystemOfFiniteSites.eq_pullbackPushforwardDesc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InverseSystem/CohomologyOfColimitOfFiniteSites/MorphismOfSitesAndDescent.lean, line 2651](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/InverseSystem/CohomologyOfColimitOfFiniteSites/MorphismOfSitesAndDescent.lean#L2651). The attribute's comment: “weak-system variant (Stacks 00VH finite coverings): uniqueness of the factorization `pullbackPushforwardDesc`.”.
 
 > **`pullbackPushforwardDesc` is the only such factorization**: a map of sheaves `F ⟶ H`
 > restricting to `g i` at every level is `pullbackPushforwardDesc`.
@@ -688,7 +688,7 @@ public theorem eq_pullbackPushforwardDesc
     y = pullbackPushforwardDesc D u hu hobj hhom _hhom_inj K _hK F ψ hψ H g hgcomp
 ```
 
-**`CategoryTheory.Sites.InverseSystem.InverseSystemOfSites.cocycle_pullback_pushforward_of_colimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InverseSystem/CohomologyOfColimitOfFiniteSites/MorphismOfSitesAndDescent.lean, line 2944](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/InverseSystem/CohomologyOfColimitOfFiniteSites/MorphismOfSitesAndDescent.lean#L2944). The attribute's comment: “the cocycle condition `φ_{b ∘ a} = φ_b ∘ f_b^{-1}φ_a` of Stacks 09YN satisfied by the counits `φ_a : f_a^{-1}f_{i,*}F → f_{j,*}F`.”.
+**`CategoryTheory.Sites.InverseSystem.InverseSystemOfSites.cocycle_pullback_pushforward_of_colimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InverseSystem/CohomologyOfColimitOfFiniteSites/MorphismOfSitesAndDescent.lean, line 2947](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/InverseSystem/CohomologyOfColimitOfFiniteSites/MorphismOfSitesAndDescent.lean#L2947). The attribute's comment: “the cocycle condition `φ_{b ∘ a} = φ_b ∘ f_b^{-1}φ_a` of Stacks 09YN satisfied by the counits `φ_a : f_a^{-1}f_{i,*}F → f_{j,*}F`.”.
 
 > **The cocycle condition of Stacks 09YN.** The canonical maps
 > `φ_a : f_a^{-1}f_{i, *}F → f_{j, *}F`, in the adjoint form `ψ`, satisfy
@@ -729,7 +729,7 @@ public theorem InverseSystemOfSites.cocycle_pullback_pushforward_of_colimit
         ((ψ b).app (op ((D.u a).obj V)) ((ψ a).app (op V) x))
 ```
 
-**`CategoryTheory.Sites.InverseSystem.InverseSystemOfSites.pullbackPushforwardDesc`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InverseSystem/CohomologyOfColimitOfFiniteSites/MorphismOfSitesAndDescent.lean, line 2985](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/InverseSystem/CohomologyOfColimitOfFiniteSites/MorphismOfSitesAndDescent.lean#L2985). The attribute's comment: “the map `F ⟶ H` that a compatible family `g` factors through; its defining property is `pullbackPushforwardDesc_app` and its uniqueness `eq_pullbackPushforwardDesc`.”.
+**`CategoryTheory.Sites.InverseSystem.InverseSystemOfSites.pullbackPushforwardDesc`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InverseSystem/CohomologyOfColimitOfFiniteSites/MorphismOfSitesAndDescent.lean, line 2988](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/InverseSystem/CohomologyOfColimitOfFiniteSites/MorphismOfSitesAndDescent.lean#L2988). The attribute's comment: “the map `F ⟶ H` that a compatible family `g` factors through; its defining property is `pullbackPushforwardDesc_app` and its uniqueness `eq_pullbackPushforwardDesc`.”.
 
 > **The factorization of a compatible family through the counits.** Writing
 > `F = colim_i f_i^{-1}f_{i, *}F` with the counits as structure maps, this is the map of sheaves
@@ -775,7 +775,7 @@ public noncomputable def InverseSystemOfSites.pullbackPushforwardDesc
     : F ⟶ H
 ```
 
-**`CategoryTheory.Sites.InverseSystem.InverseSystemOfSites.pullbackPushforwardDesc_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InverseSystem/CohomologyOfColimitOfFiniteSites/MorphismOfSitesAndDescent.lean, line 3026](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/InverseSystem/CohomologyOfColimitOfFiniteSites/MorphismOfSitesAndDescent.lean#L3026). The attribute's comment: “`pullbackPushforwardDesc` restricts to `g i` at every level.”.
+**`CategoryTheory.Sites.InverseSystem.InverseSystemOfSites.pullbackPushforwardDesc_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InverseSystem/CohomologyOfColimitOfFiniteSites/MorphismOfSitesAndDescent.lean, line 3029](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/InverseSystem/CohomologyOfColimitOfFiniteSites/MorphismOfSitesAndDescent.lean#L3029). The attribute's comment: “`pullbackPushforwardDesc` restricts to `g i` at every level.”.
 
 > **`pullbackPushforwardDesc` restricts to `g i` at every level**: it is a factorization of the
 > family `g` through the counits.
@@ -821,7 +821,7 @@ public theorem InverseSystemOfSites.pullbackPushforwardDesc_app
         (op ((u i).obj V)) x
 ```
 
-**`CategoryTheory.Sites.InverseSystem.InverseSystemOfSites.eq_pullbackPushforwardDesc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InverseSystem/CohomologyOfColimitOfFiniteSites/MorphismOfSitesAndDescent.lean, line 3070](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/InverseSystem/CohomologyOfColimitOfFiniteSites/MorphismOfSitesAndDescent.lean#L3070). The attribute's comment: “uniqueness of the factorization `pullbackPushforwardDesc`.”.
+**`CategoryTheory.Sites.InverseSystem.InverseSystemOfSites.eq_pullbackPushforwardDesc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/InverseSystem/CohomologyOfColimitOfFiniteSites/MorphismOfSitesAndDescent.lean, line 3073](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/InverseSystem/CohomologyOfColimitOfFiniteSites/MorphismOfSitesAndDescent.lean#L3073). The attribute's comment: “uniqueness of the factorization `pullbackPushforwardDesc`.”.
 
 > **`pullbackPushforwardDesc` is the only such factorization**: a map of sheaves `F ⟶ H`
 > restricting to `g i` at every level is `pullbackPushforwardDesc`.
@@ -874,4 +874,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 7.18, Tag 0EXI](https://stacks.math.columbia.edu/tag/0EXI)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

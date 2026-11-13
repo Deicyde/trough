@@ -1,6 +1,6 @@
 # 19 Injectives
 
-Chapter 19 of the Stacks Project, *Injectives*, [Tag 01D4](https://stacks.math.columbia.edu/tag/01D4): the 14 sections of its 15 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 59 tags are carried by 150 declarations of the repository (all in StacksFrontier) and 9 registered declarations.
+Chapter 19 of the Stacks Project, *Injectives*, [Tag 01D4](https://stacks.math.columbia.edu/tag/01D4): the 14 sections of its 15 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 59 tags are carried by 163 declarations of the repository (all in StacksFrontier) and 9 registered declarations.
 
 - [19.2 Baer's argument for modules](19-2-baers-argument-for-modules.md)
 - [19.3 G-modules](19-3-g-modules.md)

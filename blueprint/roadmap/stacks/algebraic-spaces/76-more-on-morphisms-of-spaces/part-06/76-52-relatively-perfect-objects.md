@@ -8,13 +8,13 @@ proof: formalized
 
 # 76.52 Relatively perfect objects
 
-Section 76.52 of the Stacks Project, [Tag 0DKM](https://stacks.math.columbia.edu/tag/0DKM). 13 tags here are carried by 31 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 76.52 of the Stacks Project, [Tag 0DKM](https://stacks.math.columbia.edu/tag/0DKM). 13 tags here are carried by 31 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0DKN, a definition
 
 [Tag 0DKN](https://stacks.math.columbia.edu/tag/0DKN) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsPerfectRelativeTo`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/Relative.lean, line 179](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/Relative.lean#L179). References: SGA 6 III (4.1), “spaces, flat l.f.p.”.
+**`AlgebraicGeometry.Space.IsPerfectRelativeTo`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/Relative.lean, line 179](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/Relative.lean#L179). References: SGA 6 III (4.1), “spaces, flat l.f.p.”.
 
 > For a morphism `f : X ⟶ Y` of algebraic spaces which is flat and locally of finite
 > presentation, an object `E` of `D(𝒪_X)` is *perfect relative to `Y`* when `E` is
@@ -35,7 +35,7 @@ abbrev IsPerfectRelativeTo
     (E : DerivedCategory (Modules.{u, u} B S hS X.1 X.2)) : Prop
 ```
 
-**`AlgebraicGeometry.Space.IsRelativelyPerfect`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativelyPerfect.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativelyPerfect.lean#L101). The attribute's comment: “Y-perfect objects: pseudo-coherent, and locally of finite tor dimension over f⁻¹𝒪\_Y for the derived tensor product of 06YU; independent of that choice by isRelativelyPerfect\_iff\_isPerfectRelativeTo”.
+**`AlgebraicGeometry.Space.IsRelativelyPerfect`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativelyPerfect.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativelyPerfect.lean#L101). The attribute's comment: “Y-perfect objects: pseudo-coherent, and locally of finite tor dimension over f⁻¹𝒪\_Y for the derived tensor product of 06YU; independent of that choice by isRelativelyPerfect\_iff\_isPerfectRelativeTo”.
 
 > Let `f : X ⟶ Y` be a morphism of algebraic spaces over `S` which is flat and locally of
 > finite presentation. An object `E` of `D(𝒪_X)` is *perfect relative to `Y`*, or *`Y`-perfect*,
@@ -56,7 +56,7 @@ def IsRelativelyPerfect
 
 [Tag 0DKP](https://stacks.math.columbia.edu/tag/0DKP) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isRelativelyPerfect_dualNumberResidueComplex_and_not_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativelyPerfectNotFibrewise.lean, line 383](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativelyPerfectNotFibrewise.lean#L383). The attribute's comment: “relative perfectness over a field is not perfectness on the fibres”.
+**`AlgebraicGeometry.Space.isRelativelyPerfect_dualNumberResidueComplex_and_not_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativelyPerfectNotFibrewise.lean, line 383](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativelyPerfectNotFibrewise.lean#L383). The attribute's comment: “relative perfectness over a field is not perfectness on the fibres”.
 
 > **Stacks 0DKP, the closing warning.** Over a field, relative perfectness is not perfectness
 > on the fibres: on the algebraic space `Spec k[ε]` — which is of finite presentation over `k`
@@ -74,7 +74,7 @@ theorem isRelativelyPerfect_dualNumberResidueComplex_and_not_isPerfect :
         (dualNumberSpace B S hS k hk b).2).IsPerfect (dualNumberResidueComplex B S hS k hk b)
 ```
 
-**`AlgebraicGeometry.Space.isPerfectRelativeTo_of_isBounded_of_isPseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeOverField.lean, line 231](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeOverField.lean#L231). The attribute's comment: “bounded pseudo-coherent objects are perfect relative to a field”.
+**`AlgebraicGeometry.Space.isPerfectRelativeTo_of_isBounded_of_isPseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeOverField.lean, line 231](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeOverField.lean#L231). The attribute's comment: “bounded pseudo-coherent objects are perfect relative to a field”.
 
 > Let `k` be a field and let `X` be an algebraic space locally of finite presentation over
 > `k`. A bounded pseudo-coherent object of `D(𝒪_X)` is perfect relative to `Spec k`, the flatness
@@ -92,7 +92,7 @@ theorem isPerfectRelativeTo_of_isBounded_of_isPseudoCoherent
     IsPerfectRelativeTo B S hS f (isFlat_toFieldSpace B S hS k hk b f) hlfp T E
 ```
 
-**`AlgebraicGeometry.Space.isBounded_and_isPseudoCoherent_iff_derivedCategoryBBounded`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeOverFieldCharacterization.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeOverFieldCharacterization.lean#L143). The attribute's comment: “bounded pseudo-coherent objects are the objects of `D^b_Coh(X)`, by Stacks 08IK”.
+**`AlgebraicGeometry.Space.isBounded_and_isPseudoCoherent_iff_derivedCategoryBBounded`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeOverFieldCharacterization.lean, line 143](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeOverFieldCharacterization.lean#L143). The attribute's comment: “bounded pseudo-coherent objects are the objects of `D^b_Coh(X)`, by Stacks 08IK”.
 
 > **On a locally Noetherian algebraic space the bounded pseudo-coherent objects of `D(𝒪_X)`
 > are the objects of `D^b_Coh(𝒪_X)`**: an object of `D(𝒪_X)` is bounded and pseudo-coherent if
@@ -110,7 +110,7 @@ theorem isBounded_and_isPseudoCoherent_iff_derivedCategoryBBounded
         (fun M : Modules.{u, u} B S hS F hF => M.IsCoherentOnSite) E
 ```
 
-**`AlgebraicGeometry.Space.isQuasiCompactSpace_of_isFinitePresentation_fieldSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeOverFieldCharacterization.lean, line 171](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeOverFieldCharacterization.lean#L171). The attribute's comment: “in particular, an algebraic space of finite presentation over a field is quasi-compact”.
+**`AlgebraicGeometry.Space.isQuasiCompactSpace_of_isFinitePresentation_fieldSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeOverFieldCharacterization.lean, line 171](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeOverFieldCharacterization.lean#L171). The attribute's comment: “in particular, an algebraic space of finite presentation over a field is quasi-compact”.
 
 > **An algebraic space of finite presentation over a field is quasi-compact.**
 
@@ -119,7 +119,7 @@ theorem isQuasiCompactSpace_of_isFinitePresentation_fieldSpace
     (hfp : IsFinitePresentation B S hS f.hom) : IsQuasiCompactSpace B S hS X.1
 ```
 
-**`AlgebraicGeometry.Space.isRelativelyPerfect_iff_isBounded_and_isPseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeOverFieldCharacterization.lean, line 330](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeOverFieldCharacterization.lean#L330). The attribute's comment: “`k`-perfect objects are the bounded pseudo-coherent ones”.
+**`AlgebraicGeometry.Space.isRelativelyPerfect_iff_isBounded_and_isPseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeOverFieldCharacterization.lean, line 330](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeOverFieldCharacterization.lean#L330). The attribute's comment: “`k`-perfect objects are the bounded pseudo-coherent ones”.
 
 > **Stacks 0DKP, first equivalence.** Let `k` be a field and let `X` be an algebraic space of
 > finite presentation over `k`. An object `E` of `D(𝒪_X)` is `k`-perfect (Stacks 0DKN) if and only
@@ -133,7 +133,7 @@ theorem isRelativelyPerfect_iff_isBounded_and_isPseudoCoherent
       (DerivedCategoryB.IsBounded E ∧ (smallEtaleRingedSite B S hS X.1 X.2).IsPseudoCoherent E)
 ```
 
-**`AlgebraicGeometry.Space.isRelativelyPerfect_iff_derivedCategoryBBounded`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeOverFieldCharacterization.lean, line 342](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeOverFieldCharacterization.lean#L342). The attribute's comment: “the `k`-perfect objects are exactly the objects of `D^b_Coh(X)`”.
+**`AlgebraicGeometry.Space.isRelativelyPerfect_iff_derivedCategoryBBounded`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeOverFieldCharacterization.lean, line 342](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeOverFieldCharacterization.lean#L342). The attribute's comment: “the `k`-perfect objects are exactly the objects of `D^b_Coh(X)`”.
 
 > **Stacks 0DKP.** Let `k` be a field and let `X` be an algebraic space of finite presentation
 > over `k`. An object `E` of `D(𝒪_X)` is `k`-perfect (Stacks 0DKN) if and only if it lies in
@@ -152,7 +152,7 @@ theorem isRelativelyPerfect_iff_derivedCategoryBBounded
 
 [Tag 0DKQ](https://stacks.math.columbia.edu/tag/0DKQ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isPerfectRelativeToCanonical_tfae_chartDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeSchemeCharts.lean, line 380](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeSchemeCharts.lean#L380).
+**`AlgebraicGeometry.Space.isPerfectRelativeToCanonical_tfae_chartDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeSchemeCharts.lean, line 380](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeSchemeCharts.lean#L380).
 
 > **Relative perfectness of algebraic spaces read on scheme charts.** Let `f : X ⟶ Y` be a
 > morphism of algebraic spaces which is flat and locally of finite presentation, and let
@@ -211,7 +211,7 @@ theorem isPerfectRelativeToCanonical_tfae_chartDiagram
 
 [Tag 0DKR](https://stacks.math.columbia.edu/tag/0DKR) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isClosedUnderIsomorphisms_isPerfectRelativeTo`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeSubcategory.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeSubcategory.lean#L221). The attribute's comment: “isomorphism closure”.
+**`AlgebraicGeometry.Space.isClosedUnderIsomorphisms_isPerfectRelativeTo`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeSubcategory.lean, line 221](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeSubcategory.lean#L221). The attribute's comment: “isomorphism closure”.
 
 > For a morphism `f : X ⟶ Y` of algebraic spaces which is flat and locally of finite
 > presentation, the `Y`-perfect objects of `D(𝒪_X)` form a *strictly full* subcategory:
@@ -227,7 +227,7 @@ theorem isClosedUnderIsomorphisms_isPerfectRelativeTo
     (isPerfectRelativeTo B S hS f hflat hlfp T).IsClosedUnderIsomorphisms
 ```
 
-**`AlgebraicGeometry.Space.isSaturated_isPerfectRelativeTo`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeSubcategory.lean, line 291](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeSubcategory.lean#L291). The attribute's comment: “saturation”.
+**`AlgebraicGeometry.Space.isSaturated_isPerfectRelativeTo`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeSubcategory.lean, line 291](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeSubcategory.lean#L291). The attribute's comment: “saturation”.
 
 > For a morphism `f : X ⟶ Y` of algebraic spaces which is flat and locally of finite
 > presentation, the `Y`-perfect objects of `D(𝒪_X)` form a *saturated* (thick) subcategory: both
@@ -243,7 +243,7 @@ theorem isSaturated_isPerfectRelativeTo
     (isPerfectRelativeTo B S hS f hflat hlfp T).IsSaturated
 ```
 
-**`AlgebraicGeometry.Space.containsZero_isPerfectRelativeTo`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeSubcategory.lean, line 322](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeSubcategory.lean#L322). The attribute's comment: “contains a zero object”.
+**`AlgebraicGeometry.Space.containsZero_isPerfectRelativeTo`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeSubcategory.lean, line 322](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeSubcategory.lean#L322). The attribute's comment: “contains a zero object”.
 
 > For a morphism `f : X ⟶ Y` of algebraic spaces which is flat and locally of finite
 > presentation, the `Y`-perfect objects of `D(𝒪_X)` contain a zero object.
@@ -258,7 +258,7 @@ theorem containsZero_isPerfectRelativeTo
     (isPerfectRelativeTo B S hS f hflat hlfp T).ContainsZero
 ```
 
-**`AlgebraicGeometry.Space.isStableUnderShift_isPerfectRelativeTo`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeSubcategory.lean, line 339](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeSubcategory.lean#L339). The attribute's comment: “closure under the shifts”.
+**`AlgebraicGeometry.Space.isStableUnderShift_isPerfectRelativeTo`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeSubcategory.lean, line 339](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeSubcategory.lean#L339). The attribute's comment: “closure under the shifts”.
 
 > For a morphism `f : X ⟶ Y` of algebraic spaces which is flat and locally of finite
 > presentation, the `Y`-perfect objects of `D(𝒪_X)` are stable under every shift `E ↦ E[n]`.
@@ -273,7 +273,7 @@ theorem isStableUnderShift_isPerfectRelativeTo
     (isPerfectRelativeTo B S hS f hflat hlfp T).IsStableUnderShift ℤ
 ```
 
-**`AlgebraicGeometry.Space.isTriangulated_isPerfectRelativeTo`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeSubcategory.lean, line 394](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeSubcategory.lean#L394). The attribute's comment: “closure under cones: the Y-perfect objects form a triangulated subcategory. The zero object and the shifts are `containsZero_isPerfectRelativeTo` and `isStableUnderShift_isPerfectRelativeTo`”. References: SGA 6 I (5.8.4), “5.8.4 a), special case”.
+**`AlgebraicGeometry.Space.isTriangulated_isPerfectRelativeTo`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeSubcategory.lean, line 394](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeSubcategory.lean#L394). The attribute's comment: “closure under cones: the Y-perfect objects form a triangulated subcategory. The zero object and the shifts are `containsZero_isPerfectRelativeTo` and `isStableUnderShift_isPerfectRelativeTo`”. References: SGA 6 I (5.8.4), “5.8.4 a), special case”.
 
 > For a morphism `f : X ⟶ Y` of algebraic spaces which is flat and locally of finite
 > presentation, the `Y`-perfect objects of `D(𝒪_X)` form a *triangulated* subcategory: the
@@ -290,7 +290,7 @@ theorem isTriangulated_isPerfectRelativeTo
     (isPerfectRelativeTo B S hS f hflat hlfp T).IsTriangulated
 ```
 
-**`AlgebraicGeometry.Space.isClosedUnderIsomorphisms_isPerfectRelativeToCanonical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeSubcategory.lean, line 460](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeSubcategory.lean#L460). The attribute's comment: “isomorphism closure, for an actual f”.
+**`AlgebraicGeometry.Space.isClosedUnderIsomorphisms_isPerfectRelativeToCanonical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeSubcategory.lean, line 460](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeSubcategory.lean#L460). The attribute's comment: “isomorphism closure, for an actual f”.
 
 > For a morphism `f : X ⟶ Y` of algebraic spaces which is flat and locally of finite
 > presentation, the `Y`-perfect objects of `D(𝒪_X)` form a *strictly full* subcategory.
@@ -302,7 +302,7 @@ theorem isClosedUnderIsomorphisms_isPerfectRelativeToCanonical
     (isPerfectRelativeToCanonical B S hS f hflat hlfp).IsClosedUnderIsomorphisms
 ```
 
-**`AlgebraicGeometry.Space.isSaturated_isPerfectRelativeToCanonical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeSubcategory.lean, line 478](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeSubcategory.lean#L478). The attribute's comment: “saturation, for an actual f”.
+**`AlgebraicGeometry.Space.isSaturated_isPerfectRelativeToCanonical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeSubcategory.lean, line 478](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeSubcategory.lean#L478). The attribute's comment: “saturation, for an actual f”.
 
 > For a morphism `f : X ⟶ Y` of algebraic spaces which is flat and locally of finite
 > presentation, the `Y`-perfect objects of `D(𝒪_X)` form a *saturated* (thick) subcategory.
@@ -314,7 +314,7 @@ theorem isSaturated_isPerfectRelativeToCanonical
     (isPerfectRelativeToCanonical B S hS f hflat hlfp).IsSaturated
 ```
 
-**`AlgebraicGeometry.Space.containsZero_isPerfectRelativeToCanonical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeSubcategory.lean, line 496](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeSubcategory.lean#L496). The attribute's comment: “contains a zero object, for an actual f”.
+**`AlgebraicGeometry.Space.containsZero_isPerfectRelativeToCanonical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeSubcategory.lean, line 496](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeSubcategory.lean#L496). The attribute's comment: “contains a zero object, for an actual f”.
 
 > For a morphism `f : X ⟶ Y` of algebraic spaces which is flat and locally of finite
 > presentation, the `Y`-perfect objects of `D(𝒪_X)` contain a zero object.
@@ -326,7 +326,7 @@ theorem containsZero_isPerfectRelativeToCanonical
     (isPerfectRelativeToCanonical B S hS f hflat hlfp).ContainsZero
 ```
 
-**`AlgebraicGeometry.Space.isStableUnderShift_isPerfectRelativeToCanonical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeSubcategory.lean, line 514](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeSubcategory.lean#L514). The attribute's comment: “closure under the shifts, for an actual f”.
+**`AlgebraicGeometry.Space.isStableUnderShift_isPerfectRelativeToCanonical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeSubcategory.lean, line 514](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeSubcategory.lean#L514). The attribute's comment: “closure under the shifts, for an actual f”.
 
 > For a morphism `f : X ⟶ Y` of algebraic spaces which is flat and locally of finite
 > presentation, the `Y`-perfect objects of `D(𝒪_X)` are stable under every shift.
@@ -338,7 +338,7 @@ theorem isStableUnderShift_isPerfectRelativeToCanonical
     (isPerfectRelativeToCanonical B S hS f hflat hlfp).IsStableUnderShift ℤ
 ```
 
-**`AlgebraicGeometry.Space.isTriangulated_isPerfectRelativeToCanonical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeSubcategory.lean, line 528](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeSubcategory.lean#L528). The attribute's comment: “closure under cones for an actual f: the Y-perfect objects of D(O\_X) form a triangulated subcategory. The zero object and the shifts are `containsZero_isPerfectRelativeToCanonical` and `isStableUnderShift_isPerfectRelativeToCanonical`”.
+**`AlgebraicGeometry.Space.isTriangulated_isPerfectRelativeToCanonical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeSubcategory.lean, line 528](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeSubcategory.lean#L528). The attribute's comment: “closure under cones for an actual f: the Y-perfect objects of D(O\_X) form a triangulated subcategory. The zero object and the shifts are `containsZero_isPerfectRelativeToCanonical` and `isStableUnderShift_isPerfectRelativeToCanonical`”.
 
 > For a morphism `f : X ⟶ Y` of algebraic spaces which is flat and locally of finite
 > presentation, the `Y`-perfect objects of `D(𝒪_X)` form a *triangulated* subcategory: the
@@ -355,7 +355,7 @@ theorem isTriangulated_isPerfectRelativeToCanonical
 
 [Tag 0DKS](https://stacks.math.columbia.edu/tag/0DKS) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isRelativelyPerfect_of_isPerfect_and_derivedTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativelyPerfectDerivedTensor.lean, line 320](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativelyPerfectDerivedTensor.lean#L320).
+**`AlgebraicGeometry.Space.isRelativelyPerfect_of_isPerfect_and_derivedTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativelyPerfectDerivedTensor.lean, line 320](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativelyPerfectDerivedTensor.lean#L320).
 
 > **Stacks 0DKS.** Let `S` be a scheme and let `f : X ⟶ Y` be a morphism of algebraic spaces
 > over `S` which is flat and locally of finite presentation.
@@ -391,13 +391,13 @@ theorem isRelativelyPerfect_of_isPerfect_and_derivedTensor
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Space.isPerfectRelativeToCanonical_smallEtaleDerivedModulePullback`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeBaseChange.lean#L227), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeBaseChangeTags.lean, line 20](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeBaseChangeTags.lean#L20) (StacksFrontier).
+- [`AlgebraicGeometry.Space.isPerfectRelativeToCanonical_smallEtaleDerivedModulePullback`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeBaseChange.lean#L227), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeBaseChangeTags.lean, line 20](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeBaseChangeTags.lean#L20) (StacksFrontier).
 
 ## Tag 0DKU, a situation
 
 [Tag 0DKU](https://stacks.math.columbia.edu/tag/0DKU) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.RelativeDescentSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/RelativelyPerfect.lean, line 39](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/RelativelyPerfect.lean#L39).
+**`AlgebraicGeometry.Space.RelativeDescentSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/RelativelyPerfect.lean, line 39](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/RelativelyPerfect.lean#L39).
 
 > A directed inverse system of quasi-compact, quasi-separated algebraic spaces with affine
 > transition morphisms, together with its limit, a flat algebraic space of finite presentation
@@ -414,7 +414,7 @@ structure RelativeDescentSituation (B : BigFppfSite.{u}) (S : Scheme.{u})
 
 [Tag 0DKV](https://stacks.math.columbia.edu/tag/0DKV) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.RelativeDescentSituation.restrict`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/RelativelyPerfectHomDescent.lean, line 293](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/RelativelyPerfectHomDescent.lean#L293). The attribute's comment: “the restriction of Situation 0DKU along a flat morphism of finite presentation, a step the tag's proof needs and which this development lacked; stated for flat plus finite presentation rather than étale, which is strictly more general. The tag's own conclusion is not proved here”.
+**`AlgebraicGeometry.Space.RelativeDescentSituation.restrict`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/RelativelyPerfectHomDescent.lean, line 293](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/RelativelyPerfectHomDescent.lean#L293). The attribute's comment: “the restriction of Situation 0DKU along a flat morphism of finite presentation, a step the tag's proof needs and which this development lacked; stated for flat plus finite presentation rather than étale, which is strictly more general. The tag's own conclusion is not proved here”.
 
 > The restriction of a relative descent situation along a flat finitely presented morphism
 > `g : U₀ ⟶ X₀`: the inverse system, its limit and the chosen stage are unchanged, `U₀` replaces
@@ -427,7 +427,7 @@ def restrict {U₀ : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u} (hU₀ : IsAlgebraic
     (hgfp : IsFinitePresentation B S hS g) : RelativeDescentSituation B S hS hZ I
 ```
 
-**`AlgebraicGeometry.Space.RelativeDescentSituation.homDescent_iff_isIso_colimitDesc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/RelativelyPerfectHomDescent.lean, line 478](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/RelativelyPerfectHomDescent.lean#L478). The attribute's comment: “the tag's conclusion reformulated: the elementary descent statement holds exactly when the canonical colimit comparison map is invertible”.
+**`AlgebraicGeometry.Space.RelativeDescentSituation.homDescent_iff_isIso_colimitDesc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/RelativelyPerfectHomDescent.lean, line 478](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/RelativelyPerfectHomDescent.lean#L478). The attribute's comment: “the tag's conclusion reformulated: the elementary descent statement holds exactly when the canonical colimit comparison map is invertible”.
 
 > `HomDescent` holds exactly when the canonical map from the colimit of the system of derived
 > homomorphism sets to `Hom_{D(𝒪_X)}(K, L)` is an isomorphism.
@@ -438,7 +438,7 @@ theorem homDescent_iff_isIso_colimitDesc [HasColimit (D.homFunctor P K₀ L₀)]
       IsIso (colimit.desc (D.homFunctor P K₀ L₀) (D.homCocone P K₀ L₀))
 ```
 
-**`AlgebraicGeometry.Space.RelativeDescentSituation.isIso_colimitDesc_homCocone_of_isPseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/RelativelyPerfectHomDescentFinal.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/RelativelyPerfectHomDescentFinal.lean#L80). The attribute's comment: “the full statement; the condition D.IsSchemeLimit on the limit cone is the meaning of Y = lim Y\_i in Situation 0DKU, the limit of algebraic spaces of Stacks 07SF, which the presheaf limit cone of RelativeDescentSituation does not record by itself (see the module documentation of RelativeDescentSchemeLimit for a situation where the presheaf limit is empty and the conclusion fails); it holds automatically for small index sets, see isIso\_colimitDesc\_homCocone\_of\_isPseudoCoherent\_of\_mk\_lt and isIso\_colimitDesc\_homCocone\_of\_isPseudoCoherent\_of\_countable”.
+**`AlgebraicGeometry.Space.RelativeDescentSituation.isIso_colimitDesc_homCocone_of_isPseudoCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/RelativelyPerfectHomDescentFinal.lean, line 80](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/RelativelyPerfectHomDescentFinal.lean#L80). The attribute's comment: “the full statement; the condition D.IsSchemeLimit on the limit cone is the meaning of Y = lim Y\_i in Situation 0DKU, the limit of algebraic spaces of Stacks 07SF, which the presheaf limit cone of RelativeDescentSituation does not record by itself (see the module documentation of RelativeDescentSchemeLimit for a situation where the presheaf limit is empty and the conclusion fails); it holds automatically for small index sets, see isIso\_colimitDesc\_homCocone\_of\_isPseudoCoherent\_of\_mk\_lt and isIso\_colimitDesc\_homCocone\_of\_isPseudoCoherent\_of\_countable”.
 
 > **Stacks 0DKV.** In Situation 0DKU, with `Y = lim Yᵢ` the limit of algebraic spaces of
 > Stacks 07SF (a limit of schemes on affine charts), let `K₀`, `L₀` be objects of `D(𝒪_{X₀})`
@@ -457,7 +457,7 @@ theorem isIso_colimitDesc_homCocone_of_isPseudoCoherent
       (D.homCocone (DerivedPullbackComposition.canonical B S hS) K₀ L₀))
 ```
 
-**`AlgebraicGeometry.Space.RelativeDescentSituation.isIso_colimitDesc_homCocone_of_isPseudoCoherent_of_mk_lt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/RelativelyPerfectHomDescentFinal.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/RelativelyPerfectHomDescentFinal.lean#L101). The attribute's comment: “the full statement for every directed index set I with #I below the cofinality of the size cutoff of the site, with no condition on the limit: the limit of presheaves of RelativeDescentSituation is then the limit of algebraic spaces of Stacks 07SF (isSchemeLimit\_of\_size)”.
+**`AlgebraicGeometry.Space.RelativeDescentSituation.isIso_colimitDesc_homCocone_of_isPseudoCoherent_of_mk_lt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/RelativelyPerfectHomDescentFinal.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/RelativelyPerfectHomDescentFinal.lean#L101). The attribute's comment: “the full statement for every directed index set I with #I below the cofinality of the size cutoff of the site, with no condition on the limit: the limit of presheaves of RelativeDescentSituation is then the limit of algebraic spaces of Stacks 07SF (isSchemeLimit\_of\_size)”.
 
 > **Stacks 0DKV for a small index set.** In Situation 0DKU indexed by a directed set with
 > fewer elements than the cofinality of the size cutoff of the site, let `K₀`, `L₀` be objects of
@@ -477,7 +477,7 @@ theorem isIso_colimitDesc_homCocone_of_isPseudoCoherent_of_mk_lt
       (D.homCocone (DerivedPullbackComposition.canonical B S hS) K₀ L₀))
 ```
 
-**`AlgebraicGeometry.Space.RelativeDescentSituation.isIso_colimitDesc_homCocone_of_isPseudoCoherent_of_countable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/RelativelyPerfectHomDescentFinal.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/RelativelyPerfectHomDescentFinal.lean#L119). The attribute's comment: “the full statement for every countable directed index set, on every big fppf site, with no condition on the limit”.
+**`AlgebraicGeometry.Space.RelativeDescentSituation.isIso_colimitDesc_homCocone_of_isPseudoCoherent_of_countable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/RelativelyPerfectHomDescentFinal.lean, line 119](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/RelativelyPerfectHomDescentFinal.lean#L119). The attribute's comment: “the full statement for every countable directed index set, on every big fppf site, with no condition on the limit”.
 
 > **Stacks 0DKV for a countable index set.** In Situation 0DKU indexed by a countable
 > directed set, on any big fppf site, let `K₀`, `L₀` be objects of `D(𝒪_{X₀})` with `K₀`
@@ -500,7 +500,7 @@ theorem isIso_colimitDesc_homCocone_of_isPseudoCoherent_of_countable [Countable 
 
 [Tag 0DKW](https://stacks.math.columbia.edu/tag/0DKW) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.RelativeDescentSituation.relativelyPerfectColimit_proved`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/RepresentedHomotopyPullbackCoherenceConsequences.lean, line 56](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/RepresentedHomotopyPullbackCoherenceConsequences.lean#L56).
+**`AlgebraicGeometry.Space.RelativeDescentSituation.relativelyPerfectColimit_proved`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/RepresentedHomotopyPullbackCoherenceConsequences.lean, line 56](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/PseudoCoherent/RepresentedHomotopyPullbackCoherenceConsequences.lean#L56).
 
 > In Situation 0DKU (indexed by a directed preorder `I` in `Type u`), whose
 > limit is a limit of schemes on affine charts (the standing meaning of `Y = lim Yᵢ`,
@@ -517,7 +517,7 @@ theorem relativelyPerfectColimit_proved (D : RelativeDescentSituation B S hS hZ 
 
 [Tag 0DKX](https://stacks.math.columbia.edu/tag/0DKX) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isPerfect_derivedPushforward_and_isIso_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/RelativeDerivedHomDualProved.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/RelativeDerivedHomDualProved.lean#L111).
+**`AlgebraicGeometry.Space.isPerfect_derivedPushforward_and_isIso_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/RelativeDerivedHomDualProved.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/RelativeDerivedHomDualProved.lean#L111).
 
 > **Stacks 0DKX.** Let `f : X ⟶ Y` be a morphism of algebraic spaces over `S` which is flat,
 > proper and of finite presentation, and let `E ∈ D(𝒪_X)` be `Y`-perfect (Stacks 0DKN). Then
@@ -546,7 +546,7 @@ theorem isPerfect_derivedPushforward_and_isIso_baseChange
 
 [Tag 0DKY](https://stacks.math.columbia.edu/tag/0DKY) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isPseudoCoherent_pushforward_sheafHom_iso_dual`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/RelativeDerivedHomDualProved.lean, line 153](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/RelativeDerivedHomDualProved.lean#L153).
+**`AlgebraicGeometry.Space.exists_isPseudoCoherent_pushforward_sheafHom_iso_dual`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/RelativeDerivedHomDualProved.lean, line 153](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/RelativeDerivedHomDualProved.lean#L153).
 
 > **Stacks 0DKY.** Let `f : X ⟶ Y` be a morphism of algebraic spaces over `S`, and let `E`, `K`
 > be objects of `D(𝒪_X)`. Assume that `Y` is quasi-compact and quasi-separated, that `f` is proper,
@@ -585,7 +585,7 @@ theorem exists_isPseudoCoherent_pushforward_sheafHom_iso_dual
 
 [Tag 0GFK](https://stacks.math.columbia.edu/tag/0GFK) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isPerfectRelativeToCanonical_iff_isLocallyBoundedBelow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeFibrewiseBoundedBelow.lean, line 242](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeFibrewiseBoundedBelow.lean#L242).
+**`AlgebraicGeometry.Space.isPerfectRelativeToCanonical_iff_isLocallyBoundedBelow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeFibrewiseBoundedBelow.lean, line 242](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/RelativeFibrewiseBoundedBelow.lean#L242).
 
 > **Stacks 0GFK.** Let `f : X ⟶ T` be a morphism from an algebraic space to a scheme which is
 > flat and locally of finite presentation, and let `E ∈ D(𝒪_X)` be pseudo-coherent. Then `E` is
@@ -607,7 +607,7 @@ theorem isPerfectRelativeToCanonical_iff_isLocallyBoundedBelow (f : X ⟶ repres
 
 [Tag 0GFL](https://stacks.math.columbia.edu/tag/0GFL) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.QuasicoherentDerivedCategory.isPerfectRelativeToCanonical_of_isPerfect_derivedSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DerivedChow/RelativePerfect.lean, line 304](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/DerivedChow/RelativePerfect.lean#L304).
+**`AlgebraicGeometry.Space.QuasicoherentDerivedCategory.isPerfectRelativeToCanonical_of_isPerfect_derivedSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/DerivedChow/RelativePerfect.lean, line 304](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/DerivedChow/RelativePerfect.lean#L304).
 
 > Let `A` be a ring and `X` an algebraic space separated, of finite presentation and flat over
 > `A`. Let `K ∈ D_QCoh(𝒪_X)`. If `RΓ(X, E ⊗^𝐋 K)` is perfect in `D(A)` for every perfect
@@ -640,4 +640,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 76.52, Tag 0DKM](https://stacks.math.columbia.edu/tag/0DKM)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

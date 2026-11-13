@@ -8,13 +8,13 @@ proof: formalized
 
 # 109.12 Gorenstein curves
 
-Section 109.12 of the Stacks Project, [Tag 0E1L](https://stacks.math.columbia.edu/tag/0E1L). 2 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 109.12 of the Stacks Project, [Tag 0E1L](https://stacks.math.columbia.edu/tag/0E1L). 2 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0E1M, a lemma
 
 [Tag 0E1M](https://stacks.math.columbia.edu/tag/0E1M) in the Stacks Project.
 
-**`AlgebraicGeometry.isOpenImmersion_curvesSubstackInclusion_gorenstein`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesGorensteinSubstack.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesGorensteinSubstack.lean#L84). The attribute's comment: “the inclusion of Curves^\{Gorenstein} into Curves is representable by algebraic spaces and an open immersion”.
+**`AlgebraicGeometry.isOpenImmersion_curvesSubstackInclusion_gorenstein`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesGorensteinSubstack.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesGorensteinSubstack.lean#L84). The attribute's comment: “the inclusion of Curves^\{Gorenstein} into Curves is representable by algebraic spaces and an open immersion”.
 
 > **Stacks 0E1M, `Curves^{Gorenstein}` is open in `Curves`.** The inclusion into the category
 > fibred in groupoids of families of curves of the full subcategory `Curves^{Gorenstein}` of the
@@ -30,7 +30,7 @@ theorem isOpenImmersion_curvesSubstackInclusion_gorenstein :
           (isOpenCurvesLocus_isGorensteinFamily B hZ).prop_of_hom)
 ```
 
-**`AlgebraicGeometry.factorsThrough_curvesSubstack_gorenstein_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesGorensteinSubstack.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesGorensteinSubstack.lean#L98). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.factorsThrough_curvesSubstack_gorenstein_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesGorensteinSubstack.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesGorensteinSubstack.lean#L98). The attribute's comment: “part (1)”.
 
 > **Stacks 0E1M, part (1).** Let `X → S` be a family of curves and `z : (Sch/S) → Curves` a
 > classifying morphism for it, a scheme-valued point together with an isomorphism `z(S) ≅ X`.
@@ -52,7 +52,7 @@ theorem factorsThrough_curvesSubstack_gorenstein_iff
       Space.IsGorenstein B integerBase hZ X.toBase.hom
 ```
 
-**`AlgebraicGeometry.factorsThrough_curvesSubstack_gorenstein_over_field_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesGorensteinSubstack.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesGorensteinSubstack.lean#L118). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.factorsThrough_curvesSubstack_gorenstein_over_field_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesGorensteinSubstack.lean, line 118](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesGorensteinSubstack.lean#L118). The attribute's comment: “part (2)”.
 
 > **Stacks 0E1M, part (2).** Let `g : T ⟶ W` be a morphism of the big fppf site of the integers
 > whose target scheme is the spectrum of a field `k`, whose underlying morphism of schemes is
@@ -87,7 +87,7 @@ theorem factorsThrough_curvesSubstack_gorenstein_over_field_iff
 
 [Tag 0E6M](https://stacks.math.columbia.edu/tag/0E6M) in the Stacks Project.
 
-**`AlgebraicGeometry.isOpenImmersion_curvesSubstackInclusion_gorensteinDimOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesGorensteinDimOneSubstack.lean, line 121](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesGorensteinDimOneSubstack.lean#L121). The attribute's comment: “the inclusion of Curves^\{Gorenstein,1} into Curves is representable by algebraic spaces and an open immersion”.
+**`AlgebraicGeometry.isOpenImmersion_curvesSubstackInclusion_gorensteinDimOne`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesGorensteinDimOneSubstack.lean, line 121](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesGorensteinDimOneSubstack.lean#L121). The attribute's comment: “the inclusion of Curves^\{Gorenstein,1} into Curves is representable by algebraic spaces and an open immersion”.
 
 > **`Curves^{Gorenstein,1}` is open in `Curves`.** The inclusion into the category fibred in
 > groupoids of families of curves of the full subcategory `Curves^{Gorenstein,1}` of the families
@@ -106,7 +106,7 @@ theorem isOpenImmersion_curvesSubstackInclusion_gorensteinDimOne :
             (isOpenCurvesLocus_isGorensteinFamily_and_over_field_iff B hZ)).prop_of_hom)
 ```
 
-**`AlgebraicGeometry.factorsThrough_curvesSubstack_gorensteinDimOne_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesGorensteinDimOneSubstack.lean, line 144](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesGorensteinDimOneSubstack.lean#L144). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.factorsThrough_curvesSubstack_gorensteinDimOne_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesGorensteinDimOneSubstack.lean, line 144](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesGorensteinDimOneSubstack.lean#L144). The attribute's comment: “part (1)”.
 
 > Let `X → S` be a family of curves and `z : (Sch/S) → Curves` a classifying morphism for it, a
 > scheme-valued point together with an isomorphism `z(S) ≅ X`. Then `z` factors through
@@ -129,7 +129,7 @@ theorem factorsThrough_curvesSubstack_gorensteinDimOne_iff
         Space.HasRelativeDimension 1 B integerBase hZ X.toBase.hom
 ```
 
-**`AlgebraicGeometry.factorsThrough_curvesSubstack_gorensteinDimOne_over_field_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesGorensteinDimOneSubstack.lean, line 165](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesGorensteinDimOneSubstack.lean#L165). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.factorsThrough_curvesSubstack_gorensteinDimOne_over_field_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesGorensteinDimOneSubstack.lean, line 165](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesGorensteinDimOneSubstack.lean#L165). The attribute's comment: “part (2)”.
 
 > Let `g : T ⟶ W` be a morphism of the big fppf site of the integers whose target scheme is the
 > spectrum of a field `k`, whose underlying morphism of schemes is proper, and whose source scheme
@@ -170,4 +170,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 109.12, Tag 0E1L](https://stacks.math.columbia.edu/tag/0E1L)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

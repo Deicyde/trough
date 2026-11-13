@@ -8,13 +8,13 @@ proof: formalized
 
 # 53.2 Curves and function fields
 
-Section 53.2 of the Stacks Project, [Tag 0BXX](https://stacks.math.columbia.edu/tag/0BXX). 10 tags here are carried by 24 declarations of the repository (all in StacksFrontier) and 9 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 53.2 of the Stacks Project, [Tag 0BXX](https://stacks.math.columbia.edu/tag/0BXX). 10 tags here are carried by 23 declarations of the repository (all in StacksFrontier) and 9 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0BXX, the section
 
 [Tag 0BXX](https://stacks.math.columbia.edu/tag/0BXX) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Hom.IsConstant`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/CurvesFunctionFields/ConstantMorphism.lean, line 49](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/CurvesFunctionFields/ConstantMorphism.lean#L49). The attribute's comment: “a morphism of varieties is constant if its image consists of a single point”.
+**`AlgebraicGeometry.Scheme.Hom.IsConstant`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/CurvesFunctionFields/ConstantMorphism.lean, line 49](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/CurvesFunctionFields/ConstantMorphism.lean#L49). The attribute's comment: “a morphism of varieties is constant if its image consists of a single point”.
 
 > **A constant morphism** (Section 0BXX): a morphism `f : X ⟶ Y` whose image `f(X)` consists of
 > a single point of `Y`.
@@ -23,7 +23,7 @@ Section 53.2 of the Stacks Project, [Tag 0BXX](https://stacks.math.columbia.edu/
 def Scheme.Hom.IsConstant {X Y : Scheme.{u}} (f : X ⟶ Y) : Prop
 ```
 
-**`AlgebraicGeometry.isClosed_singleton_of_range_eq_singleton`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/CurvesFunctionFields/ConstantMorphism.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/CurvesFunctionFields/ConstantMorphism.lean#L57). The attribute's comment: “if a morphism of varieties is constant, with image the point y, then y is a closed point”.
+**`AlgebraicGeometry.isClosed_singleton_of_range_eq_singleton`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/CurvesFunctionFields/ConstantMorphism.lean, line 57](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/CurvesFunctionFields/ConstantMorphism.lean#L57). The attribute's comment: “if a morphism of varieties is constant, with image the point y, then y is a closed point”.
 
 > **The image of a constant morphism of varieties is a closed point** (Section 0BXX). Let
 > `f : X ⟶ Y` be a morphism of varieties over a field `k` whose image is the single point `y`.
@@ -36,7 +36,7 @@ theorem isClosed_singleton_of_range_eq_singleton (k : Type u) [Field k] {X Y : S
     IsClosed ({y} : Set Y)
 ```
 
-**`AlgebraicGeometry.NonsingularProjectiveModel.existsUnique_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/NonsingularProjectiveModelUnique.lean, line 144](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/NonsingularProjectiveModelUnique.lean#L144). The attribute's comment: “a nonsingular projective model is determined up to unique isomorphism, by Theorem 0BY1”.
+**`AlgebraicGeometry.NonsingularProjectiveModel.existsUnique_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/NonsingularProjectiveModelUnique.lean, line 144](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/NonsingularProjectiveModelUnique.lean#L144). The attribute's comment: “a nonsingular projective model is determined up to unique isomorphism, by Theorem 0BY1”.
 
 > **The nonsingular projective model is unique up to unique isomorphism** (Section 0BXX). For two
 > nonsingular projective models `(Y₁, φ₁)` and `(Y₂, φ₂)` of a curve `X` over `k`, there is exactly
@@ -52,7 +52,7 @@ theorem NonsingularProjectiveModel.existsUnique_iso (M₁ M₂ : NonsingularProj
         functionFieldMap e.hom (M₂.functionFieldRingEquiv a) = M₁.functionFieldRingEquiv a
 ```
 
-**`AlgebraicGeometry.exists_forall_not_smooth_nonsingularProjectiveModel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/NonsingularProjectiveModelUnique.lean, line 314](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/NonsingularProjectiveModelUnique.lean#L314). The attribute's comment: “the warning after Definition 0BY2, its first half: the nonsingular projective model of a curve need not be smooth over k”.
+**`AlgebraicGeometry.exists_forall_not_smooth_nonsingularProjectiveModel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/NonsingularProjectiveModelUnique.lean, line 314](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/NonsingularProjectiveModelUnique.lean#L314). The attribute's comment: “the warning after Definition 0BY2, its first half: the nonsingular projective model of a curve need not be smooth over k”.
 
 > **The nonsingular projective model need not be smooth** (the warning after Definition 0BY2,
 > Section 0BXX). There is a curve `X` over a field `k` which has a nonsingular projective model, and
@@ -72,21 +72,21 @@ theorem exists_forall_not_smooth_nonsingularProjectiveModel :
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.exists_open_extension_of_valuationRing_stalk`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Valuative/Extension.lean#L209), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Curves/NonsingularProjectiveModelUnique.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/NonsingularProjectiveModelUnique.lean#L104) (StacksFrontier): “Lemma 0BXY of the section: a morphism from a nonempty open of a curve to a proper variety extends across a closed point whose local ring is a discrete valuation ring”.
-- [`AlgebraicGeometry.toRationalMap_bijective`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/RationalMapExtension.lean#L165), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Curves/NonsingularProjectiveModelUnique.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/NonsingularProjectiveModelUnique.lean#L108) (StacksFrontier): “Lemma 0BXZ of the section: rational maps from a normal curve to a proper variety are morphisms”.
-- [`AlgebraicGeometry.isFlat_of_nonconstant_of_isNormal`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/FlatMorphism.lean#L59), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Curves/NonsingularProjectiveModelUnique.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/NonsingularProjectiveModelUnique.lean#L111) (StacksFrontier): “Lemma 0CCK of the section: a nonconstant morphism of curves with normal target is flat”.
-- [`AlgebraicGeometry.isFinite_of_isProper_dimension_le_one_of_nontrivial_image_components`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/CurvesFunctionFields/Basic.lean#L85), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Curves/NonsingularProjectiveModelUnique.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/NonsingularProjectiveModelUnique.lean#L114) (StacksFrontier): “Lemma 0CCL of the section: a morphism from a proper scheme of dimension at most one which is nonconstant on every one-dimensional component is finite”.
-- [`AlgebraicGeometry.isIso_globalSections_of_smooth_model_reducedBaseChange`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/ModelGlobalSections.lean#L212), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Curves/NonsingularProjectiveModelUnique.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/NonsingularProjectiveModelUnique.lean#L118) (StacksFrontier): “Lemma 0BY4 of the section, part (3): a smooth nonsingular projective model of a reduced base change has the base field as global regular functions”.
-- [`AlgebraicGeometry.curveEquivalenceFinitelyGeneratedFieldExtensionTrdegOneOpposite`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/FunctionFieldCategories.lean#L270), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Curves/NonsingularProjectiveModelUnique.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/NonsingularProjectiveModelUnique.lean#L122) (StacksFrontier): “the main theorem of the section, Theorem 0BY1: the category of curves and dominant rational maps is anti-equivalent to that of finitely generated field extensions of transcendence degree one”.
-- [`AlgebraicGeometry.normalProjectiveCurveEquivalenceCurve`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/FunctionFieldCategories.lean#L722), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Curves/NonsingularProjectiveModelUnique.lean, line 127](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/NonsingularProjectiveModelUnique.lean#L127) (StacksFrontier): “the main theorem of the section, Theorem 0BY1: normal projective curves and nonconstant morphisms are equivalent to curves and dominant rational maps”.
-- [`AlgebraicGeometry.NonsingularProjectiveModel`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/NonsingularProjectiveModel.lean#L66), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Curves/NonsingularProjectiveModelUnique.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/NonsingularProjectiveModelUnique.lean#L131) (StacksFrontier): “Definition 0BY2 of the section: a nonsingular projective model of a curve”.
-- [`AlgebraicGeometry.NonsingularProjectiveModel.isSmoothProjectiveCurve`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/SmoothModelOverPerfectField.lean#L91), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Curves/NonsingularProjectiveModelUnique.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/NonsingularProjectiveModelUnique.lean#L134) (StacksFrontier): “the warning after Definition 0BY2, its second half: a nonsingular projective model fails to be smooth only over an imperfect field, hence only in positive characteristic (Lemma 0BY3)”.
+- [`AlgebraicGeometry.exists_open_extension_of_valuationRing_stalk`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Valuative/Extension.lean#L209), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Curves/NonsingularProjectiveModelUnique.lean, line 104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/NonsingularProjectiveModelUnique.lean#L104) (StacksFrontier): “Lemma 0BXY of the section: a morphism from a nonempty open of a curve to a proper variety extends across a closed point whose local ring is a discrete valuation ring”.
+- [`AlgebraicGeometry.toRationalMap_bijective`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/RationalMapExtension.lean#L165), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Curves/NonsingularProjectiveModelUnique.lean, line 108](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/NonsingularProjectiveModelUnique.lean#L108) (StacksFrontier): “Lemma 0BXZ of the section: rational maps from a normal curve to a proper variety are morphisms”.
+- [`AlgebraicGeometry.isFlat_of_nonconstant_of_isNormal`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/FlatMorphism.lean#L59), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Curves/NonsingularProjectiveModelUnique.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/NonsingularProjectiveModelUnique.lean#L111) (StacksFrontier): “Lemma 0CCK of the section: a nonconstant morphism of curves with normal target is flat”.
+- [`AlgebraicGeometry.isFinite_of_isProper_dimension_le_one_of_nontrivial_image_components`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/CurvesFunctionFields/Basic.lean#L85), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Curves/NonsingularProjectiveModelUnique.lean, line 114](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/NonsingularProjectiveModelUnique.lean#L114) (StacksFrontier): “Lemma 0CCL of the section: a morphism from a proper scheme of dimension at most one which is nonconstant on every one-dimensional component is finite”.
+- [`AlgebraicGeometry.isIso_globalSections_of_smooth_model_reducedBaseChange`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/ModelGlobalSections.lean#L212), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Curves/NonsingularProjectiveModelUnique.lean, line 118](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/NonsingularProjectiveModelUnique.lean#L118) (StacksFrontier): “Lemma 0BY4 of the section, part (3): a smooth nonsingular projective model of a reduced base change has the base field as global regular functions”.
+- [`AlgebraicGeometry.curveEquivalenceFinitelyGeneratedFieldExtensionTrdegOneOpposite`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/FunctionFieldCategories.lean#L270), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Curves/NonsingularProjectiveModelUnique.lean, line 122](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/NonsingularProjectiveModelUnique.lean#L122) (StacksFrontier): “the main theorem of the section, Theorem 0BY1: the category of curves and dominant rational maps is anti-equivalent to that of finitely generated field extensions of transcendence degree one”.
+- [`AlgebraicGeometry.normalProjectiveCurveEquivalenceCurve`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/FunctionFieldCategories.lean#L722), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Curves/NonsingularProjectiveModelUnique.lean, line 127](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/NonsingularProjectiveModelUnique.lean#L127) (StacksFrontier): “the main theorem of the section, Theorem 0BY1: normal projective curves and nonconstant morphisms are equivalent to curves and dominant rational maps”.
+- [`AlgebraicGeometry.NonsingularProjectiveModel`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/NonsingularProjectiveModel.lean#L66), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Curves/NonsingularProjectiveModelUnique.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/NonsingularProjectiveModelUnique.lean#L131) (StacksFrontier): “Definition 0BY2 of the section: a nonsingular projective model of a curve”.
+- [`AlgebraicGeometry.NonsingularProjectiveModel.isSmoothProjectiveCurve`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/SmoothModelOverPerfectField.lean#L91), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Curves/NonsingularProjectiveModelUnique.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/NonsingularProjectiveModelUnique.lean#L134) (StacksFrontier): “the warning after Definition 0BY2, its second half: a nonsingular projective model fails to be smooth only over an imperfect field, hence only in positive characteristic (Lemma 0BY3)”.
 
 ## Tag 0BXY, a lemma
 
 [Tag 0BXY](https://stacks.math.columbia.edu/tag/0BXY) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_open_extension_of_valuationRing_stalk`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Valuative/Extension.lean, line 209](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Valuative/Extension.lean#L209). The attribute's comment: “the case of a curve over a field with proper target, where the stalk is a”.
+**`AlgebraicGeometry.exists_open_extension_of_valuationRing_stalk`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Valuative/Extension.lean, line 209](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Valuative/Extension.lean#L209). The attribute's comment: “the case of a curve over a field with proper target, where the stalk is a”.
 
 > **Stacks Project, Tag 0BX7.** A morphism from an open subscheme extends across a point
 > whose local ring is a valuation ring, provided the target is proper over the base and the
@@ -111,7 +111,7 @@ lemma exists_open_extension_of_valuationRing_stalk
 
 [Tag 0BXZ](https://stacks.math.columbia.edu/tag/0BXZ) in the Stacks Project.
 
-**`AlgebraicGeometry.toRationalMap_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/RationalMapExtension.lean, line 165](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/RationalMapExtension.lean#L165). References: EGA II (7.4.9).
+**`AlgebraicGeometry.toRationalMap_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/RationalMapExtension.lean, line 165](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/RationalMapExtension.lean#L165). References: EGA II (7.4.9).
 
 > **Stacks Project, Tag 0BXZ.** Morphisms from a normal curve to a proper variety are in
 > canonical bijection with the rational maps over the base field.
@@ -130,7 +130,7 @@ theorem toRationalMap_bijective
 
 [Tag 0CCK](https://stacks.math.columbia.edu/tag/0CCK) in the Stacks Project.
 
-**`AlgebraicGeometry.isFlat_of_nonconstant_of_isNormal`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/FlatMorphism.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/FlatMorphism.lean#L59).
+**`AlgebraicGeometry.isFlat_of_nonconstant_of_isNormal`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/FlatMorphism.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/FlatMorphism.lean#L59).
 
 > **Stacks Project, Tag 0CCK.** A nonconstant morphism of curves over a field is flat if the
 > target curve is normal.
@@ -149,7 +149,7 @@ lemma isFlat_of_nonconstant_of_isNormal
 
 [Tag 0CCL](https://stacks.math.columbia.edu/tag/0CCL) in the Stacks Project.
 
-**`AlgebraicGeometry.isFinite_of_isProper_dimension_le_one_of_nontrivial_image_components`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/CurvesFunctionFields/Basic.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/CurvesFunctionFields/Basic.lean#L85).
+**`AlgebraicGeometry.isFinite_of_isProper_dimension_le_one_of_nontrivial_image_components`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/CurvesFunctionFields/Basic.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/CurvesFunctionFields/Basic.lean#L85).
 
 > A morphism from a proper scheme of dimension at most one to a separated scheme over a
 > field is finite if the image of every one-dimensional irreducible component contains at least
@@ -171,32 +171,7 @@ lemma isFinite_of_isProper_dimension_le_one_of_nontrivial_image_components
 
 [Tag 0BY0](https://stacks.math.columbia.edu/tag/0BY0) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isOpenImmersion_isCurve_isProjectiveMorphism_factorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/ProjectiveCurveFactorization.lean, line 208](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Curve/ProjectiveCurveFactorization.lean#L208). The attribute's comment: “the full statement, given Tag 09NZ as the hypothesis `h09NZ`, which Tag 0A25 needs and this repository does not have; it is inherited unchanged from the library's Tag 0BXW, `Stacks.CurveProjectiveCompletion.exists_projective_completion_discreteValuation`. Both clauses are proved of the scheme constructed: `j` is an open immersion and `q` makes `Xbar` a curve (Tag 0A23) which is H-projective over `k` (Tag 01W8). The factorization `j ≫ G = g` is part of the conclusion, together with `j ≫ q = pX` and `G ≫ pY = q`, so both halves are morphisms of `k`-schemes”.
-
-> **[Stacks, Tag 0BY0].** Let `k` be a field, let `X` be a curve over `k` and `Y` a proper
-> variety over `k`, and let `g : X ⟶ Y` be a morphism over `k`. Then there is a factorization
-> `X ⟶ X̄ ⟶ Y` of `g` in which `X ⟶ X̄` is an open immersion and `X̄` is a projective curve over
-> `k`, that is, a curve whose structure morphism is H-projective.
->
-> The hypothesis `h09NZ` is [Stacks, Tag 09NZ], carried through the library's [Stacks, Tag 0BXW]
-> and from there through [Stacks, Tag 0BXV] and [Stacks, Tag 0A25]; it is the only thing assumed,
-> and both clauses of the conclusion are proved of the scheme constructed. See the module
-> documentation.
->
-> Only properness of `pY` is used, not the variety structure of `Y`.
-
-```lean
-theorem exists_isOpenImmersion_isCurve_isProjectiveMorphism_factorization
-    (h09NZ : Stacks.HQuasiProjectiveDimensionOne.AmpleOfNoetherianSeparatedDimLEOne.{u})
-    (k : Type u) [Field k] {X Y : Scheme.{u}}
-    (pX : X ⟶ Spec (CommRingCat.of k)) (pY : Y ⟶ Spec (CommRingCat.of k))
-    [IsCurve k pX] [IsProperVariety k pY] (g : X ⟶ Y) (hg : g ≫ pY = pX) :
-    ∃ (Xbar : Scheme.{u}) (q : Xbar ⟶ Spec (CommRingCat.of k)) (j : X ⟶ Xbar) (G : Xbar ⟶ Y),
-      IsOpenImmersion j ∧ IsCurve k q ∧ IsProjectiveMorphism q ∧
-        j ≫ q = pX ∧ G ≫ pY = q ∧ j ≫ G = g
-```
-
-**`AlgebraicGeometry.exists_isOpenImmersion_isCurve_isProjectiveMorphism_factorization_of_isCurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/ProjectiveCurveFactorizationUnconditional.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Curve/ProjectiveCurveFactorizationUnconditional.lean#L74). The attribute's comment: “the full statement with nothing assumed. Both clauses are proved of the scheme constructed: `j` is an open immersion and `q` makes `Xbar` a curve (Tag 0A23) which is H-projective over `k` (Tag 01W8). The factorization `j ≫ G = g` is part of the conclusion, together with `j ≫ q = pX` and `G ≫ pY = q`, so both halves are morphisms of `k`-schemes. Tag 09NZ is not assumed: a curve is integral, hence reduced, and the library's Tag 0BXW, `Stacks.CurveProjectiveCompletion.exists_projective_completion_discreteValuation_of_isReduced`, carries nothing for a reduced source”.
+**`AlgebraicGeometry.exists_isOpenImmersion_isCurve_isProjectiveMorphism_factorization_of_isCurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/ProjectiveCurveFactorizationUnconditional.lean, line 74](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Curve/ProjectiveCurveFactorizationUnconditional.lean#L74). The attribute's comment: “the full statement with nothing assumed. Both clauses are proved of the scheme constructed: `j` is an open immersion and `q` makes `Xbar` a curve (Tag 0A23) which is H-projective over `k` (Tag 01W8). The factorization `j ≫ G = g` is part of the conclusion, together with `j ≫ q = pX` and `G ≫ pY = q`, so both halves are morphisms of `k`-schemes. Tag 09NZ is not assumed: a curve is integral, hence reduced, and the library's Tag 0BXW, `Stacks.CurveProjectiveCompletion.exists_projective_completion_discreteValuation_of_isReduced`, carries nothing for a reduced source”.
 
 > **[Stacks, Tag 0BY0].** Let `k` be a field, let `X` be a curve over `k` and `Y` a proper
 > variety over `k`, and let `g : X ⟶ Y` be a morphism over `k`. Then there is a factorization
@@ -217,7 +192,7 @@ theorem exists_isOpenImmersion_isCurve_isProjectiveMorphism_factorization_of_isC
 
 [Tag 0BY1](https://stacks.math.columbia.edu/tag/0BY1) in the Stacks Project.
 
-**`AlgebraicGeometry.curveEquivalenceFinitelyGeneratedFieldExtensionTrdegOneOpposite`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/FunctionFieldCategories.lean, line 270](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/FunctionFieldCategories.lean#L270). The attribute's comment: “the equivalence of categories (1) and (2), as the anti-equivalence of Tag 0BXN restricted to transcendence degree one”.
+**`AlgebraicGeometry.curveEquivalenceFinitelyGeneratedFieldExtensionTrdegOneOpposite`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/FunctionFieldCategories.lean, line 270](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/FunctionFieldCategories.lean#L270). The attribute's comment: “the equivalence of categories (1) and (2), as the anti-equivalence of Tag 0BXN restricted to transcendence degree one”.
 
 > **Stacks Project, Tag 0BY1, categories (1) and (2).** Over a field `k`, the category of
 > curves over `k` and dominant rational maps is anti-equivalent to the category of finitely
@@ -234,7 +209,7 @@ noncomputable def curveEquivalenceFinitelyGeneratedFieldExtensionTrdegOneOpposit
     Curve k ≌ (FinitelyGeneratedFieldExtensionTrdegOne k)ᵒᵖ
 ```
 
-**`AlgebraicGeometry.normalProjectiveCurveEquivalenceRegularProjectiveCurve`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/FunctionFieldCategories.lean, line 367](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/FunctionFieldCategories.lean#L367). The attribute's comment: “that categories (3) and (5) are the same category: the inclusion of the normal projective curves into the regular projective curves, which is the identity on schemes and on morphisms, is an equivalence”.
+**`AlgebraicGeometry.normalProjectiveCurveEquivalenceRegularProjectiveCurve`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/FunctionFieldCategories.lean, line 367](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/FunctionFieldCategories.lean#L367). The attribute's comment: “that categories (3) and (5) are the same category: the inclusion of the normal projective curves into the regular projective curves, which is the identity on schemes and on morphisms, is an equivalence”.
 
 > **Stacks Project, Tag 0BY1, categories (3) and (5).** The category of normal projective
 > curves over `k` and nonconstant morphisms and the category of regular projective curves over `k`
@@ -248,7 +223,7 @@ noncomputable def normalProjectiveCurveEquivalenceRegularProjectiveCurve
     (k : Type u) [Field k] : NormalProjectiveCurve k ≌ RegularProjectiveCurve k
 ```
 
-**`AlgebraicGeometry.nonsingularProjectiveCurveEquivalenceRegularProjectiveCurve`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/FunctionFieldCategories.lean, line 388](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/FunctionFieldCategories.lean#L388). The attribute's comment: “that categories (4) and (5) are the same category; since `IsRegular` (Tag 02IS) formalizes both `nonsingular` and `regular`, the two categories are the same type and this is the identity equivalence”.
+**`AlgebraicGeometry.nonsingularProjectiveCurveEquivalenceRegularProjectiveCurve`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/FunctionFieldCategories.lean, line 388](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/FunctionFieldCategories.lean#L388). The attribute's comment: “that categories (4) and (5) are the same category; since `IsRegular` (Tag 02IS) formalizes both `nonsingular` and `regular`, the two categories are the same type and this is the identity equivalence”.
 
 > **Stacks Project, Tag 0BY1, categories (4) and (5).** The category of nonsingular projective
 > curves over `k` and nonconstant morphisms is the category of regular projective curves over `k`
@@ -266,7 +241,7 @@ noncomputable def nonsingularProjectiveCurveEquivalenceRegularProjectiveCurve
     NonsingularProjectiveCurve k ≌ RegularProjectiveCurve k
 ```
 
-**`AlgebraicGeometry.normalProjectiveCurveEquivalenceNormalProperCurve`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/FunctionFieldCategories.lean, line 439](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/FunctionFieldCategories.lean#L439). The attribute's comment: “that categories (3) and (6) are the same category: the inclusion of the normal projective curves into the normal proper curves, which is the identity on schemes and on morphisms, is an equivalence”.
+**`AlgebraicGeometry.normalProjectiveCurveEquivalenceNormalProperCurve`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/FunctionFieldCategories.lean, line 439](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/FunctionFieldCategories.lean#L439). The attribute's comment: “that categories (3) and (6) are the same category: the inclusion of the normal projective curves into the normal proper curves, which is the identity on schemes and on morphisms, is an equivalence”.
 
 > **Stacks Project, Tag 0BY1, categories (3) and (6).** The category of normal projective
 > curves over `k` and nonconstant morphisms and the category of normal proper curves over `k` and
@@ -280,7 +255,7 @@ noncomputable def normalProjectiveCurveEquivalenceNormalProperCurve
     (k : Type u) [Field k] : NormalProjectiveCurve k ≌ NormalProperCurve k
 ```
 
-**`AlgebraicGeometry.normalProjectiveCurveToCurveFullyFaithful`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/FunctionFieldCategories.lean, line 545](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/FunctionFieldCategories.lean#L545). The attribute's comment: “only that the functor from category (3) to category (2) is fully faithful, which is the source's step `there is a fully faithful functor (5) to (1)`. Essential surjectivity of that functor — the source's final paragraph, that every finitely generated field extension of transcendence degree one is the function field of a normal projective curve — is NOT proved here, so this does not cover the equivalence of categories (2) and (3)”.
+**`AlgebraicGeometry.normalProjectiveCurveToCurveFullyFaithful`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/FunctionFieldCategories.lean, line 545](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/FunctionFieldCategories.lean#L545). The attribute's comment: “only that the functor from category (3) to category (2) is fully faithful, which is the source's step `there is a fully faithful functor (5) to (1)`. Essential surjectivity of that functor — the source's final paragraph, that every finitely generated field extension of transcendence degree one is the function field of a normal projective curve — is NOT proved here, so this does not cover the equivalence of categories (2) and (3)”.
 
 > **Stacks Project, Tag 0BY1, the fully faithful functor from category (3) to category (2).**
 > Over a field `k`, passing from a normal projective curve and its nonconstant morphisms to the
@@ -304,7 +279,7 @@ noncomputable def normalProjectiveCurveToCurveFullyFaithful (k : Type u) [Field 
     (normalProjectiveCurveToCurve k).FullyFaithful
 ```
 
-**`AlgebraicGeometry.normalProjectiveCurveEquivalenceCurve`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/FunctionFieldCategories.lean, line 722](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/FunctionFieldCategories.lean#L722). The attribute's comment: “the equivalence of categories (2) and (3): the functor of `AlgebraicGeometry.normalProjectiveCurveToCurve`, fully faithful by Tag 0BXZ and essentially surjective by `AlgebraicGeometry.normalProjectiveCurveToCurve_essSurj`, which is the source's final paragraph — every curve over `k` is birational to a normal projective curve, obtained by compactifying (Tag 0BXV, outright for an integral scheme of dimension one) and then normalizing (Tag 0BXR, proper by Tag 0GK4)”.
+**`AlgebraicGeometry.normalProjectiveCurveEquivalenceCurve`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/FunctionFieldCategories.lean, line 722](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/FunctionFieldCategories.lean#L722). The attribute's comment: “the equivalence of categories (2) and (3): the functor of `AlgebraicGeometry.normalProjectiveCurveToCurve`, fully faithful by Tag 0BXZ and essentially surjective by `AlgebraicGeometry.normalProjectiveCurveToCurve_essSurj`, which is the source's final paragraph — every curve over `k` is birational to a normal projective curve, obtained by compactifying (Tag 0BXV, outright for an integral scheme of dimension one) and then normalizing (Tag 0BXR, proper by Tag 0GK4)”.
 
 > **Stacks Project, Tag 0BY1, categories (2) and (3).** Over a field `k`, the category of
 > normal projective curves over `k` and nonconstant morphisms is equivalent to the category of
@@ -325,7 +300,7 @@ noncomputable def normalProjectiveCurveEquivalenceCurve (k : Type u) [Field k] :
 
 [Tag 0BY2](https://stacks.math.columbia.edu/tag/0BY2) in the Stacks Project.
 
-**`AlgebraicGeometry.NonsingularProjectiveModel`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/NonsingularProjectiveModel.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/NonsingularProjectiveModel.lean#L66).
+**`AlgebraicGeometry.NonsingularProjectiveModel`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/NonsingularProjectiveModel.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/NonsingularProjectiveModel.lean#L66).
 
 > A nonsingular projective model of a curve `X` over a field `k` is a regular projective curve
 > over `k` together with a `k`-algebra isomorphism from the function field of `X` to its own function
@@ -340,7 +315,7 @@ structure NonsingularProjectiveModel (k : Type u) [Field k]
 
 [Tag 0BY3](https://stacks.math.columbia.edu/tag/0BY3) in the Stacks Project.
 
-**`AlgebraicGeometry.NonsingularProjectiveModel.isSmoothProjectiveCurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/SmoothModelOverPerfectField.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/SmoothModelOverPerfectField.lean#L91).
+**`AlgebraicGeometry.NonsingularProjectiveModel.isSmoothProjectiveCurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/SmoothModelOverPerfectField.lean, line 91](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/SmoothModelOverPerfectField.lean#L91).
 
 > **Stacks Project, Tag 0BY3.** Let `k` be a field, let `X` be a curve over `k` and let `Y` be
 > a nonsingular projective model of `X`. If `k` is perfect then `Y` is a smooth projective
@@ -357,7 +332,7 @@ public theorem isSmoothProjectiveCurve [PerfectField k]
 
 [Tag 0BY4](https://stacks.math.columbia.edu/tag/0BY4) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_iso_pullback_of_smooth_models`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ModelBaseChange.lean, line 507](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/ModelBaseChange.lean#L507). The attribute's comment: “part (4): for a commuting square of fields k to K to Omega and k to K' to Omega with the models Y\_K and Y\_K' smooth, the nonsingular projective model Y\_Omega of (X\_Omega)\_red is isomorphic over Omega to the base change of Y\_K and to the base change of Y\_K'. The three binders `[IsCurve _ (reducedBaseChangeStructureMap k _ sX)]` add nothing: each follows from `[IsCurve k sX]` and `[GeometricallyIrreducible sX]` by the instance `AlgebraicGeometry.isCurve_reducedBaseChangeStructureMap'`, which is not in this file's import closure”.
+**`AlgebraicGeometry.exists_iso_pullback_of_smooth_models`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ModelBaseChange.lean, line 507](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/ModelBaseChange.lean#L507). The attribute's comment: “part (4): for a commuting square of fields k to K to Omega and k to K' to Omega with the models Y\_K and Y\_K' smooth, the nonsingular projective model Y\_Omega of (X\_Omega)\_red is isomorphic over Omega to the base change of Y\_K and to the base change of Y\_K'. The three binders `[IsCurve _ (reducedBaseChangeStructureMap k _ sX)]` add nothing: each follows from `[IsCurve k sX]` and `[GeometricallyIrreducible sX]` by the instance `AlgebraicGeometry.isCurve_reducedBaseChangeStructureMap'`, which is not in this file's import closure”.
 
 > **Stacks Project, Tag 0BY4, part (4).** Let `k` be a field and let `X` be a geometrically
 > irreducible curve over `k`. For a field extension `K/k` write `Y_K` for a nonsingular projective
@@ -412,7 +387,7 @@ public theorem exists_iso_pullback_of_smooth_models
         (Spec.map (CommRingCat.ofHom (algebraMap K' Ω))) = M_Ω.structureMap)
 ```
 
-**`AlgebraicGeometry.exists_isPurelyInseparable_smooth_nonsingularProjectiveModel_of_isCurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ModelFunctionFieldInvariance.lean, line 338](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/ModelFunctionFieldInvariance.lean#L338). The attribute's comment: “part (2), with nothing carried and `X` not assumed proper. Tag 09NZ is not needed: the compactification of a curve is Tag 0BXV for an integral scheme of dimension one, where Tag 0A25 holds outright, and the model of a proper curve is its normalization, again integral of dimension one. The source's reduction of the general case to the projective case is carried out with the compactification behind `AlgebraicGeometry.normalProjectiveCurveToCurve_essSurj` (Tag 0BY1) together with `AlgebraicGeometry.NonsingularProjectiveModel.ofFunctionFieldAlgEquiv`, that a nonsingular projective model depends only on the function field”.
+**`AlgebraicGeometry.exists_isPurelyInseparable_smooth_nonsingularProjectiveModel_of_isCurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ModelFunctionFieldInvariance.lean, line 338](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/ModelFunctionFieldInvariance.lean#L338). The attribute's comment: “part (2), with nothing carried and `X` not assumed proper. Tag 09NZ is not needed: the compactification of a curve is Tag 0BXV for an integral scheme of dimension one, where Tag 0A25 holds outright, and the model of a proper curve is its normalization, again integral of dimension one. The source's reduction of the general case to the projective case is carried out with the compactification behind `AlgebraicGeometry.normalProjectiveCurveToCurve_essSurj` (Tag 0BY1) together with `AlgebraicGeometry.NonsingularProjectiveModel.ofFunctionFieldAlgEquiv`, that a nonsingular projective model depends only on the function field”.
 
 > **Stacks Project, Tag 0BY4, part (2).** Let `k` be a field and let `X` be a geometrically
 > irreducible curve over `k`. There is a finite purely inseparable extension `K/k` for which
@@ -440,7 +415,7 @@ public theorem exists_isPurelyInseparable_smooth_nonsingularProjectiveModel_of_i
         Smooth M.structureMap
 ```
 
-**`AlgebraicGeometry.isIso_globalSections_of_geometricallyReduced_model_reducedBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ModelGlobalSections.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/ModelGlobalSections.lean#L183). The attribute's comment: “part (3), with the source's own footnote hypothesis: the model is assumed only geometrically reduced, not smooth. The binder `[IsCurve K (reducedBaseChangeStructureMap k K sX)]` adds nothing: it follows from `[IsCurve k sX]` and `[GeometricallyIrreducible sX]` by the instance `AlgebraicGeometry.isCurve_reducedBaseChangeStructureMap'`, which is proved in a module importing this one and so is unavailable here”.
+**`AlgebraicGeometry.isIso_globalSections_of_geometricallyReduced_model_reducedBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ModelGlobalSections.lean, line 183](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/ModelGlobalSections.lean#L183). The attribute's comment: “part (3), with the source's own footnote hypothesis: the model is assumed only geometrically reduced, not smooth. The binder `[IsCurve K (reducedBaseChangeStructureMap k K sX)]` adds nothing: it follows from `[IsCurve k sX]` and `[GeometricallyIrreducible sX]` by the instance `AlgebraicGeometry.isCurve_reducedBaseChangeStructureMap'`, which is proved in a module importing this one and so is unavailable here”.
 
 > **Stacks Project, Tag 0BY4, part (3).** Let `k` be a field, let `X` be a geometrically
 > irreducible curve over `k`, let `K/k` be a field extension and let `Y_K` be a nonsingular
@@ -464,7 +439,7 @@ public theorem isIso_globalSections_of_geometricallyReduced_model_reducedBaseCha
     IsIso ((Scheme.ΓSpecIso (.of K)).inv ≫ M.structureMap.appTop)
 ```
 
-**`AlgebraicGeometry.isIso_globalSections_of_smooth_model_reducedBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ModelGlobalSections.lean, line 212](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/ModelGlobalSections.lean#L212). The attribute's comment: “part (3). The binder `[IsCurve K (reducedBaseChangeStructureMap k K sX)]` adds nothing: it follows from `[IsCurve k sX]` and `[GeometricallyIrreducible sX]` by the instance `AlgebraicGeometry.isCurve_reducedBaseChangeStructureMap'`, which is proved in a module importing this one and so is unavailable here”.
+**`AlgebraicGeometry.isIso_globalSections_of_smooth_model_reducedBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ModelGlobalSections.lean, line 212](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/ModelGlobalSections.lean#L212). The attribute's comment: “part (3). The binder `[IsCurve K (reducedBaseChangeStructureMap k K sX)]` adds nothing: it follows from `[IsCurve k sX]` and `[GeometricallyIrreducible sX]` by the instance `AlgebraicGeometry.isCurve_reducedBaseChangeStructureMap'`, which is proved in a module importing this one and so is unavailable here”.
 
 > **Stacks Project, Tag 0BY4, part (3).** Let `k` be a field, let `X` be a geometrically
 > irreducible curve over `k`, let `K/k` be a field extension and let `Y_K` be a nonsingular
@@ -486,7 +461,7 @@ public theorem isIso_globalSections_of_smooth_model_reducedBaseChange
     IsIso ((Scheme.ΓSpecIso (.of K)).inv ≫ M.structureMap.appTop)
 ```
 
-**`AlgebraicGeometry.exists_nonsingularProjectiveModel_iso_normalization_reducedBaseChange'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ModelNormalization.lean, line 486](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/ModelNormalization.lean#L486). The attribute's comment: “part (1), with nothing carried: the source's step `a proper curve is projective` is applied to a normalization, which is integral of dimension one, so Tag 0A25 holds outright as `Stacks.HQuasiProjectiveDimensionOne.isHQuasiProjective_of_isIntegral` and Tag 09NZ is not needed”.
+**`AlgebraicGeometry.exists_nonsingularProjectiveModel_iso_normalization_reducedBaseChange'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/ModelNormalization.lean, line 471](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/ModelNormalization.lean#L471). The attribute's comment: “part (1), with nothing carried: the source's step `a proper curve is projective` is applied to a normalization, which is integral of dimension one, so Tag 0A25 holds outright as `Stacks.HQuasiProjectiveDimensionOne.isHQuasiProjective_of_isIntegral` and Tag 09NZ is not needed”.
 
 > **Stacks Project, Tag 0BY4, part (1).** Let `k` be a field, let `X` be a proper
 > geometrically irreducible curve over `k` and let `K/k` be a field extension. Then `(X_K)_red` has
@@ -494,8 +469,8 @@ public theorem isIso_globalSections_of_smooth_model_reducedBaseChange
 >
 > Nothing is carried: the model is `AlgebraicGeometry.normalizationModel'`, whose projectivity is
 > the step "a proper curve is projective" applied to a normalization. This is
-> `AlgebraicGeometry.exists_nonsingularProjectiveModel_iso_normalization_reducedBaseChange` with
-> the hypothesis `h09NZ` dropped.
+> `AlgebraicGeometry.exists_nonsingularProjectiveModel_iso_normalization_reducedBaseChange`, proved
+> another way.
 
 ```lean
 public theorem exists_nonsingularProjectiveModel_iso_normalization_reducedBaseChange'
@@ -511,15 +486,14 @@ public theorem exists_nonsingularProjectiveModel_iso_normalization_reducedBaseCh
             e.hom ≫ M.structureMap
 ```
 
-**`AlgebraicGeometry.exists_isPurelyInseparable_smooth_nonsingularProjectiveModel'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/SmoothModelPurelyInseparable.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/SmoothModelPurelyInseparable.lean#L187). The attribute's comment: “part (2) for a proper `X`, with nothing carried: Tag 09NZ is not assumed, because the model is the normalization of `(X_K)_red`, integral of dimension one, where Tag 0A25 holds outright from Tag 09ND. One hypothesis is named: `X` is assumed proper, because the source's reduction of the general case to the projective case replaces `X` by a nonsingular projective model and so uses Theorem 0BY1; that reduction is carried out in `AlgebraicGeometry.exists_isPurelyInseparable_smooth_nonsingularProjectiveModel_of_isCurve`”.
+**`AlgebraicGeometry.exists_isPurelyInseparable_smooth_nonsingularProjectiveModel'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/SmoothModelPurelyInseparable.lean, line 178](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/SmoothModelPurelyInseparable.lean#L178). The attribute's comment: “part (2) for a proper `X`, with nothing carried: Tag 09NZ is not assumed, because the model is the normalization of `(X_K)_red`, integral of dimension one, where Tag 0A25 holds outright from Tag 09ND. One hypothesis is named: `X` is assumed proper, because the source's reduction of the general case to the projective case replaces `X` by a nonsingular projective model and so uses Theorem 0BY1; that reduction is carried out in `AlgebraicGeometry.exists_isPurelyInseparable_smooth_nonsingularProjectiveModel_of_isCurve`”.
 
 > **Stacks Project, Tag 0BY4, part (2).** Let `k` be a field and let `X` be a proper
 > geometrically irreducible curve over `k`. There is a finite purely inseparable extension `K/k`
 > for which `(X_K)_red` has a smooth nonsingular projective model.
 >
 > Nothing is carried; `X` is assumed proper. This is
-> `AlgebraicGeometry.exists_isPurelyInseparable_smooth_nonsingularProjectiveModel` with the
-> hypothesis `h09NZ` dropped, the model being the unconditional
+> `AlgebraicGeometry.exists_isPurelyInseparable_smooth_nonsingularProjectiveModel` with the model
 > `AlgebraicGeometry.normalizationModel'`.
 
 ```lean
@@ -540,4 +514,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 53.2, Tag 0BXX](https://stacks.math.columbia.edu/tag/0BXX)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

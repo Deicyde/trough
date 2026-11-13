@@ -1,6 +1,6 @@
 # 27 Constructions of Schemes
 
-Chapter 27 of the Stacks Project, *Constructions of Schemes*, [Tag 01LE](https://stacks.math.columbia.edu/tag/01LE): the 21 sections of its 22 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 118 tags are carried by 281 declarations of the repository (all in StacksFrontier) and 18 registered declarations.
+Chapter 27 of the Stacks Project, *Constructions of Schemes*, [Tag 01LE](https://stacks.math.columbia.edu/tag/01LE): the 21 sections of its 22 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 119 tags are carried by 285 declarations of the repository (all in StacksFrontier) and 15 registered declarations.
 
 ## [27.2 Relative glueing to 27.14 Invertible sheaves and…](part-01/README.md)
 

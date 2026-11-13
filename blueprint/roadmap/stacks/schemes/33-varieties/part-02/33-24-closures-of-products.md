@@ -8,13 +8,13 @@ proof: formalized
 
 # 33.24 Closures of products
 
-Section 33.24 of the Stacks Project, [Tag 047A](https://stacks.math.columbia.edu/tag/047A). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 33.24 of the Stacks Project, [Tag 047A](https://stacks.math.columbia.edu/tag/047A). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 047B, a lemma
 
 [Tag 047B](https://stacks.math.columbia.edu/tag/047B) in the Stacks Project.
 
-**`AlgebraicGeometry.closure_product`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/SmoothOverField/ClosureProduct.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/SmoothOverField/ClosureProduct.lean#L111). References: EGA IV (2.4.11), “more general”.
+**`AlgebraicGeometry.closure_product`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/SmoothOverField/ClosureProduct.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/SmoothOverField/ClosureProduct.lean#L111). References: EGA IV (2.4.11), “more general”.
 
 > **Stacks Project, Tag 047B.** The set-theoretic fibre product of the closures of two
 > subsets of schemes over a field is the closure of their set-theoretic fibre product.
@@ -30,7 +30,7 @@ theorem closure_product {k : Type u} [Field k] {X Y : Scheme.{u}}
 
 [Tag 04Q0](https://stacks.math.columbia.edu/tag/04Q0) in the Stacks Project.
 
-**`AlgebraicGeometry.closure_range_pullback_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/SmoothOverField/ClosureProduct.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/SmoothOverField/ClosureProduct.lean#L169).
+**`AlgebraicGeometry.closure_range_pullback_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/SmoothOverField/ClosureProduct.lean, line 169](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/SmoothOverField/ClosureProduct.lean#L169).
 
 > **Stacks Project, Tag 04Q0.** For morphisms `f : A ⟶ X` and `g : B ⟶ Y` of schemes over a
 > field, the closure of the image of the induced morphism `A ×ₖ B ⟶ X ×ₖ Y` is the
@@ -52,7 +52,7 @@ theorem closure_range_pullback_map {k : Type u} [Field k] {A B X Y : Scheme.{u}}
 
 [Tag 04Q1](https://stacks.math.columbia.edu/tag/04Q1) in the Stacks Project.
 
-**`AlgebraicGeometry.existsUnique_imageProductMapIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Defs/SchemeTheoreticImage.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Defs/SchemeTheoreticImage.lean#L100).
+**`AlgebraicGeometry.existsUnique_imageProductMapIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Defs/SchemeTheoreticImage.lean, line 100](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Defs/SchemeTheoreticImage.lean#L100).
 
 > The image of the product of two quasi-compact maps over a field is canonically isomorphic,
 > over the product of their targets, to the product of their scheme-theoretic images.
@@ -75,4 +75,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 33.24, Tag 047A](https://stacks.math.columbia.edu/tag/047A)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

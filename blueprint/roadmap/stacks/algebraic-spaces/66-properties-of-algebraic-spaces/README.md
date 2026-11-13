@@ -1,6 +1,6 @@
 # 66 Properties of Algebraic Spaces
 
-Chapter 66 of the Stacks Project, *Properties of Algebraic Spaces*, [Tag 03BO](https://stacks.math.columbia.edu/tag/03BO): the 32 sections of its 34 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 158 tags are carried by 498 declarations of the repository (all in StacksFrontier) and 17 registered declarations.
+Chapter 66 of the Stacks Project, *Properties of Algebraic Spaces*, [Tag 03BO](https://stacks.math.columbia.edu/tag/03BO): the 32 sections of its 34 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 158 tags are carried by 507 declarations of the repository (all in StacksFrontier) and 39 registered declarations.
 
 ## [66.3 Separation axioms to 66.18 The étale site of an…](part-01/README.md)
 
@@ -21,7 +21,7 @@ Chapter 66 of the Stacks Project, *Properties of Algebraic Spaces*, [Tag 03BO](h
 - [66.17 Spaces and fpqc coverings](part-01/66-17-spaces-and-fpqc-coverings.md)
 - [66.18 The étale site of an algebraic space](part-01/66-18-the-etale-site-of-an-algebraic-space.md)
 
-## [66.19 Points of the small étale… to 66.33 Morphisms towards schemes](part-02/README.md)
+## [66.19 Points of the small étale… to 66.29 Quasi-coherent sheaves on…](part-02/README.md)
 
 - [66.19 Points of the small étale site](part-02/66-19-points-of-the-small-etale-site.md)
 - [66.20 Supports of abelian sheaves](part-02/66-20-supports-of-abelian-sheaves.md)
@@ -34,11 +34,11 @@ Chapter 66 of the Stacks Project, *Properties of Algebraic Spaces*, [Tag 03BO](h
 - [66.27 Étale localization](part-02/66-27-etale-localization.md)
 - [66.28 Recovering morphisms](part-02/66-28-recovering-morphisms.md)
 - [66.29 Quasi-coherent sheaves on algebraic spaces](part-02/66-29-quasi-coherent-sheaves-on-algebraic-spaces.md)
-- [66.30 Properties of modules](part-02/66-30-properties-of-modules.md)
-- [66.31 Locally projective modules](part-02/66-31-locally-projective-modules.md)
-- [66.32 Quasi-coherent sheaves and presentations](part-02/66-32-quasi-coherent-sheaves-and-presentations.md)
-- [66.33 Morphisms towards schemes](part-02/66-33-morphisms-towards-schemes.md)
 
-## [66.34 Quotients by free actions](part-03/README.md)
+## [66.30 Properties of modules to 66.34 Quotients by free actions](part-03/README.md)
 
+- [66.30 Properties of modules](part-03/66-30-properties-of-modules.md)
+- [66.31 Locally projective modules](part-03/66-31-locally-projective-modules.md)
+- [66.32 Quasi-coherent sheaves and presentations](part-03/66-32-quasi-coherent-sheaves-and-presentations.md)
+- [66.33 Morphisms towards schemes](part-03/66-33-morphisms-towards-schemes.md)
 - [66.34 Quotients by free actions](part-03/66-34-quotients-by-free-actions.md)

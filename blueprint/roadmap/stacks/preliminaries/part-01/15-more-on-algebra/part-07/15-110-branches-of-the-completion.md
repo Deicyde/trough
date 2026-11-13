@@ -1,28 +1,32 @@
 ---
 declaration: section
 origin: cited
-lean: numberOfBranches_le_and_numberOfGeometricBranches_le_completion, numberOfBranches_eq_completion_iff_radical_map_minimalPrime_isPrime, exists_surjective_bijective_away_prod, exists_finiteType_algEquiv_adicCompletion_of_cotangent_annihilated, exists_minimalPrime_henselization_radical_map_eq_of_quotient_dimension_one, not_isConnected_puncturedSpectrum_adicCompletion_iff_henselization, numberOfBranches_and_numberOfGeometricBranches_eq_adicCompletion_of_dimension_one, isNagataRing_and_numberOfBranches_and_numberOfGeometricBranches_eq_adicCompletion
+lean: mapsTo_surjOn_minimalPrimes_and_numberOfBranches_le_completion, numberOfBranches_eq_completion_iff_radical_map_minimalPrime_isPrime, exists_surjective_bijective_away_prod, exists_finiteType_algEquiv_adicCompletion_of_cotangent_annihilated, exists_minimalPrime_henselization_radical_map_eq_of_quotient_dimension_one, not_isConnected_puncturedSpectrum_adicCompletion_iff_henselization, numberOfBranches_and_numberOfGeometricBranches_eq_adicCompletion_of_dimension_one, isNagataRing_and_numberOfBranches_and_numberOfGeometricBranches_eq_adicCompletion
 statement: formalized
 proof: formalized
 ---
 
 # 15.110 Branches of the completion
 
-Section 15.110 of the Stacks Project, [Tag 0C27](https://stacks.math.columbia.edu/tag/0C27). 8 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.110 of the Stacks Project, [Tag 0C27](https://stacks.math.columbia.edu/tag/0C27). 8 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0C28, a lemma
 
 [Tag 0C28](https://stacks.math.columbia.edu/tag/0C28) in the Stacks Project.
 
-**`numberOfBranches_le_and_numberOfGeometricBranches_le_completion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Branches/Completion/BranchCounts.lean, line 425](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Branches/Completion/BranchCounts.lean#L425).
+**`mapsTo_surjOn_minimalPrimes_and_numberOfBranches_le_completion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Branches/Completion/BranchCounts.lean, line 572](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Branches/Completion/BranchCounts.lean#L572). The attribute's comment: “parts (1)-(3): contraction along Aʰ → Â maps Min(Â) into and onto Min(Aʰ); branch counts of Â use Â as its own henselization and Â ⊗[Aʰ] Aˢʰ as its strict henselization”.
 
 > For a Noetherian local ring `A` with henselization `Aʰ` and strict henselization `Aˢʰ`, there
-> is a map `Aʰ → Â` along which contraction is surjective on minimal primes, `Â ⊗[Aʰ] Aˢʰ` is a
-> strict henselization of `Â`, and completion decreases neither the number of branches nor the
-> number of geometric branches.
+> is a map `f : Aʰ → Â` over `A` such that:
+> 1. contraction along `f` carries minimal primes of `Â` to minimal primes of `Aʰ`, and every
+>    minimal prime of `Aʰ` arises this way;
+> 2. the number of branches of `A` is at most that of `Â` (which is henselian, so is its own
+>    henselization);
+> 3. `Â ⊗[Aʰ] Aˢʰ` is a strict henselization of `Â`, and the number of geometric branches of `A` is
+>    at most that of `Â`.
 
 ```lean
-theorem numberOfBranches_le_and_numberOfGeometricBranches_le_completion
+theorem mapsTo_surjOn_minimalPrimes_and_numberOfBranches_le_completion
     (A Ah Ash : Type u)
     [CommRing A] [IsLocalRing A] [IsNoetherianRing A]
     [CommRing Ah] [IsLocalRing Ah] [Algebra A Ah]
@@ -39,6 +43,7 @@ theorem numberOfBranches_le_and_numberOfGeometricBranches_le_completion
         letI : IsLocalHom (algebraMap A Ahat) := hAhatMapLocal
         ∃ f : Ah →+* Ahat,
           (∀ x : A, f (algebraMap A Ah x) = algebraMap A Ahat x) ∧
+          Set.MapsTo (fun q => Ideal.comap f q) (minimalPrimes Ahat) (minimalPrimes Ah) ∧
           Set.SurjOn (fun q => Ideal.comap f q) (minimalPrimes Ahat) (minimalPrimes Ah) ∧
           letI : Algebra Ah Ahat := f.toAlgebra
           ∃ hAhatHenselization : IsHenselization Ahat (ResidueField Ahat) Ahat,
@@ -64,7 +69,7 @@ theorem numberOfBranches_le_and_numberOfGeometricBranches_le_completion
 
 [Tag 0C29](https://stacks.math.columbia.edu/tag/0C29) in the Stacks Project.
 
-**`numberOfBranches_eq_completion_iff_radical_map_minimalPrime_isPrime`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Branches/Completion/BranchCounts.lean, line 288](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Branches/Completion/BranchCounts.lean#L288).
+**`numberOfBranches_eq_completion_iff_radical_map_minimalPrime_isPrime`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Branches/Completion/BranchCounts.lean, line 289](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Branches/Completion/BranchCounts.lean#L289).
 
 > A Noetherian local ring and its completion have the same number of branches if and only if
 > the radical of the extension of every minimal prime of a henselization to the completion is
@@ -94,7 +99,7 @@ theorem numberOfBranches_eq_completion_iff_radical_map_minimalPrime_isPrime
 
 [Tag 0C2A](https://stacks.math.columbia.edu/tag/0C2A) in the Stacks Project.
 
-**`exists_surjective_bijective_away_prod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Localization/Idempotent.lean, line 844](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Localization/Idempotent.lean#L844).
+**`exists_surjective_bijective_away_prod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Localization/Idempotent.lean, line 844](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Localization/Idempotent.lean#L844).
 
 > **Stacks Tag 0C2A, Lemma 15.110.3.**
 > Let `A` be a ring, `I ⊆ A` a finitely generated ideal, and `A → C` a ring map such that
@@ -122,7 +127,7 @@ theorem exists_surjective_bijective_away_prod {A : Type u} {C : Type v} [CommRin
 
 [Tag 0ALR](https://stacks.math.columbia.edu/tag/0ALR) in the Stacks Project.
 
-**`exists_finiteType_algEquiv_adicCompletion_of_cotangent_annihilated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AdicCompletion/Algebraization.lean, line 521](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/AdicCompletion/Algebraization.lean#L521).
+**`exists_finiteType_algEquiv_adicCompletion_of_cotangent_annihilated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AdicCompletion/Algebraization.lean, line 521](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/AdicCompletion/Algebraization.lean#L521).
 
 > **Stacks Tag 0ALR.** A quotient of the adic completion of a finite-type algebra is itself
 > the adic completion of a finite-type algebra if its conormal module is annihilated by a power of
@@ -145,7 +150,7 @@ theorem exists_finiteType_algEquiv_adicCompletion_of_cotangent_annihilated
 
 [Tag 0C2B](https://stacks.math.columbia.edu/tag/0C2B) in the Stacks Project.
 
-**`exists_minimalPrime_henselization_radical_map_eq_of_quotient_dimension_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Branches/Completion/HenselizationToCompletion.lean, line 716](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Branches/Completion/HenselizationToCompletion.lean#L716).
+**`exists_minimalPrime_henselization_radical_map_eq_of_quotient_dimension_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Branches/Completion/HenselizationToCompletion.lean, line 716](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Branches/Completion/HenselizationToCompletion.lean#L716).
 
 > A minimal prime defining a one-dimensional component of the completion of a Noetherian local
 > ring is the radical of the extension of a minimal prime of its henselization.
@@ -168,7 +173,7 @@ theorem exists_minimalPrime_henselization_radical_map_eq_of_quotient_dimension_o
 
 [Tag 0C2C](https://stacks.math.columbia.edu/tag/0C2C) in the Stacks Project.
 
-**`not_isConnected_puncturedSpectrum_adicCompletion_iff_henselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Branches/Completion/PuncturedSpectrum.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Branches/Completion/PuncturedSpectrum.lean#L122).
+**`not_isConnected_puncturedSpectrum_adicCompletion_iff_henselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Branches/Completion/PuncturedSpectrum.lean, line 122](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Branches/Completion/PuncturedSpectrum.lean#L122).
 
 > The punctured spectrum of the completion of a Noetherian local ring is disconnected if and
 > only if the punctured spectrum of its henselization is disconnected.
@@ -188,7 +193,7 @@ theorem not_isConnected_puncturedSpectrum_adicCompletion_iff_henselization
 
 [Tag 0C2D](https://stacks.math.columbia.edu/tag/0C2D) in the Stacks Project.
 
-**`numberOfBranches_and_numberOfGeometricBranches_eq_adicCompletion_of_dimension_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Branches/Completion/BranchCounts.lean, line 680](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Branches/Completion/BranchCounts.lean#L680).
+**`numberOfBranches_and_numberOfGeometricBranches_eq_adicCompletion_of_dimension_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Branches/Completion/BranchCounts.lean, line 735](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Branches/Completion/BranchCounts.lean#L735).
 
 > Completion preserves the ordinary and the geometric number of branches of a one-dimensional
 > Noetherian local ring.
@@ -223,7 +228,7 @@ theorem numberOfBranches_and_numberOfGeometricBranches_eq_adicCompletion_of_dime
 
 [Tag 0C2E](https://stacks.math.columbia.edu/tag/0C2E) in the Stacks Project.
 
-**`isNagataRing_and_numberOfBranches_and_numberOfGeometricBranches_eq_adicCompletion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Branches/Completion/GeometricallyNormalFormalFibres.lean, line 444](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Branches/Completion/GeometricallyNormalFormalFibres.lean#L444). References: EGA IV (7.6.1), “A' finite over A”; EGA IV (7.8.3), “(vi) local case”.
+**`isNagataRing_and_numberOfBranches_and_numberOfGeometricBranches_eq_adicCompletion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Branches/Completion/GeometricallyNormalFormalFibres.lean, line 444](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Branches/Completion/GeometricallyNormalFormalFibres.lean#L444). References: EGA IV (7.6.1), “A' finite over A”; EGA IV (7.8.3), “(vi) local case”.
 
 > A Noetherian local ring whose formal fibres are geometrically normal is Nagata, and its
 > ordinary and geometric branch counts agree with those of its completion.
@@ -264,4 +269,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.110, Tag 0C27](https://stacks.math.columbia.edu/tag/0C27)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

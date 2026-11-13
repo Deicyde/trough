@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.101 Base change for derived hom
 
-Section 15.101 of the Stacks Project, [Tag 0E1V](https://stacks.math.columbia.edu/tag/0E1V). 4 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.101 of the Stacks Project, [Tag 0E1V](https://stacks.math.columbia.edu/tag/0E1V). 4 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0E1V, the section
 
 [Tag 0E1V](https://stacks.math.columbia.edu/tag/0E1V) in the Stacks Project.
 
-**`Stacks.DerivedHom.ExtensionOfScalars.derivedHomBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/HomComplex/RHom/BaseChange/BaseChangeMap.lean, line 247](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/HomComplex/RHom/BaseChange/BaseChangeMap.lean#L247). The attribute's comment: “the derived base-change map for derived hom”.
+**`Stacks.DerivedHom.ExtensionOfScalars.derivedHomBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/HomComplex/RHom/BaseChange/BaseChangeMap.lean, line 247](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/HomComplex/RHom/BaseChange/BaseChangeMap.lean#L247). The attribute's comment: “the derived base-change map for derived hom”.
 
 > **Stacks 0E1X.** The canonical derived-module base-change map
 > `RHom_R(K, M) ⊗ᴸ_R A ⟶ RHom_A(K ⊗ᴸ_R A, M ⊗ᴸ_R A)`.
@@ -44,7 +44,7 @@ public def derivedHomBaseChange
         (Opposite.op (F.obj K), F.obj M)
 ```
 
-**`Stacks.DerivedHom.BaseChangeIso.isIso_derivedHomBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/HomComplex/RHom/BaseChange/Invertibility.lean, line 617](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/HomComplex/RHom/BaseChange/Invertibility.lean#L617). The attribute's comment: “invertibility of the base-change map in each of the four cases”.
+**`Stacks.DerivedHom.BaseChangeIso.isIso_derivedHomBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/HomComplex/RHom/BaseChange/Invertibility.lean, line 618](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/HomComplex/RHom/BaseChange/Invertibility.lean#L618). The attribute's comment: “invertibility of the base-change map in each of the four cases”.
 
 > **Stacks 0A6A.** The canonical derived-Hom base-change morphism
 > `RHom_R(K, M) ⊗ᴸ_R A ⟶ RHom_A(K ⊗ᴸ_R A, M ⊗ᴸ_R A)` of Stacks 0E1X is an isomorphism in each of
@@ -68,8 +68,8 @@ public theorem isIso_derivedHomBaseChange
         (ComplexShape.up ℤ) ⋙ DerivedCategory.Q)
     [F.IsLeftDerivedFunctor comparison
       (HomologicalComplex.quasiIso (ModuleCat.{max uR uA uM} R) (ComplexShape.up ℤ))]
-    (K M : DerivedCategory (ModuleCat.{max uR uA uM} R))
-    (h : StacksDraft.Perfect.IsPerfect K ∨
+    (K M : DerivedCategory (ModuleCat.{max uR uA uM} R)),
+    (StacksDraft.Perfect.IsPerfect K ∨
       StacksDraft.Perfect.IsPerfect
         ((DerivedCategory.singleFunctor (ModuleCat.{max uR uA uM} R) 0).obj
           ((ModuleCat.restrictScalars f).obj (ModuleCat.of A (ULift.{max uR uM} A)))) ∨
@@ -89,12 +89,12 @@ public theorem isIso_derivedHomBaseChange
                   ((ModuleCat.restrictScalars f).obj
                     (ModuleCat.of A (ULift.{max uR uM} A)))))))) ∧
         StacksDraft.PseudoCoherence.IsPseudoCoherent K ∧
-        ∃ b : ℤ, DerivedCategory.IsGE M b)),
+        ∃ b : ℤ, DerivedCategory.IsGE M b)) →
     IsIso (Stacks.DerivedHom.ExtensionOfScalars.derivedHomBaseChange.{uR, uA, uM} f F comparison K
       M)
 ```
 
-**`Stacks.DerivedHom.BaseChange.derivedHomRestrictScalarsNatIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/HomComplex/RHom/BaseChange/ModelRestrictScalars.lean, line 736](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/HomComplex/RHom/BaseChange/ModelRestrictScalars.lean#L736). The attribute's comment: “the change-of-rings isomorphism for derived hom”.
+**`Stacks.DerivedHom.BaseChange.derivedHomRestrictScalarsNatIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/HomComplex/RHom/BaseChange/ModelRestrictScalars.lean, line 737](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/HomComplex/RHom/BaseChange/ModelRestrictScalars.lean#L737). The attribute's comment: “the change-of-rings isomorphism for derived hom”.
 
 > **Stacks 0E1W.** The canonical change-of-rings isomorphism for derived Hom, natural in
 > the object of `D(R)` in the contravariant variable and the object of `D(A)` in the covariant
@@ -130,7 +130,7 @@ public noncomputable def derivedHomRestrictScalarsNatIso
 
 [Tag 0E1W](https://stacks.math.columbia.edu/tag/0E1W) in the Stacks Project.
 
-**`Stacks.DerivedHom.BaseChange.derivedHomRestrictScalarsNatIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/HomComplex/RHom/BaseChange/ModelRestrictScalars.lean, line 736](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/HomComplex/RHom/BaseChange/ModelRestrictScalars.lean#L736).
+**`Stacks.DerivedHom.BaseChange.derivedHomRestrictScalarsNatIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/HomComplex/RHom/BaseChange/ModelRestrictScalars.lean, line 737](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/HomComplex/RHom/BaseChange/ModelRestrictScalars.lean#L737).
 
 > **Stacks 0E1W.** The canonical change-of-rings isomorphism for derived Hom, natural in
 > the object of `D(R)` in the contravariant variable and the object of `D(A)` in the covariant
@@ -166,7 +166,7 @@ public noncomputable def derivedHomRestrictScalarsNatIso
 
 [Tag 0E1X](https://stacks.math.columbia.edu/tag/0E1X) in the Stacks Project.
 
-**`Stacks.DerivedHom.ExtensionOfScalars.derivedHomBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/HomComplex/RHom/BaseChange/BaseChangeMap.lean, line 247](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/HomComplex/RHom/BaseChange/BaseChangeMap.lean#L247).
+**`Stacks.DerivedHom.ExtensionOfScalars.derivedHomBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/HomComplex/RHom/BaseChange/BaseChangeMap.lean, line 247](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/HomComplex/RHom/BaseChange/BaseChangeMap.lean#L247).
 
 > **Stacks 0E1X.** The canonical derived-module base-change map
 > `RHom_R(K, M) ⊗ᴸ_R A ⟶ RHom_A(K ⊗ᴸ_R A, M ⊗ᴸ_R A)`.
@@ -200,7 +200,7 @@ public def derivedHomBaseChange
 
 [Tag 0A6A](https://stacks.math.columbia.edu/tag/0A6A) in the Stacks Project.
 
-**`Stacks.DerivedHom.BaseChangeIso.isIso_derivedHomBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/HomComplex/RHom/BaseChange/Invertibility.lean, line 617](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/HomComplex/RHom/BaseChange/Invertibility.lean#L617).
+**`Stacks.DerivedHom.BaseChangeIso.isIso_derivedHomBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/HomComplex/RHom/BaseChange/Invertibility.lean, line 618](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/HomComplex/RHom/BaseChange/Invertibility.lean#L618).
 
 > **Stacks 0A6A.** The canonical derived-Hom base-change morphism
 > `RHom_R(K, M) ⊗ᴸ_R A ⟶ RHom_A(K ⊗ᴸ_R A, M ⊗ᴸ_R A)` of Stacks 0E1X is an isomorphism in each of
@@ -224,8 +224,8 @@ public theorem isIso_derivedHomBaseChange
         (ComplexShape.up ℤ) ⋙ DerivedCategory.Q)
     [F.IsLeftDerivedFunctor comparison
       (HomologicalComplex.quasiIso (ModuleCat.{max uR uA uM} R) (ComplexShape.up ℤ))]
-    (K M : DerivedCategory (ModuleCat.{max uR uA uM} R))
-    (h : StacksDraft.Perfect.IsPerfect K ∨
+    (K M : DerivedCategory (ModuleCat.{max uR uA uM} R)),
+    (StacksDraft.Perfect.IsPerfect K ∨
       StacksDraft.Perfect.IsPerfect
         ((DerivedCategory.singleFunctor (ModuleCat.{max uR uA uM} R) 0).obj
           ((ModuleCat.restrictScalars f).obj (ModuleCat.of A (ULift.{max uR uM} A)))) ∨
@@ -245,7 +245,7 @@ public theorem isIso_derivedHomBaseChange
                   ((ModuleCat.restrictScalars f).obj
                     (ModuleCat.of A (ULift.{max uR uM} A)))))))) ∧
         StacksDraft.PseudoCoherence.IsPseudoCoherent K ∧
-        ∃ b : ℤ, DerivedCategory.IsGE M b)),
+        ∃ b : ℤ, DerivedCategory.IsGE M b)) →
     IsIso (Stacks.DerivedHom.ExtensionOfScalars.derivedHomBaseChange.{uR, uA, uM} f F comparison K
       M)
 ```
@@ -257,4 +257,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.101, Tag 0E1V](https://stacks.math.columbia.edu/tag/0E1V)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

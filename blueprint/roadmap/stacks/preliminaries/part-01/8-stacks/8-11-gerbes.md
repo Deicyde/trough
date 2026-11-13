@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: CategoryTheory.Functor.IsGerbe, CategoryTheory.isGerbeOver_iff_of_isEquivalenceOver, CategoryTheory.isGerbe_of_factorization_iff_isGerbeOver, CategoryTheory.IsGerbeOver, CategoryTheory.IsGerbeOver.twoFibreProduct, CategoryTheory.IsGerbeOver.comp, CategoryTheory.IsGerbeOver.of_twoFibreProduct, CategoryTheory.Gerbe.exists_sheaf_iso_morPresheaf_self_uliftFunctor
+lean: CategoryTheory.Functor.IsGerbe, CategoryTheory.Functor.isGerbe_iff_of_isEquivalenceOver, CategoryTheory.isGerbe_of_factorization_iff_isGerbeOver, CategoryTheory.IsGerbeOverStackInGroupoids, CategoryTheory.IsGerbeOver.twoFibreProduct, CategoryTheory.IsGerbeOver.comp, CategoryTheory.IsGerbeOver.of_twoFibreProduct, CategoryTheory.Gerbe.exists_sheaf_iso_morPresheaf_self_uliftFunctor
 statement: formalized
 proof: formalized
 ---
 
 # 8.11 Gerbes
 
-Section 8.11 of the Stacks Project, [Tag 06NY](https://stacks.math.columbia.edu/tag/06NY). 8 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 8.11 of the Stacks Project, [Tag 06NY](https://stacks.math.columbia.edu/tag/06NY). 8 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 06NZ, a definition
 
 [Tag 06NZ](https://stacks.math.columbia.edu/tag/06NZ) in the Stacks Project.
 
-**`CategoryTheory.Functor.IsGerbe`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Gerbe/Defs.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Gerbe/Defs.lean#L58).
+**`CategoryTheory.Functor.IsGerbe`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Gerbe/Defs.lean, line 58](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Gerbe/Defs.lean#L58).
 
 > A *gerbe* over the site `(𝒞, J)` is a category `p : 𝒮 ⥤ 𝒞` over `𝒞` which is a stack in
 > groupoids over `𝒞` (Stacks 02ZI), locally nonempty, and locally connected.
@@ -27,26 +27,30 @@ def IsGerbe (p : 𝒮 ⥤ 𝒞) (J : GrothendieckTopology 𝒞) : Prop
 
 [Tag 06P0](https://stacks.math.columbia.edu/tag/06P0) in the Stacks Project.
 
-**`CategoryTheory.isGerbeOver_iff_of_isEquivalenceOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Gerbe/Equivalence.lean, line 296](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Gerbe/Equivalence.lean#L296).
+**`CategoryTheory.Functor.isGerbe_iff_of_isEquivalenceOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Gerbe/EquivalenceStack.lean, line 80](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Gerbe/EquivalenceStack.lean#L80).
 
-> **Stacks 06P0**, in the relative form: a 1-morphism over `𝒴` that is an equivalence over
-> `𝒴` makes `𝒳` a gerbe over `𝒴` exactly when its target is one. The source statement is the
-> case `𝒴 = 𝒞`, `q = 𝟭 𝒞`, where `IsGerbeOver J (𝟭 𝒞) ·` is being a gerbe over the site
-> `(𝒞, J)` by `isGerbeOver_id_iff` and being an equivalence over `𝒴` is being an equivalence
-> over `𝒞`.
+> **Stacks 06P0.** Let `(𝒞, J)` be a site and let `p : 𝒳 ⥤ 𝒞`, `p' : 𝒳' ⥤ 𝒞` be categories
+> over `𝒞` which are equivalent as categories over `𝒞`: `a : 𝒳 ⥤ 𝒳'` is a 1-morphism over `𝒞`
+> (`a ⋙ p' = p`) and an equivalence over `𝒞` (its quasi-inverse is strictly over `𝒞` and unit and
+> counit are vertical). Then `𝒳` is a gerbe over `(𝒞, J)` (`CategoryTheory.Functor.IsGerbe`,
+> Stacks 06NZ) if and only if `𝒳'` is.
+>
+> As in the source, the stack clause is Stacks 042X,
+> `CategoryTheory.Functor.IsStackInGroupoids.iff_of_isEquivalenceOver`, and local nonemptiness and
+> local connectedness transport by `isGerbeOver_iff_of_isEquivalenceOver` read through
+> `isGerbeOver_id_iff`.
 
 ```lean
-theorem isGerbeOver_iff_of_isEquivalenceOver {J : GrothendieckTopology 𝒞} {q : 𝒴 ⥤ 𝒞}
-    {F : 𝒳 ⥤ 𝒴} {F' : 𝒳' ⥤ 𝒴} {a : 𝒳 ⥤ 𝒳'} (ha : a ⋙ F' = F)
-    (e : Functor.IsEquivalenceOver F F' a) :
-    IsGerbeOver J q F ↔ IsGerbeOver J q F'
+theorem Functor.isGerbe_iff_of_isEquivalenceOver {J : GrothendieckTopology 𝒞} {p : 𝒳 ⥤ 𝒞}
+    {p' : 𝒳' ⥤ 𝒞} {a : 𝒳 ⥤ 𝒳'} (ha : a ⋙ p' = p) (e : Functor.IsEquivalenceOver p p' a) :
+    p.IsGerbe.{w} J ↔ p'.IsGerbe.{w} J
 ```
 
 ## Tag 06P1, a lemma
 
 [Tag 06P1](https://stacks.math.columbia.edu/tag/06P1) in the Stacks Project.
 
-**`CategoryTheory.isGerbe_of_factorization_iff_isGerbeOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Gerbe/WhenGerbe.lean, line 322](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Gerbe/WhenGerbe.lean#L322).
+**`CategoryTheory.isGerbe_of_factorization_iff_isGerbeOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Gerbe/WhenGerbe.lean, line 323](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Gerbe/WhenGerbe.lean#L323).
 
 > **Stacks 06P1**. Let `(𝒞, J)` be a site, let `q : 𝒴 ⥤ 𝒞` and `F ⋙ q : 𝒳 ⥤ 𝒞` be stacks in
 > groupoids over `𝒞` and let `J𝒴` be the topology on `𝒴` inherited from `(𝒞, J)`. Let
@@ -78,23 +82,31 @@ theorem isGerbe_of_factorization_iff_isGerbeOver {𝒳' : Type u₄} [Category.{
 
 [Tag 06P2](https://stacks.math.columbia.edu/tag/06P2) in the Stacks Project.
 
-**`CategoryTheory.IsGerbeOver`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Gerbe/Basic.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Gerbe/Basic.lean#L117).
+**`CategoryTheory.IsGerbeOverStackInGroupoids`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stack/InGroupoids.lean, line 115](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stack/InGroupoids.lean#L115).
 
-> **Stacks 06P2**. `F` makes `𝒳` a *gerbe over* `𝒴`, where `q : 𝒴 ⥤ 𝒞` fibres `𝒴` over the
-> site `(𝒞, J)` and `F ⋙ q` fibres `𝒳` over it: both fibrations are fibred in groupoids, every
-> object of `𝒴` is locally in the image of `F`, and every morphism of a fibre of `q` between
-> `F`-images is locally the `F`-image of a morphism of a fibre of `F ⋙ q`. The last two
-> conditions are Stacks 06P1 (2)(a) and (2)(b).
+> **Stacks 06P2.** Let `(𝒞, J)` be a site, let `q : 𝒴 ⥤ 𝒞` and `F ⋙ q : 𝒳 ⥤ 𝒞` be stacks in
+> groupoids over `𝒞`, and let `F : 𝒳 ⥤ 𝒴` be the `1`-morphism of categories over `𝒞` between
+> them. `𝒳` is a *gerbe over* `𝒴` if the equivalent conditions of Stacks 06P1 hold; this records
+> condition (2) of 06P1, `CategoryTheory.IsGerbeOver`:
+> (a) for `y` in `𝒴` over `U` there is a covering of `U` along whose members `y|_{U_i}` is
+>     isomorphic in `𝒴_{U_i}` to the image of an object of `𝒳` over `U_i`;
+> (b) for `x`, `x'` in `𝒳_U` and `b : F(x) ⟶ F(x')` in `𝒴_U` there is a covering of `U` along
+>     whose members `b|_{U_i}` is the image of a morphism `x|_{U_i} ⟶ x'|_{U_i}` of `𝒳_{U_i}`.
+>
+> The two stacks-in-groupoids conditions are the standing hypotheses of the source. Condition (1)
+> of Stacks 06P1 is equivalent, by
+> `CategoryTheory.isGerbeOverStackInGroupoids_iff_isGerbe_of_factorization`.
 
 ```lean
-structure IsGerbeOver (J : GrothendieckTopology 𝒞) (q : 𝒴 ⥤ 𝒞) (F : 𝒳 ⥤ 𝒴) : Prop
+def IsGerbeOverStackInGroupoids (J : GrothendieckTopology 𝒞) (q : 𝒴 ⥤ 𝒞) (F : 𝒳 ⥤ 𝒴) :
+    Prop
 ```
 
 ## Tag 06P3, a lemma
 
 [Tag 06P3](https://stacks.math.columbia.edu/tag/06P3) in the Stacks Project.
 
-**`CategoryTheory.IsGerbeOver.twoFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Gerbe/Pullback.lean, line 292](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Gerbe/Pullback.lean#L292).
+**`CategoryTheory.IsGerbeOver.twoFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Gerbe/Pullback.lean, line 292](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Gerbe/Pullback.lean#L292).
 
 > **Stacks 06P3**. Let `𝒳' = 𝒴' ×_𝒴 𝒳` be the 2-fibre product over `𝒞` of `G : 𝒴' ⥤ 𝒴`
 > and `F : 𝒳 ⥤ 𝒴`, where `𝒳` sits over `𝒞` by `F ⋙ q` and `𝒴'` by `G ⋙ q`. If `F` makes `𝒳`
@@ -117,7 +129,7 @@ theorem IsGerbeOver.twoFibreProduct {J : GrothendieckTopology 𝒞} (hF : IsGerb
 
 [Tag 06R3](https://stacks.math.columbia.edu/tag/06R3) in the Stacks Project.
 
-**`CategoryTheory.IsGerbeOver.comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Gerbe/Basic.lean, line 174](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Gerbe/Basic.lean#L174).
+**`CategoryTheory.IsGerbeOver.comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Gerbe/Basic.lean, line 175](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Gerbe/Basic.lean#L175).
 
 > **Stacks 06R3**. If `𝒳` is a gerbe over `𝒴` and `𝒴` is a gerbe over `𝒵`, then `𝒳` is a
 > gerbe over `𝒵`.
@@ -135,7 +147,7 @@ theorem comp (hF : IsGerbeOver J (G ⋙ r) F) (hG : IsGerbeOver J r G) :
 
 [Tag 06P4](https://stacks.math.columbia.edu/tag/06P4) in the Stacks Project.
 
-**`CategoryTheory.IsGerbeOver.of_twoFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Gerbe/Pullback.lean, line 333](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Gerbe/Pullback.lean#L333).
+**`CategoryTheory.IsGerbeOver.of_twoFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Gerbe/Pullback.lean, line 333](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Gerbe/Pullback.lean#L333).
 
 > **Stacks 06P4**. Let `𝒳' = 𝒴' ×_𝒴 𝒳` be the 2-fibre product over `𝒞` of `G : 𝒴' ⥤ 𝒴`
 > and `F : 𝒳 ⥤ 𝒴`. If every object of `𝒴` is locally in the image of `G` — the condition
@@ -164,7 +176,7 @@ theorem IsGerbeOver.of_twoFibreProduct {J : GrothendieckTopology 𝒞} (hq : q.I
 
 [Tag 0CJY](https://stacks.math.columbia.edu/tag/0CJY) in the Stacks Project.
 
-**`CategoryTheory.Gerbe.exists_sheaf_iso_morPresheaf_self_uliftFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Gerbe/BandedSheaf.lean, line 1158](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Gerbe/BandedSheaf.lean#L1158).
+**`CategoryTheory.Gerbe.exists_sheaf_iso_morPresheaf_self_uliftFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Gerbe/BandedSheaf.lean, line 1158](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Gerbe/BandedSheaf.lean#L1158).
 
 > **Stacks 0CJY, with no hypothesis on the universes.** Let `p : 𝒮 ⥤ 𝒞` be a gerbe over the site
 > `(𝒞, J)`: fibred in groupoids, a stack, locally nonempty and locally connected. Assume that for
@@ -205,7 +217,7 @@ public theorem exists_sheaf_iso_morPresheaf_self_uliftFunctor (p : 𝒮 ⥤ 𝒞
               pullbackFiberHom φ g.hom
 ```
 
-**`CategoryTheory.Gerbe.exists_sheaf_iso_morPresheaf_self`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Gerbe/BandedSheaf.lean, line 1196](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Gerbe/BandedSheaf.lean#L1196).
+**`CategoryTheory.Gerbe.exists_sheaf_iso_morPresheaf_self`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Gerbe/BandedSheaf.lean, line 1196](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Gerbe/BandedSheaf.lean#L1196).
 
 > **Stacks 0CJY.** Let `p : 𝒮 ⥤ 𝒞` be a gerbe over the site `(𝒞, J)` whose automorphism sheaves
 > are abelian. Then there are a sheaf `𝒢` of abelian groups on `𝒞` and, for every `U` and every
@@ -238,7 +250,7 @@ public theorem exists_sheaf_iso_morPresheaf_self [UnivLE.{max u₁ v₁, v₂}] 
               pullbackFiberHom φ g.hom
 ```
 
-**`CategoryTheory.Gerbe.exists_sheaf_iso_morPresheaf_self_uliftFunctor_base`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Gerbe/BandedSheaf.lean, line 1240](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Gerbe/BandedSheaf.lean#L1240).
+**`CategoryTheory.Gerbe.exists_sheaf_iso_morPresheaf_self_uliftFunctor_base`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Gerbe/BandedSheaf.lean, line 1240](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Gerbe/BandedSheaf.lean#L1240).
 
 > **Stacks 0CJY, with the compatibility of the comparisons over varying base object.** Let
 > `p : 𝒮 ⥤ 𝒞` be a gerbe over the site `(𝒞, J)` whose automorphism sheaves are abelian. Then there
@@ -291,4 +303,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 8.11, Tag 06NY](https://stacks.math.columbia.edu/tag/06NY)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

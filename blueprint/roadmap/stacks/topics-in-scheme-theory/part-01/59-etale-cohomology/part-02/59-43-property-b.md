@@ -8,13 +8,13 @@ proof: formalized
 
 # 59.43 Property (B)
 
-Section 59.43 of the Stacks Project, [Tag 04DN](https://stacks.math.columbia.edu/tag/04DN). 5 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 59.43 of the Stacks Project, [Tag 04DN](https://stacks.math.columbia.edu/tag/04DN). 5 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 04DO, a lemma
 
 [Tag 04DO](https://stacks.math.columbia.edu/tag/04DO) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.smallEtalePushforward_preservesEpimorphisms_of_hasPropertyB`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/PropertyB.lean, line 485](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/PropertyB.lean#L485).
+**`Stacks.EtaleCohomology.smallEtalePushforward_preservesEpimorphisms_of_hasPropertyB`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/PropertyB.lean, line 485](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/PropertyB.lean#L485).
 
 > **Stacks Project, Tag 04DO.** Let `f : X ⟶ Y` be a morphism of schemes with property (B).
 > Then direct image along the induced morphism of small étale sites transforms surjections of
@@ -31,7 +31,7 @@ theorem smallEtalePushforward_preservesEpimorphisms_of_hasPropertyB {X Y : Schem
 
 [Tag 04DP](https://stacks.math.columbia.edu/tag/04DP) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.hasPropertyB_of_etaleNeighborhood_decomposition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/Basic.lean, line 333](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/Basic.lean#L333).
+**`Stacks.EtaleCohomology.hasPropertyB_of_etaleNeighborhood_decomposition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/Basic.lean, line 333](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/Basic.lean#L333).
 
 > A morphism `f : X ⟶ Y` has property (B) as soon as, for every étale `g : V ⟶ Y`, every étale
 > covering `U` of `X ×ₗᵧ V` and every point `v` of `V`, there is a single étale neighborhood of `v`
@@ -56,7 +56,7 @@ theorem hasPropertyB_of_etaleNeighborhood_decomposition
 
 [Tag 04DQ](https://stacks.math.columbia.edu/tag/04DQ) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.hasPropertyB_of_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/FiniteCaseTrim.lean, line 454](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/FiniteCaseTrim.lean#L454).
+**`Stacks.EtaleCohomology.hasPropertyB_of_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/FiniteCaseTrim.lean, line 454](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/FiniteCaseTrim.lean#L454).
 
 > **Property (B) for a finite morphism of schemes.** Every étale covering of the base change of
 > a finite morphism admits, after a further étale covering of the base, a componentwise subordinate
@@ -75,7 +75,7 @@ theorem hasPropertyB_of_isFinite {X Y : Scheme.{u}} (f : X ⟶ Y) [IsFinite f] :
 
 [Tag 04DR](https://stacks.math.columbia.edu/tag/04DR) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.hasPropertyB_of_isIntegralHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/FiniteCaseTrim.lean, line 467](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/FiniteCaseTrim.lean#L467).
+**`Stacks.EtaleCohomology.hasPropertyB_of_isIntegralHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/FiniteCaseTrim.lean, line 467](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Descent/FiniteCaseTrim.lean#L467).
 
 > **Property (B) for an integral morphism of schemes.** Every étale covering of the base change
 > of an integral morphism admits, after a further étale covering of the base, a componentwise
@@ -96,7 +96,7 @@ theorem hasPropertyB_of_isIntegralHom {X Y : Scheme.{u}} (f : X ⟶ Y) [IsIntegr
 
 [Tag 04C2](https://stacks.math.columbia.edu/tag/04C2) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.smallEtalePushforwardAb_properties_of_isIntegralHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/IntegralPushforwardExact.lean, line 151](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/IntegralPushforwardExact.lean#L151).
+**`Stacks.EtaleCohomology.smallEtalePushforwardAb_properties_of_isIntegralHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/IntegralPushforwardExact.lean, line 151](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/IntegralPushforwardExact.lean#L151).
 
 > **Stacks Project, Tag 04C2.** Let `f : X ⟶ Y` be an integral morphism of schemes — a finite
 > morphism, for instance. Then
@@ -126,7 +126,7 @@ public theorem smallEtalePushforwardAb_properties_of_isIntegralHom {X Y : Scheme
                 (Sheaf (smallEtaleTopology Y) Ab.{u + 1}) (smallEtalePushforwardAb f)
 ```
 
-**`Stacks.EtaleCohomology.etaleAbelianDirectImage_preservesEpimorphisms_of_isIntegralHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/IntegralDirectImageAcyclic.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/IntegralDirectImageAcyclic.lean#L98). The attribute's comment: “part (1) for abelian sheaves, at the coefficients of proper base change”.
+**`Stacks.EtaleCohomology.etaleAbelianDirectImage_preservesEpimorphisms_of_isIntegralHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/IntegralDirectImageAcyclic.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/IntegralDirectImageAcyclic.lean#L98). The attribute's comment: “part (1) for abelian sheaves, at the coefficients of proper base change”.
 
 > **Stacks 04C2, part (1), at the coefficients of the proper base change development.** For an
 > integral morphism of schemes `f : X ⟶ Y` — a finite morphism, for instance — direct image
@@ -145,7 +145,7 @@ public theorem etaleAbelianDirectImage_preservesEpimorphisms_of_isIntegralHom
     (etaleAbelianDirectImage.{u, v} f).PreservesEpimorphisms
 ```
 
-**`Stacks.EtaleCohomology.preservesFiniteColimits_etaleAbelianDirectImage_of_isIntegralHom`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/IntegralDirectImageAcyclic.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/IntegralDirectImageAcyclic.lean#L134). The attribute's comment: “part (2) for abelian sheaves, at the coefficients of proper base change”.
+**`Stacks.EtaleCohomology.preservesFiniteColimits_etaleAbelianDirectImage_of_isIntegralHom`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/IntegralDirectImageAcyclic.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/ProperBaseChange/IntegralDirectImageAcyclic.lean#L134). The attribute's comment: “part (2) for abelian sheaves, at the coefficients of proper base change”.
 
 > **Stacks 04C2, part (2), at the coefficients of the proper base change development.** For an
 > integral morphism `f : X ⟶ Y`, direct image of abelian sheaves on the small étale sites
@@ -162,7 +162,7 @@ public instance preservesFiniteColimits_etaleAbelianDirectImage_of_isIntegralHom
     PreservesFiniteColimits (etaleAbelianDirectImage.{u, v} f)
 ```
 
-**`AlgebraicGeometry.Space.smallEtalePushforward_preservesEpimorphisms_of_isIntegralHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IntegralPushforwardExact.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/IntegralPushforwardExact.lean#L70). The attribute's comment: “part (1), for an integral morphism of algebraic spaces”.
+**`AlgebraicGeometry.Space.smallEtalePushforward_preservesEpimorphisms_of_isIntegralHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/IntegralPushforwardExact.lean, line 70](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/IntegralPushforwardExact.lean#L70). The attribute's comment: “part (1), for an integral morphism of algebraic spaces”.
 
 > **Stacks 04C2, part (1), for an integral morphism of algebraic spaces.** The small étale
 > direct image of sheaves of sets along an integral morphism of algebraic spaces over `S`
@@ -190,4 +190,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 59.43, Tag 04DN](https://stacks.math.columbia.edu/tag/04DN)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

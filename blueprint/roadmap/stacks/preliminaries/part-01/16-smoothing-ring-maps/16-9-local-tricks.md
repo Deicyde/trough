@@ -8,13 +8,13 @@ proof: formalized
 
 # 16.9 Local tricks
 
-Section 16.9 of the Stacks Project, [Tag 07F6](https://stacks.math.columbia.edu/tag/07F6). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 16.9 of the Stacks Project, [Tag 07F6](https://stacks.math.columbia.edu/tag/07F6). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 07F8, a lemma
 
 [Tag 07F8](https://stacks.math.columbia.edu/tag/07F8) in the Stacks Project.
 
-**`Stacks.Smoothing.canBeResolved_of_quotient_eighthPowerIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/LiftingResolutionsFromEighthPowers.lean, line 1264](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Smoothing/LiftingResolutionsFromEighthPowers.lean#L1264).
+**`Stacks.Smoothing.canBeResolved_of_quotient_eighthPowerIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/LiftingResolutionsFromEighthPowers.lean, line 1264](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Smoothing/LiftingResolutionsFromEighthPowers.lean#L1264).
 
 > **Stacks 07F8.** Let `R → A → Λ ⊃ q` be a local smoothing situation, let `r ≥ 1` and let
 > `π₁, …, π_r ∈ R` map into `q`. Assume that for `i = 1, …, r` the annihilator of `π_i` equals
@@ -59,7 +59,7 @@ theorem canBeResolved_of_quotient_eighthPowerIdeal
 
 [Tag 07F9](https://stacks.math.columbia.edu/tag/07F9) in the Stacks Project.
 
-**`Stacks.Smoothing.exists_finitePresentation_factorization_singularIdeal_not_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/SpreadingOutResolutions.lean, line 1306](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Smoothing/SpreadingOutResolutions.lean#L1306).
+**`Stacks.Smoothing.exists_finitePresentation_factorization_singularIdeal_not_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/SpreadingOutResolutions.lean, line 1307](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Smoothing/SpreadingOutResolutions.lean#L1307).
 
 > **Stacks 07F9.** Let `R → A → Λ ⊃ q` be a local smoothing situation, `p = R ∩ q`. If `q` is
 > minimal over `𝔥_A` and the localized chain `R_p → A_p → Λ_q ⊃ q Λ_q` can be resolved, then there
@@ -82,7 +82,7 @@ theorem exists_finitePresentation_factorization_singularIdeal_not_le
 
 [Tag 07FA](https://stacks.math.columbia.edu/tag/07FA) in the Stacks Project.
 
-**`Stacks.Smoothing.canBeResolved_of_localization_dim_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/ZeroDimensionalResolution.lean, line 556](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Smoothing/ZeroDimensionalResolution.lean#L556).
+**`Stacks.Smoothing.canBeResolved_of_localization_dim_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/ZeroDimensionalResolution.lean, line 556](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Smoothing/ZeroDimensionalResolution.lean#L556).
 
 > **Stacks 07FA.** Let `R → A → Λ ⊃ q` be a local smoothing situation with `q` minimal over
 > `𝔥_A = √(H_{A/R} Λ)`. If the localized chain `R_p → A_p → Λ_q ⊃ q Λ_q` can be resolved and `Λ_q`
@@ -102,4 +102,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 16.9, Tag 07F6](https://stacks.math.columbia.edu/tag/07F6)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

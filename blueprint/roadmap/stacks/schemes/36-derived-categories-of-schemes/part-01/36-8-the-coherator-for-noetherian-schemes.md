@@ -8,13 +8,13 @@ proof: formalized
 
 # 36.8 The coherator for Noetherian schemes
 
-Section 36.8 of the Stacks Project, [Tag 09T1](https://stacks.math.columbia.edu/tag/09T1). 3 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 36.8 of the Stacks Project, [Tag 09T1](https://stacks.math.columbia.edu/tag/09T1). 3 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 09T2, a lemma
 
 [Tag 09T2](https://stacks.math.columbia.edu/tag/09T2) in the Stacks Project.
 
-**`AlgebraicGeometry.isFlasque_of_injective_quasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/InjectiveQcoh/SectionExtension.lean, line 373](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/InjectiveQcoh/SectionExtension.lean#L373).
+**`AlgebraicGeometry.isFlasque_of_injective_quasicoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/InjectiveQcoh/SectionExtension.lean, line 373](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Cohomology/InjectiveQcoh/SectionExtension.lean#L373).
 
 > Let `X` be a Noetherian scheme and let `𝒥` be an injective
 > object of the category of quasi-coherent `𝒪_X`-modules. Then `𝒥` is a flasque sheaf of
@@ -30,7 +30,7 @@ public theorem isFlasque_of_injective_quasicoherent (X : Scheme.{u}) [IsNoetheri
 
 [Tag 09T3](https://stacks.math.columbia.edu/tag/09T3) in the Stacks Project.
 
-**`AlgebraicGeometry.noetherianPushforwardExtension`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/NoetherianExtension/Basic.lean, line 138](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedQCoh/NoetherianExtension/Basic.lean#L138).
+**`AlgebraicGeometry.noetherianPushforwardExtension`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/NoetherianExtension/Basic.lean, line 138](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedQCoh/NoetherianExtension/Basic.lean#L138).
 
 > The right derived extension `Φ : D(QCoh(𝒪_X)) ⥤ D(QCoh(𝒪_Y))` of direct image on
 > quasi-coherent modules, for a morphism of Noetherian schemes: the total right derived functor
@@ -47,7 +47,7 @@ def noetherianPushforwardExtension {X Y : Scheme.{u}} (f : X ⟶ Y)
       DerivedCategory (Scheme.QuasicoherentModules Y)
 ```
 
-**`AlgebraicGeometry.noetherianPushforwardExtension_isRightDerivedFunctor`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/NoetherianExtension/Basic.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedQCoh/NoetherianExtension/Basic.lean#L159).
+**`AlgebraicGeometry.noetherianPushforwardExtension_isRightDerivedFunctor`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/NoetherianExtension/Basic.lean, line 159](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedQCoh/NoetherianExtension/Basic.lean#L159).
 
 > `AlgebraicGeometry.noetherianPushforwardExtension` is a total right derived functor of
 > direct image on quasi-coherent modules, with
@@ -61,7 +61,7 @@ instance noetherianPushforwardExtension_isRightDerivedFunctor {X Y : Scheme.{u}}
       (HomotopyCategory.quasiIso (Scheme.QuasicoherentModules X) (ComplexShape.up ℤ))
 ```
 
-**`AlgebraicGeometry.noetherianPushforwardExtensionComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/NoetherianExtension/Basic.lean, line 248](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedQCoh/NoetherianExtension/Basic.lean#L248).
+**`AlgebraicGeometry.noetherianPushforwardExtensionComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/NoetherianExtension/Basic.lean, line 248](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedQCoh/NoetherianExtension/Basic.lean#L248).
 
 > **The commuting square of [Stacks, Tag 09T3].** For a morphism of Noetherian schemes the
 > derived extension of direct image on quasi-coherent modules agrees, under the comparison
@@ -85,7 +85,7 @@ def noetherianPushforwardExtensionComparison :
 
 [Tag 09T4](https://stacks.math.columbia.edu/tag/09T4) in the Stacks Project.
 
-**`Stacks.DerivedQCoh.derivedQuasicoherentComparison_isEquivalence_of_isNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/NoetherianExtension/Equivalence.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedQCoh/NoetherianExtension/Equivalence.lean#L124). The attribute's comment: “equivalence”.
+**`Stacks.DerivedQCoh.derivedQuasicoherentComparison_isEquivalence_of_isNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/NoetherianExtension/Equivalence.lean, line 124](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedQCoh/NoetherianExtension/Equivalence.lean#L124). The attribute's comment: “equivalence”.
 
 > On a Noetherian scheme the comparison functor `i_X : D(QCoh(𝒪_X)) ⥤ D_QCoh(𝒪_X)` of
 > [Stacks, Tag 06VT] is an equivalence.
@@ -95,7 +95,7 @@ theorem derivedQuasicoherentComparison_isEquivalence_of_isNoetherian (X : Scheme
     [IsNoetherian X] : (derivedQuasicoherentComparison.{u + 1} X).IsEquivalence
 ```
 
-**`Stacks.DerivedQCoh.derivedCoherator_isoInv_of_isNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/NoetherianExtension/Equivalence.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedQCoh/NoetherianExtension/Equivalence.lean#L133). The attribute's comment: “identification of the quasi-inverse”.
+**`Stacks.DerivedQCoh.derivedCoherator_isoInv_of_isNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/NoetherianExtension/Equivalence.lean, line 133](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedQCoh/NoetherianExtension/Equivalence.lean#L133). The attribute's comment: “identification of the quasi-inverse”.
 
 > On a Noetherian scheme the quasi-inverse of the comparison functor of [Stacks, Tag 06VT] is
 > `RQ_X`: any total right derived functor of the coherator `Q_X : Mod(𝒪_X) ⥤ QCoh(𝒪_X)` of
@@ -117,7 +117,7 @@ theorem derivedCoherator_isoInv_of_isNoetherian (X : Scheme.{u}) [IsNoetherian X
       (derivedQuasicoherentComparison.{u + 1} X).inv)
 ```
 
-**`Stacks.DerivedQCoh.derivedCoherator_isoInv_of_isNoetherian'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/NoetherianExtension/Equivalence.lean, line 153](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedQCoh/NoetherianExtension/Equivalence.lean#L153). The attribute's comment: “identification of the quasi-inverse”.
+**`Stacks.DerivedQCoh.derivedCoherator_isoInv_of_isNoetherian'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/NoetherianExtension/Equivalence.lean, line 153](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedQCoh/NoetherianExtension/Equivalence.lean#L153). The attribute's comment: “identification of the quasi-inverse”.
 
 > On a Noetherian scheme the quasi-inverse of the comparison functor of [Stacks, Tag 06VT] is
 > the restriction of the total right derived functor `Stacks.DerivedQCoh.schemeDerivedCoherator` of
@@ -138,4 +138,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 36.8, Tag 09T1](https://stacks.math.columbia.edu/tag/09T1)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

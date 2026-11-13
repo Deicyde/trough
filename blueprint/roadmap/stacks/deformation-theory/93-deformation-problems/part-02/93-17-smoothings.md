@@ -8,13 +8,13 @@ proof: formalized
 
 # 93.17 Smoothings
 
-Section 93.17 of the Stacks Project, [Tag 0E7S](https://stacks.math.columbia.edu/tag/0E7S). 7 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 93.17 of the Stacks Project, [Tag 0E7S](https://stacks.math.columbia.edu/tag/0E7S). 7 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0E7T, a lemma
 
 [Tag 0E7T](https://stacks.math.columbia.edu/tag/0E7T) in the Stacks Project.
 
-**`Deformation.Examples.SmoothingCriterion.smooth_genericFibre_of_pow_mem_fittingIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SmoothingCriterion.lean, line 540](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SmoothingCriterion.lean#L540).
+**`Deformation.Examples.SmoothingCriterion.smooth_genericFibre_of_pow_mem_fittingIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SmoothingCriterion.lean, line 540](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Geometric/SmoothingCriterion.lean#L540).
 
 > Let `k` be a field, `S = Spec k⟦t⟧` and `Sₙ = Spec (k⟦t⟧/(t^n))`. Let `f : Y ⟶ S` be
 > proper and flat with Cohen–Macaulay special fibre, equidimensional of dimension `d`, and let
@@ -48,7 +48,7 @@ public theorem smooth_genericFibre_of_pow_mem_fittingIdeal (k : Type u) [Field k
 
 [Tag 0E7U](https://stacks.math.columbia.edu/tag/0E7U) in the Stacks Project.
 
-**`Deformation.Examples.Smoothing.exists_nonempty_open_smooth_projection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/Smoothing/GenericSmoothness.lean, line 472](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/Smoothing/GenericSmoothness.lean#L472).
+**`Deformation.Examples.Smoothing.exists_nonempty_open_smooth_projection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/Smoothing/GenericSmoothness.lean, line 472](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Geometric/Smoothing/GenericSmoothness.lean#L472).
 
 > The generic affine-linear deformation is smooth over some nonempty open in
 > the affine space of its coefficients.
@@ -69,7 +69,7 @@ public theorem exists_nonempty_open_smooth_projection
 
 [Tag 0E7V](https://stacks.math.columbia.edu/tag/0E7V) in the Stacks Project.
 
-**`Deformation.Examples.Smoothing.exists_flat_powerSeries_specialFiber_smooth_genericFiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/Smoothing/GlobalCompleteIntersection.lean, line 661](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/Smoothing/GlobalCompleteIntersection.lean#L661). The attribute's comment: “the smoothing of a global complete intersection”.
+**`Deformation.Examples.Smoothing.exists_flat_powerSeries_specialFiber_smooth_genericFiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/Smoothing/GlobalCompleteIntersection.lean, line 661](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Geometric/Smoothing/GlobalCompleteIntersection.lean#L661). The attribute's comment: “the smoothing of a global complete intersection”.
 
 > **Stacks 0E7V.** A global complete intersection `A` over a field `k` is the special fibre
 > `B/XB` of a flat finite type `k⟦X⟧`-algebra `B` whose generic fibre `k⸨X⸩ ⊗[k⟦X⟧] B` is smooth
@@ -96,7 +96,7 @@ public theorem exists_flat_powerSeries_specialFiber_smooth_genericFiber
 
 [Tag 0E7W](https://stacks.math.columbia.edu/tag/0E7W) in the Stacks Project.
 
-**`Deformation.Examples.Smoothing.exists_finite_powerSeries_specialFiber_etale_genericFiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/Smoothing/FiniteLocalCompleteIntersection.lean, line 378](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/Smoothing/FiniteLocalCompleteIntersection.lean#L378). The attribute's comment: “the smoothing of a finite local complete intersection”.
+**`Deformation.Examples.Smoothing.exists_finite_powerSeries_specialFiber_etale_genericFiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/Smoothing/FiniteLocalCompleteIntersection.lean, line 378](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Geometric/Smoothing/FiniteLocalCompleteIntersection.lean#L378). The attribute's comment: “the smoothing of a finite local complete intersection”.
 
 > **Stacks 0E7W.** A finite-dimensional local complete intersection `A` over a field `k` is
 > the special fibre `B/XB` of a finite flat `k⟦X⟧`-algebra `B` whose generic fibre
@@ -119,7 +119,7 @@ public theorem exists_finite_powerSeries_specialFiber_etale_genericFiber
 
 [Tag 0E7X](https://stacks.math.columbia.edu/tag/0E7X) in the Stacks Project.
 
-**`Deformation.Examples.Smoothing.exists_flat_essFiniteType_specialFiber_pow_mem_fittingIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SmoothingEssFiniteType.lean, line 692](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SmoothingEssFiniteType.lean#L692).
+**`Deformation.Examples.Smoothing.exists_flat_essFiniteType_specialFiber_pow_mem_fittingIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SmoothingEssFiniteType.lean, line 692](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Geometric/SmoothingEssFiniteType.lean#L692).
 
 > **Stacks 0E7X.** Let `k` be a field and let `A` be a local `k`-algebra, essentially of finite
 > type over `k` and a complete intersection over `k`. Then `A` is the special fibre `B/tB` of a flat
@@ -149,7 +149,7 @@ public theorem exists_flat_essFiniteType_specialFiber_pow_mem_fittingIdeal
 
 [Tag 0E7Y](https://stacks.math.columbia.edu/tag/0E7Y) in the Stacks Project.
 
-**`Deformation.Examples.Smoothing.exists_flat_isProjective_smoothing_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SmoothingProperCurve.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SmoothingProperCurve.lean#L104).
+**`Deformation.Examples.Smoothing.exists_flat_isProjective_smoothing_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SmoothingProperCurve.lean, line 104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Geometric/SmoothingProperCurve.lean#L104).
 
 > **[Stacks, Tag 0E7Y].** Let `X` be a scheme over a field `k`. Assume (1) `X` is proper over
 > `k`, (2) `X` is a local complete intersection over `k`, (3) `X` has dimension `≤ 1`, and (4)
@@ -180,7 +180,7 @@ theorem exists_flat_isProjective_smoothing_of_isProper {X : Scheme.{u}} (f : X �
 
 [Tag 0E7Z](https://stacks.math.columbia.edu/tag/0E7Z) in the Stacks Project.
 
-**`Deformation.Examples.Smoothing.exists_flat_separated_finiteType_smoothing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SmoothingSeparated.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SmoothingSeparated.lean#L149).
+**`Deformation.Examples.Smoothing.exists_flat_separated_finiteType_smoothing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SmoothingSeparated.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Geometric/SmoothingSeparated.lean#L149).
 
 > **[Stacks, Tag 0E7Z].** Let `k` be a field and let `X` be a scheme over `k`. Assume
 > (1) `X` is separated, finite type over `k` and `dim(X) ≤ 1`, (2) `X` is a local complete
@@ -215,4 +215,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 93.17, Tag 0E7S](https://stacks.math.columbia.edu/tag/0E7S)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

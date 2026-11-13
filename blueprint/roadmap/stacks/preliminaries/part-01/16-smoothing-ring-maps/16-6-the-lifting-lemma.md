@@ -8,13 +8,13 @@ proof: formalized
 
 # 16.6 The lifting lemma
 
-Section 16.6 of the Stacks Project, [Tag 07CN](https://stacks.math.columbia.edu/tag/07CN). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 16.6 of the Stacks Project, [Tag 07CN](https://stacks.math.columbia.edu/tag/07CN). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 07CP, a lemma
 
 [Tag 07CP](https://stacks.math.columbia.edu/tag/07CP) in the Stacks Project.
 
-**`Stacks.Smoothing.exists_finitePresentation_lift_smoothAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/LiftingLemma/ExistsLift.lean, line 39](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Smoothing/LiftingLemma/ExistsLift.lean#L39).
+**`Stacks.Smoothing.exists_finitePresentation_lift_smoothAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Smoothing/LiftingLemma/ExistsLift.lean, line 39](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Smoothing/LiftingLemma/ExistsLift.lean#L39).
 
 > **Stacks Project, Tag 07CP.** A finitely presented algebra modulo `π²`
 > admits a lift modulo `π` with the asserted smoothness properties.
@@ -83,4 +83,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 16.6, Tag 07CN](https://stacks.math.columbia.edu/tag/07CN)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 82.10 Flat pullback
 
-Section 82.10 of the Stacks Project, [Tag 0EP7](https://stacks.math.columbia.edu/tag/0EP7). 5 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 82.10 of the Stacks Project, [Tag 0EP7](https://stacks.math.columbia.edu/tag/0EP7). 5 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0EP8, a definition
 
 [Tag 0EP8](https://stacks.math.columbia.edu/tag/0EP8) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.flatPullbackIntegralCycle`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/FlatPullbackOfCycles.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/FlatPullbackOfCycles.lean#L169). The attribute's comment: “part (1): f^*[W] = [f^\{-1}(W)]\_\{k+r} for an integral closed subspace W”.
+**`AlgebraicGeometry.Space.flatPullbackIntegralCycle`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/FlatPullbackOfCycles.lean, line 169](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/FlatPullbackOfCycles.lean#L169). The attribute's comment: “part (1): f^*[W] = [f^\{-1}(W)]\_\{k+r} for an integral closed subspace W”.
 
 > The flat pullback of the cycle of an integral closed subspace `W ⊆ Y` of δ-dimension `k`: the
 > `(k+r)`-cycle `[f^{-1}(W)]_{k+r}` of the scheme-theoretic inverse image.
@@ -24,7 +24,7 @@ def flatPullbackIntegralCycle (W : IntegralClosedSubspace D.site D.base D.base_m
     CycleGroup D sX (deltaDimension D sY W + (r : ℤ))
 ```
 
-**`AlgebraicGeometry.Space.flatPullbackMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/FlatPullbackOfCycles.lean, line 326](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/FlatPullbackOfCycles.lean#L326). The attribute's comment: “parts (2) and (3): the flat pullback of a cycle and the homomorphism Z\_k(Y) → Z\_\{k+r}(X)”.
+**`AlgebraicGeometry.Space.flatPullbackMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/FlatPullbackOfCycles.lean, line 326](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/FlatPullbackOfCycles.lean#L326). The attribute's comment: “parts (2) and (3): the flat pullback of a cycle and the homomorphism Z\_k(Y) → Z\_\{k+r}(X)”.
 
 > The flat pullback of cycles along a morphism `f : X ⟶ Y` of good algebraic spaces over the base
 > which is flat of relative dimension `r`, as a homomorphism `f^* : Z_m(Y) →+ Z_n(X)` for
@@ -35,7 +35,7 @@ def flatPullbackMap (m n : ℤ) (hmn : m + (r : ℤ) = n) :
     CycleGroup D sY m →+ CycleGroup D sX n
 ```
 
-**`AlgebraicGeometry.Space.flatCyclePullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/FlatPullbackOfCycles.lean, line 372](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/FlatPullbackOfCycles.lean#L372). The attribute's comment: “the whole definition, bundled with its defining formula”.
+**`AlgebraicGeometry.Space.flatCyclePullback`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/FlatPullbackOfCycles.lean, line 372](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/FlatPullbackOfCycles.lean#L372). The attribute's comment: “the whole definition, bundled with its defining formula”.
 
 > The flat pullback of cycles along a morphism `f : X ⟶ Y` of good algebraic spaces over the base
 > which is flat of relative dimension `r`, as an inhabitant of the bundled
@@ -55,7 +55,7 @@ def flatCyclePullback (sX : X ⟶ D.space) (hX : D.IsGood sX) (sY : Y ⟶ D.spac
 
 [Tag 0EP9](https://stacks.math.columbia.edu/tag/0EP9) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.cycleGroupRestrict_eq_zero_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/LocalizationSequence.lean, line 475](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/LocalizationSequence.lean#L475). The attribute's comment: “exactness at the k-cycles of the ambient space”.
+**`AlgebraicGeometry.Space.cycleGroupRestrict_eq_zero_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/LocalizationSequence.lean, line 475](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/LocalizationSequence.lean#L475). The attribute's comment: “exactness at the k-cycles of the ambient space”.
 
 > **Stacks 0EP9, exactness at the `k`-cycles of the ambient space.** In Situation 0EDT let
 > `X/B` be good, let `i : Y ⟶ X` be a closed immersion over the base and let `j : U ⟶ X` be an
@@ -75,7 +75,7 @@ theorem cycleGroupRestrict_eq_zero_iff (sX : X ⟶ D.space) (hX : D.IsGood sX) (
           sY hic k β = α
 ```
 
-**`AlgebraicGeometry.Space.cycleGroupRestrict_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/LocalizationSequence.lean, line 565](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/LocalizationSequence.lean#L565). The attribute's comment: “surjectivity onto the k-cycles of the open subspace”.
+**`AlgebraicGeometry.Space.cycleGroupRestrict_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/LocalizationSequence.lean, line 565](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/LocalizationSequence.lean#L565). The attribute's comment: “surjectivity onto the k-cycles of the open subspace”.
 
 > **Stacks 0EP9, surjectivity onto the `k`-cycles of the open subspace.** In Situation 0EDT let
 > `X/B` and `U/B` be good and let `j : U ⟶ X` be an open immersion over the base. Every `k`-cycle
@@ -97,7 +97,7 @@ theorem cycleGroupRestrict_surjective (sX : X ⟶ D.space) (hX : D.IsGood sX) (s
 
 [Tag 0EPY](https://stacks.math.columbia.edu/tag/0EPY) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IntegralClosedSubspace.preimageComponentsCycle_mem_cyclesOfDimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/EtalePullbackComponents.lean, line 434](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/EtalePullbackComponents.lean#L434). The attribute's comment: “the sum of the components of the inverse image is a cycle of the same δ-dimension”.
+**`AlgebraicGeometry.Space.IntegralClosedSubspace.preimageComponentsCycle_mem_cyclesOfDimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/EtalePullbackComponents.lean, line 434](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/EtalePullbackComponents.lean#L434). The attribute's comment: “the sum of the components of the inverse image is a cycle of the same δ-dimension”.
 
 > **Stacks 0EPY, the right-hand side of its formula.** Let `f : X ⟶ Y` be an étale morphism of
 > good algebraic spaces over the base of Situation 0EDT and let `Z ⊆ Y` be an integral closed
@@ -117,7 +117,7 @@ theorem IntegralClosedSubspace.preimageComponentsCycle_mem_cyclesOfDimension (sX
       cyclesOfDimension D sX (deltaDimension D sY Z)
 ```
 
-**`AlgebraicGeometry.Space.IntegralClosedSubspace.flatPullbackMap_integralCycle_eq_preimageComponentsCycle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/EtalePullbackIdentity.lean, line 482](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/EtalePullbackIdentity.lean#L482).
+**`AlgebraicGeometry.Space.IntegralClosedSubspace.flatPullbackMap_integralCycle_eq_preimageComponentsCycle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/EtalePullbackIdentity.lean, line 482](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/EtalePullbackIdentity.lean#L482).
 
 > Let `f : X ⟶ Y` be an étale morphism of good algebraic spaces over the base
 > `B` of Situation 0EDT and let `Z ⊆ Y` be an integral closed subspace, of δ-dimension `m`. Then
@@ -151,7 +151,7 @@ theorem IntegralClosedSubspace.flatPullbackMap_integralCycle_eq_preimageComponen
 
 [Tag 0EPA](https://stacks.math.columbia.edu/tag/0EPA) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isFlat_and_hasRelativeDimension_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/FlatCompositeRelativeDimension.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/FlatCompositeRelativeDimension.lean#L64). The attribute's comment: “the composite is flat of relative dimension r + s”.
+**`AlgebraicGeometry.Space.isFlat_and_hasRelativeDimension_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/FlatCompositeRelativeDimension.lean, line 64](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/FlatCompositeRelativeDimension.lean#L64). The attribute's comment: “the composite is flat of relative dimension r + s”.
 
 > Let `X/B`, `Y/B` and `Z/B` be good algebraic spaces over the base of `D` and let
 > `f : X ⟶ Y` and `g : Y ⟶ Z` be morphisms over the base which are flat of relative dimensions `r`
@@ -173,7 +173,7 @@ theorem isFlat_and_hasRelativeDimension_comp (D : BaseSpaceDimensionSituation.{u
         HasRelativeDimension (r + s) D.site D.base D.base_mem (f ≫ g)
 ```
 
-**`AlgebraicGeometry.Space.isFlat_and_hasRelativeDimension_comp_and_flatPullbackMap_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/FlatPullbackComposition.lean, line 222](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/FlatPullbackComposition.lean#L222). The attribute's comment: “both assertions: g ∘ f is flat of relative dimension r + s, and f^* ∘ g^* = (g ∘ f)^* as maps Z\_k(Z) → Z\_\{k+r+s}(X)”.
+**`AlgebraicGeometry.Space.isFlat_and_hasRelativeDimension_comp_and_flatPullbackMap_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/FlatPullbackComposition.lean, line 222](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/FlatPullbackComposition.lean#L222). The attribute's comment: “both assertions: g ∘ f is flat of relative dimension r + s, and f^* ∘ g^* = (g ∘ f)^* as maps Z\_k(Z) → Z\_\{k+r+s}(X)”.
 
 > In Situation 0EDT let `X/B`, `Y/B` and `Z/B` be good and let `f : X ⟶ Y`
 > and `g : Y ⟶ Z` be morphisms over the base which are flat of relative dimensions `r` and `s`.
@@ -207,7 +207,7 @@ theorem isFlat_and_hasRelativeDimension_comp_and_flatPullbackMap_comp :
 
 [Tag 0EPB](https://stacks.math.columbia.edu/tag/0EPB) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.flatPullback_closedSubspaceCycle_preimage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/FlatPullbackAssociatedCycle.lean, line 591](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/FlatPullbackAssociatedCycle.lean#L591). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.Space.flatPullback_closedSubspaceCycle_preimage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/FlatPullbackAssociatedCycle.lean, line 591](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/FlatPullbackAssociatedCycle.lean#L591). The attribute's comment: “part (1)”.
 
 > **Stacks 0EPB, part (1).** In Situation 0EDT let `X/B` and `Y/B` be good and let
 > `f : X ⟶ Y` be a morphism over the base which is flat of relative dimension `r`. Let `Z ⊆ Y` be
@@ -235,7 +235,7 @@ theorem flatPullback_closedSubspaceCycle_preimage (sX : X ⟶ D.space) (hX : D.I
           (closedSubspaceCycle D sY hY Z hZ k hZk)
 ```
 
-**`AlgebraicGeometry.Space.flatPullback_associatedCycle_modulePullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/FlatPullbackAssociatedCycle.lean, line 723](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/FlatPullbackAssociatedCycle.lean#L723). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.Space.flatPullback_associatedCycle_modulePullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/FlatPullbackAssociatedCycle.lean, line 723](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/FlatPullbackAssociatedCycle.lean#L723). The attribute's comment: “part (2)”.
 
 > **Stacks 0EPB, part (2).** In Situation 0EDT let `X/B` and `Y/B` be good and let
 > `f : X ⟶ Y` be a morphism over the base which is flat of relative dimension `r`. Let `F` be a
@@ -295,4 +295,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 82.10, Tag 0EP7](https://stacks.math.columbia.edu/tag/0EP7)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

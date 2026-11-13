@@ -8,13 +8,13 @@ proof: formalized
 
 # 38.30 Blowing up and flatness
 
-Section 38.30 of the Stacks Project, [Tag 080X](https://stacks.math.columbia.edu/tag/080X). 7 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 38.30 of the Stacks Project, [Tag 080X](https://stacks.math.columbia.edu/tag/080X). 7 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 080Y, a remark
 
 [Tag 080Y](https://stacks.math.columbia.edu/tag/080Y) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_admissibleBlowup_forall_restrict_factors`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/AdmissibleLocalOnBase.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/AdmissibleLocalOnBase.lean#L91). The attribute's comment: “locality on S: finitely many admissible blowups of quasi-compact opens of S are all refined by the restrictions of a single U-admissible blowup of S, each refinement itself an admissible blowup of the local solution”.
+**`AlgebraicGeometry.exists_admissibleBlowup_forall_restrict_factors`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/AdmissibleLocalOnBase.lean, line 91](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/AdmissibleLocalOnBase.lean#L91). The attribute's comment: “locality on S: finitely many admissible blowups of quasi-compact opens of S are all refined by the restrictions of a single U-admissible blowup of S, each refinement itself an admissible blowup of the local solution”.
 
 > **Stacks Project, Tag 080Y**, the locality on `S` of Remark 38.30.1, for a finite family of
 > quasi-compact opens. Let `S` be quasi-compact and quasi-separated, `U ⊆ S` a quasi-compact open,
@@ -40,7 +40,7 @@ public theorem exists_admissibleBlowup_forall_restrict_factors
         Stacks.Blowup.IsAdmissibleBlowup (c j ⁻¹ᵁ ((W j).ι ⁻¹ᵁ U)) r
 ```
 
-**`AlgebraicGeometry.exists_admissibleBlowup_finite_cover_restrict_factors`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/AdmissibleLocalOnBase.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/AdmissibleLocalOnBase.lean#L134). The attribute's comment: “locality on S: a solution on a quasi-compact open neighbourhood of every point of S is refined, over a finite subcover, by the restrictions of a single U-admissible blowup of S, each refinement itself an admissible blowup of the local solution”.
+**`AlgebraicGeometry.exists_admissibleBlowup_finite_cover_restrict_factors`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/AdmissibleLocalOnBase.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/AdmissibleLocalOnBase.lean#L134). The attribute's comment: “locality on S: a solution on a quasi-compact open neighbourhood of every point of S is refined, over a finite subcover, by the restrictions of a single U-admissible blowup of S, each refinement itself an admissible blowup of the local solution”.
 
 > **Stacks Project, Tag 080Y**, the locality on `S` of Remark 38.30.1 in the paragraph's own
 > formulation. Let `S` be quasi-compact and quasi-separated and `U ⊆ S` a quasi-compact open.
@@ -66,7 +66,7 @@ public theorem exists_admissibleBlowup_finite_cover_restrict_factors
           Stacks.Blowup.IsAdmissibleBlowup (c s ⁻¹ᵁ ((W s).ι ⁻¹ᵁ U)) r
 ```
 
-**`AlgebraicGeometry.cartierBoundaryDivisorReduction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/CartierBoundaryDivisorReduction.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/CartierBoundaryDivisorReduction.lean#L80). The attribute's comment: “the reduction to a divisor: after one U-admissible blowup the boundary is an effective Cartier divisor whose complement is the inverse image of U, and that inverse image is scheme theoretically dense”.
+**`AlgebraicGeometry.cartierBoundaryDivisorReduction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/CartierBoundaryDivisorReduction.lean, line 80](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/CartierBoundaryDivisorReduction.lean#L80). The attribute's comment: “the reduction to a divisor: after one U-admissible blowup the boundary is an effective Cartier divisor whose complement is the inverse image of U, and that inverse image is scheme theoretically dense”.
 
 > **Stacks Project, Tag 080Y**, the reduction to a divisor of Remark 38.30.1 in full. On a
 > quasi-compact and quasi-separated scheme `S` a quasi-compact open `U` becomes, after a single
@@ -85,7 +85,7 @@ public theorem cartierBoundaryDivisorReduction [CompactSpace S] [QuasiSeparatedS
     (U : S.Opens) (hU : IsCompact (U : Set S)) : CartierBoundaryDivisorReduction S U
 ```
 
-**`AlgebraicGeometry.cartierBoundaryReduction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/DominatedByBlowup.lean, line 178](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/DominatedByBlowup.lean#L178).
+**`AlgebraicGeometry.cartierBoundaryReduction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/DominatedByBlowup.lean, line 185](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/DominatedByBlowup.lean#L185).
 
 > **Stacks Project, Tag 080Y.** On a quasi-compact and quasi-separated scheme `S`, a
 > quasi-compact open `U` becomes the complement of an effective Cartier divisor after a single
@@ -98,7 +98,7 @@ public theorem cartierBoundaryReduction [CompactSpace S] [QuasiSeparatedSpace S]
     (hU : IsCompact (U : Set S)) : CartierBoundaryReduction S U
 ```
 
-**`AlgebraicGeometry.StrictTransformProblem.isSolvable_of_local`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/StrictTransformProblem/LocalGlobal.lean, line 268](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/StrictTransformProblem/LocalGlobal.lean#L268). The attribute's comment: “the local-global reduction, the remark's third paragraph; the locality of P on the base is the hypothesis the remark states it under”.
+**`AlgebraicGeometry.StrictTransformProblem.isSolvable_of_local`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/StrictTransformProblem/LocalGlobal.lean, line 268](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/StrictTransformProblem/LocalGlobal.lean#L268). The attribute's comment: “the local-global reduction, the remark's third paragraph; the locality of P on the base is the hypothesis the remark states it under”.
 
 > **[Stacks, Tag 080Y], the local-global reduction.** Suppose the property `P` is local on the
 > base: for every strict-transform problem with that property, if the base is covered by finitely
@@ -119,7 +119,7 @@ public theorem isSolvable_of_local (D : StrictTransformProblem.{u})
     D.IsSolvable
 ```
 
-**`AlgebraicGeometry.StrictTransformProblem.isSolvable_of_isSolvableIn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/StrictTransformProblem/Successive.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Blowup/StrictTransformProblem/Successive.lean#L135). The attribute's comment: “the successive reduction, the paragraph beginning `The general strategy will be to use that a composition of U-admissible blowups is a U-admissible blowup': it suffices to find a sequence of U-admissible blowups S = S\_0 <- S\_1 <- ... <- S\_n such that, setting F\_0 = F and X\_0 = X and F\_i/X\_i the strict transform of F\_\{i-1}/X\_\{i-1}, the triple F\_n/X\_n/S\_n has P. The sequence is IsSolvableIn n and the single blowup it is replaced by is IsSolvable”.
+**`AlgebraicGeometry.StrictTransformProblem.isSolvable_of_isSolvableIn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Blowup/StrictTransformProblem/Successive.lean, line 135](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Blowup/StrictTransformProblem/Successive.lean#L135). The attribute's comment: “the successive reduction, the paragraph beginning `The general strategy will be to use that a composition of U-admissible blowups is a U-admissible blowup': it suffices to find a sequence of U-admissible blowups S = S\_0 <- S\_1 <- ... <- S\_n such that, setting F\_0 = F and X\_0 = X and F\_i/X\_i the strict transform of F\_\{i-1}/X\_\{i-1}, the triple F\_n/X\_n/S\_n has P. The sequence is IsSolvableIn n and the single blowup it is replaced by is IsSolvable”.
 
 > **[Stacks, Tag 080Y], the successive reduction.** To solve the strict-transform problem it
 > suffices to find a *sequence* of `U`-admissible blowups `S = S₀ ← S₁ ← … ← Sₙ` whose iterated
@@ -140,7 +140,7 @@ public theorem isSolvable_of_isSolvableIn (n : ℕ) (D : StrictTransformProblem.
 
 [Tag 0810](https://stacks.math.columbia.edu/tag/0810) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_idealSheafData_forall_blowUp_exists_free_of_rank`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/BlowupIntegralFibresGeometric.lean, line 316](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/BlowupIntegralFibresGeometric.lean#L316). The attribute's comment: “the scheme-level form”.
+**`AlgebraicGeometry.exists_idealSheafData_forall_blowUp_exists_free_of_rank`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/BlowupIntegralFibresGeometric.lean, line 316](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/BlowupIntegralFibresGeometric.lean#L316). The attribute's comment: “the scheme-level form”.
 
 > **Stacks Project, Tag 0810.** Let `S` be an affine scheme, `s : Γ(S, ⊤)`, `r ≥ 0` an integer,
 > `f : X ⟶ S` an affine morphism and `F` a quasi-coherent `𝒪_X`-module. Assume
@@ -184,7 +184,7 @@ public theorem exists_idealSheafData_forall_blowUp_exists_free_of_rank
               SheafOfModules.free.{u} (ULift.{u} (Fin r)))
 ```
 
-**`Stacks.StrictTransform.exists_fg_ideal_forall_chartFreeOfRank`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/StrictTransform/AffineChartSections.lean, line 302](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/StrictTransform/AffineChartSections.lean#L302). The attribute's comment: “the conclusion read on the strict transform of [Stacks, Tag 080D]: on every affine chart of a base change on which the inverse image of the centre is the zero locus of the image of the chart's denominator, the strict transform of the module is free of rank r on a basic open through every extended prime of the chart base. The hypotheses are the source's own, read on the global sections of the two affine schemes; the existence of such charts is not claimed”.
+**`Stacks.StrictTransform.exists_fg_ideal_forall_chartFreeOfRank`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/StrictTransform/AffineChartSections.lean, line 301](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/StrictTransform/AffineChartSections.lean#L301). The attribute's comment: “the conclusion read on the strict transform of [Stacks, Tag 080D]: on every affine chart of a base change on which the inverse image of the centre is the zero locus of the image of the chart's denominator, the strict transform of the module is free of rank r on a basic open through every extended prime of the chart base. The hypotheses are the source's own, read on the global sections of the two affine schemes; the existence of such charts is not claimed”.
 
 > **Stacks Project, Tag 0810, read on the strict transform.** Let `S` be an affine scheme, `X`
 > an affine scheme over it with `Γ(S, ⊤) ⟶ Γ(X, ⊤)` flat and of finite presentation with
@@ -238,13 +238,13 @@ public theorem exists_fg_ideal_forall_chartFreeOfRank [IsAffine X] [IsAffine S] 
       ∀ (a : Γ(S, ⊤)) (ha : a ∈ I),
         letI : Fact (a ∈ I) := ⟨ha⟩
         ∀ q' : Ideal (Blowup I a), q'.IsPrime →
-          ChartFreeOfRank f F M (CommRingCat.of (Γ(X, ⊤) ⊗[Γ(S, ⊤)] Blowup I a))
+          ChartFreeOfRank f F (CommRingCat.of (Γ(X, ⊤) ⊗[Γ(S, ⊤)] Blowup I a))
             (CommRingCat.ofHom (algebraMap Γ(X, ⊤) (Γ(X, ⊤) ⊗[Γ(S, ⊤)] Blowup I a)))
             (algebraMap Γ(X, ⊤) (Γ(X, ⊤) ⊗[Γ(S, ⊤)] Blowup I a) (f.appTop.hom a)) r
             (Ideal.map Algebra.TensorProduct.includeRight q')
 ```
 
-**`exists_fg_ideal_forall_blowup_chart_exists_away_basis`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/BlowupFlattening.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/BlowupFlattening.lean#L57).
+**`exists_fg_ideal_forall_blowup_chart_exists_away_basis`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/BlowupFlattening.lean, line 57](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/BlowupFlattening.lean#L57).
 
 > **Stacks Project, Tag 0810.** Let `R → S` be flat and of finite presentation with
 > geometrically integral fibres, let `f : R`, and let `M` be a finite `S`-module which is finitely
@@ -297,7 +297,7 @@ public theorem exists_fg_ideal_forall_blowup_chart_exists_away_basis
 
 [Tag 0811](https://stacks.math.columbia.edu/tag/0811) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isAdmissibleBlowup_opens_finitelyLocallyFree_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/BlowupIntegralFibres0811.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/BlowupIntegralFibres0811.lean#L147). The attribute's comment: “the full statement under hypotheses (1)-(4) of the source: a U-admissible blowup and an open of the base change on which the strict transform is finitely locally free and which surjects onto the blowup”.
+**`AlgebraicGeometry.exists_isAdmissibleBlowup_opens_finitelyLocallyFree_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/BlowupIntegralFibres0811.lean, line 147](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/BlowupIntegralFibres0811.lean#L147). The attribute's comment: “the full statement under hypotheses (1)-(4) of the source: a U-admissible blowup and an open of the base change on which the strict transform is finitely locally free and which surjects onto the blowup”.
 
 > **Stacks Project, Tag 0811.** Let `S` be a quasi-compact and quasi-separated scheme, let
 > `f : X ⟶ S` be a morphism, let `F` be a quasi-coherent `𝒪_X`-module and let `U ⊆ S` be a
@@ -348,7 +348,7 @@ theorem exists_isAdmissibleBlowup_opens_finitelyLocallyFree_surjective
 
 [Tag 0812](https://stacks.math.columbia.edu/tag/0812) in the Stacks Project.
 
-**`fittingIdealZero_quotient_fg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/FittingIdealEtale.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/FittingIdealEtale.lean#L83). The attribute's comment: “finite generation of the Fitting ideal”.
+**`fittingIdealZero_quotient_fg`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/FittingIdealEtale.lean, line 83](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/FittingIdealEtale.lean#L83). The attribute's comment: “finite generation of the Fitting ideal”.
 
 > **Stacks Project, Tag 0812.** The zeroth Fitting ideal of a quotient of a finite
 > projective algebra by a finitely generated ideal is finitely generated.
@@ -360,7 +360,7 @@ theorem fittingIdealZero_quotient_fg
     (fittingIdeal (R := A) (M := C ⧸ J) 0).FG
 ```
 
-**`map_fittingIdealZero_quotient_eq_mul_of_etale_away`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/FittingIdealEtale.lean, line 263](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/FittingIdealEtale.lean#L263). The attribute's comment: “factorization after localization”.
+**`map_fittingIdealZero_quotient_eq_mul_of_etale_away`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/FittingIdealEtale.lean, line 263](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/FittingIdealEtale.lean#L263). The attribute's comment: “factorization after localization”.
 
 > **Stacks Project, Tag 0812.** Let `C` be a finite locally free `A`-algebra and let `J` be
 > an ideal of `C`. If `C` becomes étale over `A` after inverting `h`, then the extension of
@@ -383,7 +383,7 @@ theorem map_fittingIdealZero_quotient_eq_mul_of_etale_away
 
 [Tag 0813](https://stacks.math.columbia.edu/tag/0813) in the Stacks Project.
 
-**`exists_ideal_map_eq_mul_after_localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/FittingIdealEtale.lean, line 403](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/FittingIdealEtale.lean#L403).
+**`exists_ideal_map_eq_mul_after_localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/FittingIdealEtale.lean, line 403](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/FittingIdealEtale.lean#L403).
 
 > **Stacks Project, Tag 0813.** Let `A → B` be étale, let `a ∈ A`, and let `J` be a
 > finitely generated ideal of `B` with `V(J) ⊆ V(aB)`. At every prime `q` of `B`,
@@ -407,7 +407,7 @@ theorem exists_ideal_map_eq_mul_after_localization
 
 [Tag 0814](https://stacks.math.columbia.edu/tag/0814) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isAdmissibleBlowup_isFlatOver_strictTransformSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/EtaleLocalFlatteningDescent.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/EtaleLocalFlatteningDescent.lean#L106). The attribute's comment: “the surjectivity half of condition (1) is not assumed; it is unused”.
+**`AlgebraicGeometry.exists_isAdmissibleBlowup_isFlatOver_strictTransformSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/EtaleLocalFlatteningDescent.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/EtaleLocalFlatteningDescent.lean#L106). The attribute's comment: “the surjectivity half of condition (1) is not assumed; it is unused”.
 
 > **Stacks Project, Tag 0814.** Let `S` be a quasi-compact and quasi-separated scheme, let
 > `f : X ⟶ S` be a morphism of schemes, let `F` be a quasi-coherent `𝒪_X`-module and let `U ⊆ S` be
@@ -450,7 +450,7 @@ theorem exists_isAdmissibleBlowup_isFlatOver_strictTransformSheaf {S X : Scheme.
 
 [Tag 0815](https://stacks.math.columbia.edu/tag/0815) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isAdmissibleBlowup_isFlatOver_strictTransformSheaf_of_affineCharts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/ModuleFlatteningBlowup.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/ModuleFlatteningBlowup.lean#L129).
+**`AlgebraicGeometry.exists_isAdmissibleBlowup_isFlatOver_strictTransformSheaf_of_affineCharts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/ModuleFlatteningBlowup.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/ModuleFlatteningBlowup.lean#L129).
 
 > **Stacks Project, Tag 0815.** Let `S` be a quasi-compact and quasi-separated scheme, let
 > `f : X ⟶ S` be locally of finite presentation with `X` quasi-compact, let `F` be a quasi-coherent
@@ -490,4 +490,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 38.30, Tag 080X](https://stacks.math.columbia.edu/tag/080X)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

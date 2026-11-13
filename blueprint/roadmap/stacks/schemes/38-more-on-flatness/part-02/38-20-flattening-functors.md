@@ -8,13 +8,13 @@ proof: formalized
 
 # 38.20 Flattening functors
 
-Section 38.20 of the Stacks Project, [Tag 05MG](https://stacks.math.columbia.edu/tag/05MG). 15 tags here are carried by 68 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 38.20 of the Stacks Project, [Tag 05MG](https://stacks.math.columbia.edu/tag/05MG). 15 tags here are carried by 68 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 05MH, a situation
 
 [Tag 05MH](https://stacks.math.columbia.edu/tag/05MH) in the Stacks Project.
 
-**`Stacks.Flatness.ModuleMapBaseChangeSituation.IsInjectiveAfterBaseChange`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctors/Injectivity.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctors/Injectivity.lean#L69). The attribute's comment: “the injectivity condition”.
+**`Stacks.Flatness.ModuleMapBaseChangeSituation.IsInjectiveAfterBaseChange`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctors/Injectivity.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctors/Injectivity.lean#L69). The attribute's comment: “the injectivity condition”.
 
 > The condition that the base-changed homomorphism is injective.
 
@@ -22,7 +22,7 @@ Section 38.20 of the Stacks Project, [Tag 05MG](https://stacks.math.columbia.edu
 abbrev IsInjectiveAfterBaseChange (D : ModuleMapBaseChangeSituation.{u}) (T : Over D.S) : Prop
 ```
 
-**`Stacks.Flatness.ModuleMapBaseChangeSituation.FlatOver`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctors/Injectivity.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctors/Injectivity.lean#L87). The attribute's comment: “the category with flat morphisms”.
+**`Stacks.Flatness.ModuleMapBaseChangeSituation.FlatOver`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctors/Injectivity.lean, line 87](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctors/Injectivity.lean#L87). The attribute's comment: “the category with flat morphisms”.
 
 > The category of schemes over `S` whose morphisms are only the flat ones.
 
@@ -30,7 +30,7 @@ abbrev IsInjectiveAfterBaseChange (D : ModuleMapBaseChangeSituation.{u}) (T : Ov
 abbrev FlatOver (S : Scheme.{u})
 ```
 
-**`Stacks.Flatness.ModuleMapBaseChangeSituation.isInjectiveAfterBaseChange_of_flat_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctors/Injectivity.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctors/Injectivity.lean#L94). The attribute's comment: “functoriality of the injectivity condition”.
+**`Stacks.Flatness.ModuleMapBaseChangeSituation.isInjectiveAfterBaseChange_of_flat_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctors/Injectivity.lean, line 94](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctors/Injectivity.lean#L94). The attribute's comment: “functoriality of the injectivity condition”.
 
 > Being injective after base change is preserved by every *flat* further base change: the
 > transition morphism of base changes is then flat, so pulling back along it preserves
@@ -43,7 +43,7 @@ theorem isInjectiveAfterBaseChange_of_flat_hom (D : ModuleMapBaseChangeSituation
     (h : D.IsInjectiveAfterBaseChange T) : D.IsInjectiveAfterBaseChange T'
 ```
 
-**`Stacks.Flatness.ModuleMapBaseChangeSituation.injectivityFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctors/Injectivity.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctors/Injectivity.lean#L111). The attribute's comment: “the injectivity functor”.
+**`Stacks.Flatness.ModuleMapBaseChangeSituation.injectivityFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctors/Injectivity.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctors/Injectivity.lean#L111). The attribute's comment: “the injectivity functor”.
 
 > The subterminal functor on schemes over the base with flat transition morphisms recording
 > where the base-changed homomorphism is injective.
@@ -53,7 +53,7 @@ noncomputable def injectivityFunctor (D : ModuleMapBaseChangeSituation.{u}) :
     (FlatOver D.S)ᵒᵖ ⥤ Type
 ```
 
-**`Stacks.Flatness.ModuleMapBaseChangeSituation.isInjectiveAfterBaseChange_of_hom_of_epi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctors/Injectivity.lean, line 123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctors/Injectivity.lean#L123). The attribute's comment: “unrestricted functoriality of injectivity for a surjection”.
+**`Stacks.Flatness.ModuleMapBaseChangeSituation.isInjectiveAfterBaseChange_of_hom_of_epi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctors/Injectivity.lean, line 123](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctors/Injectivity.lean#L123). The attribute's comment: “unrestricted functoriality of injectivity for a surjection”.
 
 > If the homomorphism is surjective then its base change is both injective and surjective
 > whenever it is injective, hence an isomorphism, and being an isomorphism after base change is
@@ -65,7 +65,7 @@ theorem isInjectiveAfterBaseChange_of_hom_of_epi (D : ModuleMapBaseChangeSituati
     D.IsInjectiveAfterBaseChange T'
 ```
 
-**`Stacks.Flatness.ModuleMapBaseChangeSituation.injectivityFunctorOfEpi`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctors/Injectivity.lean, line 140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctors/Injectivity.lean#L140). The attribute's comment: “the unrestricted injectivity functor for a surjection”.
+**`Stacks.Flatness.ModuleMapBaseChangeSituation.injectivityFunctorOfEpi`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctors/Injectivity.lean, line 140](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctors/Injectivity.lean#L140). The attribute's comment: “the unrestricted injectivity functor for a surjection”.
 
 > For a surjective homomorphism, injectivity after base change defines a subterminal functor
 > on all schemes over the base.
@@ -75,7 +75,7 @@ noncomputable def injectivityFunctorOfEpi (D : ModuleMapBaseChangeSituation.{u})
     (Over D.S)ᵒᵖ ⥤ Type
 ```
 
-**`Stacks.Flatness.ModuleMapBaseChangeSituation.injectivityFunctorOfEpiRestrictionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctors/Injectivity.lean, line 150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctors/Injectivity.lean#L150). The attribute's comment: “restriction of the unrestricted injectivity functor”.
+**`Stacks.Flatness.ModuleMapBaseChangeSituation.injectivityFunctorOfEpiRestrictionIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctors/Injectivity.lean, line 150](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctors/Injectivity.lean#L150). The attribute's comment: “restriction of the unrestricted injectivity functor”.
 
 > The unrestricted injectivity functor of a surjection restricts along the inclusion of the
 > category with flat morphisms to the injectivity functor.
@@ -87,7 +87,7 @@ noncomputable def injectivityFunctorOfEpiRestrictionIso (D : ModuleMapBaseChange
       D.injectivityFunctor
 ```
 
-**`Stacks.Flatness.ModuleMapBaseChangeSituation.injectivityFunctorOfEpiIsoIsomorphismFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctors/Injectivity.lean, line 160](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctors/Injectivity.lean#L160). The attribute's comment: “injectivity equals isomorphism for a surjection”.
+**`Stacks.Flatness.ModuleMapBaseChangeSituation.injectivityFunctorOfEpiIsoIsomorphismFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctors/Injectivity.lean, line 160](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctors/Injectivity.lean#L160). The attribute's comment: “injectivity equals isomorphism for a surjection”.
 
 > For a surjective homomorphism the unrestricted injectivity functor is the isomorphism
 > functor: a surjection that is injective after base change is an isomorphism after base change,
@@ -99,7 +99,7 @@ noncomputable def injectivityFunctorOfEpiIsoIsomorphismFunctor
     D.injectivityFunctorOfEpi ≅ D.isomorphismFunctor
 ```
 
-**`Stacks.Flatness.ModuleMapBaseChangeSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/ModuleMapBaseChange.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/ModuleMapBaseChange.lean#L90). The attribute's comment: “the situation”.
+**`Stacks.Flatness.ModuleMapBaseChangeSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/ModuleMapBaseChange.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/ModuleMapBaseChange.lean#L90). The attribute's comment: “the situation”.
 
 > The standing data for testing a homomorphism of quasi-coherent modules after an arbitrary
 > base change: a morphism of schemes `f : X ⟶ S`, two quasi-coherent modules on `X`, and a
@@ -109,7 +109,7 @@ noncomputable def injectivityFunctorOfEpiIsoIsomorphismFunctor
 structure ModuleMapBaseChangeSituation
 ```
 
-**`Stacks.Flatness.ModuleMapBaseChangeSituation.baseChange`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/ModuleMapBaseChange.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/ModuleMapBaseChange.lean#L112). The attribute's comment: “the base-changed scheme”.
+**`Stacks.Flatness.ModuleMapBaseChangeSituation.baseChange`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/ModuleMapBaseChange.lean, line 112](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/ModuleMapBaseChange.lean#L112). The attribute's comment: “the base-changed scheme”.
 
 > The base change `X ×_S T` of the source along a scheme `T` over the base.
 
@@ -118,7 +118,7 @@ noncomputable abbrev baseChange (D : ModuleMapBaseChangeSituation.{u}) (T : Over
     Scheme.{u}
 ```
 
-**`Stacks.Flatness.ModuleMapBaseChangeSituation.baseChangeMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/ModuleMapBaseChange.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/ModuleMapBaseChange.lean#L118). The attribute's comment: “the base-changed homomorphism”.
+**`Stacks.Flatness.ModuleMapBaseChangeSituation.baseChangeMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/ModuleMapBaseChange.lean, line 118](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/ModuleMapBaseChange.lean#L118). The attribute's comment: “the base-changed homomorphism”.
 
 > The pullback of the module homomorphism to `X ×_S T`.
 
@@ -128,7 +128,7 @@ noncomputable def baseChangeMap (D : ModuleMapBaseChangeSituation.{u}) (T : Over
       (Scheme.Modules.pullback (pullback.fst D.f T.hom)).obj D.G
 ```
 
-**`Stacks.Flatness.ModuleMapBaseChangeSituation.IsIsomorphismAfterBaseChange`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/ModuleMapBaseChange.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/ModuleMapBaseChange.lean#L125). The attribute's comment: “the isomorphism condition”.
+**`Stacks.Flatness.ModuleMapBaseChangeSituation.IsIsomorphismAfterBaseChange`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/ModuleMapBaseChange.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/ModuleMapBaseChange.lean#L125). The attribute's comment: “the isomorphism condition”.
 
 > The condition that the base-changed homomorphism is an isomorphism.
 
@@ -137,7 +137,7 @@ abbrev IsIsomorphismAfterBaseChange (D : ModuleMapBaseChangeSituation.{u}) (T : 
     Prop
 ```
 
-**`Stacks.Flatness.ModuleMapBaseChangeSituation.IsSurjectiveAfterBaseChange`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/ModuleMapBaseChange.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/ModuleMapBaseChange.lean#L131). The attribute's comment: “the surjectivity condition”.
+**`Stacks.Flatness.ModuleMapBaseChangeSituation.IsSurjectiveAfterBaseChange`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/ModuleMapBaseChange.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/ModuleMapBaseChange.lean#L131). The attribute's comment: “the surjectivity condition”.
 
 > The condition that the base-changed homomorphism is surjective.
 
@@ -146,7 +146,7 @@ abbrev IsSurjectiveAfterBaseChange (D : ModuleMapBaseChangeSituation.{u}) (T : O
     Prop
 ```
 
-**`Stacks.Flatness.ModuleMapBaseChangeSituation.IsZeroAfterBaseChange`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/ModuleMapBaseChange.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/ModuleMapBaseChange.lean#L137). The attribute's comment: “the zero condition”.
+**`Stacks.Flatness.ModuleMapBaseChangeSituation.IsZeroAfterBaseChange`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/ModuleMapBaseChange.lean, line 137](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/ModuleMapBaseChange.lean#L137). The attribute's comment: “the zero condition”.
 
 > The condition that the base-changed homomorphism is zero.
 
@@ -154,7 +154,7 @@ abbrev IsSurjectiveAfterBaseChange (D : ModuleMapBaseChangeSituation.{u}) (T : O
 abbrev IsZeroAfterBaseChange (D : ModuleMapBaseChangeSituation.{u}) (T : Over D.S) : Prop
 ```
 
-**`Stacks.Flatness.ModuleMapBaseChangeSituation.isIsomorphismAfterBaseChange_of_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/ModuleMapBaseChange.lean, line 189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/ModuleMapBaseChange.lean#L189). The attribute's comment: “functoriality of the isomorphism condition”.
+**`Stacks.Flatness.ModuleMapBaseChangeSituation.isIsomorphismAfterBaseChange_of_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/ModuleMapBaseChange.lean, line 189](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/ModuleMapBaseChange.lean#L189). The attribute's comment: “functoriality of the isomorphism condition”.
 
 > Being an isomorphism after base change is preserved by every further base change.
 
@@ -164,7 +164,7 @@ theorem isIsomorphismAfterBaseChange_of_hom (D : ModuleMapBaseChangeSituation.{u
     D.IsIsomorphismAfterBaseChange T'
 ```
 
-**`Stacks.Flatness.ModuleMapBaseChangeSituation.isSurjectiveAfterBaseChange_of_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/ModuleMapBaseChange.lean, line 199](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/ModuleMapBaseChange.lean#L199). The attribute's comment: “functoriality of the surjectivity condition”.
+**`Stacks.Flatness.ModuleMapBaseChangeSituation.isSurjectiveAfterBaseChange_of_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/ModuleMapBaseChange.lean, line 199](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/ModuleMapBaseChange.lean#L199). The attribute's comment: “functoriality of the surjectivity condition”.
 
 > Being surjective after base change is preserved by every further base change.
 
@@ -174,7 +174,7 @@ theorem isSurjectiveAfterBaseChange_of_hom (D : ModuleMapBaseChangeSituation.{u}
     D.IsSurjectiveAfterBaseChange T'
 ```
 
-**`Stacks.Flatness.ModuleMapBaseChangeSituation.isZeroAfterBaseChange_of_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/ModuleMapBaseChange.lean, line 209](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/ModuleMapBaseChange.lean#L209). The attribute's comment: “functoriality of the zero condition”.
+**`Stacks.Flatness.ModuleMapBaseChangeSituation.isZeroAfterBaseChange_of_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/ModuleMapBaseChange.lean, line 209](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/ModuleMapBaseChange.lean#L209). The attribute's comment: “functoriality of the zero condition”.
 
 > Being zero after base change is preserved by every further base change.
 
@@ -183,7 +183,7 @@ theorem isZeroAfterBaseChange_of_hom (D : ModuleMapBaseChangeSituation.{u}) {T T
     (g : T' ⟶ T) (h : D.IsZeroAfterBaseChange T) : D.IsZeroAfterBaseChange T'
 ```
 
-**`Stacks.Flatness.ModuleMapBaseChangeSituation.isomorphismFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/ModuleMapBaseChange.lean, line 218](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/ModuleMapBaseChange.lean#L218). The attribute's comment: “the isomorphism functor”.
+**`Stacks.Flatness.ModuleMapBaseChangeSituation.isomorphismFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/ModuleMapBaseChange.lean, line 218](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/ModuleMapBaseChange.lean#L218). The attribute's comment: “the isomorphism functor”.
 
 > The subterminal functor on schemes over the base recording where the base-changed
 > homomorphism is an isomorphism.
@@ -193,7 +193,7 @@ noncomputable def isomorphismFunctor (D : ModuleMapBaseChangeSituation.{u}) :
     (Over D.S)ᵒᵖ ⥤ Type
 ```
 
-**`Stacks.Flatness.ModuleMapBaseChangeSituation.surjectivityFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/ModuleMapBaseChange.lean, line 228](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/ModuleMapBaseChange.lean#L228). The attribute's comment: “the surjectivity functor”.
+**`Stacks.Flatness.ModuleMapBaseChangeSituation.surjectivityFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/ModuleMapBaseChange.lean, line 228](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/ModuleMapBaseChange.lean#L228). The attribute's comment: “the surjectivity functor”.
 
 > The subterminal functor on schemes over the base recording where the base-changed
 > homomorphism is surjective.
@@ -203,7 +203,7 @@ noncomputable def surjectivityFunctor (D : ModuleMapBaseChangeSituation.{u}) :
     (Over D.S)ᵒᵖ ⥤ Type
 ```
 
-**`Stacks.Flatness.ModuleMapBaseChangeSituation.zeroFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/ModuleMapBaseChange.lean, line 238](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/ModuleMapBaseChange.lean#L238). The attribute's comment: “the zero functor”.
+**`Stacks.Flatness.ModuleMapBaseChangeSituation.zeroFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/ModuleMapBaseChange.lean, line 238](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/ModuleMapBaseChange.lean#L238). The attribute's comment: “the zero functor”.
 
 > The subterminal functor on schemes over the base recording where the base-changed
 > homomorphism is zero.
@@ -217,7 +217,7 @@ noncomputable def zeroFunctor (D : ModuleMapBaseChangeSituation.{u}) :
 
 [Tag 05MJ](https://stacks.math.columbia.edu/tag/05MJ) in the Stacks Project.
 
-**`Stacks.Flatness.ModuleMapBaseChangeSituation.isomorphismFunctor_isSheaf_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctors/FpqcSheaf.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctors/FpqcSheaf.lean#L76). The attribute's comment: “iso\_fpqc”.
+**`Stacks.Flatness.ModuleMapBaseChangeSituation.isomorphismFunctor_isSheaf_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctors/FpqcSheaf.lean, line 76](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctors/FpqcSheaf.lean#L76). The attribute's comment: “iso\_fpqc”.
 
 > The isomorphism functor of a homomorphism of quasi-coherent modules satisfies the sheaf
 > condition for the fpqc topology on schemes over the base.
@@ -227,7 +227,7 @@ theorem isomorphismFunctor_isSheaf_fpqc (D : ModuleMapBaseChangeSituation.{u}) :
     Presheaf.IsSheaf (Scheme.fpqcTopology.over D.S) D.isomorphismFunctor
 ```
 
-**`Stacks.Flatness.ModuleMapBaseChangeSituation.surjectivityFunctor_isSheaf_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctors/FpqcSheaf.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctors/FpqcSheaf.lean#L85). The attribute's comment: “surj\_fpqc”.
+**`Stacks.Flatness.ModuleMapBaseChangeSituation.surjectivityFunctor_isSheaf_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctors/FpqcSheaf.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctors/FpqcSheaf.lean#L85). The attribute's comment: “surj\_fpqc”.
 
 > The surjectivity functor of a homomorphism of quasi-coherent modules satisfies the sheaf
 > condition for the fpqc topology on schemes over the base.
@@ -237,7 +237,7 @@ theorem surjectivityFunctor_isSheaf_fpqc (D : ModuleMapBaseChangeSituation.{u}) 
     Presheaf.IsSheaf (Scheme.fpqcTopology.over D.S) D.surjectivityFunctor
 ```
 
-**`Stacks.Flatness.ModuleMapBaseChangeSituation.zeroFunctor_isSheaf_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctors/FpqcSheaf.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctors/FpqcSheaf.lean#L94). The attribute's comment: “zero\_fpqc”.
+**`Stacks.Flatness.ModuleMapBaseChangeSituation.zeroFunctor_isSheaf_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctors/FpqcSheaf.lean, line 94](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctors/FpqcSheaf.lean#L94). The attribute's comment: “zero\_fpqc”.
 
 > The zero functor of a homomorphism of quasi-coherent modules satisfies the sheaf condition
 > for the fpqc topology on schemes over the base.
@@ -247,7 +247,7 @@ theorem zeroFunctor_isSheaf_fpqc (D : ModuleMapBaseChangeSituation.{u}) :
     Presheaf.IsSheaf (Scheme.fpqcTopology.over D.S) D.zeroFunctor
 ```
 
-**`Stacks.Flatness.ModuleMapBaseChangeSituation.injectivityFunctor_isSheaf_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctors/FpqcSheaf.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctors/FpqcSheaf.lean#L103). The attribute's comment: “inj\_fpqc”.
+**`Stacks.Flatness.ModuleMapBaseChangeSituation.injectivityFunctor_isSheaf_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctors/FpqcSheaf.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctors/FpqcSheaf.lean#L103). The attribute's comment: “inj\_fpqc”.
 
 > The injectivity functor of a homomorphism of quasi-coherent modules satisfies the sheaf
 > condition for the fpqc topology on the category of schemes over the base with flat morphisms.
@@ -260,7 +260,7 @@ theorem injectivityFunctor_isSheaf_fpqc (D : ModuleMapBaseChangeSituation.{u}) :
       D.injectivityFunctor
 ```
 
-**`Stacks.Flatness.ModuleMapBaseChangeSituation.isomorphismFunctor_preservesColimit_of_isAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctors/IsomorphismLimit.lean, line 249](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctors/IsomorphismLimit.lean#L249). The attribute's comment: “iso\_limit”.
+**`Stacks.Flatness.ModuleMapBaseChangeSituation.isomorphismFunctor_preservesColimit_of_isAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctors/IsomorphismLimit.lean, line 249](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctors/IsomorphismLimit.lean#L249). The attribute's comment: “iso\_limit”.
 
 > **Stacks Project, Tag 05MJ.** The isomorphism functor of a homomorphism of quasi-coherent
 > modules with source of finite type and target of finite presentation, along a quasi-compact
@@ -274,7 +274,7 @@ theorem isomorphismFunctor_preservesColimit_of_isAffine (D : ModuleMapBaseChange
     PreservesColimit T.op D.isomorphismFunctor
 ```
 
-**`Stacks.Flatness.ModuleMapBaseChangeSituation.surjectivityFunctor_preservesColimit_of_isAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctors/SurjectivityLimit.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctors/SurjectivityLimit.lean#L101). The attribute's comment: “surj\_limit”.
+**`Stacks.Flatness.ModuleMapBaseChangeSituation.surjectivityFunctor_preservesColimit_of_isAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctors/SurjectivityLimit.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctors/SurjectivityLimit.lean#L101). The attribute's comment: “surj\_limit”.
 
 > **Stacks Project, Tag 05MJ.**  The surjectivity functor of a homomorphism of quasi-coherent
 > modules with target of finite type, along a quasi-compact morphism, preserves the filtered
@@ -287,7 +287,7 @@ theorem surjectivityFunctor_preservesColimit_of_isAffine (D : ModuleMapBaseChang
     PreservesColimit T.op D.surjectivityFunctor
 ```
 
-**`Stacks.Flatness.ModuleMapBaseChangeSituation.zeroFunctor_preservesColimit_of_isAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctors/ZeroLimit.lean, line 340](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctors/ZeroLimit.lean#L340). The attribute's comment: “zero\_limit”.
+**`Stacks.Flatness.ModuleMapBaseChangeSituation.zeroFunctor_preservesColimit_of_isAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctors/ZeroLimit.lean, line 340](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctors/ZeroLimit.lean#L340). The attribute's comment: “zero\_limit”.
 
 > **Stacks Project, Tag 05MJ.**  The zero functor of a homomorphism of quasi-coherent modules
 > with source of finite type, along a quasi-compact morphism, preserves the filtered colimit
@@ -304,7 +304,7 @@ theorem zeroFunctor_preservesColimit_of_isAffine (D : ModuleMapBaseChangeSituati
 
 [Tag 05MK](https://stacks.math.columbia.edu/tag/05MK) in the Stacks Project.
 
-**`LocalAlgCat`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/HenselianFlattening.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/HenselianFlattening.lean#L103). The attribute's comment: “objects”.
+**`LocalAlgCat`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/HenselianFlattening.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/HenselianFlattening.lean#L103). The attribute's comment: “objects”.
 
 > **Stacks Project, Tag 05MK.** An object of the category `C`: a local `A`-algebra whose
 > structure homomorphism is a local homomorphism of local rings.
@@ -313,7 +313,7 @@ theorem zeroFunctor_preservesColimit_of_isAffine (D : ModuleMapBaseChangeSituati
 structure LocalAlgCat (A : Type u) [CommRing A] [IsLocalRing A]
 ```
 
-**`LocalAlgCat.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/HenselianFlattening.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/HenselianFlattening.lean#L129). The attribute's comment: “morphisms”.
+**`LocalAlgCat.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/HenselianFlattening.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/HenselianFlattening.lean#L129). The attribute's comment: “morphisms”.
 
 > **Stacks Project, Tag 05MK.** A morphism of the category `C`: a local homomorphism of
 > `A`-algebras.
@@ -322,7 +322,7 @@ structure LocalAlgCat (A : Type u) [CommRing A] [IsLocalRing A]
 structure Hom (R S : LocalAlgCat.{u, v} A)
 ```
 
-**An instance with no name** in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/HenselianFlattening.lean, line 138](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/HenselianFlattening.lean#L138). The attribute's comment: “the category”.
+**An instance with no name** in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/HenselianFlattening.lean, line 138](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/HenselianFlattening.lean#L138). The attribute's comment: “the category”.
 
 > **Stacks Project, Tag 05MK.** Local `A`-algebras and local `A`-algebra homomorphisms form a
 > category.
@@ -331,7 +331,7 @@ structure Hom (R S : LocalAlgCat.{u, v} A)
 instance : Category (LocalAlgCat.{u, v} A)
 ```
 
-**`Module.FlatAtPointSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/HenselianFlattening.lean, line 171](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/HenselianFlattening.lean#L171). The attribute's comment: “the situation”.
+**`Module.FlatAtPointSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/HenselianFlattening.lean, line 171](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/HenselianFlattening.lean#L171). The attribute's comment: “the situation”.
 
 > **Stacks Project, Tag 05MK.** The standing data of the local flattening problem: a local
 > homomorphism `A → B` of local rings and a `B`-module `M`.
@@ -340,7 +340,7 @@ instance : Category (LocalAlgCat.{u, v} A)
 structure FlatAtPointSituation
 ```
 
-**`Module.FlatAtPointSituation.ConditionOn.of_isLocalHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/HenselianFlattening.lean, line 235](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/HenselianFlattening.lean#L235). The attribute's comment: “base-change stability”.
+**`Module.FlatAtPointSituation.ConditionOn.of_isLocalHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/HenselianFlattening.lean, line 235](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/HenselianFlattening.lean#L235). The attribute's comment: “base-change stability”.
 
 > **Stacks Project, Tag 05MK.** The flatness condition is preserved by a local homomorphism of
 > local `A`-algebras. The source and the target may live in different universes.
@@ -352,7 +352,7 @@ theorem ConditionOn.of_isLocalHom {S : FlatAtPointSituation.{u, v, w}} (R : Type
     S.ConditionOn T
 ```
 
-**`Module.FlatAtPointSituation.condition_of_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/HenselianFlattening.lean, line 244](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/HenselianFlattening.lean#L244). The attribute's comment: “base-change stability”.
+**`Module.FlatAtPointSituation.condition_of_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/HenselianFlattening.lean, line 244](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/HenselianFlattening.lean#L244). The attribute's comment: “base-change stability”.
 
 > **Stacks Project, Tag 05MK.** The flatness condition is preserved by a morphism of the
 > category `C` of local `A`-algebras; this is what makes `F_lf` a functor.
@@ -362,7 +362,7 @@ theorem condition_of_hom (S : FlatAtPointSituation.{u, v, w}) {R T : LocalAlgCat
     (f : R ⟶ T) (h : S.Condition R) : S.Condition T
 ```
 
-**`Module.FlatAtPointSituation.flatAtPointFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/HenselianFlattening.lean, line 312](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/HenselianFlattening.lean#L312). The attribute's comment: “the functor”.
+**`Module.FlatAtPointSituation.flatAtPointFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/HenselianFlattening.lean, line 312](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/HenselianFlattening.lean#L312). The attribute's comment: “the functor”.
 
 > **Stacks Project, Tag 05MK.** The functor `F_lf` on the category `C` of local `A`-algebras:
 > it takes the value a singleton where the flatness condition holds, and the empty set elsewhere.
@@ -377,7 +377,7 @@ def flatAtPointFunctor (S : FlatAtPointSituation.{u, v, w}) :
 
 [Tag 05ML](https://stacks.math.columbia.edu/tag/05ML) in the Stacks Project.
 
-**`Module.FlatAtPointSituation.ConditionOn`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/HenselianFlattening.lean, line 213](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/HenselianFlattening.lean#L213).
+**`Module.FlatAtPointSituation.ConditionOn`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/HenselianFlattening.lean, line 213](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/HenselianFlattening.lean#L213).
 
 > **Stacks Project, Tag 05ML.** The flatness condition on a local `A`-algebra `R`: the base
 > change of `M` is flat over `R` at every prime of `B ⊗[A] R` containing the extensions of the
@@ -389,7 +389,7 @@ def ConditionOn (S : FlatAtPointSituation.{u, v, w}) (R : Type x) [CommRing R] [
     [Algebra S.A R] : Prop
 ```
 
-**`Module.FlatAtPointSituation.Condition`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/HenselianFlattening.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/HenselianFlattening.lean#L221).
+**`Module.FlatAtPointSituation.Condition`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/HenselianFlattening.lean, line 221](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/HenselianFlattening.lean#L221).
 
 > **Stacks Project, Tag 05ML.** The flatness condition read on an object of the category `C`
 > of Stacks Tag 05MK.
@@ -402,7 +402,7 @@ abbrev Condition (S : FlatAtPointSituation.{u, v, w}) (R : LocalAlgCat.{u, x} S.
 
 [Tag 05MN](https://stacks.math.columbia.edu/tag/05MN) in the Stacks Project.
 
-**`Module.FlatAtPointSituation.condition_iff_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/FlatteningFlatDescent.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/FlatteningFlatDescent.lean#L110). The attribute's comment: “flat\_base\_change”.
+**`Module.FlatAtPointSituation.condition_iff_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/FlatteningFlatDescent.lean, line 110](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/FlatteningFlatDescent.lean#L110). The attribute's comment: “flat\_base\_change”.
 
 > **Stacks Project, Tag 05MN part (1)**, read on a morphism of the category `C` of local
 > `A`-algebras of Stacks Tag 05MK: if `f : R ⟶ T` is flat then `F_lf(R) = F_lf(T)`, both being
@@ -414,7 +414,7 @@ theorem condition_iff_of_flat (S : FlatAtPointSituation.{u, v, w}) {R T : LocalA
     S.Condition R ↔ S.Condition T
 ```
 
-**`Module.FlatAtPointSituation.flatAtPointFunctor_obj_eq_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/FlatteningFlatDescent.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/FlatteningFlatDescent.lean#L125). The attribute's comment: “flat\_base\_change”.
+**`Module.FlatAtPointSituation.flatAtPointFunctor_obj_eq_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/FlatteningFlatDescent.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/FlatteningFlatDescent.lean#L125). The attribute's comment: “flat\_base\_change”.
 
 > **Stacks Project, Tag 05MN part (1)**, in the shape the source states it: the functor `F_lf`
 > of Stacks Tag 05MM takes the same value at the two ends of a flat morphism of the category `C`.
@@ -428,7 +428,7 @@ theorem flatAtPointFunctor_obj_eq_of_flat (S : FlatAtPointSituation.{u, v, w})
     S.flatAtPointFunctor.obj R = S.flatAtPointFunctor.obj T
 ```
 
-**`Module.FlatAtPointSituation.condition_colimit_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/FlatteningLimitPreserving.lean, line 324](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/FlatteningLimitPreserving.lean#L324). The attribute's comment: “limit\_preserving”.
+**`Module.FlatAtPointSituation.condition_colimit_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/FlatteningLimitPreserving.lean, line 324](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/FlatteningLimitPreserving.lean#L324). The attribute's comment: “limit\_preserving”.
 
 > **Stacks Project, Tag 05MN part (2)**, as an equivalence: the flatness condition of
 > Stacks Tag 05ML holds over the apex of a filtered colimit of local `A`-algebras exactly when it
@@ -449,7 +449,7 @@ theorem condition_colimit_iff
     S.Condition τ.pt ↔ ∃ lam, S.Condition (F.obj lam)
 ```
 
-**`Module.FlatAtPointSituation.isColimitMapCoconeFlatAtPointFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/FlatteningLimitPreserving.lean, line 349](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/FlatteningLimitPreserving.lean#L349). The attribute's comment: “limit\_preserving”.
+**`Module.FlatAtPointSituation.isColimitMapCoconeFlatAtPointFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/FlatteningLimitPreserving.lean, line 349](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/FlatteningLimitPreserving.lean#L349). The attribute's comment: “limit\_preserving”.
 
 > **Stacks Project, Tag 05MN part (2).** If `A → B` is essentially of finite presentation and
 > `M` is a `B`-module of finite presentation, then the functor `F_lf` of Stacks Tag 05MM is limit
@@ -480,7 +480,7 @@ noncomputable def isColimitMapCoconeFlatAtPointFunctor
 
 [Tag 05P4](https://stacks.math.columbia.edu/tag/05P4) in the Stacks Project.
 
-**`Module.FlatAtPointSituation.flatAtPointFunctor_eq_of_finite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/FlatAtPointFinite.lean, line 258](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/FlatAtPointFinite.lean#L258).
+**`Module.FlatAtPointSituation.flatAtPointFunctor_eq_of_finite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/FlatAtPointFinite.lean, line 257](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/FlatAtPointFinite.lean#L257).
 
 > **Stacks Project, Tag 05P4.** Replacing the local algebra of a flat-at-a-point situation by
 > a finite local extension, and its module by an isomorphic module over that extension, does not
@@ -502,7 +502,7 @@ public theorem flatAtPointFunctor_eq_of_finite (S : FlatAtPointSituation.{u, v, 
 
 [Tag 05P5](https://stacks.math.columbia.edu/tag/05P5) in the Stacks Project.
 
-**`Module.FlatAtPointSituation.flatAtPointFunctor_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/FlatAtPointFlatBaseChange.lean, line 438](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/FlatAtPointFlatBaseChange.lean#L438).
+**`Module.FlatAtPointSituation.flatAtPointFunctor_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/FlatAtPointFlatBaseChange.lean, line 438](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/FlatAtPointFlatBaseChange.lean#L438).
 
 > **Stacks Project, Tag 05P5.** A flat local extension of the local algebra, with the module
 > extended along it, does not change the flat-at-a-point functor.
@@ -519,7 +519,7 @@ public theorem flatAtPointFunctor_baseChange (S : FlatAtPointSituation.{u, v, w}
 
 [Tag 05MP](https://stacks.math.columbia.edu/tag/05MP) in the Stacks Project.
 
-**`AlgebraicGeometry.FreeAtGenericPointsSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/FreeAtGenericPoints.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/FreeAtGenericPoints.lean#L76). The attribute's comment: “the situation”.
+**`AlgebraicGeometry.FreeAtGenericPointsSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/FreeAtGenericPoints.lean, line 76](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/FreeAtGenericPoints.lean#L76). The attribute's comment: “the situation”.
 
 > The standing situation of a smooth morphism with geometrically irreducible fibres and a
 > finite type quasi-coherent module on its source.
@@ -528,7 +528,7 @@ public theorem flatAtPointFunctor_baseChange (S : FlatAtPointSituation.{u, v, w}
 structure FreeAtGenericPointsSituation
 ```
 
-**`AlgebraicGeometry.FreeAtGenericPointsSituation.Condition`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/FreeAtGenericPoints.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/FreeAtGenericPoints.lean#L113). The attribute's comment: “the fibrewise condition”.
+**`AlgebraicGeometry.FreeAtGenericPointsSituation.Condition`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/FreeAtGenericPoints.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/FreeAtGenericPoints.lean#L113). The attribute's comment: “the fibrewise condition”.
 
 > The module pulled back to `X ×_S T` is free of rank `p` near the generic point of
 > every fibre over `T`.
@@ -538,7 +538,7 @@ abbrev Condition (D : FreeAtGenericPointsSituation.{u}) (p : ℕ)
     (T : Over D.S) : Prop
 ```
 
-**`AlgebraicGeometry.FreeAtGenericPointsSituation.condition_of_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/FreeAtGenericPoints.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/FreeAtGenericPoints.lean#L195). The attribute's comment: “base-change stability”.
+**`AlgebraicGeometry.FreeAtGenericPointsSituation.condition_of_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/FreeAtGenericPoints.lean, line 195](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/FreeAtGenericPoints.lean#L195). The attribute's comment: “base-change stability”.
 
 > The fibrewise generic-point condition is preserved by a further base change.
 
@@ -548,7 +548,7 @@ theorem condition_of_hom (D : FreeAtGenericPointsSituation.{u}) (p : ℕ)
     D.Condition p T'
 ```
 
-**`AlgebraicGeometry.FreeAtGenericPointsSituation.freeAtGenericPointsFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/FreeAtGenericPoints.lean, line 259](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/FreeAtGenericPoints.lean#L259). The attribute's comment: “the functor”.
+**`AlgebraicGeometry.FreeAtGenericPointsSituation.freeAtGenericPointsFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/FreeAtGenericPoints.lean, line 259](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/FreeAtGenericPoints.lean#L259). The attribute's comment: “the functor”.
 
 > The subterminal set-valued functor recording whether the pulled-back module is free of
 > rank `p` near the generic point of every fibre.
@@ -563,7 +563,7 @@ noncomputable def freeAtGenericPointsFunctor
 
 [Tag 05MS](https://stacks.math.columbia.edu/tag/05MS) in the Stacks Project.
 
-**`AlgebraicGeometry.FreeAtGenericPointsSituation.freeAtGenericPointsFunctor_limitPreserving_small`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/FreeAtGenericPointsDescent.lean, line 248](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/FreeAtGenericPointsDescent.lean#L248). The attribute's comment: “part (2), the generic-rank functor is limit preserving”.
+**`AlgebraicGeometry.FreeAtGenericPointsSituation.freeAtGenericPointsFunctor_limitPreserving_small`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/FreeAtGenericPointsDescent.lean, line 250](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/FreeAtGenericPointsDescent.lean#L250). The attribute's comment: “part (2), the generic-rank functor is limit preserving”.
 
 > **Stacks Project, Tag 05MS, part (2).** The generic-rank functor of a module of finite
 > presentation is limit preserving: over a cofiltered limit of affine schemes over the base the
@@ -580,7 +580,7 @@ theorem freeAtGenericPointsFunctor_limitPreserving_small [D.F.IsFinitePresentati
       (D.freeAtGenericPointsFunctor p)
 ```
 
-**`AlgebraicGeometry.FreeAtGenericPointsSituation.freeAtGenericPointsFunctor_isSheaf_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/FreeAtGenericPointsFpqcSheaf.lean, line 314](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/FreeAtGenericPointsFpqcSheaf.lean#L314). The attribute's comment: “part (1), the generic-rank functor is an fpqc sheaf”.
+**`AlgebraicGeometry.FreeAtGenericPointsSituation.freeAtGenericPointsFunctor_isSheaf_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/FreeAtGenericPointsFpqcSheaf.lean, line 314](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/FreeAtGenericPointsFpqcSheaf.lean#L314). The attribute's comment: “part (1), the generic-rank functor is an fpqc sheaf”.
 
 > **Stacks Project, Tag 05MS, part (1).** The generic-rank functor satisfies the sheaf property
 > for the fpqc topology.
@@ -601,7 +601,7 @@ theorem freeAtGenericPointsFunctor_isSheaf_fpqc (D : FreeAtGenericPointsSituatio
 
 [Tag 0CWF](https://stacks.math.columbia.edu/tag/0CWF) in the Stacks Project.
 
-**`AlgebraicGeometry.topologicalKrullDim_not_isFlatOverAt_fiber_lt_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/NonFlatLocusFibreDimension.lean, line 288](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/NonFlatLocusFibreDimension.lean#L288). The attribute's comment: “the dimension criterion”.
+**`AlgebraicGeometry.topologicalKrullDim_not_isFlatOverAt_fiber_lt_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/NonFlatLocusFibreDimension.lean, line 288](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/NonFlatLocusFibreDimension.lean#L288). The attribute's comment: “the dimension criterion”.
 
 > **Stacks Project, Tag 0CWF.** Let `f : X ⟶ S` be locally of finite type, let `F` be a
 > quasi-coherent `𝒪_X`-module of finite type and let `n` be a natural number. The closed subset of
@@ -621,7 +621,7 @@ theorem topologicalKrullDim_not_isFlatOverAt_fiber_lt_iff {X S : Scheme.{u}} (f 
           WithBot ℕ∞) < (n : WithBot ℕ∞)
 ```
 
-**`AlgebraicGeometry.topologicalKrullDim_not_isFlatOverAt_fiber_lt_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/NonFlatLocusFibreDimension.lean, line 307](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/NonFlatLocusFibreDimension.lean#L307). The attribute's comment: “stability under base change”.
+**`AlgebraicGeometry.topologicalKrullDim_not_isFlatOverAt_fiber_lt_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/NonFlatLocusFibreDimension.lean, line 307](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/NonFlatLocusFibreDimension.lean#L307). The attribute's comment: “stability under base change”.
 
 > **Stacks Project, Tag 0CWF.** The dimension criterion is stable under base change: if the
 > non-flat locus has dimension less than `n` in every fibre of `f`, then the same holds for the
@@ -643,7 +643,7 @@ theorem topologicalKrullDim_not_isFlatOverAt_fiber_lt_of_isPullback {X S S' X' :
 
 [Tag 0CWG](https://stacks.math.columbia.edu/tag/0CWG) in the Stacks Project.
 
-**`AlgebraicGeometry.IsFlatOverInDimensionsGE`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/FlatInDimensionsGE.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/FlatInDimensionsGE.lean#L83).
+**`AlgebraicGeometry.IsFlatOverInDimensionsGE`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/FlatInDimensionsGE.lean, line 83](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/FlatInDimensionsGE.lean#L83).
 
 > **Stacks Project, Tag 0CWG.** Let `f : X ⟶ S` be locally of finite type and let `F` be a
 > quasi-coherent `𝒪_X`-module of finite type. Then `F` is *flat over `S` in dimensions `≥ n`* if
@@ -662,7 +662,7 @@ def IsFlatOverInDimensionsGE {X S : Scheme.{u}} (f : X ⟶ S) [LocallyOfFiniteTy
 
 [Tag 05MT](https://stacks.math.columbia.edu/tag/05MT) in the Stacks Project.
 
-**`AlgebraicGeometry.FlatDimensionSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/FlatDimensionFunctor.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/FlatDimensionFunctor.lean#L83). The attribute's comment: “the situation”.
+**`AlgebraicGeometry.FlatDimensionSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/FlatDimensionFunctor.lean, line 83](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/FlatDimensionFunctor.lean#L83). The attribute's comment: “the situation”.
 
 > A morphism of schemes `f : X ⟶ S` locally of finite type together with a quasi-coherent
 > module `F` of finite type on `X` and a bound `n` on fibre dimensions.
@@ -671,7 +671,7 @@ def IsFlatOverInDimensionsGE {X S : Scheme.{u}} (f : X ⟶ S) [LocallyOfFiniteTy
 public structure FlatDimensionSituation
 ```
 
-**`AlgebraicGeometry.FlatDimensionSituation.baseChangeMap`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/FlatDimensionFunctor.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/FlatDimensionFunctor.lean#L107). The attribute's comment: “the base-changed morphism”.
+**`AlgebraicGeometry.FlatDimensionSituation.baseChangeMap`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/FlatDimensionFunctor.lean, line 107](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/FlatDimensionFunctor.lean#L107). The attribute's comment: “the base-changed morphism”.
 
 > The base-changed morphism `X_T = X ×_S T ⟶ T`.
 
@@ -680,7 +680,7 @@ public noncomputable abbrev baseChangeMap (D : FlatDimensionSituation.{u}) (T : 
     pullback D.f T.hom ⟶ T.left
 ```
 
-**`AlgebraicGeometry.FlatDimensionSituation.baseChangeModule`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/FlatDimensionFunctor.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/FlatDimensionFunctor.lean#L114). The attribute's comment: “the base-changed module”.
+**`AlgebraicGeometry.FlatDimensionSituation.baseChangeModule`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/FlatDimensionFunctor.lean, line 114](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/FlatDimensionFunctor.lean#L114). The attribute's comment: “the base-changed module”.
 
 > The base change `F_T` of the module, i.e. its pullback along the projection
 > `X_T = X ×_S T ⟶ X`.
@@ -690,7 +690,7 @@ public noncomputable abbrev baseChangeModule (D : FlatDimensionSituation.{u}) (T
     (pullback D.f T.hom).Modules
 ```
 
-**`AlgebraicGeometry.FlatDimensionSituation.baseChangeMap_locallyOfFiniteType`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/FlatDimensionFunctor.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/FlatDimensionFunctor.lean#L120). The attribute's comment: “X\_T → T is of finite type”.
+**`AlgebraicGeometry.FlatDimensionSituation.baseChangeMap_locallyOfFiniteType`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/FlatDimensionFunctor.lean, line 120](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/FlatDimensionFunctor.lean#L120). The attribute's comment: “X\_T → T is of finite type”.
 
 > The base-changed morphism `X_T ⟶ T` is again locally of finite type.
 
@@ -699,7 +699,7 @@ public instance baseChangeMap_locallyOfFiniteType (D : FlatDimensionSituation.{u
     (T : Over D.S) : LocallyOfFiniteType (D.baseChangeMap T)
 ```
 
-**`AlgebraicGeometry.FlatDimensionSituation.baseChangeModule_isFiniteType`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/FlatDimensionFunctor.lean, line 127](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/FlatDimensionFunctor.lean#L127). The attribute's comment: “F\_T is of finite type”.
+**`AlgebraicGeometry.FlatDimensionSituation.baseChangeModule_isFiniteType`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/FlatDimensionFunctor.lean, line 127](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/FlatDimensionFunctor.lean#L127). The attribute's comment: “F\_T is of finite type”.
 
 > The base-changed module `F_T` is again of finite type.
 
@@ -708,7 +708,7 @@ public noncomputable instance baseChangeModule_isFiniteType (D : FlatDimensionSi
     (T : Over D.S) : (D.baseChangeModule T).IsFiniteType
 ```
 
-**`AlgebraicGeometry.FlatDimensionSituation.IsFlatInDimensionsGEAfterBaseChange`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/FlatDimensionFunctor.lean, line 139](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/FlatDimensionFunctor.lean#L139). The attribute's comment: “the condition tested by the functor”.
+**`AlgebraicGeometry.FlatDimensionSituation.IsFlatInDimensionsGEAfterBaseChange`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/FlatDimensionFunctor.lean, line 139](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/FlatDimensionFunctor.lean#L139). The attribute's comment: “the condition tested by the functor”.
 
 > The base-changed module `F_T` is flat over `T` in dimensions `≥ n`.
 
@@ -717,7 +717,7 @@ public noncomputable abbrev IsFlatInDimensionsGEAfterBaseChange
     (D : FlatDimensionSituation.{u}) (T : Over D.S) : Prop
 ```
 
-**`AlgebraicGeometry.FlatDimensionSituation.isFlatInDimensionsGEAfterBaseChange_of_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/FlatDimensionFunctor.lean, line 156](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/FlatDimensionFunctor.lean#L156). The attribute's comment: “base-change stability of the condition”.
+**`AlgebraicGeometry.FlatDimensionSituation.isFlatInDimensionsGEAfterBaseChange_of_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/FlatDimensionFunctor.lean, line 156](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/FlatDimensionFunctor.lean#L156). The attribute's comment: “base-change stability of the condition”.
 
 > Flatness of the base-changed module in dimensions `≥ n` is inherited along a morphism
 > `T' ⟶ T` of schemes over `S`.
@@ -728,7 +728,7 @@ public theorem isFlatInDimensionsGEAfterBaseChange_of_hom (D : FlatDimensionSitu
     D.IsFlatInDimensionsGEAfterBaseChange T'
 ```
 
-**`AlgebraicGeometry.FlatDimensionSituation.flatDimensionFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/FlatDimensionFunctor.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/FlatDimensionFunctor.lean#L166). The attribute's comment: “the functor F\_n”.
+**`AlgebraicGeometry.FlatDimensionSituation.flatDimensionFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/FlatDimensionFunctor.lean, line 166](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/FlatDimensionFunctor.lean#L166). The attribute's comment: “the functor F\_n”.
 
 > The functor `F_n : (Sch/S)ᵒᵖ ⥤ Sets` sending a scheme `T` over `S` to a singleton if `F_T`
 > is flat over `T` in dimensions `≥ n`, and to the empty set otherwise.
@@ -742,7 +742,7 @@ public noncomputable def flatDimensionFunctor (D : FlatDimensionSituation.{u}) :
 
 [Tag 05MV](https://stacks.math.columbia.edu/tag/05MV) in the Stacks Project.
 
-**`AlgebraicGeometry.FlatDimensionSituation.flatDimensionFunctor_isSheaf_fpqc_and_limitPreserving`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/FlatDimensionSheafAndLimitPreserving.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/FlatDimensionSheafAndLimitPreserving.lean#L63). The attribute's comment: “parts (1) and (2)”.
+**`AlgebraicGeometry.FlatDimensionSituation.flatDimensionFunctor_isSheaf_fpqc_and_limitPreserving`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/FlatDimensionSheafAndLimitPreserving.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/FlatDimensionSheafAndLimitPreserving.lean#L63). The attribute's comment: “parts (1) and (2)”.
 
 > **Stacks Project, Tag 05MV.** In Situation 05MT:
 >
@@ -767,7 +767,7 @@ public theorem flatDimensionFunctor_isSheaf_fpqc_and_limitPreserving
 
 [Tag 05MW](https://stacks.math.columbia.edu/tag/05MW) in the Stacks Project.
 
-**`AlgebraicGeometry.FlatnessSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/Basic.lean, line 61](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/Basic.lean#L61). The attribute's comment: “the situation”.
+**`AlgebraicGeometry.FlatnessSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/Basic.lean, line 61](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/Basic.lean#L61). The attribute's comment: “the situation”.
 
 > A morphism of schemes together with a quasi-coherent module on its source.
 
@@ -775,7 +775,7 @@ public theorem flatDimensionFunctor_isSheaf_fpqc_and_limitPreserving
 public structure FlatnessSituation
 ```
 
-**`AlgebraicGeometry.FlatnessSituation.baseChange`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/Basic.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/Basic.lean#L78). The attribute's comment: “the base-changed scheme”.
+**`AlgebraicGeometry.FlatnessSituation.baseChange`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/Basic.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/Basic.lean#L78). The attribute's comment: “the base-changed scheme”.
 
 > The fibre product `X ×_S T`.
 
@@ -784,7 +784,7 @@ public noncomputable abbrev baseChange (D : FlatnessSituation.{u})
     (T : Over D.S) : Scheme.{u}
 ```
 
-**`AlgebraicGeometry.FlatnessSituation.baseChangeModule`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/Basic.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/Basic.lean#L84). The attribute's comment: “the base-changed module”.
+**`AlgebraicGeometry.FlatnessSituation.baseChangeModule`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/Basic.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/Basic.lean#L84). The attribute's comment: “the base-changed module”.
 
 > The pullback of the module to `X ×_S T`.
 
@@ -794,7 +794,7 @@ public noncomputable abbrev baseChangeModule (D : FlatnessSituation.{u})
     SheafOfModules.{u} (structureSheafRing (D.baseChange T).toRingedSpace)
 ```
 
-**`AlgebraicGeometry.FlatnessSituation.IsFlatAfterBaseChange`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/Basic.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/Basic.lean#L91). The attribute's comment: “the flatness condition”.
+**`AlgebraicGeometry.FlatnessSituation.IsFlatAfterBaseChange`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/Basic.lean, line 91](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/Basic.lean#L91). The attribute's comment: “the flatness condition”.
 
 > The base-changed module is flat over `T`.
 
@@ -803,7 +803,7 @@ public abbrev IsFlatAfterBaseChange (D : FlatnessSituation.{u})
     (T : Over D.S) : Prop
 ```
 
-**`AlgebraicGeometry.FlatnessSituation.isFlatAfterBaseChange_of_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/Basic.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/Basic.lean#L130). The attribute's comment: “base-change stability”.
+**`AlgebraicGeometry.FlatnessSituation.isFlatAfterBaseChange_of_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/Basic.lean, line 130](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/Basic.lean#L130). The attribute's comment: “base-change stability”.
 
 > Flatness of the pulled-back module persists under further base change.
 
@@ -813,7 +813,7 @@ public theorem isFlatAfterBaseChange_of_hom (D : FlatnessSituation.{u})
     D.IsFlatAfterBaseChange T'
 ```
 
-**`AlgebraicGeometry.FlatnessSituation.flatFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/Basic.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/Basic.lean#L137). The attribute's comment: “the functor”.
+**`AlgebraicGeometry.FlatnessSituation.flatFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/Basic.lean, line 137](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/Basic.lean#L137). The attribute's comment: “the functor”.
 
 > The subterminal functor recording flatness of the base-changed module.
 
@@ -826,7 +826,7 @@ public noncomputable def flatFunctor (D : FlatnessSituation.{u}) :
 
 [Tag 05MY](https://stacks.math.columbia.edu/tag/05MY) in the Stacks Project.
 
-**`AlgebraicGeometry.FlatnessSituation.flatFunctor_isSheaf_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/FpqcSheaf.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/FpqcSheaf.lean#L118). The attribute's comment: “flat\_functor\_fpqc\_sheaf”.
+**`AlgebraicGeometry.FlatnessSituation.flatFunctor_isSheaf_fpqc`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/FpqcSheaf.lean, line 118](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/FpqcSheaf.lean#L118). The attribute's comment: “flat\_functor\_fpqc\_sheaf”.
 
 > **Stacks Project, Tag 05MY.** Part (1): the flatness functor of a quasi-coherent module
 > satisfies the sheaf condition for the fpqc topology on schemes over the base.
@@ -836,7 +836,7 @@ public theorem flatFunctor_isSheaf_fpqc :
     Presheaf.IsSheaf (Scheme.fpqcTopology.over D.S) D.flatFunctor
 ```
 
-**`AlgebraicGeometry.FlatnessSituation.flatFunctor_limitPreserving`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/LimitPreserving.lean, line 288](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/LimitPreserving.lean#L288). The attribute's comment: “flat\_functor\_limit\_preserving”.
+**`AlgebraicGeometry.FlatnessSituation.flatFunctor_limitPreserving`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/LimitPreserving.lean, line 288](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/FlatteningFunctor/LimitPreserving.lean#L288). The attribute's comment: “flat\_functor\_limit\_preserving”.
 
 > **Stacks Project, Tag 05MY.** Part (2): for a quasi-compact morphism which is locally of
 > finite presentation and a quasi-coherent module of finite presentation, the flatness functor is
@@ -857,4 +857,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 38.20, Tag 05MG](https://stacks.math.columbia.edu/tag/05MG)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

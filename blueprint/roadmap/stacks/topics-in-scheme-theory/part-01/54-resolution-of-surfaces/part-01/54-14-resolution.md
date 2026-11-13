@@ -8,13 +8,13 @@ proof: formalized
 
 # 54.14 Resolution
 
-Section 54.14 of the Stacks Project, [Tag 0BGJ](https://stacks.math.columbia.edu/tag/0BGJ). 5 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 54.14 of the Stacks Project, [Tag 0BGJ](https://stacks.math.columbia.edu/tag/0BGJ). 5 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0BGK, a definition
 
 [Tag 0BGK](https://stacks.math.columbia.edu/tag/0BGK) in the Stacks Project.
 
-**`AlgebraicGeometry.IsResolution`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Resolution/Basic.lean, line 43](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Resolution/Basic.lean#L43).
+**`AlgebraicGeometry.IsResolution`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Resolution/Basic.lean, line 43](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Resolution/Basic.lean#L43).
 
 > A morphism to a Noetherian integral scheme is a **resolution of singularities** if it is a
 > modification and its source is regular.
@@ -28,7 +28,7 @@ abbrev IsResolution {X Y : Scheme.{u}} [IsIntegral Y] [IsNoetherian Y]
 
 [Tag 0BGL](https://stacks.math.columbia.edu/tag/0BGL) in the Stacks Project.
 
-**`AlgebraicGeometry.HasResolutionByNormalizedBlowUps`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Resolution/NormalizedBlowUps.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Resolution/NormalizedBlowUps.lean#L68).
+**`AlgebraicGeometry.HasResolutionByNormalizedBlowUps`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Resolution/NormalizedBlowUps.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Resolution/NormalizedBlowUps.lean#L68).
 
 > **Stacks Project, Tag 0BGL.** A scheme admits a *resolution of singularities by normalized
 > blowups* if its normalization can be followed by finitely many normalized blowups at closed
@@ -42,7 +42,7 @@ abbrev HasResolutionByNormalizedBlowUps (Y : Scheme.{u}) : Prop
 
 [Tag 0BGM](https://stacks.math.columbia.edu/tag/0BGM) in the Stacks Project.
 
-**`AlgebraicGeometry.hasResolutionByNormalizedBlowUps_of_exists_isResolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Resolution/CompleteLocalResolution.lean, line 39](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Resolution/CompleteLocalResolution.lean#L39).
+**`AlgebraicGeometry.hasResolutionByNormalizedBlowUps_of_exists_isResolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Resolution/CompleteLocalResolution.lean, line 39](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Resolution/CompleteLocalResolution.lean#L39).
 
 > **Stacks Project, Tag 0BGM.** Let `(A, 𝔪, κ)` be a Noetherian local ring which is normal of
 > dimension two. If `Spec(A)` has a resolution of singularities, then `Spec(A)` has a resolution by
@@ -60,7 +60,7 @@ theorem hasResolutionByNormalizedBlowUps_of_exists_isResolution
 
 [Tag 0BGN](https://stacks.math.columbia.edu/tag/0BGN) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isResolution_of_isAdicComplete`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Resolution/CompleteLocalResolution.lean, line 51](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Resolution/CompleteLocalResolution.lean#L51).
+**`AlgebraicGeometry.exists_isResolution_of_isAdicComplete`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Resolution/CompleteLocalResolution.lean, line 51](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Resolution/CompleteLocalResolution.lean#L51).
 
 > **Stacks Project, Tag 0BGN.** Let `(A, 𝔪, κ)` be a Noetherian complete local ring which is a
 > normal domain of dimension two. Then `Spec(A)` has a resolution of singularities.
@@ -76,7 +76,7 @@ theorem exists_isResolution_of_isAdicComplete
 
 [Tag 0BGP](https://stacks.math.columbia.edu/tag/0BGP) in the Stacks Project.
 
-**`AlgebraicGeometry.tfae_exists_isAlteration_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Resolution/LipmanTheorem.lean, line 44](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Resolution/LipmanTheorem.lean#L44).
+**`AlgebraicGeometry.tfae_exists_isAlteration_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Resolution/LipmanTheorem.lean, line 44](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Resolution/LipmanTheorem.lean#L44).
 
 > **Stacks Project, Tag 0BGP (Lipman).** Let `Y` be a two-dimensional integral Noetherian
 > scheme. The following are equivalent:
@@ -110,4 +110,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 54.14, Tag 0BGJ](https://stacks.math.columbia.edu/tag/0BGJ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 33.30 Picard groups of varieties
 
-Section 33.30 of the Stacks Project, [Tag 0BEG](https://stacks.math.columbia.edu/tag/0BEG). 5 tags here are carried by 16 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 33.30 of the Stacks Project, [Tag 0BEG](https://stacks.math.columbia.edu/tag/0BEG). 5 tags here are carried by 16 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0CDX, a lemma
 
 [Tag 0CDX](https://stacks.math.columbia.edu/tag/0CDX) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.PicardBaseChange.exists_mulEquiv_globalSections_coherentMul_of_faithfullyFlat_trivialization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicardBaseChange/CoherentMul.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PicardBaseChange/CoherentMul.lean#L85). The attribute's comment: “multiplication is an isomorphism”.
+**`Stacks.AlgebraicGeometry.PicardBaseChange.exists_mulEquiv_globalSections_coherentMul_of_faithfullyFlat_trivialization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicardBaseChange/CoherentMul.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PicardBaseChange/CoherentMul.lean#L85). The attribute's comment: “multiplication is an isomorphism”.
 
 > **Stacks Project, Tag 0CDX, the clause that the multiplication is an isomorphism.** For a
 > quasi-compact, quasi-separated scheme `X` over `A`, a faithfully flat ring map `φ : A →+* B` and
@@ -54,7 +54,7 @@ theorem exists_mulEquiv_globalSections_coherentMul_of_faithfullyFlat_trivializat
               (.op ⊤)).hom s) ⊗ₜ[Γ(X, ⊤)] t))
 ```
 
-**`Stacks.AlgebraicGeometry.PicardBaseChange.invertible_globalSections_tensorInverse_of_faithfullyFlat_trivialization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicardBaseChange/InverseSections.lean, line 189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PicardBaseChange/InverseSections.lean#L189). The attribute's comment: “global sections of the inverse sheaf”.
+**`Stacks.AlgebraicGeometry.PicardBaseChange.invertible_globalSections_tensorInverse_of_faithfullyFlat_trivialization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicardBaseChange/InverseSections.lean, line 192](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PicardBaseChange/InverseSections.lean#L192). The attribute's comment: “global sections of the inverse sheaf”.
 
 > **Stacks Project, Tag 0CDX, the clause about the global sections of the inverse sheaf.** For
 > a quasi-compact, quasi-separated scheme `X` over `A`, a faithfully flat ring map `φ : A →+* B`
@@ -80,7 +80,7 @@ theorem invertible_globalSections_tensorInverse_of_faithfullyFlat_trivialization
       ((tensorPower X.presheaf X.ringCatSheaf.property L (-1)).val.obj (.op ⊤))
 ```
 
-**`Stacks.AlgebraicGeometry.PicardBaseChange.invertible_globalSections_of_faithfullyFlat_trivialization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicardBaseChange/Sections.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PicardBaseChange/Sections.lean#L157). The attribute's comment: “global sections of the sheaf”.
+**`Stacks.AlgebraicGeometry.PicardBaseChange.invertible_globalSections_of_faithfullyFlat_trivialization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicardBaseChange/Sections.lean, line 159](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PicardBaseChange/Sections.lean#L159). The attribute's comment: “global sections of the sheaf”.
 
 > **Stacks Project, Tag 0CDX, the clause about the global sections of the sheaf.** For a
 > quasi-compact, quasi-separated scheme `X` over `A`, a faithfully flat ring map `φ : A →+* B` and
@@ -105,7 +105,7 @@ theorem invertible_globalSections_of_faithfullyFlat_trivialization
 
 [Tag 0CDY](https://stacks.math.columbia.edu/tag/0CDY) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.PicardBaseChange.injective_picardPullback_of_faithfullyFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicardBaseChange/Injectivity.lean, line 222](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PicardBaseChange/Injectivity.lean#L222).
+**`Stacks.AlgebraicGeometry.PicardBaseChange.injective_picardPullback_of_faithfullyFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicardBaseChange/Injectivity.lean, line 222](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PicardBaseChange/Injectivity.lean#L222).
 
 > **Stacks Project, Tag 0CDY.** Let `A → B` be a faithfully flat ring map and let `X` be a
 > scheme over `A` which is quasi-compact and quasi-separated and whose ring of global functions
@@ -120,7 +120,7 @@ theorem injective_picardPullback_of_faithfullyFlat
       (Limits.pullback.fst f (Spec.map (CommRingCat.ofHom φ))))
 ```
 
-**`Stacks.AlgebraicGeometry.PicardBaseChange.injective_schemePullbackClass_of_faithfullyFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicardBaseChange/PuncturedSpectrumCompletion.lean, line 219](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PicardBaseChange/PuncturedSpectrumCompletion.lean#L219).
+**`Stacks.AlgebraicGeometry.PicardBaseChange.injective_schemePullbackClass_of_faithfullyFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicardBaseChange/PuncturedSpectrumCompletion.lean, line 219](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PicardBaseChange/PuncturedSpectrumCompletion.lean#L219).
 
 > **Stacks Project, Tag 0CDY.** Let `A → B` be faithfully flat and let `X` be a quasi-compact,
 > quasi-separated scheme over `A` whose ring of global functions is semilocal. Then pullback to the
@@ -139,7 +139,7 @@ theorem injective_schemePullbackClass_of_faithfullyFlat
 
 [Tag 0CC5](https://stacks.math.columbia.edu/tag/0CC5) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.PicardBaseChange.injective_picardPullback_of_fieldExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicardBaseChange/Injectivity.lean, line 293](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PicardBaseChange/Injectivity.lean#L293). The attribute's comment: “The lemma proper; the parenthetical sufficient condition `dim_k H⁰(X, 𝒪_X) < ∞` for semi-locality is `injective_picardPullback_of_finiteDimensional`”.
+**`Stacks.AlgebraicGeometry.PicardBaseChange.injective_picardPullback_of_fieldExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicardBaseChange/Injectivity.lean, line 293](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PicardBaseChange/Injectivity.lean#L293). The attribute's comment: “The lemma proper; the parenthetical sufficient condition `dim_k H⁰(X, 𝒪_X) < ∞` for semi-locality is `injective_picardPullback_of_finiteDimensional`”.
 
 > **Stacks Project, Tag 0CC5.** Let `k'/k` be a field extension and let `X` be a scheme over
 > `k` such that (1) `X` is quasi-compact and quasi-separated, and (2) `R = H⁰(X, 𝒪_X)` is
@@ -154,7 +154,7 @@ theorem injective_picardPullback_of_fieldExtension
       (Limits.pullback.fst f (Spec.map (CommRingCat.ofHom φ))))
 ```
 
-**`Stacks.AlgebraicGeometry.PicardBaseChange.injective_picardPullback_of_finiteDimensional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicardBaseChange/Injectivity.lean, line 306](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PicardBaseChange/Injectivity.lean#L306). The attribute's comment: “The parenthetical sufficient condition `dim_k H⁰(X, 𝒪_X) < ∞` for hypothesis (2); the lemma proper is `injective_picardPullback_of_fieldExtension`”.
+**`Stacks.AlgebraicGeometry.PicardBaseChange.injective_picardPullback_of_finiteDimensional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicardBaseChange/Injectivity.lean, line 306](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PicardBaseChange/Injectivity.lean#L306). The attribute's comment: “The parenthetical sufficient condition `dim_k H⁰(X, 𝒪_X) < ∞` for hypothesis (2); the lemma proper is `injective_picardPullback_of_fieldExtension`”.
 
 > **Stacks Project, Tag 0CC5** with its parenthetical hypothesis: hypothesis (2) holds as soon
 > as `dim_k H⁰(X, 𝒪_X)` is finite, `H⁰(X, 𝒪_X)` being then Artinian and hence semi-local.
@@ -172,7 +172,7 @@ theorem injective_picardPullback_of_finiteDimensional
 
 [Tag 0CDP](https://stacks.math.columbia.edu/tag/0CDP) in the Stacks Project.
 
-**`Stacks.ProjectiveLine.subsingleton_picardGroup_basicOpen_map_of_residueFieldAlgHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveLine/PicardComplement.lean, line 289](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjectiveLine/PicardComplement.lean#L289). The attribute's comment: “clause (6): after enlarging `k` to a field `k'` admitting a `k`-embedding `κ(t) → k'`, the Picard group of the base change of `X = ℙ¹_k ∖ {t}` is trivial”.
+**`Stacks.ProjectiveLine.subsingleton_picardGroup_basicOpen_map_of_residueFieldAlgHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveLine/PicardComplement.lean, line 289](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjectiveLine/PicardComplement.lean#L289). The attribute's comment: “clause (6): after enlarging `k` to a field `k'` admitting a `k`-embedding `κ(t) → k'`, the Picard group of the base change of `X = ℙ¹_k ∖ {t}` is trivial”.
 
 > **The Picard group of `ℙ¹_k ∖ {t}` dies over a field embedding `κ(t)`.** Let `t = V₊(f)` be
 > the closed point of `ℙ¹_k` cut out by a homogeneous irreducible form `f` not divisible by `T₁`,
@@ -192,7 +192,7 @@ theorem subsingleton_picardGroup_basicOpen_map_of_residueFieldAlgHom
         (MvPolynomial.map (algebraMap k k') f)).toScheme.ringCatSheaf.2)
 ```
 
-**`Stacks.ProjectiveLine.subsingleton_picardGroup_basicOpen_map_of_X_one_dvd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveLine/PicardComplement.lean, line 350](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjectiveLine/PicardComplement.lean#L350). The attribute's comment: “clause (6) at the point at infinity `t = V₊(T₁)`, i.e. for `T₁ ∣ f`: the Picard group of the base change of `X = ℙ¹_k ∖ {t}` to an arbitrary field extension `k'` is trivial, with no hypothesis on `k'`”.
+**`Stacks.ProjectiveLine.subsingleton_picardGroup_basicOpen_map_of_X_one_dvd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveLine/PicardComplement.lean, line 350](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjectiveLine/PicardComplement.lean#L350). The attribute's comment: “clause (6) at the point at infinity `t = V₊(T₁)`, i.e. for `T₁ ∣ f`: the Picard group of the base change of `X = ℙ¹_k ∖ {t}` to an arbitrary field extension `k'` is trivial, with no hypothesis on `k'`”.
 
 > **The Picard group of `ℙ¹_k ∖ {V₊(T₁)}` dies over every field extension.** If `T₁` divides
 > `f`, then the Picard group of the base change of `D₊(f)` to any field extension `k'` of `k` is
@@ -208,7 +208,7 @@ theorem subsingleton_picardGroup_basicOpen_map_of_X_one_dvd
         (MvPolynomial.map (algebraMap k k') f)).toScheme.ringCatSheaf.2)
 ```
 
-**`Stacks.ProjectiveLine.subsingleton_picardGroup_basicOpen_map_of_residueFieldAlgHom_of_isPrime`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveLine/PicardComplement.lean, line 382](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjectiveLine/PicardComplement.lean#L382). The attribute's comment: “clause (6) with the extra hypothesis `t ≠ V₊(T₁)` removed from the statement: for a closed point `t` of `ℙ¹_k` presented in the standard chart, a `k`-embedding `κ(t) → k'` makes the Picard group of the base change of `X = ℙ¹_k ∖ {t}` trivial”.
+**`Stacks.ProjectiveLine.subsingleton_picardGroup_basicOpen_map_of_residueFieldAlgHom_of_isPrime`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveLine/PicardComplement.lean, line 382](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjectiveLine/PicardComplement.lean#L382). The attribute's comment: “clause (6) with the extra hypothesis `t ≠ V₊(T₁)` removed from the statement: for a closed point `t` of `ℙ¹_k` presented in the standard chart, a `k`-embedding `κ(t) → k'` makes the Picard group of the base change of `X = ℙ¹_k ∖ {t}` trivial”.
 
 > **The Picard group of `ℙ¹_k ∖ {t}` dies over a field embedding `κ(t)`.** Let `t = V₊(f)` be
 > the closed point of `ℙ¹_k` cut out by a homogeneous irreducible form `f`, with `κ(t)` the residue
@@ -227,7 +227,7 @@ theorem subsingleton_picardGroup_basicOpen_map_of_residueFieldAlgHom_of_isPrime
         (MvPolynomial.map (algebraMap k k') f)).toScheme.ringCatSheaf.2)
 ```
 
-**`Stacks.ProjectiveLine.surjective_complementRestrictHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveLine/PicardQuotient.lean, line 207](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjectiveLine/PicardQuotient.lean#L207). The attribute's comment: “the displayed surjection `ℤ = Pic(ℙ¹_k) → Pic(X)` for `X = ℙ¹_k ∖ {t}`, by Tag 0BD9 for the surjectivity and Tag 0BXJ for the identification of `Pic(ℙ¹_k)` with `ℤ`”.
+**`Stacks.ProjectiveLine.surjective_complementRestrictHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveLine/PicardQuotient.lean, line 207](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjectiveLine/PicardQuotient.lean#L207). The attribute's comment: “the displayed surjection `ℤ = Pic(ℙ¹_k) → Pic(X)` for `X = ℙ¹_k ∖ {t}`, by Tag 0BD9 for the surjectivity and Tag 0BXJ for the identification of `Pic(ℙ¹_k)` with `ℤ`”.
 
 > **The restriction map `ℤ = Pic(ℙ¹_k) → Pic(X)` is surjective**, for
 > `X = ℙ¹_k ∖ V₊(f)`.
@@ -236,7 +236,7 @@ theorem subsingleton_picardGroup_basicOpen_map_of_residueFieldAlgHom_of_isPrime
 theorem surjective_complementRestrictHom : Function.Surjective (complementRestrictHom f)
 ```
 
-**`Stacks.ProjectiveLine.surjective_complementZModHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveLine/PicardQuotient.lean, line 239](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjectiveLine/PicardQuotient.lean#L239). The attribute's comment: “the computation `Pic(X) = ℤ/dℤ` for `X = ℙ¹_k ∖ {t}`, surjectivity half: the displayed map factors through `ℤ/dℤ` by a surjection, `d = deg f = [κ(t) : k]`”.
+**`Stacks.ProjectiveLine.surjective_complementZModHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveLine/PicardQuotient.lean, line 239](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjectiveLine/PicardQuotient.lean#L239). The attribute's comment: “the computation `Pic(X) = ℤ/dℤ` for `X = ℙ¹_k ∖ {t}`, surjectivity half: the displayed map factors through `ℤ/dℤ` by a surjection, `d = deg f = [κ(t) : k]`”.
 
 > **The map `ℤ/dℤ → Pic(X)` is surjective**, for `X = ℙ¹_k ∖ V₊(f)` and `d = deg f`.
 
@@ -245,7 +245,7 @@ theorem surjective_complementZModHom {d : ℕ} (hf : f ∈ grading k d) :
     Function.Surjective (complementZModHom f hf)
 ```
 
-**`Stacks.ProjectiveLine.nsmul_finrank_residueField_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveLine/PicardQuotient.lean, line 249](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjectiveLine/PicardQuotient.lean#L249). The attribute's comment: “`Pic(X)` is killed by `d = [κ(t) : k]` for `X = ℙ¹_k ∖ {t}`, the residue degree read in the standard chart”.
+**`Stacks.ProjectiveLine.nsmul_finrank_residueField_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveLine/PicardQuotient.lean, line 249](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjectiveLine/PicardQuotient.lean#L249). The attribute's comment: “`Pic(X)` is killed by `d = [κ(t) : k]` for `X = ℙ¹_k ∖ {t}`, the residue degree read in the standard chart”.
 
 > **`Pic(X)` is killed by `d = [κ(t) : k]`**, the residue degree of the removed closed point
 > `t = V₊(f)` of `ℙ¹_k`.
@@ -259,7 +259,7 @@ theorem nsmul_finrank_residueField_eq_zero {d : ℕ} {f : MvPolynomial (Fin 2) k
     Module.finrank k (Ideal.span {dehomogenize k f}).ResidueField • c = 0
 ```
 
-**`Stacks.ProjectiveLine.complementZModEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveLine/PicardQuotient.lean, line 332](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjectiveLine/PicardQuotient.lean#L332). The attribute's comment: “the computation `Pic(X) = ℤ/dℤ` for `X = ℙ¹_k ∖ {t}`, as the isomorphism `ℤ/dℤ ≃+ Pic(X)` induced by the displayed surjection, `d = deg f = [κ(t) : k]`”.
+**`Stacks.ProjectiveLine.complementZModEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveLine/PicardQuotient.lean, line 332](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjectiveLine/PicardQuotient.lean#L332). The attribute's comment: “the computation `Pic(X) = ℤ/dℤ` for `X = ℙ¹_k ∖ {t}`, as the isomorphism `ℤ/dℤ ≃+ Pic(X)` induced by the displayed surjection, `d = deg f = [κ(t) : k]`”.
 
 > **`Pic(X) = ℤ/dℤ`.** Let `t = V₊(f)` be the closed point of `ℙ¹_k` cut out by a homogeneous
 > irreducible form `f` of degree `d`, and let `X = ℙ¹_k ∖ {t}`. The surjection
@@ -271,7 +271,7 @@ def complementZModEquiv {d : ℕ} {f : MvPolynomial (Fin 2) k}
     ZMod d ≃+ (Proj.basicOpen (grading k) f).toScheme.picardGroup
 ```
 
-**`Stacks.ProjectiveLine.nontrivial_picardGroup_basicOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveLine/PicardQuotient.lean, line 343](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProjectiveLine/PicardQuotient.lean#L343). The attribute's comment: “`Pic(X) ≠ 0` for `X = ℙ¹_k ∖ {t}` when `t` is not a `k`-rational point, i.e. when `d = [κ(t) : k] > 1`; this is what makes the example a counterexample to Tag 0CC5”.
+**`Stacks.ProjectiveLine.nontrivial_picardGroup_basicOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProjectiveLine/PicardQuotient.lean, line 343](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProjectiveLine/PicardQuotient.lean#L343). The attribute's comment: “`Pic(X) ≠ 0` for `X = ℙ¹_k ∖ {t}` when `t` is not a `k`-rational point, i.e. when `d = [κ(t) : k] > 1`; this is what makes the example a counterexample to Tag 0CC5”.
 
 > **`Pic(X) ≠ 0` for a non-rational point.** If the closed point `t = V₊(f)` of `ℙ¹_k` has
 > degree `d > 1`, equivalently is not a `k`-rational point, then the Picard group of
@@ -287,7 +287,7 @@ theorem nontrivial_picardGroup_basicOpen {d : ℕ} {f : MvPolynomial (Fin 2) k}
 
 [Tag 0BEH](https://stacks.math.columbia.edu/tag/0BEH) in the Stacks Project.
 
-**`Stacks.PicardGroup.nonempty_iso_pullback_sectionOfPoint_of_finite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicardGroup/RationalEquivalenceNormalVariety.lean, line 260](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PicardGroup/RationalEquivalenceNormalVariety.lean#L260). The attribute's comment: “k a field, X a normal variety over k, U an open of affine n-space over k with two k-rational points: an invertible module on X ×\_\{Spec k} U has isomorphic restrictions to X × p and X × q”.
+**`Stacks.PicardGroup.nonempty_iso_pullback_sectionOfPoint_of_finite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PicardGroup/RationalEquivalenceNormalVariety.lean, line 260](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PicardGroup/RationalEquivalenceNormalVariety.lean#L260). The attribute's comment: “k a field, X a normal variety over k, U an open of affine n-space over k with two k-rational points: an invertible module on X ×\_\{Spec k} U has isomorphic restrictions to X × p and X × q”.
 
 > **Stacks Project, Tag 0BEH.** Let `k` be a field, `X` a normal variety over `k`, and
 > `U ⊆ 𝔸^n_k` an open subscheme with `k`-rational points `p, q ∈ U(k)`. For every invertible module
@@ -325,4 +325,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 33.30, Tag 0BEG](https://stacks.math.columbia.edu/tag/0BEG)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 29.32 Conormal sheaf of an immersion
 
-Section 29.32 of the Stacks Project, [Tag 01R1](https://stacks.math.columbia.edu/tag/01R1). 5 tags here are carried by 28 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 29.32 of the Stacks Project, [Tag 01R1](https://stacks.math.columbia.edu/tag/01R1). 5 tags here are carried by 28 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 01R2, a definition
 
 [Tag 01R2](https://stacks.math.columbia.edu/tag/01R2) in the Stacks Project.
 
-**`Stacks.Conormal.conormalSheaf_isQuasicoherent`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ConormalAlgebra/Sheaf.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ConormalAlgebra/Sheaf.lean#L57). The attribute's comment: “quasi-coherence”.
+**`Stacks.Conormal.conormalSheaf_isQuasicoherent`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ConormalAlgebra/Sheaf.lean, line 57](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ConormalAlgebra/Sheaf.lean#L57). The attribute's comment: “quasi-coherence”.
 
 > **Stacks Project, Tag 01R2.**  The conormal sheaf of an immersion is quasi-coherent.
 
@@ -23,7 +23,7 @@ instance conormalSheaf_isQuasicoherent {Z X : Scheme.{u}} (i : Z ⟶ X) [IsImmer
     (conormalSheaf i).IsQuasicoherent
 ```
 
-**`Stacks.Conormal.conormalSheaf`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ConormalComparison/IdealSheafComparison.lean, line 141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ConormalComparison/IdealSheafComparison.lean#L141). The attribute's comment: “construction”.
+**`Stacks.Conormal.conormalSheaf`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ConormalComparison/IdealSheafComparison.lean, line 141](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ConormalComparison/IdealSheafComparison.lean#L141). The attribute's comment: “construction”.
 
 > **[Stacks, Tag 01R2].** The conormal sheaf of an immersion: the module pullback, along the
 > canonical closed immersion `i.liftCoborder` into the coborder neighbourhood of the image, of the
@@ -41,7 +41,7 @@ noncomputable abbrev conormalSheaf {Z X : Scheme.{u}} (i : Z ⟶ X) [IsImmersion
     SheafOfModules.{u} (structureSheafRing Z.toLocallyRingedSpace.toRingedSpace)
 ```
 
-**`Stacks.Thickenings.immersionConormalSheaf`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Thickenings/UniversalConormalSheaf.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Thickenings/UniversalConormalSheaf.lean#L126). The attribute's comment: “construction”. References: SGA 3 I (6.8.5); SGA 3 III (4.5.0); SGA 6 VII (1.6).
+**`Stacks.Thickenings.immersionConormalSheaf`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Thickenings/UniversalConormalSheaf.lean, line 128](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Thickenings/UniversalConormalSheaf.lean#L128). The attribute's comment: “construction”. References: SGA 3 I (6.8.5); SGA 3 III (4.5.0); SGA 6 VII (1.6).
 
 > **Stacks Project, Tag 01R2.** The conormal sheaf `𝒞_{Z/X} = I/I²` of an immersion
 > `i : Z ⟶ X` of schemes: the pullback along the closed immersion
@@ -65,7 +65,7 @@ noncomputable abbrev immersionConormalSheaf {Z X : Scheme.{u}} (i : Z ⟶ X) [Is
 
 [Tag 01R3](https://stacks.math.columbia.edu/tag/01R3) in the Stacks Project.
 
-**`Stacks.Conormal.affineConormalIsoCotangent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ConormalAlgebra/AffineIdentification.lean, line 475](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ConormalAlgebra/AffineIdentification.lean#L475). The attribute's comment: “part (2): affine conormal sections”.
+**`Stacks.Conormal.affineConormalIsoCotangent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ConormalAlgebra/AffineIdentification.lean, line 475](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ConormalAlgebra/AffineIdentification.lean#L475). The attribute's comment: “part (2): affine conormal sections”.
 
 > **The affine computation of the conormal sheaf.**  Let `i : Z ⟶ X` be an immersion and
 > `U ⊆ X` an affine open with `Z ∩ U = Spec (Γ(X, U) ⧸ I)` over `U`.  Then the sections of the
@@ -89,7 +89,7 @@ def affineConormalIsoCotangent {Z X : Scheme.{u}} (i : Z ⟶ X) [IsImmersion i]
       ≅ ModuleCat.of Γ(X, U) I.Cotangent
 ```
 
-**`Stacks.Conormal.pushforwardConormalIsoCotangent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ConormalAlgebra/Factorization.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ConormalAlgebra/Factorization.lean#L157). The attribute's comment: “part (1): pushforward is the ideal modulo its square”.
+**`Stacks.Conormal.pushforwardConormalIsoCotangent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ConormalAlgebra/Factorization.lean, line 157](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ConormalAlgebra/Factorization.lean#L157). The attribute's comment: “part (1): pushforward is the ideal modulo its square”.
 
 > **[Stacks, Tag 01R3] (1), the affine form of `i'_* 𝒞_{Z/X} = ℐ/ℐ²`.**  Let `i : Z ⟶ X` be an
 > immersion factored as a closed immersion `i' : Z ⟶ U` into an open subscheme, let `V ⊆ U` be an
@@ -113,7 +113,7 @@ noncomputable def pushforwardConormalIsoCotangent {Z X : Scheme.{u}} (i : Z ⟶ 
       ModuleCat.of Γ(U.toScheme, V) I.Cotangent
 ```
 
-**`Stacks.Conormal.pushforwardConormalIsoCotangent_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ConormalAlgebra/Factorization.lean, line 178](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ConormalAlgebra/Factorization.lean#L178). The attribute's comment: “part (1): canonical affine quotient formula”.
+**`Stacks.Conormal.pushforwardConormalIsoCotangent_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ConormalAlgebra/Factorization.lean, line 178](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ConormalAlgebra/Factorization.lean#L178). The attribute's comment: “part (1): canonical affine quotient formula”.
 
 > **[Stacks, Tag 01R3] (1), the normalization of the affine form of `i'_* 𝒞_{Z/X} = ℐ/ℐ²`.**
 > The isomorphism sends the canonical quotient of a section of the ideal sheaf to the class of
@@ -137,7 +137,7 @@ theorem pushforwardConormalIsoCotangent_apply {Z X : Scheme.{u}} (i : Z ⟶ X)
         (structureSheafHom i'.toLRSHom.toShHom))).val.app (op V) x, hx⟩
 ```
 
-**`Stacks.Conormal.conormalSheafIsoPullbackIdealSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ConormalComparison/IdealSheafComparison.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ConormalComparison/IdealSheafComparison.lean#L187). The attribute's comment: “part (1): pullback of the ideal sheaf”.
+**`Stacks.Conormal.conormalSheafIsoPullbackIdealSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ConormalComparison/IdealSheafComparison.lean, line 187](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ConormalComparison/IdealSheafComparison.lean#L187). The attribute's comment: “part (1): pullback of the ideal sheaf”.
 
 > **[Stacks, Tag 01R3], part (1).** The conormal sheaf of an immersion `i : Z ⟶ X` is the
 > module pullback of the ideal sheaf of *any* factorization of `i` as a closed immersion into
@@ -158,7 +158,7 @@ noncomputable def conormalSheafIsoPullbackIdealSheaf {Z X : Scheme.{u}} (i : Z �
         (Stacks.ClosedImmersion.idealSheaf i'.toLRSHom.toShHom)
 ```
 
-**`Stacks.Conormal.conormalSheafIsoPullbackIdealSheaf_liftCoborder`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ConormalComparison/Normalization.lean, line 272](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ConormalComparison/Normalization.lean#L272). The attribute's comment: “part (1): canonical normalization”.
+**`Stacks.Conormal.conormalSheafIsoPullbackIdealSheaf_liftCoborder`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ConormalComparison/Normalization.lean, line 272](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ConormalComparison/Normalization.lean#L272). The attribute's comment: “part (1): canonical normalization”.
 
 > **[Stacks, Tag 01R3], part (1): canonical normalization.**
 
@@ -169,14 +169,15 @@ theorem conormalSheafIsoPullbackIdealSheaf_liftCoborder {Z X : Scheme.{u}} (i : 
       Iso.refl (conormalSheaf i)
 ```
 
-**`Stacks.Conormal.OpenFactorizations.conormalQuotientMap_restrict_factorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ConormalOpenFactorizations/Compatibility.lean, line 296](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ConormalOpenFactorizations/Compatibility.lean#L296). The attribute's comment: “part (1): compatibility of open factorizations”.
+**`Stacks.Conormal.OpenFactorizations.conormalQuotientMap_restrict_factorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ConormalOpenFactorizations/Compatibility.lean, line 297](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ConormalOpenFactorizations/Compatibility.lean#L297). The attribute's comment: “part (1): compatibility of open factorizations”.
 
 > **[Stacks, Tag 01R3], part (1): compatibility of open factorizations.** The quotient
 > identifications from two open factorizations agree on common conormal sections: images of the
 > same ambient ideal generator agree after restriction to any common source open.
 >
 > This is `generator_eq_of_two_factorizations` at `r = (a : Γ(X, V))`. The presentation data
-> `hV`, `I`, `e`, `he` is carried because the tagged statement carries it; the proof does not use it, and the
+> `hV`, `I`, `e`, `he` is carried because the tagged statement carries it; the proof does not use it,
+> and the
 > statement proved is the stronger one with `a : I` replaced by an arbitrary `r : Γ(X, V)` and the
 > presentation dropped altogether.
 
@@ -209,7 +210,7 @@ theorem conormalQuotientMap_restrict_factorization {Z X : Scheme.{u}} (i : Z ⟶
         ((conormalQuotientMap i U₂ i₂ hfac₂).val.app (.op W₂) x₂)
 ```
 
-**`Stacks.Conormal.Tag01R3Generators.conormalQuotientMap_epi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Generators/Epi.lean, line 138](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Generators/Epi.lean#L138). The attribute's comment: “part (1): sheaf quotient map is epimorphic”.
+**`Stacks.Conormal.Tag01R3Generators.conormalQuotientMap_epi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Generators/Epi.lean, line 138](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Generators/Epi.lean#L138). The attribute's comment: “part (1): sheaf quotient map is epimorphic”.
 
 > **[Stacks, Tag 01R3], part (1): the ideal sheaf surjects onto the pushforward conormal
 > sheaf.** For an immersion `i : Z ⟶ X` and any closed-immersion factorization `i' : Z ⟶ U`,
@@ -226,7 +227,7 @@ theorem conormalQuotientMap_epi {Z X : Scheme.{u}} (i : Z ⟶ X) [IsImmersion i]
     Epi (Stacks.Conormal.conormalQuotientMap i U i' hfac)
 ```
 
-**`Stacks.Conormal.Tag01R3Generators.conormalQuotientMap_kernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Generators/Kernel.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Generators/Kernel.lean#L132). The attribute's comment: “part (1): quotient by the ideal square”.
+**`Stacks.Conormal.Tag01R3Generators.conormalQuotientMap_kernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Generators/Kernel.lean, line 132](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Generators/Kernel.lean#L132). The attribute's comment: “part (1): quotient by the ideal square”.
 
 > **[Stacks, Tag 01R3], part (1): the quotient is by the square of the ideal.** On an affine
 > open `V` of a closed-immersion factorization `i' : Z ⟶ U` of an immersion `i : Z ⟶ X`, a section
@@ -251,7 +252,7 @@ theorem conormalQuotientMap_kernel {Z X : Scheme.{u}} (i : Z ⟶ X) [IsImmersion
           (i'.ker.ideal ⟨V, hV⟩) ^ 2
 ```
 
-**`Stacks.Tag01R3PartTwo.affineConormalIsoCotangent_inv_toCotangent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PartTwo/Generators.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PartTwo/Generators.lean#L92). The attribute's comment: “part (2): canonical affine generators”.
+**`Stacks.Tag01R3PartTwo.affineConormalIsoCotangent_inv_toCotangent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PartTwo/Generators.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PartTwo/Generators.lean#L92). The attribute's comment: “part (2): canonical affine generators”.
 
 > **[Stacks, Tag 01R3], part (2): canonical affine generators.** The inverse affine
 > identification sends the class of an ideal section to its canonical conormal quotient, on every
@@ -285,7 +286,7 @@ theorem affineConormalIsoCotangent_inv_toCotangent {Z X : Scheme.{u}} (i : Z ⟶
       (Stacks.Conormal.conormalQuotientMap i U i' hfac).val.app (.op W) x
 ```
 
-**`Stacks.Tag01R3PartTwo.affineConormalIsoCotangentWithQuotient`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PartTwo/Generators.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PartTwo/Generators.lean#L137). The attribute's comment: “part (2): affine identification with canonical quotient generators”.
+**`Stacks.Tag01R3PartTwo.affineConormalIsoCotangentWithQuotient`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PartTwo/Generators.lean, line 137](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PartTwo/Generators.lean#L137). The attribute's comment: “part (2): affine identification with canonical quotient generators”.
 
 > **[Stacks, Tag 01R3], part (2): the affine identification with canonical quotient
 > generators.** The sections over an affine open `V` of the ambient scheme of the direct image of
@@ -319,7 +320,7 @@ noncomputable def affineConormalIsoCotangentWithQuotient {Z X : Scheme.{u}} (i :
             (Stacks.Conormal.conormalQuotientMap i U i' hfac).val.app (.op W) x }
 ```
 
-**`Stacks.Tag01R3PartTwo.affineConormalIsoCotangent_inv_toCotangent_liftCoborder`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PartTwo/Generators.lean, line 170](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PartTwo/Generators.lean#L170). The attribute's comment: “part (2): defining adjunction-unit generators”.
+**`Stacks.Tag01R3PartTwo.affineConormalIsoCotangent_inv_toCotangent_liftCoborder`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PartTwo/Generators.lean, line 170](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PartTwo/Generators.lean#L170). The attribute's comment: “part (2): defining adjunction-unit generators”.
 
 > **[Stacks, Tag 01R3], part (2): defining adjunction-unit generators.** On the defining
 > factorization the affine generator is the image under the defining adjunction unit itself.
@@ -351,7 +352,7 @@ theorem affineConormalIsoCotangent_inv_toCotangent_liftCoborder {Z X : Scheme.{u
         (Stacks.ClosedImmersion.idealSheaf i.liftCoborder.toLRSHom.toShHom)).val.app (.op W) x
 ```
 
-**`Stacks.Tag01R3PartTwo.affineConormalIsoCotangent_restrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PartTwo/Restrict.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PartTwo/Restrict.lean#L72). The attribute's comment: “part (2): compatibility with restriction”.
+**`Stacks.Tag01R3PartTwo.affineConormalIsoCotangent_restrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PartTwo/Restrict.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PartTwo/Restrict.lean#L72). The attribute's comment: “part (2): compatibility with restriction”.
 
 > **[Stacks, Tag 01R3], part (2): compatibility with restriction.** The affine identifications
 > commute with restriction: the class of an ideal section restricts to the class of its
@@ -387,7 +388,7 @@ theorem affineConormalIsoCotangent_restrict {Z X : Scheme.{u}} (i : Z ⟶ X) [Is
 
 [Tag 01R4](https://stacks.math.columbia.edu/tag/01R4) in the Stacks Project.
 
-**`Stacks.Immersion.immersionConormalSheafMap_ideal_mem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Conormal/SquareMap.lean, line 180](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Conormal/SquareMap.lean#L180). The attribute's comment: “affine ideal containment”.
+**`Stacks.Immersion.immersionConormalSheafMap_ideal_mem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Conormal/SquareMap.lean, line 180](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Conormal/SquareMap.lean#L180). The attribute's comment: “affine ideal containment”.
 
 > **[Stacks Project, Tag 01R4]: the ambient ring map carries the target ideal into the source
 > ideal.** On a pair of affine opens `U ⊆ X` and `V ⊆ X'` with `g(U) ⊆ V` presenting the
@@ -409,7 +410,7 @@ theorem immersionConormalSheafMap_ideal_mem (i : Z ⟶ X) (i' : Z' ⟶ X')
     (a : J) : (g.appLE V U hUV).hom (a : Γ(X', V)) ∈ I
 ```
 
-**`Stacks.Immersion.immersionConormalSheafMap_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Conormal/SquareMap.lean, line 321](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Conormal/SquareMap.lean#L321). The attribute's comment: “uniqueness”.
+**`Stacks.Immersion.immersionConormalSheafMap_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Conormal/SquareMap.lean, line 321](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Conormal/SquareMap.lean#L321). The attribute's comment: “uniqueness”.
 
 > **[Stacks Project, Tag 01R4]: the affine formula determines the map.** A morphism
 > `f^* 𝒞_{Z'/X'} ⟶ 𝒞_{Z/X}` satisfying the affine characterisation is
@@ -431,14 +432,14 @@ theorem immersionConormalSheafMap_unique (i : Z ⟶ X) (i' : Z' ⟶ X')
 
 Declarations registered for the tag:
 
-- [`Stacks.Immersion.immersionConormalSheafMap`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Thickenings/UniversalConormalGenerators.lean#L249), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Conormal/SquareMap.lean, line 618](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Conormal/SquareMap.lean#L618) (StacksFrontier): “canonical map”.
-- [`Stacks.Immersion.isInducedConormalSheafMap_immersionConormalSheafMap`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Thickenings/UniversalConormalGenerators.lean#L346), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Conormal/SquareMap.lean, line 620](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Conormal/SquareMap.lean#L620) (StacksFrontier): “affine formula”.
+- [`Stacks.Immersion.immersionConormalSheafMap`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Thickenings/UniversalConormalGenerators.lean#L257), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Conormal/SquareMap.lean, line 618](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Conormal/SquareMap.lean#L618) (StacksFrontier): “canonical map”.
+- [`Stacks.Immersion.isInducedConormalSheafMap_immersionConormalSheafMap`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Thickenings/UniversalConormalGenerators.lean#L354), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Conormal/SquareMap.lean, line 620](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Conormal/SquareMap.lean#L620) (StacksFrontier): “affine formula”.
 
 ## Tag 0473, a lemma
 
 [Tag 0473](https://stacks.math.columbia.edu/tag/0473) in the Stacks Project.
 
-**`Stacks.Immersion.epi_immersionConormalSheafMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Conormal/SquareEpi.lean, line 310](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Conormal/SquareEpi.lean#L310). The attribute's comment: “surjectivity”.
+**`Stacks.Immersion.epi_immersionConormalSheafMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Conormal/SquareEpi.lean, line 310](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Conormal/SquareEpi.lean#L310). The attribute's comment: “surjectivity”.
 
 > For a cartesian square of schemes whose horizontal maps `i` and `i'` are immersions, the
 > canonical map `f^* 𝒞_{Z'/X'} ⟶ 𝒞_{Z/X}` of conormal sheaves is an epimorphism.
@@ -449,7 +450,7 @@ theorem epi_immersionConormalSheafMap (i : Z ⟶ X) (i' : Z' ⟶ X') [IsImmersio
     Epi (immersionConormalSheafMap i i' f g (toShHom_square sq.w))
 ```
 
-**`Stacks.Immersion.isIso_immersionConormalSheafMap_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Conormal/SquareFlatIso.lean, line 254](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Conormal/SquareFlatIso.lean#L254). The attribute's comment: “flat base change”.
+**`Stacks.Immersion.isIso_immersionConormalSheafMap_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Conormal/SquareFlatIso.lean, line 254](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Conormal/SquareFlatIso.lean#L254). The attribute's comment: “flat base change”.
 
 > For a cartesian square of schemes whose horizontal maps `i` and `i'` are immersions and
 > whose ambient vertical map `g` is flat, the canonical map `f^* 𝒞_{Z'/X'} ⟶ 𝒞_{Z/X}` of
@@ -463,7 +464,7 @@ theorem isIso_immersionConormalSheafMap_of_flat (i : Z ⟶ X) (i' : Z' ⟶ X')
       (Stacks.Immersion.toShHom_square sq.w))
 ```
 
-**`Deformation.Examples.isBaseCompatibleConormalMap_deformationConormalBaseChangeIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemeDeformationConormalBaseChange.lean, line 252](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemeDeformationConormalBaseChange.lean#L252). The attribute's comment: “naturality in the base object: the flat base change for the conormal sheaf of the special fibre of the target of an arrow of deformations is the conormal datum compatible with the base along the factorisation through the spectrum of the source's base object, the map on the base being the conormal map of the morphism of base objects. This is one of the two readings of a single canonical map of Tag 01R4, not a computation of either reading on sections”.
+**`Deformation.Examples.isBaseCompatibleConormalMap_deformationConormalBaseChangeIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemeDeformationConormalBaseChange.lean, line 252](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Geometric/SchemeDeformationConormalBaseChange.lean#L252). The attribute's comment: “naturality in the base object: the flat base change for the conormal sheaf of the special fibre of the target of an arrow of deformations is the conormal datum compatible with the base along the factorisation through the spectrum of the source's base object, the map on the base being the conormal map of the morphism of base objects. This is one of the two readings of a single canonical map of Tag 01R4, not a computation of either reading on sections”.
 
 > **The flat base change of the target deformation is compatible with the base, along the other
 > factorisation of the same composite square.** The square carrying the special fibre of `Q` over
@@ -488,7 +489,7 @@ theorem isBaseCompatibleConormalMap_deformationConormalBaseChangeIso (φ : P ⟶
       (deformationConormalBaseChangeIso Q).hom
 ```
 
-**`Deformation.Examples.deformationConormalBaseChangeIso_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemeDeformationConormalBaseChange.lean, line 322](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Examples/Geometric/SchemeDeformationConormalBaseChange.lean#L322). The attribute's comment: “naturality of flat base change for the conormal sheaf of a special fibre in the base object: for an arrow of deformations, the pullback along the structure morphism of the conormal map of the morphism of base objects, followed by the flat base change of the target, is the flat base change of the source followed by the conormal map of the arrow -- up to the eqToHom comparing the two unit composites of the edge on the closed subschemes. Both conormal maps are the canonical maps of Tag 01R4; nothing is computed on sections and the map on the base is NOT identified with the map of maximal ideals”.
+**`Deformation.Examples.deformationConormalBaseChangeIso_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Examples/Geometric/SchemeDeformationConormalBaseChange.lean, line 322](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Examples/Geometric/SchemeDeformationConormalBaseChange.lean#L322). The attribute's comment: “naturality of flat base change for the conormal sheaf of a special fibre in the base object: for an arrow of deformations, the pullback along the structure morphism of the conormal map of the morphism of base objects, followed by the flat base change of the target, is the flat base change of the source followed by the conormal map of the arrow -- up to the eqToHom comparing the two unit composites of the edge on the closed subschemes. Both conormal maps are the canonical maps of Tag 01R4; nothing is computed on sections and the map on the base is NOT identified with the map of maximal ideals”.
 
 > **The flat base change of the conormal sheaf of a special fibre is natural in the base object
 > of `𝒞_Λ`.** For an arrow `φ : P ⟶ Q` of deformations of `X` the square
@@ -540,7 +541,7 @@ theorem deformationConormalBaseChangeIso_naturality (φ : P ⟶ Q) :
               (toShHom_square (specialMap_comp_map φ))
 ```
 
-**`Ideal.bijective_cotangentBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/CotangentBaseChange.lean, line 332](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/CotangentBaseChange.lean#L332). The attribute's comment: “flat case, affine”. References: EGA IV (16.2.2), “(iii)”; EGA IV (17.13.1), “special case”; SGA 6 VIII (2.2), “special case”.
+**`Ideal.bijective_cotangentBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/CotangentBaseChange.lean, line 332](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/CotangentBaseChange.lean#L332). The attribute's comment: “flat case, affine”. References: EGA IV (16.2.2), “(iii)”; EGA IV (17.13.1), “special case”; SGA 6 VIII (2.2), “special case”.
 
 > **[Stacks Project, Tag 0473], the flat case in the affine picture.** Let `S` be a flat
 > `R`-algebra, let `I` be an ideal of `R` and let `I S` be the ideal of `S` generated by its image.
@@ -561,7 +562,7 @@ theorem bijective_cotangentBaseChange [Module.Flat R S] :
 
 [Tag 062S](https://stacks.math.columbia.edu/tag/062S) in the Stacks Project.
 
-**`Stacks.Immersion.conormalSequenceRightMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Conormal/ConormalSequence.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Conormal/ConormalSequence.lean#L92). The attribute's comment: “the second arrow 𝒞\_\{Z/X} ⟶ 𝒞\_\{Z/Y}”.
+**`Stacks.Immersion.conormalSequenceRightMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Conormal/ConormalSequence.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Conormal/ConormalSequence.lean#L92). The attribute's comment: “the second arrow 𝒞\_\{Z/X} ⟶ 𝒞\_\{Z/Y}”.
 
 > **The right-hand map `𝒞_{Z/X} ⟶ 𝒞_{Z/Y}` of the conormal sequence of
 > [Stacks Project, Tag 062S].** It is the canonical map of [Stacks Project, Tag 01R4] attached to
@@ -574,7 +575,7 @@ def conormalSequenceRightMap (i : Z ⟶ Y) (j : Y ⟶ X) [IsImmersion i] [IsImme
       conormalSheaf i.liftCoborder.toLRSHom.toShHom
 ```
 
-**`Stacks.Immersion.epi_conormalSequenceRightMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Conormal/ConormalSequence.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Conormal/ConormalSequence.lean#L109). The attribute's comment: “exactness at the right term: the canonical map 𝒞\_\{Z/X} ⟶ 𝒞\_\{Z/Y} is epi”. References: EGA IV (16.2.7), “surjectivity at right”.
+**`Stacks.Immersion.epi_conormalSequenceRightMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Conormal/ConormalSequence.lean, line 109](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Conormal/ConormalSequence.lean#L109). The attribute's comment: “exactness at the right term: the canonical map 𝒞\_\{Z/X} ⟶ 𝒞\_\{Z/Y} is epi”. References: EGA IV (16.2.7), “surjectivity at right”.
 
 > **[Stacks Project, Tag 062S]: the conormal sequence is exact at `𝒞_{Z/Y}`.** For immersions
 > `Z ⟶ Y ⟶ X` the canonical map `𝒞_{Z/X} ⟶ 𝒞_{Z/Y}` is an epimorphism, which is the `⟶ 0` at the
@@ -589,7 +590,7 @@ theorem epi_conormalSequenceRightMap (i : Z ⟶ Y) (j : Y ⟶ X) [IsImmersion i]
     Epi (conormalSequenceRightMap i j)
 ```
 
-**`Stacks.Immersion.conormalSequence_comp_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Conormal/ConormalSequenceExact.lean, line 198](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Conormal/ConormalSequenceExact.lean#L198). The attribute's comment: “the two canonical maps form a complex: the composite i^* 𝒞\_\{Y/X} ⟶ 𝒞\_\{Z/X} ⟶ 𝒞\_\{Z/Y} is zero, for any immersions i : Z ⟶ Y and j : Y ⟶ X; the left-hand map is Stacks.Immersion.conormalLeftMap, equal to Stacks.AlgebraicGeometry.conormalSequenceLeftMap by Stacks.AlgebraicGeometry.conormalSequenceLeftMap\_eq”.
+**`Stacks.Immersion.conormalSequence_comp_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Conormal/ConormalSequenceExact.lean, line 198](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Conormal/ConormalSequenceExact.lean#L198). The attribute's comment: “the two canonical maps form a complex: the composite i^* 𝒞\_\{Y/X} ⟶ 𝒞\_\{Z/X} ⟶ 𝒞\_\{Z/Y} is zero, for any immersions i : Z ⟶ Y and j : Y ⟶ X; the left-hand map is Stacks.Immersion.conormalLeftMap, equal to Stacks.AlgebraicGeometry.conormalSequenceLeftMap by Stacks.AlgebraicGeometry.conormalSequenceLeftMap\_eq”.
 
 > **[Stacks Project, Tag 062S]: the two canonical maps of the conormal sequence compose to
 > zero.** For immersions `Z ⟶ Y ⟶ X` the composite
@@ -606,7 +607,7 @@ theorem conormalSequence_comp_zero (i : Z ⟶ Y) (j : Y ⟶ X) [IsImmersion i] [
     conormalLeftMap i j ≫ conormalSequenceRightMap i j = 0
 ```
 
-**`Stacks.Immersion.conormalSequenceShortComplex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Conormal/ConormalSequenceExact.lean, line 280](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Conormal/ConormalSequenceExact.lean#L280). The attribute's comment: “the sequence as a short complex”.
+**`Stacks.Immersion.conormalSequenceShortComplex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Conormal/ConormalSequenceExact.lean, line 280](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Conormal/ConormalSequenceExact.lean#L280). The attribute's comment: “the sequence as a short complex”.
 
 > **The conormal sequence of [Stacks Project, Tag 062S]** as a two-term complex of
 > `𝒪_Z`-modules, `i^* 𝒞_{Y/X} ⟶ 𝒞_{Z/X} ⟶ 𝒞_{Z/Y}`.
@@ -616,7 +617,7 @@ def conormalSequenceShortComplex (i : Z ⟶ Y) (j : Y ⟶ X) [IsImmersion i] [Is
     ShortComplex (SheafOfModules.{u} (structureSheafRing Z.toLocallyRingedSpace.toRingedSpace))
 ```
 
-**`Stacks.Immersion.conormalSequence_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Conormal/ConormalSequenceExact.lean, line 298](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Conormal/ConormalSequenceExact.lean#L298). The attribute's comment: “exactness in the middle: for any immersions i : Z ⟶ Y and j : Y ⟶ X the image of i^* 𝒞\_\{Y/X} ⟶ 𝒞\_\{Z/X} is the kernel of 𝒞\_\{Z/X} ⟶ 𝒞\_\{Z/Y} (equality, as ShortComplex.Exact of the complex built from the two canonical maps of Tag 01R4); no hypothesis beyond the two immersions”.
+**`Stacks.Immersion.conormalSequence_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Conormal/ConormalSequenceExact.lean, line 298](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Conormal/ConormalSequenceExact.lean#L298). The attribute's comment: “exactness in the middle: for any immersions i : Z ⟶ Y and j : Y ⟶ X the image of i^* 𝒞\_\{Y/X} ⟶ 𝒞\_\{Z/X} is the kernel of 𝒞\_\{Z/X} ⟶ 𝒞\_\{Z/Y} (equality, as ShortComplex.Exact of the complex built from the two canonical maps of Tag 01R4); no hypothesis beyond the two immersions”.
 
 > **[Stacks Project, Tag 062S]: the conormal sequence is exact at `𝒞_{Z/X}`.** For immersions
 > `Z ⟶ Y ⟶ X` the kernel of the canonical map `𝒞_{Z/X} ⟶ 𝒞_{Z/Y}` is the image of the canonical
@@ -633,7 +634,7 @@ theorem conormalSequence_exact (i : Z ⟶ Y) (j : Y ⟶ X) [IsImmersion i] [IsIm
     (conormalSequenceShortComplex i j).Exact
 ```
 
-**`Stacks.AlgebraicGeometry.conormalSequenceLeftMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Conormal/SplitSequence.lean, line 43](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Conormal/SplitSequence.lean#L43). The attribute's comment: “the first arrow i^* 𝒞\_\{Y/X} ⟶ 𝒞\_\{Z/X}”.
+**`Stacks.AlgebraicGeometry.conormalSequenceLeftMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Conormal/SplitSequence.lean, line 43](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Conormal/SplitSequence.lean#L43). The attribute's comment: “the first arrow i^* 𝒞\_\{Y/X} ⟶ 𝒞\_\{Z/X}”.
 
 > **The left-hand map `i^* 𝒞_{Y/X} ⟶ 𝒞_{Z/X}` of the conormal sequence of
 > [Stacks Project, Tag 062S].** It is the canonical map of [Stacks Project, Tag 01R4] attached to
@@ -653,4 +654,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 29.32, Tag 01R1](https://stacks.math.columbia.edu/tag/01R1)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

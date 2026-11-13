@@ -8,13 +8,13 @@ proof: formalized
 
 # 26.8 Closed subspaces of affine schemes
 
-Section 26.8 of the Stacks Project, [Tag 01IF](https://stacks.math.columbia.edu/tag/01IF). 2 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 26.8 of the Stacks Project, [Tag 01IF](https://stacks.math.columbia.edu/tag/01IF). 2 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 01IG, an example
 
 [Tag 01IG](https://stacks.math.columbia.edu/tag/01IG) in the Stacks Project.
 
-**`AlgebraicGeometry.quotientPrime_comap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Immersion/Quotient.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Immersion/Quotient.lean#L70). The attribute's comment: “quotient\_stalk\_map”.
+**`AlgebraicGeometry.quotientPrime_comap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Immersion/Quotient.lean, line 70](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/Immersion/Quotient.lean#L70). The attribute's comment: “quotient\_stalk\_map”.
 
 > **Stacks Project, Tag 01IG.** The point `p / I` of `Spec(R / I)` maps to
 > the point `p` of `Spec R`.
@@ -26,7 +26,7 @@ public theorem quotientPrime_comap {R : Type u} [CommRing R] (I p : Ideal R) [p.
       (⟨p, inferInstance⟩ : PrimeSpectrum R)
 ```
 
-**`AlgebraicGeometry.stalkMap_quotient_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Immersion/Quotient.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Immersion/Quotient.lean#L103). The attribute's comment: “quotient\_stalk\_map”.
+**`AlgebraicGeometry.stalkMap_quotient_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Immersion/Quotient.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/Immersion/Quotient.lean#L103). The attribute's comment: “quotient\_stalk\_map”.
 
 > **Stacks Project, Tag 01IG.** The map on stalks induced by
 > `Spec(R / I) → Spec R` at `p / I` is surjective.
@@ -39,7 +39,7 @@ public theorem stalkMap_quotient_surjective {R : Type u} [CommRing R]
         (quotientPrime I p hIp)).hom
 ```
 
-**`AlgebraicGeometry.stalkMap_quotient_ker`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Immersion/Quotient.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Immersion/Quotient.lean#L124). The attribute's comment: “quotient\_stalk\_map”.
+**`AlgebraicGeometry.stalkMap_quotient_ker`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Immersion/Quotient.lean, line 124](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/Immersion/Quotient.lean#L124). The attribute's comment: “quotient\_stalk\_map”.
 
 > **Stacks Project, Tag 01IG.** The kernel of the map on stalks induced by
 > `Spec(R / I) → Spec R` at `p / I` is the extended ideal `I R_p`.
@@ -55,7 +55,7 @@ public theorem stalkMap_quotient_ker {R : Type u} [CommRing R]
           (PrimeSpectrum.comap (Ideal.Quotient.mk I) (quotientPrime I p hIp))).hom I
 ```
 
-**`Stacks.ClosedImmersion.isClosedImmersion_specMap_quotientMk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Immersion/QuotientClosedImmersion.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Immersion/QuotientClosedImmersion.lean#L84). The attribute's comment: “closed\_immersion\_of\_locally\_ringed\_spaces”.
+**`Stacks.ClosedImmersion.isClosedImmersion_specMap_quotientMk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Immersion/QuotientClosedImmersion.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/Immersion/QuotientClosedImmersion.lean#L84). The attribute's comment: “closed\_immersion\_of\_locally\_ringed\_spaces”.
 
 > For an ideal `I` of a ring `R` the morphism `Spec (R ⧸ I) ⟶ Spec R` is a closed immersion
 > of locally ringed spaces, in the sense of Definition 01HK: a closed embedding on spaces whose
@@ -67,7 +67,7 @@ theorem isClosedImmersion_specMap_quotientMk :
       (Spec.map (CommRingCat.ofHom (Ideal.Quotient.mk I))).toLRSHom.toShHom
 ```
 
-**`Stacks.ClosedImmersion.isClosedEmbedding_specMap_quotientMk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Immersion/QuotientClosedImmersion.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Immersion/QuotientClosedImmersion.lean#L95). The attribute's comment: “closed\_embedding\_onto\_closed\_subset”.
+**`Stacks.ClosedImmersion.isClosedEmbedding_specMap_quotientMk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Immersion/QuotientClosedImmersion.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/Immersion/QuotientClosedImmersion.lean#L95). The attribute's comment: “closed\_embedding\_onto\_closed\_subset”.
 
 > The map `Spec (R ⧸ I) → Spec R` is a homeomorphism of `Spec (R ⧸ I)` onto a closed subset
 > of `Spec R`.
@@ -77,7 +77,7 @@ theorem isClosedEmbedding_specMap_quotientMk :
     Topology.IsClosedEmbedding ⇑(Spec.map (CommRingCat.ofHom (Ideal.Quotient.mk I))).base
 ```
 
-**`Stacks.ClosedImmersion.existsUnique_iso_tildeSubspace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Immersion/QuotientClosedImmersion.lean, line 180](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Scheme/Immersion/QuotientClosedImmersion.lean#L180). The attribute's comment: “iso\_closed\_subspace\_of\_tilde”.
+**`Stacks.ClosedImmersion.existsUnique_iso_tildeSubspace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Scheme/Immersion/QuotientClosedImmersion.lean, line 180](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Scheme/Immersion/QuotientClosedImmersion.lean#L180). The attribute's comment: “iso\_closed\_subspace\_of\_tilde”.
 
 > `Spec (R ⧸ I)` is the closed subspace of `Spec R` cut out by the quasi-coherent sheaf of
 > ideals `I^~`: there is a unique isomorphism of locally ringed spaces from `Spec (R ⧸ I)` to that
@@ -94,7 +94,7 @@ theorem existsUnique_iso_tildeSubspace :
 
 [Tag 01IH](https://stacks.math.columbia.edu/tag/01IH) in the Stacks Project.
 
-**`Stacks.ClosedImmersion.existsUnique_ideal_iso_quotientSpec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ClosedImmersion/IntoAffine.lean, line 230](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ClosedImmersion/IntoAffine.lean#L230).
+**`Stacks.ClosedImmersion.existsUnique_ideal_iso_quotientSpec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ClosedImmersion/IntoAffine.lean, line 230](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ClosedImmersion/IntoAffine.lean#L230).
 
 > A closed immersion of locally ringed spaces into `Spec R` is, over `Spec R`, the spectrum of
 > the quotient by a unique ideal of `R`.
@@ -113,4 +113,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 26.8, Tag 01IF](https://stacks.math.columbia.edu/tag/01IF)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

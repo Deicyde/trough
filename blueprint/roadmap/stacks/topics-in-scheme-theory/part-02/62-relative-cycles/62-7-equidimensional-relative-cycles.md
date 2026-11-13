@@ -8,13 +8,13 @@ proof: formalized
 
 # 62.7 Equidimensional relative cycles
 
-Section 62.7 of the Stacks Project, [Tag 0H5H](https://stacks.math.columbia.edu/tag/0H5H). 6 tags here are carried by 16 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 62.7 of the Stacks Project, [Tag 0H5H](https://stacks.math.columbia.edu/tag/0H5H). 6 tags here are carried by 16 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0H5I, a definition
 
 [Tag 0H5I](https://stacks.math.columbia.edu/tag/0H5I) in the Stacks Project.
 
-**`Stacks.Chow.IsEquidimensional`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/EquidimensionalCycles.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/EquidimensionalCycles.lean#L89). The attribute's comment: “the equidimensionality condition”.
+**`Stacks.Chow.IsEquidimensional`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/EquidimensionalCycles.lean, line 89](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/EquidimensionalCycles.lean#L89). The attribute's comment: “the equidimensionality condition”.
 
 > A family of `r`-cycles on the fibres of `f` is *equidimensional* when its support is
 > contained in a closed subset of `X` whose relative dimension over `S` is at most `r`.
@@ -24,7 +24,7 @@ def IsEquidimensional {X S : Scheme.{u}} (f : X ⟶ S) [LocallyOfFiniteType f]
     [IsLocallyNoetherian S] (r : ℕ) (α : FamilyOfCycles f r) : Prop
 ```
 
-**`Stacks.Chow.equidimensionalRelativeCycles`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/EquidimensionalCycles.lean, line 461](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/EquidimensionalCycles.lean#L461). The attribute's comment: “the group z\_equi(X/S, r) of equidimensional relative r-cycles”.
+**`Stacks.Chow.equidimensionalRelativeCycles`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/EquidimensionalCycles.lean, line 461](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/EquidimensionalCycles.lean#L461). The attribute's comment: “the group z\_equi(X/S, r) of equidimensional relative r-cycles”.
 
 > The group `z_equi(X/S, r)` of equidimensional relative `r`-cycles on `X/S`: the subgroup of
 > the group of families of `r`-cycles on the fibres of `X/S` whose members are the relative
@@ -40,7 +40,7 @@ def equidimensionalRelativeCycles {X S : Scheme.{u}} (f : X ⟶ S) [LocallyOfFin
 
 [Tag 0H5J](https://stacks.math.columbia.edu/tag/0H5J) in the Stacks Project.
 
-**`Stacks.Chow.NotEquidimensional.exampleFamily`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/NotEquidimensional.lean, line 430](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/NotEquidimensional.lean#L430). The attribute's comment: “the family of 0-cycles of the example”.
+**`Stacks.Chow.NotEquidimensional.exampleFamily`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/NotEquidimensional.lean, line 430](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/NotEquidimensional.lean#L430). The attribute's comment: “the family of 0-cycles of the example”.
 
 > **Stacks Project, Tag 0H5J.** The family of `0`-cycles on the fibres of
 > `Spec k[x, y, t] ⟶ Spec k[x, y]` of Suslin--Voevodsky's example.
@@ -49,7 +49,7 @@ def equidimensionalRelativeCycles {X S : Scheme.{u}} (f : X ⟶ S) [LocallyOfFin
 def exampleFamily (k : Type u) [Field k] : FamilyOfCycles (projection k) 0
 ```
 
-**`Stacks.Chow.NotEquidimensional.exampleFamily_of_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/NotEquidimensional.lean, line 436](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/NotEquidimensional.lean#L436). The attribute's comment: “the first clause: the member of the family is zero when b = 0”.
+**`Stacks.Chow.NotEquidimensional.exampleFamily_of_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/NotEquidimensional.lean, line 436](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/NotEquidimensional.lean#L436). The attribute's comment: “the first clause: the member of the family is zero when b = 0”.
 
 > **Stacks Project, Tag 0H5J, first clause.** The example family vanishes on the fibre over
 > a point where the image of `y` is zero.
@@ -59,7 +59,7 @@ theorem exampleFamily_of_eq_zero (k : Type u) [Field k] (s : baseScheme k)
     (hb : yImage k s = 0) : exampleFamily k s = 0
 ```
 
-**`Stacks.Chow.NotEquidimensional.exampleFamily_of_ne_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/NotEquidimensional.lean, line 445](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/NotEquidimensional.lean#L445). The attribute's comment: “the second clause: the member of the family is [p] - [q] when b is nonzero”.
+**`Stacks.Chow.NotEquidimensional.exampleFamily_of_ne_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/NotEquidimensional.lean, line 445](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/NotEquidimensional.lean#L445). The attribute's comment: “the second clause: the member of the family is [p] - [q] when b is nonzero”.
 
 > **Stacks Project, Tag 0H5J, second clause.** On a fibre where the image `b` of `y` is
 > nonzero the member of the example family is the difference `[p] - [q]` of the `κ(s)`-rational
@@ -72,7 +72,7 @@ theorem exampleFamily_of_ne_zero (k : Type u) [Field k] (s : baseScheme k)
       twoPointCycle (firstPoint k s) (secondPoint k s)
 ```
 
-**`Stacks.Chow.NotEquidimensional.mem_closure_supportOfFamily_exampleFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/NotEquidimensional.lean, line 523](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/NotEquidimensional.lean#L523). The attribute's comment: “the closure of the support contains the whole fibre over the origin”.
+**`Stacks.Chow.NotEquidimensional.mem_closure_supportOfFamily_exampleFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/NotEquidimensional.lean, line 523](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/NotEquidimensional.lean#L523). The attribute's comment: “the closure of the support contains the whole fibre over the origin”.
 
 > **Stacks Project, Tag 0H5J.** The closure of the support of the example family contains the
 > whole fibre over the origin, which is a line: the surface `y·t = x` lies in that closure and
@@ -84,7 +84,7 @@ theorem mem_closure_supportOfFamily_exampleFamily (k : Type u) [Field k] (z : to
     z ∈ closure (supportOfFamily (projection k) (exampleFamily k))
 ```
 
-**`Stacks.Chow.NotEquidimensional.not_isEquidimensional_exampleFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/NotEquidimensional.lean, line 639](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/NotEquidimensional.lean#L639). The attribute's comment: “the example family is not equidimensional”.
+**`Stacks.Chow.NotEquidimensional.not_isEquidimensional_exampleFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/NotEquidimensional.lean, line 639](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/NotEquidimensional.lean#L639). The attribute's comment: “the example family is not equidimensional”.
 
 > **Stacks Project, Tag 0H5J.** The example family of `0`-cycles on the fibres of
 > `Spec k[x, y, t] ⟶ Spec k[x, y]` is not equidimensional: a closed subset of `X` containing its
@@ -96,7 +96,7 @@ theorem not_isEquidimensional_exampleFamily (k : Type u) [Field k] :
     ¬ IsEquidimensional (projection k) 0 (exampleFamily k)
 ```
 
-**`Stacks.Chow.NotEquidimensional.isRelativeCycle_exampleFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/NotEquidimensional.lean, line 1320](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/NotEquidimensional.lean#L1320). The attribute's comment: “the example family is a relative 0-cycle, compatible with specializations”.
+**`Stacks.Chow.NotEquidimensional.isRelativeCycle_exampleFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/NotEquidimensional.lean, line 1320](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/NotEquidimensional.lean#L1320). The attribute's comment: “the example family is a relative 0-cycle, compatible with specializations”.
 
 > **Stacks Project, Tag 0H5J.** The family `α` of Suslin--Voevodsky's example is a relative
 > `0`-cycle: it is compatible with specializations. Over a discrete valuation ring `R` with a
@@ -116,7 +116,7 @@ theorem isRelativeCycle_exampleFamily (k : Type u) [Field k] :
     IsRelativeCycle (projection k) 0 (exampleFamily k)
 ```
 
-**`Stacks.Chow.NotEquidimensional.exists_isRelativeCycle_not_isEquidimensional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/NotEquidimensional.lean, line 1458](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/NotEquidimensional.lean#L1458). The attribute's comment: “there exist relative r-cycles which are not equidimensional”.
+**`Stacks.Chow.NotEquidimensional.exists_isRelativeCycle_not_isEquidimensional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/NotEquidimensional.lean, line 1458](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/NotEquidimensional.lean#L1458). The attribute's comment: “there exist relative r-cycles which are not equidimensional”.
 
 > **Stacks Project, Tag 0H5J.** There exist relative `0`-cycles which are not
 > equidimensional: Suslin--Voevodsky's family on `Spec k[x, y, t] ⟶ Spec k[x, y]` is one.
@@ -131,7 +131,7 @@ theorem exists_isRelativeCycle_not_isEquidimensional (k : Type u) [Field k] :
 
 [Tag 0H5K](https://stacks.math.columbia.edu/tag/0H5K) in the Stacks Project.
 
-**`Stacks.Chow.isEquidimensional_restrictedFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/EquidimensionalCycles.lean, line 115](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/EquidimensionalCycles.lean#L115). The attribute's comment: “restriction”.
+**`Stacks.Chow.isEquidimensional_restrictedFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/EquidimensionalCycles.lean, line 115](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/EquidimensionalCycles.lean#L115). The attribute's comment: “restriction”.
 
 > Restriction to compatible open subschemes of the source and the base preserves
 > equidimensionality of a family of cycles on the fibres.
@@ -148,7 +148,7 @@ theorem isEquidimensional_restrictedFamily {X S U V : Scheme.{u}} (f : X ⟶ S)
     IsEquidimensional fU r (restrictedFamily f fU j i h r α).1
 ```
 
-**`Stacks.Chow.isEquidimensional_baseChangeFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/EquidimensionalDescent.lean, line 542](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/EquidimensionalDescent.lean#L542). The attribute's comment: “base change”.
+**`Stacks.Chow.isEquidimensional_baseChangeFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/EquidimensionalDescent.lean, line 542](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/EquidimensionalDescent.lean#L542). The attribute's comment: “base change”.
 
 > **Stacks Project, Tag 0H5K, the base-change clause.** The base change of an equidimensional
 > family of `r`-cycles along an arbitrary morphism `g : S' ⟶ S` of the base is equidimensional:
@@ -162,7 +162,7 @@ theorem isEquidimensional_baseChangeFamily {X S S' : Scheme.{u}} (f : X ⟶ S)
     IsEquidimensional (pullback.snd f g) r (baseChangeFamily f g r α)
 ```
 
-**`Stacks.Chow.isEquidimensional_flatPullbackFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/EquidimensionalDescent.lean, line 590](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/EquidimensionalDescent.lean#L590). The attribute's comment: “flat pullback”.
+**`Stacks.Chow.isEquidimensional_flatPullbackFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/EquidimensionalDescent.lean, line 590](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/EquidimensionalDescent.lean#L590). The attribute's comment: “flat pullback”.
 
 > **Stacks Project, Tag 0H5K, the flat-pullback clause.** The flat pullback of an
 > equidimensional family of `r`-cycles along a morphism `j : U ⟶ X` of schemes over `S` which is
@@ -184,7 +184,7 @@ theorem isEquidimensional_flatPullbackFamily {X S U : Scheme.{u}} (f : X ⟶ S)
 
 [Tag 0H5L](https://stacks.math.columbia.edu/tag/0H5L) in the Stacks Project.
 
-**`Stacks.Chow.isEquidimensional_iff_forall_restrictedFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/EquidimensionalCycles.lean, line 293](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/EquidimensionalCycles.lean#L293).
+**`Stacks.Chow.isEquidimensional_iff_forall_restrictedFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/EquidimensionalCycles.lean, line 293](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/EquidimensionalCycles.lean#L293).
 
 > Equidimensionality of a family of cycles may be checked Zariski locally on `X` and on `S`:
 > given open subschemes `U t ⊆ X` lying over open subschemes `V t ⊆ S` whose members cover `X`,
@@ -213,7 +213,7 @@ theorem isEquidimensional_iff_forall_restrictedFamily {X S : Scheme.{u}} (f : X 
 
 [Tag 0H5M](https://stacks.math.columbia.edu/tag/0H5M) in the Stacks Project.
 
-**`Stacks.Chow.isEquidimensional_iff_forall_of_fppfCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/EquidimensionalDescent.lean, line 367](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/EquidimensionalDescent.lean#L367). The attribute's comment: “generalized: the families over the covering are an argument and enter only through their supports, so no relative-cycle condition is needed; `isEquidimensional_iff_forall_baseChangeFamily` instantiates them at the base changes themselves”.
+**`Stacks.Chow.isEquidimensional_iff_forall_of_fppfCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/EquidimensionalDescent.lean, line 367](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/EquidimensionalDescent.lean#L367). The attribute's comment: “generalized: the families over the covering are an argument and enter only through their supports, so no relative-cycle condition is needed; `isEquidimensional_iff_forall_baseChangeFamily` instantiates them at the base changes themselves”.
 
 > The support form of Tag 0H5M: for an fppf covering `{g i : T i ⟶ S}` of the base, a family
 > of `r`-cycles on the fibres of `f : X ⟶ S` is equidimensional exactly when each family on the
@@ -234,7 +234,7 @@ theorem isEquidimensional_iff_forall_of_fppfCovering {X S : Scheme.{u}} (f : X �
       ∀ i, IsEquidimensional (pullback.snd f (g i)) r (β i))
 ```
 
-**`Stacks.Chow.isEquidimensional_iff_forall_baseChangeFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/EquidimensionalDescent.lean, line 395](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/EquidimensionalDescent.lean#L395).
+**`Stacks.Chow.isEquidimensional_iff_forall_baseChangeFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/EquidimensionalDescent.lean, line 395](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/EquidimensionalDescent.lean#L395).
 
 > **Stacks Project, Tag 0H5M.** Equidimensionality of a family of `r`-cycles on the fibres of
 > `f : X ⟶ S` is local for an fppf covering `{g i : T i ⟶ S}` of the base: the family is
@@ -255,7 +255,7 @@ theorem isEquidimensional_iff_forall_baseChangeFamily {X S : Scheme.{u}} (f : X 
 
 [Tag 0H5N](https://stacks.math.columbia.edu/tag/0H5N) in the Stacks Project.
 
-**`Stacks.Chow.isEquidimensional_iff_forall_flatPullbackFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/EquidimensionalDescent.lean, line 522](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/EquidimensionalDescent.lean#L522).
+**`Stacks.Chow.isEquidimensional_iff_forall_flatPullbackFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/EquidimensionalDescent.lean, line 522](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/EquidimensionalDescent.lean#L522).
 
 > **Stacks Project, Tag 0H5N.** Equidimensionality of a family of `r`-cycles on the fibres of
 > `f : X ⟶ S` can be checked after a jointly surjective family `{fi i : Xi i ⟶ X}` of flat
@@ -282,4 +282,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 62.7, Tag 0H5H](https://stacks.math.columbia.edu/tag/0H5H)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

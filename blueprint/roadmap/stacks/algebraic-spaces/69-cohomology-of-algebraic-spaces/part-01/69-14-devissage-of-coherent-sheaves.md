@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: AlgebraicGeometry.Space.exists_shortExact_coherent_supportOfSheaf_subset, AlgebraicGeometry.Space.exists_mono_modulePushforward_idealSum_of_schemeTheoreticSupport, AlgebraicGeometry.Space.hasIdealDevissage_of_isCoherent, AlgebraicGeometry.Space.property_of_ideal_pushforward_and_extensions, AlgebraicGeometry.Space.property_of_isCoherent_of_hasGenericSubsheaves, AlgebraicGeometry.Space.property_of_integralWitness_and_twoOutOfThree, AlgebraicGeometry.Space.property_of_integralWitness_and_twoOutOfThree', AlgebraicGeometry.Space.property_of_integralWitness_and_twoOutOfThree_of_isNoetherian
+lean: AlgebraicGeometry.Space.exists_shortExact_coherent_supportOfSheaf_subset, AlgebraicGeometry.Space.exists_mono_modulePushforward_idealSum_of_schemeTheoreticSupport, AlgebraicGeometry.Space.hasIdealDevissage_of_isCoherent, AlgebraicGeometry.Space.property_of_ideal_pushforward_and_extensions, AlgebraicGeometry.Space.property_of_isCoherent_of_hasGenericSubsheaves, AlgebraicGeometry.Space.property_of_isCoherent_of_integralWitness
 statement: formalized
 proof: formalized
 ---
 
 # 69.14 Devissage of coherent sheaves
 
-Section 69.14 of the Stacks Project, [Tag 07UN](https://stacks.math.columbia.edu/tag/07UN). 6 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 69.14 of the Stacks Project, [Tag 07UN](https://stacks.math.columbia.edu/tag/07UN). 6 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 07UP, a lemma
 
 [Tag 07UP](https://stacks.math.columbia.edu/tag/07UP) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_shortExact_coherent_supportOfSheaf_subset`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentSupportSeparation.lean, line 180](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentSupportSeparation.lean#L180).
+**`AlgebraicGeometry.Space.exists_shortExact_coherent_supportOfSheaf_subset`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentSupportSeparation.lean, line 180](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoherentSupportSeparation.lean#L180).
 
 > **Stacks 07UP.** Let `X` be a Noetherian algebraic space over a scheme `S` and let `F` be a
 > coherent `𝒪_X`-module whose support is the union `Z ∪ Z'` of two closed subsets of `|X|`.  Then
@@ -44,7 +44,7 @@ theorem exists_shortExact_coherent_supportOfSheaf_subset
 
 [Tag 07UQ](https://stacks.math.columbia.edu/tag/07UQ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_mono_modulePushforward_idealSum_of_schemeTheoreticSupport`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentIrreducibleIdealInjection.lean, line 667](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentIrreducibleIdealInjection.lean#L667).
+**`AlgebraicGeometry.Space.exists_mono_modulePushforward_idealSum_of_schemeTheoreticSupport`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentIrreducibleIdealInjection.lean, line 674](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoherentIrreducibleIdealInjection.lean#L674).
 
 > **[Stacks, Tag 07UQ].**  Let `X` be a Noetherian algebraic space over `S` and let `ℱ` be a
 > coherent `𝒪_X`-module whose scheme-theoretic support `i : Z → X` is reduced with `|Z|`
@@ -69,7 +69,8 @@ theorem exists_mono_modulePushforward_idealSum_of_schemeTheoreticSupport
     (coh : IsCoherent B S hS X.1 X.2 F)
     (redIrr : IsReducedIrreducible B S hS (schemeTheoreticSupport B S hS X F)) :
     ∃ hZ : IsClosedSubspace B S hS (schemeTheoreticSupport B S hS X F),
-      ∃ (r : ℕ) (I : (SheafOfModules.unit ((Stacks.SheafOfModules.Tensor.ringSheaf (smallEtaleRingedSite B S hS
+      ∃ (r : ℕ) (I : (SheafOfModules.unit ((Stacks.SheafOfModules.Tensor.ringSheaf
+          (smallEtaleRingedSite B S hS
           (closedSubfunctorSpace B S hS hZ).1 (closedSubfunctorSpace B S hS hZ).2).O))).Submodule),
         I.toSheafOfModules.IsQuasicoherentOnSite ∧ 0 < r ∧ I ≠ ⊥ ∧
         IsCoherent B S hS X.1 X.2 ((modulePushforward B S hS (closedSubfunctorι B S hS hZ)).obj
@@ -88,7 +89,7 @@ theorem exists_mono_modulePushforward_idealSum_of_schemeTheoreticSupport
 
 [Tag 07UR](https://stacks.math.columbia.edu/tag/07UR) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.hasIdealDevissage_of_isCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentDevissageFiltration.lean, line 872](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentDevissageFiltration.lean#L872).
+**`AlgebraicGeometry.Space.hasIdealDevissage_of_isCoherent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentDevissageFiltration.lean, line 872](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoherentDevissageFiltration.lean#L872).
 
 > **Stacks Project, Tag 07UR.**  Let `X` be a Noetherian algebraic space over a scheme `S`
 > and let `F` be a coherent `𝒪_X`-module.  Then `F` carries a filtration
@@ -114,7 +115,7 @@ theorem hasIdealDevissage_of_isCoherent (terminal : B.Contains (⊤_ Scheme.{u})
 
 [Tag 07US](https://stacks.math.columbia.edu/tag/07US) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.property_of_ideal_pushforward_and_extensions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentDevissageInduction.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentDevissageInduction.lean#L131).
+**`AlgebraicGeometry.Space.property_of_ideal_pushforward_and_extensions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentDevissageInduction.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoherentDevissageInduction.lean#L131).
 
 > Let `X` be a Noetherian algebraic space over `S` and let `P` be a property of `𝒪_X`-modules
 > such that
@@ -149,7 +150,7 @@ theorem property_of_ideal_pushforward_and_extensions (X : AlgebraicSpaces B S hS
 
 [Tag 07UT](https://stacks.math.columbia.edu/tag/07UT) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.property_of_isCoherent_of_hasGenericSubsheaves`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentDevissageCriterion.lean, line 621](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentDevissageCriterion.lean#L621).
+**`AlgebraicGeometry.Space.property_of_isCoherent_of_hasGenericSubsheaves`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentDevissageCriterion.lean, line 621](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoherentDevissageCriterion.lean#L621).
 
 > **Stacks Project, Tag 07UT.**  Let `X` be a Noetherian algebraic space over a scheme `S` and
 > let `P` be a property of coherent `𝒪_X`-modules such that
@@ -189,134 +190,10 @@ theorem property_of_isCoherent_of_hasGenericSubsheaves
 
 [Tag 08AN](https://stacks.math.columbia.edu/tag/08AN) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.property_of_integralWitness_and_twoOutOfThree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentDevissageHigherRank.lean, line 874](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentDevissageHigherRank.lean#L874). The attribute's comment: “the dévissage principle in its higher-rank form: the Noetherian induction, the minimal-subspace step, the support of a nonzero ideal direct image, the ideal-intersection paragraph and 07UQ in the shape the step consumes, from 07US, 07UR and 07UQ, carrying the conclusion of 07UR, the coherence clause of 07UH for the direct image of a quasi-coherent sheaf of ideals, and 07UQ's own two inputs: 07U0's module on the support and the surjectivity half of 07UM”.
+**`AlgebraicGeometry.Space.property_of_isCoherent_of_integralWitness`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentDevissageHigherRankNoetherian.lean, line 295](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/CoherentDevissageHigherRankNoetherian.lean#L295). The attribute's comment: “corrected: |X| is also required to be nonempty, or P to hold on zero modules; without this the statement fails on an algebraic space with no points, for the property False”.
 
-> **Stacks Project, Tag 08AN.**  Let `X` be a Noetherian algebraic space over a scheme `S`
-> and let `P` be a property of coherent `𝒪_X`-modules such that
->
-> 1. for a short exact sequence of coherent modules, if two out of three terms have `P` then so
->    does the third;
-> 2. if `P` holds for the direct sum of `r ≥ 1` copies of a module, for some `r ≥ 1`, then it
->    holds for that module;
-> 3. for every reduced closed subspace `Z ⊆ X` with `|Z|` irreducible there is a coherent module
->    on `X` whose scheme-theoretic support is `Z` and which has `P`.
->
-> Then `P` holds for every coherent module on `X`.
->
-> Three hypotheses are carried beyond the source's list, and each is discussed in the module
-> documentation.  None of them is mathematics of Stacks 08AN: each is the conclusion, or a named
-> clause, of another tag, and each is a statement that tag's own formalization here still carries.
->
-> * `hdev`, the conclusion of Stacks 07UR for every coherent module on `X`, which is
->   `AlgebraicGeometry.Space.hasIdealDevissage_of_isCoherent`.
-> * `h07UH`, `AlgebraicGeometry.Space.IdealPushforwardCoherent`: the coherence clause of
->   Stacks 07UH at the inclusion of a closed subspace and a quasi-coherent sheaf of ideals on it.
-> * `hinputs`, `AlgebraicGeometry.Space.ExistsSupportModuleAndGenericTrivialization`: the two
->   inputs of Stacks 07UQ, namely the module on the scheme-theoretic support from
->   Stacks 07U0 — which rests on the essential-image assertion of Stacks 04CJ part (3) — and the
->   generically bijective map of the surjectivity half of Stacks 07UM.
->
-> Everything else — the Noetherian induction, the step at a minimal subspace, the equality of the
-> supports of the direct images of two nonzero sheaves of ideals on `Z`, the last paragraph of the
-> source's proof in `AlgebraicGeometry.Space.idealPushforwardComparison`, Stacks 07UQ itself in
-> `AlgebraicGeometry.Space.existsIdealInjectionDevissageStep`, and the passage from sheaves of
-> ideals to all coherent modules through Stacks 07US — is proved here.
->
-> The hypothesis `hzero` is not in the source's list and cannot be dropped, for the reason
-> recorded at the library's Stacks 07US: on an algebraic space with no points the property
-> `fun _ => False` satisfies the source's three conditions while the zero module is coherent and
-> does not have it.
-
-```lean
-theorem property_of_integralWitness_and_twoOutOfThree (hZtop : B.Contains (⊤_ Scheme.{u}))
-    (X : AlgebraicSpaces B S hS) (hX : IsNoetherian B S hS hZtop X.1)
-    (hdev : ∀ M : Modules.{u, u} B S hS X.1 X.2, IsCoherent B S hS X.1 X.2 M →
-      HasIdealDevissage B S hS X M)
-    (h07UH : IdealPushforwardCoherent B S hS X)
-    (hinputs : ExistsSupportModuleAndGenericTrivialization B S hS X)
-    (P : Modules.{u, u} B S hS X.1 X.2 → Prop)
-    (hzero : ∀ M : Modules.{u, u} B S hS X.1 X.2, IsZero M → P M)
-    (h1 : TwoOutOfThreeCoherent B S hS X P) (h2 : ClosedUnderDirectSumDescent B S hS X P)
-    (h3 : HasCoherentWitnessOnIntegralSubspaces B S hS X P)
-    (M : Modules.{u, u} B S hS X.1 X.2) (hM : IsCoherent B S hS X.1 X.2 M) : P M
-```
-
-**`AlgebraicGeometry.Space.property_of_integralWitness_and_twoOutOfThree'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentDevissageHigherRankIdeal.lean, line 266](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentDevissageHigherRankIdeal.lean#L266). The attribute's comment: “the dévissage principle in its higher-rank form: the Noetherian induction, the minimal-subspace step, the support of a nonzero ideal direct image, the ideal-intersection paragraph and 07UQ in the shape the step consumes, from 07US, 07UR and 07UQ. The one argument beside the source's list is the conclusion of 07UR for every coherent module on X”.
-
-> Let `X` be a Noetherian algebraic space over a scheme `S` and let `P` be a property of
-> coherent `𝒪_X`-modules such that
->
-> 1. for a short exact sequence of coherent modules, if two out of three terms have `P` then so
->    does the third;
-> 2. if `P` holds for the direct sum of `r ≥ 1` copies of a module, for some `r ≥ 1`, then it
->    holds for that module;
-> 3. for every reduced closed subspace `Z ⊆ X` with `|Z|` irreducible there is a coherent module
->    on `X` whose scheme-theoretic support is `Z` and which has `P`.
->
-> Then `P` holds for every coherent module on `X`.
->
-> One hypothesis stands beside the source's list, `hdev`: the conclusion of Stacks 07UR for every
-> coherent module on `X`, which is `AlgebraicGeometry.Space.hasIdealDevissage_of_isCoherent`.  It
-> is not mathematics of Stacks 08AN — it is the conclusion of another tag, stated in the shape
-> this proof uses.
->
-> Everything else is proved: the Noetherian induction, the step at a minimal subspace, the
-> equality of the supports of the direct images of two nonzero sheaves of ideals on `Z`, the last
-> paragraph of the source's proof in `AlgebraicGeometry.Space.idealPushforwardComparison`,
-> Stacks 07UQ in `AlgebraicGeometry.Space.existsIdealInjectionDevissageStep'`, and the passage
-> from sheaves of ideals to all coherent modules through Stacks 07US, with the coherence clause of
-> Stacks 07UH from `AlgebraicGeometry.Space.idealPushforwardCoherent`.
->
-> The hypothesis `hzero` is not in the source's list and cannot be dropped, for the reason recorded
-> at Stacks 07US: on an algebraic space with no points the property `fun _ => False` satisfies the
-> source's three conditions while the zero module is coherent and does not have it.
-
-```lean
-theorem property_of_integralWitness_and_twoOutOfThree' (hZtop : B.Contains (⊤_ Scheme.{u}))
-    (X : AlgebraicSpaces B S hS) (hX : IsNoetherian B S hS hZtop X.1)
-    (hdev : ∀ M : Modules.{u, u} B S hS X.1 X.2, IsCoherent B S hS X.1 X.2 M →
-      HasIdealDevissage B S hS X M)
-    (P : Modules.{u, u} B S hS X.1 X.2 → Prop)
-    (hzero : ∀ M : Modules.{u, u} B S hS X.1 X.2, IsZero M → P M)
-    (h1 : TwoOutOfThreeCoherent B S hS X P) (h2 : ClosedUnderDirectSumDescent B S hS X P)
-    (h3 : HasCoherentWitnessOnIntegralSubspaces B S hS X P)
-    (M : Modules.{u, u} B S hS X.1 X.2) (hM : IsCoherent B S hS X.1 X.2 M) : P M
-```
-
-**`AlgebraicGeometry.Space.property_of_integralWitness_and_twoOutOfThree_of_isNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentDevissageHigherRankNoetherian.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentDevissageHigherRankNoetherian.lean#L221). The attribute's comment: “for a property which holds on zero modules: the source's statement fails for an X with no points, and for X with a point that hypothesis follows from (1) and (3)”.
-
-> **Stacks Project, Tag 08AN.**  Let `X` be a Noetherian algebraic space over a scheme `S`
-> and let `P` be a property of coherent `𝒪_X`-modules, holding on zero modules, such that
->
-> 1. for a short exact sequence of coherent modules, if two out of three terms have `P` then so
->    does the third;
-> 2. if `P` holds for the direct sum of `r ≥ 1` copies of a module, for some `r ≥ 1`, then it
->    holds for that module;
-> 3. for every reduced closed subspace `Z ⊆ X` with `|Z|` irreducible there is a coherent module
->    on `X` whose scheme-theoretic support is `Z` and which has `P`.
->
-> Then `P` holds for every coherent module on `X`.
->
-> The hypothesis `hzero` is not in the source's list, and the source's statement is false without
-> it when `X` has no points (`AlgebraicGeometry.Space.not_forall_false_of_isEmpty_points`); when
-> `X` has a point it follows from (1) and (3), which is
-> `AlgebraicGeometry.Space.property_of_integralWitness_and_twoOutOfThree_of_nonempty`.
-
-```lean
-theorem property_of_integralWitness_and_twoOutOfThree_of_isNoetherian
-    (hZtop : B.Contains (⊤_ Scheme.{u}))
-    (X : AlgebraicSpaces B S hS) (hX : IsNoetherian B S hS hZtop X.1)
-    (P : Modules.{u, u} B S hS X.1 X.2 → Prop)
-    (hzero : ∀ M : Modules.{u, u} B S hS X.1 X.2, IsZero M → P M)
-    (h1 : TwoOutOfThreeCoherent B S hS X P) (h2 : ClosedUnderCoherentDirectSumDescent B S hS X P)
-    (h3 : HasCoherentWitnessOnIntegralSubspaces B S hS X P)
-    (M : Modules.{u, u} B S hS X.1 X.2) (hM : IsCoherent B S hS X.1 X.2 M) : P M
-```
-
-**`AlgebraicGeometry.Space.property_of_coherent_of_isNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentDevissageNoetherian.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentDevissageNoetherian.lean#L97). The attribute's comment: “corrected: P is also required to hold for zero modules, without which the statement fails on an algebraic space with no points”.
-
-> **Stacks Project, Tag 08AN.**  Let `X` be a Noetherian algebraic space over a scheme `S` and
-> let `P` be a property of coherent `𝒪_X`-modules such that
+> **Stacks Project, Tag 08AN**, corrected as recorded in the errata.  Let `X` be a Noetherian
+> algebraic space over a scheme `S` and let `P` be a property of coherent `𝒪_X`-modules such that
 >
 > 1. for a short exact sequence of coherent modules, if two out of three terms have `P` then so
 >    does the third;
@@ -325,55 +202,25 @@ theorem property_of_integralWitness_and_twoOutOfThree_of_isNoetherian
 > 3. for every reduced closed subspace `Z ⊆ X` with `|Z|` irreducible there is a coherent module
 >    on `X` whose scheme-theoretic support is `Z` and which has `P`.
 >
-> Then `P` holds for every coherent module on `X`.
+> Then `P` holds for every coherent module on `X`, provided `|X|` is nonempty or `P` holds on zero
+> modules (`h0`).
 >
-> The hypothesis `hzero`, that `P` holds for zero modules, corrects the source, whose statement
-> fails on an algebraic space with no points; see the module documentation.  Condition (2) is asked
-> only of coherent modules, as in the source, where `P` is a property of coherent sheaves; the proof
-> runs the dévissage for the property `M ↦ (M coherent → P M)`, for which condition (2) holds at
-> every module.  The three inputs that
-> `AlgebraicGeometry.Space.property_of_integralWitness_and_twoOutOfThree` carries are discharged:
-> Stacks 07UR by `AlgebraicGeometry.Space.hasIdealDevissage_of_isCoherent`, coherence of `i_*I` by
-> `AlgebraicGeometry.Space.isCoherent_modulePushforward_quasicoherentIdeal`, and Stacks 07UQ by
-> `AlgebraicGeometry.Space.existsIdealInjectionDevissageStep_of_isNoetherian`.
+> The alternative `h0` is the correction: the source's statement fails on an algebraic space with
+> no points (`AlgebraicGeometry.Space.not_forall_false_of_isEmpty_points`), and on such a space the
+> zero module is the one coherent module, so `P` on zero modules is exactly what is missing there.
+> On a space with a point `h0` holds by its first alternative and the statement is the source's.
+> No result of another tag is carried: Stacks 07UR, the coherence of `i_*I` and Stacks 07UQ are
+> theorems of the library, used through
+> `AlgebraicGeometry.Space.property_of_integralWitness_and_twoOutOfThree_of_isNoetherian`, and on a
+> space with a point `P` on zero modules follows from (1) and (3) by
+> `AlgebraicGeometry.Space.forall_isZero_property_of_nonempty`.
 
 ```lean
-theorem property_of_coherent_of_isNoetherian (hZtop : B.Contains (⊤_ Scheme.{u}))
+theorem property_of_isCoherent_of_integralWitness (hZtop : B.Contains (⊤_ Scheme.{u}))
     (X : AlgebraicSpaces B S hS) (hX : IsNoetherian B S hS hZtop X.1)
     (P : Modules.{u, u} B S hS X.1 X.2 → Prop)
-    (hzero : ∀ M : Modules.{u, u} B S hS X.1 X.2, IsZero M → P M)
-    (h1 : TwoOutOfThreeCoherent B S hS X P)
-    (h2 : ∀ F : Modules.{u, u} B S hS X.1 X.2, IsCoherent B S hS X.1 X.2 F → ∀ r : ℕ, 1 ≤ r →
-      P (⨁ fun _ : Fin r => F) → P F)
-    (h3 : HasCoherentWitnessOnIntegralSubspaces B S hS X P)
-    (M : Modules.{u, u} B S hS X.1 X.2) (hM : IsCoherent B S hS X.1 X.2 M) : P M
-```
-
-**`AlgebraicGeometry.Space.property_of_isCoherent_of_devissage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/CoherentDevissageUnconditional.lean, line 218](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/CoherentDevissageUnconditional.lean#L218). The attribute's comment: “with the hypothesis that P holds for zero modules added: without it the statement fails on an algebraic space with no points, for the property False”.
-
-> **Stacks Project, Tag 08AN.**  Let `X` be a Noetherian algebraic space over a scheme `S`
-> and let `P` be a property of coherent `𝒪_X`-modules such that
->
-> 1. for a short exact sequence of coherent modules, if two out of three terms have `P` then so
->    does the third;
-> 2. if `P` holds for the direct sum of `r ≥ 1` copies of a module then it holds for that module;
-> 3. for every reduced closed subspace `Z ⊆ X` with `|Z|` irreducible there is a coherent module
->    on `X` whose scheme-theoretic support is `Z` and which has `P`.
->
-> Then `P` holds for every coherent module on `X`.
->
-> The hypothesis `hzero` is the one correction to the source's statement: see the module
-> documentation.  Nothing else is carried: the conclusion of Stacks 07UR is
-> `AlgebraicGeometry.Space.hasIdealDevissage_of_isCoherent`, the coherence of the direct image of
-> a sheaf of ideals is `AlgebraicGeometry.Space.idealPushforwardCoherent`, and Stacks 07UQ is
-> `AlgebraicGeometry.Space.existsIdealInjectionDevissageStep_of_isNoetherian`.
-
-```lean
-theorem property_of_isCoherent_of_devissage (hZtop : B.Contains (⊤_ Scheme.{u}))
-    (X : AlgebraicSpaces B S hS) (hX : IsNoetherian B S hS hZtop X.1)
-    (P : Modules.{u, u} B S hS X.1 X.2 → Prop)
-    (hzero : ∀ M : Modules.{u, u} B S hS X.1 X.2, IsZero M → P M)
-    (h1 : TwoOutOfThreeCoherent B S hS X P) (h2 : ClosedUnderDirectSumDescent B S hS X P)
+    (h0 : Nonempty (points B S hS X.1) ∨ ∀ M : Modules.{u, u} B S hS X.1 X.2, IsZero M → P M)
+    (h1 : TwoOutOfThreeCoherent B S hS X P) (h2 : ClosedUnderCoherentDirectSumDescent B S hS X P)
     (h3 : HasCoherentWitnessOnIntegralSubspaces B S hS X P)
     (M : Modules.{u, u} B S hS X.1 X.2) (hM : IsCoherent B S hS X.1 X.2 M) : P M
 ```
@@ -385,4 +232,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 69.14, Tag 07UN](https://stacks.math.columbia.edu/tag/07UN)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

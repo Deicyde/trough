@@ -8,13 +8,13 @@ proof: formalized
 
 # 51.13 Annihilators of local cohomology, II
 
-Section 51.13 of the Stacks Project, [Tag 0EHX](https://stacks.math.columbia.edu/tag/0EHX). 2 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 51.13 of the Stacks Project, [Tag 0EHX](https://stacks.math.columbia.edu/tag/0EHX). 2 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0EHY, a definition
 
 [Tag 0EHY](https://stacks.math.columbia.edu/tag/0EHY) in the Stacks Project.
 
-**`DerivedCategory.Plus.depth`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/AnnihilatorsLocalCohomology/Basic.lean, line 49](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/LocalCohomology/AnnihilatorsLocalCohomology/Basic.lean#L49).
+**`DerivedCategory.Plus.depth`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/LocalCohomology/AnnihilatorsLocalCohomology/Basic.lean, line 49](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/LocalCohomology/AnnihilatorsLocalCohomology/Basic.lean#L49).
 
 > The `I`-depth of a bounded-below derived object: the first degree of nonzero local
 > cohomology, or infinity if local cohomology vanishes throughout.
@@ -28,7 +28,7 @@ noncomputable abbrev depth (A : Type u) [CommRing A]
 
 [Tag 0EHZ](https://stacks.math.columbia.edu/tag/0EHZ) in the Stacks Project.
 
-**`Stacks.LocalCohomology.exists_annihilator_localCohomology_iff_depth_add_dim`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/FaltingsAnnihilator/DepthDimensionCriterion.lean, line 657](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/FaltingsAnnihilator/DepthDimensionCriterion.lean#L657).
+**`Stacks.LocalCohomology.exists_annihilator_localCohomology_iff_depth_add_dim`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/FaltingsAnnihilator/DepthDimensionCriterion.lean, line 657](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/FaltingsAnnihilator/DepthDimensionCriterion.lean#L657).
 
 > Uniform annihilation of low local cohomology is equivalent to the
 > depth–dimension inequality along all relevant chains of primes.
@@ -59,7 +59,7 @@ public theorem exists_annihilator_localCohomology_iff_depth_add_dim
             (q.asIdeal.map (Ideal.Quotient.mk p.asIdeal)))) > (s : EInt)))
 ```
 
-**`Stacks.LocalCohomology.annihilatorDepthCriterionPlus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/FaltingsAnnihilator/DepthDimensionCriterion.lean, line 688](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/FaltingsAnnihilator/DepthDimensionCriterion.lean#L688). The attribute's comment: “the criterion, in predicate form”.
+**`Stacks.LocalCohomology.annihilatorDepthCriterionPlus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/FaltingsAnnihilator/DepthDimensionCriterion.lean, line 688](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/FaltingsAnnihilator/DepthDimensionCriterion.lean#L688). The attribute's comment: “the criterion, in predicate form”.
 
 > **Stacks 0EHZ.** The annihilator criterion for a bounded-below complex with finite
 > cohomology over a Noetherian ring admitting a dualizing complex, in the predicate form in
@@ -77,4 +77,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 51.13, Tag 0EHX](https://stacks.math.columbia.edu/tag/0EHX)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

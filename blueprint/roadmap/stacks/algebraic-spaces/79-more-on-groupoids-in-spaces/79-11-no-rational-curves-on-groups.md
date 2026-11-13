@@ -8,13 +8,13 @@ proof: formalized
 
 # 79.11 No rational curves on groups
 
-Section 79.11 of the Stacks Project, [Tag 0AEK](https://stacks.math.columbia.edu/tag/0AEK). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 79.11 of the Stacks Project, [Tag 0AEK](https://stacks.math.columbia.edu/tag/0AEK). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0AEL, a lemma
 
 [Tag 0AEL](https://stacks.math.columbia.edu/tag/0AEL) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_factorization_of_dense_open`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FactorizationDenseOpen.lean, line 201](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FactorizationDenseOpen.lean#L201).
+**`AlgebraicGeometry.Space.exists_factorization_of_dense_open`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FactorizationDenseOpen.lean, line 202](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/FactorizationDenseOpen.lean#L202).
 
 > **Stacks 0AEL.** Let `f : X ⟶ Y` and `g : X ⟶ Z` be morphisms of algebraic spaces over an
 > algebraic space `T` with `Y ⟶ T` separated and `g` surjective, flat and locally of finite
@@ -44,7 +44,7 @@ theorem exists_factorization_of_dense_open
 
 [Tag 0AEM](https://stacks.math.columbia.edu/tag/0AEM) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_coordinateProjection_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/ProjectiveLineFactorization.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/ProjectiveLineFactorization.lean#L176).
+**`AlgebraicGeometry.Space.exists_coordinateProjection_isFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/ProjectiveLineFactorization.lean, line 176](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/ProjectiveLineFactorization.lean#L176).
 
 > **Stacks 0AEM.** Let `k` be a field, let `n` be a positive integer, let `Z` be an algebraic
 > space over `Spec k` separated and of finite type over `Spec k` and let `w : (ℙ¹_k)^n ⟶ Z`. Then
@@ -73,7 +73,7 @@ theorem exists_coordinateProjection_isFinite (n : ℕ) (hn : 0 < n)
 
 [Tag 0AEN](https://stacks.math.columbia.edu/tag/0AEN) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.morphism_projectiveLine_constant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/ProjectiveLineFactorization.lean, line 197](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/ProjectiveLineFactorization.lean#L197).
+**`AlgebraicGeometry.Space.morphism_projectiveLine_constant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/ProjectiveLineFactorization.lean, line 197](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/ProjectiveLineFactorization.lean#L197).
 
 > **Stacks 0AEN.** Let `k` be a field and let `G` be a separated group algebraic space locally
 > of finite type over `k`. Every morphism from the projective line over `k` to `G` over `Spec k`
@@ -103,4 +103,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 79.11, Tag 0AEK](https://stacks.math.columbia.edu/tag/0AEK)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

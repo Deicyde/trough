@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: AlgebraicGeometry.exists_affine_locallyFinitePresentation_separation_isClosed, AlgebraicGeometry.Stack.exists_affine_finitePresentation_separation, AlgebraicGeometry.Stack.AlgebraicStacks.image_preimage_eq_preimage_image_of_isTwoFibreProduct, AlgebraicGeometry.Stack.AlgebraicStacks.image_closure_image_subset_of_isTwoFibreProduct, IsOpenMap.image_closure_subset_image_of_preimage_subset, AlgebraicGeometry.Stack.AlgebraicStacks.isClosed_baseChange_of_isImmersion, AlgebraicGeometry.Stack.AlgebraicStacks.isClosed_baseChange_affine_isLocallyOfFinitePresentation_of_universallyClosed, AlgebraicGeometry.Stack.AlgebraicStacks.exists_chart_forall_isClosed_baseChange_affineSpaceChart_of_universallyClosed
+lean: AlgebraicGeometry.exists_affine_locallyFinitePresentation_separation_isClosed, AlgebraicGeometry.Stack.exists_affine_finitePresentation_separation, AlgebraicGeometry.Stack.AlgebraicStacks.image_preimage_eq_preimage_image_of_isTwoFibreProduct, AlgebraicGeometry.Stack.AlgebraicStacks.image_closure_image_subset_of_isTwoFibreProduct, IsOpenMap.image_closure_subset_image_of_preimage_subset, AlgebraicGeometry.Stack.AlgebraicStacks.isClosed_baseChange_affine_isLocallyOfFinitePresentation_of_universallyClosed, AlgebraicGeometry.Stack.AlgebraicStacks.exists_chart_forall_isClosed_baseChange_affineSpaceChart_of_universallyClosed, AlgebraicGeometry.Stack.AlgebraicStacks.exists_chart_forall_isClosed_baseChange_affineSpaceChart_of_isClosed_affine_lfp
 statement: formalized
 proof: formalized
 ---
 
 # 102.7 Universally closed morphisms
 
-Section 102.7 of the Stacks Project, [Tag 0H28](https://stacks.math.columbia.edu/tag/0H28). 2 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 102.7 of the Stacks Project, [Tag 0H28](https://stacks.math.columbia.edu/tag/0H28). 2 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0H29, a lemma
 
 [Tag 0H29](https://stacks.math.columbia.edu/tag/0H29) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_affine_locallyFinitePresentation_separation_isClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/ClosedSubsetFibreSeparation.lean, line 49](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/ClosedSubsetFibreSeparation.lean#L49). The attribute's comment: “the case of schemes, for closed subsets”.
+**`AlgebraicGeometry.exists_affine_locallyFinitePresentation_separation_isClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/ClosedSubsetFibreSeparation.lean, line 49](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Limits/ClosedSubsetFibreSeparation.lean#L49). The attribute's comment: “the case of schemes, for closed subsets”.
 
 > Let `f : X ⟶ S` be a quasi-compact morphism of schemes, `g : T ⟶ S` a morphism, `t ∈ T` a
 > point and `E ⊆ X ×_S T` a closed subset whose image in `T` misses `t`. Then there are an affine
@@ -44,7 +44,7 @@ theorem exists_affine_locallyFinitePresentation_separation_isClosed
       (p ⁻¹' E ⊆ q ⁻¹' E')
 ```
 
-**`AlgebraicGeometry.Stack.exists_affine_finitePresentation_separation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ClosedSubsetSeparationAlgebraicStack.lean, line 438](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ClosedSubsetSeparationAlgebraicStack.lean#L438).
+**`AlgebraicGeometry.Stack.exists_affine_finitePresentation_separation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ClosedSubsetSeparationAlgebraicStack.lean, line 438](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ClosedSubsetSeparationAlgebraicStack.lean#L438).
 
 > **Stacks 0H29.** Let `g : Z ⟶ Y` be a morphism of the big fppf category of `S` between
 > objects with affine underlying schemes, let `f : 𝒳 ⟶ Y` be a quasi-compact 1-morphism of
@@ -89,7 +89,7 @@ theorem exists_affine_finitePresentation_separation {Y Z : BigFppfOver B S hS}
                   (factorMap B S hS f (j ≫ g) j g rfl) ⁻¹' T) ⊆ T'
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.image_preimage_eq_preimage_image_of_isTwoFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/PointsCartesianSquare.lean, line 56](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/PointsCartesianSquare.lean#L56). The attribute's comment: “the cartesian-square step of the proof, on points”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.image_preimage_eq_preimage_image_of_isTwoFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/PointsCartesianSquare.lean, line 56](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/PointsCartesianSquare.lean#L56). The attribute's comment: “the cartesian-square step of the proof, on points”.
 
 > For a 2-fibre product square of algebraic stacks over `S` with legs `fst : 𝒫 ⟶ 𝒳` and
 > `snd : 𝒫 ⟶ 𝒬` over a cospan `g : 𝒳 ⟶ 𝒴`, `f : 𝒬 ⟶ 𝒴`, and for any subset `T` of `|𝒳|`, the
@@ -105,7 +105,7 @@ theorem image_preimage_eq_preimage_image_of_isTwoFibreProduct
       pointsMap B S hS f ⁻¹' (pointsMap B S hS g '' T)
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.image_closure_image_subset_of_isTwoFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/PointsCartesianSquare.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/PointsCartesianSquare.lean#L80). The attribute's comment: “the descent step of the proof, along a cartesian square with surjective open legs”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.image_closure_image_subset_of_isTwoFibreProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/PointsCartesianSquare.lean, line 80](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/PointsCartesianSquare.lean#L80). The attribute's comment: “the descent step of the proof, along a cartesian square with surjective open legs”.
 
 > Let `P` be a 2-fibre product square of algebraic stacks over `S` with legs `fst : 𝒫 ⟶ 𝒳` and
 > `snd : 𝒫 ⟶ 𝒬` over a cospan `g : 𝒳 ⟶ 𝒴`, `f : 𝒬 ⟶ 𝒴`, with `f` surjective and open on points,
@@ -130,7 +130,7 @@ theorem image_closure_image_subset_of_isTwoFibreProduct
       pointsMap B S hS (f ≫ π) '' T'
 ```
 
-**`IsOpenMap.image_closure_subset_image_of_preimage_subset`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Maps/ClosureImageSurjectiveOpen.lean, line 26](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Maps/ClosureImageSurjectiveOpen.lean#L26). The attribute's comment: “the closure step of the proof, along a surjective open map”.
+**`IsOpenMap.image_closure_subset_image_of_preimage_subset`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Maps/ClosureImageSurjectiveOpen.lean, line 26](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Maps/ClosureImageSurjectiveOpen.lean#L26). The attribute's comment: “the closure step of the proof, along a surjective open map”.
 
 > For a surjective open continuous map `q : X → Y`, a closed subset `T ⊆ X` containing
 > `q ⁻¹' A` also contains `q ⁻¹' closure A`; hence the image of `closure A` along any map
@@ -148,27 +148,7 @@ theorem IsOpenMap.image_closure_subset_image_of_preimage_subset
 
 [Tag 0H2A](https://stacks.math.columbia.edu/tag/0H2A) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isClosed_baseChange_of_isImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversallyClosedSmoothLocal.lean, line 533](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/UniversallyClosedSmoothLocal.lean#L533). The attribute's comment: “closedness of a base change descends along an immersion of the base”.
-
-> **Stacks 0H2A: closedness of a base change descends along an immersion of the base.** Let
-> `F : 𝒬 ⟶ ℬ` be closed on points and let `ι : 𝒞 ⟶ ℬ` be an immersion of algebraic stacks over `S`.
-> Then the base change of `F` along `ι` — the map `|𝒬 ×_ℬ 𝒞| → |𝒞|` — is closed on points.
->
-> This is the step of the proof of Stacks 0H2A which writes a closed subset of `|𝒳 ×_𝒴 Z|` as the
-> pullback of a closed subset of `|𝐀ⁿ × 𝒳|` along the immersion `Z ⟶ 𝐀ⁿ_V` of Stacks 04II. The base
-> change of `ι` is an immersion by Stacks 045C at the immersion property, hence a topological
-> embedding on points by **Stacks 0H20**; the square is cartesian on points by **Stacks 04XH**; and
-> `isClosedMap_of_isEmbedding_of_cartesian` concludes. Only the embedding property of Stacks 0H20
-> is used, not the local closedness of the range.
-
-```lean
-theorem isClosed_baseChange_of_isImmersion
-    {𝒬 𝒞 ℬ : Stack.AlgebraicStacks.{u, w} B S hS} (F : 𝒬 ⟶ ℬ) (ι : 𝒞 ⟶ ℬ)
-    (hι : IsImmersion B S hS ι) (hF : IsClosed B S hS F) :
-    IsClosed B S hS (Stack.twoFibreProductSquareAlgebraicStacks B S hS ι F).fst
-```
-
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isClosed_baseChange_affine_isLocallyOfFinitePresentation_of_universallyClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversallyClosedSmoothLocal.lean, line 620](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/UniversallyClosedSmoothLocal.lean#L620). The attribute's comment: “(1) implies (2)”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.isClosed_baseChange_affine_isLocallyOfFinitePresentation_of_universallyClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversallyClosedSmoothLocal.lean, line 613](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/UniversallyClosedSmoothLocal.lean#L613). The attribute's comment: “(1) implies (2)”.
 
 > **Stacks 0H2A, (1) implies (2).** If `f` is universally closed then, for every object `Z` of
 > the site whose scheme is *affine* and every 1-morphism `Stack.schemeStack Z ⟶ 𝒴` which is
@@ -185,7 +165,7 @@ theorem isClosed_baseChange_affine_isLocallyOfFinitePresentation_of_universallyC
           IsClosed B S hS (Stack.twoFibreProductSquareAlgebraicStacks B S hS g f).fst
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.exists_chart_forall_isClosed_baseChange_affineSpaceChart_of_universallyClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversallyClosedSmoothLocal.lean, line 637](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/UniversallyClosedSmoothLocal.lean#L637). The attribute's comment: “(1) implies (3)”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.exists_chart_forall_isClosed_baseChange_affineSpaceChart_of_universallyClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversallyClosedSmoothLocal.lean, line 630](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/UniversallyClosedSmoothLocal.lean#L630). The attribute's comment: “(1) implies (3)”.
 
 > **Stacks 0H2A, (1) implies (3).** If `f` is universally closed then there are a scheme `V` of
 > the site and a smooth surjective 1-morphism `Stack.schemeStack V ⟶ 𝒴` such that, for *every*
@@ -205,7 +185,7 @@ theorem exists_chart_forall_isClosed_baseChange_affineSpaceChart_of_universallyC
           (Stack.schemeStackMap.{u, w} B S hS (affineSpaceChartHom B S hS V n) ≫ a) f).fst
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.exists_chart_forall_isClosed_baseChange_affineSpaceChart_of_isClosed_affine_lfp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversallyClosedSmoothLocal.lean, line 659](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/UniversallyClosedSmoothLocal.lean#L659). The attribute's comment: “(2) implies (3)”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.exists_chart_forall_isClosed_baseChange_affineSpaceChart_of_isClosed_affine_lfp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversallyClosedSmoothLocal.lean, line 652](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/UniversallyClosedSmoothLocal.lean#L652). The attribute's comment: “(2) implies (3)”.
 
 > **Stacks 0H2A, (2) implies (3).** Suppose every base change of `f` to an affine scheme of the
 > site along a 1-morphism locally of finite presentation is closed. Then the conclusion of (3)
@@ -232,82 +212,9 @@ theorem exists_chart_forall_isClosed_baseChange_affineSpaceChart_of_isClosed_aff
           (Stack.schemeStackMap.{u, w} B S hS (affineSpaceChartHom B S hS V n) ≫ a) f).fst
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isClosed_baseChange_schemeStackMap_of_forall_isClosed_baseChange_affineSpaceChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversallyClosedSmoothLocal.lean, line 759](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/UniversallyClosedSmoothLocal.lean#L759). The attribute's comment: “(3) implies (2), the step at a target represented by a scheme, stated at the hypotheses of Tag 04II: a quasi-affine source and a morphism locally of finite type”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.universallyClosed_of_isQuasiCompactMorphism_of_isClosed_affine_lfp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversallyClosedSmoothLocalQuasiCompact.lean, line 389](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/UniversallyClosedSmoothLocalQuasiCompact.lean#L389). The attribute's comment: “(2) implies (1)”.
 
-> **Stacks 0H2A, the step of (3) implies (2) at a target represented by a scheme.** Let
-> `f : 𝒳 ⟶ Stack.schemeStack W` be a 1-morphism of algebraic stacks over `S` whose base change to
-> affine `n`-space over `W` is closed on points for every `n ≥ 0`. Then for every morphism
-> `p : Z ⟶ W` of the site whose source scheme is quasi-affine and which is locally of finite type,
-> the base change of `f` along the 1-morphism that `p` induces is closed on points.
->
-> By **Stacks 04II** such a `Z` immerses over `W` into affine `n`-space over `W` for some `n`. That
-> immersion of schemes induces an immersion of the represented algebraic stacks, and closedness of
-> a base change descends along an immersion of the base.
-
-```lean
-theorem isClosed_baseChange_schemeStackMap_of_forall_isClosed_baseChange_affineSpaceChart
-    {𝒳 : Stack.AlgebraicStacks.{u, w} B S hS} {W : BigFppfOver B S hS}
-    (f : 𝒳 ⟶ Stack.schemeStack.{u, w} B S hS W)
-    (h : ∀ n : ℕ, IsClosed B S hS (Stack.twoFibreProductSquareAlgebraicStacks B S hS
-      (Stack.schemeStackMap.{u, w} B S hS (affineSpaceChartHom B S hS W n)) f).fst)
-    {Z : BigFppfOver B S hS} (p : Z ⟶ W)
-    (hZ : ((BigFppfOver.toScheme B S hS).obj Z).IsQuasiAffine)
-    (hp : LocallyOfFiniteType ((BigFppfOver.toScheme B S hS).map p)) :
-    IsClosed B S hS (Stack.twoFibreProductSquareAlgebraicStacks B S hS
-      (Stack.schemeStackMap.{u, w} B S hS p) f).fst
-```
-
-**`AlgebraicGeometry.Stack.AlgebraicStacks.isClosed_baseChange_affine_isLocallyOfFinitePresentation_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversallyClosedSmoothLocal.lean, line 803](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/UniversallyClosedSmoothLocal.lean#L803). The attribute's comment: “clause (2) is inherited by a base change along a 1-morphism locally of finite presentation”.
-
-> **Clause (2) of Stacks 0H2A is inherited by a base change along a 1-morphism locally of
-> finite presentation.** Suppose every base change of `f : 𝒳 ⟶ 𝒴` to an affine scheme of the site
-> along a 1-morphism locally of finite presentation is closed on points, and let `b : 𝒴' ⟶ 𝒴` be
-> locally of finite presentation. Then the same holds for the base change of `f` along `b`: a
-> 1-morphism `Stack.schemeStack Z ⟶ 𝒴'` locally of finite presentation composes with `b` to one
-> locally of finite presentation, and base changing twice is base changing once.
-
-```lean
-theorem isClosed_baseChange_affine_isLocallyOfFinitePresentation_baseChange
-    {𝒳 𝒴 𝒴' : Stack.AlgebraicStacks.{u, w} B S hS} (f : 𝒳 ⟶ 𝒴) (b : 𝒴' ⟶ 𝒴)
-    (hb : IsLocallyOfFinitePresentation B S hS b)
-    (h : ∀ (Z : BigFppfOver B S hS), IsAffine ((BigFppfOver.toScheme B S hS).obj Z) →
-      ∀ (g : Stack.schemeStack.{u, w} B S hS Z ⟶ 𝒴), IsLocallyOfFinitePresentation B S hS g →
-        IsClosed B S hS (Stack.twoFibreProductSquareAlgebraicStacks B S hS g f).fst)
-    (Z : BigFppfOver B S hS) (hZ : IsAffine ((BigFppfOver.toScheme B S hS).obj Z))
-    (g : Stack.schemeStack.{u, w} B S hS Z ⟶ 𝒴') (hg : IsLocallyOfFinitePresentation B S hS g) :
-    IsClosed B S hS (Stack.twoFibreProductSquareAlgebraicStacks B S hS g
-      (Stack.twoFibreProductSquareAlgebraicStacks B S hS b f).fst).fst
-```
-
-**`AlgebraicGeometry.Stack.AlgebraicStacks.universallyClosed_of_forall_schemeStack_target_of_isClosed_affine_lfp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversallyClosedSmoothLocal.lean, line 825](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/UniversallyClosedSmoothLocal.lean#L825). The attribute's comment: “(2) implies (1), the reduction to a target represented by a scheme; the remaining input is Tag 0H29 for algebraic stacks, carried as `hred`”.
-
-> **Stacks 0H2A, the reduction of (2) implies (1) to a target represented by a scheme.** If
-> clause (2) implies universal closedness whenever the target is the algebraic stack of a scheme of
-> the site, then it implies universal closedness for an arbitrary target.
->
-> Every algebraic stack over `S` has a smooth surjective chart by a scheme of the site, universal
-> closedness descends along it, and it is locally of finite presentation by Stacks 0DNP, so clause
-> (2) for `f` gives clause (2) for the base change of `f` to that chart.
-
-```lean
-theorem universallyClosed_of_forall_schemeStack_target_of_isClosed_affine_lfp
-    (hred : ∀ (V : BigFppfOver B S hS) (𝒲 : Stack.AlgebraicStacks.{u, w} B S hS)
-      (f' : 𝒲 ⟶ Stack.schemeStack.{u, w} B S hS V),
-        (∀ (Z : BigFppfOver B S hS), IsAffine ((BigFppfOver.toScheme B S hS).obj Z) →
-          ∀ (g : Stack.schemeStack.{u, w} B S hS Z ⟶ Stack.schemeStack.{u, w} B S hS V),
-            IsLocallyOfFinitePresentation B S hS g →
-              IsClosed B S hS (Stack.twoFibreProductSquareAlgebraicStacks B S hS g f').fst) →
-        UniversallyClosed B S hS f')
-    {𝒳 𝒴 : Stack.AlgebraicStacks.{u, w} B S hS} (f : 𝒳 ⟶ 𝒴)
-    (h : ∀ (Z : BigFppfOver B S hS), IsAffine ((BigFppfOver.toScheme B S hS).obj Z) →
-      ∀ (g : Stack.schemeStack.{u, w} B S hS Z ⟶ 𝒴), IsLocallyOfFinitePresentation B S hS g →
-        IsClosed B S hS (Stack.twoFibreProductSquareAlgebraicStacks B S hS g f).fst) :
-    UniversallyClosed B S hS f
-```
-
-**`AlgebraicGeometry.Stack.AlgebraicStacks.universallyClosed_of_isQuasiCompactMorphism_of_isClosed_affine_lfp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversallyClosedSmoothLocalQuasiCompact.lean, line 389](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/UniversallyClosedSmoothLocalQuasiCompact.lean#L389). The attribute's comment: “(2) implies (1), with the reduction to a target represented by a scheme”.
-
-> **Stacks 0H2A, (2) implies (1), with the reduction to a target represented by a scheme.** Let
+> **Stacks 0H2A, (2) implies (1).** Let
 > `f : 𝒳 ⟶ 𝒴` be a quasi-compact 1-morphism of algebraic stacks over `S` such that the base change
 > of `f` to every affine scheme of the site along a 1-morphism locally of finite presentation is
 > closed on points. Then `f` is universally closed.
@@ -329,7 +236,7 @@ theorem universallyClosed_of_isQuasiCompactMorphism_of_isClosed_affine_lfp
     UniversallyClosed B S hS f
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.universallyClosed_of_exists_chart_forall_isClosed_baseChange_affineSpaceChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversallyClosedSmoothLocalQuasiCompact.lean, line 419](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/UniversallyClosedSmoothLocalQuasiCompact.lean#L419). The attribute's comment: “(3) implies (1)”.
+**`AlgebraicGeometry.Stack.AlgebraicStacks.universallyClosed_of_exists_chart_forall_isClosed_baseChange_affineSpaceChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversallyClosedSmoothLocalQuasiCompact.lean, line 419](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/UniversallyClosedSmoothLocalQuasiCompact.lean#L419). The attribute's comment: “(3) implies (1)”.
 
 > **Stacks 0H2A, (3) implies (1).** Suppose there are a scheme `V` of the site and a smooth
 > surjective 1-morphism `a : Stack.schemeStack V ⟶ 𝒴` such that the base change of the quasi-compact
@@ -355,7 +262,7 @@ theorem universallyClosed_of_exists_chart_forall_isClosed_baseChange_affineSpace
     UniversallyClosed B S hS f
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.universallyClosed_tfae_of_isQuasiCompactMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversallyClosedSmoothLocalQuasiCompact.lean, line 453](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/UniversallyClosedSmoothLocalQuasiCompact.lean#L453).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.universallyClosed_tfae_of_isQuasiCompactMorphism`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversallyClosedSmoothLocalQuasiCompact.lean, line 453](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/UniversallyClosedSmoothLocalQuasiCompact.lean#L453).
 
 > **Stacks 0H2A.** Let `f : 𝒳 ⟶ 𝒴` be a quasi-compact 1-morphism of algebraic stacks over `S`.
 > The following are equivalent:
@@ -394,4 +301,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 102.7, Tag 0H28](https://stacks.math.columbia.edu/tag/0H28)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

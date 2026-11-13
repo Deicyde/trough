@@ -8,13 +8,13 @@ proof: formalized
 
 # 54.12 Rational double points
 
-Section 54.12 of the Stacks Project, [Tag 0BGB](https://stacks.math.columbia.edu/tag/0BGB). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 54.12 of the Stacks Project, [Tag 0BGB](https://stacks.math.columbia.edu/tag/0BGB). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0BGC, a situation
 
 [Tag 0BGC](https://stacks.math.columbia.edu/tag/0BGC) in the Stacks Project.
 
-**`AlgebraicGeometry.RationalDoublePointSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalDoublePoints/Situation.lean, line 48](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalDoublePoints/Situation.lean#L48).
+**`AlgebraicGeometry.RationalDoublePointSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalDoublePoints/Situation.lean, line 48](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalDoublePoints/Situation.lean#L48).
 
 > **Stacks Project, Tag 0BGC.** A Nagata local normal domain of dimension two which defines a
 > rational singularity, whose completion is normal, which is Gorenstein, and which is not
@@ -28,7 +28,7 @@ structure RationalDoublePointSituation
 
 [Tag 0BGD](https://stacks.math.columbia.edu/tag/0BGD) in the Stacks Project.
 
-**`MvPolynomial.eq_smul_sq_affineLinear_of_mem_ideal_sq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalDoublePoints/Basic/QuadraticInIdealSquare.lean, line 335](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalDoublePoints/Basic/QuadraticInIdealSquare.lean#L335).
+**`MvPolynomial.eq_smul_sq_affineLinear_of_mem_ideal_sq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalDoublePoints/Basic/QuadraticInIdealSquare.lean, line 335](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalDoublePoints/Basic/QuadraticInIdealSquare.lean#L335).
 
 > A nonzero quadratic polynomial in the square of an ideal `I ⊆ κ[x, y]`, where `I`
 > has colength greater than one, is a scalar multiple of the square of an affine linear
@@ -52,7 +52,7 @@ theorem eq_smul_sq_affineLinear_of_mem_ideal_sq
 
 [Tag 0BGE](https://stacks.math.columbia.edu/tag/0BGE) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_singularPointBlowupChain_isRegular_of_definesRationalSingularity`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalDoublePoints/RationalDoublePointResolutionTag.lean, line 43](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalDoublePoints/RationalDoublePointResolutionTag.lean#L43).
+**`AlgebraicGeometry.exists_singularPointBlowupChain_isRegular_of_definesRationalSingularity`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalDoublePoints/RationalDoublePointResolutionTag.lean, line 43](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/RationalDoublePoints/RationalDoublePointResolutionTag.lean#L43).
 
 > Let `(A, 𝔪, κ)` be a local normal Nagata domain of dimension two which defines a rational
 > singularity, whose completion is normal, and which is Gorenstein. Then there exists a finite
@@ -82,4 +82,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 54.12, Tag 0BGB](https://stacks.math.columbia.edu/tag/0BGB)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

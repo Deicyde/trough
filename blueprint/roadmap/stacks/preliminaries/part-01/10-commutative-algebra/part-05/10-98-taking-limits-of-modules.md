@@ -8,13 +8,13 @@ proof: formalized
 
 # 10.98 Taking limits of modules
 
-Section 10.98 of the Stacks Project, [Tag 09B7](https://stacks.math.columbia.edu/tag/09B7). 4 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 10.98 of the Stacks Project, [Tag 09B7](https://stacks.math.columbia.edu/tag/09B7). 4 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0G1Q, a lemma
 
 [Tag 0G1Q](https://stacks.math.columbia.edu/tag/0G1Q) in the Stacks Project.
 
-**`invLimit_isAdicComplete`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AdicCompletion/InverseLimit.lean, line 647](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/AdicCompletion/InverseLimit.lean#L647).
+**`invLimit_isAdicComplete`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AdicCompletion/InverseLimit.lean, line 647](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/AdicCompletion/InverseLimit.lean#L647).
 
 > **Stacks 0G1Q**.  For a finitely generated ideal `I` of a commutative ring `A` and an
 > inverse system `(M_n)` of `A`-modules with `I^n M_n = 0` for all `n`, the inverse limit
@@ -31,7 +31,7 @@ theorem invLimit_isAdicComplete (hI : I.FG)
 
 [Tag 09B8](https://stacks.math.columbia.edu/tag/09B8) in the Stacks Project.
 
-**`Stacks.AdicCompletion.InverseLimit.InverseSystem.quotientEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AdicCompletion/InverseLimit.lean, line 505](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/AdicCompletion/InverseLimit.lean#L505). The attribute's comment: “(1)”.
+**`Stacks.AdicCompletion.InverseLimit.InverseSystem.quotientEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AdicCompletion/InverseLimit.lean, line 505](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/AdicCompletion/InverseLimit.lean#L505). The attribute's comment: “(1)”.
 
 > Identification of the quotients: the map `M / Iⁿ M → M n` induced by the limit projection
 > `p n` is an isomorphism of `A`-modules.
@@ -41,7 +41,7 @@ noncomputable def quotientEquiv (hI : I.FG) (n : ℕ) :
     (S.limit ⧸ (I ^ n • (⊤ : Submodule A S.limit))) ≃ₗ[A] S.M n
 ```
 
-**`Stacks.AdicCompletion.InverseLimit.InverseSystem.isAdicComplete`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AdicCompletion/InverseLimit.lean, line 540](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/AdicCompletion/InverseLimit.lean#L540). The attribute's comment: “(2)”.
+**`Stacks.AdicCompletion.InverseLimit.InverseSystem.isAdicComplete`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AdicCompletion/InverseLimit.lean, line 540](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/AdicCompletion/InverseLimit.lean#L540). The attribute's comment: “(2)”.
 
 > The limit `M = lim_n M n` is `I`-adically complete: the canonical map `M → lim_k M / Iᵏ M`
 > is an isomorphism.
@@ -54,7 +54,7 @@ theorem isAdicComplete (hI : I.FG) : IsAdicComplete I S.limit
 
 [Tag 0EKC](https://stacks.math.columbia.edu/tag/0EKC) in the Stacks Project.
 
-**`Ideal.IsHomogeneous.exists_finite_graded_forall_ker_eq_pow_smul_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AdicCompletion/InverseLimit.lean, line 1402](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/AdicCompletion/InverseLimit.lean#L1402).
+**`Ideal.IsHomogeneous.exists_finite_graded_forall_ker_eq_pow_smul_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AdicCompletion/InverseLimit.lean, line 1402](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/AdicCompletion/InverseLimit.lean#L1402).
 
 > **Stacks 0EKC**. Let `A = ⨁_{i ≥ 0} 𝒜 i` be a graded ring, let `I ⊆ 𝒜₊ = ⨁_{i > 0} 𝒜 i` be a
 > homogeneous ideal, and let `(Nₙ)` be an inverse system of finite graded `A`-modules whose
@@ -93,7 +93,7 @@ public theorem exists_finite_graded_forall_ker_eq_pow_smul_top
 
 [Tag 0EKD](https://stacks.math.columbia.edu/tag/0EKD) in the Stacks Project.
 
-**`GradedCompletionData.main_theorem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GradedAlgebra/Completion.lean, line 991](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GradedAlgebra/Completion.lean#L991).
+**`GradedCompletionData.main_theorem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GradedAlgebra/Completion.lean, line 984](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/GradedAlgebra/Completion.lean#L984).
 
 > Stacks tag 0EKD (Lemma 10.98.4): if the induced map `φ : M ⊗_A A' → lim_n Gₙ` is an
 > isomorphism, then for every `d ∈ ℤ` the induced map `φ^(d) : M_d → lim_n G_{n,d}` is an
@@ -115,4 +115,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.98, Tag 09B7](https://stacks.math.columbia.edu/tag/09B7)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

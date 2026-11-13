@@ -8,13 +8,13 @@ proof: formalized
 
 # 11.8 Splitting fields
 
-Section 11.8 of the Stacks Project, [Tag 074X](https://stacks.math.columbia.edu/tag/074X). 6 tags here are carried by 9 declarations of the repository (all in StacksCore), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 11.8 of the Stacks Project, [Tag 074X](https://stacks.math.columbia.edu/tag/074X). 6 tags here are carried by 9 declarations of the repository (all in StacksCore), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 074Y, a definition
 
 [Tag 074Y](https://stacks.math.columbia.edu/tag/074Y) in the Stacks Project.
 
-**`Algebra.IsSplit`**, a def in StacksCore (human-reviewed), declared in [StacksCore/Algebra/Split/Basic.lean, line 34](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Algebra/Split/Basic.lean#L34).
+**`Algebra.IsSplit`**, a def in StacksCore (human-reviewed), declared in [StacksCore/Algebra/Split/Basic.lean, line 34](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Algebra/Split/Basic.lean#L34).
 
 > A field extension `L` of `K` *splits* a `K`-algebra `A` if `L ⊗[K] A` is isomorphic
 > to a (nontrivial) matrix algebra over `L`.
@@ -27,7 +27,7 @@ def IsSplit (L : Type w) [CommRing L] [Algebra K L] : Prop
 
 [Tag 074Z](https://stacks.math.columbia.edu/tag/074Z) in the Stacks Project.
 
-**`Algebra.IsSplit.exists_embedding`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/Algebra/Split/Embedding.lean, line 156](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Algebra/Split/Embedding.lean#L156). The attribute's comment: “(1) ⇒ (2)”.
+**`Algebra.IsSplit.exists_embedding`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/Algebra/Split/Embedding.lean, line 156](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Algebra/Split/Embedding.lean#L156). The attribute's comment: “(1) ⇒ (2)”.
 
 > **Every finite splitting field embeds into a representative of the Brauer class**: if a
 > finite extension `L/K` splits the central simple algebra `A`, then the class of `A` has a
@@ -44,7 +44,7 @@ theorem exists_embedding {A : Type u} [Ring A] [Algebra K A] [FiniteDimensional 
       Module.finrank K B = Module.finrank K L ^ 2
 ```
 
-**`Algebra.isSplit_iff_exists_similar`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/Algebra/Split/Embedding.lean, line 189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Algebra/Split/Embedding.lean#L189).
+**`Algebra.isSplit_iff_exists_similar`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/Algebra/Split/Embedding.lean, line 189](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Algebra/Split/Embedding.lean#L189).
 
 > **Stacks 074Z**, in full. For a *finite* extension `L/K` and a finite central simple
 > `K`-algebra `A`, the following are equivalent:
@@ -73,7 +73,7 @@ theorem _root_.Algebra.isSplit_iff_exists_similar {A : Type u} [Ring A] [Algebra
 
 [Tag 0750](https://stacks.math.columbia.edu/tag/0750) in the Stacks Project.
 
-**`DivisionRing.isSplit_of_maximal_comm`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/Algebra/Split/DivisionRing.lean, line 49](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Algebra/Split/DivisionRing.lean#L49).
+**`DivisionRing.isSplit_of_maximal_comm`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/Algebra/Split/DivisionRing.lean, line 49](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Algebra/Split/DivisionRing.lean#L49).
 
 > **Stacks 0750**: a maximal subfield of a finite central division algebra `D` over `k` is a
 > splitting field for `D`.
@@ -97,7 +97,7 @@ theorem DivisionRing.isSplit_of_maximal_comm (L : Subalgebra k D) [IsMulCommutat
 
 [Tag 0751](https://stacks.math.columbia.edu/tag/0751) in the Stacks Project.
 
-**`Algebra.IsSplit.degree_dvd_finrank`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/Algebra/Split/Finrank.lean, line 194](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Algebra/Split/Finrank.lean#L194).
+**`Algebra.IsSplit.degree_dvd_finrank`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/Algebra/Split/Finrank.lean, line 194](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Algebra/Split/Finrank.lean#L194).
 
 > **Stacks 0751**: for a finite central division algebra `D` over `k` with `d² = [D : k]`,
 > the degree `d` *divides* `[L : k]` for every finite splitting field `L` of `D`.
@@ -119,7 +119,7 @@ public theorem Algebra.IsSplit.degree_dvd_finrank {D : Type*} [DivisionRing D] [
 
 [Tag 0752](https://stacks.math.columbia.edu/tag/0752) in the Stacks Project.
 
-**`DivisionRing.exists_separable_maxSubfield`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/Algebra/Algebra/Subalgebra/DivisionRing.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Algebra/Algebra/Subalgebra/DivisionRing.lean#L221). The attribute's comment: “the separable maximal subfield”.
+**`DivisionRing.exists_separable_maxSubfield`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/Algebra/Algebra/Subalgebra/DivisionRing.lean, line 221](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Algebra/Algebra/Subalgebra/DivisionRing.lean#L221). The attribute's comment: “the separable maximal subfield”.
 
 > **Koethe's theorem**: a finite-dimensional central division algebra `D` over a field `k`
 > contains a *separable maximal subfield*, stated here as: there is a commutative subalgebra
@@ -150,7 +150,7 @@ theorem DivisionRing.exists_separable_maxSubfield [FiniteDimensional k D]
       Algebra.IsSeparable k L
 ```
 
-**`Algebra.IsCentralSimple.exists_finite_sep_split`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/Algebra/Split/DivisionRing.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Algebra/Split/DivisionRing.lean#L74). The attribute's comment: “in particular: every Brauer class has a finite separable splitting field”.
+**`Algebra.IsCentralSimple.exists_finite_sep_split`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/Algebra/Split/DivisionRing.lean, line 74](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Algebra/Split/DivisionRing.lean#L74). The attribute's comment: “in particular: every Brauer class has a finite separable splitting field”.
 
 > **Stacks 0752**, the "in particular" clause: every Brauer class has a finite separable
 > splitting field. Concretely, every finite central simple `k`-algebra is split by a finite
@@ -166,7 +166,7 @@ theorem Algebra.IsCentralSimple.exists_finite_sep_split :
 
 [Tag 0753](https://stacks.math.columbia.edu/tag/0753) in the Stacks Project.
 
-**`Algebra.IsSplit.matrix_size_eq_degree`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/Algebra/Split/CentralSimple.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Algebra/Split/CentralSimple.lean#L87). The attribute's comment: “the integer d is called the degree of A”.
+**`Algebra.IsSplit.matrix_size_eq_degree`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/Algebra/Split/CentralSimple.lean, line 87](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Algebra/Split/CentralSimple.lean#L87). The attribute's comment: “the integer d is called the degree of A”.
 
 > **Stacks 0753**, closing sentence: the matrix size in *any* splitting of `A` is the degree
 > of `A`. This is what licenses calling it "the" integer `d` — clauses (3), (4) and (5) of
@@ -183,7 +183,7 @@ theorem Algebra.IsSplit.matrix_size_eq_degree (L : Type w) [Field L] [Algebra k 
     n = Algebra.IsCentralSimple.degree k A
 ```
 
-**`Algebra.isCentralSimple_tfae`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/Algebra/Split/CentralSimple.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksCore/Algebra/Split/CentralSimple.lean#L112). References: SGA 4½ Arcata (3.1.1).
+**`Algebra.isCentralSimple_tfae`**, a theorem in StacksCore (human-reviewed), declared in [StacksCore/Algebra/Split/CentralSimple.lean, line 112](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksCore/Algebra/Split/CentralSimple.lean#L112). References: SGA 4½ Arcata (3.1.1).
 
 > **Stacks 0753**: for a `k`-algebra `A` the following are equivalent.
 >
@@ -220,4 +220,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 11.8, Tag 074X](https://stacks.math.columbia.edu/tag/074X)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

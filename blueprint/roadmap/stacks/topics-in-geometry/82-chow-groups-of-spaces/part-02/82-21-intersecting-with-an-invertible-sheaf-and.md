@@ -8,13 +8,13 @@ proof: formalized
 
 # 82.21 Intersecting with an invertible sheaf and rational equivalence
 
-Section 82.21 of the Stacks Project, [Tag 0EQW](https://stacks.math.columbia.edu/tag/0EQW). 3 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 82.21 of the Stacks Project, [Tag 0EQW](https://stacks.math.columbia.edu/tag/0EQW). 3 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0EQX, a lemma
 
 [Tag 0EQX](https://stacks.math.columbia.edu/tag/0EQX) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.firstChernClassCap_comm_iff_isRationallyEquivalentToZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/FirstChernClassCapCommutativity.lean, line 188](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/FirstChernClassCapCommutativity.lean#L188). The attribute's comment: “not the lemma itself but its equivalence form: the equality c\_1(N) ∩ div\_L(s) = c\_1(L) ∩ div\_N(t) in CH\_\{n-2}(X) is shown to hold if and only if the first cycle of the key formula 0EQV is rationally equivalent to zero, for an arbitrary component rule chern of 0EQJ. The lemma's own statement is PROVED ELSEWHERE, unconditionally and at the hypotheses of 0EQX: canonicalFirstChernCap\_divisor\_comm of StacksFrontier.AlgebraicGeometry.Spaces.Chow.KeyFormulaProof.Headline, at the canonical component rule and the canonical divisors, registered under 0EQX as well. The equivalence is kept for its generality in chern, at which the key formula is the open predicate KeyFormula”.
+**`AlgebraicGeometry.Space.firstChernClassCap_comm_iff_isRationallyEquivalentToZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/FirstChernClassCapCommutativity.lean, line 188](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/FirstChernClassCapCommutativity.lean#L188). The attribute's comment: “not the lemma itself but its equivalence form: the equality c\_1(N) ∩ div\_L(s) = c\_1(L) ∩ div\_N(t) in CH\_\{n-2}(X) is shown to hold if and only if the first cycle of the key formula 0EQV is rationally equivalent to zero, for an arbitrary component rule chern of 0EQJ. The lemma's own statement is PROVED ELSEWHERE, unconditionally and at the hypotheses of 0EQX: canonicalFirstChernCap\_divisor\_comm of StacksFrontier.AlgebraicGeometry.Spaces.Chow.KeyFormulaProof.Headline, at the canonical component rule and the canonical divisors, registered under 0EQX as well. The equivalence is kept for its generality in chern, at which the key formula is the open predicate KeyFormula”.
 
 > **The conclusion of Stacks 0EQX, reduced to the key formula of Stacks 0EQV, for an arbitrary
 > component rule.**  In Situation 0EDT let `X/B` be good and integral with `dim_δ(X) = n`, let `ℒ`
@@ -78,7 +78,7 @@ theorem firstChernClassCap_comm_iff_isRationallyEquivalentToZero
             hdim))
 ```
 
-**`AlgebraicGeometry.Space.canonicalFirstChernCap_divisor_comm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/KeyFormulaProof/Headline.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/KeyFormulaProof/Headline.lean#L137). The attribute's comment: “Lemma 82.21.1 itself: for X good and integral with δ-dimension n, L and N invertible and s, t nonzero meromorphic sections, c\_1(N) ∩ div\_L(s) = c\_1(L) ∩ div\_N(t) in CH\_\{n-2}(X). Unconditional at the source's hypotheses: integrality and goodness are the section variables, regularity of s and t is derived from s ≠ 0, t ≠ 0 rather than assumed, and the cap product of 0EQJ, the divisors of 0EQE and the Chow group of 0EQ6 are the constructed ones, not carried”.
+**`AlgebraicGeometry.Space.canonicalFirstChernCap_divisor_comm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/KeyFormulaProof/Headline.lean, line 137](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/KeyFormulaProof/Headline.lean#L137). The attribute's comment: “Lemma 82.21.1 itself: for X good and integral with δ-dimension n, L and N invertible and s, t nonzero meromorphic sections, c\_1(N) ∩ div\_L(s) = c\_1(L) ∩ div\_N(t) in CH\_\{n-2}(X). Unconditional at the source's hypotheses: integrality and goodness are the section variables, regularity of s and t is derived from s ≠ 0, t ≠ 0 rather than assumed, and the cap product of 0EQJ, the divisors of 0EQE and the Chow group of 0EQ6 are the constructed ones, not carried”.
 
 > **Section 0EQU, the key formula: `c₁(𝒩) ∩ div_ℒ(s) = c₁(ℒ) ∩ div_𝒩(t)` in `CH_{n-2}(X)`.**
 > In Situation 0EDT let `X/B` be good, `X` integral with `dim_δ(X) = n`, let `ℒ` and `𝒩` be
@@ -112,7 +112,7 @@ theorem canonicalFirstChernCap_divisor_comm
 
 [Tag 0EQY](https://stacks.math.columbia.edu/tag/0EQY) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isRationallyEquivalentToZeroCanonical_firstChernCapCycleMap_canonicalFirstChernRule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/FirstChernCapRationalEquivalenceCanonicalSummand.lean, line 567](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/FirstChernCapRationalEquivalenceCanonicalSummand.lean#L567). The attribute's comment: “the cap product with the first Chern class is compatible with rational equivalence, at the level of cycles: it carries a cycle rationally equivalent to zero to a cycle rationally equivalent to zero, both read at the canonical embeddings of Stacks 0ENK”.
+**`AlgebraicGeometry.Space.isRationallyEquivalentToZeroCanonical_firstChernCapCycleMap_canonicalFirstChernRule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/FirstChernCapRationalEquivalenceCanonicalSummand.lean, line 567](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/FirstChernCapRationalEquivalenceCanonicalSummand.lean#L567). The attribute's comment: “the cap product with the first Chern class is compatible with rational equivalence, at the level of cycles: it carries a cycle rationally equivalent to zero to a cycle rationally equivalent to zero, both read at the canonical embeddings of Stacks 0ENK”.
 
 > **Stacks 0EQY at the level of cycles.**  For `X/B` good and `𝒩` an invertible `𝒪_X`-module,
 > the cap product `c₁(𝒩) ∩ - : Z_{k+1}(X) ⟶ Z_k(X)` of Stacks 0EQJ carries a `(k+1)`-cycle
@@ -131,7 +131,7 @@ theorem isRationallyEquivalentToZeroCanonical_firstChernCapCycleMap_canonicalFir
       (firstChernCapCycleMap D sX hX k (canonicalFirstChernRule D sX hX N hN k) α)
 ```
 
-**`AlgebraicGeometry.Space.canonicalFirstChernCapCanonicalChowMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/FirstChernCapRationalEquivalenceCanonicalSummand.lean, line 589](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/FirstChernCapRationalEquivalenceCanonicalSummand.lean#L589). The attribute's comment: “the descended operation CH\_\{k+1}(X) -> CH\_k(X), the Chow groups being those of Stacks 0EQ6 at the canonical embeddings of Stacks 0ENK on both sides”.
+**`AlgebraicGeometry.Space.canonicalFirstChernCapCanonicalChowMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/FirstChernCapRationalEquivalenceCanonicalSummand.lean, line 589](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/FirstChernCapRationalEquivalenceCanonicalSummand.lean#L589). The attribute's comment: “the descended operation CH\_\{k+1}(X) -> CH\_k(X), the Chow groups being those of Stacks 0EQ6 at the canonical embeddings of Stacks 0ENK on both sides”.
 
 > **Stacks 0EQY.**  The cap product of Stacks 0EQJ descends to
 >
@@ -148,7 +148,7 @@ def canonicalFirstChernCapCanonicalChowMap :
     chowGroupCanonical.{u + 1} D sX hX (k + 1) →+ chowGroupCanonical.{u + 1} D sX hX k
 ```
 
-**`AlgebraicGeometry.Space.canonicalFirstChernCapCanonicalChowMap_chowClassCanonical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/FirstChernCapRationalEquivalenceCanonicalSummand.lean, line 601](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/FirstChernCapRationalEquivalenceCanonicalSummand.lean#L601). The attribute's comment: “the descended operation agrees with the cap product of Stacks 0EQJ on the class of a cycle, which is the factorization through rational equivalence”.
+**`AlgebraicGeometry.Space.canonicalFirstChernCapCanonicalChowMap_chowClassCanonical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/FirstChernCapRationalEquivalenceCanonicalSummand.lean, line 601](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/FirstChernCapRationalEquivalenceCanonicalSummand.lean#L601). The attribute's comment: “the descended operation agrees with the cap product of Stacks 0EQJ on the class of a cycle, which is the factorization through rational equivalence”.
 
 > **Stacks 0EQY.**  The descended operation agrees with the cap product of Stacks 0EQJ on the
 > class of a cycle, which is what it means for the cap product to factor through rational
@@ -166,7 +166,7 @@ theorem canonicalFirstChernCapCanonicalChowMap_chowClassCanonical
 
 [Tag 0EQZ](https://stacks.math.columbia.edu/tag/0EQZ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.chowClassCanonical_firstChernCapCycleMap_firstChernCapCycleMap_comm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/IteratedFirstChernCapCommutativity.lean, line 766](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Chow/IteratedFirstChernCapCommutativity.lean#L766). The attribute's comment: “c₁(ℒ) ∩ c₁(𝒩) ∩ α = c₁(𝒩) ∩ c₁(ℒ) ∩ α in CH\_k(X), for every (k+2)-cycle α on X representing a class of CH\_\{k+2}(X); both cap products are the cycle-level operations of Stacks 0EQJ at the canonical choices, the classes taken in the Chow group of Stacks 0EQ6 at the canonical embeddings of Stacks 0ENK (chowGroupCanonical); nothing carried”.
+**`AlgebraicGeometry.Space.chowClassCanonical_firstChernCapCycleMap_firstChernCapCycleMap_comm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Chow/IteratedFirstChernCapCommutativity.lean, line 766](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Chow/IteratedFirstChernCapCommutativity.lean#L766). The attribute's comment: “c₁(ℒ) ∩ c₁(𝒩) ∩ α = c₁(𝒩) ∩ c₁(ℒ) ∩ α in CH\_k(X), for every (k+2)-cycle α on X representing a class of CH\_\{k+2}(X); both cap products are the cycle-level operations of Stacks 0EQJ at the canonical choices, the classes taken in the Chow group of Stacks 0EQ6 at the canonical embeddings of Stacks 0ENK (chowGroupCanonical); nothing carried”.
 
 > **Stacks 0EQZ: the two iterated cap products with first Chern classes commute.** In
 > Situation 0EDT let `X/B` be good and let `ℒ`, `𝒩` be invertible `𝒪_X`-modules. For every
@@ -202,4 +202,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 82.21, Tag 0EQW](https://stacks.math.columbia.edu/tag/0EQW)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

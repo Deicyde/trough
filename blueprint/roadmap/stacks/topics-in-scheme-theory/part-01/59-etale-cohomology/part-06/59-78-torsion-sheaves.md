@@ -8,13 +8,13 @@ proof: formalized
 
 # 59.78 Torsion sheaves
 
-Section 59.78 of the Stacks Project, [Tag 0DDB](https://stacks.math.columbia.edu/tag/0DDB). 2 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 59.78 of the Stacks Project, [Tag 0DDB](https://stacks.math.columbia.edu/tag/0DDB). 2 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0DDC, a lemma
 
 [Tag 0DDC](https://stacks.math.columbia.edu/tag/0DDC) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.etaleCohomology_isAddTorsion_and_derivedEtaleCohomology_isAddTorsion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionDerivedEtaleCohomology.lean, line 182](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionDerivedEtaleCohomology.lean#L182). The attribute's comment: “parts (1) and (2), as the conjunction of the sheaf case and the `D⁺` case”.
+**`Stacks.EtaleCohomology.etaleCohomology_isAddTorsion_and_derivedEtaleCohomology_isAddTorsion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionDerivedEtaleCohomology.lean, line 182](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionDerivedEtaleCohomology.lean#L182). The attribute's comment: “parts (1) and (2), as the conjunction of the sheaf case and the `D⁺` case”.
 
 > **Stacks 0DDC.** Let `X` be a quasi-compact and quasi-separated scheme.
 >
@@ -45,7 +45,7 @@ theorem etaleCohomology_isAddTorsion_and_derivedEtaleCohomology_isAddTorsion (X 
               AddCommGrpCat.{max (u + 1) v}).rightDerivedFunctorPlus.obj K))
 ```
 
-**`Stacks.EtaleCohomology.etaleCohomology_isAddTorsion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionEtaleCohomology.lean, line 337](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionEtaleCohomology.lean#L337). The attribute's comment: “part (1) only, with no extra hypothesis; étale cohomology is the right derived functor of global sections on the small étale site. Part (2) is not proved here”. References: SGA 4 IX (1.2), “(ii), (v)”.
+**`Stacks.EtaleCohomology.etaleCohomology_isAddTorsion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionEtaleCohomology.lean, line 337](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionEtaleCohomology.lean#L337). The attribute's comment: “part (1) only, with no extra hypothesis; étale cohomology is the right derived functor of global sections on the small étale site. Part (2) is not proved here”. References: SGA 4 IX (1.2), “(ii), (v)”.
 
 > **Stacks 0DDC (1).** Let `X` be a quasi-compact and quasi-separated scheme. If `𝓕` is a
 > torsion abelian sheaf on the small étale site of `X`, then `H^n_étale(X, 𝓕)` is a torsion abelian
@@ -66,7 +66,7 @@ theorem etaleCohomology_isAddTorsion (X : Scheme.{u})
 
 [Tag 0DDD](https://stacks.math.columbia.edu/tag/0DDD) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.smallEtaleDerivedDirectImage`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionHigherDirectImage.lean, line 277](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionHigherDirectImage.lean#L277). The attribute's comment: “part (2), the bounded-below clause: the derived direct image of an object of `D^+(X_étale)` is an object of `D^+(Y_étale)`, this being the codomain of the right derived functor of `f_*` on bounded-below derived categories”.
+**`Stacks.EtaleCohomology.smallEtaleDerivedDirectImage`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionHigherDirectImage.lean, line 277](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionHigherDirectImage.lean#L277). The attribute's comment: “part (2), the bounded-below clause: the derived direct image of an object of `D^+(X_étale)` is an object of `D^+(Y_étale)`, this being the codomain of the right derived functor of `f_*` on bounded-below derived categories”.
 
 > **The derived direct image on bounded-below derived categories of abelian étale sheaves**:
 > `Rf_* : D^+(X_étale) ⥤ D^+(Y_étale)`, the right derived functor of `f_*` on bounded-below derived
@@ -83,7 +83,7 @@ public abbrev smallEtaleDerivedDirectImage :
       DerivedCategory.Plus (Sheaf Y.smallEtaleTopology AddCommGrpCat.{max (u + 1) v})
 ```
 
-**`Stacks.EtaleCohomology.torsionSheafProperty_rightDerived_smallEtaleDirectImageAb`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionHigherDirectImage.lean, line 346](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionHigherDirectImage.lean#L346). The attribute's comment: “part (1): for `f` quasi-compact and quasi-separated and `F` a torsion abelian sheaf on `X_étale`, every higher direct image `R^n f_* F` is a torsion abelian sheaf on `Y_étale`”.
+**`Stacks.EtaleCohomology.torsionSheafProperty_rightDerived_smallEtaleDirectImageAb`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionHigherDirectImage.lean, line 346](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionHigherDirectImage.lean#L346). The attribute's comment: “part (1): for `f` quasi-compact and quasi-separated and `F` a torsion abelian sheaf on `X_étale`, every higher direct image `R^n f_* F` is a torsion abelian sheaf on `Y_étale`”.
 
 > **Part (1) of [Stacks, Tag 0DDD].** For a quasi-compact and quasi-separated morphism of
 > schemes `f : X ⟶ Y` and a torsion abelian sheaf `F` on `X_étale`, the higher direct image
@@ -108,7 +108,7 @@ public theorem torsionSheafProperty_rightDerived_smallEtaleDirectImageAb
       (((smallEtaleDirectImageAb.{max (u + 1) v} f).rightDerived n).obj F)
 ```
 
-**`Stacks.EtaleCohomology.torsionCohomologyProperty_smallEtaleDerivedDirectImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionHigherDirectImage.lean, line 405](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionHigherDirectImage.lean#L405). The attribute's comment: “part (2), the torsion clause: for `f` quasi-compact and quasi-separated and `K` in `D^+(X_étale)` with torsion cohomology sheaves, every cohomology sheaf of `Rf_* K` is a torsion abelian sheaf on `Y_étale`. The bounded-below clause is the codomain of `smallEtaleDerivedDirectImage`”.
+**`Stacks.EtaleCohomology.torsionCohomologyProperty_smallEtaleDerivedDirectImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionHigherDirectImage.lean, line 405](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/TorsionHigherDirectImage.lean#L405). The attribute's comment: “part (2), the torsion clause: for `f` quasi-compact and quasi-separated and `K` in `D^+(X_étale)` with torsion cohomology sheaves, every cohomology sheaf of `Rf_* K` is a torsion abelian sheaf on `Y_étale`. The bounded-below clause is the codomain of `smallEtaleDerivedDirectImage`”.
 
 > **Part (2) of [Stacks, Tag 0DDD], the torsion clause.** For a quasi-compact and
 > quasi-separated morphism of schemes `f : X ⟶ Y` and an object `K` of `D^+(X_étale)` whose
@@ -140,4 +140,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 59.78, Tag 0DDB](https://stacks.math.columbia.edu/tag/0DDB)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

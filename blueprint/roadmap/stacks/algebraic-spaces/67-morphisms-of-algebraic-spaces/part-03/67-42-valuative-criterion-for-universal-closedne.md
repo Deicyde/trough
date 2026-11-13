@@ -8,13 +8,13 @@ proof: formalized
 
 # 67.42 Valuative criterion for universal closedness
 
-Section 67.42 of the Stacks Project, [Tag 03K9](https://stacks.math.columbia.edu/tag/03K9). 5 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 67.42 of the Stacks Project, [Tag 03K9](https://stacks.math.columbia.edu/tag/03K9). 5 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 03KA, a lemma
 
 [Tag 03KA](https://stacks.math.columbia.edu/tag/03KA) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.universallyClosed_of_isQuasiCompact_of_valuativeCriterion_existence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ValuativeCriteria.lean, line 769](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ValuativeCriteria.lean#L769).
+**`AlgebraicGeometry.Space.universallyClosed_of_isQuasiCompact_of_valuativeCriterion_existence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ValuativeCriteria.lean, line 769](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ValuativeCriteria.lean#L769).
 
 > **Stacks 03KA.** A quasi-compact morphism of algebraic spaces over `S` which satisfies the
 > existence part of the valuative criterion is universally closed.
@@ -35,7 +35,7 @@ theorem universallyClosed_of_isQuasiCompact_of_valuativeCriterion_existence
 
 [Tag 0A3X](https://stacks.math.columbia.edu/tag/0A3X) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.valuativeCriterion_existence_of_isQuasiSeparated_of_universallyClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ValuativeCriteria.lean, line 827](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ValuativeCriteria.lean#L827). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.Space.valuativeCriterion_existence_of_isQuasiSeparated_of_universallyClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ValuativeCriteria.lean, line 827](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ValuativeCriteria.lean#L827). The attribute's comment: “part (1)”.
 
 > **Stacks 0A3X, part (1).** A quasi-separated universally closed morphism of algebraic spaces
 > over `S` satisfies the existence part of the valuative criterion.
@@ -58,7 +58,7 @@ theorem valuativeCriterion_existence_of_isQuasiSeparated_of_universallyClosed
     ValuativeCriterion.Existence f
 ```
 
-**`AlgebraicGeometry.Space.universallyClosed_iff_valuativeCriterion_existence_of_isQuasiCompact_of_isQuasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ValuativeCriteria.lean, line 1025](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ValuativeCriteria.lean#L1025). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.Space.universallyClosed_iff_valuativeCriterion_existence_of_isQuasiCompact_of_isQuasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ValuativeCriteria.lean, line 1025](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ValuativeCriteria.lean#L1025). The attribute's comment: “part (2)”.
 
 > **Stacks 0A3X, part (2).** A quasi-compact quasi-separated morphism of algebraic spaces over
 > `S` is universally closed exactly when it satisfies the existence part of the valuative
@@ -77,7 +77,7 @@ theorem universallyClosed_iff_valuativeCriterion_existence_of_isQuasiCompact_of_
 
 [Tag 0A3Y](https://stacks.math.columbia.edu/tag/0A3Y) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.universallyClosed_tfae_of_isQuasiCompact_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Valuative/UniversallyClosedValuative.lean, line 46](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Valuative/UniversallyClosedValuative.lean#L46).
+**`AlgebraicGeometry.Space.universallyClosed_tfae_of_isQuasiCompact_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Valuative/UniversallyClosedValuative.lean, line 46](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Valuative/UniversallyClosedValuative.lean#L46).
 
 > For a quasi-compact separated morphism `f : X ⟶ Y` of algebraic spaces over `S`, universal
 > closedness, the existence part of the valuative criterion of Stacks 03IX, and the existence of a
@@ -97,7 +97,7 @@ public theorem universallyClosed_tfae_of_isQuasiCompact_of_isSeparated
 
 [Tag 089F](https://stacks.math.columbia.edu/tag/089F) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_valuationRing_extension_lift_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ValuativeCriteria.lean, line 1189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ValuativeCriteria.lean#L1189).
+**`AlgebraicGeometry.Space.exists_valuationRing_extension_lift_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ValuativeCriteria.lean, line 1190](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/ValuativeCriteria.lean#L1190).
 
 > **Stacks 089F.** Let `f : X ⟶ Y` be a flat morphism of algebraic spaces over `S` and let
 > `Spec A ⟶ Y` be a morphism with `A` a valuation ring. If the closed point of `Spec A` maps to
@@ -138,7 +138,7 @@ theorem exists_valuationRing_extension_lift_of_isFlat
 
 [Tag 089G](https://stacks.math.columbia.edu/tag/089G) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.universallyClosed_of_refinedValuativeCriterion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/RefinedValuativeCriterion.lean, line 1808](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/RefinedValuativeCriterion.lean#L1808). The attribute's comment: “universally closed conclusion”.
+**`AlgebraicGeometry.Space.universallyClosed_of_refinedValuativeCriterion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/RefinedValuativeCriterion.lean, line 1810](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/RefinedValuativeCriterion.lean#L1810). The attribute's comment: “universally closed conclusion”.
 
 > The refined valuative criterion makes `f` universally closed when the quasi-compact map `h`
 > has dense image.
@@ -168,7 +168,7 @@ public theorem universallyClosed_of_refinedValuativeCriterion
     UniversallyClosed B S hS f
 ```
 
-**`AlgebraicGeometry.Space.isSeparated_of_refinedValuativeCriterion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/RefinedValuativeCriterion.lean, line 1982](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/RefinedValuativeCriterion.lean#L1982). The attribute's comment: “separated conclusion”.
+**`AlgebraicGeometry.Space.isSeparated_of_refinedValuativeCriterion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/RefinedValuativeCriterion.lean, line 1984](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/RefinedValuativeCriterion.lean#L1984). The attribute's comment: “separated conclusion”.
 
 > With quasi-separatedness, the same refined valuative criterion makes `f` separated.
 
@@ -180,7 +180,6 @@ public theorem isSeparated_of_refinedValuativeCriterion
     (hX : AlgebraicGeometry.IsAlgebraicSpace B S hS X)
     (hY : AlgebraicGeometry.IsAlgebraicSpace B S hS Y)
     (h : U ⟶ X) (f : X ⟶ Y)
-    (hf : AlgebraicGeometry.Space.IsQuasiCompact B S hS f)
     (hh : AlgebraicGeometry.Space.IsQuasiCompact B S hS h)
     (hqs : AlgebraicGeometry.Space.IsQuasiSeparated B S hS f)
     (hdense : letI : TopologicalSpace (AlgebraicGeometry.Space.points B S hS X) :=
@@ -205,4 +204,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 67.42, Tag 03K9](https://stacks.math.columbia.edu/tag/03K9)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

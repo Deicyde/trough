@@ -8,13 +8,13 @@ proof: formalized
 
 # 22.34 Composition of derived tensor products
 
-Section 22.34 of the Stacks Project, [Tag 0BZ1](https://stacks.math.columbia.edu/tag/0BZ1). 5 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 22.34 of the Stacks Project, [Tag 0BZ1](https://stacks.math.columbia.edu/tag/0BZ1). 5 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0BZ2, an equation
 
 [Tag 0BZ2](https://stacks.math.columbia.edu/tag/0BZ2) in the Stacks Project.
 
-**`DifferentialGraded.Bimodule.derivedTensorFunctorCounit`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedTensorFunctor.lean, line 138](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedTensorFunctor.lean#L138). The attribute's comment: “the canonical map from the derived to the plain tensor product”.
+**`DifferentialGraded.Bimodule.derivedTensorFunctorCounit`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedTensorFunctor.lean, line 138](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedTensorFunctor.lean#L138). The attribute's comment: “the canonical map from the derived to the plain tensor product”.
 
 > The canonical comparison from the derived tensor product to ordinary tensoring: the counit of
 > the Kan extension defining `- ⊗_A^𝐋 N`. Its components are the maps
@@ -30,7 +30,7 @@ def derivedTensorFunctorCounit (N : Bimodule A B) :
 
 [Tag 0BZ3](https://stacks.math.columbia.edu/tag/0BZ3) in the Stacks Project.
 
-**`DifferentialGraded.Bimodule.compTensor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/BimoduleComposition.lean, line 362](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/BimoduleComposition.lean#L362). The attribute's comment: “the composite bimodule N'' = N (x)\_B N' as an (A, C)-bimodule”.
+**`DifferentialGraded.Bimodule.compTensor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/BimoduleComposition.lean, line 362](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/BimoduleComposition.lean#L362). The attribute's comment: “the composite bimodule N'' = N (x)\_B N' as an (A, C)-bimodule”.
 
 > **Stacks Tag 0BZ3.** The composite of a differential graded `(A, B)`-bimodule `N` with a
 > differential graded `(B, C)`-bimodule `N'`: the relative tensor product `N ⊗_B N'` of the right
@@ -41,7 +41,7 @@ def derivedTensorFunctorCounit (N : Bimodule A B) :
 def compTensor (N : Bimodule A B) (N' : Bimodule B C) : Bimodule A C
 ```
 
-**`DifferentialGraded.Bimodule.derivedTensorFunctorCompTensorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedTensorComposition.lean, line 291](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedTensorComposition.lean#L291). The attribute's comment: “composition of the derived tensor functors”.
+**`DifferentialGraded.Bimodule.derivedTensorFunctorCompTensorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedTensorComposition.lean, line 291](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedTensorComposition.lean#L291). The attribute's comment: “composition of the derived tensor functors”.
 
 > **Stacks Tag 0BZ3.** *"Let `R` be a ring. Let `(A, d)`, `(B, d)`, and `(C, d)` be differential
 > graded `R`-algebras. Let `N` be a differential graded `(A, B)`-bimodule. Let `N'` be a differential
@@ -66,7 +66,7 @@ def derivedTensorFunctorCompTensorIso (N : Bimodule A B) (N' : Bimodule B C)
 
 [Tag 0BZ4](https://stacks.math.columbia.edu/tag/0BZ4) in the Stacks Project.
 
-**`DifferentialGraded.isIso_derivedTensorBaseChangeComparison_degreeZeroBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/BaseChangeUnitBaseAlgebra.lean, line 246](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/BaseChangeUnitBaseAlgebra.lean#L246). The attribute's comment: “the canonical map is an isomorphism when the first algebra is the base ring in degree zero”.
+**`DifferentialGraded.isIso_derivedTensorBaseChangeComparison_degreeZeroBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/BaseChangeUnitBaseAlgebra.lean, line 240](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/BaseChangeUnitBaseAlgebra.lean#L240). The attribute's comment: “the canonical map is an isomorphism when the first algebra is the base ring in degree zero”.
 
 > **The canonical map of Stacks 0BZ4 is an isomorphism when the first algebra is the base ring
 > in degree zero.** For differential graded `R`-algebras `(B, d)` and `(C, d)`, the map
@@ -89,7 +89,7 @@ theorem isIso_derivedTensorBaseChangeComparison_degreeZeroBase
     IsIso (derivedTensorBaseChangeComparison (degreeZero R R) B C)
 ```
 
-**`DifferentialGraded.tripleTensorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedTensorAlgebraComparison.lean, line 574](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedTensorAlgebraComparison.lean#L574). The attribute's comment: “the identification of the plain tensor products”.
+**`DifferentialGraded.tripleTensorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedTensorAlgebraComparison.lean, line 566](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedTensorAlgebraComparison.lean#L566). The attribute's comment: “the identification of the plain tensor products”.
 
 > The identification
 > `(A ⊗_R B)_B ⊗_B {}_B(B ⊗_R C)_C = (A ⊗_R B ⊗_R C)_C`: the plain relative tensor product of the
@@ -100,7 +100,7 @@ theorem isIso_derivedTensorBaseChangeComparison_degreeZeroBase
 def tripleTensorIso : plainTensorObj A B C ≅ baseChangeModule (tensorProduct A B) C
 ```
 
-**`DifferentialGraded.derivedTensorBaseChangeComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedTensorAlgebraComparison.lean, line 600](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedTensorAlgebraComparison.lean#L600). The attribute's comment: “the canonical map in D(C, d)”.
+**`DifferentialGraded.derivedTensorBaseChangeComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedTensorAlgebraComparison.lean, line 592](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedTensorAlgebraComparison.lean#L592). The attribute's comment: “the canonical map in D(C, d)”.
 
 > The canonical map
 > `(A ⊗_R B)_B ⊗_B^𝐋 {}_B(B ⊗_R C)_C ⟶ (A ⊗_R B ⊗_R C)_C` in `D(C, d)`. It is the comparison of
@@ -120,7 +120,7 @@ def derivedTensorBaseChangeComparison :
 
 [Tag 0BZ5](https://stacks.math.columbia.edu/tag/0BZ5) in the Stacks Project.
 
-**`DifferentialGraded.Bimodule.derivedTensorFunctorCompIsoDegreeZeroBase`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/BaseChangeUnitBaseAlgebra.lean, line 271](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/BaseChangeUnitBaseAlgebra.lean#L271). The attribute's comment: “unconditionally when the first algebra is the base ring in degree zero”.
+**`DifferentialGraded.Bimodule.derivedTensorFunctorCompIsoDegreeZeroBase`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/BaseChangeUnitBaseAlgebra.lean, line 265](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/BaseChangeUnitBaseAlgebra.lean#L265). The attribute's comment: “unconditionally when the first algebra is the base ring in degree zero”.
 
 > **Stacks 0BZ5 when the first algebra is the base ring in degree zero**, with nothing assumed.
 > For a differential graded `R`-algebra `(C, d)`, a differential graded `(R, B)`-bimodule `N` and a
@@ -143,7 +143,7 @@ def derivedTensorFunctorCompIsoDegreeZeroBase
       derivedTensorFunctor (compTensorResolution N N')
 ```
 
-**`DifferentialGraded.Bimodule.compTensorResolution`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/BimoduleComposition.lean, line 415](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/BimoduleComposition.lean#L415). The attribute's comment: “the bimodule N'' described in the proof”.
+**`DifferentialGraded.Bimodule.compTensorResolution`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/BimoduleComposition.lean, line 415](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/BimoduleComposition.lean#L415). The attribute's comment: “the bimodule N'' described in the proof”.
 
 > **The bimodule `N''` of Stacks Tag 0BZ5.** Given a differential graded `(A, B)`-bimodule `N`
 > and a differential graded `(B, C)`-bimodule `N'`, it is the composite `Ñ ⊗_B Ñ'` of their
@@ -153,7 +153,7 @@ def derivedTensorFunctorCompIsoDegreeZeroBase
 def compTensorResolution (N : Bimodule A B) (N' : Bimodule B C) : Bimodule A C
 ```
 
-**`DifferentialGraded.Bimodule.derivedTensorFunctorCompIsoOfBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedTensorBaseChangeSecondVariable.lean, line 318](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedTensorBaseChangeSecondVariable.lean#L318). The attribute's comment: “the composite of the two derived tensor functors is the derived tensor functor of the composite bimodule, under the Tag 0BZ4 isomorphism that the source itself assumes”.
+**`DifferentialGraded.Bimodule.derivedTensorFunctorCompIsoOfBaseChange`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedTensorBaseChangeSecondVariable.lean, line 318](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedTensorBaseChangeSecondVariable.lean#L318). The attribute's comment: “the composite of the two derived tensor functors is the derived tensor functor of the composite bimodule, under the Tag 0BZ4 isomorphism that the source itself assumes”.
 
 > **Stacks 0BZ5 with Tag 0BZ4 as its only hypothesis.** For differential graded algebras
 > `(A, d)`, `(B, d)` and `(C, d)` over `R` such that the canonical map
@@ -177,7 +177,7 @@ def derivedTensorFunctorCompIsoOfBaseChange
 
 [Tag 09S4](https://stacks.math.columbia.edu/tag/09S4) in the Stacks Project.
 
-**`DifferentialGraded.Bimodule.isIso_derivedTensorBaseChangeComparison_of_kFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/BaseChangeTensorKFlat.lean, line 1032](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/BaseChangeTensorKFlat.lean#L1032). The attribute's comment: “the canonical map (0BZ4) is an isomorphism”.
+**`DifferentialGraded.Bimodule.isIso_derivedTensorBaseChangeComparison_of_kFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/BaseChangeTensorKFlat.lean, line 1023](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/BaseChangeTensorKFlat.lean#L1023). The attribute's comment: “the canonical map (0BZ4) is an isomorphism”.
 
 > **Stacks Tag 09S4, first conclusion.** *"Let `R` be a ring. Let `(A, d)`, `(B, d)`, and
 > `(C, d)` be differential graded `R`-algebras. If `C` is K-flat as a complex of `R`-modules, then
@@ -201,7 +201,7 @@ theorem isIso_derivedTensorBaseChangeComparison_of_kFlat
     IsIso (derivedTensorBaseChangeComparison A B C)
 ```
 
-**`DifferentialGraded.Bimodule.derivedTensorFunctorCompIsoOfKFlatAlgebra`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedTensorBaseChangeSecondVariable.lean, line 344](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedTensorBaseChangeSecondVariable.lean#L344). The attribute's comment: “the conclusion of Stacks 0BZ5 is valid when C is K-flat as a complex of R-modules”.
+**`DifferentialGraded.Bimodule.derivedTensorFunctorCompIsoOfKFlatAlgebra`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/DerivedTensorBaseChangeSecondVariable.lean, line 344](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/DerivedTensorBaseChangeSecondVariable.lean#L344). The attribute's comment: “the conclusion of Stacks 0BZ5 is valid when C is K-flat as a complex of R-modules”.
 
 > **Stacks Tag 09S4, second conclusion.** *"Let `R` be a ring. Let `(A, d)`, `(B, d)`, `(C, d)`
 > be differential graded `R`-algebras. If `C` is K-flat as a complex of `R`-modules, then (0BZ4) is
@@ -233,4 +233,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 22.34, Tag 0BZ1](https://stacks.math.columbia.edu/tag/0BZ1)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

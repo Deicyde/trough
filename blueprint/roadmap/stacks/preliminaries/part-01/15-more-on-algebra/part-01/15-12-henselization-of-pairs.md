@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.12 Henselization of pairs
 
-Section 15.12 of the Stacks Project, [Tag 0EM7](https://stacks.math.columbia.edu/tag/0EM7). 8 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.12 of the Stacks Project, [Tag 0EM7](https://stacks.math.columbia.edu/tag/0EM7). 8 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0A02, a lemma
 
 [Tag 0A02](https://stacks.math.columbia.edu/tag/0A02) in the Stacks Project.
 
-**`exists_henselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/Pair/Henselization/UniversalProperty.lean, line 427](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Henselian/Pair/Henselization/UniversalProperty.lean#L427).
+**`exists_henselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/Pair/Henselization/UniversalProperty.lean, line 427](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Henselian/Pair/Henselization/UniversalProperty.lean#L427).
 
 > Every pair `(A, I)` has a henselization: there is a henselian pair `(Aʰ, IAʰ)` under `(A, I)`
 > which is initial among henselian pairs under `(A, I)`. Equivalently, the inclusion of henselian
@@ -34,7 +34,7 @@ theorem exists_henselization (A : Type u) [CommRing A] (I : Ideal A) :
 
 [Tag 0AGU](https://stacks.math.columbia.edu/tag/0AGU) in the Stacks Project.
 
-**`flat_henselization_and_bijective_quotientMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/Pair/Henselization/FlatLocalNoetherian.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Henselian/Pair/Henselization/FlatLocalNoetherian.lean#L53).
+**`flat_henselization_and_bijective_quotientMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/Pair/Henselization/FlatLocalNoetherian.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Henselian/Pair/Henselization/FlatLocalNoetherian.lean#L53).
 
 > The structural map to the henselization of a pair is flat, and it induces an isomorphism modulo
 > every power of the distinguished ideal.
@@ -60,7 +60,7 @@ public theorem flat_henselization_and_bijective_quotientMap
 
 [Tag 0A03](https://stacks.math.columbia.edu/tag/0A03) in the Stacks Project.
 
-**`isHenselization_of_henselizationPair`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/Pair/Henselization/FlatLocalNoetherian.lean, line 140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Henselian/Pair/Henselization/FlatLocalNoetherian.lean#L140).
+**`isHenselization_of_henselizationPair`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/Pair/Henselization/FlatLocalNoetherian.lean, line 140](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Henselian/Pair/Henselization/FlatLocalNoetherian.lean#L140).
 
 > A henselization of the pair consisting of a local ring and its maximal ideal is a henselization
 > of the local ring. In particular, the target is local and the structural map is a local ring
@@ -86,7 +86,7 @@ public theorem isHenselization_of_henselizationPair
 
 [Tag 0AGV](https://stacks.math.columbia.edu/tag/0AGV) in the Stacks Project.
 
-**`henselization_isNoetherian_and_completion_equiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/Pair/Henselization/FlatLocalNoetherian.lean, line 249](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Henselian/Pair/Henselization/FlatLocalNoetherian.lean#L249).
+**`henselization_isNoetherian_and_completion_equiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/Pair/Henselization/FlatLocalNoetherian.lean, line 249](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Henselian/Pair/Henselization/FlatLocalNoetherian.lean#L249).
 
 > The henselization of a Noetherian pair is Noetherian and has the same adic completion. The
 > structural map to the henselization is flat, and the canonical map from the henselization to the
@@ -116,7 +116,7 @@ public theorem henselization_isNoetherian_and_completion_equiv
 
 [Tag 0A04](https://stacks.math.columbia.edu/tag/0A04) in the Stacks Project.
 
-**`henselization_preserves_filtered_colimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/Pair/Henselization/Compatibilities.lean, line 144](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Henselian/Pair/Henselization/Compatibilities.lean#L144).
+**`henselization_preserves_filtered_colimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/Pair/Henselization/Compatibilities.lean, line 144](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Henselian/Pair/Henselization/Compatibilities.lean#L144).
 
 > Henselization of pairs commutes with filtered colimits. More precisely, for a filtered diagram
 > of pairs and its naturally induced diagram of henselizations, any colimit of the latter is a
@@ -154,7 +154,7 @@ theorem henselization_preserves_filtered_colimits
 
 [Tag 0F0L](https://stacks.math.columbia.edu/tag/0F0L) in the Stacks Project.
 
-**`henselizations_equiv_of_zeroLocus_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/Pair/Henselization/Compatibilities.lean, line 280](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Henselian/Pair/Henselization/Compatibilities.lean#L280).
+**`henselizations_equiv_of_zeroLocus_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/Pair/Henselization/Compatibilities.lean, line 280](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Henselian/Pair/Henselization/Compatibilities.lean#L280).
 
 > Henselization of a pair depends only on the radical of its ideal: two ideals with the same
 > vanishing locus give canonically isomorphic henselizations over the base ring.
@@ -184,7 +184,7 @@ theorem henselizations_equiv_of_zeroLocus_eq
 
 [Tag 0DYE](https://stacks.math.columbia.edu/tag/0DYE) in the Stacks Project.
 
-**`henselization_tensorProduct_bijective_of_isIntegral`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/Pair/Henselization/Compatibilities.lean, line 326](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Henselian/Pair/Henselization/Compatibilities.lean#L326).
+**`henselization_tensorProduct_bijective_of_isIntegral`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/Pair/Henselization/Compatibilities.lean, line 326](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Henselian/Pair/Henselization/Compatibilities.lean#L326).
 
 > Henselization commutes with integral base change. For an integral map of pairs
 > `(A, I) → (B, J)` for which `J` and `IB` have the same vanishing locus, the canonical map
@@ -221,7 +221,7 @@ theorem henselization_tensorProduct_bijective_of_isIntegral
 
 [Tag 0H7Q](https://stacks.math.columbia.edu/tag/0H7Q) in the Stacks Project.
 
-**`henselization_iInf_equiv_pi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/Pair/Henselization/Compatibilities.lean, line 539](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Henselian/Pair/Henselization/Compatibilities.lean#L539).
+**`henselization_iInf_equiv_pi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/Pair/Henselization/Compatibilities.lean, line 539](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Henselian/Pair/Henselization/Compatibilities.lean#L539).
 
 > Let `(I i)` be a finite nonempty family of pairwise comaximal ideals of a commutative ring `A`.
 > For arbitrary choices of a henselization `Aʰ` of `A` along `⨅ i, I i` and henselizations `Aʰᵢ`
@@ -257,4 +257,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.12, Tag 0EM7](https://stacks.math.columbia.edu/tag/0EM7)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 42.47 A baby case of localized Chern classes
 
-Section 42.47 of the Stacks Project, [Tag 0F9G](https://stacks.math.columbia.edu/tag/0F9G). 11 tags here are carried by 30 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 42.47 of the Stacks Project, [Tag 0F9G](https://stacks.math.columbia.edu/tag/0F9G). 11 tags here are carried by 31 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0F9H, a lemma
 
 [Tag 0F9H](https://stacks.math.columbia.edu/tag/0F9H) in the Stacks Project.
 
-**`Stacks.Chow.existsUnique_localizedChernClassOfClosedCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BabyLocalizedChern/LocalizedChernClass.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BabyLocalizedChern/LocalizedChernClass.lean#L125). The attribute's comment: “the class c'\_p(E₂) ∈ A^p(X₂ ⟶ X), existence and uniqueness of the bivariant class characterized by the two identities on every base change X' ⟶ X, for E₂|\_\{X₁ ∩ X₂} finite locally free of rank < p in degree 0”.
+**`Stacks.Chow.existsUnique_localizedChernClassOfClosedCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BabyLocalizedChern/LocalizedChernClass.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/BabyLocalizedChern/LocalizedChernClass.lean#L125). The attribute's comment: “the class c'\_p(E₂) ∈ A^p(X₂ ⟶ X), existence and uniqueness of the bivariant class characterized by the two identities on every base change X' ⟶ X, for E₂|\_\{X₁ ∩ X₂} finite locally free of rank < p in degree 0”.
 
 > **Stacks 0F9H, for the Chern classes.** Let `X` be locally of finite type over `S`, let
 > `i_j : X_j ⟶ X` be closed immersions with `X = X₁ ∪ X₂` set theoretically, and let `E₂` be a
@@ -47,7 +47,7 @@ theorem existsUnique_localizedChernClassOfClosedCover
             (pullbackSnd_comp_structureMorphism_eq C (i₁ ≫ sX) sX i₁ rfl g) k α) = 0)
 ```
 
-**`Stacks.Chow.existsUnique_localizedPowerSumOfClosedCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BabyLocalizedChern/LocalizedChernClass.lean, line 179](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BabyLocalizedChern/LocalizedChernClass.lean#L179). The attribute's comment: “the class P'\_p(E₂) ∈ A^p(X₂ ⟶ X), existence and uniqueness of the bivariant class characterized by the two identities on every base change X' ⟶ X, for E₂|\_\{X₁ ∩ X₂} zero”.
+**`Stacks.Chow.existsUnique_localizedPowerSumOfClosedCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BabyLocalizedChern/LocalizedChernClass.lean, line 179](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/BabyLocalizedChern/LocalizedChernClass.lean#L179). The attribute's comment: “the class P'\_p(E₂) ∈ A^p(X₂ ⟶ X), existence and uniqueness of the bivariant class characterized by the two identities on every base change X' ⟶ X, for E₂|\_\{X₁ ∩ X₂} zero”.
 
 > **Stacks 0F9H, for the classes `P_p`.** Let `X` be locally of finite type over `S`, let
 > `i_j : X_j ⟶ X` be closed immersions with `X = X₁ ∪ X₂` set theoretically, and let `E₂` be a
@@ -81,7 +81,7 @@ theorem existsUnique_localizedPowerSumOfClosedCover
             (pullbackSnd_comp_structureMorphism_eq C (i₁ ≫ sX) sX i₁ rfl g) k α) = 0)
 ```
 
-**`Stacks.Chow.closedCoverPowerSum`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCase.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCase.lean#L148). The attribute's comment: “the class P'\_p(E₂) in A^p(X₂ ⟶ X), for E₂ restricting to zero on X₁ ∩ X₂”.
+**`Stacks.Chow.closedCoverPowerSum`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCase.lean, line 148](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCase.lean#L148). The attribute's comment: “the class P'\_p(E₂) in A^p(X₂ ⟶ X), for E₂ restricting to zero on X₁ ∩ X₂”.
 
 > Let `i₁ : X₁ ⟶ X` and `i₂ : X₂ ⟶ X` be closed immersions whose images cover `X`, and let
 > `E₂ ∈ D(𝒪_{X₂})` have defined Chern classes and restrict to zero on `X₁ ×_X X₂`. The class
@@ -96,7 +96,7 @@ def closedCoverPowerSum (hcover : Set.range i₁ ∪ Set.range i₂ = Set.univ)
     BivariantClass C (gysinSystemOfInvertible C) sX₂ sX i₂ hi₂ p
 ```
 
-**`Stacks.Chow.closedCoverChernClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCase.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCase.lean#L163). The attribute's comment: “the class c'\_p(E₂) in A^p(X₂ ⟶ X), for E₂ restricting on X₁ ∩ X₂ to a finite locally free module of rank < p in degree 0”.
+**`Stacks.Chow.closedCoverChernClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCase.lean, line 163](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCase.lean#L163). The attribute's comment: “the class c'\_p(E₂) in A^p(X₂ ⟶ X), for E₂ restricting on X₁ ∩ X₂ to a finite locally free module of rank < p in degree 0”.
 
 > Let `i₁ : X₁ ⟶ X` and `i₂ : X₂ ⟶ X` be closed immersions whose images cover `X`, and let
 > `E₂ ∈ D(𝒪_{X₂})` have defined Chern classes and restrict on `X₁ ×_X X₂` to a finite locally free
@@ -114,7 +114,7 @@ def closedCoverChernClass (hcover : Set.range i₁ ∪ Set.range i₂ = Set.univ
     BivariantClass C (gysinSystemOfInvertible C) sX₂ sX i₂ hi₂ p
 ```
 
-**`Stacks.Chow.isClosedCoverExtension_closedCoverPowerSum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCase.lean, line 184](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCase.lean#L184). The attribute's comment: “the two formulas P'\_p(E₂) ∩ i\_\{2,*} α₂ = P\_p(E₂) ∩ α₂ and P'\_p(E₂) ∩ i\_\{1,*} α₁ = 0, after every base change”.
+**`Stacks.Chow.isClosedCoverExtension_closedCoverPowerSum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCase.lean, line 184](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCase.lean#L184). The attribute's comment: “the two formulas P'\_p(E₂) ∩ i\_\{2,*} α₂ = P\_p(E₂) ∩ α₂ and P'\_p(E₂) ∩ i\_\{1,*} α₁ = 0, after every base change”.
 
 > On every test scheme `g : T ⟶ X` locally of finite type, `P'_p(E₂)` caps the classes pushed
 > forward from `T ×_X X₂` as `P_p(E₂)` does, and kills the classes pushed forward from `T ×_X X₁`:
@@ -127,7 +127,7 @@ theorem isClosedCoverExtension_closedCoverPowerSum :
       (closedCoverPowerSum C sX i₁ i₂ sX₂ hi₂ hE₂ p hcover hzero)
 ```
 
-**`Stacks.Chow.eq_closedCoverPowerSum_of_isClosedCoverExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCase.lean, line 195](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCase.lean#L195). The attribute's comment: “uniqueness: P'\_p(E₂) is the only class satisfying the two formulas after every base change”.
+**`Stacks.Chow.eq_closedCoverPowerSum_of_isClosedCoverExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCase.lean, line 195](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCase.lean#L195). The attribute's comment: “uniqueness: P'\_p(E₂) is the only class satisfying the two formulas after every base change”.
 
 > A class of `A^p(X₂ ⟶ X)` satisfying the two formulas `c ∩ i_{2,*} α₂ = P_p(E₂) ∩ α₂` and
 > `c ∩ i_{1,*} α₁ = 0` after every base change is `P'_p(E₂)`.
@@ -140,7 +140,7 @@ theorem eq_closedCoverPowerSum_of_isClosedCoverExtension
     c = closedCoverPowerSum C sX i₁ i₂ sX₂ hi₂ hE₂ p hcover hzero
 ```
 
-**`Stacks.Chow.isClosedCoverExtension_closedCoverChernClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCase.lean, line 217](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCase.lean#L217). The attribute's comment: “the two formulas c'\_p(E₂) ∩ i\_\{2,*} α₂ = c\_p(E₂) ∩ α₂ and c'\_p(E₂) ∩ i\_\{1,*} α₁ = 0, after every base change”.
+**`Stacks.Chow.isClosedCoverExtension_closedCoverChernClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCase.lean, line 217](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCase.lean#L217). The attribute's comment: “the two formulas c'\_p(E₂) ∩ i\_\{2,*} α₂ = c\_p(E₂) ∩ α₂ and c'\_p(E₂) ∩ i\_\{1,*} α₁ = 0, after every base change”.
 
 > On every test scheme `g : T ⟶ X` locally of finite type, `c'_p(E₂)` caps the classes pushed
 > forward from `T ×_X X₂` as `c_p(E₂)` does, and kills the classes pushed forward from `T ×_X X₁`:
@@ -153,7 +153,7 @@ theorem isClosedCoverExtension_closedCoverChernClass :
       (closedCoverChernClass C sX i₁ i₂ sX₂ hi₂ hE₂ p hcover hrank)
 ```
 
-**`Stacks.Chow.eq_closedCoverChernClass_of_isClosedCoverExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCase.lean, line 228](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCase.lean#L228). The attribute's comment: “uniqueness: c'\_p(E₂) is the only class satisfying the two formulas after every base change”.
+**`Stacks.Chow.eq_closedCoverChernClass_of_isClosedCoverExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCase.lean, line 228](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCase.lean#L228). The attribute's comment: “uniqueness: c'\_p(E₂) is the only class satisfying the two formulas after every base change”.
 
 > A class of `A^p(X₂ ⟶ X)` satisfying the two formulas `c ∩ i_{2,*} α₂ = c_p(E₂) ∩ α₂` and
 > `c ∩ i_{1,*} α₁ = 0` after every base change is `c'_p(E₂)`.
@@ -170,35 +170,60 @@ theorem eq_closedCoverChernClass_of_isClosedCoverExtension
 
 [Tag 0FAH](https://stacks.math.columbia.edu/tag/0FAH) in the Stacks Project.
 
-**`Stacks.Chow.eq_of_isClosedCoverLocalizedClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/ClosedCoverLocalizedClass.lean, line 284](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BivariantLemmas/ClosedCoverLocalizedClass.lean#L284). The attribute's comment: “the conclusion in full: the class of Stacks 0F9H in A^p(X\_2 -> X) does not depend on the choice of X\_1, in the form that two bivariant classes with the characterizing property of Stacks 0F9H for the covers X = X\_1 cup X\_2 and X = X\_1' cup X\_2 and for the same class on X\_2 are equal. CARRIED, because the Chern classes of a perfect object are not constructed in this repository (only the uniqueness half of Stacks 0GUD is formalized): the class on X\_2 that the localized class caps as is a parameter kappa in A^p(X\_2), covering the P\_p(E\_2) and c\_p(E\_2) halves of the source at once, and the two localized classes are parameters satisfying the characterizing property of Stacks 0F9H rather than its output. NOT NEEDED, since that property is all the source's proof uses: that E\_2 is perfect, that its Chern classes are defined, and that its restriction to X\_1 cap X\_2 resp. X\_1' cap X\_2 is zero resp. finite locally free of rank < p in degree 0.”.
+**`Stacks.Chow.localizedPowerSumOfClosedCover_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BabyLocalizedChern/IndependentLocalizedClass.lean, line 64](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/BabyLocalizedChern/IndependentLocalizedClass.lean#L64). The attribute's comment: “the class P'\_p(E₂) ∈ A^p(X₂ ⟶ X) of Stacks 0F9H, for E₂|\_\{X₁ ∩ X₂} zero: the classes built from two covers X = X₁ ∪ X₂ and X = X₁' ∪ X₂ with E₂|\_\{X₁ ∩ X₂} and E₂|\_\{X₁' ∩ X₂} zero are equal”.
 
-> **Stacks 0FAH.** The localized class of Stacks 0F9H does not depend on the choice of `X₁`: if
-> `c` has the characterizing property for the cover `X = X₁ ∪ X₂` and `c'` has it for the cover
-> `X = X₁' ∪ X₂`, both with the same class `κ ∈ A^p(X₂)`, then `c = c'`.
->
-> By Stacks 02UC it is enough that `c - c'` kill the fundamental class of every integral scheme
-> `T` locally of finite type over `X`. Such a `T` is irreducible and covered by the base changes of
-> the two closed subschemes of whichever cover, so for each cover one of the two pieces is the whole
-> of `T`; being a surjective closed immersion into a reduced scheme that piece is an isomorphism,
-> and `[T]` is the pushforward of the fundamental class of the piece. If the `X₂`-piece fills `T`
-> then both classes cap `[T]` to `κ ∩ [T]`; otherwise the `X₁`-piece and the `X₁'`-piece both fill
-> `T`, and both classes cap `[T]` to zero.
+> **Stacks 0FAH, for the classes `P_p`.** Let `X` be locally of finite type over `S`, let
+> `i₁ : X₁ ⟶ X`, `i₁' : X₁' ⟶ X` and `i₂ : X₂ ⟶ X` be closed immersions with `X = X₁ ∪ X₂` and
+> `X = X₁' ∪ X₂` set theoretically, and let `E₂` be a perfect object of `D(𝒪_{X₂})` whose Chern
+> classes are defined and whose restrictions to `X₁ ∩ X₂` and to `X₁' ∩ X₂` are zero. Then the class
+> `P'_p(E₂) ∈ A^p(X₂ ⟶ X)` of Stacks 0F9H built from the cover `X = X₁ ∪ X₂` equals the one built
+> from the cover `X = X₁' ∪ X₂`: it does not depend on the choice of `X₁`.
 
 ```lean
-theorem eq_of_isClosedCoverLocalizedClass
+theorem localizedPowerSumOfClosedCover_eq
     (hcover : Set.range i₁.base ∪ Set.range i₂.base = Set.univ)
     (hcover' : Set.range i₁'.base ∪ Set.range i₂.base = Set.univ)
-    {κ : chowCohomologyComponent C G sX₂ p} {c c' : BivariantClass C G sX₂ sX i₂ hi₂ p}
-    (hc : IsClosedCoverLocalizedClass C G sX sX₁ sX₂ i₁ hi₁ i₂ hi₂ p κ c)
-    (hc' : IsClosedCoverLocalizedClass C G sX sX₁' sX₂ i₁' hi₁' i₂ hi₂ p κ c') :
-    c = c'
+    (perfect : RingedSpace.IsPerfect.{u, u + 1} (X := X₂.toRingedSpace) E₂)
+    (hzero : IsZero ((Cohomology.DerivedAdjunctionOnRingedSpaces.derivedPullback
+      (pullback.snd i₁ i₂).toLRSHom.toShHom).obj E₂))
+    (hzero' : IsZero ((Cohomology.DerivedAdjunctionOnRingedSpaces.derivedPullback
+      (pullback.snd i₁' i₂).toLRSHom.toShHom).obj E₂)) :
+    localizedPowerSumOfClosedCover C sX i₁ i₂ hcover hE₂ p perfect hzero =
+      localizedPowerSumOfClosedCover C sX i₁' i₂ hcover' hE₂ p perfect hzero'
+```
+
+**`Stacks.Chow.localizedChernClassOfClosedCover_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BabyLocalizedChern/IndependentLocalizedClass.lean, line 89](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/BabyLocalizedChern/IndependentLocalizedClass.lean#L89). The attribute's comment: “the class c'\_p(E₂) ∈ A^p(X₂ ⟶ X) of Stacks 0F9H, for E₂|\_\{X₁ ∩ X₂} finite locally free of rank < p in degree 0: the classes built from two covers X = X₁ ∪ X₂ and X = X₁' ∪ X₂ with E₂|\_\{X₁ ∩ X₂} and E₂|\_\{X₁' ∩ X₂} finite locally free of rank < p in degree 0 are equal”.
+
+> **Stacks 0FAH, for the Chern classes.** Let `X` be locally of finite type over `S`, let
+> `i₁ : X₁ ⟶ X`, `i₁' : X₁' ⟶ X` and `i₂ : X₂ ⟶ X` be closed immersions with `X = X₁ ∪ X₂` and
+> `X = X₁' ∪ X₂` set theoretically, and let `E₂` be a perfect object of `D(𝒪_{X₂})` whose Chern
+> classes are defined and whose restrictions to `X₁ ∩ X₂` and to `X₁' ∩ X₂` are each isomorphic to
+> a finite locally free module of rank `< p` sitting in cohomological degree `0`. Then the class
+> `c'_p(E₂) ∈ A^p(X₂ ⟶ X)` of Stacks 0F9H built from the cover `X = X₁ ∪ X₂` equals the one built
+> from the cover `X = X₁' ∪ X₂`: it does not depend on the choice of `X₁`.
+
+```lean
+theorem localizedChernClassOfClosedCover_eq
+    (hcover : Set.range i₁.base ∪ Set.range i₂.base = Set.univ)
+    (hcover' : Set.range i₁'.base ∪ Set.range i₂.base = Set.univ)
+    (_perfect : RingedSpace.IsPerfect.{u, u + 1} (X := X₂.toRingedSpace) E₂)
+    (hres : ∃ M : (pullback i₁ i₂).Modules, IsFiniteLocallyFreeOfRankLT M p ∧
+      Nonempty ((Cohomology.DerivedAdjunctionOnRingedSpaces.derivedPullback
+          (pullback.snd i₁ i₂).toLRSHom.toShHom).obj E₂ ≅
+        (DerivedCategory.singleFunctor (pullback i₁ i₂).Modules 0).obj M))
+    (hres' : ∃ M : (pullback i₁' i₂).Modules, IsFiniteLocallyFreeOfRankLT M p ∧
+      Nonempty ((Cohomology.DerivedAdjunctionOnRingedSpaces.derivedPullback
+          (pullback.snd i₁' i₂).toLRSHom.toShHom).obj E₂ ≅
+        (DerivedCategory.singleFunctor (pullback i₁' i₂).Modules 0).obj M)) :
+    localizedChernClassOfClosedCover C sX i₁ i₂ hcover hE₂ p hres =
+      localizedChernClassOfClosedCover C sX i₁' i₂ hcover' hE₂ p hres'
 ```
 
 ## Tag 0GUG, a lemma
 
 [Tag 0GUG](https://stacks.math.columbia.edu/tag/0GUG) in the Stacks Project.
 
-**`Stacks.Chow.localizedChernClassOfClosedCover_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BabyLocalizedChern/LocalizedChernBaseChange.lean, line 460](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BabyLocalizedChern/LocalizedChernBaseChange.lean#L460). The attribute's comment: “the classes c'\_p: c'\_p(E'₂) built from X' = X'₁ ∪ X'₂ and E'₂ is the restriction of c'\_p(E₂)”.
+**`Stacks.Chow.localizedChernClassOfClosedCover_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BabyLocalizedChern/LocalizedChernBaseChange.lean, line 460](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/BabyLocalizedChern/LocalizedChernBaseChange.lean#L460). The attribute's comment: “the classes c'\_p: c'\_p(E'₂) built from X' = X'₁ ∪ X'₂ and E'₂ is the restriction of c'\_p(E₂)”.
 
 > **Stacks 0GUG, for the Chern classes.** In the situation of Stacks 0F9H, with `E₂|_{X₁ ∩ X₂}`
 > finite locally free of rank `< p` in degree `0`, let `q : X' ⟶ X` be locally of finite type,
@@ -231,7 +256,7 @@ theorem localizedChernClassOfClosedCover_baseChange
           (localizedChernClassOfClosedCover C sX i₁ i₂ hcover hE₂ p hres))
 ```
 
-**`Stacks.Chow.localizedPowerSumOfClosedCover_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BabyLocalizedChern/LocalizedChernBaseChange.lean, line 490](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BabyLocalizedChern/LocalizedChernBaseChange.lean#L490). The attribute's comment: “the classes P'\_p: P'\_p(E'₂) built from X' = X'₁ ∪ X'₂ and E'₂ is the restriction of P'\_p(E₂)”.
+**`Stacks.Chow.localizedPowerSumOfClosedCover_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BabyLocalizedChern/LocalizedChernBaseChange.lean, line 490](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/BabyLocalizedChern/LocalizedChernBaseChange.lean#L490). The attribute's comment: “the classes P'\_p: P'\_p(E'₂) built from X' = X'₁ ∪ X'₂ and E'₂ is the restriction of P'\_p(E₂)”.
 
 > **Stacks 0GUG, for the classes `P_p`.** In the situation of Stacks 0F9H, with `E₂` perfect
 > and `E₂|_{X₁ ∩ X₂}` zero, let `q : X' ⟶ X` be locally of finite type, let `X' = X'₁ ∪ X'₂` with
@@ -263,7 +288,7 @@ theorem localizedPowerSumOfClosedCover_baseChange
 
 [Tag 0F9I](https://stacks.math.columbia.edu/tag/0F9I) in the Stacks Project.
 
-**`Stacks.Chow.pushforward_localizedPowerSumOfClosedCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BabyLocalizedChern/PushforwardLocalizedClass.lean, line 156](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BabyLocalizedChern/PushforwardLocalizedClass.lean#L156). The attribute's comment: “the classes P'\_p: i\_\{2,*} ∘ P'\_p(E₂) = P\_p(E) for E|\_\{X₁} zero”.
+**`Stacks.Chow.pushforward_localizedPowerSumOfClosedCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BabyLocalizedChern/PushforwardLocalizedClass.lean, line 156](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/BabyLocalizedChern/PushforwardLocalizedClass.lean#L156). The attribute's comment: “the classes P'\_p: i\_\{2,*} ∘ P'\_p(E₂) = P\_p(E) for E|\_\{X₁} zero”.
 
 > **Stacks 0F9I, for the classes `P_p`.** Let `X` be locally of finite type over `S`, let
 > `i_j : X_j ⟶ X` be closed immersions with `X = X₁ ∪ X₂` set theoretically, and let `E` be a
@@ -293,7 +318,7 @@ theorem pushforward_localizedPowerSumOfClosedCover
       perfectPowerSumComponent C sX hE p
 ```
 
-**`Stacks.Chow.pushforward_localizedChernClassOfClosedCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BabyLocalizedChern/PushforwardLocalizedClass.lean, line 192](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BabyLocalizedChern/PushforwardLocalizedClass.lean#L192). The attribute's comment: “the classes c'\_p: i\_\{2,*} ∘ c'\_p(E₂) = c\_p(E) for E|\_\{X₁} finite locally free of rank < p in degree 0”.
+**`Stacks.Chow.pushforward_localizedChernClassOfClosedCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BabyLocalizedChern/PushforwardLocalizedClass.lean, line 192](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/BabyLocalizedChern/PushforwardLocalizedClass.lean#L192). The attribute's comment: “the classes c'\_p: i\_\{2,*} ∘ c'\_p(E₂) = c\_p(E) for E|\_\{X₁} finite locally free of rank < p in degree 0”.
 
 > **Stacks 0F9I, for the Chern classes.** Let `X` be locally of finite type over `S`, let
 > `i_j : X_j ⟶ X` be closed immersions with `X = X₁ ∪ X₂` set theoretically, and let `E` be a
@@ -325,7 +350,7 @@ theorem pushforward_localizedChernClassOfClosedCover
       perfectChernClass C sX hE p
 ```
 
-**`Stacks.Chow.properPushforwardChowCohomology_closedCoverPowerSum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCase.lean, line 268](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCase.lean#L268). The attribute's comment: “the case of P'\_p: i\_\{2,*} ∘ P'\_p(E₂) = P\_p(E) for E₂ = E|\_\{X₂} and E|\_\{X₁} zero”.
+**`Stacks.Chow.properPushforwardChowCohomology_closedCoverPowerSum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCase.lean, line 268](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCase.lean#L268). The attribute's comment: “the case of P'\_p: i\_\{2,*} ∘ P'\_p(E₂) = P\_p(E) for E₂ = E|\_\{X₂} and E|\_\{X₁} zero”.
 
 > Let `i₁ : X₁ ⟶ X` and `i₂ : X₂ ⟶ X` be closed immersions whose images cover `X`, and let
 > `E ∈ D(𝒪_X)` have defined Chern classes and restrict to zero on `X₁`. Let `E₂ = E|_{X₂}` be as in
@@ -348,7 +373,7 @@ theorem properPushforwardChowCohomology_closedCoverPowerSum
       perfectPowerSumComponent C sX hE p
 ```
 
-**`Stacks.Chow.properPushforwardChowCohomology_closedCoverChernClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCase.lean, line 295](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCase.lean#L295). The attribute's comment: “the case of c'\_p: i\_\{2,*} ∘ c'\_p(E₂) = c\_p(E) for E₂ = E|\_\{X₂} and E|\_\{X₁} finite locally free of rank < p in degree 0”.
+**`Stacks.Chow.properPushforwardChowCohomology_closedCoverChernClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCase.lean, line 295](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCase.lean#L295). The attribute's comment: “the case of c'\_p: i\_\{2,*} ∘ c'\_p(E₂) = c\_p(E) for E₂ = E|\_\{X₂} and E|\_\{X₁} finite locally free of rank < p in degree 0”.
 
 > Let `i₁ : X₁ ⟶ X` and `i₂ : X₂ ⟶ X` be closed immersions whose images cover `X`, and let
 > `E ∈ D(𝒪_X)` have defined Chern classes and restrict on `X₁` to a finite locally free module of rank
@@ -379,7 +404,7 @@ theorem properPushforwardChowCohomology_closedCoverChernClass
 
 [Tag 0FAI](https://stacks.math.columbia.edu/tag/0FAI) in the Stacks Project.
 
-**`Stacks.Chow.canonicalBivariantProperPushforward_localizedPowerSumOfClosedCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BabyLocalizedChern/ShrinkLocalizedClass.lean, line 202](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BabyLocalizedChern/ShrinkLocalizedClass.lean#L202). The attribute's comment: “the classes P'\_p: (X₂' ⟶ X₂)\_* ∘ P'\_p(E₂|\_\{X₂'}) = P'\_p(E₂) for E₂|\_\{X₁' ∩ X₂} zero”.
+**`Stacks.Chow.canonicalBivariantProperPushforward_localizedPowerSumOfClosedCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BabyLocalizedChern/ShrinkLocalizedClass.lean, line 202](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/BabyLocalizedChern/ShrinkLocalizedClass.lean#L202). The attribute's comment: “the classes P'\_p: (X₂' ⟶ X₂)\_* ∘ P'\_p(E₂|\_\{X₂'}) = P'\_p(E₂) for E₂|\_\{X₁' ∩ X₂} zero”.
 
 > **Stacks 0FAI, for the classes `P_p`.** In the situation of Stacks 0F9H — closed immersions
 > `i_j : X_j ⟶ X` with `X = X₁ ∪ X₂` set theoretically, and `E₂ ∈ D(𝒪_{X₂})` perfect with
@@ -410,7 +435,7 @@ theorem canonicalBivariantProperPushforward_localizedPowerSumOfClosedCover
       localizedPowerSumOfClosedCover C sX i₁ i₂ hcover hE₂ p perfect hzero
 ```
 
-**`Stacks.Chow.canonicalBivariantProperPushforward_localizedChernClassOfClosedCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BabyLocalizedChern/ShrinkLocalizedClass.lean, line 254](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BabyLocalizedChern/ShrinkLocalizedClass.lean#L254). The attribute's comment: “the classes c'\_p: (X₂' ⟶ X₂)\_* ∘ c'\_p(E₂|\_\{X₂'}) = c'\_p(E₂) for E₂|\_\{X₁' ∩ X₂} finite locally free of rank < p in degree 0”.
+**`Stacks.Chow.canonicalBivariantProperPushforward_localizedChernClassOfClosedCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BabyLocalizedChern/ShrinkLocalizedClass.lean, line 254](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/BabyLocalizedChern/ShrinkLocalizedClass.lean#L254). The attribute's comment: “the classes c'\_p: (X₂' ⟶ X₂)\_* ∘ c'\_p(E₂|\_\{X₂'}) = c'\_p(E₂) for E₂|\_\{X₁' ∩ X₂} finite locally free of rank < p in degree 0”.
 
 > **Stacks 0FAI, for the Chern classes.** In the situation of Stacks 0F9H — closed immersions
 > `i_j : X_j ⟶ X` with `X = X₁ ∪ X₂` set theoretically, and `E₂ ∈ D(𝒪_{X₂})` perfect with
@@ -451,7 +476,7 @@ theorem canonicalBivariantProperPushforward_localizedChernClassOfClosedCover
 
 [Tag 0FAJ](https://stacks.math.columbia.edu/tag/0FAJ) in the Stacks Project.
 
-**`Stacks.Chow.comp_localizedChernClassOfClosedCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BabyLocalizedChern/LocalizedChernComposite.lean, line 181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BabyLocalizedChern/LocalizedChernComposite.lean#L181). The attribute's comment: “the classes c'\_p: c ∘ c'\_p(E₂) = c'\_p(Lf₂^*E₂) ∘ c for every bivariant class c in A^r(Y → X), f : Y → X locally of finite type, the composites read as in Remark 0FA2”.
+**`Stacks.Chow.comp_localizedChernClassOfClosedCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BabyLocalizedChern/LocalizedChernComposite.lean, line 181](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/BabyLocalizedChern/LocalizedChernComposite.lean#L181). The attribute's comment: “the classes c'\_p: c ∘ c'\_p(E₂) = c'\_p(Lf₂^*E₂) ∘ c for every bivariant class c in A^r(Y → X), f : Y → X locally of finite type, the composites read as in Remark 0FA2”.
 
 > **Stacks 0FAJ, for the classes `c'_p`.** Let `X` be locally of finite type over `S`, let
 > `i_j : X_j ⟶ X` be closed immersions with `X = X₁ ∪ X₂` set theoretically, and let
@@ -489,7 +514,7 @@ theorem comp_localizedChernClassOfClosedCover
         (pullbackSymmetry i₂ f) (pullbackSymmetry_hom_comp_snd_comp f i₂)
 ```
 
-**`Stacks.Chow.comp_localizedPowerSumOfClosedCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BabyLocalizedChern/LocalizedChernComposite.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/BabyLocalizedChern/LocalizedChernComposite.lean#L216). The attribute's comment: “the classes P'\_p: c ∘ P'\_p(E₂) = P'\_p(Lf₂^*E₂) ∘ c for every bivariant class c in A^r(Y → X), f : Y → X locally of finite type, the composites read as in Remark 0FA2”.
+**`Stacks.Chow.comp_localizedPowerSumOfClosedCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/BabyLocalizedChern/LocalizedChernComposite.lean, line 216](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/BabyLocalizedChern/LocalizedChernComposite.lean#L216). The attribute's comment: “the classes P'\_p: c ∘ P'\_p(E₂) = P'\_p(Lf₂^*E₂) ∘ c for every bivariant class c in A^r(Y → X), f : Y → X locally of finite type, the composites read as in Remark 0FA2”.
 
 > **Stacks 0FAJ, for the classes `P'_p`.** Let `X` be locally of finite type over `S`, let
 > `i_j : X_j ⟶ X` be closed immersions with `X = X₁ ∪ X₂` set theoretically, and let
@@ -522,7 +547,7 @@ theorem comp_localizedPowerSumOfClosedCover
         (pullbackSymmetry i₂ f) (pullbackSymmetry_hom_comp_snd_comp f i₂)
 ```
 
-**`Stacks.Chow.nonhomogeneousBivariantTransport_compositeOfInvertible_closedCoverPowerSum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCaseCommute.lean, line 674](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCaseCommute.lean#L674). The attribute's comment: “for P'\_p: c ∘ P'\_p(E₂) = P'\_p(Lf₂^*E₂) ∘ c in A^*(Y₂ → X), for every c in A^*(Y → X)”.
+**`Stacks.Chow.nonhomogeneousBivariantTransport_compositeOfInvertible_closedCoverPowerSum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCaseCommute.lean, line 674](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCaseCommute.lean#L674). The attribute's comment: “for P'\_p: c ∘ P'\_p(E₂) = P'\_p(Lf₂^*E₂) ∘ c in A^*(Y₂ → X), for every c in A^*(Y → X)”.
 
 > Let `i₁ : X₁ ⟶ X`, `i₂ : X₂ ⟶ X` be closed immersions covering `X`, let `E₂ ∈ D(𝒪_{X₂})` have
 > defined Chern classes and restrict to zero on `X₁ ∩ X₂`, let `f : Y ⟶ X` be locally of finite type
@@ -570,7 +595,7 @@ theorem nonhomogeneousBivariantTransport_compositeOfInvertible_closedCoverPowerS
         c
 ```
 
-**`Stacks.Chow.nonhomogeneousBivariantTransport_compositeOfInvertible_closedCoverChernClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCaseCommute.lean, line 725](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCaseCommute.lean#L725). The attribute's comment: “for c'\_p: c ∘ c'\_p(E₂) = c'\_p(Lf₂^*E₂) ∘ c in A^*(Y₂ → X), for every c in A^*(Y → X)”.
+**`Stacks.Chow.nonhomogeneousBivariantTransport_compositeOfInvertible_closedCoverChernClass`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCaseCommute.lean, line 725](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCaseCommute.lean#L725). The attribute's comment: “for c'\_p: c ∘ c'\_p(E₂) = c'\_p(Lf₂^*E₂) ∘ c in A^*(Y₂ → X), for every c in A^*(Y → X)”.
 
 > Let `i₁ : X₁ ⟶ X`, `i₂ : X₂ ⟶ X` be closed immersions covering `X`, let `E₂ ∈ D(𝒪_{X₂})` have
 > defined Chern classes and restrict on `X₁ ∩ X₂` to a finite locally free module of rank `< p` in
@@ -624,7 +649,7 @@ theorem nonhomogeneousBivariantTransport_compositeOfInvertible_closedCoverChernC
 
 [Tag 0FAK](https://stacks.math.columbia.edu/tag/0FAK) in the Stacks Project.
 
-**`Stacks.Chow.closedCoverPowerSum_succ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCaseLemmas.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCaseLemmas.lean#L124). The attribute's comment: “Newton's recursion P'\_\{p+1} = ∑\_\{j`<`p} (-1)^j c'\_\{j+1} P'\_\{p-j} + (-1)^p (p+1) c'\_\{p+1}, for every p ≥ 0, with the multiplication of 0FA0; it determines every displayed identity and the ones after it (and so on)”.
+**`Stacks.Chow.closedCoverPowerSum_succ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCaseLemmas.lean, line 124](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCaseLemmas.lean#L124). The attribute's comment: “Newton's recursion P'\_\{p+1} = ∑\_\{j`<`p} (-1)^j c'\_\{j+1} P'\_\{p-j} + (-1)^p (p+1) c'\_\{p+1}, for every p ≥ 0, with the multiplication of 0FA0; it determines every displayed identity and the ones after it (and so on)”.
 
 > In the situation of Stacks 0F9H, assume that `E₂` restricts to zero on `X₁ ∩ X₂`, so that
 > `c'_p(E₂)` is defined for every `p ≥ 1`. Then the classes `P'_p(E₂) ∈ A^p(X₂ ⟶ X)` are Newton's
@@ -651,7 +676,7 @@ theorem closedCoverPowerSum_succ (q : ℕ) :
             (Nat.succ_pos _)
 ```
 
-**`Stacks.Chow.closedCoverPowerSum_first_four`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCaseLemmas.lean, line 167](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCaseLemmas.lean#L167). The attribute's comment: “the four displayed identities, with the multiplication of 0FA0”.
+**`Stacks.Chow.closedCoverPowerSum_first_four`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCaseLemmas.lean, line 167](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCaseLemmas.lean#L167). The attribute's comment: “the four displayed identities, with the multiplication of 0FA0”.
 
 > In the situation of Stacks 0F9H, with `E₂` restricting to zero on `X₁ ∩ X₂`,
 >
@@ -695,7 +720,7 @@ theorem closedCoverPowerSum_first_four :
 
 [Tag 0FAL](https://stacks.math.columbia.edu/tag/0FAL) in the Stacks Project.
 
-**`Stacks.Chow.closedCoverTotalChernClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCaseWhitney.lean, line 438](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCaseWhitney.lean#L438). The attribute's comment: “the class c^(p)(E) in A^(p)(X₂ → X)”.
+**`Stacks.Chow.closedCoverTotalChernClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCaseWhitney.lean, line 438](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCaseWhitney.lean#L438). The attribute's comment: “the class c^(p)(E) in A^(p)(X₂ → X)”.
 
 > **The class `c^{(p)}(E) ∈ A^{(p)}(X₂ ⟶ X)`.** Let `i₁ : X₁ ⟶ X`, `i₂ : X₂ ⟶ X` be closed
 > immersions whose images cover `X`, and let `E ∈ D(𝒪_X)` have defined Chern classes, with
@@ -719,7 +744,7 @@ def closedCoverTotalChernClass {E : DerivedCategory X.Modules} (hE : HasDefinedC
     localizedBivariantGrading C (gysinSystemOfInvertible C) (i₂ ≫ sX) sX i₂ rfl p
 ```
 
-**`Stacks.Chow.closedCoverTotalChernClass_biprod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCaseWhitney.lean, line 551](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCaseWhitney.lean#L551). The attribute's comment: “CORRECTED: hypothesis (2) is imposed on E|\_\{X₁}, F|\_\{X₁} (as written, on X₁ ∩ X₂, it is false: X = ℙ¹ ⊔ pt, E = 𝒪(1)² on ℙ¹ and 0 on pt, F = 0, p = q = 1, where the degree-1 components are c₁(E) ≠ 0 and 0)”.
+**`Stacks.Chow.closedCoverTotalChernClass_biprod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCaseWhitney.lean, line 551](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCaseWhitney.lean#L551). The attribute's comment: “CORRECTED: hypothesis (2) is imposed on E|\_\{X₁}, F|\_\{X₁} (as written, on X₁ ∩ X₂, it is false: X = ℙ¹ ⊔ pt, E = 𝒪(1)² on ℙ¹ and 0 on pt, F = 0, p = q = 1, where the degree-1 components are c₁(E) ≠ 0 and 0)”.
 
 > Let `i₁ : X₁ ⟶ X`, `i₂ : X₂ ⟶ X` be closed immersions with `X = X₁ ∪ X₂` set-theoretically,
 > and let `E, F ∈ D(𝒪_X)` have defined Chern classes, with `E|_{X₁}` and `F|_{X₁}` isomorphic to
@@ -767,7 +792,7 @@ theorem closedCoverTotalChernClass_biprod
 
 [Tag 0FAM](https://stacks.math.columbia.edu/tag/0FAM) in the Stacks Project.
 
-**`Stacks.Chow.closedCoverPowerSum_biprod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCaseLemmas.lean, line 320](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCaseLemmas.lean#L320).
+**`Stacks.Chow.closedCoverPowerSum_biprod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCaseLemmas.lean, line 320](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCaseLemmas.lean#L320).
 
 > Let `i₁ : X₁ ⟶ X`, `i₂ : X₂ ⟶ X` be closed immersions with `X = X₁ ∪ X₂` set-theoretically, and
 > let `E, F ∈ D(𝒪_{X₂})` have defined Chern classes and restrict to zero on `X₁ ∩ X₂`. Then
@@ -792,7 +817,7 @@ theorem closedCoverPowerSum_biprod {E F : DerivedCategory X₂.Modules}
 
 [Tag 0FAN](https://stacks.math.columbia.edu/tag/0FAN) in the Stacks Project.
 
-**`Stacks.Chow.closedCoverChernClass_derivedTwist`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCaseLemmas.lean, line 415](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCaseLemmas.lean#L415).
+**`Stacks.Chow.closedCoverChernClass_derivedTwist`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCaseLemmas.lean, line 415](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCaseLemmas.lean#L415).
 
 > In the situation of Stacks 0F9H — `E₂ ∈ D(𝒪_{X₂})` perfect with defined Chern classes,
 > restricting on `X₁ ∩ X₂` to a finite locally free module of rank `< p` placed in degree `0` —
@@ -835,7 +860,7 @@ theorem closedCoverChernClass_derivedTwist {E₂ : DerivedCategory X₂.Modules}
 
 [Tag 0FE5](https://stacks.math.columbia.edu/tag/0FE5) in the Stacks Project.
 
-**`Stacks.Chow.closedCoverPowerSum_derivedTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCaseTensor.lean, line 1056](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCaseTensor.lean#L1056). The attribute's comment: “the formula P'\_p((E tensor^L E')|\_(X\_2 cap X'\_2)) = sum over p\_1 + p\_2 = p of C(p, p\_1) chi\_(p\_1) chi'\_(p\_2) in A^p(X\_2 cap X'\_2 -> X), for every p >= 0, with E, E' perfect with defined Chern classes as in the source. The closed cover of X on which the left hand side is the class of 0F9H is X = Y cup (X\_2 cap X'\_2) with Y the reduced closed subscheme on |X\_1| cup |X'\_1| (reducedUnionIdeal); the vanishing of (E tensor^L E')|\_(Y cap X\_2 cap X'\_2) that 0F9H needs is proved (isZero\_derivedPullback\_derivedTensor\_reducedUnion, by derived Nakayama on the derived fibres), for E, E' perfect as in the source. The source's Y = (X\_1 cap X'\_1) cup (X\_1 cap X'\_2) cup (X\_2 cap X'\_1) has the same underlying set; by 0FAH the class does not depend on the choice. The product of a class on X\_2 and a class on X'\_2 is supportedIntersectionMul, res(c\_1) o c\_2 for the restriction of 0F9Z and the composition of 0B75”.
+**`Stacks.Chow.closedCoverPowerSum_derivedTensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCaseTensor.lean, line 1056](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCaseTensor.lean#L1056). The attribute's comment: “the formula P'\_p((E tensor^L E')|\_(X\_2 cap X'\_2)) = sum over p\_1 + p\_2 = p of C(p, p\_1) chi\_(p\_1) chi'\_(p\_2) in A^p(X\_2 cap X'\_2 -> X), for every p >= 0, with E, E' perfect with defined Chern classes as in the source. The closed cover of X on which the left hand side is the class of 0F9H is X = Y cup (X\_2 cap X'\_2) with Y the reduced closed subscheme on |X\_1| cup |X'\_1| (reducedUnionIdeal); the vanishing of (E tensor^L E')|\_(Y cap X\_2 cap X'\_2) that 0F9H needs is proved (isZero\_derivedPullback\_derivedTensor\_reducedUnion, by derived Nakayama on the derived fibres), for E, E' perfect as in the source. The source's Y = (X\_1 cap X'\_1) cup (X\_1 cap X'\_2) cup (X\_2 cap X'\_1) has the same underlying set; by 0FAH the class does not depend on the choice. The product of a class on X\_2 and a class on X'\_2 is supportedIntersectionMul, res(c\_1) o c\_2 for the restriction of 0F9Z and the composition of 0B75”.
 
 > **Stacks 0FE5 for `P'_p`.** Let `X = X₁ ∪ X₂ = X₁' ∪ X₂'` be two closed
 > covers and let `E`, `E' ∈ D(𝒪_X)` be perfect objects whose Chern classes are defined and which
@@ -867,7 +892,7 @@ theorem closedCoverPowerSum_derivedTensor (perfectE : RingedSpace.IsPerfect.{u, 
             (closedCoverPowerSumRestrict C sX j₁ j₂ hcover' hE' hzero' q.1.2))
 ```
 
-**`Stacks.Chow.closedCoverChernClass_derivedTensor_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCaseTensor.lean, line 1096](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCaseTensor.lean#L1096). The attribute's comment: “the formula c'\_1((E tensor^L E')|\_(X\_2 cap X'\_2)) = r gamma'\_1 + r' gamma\_1 in A^1(X\_2 cap X'\_2 -> X), with E, E' perfect with defined Chern classes as in the source. The closed cover of X on which the left hand side is the class of 0F9H is X = Y cup (X\_2 cap X'\_2) with Y the reduced closed subscheme on |X\_1| cup |X'\_1| (reducedUnionIdeal); the vanishing of (E tensor^L E')|\_(Y cap X\_2 cap X'\_2) that 0F9H needs is proved (isZero\_derivedPullback\_derivedTensor\_reducedUnion, by derived Nakayama on the derived fibres), for E, E' perfect as in the source. The source's Y = (X\_1 cap X'\_1) cup (X\_1 cap X'\_2) cup (X\_2 cap X'\_1) has the same underlying set; by 0FAH the class does not depend on the choice. Products are supportedIntersectionMul, res(c\_1) o c\_2, landing in the class group of X\_2 x\_X X'\_2 -> X for both orders of the factors”.
+**`Stacks.Chow.closedCoverChernClass_derivedTensor_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCaseTensor.lean, line 1096](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCaseTensor.lean#L1096). The attribute's comment: “the formula c'\_1((E tensor^L E')|\_(X\_2 cap X'\_2)) = r gamma'\_1 + r' gamma\_1 in A^1(X\_2 cap X'\_2 -> X), with E, E' perfect with defined Chern classes as in the source. The closed cover of X on which the left hand side is the class of 0F9H is X = Y cup (X\_2 cap X'\_2) with Y the reduced closed subscheme on |X\_1| cup |X'\_1| (reducedUnionIdeal); the vanishing of (E tensor^L E')|\_(Y cap X\_2 cap X'\_2) that 0F9H needs is proved (isZero\_derivedPullback\_derivedTensor\_reducedUnion, by derived Nakayama on the derived fibres), for E, E' perfect as in the source. The source's Y = (X\_1 cap X'\_1) cup (X\_1 cap X'\_2) cup (X\_2 cap X'\_1) has the same underlying set; by 0FAH the class does not depend on the choice. Products are supportedIntersectionMul, res(c\_1) o c\_2, landing in the class group of X\_2 x\_X X'\_2 -> X for both orders of the factors”.
 
 > **Stacks 0FE5 for `c'_1`.** Let `X = X₁ ∪ X₂ = X₁' ∪ X₂'` be two closed
 > covers and let `E`, `E' ∈ D(𝒪_X)` be perfect objects whose Chern classes are defined and which
@@ -904,7 +929,7 @@ theorem closedCoverChernClass_derivedTensor_one (perfectE : RingedSpace.IsPerfec
             (closedCoverChernClassRestrict C sX i₁ i₂ hcover hE hzero 1 one_pos))
 ```
 
-**`Stacks.Chow.closedCoverChernClass_derivedTensor_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCaseTensor.lean, line 1148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCaseTensor.lean#L1148). The attribute's comment: “the formula for c'\_2((E tensor^L E')|\_(X\_2 cap X'\_2)) in A^2(X\_2 cap X'\_2 -> X), with E, E' perfect with defined Chern classes as in the source. The closed cover of X on which the left hand side is the class of 0F9H is X = Y cup (X\_2 cap X'\_2) with Y the reduced closed subscheme on |X\_1| cup |X'\_1| (reducedUnionIdeal); the vanishing of (E tensor^L E')|\_(Y cap X\_2 cap X'\_2) that 0F9H needs is proved (isZero\_derivedPullback\_derivedTensor\_reducedUnion, by derived Nakayama on the derived fibres), for E, E' perfect as in the source. The source's Y = (X\_1 cap X'\_1) cup (X\_1 cap X'\_2) cup (X\_2 cap X'\_1) has the same underlying set; by 0FAH the class does not depend on the choice. C(r, 2) is read as closedCoverRankChoose: the 0F9H extension of the restriction to X\_2 of the class ofLocallyConstant of x |-> C(chi\_E(x), 2), chi\_E the derived-fibre Euler characteristic whose class is r(E) = P\_0(E), exactly as 0FAG reads C(r(E), 2); it vanishes on X\_1 because chi\_E does, and C(r, 1) = r. The term (r r' - 1) gamma'\_1 gamma\_1 is read as (r r')(gamma'\_1 gamma\_1) - gamma'\_1 gamma\_1, since 1 is not a class supported on X\_2 cap X'\_2; products of classes supported on X\_2 and X'\_2 are supportedIntersectionMul, products of classes on one support are supportedMul (0FA0). The source's 'and so on for higher Chern classes' is not a precise assertion and is not formalized”.
+**`Stacks.Chow.closedCoverChernClass_derivedTensor_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCaseTensor.lean, line 1148](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/LocalizedChern/BabyCaseTensor.lean#L1148). The attribute's comment: “the formula for c'\_2((E tensor^L E')|\_(X\_2 cap X'\_2)) in A^2(X\_2 cap X'\_2 -> X), with E, E' perfect with defined Chern classes as in the source. The closed cover of X on which the left hand side is the class of 0F9H is X = Y cup (X\_2 cap X'\_2) with Y the reduced closed subscheme on |X\_1| cup |X'\_1| (reducedUnionIdeal); the vanishing of (E tensor^L E')|\_(Y cap X\_2 cap X'\_2) that 0F9H needs is proved (isZero\_derivedPullback\_derivedTensor\_reducedUnion, by derived Nakayama on the derived fibres), for E, E' perfect as in the source. The source's Y = (X\_1 cap X'\_1) cup (X\_1 cap X'\_2) cup (X\_2 cap X'\_1) has the same underlying set; by 0FAH the class does not depend on the choice. C(r, 2) is read as closedCoverRankChoose: the 0F9H extension of the restriction to X\_2 of the class ofLocallyConstant of x |-> C(chi\_E(x), 2), chi\_E the derived-fibre Euler characteristic whose class is r(E) = P\_0(E), exactly as 0FAG reads C(r(E), 2); it vanishes on X\_1 because chi\_E does, and C(r, 1) = r. The term (r r' - 1) gamma'\_1 gamma\_1 is read as (r r')(gamma'\_1 gamma\_1) - gamma'\_1 gamma\_1, since 1 is not a class supported on X\_2 cap X'\_2; products of classes supported on X\_2 and X'\_2 are supportedIntersectionMul, products of classes on one support are supportedMul (0FA0). The source's 'and so on for higher Chern classes' is not a precise assertion and is not formalized”.
 
 > **Stacks 0FE5 for `c'_2`.** Let `X = X₁ ∪ X₂ = X₁' ∪ X₂'` be two closed
 > covers and let `E`, `E' ∈ D(𝒪_X)` be perfect objects whose Chern classes are defined and which
@@ -978,4 +1003,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 42.47, Tag 0F9G](https://stacks.math.columbia.edu/tag/0F9G)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

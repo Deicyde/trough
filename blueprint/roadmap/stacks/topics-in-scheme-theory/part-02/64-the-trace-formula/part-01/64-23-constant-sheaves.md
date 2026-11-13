@@ -8,13 +8,13 @@ proof: formalized
 
 # 64.23 Constant sheaves
 
-Section 64.23 of the Stacks Project, [Tag 03V7](https://stacks.math.columbia.edu/tag/03V7). 2 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 64.23 of the Stacks Project, [Tag 03V7](https://stacks.math.columbia.edu/tag/03V7). 2 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 03V8, a lemma
 
 [Tag 03V8](https://stacks.math.columbia.edu/tag/03V8) in the Stacks Project.
 
-**`Stacks.EtaleCohomology.LAdicSheaf.isRational_constantLFunction_of_smoothProjectiveCurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/ConstantSheafCurveCohomological.lean, line 204](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/ConstantSheafCurveCohomological.lean#L204). The attribute's comment: “part (1): L(X, Q\_ell) is a rational function, for X a smooth projective geometrically irreducible curve over a finite field and ell a prime different from the characteristic; its product with (1 - T)(1 - qT) is det(1 - pi\_X^* T | H^1(X\_kbar, Q\_ell))”.
+**`Stacks.EtaleCohomology.LAdicSheaf.isRational_constantLFunction_of_smoothProjectiveCurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/ConstantSheafCurveCohomological.lean, line 207](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/ConstantSheafCurveCohomological.lean#L207). The attribute's comment: “part (1): L(X, Q\_ell) is a rational function, for X a smooth projective geometrically irreducible curve over a finite field and ell a prime different from the characteristic; its product with (1 - T)(1 - qT) is det(1 - pi\_X^* T | H^1(X\_kbar, Q\_ell))”.
 
 > **Tag 03V8, part (1).** The L-function `L(X, ℚ_ℓ) = ∏_{x ∈ |X|} (1 - T^{deg x})⁻¹` of a smooth,
 > projective, geometrically irreducible curve over a finite field is a rational function: its
@@ -22,12 +22,13 @@ Section 64.23 of the Stacks Project, [Tag 03V7](https://stacks.math.columbia.edu
 > `(1 - T)(1 - qT)` and `det(1 - π_X^* T | H¹(X_k̄, ℚ_ℓ))`.)
 
 ```lean
-theorem LAdicSheaf.isRational_constantLFunction_of_smoothProjectiveCurve (hℓp : ℓ ≠ p) :
+theorem LAdicSheaf.isRational_constantLFunction_of_smoothProjectiveCurve [Finite k]
+    (hℓp : ℓ ≠ p) :
     ∃ P Q : Polynomial ℚ_[ℓ], Q.eval 0 ≠ 0 ∧
       constantLFunction f ℚ_[ℓ] * (Q : PowerSeries ℚ_[ℓ]) = (P : PowerSeries ℚ_[ℓ])
 ```
 
-**`Stacks.EtaleCohomology.LAdicSheaf.exists_integral_curveNumerator_of_smoothProjectiveCurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/ConstantSheafCurveCohomological.lean, line 223](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/ConstantSheafCurveCohomological.lean#L223). The attribute's comment: “part (2), independence of ell: dim H^1(X\_kbar, Q\_ell) = 2g and the characteristic polynomial det(1 - pi\_X^* T | H^1) is the image of the integral numerator of the zeta function of X, a polynomial over Z determined by the Euler product of X, in which ell does not occur”.
+**`Stacks.EtaleCohomology.LAdicSheaf.exists_integral_curveNumerator_of_smoothProjectiveCurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/ConstantSheafCurveCohomological.lean, line 228](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/ConstantSheafCurveCohomological.lean#L228). The attribute's comment: “part (2), independence of ell: dim H^1(X\_kbar, Q\_ell) = 2g and the characteristic polynomial det(1 - pi\_X^* T | H^1) is the image of the integral numerator of the zeta function of X, a polynomial over Z determined by the Euler product of X, in which ell does not occur”.
 
 > **Tag 03V8, part (2), independence of `ℓ`.** `dim H¹(X_k̄, ℚ_ℓ) = 2g`, and for every basis of
 > `H¹(X_k̄, ℚ_ℓ)` the polynomial `det(1 - π_X^* T | H¹)` is the image of one integral polynomial of
@@ -50,7 +51,7 @@ theorem LAdicSheaf.exists_integral_curveNumerator_of_smoothProjectiveCurve (hℓ
               ((1 : ℕ) : ℤ)).hom) 1
 ```
 
-**`Stacks.EtaleCohomology.LAdicSheaf.isIntegral_curveEigenvalue_of_smoothProjectiveCurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/ConstantSheafCurveCohomological.lean, line 245](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/ConstantSheafCurveCohomological.lean#L245). The attribute's comment: “part (2): the eigenvalues alpha\_1, ..., alpha\_\{2g} of pi\_X^* on H^1(X\_kbar, Q\_ell) are algebraic integers, being the reciprocal roots of the integral numerator of the zeta function, of constant coefficient 1”.
+**`Stacks.EtaleCohomology.LAdicSheaf.isIntegral_curveEigenvalue_of_smoothProjectiveCurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/ConstantSheafCurveCohomological.lean, line 250](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/ConstantSheafCurveCohomological.lean#L250). The attribute's comment: “part (2): the eigenvalues alpha\_1, ..., alpha\_\{2g} of pi\_X^* on H^1(X\_kbar, Q\_ell) are algebraic integers, being the reciprocal roots of the integral numerator of the zeta function, of constant coefficient 1”.
 
 > **Tag 03V8, part (2), integrality.** The eigenvalues `α_1, …, α_{2g}` of `π_X^*` on
 > `H¹(X_k̄, ℚ_ℓ)` are algebraic integers.
@@ -69,7 +70,7 @@ theorem LAdicSheaf.isIntegral_curveEigenvalue_of_smoothProjectiveCurve (hℓp : 
     (i : Fin (2 * genus f)) : IsIntegral ℤ (α i)
 ```
 
-**`Stacks.EtaleCohomology.LAdicSheaf.natCard_fieldValuedPoints_eq_one_sub_sum_add_of_smoothProjectiveCurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/ConstantSheafCurveCohomological.lean, line 264](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/ConstantSheafCurveCohomological.lean#L264). The attribute's comment: “part (3): #X(k\_n) = 1 - sum\_\{i=1}^\{2g} alpha\_i^n + q^n for every extension k\_n of k of degree n >= 1, alpha\_i the eigenvalues of pi\_X^* on H^1(X\_kbar, Q\_ell)”.
+**`Stacks.EtaleCohomology.LAdicSheaf.natCard_fieldValuedPoints_eq_one_sub_sum_add_of_smoothProjectiveCurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/ConstantSheafCurveCohomological.lean, line 269](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/ConstantSheafCurveCohomological.lean#L269). The attribute's comment: “part (3): #X(k\_n) = 1 - sum\_\{i=1}^\{2g} alpha\_i^n + q^n for every extension k\_n of k of degree n >= 1, alpha\_i the eigenvalues of pi\_X^* on H^1(X\_kbar, Q\_ell)”.
 
 > **Tag 03V8, part (3).** The number of points of `X` with values in an extension `k_n` of `k` of
 > degree `n ≥ 1` is `#X(k_n) = 1 - ∑_{i=1}^{2g} α_i^n + q^n`, `α_i` the eigenvalues of `π_X^*` on
@@ -92,7 +93,7 @@ theorem LAdicSheaf.natCard_fieldValuedPoints_eq_one_sub_sum_add_of_smoothProject
     (Nat.card (fieldValuedPoints f K) : Ω) = 1 - ∑ i, α i ^ n + (Fintype.card k : Ω) ^ n
 ```
 
-**`Stacks.EtaleCohomology.LAdicSheaf.norm_curveEigenvalue_lt_of_smoothProjectiveCurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/ConstantSheafCurveCohomological.lean, line 319](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/ConstantSheafCurveCohomological.lean#L319). The attribute's comment: “part (4): |alpha\_i| < q for every eigenvalue alpha\_i of pi\_X^* on H^1(X\_kbar, Q\_ell) read in C; it follows from the Riemann hypothesis |alpha\_i| = sqrt q, which the source states right after the lemma”.
+**`Stacks.EtaleCohomology.LAdicSheaf.norm_curveEigenvalue_lt_of_smoothProjectiveCurve`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/ConstantSheafCurveCohomological.lean, line 324](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/Trace/ConstantSheafCurveCohomological.lean#L324). The attribute's comment: “part (4): |alpha\_i| < q for every eigenvalue alpha\_i of pi\_X^* on H^1(X\_kbar, Q\_ell) read in C; it follows from the Riemann hypothesis |alpha\_i| = sqrt q, which the source states right after the lemma”.
 
 > **Tag 03V8, part (4).** Every eigenvalue `α_i` of `π_X^*` on `H¹(X_k̄, ℚ_ℓ)`, read in `ℂ` along
 > a ring map `ℚ_ℓ → ℂ`, has `|α_i| < q`.
@@ -115,7 +116,7 @@ theorem LAdicSheaf.norm_curveEigenvalue_lt_of_smoothProjectiveCurve (hℓp : ℓ
 
 [Tag 03V9](https://stacks.math.columbia.edu/tag/03V9) in the Stacks Project.
 
-**`Stacks.TraceFormula.exists_pow_mem_sector`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/NumberTheory/TraceFormula/SimultaneousPowersSector.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/NumberTheory/TraceFormula/SimultaneousPowersSector.lean#L110).
+**`Stacks.TraceFormula.exists_pow_mem_sector`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/NumberTheory/TraceFormula/SimultaneousPowersSector.lean, line 108](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/NumberTheory/TraceFormula/SimultaneousPowersSector.lean#L108).
 
 > **Exercise 03V9.** For complex numbers `α 1, …, α n` and a conic sector
 > `C_ε = {z | |arg z| < ε}` with `ε > 0` about the positive real axis, there is an integer `k ≥ 1`
@@ -133,4 +134,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 64.23, Tag 03V7](https://stacks.math.columbia.edu/tag/03V7)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 68.13 Reduced singleton spaces
 
-Section 68.13 of the Stacks Project, [Tag 06QU](https://stacks.math.columbia.edu/tag/06QU). 12 tags here are carried by 23 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 68.13 of the Stacks Project, [Tag 06QU](https://stacks.math.columbia.edu/tag/06QU). 12 tags here are carried by 23 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 06QV, a lemma
 
 [Tag 06QV](https://stacks.math.columbia.edu/tag/06QV) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isSurjective_of_fieldCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatFieldCover.lean, line 241](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FlatFieldCover.lean#L241). The attribute's comment: “surjectivity”.
+**`AlgebraicGeometry.Space.isSurjective_of_fieldCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatFieldCover.lean, line 241](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FlatFieldCover.lean#L241). The attribute's comment: “surjectivity”.
 
 > **Stacks 06QV**, surjectivity. If an algebraic space over `S` receives a surjective
 > morphism from the spectrum of a field, then every morphism to it from the spectrum of a field
@@ -36,7 +36,7 @@ theorem isSurjective_of_fieldCover
     IsSurjective B S hS g
 ```
 
-**`AlgebraicGeometry.Space.isFlat_of_fieldCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatFieldCover.lean, line 267](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FlatFieldCover.lean#L267). The attribute's comment: “flatness”.
+**`AlgebraicGeometry.Space.isFlat_of_fieldCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatFieldCover.lean, line 267](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FlatFieldCover.lean#L267). The attribute's comment: “flatness”.
 
 > **Stacks 06QV**, flatness. If an algebraic space over `S` receives a surjective flat
 > morphism from the spectrum of a field, then every morphism to it from the spectrum of a field
@@ -65,7 +65,7 @@ theorem isFlat_of_fieldCover
 
 [Tag 06QW](https://stacks.math.columbia.edu/tag/06QW) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isReduced_and_singleton_points_iff_hasFlatFieldCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReducedSingleton.lean, line 315](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReducedSingleton.lean#L315). The attribute's comment: “conditions (1) and (2)”.
+**`AlgebraicGeometry.Space.isReduced_and_singleton_points_iff_hasFlatFieldCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReducedSingleton.lean, line 315](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReducedSingleton.lean#L315). The attribute's comment: “conditions (1) and (2)”.
 
 > **Stacks 06QW**, conditions (1) and (2).  A reduced algebraic space over `S` has exactly
 > one point if and only if it admits a surjective flat morphism from the spectrum of a field.
@@ -78,7 +78,7 @@ theorem isReduced_and_singleton_points_iff_hasFlatFieldCover
         HasFlatFieldCover B S hS F
 ```
 
-**`AlgebraicGeometry.Space.hasFlatFieldCover_iff_hasLocallyOfFiniteTypeFlatFieldCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReducedSingleton.lean, line 405](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReducedSingleton.lean#L405). The attribute's comment: “conditions (2) and (3)”.
+**`AlgebraicGeometry.Space.hasFlatFieldCover_iff_hasLocallyOfFiniteTypeFlatFieldCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReducedSingleton.lean, line 405](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReducedSingleton.lean#L405). The attribute's comment: “conditions (2) and (3)”.
 
 > **Stacks 06QW**, conditions (2) and (3).  A surjective flat morphism to an algebraic space
 > over `S` from the spectrum of a field may be replaced by one that is in addition locally of
@@ -94,7 +94,7 @@ theorem hasFlatFieldCover_iff_hasLocallyOfFiniteTypeFlatFieldCover
 
 [Tag 06QX](https://stacks.math.columbia.edu/tag/06QX) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isReduced_locallyNoetherian_singleton_iff_hasFinitePresentationCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReducedSingleton.lean, line 538](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReducedSingleton.lean#L538).
+**`AlgebraicGeometry.Space.isReduced_locallyNoetherian_singleton_iff_hasFinitePresentationCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReducedSingleton.lean, line 538](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReducedSingleton.lean#L538).
 
 > **Stacks 06QX.** A reduced, locally Noetherian algebraic space over `S` has exactly one
 > point if and only if it admits a flat, surjective, locally finitely presented morphism from the
@@ -113,7 +113,7 @@ theorem isReduced_locallyNoetherian_singleton_iff_hasFinitePresentationCover
 
 [Tag 06QY](https://stacks.math.columbia.edu/tag/06QY) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isEmpty_points_or_isIso_of_mono_of_hasFinitePresentationCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReducedSingleton.lean, line 650](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReducedSingleton.lean#L650).
+**`AlgebraicGeometry.Space.isEmpty_points_or_isIso_of_mono_of_hasFinitePresentationCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReducedSingleton.lean, line 650](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReducedSingleton.lean#L650).
 
 > **Stacks 06QY.** Let `f : Z' ⟶ Z` be a monomorphism of algebraic spaces over `S`, and
 > suppose `Z` admits a surjective, flat, locally finitely presented morphism from the spectrum of
@@ -131,7 +131,7 @@ theorem isEmpty_points_or_isIso_of_mono_of_hasFinitePresentationCover
 
 [Tag 06QZ](https://stacks.math.columbia.edu/tag/06QZ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isResidualSpaceAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ResidualSpaceExistence.lean, line 1177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ResidualSpaceExistence.lean#L1177). The attribute's comment: “existence”.
+**`AlgebraicGeometry.Space.exists_isResidualSpaceAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ResidualSpaceExistence.lean, line 1177](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ResidualSpaceExistence.lean#L1177). The attribute's comment: “existence”.
 
 > **Stacks 06QZ, existence.** Every point of an algebraic space carries a residual space:
 > a monomorphism from a reduced, locally Noetherian algebraic space with exactly one point,
@@ -144,7 +144,7 @@ theorem exists_isResidualSpaceAt (hXalg : IsAlgebraicSpace B S hS X)
       IsResidualSpaceAt B S hS X x f
 ```
 
-**`AlgebraicGeometry.Space.existsUnique_isResidualSpaceAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ResidualSpaceUniqueness.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ResidualSpaceUniqueness.lean#L104).
+**`AlgebraicGeometry.Space.existsUnique_isResidualSpaceAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ResidualSpaceUniqueness.lean, line 105](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ResidualSpaceUniqueness.lean#L105).
 
 > Every point `x` of an algebraic space `X` over `S` has a unique residual space: there is a
 > monomorphism `Z ⟶ X` with `Z` a reduced, locally Noetherian algebraic space whose point set is
@@ -163,7 +163,7 @@ theorem existsUnique_isResidualSpaceAt (hX : IsAlgebraicSpace B S hS X)
 
 [Tag 06R0](https://stacks.math.columbia.edu/tag/06R0) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsResidualSpaceAt`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReducedSingleton.lean, line 698](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReducedSingleton.lean#L698).
+**`AlgebraicGeometry.Space.IsResidualSpaceAt`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReducedSingleton.lean, line 698](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReducedSingleton.lean#L698).
 
 > **Stacks 06R0.** A monomorphism `f : Z ⟶ X` of algebraic spaces over `S` exhibits `Z` as
 > a *residual space* of `X` at a point `x` of `|X|` when `Z` is reduced and locally Noetherian,
@@ -179,7 +179,7 @@ def IsResidualSpaceAt (X : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u) (x : points B 
 
 [Tag 0H1R](https://stacks.math.columbia.edu/tag/0H1R) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isIso_fieldMorphism_iff_hasMonomorphicFieldRepresentative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ResidualSpaceFieldSpectrum.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ResidualSpaceFieldSpectrum.lean#L108). The attribute's comment: “the equivalence at a point”.
+**`AlgebraicGeometry.Space.exists_isIso_fieldMorphism_iff_hasMonomorphicFieldRepresentative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ResidualSpaceFieldSpectrum.lean, line 108](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ResidualSpaceFieldSpectrum.lean#L108). The attribute's comment: “the equivalence at a point”.
 
 > **Stacks 0H1R**, the equivalence at a point. Let `X` be an algebraic space over `S`, let `x`
 > be a point of `|X|` and let `f : Z ⟶ X` be a residual space of `X` at `x`. Then `Z` is the
@@ -206,7 +206,7 @@ theorem exists_isIso_fieldMorphism_iff_hasMonomorphicFieldRepresentative
       HasMonomorphicFieldRepresentative B S hS X x
 ```
 
-**`AlgebraicGeometry.Space.exists_isIso_fieldMorphism_of_isDecentSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ResidualSpaceFieldSpectrum.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ResidualSpaceFieldSpectrum.lean#L163). The attribute's comment: “the assertion for a decent algebraic space”.
+**`AlgebraicGeometry.Space.exists_isIso_fieldMorphism_of_isDecentSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ResidualSpaceFieldSpectrum.lean, line 163](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ResidualSpaceFieldSpectrum.lean#L163). The attribute's comment: “the assertion for a decent algebraic space”.
 
 > **Stacks 0H1R**, the assertion for a decent algebraic space: every residual space of a
 > decent algebraic space over `S` is the spectrum of a field.
@@ -227,7 +227,7 @@ theorem exists_isIso_fieldMorphism_of_isDecentSpace (hX : IsAlgebraicSpace B S h
 
 [Tag 06R1](https://stacks.math.columbia.edu/tag/06R1) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.hasEtaleLocalProperty_isRegular_of_isReduced_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReducedSingleton.lean, line 567](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReducedSingleton.lean#L567).
+**`AlgebraicGeometry.Space.hasEtaleLocalProperty_isRegular_of_isReduced_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReducedSingleton.lean, line 567](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReducedSingleton.lean#L567).
 
 > **Stacks 06R1.** A reduced, locally Noetherian algebraic space over `S` with exactly one
 > point is regular.
@@ -245,7 +245,7 @@ theorem hasEtaleLocalProperty_isRegular_of_isReduced_of_isLocallyNoetherian
 
 [Tag 0H1S](https://stacks.math.columbia.edu/tag/0H1S) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.existsUnique_comp_eq_of_isResidualSpaceAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReducedToResidualSpaceFactorization.lean, line 351](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReducedToResidualSpaceFactorization.lean#L351). The attribute's comment: “the factorization through a given residual space at the point”.
+**`AlgebraicGeometry.Space.existsUnique_comp_eq_of_isResidualSpaceAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReducedToResidualSpaceFactorization.lean, line 351](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReducedToResidualSpaceFactorization.lean#L351). The attribute's comment: “the factorization through a given residual space at the point”.
 
 > **A morphism from a reduced space with image one point of a locally Noetherian space factors
 > through every residual space at that point.** Let `S` be a scheme, let `f : Y ⟶ X` be a morphism of
@@ -264,7 +264,7 @@ theorem existsUnique_comp_eq_of_isResidualSpaceAt
     ∃! g : Y ⟶ Z, g ≫ i = f
 ```
 
-**`AlgebraicGeometry.Space.exists_isResidualSpaceAt_and_existsUnique_comp_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReducedToResidualSpaceFactorization.lean, line 415](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReducedToResidualSpaceFactorization.lean#L415).
+**`AlgebraicGeometry.Space.exists_isResidualSpaceAt_and_existsUnique_comp_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReducedToResidualSpaceFactorization.lean, line 415](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReducedToResidualSpaceFactorization.lean#L415).
 
 > **A morphism from a reduced space with image one point of a locally Noetherian space factors
 > through a residual space.** Let `f : Y ⟶ X` be a morphism of algebraic spaces whose image in `|X|`
@@ -286,7 +286,7 @@ theorem exists_isResidualSpaceAt_and_existsUnique_comp_eq
 
 [Tag 0H1T](https://stacks.math.columbia.edu/tag/0H1T) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isResidualSpaceAt_fieldMorphism_of_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ResidualSpaceFactorization.lean, line 305](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ResidualSpaceFactorization.lean#L305). The attribute's comment: “the residual space at the point is the spectrum of the field of hypothesis (3)”.
+**`AlgebraicGeometry.Space.isResidualSpaceAt_fieldMorphism_of_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ResidualSpaceFactorization.lean, line 305](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ResidualSpaceFactorization.lean#L305). The attribute's comment: “the residual space at the point is the spectrum of the field of hypothesis (3)”.
 
 > The morphism presented by a monomorphic field-valued representative of a point `x` of an
 > algebraic space `X` over `S` exhibits the spectrum of its field as a residual space of `X`
@@ -303,7 +303,7 @@ theorem isResidualSpaceAt_fieldMorphism_of_mono
     IsResidualSpaceAt B S hS X x (fieldMorphism B S hS X p)
 ```
 
-**`AlgebraicGeometry.Space.exists_comp_fieldMorphism_eq_of_range_pointsMap_subset_singleton`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ResidualSpaceFactorization.lean, line 340](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ResidualSpaceFactorization.lean#L340).
+**`AlgebraicGeometry.Space.exists_comp_fieldMorphism_eq_of_range_pointsMap_subset_singleton`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ResidualSpaceFactorization.lean, line 340](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ResidualSpaceFactorization.lean#L340).
 
 > **Stacks 0H1T.** Let `f : Y ⟶ X` be a morphism of algebraic spaces over `S` and let `x` be
 > a point of `|X|`. Assume that the image of `|Y|` in `|X|` is contained in `{x}`, that `Y` is
@@ -332,7 +332,7 @@ theorem exists_comp_fieldMorphism_eq_of_range_pointsMap_subset_singleton
       g ≫ fieldMorphism B S hS X p = f
 ```
 
-**`AlgebraicGeometry.Space.exists_isResidualSpaceAt_comp_fieldMorphism_eq_of_isDecentSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ResidualSpaceFactorization.lean, line 475](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ResidualSpaceFactorization.lean#L475). The attribute's comment: “hypothesis (3) supplied by decency of the target”.
+**`AlgebraicGeometry.Space.exists_isResidualSpaceAt_comp_fieldMorphism_eq_of_isDecentSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ResidualSpaceFactorization.lean, line 475](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ResidualSpaceFactorization.lean#L475). The attribute's comment: “hypothesis (3) supplied by decency of the target”.
 
 > **Stacks 0H1T** with hypothesis (3) supplied by its parenthetical: for a decent algebraic
 > space `X` over `S`, a morphism `f : Y ⟶ X` from a reduced algebraic space whose image on
@@ -359,7 +359,7 @@ theorem exists_isResidualSpaceAt_comp_fieldMorphism_eq_of_isDecentSpace
 
 [Tag 0H2Y](https://stacks.math.columbia.edu/tag/0H2Y) in the Stacks Project.
 
-**`AlgebraicGeometry.ProfiniteTranslation.not_exists_comp_orbitMap_eq_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ProfiniteTranslationNoFieldFactorization.lean, line 935](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ProfiniteTranslationNoFieldFactorization.lean#L935). The attribute's comment: “the orbit map of the origin has no section”.
+**`AlgebraicGeometry.ProfiniteTranslation.not_exists_comp_orbitMap_eq_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ProfiniteTranslationNoFieldFactorization.lean, line 949](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ProfiniteTranslationNoFieldFactorization.lean#L949). The attribute's comment: “the orbit map of the origin has no section”.
 
 > **The orbit map of the origin admits no section.** For an infinite profinite group `G` and a
 > field `k`, the orbit map of the origin from the discrete `k`-scheme `Γ = ∐_{g ∈ G} Spec k` to the
@@ -372,7 +372,7 @@ theorem not_exists_comp_orbitMap_eq_id [Group G] [IsTopologicalGroup G]
         s ≫ orbitMap k G = 𝟙 _
 ```
 
-**`AlgebraicGeometry.Space.not_isLocallyNoetherian_and_not_isDecentSpace_of_not_exists_section`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ProfiniteTranslationNoFieldFactorization.lean, line 1093](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ProfiniteTranslationNoFieldFactorization.lean#L1093). The attribute's comment: “the one-point algebraic space and the non-factorization”.
+**`AlgebraicGeometry.Space.not_isLocallyNoetherian_and_not_isDecentSpace_of_not_exists_section`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ProfiniteTranslationNoFieldFactorization.lean, line 1109](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ProfiniteTranslationNoFieldFactorization.lean#L1109). The attribute's comment: “the one-point algebraic space and the non-factorization”.
 
 > **The one-point quotient of an infinite profinite group by translation.** Let `k` be a field
 > and let `G` be an infinite profinite group. Let `Y = Spec (LocallyConstant G k)` be `G` as a
@@ -396,7 +396,7 @@ theorem not_isLocallyNoetherian_and_not_isDecentSpace_of_not_exists_section :
         g ≫ fieldMorphism B (Spec (.of k)) hS _ p ≠ profiniteQuotientMap k G B hS hY
 ```
 
-**`AlgebraicGeometry.Space.not_isLocallyNoetherian_and_not_isDecentSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ProfiniteTranslationNoFieldFactorization.lean, line 1145](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ProfiniteTranslationNoFieldFactorization.lean#L1145). The attribute's comment: “the conclusion for the quotient of a profinite group by translation”.
+**`AlgebraicGeometry.Space.not_isLocallyNoetherian_and_not_isDecentSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ProfiniteTranslationNoFieldFactorization.lean, line 1161](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ProfiniteTranslationNoFieldFactorization.lean#L1161). The attribute's comment: “the conclusion for the quotient of a profinite group by translation”.
 
 > **The quotient of an infinite profinite group by translation is neither locally Noetherian nor
 > decent.** For the quotient `X = Y/Γ` of the previous theorem, the conclusion of Stacks 0H1S and of
@@ -419,7 +419,7 @@ theorem not_isLocallyNoetherian_and_not_isDecentSpace :
 
 [Tag 0H1U](https://stacks.math.columbia.edu/tag/0H1U) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isClosed_singleton_iff_isClosedImmersion_of_isResidualSpaceAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReducedSingleton.lean, line 762](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReducedSingleton.lean#L762).
+**`AlgebraicGeometry.Space.isClosed_singleton_iff_isClosedImmersion_of_isResidualSpaceAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReducedSingleton.lean, line 762](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReducedSingleton.lean#L762).
 
 > **Stacks Project, Tag 0H1U.** Let `S` be a scheme, let `X` be an algebraic space over `S`
 > which is locally Noetherian, let `x` be a point of `|X|`, and let `f : Z ⟶ X` be a residual
@@ -437,7 +437,7 @@ theorem isClosed_singleton_iff_isClosedImmersion_of_isResidualSpaceAt
     _root_.IsClosed ({x} : Set (points B S hS X)) ↔ IsClosedImmersion B S hS f
 ```
 
-**`AlgebraicGeometry.Space.isClosed_singleton_iff_exists_isResidualSpaceAt_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReducedSingleton.lean, line 790](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReducedSingleton.lean#L790). The attribute's comment: “the equivalence through the existence of a residual space”.
+**`AlgebraicGeometry.Space.isClosed_singleton_iff_exists_isResidualSpaceAt_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReducedSingleton.lean, line 790](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ReducedSingleton.lean#L790). The attribute's comment: “the equivalence through the existence of a residual space”.
 
 > **Stacks Project, Tag 0H1U**, phrased so as not to refer to the uniqueness of the residual
 > space: a point `x` of the point set of a locally Noetherian algebraic space `X` over `S` is
@@ -453,7 +453,7 @@ theorem isClosed_singleton_iff_exists_isResidualSpaceAt_isClosedImmersion
         IsResidualSpaceAt B S hS X x f ∧ IsClosedImmersion B S hS f
 ```
 
-**`AlgebraicGeometry.Space.IsResidualSpaceAt.isClosed_singleton_iff_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ResidualSpaceClosedPoint.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ResidualSpaceClosedPoint.lean#L78). The attribute's comment: “stated for any residual space of `X` at `x`”.
+**`AlgebraicGeometry.Space.IsResidualSpaceAt.isClosed_singleton_iff_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ResidualSpaceClosedPoint.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ResidualSpaceClosedPoint.lean#L78). The attribute's comment: “stated for any residual space of `X` at `x`”.
 
 > **Stacks Project, Tag 0H1U.** Let `S` be a scheme, let `X` be an algebraic space over `S`
 > which is locally Noetherian, let `x` be a point of `|X|`, and let `f : Z ⟶ X` be a residual
@@ -482,4 +482,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 68.13, Tag 06QU](https://stacks.math.columbia.edu/tag/06QU)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

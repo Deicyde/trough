@@ -8,13 +8,13 @@ proof: formalized
 
 # 64.12 Characterizing perfect objects
 
-Section 64.12 of the Stacks Project, [Tag 03TM](https://stacks.math.columbia.edu/tag/03TM). 2 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 64.12 of the Stacks Project, [Tag 03TM](https://stacks.math.columbia.edu/tag/03TM). 2 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 03TN, a definition
 
 [Tag 03TN](https://stacks.math.columbia.edu/tag/03TN) in the Stacks Project.
 
-**`StacksDraft.Perfect.HasFiniteTorDimensionCanonical`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/BalancedDerivedTensor.lean, line 627](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Perfect/BalancedDerivedTensor.lean#L627). References: SGA 4½ Rapport (4.5), “finite tor dimension”.
+**`StacksDraft.Perfect.HasFiniteTorDimensionCanonical`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/BalancedDerivedTensor.lean, line 764](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Perfect/BalancedDerivedTensor.lean#L764). References: SGA 4½ Rapport (4.5), “finite tor dimension”.
 
 > An object `K` of `D(Λ)` has *finite Tor dimension* if there are integers `a, b` such that
 > `Hⁱ(N ⊗ᴸ[Λ] K) = 0` for every right `Λ`-module `N` and every `i ∉ [a, b]`. This is the definition
@@ -26,7 +26,7 @@ Section 64.12 of the Stacks Project, [Tag 03TM](https://stacks.math.columbia.edu
 def HasFiniteTorDimensionCanonical [Small.{v} Λ] (K : DerivedCategory (ModuleCat.{v} Λ)) : Prop
 ```
 
-**`StacksDraft.Perfect.HasFiniteTorDimension`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/FiniteTorDimension.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Perfect/FiniteTorDimension.lean#L109). References: SGA 4½ Rapport (4.5), “finite tor dimension”.
+**`StacksDraft.Perfect.HasFiniteTorDimension`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/FiniteTorDimension.lean, line 109](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Perfect/FiniteTorDimension.lean#L109). References: SGA 4½ Rapport (4.5), “finite tor dimension”.
 
 > An object `K` of `D(Λ)` has *finite Tor dimension* if there are integers `a, b` such that
 > `Hⁱ(N ⊗ᴸ[Λ] K) = 0` for every right `Λ`-module `N` and every `i ∉ [a, b]`.
@@ -40,7 +40,7 @@ def HasFiniteTorDimension {Λ : Type u} [Ring Λ] (D : BalancedDerivedTensoring.
 
 [Tag 03TO](https://stacks.math.columbia.edu/tag/03TO) in the Stacks Project.
 
-**`StacksDraft.Perfect.isPerfect_iff_hasFiniteTorDimension_balancedDerivedTensoring`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/BalancedDerivedTensor.lean, line 642](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Perfect/BalancedDerivedTensor.lean#L642). References: SGA 5 VIII (8.1), “Noetherian case”; SGA 4½ Rapport (4.5.1).
+**`StacksDraft.Perfect.isPerfect_iff_hasFiniteTorDimension_balancedDerivedTensoring`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/BalancedDerivedTensor.lean, line 779](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Perfect/BalancedDerivedTensor.lean#L779). References: SGA 5 VIII (8.1), “Noetherian case”; SGA 4½ Rapport (4.5.1).
 
 > Let `Λ` be a left Noetherian ring and let `K` be an object of `D(Λ)`. Then `K` is perfect if
 > and only if `K` has finite Tor dimension and `Hⁱ(K)` is a finite `Λ`-module for every `i`. This is
@@ -56,7 +56,7 @@ theorem isPerfect_iff_hasFiniteTorDimension_balancedDerivedTensoring
           Module.Finite Λ ((DerivedCategory.homologyFunctor (ModuleCat.{v} Λ) i).obj K))
 ```
 
-**`StacksDraft.Perfect.isPerfect_iff_hasFiniteTorDimension_and_finite_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/FiniteTorDimension.lean, line 707](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Perfect/FiniteTorDimension.lean#L707). References: SGA 5 VIII (8.1), “Noetherian case”; SGA 4½ Rapport (4.5.1).
+**`StacksDraft.Perfect.isPerfect_iff_hasFiniteTorDimension_and_finite_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Perfect/FiniteTorDimension.lean, line 707](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Perfect/FiniteTorDimension.lean#L707). References: SGA 5 VIII (8.1), “Noetherian case”; SGA 4½ Rapport (4.5.1).
 
 > Let `Λ` be a left Noetherian ring and let `K` be an object of `D(Λ)`. Then `K` is perfect if
 > and only if `K` has finite Tor dimension and `Hⁱ(K)` is a finite `Λ`-module for every `i`.
@@ -78,4 +78,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 64.12, Tag 03TM](https://stacks.math.columbia.edu/tag/03TM)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 66.27 Étale localization
 
-Section 66.27 of the Stacks Project, [Tag 04LX](https://stacks.math.columbia.edu/tag/04LX). 9 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 66.27 of the Stacks Project, [Tag 04LX](https://stacks.math.columbia.edu/tag/04LX). 9 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 04LY, an equation
 
 [Tag 04LY](https://stacks.math.columbia.edu/tag/04LY) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.spacesEtaleLocalization`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleLocalization.lean, line 449](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleLocalization.lean#L449). The attribute's comment: “equivalence of categories”.
+**`AlgebraicGeometry.Space.spacesEtaleLocalization`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleLocalization.lean, line 449](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleLocalization.lean#L449). The attribute's comment: “equivalence of categories”.
 
 > **Stacks 04LY.** For an étale morphism `f : X ⟶ Y` of algebraic spaces, the spaces-étale
 > site of `X` is equivalent to the localization of the spaces-étale site of `Y` at the object
@@ -25,7 +25,7 @@ noncomputable def spacesEtaleLocalization :
     SpacesEtale B S hS X ≌ Over (etaleObject B S hS f hf)
 ```
 
-**`AlgebraicGeometry.Space.spacesEtaleLocalization_forget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleLocalization.lean, line 479](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleLocalization.lean#L479). The attribute's comment: “canonical identification”.
+**`AlgebraicGeometry.Space.spacesEtaleLocalization_forget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleLocalization.lean, line 479](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleLocalization.lean#L479). The attribute's comment: “canonical identification”.
 
 > **Stacks 04LY.** Under the localization equivalence an algebraic space étale over `X` is
 > unchanged, and its structure morphism to `Y` is the composite with `f`.
@@ -37,7 +37,7 @@ theorem spacesEtaleLocalization_forget :
       SpacesEtale.inclusion B S hS X ⋙ Over.map f
 ```
 
-**`AlgebraicGeometry.Space.spacesEtaleLocalization_slice`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleLocalization.lean, line 498](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleLocalization.lean#L498). The attribute's comment: “slice arrows”.
+**`AlgebraicGeometry.Space.spacesEtaleLocalization_slice`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleLocalization.lean, line 498](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleLocalization.lean#L498). The attribute's comment: “slice arrows”.
 
 > **Stacks 04LY.** The localization equivalence preserves the whole arrow to `X`, not only
 > its composite with `f`; this is what makes it canonical.
@@ -49,7 +49,7 @@ theorem spacesEtaleLocalization_slice :
       SpacesEtale.inclusion B S hS X
 ```
 
-**`AlgebraicGeometry.Space.spacesEtaleLocalization_isContinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleLocalization.lean, line 523](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleLocalization.lean#L523). The attribute's comment: “forward topology”.
+**`AlgebraicGeometry.Space.spacesEtaleLocalization_isContinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleLocalization.lean, line 523](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleLocalization.lean#L523). The attribute's comment: “forward topology”.
 
 > **Stacks 04LY.** The localization equivalence carries covering sieves of the spaces-étale
 > site of `X` to covering sieves of the slice topology.
@@ -61,7 +61,7 @@ theorem spacesEtaleLocalization_isContinuous :
       ((SpacesEtale.topology B S hS Y).over (etaleObject B S hS f hf))
 ```
 
-**`AlgebraicGeometry.Space.spacesEtaleLocalization_inverse_isContinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleLocalization.lean, line 549](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleLocalization.lean#L549). The attribute's comment: “inverse topology”.
+**`AlgebraicGeometry.Space.spacesEtaleLocalization_inverse_isContinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleLocalization.lean, line 549](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleLocalization.lean#L549). The attribute's comment: “inverse topology”.
 
 > **Stacks 04LY.** The inverse of the localization equivalence carries covering sieves of
 > the slice topology to covering sieves of the spaces-étale site of `X`.
@@ -77,7 +77,7 @@ theorem spacesEtaleLocalization_inverse_isContinuous :
 
 [Tag 04LZ](https://stacks.math.columbia.edu/tag/04LZ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.spacesEtaleLocalization_structureSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleStructureSheaf.lean, line 390](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleStructureSheaf.lean#L390). The attribute's comment: “the structure sheaves”.
+**`AlgebraicGeometry.Space.spacesEtaleLocalization_structureSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleStructureSheaf.lean, line 391](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleStructureSheaf.lean#L391). The attribute's comment: “the structure sheaves”.
 
 > **Stacks 04LZ.** For an étale morphism `f : X ⟶ Y` of algebraic spaces, the structure sheaf
 > of the spaces-étale site of `X` is the restriction of the structure sheaf of `Y` along the
@@ -92,7 +92,7 @@ theorem spacesEtaleLocalization_structureSheaf :
       SpacesEtale.structureSheaf B S hS X
 ```
 
-**`AlgebraicGeometry.Space.spacesEtaleLocalizationRingedHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleStructureSheaf.lean, line 406](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleStructureSheaf.lean#L406). The attribute's comment: “the identification of ringed sites”.
+**`AlgebraicGeometry.Space.spacesEtaleLocalizationRingedHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleStructureSheaf.lean, line 407](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleStructureSheaf.lean#L407). The attribute's comment: “the identification of ringed sites”.
 
 > **Stacks 04LZ.** For an étale morphism `f : X ⟶ Y` of algebraic spaces, the ringed site
 > `(X_{spaces,étale}, 𝒪_X)` is the localized ringed site
@@ -109,7 +109,7 @@ noncomputable def spacesEtaleLocalizationRingedHom :
 
 [Tag 04M0](https://stacks.math.columbia.edu/tag/04M0) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.smallEtaleEquivalenceOverChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartEquivalence.lean, line 371](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartEquivalence.lean#L371).
+**`AlgebraicGeometry.Space.smallEtaleEquivalenceOverChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartEquivalence.lean, line 371](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartEquivalence.lean#L371).
 
 > **Stacks 04M0.** The small étale site of an étale scheme chart `X → F` is canonically the
 > localization of the small étale site of `F` at that chart. The equivalence preserves the entire
@@ -140,7 +140,7 @@ theorem smallEtaleEquivalenceOverChart
 
 [Tag 04M1](https://stacks.math.columbia.edu/tag/04M1) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.smallEtaleRingedEquivalenceOverChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleChartLocalization.lean, line 56](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EtaleChartLocalization.lean#L56).
+**`AlgebraicGeometry.Space.smallEtaleRingedEquivalenceOverChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleChartLocalization.lean, line 56](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EtaleChartLocalization.lean#L56).
 
 > The small étale ringed site of an étale scheme chart `X → Y` of an
 > algebraic space is the localization of the ringed small étale site of `Y` at that chart: the
@@ -165,7 +165,7 @@ theorem smallEtaleRingedEquivalenceOverChart
 
 [Tag 04M2](https://stacks.math.columbia.edu/tag/04M2) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.affineEtaleEquivalenceOverChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleChartLocalization.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EtaleChartLocalization.lean#L103).
+**`AlgebraicGeometry.Space.affineEtaleEquivalenceOverChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleChartLocalization.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EtaleChartLocalization.lean#L103).
 
 > The affine étale site of an affine étale chart `X → Y` of an algebraic
 > space is the localization of the affine étale site of `Y` at that chart, by an equivalence
@@ -187,7 +187,7 @@ theorem affineEtaleEquivalenceOverChart
 
 [Tag 04M3](https://stacks.math.columbia.edu/tag/04M3) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.affineEtaleRingedEquivalenceOverChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleChartLocalization.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EtaleChartLocalization.lean#L220).
+**`AlgebraicGeometry.Space.affineEtaleRingedEquivalenceOverChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtaleChartLocalization.lean, line 220](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EtaleChartLocalization.lean#L220).
 
 > The affine étale ringed site of an affine étale chart `X → Y` of an
 > algebraic space is the localization of the ringed affine étale site of `Y` at that chart: the
@@ -215,7 +215,7 @@ theorem affineEtaleRingedEquivalenceOverChart
 
 [Tag 04M4](https://stacks.math.columbia.edu/tag/04M4) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.spacesEtaleComparisonMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleRelocalization.lean, line 211](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleRelocalization.lean#L211). The attribute's comment: “the map `c : U ⟶ V ×_Y X` corresponding to `g`, and nothing else”.
+**`AlgebraicGeometry.Space.spacesEtaleComparisonMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleRelocalization.lean, line 211](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleRelocalization.lean#L211). The attribute's comment: “the map `c : U ⟶ V ×_Y X` corresponding to `g`, and nothing else”.
 
 > The map `c : U ⟶ V ×_Y X` corresponding to `g`, as an arrow of the spaces-étale site of
 > `X` from `U` to the cartesian base change of `V` along `f`.
@@ -226,7 +226,7 @@ noncomputable def spacesEtaleComparisonMap (hsq : g ≫ q = p ≫ f) :
       (spacesBaseChange B S hS f).functor.obj (etaleObject B S hS q hq)
 ```
 
-**`AlgebraicGeometry.Space.spacesEtaleRelocalizedTwoIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleRelocalization.lean, line 512](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleRelocalization.lean#L512). The attribute's comment: “the two morphisms of ringed topoi are 2-isomorphic, via the identifications of 04LZ read as the two vertical arrows of a commuting square”.
+**`AlgebraicGeometry.Space.spacesEtaleRelocalizedTwoIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleRelocalization.lean, line 512](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Topologies/SpacesEtaleRelocalization.lean#L512). The attribute's comment: “the two morphisms of ringed topoi are 2-isomorphic, via the identifications of 04LZ read as the two vertical arrows of a commuting square”.
 
 > Via the identifications of Stacks 04LZ for `U ⟶ X` and for `V ⟶ Y`, the morphism of ringed
 > topoi `(g_{spaces,étale}, g^♯)` is 2-isomorphic to the morphism `(f_{spaces,étale,c}, f_c^♯)` of
@@ -265,7 +265,7 @@ noncomputable def spacesEtaleRelocalizedTwoIso :
 
 [Tag 04M5](https://stacks.math.columbia.edu/tag/04M5) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.chartRelocalizedTwoIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartRelocalization.lean, line 294](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartRelocalization.lean#L294). The attribute's comment: “via the identifications of 04M1 at U and V, the morphism (g\_small, g^sharp) is 2-isomorphic to the morphism (f\_\{small,s}, f\_s^sharp) of 04J8 for the map s : h\_U -> f^\{-1}h\_V corresponding to g”.
+**`AlgebraicGeometry.Space.chartRelocalizedTwoIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartRelocalization.lean, line 294](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmallEtaleChartRelocalization.lean#L294). The attribute's comment: “via the identifications of 04M1 at U and V, the morphism (g\_small, g^sharp) is 2-isomorphic to the morphism (f\_\{small,s}, f\_s^sharp) of 04J8 for the map s : h\_U -> f^\{-1}h\_V corresponding to g”.
 
 > **Stacks 04M5.** Let `f : X ⟶ Y` be a morphism of algebraic spaces over `S`, let `U ⟶ X` and
 > `V ⟶ Y` be étale morphisms from schemes (objects of the small étale sites of `X` and `Y`) and let
@@ -287,7 +287,7 @@ noncomputable def chartRelocalizedTwoIso :
 
 [Tag 0GF6](https://stacks.math.columbia.edu/tag/0GF6) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.sheafGivesSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SheafGivesSpace.lean, line 205](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SheafGivesSpace.lean#L205).
+**`AlgebraicGeometry.Space.sheafGivesSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SheafGivesSpace.lean, line 205](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SheafGivesSpace.lean#L205).
 
 > Let `Y` be an algebraic space over `S` and `𝓕` a sheaf of sets on its small étale site,
 > satisfying the set-theoretic condition of the source's proof. Write `G` for the corresponding
@@ -333,4 +333,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 66.27, Tag 04LX](https://stacks.math.columbia.edu/tag/04LX)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

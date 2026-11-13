@@ -8,13 +8,13 @@ proof: formalized
 
 # 37.78 Completely decomposed morphisms
 
-Section 37.78 of the Stacks Project, [Tag 0GTH](https://stacks.math.columbia.edu/tag/0GTH). 5 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 37.78 of the Stacks Project, [Tag 0GTH](https://stacks.math.columbia.edu/tag/0GTH). 5 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0GTI, a definition
 
 [Tag 0GTI](https://stacks.math.columbia.edu/tag/0GTI) in the Stacks Project.
 
-**`AlgebraicGeometry.IsCompletelyDecomposed`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/CompletelyDecomposed.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/CompletelyDecomposed.lean#L59). The attribute's comment: “morphism”.
+**`AlgebraicGeometry.IsCompletelyDecomposed`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/CompletelyDecomposed.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/CompletelyDecomposed.lean#L59). The attribute's comment: “morphism”.
 
 > A morphism of schemes is **completely decomposed** if every point of the target is the
 > image of a point at which the induced map on residue fields is an isomorphism.
@@ -23,7 +23,7 @@ Section 37.78 of the Stacks Project, [Tag 0GTH](https://stacks.math.columbia.edu
 def IsCompletelyDecomposed {X Y : Scheme.{u}} (f : X ⟶ Y) : Prop
 ```
 
-**`AlgebraicGeometry.IsCompletelyDecomposedFamily`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/CompletelyDecomposed.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/CompletelyDecomposed.lean#L65). The attribute's comment: “family”.
+**`AlgebraicGeometry.IsCompletelyDecomposedFamily`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/CompletelyDecomposed.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/CompletelyDecomposed.lean#L65). The attribute's comment: “family”.
 
 > A family of morphisms of schemes with a common target is **completely decomposed** if the
 > induced morphism from the coproduct of the source schemes is completely decomposed.
@@ -37,7 +37,7 @@ def IsCompletelyDecomposedFamily {I : Type v} [Small.{u} I]
 
 [Tag 0GTJ](https://stacks.math.columbia.edu/tag/0GTJ) in the Stacks Project.
 
-**`AlgebraicGeometry.isCompletelyDecomposed_comp`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/CompletelyDecomposed.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/CompletelyDecomposed.lean#L120). The attribute's comment: “morphisms”.
+**`AlgebraicGeometry.isCompletelyDecomposed_comp`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/CompletelyDecomposed.lean, line 120](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/CompletelyDecomposed.lean#L120). The attribute's comment: “morphisms”.
 
 > The composite of two completely decomposed morphisms of
 > schemes is completely decomposed.
@@ -48,7 +48,7 @@ lemma isCompletelyDecomposed_comp {X Y Z : Scheme.{u}} (f : X ⟶ Y) (g : Y ⟶ 
     IsCompletelyDecomposed (f ≫ g)
 ```
 
-**`AlgebraicGeometry.isCompletelyDecomposedFamily_comp`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/CompletelyDecomposed.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/CompletelyDecomposed.lean#L132). The attribute's comment: “families”.
+**`AlgebraicGeometry.isCompletelyDecomposedFamily_comp`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/CompletelyDecomposed.lean, line 132](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/CompletelyDecomposed.lean#L132). The attribute's comment: “families”.
 
 > Composing a completely decomposed family with a completely
 > decomposed family over each of its sources gives a completely decomposed family indexed by the
@@ -68,7 +68,7 @@ lemma isCompletelyDecomposedFamily_comp {I : Type v} [Small.{u} I]
 
 [Tag 0GTK](https://stacks.math.columbia.edu/tag/0GTK) in the Stacks Project.
 
-**`AlgebraicGeometry.isCompletelyDecomposed_pullback`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/CompletelyDecomposed.lean, line 197](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/CompletelyDecomposed.lean#L197). The attribute's comment: “morphism”.
+**`AlgebraicGeometry.isCompletelyDecomposed_pullback`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/CompletelyDecomposed.lean, line 197](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/CompletelyDecomposed.lean#L197). The attribute's comment: “morphism”.
 
 > A completely decomposed morphism remains completely
 > decomposed after arbitrary base change.
@@ -80,7 +80,7 @@ lemma isCompletelyDecomposed_pullback
     IsCompletelyDecomposed (pullback.snd f g)
 ```
 
-**`AlgebraicGeometry.isCompletelyDecomposedFamily_pullback`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/CompletelyDecomposed.lean, line 208](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/CompletelyDecomposed.lean#L208). The attribute's comment: “family”.
+**`AlgebraicGeometry.isCompletelyDecomposedFamily_pullback`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/CompletelyDecomposed.lean, line 208](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/CompletelyDecomposed.lean#L208). The attribute's comment: “family”.
 
 > A completely decomposed family of morphisms remains completely decomposed after arbitrary
 > base change.
@@ -97,7 +97,7 @@ lemma isCompletelyDecomposedFamily_pullback
 
 [Tag 0GTL](https://stacks.math.columbia.edu/tag/0GTL) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_finite_immersion_cover_with_sections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/CompletelyDecomposed/FiniteCover.lean, line 299](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/CompletelyDecomposed/FiniteCover.lean#L299).
+**`AlgebraicGeometry.exists_finite_immersion_cover_with_sections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/CompletelyDecomposed/FiniteCover.lean, line 299](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/CompletelyDecomposed/FiniteCover.lean#L299).
 
 > A completely decomposed morphism locally of finite presentation over a
 > quasi-compact, quasi-separated base has a finite surjective cover by immersions
@@ -120,7 +120,7 @@ theorem exists_finite_immersion_cover_with_sections
 
 [Tag 0GTM](https://stacks.math.columbia.edu/tag/0GTM) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isCompletelyDecomposed_baseChange_of_limitBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/CompletelyDecomposed.lean, line 236](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/CompletelyDecomposed.lean#L236).
+**`AlgebraicGeometry.exists_isCompletelyDecomposed_baseChange_of_limitBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/CompletelyDecomposed.lean, line 236](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Limits/DescendingMorphisms/CompletelyDecomposed.lean#L236).
 
 > **Stacks Project, Tag 0GTM.** Let a scheme be the limit of a cofiltered inverse system of
 > schemes with affine transition morphisms, and let a locally finitely presented morphism over one
@@ -148,4 +148,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 37.78, Tag 0GTH](https://stacks.math.columbia.edu/tag/0GTH)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 42.16 Preparation for principal divisors
 
-Section 42.16 of the Stacks Project, [Tag 02RI](https://stacks.math.columbia.edu/tag/02RI). 2 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 42.16 of the Stacks Project, [Tag 02RI](https://stacks.math.columbia.edu/tag/02RI). 2 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 02RK, a lemma
 
 [Tag 02RK](https://stacks.math.columbia.edu/tag/02RK) in the Stacks Project.
 
-**`Stacks.Chow.exists_primeDivisor_iff_codimension_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/PrimeDivisorDimension.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/PrimeDivisorDimension.lean#L67). The attribute's comment: “prime\_divisor\_iff\_delta\_dimension”.
+**`Stacks.Chow.exists_primeDivisor_iff_codimension_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/PrimeDivisorDimension.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/PrimeDivisorDimension.lean#L67). The attribute's comment: “prime\_divisor\_iff\_delta\_dimension”.
 
 > **Stacks 02RK.** An integral closed subscheme of `X` is a prime divisor exactly when the
 > closure of its generic point has codimension one in `X`. This is the definition of a prime
@@ -27,7 +27,7 @@ theorem exists_primeDivisor_iff_codimension_one {X : Scheme.{u}} (I : X.IdealShe
       codimension (IrreducibleCloseds.closureSingleton (genericPointOf I hI)) = 1
 ```
 
-**`Stacks.Chow.codimension_one_iff_schemeDeltaDimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/PrimeDivisorDimension.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/PrimeDivisorDimension.lean#L98). The attribute's comment: “prime\_divisor\_iff\_delta\_dimension”.
+**`Stacks.Chow.codimension_one_iff_schemeDeltaDimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/PrimeDivisorDimension.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/PrimeDivisorDimension.lean#L98). The attribute's comment: “prime\_divisor\_iff\_delta\_dimension”.
 
 > **Stacks 02RK.** An integral closed subscheme of an integral scheme `X` locally of finite
 > type over the base has codimension one exactly when its delta-dimension is one less than that
@@ -41,7 +41,7 @@ theorem codimension_one_iff_schemeDeltaDimension (C : ChowSituation.{u}) {X : Sc
       schemeDeltaDimension C (I.subschemeι ≫ f) = schemeDeltaDimension C f + (-1 : ℤ)
 ```
 
-**`Stacks.Chow.deltaDimension_irreducibleComponent_isEffectiveCartierDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/PrimeDivisorDimension.lean, line 141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/PrimeDivisorDimension.lean#L141). The attribute's comment: “cartier\_component\_delta\_dimension”.
+**`Stacks.Chow.deltaDimension_irreducibleComponent_isEffectiveCartierDivisor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/PrimeDivisorDimension.lean, line 141](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/PrimeDivisorDimension.lean#L141). The attribute's comment: “cartier\_component\_delta\_dimension”.
 
 > **Stacks 02RK.** Every irreducible component of an effective Cartier divisor on an integral
 > scheme locally of finite type over the base has delta-dimension one less than the ambient
@@ -65,7 +65,7 @@ theorem deltaDimension_irreducibleComponent_isEffectiveCartierDivisor (C : ChowS
 
 [Tag 02RM](https://stacks.math.columbia.edu/tag/02RM) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isFinite_morphismRestrict_of_module_finite_functionField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctionField/ProperFiniteCodimensionOne.lean, line 52](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FunctionField/ProperFiniteCodimensionOne.lean#L52).
+**`AlgebraicGeometry.exists_isFinite_morphismRestrict_of_module_finite_functionField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FunctionField/ProperFiniteCodimensionOne.lean, line 52](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FunctionField/ProperFiniteCodimensionOne.lean#L52).
 
 > **Stacks Project, Tag 02RM.** Let `f : X ⟶ Y` be a morphism of schemes and `ξ` a point of
 > `Y`. Assume that `X` and `Y` are integral, that `Y` is locally Noetherian, that `f` is proper and
@@ -89,4 +89,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 42.16, Tag 02RI](https://stacks.math.columbia.edu/tag/02RI)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

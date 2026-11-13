@@ -8,13 +8,13 @@ proof: formalized
 
 # 36.17 Compact and perfect objects
 
-Section 36.17 of the Stacks Project, [Tag 09M0](https://stacks.math.columbia.edu/tag/09M0). 5 tags here are carried by 13 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 36.17 of the Stacks Project, [Tag 09M0](https://stacks.math.columbia.edu/tag/09M0). 5 tags here are carried by 13 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 09M1, a proposition
 
 [Tag 09M1](https://stacks.math.columbia.edu/tag/09M1) in the Stacks Project.
 
-**`Stacks.Duality.isCompactObject_iff_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CompactGeneration/CompactPerfect.lean, line 661](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/CompactGeneration/CompactPerfect.lean#L661).
+**`Stacks.Duality.isCompactObject_iff_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CompactGeneration/CompactPerfect.lean, line 661](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/CompactGeneration/CompactPerfect.lean#L661).
 
 > **[Stacks, Tag 09M1].** On a quasi-compact quasi-separated scheme `X`, an object of
 > `D_QCoh(𝒪_X)` is compact if and only if it is a perfect object of `D(𝒪_X)`, in any model of
@@ -27,7 +27,7 @@ theorem _root_.Stacks.Duality.isCompactObject_iff_isPerfect {X : Scheme.{u}} [Co
     IsCompactObject.{u} K ↔ @Stacks.Cohomology.PerfectComplexes.IsPerfect X.toRingedSpace h K.obj
 ```
 
-**`Stacks.Duality.isCompactObject_eq_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CompactGeneration/CompactPerfectTag.lean, line 48](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/CompactGeneration/CompactPerfectTag.lean#L48).
+**`Stacks.Duality.isCompactObject_eq_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CompactGeneration/CompactPerfectTag.lean, line 48](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/CompactGeneration/CompactPerfectTag.lean#L48).
 
 > **[Stacks, Tag 09M1].** Let `X` be a quasi-compact and quasi-separated scheme. An object of
 > `D_QCoh(𝒪_X)` is compact if and only if it is perfect: the compact objects of `D_QCoh(𝒪_X)` are
@@ -40,7 +40,7 @@ theorem isCompactObject_eq_isPerfect (X : Scheme.{u}) [CompactSpace X] [QuasiSep
       fun K => @Stacks.Cohomology.PerfectComplexes.IsPerfect X.toRingedSpace h K.obj
 ```
 
-**`Stacks.Duality.PerfectCompact.isCompactObject_iff_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CompactGeneration/PerfectIsCompactCover.lean, line 311](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/CompactGeneration/PerfectIsCompactCover.lean#L311).
+**`Stacks.Duality.PerfectCompact.isCompactObject_iff_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CompactGeneration/PerfectIsCompactCover.lean, line 311](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/CompactGeneration/PerfectIsCompactCover.lean#L311).
 
 > Let `X` be a quasi-compact and quasi-separated scheme. An object of `D_QCoh(𝒪_X)` is compact
 > if and only if it is perfect.
@@ -51,7 +51,7 @@ theorem isCompactObject_iff_isPerfect (X : Scheme.{u}) [CompactSpace X] [QuasiSe
     IsCompactObject.{u} K ↔ RingedSpace.IsPerfect (X := X.toRingedSpace) K.obj
 ```
 
-**`AlgebraicGeometry.isCompactObject_iff_isPerfect_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/QuasiCoherentDerived/CompactAndPerfect.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/QuasiCoherentDerived/CompactAndPerfect.lean#L124). The attribute's comment: “the affine case, both directions”.
+**`AlgebraicGeometry.isCompactObject_iff_isPerfect_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/QuasiCoherentDerived/CompactAndPerfect.lean, line 124](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/QuasiCoherentDerived/CompactAndPerfect.lean#L124). The attribute's comment: “the affine case, both directions”.
 
 > **Stacks 09M1 on an affine scheme.** Let `R` be a ring and let `L` be an object of
 > `D_QCoh(𝒪_{Spec R})`. Then `L` is a compact object of `D_QCoh(𝒪_{Spec R})` if and only if it is a
@@ -70,7 +70,7 @@ theorem isCompactObject_iff_isPerfect_spec (R : CommRingCat.{u})
       Stacks.Cohomology.PerfectComplexes.IsPerfect (X := (Spec R).toRingedSpace) L.obj
 ```
 
-**`AlgebraicGeometry.isPerfect_of_isCompactObject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/QuasiCoherentDerived/CompactAndPerfect.lean, line 161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/QuasiCoherentDerived/CompactAndPerfect.lean#L161). The attribute's comment: “compact implies perfect; the affine-local datum, which the source draws from Tag 08DZ (derived direct image along a quasi-compact quasi-separated morphism commutes with direct sums) together with Tag 06Z0, is a hypothesis: that deduction is not carried out here. Tag 08DZ is proved in this repository, as Stacks.Duality.DerivedPushforward.preservesColimitsOfShape\_discrete\_qcqsQuasiCoherentDerivedPushforward, but only at HasDerivedCategory.standard”.
+**`AlgebraicGeometry.isPerfect_of_isCompactObject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/QuasiCoherentDerived/CompactAndPerfect.lean, line 161](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/QuasiCoherentDerived/CompactAndPerfect.lean#L161). The attribute's comment: “compact implies perfect; the affine-local datum, which the source draws from Tag 08DZ (derived direct image along a quasi-compact quasi-separated morphism commutes with direct sums) together with Tag 06Z0, is a hypothesis: that deduction is not carried out here. Tag 08DZ is proved in this repository, as Stacks.Duality.DerivedPushforward.preservesColimitsOfShape\_discrete\_qcqsQuasiCoherentDerivedPushforward, but only at HasDerivedCategory.standard”.
 
 > **Stacks 09M1, the implication from compactness to perfectness.** Let `X` be a scheme and let
 > `K` be an object of `D_QCoh(𝒪_X)`. Suppose every point of `X` has an open neighbourhood `U` on
@@ -100,7 +100,7 @@ theorem isPerfect_of_isCompactObject (X : Scheme.{u}) (K : QuasicoherentDerivedC
     Stacks.Cohomology.PerfectComplexes.IsPerfect (X := X.toRingedSpace) K.obj
 ```
 
-**`AlgebraicGeometry.isCompactObject_iff_isPerfect_spec_of_model`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/QuasiCoherentDerived/CompactAndPerfectLocallySmall.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/QuasiCoherentDerived/CompactAndPerfectLocallySmall.lean#L104). The attribute's comment: “the affine case, both directions, at an arbitrary chosen derived category -- in particular at the locally small AlgebraicGeometry.Scheme.Modules.hasDerivedCategory, at which the companion AlgebraicGeometry.isCompactObject\_iff\_isPerfect\_spec says nothing. The global case is not covered here”.
+**`AlgebraicGeometry.isCompactObject_iff_isPerfect_spec_of_model`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/QuasiCoherentDerived/CompactAndPerfectLocallySmall.lean, line 104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/QuasiCoherentDerived/CompactAndPerfectLocallySmall.lean#L104). The attribute's comment: “the affine case, both directions, at an arbitrary chosen derived category -- in particular at the locally small AlgebraicGeometry.Scheme.Modules.hasDerivedCategory, at which the companion AlgebraicGeometry.isCompactObject\_iff\_isPerfect\_spec says nothing. The global case is not covered here”.
 
 > **The affine case of [Stacks, Tag 09M1], at an arbitrary chosen derived category.** Let `R` be
 > a ring and let `K` be an object of `D_QCoh(𝒪_{Spec R})`, for any chosen model of `D(R)` and any
@@ -123,7 +123,7 @@ theorem isCompactObject_iff_isPerfect_spec_of_model
       @Stacks.Cohomology.PerfectComplexes.IsPerfect (Spec R).toRingedSpace hS K.obj
 ```
 
-**`Stacks.Duality.QcqsPerfect.isCompactObject_iff_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/QuasiCoherentDerived/QcqsCompactIsPerfect.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/QuasiCoherentDerived/QcqsCompactIsPerfect.lean#L93). The attribute's comment: “both directions, on a quasi-compact quasi-separated scheme, at the locally small AlgebraicGeometry.Scheme.Modules.hasDerivedCategory”.
+**`Stacks.Duality.QcqsPerfect.isCompactObject_iff_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/QuasiCoherentDerived/QcqsCompactIsPerfect.lean, line 93](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/QuasiCoherentDerived/QcqsCompactIsPerfect.lean#L93). The attribute's comment: “both directions, on a quasi-compact quasi-separated scheme, at the locally small AlgebraicGeometry.Scheme.Modules.hasDerivedCategory”.
 
 > **[Stacks, Tag 09M1].** On a quasi-compact quasi-separated scheme `X`, an object of
 > `D_QCoh(𝒪_X)` is compact if and only if it is perfect, at the locally small derived category.
@@ -135,7 +135,7 @@ theorem isCompactObject_iff_isPerfect (X : Scheme.{u}) [CompactSpace X] [QuasiSe
       Stacks.Cohomology.PerfectComplexes.IsPerfect (X := X.toRingedSpace) K.obj
 ```
 
-**`Stacks.Duality.QcqsPerfect.isCompactObject_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/QuasiCoherentDerived/QcqsPerfectIsCompact.lean, line 289](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/QuasiCoherentDerived/QcqsPerfectIsCompact.lean#L289). The attribute's comment: “perfect implies compact, on a quasi-compact quasi-separated scheme, at the locally small AlgebraicGeometry.Scheme.Modules.hasDerivedCategory. The opposite implication is not covered here; for it on a general scheme see AlgebraicGeometry.isPerfect\_of\_isCompactObject, and for both on an affine scheme see AlgebraicGeometry.isCompactObject\_iff\_isPerfect\_spec\_of\_model”.
+**`Stacks.Duality.QcqsPerfect.isCompactObject_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/QuasiCoherentDerived/QcqsPerfectIsCompact.lean, line 289](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/QuasiCoherentDerived/QcqsPerfectIsCompact.lean#L289). The attribute's comment: “perfect implies compact, on a quasi-compact quasi-separated scheme, at the locally small AlgebraicGeometry.Scheme.Modules.hasDerivedCategory. The opposite implication is not covered here; for it on a general scheme see AlgebraicGeometry.isPerfect\_of\_isCompactObject, and for both on an affine scheme see AlgebraicGeometry.isCompactObject\_iff\_isPerfect\_spec\_of\_model”.
 
 > Let `X` be a quasi-compact quasi-separated scheme and let `K` be an object of `D_QCoh(𝒪_X)`
 > which is perfect as an object of `D(𝒪_X)`. Then `K` is a compact object of `D_QCoh(𝒪_X)`, with
@@ -153,7 +153,7 @@ theorem isCompactObject_of_isPerfect (X : Scheme.{u}) [CompactSpace X] [QuasiSep
 
 [Tag 0GEF](https://stacks.math.columbia.edu/tag/0GEF) in the Stacks Project.
 
-**`Stacks.Duality.PerfectClassicalGenerator.triangEnvelope_eq_perfectObjects_of_isWeakTriangulatedGenerator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/ClassicalGeneratorOfPerfectComplexes.lean, line 253](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/ClassicalGeneratorOfPerfectComplexes.lean#L253). The attribute's comment: “for X quasi-compact and quasi-separated and G a perfect object generating D\_QCoh(O\_X), G is a classical generator of D\_perf(O\_X): the triangulated envelope of G is exactly the perfect objects”.
+**`Stacks.Duality.PerfectClassicalGenerator.triangEnvelope_eq_perfectObjects_of_isWeakTriangulatedGenerator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/ClassicalGeneratorOfPerfectComplexes.lean, line 253](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/ClassicalGeneratorOfPerfectComplexes.lean#L253). The attribute's comment: “for X quasi-compact and quasi-separated and G a perfect object generating D\_QCoh(O\_X), G is a classical generator of D\_perf(O\_X): the triangulated envelope of G is exactly the perfect objects”.
 
 > **Stacks 0GEF**. Let `X` be a quasi-compact and quasi-separated scheme and let `G` be a perfect
 > object of `D(𝒪_X)` lying in `D_QCoh(𝒪_X)` and generating it, in the sense that an object of
@@ -174,7 +174,7 @@ theorem triangEnvelope_eq_perfectObjects_of_isWeakTriangulatedGenerator
 
 [Tag 0A9B](https://stacks.math.columbia.edu/tag/0A9B) in the Stacks Project.
 
-**`Stacks.Duality.Supported.isCompactObject_iff_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CompactGeneration/SupportedCompactObject.lean, line 218](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/CompactGeneration/SupportedCompactObject.lean#L218). The attribute's comment: “compactness in `D_{QCoh,T}(𝒪_X)` is perfectness in `D(𝒪_X)`, with nothing carried. Both results the source cites are proved in this library and discharged in the proof: Tag 09M1, that a perfect object of `D_QCoh(𝒪_X)` is a compact object of it, as `AlgebraicGeometry.isCompactObject_of_isPerfect`, and Tag 0A9A, that `D_{QCoh,T}(𝒪_X)` is generated by a perfect object, as `Stacks.Rouquier.exists_isPerfect_isWeakTriangulatedGenerator_supported`. They are discharged at the cost of the source's own hypotheses that `X` be quasi-compact and quasi-separated and that `T` be closed with quasi-compact complement, which are Tag 0A9B's hypotheses too and are used for nothing else. The source's step (d), that a direct summand of a perfect object is perfect, is Tag 08CS and is proved in this library, so it is not a hypothesis. The derived category is the locally small model rather than a binder, Tag 0A9A being available at no other; the two directions at an arbitrary model are `Stacks.Duality.Supported.isCompactObject_of_isPerfect` and, with the generator given, `Stacks.Duality.Supported.isPerfect_of_isCompactObject`”.
+**`Stacks.Duality.Supported.isCompactObject_iff_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CompactGeneration/SupportedCompactObject.lean, line 218](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/CompactGeneration/SupportedCompactObject.lean#L218). The attribute's comment: “compactness in `D_{QCoh,T}(𝒪_X)` is perfectness in `D(𝒪_X)`, with nothing carried. Both results the source cites are proved in this library and discharged in the proof: Tag 09M1, that a perfect object of `D_QCoh(𝒪_X)` is a compact object of it, as `AlgebraicGeometry.isCompactObject_of_isPerfect`, and Tag 0A9A, that `D_{QCoh,T}(𝒪_X)` is generated by a perfect object, as `Stacks.Rouquier.exists_isPerfect_isWeakTriangulatedGenerator_supported`. They are discharged at the cost of the source's own hypotheses that `X` be quasi-compact and quasi-separated and that `T` be closed with quasi-compact complement, which are Tag 0A9B's hypotheses too and are used for nothing else. The source's step (d), that a direct summand of a perfect object is perfect, is Tag 08CS and is proved in this library, so it is not a hypothesis. The derived category is the locally small model rather than a binder, Tag 0A9A being available at no other; the two directions at an arbitrary model are `Stacks.Duality.Supported.isCompactObject_of_isPerfect` and, with the generator given, `Stacks.Duality.Supported.isPerfect_of_isCompactObject`”.
 
 > **An object of `D_{QCoh,T}(𝒪_X)` is compact if and only if it is perfect as an object of
 > `D(𝒪_X)`**, for `X` quasi-compact and quasi-separated and `T` closed with quasi-compact
@@ -187,7 +187,7 @@ theorem isCompactObject_iff_isPerfect [CompactSpace X] [QuasiSeparatedSpace X]
     IsCompactObject.{u} K ↔ IsPerfect (X := X.toRingedSpace) K.obj
 ```
 
-**`Stacks.Duality.Supported.isCompactObject_iff_isPerfect_of_isClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CompactGeneration/SupportedCompactPerfect.lean, line 296](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/CompactGeneration/SupportedCompactPerfect.lean#L296).
+**`Stacks.Duality.Supported.isCompactObject_iff_isPerfect_of_isClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CompactGeneration/SupportedCompactPerfect.lean, line 296](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/CompactGeneration/SupportedCompactPerfect.lean#L296).
 
 > **[Stacks, Tag 0A9B].** Let `X` be a quasi-compact and quasi-separated scheme and let
 > `T ⊆ X` be a closed subset such that `X ∖ T` is quasi-compact. An object of `D_{QCoh,T}(𝒪_X)` is
@@ -214,7 +214,7 @@ theorem isCompactObject_iff_isPerfect_of_isClosed (hT : IsClosed T) (hTc : IsCom
 
 [Tag 0GEG](https://stacks.math.columbia.edu/tag/0GEG) in the Stacks Project.
 
-**`Stacks.Duality.SupportedClassicalGenerator.hasCoproducts_and_exists_perfect_generator_and_triangEnvelope_eq_perfectSupported`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportedClassicalGenerator.lean, line 386](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/SupportedClassicalGenerator.lean#L386).
+**`Stacks.Duality.SupportedClassicalGenerator.hasCoproducts_and_exists_perfect_generator_and_triangEnvelope_eq_perfectSupported`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/SupportedClassicalGenerator.lean, line 386](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/SupportedClassicalGenerator.lean#L386).
 
 > **[Stacks, Remark 0GEG].** Let `X` be a quasi-compact and quasi-separated scheme and let
 > `T ⊆ X` be a closed subset such that `X ∖ T` is quasi-compact. Then
@@ -248,7 +248,7 @@ theorem hasCoproducts_and_exists_perfect_generator_and_triangEnvelope_eq_perfect
 
 [Tag 0A9C](https://stacks.math.columbia.edu/tag/0A9C) in the Stacks Project.
 
-**`Stacks.Duality.exists_isPerfect_whiskerRight_comp_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CompactGeneration/PerfectAnnihilator.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/CompactGeneration/PerfectAnnihilator.lean#L149).
+**`Stacks.Duality.exists_isPerfect_whiskerRight_comp_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CompactGeneration/PerfectAnnihilator.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/CompactGeneration/PerfectAnnihilator.lean#L149).
 
 > **[Stacks, Tag 0A9C].** Let `X` be quasi-compact and quasi-separated, `U ⊆ X` a quasi-compact
 > open and `α : P ⟶ E` a morphism of `D_QCoh(𝒪_X)` with `E` supported on `X \ U`, where either `P`
@@ -276,4 +276,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 36.17, Tag 09M0](https://stacks.math.columbia.edu/tag/09M0)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 37.54 Generic flatness stratification
 
-Section 37.54 of the Stacks Project, [Tag 0H3Y](https://stacks.math.columbia.edu/tag/0H3Y). 5 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 37.54 of the Stacks Project, [Tag 0H3Y](https://stacks.math.columbia.edu/tag/0H3Y). 5 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0ASY, a lemma
 
 [Tag 0ASY](https://stacks.math.columbia.edu/tag/0ASY) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_flat_stratification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GenericFlatness/FlatStratificationQcqs.lean, line 171](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GenericFlatness/FlatStratificationQcqs.lean#L171). References: EGA IV (6.9.3), “more general”; EGA IV (8.9.5).
+**`AlgebraicGeometry.exists_flat_stratification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GenericFlatness/FlatStratificationQcqs.lean, line 171](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/GenericFlatness/FlatStratificationQcqs.lean#L171). References: EGA IV (6.9.3), “more general”; EGA IV (8.9.5).
 
 > **Stacks Project, Tag 0ASY.**
 >
@@ -49,7 +49,7 @@ public theorem exists_flat_stratification {X S : Scheme.{u}} (f : X ⟶ S)
 
 [Tag 0H3Z](https://stacks.math.columbia.edu/tag/0H3Z) in the Stacks Project.
 
-**`AlgebraicGeometry.HasFlatStratification.of_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GenericFlatness/MorphismFlatStratificationQcqs.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GenericFlatness/MorphismFlatStratificationQcqs.lean#L62). References: EGA IV (6.9.3), “Case F = O\_X”; EGA IV (8.9.5), “Case F = O\_X”; SGA 6 XIII (1.13), “special case”.
+**`AlgebraicGeometry.HasFlatStratification.of_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GenericFlatness/MorphismFlatStratificationQcqs.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/GenericFlatness/MorphismFlatStratificationQcqs.lean#L62). References: EGA IV (6.9.3), “Case F = O\_X”; EGA IV (8.9.5), “Case F = O\_X”; SGA 6 XIII (1.13), “special case”.
 
 > A morphism of finite presentation between quasi-compact quasi-separated
 > schemes has a flat stratification of its base: a finite descending chain of closed subschemes,
@@ -63,7 +63,7 @@ public theorem HasFlatStratification.of_finitePresentation {X S : Scheme.{u}} (f
     (hf : FinitePresentation f) : HasFlatStratification f
 ```
 
-**`AlgebraicGeometry.HasFlatStratification.of_finitePresentation_of_isNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GenericFlatness/NoetherianFlatStratification.lean, line 283](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GenericFlatness/NoetherianFlatStratification.lean#L283). The attribute's comment: “the case of a Noetherian base. The general quasi-compact quasi-separated case of the tag is `AlgebraicGeometry.HasFlatStratification.of_finitePresentation`, which reduces to this one by absolute Noetherian approximation”.
+**`AlgebraicGeometry.HasFlatStratification.of_finitePresentation_of_isNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GenericFlatness/NoetherianFlatStratification.lean, line 283](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/GenericFlatness/NoetherianFlatStratification.lean#L283). The attribute's comment: “the case of a Noetherian base. The general quasi-compact quasi-separated case of the tag is `AlgebraicGeometry.HasFlatStratification.of_finitePresentation`, which reduces to this one by absolute Noetherian approximation”.
 
 > **The Noetherian case of Stacks 0H3Z**, with the hypotheses of the tag: a morphism of finite
 > presentation to a Noetherian base has a flat stratification.
@@ -77,7 +77,7 @@ theorem HasFlatStratification.of_finitePresentation_of_isNoetherian {X S : Schem
 
 [Tag 0H89](https://stacks.math.columbia.edu/tag/0H89) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isFlat_iff_exists_isFlat_derivedPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GenericFlatness/FlatSingleDerivedPullbackConverse.lean, line 425](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GenericFlatness/FlatSingleDerivedPullbackConverse.lean#L425).
+**`AlgebraicGeometry.exists_isFlat_iff_exists_isFlat_derivedPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GenericFlatness/FlatSingleDerivedPullbackConverse.lean, line 425](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/GenericFlatness/FlatSingleDerivedPullbackConverse.lean#L425).
 
 > **Stacks 0H89** (Longke Tang). Let `f : X ⟶ S` be a surjective morphism of finite presentation
 > and let `M` be an object of `D_QCoh(𝒪_S)` such that `H^i(M) = 0` for `i > 0`. Then `M` is
@@ -108,7 +108,7 @@ theorem exists_isFlat_iff_exists_isFlat_derivedPullback [Surjective f]
 
 [Tag 0H40](https://stacks.math.columbia.edu/tag/0H40) in the Stacks Project.
 
-**`Module.exists_flat_localizedModule_coker`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/CokernelGenericFlatness.lean, line 561](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/CokernelGenericFlatness.lean#L561). References: SGA 1 IV (6.7), “flatness clause”.
+**`Module.exists_flat_localizedModule_coker`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/CokernelGenericFlatness.lean, line 560](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/CokernelGenericFlatness.lean#L560). References: SGA 1 IV (6.7), “flatness clause”.
 
 > **Stacks Project, Tag 0H40.** A map from a finite `A`-module to a finite
 > `B`-module, for finite type algebras `R → A → B` over a Noetherian domain,
@@ -136,7 +136,7 @@ theorem Module.exists_flat_localizedModule_coker
 
 [Tag 0H41](https://stacks.math.columbia.edu/tag/0H41) in the Stacks Project.
 
-**`AlgebraicGeometry.hasImageBaseChangeStratification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GenericFlatness/ImageStratification.lean, line 392](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GenericFlatness/ImageStratification.lean#L392).
+**`AlgebraicGeometry.hasImageBaseChangeStratification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GenericFlatness/ImageStratification.lean, line 392](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/GenericFlatness/ImageStratification.lean#L392).
 
 > **Stacks Project, Tag 0H41.** Let `S` be a quasi-compact and quasi-separated scheme and
 > `f : X ⟶ Y` a morphism of schemes over `S` with both `X` and `Y` of finite presentation over `S`.
@@ -159,4 +159,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 37.54, Tag 0H3Y](https://stacks.math.columbia.edu/tag/0H3Y)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

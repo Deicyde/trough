@@ -8,13 +8,13 @@ proof: formalized
 
 # 90.24 Deformation categories as quotients of groupoids in functors
 
-Section 90.24 of the Stacks Project, [Tag 06KS](https://stacks.math.columbia.edu/tag/06KS). 2 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 90.24 of the Stacks Project, [Tag 06KS](https://stacks.math.columbia.edu/tag/06KS). 2 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 06KT, a lemma
 
 [Tag 06KT](https://stacks.math.columbia.edu/tag/06KT) in the Stacks Project.
 
-**`Deformation.quotient_satisfiesRS`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/GroupoidQuotient/RimSchlessinger.lean, line 150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/GroupoidQuotient/RimSchlessinger.lean#L150).
+**`Deformation.quotient_satisfiesRS`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/GroupoidQuotient/RimSchlessinger.lean, line 150](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/GroupoidQuotient/RimSchlessinger.lean#L150).
 
 > The quotient of a smooth groupoid in functors whose object and arrow functors satisfy
 > condition (RS) also satisfies condition (RS).
@@ -33,7 +33,7 @@ public theorem quotient_satisfiesRS
 
 [Tag 06KU](https://stacks.math.columbia.edu/tag/06KU) in the Stacks Project.
 
-**`Deformation.quotient_isDeformationCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/GroupoidQuotient/DeformationCategory.lean, line 123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/GroupoidQuotient/DeformationCategory.lean#L123). The attribute's comment: “quotient\_deformation\_category”.
+**`Deformation.quotient_isDeformationCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/GroupoidQuotient/DeformationCategory.lean, line 123](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/GroupoidQuotient/DeformationCategory.lean#L123). The attribute's comment: “quotient\_deformation\_category”.
 
 > The quotient of a smooth groupoid of deformation functors is a deformation category.
 
@@ -47,7 +47,7 @@ public theorem quotient_isDeformationCategory
     IsDeformationCategory (Grothendieck.forget (evaluationFunctor G))
 ```
 
-**`Deformation.quotientInfinitesimalBoundary_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/GroupoidQuotient/InfinitesimalAutomorphisms.lean, line 807](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/GroupoidQuotient/InfinitesimalAutomorphisms.lean#L807). The attribute's comment: “part (3): Inf([U/R]) = Ker(ds ⊕ dt : TR → TU ⊕ TU), as the exactness of 0 → Inf([U/R]) → TR → TU ⊕ TU. The two differentials are the maps on tangent modules induced by s and t at an arbitrary coordinate module M, and Inf([U/R]) is the value at M of the k-linear lift of the infinitesimal automorphisms of the image in [U/R] of a point y₀ of U, taken with an arbitrary choice PF of pushforwards there. No hypothesis is carried beyond the tag's own: G smooth, U and R deformation functors”.
+**`Deformation.quotientInfinitesimalBoundary_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/GroupoidQuotient/InfinitesimalAutomorphisms.lean, line 807](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/GroupoidQuotient/InfinitesimalAutomorphisms.lean#L807). The attribute's comment: “part (3): Inf([U/R]) = Ker(ds ⊕ dt : TR → TU ⊕ TU), as the exactness of 0 → Inf([U/R]) → TR → TU ⊕ TU. The two differentials are the maps on tangent modules induced by s and t at an arbitrary coordinate module M, and Inf([U/R]) is the value at M of the k-linear lift of the infinitesimal automorphisms of the image in [U/R] of a point y₀ of U, taken with an arbitrary choice PF of pushforwards there. No hypothesis is carried beyond the tag's own: G smooth, U and R deformation functors”.
 
 > **Stacks Project, Tag 06KU, part (3).** Let `(U, R, s, t, c)` be a smooth groupoid in
 > functors on `𝒞_Λ` whose functors of objects and of arrows are deformation functors. Then the
@@ -86,7 +86,7 @@ public theorem quotientInfinitesimalBoundary_exact
             (elementsBasedFunctor G.target) M))
 ```
 
-**`Deformation.quotientTangentEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/GroupoidQuotient/TangentSpace.lean, line 144](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/GroupoidQuotient/TangentSpace.lean#L144). The attribute's comment: “quotient\_tangent\_space”.
+**`Deformation.quotientTangentEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/GroupoidQuotient/TangentSpace.lean, line 144](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/GroupoidQuotient/TangentSpace.lean#L144). The attribute's comment: “quotient\_tangent\_space”.
 
 > The canonical tangent space of a smooth quotient is the cokernel of
 > the source-minus-target differential.
@@ -116,11 +116,11 @@ public noncomputable def quotientTangentEquiv
     letI : Fact (IsPredeformationCategory 𝓤.p) := ⟨h𝓤⟩
     letI : Fact (IsPredeformationCategory 𝓠.p) := ⟨h𝓠⟩
     letI : Fact (SchlessingerConditionS2
-      (CategoryOfElements.π (isomorphismClasses 𝓡 h𝓡.cofibered))) := ⟨s2𝓡⟩
+      (Functor.Elements.π (isomorphismClasses 𝓡 h𝓡.cofibered))) := ⟨s2𝓡⟩
     letI : Fact (SchlessingerConditionS2
-      (CategoryOfElements.π (isomorphismClasses 𝓤 h𝓤.cofibered))) := ⟨s2𝓤⟩
+      (Functor.Elements.π (isomorphismClasses 𝓤 h𝓤.cofibered))) := ⟨s2𝓤⟩
     letI : Fact (SchlessingerConditionS2
-      (CategoryOfElements.π (isomorphismClasses 𝓠 h𝓠.cofibered))) := ⟨s2𝓠⟩
+      (Functor.Elements.π (isomorphismClasses 𝓠 h𝓠.cofibered))) := ⟨s2𝓠⟩
     let TR := artinianTangentSpace Λ k (isomorphismClasses 𝓡 h𝓡.cofibered)
     let TU := artinianTangentSpace Λ k (isomorphismClasses 𝓤 h𝓤.cofibered)
     let TQ := artinianTangentSpace Λ k (isomorphismClasses 𝓠 h𝓠.cofibered)
@@ -146,4 +146,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 90.24, Tag 06KS](https://stacks.math.columbia.edu/tag/06KS)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

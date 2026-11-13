@@ -8,13 +8,13 @@ proof: formalized
 
 # 65.15 Change of big site
 
-Section 65.15 of the Stacks Project, [Tag 03FO](https://stacks.math.columbia.edu/tag/03FO). 2 tags here are carried by 7 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 65.15 of the Stacks Project, [Tag 03FO](https://stacks.math.columbia.edu/tag/03FO). 2 tags here are carried by 7 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 03FP, a lemma
 
 [Tag 03FP](https://stacks.math.columbia.edu/tag/03FP) in the Stacks Project.
 
-**`AlgebraicGeometry.isIso_changeBigSiteYonedaHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ChangeOfBigSiteRepresentable.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ChangeOfBigSiteRepresentable.lean#L148). The attribute's comment: “part (1), canonically”.
+**`AlgebraicGeometry.isIso_changeBigSiteYonedaHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ChangeOfBigSiteRepresentable.lean, line 148](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ChangeOfBigSiteRepresentable.lean#L148). The attribute's comment: “part (1), canonically”.
 
 > **Stacks 03FP, part (1), for the canonical comparison.** The inverse image of the sheaf
 > represented by a test object of the smaller localized big fppf site is the sheaf represented by
@@ -33,7 +33,7 @@ theorem isIso_changeBigSiteYonedaHom (T : BigFppfOver B S hS) :
     IsIso (changeBigSiteYonedaHom B B' h S hS T)
 ```
 
-**`AlgebraicGeometry.changeBigSiteYonedaIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ChangeOfBigSiteRepresentable.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ChangeOfBigSiteRepresentable.lean#L183). The attribute's comment: “part (1), canonically”.
+**`AlgebraicGeometry.changeBigSiteYonedaIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ChangeOfBigSiteRepresentable.lean, line 183](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ChangeOfBigSiteRepresentable.lean#L183). The attribute's comment: “part (1), canonically”.
 
 > **The inverse image of a representable algebraic space is represented by the image of the
 > test object**, by the canonical comparison of
@@ -45,7 +45,7 @@ def changeBigSiteYonedaIso (T : BigFppfOver B S hS) :
       ((changeBigSite B B' h S hS).obj ((schemeSpaceFunctor B S hS).obj T)).obj
 ```
 
-**`AlgebraicGeometry.isAlgebraicSpace_sheafPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ChangeOfBigSiteUnconditional.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ChangeOfBigSiteUnconditional.lean#L118). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.isAlgebraicSpace_sheafPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ChangeOfBigSiteUnconditional.lean, line 118](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ChangeOfBigSiteUnconditional.lean#L118). The attribute's comment: “part (2)”.
 
 > **Stacks 03FP, part (2).** Enlarging the big fppf site preserves algebraic spaces over the
 > base scheme: the inverse image of an algebraic space over `S` on the smaller localized site is an
@@ -70,14 +70,13 @@ theorem isAlgebraicSpace_sheafPullback
 
 Declarations registered for the tag:
 
-- [`sheafPullback_sheafify_yoneda_natIso`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Continuous/PullbackOfRepresentable.lean#L219), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/ChangeOfBigSite.lean, line 73](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ChangeOfBigSite.lean#L73) (StacksFrontier): “part (1), canonical naturality”.
-- [`sheafPullback_sheafify_yoneda_natIso`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Continuous/PullbackOfRepresentable.lean#L219), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Continuous/PullbackOfRepresentable.lean, line 257](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Continuous/PullbackOfRepresentable.lean#L257) (StacksFrontier): “part (1), canonical naturality”.
+- [`sheafPullback_sheafify_yoneda_natIso`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Continuous/PullbackOfRepresentable.lean#L219), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Continuous/PullbackOfRepresentable.lean, line 257](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Continuous/PullbackOfRepresentable.lean#L257) (StacksFrontier): “part (1), canonical naturality”.
 
 ## Tag 04W1, a lemma
 
 [Tag 04W1](https://stacks.math.columbia.edu/tag/04W1) in the Stacks Project.
 
-**`AlgebraicGeometry.changeBigSiteSheafPullback_fullyFaithful`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ChangeOfBigSiteFullyFaithful.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ChangeOfBigSiteFullyFaithful.lean#L118). The attribute's comment: “full faithfulness, for the sheaf-valued inverse image”.
+**`AlgebraicGeometry.changeBigSiteSheafPullback_fullyFaithful`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ChangeOfBigSiteFullyFaithful.lean, line 118](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ChangeOfBigSiteFullyFaithful.lean#L118). The attribute's comment: “full faithfulness, for the sheaf-valued inverse image”.
 
 > **Stacks 04W1, full faithfulness**, with no descent hypothesis. Inverse image along the
 > inclusion of localized big fppf sites is fully faithful on the algebraic spaces over `S` defined
@@ -88,7 +87,7 @@ theorem changeBigSiteSheafPullback_fullyFaithful :
     Nonempty (changeBigSiteSheafPullback B B' h S hS).FullyFaithful
 ```
 
-**`AlgebraicGeometry.changeBigSite`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ChangeOfBigSiteUnconditional.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ChangeOfBigSiteUnconditional.lean#L164). The attribute's comment: “the functor”.
+**`AlgebraicGeometry.changeBigSite`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ChangeOfBigSiteUnconditional.lean, line 164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ChangeOfBigSiteUnconditional.lean#L164). The attribute's comment: “the functor”.
 
 > **Stacks 04W1, the functor.** Inverse image along the inclusion of localized big fppf sites,
 > as a functor from the algebraic spaces over `S` defined using the smaller site to those defined
@@ -102,7 +101,7 @@ def changeBigSite :
     AlgebraicSpaces B S hS ⥤ AlgebraicSpaces B' S (largerContains h hS)
 ```
 
-**`AlgebraicGeometry.changeBigSite_fullyFaithful`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ChangeOfBigSiteUnconditional.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ChangeOfBigSiteUnconditional.lean#L176). The attribute's comment: “full faithfulness”.
+**`AlgebraicGeometry.changeBigSite_fullyFaithful`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ChangeOfBigSiteUnconditional.lean, line 176](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ChangeOfBigSiteUnconditional.lean#L176). The attribute's comment: “full faithfulness”.
 
 > **Stacks 04W1, full faithfulness.** Inverse image along the inclusion of localized big fppf
 > sites is fully faithful as a functor on the algebraic spaces over `S`.
@@ -117,7 +116,7 @@ theorem changeBigSite_fullyFaithful :
     Nonempty (changeBigSite B B' h S hS).FullyFaithful
 ```
 
-**`AlgebraicGeometry.mem_essentialImage_changeBigSite_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ChangeOfBigSiteUnconditional.lean, line 228](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ChangeOfBigSiteUnconditional.lean#L228). The attribute's comment: “the essential image”.
+**`AlgebraicGeometry.mem_essentialImage_changeBigSite_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ChangeOfBigSiteUnconditional.lean, line 228](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ChangeOfBigSiteUnconditional.lean#L228). The attribute's comment: “the essential image”.
 
 > **Stacks 04W1, the essential image.** An algebraic space on the enlarged big fppf site
 > descends precisely when an object of the smaller site surjects onto it as a map of sheaves and
@@ -145,4 +144,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 65.15, Tag 03FO](https://stacks.math.columbia.edu/tag/03FO)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

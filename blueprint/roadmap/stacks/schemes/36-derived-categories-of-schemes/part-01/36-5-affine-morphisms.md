@@ -8,13 +8,13 @@ proof: formalized
 
 # 36.5 Affine morphisms
 
-Section 36.5 of the Stacks Project, [Tag 0AVV](https://stacks.math.columbia.edu/tag/0AVV). 4 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 36.5 of the Stacks Project, [Tag 0AVV](https://stacks.math.columbia.edu/tag/0AVV). 4 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0G9R, a lemma
 
 [Tag 0G9R](https://stacks.math.columbia.edu/tag/0G9R) in the Stacks Project.
 
-**`AlgebraicGeometry.isIso_pushforwardToRightDerived_of_isAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedAcyclic/AffineMorphism.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedAcyclic/AffineMorphism.lean#L76).
+**`AlgebraicGeometry.isIso_pushforwardToRightDerived_of_isAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedAcyclic/AffineMorphism.lean, line 76](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedAcyclic/AffineMorphism.lean#L76).
 
 > **Stacks Project, Tag 0G9R.** Let `f : X ⟶ Y` be an affine morphism of schemes and let `K`
 > be a complex of quasi-coherent `𝒪_X`-modules. Then `f_* K = Rf_* K`: the right derived direct
@@ -37,7 +37,7 @@ theorem isIso_pushforwardToRightDerived_of_isAffine
 
 [Tag 08I8](https://stacks.math.columbia.edu/tag/08I8) in the Stacks Project.
 
-**`AlgebraicGeometry.reflectsIsomorphisms_derivedQuasicoherentPushforward_specMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedAffineMorphism/ReflectsIsomorphisms.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedAffineMorphism/ReflectsIsomorphisms.lean#L114). The attribute's comment: “a morphism Spec φ of affine schemes”.
+**`AlgebraicGeometry.reflectsIsomorphisms_derivedQuasicoherentPushforward_specMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedAffineMorphism/ReflectsIsomorphisms.lean, line 114](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedAffineMorphism/ReflectsIsomorphisms.lean#L114). The attribute's comment: “a morphism Spec φ of affine schemes”.
 
 > **[Stacks, Tag 08I8] for a morphism of affine schemes.** Let `φ : R ⟶ S` and let
 > `f = Spec φ : Spec S ⟶ Spec R`. Then `Rf_* : D_QCoh(𝒪_{Spec S}) ⥤ D_QCoh(𝒪_{Spec R})` reflects
@@ -53,7 +53,7 @@ public theorem reflectsIsomorphisms_derivedQuasicoherentPushforward_specMap :
     (derivedQuasicoherentPushforward (Spec.map φ)).ReflectsIsomorphisms
 ```
 
-**`AlgebraicGeometry.reflectsIsomorphisms_derivedQuasicoherentPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedAffineMorphism/ReflectsIsomorphismsAffineHom.lean, line 285](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedAffineMorphism/ReflectsIsomorphismsAffineHom.lean#L285).
+**`AlgebraicGeometry.reflectsIsomorphisms_derivedQuasicoherentPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedAffineMorphism/ReflectsIsomorphismsAffineHom.lean, line 285](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedAffineMorphism/ReflectsIsomorphismsAffineHom.lean#L285).
 
 > **[Stacks, Tag 08I8].** Let `f : X ⟶ Y` be an affine morphism of schemes, with `Y` an
 > arbitrary scheme. Then `Rf_* : D_QCoh(𝒪_X) ⥤ D_QCoh(𝒪_Y)` reflects isomorphisms.
@@ -71,7 +71,7 @@ public theorem reflectsIsomorphisms_derivedQuasicoherentPushforward [IsAffineHom
     (derivedQuasicoherentPushforward f).ReflectsIsomorphisms
 ```
 
-**`Stacks.AlgebraicGeometry.AffinePushforwardTExactness.isIso_of_isIso_derivedPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedAffineMorphism/ReflectsIsomorphismsQuasicoherent.lean, line 86](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedAffineMorphism/ReflectsIsomorphismsQuasicoherent.lean#L86).
+**`Stacks.AlgebraicGeometry.AffinePushforwardTExactness.isIso_of_isIso_derivedPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedAffineMorphism/ReflectsIsomorphismsQuasicoherent.lean, line 86](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedAffineMorphism/ReflectsIsomorphismsQuasicoherent.lean#L86).
 
 > **[Stacks, Tag 08I8].**  Let `f : W ⟶ Y` be an affine morphism of schemes and let
 > `α : E ⟶ F` be a morphism of `D(𝒪_W)` between complexes whose cohomology sheaves are
@@ -92,7 +92,7 @@ theorem isIso_of_isIso_derivedPushforward (f : W ⟶ Y) [IsAffineHom f]
 
 [Tag 08I9](https://stacks.math.columbia.edu/tag/08I9) in the Stacks Project.
 
-**`AlgebraicGeometry.AffineProjectionFormula.isIso_pullbackPushforwardTensorMap_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedAffineMorphism/AffineProjectionFormulaGeneralBase.lean, line 160](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedAffineMorphism/AffineProjectionFormulaGeneralBase.lean#L160). The attribute's comment: “the canonical morphism Rf\_*O\_X ⊗^L E ⟶ Rf\_*Lf^*E is invertible for every affine morphism of schemes f : X ⟶ S and every object E of D\_QCoh(O\_S), with the genuine derived pullback Lf^* and the genuine derived tensor product ⊗^L, no boundedness, flatness or finiteness hypothesis on E and no hypothesis on S”.
+**`AlgebraicGeometry.AffineProjectionFormula.isIso_pullbackPushforwardTensorMap_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedAffineMorphism/AffineProjectionFormulaGeneralBase.lean, line 160](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedAffineMorphism/AffineProjectionFormulaGeneralBase.lean#L160). The attribute's comment: “the canonical morphism Rf\_*O\_X ⊗^L E ⟶ Rf\_*Lf^*E is invertible for every affine morphism of schemes f : X ⟶ S and every object E of D\_QCoh(O\_S), with the genuine derived pullback Lf^* and the genuine derived tensor product ⊗^L, no boundedness, flatness or finiteness hypothesis on E and no hypothesis on S”.
 
 > **Stacks, Tag 08I9.**  Let `f : X ⟶ S` be an affine morphism of schemes and let `E` be an
 > object of `D_QCoh(𝒪_S)`, that is, an object of `D(𝒪_S)` all of whose cohomology sheaves are
@@ -118,7 +118,7 @@ theorem isIso_pullbackPushforwardTensorMap_unconditional {X S : Scheme.{u}} (f :
     IsIso (pullbackPushforwardTensorMap' f.toLRSHom.toShHom E)
 ```
 
-**`Stacks.AlgebraicGeometry.AffinePushforwardTExactness.derivedPushforwardDerivedPullbackTensorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedAffineMorphism/PullbackPushforwardDerivedTensor.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedAffineMorphism/PullbackPushforwardDerivedTensor.lean#L114).
+**`Stacks.AlgebraicGeometry.AffinePushforwardTExactness.derivedPushforwardDerivedPullbackTensorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedAffineMorphism/PullbackPushforwardDerivedTensor.lean, line 114](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedAffineMorphism/PullbackPushforwardDerivedTensor.lean#L114).
 
 > For an affine morphism of schemes `f : X ⟶ S` and a complex `E` on `S` with quasi-coherent
 > cohomology,
@@ -141,7 +141,7 @@ def derivedPushforwardDerivedPullbackTensorIso (f : X ⟶ S) [IsAffineHom f]
         ((derivedPullback f.toLRSHom.toShHom).obj E)
 ```
 
-**`Stacks.AlgebraicGeometry.DerivedAffinePushforward.derivedPushforwardPullbackTensorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedAffineMorphism/PullbackPushforwardTensor.lean, line 198](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedAffineMorphism/PullbackPushforwardTensor.lean#L198). The attribute's comment: “a SPECIAL CASE of the general statement, which is proved — the tag is closed by AlgebraicGeometry.AffineProjectionFormula.isIso\_pullbackPushforwardTensorMap\_unconditional. The degree-zero clause: Rf\_*((f^*H)[0]) ≅ (f\_*𝒪\_X ⊗\_\{𝒪\_S} H)[0] for H a quasi-coherent 𝒪\_S-module, with the underived f^* and ⊗ in place of the general statement's Lf^* and ⊗ᴸ and E restricted to a module in degree zero”.
+**`Stacks.AlgebraicGeometry.DerivedAffinePushforward.derivedPushforwardPullbackTensorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedAffineMorphism/PullbackPushforwardTensor.lean, line 198](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedAffineMorphism/PullbackPushforwardTensor.lean#L198). The attribute's comment: “a SPECIAL CASE of the general statement, which is proved — the tag is closed by AlgebraicGeometry.AffineProjectionFormula.isIso\_pullbackPushforwardTensorMap\_unconditional. The degree-zero clause: Rf\_*((f^*H)[0]) ≅ (f\_*𝒪\_X ⊗\_\{𝒪\_S} H)[0] for H a quasi-coherent 𝒪\_S-module, with the underived f^* and ⊗ in place of the general statement's Lf^* and ⊗ᴸ and E restricted to a module in degree zero”.
 
 > **[Stacks, Tag 08I9] for `E` a quasi-coherent module in degree zero, with the underived
 > inverse image and tensor product**: for an affine morphism of schemes `f : X ⟶ S` and a
@@ -170,7 +170,7 @@ def derivedPushforwardPullbackTensorIso [IsAffineHom f] (H : S.Modules)
             H))
 ```
 
-**`Stacks.AlgebraicGeometry.DerivedAffinePushforward.derivedPushforwardDerivedPullbackTensorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedAffineMorphism/PullbackPushforwardTensor.lean, line 250](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedAffineMorphism/PullbackPushforwardTensor.lean#L250). The attribute's comment: “a SPECIAL CASE of the general statement, which is proved — the tag is closed by AlgebraicGeometry.AffineProjectionFormula.isIso\_pullbackPushforwardTensorMap\_unconditional. E = H[0] for f affine and H a flat quasi-coherent 𝒪\_S-module, with the genuine Lf^* and nothing carried: Rf\_*Lf^*(H[0]) ≅ (f\_*𝒪\_X ⊗\_\{𝒪\_S} H)[0]; the right-hand tensor product is the underived ⊗, not ⊗ᴸ, and E is restricted to a module in degree zero”.
+**`Stacks.AlgebraicGeometry.DerivedAffinePushforward.derivedPushforwardDerivedPullbackTensorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedAffineMorphism/PullbackPushforwardTensor.lean, line 250](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedAffineMorphism/PullbackPushforwardTensor.lean#L250). The attribute's comment: “a SPECIAL CASE of the general statement, which is proved — the tag is closed by AlgebraicGeometry.AffineProjectionFormula.isIso\_pullbackPushforwardTensorMap\_unconditional. E = H[0] for f affine and H a flat quasi-coherent 𝒪\_S-module, with the genuine Lf^* and nothing carried: Rf\_*Lf^*(H[0]) ≅ (f\_*𝒪\_X ⊗\_\{𝒪\_S} H)[0]; the right-hand tensor product is the underived ⊗, not ⊗ᴸ, and E is restricted to a module in degree zero”.
 
 > **[Stacks, Tag 08I9] for `E` a flat quasi-coherent module in degree zero, with the genuine
 > derived pullback**: for an affine morphism of schemes `f : X ⟶ S` and a flat quasi-coherent
@@ -197,7 +197,7 @@ def derivedPushforwardDerivedPullbackTensorIso [IsAffineHom f] (H : S.Modules)
             H))
 ```
 
-**`Stacks.AlgebraicGeometry.DerivedAffinePushforward.derivedPushforwardDerivedPullbackTensorIsoOfExact`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedAffineMorphism/PullbackPushforwardTensor.lean, line 299](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedAffineMorphism/PullbackPushforwardTensor.lean#L299). The attribute's comment: “a SPECIAL CASE of the general statement, which is proved — the tag is closed by AlgebraicGeometry.AffineProjectionFormula.isIso\_pullbackPushforwardTensorMap\_unconditional. E = H[0] for f affine with f^* exact (f flat) and H quasi-coherent, with the genuine Rf\_* and Lf^* and nothing carried: Rf\_*Lf^*(H[0]) ≅ (f\_*𝒪\_X ⊗\_\{𝒪\_S} H)[0]; the right-hand tensor product is the underived ⊗, not ⊗ᴸ, and E is restricted to a module in degree zero”.
+**`Stacks.AlgebraicGeometry.DerivedAffinePushforward.derivedPushforwardDerivedPullbackTensorIsoOfExact`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedAffineMorphism/PullbackPushforwardTensor.lean, line 299](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedAffineMorphism/PullbackPushforwardTensor.lean#L299). The attribute's comment: “a SPECIAL CASE of the general statement, which is proved — the tag is closed by AlgebraicGeometry.AffineProjectionFormula.isIso\_pullbackPushforwardTensorMap\_unconditional. E = H[0] for f affine with f^* exact (f flat) and H quasi-coherent, with the genuine Rf\_* and Lf^* and nothing carried: Rf\_*Lf^*(H[0]) ≅ (f\_*𝒪\_X ⊗\_\{𝒪\_S} H)[0]; the right-hand tensor product is the underived ⊗, not ⊗ᴸ, and E is restricted to a module in degree zero”.
 
 > **[Stacks, Tag 08I9] for a flat affine morphism and `E` a quasi-coherent module in degree
 > zero**: for `f : X ⟶ S` affine with `f^*` exact and `H` a quasi-coherent `𝒪_S`-module,
@@ -225,7 +225,7 @@ def derivedPushforwardDerivedPullbackTensorIsoOfExact [IsAffineHom f]
             H))
 ```
 
-**`Stacks.AlgebraicGeometry.AffinePullbackPushforwardTensor.derivedPushforwardDerivedPullbackTensorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedAffineMorphism/PullbackPushforwardTensorQCoh.lean, line 158](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedAffineMorphism/PullbackPushforwardTensorQCoh.lean#L158). The attribute's comment: “the whole lemma: for an affine morphism of schemes f : X ⟶ S and every K in D\_QCoh(𝒪\_S), the canonical map f\_*𝒪\_X ⊗ᴸ K ⟶ Rf\_*Lf^*K is invertible. The tensor factors are written in the opposite order from the source, the derived tensor product of a ringed space being symmetric”.
+**`Stacks.AlgebraicGeometry.AffinePullbackPushforwardTensor.derivedPushforwardDerivedPullbackTensorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedAffineMorphism/PullbackPushforwardTensorQCoh.lean, line 158](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedAffineMorphism/PullbackPushforwardTensorQCoh.lean#L158). The attribute's comment: “the whole lemma: for an affine morphism of schemes f : X ⟶ S and every K in D\_QCoh(𝒪\_S), the canonical map f\_*𝒪\_X ⊗ᴸ K ⟶ Rf\_*Lf^*K is invertible. The tensor factors are written in the opposite order from the source, the derived tensor product of a ringed space being symmetric”.
 
 > **[Stacks, Tag 08I9].**  Let `f : X ⟶ S` be an affine morphism of schemes.  For every `K`
 > in `D_QCoh(𝒪_S)`,
@@ -254,7 +254,7 @@ def derivedPushforwardDerivedPullbackTensorIso (f : X ⟶ S) [IsAffineHom f]
 
 [Tag 0AVW](https://stacks.math.columbia.edu/tag/0AVW) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.DerivedAffinePushforward.derivedPushforwardOverRingCompRestrictScalarsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedAffineMorphism/DerivedPushforwardOverPushforwardRing.lean, line 352](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedAffineMorphism/DerivedPushforwardOverPushforwardRing.lean#L352). The attribute's comment: “the factorisation of Rf\_* through D(f\_*𝒪\_X); the equivalence clause is proved in isEquivalence\_derivedQuasicoherentPushforwardOverRing (QuasicoherentEquivalenceOverPushforwardRing.lean), on the whole derived categories”.
+**`Stacks.AlgebraicGeometry.DerivedAffinePushforward.derivedPushforwardOverRingCompRestrictScalarsIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedAffineMorphism/DerivedPushforwardOverPushforwardRing.lean, line 354](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedAffineMorphism/DerivedPushforwardOverPushforwardRing.lean#L354). The attribute's comment: “the factorisation of Rf\_* through D(f\_*𝒪\_X); the equivalence clause is proved in isEquivalence\_derivedQuasicoherentPushforwardOverRing (QuasicoherentEquivalenceOverPushforwardRing.lean), on the whole derived categories”.
 
 > **The factorisation asserted by [Stacks, Tag 0AVW]**: the derived direct image `Rf_*` is
 > `Φ` followed by the functor `D(f_* 𝒪_X) ⥤ D(𝒪_S)` induced by restriction of scalars along
@@ -274,7 +274,7 @@ def derivedPushforwardOverRingCompRestrictScalarsIso :
       derivedPushforwardOverRing.{w} f ⋙ (scalarRestriction f).mapDerivedCategory
 ```
 
-**`Stacks.AlgebraicGeometry.DerivedAffinePushforward.isEquivalence_and_factorisation_derivedQuasicoherentPushforwardOverRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedAffineMorphism/QuasicoherentEquivalenceOverPushforwardRing.lean, line 709](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedAffineMorphism/QuasicoherentEquivalenceOverPushforwardRing.lean#L709).
+**`Stacks.AlgebraicGeometry.DerivedAffinePushforward.isEquivalence_and_factorisation_derivedQuasicoherentPushforwardOverRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedAffineMorphism/QuasicoherentEquivalenceOverPushforwardRing.lean, line 709](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedAffineMorphism/QuasicoherentEquivalenceOverPushforwardRing.lean#L709).
 
 > **[Stacks, Tag 0AVW], the whole statement.**  Let `f : X ⟶ S` be an affine morphism of
 > schemes.  Then direct image induces an **equivalence**
@@ -302,4 +302,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 36.5, Tag 0AVV](https://stacks.math.columbia.edu/tag/0AVV)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

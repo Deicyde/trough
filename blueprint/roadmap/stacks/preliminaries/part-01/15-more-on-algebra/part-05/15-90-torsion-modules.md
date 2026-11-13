@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.90 Torsion modules
 
-Section 15.90 of the Stacks Project, [Tag 0ALX](https://stacks.math.columbia.edu/tag/0ALX). 9 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.90 of the Stacks Project, [Tag 0ALX](https://stacks.math.columbia.edu/tag/0ALX). 9 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 05E6, a definition
 
 [Tag 05E6](https://stacks.math.columbia.edu/tag/05E6) in the Stacks Project.
 
-**`IsIPowerTorsion`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/IPowerTorsion.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/IPowerTorsion.lean#L58).
+**`IsIPowerTorsion`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/IPowerTorsion.lean, line 58](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/IPowerTorsion.lean#L58).
 
 > An `R`-module `M` is *`I`-power torsion* if for every `m ∈ M` there exists an
 > integer `n > 0` such that `Iⁿ m = 0`, i.e. `a • m = 0` for every `a ∈ Iⁿ`.
@@ -24,7 +24,7 @@ def IsIPowerTorsion (R : Type*) [CommSemiring R] (M : Type*) [AddCommMonoid M]
     [Module R M] (I : Ideal R) : Prop
 ```
 
-**`IsElementPowerTorsion`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/IPowerTorsion.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/IPowerTorsion.lean#L65).
+**`IsElementPowerTorsion`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/IPowerTorsion.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/IPowerTorsion.lean#L65).
 
 > An `R`-module `M` is *`f`-power torsion* if every element is annihilated by some strictly
 > positive power of `f`.
@@ -38,7 +38,7 @@ def IsElementPowerTorsion (R : Type*) [CommSemiring R] (M : Type*) [AddCommMonoi
 
 [Tag 05E8](https://stacks.math.columbia.edu/tag/05E8) in the Stacks Project.
 
-**`exists_directSum_quotient_resolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/IPowerTorsion/Resolution.lean, line 151](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/IPowerTorsion/Resolution.lean#L151).
+**`exists_directSum_quotient_resolution`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/IPowerTorsion/Resolution.lean, line 151](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/IPowerTorsion/Resolution.lean#L151).
 
 > **Stacks 05E8.** An `I`-power torsion module admits an exact resolution whose terms are
 > direct sums of quotients of the ring by positive powers of `I`.
@@ -62,7 +62,7 @@ public theorem exists_directSum_quotient_resolution
 
 [Tag 05EA](https://stacks.math.columbia.edu/tag/05EA) in the Stacks Project.
 
-**`torsionBySet_eq_bot_iff_powers_eq_bot_iff_bigLambda_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/IPowerTorsion.lean, line 170](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/IPowerTorsion.lean#L170).
+**`torsionBySet_eq_bot_iff_powers_eq_bot_iff_bigLambda_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/IPowerTorsion.lean, line 170](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/IPowerTorsion.lean#L170).
 
 > For a finitely generated ideal `I`, the following are equivalent: no
 > nonzero element of `M` is annihilated by `I`; the same holds for every positive power of `I`;
@@ -84,7 +84,7 @@ theorem torsionBySet_eq_bot_iff_powers_eq_bot_iff_bigLambda_injective
 
 [Tag 05EB](https://stacks.math.columbia.edu/tag/05EB) in the Stacks Project.
 
-**`torsionBySet_quotient_primaryComponent_eq_bot_and_isIPowerTorsion_of_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/IPowerTorsion.lean, line 232](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/IPowerTorsion.lean#L232).
+**`torsionBySet_quotient_primaryComponent_eq_bot_and_isIPowerTorsion_of_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/IPowerTorsion.lean, line 232](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/IPowerTorsion.lean#L232).
 
 > For a finitely generated ideal `I`, the quotient of any module by its
 > `I`-primary component has no nonzero elements annihilated by `I`. Moreover, in a short exact
@@ -109,7 +109,7 @@ theorem torsionBySet_quotient_primaryComponent_eq_bot_and_isIPowerTorsion_of_exa
 
 [Tag 0A6K](https://stacks.math.columbia.edu/tag/0A6K) in the Stacks Project.
 
-**`isSerreClass_isIPowerTorsion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/IPowerTorsion/SerreClass.lean, line 43](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/IPowerTorsion/SerreClass.lean#L43).
+**`isSerreClass_isIPowerTorsion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/IPowerTorsion/SerreClass.lean, line 43](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/IPowerTorsion/SerreClass.lean#L43).
 
 > **Stacks 0A6K.** The modules annihilated elementwise by positive powers of a finitely
 > generated ideal form a Serre subcategory of the category of modules.
@@ -126,7 +126,7 @@ public theorem isSerreClass_isIPowerTorsion
 
 [Tag 0953](https://stacks.math.columbia.edu/tag/0953) in the Stacks Project.
 
-**`isIPowerTorsion_iff_support_subset`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/IPowerTorsion.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/IPowerTorsion.lean#L108).
+**`isIPowerTorsion_iff_support_subset`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/IPowerTorsion.lean, line 108](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/IPowerTorsion.lean#L108).
 
 > Let `R` be a commutative ring and let `I ⊆ R` be a finitely generated ideal. Then for every
 > `R`-module `M`, `M` is `I`-power torsion if and only if `Supp(M) ⊆ V(I)`.
@@ -143,7 +143,7 @@ theorem isIPowerTorsion_iff_support_subset
 
 [Tag 0H82](https://stacks.math.columbia.edu/tag/0H82) in the Stacks Project.
 
-**`StacksDraft.PowerTorsionVanishing.positive_homology_derivedTensorProduct_isZero_of_mod_ideal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/TorsionAmplitude.lean, line 672](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedComplete/TorsionAmplitude.lean#L672).
+**`StacksDraft.PowerTorsionVanishing.positive_homology_derivedTensorProduct_isZero_of_mod_ideal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedComplete/TorsionAmplitude.lean, line 671](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedComplete/TorsionAmplitude.lean#L671).
 
 > **Stacks 0H82.** If `K ⊗ᴸ[R] R / I` has no positive cohomology, then positive cohomology
 > also vanishes after derived tensoring `K` with every positive-power quotient of `R`, with
@@ -183,7 +183,7 @@ public theorem positive_homology_derivedTensorProduct_isZero_of_mod_ideal
 
 [Tag 0G1T](https://stacks.math.columbia.edu/tag/0G1T) in the Stacks Project.
 
-**`IPowerTorsionDerivedTensor.derivedTensorProduct_isZero_of_mod_ideal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/IPowerTorsion/TorAmplitude.lean, line 138](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/IPowerTorsion/TorAmplitude.lean#L138).
+**`IPowerTorsionDerivedTensor.derivedTensorProduct_isZero_of_mod_ideal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/IPowerTorsion/TorAmplitude.lean, line 138](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/IPowerTorsion/TorAmplitude.lean#L138).
 
 > **Stacks 0G1T.** If `K ⊗ᴸ[R] R / I` vanishes, then so does the derived tensor product of `K`
 > with every positive-power quotient of `R`, every `I`-power-torsion module, and every bounded
@@ -218,7 +218,7 @@ public theorem derivedTensorProduct_isZero_of_mod_ideal
 
 [Tag 0BNK](https://stacks.math.columbia.edu/tag/0BNK) in the Stacks Project.
 
-**`tensorProduct_mk_bijective_of_ideal_power_torsion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/IPowerTorsion/ScalarExtension.lean, line 281](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/IPowerTorsion/ScalarExtension.lean#L281). References: SGA 2 IV (4.5), “more general”; SGA 2 IV (4.6), “more general”.
+**`tensorProduct_mk_bijective_of_ideal_power_torsion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/IPowerTorsion/ScalarExtension.lean, line 281](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/IPowerTorsion/ScalarExtension.lean#L281). References: SGA 2 IV (4.5), “more general”; SGA 2 IV (4.6), “more general”.
 
 > The canonical map from an ideal-power torsion module to its scalar extension is an
 > isomorphism when the scalar extension is unchanged modulo every positive power of the ideal. In
@@ -248,4 +248,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.90, Tag 0ALX](https://stacks.math.columbia.edu/tag/0ALX)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

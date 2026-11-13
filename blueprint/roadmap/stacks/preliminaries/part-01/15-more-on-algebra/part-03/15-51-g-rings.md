@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.51 G-rings
 
-Section 15.51 of the Stacks Project, [Tag 07GG](https://stacks.math.columbia.edu/tag/07GG). 14 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.51 of the Stacks Project, [Tag 07GG](https://stacks.math.columbia.edu/tag/07GG). 14 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 07GH, a definition
 
 [Tag 07GH](https://stacks.math.columbia.edu/tag/07GH) in the Stacks Project.
 
-**`IsGRing`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GRing/Defs.lean, line 37](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GRing/Defs.lean#L37).
+**`IsGRing`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GRing/Defs.lean, line 37](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/GRing/Defs.lean#L37).
 
 > A commutative ring is a G-ring if it is Noetherian and, for every prime ideal `p`, the
 > canonical map from its local ring at `p` to the completion of that local ring is regular.
@@ -27,7 +27,7 @@ public def IsGRing (R : Type u) [CommRing R] : Prop
 
 [Tag 07PN](https://stacks.math.columbia.edu/tag/07PN) in the Stacks Project.
 
-**`isGRing_iff_quotientCompletion_isGeometricallyRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GRing/Criteria.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GRing/Criteria.lean#L135).
+**`isGRing_iff_quotientCompletion_isGeometricallyRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GRing/Criteria.lean, line 135](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/GRing/Criteria.lean#L135).
 
 > A Noetherian ring is a G-ring if and only if every completed localization of a prime
 > quotient, after base change to the residue field of the smaller prime, is geometrically regular.
@@ -51,7 +51,7 @@ public theorem isGRing_iff_quotientCompletion_isGeometricallyRegular
 
 [Tag 07PP](https://stacks.math.columbia.edu/tag/07PP) in the Stacks Project.
 
-**`quasiFinite_preserves_geometricallyRegular_formalFibers_and_isGRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GRing/Criteria.lean, line 268](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GRing/Criteria.lean#L268).
+**`quasiFinite_preserves_geometricallyRegular_formalFibers_and_isGRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GRing/Criteria.lean, line 268](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/GRing/Criteria.lean#L268).
 
 > Let `R → S` be a finite-type map of Noetherian rings and let `q' ⊆ p'` be primes of
 > `S` at which the map is quasi-finite at `p'`. Geometric regularity ascends from the corresponding
@@ -97,7 +97,7 @@ public theorem quasiFinite_preserves_geometricallyRegular_formalFibers_and_isGRi
 
 [Tag 07PQ](https://stacks.math.columbia.edu/tag/07PQ) in the Stacks Project.
 
-**`isGRing_iff_finiteFree_formalFibers_isRegularRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GRing/Criteria.lean, line 566](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GRing/Criteria.lean#L566).
+**`isGRing_iff_finiteFree_formalFibers_isRegularRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GRing/Criteria.lean, line 566](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/GRing/Criteria.lean#L566).
 
 > A Noetherian ring is a G-ring if and only if every formal fibre of every finite free algebra
 > over it is a regular ring.
@@ -118,7 +118,7 @@ public theorem isGRing_iff_finiteFree_formalFibers_isRegularRing (R : Type u) [C
 
 [Tag 07PR](https://stacks.math.columbia.edu/tag/07PR) in the Stacks Project.
 
-**`isGeometricallyRegular_formalFiber_mvPolynomial_mvPowerSeries`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GRing/Criteria.lean, line 1101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GRing/Criteria.lean#L1101). References: EGA 0 (22.3.4), “special case”.
+**`isGeometricallyRegular_formalFiber_mvPolynomial_mvPowerSeries`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GRing/Criteria.lean, line 1101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/GRing/Criteria.lean#L1101). References: EGA 0 (22.3.4), “special case”.
 
 > If `A` is a polynomial ring in `m` variables over the formal power-series
 > ring in `n` variables over a field `k` of prime characteristic, then the generic formal fibre of
@@ -144,7 +144,7 @@ public theorem
 
 [Tag 07PS](https://stacks.math.columbia.edu/tag/07PS) in the Stacks Project.
 
-**`isGRing_of_isPrecomplete_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GRing/Criteria.lean, line 1375](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GRing/Criteria.lean#L1375).
+**`isGRing_of_isPrecomplete_maximalIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GRing/Criteria.lean, line 1375](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/GRing/Criteria.lean#L1375).
 
 > A Noetherian local ring complete for its maximal-ideal-adic topology is a G-ring.
 
@@ -158,7 +158,7 @@ public theorem isGRing_of_isPrecomplete_maximalIdeal
 
 [Tag 07PT](https://stacks.math.columbia.edu/tag/07PT) in the Stacks Project.
 
-**`isGRing_iff_isRegularRingHom_adicCompletion_at_maximal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GRing/Henselization.lean, line 181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GRing/Henselization.lean#L181).
+**`isGRing_iff_isRegularRingHom_adicCompletion_at_maximal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GRing/Henselization.lean, line 181](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/GRing/Henselization.lean#L181).
 
 > A Noetherian ring is a G-ring if and only if the completion map of its localization at every
 > maximal ideal is regular.
@@ -178,7 +178,7 @@ public theorem isGRing_iff_isRegularRingHom_adicCompletion_at_maximal
 
 [Tag 07QR](https://stacks.math.columbia.edu/tag/07QR) in the Stacks Project.
 
-**`isGRing_henselization_and_strictHenselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GRing/Henselization.lean, line 843](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GRing/Henselization.lean#L843).
+**`isGRing_henselization_and_strictHenselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GRing/Henselization.lean, line 843](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/GRing/Henselization.lean#L843).
 
 > The henselization and strict henselization of a local G-ring are G-rings.
 
@@ -200,7 +200,7 @@ public theorem isGRing_henselization_and_strictHenselization
 
 [Tag 07PU](https://stacks.math.columbia.edu/tag/07PU) in the Stacks Project.
 
-**`isGeometricallyRegular_formalFiber_polynomial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GRing/EssFiniteType.lean, line 390](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GRing/EssFiniteType.lean#L390).
+**`isGeometricallyRegular_formalFiber_polynomial`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GRing/EssFiniteType.lean, line 386](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/GRing/EssFiniteType.lean#L386).
 
 > The formal fibre at a nonzero prime `r` contained in a maximal ideal `q` of
 > `A[X]`, where `q` lies over the maximal ideal of the Noetherian complete local
@@ -225,7 +225,7 @@ public theorem isGeometricallyRegular_formalFiber_polynomial
 
 [Tag 07PV](https://stacks.math.columbia.edu/tag/07PV) in the Stacks Project.
 
-**`isGRing_of_essFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GRing/EssFiniteType.lean, line 657](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GRing/EssFiniteType.lean#L657).
+**`isGRing_of_essFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GRing/EssFiniteType.lean, line 653](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/GRing/EssFiniteType.lean#L653).
 
 > An algebra essentially of finite type over a G-ring is a G-ring.
 
@@ -240,7 +240,7 @@ public theorem isGRing_of_essFiniteType
 
 [Tag 07PX](https://stacks.math.columbia.edu/tag/07PX) in the Stacks Project.
 
-**`isGRing_basic_examples`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GRing/EssFiniteType.lean, line 763](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GRing/EssFiniteType.lean#L763). References: SGA 3 VIB (10.10), “more general”.
+**`isGRing_basic_examples`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GRing/EssFiniteType.lean, line 759](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/GRing/EssFiniteType.lean#L759). References: SGA 3 VIB (10.10), “more general”.
 
 > Fields, Noetherian complete local rings, the integers, and Dedekind domains
 > whose fraction fields have characteristic zero are G-rings. Moreover, a finite-type algebra over
@@ -262,7 +262,7 @@ public theorem isGRing_basic_examples :
 
 [Tag 0A41](https://stacks.math.columbia.edu/tag/0A41) in the Stacks Project.
 
-**`exists_filteredColimit_henselianLocalGRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GRing/EssFiniteType.lean, line 1077](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GRing/EssFiniteType.lean#L1077). References: EGA IV (18.6.14), “(iii)”.
+**`exists_filteredColimit_henselianLocalGRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GRing/EssFiniteType.lean, line 1073](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/GRing/EssFiniteType.lean#L1073). References: EGA IV (18.6.14), “(iii)”.
 
 > A henselian local ring is a filtered colimit of henselian local G-rings
 > with local transition maps.
@@ -281,7 +281,7 @@ public theorem exists_filteredColimit_henselianLocalGRing
 
 [Tag 0AH2](https://stacks.math.columbia.edu/tag/0AH2) in the Stacks Project.
 
-**`isRegularRingHom_algebraMap_adicCompletion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GRing/Henselization.lean, line 214](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GRing/Henselization.lean#L214).
+**`isRegularRingHom_algebraMap_adicCompletion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GRing/Henselization.lean, line 214](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/GRing/Henselization.lean#L214).
 
 > The canonical map from a G-ring to its completion with respect to any ideal is regular.
 
@@ -295,7 +295,7 @@ public theorem isRegularRingHom_algebraMap_adicCompletion
 
 [Tag 0AH3](https://stacks.math.columbia.edu/tag/0AH3) in the Stacks Project.
 
-**`isGRing_henselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GRing/Henselization.lean, line 574](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GRing/Henselization.lean#L574).
+**`isGRing_henselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GRing/Henselization.lean, line 574](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/GRing/Henselization.lean#L574).
 
 > The henselization of a G-ring along an ideal is a G-ring.
 
@@ -319,4 +319,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.51, Tag 07GG](https://stacks.math.columbia.edu/tag/07GG)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

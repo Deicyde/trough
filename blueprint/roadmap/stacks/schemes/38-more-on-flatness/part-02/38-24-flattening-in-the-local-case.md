@@ -8,13 +8,13 @@ proof: formalized
 
 # 38.24 Flattening in the local case
 
-Section 38.24 of the Stacks Project, [Tag 05MZ](https://stacks.math.columbia.edu/tag/05MZ). 4 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 38.24 of the Stacks Project, [Tag 05MZ](https://stacks.math.columbia.edu/tag/05MZ). 4 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 05PG, a theorem
 
 [Tag 05PG](https://stacks.math.columbia.edu/tag/05PG) in the Stacks Project.
 
-**`Module.FlatAtPointSituation.exists_ideal_condition_iff_map_eq_bot_of_henselian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/HenselianFlatteningTheorem.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/HenselianFlatteningTheorem.lean#L88).
+**`Module.FlatAtPointSituation.exists_ideal_condition_iff_map_eq_bot_of_henselian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/HenselianFlatteningTheorem.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/HenselianFlatteningTheorem.lean#L88).
 
 > **Stacks Project, Tag 05PG.** Let `A → B` be a local homomorphism of local rings with `A`
 > henselian and `B` essentially of finite type over `A`, and let `M` be a finite `B`-module. There
@@ -38,7 +38,7 @@ theorem exists_ideal_condition_iff_map_eq_bot_of_henselian
 
 [Tag 05PH](https://stacks.math.columbia.edu/tag/05PH) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_closedSubscheme_flatOverAt_iff_factorStalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/LocalFlatteningSubscheme.lean, line 232](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/LocalFlatteningSubscheme.lean#L232). The attribute's comment: “the local flattening subscheme”.
+**`AlgebraicGeometry.exists_closedSubscheme_flatOverAt_iff_factorStalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/LocalFlatteningSubscheme.lean, line 232](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/LocalFlatteningSubscheme.lean#L232). The attribute's comment: “the local flattening subscheme”.
 
 > **Stacks Project, Tag 05PH.** A closed subscheme detects flatness of the
 > pulled-back module at every point of the distinguished fibre lying above `x`.
@@ -62,7 +62,7 @@ theorem exists_closedSubscheme_flatOverAt_iff_factorStalk
             h ≫ I.subschemeι = T.fromSpecStalk t ≫ g
 ```
 
-**`AlgebraicGeometry.exists_finitePresentation_closedSubscheme_flatOverAt_iff_factorStalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/LocalFlatteningSubscheme.lean, line 351](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/LocalFlatteningSubscheme.lean#L351). The attribute's comment: “finite-presentation refinement”.
+**`AlgebraicGeometry.exists_finitePresentation_closedSubscheme_flatOverAt_iff_factorStalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/LocalFlatteningSubscheme.lean, line 351](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/LocalFlatteningSubscheme.lean#L351). The attribute's comment: “finite-presentation refinement”.
 
 > **Stacks Project, Tag 05PH.** Under pointwise finite-presentation
 > hypotheses, the local flattening subscheme can be finitely presented.
@@ -99,7 +99,7 @@ theorem exists_finitePresentation_closedSubscheme_flatOverAt_iff_factorStalk
 
 [Tag 05PI](https://stacks.math.columbia.edu/tag/05PI) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_finitePresentation_closedSubscheme_flatOverAt_iff_factors`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/ClosedFibreFlatteningFinitePresentation.lean, line 154](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/ClosedFibreFlatteningFinitePresentation.lean#L154). The attribute's comment: “finite-presentation refinement”.
+**`AlgebraicGeometry.exists_finitePresentation_closedSubscheme_flatOverAt_iff_factors`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/ClosedFibreFlatteningFinitePresentation.lean, line 154](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/ClosedFibreFlatteningFinitePresentation.lean#L154). The attribute's comment: “finite-presentation refinement”.
 
 > **Stacks Project, Tag 05PI.** When the morphism and the module are in addition locally of
 > finite presentation and the chosen subset of the closed fibre is closed and quasi-compact, the
@@ -129,7 +129,7 @@ theorem exists_finitePresentation_closedSubscheme_flatOverAt_iff_factors
           h ≫ I.subschemeι = T.fromSpecStalk t ≫ g
 ```
 
-**`AlgebraicGeometry.exists_closedSubscheme_flatOverAt_iff_factors`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/ClosedFibreFlatteningSubscheme.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/ClosedFibreFlatteningSubscheme.lean#L70). The attribute's comment: “closed flattening subscheme”.
+**`AlgebraicGeometry.exists_closedSubscheme_flatOverAt_iff_factors`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/ClosedFibreFlatteningSubscheme.lean, line 70](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/ClosedFibreFlatteningSubscheme.lean#L70). The attribute's comment: “closed flattening subscheme”.
 
 > **Stacks Project, Tag 05PI.** Flatness of a finite type quasi-coherent module along an
 > arbitrary subset `E` of the closed fibre, after an arbitrary pointed base change of a henselian
@@ -160,7 +160,7 @@ theorem exists_closedSubscheme_flatOverAt_iff_factors
 
 [Tag 052G](https://stacks.math.columbia.edu/tag/052G) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_idealSheafData_forall_isFlatOverAt_iff_of_isAdicComplete`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/CompleteLocalFlattening.lean, line 311](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/CompleteLocalFlattening.lean#L311). The attribute's comment: “the closed subscheme of Lemma 05PI for E = X\_s over a Noetherian complete local base, constructed from finite affine charts and Lemma 0528”.
+**`AlgebraicGeometry.exists_idealSheafData_forall_isFlatOverAt_iff_of_isAdicComplete`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/CompleteLocalFlattening.lean, line 311](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/CompleteLocalFlattening.lean#L311). The attribute's comment: “the closed subscheme of Lemma 05PI for E = X\_s over a Noetherian complete local base, constructed from finite affine charts and Lemma 0528”.
 
 > **Stacks Project, Tag 052G.** Let `S = Spec A` be the spectrum of a Noetherian complete local
 > ring with closed point `s`, let `f : X ⟶ S` be of finite type and let `F` be a quasi-coherent
@@ -194,4 +194,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 38.24, Tag 05MZ](https://stacks.math.columbia.edu/tag/05MZ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

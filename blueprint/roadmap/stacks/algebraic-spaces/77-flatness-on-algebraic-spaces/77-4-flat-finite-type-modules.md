@@ -8,13 +8,13 @@ proof: formalized
 
 # 77.4 Flat finite type modules
 
-Section 77.4 of the Stacks Project, [Tag 0CVJ](https://stacks.math.columbia.edu/tag/0CVJ). 8 tags here are carried by 16 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 77.4 of the Stacks Project, [Tag 0CVJ](https://stacks.math.columbia.edu/tag/0CVJ). 8 tags here are carried by 18 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0CWJ, a lemma
 
 [Tag 0CWJ](https://stacks.math.columbia.edu/tag/0CWJ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_affine_etale_completeDevissage_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/CompleteDevissageEtaleCover.lean, line 318](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Flat/CompleteDevissageEtaleCover.lean#L318). The attribute's comment: “the full statement, proved from the source's hypotheses; nothing is assumed”.
+**`AlgebraicGeometry.Space.exists_affine_etale_completeDevissage_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/CompleteDevissageEtaleCover.lean, line 318](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Flat/CompleteDevissageEtaleCover.lean#L318). The attribute's comment: “the full statement, proved from the source's hypotheses; nothing is assumed”.
 
 > **Stacks Project, Tag 0CWJ.** Let `X ⟶ Y` be a finite type morphism of algebraic spaces over
 > `S`, let `F` be a finite type quasi-coherent `𝒪_X`-module and let `y` be a point of `Y`. There
@@ -51,7 +51,7 @@ theorem exists_affine_etale_completeDevissage_cover (B : BigFppfSite.{u}) (S : S
               pointsMap B S hS _ (h i) z = x
 ```
 
-**`AlgebraicGeometry.Space.exists_affineChart_hasCompleteDevissageCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/ExistenceCompleteDevissage.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Flat/ExistenceCompleteDevissage.lean#L183). The attribute's comment: “the elementary étale neighbourhood of the point, the covering family and its dévissages are delivered for the affine étale chart of the base change rather than for the base change as an algebraic space: the sources of the covering étale morphisms carry no size bound, so they are not objects of the big fppf site”.
+**`AlgebraicGeometry.Space.exists_affineChart_hasCompleteDevissageCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/ExistenceCompleteDevissage.lean, line 183](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Flat/ExistenceCompleteDevissage.lean#L183). The attribute's comment: “the elementary étale neighbourhood of the point, the covering family and its dévissages are delivered for the affine étale chart of the base change rather than for the base change as an algebraic space: the sources of the covering étale morphisms carry no size bound, so they are not objects of the big fppf site”.
 
 > **Stacks Project, Tag 0CWJ**, delivered at an affine étale chart of the base change.
 >
@@ -100,7 +100,7 @@ theorem exists_affineChart_hasCompleteDevissageCover (B : BigFppfSite.{u}) (S : 
 
 [Tag 0CWK](https://stacks.math.columbia.edu/tag/0CWK) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isOpen_flatLocus_setFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatFiniteTypeModuleFibre.lean, line 453](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FlatFiniteTypeModuleFibre.lean#L453). The attribute's comment: “the statement in full, at the Stacks erratum: the point y of the target has a quasi-compact field-valued representative, condition (5) of Stacks 03JV, which holds at every point of a decent algebraic space. The tag as published asks nothing of y and is false that way, refuted by the theorem Stacks.Examples.NonOpenFlatLocusSpace.not\_isOpen\_flatLocus\_setFibre\_of\_free\_shift of StacksFrontier/Examples/Flatness/NonOpenFlatLocusSpace.lean”.
+**`AlgebraicGeometry.Space.isOpen_flatLocus_setFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatFiniteTypeModuleFibre.lean, line 456](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FlatFiniteTypeModuleFibre.lean#L456). The attribute's comment: “the statement in full, at the Stacks erratum: the point y of the target has a quasi-compact field-valued representative, condition (5) of Stacks 03JV, which holds at every point of a decent algebraic space. The tag as published asks nothing of y and is false that way, refuted by the theorem Stacks.Examples.NonOpenFlatLocusSpace.not\_isOpen\_flatLocus\_setFibre\_of\_free\_shift of StacksFrontier/Examples/Flatness/NonOpenFlatLocusSpace.lean”.
 
 > **Stacks 0CWK.** Let `f : X ⟶ Y` be a morphism of algebraic spaces over `S` which is
 > locally of finite type, let `F` be a quasi-coherent `𝒪_X`-module of finite type and let `y` be
@@ -141,7 +141,7 @@ theorem isOpen_flatLocus_setFibre (f : X ⟶ Y)
 
 [Tag 0CVK](https://stacks.math.columbia.edu/tag/0CVK) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isWeaklyAssociatedPoint_tensor_modulePullback_iff_of_finiteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/BourbakiFiniteTypePointwise.lean, line 144](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Flat/BourbakiFiniteTypePointwise.lean#L144).
+**`AlgebraicGeometry.Space.isWeaklyAssociatedPoint_tensor_modulePullback_iff_of_finiteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/BourbakiFiniteTypePointwise.lean, line 144](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Flat/BourbakiFiniteTypePointwise.lean#L144).
 
 > Let `S` be a scheme, let `f : X ⟶ Y` be a morphism of algebraic spaces over `S` which is
 > locally of finite type, let `x` be a point of `|X|`, let `𝓕` be a finite type quasi-coherent
@@ -182,7 +182,7 @@ theorem isWeaklyAssociatedPoint_tensor_modulePullback_iff_of_finiteType (f : X �
 
 [Tag 0CVL](https://stacks.math.columbia.edu/tag/0CVL) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.weaklyAssociatedPoints_tensor_modulePullback_eq_inter_preimage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/WeaklyAssociatedTensorPullbackFiniteType.lean, line 209](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/WeaklyAssociatedTensorPullbackFiniteType.lean#L209). The attribute's comment: “the full set equality, in the intersection-with-a-preimage form the tag writes, under the tag's own assumptions and with the source's own proof: the statement is an immediate consequence of its pointwise form, Stacks 0CVK, proved in its own generality as Space.isWeaklyAssociatedPoint\_tensor\_modulePullback\_iff\_of\_finiteType and is applied here through Space.isBourbakiFormulaAtFlatPoints\_of\_finiteType, the two differing by and\_comm. The sets are Space.relativeWeaklyAssociatedPoints of Stacks 0CV0, the Ass\_\{X/Y}(F) of the tag once the fibres of f are locally Noetherian as they are here by Stacks 0CUY, and Space.weaklyAssociatedPoints of Stacks 0CTX. The tag's flatness assumption hF is used, through Space.isFlatOverAtPoint\_forall\_of\_isFlatOver, to discharge the pointwise flatness side condition of Stacks 0CVK at every point. Nothing beyond the tag's own assumptions is used: every binder of this theorem is one of them, namely f locally of finite type, F quasi-coherent of finite type, G quasi-coherent, and F flat over Y”.
+**`AlgebraicGeometry.Space.weaklyAssociatedPoints_tensor_modulePullback_eq_inter_preimage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/WeaklyAssociatedTensorPullbackFiniteType.lean, line 209](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/WeaklyAssociatedTensorPullbackFiniteType.lean#L209). The attribute's comment: “the full set equality, in the intersection-with-a-preimage form the tag writes, under the tag's own assumptions and with the source's own proof: the statement is an immediate consequence of its pointwise form, Stacks 0CVK, proved in its own generality as Space.isWeaklyAssociatedPoint\_tensor\_modulePullback\_iff\_of\_finiteType and is applied here through Space.isBourbakiFormulaAtFlatPoints\_of\_finiteType, the two differing by and\_comm. The sets are Space.relativeWeaklyAssociatedPoints of Stacks 0CV0, the Ass\_\{X/Y}(F) of the tag once the fibres of f are locally Noetherian as they are here by Stacks 0CUY, and Space.weaklyAssociatedPoints of Stacks 0CTX. The tag's flatness assumption hF is used, through Space.isFlatOverAtPoint\_forall\_of\_isFlatOver, to discharge the pointwise flatness side condition of Stacks 0CVK at every point. Nothing beyond the tag's own assumptions is used: every binder of this theorem is one of them, namely f locally of finite type, F quasi-coherent of finite type, G quasi-coherent, and F flat over Y”.
 
 > Let `f : X ⟶ Y` be a morphism of algebraic spaces over a scheme `S` which is locally of
 > finite type, let `F` be a finite type quasi-coherent `𝒪_X`-module which is flat over `Y`, and let
@@ -210,12 +210,19 @@ theorem weaklyAssociatedPoints_tensor_modulePullback_eq_inter_preimage (f : X �
 
 [Tag 0DLR](https://stacks.math.columbia.edu/tag/0DLR) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isOpen_flatLocus_of_isSurjectiveChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ChartRestrictionFromSite.lean, line 145](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ChartRestrictionFromSite.lean#L145). The attribute's comment: “openness of the locus U, with all three conditions of the statement in the source's own shape: the module quasi-coherent of finite type on the small etale site, and the weakly associated points of the target locally finite on one surjective etale scheme chart”.
+**`AlgebraicGeometry.Space.isOpen_flatLocus_of_isSurjectiveChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ChartRestrictionFromSite.lean, line 160](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ChartRestrictionFromSite.lean#L160). The attribute's comment: “openness of the locus U, at the Stacks erratum: condition (3) of the source, local finiteness of the weakly associated points of Y in |Y|, is replaced by local finiteness of the weakly associated points of the scheme of one surjective etale chart of Y, which is how the source's proof reads it and which implies (3). The tag as published, with (3) on |Y|, is false, refuted (with a target which is not decent) by the theorem Stacks.Examples.NonOpenFlatLocusWeaklyAssociated.exists\_not\_isOpen\_flatLocus of StacksFrontier/Examples/Flatness/NonOpenFlatLocusWeaklyAssociated.lean. Conditions (1) and (2) are the source's: f locally of finite presentation, the module quasi-coherent of finite type on the small etale site”.
 
 > For a morphism `f : X ⟶ Y` of algebraic spaces locally of finite presentation and a module
 > which is quasi-coherent and of finite type on the small étale site of `X`, the relative flat locus
 > is open in the point space of `X` as soon as the weakly associated points of the scheme of one
 > surjective étale chart of `Y` are locally finite there.
+>
+> Condition (3) of the source asks that the weakly associated points of `Y` be locally finite in
+> `|Y|`; the source's proof reads it as local finiteness on a surjective étale scheme chart, which can
+> be stronger when `Y` is not decent.  With (3) on `|Y|` the statement is false:
+> `Stacks.Examples.NonOpenFlatLocusWeaklyAssociated.exists_not_isOpen_flatLocus`
+> exhibits a target with two weakly associated points over which the flat locus is not open.  The
+> chart reading is therefore the correction of the statement, recorded in `errata.md`.
 
 ```lean
 theorem isOpen_flatLocus_of_isSurjectiveChart (f : X.1 ⟶ Y)
@@ -229,12 +236,19 @@ theorem isOpen_flatLocus_of_isSurjectiveChart (f : X.1 ⟶ Y)
     IsOpen (flatLocus B S hS X.2 f F)
 ```
 
-**`AlgebraicGeometry.Space.isOpenSubspace_flatLocusOpenSubspace_of_isSurjectiveChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ChartRestrictionFromSite.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ChartRestrictionFromSite.lean#L164). The attribute's comment: “the locus U cuts out an open subspace of X in the sense of Tag 03BZ, with all three conditions of the statement in the source's own shape, condition (3) read on one surjective etale scheme chart”.
+**`AlgebraicGeometry.Space.isOpenSubspace_flatLocusOpenSubspace_of_isSurjectiveChart`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ChartRestrictionFromSite.lean, line 191](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ChartRestrictionFromSite.lean#L191). The attribute's comment: “the locus U cuts out an open subspace of X in the sense of Tag 03BZ, at the Stacks erratum: condition (3) of the source, local finiteness of the weakly associated points of Y in |Y|, is replaced by local finiteness of the weakly associated points of the scheme of one surjective etale chart of Y, which is how the source's proof reads it and which implies (3). The tag as published, with (3) on |Y|, is false, refuted (with a target which is not decent) by the theorem Stacks.Examples.NonOpenFlatLocusWeaklyAssociated.exists\_not\_isOpen\_flatLocus of StacksFrontier/Examples/Flatness/NonOpenFlatLocusWeaklyAssociated.lean”.
 
 > For a morphism `f : X ⟶ Y` of algebraic spaces locally of finite presentation and a module
 > which is quasi-coherent and of finite type on the small étale site of `X`, the relative flat locus
 > cuts out an open subspace of `X` as soon as the weakly associated points of the scheme of one
 > surjective étale chart of `Y` are locally finite there.
+>
+> Condition (3) of the source asks that the weakly associated points of `Y` be locally finite in
+> `|Y|`; the source's proof reads it as local finiteness on a surjective étale scheme chart, which can
+> be stronger when `Y` is not decent.  With (3) on `|Y|` the statement is false:
+> `Stacks.Examples.NonOpenFlatLocusWeaklyAssociated.exists_not_isOpen_flatLocus`
+> exhibits a target with two weakly associated points over which the flat locus is not open.  The
+> chart reading is therefore the correction of the statement, recorded in `errata.md`.
 
 ```lean
 theorem isOpenSubspace_flatLocusOpenSubspace_of_isSurjectiveChart (f : X.1 ⟶ Y)
@@ -248,7 +262,7 @@ theorem isOpenSubspace_flatLocusOpenSubspace_of_isSurjectiveChart (f : X.1 ⟶ Y
     IsOpenSubspace B S hS (flatLocusOpenSubspace B S hS X.2 f F)
 ```
 
-**`AlgebraicGeometry.Space.flatLocus`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatFiniteTypeModuleLocus.lean, line 209](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FlatFiniteTypeModuleLocus.lean#L209). The attribute's comment: “the locus U of the statement: the points of the source at which the module is flat over the target, which is Tag 05VV (1), i.e. clause (1) of Tag 05VU”.
+**`AlgebraicGeometry.Space.flatLocus`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatFiniteTypeModuleLocus.lean, line 209](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FlatFiniteTypeModuleLocus.lean#L209). The attribute's comment: “the locus U of the statement: the points of the source at which the module is flat over the target, which is Tag 05VV (1), i.e. clause (1) of Tag 05VU”.
 
 > The relative flat locus of a module on an algebraic space: the set of points `x` of the
 > source such that some commuting square of étale scheme charts through `x` witnesses flatness of
@@ -259,7 +273,7 @@ noncomputable def flatLocus (hX : IsAlgebraicSpace B S hS X) (f : X ⟶ Y)
     (F : Modules.{u, u} B S hS X hX) : Set (points B S hS X)
 ```
 
-**`AlgebraicGeometry.Space.isFinitePresentationOnCharts_flatLocusRestrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatFiniteTypeModuleOnFlatLocus.lean, line 309](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FlatFiniteTypeModuleOnFlatLocus.lean#L309). The attribute's comment: “F|\_U is an O\_U-module of finite presentation, for U the open subspace cut out by the flat locus, at all three conditions of the statement in the source's own shape -- the module quasi-coherent of finite type on the small etale site and the weakly associated points of the target locally finite on one surjective etale scheme chart, as the source's proof reads condition (3); the conclusion is read on the etale scheme charts of U, as every property of a module on an algebraic space is in this development”.
+**`AlgebraicGeometry.Space.isFinitePresentationOnCharts_flatLocusRestrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatFiniteTypeModuleOnFlatLocus.lean, line 322](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FlatFiniteTypeModuleOnFlatLocus.lean#L322). The attribute's comment: “F|\_U is an O\_U-module of finite presentation, for U the open subspace cut out by the flat locus, at the Stacks erratum: condition (3) of the source, local finiteness of the weakly associated points of Y in |Y|, is replaced by local finiteness of the weakly associated points of the scheme of one surjective etale chart of Y, which is how the source's proof reads it and which implies (3). The tag as published, with (3) on |Y|, is false, refuted (with a target which is not decent) by the theorem Stacks.Examples.NonOpenFlatLocusWeaklyAssociated.exists\_not\_isOpen\_flatLocus of StacksFrontier/Examples/Flatness/NonOpenFlatLocusWeaklyAssociated.lean. The module is quasi-coherent of finite type on the small etale site; the conclusion is read on the etale scheme charts of U, as every property of a module on an algebraic space is in this development”.
 
 > **Stacks 0DLR: `F|_U` is an `𝒪_U`-module of finite presentation.**  For a morphism of
 > algebraic spaces locally of finite presentation, a module quasi-coherent of finite type on the
@@ -267,9 +281,12 @@ noncomputable def flatLocus (hX : IsAlgebraicSpace B S hS X) (f : X ⟶ Y)
 > one surjective étale chart, the module `F|_U` on the open subspace
 > `U = {x ∈ |X| : F flat at x over Y}` is of finite presentation.
 >
-> All three conditions are the source's own, the local finiteness of the weakly associated points
-> of `Y` read on one *surjective* étale scheme chart as the source's proof reads it; the every-chart
-> reading the proof consumes is derived from it by
+> Conditions (1) and (2) are the source's own; condition (3), local finiteness of the weakly
+> associated points of `Y` in `|Y|`, is replaced by local finiteness on one *surjective* étale
+> scheme chart, as the source's proof reads it.  This is the correction of Stacks 0DLR recorded in
+> `errata.md`: with (3) on `|Y|` the statement is false,
+> `Stacks.Examples.NonOpenFlatLocusWeaklyAssociated.exists_not_isOpen_flatLocus`.
+> The every-chart reading the proof consumes is derived from it by
 > `AlgebraicGeometry.Space.hasLocallyFiniteWeaklyAssociatedPointsOnCharts_of_isSurjectiveChart`.
 >
 > The conclusion is read on the étale scheme charts of `U`, as every property of a module on an
@@ -298,7 +315,7 @@ theorem isFinitePresentationOnCharts_flatLocusRestrict (f : Xs ⟶ Ys)
           V₀ hV₀ h₀))
 ```
 
-**`AlgebraicGeometry.Space.isFlatOver_flatLocusRestrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatFiniteTypeModuleOnFlatLocus.lean, line 375](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FlatFiniteTypeModuleOnFlatLocus.lean#L375). The attribute's comment: “F|\_U is flat over Y along the composite U -> X -> Y, for U the open subspace cut out by the flat locus, at all three conditions of the statement in the source's own shape, condition (3) read on one surjective etale scheme chart of the target; flatness of a module on an algebraic space over the target is Tag 05VV, read on the commuting squares of etale scheme charts”.
+**`AlgebraicGeometry.Space.isFlatOver_flatLocusRestrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatFiniteTypeModuleOnFlatLocus.lean, line 395](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FlatFiniteTypeModuleOnFlatLocus.lean#L395). The attribute's comment: “F|\_U is flat over Y along the composite U -> X -> Y, for U the open subspace cut out by the flat locus, at the Stacks erratum: condition (3) of the source, local finiteness of the weakly associated points of Y in |Y|, is replaced by local finiteness of the weakly associated points of the scheme of one surjective etale chart of Y, which is how the source's proof reads it and which implies (3). The tag as published, with (3) on |Y|, is false, refuted (with a target which is not decent) by the theorem Stacks.Examples.NonOpenFlatLocusWeaklyAssociated.exists\_not\_isOpen\_flatLocus of StacksFrontier/Examples/Flatness/NonOpenFlatLocusWeaklyAssociated.lean. Flatness of a module on an algebraic space over the target is Tag 05VV, read on the commuting squares of etale scheme charts”.
 
 > **Stacks 0DLR: `F|_U` is flat over `Y`.**  For a morphism of algebraic spaces locally of
 > finite presentation, a module quasi-coherent of finite type on the small étale site and a target
@@ -306,8 +323,11 @@ theorem isFinitePresentationOnCharts_flatLocusRestrict (f : Xs ⟶ Ys)
 > the module `F|_U` on the open subspace `U = {x ∈ |X| : F flat at x over Y}` is flat over `Y` along
 > the composite `U ⟶ X ⟶ Y`, in the sense of Tag 05VV.
 >
-> All three conditions are the source's own, condition (3) read on one *surjective* étale scheme
-> chart of the target as the source's proof reads it.
+> Conditions (1) and (2) are the source's own; condition (3) is replaced by local finiteness of the
+> weakly associated points on one *surjective* étale scheme chart of the target, as the source's
+> proof reads it, which is the correction of Stacks 0DLR recorded in `errata.md` (with (3) on `|Y|`
+> the statement is false,
+> `Stacks.Examples.NonOpenFlatLocusWeaklyAssociated.exists_not_isOpen_flatLocus`).
 >
 > On a commuting square of étale scheme charts of `U ⟶ Y`, the chart of `U` is a chart of `X` whose
 > points all lie in the relative flat locus, so the square witnesses flatness at each of them by
@@ -338,7 +358,7 @@ theorem isFlatOver_flatLocusRestrict (f : Xs ⟶ Ys) (F : Modules.{u, u} B S hS 
 
 [Tag 0CVW](https://stacks.math.columbia.edu/tag/0CVW) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_affineChart_hasFreeSectionsAlongFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/ExistenceFreeSectionsAlongFibre.lean, line 205](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Flat/ExistenceFreeSectionsAlongFibre.lean#L205). The attribute's comment: “the etale neighbourhood, the affine scheme and its free sections are delivered; reduced to the affine etale chart of the target”.
+**`AlgebraicGeometry.Space.exists_affineChart_hasFreeSectionsAlongFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/ExistenceFreeSectionsAlongFibre.lean, line 205](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Flat/ExistenceFreeSectionsAlongFibre.lean#L205). The attribute's comment: “the etale neighbourhood, the affine scheme and its free sections are delivered; reduced to the affine etale chart of the target”.
 
 > **Stacks Project, Tag 0CVW**, reduced to the affine étale chart of the target at the
 > prescribed point.
@@ -390,7 +410,7 @@ theorem exists_affineChart_hasFreeSectionsAlongFibre {X Y : AlgebraicSpaces B S 
         (pointOfEtaleChart B S hS U) (pointsMap B S hS X.1 f.hom ⁻¹' {y})
 ```
 
-**`AlgebraicGeometry.Space.exists_affineChart_hasFreeSectionsAlongFibre_of_isFiniteTypeOnSite`**, an alias in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/ExistenceFreeSectionsAlongFibreOnSite.lean, line 48](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Flat/ExistenceFreeSectionsAlongFibreOnSite.lean#L48). The attribute's comment: “the etale neighbourhood, the affine scheme and its free sections are delivered, reduced to the affine etale chart of the target. At the source's own hypotheses: `F` of finite type on the small etale site of `X`, from which the finite type of each chart restriction follows by isFiniteTypeOnCharts\_of\_isFiniteTypeOnSite, which is proved”.
+**`AlgebraicGeometry.Space.exists_affineChart_hasFreeSectionsAlongFibre_of_isFiniteTypeOnSite`**, an alias in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/ExistenceFreeSectionsAlongFibreOnSite.lean, line 48](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Flat/ExistenceFreeSectionsAlongFibreOnSite.lean#L48). The attribute's comment: “the etale neighbourhood, the affine scheme and its free sections are delivered, reduced to the affine etale chart of the target. At the source's own hypotheses: `F` of finite type on the small etale site of `X`, from which the finite type of each chart restriction follows by isFiniteTypeOnCharts\_of\_isFiniteTypeOnSite, which is proved”.
 
 > **Stacks 0CVW**, at the source's own hypotheses.  Let `f : X ⟶ Y` be a finite type morphism
 > of algebraic spaces over `S`, let `F` be a finite type quasi-coherent `𝒪_X`-module and let `y`
@@ -406,7 +426,7 @@ theorem exists_affineChart_hasFreeSectionsAlongFibre {X Y : AlgebraicSpaces B S 
 alias exists_affineChart_hasFreeSectionsAlongFibre_of_isFiniteTypeOnSite
 ```
 
-**`AlgebraicGeometry.Space.exists_etale_affine_free_sections_along_fibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/FreeSectionsAlongFibreDiagram.lean, line 270](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Flat/FreeSectionsAlongFibreDiagram.lean#L270).
+**`AlgebraicGeometry.Space.exists_etale_affine_free_sections_along_fibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/FreeSectionsAlongFibreDiagram.lean, line 271](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Flat/FreeSectionsAlongFibreDiagram.lean#L271).
 
 > **Stacks Project, Tag 0CVW.** Let `f : X ⟶ Y` be a morphism of algebraic spaces over `S`, let
 > `𝓕` be a quasi-coherent `𝒪_X`-module and let `y ∈ |Y|`, with fibre `F = f^{-1}({y}) ⊆ |X|`.
@@ -461,7 +481,7 @@ theorem exists_etale_affine_free_sections_along_fibre {X Y : AlgebraicSpaces B S
 
 [Tag 0CWL](https://stacks.math.columbia.edu/tag/0CWL) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isFlatOverAtPoint_of_forall_isRelativeWeaklyAssociatedPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/FlatnessAtRelativeAssassin.lean, line 161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Flat/FlatnessAtRelativeAssassin.lean#L161). The attribute's comment: “the implication (2) => (1), which the tag asserts holds with no decency hypothesis: for f locally of finite type and F a finite type quasi-coherent module, flatness of F over Y at every point of the fibre over y which lies in Ass\_\{X/Y}(F) and specializes to x gives flatness of F over Y at x. UNCONDITIONAL -- nothing is carried: the case of schemes is More on Flatness Theorem 05UA (2) => (1), proved in this library as AlgebraicGeometry.isFlatOverAt\_of\_forall\_mem\_relativeAssassin\_specializes, and the reduction to a commuting square of etale scheme charts is proved here”.
+**`AlgebraicGeometry.Space.isFlatOverAtPoint_of_forall_isRelativeWeaklyAssociatedPoint`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/FlatnessAtRelativeAssassin.lean, line 161](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Flat/FlatnessAtRelativeAssassin.lean#L161). The attribute's comment: “the implication (2) => (1), which the tag asserts holds with no decency hypothesis: for f locally of finite type and F a finite type quasi-coherent module, flatness of F over Y at every point of the fibre over y which lies in Ass\_\{X/Y}(F) and specializes to x gives flatness of F over Y at x. UNCONDITIONAL -- nothing is carried: the case of schemes is More on Flatness Theorem 05UA (2) => (1), proved in this library as AlgebraicGeometry.isFlatOverAt\_of\_forall\_mem\_relativeAssassin\_specializes, and the reduction to a commuting square of etale scheme charts is proved here”.
 
 > **Stacks 0CWL, the implication (2) ⟹ (1).** Let `f : X ⟶ Y` be a morphism of algebraic
 > spaces over `S` which is locally of finite type, let `𝓕` be a quasi-coherent `𝒪_X`-module of
@@ -487,7 +507,7 @@ theorem isFlatOverAtPoint_of_forall_isRelativeWeaklyAssociatedPoint (f : X ⟶ Y
     IsFlatOverAtPoint B S hS X.2 f.hom F x
 ```
 
-**`AlgebraicGeometry.Space.isFlatOverAtPoint_of_specializes_of_isDecentSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/FlatnessAtRelativeAssassin.lean, line 217](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Flat/FlatnessAtRelativeAssassin.lean#L217). The attribute's comment: “the implication (1) => (2) for decent X, UNCONDITIONALLY -- nothing is carried: flatness of F over Y at x gives flatness of F over Y at every point of |X| which specializes to x. This is stronger than the tag's clause (2) in four ways: the point is not required to lie in Ass\_\{X/Y}(F), it is not required to lie in the set-theoretic fibre through x, decency of Y is not needed, and f locally of finite type and F of finite type are not needed and are not hypotheses; quasi-coherence of F and decency of X are”.
+**`AlgebraicGeometry.Space.isFlatOverAtPoint_of_specializes_of_isDecentSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/FlatnessAtRelativeAssassin.lean, line 217](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Flat/FlatnessAtRelativeAssassin.lean#L217). The attribute's comment: “the implication (1) => (2) for decent X, UNCONDITIONALLY -- nothing is carried: flatness of F over Y at x gives flatness of F over Y at every point of |X| which specializes to x. This is stronger than the tag's clause (2) in four ways: the point is not required to lie in Ass\_\{X/Y}(F), it is not required to lie in the set-theoretic fibre through x, decency of Y is not needed, and f locally of finite type and F of finite type are not needed and are not hypotheses; quasi-coherence of F and decency of X are”.
 
 > **Stacks 0CWL, the implication (1) ⟹ (2), for decent `X`.** Let `f : X ⟶ Y` be a morphism
 > of algebraic spaces over `S` with `X` decent and let `𝓕` be a quasi-coherent `𝒪_X`-module which
@@ -516,7 +536,7 @@ theorem isFlatOverAtPoint_of_specializes_of_isDecentSpace (f : X ⟶ Y)
 
 [Tag 0CWM](https://stacks.math.columbia.edu/tag/0CWM) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isFlatOver_of_forall_specializes_closedFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/FlatnessOverLocalBase.lean, line 349](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Flat/FlatnessOverLocalBase.lean#L349). The attribute's comment: “the lemma's implication: from its hypotheses (1) and (2) to flatness of ℱ over the local base. UNCONDITIONAL -- nothing is carried and no decency of X is assumed: the step the source's proof invokes, the implication (2) => (1) of Stacks 0CWL, is proved here for arbitrary X and Y as isFlatOverAtPoint\_of\_forall\_isRelativeWeaklyAssociatedPoint, and the passage of flatness from a point of the closed fibre to a point of Ass\_\{X/S}(F) specializing to it is proved here as isFlatOverAtPoint\_of\_specializes\_of\_isRelativeWeaklyAssociatedPoint, using only that the local base is a decent space. The closedness of s is a hypothesis of the statement that the implication does not use”.
+**`AlgebraicGeometry.Space.isFlatOver_of_forall_specializes_closedFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/FlatnessOverLocalBase.lean, line 353](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Flat/FlatnessOverLocalBase.lean#L353). The attribute's comment: “the statement of the lemma: over a local scheme S with closed point s, for f locally of finite type and F a finite type quasi-coherent module, hypotheses (1) every point of Ass\_\{X/S}(F) specializes to a point of X\_s and (2) F is flat over S at every point of X\_s give flatness of F over S. Proved with no decency of X: the step of the source's proof, Stacks 0CWL (2) => (1), is isFlatOverAtPoint\_of\_forall\_isRelativeWeaklyAssociatedPoint, and the passage of flatness from a point of X\_s to a point of Ass\_\{X/S}(F) specializing to it is isFlatOverAtPoint\_of\_specializes\_of\_isRelativeWeaklyAssociatedPoint, which uses that the local base is a decent space. The two examples of the footnote are isFlatOver\_of\_isPureAbove\_of\_isAffineLocalAt and exists\_specializes\_closedFibre\_of\_isProper”.
 
 > **Stacks Project, Tag 0CWM.** Let `S` be a local scheme with closed point `s`, read as the
 > target `Y` of a morphism of algebraic spaces: the target is represented by a scheme of the site
@@ -550,6 +570,51 @@ theorem isFlatOver_of_forall_specializes_closedFibre {X Y : AlgebraicSpaces B S 
     IsFlatOver B S hS X.2 f.hom F
 ```
 
+**`AlgebraicGeometry.Space.isFlatOver_of_isPureAbove_of_isAffineLocalAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/FlatnessOverLocalBase.lean, line 384](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Flat/FlatnessOverLocalBase.lean#L384). The attribute's comment: “first example of the footnote: for f of finite type (and decent, as in the situation 0CV6 where purity is defined) and F pure along X\_s over the local base, hypothesis (1) holds, so hypothesis (2) gives flatness of F over S”.
+
+> **The first example of the footnote of Stacks 0CWM.** In a pre-pure situation — `f` of
+> finite type and decent, `ℱ` finite type and quasi-coherent — over a base which is affine local
+> with closed point `y`, purity of `ℱ` above `y` is enough: hypothesis (1) of Stacks 0CWM is then
+> automatic, so flatness of `ℱ` over the base at every point of the closed fibre already gives
+> flatness of `ℱ` over the base.
+>
+> Hypothesis (1) comes from `AlgebraicGeometry.Space.purityFibreSpecialization`, the
+> specialization step of Stacks 0CW3 clause (2), which is proved; the rest is
+> `AlgebraicGeometry.Space.isFlatOver_of_forall_specializes_fibre`, whose decency hypothesis on
+> the target holds because the affine local base is represented by a scheme of the site.
+
+```lean
+theorem isFlatOver_of_isPureAbove_of_isAffineLocalAt (P : PrePureSituation.{u, u} B S hS)
+    (hlocal : P.IsAffineLocalAt) (hpure : IsPureAbove P)
+    (hflat : ∀ θ : points B S hS P.X, pointsMap B S hS P.X P.f θ = P.y →
+      IsFlatOverAtPoint B S hS P.hX P.f P.F θ) :
+    IsFlatOver B S hS P.hX P.f P.F
+```
+
+**`AlgebraicGeometry.Space.exists_specializes_closedFibre_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Flat/FlatnessOverLocalBaseProper.lean, line 86](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Flat/FlatnessOverLocalBaseProper.lean#L86). The attribute's comment: “second example of the footnote: for f proper over the local base, every point of |X|, so every point of Ass\_\{X/S}(F), specializes to a point of the closed fibre X\_s”.
+
+> **The second example of the footnote of Stacks 0CWM: for `f` proper, hypothesis (1)
+> holds.** Let `Y` be a local scheme with closed point `s`, read as in
+> `AlgebraicGeometry.Space.isFlatOver_of_forall_specializes_closedFibre`, and let `f : X ⟶ Y` be
+> proper. Then every point of `|X|` — in particular every point of `Ass_{X/S}(ℱ)` for every
+> `𝒪_X`-module `ℱ` — specializes to a point of the closed fibre `X_s`.
+>
+> A proper morphism is universally closed, hence closed on points
+> (`AlgebraicGeometry.Space.isClosedMap_pointsMap_of_pullback_fst_id`), so the image of the
+> closure of `{x'}` is a closed subset of `|Y|` containing `f(x')`; every point of the local base
+> specializes to `s` (`AlgebraicGeometry.Space.specializes_of_isClosed_of_isLocalBase`), so `s`
+> lies in that image.
+
+```lean
+theorem exists_specializes_closedFibre_of_isProper {X Y : AlgebraicSpaces B S hS} (f : X ⟶ Y)
+    (s : points B S hS Y.1)
+    (hlocal : ∃ (T : BigFppfOver B S hS) (A : CommRingCat.{u}), IsLocalRing A ∧
+      Nonempty (Spec A ≅ (BigFppfOver.toScheme B S hS).obj T) ∧ Nonempty (yoneda.obj T ≅ Y.1))
+    (hs : IsClosed ({s} : Set (points B S hS Y.1))) (hprop : IsProper B S hS f.hom)
+    (x' : points B S hS X.1) :
+    ∃ θ : points B S hS X.1, x' ⤳ θ ∧ pointsMap B S hS X.1 f.hom θ = s
+```
+
 ## Depends on
 
 No dependencies are recorded: this chapter reads the repository's source text without running Lean, which edges between declarations need.
@@ -557,4 +622,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 77.4, Tag 0CVJ](https://stacks.math.columbia.edu/tag/0CVJ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

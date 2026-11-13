@@ -8,13 +8,13 @@ proof: formalized
 
 # 10.91 Examples and non-examples of Mittag-Leffler modules
 
-Section 10.91 of the Stacks Project, [Tag 059Q](https://stacks.math.columbia.edu/tag/059Q). 4 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 10.91 of the Stacks Project, [Tag 059Q](https://stacks.math.columbia.edu/tag/059Q). 4 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 059R, an example
 
 [Tag 059R](https://stacks.math.columbia.edu/tag/059R) in the Stacks Project.
 
-**`Module.mittagLeffler_iff_finitePresentation_and_mittagLeffler_of_projective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/MittagLeffler/Basic.lean, line 336](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/MittagLeffler/Basic.lean#L336). The attribute's comment: “Items (1) and (3) together, over one module and with the two hypotheses as antecedents; the forms to cite are the two halves. Mittag-Leffler is spelled out inline as condition (1) of 059E, as in 059M, 059N and 059P. Test data in the universe of `M`, whence `Small.{v} R`. See the module docstring.”.
+**`Module.mittagLeffler_iff_finitePresentation_and_mittagLeffler_of_projective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/MittagLeffler/Basic.lean, line 336](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/MittagLeffler/Basic.lean#L336). The attribute's comment: “Items (1) and (3) together, over one module and with the two hypotheses as antecedents; the forms to cite are the two halves. Mittag-Leffler is spelled out inline as condition (1) of 059E, as in 059M, 059N and 059P. Test data in the universe of `M`, whence `Small.{v} R`. See the module docstring.”.
 
 > **Stacks 059R.** Let `R` be a commutative ring and `M` an `R`-module. Then (1) if `M` is
 > finitely generated, `M` is Mittag-Leffler if and only if `M` is finitely presented — in particular
@@ -44,7 +44,7 @@ public theorem Module.mittagLeffler_iff_finitePresentation_and_mittagLeffler_of_
               [Module R N], LinearMap.ker (f.rTensor N) = LinearMap.ker (g.rTensor N))
 ```
 
-**`Module.mittagLeffler_iff_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/MittagLeffler/Basic.lean, line 360](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/MittagLeffler/Basic.lean#L360). The attribute's comment: “Item (1), with the finite generation an instance hypothesis; `finitely presented implies Mittag-Leffler` is the direction `←`, via `instFiniteOfFinitePresentation`.”.
+**`Module.mittagLeffler_iff_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/MittagLeffler/Basic.lean, line 360](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/MittagLeffler/Basic.lean#L360). The attribute's comment: “Item (1), with the finite generation an instance hypothesis; `finitely presented implies Mittag-Leffler` is the direction `←`, via `instFiniteOfFinitePresentation`.”.
 
 > **Stacks 059R, item (1).** Let `R` be a commutative ring and `M` a finitely generated
 > `R`-module. Then `M` is Mittag-Leffler if and only if `M` is finitely presented; in particular
@@ -64,7 +64,7 @@ public theorem Module.mittagLeffler_iff_finitePresentation (R : Type u) [CommRin
       Module.FinitePresentation R M
 ```
 
-**`Module.mittagLeffler_of_projective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/MittagLeffler/Basic.lean, line 376](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/MittagLeffler/Basic.lean#L376). The attribute's comment: “Items (2) and (3), with the projectivity an instance hypothesis; item (2), a free module, is this statement via `Module.Projective.of_free`.”.
+**`Module.mittagLeffler_of_projective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/MittagLeffler/Basic.lean, line 376](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/MittagLeffler/Basic.lean#L376). The attribute's comment: “Items (2) and (3), with the projectivity an instance hypothesis; item (2), a free module, is this statement via `Module.Projective.of_free`.”.
 
 > **Stacks 059R, items (2) and (3).** Let `R` be a commutative ring and `M` a projective
 > `R`-module, in particular a free one, `Module.Projective.of_free` being an instance. Then `M` is
@@ -85,7 +85,7 @@ public theorem Module.mittagLeffler_of_projective (R : Type u) [CommRing R] [Sma
 
 [Tag 059S](https://stacks.math.columbia.edu/tag/059S) in the Stacks Project.
 
-**`Module.mittagLeffler_iff_exists_isLeast_mem_range_rTensor_subtype`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/MittagLeffler/Flat.lean, line 631](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/MittagLeffler/Flat.lean#L631). The attribute's comment: “Mittag-Leffler is spelled out inline as condition (1) of 059E, as in 059M and 0AS6; `finite free` is `Module.Free` and `Module.Finite`, `x ∈ F' ⊗_R M` is membership in the range of `F'.subtype.rTensor M`, and `smallest` is `IsLeast`. Test data in the universe of `M`, whence `Small.{v} R`. See the module docstring.”.
+**`Module.mittagLeffler_iff_exists_isLeast_mem_range_rTensor_subtype`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/MittagLeffler/Flat.lean, line 630](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/MittagLeffler/Flat.lean#L630). The attribute's comment: “Mittag-Leffler is spelled out inline as condition (1) of 059E, as in 059M and 0AS6; `finite free` is `Module.Free` and `Module.Finite`, `x ∈ F' ⊗_R M` is membership in the range of `F'.subtype.rTensor M`, and `smallest` is `IsLeast`. Test data in the universe of `M`, whence `Small.{v} R`. See the module docstring.”.
 
 > Let `R` be a commutative ring and let `M` be a flat `R`-module. Then `M` is Mittag-Leffler if
 > and only if for every finite free `R`-module `F` and every `x ∈ F ⊗[R] M` there is a smallest
@@ -113,7 +113,7 @@ public theorem Module.mittagLeffler_iff_exists_isLeast_mem_range_rTensor_subtype
 
 [Tag 05D0](https://stacks.math.columbia.edu/tag/05D0) in the Stacks Project.
 
-**`Module.flat_and_mittagLeffler_pi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/MittagLeffler/Pi.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/MittagLeffler/Pi.lean#L162). The attribute's comment: “Mittag-Leffler is spelled out inline as condition (1) of 059E, as in 059M, 059S and 0AS6; `R^A` is the `Pi` module `A → R`, as in item (3) of 05CZ, and the two conclusions are one conjunction, as in the source. Test data in the universe of `R` and `A`. See the module docstring.”.
+**`Module.flat_and_mittagLeffler_pi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/MittagLeffler/Pi.lean, line 162](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/MittagLeffler/Pi.lean#L162). The attribute's comment: “Mittag-Leffler is spelled out inline as condition (1) of 059E, as in 059M, 059S and 0AS6; `R^A` is the `Pi` module `A → R`, as in item (3) of 05CZ, and the two conclusions are one conjunction, as in the source. Test data in the universe of `R` and `A`. See the module docstring.”.
 
 > Let `R` be a Noetherian ring and `A` a set. Then `M = R^A`, the `R`-module of functions
 > `A → R`, is a flat and Mittag-Leffler `R`-module.
@@ -137,7 +137,7 @@ theorem Module.flat_and_mittagLeffler_pi (R : Type u) [CommRing R] [IsNoetherian
 
 [Tag 059T](https://stacks.math.columbia.edu/tag/059T) in the Stacks Project.
 
-**`Module.flat_and_mittagLeffler_mvPowerSeries`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/MittagLeffler/MvPowerSeries.lean, line 127](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/MittagLeffler/MvPowerSeries.lean#L127). The attribute's comment: “The source's `0 < n` is dropped as unused: at `n = 0` the module is free of rank one, hence flat and Mittag-Leffler. Mittag-Leffler is spelled out inline as condition (1) of 059E, as in 05D0, 059M, 059S and 0AS6; `R[[t_1, …, t_n]]` is `MvPowerSeries (Fin n) R`, the product over the monomials with its coefficientwise `R`-module structure, and the two conclusions are one conjunction, as in the source. Test data in the universe of `R`. See the module docstring.”.
+**`Module.flat_and_mittagLeffler_mvPowerSeries`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/MittagLeffler/MvPowerSeries.lean, line 127](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/MittagLeffler/MvPowerSeries.lean#L127). The attribute's comment: “The source's `0 < n` is dropped as unused: at `n = 0` the module is free of rank one, hence flat and Mittag-Leffler. Mittag-Leffler is spelled out inline as condition (1) of 059E, as in 05D0, 059M, 059S and 0AS6; `R[[t_1, …, t_n]]` is `MvPowerSeries (Fin n) R`, the product over the monomials with its coefficientwise `R`-module structure, and the two conclusions are one conjunction, as in the source. Test data in the universe of `R`. See the module docstring.”.
 
 > Let `R` be a Noetherian ring and let `n : ℕ`. Then the power series module
 > `M = R[[t_1, …, t_n]]`, regarded as an `R`-module, is flat and Mittag-Leffler.
@@ -165,4 +165,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.91, Tag 059Q](https://stacks.math.columbia.edu/tag/059Q)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -1,8 +1,8 @@
 # 88 Algebraization of Formal Spaces
 
-Chapter 88 of the Stacks Project, *Algebraization of Formal Spaces*, [Tag 0AM7](https://stacks.math.columbia.edu/tag/0AM7): the 29 sections of its 30 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 174 tags are carried by 310 declarations of the repository (all in StacksFrontier) and 3 registered declarations.
+Chapter 88 of the Stacks Project, *Algebraization of Formal Spaces*, [Tag 0AM7](https://stacks.math.columbia.edu/tag/0AM7): the 29 sections of its 30 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 174 tags are carried by 291 declarations of the repository (all in StacksFrontier) and 3 registered declarations.
 
-## [88.2 Two categories to 88.17 Rig-smooth homomorphisms](part-01/README.md)
+## [88.2 Two categories to 88.18 Rig-smooth morphisms](part-01/README.md)
 
 - [88.2 Two categories](part-01/88-2-two-categories.md)
 - [88.3 A naive cotangent complex](part-01/88-3-a-naive-cotangent-complex.md)
@@ -20,10 +20,10 @@ Chapter 88 of the Stacks Project, *Algebraization of Formal Spaces*, [Tag 0AM7](
 - [88.15 Rig-flat homomorphisms](part-01/88-15-rig-flat-homomorphisms.md)
 - [88.16 Rig-flat morphisms](part-01/88-16-rig-flat-morphisms.md)
 - [88.17 Rig-smooth homomorphisms](part-01/88-17-rig-smooth-homomorphisms.md)
+- [88.18 Rig-smooth morphisms](part-01/88-18-rig-smooth-morphisms.md)
 
-## [88.18 Rig-smooth morphisms to 88.30 Application to…](part-02/README.md)
+## [88.19 Rig-étale homomorphisms to 88.30 Application to…](part-02/README.md)
 
-- [88.18 Rig-smooth morphisms](part-02/88-18-rig-smooth-morphisms.md)
 - [88.19 Rig-étale homomorphisms](part-02/88-19-rig-etale-homomorphisms.md)
 - [88.20 Rig-étale morphisms](part-02/88-20-rig-etale-morphisms.md)
 - [88.21 Rig-surjective morphisms](part-02/88-21-rig-surjective-morphisms.md)

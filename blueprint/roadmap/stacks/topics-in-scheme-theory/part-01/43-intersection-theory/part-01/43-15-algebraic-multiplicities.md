@@ -8,13 +8,13 @@ proof: formalized
 
 # 43.15 Algebraic multiplicities
 
-Section 43.15 of the Stacks Project, [Tag 0AZU](https://stacks.math.columbia.edu/tag/0AZU). 6 tags here are carried by 17 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 43.15 of the Stacks Project, [Tag 0AZU](https://stacks.math.columbia.edu/tag/0AZU). 6 tags here are carried by 17 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0AZV, a definition
 
 [Tag 0AZV](https://stacks.math.columbia.edu/tag/0AZV) in the Stacks Project.
 
-**`Ideal.hilbertSamuelMultiplicity`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/AlgebraicMultiplicities/Defs.lean, line 52](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Intersection/AlgebraicMultiplicities/Defs.lean#L52). The attribute's comment: “the multiplicity `e_I(M, d)`”. References: SGA 7 X (2.6).
+**`Ideal.hilbertSamuelMultiplicity`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/AlgebraicMultiplicities/Defs.lean, line 52](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Intersection/AlgebraicMultiplicities/Defs.lean#L52). The attribute's comment: “the multiplicity `e_I(M, d)`”. References: SGA 7 X (2.6).
 
 > The Hilbert–Samuel multiplicity `e_I(M, d)`: `d !` times the coefficient of degree `d`
 > of the rational polynomial eventually computing `length_R (M / I ^ (n + 1) M)`.
@@ -28,7 +28,7 @@ public noncomputable def Ideal.hilbertSamuelMultiplicity {R : Type*} [CommRing R
     (I : Ideal R) (M : Type*) [AddCommGroup M] [Module R M] (d : ℕ) : ℚ
 ```
 
-**`Ideal.hilbertSamuelMultiplicityOfModule`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/AlgebraicMultiplicities/Defs.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Intersection/AlgebraicMultiplicities/Defs.lean#L68). The attribute's comment: “the multiplicity `e_I(M)`”. References: SGA 7 X (2.6).
+**`Ideal.hilbertSamuelMultiplicityOfModule`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/AlgebraicMultiplicities/Defs.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Intersection/AlgebraicMultiplicities/Defs.lean#L68). The attribute's comment: “the multiplicity `e_I(M)`”. References: SGA 7 X (2.6).
 
 > The multiplicity `e_I(M)` of `M` for `I`, obtained by taking the coefficient in the
 > Hilbert–Samuel degree of `M`. For a finite module over a Noetherian local ring that degree is the
@@ -45,7 +45,7 @@ public noncomputable abbrev Ideal.hilbertSamuelMultiplicityOfModule {R : Type*} 
 
 [Tag 0AZW](https://stacks.math.columbia.edu/tag/0AZW) in the Stacks Project.
 
-**`Ideal.hilbertSamuelMultiplicity_additive_of_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/AlgebraicMultiplicities/Additivity.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Intersection/AlgebraicMultiplicities/Additivity.lean#L155).
+**`Ideal.hilbertSamuelMultiplicity_additive_of_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/AlgebraicMultiplicities/Additivity.lean, line 155](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Intersection/AlgebraicMultiplicities/Additivity.lean#L155).
 
 > Hilbert–Samuel multiplicity in degree `d` is additive in a short exact sequence of
 > finite modules, provided `d` is at least the dimension of the support of the middle term.
@@ -68,7 +68,7 @@ theorem hilbertSamuelMultiplicity_additive_of_exact
 
 [Tag 0AZX](https://stacks.math.columbia.edu/tag/0AZX) in the Stacks Project.
 
-**`Ideal.hilbertSamuelMultiplicity_eq_finsum_localizedLength_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/AlgebraicMultiplicities/PrimeFiltration.lean, line 308](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Intersection/AlgebraicMultiplicities/PrimeFiltration.lean#L308).
+**`Ideal.hilbertSamuelMultiplicity_eq_finsum_localizedLength_mul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/AlgebraicMultiplicities/PrimeFiltration.lean, line 308](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Intersection/AlgebraicMultiplicities/PrimeFiltration.lean#L308).
 
 > Let `I` be an ideal of definition in a Noetherian local ring `R`, and let `M` be a
 > finite `R`-module. In every degree at least the dimension of the support of `M`, its
@@ -94,14 +94,14 @@ theorem hilbertSamuelMultiplicity_eq_finsum_localizedLength_mul
 
 Declarations registered for the tag:
 
-- [`Polynomial.fwdDiff_iter_degree_eq_factorial`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Polynomial.fwdDiff_iter_degree_eq_factorial#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch43.lean, line 16](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch43.lean#L16) (StacksFrontier): “the `r`-th forward difference of `P` is `r! a`”.
-- [`fwdDiff_iter_eq_sum_shift`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=fwdDiff_iter_eq_sum_shift#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch43.lean, line 18](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch43.lean#L18) (StacksFrontier): “the `r`-th forward difference as the alternating sum, at `t - r`”.
+- [`Polynomial.fwdDiff_iter_degree_eq_factorial`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=Polynomial.fwdDiff_iter_degree_eq_factorial#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch43.lean, line 16](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch43.lean#L16) (StacksFrontier): “the `r`-th forward difference of `P` is `r! a`”.
+- [`fwdDiff_iter_eq_sum_shift`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=fwdDiff_iter_eq_sum_shift#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch43.lean, line 18](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch43.lean#L18) (StacksFrontier): “the `r`-th forward difference as the alternating sum, at `t - r`”.
 
 ## Tag 0AZZ, a theorem
 
 [Tag 0AZZ](https://stacks.math.columbia.edu/tag/0AZZ) in the Stacks Project.
 
-**`Ideal.hilbertSamuelMultiplicity_eq_alternatingSum_koszulHomology_length`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/AlgebraicMultiplicities/KoszulEuler.lean, line 603](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Intersection/AlgebraicMultiplicities/KoszulEuler.lean#L603).
+**`Ideal.hilbertSamuelMultiplicity_eq_alternatingSum_koszulHomology_length`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/AlgebraicMultiplicities/KoszulEuler.lean, line 603](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Intersection/AlgebraicMultiplicities/KoszulEuler.lean#L603).
 
 > If an ideal of definition `I` is generated by `f : Fin r → A`, then its Hilbert–Samuel
 > multiplicity in degree `r` on a finite module is the Euler characteristic of the homology of
@@ -122,7 +122,7 @@ theorem hilbertSamuelMultiplicity_eq_alternatingSum_koszulHomology_length
 
 [Tag 0B00](https://stacks.math.columbia.edu/tag/0B00) in the Stacks Project.
 
-**`Ideal.idealOfDefinition_support_length_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/AlgebraicMultiplicities/FiniteLengthConditions.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Intersection/AlgebraicMultiplicities/FiniteLengthConditions.lean#L97). The attribute's comment: “finite\_length\_conditions”.
+**`Ideal.idealOfDefinition_support_length_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/AlgebraicMultiplicities/FiniteLengthConditions.lean, line 97](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Intersection/AlgebraicMultiplicities/FiniteLengthConditions.lean#L97). The attribute's comment: “finite\_length\_conditions”.
 
 > **Stacks Project, Tag 0B00, finite-length conditions.** Let `M` be a finite module over a
 > Noetherian local ring and `I` an ideal. If `M / IM` is nonzero, then the following are
@@ -152,7 +152,7 @@ theorem idealOfDefinition_support_length_tfae
       Module.length R (M ⧸ I • (⊤ : Submodule R M)) < ⊤]
 ```
 
-**`Ideal.generalizedHilbertFunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/AlgebraicMultiplicities/GeneralizedHilbertFunction.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Intersection/AlgebraicMultiplicities/GeneralizedHilbertFunction.lean#L143). The attribute's comment: “generalized\_hilbert\_function”.
+**`Ideal.generalizedHilbertFunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/AlgebraicMultiplicities/GeneralizedHilbertFunction.lean, line 143](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Intersection/AlgebraicMultiplicities/GeneralizedHilbertFunction.lean#L143). The attribute's comment: “generalized\_hilbert\_function”.
 
 > The generalized Hilbert function `χ_{I,M}(n) = length_R(M / I^n M)`.
 
@@ -162,7 +162,7 @@ noncomputable def generalizedHilbertFunction
     [AddCommGroup M] [Module R M] (n : ℕ) : ℕ∞
 ```
 
-**`Ideal.generalizedHilbertFunction_lt_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/AlgebraicMultiplicities/GeneralizedHilbertFunction.lean, line 150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Intersection/AlgebraicMultiplicities/GeneralizedHilbertFunction.lean#L150). The attribute's comment: “generalized\_hilbert\_function”.
+**`Ideal.generalizedHilbertFunction_lt_top`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/AlgebraicMultiplicities/GeneralizedHilbertFunction.lean, line 150](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Intersection/AlgebraicMultiplicities/GeneralizedHilbertFunction.lean#L150). The attribute's comment: “generalized\_hilbert\_function”.
 
 > If `M / IM` has finite length, then so does `M / I^n M` for every `n`.
 
@@ -175,7 +175,7 @@ theorem generalizedHilbertFunction_lt_top
     (n : ℕ) : Ideal.generalizedHilbertFunction I M n < ⊤
 ```
 
-**`Ideal.generalizedHilbertFunction_eq_sum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/AlgebraicMultiplicities/GeneralizedHilbertFunction.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Intersection/AlgebraicMultiplicities/GeneralizedHilbertFunction.lean#L162). The attribute's comment: “generalized\_hilbert\_function”.
+**`Ideal.generalizedHilbertFunction_eq_sum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/AlgebraicMultiplicities/GeneralizedHilbertFunction.lean, line 162](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Intersection/AlgebraicMultiplicities/GeneralizedHilbertFunction.lean#L162). The attribute's comment: “generalized\_hilbert\_function”.
 
 > The length of `M / I^n M` is the sum of the lengths of its successive `I`-adic layers,
 > including the empty sum when `n = 0`.
@@ -192,7 +192,7 @@ theorem generalizedHilbertFunction_eq_sum
               (I ^ p • (⊤ : Submodule R M)))
 ```
 
-**`Ideal.exists_computesGeneralizedHilbertPoly_degree_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/AlgebraicMultiplicities/GeneralizedHilbertPolynomial.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Intersection/AlgebraicMultiplicities/GeneralizedHilbertPolynomial.lean#L78). The attribute's comment: “eventual\_polynomiality”. References: EGA 0 (16.2.1), “partial”.
+**`Ideal.exists_computesGeneralizedHilbertPoly_degree_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/AlgebraicMultiplicities/GeneralizedHilbertPolynomial.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Intersection/AlgebraicMultiplicities/GeneralizedHilbertPolynomial.lean#L78). The attribute's comment: “eventual\_polynomiality”. References: EGA 0 (16.2.1), “partial”.
 
 > **Stacks Project, Tag 0B00, eventual polynomiality.** Let `M` be a finite module over a
 > Noetherian local ring and let `I` be an ideal with `M / IM` of finite length. For every
@@ -208,7 +208,7 @@ theorem exists_computesGeneralizedHilbertPoly_degree_le
     ∃ P : ℚ[X], I.ComputesGeneralizedHilbertPoly M P ∧ P.degree ≤ (d : WithBot ℕ)
 ```
 
-**`Ideal.exists_degree_lt_generalizedHilbertFunction_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/AlgebraicMultiplicities/GeneralizedHilbertPolynomial.lean, line 109](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Intersection/AlgebraicMultiplicities/GeneralizedHilbertPolynomial.lean#L109). The attribute's comment: “asymptotics”.
+**`Ideal.exists_degree_lt_generalizedHilbertFunction_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/AlgebraicMultiplicities/GeneralizedHilbertPolynomial.lean, line 109](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Intersection/AlgebraicMultiplicities/GeneralizedHilbertPolynomial.lean#L109). The attribute's comment: “asymptotics”.
 
 > **Stacks Project, Tag 0B00, asymptotics of the generalized Hilbert function.** Let `M` be
 > a finite module over a Noetherian local ring and let `I` be an ideal with `M / IM` of finite
@@ -229,7 +229,7 @@ theorem exists_degree_lt_generalizedHilbertFunction_eq
             / (d.factorial : ℚ) + Q.eval (n : ℚ)
 ```
 
-**`Ideal.generalizedHilbertSamuelMultiplicity`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/AlgebraicMultiplicities/GeneralizedMultiplicity.lean, line 45](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Intersection/AlgebraicMultiplicities/GeneralizedMultiplicity.lean#L45). The attribute's comment: “generalized\_multiplicity”. References: SGA 7 X (2.6).
+**`Ideal.generalizedHilbertSamuelMultiplicity`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/AlgebraicMultiplicities/GeneralizedMultiplicity.lean, line 45](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Intersection/AlgebraicMultiplicities/GeneralizedMultiplicity.lean#L45). The attribute's comment: “generalized\_multiplicity”. References: SGA 7 X (2.6).
 
 > The generalized Hilbert–Samuel multiplicity `e_I(M, d)`: `d !` times the coefficient of
 > degree `d` in the rational polynomial eventually computing `length_R (M / I ^ n M)`.
@@ -243,7 +243,7 @@ noncomputable def Ideal.generalizedHilbertSamuelMultiplicity {R : Type*} [CommRi
     (I : Ideal R) (M : Type*) [AddCommGroup M] [Module R M] (d : ℕ) : ℚ
 ```
 
-**`Ideal.generalizedHilbertFunction_add_annihilator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/AlgebraicMultiplicities/Invariance.lean, line 44](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Intersection/AlgebraicMultiplicities/Invariance.lean#L44). The attribute's comment: “invariance\_under\_adding\_annihilator”.
+**`Ideal.generalizedHilbertFunction_add_annihilator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/AlgebraicMultiplicities/Invariance.lean, line 44](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Intersection/AlgebraicMultiplicities/Invariance.lean#L44). The attribute's comment: “invariance\_under\_adding\_annihilator”.
 
 > Adding the annihilator of `M` to `I` does not change the length of `M / I^n M`.
 
@@ -255,7 +255,7 @@ theorem generalizedHilbertFunction_add_annihilator
       Ideal.generalizedHilbertFunction I M n
 ```
 
-**`Ideal.generalizedHilbertFunction_add_annihilator_eq_map_quotientAnnihilator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/AlgebraicMultiplicities/Invariance.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Intersection/AlgebraicMultiplicities/Invariance.lean#L55). The attribute's comment: “invariance\_under\_quotient\_by\_annihilator”.
+**`Ideal.generalizedHilbertFunction_add_annihilator_eq_map_quotientAnnihilator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/AlgebraicMultiplicities/Invariance.lean, line 55](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Intersection/AlgebraicMultiplicities/Invariance.lean#L55). The attribute's comment: “invariance\_under\_quotient\_by\_annihilator”.
 
 > The generalized Hilbert function is unchanged by passing from `I + Ann(M)` over `R` to the
 > image of `I` over `R / Ann(M)`.
@@ -270,7 +270,7 @@ theorem generalizedHilbertFunction_add_annihilator_eq_map_quotientAnnihilator
         (Ideal.map (Ideal.Quotient.mk (Module.annihilator R M)) I) M n
 ```
 
-**`Ideal.generalizedHilbertSamuelMultiplicity_add_annihilator_eq_map_quotientAnnihilator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/AlgebraicMultiplicities/Invariance.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Intersection/AlgebraicMultiplicities/Invariance.lean#L77). The attribute's comment: “invariance\_under\_quotient\_by\_annihilator”.
+**`Ideal.generalizedHilbertSamuelMultiplicity_add_annihilator_eq_map_quotientAnnihilator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/AlgebraicMultiplicities/Invariance.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Intersection/AlgebraicMultiplicities/Invariance.lean#L77). The attribute's comment: “invariance\_under\_quotient\_by\_annihilator”.
 
 > Generalized Hilbert–Samuel multiplicities are unchanged by passing to the quotient ring by
 > the annihilator of the module.
@@ -285,7 +285,7 @@ theorem generalizedHilbertSamuelMultiplicity_add_annihilator_eq_map_quotientAnni
         (Ideal.map (Ideal.Quotient.mk (Module.annihilator R M)) I) M d
 ```
 
-**`Ideal.add_annihilator_pow_smul_top`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/AlgebraicMultiplicities/QuotientAnnihilator.lean, line 40](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Intersection/AlgebraicMultiplicities/QuotientAnnihilator.lean#L40). The attribute's comment: “quotient\_power\_equalities”.
+**`Ideal.add_annihilator_pow_smul_top`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/AlgebraicMultiplicities/QuotientAnnihilator.lean, line 40](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Intersection/AlgebraicMultiplicities/QuotientAnnihilator.lean#L40). The attribute's comment: “quotient\_power\_equalities”.
 
 > **Stacks Project, Tag 0B00, quotient power equalities.** Adjoining the annihilator of a
 > module to an ideal does not change the submodule generated by any power of that ideal.
@@ -298,7 +298,7 @@ lemma add_annihilator_pow_smul_top
       I ^ n • (⊤ : Submodule R M)
 ```
 
-**`Ideal.map_quotientAnnihilator_pow_smul_top`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/AlgebraicMultiplicities/QuotientAnnihilator.lean, line 61](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Intersection/AlgebraicMultiplicities/QuotientAnnihilator.lean#L61). The attribute's comment: “quotient\_power\_equalities”.
+**`Ideal.map_quotientAnnihilator_pow_smul_top`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/AlgebraicMultiplicities/QuotientAnnihilator.lean, line 61](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Intersection/AlgebraicMultiplicities/QuotientAnnihilator.lean#L61). The attribute's comment: “quotient\_power\_equalities”.
 
 > **Stacks Project, Tag 0B00, quotient power equalities.** If `M` is regarded as a module
 > over `R / Ann(M)`, the image of a power of `I` generates the same submodule as that power of
@@ -321,4 +321,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 43.15, Tag 0AZU](https://stacks.math.columbia.edu/tag/0AZU)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

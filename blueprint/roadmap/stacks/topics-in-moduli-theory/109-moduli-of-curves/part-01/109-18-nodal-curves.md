@@ -8,13 +8,13 @@ proof: formalized
 
 # 109.18 Nodal curves
 
-Section 109.18 of the Stacks Project, [Tag 0DSX](https://stacks.math.columbia.edu/tag/0DSX). 2 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 109.18 of the Stacks Project, [Tag 0DSX](https://stacks.math.columbia.edu/tag/0DSX). 2 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0DSY, a lemma
 
 [Tag 0DSY](https://stacks.math.columbia.edu/tag/0DSY) in the Stacks Project.
 
-**`AlgebraicGeometry.nodalCurvesOpenSubstack`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesNodal.lean, line 1133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesNodal.lean#L1133). The attribute's comment: “the open substack and part (1): the characterisation on every family of curves, given a presentation of the algebraic stack of curves. Part (2), the characterisation for a proper scheme over a field, is NOT asserted here”.
+**`AlgebraicGeometry.nodalCurvesOpenSubstack`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesNodal.lean, line 1133](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesNodal.lean#L1133). The attribute's comment: “the open substack and part (1): the characterisation on every family of curves, given a presentation of the algebraic stack of curves. Part (2), the characterisation for a proper scheme over a field, is NOT asserted here”.
 
 > **Stacks 0DSY, part (1).** The open substack `Curves^{nodal}` of families of curves which are
 > at-worst-nodal of relative dimension one, together with the characterisation of its objects: an
@@ -43,7 +43,7 @@ def nodalCurvesOpenSubstack
           Space.IsAtWorstNodalOfRelativeDimensionOne B integerBase hZ F.toBase.hom}
 ```
 
-**`AlgebraicGeometry.classifying_factors_nodalCurvesOpenSubstack_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesNodal.lean, line 1202](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesNodal.lean#L1202). The attribute's comment: “part (1): the classifying morphism of a family factors through the nodal open substack iff the family is at-worst-nodal of relative dimension one, given a presentation of the algebraic stack of curves. Part (2), the characterisation for a proper scheme over a field, is NOT asserted here”.
+**`AlgebraicGeometry.classifying_factors_nodalCurvesOpenSubstack_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesNodal.lean, line 1202](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesNodal.lean#L1202). The attribute's comment: “part (1): the classifying morphism of a family factors through the nodal open substack iff the family is at-worst-nodal of relative dimension one, given a presentation of the algebraic stack of curves. Part (2), the characterisation for a proper scheme over a field, is NOT asserted here”.
 
 > **Stacks 0DSY, part (1).** The classifying object of a family of curves lifts through the
 > inclusion of the nodal open substack exactly when the family is at-worst-nodal of relative
@@ -63,7 +63,7 @@ theorem classifying_factors_nodalCurvesOpenSubstack_iff
       Space.IsAtWorstNodalOfRelativeDimensionOne B integerBase hZ F.toBase.hom
 ```
 
-**`AlgebraicGeometry.lifts_nodalCurves_curveFamilyOfProperOverField_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesNodalOverField.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesNodalOverField.lean#L190). The attribute's comment: “part (2): for a scheme X proper over a field k with dim(X) ≤ 1, the classifying morphism Spec(k) → Curves factors through Curves^\{nodal} if and only if the singularities of X are at-worst-nodal and X is equidimensional of dimension 1. Factoring through the substack is lifting the classifying object through the inclusion of the strictly full subcategory of at-worst-nodal families, as in AlgebraicGeometry.lifts\_nodalCurves\_iff; no part of Tag 04S6 is assumed, and this declaration carries no hypothesis beyond the source's”.
+**`AlgebraicGeometry.lifts_nodalCurves_curveFamilyOfProperOverField_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesNodalOverField.lean, line 190](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesNodalOverField.lean#L190). The attribute's comment: “part (2): for a scheme X proper over a field k with dim(X) ≤ 1, the classifying morphism Spec(k) → Curves factors through Curves^\{nodal} if and only if the singularities of X are at-worst-nodal and X is equidimensional of dimension 1. Factoring through the substack is lifting the classifying object through the inclusion of the strictly full subcategory of at-worst-nodal families, as in AlgebraicGeometry.lifts\_nodalCurves\_iff; no part of Tag 04S6 is assumed, and this declaration carries no hypothesis beyond the source's”.
 
 > **Stacks 0DSY, part (2).** Let `k` be a field and let `X ⟶ Spec(k)` be a morphism of the big
 > fppf site of the integers which is proper and whose source has dimension at most one. The
@@ -99,7 +99,7 @@ theorem lifts_nodalCurves_curveFamilyOfProperOverField_iff
           topologicalKrullDim Z = (1 : WithBot ℕ∞)))
 ```
 
-**`AlgebraicGeometry.lifts_nodalCurvesInclusion_curveFamilyOfProperOverField_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesNodalOverField.lean, line 236](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesNodalOverField.lean#L236). The attribute's comment: “part (2), stated through the inclusion 1-morphism AlgebraicGeometry.nodalCurvesInclusion of the open substack: for a scheme X proper over a field k with dim(X) ≤ 1, the classifying morphism Spec(k) → Curves factors through Curves^nodal if and only if the singularities of X are at-worst-nodal and X is equidimensional of dimension 1. Unconditional: no presentation of Curves as an algebraic stack (Tag 0D5A) and no part of Tag 04S6 is assumed, and this declaration carries no hypothesis beyond the source's”.
+**`AlgebraicGeometry.lifts_nodalCurvesInclusion_curveFamilyOfProperOverField_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesNodalOverField.lean, line 236](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesNodalOverField.lean#L236). The attribute's comment: “part (2), stated through the inclusion 1-morphism AlgebraicGeometry.nodalCurvesInclusion of the open substack: for a scheme X proper over a field k with dim(X) ≤ 1, the classifying morphism Spec(k) → Curves factors through Curves^nodal if and only if the singularities of X are at-worst-nodal and X is equidimensional of dimension 1. Unconditional: no presentation of Curves as an algebraic stack (Tag 0D5A) and no part of Tag 04S6 is assumed, and this declaration carries no hypothesis beyond the source's”.
 
 > **Stacks 0DSY, part (2).** Let `k` be a field and let `X ⟶ Spec(k)` be a morphism of the big
 > fppf site of the integers which is proper and whose source has dimension at most one. The
@@ -141,7 +141,7 @@ theorem lifts_nodalCurvesInclusion_curveFamilyOfProperOverField_iff
           topologicalKrullDim Z = (1 : WithBot ℕ∞)))
 ```
 
-**`AlgebraicGeometry.isNodalCurveFamily_of_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesNodalUnconditional.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesNodalUnconditional.lean#L70). The attribute's comment: “the open substack Curves^nodal, base-change clause: the at-worst-nodal condition is inherited along every morphism of families of curves, and a morphism of families is a cartesian square, so the subcategory is closed under base change. Unconditional: no presentation of Curves as an algebraic stack (Tag 0D5A) and no part of Tag 04S6 is assumed”.
+**`AlgebraicGeometry.isNodalCurveFamily_of_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesNodalUnconditional.lean, line 70](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesNodalUnconditional.lean#L70). The attribute's comment: “the open substack Curves^nodal, base-change clause: the at-worst-nodal condition is inherited along every morphism of families of curves, and a morphism of families is a cartesian square, so the subcategory is closed under base change. Unconditional: no presentation of Curves as an algebraic stack (Tag 0D5A) and no part of Tag 04S6 is assumed”.
 
 > A family of curves mapping to an at-worst-nodal family of relative dimension one is itself
 > at-worst-nodal of relative dimension one.
@@ -151,7 +151,7 @@ theorem isNodalCurveFamily_of_hom {F G : CurveFamily B hZ} (a : F ⟶ G)
     (hG : isNodalCurveFamily B hZ G) : isNodalCurveFamily B hZ F
 ```
 
-**`AlgebraicGeometry.isClosedUnderIsomorphisms_isNodalCurveFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesNodalUnconditional.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesNodalUnconditional.lean#L80). The attribute's comment: “the open substack Curves^nodal, strict-fullness clause: the at-worst-nodal condition is invariant under isomorphism of families of curves, so it cuts a strictly full subcategory out of Curves. Unconditional: no presentation of Curves as an algebraic stack (Tag 0D5A) and no part of Tag 04S6 is assumed”.
+**`AlgebraicGeometry.isClosedUnderIsomorphisms_isNodalCurveFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesNodalUnconditional.lean, line 80](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesNodalUnconditional.lean#L80). The attribute's comment: “the open substack Curves^nodal, strict-fullness clause: the at-worst-nodal condition is invariant under isomorphism of families of curves, so it cuts a strictly full subcategory out of Curves. Unconditional: no presentation of Curves as an algebraic stack (Tag 0D5A) and no part of Tag 04S6 is assumed”.
 
 > **Stacks 0DSY.** The nodal condition cuts a *strictly* full subcategory out of the category
 > of families of curves: it is invariant under isomorphism.
@@ -161,7 +161,7 @@ theorem isClosedUnderIsomorphisms_isNodalCurveFamily :
     (isNodalCurveFamily B hZ).IsClosedUnderIsomorphisms
 ```
 
-**`AlgebraicGeometry.nodalCurvesOpenSubstackUnconditional`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesNodalUnconditional.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesNodalUnconditional.lean#L111). The attribute's comment: “the open substack and part (1): the characterisation on every family of curves, given a presentation of the algebraic stack of curves. Part (2), the characterisation for a proper scheme over a field, is registered separately on `AlgebraicGeometry.lifts_nodalCurves_curveFamilyOfProperOverField_iff`”.
+**`AlgebraicGeometry.nodalCurvesOpenSubstackUnconditional`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesNodalUnconditional.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesNodalUnconditional.lean#L111). The attribute's comment: “the open substack and part (1): the characterisation on every family of curves, given a presentation of the algebraic stack of curves. Part (2), the characterisation for a proper scheme over a field, is registered separately on `AlgebraicGeometry.lifts_nodalCurves_curveFamilyOfProperOverField_iff`”.
 
 > **Stacks 0DSY, part (1).** The open substack `Curves^{nodal}` of families of curves which are
 > at-worst-nodal of relative dimension one, together with the characterisation of its objects: an
@@ -194,7 +194,7 @@ def nodalCurvesOpenSubstackUnconditional
           Space.IsAtWorstNodalOfRelativeDimensionOne B integerBase hZ F.toBase.hom}
 ```
 
-**`AlgebraicGeometry.classifying_factors_nodalCurvesOpenSubstack_iff_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesNodalUnconditional.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesNodalUnconditional.lean#L133). The attribute's comment: “part (1): the classifying morphism of a family factors through the nodal open substack iff the family is at-worst-nodal of relative dimension one, given a presentation of the algebraic stack of curves. Part (2), the characterisation for a proper scheme over a field, is registered separately on `AlgebraicGeometry.lifts_nodalCurves_curveFamilyOfProperOverField_iff`”.
+**`AlgebraicGeometry.classifying_factors_nodalCurvesOpenSubstack_iff_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesNodalUnconditional.lean, line 133](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesNodalUnconditional.lean#L133). The attribute's comment: “part (1): the classifying morphism of a family factors through the nodal open substack iff the family is at-worst-nodal of relative dimension one, given a presentation of the algebraic stack of curves. Part (2), the characterisation for a proper scheme over a field, is registered separately on `AlgebraicGeometry.lifts_nodalCurves_curveFamilyOfProperOverField_iff`”.
 
 > **Stacks 0DSY, part (1).** The classifying object of a family of curves lifts through the
 > inclusion of the nodal open substack exactly when the family is at-worst-nodal of relative
@@ -214,7 +214,7 @@ theorem classifying_factors_nodalCurvesOpenSubstack_iff_unconditional
       Space.IsAtWorstNodalOfRelativeDimensionOne B integerBase hZ F.toBase.hom
 ```
 
-**`AlgebraicGeometry.nodalCurvesFiberedCategory`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesNodalUnconditional.lean, line 158](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesNodalUnconditional.lean#L158). The attribute's comment: “the open substack Curves^nodal itself, as the strictly full subcategory of Curves spanned by the families which are at-worst-nodal of relative dimension one, read as an object of the 2-category of categories fibred in groupoids over the big fppf site of Spec(Z). Unconditional: no presentation of Curves as an algebraic stack (Tag 0D5A) and no part of Tag 04S6 is assumed”.
+**`AlgebraicGeometry.nodalCurvesFiberedCategory`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesNodalUnconditional.lean, line 158](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesNodalUnconditional.lean#L158). The attribute's comment: “the open substack Curves^nodal itself, as the strictly full subcategory of Curves spanned by the families which are at-worst-nodal of relative dimension one, read as an object of the 2-category of categories fibred in groupoids over the big fppf site of Spec(Z). Unconditional: no presentation of Curves as an algebraic stack (Tag 0D5A) and no part of Tag 04S6 is assumed”.
 
 > **Stacks 0DSY.** The category `Curves^{nodal}` of families of curves which are at-worst-nodal
 > of relative dimension one, as an object of the 2-category of categories fibred in groupoids over
@@ -225,7 +225,7 @@ def nodalCurvesFiberedCategory :
     CatFiberedInGroupoids.{u, u + 1, u + 1, u + 1} (BigFppfOver B integerBase hZ)
 ```
 
-**`AlgebraicGeometry.nodalCurvesInclusion`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesNodalUnconditional.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesNodalUnconditional.lean#L168). The attribute's comment: “the inclusion Curves^nodal ⊂ Curves of the open substack, as a 1-morphism of categories fibred in groupoids over the big fppf site of Spec(Z). Unconditional: no presentation of Curves as an algebraic stack (Tag 0D5A) and no part of Tag 04S6 is assumed”.
+**`AlgebraicGeometry.nodalCurvesInclusion`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesNodalUnconditional.lean, line 168](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesNodalUnconditional.lean#L168). The attribute's comment: “the inclusion Curves^nodal ⊂ Curves of the open substack, as a 1-morphism of categories fibred in groupoids over the big fppf site of Spec(Z). Unconditional: no presentation of Curves as an algebraic stack (Tag 0D5A) and no part of Tag 04S6 is assumed”.
 
 > **Stacks 0DSY.** The inclusion `Curves^{nodal} ⊂ Curves`, as a 1-morphism of categories
 > fibred in groupoids over the big fppf site of `Spec(ℤ)`.
@@ -235,7 +235,7 @@ def nodalCurvesInclusion :
     nodalCurvesFiberedCategory B hZ ⟶ curvesFiberedCategory B hZ
 ```
 
-**`AlgebraicGeometry.isRepresentableByAlgebraicSpaces_nodalCurvesInclusion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesNodalUnconditional.lean, line 178](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesNodalUnconditional.lean#L178). The attribute's comment: “the open substack Curves^nodal, representability clause: the inclusion Curves^nodal ⊂ Curves is representable by algebraic spaces. Unconditional: no presentation of Curves as an algebraic stack (Tag 0D5A) and no part of Tag 04S6 is assumed”.
+**`AlgebraicGeometry.isRepresentableByAlgebraicSpaces_nodalCurvesInclusion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesNodalUnconditional.lean, line 178](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesNodalUnconditional.lean#L178). The attribute's comment: “the open substack Curves^nodal, representability clause: the inclusion Curves^nodal ⊂ Curves is representable by algebraic spaces. Unconditional: no presentation of Curves as an algebraic stack (Tag 0D5A) and no part of Tag 04S6 is assumed”.
 
 > **Stacks 0DSY.** The inclusion `Curves^{nodal} ⊂ Curves` is representable by algebraic
 > spaces.
@@ -245,7 +245,7 @@ theorem isRepresentableByAlgebraicSpaces_nodalCurvesInclusion :
     Stack.IsRepresentableByAlgebraicSpaces B integerBase hZ (nodalCurvesInclusion B hZ).hom
 ```
 
-**`AlgebraicGeometry.isOpenImmersion_nodalCurvesInclusion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesNodalUnconditional.lean, line 189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesNodalUnconditional.lean#L189). The attribute's comment: “the open substack Curves^nodal, open-immersion clause: the inclusion Curves^nodal ⊂ Curves is an open immersion in the sense of Tag 04XB. Unconditional: no presentation of Curves as an algebraic stack (Tag 0D5A) and no part of Tag 04S6 is assumed”.
+**`AlgebraicGeometry.isOpenImmersion_nodalCurvesInclusion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesNodalUnconditional.lean, line 189](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesNodalUnconditional.lean#L189). The attribute's comment: “the open substack Curves^nodal, open-immersion clause: the inclusion Curves^nodal ⊂ Curves is an open immersion in the sense of Tag 04XB. Unconditional: no presentation of Curves as an algebraic stack (Tag 0D5A) and no part of Tag 04S6 is assumed”.
 
 > **Stacks 0DSY.** The inclusion `Curves^{nodal} ⊂ Curves` is an open immersion: every
 > algebraic space representing one of its base changes along a scheme-valued point of `Curves` has
@@ -256,7 +256,7 @@ theorem isOpenImmersion_nodalCurvesInclusion :
     Stack.IsOpenImmersion B integerBase hZ (nodalCurvesInclusion B hZ)
 ```
 
-**`AlgebraicGeometry.lifts_nodalCurves_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesNodalUnconditional.lean, line 201](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesNodalUnconditional.lean#L201). The attribute's comment: “part (1): the classifying morphism of a family of curves factors through Curves^nodal -- that is, the family lifts through the inclusion of the strictly full subcategory -- if and only if the family is at-worst-nodal of relative dimension one. Unconditional: no presentation of Curves as an algebraic stack (Tag 0D5A) and no part of Tag 04S6 is assumed”.
+**`AlgebraicGeometry.lifts_nodalCurves_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesNodalUnconditional.lean, line 201](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesNodalUnconditional.lean#L201). The attribute's comment: “part (1): the classifying morphism of a family of curves factors through Curves^nodal -- that is, the family lifts through the inclusion of the strictly full subcategory -- if and only if the family is at-worst-nodal of relative dimension one. Unconditional: no presentation of Curves as an algebraic stack (Tag 0D5A) and no part of Tag 04S6 is assumed”.
 
 > **Stacks 0DSY, part (1).** A family of curves lifts through the inclusion
 > `Curves^{nodal} ⊂ Curves` exactly when it is at-worst-nodal of relative dimension one.
@@ -267,7 +267,7 @@ theorem lifts_nodalCurves_iff (F : CurveFamily B hZ) :
       Space.IsAtWorstNodalOfRelativeDimensionOne B integerBase hZ F.toBase.hom
 ```
 
-**`AlgebraicGeometry.lifts_nodalCurvesInclusion_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesNodalUnconditional.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesNodalUnconditional.lean#L225). The attribute's comment: “part (1), stated through the inclusion 1-morphism AlgebraicGeometry.nodalCurvesInclusion of the open substack: a family of curves is in the image on objects of Curves^nodal ⟶ Curves if and only if it is at-worst-nodal of relative dimension one. Unconditional: no presentation of Curves as an algebraic stack (Tag 0D5A) and no part of Tag 04S6 is assumed”.
+**`AlgebraicGeometry.lifts_nodalCurvesInclusion_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesNodalUnconditional.lean, line 225](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesNodalUnconditional.lean#L225). The attribute's comment: “part (1), stated through the inclusion 1-morphism AlgebraicGeometry.nodalCurvesInclusion of the open substack: a family of curves is in the image on objects of Curves^nodal ⟶ Curves if and only if it is at-worst-nodal of relative dimension one. Unconditional: no presentation of Curves as an algebraic stack (Tag 0D5A) and no part of Tag 04S6 is assumed”.
 
 > **Stacks 0DSY, part (1).** The classifying morphism of a family of curves factors through
 > `Curves^{nodal}` exactly when the family is at-worst-nodal of relative dimension one, where
@@ -295,7 +295,7 @@ theorem lifts_nodalCurvesInclusion_iff (F : CurveFamily B hZ) :
 
 [Tag 0E00](https://stacks.math.columbia.edu/tag/0E00) in the Stacks Project.
 
-**`AlgebraicGeometry.isSmoothOverIntegers_curvesNodal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesNodalSmooth.lean, line 52](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesNodalSmooth.lean#L52).
+**`AlgebraicGeometry.isSmoothOverIntegers_curvesNodal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesNodalSmooth.lean, line 52](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesNodalSmooth.lean#L52).
 
 > The morphism `Curves^{nodal} → Spec(ℤ)` is smooth. Here `Curves^{nodal}` is the open substack
 > of the algebraic stack of curves (Stacks 0D5A) of the families of curves which are at-worst-nodal
@@ -314,4 +314,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 109.18, Tag 0DSX](https://stacks.math.columbia.edu/tag/0DSX)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

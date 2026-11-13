@@ -8,13 +8,13 @@ proof: formalized
 
 # 62.6 Relative cycles
 
-Section 62.6 of the Stacks Project, [Tag 0H4Z](https://stacks.math.columbia.edu/tag/0H4Z). 17 tags here are carried by 30 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 62.6 of the Stacks Project, [Tag 0H4Z](https://stacks.math.columbia.edu/tag/0H4Z). 17 tags here are carried by 30 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0H50, a definition
 
 [Tag 0H50](https://stacks.math.columbia.edu/tag/0H50) in the Stacks Project.
 
-**`Stacks.Chow.IsRelativeCycle`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Relative.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Relative.lean#L53). The attribute's comment: “relative r-cycles”.
+**`Stacks.Chow.IsRelativeCycle`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Relative.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Relative.lean#L53). The attribute's comment: “relative r-cycles”.
 
 > A family `α` of `r`-cycles on the fibres of `X/S` is a *relative `r`-cycle* when for every
 > discrete valuation ring `R` and every morphism `g : Spec R ⟶ S` the specialization of the generic
@@ -25,7 +25,7 @@ def IsRelativeCycle {X S : Scheme.{u}} (f : X ⟶ S) [LocallyOfFiniteType f]
     [IsLocallyNoetherian S] (r : ℕ) (α : FamilyOfCycles f r) : Prop
 ```
 
-**`Stacks.Chow.relativeCycles`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Relative.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Relative.lean#L88). The attribute's comment: “the group z(X/S, r)”.
+**`Stacks.Chow.relativeCycles`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Relative.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/Relative.lean#L88). The attribute's comment: “the group z(X/S, r)”.
 
 > The group `z(X/S, r)` of relative `r`-cycles on `X/S`: the subgroup of the group of families
 > of `r`-cycles on the fibres of `X/S` cut out by the valuative condition.
@@ -39,7 +39,7 @@ def relativeCycles {X S : Scheme.{u}} (f : X ⟶ S) [LocallyOfFiniteType f]
 
 [Tag 0H51](https://stacks.math.columbia.edu/tag/0H51) in the Stacks Project.
 
-**`Stacks.Chow.isRelativeCycle_baseChangeFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/BaseChangeRelative.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/BaseChangeRelative.lean#L91). The attribute's comment: “base change along an arbitrary morphism of locally Noetherian bases”.
+**`Stacks.Chow.isRelativeCycle_baseChangeFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/BaseChangeRelative.lean, line 91](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/BaseChangeRelative.lean#L91). The attribute's comment: “base change along an arbitrary morphism of locally Noetherian bases”.
 
 > **Stacks Project, Lemma 0H51, the base change clause.** The base change of a relative
 > `r`-cycle along an arbitrary morphism `g : S' ⟶ S` of locally Noetherian schemes is a relative
@@ -52,7 +52,7 @@ theorem isRelativeCycle_baseChangeFamily {X S S' : Scheme.{u}} (f : X ⟶ S)
     IsRelativeCycle (pullback.snd f g) r (baseChangeFamily f g r α)
 ```
 
-**`Stacks.Chow.isRelativeCycle_flatPullbackFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/FlatPullbackDescent.lean, line 237](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/FlatPullbackDescent.lean#L237). The attribute's comment: “flat pullback along a flat morphism of relative dimension e”.
+**`Stacks.Chow.isRelativeCycle_flatPullbackFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/FlatPullbackDescent.lean, line 237](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/FlatPullbackDescent.lean#L237). The attribute's comment: “flat pullback along a flat morphism of relative dimension e”.
 
 > **Stacks Project, Lemma 0H51, the flat pullback clause.** Let `f : X ⟶ S` be locally of
 > finite type with `S` locally Noetherian and let `j : U ⟶ X` be a flat morphism, locally of finite
@@ -77,7 +77,7 @@ theorem isRelativeCycle_flatPullbackFamily {X S U : Scheme.{u}} (f : X ⟶ S)
     IsRelativeCycle fU (r + e) (flatPullbackFamily f fU j hj e he r α)
 ```
 
-**`Stacks.Chow.isRelativeCycle_restrictedFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/GysinAction.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/GysinAction.lean#L169). The attribute's comment: “restriction to open subschemes of the source and of the base”.
+**`Stacks.Chow.isRelativeCycle_restrictedFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/GysinAction.lean, line 169](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/GysinAction.lean#L169). The attribute's comment: “restriction to open subschemes of the source and of the base”.
 
 > **Stacks Project, Lemma 0H51, restriction to open subschemes of the source and of the base.**
 > For open immersions `j : U ⟶ X` and `i : V ⟶ S` with `j ≫ f = fU ≫ i`, the restriction to
@@ -98,7 +98,7 @@ theorem isRelativeCycle_restrictedFamily {X S U V : Scheme.{u}} (f : X ⟶ S)
     IsRelativeCycle fU r (restrictedFamily f fU j i h r α).1
 ```
 
-**`Stacks.Chow.isRelativeCycle_properPushforwardFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ProperPushforwardRelative.lean, line 40](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ProperPushforwardRelative.lean#L40). The attribute's comment: “proper pushforward”.
+**`Stacks.Chow.isRelativeCycle_properPushforwardFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ProperPushforwardRelative.lean, line 40](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ProperPushforwardRelative.lean#L40). The attribute's comment: “proper pushforward”.
 
 > Let `S` be locally Noetherian, let `sX : X ⟶ S` and `sY : Y ⟶ S` be locally of finite type, let
 > `q : X ⟶ Y` be proper with `q ≫ sY = sX` and let `r ≥ 0`. The proper pushforward `q_*α` of a
@@ -112,7 +112,7 @@ theorem isRelativeCycle_properPushforwardFamily {X Y S : Scheme.{u}} (sX : X ⟶
     IsRelativeCycle sY r (properPushforwardFamily sX sY q hq r α)
 ```
 
-**`Stacks.Chow.isRelativeCycle_fiberCycleRestrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/SpecializationRestriction.lean, line 447](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/SpecializationRestriction.lean#L447). The attribute's comment: “restriction along an open immersion of the source”.
+**`Stacks.Chow.isRelativeCycle_fiberCycleRestrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/SpecializationRestriction.lean, line 447](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/SpecializationRestriction.lean#L447). The attribute's comment: “restriction along an open immersion of the source”.
 
 > The restriction of a relative `r`-cycle on `X/S` to an open subscheme `U ⊆ X`, taken over the
 > same base, is a relative `r`-cycle on `U/S`.
@@ -129,7 +129,7 @@ theorem isRelativeCycle_fiberCycleRestrict {X S U : Scheme.{u}} (f : X ⟶ S)
 
 [Tag 0H52](https://stacks.math.columbia.edu/tag/0H52) in the Stacks Project.
 
-**`Stacks.Chow.isRelativeCycle_iff_forall_isRelativeCycle_baseChangeFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/HDescent.lean, line 497](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/HDescent.lean#L497).
+**`Stacks.Chow.isRelativeCycle_iff_forall_isRelativeCycle_baseChangeFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/HDescent.lean, line 497](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/HDescent.lean#L497).
 
 > **Stacks Project, Lemma 0H52.** Let `S` be locally Noetherian, let `f : X ⟶ S` be locally of
 > finite type, let `r ≥ 0` and let `α` be a family of `r`-cycles on the fibres of `X/S`. Let
@@ -155,7 +155,7 @@ theorem isRelativeCycle_iff_forall_isRelativeCycle_baseChangeFamily {X S : Schem
 
 [Tag 0H53](https://stacks.math.columbia.edu/tag/0H53) in the Stacks Project.
 
-**`Stacks.Chow.isRelativeCycle_iff_forall_flatPullbackFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/FlatPullbackDescent.lean, line 265](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/FlatPullbackDescent.lean#L265). The attribute's comment: “both directions, for a jointly surjective family of flat morphisms of relative dimension e”.
+**`Stacks.Chow.isRelativeCycle_iff_forall_flatPullbackFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/FlatPullbackDescent.lean, line 265](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/FlatPullbackDescent.lean#L265). The attribute's comment: “both directions, for a jointly surjective family of flat morphisms of relative dimension e”.
 
 > **Stacks Project, Lemma 0H53.** Let `f : X ⟶ S` be a morphism of schemes with `S` locally
 > Noetherian and `f` locally of finite type, let `r, e ≥ 0` and let `α` be a family of `r`-cycles
@@ -189,7 +189,7 @@ theorem isRelativeCycle_iff_forall_flatPullbackFamily {Idx : Type v} {X S : Sche
 
 [Tag 0H54](https://stacks.math.columbia.edu/tag/0H54) in the Stacks Project.
 
-**`Stacks.Chow.isRelativeCycle_iff_isRelativeCycle_properPushforwardFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ClosedImmersion.lean, line 530](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ClosedImmersion.lean#L530).
+**`Stacks.Chow.isRelativeCycle_iff_isRelativeCycle_properPushforwardFamily`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ClosedImmersion.lean, line 531](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ClosedImmersion.lean#L531).
 
 > Let `S` be a locally Noetherian scheme, let `i : X ⟶ Y` be a closed immersion of schemes
 > locally of finite type over `S`, let `r ≥ 0` and let `α` be a family of `r`-cycles on the fibres of
@@ -207,7 +207,7 @@ theorem isRelativeCycle_iff_isRelativeCycle_properPushforwardFamily [IsLocallyNo
 
 [Tag 0H55](https://stacks.math.columbia.edu/tag/0H55) in the Stacks Project.
 
-**`Stacks.Chow.IsRelativeCycle.eq_iff_eq_of_mem_genericPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/GenericFibres.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/GenericFibres.lean#L111).
+**`Stacks.Chow.IsRelativeCycle.eq_iff_eq_of_mem_genericPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/GenericFibres.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/GenericFibres.lean#L111).
 
 > **Stacks Project, Lemma 0H55.** Let `S` be a locally Noetherian scheme, let `f : X ⟶ S` be
 > locally of finite type and let `r ≥ 0`. Two relative `r`-cycles on `X/S` are equal if and only
@@ -224,7 +224,7 @@ theorem IsRelativeCycle.eq_iff_eq_of_mem_genericPoints {X S : Scheme.{u}} (f : X
 
 [Tag 0H56](https://stacks.math.columbia.edu/tag/0H56) in the Stacks Project.
 
-**`Stacks.Chow.isRelativeCycle_familyAssociatedToModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/FlatCycleClasses.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/FlatCycleClasses.lean#L125). The attribute's comment: “the source's hypothesis that the module is flat over the base in dimensions at least r, Stacks Definition 0CWG, written out as the dimension bound on the non-flat locus”.
+**`Stacks.Chow.isRelativeCycle_familyAssociatedToModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/FlatCycleClasses.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/FlatCycleClasses.lean#L129). The attribute's comment: “the source's hypothesis that the module is flat over the base in dimensions at least r, Stacks Definition 0CWG, written out as the dimension bound on the non-flat locus”.
 
 > **Stacks Project, Lemma 0H56.** Let `S` be locally Noetherian, let `f : X ⟶ S` be locally of
 > finite type and let `F` be a quasi-coherent `𝒪_X`-module of finite type whose fibrewise support
@@ -249,37 +249,41 @@ theorem isRelativeCycle_familyAssociatedToModule {r : ℕ} {X S : Scheme.{u}} (f
 
 [Tag 0H57](https://stacks.math.columbia.edu/tag/0H57) in the Stacks Project.
 
-**`Stacks.Chow.isRelativeCycle_familyAssociatedToClosedSubscheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/FlatCycleClasses.lean, line 158](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/FlatCycleClasses.lean#L158). The attribute's comment: “the source's hypothesis that the structure sheaf is flat over the base in dimensions at least r, Stacks Definition 0CWG, written out as the dimension bound on the non-flat locus”.
+**`Stacks.Chow.isRelativeCycle_familyAssociatedToClosedSubscheme_of_flatInDimensionsGE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/FlatCycleClasses.lean, line 325](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/FlatCycleClasses.lean#L325). The attribute's comment: “Z flat over S in dimensions at least r is read, as in the source's proof, as i\_* O\_Z flat over S in dimensions at least r, Stacks Definition 0CWG, written out as the dimension bound on the non-flat locus; hdim is the bound dim(Z\_s) ≤ r of Example 0H4S”.
 
-> **Stacks Project, Lemma 0H57.** Let `S` be locally Noetherian, let `f : X ⟶ S` be locally of
-> finite type and let `i : Z ⟶ X` be a closed immersion. If the structure sheaf of `Z`, viewed on
-> `X`, is flat over `S` in dimensions `≥ r` and its fibrewise support has dimension at most `r`,
-> then `[Z/X/S]_r` is a relative `r`-cycle on `X/S`.
+> **Stacks Project, Lemma 0H57.** In the situation of Example 0H4S (`f : X ⟶ S` locally of
+> finite type, `r ≥ 0`, and a closed subscheme `i : Z ⟶ X` with `dim(Z_s) ≤ r` for every `s ∈ S`)
+> assume `S` is locally Noetherian and `Z` is flat over `S` in dimensions `≥ r`. Then
+> `[Z/X/S]_r` is a relative `r`-cycle on `X/S`.
 >
-> This is the proof of the source: the cycle of a closed subscheme is the cycle of its structure
-> sheaf by Tag 02QY, so Tag 0H56 applies to the direct image of that structure sheaf.
+> This is the proof of the source: the family `[Z/X/S]_r` is the family `[i_* 𝒪_Z/X/S]_r` of the
+> module `i_* 𝒪_Z` by `Stacks.Chow.familyAssociatedToClosedSubscheme_eq_familyAssociatedToModule`,
+> and Lemma 0H56 applies to that module, whose fibrewise support has the dimension of `Z_s` by
+> `Stacks.Chow.topologicalKrullDim_pullback_fiberι_eq_supp`. The finiteness and quasi-coherence of
+> `i_* 𝒪_Z` that Lemma 0H56 consumes are instances.
 >
-> Flatness over `S` in dimensions `≥ r` is spelled out as Stacks Definition 0CWG defines it: for
-> every point `s` of `S` the locus in the fibre `X_s` where `i_* 𝒪_Z` fails to be flat over `S`
-> has dimension less than `r`.
+> Flatness of `Z` over `S` in dimensions `≥ r` is read, as the source's proof reads it, as
+> flatness of `𝒪_Z`, that is of `i_* 𝒪_Z`, over `S` in dimensions `≥ r`, spelled out as Stacks
+> Definition 0CWG defines it: for every point `s` of `S` the locus in the fibre `X_s` where
+> `i_* 𝒪_Z` fails to be flat over `S` has dimension less than `r`.
 
 ```lean
-theorem isRelativeCycle_familyAssociatedToClosedSubscheme {r : ℕ} {X S Z : Scheme.{u}}
-    (f : X ⟶ S) [LocallyOfFiniteType f] [IsLocallyNoetherian S] (i : Z ⟶ X)
-    [IsClosedImmersion i] [(structureSheafPushforward i).IsFiniteType]
-    [(structureSheafPushforward i).IsQuasicoherent]
+theorem isRelativeCycle_familyAssociatedToClosedSubscheme_of_flatInDimensionsGE {r : ℕ}
+    {X S Z : Scheme.{u}} (f : X ⟶ S) [LocallyOfFiniteType f] [IsLocallyNoetherian S]
+    (i : Z ⟶ X) [IsClosedImmersion i]
     (hZ : ∀ s : S, topologicalKrullDim
       ↥{y : f.fiber s | ¬ IsFlatOverAt f.toLRSHom.toShHom (structureSheafPushforward i)
         (f.fiberι s y)} < (r : WithBot ℕ∞))
-    (hdim : FiberSupportDimensionLE f (structureSheafPushforward i) r) :
-    IsRelativeCycle f r (familyAssociatedToModule f (structureSheafPushforward i) r hdim)
+    (hdim : ∀ s : S,
+      topologicalKrullDim (pullback i (f.fiberι s) : Scheme.{u}) ≤ (r : WithBot ℕ∞)) :
+    IsRelativeCycle f r (familyAssociatedToClosedSubscheme f i r)
 ```
 
 ## Tag 0H58, an equation
 
 [Tag 0H58](https://stacks.math.columbia.edu/tag/0H58) in the Stacks Project.
 
-**`Stacks.Chow.relativeCycleClassMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/FlatCycleClasses.lean, line 350](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/FlatCycleClasses.lean#L350). The attribute's comment: “the homomorphism into z(X/S, r)”.
+**`Stacks.Chow.relativeCycleClassMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/FlatCycleClasses.lean, line 387](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/FlatCycleClasses.lean#L387). The attribute's comment: “the homomorphism into z(X/S, r)”.
 
 > **Stacks Project, Equation 0H58.** Let `S` be locally Noetherian, let `f : X ⟶ S` be locally
 > of finite type and let `r ≥ 0`. The cycle-class homomorphism from the free abelian group on
@@ -299,7 +303,7 @@ def relativeCycleClassMap {r : ℕ} {X S : Scheme.{u}} (f : X ⟶ S)
     FreeAbelianGroup (HilbertCycleDatum f r) →+ relativeCycles f r
 ```
 
-**`Stacks.Chow.relativeCycleClassMap_of`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/FlatCycleClasses.lean, line 358](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/FlatCycleClasses.lean#L358). The attribute's comment: “on generators”.
+**`Stacks.Chow.relativeCycleClassMap_of`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/FlatCycleClasses.lean, line 395](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/FlatCycleClasses.lean#L395). The attribute's comment: “on generators”.
 
 > **Stacks Project, Equation 0H58.** On a generator the cycle-class homomorphism into
 > `z(X/S, r)` is the family of cycles `[Z/X/S]_r` of the closed subscheme.
@@ -310,7 +314,7 @@ theorem relativeCycleClassMap_of {r : ℕ} {X S : Scheme.{u}} (f : X ⟶ S)
     (relativeCycleClassMap f (FreeAbelianGroup.of Z)).1 = Z.cycleFamily f
 ```
 
-**`Stacks.Chow.relativeCycleClassMap_val`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/FlatCycleClasses.lean, line 367](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/FlatCycleClasses.lean#L367). The attribute's comment: “compatibility with the homomorphism of Tag 0H6V”.
+**`Stacks.Chow.relativeCycleClassMap_val`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/FlatCycleClasses.lean, line 404](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/FlatCycleClasses.lean#L404). The attribute's comment: “compatibility with the homomorphism of Tag 0H6V”.
 
 > **Stacks Project, Equation 0H58.** The cycle-class homomorphism into `z(X/S, r)` is the
 > homomorphism of Tag 0H6V followed by the inclusion of the relative cycles into the families of
@@ -327,7 +331,7 @@ theorem relativeCycleClassMap_val {r : ℕ} {X S : Scheme.{u}} (f : X ⟶ S)
 
 [Tag 0H59](https://stacks.math.columbia.edu/tag/0H59) in the Stacks Project.
 
-**`Stacks.Chow.exists_isProper_isCompletelyDecomposed_relativeCycleClassMap_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/CycleClassProperCover.lean, line 485](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/CycleClassProperCover.lean#L485).
+**`Stacks.Chow.exists_isProper_isCompletelyDecomposed_relativeCycleClassMap_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/CycleClassProperCover.lean, line 485](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/CycleClassProperCover.lean#L485).
 
 > Let `f : X ⟶ S` be a finite type morphism of schemes with `S` Noetherian, let `r ≥ 0` and
 > let `α` be a relative `r`-cycle on `X/S`. Then there is a proper, completely decomposed
@@ -350,7 +354,7 @@ theorem exists_isProper_isCompletelyDecomposed_relativeCycleClassMap_eq {X S : S
 
 [Tag 0H5A](https://stacks.math.columbia.edu/tag/0H5A) in the Stacks Project.
 
-**`Stacks.Chow.surjective_relativeCycleClassMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/DvrCycleClasses.lean, line 515](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/DvrCycleClasses.lean#L515). The attribute's comment: “finite type is the source's hypothesis, stated as locally of finite type plus quasi-compact”.
+**`Stacks.Chow.surjective_relativeCycleClassMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/DvrCycleClasses.lean, line 515](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/DvrCycleClasses.lean#L515). The attribute's comment: “finite type is the source's hypothesis, stated as locally of finite type plus quasi-compact”.
 
 > **Stacks Project, Lemma 0H5A.** Let `f : X ⟶ Spec R` be a morphism of finite type with `R` a
 > discrete valuation ring and let `r ≥ 0`. Then the cycle-class homomorphism of Equation 0H58 is
@@ -372,7 +376,7 @@ theorem surjective_relativeCycleClassMap {r : ℕ} {R : Type u} [CommRing R] [Is
 
 [Tag 0H5B](https://stacks.math.columbia.edu/tag/0H5B) in the Stacks Project.
 
-**`Stacks.Chow.isClopen_supportOfFamily_of_specializes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/SmoothSupportClopen.lean, line 290](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/SmoothSupportClopen.lean#L290). The attribute's comment: “the support is clopen once membership is invariant along specializations”.
+**`Stacks.Chow.isClopen_supportOfFamily_of_specializes`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/SmoothSupportClopen.lean, line 290](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/SmoothSupportClopen.lean#L290). The attribute's comment: “the support is clopen once membership is invariant along specializations”.
 
 > **Stacks Project, Lemma 0H5B**, reduction step. The support of a family of `r`-cycles on the
 > fibres of a morphism locally of finite type over a locally Noetherian base is open and closed in
@@ -391,7 +395,7 @@ theorem isClopen_supportOfFamily_of_specializes {X S : Scheme.{u}} (f : X ⟶ S)
     IsClopen (supportOfFamily f α)
 ```
 
-**`Stacks.Chow.isClopen_irreducibleComponent_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/SmoothSupportClopen.lean, line 347](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/SmoothSupportClopen.lean#L347). The attribute's comment: “components of a smooth scheme over a field are open and closed”. References: SGA 7 VIII (5.2), “special case”.
+**`Stacks.Chow.isClopen_irreducibleComponent_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/SmoothSupportClopen.lean, line 347](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/SmoothSupportClopen.lean#L347). The attribute's comment: “components of a smooth scheme over a field are open and closed”. References: SGA 7 VIII (5.2), “special case”.
 
 > **Stacks Project, Lemma 0H5B**, geometric step. On a scheme smooth over a field every
 > irreducible component is open and closed, so it is an open subscheme and is itself smooth over
@@ -403,7 +407,7 @@ theorem isClopen_irreducibleComponent_of_smooth {k : Type u} [Field k] {Y : Sche
     (p : Y ⟶ Spec (.of k)) [Smooth p] (y : Y) : IsClopen (irreducibleComponent y)
 ```
 
-**`Stacks.Chow.isLocallyConstant_of_specializes_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/SmoothSupportClopen.lean, line 363](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/SmoothSupportClopen.lean#L363). The attribute's comment: “the reduction of local constancy of the fibrewise coefficient function to its invariance along specializations; not that invariance itself”.
+**`Stacks.Chow.isLocallyConstant_of_specializes_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/SmoothSupportClopen.lean, line 363](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/SmoothSupportClopen.lean#L363). The attribute's comment: “the reduction of local constancy of the fibrewise coefficient function to its invariance along specializations; not that invariance itself”.
 
 > **Stacks Project, Lemma 0H5B**, topological reduction for a function. A function on a
 > quasi-sober locally Noetherian space whose value is unchanged along every specialization is
@@ -419,7 +423,7 @@ theorem isLocallyConstant_of_specializes_eq {A : Type u} [TopologicalSpace A] [Q
     (hn : ∀ x y : A, x ⤳ y → n x = n y) : IsLocallyConstant n
 ```
 
-**`Stacks.Chow.isClopen_tsupport_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/SmoothSupportClopen.lean, line 450](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/SmoothSupportClopen.lean#L450). The attribute's comment: “the support of a cycle of top relative dimension on a scheme smooth over a field is open and closed; neither the statement over a general base nor local constancy of the fibrewise coefficient function”.
+**`Stacks.Chow.isClopen_tsupport_of_smooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/SmoothSupportClopen.lean, line 450](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/SmoothSupportClopen.lean#L450). The attribute's comment: “the support of a cycle of top relative dimension on a scheme smooth over a field is open and closed; neither the statement over a general base nor local constancy of the fibrewise coefficient function”.
 
 > **Stacks Project, Lemma 0H5B** over the spectrum of a field. The support of a cycle of
 > relative dimension `k` on a scheme smooth over a field is open and closed, provided every
@@ -438,7 +442,7 @@ theorem isClopen_tsupport_of_smooth {k : Type u} [Field k] {Y : Scheme.{u}}
     IsClopen (tsupport (c.1 : AlgebraicCycle Y ℤ))
 ```
 
-**`Stacks.Chow.isClopen_supportOfFamily_of_smoothOfRelativeDimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/SmoothSupportSpecialization.lean, line 541](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/SmoothSupportSpecialization.lean#L541).
+**`Stacks.Chow.isClopen_supportOfFamily_of_smoothOfRelativeDimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/SmoothSupportSpecialization.lean, line 541](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/SmoothSupportSpecialization.lean#L541).
 
 > **Stacks Project, Lemma 0H5B.** Let `S` be a locally Noetherian scheme, let `f : X ⟶ S` be
 > smooth of relative dimension `r` and let `α` be a relative `r`-cycle on `X/S`. Then the support
@@ -462,7 +466,7 @@ theorem isClopen_supportOfFamily_of_smoothOfRelativeDimension {X S : Scheme.{u}}
 
 [Tag 0H5C](https://stacks.math.columbia.edu/tag/0H5C) in the Stacks Project.
 
-**`Stacks.Chow.isClosed_setOf_fiberCycle_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/EqualityLocus.lean, line 576](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/EqualityLocus.lean#L576).
+**`Stacks.Chow.isClosed_setOf_fiberCycle_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/EqualityLocus.lean, line 576](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/EqualityLocus.lean#L576).
 
 > **Stacks Project, Lemma 0H5C.** Let `f : X ⟶ S` be a morphism of schemes with `S` locally
 > Noetherian and `f` locally of finite type, let `r ≥ 0` and let `α, β ∈ z(X/S, r)`. Then the set
@@ -483,7 +487,7 @@ theorem isClosed_setOf_fiberCycle_eq {X S : Scheme.{u}} (f : X ⟶ S)
 
 [Tag 0H5D](https://stacks.math.columbia.edu/tag/0H5D) in the Stacks Project.
 
-**`Stacks.Chow.nonempty_isColimit_relativeCyclesCocone`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/LimitColimit.lean, line 234](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/LimitColimit.lean#L234).
+**`Stacks.Chow.nonempty_isColimit_relativeCyclesCocone`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/LimitColimit.lean, line 234](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/LimitColimit.lean#L234).
 
 > **Stacks Project, Lemma 0H5D.** Let `S = lim_{i ∈ I} S_i` be the limit of a cofiltered system
 > of Noetherian schemes with affine transition morphisms, let `i₀ ∈ I` and let `X₀ ⟶ S_{i₀}` be of
@@ -504,7 +508,7 @@ theorem nonempty_isColimit_relativeCyclesCocone {I : Type u} [Category.{u} I] [I
 
 [Tag 0H5E](https://stacks.math.columbia.edu/tag/0H5E) in the Stacks Project.
 
-**`Stacks.Chow.relativeCyclesAddEquivOfIsThickening`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ClosedImmersion.lean, line 656](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ClosedImmersion.lean#L656). The attribute's comment: “the bijection i\_* : z(X/S, r) → z(X'/S, r) of relative r-cycles”.
+**`Stacks.Chow.relativeCyclesAddEquivOfIsThickening`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ClosedImmersion.lean, line 657](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ClosedImmersion.lean#L657). The attribute's comment: “the bijection i\_* : z(X/S, r) → z(X'/S, r) of relative r-cycles”.
 
 > Let `S` be a locally Noetherian scheme and let `i : X ⟶ Y` be a thickening of schemes locally
 > of finite type over `S`. For `r ≥ 0` proper pushforward along `i` is an additive equivalence
@@ -515,7 +519,7 @@ def relativeCyclesAddEquivOfIsThickening (hthick : Stacks.Thickenings.IsThickeni
     ↥(relativeCycles sX r) ≃+ ↥(relativeCycles sY r)
 ```
 
-**`Stacks.Chow.relativeCyclesAddEquivOfIsThickening_coe`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ClosedImmersion.lean, line 676](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ClosedImmersion.lean#L676). The attribute's comment: “the equivalence is the fibrewise proper pushforward of families of cycles”.
+**`Stacks.Chow.relativeCyclesAddEquivOfIsThickening_coe`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ClosedImmersion.lean, line 677](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/ClosedImmersion.lean#L677). The attribute's comment: “the equivalence is the fibrewise proper pushforward of families of cycles”.
 
 > The additive equivalence of relative `r`-cycles attached to a thickening is proper pushforward:
 > the family of fibrewise cycles underlying the image of `α` is the fibrewise proper pushforward of
@@ -532,7 +536,7 @@ theorem relativeCyclesAddEquivOfIsThickening_coe
 
 [Tag 0H5F](https://stacks.math.columbia.edu/tag/0H5F) in the Stacks Project.
 
-**`Stacks.Chow.relativeCyclesRestrictEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/RestrictionBijection.lean, line 461](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/RestrictionBijection.lean#L461). The attribute's comment: “restriction is a bijection z(X/S, r) → z(U/S, r)”.
+**`Stacks.Chow.relativeCyclesRestrictEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/RestrictionBijection.lean, line 461](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/RestrictionBijection.lean#L461). The attribute's comment: “restriction is a bijection z(X/S, r) → z(U/S, r)”.
 
 > **Stacks Project, Lemma 0H5F.** Let `S` be a locally Noetherian scheme, let `X` be a scheme
 > locally of finite type over `S`, let `r ≥ 0` and let `j : U ⟶ X` be an open immersion over `S`
@@ -555,7 +559,7 @@ def relativeCyclesRestrictEquiv {X S U : Scheme.{u}} (f : X ⟶ S) [LocallyOfFin
 
 [Tag 0H5G](https://stacks.math.columbia.edu/tag/0H5G) in the Stacks Project.
 
-**`Stacks.Chow.relativeCyclesAddEquivOfUniversalHomeomorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/BaseChangeSubintegral.lean, line 363](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/BaseChangeSubintegral.lean#L363). The attribute's comment: “the bijection z(X/S, r) → z(X'/S', r) determined by base change”.
+**`Stacks.Chow.relativeCyclesAddEquivOfUniversalHomeomorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/BaseChangeSubintegral.lean, line 363](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/BaseChangeSubintegral.lean#L363). The attribute's comment: “the bijection z(X/S, r) → z(X'/S', r) determined by base change”.
 
 > **Stacks Project, Lemma 0H5G.** Let `g : S' ⟶ S` be a universal homeomorphism of locally
 > Noetherian schemes which induces isomorphisms on all residue fields, let `f : X ⟶ S` be locally
@@ -568,7 +572,7 @@ def relativeCyclesAddEquivOfUniversalHomeomorphism
     ↥(relativeCycles f r) ≃+ ↥(relativeCycles (pullback.snd f g) r)
 ```
 
-**`Stacks.Chow.relativeCyclesAddEquivOfUniversalHomeomorphism_coe`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/BaseChangeSubintegral.lean, line 390](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/BaseChangeSubintegral.lean#L390). The attribute's comment: “the bijection is base change of families of cycles on fibres”.
+**`Stacks.Chow.relativeCyclesAddEquivOfUniversalHomeomorphism_coe`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/BaseChangeSubintegral.lean, line 390](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/BaseChangeSubintegral.lean#L390). The attribute's comment: “the bijection is base change of families of cycles on fibres”.
 
 > **Stacks Project, Lemma 0H5G.** The additive equivalence of relative `r`-cycles attached to a
 > universal homeomorphism inducing isomorphisms on all residue fields is base change: the family of
@@ -588,4 +592,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 62.6, Tag 0H4Z](https://stacks.math.columbia.edu/tag/0H4Z)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

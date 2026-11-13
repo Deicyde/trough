@@ -8,7 +8,7 @@ proof: formalized
 
 # 29.57 Zariski's Main Theorem (algebraic version)
 
-Section 29.57 of the Stacks Project, [Tag 03GS](https://stacks.math.columbia.edu/tag/03GS). 4 tags here are carried by 5 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 29.57 of the Stacks Project, [Tag 03GS](https://stacks.math.columbia.edu/tag/03GS). 4 tags here are carried by 5 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 03GT, a theorem
 
@@ -16,13 +16,13 @@ Section 29.57 of the Stacks Project, [Tag 03GS](https://stacks.math.columbia.edu
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Scheme.Hom.exists_isIso_morphismRestrict_toNormalization`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.Hom.exists_isIso_morphismRestrict_toNormalization#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch29.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch29.lean#L129) (StacksFrontier). References: EGA III (4.4.1), “more general”; EGA III (4.4.12), “partial”.
+- [`AlgebraicGeometry.Scheme.Hom.exists_isIso_morphismRestrict_toNormalization`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Scheme.Hom.exists_isIso_morphismRestrict_toNormalization#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch29.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch29.lean#L131) (StacksFrontier). References: EGA III (4.4.1), “more general”; EGA III (4.4.12), “partial”.
 
 ## Tag 01TI, a lemma
 
 [Tag 01TI](https://stacks.math.columbia.edu/tag/01TI) in the Stacks Project.
 
-**`AlgebraicGeometry.mem_quasiFiniteLocus_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/QuasiFinite/Locus.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/QuasiFinite/Locus.lean#L66). The attribute's comment: “openness of the quasi-finite locus”.
+**`AlgebraicGeometry.mem_quasiFiniteLocus_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/QuasiFinite/Locus.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/QuasiFinite/Locus.lean#L66). The attribute's comment: “openness of the quasi-finite locus”.
 
 > A point belongs to the locally quasi-finite locus exactly when the morphism is quasi-finite
 > at that point. In particular, the set of such points is open.
@@ -32,7 +32,7 @@ public theorem mem_quasiFiniteLocus_iff {X S : Scheme.{u}} (f : X ⟶ S) (x : X)
     x ∈ quasiFiniteLocus f ↔ quasiFiniteAt f x
 ```
 
-**`AlgebraicGeometry.locallyOfFiniteType_quasiFiniteLocus`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/QuasiFinite/Locus.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/QuasiFinite/Locus.lean#L92). The attribute's comment: “the induced morphism, local finite type”.
+**`AlgebraicGeometry.locallyOfFiniteType_quasiFiniteLocus`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/QuasiFinite/Locus.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/QuasiFinite/Locus.lean#L92). The attribute's comment: “the induced morphism, local finite type”.
 
 > The restriction to the quasi-finite locus is locally of finite type.
 
@@ -41,7 +41,7 @@ public instance locallyOfFiniteType_quasiFiniteLocus {X S : Scheme.{u}} (f : X �
     LocallyOfFiniteType ((quasiFiniteLocus f).ι ≫ f)
 ```
 
-**`AlgebraicGeometry.locallyQuasiFinite_quasiFiniteLocus`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/QuasiFinite/Locus.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/QuasiFinite/Locus.lean#L124). The attribute's comment: “the induced morphism, fiber isolation”.
+**`AlgebraicGeometry.locallyQuasiFinite_quasiFiniteLocus`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/QuasiFinite/Locus.lean, line 124](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/QuasiFinite/Locus.lean#L124). The attribute's comment: “the induced morphism, fiber isolation”.
 
 > The restriction to the quasi-finite locus is locally quasi-finite in Mathlib's
 > fiber-isolation sense.
@@ -55,7 +55,7 @@ public instance locallyQuasiFinite_quasiFiniteLocus {X S : Scheme.{u}} (f : X �
 
 [Tag 03GU](https://stacks.math.columbia.edu/tag/03GU) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isOpenImmersion_isFinite_factorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/QuasiFinite/FiniteFactorization.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/QuasiFinite/FiniteFactorization.lean#L176). References: EGA IV (18.12.13), “affine case”; EGA IV (8.12.6), “affine case”; EGA III (4.4.3), “special case”; SGA 3 VIB (5.6.0), “(ii), special case”.
+**`AlgebraicGeometry.exists_isOpenImmersion_isFinite_factorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/QuasiFinite/FiniteFactorization.lean, line 176](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/QuasiFinite/FiniteFactorization.lean#L176). References: EGA IV (18.12.13), “affine case”; EGA IV (8.12.6), “affine case”; EGA III (4.4.3), “special case”; SGA 3 VIB (5.6.0), “(ii), special case”.
 
 > **Stacks Project, Tag 03GU.** A quasi-finite morphism `f : Y ⟶ X` of affine schemes factors
 > as `j ≫ π` with `Z` affine, `j : Y ⟶ Z` an open immersion and `π : Z ⟶ X` finite.
@@ -73,7 +73,7 @@ public theorem exists_isOpenImmersion_isFinite_factorization {X Y : Scheme.{u}} 
 
 [Tag 03J2](https://stacks.math.columbia.edu/tag/03J2) in the Stacks Project.
 
-**`AlgebraicGeometry.isNowhereDense_image_of_quasiFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/QuasiFinite/NowhereDenseImage.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/QuasiFinite/NowhereDenseImage.lean#L111).
+**`AlgebraicGeometry.isNowhereDense_image_of_quasiFinite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/QuasiFinite/NowhereDenseImage.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/QuasiFinite/NowhereDenseImage.lean#L111).
 
 > **Stacks Project, Tag 03J2.** The image of a closed nowhere dense subset under a quasi-finite
 > morphism of schemes is nowhere dense.
@@ -92,4 +92,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 29.57, Tag 03GS](https://stacks.math.columbia.edu/tag/03GS)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

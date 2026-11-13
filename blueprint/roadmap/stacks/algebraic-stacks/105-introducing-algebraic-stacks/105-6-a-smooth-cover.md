@@ -8,13 +8,13 @@ proof: formalized
 
 # 105.6 A smooth cover
 
-Section 105.6 of the Stacks Project, [Tag 072S](https://stacks.math.columbia.edu/tag/072S). 2 tags here are carried by 16 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 105.6 of the Stacks Project, [Tag 072S](https://stacks.math.columbia.edu/tag/072S). 2 tags here are carried by 16 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 072S, the section
 
 [Tag 072S](https://stacks.math.columbia.edu/tag/072S) in the Stacks Project.
 
-**`AlgebraicGeometry.ModuliEllipticCurves.Weierstrass.Δ_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/WeierstrassFamily.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/WeierstrassFamily.lean#L88). The attribute's comment: “the discriminant Δ, written out”.
+**`AlgebraicGeometry.ModuliEllipticCurves.Weierstrass.Δ_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/WeierstrassFamily.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/WeierstrassFamily.lean#L88). The attribute's comment: “the discriminant Δ, written out”.
 
 > The discriminant of a Weierstrass equation, written out as a polynomial in the five
 > coefficients.
@@ -33,7 +33,7 @@ theorem Δ_eq {R : Type*} [CommRing R] (W : WeierstrassCurve R) :
       + (-27 * W.a₃ ^ 4 - 216 * W.a₆ * W.a₃ ^ 2 - 64 * W.a₄ ^ 3 - 432 * W.a₆ ^ 2)
 ```
 
-**`AlgebraicGeometry.ModuliEllipticCurves.Weierstrass.Δ_smul_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/WeierstrassFamily.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/WeierstrassFamily.lean#L106). The attribute's comment: “Δ is homogeneous of degree 12 for deg aᵢ = i”.
+**`AlgebraicGeometry.ModuliEllipticCurves.Weierstrass.Δ_smul_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/WeierstrassFamily.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/WeierstrassFamily.lean#L106). The attribute's comment: “Δ is homogeneous of degree 12 for deg aᵢ = i”.
 
 > The discriminant is homogeneous of degree `12` in the coefficients, where `aᵢ` has degree
 > `i`: scaling `aᵢ` by `tⁱ` scales `Δ` by `t¹²`.
@@ -44,7 +44,7 @@ theorem Δ_smul_eq {R : Type*} [CommRing R] (t a₁ a₂ a₃ a₄ a₆ : R) :
       t ^ 12 * (⟨a₁, a₂, a₃, a₄, a₆⟩ : WeierstrassCurve R).Δ
 ```
 
-**`AlgebraicGeometry.ModuliEllipticCurves.Weierstrass.base`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/WeierstrassFamily.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/WeierstrassFamily.lean#L130). The attribute's comment: “the Weierstrass scheme W”.
+**`AlgebraicGeometry.ModuliEllipticCurves.Weierstrass.base`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/WeierstrassFamily.lean, line 130](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/WeierstrassFamily.lean#L130). The attribute's comment: “the Weierstrass scheme W”.
 
 > The Weierstrass scheme `W = Spec(ℤ[a₁, a₂, a₃, a₄, a₆, 1/Δ])`.
 
@@ -52,7 +52,7 @@ theorem Δ_smul_eq {R : Type*} [CommRing R] (t a₁ a₂ a₃ a₄ a₆ : R) :
 abbrev base : Scheme.{u}
 ```
 
-**`AlgebraicGeometry.ModuliEllipticCurves.Weierstrass.total`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/WeierstrassFamily.lean, line 314](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/WeierstrassFamily.lean#L314). The attribute's comment: “the plane cubic E\_W”.
+**`AlgebraicGeometry.ModuliEllipticCurves.Weierstrass.total`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/WeierstrassFamily.lean, line 314](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/WeierstrassFamily.lean#L314). The attribute's comment: “the plane cubic E\_W”.
 
 > The plane cubic `E_W ⊂ P²_W` cut out by the Weierstrass equation over `W`.
 
@@ -60,7 +60,7 @@ abbrev base : Scheme.{u}
 abbrev total : Scheme.{u}
 ```
 
-**`AlgebraicGeometry.ModuliEllipticCurves.Weierstrass.embedding`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/WeierstrassFamily.lean, line 318](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/WeierstrassFamily.lean#L318). The attribute's comment: “E\_W is a closed subscheme of P²\_W”.
+**`AlgebraicGeometry.ModuliEllipticCurves.Weierstrass.embedding`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/WeierstrassFamily.lean, line 318](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/WeierstrassFamily.lean#L318). The attribute's comment: “E\_W is a closed subscheme of P²\_W”.
 
 > The closed immersion of `E_W` into `P²_W`.
 
@@ -68,7 +68,7 @@ abbrev total : Scheme.{u}
 abbrev embedding : total.{u} ⟶ projectivePlane.{u}
 ```
 
-**`AlgebraicGeometry.ModuliEllipticCurves.Weierstrass.projection`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/WeierstrassFamily.lean, line 324](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/WeierstrassFamily.lean#L324). The attribute's comment: “the projection f\_W : E\_W → W”.
+**`AlgebraicGeometry.ModuliEllipticCurves.Weierstrass.projection`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/WeierstrassFamily.lean, line 324](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/WeierstrassFamily.lean#L324). The attribute's comment: “the projection f\_W : E\_W → W”.
 
 > The projection `f_W : E_W ⟶ W`.
 
@@ -76,7 +76,7 @@ abbrev embedding : total.{u} ⟶ projectivePlane.{u}
 abbrev projection : total.{u} ⟶ base.{u}
 ```
 
-**`AlgebraicGeometry.ModuliEllipticCurves.Weierstrass.zero`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/WeierstrassFamily.lean, line 328](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/WeierstrassFamily.lean#L328). The attribute's comment: “the section 0\_W = (0 : 1 : 0)”.
+**`AlgebraicGeometry.ModuliEllipticCurves.Weierstrass.zero`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/WeierstrassFamily.lean, line 328](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/WeierstrassFamily.lean#L328). The attribute's comment: “the section 0\_W = (0 : 1 : 0)”.
 
 > The section `0_W : W ⟶ E_W` at infinity, the point `(0 : 1 : 0)`.
 
@@ -84,7 +84,7 @@ abbrev projection : total.{u} ⟶ base.{u}
 abbrev zero : base.{u} ⟶ total.{u}
 ```
 
-**`AlgebraicGeometry.ModuliEllipticCurves.Weierstrass.family`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/WeierstrassFamily.lean, line 338](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/WeierstrassFamily.lean#L338). The attribute's comment: “the triple (E\_W, f\_W, 0\_W)”.
+**`AlgebraicGeometry.ModuliEllipticCurves.Weierstrass.family`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/WeierstrassFamily.lean, line 338](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/WeierstrassFamily.lean#L338). The attribute's comment: “the triple (E\_W, f\_W, 0\_W)”.
 
 > The Weierstrass family `(E_W, f_W, 0_W)`: the plane cubic over
 > `W = Spec(ℤ[a₁, a₂, a₃, a₄, a₆, 1/Δ])` with the section `(0 : 1 : 0)` at infinity.
@@ -93,7 +93,7 @@ abbrev zero : base.{u} ⟶ total.{u}
 abbrev family : PointedFamily base.{u}
 ```
 
-**`AlgebraicGeometry.ModuliEllipticCurves.Weierstrass.isElliptic_familyOf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/WeierstrassFamilyElliptic.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/WeierstrassFamilyElliptic.lean#L113). The attribute's comment: “E\_W over a ring with Δ invertible is an elliptic curve”.
+**`AlgebraicGeometry.ModuliEllipticCurves.Weierstrass.isElliptic_familyOf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/WeierstrassFamilyElliptic.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/WeierstrassFamilyElliptic.lean#L113). The attribute's comment: “E\_W over a ring with Δ invertible is an elliptic curve”.
 
 > **Stacks Project, Tag 072S.** The plane cubic of a Weierstrass equation with invertible
 > discriminant, with its section at infinity, is an elliptic curve over `Spec R`.
@@ -102,7 +102,7 @@ abbrev family : PointedFamily base.{u}
 theorem isElliptic_familyOf [C.IsElliptic] : (familyOf C).IsElliptic
 ```
 
-**`AlgebraicGeometry.ModuliEllipticCurves.Weierstrass.isElliptic_family`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/WeierstrassFamilyElliptic.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/WeierstrassFamilyElliptic.lean#L124). The attribute's comment: “(E\_W, f\_W, 0\_W) is an elliptic curve”.
+**`AlgebraicGeometry.ModuliEllipticCurves.Weierstrass.isElliptic_family`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/WeierstrassFamilyElliptic.lean, line 124](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/WeierstrassFamilyElliptic.lean#L124). The attribute's comment: “(E\_W, f\_W, 0\_W) is an elliptic curve”.
 
 > **Stacks Project, Tag 072S.** The Weierstrass family `(E_W, f_W, 0_W)` over
 > `W = Spec(ℤ[a₁, a₂, a₃, a₄, a₆, 1/Δ])` is an elliptic curve.
@@ -111,7 +111,7 @@ theorem isElliptic_familyOf [C.IsElliptic] : (familyOf C).IsElliptic
 theorem isElliptic_family : family.{u}.IsElliptic
 ```
 
-**`AlgebraicGeometry.ModuliEllipticCurves.Weierstrass.finrank_structureSheafCohomology_projectionOf_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/WeierstrassFamilyFibres.lean, line 228](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/WeierstrassFamilyFibres.lean#L228). The attribute's comment: “H⁰ of a fibre is one-dimensional”.
+**`AlgebraicGeometry.ModuliEllipticCurves.Weierstrass.finrank_structureSheafCohomology_projectionOf_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/WeierstrassFamilyFibres.lean, line 228](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/WeierstrassFamilyFibres.lean#L228). The attribute's comment: “H⁰ of a fibre is one-dimensional”.
 
 > **Over a field, the global functions on the plane cubic are the constants:**
 > `dim_k H⁰(E, 𝒪_E) = 1`.
@@ -121,7 +121,7 @@ theorem finrank_structureSheafCohomology_projectionOf_zero :
     Module.finrank k (structureSheafCohomology (projectionOf C) 0) = 1
 ```
 
-**`AlgebraicGeometry.ModuliEllipticCurves.Weierstrass.genus_projectionOf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/WeierstrassFamilyFibres.lean, line 241](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/WeierstrassFamilyFibres.lean#L241). The attribute's comment: “a fibre has genus one”.
+**`AlgebraicGeometry.ModuliEllipticCurves.Weierstrass.genus_projectionOf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/WeierstrassFamilyFibres.lean, line 241](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/WeierstrassFamilyFibres.lean#L241). The attribute's comment: “a fibre has genus one”.
 
 > **Over a field, the plane cubic has genus one:** `(3 - 1)(3 - 2)/2 = 1`.
 
@@ -129,7 +129,7 @@ theorem finrank_structureSheafCohomology_projectionOf_zero :
 theorem genus_projectionOf : genus (projectionOf C) = 1
 ```
 
-**`AlgebraicGeometry.ModuliEllipticCurves.Weierstrass.isProper_projectionOf`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/WeierstrassFamilyProper.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/WeierstrassFamilyProper.lean#L60). The attribute's comment: “f\_W is proper”.
+**`AlgebraicGeometry.ModuliEllipticCurves.Weierstrass.isProper_projectionOf`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/WeierstrassFamilyProper.lean, line 60](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/WeierstrassFamilyProper.lean#L60). The attribute's comment: “f\_W is proper”.
 
 > **The plane cubic of a Weierstrass equation is proper over the base.**
 
@@ -137,7 +137,7 @@ theorem genus_projectionOf : genus (projectionOf C) = 1
 instance isProper_projectionOf : IsProper (projectionOf C)
 ```
 
-**`AlgebraicGeometry.ModuliEllipticCurves.Weierstrass.smoothOfRelativeDimension_projectionOf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/WeierstrassFamilySmooth.lean, line 417](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/WeierstrassFamilySmooth.lean#L417). The attribute's comment: “f\_W is smooth of relative dimension one”.
+**`AlgebraicGeometry.ModuliEllipticCurves.Weierstrass.smoothOfRelativeDimension_projectionOf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/WeierstrassFamilySmooth.lean, line 417](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/WeierstrassFamilySmooth.lean#L417). The attribute's comment: “f\_W is smooth of relative dimension one”.
 
 > **A Weierstrass cubic with invertible discriminant is smooth of relative dimension one over
 > its base.**
@@ -151,7 +151,7 @@ theorem smoothOfRelativeDimension_projectionOf (hΔ : IsUnit W.Δ) :
 
 [Tag 072T](https://stacks.math.columbia.edu/tag/072T) in the Stacks Project.
 
-**`AlgebraicGeometry.ModuliEllipticCurves.Weierstrass.isSmooth_family`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/WeierstrassSmoothCover.lean, line 214](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/WeierstrassSmoothCover.lean#L214). The attribute's comment: “the morphism W → M\_\{1,1} is smooth”.
+**`AlgebraicGeometry.ModuliEllipticCurves.Weierstrass.isSmooth_family`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/WeierstrassSmoothCover.lean, line 214](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/WeierstrassSmoothCover.lean#L214). The attribute's comment: “the morphism W → M\_\{1,1} is smooth”.
 
 > **Stacks Project, Tag 072T.** The morphism `W ⟶ 𝓜₁,₁` given by the Weierstrass family
 > `(E_W, f_W, 0_W)` is smooth: for every elliptic curve `E'` over a scheme `S'` and every fibre
@@ -163,7 +163,7 @@ theorem smoothOfRelativeDimension_projectionOf (hΔ : IsUnit W.Δ) :
 theorem isSmooth_family : family.{u}.IsSmooth isElliptic_family.{u}
 ```
 
-**`AlgebraicGeometry.ModuliEllipticCurves.Weierstrass.isSurjective_family`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/WeierstrassSmoothCover.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/WeierstrassSmoothCover.lean#L225). The attribute's comment: “the morphism W → M\_\{1,1} is surjective”.
+**`AlgebraicGeometry.ModuliEllipticCurves.Weierstrass.isSurjective_family`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/WeierstrassSmoothCover.lean, line 225](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/WeierstrassSmoothCover.lean#L225). The attribute's comment: “the morphism W → M\_\{1,1} is surjective”.
 
 > **Stacks Project, Tag 072T.** The morphism `W ⟶ 𝓜₁,₁` given by the Weierstrass family
 > `(E_W, f_W, 0_W)` is surjective: for every elliptic curve `E'` over a scheme `S'` and every fibre
@@ -181,4 +181,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 105.6, Tag 072S](https://stacks.math.columbia.edu/tag/072S)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

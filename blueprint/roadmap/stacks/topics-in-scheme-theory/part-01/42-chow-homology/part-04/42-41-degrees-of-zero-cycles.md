@@ -8,13 +8,13 @@ proof: formalized
 
 # 42.41 Degrees of zero cycles
 
-Section 42.41 of the Stacks Project, [Tag 0AZ0](https://stacks.math.columbia.edu/tag/0AZ0). 4 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 42.41 of the Stacks Project, [Tag 0AZ0](https://stacks.math.columbia.edu/tag/0AZ0). 4 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0AZ1, a definition
 
 [Tag 0AZ1](https://stacks.math.columbia.edu/tag/0AZ1) in the Stacks Project.
 
-**`Stacks.Chow.chowDegree`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Degrees/DegreeHomomorphism.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Degrees/DegreeHomomorphism.lean#L67). The attribute's comment: “the degree homomorphism”.
+**`Stacks.Chow.chowDegree`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Degrees/DegreeHomomorphism.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Degrees/DegreeHomomorphism.lean#L67). The attribute's comment: “the degree homomorphism”.
 
 > **Stacks Project, Tag 0AZ1.** The degree homomorphism `A_0(X) ⟶ ℤ` on the zeroth Chow group
 > of a scheme `X` proper over a one-point base with vanishing dimension function — the spectrum of a
@@ -30,7 +30,7 @@ Section 42.41 of the Stacks Project, [Tag 0AZ0](https://stacks.math.columbia.edu
 def chowDegree (s : C.S) : chowGroup C p 0 →+ ℤ
 ```
 
-**`Stacks.Chow.chowGroupBaseEquivInt`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Degrees/ZeroCycleDegree.lean, line 213](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Degrees/ZeroCycleDegree.lean#L213). The attribute's comment: “the identification of the Chow group of the base with the integers”.
+**`Stacks.Chow.chowGroupBaseEquivInt`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Degrees/ZeroCycleDegree.lean, line 213](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Degrees/ZeroCycleDegree.lean#L213). The attribute's comment: “the identification of the Chow group of the base with the integers”.
 
 > For a one-point base with vanishing dimension function — the spectrum of a field — the
 > degree of a zero cycle is an isomorphism `A_0(S) ≅ ℤ`, sending the fundamental cycle to `1`.
@@ -43,7 +43,7 @@ def chowGroupBaseEquivInt (s : C.S) : chowGroup C (𝟙 C.S) 0 ≃+ ℤ
 
 [Tag 0AZ2](https://stacks.math.columbia.edu/tag/0AZ2) in the Stacks Project.
 
-**`Stacks.Chow.cycleDegree_eq_sum_finrank`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Degrees/ZeroCycleDegreeFormula.lean, line 170](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Degrees/ZeroCycleDegreeFormula.lean#L170).
+**`Stacks.Chow.cycleDegree_eq_sum_finrank`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Degrees/ZeroCycleDegreeFormula.lean, line 170](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Degrees/ZeroCycleDegreeFormula.lean#L170).
 
 > The degree `Stacks.Chow.cycleDegree` of a zero cycle on a scheme proper over a field,
 > presented as a finite sum `α = ∑ n_i [Z_i]` over integral closed subschemes of delta-dimension
@@ -68,7 +68,7 @@ theorem cycleDegree_eq_sum_finrank [IsProper p] (s : (fieldChowSituation k).S)
 
 [Tag 0AZ3](https://stacks.math.columbia.edu/tag/0AZ3) in the Stacks Project.
 
-**`AlgebraicGeometry.curveDegree_eq_chowDegree_firstChernCapOnCycles_fundamental`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/RiemannRochGenuine.lean, line 305](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Curve/RiemannRochGenuine.lean#L305).
+**`AlgebraicGeometry.curveDegree_eq_chowDegree_firstChernCapOnCycles_fundamental`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Curve/RiemannRochGenuine.lean, line 305](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Curve/RiemannRochGenuine.lean#L305).
 
 > **Equation [Stacks, Tag 0BRY]**, in the orientation of the source:
 > `deg(ℰ) = deg(c₁(ℰ) ∩ [X]_1)` for `ℰ` finite locally free of constant rank on a proper scheme of
@@ -99,7 +99,7 @@ theorem curveDegree_eq_chowDegree_firstChernCapOnCycles_fundamental
 
 [Tag 0BFI](https://stacks.math.columbia.edu/tag/0BFI) in the Stacks Project.
 
-**`AlgebraicGeometry.intersectionNumber_eq_chowDegree_iteratedFirstChernCap_and_ample`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/ChowDegree.lean, line 1155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/ChowDegree.lean#L1155).
+**`AlgebraicGeometry.intersectionNumber_eq_chowDegree_iteratedFirstChernCap_and_ample`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/ChowDegree.lean, line 1155](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/NumericalIntersections/ChowDegree.lean#L1155).
 
 > Let `k` be a field, let `X` be a proper scheme over `k` and let `Z ⊆ X` be a closed
 > subscheme of dimension `d`. For invertible `𝒪_X`-modules `𝓛_1, …, 𝓛_d`,
@@ -142,4 +142,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 42.41, Tag 0AZ0](https://stacks.math.columbia.edu/tag/0AZ0)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

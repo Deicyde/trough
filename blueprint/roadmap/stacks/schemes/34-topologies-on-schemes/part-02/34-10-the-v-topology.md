@@ -8,13 +8,13 @@ proof: formalized
 
 # 34.10 The V topology
 
-Section 34.10 of the Stacks Project, [Tag 0ETA](https://stacks.math.columbia.edu/tag/0ETA). 14 tags here are carried by 24 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 34.10 of the Stacks Project, [Tag 0ETA](https://stacks.math.columbia.edu/tag/0ETA). 14 tags here are carried by 24 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0ETB, a definition
 
 [Tag 0ETB](https://stacks.math.columbia.edu/tag/0ETB) in the Stacks Project.
 
-**`AlgebraicGeometry.IsStandardVCovering`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/V/StandardCoverings.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/V/StandardCoverings.lean#L68).
+**`AlgebraicGeometry.IsStandardVCovering`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/V/StandardCoverings.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/V/StandardCoverings.lean#L68).
 
 > A finite family of morphisms from affine schemes to an affine scheme is a **standard V
 > covering** if every morphism from the spectrum of a valuation ring lifts to one member
@@ -29,7 +29,7 @@ public def IsStandardVCovering {T : Scheme.{u}} [IsAffine T] {I : Type v} [Finit
 
 [Tag 0ETC](https://stacks.math.columbia.edu/tag/0ETC) in the Stacks Project.
 
-**`AlgebraicGeometry.isStandardVCovering_of_flat_affineCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/StandardFpqcCoverings.lean, line 41](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/StandardFpqcCoverings.lean#L41).
+**`AlgebraicGeometry.isStandardVCovering_of_flat_affineCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/StandardFpqcCoverings.lean, line 41](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/StandardFpqcCoverings.lean#L41).
 
 > A standard fpqc covering of an affine scheme is a standard V covering.
 
@@ -43,7 +43,7 @@ theorem isStandardVCovering_of_flat_affineCover
 
 [Tag 0ETD](https://stacks.math.columbia.edu/tag/0ETD) in the Stacks Project.
 
-**`AlgebraicGeometry.StandardPHCovering.isStandardVCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/V/PhComparison.lean, line 50](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/V/PhComparison.lean#L50).
+**`AlgebraicGeometry.StandardPHCovering.isStandardVCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/V/PhComparison.lean, line 50](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/V/PhComparison.lean#L50).
 
 > A standard ph covering is a standard V covering.
 
@@ -58,7 +58,7 @@ public theorem StandardPHCovering.isStandardVCovering
 
 [Tag 0ETE](https://stacks.math.columbia.edu/tag/0ETE) in the Stacks Project.
 
-**`AlgebraicGeometry.isStandardVCovering_pullback`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/V/StandardCoverings.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/V/StandardCoverings.lean#L91).
+**`AlgebraicGeometry.isStandardVCovering_pullback`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/V/StandardCoverings.lean, line 91](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/V/StandardCoverings.lean#L91).
 
 > A standard V covering of an affine scheme remains a standard V covering after pullback
 > along a morphism from another affine scheme.
@@ -77,7 +77,7 @@ public lemma isStandardVCovering_pullback
 
 [Tag 0ETF](https://stacks.math.columbia.edu/tag/0ETF) in the Stacks Project.
 
-**`AlgebraicGeometry.IsStandardVCovering.comp`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/V/StandardCoverings.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/V/StandardCoverings.lean#L107).
+**`AlgebraicGeometry.IsStandardVCovering.comp`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/V/StandardCoverings.lean, line 107](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/V/StandardCoverings.lean#L107).
 
 > Composing a standard V covering with a standard V covering of each member gives a
 > standard V covering.
@@ -99,7 +99,7 @@ public lemma IsStandardVCovering.comp
 
 [Tag 0ETG](https://stacks.math.columbia.edu/tag/0ETG) in the Stacks Project.
 
-**`AlgebraicGeometry.isStandardVCovering_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/V/StandardCoverings.lean, line 150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/V/StandardCoverings.lean#L150).
+**`AlgebraicGeometry.isStandardVCovering_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/V/StandardCoverings.lean, line 150](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/V/StandardCoverings.lean#L150).
 
 > A finite family of affine schemes over an affine scheme is a standard V covering if and only
 > if it admits a refining standard V covering, if and only if the morphism from the disjoint union
@@ -125,7 +125,7 @@ public theorem isStandardVCovering_tfae {T : Scheme.{u}} [IsAffine T]
 
 [Tag 0ETH](https://stacks.math.columbia.edu/tag/0ETH) in the Stacks Project.
 
-**`AlgebraicGeometry.IsVCovering`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/V/Coverings.lean, line 48](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/V/Coverings.lean#L48).
+**`AlgebraicGeometry.IsVCovering`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/V/Coverings.lean, line 48](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/V/Coverings.lean#L48).
 
 > **Stacks 0ETH.** A family of morphisms of schemes is a **V covering** if, over every
 > affine open of the target, a finite standard V covering by affine schemes refines the
@@ -140,7 +140,7 @@ public noncomputable def IsVCovering {T : Scheme.{u}} {I : Type v}
 
 [Tag 0ETI](https://stacks.math.columbia.edu/tag/0ETI) in the Stacks Project.
 
-**`AlgebraicGeometry.isVCovering_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/BigSites/VCoveringRefinement.lean, line 241](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/BigSites/VCoveringRefinement.lean#L241).
+**`AlgebraicGeometry.isVCovering_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/BigSites/VCoveringRefinement.lean, line 241](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/BigSites/VCoveringRefinement.lean#L241).
 
 > A family of morphisms of schemes is a V covering if and only if a V covering refines it,
 > if and only if its disjoint-union morphism is a V covering.
@@ -163,7 +163,7 @@ public theorem isVCovering_tfae {T : Scheme.{u}} {I : Type v} [Small.{u} I]
 
 [Tag 0ETJ](https://stacks.math.columbia.edu/tag/0ETJ) in the Stacks Project.
 
-**`AlgebraicGeometry.isVCovering_of_isIso`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/Permanence.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/Permanence.lean#L69). The attribute's comment: “isomorphism”.
+**`AlgebraicGeometry.isVCovering_of_isIso`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/Permanence.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/Permanence.lean#L69). The attribute's comment: “isomorphism”.
 
 > An isomorphism of schemes, regarded as a singleton family, is a V covering.
 
@@ -172,7 +172,7 @@ lemma isVCovering_of_isIso {T' T : Scheme.{u}} (f : T' ⟶ T) [IsIso f] :
     AlgebraicGeometry.IsVCovering (fun _ : Unit ↦ T') (fun _ ↦ f)
 ```
 
-**`AlgebraicGeometry.isVCovering_pullback`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/Permanence.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/Permanence.lean#L89). The attribute's comment: “base\_change”.
+**`AlgebraicGeometry.isVCovering_pullback`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/Permanence.lean, line 89](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/Permanence.lean#L89). The attribute's comment: “base\_change”.
 
 > The pullback of a V covering along any morphism of schemes is a V covering.
 
@@ -185,7 +185,7 @@ lemma isVCovering_pullback {T : Scheme.{u}} {I : Type v}
       (fun i ↦ pullback.snd (f i) g)
 ```
 
-**`AlgebraicGeometry.IsVCovering.comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/Permanence.lean, line 192](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/Permanence.lean#L192). The attribute's comment: “composition”.
+**`AlgebraicGeometry.IsVCovering.comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/Permanence.lean, line 192](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/Permanence.lean#L192). The attribute's comment: “composition”.
 
 > Composing a V covering with V coverings of each of its members gives a V
 > covering.
@@ -205,7 +205,7 @@ theorem IsVCovering.comp {T : Scheme.{u}} {I : Type v}
 
 [Tag 0ETK](https://stacks.math.columbia.edu/tag/0ETK) in the Stacks Project.
 
-**`AlgebraicGeometry.isVCovering_of_mem_fpqcPrecoverage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/V/FpqcComparison.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/V/FpqcComparison.lean#L66). The attribute's comment: “fpqc\_v”.
+**`AlgebraicGeometry.isVCovering_of_mem_fpqcPrecoverage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/V/FpqcComparison.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/V/FpqcComparison.lean#L66). The attribute's comment: “fpqc\_v”.
 
 > **Stacks 0ETK.** Every fpqc covering is a V covering.
 >
@@ -220,7 +220,7 @@ public theorem isVCovering_of_mem_fpqcPrecoverage {T : Scheme.{u}} {I : Type v}
     IsVCovering X f
 ```
 
-**`AlgebraicGeometry.isVCovering_of_mem_fppfPrecoverage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/V/FpqcComparison.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/V/FpqcComparison.lean#L89). The attribute's comment: “fppf\_v”.
+**`AlgebraicGeometry.isVCovering_of_mem_fppfPrecoverage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/V/FpqcComparison.lean, line 89](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/V/FpqcComparison.lean#L89). The attribute's comment: “fppf\_v”.
 
 > **Stacks 0ETK.** Every fppf covering is a V covering, being an fpqc covering by
 > Stacks 022C.
@@ -232,7 +232,7 @@ public theorem isVCovering_of_mem_fppfPrecoverage {T : Scheme.{u}} {I : Type v}
     IsVCovering X f
 ```
 
-**`AlgebraicGeometry.isVCovering_of_mem_syntomicPrecoverage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/V/FpqcComparison.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/V/FpqcComparison.lean#L98). The attribute's comment: “syntomic\_v”.
+**`AlgebraicGeometry.isVCovering_of_mem_syntomicPrecoverage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/V/FpqcComparison.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/V/FpqcComparison.lean#L98). The attribute's comment: “syntomic\_v”.
 
 > **Stacks 0ETK.** Every syntomic covering is a V covering, being an fpqc covering by
 > Stacks 022C.
@@ -245,7 +245,7 @@ public theorem isVCovering_of_mem_syntomicPrecoverage {T : Scheme.{u}} {I : Type
     IsVCovering X f
 ```
 
-**`AlgebraicGeometry.isVCovering_of_mem_smoothPrecoverage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/V/FpqcComparison.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/V/FpqcComparison.lean#L108). The attribute's comment: “smooth\_v”.
+**`AlgebraicGeometry.isVCovering_of_mem_smoothPrecoverage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/V/FpqcComparison.lean, line 108](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/V/FpqcComparison.lean#L108). The attribute's comment: “smooth\_v”.
 
 > **Stacks 0ETK.** Every smooth covering is a V covering, being an fpqc covering by
 > Stacks 022C.
@@ -258,7 +258,7 @@ public theorem isVCovering_of_mem_smoothPrecoverage {T : Scheme.{u}} {I : Type v
     IsVCovering X f
 ```
 
-**`AlgebraicGeometry.isVCovering_of_mem_etalePrecoverage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/V/FpqcComparison.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/V/FpqcComparison.lean#L118). The attribute's comment: “etale\_v”.
+**`AlgebraicGeometry.isVCovering_of_mem_etalePrecoverage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/V/FpqcComparison.lean, line 118](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/V/FpqcComparison.lean#L118). The attribute's comment: “etale\_v”.
 
 > **Stacks 0ETK.** Every étale covering is a V covering, being an fpqc covering by
 > Stacks 022C.
@@ -270,7 +270,7 @@ public theorem isVCovering_of_mem_etalePrecoverage {T : Scheme.{u}} {I : Type v}
     IsVCovering X f
 ```
 
-**`AlgebraicGeometry.isVCovering_of_mem_zariskiPrecoverage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/V/FpqcComparison.lean, line 127](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/V/FpqcComparison.lean#L127). The attribute's comment: “zariski\_v”.
+**`AlgebraicGeometry.isVCovering_of_mem_zariskiPrecoverage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/V/FpqcComparison.lean, line 127](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/V/FpqcComparison.lean#L127). The attribute's comment: “zariski\_v”.
 
 > **Stacks 0ETK.** Every Zariski covering is a V covering, being an fpqc covering by
 > Stacks 022C.
@@ -282,7 +282,7 @@ public theorem isVCovering_of_mem_zariskiPrecoverage {T : Scheme.{u}} {I : Type 
     IsVCovering X f
 ```
 
-**`AlgebraicGeometry.isVCovering_of_isPHCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/V/PhComparison.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/V/PhComparison.lean#L162). The attribute's comment: “ph\_v”.
+**`AlgebraicGeometry.isVCovering_of_isPHCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/V/PhComparison.lean, line 162](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/V/PhComparison.lean#L162). The attribute's comment: “ph\_v”.
 
 > **Stacks 0ETK.** Every ph covering is a V covering. It needs no finiteness hypothesis on the
 > members of the family.
@@ -311,7 +311,7 @@ public theorem isVCovering_of_isPHCovering {T : Scheme.{u}} {I : Type v}
 
 [Tag 0ETL](https://stacks.math.columbia.edu/tag/0ETL) in the Stacks Project.
 
-**`AlgebraicGeometry.IsVSheaf`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/V/Coverings.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/V/Coverings.lean#L72).
+**`AlgebraicGeometry.IsVSheaf`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/V/Coverings.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/V/Coverings.lean#L72).
 
 > **Stacks 0ETL.** A set-valued presheaf on schemes is a sheaf for the V topology if it
 > satisfies the sheaf condition for every V covering family.
@@ -324,7 +324,7 @@ public abbrev IsVSheaf (F : Scheme.{u}ᵒᵖ ⥤ Type w) : Prop
 
 [Tag 0ETM](https://stacks.math.columbia.edu/tag/0ETM) in the Stacks Project.
 
-**`AlgebraicGeometry.isVSheaf_iff_zariski_and_standard`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/Sheaves.lean, line 471](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/Sheaves.lean#L471). The attribute's comment: “Zariski and standard V criterion”.
+**`AlgebraicGeometry.isVSheaf_iff_zariski_and_standard`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/Sheaves.lean, line 471](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/Sheaves.lean#L471). The attribute's comment: “Zariski and standard V criterion”.
 
 > **Stacks Project, Tag 0ETM.** The V sheaf condition is equivalent to the
 > Zariski sheaf condition together with the sheaf condition for all standard V
@@ -342,7 +342,7 @@ theorem isVSheaf_iff_zariski_and_standard
           (Presieve.ofArrows X f).IsSheafFor F)
 ```
 
-**`AlgebraicGeometry.isStandardVSheaf_iff_singleton`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/Sheaves.lean, line 526](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/Sheaves.lean#L526). The attribute's comment: “single-arrow standard V criterion”.
+**`AlgebraicGeometry.isStandardVSheaf_iff_singleton`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/Sheaves.lean, line 526](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/Sheaves.lean#L526). The attribute's comment: “single-arrow standard V criterion”.
 
 > **Stacks Project, Tag 0ETM, moreover.** Under the Zariski sheaf condition,
 > the sheaf condition for standard V coverings can be tested on one-arrow
@@ -366,7 +366,7 @@ theorem isStandardVSheaf_iff_singleton
 
 [Tag 0ETN](https://stacks.math.columbia.edu/tag/0ETN) in the Stacks Project.
 
-**`AlgebraicGeometry.isVCovering_iff_valuation_lifting`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/QuasiCompactCoverings.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/QuasiCompactCoverings.lean#L157). The attribute's comment: “part (1) iff part (2)”.
+**`AlgebraicGeometry.isVCovering_iff_valuation_lifting`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/QuasiCompactCoverings.lean, line 157](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/QuasiCompactCoverings.lean#L157). The attribute's comment: “part (1) iff part (2)”.
 
 > A quasi-compact morphism is a singleton V covering exactly when every map from
 > a valuation spectrum lifts after an extension of valuation rings.
@@ -384,7 +384,7 @@ theorem isVCovering_iff_valuation_lifting {X Y : Scheme.{u}} (f : X ⟶ Y)
               Spec.map (CommRingCat.ofHom e) ≫ g = h ≫ f)
 ```
 
-**`AlgebraicGeometry.valuation_lifting_iff_specialization_lifting`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/QuasiCompactCoverings.lean, line 252](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/QuasiCompactCoverings.lean#L252). The attribute's comment: “part (2) iff part (3)”.
+**`AlgebraicGeometry.valuation_lifting_iff_specialization_lifting`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/QuasiCompactCoverings.lean, line 252](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Vtopology/QuasiCompactCoverings.lean#L252). The attribute's comment: “part (2) iff part (3)”.
 
 > Valuation-ring lifting is equivalent to lifting every specialization after
 > arbitrary base change.
@@ -411,7 +411,7 @@ theorem valuation_lifting_iff_specialization_lifting {X Y : Scheme.{u}}
 
 [Tag 0ETP](https://stacks.math.columbia.edu/tag/0ETP) in the Stacks Project.
 
-**`AlgebraicGeometry.isVCovering_universallySubmersive`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/BigSites/VCoveringSubmersive.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/BigSites/VCoveringSubmersive.lean#L191).
+**`AlgebraicGeometry.isVCovering_universallySubmersive`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/BigSites/VCoveringSubmersive.lean, line 191](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/BigSites/VCoveringSubmersive.lean#L191).
 
 > **Stacks Project, Tag 0ETP.** The morphism from the disjoint union of a
 > V covering to its target is universally submersive.
@@ -430,4 +430,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 34.10, Tag 0ETA](https://stacks.math.columbia.edu/tag/0ETA)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

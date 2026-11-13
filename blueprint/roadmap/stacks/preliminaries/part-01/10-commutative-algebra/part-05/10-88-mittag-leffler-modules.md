@@ -8,13 +8,13 @@ proof: formalized
 
 # 10.88 Mittag-Leffler modules
 
-Section 10.88 of the Stacks Project, [Tag 0599](https://stacks.math.columbia.edu/tag/0599). 12 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 10.88 of the Stacks Project, [Tag 0599](https://stacks.math.columbia.edu/tag/0599). 12 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 059A, a definition
 
 [Tag 059A](https://stacks.math.columbia.edu/tag/059A) in the Stacks Project.
 
-**`CategoryTheory.Functor.IsMittagLefflerSystem`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/MittagLeffler/Defs.lean, line 128](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/MittagLeffler/Defs.lean#L128).
+**`CategoryTheory.Functor.IsMittagLefflerSystem`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/MittagLeffler/Defs.lean, line 128](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/MittagLeffler/Defs.lean#L128).
 
 > **Stacks 059A.** A diagram `F : J ⥤ ModuleCat R` of `R`-modules, thought of as a directed
 > system `(M i, f i j)`, is a *Mittag-Leffler system* if every `M i` is an `R`-module of finite
@@ -31,7 +31,7 @@ public def IsMittagLefflerSystem {R : Type u} [Ring R] {J : Type w} [Category.{w
 
 [Tag 059B](https://stacks.math.columbia.edu/tag/059B) in the Stacks Project.
 
-**`LinearMap.Dominates`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Dominates.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Module/Dominates.lean#L136). The attribute's comment: “Domination is spelled out as containment of the kernels of the two maps tensored with the identity of the test module.”.
+**`LinearMap.Dominates`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Dominates.lean, line 136](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/Dominates.lean#L136). The attribute's comment: “Domination is spelled out as containment of the kernels of the two maps tensored with the identity of the test module.”.
 
 > **Stacks 059B.** Let `f : M → N` and `g : M → M'` be maps of `R`-modules with common source.
 > We say `g` *dominates* `f` if for every `R`-module `Q` we have
@@ -47,7 +47,7 @@ public def Dominates {R : Type u} [CommSemiring R] {M : Type v} {N : Type w} {M'
 
 [Tag 059C](https://stacks.math.columbia.edu/tag/059C) in the Stacks Project.
 
-**`LinearMap.dominates_iff_forall_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Dominates.lean, line 451](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Module/Dominates.lean#L451). The attribute's comment: “Domination is the project's `LinearMap.Dominates`; the containment of kernels is the containment of the kernels of the maps tensored with the identity of the test module.”.
+**`LinearMap.dominates_iff_forall_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Dominates.lean, line 451](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/Dominates.lean#L451). The attribute's comment: “Domination is the project's `LinearMap.Dominates`; the containment of kernels is the containment of the kernels of the maps tensored with the identity of the test module.”.
 
 > **Stacks 059C.** Let `f : M → N` and `g : M → M'` be maps of `R`-modules. Then `g` dominates
 > `f`, that is `Ker(f ⊗_R id_Q) ⊆ Ker(g ⊗_R id_Q)` for every `R`-module `Q`, if and only if
@@ -67,7 +67,7 @@ public theorem LinearMap.dominates_iff_forall_finitePresentation {R : Type u} [C
 
 [Tag 0AUM](https://stacks.math.columbia.edu/tag/0AUM) in the Stacks Project.
 
-**`dominates_iff_pushoutInl_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Dominates.lean, line 621](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Module/Dominates.lean#L621).
+**`dominates_iff_pushoutInl_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Dominates.lean, line 621](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/Dominates.lean#L621).
 
 > Let `f : M → N` and `g : M → M'` be maps of `R`-modules, and form the pushout
 > square `f' : M' → N'`, `g' : N → N'`. Then `g` dominates `f` if and only if `f'`
@@ -85,7 +85,7 @@ theorem dominates_iff_pushoutInl_universallyInjective
 
 [Tag 059D](https://stacks.math.columbia.edu/tag/059D) in the Stacks Project.
 
-**`LinearMap.forall_ker_rTensor_le_iff_exists_eq_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Factorization.lean, line 296](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Module/Factorization.lean#L296). The attribute's comment: “Domination is spelled out as containment of the kernels of the tensored maps.”.
+**`LinearMap.forall_ker_rTensor_le_iff_exists_eq_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Factorization.lean, line 296](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/Factorization.lean#L296). The attribute's comment: “Domination is spelled out as containment of the kernels of the tensored maps.”.
 
 > **Stacks 059D.** Let `f : M → N` and `g : M → M'` be maps of `R`-modules and suppose that
 > `Coker(f) = N ⧸ Im(f)` is of finite presentation. Then `g` dominates `f`, that is
@@ -106,7 +106,7 @@ public theorem LinearMap.forall_ker_rTensor_le_iff_exists_eq_comp {R : Type u} [
 
 [Tag 059E](https://stacks.math.columbia.edu/tag/059E) in the Stacks Project.
 
-**`CategoryTheory.Functor.tfae_isMittagLefflerSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/MittagLeffler/Criteria.lean, line 519](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/MittagLeffler/Criteria.lean#L519). The attribute's comment: “Domination is spelled out as containment of the kernels of the tensored maps; condition (4) is 059A's `IsMittagLefflerSystem`.”.
+**`CategoryTheory.Functor.tfae_isMittagLefflerSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/MittagLeffler/Criteria.lean, line 519](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/MittagLeffler/Criteria.lean#L519). The attribute's comment: “Domination is spelled out as containment of the kernels of the tensored maps; condition (4) is 059A's `IsMittagLefflerSystem`.”.
 
 > **Stacks 059E.** Let `R` be a commutative ring, let `F : J ⥤ ModuleCat R` be a directed system
 > `(M i, f i j)` of finitely presented `R`-modules over a nonempty directed preorder `J`, and let `c`
@@ -144,7 +144,7 @@ public theorem tfae_isMittagLefflerSystem {R : Type u} [CommRing R] [Small.{w} R
 
 [Tag 059F](https://stacks.math.columbia.edu/tag/059F) in the Stacks Project.
 
-**`IsMittagLeffler`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/MittagLeffler/Defs.lean, line 218](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/MittagLeffler/Defs.lean#L218).
+**`IsMittagLeffler`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/MittagLeffler/Defs.lean, line 218](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/MittagLeffler/Defs.lean#L218).
 
 > (Stacks 10.88.7, tag 059F.) An `R`-module `M` is *Mittag-Leffler* if for
 > every finitely presented `R`-module `P` and every `R`-linear map `f : P → M`,
@@ -171,7 +171,7 @@ def IsMittagLeffler (R : Type uR) [CommRing R] (M : Type uM)
 
 [Tag 059G](https://stacks.math.columbia.edu/tag/059G) in the Stacks Project.
 
-**`CategoryTheory.Functor.isMittagLefflerSystem_iff_isMittagLeffler_dual`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/MittagLeffler/Dual.lean, line 249](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/MittagLeffler/Dual.lean#L249). The attribute's comment: “The content is the reduction of criterion (4) of 059E to the single test module `R`, stated for finitely generated projective members and an arbitrary index category, and as an iff; the passage to the colimit is 059E and the system comes from 058G. See the module docstring.”.
+**`CategoryTheory.Functor.isMittagLefflerSystem_iff_isMittagLeffler_dual`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/MittagLeffler/Dual.lean, line 249](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/MittagLeffler/Dual.lean#L249). The attribute's comment: “The content is the reduction of criterion (4) of 059E to the single test module `R`, stated for finitely generated projective members and an arbitrary index category, and as an iff; the passage to the colimit is 059E and the system comes from 058G. See the module docstring.”.
 
 > **Stacks 059G.** Let `R` be a commutative ring and let `F : J ⥤ ModuleCat R` be a diagram
 > `(M i, f i j)` of finitely generated projective `R`-modules. Then `F` is a Mittag-Leffler system
@@ -196,7 +196,7 @@ public theorem isMittagLefflerSystem_iff_isMittagLeffler_dual {R : Type u} [Comm
 
 [Tag 05CN](https://stacks.math.columbia.edu/tag/05CN) in the Stacks Project.
 
-**`Module.mittagLeffler_tensorProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/MittagLeffler/TensorProduct.lean, line 358](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/MittagLeffler/TensorProduct.lean#L358). The attribute's comment: “Mittag-Leffler is spelled out inline as condition (1) of 059E.”.
+**`Module.mittagLeffler_tensorProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/MittagLeffler/TensorProduct.lean, line 358](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/MittagLeffler/TensorProduct.lean#L358). The attribute's comment: “Mittag-Leffler is spelled out inline as condition (1) of 059E.”.
 
 > **Stacks 05CN.** If `R` is a ring and `M`, `N` are Mittag-Leffler modules over `R`, then
 > `M ⊗_R N` is a Mittag-Leffler module. The Mittag-Leffler condition is spelled out in the
@@ -225,7 +225,7 @@ public theorem Module.mittagLeffler_tensorProduct {R : Type u} [CommRing R] [Sma
 
 [Tag 05CP](https://stacks.math.columbia.edu/tag/05CP) in the Stacks Project.
 
-**`Module.mittagLeffler_iff_forall_finite_free`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/MittagLeffler/Criteria.lean, line 748](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/MittagLeffler/Criteria.lean#L748). The attribute's comment: “Mittag-Leffler is spelled out inline as condition (1) of 059E; domination as equality of the kernels of the tensored maps.”.
+**`Module.mittagLeffler_iff_forall_finite_free`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/MittagLeffler/Criteria.lean, line 748](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/MittagLeffler/Criteria.lean#L748). The attribute's comment: “Mittag-Leffler is spelled out inline as condition (1) of 059E; domination as equality of the kernels of the tensored maps.”.
 
 > **Stacks 05CP.** Let `R` be a ring and `M` an `R`-module. Then `M` is Mittag-Leffler if and
 > only if for every finite free `R`-module `F` and every module map `f : F → M` there are a finitely
@@ -251,7 +251,7 @@ public theorem Module.mittagLeffler_iff_forall_finite_free {R : Type u} [CommRin
 
 [Tag 05CQ](https://stacks.math.columbia.edu/tag/05CQ) in the Stacks Project.
 
-**`Module.mittagLeffler_trans`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/MittagLeffler/RestrictScalars.lean, line 286](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/MittagLeffler/RestrictScalars.lean#L286). The attribute's comment: “Mittag-Leffler is spelled out inline as condition (1) of 059E.”.
+**`Module.mittagLeffler_trans`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/MittagLeffler/RestrictScalars.lean, line 284](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/MittagLeffler/RestrictScalars.lean#L284). The attribute's comment: “Mittag-Leffler is spelled out inline as condition (1) of 059E.”.
 
 > **Stacks 05CQ.** Let `R → S` be a ring map with `S` finitely presented as an `R`-module (for
 > instance a finite and finitely presented ring map) and let `M` be an `S`-module. If `M` is
@@ -278,7 +278,7 @@ public theorem Module.mittagLeffler_trans {R : Type u} {S : Type w} {M : Type v}
 
 [Tag 05CR](https://stacks.math.columbia.edu/tag/05CR) in the Stacks Project.
 
-**`Module.mittagLeffler_restrictScalars_iff_of_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/MittagLeffler/Quotient.lean, line 295](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/MittagLeffler/Quotient.lean#L295). The attribute's comment: “Mittag-Leffler is spelled out inline as condition (1) of 059E; `S = R/I` with `I` finitely generated is spelled abstractly as a surjective `algebraMap R S` with `S` finitely presented as an `R`-module.”.
+**`Module.mittagLeffler_restrictScalars_iff_of_surjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/MittagLeffler/Quotient.lean, line 293](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/MittagLeffler/Quotient.lean#L293). The attribute's comment: “Mittag-Leffler is spelled out inline as condition (1) of 059E; `S = R/I` with `I` finitely generated is spelled abstractly as a surjective `algebraMap R S` with `S` finitely presented as an `R`-module.”.
 
 > **Stacks 05CR.** Let `R` be a ring and let `S = R/I` for a finitely generated ideal `I`,
 > presented here as an `R`-algebra with surjective structure map which is finitely presented as an
@@ -310,4 +310,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.88, Tag 0599](https://stacks.math.columbia.edu/tag/0599)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

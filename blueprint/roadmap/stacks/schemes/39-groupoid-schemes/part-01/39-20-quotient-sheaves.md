@@ -8,13 +8,13 @@ proof: formalized
 
 # 39.20 Quotient sheaves
 
-Section 39.20 of the Stacks Project, [Tag 02VE](https://stacks.math.columbia.edu/tag/02VE). 8 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 39.20 of the Stacks Project, [Tag 02VE](https://stacks.math.columbia.edu/tag/02VE). 8 tags here are carried by 14 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 02VF, an equation
 
 [Tag 02VF](https://stacks.math.columbia.edu/tag/02VF) in the Stacks Project.
 
-**`Stacks.Groupoids.quotientPresheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuotientSheaf.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuotientSheaf.lean#L110). References: SGA 3 IV (3.1.2), “special case”.
+**`Stacks.Groupoids.quotientPresheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuotientSheaf.lean, line 110](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuotientSheaf.lean#L110). References: SGA 3 IV (3.1.2), “special case”.
 
 > **Stacks 02VF.** The quotient presheaf of a pre-relation, the coequalizer of its two maps on
 > the restricted functors of points: it sends a test object `T` to the quotient of `U(T)` by the
@@ -29,7 +29,7 @@ noncomputable def quotientPresheaf (F : C ⥤ Over S) {R U : Over S}
 
 [Tag 02VG](https://stacks.math.columbia.edu/tag/02VG) in the Stacks Project.
 
-**`Stacks.Groupoids.quotientSheaf`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuotientSheaf.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuotientSheaf.lean#L122).
+**`Stacks.Groupoids.quotientSheaf`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuotientSheaf.lean, line 122](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuotientSheaf.lean#L122).
 
 > **Stacks 02VG.** The *quotient sheaf* of a pre-relation, the sheafification of its
 > quotient presheaf.
@@ -44,7 +44,7 @@ noncomputable abbrev quotientSheaf (J : GrothendieckTopology C)
 
 [Tag 03BD](https://stacks.math.columbia.edu/tag/03BD) in the Stacks Project.
 
-**`Stacks.Groupoids.PreRelation.HasRepresentableQuotient`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/QuotientSheaf/RepresentableQuotient.lean, line 46](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/QuotientSheaf/RepresentableQuotient.lean#L46). The attribute's comment: “pre-relation: representable quotient”. References: SGA 3 IV (3.3.2), “(ii)”.
+**`Stacks.Groupoids.PreRelation.HasRepresentableQuotient`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/QuotientSheaf/RepresentableQuotient.lean, line 46](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/QuotientSheaf/RepresentableQuotient.lean#L46). The attribute's comment: “pre-relation: representable quotient”. References: SGA 3 IV (3.3.2), “(ii)”.
 
 > A pre-relation has a *representable quotient* when its quotient sheaf `U/R` is represented by
 > an object of the site.
@@ -55,7 +55,7 @@ noncomputable abbrev PreRelation.HasRepresentableQuotient (J : GrothendieckTopol
     (j : PreRelation R U) : Prop
 ```
 
-**`Stacks.Groupoids.GroupoidScheme.HasRepresentableQuotient`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/QuotientSheaf/RepresentableQuotient.lean, line 54](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/QuotientSheaf/RepresentableQuotient.lean#L54). The attribute's comment: “groupoid scheme: representable quotient”. References: SGA 3 IV (3.3.2), “(ii)”.
+**`Stacks.Groupoids.GroupoidScheme.HasRepresentableQuotient`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/QuotientSheaf/RepresentableQuotient.lean, line 54](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/QuotientSheaf/RepresentableQuotient.lean#L54). The attribute's comment: “groupoid scheme: representable quotient”. References: SGA 3 IV (3.3.2), “(ii)”.
 
 > A groupoid scheme has a *representable quotient* when the quotient sheaf `U/R` of its
 > pre-relation `(t, s)` is represented by an object of the site.
@@ -69,7 +69,7 @@ noncomputable abbrev GroupoidScheme.HasRepresentableQuotient (J : GrothendieckTo
 
 [Tag 03C5](https://stacks.math.columbia.edu/tag/03C5) in the Stacks Project.
 
-**`Stacks.Groupoids.isIso_quotientSheafToPoints_baseOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/QuotientSheaf/RepresentabilityBigSites.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/QuotientSheaf/RepresentabilityBigSites.lean#L114).
+**`Stacks.Groupoids.isIso_quotientSheafToPoints_baseOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/QuotientSheaf/RepresentabilityBigSites.lean, line 114](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/QuotientSheaf/RepresentabilityBigSites.lean#L114).
 
 > **Stacks 03C5.** Let `τ` be one of the Zariski, étale, smooth, syntomic and fppf
 > topologies, let `j : R ⟶ U ×_S U` be a pre-relation of `S`-schemes, and let `f : U ⟶ M` be a
@@ -99,7 +99,7 @@ theorem isIso_quotientSheafToPoints_baseOver {R U M : Over S} (j : PreRelation R
 
 [Tag 045Y](https://stacks.math.columbia.edu/tag/045Y) in the Stacks Project.
 
-**`Stacks.Groupoids.toQuotientSheaf_apply_eq_iff_locally_related`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuotientSheafEquality.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuotientSheafEquality.lean#L134).
+**`Stacks.Groupoids.toQuotientSheaf_apply_eq_iff_locally_related`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuotientSheafEquality.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuotientSheafEquality.lean#L134).
 
 > **Stacks 045Y.** Two `T`-valued points of `U` have the same image in the quotient sheaf
 > of a pre-equivalence relation if and only if, on some covering sieve of `T`, their
@@ -124,7 +124,7 @@ theorem toQuotientSheaf_apply_eq_iff_locally_related
 
 [Tag 045Z](https://stacks.math.columbia.edu/tag/045Z) in the Stacks Project.
 
-**`Stacks.Groupoids.restrictQuotientSheafMap_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuotientSheafRestriction.lean, line 115](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuotientSheafRestriction.lean#L115). The attribute's comment: “injectivity”. References: SGA 3 IV (4.4.10), “Monomorphism clause”.
+**`Stacks.Groupoids.restrictQuotientSheafMap_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuotientSheafRestriction.lean, line 115](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuotientSheafRestriction.lean#L115). The attribute's comment: “injectivity”. References: SGA 3 IV (4.4.10), “Monomorphism clause”.
 
 > **Stacks 045Z, injectivity.** Restricting a pre-equivalence relation induces an injective
 > map `U'/R' ⟶ U/R` of quotient sheaves.
@@ -134,7 +134,7 @@ theorem restrictQuotientSheafMap_mono (hj : IsPreEquivalenceRelation j) :
     Mono (restrictQuotientSheafMap J F j g)
 ```
 
-**`Stacks.Groupoids.restrictQuotientSheafMap_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuotientSheafRestriction.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuotientSheafRestriction.lean#L149). The attribute's comment: “isomorphism under surjectivity”.
+**`Stacks.Groupoids.restrictQuotientSheafMap_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuotientSheafRestriction.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuotientSheafRestriction.lean#L149). The attribute's comment: “isomorphism under surjectivity”.
 
 > **Stacks 045Z, bijectivity.** If `g` induces a local surjection on restricted functors of
 > points, then the induced map `U'/R' ⟶ U/R` of quotient sheaves is an isomorphism.
@@ -149,7 +149,7 @@ theorem restrictQuotientSheafMap_isIso (hj : IsPreEquivalenceRelation j)
 
 [Tag 02VH](https://stacks.math.columbia.edu/tag/02VH) in the Stacks Project.
 
-**`AlgebraicGeometry.GroupoidScheme.mono_restrictionQuotientMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/QuotientSheaf/GroupoidRestriction.lean, line 387](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/QuotientSheaf/GroupoidRestriction.lean#L387). The attribute's comment: “injectivity of the quotient map”.
+**`AlgebraicGeometry.GroupoidScheme.mono_restrictionQuotientMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/QuotientSheaf/GroupoidRestriction.lean, line 387](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/QuotientSheaf/GroupoidRestriction.lean#L387). The attribute's comment: “injectivity of the quotient map”.
 
 > **Stacks 02VH.** The map from the quotient sheaf of a restricted groupoid scheme to the
 > quotient sheaf of the original one is injective.
@@ -161,7 +161,7 @@ theorem mono_restrictionQuotientMap (J : GrothendieckTopology C)
     Mono (restrictionQuotientMap J F G g H)
 ```
 
-**`AlgebraicGeometry.GroupoidScheme.isIso_restrictionQuotientMap_of_reach`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/QuotientSheaf/GroupoidRestriction.lean, line 399](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/QuotientSheaf/GroupoidRestriction.lean#L399). The attribute's comment: “bijectivity when the reach map is surjective”.
+**`AlgebraicGeometry.GroupoidScheme.isIso_restrictionQuotientMap_of_reach`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/QuotientSheaf/GroupoidRestriction.lean, line 399](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/QuotientSheaf/GroupoidRestriction.lean#L399). The attribute's comment: “bijectivity when the reach map is surjective”.
 
 > **Stacks 02VH.** If every object is locally the source of an arrow whose target lifts along
 > `g`, then the map of quotient sheaves induced by the restriction is bijective.
@@ -175,7 +175,7 @@ theorem isIso_restrictionQuotientMap_of_reach (J : GrothendieckTopology C)
     IsIso (restrictionQuotientMap J F G g H)
 ```
 
-**`AlgebraicGeometry.GroupoidScheme.isIso_restrictionQuotientMap_of_objects`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/QuotientSheaf/GroupoidRestriction.lean, line 439](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/QuotientSheaf/GroupoidRestriction.lean#L439). The attribute's comment: “bijectivity when the restricting map is surjective”.
+**`AlgebraicGeometry.GroupoidScheme.isIso_restrictionQuotientMap_of_objects`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/QuotientSheaf/GroupoidRestriction.lean, line 439](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/QuotientSheaf/GroupoidRestriction.lean#L439). The attribute's comment: “bijectivity when the restricting map is surjective”.
 
 > **Stacks 02VH.** If the restricting map is locally surjective on functors of points, then
 > the map of quotient sheaves induced by the restriction is bijective.
@@ -189,7 +189,7 @@ theorem isIso_restrictionQuotientMap_of_objects (J : GrothendieckTopology C)
     IsIso (restrictionQuotientMap J F G g H)
 ```
 
-**`AlgebraicGeometry.GroupoidScheme.isIso_restrictionQuotientMap_of_reach_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/QuotientSheaf/GroupoidRestriction.lean, line 452](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/QuotientSheaf/GroupoidRestriction.lean#L452). The attribute's comment: “bijectivity when the reach map is a covering”.
+**`AlgebraicGeometry.GroupoidScheme.isIso_restrictionQuotientMap_of_reach_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/QuotientSheaf/GroupoidRestriction.lean, line 452](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/QuotientSheaf/GroupoidRestriction.lean#L452). The attribute's comment: “bijectivity when the reach map is a covering”.
 
 > **Stacks 02VH.** If the reach map is, up to isomorphisms identifying its source and its
 > target with objects of the site, a singleton covering, then the map of quotient sheaves induced
@@ -205,7 +205,7 @@ theorem isIso_restrictionQuotientMap_of_reach_cover (J : GrothendieckTopology C)
     IsIso (restrictionQuotientMap J F G g H)
 ```
 
-**`AlgebraicGeometry.GroupoidScheme.isIso_restrictionQuotientMap_of_objects_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/QuotientSheaf/GroupoidRestriction.lean, line 467](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/QuotientSheaf/GroupoidRestriction.lean#L467). The attribute's comment: “bijectivity when the restricting map is a covering”.
+**`AlgebraicGeometry.GroupoidScheme.isIso_restrictionQuotientMap_of_objects_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/QuotientSheaf/GroupoidRestriction.lean, line 467](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/QuotientSheaf/GroupoidRestriction.lean#L467). The attribute's comment: “bijectivity when the restricting map is a covering”.
 
 > **Stacks 02VH.** If the restricting map is, up to isomorphisms identifying its source and
 > its target with objects of the site, a singleton covering, then the map of quotient sheaves
@@ -225,7 +225,7 @@ theorem isIso_restrictionQuotientMap_of_objects_cover (J : GrothendieckTopology 
 
 [Tag 07S3](https://stacks.math.columbia.edu/tag/07S3) in the Stacks Project.
 
-**`AlgebraicGeometry.isPullback_toQuotientSheaf_overTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/QuotientSheaf/BigSitePullbackSquare.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/QuotientSheaf/BigSitePullbackSquare.lean#L117).
+**`AlgebraicGeometry.isPullback_toQuotientSheaf_overTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/QuotientSheaf/BigSitePullbackSquare.lean, line 117](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/QuotientSheaf/BigSitePullbackSquare.lean#L117).
 
 > **Stacks 07S3.** Let `S` be a scheme and let `(r, f)` be a morphism of equivalence
 > relations `j : R ⟶ U ×_S U` and `j' : R' ⟶ U' ×_S U'` over `S` whose square on source maps is
@@ -261,4 +261,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 39.20, Tag 02VE](https://stacks.math.columbia.edu/tag/02VE)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

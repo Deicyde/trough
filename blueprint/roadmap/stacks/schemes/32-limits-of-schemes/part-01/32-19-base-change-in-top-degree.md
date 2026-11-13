@@ -8,13 +8,13 @@ proof: formalized
 
 # 32.19 Base change in top degree
 
-Section 32.19 of the Stacks Project, [Tag 0EX2](https://stacks.math.columbia.edu/tag/0EX2). 4 tags here are carried by 19 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 32.19 of the Stacks Project, [Tag 0EX2](https://stacks.math.columbia.edu/tag/0EX2). 4 tags here are carried by 19 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0EX3, a lemma
 
 [Tag 0EX3](https://stacks.math.columbia.edu/tag/0EX3) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.TopDegreeBaseChange.affineTopDegreeTensorBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/AffineBaseChangeQuasicoherent.lean, line 203](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/AffineBaseChangeQuasicoherent.lean#L203). The attribute's comment: “(c) for an affine base change over an affine base, at an arbitrary quasi-coherent module; the comparison is proved linear over the base ring and not over the base-changed ring, and no canonical base-change map is constructed”.
+**`Stacks.AlgebraicGeometry.TopDegreeBaseChange.affineTopDegreeTensorBaseChangeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/AffineBaseChangeQuasicoherent.lean, line 203](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/AffineBaseChangeQuasicoherent.lean#L203). The attribute's comment: “(c) for an affine base change over an affine base, at an arbitrary quasi-coherent module; the comparison is proved linear over the base ring and not over the base-changed ring, and no canonical base-change map is constructed”.
 
 > **Conclusion (c) of [Stacks, Tag 0EX3] for an affine base change over an affine base, at an
 > arbitrary quasi-coherent module**: `Hᵈ(X, F) ⊗_R B ≅ Hᵈ(X_B, q^* F)`.
@@ -43,7 +43,7 @@ def affineTopDegreeTensorBaseChangeIso
             ((Scheme.Modules.pullback q).obj (show W.left.Modules from F.obj))))
 ```
 
-**`Stacks.AlgebraicGeometry.TopDegreeBaseChange.isIso_topDirectImageBaseChangeMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/BaseChangeTopDegreeConclusion.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/BaseChangeTopDegreeConclusion.lean#L68). The attribute's comment: “(c)”.
+**`Stacks.AlgebraicGeometry.TopDegreeBaseChange.isIso_topDirectImageBaseChangeMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/BaseChangeTopDegreeConclusion.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/BaseChangeTopDegreeConclusion.lean#L68). The attribute's comment: “(c)”.
 
 > **Conclusion (c) of [Stacks, Tag 0EX3]: formation of `R^d f'_* 𝓕'` commutes with arbitrary
 > further base change.** For a top-degree base-change situation `S` (a morphism `f : X ⟶ Y` of
@@ -60,7 +60,7 @@ theorem isIso_topDirectImageBaseChangeMap
     IsIso (topDirectImageBaseChangeMap S F' h' f'' h (toShHom_comm_of_isPullback h' f'' h sq))
 ```
 
-**`Stacks.AlgebraicGeometry.TopDegreeBaseChange.isZero_rightDerivedPlus_pushforward_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/BaseChangeVanishing.lean, line 202](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/BaseChangeVanishing.lean#L202). The attribute's comment: “(a)”.
+**`Stacks.AlgebraicGeometry.TopDegreeBaseChange.isZero_rightDerivedPlus_pushforward_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/BaseChangeVanishing.lean, line 203](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/BaseChangeVanishing.lean#L203). The attribute's comment: “(a)”.
 
 > **Conclusion (a) of [Stacks, Tag 0EX3].** In a top-degree base-change situation the higher
 > direct images along the base-changed morphism `f'` of a quasi-coherent module vanish above the
@@ -81,7 +81,7 @@ theorem isZero_rightDerivedPlus_pushforward_baseChange
     IsZero (((Scheme.Modules.pushforward S.f').rightDerivedPlus i).obj F')
 ```
 
-**`Stacks.AlgebraicGeometry.TopDegreeBaseChangeSituation.topDegreeTensorCohomologyIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/EilenbergWattsUnitor.lean, line 269](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/EilenbergWattsUnitor.lean#L269). The attribute's comment: “(b) over an affine base, as an isomorphism of functors”.
+**`Stacks.AlgebraicGeometry.TopDegreeBaseChangeSituation.topDegreeTensorCohomologyIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/EilenbergWattsUnitor.lean, line 269](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/EilenbergWattsUnitor.lean#L269). The attribute's comment: “(b) over an affine base, as an isomorphism of functors”.
 
 > **The affine case of [Stacks, Tag 0EX3] (b) in the source's own form.** For a top-degree
 > base-change situation whose base `Y'` is affine and a quasi-coherent module `F` on `X'`, the
@@ -96,7 +96,7 @@ def topDegreeTensorCohomologyIso :
     MonoidalCategory.tensorLeft (S.topDegreeCohomology F) ≅ S.topDegreeFunctor F
 ```
 
-**`Stacks.AlgebraicGeometry.TopDegreeBaseChangeSituation.topDegreeTensorCohomologyLinearEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/EilenbergWattsUnitor.lean, line 279](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/EilenbergWattsUnitor.lean#L279). The attribute's comment: “(b) over an affine base, the displayed tensor identity”.
+**`Stacks.AlgebraicGeometry.TopDegreeBaseChangeSituation.topDegreeTensorCohomologyLinearEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/EilenbergWattsUnitor.lean, line 279](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/EilenbergWattsUnitor.lean#L279). The attribute's comment: “(b) over an affine base, the displayed tensor identity”.
 
 > **The affine case of [Stacks, Tag 0EX3] (b), module by module, in the source's own form**: a
 > `Γ(Y', ⊤)`-linear equivalence `H^d(X', F) ⊗_{R'} M ≃ₗ H^d(X', F ⊗ (f')^* M~)`, natural in `M` by
@@ -108,7 +108,7 @@ def topDegreeTensorCohomologyLinearEquiv (M : ModuleCat.{u} S.affineBaseRing) :
       (S.topDegreeFunctor F).obj M
 ```
 
-**`Stacks.AlgebraicGeometry.TopDegreeBaseChange.isIso_higherDirectImageTensorMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/TensorComparisonBase.lean, line 267](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/TensorComparisonBase.lean#L267). The attribute's comment: “(b)”.
+**`Stacks.AlgebraicGeometry.TopDegreeBaseChange.isIso_higherDirectImageTensorMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/TensorComparisonBase.lean, line 267](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/TensorComparisonBase.lean#L267). The attribute's comment: “(b)”.
 
 > **Conclusion (b) of [Stacks, Tag 0EX3].**  For a top-degree base-change situation, a
 > quasi-coherent module `F'` on `X'` and a quasi-coherent module `G` on the base `Y'`, the
@@ -125,7 +125,7 @@ theorem isIso_higherDirectImageTensorMap (G : S.Y'.Modules) [G.IsQuasicoherent] 
     IsIso (higherDirectImageTensorMap S.f' F' G S.d)
 ```
 
-**`Stacks.AlgebraicGeometry.TopDegreeBaseChange.topDirectImageTensorComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/TensorComparisonBase.lean, line 285](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/TensorComparisonBase.lean#L285). The attribute's comment: “(b)”.
+**`Stacks.AlgebraicGeometry.TopDegreeBaseChange.topDirectImageTensorComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/TensorComparisonBase.lean, line 285](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/TensorComparisonBase.lean#L285). The attribute's comment: “(b)”.
 
 > **Conclusion (b) of [Stacks, Tag 0EX3], as the isomorphism the tag asserts.**  For a
 > top-degree base-change situation and quasi-coherent modules `F'` on `X'` and `G` on the base,
@@ -148,7 +148,7 @@ def topDirectImageTensorComparison (G : S.Y'.Modules) [G.IsQuasicoherent] :
       IsHigherDirectImageTensorMap S.f' F' G S.d e.inv }
 ```
 
-**`Stacks.AlgebraicGeometry.TopDegreeBaseChangeSituation.topDegreeTensorSheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/TopDegreeTensorProjection.lean, line 402](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/TopDegreeTensorProjection.lean#L402). The attribute's comment: “(b)”.
+**`Stacks.AlgebraicGeometry.TopDegreeBaseChangeSituation.topDegreeTensorSheafIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/TopDegreeTensorProjection.lean, line 402](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/TopDegreeTensorProjection.lean#L402). The attribute's comment: “(b)”.
 
 > **Conclusion (b) of [Stacks, Tag 0EX3].** In a top-degree base-change situation, for `F'`
 > quasi-coherent on `X'` and `G'` quasi-coherent on `Y'`,
@@ -184,7 +184,7 @@ def topDegreeTensorSheafIso
 
 [Tag 0E7D](https://stacks.math.columbia.edu/tag/0E7D) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.TopDegreeBaseChange.isZero_stalk_rightDerivedPlus_of_topologicalKrullDim_fiber_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/FibreDimensionStalkVanishing.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/FibreDimensionStalkVanishing.lean#L65). The attribute's comment: “part (1)”.
+**`Stacks.AlgebraicGeometry.TopDegreeBaseChange.isZero_stalk_rightDerivedPlus_of_topologicalKrullDim_fiber_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/FibreDimensionStalkVanishing.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/FibreDimensionStalkVanishing.lean#L65). The attribute's comment: “part (1)”.
 
 > **[Stacks, Tag 0E7D] part (1).** For `f : X ⟶ Y` proper, `y ∈ Y` whose fibre has topological
 > Krull dimension at most `d`, and `F` quasi-coherent, the stalk at `y` of `Rⁱ f_* F` vanishes for
@@ -201,7 +201,7 @@ theorem isZero_stalk_rightDerivedPlus_of_topologicalKrullDim_fiber_le
     IsZero ((((Scheme.Modules.pushforward f).rightDerivedPlus i).obj F).presheaf.stalk y)
 ```
 
-**`Stacks.AlgebraicGeometry.TopDegreeBaseChange.exists_isAffineOpen_topDegreeBaseChange_of_topologicalKrullDim_fiber_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/FibreDimensionStalkVanishing.lean, line 86](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/FibreDimensionStalkVanishing.lean#L86). The attribute's comment: “part (2): the hypotheses of Tag 0EX3 and its conclusions (a) and (b)”.
+**`Stacks.AlgebraicGeometry.TopDegreeBaseChange.exists_isAffineOpen_topDegreeBaseChange_of_topologicalKrullDim_fiber_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/FibreDimensionStalkVanishing.lean, line 86](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/FibreDimensionStalkVanishing.lean#L86). The attribute's comment: “part (2): the hypotheses of Tag 0EX3 and its conclusions (a) and (b)”.
 
 > **[Stacks, Tag 0E7D] part (2).** For `f : X ⟶ Y` proper and `y ∈ Y` whose fibre has
 > topological Krull dimension at most `d`, the point `y` has an affine open neighbourhood `V` such
@@ -253,7 +253,7 @@ theorem exists_isAffineOpen_topDegreeBaseChange_of_topologicalKrullDim_fiber_le
               G'))
 ```
 
-**`Stacks.AlgebraicGeometry.TopDegreeBaseChange.exists_isAffineOpen_topDegreeBaseChangeConclusions_of_topologicalKrullDim_fiber_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/FibreDimensionTopDegreeConclusions.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/FibreDimensionTopDegreeConclusions.lean#L85). The attribute's comment: “part (2), with all conclusions of Tag 0EX3”.
+**`Stacks.AlgebraicGeometry.TopDegreeBaseChange.exists_isAffineOpen_topDegreeBaseChangeConclusions_of_topologicalKrullDim_fiber_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/FibreDimensionTopDegreeConclusions.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/FibreDimensionTopDegreeConclusions.lean#L85). The attribute's comment: “part (2), with all conclusions of Tag 0EX3”.
 
 > **[Stacks, Tag 0E7D] part (2), with every conclusion of Tag 0EX3.** For `f : X ⟶ Y` proper
 > and `y ∈ Y` whose fibre has topological Krull dimension at most `d`, the point `y` has an affine
@@ -319,7 +319,7 @@ theorem exists_isAffineOpen_topDegreeBaseChangeConclusions_of_topologicalKrullDi
           (toShHom_comm_of_isPullback (S := S) h' f'' h sq')))
 ```
 
-**`Stacks.AlgebraicGeometry.TopDegreeBaseChange.stalkVanishing_and_topDegreeBaseChange_of_topologicalKrullDim_fiber_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/FibreDimensionTopDegreeConclusions.lean, line 144](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/FibreDimensionTopDegreeConclusions.lean#L144).
+**`Stacks.AlgebraicGeometry.TopDegreeBaseChange.stalkVanishing_and_topDegreeBaseChange_of_topologicalKrullDim_fiber_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/FibreDimensionTopDegreeConclusions.lean, line 144](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/FibreDimensionTopDegreeConclusions.lean#L144).
 
 > **[Stacks, Tag 0E7D].** For `f : X ⟶ Y` proper and `y ∈ Y` whose fibre has topological
 > Krull dimension at most `d`: (1) the stalk at `y` of `Rⁱ f_* F` vanishes for every `i > d` and
@@ -379,7 +379,7 @@ theorem stalkVanishing_and_topDegreeBaseChange_of_topologicalKrullDim_fiber_le
           (toShHom_comm_of_isPullback (S := S) h' f'' h sq')))
 ```
 
-**`Stacks.AlgebraicGeometry.TopDegreeBaseChange.exists_isAffineOpen_vanishing_of_fiber_dimension_le_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/ZeroDimensionalFibres.lean, line 138](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/ZeroDimensionalFibres.lean#L138). The attribute's comment: “part (2) for fibre dimension at most `0`, with no further hypothesis”.
+**`Stacks.AlgebraicGeometry.TopDegreeBaseChange.exists_isAffineOpen_vanishing_of_fiber_dimension_le_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/ZeroDimensionalFibres.lean, line 138](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/ZeroDimensionalFibres.lean#L138). The attribute's comment: “part (2) for fibre dimension at most `0`, with no further hypothesis”.
 
 > **[Stacks, Tag 0E7D] part (2) for a proper morphism with zero-dimensional fibres**, with
 > no hypothesis beyond the tag's own. The point `y` has an affine open neighbourhood `V` such
@@ -408,7 +408,7 @@ theorem exists_isAffineOpen_vanishing_of_fiber_dimension_le_zero
           IsZero (((Scheme.Modules.pushforward (f ∣_ V)).rightDerivedPlus i).obj F))
 ```
 
-**`Stacks.AlgebraicGeometry.TopDegreeBaseChange.isZero_stalk_rightDerivedPlus_of_fiber_dimension_le_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/ZeroDimensionalFibres.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/ZeroDimensionalFibres.lean#L162). The attribute's comment: “part (1) for fibre dimension at most `0`, with no further hypothesis”.
+**`Stacks.AlgebraicGeometry.TopDegreeBaseChange.isZero_stalk_rightDerivedPlus_of_fiber_dimension_le_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/ZeroDimensionalFibres.lean, line 162](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/TopDegreeBaseChange/ZeroDimensionalFibres.lean#L162). The attribute's comment: “part (1) for fibre dimension at most `0`, with no further hypothesis”.
 
 > **[Stacks, Tag 0E7D] part (1) for a proper morphism with zero-dimensional fibres**, with
 > no hypothesis beyond the tag's own: the stalk at `y` of `Rⁱ f_* F` vanishes in every
@@ -432,7 +432,7 @@ theorem isZero_stalk_rightDerivedPlus_of_fiber_dimension_le_zero
 
 [Tag 0EX4](https://stacks.math.columbia.edu/tag/0EX4) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.HigherDirectImageQcoh.isQuasicoherent_rightDerived_of_isProper`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/HigherDirectImageQcqs/Qcqs.lean, line 505](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/HigherDirectImageQcqs/Qcqs.lean#L505). The attribute's comment: “quasi-coherence”.
+**`Stacks.AlgebraicGeometry.HigherDirectImageQcoh.isQuasicoherent_rightDerived_of_isProper`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/HigherDirectImageQcqs/Qcqs.lean, line 505](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/HigherDirectImageQcqs/Qcqs.lean#L505). The attribute's comment: “quasi-coherence”.
 
 > **Stacks Project, Tag 0EX4 (quasi-coherence).** Higher direct images of a quasi-coherent
 > module under a proper morphism are quasi-coherent: a proper morphism is quasi-compact and
@@ -444,7 +444,7 @@ instance isQuasicoherent_rightDerived_of_isProper {X Y : Scheme.{u}} (f : X ⟶ 
     (((Scheme.Modules.pushforward f).rightDerived i).obj F).IsQuasicoherent
 ```
 
-**`Stacks.AlgebraicGeometry.Tag0EX4ProperQcoh.isQuasicoherent_rightDerived_of_isProper`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProperQcoh/Basic.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProperQcoh/Basic.lean#L90). The attribute's comment: “quasi-coherence”.
+**`Stacks.AlgebraicGeometry.Tag0EX4ProperQcoh.isQuasicoherent_rightDerived_of_isProper`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProperQcoh/Basic.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProperQcoh/Basic.lean#L90). The attribute's comment: “quasi-coherence”.
 
 > **Stacks Project, Tag 0EX4 (quasi-coherence).** Let `f : X ⟶ Y` be a proper morphism of
 > schemes and let `F` be a quasi-coherent `𝒪_X`-module. Then the higher direct image `R ⁱ f_* F` is
@@ -459,7 +459,7 @@ instance isQuasicoherent_rightDerived_of_isProper [IsProper f] [F.IsQuasicoheren
     (((Scheme.Modules.pushforward f).rightDerived i).obj F).IsQuasicoherent
 ```
 
-**`Stacks.AlgebraicGeometry.TopDegreeFiniteType.isFiniteType_rightDerived_of_isProper_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeFiniteType/NoetherianBaseUnconditional.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/TopDegreeFiniteType/NoetherianBaseUnconditional.lean#L72). The attribute's comment: “finite-type clause only, and only over a locally Noetherian base; there in every degree and with no hypothesis on the fibres. An arbitrary base is not covered.”.
+**`Stacks.AlgebraicGeometry.TopDegreeFiniteType.isFiniteType_rightDerived_of_isProper_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeFiniteType/NoetherianBaseUnconditional.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/TopDegreeFiniteType/NoetherianBaseUnconditional.lean#L72). The attribute's comment: “finite-type clause only, and only over a locally Noetherian base; there in every degree and with no hypothesis on the fibres. An arbitrary base is not covered.”.
 
 > **The finite-type clause of [Stacks, Tag 0EX4] over a locally Noetherian base.** For
 > `f : X ⟶ Y` proper with `Y` locally Noetherian and `F` quasi-coherent of finite type, the
@@ -473,7 +473,7 @@ theorem isFiniteType_rightDerived_of_isProper_of_isLocallyNoetherian {X Y : Sche
     (((Scheme.Modules.pushforward f).rightDerived d).obj F).IsFiniteType
 ```
 
-**`Stacks.AlgebraicGeometry.TopDegreeFiniteType.isQuasicoherent_isFiniteType_rightDerived_of_isProper_of_forall_topologicalKrullDim_fiber_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeFiniteType/Unconditional.lean, line 238](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/TopDegreeFiniteType/Unconditional.lean#L238). The attribute's comment: “both clauses at an ARBITRARY base, every d; the conclusion read as the 𝒪\_Y-module R ᵈ f\_* F, the source's 𝒪\_X being a typo”.
+**`Stacks.AlgebraicGeometry.TopDegreeFiniteType.isQuasicoherent_isFiniteType_rightDerived_of_isProper_of_forall_topologicalKrullDim_fiber_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeFiniteType/Unconditional.lean, line 239](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/TopDegreeFiniteType/Unconditional.lean#L239). The attribute's comment: “both clauses at an ARBITRARY base, every d; the conclusion read as the 𝒪\_Y-module R ᵈ f\_* F, the source's 𝒪\_X being a typo”.
 
 > **[Stacks, Tag 0EX4].** For `f : X ⟶ Y` proper all of whose fibres have dimension at most
 > `d`, and `F` a quasi-coherent `𝒪_X`-module of finite type, the `𝒪_Y`-module `R ᵈ f_* F` is
@@ -500,7 +500,7 @@ theorem isQuasicoherent_isFiniteType_rightDerived_of_isProper_of_forall_topologi
 
 [Tag 0EX5](https://stacks.math.columbia.edu/tag/0EX5) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.TopDegreeFiniteType.isFinitePresentation_rightDerived_of_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeFiniteType/FinitePresentationModelDischarge.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/TopDegreeFiniteType/FinitePresentationModelDischarge.lean#L220). The attribute's comment: “conclusion read as the 𝒪\_Y-module R ᵈ f\_* F, the source's 𝒪\_X being a typo”. References: EGA III (2.4.1), “Clause (i), special case”.
+**`Stacks.AlgebraicGeometry.TopDegreeFiniteType.isFinitePresentation_rightDerived_of_finitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/TopDegreeFiniteType/FinitePresentationModelDischarge.lean, line 220](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/TopDegreeFiniteType/FinitePresentationModelDischarge.lean#L220). The attribute's comment: “conclusion read as the 𝒪\_Y-module R ᵈ f\_* F, the source's 𝒪\_X being a typo”. References: EGA III (2.4.1), “Clause (i), special case”.
 
 > **[Stacks, Tag 0EX5].** Let `f : X ⟶ Y` be proper and of finite presentation with every
 > fibre of dimension at most `d`, and let `F` be an `𝒪_X`-module of finite presentation. Then the
@@ -538,4 +538,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 32.19, Tag 0EX2](https://stacks.math.columbia.edu/tag/0EX2)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

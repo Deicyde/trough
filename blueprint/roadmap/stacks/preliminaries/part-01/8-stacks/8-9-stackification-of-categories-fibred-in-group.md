@@ -8,13 +8,13 @@ proof: formalized
 
 # 8.9 Stackification of categories fibred in groupoids
 
-Section 8.9 of the Stacks Project, [Tag 02ZO](https://stacks.math.columbia.edu/tag/02ZO). 3 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 8.9 of the Stacks Project, [Tag 02ZO](https://stacks.math.columbia.edu/tag/02ZO). 3 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 02ZP, a lemma
 
 [Tag 02ZP](https://stacks.math.columbia.edu/tag/02ZP) in the Stacks Project.
 
-**`CategoryTheory.Functor.Stackification.isFiberedInGroupoids_of_isStackification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stackification/GroupoidStackification.lean, line 255](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Stackification/GroupoidStackification.lean#L255).
+**`CategoryTheory.Functor.Stackification.isFiberedInGroupoids_of_isStackification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stackification/GroupoidStackification.lean, line 255](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stackification/GroupoidStackification.lean#L255).
 
 > **Stacks 02ZP.** Let `(𝒞, J)` be a site, let `p : 𝒮 ⥤ 𝒞` be a category fibred in groupoids and
 > let `G : 𝒮 ⥤ 𝒮'` exhibit the stack `p' : 𝒮' ⥤ 𝒞` as the stackification of the fibred category
@@ -33,7 +33,7 @@ Section 8.9 of the Stacks Project, [Tag 02ZO](https://stacks.math.columbia.edu/t
 theorem isFiberedInGroupoids_of_isStackification : p'.IsFiberedInGroupoids
 ```
 
-**`CategoryTheory.Functor.Stackification.isStackInGroupoids_of_isStackification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stackification/GroupoidStackification.lean, line 267](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Stackification/GroupoidStackification.lean#L267).
+**`CategoryTheory.Functor.Stackification.isStackInGroupoids_of_isStackification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stackification/GroupoidStackification.lean, line 267](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stackification/GroupoidStackification.lean#L267).
 
 > **Stacks 02ZP, as the source states it: `𝒮'` is a stack in groupoids.** The `IsStack` half is
 > the hypothesis `hsp'` and the `IsFiberedInGroupoids` half is
@@ -47,7 +47,7 @@ theorem isStackInGroupoids_of_isStackification :
     p'.IsFiberedInGroupoids ∧ p'.IsStack J
 ```
 
-**`CategoryTheory.Functor.Stackification.nonempty_isEquivalenceOver_of_locally_fullyFaithful`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stackification/Uniqueness.lean, line 161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Stackification/Uniqueness.lean#L161). The attribute's comment: “the determinacy half of the statement — `𝒮'` is determined up to 2-isomorphism by clauses (1) and (2) — read as: a 1-morphism from a stackification into a stack whose composite with the stackification again satisfies the two clauses is an equivalence over the site. The existence half is the construction of Stacks 02ZN, not assembled in the tree; the uniqueness of the 2-isomorphism is Stacks 04W9, `CategoryTheory.Functor.Stackification.restrict_isEquivalence`; and the groupoid half of 02ZP is `CategoryTheory.Functor.Stackification.isStackInGroupoids_of_isStackification`”.
+**`CategoryTheory.Functor.Stackification.nonempty_isEquivalenceOver_of_locally_fullyFaithful`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stackification/Uniqueness.lean, line 161](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stackification/Uniqueness.lean#L161). The attribute's comment: “the determinacy half of the statement — `𝒮'` is determined up to 2-isomorphism by clauses (1) and (2) — read as: a 1-morphism from a stackification into a stack whose composite with the stackification again satisfies the two clauses is an equivalence over the site. The existence half is the construction of Stacks 02ZN, not assembled in the tree; the uniqueness of the 2-isomorphism is Stacks 04W9, `CategoryTheory.Functor.Stackification.restrict_isEquivalence`; and the groupoid half of 02ZP is `CategoryTheory.Functor.Stackification.isStackInGroupoids_of_isStackification`”.
 
 > **The determinacy clause of Stacks 02ZN and 02ZP, in the form a consumer uses.** Let
 > `G : 𝒜 ⥤ ℬ` exhibit the stack `p'` as the stackification of the fibred category `p` — that is, let
@@ -72,7 +72,7 @@ theorem nonempty_isEquivalenceOver_of_locally_fullyFaithful :
     Nonempty (IsEquivalenceOver p' q H)
 ```
 
-**`CategoryTheory.Functor.Stackification.nonempty_isEquivalenceOver_extend`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stackification/Uniqueness.lean, line 264](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Stackification/Uniqueness.lean#L264). The attribute's comment: “the determinacy half of the statement — `𝒮'` is determined up to 2-isomorphism by clauses (1) and (2) — for the canonical extension: a 1-morphism into a stack satisfying the two clauses exhibits that stack as the stackification, so the extension of Stacks 0435 is an equivalence over the site. The existence half is the construction of Stacks 02ZN, not assembled in the tree; the uniqueness of the 2-isomorphism is Stacks 04W9, `CategoryTheory.Functor.Stackification.restrict_isEquivalence`; and the groupoid half of 02ZP is `CategoryTheory.Functor.Stackification.isStackInGroupoids_of_isStackification`”.
+**`CategoryTheory.Functor.Stackification.nonempty_isEquivalenceOver_extend`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stackification/Uniqueness.lean, line 265](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stackification/Uniqueness.lean#L265). The attribute's comment: “the determinacy half of the statement — `𝒮'` is determined up to 2-isomorphism by clauses (1) and (2) — for the canonical extension: a 1-morphism into a stack satisfying the two clauses exhibits that stack as the stackification, so the extension of Stacks 0435 is an equivalence over the site. The existence half is the construction of Stacks 02ZN, not assembled in the tree; the uniqueness of the 2-isomorphism is Stacks 04W9, `CategoryTheory.Functor.Stackification.restrict_isEquivalence`; and the groupoid half of 02ZP is `CategoryTheory.Functor.Stackification.isStackInGroupoids_of_isStackification`”.
 
 > **A stackification is determined up to 2-isomorphism: the "moreover" of Stacks 02ZN, repeated
 > by Stacks 02ZP.** Let `G : 𝒜 ⥤ ℬ` exhibit the stack `p'` as the stackification of the fibred
@@ -97,7 +97,7 @@ theorem nonempty_isEquivalenceOver_extend :
 
 [Tag 0436](https://stacks.math.columbia.edu/tag/0436) in the Stacks Project.
 
-**`CategoryTheory.Functor.Stackification.extendGroupoid`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stackification/UniversalPropertyGroupoid.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Stackification/UniversalPropertyGroupoid.lean#L81).
+**`CategoryTheory.Functor.Stackification.extendGroupoid`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stackification/UniversalPropertyGroupoid.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stackification/UniversalPropertyGroupoid.lean#L81).
 
 > Let `(𝒞, J)` be a site, let `p : 𝒮 ⥤ 𝒞` be a category fibred in groupoids, let `G : 𝒮 ⥤ 𝒮'`
 > exhibit the stack in groupoids `p'` as the stackification of `𝒮`, and let `F : 𝒮 ⥤ 𝒳` be a
@@ -108,7 +108,7 @@ theorem nonempty_isEquivalenceOver_extend :
 noncomputable def extendGroupoid : 𝒮' ⥤ 𝒳
 ```
 
-**`CategoryTheory.Functor.Stackification.extendGroupoid_comp_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stackification/UniversalPropertyGroupoid.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Stackification/UniversalPropertyGroupoid.lean#L90).
+**`CategoryTheory.Functor.Stackification.extendGroupoid_comp_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stackification/UniversalPropertyGroupoid.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stackification/UniversalPropertyGroupoid.lean#L90).
 
 > The extension `H : 𝒮' ⥤ 𝒳` is strictly over `𝒞`: `H ⋙ q = p'`.
 
@@ -117,7 +117,7 @@ theorem extendGroupoid_comp_eq :
     extendGroupoid hp hp' hsp' hq hsq hG hF hmor hobj ⋙ q = p'
 ```
 
-**`CategoryTheory.Functor.Stackification.unitGroupoid`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stackification/UniversalPropertyGroupoid.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Stackification/UniversalPropertyGroupoid.lean#L107).
+**`CategoryTheory.Functor.Stackification.unitGroupoid`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stackification/UniversalPropertyGroupoid.lean, line 107](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stackification/UniversalPropertyGroupoid.lean#L107).
 
 > The 2-isomorphism `G ⋙ H ≅ F` between `F` and the composite of `G` with its extension.
 
@@ -126,7 +126,7 @@ noncomputable def unitGroupoid :
     G ⋙ extendGroupoid hp hp' hsp' hq hsq hG hF hmor hobj ≅ F
 ```
 
-**`CategoryTheory.Functor.Stackification.isHomLift_unitGroupoid_app`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stackification/UniversalPropertyGroupoid.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Stackification/UniversalPropertyGroupoid.lean#L117).
+**`CategoryTheory.Functor.Stackification.isHomLift_unitGroupoid_app`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stackification/UniversalPropertyGroupoid.lean, line 117](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stackification/UniversalPropertyGroupoid.lean#L117).
 
 > Every component of the 2-isomorphism `G ⋙ H ≅ F` lies over an identity morphism of `𝒞`.
 
@@ -139,7 +139,7 @@ lemma isHomLift_unitGroupoid_app (A : 𝒮) :
 
 [Tag 04Y2](https://stacks.math.columbia.edu/tag/04Y2) in the Stacks Project.
 
-**`CategoryTheory.TwoFibreProductOver.isStackification_of_isStackification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stackification/TwoFibreProductGroupoid/IsStackification.lean, line 353](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Stackification/TwoFibreProductGroupoid/IsStackification.lean#L353).
+**`CategoryTheory.TwoFibreProductOver.isStackification_of_isStackification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Stackification/TwoFibreProductGroupoid/IsStackification.lean, line 353](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Stackification/TwoFibreProductGroupoid/IsStackification.lean#L353).
 
 > **Stacks 04Y2.** Let `(𝒞, J)` be a site, let `f : 𝒳 ⥤ 𝒴` and `g : 𝒵 ⥤ 𝒴` be 1-morphisms of
 > categories fibred in groupoids over `𝒞`, let `i : 𝒳 ⥤ 𝒳'`, `j : 𝒴 ⥤ 𝒴'`, `k : 𝒵 ⥤ 𝒵'` be
@@ -240,4 +240,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 8.9, Tag 02ZO](https://stacks.math.columbia.edu/tag/02ZO)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 49.6 The Noether different
 
-Section 49.6 of the Stacks Project, [Tag 0BVK](https://stacks.math.columbia.edu/tag/0BVK). 8 tags here are carried by 16 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 49.6 of the Stacks Project, [Tag 0BVK](https://stacks.math.columbia.edu/tag/0BVK). 8 tags here are carried by 16 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0BVL, a lemma
 
 [Tag 0BVL](https://stacks.math.columbia.edu/tag/0BVL) in the Stacks Project.
 
-**`Stacks.Discriminant.bijOn_diagonalAnnihilator_prod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/NoetherDifferent/Basic.lean, line 188](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/NoetherDifferent/Basic.lean#L188). The attribute's comment: “part (1)”.
+**`Stacks.Discriminant.bijOn_diagonalAnnihilator_prod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/NoetherDifferent/Basic.lean, line 185](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Different/NoetherDifferent/Basic.lean#L185). The attribute's comment: “part (1)”.
 
 > The canonical pair of tensor-square projections identifies the annihilator of the
 > kernel of multiplication for a product algebra with the product of the corresponding
@@ -34,7 +34,7 @@ theorem bijOn_diagonalAnnihilator_prod
         (diagonalAnnihilator A B₂ : Set (B₂ ⊗[A] B₂)))
 ```
 
-**`Stacks.Discriminant.noetherDifferent_prod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/NoetherDifferent/Basic.lean, line 226](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/NoetherDifferent/Basic.lean#L226). The attribute's comment: “part (2)”.
+**`Stacks.Discriminant.noetherDifferent_prod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/NoetherDifferent/Basic.lean, line 223](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Different/NoetherDifferent/Basic.lean#L223). The attribute's comment: “part (2)”.
 
 > The Noether different of a product algebra is the product of the Noether differents
 > of its factors.
@@ -52,7 +52,7 @@ theorem noetherDifferent_prod
 
 [Tag 0BVM](https://stacks.math.columbia.edu/tag/0BVM) in the Stacks Project.
 
-**`Stacks.Discriminant.map_diagonalAnnihilator_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/NoetherDifferent/FlatBaseChange.lean, line 230](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/NoetherDifferent/FlatBaseChange.lean#L230). The attribute's comment: “part (1)”.
+**`Stacks.Discriminant.map_diagonalAnnihilator_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/NoetherDifferent/FlatBaseChange.lean, line 230](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Different/NoetherDifferent/FlatBaseChange.lean#L230). The attribute's comment: “part (1)”.
 
 > The annihilator of the diagonal ideal commutes with flat base change.
 
@@ -64,7 +64,7 @@ theorem map_diagonalAnnihilator_eq (A : Type u) (B : Type v) (A' : Type w)
       diagonalAnnihilator A' (A' ⊗[A] B)
 ```
 
-**`Stacks.Discriminant.map_noetherDifferent_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/NoetherDifferent/FlatBaseChange.lean, line 281](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/NoetherDifferent/FlatBaseChange.lean#L281). The attribute's comment: “part (2)”.
+**`Stacks.Discriminant.map_noetherDifferent_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/NoetherDifferent/FlatBaseChange.lean, line 281](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Different/NoetherDifferent/FlatBaseChange.lean#L281). The attribute's comment: “part (2)”.
 
 > The Noether different commutes with flat base change.
 
@@ -81,7 +81,7 @@ theorem map_noetherDifferent_eq (A : Type u) (B : Type v) (A' : Type w)
 
 [Tag 0BVN](https://stacks.math.columbia.edu/tag/0BVN) in the Stacks Project.
 
-**`Stacks.Discriminant.diagonalAnnihilatorBaseChange_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/NoetherDifferent/Localization.lean, line 373](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/NoetherDifferent/Localization.lean#L373). The attribute's comment: “part (1), injectivity”.
+**`Stacks.Discriminant.diagonalAnnihilatorBaseChange_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/NoetherDifferent/Localization.lean, line 367](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Different/NoetherDifferent/Localization.lean#L367). The attribute's comment: “part (1), injectivity”.
 
 > The canonical base-change map on diagonal annihilators is injective under the open
 > localization hypotheses. This is the injectivity implicit in the identification in part (1).
@@ -95,7 +95,7 @@ theorem diagonalAnnihilatorBaseChange_injective
     Function.Injective (diagonalAnnihilatorBaseChange A B' B)
 ```
 
-**`Stacks.Discriminant.range_diagonalAnnihilatorBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/NoetherDifferent/Localization.lean, line 391](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/NoetherDifferent/Localization.lean#L391). The attribute's comment: “part (1), image”.
+**`Stacks.Discriminant.range_diagonalAnnihilatorBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/NoetherDifferent/Localization.lean, line 385](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Different/NoetherDifferent/Localization.lean#L385). The attribute's comment: “part (1), image”.
 
 > Under the open localization hypotheses, the image of `B ⊗[B'] J'` under the canonical
 > map is exactly the diagonal annihilator `J` for `B/A`.
@@ -110,7 +110,7 @@ theorem range_diagonalAnnihilatorBaseChange
       (diagonalAnnihilator A B).restrictScalars B
 ```
 
-**`Stacks.Discriminant.noetherDifferent_eq_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/NoetherDifferent/Localization.lean, line 446](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/NoetherDifferent/Localization.lean#L446). The attribute's comment: “part (2)”.
+**`Stacks.Discriminant.noetherDifferent_eq_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/NoetherDifferent/Localization.lean, line 439](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Different/NoetherDifferent/Localization.lean#L439). The attribute's comment: “part (2)”.
 
 > Under the open localization hypotheses, the Noether different of `B/A` is the extension
 > to `B` of the Noether different of `B'/A`.
@@ -130,7 +130,7 @@ theorem noetherDifferent_eq_map
 
 [Tag 0BVP](https://stacks.math.columbia.edu/tag/0BVP) in the Stacks Project.
 
-**`Stacks.Discriminant.noetherPairingWithFormula`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/NoetherDifferent/Pairing.lean, line 476](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/NoetherDifferent/Pairing.lean#L476).
+**`Stacks.Discriminant.noetherPairingWithFormula`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/NoetherDifferent/Pairing.lean, line 470](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Different/NoetherDifferent/Pairing.lean#L470).
 
 > **Stacks Project, Tag 0BVP.** The canonical `B`-bilinear pairing between the relative
 > dualizing module and the annihilator of the kernel of multiplication, together with its defining
@@ -144,7 +144,7 @@ noncomputable def noetherPairingWithFormula {A : Type u} {B : Type v}
       (↑(diagonalAnnihilator A B) →ₗ[B] B) // IsNoetherPairing F p}
 ```
 
-**`Stacks.Discriminant.noetherPairing_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Discriminant/NoetherPairingNaturality.lean, line 487](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Discriminant/NoetherPairingNaturality.lean#L487). The attribute's comment: “independence of factorization”.
+**`Stacks.Discriminant.noetherPairing_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Discriminant/NoetherPairingNaturality.lean, line 482](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Discriminant/NoetherPairingNaturality.lean#L482). The attribute's comment: “independence of factorization”.
 
 > **Stacks Project, Tag 0BVP (independence of factorization).** The canonical pairing between
 > the relative dualizing module and the diagonal annihilator does not depend on the finite-open
@@ -165,7 +165,7 @@ theorem noetherPairing_naturality
 
 [Tag 0BVR](https://stacks.math.columbia.edu/tag/0BVR) in the Stacks Project.
 
-**`Stacks.Discriminant.noetherPairing_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Discriminant/NoetherPairingFlatBaseChange.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Discriminant/NoetherPairingFlatBaseChange.lean#L110). The attribute's comment: “flat\_base\_change”.
+**`Stacks.Discriminant.noetherPairing_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Discriminant/NoetherPairingFlatBaseChange.lean, line 108](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Discriminant/NoetherPairingFlatBaseChange.lean#L108). The attribute's comment: “flat\_base\_change”.
 
 > **Stacks Project, Tag 0BVR (flat base change).** The canonical pairing
 > between the relative dualizing module and the diagonal annihilator commutes
@@ -187,7 +187,7 @@ theorem noetherPairing_baseChange
       algebraMap B (A₁ ⊗[A] B) (noetherPairing F ω j)
 ```
 
-**`Stacks.Discriminant.noetherPairing_prod_fst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Discriminant/NoetherPairingProductProjection.lean, line 335](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Discriminant/NoetherPairingProductProjection.lean#L335). The attribute's comment: “product\_projection”.
+**`Stacks.Discriminant.noetherPairing_prod_fst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Discriminant/NoetherPairingProductProjection.lean, line 313](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Discriminant/NoetherPairingProductProjection.lean#L313). The attribute's comment: “product\_projection”.
 
 > **Stacks Project, Tag 0BVR (product projection).** The canonical pairing between the relative
 > dualizing module and the diagonal annihilator commutes with the projection to the first factor of
@@ -209,7 +209,7 @@ theorem noetherPairing_prod_fst
       (noetherPairing F ω j).1
 ```
 
-**`Stacks.Discriminant.noetherPairing_prod_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Discriminant/NoetherPairingProductProjection.lean, line 367](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Discriminant/NoetherPairingProductProjection.lean#L367). The attribute's comment: “product\_projection”.
+**`Stacks.Discriminant.noetherPairing_prod_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Discriminant/NoetherPairingProductProjection.lean, line 345](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Discriminant/NoetherPairingProductProjection.lean#L345). The attribute's comment: “product\_projection”.
 
 > **Stacks Project, Tag 0BVR (product projection).** The canonical pairing between the relative
 > dualizing module and the diagonal annihilator commutes with the projection to the second factor
@@ -235,7 +235,7 @@ theorem noetherPairing_prod_snd
 
 [Tag 0BVS](https://stacks.math.columbia.edu/tag/0BVS) in the Stacks Project.
 
-**`Stacks.Discriminant.noetherPairing_flip_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/NoetherDifferent/PairingBijective.lean, line 358](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/NoetherDifferent/PairingBijective.lean#L358).
+**`Stacks.Discriminant.noetherPairing_flip_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/NoetherDifferent/PairingBijective.lean, line 350](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Different/NoetherDifferent/PairingBijective.lean#L350).
 
 > **Stacks Project, Tag 0BVS.** For a flat quasi-finite homomorphism of Noetherian rings the
 > canonical pairing induces a bijection from the annihilator of the diagonal ideal to the dual of
@@ -253,7 +253,7 @@ theorem noetherPairing_flip_bijective
 
 [Tag 0BVT](https://stacks.math.columbia.edu/tag/0BVT) in the Stacks Project.
 
-**`Stacks.Discriminant.noetherPairingEquiv_apply_traceElement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/NoetherDifferent/TraceElement.lean, line 413](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/NoetherDifferent/TraceElement.lean#L413). The attribute's comment: “commutative diagram”.
+**`Stacks.Discriminant.noetherPairingEquiv_apply_traceElement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/NoetherDifferent/TraceElement.lean, line 405](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Different/NoetherDifferent/TraceElement.lean#L405). The attribute's comment: “commutative diagram”.
 
 > **Stacks Project, Tag 0BVT.** Under the isomorphism induced by the canonical pairing,
 > multiplication of an element of the diagonal annihilator is evaluation at the trace
@@ -267,7 +267,7 @@ theorem noetherPairingEquiv_apply_traceElement
       Algebra.TensorProduct.lmul' A j.1
 ```
 
-**`Stacks.Discriminant.noetherDifferent_eq_range_traceElement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/NoetherDifferent/TraceElement.lean, line 484](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/NoetherDifferent/TraceElement.lean#L484). The attribute's comment: “image of evaluation”.
+**`Stacks.Discriminant.noetherDifferent_eq_range_traceElement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/NoetherDifferent/TraceElement.lean, line 476](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Different/NoetherDifferent/TraceElement.lean#L476). The attribute's comment: “image of evaluation”.
 
 > **Stacks Project, Tag 0BVT.** The Noether different is the image of evaluation at the trace
 > element.
@@ -285,7 +285,7 @@ theorem noetherDifferent_eq_range_traceElement
 
 [Tag 0BVU](https://stacks.math.columbia.edu/tag/0BVU) in the Stacks Project.
 
-**`Stacks.Discriminant.zeroLocus_noetherDifferent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/NoetherDifferent/UnramifiedLocus.lean, line 96](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/NoetherDifferent/UnramifiedLocus.lean#L96).
+**`Stacks.Discriminant.zeroLocus_noetherDifferent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/NoetherDifferent/UnramifiedLocus.lean, line 96](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Different/NoetherDifferent/UnramifiedLocus.lean#L96).
 
 > The primes containing the Noether different are exactly the primes at
 > which a finite type algebra is not unramified.
@@ -305,4 +305,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 49.6, Tag 0BVK](https://stacks.math.columbia.edu/tag/0BVK)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

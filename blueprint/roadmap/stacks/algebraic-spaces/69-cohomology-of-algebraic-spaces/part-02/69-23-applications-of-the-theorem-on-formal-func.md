@@ -8,13 +8,13 @@ proof: formalized
 
 # 69.23 Applications of the theorem on formal functions
 
-Section 69.23 of the Stacks Project, [Tag 0A4U](https://stacks.math.columbia.edu/tag/0A4U). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 69.23 of the Stacks Project, [Tag 0A4U](https://stacks.math.columbia.edu/tag/0A4U). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0A4V, a lemma
 
 [Tag 0A4V](https://stacks.math.columbia.edu/tag/0A4V) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isFinite_iff_isProper_and_discreteFibres`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteProperDiscreteFibres.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteProperDiscreteFibres.lean#L64).
+**`AlgebraicGeometry.Space.isFinite_iff_isProper_and_discreteFibres`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteProperDiscreteFibres.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteProperDiscreteFibres.lean#L65).
 
 > **Stacks 0A4V.** A morphism `f : X ⟶ Y` of algebraic spaces over `S` is finite exactly when
 > it is proper and the point space of its fibre over every field-valued point of `Y` is discrete.
@@ -34,7 +34,7 @@ theorem isFinite_iff_isProper_and_discreteFibres
 
 [Tag 0A4W](https://stacks.math.columbia.edu/tag/0A4W) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isOpenSubspace_isFinite_pullback_snd_of_finite_geometricFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteNearFiniteGeometricFibre.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteNearFiniteGeometricFibre.lean#L79).
+**`AlgebraicGeometry.Space.exists_isOpenSubspace_isFinite_pullback_snd_of_finite_geometricFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteNearFiniteGeometricFibre.lean, line 80](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteNearFiniteGeometricFibre.lean#L80).
 
 > **Stacks 0A4W.** Let `f : X ⟶ Y` be a proper morphism of algebraic spaces over `S` and let
 > `ȳ` be a geometric point of `Y` whose geometric fibre `X_ȳ` has finitely many points. Then `ȳ`
@@ -62,4 +62,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 69.23, Tag 0A4U](https://stacks.math.columbia.edu/tag/0A4U)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 81.3 Colimits of algebraic spaces
 
-Section 81.3 of the Stacks Project, [Tag 0GFN](https://stacks.math.columbia.edu/tag/0GFN). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 81.3 of the Stacks Project, [Tag 0GFN](https://stacks.math.columbia.edu/tag/0GFN). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 07SX, a lemma
 
 [Tag 07SX](https://stacks.math.columbia.edu/tag/07SX) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isColimit_algebraicSpaces_of_scheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/Colimits.lean, line 415](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/Colimits.lean#L415).
+**`AlgebraicGeometry.Space.isColimit_algebraicSpaces_of_scheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/Colimits.lean, line 415](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/Colimits.lean#L415).
 
 > Under descent of separated étale families and preservation of the scheme
 > colimit by étale base change, the colimit is also a colimit of algebraic spaces.
@@ -59,7 +59,7 @@ public theorem isColimit_algebraicSpaces_of_scheme
 
 [Tag 0GFQ](https://stacks.math.columbia.edu/tag/0GFQ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isColimit_of_fpqc_local`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ColimitsFpqcLocal.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ColimitsFpqcLocal.lean#L92).
+**`AlgebraicGeometry.Space.isColimit_of_fpqc_local`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ColimitsFpqcLocal.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/ColimitsFpqcLocal.lean#L92).
 
 > **[Stacks, Tag 0GFQ].** Let `T` be an algebraic space over a scheme `S` of a big fppf site
 > and let `D` be a diagram of algebraic spaces over `T` with a cocone `c`. Suppose given an fpqc
@@ -105,7 +105,7 @@ theorem isColimit_of_fpqc_local
 
 [Tag 0GHL](https://stacks.math.columbia.edu/tag/0GHL) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isColimit_of_etale_local_affine_descent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/EtaleLocalAffineColimit.lean, line 1200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/EtaleLocalAffineColimit.lean#L1200).
+**`AlgebraicGeometry.Space.isColimit_of_etale_local_affine_descent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/EtaleLocalAffineColimit.lean, line 1200](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/EtaleLocalAffineColimit.lean#L1200).
 
 > **Stacks 0GHL.** Let `B` be an algebraic space over `S`, let `D` be a diagram of algebraic
 > spaces over `B` and let `c` be a cocone on `D`. If base change along the cocone legs is an
@@ -142,7 +142,7 @@ theorem isColimit_of_etale_local_affine_descent
 
 [Tag 0GFP](https://stacks.math.columbia.edu/tag/0GFP) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isColimit_of_separated_etale_descent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/SeparatedColimitCriterion.lean, line 500](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/SeparatedColimitCriterion.lean#L500). The attribute's comment: “all five hypotheses; (1) carried by the diagram landing in the separated spaces over B, (2) by IsColimit of the cocone there, (3) stated as joint surjectivity on points, (4) and (5) stated with cartesian comparison squares”.
+**`AlgebraicGeometry.Space.isColimit_of_separated_etale_descent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/SeparatedColimitCriterion.lean, line 500](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/SeparatedColimitCriterion.lean#L500). The attribute's comment: “all five hypotheses; (1) carried by the diagram landing in the separated spaces over B, (2) by IsColimit of the cocone there, (3) stated as joint surjectivity on points, (4) and (5) stated with cartesian comparison squares”.
 
 > **Stacks 0GFP.** Let `B` be an algebraic space over `S` and let `D` be a diagram of
 > algebraic spaces separated over `B`, with a colimit `c` in the category of algebraic spaces
@@ -180,4 +180,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 81.3, Tag 0GFN](https://stacks.math.columbia.edu/tag/0GFN)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 34.5 The smooth topology
 
-Section 34.5 of the Stacks Project, [Tag 021Y](https://stacks.math.columbia.edu/tag/021Y). 10 tags here are carried by 29 declarations of the repository (all in StacksFrontier) and 6 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 34.5 of the Stacks Project, [Tag 021Y](https://stacks.math.columbia.edu/tag/021Y). 10 tags here are carried by 29 declarations of the repository (all in StacksFrontier) and 6 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 021Z, a definition
 
 [Tag 021Z](https://stacks.math.columbia.edu/tag/021Z) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.smoothPrecoverage`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/SmoothAndStandardEtaleCoverings.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/SmoothAndStandardEtaleCoverings.lean#L74).
+**`AlgebraicGeometry.Scheme.smoothPrecoverage`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/SmoothAndStandardEtaleCoverings.lean, line 74](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/SmoothAndStandardEtaleCoverings.lean#L74).
 
 > The smooth precoverage on the category of schemes: its covering families are the jointly
 > surjective families of smooth morphisms.
@@ -27,7 +27,7 @@ public def smoothPrecoverage : Precoverage Scheme.{u}
 
 [Tag 0220](https://stacks.math.columbia.edu/tag/0220) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.zariskiPrecoverage_le_smoothPrecoverage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/SmoothCoverings.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/SmoothCoverings.lean#L55). The attribute's comment: “Zariski coverings”.
+**`AlgebraicGeometry.Scheme.zariskiPrecoverage_le_smoothPrecoverage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/SmoothCoverings.lean, line 55](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/SmoothCoverings.lean#L55). The attribute's comment: “Zariski coverings”.
 
 > Every Zariski covering is a smooth covering.
 
@@ -38,13 +38,13 @@ public theorem zariskiPrecoverage_le_smoothPrecoverage :
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Scheme.etalePrecoverage_le_smoothPrecoverage`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmoothEqualsEtale.lean#L86), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/SmoothCoverings.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/SmoothCoverings.lean#L97) (StacksFrontier): “étale coverings”.
+- [`AlgebraicGeometry.Scheme.etalePrecoverage_le_smoothPrecoverage`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Etale/SmoothEqualsEtale.lean#L86), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/SmoothCoverings.lean, line 97](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/SmoothCoverings.lean#L97) (StacksFrontier): “étale coverings”.
 
 ## Tag 0221, a lemma
 
 [Tag 0221](https://stacks.math.columbia.edu/tag/0221) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.singleton_mem_smoothPrecoverage_of_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/SmoothCoverings.lean, line 61](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/SmoothCoverings.lean#L61). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.Scheme.singleton_mem_smoothPrecoverage_of_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/SmoothCoverings.lean, line 61](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/SmoothCoverings.lean#L61). The attribute's comment: “part (1)”.
 
 > The singleton family of an isomorphism `T' ⟶ T` is a smooth covering of `T`.
 
@@ -53,7 +53,7 @@ public theorem singleton_mem_smoothPrecoverage_of_isIso {T' T : Scheme.{u}} (f :
     [IsIso f] : Presieve.singleton f ∈ smoothPrecoverage T
 ```
 
-**`AlgebraicGeometry.Scheme.ofArrows_comp_mem_smoothPrecoverage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/SmoothCoverings.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/SmoothCoverings.lean#L72). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.Scheme.ofArrows_comp_mem_smoothPrecoverage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/SmoothCoverings.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/SmoothCoverings.lean#L72). The attribute's comment: “part (2)”.
 
 > If `{fᵢ : Tᵢ ⟶ T}` is a smooth covering and `{gᵢⱼ : Tᵢⱼ ⟶ Tᵢ}` is a smooth covering of each
 > `Tᵢ`, then the composite family `{gᵢⱼ ≫ fᵢ : Tᵢⱼ ⟶ T}` is a smooth covering.
@@ -68,7 +68,7 @@ public theorem ofArrows_comp_mem_smoothPrecoverage {I : Type w} {T : Scheme.{u}}
       smoothPrecoverage T
 ```
 
-**`AlgebraicGeometry.Scheme.ofArrows_pullback_mem_smoothPrecoverage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/SmoothCoverings.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/SmoothCoverings.lean#L84). The attribute's comment: “part (3)”.
+**`AlgebraicGeometry.Scheme.ofArrows_pullback_mem_smoothPrecoverage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/SmoothCoverings.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/SmoothCoverings.lean#L84). The attribute's comment: “part (3)”.
 
 > If `{fᵢ : Tᵢ ⟶ T}` is a smooth covering and `g : T' ⟶ T` is a morphism of schemes, then the
 > family of first projections `{T' ×_T Tᵢ ⟶ T'}` is a smooth covering.
@@ -85,7 +85,7 @@ public theorem ofArrows_pullback_mem_smoothPrecoverage {I : Type w} {T T' : Sche
 
 [Tag 0222](https://stacks.math.columbia.edu/tag/0222) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_finite_affine_standardSmooth_refinement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/StandardRefinement.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/StandardRefinement.lean#L75).
+**`AlgebraicGeometry.exists_finite_affine_standardSmooth_refinement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/StandardRefinement.lean, line 75](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/StandardRefinement.lean#L75).
 
 > A smooth covering of an affine scheme has a finite refinement by affine schemes which are
 > standard smooth over the target; each member of the refinement is an open subscheme of a member of
@@ -105,7 +105,7 @@ public theorem exists_finite_affine_standardSmooth_refinement {T : Scheme.{u}} [
 
 [Tag 0223](https://stacks.math.columbia.edu/tag/0223) in the Stacks Project.
 
-**`AlgebraicGeometry.IsStandardSmoothCovering`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/StandardCovering.lean, line 39](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/StandardCovering.lean#L39).
+**`AlgebraicGeometry.IsStandardSmoothCovering`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/StandardCovering.lean, line 39](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/StandardCovering.lean#L39).
 
 > A finite family `fᵢ : Uᵢ ⟶ T` of morphisms between affine schemes is a
 > **standard smooth covering** if every `fᵢ` is standard smooth and their images
@@ -121,7 +121,7 @@ public abbrev IsStandardSmoothCovering {T : Scheme.{u}} [IsAffine T]
 
 [Tag 03WY](https://stacks.math.columbia.edu/tag/03WY) in the Stacks Project.
 
-**`AlgebraicGeometry.BigSmoothSite`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/BigSite.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/BigSite.lean#L69).
+**`AlgebraicGeometry.BigSmoothSite`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/BigSite.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/BigSite.lean#L69).
 
 > A big smooth site.
 >
@@ -137,7 +137,7 @@ public structure BigSmoothSite
 
 [Tag 03WZ](https://stacks.math.columbia.edu/tag/03WZ) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_covering_refining_smooth_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/BigSiteCoverings.lean, line 153](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/BigSiteCoverings.lean#L153). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.exists_covering_refining_smooth_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/BigSiteCoverings.lean, line 153](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/BigSiteCoverings.lean#L153). The attribute's comment: “part (1)”.
 
 > **Stacks Project, Tag 03WZ, part (1).** Every smooth covering family of an object of a
 > big smooth site is refined by a covering family belonging to the site.
@@ -151,7 +151,7 @@ public theorem exists_covering_refining_smooth_cover
       B.IsCovering ⟨T, V⟩ ∧ Nonempty ((V.map (ObjectProperty.ι _)).Hom U)
 ```
 
-**`AlgebraicGeometry.exists_covering_tautologicallyEquivalent_standardSmoothCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/BigSiteCoverings.lean, line 193](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/BigSiteCoverings.lean#L193). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.exists_covering_tautologicallyEquivalent_standardSmoothCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/BigSiteCoverings.lean, line 193](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/BigSiteCoverings.lean#L193). The attribute's comment: “part (2)”.
 
 > **Stacks Project, Tag 03WZ, part (2).** A standard smooth covering of an object of a
 > big smooth site is tautologically equivalent to a covering family belonging to the site.
@@ -168,7 +168,7 @@ public theorem exists_covering_tautologicallyEquivalent_standardSmoothCover
         PreZeroHypercover.TautologicallyEquivalent U (V.map (ObjectProperty.ι _))
 ```
 
-**`AlgebraicGeometry.exists_covering_tautologicallyEquivalent_openCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/BigSiteCoverings.lean, line 217](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/BigSiteCoverings.lean#L217). The attribute's comment: “part (3)”.
+**`AlgebraicGeometry.exists_covering_tautologicallyEquivalent_openCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/BigSiteCoverings.lean, line 217](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/BigSiteCoverings.lean#L217). The attribute's comment: “part (3)”.
 
 > **Stacks Project, Tag 03WZ, part (3).** A Zariski covering of an object of a big smooth
 > site is tautologically equivalent to a covering family belonging to the site.
@@ -187,7 +187,7 @@ public theorem exists_covering_tautologicallyEquivalent_openCover
 
 [Tag 03X0](https://stacks.math.columbia.edu/tag/03X0) in the Stacks Project.
 
-**`AlgebraicGeometry.BigSmoothOver`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/BigSiteOver.lean, line 46](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/BigSiteOver.lean#L46). The attribute's comment: “part (1), category”.
+**`AlgebraicGeometry.BigSmoothOver`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/BigSiteOver.lean, line 46](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/BigSiteOver.lean#L46). The attribute's comment: “part (1), category”.
 
 > The big smooth category over `S`: the slice of the chosen big smooth category over `S`.
 
@@ -195,7 +195,7 @@ public theorem exists_covering_tautologicallyEquivalent_openCover
 public abbrev BigSmoothOver
 ```
 
-**`AlgebraicGeometry.BigSmoothOver.IsCovering`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/BigSiteOver.lean, line 61](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/BigSiteOver.lean#L61). The attribute's comment: “part (1), coverings”.
+**`AlgebraicGeometry.BigSmoothOver.IsCovering`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/BigSiteOver.lean, line 61](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/BigSiteOver.lean#L61). The attribute's comment: “part (1), coverings”.
 
 > A family in the big smooth category over `S` is covering precisely when its underlying family
 > is a covering in the chosen big smooth site.
@@ -204,7 +204,7 @@ public abbrev BigSmoothOver
 public abbrev IsCovering (E : Covering (BigSmoothOver B S hS)) : Prop
 ```
 
-**`AlgebraicGeometry.BigAffineSmooth`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/BigSiteOver.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/BigSiteOver.lean#L79). The attribute's comment: “part (2), category”.
+**`AlgebraicGeometry.BigAffineSmooth`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/BigSiteOver.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/BigSiteOver.lean#L79). The attribute's comment: “part (2), category”.
 
 > The big affine smooth category over `S`: the full subcategory of the big smooth category over
 > `S` consisting of the objects whose underlying scheme is affine.
@@ -213,7 +213,7 @@ public abbrev IsCovering (E : Covering (BigSmoothOver B S hS)) : Prop
 public abbrev BigAffineSmooth
 ```
 
-**`AlgebraicGeometry.BigAffineSmooth.IsCovering`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/BigSiteOver.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/BigSiteOver.lean#L108). The attribute's comment: “part (2), coverings”.
+**`AlgebraicGeometry.BigAffineSmooth.IsCovering`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/BigSiteOver.lean, line 108](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/BigSiteOver.lean#L108). The attribute's comment: “part (2), coverings”.
 
 > A family in the big affine smooth category over `S` is covering precisely when its image in the
 > big smooth category over `S` is covering and its underlying family is a standard smooth
@@ -227,7 +227,7 @@ public abbrev IsCovering (E : Covering (BigAffineSmooth B S hS)) : Prop
 
 [Tag 06VC](https://stacks.math.columbia.edu/tag/06VC) in the Stacks Project.
 
-**`AlgebraicGeometry.BigAffineSmooth.inclusion_isSpecialCocontinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/AffineDenseSubsite.lean, line 333](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/AffineDenseSubsite.lean#L333).
+**`AlgebraicGeometry.BigAffineSmooth.inclusion_isSpecialCocontinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/AffineDenseSubsite.lean, line 333](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/AffineDenseSubsite.lean#L333).
 
 > **Stacks 06VC.** The inclusion of the big affine smooth site over a scheme
 > into its big smooth site is special cocontinuous. Its dense-subsite component
@@ -246,7 +246,7 @@ public theorem BigAffineSmooth.inclusion_isSpecialCocontinuous
 
 [Tag 04HC](https://stacks.math.columbia.edu/tag/04HC) in the Stacks Project.
 
-**`AlgebraicGeometry.bigSmoothOverMap_isCocontinuous`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean#L108). The attribute's comment: “cocontinuity”.
+**`AlgebraicGeometry.bigSmoothOverMap_isCocontinuous`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean, line 108](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean#L108). The attribute's comment: “cocontinuity”.
 
 > The functor `V / T ↦ V / S` between the big smooth sites over `T` and over `S`, given by
 > composing the structure morphism with `f`, is cocontinuous.
@@ -259,7 +259,7 @@ public instance bigSmoothOverMap_isCocontinuous
       (BigSmoothOver.topology B S.obj S.property)
 ```
 
-**`AlgebraicGeometry.bigSmoothOverMap_isContinuous`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean#L118). The attribute's comment: “continuity”.
+**`AlgebraicGeometry.bigSmoothOverMap_isContinuous`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean, line 118](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean#L118). The attribute's comment: “continuity”.
 
 > The functor `V / T ↦ V / S` between the big smooth sites over `T` and over `S` is
 > continuous.
@@ -272,7 +272,7 @@ public instance bigSmoothOverMap_isContinuous
       (BigSmoothOver.topology B S.obj S.property)
 ```
 
-**`AlgebraicGeometry.bigSmoothOverMapPullbackAdj`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean, line 128](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean#L128). The attribute's comment: “continuous\_right\_adjoint”.
+**`AlgebraicGeometry.bigSmoothOverMapPullbackAdj`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean, line 128](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean#L128). The attribute's comment: “continuous\_right\_adjoint”.
 
 > Base change along `f`, the functor `(U → S) ↦ (U ×_S T → T)` between the big smooth sites
 > over `S` and over `T`, is right adjoint to composition with `f`.
@@ -284,7 +284,7 @@ public noncomputable def bigSmoothOverMapPullbackAdj
       Over.pullback f
 ```
 
-**`AlgebraicGeometry.bigSmoothOverPullback_isContinuous`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean#L136). The attribute's comment: “continuous\_right\_adjoint”.
+**`AlgebraicGeometry.bigSmoothOverPullback_isContinuous`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean, line 136](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean#L136). The attribute's comment: “continuous\_right\_adjoint”.
 
 > Base change along `f` is continuous for the two localized big smooth topologies.
 
@@ -296,7 +296,7 @@ public instance bigSmoothOverPullback_isContinuous
       (BigSmoothOver.topology B T.obj T.property)
 ```
 
-**`AlgebraicGeometry.bigSmoothMorphismOfTopoi`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean, line 146](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean#L146). The attribute's comment: “big\_smooth\_morphism\_of\_topoi”.
+**`AlgebraicGeometry.bigSmoothMorphismOfTopoi`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean, line 146](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean#L146). The attribute's comment: “big\_smooth\_morphism\_of\_topoi”.
 
 > The big smooth morphism of topoi associated to a morphism `f : T ⟶ S` in a big smooth site,
 > induced by the cocontinuous functor sending `V ⟶ T` to the composite `V ⟶ T ⟶ S`.
@@ -309,7 +309,7 @@ public noncomputable def bigSmoothMorphismOfTopoi
       (Sheaf (BigSmoothOver.topology B S.obj S.property) (Type (u + 1)))
 ```
 
-**`AlgebraicGeometry.bigSmoothMorphismOfTopoiPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean#L169). The attribute's comment: “agreement”.
+**`AlgebraicGeometry.bigSmoothMorphismOfTopoiPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean, line 169](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean#L169). The attribute's comment: “agreement”.
 
 > The direct image of the big smooth morphism of topoi attached to postcomposition along `f`
 > is isomorphic to the direct image along the continuous base-change functor `Over.pullback f`.
@@ -323,7 +323,7 @@ public noncomputable def bigSmoothMorphismOfTopoiPushforwardIso
         (BigSmoothOver.topology B T.obj T.property)
 ```
 
-**`AlgebraicGeometry.bigSmoothMorphismOfTopoiPullbackAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean, line 180](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean#L180). The attribute's comment: “agreement”.
+**`AlgebraicGeometry.bigSmoothMorphismOfTopoiPullbackAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean, line 180](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean#L180). The attribute's comment: “agreement”.
 
 > The inverse image of the big smooth morphism of topoi is left adjoint to restriction along
 > base change.
@@ -337,7 +337,7 @@ public noncomputable def bigSmoothMorphismOfTopoiPullbackAdjunction
         (BigSmoothOver.topology B T.obj T.property)
 ```
 
-**`AlgebraicGeometry.bigSmoothMorphismOfTopoiInverseImageIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean#L200). The attribute's comment: “agreement”.
+**`AlgebraicGeometry.bigSmoothMorphismOfTopoiInverseImageIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean, line 200](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean#L200). The attribute's comment: “agreement”.
 
 > The inverse image of the big smooth morphism of topoi is isomorphic to the left adjoint of
 > restriction along base change.
@@ -351,7 +351,7 @@ public noncomputable def bigSmoothMorphismOfTopoiInverseImageIso
         (BigSmoothOver.topology B T.obj T.property)).leftAdjoint
 ```
 
-**`AlgebraicGeometry.bigSmoothInverseImageObjIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean, line 212](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean#L212). The attribute's comment: “inverse\_image”.
+**`AlgebraicGeometry.bigSmoothInverseImageObjIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean, line 212](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean#L212). The attribute's comment: “inverse\_image”.
 
 > The sections of an inverse image on `U / T` are the sections of the sheaf on `U / S`:
 > `f⁻¹(G)(U / T) = G(U / S)`.
@@ -364,7 +364,7 @@ public noncomputable def bigSmoothInverseImageObjIso
       G.obj.obj (Opposite.op (Over.mk (U.hom ≫ f)))
 ```
 
-**`AlgebraicGeometry.bigSmoothPushforwardObjIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean, line 224](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean#L224). The attribute's comment: “direct\_image”.
+**`AlgebraicGeometry.bigSmoothPushforwardObjIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean, line 224](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean#L224). The attribute's comment: “direct\_image”.
 
 > The sections of a direct image on `U / S` are the sections of the sheaf on the base change
 > `U ×_S T / T`: `f_*(F)(U / S) = F(U ×_S T / T)`.
@@ -377,7 +377,7 @@ public noncomputable def bigSmoothPushforwardObjIso
       F.obj.obj (Opposite.op (Over.mk (pullback.snd U.hom f)))
 ```
 
-**`AlgebraicGeometry.bigSmoothInverseImage_isRightAdjoint`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean, line 236](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean#L236). The attribute's comment: “left\_adjoint”.
+**`AlgebraicGeometry.bigSmoothInverseImage_isRightAdjoint`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean, line 236](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean#L236). The attribute's comment: “left\_adjoint”.
 
 > The inverse image of a big smooth morphism of topoi has a left adjoint.
 
@@ -387,7 +387,7 @@ public noncomputable instance bigSmoothInverseImage_isRightAdjoint
     (bigSmoothMorphismOfTopoi B f).inverseImage.IsRightAdjoint
 ```
 
-**`AlgebraicGeometry.bigSmoothLowerShriek_preservesPullbacks`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean, line 268](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean#L268). The attribute's comment: “shriek\_limits”.
+**`AlgebraicGeometry.bigSmoothLowerShriek_preservesPullbacks`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean, line 268](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean#L268). The attribute's comment: “shriek\_limits”.
 
 > The lower shriek of a big smooth morphism of topoi preserves fibre products.
 
@@ -398,7 +398,7 @@ public noncomputable instance bigSmoothLowerShriek_preservesPullbacks
       (bigSmoothMorphismOfTopoi B f).inverseImage.leftAdjoint
 ```
 
-**`AlgebraicGeometry.bigSmoothLowerShriek_preservesEqualizers`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean, line 276](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean#L276). The attribute's comment: “shriek\_limits”.
+**`AlgebraicGeometry.bigSmoothLowerShriek_preservesEqualizers`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean, line 276](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean#L276). The attribute's comment: “shriek\_limits”.
 
 > The lower shriek of a big smooth morphism of topoi preserves equalizers.
 
@@ -411,11 +411,11 @@ public noncomputable instance bigSmoothLowerShriek_preservesEqualizers
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Over.mapPullbackAdj`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Over.mapPullbackAdj#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/SliceAdjunction.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/SliceAdjunction.lean#L64) (StacksFrontier): “continuous\_right\_adjoint”.
-- [`CategoryTheory.GrothendieckTopology.instIsContinuousOverPullbackOver`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.GrothendieckTopology.instIsContinuousOverPullbackOver#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/SliceAdjunction.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/SliceAdjunction.lean#L65) (StacksFrontier): “continuous\_right\_adjoint”.
-- [`CategoryTheory.GrothendieckTopology.instIsCocontinuousOverMapOver`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.GrothendieckTopology.instIsCocontinuousOverMapOver#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/SliceAdjunction.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/SliceAdjunction.lean#L68) (StacksFrontier): “cocontinuity”.
-- [`CategoryTheory.Functor.sheafPushforwardCocontinuousIsoRestriction`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/CoverLifting.lean#L229), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean#L82) (StacksFrontier): “direct\_image”.
-- [`CategoryTheory.Functor.sheafPullbackCocontinuousIsoSheafPushforwardContinuous`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/CoverLifting.lean#L139), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean#L85) (StacksFrontier): “inverse\_image”.
+- [`CategoryTheory.Over.mapPullbackAdj`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Over.mapPullbackAdj#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/SliceAdjunction.lean, line 64](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/SliceAdjunction.lean#L64) (StacksFrontier): “continuous\_right\_adjoint”.
+- [`CategoryTheory.GrothendieckTopology.instIsContinuousOverPullbackOver`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.GrothendieckTopology.instIsContinuousOverPullbackOver#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/SliceAdjunction.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/SliceAdjunction.lean#L65) (StacksFrontier): “continuous\_right\_adjoint”.
+- [`CategoryTheory.GrothendieckTopology.instIsCocontinuousOverMapOver`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.GrothendieckTopology.instIsCocontinuousOverMapOver#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/SliceAdjunction.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/ChangeOfSites/SliceAdjunction.lean#L68) (StacksFrontier): “cocontinuity”.
+- [`CategoryTheory.Functor.sheafPushforwardCocontinuousIsoRestriction`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/CoverLifting.lean#L229), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean#L82) (StacksFrontier): “direct\_image”.
+- [`CategoryTheory.Functor.sheafPullbackCocontinuousIsoSheafPushforwardContinuous`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/CoverLifting.lean#L139), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Smooth/MorphismOfTopoi.lean#L85) (StacksFrontier): “inverse\_image”.
 
 ## Depends on
 
@@ -424,4 +424,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 34.5, Tag 021Y](https://stacks.math.columbia.edu/tag/021Y)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

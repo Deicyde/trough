@@ -1,6 +1,6 @@
 # 36 Derived Categories of Schemes
 
-Chapter 36 of the Stacks Project, *Derived Categories of Schemes*, [Tag 08CU](https://stacks.math.columbia.edu/tag/08CU): the 39 sections of its 41 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 236 tags are carried by 674 declarations of the repository (all in StacksFrontier) and 3 registered declarations.
+Chapter 36 of the Stacks Project, *Derived Categories of Schemes*, [Tag 08CU](https://stacks.math.columbia.edu/tag/08CU): the 39 sections of its 41 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 235 tags are carried by 647 declarations of the repository (all in StacksFrontier) and 3 registered declarations.
 
 ## [36.3 Derived category of… to 36.9 Koszul complexes](part-01/README.md)
 
@@ -27,7 +27,7 @@ Chapter 36 of the Stacks Project, *Derived Categories of Schemes*, [Tag 08CU](ht
 - [36.20 An example equivalence](part-02/36-20-an-example-equivalence.md)
 - [36.21 The coherator revisited](part-02/36-21-the-coherator-revisited.md)
 
-## [36.22 Cohomology and base… to 36.29 Limits and derived…](part-03/README.md)
+## [36.22 Cohomology and base… to 36.30 Cohomology and base…](part-03/README.md)
 
 - [36.22 Cohomology and base change, IV](part-03/36-22-cohomology-and-base-change-iv.md)
 - [36.23 Künneth formula, II](part-03/36-23-kunneth-formula-ii.md)
@@ -37,10 +37,10 @@ Chapter 36 of the Stacks Project, *Derived Categories of Schemes*, [Tag 08CU](ht
 - [36.27 Producing perfect complexes](part-03/36-27-producing-perfect-complexes.md)
 - [36.28 A projection formula for Ext](part-03/36-28-a-projection-formula-for-ext.md)
 - [36.29 Limits and derived categories](part-03/36-29-limits-and-derived-categories.md)
+- [36.30 Cohomology and base change, VI](part-03/36-30-cohomology-and-base-change-vi.md)
 
-## [36.30 Cohomology and base… to 36.38 K-groups](part-04/README.md)
+## [36.31 Perfect complexes to 36.41 Quasi-coherent objects in…](part-04/README.md)
 
-- [36.30 Cohomology and base change, VI](part-04/36-30-cohomology-and-base-change-vi.md)
 - [36.31 Perfect complexes](part-04/36-31-perfect-complexes.md)
 - [36.32 Applications](part-04/36-32-applications.md)
 - [36.33 Other applications](part-04/36-33-other-applications.md)
@@ -49,9 +49,6 @@ Chapter 36 of the Stacks Project, *Derived Categories of Schemes*, [Tag 08CU](ht
 - [36.36 The resolution property](part-04/36-36-the-resolution-property.md)
 - [36.37 The resolution property and perfect complexes](part-04/36-37-the-resolution-property-and-perfect-comple.md)
 - [36.38 K-groups](part-04/36-38-k-groups.md)
-
-## [36.39 Determinants of complexes to 36.41 Quasi-coherent objects in…](part-05/README.md)
-
-- [36.39 Determinants of complexes](part-05/36-39-determinants-of-complexes.md)
-- [36.40 Detecting Boundedness](part-05/36-40-detecting-boundedness.md)
-- [36.41 Quasi-coherent objects in the derived category](part-05/36-41-quasi-coherent-objects-in-the-derived-cate.md)
+- [36.39 Determinants of complexes](part-04/36-39-determinants-of-complexes.md)
+- [36.40 Detecting Boundedness](part-04/36-40-detecting-boundedness.md)
+- [36.41 Quasi-coherent objects in the derived category](part-04/36-41-quasi-coherent-objects-in-the-derived-cate.md)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 101.15 Universal homeomorphisms
 
-Section 101.15 of the Stacks Project, [Tag 0CI5](https://stacks.math.columbia.edu/tag/0CI5). 5 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 101.15 of the Stacks Project, [Tag 0CI5](https://stacks.math.columbia.edu/tag/0CI5). 5 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0CI6, a lemma
 
 [Tag 0CI6](https://stacks.math.columbia.edu/tag/0CI6) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.representable_universalHomeomorphism_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversalHomeomorphismCriterion.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/UniversalHomeomorphismCriterion.lean#L58).
+**`AlgebraicGeometry.Stack.representable_universalHomeomorphism_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversalHomeomorphismCriterion.lean, line 58](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/UniversalHomeomorphismCriterion.lean#L58).
 
 > **Stacks 0CI6.** A 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks over `S` representable by
 > algebraic spaces is a universal homeomorphism in the relative sense of Tag 04XB — every algebraic
@@ -44,7 +44,7 @@ theorem representable_universalHomeomorphism_iff
 
 [Tag 0CI7](https://stacks.math.columbia.edu/tag/0CI7) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.UniversalHomeomorphism`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversalHomeomorphism.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/UniversalHomeomorphism.lean#L68).
+**`AlgebraicGeometry.Stack.UniversalHomeomorphism`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversalHomeomorphism.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/UniversalHomeomorphism.lean#L68).
 
 > **Stacks 0CI7.** A 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks over `S` is a *universal
 > homeomorphism* if for every 1-morphism `g : 𝒵 ⟶ 𝒴` of algebraic stacks over `S` and every
@@ -55,7 +55,7 @@ theorem representable_universalHomeomorphism_iff
 abbrev UniversalHomeomorphism {𝒳 𝒴 : AlgebraicStacks.{u, w} B S hS} (f : 𝒳 ⟶ 𝒴) : Prop
 ```
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.UniversalHomeomorphism`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversalHomeomorphismAlgebraicStack.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/UniversalHomeomorphismAlgebraicStack.lean#L136).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.UniversalHomeomorphism`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversalHomeomorphismAlgebraicStack.lean, line 136](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/UniversalHomeomorphismAlgebraicStack.lean#L136).
 
 > **Stacks 0CI7.** A 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks over `S` is a *universal
 > homeomorphism* when, for every 1-morphism `g : 𝒵 ⟶ 𝒴` of algebraic stacks over `S`, the base
@@ -73,7 +73,7 @@ abbrev UniversalHomeomorphism {𝒳 𝒴 : Stack.AlgebraicStacks.{u, w} B S hS} 
 
 [Tag 0CI8](https://stacks.math.columbia.edu/tag/0CI8) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.universalHomeomorphism_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversalHomeomorphismBaseChange.lean, line 40](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/UniversalHomeomorphismBaseChange.lean#L40).
+**`AlgebraicGeometry.Stack.universalHomeomorphism_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversalHomeomorphismBaseChange.lean, line 40](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/UniversalHomeomorphismBaseChange.lean#L40).
 
 > The base change of a universal homeomorphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks over `S` along any
 > `g : 𝒵 ⟶ 𝒴` is a universal homeomorphism: in a 2-fibre-product square over `(g, f)`, the projection
@@ -90,7 +90,7 @@ theorem universalHomeomorphism_baseChange {𝒳 𝒴 𝒵 : AlgebraicStacks.{u, 
 
 [Tag 0CI9](https://stacks.math.columbia.edu/tag/0CI9) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks.universalHomeomorphism_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversalHomeomorphismAlgebraicStack.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/UniversalHomeomorphismAlgebraicStack.lean#L162).
+**`AlgebraicGeometry.Stack.AlgebraicStacks.universalHomeomorphism_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversalHomeomorphismAlgebraicStack.lean, line 162](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/UniversalHomeomorphismAlgebraicStack.lean#L162).
 
 > **Stacks 0CI9.** The composite of two universal homeomorphisms of algebraic stacks over `S`
 > is a universal homeomorphism.
@@ -111,7 +111,7 @@ theorem universalHomeomorphism_comp {𝒳 𝒴 𝒵 : Stack.AlgebraicStacks.{u, 
 
 [Tag 0DTQ](https://stacks.math.columbia.edu/tag/0DTQ) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.universalHomeomorphism_of_fppfCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversalHomeomorphismDescent.lean, line 126](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/UniversalHomeomorphismDescent.lean#L126).
+**`AlgebraicGeometry.Stack.universalHomeomorphism_of_fppfCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversalHomeomorphismDescent.lean, line 126](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/UniversalHomeomorphismDescent.lean#L126).
 
 > **Stacks 0DTQ.** Let `f : 𝒳 ⟶ 𝒴` be a 1-morphism of algebraic stacks over `S` and let
 > `g : 𝒲 ⟶ 𝒴` be a surjective, flat, locally finitely presented 1-morphism from the stack of an
@@ -137,4 +137,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 101.15, Tag 0CI5](https://stacks.math.columbia.edu/tag/0CI5)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.19 Flattening over a closed subsets of source and base
 
-Section 15.19 of the Stacks Project, [Tag 05LN](https://stacks.math.columbia.edu/tag/05LN). 6 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.19 of the Stacks Project, [Tag 05LN](https://stacks.math.columbia.edu/tag/05LN). 6 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 05LP, a situation
 
 [Tag 05LP](https://stacks.math.columbia.edu/tag/05LP) in the Stacks Project.
 
-**`Module.FlatteningSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/Stratification.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/Stratification.lean#L71).
+**`Module.FlatteningSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/Stratification.lean, line 71](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/Stratification.lean#L71).
 
 > **Stacks Tag 05LP.** The fixed data for flattening over closed subsets of source and base:
 > a ring map `R → S`, an ideal `J ⊆ S`, and an `S`-module `M`.
@@ -27,7 +27,7 @@ structure Module.FlatteningSituation
 
 [Tag 05LQ](https://stacks.math.columbia.edu/tag/05LQ) in the Stacks Project.
 
-**`Module.IsFlatAtPrimesOver`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/Stratification.lean, line 96](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/Stratification.lean#L96).
+**`Module.IsFlatAtPrimesOver`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/Stratification.lean, line 96](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/Stratification.lean#L96).
 
 > **Stacks Tag 05LQ.** Condition (15.19.1): the base change of `M` along `R → R'` is flat over
 > `R'` at every prime of `S ⊗[R] R'` containing the extensions of both `I'` and `J`. The module
@@ -45,7 +45,7 @@ def Module.IsFlatAtPrimesOver {R : Type u} {S : Type v} [CommRing R] [CommRing S
 
 [Tag 05LR](https://stacks.math.columbia.edu/tag/05LR) in the Stacks Project.
 
-**`Module.IsFlatAtPrimesOver.baseChange`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/Stratification.lean, line 182](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/Stratification.lean#L182).
+**`Module.IsFlatAtPrimesOver.baseChange`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/Stratification.lean, line 182](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/Stratification.lean#L182).
 
 > **Stacks Tag 05LR.** Flatness at all primes over the extensions of `I'` and `J` is preserved
 > by a further base change `R' → R''` and by replacing the extension of `I'` with a larger
@@ -69,7 +69,7 @@ lemma Module.IsFlatAtPrimesOver.baseChange
 
 [Tag 05LS](https://stacks.math.columbia.edu/tag/05LS) in the Stacks Project.
 
-**`Module.IsFlatAtPrimesOver.of_baseChange`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/Stratification.lean, line 411](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/Stratification.lean#L411).
+**`Module.IsFlatAtPrimesOver.of_baseChange`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/Stratification.lean, line 411](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/Stratification.lean#L411).
 
 > **Stacks Tag 05LS.** Flatness along the closed subsets determined by `I'` and `J` descends
 > from `R''` to `R'` when `V(I'') → V(I')` is surjective and the localizations of `R''` at primes
@@ -97,7 +97,7 @@ lemma Module.IsFlatAtPrimesOver.of_baseChange
 
 [Tag 05LT](https://stacks.math.columbia.edu/tag/05LT) in the Stacks Project.
 
-**`Module.exists_isFlatAtPrimesOver_of_isColimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/Stratification.lean, line 1047](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/Stratification.lean#L1047).
+**`Module.exists_isFlatAtPrimesOver_of_isColimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/Stratification.lean, line 1047](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/Stratification.lean#L1047).
 
 > **Stacks Tag 05LT.** Let `R → S` be essentially of finite presentation, let `J ⊆ S` be an
 > ideal and let `M` be a finitely presented `S`-module. Let `F` be a filtered system of
@@ -132,7 +132,7 @@ theorem Module.exists_isFlatAtPrimesOver_of_isColimit
 
 [Tag 05LU](https://stacks.math.columbia.edu/tag/05LU) in the Stacks Project.
 
-**`Module.flat_localizedModule_atPrime_of_flat_quotient_pow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/Stratification.lean, line 562](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Flat/Stratification.lean#L562).
+**`Module.flat_localizedModule_atPrime_of_flat_quotient_pow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Flat/Stratification.lean, line 562](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Flat/Stratification.lean#L562).
 
 > **Stacks Tag 05LU.** Let `R → S` be a map of Noetherian rings, let `J ⊆ S` and `I ⊆ R` be
 > ideals, and let `M` be a finite `S`-module. If, at every prime `q` containing `J + IS`, the
@@ -181,4 +181,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.19, Tag 05LN](https://stacks.math.columbia.edu/tag/05LN)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

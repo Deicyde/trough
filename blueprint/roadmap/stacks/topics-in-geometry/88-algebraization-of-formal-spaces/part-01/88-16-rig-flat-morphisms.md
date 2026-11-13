@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: AlgebraicGeometry.FormalSpace.IsRigFlat, AlgebraicGeometry.FormalSpace.hasRigFlatSourceCovering_of_hasRigFlatTargetCovering, AlgebraicGeometry.FormalSpace.isRigFlat_tfae_of_isLocallyNoetherian, AlgebraicGeometry.FormalSpace.isRigFlat_pullback_snd, AlgebraicGeometry.FormalSpace.isRigFlat_comp, AlgebraicGeometry.FormalSpace.isRigFlat_comp_of_isLocallyNoetherian
+lean: AlgebraicGeometry.FormalSpace.IsRigFlat, AlgebraicGeometry.FormalSpace.hasRigFlatSourceCovering_of_hasRigFlatTargetCovering, AlgebraicGeometry.FormalSpace.isRigFlat_tfae_of_isLocallyNoetherian, AlgebraicGeometry.FormalSpace.isRigFlat_pullback_snd, AlgebraicGeometry.FormalSpace.isRigFlat_comp_of_isLocallyNoetherian
 statement: formalized
 proof: formalized
 ---
 
 # 88.16 Rig-flat morphisms
 
-Section 88.16 of the Stacks Project, [Tag 0GGW](https://stacks.math.columbia.edu/tag/0GGW). 4 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 88.16 of the Stacks Project, [Tag 0GGW](https://stacks.math.columbia.edu/tag/0GGW). 4 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0GGX, a definition
 
 [Tag 0GGX](https://stacks.math.columbia.edu/tag/0GGX) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.IsRigFlat`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigFlat.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/RigFlat.lean#L62).
+**`AlgebraicGeometry.FormalSpace.IsRigFlat`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigFlat.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/RigFlat.lean#L62).
 
 > **Stacks 0GGX.** A morphism of formal algebraic spaces over `S` is *rig-flat* when every
 > morphism between affine, representable, étale charts of its source and target is induced by a
@@ -29,7 +29,7 @@ abbrev IsRigFlat (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS : B.Contains S)
 
 [Tag 0GGY](https://stacks.math.columbia.edu/tag/0GGY) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.hasRigFlatSourceCovering_of_hasRigFlatTargetCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigFlatCriteria.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/RigFlatCriteria.lean#L157). The attribute's comment: “(3) ⟹ (4)”.
+**`AlgebraicGeometry.FormalSpace.hasRigFlatSourceCovering_of_hasRigFlatTargetCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigFlatCriteria.lean, line 157](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/RigFlatCriteria.lean#L157). The attribute's comment: “(3) ⟹ (4)”.
 
 > **Stacks 0GGY, (3) ⟹ (4).** A target covering witnessing rig-flatness on charts yields a
 > source covering witnessing it: the two coverings of condition (3) compose into one covering of
@@ -42,7 +42,7 @@ theorem hasRigFlatSourceCovering_of_hasRigFlatTargetCovering
     HasRigFlatSourceCovering B S hS f
 ```
 
-**`AlgebraicGeometry.FormalSpace.isRigFlat_tfae_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigFlatCriteriaLocallyNoetherian.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/RigFlatCriteriaLocallyNoetherian.lean#L98).
+**`AlgebraicGeometry.FormalSpace.isRigFlat_tfae_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigFlatCriteriaLocallyNoetherian.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/RigFlatCriteriaLocallyNoetherian.lean#L98).
 
 > **Stacks 0GGY.** For a morphism `f : X ⟶ Y` of locally Noetherian formal algebraic spaces
 > over `S`, the following are equivalent: `f` is rig-flat (Definition 0GGX); every commutative
@@ -70,7 +70,7 @@ theorem isRigFlat_tfae_of_isLocallyNoetherian {X Y : FppfSheaf B S hS} (f : X �
 
 [Tag 0GGZ](https://stacks.math.columbia.edu/tag/0GGZ) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isRigFlat_pullback_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigFlatPullback.lean, line 86](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/RigFlatPullback.lean#L86).
+**`AlgebraicGeometry.FormalSpace.isRigFlat_pullback_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigFlatPullback.lean, line 86](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/RigFlatPullback.lean#L86).
 
 > **Stacks 0GGZ.** Let `f : X ⟶ Y` and `g : Z ⟶ Y` be morphisms of locally Noetherian formal
 > algebraic spaces over `S`. If `f` is rig-flat and `g` is locally of finite type, then the base
@@ -88,18 +88,7 @@ theorem isRigFlat_pullback_snd {X Y Z : FppfSheaf B S hS} (f : X ⟶ Y) (g : Z �
 
 [Tag 0GH0](https://stacks.math.columbia.edu/tag/0GH0) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isRigFlat_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigFlatComposition.lean, line 312](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/RigFlatComposition.lean#L312). The attribute's comment: “the composite is rig-flat, with the geometric half of Stacks 0GBK as a hypothesis”.
-
-> **Stacks 0GH0.** A composite of rig-flat morphisms of locally Noetherian formal algebraic
-> spaces is rig-flat: if `f : X ⟶ Y` and `g : Y ⟶ Z` are rig-flat, then so is `g ∘ f`.
-
-```lean
-theorem isRigFlat_comp (htransfer : TransfersCompositionOnAffineEtaleDiagrams B S hS)
-    (f : X ⟶ Y) (g : Y ⟶ Z) (hf : IsRigFlat B S hS f) (hg : IsRigFlat B S hS g) :
-    IsRigFlat B S hS (f ≫ g)
-```
-
-**`AlgebraicGeometry.FormalSpace.isRigFlat_comp_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigFlatCompositionLocallyNoetherian.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/RigFlatCompositionLocallyNoetherian.lean#L63).
+**`AlgebraicGeometry.FormalSpace.isRigFlat_comp_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigFlatCompositionLocallyNoetherian.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/RigFlatCompositionLocallyNoetherian.lean#L67).
 
 > **Stacks 0GH0.** Let `f : X ⟶ Y` and `g : Y ⟶ Z` be morphisms of locally Noetherian formal
 > algebraic spaces over `S`. If `f` and `g` are rig-flat, then so is `g ∘ f`.
@@ -118,4 +107,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 88.16, Tag 0GGW](https://stacks.math.columbia.edu/tag/0GGW)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 87.9 Affine formal algebraic spaces
 
-Section 87.9 of the Stacks Project, [Tag 0AI6](https://stacks.math.columbia.edu/tag/0AI6). 11 tags here are carried by 74 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 87.9 of the Stacks Project, [Tag 0AI6](https://stacks.math.columbia.edu/tag/0AI6). 11 tags here are carried by 74 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0AI7, a definition
 
 [Tag 0AI7](https://stacks.math.columbia.edu/tag/0AI7) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.IsAffineFormalAlgebraicSpace`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Affine.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/Affine.lean#L85).
+**`AlgebraicGeometry.FormalSpace.IsAffineFormalAlgebraicSpace`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Affine.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/Affine.lean#L85).
 
 > An *affine formal algebraic space* over `S` is an fppf sheaf on the big fppf site of `S`
 > which satisfies the set-theoretic condition
@@ -25,7 +25,7 @@ Section 87.9 of the Stacks Project, [Tag 0AI6](https://stacks.math.columbia.edu/
 abbrev IsAffineFormalAlgebraicSpace (X : FppfSheaf B S hS) : Prop
 ```
 
-**`AlgebraicGeometry.IsAffineFormalAlgebraicSpace`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/Defs.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/Defs.lean#L70).
+**`AlgebraicGeometry.IsAffineFormalAlgebraicSpace`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/Defs.lean, line 70](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/Defs.lean#L70).
 
 > An *affine formal algebraic space* over `S` is a sheaf on the big fppf site of `S` which
 > satisfies the set-theoretic condition and is a directed colimit of sheaves represented by affine
@@ -41,7 +41,7 @@ abbrev IsAffineFormalAlgebraicSpace (B : BigFppfSite.{u}) (S : Scheme.{u})
 
 [Tag 0AI8](https://stacks.math.columbia.edu/tag/0AI8) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.diagonal_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Diagonal.lean, line 646](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/Diagonal.lean#L646).
+**`AlgebraicGeometry.FormalSpace.diagonal_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Diagonal.lean, line 647](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/Diagonal.lean#L647).
 
 > The diagonal of an affine formal algebraic space is representable and a
 > closed immersion.
@@ -70,7 +70,7 @@ public theorem diagonal_isClosedImmersion
 
 [Tag 0AI9](https://stacks.math.columbia.edu/tag/0AI9) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.relativelyRepresentable_colimitι`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/ThickeningStage.lean, line 300](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/ThickeningStage.lean#L300). The attribute's comment: “representability”.
+**`AlgebraicGeometry.FormalSpace.relativelyRepresentable_colimitι`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/ThickeningStage.lean, line 301](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/ThickeningStage.lean#L301). The attribute's comment: “representability”.
 
 > **Stacks 0AI9.** A stage of a directed presentation of an affine formal algebraic space by
 > affine schemes with thickening transition morphisms maps representably to the colimit: every
@@ -85,7 +85,7 @@ theorem relativelyRepresentable_colimitι (i : I) :
           Sheaf.sheafifiedYoneda (BigFppfOver.topology B S hS)) i ≫ e.hom)
 ```
 
-**`AlgebraicGeometry.FormalSpace.isThickening_colimitι`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/ThickeningStage.lean, line 318](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/ThickeningStage.lean#L318). The attribute's comment: “thickening”.
+**`AlgebraicGeometry.FormalSpace.isThickening_colimitι`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/ThickeningStage.lean, line 319](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/ThickeningStage.lean#L319). The attribute's comment: “thickening”.
 
 > **Stacks 0AI9.** A stage of a directed presentation of an affine formal algebraic space by
 > affine schemes with thickening transition morphisms maps to the colimit by a thickening: the
@@ -108,7 +108,7 @@ theorem isThickening_colimitι (i : I) :
 
 [Tag 0AIA](https://stacks.math.columbia.edu/tag/0AIA) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_factor_through_thickening'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/Factorization.lean, line 189](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/Factorization.lean#L189).
+**`AlgebraicGeometry.exists_factor_through_thickening'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/Factorization.lean, line 189](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/Factorization.lean#L189).
 
 > A morphism from a quasi-compact algebraic space to a presented affine formal
 > algebraic space factors through one of its affine stages.
@@ -152,7 +152,7 @@ theorem exists_factor_through_thickening'
 
 [Tag 0AIB](https://stacks.math.columbia.edu/tag/0AIB) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.isAffineFormalAlgebraicSpace_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/Characterization.lean, line 580](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/Characterization.lean#L580).
+**`AlgebraicGeometry.FormalSpace.isAffineFormalAlgebraicSpace_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/Characterization.lean, line 580](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/Characterization.lean#L580).
 
 > **Stacks 0AIB.** A sheaf on the big fppf site of `S` is an affine formal algebraic space if
 > and only if every morphism to it from a sheaf represented by an affine scheme over `S` factors
@@ -194,7 +194,7 @@ theorem isAffineFormalAlgebraicSpace_iff
 
 [Tag 0AIC](https://stacks.math.columbia.edu/tag/0AIC) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.exists_isPresentingRing_of_hasAffineClosedImmersionCriterion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ClosedImmersionCriterionPresentation.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/ClosedImmersionCriterionPresentation.lean#L77). The attribute's comment: “(2) implies (1)”.
+**`AlgebraicGeometry.FormalSpace.exists_isPresentingRing_of_hasAffineClosedImmersionCriterion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ClosedImmersionCriterionPresentation.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/ClosedImmersionCriterionPresentation.lean#L77). The attribute's comment: “(2) implies (1)”.
 
 > **Stacks 0AIC, condition (2) implies condition (1).** If some morphism from an affine formal
 > algebraic space `X` to an affine scheme turns every closed immersion of an affine scheme
@@ -213,7 +213,7 @@ theorem exists_isPresentingRing_of_hasAffineClosedImmersionCriterion
       (_ : IsLinearTopology A A), IsPresentingRing B S hS A X
 ```
 
-**`AlgebraicGeometry.FormalSpace.exists_isPresentingRing_of_hasSchemeClosedImmersionCriterion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ClosedImmersionCriterionPresentation.lean, line 132](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/ClosedImmersionCriterionPresentation.lean#L132). The attribute's comment: “(3) implies (1)”.
+**`AlgebraicGeometry.FormalSpace.exists_isPresentingRing_of_hasSchemeClosedImmersionCriterion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ClosedImmersionCriterionPresentation.lean, line 132](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/ClosedImmersionCriterionPresentation.lean#L132). The attribute's comment: “(3) implies (1)”.
 
 > **Stacks 0AIC, condition (3) implies condition (1).** The criterion for closed immersions of
 > arbitrary schemes restricts to affine schemes, and then condition (2) gives condition (1).
@@ -225,7 +225,7 @@ theorem exists_isPresentingRing_of_hasSchemeClosedImmersionCriterion
       (_ : IsLinearTopology A A), IsPresentingRing B S hS A X
 ```
 
-**`AlgebraicGeometry.FormalSpace.HasAffineClosedImmersionCriterion.hasSchemeClosedImmersionCriterion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/McQuillanCriterion.lean, line 268](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/McQuillanCriterion.lean#L268). The attribute's comment: “part (2) implies part (3)”.
+**`AlgebraicGeometry.FormalSpace.HasAffineClosedImmersionCriterion.hasSchemeClosedImmersionCriterion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/McQuillanCriterion.lean, line 268](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/McQuillanCriterion.lean#L268). The attribute's comment: “part (2) implies part (3)”.
 
 > **Stacks 0AIC, condition (2) implies condition (3).** If some morphism from `X` to an affine
 > scheme over `S` turns every closed immersion of an *affine* scheme into `X` into a closed
@@ -239,7 +239,7 @@ theorem HasAffineClosedImmersionCriterion.hasSchemeClosedImmersionCriterion
     HasSchemeClosedImmersionCriterion B S hS X
 ```
 
-**`AlgebraicGeometry.FormalSpace.HasAffineClosedImmersionCriterion.hasAllSurjectivePresentations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/McQuillanCriterion.lean, line 374](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/McQuillanCriterion.lean#L374). The attribute's comment: “part (2) implies part (5), and with it part (2) implies part (4). No hypothesis beyond condition (2) is carried. What remains open in this tag is the implication (4) implies (1) for a presentation indexed by an arbitrary directed type in Type (u + 1): the ring it asks for is the limit of the section rings of the presentation, which then lies in Type (u + 1) rather than Type u, so a smallness argument on the index is needed that this development does not have. The sequential case is exists\_quotientSystem\_formalSpectrum\_iso and the countably indexed case is isPresentingRing\_of\_isCountablyIndexed. The implication (1) implies (2) is open for the reason recorded in the implementation notes above: conditions (2) and (3) ask for an affine scheme over S, and the ring of a presentation carries structure morphisms only on its quotients”.
+**`AlgebraicGeometry.FormalSpace.HasAffineClosedImmersionCriterion.hasAllSurjectivePresentations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/McQuillanCriterion.lean, line 374](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/McQuillanCriterion.lean#L374). The attribute's comment: “part (2) implies part (5), and with it part (2) implies part (4). No hypothesis beyond condition (2) is carried. What remains open in this tag is the implication (4) implies (1) for a presentation indexed by an arbitrary directed type in Type (u + 1): the ring it asks for is the limit of the section rings of the presentation, which then lies in Type (u + 1) rather than Type u, so a smallness argument on the index is needed that this development does not have. The sequential case is exists\_quotientSystem\_formalSpectrum\_iso and the countably indexed case is isPresentingRing\_of\_isCountablyIndexed. The implication (1) implies (2) is open for the reason recorded in the implementation notes above: conditions (2) and (3) ask for an affine scheme over S, and the ring of a presentation carries structure morphisms only on its quotients”.
 
 > **Stacks 0AIC, condition (2) implies condition (5).** Condition (2) is read on every
 > presentation of `X` by affine thickenings at once, which is condition (5).
@@ -251,7 +251,7 @@ theorem HasAffineClosedImmersionCriterion.hasAllSurjectivePresentations
     HasAllSurjectivePresentations B S hS X
 ```
 
-**`AlgebraicGeometry.FormalSpace.HasAffineClosedImmersionCriterion.hasSomeSurjectivePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/McQuillanCriterion.lean, line 387](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/McQuillanCriterion.lean#L387). The attribute's comment: “part (2) implies part (4)”.
+**`AlgebraicGeometry.FormalSpace.HasAffineClosedImmersionCriterion.hasSomeSurjectivePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/McQuillanCriterion.lean, line 387](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/McQuillanCriterion.lean#L387). The attribute's comment: “part (2) implies part (4)”.
 
 > **Stacks 0AIC, condition (2) implies condition (4).** The presentation by affine thickenings
 > that affineness of `X` supplies has surjective section-ring projections.
@@ -263,7 +263,7 @@ theorem HasAffineClosedImmersionCriterion.hasSomeSurjectivePresentation
     HasSomeSurjectivePresentation B S hS X
 ```
 
-**`AlgebraicGeometry.FormalSpace.HasSchemeClosedImmersionCriterion.hasSomeSurjectivePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/McQuillanCriterion.lean, line 396](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/McQuillanCriterion.lean#L396). The attribute's comment: “part (3) implies part (4)”.
+**`AlgebraicGeometry.FormalSpace.HasSchemeClosedImmersionCriterion.hasSomeSurjectivePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/McQuillanCriterion.lean, line 396](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/McQuillanCriterion.lean#L396). The attribute's comment: “part (3) implies part (4)”.
 
 > **Stacks 0AIC, condition (3) implies condition (4).** The criterion for all schemes
 > of the site restricts to the affine ones, which is already enough.
@@ -275,7 +275,7 @@ theorem HasSchemeClosedImmersionCriterion.hasSomeSurjectivePresentation
     HasSomeSurjectivePresentation B S hS X
 ```
 
-**`AlgebraicGeometry.FormalSpace.HasAffineClosedImmersionCriterionMapToSpec.hasAllSurjectivePresentations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/McQuillanCriterionPresentation.lean, line 160](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/McQuillanCriterionPresentation.lean#L160). The attribute's comment: “(2) implies (5)”.
+**`AlgebraicGeometry.FormalSpace.HasAffineClosedImmersionCriterionMapToSpec.hasAllSurjectivePresentations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/McQuillanCriterionPresentation.lean, line 160](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/McQuillanCriterionPresentation.lean#L160). The attribute's comment: “(2) implies (5)”.
 
 > **Stacks 0AIC, condition (2) implies condition (5).** If some morphism from `X` to an affine
 > scheme turns every closed immersion of an affine scheme into `X` into a closed immersion, then
@@ -287,7 +287,7 @@ theorem HasAffineClosedImmersionCriterionMapToSpec.hasAllSurjectivePresentations
     HasAllSurjectivePresentations B S hS X
 ```
 
-**`AlgebraicGeometry.FormalSpace.HasSchemeClosedImmersionCriterionMapToSpec.hasAllSurjectivePresentations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/McQuillanCriterionPresentation.lean, line 170](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/McQuillanCriterionPresentation.lean#L170). The attribute's comment: “(3) implies (5)”.
+**`AlgebraicGeometry.FormalSpace.HasSchemeClosedImmersionCriterionMapToSpec.hasAllSurjectivePresentations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/McQuillanCriterionPresentation.lean, line 170](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/McQuillanCriterionPresentation.lean#L170). The attribute's comment: “(3) implies (5)”.
 
 > **Stacks 0AIC, condition (3) implies condition (5).** The criterion for closed immersions of
 > arbitrary schemes restricts to affine schemes, and then condition (2) gives condition (5).
@@ -298,7 +298,7 @@ theorem HasSchemeClosedImmersionCriterionMapToSpec.hasAllSurjectivePresentations
     HasAllSurjectivePresentations B S hS X
 ```
 
-**`AlgebraicGeometry.FormalSpace.HasSchemeClosedImmersionCriterionMapToSpec.hasSomeSurjectivePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/McQuillanCriterionPresentation.lean, line 179](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/McQuillanCriterionPresentation.lean#L179). The attribute's comment: “(3) implies (4)”.
+**`AlgebraicGeometry.FormalSpace.HasSchemeClosedImmersionCriterionMapToSpec.hasSomeSurjectivePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/McQuillanCriterionPresentation.lean, line 179](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/McQuillanCriterionPresentation.lean#L179). The attribute's comment: “(3) implies (4)”.
 
 > **Stacks 0AIC, condition (3) implies condition (4).** Every presentation of `X` by affine
 > thickenings has surjective section-ring projections, and `X` has one.
@@ -309,7 +309,7 @@ theorem HasSchemeClosedImmersionCriterionMapToSpec.hasSomeSurjectivePresentation
     HasSomeSurjectivePresentation B S hS X
 ```
 
-**`AlgebraicGeometry.FormalSpace.HasAffineClosedImmersionCriterionMapToSpec.hasSchemeClosedImmersionCriterionMapToSpec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/McQuillanCriterionSupplement.lean, line 28](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/McQuillanCriterionSupplement.lean#L28). The attribute's comment: “part (2) implies part (3)”.
+**`AlgebraicGeometry.FormalSpace.HasAffineClosedImmersionCriterionMapToSpec.hasSchemeClosedImmersionCriterionMapToSpec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/McQuillanCriterionSupplement.lean, line 28](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/McQuillanCriterionSupplement.lean#L28). The attribute's comment: “part (2) implies part (3)”.
 
 > **Stacks 0AIC, condition (2) implies condition (3)**, for the conditions with the morphism
 > to `Spec A` recorded as a `AlgebraicGeometry.FormalSpace.MapToScheme`. If some morphism from `X`
@@ -324,7 +324,7 @@ theorem HasAffineClosedImmersionCriterionMapToSpec.hasSchemeClosedImmersionCrite
     HasSchemeClosedImmersionCriterionMapToSpec B S hS X
 ```
 
-**`AlgebraicGeometry.FormalSpace.HasSchemeClosedImmersionCriterionMapToSpec.hasAffineClosedImmersionCriterionMapToSpec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/McQuillanSupplement.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/McQuillanSupplement.lean#L89). The attribute's comment: “(3) implies (2)”.
+**`AlgebraicGeometry.FormalSpace.HasSchemeClosedImmersionCriterionMapToSpec.hasAffineClosedImmersionCriterionMapToSpec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/McQuillanSupplement.lean, line 89](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/McQuillanSupplement.lean#L89). The attribute's comment: “(3) implies (2)”.
 
 > **Stacks 0AIC, condition (3) implies condition (2)**, for the conditions with the morphism
 > to `Spec A` recorded as a `AlgebraicGeometry.FormalSpace.MapToScheme`. The affine schemes of the
@@ -336,7 +336,7 @@ theorem HasSchemeClosedImmersionCriterionMapToSpec.hasAffineClosedImmersionCrite
     HasAffineClosedImmersionCriterionMapToSpec B S hS X
 ```
 
-**`AlgebraicGeometry.FormalSpace.exists_continuous_ringEquiv_sections_of_weakIdealColimitPresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/PresentingRingSectionLimit.lean, line 341](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/PresentingRingSectionLimit.lean#L341). The attribute's comment: “the associated ring is A = lim Γ(X\_λ, 𝒪), with its limit topology, for an arbitrary presentation”.
+**`AlgebraicGeometry.FormalSpace.exists_continuous_ringEquiv_sections_of_weakIdealColimitPresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/PresentingRingSectionLimit.lean, line 341](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/PresentingRingSectionLimit.lean#L341). The attribute's comment: “the associated ring is A = lim Γ(X\_λ, 𝒪), with its limit topology, for an arbitrary presentation”.
 
 > **Stacks 0AIC, the concluding clause.** If `X` is the colimit of the spectra of the
 > quotients of a weakly admissible topological ring `A` by its weak ideals of definition, then for
@@ -366,7 +366,7 @@ theorem exists_continuous_ringEquiv_sections_of_weakIdealColimitPresentation
       Continuous e ∧ Continuous e.symm
 ```
 
-**`AlgebraicGeometry.FormalSpace.exists_continuous_ringEquiv_of_isPresentingRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/PresentingRingUniqueness.lean, line 332](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/PresentingRingUniqueness.lean#L332). The attribute's comment: “the associated ring of a McQuillan affine formal algebraic space is well defined: two rings presenting one affine formal algebraic space are isomorphic as topological rings”.
+**`AlgebraicGeometry.FormalSpace.exists_continuous_ringEquiv_of_isPresentingRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/PresentingRingUniqueness.lean, line 332](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/PresentingRingUniqueness.lean#L332). The attribute's comment: “the associated ring of a McQuillan affine formal algebraic space is well defined: two rings presenting one affine formal algebraic space are isomorphic as topological rings”.
 
 > **Stacks 0AIC: the presenting ring of a McQuillan affine formal algebraic space is unique
 > up to isomorphism of topological rings.** If the weakly admissible topological rings `A` and
@@ -380,7 +380,7 @@ theorem exists_continuous_ringEquiv_of_isPresentingRing {X : FppfSheaf B S hS}
     ∃ φ : A ≃+* C, Continuous φ ∧ Continuous φ.symm
 ```
 
-**`AlgebraicGeometry.FormalSpace.SequentialQuotients.exists_quotientSystem_formalSpectrum_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SectionLimitPresentation.lean, line 359](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/SectionLimitPresentation.lean#L359). The attribute's comment: “(4) implies (1), for a sequential presentation”.
+**`AlgebraicGeometry.FormalSpace.SequentialQuotients.exists_quotientSystem_formalSpectrum_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SectionLimitPresentation.lean, line 359](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/SectionLimitPresentation.lean#L359). The attribute's comment: “(4) implies (1), for a sequential presentation”.
 
 > A sheaf presented as the colimit of a sequence of affine thickenings whose section rings are
 > the quotients of a linearly topologized ring `A` by a fundamental system of weak ideals of
@@ -391,7 +391,7 @@ theorem exists_quotientSystem_formalSpectrum_iso :
     ∃ Q : QuotientSystem B S hS A, Nonempty (X ≅ formalSpectrum Q)
 ```
 
-**`AlgebraicGeometry.FormalSpace.SequentialQuotients.exists_quotientSystem_formalSpectrum_iso'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SectionLimitPresentationRefined.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/SectionLimitPresentationRefined.lean#L79). The attribute's comment: “(4) implies (1), for a sequential presentation”.
+**`AlgebraicGeometry.FormalSpace.SequentialQuotients.exists_quotientSystem_formalSpectrum_iso'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SectionLimitPresentationRefined.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/SectionLimitPresentationRefined.lean#L79). The attribute's comment: “(4) implies (1), for a sequential presentation”.
 
 > A sheaf presented as the colimit of a sequence of affine thickenings whose section rings are
 > the quotients of a linearly topologized ring `A` by a fundamental system of weak ideals of
@@ -402,7 +402,7 @@ theorem exists_quotientSystem_formalSpectrum_iso' (P : SequentialQuotients B S h
     ∃ Q : QuotientSystem B S hS A, Nonempty (X ≅ formalSpectrum Q)
 ```
 
-**`AlgebraicGeometry.FormalSpace.HasSomeSurjectivePresentation.hasAllSurjectivePresentations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SectionsIndependentOfPresentation.lean, line 619](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/SectionsIndependentOfPresentation.lean#L619). The attribute's comment: “part (4) implies part (5)”.
+**`AlgebraicGeometry.FormalSpace.HasSomeSurjectivePresentation.hasAllSurjectivePresentations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SectionsIndependentOfPresentation.lean, line 619](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/SectionsIndependentOfPresentation.lean#L619). The attribute's comment: “part (4) implies part (5)”.
 
 > If *some* presentation of an affine formal algebraic space by affine thickenings has all its
 > section-ring projections surjective, then *every* such presentation does.
@@ -414,7 +414,7 @@ public theorem HasSomeSurjectivePresentation.hasAllSurjectivePresentations
     HasAllSurjectivePresentations B S hS X
 ```
 
-**`AlgebraicGeometry.FormalSpace.exists_isPresentingRing_of_hasSomeSurjectivePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SurjectivePresentationRing.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/SurjectivePresentationRing.lean#L187). The attribute's comment: “(4) implies (1)”.
+**`AlgebraicGeometry.FormalSpace.exists_isPresentingRing_of_hasSomeSurjectivePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SurjectivePresentationRing.lean, line 187](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/SurjectivePresentationRing.lean#L187). The attribute's comment: “(4) implies (1)”.
 
 > **Stacks 0AIC, condition (4) implies condition (1).** An affine formal algebraic space with a
 > presentation by affine thickenings whose section-ring projections are surjective is presented by
@@ -432,7 +432,7 @@ theorem exists_isPresentingRing_of_hasSomeSurjectivePresentation
       (_ : IsLinearTopology A A), IsPresentingRing B S hS A X
 ```
 
-**`AlgebraicGeometry.FormalSpace.exists_isPresentingRing_of_hasAllSurjectivePresentations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SurjectivePresentationRing.lean, line 239](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/SurjectivePresentationRing.lean#L239). The attribute's comment: “(5) implies (1)”.
+**`AlgebraicGeometry.FormalSpace.exists_isPresentingRing_of_hasAllSurjectivePresentations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SurjectivePresentationRing.lean, line 239](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/SurjectivePresentationRing.lean#L239). The attribute's comment: “(5) implies (1)”.
 
 > **Stacks 0AIC, condition (5) implies condition (1).** A presentation whose section-ring
 > projections are all surjective exists as soon as every presentation has that property.
@@ -444,7 +444,7 @@ theorem exists_isPresentingRing_of_hasAllSurjectivePresentations
       (_ : IsLinearTopology A A), IsPresentingRing B S hS A X
 ```
 
-**`AlgebraicGeometry.FormalSpace.hasSomeSurjectivePresentation_iff_exists_isPresentingRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SurjectivePresentationRing.lean, line 253](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/SurjectivePresentationRing.lean#L253). The attribute's comment: “(1), (4) and (5) are equivalent”.
+**`AlgebraicGeometry.FormalSpace.hasSomeSurjectivePresentation_iff_exists_isPresentingRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SurjectivePresentationRing.lean, line 253](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/SurjectivePresentationRing.lean#L253). The attribute's comment: “(1), (4) and (5) are equivalent”.
 
 > **Stacks 0AIC, conditions (1), (4) and (5) are equivalent.** For an fppf sheaf satisfying the
 > set-theoretic condition of Stacks 0AIS, being presented by a weakly admissible topological ring
@@ -461,7 +461,7 @@ theorem hasSomeSurjectivePresentation_iff_exists_isPresentingRing
         (_ : IsLinearTopology A A), IsPresentingRing B S hS A X
 ```
 
-**`AlgebraicGeometry.FormalSpace.hasAllSurjectivePresentations_iff_exists_isPresentingRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SurjectivePresentationRing.lean, line 265](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/SurjectivePresentationRing.lean#L265). The attribute's comment: “(1), (4) and (5) are equivalent”.
+**`AlgebraicGeometry.FormalSpace.hasAllSurjectivePresentations_iff_exists_isPresentingRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SurjectivePresentationRing.lean, line 265](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/SurjectivePresentationRing.lean#L265). The attribute's comment: “(1), (4) and (5) are equivalent”.
 
 > **Stacks 0AIC, conditions (4) and (5) are equivalent to condition (1).** The statement above
 > for the "every presentation" form of McQuillan's condition.
@@ -474,7 +474,7 @@ theorem hasAllSurjectivePresentations_iff_exists_isPresentingRing
         (_ : IsLinearTopology A A), IsPresentingRing B S hS A X
 ```
 
-**`AlgebraicGeometry.FormalSpace.isThickening_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ThickeningClassification.lean, line 507](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/ThickeningClassification.lean#L507). The attribute's comment: “thickening\_classification”.
+**`AlgebraicGeometry.FormalSpace.isThickening_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ThickeningClassification.lean, line 507](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/ThickeningClassification.lean#L507). The attribute's comment: “thickening\_classification”.
 
 > Every weak ideal of definition gives a thickening of the formal space.
 
@@ -490,7 +490,7 @@ public theorem isThickening_quotient
       (quotientMap B S hS A X P J)
 ```
 
-**`AlgebraicGeometry.FormalSpace.relativelyRepresentable_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ThickeningClassification.lean, line 538](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/ThickeningClassification.lean#L538). The attribute's comment: “thickening\_classification”.
+**`AlgebraicGeometry.FormalSpace.relativelyRepresentable_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ThickeningClassification.lean, line 538](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/ThickeningClassification.lean#L538). The attribute's comment: “thickening\_classification”.
 
 > Every weak ideal of definition gives a representable morphism from its
 > quotient scheme to the formal space.
@@ -503,7 +503,7 @@ public theorem relativelyRepresentable_quotient
       (quotientMap B S hS A X P J)
 ```
 
-**`AlgebraicGeometry.FormalSpace.existsUnique_weakIdeal_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ThickeningClassification.lean, line 547](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/ThickeningClassification.lean#L547). The attribute's comment: “thickening\_classification”.
+**`AlgebraicGeometry.FormalSpace.existsUnique_weakIdeal_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ThickeningClassification.lean, line 547](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/ThickeningClassification.lean#L547). The attribute's comment: “thickening\_classification”.
 
 > Any representable thickening from a scheme into the formal space is,
 > uniquely up to its weak ideal, a quotient stage of the canonical presentation.
@@ -528,7 +528,7 @@ public theorem existsUnique_weakIdeal_quotient
           quotientMap B S hS A X P J = f
 ```
 
-**`AlgebraicGeometry.FormalSpace.inducedSectionHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ThickeningClassification.lean, line 712](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/ThickeningClassification.lean#L712). The attribute's comment: “thickening\_classification”.
+**`AlgebraicGeometry.FormalSpace.inducedSectionHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ThickeningClassification.lean, line 712](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/ThickeningClassification.lean#L712). The attribute's comment: “thickening\_classification”.
 
 > The homomorphism on global sections induced by a representable thickening
 > into the formal space. The uniqueness and compatibility statements below show
@@ -550,7 +550,7 @@ public noncomputable def inducedSectionHom
     A →+* Γ((BigFppfOver.toScheme B S hS).obj T, ⊤)
 ```
 
-**`AlgebraicGeometry.FormalSpace.inducedSectionHom_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ThickeningClassification.lean, line 734](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/ThickeningClassification.lean#L734). The attribute's comment: “thickening\_classification”.
+**`AlgebraicGeometry.FormalSpace.inducedSectionHom_quotient`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ThickeningClassification.lean, line 734](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/ThickeningClassification.lean#L734). The attribute's comment: “thickening\_classification”.
 
 > At every quotient description compatible with the morphism to the formal
 > space, the induced map on sections is the canonical quotient map followed by
@@ -578,7 +578,7 @@ public theorem inducedSectionHom_quotient
       sectionHomOfQuotientIso B S hS A X P J T e
 ```
 
-**`AlgebraicGeometry.FormalSpace.quotient_ker_sections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ThickeningClassification.lean, line 777](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/ThickeningClassification.lean#L777). The attribute's comment: “thickening\_classification”.
+**`AlgebraicGeometry.FormalSpace.quotient_ker_sections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ThickeningClassification.lean, line 777](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/ThickeningClassification.lean#L777). The attribute's comment: “thickening\_classification”.
 
 > The classifying ideal of a representable thickening is the kernel of the
 > homomorphism from the associated ring to its global sections.
@@ -604,7 +604,7 @@ public theorem quotient_ker_sections
     RingHom.ker (inducedSectionHom B S hS A X P hA T f hf_repr hf_thick) = J.1
 ```
 
-**`AlgebraicGeometry.FormalSpace.isClosedImmersion_toSpec_of_weakIdealColimitPresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/WeakIdealClosedImmersionCriterion.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/WeakIdealClosedImmersionCriterion.lean#L84). The attribute's comment: “(1) implies (2)”.
+**`AlgebraicGeometry.FormalSpace.isClosedImmersion_toSpec_of_weakIdealColimitPresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/WeakIdealClosedImmersionCriterion.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/WeakIdealClosedImmersionCriterion.lean#L84). The attribute's comment: “(1) implies (2)”.
 
 > **Stacks 0AIC, condition (1) implies condition (2).** Let `A` be a weakly admissible
 > topological ring and let the fppf sheaf `X`, satisfying the set-theoretic condition of
@@ -636,7 +636,7 @@ theorem isClosedImmersion_toSpec_of_weakIdealColimitPresentation
               Spec.map (CommRingCat.ofHom (Ideal.Quotient.mk K.1)))
 ```
 
-**`AlgebraicGeometry.FormalSpace.hasAffineClosedImmersionCriterion_of_weakIdealColimitPresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/WeakIdealMapToSpec.lean, line 336](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/WeakIdealMapToSpec.lean#L336). The attribute's comment: “(1) implies (2)”.
+**`AlgebraicGeometry.FormalSpace.hasAffineClosedImmersionCriterion_of_weakIdealColimitPresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/WeakIdealMapToSpec.lean, line 336](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/WeakIdealMapToSpec.lean#L336). The attribute's comment: “(1) implies (2)”.
 
 > **Stacks 0AIC, condition (1) implies condition (2).** Let `A` be a weakly admissible
 > topological ring and let the fppf sheaf `X`, satisfying the set-theoretic condition of
@@ -660,7 +660,7 @@ theorem hasAffineClosedImmersionCriterion_of_weakIdealColimitPresentation
     HasAffineClosedImmersionCriterionMapToSpec B S hS X
 ```
 
-**`AlgebraicGeometry.FormalSpace.hasSchemeClosedImmersionCriterion_of_weakIdealColimitPresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/WeakIdealMapToSpec.lean, line 349](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/WeakIdealMapToSpec.lean#L349). The attribute's comment: “(1) implies (3)”.
+**`AlgebraicGeometry.FormalSpace.hasSchemeClosedImmersionCriterion_of_weakIdealColimitPresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/WeakIdealMapToSpec.lean, line 349](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/WeakIdealMapToSpec.lean#L349). The attribute's comment: “(1) implies (3)”.
 
 > **Stacks 0AIC, condition (1) implies condition (3).** Condition (1) gives condition (2), and
 > a scheme closed-immersed in an affine formal algebraic space is affine, so the criterion extends
@@ -674,7 +674,7 @@ theorem hasSchemeClosedImmersionCriterion_of_weakIdealColimitPresentation
     HasSchemeClosedImmersionCriterionMapToSpec B S hS X
 ```
 
-**`AlgebraicGeometry.FormalSpace.hasAffineClosedImmersionCriterion_of_hasSomeSurjectivePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/WeakIdealMapToSpec.lean, line 373](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/WeakIdealMapToSpec.lean#L373). The attribute's comment: “(4) implies (2)”.
+**`AlgebraicGeometry.FormalSpace.hasAffineClosedImmersionCriterion_of_hasSomeSurjectivePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/WeakIdealMapToSpec.lean, line 373](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/WeakIdealMapToSpec.lean#L373). The attribute's comment: “(4) implies (2)”.
 
 > **Stacks 0AIC, condition (4) implies condition (2).** An affine formal algebraic space with
 > *some* presentation by affine thickenings whose section-ring projections are surjective admits a
@@ -692,7 +692,7 @@ theorem hasAffineClosedImmersionCriterion_of_hasSomeSurjectivePresentation
     HasAffineClosedImmersionCriterionMapToSpec B S hS X
 ```
 
-**`AlgebraicGeometry.FormalSpace.hasSchemeClosedImmersionCriterion_of_hasSomeSurjectivePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/WeakIdealMapToSpec.lean, line 388](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/WeakIdealMapToSpec.lean#L388). The attribute's comment: “(4) implies (3)”.
+**`AlgebraicGeometry.FormalSpace.hasSchemeClosedImmersionCriterion_of_hasSomeSurjectivePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/WeakIdealMapToSpec.lean, line 388](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/WeakIdealMapToSpec.lean#L388). The attribute's comment: “(4) implies (3)”.
 
 > **Stacks 0AIC, condition (4) implies condition (3).** Condition (4) gives condition (2), and
 > a scheme closed-immersed in an affine formal algebraic space is affine, so the criterion extends
@@ -704,7 +704,7 @@ theorem hasSchemeClosedImmersionCriterion_of_hasSomeSurjectivePresentation
     HasSchemeClosedImmersionCriterionMapToSpec B S hS X
 ```
 
-**`AlgebraicGeometry.FormalSpace.hasAffineClosedImmersionCriterion_of_hasAllSurjectivePresentations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/WeakIdealMapToSpec.lean, line 398](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/WeakIdealMapToSpec.lean#L398). The attribute's comment: “(5) implies (2)”.
+**`AlgebraicGeometry.FormalSpace.hasAffineClosedImmersionCriterion_of_hasAllSurjectivePresentations`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/WeakIdealMapToSpec.lean, line 398](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/WeakIdealMapToSpec.lean#L398). The attribute's comment: “(5) implies (2)”.
 
 > **Stacks 0AIC, condition (5) implies condition (2).** Condition (5) gives condition (4) by
 > instantiating its quantifier at the presentation an affine formal algebraic space comes with,
@@ -716,7 +716,7 @@ theorem hasAffineClosedImmersionCriterion_of_hasAllSurjectivePresentations
     HasAffineClosedImmersionCriterionMapToSpec B S hS X
 ```
 
-**`AlgebraicGeometry.FormalSpace.hasAllSurjectivePresentations_of_exists_weaklyAdmissible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/WeakIdealPresentation.lean, line 1410](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/WeakIdealPresentation.lean#L1410). The attribute's comment: “(1) implies (5)”.
+**`AlgebraicGeometry.FormalSpace.hasAllSurjectivePresentations_of_exists_weaklyAdmissible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/WeakIdealPresentation.lean, line 1410](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/WeakIdealPresentation.lean#L1410). The attribute's comment: “(1) implies (5)”.
 
 > **Stacks 0AIC, (1) ⇒ (5).** Condition (1) of Stacks 0AIC — the existence of a weakly
 > admissible topological ring over `S` presenting `X` as the colimit of the spectra of its
@@ -743,7 +743,7 @@ theorem hasAllSurjectivePresentations_of_exists_weaklyAdmissible
 
 [Tag 0AID](https://stacks.math.columbia.edu/tag/0AID) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.IsClassical`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/Types.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/Types.lean#L84). The attribute's comment: “classical”.
+**`AlgebraicGeometry.FormalSpace.IsClassical`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/Types.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/Types.lean#L84). The attribute's comment: “classical”.
 
 > **Stacks 0AID (1).** A McQuillan affine formal algebraic space is *classical* when its
 > associated weakly admissible topological ring is admissible, that is has an ideal of
@@ -753,7 +753,7 @@ theorem hasAllSurjectivePresentations_of_exists_weaklyAdmissible
 abbrev IsClassical (X : FppfSheaf B S hS) : Prop
 ```
 
-**`AlgebraicGeometry.FormalSpace.IsWeaklyAdic`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/Types.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/Types.lean#L94). The attribute's comment: “weakly adic”.
+**`AlgebraicGeometry.FormalSpace.IsWeaklyAdic`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/Types.lean, line 94](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/Types.lean#L94). The attribute's comment: “weakly adic”.
 
 > **Stacks 0AID (2).** A McQuillan affine formal algebraic space is *weakly adic* when its
 > associated weakly admissible topological ring is weakly adic, that is the closed powers of a
@@ -763,7 +763,7 @@ abbrev IsClassical (X : FppfSheaf B S hS) : Prop
 abbrev IsWeaklyAdic (X : FppfSheaf B S hS) : Prop
 ```
 
-**`AlgebraicGeometry.FormalSpace.IsAdic`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/Types.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/Types.lean#L104). The attribute's comment: “adic”.
+**`AlgebraicGeometry.FormalSpace.IsAdic`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/Types.lean, line 104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/Types.lean#L104). The attribute's comment: “adic”.
 
 > **Stacks 0AID (3).** A McQuillan affine formal algebraic space is *adic* when its
 > associated weakly admissible topological ring is adic, that is its topology is the adic
@@ -773,7 +773,7 @@ abbrev IsWeaklyAdic (X : FppfSheaf B S hS) : Prop
 abbrev IsAdic (X : FppfSheaf B S hS) : Prop
 ```
 
-**`AlgebraicGeometry.FormalSpace.IsAdicStar`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/Types.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/Types.lean#L114). The attribute's comment: “adic star”.
+**`AlgebraicGeometry.FormalSpace.IsAdicStar`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/Types.lean, line 114](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/Types.lean#L114). The attribute's comment: “adic star”.
 
 > **Stacks 0AID (4).** A McQuillan affine formal algebraic space is *adic\** when its
 > associated weakly admissible topological ring is adic and moreover has a finitely generated
@@ -783,7 +783,7 @@ abbrev IsAdic (X : FppfSheaf B S hS) : Prop
 abbrev IsAdicStar (X : FppfSheaf B S hS) : Prop
 ```
 
-**`AlgebraicGeometry.FormalSpace.IsNoetherian`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/Types.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/Types.lean#L124). The attribute's comment: “Noetherian”.
+**`AlgebraicGeometry.FormalSpace.IsNoetherian`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/Types.lean, line 124](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/Types.lean#L124). The attribute's comment: “Noetherian”.
 
 > **Stacks 0AID (5).** A McQuillan affine formal algebraic space is *Noetherian* when its
 > associated weakly admissible topological ring is both a Noetherian ring and adic.
@@ -794,13 +794,13 @@ abbrev IsNoetherian (X : FppfSheaf B S hS) : Prop
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.FormalSpace.HasSomeSurjectivePresentation`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/McQuillan.lean#L141), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/Types.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/Types.lean#L69) (StacksFrontier): “McQuillan”.
+- [`AlgebraicGeometry.FormalSpace.HasSomeSurjectivePresentation`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/McQuillan.lean#L141), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/Types.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/Types.lean#L69) (StacksFrontier): “McQuillan”.
 
 ## Tag 0AIE, a remark
 
 [Tag 0AIE](https://stacks.math.columbia.edu/tag/0AIE) in the Stacks Project.
 
-**`AlgebraicGeometry.surjective_spfQuotientPointsColimitMap_app_of_isAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/FunctorOfPointsAffine.lean, line 390](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalScheme/FunctorOfPointsAffine.lean#L390). The attribute's comment: “the comparison map of the colimit formula is surjective at an affine test scheme”.
+**`AlgebraicGeometry.surjective_spfQuotientPointsColimitMap_app_of_isAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/FunctorOfPointsAffine.lean, line 390](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalScheme/FunctorOfPointsAffine.lean#L390). The attribute's comment: “the comparison map of the colimit formula is surjective at an affine test scheme”.
 
 > **Stacks 0AIE**, the affine case of the colimit formula. The comparison map
 > `colim h_{Spec (A/I)} → h_{Spf A}` is surjective on the points over an affine scheme: such a
@@ -813,7 +813,7 @@ theorem surjective_spfQuotientPointsColimitMap_app_of_isAffine (hA : IsAdmissibl
     Function.Surjective ((spfQuotientPointsColimitMap A hA).app (op T))
 ```
 
-**`AlgebraicGeometry.isLocallySurjective_spfQuotientPointsColimitMap_of_isAdmissible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/FunctorOfPointsAffine.lean, line 414](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalScheme/FunctorOfPointsAffine.lean#L414). The attribute's comment: “the comparison map of the colimit formula is locally surjective, with no hypothesis beyond admissibility”.
+**`AlgebraicGeometry.isLocallySurjective_spfQuotientPointsColimitMap_of_isAdmissible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/FunctorOfPointsAffine.lean, line 414](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalScheme/FunctorOfPointsAffine.lean#L414). The attribute's comment: “the comparison map of the colimit formula is locally surjective, with no hypothesis beyond admissibility”.
 
 > **Stacks 0AIE**, the colimit formula, with no hypothesis beyond admissibility: the
 > comparison map `colim h_{Spec (A/I)} → h_{Spf A}` is locally surjective for the Zariski
@@ -832,7 +832,7 @@ theorem isLocallySurjective_spfQuotientPointsColimitMap_of_isAdmissible (hA : Is
       (spfQuotientPointsColimitMap A hA)
 ```
 
-**`AlgebraicGeometry.spfQuotientPointsColimitMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/FunctorOfPointsColimit.lean, line 263](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalScheme/FunctorOfPointsColimit.lean#L263). The attribute's comment: “the comparison map h\_colim → h\_Spf A of the colimit formula”.
+**`AlgebraicGeometry.spfQuotientPointsColimitMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/FunctorOfPointsColimit.lean, line 263](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalScheme/FunctorOfPointsColimit.lean#L263). The attribute's comment: “the comparison map h\_colim → h\_Spf A of the colimit formula”.
 
 > **Stacks 0AIE.** The comparison map of the source's colimit formula
 > `h_{Spf A} = colim h_{Spec (A/I)}`: the morphism out of the colimit of the functors of points of
@@ -843,7 +843,7 @@ noncomputable def spfQuotientPointsColimitMap [IsLinearTopology A A] (hA : IsAdm
     colimit (spfQuotientPointsDiagram A) ⟶ formalSchemePoints (spfFormalScheme A hA)
 ```
 
-**`AlgebraicGeometry.injective_spfQuotientPointsColimitMap_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/FunctorOfPointsColimit.lean, line 294](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalScheme/FunctorOfPointsColimit.lean#L294). The attribute's comment: “the comparison map of the colimit formula is injective at every test scheme”.
+**`AlgebraicGeometry.injective_spfQuotientPointsColimitMap_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/FunctorOfPointsColimit.lean, line 294](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalScheme/FunctorOfPointsColimit.lean#L294). The attribute's comment: “the comparison map of the colimit formula is injective at every test scheme”.
 
 > **Stacks 0AIE.** The comparison map of the colimit formula is injective on the points over
 > every scheme: two morphisms `T → Spec (A/I)` and `T → Spec (A/J)` inducing the same point of
@@ -855,7 +855,7 @@ theorem injective_spfQuotientPointsColimitMap_app [IsLinearTopology A A] (hA : I
     Function.Injective ((spfQuotientPointsColimitMap A hA).app (op T))
 ```
 
-**`AlgebraicGeometry.mono_spfQuotientPointsColimitMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/FunctorOfPointsColimit.lean, line 351](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalScheme/FunctorOfPointsColimit.lean#L351). The attribute's comment: “the comparison map of the colimit formula is a monomorphism of presheaves”.
+**`AlgebraicGeometry.mono_spfQuotientPointsColimitMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/FunctorOfPointsColimit.lean, line 351](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalScheme/FunctorOfPointsColimit.lean#L351). The attribute's comment: “the comparison map of the colimit formula is a monomorphism of presheaves”.
 
 > **Stacks 0AIE.** The colimit of the functors of points of the quotient spectra is a
 > subfunctor of the functor of points of `Spf A`: the comparison map is a monomorphism of
@@ -866,7 +866,7 @@ theorem mono_spfQuotientPointsColimitMap [IsLinearTopology A A] (hA : IsAdmissib
     Mono (spfQuotientPointsColimitMap A hA)
 ```
 
-**`AlgebraicGeometry.isLocallyInjective_spfQuotientPointsColimitMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/FunctorOfPointsColimit.lean, line 361](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalScheme/FunctorOfPointsColimit.lean#L361). The attribute's comment: “the comparison map of the colimit formula is locally injective”.
+**`AlgebraicGeometry.isLocallyInjective_spfQuotientPointsColimitMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/FunctorOfPointsColimit.lean, line 361](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalScheme/FunctorOfPointsColimit.lean#L361). The attribute's comment: “the comparison map of the colimit formula is locally injective”.
 
 > **Stacks 0AIE.** The comparison map of the colimit formula is locally injective for the
 > Zariski topology on schemes, being injective on the points over every scheme.
@@ -878,7 +878,7 @@ theorem isLocallyInjective_spfQuotientPointsColimitMap [IsLinearTopology A A]
       (spfQuotientPointsColimitMap A hA)
 ```
 
-**`AlgebraicGeometry.isLocallySurjective_spfQuotientPointsColimitMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/FunctorOfPointsColimit.lean, line 380](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalScheme/FunctorOfPointsColimit.lean#L380). The attribute's comment: “the colimit formula is locally surjective, assuming its affine case (the surjectivity half of Stacks 0AHZ)”.
+**`AlgebraicGeometry.isLocallySurjective_spfQuotientPointsColimitMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalScheme/FunctorOfPointsColimit.lean, line 380](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalScheme/FunctorOfPointsColimit.lean#L380). The attribute's comment: “the colimit formula is locally surjective, assuming its affine case (the surjectivity half of Stacks 0AHZ)”.
 
 > **Stacks 0AIE.** The reduction of the colimit formula to the affine case. If every point of
 > `Spf A` over an affine scheme factors through one of the quotients `Spec (A/I)`, then the
@@ -900,7 +900,7 @@ theorem isLocallySurjective_spfQuotientPointsColimitMap [IsLinearTopology A A]
       (spfQuotientPointsColimitMap A hA)
 ```
 
-**`AlgebraicGeometry.FormalSpace.isClassical_formalSchemePointsFppfSheaf_of_contains`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AffineFormalSchemeEquivalence.lean, line 368](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/AffineFormalSchemeEquivalence.lean#L368). The attribute's comment: “if the coproduct of the Spec(A/I) over the ideals of definition belongs to the site, then h\_X is a classical affine formal algebraic space”.
+**`AlgebraicGeometry.FormalSpace.isClassical_formalSchemePointsFppfSheaf_of_contains`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AffineFormalSchemeEquivalence.lean, line 368](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/AffineFormalSchemeEquivalence.lean#L368). The attribute's comment: “if the coproduct of the Spec(A/I) over the ideals of definition belongs to the site, then h\_X is a classical affine formal algebraic space”.
 
 > **Stacks 0AIE.** Over a terminal base, the functor of points of an affine formal scheme
 > `Spf A` is a classical affine formal algebraic space as soon as the coproduct of the schemes
@@ -913,7 +913,7 @@ theorem isClassical_formalSchemePointsFppfSheaf_of_contains (hterm : IsTerminal 
     IsClassical B S hS (formalSchemePointsFppfSheaf B S hS X)
 ```
 
-**`AlgebraicGeometry.FormalSpace.isAffineFormalAlgebraicSpace_formalSchemePointsFppfSheaf_of_contains`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AffineFormalSchemeEquivalence.lean, line 382](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/AffineFormalSchemeEquivalence.lean#L382). The attribute's comment: “if the coproduct of the Spec(A/I) over the ideals of definition belongs to the site, then h\_X is an affine formal algebraic space”.
+**`AlgebraicGeometry.FormalSpace.isAffineFormalAlgebraicSpace_formalSchemePointsFppfSheaf_of_contains`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AffineFormalSchemeEquivalence.lean, line 382](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/AffineFormalSchemeEquivalence.lean#L382). The attribute's comment: “if the coproduct of the Spec(A/I) over the ideals of definition belongs to the site, then h\_X is an affine formal algebraic space”.
 
 > **Stacks 0AIE.** Over a terminal base, the functor of points of an affine formal scheme
 > `Spf A` is an affine formal algebraic space as soon as the coproduct of the schemes
@@ -927,7 +927,7 @@ theorem isAffineFormalAlgebraicSpace_formalSchemePointsFppfSheaf_of_contains
     IsAffineFormalAlgebraicSpace B S hS (formalSchemePointsFppfSheaf B S hS X)
 ```
 
-**`AlgebraicGeometry.FormalSpace.isEquivalence_smallAffineFormalSchemePointsFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AffineFormalSchemeEquivalence.lean, line 460](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/AffineFormalSchemeEquivalence.lean#L460). The attribute's comment: “the category of affine formal schemes is equivalent to the category of classical affine formal algebraic spaces, by the functor of points”.
+**`AlgebraicGeometry.FormalSpace.isEquivalence_smallAffineFormalSchemePointsFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AffineFormalSchemeEquivalence.lean, line 460](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/AffineFormalSchemeEquivalence.lean#L460). The attribute's comment: “the category of affine formal schemes is equivalent to the category of classical affine formal algebraic spaces, by the functor of points”.
 
 > **Stacks 0AIE**, the equivalence. Over a terminal base `S` (the source's `Spec(ℤ)`), the
 > functor of points `𝔛 ↦ h_𝔛` is an equivalence from the category of affine formal schemes
@@ -940,7 +940,7 @@ theorem isEquivalence_smallAffineFormalSchemePointsFunctor (hterm : IsTerminal S
     (smallAffineFormalSchemePointsFunctor B S hS hterm).IsEquivalence
 ```
 
-**`AlgebraicGeometry.FormalSpace.isClassical_iff_exists_admissible_quotientSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ClassicalCharacterization.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/ClassicalCharacterization.lean#L94). The attribute's comment: “the objects: a sheaf is a classical affine formal algebraic space exactly when it is the formal spectrum of an admissible topological ring”.
+**`AlgebraicGeometry.FormalSpace.isClassical_iff_exists_admissible_quotientSystem`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/ClassicalCharacterization.lean, line 94](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/ClassicalCharacterization.lean#L94). The attribute's comment: “the objects: a sheaf is a classical affine formal algebraic space exactly when it is the formal spectrum of an admissible topological ring”.
 
 > **Stacks 0AIE, the objects.** An fppf sheaf over `S` satisfying the set-theoretic condition
 > of Stacks 0AIS is a *classical* affine formal algebraic space in the sense of Stacks 0AID (1)
@@ -967,7 +967,7 @@ theorem isClassical_iff_exists_admissible_quotientSystem {X : FppfSheaf B S hS}
           ∃ D : QuotientSystem B S hS A, Nonempty (X ≅ formalSpectrum D)
 ```
 
-**`AlgebraicGeometry.FormalSpace.final_idealOfDefinitionIndex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSchemeSpectrumComparison.lean, line 196](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSchemeSpectrumComparison.lean#L196). The attribute's comment: “the ideals of definition are cofinal among the weak ideals of definition, so the colimit of the remark and the formal spectrum of Stacks 0AIF have the same index”.
+**`AlgebraicGeometry.FormalSpace.final_idealOfDefinitionIndex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSchemeSpectrumComparison.lean, line 196](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSchemeSpectrumComparison.lean#L196). The attribute's comment: “the ideals of definition are cofinal among the weak ideals of definition, so the colimit of the remark and the formal spectrum of Stacks 0AIF have the same index”.
 
 > **Stacks 0AIE**, the index reconciliation. In a pre-admissible topological ring the ideals of
 > definition are cofinal below the weak ideals of definition — the intersection of a weak ideal of
@@ -983,7 +983,7 @@ theorem final_idealOfDefinitionIndex (hA : TopologicalRing.IsPreAdmissible A) :
     (idealOfDefinitionIndex A).monotone.functor.Final
 ```
 
-**`AlgebraicGeometry.FormalSpace.QuotientSystem.formalSpectrumIsoIdealOfDefinitionColimit`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSchemeSpectrumComparison.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSchemeSpectrumComparison.lean#L225). The attribute's comment: “the colimit over the ideals of definition is the formal spectrum of Stacks 0AIF”.
+**`AlgebraicGeometry.FormalSpace.QuotientSystem.formalSpectrumIsoIdealOfDefinitionColimit`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSchemeSpectrumComparison.lean, line 225](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSchemeSpectrumComparison.lean#L225). The attribute's comment: “the colimit over the ideals of definition is the formal spectrum of Stacks 0AIF”.
 
 > **Stacks 0AIE**, the colimit of the remark. The colimit of the represented quotient spectra
 > over the *ideals of definition* of a pre-admissible topological ring is the formal spectrum of
@@ -996,7 +996,7 @@ def QuotientSystem.formalSpectrumIsoIdealOfDefinitionColimit
     colimit D.idealOfDefinitionDiagram ≅ formalSpectrum D
 ```
 
-**`AlgebraicGeometry.FormalSpace.isIso_spfFormalSchemeFppfComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSchemeSpectrumComparisonIso.lean, line 406](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSchemeSpectrumComparisonIso.lean#L406). The attribute's comment: “h\_\{Spf A} = colim h\_\{Spec (A/I)} as fppf sheaves: the comparison morphism from the formal spectrum to the functor of points of the affine formal scheme is an isomorphism”.
+**`AlgebraicGeometry.FormalSpace.isIso_spfFormalSchemeFppfComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSchemeSpectrumComparisonIso.lean, line 406](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSchemeSpectrumComparisonIso.lean#L406). The attribute's comment: “h\_\{Spf A} = colim h\_\{Spec (A/I)} as fppf sheaves: the comparison morphism from the formal spectrum to the functor of points of the affine formal scheme is an isomorphism”.
 
 > **Stacks 0AIE, the colimit formula.** The comparison morphism from the formal spectrum of an
 > admissible topological ring `A` over a terminal base to the functor of points of the affine
@@ -1008,7 +1008,7 @@ theorem isIso_spfFormalSchemeFppfComparison (hterm : IsTerminal S)
     IsIso (spfFormalSchemeFppfComparison hA D)
 ```
 
-**`AlgebraicGeometry.FormalSpace.isClassical_formalSchemePointsFppfSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSchemeSpectrumComparisonIso.lean, line 446](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSchemeSpectrumComparisonIso.lean#L446). The attribute's comment: “the functor of points of an affine formal scheme over a terminal base is a classical affine formal algebraic space”.
+**`AlgebraicGeometry.FormalSpace.isClassical_formalSchemePointsFppfSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSchemeSpectrumComparisonIso.lean, line 446](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSchemeSpectrumComparisonIso.lean#L446). The attribute's comment: “the functor of points of an affine formal scheme over a terminal base is a classical affine formal algebraic space”.
 
 > **Stacks 0AIE, the type of the functor of points.** The functor of points of the affine
 > formal scheme `Spf A` of an admissible topological ring `A` over a terminal base is a
@@ -1029,7 +1029,7 @@ theorem isClassical_formalSchemePointsFppfSheaf (hterm : IsTerminal S)
     IsClassical B S hS (formalSchemePointsFppfSheaf B S hS (spfFormalScheme A hA))
 ```
 
-**`AlgebraicGeometry.FormalSpace.isAffineFormalAlgebraicSpace_formalSchemePointsFppfSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSchemeSpectrumComparisonIso.lean, line 458](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSchemeSpectrumComparisonIso.lean#L458). The attribute's comment: “the functor of points of an affine formal scheme over a terminal base is an affine formal algebraic space”.
+**`AlgebraicGeometry.FormalSpace.isAffineFormalAlgebraicSpace_formalSchemePointsFppfSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSchemeSpectrumComparisonIso.lean, line 458](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSchemeSpectrumComparisonIso.lean#L458). The attribute's comment: “the functor of points of an affine formal scheme over a terminal base is an affine formal algebraic space”.
 
 > **Stacks 0AIE.** The functor of points of an affine formal scheme over a terminal base is an
 > affine formal algebraic space over `S`; it is the affineness half of
@@ -1043,7 +1043,7 @@ theorem isAffineFormalAlgebraicSpace_formalSchemePointsFppfSheaf (hterm : IsTerm
       (formalSchemePointsFppfSheaf B S hS (spfFormalScheme A hA))
 ```
 
-**`AlgebraicGeometry.FormalSpace.isClassical_formalSpectrum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSpectrumClassical.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSpectrumClassical.lean#L137). The attribute's comment: “the formal spectrum of an admissible topological ring is a classical affine formal algebraic space”.
+**`AlgebraicGeometry.FormalSpace.isClassical_formalSpectrum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSpectrumClassical.lean, line 137](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSpectrumClassical.lean#L137). The attribute's comment: “the formal spectrum of an admissible topological ring is a classical affine formal algebraic space”.
 
 > **Stacks 0AIE.** Let `A` be an admissible topological ring over `S`. If the coproduct of the
 > spectra of the quotients of `A` by its weak ideals of definition lies in the chosen big fppf
@@ -1070,7 +1070,7 @@ theorem isClassical_formalSpectrum (hA : TopologicalRing.IsAdmissible A)
 
 [Tag 0AIF](https://stacks.math.columbia.edu/tag/0AIF) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.formalSpectrum`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSpectrum.lean, line 260](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSpectrum.lean#L260). The attribute's comment: “construction”.
+**`AlgebraicGeometry.FormalSpace.formalSpectrum`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSpectrum.lean, line 260](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSpectrum.lean#L260). The attribute's comment: “construction”.
 
 > The formal spectrum of a weakly admissible topological ring over `S`: the
 > fppf-sheaf colimit of its quotient spectra by weak ideals of definition.
@@ -1080,7 +1080,7 @@ public def formalSpectrum (D : QuotientSystem B S hS A) :
     Sheaf (BigFppfOver.topology B S hS) (Type (u + 1))
 ```
 
-**`AlgebraicGeometry.FormalSpace.isAffineFormalAlgebraicSpace_formalSpectrum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSpectrum.lean, line 385](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSpectrum.lean#L385). The attribute's comment: “affine formal algebraic space”.
+**`AlgebraicGeometry.FormalSpace.isAffineFormalAlgebraicSpace_formalSpectrum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSpectrum.lean, line 385](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSpectrum.lean#L385). The attribute's comment: “affine formal algebraic space”.
 
 > The formal spectrum is affine as a formal algebraic space over the base.
 
@@ -1092,7 +1092,7 @@ public theorem isAffineFormalAlgebraicSpace_formalSpectrum
     IsAffineFormalAlgebraicSpace B S hS (formalSpectrum D)
 ```
 
-**`AlgebraicGeometry.FormalSpace.existsUnique_formalSpectrumMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSpectrum.lean, line 786](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSpectrum.lean#L786). The attribute's comment: “quotient-stage characterization”.
+**`AlgebraicGeometry.FormalSpace.existsUnique_formalSpectrumMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSpectrum.lean, line 786](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSpectrum.lean#L786). The attribute's comment: “quotient-stage characterization”.
 
 > The map of formal spectra is uniquely characterized by its effect on every
 > quotient stage. This is the universal-property construction of `Spf(f)`.
@@ -1115,7 +1115,7 @@ public theorem existsUnique_formalSpectrumMap
         formalSpectrumInclusion D (OrderDual.toDual J)
 ```
 
-**`AlgebraicGeometry.FormalSpace.formalSpectrumMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSpectrum.lean, line 814](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSpectrum.lean#L814). The attribute's comment: “functorial map”.
+**`AlgebraicGeometry.FormalSpace.formalSpectrumMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSpectrum.lean, line 814](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSpectrum.lean#L814). The attribute's comment: “functorial map”.
 
 > The canonical contravariant map on formal spectra.
 
@@ -1127,7 +1127,7 @@ public noncomputable def formalSpectrumMap
     (f : ContinuousHom D E) : formalSpectrum E ⟶ formalSpectrum D
 ```
 
-**`AlgebraicGeometry.FormalSpace.formalSpectrumMap_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSpectrum.lean, line 840](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSpectrum.lean#L840). The attribute's comment: “identity law”.
+**`AlgebraicGeometry.FormalSpace.formalSpectrumMap_id`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSpectrum.lean, line 840](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSpectrum.lean#L840). The attribute's comment: “identity law”.
 
 > The formal-spectrum map of the identity homomorphism is the identity.
 
@@ -1140,7 +1140,7 @@ public theorem formalSpectrumMap_id
     formalSpectrumMap hA f = 𝟙 (formalSpectrum D)
 ```
 
-**`AlgebraicGeometry.FormalSpace.formalSpectrumMap_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSpectrum.lean, line 876](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSpectrum.lean#L876). The attribute's comment: “composition law”.
+**`AlgebraicGeometry.FormalSpace.formalSpectrumMap_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSpectrum.lean, line 876](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/FormalSpectrum.lean#L876). The attribute's comment: “composition law”.
 
 > Formal spectrum reverses composition of continuous maps over the base.
 
@@ -1160,7 +1160,7 @@ public theorem formalSpectrumMap_comp
       formalSpectrumMap hA gf
 ```
 
-**`AlgebraicGeometry.FormalSpace.formalSpectrumMap_comp_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigFlatComposition.lean, line 181](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/RigFlatComposition.lean#L181). The attribute's comment: “composition law for the composite continuous hom”.
+**`AlgebraicGeometry.FormalSpace.formalSpectrumMap_comp_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/RigFlatComposition.lean, line 186](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/RigFlatComposition.lean#L186). The attribute's comment: “composition law for the composite continuous hom”.
 
 > **Stacks 0AIF.** The formal spectrum turns `ContinuousHom.comp` into composition of
 > morphisms of formal spectra, in the direction that reverses the order.
@@ -1177,7 +1177,7 @@ theorem formalSpectrumMap_comp_eq (hw₂ : TopologicalRing.IsWeaklyAdmissible A�
 
 [Tag 0AN0](https://stacks.math.columbia.edu/tag/0AN0) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.exists_continuous_ringEquiv_of_formalSpectrum_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/PresentingRingUniqueness.lean, line 299](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/PresentingRingUniqueness.lean#L299). The attribute's comment: “the isomorphism of topological rings underlying an isomorphism of formal spectra, from the existence and uniqueness of the two continuous homomorphisms”.
+**`AlgebraicGeometry.FormalSpace.exists_continuous_ringEquiv_of_formalSpectrum_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/PresentingRingUniqueness.lean, line 299](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/PresentingRingUniqueness.lean#L299). The attribute's comment: “the isomorphism of topological rings underlying an isomorphism of formal spectra, from the existence and uniqueness of the two continuous homomorphisms”.
 
 > **Stacks 0AN0, applied in both directions.** An isomorphism of the formal spectra of two
 > weakly admissible topological rings over `S` is the formal spectrum of a ring equivalence
@@ -1198,7 +1198,7 @@ theorem exists_continuous_ringEquiv_of_formalSpectrum_iso
           Continuous φ ∧ Continuous φ.symm
 ```
 
-**`AlgebraicGeometry.FormalSpace.existsUnique_continuousHom_formalSpectrumMap_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SpectrumFullyFaithful.lean, line 549](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/SpectrumFullyFaithful.lean#L549). References: EGA I (10.4.6), “X affine formal”.
+**`AlgebraicGeometry.FormalSpace.existsUnique_continuousHom_formalSpectrumMap_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/SpectrumFullyFaithful.lean, line 549](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/SpectrumFullyFaithful.lean#L549). References: EGA I (10.4.6), “X affine formal”.
 
 > **Stacks 0AN0.** Let `A` and `C` be weakly admissible topological rings over `S`. Every
 > morphism `f : Spf C ⟶ Spf A` of affine formal algebraic spaces over `S` is `Spf (f^♯)` for a
@@ -1216,7 +1216,7 @@ theorem existsUnique_continuousHom_formalSpectrumMap_eq
 
 [Tag 0AIG](https://stacks.math.columbia.edu/tag/0AIG) in the Stacks Project.
 
-**`AlgebraicGeometry.FormalSpace.relativelyRepresentable_of_isAffineFormalAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/QuasiFiniteRepresentable.lean, line 331](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/QuasiFiniteRepresentable.lean#L331).
+**`AlgebraicGeometry.FormalSpace.relativelyRepresentable_of_isAffineFormalAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/QuasiFiniteRepresentable.lean, line 334](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/QuasiFiniteRepresentable.lean#L334).
 
 > Let `S` be a scheme contained in a big fppf site `B` and let
 > `f : X ⟶ Y` be a morphism of presheaves on the big fppf site of `S`. If `X` is an affine
@@ -1242,7 +1242,7 @@ theorem relativelyRepresentable_of_isAffineFormalAlgebraicSpace
     yoneda.relativelyRepresentable f
 ```
 
-**`AlgebraicGeometry.FormalSpace.relativelyRepresentable_of_isAffineFormalAlgebraicSpaceULift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/QuasiFiniteRepresentableULift.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/QuasiFiniteRepresentableULift.lean#L112). The attribute's comment: “the tag read at the value universe Type (u+1), where a formal algebraic space and the affine formal algebraic spaces of its atlas of Definition 0AIM live, so that the tag applies to an atlas member. Nothing is assumed beyond the Type u reading: the smallness that one asks of its affine formal algebraic space is supplied by the set-theoretic condition of Stacks 0AIS, which an affine formal algebraic space carries, and the smallness of the base change by its being an algebraic space”.
+**`AlgebraicGeometry.FormalSpace.relativelyRepresentable_of_isAffineFormalAlgebraicSpaceULift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/QuasiFiniteRepresentableULift.lean, line 112](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/Affine/QuasiFiniteRepresentableULift.lean#L112). The attribute's comment: “the tag read at the value universe Type (u+1), where a formal algebraic space and the affine formal algebraic spaces of its atlas of Definition 0AIM live, so that the tag applies to an atlas member. Nothing is assumed beyond the Type u reading: the smallness that one asks of its affine formal algebraic space is supplied by the set-theoretic condition of Stacks 0AIS, which an affine formal algebraic space carries, and the smallness of the base change by its being an algebraic space”.
 
 > Let `S` be a scheme contained in a big fppf site `B`, let `X` be an affine formal algebraic
 > space over `S` and let `f : X ⟶ Y` be a morphism to a presheaf of `Type (u + 1)` on the big fppf
@@ -1262,7 +1262,7 @@ theorem relativelyRepresentable_of_isAffineFormalAlgebraicSpaceULift
     uliftYoneda.{u + 1}.relativelyRepresentable f
 ```
 
-**`AlgebraicGeometry.FormalSpace.relativelyRepresentable_of_isEtale_of_isAffineFormal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AtlasChartRepresentable.lean, line 49](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalSpace/AtlasChartRepresentable.lean#L49). The attribute's comment: “the case of an etale morphism, at the value universe Type (u+1) where a formal algebraic space and the affine formal algebraic spaces of its atlas of Definition 0AIM live. Nothing is assumed beyond the tag: an etale morphism of schemes is locally of finite type and locally quasi-finite by Stacks 03WS, which is the tag's hypothesis”.
+**`AlgebraicGeometry.FormalSpace.relativelyRepresentable_of_isEtale_of_isAffineFormal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalSpace/AtlasChartRepresentable.lean, line 49](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalSpace/AtlasChartRepresentable.lean#L49). The attribute's comment: “the case of an etale morphism, at the value universe Type (u+1) where a formal algebraic space and the affine formal algebraic spaces of its atlas of Definition 0AIM live. Nothing is assumed beyond the tag: an etale morphism of schemes is locally of finite type and locally quasi-finite by Stacks 03WS, which is the tag's hypothesis”.
 
 > A morphism `g : X ⟶ Y` of fppf sheaves on the big fppf site of `S` whose source is an affine
 > formal algebraic space, which is representable by algebraic spaces and étale, is representable by
@@ -1284,4 +1284,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 87.9, Tag 0AI6](https://stacks.math.columbia.edu/tag/0AI6)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

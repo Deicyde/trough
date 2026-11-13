@@ -8,13 +8,13 @@ proof: formalized
 
 # 66.34 Quotients by free actions
 
-Section 66.34 of the Stacks Project, [Tag 071R](https://stacks.math.columbia.edu/tag/071R). 1 tag here is carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 66.34 of the Stacks Project, [Tag 071R](https://stacks.math.columbia.edu/tag/071R). 1 tag here is carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 071S, a lemma
 
 [Tag 071S](https://stacks.math.columbia.edu/tag/071S) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isAlgebraicSpace_orbitQuotientSheaf_points_of_free`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/FreeActionOrbitQuotient.lean, line 279](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/FreeActionOrbitQuotient.lean#L279). The attribute's comment: “for an action of the abstract group on an object of the big fppf site in place of an arbitrary algebraic space, and with freeness read on the points over the test schemes with nonempty underlying space”.
+**`AlgebraicGeometry.Space.isAlgebraicSpace_orbitQuotientSheaf_points_of_free`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/FreeActionOrbitQuotient.lean, line 279](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/FreeActionOrbitQuotient.lean#L279). The attribute's comment: “for an action of the abstract group on an object of the big fppf site in place of an arbitrary algebraic space, and with freeness read on the points over the test schemes with nonempty underlying space”.
 
 > **Stacks 071S** for an action on an object of a big fppf site over `S`: the quotient of `V`
 > by a free action of an abstract group `G`, formed as in the source as the fppf sheafification
@@ -32,7 +32,7 @@ theorem isAlgebraicSpace_orbitQuotientSheaf_points_of_free
         ((Over.post B.inclusion).obj V)) hnat).obj
 ```
 
-**`AlgebraicGeometry.Space.isAlgebraicSpace_actionQuotient_of_actsFreelyOnNonemptyPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/FreeActionQuotient.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/FreeActionQuotient.lean#L148). The attribute's comment: “for an action of the abstract group on an object of the big fppf site in place of an arbitrary algebraic space, the quotient being the sheaf quotient of the graph relation of the action, and freeness being read on the points over the test schemes with nonempty underlying space”.
+**`AlgebraicGeometry.Space.isAlgebraicSpace_actionQuotient_of_actsFreelyOnNonemptyPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/FreeActionQuotient.lean, line 148](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/FreeActionQuotient.lean#L148). The attribute's comment: “for an action of the abstract group on an object of the big fppf site in place of an arbitrary algebraic space, the quotient being the sheaf quotient of the graph relation of the action, and freeness being read on the points over the test schemes with nonempty underlying space”.
 
 > **Stacks 071S** for an action on an object of a big fppf site over `S`: the quotient of `V`
 > by a free action of an abstract group `G` is an algebraic space over `S`.
@@ -49,7 +49,7 @@ theorem isAlgebraicSpace_actionQuotient_of_actsFreelyOnNonemptyPoints
     IsAlgebraicSpace B S hS (actionQuotient G B hS V a)
 ```
 
-**`AlgebraicGeometry.Space.isAlgebraicSpace_orbitQuotientSheaf_of_isFreeOnNonemptyPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/FreeActionSpaceQuotient.lean, line 1002](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/FreeActionSpaceQuotient.lean#L1002). The attribute's comment: “with freeness read on the points over the test objects with nonempty underlying scheme”.
+**`AlgebraicGeometry.Space.isAlgebraicSpace_orbitQuotientSheaf_of_isFreeOnNonemptyPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/FreeActionSpaceQuotient.lean, line 1002](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/FreeActionSpaceQuotient.lean#L1002). The attribute's comment: “with freeness read on the points over the test objects with nonempty underlying scheme”.
 
 > **Stacks 071S.** Let `S` be a scheme, `X` an algebraic space over `S` and `G` an abstract
 > group acting on `X` by a natural pointwise action. If the action is free then the quotient
@@ -81,4 +81,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 66.34, Tag 071R](https://stacks.math.columbia.edu/tag/071R)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

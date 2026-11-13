@@ -8,13 +8,13 @@ proof: formalized
 
 # 47.11 Depth
 
-Section 47.11 of the Stacks Project, [Tag 0AVY](https://stacks.math.columbia.edu/tag/0AVY). 6 tags here are carried by 15 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 47.11 of the Stacks Project, [Tag 0AVY](https://stacks.math.columbia.edu/tag/0AVY). 6 tags here are carried by 18 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0AVZ, a lemma
 
 [Tag 0AVZ](https://stacks.math.columbia.edu/tag/0AVZ) in the Stacks Project.
 
-**`ModuleCat.subsingleton_ext_of_lt_ideal_depth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DepthLemmas/Ext.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/DepthLemmas/Ext.lean#L131). The attribute's comment: “Ext vanishing below depth for modules annihilated by an ideal power”. References: EGA 0 (16.4.4), “Ext^i(k”; SGA 2 III (2.2), “Clause (a), special case”; SGA 2 III (2.4), “(4)⇒(2)”; SGA 2 III (2.8), “Ext^i(k”; SGA 2 IV (5.3), “Ext^i\_A(k, special case”.
+**`ModuleCat.subsingleton_ext_of_lt_ideal_depth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/DepthLemmas/Ext.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/DepthLemmas/Ext.lean#L131). The attribute's comment: “Ext vanishing below depth for modules annihilated by an ideal power”. References: EGA 0 (16.4.4), “Ext^i(k”; SGA 2 III (2.2), “Clause (a), special case”; SGA 2 III (2.4), “(4)⇒(2)”; SGA 2 III (2.8), “Ext^i(k”; SGA 2 IV (5.3), “Ext^i\_A(k, special case”.
 
 > `Ext^i_R(N, M)` vanishes below the `I`-depth of `M` for **every** finite module `N`
 > annihilated by a power of `I`, not just for `N = R ⧸ I`: a power of `I` annihilating `N` forces
@@ -29,7 +29,7 @@ theorem ModuleCat.subsingleton_ext_of_lt_ideal_depth [IsNoetherianRing R] [Small
     Subsingleton (Ext N M i)
 ```
 
-**`Module.subsingleton_ext_of_lt_depth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/DepthVanishing/DepthEqLocalCohomology.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/DepthVanishing/DepthEqLocalCohomology.lean#L79). The attribute's comment: “Ext vanishing below depth for modules annihilated by an ideal power”. References: SGA 2 III (2.2), “(a), Noetherian f.g.”; SGA 2 IV (5.3), “Ext^i(M,A)=0 for i`<`n”; SGA 2 III (3.3), “affine (iv)⇒(v)”.
+**`Module.subsingleton_ext_of_lt_depth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/DepthVanishing/DepthEqLocalCohomology.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/DepthVanishing/DepthEqLocalCohomology.lean#L79). The attribute's comment: “Ext vanishing below depth for modules annihilated by an ideal power”. References: SGA 2 III (2.2), “(a), Noetherian f.g.”; SGA 2 IV (5.3), “Ext^i(M,A)=0 for i`<`n”; SGA 2 III (3.3), “affine (iv)⇒(v)”.
 
 > Ext from a finite module annihilated by a power of `I` vanishes below the `I`-depth.
 
@@ -44,7 +44,7 @@ theorem subsingleton_ext_of_lt_depth
     Subsingleton (Ext N M i)
 ```
 
-**`Stacks.LocalCohomology.depth_eq_sInf_nontrivial_localCohomologyWithSupportIn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/DepthVanishing/DepthEqLocalCohomology.lean, line 417](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/DepthVanishing/DepthEqLocalCohomology.lean#L417). The attribute's comment: “equality of depth and the first nonzero local-cohomology degree”.
+**`Stacks.LocalCohomology.depth_eq_sInf_nontrivial_localCohomologyWithSupportIn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/DepthVanishing/DepthEqLocalCohomology.lean, line 417](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/DepthVanishing/DepthEqLocalCohomology.lean#L417). The attribute's comment: “equality of depth and the first nonzero local-cohomology degree”.
 
 > Depth is the first degree with nonzero local cohomology supported on `V(I)`.
 
@@ -62,7 +62,7 @@ theorem depth_eq_sInf_nontrivial_localCohomologyWithSupportIn
               (i : ℤ))}
 ```
 
-**`Stacks.LocalCohomology.depth_eq_sInf_nontrivial_ext_and_localCohomology_and_subsingleton_ext`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/DepthVanishing/DepthEqLocalCohomology.lean, line 576](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/LocalCohomology/DepthVanishing/DepthEqLocalCohomology.lean#L576). The attribute's comment: “the three-way equality and the moreover clause conjoined, with the local cohomology of the third quantity in the RΓ\_\{V(I)} model”. References: SGA 2 III (2.3), “special case”; SGA 2 III (2.4), “(2)⇔(4)”; SGA 2 IV (5.3), “Ext^i\_A(k, special case”; SGA 2 VII (1.2), “(i) ⇔ (iii)”.
+**`Stacks.LocalCohomology.depth_eq_sInf_nontrivial_ext_and_localCohomology_and_subsingleton_ext`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/LocalCohomology/DepthVanishing/DepthEqLocalCohomology.lean, line 576](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/LocalCohomology/DepthVanishing/DepthEqLocalCohomology.lean#L576). The attribute's comment: “the three-way equality and the moreover clause conjoined, with the local cohomology of the third quantity in the RΓ\_\{V(I)} model”. References: SGA 2 III (2.3), “special case”; SGA 2 III (2.4), “(2)⇔(4)”; SGA 2 IV (5.3), “Ext^i\_A(k, special case”; SGA 2 VII (1.2), “(i) ⇔ (iii)”.
 
 > Let `R` be a Noetherian ring, `I ⊆ R` an ideal and `M` a finite
 > `R`-module with `IM ≠ M`. Then the three integers of the source are equal — `depth_I(M)`, the
@@ -93,7 +93,7 @@ theorem depth_eq_sInf_nontrivial_ext_and_localCohomology_and_subsingleton_ext
 
 Declarations registered for the tag:
 
-- [`Module.depth_eq_sInf_nontrivial_ext`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/DepthLemmas/Ext.lean#L152), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/RingTheory/Dualizing/LocalCohomologyNoetherian/Depth.lean, line 197](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/LocalCohomologyNoetherian/Depth.lean#L197) (StacksFrontier): “equality of depth and the first nonzero Ext degree”.
+- [`Module.depth_eq_sInf_nontrivial_ext`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/DepthLemmas/Ext.lean#L152), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/RingTheory/Dualizing/LocalCohomologyNoetherian/Depth.lean, line 197](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/LocalCohomologyNoetherian/Depth.lean#L197) (StacksFrontier): “equality of depth and the first nonzero Ext degree”.
 
 ## Tag 0BUV, a lemma
 
@@ -101,7 +101,7 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`Module.min_depth_le_depth_of_exact`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Depth/ShortExact.lean#L279), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/RingTheory/Dualizing/Depth.lean, line 313](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/Depth.lean#L313) (StacksFrontier): “middle\_depth\_bound, quotient\_depth\_bound and submodule\_depth\_bound: the three conjuncts of this inequality”.
+- [`Module.min_depth_le_depth_of_exact`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Depth/ShortExact.lean#L279), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/RingTheory/Dualizing/Depth.lean, line 313](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/Depth.lean#L313) (StacksFrontier): “middle\_depth\_bound, quotient\_depth\_bound and submodule\_depth\_bound: the three conjuncts of this inequality”.
 
 ## Tag 0BUW, a lemma
 
@@ -109,13 +109,13 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`Module.depth_quotSMulTop_succ_eq_depth_and_exists_isRegular_append`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Depth/Criteria.lean#L612), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/RingTheory/Dualizing/Depth.lean, line 318](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/Depth.lean#L318) (StacksFrontier).
+- [`Module.depth_quotSMulTop_succ_eq_depth_and_exists_isRegular_append`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Depth/Criteria.lean#L612), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/RingTheory/Dualizing/Depth.lean, line 318](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/Depth.lean#L318) (StacksFrontier).
 
 ## Tag 0BUX, a lemma
 
 [Tag 0BUX](https://stacks.math.columbia.edu/tag/0BUX) in the Stacks Project.
 
-**`Dualizing.supportDim_quotient_add_depth_eq_supportDim`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/Depth.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/Depth.lean#L187). References: EGA 0 (16.5.9), “r = depth\_p(M)”.
+**`Dualizing.supportDim_quotient_add_depth_eq_supportDim`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/Depth.lean, line 187](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/Depth.lean#L187). References: EGA 0 (16.5.9), “r = depth\_p(M)”.
 
 > **Stacks Project, Tag 0BUX.** The depth of a finite Cohen--Macaulay module
 > along a proper ideal is the drop in the dimension of its support on passing to
@@ -135,7 +135,7 @@ theorem supportDim_quotient_add_depth_eq_supportDim
 
 [Tag 0BUY](https://stacks.math.columbia.edu/tag/0BUY) in the Stacks Project.
 
-**`Dualizing.ringKrullDim_fiber_le_depth_add_ringKrullDim_quotient_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/Depth.lean, line 282](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/Depth.lean#L282).
+**`Dualizing.ringKrullDim_fiber_le_depth_add_ringKrullDim_quotient_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/Depth.lean, line 282](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/Depth.lean#L282).
 
 > Let `R → S` be a flat local homomorphism with Noetherian local target. If its closed
 > fibre is Cohen--Macaulay, then the depth of `S` along an ideal `I` is at least the difference
@@ -159,7 +159,7 @@ theorem ringKrullDim_fiber_le_depth_add_ringKrullDim_quotient_of_flat
 
 [Tag 0AW0](https://stacks.math.columbia.edu/tag/0AW0) in the Stacks Project.
 
-**`Stacks.Duality.supportLocalCohomology_torsion_higher`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DivideByTorsion.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/DivideByTorsion.lean#L155). The attribute's comment: “part (2), higher cohomology of the torsion submodule”.
+**`Stacks.Duality.supportLocalCohomology_torsion_higher`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DivideByTorsion.lean, line 155](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/DivideByTorsion.lean#L155). The attribute's comment: “part (2), higher cohomology of the torsion submodule”.
 
 > **Stacks 0AW0, part (2).** Higher local cohomology with support in `V(I)` of torsion
 > vanishes: `H^p_Z(M[I^∞]) = 0` for `p > 0`.
@@ -173,7 +173,7 @@ theorem supportLocalCohomology_torsion_higher
       (ModuleCat.of A (Ideal.primaryComponent M I)))
 ```
 
-**`Stacks.Duality.supportLocalCohomology_quotient_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DivideByTorsion.lean, line 325](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/DivideByTorsion.lean#L325). The attribute's comment: “part (2), degree zero”.
+**`Stacks.Duality.supportLocalCohomology_quotient_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DivideByTorsion.lean, line 325](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/DivideByTorsion.lean#L325). The attribute's comment: “part (2), degree zero”.
 
 > **Stacks 0AW0, part (2).** Quotienting by `I`-power torsion kills zeroth local cohomology
 > with support in `V(I)`: `H^0_Z(M/M[I^∞]) = 0`.
@@ -186,7 +186,7 @@ theorem supportLocalCohomology_quotient_zero
       (ModuleCat.of A (M ⧸ Ideal.primaryComponent M I)))
 ```
 
-**`Stacks.Duality.idealLocalCohomology_zero_iso_torsion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TorsionQuotient.lean, line 298](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/TorsionQuotient.lean#L298). The attribute's comment: “H^0\_I is the torsion submodule”.
+**`Stacks.Duality.idealLocalCohomology_zero_iso_torsion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TorsionQuotient.lean, line 299](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/TorsionQuotient.lean#L299). The attribute's comment: “H^0\_I is the torsion submodule”.
 
 > **Stacks 0AW0.** The zeroth local cohomology `H^0_I(M)` of `M` for the `I`-power torsion
 > theory is the `I`-power-torsion submodule `M[I^∞]` of `M`, by an isomorphism compatible with
@@ -202,7 +202,7 @@ theorem idealLocalCohomology_zero_iso_torsion
         idealLocalCohomologyToModule.{u, v} A I hI M
 ```
 
-**`Stacks.Duality.idealLocalCohomology_quotient_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TorsionQuotient.lean, line 325](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/TorsionQuotient.lean#L325). The attribute's comment: “part (1), degree zero”.
+**`Stacks.Duality.idealLocalCohomology_quotient_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TorsionQuotient.lean, line 326](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/TorsionQuotient.lean#L326). The attribute's comment: “part (1), degree zero”.
 
 > **Stacks 0AW0, part (1).** Quotienting by the `I`-power-torsion submodule kills the zeroth
 > local cohomology for the `I`-power torsion theory: `H^0_I(M/M[I^∞]) = 0`.
@@ -215,7 +215,7 @@ theorem idealLocalCohomology_quotient_zero
       (ModuleCat.of A (M ⧸ Ideal.primaryComponent M I)))
 ```
 
-**`Stacks.Duality.idealLocalCohomology_torsion_higher`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TorsionQuotient.lean, line 344](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/TorsionQuotient.lean#L344). The attribute's comment: “part (1), higher cohomology of the torsion submodule”.
+**`Stacks.Duality.idealLocalCohomology_torsion_higher`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TorsionQuotient.lean, line 346](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/TorsionQuotient.lean#L346). The attribute's comment: “part (1), higher cohomology of the torsion submodule”.
 
 > **Stacks 0AW0, part (1).** Over a Noetherian ring the higher local cohomology of the
 > `I`-power-torsion submodule vanishes for the `I`-power torsion theory:
@@ -223,7 +223,8 @@ theorem idealLocalCohomology_quotient_zero
 >
 > The source states this for an arbitrary ring. The Noetherian hypothesis added here cannot be
 > removed: for a finitely generated ideal of a non-Noetherian ring the assertion is false, by
-> part (3) of [Stacks, Tag 0A6P]. See the module docstring.
+> part (3) of [Stacks, Tag 0A6P]; the counterexample is
+> `Stacks.Duality.exists_not_isZero_idealLocalCohomology_primaryComponent`.
 
 ```lean
 theorem idealLocalCohomology_torsion_higher
@@ -234,7 +235,7 @@ theorem idealLocalCohomology_torsion_higher
       (ModuleCat.of A (Ideal.primaryComponent M I)))
 ```
 
-**`Stacks.Duality.idealLocalCohomology_quotient_map_higher`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TorsionQuotient.lean, line 373](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/TorsionQuotient.lean#L373). The attribute's comment: “part (1), higher cohomology of the quotient”.
+**`Stacks.Duality.idealLocalCohomology_quotient_map_higher`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TorsionQuotient.lean, line 376](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/TorsionQuotient.lean#L376). The attribute's comment: “part (1), higher cohomology of the quotient”.
 
 > **Stacks 0AW0, part (1).** Over a Noetherian ring the quotient map `M ⟶ M/M[I^∞]` induces
 > an isomorphism `H^p_I(M) ≅ H^p_I(M/M[I^∞])` in every positive degree.
@@ -242,7 +243,8 @@ theorem idealLocalCohomology_torsion_higher
 > The source states this for an arbitrary ring. The Noetherian hypothesis added here cannot be
 > removed: taking an `I`-power-torsion `M`, so that `M/M[I^∞] = 0`, turns the assertion into the
 > vanishing of `Stacks.Duality.idealLocalCohomology_torsion_higher`, which part (3) of
-> [Stacks, Tag 0A6P] refutes over a non-Noetherian ring. See the module docstring.
+> [Stacks, Tag 0A6P] refutes over a non-Noetherian ring; the counterexample is
+> `Stacks.Duality.exists_not_isIso_idealLocalCohomology_map_mkQ`.
 
 ```lean
 theorem idealLocalCohomology_quotient_map_higher
@@ -253,7 +255,7 @@ theorem idealLocalCohomology_quotient_map_higher
       (ModuleCat.ofHom (Ideal.primaryComponent M I).mkQ))
 ```
 
-**`Stacks.Duality.supportLocalCohomology_quotient_map_higher`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TorsionQuotient.lean, line 420](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/TorsionQuotient.lean#L420). The attribute's comment: “part (2), higher cohomology of the quotient”.
+**`Stacks.Duality.supportLocalCohomology_quotient_map_higher`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TorsionQuotient.lean, line 423](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/TorsionQuotient.lean#L423). The attribute's comment: “part (2), higher cohomology of the quotient”.
 
 > **Stacks 0AW0, part (2).** The quotient map `M ⟶ M/M[I^∞]` induces an isomorphism
 > `H^p_Z(M) ≅ H^p_Z(M/M[I^∞])` in every positive degree.
@@ -266,7 +268,7 @@ theorem supportLocalCohomology_quotient_map_higher
       (ModuleCat.ofHom (Ideal.primaryComponent M I).mkQ))
 ```
 
-**`Stacks.Duality.idealLocalCohomology_zero_iso_supportLocalCohomology_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TorsionQuotient.lean, line 439](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/TorsionQuotient.lean#L439). The attribute's comment: “H^0\_I = H^0\_Z”.
+**`Stacks.Duality.idealLocalCohomology_zero_iso_supportLocalCohomology_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TorsionQuotient.lean, line 442](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/TorsionQuotient.lean#L442). The attribute's comment: “H^0\_I = H^0\_Z”.
 
 > **Stacks 0AW0.** For a finitely generated ideal `I` and `Z = V(I)` the two zeroth local
 > cohomology modules agree, `H^0_I(M) = H^0_Z(M)`, compatibly with their canonical maps down
@@ -282,7 +284,7 @@ theorem idealLocalCohomology_zero_iso_supportLocalCohomology_zero
         idealLocalCohomologyToModule.{u, v} A I hI M
 ```
 
-**`Stacks.Duality.localCohomology_divide_by_torsion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TorsionQuotient.lean, line 472](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Dualizing/TorsionQuotient.lean#L472). The attribute's comment: “the preamble and both parts conjoined, with the Noetherian hypothesis that the two higher-degree clauses of part (1) require and the source lacks”.
+**`Stacks.Duality.localCohomology_divide_by_torsion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TorsionQuotient.lean, line 477](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/TorsionQuotient.lean#L477). The attribute's comment: “the preamble and both parts conjoined, over a Noetherian ring”.
 
 > **Stacks 0AW0, the preamble and both parts.** Let `A` be a ring, let `I ⊆ A` be a finitely
 > generated ideal, let `M` be an `A`-module and let `Z = V(I)`. Then `H^0_I(M) = H^0_Z(M)`; the
@@ -299,7 +301,10 @@ theorem idealLocalCohomology_zero_iso_supportLocalCohomology_zero
 > preamble and the whole of part (2) — holds over an arbitrary ring, and is stated that way by the
 > eight declarations this conjoins, each of which carries the tag for its own clause; they are
 > listed in the module docstring and in that of
-> `StacksFrontier.AlgebraicGeometry.Duality.DivideByTorsion`.
+> `StacksFrontier.AlgebraicGeometry.Duality.DivideByTorsion`. The same statement over an arbitrary
+> ring, with the Noetherian hypothesis attached to those two clauses alone, conjoined with the
+> counterexamples to them, is
+> `Stacks.Duality.localCohomology_divide_by_torsion_corrected_and_counterexample`.
 
 ```lean
 theorem localCohomology_divide_by_torsion
@@ -327,6 +332,85 @@ theorem localCohomology_divide_by_torsion
           (ModuleCat.of A (Ideal.primaryComponent M I))))
 ```
 
+**`Stacks.Duality.exists_not_isZero_idealLocalCohomology_primaryComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TorsionQuotientCounterexample.lean, line 330](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/TorsionQuotientCounterexample.lean#L330). The attribute's comment: “counterexample to part (1), higher cohomology of the torsion submodule, over a non-Noetherian ring”.
+
+> **Stacks 0AW0, part (1), the printed clause `H^p_I(N) = 0` is false.** There are a ring `A`,
+> a finitely generated (indeed principal) ideal `I`, a module `M` and a degree `p > 0` with
+> `H^p_I(M[I^∞]) ≠ 0`. The ring is necessarily not Noetherian, by
+> `Stacks.Duality.idealLocalCohomology_torsion_higher`.
+
+```lean
+theorem exists_not_isZero_idealLocalCohomology_primaryComponent :
+    ∃ (A : Type) (_ : CommRing A) (I : Ideal A) (hI : I.FG) (M : ModuleCat.{0} A) (p : ℤ),
+      0 < p ∧ ¬ IsZero ((idealLocalCohomology.{0, 0} A I hI p).obj
+        (ModuleCat.of A (Ideal.primaryComponent M I)))
+```
+
+**`Stacks.Duality.exists_not_isIso_idealLocalCohomology_map_mkQ`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TorsionQuotientCounterexample.lean, line 350](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/TorsionQuotientCounterexample.lean#L350). The attribute's comment: “counterexample to part (1), higher cohomology of the quotient, over a non-Noetherian ring”.
+
+> **Stacks 0AW0, part (1), the printed clause `H^p_I(M) = H^p_I(M/M[I^∞])` is false.** There
+> are a ring `A`, a finitely generated (indeed principal) ideal `I`, a module `M` and a degree
+> `p > 0` for which the quotient map `M ⟶ M/M[I^∞]` does not induce an isomorphism on `H^p_I`.
+> The ring is necessarily not Noetherian, by
+> `Stacks.Duality.idealLocalCohomology_quotient_map_higher`.
+
+```lean
+theorem exists_not_isIso_idealLocalCohomology_map_mkQ :
+    ∃ (A : Type) (_ : CommRing A) (I : Ideal A) (hI : I.FG) (M : ModuleCat.{0} A) (p : ℤ),
+      0 < p ∧ ¬ IsIso ((idealLocalCohomology.{0, 0} A I hI p).map
+        (ModuleCat.ofHom (Ideal.primaryComponent M I).mkQ))
+```
+
+**`Stacks.Duality.localCohomology_divide_by_torsion_corrected_and_counterexample`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Dualizing/TorsionQuotientCounterexample.lean, line 394](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Dualizing/TorsionQuotientCounterexample.lean#L394). The attribute's comment: “the statement with part (1) in positive degrees over a Noetherian ring, and counterexamples to part (1) in positive degrees over a non-Noetherian ring”.
+
+> **Stacks 0AW0, corrected, with the counterexample to the printed form.** Let `A` be a ring,
+> `I ⊆ A` a finitely generated ideal, `M` an `A`-module and `Z = V(I)`. Then
+> `H^0_I(M) = H^0_Z(M)`, the common value `N` being the `I`-power-torsion submodule `M[I^∞]`
+> (both identifications compatible with the canonical maps down to `M`), and, writing
+> `M' = M/N`,
+>
+> 1. `H^0_I(M') = 0`, and, when `A` is Noetherian, `H^p_I(M) = H^p_I(M')` and `H^p_I(N) = 0`
+>    for all `p > 0`;
+> 2. `H^0_Z(M') = 0`, `H^p_Z(M) = H^p_Z(M')` and `H^p_Z(N) = 0` for all `p > 0`.
+>
+> The source states the two positive-degree assertions of part (1) for every ring. They fail in
+> that generality: the last two conjuncts exhibit a ring, a principal ideal, a module and a
+> positive degree for which `H^p_I(M[I^∞]) ≠ 0`, and likewise one for which the quotient map
+> `M ⟶ M/M[I^∞]` is not an isomorphism on `H^p_I`. Everything else is stated, and holds, over an
+> arbitrary ring.
+
+```lean
+theorem localCohomology_divide_by_torsion_corrected_and_counterexample :
+    (∀ (A : Type u) [CommRing A] (I : Ideal A) (hI : I.FG) (M : ModuleCat.{max u v} A),
+      (∃ e : (idealLocalCohomology.{u, v} A I hI 0).obj M ≅
+          (supportLocalCohomology.{u, v} A I hI 0).obj M,
+        e.hom ≫ supportLocalCohomologyToModule.{u, v} A I hI M =
+          idealLocalCohomologyToModule.{u, v} A I hI M) ∧
+      (∃ e : (idealLocalCohomology.{u, v} A I hI 0).obj M ≅
+          ModuleCat.of A (Ideal.primaryComponent M I),
+        e.hom ≫ ModuleCat.ofHom (Submodule.subtype (Ideal.primaryComponent M I)) =
+          idealLocalCohomologyToModule.{u, v} A I hI M) ∧
+      (IsZero ((idealLocalCohomology.{u, v} A I hI 0).obj
+            (ModuleCat.of A (M ⧸ Ideal.primaryComponent M I))) ∧
+        (IsNoetherianRing A →
+          (∀ p : ℤ, 0 < p → IsIso ((idealLocalCohomology.{u, v} A I hI p).map
+            (ModuleCat.ofHom (Ideal.primaryComponent M I).mkQ))) ∧
+          ∀ p : ℤ, 0 < p → IsZero ((idealLocalCohomology.{u, v} A I hI p).obj
+            (ModuleCat.of A (Ideal.primaryComponent M I))))) ∧
+      (IsZero ((supportLocalCohomology.{u, v} A I hI 0).obj
+            (ModuleCat.of A (M ⧸ Ideal.primaryComponent M I))) ∧
+        (∀ p : ℤ, 0 < p → IsIso ((supportLocalCohomology.{u, v} A I hI p).map
+          (ModuleCat.ofHom (Ideal.primaryComponent M I).mkQ))) ∧
+        ∀ p : ℤ, 0 < p → IsZero ((supportLocalCohomology.{u, v} A I hI p).obj
+          (ModuleCat.of A (Ideal.primaryComponent M I))))) ∧
+    (∃ (A : Type) (_ : CommRing A) (I : Ideal A) (hI : I.FG) (M : ModuleCat.{0} A) (p : ℤ),
+      0 < p ∧ ¬ IsZero ((idealLocalCohomology.{0, 0} A I hI p).obj
+        (ModuleCat.of A (Ideal.primaryComponent M I)))) ∧
+    (∃ (A : Type) (_ : CommRing A) (I : Ideal A) (hI : I.FG) (M : ModuleCat.{0} A) (p : ℤ),
+      0 < p ∧ ¬ IsIso ((idealLocalCohomology.{0, 0} A I hI p).map
+        (ModuleCat.ofHom (Ideal.primaryComponent M I).mkQ)))
+```
+
 ## Depends on
 
 No dependencies are recorded: this chapter reads the repository's source text without running Lean, which edges between declarations need.
@@ -334,4 +418,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 47.11, Tag 0AVY](https://stacks.math.columbia.edu/tag/0AVY)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

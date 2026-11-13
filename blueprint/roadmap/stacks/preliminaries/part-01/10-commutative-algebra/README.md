@@ -1,6 +1,6 @@
 # 10 Commutative Algebra
 
-Chapter 10 of the Stacks Project, *Commutative Algebra*, [Tag 00AO](https://stacks.math.columbia.edu/tag/00AO): the 163 sections of its 168 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 1,245 tags are carried by 1,390 declarations of the repository (60 in StacksCore and 1,330 in StacksFrontier) and 446 registered declarations.
+Chapter 10 of the Stacks Project, *Commutative Algebra*, [Tag 00AO](https://stacks.math.columbia.edu/tag/00AO): the 163 sections of its 168 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 1,261 tags are carried by 1,512 declarations of the repository (60 in StacksCore and 1,452 in StacksFrontier) and 452 registered declarations.
 
 ## [10.4 Snake lemma to 10.23 Glueing properties](part-01/README.md)
 

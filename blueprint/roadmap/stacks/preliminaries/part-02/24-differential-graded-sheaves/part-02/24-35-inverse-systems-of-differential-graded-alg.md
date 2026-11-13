@@ -8,13 +8,13 @@ proof: formalized
 
 # 24.35 Inverse systems of differential graded algebras
 
-Section 24.35 of the Stacks Project, [Tag 0GZG](https://stacks.math.columbia.edu/tag/0GZG). 5 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 24.35 of the Stacks Project, [Tag 0GZG](https://stacks.math.columbia.edu/tag/0GZG). 5 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0GZH, a lemma
 
 [Tag 0GZH](https://stacks.math.columbia.edu/tag/0GZH) in the Stacks Project.
 
-**`DifferentialGradedAlgebra.SystemProHom.isEquivalence_qcPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedChaoticProIsomorphism.lean, line 414](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedChaoticProIsomorphism.lean#L414).
+**`DifferentialGradedAlgebra.SystemProHom.isEquivalence_qcPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedChaoticProIsomorphism.lean, line 423](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/DifferentialGradedChaoticProIsomorphism.lean#L423).
 
 > **Stacks 0GZH.** **Let `(A_n)` and `(B_n)` be inverse systems of differential graded
 > `R`-algebras, and let `φ : (A_n) → (B_n)` be a morphism of pro-objects, given by a representative
@@ -38,7 +38,7 @@ theorem isEquivalence_qcPullback (φ : SystemProHom A B) (hφ : φ.IsProIso) :
 
 [Tag 0GZI](https://stacks.math.columbia.edu/tag/0GZI) in the Stacks Project.
 
-**`DifferentialGraded.nonempty_iso_of_proIsoDerived`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/InverseSystemProIsomorphism.lean, line 372](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/DifferentialGraded/Module/InverseSystemProIsomorphism.lean#L372).
+**`DifferentialGraded.nonempty_iso_of_proIsoDerived`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/DifferentialGraded/Module/InverseSystemProIsomorphism.lean, line 372](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/DifferentialGraded/Module/InverseSystemProIsomorphism.lean#L372).
 
 > **Stacks 0GZI.** Let `(A_n)` be an inverse system of differential graded algebras over `R`,
 > let `(N_n)` and `(N'_n)` be inverse systems of left differential graded modules over it which are
@@ -63,7 +63,7 @@ theorem nonempty_iso_of_proIsoDerived {S : AlgebraSystem R}
 
 [Tag 0GZJ](https://stacks.math.columbia.edu/tag/0GZJ) in the Stacks Project.
 
-**`Koszul.powBaseTensorBalanceDerivedObjIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/PowBaseTensorBalanceDerived.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Koszul/PowBaseTensorBalanceDerived.lean#L136). The attribute's comment: “the identification M\_n ⊗^𝐋\_R K\_t = M\_n ⊗^𝐋\_\{K\_n} (K\_n ⊗\_R K\_t), objectwise”.
+**`Koszul.powBaseTensorBalanceDerivedObjIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/PowBaseTensorBalanceDerived.lean, line 136](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Koszul/PowBaseTensorBalanceDerived.lean#L136). The attribute's comment: “the identification M\_n ⊗^𝐋\_R K\_t = M\_n ⊗^𝐋\_\{K\_n} (K\_n ⊗\_R K\_t), objectwise”.
 
 > **The first step of the proof of Tag 0GZJ, one index at a time:**
 > `M_m ⊗_{K_m}^𝐋 (K_m ⊗_R K_t) ≅ M_m ⊗_R^𝐋 K_t` in `D(B, d)`, for `m = b + k`.
@@ -78,7 +78,7 @@ def powBaseTensorBalanceDerivedObjIso (k : ℕ) :
       (powBaseDegreeZeroDerivedTensorTower f t hb bimod bimodTrans).obj k
 ```
 
-**`Koszul.nonempty_iso_of_isDerivedLimit_powBaseTensorBalance`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/PowBaseTensorBalanceDerived.lean, line 179](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Koszul/PowBaseTensorBalanceDerived.lean#L179). The attribute's comment: “the identification M\_n ⊗^𝐋\_R K\_t = M\_n ⊗^𝐋\_\{K\_n} (K\_n ⊗\_R K\_t), passed to R lim”.
+**`Koszul.nonempty_iso_of_isDerivedLimit_powBaseTensorBalance`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/PowBaseTensorBalanceDerived.lean, line 179](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Koszul/PowBaseTensorBalanceDerived.lean#L179). The attribute's comment: “the identification M\_n ⊗^𝐋\_R K\_t = M\_n ⊗^𝐋\_\{K\_n} (K\_n ⊗\_R K\_t), passed to R lim”.
 
 > **The first step of the proof of Tag 0GZJ, passed to derived limits:**
 > `R lim (M_m ⊗_R^𝐋 K_t) = R lim (M_m ⊗_{K_m}^𝐋 (K_m ⊗_R K_t))` in `D(B, d)`.
@@ -104,7 +104,7 @@ theorem nonempty_iso_of_isDerivedLimit_powBaseTensorBalance
     Nonempty (K ≅ K')
 ```
 
-**`Koszul.nonempty_iso_of_isDerivedLimit_powKoszulTensorBalance`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/PowKoszulDerivedLimit.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Koszul/PowKoszulDerivedLimit.lean#L155). The attribute's comment: “R lim (M\_n ⊗^𝐋\_R K\_t) = R lim (M\_n ⊗^𝐋\_\{K\_n} K\_t)”.
+**`Koszul.nonempty_iso_of_isDerivedLimit_powKoszulTensorBalance`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/PowKoszulDerivedLimit.lean, line 155](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Koszul/PowKoszulDerivedLimit.lean#L155). The attribute's comment: “R lim (M\_n ⊗^𝐋\_R K\_t) = R lim (M\_n ⊗^𝐋\_\{K\_n} K\_t)”.
 
 > Let `R` be a ring, let `f₁, …, f_r ∈ R` and let `K_n` be the Koszul complex on `f₁^n, …, f_r^n`
 > viewed as a differential graded `R`-algebra. Let `(M_n)` be an object of `D(ℕ, (K_n))`. Then for
@@ -126,7 +126,7 @@ theorem nonempty_iso_of_isDerivedLimit_powKoszulTensorBalance
     Nonempty (K ≅ K')
 ```
 
-**`Koszul.powProIsoDerived`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/PowSystemsProIso.lean, line 247](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Koszul/PowSystemsProIso.lean#L247). The attribute's comment: “the pro-isomorphism of (\{}\_nK\_t) with (K\_n ⊗\_R K\_t) in the derived category”.
+**`Koszul.powProIsoDerived`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/PowSystemsProIso.lean, line 247](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Koszul/PowSystemsProIso.lean#L247). The attribute's comment: “the pro-isomorphism of (\{}\_nK\_t) with (K\_n ⊗\_R K\_t) in the derived category”.
 
 > **The second step of the proof of Tag 0GZJ:** the system `({}_{t+n}K_t)` and the system
 > `(K_{t+n} ⊗_R K_t)` of left differential graded modules over the Koszul algebras are
@@ -145,7 +145,7 @@ def powProIsoDerived :
 
 [Tag 0GZK](https://stacks.math.columbia.edu/tag/0GZK) in the Stacks Project.
 
-**`Koszul.idealPowKoszulDerivedCompleteEquivalences`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/NoetherianDerivedCompleteEquivalence.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Koszul/NoetherianDerivedCompleteEquivalence.lean#L57).
+**`Koszul.idealPowKoszulDerivedCompleteEquivalences`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/NoetherianDerivedCompleteEquivalence.lean, line 57](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Koszul/NoetherianDerivedCompleteEquivalence.lean#L57).
 
 > **Stacks 0GZK.** Let `R` be a Noetherian ring and `I ⊆ R` an ideal, with generators
 > `f₁, …, f_r`. Let `𝒜` be the sheaf of `R`-algebras on the chaotic site of the natural numbers of
@@ -170,7 +170,7 @@ def idealPowKoszulDerivedCompleteEquivalences [IsNoetherianRing R] (I : Ideal R)
 
 [Tag 0H1E](https://stacks.math.columbia.edu/tag/0H1E) in the Stacks Project.
 
-**`Koszul.nonempty_qcIdealPow_qcKoszul_derivedComplete_equivalences`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/WeaklyProregularDerivedComplete.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Koszul/WeaklyProregularDerivedComplete.lean#L81).
+**`Koszul.nonempty_qcIdealPow_qcKoszul_derivedComplete_equivalences`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Koszul/WeaklyProregularDerivedComplete.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Koszul/WeaklyProregularDerivedComplete.lean#L81).
 
 > **Stacks 0H1E.** Let `R` be a ring and let `f₁, …, f_r` be a weakly proregular sequence
 > generating the ideal `I`. Then the arguments of the proof of Proposition 0GZK continue to work:
@@ -204,4 +204,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 24.35, Tag 0GZG](https://stacks.math.columbia.edu/tag/0GZG)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

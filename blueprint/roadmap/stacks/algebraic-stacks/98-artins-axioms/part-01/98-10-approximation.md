@@ -8,13 +8,13 @@ proof: formalized
 
 # 98.10 Approximation
 
-Section 98.10 of the Stacks Project, [Tag 07XA](https://stacks.math.columbia.edu/tag/07XA). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 98.10 of the Stacks Project, [Tag 07XA](https://stacks.math.columbia.edu/tag/07XA). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 07XB, a lemma
 
 [Tag 07XB](https://stacks.math.columbia.edu/tag/07XB) in the Stacks Project.
 
-**`Deformation.Artin.Approximation.exists_finiteType_approximation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Approximation/FiniteType.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Deformation/Artin/Approximation/FiniteType.lean#L84). The attribute's comment: “clauses (1)-(6): the finite type algebra, its maximal ideal, the object, the isomorphism of Nth neighbourhoods, the compatible isomorphism of the restricted objects, and the isomorphism of graded k-algebras. Stacks 07QZ, the source's one external input here, is proved: `Stacks.Smoothing.exists_localEtaleSolution_of_isGRing`”.
+**`Deformation.Artin.Approximation.exists_finiteType_approximation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Deformation/Artin/Approximation/FiniteType.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Deformation/Artin/Approximation/FiniteType.lean#L84). The attribute's comment: “clauses (1)-(6): the finite type algebra, its maximal ideal, the object, the isomorphism of Nth neighbourhoods, the compatible isomorphism of the restricted objects, and the isomorphism of graded k-algebras. Stacks 07QZ, the source's one external input here, is proved: `Stacks.Smoothing.exists_localEtaleSolution_of_isGRing`”.
 
 > **Stacks Project, Tag 07XB.** Approximation of a fibred object over a Noetherian
 > complete local ring by an object over a finite type `S`-algebra.
@@ -118,7 +118,7 @@ public theorem exists_finiteType_approximation
 
 [Tag 07XC](https://stacks.math.columbia.edu/tag/07XC) in the Stacks Project.
 
-**`AdicCompletion.exists_surjective_adicCompletionMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AdicCompletion/PolynomialSurjection.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/AdicCompletion/PolynomialSurjection.lean#L68).
+**`AdicCompletion.exists_surjective_adicCompletionMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/AdicCompletion/PolynomialSurjection.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/AdicCompletion/PolynomialSurjection.lean#L68).
 
 > **Stacks Project, Tag 07XC.** A map from a polynomial ring to a Noetherian
 > complete local ring which is surjective modulo the square of the maximal ideal
@@ -156,4 +156,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 98.10, Tag 07XA](https://stacks.math.columbia.edu/tag/07XA)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 10.135 Local complete intersections
 
-Section 10.135 of the Stacks Project, [Tag 00S8](https://stacks.math.columbia.edu/tag/00S8). 12 tags here are carried by 15 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 10.135 of the Stacks Project, [Tag 00S8](https://stacks.math.columbia.edu/tag/00S8). 12 tags here are carried by 15 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 00S9, a definition
 
 [Tag 00S9](https://stacks.math.columbia.edu/tag/00S9) in the Stacks Project.
 
-**`IsGlobalCompleteIntersection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/Defs.lean, line 93](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CompleteIntersection/Defs.lean#L93). The attribute's comment: “(1)”.
+**`IsGlobalCompleteIntersection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/Defs.lean, line 93](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CompleteIntersection/Defs.lean#L93). The attribute's comment: “(1)”.
 
 > Let `k` be a field. A `k`-algebra `S` is a *global complete intersection over `k`* if either
 > `S` is the zero ring (`Subsingleton S`), or there are `n, c ≥ 0` and an isomorphism of
@@ -29,7 +29,7 @@ public def IsGlobalCompleteIntersection (k : Type*) [Field k] (S : Type*) [CommR
     [Algebra k S] : Prop
 ```
 
-**`IsLocalCompleteIntersection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/Defs.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CompleteIntersection/Defs.lean#L107). The attribute's comment: “(2)”. References: EGA IV (19.3.6); SGA 6 0 (3.2), “special case”.
+**`IsLocalCompleteIntersection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/Defs.lean, line 107](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CompleteIntersection/Defs.lean#L107). The attribute's comment: “(2)”. References: EGA IV (19.3.6); SGA 6 0 (3.2), “special case”.
 
 > Let `k` be a field. A `k`-algebra `S` is a *local complete intersection over `k`* if there is
 > a set `s ⊆ S` whose standard opens `D(g)` cover `Spec S`, and such that `S_g = Localization.Away g`
@@ -49,14 +49,14 @@ public def IsLocalCompleteIntersection (k : Type*) [Field k] (S : Type*) [CommRi
 
 Declarations registered for the tag:
 
-- [`isGlobalCompleteIntersection_localization`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CompleteIntersection/Basic.lean#L316), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/RingTheory/CompleteIntersection/Criteria.lean, line 176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CompleteIntersection/Criteria.lean#L176) (StacksFrontier): “part (1): a localization of a global complete intersection over a field is a global complete intersection over that field”.
-- [`isLocalCompleteIntersection_localization`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CompleteIntersection/Basic.lean#L333), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/RingTheory/CompleteIntersection/Criteria.lean, line 179](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CompleteIntersection/Criteria.lean#L179) (StacksFrontier): “part (2): a localization of a local complete intersection over a field is a local complete intersection over that field”.
+- [`isGlobalCompleteIntersection_localization`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CompleteIntersection/Basic.lean#L316), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/RingTheory/CompleteIntersection/Criteria.lean, line 176](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CompleteIntersection/Criteria.lean#L176) (StacksFrontier): “part (1): a localization of a global complete intersection over a field is a global complete intersection over that field”.
+- [`isLocalCompleteIntersection_localization`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CompleteIntersection/Basic.lean#L333), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/RingTheory/CompleteIntersection/Criteria.lean, line 179](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CompleteIntersection/Criteria.lean#L179) (StacksFrontier): “part (2): a localization of a local complete intersection over a field is a local complete intersection over that field”.
 
 ## Tag 00SB, a lemma
 
 [Tag 00SB](https://stacks.math.columbia.edu/tag/00SB) in the Stacks Project.
 
-**`IsCompleteIntersection.isMaximalCohenMacaulay`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/Local.lean, line 232](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CompleteIntersection/Local.lean#L232). The attribute's comment: “The pointwise half of the lemma: Cohen-Macaulayness of a single complete intersection local ring over `k`, stated as `Module.IsMaximalCohenMacaulay` over itself as in 00ND.”. References: EGA 0 (17.1.3), “Cohen–Macaulay”.
+**`IsCompleteIntersection.isMaximalCohenMacaulay`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/Local.lean, line 232](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CompleteIntersection/Local.lean#L232). The attribute's comment: “The pointwise half of the lemma: Cohen-Macaulayness of a single complete intersection local ring over `k`, stated as `Module.IsMaximalCohenMacaulay` over itself as in 00ND.”. References: EGA 0 (17.1.3), “Cohen–Macaulay”.
 
 > **A complete intersection over a field is a Cohen–Macaulay local ring.** Writing the ring as
 > `R/(f_1, …, f_c)` with `R` regular local and `f_1, …, f_c` a regular sequence, `R` is
@@ -69,7 +69,7 @@ theorem IsCompleteIntersection.isMaximalCohenMacaulay {k : Type*} [Field k] {A :
     (h : IsCompleteIntersection k A) : Module.IsMaximalCohenMacaulay A A
 ```
 
-**`IsLocalCompleteIntersection.isMaximalCohenMacaulay_localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/Local.lean, line 252](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CompleteIntersection/Local.lean#L252). The attribute's comment: “Cohen-Macaulayness of the Noetherian ring `S` (Definition 00NC) is spelled out as a condition on its localizations at primes, each being `Module.IsMaximalCohenMacaulay` over itself, as in 00ND. The finite type hypothesis is omitted, being a consequence of `IsLocalCompleteIntersection`. See the module docstring.”.
+**`IsLocalCompleteIntersection.isMaximalCohenMacaulay_localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/Local.lean, line 252](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CompleteIntersection/Local.lean#L252). The attribute's comment: “Cohen-Macaulayness of the Noetherian ring `S` (Definition 00NC) is spelled out as a condition on its localizations at primes, each being `Module.IsMaximalCohenMacaulay` over itself, as in 00ND. The finite type hypothesis is omitted, being a consequence of `IsLocalCompleteIntersection`. See the module docstring.”.
 
 > **A local complete intersection over a field is Cohen–Macaulay.** Let `k` be a field and let
 > `S` be a local complete intersection over `k`. Then every local ring `S_𝔮` of `S` at a prime is a
@@ -86,7 +86,7 @@ theorem IsLocalCompleteIntersection.isMaximalCohenMacaulay_localization
 
 [Tag 00SC](https://stacks.math.columbia.edu/tag/00SC) in the Stacks Project.
 
-**`Algebra.Generators.tfae_isGlobalCompleteIntersection_away`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/AtPrime/Criterion.lean, line 495](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CompleteIntersection/AtPrime/Criterion.lean#L495). The attribute's comment: “Items (1)-(5) are the five entries of the `List.TFAE`, in order. The source's `c`, defined there as `height 𝔮' - height 𝔮`, is the hypothesis `height 𝔮' = height 𝔮 + c`, the additive form (see the module docstring); the source's parenthetical `dim_𝔮(S) = n - c` is a consequence of it, by Stacks 00P2. Items (3) and (4) are stated for the conormal module of `I_A = I_{𝔮'}` over `A/I_A` rather than for `(I/I²)_𝔮` over `S_𝔮`; the two agree under the canonical identification of `A/I_A` with `S_𝔮`, localization being flat. The closing assertion of the lemma is the second conjunct of `Algebra.Generators.spanFinrank_ker_map_le_iff_exists_isRegular`, which carries this tag as well.”.
+**`Algebra.Generators.tfae_isGlobalCompleteIntersection_away`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/AtPrime/Criterion.lean, line 494](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CompleteIntersection/AtPrime/Criterion.lean#L494). The attribute's comment: “Items (1)-(5) are the five entries of the `List.TFAE`, in order. The source's `c`, defined there as `height 𝔮' - height 𝔮`, is the hypothesis `height 𝔮' = height 𝔮 + c`, the additive form (see the module docstring); the source's parenthetical `dim_𝔮(S) = n - c` is a consequence of it, by Stacks 00P2. Items (3) and (4) are stated for the conormal module of `I_A = I_{𝔮'}` over `A/I_A` rather than for `(I/I²)_𝔮` over `S_𝔮`; the two agree under the canonical identification of `A/I_A` with `S_𝔮`, localization being flat. The closing assertion of the lemma is the second conjunct of `Algebra.Generators.spanFinrank_ker_map_le_iff_exists_isRegular`, which carries this tag as well.”.
 
 > **The complete intersection criterion at a prime.** Let `k` be a field, let `S = k[x_i]/I` be a
 > presented `k`-algebra with finitely many variables, let `q` be a prime of `S`, let `q'` be the
@@ -128,7 +128,7 @@ theorem Algebra.Generators.tfae_isGlobalCompleteIntersection_away
           Ideal.ofList rs = P.ker.map (algebraMap P.Ring A)]
 ```
 
-**`Algebra.Generators.spanFinrank_ker_map_le_iff_exists_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/AtPrime/LocalCriterion.lean, line 510](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CompleteIntersection/AtPrime/LocalCriterion.lean#L510). The attribute's comment: “The equivalence of items (2) and (5) is the first conjunct, and the closing assertion of the lemma — that any `c` elements of `I_{𝔮'}` generating `I_{𝔮'}/𝔮'I_{𝔮'}` form a regular sequence — is the second. The five equivalent conditions themselves are `Algebra.Generators.tfae_isGlobalCompleteIntersection_away`, which carries this tag as well; this declaration is on the covering set for the closing assertion.”.
+**`Algebra.Generators.spanFinrank_ker_map_le_iff_exists_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/AtPrime/LocalCriterion.lean, line 510](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CompleteIntersection/AtPrime/LocalCriterion.lean#L510). The attribute's comment: “The equivalence of items (2) and (5) is the first conjunct, and the closing assertion of the lemma — that any `c` elements of `I_{𝔮'}` generating `I_{𝔮'}/𝔮'I_{𝔮'}` form a regular sequence — is the second. The five equivalent conditions themselves are `Algebra.Generators.tfae_isGlobalCompleteIntersection_away`, which carries this tag as well; this declaration is on the covering set for the closing assertion.”.
 
 > **The equivalence of items (2) and (5), together with the closing assertion.**
 >
@@ -159,7 +159,7 @@ theorem Algebra.Generators.spanFinrank_ker_map_le_iff_exists_isRegular
 
 [Tag 00SD](https://stacks.math.columbia.edu/tag/00SD) in the Stacks Project.
 
-**`IsCompleteIntersectionLocalRing`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/Criteria.lean, line 86](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CompleteIntersection/Criteria.lean#L86).
+**`IsCompleteIntersectionLocalRing`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/Criteria.lean, line 86](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CompleteIntersection/Criteria.lean#L86).
 
 > A `k`-algebra `S` is a *complete intersection over `k`* if there exist a `k`-algebra `R` and
 > a list `f = f₁, …, f_c` of elements of `R` such that
@@ -181,7 +181,7 @@ def IsCompleteIntersectionLocalRing (k : Type u) [Field k] (S : Type v) [CommRin
     [Algebra k S] : Prop
 ```
 
-**`IsCompleteIntersection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/Defs.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CompleteIntersection/Defs.lean#L168). The attribute's comment: “Items (1)-(4) are the four clauses of the body, in order. The source's condition `f_1, …, f_c ∈ 𝔪_R` is not stated separately: over the local ring `R` it is equivalent, given item (3), to the nonvanishing of `R/(f_1, …, f_c)` that Mathlib's `RingTheory.Sequence.IsRegular` already carries. The source's hypotheses that `S` be local and essentially of finite type over `k` are omitted, both being consequences of the existence of `R`, as with the finite type hypothesis in Definition 00S9. The witness `R` is quantified in the universe of `k`. See the module docstring.”.
+**`IsCompleteIntersection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/Defs.lean, line 168](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CompleteIntersection/Defs.lean#L168). The attribute's comment: “Items (1)-(4) are the four clauses of the body, in order. The source's condition `f_1, …, f_c ∈ 𝔪_R` is not stated separately: over the local ring `R` it is equivalent, given item (3), to the nonvanishing of `R/(f_1, …, f_c)` that Mathlib's `RingTheory.Sequence.IsRegular` already carries. The source's hypotheses that `S` be local and essentially of finite type over `k` are omitted, both being consequences of the existence of `R`, as with the finite type hypothesis in Definition 00S9. The witness `R` is quantified in the universe of `k`. See the module docstring.”.
 
 > Let `k` be a field. A `k`-algebra `S` is a *complete intersection over `k`* if there are a
 > regular local `k`-algebra `R`, essentially of finite type over `k`, and a regular sequence
@@ -198,7 +198,7 @@ public def IsCompleteIntersection (k : Type u) [Field k] (S : Type v) [CommRing 
 
 [Tag 00SE](https://stacks.math.columbia.edu/tag/00SE) in the Stacks Project.
 
-**`IsRegularLocalRing.exists_isRegular_ker_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/RegularLocalRing/Basic.lean, line 2066](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/RegularLocalRing/Basic.lean#L2066). The attribute's comment: “Items (1)-(4) are the four items of the list, in the source's order. `Ker(A → C)` is `RingHom.ker (g.comp f)`. `Generated by dim A - dim C elements` is the equality `ringKrullDim C + (RingHom.ker (g.comp f)).spanFinrank = ringKrullDim A`: subtraction in `WithBot ℕ∞` is truncated, while the inequality `≤` always holds here by Krull's height theorem, so the equality says exactly that the minimal number of generators attains `dim A - dim C`. The source's hypotheses that the maps be local homomorphisms and that `C` be local are omitted, all three being consequences of surjectivity. See the module docstring.”.
+**`IsRegularLocalRing.exists_isRegular_ker_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/RegularLocalRing/Basic.lean, line 2066](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/RegularLocalRing/Basic.lean#L2066). The attribute's comment: “Items (1)-(4) are the four items of the list, in the source's order. `Ker(A → C)` is `RingHom.ker (g.comp f)`. `Generated by dim A - dim C elements` is the equality `ringKrullDim C + (RingHom.ker (g.comp f)).spanFinrank = ringKrullDim A`: subtraction in `WithBot ℕ∞` is truncated, while the inequality `≤` always holds here by Krull's height theorem, so the equality says exactly that the minimal number of generators attains `dim A - dim C`. The source's hypotheses that the maps be local homomorphisms and that `C` be local are omitted, all three being consequences of surjectivity. See the module docstring.”.
 
 > **Stacks 00SE.** Let `A → B → C` be surjective local ring homomorphisms with `A` and `B`
 > regular local rings. Then the following are equivalent: `Ker(A → C)` is generated by a regular
@@ -226,7 +226,7 @@ public theorem IsRegularLocalRing.exists_isRegular_ker_tfae
 
 [Tag 00SF](https://stacks.math.columbia.edu/tag/00SF) in the Stacks Project.
 
-**`IsCompleteIntersection.tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/LocalRing.lean, line 896](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CompleteIntersection/LocalRing.lean#L896). The attribute's comment: “Items (1)-(5) are the five items of the list, in the source's order. `Essentially of finite presentation over k` is `Algebra.EssFiniteType k R`, the two notions agreeing over a field; the source's proof states item (2) with `essentially of finite type` as well. `Generated by dim R - dim S elements` is `ringKrullDim S + (RingHom.ker f).spanFinrank = ringKrullDim R`, the reading of Lemma 00SE: subtraction in `WithBot ℕ∞` is truncated while the inequality `≥` holds unconditionally, so the equality says the minimal number of generators attains `dim R - dim S`. In items (4) and (5) the isomorphism `S ≅ A_𝔞` is stated abstractly, as `IsLocalization.AtPrime S a` for an `A`-algebra structure on `S` compatible with `k`. Item (2) quantifies over rings in `Type (max u w)` for a universe parameter `w`: that asserts it in every universe and still lets it be instantiated at the localization `k[x_1, …, x_n]_𝔮` of the source's proof of (2) ⇒ (1), which a free `Type w` would not. The existential items (3)-(5) put their witnesses in the universe of `k`, where the source's are. The hypothesis that the surjections be local ring homomorphisms is omitted, being a consequence of surjectivity. See the module docstring.”. References: EGA IV (19.3.2), “ess. f.t. over a field”.
+**`IsCompleteIntersection.tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/LocalRing.lean, line 1011](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CompleteIntersection/LocalRing.lean#L1011). The attribute's comment: “Items (1)-(5) are the five items of the list, in the source's order. `Essentially of finite presentation over k` is `Algebra.EssFiniteType k R`, the two notions agreeing over a field; the source's proof states item (2) with `essentially of finite type` as well. `Generated by dim R - dim S elements` is `ringKrullDim S + (RingHom.ker f).spanFinrank = ringKrullDim R`, the reading of Lemma 00SE: subtraction in `WithBot ℕ∞` is truncated while the inequality `≥` holds unconditionally, so the equality says the minimal number of generators attains `dim R - dim S`. In items (4) and (5) the isomorphism `S ≅ A_𝔞` is stated abstractly, as `IsLocalization.AtPrime S a` for an `A`-algebra structure on `S` compatible with `k`. Item (2) quantifies over rings in `Type (max u w)` for a universe parameter `w`: that asserts it in every universe and still lets it be instantiated at the localization `k[x_1, …, x_n]_𝔮` of the source's proof of (2) ⇒ (1), which a free `Type w` would not. The existential items (3)-(5) put their witnesses in the universe of `k`, where the source's are. The hypothesis that the surjections be local ring homomorphisms is omitted, being a consequence of surjectivity. See the module docstring.”. References: EGA IV (19.3.2), “ess. f.t. over a field”.
 
 > Let `k` be a field and let `S` be a local `k`-algebra essentially of finite
 > type over `k`. The following are equivalent: `S` is a complete intersection over `k`; for every
@@ -264,34 +264,79 @@ public theorem IsCompleteIntersection.tfae (k : Type u) [Field k] (S : Type v) [
 
 [Tag 00SG](https://stacks.math.columbia.edu/tag/00SG) in the Stacks Project.
 
-**`IsCompleteIntersection.localization_atPrime_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/LocalRing.lean, line 559](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CompleteIntersection/LocalRing.lean#L559). The attribute's comment: “Item (1) is `IsCompleteIntersection k Sq` for an abstract localization `Sq` of `S` at `q`, items (2) and (3) use `Localization.Away g` as Definition 00S9 does, and item (4) is a universally quantified statement over presentations `Algebra.Generators k S ι` with `ι` finite, transcribing condition (5) of Lemma 00SC — the only one of its conditions (1)-(5) that mentions neither the codimension `c` nor the conormal module, and interchangeable with the others by that lemma. See the module docstring.”. References: EGA IV (19.3.2), “special case”.
+**`IsCompleteIntersection.localization_atPrime_tfae_generators`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/LocalRing.lean, line 684](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CompleteIntersection/LocalRing.lean#L684). The attribute's comment: “Item (1) is `IsCompleteIntersection k Sq` for an abstract localization `Sq` of `S` at `q`, with the `k`-algebra structure induced from `S`; items (2) and (3) use `Localization.Away g`, as Definition 00S9 does. Item (4) is entry 4 of the `List.TFAE`: for every presentation `Algebra.Generators k S ι` with `ι` finite, every localization `A` of `k[x_i]` at `q'` and every `c : ℕ` with `height q' = height q + c` (the source's `c`, which exists by `Algebra.Generators.exists_height_comap_eq`), the conjunction of conditions (1)-(5) of Lemma 00SC in the form of `Algebra.Generators.tfae_isGlobalCompleteIntersection_away`. Entries 5-9 state item (4) for each one of the conditions (1)-(5) of 00SC separately, so item (4) holds whichever of the equivalent conditions is chosen. See the module docstring.”. References: EGA IV (19.3.2), “special case”.
 
-> Let `k` be a field, let `S` be a finite type `k`-algebra and let `q` be a
-> prime of `S`. Then: the local ring `S_q` is a complete intersection over `k`; `S_g` is a local
-> complete intersection over `k` for some `g ∉ q`; `S_g` is a global complete intersection over `k`
-> for some `g ∉ q`; and, for every presentation `S = k[x_i]/I` in finitely many variables, the
-> ideal `I_{q'}` of `k[x_i]_{q'}` is generated by a regular sequence — are all equivalent.
+> Let `k` be a field, let `S` be a finite type `k`-algebra and let `q` be a prime of `S`. The
+> following are equivalent:
+>
+> 1. the local ring `S_q` is a complete intersection over `k`;
+> 2. `S_g` is a local complete intersection over `k` for some `g ∈ S`, `g ∉ q`;
+> 3. `S_g` is a global complete intersection over `k` for some `g ∈ S`, `g ∉ q`;
+> 4. for every presentation `S = k[x_i]/I` in finitely many variables, with `q' ⊆ k[x_i]` the prime
+>    corresponding to `q` and `c` the codimension, `height q' = height q + c`, all of the equivalent
+>    conditions (1)-(5) of Stacks 00SC hold: `S_g` is a global complete intersection for some
+>    `g ∉ q`; `I_{q'}` is generated by `c` elements; the conormal module of `I_{q'}` is generated
+>    by `c` elements; it is free of rank `c`; and `I_{q'}` is generated by a regular sequence in
+>    `k[x_i]_{q'}`.
+>
+> Entries 5-9 of the list are item (4) with a single one of the conditions (1)-(5) of 00SC, in
+> order: for every presentation, that one condition holds.
 
 ```lean
-public theorem IsCompleteIntersection.localization_atPrime_tfae (k : Type u) [Field k] (S : Type v)
-    [CommRing S] [Algebra k S] [Algebra.FiniteType k S] (q : Ideal S) [q.IsPrime] (Sq : Type*)
-    [CommRing Sq] [Algebra S Sq] [IsLocalization.AtPrime Sq q] [Algebra k Sq]
+public theorem IsCompleteIntersection.localization_atPrime_tfae_generators (k : Type u) [Field k]
+    (S : Type v) [CommRing S] [Algebra k S] [Algebra.FiniteType k S] (q : Ideal S) [q.IsPrime]
+    (Sq : Type*) [CommRing Sq] [Algebra S Sq] [IsLocalization.AtPrime Sq q] [Algebra k Sq]
     [IsScalarTower k S Sq] :
     List.TFAE
       [IsCompleteIntersection k Sq, ∃ g ∉ q, IsLocalCompleteIntersection k (Localization.Away g),
         ∃ g ∉ q, IsGlobalCompleteIntersection k (Localization.Away g),
         ∀ (ι : Type w) [Finite ι] (P : Algebra.Generators k S ι) (A : Type (max u w)) [CommRing A]
-          [Algebra P.Ring A] [IsLocalization.AtPrime A (q.comap (algebraMap P.Ring S))],
-          ∃ rs : List A,
-            RingTheory.Sequence.IsRegular A rs ∧
-              Ideal.ofList rs = P.ker.map (algebraMap P.Ring A)]
+          [Algebra P.Ring A] [IsLocalization.AtPrime A (q.comap (algebraMap P.Ring S))] (c : ℕ),
+          (q.comap (algebraMap P.Ring S)).height = q.height + c →
+            (∃ g ∉ q, IsGlobalCompleteIntersection k (Localization.Away g)) ∧
+            Submodule.spanFinrank (P.ker.map (algebraMap P.Ring A)) ≤ c ∧
+            (⊤ : Submodule (A ⧸ P.ker.map (algebraMap P.Ring A))
+                (P.ker.map (algebraMap P.Ring A)).Cotangent).spanFinrank ≤ c ∧
+            (Module.Free (A ⧸ P.ker.map (algebraMap P.Ring A))
+                (P.ker.map (algebraMap P.Ring A)).Cotangent ∧
+              Module.finrank (A ⧸ P.ker.map (algebraMap P.Ring A))
+                (P.ker.map (algebraMap P.Ring A)).Cotangent = c) ∧
+            ∃ rs : List A,
+              RingTheory.Sequence.IsRegular A rs ∧
+                Ideal.ofList rs = P.ker.map (algebraMap P.Ring A),
+        ∀ (ι : Type w) [Finite ι] (P : Algebra.Generators k S ι) (A : Type (max u w)) [CommRing A]
+          [Algebra P.Ring A] [IsLocalization.AtPrime A (q.comap (algebraMap P.Ring S))] (c : ℕ),
+          (q.comap (algebraMap P.Ring S)).height = q.height + c →
+            ∃ g ∉ q, IsGlobalCompleteIntersection k (Localization.Away g),
+        ∀ (ι : Type w) [Finite ι] (P : Algebra.Generators k S ι) (A : Type (max u w)) [CommRing A]
+          [Algebra P.Ring A] [IsLocalization.AtPrime A (q.comap (algebraMap P.Ring S))] (c : ℕ),
+          (q.comap (algebraMap P.Ring S)).height = q.height + c →
+            Submodule.spanFinrank (P.ker.map (algebraMap P.Ring A)) ≤ c,
+        ∀ (ι : Type w) [Finite ι] (P : Algebra.Generators k S ι) (A : Type (max u w)) [CommRing A]
+          [Algebra P.Ring A] [IsLocalization.AtPrime A (q.comap (algebraMap P.Ring S))] (c : ℕ),
+          (q.comap (algebraMap P.Ring S)).height = q.height + c →
+            (⊤ : Submodule (A ⧸ P.ker.map (algebraMap P.Ring A))
+                (P.ker.map (algebraMap P.Ring A)).Cotangent).spanFinrank ≤ c,
+        ∀ (ι : Type w) [Finite ι] (P : Algebra.Generators k S ι) (A : Type (max u w)) [CommRing A]
+          [Algebra P.Ring A] [IsLocalization.AtPrime A (q.comap (algebraMap P.Ring S))] (c : ℕ),
+          (q.comap (algebraMap P.Ring S)).height = q.height + c →
+            Module.Free (A ⧸ P.ker.map (algebraMap P.Ring A))
+                (P.ker.map (algebraMap P.Ring A)).Cotangent ∧
+              Module.finrank (A ⧸ P.ker.map (algebraMap P.Ring A))
+                (P.ker.map (algebraMap P.Ring A)).Cotangent = c,
+        ∀ (ι : Type w) [Finite ι] (P : Algebra.Generators k S ι) (A : Type (max u w)) [CommRing A]
+          [Algebra P.Ring A] [IsLocalization.AtPrime A (q.comap (algebraMap P.Ring S))] (c : ℕ),
+          (q.comap (algebraMap P.Ring S)).height = q.height + c →
+            ∃ rs : List A,
+              RingTheory.Sequence.IsRegular A rs ∧
+                Ideal.ofList rs = P.ker.map (algebraMap P.Ring A)]
 ```
 
 ## Tag 00SH, a lemma
 
 [Tag 00SH](https://stacks.math.columbia.edu/tag/00SH) in the Stacks Project.
 
-**`IsLocalCompleteIntersection.tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/LocalRing.lean, line 703](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CompleteIntersection/LocalRing.lean#L703). The attribute's comment: “Item (1) is `IsLocalCompleteIntersection k S` (Definition 00S9 (2)), and items (2) and (3) say that `IsCompleteIntersection k Sq` (Definition 00SD) holds for every localization of `S` at a prime, resp. at a maximal ideal, quantified over abstract localizations `Sq` in the universe of `S` with the `k`-algebra structure induced from `S` — the hypothesis block of item (1) of Lemma 00SG. The source's finite type hypothesis is kept: items (2) and (3) do not imply it, as `ℚ(x)` over `ℚ` shows. The source's appeal to quasi-compactness of `Spec S` is absent, `IsLocalCompleteIntersection` asking for a covering by an arbitrary set of elements generating the unit ideal. See the module docstring.”.
+**`IsLocalCompleteIntersection.tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/LocalRing.lean, line 818](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CompleteIntersection/LocalRing.lean#L818). The attribute's comment: “Item (1) is `IsLocalCompleteIntersection k S` (Definition 00S9 (2)), and items (2) and (3) say that `IsCompleteIntersection k Sq` (Definition 00SD) holds for every localization of `S` at a prime, resp. at a maximal ideal, quantified over abstract localizations `Sq` in the universe of `S` with the `k`-algebra structure induced from `S` — the hypothesis block of item (1) of Lemma 00SG. The source's finite type hypothesis is kept: items (2) and (3) do not imply it, as `ℚ(x)` over `ℚ` shows. The source's appeal to quasi-compactness of `Spec S` is absent, `IsLocalCompleteIntersection` asking for a covering by an arbitrary set of elements generating the unit ideal. See the module docstring.”.
 
 > Let `k` be a field and let `S` be a finite type `k`-algebra. Then: `S` is a
 > local complete intersection over `k`; every local ring of `S` is a complete intersection over
@@ -316,7 +361,7 @@ public theorem IsLocalCompleteIntersection.tfae (k : Type u) [Field k] (S : Type
 
 [Tag 00SI](https://stacks.math.columbia.edu/tag/00SI) in the Stacks Project.
 
-**`Algebra.IsPushout.isCompleteIntersection_localization_atPrime_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/BaseChange.lean, line 360](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CompleteIntersection/BaseChange.lean#L360). The attribute's comment: “The base change `S' = K ⊗_k S` is an arbitrary pushout square `Algebra.IsPushout k K S S'`, the shape of the sibling 00SJ; the source's literal form satisfies it. The source's corresponding prime `q` is the contraction of `q'`, spelled `Ideal.LiesOver`, and the two local rings are abstract localizations at `q`, resp. `q'`, with the `k`-, resp. `K`-algebra structure induced from `S`, resp. `S'`, as in item (1) of Lemma 00SG. A complete intersection over a field (Definition 00SD) is `IsCompleteIntersection`. See the module docstring.”. References: EGA IV (19.3.4), “affine case”.
+**`Algebra.IsPushout.isCompleteIntersection_localization_atPrime_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/BaseChange.lean, line 360](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CompleteIntersection/BaseChange.lean#L360). The attribute's comment: “The base change `S' = K ⊗_k S` is an arbitrary pushout square `Algebra.IsPushout k K S S'`, the shape of the sibling 00SJ; the source's literal form satisfies it. The source's corresponding prime `q` is the contraction of `q'`, spelled `Ideal.LiesOver`, and the two local rings are abstract localizations at `q`, resp. `q'`, with the `k`-, resp. `K`-algebra structure induced from `S`, resp. `S'`, as in item (1) of Lemma 00SG. A complete intersection over a field (Definition 00SD) is `IsCompleteIntersection`. See the module docstring.”. References: EGA IV (19.3.4), “affine case”.
 
 > Let `K/k` be a field extension, let `S` be a finite type `k`-algebra and let
 > `S'` be the base change of `S` along `k → K`, so `S' = K ⊗_k S`. Let `q'` be a prime of `S'` and
@@ -341,7 +386,7 @@ public theorem Algebra.IsPushout.isCompleteIntersection_localization_atPrime_iff
 
 [Tag 00SJ](https://stacks.math.columbia.edu/tag/00SJ) in the Stacks Project.
 
-**`Algebra.IsPushout.isLocalCompleteIntersection_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/FieldExtension.lean, line 154](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CompleteIntersection/FieldExtension.lean#L154). The attribute's comment: “The base change `S' = S ⊗_k K` is an arbitrary pushout square `Algebra.IsPushout k K S S'`, the orientation of the sibling 00SM; the source's literal form is `inferInstance`. The source's finite type hypothesis on `S` is omitted: each side of the equivalence implies it. A local complete intersection over a field (Definition 00S9 (2)) is `IsLocalCompleteIntersection`. See the module docstring.”.
+**`Algebra.IsPushout.isLocalCompleteIntersection_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/FieldExtension.lean, line 154](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CompleteIntersection/FieldExtension.lean#L154). The attribute's comment: “The base change `S' = S ⊗_k K` is an arbitrary pushout square `Algebra.IsPushout k K S S'`, the orientation of the sibling 00SM; the source's literal form is `inferInstance`. The source's finite type hypothesis on `S` is omitted: each side of the equivalence implies it. A local complete intersection over a field (Definition 00S9 (2)) is `IsLocalCompleteIntersection`. See the module docstring.”.
 
 > Let `k → K` be a field extension, let `S` be a `k`-algebra and let `S'` be
 > the base change of `S` along `k → K`, so `S' = S ⊗_k K`. Then `S'` is a local complete
@@ -358,7 +403,7 @@ public theorem Algebra.IsPushout.isLocalCompleteIntersection_iff (k K S S' : Typ
 
 [Tag 02JP](https://stacks.math.columbia.edu/tag/02JP) in the Stacks Project.
 
-**`exists_isRegular_ofList_eq_ker_algebraMap_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/Local.lean, line 616](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/CompleteIntersection/Local.lean#L616). The attribute's comment: “The square is `IsScalarTower R A B` and `IsScalarTower R S B` with `R → A` and `S → B` surjective, `I` and `J` being their kernels, and `J̄` is the image of `J` in `S ⧸ 𝔪_R S`. Stated more generally than the source: `R` is only assumed Cohen-Macaulay (regular local rings are, by 00NQ), and `S̄` is not assumed regular, which the argument does not use. `S` is assumed Noetherian, as the source's appeals to 00MG and 00ME require. See the module docstring.”.
+**`exists_isRegular_ofList_eq_ker_algebraMap_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/CompleteIntersection/Local.lean, line 616](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/CompleteIntersection/Local.lean#L616). The attribute's comment: “The square is `IsScalarTower R A B` and `IsScalarTower R S B` with `R → A` and `S → B` surjective, `I` and `J` being their kernels, and `J̄` is the image of `J` in `S ⧸ 𝔪_R S`. Stated more generally than the source: `R` is only assumed Cohen-Macaulay (regular local rings are, by 00NQ), and `S̄` is not assumed regular, which the argument does not use. `S` is assumed Noetherian, as the source's appeals to 00MG and 00ME require. See the module docstring.”.
 
 > **Descent of regular sequences along a flat square of local rings.** Let
 > ```
@@ -397,4 +442,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.135, Tag 00S8](https://stacks.math.columbia.edu/tag/00S8)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 37.58 Relative finite presentation
 
-Section 37.58 of the Stacks Project, [Tag 05GX](https://stacks.math.columbia.edu/tag/05GX). 9 tags here are carried by 13 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 37.58 of the Stacks Project, [Tag 05GX](https://stacks.math.columbia.edu/tag/05GX). 9 tags here are carried by 13 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 05H1, a definition
 
 [Tag 05H1](https://stacks.math.columbia.edu/tag/05H1) in the Stacks Project.
 
-**`AlgebraicGeometry.IsFinitelyPresentedRelative`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/RelativeFinitePresentation/Defs.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/RelativeFinitePresentation/Defs.lean#L59).
+**`AlgebraicGeometry.IsFinitelyPresentedRelative`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/RelativeFinitePresentation/Defs.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/RelativeFinitePresentation/Defs.lean#L59).
 
 > A sheaf of modules `M` on `X` is finitely presented relative to `S` if there is an affine
 > open cover of `S` and, over each member, an affine open cover of its inverse image such that
@@ -29,7 +29,7 @@ abbrev IsFinitelyPresentedRelative {X S : Scheme.{u}} (f : X ⟶ S) (M : X.Modul
 
 [Tag 09T7](https://stacks.math.columbia.edu/tag/09T7) in the Stacks Project.
 
-**`AlgebraicGeometry.isFinitelyPresentedRelative_iff_affine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/RelativeFinitePresentation/Affine.lean, line 389](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/RelativeFinitePresentation/Affine.lean#L389). The attribute's comment: “affine-open characterization”.
+**`AlgebraicGeometry.isFinitelyPresentedRelative_iff_affine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/RelativeFinitePresentation/Affine.lean, line 389](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/RelativeFinitePresentation/Affine.lean#L389). The attribute's comment: “affine-open characterization”.
 
 > **Stacks Project, Tag 09T7.** A quasi-coherent module on a scheme locally of finite type
 > over a base is finitely presented relative to that base if and only if its sections over every
@@ -48,7 +48,7 @@ theorem isFinitelyPresentedRelative_iff_affine
             Module.FinitePresentationRel Γ(S, V) Γ(X, U) Γ(M, U)
 ```
 
-**`AlgebraicGeometry.isFinitelyPresentedRelative_resLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/RelativeFinitePresentation/Affine.lean, line 438](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/RelativeFinitePresentation/Affine.lean#L438). The attribute's comment: “restriction to open subschemes”.
+**`AlgebraicGeometry.isFinitelyPresentedRelative_resLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/RelativeFinitePresentation/Affine.lean, line 438](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/RelativeFinitePresentation/Affine.lean#L438). The attribute's comment: “restriction to open subschemes”.
 
 > **Stacks Project, Tag 09T7.** Once a quasi-coherent module is finitely presented relative
 > to a base, its restriction to any open subscheme is finitely presented relative to every
@@ -67,7 +67,7 @@ theorem isFinitelyPresentedRelative_resLE
 
 [Tag 09T8](https://stacks.math.columbia.edu/tag/09T8) in the Stacks Project.
 
-**`AlgebraicGeometry.isFinitelyPresentedRelative_iff_isFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/RelativeFinitePresentation/FinitePresentation.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/RelativeFinitePresentation/FinitePresentation.lean#L163). The attribute's comment: “relative\_iff\_finite\_presentation”.
+**`AlgebraicGeometry.isFinitelyPresentedRelative_iff_isFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/RelativeFinitePresentation/FinitePresentation.lean, line 163](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/RelativeFinitePresentation/FinitePresentation.lean#L163). The attribute's comment: “relative\_iff\_finite\_presentation”.
 
 > **Stacks Project, Tag 09T8.** For a locally finitely presented morphism of schemes, a
 > quasi-coherent sheaf of modules is finitely presented relative to the base if and only if it is
@@ -80,7 +80,7 @@ theorem isFinitelyPresentedRelative_iff_isFinitePresentation
     IsFinitelyPresentedRelative f M ↔ M.IsFinitePresentation
 ```
 
-**`AlgebraicGeometry.locallyOfFinitePresentation_iff_structureSheaf_finitelyPresentedRelative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/RelativeFinitePresentation/StructureSheaf.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/RelativeFinitePresentation/StructureSheaf.lean#L79). The attribute's comment: “morphism\_iff\_structure\_sheaf\_relative”.
+**`AlgebraicGeometry.locallyOfFinitePresentation_iff_structureSheaf_finitelyPresentedRelative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/RelativeFinitePresentation/StructureSheaf.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/RelativeFinitePresentation/StructureSheaf.lean#L79). The attribute's comment: “morphism\_iff\_structure\_sheaf\_relative”.
 
 > **Stacks Project, Tag 09T8.** A locally finite type morphism is locally of finite
 > presentation if and only if its structure sheaf is finitely presented relative to the base.
@@ -96,7 +96,7 @@ theorem locallyOfFinitePresentation_iff_structureSheaf_finitelyPresentedRelative
 
 [Tag 09T9](https://stacks.math.columbia.edu/tag/09T9) in the Stacks Project.
 
-**`AlgebraicGeometry.isFinitelyPresentedRelative_pushforward_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeFinitePresentation/FinitePushforward.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeFinitePresentation/FinitePushforward.lean#L81).
+**`AlgebraicGeometry.isFinitelyPresentedRelative_pushforward_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeFinitePresentation/FinitePushforward.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeFinitePresentation/FinitePushforward.lean#L81).
 
 > **Stacks Project, Tag 09T9.** A quasi-coherent module on the source of a finite morphism
 > between schemes locally of finite type over a base is finitely presented relative to that base
@@ -115,7 +115,7 @@ theorem isFinitelyPresentedRelative_pushforward_iff
 
 [Tag 09TA](https://stacks.math.columbia.edu/tag/09TA) in the Stacks Project.
 
-**`AlgebraicGeometry.isFinitelyPresentedRelative_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeFinitePresentation/BaseChange.lean, line 215](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeFinitePresentation/BaseChange.lean#L215).
+**`AlgebraicGeometry.isFinitelyPresentedRelative_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeFinitePresentation/BaseChange.lean, line 214](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeFinitePresentation/BaseChange.lean#L214).
 
 > **Stacks Project, Tag 09TA.** Relative finite presentation of a quasi-coherent module is
 > stable under arbitrary base change: if `M` on `X` is finitely presented relative to `f : X ⟶ S`,
@@ -134,7 +134,7 @@ theorem isFinitelyPresentedRelative_baseChange
 
 [Tag 09TB](https://stacks.math.columbia.edu/tag/09TB) in the Stacks Project.
 
-**`AlgebraicGeometry.isFinitelyPresentedRelative_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeFinitePresentation/Pullback.lean, line 150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeFinitePresentation/Pullback.lean#L150).
+**`AlgebraicGeometry.isFinitelyPresentedRelative_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeFinitePresentation/Pullback.lean, line 150](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/RelativeFinitePresentation/Pullback.lean#L150).
 
 > **Stacks Project, Tag 09TB.** Relative finite presentation of a quasi-coherent module is
 > preserved by pullback along a morphism locally of finite presentation.
@@ -153,7 +153,7 @@ theorem isFinitelyPresentedRelative_pullback
 
 [Tag 09TC](https://stacks.math.columbia.edu/tag/09TC) in the Stacks Project.
 
-**`AlgebraicGeometry.isFinitelyPresentedRelative_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/RelativeFinitePresentation/Operations.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/RelativeFinitePresentation/Operations.lean#L67).
+**`AlgebraicGeometry.isFinitelyPresentedRelative_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/RelativeFinitePresentation/Operations.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/RelativeFinitePresentation/Operations.lean#L67).
 
 > **Stacks Project, Tag 09TC.** Relative finite presentation of a quasi-coherent
 > module passes through a locally finitely presented intermediate scheme.
@@ -171,7 +171,7 @@ theorem isFinitelyPresentedRelative_comp {X Y S : Scheme.{u}}
 
 [Tag 09TD](https://stacks.math.columbia.edu/tag/09TD) in the Stacks Project.
 
-**`AlgebraicGeometry.isFinitelyPresentedRelative_of_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/RelativeFinitePresentation/Operations.lean, line 170](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/RelativeFinitePresentation/Operations.lean#L170). The attribute's comment: “extension”.
+**`AlgebraicGeometry.isFinitelyPresentedRelative_of_shortExact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/RelativeFinitePresentation/Operations.lean, line 170](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/RelativeFinitePresentation/Operations.lean#L170). The attribute's comment: “extension”.
 
 > In a short exact sequence of quasi-coherent modules over a locally finite type
 > morphism, relative finite presentation of the two end terms implies that of the middle
@@ -185,7 +185,7 @@ theorem isFinitelyPresentedRelative_of_shortExact
     IsFinitelyPresentedRelative s.f s.sequence.X₂
 ```
 
-**`AlgebraicGeometry.isFinitelyPresentedRelative_of_shortExact_of_isFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/RelativeFinitePresentation/Operations.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/RelativeFinitePresentation/Operations.lean#L190). The attribute's comment: “quotient”.
+**`AlgebraicGeometry.isFinitelyPresentedRelative_of_shortExact_of_isFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/RelativeFinitePresentation/Operations.lean, line 190](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/RelativeFinitePresentation/Operations.lean#L190). The attribute's comment: “quotient”.
 
 > In a short exact sequence of quasi-coherent modules over a locally finite type
 > morphism whose left-hand term is of finite type, relative finite presentation of the middle
@@ -203,7 +203,7 @@ theorem isFinitelyPresentedRelative_of_shortExact_of_isFiniteType
 
 [Tag 09TE](https://stacks.math.columbia.edu/tag/09TE) in the Stacks Project.
 
-**`AlgebraicGeometry.isFinitelyPresentedRelative_left_of_biprod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/RelativeFinitePresentation/Operations.lean, line 310](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/RelativeFinitePresentation/Operations.lean#L310). The attribute's comment: “first summand”.
+**`AlgebraicGeometry.isFinitelyPresentedRelative_left_of_biprod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/RelativeFinitePresentation/Operations.lean, line 310](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/RelativeFinitePresentation/Operations.lean#L310). The attribute's comment: “first summand”.
 
 > **Stacks Project, Tag 09TE.** The first summand of a relatively finitely presented direct
 > sum is relatively finitely presented.
@@ -215,7 +215,7 @@ theorem isFinitelyPresentedRelative_left_of_biprod
     IsFinitelyPresentedRelative f M
 ```
 
-**`AlgebraicGeometry.isFinitelyPresentedRelative_right_of_biprod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/RelativeFinitePresentation/Operations.lean, line 318](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/RelativeFinitePresentation/Operations.lean#L318). The attribute's comment: “second summand”.
+**`AlgebraicGeometry.isFinitelyPresentedRelative_right_of_biprod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/RelativeFinitePresentation/Operations.lean, line 318](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/RelativeFinitePresentation/Operations.lean#L318). The attribute's comment: “second summand”.
 
 > **Stacks Project, Tag 09TE.** The second summand of a relatively finitely presented direct
 > sum is relatively finitely presented.
@@ -234,4 +234,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 37.58, Tag 05GX](https://stacks.math.columbia.edu/tag/05GX)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

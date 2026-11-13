@@ -8,13 +8,13 @@ proof: formalized
 
 # 31.20 The normal cone of an immersion
 
-Section 31.20 of the Stacks Project, [Tag 062Z](https://stacks.math.columbia.edu/tag/062Z). 8 tags here are carried by 20 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 31.20 of the Stacks Project, [Tag 062Z](https://stacks.math.columbia.edu/tag/062Z). 8 tags here are carried by 21 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0630, a definition
 
 [Tag 0630](https://stacks.math.columbia.edu/tag/0630) in the Stacks Project.
 
-**`Stacks.Conormal.conormalAlgebra`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ConormalAlgebra/Immersion.lean, line 543](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ConormalAlgebra/Immersion.lean#L543). The attribute's comment: “the conormal algebra”. References: EGA IV (16.1.2), “Gr\_•(f), immersions”.
+**`Stacks.Conormal.conormalAlgebra`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ConormalAlgebra/Immersion.lean, line 543](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ConormalAlgebra/Immersion.lean#L543). The attribute's comment: “the conormal algebra”. References: EGA IV (16.1.2), “Gr\_•(f), immersions”.
 
 > The conormal algebra of an immersion, together with its local associated-graded quotient
 > presentations.
@@ -28,7 +28,7 @@ noncomputable def conormalAlgebra {Z X : Scheme.{u}} (i : Z ⟶ X) [IsImmersion 
 
 [Tag 0631](https://stacks.math.columbia.edu/tag/0631) in the Stacks Project.
 
-**`Stacks.Conormal.conormalAlgebra`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ConormalAlgebra/Immersion.lean, line 543](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ConormalAlgebra/Immersion.lean#L543). The attribute's comment: “its degree-n piece: i\_* C\_\{Z/X, n} = I^n/I^\{n+1}”. References: EGA IV (16.1.2), “Gr\_•(f), immersions”.
+**`Stacks.Conormal.conormalAlgebra`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ConormalAlgebra/Immersion.lean, line 543](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ConormalAlgebra/Immersion.lean#L543). The attribute's comment: “its degree-n piece: i\_* C\_\{Z/X, n} = I^n/I^\{n+1}”. References: EGA IV (16.1.2), “Gr\_•(f), immersions”.
 
 > The conormal algebra of an immersion, together with its local associated-graded quotient
 > presentations.
@@ -42,7 +42,7 @@ noncomputable def conormalAlgebra {Z X : Scheme.{u}} (i : Z ⟶ X) [IsImmersion 
 
 [Tag 0632](https://stacks.math.columbia.edu/tag/0632) in the Stacks Project.
 
-**`Stacks.Conormal.conormalDegreeOneHom_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Conormal/DegreeOne.lean, line 464](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Conormal/DegreeOne.lean#L464). The attribute's comment: “degree one: the conormal algebra in degree one is the conormal sheaf”.
+**`Stacks.Conormal.conormalDegreeOneHom_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Conormal/DegreeOne.lean, line 464](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Conormal/DegreeOne.lean#L464). The attribute's comment: “degree one: the conormal algebra in degree one is the conormal sheaf”.
 
 > **[Stacks, Tag 0632]: the conormal algebra in degree one is the conormal sheaf.** The
 > canonical morphism `𝒞_{Z/X} ⟶ 𝒞_{Z/X,1}` is an isomorphism.
@@ -56,7 +56,7 @@ theorem conormalDegreeOneHom_isIso (i : Z ⟶ X) [IsImmersion i] :
     IsIso (conormalDegreeOneHom i)
 ```
 
-**`Stacks.Conormal.conormalDegreeOneIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Conormal/DegreeOne.lean, line 478](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Conormal/DegreeOne.lean#L478). The attribute's comment: “degree one: the identification as an isomorphism”.
+**`Stacks.Conormal.conormalDegreeOneIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Conormal/DegreeOne.lean, line 478](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Conormal/DegreeOne.lean#L478). The attribute's comment: “degree one: the identification as an isomorphism”.
 
 > **[Stacks, Tag 0632]: the degree-one identification `𝒞_{Z/X} ≅ 𝒞_{Z/X,1}`.**
 
@@ -65,7 +65,7 @@ noncomputable def conormalDegreeOneIso (i : Z ⟶ X) [IsImmersion i] :
     conormalSheaf i ≅ (conormalAlgebra i).algebra.piece 1
 ```
 
-**`Stacks.Conormal.conormalSymmetricHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/NormalCone/SymmetricQuotient.lean, line 241](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/NormalCone/SymmetricQuotient.lean#L241). The attribute's comment: “the canonical map Sym*(C\_\{Z/X}) → C\_\{Z/X,*} of graded algebras”. References: EGA 0 (19.5.2), “more general”; EGA 0 (22.1.1), “more general”; EGA IV (17.12.1).
+**`Stacks.Conormal.conormalSymmetricHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/NormalCone/SymmetricQuotient.lean, line 241](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/NormalCone/SymmetricQuotient.lean#L241). The attribute's comment: “the canonical map Sym*(C\_\{Z/X}) → C\_\{Z/X,*} of graded algebras”. References: EGA 0 (19.5.2), “more general”; EGA 0 (22.1.1), “more general”; EGA IV (17.12.1).
 
 > **Stacks Project, Tag 0632.** The canonical map `Sym*(𝒞_{Z/X}) ⟶ 𝒞_{Z/X,*}` of graded
 > `𝒪_Z`-algebras, the unital homomorphism which is the identity on degree-one generators.
@@ -76,7 +76,7 @@ def conormalSymmetricHom (i : Z ⟶ X) [IsImmersion i] :
       (conormalAlgebra i).algebra
 ```
 
-**`Stacks.Conormal.conormalSymmetricHom_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/NormalCone/SymmetricQuotient.lean, line 260](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/NormalCone/SymmetricQuotient.lean#L260). The attribute's comment: “uniqueness of the canonical map Sym*(C\_\{Z/X}) → C\_\{Z/X,*}”.
+**`Stacks.Conormal.conormalSymmetricHom_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/NormalCone/SymmetricQuotient.lean, line 260](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/NormalCone/SymmetricQuotient.lean#L260). The attribute's comment: “uniqueness of the canonical map Sym*(C\_\{Z/X}) → C\_\{Z/X,*}”.
 
 > **Stacks Project, Tag 0632.** A unital homomorphism which is the identity on degree-one
 > generators is the canonical map, so the canonical map is well defined.
@@ -90,7 +90,7 @@ theorem conormalSymmetricHom_unique (i : Z ⟶ X) [IsImmersion i]
     g = conormalSymmetricHom i
 ```
 
-**`Stacks.Conormal.isIso_conormalSymmetricHom_app_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/NormalCone/SymmetricQuotient.lean, line 276](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/NormalCone/SymmetricQuotient.lean#L276). The attribute's comment: “the canonical map Sym*(C\_\{Z/X}) → C\_\{Z/X,*} is an isomorphism in degree 1”.
+**`Stacks.Conormal.isIso_conormalSymmetricHom_app_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/NormalCone/SymmetricQuotient.lean, line 276](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/NormalCone/SymmetricQuotient.lean#L276). The attribute's comment: “the canonical map Sym*(C\_\{Z/X}) → C\_\{Z/X,*} is an isomorphism in degree 1”.
 
 > **Stacks Project, Tag 0632.** The canonical map `Sym*(𝒞_{Z/X}) ⟶ 𝒞_{Z/X,*}` is an
 > isomorphism in degree one. The degree-one generator `𝒞_{Z/X} ⟶ Sym¹(𝒞_{Z/X})` is an isomorphism,
@@ -101,7 +101,7 @@ theorem isIso_conormalSymmetricHom_app_one (i : Z ⟶ X) [IsImmersion i] :
     IsIso ((conormalSymmetricHom i).app 1)
 ```
 
-**`Stacks.Conormal.isIso_conormalSymmetricHom_app_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/NormalCone/SymmetricQuotient.lean, line 408](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/NormalCone/SymmetricQuotient.lean#L408). The attribute's comment: “the canonical map Sym*(C\_\{Z/X}) → C\_\{Z/X,*} is an isomorphism in degree 0”.
+**`Stacks.Conormal.isIso_conormalSymmetricHom_app_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/NormalCone/SymmetricQuotient.lean, line 408](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/NormalCone/SymmetricQuotient.lean#L408). The attribute's comment: “the canonical map Sym*(C\_\{Z/X}) → C\_\{Z/X,*} is an isomorphism in degree 0”.
 
 > **Stacks Project, Tag 0632.** The canonical map `Sym*(𝒞_{Z/X}) ⟶ 𝒞_{Z/X,*}` is an
 > isomorphism in degree zero. It is a monomorphism because both degree-zero pieces are generated
@@ -114,7 +114,7 @@ theorem isIso_conormalSymmetricHom_app_zero (i : Z ⟶ X) [IsImmersion i] :
     IsIso ((conormalSymmetricHom i).app 0)
 ```
 
-**`Stacks.Conormal.epi_conormalSymmetricHom_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/NormalCone/SymmetricQuotient.lean, line 521](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/NormalCone/SymmetricQuotient.lean#L521). The attribute's comment: “the canonical map Sym*(C\_\{Z/X}) → C\_\{Z/X,*} is surjective”.
+**`Stacks.Conormal.epi_conormalSymmetricHom_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/NormalCone/SymmetricQuotient.lean, line 521](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/NormalCone/SymmetricQuotient.lean#L521). The attribute's comment: “the canonical map Sym*(C\_\{Z/X}) → C\_\{Z/X,*} is surjective”.
 
 > **Stacks Project, Tag 0632.** The canonical map `Sym*(𝒞_{Z/X}) ⟶ 𝒞_{Z/X,*}` is surjective:
 > an epimorphism of sheaves of modules in every degree. In a negative degree the target vanishes,
@@ -130,7 +130,7 @@ theorem epi_conormalSymmetricHom_app (i : Z ⟶ X) [IsImmersion i] (n : ℤ) :
 
 [Tag 0633](https://stacks.math.columbia.edu/tag/0633) in the Stacks Project.
 
-**`Stacks.Conormal.conormalAlgebra_identifications`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/ConormalInverseImage.lean, line 311](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/ConormalInverseImage.lean#L311). The attribute's comment: “part (1)”.
+**`Stacks.Conormal.conormalAlgebra_identifications`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/ConormalInverseImage.lean, line 311](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/ConormalInverseImage.lean#L311). The attribute's comment: “part (1)”.
 
 > Let `i : Z ⟶ X` be an immersion and `U ⊆ X` an open
 > subscheme such that `i(Z) ⊆ U` is a closed subset of `U`; let `ℐ ⊆ 𝒪_U` be the quasi-coherent
@@ -161,7 +161,7 @@ theorem conormalAlgebra_identifications :
         (conormalAlgebra i).algebra.one.eval (op W))
 ```
 
-**`AlgebraicGeometry.affineSectionsEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/ConormalSections.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/ConormalSections.lean#L183). The attribute's comment: “conormal\_algebra\_affine\_sections”.
+**`AlgebraicGeometry.affineSectionsEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/ConormalSections.lean, line 183](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/ConormalSections.lean#L183). The attribute's comment: “conormal\_algebra\_affine\_sections”.
 
 > The homogeneous sections of the conormal algebra on an affine closed-immersion chart are
 > canonically the quotients `I^n/I^(n+1)`, compatibly with multiplication, unit, and scalars.
@@ -173,7 +173,7 @@ noncomputable def affineSectionsEquiv {Z X : Scheme.{u}} (i : Z ⟶ X)
     AffineSectionsEquiv i U hU
 ```
 
-**`AlgebraicGeometry.conormalAlgebra_on_closed_open`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/ConormalSections.lean, line 543](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/ConormalSections.lean#L543). The attribute's comment: “conormal\_algebra\_on\_closed\_open”.
+**`AlgebraicGeometry.conormalAlgebra_on_closed_open`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/ConormalSections.lean, line 543](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/RegularImmersion/ConormalSections.lean#L543). The attribute's comment: “conormal\_algebra\_on\_closed\_open”.
 
 > Both canonical identifications of the conormal algebra on an open where the immersion is
 > closed.
@@ -190,7 +190,7 @@ noncomputable def conormalAlgebra_on_closed_open
 
 [Tag 0634](https://stacks.math.columbia.edu/tag/0634) in the Stacks Project.
 
-**`AlgebraicGeometry.conormalAlgebraHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/NormalCone/Functoriality/ConormalAlgebraHom.lean, line 603](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/NormalCone/Functoriality/ConormalAlgebraHom.lean#L603).
+**`AlgebraicGeometry.conormalAlgebraHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/NormalCone/Functoriality/ConormalAlgebraHom.lean, line 603](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/NormalCone/Functoriality/ConormalAlgebraHom.lean#L603).
 
 > **Stacks Project, Tag 0634.** The unique morphism of conormal graded
 > algebras over a commutative square of immersions is induced on every affine
@@ -207,7 +207,7 @@ noncomputable def conormalAlgebraHom {Z X Z' X' : Scheme.{u}}
 
 [Tag 0635](https://stacks.math.columbia.edu/tag/0635) in the Stacks Project.
 
-**`AlgebraicGeometry.conormalAlgebraMap_epi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/NormalCone/BaseChange.lean, line 834](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/NormalCone/BaseChange.lean#L834). The attribute's comment: “surjectivity”.
+**`AlgebraicGeometry.conormalAlgebraMap_epi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/NormalCone/BaseChange.lean, line 834](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/NormalCone/BaseChange.lean#L834). The attribute's comment: “surjectivity”.
 
 > The canonical map on each homogeneous piece of the conormal algebra is
 > locally surjective for a cartesian square of immersions.
@@ -219,7 +219,7 @@ theorem conormalAlgebraMap_epi {Z X Z' X' : Scheme.{u}}
     Epi ((canonicalPullbackHom i i' f g sq.w.symm).hom n)
 ```
 
-**`AlgebraicGeometry.conormalAlgebraMap_isIso_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/NormalCone/BaseChange.lean, line 1152](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/NormalCone/BaseChange.lean#L1152). The attribute's comment: “flat isomorphism”.
+**`AlgebraicGeometry.conormalAlgebraMap_isIso_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/NormalCone/BaseChange.lean, line 1152](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/NormalCone/BaseChange.lean#L1152). The attribute's comment: “flat isomorphism”.
 
 > Under flat base change the canonical map on every homogeneous piece is
 > an isomorphism.
@@ -236,7 +236,7 @@ theorem conormalAlgebraMap_isIso_of_flat {Z X Z' X' : Scheme.{u}}
 
 [Tag 0636](https://stacks.math.columbia.edu/tag/0636) in the Stacks Project.
 
-**`Stacks.Conormal.normalBundle`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/NormalCone/NormalBundle.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/NormalCone/NormalBundle.lean#L112). The attribute's comment: “the normal bundle N\_ZX = Spec\_Z(Sym(C\_\{Z/X}))”.
+**`Stacks.Conormal.normalBundle`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/NormalCone/NormalBundle.lean, line 112](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/NormalCone/NormalBundle.lean#L112). The attribute's comment: “the normal bundle N\_ZX = Spec\_Z(Sym(C\_\{Z/X}))”.
 
 > **Stacks Project, Tag 0636.** **The normal bundle `N_ZX = Spec_Z(Sym(𝒞_{Z/X}))`** of an
 > immersion `i : Z ⟶ X`: the relative spectrum over `Z` of the symmetric algebra on the conormal
@@ -246,7 +246,7 @@ theorem conormalAlgebraMap_isIso_of_flat {Z X Z' X' : Scheme.{u}}
 def normalBundle : Scheme.{u}
 ```
 
-**`Stacks.Conormal.normalBundleVectorBundle`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/NormalCone/NormalBundle.lean, line 145](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/NormalCone/NormalBundle.lean#L145). The attribute's comment: “N\_ZX is a vector bundle over Z in the sense of 062M”.
+**`Stacks.Conormal.normalBundleVectorBundle`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/NormalCone/NormalBundle.lean, line 145](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/NormalCone/NormalBundle.lean#L145). The attribute's comment: “N\_ZX is a vector bundle over Z in the sense of 062M”.
 
 > **Stacks Project, Tag 0636.** **`N_ZX` is a vector bundle over `Z`** in the sense of Tag
 > 062M: it is the vector bundle `𝐕(𝒞_{Z/X})` of Tag 01M2 attached to the conormal sheaf, the
@@ -256,7 +256,7 @@ def normalBundle : Scheme.{u}
 def normalBundleVectorBundle : VectorBundle Z
 ```
 
-**`Stacks.Conormal.normalConeCone`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/NormalCone/NormalBundle.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/NormalCone/NormalBundle.lean#L216). The attribute's comment: “C\_ZX is a cone over Z in the sense of 062R”.
+**`Stacks.Conormal.normalConeCone`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/NormalCone/NormalBundle.lean, line 216](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/NormalCone/NormalBundle.lean#L216). The attribute's comment: “C\_ZX is a cone over Z in the sense of 062R”.
 
 > **Stacks Project, Tag 0636.** **`C_ZX` is a cone over `Z`** in the sense of Tag 062R: it is
 > affine over `Z`, and the homogeneous pieces `𝒞_{Z/X,n}` of the conormal algebra decompose the
@@ -269,13 +269,29 @@ def normalConeCone : AbstractCone Z
 
 Declarations registered for the tag:
 
-- [`Stacks.Conormal.normalCone`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/NormalCone/NormalConeInNormalBundle.lean#L228), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Divisors/NormalCone/NormalBundle.lean, line 253](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/NormalCone/NormalBundle.lean#L253) (StacksFrontier): “the normal cone C\_ZX = Spec\_Z(C\_\{Z/X,*})”.
+- [`Stacks.Conormal.normalCone`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/NormalCone/NormalConeInNormalBundle.lean#L220), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Divisors/NormalCone/NormalBundle.lean, line 253](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/NormalCone/NormalBundle.lean#L253) (StacksFrontier): “the normal cone C\_ZX = Spec\_Z(C\_\{Z/X,*})”.
 
 ## Tag 0637, an equation
 
 [Tag 0637](https://stacks.math.columbia.edu/tag/0637) in the Stacks Project.
 
-**`Stacks.Conormal.normalConeToNormalBundle`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/NormalCone/NormalConeInNormalBundle.lean, line 241](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/NormalCone/NormalConeInNormalBundle.lean#L241). The attribute's comment: “the canonical surjection of graded algebras defines a morphism C\_ZX → N\_ZX”.
+**`Stacks.Conormal.isClosedImmersion_normalConeToNormalBundle_and_coneHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/NormalCone/NormalConeConeHom.lean, line 96](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/NormalCone/NormalConeConeHom.lean#L96). The attribute's comment: “the canonical closed immersion C\_ZX → N\_ZX of cones over Z”.
+
+> **Stacks Project, Tag 0637.** **The canonical surjection `Sym*(𝒞_{Z/X}) ⟶ 𝒞_{Z/X,*}` of
+> graded algebras defines a canonical closed immersion `C_ZX ⟶ N_ZX` of cones over `Z`.** The
+> morphism `Stacks.Conormal.normalConeToNormalBundle`, the relative spectrum of that surjection, is
+> a closed immersion, and it is the morphism of total spaces of a morphism of cones over `Z` from
+> the normal cone `Stacks.Conormal.normalConeCone` to the normal bundle
+> `Stacks.Conormal.normalBundleVectorBundle` whose graded part is the surjection.
+
+```lean
+theorem isClosedImmersion_normalConeToNormalBundle_and_coneHom :
+    IsClosedImmersion (normalConeToNormalBundle i) ∧
+      ∃ φ : AbstractCone.Hom (normalConeCone i) (normalBundleVectorBundle i).toAbstractCone,
+        φ.f = normalConeToNormalBundle i ∧ φ.graded = (conormalSymmetricHom i).toHom
+```
+
+**`Stacks.Conormal.normalConeToNormalBundle`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/NormalCone/NormalConeInNormalBundle.lean, line 233](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/NormalCone/NormalConeInNormalBundle.lean#L233). The attribute's comment: “the canonical surjection of graded algebras defines a morphism C\_ZX → N\_ZX”.
 
 > **Stacks Project, Tag 0637.** **The canonical morphism `C_ZX ⟶ N_ZX` from the normal cone to
 > the normal bundle of an immersion**, defined by the canonical map
@@ -288,7 +304,7 @@ def normalConeToNormalBundle :
     normalCone i ⟶ Scheme.Modules.vectorBundle Z (conormalSheafDegreeOne i)
 ```
 
-**`Stacks.Conormal.normalConeToNormalBundle_toBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/NormalCone/NormalConeInNormalBundle.lean, line 250](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/NormalCone/NormalConeInNormalBundle.lean#L250). The attribute's comment: “the morphism C\_ZX → N\_ZX is a morphism over Z”.
+**`Stacks.Conormal.normalConeToNormalBundle_toBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/NormalCone/NormalConeInNormalBundle.lean, line 242](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/NormalCone/NormalConeInNormalBundle.lean#L242). The attribute's comment: “the morphism C\_ZX → N\_ZX is a morphism over Z”.
 
 > **Stacks Project, Tag 0637.** The canonical morphism `C_ZX ⟶ N_ZX` is a morphism of schemes
 > over `Z`: it carries the projection of the normal bundle to the projection of the normal cone.
@@ -307,4 +323,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 31.20, Tag 062Z](https://stacks.math.columbia.edu/tag/062Z)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

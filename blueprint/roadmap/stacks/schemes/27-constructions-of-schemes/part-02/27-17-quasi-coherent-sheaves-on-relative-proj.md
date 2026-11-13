@@ -8,13 +8,13 @@ proof: formalized
 
 # 27.17 Quasi-coherent sheaves on relative Proj
 
-Section 27.17 of the Stacks Project, [Tag 01O5](https://stacks.math.columbia.edu/tag/01O5). 2 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 27.17 of the Stacks Project, [Tag 01O5](https://stacks.math.columbia.edu/tag/01O5). 2 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 01O6, an equation
 
 [Tag 01O6](https://stacks.math.columbia.edu/tag/01O6) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.RelativeProjQcohSheaf.Twisting.associatedSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/Basic.lean, line 304](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/Basic.lean#L304).
+**`Stacks.AlgebraicGeometry.RelativeProjQcohSheaf.Twisting.associatedSheaf`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/Basic.lean, line 304](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeProjQcohSheaf/Basic.lean#L304).
 
 > **Stacks Project, Tag 01O6, equation (27.17.0.1).** The `𝒪_T`-module
 >
@@ -34,7 +34,7 @@ def associatedSheaf : SheafOfModules.{u} (structureRingSheaf T.toRingedSpace)
 
 [Tag 01O7](https://stacks.math.columbia.edu/tag/01O7) in the Stacks Project.
 
-**`Stacks.RelativeProj.Situation.tensorModuleSheafMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjLeftGradedTensorGlueHom.lean, line 449](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeProjLeftGradedTensorGlueHom.lean#L449). The attribute's comment: “property (6): the canonical map from the tensor product of the sheaves attached to two left graded modules with quasi-coherent homogeneous pieces to the sheaf attached to the tensor product of those modules, on a relative projective spectrum”.
+**`Stacks.RelativeProj.Situation.tensorModuleSheafMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjLeftGradedTensorGlueHom.lean, line 450](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeProjLeftGradedTensorGlueHom.lean#L450). The attribute's comment: “property (6): the canonical map from the tensor product of the sheaves attached to two left graded modules with quasi-coherent homogeneous pieces to the sheaf attached to the tensor product of those modules, on a relative projective spectrum”.
 
 > **The canonical map `ℳ̃ ⊗_𝒪 𝒩̃ ⟶ (ℳ ⊗_𝒜 𝒩)~` of property (6) of Tag 01O7**, for two left
 > graded modules with quasi-coherent homogeneous pieces over the graded algebra of a relative `Proj`
@@ -50,7 +50,7 @@ public noncomputable def tensorModuleSheafMap :
         ((moduleSheaf 𝒩))) ⟶ s.tensorModuleSheaf ℳ 𝒩
 ```
 
-**`Stacks.AlgebraicGeometry.RelativeProjQuadrupleTilde.tag01O7_property1`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjQuadrupleTilde/TildeComparison.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeProjQuadrupleTilde/TildeComparison.lean#L62). The attribute's comment: “property (1): the canonical isomorphism M~\_T ≅ h^*M~”.
+**`Stacks.AlgebraicGeometry.RelativeProjQuadrupleTilde.tag01O7_property1`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjQuadrupleTilde/TildeComparison.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeProjQuadrupleTilde/TildeComparison.lean#L62). The attribute's comment: “property (1): the canonical isomorphism M~\_T ≅ h^*M~”.
 
 > For a quadruple `P = (f : T → S, d, L, ψ)` and the morphism `h : T ⟶ Proj_S(𝒜)` it
 > classifies, the isomorphism `Quadruple.tildeComparison ℳ hd P : ℳ̃_T ≅ h^*ℳ̃` satisfies:
@@ -86,7 +86,7 @@ theorem tag01O7_property1 :
         Φ = Quadruple.tildeComparison ℳ hd P)
 ```
 
-**`Stacks.AlgebraicGeometry.RelativeProjQuadrupleTilde.Quadruple.tildeComparison_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjQuadrupleTilde/TildePullback.lean, line 308](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/RelativeProjQuadrupleTilde/TildePullback.lean#L308). The attribute's comment: “property (2): the isomorphisms of property (1) are compatible with pullback along every morphism of test schemes”.
+**`Stacks.AlgebraicGeometry.RelativeProjQuadrupleTilde.Quadruple.tildeComparison_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/RelativeProjQuadrupleTilde/TildePullback.lean, line 308](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/RelativeProjQuadrupleTilde/TildePullback.lean#L308). The attribute's comment: “property (2): the isomorphisms of property (1) are compatible with pullback along every morphism of test schemes”.
 
 > **Property (2) of [Stacks, Tag 01O7]: the isomorphisms of property (1) are compatible with
 > pullbacks.** For a quadruple `P = (f : T → S, d, L, ψ)` classifying `h : T ⟶ Proj_S(𝒜)` and a
@@ -110,7 +110,7 @@ theorem Quadruple.tildeComparison_pullback {T : Scheme.{u}} {f : T ⟶ s.base}
                 (moduleSheaf ℳ)
 ```
 
-**`Stacks.RelativeProj.Situation.moduleSheafPullbackIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/ModuleGlueing/RelativeProjModuleBaseChangeIso.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/ModuleGlueing/RelativeProjModuleBaseChangeIso.lean#L169). The attribute's comment: “property (8): the canonical isomorphism r^* ℳ̃ ≅ (g^* ℳ)~ on the relative projective spectrum of g^* 𝒜, for any morphism of schemes g : S' ⟶ S”.
+**`Stacks.RelativeProj.Situation.moduleSheafPullbackIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/ModuleGlueing/RelativeProjModuleBaseChangeIso.lean, line 169](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Modules/ModuleGlueing/RelativeProjModuleBaseChangeIso.lean#L169). The attribute's comment: “property (8): the canonical isomorphism r^* ℳ̃ ≅ (g^* ℳ)~ on the relative projective spectrum of g^* 𝒜, for any morphism of schemes g : S' ⟶ S”.
 
 > **Stacks Project, Tag 01O7, property (8).** **The formation of `ℳ̃` commutes with base
 > change.** For a morphism of schemes `g : S' ⟶ S`, put `𝒜' = g^* 𝒜` and `ℳ' = g^* ℳ`, and let
@@ -129,7 +129,7 @@ public noncomputable def moduleSheafPullbackIso :
       moduleSheaf (s := s.pullback g) (Stacks.Conormal.leftGradedPullback g ℳ)
 ```
 
-**`Stacks.RelativeProj.Situation.moduleSheafFibreProductIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/ModuleGlueing/RelativeProjModuleBaseChangeIso.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/ModuleGlueing/RelativeProjModuleBaseChangeIso.lean#L216). The attribute's comment: “property (8) on the fibre product: the canonical isomorphism between the pullback of ℳ̃ along S' ×\_S Proj\_S(𝒜) ⟶ Proj\_S(𝒜) and (g^* ℳ)~ carried to S' ×\_S Proj\_S(𝒜)”.
+**`Stacks.RelativeProj.Situation.moduleSheafFibreProductIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/ModuleGlueing/RelativeProjModuleBaseChangeIso.lean, line 216](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Modules/ModuleGlueing/RelativeProjModuleBaseChangeIso.lean#L216). The attribute's comment: “property (8) on the fibre product: the canonical isomorphism between the pullback of ℳ̃ along S' ×\_S Proj\_S(𝒜) ⟶ Proj\_S(𝒜) and (g^* ℳ)~ carried to S' ×\_S Proj\_S(𝒜)”.
 
 > **Stacks Project, Tag 01O7, property (8), on the fibre product.** For a morphism of schemes
 > `g : S' ⟶ S`, the pullback of `ℳ̃` along the projection `S' ×_S Proj_S(𝒜) ⟶ Proj_S(𝒜)` is
@@ -147,7 +147,7 @@ public noncomputable def moduleSheafFibreProductIso :
         (moduleSheaf (s := s.pullback g) (Stacks.Conormal.leftGradedPullback g ℳ))
 ```
 
-**`Stacks.RelativeProj.Situation.degreeZeroSheafMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/ModuleGlueing/RelativeProjModuleSheafDegreeZeroMap.lean, line 450](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/ModuleGlueing/RelativeProjModuleSheafDegreeZeroMap.lean#L450). The attribute's comment: “property (3): the canonical map from the pullback of the degree-zero part of a graded module to its associated sheaf on the relative projective spectrum”. References: EGA II (3.3.2), “Map (3.3.2.4) for n = 0”.
+**`Stacks.RelativeProj.Situation.degreeZeroSheafMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/ModuleGlueing/RelativeProjModuleSheafDegreeZeroMap.lean, line 450](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Modules/ModuleGlueing/RelativeProjModuleSheafDegreeZeroMap.lean#L450). The attribute's comment: “property (3): the canonical map from the pullback of the degree-zero part of a graded module to its associated sheaf on the relative projective spectrum”. References: EGA II (3.3.2), “Map (3.3.2.4) for n = 0”.
 
 > **Stacks Project, Tag 01O7, property (3).** The canonical map
 >
@@ -165,7 +165,7 @@ public def degreeZeroSheafMap :
     (Scheme.Modules.pullback (relativeProjToBase s)).obj (ℳ.piece 0) ⟶ moduleSheaf ℳ
 ```
 
-**`Stacks.RelativeProj.Situation.moduleSheafFunctor_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/ModuleGlueing/RelativeProjModuleSheafExactAbelian.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/ModuleGlueing/RelativeProjModuleSheafExactAbelian.lean#L216). The attribute's comment: “property (5): the construction ℳ ↦ ℳ̃ is an exact functor from the abelian category of quasi-coherent graded modules over 𝒜 to modules on the relative projective spectrum”. References: EGA II (8.14.1), “partial”.
+**`Stacks.RelativeProj.Situation.moduleSheafFunctor_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/ModuleGlueing/RelativeProjModuleSheafExactAbelian.lean, line 216](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Modules/ModuleGlueing/RelativeProjModuleSheafExactAbelian.lean#L216). The attribute's comment: “property (5): the construction ℳ ↦ ℳ̃ is an exact functor from the abelian category of quasi-coherent graded modules over 𝒜 to modules on the relative projective spectrum”. References: EGA II (8.14.1), “partial”.
 
 > The functor `Stacks.RelativeProj.Situation.moduleSheafFunctor`, from the abelian category of
 > quasi-coherent graded modules over the graded algebra `𝒜` of the situation to the modules on the
@@ -181,7 +181,7 @@ public theorem moduleSheafFunctor_exact :
         (S.map (moduleSheafFunctor s)).ShortExact
 ```
 
-**`Stacks.RelativeProj.Situation.moduleSheafFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/ModuleGlueing/RelativeProjModuleSheafFunctorial.lean, line 229](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/ModuleGlueing/RelativeProjModuleSheafFunctorial.lean#L229). The attribute's comment: “property (4): the construction ℳ ↦ ℳ̃ is a functor from quasi-coherent graded modules over 𝒜 to modules on the relative projective spectrum”.
+**`Stacks.RelativeProj.Situation.moduleSheafFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/ModuleGlueing/RelativeProjModuleSheafFunctorial.lean, line 229](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Modules/ModuleGlueing/RelativeProjModuleSheafFunctorial.lean#L229). The attribute's comment: “property (4): the construction ℳ ↦ ℳ̃ is a functor from quasi-coherent graded modules over 𝒜 to modules on the relative projective spectrum”.
 
 > The construction `ℳ ↦ ℳ̃` is functorial in `ℳ`: it is a functor from the quasi-coherent
 > graded modules over the graded algebra `𝒜` to the modules over the relative projective spectrum
@@ -193,7 +193,7 @@ public theorem moduleSheafFunctor_exact :
 public noncomputable def moduleSheafFunctor : QcohGradedModule s ⥤ (relativeProj s).Modules
 ```
 
-**`Stacks.RelativeProj.Situation.shiftedSumSheafMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/ModuleGlueing/RelativeProjModuleSheafShiftedSum.lean, line 115](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Modules/ModuleGlueing/RelativeProjModuleSheafShiftedSum.lean#L115). The attribute's comment: “property (7): the canonical map from the pullback of a graded module to the direct sum of the sheaves associated to its shifts on the relative projective spectrum”.
+**`Stacks.RelativeProj.Situation.shiftedSumSheafMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Modules/ModuleGlueing/RelativeProjModuleSheafShiftedSum.lean, line 115](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Modules/ModuleGlueing/RelativeProjModuleSheafShiftedSum.lean#L115). The attribute's comment: “property (7): the canonical map from the pullback of a graded module to the direct sum of the sheaves associated to its shifts on the relative projective spectrum”.
 
 > **Stacks Project, Tag 01O7, property (7).** The canonical map
 >
@@ -219,4 +219,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 27.17, Tag 01O5](https://stacks.math.columbia.edu/tag/01O5)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

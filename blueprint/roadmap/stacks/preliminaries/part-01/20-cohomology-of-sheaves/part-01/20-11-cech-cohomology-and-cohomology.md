@@ -8,13 +8,13 @@ proof: formalized
 
 # 20.11 Čech cohomology and cohomology
 
-Section 20.11 of the Stacks Project, [Tag 01EO](https://stacks.math.columbia.edu/tag/01EO). 12 tags here are carried by 27 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 20.11 of the Stacks Project, [Tag 01EO](https://stacks.math.columbia.edu/tag/01EO). 12 tags here are carried by 27 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 01EP, a lemma
 
 [Tag 01EP](https://stacks.math.columbia.edu/tag/01EP) in the Stacks Project.
 
-**`Stacks.Cohomology.existsUnique_cechRestrictionHomologyMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/CechModules.lean, line 250](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/CechModules.lean#L250). The attribute's comment: “degree zero”.
+**`Stacks.Cohomology.existsUnique_cechRestrictionHomologyMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/CechModules.lean, line 250](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Cohomology/CechModules.lean#L250). The attribute's comment: “degree zero”.
 
 > There is a unique `R(V)`-linear map from the sections of `I` over the covered open `V` to
 > the degree `0` Čech cohomology whose composite with the inclusion of the homology into the
@@ -28,7 +28,7 @@ theorem existsUnique_cechRestrictionHomologyMap (V : Opens X) (U : ι → Opens 
         cechDegreeZeroRestriction V U hU I ≫ (cechComplex V U hU I).pOpcycles 0
 ```
 
-**`Stacks.Cohomology.isZero_homology_cechComplex_of_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/CechModulesInjective.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Cohomology/CechModulesInjective.lean#L187). The attribute's comment: “positive degrees”.
+**`Stacks.Cohomology.isZero_homology_cechComplex_of_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Cohomology/CechModulesInjective.lean, line 187](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Cohomology/CechModulesInjective.lean#L187). The attribute's comment: “positive degrees”.
 
 > **Stacks Project, Tag 01EP, positive degrees.** The cohomology of the module-valued Čech
 > complex of an injective sheaf of modules, for a covering of an open subset `V` by a family
@@ -45,7 +45,7 @@ theorem isZero_homology_cechComplex_of_injective (V : Opens X) (U : ι → Opens
     IsZero ((cechComplex V U hU I).homology n)
 ```
 
-**`Stacks.Cohomology.CechSheaf.existsUnique_cechRestrictionHomologyMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechOfSheavesOfModules/DegreeZeroUniqueIsomorphism.lean, line 150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/CechOfSheavesOfModules/DegreeZeroUniqueIsomorphism.lean#L150). The attribute's comment: “degree zero”.
+**`Stacks.Cohomology.CechSheaf.existsUnique_cechRestrictionHomologyMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechOfSheavesOfModules/DegreeZeroUniqueIsomorphism.lean, line 150](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/CechOfSheavesOfModules/DegreeZeroUniqueIsomorphism.lean#L150). The attribute's comment: “degree zero”.
 
 > **The degree-zero clause of [Stacks, Tag 01EP].**  There is a unique `R(V)`-linear map from
 > the sections of `ℱ` on the covered open to degree-zero Čech cohomology whose composite with the
@@ -64,7 +64,7 @@ theorem existsUnique_cechRestrictionHomologyMap :
           cechDegreeZeroRestriction V U hU I ≫ (cechComplex V U hU I).pOpcycles 0
 ```
 
-**`Stacks.Cohomology.CechSheaf.isZero_cechComplex_homology_of_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechOfSheavesOfModules/InjectiveVanishing.lean, line 400](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/CechOfSheavesOfModules/InjectiveVanishing.lean#L400). The attribute's comment: “positive degrees”.
+**`Stacks.Cohomology.CechSheaf.isZero_cechComplex_homology_of_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechOfSheavesOfModules/InjectiveVanishing.lean, line 400](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/CechOfSheavesOfModules/InjectiveVanishing.lean#L400). The attribute's comment: “positive degrees”.
 
 > **Stacks 01EP, positive degrees.** The positive-degree module-valued Čech cohomology of an
 > injective sheaf of modules vanishes.
@@ -80,7 +80,7 @@ public theorem isZero_cechComplex_homology_of_injective
 
 [Tag 01EQ](https://stacks.math.columbia.edu/tag/01EQ) in the Stacks Project.
 
-**`Stacks.Cohomology.CechDerived.cechToDerivedGlobalSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechToCohomology/ComparisonToDerivedSections.lean, line 763](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/CechToCohomology/ComparisonToDerivedSections.lean#L763). The attribute's comment: “the derived transformation”. References: EGA 0 (12.1.2), “A-linear Č^p → H^p maps”.
+**`Stacks.Cohomology.CechDerived.cechToDerivedGlobalSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechToCohomology/ComparisonToDerivedSections.lean, line 763](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/CechToCohomology/ComparisonToDerivedSections.lean#L763). The attribute's comment: “the derived transformation”. References: EGA 0 (12.1.2), “A-linear Č^p → H^p maps”.
 
 > **The canonical natural transformation from the Čech complex of an open cover to derived
 > global sections on the covered open.**
@@ -95,7 +95,7 @@ def cechToDerivedGlobalSections :
       derivedGlobalSectionsFunctor O U
 ```
 
-**`Stacks.Cohomology.CechDerived.cechCohomologyToCohomology`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechToCohomology/ComparisonToDerivedSections.lean, line 774](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/CechToCohomology/ComparisonToDerivedSections.lean#L774). The attribute's comment: “the induced cohomology maps”. References: EGA 0 (12.1.2), “A-linear Ȟ^p → H^p”.
+**`Stacks.Cohomology.CechDerived.cechCohomologyToCohomology`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechToCohomology/ComparisonToDerivedSections.lean, line 774](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/CechToCohomology/ComparisonToDerivedSections.lean#L774). The attribute's comment: “the induced cohomology maps”. References: EGA 0 (12.1.2), “A-linear Ȟ^p → H^p”.
 
 > **The canonical maps from Čech cohomology to sheaf cohomology**, natural in the sheaf of
 > modules.
@@ -108,7 +108,7 @@ def cechCohomologyToCohomology (p : ℤ) :
         DerivedCategory.Plus.homologyFunctor _ p)
 ```
 
-**`Stacks.Cohomology.CechDerived.nonempty_cechResolutionComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechToCohomology/ComparisonToDerivedSections.lean, line 785](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/CechToCohomology/ComparisonToDerivedSections.lean#L785). The attribute's comment: “the injective-resolution specification”.
+**`Stacks.Cohomology.CechDerived.nonempty_cechResolutionComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechToCohomology/ComparisonToDerivedSections.lean, line 785](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/CechToCohomology/ComparisonToDerivedSections.lean#L785). The attribute's comment: “the injective-resolution specification”.
 
 > **For every injective resolution, the canonical comparison is the map prescribed by the
 > total Čech complex construction.**  In particular it is independent of the resolution.
@@ -120,7 +120,7 @@ theorem nonempty_cechResolutionComparison (F : SheafOfModules.{u} O)
       (cechToDerivedGlobalSections O U Ui hU) F J)
 ```
 
-**`Stacks.Cohomology.CechOne.cechH1ToRightDerivedSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechToCohomology/DegreeOneComparison.lean, line 852](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/CechToCohomology/DegreeOneComparison.lean#L852). The attribute's comment: “the additive-sheaf degree-one comparison”.
+**`Stacks.Cohomology.CechOne.cechH1ToRightDerivedSections`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechToCohomology/DegreeOneComparison.lean, line 852](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/CechToCohomology/DegreeOneComparison.lean#L852). The attribute's comment: “the additive-sheaf degree-one comparison”.
 
 > The canonical additive comparison from the Čech quotient to the first
 > right-derived functor of sections, for an arbitrary abelian sheaf.
@@ -135,7 +135,7 @@ noncomputable def cechH1ToRightDerivedSections
         (op U)).rightDerived 1).obj H
 ```
 
-**`Stacks.Cohomology.CechOne.exists_cechOneResolutionRepresentative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechToCohomology/DegreeOneComparison.lean, line 874](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/CechToCohomology/DegreeOneComparison.lean#L874). The attribute's comment: “the additive-sheaf injective-resolution specification”.
+**`Stacks.Cohomology.CechOne.exists_cechOneResolutionRepresentative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechToCohomology/DegreeOneComparison.lean, line 874](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/CechToCohomology/DegreeOneComparison.lean#L874). The attribute's comment: “the additive-sheaf injective-resolution specification”.
 
 > Every Čech cocycle admits the representative prescribed by the total-complex
 > construction, in every injective resolution, and its class is the comparison image.
@@ -156,7 +156,7 @@ theorem exists_cechOneResolutionRepresentative
           ((abelianResolutionSections X U J).homologyπ 1 r.cycle)
 ```
 
-**`Stacks.Cohomology.CechOne.cechH1ToRightDerivedSections_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechToCohomology/DegreeOneComparison.lean, line 895](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/CechToCohomology/DegreeOneComparison.lean#L895). The attribute's comment: “calculation of the additive-sheaf comparison”.
+**`Stacks.Cohomology.CechOne.cechH1ToRightDerivedSections_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechToCohomology/DegreeOneComparison.lean, line 895](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/CechToCohomology/DegreeOneComparison.lean#L895). The attribute's comment: “calculation of the additive-sheaf comparison”.
 
 > Any injective-resolution representative computes the canonical comparison;
 > neither the chosen zero-cochain nor the chosen resolution changes its value.
@@ -176,7 +176,7 @@ theorem cechH1ToRightDerivedSections_apply
         ((abelianResolutionSections X U J).homologyπ 1 r.cycle)
 ```
 
-**`Stacks.Cohomology.CechOne.cechH1ToRightDerivedSections_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechToCohomology/DegreeOneComparison.lean, line 912](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/CechToCohomology/DegreeOneComparison.lean#L912). The attribute's comment: “naturality of the additive-sheaf degree-one comparison”.
+**`Stacks.Cohomology.CechOne.cechH1ToRightDerivedSections_naturality`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechToCohomology/DegreeOneComparison.lean, line 912](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/CechToCohomology/DegreeOneComparison.lean#L912). The attribute's comment: “naturality of the additive-sheaf degree-one comparison”.
 
 > Naturality of the additive-sheaf comparison, expressed on Čech cocycles.
 
@@ -198,7 +198,7 @@ theorem cechH1ToRightDerivedSections_naturality
 
 [Tag 0B8R](https://stacks.math.columbia.edu/tag/0B8R) in the Stacks Project.
 
-**`Stacks.Cohomology.SheafTorsor.cechH1EquivLocallyTrivialTorsorClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Torsors/LocalTriviality.lean, line 737](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/Torsors/LocalTriviality.lean#L737). The attribute's comment: “identification with locally trivial torsors”. References: EGA IV (16.5.15), “partial”; SGA 4½ Cycle (1.1.2), “cocycle ↔ torsor class”.
+**`Stacks.Cohomology.SheafTorsor.cechH1EquivLocallyTrivialTorsorClass`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Torsors/LocalTriviality.lean, line 737](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/Torsors/LocalTriviality.lean#L737). The attribute's comment: “identification with locally trivial torsors”. References: EGA IV (16.5.15), “partial”; SGA 4½ Cycle (1.1.2), “cocycle ↔ torsor class”.
 
 > **Stacks Project, Tag 0B8R.** First Čech cohomology of an open covering is in canonical
 > bijection with the set of isomorphism classes of torsors which are trivial on every member of
@@ -209,7 +209,7 @@ def cechH1EquivLocallyTrivialTorsorClass :
     CechCochains.CechH1 Ui H.presheaf ≃ {c : TorsorClass X H // IsLocallyTrivialOn H Ui c}
 ```
 
-**`Stacks.Cohomology.SheafTorsor.torsorClassEquivSheafCohomologyOne_cechH1Equiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Torsors/LocalTriviality.lean, line 748](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/Torsors/LocalTriviality.lean#L748). The attribute's comment: “identification with locally trivial torsors”.
+**`Stacks.Cohomology.SheafTorsor.torsorClassEquivSheafCohomologyOne_cechH1Equiv`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Torsors/LocalTriviality.lean, line 748](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/Torsors/LocalTriviality.lean#L748). The attribute's comment: “identification with locally trivial torsors”.
 
 > **Stacks Project, Tag 0B8R.** The bijection of
 > `cechH1EquivLocallyTrivialTorsorClass` is the one induced by the canonical comparison to first
@@ -222,7 +222,7 @@ theorem torsorClassEquivSheafCohomologyOne_cechH1Equiv (z : CechCochains.CechH1 
       CechOne.cechH1ToRightDerivedSections X ⊤ Ui hUi H z
 ```
 
-**`Stacks.Cohomology.SheafTorsor.cechH1ToRightDerivedSections_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Torsors/LocalTriviality.lean, line 757](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/Torsors/LocalTriviality.lean#L757). The attribute's comment: “injectivity”.
+**`Stacks.Cohomology.SheafTorsor.cechH1ToRightDerivedSections_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/Torsors/LocalTriviality.lean, line 757](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/Torsors/LocalTriviality.lean#L757). The attribute's comment: “injectivity”.
 
 > **Stacks Project, Tag 0B8R.** The canonical additive comparison from first Čech cohomology
 > of an open covering to first sheaf cohomology is injective.
@@ -234,13 +234,13 @@ theorem cechH1ToRightDerivedSections_injective :
 
 Declarations registered for the tag:
 
-- [`Stacks.Cohomology.CechOne.cechH1ToRightDerivedSections`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/CechToCohomology/DegreeOneComparison.lean#L852), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Cohomology/Torsors/LocalTriviality.lean, line 768](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/Torsors/LocalTriviality.lean#L768) (StacksFrontier): “the canonical comparison map”.
+- [`Stacks.Cohomology.CechOne.cechH1ToRightDerivedSections`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/CechToCohomology/DegreeOneComparison.lean#L852), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Cohomology/Torsors/LocalTriviality.lean, line 768](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/Torsors/LocalTriviality.lean#L768) (StacksFrontier): “the canonical comparison map”.
 
 ## Tag 01ER, a lemma
 
 [Tag 01ER](https://stacks.math.columbia.edu/tag/01ER) in the Stacks Project.
 
-**`Stacks.Cohomology.DerivedForget.rightDerivedForgetEvaluationIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedFunctors/ForgetfulInclusionCohomologyPresheaf.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedFunctors/ForgetfulInclusionCohomologyPresheaf.lean#L110). The attribute's comment: “right derived functors”.
+**`Stacks.Cohomology.DerivedForget.rightDerivedForgetEvaluationIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedFunctors/ForgetfulInclusionCohomologyPresheaf.lean, line 110](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedFunctors/ForgetfulInclusionCohomologyPresheaf.lean#L110). The attribute's comment: “right derived functors”.
 
 > **Stacks 01ER.** The value on `U` of the `p`-th right derived functor of the inclusion
 > `Mod(O) ⟶ PMod(O)` is canonically the `p`-th right derived functor of sections on `U`. The
@@ -253,7 +253,7 @@ noncomputable def rightDerivedForgetEvaluationIso (U : Opens X) (p : ℕ) :
       (SheafOfModules.evaluation O (op U)).rightDerived p
 ```
 
-**`Stacks.Cohomology.DerivedForget.rightDerivedForgetCohomologyIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedFunctors/ForgetfulInclusionCohomologyPresheaf.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedFunctors/ForgetfulInclusionCohomologyPresheaf.lean#L122). The attribute's comment: “cohomology presheaf”.
+**`Stacks.Cohomology.DerivedForget.rightDerivedForgetCohomologyIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedFunctors/ForgetfulInclusionCohomologyPresheaf.lean, line 122](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedFunctors/ForgetfulInclusionCohomologyPresheaf.lean#L122). The attribute's comment: “cohomology presheaf”.
 
 > **Stacks 01ER.** After forgetting the module structure, the value on `U` of the `p`-th
 > right derived functor of `Mod(O) ⟶ PMod(O)` is canonically `H^p(U, -)`. This is an isomorphism
@@ -267,7 +267,7 @@ noncomputable def rightDerivedForgetCohomologyIso (U : Opens X) (p : ℕ) :
       Hfunctor O U p
 ```
 
-**`Stacks.Cohomology.DerivedForget.rightDerivedForgetCohomologyIso_naturality_open`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedFunctors/ForgetfulInclusionCohomologyPresheaf.lean, line 137](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedFunctors/ForgetfulInclusionCohomologyPresheaf.lean#L137). The attribute's comment: “compatibility with restriction”.
+**`Stacks.Cohomology.DerivedForget.rightDerivedForgetCohomologyIso_naturality_open`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedFunctors/ForgetfulInclusionCohomologyPresheaf.lean, line 137](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedFunctors/ForgetfulInclusionCohomologyPresheaf.lean#L137). The attribute's comment: “compatibility with restriction”.
 
 > **Stacks 01ER.** The canonical identification of the derived presheaf with
 > `U ↦ H^p(U, -)` commutes with restriction from an open subset `V` to an open subset `U`.
@@ -283,13 +283,13 @@ lemma rightDerivedForgetCohomologyIso_naturality_open
 
 Declarations registered for the tag:
 
-- [`SheafOfModules.Finite.forgetPreservesFiniteLimits`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=SheafOfModules.Finite.forgetPreservesFiniteLimits#doc) registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedFunctors/ForgetfulInclusionCohomologyPresheaf.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedFunctors/ForgetfulInclusionCohomologyPresheaf.lean#L67) (StacksFrontier): “left exact”.
+- [`SheafOfModules.Finite.forgetPreservesFiniteLimits`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=SheafOfModules.Finite.forgetPreservesFiniteLimits#doc) registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedFunctors/ForgetfulInclusionCohomologyPresheaf.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedFunctors/ForgetfulInclusionCohomologyPresheaf.lean#L67) (StacksFrontier): “left exact”.
 
 ## Tag 01ES, a lemma
 
 [Tag 01ES](https://stacks.math.columbia.edu/tag/01ES) in the Stacks Project.
 
-**`Stacks.Cohomology.CechSpectral.cechSpectralSequence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechSpectralSequence/Assembled.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/CechSpectralSequence/Assembled.lean#L124). References: SGA 4 V (3.2), “ringed space, open cover”.
+**`Stacks.Cohomology.CechSpectral.cechSpectralSequence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechSpectralSequence/Assembled.lean, line 124](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/CechSpectralSequence/Assembled.lean#L124). References: SGA 4 V (3.2), “ringed space, open cover”.
 
 > **The functorial Čech spectral sequence of an open covering**, with second page
 > `Ȟ^p(𝒰, H^q(ℱ))` and abutment `H^{p+q}(U, ℱ)`.
@@ -305,7 +305,7 @@ def cechSpectralSequence : CechSpectralSequenceData.{u, r, v, w} O 𝒰
 
 [Tag 01ET](https://stacks.math.columbia.edu/tag/01ET) in the Stacks Project.
 
-**`Stacks.Cohomology.CechAcyclic.isIso_cechCohomologyToCohomology_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechToCohomology/AcyclicCovering.lean, line 503](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/CechToCohomology/AcyclicCovering.lean#L503). The attribute's comment: “the comparison of Tag 01EQ is an isomorphism in every degree”.
+**`Stacks.Cohomology.CechAcyclic.isIso_cechCohomologyToCohomology_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechToCohomology/AcyclicCovering.lean, line 503](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/CechToCohomology/AcyclicCovering.lean#L503). The attribute's comment: “the comparison of Tag 01EQ is an isomorphism in every degree”.
 
 > An open covering whose nonempty finite intersections are acyclic for a module sheaf
 > computes the cohomology of that sheaf by its Čech complex.
@@ -331,7 +331,7 @@ theorem isIso_cechCohomologyToCohomology_app
 
 [Tag 01EU](https://stacks.math.columbia.edu/tag/01EU) in the Stacks Project.
 
-**`Stacks.Cohomology.CechDegreeOneVanishing.cech_h1_vanishing_implies_surjective_on_sections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechOfPresheavesOfModules/DegreeOneVanishingGluesSections.lean, line 412](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/CechOfPresheavesOfModules/DegreeOneVanishingGluesSections.lean#L412).
+**`Stacks.Cohomology.CechDegreeOneVanishing.cech_h1_vanishing_implies_surjective_on_sections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechOfPresheavesOfModules/DegreeOneVanishingGluesSections.lean, line 412](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/CechOfPresheavesOfModules/DegreeOneVanishingGluesSections.lean#L412).
 
 > **Theorem (Stacks project, Tag 01EU; Lemma 20.11.7).** Let `X` be a (ringed) space and
 > `0 → F → G → H → 0` a short exact sequence of abelian sheaves on `X` (the underlying short exact
@@ -355,7 +355,7 @@ theorem cech_h1_vanishing_implies_surjective_on_sections
 
 [Tag 01EV](https://stacks.math.columbia.edu/tag/01EV) in the Stacks Project.
 
-**`Stacks.Cohomology.CechVanishing.isZero_rightDerived_sections_of_isZero_cechHomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechVanishingCriteria/FromCechVanishing.lean, line 794](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/CechVanishingCriteria/FromCechVanishing.lean#L794).
+**`Stacks.Cohomology.CechVanishing.isZero_rightDerived_sections_of_isZero_cechHomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechVanishingCriteria/FromCechVanishing.lean, line 794](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/CechVanishingCriteria/FromCechVanishing.lean#L794).
 
 > **Stacks Project, Tag 01EV.** If all positive-degree Čech cohomology of a sheaf
 > of modules vanishes, then every positive right-derived functor of sections vanishes.
@@ -378,7 +378,7 @@ public theorem isZero_rightDerived_sections_of_isZero_cechHomology
 
 [Tag 01EW](https://stacks.math.columbia.edu/tag/01EW) in the Stacks Project.
 
-**`Stacks.Cohomology.BasisCycles.isZero_hgroup_of_cech_isZero_on_basis`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechVanishingCriteria/OnABasis.lean, line 751](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/CechVanishingCriteria/OnABasis.lean#L751).
+**`Stacks.Cohomology.BasisCycles.isZero_hgroup_of_cech_isZero_on_basis`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechVanishingCriteria/OnABasis.lean, line 751](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/CechVanishingCriteria/OnABasis.lean#L751).
 
 > **Stacks Tag 01EW.** Let `B` be a basis of open subsets of a ringed space and let `Cov` be a
 > collection of open covers by members of `B` whose finite intersections also lie in `B`.  If every
@@ -410,7 +410,7 @@ theorem isZero_hgroup_of_cech_isZero_on_basis (F : SheafOfModules.{max u w} R)
 
 [Tag 01EX](https://stacks.math.columbia.edu/tag/01EX) in the Stacks Project.
 
-**`Stacks.Cohomology.PushforwardAcyclic.pushforward_injective_rightAcyclic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechAcyclicity/PushforwardOfAnInjective.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/CechAcyclicity/PushforwardOfAnInjective.lean#L95). The attribute's comment: “part (2)”.
+**`Stacks.Cohomology.PushforwardAcyclic.pushforward_injective_rightAcyclic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechAcyclicity/PushforwardOfAnInjective.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/CechAcyclicity/PushforwardOfAnInjective.lean#L95). The attribute's comment: “part (2)”.
 
 > **Stacks 01EX, part (2).** The pushforward of an injective module is right acyclic for
 > the sections functor on every open subset.
@@ -424,7 +424,7 @@ public theorem pushforward_injective_rightAcyclic
       ((RingedSpaceModuleAdjunction.modulePushforward f).obj I)
 ```
 
-**`Stacks.Cohomology.PushforwardAcyclic.pushforward_injective_cechCohomology_isZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechAcyclicity/PushforwardOfAnInjectiveCechVanishing.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/CechAcyclicity/PushforwardOfAnInjectiveCechVanishing.lean#L53). The attribute's comment: “part (1)”.
+**`Stacks.Cohomology.PushforwardAcyclic.pushforward_injective_cechCohomology_isZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CechAcyclicity/PushforwardOfAnInjectiveCechVanishing.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/CechAcyclicity/PushforwardOfAnInjectiveCechVanishing.lean#L53). The attribute's comment: “part (1)”.
 
 > **Stacks 01EX, part (1).** The positive-degree Čech cohomology of the pushforward of an
 > injective module vanishes for every family of opens, and hence for every open covering.
@@ -442,7 +442,7 @@ public theorem pushforward_injective_cechCohomology_isZero
 
 [Tag 02N5](https://stacks.math.columbia.edu/tag/02N5) in the Stacks Project.
 
-**`RingedSpaceModuleAdjunction.modulePushforward_preservesInjectiveObjects`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Functors/Module/FlatPullback.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Functors/Module/FlatPullback.lean#L102).
+**`RingedSpaceModuleAdjunction.modulePushforward_preservesInjectiveObjects`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Functors/Module/FlatPullback.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Functors/Module/FlatPullback.lean#L102).
 
 > **Pushforward along a flat morphism of ringed spaces preserves injective modules.** The left
 > adjoint `f^*` of `f_*` is exact, and a functor with an exact left adjoint preserves injective
@@ -457,7 +457,7 @@ theorem modulePushforward_preservesInjectiveObjects (hf : AlgebraicGeometry.IsFl
 
 [Tag 0D0A](https://stacks.math.columbia.edu/tag/0D0A) in the Stacks Project.
 
-**`Stacks.Cohomology.ModuleComparison.isIso_piComparison_rightDerivedPlus_evaluation_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/ModuleComparison/CohomologyOfAProduct.lean, line 274](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/ModuleComparison/CohomologyOfAProduct.lean#L274). The attribute's comment: “degree zero”.
+**`Stacks.Cohomology.ModuleComparison.isIso_piComparison_rightDerivedPlus_evaluation_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/ModuleComparison/CohomologyOfAProduct.lean, line 274](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/ModuleComparison/CohomologyOfAProduct.lean#L274). The attribute's comment: “degree zero”.
 
 > **Degree-zero cohomology of modules on a ringed space commutes with arbitrary products**:
 > the canonical map from the degree-zero cohomology over an open `U` of a product of sheaves of
@@ -470,7 +470,7 @@ theorem isIso_piComparison_rightDerivedPlus_evaluation_zero
     IsIso (piComparison ((SheafOfModules.evaluation O (op U)).rightDerivedPlus 0) F)
 ```
 
-**`Stacks.Cohomology.ModuleComparison.mono_piComparison_rightDerivedPlus_evaluation_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/ModuleComparison/CohomologyOfAProduct.lean, line 284](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/ModuleComparison/CohomologyOfAProduct.lean#L284). The attribute's comment: “degree one”.
+**`Stacks.Cohomology.ModuleComparison.mono_piComparison_rightDerivedPlus_evaluation_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/ModuleComparison/CohomologyOfAProduct.lean, line 284](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/ModuleComparison/CohomologyOfAProduct.lean#L284). The attribute's comment: “degree one”.
 
 > **Degree-one cohomology of modules on a ringed space injects into the product**: the
 > canonical map from the degree-one cohomology over an open `U` of a product of sheaves of
@@ -490,4 +490,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 20.11, Tag 01EO](https://stacks.math.columbia.edu/tag/01EO)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

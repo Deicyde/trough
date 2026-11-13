@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: RingTheory.TorIndependence.canonicalBaseChangeComparison_paste, RingTheory.TorIndependence.canonicalBaseChangeComparison_localization, RingTheory.TorIndependence.derivedBaseChangeComparison, RingTheory.TorIndependence.TorIndependent, RingTheory.TorIndependence.derivedBaseChangeComparison_isIso_of_torIndependent, RingTheory.TorIndependence.isIso_torExtensionMap_of_flat, RingTheory.TorIndependence.torIndependent_tensorProduct_of_flat, RingTheory.TorIndependence.derivedBaseChangeHomologyIso_of_flat
+lean: RingTheory.TorIndependence.canonicalBaseChangeComparison_paste, RingTheory.TorIndependence.canonicalBaseChangeComparison_localization, RingTheory.TorIndependence.derivedBaseChangeComparison, RingTheory.TorIndependence.TorIndependent, RingTheory.TorIndependence.derivedBaseChangeComparison_isIso_of_torIndependent, RingTheory.TorIndependence.isIso_torExtensionMap_of_flat, RingTheory.TorIndependence.torIndependent_tensorProduct_of_flat, RingTheory.TorIndependence.baseChangeCohomologyIsoOfFlat
 statement: formalized
 proof: formalized
 ---
 
 # 15.62 Tor independence
 
-Section 15.62 of the Stacks Project, [Tag 065Y](https://stacks.math.columbia.edu/tag/065Y). 7 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.62 of the Stacks Project, [Tag 065Y](https://stacks.math.columbia.edu/tag/065Y). 7 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 065Z, an equation
 
 [Tag 065Z](https://stacks.math.columbia.edu/tag/065Z) in the Stacks Project.
 
-**`RingTheory.TorIndependence.canonicalBaseChangeComparison_paste`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Tor/BaseChangeIndependence/ComparisonPasting.lean, line 457](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Tor/BaseChangeIndependence/ComparisonPasting.lean#L457). The attribute's comment: “the comparison of a horizontal composite of two commutative squares of rings is the composite of the two comparisons, read through the composition isomorphisms of derived extension of scalars; this is what compatibility of the comparison with localizing a square amounts to”.
+**`RingTheory.TorIndependence.canonicalBaseChangeComparison_paste`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Tor/BaseChangeIndependence/ComparisonPasting.lean, line 457](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Tor/BaseChangeIndependence/ComparisonPasting.lean#L457). The attribute's comment: “the comparison of a horizontal composite of two commutative squares of rings is the composite of the two comparisons, read through the composition isomorphisms of derived extension of scalars; this is what compatibility of the comparison with localizing a square amounts to”.
 
 > **The pasting law of Tag 065Z.** For two commutative squares of commutative rings stacked on
 > top of one another, the comparison of the outer square agrees with the comparison of the lower
@@ -42,7 +42,7 @@ public theorem canonicalBaseChangeComparison_paste
         ((totalDerivedExtensionScalarsComp.{u, u} h₁ h₂).hom.app X)
 ```
 
-**`RingTheory.TorIndependence.canonicalBaseChangeComparison_localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Tor/BaseChangeIndependence/ComparisonPasting.lean, line 511](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Tor/BaseChangeIndependence/ComparisonPasting.lean#L511). The attribute's comment: “the comparison is compatible with localizing a square at a prime: pasting a square with the localization square of its right-hand column composes the two comparisons”.
+**`RingTheory.TorIndependence.canonicalBaseChangeComparison_localization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Tor/BaseChangeIndependence/ComparisonPasting.lean, line 511](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Tor/BaseChangeIndependence/ComparisonPasting.lean#L511). The attribute's comment: “the comparison is compatible with localizing a square at a prime: pasting a square with the localization square of its right-hand column composes the two comparisons”.
 
 > **Tag 065Z is compatible with localizing a square at a prime.** Pasting a commutative square
 > of rings with the localization square of its right-hand column at a prime `y` of `A'` composes
@@ -91,7 +91,7 @@ public theorem canonicalBaseChangeComparison_localization
           (algebraMap A' (Localization.AtPrime y))).hom.app X)
 ```
 
-**`RingTheory.TorIndependence.derivedBaseChangeComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Tor/Independence.lean, line 1049](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Tor/Independence.lean#L1049).
+**`RingTheory.TorIndependence.derivedBaseChangeComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Tor/Independence.lean, line 1049](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Tor/Independence.lean#L1049).
 
 > Let `R → A`, `R → R'`, `A → A'`, and `R' → A'` be a commutative square of
 > commutative rings. There is a natural comparison
@@ -183,7 +183,7 @@ public noncomputable def derivedBaseChangeComparison
 
 [Tag 0660](https://stacks.math.columbia.edu/tag/0660) in the Stacks Project.
 
-**`RingTheory.TorIndependence.TorIndependent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Tor/Independence.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Tor/Independence.lean#L94). References: SGA 6 III (1.5), “affine case”.
+**`RingTheory.TorIndependence.TorIndependent`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Tor/Independence.lean, line 94](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Tor/Independence.lean#L94). References: SGA 6 III (1.5), “affine case”.
 
 > Two `R`-algebras are Tor independent over `R` when their positive-degree
 > Tor modules over `R` vanish.
@@ -197,7 +197,7 @@ public def TorIndependent (R : Type uR) (A : Type uA) (B : Type uB)
 
 [Tag 0661](https://stacks.math.columbia.edu/tag/0661) in the Stacks Project.
 
-**`RingTheory.TorIndependence.derivedBaseChangeComparison_isIso_of_torIndependent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Tor/IndependenceBaseChange.lean, line 768](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Tor/IndependenceBaseChange.lean#L768).
+**`RingTheory.TorIndependence.derivedBaseChangeComparison_isIso_of_torIndependent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Tor/IndependenceBaseChange.lean, line 767](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Tor/IndependenceBaseChange.lean#L767).
 
 > **Stacks 0661.** If `A` and `R'` are Tor independent over `R`, then the canonical comparison
 > from derived base change over `R` to derived base change over `A` is an isomorphism, for every
@@ -254,7 +254,7 @@ public theorem derivedBaseChangeComparison_isIso_of_torIndependent
 
 [Tag 08HW](https://stacks.math.columbia.edu/tag/08HW) in the Stacks Project.
 
-**`RingTheory.TorIndependence.isIso_torExtensionMap_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Tor/Independence.lean, line 352](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Tor/Independence.lean#L352).
+**`RingTheory.TorIndependence.isIso_torExtensionMap_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Tor/Independence.lean, line 352](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Tor/Independence.lean#L352).
 
 > **Stacks 08HW.** If `R'` is flat over `R`, `A'` is flat over `A ⊗[R] R'`, and
 > `B'` is flat over `R' ⊗[R] B`, the canonical scalar-extended change-of-rings map on
@@ -286,7 +286,7 @@ public theorem isIso_torExtensionMap_of_flat
 
 [Tag 0FXF](https://stacks.math.columbia.edu/tag/0FXF) in the Stacks Project.
 
-**`RingTheory.TorIndependence.torIndependent_tensorProduct_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Tor/Independence.lean, line 566](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Tor/Independence.lean#L566).
+**`RingTheory.TorIndependence.torIndependent_tensorProduct_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Tor/Independence.lean, line 566](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Tor/Independence.lean#L566).
 
 > **Stacks 0FXF.** Tor independence of two algebras is preserved by extension of scalars along
 > a flat map of commutative rings.
@@ -307,45 +307,50 @@ public theorem torIndependent_tensorProduct_of_flat
 
 [Tag 0DJD](https://stacks.math.columbia.edu/tag/0DJD) in the Stacks Project.
 
-**`RingTheory.TorIndependence.derivedBaseChangeHomologyIso_of_flat`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Tor/FlatBaseChangeHomology.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Tor/FlatBaseChangeHomology.lean#L200).
+**`RingTheory.TorIndependence.baseChangeCohomologyIsoOfFlat`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/BaseChangeCohomologyFlatSquare.lean, line 996](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/BaseChange/TorIndependence/BaseChangeCohomologyFlatSquare.lean#L996).
 
-> **Stacks 0DJD.** Under the flatness hypotheses of Tag 08HW, the cohomology of
-> `(M ⊗ᴸ_A A') ⊗ᴸ_{R'} B'` is canonically and naturally isomorphic, as a module over
-> `A' ⊗[R'] B'`, to the extension of scalars of the cohomology of `M ⊗ᴸ_R B` along
-> `A ⊗[R] B → A' ⊗[R'] B'`.
+> **Stacks 0DJD.** Consider a commutative diagram of rings
+> `A' ← R' → B'` over `A ← R → B`, with `R'` flat over `R`, `A'` flat over `A ⊗_R R'` and `B'` flat
+> over `R' ⊗_R B` (the assumptions of Stacks 08HW). For `M ∈ D(A)` there is a canonical
+> isomorphism of `A' ⊗_{R'} B'`-modules
+>
+> `H^i((M ⊗ᴸ_A A') ⊗ᴸ_{R'} B') ≅ H^i(M ⊗ᴸ_R B) ⊗_{A ⊗_R B} (A' ⊗_{R'} B')`.
+>
+> The derived tensor products are the ones of the source: `M ⊗ᴸ_A A'` is read in `D(R')` and
+> base changed along `R' → B'`, and `M` is read in `D(R)` and base changed along `R → B`; the
+> module structures over `A' ⊗_{R'} B'` and `A ⊗_R B` on the cohomology are those of
+> `RingTheory.TorIndependence.baseChangeCohomology`, coming from the actions of `A'` and of `A` by
+> endomorphisms. Extension of scalars puts the new ring on the left of the tensor product.
 
 ```lean
-public def derivedBaseChangeHomologyIso_of_flat
-    (R R' A B A' B' : Type u)
-    [CommRing R] [CommRing R'] [CommRing A] [CommRing B] [CommRing A'] [CommRing B']
-    [Algebra R R'] [Algebra R A] [Algebra R B] [Algebra R A'] [Algebra R B']
-    [Algebra R' A'] [Algebra R' B'] [IsScalarTower R R' A'] [IsScalarTower R R' B']
-    (fA : A →ₐ[R] A') (fB : B →ₐ[R] B')
-    (hR' : RingHom.Flat (algebraMap R R'))
-    (hA' : RingHom.Flat (Algebra.TensorProduct.lift fA
-      (IsScalarTower.toAlgHom R R' A') (fun _ _ ↦ Commute.all _ _)).toRingHom)
-    (hB' : RingHom.Flat (Algebra.TensorProduct.lift
-      (IsScalarTower.toAlgHom R R' B') fB (fun _ _ ↦ Commute.all _ _)).toRingHom)
-    (i : ℤ) :
-    let C := A ⊗[R] B
-    let C' := A' ⊗[R'] B'
-    let extAA' := (totalDerivedExtensionScalars.{u, u, u} fA.toRingHom).functor
-    let extAC := (totalDerivedExtensionScalars.{u, u, u}
-      (Algebra.TensorProduct.includeLeftRingHom : A →+* C)).functor
-    let extA'C' := (totalDerivedExtensionScalars.{u, u, u}
-      (Algebra.TensorProduct.includeLeftRingHom : A' →+* C')).functor
-    let g : C →+* C' :=
-      TorChangeOfRings.tensorProductMap R R' A B A' B' fA fB
-    extAA' ⋙ extA'C' ⋙ DerivedCategory.homologyFunctor (ModuleCat.{u} C') i ≅
-      extAC ⋙ DerivedCategory.homologyFunctor (ModuleCat.{u} C) i ⋙
-        ModuleCat.extendScalars g
+def baseChangeCohomologyIsoOfFlat
+    {R R' A B A' B' : Type u} [CommRing R] [CommRing R'] [CommRing A] [CommRing B]
+    [CommRing A'] [CommRing B']
+    [Algebra R R'] [Algebra R A] [Algebra R B]
+    [Algebra A A'] [Algebra R A'] [IsScalarTower R A A'] [Algebra R' A'] [IsScalarTower R R' A']
+    [Algebra B B'] [Algebra R B'] [IsScalarTower R B B'] [Algebra R' B'] [IsScalarTower R R' B']
+    [HasDerivedCategory.{u} (ModuleCat.{u} R)] [HasDerivedCategory.{u} (ModuleCat.{u} R')]
+    [HasDerivedCategory.{u} (ModuleCat.{u} A)] [HasDerivedCategory.{u} (ModuleCat.{u} B)]
+    [HasDerivedCategory.{u} (ModuleCat.{u} A')] [HasDerivedCategory.{u} (ModuleCat.{u} B')]
+    (hR' : (algebraMap R R').Flat)
+    (hA' : (Algebra.TensorProduct.lift (IsScalarTower.toAlgHom R A A')
+      (IsScalarTower.toAlgHom R R' A') (fun _ _ ↦ Commute.all _ _)).toRingHom.Flat)
+    (hB' : (Algebra.TensorProduct.lift (Algebra.ofId R' B') (IsScalarTower.toAlgHom R B B')
+      (fun _ _ ↦ Commute.all _ _)).toRingHom.Flat)
+    (M : DerivedCategory (ModuleCat.{u} A)) (i : ℤ) :
+    baseChangeCohomology (R := R') (R' := B')
+        ((totalDerivedExtensionScalars.{u, u, u} (algebraMap A A')).functor.obj M) i ≅
+      (ModuleCat.extendScalars.{u, u, u}
+        (TorChangeOfRings.tensorProductMap R R' A B A' B' (IsScalarTower.toAlgHom R A A')
+          (IsScalarTower.toAlgHom R B B'))).obj
+        (baseChangeCohomology (R := R) (R' := B) M i)
 ```
 
 ## Tag 08HX, a lemma
 
 [Tag 08HX](https://stacks.math.columbia.edu/tag/08HX) in the Stacks Project.
 
-**`RingTheory.TorIndependence.torIndependent_localizations_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Tor/Independence.lean, line 706](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/Tor/Independence.lean#L706).
+**`RingTheory.TorIndependence.torIndependent_localizations_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Tor/Independence.lean, line 707](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Tor/Independence.lean#L707).
 
 > **Stacks 08HX.** For `R`-algebras `A` and `B`, the following are equivalent:
 >
@@ -380,6 +385,43 @@ public theorem torIndependent_localizations_tfae
           (LocalizedModule s.asIdeal.primeCompl (TorChangeOfRings.torObj R i A B)))]
 ```
 
+**`RingTheory.TorIndependence.localizedModuleTorEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/Tor/IndependenceLocalization.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/Tor/IndependenceLocalization.lean#L99). The attribute's comment: “the identification Tor\_i^R(A,B)\_s = Tor\_i^\{R\_r}(A\_p,B\_q)\_s displayed in part (3) of the lemma, as a linear equivalence of localized A ⊗\_R B-modules”.
+
+> **Stacks 08HX**, the displayed identification. Let `s` be a prime of `A ⊗[R] B` and let
+> `p = A ∩ s`, `q = B ∩ s` lie over the prime `r` of `R`. Then
+> `Tor_i^R(A, B)_s ≃ Tor_i^{R_r}(A_p, B_q)_s` as `A ⊗[R] B`-modules, where `Tor_i^{R_r}(A_p, B_q)`
+> is regarded as an `A ⊗[R] B`-module along the canonical map `A ⊗[R] B → A_p ⊗[R_r] B_q`.
+> It is the localization at `s` of the canonical change-of-rings map, and comes from the
+> isomorphism of Stacks 08HW.
+
+```lean
+public def localizedModuleTorEquiv
+    (R A B : Type u) [CommRing R] [CommRing A] [CommRing B] [Algebra R A] [Algebra R B]
+    (s : PrimeSpectrum (A ⊗[R] B))
+    (r : PrimeSpectrum R) (p : PrimeSpectrum A) (q : PrimeSpectrum B)
+    [p.asIdeal.LiesOver r.asIdeal] [q.asIdeal.LiesOver r.asIdeal]
+    [Algebra (Localization.AtPrime r.asIdeal) (Localization.AtPrime p.asIdeal)]
+    [Algebra (Localization.AtPrime r.asIdeal) (Localization.AtPrime q.asIdeal)]
+    [Localization.AtPrime.IsLiesOverAlgebra r.asIdeal p.asIdeal]
+    [Localization.AtPrime.IsLiesOverAlgebra r.asIdeal q.asIdeal]
+    (hp : p.asIdeal = s.asIdeal.comap (Algebra.TensorProduct.includeLeft : A →ₐ[R] A ⊗[R] B))
+    (hq : q.asIdeal = s.asIdeal.comap (Algebra.TensorProduct.includeRight : B →ₐ[R] A ⊗[R] B))
+    (i : ℕ) :
+    letI := TorChangeOfRings.moduleStructure TorChangeOfRings.canonicalSystem_nonempty R A B i
+    letI := TorChangeOfRings.moduleStructure TorChangeOfRings.canonicalSystem_nonempty
+      (Localization.AtPrime r.asIdeal) (Localization.AtPrime p.asIdeal)
+      (Localization.AtPrime q.asIdeal) i
+    letI : Module (A ⊗[R] B) (TorChangeOfRings.torObj (Localization.AtPrime r.asIdeal) i
+        (Localization.AtPrime p.asIdeal) (Localization.AtPrime q.asIdeal)) :=
+      Module.compHom _ (TorChangeOfRings.tensorProductMap R (Localization.AtPrime r.asIdeal) A B
+        (Localization.AtPrime p.asIdeal) (Localization.AtPrime q.asIdeal)
+        (IsScalarTower.toAlgHom R A _) (IsScalarTower.toAlgHom R B _))
+    LocalizedModule s.asIdeal.primeCompl (TorChangeOfRings.torObj R i A B) ≃ₗ[A ⊗[R] B]
+      LocalizedModule s.asIdeal.primeCompl
+        (TorChangeOfRings.torObj (Localization.AtPrime r.asIdeal) i
+          (Localization.AtPrime p.asIdeal) (Localization.AtPrime q.asIdeal))
+```
+
 ## Depends on
 
 No dependencies are recorded: this chapter reads the repository's source text without running Lean, which edges between declarations need.
@@ -387,4 +429,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.62, Tag 065Y](https://stacks.math.columbia.edu/tag/065Y)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

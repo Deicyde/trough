@@ -8,7 +8,7 @@ proof: formalized
 
 # 33.8 Geometrically irreducible schemes
 
-Section 33.8 of the Stacks Project, [Tag 0364](https://stacks.math.columbia.edu/tag/0364). 17 tags here are carried by 26 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 33.8 of the Stacks Project, [Tag 0364](https://stacks.math.columbia.edu/tag/0364). 17 tags here are carried by 26 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0365, a definition
 
@@ -16,13 +16,13 @@ Section 33.8 of the Stacks Project, [Tag 0364](https://stacks.math.columbia.edu/
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.GeometricallyIrreducible`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.GeometricallyIrreducible#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch33.lean, line 52](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch33.lean#L52) (StacksFrontier): “geometrically irreducible, for a morphism; the tag is the case of `X ⟶ Spec k`”. References: EGA IV (4.5.2), “more general”; EGA IV (4.5.5); EGA IV (4.5.9).
+- [`AlgebraicGeometry.GeometricallyIrreducible`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.GeometricallyIrreducible#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch33.lean, line 52](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch33.lean#L52) (StacksFrontier): “geometrically irreducible, for a morphism; the tag is the case of `X ⟶ Spec k`”. References: EGA IV (4.5.2), “more general”; EGA IV (4.5.5); EGA IV (4.5.9).
 
 ## Tag 054P, a lemma
 
 [Tag 054P](https://stacks.math.columbia.edu/tag/054P) in the Stacks Project.
 
-**`AlgebraicGeometry.geometricallyIrreducible_iff_baseChange_fieldExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/IrreducibleBaseChange.lean, line 42](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/IrreducibleBaseChange.lean#L42).
+**`AlgebraicGeometry.geometricallyIrreducible_iff_baseChange_fieldExtension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/IrreducibleBaseChange.lean, line 42](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/IrreducibleBaseChange.lean#L42).
 
 > **Stacks Project, Tag 054P.** A scheme over a field is geometrically irreducible if and only
 > if its base change along any field extension is geometrically irreducible.
@@ -40,7 +40,7 @@ public theorem geometricallyIrreducible_iff_baseChange_fieldExtension
 
 [Tag 020J](https://stacks.math.columbia.edu/tag/020J) in the Stacks Project.
 
-**`AlgebraicGeometry.geometricallyIrreducible_of_irreducibleSpace_of_isSepClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/IrreducibleSeparablyClosed.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/IrreducibleSeparablyClosed.lean#L53). References: EGA IV (4.4.4), “more general”; EGA IV (4.5.9), “(b) ⇒ (a), special case”.
+**`AlgebraicGeometry.geometricallyIrreducible_of_irreducibleSpace_of_isSepClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/IrreducibleSeparablyClosed.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/IrreducibleSeparablyClosed.lean#L53). References: EGA IV (4.4.4), “more general”; EGA IV (4.5.9), “(b) ⇒ (a), special case”.
 
 > **Stacks Project, Tag 020J.** An irreducible scheme over a separably closed field is
 > geometrically irreducible.
@@ -55,7 +55,7 @@ public theorem geometricallyIrreducible_of_irreducibleSpace_of_isSepClosed
 
 [Tag 038F](https://stacks.math.columbia.edu/tag/038F) in the Stacks Project.
 
-**`AlgebraicGeometry.bijOn_image_irreducibleComponents_pullback_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/IrreducibleProductProjection.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/IrreducibleProductProjection.lean#L88). References: EGA IV (4.5.8), “more general”.
+**`AlgebraicGeometry.bijOn_image_irreducibleComponents_pullback_snd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/IrreducibleProductProjection.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/IrreducibleProductProjection.lean#L88). References: EGA IV (4.5.8), “more general”.
 
 > **Stacks 038F.** Let `k` be a field and let `X`, `Y` be schemes over `k`, presented by
 > their structure maps `f : X ⟶ Spec k` and `g : Y ⟶ Spec k`. If `X` is geometrically
@@ -76,7 +76,7 @@ public theorem bijOn_image_irreducibleComponents_pullback_snd
 
 [Tag 038G](https://stacks.math.columbia.edu/tag/038G) in the Stacks Project.
 
-**`AlgebraicGeometry.geometricallyIrreducible_tfae_local`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/IrreducibleLocal.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/IrreducibleLocal.lean#L118). The attribute's comment: “equivalent conditions”.
+**`AlgebraicGeometry.geometricallyIrreducible_tfae_local`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/IrreducibleLocal.lean, line 118](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/IrreducibleLocal.lean#L118). The attribute's comment: “equivalent conditions”.
 
 > **Stacks Project, Tag 038G.** For a scheme over a field, geometric irreducibility is
 > equivalent to each of the three stated local criteria.
@@ -101,7 +101,7 @@ public theorem geometricallyIrreducible_tfae_local
             ∀ i j, U i ⊓ U j ≠ ⊥ ]
 ```
 
-**`AlgebraicGeometry.geometricallyIrreducible_open`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/IrreducibleLocal.lean, line 186](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/IrreducibleLocal.lean#L186). The attribute's comment: “nonempty open subschemes”.
+**`AlgebraicGeometry.geometricallyIrreducible_open`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/IrreducibleLocal.lean, line 186](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/IrreducibleLocal.lean#L186). The attribute's comment: “nonempty open subschemes”.
 
 > **Stacks Project, Tag 038G.** Every nonempty open subscheme of a geometrically irreducible
 > scheme over a field is geometrically irreducible.
@@ -117,7 +117,7 @@ public theorem geometricallyIrreducible_open
 
 [Tag 054Q](https://stacks.math.columbia.edu/tag/054Q) in the Stacks Project.
 
-**`AlgebraicGeometry.geometricallyIrreducible_fiber_iff_isGeometricallyIrreducible_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/GenericFibre/GenericFibreResidueFieldCriterion.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/GenericFibre/GenericFibreResidueFieldCriterion.lean#L82). The attribute's comment: “the generic fibre, read on the residue field of the source”. References: EGA IV (4.5.12), “more general”.
+**`AlgebraicGeometry.geometricallyIrreducible_fiber_iff_isGeometricallyIrreducible_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/GenericFibre/GenericFibreResidueFieldCriterion.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/GenericFibre/GenericFibreResidueFieldCriterion.lean#L82). The attribute's comment: “the generic fibre, read on the residue field of the source”. References: EGA IV (4.5.12), “more general”.
 
 > **The generic fibre is geometrically irreducible exactly when the residue field at the
 > generic point is.** Let `R` be a domain and let `f : X ⟶ Spec R` carry the generic point of an
@@ -138,7 +138,7 @@ theorem geometricallyIrreducible_fiber_iff_isGeometricallyIrreducible_residueFie
         ↥((Spec R).residueField (genericPoint (Spec R))) ↥(X.residueField (genericPoint X))
 ```
 
-**`AlgebraicGeometry.geometricallyIrreducible_fiber_genericPoint_iff_residueField_of_isAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/GenericFibre/GenericFibreResidueFieldCriterion.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/GenericFibre/GenericFibreResidueFieldCriterion.lean#L147). The attribute's comment: “the generic fibre over an affine base, read on the residue field of the source”. References: EGA IV (4.5.12), “more general”.
+**`AlgebraicGeometry.geometricallyIrreducible_fiber_genericPoint_iff_residueField_of_isAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/GenericFibre/GenericFibreResidueFieldCriterion.lean, line 147](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/GenericFibre/GenericFibreResidueFieldCriterion.lean#L147). The attribute's comment: “the generic fibre over an affine base, read on the residue field of the source”. References: EGA IV (4.5.12), “more general”.
 
 > **The generic fibre over an integral affine base is geometrically irreducible exactly when
 > the residue field at the generic point is.** The criterion
@@ -157,7 +157,7 @@ theorem geometricallyIrreducible_fiber_genericPoint_iff_residueField_of_isAffine
         ↥(X.residueField (genericPoint X))
 ```
 
-**`AlgebraicGeometry.geometricallyIrreducible_tfae_functionField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricIrreducibleComponents/FunctionField.lean, line 277](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/GeometricIrreducibleComponents/FunctionField.lean#L277). References: EGA IV (4.5.12); EGA IV (4.5.9), “(a) ⇔ (c)”.
+**`AlgebraicGeometry.geometricallyIrreducible_tfae_functionField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricIrreducibleComponents/FunctionField.lean, line 277](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/GeometricIrreducibleComponents/FunctionField.lean#L277). References: EGA IV (4.5.12); EGA IV (4.5.9), “(a) ⇔ (c)”.
 
 > **Stacks Project, Tag 054Q.** For an irreducible scheme `X` over a field `k`, the following
 > are equivalent: `X` is geometrically irreducible over `k`; the residue field at a generic point
@@ -176,7 +176,7 @@ public theorem geometricallyIrreducible_tfae_functionField
       separableClosure k (X.residueField ξ) = ⊥]
 ```
 
-**`Algebra.isGeometricallyIrreducible_tfae_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GeometricallyIntegral/GenericPointIrreducible.lean, line 188](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/GeometricallyIntegral/GenericPointIrreducible.lean#L188). The attribute's comment: “The affine case. The source states this for an irreducible scheme `X` over `k` and the residue field at its generic point; here `X = Spec A`, and that the spectrum is irreducible is expressed by the hypothesis that the nilradical of `A` is the prime `I`. The scheme-level statement is NOT proved here: deducing it needs in addition the reduction of geometric irreducibility to affine opens (Stacks 038G, formalized as `AlgebraicGeometry.geometricallyIrreducible_tfae_local`) and the identification of the residue field at the generic point with the generic residue field of an affine open's ring of sections.”.
+**`Algebra.isGeometricallyIrreducible_tfae_residueField`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/GeometricallyIntegral/GenericPointIrreducible.lean, line 188](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/GeometricallyIntegral/GenericPointIrreducible.lean#L188). The attribute's comment: “The affine case. The source states this for an irreducible scheme `X` over `k` and the residue field at its generic point; here `X = Spec A`, and that the spectrum is irreducible is expressed by the hypothesis that the nilradical of `A` is the prime `I`. The scheme-level statement is NOT proved here: deducing it needs in addition the reduction of geometric irreducibility to affine opens (Stacks 038G, formalized as `AlgebraicGeometry.geometricallyIrreducible_tfae_local`) and the identification of the residue field at the generic point with the generic residue field of an affine open's ring of sections.”.
 
 > Let `A` be an algebra over a field `k` whose spectrum is
 > irreducible, i.e. whose nilradical `I` is prime; `I` is then the generic point of `Spec A` and
@@ -197,7 +197,7 @@ theorem isGeometricallyIrreducible_tfae_residueField (k A : Type u) [Field k] [C
 
 [Tag 0H8G](https://stacks.math.columbia.edu/tag/0H8G) in the Stacks Project.
 
-**`AlgebraicGeometry.geometricallyIrreducible_iff_irreducibleSpace_self_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/IrreducibleSelfProduct.lean, line 311](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/IrreducibleSelfProduct.lean#L311). References: EGA IV (4.5.8), “(i), special case”.
+**`AlgebraicGeometry.geometricallyIrreducible_iff_irreducibleSpace_self_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/IrreducibleSelfProduct.lean, line 311](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/IrreducibleSelfProduct.lean#L311). References: EGA IV (4.5.8), “(i), special case”.
 
 > **Stacks Project, Tag 0H8G.** A scheme over a field is geometrically irreducible
 > if and only if its self-product over the field is irreducible.
@@ -212,7 +212,7 @@ public theorem geometricallyIrreducible_iff_irreducibleSpace_self_pullback
 
 [Tag 038H](https://stacks.math.columbia.edu/tag/038H) in the Stacks Project.
 
-**`AlgebraicGeometry.bijOn_irreducibleComponents_baseChange_of_isSepClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/IrreducibleSeparablyClosed.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/IrreducibleSeparablyClosed.lean#L71). References: EGA IV (4.5.19), “partial, special case”; EGA IV (4.5.21), “more general”; EGA IV (4.5.6), “(i), special case”; SGA 3 VIA (2.6.0), “k sep. alg. closed”.
+**`AlgebraicGeometry.bijOn_irreducibleComponents_baseChange_of_isSepClosed`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/IrreducibleSeparablyClosed.lean, line 71](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/IrreducibleSeparablyClosed.lean#L71). References: EGA IV (4.5.19), “partial, special case”; EGA IV (4.5.21), “more general”; EGA IV (4.5.6), “(i), special case”; SGA 3 VIA (2.6.0), “k sep. alg. closed”.
 
 > **Stacks Project, Tag 038H.** If `k` is separably algebraically closed, `k' / k` is a field
 > extension, and `X` is a scheme over `k`, then the projection `X_{k'} ⟶ X` induces a bijection
@@ -234,7 +234,7 @@ public theorem bijOn_irreducibleComponents_baseChange_of_isSepClosed
 
 [Tag 038I](https://stacks.math.columbia.edu/tag/038I) in the Stacks Project.
 
-**`AlgebraicGeometry.geometricallyIrreducible_tfae_of_isSepClosure`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/IrreducibleSeparableClosure.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/IrreducibleSeparableClosure.lean#L63). References: EGA IV (4.5.9).
+**`AlgebraicGeometry.geometricallyIrreducible_tfae_of_isSepClosure`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/IrreducibleSeparableClosure.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/IrreducibleSeparableClosure.lean#L63). References: EGA IV (4.5.9).
 
 > **Stacks Project, Tag 038I.** Geometric irreducibility of a scheme over a field can be tested
 > after every finite separable extension, or after base change to any separable algebraic
@@ -256,7 +256,7 @@ public lemma geometricallyIrreducible_tfae_of_isSepClosure
 
 [Tag 04KW](https://stacks.math.columbia.edu/tag/04KW) in the Stacks Project.
 
-**`AlgebraicGeometry.preimage_irreducibleComponent_eq_sUnion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometric/IrreducibleComponentsBaseChange.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometric/IrreducibleComponentsBaseChange.lean#L67).
+**`AlgebraicGeometry.preimage_irreducibleComponent_eq_sUnion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometric/IrreducibleComponentsBaseChange.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Geometric/IrreducibleComponentsBaseChange.lean#L67).
 
 > **Stacks Project, Tag 04KW.** After extension of the base field, the inverse image
 > of an irreducible component is a union of irreducible components.
@@ -278,7 +278,7 @@ public theorem preimage_irreducibleComponent_eq_sUnion
 
 [Tag 04KX](https://stacks.math.columbia.edu/tag/04KX) in the Stacks Project.
 
-**`AlgebraicGeometry.mapsTo_irreducibleComponents_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometric/IrreducibleComponentsBaseChange.lean, line 237](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometric/IrreducibleComponentsBaseChange.lean#L237). References: SGA 3 VIA (2.6.0).
+**`AlgebraicGeometry.mapsTo_irreducibleComponents_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometric/IrreducibleComponentsBaseChange.lean, line 237](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Geometric/IrreducibleComponentsBaseChange.lean#L237). References: SGA 3 VIA (2.6.0).
 
 > **Stacks Project, Tag 04KX.** Let `K/k` be an extension of fields and let `X` be a scheme
 > over `k`. The image of every irreducible component of `X ×_{Spec k} Spec K` under the projection
@@ -295,7 +295,7 @@ public theorem mapsTo_irreducibleComponents_baseChange
       (irreducibleComponents X)
 ```
 
-**`AlgebraicGeometry.surjOn_irreducibleComponents_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometric/IrreducibleComponentsBaseChange.lean, line 290](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometric/IrreducibleComponentsBaseChange.lean#L290).
+**`AlgebraicGeometry.surjOn_irreducibleComponents_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometric/IrreducibleComponentsBaseChange.lean, line 290](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Geometric/IrreducibleComponentsBaseChange.lean#L290).
 
 > **Stacks Project, Tag 04KX.** Let `K/k` be an extension of fields and let `X` be a scheme
 > over `k`. Every irreducible component of `X` is the image of an irreducible component of
@@ -316,7 +316,7 @@ public theorem surjOn_irreducibleComponents_baseChange
 
 [Tag 0G69](https://stacks.math.columbia.edu/tag/0G69) in the Stacks Project.
 
-**`AlgebraicGeometry.geometricallyIrreducible_of_irreducibleSpace_of_dense_rationalPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/IrreducibleRationalPoints.lean, line 151](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/IrreducibleRationalPoints.lean#L151).
+**`AlgebraicGeometry.geometricallyIrreducible_of_irreducibleSpace_of_dense_rationalPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/IrreducibleRationalPoints.lean, line 151](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/IrreducibleRationalPoints.lean#L151).
 
 > **Stacks Project, Tag 0G69.** An irreducible scheme over a field with a dense set of
 > rational points is geometrically irreducible.
@@ -334,7 +334,7 @@ theorem geometricallyIrreducible_of_irreducibleSpace_of_dense_rationalPoints
 
 [Tag 038J](https://stacks.math.columbia.edu/tag/038J) in the Stacks Project.
 
-**`AlgebraicGeometry.fixed_geometricComponent_iff_exists_geometricallyIrreducible_component`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/GaloisFixedComponentDescent.lean, line 117](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/GaloisFixedComponentDescent.lean#L117). The attribute's comment: “fixed\_component\_descent”.
+**`AlgebraicGeometry.fixed_geometricComponent_iff_exists_geometricallyIrreducible_component`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/GaloisFixedComponentDescent.lean, line 117](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/GroupScheme/OverField/GaloisFixedComponentDescent.lean#L117). The attribute's comment: “fixed\_component\_descent”.
 
 > A geometric irreducible component is fixed by the Galois action exactly when it descends
 > to a geometrically irreducible component of the original scheme.
@@ -357,7 +357,7 @@ theorem fixed_geometricComponent_iff_exists_geometricallyIrreducible_component
           (T : Set X) = Tbar.1
 ```
 
-**`AlgebraicGeometry.galoisActionOnGeometricIrreducibleComponents`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/IrreducibleGaloisAction.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/IrreducibleGaloisAction.lean#L162). The attribute's comment: “galois\_action\_on\_geometric\_irreducible\_components”.
+**`AlgebraicGeometry.galoisActionOnGeometricIrreducibleComponents`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/IrreducibleGaloisAction.lean, line 162](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/IrreducibleGaloisAction.lean#L162). The attribute's comment: “galois\_action\_on\_geometric\_irreducible\_components”.
 
 > The canonical action of the opposite Galois group on the irreducible components of a scheme
 > after base change. A component is sent to its image under the corresponding automorphism of the
@@ -369,7 +369,7 @@ public noncomputable def galoisActionOnGeometricIrreducibleComponents
     Action (Type u) (MulOpposite (S ≃ₐ[R] S))
 ```
 
-**`AlgebraicGeometry.galoisActionOnGeometricIrreducibleComponents_fixed_iff_and_compatible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/IrreducibleGaloisActionCompatibility.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/IrreducibleGaloisActionCompatibility.lean#L97). References: EGA IV (4.5.21), “more general”.
+**`AlgebraicGeometry.galoisActionOnGeometricIrreducibleComponents_fixed_iff_and_compatible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometrically/IrreducibleGaloisActionCompatibility.lean, line 97](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Geometrically/IrreducibleGaloisActionCompatibility.lean#L97). References: EGA IV (4.5.21), “more general”.
 
 > **Stacks Project, Tag 038J.** Let `k` be a field with separable algebraic closure `ksep` and
 > let `X` be a scheme over `k`. The canonical action of `Gal(ksep/k)ᵐᵒᵖ` on the irreducible
@@ -392,7 +392,8 @@ public theorem galoisActionOnGeometricIrreducibleComponents_fixed_iff_and_compat
     (∀ Tbar : (galoisActionOnGeometricIrreducibleComponents k ksep (Over.mk f)).V,
       (∀ σ : MulOpposite (ksep ≃ₐ[k] ksep),
         ConcreteCategory.hom
-          ((galoisActionOnGeometricIrreducibleComponents k ksep (Over.mk f)).ρ σ).asHom Tbar = Tbar) ↔
+          ((galoisActionOnGeometricIrreducibleComponents k ksep (Over.mk f)).ρ σ).asHom Tbar =
+            Tbar) ↔
         ∃ T : irreducibleComponents X,
           GeometricallyIrreducible
             ((Scheme.IdealSheafData.vanishingIdeal
@@ -426,7 +427,7 @@ public theorem galoisActionOnGeometricIrreducibleComponents_fixed_iff_and_compat
 
 [Tag 04KY](https://stacks.math.columbia.edu/tag/04KY) in the Stacks Project.
 
-**`AlgebraicGeometry.fiber_irreducibleComponentsBaseChangeMap_eq_orbit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricIrreducibleComponents/GaloisOrbit.lean, line 465](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/GeometricIrreducibleComponents/GaloisOrbit.lean#L465).
+**`AlgebraicGeometry.fiber_irreducibleComponentsBaseChangeMap_eq_orbit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricIrreducibleComponents/GaloisOrbit.lean, line 465](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/GeometricIrreducibleComponents/GaloisOrbit.lean#L465).
 
 > **Stacks Project, Tag 04KY.** For a scheme over a field `k` and a normal extension `K/k`,
 > for instance a separable closure of `k`, the fibre through each geometric irreducible component
@@ -449,7 +450,7 @@ public theorem fiber_irreducibleComponentsBaseChangeMap_eq_orbit
 
 [Tag 04KZ](https://stacks.math.columbia.edu/tag/04KZ) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_finite_subextension_defining_component`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricIrreducibleComponents/FiniteExtension.lean, line 408](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/GeometricIrreducibleComponents/FiniteExtension.lean#L408). The attribute's comment: “component\_defined\_over\_finite\_extension”.
+**`AlgebraicGeometry.exists_finite_subextension_defining_component`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricIrreducibleComponents/FiniteExtension.lean, line 408](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/GeometricIrreducibleComponents/FiniteExtension.lean#L408). The attribute's comment: “component\_defined\_over\_finite\_extension”.
 
 > **Stacks Project, Tag 04KZ.** Every irreducible component after extension to a separable
 > closure is defined over a finite intermediate extension.
@@ -473,7 +474,7 @@ public theorem exists_finite_subextension_defining_component
         p.base ⁻¹' (T : Set _) = (Z : Set _)
 ```
 
-**`AlgebraicGeometry.continuous_galoisActionOnGeometricIrreducibleComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricIrreducibleComponents/OrbitDecomposition.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/GeometricIrreducibleComponents/OrbitDecomposition.lean#L85). The attribute's comment: “continuous\_action”.
+**`AlgebraicGeometry.continuous_galoisActionOnGeometricIrreducibleComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricIrreducibleComponents/OrbitDecomposition.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/GeometricIrreducibleComponents/OrbitDecomposition.lean#L85). The attribute's comment: “continuous\_action”.
 
 > **Stacks Project, Tag 04KZ.** The Galois action on the geometric irreducible components
 > of a locally finite-type scheme is continuous when the component set is discrete.
@@ -489,7 +490,7 @@ public theorem continuous_galoisActionOnGeometricIrreducibleComponents
         ((galoisActionOnGeometricIrreducibleComponents k K X).ρ p.1).asHom p.2)
 ```
 
-**`AlgebraicGeometry.exists_finite_single_orbit_decomposition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricIrreducibleComponents/OrbitDecomposition.lean, line 205](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/GeometricIrreducibleComponents/OrbitDecomposition.lean#L205). The attribute's comment: “finite\_single\_orbit\_decomposition”.
+**`AlgebraicGeometry.exists_finite_single_orbit_decomposition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricIrreducibleComponents/OrbitDecomposition.lean, line 205](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/GeometricIrreducibleComponents/OrbitDecomposition.lean#L205). The attribute's comment: “finite\_single\_orbit\_decomposition”.
 
 > **Stacks Project, Tag 04KZ.** Over a separable closure, the inverse image of an irreducible
 > component is a finite union of irreducible components forming a single Galois orbit.
@@ -514,7 +515,7 @@ public theorem exists_finite_single_orbit_decomposition
 
 [Tag 054R](https://stacks.math.columbia.edu/tag/054R) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_finite_separable_extension_geometricallyIrreducible_components`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometric/ComponentsOverFiniteSeparableExtension.lean, line 272](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/Geometric/ComponentsOverFiniteSeparableExtension.lean#L272).
+**`AlgebraicGeometry.exists_finite_separable_extension_geometricallyIrreducible_components`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/Geometric/ComponentsOverFiniteSeparableExtension.lean, line 272](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/Geometric/ComponentsOverFiniteSeparableExtension.lean#L272).
 
 > **Stacks Project, Tag 054R.** After a finite separable extension of the ground field, every
 > irreducible component of a scheme locally of finite type over a field is geometrically
@@ -538,7 +539,7 @@ public theorem exists_finite_separable_extension_geometricallyIrreducible_compon
 
 [Tag 054S](https://stacks.math.columbia.edu/tag/054S) in the Stacks Project.
 
-**`TopologicalSpace.finite_connectedComponents_of_finite_irreducibleComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricIrreducibleComponents/ConnectedComponents.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/GeometricIrreducibleComponents/ConnectedComponents.lean#L59). The attribute's comment: “finiteness of connected components”.
+**`TopologicalSpace.finite_connectedComponents_of_finite_irreducibleComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricIrreducibleComponents/ConnectedComponents.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/GeometricIrreducibleComponents/ConnectedComponents.lean#L59). The attribute's comment: “finiteness of connected components”.
 
 > **Stacks Project, Tag 054S.** Finitely many irreducible components imply finitely many
 > connected components.
@@ -549,7 +550,7 @@ public theorem finite_connectedComponents_of_finite_irreducibleComponents
     Finite (ConnectedComponents X)
 ```
 
-**`AlgebraicGeometry.geometricallyConnected_connectedComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricIrreducibleComponents/ConnectedComponents.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/GeometricIrreducibleComponents/ConnectedComponents.lean#L91). The attribute's comment: “geometric connectedness of connected components”. References: EGA IV (4.5.13.1), “(ii)”.
+**`AlgebraicGeometry.geometricallyConnected_connectedComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/GeometricIrreducibleComponents/ConnectedComponents.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/GeometricIrreducibleComponents/ConnectedComponents.lean#L92). The attribute's comment: “geometric connectedness of connected components”. References: EGA IV (4.5.13.1), “(ii)”.
 
 > **Stacks Project, Tag 054S.** If each of the finitely many irreducible components of a
 > scheme over a field is geometrically irreducible, each connected component has an open
@@ -576,4 +577,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 33.8, Tag 0364](https://stacks.math.columbia.edu/tag/0364)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

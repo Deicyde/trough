@@ -8,13 +8,13 @@ proof: formalized
 
 # 94.12 Algebraic stacks
 
-Section 94.12 of the Stacks Project, [Tag 026N](https://stacks.math.columbia.edu/tag/026N). 4 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 94.12 of the Stacks Project, [Tag 026N](https://stacks.math.columbia.edu/tag/026N). 4 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 026O, a definition
 
 [Tag 026O](https://stacks.math.columbia.edu/tag/026O) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.IsAlgebraicStack`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicStack.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicStack.lean#L99).
+**`AlgebraicGeometry.Stack.IsAlgebraicStack`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicStack.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicStack.lean#L99).
 
 > **Stacks 026O.** A category over the big fppf site of `S` is an *algebraic stack* when it is
 > fibred in groupoids, is a stack for the fppf topology, has a diagonal representable
@@ -38,7 +38,7 @@ abbrev IsAlgebraicStack.{u, w, v, t}
 
 [Tag 03YO](https://stacks.math.columbia.edu/tag/03YO) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.IsDeligneMumfordStack`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/DeligneMumfordStack.lean, line 73](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/DeligneMumfordStack.lean#L73).
+**`AlgebraicGeometry.Stack.IsDeligneMumfordStack`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/DeligneMumfordStack.lean, line 73](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/DeligneMumfordStack.lean#L73).
 
 > **Stacks 03YO.** An algebraic stack over `S` is a *Deligne-Mumford stack* when it admits a
 > presentation by a scheme which is surjective and étale: a 1-morphism from the category
@@ -56,7 +56,7 @@ abbrev IsDeligneMumfordStack.{u, w}
 
 [Tag 03YP](https://stacks.math.columbia.edu/tag/03YP) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.AlgebraicStacks`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicStack.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicStack.lean#L129).
+**`AlgebraicGeometry.Stack.AlgebraicStacks`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicStack.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicStack.lean#L129).
 
 > **Stacks 03YP.** The 2-category of algebraic stacks over `S`: the full sub-2-category of the
 > 2-category of categories fibred in groupoids over the big fppf site of `S` whose objects are the
@@ -72,7 +72,7 @@ abbrev AlgebraicStacks.{u, w}
 
 [Tag 03YQ](https://stacks.math.columbia.edu/tag/03YQ) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.isAlgebraicStack_iff_of_equivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicStackEquivalence.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicStackEquivalence.lean#L143). The attribute's comment: “algebraic\_stack\_iff\_of\_equivalence”.
+**`AlgebraicGeometry.Stack.isAlgebraicStack_iff_of_equivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicStackEquivalence.lean, line 143](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicStackEquivalence.lean#L143). The attribute's comment: “algebraic\_stack\_iff\_of\_equivalence”.
 
 > Two categories over the big fppf site of `S` which are equivalent as categories over that
 > site are algebraic stacks at the same time.
@@ -84,7 +84,7 @@ theorem isAlgebraicStack_iff_of_equivalence
     IsAlgebraicStack.{u, w} B S hS 𝒳 ↔ IsAlgebraicStack.{u, w} B S hS 𝒴
 ```
 
-**`AlgebraicGeometry.Stack.isDeligneMumfordStack_iff_of_equivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicStackEquivalence.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicStackEquivalence.lean#L191). The attribute's comment: “deligne\_mumford\_iff\_of\_equivalence”.
+**`AlgebraicGeometry.Stack.isDeligneMumfordStack_iff_of_equivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicStackEquivalence.lean, line 191](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicStackEquivalence.lean#L191). The attribute's comment: “deligne\_mumford\_iff\_of\_equivalence”.
 
 > Two categories over the big fppf site of `S` which are equivalent as categories over that
 > site are Deligne-Mumford stacks at the same time.
@@ -96,7 +96,7 @@ theorem isDeligneMumfordStack_iff_of_equivalence
     IsDeligneMumfordStack.{u, w} B S hS 𝒳 ↔ IsDeligneMumfordStack.{u, w} B S hS 𝒴
 ```
 
-**`AlgebraicGeometry.Stack.isAlgebraicStack_iff_of_equivalence'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicStackEquivalenceInvariance.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicStackEquivalenceInvariance.lean#L89). The attribute's comment: “algebraic stacks”.
+**`AlgebraicGeometry.Stack.isAlgebraicStack_iff_of_equivalence'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicStackEquivalenceInvariance.lean, line 89](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicStackEquivalenceInvariance.lean#L89). The attribute's comment: “algebraic stacks”.
 
 > **Stacks 03YQ, the algebraic-stack assertion.** Two categories over the big fppf site of `S`
 > which are equivalent as categories over the site are algebraic stacks at the same time.
@@ -112,7 +112,7 @@ theorem isAlgebraicStack_iff_of_equivalence'
     IsAlgebraicStack.{u, w} B S hS 𝒳 ↔ IsAlgebraicStack.{u, w} B S hS 𝒴
 ```
 
-**`AlgebraicGeometry.Stack.isAlgebraicStack_of_equivalenceOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicStackEquivalenceUniverses.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicStackEquivalenceUniverses.lean#L83). The attribute's comment: “the two categories in independent universes”.
+**`AlgebraicGeometry.Stack.isAlgebraicStack_of_equivalenceOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicStackEquivalenceUniverses.lean, line 83](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/AlgebraicStackEquivalenceUniverses.lean#L83). The attribute's comment: “the two categories in independent universes”.
 
 > A category over the big fppf site of `S` which is equivalent over that site to an algebraic
 > stack is an algebraic stack, the two categories being allowed independent object and morphism
@@ -134,4 +134,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 94.12, Tag 026N](https://stacks.math.columbia.edu/tag/026N)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

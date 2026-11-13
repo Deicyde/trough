@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: filteredColimitEtale_baseChange, CommAlgCat.ind_etale_of_isPushout, isFilteredColimitOfEtaleUnder_of_isColimit, isFilteredColimitOfEtale_colim, CommRingCat.ind_etale_of_comp, CommAlgCat.ind_etale_of_comp, Stacks.Henselian.EtaleLifting.algHom, Stacks.Henselian.EtaleLifting.algHom_spec
+lean: filteredColimitEtale_baseChange, CommAlgCat.ind_etale_of_isPushout, StacksDraft.indEtale_comp, isFilteredColimitOfEtaleUnder_of_isColimit, isFilteredColimitOfEtale_colim, CommRingCat.ind_etale_of_comp, CommAlgCat.ind_etale_of_comp, Stacks.Henselian.EtaleLifting.algHom
 statement: formalized
 proof: formalized
 ---
 
 # 10.154 Filtered colimits of étale ring maps
 
-Section 10.154 of the Stacks Project, [Tag 0BSG](https://stacks.math.columbia.edu/tag/0BSG). 7 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 10.154 of the Stacks Project, [Tag 0BSG](https://stacks.math.columbia.edu/tag/0BSG). 8 tags here are carried by 13 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0BSH, a lemma
 
 [Tag 0BSH](https://stacks.math.columbia.edu/tag/0BSH) in the Stacks Project.
 
-**`filteredColimitEtale_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/FilteredColimit/Basic.lean, line 635](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Etale/FilteredColimit/Basic.lean#L635).
+**`filteredColimitEtale_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/FilteredColimit/Basic.lean, line 633](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Etale/FilteredColimit/Basic.lean#L633).
 
 > **Stacks 0BSH.** Let `A` and `R'` be commutative `R`-algebras, equivalently ring
 > maps `R → A` and `R → R'`. If `A` is a filtered colimit of étale `R`-algebras, then
@@ -30,7 +30,7 @@ theorem filteredColimitEtale_baseChange
     IsFilteredColimitOfEtale R' (TensorProduct R R' A)
 ```
 
-**`CommAlgCat.ind_etale_of_isPushout`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/FilteredColimit/Basic.lean, line 1323](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Etale/FilteredColimit/Basic.lean#L1323). The attribute's comment: “"`Λ` is a filtered colimit of étale `R`-algebras" is `(CommAlgCat.etale R).ind.{u} (CommAlgCat.of R Λ)`, as in Lemma `04GN`, and the source's `S ⊗_R R'` is an abstract `Algebra.IsPushout R S R' S'` rather than a model of the tensor product. Tagged jointly with `filteredColimitEtale_baseChange`, which is this lemma for the predicate `IsFilteredColimitOfEtale` and the model `TensorProduct R R' A`. See the module docstring.”.
+**`CommAlgCat.ind_etale_of_isPushout`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/FilteredColimit/Basic.lean, line 1321](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Etale/FilteredColimit/Basic.lean#L1321). The attribute's comment: “"`Λ` is a filtered colimit of étale `R`-algebras" is `(CommAlgCat.etale R).ind.{u} (CommAlgCat.of R Λ)`, as in Lemma `04GN`, and the source's `S ⊗_R R'` is an abstract `Algebra.IsPushout R S R' S'` rather than a model of the tensor product. Tagged jointly with `filteredColimitEtale_baseChange`, which is this lemma for the predicate `IsFilteredColimitOfEtale` and the model `TensorProduct R R' A`. See the module docstring.”.
 
 > **An ind-étale algebra stays ind-étale after cobase change.** Let `R → S` and `R → R'` be ring
 > maps and let `S'` be a pushout of `S` and `R'` over `R`, that is, `S' = S ⊗[R] R'`. If `R'` is a
@@ -45,11 +45,27 @@ theorem ind_etale_of_isPushout (R S R' S' : Type u) [CommRing R] [CommRing S]
     (CommAlgCat.etale.{u} S).ind.{u} (CommAlgCat.of S S')
 ```
 
+## Tag 0BSI, a lemma
+
+[Tag 0BSI](https://stacks.math.columbia.edu/tag/0BSI) in the Stacks Project.
+
+**`StacksDraft.indEtale_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/IndEtaleUniverse.lean, line 331](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Etale/IndEtaleUniverse.lean#L331). The attribute's comment: “"`A → B` is a filtered colimit of étale ring maps" is `StacksDraft.IndEtale A B` (Lemma `097I`), with `A`, `B` and `C` in independent universes, and the source's `A → B → C` is an `IsScalarTower A B C`. The single-universe form is `CommAlgCat.ind_etale_comp`.”.
+
+> **Lemma 0BSI across universes.** If `B` is ind-étale over `A` and `C` is ind-étale over `B`,
+> then `C` is ind-étale over `A`.
+
+```lean
+theorem indEtale_comp {A : Type u} {B : Type v} {C : Type w}
+    [CommRing A] [CommRing B] [CommRing C]
+    [Algebra A B] [Algebra B C] [Algebra A C] [IsScalarTower A B C]
+    (hB : IndEtale A B) (hC : IndEtale B C) : IndEtale A C
+```
+
 ## Tag 0BSJ, a lemma
 
 [Tag 0BSJ](https://stacks.math.columbia.edu/tag/0BSJ) in the Stacks Project.
 
-**`isFilteredColimitOfEtaleUnder_of_isColimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/FilteredColimit/Basic.lean, line 407](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Etale/FilteredColimit/Basic.lean#L407).
+**`isFilteredColimitOfEtaleUnder_of_isColimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/FilteredColimit/Basic.lean, line 407](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Etale/FilteredColimit/Basic.lean#L407).
 
 > **Stacks 0BSJ.** Let `R` be a commutative ring, let `J` be a small filtered category and let
 > `G : J ⥤ Under (CommRingCat.of R)` be a diagram of `R`-algebras with colimit cocone `cA` and
@@ -70,7 +86,7 @@ theorem isFilteredColimitOfEtaleUnder_of_isColimit (R : Type) [CommRing R]
 
 [Tag 0GIM](https://stacks.math.columbia.edu/tag/0GIM) in the Stacks Project.
 
-**`isFilteredColimitOfEtale_colim`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/FilteredColimit/Colimit.lean, line 980](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Etale/FilteredColimit/Colimit.lean#L980).
+**`isFilteredColimitOfEtale_colim`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/FilteredColimit/Colimit.lean, line 980](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Etale/FilteredColimit/Colimit.lean#L980).
 
 > **Stacks Tag 0GIM, Lemma 10.154.4.**
 >
@@ -96,7 +112,7 @@ theorem isFilteredColimitOfEtale_colim
 
 [Tag 08HS](https://stacks.math.columbia.edu/tag/08HS) in the Stacks Project.
 
-**`CommRingCat.ind_etale_of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/FilteredColimit/Basic.lean, line 754](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Etale/FilteredColimit/Basic.lean#L754). The attribute's comment: “"`Λ` is a filtered colimit of étale `R`-algebras" is `ObjectProperty.ind.{u} (fun C : Under R ↦ C.hom.hom.Etale) Λ`, as in Lemma `07C3`; the source's `R`-algebra map `A → B` is a map `g` together with the composite `f ≫ g` as the `R`-algebra structure of `B`, so the triangle commutes by construction. See the module docstring.”.
+**`CommRingCat.ind_etale_of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/FilteredColimit/Basic.lean, line 752](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Etale/FilteredColimit/Basic.lean#L752). The attribute's comment: “"`Λ` is a filtered colimit of étale `R`-algebras" is `ObjectProperty.ind.{u} (fun C : Under R ↦ C.hom.hom.Etale) Λ`, as in Lemma `07C3`; the source's `R`-algebra map `A → B` is a map `g` together with the composite `f ≫ g` as the `R`-algebra structure of `B`, so the triangle commutes by construction. See the module docstring.”.
 
 > **A filtered colimit of étale algebras over a filtered colimit of étale algebras.** Let
 > `R → A → B` be ring maps. If `A` and `B` are filtered colimits of étale `R`-algebras, then `B` is
@@ -109,7 +125,7 @@ theorem ind_etale_of_comp {R A B : CommRingCat.{u}} (f : R ⟶ A) (g : A ⟶ B)
     ObjectProperty.ind.{u} (fun C : Under A ↦ C.hom.hom.Etale) (Under.mk g)
 ```
 
-**`CommAlgCat.ind_etale_of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/FilteredColimit/Basic.lean, line 1348](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Etale/FilteredColimit/Basic.lean#L1348). The attribute's comment: “"`Λ` is a filtered colimit of étale `R`-algebras" is `(CommAlgCat.etale R).ind.{u} (CommAlgCat.of R Λ)`, as in Lemma `04GN`, and the source's `A → B → C` is an `IsScalarTower A B C`. Tagged jointly with `CommRingCat.ind_etale_of_comp`, which is this lemma for ring maps and the `ObjectProperty.ind` spelling on `Under R`. See the module docstring.”.
+**`CommAlgCat.ind_etale_of_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/FilteredColimit/Basic.lean, line 1346](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Etale/FilteredColimit/Basic.lean#L1346). The attribute's comment: “"`Λ` is a filtered colimit of étale `R`-algebras" is `(CommAlgCat.etale R).ind.{u} (CommAlgCat.of R Λ)`, as in Lemma `04GN`, and the source's `A → B → C` is an `IsScalarTower A B C`. Tagged jointly with `CommRingCat.ind_etale_of_comp`, which is this lemma for ring maps and the `ObjectProperty.ind` spelling on `Under R`. See the module docstring.”.
 
 > **A filtered colimit of étale algebras over a filtered colimit of étale algebras.** Let
 > `A → B → C` be ring maps. If `B` and `C` are filtered colimits of étale `A`-algebras, then `C` is
@@ -127,7 +143,7 @@ theorem ind_etale_of_comp {A B C : Type u} [CommRing A] [CommRing B] [CommRing C
 
 [Tag 08HR](https://stacks.math.columbia.edu/tag/08HR) in the Stacks Project.
 
-**`Stacks.Henselian.EtaleLifting.algHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/EtaleLifting/IndEtale.lean, line 665](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Henselian/EtaleLifting/IndEtale.lean#L665). The attribute's comment: “the map itself; `algHom_spec` is its two defining properties and `algHom_unique` its uniqueness”.
+**`Stacks.Henselian.EtaleLifting.algHom`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/EtaleLifting/IndEtale.lean, line 665](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Henselian/EtaleLifting/IndEtale.lean#L665). The attribute's comment: “the map itself; `algHom_spec` is its two defining properties and `algHom_unique` its uniqueness”.
 
 > **The lift of a residue datum along an ind-étale algebra into a henselian local ring**
 > (Stacks Tag 08HR, Lemma 10.154.6). Let `R → S` be a ring map with `S` henselian local, let `A` be
@@ -152,7 +168,7 @@ noncomputable def algHom
     A →ₐ[R] S
 ```
 
-**`Stacks.Henselian.EtaleLifting.algHom_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/EtaleLifting/IndEtale.lean, line 682](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Henselian/EtaleLifting/IndEtale.lean#L682). The attribute's comment: “the two defining properties of `algHom`”.
+**`Stacks.Henselian.EtaleLifting.algHom_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/EtaleLifting/IndEtale.lean, line 682](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Henselian/EtaleLifting/IndEtale.lean#L682). The attribute's comment: “the two defining properties of `algHom`”.
 
 > `algHom` pulls the maximal ideal of `S` back to `q` and induces `τ` on residue fields.
 
@@ -173,7 +189,7 @@ theorem algHom_spec
       InducesResidueMap q (algHom hA p hp q hpq τ hτ : A →+* S) τ
 ```
 
-**`Stacks.Henselian.EtaleLifting.algHom_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/EtaleLifting/IndEtale.lean, line 733](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Henselian/EtaleLifting/IndEtale.lean#L733). The attribute's comment: “uniqueness of `algHom`”.
+**`Stacks.Henselian.EtaleLifting.algHom_unique`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/EtaleLifting/IndEtale.lean, line 733](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Henselian/EtaleLifting/IndEtale.lean#L733). The attribute's comment: “uniqueness of `algHom`”.
 
 > `algHom` is the only `R`-algebra map `A → S` pulling `𝔪 S` back to `q` and inducing `τ` on
 > residue fields.
@@ -201,7 +217,7 @@ theorem algHom_unique
 
 [Tag 08HT](https://stacks.math.columbia.edu/tag/08HT) in the Stacks Project.
 
-**`HenselianLocalRing.existsUnique_algEquiv_of_ind_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/FilteredColimit/Basic.lean, line 1087](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Etale/FilteredColimit/Basic.lean#L1087). The attribute's comment: “"`S` is a filtered colimit of étale `R`-algebras" is `(CommAlgCat.etale R).ind (CommAlgCat.of R S)`, as in Lemma 04GN; the source's commutative square is the two `R`-algebra maps to `K`; and "the arrows identify `K` with the residue field" is their surjectivity, `K` being a field. Uniqueness is stated among all `R`-algebra maps `S → S'`, which is stronger than the source's uniqueness among isomorphisms. See the module docstring.”.
+**`HenselianLocalRing.existsUnique_algEquiv_of_ind_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Etale/FilteredColimit/Basic.lean, line 1085](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Etale/FilteredColimit/Basic.lean#L1085). The attribute's comment: “"`S` is a filtered colimit of étale `R`-algebras" is `(CommAlgCat.etale R).ind (CommAlgCat.of R S)`, as in Lemma 04GN; the source's commutative square is the two `R`-algebra maps to `K`; and "the arrows identify `K` with the residue field" is their surjectivity, `K` being a field. Uniqueness is stated among all `R`-algebra maps `S → S'`, which is stronger than the source's uniqueness among isomorphisms. See the module docstring.”.
 
 > **Uniqueness of the henselization** (Stacks 08HT). Let `R` be a ring, let `S` and `S'` be
 > henselian local `R`-algebras that are filtered colimits of étale `R`-algebras, and let
@@ -225,7 +241,7 @@ theorem HenselianLocalRing.existsUnique_algEquiv_of_ind_etale
 
 [Tag 04GI](https://stacks.math.columbia.edu/tag/04GI) in the Stacks Project.
 
-**`part2_henselian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/Colimit.lean, line 442](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Henselian/Colimit.lean#L442). The attribute's comment: “henselian”. References: EGA IV (18.6.14).
+**`part2_henselian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/Colimit.lean, line 442](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Henselian/Colimit.lean#L442). The attribute's comment: “henselian”. References: EGA IV (18.6.14).
 
 > **Part 2 (Henselian case).** If each `R_i` is henselian, then the colimit `R`
 > is henselian.
@@ -273,7 +289,7 @@ theorem part2_henselian (hhens : ∀ i, HenselianLocalRing (G i)) :
     HenselianLocalRing (colimitRing G f)
 ```
 
-**`part3_strictlyHenselian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/Colimit.lean, line 542](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Henselian/Colimit.lean#L542). The attribute's comment: “strictly henselian”. References: EGA IV (18.8.18), “i)”.
+**`part3_strictlyHenselian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Henselian/Colimit.lean, line 542](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Henselian/Colimit.lean#L542). The attribute's comment: “strictly henselian”. References: EGA IV (18.8.18), “i)”.
 
 > **Part 3 (Strictly henselian case).** If each `R_i` is strictly henselian
 > (henselian with separably closed residue field), then the colimit `R` is strictly
@@ -309,4 +325,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.154, Tag 0BSG](https://stacks.math.columbia.edu/tag/0BSG)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

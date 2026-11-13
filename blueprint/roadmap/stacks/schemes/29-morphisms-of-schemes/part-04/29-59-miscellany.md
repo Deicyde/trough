@@ -8,13 +8,13 @@ proof: formalized
 
 # 29.59 Miscellany
 
-Section 29.59 of the Stacks Project, [Tag 0H1L](https://stacks.math.columbia.edu/tag/0H1L). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 29.59 of the Stacks Project, [Tag 0H1L](https://stacks.math.columbia.edu/tag/0H1L). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0H1M, a lemma
 
 [Tag 0H1M](https://stacks.math.columbia.edu/tag/0H1M) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_comp_fromSpecResidueField_eq`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Misc/PointFactorization.lean, line 43](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Misc/PointFactorization.lean#L43).
+**`AlgebraicGeometry.exists_comp_fromSpecResidueField_eq`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Misc/PointFactorization.lean, line 43](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Misc/PointFactorization.lean#L43).
 
 > **Stacks Project, Tag 0H1M.** A morphism from a reduced scheme whose image is contained in a
 > single point factors through the spectrum of the residue field of that point.
@@ -29,7 +29,7 @@ lemma exists_comp_fromSpecResidueField_eq {X Y : Scheme.{u}} (f : Y ⟶ X) (x : 
 
 [Tag 0H1N](https://stacks.math.columbia.edu/tag/0H1N) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_factorization_through_residueFields`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Misc/ResidueFieldFactorization.lean, line 226](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Misc/ResidueFieldFactorization.lean#L226).
+**`AlgebraicGeometry.exists_factorization_through_residueFields`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Misc/ResidueFieldFactorization.lean, line 226](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Misc/ResidueFieldFactorization.lean#L226).
 
 > **Stacks Project, Tag 0H1N.** A morphism from a reduced scheme into a locally Noetherian
 > scheme, whose image lies in a set having no nontrivial specializations among its points, factors
@@ -52,4 +52,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 29.59, Tag 0H1L](https://stacks.math.columbia.edu/tag/0H1L)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

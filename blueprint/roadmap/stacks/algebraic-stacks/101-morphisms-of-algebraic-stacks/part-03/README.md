@@ -2,12 +2,8 @@
 navigation: transparent
 ---
 
-# 101.23 Locally quasi-finite… to 101.37 Proper morphisms
+# 101.27 Morphisms of finite… to 101.44 Local complete…
 
-- [101.23 Locally quasi-finite morphisms](101-23-locally-quasi-finite-morphisms.md)
-- [101.24 Quasi-finite morphisms](101-24-quasi-finite-morphisms.md)
-- [101.25 Flat morphisms](101-25-flat-morphisms.md)
-- [101.26 Flat at a point](101-26-flat-at-a-point.md)
 - [101.27 Morphisms of finite presentation](101-27-morphisms-of-finite-presentation.md)
 - [101.28 Gerbes](101-28-gerbes.md)
 - [101.29 Stratification by gerbes](101-29-stratification-by-gerbes.md)
@@ -19,3 +15,10 @@ navigation: transparent
 - [101.35 Étale morphisms](101-35-etale-morphisms.md)
 - [101.36 Unramified morphisms](101-36-unramified-morphisms.md)
 - [101.37 Proper morphisms](101-37-proper-morphisms.md)
+- [101.38 Scheme theoretic image](101-38-scheme-theoretic-image.md)
+- [101.39 Valuative criteria](101-39-valuative-criteria.md)
+- [101.40 Valuative criterion for second diagonal](101-40-valuative-criterion-for-second-diagonal.md)
+- [101.41 Valuative criterion for the diagonal](101-41-valuative-criterion-for-the-diagonal.md)
+- [101.42 Valuative criterion for universal closedness](101-42-valuative-criterion-for-universal-closedn.md)
+- [101.43 Valuative criterion for properness](101-43-valuative-criterion-for-properness.md)
+- [101.44 Local complete intersection morphisms](101-44-local-complete-intersection-morphisms.md)

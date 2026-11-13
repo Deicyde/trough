@@ -8,13 +8,13 @@ proof: formalized
 
 # 55.9 The geometry of a regular model
 
-Section 55.9 of the Stacks Project, [Tag 0C5Y](https://stacks.math.columbia.edu/tag/0C5Y). 12 tags here are carried by 45 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 55.9 of the Stacks Project, [Tag 0C5Y](https://stacks.math.columbia.edu/tag/0C5Y). 12 tags here are carried by 45 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0C5Z, a lemma
 
 [Tag 0C5Z](https://stacks.math.columbia.edu/tag/0C5Z) in the Stacks Project.
 
-**`Stacks.Models.isEffectiveCartierDivisor_specialFiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/SpecialFiberCartier.lean, line 56](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/SpecialFiberCartier.lean#L56). The attribute's comment: “special\_fibre\_cartier”.
+**`Stacks.Models.isEffectiveCartierDivisor_specialFiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/SpecialFiberCartier.lean, line 56](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/SpecialFiberCartier.lean#L56). The attribute's comment: “special\_fibre\_cartier”.
 
 > **Stacks Project, Tag 0C5Z.** The scheme-theoretic special fibre of a scheme flat over a
 > discrete valuation ring is an effective Cartier divisor: on every affine chart it is the zero
@@ -30,7 +30,7 @@ public theorem isEffectiveCartierDivisor_specialFiber
       (pullback.fst f (Spec.map (CommRingCat.ofHom (algebraMap R k)))).ker
 ```
 
-**`Stacks.Models.RegularModelSituation.isEffectiveCartierDivisor_specialFiberComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/SpecialFiberComponentCartier.lean, line 259](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/SpecialFiberComponentCartier.lean#L259). The attribute's comment: “component\_cartier”.
+**`Stacks.Models.RegularModelSituation.isEffectiveCartierDivisor_specialFiberComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/SpecialFiberComponentCartier.lean, line 259](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/SpecialFiberComponentCartier.lean#L259). The attribute's comment: “component\_cartier”.
 
 > **Stacks Project, Tag 0C5Z (component clause).** Each irreducible component of the special
 > fibre of a regular model, taken with its reduced induced structure as a closed subscheme of the
@@ -44,7 +44,7 @@ public theorem isEffectiveCartierDivisor_specialFiberComponent :
     IsEffectiveCartierDivisor (S.specialFiberComponentIdeal Z)
 ```
 
-**`Stacks.Models.RegularModelSituation.specialFiberIdeal_eq_prod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/SpecialFiberComponentCartier.lean, line 421](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/SpecialFiberComponentCartier.lean#L421). The attribute's comment: “part (3): X\_k = ∑ mᵢ Cᵢ with mᵢ the multiplicity of Cᵢ in X\_k”.
+**`Stacks.Models.RegularModelSituation.specialFiberIdeal_eq_prod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/SpecialFiberComponentCartier.lean, line 421](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/SpecialFiberComponentCartier.lean#L421). The attribute's comment: “part (3): X\_k = ∑ mᵢ Cᵢ with mᵢ the multiplicity of Cᵢ in X\_k”.
 
 > **Stacks Project, Tag 0C5Z, part (3).** The special fibre of a regular model is the sum
 > `X_k = ∑ mᵢ Cᵢ` of its irreducible components `Cᵢ`, as effective Cartier divisors, with `mᵢ`
@@ -60,7 +60,7 @@ public theorem specialFiberIdeal_eq_prod :
       ∏ Z, S.specialFiberComponentIdeal Z ^ S.specialFiberMultiplicity Z
 ```
 
-**`Stacks.Models.invertibleSheafIsoUnit_specialFiber`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/SpecialFiberPrincipal.lean, line 268](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/SpecialFiberPrincipal.lean#L268). The attribute's comment: “part (4): the special fibre has trivial invertible sheaf”. References: SGA 6 X (7.8), “O\_X(X\_s) ≅ O\_X”.
+**`Stacks.Models.invertibleSheafIsoUnit_specialFiber`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/SpecialFiberPrincipal.lean, line 268](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/SpecialFiberPrincipal.lean#L268). The attribute's comment: “part (4): the special fibre has trivial invertible sheaf”. References: SGA 6 X (7.8), “O\_X(X\_s) ≅ O\_X”.
 
 > **The invertible sheaf of the special fibre is trivial**, `𝒪_X(X_k) ≅ 𝒪_X`, for any scheme
 > flat over a discrete valuation ring: the special fibre is the zero scheme of the regular global
@@ -79,7 +79,7 @@ public noncomputable def invertibleSheafIsoUnit_specialFiber
 
 [Tag 0C60](https://stacks.math.columbia.edu/tag/0C60) in the Stacks Project.
 
-**`Stacks.Models.RegularModelSituation.isGorenstein_model`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/GorensteinGeometry.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/GorensteinGeometry.lean#L101). The attribute's comment: “part (1): Gorenstein morphism”.
+**`Stacks.Models.RegularModelSituation.isGorenstein_model`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/GorensteinGeometry.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/GorensteinGeometry.lean#L101). The attribute's comment: “part (1): Gorenstein morphism”.
 
 > The structure morphism of a regular model of a smooth curve over a discrete valuation ring is
 > a Gorenstein morphism.
@@ -94,7 +94,7 @@ public theorem isGorenstein_model :
       S.X_to_R.IsGorenstein hf
 ```
 
-**`Stacks.Models.RegularModelSituation.relativeDimension_model`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/GorensteinGeometry.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/GorensteinGeometry.lean#L168). The attribute's comment: “part (1): relative dimension one”.
+**`Stacks.Models.RegularModelSituation.relativeDimension_model`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/GorensteinGeometry.lean, line 168](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/GorensteinGeometry.lean#L168). The attribute's comment: “part (1): relative dimension one”.
 
 > Every nonempty fibre of the structure morphism of a regular model of a smooth curve is
 > equidimensional of dimension one.
@@ -106,7 +106,7 @@ public theorem isGorenstein_model :
 public theorem relativeDimension_model : RelativeDimension S.X_to_R 1
 ```
 
-**`Stacks.Models.RegularModelSituation.isGorenstein_specialFiberComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/GorensteinGeometry.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/GorensteinGeometry.lean#L220). The attribute's comment: “part (2)”.
+**`Stacks.Models.RegularModelSituation.isGorenstein_specialFiberComponent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/GorensteinGeometry.lean, line 220](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/GorensteinGeometry.lean#L220). The attribute's comment: “part (2)”.
 
 > Each irreducible component `Cᵢ` of the special fibre of a regular model, taken with its
 > reduced induced structure as a closed subscheme of the model, is a Gorenstein scheme.
@@ -119,7 +119,7 @@ public theorem isGorenstein_specialFiberComponent (Z : irreducibleComponents S.s
     AlgebraicGeometry.IsGorenstein (S.specialFiberComponentIdeal Z).subscheme
 ```
 
-**`Stacks.Models.RegularModelSituation.isGorenstein_model_and_specialFiberComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/GorensteinGeometry.lean, line 229](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/GorensteinGeometry.lean#L229).
+**`Stacks.Models.RegularModelSituation.isGorenstein_model_and_specialFiberComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/GorensteinGeometry.lean, line 229](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/GorensteinGeometry.lean#L229).
 
 > For a regular model `X` of a smooth curve `C` over `K`: the structure morphism
 > `X ⟶ Spec(R)` is a Gorenstein morphism of relative dimension one, and each irreducible component
@@ -138,7 +138,7 @@ public theorem isGorenstein_model_and_specialFiberComponents :
 
 [Tag 0C61](https://stacks.math.columbia.edu/tag/0C61) in the Stacks Project.
 
-**`Stacks.Models.RegularProperModelSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/RegularProperModel.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/RegularProperModel.lean#L57).
+**`Stacks.Models.RegularProperModelSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/RegularProperModel.lean, line 57](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/RegularProperModel.lean#L57).
 
 > **Stacks Project, Tag 0C61.** The standing situation of the geometry of a regular model: a
 > discrete valuation ring with a chosen uniformizer, a smooth projective curve over its fraction
@@ -153,7 +153,7 @@ public structure RegularProperModelSituation extends RegularModelSituation.{u}
 
 [Tag 0C62](https://stacks.math.columbia.edu/tag/0C62) in the Stacks Project.
 
-**`Stacks.Models.RegularProperModelSituation.connectedSpace_specialFiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/SpecialFiberConnected.lean, line 389](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/SpecialFiberConnected.lean#L389). The attribute's comment: “the special fibre X\_k of a regular proper model is connected”. References: SGA 2 XIII (2.2), “special case”; SGA 6 X (7.12), “special case”.
+**`Stacks.Models.RegularProperModelSituation.connectedSpace_specialFiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/SpecialFiberConnected.lean, line 389](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/SpecialFiberConnected.lean#L389). The attribute's comment: “the special fibre X\_k of a regular proper model is connected”. References: SGA 2 XIII (2.2), “special case”; SGA 6 X (7.12), “special case”.
 
 > **[Stacks, Tag 0C62].**  In Situation [Stacks, Tag 0C61] the special fibre `X_k` of the
 > regular proper model is connected.
@@ -172,7 +172,7 @@ public theorem connectedSpace_specialFiber : ConnectedSpace S.specialFiber
 
 [Tag 0C63](https://stacks.math.columbia.edu/tag/0C63) in the Stacks Project.
 
-**`Stacks.Models.multiplicityHom_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/PicardSequence.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/PicardSequence.lean#L135). The attribute's comment: “the first map, which sends 1 to (m\_1, ..., m\_n)”.
+**`Stacks.Models.multiplicityHom_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/PicardSequence.lean, line 135](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/PicardSequence.lean#L135). The attribute's comment: “the first map, which sends 1 to (m\_1, ..., m\_n)”.
 
 > The first map of the sequence sends `1` to the vector `(m₁, …, mₙ)` of multiplicities.
 
@@ -181,7 +181,7 @@ theorem multiplicityHom_one {ι : Type*} (m : ι → ℕ) :
     multiplicityHom m 1 = fun i => (m i : ℤ)
 ```
 
-**`Stacks.Models.componentPicardHom_single`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/PicardSequence.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/PicardSequence.lean#L157). The attribute's comment: “the second map, which sends the ith basis vector to O\_X(C\_i)”.
+**`Stacks.Models.componentPicardHom_single`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/PicardSequence.lean, line 157](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/PicardSequence.lean#L157). The attribute's comment: “the second map, which sends the ith basis vector to O\_X(C\_i)”.
 
 > The second map of the sequence sends the `i`th basis vector of `ℤ^{⊕n}` to the class of
 > `𝒪_X(Cᵢ)`.
@@ -191,7 +191,7 @@ theorem componentPicardHom_single [DecidableEq ι] (i : ι) :
     componentPicardHom S C (Pi.single i 1) = picardClass (C i)
 ```
 
-**`Stacks.Models.genericFiberPicardRestriction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/PicardSequence.lean, line 165](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/PicardSequence.lean#L165). The attribute's comment: “the third map, restriction of Picard classes to the generic fibre”.
+**`Stacks.Models.genericFiberPicardRestriction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/PicardSequence.lean, line 165](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/PicardSequence.lean#L165). The attribute's comment: “the third map, restriction of Picard classes to the generic fibre”.
 
 > **The third map `Pic(X) ⟶ Pic(C)` of the Picard sequence of a regular model**: restriction
 > of Picard classes along the inclusion of the generic fibre.
@@ -200,7 +200,7 @@ theorem componentPicardHom_single [DecidableEq ι] (i : ι) :
 def genericFiberPicardRestriction : ofScheme S.X →+ ofScheme S.C
 ```
 
-**`Stacks.Models.componentPicardHom_multiplicityHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/PicardSequence.lean, line 218](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/PicardSequence.lean#L218). The attribute's comment: “the composite Z -> Z^n -> Pic(X) vanishes”.
+**`Stacks.Models.componentPicardHom_multiplicityHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/PicardSequence.lean, line 218](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/PicardSequence.lean#L218). The attribute's comment: “the composite Z -> Z^n -> Pic(X) vanishes”.
 
 > The composite of the first two maps of the sequence vanishes.
 
@@ -209,7 +209,7 @@ theorem componentPicardHom_multiplicityHom (a : ℤ) :
     componentPicardHom S C (multiplicityHom m a) = 0
 ```
 
-**`Stacks.Models.injective_multiplicityHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/PicardSequence.lean, line 230](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/PicardSequence.lean#L230). The attribute's comment: “exactness at Z, i.e. injectivity of the first map”.
+**`Stacks.Models.injective_multiplicityHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/PicardSequence.lean, line 230](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/PicardSequence.lean#L230). The attribute's comment: “exactness at Z, i.e. injectivity of the first map”.
 
 > The first map of the sequence is injective, which is exactness at `ℤ`.
 
@@ -217,7 +217,7 @@ theorem componentPicardHom_multiplicityHom (a : ℤ) :
 theorem injective_multiplicityHom : Function.Injective (multiplicityHom (ι := ι) m)
 ```
 
-**`Stacks.Models.picardSequence_specialFiberComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/PicardSequence.lean, line 258](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/PicardSequence.lean#L258). The attribute's comment: “the two named maps and the clauses proved here, for the components of X\_k”.
+**`Stacks.Models.picardSequence_specialFiberComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/PicardSequence.lean, line 258](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/PicardSequence.lean#L258). The attribute's comment: “the two named maps and the clauses proved here, for the components of X\_k”.
 
 > Take the family `C₁, …, Cₙ` to be the irreducible components of `X_k` with their reduced
 > induced structure, and let `mᵢ` be multiplicities with `X_k = Σ mᵢ Cᵢ`. Then the first map of
@@ -240,7 +240,7 @@ theorem picardSequence_specialFiberComponents
       Function.Injective (multiplicityHom m)
 ```
 
-**`Stacks.Models.picardSequence_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/PicardSequenceExact.lean, line 697](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/PicardSequenceExact.lean#L697). References: EGA IV (21.6.11), “special case”; SGA 6 X (7.8), “partial, special case”.
+**`Stacks.Models.picardSequence_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/PicardSequenceExact.lean, line 693](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/PicardSequenceExact.lean#L693). References: EGA IV (21.6.11), “special case”; SGA 6 X (7.8), “partial, special case”.
 
 > **Stacks Project, Tag 0C63.** In Situation 0C61 there is an exact sequence
 >
@@ -284,7 +284,7 @@ theorem picardSequence_exact (S : RegularProperModelSituation.{u}) :
 
 [Tag 0C64](https://stacks.math.columbia.edu/tag/0C64) in the Stacks Project.
 
-**`Stacks.Models.RegularProperModelSituation.specialFiberDegreePairing_bilinear_and_comm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/DegreePairingSymmetry.lean, line 659](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/DegreePairingSymmetry.lean#L659). The attribute's comment: “the pairing ⟨a, L⟩ = ∑ a\_Z deg(L|\_\{C\_Z}), its bilinearity, and the symmetry ⟨a, O\_X(∑ b\_Y C\_Y)⟩ = ⟨b, O\_X(∑ a\_Z C\_Z)⟩ at integer coefficients”.
+**`Stacks.Models.RegularProperModelSituation.specialFiberDegreePairing_bilinear_and_comm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/DegreePairingSymmetry.lean, line 662](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/DegreePairingSymmetry.lean#L662). The attribute's comment: “the pairing ⟨a, L⟩ = ∑ a\_Z deg(L|\_\{C\_Z}), its bilinearity, and the symmetry ⟨a, O\_X(∑ b\_Y C\_Y)⟩ = ⟨b, O\_X(∑ a\_Z C\_Z)⟩ at integer coefficients”.
 
 > **Stacks Project, Tag 0C64.** In the situation of [Stacks, Tag 0C61], let `C_Z` run over the
 > irreducible components of the special fibre of the regular proper model `X ⟶ Spec(R)`, each with
@@ -338,7 +338,7 @@ theorem specialFiberDegreePairing_bilinear_and_comm
             (S.isInvertible_specialFiberVerticalDivisorSheaf s a))
 ```
 
-**`Stacks.Models.degreePairing`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/IntersectionPairing.lean, line 164](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/IntersectionPairing.lean#L164). The attribute's comment: “the pairing ⟨a, L⟩ = ∑ aᵢ deg(L|\_\{Cᵢ}); the whole tag, its bilinearity and its symmetry together, is Stacks.Models.RegularProperModelSituation.specialFiberDegreePairing\_bilinear\_and\_comm of StacksFrontier/AlgebraicGeometry/Curves/Models/DegreePairingSymmetry.lean”.
+**`Stacks.Models.degreePairing`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/IntersectionPairing.lean, line 164](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/IntersectionPairing.lean#L164). The attribute's comment: “the pairing ⟨a, L⟩ = ∑ aᵢ deg(L|\_\{Cᵢ}); the whole tag, its bilinearity and its symmetry together, is Stacks.Models.RegularProperModelSituation.specialFiberDegreePairing\_bilinear\_and\_comm of StacksFrontier/AlgebraicGeometry/Curves/Models/DegreePairingSymmetry.lean”.
 
 > **Stacks Project, Tag 0C64.** The degree pairing `⟨a, ℒ⟩ = ∑ᵢ aᵢ · deg(ℒ|_{Cᵢ})` of an
 > integer coefficient family `a` against an invertible `𝒪_X`-module, over a finite family of
@@ -354,7 +354,7 @@ def degreePairing (a : ι → ℤ) (L : S.X.Modules)
 
 [Tag 0C65](https://stacks.math.columbia.edu/tag/0C65) in the Stacks Project.
 
-**`Stacks.Models.RegularProperModelSituation.specialFiberIntersectionProduct_comm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/DegreePairingSymmetry.lean, line 583](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/DegreePairingSymmetry.lean#L583). The attribute's comment: “the second displayed equality, the symmetry ⟨a, O\_X(∑ b\_Y C\_Y)⟩ = ⟨b, O\_X(∑ a\_Z C\_Z)⟩, at the irreducible components of the special fibre and on nonnegative coefficient families; at integer coefficients it is the fourth clause of Stacks.Models.RegularProperModelSituation.specialFiberDegreePairing\_bilinear\_and\_comm”.
+**`Stacks.Models.RegularProperModelSituation.specialFiberIntersectionProduct_comm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/DegreePairingSymmetry.lean, line 584](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/DegreePairingSymmetry.lean#L584). The attribute's comment: “the second displayed equality, the symmetry ⟨a, O\_X(∑ b\_Y C\_Y)⟩ = ⟨b, O\_X(∑ a\_Z C\_Z)⟩, at the irreducible components of the special fibre and on nonnegative coefficient families; at integer coefficients it is the fourth clause of Stacks.Models.RegularProperModelSituation.specialFiberDegreePairing\_bilinear\_and\_comm”.
 
 > **Stacks Project, Tag 0C65, second equality**, on nonnegative coefficient families: the
 > intersection product of the components of the special fibre is symmetric,
@@ -372,7 +372,7 @@ theorem specialFiberIntersectionProduct_comm
       S.specialFiberIntersectionProduct (fun Z => (b Z : ℤ)) a
 ```
 
-**`Stacks.Models.RegularProperModelSituation.specialFiberDegreePairing_bilinear_and_comm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/DegreePairingSymmetry.lean, line 659](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/DegreePairingSymmetry.lean#L659). The attribute's comment: “the second displayed equality ⟨a, O\_X(∑ b\_Y C\_Y)⟩ = ⟨b, O\_X(∑ a\_Z C\_Z)⟩ at INTEGER coefficient families a, b, which is the fourth clause. Here O\_X(∑ b\_Y C\_Y) is Stacks.Models.RegularProperModelSituation.specialFiberVerticalDivisorSheaf, the difference twist of Stacks 01WX part (4) at the positive and negative parts of b; its degree on C\_Z is ∑\_Y b\_Y (C\_Z · C\_Y) by Stacks.Models.RegularProperModelSituation.specialFiberComponentDegree\_specialFiberVerticalDivisorSheaf\_eq\_sum, and on a nonnegative family the pairing against it is the intersection product Stacks.Models.intersectionProduct of the first displayed equality, by Stacks.Models.RegularProperModelSituation.specialFiberDegreePairing\_specialFiberVerticalDivisorSheaf\_natCast”.
+**`Stacks.Models.RegularProperModelSituation.specialFiberDegreePairing_bilinear_and_comm`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/DegreePairingSymmetry.lean, line 662](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/DegreePairingSymmetry.lean#L662). The attribute's comment: “the second displayed equality ⟨a, O\_X(∑ b\_Y C\_Y)⟩ = ⟨b, O\_X(∑ a\_Z C\_Z)⟩ at INTEGER coefficient families a, b, which is the fourth clause. Here O\_X(∑ b\_Y C\_Y) is Stacks.Models.RegularProperModelSituation.specialFiberVerticalDivisorSheaf, the difference twist of Stacks 01WX part (4) at the positive and negative parts of b; its degree on C\_Z is ∑\_Y b\_Y (C\_Z · C\_Y) by Stacks.Models.RegularProperModelSituation.specialFiberComponentDegree\_specialFiberVerticalDivisorSheaf\_eq\_sum, and on a nonnegative family the pairing against it is the intersection product Stacks.Models.intersectionProduct of the first displayed equality, by Stacks.Models.RegularProperModelSituation.specialFiberDegreePairing\_specialFiberVerticalDivisorSheaf\_natCast”.
 
 > **Stacks Project, Tag 0C64.** In the situation of [Stacks, Tag 0C61], let `C_Z` run over the
 > irreducible components of the special fibre of the regular proper model `X ⟶ Spec(R)`, each with
@@ -426,7 +426,7 @@ theorem specialFiberDegreePairing_bilinear_and_comm
             (S.isInvertible_specialFiberVerticalDivisorSheaf s a))
 ```
 
-**`Stacks.Models.intersectionProduct`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/IntersectionPairing.lean, line 230](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/IntersectionPairing.lean#L230). The attribute's comment: “the product, defined as ⟨a, O\_X(∑ bⱼCⱼ)⟩; its symmetry on the components of the special fibre is Stacks.Models.RegularProperModelSituation.specialFiberIntersectionProduct\_comm of StacksFrontier/AlgebraicGeometry/Curves/Models/DegreePairingSymmetry.lean”.
+**`Stacks.Models.intersectionProduct`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/IntersectionPairing.lean, line 230](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/IntersectionPairing.lean#L230). The attribute's comment: “the product, defined as ⟨a, O\_X(∑ bⱼCⱼ)⟩; its symmetry on the components of the special fibre is Stacks.Models.RegularProperModelSituation.specialFiberIntersectionProduct\_comm of StacksFrontier/AlgebraicGeometry/Curves/Models/DegreePairingSymmetry.lean”.
 
 > **Stacks Project, Tag 0C65, the definition of the intersection product.** For an integer
 > family `a` and a nonnegative family `b` on components `Cᵢ` that are effective Cartier divisors,
@@ -437,7 +437,7 @@ def intersectionProduct (a : ι → ℤ) (b : ι → ℕ)
     (hC : ∀ i ∈ s, Stacks.Divisors.IsEffectiveCartierDivisor (C i)) : ℤ
 ```
 
-**`Stacks.Models.intersectionProduct_eq_degreePairing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/IntersectionPairing.lean, line 239](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/IntersectionPairing.lean#L239). The attribute's comment: “the first displayed equality, which is the definition”.
+**`Stacks.Models.intersectionProduct_eq_degreePairing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/IntersectionPairing.lean, line 239](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/IntersectionPairing.lean#L239). The attribute's comment: “the first displayed equality, which is the definition”.
 
 > **Stacks Project, Tag 0C65, first equality.** The intersection product
 > `(∑ᵢ aᵢCᵢ · ∑ⱼ bⱼCⱼ)` is the degree pairing `⟨a, 𝒪_X(∑ⱼ bⱼCⱼ)⟩`.
@@ -455,7 +455,7 @@ theorem intersectionProduct_eq_degreePairing (a : ι → ℤ) (b : ι → ℕ)
 
 [Tag 0C66](https://stacks.math.columbia.edu/tag/0C66) in the Stacks Project.
 
-**`Stacks.Models.intersectionProduct_specialFiber_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/IntersectionForm.lean, line 338](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/IntersectionForm.lean#L338). The attribute's comment: “part (2), in the orientation (∑ aᵢCᵢ · ∑ mᵢCᵢ) = 0 of the symmetric form”.
+**`Stacks.Models.intersectionProduct_specialFiber_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/IntersectionForm.lean, line 338](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/IntersectionForm.lean#L338). The attribute's comment: “part (2), in the orientation (∑ aᵢCᵢ · ∑ mᵢCᵢ) = 0 of the symmetric form”.
 
 > **The special fibre is orthogonal to every integral combination of the components**,
 > `(Σ aᵢCᵢ · Σ mᵢCᵢ) = 0`, because the sheaf `𝒪_X(Σ mᵢCᵢ) = 𝒪_X(X_k)` is trivial and the structure
@@ -475,7 +475,7 @@ theorem intersectionProduct_specialFiber_eq_zero (a : ι → ℤ) (m : ι → �
     intersectionProduct S s C g hg hdim a m hC = 0
 ```
 
-**`Stacks.Models.RegularProperModelSituation.specialFiberIntersectionMatrix_nonneg_and_eq_zero_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/SpecialFiberIntersectionForm.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/SpecialFiberIntersectionForm.lean#L113). The attribute's comment: “part (1): (C\_Z · C\_Y) ≥ 0 for Z ≠ Y, with equality if and only if C\_Z ∩ C\_Y = ∅”.
+**`Stacks.Models.RegularProperModelSituation.specialFiberIntersectionMatrix_nonneg_and_eq_zero_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/SpecialFiberIntersectionForm.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/SpecialFiberIntersectionForm.lean#L113). The attribute's comment: “part (1): (C\_Z · C\_Y) ≥ 0 for Z ≠ Y, with equality if and only if C\_Z ∩ C\_Y = ∅”.
 
 > **Stacks Project, Tag 0C66, part (1).** For two distinct irreducible components `C_Z ≠ C_Y` of
 > the special fibre of a regular proper model, `(C_Z · C_Y) ≥ 0`, and `(C_Z · C_Y) = 0` if and only
@@ -495,7 +495,7 @@ theorem specialFiberIntersectionMatrix_nonneg_and_eq_zero_iff
       (S.specialFiberIntersectionMatrix Z Y = 0 ↔ (Z.1 : Set S.specialFiber) ∩ Y.1 = ∅)
 ```
 
-**`Stacks.Models.RegularProperModelSituation.specialFiberIntersectionProduct_multiplicity_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/SpecialFiberIntersectionForm.lean, line 160](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/SpecialFiberIntersectionForm.lean#L160). The attribute's comment: “part (2): (∑\_Z m\_Z C\_Z · C\_Y) = 0, the special fibre is orthogonal to each component”. References: SGA 7 X (1.8), “partial”.
+**`Stacks.Models.RegularProperModelSituation.specialFiberIntersectionProduct_multiplicity_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/SpecialFiberIntersectionForm.lean, line 160](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/SpecialFiberIntersectionForm.lean#L160). The attribute's comment: “part (2): (∑\_Z m\_Z C\_Z · C\_Y) = 0, the special fibre is orthogonal to each component”. References: SGA 7 X (1.8), “partial”.
 
 > **Stacks Project, Tag 0C66, part (2).** The special fibre `X_k = ∑_Z m_Z C_Z` of a regular
 > proper model is orthogonal to each of its irreducible components, `(∑_Z m_Z C_Z · C_Y) = 0`.
@@ -512,7 +512,7 @@ theorem specialFiberIntersectionProduct_multiplicity_eq_zero
       (Pi.single Y 1) = 0
 ```
 
-**`Stacks.Models.RegularProperModelSituation.not_forall_specialFiberIntersectionMatrix_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/SpecialFiberIntersectionForm.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/SpecialFiberIntersectionForm.lean#L187). The attribute's comment: “part (3): no nonempty proper set I of components has (C\_Z · C\_Y) = 0 for all Z in I and all Y not in I”.
+**`Stacks.Models.RegularProperModelSituation.not_forall_specialFiberIntersectionMatrix_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/SpecialFiberIntersectionForm.lean, line 187](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/SpecialFiberIntersectionForm.lean#L187). The attribute's comment: “part (3): no nonempty proper set I of components has (C\_Z · C\_Y) = 0 for all Z in I and all Y not in I”.
 
 > **Stacks Project, Tag 0C66, part (3).** There is no nonempty proper set `I` of irreducible
 > components of the special fibre with `(C_Z · C_Y) = 0` for all `Z ∈ I` and all `Y ∉ I`.
@@ -529,7 +529,7 @@ theorem not_forall_specialFiberIntersectionMatrix_eq_zero
     ¬ ∀ Z ∈ I, ∀ Y ∉ I, S.specialFiberIntersectionMatrix Z Y = 0
 ```
 
-**`Stacks.Models.RegularProperModelSituation.specialFiberIntersectionForm_nonpos_and_eq_zero_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/SpecialFiberIntersectionForm.lean, line 273](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/SpecialFiberIntersectionForm.lean#L273). The attribute's comment: “part (4): (∑\_Z a\_Z C\_Z · ∑\_Z a\_Z C\_Z) ≤ 0 for rational a, with equality if and only if a\_Z = q m\_Z for a single rational q”. References: SGA 7 X (1.15), “partial”; SGA 7 X (1.8), “special case”.
+**`Stacks.Models.RegularProperModelSituation.specialFiberIntersectionForm_nonpos_and_eq_zero_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/SpecialFiberIntersectionForm.lean, line 273](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/SpecialFiberIntersectionForm.lean#L273). The attribute's comment: “part (4): (∑\_Z a\_Z C\_Z · ∑\_Z a\_Z C\_Z) ≤ 0 for rational a, with equality if and only if a\_Z = q m\_Z for a single rational q”. References: SGA 7 X (1.15), “partial”; SGA 7 X (1.8), “special case”.
 
 > **Stacks Project, Tag 0C66, part (4).** For every family `a` of *rational* coefficients on the
 > irreducible components of the special fibre of a regular proper model,
@@ -562,7 +562,7 @@ theorem specialFiberIntersectionForm_nonpos_and_eq_zero_iff
 
 [Tag 0C67](https://stacks.math.columbia.edu/tag/0C67) in the Stacks Project.
 
-**`Stacks.Models.isEffectiveCartierDivisor_reducedSpecialFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/ReducedSpecialFibre.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/ReducedSpecialFibre.lean#L129). The attribute's comment: “D is an effective Cartier divisor, given a decomposition of X\_k”.
+**`Stacks.Models.isEffectiveCartierDivisor_reducedSpecialFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/ReducedSpecialFibre.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/ReducedSpecialFibre.lean#L129). The attribute's comment: “D is an effective Cartier divisor, given a decomposition of X\_k”.
 
 > **The reduced fibre of a decomposition into effective Cartier divisors is an effective
 > Cartier divisor**, being a sum of nonnegative multiples of effective Cartier divisors.
@@ -573,7 +573,7 @@ theorem isEffectiveCartierDivisor_reducedSpecialFibre
     IsEffectiveCartierDivisor (reducedSpecialFibre s C m)
 ```
 
-**`Stacks.Models.zsmul_picardClass_reducedSpecialFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/ReducedSpecialFibre.lean, line 163](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/ReducedSpecialFibre.lean#L163). The attribute's comment: “O\_X(D) has order dividing d in Pic(X), given a decomposition of X\_k”.
+**`Stacks.Models.zsmul_picardClass_reducedSpecialFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/ReducedSpecialFibre.lean, line 163](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/ReducedSpecialFibre.lean#L163). The attribute's comment: “O\_X(D) has order dividing d in Pic(X), given a decomposition of X\_k”.
 
 > **Stacks Project, Tag 0C67.** The invertible sheaf `𝒪_X(D)` of the reduced special fibre
 > `D = Σ (mᵢ/d) Cᵢ` of a regular proper model has order dividing `d` in `Pic(X)`:
@@ -585,7 +585,7 @@ theorem zsmul_picardClass_reducedSpecialFibre
     ((s.gcd m : ℕ) : ℤ) • picardClass (reducedSpecialFibre s C m) = 0
 ```
 
-**`Stacks.Models.isInvertible_immersionConormalSheaf_reducedSpecialFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/ReducedSpecialFibre.lean, line 175](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/ReducedSpecialFibre.lean#L175). The attribute's comment: “the conormal sheaf of D is an invertible O\_D-module”.
+**`Stacks.Models.isInvertible_immersionConormalSheaf_reducedSpecialFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/ReducedSpecialFibre.lean, line 175](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/ReducedSpecialFibre.lean#L175). The attribute's comment: “the conormal sheaf of D is an invertible O\_D-module”.
 
 > **Stacks Project, Tag 0C67.** The conormal module `𝒞_{D/X}` of the reduced special fibre
 > `D = Σ (mᵢ/d) Cᵢ` is an invertible `𝒪_D`-module: it is the restriction `ℐ_D|_D` of the ideal
@@ -598,7 +598,7 @@ theorem isInvertible_immersionConormalSheaf_reducedSpecialFibre :
       (Stacks.Thickenings.immersionConormalSheaf (reducedSpecialFibre s C m).subschemeι)
 ```
 
-**`Stacks.Models.zsmul_picardClass_immersionConormalSheaf_reducedSpecialFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/ReducedSpecialFibre.lean, line 185](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/ReducedSpecialFibre.lean#L185). The attribute's comment: “the conormal class has order dividing d in Pic(D)”.
+**`Stacks.Models.zsmul_picardClass_immersionConormalSheaf_reducedSpecialFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/ReducedSpecialFibre.lean, line 185](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/ReducedSpecialFibre.lean#L185). The attribute's comment: “the conormal class has order dividing d in Pic(D)”.
 
 > **Stacks Project, Tag 0C67.** The conormal module `𝒞_{D/X}` of the reduced special fibre
 > `D = Σ (mᵢ/d) Cᵢ` has order dividing `d` in `Pic(D)`: it is the pullback to `D` of
@@ -613,7 +613,7 @@ theorem zsmul_picardClass_immersionConormalSheaf_reducedSpecialFibre
         (isInvertible_immersionConormalSheaf (reducedSpecialFibre s C m)) = 0
 ```
 
-**`Stacks.Models.reducedSpecialFibre_order_dvd_gcd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/ReducedSpecialFibre.lean, line 204](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/ReducedSpecialFibre.lean#L204). The attribute's comment: “all four conclusions, given a decomposition of X\_k rather than a canonical one”.
+**`Stacks.Models.reducedSpecialFibre_order_dvd_gcd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/ReducedSpecialFibre.lean, line 204](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/ReducedSpecialFibre.lean#L204). The attribute's comment: “all four conclusions, given a decomposition of X\_k rather than a canonical one”.
 
 > **Stacks Project, Tag 0C67.** All four conclusions at once: the reduced special fibre
 > `D = Σ (mᵢ/d) Cᵢ` of a regular proper model is an effective Cartier divisor, `𝒪_X(D)` has order
@@ -635,7 +635,7 @@ theorem reducedSpecialFibre_order_dvd_gcd
         (isInvertible_immersionConormalSheaf (reducedSpecialFibre s C m)) = 0
 ```
 
-**`Stacks.Models.isEffectiveCartierDivisor_reducedSpecialFibre_specialFiberComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/ReducedSpecialFibreComponents.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/ReducedSpecialFibreComponents.lean#L90). The attribute's comment: “D is an effective Cartier divisor, at the canonical decomposition of X\_k into its irreducible components”.
+**`Stacks.Models.isEffectiveCartierDivisor_reducedSpecialFibre_specialFiberComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/ReducedSpecialFibreComponents.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/ReducedSpecialFibreComponents.lean#L90). The attribute's comment: “D is an effective Cartier divisor, at the canonical decomposition of X\_k into its irreducible components”.
 
 > **Stacks Project, Tag 0C67, at the canonical decomposition.** The reduced special fibre
 > `D = Σ (mᵢ/d) Cᵢ` of the decomposition of `X_k` into its irreducible components is an effective
@@ -648,7 +648,7 @@ theorem isEffectiveCartierDivisor_reducedSpecialFibre_specialFiberComponents :
       S.specialFiberComponentIdeal S.specialFiberMultiplicity)
 ```
 
-**`Stacks.Models.reducedSpecialFibre_order_dvd_gcd_specialFiberComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/ReducedSpecialFibreComponents.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/ReducedSpecialFibreComponents.lean#L110). The attribute's comment: “all four conclusions at the canonical decomposition of X\_k into its irreducible components, whose two inputs are parts (2) and (3) of 0C5Z: C\_i the components with their reduced induced structure, m\_i the multiplicity of C\_i in X\_k, d = gcd(m\_i) and D = sum (m\_i/d)C\_i”.
+**`Stacks.Models.reducedSpecialFibre_order_dvd_gcd_specialFiberComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/ReducedSpecialFibreComponents.lean, line 110](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/ReducedSpecialFibreComponents.lean#L110). The attribute's comment: “all four conclusions at the canonical decomposition of X\_k into its irreducible components, whose two inputs are parts (2) and (3) of 0C5Z: C\_i the components with their reduced induced structure, m\_i the multiplicity of C\_i in X\_k, d = gcd(m\_i) and D = sum (m\_i/d)C\_i”.
 
 > **Stacks Project, Tag 0C67, at the canonical decomposition into irreducible components.**
 > Let `C₁, …, Cₙ` be the irreducible components of the special fibre `X_k` of a regular proper
@@ -685,7 +685,7 @@ theorem reducedSpecialFibre_order_dvd_gcd_specialFiberComponents :
               S.specialFiberComponentIdeal S.specialFiberMultiplicity)) = 0
 ```
 
-**`Stacks.Models.addOrderOf_picardClass_reducedSpecialFibre_specialFiberComponents_dvd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/ReducedSpecialFibreComponents.lean, line 141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/ReducedSpecialFibreComponents.lean#L141). The attribute's comment: “O\_X(D) has order dividing d in Pic(X), at the canonical decomposition of X\_k into its irreducible components”.
+**`Stacks.Models.addOrderOf_picardClass_reducedSpecialFibre_specialFiberComponents_dvd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/ReducedSpecialFibreComponents.lean, line 141](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/ReducedSpecialFibreComponents.lean#L141). The attribute's comment: “O\_X(D) has order dividing d in Pic(X), at the canonical decomposition of X\_k into its irreducible components”.
 
 > **Stacks Project, Tag 0C67, at the canonical decomposition**, as a statement about additive
 > orders: the class of `𝒪_X(D)` in `Pic(X)` has order dividing `d = gcd(mᵢ)`, for `D` the reduced
@@ -697,7 +697,7 @@ theorem addOrderOf_picardClass_reducedSpecialFibre_specialFiberComponents_dvd :
       S.specialFiberMultiplicity)) ∣ Finset.univ.gcd S.specialFiberMultiplicity
 ```
 
-**`Stacks.Models.addOrderOf_picardClass_immersionConormalSheaf_specialFiberComponents_dvd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/ReducedSpecialFibreComponents.lean, line 153](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/ReducedSpecialFibreComponents.lean#L153). The attribute's comment: “the conormal class of D has order dividing d in Pic(D), at the canonical decomposition of X\_k into its irreducible components”.
+**`Stacks.Models.addOrderOf_picardClass_immersionConormalSheaf_specialFiberComponents_dvd`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/ReducedSpecialFibreComponents.lean, line 153](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/ReducedSpecialFibreComponents.lean#L153). The attribute's comment: “the conormal class of D has order dividing d in Pic(D), at the canonical decomposition of X\_k into its irreducible components”.
 
 > **Stacks Project, Tag 0C67, at the canonical decomposition**, as a statement about additive
 > orders: the class of the conormal module `𝒞_{D/X}` in `Pic(D)` has order dividing
@@ -721,7 +721,7 @@ theorem addOrderOf_picardClass_immersionConormalSheaf_specialFiberComponents_dvd
 
 [Tag 0C68](https://stacks.math.columbia.edu/tag/0C68) in the Stacks Project.
 
-**`Stacks.Models.exists_chain_reducedSpecialFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/ReducedFibreFiltration.lean, line 1204](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/ReducedFibreFiltration.lean#L1204). The attribute's comment: “the whole lemma: the increasing chain of effective Cartier divisors from the reduced special fibre (X\_k)\_red to the divisor D = sum (mᵢ/d)Cᵢ, d = gcd(mᵢ), each step adding a single component, with H⁰(Z\_j, O\_\{Z\_j}) a field finite over the residue field at every stage. Stated at a decomposition X\_k = sum mᵢCᵢ of the special fibre into integral proper curves over the residue field, which is the opening phrase of Situation 0C61”.
+**`Stacks.Models.exists_chain_reducedSpecialFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/ReducedFibreFiltration.lean, line 1199](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/ReducedFibreFiltration.lean#L1199). The attribute's comment: “the whole lemma: the increasing chain of effective Cartier divisors from the reduced special fibre (X\_k)\_red to the divisor D = sum (mᵢ/d)Cᵢ, d = gcd(mᵢ), each step adding a single component, with H⁰(Z\_j, O\_\{Z\_j}) a field finite over the residue field at every stage. Stated at a decomposition X\_k = sum mᵢCᵢ of the special fibre into integral proper curves over the residue field, which is the opening phrase of Situation 0C61”.
 
 > **Stacks Project, Tag 0C68** [Artin–Winters, Lemma 2.6].  In Situation
 > [Stacks, Tag 0C61], write the special fibre as a sum of effective Cartier divisors
@@ -766,7 +766,7 @@ theorem exists_chain_reducedSpecialFibre
 
 [Tag 0C69](https://stacks.math.columbia.edu/tag/0C69) in the Stacks Project.
 
-**`Stacks.Models.one_sub_genus_eq_gcd_mul_finrank_mul_one_sub_genus_reducedSpecialFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/GenusFormulaDecomposition.lean, line 559](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/GenusFormulaDecomposition.lean#L559). The attribute's comment: “the formula 1 - g\_C = d [kappa:k\](1 - g\_D) at a decomposition X\_k = sum m\_i C\_i of the special fibre into integral proper curves over the residue field whose product is the reduced special fibre, of which the irreducible components of Situation 0C61 are the case: d = gcd(m\_i), D = sum (m\_i/d)C\_i, kappa = H^0(D, O\_D), and g\_D the genus of D over kappa. That kappa is a field finite over the residue field is part of the conclusion”.
+**`Stacks.Models.one_sub_genus_eq_gcd_mul_finrank_mul_one_sub_genus_reducedSpecialFibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/GenusFormulaDecomposition.lean, line 557](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/GenusFormulaDecomposition.lean#L557). The attribute's comment: “the formula 1 - g\_C = d [kappa:k\](1 - g\_D) at a decomposition X\_k = sum m\_i C\_i of the special fibre into integral proper curves over the residue field whose product is the reduced special fibre, of which the irreducible components of Situation 0C61 are the case: d = gcd(m\_i), D = sum (m\_i/d)C\_i, kappa = H^0(D, O\_D), and g\_D the genus of D over kappa. That kappa is a field finite over the residue field is part of the conclusion”.
 
 > **The formula of [Stacks, Tag 0C69]** [Artin-Winters, Lemma 2.6].  In Situation
 > [Stacks, Tag 0C61], written at a decomposition `X_k = Σ mᵢCᵢ` of the special fibre into integral
@@ -811,7 +811,7 @@ theorem one_sub_genus_eq_gcd_mul_finrank_mul_one_sub_genus_reducedSpecialFibre
               (reducedSpecialFibre s C m).subscheme.toSpecΓ : ℤ))
 ```
 
-**`Stacks.Models.one_sub_genus_eq_gcd_mul_finrank_mul_one_sub_genus_specialFiberComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/GenusFormulaDecomposition.lean, line 613](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/GenusFormulaDecomposition.lean#L613). The attribute's comment: “the formula 1 - g\_C = d [kappa:k\](1 - g\_D) at the irreducible components of the special fibre, which is the setting of Situation 0C61: d = gcd(m\_i) for m\_i the multiplicity of C\_i in X\_k, D = sum (m\_i/d)C\_i the reduced special fibre, kappa = H^0(D, O\_D), and g\_D the genus of D over kappa. That kappa is a field finite over the residue field is part of the conclusion”.
+**`Stacks.Models.one_sub_genus_eq_gcd_mul_finrank_mul_one_sub_genus_specialFiberComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/GenusFormulaDecomposition.lean, line 612](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/GenusFormulaDecomposition.lean#L612). The attribute's comment: “the formula 1 - g\_C = d [kappa:k\](1 - g\_D) at the irreducible components of the special fibre, which is the setting of Situation 0C61: d = gcd(m\_i) for m\_i the multiplicity of C\_i in X\_k, D = sum (m\_i/d)C\_i the reduced special fibre, kappa = H^0(D, O\_D), and g\_D the genus of D over kappa. That kappa is a field finite over the residue field is part of the conclusion”.
 
 > **Stacks Project, Tag 0C69** [Artin-Winters, Lemma 2.6], at the irreducible components of
 > the special fibre, which is the setting of Situation [Stacks, Tag 0C61].  With `C₁, …, Cₙ` the
@@ -854,7 +854,7 @@ theorem one_sub_genus_eq_gcd_mul_finrank_mul_one_sub_genus_specialFiberComponent
 
 [Tag 0C6A](https://stacks.math.columbia.edu/tag/0C6A) in the Stacks Project.
 
-**`Stacks.Models.RegularProperModelSituation.specialFiberMultiplicity_eq_one_of_isExceptionalCurveOfFirstKind`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/ExceptionalComponentsMeet.lean, line 1058](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/ExceptionalComponentsMeet.lean#L1058). The attribute's comment: “m\_1 = m\_2 = 1, every component of the special fibre has multiplicity one”.
+**`Stacks.Models.RegularProperModelSituation.specialFiberMultiplicity_eq_one_of_isExceptionalCurveOfFirstKind`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/ExceptionalComponentsMeet.lean, line 1053](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/ExceptionalComponentsMeet.lean#L1053). The attribute's comment: “m\_1 = m\_2 = 1, every component of the special fibre has multiplicity one”.
 
 > **Stacks Project, Tag 0C6A: `m₁ = m₂ = 1`.** Every irreducible component of the special
 > fibre occurs in `X_k` with multiplicity one.
@@ -872,7 +872,7 @@ theorem specialFiberMultiplicity_eq_one_of_isExceptionalCurveOfFirstKind
     ∀ Z : irreducibleComponents S.specialFiber, S.specialFiberMultiplicity Z = 1
 ```
 
-**`Stacks.Models.RegularProperModelSituation.genus_eq_zero_of_isExceptionalCurveOfFirstKind`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/ExceptionalComponentsMeet.lean, line 1081](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/ExceptionalComponentsMeet.lean#L1081). The attribute's comment: “C has genus 0, the generic fibre of the model has genus zero”.
+**`Stacks.Models.RegularProperModelSituation.genus_eq_zero_of_isExceptionalCurveOfFirstKind`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/ExceptionalComponentsMeet.lean, line 1076](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/ExceptionalComponentsMeet.lean#L1076). The attribute's comment: “C has genus 0, the generic fibre of the model has genus zero”.
 
 > **Stacks Project, Tag 0C6A: the generic curve has genus zero.**
 
@@ -889,7 +889,7 @@ theorem genus_eq_zero_of_isExceptionalCurveOfFirstKind
     genus S.C_to_K = 0
 ```
 
-**`Stacks.Models.RegularProperModelSituation.exists_section_fibreSubschemeToSpec_sup_of_isExceptionalCurveOfFirstKind`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/ExceptionalComponentsMeet.lean, line 1099](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/ExceptionalComponentsMeet.lean#L1099). The attribute's comment: “C\_1 and C\_2 meet in a k-rational point”.
+**`Stacks.Models.RegularProperModelSituation.exists_section_fibreSubschemeToSpec_sup_of_isExceptionalCurveOfFirstKind`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/ExceptionalComponentsMeet.lean, line 1094](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/ExceptionalComponentsMeet.lean#L1094). The attribute's comment: “C\_1 and C\_2 meet in a k-rational point”.
 
 > **Stacks Project, Tag 0C6A: the two components meet in a `k`-rational point.** The
 > scheme-theoretic intersection `C_i ∩ C_j`, as a closed subscheme of the model, carries a
@@ -915,7 +915,7 @@ theorem exists_section_fibreSubschemeToSpec_sup_of_isExceptionalCurveOfFirstKind
         S.specialFiberComponentIdeal j).subscheme, e.hom ≫ f = 𝟙 (Spec (.of S.k))
 ```
 
-**`Stacks.Models.RegularProperModelSituation.exists_iso_projectiveLineProj_of_isExceptionalCurveOfFirstKind`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/ExceptionalComponentsMeet.lean, line 1138](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/ExceptionalComponentsMeet.lean#L1138). The attribute's comment: “C\_1 and C\_2 are isomorphic to the projective line over the residue field”.
+**`Stacks.Models.RegularProperModelSituation.exists_iso_projectiveLineProj_of_isExceptionalCurveOfFirstKind`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/ExceptionalComponentsMeet.lean, line 1133](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/ExceptionalComponentsMeet.lean#L1133). The attribute's comment: “C\_1 and C\_2 are isomorphic to the projective line over the residue field”.
 
 > **Stacks Project, Tag 0C6A: `C₁ ≅ 𝐏¹_k` and `C₂ ≅ 𝐏¹_k`.** Each irreducible component of
 > the special fibre is the projective line over the residue field, compatibly with the structure
@@ -942,7 +942,7 @@ theorem exists_iso_projectiveLineProj_of_isExceptionalCurveOfFirstKind
           e.hom ≫ f = projToSpecCoeff S.k 1
 ```
 
-**`Stacks.Models.RegularProperModelSituation.nonempty_fin_two_equiv_irreducibleComponents_of_isExceptionalCurveOfFirstKind`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/ExceptionalComponentsMeet.lean, line 1176](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/ExceptionalComponentsMeet.lean#L1176). The attribute's comment: “n = 2, the special fibre has exactly two irreducible components”.
+**`Stacks.Models.RegularProperModelSituation.nonempty_fin_two_equiv_irreducibleComponents_of_isExceptionalCurveOfFirstKind`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/ExceptionalComponentsMeet.lean, line 1171](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/ExceptionalComponentsMeet.lean#L1171). The attribute's comment: “n = 2, the special fibre has exactly two irreducible components”.
 
 > **Stacks Project, Tag 0C6A: `n = 2`.** In Situation [Stacks, Tag 0C61], if two distinct
 > irreducible components `C_i` and `C_j` of the special fibre are exceptional curves of the first
@@ -972,4 +972,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 55.9, Tag 0C5Y](https://stacks.math.columbia.edu/tag/0C5Y)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

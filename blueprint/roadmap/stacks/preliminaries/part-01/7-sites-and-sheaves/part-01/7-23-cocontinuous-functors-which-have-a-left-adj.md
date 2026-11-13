@@ -8,13 +8,13 @@ proof: formalized
 
 # 7.23 Cocontinuous functors which have a left adjoint
 
-Section 7.23 of the Stacks Project, [Tag 08NG](https://stacks.math.columbia.edu/tag/08NG). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 7.23 of the Stacks Project, [Tag 08NG](https://stacks.math.columbia.edu/tag/08NG). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 08NH, a lemma
 
 [Tag 08NH](https://stacks.math.columbia.edu/tag/08NH) in the Stacks Project.
 
-**`CategoryTheory.Adjunction.nonempty_adjunction_preservesFiniteLimits_isRightAdjoint_and_iso_sheafPushforwardCocontinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cocontinuous/LeftAdjoint.lean, line 198](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cocontinuous/LeftAdjoint.lean#L198). The attribute's comment: “Lower shriek of a continuous functor which has a left adjoint.”. References: SGA 4 III (2.5), “v\_*≃u\_s and v^*≃u^s”; SGA 4 III (1.3), “special case”; SGA 4 III (2.4), “special case”.
+**`CategoryTheory.Adjunction.nonempty_adjunction_preservesFiniteLimits_isRightAdjoint_and_iso_sheafPushforwardCocontinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cocontinuous/LeftAdjoint.lean, line 198](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cocontinuous/LeftAdjoint.lean#L198). The attribute's comment: “Lower shriek of a continuous functor which has a left adjoint.”. References: SGA 4 III (2.5), “v\_*≃u\_s and v^*≃u^s”; SGA 4 III (1.3), “special case”; SGA 4 III (2.4), “special case”.
 
 > **Stacks 08NH.** Let `(C, J)` and `(D, K)` be sites, let `G : C ⥤ D` be a continuous functor,
 > and let `W : D ⥤ C` be a left adjoint of `G`. Write
@@ -63,4 +63,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 7.23, Tag 08NG](https://stacks.math.columbia.edu/tag/08NG)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 31.10 The singular locus of a morphism
 
-Section 31.10 of the Stacks Project, [Tag 0C3H](https://stacks.math.columbia.edu/tag/0C3H). 3 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 31.10 of the Stacks Project, [Tag 0C3H](https://stacks.math.columbia.edu/tag/0C3H). 3 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0C3I, a lemma
 
 [Tag 0C3I](https://stacks.math.columbia.edu/tag/0C3I) in the Stacks Project.
 
-**`AlgebraicGeometry.fittingIdeal_relativeDifferentials_comap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/FittingIdealsDifferentials.lean, line 44](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/FittingIdealsDifferentials.lean#L44). References: SGA 7 VI (5.3), “(1)”.
+**`AlgebraicGeometry.fittingIdeal_relativeDifferentials_comap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/FittingIdealsDifferentials.lean, line 44](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Meromorphic/FittingIdealsDifferentials.lean#L44). References: SGA 7 VI (5.3), “(1)”.
 
 > For a cartesian square of schemes with right edge `f : X ⟶ S` locally of finite type, left
 > edge `f' : X' ⟶ S'` and top edge `g' : X' ⟶ X`, the inverse image along `g'` of the `r`-th
@@ -34,7 +34,7 @@ public theorem fittingIdeal_relativeDifferentials_comap {X' X S' S : Scheme.{u}}
 
 [Tag 0C3J](https://stacks.math.columbia.edu/tag/0C3J) in the Stacks Project.
 
-**`Stacks.Discriminant.range_kaehlerDifferent_subschemeι`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/KaehlerDifferent/UnramifiedLocus.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/KaehlerDifferent/UnramifiedLocus.lean#L88).
+**`Stacks.Discriminant.range_kaehlerDifferent_subschemeι`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/KaehlerDifferent/UnramifiedLocus.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Different/KaehlerDifferent/UnramifiedLocus.lean#L88).
 
 > **Stacks Project, Tag 0BVY** and **Stacks Project, Tag 0C3J.** For a morphism of schemes
 > `f : Y ⟶ X` locally of finite type, the closed subscheme `R ⊆ Y` cut out by the Kähler different
@@ -52,7 +52,7 @@ theorem range_kaehlerDifferent_subschemeι {Y X : Scheme.{u}} (f : Y ⟶ X)
 
 [Tag 0C3K](https://stacks.math.columbia.edu/tag/0C3K) in the Stacks Project.
 
-**`AlgebraicGeometry.mem_fittingIdeal_relativeDifferentials_iff_not_smoothAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/FittingIdeals/SingularLocus.lean, line 551](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/FittingIdeals/SingularLocus.lean#L551). The attribute's comment: “pointwise characterisation of the nonsmooth locus”.
+**`AlgebraicGeometry.mem_fittingIdeal_relativeDifferentials_iff_not_smoothAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/FittingIdeals/SingularLocus.lean, line 551](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/FittingIdeals/SingularLocus.lean#L551). The attribute's comment: “pointwise characterisation of the nonsmooth locus”.
 
 > **The nonsmooth locus is cut out by the `d`-th Fitting ideal of the relative
 > differentials.** For `f : X ⟶ S` flat and locally of finite presentation whose nonempty fibres
@@ -72,7 +72,7 @@ theorem mem_fittingIdeal_relativeDifferentials_iff_not_smoothAt
       ¬ InfinitesimalLifting.SmoothAt f x
 ```
 
-**`AlgebraicGeometry.range_subschemeι_fittingIdeal_relativeDifferentials`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/FittingIdeals/SingularLocus.lean, line 592](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/FittingIdeals/SingularLocus.lean#L592).
+**`AlgebraicGeometry.range_subschemeι_fittingIdeal_relativeDifferentials`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/FittingIdeals/SingularLocus.lean, line 592](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/FittingIdeals/SingularLocus.lean#L592).
 
 > **The closed subscheme cut out by the `d`-th Fitting ideal of `Ω_{X/S}` is the nonsmooth
 > locus.** For `f : X ⟶ S` flat and locally of finite presentation whose nonempty fibres are all
@@ -97,4 +97,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 31.10, Tag 0C3H](https://stacks.math.columbia.edu/tag/0C3H)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

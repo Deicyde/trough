@@ -1,14 +1,14 @@
 ---
 declaration: section
 origin: cited
-lean: StrictlyPerfect.IsStrictlyPerfect, StrictlyPerfect.isStrictlyPerfect_mappingCone, strictlyPerfect_tensorObj, Stacks.Cohomology.StrictlyPerfectPullback.pullback_isStrictlyPerfect, StrictlyPerfect.exists_over_lift_of_isDirectSummandOfFiniteFree, StrictlyPerfect.exists_local_lift_of_isDirectSummandOfFiniteFree, AlgebraicGeometry.RingedSpace.exists_local_lift_of_isDirectSummandOfFiniteFree, StrictlyPerfect.LocalLifting.exists_local_lift
+lean: StrictlyPerfect.IsStrictlyPerfect, StrictlyPerfect.isStrictlyPerfect_mappingCone, strictlyPerfect_tensorObj, Stacks.StrictlyPerfect.Pullback.isStrictlyPerfect_modulePullback, StrictlyPerfect.exists_over_lift_of_isDirectSummandOfFiniteFree, StrictlyPerfect.exists_local_lift_of_isDirectSummandOfFiniteFree, AlgebraicGeometry.RingedSpace.exists_local_lift_of_isDirectSummandOfFiniteFree, StrictlyPerfect.LocalLifting.exists_local_lift
 statement: formalized
 proof: formalized
 ---
 
 # 20.46 Strictly perfect complexes
 
-Section 20.46 of the Stacks Project, [Tag 08C3](https://stacks.math.columbia.edu/tag/08C3). 11 tags here are carried by 20 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 20.46 of the Stacks Project, [Tag 08C3](https://stacks.math.columbia.edu/tag/08C3). 11 tags here are carried by 20 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 08C4, a definition
 
@@ -16,13 +16,13 @@ Section 20.46 of the Stacks Project, [Tag 08C3](https://stacks.math.columbia.edu
 
 Declarations registered for the tag:
 
-- [`StrictlyPerfect.IsStrictlyPerfect`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/StrictlyPerfect/FiniteFreeSummands.lean#L298), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Cohomology/StrictlyPerfect/Defs.lean, line 42](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/StrictlyPerfect/Defs.lean#L42) (StacksFrontier).
+- [`StrictlyPerfect.IsStrictlyPerfect`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/StrictlyPerfect/FiniteFreeSummands.lean#L298), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/Topology/Sheaves/Cohomology/StrictlyPerfect/Defs.lean, line 42](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/StrictlyPerfect/Defs.lean#L42) (StacksFrontier).
 
 ## Tag 08C5, a lemma
 
 [Tag 08C5](https://stacks.math.columbia.edu/tag/08C5) in the Stacks Project.
 
-**`StrictlyPerfect.isStrictlyPerfect_mappingCone`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/StrictlyPerfect/FiniteFreeSummands.lean, line 311](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/StrictlyPerfect/FiniteFreeSummands.lean#L311).
+**`StrictlyPerfect.isStrictlyPerfect_mappingCone`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/StrictlyPerfect/FiniteFreeSummands.lean, line 311](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/StrictlyPerfect/FiniteFreeSummands.lean#L311).
 
 > The cone on a morphism of strictly perfect complexes is strictly perfect.
 >
@@ -41,7 +41,7 @@ theorem isStrictlyPerfect_mappingCone {K L : CochainComplex (OXMod.{u, w} X) ℤ
 
 [Tag 09J2](https://stacks.math.columbia.edu/tag/09J2) in the Stacks Project.
 
-**`strictlyPerfect_tensorObj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/StrictlyPerfect/TensorOfFiniteFreeSummands.lean, line 250](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/StrictlyPerfect/TensorOfFiniteFreeSummands.lean#L250).
+**`strictlyPerfect_tensorObj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/StrictlyPerfect/TensorOfFiniteFreeSummands.lean, line 250](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/StrictlyPerfect/TensorOfFiniteFreeSummands.lean#L250).
 
 > **Stacks Tag 09J2 (Lemma 20.46.3).** If `E` and `F` are strictly perfect complexes, then the
 > total complex `HomologicalComplex.tensorObj E F` of their tensor product, whose degree `n` term is
@@ -62,26 +62,32 @@ theorem strictlyPerfect_tensorObj
 
 [Tag 09U6](https://stacks.math.columbia.edu/tag/09U6) in the Stacks Project.
 
-**`Stacks.Cohomology.StrictlyPerfectPullback.pullback_isStrictlyPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/StrictlyPerfectRestriction/PullbackOverASite.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/StrictlyPerfectRestriction/PullbackOverASite.lean#L142).
+**`Stacks.StrictlyPerfect.Pullback.isStrictlyPerfect_modulePullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/StrictlyPerfectRestriction/PullbackOnRingedSpaces.lean, line 142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/StrictlyPerfectRestriction/PullbackOnRingedSpaces.lean#L142). The attribute's comment: “for every morphism of ringed spaces f : X ⟶ Y (rings and sections in one universe), the termwise pullback f^* of a strictly perfect complex of O\_Y-modules is strictly perfect”.
 
-> **Stacks Tag 09U6, Lemma 20.46.4.** Let `f : (X, O_X) → (Y, O_Y)` be a morphism
-> of ringed spaces, with pullback functor `f^* : Mod(O_Y) ⥤ Mod(O_X)`. If `F^•` is a
-> strictly perfect complex of `O_Y`-modules, then `f^* F^•` (the termwise pullback of
-> `F^•`) is a strictly perfect complex of `O_X`-modules.
+> **Stacks 09U6 (Lemma 20.46.4).** The termwise pullback of a strictly perfect complex of
+> `𝒪_Y`-modules along a morphism of ringed spaces `f : X ⟶ Y` is a strictly perfect complex of
+> `𝒪_X`-modules.
+>
+> Boundedness is preserved because `f^*` preserves zero morphisms and so carries a zero object to a
+> zero object, hence cannot create a nonzero term; the termwise condition is
+> `Stacks.StrictlyPerfect.Pullback.isDirectSummandOfFiniteFree_modulePullback`.
+>
+> This is the full lemma: `f` is an arbitrary morphism of ringed spaces, `f^*` is the pullback of
+> sheaves of modules (`f^{-1}G ⊗_{f^{-1}O_Y} O_X`), and strictly perfect is Definition 20.46.1
+> (tag 08C4): finitely many nonzero terms, each a direct summand of a finite free module.
 
 ```lean
-theorem pullback_isStrictlyPerfect {X Y : AlgebraicGeometry.RingedSpace.{0, 0}} (f : X ⟶ Y)
-    (F : HomologicalComplex (Modules Y) (ComplexShape.up ℤ))
-    (hF : IsStrictlyPerfect F) :
+theorem isStrictlyPerfect_modulePullback (K : CochainComplex (OXMod.{u} Y) ℤ)
+    (hK : IsStrictlyPerfect K) :
     IsStrictlyPerfect
-      (((_root_.pullback f).mapHomologicalComplex (ComplexShape.up ℤ)).obj F)
+      (((modulePullback f).mapHomologicalComplex (ComplexShape.up ℤ)).obj K)
 ```
 
 ## Tag 08C6, a lemma
 
 [Tag 08C6](https://stacks.math.columbia.edu/tag/08C6) in the Stacks Project.
 
-**`StrictlyPerfect.exists_over_lift_of_isDirectSummandOfFiniteFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/StrictlyPerfectLiftModuleUniverse.lean, line 265](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/StrictlyPerfectLiftModuleUniverse.lean#L265). The attribute's comment: “at an arbitrary module universe”.
+**`StrictlyPerfect.exists_over_lift_of_isDirectSummandOfFiniteFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/StrictlyPerfectLiftModuleUniverse.lean, line 265](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/StrictlyPerfectLiftModuleUniverse.lean#L265). The attribute's comment: “at an arbitrary module universe”.
 
 > **Stacks 08C6.** Let `X` be a ringed space, `p : 𝒢 ⟶ ℱ` an epimorphism of `𝒪_X`-modules and
 > `f : ℰ ⟶ ℱ` a morphism out of a direct summand of a finite free `𝒪_X`-module. Then every point
@@ -99,7 +105,7 @@ theorem exists_over_lift_of_isDirectSummandOfFiniteFree {E F G : OXMod.{u, w} X}
       ∃ l : E.over U ⟶ G.over U, l ≫ p.over U = f.over U
 ```
 
-**`StrictlyPerfect.exists_local_lift_of_isDirectSummandOfFiniteFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/StrictlyPerfectRestriction.lean, line 269](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Homology/StrictlyPerfectRestriction.lean#L269). The attribute's comment: “module universe = ring universe, space universe free, stated through `restrictModules`. Strictly more general than the collapsed form in `StacksFrontier/AlgebraicGeometry/PseudoCoherent/StrictlyPerfectLift.lean`, strictly less than the arbitrary-module-universe form in `StrictlyPerfectLiftModuleUniverse.lean`.”.
+**`StrictlyPerfect.exists_local_lift_of_isDirectSummandOfFiniteFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Homology/StrictlyPerfectRestriction.lean, line 269](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Homology/StrictlyPerfectRestriction.lean#L269). The attribute's comment: “module universe = ring universe, space universe free, stated through `restrictModules`. Strictly more general than the collapsed form in `StacksFrontier/AlgebraicGeometry/PseudoCoherent/StrictlyPerfectLift.lean`, strictly less than the arbitrary-module-universe form in `StrictlyPerfectLiftModuleUniverse.lean`.”.
 
 > Given `α : E ⟶ F` and an epimorphism `p : G ⟶ F` of `O_X`-modules with `E` a direct summand of
 > a finite free `O_X`-module, a factorisation of `α` through `p` exists locally on `X`: every point
@@ -113,7 +119,7 @@ theorem exists_local_lift_of_isDirectSummandOfFiniteFree {E F G : OXMod.{r, r} X
         β ≫ (restrictModules X U).map p = (restrictModules X U).map α
 ```
 
-**`AlgebraicGeometry.RingedSpace.exists_local_lift_of_isDirectSummandOfFiniteFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/StrictlyPerfectLift.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PseudoCoherent/StrictlyPerfectLift.lean#L216). The attribute's comment: “all three universes collapsed (space = ring = module), stated through `restrictModules`. The module-universe-free form is in `StacksFrontier/Algebra/Homology/StrictlyPerfectLiftModuleUniverse.lean`; neither subsumes the other.”.
+**`AlgebraicGeometry.RingedSpace.exists_local_lift_of_isDirectSummandOfFiniteFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/StrictlyPerfectLift.lean, line 217](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PseudoCoherent/StrictlyPerfectLift.lean#L217). The attribute's comment: “all three universes collapsed (space = ring = module), stated through `restrictModules`. The module-universe-free form is in `StacksFrontier/Algebra/Homology/StrictlyPerfectLiftModuleUniverse.lean`; neither subsumes the other.”.
 
 > **Stacks 08C6.** Let `X` be a ringed space, let `p : 𝒢 ⟶ ℱ` be an epimorphism of
 > `𝒪_X`-modules and let `f : ℰ ⟶ ℱ` be a map out of a direct summand of a finite free
@@ -132,7 +138,7 @@ theorem exists_local_lift_of_isDirectSummandOfFiniteFree
         l ≫ (restrictModules X U).map p = (restrictModules X U).map f
 ```
 
-**`StrictlyPerfect.LocalLifting.exists_local_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/StrictlyPerfect/LocalLiftingOfMaps.lean, line 141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/StrictlyPerfect/LocalLiftingOfMaps.lean#L141).
+**`StrictlyPerfect.LocalLifting.exists_local_lift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/StrictlyPerfect/LocalLiftingOfMaps.lean, line 141](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/StrictlyPerfect/LocalLiftingOfMaps.lean#L141).
 
 > A map from a direct summand of a finite free module lifts locally through
 > any epimorphism of sheaves of modules.
@@ -147,7 +153,7 @@ theorem exists_local_lift [Epi p] (hE : IsDirectSummandOfFiniteFree E) :
 
 [Tag 08C7](https://stacks.math.columbia.edu/tag/08C7) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSpace.exists_local_homotopy_zero_of_isZero_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/StrictlyPerfectRestriction/LocalNullHomotopyOverSlices.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/StrictlyPerfectRestriction/LocalNullHomotopyOverSlices.lean#L82). The attribute's comment: “part (2)”. References: SGA 6 I (4.1), “ringed space”.
+**`AlgebraicGeometry.RingedSpace.exists_local_homotopy_zero_of_isZero_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/StrictlyPerfectRestriction/LocalNullHomotopyOverSlices.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/StrictlyPerfectRestriction/LocalNullHomotopyOverSlices.lean#L82). The attribute's comment: “part (2)”. References: SGA 6 I (4.1), “ringed space”.
 
 > A map from a strictly perfect complex concentrated in degrees at least
 > `a` is locally null-homotopic if the target's cohomology vanishes in those
@@ -167,7 +173,7 @@ theorem exists_local_homotopy_zero_of_isZero_homology (a : ℤ)
           (ComplexShape.up ℤ)).map α) 0)
 ```
 
-**`AlgebraicGeometry.RingedSpace.exists_local_homotopy_zero_of_acyclic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/StrictlyPerfectRestriction/LocalNullHomotopyOverSlices.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/StrictlyPerfectRestriction/LocalNullHomotopyOverSlices.lean#L99). The attribute's comment: “part (1)”. References: SGA 6 I (4.1), “ringed space”.
+**`AlgebraicGeometry.RingedSpace.exists_local_homotopy_zero_of_acyclic`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/StrictlyPerfectRestriction/LocalNullHomotopyOverSlices.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/StrictlyPerfectRestriction/LocalNullHomotopyOverSlices.lean#L99). The attribute's comment: “part (1)”. References: SGA 6 I (4.1), “ringed space”.
 
 > A map from a strictly perfect complex to an acyclic complex is locally
 > null-homotopic.
@@ -189,7 +195,7 @@ theorem exists_local_homotopy_zero_of_acyclic
 
 [Tag 08C8](https://stacks.math.columbia.edu/tag/08C8) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSpace.exists_local_lift_homotopy`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/StrictlyPerfectCone.lean, line 150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PseudoCoherent/StrictlyPerfectCone.lean#L150). References: SGA 6 I (4.2), “ringed space case”.
+**`AlgebraicGeometry.RingedSpace.exists_local_lift_homotopy`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/StrictlyPerfectCone.lean, line 150](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PseudoCoherent/StrictlyPerfectCone.lean#L150). References: SGA 6 I (4.2), “ringed space case”.
 
 > **Stacks 08C8.** Let `X` be a ringed space, let `α : ℰ ⟶ ℱ` be a morphism of complexes of
 > `𝒪_X`-modules with `ℰ` strictly perfect and `ℰ^j = 0` for `j < a`, and let `f : 𝒢 ⟶ ℱ` be a
@@ -222,7 +228,7 @@ public theorem exists_local_lift_homotopy
             (ComplexShape.up ℤ)).map α))
 ```
 
-**`Stacks.PseudoCoherence.DerivedCharacterization.exists_local_lift_homotopy`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PseudoCoherence/Defs.lean, line 138](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/PseudoCoherence/Defs.lean#L138). References: SGA 6 I (4.2), “ringed space case”; SGA 6 I (4.1), “special case”.
+**`Stacks.PseudoCoherence.DerivedCharacterization.exists_local_lift_homotopy`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/PseudoCoherence/Defs.lean, line 138](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/PseudoCoherence/Defs.lean#L138). References: SGA 6 I (4.2), “ringed space case”; SGA 6 I (4.1), “special case”.
 
 > A map from a strictly perfect complex lifts locally up to homotopy through a map that is
 > cohomologically an isomorphism above the lower bound and surjective at the lower bound.
@@ -248,7 +254,7 @@ theorem exists_local_lift_homotopy (α : E ⟶ F) (f : G ⟶ F) (a : ℤ)
 
 [Tag 08C9](https://stacks.math.columbia.edu/tag/08C9) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSpace.exists_local_homotopy_zero_of_derived_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/StrictlyPerfectLocalRep.lean, line 338](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PseudoCoherent/StrictlyPerfectLocalRep.lean#L338). The attribute's comment: “local\_null\_homotopy”. References: SGA 6 I (4.1), “special case”.
+**`AlgebraicGeometry.RingedSpace.exists_local_homotopy_zero_of_derived_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/StrictlyPerfectLocalRep.lean, line 338](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PseudoCoherent/StrictlyPerfectLocalRep.lean#L338). The attribute's comment: “local\_null\_homotopy”. References: SGA 6 I (4.1), “special case”.
 
 > **Stacks 08C9, part (2).** Let `α : ℰ ⟶ ℱ` be a morphism of complexes of `𝒪_X`-modules with
 > `ℰ` strictly perfect whose image in the derived category of `X` is zero. Then every point of `X`
@@ -270,7 +276,7 @@ public theorem exists_local_homotopy_zero_of_derived_eq_zero
           (ComplexShape.up ℤ)).map α) 0)
 ```
 
-**`AlgebraicGeometry.RingedSpace.exists_local_complex_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/StrictlyPerfectLocalRep.lean, line 433](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/PseudoCoherent/StrictlyPerfectLocalRep.lean#L433). The attribute's comment: “local\_representation”.
+**`AlgebraicGeometry.RingedSpace.exists_local_complex_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/PseudoCoherent/StrictlyPerfectLocalRep.lean, line 433](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/PseudoCoherent/StrictlyPerfectLocalRep.lean#L433). The attribute's comment: “local\_representation”.
 
 > **Stacks 08C9, part (1).** Let `ℰ`, `ℱ` be complexes of `𝒪_X`-modules with `ℰ` strictly
 > perfect and let `α : ℰ ⟶ ℱ` be a morphism in the derived category of `X`. Then every point of `X`
@@ -306,7 +312,7 @@ public theorem exists_local_complex_map [HasDerivedCategory.{d} (OXMod.{u, u} X)
               DerivedCategory.Q.map β
 ```
 
-**`Stacks.Cohomology.exists_local_complex_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/HomComplexAndStrictPerfection/LocalRepresentation.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/HomComplexAndStrictPerfection/LocalRepresentation.lean#L216). The attribute's comment: “local\_representation”.
+**`Stacks.Cohomology.exists_local_complex_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/HomComplexAndStrictPerfection/LocalRepresentation.lean, line 216](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/HomComplexAndStrictPerfection/LocalRepresentation.lean#L216). The attribute's comment: “local\_representation”.
 
 > A derived morphism out of a strictly perfect complex is locally represented by a morphism of
 > complexes.
@@ -335,7 +341,7 @@ theorem exists_local_complex_map (hE : IsStrictlyPerfect E)
 
 [Tag 08DM](https://stacks.math.columbia.edu/tag/08DM) in the Stacks Project.
 
-**`Stacks.SheafOfModules.strictlyPerfectHomDegreeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/StrictlyPerfectHomRepresentation.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/StrictlyPerfectHomRepresentation.lean#L90). The attribute's comment: “finite direct-sum terms and Hom differential”.
+**`Stacks.SheafOfModules.strictlyPerfectHomDegreeIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/StrictlyPerfectHomRepresentation.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/StrictlyPerfectHomRepresentation.lean#L90). The attribute's comment: “finite direct-sum terms and Hom differential”.
 
 > **Stacks 08DM, the degreewise description.** The degree-`n` term of the internal Hom complex
 > `SheafHom(E, F)` of a bounded complex `E` is the finite direct sum `⊕\_q Hom\_\{O\_X}(E^\{-q},
@@ -347,7 +353,7 @@ def strictlyPerfectHomDegreeIso (hE : {i : ℤ | ¬ IsZero (E.X i)}.Finite) (n :
       ∐ (fun q : ℤ => RingedSite.internalHomSheaf (ringedSite Rc) (E.X (-q)) (F.X (n - q)))
 ```
 
-**`Stacks.SheafOfModules.strictlyPerfectHomComparison_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/StrictlyPerfectHomRepresentation.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/StrictlyPerfectHomRepresentation.lean#L106). The attribute's comment: “representation by the finite direct-sum Hom complex”.
+**`Stacks.SheafOfModules.strictlyPerfectHomComparison_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/StrictlyPerfectHomRepresentation.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/StrictlyPerfectHomRepresentation.lean#L106). The attribute's comment: “representation by the finite direct-sum Hom complex”.
 
 > **Stacks 08DM.** For `E` strictly perfect — bounded, with every term a direct summand of a
 > finite free `O_X`-module — the derived internal Hom `RSheafHom(E, F)` is represented by the
@@ -371,7 +377,7 @@ theorem strictlyPerfectHomComparison_isIso
 
 [Tag 0GM5](https://stacks.math.columbia.edu/tag/0GM5) in the Stacks Project.
 
-**`Stacks.SheafOfModules.isKFlat_sheafHomComplex_of_isKFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/StrictlyPerfectHomKFlat.lean, line 260](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/StrictlyPerfectHomKFlat.lean#L260). The attribute's comment: “the whole lemma on a ringed space: for E strictly perfect, written out as in Definition 20.46.1 -- hE is 'E^i is zero for all but finitely many i' and hterm is 'E^i is a direct summand of a finite free O\_X-module for all i' -- and F K-flat (hF), the complex sheafHomComplex E F is K-flat”.
+**`Stacks.SheafOfModules.isKFlat_sheafHomComplex_of_isKFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/StrictlyPerfectHomKFlat.lean, line 260](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/StrictlyPerfectHomKFlat.lean#L260). The attribute's comment: “the whole lemma on a ringed space: for E strictly perfect, written out as in Definition 20.46.1 -- hE is 'E^i is zero for all but finitely many i' and hterm is 'E^i is a direct summand of a finite free O\_X-module for all i' -- and F K-flat (hF), the complex sheafHomComplex E F is K-flat”.
 
 > **Stacks 0GM5.** In the situation of Stacks 08DM — `E` strictly perfect, so that the
 > internal Hom complex `H = SheafHom(E, F)` represents `RSheafHom(E, F)` — the complex `H` is
@@ -396,7 +402,7 @@ theorem isKFlat_sheafHomComplex_of_isKFlat
     IsKFlat Rc (sheafHomComplex Rc E F).obj
 ```
 
-**`AlgebraicGeometry.RingedSite.isKFlat_sheafHomComplex_of_isKFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/StrictlyPerfectHomKFlatSite.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/StrictlyPerfectHomKFlatSite.lean#L124). The attribute's comment: “on a ringed site”.
+**`AlgebraicGeometry.RingedSite.isKFlat_sheafHomComplex_of_isKFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/StrictlyPerfectHomKFlatSite.lean, line 124](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/InternalHom/StrictlyPerfectHomKFlatSite.lean#L124). The attribute's comment: “on a ringed site”.
 
 > **Stacks 0GM5 on a ringed site.** In the situation of Stacks 08DM — `E` with finitely many
 > nonzero terms, each a direct summand of a finite free module, so that the internal Hom complex
@@ -422,7 +428,7 @@ theorem isKFlat_sheafHomComplex_of_isKFlat
 
 [Tag 08I5](https://stacks.math.columbia.edu/tag/08I5) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSite.homMap_quasiIso_of_boundedAbove_isFiniteFreeSummand`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/BoundedAboveHomComparison.lean, line 281](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/BoundedAboveHomComparison.lean#L281). The attribute's comment: “invariance of the internal Hom complex under quasi-isomorphism”.
+**`AlgebraicGeometry.RingedSite.homMap_quasiIso_of_boundedAbove_isFiniteFreeSummand`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/BoundedAboveHomComparison.lean, line 281](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/BoundedAboveHomComparison.lean#L281). The attribute's comment: “invariance of the internal Hom complex under quasi-isomorphism”.
 
 > **Stacks 08I5**, the quasi-isomorphism invariance. Let `E` be a complex of `O`-modules which
 > is bounded above and all of whose terms are direct summands of finite free `O`-modules. Then the
@@ -447,7 +453,7 @@ theorem homMap_quasiIso_of_boundedAbove_isFiniteFreeSummand (a : ℤ)
     QuasiIso (homMap X (𝟙 E) f)
 ```
 
-**`AlgebraicGeometry.RingedSite.strictlyPerfectHomComparison_isIso_of_boundedAbove`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/BoundedAboveHomComparison.lean, line 309](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/BoundedAboveHomComparison.lean#L309). The attribute's comment: “representation of derived internal Hom by the ordinary Hom complex”.
+**`AlgebraicGeometry.RingedSite.strictlyPerfectHomComparison_isIso_of_boundedAbove`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/BoundedAboveHomComparison.lean, line 309](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/StrictlyPerfect/BoundedAboveHomComparison.lean#L309). The attribute's comment: “representation of derived internal Hom by the ordinary Hom complex”.
 
 > **Stacks 08I5**, the representation statement. Let `E` be a complex of `O`-modules which is
 > bounded above and all of whose terms are direct summands of finite free `O`-modules, and let `F`
@@ -478,4 +484,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 20.46, Tag 08C3](https://stacks.math.columbia.edu/tag/08C3)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

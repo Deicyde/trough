@@ -2,7 +2,7 @@
 navigation: transparent
 ---
 
-# 99.3 The Hom functor to 99.12 Relative morphisms
+# 99.3 The Hom functor to 99.13 The stack of algebraic…
 
 - [99.3 The Hom functor](99-3-the-hom-functor.md)
 - [99.4 The Isom functor](99-4-the-isom-functor.md)
@@ -14,3 +14,4 @@ navigation: transparent
 - [99.10 The Picard stack](99-10-the-picard-stack.md)
 - [99.11 The Picard functor](99-11-the-picard-functor.md)
 - [99.12 Relative morphisms](99-12-relative-morphisms.md)
+- [99.13 The stack of algebraic spaces](99-13-the-stack-of-algebraic-spaces.md)

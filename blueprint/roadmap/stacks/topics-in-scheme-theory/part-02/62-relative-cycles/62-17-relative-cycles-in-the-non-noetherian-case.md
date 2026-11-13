@@ -1,54 +1,55 @@
 ---
 declaration: section
 origin: cited
-lean: Stacks.Chow.HilbertCycleDatum, Stacks.Chow.cycleClassMap, Stacks.Chow.cycleClassMap_of, Stacks.Chow.comesFromNoetherianBase_iff_hasCompletelyDecomposedCycleClassCover
+lean: Stacks.Chow.HilbertSubscheme, Stacks.Chow.hilbertCycleClassMap, Stacks.Chow.hilbertCycleClassMap_of, Stacks.Chow.comesFromNoetherianBase_iff_hasCompletelyDecomposedCycleClassCover
 statement: formalized
 proof: formalized
 ---
 
 # 62.17 Relative cycles in the non-Noetherian case
 
-Section 62.17 of the Stacks Project, [Tag 0H6U](https://stacks.math.columbia.edu/tag/0H6U). 2 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 62.17 of the Stacks Project, [Tag 0H6U](https://stacks.math.columbia.edu/tag/0H6U). 2 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0H6V, an equation
 
 [Tag 0H6V](https://stacks.math.columbia.edu/tag/0H6V) in the Stacks Project.
 
-**`Stacks.Chow.HilbertCycleDatum`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/HilbertCycleClass.lean, line 203](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/HilbertCycleClass.lean#L203). The attribute's comment: “the set Hilb(X/S, r)”.
+**`Stacks.Chow.HilbertSubscheme`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/HilbertCycleClass.lean, line 298](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/HilbertCycleClass.lean#L298). The attribute's comment: “the set Hilb(X/S, r)”.
 
 > A member of `Hilb(X/S, r)`: a closed subscheme `Z ⊆ X`, given by its ideal sheaf, whose
-> structure morphism `Z ⟶ S` is flat, of finite presentation, and of relative dimension at most `r`.
+> structure morphism `Z ⟶ S` is flat, of finite presentation (locally of finite presentation,
+> quasi-compact and quasi-separated, Tag 01TP), and of relative dimension at most `r`.
 
 ```lean
-structure HilbertCycleDatum {X S : Scheme.{u}} (f : X ⟶ S) (r : ℕ)
+structure HilbertSubscheme {X S : Scheme.{u}} (f : X ⟶ S) (r : ℕ)
+    extends HilbertCycleDatum f r
 ```
 
-**`Stacks.Chow.cycleClassMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/HilbertCycleClass.lean, line 265](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/HilbertCycleClass.lean#L265). The attribute's comment: “the homomorphism”.
+**`Stacks.Chow.hilbertCycleClassMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/HilbertCycleClass.lean, line 316](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/HilbertCycleClass.lean#L316). The attribute's comment: “the homomorphism; for `f` locally of finite presentation”.
 
-> The cycle-class homomorphism from the free abelian group on `Hilb(X/S, r)` to the families of
+> The homomorphism of Tag 0H6V from the free abelian group on `Hilb(X/S, r)` to the families of
 > `r`-cycles on the fibres of `X/S`, sending `∑ nᵢ [Zᵢ]` to `∑ nᵢ [Zᵢ/X/S]_r`.
 
 ```lean
-def cycleClassMap {X S : Scheme.{u}} (f : X ⟶ S) [LocallyOfFinitePresentation f] (r : ℕ) :
-    FreeAbelianGroup (HilbertCycleDatum f r) →+ FamilyOfCycles f r
+def hilbertCycleClassMap {X S : Scheme.{u}} (f : X ⟶ S) [LocallyOfFinitePresentation f]
+    (r : ℕ) : FreeAbelianGroup (HilbertSubscheme f r) →+ FamilyOfCycles f r
 ```
 
-**`Stacks.Chow.cycleClassMap_of`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/HilbertCycleClass.lean, line 272](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/HilbertCycleClass.lean#L272). The attribute's comment: “on generators”.
+**`Stacks.Chow.hilbertCycleClassMap_of`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/HilbertCycleClass.lean, line 322](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/HilbertCycleClass.lean#L322). The attribute's comment: “on generators”.
 
-> On a generator the cycle-class homomorphism is the family of cycles `[Z/X/S]_r` of the closed
-> subscheme.
+> On a generator `[Z]` the homomorphism of Tag 0H6V is the family of cycles `[Z/X/S]_r`.
 
 ```lean
-theorem cycleClassMap_of {X S : Scheme.{u}} (f : X ⟶ S) [LocallyOfFinitePresentation f]
-    (r : ℕ) (Z : HilbertCycleDatum f r) :
-    cycleClassMap f r (FreeAbelianGroup.of Z) = Z.cycleFamily f
+theorem hilbertCycleClassMap_of {X S : Scheme.{u}} (f : X ⟶ S) [LocallyOfFinitePresentation f]
+    (r : ℕ) (Z : HilbertSubscheme f r) :
+    hilbertCycleClassMap f r (FreeAbelianGroup.of Z) = Z.cycleFamily f
 ```
 
 ## Tag 0H6W, a lemma
 
 [Tag 0H6W](https://stacks.math.columbia.edu/tag/0H6W) in the Stacks Project.
 
-**`Stacks.Chow.comesFromNoetherianBase_iff_hasCompletelyDecomposedCycleClassCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/NonNoetherianBase.lean, line 255](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/NonNoetherianBase.lean#L255).
+**`Stacks.Chow.comesFromNoetherianBase_iff_hasCompletelyDecomposedCycleClassCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/NonNoetherianBase.lean, line 255](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RelativeCycles/NonNoetherianBase.lean#L255).
 
 > **Stacks Project, Lemma 0H6W.** Let `S` be a quasi-compact and quasi-separated scheme, let
 > `f : X ⟶ S` be a morphism of finite presentation, let `r ≥ 0` and let `α` be a family of
@@ -77,4 +78,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 62.17, Tag 0H6U](https://stacks.math.columbia.edu/tag/0H6U)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

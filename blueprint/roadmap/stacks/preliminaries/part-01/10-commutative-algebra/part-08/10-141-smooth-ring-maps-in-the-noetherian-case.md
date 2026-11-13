@@ -8,13 +8,13 @@ proof: formalized
 
 # 10.141 Smooth ring maps in the Noetherian case
 
-Section 10.141 of the Stacks Project, [Tag 02HR](https://stacks.math.columbia.edu/tag/02HR). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 10.141 of the Stacks Project, [Tag 02HR](https://stacks.math.columbia.edu/tag/02HR). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 02HS, a definition
 
 [Tag 02HS](https://stacks.math.columbia.edu/tag/02HS) in the Stacks Project.
 
-**`InfinitesimalLifting.IsSmallExtension`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Smooth/InfinitesimalLifting.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Smooth/InfinitesimalLifting.lean#L129). References: SGA 7 VI (1.4), “more general”.
+**`InfinitesimalLifting.IsSmallExtension`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Smooth/InfinitesimalLifting.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Smooth/InfinitesimalLifting.lean#L129). References: SGA 7 VI (1.4), “more general”.
 
 > A ring map `φ : B' → B` is a *small extension* (Stacks tag 02HS) if `B'` and
 > `B` are local Artinian rings, `φ` is surjective, and the kernel `ker φ` has
@@ -28,7 +28,7 @@ def IsSmallExtension {B' B : CommRingCat.{u}} (φ : B' ⟶ B) : Prop
 
 [Tag 02HT](https://stacks.math.columbia.edu/tag/02HT) in the Stacks Project.
 
-**`Algebra.isSmoothAt_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Kaehler/SmoothRingMapsInTheNoetherianCase.lean, line 480](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Kaehler/SmoothRingMapsInTheNoetherianCase.lean#L480). The attribute's comment: “Smoothness at `q` is `Algebra.IsSmoothAt`, the source's Definition 02HN by the finite presentation of `S`. A small extension (Definition 02HS) is a surjection `f : B' →ₐ[R] B` of Artinian local rings with `IsSimpleModule B' (ker f)`, and `κ(q) ≅ κ(𝔪)` is surjectivity of `Ideal.ResidueField.mapₐ q (maximalIdeal B) g`, the canonical map out of the residue field of `S_q` — not of `S → κ(𝔪)`, which would force `q` maximal. The source's prime `𝔭` under `q` is not used. See the module docstring.”.
+**`Algebra.isSmoothAt_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Kaehler/SmoothRingMapsInTheNoetherianCase.lean, line 479](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Kaehler/SmoothRingMapsInTheNoetherianCase.lean#L479). The attribute's comment: “Smoothness at `q` is `Algebra.IsSmoothAt`, the source's Definition 02HN by the finite presentation of `S`. A small extension (Definition 02HS) is a surjection `f : B' →ₐ[R] B` of Artinian local rings with `IsSimpleModule B' (ker f)`, and `κ(q) ≅ κ(𝔪)` is surjectivity of `Ideal.ResidueField.mapₐ q (maximalIdeal B) g`, the canonical map out of the residue field of `S_q` — not of `S → κ(𝔪)`, which would force `q` maximal. The source's prime `𝔭` under `q` is not used. See the module docstring.”.
 
 > Let `R` be a Noetherian ring, let `S` be an `R`-algebra of finite type and let `q` be a prime
 > of `S`. The following are equivalent:
@@ -75,4 +75,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.141, Tag 02HR](https://stacks.math.columbia.edu/tag/02HR)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

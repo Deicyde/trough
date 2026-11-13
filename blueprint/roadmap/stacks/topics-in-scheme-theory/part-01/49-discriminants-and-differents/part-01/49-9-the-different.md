@@ -8,13 +8,13 @@ proof: formalized
 
 # 49.9 The different
 
-Section 49.9 of the Stacks Project, [Tag 0BTC](https://stacks.math.columbia.edu/tag/0BTC). 7 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 49.9 of the Stacks Project, [Tag 0BTC](https://stacks.math.columbia.edu/tag/0BTC). 7 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0BW4, a definition
 
 [Tag 0BW4](https://stacks.math.columbia.edu/tag/0BW4) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Hom.different`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/TheDifferent/Basic.lean, line 376](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/TheDifferent/Basic.lean#L376). The attribute's comment: “the different”.
+**`AlgebraicGeometry.Scheme.Hom.different`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/TheDifferent/Basic.lean, line 375](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Different/TheDifferent/Basic.lean#L375). The attribute's comment: “the different”.
 
 > The *different* `𝔇_f ⊆ 𝒪_Y` of a flat locally quasi-finite morphism `f : Y ⟶ X` of locally
 > Noetherian schemes: the annihilator of the cokernel of the map `𝒪_Y → ω_{Y/X}`, `1 ↦ τ_{Y/X}`,
@@ -31,7 +31,7 @@ def _root_.AlgebraicGeometry.Scheme.Hom.different :
     (SheafOfModules.unit (structureSheafRing Y.toRingedSpace)).Submodule
 ```
 
-**`AlgebraicGeometry.Scheme.Hom.isCoherent_different`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/TheDifferent/Basic.lean, line 402](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/TheDifferent/Basic.lean#L402). The attribute's comment: “coherence”.
+**`AlgebraicGeometry.Scheme.Hom.isCoherent_different`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/TheDifferent/Basic.lean, line 401](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Different/TheDifferent/Basic.lean#L401). The attribute's comment: “coherence”.
 
 > The different `𝔇_f` of a flat locally quasi-finite morphism of locally Noetherian schemes is
 > a coherent ideal of `𝒪_Y`.
@@ -45,7 +45,7 @@ theorem _root_.AlgebraicGeometry.Scheme.Hom.isCoherent_different :
 
 [Tag 0BW5](https://stacks.math.columbia.edu/tag/0BW5) in the Stacks Project.
 
-**`Stacks.Discriminant.different_obj_affine_eq_dedekindDifferentIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/TheDifferent/DedekindComparison.lean, line 330](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/TheDifferent/DedekindComparison.lean#L330).
+**`Stacks.Discriminant.different_obj_affine_eq_dedekindDifferentIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/TheDifferent/DedekindComparison.lean, line 333](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Different/TheDifferent/DedekindComparison.lean#L333).
 
 > **[Stacks, Tag 0BW5].** Let `f : Y → X` be a flat quasi-finite morphism of locally
 > Noetherian schemes and let `V = Spec B ⊆ Y` and `U = Spec A ⊆ X` be affine opens with
@@ -70,7 +70,7 @@ theorem different_obj_affine_eq_dedekindDifferentIdeal (ω : RelativeDualizingMo
 
 [Tag 0BW6](https://stacks.math.columbia.edu/tag/0BW6) in the Stacks Project.
 
-**`Stacks.Discriminant.different_sections_eq_noetherDifferent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/TheDifferent/NoetherComparison.lean, line 167](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/TheDifferent/NoetherComparison.lean#L167).
+**`Stacks.Discriminant.different_sections_eq_noetherDifferent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/TheDifferent/NoetherComparison.lean, line 167](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Different/TheDifferent/NoetherComparison.lean#L167).
 
 > **[Stacks, Tag 0BW6].** Let `f : Y ⟶ X` be flat and locally quasi-finite between locally
 > Noetherian schemes, with relative dualizing module `ω` and trace section `τ`.  On affine opens
@@ -103,7 +103,7 @@ theorem different_sections_eq_noetherDifferent (ω : RelativeDualizingModuleData
 
 [Tag 0BW7](https://stacks.math.columbia.edu/tag/0BW7) in the Stacks Project.
 
-**`Stacks.Discriminant.exists_bijectiveClosedImmersion_different_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/TheDifferent/BaseChange.lean, line 677](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/TheDifferent/BaseChange.lean#L677). The attribute's comment: “the bijective closed immersion”.
+**`Stacks.Discriminant.exists_bijectiveClosedImmersion_different_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/TheDifferent/BaseChange.lean, line 677](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Different/TheDifferent/BaseChange.lean#L677). The attribute's comment: “the bijective closed immersion”.
 
 > **[Stacks, Tag 0BW7].** Consider a cartesian diagram of locally Noetherian schemes with
 > `f : Y ⟶ X` flat and locally quasi-finite, let `R ⊆ Y` and `R' ⊆ Y'` be the closed subschemes
@@ -118,7 +118,7 @@ theorem exists_bijectiveClosedImmersion_different_baseChange
         Function.Bijective (pullback.lift k i' hk).base
 ```
 
-**`Stacks.Discriminant.isIso_different_baseChange_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/TheDifferent/BaseChange.lean, line 688](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/TheDifferent/BaseChange.lean#L688). The attribute's comment: “equality under flat base change”.
+**`Stacks.Discriminant.isIso_different_baseChange_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/TheDifferent/BaseChange.lean, line 688](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Different/TheDifferent/BaseChange.lean#L688). The attribute's comment: “equality under flat base change”.
 
 > **[Stacks, Tag 0BW7], flat base change.** If moreover `g` is flat then `R' = R ×_Y Y'`.
 
@@ -129,7 +129,7 @@ theorem isIso_different_baseChange_of_flat [Flat g]
     IsIso (pullback.lift k i' hk)
 ```
 
-**`Stacks.Discriminant.isIso_different_baseChange_of_invertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/TheDifferent/BaseChange.lean, line 699](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/TheDifferent/BaseChange.lean#L699). The attribute's comment: “equality for invertible dualizing module”.
+**`Stacks.Discriminant.isIso_different_baseChange_of_invertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/TheDifferent/BaseChange.lean, line 699](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Different/TheDifferent/BaseChange.lean#L699). The attribute's comment: “equality for invertible dualizing module”.
 
 > **[Stacks, Tag 0BW7], invertible dualizing module.** If moreover `ω_{Y/X}` is invertible
 > then `R' = R ×_Y Y'`, for an arbitrary `g`.
@@ -146,7 +146,7 @@ theorem isIso_different_baseChange_of_invertible
 
 [Tag 0BW8](https://stacks.math.columbia.edu/tag/0BW8) in the Stacks Project.
 
-**`Stacks.Discriminant.finiteLocallyFreeNorm_app_mem_discriminantIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/TheDifferent/NormDiscriminant.lean, line 309](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/TheDifferent/NormDiscriminant.lean#L309).
+**`Stacks.Discriminant.finiteLocallyFreeNorm_app_mem_discriminantIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/TheDifferent/NormDiscriminant.lean, line 309](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Different/TheDifferent/NormDiscriminant.lean#L309).
 
 > **[Stacks, Tag 0BW8].** Let `f : Y → X` be a finite flat morphism of locally Noetherian
 > schemes, with source `Y` and base `X`, and let `𝔇_f ⊆ 𝒪_Y` be the different attached to a
@@ -166,7 +166,7 @@ theorem finiteLocallyFreeNorm_app_mem_discriminantIdeal (ω : RelativeDualizingM
     (Stacks.Norm.finiteLocallyFreeNorm f).app U.1 s ∈ (discriminantIdeal f).ideal U
 ```
 
-**`Stacks.Discriminant.finiteProjective_mem_algebraDiscriminantIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Discriminant/NormDifferent.lean, line 460](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Discriminant/NormDifferent.lean#L460). The attribute's comment: “the affine computation”.
+**`Stacks.Discriminant.finiteProjective_mem_algebraDiscriminantIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Discriminant/NormDifferent.lean, line 458](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Discriminant/NormDifferent.lean#L458). The attribute's comment: “the affine computation”.
 
 > **Stacks Project, Tag 0BW8, the affine computation.** For a finite projective algebra
 > `A → B` whose Dedekind different is defined, the norm of an element of the Dedekind different
@@ -184,7 +184,7 @@ theorem finiteProjective_mem_algebraDiscriminantIdeal
 
 [Tag 0BW9](https://stacks.math.columbia.edu/tag/0BW9) in the Stacks Project.
 
-**`Stacks.Discriminant.range_eq_setOf_not_etaleAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/TheDifferent/EtaleLocus.lean, line 327](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/TheDifferent/EtaleLocus.lean#L327). The attribute's comment: “the non-étale locus”.
+**`Stacks.Discriminant.range_eq_setOf_not_etaleAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/TheDifferent/EtaleLocus.lean, line 327](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Different/TheDifferent/EtaleLocus.lean#L327). The attribute's comment: “the non-étale locus”.
 
 > For a flat quasi-finite morphism of locally Noetherian schemes, the closed subscheme
 > `R ⊆ Y` cut out by the different `𝔇_f` is exactly the set of points at which `f` is not
@@ -197,7 +197,7 @@ theorem range_eq_setOf_not_etaleAt (ω : RelativeDualizingModuleData f)
     Set.range i.base = {y : Y | ¬ EtaleAt f y}
 ```
 
-**`Stacks.Discriminant.range_eq_setOf_not_unramifiedAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/TheDifferent/EtaleLocus.lean, line 337](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/TheDifferent/EtaleLocus.lean#L337). The attribute's comment: “the non-unramified locus”.
+**`Stacks.Discriminant.range_eq_setOf_not_unramifiedAt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/TheDifferent/EtaleLocus.lean, line 337](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Different/TheDifferent/EtaleLocus.lean#L337). The attribute's comment: “the non-unramified locus”.
 
 > Equivalently, the closed subscheme cut out by the different is exactly the set of points at
 > which `f` is not unramified.
@@ -213,7 +213,7 @@ theorem range_eq_setOf_not_unramifiedAt (ω : RelativeDualizingModuleData f)
 
 [Tag 0BWA](https://stacks.math.columbia.edu/tag/0BWA) in the Stacks Project.
 
-**`Stacks.Discriminant.isEffectiveCartierDivisor_differentIdealSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/TheDifferent/EffectiveCartier.lean, line 165](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/TheDifferent/EffectiveCartier.lean#L165). The attribute's comment: “part (3), R is an effective Cartier divisor”.
+**`Stacks.Discriminant.isEffectiveCartierDivisor_differentIdealSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/TheDifferent/EffectiveCartier.lean, line 165](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Different/TheDifferent/EffectiveCartier.lean#L165). The attribute's comment: “part (3), R is an effective Cartier divisor”.
 
 > **[Stacks, Tag 0BWA (3)], effectivity.**  Let `f : Y ⟶ X` be a flat quasi-finite morphism of
 > locally Noetherian schemes with relative dualizing module `ω_{Y/X}` and trace element `τ_{Y/X}`.
@@ -229,7 +229,7 @@ theorem isEffectiveCartierDivisor_differentIdealSheaf
     Stacks.Divisors.IsEffectiveCartierDivisor (differentIdealSheaf ω τ)
 ```
 
-**`Stacks.Discriminant.existsUnique_invertibleSheafIso_differentIdealSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/TheDifferent/EffectiveCartier.lean, line 182](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/TheDifferent/EffectiveCartier.lean#L182). The attribute's comment: “part (3), O\_Y(R) = omega\_\{Y/X}”.
+**`Stacks.Discriminant.existsUnique_invertibleSheafIso_differentIdealSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/TheDifferent/EffectiveCartier.lean, line 182](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Different/TheDifferent/EffectiveCartier.lean#L182). The attribute's comment: “part (3), O\_Y(R) = omega\_\{Y/X}”.
 
 > **[Stacks, Tag 0BWA (3)], the isomorphism `𝒪_Y(R) = ω_{Y/X}`.**  Under the hypotheses of
 > [Stacks, Tag 0BWA (3)] there is exactly one isomorphism `𝒪_Y(R) ≅ ω_{Y/X}` carrying the
@@ -247,7 +247,7 @@ theorem existsUnique_invertibleSheafIso_differentIdealSheaf
         ((Stacks.Divisors.canonicalSection' (differentIdealSheaf ω τ)).eval (op ⊤)) = τ.sect
 ```
 
-**`Stacks.Discriminant.isLocallyPrincipal_different`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/TheDifferent/LocallyPrincipal.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/TheDifferent/LocallyPrincipal.lean#L100). The attribute's comment: “part (1)”.
+**`Stacks.Discriminant.isLocallyPrincipal_different`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/TheDifferent/LocallyPrincipal.lean, line 100](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Different/TheDifferent/LocallyPrincipal.lean#L100). The attribute's comment: “part (1)”.
 
 > **[Stacks, Tag 0BWA (1)].** Let `f : Y ⟶ X` be a flat locally quasi-finite morphism of
 > locally Noetherian schemes with relative dualizing module `ω_{Y/X}` and trace element
@@ -264,7 +264,7 @@ theorem isLocallyPrincipal_different (ω : RelativeDualizingModuleData f)
       (Stacks.Divisors.idealSheafDataOfSubmodule (different ω τ))
 ```
 
-**`Stacks.Discriminant.discriminantIdeal_eq_normIdealSheaf_differentIdealSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/TheDifferent/NormDiscriminant.lean, line 506](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Different/TheDifferent/NormDiscriminant.lean#L506). The attribute's comment: “part (2)”.
+**`Stacks.Discriminant.discriminantIdeal_eq_normIdealSheaf_differentIdealSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Different/TheDifferent/NormDiscriminant.lean, line 506](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Different/TheDifferent/NormDiscriminant.lean#L506). The attribute's comment: “part (2)”.
 
 > **[Stacks, Tag 0BWA (2)].**  Let `f : Y ⟶ X` be a finite flat morphism of locally Noetherian
 > schemes with relative dualizing module `ω_{Y/X}` and trace element `τ_{Y/X}`, and let `R ⊆ Y`
@@ -295,4 +295,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 49.9, Tag 0BTC](https://stacks.math.columbia.edu/tag/0BTC)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

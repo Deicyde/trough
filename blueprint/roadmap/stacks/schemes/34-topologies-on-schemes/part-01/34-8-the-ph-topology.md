@@ -8,13 +8,13 @@ proof: formalized
 
 # 34.8 The ph topology
 
-Section 34.8 of the Stacks Project, [Tag 0DBC](https://stacks.math.columbia.edu/tag/0DBC). 17 tags here are carried by 32 declarations of the repository (all in StacksFrontier) and 10 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 34.8 of the Stacks Project, [Tag 0DBC](https://stacks.math.columbia.edu/tag/0DBC). 17 tags here are carried by 37 declarations of the repository (all in StacksFrontier) and 5 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0DBD, a definition
 
 [Tag 0DBD](https://stacks.math.columbia.edu/tag/0DBD) in the Stacks Project.
 
-**`AlgebraicGeometry.StandardPHCovering`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Ph/StandardCoverings.lean, line 54](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Ph/StandardCoverings.lean#L54).
+**`AlgebraicGeometry.StandardPHCovering`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Ph/StandardCoverings.lean, line 54](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Ph/StandardCoverings.lean#L54).
 
 > A family `fᵢ : Xᵢ ⟶ T` is a standard ph covering if its index type is finite, every
 > `Xᵢ` is affine, and the family is obtained from a finite affine open cover of the source of
@@ -29,7 +29,7 @@ def StandardPHCovering {ι : Type v} {T : Scheme.{u}} [IsAffine T] {X : ι → S
 
 [Tag 0DBE](https://stacks.math.columbia.edu/tag/0DBE) in the Stacks Project.
 
-**`AlgebraicGeometry.StandardPHCovering.pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Ph/StandardCoverings.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Ph/StandardCoverings.lean#L104).
+**`AlgebraicGeometry.StandardPHCovering.pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Ph/StandardCoverings.lean, line 104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Ph/StandardCoverings.lean#L104).
 
 > **Stacks 0DBE.** A standard ph covering remains standard after pullback along a
 > morphism of affine schemes.
@@ -45,7 +45,7 @@ theorem StandardPHCovering.pullback {ι : Type v} {T T' : Scheme.{u}}
 
 [Tag 0DBF](https://stacks.math.columbia.edu/tag/0DBF) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_standardPHCovering_refinement_bind`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Ph/StandardRefinementParts0DBF.lean, line 156](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Ph/StandardRefinementParts0DBF.lean#L156). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.exists_standardPHCovering_refinement_bind`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Ph/StandardRefinementParts0DBF.lean, line 156](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Ph/StandardRefinementParts0DBF.lean#L156). The attribute's comment: “part (2)”.
 
 > **Stacks Project, Tag 0DBF, part (2).** Let `T` be an affine scheme, let `E` be a standard
 > ph covering of `T`, and for each member `E.X i` let `F i` be a standard ph covering of it. Then
@@ -63,7 +63,7 @@ theorem exists_standardPHCovering_refinement_bind {T : Scheme.{u}} [IsAffine T]
       StandardPHCovering G.f ∧ Nonempty (G.Hom (E.bind F))
 ```
 
-**`AlgebraicGeometry.exists_standardPHCovering_refinement_of_openCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/StandardPhRefinement.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/StandardPhRefinement.lean#L113). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.exists_standardPHCovering_refinement_of_openCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/StandardPhRefinement.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/StandardPhRefinement.lean#L113). The attribute's comment: “part (1)”.
 
 > **Stacks Project, Tag 0DBF, part (1).** Every Zariski open covering of an affine scheme has
 > a refinement which is a standard ph covering.
@@ -83,7 +83,7 @@ theorem exists_standardPHCovering_refinement_of_openCover {T : Scheme.{u}} [IsAf
 
 [Tag 0DBG](https://stacks.math.columbia.edu/tag/0DBG) in the Stacks Project.
 
-**`AlgebraicGeometry.IsPHCovering`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Ph/Coverings.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Ph/Coverings.lean#L62).
+**`AlgebraicGeometry.IsPHCovering`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Ph/Coverings.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Ph/Coverings.lean#L62).
 
 > **Stacks 0DBG.** A family `{X i ⟶ T}` is a **ph covering** if every member is locally
 > of finite type and, over every affine open `U` of `T`, a standard ph covering of
@@ -98,7 +98,7 @@ public noncomputable def IsPHCovering {T : Scheme.{u}}
 
 [Tag 0DBH](https://stacks.math.columbia.edu/tag/0DBH) in the Stacks Project.
 
-**`AlgebraicGeometry.IsPHCovering.of_openCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/StandardPhRefinement.lean, line 128](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/StandardPhRefinement.lean#L128).
+**`AlgebraicGeometry.IsPHCovering.of_openCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/StandardPhRefinement.lean, line 128](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/StandardPhRefinement.lean#L128).
 
 > **Stacks Project, Tag 0DBH.** A Zariski open covering of a scheme is a ph covering.
 >
@@ -116,7 +116,7 @@ theorem IsPHCovering.of_openCover {T : Scheme.{u}} (𝒰 : T.OpenCover.{v}) :
 
 [Tag 0DES](https://stacks.math.columbia.edu/tag/0DES) in the Stacks Project.
 
-**`AlgebraicGeometry.surjective_proper_isPHCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Ph/Coverings.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Ph/Coverings.lean#L107).
+**`AlgebraicGeometry.surjective_proper_isPHCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Ph/Coverings.lean, line 107](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Ph/Coverings.lean#L107).
 
 > **Stacks 0DES.** A proper surjection of schemes is a ph covering.
 
@@ -130,7 +130,7 @@ public theorem surjective_proper_isPHCovering {X Y : Scheme.{u}} (f : Y ⟶ X)
 
 [Tag 0ET9](https://stacks.math.columbia.edu/tag/0ET9) in the Stacks Project.
 
-**`AlgebraicGeometry.isPHCovering_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/BigSites/PhCoveringRefinement.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/BigSites/PhCoveringRefinement.lean#L60).
+**`AlgebraicGeometry.isPHCovering_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/BigSites/PhCoveringRefinement.lean, line 60](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/BigSites/PhCoveringRefinement.lean#L60).
 
 > A family of locally finite type morphisms is a ph covering if and only if some ph
 > covering refines it, if and only if its disjoint-union morphism is a ph covering.
@@ -154,7 +154,7 @@ public theorem isPHCovering_tfae {T : Scheme.{u}} {I : Type v} [Small.{u} I]
 
 [Tag 0DBI](https://stacks.math.columbia.edu/tag/0DBI) in the Stacks Project.
 
-**`AlgebraicGeometry.isPHCovering_of_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Ph/Coverings.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Ph/Coverings.lean#L101). The attribute's comment: “isomorphisms”.
+**`AlgebraicGeometry.isPHCovering_of_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Ph/Coverings.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Ph/Coverings.lean#L101). The attribute's comment: “isomorphisms”.
 
 > **Stacks 0DBI.** A singleton isomorphism is a ph covering of schemes.
 
@@ -163,7 +163,7 @@ public theorem isPHCovering_of_isIso {T' T : Scheme.{u}} (f : T' ⟶ T) [IsIso f
     IsPHCovering (fun _ : Unit ↦ T') (fun _ ↦ f)
 ```
 
-**`AlgebraicGeometry.isPHCovering_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Ph/CoveringsParts0DBI.lean, line 178](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Ph/CoveringsParts0DBI.lean#L178). The attribute's comment: “part (3)”.
+**`AlgebraicGeometry.isPHCovering_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Ph/CoveringsParts0DBI.lean, line 178](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Ph/CoveringsParts0DBI.lean#L178). The attribute's comment: “part (3)”.
 
 > **Stacks 0DBI part (3).** If `{X i ⟶ T}` is a ph covering and `g : T' ⟶ T` is any morphism of
 > schemes, then the base change `{X i ×_T T' ⟶ T'}` is a ph covering of `T'`.
@@ -183,7 +183,7 @@ public theorem isPHCovering_pullback {T T' : Scheme.{u}} {I : Type v} {X : I →
     IsPHCovering (fun i ↦ pullback (f i) g) (fun i ↦ pullback.snd (f i) g)
 ```
 
-**`AlgebraicGeometry.isPHCovering_bind`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Ph/CoveringsParts0DBI.lean, line 246](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Ph/CoveringsParts0DBI.lean#L246). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.isPHCovering_bind`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Ph/CoveringsParts0DBI.lean, line 246](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Ph/CoveringsParts0DBI.lean#L246). The attribute's comment: “part (2)”.
 
 > **Stacks 0DBI part (2).** If `E` is a ph covering of `T` and `F i` is a ph covering of the
 > member `E.X i` for each `i`, then the family of all composites `(F i).X j ⟶ E.X i ⟶ T`, which is
@@ -209,21 +209,42 @@ public theorem isPHCovering_bind {T : Scheme.{u}} (E : PreZeroHypercover.{v} T)
 
 [Tag 0DBJ](https://stacks.math.columbia.edu/tag/0DBJ) in the Stacks Project.
 
-**`AlgebraicGeometry.BigPHSite`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Ph/BigSite.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Ph/BigSite.lean#L71).
+**`AlgebraicGeometry.StacksBigPHSite`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Ph/BigSiteOfSets.lean, line 176](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Ph/BigSiteOfSets.lean#L176).
 
-> **Stacks 0DBJ.** A big ph site consists of an initial set of schemes and initial ph
-> coverings, a sufficiently large cutoff category containing them, and a bounded collection
-> of ph coverings satisfying the site axioms and representing every ph covering.
+> **Stacks 0DBJ.** A *big ph site*: a site `Sch_ph` in the sense of Stacks 00VH, whose coverings
+> form a set, constructed as follows.
+>
+> 1. A set of schemes `S₀`, and a set `Cov₀` of ph coverings (Stacks 0DBG) among these schemes:
+>    the fields `S₀`, `Cov₀` and the conditions on them.
+> 2. As underlying category the category `Sch_α` constructed as in Stacks 000J starting with `S₀`:
+>    `AlgebraicGeometry.bigSchemeCategory S₀ ordinal`, for the limit ordinal `ordinal` of
+>    uncountable cofinality at which the construction in the proof of Stacks 000J is stopped. Its
+>    objects form a set (`AlgebraicGeometry.StacksBigPHSite.small_objects`), and it satisfies
+>    (1)–(4) of Stacks 000J (`AlgebraicGeometry.bigSchemeCategory_of_mem`,
+>    `AlgebraicGeometry.exists_bigSchemeCategory_iso_of_size_le`,
+>    `AlgebraicGeometry.preservesLimit_bigSchemeCategory_ι`,
+>    `AlgebraicGeometry.preservesColimit_bigSchemeCategory_ι`).
+> 3. A set of coverings as in Stacks 000X starting with `Sch_α`, the class of ph coverings and
+>    `Cov₀`: `AlgebraicGeometry.StacksBigPHSite.Cov`. It is a set of ph coverings
+>    (`AlgebraicGeometry.StacksBigPHSite.small_Cov`,
+>    `AlgebraicGeometry.StacksBigPHSite.isPHCoveringIn_of_mem_Cov`) containing `Cov₀`
+>    (`AlgebraicGeometry.StacksBigPHSite.exists_mem_Cov_of_mem_Cov₀`), satisfying the axioms of a
+>    site (`AlgebraicGeometry.StacksBigPHSite.isSite_Cov`), and every ph covering of `Sch_α` is
+>    combinatorially equivalent to a member (`AlgebraicGeometry.StacksBigPHSite.exists_combEquiv`).
+>
+> Lean's type theory has no von Neumann hierarchy in which schemes and families of morphisms live;
+> what the stages `V_α` provide in Stacks 000J and 000X is that the objects and the coverings form
+> *sets*, which is `Small.{u}` here, `u` being the universe of the sets underlying the schemes.
 
 ```lean
-public structure BigPHSite
+public structure StacksBigPHSite
 ```
 
 ## Tag 0DBK, a lemma
 
 [Tag 0DBK](https://stacks.math.columbia.edu/tag/0DBK) in the Stacks Project.
 
-**`AlgebraicGeometry.standardPHCovering_tautologicallyEquivalent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/BigSites/PhSiteCoverings.lean, line 180](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/BigSites/PhSiteCoverings.lean#L180). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.standardPHCovering_tautologicallyEquivalent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/BigSites/PhSiteCoverings.lean, line 180](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/BigSites/PhSiteCoverings.lean#L180). The attribute's comment: “part (2)”.
 
 > **Stacks 0DBK, part (2).** A standard ph covering is tautologically equivalent to a covering
 > in the big ph site.
@@ -237,7 +258,7 @@ public theorem standardPHCovering_tautologicallyEquivalent
         PreZeroHypercover.TautologicallyEquivalent E (F.map B.inclusion)
 ```
 
-**`AlgebraicGeometry.openCover_tautologicallyEquivalent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/BigSites/PhSiteCoverings.lean, line 209](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/BigSites/PhSiteCoverings.lean#L209). The attribute's comment: “part (3)”.
+**`AlgebraicGeometry.openCover_tautologicallyEquivalent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/BigSites/PhSiteCoverings.lean, line 209](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/BigSites/PhSiteCoverings.lean#L209). The attribute's comment: “part (3)”.
 
 > **Stacks 0DBK, part (3).** A Zariski open covering is tautologically equivalent to a covering
 > in the big ph site.
@@ -251,7 +272,7 @@ public theorem openCover_tautologicallyEquivalent
           (F.map B.inclusion)
 ```
 
-**`AlgebraicGeometry.exists_isCovering_refinement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/BigSites/PhSiteCoverings.lean, line 277](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/BigSites/PhSiteCoverings.lean#L277). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.exists_isCovering_refinement`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/BigSites/PhSiteCoverings.lean, line 277](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/BigSites/PhSiteCoverings.lean#L277). The attribute's comment: “part (1)”.
 
 > **Stacks 0DBK, part (1).** Every ph covering of an object of a big ph site is refined by one
 > of the site's own covering families.
@@ -274,7 +295,7 @@ public theorem exists_isCovering_refinement
 
 [Tag 0DBL](https://stacks.math.columbia.edu/tag/0DBL) in the Stacks Project.
 
-**`AlgebraicGeometry.BigPHOver`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Ph/BigSite.lean, line 173](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Ph/BigSite.lean#L173). The attribute's comment: “part (1), category”.
+**`AlgebraicGeometry.BigPHOver`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Ph/BigSite.lean, line 178](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Ph/BigSite.lean#L178). The attribute's comment: “part (1), category”.
 
 > **Stacks 0DBL, part (1).** The big ph category of `S` is the slice of the chosen big ph
 > category over its object `S`.
@@ -283,7 +304,7 @@ public theorem exists_isCovering_refinement
 public abbrev BigPHOver
 ```
 
-**`AlgebraicGeometry.BigPHOver.IsCovering`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Ph/BigSite.lean, line 188](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Ph/BigSite.lean#L188). The attribute's comment: “part (1), coverings”.
+**`AlgebraicGeometry.BigPHOver.IsCovering`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Ph/BigSite.lean, line 193](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Ph/BigSite.lean#L193). The attribute's comment: “part (1), coverings”.
 
 > **Stacks 0DBL, part (1).** A family in the slice covers precisely when its underlying
 > family covers in the chosen big ph site.
@@ -292,7 +313,7 @@ public abbrev BigPHOver
 public abbrev IsCovering (E : Covering (BigPHOver B S hS)) : Prop
 ```
 
-**`AlgebraicGeometry.BigAffinePH`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Ph/BigSite.lean, line 204](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Ph/BigSite.lean#L204). The attribute's comment: “part (2), category”.
+**`AlgebraicGeometry.BigAffinePH`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Ph/BigSite.lean, line 209](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Ph/BigSite.lean#L209). The attribute's comment: “part (2), category”.
 
 > **Stacks 0DBL, part (2).** The big affine ph category is the full subcategory of affine
 > objects in the big ph category over `S`.
@@ -301,7 +322,7 @@ public abbrev IsCovering (E : Covering (BigPHOver B S hS)) : Prop
 public abbrev BigAffinePH
 ```
 
-**`AlgebraicGeometry.BigAffinePH.IsCovering`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Ph/BigSite.lean, line 223](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Ph/BigSite.lean#L223). The attribute's comment: “part (2), coverings”.
+**`AlgebraicGeometry.BigAffinePH.IsCovering`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Ph/BigSite.lean, line 228](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Ph/BigSite.lean#L228). The attribute's comment: “part (2), coverings”.
 
 > **Stacks 0DBL, part (2).** An affine family covers exactly when it is a finite covering
 > family in the big ph site over `S`.
@@ -314,7 +335,7 @@ public abbrev IsCovering (E : Covering (BigAffinePH B S hS)) : Prop
 
 [Tag 0DBM](https://stacks.math.columbia.edu/tag/0DBM) in the Stacks Project.
 
-**`AlgebraicGeometry.BigAffinePH.isSite`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Ph/BigSite.lean, line 274](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Ph/BigSite.lean#L274).
+**`AlgebraicGeometry.BigAffinePH.isSite`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Ph/BigSite.lean, line 279](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Ph/BigSite.lean#L279).
 
 > **Stacks 0DBM.** Finite ph covering families of affine objects over `S` satisfy the
 > axioms of a site.
@@ -328,21 +349,63 @@ public lemma isSite (B : BigPHSite.{u}) (S : Scheme.{u})
 
 [Tag 0DBN](https://stacks.math.columbia.edu/tag/0DBN) in the Stacks Project.
 
+**`AlgebraicGeometry.hasPullbacks_bigPHOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Ph/FibreProducts.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Ph/FibreProducts.lean#L67). The attribute's comment: “fibre products in the big ph slice”.
+
+> **Stacks 0DBN, second part.** The big ph category over `S` admits fibre products.
+
+```lean
+public theorem hasPullbacks_bigPHOver : HasPullbacks (BigPHOver B S hS)
+```
+
+**`AlgebraicGeometry.preservesPullbacks_bigPHOverToScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Ph/FibreProducts.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Ph/FibreProducts.lean#L72). The attribute's comment: “preservation by the big ph slice functor to schemes”.
+
+> **Stacks 0DBN, second part.** The canonical functor from the big ph category over `S` to
+> the category of all schemes preserves fibre products.
+
+```lean
+public theorem preservesPullbacks_bigPHOverToScheme :
+    PreservesLimitsOfShape WalkingCospan (BigPHOver.toScheme B S hS)
+```
+
+**`AlgebraicGeometry.isTerminal_mkId_bigPHOver`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Ph/FibreProducts.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Ph/FibreProducts.lean#L78). The attribute's comment: “the final object of the big ph slice is S / S”.
+
+> **Stacks 0DBN, last part.** The final object of the big ph category over `S` is `S / S`,
+> the identity of `S` viewed as an object over `S`.
+
+```lean
+public noncomputable def isTerminal_mkId_bigPHOver :
+    IsTerminal (C := BigPHOver B S hS) (Over.mk (𝟙 (B.obj S hS)))
+```
+
+**`AlgebraicGeometry.hasPullbacks_bigAffinePH`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Ph/FibreProducts.lean, line 100](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Ph/FibreProducts.lean#L100). The attribute's comment: “fibre products in the big affine ph site”.
+
+> **Stacks 0DBN, third part.** The big affine ph category over `S` admits fibre
+> products.
+
+```lean
+public instance hasPullbacks_bigAffinePH : HasPullbacks (BigAffinePH B S hS)
+```
+
+**`AlgebraicGeometry.preservesPullbacks_bigAffinePHToScheme`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Ph/FibreProducts.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Ph/FibreProducts.lean#L106). The attribute's comment: “preservation by the big affine ph functor to schemes”.
+
+> **Stacks 0DBN, third part.** The canonical functor from the big affine ph category over
+> `S` to the category of all schemes preserves fibre products.
+
+```lean
+public instance preservesPullbacks_bigAffinePHToScheme :
+    PreservesLimitsOfShape WalkingCospan (BigAffinePH.toScheme B S hS)
+```
+
 Declarations registered for the tag:
 
-- [`schemeSizeBelow_isClosedUnderLimitsOfShape_walkingCospan`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=schemeSizeBelow_isClosedUnderLimitsOfShape_walkingCospan#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/Fppf/FibreProducts.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Fppf/FibreProducts.lean#L91) (StacksFrontier): “closure of size-bounded schemes under fibre products”.
-- [`CategoryTheory.Limits.hasLimitsOfShape_of_closedUnderLimits`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.hasLimitsOfShape_of_closedUnderLimits#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/Fppf/FibreProducts.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Fppf/FibreProducts.lean#L94) (StacksFrontier): “fibre products in the big ph site”.
-- [`CategoryTheory.Limits.createsLimitsOfShapeFullSubcategoryInclusion`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.createsLimitsOfShapeFullSubcategoryInclusion#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/Fppf/FibreProducts.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Fppf/FibreProducts.lean#L97) (StacksFrontier): “preservation by the big ph site inclusion”.
-- [`CategoryTheory.Over.instHasPullbacks`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Over.instHasPullbacks#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/Fppf/FibreProducts.lean, line 144](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Fppf/FibreProducts.lean#L144) (StacksFrontier): “fibre products in the big ph slice”.
-- [`CategoryTheory.Over.preservesLimitsOfShape_forget_of_isConnected`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Over.preservesLimitsOfShape_forget_of_isConnected#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/Fppf/FibreProducts.lean, line 154](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Fppf/FibreProducts.lean#L154) (StacksFrontier): “preservation by the big ph slice forgetful functor”. References: SGA 4 IV (5.10), “more general”; SGA 4 IV (5.3), “partial”.
-- [`CategoryTheory.Limits.comp_preservesLimitsOfShape`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Limits.comp_preservesLimitsOfShape#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/Fppf/FibreProducts.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Fppf/FibreProducts.lean#L157) (StacksFrontier): “preservation under composition for the big ph slice functor”.
-- [`CategoryTheory.Over.mkIdTerminal`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Over.mkIdTerminal#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/Fppf/FibreProducts.lean, line 167](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Fppf/FibreProducts.lean#L167) (StacksFrontier): “the final object of the big ph slice”. References: EGA 0 (8.1.10), “more general”; SGA 3 I (1.3); SGA 4 IV (5.11.1), “terminal object (X”.
+- [`AlgebraicGeometry.BigPHSite.hasPullbacks_schemes`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/BigSites/PhSitePrecoverage.lean#L107), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/Ph/FibreProducts.lean, line 57](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Ph/FibreProducts.lean#L57) (StacksFrontier): “fibre products in the big ph site”.
+- [`AlgebraicGeometry.BigPHSite.preservesPullbacks_inclusion`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/BigSites/PhSitePrecoverage.lean#L111), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/Ph/FibreProducts.lean, line 60](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Ph/FibreProducts.lean#L60) (StacksFrontier): “preservation by the big ph site inclusion”.
 
 ## Tag 0DBP, a lemma
 
 [Tag 0DBP](https://stacks.math.columbia.edu/tag/0DBP) in the Stacks Project.
 
-**`AlgebraicGeometry.BigAffinePH.inclusion_isCocontinuous`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/BigSites/AffinePhDenseSubsite.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/BigSites/AffinePhDenseSubsite.lean#L200). The attribute's comment: “cocontinuity”.
+**`AlgebraicGeometry.BigAffinePH.inclusion_isCocontinuous`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/BigSites/AffinePhDenseSubsite.lean, line 200](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/BigSites/AffinePhDenseSubsite.lean#L200). The attribute's comment: “cocontinuity”.
 
 > **Stacks 0DBP, cocontinuity.** The inclusion of affine objects over `S`
 > in a chosen big ph site is cocontinuous.
@@ -355,7 +418,7 @@ public instance BigAffinePH.inclusion_isCocontinuous
       (BigPHOver.topology B S hS)
 ```
 
-**`AlgebraicGeometry.BigAffinePH.inclusion_isDenseSubsite`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/BigSites/AffinePhDenseSubsite.lean, line 287](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/BigSites/AffinePhDenseSubsite.lean#L287). The attribute's comment: “equivalence of topoi”.
+**`AlgebraicGeometry.BigAffinePH.inclusion_isDenseSubsite`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/BigSites/AffinePhDenseSubsite.lean, line 287](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/BigSites/AffinePhDenseSubsite.lean#L287). The attribute's comment: “equivalence of topoi”.
 
 > **Stacks 0DBP, equivalence of topoi.** The inclusion of affine objects
 > is a dense subsite, hence its induced morphism of sheaf topoi is an equivalence.
@@ -372,7 +435,7 @@ public instance BigAffinePH.inclusion_isDenseSubsite
 
 [Tag 0DBQ](https://stacks.math.columbia.edu/tag/0DBQ) in the Stacks Project.
 
-**`AlgebraicGeometry.isSheaf_iff_zariski_and_properSurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/BigSites/PhSheafCriterion.lean, line 959](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/BigSites/PhSheafCriterion.lean#L959). The attribute's comment: “sheaf characterization”.
+**`AlgebraicGeometry.isSheaf_iff_zariski_and_properSurjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/BigSites/PhSheafCriterion.lean, line 959](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/BigSites/PhSheafCriterion.lean#L959). The attribute's comment: “sheaf characterization”.
 
 > **Stacks 0DBQ, characterization.** The ph sheaf condition is equivalent
 > to Zariski descent together with proper-surjective descent.
@@ -383,7 +446,7 @@ public theorem isSheaf_iff_zariski_and_properSurjective :
       (IsZariskiSheaf B S hS F ∧ IsProperSurjectiveSheaf B S hS F)
 ```
 
-**`AlgebraicGeometry.properSurjective_iff_affine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/BigSites/PhSheafCriterion.lean, line 981](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/BigSites/PhSheafCriterion.lean#L981). The attribute's comment: “affine reduction”.
+**`AlgebraicGeometry.properSurjective_iff_affine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/BigSites/PhSheafCriterion.lean, line 981](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/BigSites/PhSheafCriterion.lean#L981). The attribute's comment: “affine reduction”.
 
 > **Stacks 0DBQ, affine reduction.** Under Zariski descent, proper-surjective
 > descent may be checked only when the target is affine.
@@ -398,7 +461,7 @@ public theorem properSurjective_iff_affine (hF : IsZariskiSheaf B S hS F) :
 
 [Tag 0DBR](https://stacks.math.columbia.edu/tag/0DBR) in the Stacks Project.
 
-**`AlgebraicGeometry.bigPHMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Ph/MorphismOfTopoi.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Ph/MorphismOfTopoi.lean#L71). The attribute's comment: “the morphism of topoi”.
+**`AlgebraicGeometry.bigPHMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Ph/MorphismOfTopoi.lean, line 71](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Ph/MorphismOfTopoi.lean#L71). The attribute's comment: “the morphism of topoi”.
 
 > **Stacks 0DBR.** The morphism of big ph topoi induced by `f`.
 
@@ -409,7 +472,7 @@ public noncomputable def bigPHMorphism :
       (Sheaf (BigPHOver.topology B S.obj S.property) (Type (u + 1)))
 ```
 
-**`AlgebraicGeometry.bigPHMorphismInverseImageIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Ph/MorphismOfTopoi.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Ph/MorphismOfTopoi.lean#L89). The attribute's comment: “the inverse-image formula”.
+**`AlgebraicGeometry.bigPHMorphismInverseImageIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Ph/MorphismOfTopoi.lean, line 89](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Ph/MorphismOfTopoi.lean#L89). The attribute's comment: “the inverse-image formula”.
 
 > **Stacks 0DBR.** Inverse image is restriction along postcomposition, naturally in
 > sheaves and objects.
@@ -422,7 +485,7 @@ public noncomputable def bigPHMorphismInverseImageIso :
         (BigPHOver.topology B S.obj S.property)
 ```
 
-**`AlgebraicGeometry.bigPHMorphismPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Ph/MorphismOfTopoi.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Ph/MorphismOfTopoi.lean#L101). The attribute's comment: “the direct-image formula”.
+**`AlgebraicGeometry.bigPHMorphismPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Ph/MorphismOfTopoi.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Ph/MorphismOfTopoi.lean#L101). The attribute's comment: “the direct-image formula”.
 
 > **Stacks 0DBR.** Direct image is restriction along base change, naturally in sheaves
 > and objects.
@@ -435,7 +498,7 @@ public noncomputable def bigPHMorphismPushforwardIso :
         (BigPHOver.topology B T.obj T.property)
 ```
 
-**`AlgebraicGeometry.bigPHLowerShriekAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Ph/MorphismOfTopoi.lean, line 110](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Ph/MorphismOfTopoi.lean#L110). The attribute's comment: “existence of lower shriek”.
+**`AlgebraicGeometry.bigPHLowerShriekAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Ph/MorphismOfTopoi.lean, line 110](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Ph/MorphismOfTopoi.lean#L110). The attribute's comment: “existence of lower shriek”.
 
 > **Stacks 0DBR.** The lower shriek functor is left adjoint to inverse image.
 
@@ -447,7 +510,7 @@ public noncomputable def bigPHLowerShriekAdjunction :
         (bigPHMorphism B T S f).inverseImage
 ```
 
-**`AlgebraicGeometry.bigPHLowerShriek_preservesPullbacks`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Ph/MorphismOfTopoi.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Ph/MorphismOfTopoi.lean#L122). The attribute's comment: “lower shriek preserves fibre products”.
+**`AlgebraicGeometry.bigPHLowerShriek_preservesPullbacks`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Ph/MorphismOfTopoi.lean, line 122](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Ph/MorphismOfTopoi.lean#L122). The attribute's comment: “lower shriek preserves fibre products”.
 
 > **Stacks 0DBR.** Lower shriek preserves fibre products.
 
@@ -459,7 +522,7 @@ public instance bigPHLowerShriek_preservesPullbacks :
         (BigPHOver.topology B S.obj S.property))
 ```
 
-**`AlgebraicGeometry.bigPHLowerShriek_preservesEqualizers`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Ph/MorphismOfTopoi.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Ph/MorphismOfTopoi.lean#L135). The attribute's comment: “lower shriek preserves equalizers”.
+**`AlgebraicGeometry.bigPHLowerShriek_preservesEqualizers`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Ph/MorphismOfTopoi.lean, line 135](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Ph/MorphismOfTopoi.lean#L135). The attribute's comment: “lower shriek preserves equalizers”.
 
 > **Stacks 0DBR.** Lower shriek preserves equalizers.
 
@@ -473,15 +536,15 @@ public instance bigPHLowerShriek_preservesEqualizers :
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Over.map`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Over.map#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/Ph/MorphismOfTopoi.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Ph/MorphismOfTopoi.lean#L55) (StacksFrontier): “the postcomposition functor”. References: EGA I (2.5.3); EGA I (2.5.4), “more general”; SGA 3 I (1.6); SGA 4 IV (5.5).
-- [`CategoryTheory.Over.pullback`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Over.pullback#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/Ph/MorphismOfTopoi.lean, line 56](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Ph/MorphismOfTopoi.lean#L56) (StacksFrontier): “the base-change functor”. References: EGA I (3.3.7), “more general”; EGA IV (8.2.6); SGA 3 I (1.6); SGA 4 III (5.5); SGA 4 IV (5.2), “more general”; SGA 4 IV (5.5).
-- [`CategoryTheory.Over.mapPullbackAdj`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Over.mapPullbackAdj#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/Ph/MorphismOfTopoi.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Ph/MorphismOfTopoi.lean#L57) (StacksFrontier): “the base-change adjunction”.
+- [`CategoryTheory.Over.map`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Over.map#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/Ph/MorphismOfTopoi.lean, line 55](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Ph/MorphismOfTopoi.lean#L55) (StacksFrontier): “the postcomposition functor”. References: EGA I (2.5.3); EGA I (2.5.4), “more general”; SGA 3 I (1.6); SGA 4 IV (5.5).
+- [`CategoryTheory.Over.pullback`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Over.pullback#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/Ph/MorphismOfTopoi.lean, line 56](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Ph/MorphismOfTopoi.lean#L56) (StacksFrontier): “the base-change functor”. References: EGA I (3.3.7), “more general”; EGA IV (8.2.6); SGA 3 I (1.6); SGA 4 III (5.5); SGA 4 IV (5.2), “more general”; SGA 4 IV (5.5).
+- [`CategoryTheory.Over.mapPullbackAdj`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Over.mapPullbackAdj#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Topologies/Ph/MorphismOfTopoi.lean, line 57](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Ph/MorphismOfTopoi.lean#L57) (StacksFrontier): “the base-change adjunction”.
 
 ## Tag 0DBS, a lemma
 
 [Tag 0DBS](https://stacks.math.columbia.edu/tag/0DBS) in the Stacks Project.
 
-**`AlgebraicGeometry.bigPHMorphism_comp_pushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Ph/Composition.lean, line 45](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Ph/Composition.lean#L45). The attribute's comment: “direct-image composition”.
+**`AlgebraicGeometry.bigPHMorphism_comp_pushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Ph/Composition.lean, line 45](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Ph/Composition.lean#L45). The attribute's comment: “direct-image composition”.
 
 > **Stacks 0DBS.** Direct image for the composite morphism of big ph topoi is naturally
 > isomorphic to the composite of the direct-image functors.
@@ -493,7 +556,7 @@ public noncomputable def bigPHMorphism_comp_pushforwardIso :
       (bigPHMorphism B Y Z g).pushforward
 ```
 
-**`AlgebraicGeometry.bigPHMorphism_comp_inverseImageIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Ph/Composition.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Ph/Composition.lean#L67). The attribute's comment: “inverse-image composition”.
+**`AlgebraicGeometry.bigPHMorphism_comp_inverseImageIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Topologies/Ph/Composition.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Ph/Composition.lean#L67). The attribute's comment: “inverse-image composition”.
 
 > **Stacks 0DBS.** Inverse image for the composite morphism of big ph topoi is naturally
 > isomorphic to the composite of the inverse-image functors.
@@ -512,4 +575,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 34.8, Tag 0DBC](https://stacks.math.columbia.edu/tag/0DBC)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

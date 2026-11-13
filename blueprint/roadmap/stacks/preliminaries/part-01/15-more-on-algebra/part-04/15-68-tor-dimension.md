@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.68 Tor dimension
 
-Section 15.68 of the Stacks Project, [Tag 0651](https://stacks.math.columbia.edu/tag/0651). 20 tags here are carried by 25 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.68 of the Stacks Project, [Tag 0651](https://stacks.math.columbia.edu/tag/0651). 20 tags here are carried by 25 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0652, a definition
 
 [Tag 0652](https://stacks.math.columbia.edu/tag/0652) in the Stacks Project.
 
-**`StacksDraft.TorAmplitude.HasTorAmplitude`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TorAmplitude/Defs.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/TorAmplitude/Defs.lean#L80). The attribute's comment: “(1)”. References: SGA 4½ Rapport (4.5), “tor-dimension ≤ r”; SGA 6 I (5.2), “Tor-amp(F) ⊂ [m,n]”.
+**`StacksDraft.TorAmplitude.HasTorAmplitude`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TorAmplitude/Defs.lean, line 80](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/TorAmplitude/Defs.lean#L80). The attribute's comment: “(1)”. References: SGA 4½ Rapport (4.5), “tor-dimension ≤ r”; SGA 6 I (5.2), “Tor-amp(F) ⊂ [m,n]”.
 
 > An object `K` of `D(R)` has Tor amplitude in `[a, b]` if, for every `R`-module `M`, the
 > cohomology of `K ⊗ᴸ[R] M[0]` vanishes in every degree outside `[a, b]`.
@@ -42,7 +42,7 @@ public def HasTorAmplitude {R : Type u} [CommRing R]
     (K : DerivedCategory (ModuleCat.{v} R)) (a b : ℤ) : Prop
 ```
 
-**`StacksDraft.TorAmplitude.HasFiniteTorDimension`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TorAmplitude/Defs.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/TorAmplitude/Defs.lean#L107). The attribute's comment: “(2)”. References: SGA 4½ Rapport (4.5), “finite tor dimension”; SGA 5 I (1.10), “affine case (torf)”; SGA 6 I (5.2), “finite flat amplitude”.
+**`StacksDraft.TorAmplitude.HasFiniteTorDimension`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TorAmplitude/Defs.lean, line 107](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/TorAmplitude/Defs.lean#L107). The attribute's comment: “(2)”. References: SGA 4½ Rapport (4.5), “finite tor dimension”; SGA 5 I (1.10), “affine case (torf)”; SGA 6 I (5.2), “finite flat amplitude”.
 
 > An object of `D(R)` has finite Tor dimension if it has Tor amplitude in some finite
 > integer interval.
@@ -67,7 +67,7 @@ public def HasFiniteTorDimension {R : Type u} [CommRing R]
     (K : DerivedCategory (ModuleCat.{v} R)) : Prop
 ```
 
-**`StacksDraft.TorAmplitude.HasTorDimensionLE`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TorAmplitude/Defs.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/TorAmplitude/Defs.lean#L129). The attribute's comment: “(3)”. References: SGA 4 XVII (4.1.9), “module over a ring”; SGA 4½ Rapport (4.5), “module case”.
+**`StacksDraft.TorAmplitude.HasTorDimensionLE`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TorAmplitude/Defs.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/TorAmplitude/Defs.lean#L129). The attribute's comment: “(3)”. References: SGA 4 XVII (4.1.9), “module over a ring”; SGA 4½ Rapport (4.5), “module case”.
 
 > An `R`-module `M` has Tor dimension at most `d` if `M[0]` has Tor amplitude in
 > `[-d, 0]`.
@@ -92,7 +92,7 @@ public def HasTorDimensionLE {R : Type u} [CommRing R]
     (M : ModuleCat.{v} R) (d : ℤ) : Prop
 ```
 
-**`StacksDraft.TorAmplitude.ModuleHasFiniteTorDimension`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TorAmplitude/Defs.lean, line 152](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/TorAmplitude/Defs.lean#L152). The attribute's comment: “(4)”.
+**`StacksDraft.TorAmplitude.ModuleHasFiniteTorDimension`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TorAmplitude/Defs.lean, line 152](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/TorAmplitude/Defs.lean#L152). The attribute's comment: “(4)”.
 
 > An `R`-module `M` has finite Tor dimension if `M[0]` has finite Tor dimension as an
 > object of `D(R)`.
@@ -121,7 +121,7 @@ public def ModuleHasFiniteTorDimension {R : Type u} [CommRing R]
 
 [Tag 0653](https://stacks.math.columbia.edu/tag/0653) in the Stacks Project.
 
-**`StacksDraft.TorAmplitude.cokernel_flat_of_torAmplitude`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TorAmplitude/DerivedComparison.lean, line 497](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/TorAmplitude/DerivedComparison.lean#L497).
+**`StacksDraft.TorAmplitude.cokernel_flat_of_torAmplitude`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TorAmplitude/DerivedComparison.lean, line 496](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/TorAmplitude/DerivedComparison.lean#L496).
 
 > **Stacks Tag 0653.** Let `R` be a ring, `a b : ℤ`, and `K` a bounded above cochain complex of
 > flat `R`-modules which, as an object of `D(R)`, has Tor amplitude in `[a, b]` for some certified
@@ -152,7 +152,7 @@ public theorem cokernel_flat_of_torAmplitude
 
 [Tag 0654](https://stacks.math.columbia.edu/tag/0654) in the Stacks Project.
 
-**`StacksDraft.TorAmplitude.hasTorAmplitudeCanonical_iff_hasFlatRepresentative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TorAmplitude/CanonicalCertificate.lean, line 315](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/TorAmplitude/CanonicalCertificate.lean#L315). References: SGA 6 I (5.1), “affine case”; SGA 4 XVII (4.1.9), “over a ring, (i)<=>(iii)”.
+**`StacksDraft.TorAmplitude.hasTorAmplitudeCanonical_iff_hasFlatRepresentative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TorAmplitude/CanonicalCertificate.lean, line 315](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/TorAmplitude/CanonicalCertificate.lean#L315). References: SGA 6 I (5.1), “affine case”; SGA 4 XVII (4.1.9), “over a ring, (i)<=>(iii)”.
 
 > An object `K` of `D(R)` has Tor amplitude in `[a, b]` — at the canonical derived tensor
 > product of Stacks 0BYI — if and only if it is represented by a complex of flat
@@ -168,7 +168,7 @@ public theorem hasTorAmplitudeCanonical_iff_hasFlatRepresentative (R : Type u) [
 
 [Tag 0BYL](https://stacks.math.columbia.edu/tag/0BYL) in the Stacks Project.
 
-**`StacksDraft.TorAmplitude.hasTorAmplitudeAbove_iff_exists_kFlat_flat_representative_canonical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TorAmplitude/KFlatRepresentative.lean, line 265](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/TorAmplitude/KFlatRepresentative.lean#L265). References: SGA 4 XVII (4.1.9), “ring case, one-sided”.
+**`StacksDraft.TorAmplitude.hasTorAmplitudeAbove_iff_exists_kFlat_flat_representative_canonical`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TorAmplitude/KFlatRepresentative.lean, line 265](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/TorAmplitude/KFlatRepresentative.lean#L265). References: SGA 4 XVII (4.1.9), “ring case, one-sided”.
 
 > **Stacks 0BYL.** An object `K` of `D(R)` has Tor amplitude in `[a, ∞]` — that is, the derived
 > tensor product of `K` with any module `M` placed in cohomological degree zero has vanishing
@@ -201,7 +201,7 @@ public theorem hasTorAmplitudeAbove_iff_exists_kFlat_flat_representative_canonic
 
 [Tag 0655](https://stacks.math.columbia.edu/tag/0655) in the Stacks Project.
 
-**`StacksDraft.TorAmplitude.hasTorAmplitude_obj₃_of_obj₁_obj₂`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TorAmplitude/Triangle.lean, line 345](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/TorAmplitude/Triangle.lean#L345). The attribute's comment: “(1)”.
+**`StacksDraft.TorAmplitude.hasTorAmplitude_obj₃_of_obj₁_obj₂`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TorAmplitude/Triangle.lean, line 346](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/TorAmplitude/Triangle.lean#L346). The attribute's comment: “(1)”.
 
 > **Stacks 0655 (1).** Let `K → L → M → K[1]` be a distinguished triangle in `D(R)`. If `K`
 > has Tor amplitude in `[a + 1, b + 1]` and `L` has Tor amplitude in `[a, b]`, then `M` has Tor
@@ -223,7 +223,7 @@ theorem hasTorAmplitude_obj₃_of_obj₁_obj₂
     HasTorAmplitude derivedTensor comparison isLeftDerived T.obj₃ a b
 ```
 
-**`StacksDraft.TorAmplitude.hasTorAmplitude_obj₂_of_obj₁_obj₃`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TorAmplitude/Triangle.lean, line 374](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/TorAmplitude/Triangle.lean#L374). The attribute's comment: “(2)”.
+**`StacksDraft.TorAmplitude.hasTorAmplitude_obj₂_of_obj₁_obj₃`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TorAmplitude/Triangle.lean, line 375](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/TorAmplitude/Triangle.lean#L375). The attribute's comment: “(2)”.
 
 > **Stacks 0655 (2).** Let `K → L → M → K[1]` be a distinguished triangle in `D(R)`. If `K`
 > and `M` both have Tor amplitude in `[a, b]`, then `L` has Tor amplitude in `[a, b]`.
@@ -244,7 +244,7 @@ theorem hasTorAmplitude_obj₂_of_obj₁_obj₃
     HasTorAmplitude derivedTensor comparison isLeftDerived T.obj₂ a b
 ```
 
-**`StacksDraft.TorAmplitude.hasTorAmplitude_obj₁_of_obj₂_obj₃`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TorAmplitude/Triangle.lean, line 403](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/TorAmplitude/Triangle.lean#L403). The attribute's comment: “(3)”.
+**`StacksDraft.TorAmplitude.hasTorAmplitude_obj₁_of_obj₂_obj₃`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TorAmplitude/Triangle.lean, line 404](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/TorAmplitude/Triangle.lean#L404). The attribute's comment: “(3)”.
 
 > **Stacks 0655 (3).** Let `K → L → M → K[1]` be a distinguished triangle in `D(R)`. If `L`
 > has Tor amplitude in `[a + 1, b + 1]` and `M` has Tor amplitude in `[a, b]`, then `K` has Tor
@@ -270,7 +270,7 @@ theorem hasTorAmplitude_obj₁_of_obj₂_obj₃
 
 [Tag 066F](https://stacks.math.columbia.edu/tag/066F) in the Stacks Project.
 
-**`StacksDraft.TorAmplitude.hasTorDimensionLECanonical_iff_hasFlatRepresentative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TorAmplitude/CanonicalCertificate.lean, line 329](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/TorAmplitude/CanonicalCertificate.lean#L329). References: SGA 4 XVII (4.1.9), “module over a ring”; SGA 6 I (5.4), “commutative ring”; SGA 6 I (5.1), “module over a ring”.
+**`StacksDraft.TorAmplitude.hasTorDimensionLECanonical_iff_hasFlatRepresentative`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TorAmplitude/CanonicalCertificate.lean, line 329](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/TorAmplitude/CanonicalCertificate.lean#L329). References: SGA 4 XVII (4.1.9), “module over a ring”; SGA 6 I (5.4), “commutative ring”; SGA 6 I (5.1), “module over a ring”.
 
 > An `R`-module `M` has Tor dimension at most `d` — at the canonical derived
 > tensor product — if and only if it admits a flat resolution of length `d`, that is, a complex of
@@ -292,7 +292,7 @@ public theorem hasTorDimensionLECanonical_iff_hasFlatRepresentative (R : Type u)
 
 [Tag 066G](https://stacks.math.columbia.edu/tag/066G) in the Stacks Project.
 
-**`StacksDraft.TorAmplitude.hasTorAmplitude_of_biprod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TorAmplitude/Summand.lean, line 51](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/TorAmplitude/Summand.lean#L51).
+**`StacksDraft.TorAmplitude.hasTorAmplitude_of_biprod`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TorAmplitude/Summand.lean, line 51](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/TorAmplitude/Summand.lean#L51).
 
 > If `K ⊕ L` has Tor amplitude in `[a, b]`, then both `K` and `L` have Tor amplitude in
 > `[a, b]`.
@@ -323,7 +323,7 @@ public theorem hasTorAmplitude_of_biprod {R : Type u} [CommRing R]
 
 [Tag 066H](https://stacks.math.columbia.edu/tag/066H) in the Stacks Project.
 
-**`StacksDraft.TorAmplitude.hasTorAmplitude_and_finiteTorDimension_of_bounded_complex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TorAmplitude/Criteria.lean, line 166](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/TorAmplitude/Criteria.lean#L166).
+**`StacksDraft.TorAmplitude.hasTorAmplitude_and_finiteTorDimension_of_bounded_complex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TorAmplitude/Criteria.lean, line 166](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/TorAmplitude/Criteria.lean#L166).
 
 > **Stacks 066H.** A bounded complex whose term in degree `i` has Tor amplitude in
 > `[a - i, b - i]` has Tor amplitude in `[a, b]`. In particular, if every term of a bounded
@@ -348,7 +348,7 @@ theorem hasTorAmplitude_and_finiteTorDimension_of_bounded_complex
 
 [Tag 066I](https://stacks.math.columbia.edu/tag/066I) in the Stacks Project.
 
-**`StacksDraft.TorAmplitude.hasTorAmplitudeIn_of_cohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TorAmplitude/Criteria.lean, line 341](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/TorAmplitude/Criteria.lean#L341).
+**`StacksDraft.TorAmplitude.hasTorAmplitudeIn_of_cohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TorAmplitude/Criteria.lean, line 341](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/TorAmplitude/Criteria.lean#L341).
 
 > **Stacks 066I.** A bounded derived object has Tor amplitude in `[a, b]` if its degree-`i`
 > cohomology module has Tor amplitude in `[a - i, b - i]` for every `i`. In particular, if all
@@ -376,7 +376,7 @@ theorem hasTorAmplitudeIn_of_cohomology (R : Type) [CommRing R]
 
 [Tag 0B66](https://stacks.math.columbia.edu/tag/0B66) in the Stacks Project.
 
-**`StacksDraft.TorAmplitude.hasTorAmplitudeCanonical_derivedTensorProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TorAmplitude/CompositionCanonical.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/TorAmplitude/CompositionCanonical.lean#L70).
+**`StacksDraft.TorAmplitude.hasTorAmplitudeCanonical_derivedTensorProduct`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TorAmplitude/CompositionCanonical.lean, line 70](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/TorAmplitude/CompositionCanonical.lean#L70).
 
 > Let `A → B` be a map of commutative rings and let `K` and `L` be complexes of `B`-modules. If
 > `K` has Tor amplitude in `[a, b]` as a complex of `B`-modules and `L`, after restriction of
@@ -404,7 +404,7 @@ public theorem hasTorAmplitudeCanonical_derivedTensorProduct
 
 [Tag 066J](https://stacks.math.columbia.edu/tag/066J) in the Stacks Project.
 
-**`StacksDraft.TorAmplitude.hasTorAmplitudeIn_restrictScalars`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TorAmplitude/ChangeOfRings.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/TorAmplitude/ChangeOfRings.lean#L80).
+**`StacksDraft.TorAmplitude.hasTorAmplitudeIn_restrictScalars`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TorAmplitude/ChangeOfRings.lean, line 80](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/TorAmplitude/ChangeOfRings.lean#L80).
 
 > **Stacks 066J.** A complex of `B`-modules with Tor amplitude in `[a, b]` retains that
 > Tor-amplitude bound after restriction of scalars along a flat ring map `A → B`.
@@ -430,7 +430,7 @@ theorem hasTorAmplitudeIn_restrictScalars
 
 [Tag 066K](https://stacks.math.columbia.edu/tag/066K) in the Stacks Project.
 
-**`StacksDraft.TorAmplitude.hasTorAmplitudeCanonicalLift_restrictScalars_of_torDimensionLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TorAmplitude/CompositionCanonical.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/TorAmplitude/CompositionCanonical.lean#L149).
+**`StacksDraft.TorAmplitude.hasTorAmplitudeCanonicalLift_restrictScalars_of_torDimensionLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TorAmplitude/CompositionCanonical.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/TorAmplitude/CompositionCanonical.lean#L149).
 
 > Let `f : A → B` be a map of commutative rings and let `K` be a complex of `B`-modules; the
 > two rings and the carriers of `K` live in three independent universes. If `B` has Tor dimension
@@ -459,7 +459,7 @@ public theorem hasTorAmplitudeCanonicalLift_restrictScalars_of_torDimensionLE
 
 [Tag 066L](https://stacks.math.columbia.edu/tag/066L) in the Stacks Project.
 
-**`StacksDraft.TorAmplitude.hasTorAmplitude_derivedExtendScalars`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TorAmplitude/BaseChange.lean, line 370](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/TorAmplitude/BaseChange.lean#L370).
+**`StacksDraft.TorAmplitude.hasTorAmplitude_derivedExtendScalars`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TorAmplitude/BaseChange.lean, line 370](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/TorAmplitude/BaseChange.lean#L370).
 
 > **Stacks 066L.** Let `A → B` be a map of commutative rings and let `K` be an object of
 > `D(A)` with Tor amplitude in `[a, b]`. Then `K ⊗_A^L B` has Tor amplitude in `[a, b]` as an
@@ -510,7 +510,7 @@ public theorem hasTorAmplitude_derivedExtendScalars {A B : Type u} [CommRing A] 
 
 [Tag 066M](https://stacks.math.columbia.edu/tag/066M) in the Stacks Project.
 
-**`StacksDraft.TorAmplitude.hasTorDimensionLECanonical_extendScalars_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TorAmplitude/CanonicalCertificate.lean, line 345](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/TorAmplitude/CanonicalCertificate.lean#L345).
+**`StacksDraft.TorAmplitude.hasTorDimensionLECanonical_extendScalars_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TorAmplitude/CanonicalCertificate.lean, line 345](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/TorAmplitude/CanonicalCertificate.lean#L345).
 
 > Let `f : A →+* B` be a flat homomorphism of commutative rings.  If the
 > `A`-module `M` has Tor dimension at most `d`, then the `B`-module `B ⊗_A M` has Tor dimension at
@@ -528,7 +528,7 @@ public theorem hasTorDimensionLECanonical_extendScalars_of_flat {A B : Type u} [
 
 [Tag 0B67](https://stacks.math.columbia.edu/tag/0B67) in the Stacks Project.
 
-**`StacksDraft.TorAmplitude.hasTorAmplitude_iff_localized_at_primes_iff_maximals`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TorAmplitude/Local.lean, line 636](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/TorAmplitude/Local.lean#L636).
+**`StacksDraft.TorAmplitude.hasTorAmplitude_iff_localized_at_primes_iff_maximals`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TorAmplitude/Local.lean, line 636](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/TorAmplitude/Local.lean#L636).
 
 > A complex of `B`-modules has Tor amplitude in `[a, b]` over `A` if and only if its localisation
 > at every prime ideal `q` of `B` has Tor amplitude in `[a, b]` over `A_{q ∩ A}`; equivalently, it is
@@ -551,7 +551,7 @@ theorem hasTorAmplitude_iff_localized_at_primes_iff_maximals
 
 [Tag 066N](https://stacks.math.columbia.edu/tag/066N) in the Stacks Project.
 
-**`StacksDraft.TorAmplitude.hasTorAmplitude_of_localizationSpan`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TorAmplitude/Local.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/TorAmplitude/Local.lean#L147).
+**`StacksDraft.TorAmplitude.hasTorAmplitude_of_localizationSpan`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TorAmplitude/Local.lean, line 147](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/TorAmplitude/Local.lean#L147).
 
 > If a complex has Tor amplitude in `[a, b]` after localization at every member of a set
 > generating the unit ideal, then it has Tor amplitude in `[a, b]`.
@@ -570,7 +570,7 @@ theorem hasTorAmplitude_of_localizationSpan
 
 [Tag 068S](https://stacks.math.columbia.edu/tag/068S) in the Stacks Project.
 
-**`StacksDraft.TorAmplitude.hasTorAmplitudeCanonical_of_faithfullyFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TorAmplitude/CanonicalCertificate.lean, line 358](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/TorAmplitude/CanonicalCertificate.lean#L358).
+**`StacksDraft.TorAmplitude.hasTorAmplitudeCanonical_of_faithfullyFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TorAmplitude/CanonicalCertificate.lean, line 358](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/TorAmplitude/CanonicalCertificate.lean#L358).
 
 > Tor amplitude descends along a faithfully flat ring map `f : R →+* S`: if the base change of
 > `K` along `f` has Tor amplitude in `[a, b]`, then so does `K`. Both sides are read at the
@@ -592,7 +592,7 @@ public theorem hasTorAmplitudeCanonical_of_faithfullyFlat
 
 [Tag 0DJF](https://stacks.math.columbia.edu/tag/0DJF) in the Stacks Project.
 
-**`StacksDraft.TorAmplitude.FaithfullyFlat.hasTorAmplitudeIn_iff_extendScalars`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TorAmplitude/FaithfullyFlat.lean, line 1134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/TorAmplitude/FaithfullyFlat.lean#L1134).
+**`StacksDraft.TorAmplitude.FaithfullyFlat.hasTorAmplitudeIn_iff_extendScalars`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TorAmplitude/FaithfullyFlat.lean, line 1133](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/TorAmplitude/FaithfullyFlat.lean#L1133).
 
 > Let `R → A → B` be ring maps with `A → B` faithfully flat, and let `K ∈ D(A)`. Then, viewing
 > both `K` and `K ⊗_A^L B` as objects of `D(R)` via restriction of scalars, `K` has tor-amplitude in
@@ -613,7 +613,7 @@ theorem hasTorAmplitudeIn_iff_extendScalars
 
 [Tag 066P](https://stacks.math.columbia.edu/tag/066P) in the Stacks Project.
 
-**`StacksDraft.TorAmplitude.torAmplitude_and_finiteTorDimension_of_globalDimension_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TorAmplitude/GlobalDimension.lean, line 331](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/TorAmplitude/GlobalDimension.lean#L331). References: SGA 6 I (5.9), “special case”; SGA 6 III (3.2), “special case”.
+**`StacksDraft.TorAmplitude.torAmplitude_and_finiteTorDimension_of_globalDimension_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TorAmplitude/GlobalDimension.lean, line 331](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/TorAmplitude/GlobalDimension.lean#L331). References: SGA 6 I (5.9), “special case”; SGA 6 III (3.2), “special case”.
 
 > **Stacks 066P.** Let `R` be a ring of global dimension at most `d`. Then
 >
@@ -642,7 +642,7 @@ public theorem torAmplitude_and_finiteTorDimension_of_globalDimension_le
 
 [Tag 0H75](https://stacks.math.columbia.edu/tag/0H75) in the Stacks Project.
 
-**`StacksDraft.TorAmplitude.hasTorAmplitudeIn_derivedExtensionScalars_certified_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TorAmplitude/NilpotentCertified.lean, line 418](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/TorAmplitude/NilpotentCertified.lean#L418).
+**`StacksDraft.TorAmplitude.hasTorAmplitudeIn_derivedExtensionScalars_certified_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/TorAmplitude/NilpotentCertified.lean, line 418](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/TorAmplitude/NilpotentCertified.lean#L418).
 
 > **Stacks 0H75.** Let `f : R' → R` be a surjective map of commutative rings whose kernel is a
 > nilpotent ideal, and let `L` be the derived base change along `f`. For every object `K` of `D(R')`
@@ -690,4 +690,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.68, Tag 0651](https://stacks.math.columbia.edu/tag/0651)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

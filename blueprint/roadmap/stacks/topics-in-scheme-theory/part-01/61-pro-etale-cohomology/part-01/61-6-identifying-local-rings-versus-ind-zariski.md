@@ -8,13 +8,13 @@ proof: formalized
 
 # 61.6 Identifying local rings versus ind-Zariski
 
-Section 61.6 of the Stacks Project, [Tag 097B](https://stacks.math.columbia.edu/tag/097B). 8 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 61.6 of the Stacks Project, [Tag 097B](https://stacks.math.columbia.edu/tag/097B). 8 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 097C, a lemma
 
 [Tag 097C](https://stacks.math.columbia.edu/tag/097C) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.exists_surjective_indZariski_range_comap_eq_preimage_components`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/IndZariski/ComponentRestriction.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/IndZariski/ComponentRestriction.lean#L216).
+**`AlgebraicGeometry.ProEtale.exists_surjective_indZariski_range_comap_eq_preimage_components`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/IndZariski/ComponentRestriction.lean, line 216](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/IndZariski/ComponentRestriction.lean#L216).
 
 > **Stacks Project, Tag 097C.** A closed union of connected components of an affine spectrum
 > is the spectrum of a surjective ind-Zariski algebra, homeomorphic to that union via
@@ -36,7 +36,7 @@ theorem exists_surjective_indZariski_range_comap_eq_preimage_components
 
 [Tag 097D](https://stacks.math.columbia.edu/tag/097D) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.exists_indZariski_of_profinite_component_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/IndZariski/ProfiniteComponentRealization.lean, line 1758](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/IndZariski/ProfiniteComponentRealization.lean#L1758).
+**`AlgebraicGeometry.ProEtale.exists_indZariski_of_profinite_component_map`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/IndZariski/ProfiniteComponentRealization.lean, line 1758](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/IndZariski/ProfiniteComponentRealization.lean#L1758).
 
 > **Stacks Project, Tag 097D.** A profinite space over the connected components of an affine
 > spectrum is realized by the spectrum of an ind-Zariski algebra, with its canonical component
@@ -72,7 +72,7 @@ theorem exists_indZariski_of_profinite_component_map
 
 [Tag 09BJ](https://stacks.math.columbia.edu/tag/09BJ) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.isIndZariski_locallyConstant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/IndZariski/LocallyConstantFunctions.lean, line 336](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/IndZariski/LocallyConstantFunctions.lean#L336). The attribute's comment: “ind-Zariski algebra”.
+**`AlgebraicGeometry.ProEtale.isIndZariski_locallyConstant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/IndZariski/LocallyConstantFunctions.lean, line 336](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/IndZariski/LocallyConstantFunctions.lean#L336). The attribute's comment: “ind-Zariski algebra”.
 
 > **Stacks Project, Tag 09BJ.** Locally constant functions on a profinite space form an
 > ind-Zariski algebra over a field.
@@ -84,7 +84,7 @@ theorem isIndZariski_locallyConstant
     IsIndZariski.{u, max u v, max u v} k (LocallyConstant T k)
 ```
 
-**`AlgebraicGeometry.ProEtale.primeSpectrum_locallyConstant_homeomorph`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/IndZariski/LocallyConstantFunctions.lean, line 440](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/IndZariski/LocallyConstantFunctions.lean#L440). The attribute's comment: “spectrum”.
+**`AlgebraicGeometry.ProEtale.primeSpectrum_locallyConstant_homeomorph`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/IndZariski/LocallyConstantFunctions.lean, line 440](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/IndZariski/LocallyConstantFunctions.lean#L440). The attribute's comment: “spectrum”.
 
 > **Stacks Project, Tag 09BJ.** The spectrum of the ring of locally constant functions on a
 > profinite space is homeomorphic to that space.
@@ -96,7 +96,7 @@ theorem primeSpectrum_locallyConstant_homeomorph
     Nonempty (PrimeSpectrum (LocallyConstant T k) ≃ₜ T)
 ```
 
-**`AlgebraicGeometry.ProEtale.isColimit_functionRingCocone`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/IndZariski/LocallyConstantFunctions.lean, line 510](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/IndZariski/LocallyConstantFunctions.lean#L510). The attribute's comment: “filtered colimit of finite-stage function rings”.
+**`AlgebraicGeometry.ProEtale.isColimit_functionRingCocone`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/IndZariski/LocallyConstantFunctions.lean, line 510](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/IndZariski/LocallyConstantFunctions.lean#L510). The attribute's comment: “filtered colimit of finite-stage function rings”.
 
 > **Stacks Project, Tag 09BJ.** For any presentation of a space as a limit of finite discrete
 > spaces, its ring of locally constant functions is the colimit of the finite-stage function
@@ -115,7 +115,7 @@ theorem isColimit_functionRingCocone
 
 [Tag 097E](https://stacks.math.columbia.edu/tag/097E) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.bijective_of_wLocalMap_identifiesLocalRings`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/IdentifiesLocalRingsIso.lean, line 265](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/IdentifiesLocalRingsIso.lean#L265).
+**`AlgebraicGeometry.ProEtale.bijective_of_wLocalMap_identifiesLocalRings`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/IdentifiesLocalRingsIso.lean, line 265](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/IdentifiesLocalRingsIso.lean#L265).
 
 > A ring map whose map of spectra is a w-local map of w-local spaces, which identifies all
 > local rings and bijects connected components, is bijective.
@@ -136,7 +136,7 @@ theorem bijective_of_wLocalMap_identifiesLocalRings
 
 [Tag 097F](https://stacks.math.columbia.edu/tag/097F) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.isIndZariski_of_wLocalMap_identifiesLocalRings`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/IdentifiesLocalRingsIndZariski.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/IdentifiesLocalRingsIndZariski.lean#L125).
+**`AlgebraicGeometry.ProEtale.isIndZariski_of_wLocalMap_identifiesLocalRings`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/IdentifiesLocalRingsIndZariski.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/IdentifiesLocalRingsIndZariski.lean#L125).
 
 > A w-local morphism between w-local affine spectra that identifies local rings
 > is ind-Zariski.
@@ -155,7 +155,7 @@ theorem isIndZariski_of_wLocalMap_identifiesLocalRings
 
 [Tag 097G](https://stacks.math.columbia.edu/tag/097G) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.exists_faithfullyFlat_indZariski_extension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/IndZariski/FaithfullyFlatExtension.lean, line 48](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/IndZariski/FaithfullyFlatExtension.lean#L48).
+**`AlgebraicGeometry.ProEtale.exists_faithfullyFlat_indZariski_extension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/IndZariski/FaithfullyFlatExtension.lean, line 48](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/IndZariski/FaithfullyFlatExtension.lean#L48).
 
 > A map identifying local rings becomes ind-Zariski after a faithfully flat
 > ind-Zariski extension of its target.
@@ -175,7 +175,7 @@ theorem exists_faithfullyFlat_indZariski_extension
 
 [Tag 09AZ](https://stacks.math.columbia.edu/tag/09AZ) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.wLocal_extremallyDisconnected_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/RetractionCharacterization.lean, line 293](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/RetractionCharacterization.lean#L293).
+**`AlgebraicGeometry.ProEtale.wLocal_extremallyDisconnected_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/RetractionCharacterization.lean, line 293](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/RetractionCharacterization.lean#L293).
 
 > For a commutative ring `A` the following are equivalent: every faithfully
 > flat `A`-algebra identifying local rings admits a retraction; every faithfully flat ind-Zariski
@@ -198,7 +198,7 @@ theorem wLocal_extremallyDisconnected_tfae (A : Type u) [CommRing A] :
 
 [Tag 09B0](https://stacks.math.columbia.edu/tag/09B0) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.exists_faithfullyFlat_indZariski_wLocal_extremallyDisconnected`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/WLocalIndZariskiCover.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/WLocalIndZariskiCover.lean#L65).
+**`AlgebraicGeometry.ProEtale.exists_faithfullyFlat_indZariski_wLocal_extremallyDisconnected`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/WLocalIndZariskiCover.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/WLocal/WLocalIndZariskiCover.lean#L65).
 
 > **Stacks 09B0.** Every ring has a faithfully flat ind-Zariski extension whose spectrum is
 > w-local and whose space of connected components is extremally disconnected.
@@ -219,4 +219,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 61.6, Tag 097B](https://stacks.math.columbia.edu/tag/097B)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

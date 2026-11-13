@@ -8,13 +8,13 @@ proof: formalized
 
 # 53.20 Families of nodal curves
 
-Section 53.20 of the Stacks Project, [Tag 0C58](https://stacks.math.columbia.edu/tag/0C58). 12 tags here are carried by 17 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 53.20 of the Stacks Project, [Tag 0C58](https://stacks.math.columbia.edu/tag/0C58). 12 tags here are carried by 17 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0C59, a lemma
 
 [Tag 0C59](https://stacks.math.columbia.edu/tag/0C59) in the Stacks Project.
 
-**`Stacks.Curves.hasAtWorstNodalFibresOfDimensionOne_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/NodalFamilyCriterion.lean, line 348](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/NodalFamilyCriterion.lean#L348). The attribute's comment: “condition (1) is `Stacks.Curves.HasAtWorstNodalFibresOfDimensionOne` and condition (2) is `AlgebraicGeometry.IsAtWorstNodalOfRelativeDimensionOne`”.
+**`Stacks.Curves.hasAtWorstNodalFibresOfDimensionOne_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/NodalFamilyCriterion.lean, line 348](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/NodalFamilyCriterion.lean#L348). The attribute's comment: “condition (1) is `Stacks.Curves.HasAtWorstNodalFibresOfDimensionOne` and condition (2) is `AlgebraicGeometry.IsAtWorstNodalOfRelativeDimensionOne`”.
 
 > **Stacks Project, Tag 0C59.**  A morphism of schemes is flat, locally of finite presentation
 > with every nonempty fibre equidimensional of dimension one and with at-worst-nodal singularities
@@ -39,7 +39,7 @@ theorem hasAtWorstNodalFibresOfDimensionOne_iff {X S : Scheme.{u}} (f : X ⟶ S)
 
 [Tag 0C5A](https://stacks.math.columbia.edu/tag/0C5A) in the Stacks Project.
 
-**`AlgebraicGeometry.IsAtWorstNodalOfRelativeDimensionOne`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/F6Rank136/AtWorstNodalRelativeDimensionOne.lean, line 48](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/F6Rank136/AtWorstNodalRelativeDimensionOne.lean#L48).
+**`AlgebraicGeometry.IsAtWorstNodalOfRelativeDimensionOne`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/F6Rank136/AtWorstNodalRelativeDimensionOne.lean, line 48](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/F6Rank136/AtWorstNodalRelativeDimensionOne.lean#L48).
 
 > A morphism is at-worst-nodal of relative dimension one if it is syntomic of relative
 > dimension one and its relative singular subscheme is unramified over the base.
@@ -52,7 +52,7 @@ public abbrev IsAtWorstNodalOfRelativeDimensionOne {X S : Scheme.{u}} (f : X ⟶
 
 [Tag 0CD7](https://stacks.math.columbia.edu/tag/0CD7) in the Stacks Project.
 
-**`AlgebraicGeometry.isAtWorstNodalOfRelativeDimensionOne_of_smoothOfRelativeDimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/F6Rank136/SmoothIsNodal.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/F6Rank136/SmoothIsNodal.lean#L108).
+**`AlgebraicGeometry.isAtWorstNodalOfRelativeDimensionOne_of_smoothOfRelativeDimension`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/F6Rank136/SmoothIsNodal.lean, line 108](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/F6Rank136/SmoothIsNodal.lean#L108).
 
 > **Stacks Project, Tag 0CD7.** A morphism of schemes smooth of relative dimension one is
 > at-worst-nodal of relative dimension one: it is syntomic with one-dimensional fibres, and its
@@ -68,7 +68,7 @@ public theorem isAtWorstNodalOfRelativeDimensionOne_of_smoothOfRelativeDimension
 
 [Tag 0C5B](https://stacks.math.columbia.edu/tag/0C5B) in the Stacks Project.
 
-**`AlgebraicGeometry.IsAtWorstNodalOfRelativeDimensionOne.of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/NodalFamilyBaseChange.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/NodalFamilyBaseChange.lean#L74).
+**`AlgebraicGeometry.IsAtWorstNodalOfRelativeDimensionOne.of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/NodalFamilyBaseChange.lean, line 74](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/NodalFamilyBaseChange.lean#L74).
 
 > Let `f : X ⟶ S` be at-worst-nodal of relative dimension one. Then so is any base change
 > `f' : X' ⟶ S'` of `f`, presented by an arbitrary cartesian square.
@@ -80,7 +80,7 @@ public theorem IsAtWorstNodalOfRelativeDimensionOne.of_isPullback {X' X S' S : S
     IsAtWorstNodalOfRelativeDimensionOne f'
 ```
 
-**`AlgebraicGeometry.isAtWorstNodalOfRelativeDimensionOne_isStableUnderBaseChange`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/NodalLocality.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/NodalLocality.lean#L101).
+**`AlgebraicGeometry.isAtWorstNodalOfRelativeDimensionOne_isStableUnderBaseChange`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/NodalLocality.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/NodalLocality.lean#L101).
 
 > **Stacks 0C5B.** A base change of a morphism which is at-worst-nodal of relative dimension
 > one is again at-worst-nodal of relative dimension one.
@@ -95,7 +95,7 @@ public instance isAtWorstNodalOfRelativeDimensionOne_isStableUnderBaseChange :
 
 [Tag 0DSC](https://stacks.math.columbia.edu/tag/0DSC) in the Stacks Project.
 
-**`AlgebraicGeometry.nodalLocus_isGreatest`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/NodalLocus.lean, line 433](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/NodalLocus.lean#L433). The attribute's comment: “the maximal open subscheme”.
+**`AlgebraicGeometry.nodalLocus_isGreatest`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/NodalLocus.lean, line 433](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/NodalLocus.lean#L433). The attribute's comment: “the maximal open subscheme”.
 
 > **Stacks Project, Tag 0DSC.** For a morphism of schemes which is flat and locally of finite
 > presentation there is a maximal open subscheme of its source on which it is at-worst-nodal of
@@ -109,7 +109,7 @@ theorem nodalLocus_isGreatest {X S : Scheme.{u}} (f : X ⟶ S) [Flat f]
     IsGreatest {U : X.Opens | IsAtWorstNodalOfRelativeDimensionOne (U.ι ≫ f)} (nodalLocus f)
 ```
 
-**`AlgebraicGeometry.nodalLocus_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/NodalLocus.lean, line 443](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/NodalLocus.lean#L443). The attribute's comment: “compatibility with base change”.
+**`AlgebraicGeometry.nodalLocus_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/NodalLocus.lean, line 443](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/NodalLocus.lean#L443). The attribute's comment: “compatibility with base change”.
 
 > **Stacks Project, Tag 0DSC.** Formation of the maximal at-worst-nodal open subscheme
 > commutes with arbitrary base change: in a cartesian square with right edge a flat morphism `f`
@@ -126,7 +126,7 @@ theorem nodalLocus_baseChange {X' X S' S : Scheme.{u}} (g' : X' ⟶ X) (f' : X' 
 
 [Tag 0C5C](https://stacks.math.columbia.edu/tag/0C5C) in the Stacks Project.
 
-**`AlgebraicGeometry.isAtWorstNodalOfRelativeDimensionOne_comp_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/NodalEtaleComposition.lean, line 152](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/NodalEtaleComposition.lean#L152).
+**`AlgebraicGeometry.isAtWorstNodalOfRelativeDimensionOne_comp_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/NodalEtaleComposition.lean, line 152](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/NodalEtaleComposition.lean#L152).
 
 > **Stacks Project, Tag 0C5C.** Precomposing an at-worst-nodal morphism of relative
 > dimension one with an étale morphism again gives an at-worst-nodal morphism of relative
@@ -142,7 +142,7 @@ public theorem isAtWorstNodalOfRelativeDimensionOne_comp_etale {X Y S : Scheme.{
 
 [Tag 0CD8](https://stacks.math.columbia.edu/tag/0CD8) in the Stacks Project.
 
-**`AlgebraicGeometry.isAtWorstNodalOfRelativeDimensionOne_comp_etale_base`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/NodalLocality.lean, line 193](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/NodalLocality.lean#L193).
+**`AlgebraicGeometry.isAtWorstNodalOfRelativeDimensionOne_comp_etale_base`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/NodalLocality.lean, line 193](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/NodalLocality.lean#L193).
 
 > **Stacks 0CD8.** Composing a morphism which is at-worst-nodal of relative dimension one
 > with an étale morphism of the base again gives a morphism which is at-worst-nodal of relative
@@ -158,7 +158,7 @@ public theorem isAtWorstNodalOfRelativeDimensionOne_comp_etale_base {X S' S : Sc
 
 [Tag 0C5D](https://stacks.math.columbia.edu/tag/0C5D) in the Stacks Project.
 
-**`AlgebraicGeometry.isAtWorstNodalOfRelativeDimensionOne_iff_of_etaleCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/NodalEtaleLocalOnSource.lean, line 188](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/NodalEtaleLocalOnSource.lean#L188).
+**`AlgebraicGeometry.isAtWorstNodalOfRelativeDimensionOne_iff_of_etaleCovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/NodalEtaleLocalOnSource.lean, line 188](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/NodalEtaleLocalOnSource.lean#L188).
 
 > **Stacks Project, Tag 0C5D.** Let `f : X ⟶ S` be a morphism of schemes and let
 > `{U i ⟶ X}` be an étale covering. The following are equivalent:
@@ -176,7 +176,7 @@ public theorem isAtWorstNodalOfRelativeDimensionOne_iff_of_etaleCovering {X S : 
       ∀ i, IsAtWorstNodalOfRelativeDimensionOne (g i ≫ f)
 ```
 
-**`AlgebraicGeometry.isAtWorstNodalOfRelativeDimensionOne_isLocalAtSource_etale`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/NodalLocality.lean, line 287](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/NodalLocality.lean#L287).
+**`AlgebraicGeometry.isAtWorstNodalOfRelativeDimensionOne_isLocalAtSource_etale`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/NodalLocality.lean, line 287](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/NodalLocality.lean#L287).
 
 > **Stacks 0C5D.** Being at-worst-nodal of relative dimension one is étale local on the
 > source: a morphism has the property exactly when all of its restrictions to the members of an
@@ -193,7 +193,7 @@ public instance isAtWorstNodalOfRelativeDimensionOne_isLocalAtSource_etale :
 
 [Tag 0C5E](https://stacks.math.columbia.edu/tag/0C5E) in the Stacks Project.
 
-**`AlgebraicGeometry.isAtWorstNodalOfRelativeDimensionOne_isLocalAtTarget_fpqc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/NodalLocality.lean, line 118](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/NodalLocality.lean#L118).
+**`AlgebraicGeometry.isAtWorstNodalOfRelativeDimensionOne_isLocalAtTarget_fpqc`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/NodalLocality.lean, line 118](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/NodalLocality.lean#L118).
 
 > **Stacks 0C5E.** Being at-worst-nodal of relative dimension one is fpqc local on the
 > target: a morphism has the property exactly when all of its base changes along the members of
@@ -210,7 +210,7 @@ public instance isAtWorstNodalOfRelativeDimensionOne_isLocalAtTarget_fpqc :
 
 [Tag 0C5F](https://stacks.math.columbia.edu/tag/0C5F) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isAtWorstNodalOfRelativeDimensionOne_baseChange_of_limitBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/F6Rank136/AtWorstNodalDescentAlongLimit.lean, line 291](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/F6Rank136/AtWorstNodalDescentAlongLimit.lean#L291).
+**`AlgebraicGeometry.exists_isAtWorstNodalOfRelativeDimensionOne_baseChange_of_limitBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/F6Rank136/AtWorstNodalDescentAlongLimit.lean, line 291](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/F6Rank136/AtWorstNodalDescentAlongLimit.lean#L291).
 
 > **Stacks Project, Tag 0C5F.** Let a scheme be the limit of a cofiltered inverse system of
 > schemes with affine transition morphisms, and let `f₀ : X₀ ⟶ Y₀` be a morphism locally of finite
@@ -237,7 +237,7 @@ public theorem exists_isAtWorstNodalOfRelativeDimensionOne_baseChange_of_limitBa
 
 [Tag 0CBX](https://stacks.math.columbia.edu/tag/0CBX) in the Stacks Project.
 
-**`Stacks.Curves.exists_algEquiv_adicCompletion_quotient_mvPowerSeries_of_isSplitNode`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/NodalFamilyCompletedLocalRing.lean, line 2062](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/NodalFamilyCompletedLocalRing.lean#L2062).
+**`Stacks.Curves.exists_algEquiv_adicCompletion_quotient_mvPowerSeries_of_isSplitNode`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/NodalFamilyCompletedLocalRing.lean, line 2062](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/NodalFamilyCompletedLocalRing.lean#L2062).
 
 > The completion at a split node of a flat, locally finite-type family over a Noetherian
 > local base is a nodal smoothing `A⟦x,y⟧/(xy-h)` over the completed base ring `A`.
@@ -267,7 +267,7 @@ theorem exists_algEquiv_adicCompletion_quotient_mvPowerSeries_of_isSplitNode
 
 [Tag 0GKA](https://stacks.math.columbia.edu/tag/0GKA) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.NodalFamilyCohomology.isIso_c_and_isIso_c_of_isPullback_of_isAtWorstNodal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/NodalFamilyStructureSheafCohomology.lean, line 266](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/NodalFamilyStructureSheafCohomology.lean#L266). The attribute's comment: “(a): `f_*𝒪_X = 𝒪_S`, as invertibility of `f.c`, and the same for every base change, stated for every cartesian square over `S`”.
+**`Stacks.AlgebraicGeometry.NodalFamilyCohomology.isIso_c_and_isIso_c_of_isPullback_of_isAtWorstNodal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/NodalFamilyStructureSheafCohomology.lean, line 266](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/NodalFamilyStructureSheafCohomology.lean#L266). The attribute's comment: “(a): `f_*𝒪_X = 𝒪_S`, as invertibility of `f.c`, and the same for every base change, stated for every cartesian square over `S`”.
 
 > **[Stacks, Tag 0GKA], part (a).** Let `f : X ⟶ S` be proper and at-worst-nodal of relative
 > dimension one, with geometrically connected fibres. Then `f_*𝒪_X = 𝒪_S`, i.e. the comparison
@@ -284,7 +284,7 @@ theorem isIso_c_and_isIso_c_of_isPullback_of_isAtWorstNodal (f : X ⟶ S) [IsPro
       IsPullback g' f' f g → IsIso f'.c
 ```
 
-**`Stacks.AlgebraicGeometry.NodalFamilyCohomology.isFiniteLocallyFree_rightDerived_one_and_isIso_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/NodalFamilyStructureSheafCohomology.lean, line 319](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/NodalFamilyStructureSheafCohomology.lean#L319). The attribute's comment: “(b): `R¹f_*𝒪_X` is finite locally free, and its formation commutes with any base change, read over every quasi-compact quasi-separated open of the base, where the base-change map of Tag 0EX3 is defined”.
+**`Stacks.AlgebraicGeometry.NodalFamilyCohomology.isFiniteLocallyFree_rightDerived_one_and_isIso_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/NodalFamilyStructureSheafCohomology.lean, line 319](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/NodalFamilyStructureSheafCohomology.lean#L319). The attribute's comment: “(b): `R¹f_*𝒪_X` is finite locally free, and its formation commutes with any base change, read over every quasi-compact quasi-separated open of the base, where the base-change map of Tag 0EX3 is defined”.
 
 > **[Stacks, Tag 0GKA], part (b).** Let `f : X ⟶ S` be proper and at-worst-nodal of relative
 > dimension one, with geometrically connected fibres. Then `R¹f_*𝒪_X` is a finite locally free
@@ -315,7 +315,7 @@ theorem isFiniteLocallyFree_rightDerived_one_and_isIso_baseChange (f : X ⟶ S) 
             (S := topDegreeSituation f hf V) h' f'' h sq))
 ```
 
-**`Stacks.AlgebraicGeometry.NodalFamilyCohomology.isZero_rightDerived_of_two_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/NodalFamilyStructureSheafCohomology.lean, line 342](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/NodalFamilyStructureSheafCohomology.lean#L342). The attribute's comment: “(c): `Rᵠf_*𝒪_X = 0` for `q ≥ 2`”.
+**`Stacks.AlgebraicGeometry.NodalFamilyCohomology.isZero_rightDerived_of_two_le`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/NodalFamilyStructureSheafCohomology.lean, line 342](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/NodalFamilyStructureSheafCohomology.lean#L342). The attribute's comment: “(c): `Rᵠf_*𝒪_X = 0` for `q ≥ 2`”.
 
 > **[Stacks, Tag 0GKA], part (c).** Let `f : X ⟶ S` be proper and at-worst-nodal of relative
 > dimension one, with geometrically connected fibres. Then `Rᵠf_*𝒪_X = 0` for every `q ≥ 2`.
@@ -336,4 +336,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 53.20, Tag 0C58](https://stacks.math.columbia.edu/tag/0C58)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

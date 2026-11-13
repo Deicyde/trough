@@ -8,13 +8,13 @@ proof: formalized
 
 # 101.14 Universally injective morphisms
 
-Section 101.14 of the Stacks Project, [Tag 0CI0](https://stacks.math.columbia.edu/tag/0CI0). 8 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 101.14 of the Stacks Project, [Tag 0CI0](https://stacks.math.columbia.edu/tag/0CI0). 8 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0CI1, a lemma
 
 [Tag 0CI1](https://stacks.math.columbia.edu/tag/0CI1) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.representable_universallyInjective_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversallyInjectiveCriterion.lean, line 62](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/UniversallyInjectiveCriterion.lean#L62).
+**`AlgebraicGeometry.Stack.representable_universallyInjective_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversallyInjectiveCriterion.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/UniversallyInjectiveCriterion.lean#L62).
 
 > **Stacks 0CI1.** A 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks over `S` representable by
 > algebraic spaces is universally injective in the relative sense of Tag 04XB — every algebraic
@@ -44,7 +44,7 @@ theorem representable_universallyInjective_iff
 
 [Tag 0CI2](https://stacks.math.columbia.edu/tag/0CI2) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.UniversallyInjective`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversallyInjective.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/UniversallyInjective.lean#L58).
+**`AlgebraicGeometry.Stack.UniversallyInjective`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversallyInjective.lean, line 58](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/UniversallyInjective.lean#L58).
 
 > **Stacks 0CI2.** A 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks over `S` is *universally
 > injective* if for every 1-morphism `g : 𝒵 ⟶ 𝒴` of algebraic stacks over `S` and every 2-fibre
@@ -58,7 +58,7 @@ abbrev UniversallyInjective {𝒳 𝒴 : AlgebraicStacks.{u, w} B S hS} (f : �
 
 [Tag 0CI3](https://stacks.math.columbia.edu/tag/0CI3) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.universallyInjective_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversallyInjectiveBaseChange.lean, line 49](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/UniversallyInjectiveBaseChange.lean#L49). References: EGA IV (11.9.14), “base change stability”.
+**`AlgebraicGeometry.Stack.universallyInjective_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversallyInjectiveBaseChange.lean, line 49](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/UniversallyInjectiveBaseChange.lean#L49). References: EGA IV (11.9.14), “base change stability”.
 
 > **Stacks 0CI3.** The base change of a universally injective 1-morphism `f : 𝒳 ⟶ 𝒴` of
 > algebraic stacks over `S` along any `g : 𝒵 ⟶ 𝒴` is universally injective: in a 2-fibre-product
@@ -75,7 +75,7 @@ theorem universallyInjective_baseChange {𝒳 𝒴 𝒵 : AlgebraicStacks.{u, w}
 
 [Tag 0CI4](https://stacks.math.columbia.edu/tag/0CI4) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.universallyInjective_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversallyInjectiveComp.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/UniversallyInjectiveComp.lean#L106).
+**`AlgebraicGeometry.Stack.universallyInjective_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversallyInjectiveComp.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/UniversallyInjectiveComp.lean#L106).
 
 > **Stacks 0CI4.** The composite of a pair of universally injective 1-morphisms of algebraic
 > stacks over `S` is universally injective.
@@ -91,7 +91,7 @@ theorem universallyInjective_comp {𝒳 𝒴 𝒵 : AlgebraicStacks.{u, w} B S h
 
 [Tag 0CPN](https://stacks.math.columbia.edu/tag/0CPN) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.universallyInjective_iff_isSurjective_relativeDiagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversallyInjectiveDiagonal.lean, line 221](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/UniversallyInjectiveDiagonal.lean#L221). The attribute's comment: “parts (1) and (2)”.
+**`AlgebraicGeometry.Stack.universallyInjective_iff_isSurjective_relativeDiagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversallyInjectiveDiagonal.lean, line 221](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/UniversallyInjectiveDiagonal.lean#L221). The attribute's comment: “parts (1) and (2)”.
 
 > **Stacks 0CPN, parts (1) and (2).** A 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks over `S` is
 > universally injective if and only if its relative diagonal `Δ_f : 𝒳 ⟶ 𝒳 ×_𝒴 𝒳` is surjective.
@@ -102,7 +102,7 @@ theorem universallyInjective_iff_isSurjective_relativeDiagonal (f : 𝒳 ⟶ �
       IsSurjective B S hS (AlgebraicStacks.relativeDiagonal B S hS f)
 ```
 
-**`AlgebraicGeometry.Stack.isSurjective_relativeDiagonal_of_liftsTwoArrowsAtGeometricPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversallyInjectiveGeometricTwoArrows.lean, line 174](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/UniversallyInjectiveGeometricTwoArrows.lean#L174). The attribute's comment: “part (3) implies part (2)”.
+**`AlgebraicGeometry.Stack.isSurjective_relativeDiagonal_of_liftsTwoArrowsAtGeometricPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversallyInjectiveGeometricTwoArrows.lean, line 174](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/UniversallyInjectiveGeometricTwoArrows.lean#L174). The attribute's comment: “part (3) implies part (2)”.
 
 > **Stacks 0CPN, the implication (3) `⟹` (2).** A 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks
 > over `S` which lifts 2-arrows at geometric points has surjective relative diagonal
@@ -118,7 +118,7 @@ theorem isSurjective_relativeDiagonal_of_liftsTwoArrowsAtGeometricPoints (f : �
     IsSurjective B S hS (AlgebraicStacks.relativeDiagonal B S hS f)
 ```
 
-**`AlgebraicGeometry.Stack.universallyInjective_of_liftsTwoArrowsAtGeometricPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversallyInjectiveGeometricTwoArrows.lean, line 209](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/UniversallyInjectiveGeometricTwoArrows.lean#L209). The attribute's comment: “part (3) implies part (1)”.
+**`AlgebraicGeometry.Stack.universallyInjective_of_liftsTwoArrowsAtGeometricPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversallyInjectiveGeometricTwoArrows.lean, line 209](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/UniversallyInjectiveGeometricTwoArrows.lean#L209). The attribute's comment: “part (3) implies part (1)”.
 
 > **Stacks 0CPN, the implication (3) `⟹` (1).** A 1-morphism of algebraic stacks over `S`
 > which lifts 2-arrows at geometric points is universally injective: its relative diagonal is
@@ -131,7 +131,7 @@ theorem universallyInjective_of_liftsTwoArrowsAtGeometricPoints (f : 𝒳 ⟶ �
     UniversallyInjective B S hS f
 ```
 
-**`AlgebraicGeometry.Stack.liftsTwoArrowsAtGeometricPoints_of_isSurjective_relativeDiagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversallyInjectiveGeometricTwoArrows.lean, line 251](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/UniversallyInjectiveGeometricTwoArrows.lean#L251). The attribute's comment: “part (2) implies part (3)”.
+**`AlgebraicGeometry.Stack.liftsTwoArrowsAtGeometricPoints_of_isSurjective_relativeDiagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversallyInjectiveGeometricTwoArrows.lean, line 251](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/UniversallyInjectiveGeometricTwoArrows.lean#L251). The attribute's comment: “part (2) implies part (3)”.
 
 > **Stacks 0CPN, the implication (2) `⟹` (3).** A 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks
 > over `S` whose relative diagonal `Δ_f : 𝒳 ⟶ 𝒳 ×_𝒴 𝒳` is surjective lifts 2-arrows at geometric
@@ -151,7 +151,7 @@ theorem liftsTwoArrowsAtGeometricPoints_of_isSurjective_relativeDiagonal (f : �
     LiftsTwoArrowsAtGeometricPoints B S hS f
 ```
 
-**`AlgebraicGeometry.Stack.universallyInjective_iff_liftsTwoArrowsAtGeometricPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversallyInjectiveGeometricTwoArrows.lean, line 307](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/UniversallyInjectiveGeometricTwoArrows.lean#L307). The attribute's comment: “parts (1) and (3)”.
+**`AlgebraicGeometry.Stack.universallyInjective_iff_liftsTwoArrowsAtGeometricPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversallyInjectiveGeometricTwoArrows.lean, line 307](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/UniversallyInjectiveGeometricTwoArrows.lean#L307). The attribute's comment: “parts (1) and (3)”.
 
 > **Stacks 0CPN, parts (1) and (3).** A 1-morphism of algebraic stacks over `S` is universally
 > injective if and only if it lifts 2-arrows at geometric points.
@@ -165,7 +165,7 @@ theorem universallyInjective_iff_liftsTwoArrowsAtGeometricPoints (f : 𝒳 ⟶ �
 
 [Tag 0DTM](https://stacks.math.columbia.edu/tag/0DTM) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.exists_fiber_lift_of_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversallyInjectiveAlgebraicallyClosedPoint.lean, line 685](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/UniversallyInjectiveAlgebraicallyClosedPoint.lean#L685).
+**`AlgebraicGeometry.Stack.exists_fiber_lift_of_universallyInjective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversallyInjectiveAlgebraicallyClosedPoint.lean, line 684](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/UniversallyInjectiveAlgebraicallyClosedPoint.lean#L684).
 
 > Let `f : 𝒳 ⟶ 𝒴` be a universally injective 1-morphism of algebraic stacks and `y : Spec k ⟶ 𝒴`
 > a morphism with `k` algebraically closed. If `y` is in the image of `|𝒳| → |𝒴|`, then there is
@@ -194,7 +194,7 @@ theorem exists_fiber_lift_of_universallyInjective
 
 [Tag 0DTN](https://stacks.math.columbia.edu/tag/0DTN) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.universallyInjective_iff_affineBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversallyInjectiveAffineLocal.lean, line 112](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/UniversallyInjectiveAffineLocal.lean#L112).
+**`AlgebraicGeometry.Stack.universallyInjective_iff_affineBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversallyInjectiveAffineLocal.lean, line 112](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/UniversallyInjectiveAffineLocal.lean#L112).
 
 > **Stacks 0DTN.** A 1-morphism `f : 𝒳 ⟶ 𝒴` of algebraic stacks over `S` is universally
 > injective if and only if for every affine scheme `U` of the big fppf site over `S` and every
@@ -216,7 +216,7 @@ theorem universallyInjective_iff_affineBaseChange (f : 𝒳 ⟶ 𝒴) :
 
 [Tag 0DTP](https://stacks.math.columbia.edu/tag/0DTP) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.universallyInjective_of_fppfCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversallyInjectiveDescent.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/UniversallyInjectiveDescent.lean#L143). References: EGA IV (11.9.14), “fppf descent clause”.
+**`AlgebraicGeometry.Stack.universallyInjective_of_fppfCover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/UniversallyInjectiveDescent.lean, line 143](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/UniversallyInjectiveDescent.lean#L143). References: EGA IV (11.9.14), “fppf descent clause”.
 
 > **Stacks 0DTP.** Universal injectivity of a 1-morphism of algebraic stacks over `S` can be
 > checked after base change along a surjective, flat, locally finitely presented 1-morphism from
@@ -245,4 +245,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 101.14, Tag 0CI0](https://stacks.math.columbia.edu/tag/0CI0)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

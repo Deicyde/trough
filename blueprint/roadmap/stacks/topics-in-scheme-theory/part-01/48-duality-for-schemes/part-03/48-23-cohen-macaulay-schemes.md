@@ -8,13 +8,13 @@ proof: formalized
 
 # 48.23 Cohen-Macaulay schemes
 
-Section 48.23 of the Stacks Project, [Tag 0AWQ](https://stacks.math.columbia.edu/tag/0AWQ). 4 tags here are carried by 13 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 48.23 of the Stacks Project, [Tag 0AWQ](https://stacks.math.columbia.edu/tag/0AWQ). 4 tags here are carried by 13 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0AWT, a lemma
 
 [Tag 0AWT](https://stacks.math.columbia.edu/tag/0AWT) in the Stacks Project.
 
-**`Stacks.Duality.sheafIsCohenMacaulay_homology_of_concentrated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CohenMacaulayDualizingModule.lean, line 161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/CohenMacaulayDualizingModule.lean#L161). The attribute's comment: “the dualizing module is Cohen--Macaulay, at an arbitrary degree of concentration”.
+**`Stacks.Duality.sheafIsCohenMacaulay_homology_of_concentrated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CohenMacaulayDualizingModule.lean, line 161](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/CohenMacaulayDualizingModule.lean#L161). The attribute's comment: “the dualizing module is Cohen--Macaulay, at an arbitrary degree of concentration”.
 
 > **Stacks Project, Tag 0AWT, the Cohen--Macaulayness of the dualizing module.** If the
 > cohomology of a dualizing complex on a locally Noetherian scheme is concentrated in the single
@@ -30,7 +30,7 @@ public theorem sheafIsCohenMacaulay_homology_of_concentrated {X : Scheme.{u}}
       ((DerivedCategory.homologyFunctor X.Modules n).obj K)
 ```
 
-**`Stacks.Duality.exists_coherent_cohenMacaulay_iso_single_of_connected`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CohenMacaulayDualizingModule.lean, line 193](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/CohenMacaulayDualizingModule.lean#L193). The attribute's comment: “the final assertion, in full”.
+**`Stacks.Duality.exists_coherent_cohenMacaulay_iso_single_of_connected`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CohenMacaulayDualizingModule.lean, line 193](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/CohenMacaulayDualizingModule.lean#L193). The attribute's comment: “the final assertion, in full”.
 
 > **Stacks Project, Tag 0AWT, the final assertion, in full.** If `X` is connected and
 > Cohen--Macaulay then there is an integer `n` and a coherent Cohen--Macaulay `𝒪_X`-module
@@ -52,7 +52,7 @@ public theorem exists_coherent_cohenMacaulay_iso_single_of_connected {X : Scheme
         ((DerivedCategory.homologyFunctor X.Modules n).obj K))
 ```
 
-**`Stacks.Duality.isOpen_setOf_isCohenMacaulayLocalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CohenMacaulayLocus.lean, line 380](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/CohenMacaulayLocus.lean#L380). The attribute's comment: “clause (3), the Cohen--Macaulay locus is open”.
+**`Stacks.Duality.isOpen_setOf_isCohenMacaulayLocalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CohenMacaulayLocus.lean, line 380](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/CohenMacaulayLocus.lean#L380). The attribute's comment: “clause (3), the Cohen--Macaulay locus is open”.
 
 > **Stacks Project, Tag 0AWT, clause (3), openness.** On a locally Noetherian scheme carrying a
 > dualizing complex, the set of points whose local ring is Cohen–Macaulay is open.
@@ -64,7 +64,7 @@ public theorem isOpen_setOf_isCohenMacaulayLocalRing {X : Scheme.{u}} [IsLocally
     IsOpen {x : X | IsCohenMacaulayLocalRing (X.presheaf.stalk x)}
 ```
 
-**`Stacks.Duality.isCohenMacaulay_cohenMacaulayLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CohenMacaulayLocus.lean, line 426](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/CohenMacaulayLocus.lean#L426). The attribute's comment: “clause (3), the Cohen--Macaulay locus is Cohen--Macaulay”.
+**`Stacks.Duality.isCohenMacaulay_cohenMacaulayLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CohenMacaulayLocus.lean, line 426](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/CohenMacaulayLocus.lean#L426). The attribute's comment: “clause (3), the Cohen--Macaulay locus is Cohen--Macaulay”.
 
 > **Stacks Project, Tag 0AWT, clause (3), the locus is Cohen–Macaulay.** The open subscheme of
 > points with Cohen–Macaulay local ring is a Cohen–Macaulay scheme.
@@ -76,7 +76,7 @@ public theorem isCohenMacaulay_cohenMacaulayLocus {X : Scheme.{u}} [IsLocallyNoe
     AlgebraicGeometry.IsCohenMacaulay (cohenMacaulayLocus K hK).toScheme
 ```
 
-**`Stacks.Duality.isCohenMacaulayLocalRing_stalk_iff_concentrated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CohenMacaulayLocus.lean, line 571](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/CohenMacaulayLocus.lean#L571). The attribute's comment: “clause (2), the stalkwise criterion”.
+**`Stacks.Duality.isCohenMacaulayLocalRing_stalk_iff_concentrated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CohenMacaulayLocus.lean, line 571](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/CohenMacaulayLocus.lean#L571). The attribute's comment: “clause (2), the stalkwise criterion”.
 
 > **Stacks Project, Tag 0AWT, clause (2).** On a locally Noetherian scheme carrying a dualizing
 > complex `K`, the local ring at `x` is Cohen–Macaulay exactly when the derived stalk `K_x` has a
@@ -93,7 +93,7 @@ public theorem isCohenMacaulayLocalRing_stalk_iff_concentrated {X : Scheme.{u}}
         ((AlgebraicGeometry.derivedStalkFunctor x).obj K))
 ```
 
-**`Stacks.Duality.isCohenMacaulay_iff_locally_unique_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CohenMacaulayLocus.lean, line 701](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/CohenMacaulayLocus.lean#L701). The attribute's comment: “clause (1), locally a single nonzero cohomology sheaf, read stalkwise”.
+**`Stacks.Duality.isCohenMacaulay_iff_locally_unique_homology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CohenMacaulayLocus.lean, line 701](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/CohenMacaulayLocus.lean#L701). The attribute's comment: “clause (1), locally a single nonzero cohomology sheaf, read stalkwise”.
 
 > **Stacks Project, Tag 0AWT, clause (1).** A locally Noetherian scheme carrying a dualizing
 > complex `K` is Cohen–Macaulay exactly when `K` locally has a single nonzero cohomology sheaf:
@@ -118,7 +118,7 @@ public theorem isCohenMacaulay_iff_locally_unique_homology {X : Scheme.{u}}
 
 [Tag 0AWU](https://stacks.math.columbia.edu/tag/0AWU) in the Stacks Project.
 
-**`Stacks.Duality.isCohenMacaulay_of_exists_coherent_dualizingModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CohenMacaulaySchemeOfDualizingModule.lean, line 158](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/CohenMacaulaySchemeOfDualizingModule.lean#L158).
+**`Stacks.Duality.isCohenMacaulay_of_exists_coherent_dualizingModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CohenMacaulaySchemeOfDualizingModule.lean, line 158](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/CohenMacaulaySchemeOfDualizingModule.lean#L158).
 
 > Let `X` be a locally Noetherian scheme. If there exists a coherent sheaf `ω_X` such that
 > `ω_X[0]` is a dualizing complex on `X`, then `X` is a Cohen–Macaulay scheme.
@@ -134,7 +134,7 @@ theorem isCohenMacaulay_of_exists_coherent_dualizingModule
 
 [Tag 0C0Z](https://stacks.math.columbia.edu/tag/0C0Z) in the Stacks Project.
 
-**`Stacks.Duality.isCohenMacaulayAt_iff_exists_unique_nonzero_homology_upperShriek`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekChartConsequences.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekChartConsequences.lean#L87).
+**`Stacks.Duality.isCohenMacaulayAt_iff_exists_unique_nonzero_homology_upperShriek`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekChartConsequences.lean, line 87](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekChartConsequences.lean#L87).
 
 > Let `S` be Noetherian, `f : X ⟶ Y` a flat morphism of `FTS S` and `x ∈ X`. Then `f` is
 > Cohen–Macaulay at `x` if and only if `f^!𝒪_Y` has a unique nonzero cohomology sheaf in a
@@ -157,7 +157,7 @@ theorem isCohenMacaulayAt_iff_exists_unique_nonzero_homology_upperShriek [Flat f
 
 [Tag 0C10](https://stacks.math.columbia.edu/tag/0C10) in the Stacks Project.
 
-**`Stacks.Duality.NormalizedOnOpens.nonempty_iso_pullback_tensor_shift_nagata`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NormalizedCohenMacaulayTwistNagata.lean, line 56](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NormalizedCohenMacaulayTwistNagata.lean#L56). The attribute's comment: “Similar results hold for X and Y of finite type over S, not necessarily separated, with complexes normalized relative to omega\_S: omega\_X = Lf^* omega\_Y (x) omega\_\{X/Y}[d]”.
+**`Stacks.Duality.NormalizedOnOpens.nonempty_iso_pullback_tensor_shift_nagata`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NormalizedCohenMacaulayTwistNagata.lean, line 56](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NormalizedCohenMacaulayTwistNagata.lean#L56). The attribute's comment: “Similar results hold for X and Y of finite type over S, not necessarily separated, with complexes normalized relative to omega\_S: omega\_X = Lf^* omega\_Y (x) omega\_\{X/Y}[d]”.
 
 > **[Stacks, Tag 0C10], last sentence, the complexes.** Let `S` be Noetherian with a dualizing
 > complex `ω_S^•` and `f : X ⟶ Y` a separated Cohen–Macaulay morphism of relative dimension `d`
@@ -183,7 +183,7 @@ theorem nonempty_iso_pullback_tensor_shift_nagata
             hCM d hd))
 ```
 
-**`Stacks.Duality.NormalizedOnOpens.exists_homology_iso_pullback_tensor_nagata`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NormalizedCohenMacaulayTwistNagata.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NormalizedCohenMacaulayTwistNagata.lean#L82). The attribute's comment: “Similar results hold for X and Y of finite type over S, not necessarily separated, with complexes normalized relative to omega\_S: omega\_X = f^* omega\_Y (x) omega\_\{X/Y} for connected Cohen-Macaulay schemes”.
+**`Stacks.Duality.NormalizedOnOpens.exists_homology_iso_pullback_tensor_nagata`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NormalizedCohenMacaulayTwistNagata.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/TwistedInverseImageFTS/NormalizedCohenMacaulayTwistNagata.lean#L82). The attribute's comment: “Similar results hold for X and Y of finite type over S, not necessarily separated, with complexes normalized relative to omega\_S: omega\_X = f^* omega\_Y (x) omega\_\{X/Y} for connected Cohen-Macaulay schemes”.
 
 > **[Stacks, Tag 0C10], last sentence, the dualizing modules.** In the situation of
 > `nonempty_iso_pullback_tensor_shift_nagata`, if moreover `Y` is connected and Cohen–Macaulay, the
@@ -216,7 +216,7 @@ theorem exists_homology_iso_pullback_tensor_nagata
             d))
 ```
 
-**`Stacks.Duality.nonempty_upperShriek_iso_pullback_tensor_shift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekCohenMacaulayTwistIso.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekCohenMacaulayTwistIso.lean#L58). The attribute's comment: “f^!K = Lf^*K (x) omega\_\{X/Y}[d] for K in D^+\_QCoh”.
+**`Stacks.Duality.nonempty_upperShriek_iso_pullback_tensor_shift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekCohenMacaulayTwistIso.lean, line 58](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekCohenMacaulayTwistIso.lean#L58). The attribute's comment: “f^!K = Lf^*K (x) omega\_\{X/Y}[d] for K in D^+\_QCoh”.
 
 > **Stacks Project, Tag 0C10, the canonical isomorphism.** For a Cohen–Macaulay morphism
 > `f : X ⟶ Y` of `FTS S` of relative dimension `d` and `K ∈ D⁺_QCoh(𝒪_Y)`,
@@ -234,7 +234,7 @@ theorem nonempty_upperShriek_iso_pullback_tensor_shift
           (relativeDualizingSheafShift f j hCM d hd))
 ```
 
-**`Stacks.Duality.nonempty_upperShriek_comp_iso_pullback_tensor_shift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekCohenMacaulayTwistIso.lean, line 74](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekCohenMacaulayTwistIso.lean#L74). The attribute's comment: “omega\_X = Lf^* omega\_Y (x) omega\_\{X/Y}[d]”.
+**`Stacks.Duality.nonempty_upperShriek_comp_iso_pullback_tensor_shift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekCohenMacaulayTwistIso.lean, line 74](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekCohenMacaulayTwistIso.lean#L74). The attribute's comment: “omega\_X = Lf^* omega\_Y (x) omega\_\{X/Y}[d]”.
 
 > **Stacks Project, Tag 0C10, "in particular".** For `πY : Y ⟶ T`, `πX = f ≫ πY` and
 > `ω_T ∈ D⁺_QCoh(𝒪_T)` (for instance a dualizing complex), with `ω_Y = πY^!ω_T` and
@@ -254,7 +254,7 @@ theorem nonempty_upperShriek_comp_iso_pullback_tensor_shift
           (relativeDualizingSheafShift f j hCM d hd))
 ```
 
-**`Stacks.Duality.exists_homology_upperShriek_comp_iso_pullback_tensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekCohenMacaulayTwistIso.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekCohenMacaulayTwistIso.lean#L94). The attribute's comment: “omega\_X = f^* omega\_Y (x) omega\_\{X/Y} for connected Cohen-Macaulay schemes”.
+**`Stacks.Duality.exists_homology_upperShriek_comp_iso_pullback_tensor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekCohenMacaulayTwistIso.lean, line 94](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekCohenMacaulayTwistIso.lean#L94). The attribute's comment: “omega\_X = f^* omega\_Y (x) omega\_\{X/Y} for connected Cohen-Macaulay schemes”.
 
 > **Stacks Project, Tag 0C10, the dualizing modules.** If moreover `ω_T` is a dualizing
 > complex and `Y` is connected and Cohen–Macaulay, then `ω_Y^•` and `ω_X^•` are concentrated in
@@ -290,4 +290,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 48.23, Tag 0AWQ](https://stacks.math.columbia.edu/tag/0AWQ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: Stacks.GroupCohomology.normalInvariantsFunctor, Stacks.GroupCohomology.derivedNormalInvariantsFunctor, _root_.continuousGroupCohomologyFunctor, _root_.continuousGroupCohomology
+lean: Stacks.GroupCohomology.normalInvariantsFunctor, Stacks.GroupCohomology.derivedNormalInvariantsFunctor, Stacks.GroupCohomology.derivedInvariantsFunctor, Stacks.GroupHomology.augmentationIdeal_comparison, Stacks.GroupHomology.normalCoinvariantsFunctor, Stacks.GroupHomology.compactCoinvariantsFunctor, Stacks.GroupHomology.compactGModuleEnoughProjectives, Stacks.GroupHomology.groupHomologyFunctor
 statement: formalized
 proof: formalized
 ---
 
 # 64.28 Profinite groups, cohomology and homology
 
-Section 64.28 of the Stacks Project, [Tag 03VI](https://stacks.math.columbia.edu/tag/03VI). 1 tag here is carried by 2 declarations of the repository (all in StacksFrontier) and 2 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 64.28 of the Stacks Project, [Tag 03VI](https://stacks.math.columbia.edu/tag/03VI). 1 tag here is carried by 30 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 03VI, the section
 
 [Tag 03VI](https://stacks.math.columbia.edu/tag/03VI) in the Stacks Project.
 
-**`Stacks.GroupCohomology.normalInvariantsFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/GroupCohomology/NormalQuotientInvariants.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/GroupCohomology/NormalQuotientInvariants.lean#L187). The attribute's comment: “H⁰(N, -) takes discrete Γ-modules to discrete Γ/N-modules”.
+**`Stacks.GroupCohomology.normalInvariantsFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/GroupCohomology/NormalQuotientInvariants.lean, line 192](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/GroupCohomology/NormalQuotientInvariants.lean#L192). The attribute's comment: “H⁰(N, -) takes discrete Γ-modules to discrete Γ/N-modules”.
 
 > Taking invariants under a normal subgroup `N` of a topological group `Γ` is a functor
 > `H⁰(N, -)` from discrete `Γ`-modules to discrete `Γ ⧸ N`-modules.
@@ -24,21 +24,335 @@ def normalInvariantsFunctor :
     ContinuousGModule.{u, v} Γ ⥤ ContinuousGModule.{u, v} (Γ ⧸ N)
 ```
 
-**`Stacks.GroupCohomology.derivedNormalInvariantsFunctor`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/GroupCohomology/NormalQuotientInvariants.lean, line 232](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/GroupCohomology/NormalQuotientInvariants.lean#L232). The attribute's comment: “the derived functor RH⁰(N, -) of the invariants functor”.
+**`Stacks.GroupCohomology.derivedNormalInvariantsFunctor`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/GroupCohomology/NormalQuotientInvariants.lean, line 235](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/GroupCohomology/NormalQuotientInvariants.lean#L235). The attribute's comment: “the derived functor RH⁰(N, -) of the invariants functor”.
 
 > The right derived functor `RH⁰(N, -) : D⁺(Mod_Γ) ⥤ D⁺(Mod_{Γ⧸N})` of taking invariants
 > under a normal subgroup.
 
 ```lean
-abbrev derivedNormalInvariantsFunctor :
+abbrev derivedNormalInvariantsFunctor [HasDerivedCategory (ContinuousGModule.{u, max u v} Γ)]
+    [HasDerivedCategory (ContinuousGModule.{u, max u v} (Γ ⧸ N))] :
     DerivedCategory.Plus (ContinuousGModule.{u, max u v} Γ) ⥤
       DerivedCategory.Plus (ContinuousGModule.{u, max u v} (Γ ⧸ N))
 ```
 
+**`Stacks.GroupCohomology.derivedInvariantsFunctor`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/GroupCohomology/NormalQuotientInvariants.lean, line 253](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/GroupCohomology/NormalQuotientInvariants.lean#L253). The attribute's comment: “the derived version RH⁰(G, -) of the invariants functor”.
+
+> The right derived functor `RH⁰(Γ, -) : D⁺(Mod_Γ) ⥤ D⁺(Ab)` of taking invariants on discrete
+> `Γ`-modules, whose cohomology objects are the groups `Hⁱ(Γ, M)`.
+
+```lean
+abbrev derivedInvariantsFunctor [HasDerivedCategory (ContinuousGModule.{u, max u v} Γ)]
+    [HasDerivedCategory AddCommGrpCat.{max u v}] :
+    DerivedCategory.Plus (ContinuousGModule.{u, max u v} Γ) ⥤
+      DerivedCategory.Plus AddCommGrpCat.{max u v}
+```
+
+**`Stacks.GroupHomology.augmentationIdeal_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/GroupHomology/AugmentationIdealSquare.lean, line 380](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/GroupHomology/AugmentationIdealSquare.lean#L380). The attribute's comment: “Notes on Homology (1) in degree one with M = Λ, for G topologically finitely generated: the canonical map I/I² → lim\_U I\_U/I\_U², i.e. Tor₁^\{Λ[[G]]}(Λ, Λ) → H₁(G, Λ), is bijective”.
+
+> **`Tor₁^{Λ[[G]]}(Λ, Λ) = H₁(G, Λ)` for `G` topologically finitely generated.** For `Λ` finite
+> and `G` compact and topologically generated by finitely many elements, the canonical map
+> `I / I² → lim_U I_U / I_U²`, `x ↦ (eval_U x)_U`, is bijective: every family `c_U ∈ I_U` compatible
+> modulo the squares is the image of some `x ∈ I`, and `x ∈ I` maps to zero exactly when `x ∈ I²`.
+> Here `I`, `I_U` are the augmentation ideals of `Λ[[G]]` and `Λ[G/U]`.
+
+```lean
+theorem augmentationIdeal_comparison {ι : Type*} [Finite ι] {g : ι → G}
+    (hg : Dense (Subgroup.closure (Set.range g) : Set G)) :
+    (∀ (c : ∀ U : OpenNormalSubgroup G, MonoidAlgebra Λ (G ⧸ (U : Subgroup G))),
+      (∀ U : OpenNormalSubgroup G, finiteAugmentation _ (c U) = 0) →
+      (∀ ⦃U V : OpenNormalSubgroup G⦄ (h : U ≤ V),
+        quotientAlgebraMap Λ h (c U) - c V ∈ finiteAugmentationIdealSq Λ (G ⧸ (V : Subgroup G))) →
+      ∃ x : CompletedGroupAlgebra Λ G, augmentation x = 0 ∧
+        ∀ U : OpenNormalSubgroup G,
+          eval U x - c U ∈ finiteAugmentationIdealSq Λ (G ⧸ (U : Subgroup G))) ∧
+    ∀ x : CompletedGroupAlgebra Λ G, x ∈ augmentationIdealSq Λ G ↔ ∀ U : OpenNormalSubgroup G,
+      eval U x ∈ finiteAugmentationIdealSq Λ (G ⧸ (U : Subgroup G))
+```
+
+**`Stacks.GroupHomology.normalCoinvariantsFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/GroupHomology/CompactCoinvariants.lean, line 180](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/GroupHomology/CompactCoinvariants.lean#L180). The attribute's comment: “H₀(N, -) takes compact Γ-modules to compact Γ/N-modules”.
+
+> **The coinvariants under a normal subgroup.** Taking coinvariants `M ↦ M_N = H₀(N, M)` under a
+> normal subgroup `N` of a topological group `Γ` is a functor from compact `Γ`-modules to compact
+> `Γ ⧸ N`-modules.
+
+```lean
+def normalCoinvariantsFunctor :
+    CompactGModule.{u, v} Γ ⥤ CompactGModule.{u, v} (Γ ⧸ N)
+```
+
+**`Stacks.GroupHomology.compactCoinvariantsFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/GroupHomology/CompactCoinvariants.lean, line 205](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/GroupHomology/CompactCoinvariants.lean#L205). The attribute's comment: “the coinvariants functor M ↦ M\_G = H₀(G, M) on compact G-modules”.
+
+> **The coinvariants of a compact `G`-module.** The functor `M ↦ M_G = H₀(G, M)` from compact
+> `G`-modules to compact abelian groups, the quotient of `M` by the closed subgroup topologically
+> generated by the `g • m - m`.
+
+```lean
+def compactCoinvariantsFunctor : CompactGModule.{u, v} G ⥤ CompactAddCommGrp.{v}
+```
+
+**`Stacks.GroupHomology.compactGModuleEnoughProjectives`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/GroupHomology/CompactHomology.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/GroupHomology/CompactHomology.lean#L67). The attribute's comment: “compact G-modules have enough projectives”.
+
+> **Compact `G`-modules have enough projectives**: the anti-equivalence with discrete
+> `G`-modules takes injectives to projectives, and discrete `G`-modules have enough injectives.
+
+```lean
+instance compactGModuleEnoughProjectives : EnoughProjectives (CompactGModule.{u, max u v} G)
+```
+
+**`Stacks.GroupHomology.groupHomologyFunctor`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/GroupHomology/CompactHomology.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/GroupHomology/CompactHomology.lean#L81). The attribute's comment: “H\_i(G, M) = L\_i H₀(G, M), the left derived functors of coinvariants on compact G-modules”.
+
+> **The homology of `G` with coefficients in compact modules**: `H_i(G, -) = L_i H₀(G, -)`,
+> the `i`-th left derived functor of the coinvariants `M ↦ M_G` from compact `G`-modules to compact
+> abelian groups.
+
+```lean
+abbrev groupHomologyFunctor (i : ℕ) :
+    CompactGModule.{u, max u v} G ⥤ CompactAddCommGrp.{max u v}
+```
+
+**`Stacks.GroupHomology.derivedCoinvariantsFunctor`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/GroupHomology/CompactHomology.lean, line 93](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/GroupHomology/CompactHomology.lean#L93). The attribute's comment: “the derived version LH₀(G, -)”.
+
+> **The derived version `LH₀(G, -)`** of the coinvariants on compact `G`-modules, on bounded
+> above complexes, written through the opposite categories as a functor
+> `D⁺((Mod^cpt_G)ᵒᵖ) ⥤ D⁺((Ab^cpt)ᵒᵖ)`, that is `D⁻(Mod^cpt_G)ᵒᵖ ⥤ D⁻(Ab^cpt)ᵒᵖ`.
+
+```lean
+abbrev derivedCoinvariantsFunctor [HasDerivedCategory (CompactGModule.{u, max u v} G)ᵒᵖ]
+    [HasDerivedCategory CompactAddCommGrp.{max u v}ᵒᵖ] :
+    DerivedCategory.Plus (CompactGModule.{u, max u v} G)ᵒᵖ ⥤
+      DerivedCategory.Plus CompactAddCommGrp.{max u v}ᵒᵖ
+```
+
+**`Stacks.GroupHomology.derivedNormalCoinvariantsFunctor`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/GroupHomology/CompactHomology.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/GroupHomology/CompactHomology.lean#L116). The attribute's comment: “LH₀(N, -) of the coinvariants under a normal subgroup”.
+
+> **The derived functor `LH₀(N, -)`** of the coinvariants under a normal subgroup `N`, from
+> bounded above complexes of compact `Γ`-modules to bounded above complexes of compact
+> `Γ ⧸ N`-modules, written through the opposite categories.
+
+```lean
+abbrev derivedNormalCoinvariantsFunctor [HasDerivedCategory (CompactGModule.{u, max u v} Γ)ᵒᵖ]
+    [HasDerivedCategory (CompactGModule.{u, max u v} (Γ ⧸ N))ᵒᵖ] :
+    DerivedCategory.Plus (CompactGModule.{u, max u v} Γ)ᵒᵖ ⥤
+      DerivedCategory.Plus (CompactGModule.{u, max u v} (Γ ⧸ N))ᵒᵖ
+```
+
+**`Stacks.GroupHomology.CompactGModule`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/GroupHomology/CompactModules.lean, line 62](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/GroupHomology/CompactModules.lean#L62). The attribute's comment: “the category of compact abelian groups with continuous G-action”.
+
+> A compact `G`-module: a compact Hausdorff abelian topological group with an action of `G` by
+> group automorphisms for which the action map `G × M → M` is continuous.
+
+```lean
+structure CompactGModule (G : Type u) [Group G] [TopologicalSpace G]
+```
+
+**`Stacks.GroupHomology.homologyIsoLimitTor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/GroupHomology/CompletedTor.lean, line 195](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/GroupHomology/CompletedTor.lean#L195). The attribute's comment: “Notes on Homology (1), with Tor over Λ[[G]] read as completed Tor: H\_i(G, M) = lim\_U Tor\_i^\{Λ[G/U]}(M, Λ) for finite M over a finite ring Λ”.
+
+> **Stacks Project, Section 03VI, notes on homology (1), corrected.** For a profinite group
+> `G`, a finite ring `Λ` and a finite `Λ`-module `M` with continuous `G`-action,
+> `H_i(G, M) ≅ lim_U Tor_i^{Λ[G/U]}(M, Λ)` in every degree `i`, the limit over the open normal
+> subgroups `U` acting trivially on `M` along the change-of-rings maps. Here
+> `H_i(G, M) = Hⁱ(G, M^∨)^∨`.
+
+```lean
+def homologyIsoLimitTor (i : ℕ) :
+    ((restrictedHomologyDelta Λ (ContinuousMonoidHom.id G)).functor i).obj M ≅
+      limit (torDiagram Λ M i)
+```
+
+**`Stacks.GroupHomology.discreteDualEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/GroupHomology/PontryaginDualEquivalence.lean, line 167](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/GroupHomology/PontryaginDualEquivalence.lean#L167). The attribute's comment: “M ↦ M^∧ = Hom\_cont(M, S¹) exchanges compact G-modules and discrete G-modules (an anti-equivalence)”.
+
+> **Trivial duality.** The functor `M ↦ M^∧ = Hom_cont(M, S¹)` is an anti-equivalence from
+> compact `G`-modules to discrete `G`-modules, with quasi-inverse `M ↦ M^∧` from discrete
+> `G`-modules to compact `G`-modules.
+
+```lean
+def discreteDualEquivalence : (CompactGModule.{u, v} G)ᵒᵖ ≌ ContinuousGModule.{u, v} G
+```
+
+**`Stacks.GroupHomology.compactDualEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/GroupHomology/PontryaginDualEquivalence.lean, line 176](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/GroupHomology/PontryaginDualEquivalence.lean#L176). The attribute's comment: “M ↦ M^∧ = Hom(M, S¹) exchanges discrete G-modules and compact G-modules (an anti-equivalence)”.
+
+> **Trivial duality, from discrete to compact.** The functor `M ↦ M^∧ = Hom(M, S¹)` is an
+> anti-equivalence from discrete `G`-modules to compact `G`-modules, with quasi-inverse `M ↦ M^∧`
+> from compact `G`-modules to discrete `G`-modules.
+
+```lean
+def compactDualEquivalence : (ContinuousGModule.{u, v} G)ᵒᵖ ≌ CompactGModule.{u, v} G
+```
+
+**`Stacks.GroupHomology.discreteDual`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/GroupHomology/PontryaginDualModules.lean, line 315](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/GroupHomology/PontryaginDualModules.lean#L315). The attribute's comment: “M ↦ Hom\_cont(M, S¹) from compact G-modules to discrete G-modules”.
+
+> **Trivial duality, from compact to discrete.** The functor `M ↦ M^∧ = Hom_cont(M, S¹)` from
+> compact `G`-modules to discrete `G`-modules, with the contragredient action.
+
+```lean
+def discreteDual : (CompactGModule.{u, v} G)ᵒᵖ ⥤ ContinuousGModule.{u, v} G
+```
+
+**`Stacks.GroupHomology.compactDual`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/GroupHomology/PontryaginDualModules.lean, line 402](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/GroupHomology/PontryaginDualModules.lean#L402). The attribute's comment: “M ↦ Hom\_cont(M, S¹) from discrete G-modules to compact G-modules”.
+
+> **Trivial duality, from discrete to compact.** The functor `M ↦ M^∧ = Hom(M, S¹)` from
+> discrete `G`-modules to compact `G`-modules, the character group carrying the compact-open
+> topology and the contragredient action.
+
+```lean
+def compactDual : (ContinuousGModule.{u, v} G)ᵒᵖ ⥤ CompactGModule.{u, v} G
+```
+
+**`Stacks.GroupHomology.isProfiniteTop_compactDual`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/GroupHomology/PontryaginDualTorsion.lean, line 56](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/GroupHomology/PontryaginDualTorsion.lean#L56). The attribute's comment: “M ↦ M^∧ takes torsion discrete G-modules to profinite compact G-modules”.
+
+> **The dual of a torsion discrete `G`-module is profinite**: compact, Hausdorff and totally
+> disconnected.
+
+```lean
+theorem isProfiniteTop_compactDual (M : ContinuousGModule.{u, v} G)
+    (hM : IsAddTorsion M.obj.obj.V) : IsProfiniteTop ((compactDual G).obj (op M))
+```
+
+**`Stacks.GroupHomology.compactDualAddEquivCharacterModule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/GroupHomology/PontryaginDualTorsion.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/GroupHomology/PontryaginDualTorsion.lean#L65). The attribute's comment: “for M a torsion discrete G-module, M^∧ = Hom(M, Q/Z), compatibly with the action (compactDualAddEquivCharacterModule\_smul\_apply)”.
+
+> **The dual of a torsion discrete `G`-module is `Hom(M, ℚ/ℤ)`**: a character `χ` corresponds
+> to the homomorphism `m ↦ x` with `χ(m) = exp (2πix)`.
+
+```lean
+def compactDualAddEquivCharacterModule (M : ContinuousGModule.{u, v} G)
+    (hM : IsAddTorsion M.obj.obj.V) :
+    (compactDual G).obj (op M) ≃+ CharacterModule M.obj.obj.V
+```
+
+**`Stacks.GroupHomology.isAddTorsion_discreteDual`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/GroupHomology/PontryaginDualTorsion.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/GroupHomology/PontryaginDualTorsion.lean#L106). The attribute's comment: “M ↦ M^∧ takes profinite compact G-modules to torsion discrete G-modules”.
+
+> **The dual of a profinite compact `G`-module is torsion** (and discrete, as the dual of any
+> compact module is).
+
+```lean
+theorem isAddTorsion_discreteDual (M : CompactGModule.{u, v} G) [TotallyDisconnectedSpace M] :
+    IsAddTorsion ((discreteDual G).obj (op M)).obj.obj.V
+```
+
+**`Stacks.GroupHomology.discreteDualAddEquivLocallyConstantCharacters`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/GroupHomology/PontryaginDualTorsion.lean, line 117](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/GroupHomology/PontryaginDualTorsion.lean#L117). The attribute's comment: “for M a profinite compact G-module, M^∧ = Hom\_cont(M, Q/Z), compatibly with the action (discreteDualAddEquivLocallyConstantCharacters\_smul\_apply)”.
+
+> **The dual of a profinite compact `G`-module is `Hom_cont(M, ℚ/ℤ)`**, the characters with
+> values in `ℚ/ℤ` that are continuous for the discrete topology on `ℚ/ℤ`.
+
+```lean
+def discreteDualAddEquivLocallyConstantCharacters (M : CompactGModule.{u, v} G)
+    [TotallyDisconnectedSpace M] :
+    ((discreteDual G).obj (op M)).obj.obj.V ≃+ locallyConstantCharacters M
+```
+
+**`Stacks.GroupHomology.bijective_torOneLimitMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/GroupHomology/TorOneComparison.lean, line 608](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/GroupHomology/TorOneComparison.lean#L608). The attribute's comment: “Notes on Homology (1) in degree one with M = Λ, for G topologically finitely generated: the change-of-rings map Tor₁^\{Λ[[G]]}(Λ, Λ) → lim\_U Tor₁^\{Λ[G/U]}(Λ, Λ) is bijective, Tor over Λ[[G]] being the left derived functor of the coinvariants”.
+
+> **Stacks Project, Section 03VI, notes on homology (1), in degree one with `M = Λ`, for the
+> abstract `Tor`.** For a finite ring `Λ` and a profinite group `G` topologically generated by
+> finitely many elements, the change-of-rings map
+> `Tor₁^{Λ[[G]]}(Λ, Λ) → lim_U Tor₁^{Λ[G/U]}(Λ, Λ)` (`torOneLimitMap`) is bijective. Here
+> `Tor_•^{Λ[[G]]}(-, Λ)` is the left derived functor of the coinvariants of `Λ[[G]]`-modules and the
+> limit is the completed `Tor` of `torDiagram`, which is `H₁(G, Λ)` (`homologyIsoLimitTor`,
+> `torOneIsoHomology`). Surjectivity holds for every profinite `G` (`torOneLimitMap_surjective`);
+> injectivity fails for `G = (ℤ/p)^ℕ` (`not_injective_torOneLimitMap_piZMod`).
+
+```lean
+theorem bijective_torOneLimitMap {ι : Type*} [Finite ι] {g : ι → G}
+    (hg : Dense (Subgroup.closure (Set.range g) : Set G)) :
+    Function.Bijective (torOneLimitMap Λ G).hom
+```
+
+**`Stacks.GroupHomology.groupHomologyCompactDualIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/GroupHomology/TrivialDuality.lean, line 166](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/GroupHomology/TrivialDuality.lean#L166). The attribute's comment: “trivial duality H^i(G, M)^∧ = H\_i(G, M^∧)”.
+
+> **Trivial duality** `Hⁱ(G, M)^∧ = H_i(G, M^∧)`: for a discrete `G`-module `M`, the homology
+> of the compact `G`-module `M^∧ = Hom(M, S¹)` is the Pontryagin dual of the cohomology of `M`,
+> naturally in `M`.
+
+```lean
+def groupHomologyCompactDualIso (i : ℕ) :
+    compactDual.{u, max u v} G ⋙ groupHomologyFunctor.{u, v} G i ≅
+      (continuousGroupCohomologyFunctor.{u, v} G i).op ⋙ addCommGrpDual.{max u v}
+```
+
+**`Stacks.Pontryagin.doubleDualEquivOfCompactSpace`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/PontryaginDual/Compact.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/PontryaginDual/Compact.lean#L92). The attribute's comment: “Pontryagin duality: a compact abelian group is its double dual”.
+
+> Pontryagin duality for a compact Hausdorff abelian group `A`: the evaluation map is an
+> isomorphism of topological groups `A ≃ₜ* PontryaginDual (PontryaginDual A)`.
+
+```lean
+def doubleDualEquivOfCompactSpace : A ≃ₜ* PontryaginDual (PontryaginDual A)
+```
+
+**`Stacks.Pontryagin.exists_apply_ne_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/PontryaginDual/CompactSeparatesPoints.lean, line 203](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/PontryaginDual/CompactSeparatesPoints.lean#L203). The attribute's comment: “characters of a compact abelian group separate points (input to trivial duality)”.
+
+> Characters of a compact Hausdorff abelian group separate points from `1`: for `a ≠ 1` there is a
+> continuous character `χ` with `χ a ≠ 1`.
+
+```lean
+theorem exists_apply_ne_one [T2Space A] {a : A} (ha : a ≠ 1) :
+    ∃ χ : PontryaginDual A, χ a ≠ 1
+```
+
+**`Stacks.Pontryagin.compactSpace_of_discreteTopology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/PontryaginDual/Discrete.lean, line 76](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/PontryaginDual/Discrete.lean#L76). The attribute's comment: “the dual of a discrete abelian group is compact”.
+
+> The Pontryagin dual of a discrete abelian group is compact (it is a closed subspace of the
+> product of copies of the circle indexed by `A`); it is Hausdorff by `PontryaginDual.instT2Space`.
+
+```lean
+theorem compactSpace_of_discreteTopology : CompactSpace (PontryaginDual A)
+```
+
+**`Stacks.Pontryagin.doubleDualEquivOfDiscreteTopology`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/PontryaginDual/Discrete.lean, line 227](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/PontryaginDual/Discrete.lean#L227). The attribute's comment: “Pontryagin duality: a discrete abelian group is its double dual”.
+
+> Pontryagin duality for a discrete abelian group `A`: the evaluation map is an isomorphism of
+> topological groups `A ≃ₜ* PontryaginDual (PontryaginDual A)`.
+
+```lean
+def doubleDualEquivOfDiscreteTopology : A ≃ₜ* PontryaginDual (PontryaginDual A)
+```
+
+**`Stacks.Pontryagin.isProfiniteTop_of_isTorsion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/PontryaginDual/Torsion.lean, line 225](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/PontryaginDual/Torsion.lean#L225). The attribute's comment: “the dual of a discrete torsion abelian group is profinite”.
+
+> **The dual of a discrete torsion abelian group is profinite**: compact, Hausdorff and totally
+> disconnected.
+
+```lean
+theorem isProfiniteTop_of_isTorsion [DiscreteTopology A] (hA : IsMulTorsion A) :
+    IsProfiniteTop (PontryaginDual A)
+```
+
+**`Stacks.Pontryagin.addEquivCharacterModule`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/PontryaginDual/Torsion.lean, line 233](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/PontryaginDual/Torsion.lean#L233). The attribute's comment: “for M discrete torsion, M^∧ = Hom(M, Q/Z)”.
+
+> **The dual of a discrete torsion group is `Hom(M, ℚ/ℤ)`**: for `A` discrete and torsion,
+> `χ ↦ (a ↦ x)` with `χ(a) = exp (2πix)` is a group isomorphism from `A^∧ = Hom_cont(A, S¹)` onto
+> `Hom(A, ℚ/ℤ) = CharacterModule (Additive A)`.
+
+```lean
+def addEquivCharacterModule [DiscreteTopology A] (hA : IsMulTorsion A) :
+    Additive (PontryaginDual A) ≃+ CharacterModule (Additive A)
+```
+
+**`Stacks.Pontryagin.discreteTopology_and_isTorsion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/PontryaginDual/Torsion.lean, line 332](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/PontryaginDual/Torsion.lean#L332). The attribute's comment: “the dual of a profinite abelian group is discrete torsion”.
+
+> **The dual of a profinite abelian group is discrete and torsion.**
+
+```lean
+theorem discreteTopology_and_isTorsion :
+    DiscreteTopology (PontryaginDual A) ∧ IsMulTorsion (PontryaginDual A)
+```
+
+**`Stacks.Pontryagin.addEquivLocallyConstantCharacters`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Algebra/PontryaginDual/Torsion.lean, line 358](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Algebra/PontryaginDual/Torsion.lean#L358). The attribute's comment: “for M profinite, M^∧ = Hom\_cont(M, Q/Z)”.
+
+> **The dual of a profinite group is `Hom_cont(M, ℚ/ℤ)`**: for `A` profinite,
+> `χ ↦ (a ↦ x)` with `χ(a) = exp (2πix)` is a group isomorphism from `A^∧ = Hom_cont(A, S¹)` onto
+> the group of characters `A → ℚ/ℤ` continuous for the discrete topology on `ℚ/ℤ`.
+
+```lean
+def addEquivLocallyConstantCharacters :
+    Additive (PontryaginDual A) ≃+ locallyConstantCharacters (Additive A)
+```
+
 Declarations registered for the tag:
 
-- [`_root_.continuousGroupCohomologyFunctor`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=_root_.continuousGroupCohomologyFunctor#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/GroupCohomology/NormalQuotientInvariants.lean, line 247](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/GroupCohomology/NormalQuotientInvariants.lean#L247) (StacksFrontier): “the cohomology functors Hⁱ(G, -) of a profinite group on discrete modules”.
-- [`_root_.continuousGroupCohomology`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=_root_.continuousGroupCohomology#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/GroupCohomology/NormalQuotientInvariants.lean, line 249](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/EtaleCohomology/GroupCohomology/NormalQuotientInvariants.lean#L249) (StacksFrontier): “the cohomology groups Hⁱ(G, M) of a profinite group on a discrete module”.
+- [`_root_.continuousGModuleEnoughInjectives`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=_root_.continuousGModuleEnoughInjectives#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/GroupCohomology/NormalQuotientInvariants.lean, line 264](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/GroupCohomology/NormalQuotientInvariants.lean#L264) (StacksFrontier): “the category of discrete G-modules has enough injectives”.
+- [`_root_.continuousGroupCohomologyFunctor`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=_root_.continuousGroupCohomologyFunctor#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/GroupCohomology/NormalQuotientInvariants.lean, line 266](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/GroupCohomology/NormalQuotientInvariants.lean#L266) (StacksFrontier): “the cohomology functors Hⁱ(G, -) of a profinite group on discrete modules”.
+- [`_root_.continuousGroupCohomology`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=_root_.continuousGroupCohomology#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/EtaleCohomology/GroupCohomology/NormalQuotientInvariants.lean, line 268](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/EtaleCohomology/GroupCohomology/NormalQuotientInvariants.lean#L268) (StacksFrontier): “the cohomology groups Hⁱ(G, M) of a profinite group on a discrete module”.
 
 ## Depends on
 
@@ -47,4 +361,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 64.28, Tag 03VI](https://stacks.math.columbia.edu/tag/03VI)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.128 Invertible objects in the derived category
 
-Section 15.128 of the Stacks Project, [Tag 0FNP](https://stacks.math.columbia.edu/tag/0FNP). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.128 of the Stacks Project, [Tag 0FNP](https://stacks.math.columbia.edu/tag/0FNP). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0FNQ, a lemma
 
 [Tag 0FNQ](https://stacks.math.columbia.edu/tag/0FNQ) in the Stacks Project.
 
-**`DerivedCategory.Invertible.derivedCategory_symmetricMonoidalCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/Monoidal/Basic.lean, line 471](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedCategory/Monoidal/Basic.lean#L471).
+**`DerivedCategory.Invertible.derivedCategory_symmetricMonoidalCategory`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/Monoidal/Basic.lean, line 471](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedCategory/Monoidal/Basic.lean#L471).
 
 > **Stacks 0FNQ.** The derived category of modules over a commutative ring is symmetric
 > monoidal under derived tensor product. Under the canonical comparison with tensor products of
@@ -55,7 +55,7 @@ public theorem derivedCategory_symmetricMonoidalCategory (R : Type u) [CommRing 
 
 [Tag 0FNR](https://stacks.math.columbia.edu/tag/0FNR) in the Stacks Project.
 
-**`exists_subcomplex_bounded_finiteFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/FiniteFreeSubcomplex.lean, line 357](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/FiniteFreeSubcomplex.lean#L357).
+**`exists_subcomplex_bounded_finiteFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/FiniteFreeSubcomplex.lean, line 357](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/FiniteFreeSubcomplex.lean#L357).
 
 > **Stacks Tag 0FNR (Lemma 15.128.2).**
 > Let `R` be a ring and let `F` be a bounded above complex of free `R`-modules. Given a finite
@@ -77,7 +77,7 @@ theorem exists_subcomplex_bounded_finiteFree (F : ZComplex R) (hFa : F.BoundedAb
 
 [Tag 0FNS](https://stacks.math.columbia.edu/tag/0FNS) in the Stacks Project.
 
-**`DerivedCategory.Invertible.isPerfect_iff_exists_leftDual`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/Monoidal/Dual.lean, line 1161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedCategory/Monoidal/Dual.lean#L1161).
+**`DerivedCategory.Invertible.isPerfect_iff_exists_leftDual`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/Monoidal/Dual.lean, line 1161](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedCategory/Monoidal/Dual.lean#L1161).
 
 > **Stacks 0FNS.** An object of the derived category has a left dual exactly when it is perfect.
 > For a perfect object the derived dual `RHom(M, R)` is a left dual, and every other left dual is
@@ -100,7 +100,7 @@ public theorem isPerfect_iff_exists_leftDual
 
 [Tag 0FNT](https://stacks.math.columbia.edu/tag/0FNT) in the Stacks Project.
 
-**`DerivedCategory.Invertible.isInvertible_iff_locallyShiftedUnit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/Monoidal/Invertible.lean, line 1096](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Homology/DerivedCategory/Monoidal/Invertible.lean#L1096).
+**`DerivedCategory.Invertible.isInvertible_iff_locallyShiftedUnit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Homology/DerivedCategory/Monoidal/Invertible.lean, line 1096](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Homology/DerivedCategory/Monoidal/Invertible.lean#L1096).
 
 > **Stacks 0FNT.** A derived object is invertible if and only if it is locally a shift of the
 > ring. In that case it is perfect, is the direct sum of its cohomology modules, every cohomology
@@ -131,4 +131,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.128, Tag 0FNP](https://stacks.math.columbia.edu/tag/0FNP)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

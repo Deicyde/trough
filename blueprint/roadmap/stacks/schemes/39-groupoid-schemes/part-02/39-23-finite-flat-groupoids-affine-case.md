@@ -8,7 +8,7 @@ proof: formalized
 
 # 39.23 Finite flat groupoids, affine case
 
-Section 39.23 of the Stacks Project, [Tag 03BE](https://stacks.math.columbia.edu/tag/03BE). 9 tags here are carried by 27 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 39.23 of the Stacks Project, [Tag 03BE](https://stacks.math.columbia.edu/tag/03BE). 9 tags here are carried by 27 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 03BF, an equation
 
@@ -16,13 +16,13 @@ Section 39.23 of the Stacks Project, [Tag 03BE](https://stacks.math.columbia.edu
 
 Declarations registered for the tag:
 
-- [`RingHom.eqLocus`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=RingHom.eqLocus#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch39.lean, line 16](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/MathlibRegistrations/Ch39.lean#L16) (StacksFrontier). References: EGA IV (5.6.11); SGA 3 V (4.1).
+- [`RingHom.eqLocus`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=RingHom.eqLocus#doc) registered with `add_to_stacks` in [StacksFrontier/MathlibRegistrations/Ch39.lean, line 16](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/MathlibRegistrations/Ch39.lean#L16) (StacksFrontier). References: EGA IV (5.6.11); SGA 3 V (4.1).
 
 ## Tag 03BH, a lemma
 
 [Tag 03BH](https://stacks.math.columbia.edu/tag/03BH) in the Stacks Project.
 
-**`AlgebraicGeometry.GroupoidScheme.det_lmul_targetMap_mem_invariantRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/InvariantNorm.lean, line 158](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/InvariantNorm.lean#L158).
+**`AlgebraicGeometry.GroupoidScheme.det_lmul_targetMap_mem_invariantRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/InvariantNorm.lean, line 158](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/InvariantNorm.lean#L158).
 
 > **Stacks Project, Tag 03BH.** For a groupoid scheme with affine object scheme and finite
 > locally free source map, the norm along the source map of a function pulled back along the
@@ -41,7 +41,7 @@ theorem det_lmul_targetMap_mem_invariantRing {S : Scheme.{u}} (G : GroupoidSchem
         invariantRing G
 ```
 
-**`AlgebraicGeometry.norm_targetMap_mem_invariantRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/AffineNorm.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/AffineNorm.lean#L183).
+**`AlgebraicGeometry.norm_targetMap_mem_invariantRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/AffineNorm.lean, line 183](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/AffineNorm.lean#L183).
 
 > For a groupoid scheme with affine object scheme and finite locally free source map, the
 > arrow ring is a finite projective module over the object ring along the source map, and the
@@ -66,7 +66,7 @@ theorem norm_targetMap_mem_invariantRing {S : Scheme.{u}} (G : GroupoidScheme S)
 
 [Tag 03BI](https://stacks.math.columbia.edu/tag/03BI) in the Stacks Project.
 
-**`AlgebraicGeometry.GroupoidScheme.exists_disjoint_invariant_rank_decomposition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/RankDecomposition.lean, line 389](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/RankDecomposition.lean#L389).
+**`AlgebraicGeometry.GroupoidScheme.exists_disjoint_invariant_rank_decomposition`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/RankDecomposition.lean, line 389](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/RankDecomposition.lean#L389).
 
 > **Stacks Project, Tag 03BI.** A groupoid scheme whose source map is finite locally free
 > decomposes by the rank into invariant opens. On each restricted groupoid, both the source and
@@ -91,7 +91,7 @@ theorem exists_disjoint_invariant_rank_decomposition {S : Scheme.{u}} (G : Group
 
 [Tag 03BJ](https://stacks.math.columbia.edu/tag/03BJ) in the Stacks Project.
 
-**`AlgebraicGeometry.GroupoidScheme.isIntegral_invariantRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/IntegralInvariants.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/IntegralInvariants.lean#L216). References: SGA 3 V (4.1), “more general”.
+**`AlgebraicGeometry.GroupoidScheme.isIntegral_invariantRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/IntegralInvariants.lean, line 216](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/IntegralInvariants.lean#L216). References: SGA 3 V (4.1), “more general”.
 
 > For an affine groupoid scheme with finite locally free source and target, the ring of global
 > functions on the object scheme is integral over its subring of invariant functions.
@@ -103,7 +103,7 @@ theorem isIntegral_invariantRing {S : Scheme.{u}} (G : GroupoidScheme S)
     (Subring.subtype (invariantRing G)).IsIntegral
 ```
 
-**`AlgebraicGeometry.isIntegral_over_invariantRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/AffineIntegral.lean, line 337](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/AffineIntegral.lean#L337). References: SGA 3 V (4.1), “more general”.
+**`AlgebraicGeometry.isIntegral_over_invariantRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/AffineIntegral.lean, line 337](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/AffineIntegral.lean#L337). References: SGA 3 V (4.1), “more general”.
 
 > For an affine groupoid scheme with finite locally free source and target, the ring of global
 > functions on the object scheme is integral over its subring of invariant functions.
@@ -119,7 +119,7 @@ theorem isIntegral_over_invariantRing {S : Scheme.{u}} (G : GroupoidScheme S)
 
 [Tag 03BK](https://stacks.math.columbia.edu/tag/03BK) in the Stacks Project.
 
-**`AlgebraicGeometry.GroupoidScheme.canonicalMapToInvariantFunctions_bijective_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/FlatInvariants.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/FlatInvariants.lean#L133). The attribute's comment: “flat\_invariants”.
+**`AlgebraicGeometry.GroupoidScheme.canonicalMapToInvariantFunctions_bijective_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/FlatInvariants.lean, line 132](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/FlatInvariants.lean#L132). The attribute's comment: “flat\_invariants”.
 
 > For a flat extension of the invariant ring of an affine groupoid scheme, the canonical map
 > from the new base ring to the invariant functions of the base-changed groupoid is bijective.
@@ -131,7 +131,7 @@ theorem canonicalMapToInvariantFunctions_bijective_of_flat {S : Scheme.{u}}
     Function.Bijective G'.canonicalMapToInvariantFunctions
 ```
 
-**`AlgebraicGeometry.GroupoidScheme.exists_affineInvariantBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/InvariantBaseChange.lean, line 571](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/InvariantBaseChange.lean#L571). The attribute's comment: “base\_changed\_groupoid”.
+**`AlgebraicGeometry.GroupoidScheme.exists_affineInvariantBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/InvariantBaseChange.lean, line 571](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/InvariantBaseChange.lean#L571). The attribute's comment: “base\_changed\_groupoid”.
 
 > **Stacks Project, Tag 03BK.** Extending the coordinate rings of an affine groupoid scheme
 > from its invariant ring produces the indicated groupoid scheme, with finite locally free source
@@ -145,7 +145,7 @@ theorem exists_affineInvariantBaseChange {S : Scheme.{u}} (G : GroupoidScheme S)
     Nonempty (AffineInvariantBaseChange G C')
 ```
 
-**`AlgebraicGeometry.GroupoidScheme.isNilpotent_of_mem_ker_canonicalMapToInvariantFunctions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/NilpotentKernel.lean, line 48](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/NilpotentKernel.lean#L48). The attribute's comment: “nilpotent\_kernel”.
+**`AlgebraicGeometry.GroupoidScheme.isNilpotent_of_mem_ker_canonicalMapToInvariantFunctions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/NilpotentKernel.lean, line 48](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/NilpotentKernel.lean#L48). The attribute's comment: “nilpotent\_kernel”.
 
 > Each element killed by the canonical map from the base ring to the invariant functions of the
 > base-changed groupoid is nilpotent.
@@ -158,7 +158,7 @@ theorem isNilpotent_of_mem_ker_canonicalMapToInvariantFunctions {S : Scheme.{u}}
     (hf : f ∈ RingHom.ker G'.canonicalMapToInvariantFunctions) : IsNilpotent f
 ```
 
-**`AlgebraicGeometry.GroupoidScheme.exists_polynomial_map_eq_pow_X_sub_C`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/PolynomialDescent.lean, line 479](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/PolynomialDescent.lean#L479). The attribute's comment: “polynomial\_descent”.
+**`AlgebraicGeometry.GroupoidScheme.exists_polynomial_map_eq_pow_X_sub_C`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/PolynomialDescent.lean, line 479](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/PolynomialDescent.lean#L479). The attribute's comment: “polynomial\_descent”.
 
 > A positive power of the linear polynomial of an invariant function after base change comes
 > from the new base ring.
@@ -173,7 +173,7 @@ theorem exists_polynomial_map_eq_pow_X_sub_C {S : Scheme.{u}} (G : GroupoidSchem
       P.map G'.canonicalMapToInvariantFunctions = (Polynomial.X - Polynomial.C f) ^ n
 ```
 
-**`AlgebraicGeometry.canonicalMapToInvariantFunctions_bijective_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/AffineInvariantFlat.lean, line 204](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/AffineInvariantFlat.lean#L204). The attribute's comment: “part (3), flat extensions of the invariant ring”.
+**`AlgebraicGeometry.canonicalMapToInvariantFunctions_bijective_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/AffineInvariantFlat.lean, line 203](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/AffineInvariantFlat.lean#L203). The attribute's comment: “part (3), flat extensions of the invariant ring”.
 
 > For a flat extension of the invariant ring, the canonical map from the extension ring to the
 > invariant functions of the base-changed groupoid scheme is bijective.
@@ -191,7 +191,7 @@ theorem canonicalMapToInvariantFunctions_bijective_of_flat
 
 [Tag 03BL](https://stacks.math.columbia.edu/tag/03BL) in the Stacks Project.
 
-**`AlgebraicGeometry.GroupoidScheme.surjective_objectsToInvariantSpectrum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/AffineQuotientPoints.lean, line 172](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/AffineQuotientPoints.lean#L172). The attribute's comment: “part (1), surjectivity”. References: SGA 1 V (1.1), “more general”.
+**`AlgebraicGeometry.GroupoidScheme.surjective_objectsToInvariantSpectrum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/AffineQuotientPoints.lean, line 172](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/AffineQuotientPoints.lean#L172). The attribute's comment: “part (1), surjectivity”. References: SGA 1 V (1.1), “more general”.
 
 > **Stacks Project, Tag 03BL.** The morphism from the object scheme to the spectrum of the
 > invariant functions is surjective on underlying topological points.
@@ -203,7 +203,7 @@ theorem surjective_objectsToInvariantSpectrum {S : Scheme.{u}} (G : GroupoidSche
     Function.Surjective (objectsToInvariantSpectrum G).base
 ```
 
-**`AlgebraicGeometry.GroupoidScheme.surjective_comp_objectsToInvariantSpectrum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/AffineQuotientPoints.lean, line 193](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/AffineQuotientPoints.lean#L193). The attribute's comment: “part (2), surjectivity”. References: SGA 1 V (1.1), “more general”.
+**`AlgebraicGeometry.GroupoidScheme.surjective_comp_objectsToInvariantSpectrum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/AffineQuotientPoints.lean, line 193](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/AffineQuotientPoints.lean#L193). The attribute's comment: “part (2), surjectivity”. References: SGA 1 V (1.1), “more general”.
 
 > **Stacks Project, Tag 03BL.** Over an algebraically closed field, every point of the
 > spectrum of the invariant functions lifts to the object scheme.
@@ -217,7 +217,7 @@ theorem surjective_comp_objectsToInvariantSpectrum {S : Scheme.{u}} (G : Groupoi
       fun x : Spec (.of k) ⟶ G.objects.left ↦ x ≫ objectsToInvariantSpectrum G
 ```
 
-**`AlgebraicGeometry.GroupoidScheme.comp_objectsToInvariantSpectrum_eq_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/AffineQuotientPoints.lean, line 217](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/AffineQuotientPoints.lean#L217). The attribute's comment: “part (2), fibres”.
+**`AlgebraicGeometry.GroupoidScheme.comp_objectsToInvariantSpectrum_eq_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/AffineQuotientPoints.lean, line 217](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/AffineQuotientPoints.lean#L217). The attribute's comment: “part (2), fibres”.
 
 > **Stacks Project, Tag 03BL.** Over an algebraically closed field, two points of the object
 > scheme have the same image in the spectrum of the invariant functions exactly when they are
@@ -233,7 +233,7 @@ theorem comp_objectsToInvariantSpectrum_eq_iff {S : Scheme.{u}} (G : GroupoidSch
         r ≫ G.target.left = u₀ ∧ r ≫ G.source.left = u₁
 ```
 
-**`AlgebraicGeometry.GroupoidScheme.base_objectsToInvariantSpectrum_eq_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/AffineQuotientPoints.lean, line 348](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/AffineQuotientPoints.lean#L348). The attribute's comment: “part (1), fibres”.
+**`AlgebraicGeometry.GroupoidScheme.base_objectsToInvariantSpectrum_eq_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/AffineQuotientPoints.lean, line 348](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/AffineQuotientPoints.lean#L348). The attribute's comment: “part (1), fibres”.
 
 > **Stacks Project, Tag 03BL.** Two topological points of the object scheme have the same
 > image in the spectrum of the invariant functions exactly when they are the target and the
@@ -253,7 +253,7 @@ theorem base_objectsToInvariantSpectrum_eq_iff {S : Scheme.{u}} (G : GroupoidSch
 
 [Tag 0DT9](https://stacks.math.columbia.edu/tag/0DT9) in the Stacks Project.
 
-**`AlgebraicGeometry.GroupoidScheme.etale_invariantRingMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/EtaleInvariantRingMapAssembly.lean, line 384](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/EtaleInvariantRingMapAssembly.lean#L384). The attribute's comment: “the FIRST conclusion: the map C -> C' from the R-invariant functions on U to the R'-invariant functions on U' is etale. Together with isPullback\_mapObjects, which is the second conclusion, this is the whole statement of the tag”.
+**`AlgebraicGeometry.GroupoidScheme.etale_invariantRingMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/EtaleInvariantRingMapAssembly.lean, line 384](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/EtaleInvariantRingMapAssembly.lean#L384). The attribute's comment: “the FIRST conclusion: the map C -> C' from the R-invariant functions on U to the R'-invariant functions on U' is etale. Together with isPullback\_mapObjects, which is the second conclusion, this is the whole statement of the tag”.
 
 > **The first conclusion of [Stacks Project, Tag 0DT9]: the map `C ⟶ C'` from the `R`-invariant
 > functions on `U` to the `R'`-invariant functions on `U'` is étale.**
@@ -278,7 +278,7 @@ theorem etale_invariantRingMap
     (invariantRingMap F).Etale
 ```
 
-**`AlgebraicGeometry.GroupoidScheme.isPullback_mapObjects`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/EtaleInvariantRingMapAssembly.lean, line 404](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/EtaleInvariantRingMapAssembly.lean#L404). The attribute's comment: “the SECOND conclusion: U' is the fibre product of Spec C' and U over Spec C. Unconditional: the premise that C -> C' is etale is supplied by etale\_invariantRingMap, the tag's first conclusion”.
+**`AlgebraicGeometry.GroupoidScheme.isPullback_mapObjects`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/EtaleInvariantRingMapAssembly.lean, line 404](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/EtaleInvariantRingMapAssembly.lean#L404). The attribute's comment: “the SECOND conclusion: U' is the fibre product of Spec C' and U over Spec C. Unconditional: the premise that C -> C' is etale is supplied by etale\_invariantRingMap, the tag's first conclusion”.
 
 > **The second conclusion of [Stacks Project, Tag 0DT9]: `U' = Spec C' ×_{Spec C} U`.**
 >
@@ -302,7 +302,7 @@ theorem isPullback_mapObjects
 
 [Tag 03C8](https://stacks.math.columbia.edu/tag/03C8) in the Stacks Project.
 
-**`AlgebraicGeometry.basis_over_invariantRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/AffineBasis.lean, line 280](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/AffineBasis.lean#L280). The attribute's comment: “the basis over invariant functions”.
+**`AlgebraicGeometry.basis_over_invariantRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/AffineBasis.lean, line 280](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/AffineBasis.lean#L280). The attribute's comment: “the basis over invariant functions”.
 
 > A basis of the arrow ring over the object ring pulled back along the source descends to a
 > basis of the object ring over the invariant ring.
@@ -318,7 +318,7 @@ theorem basis_over_invariantRing {S : Scheme.{u}}
     ∃ b : Module.Basis I (invariantRing G) Γ(G.objects.left, ⊤), ∀ i, b i = x i
 ```
 
-**`AlgebraicGeometry.tensorProduct_equiv_arrowRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/AffineBasis.lean, line 314](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/AffineBasis.lean#L314). The attribute's comment: “the tensor-product description”.
+**`AlgebraicGeometry.tensorProduct_equiv_arrowRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/AffineBasis.lean, line 314](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/AffineBasis.lean#L314). The attribute's comment: “the tensor-product description”.
 
 > Under the same basis hypothesis, the canonical map from the tensor square of the object
 > ring over its invariant ring to the arrow ring is an isomorphism.
@@ -342,7 +342,7 @@ theorem tensorProduct_equiv_arrowRing {S : Scheme.{u}}
 
 [Tag 03BM](https://stacks.math.columbia.edu/tag/03BM) in the Stacks Project.
 
-**`AlgebraicGeometry.GroupoidScheme.isFiniteLocallyFree_objectsToInvariantSpectrum`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/AffineQuotient.lean, line 784](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/AffineQuotient.lean#L784). The attribute's comment: “finite locally free quotient map”. References: SGA 3 V (4.1), “affine case, (iv)”.
+**`AlgebraicGeometry.GroupoidScheme.isFiniteLocallyFree_objectsToInvariantSpectrum`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/AffineQuotient.lean, line 781](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/AffineQuotient.lean#L781). The attribute's comment: “finite locally free quotient map”. References: SGA 3 V (4.1), “affine case, (iv)”.
 
 > The morphism from the object scheme to the spectrum of the invariant functions is finite
 > locally free.
@@ -354,7 +354,7 @@ instance isFiniteLocallyFree_objectsToInvariantSpectrum {S : Scheme.{u}} (G : Gr
     IsFiniteLocallyFree (objectsToInvariantSpectrum G)
 ```
 
-**`AlgebraicGeometry.GroupoidScheme.isPullback_objectsToInvariantSpectrum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/AffineQuotient.lean, line 804](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/AffineQuotient.lean#L804). The attribute's comment: “the relation is the kernel pair”.
+**`AlgebraicGeometry.GroupoidScheme.isPullback_objectsToInvariantSpectrum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/AffineQuotient.lean, line 801](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/AffineQuotient.lean#L801). The attribute's comment: “the relation is the kernel pair”.
 
 > The source and target maps exhibit the arrow scheme as the kernel pair of the morphism to
 > the spectrum of the invariant functions.
@@ -367,7 +367,7 @@ theorem isPullback_objectsToInvariantSpectrum {S : Scheme.{u}} (G : GroupoidSche
       (objectsToInvariantSpectrum G)
 ```
 
-**`AlgebraicGeometry.GroupoidScheme.invariantSpectrumBaseMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/AffineQuotient.lean, line 814](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/AffineQuotient.lean#L814). The attribute's comment: “descent of the quotient over the base”.
+**`AlgebraicGeometry.GroupoidScheme.invariantSpectrumBaseMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/AffineQuotient.lean, line 811](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/AffineQuotient.lean#L811). The attribute's comment: “descent of the quotient over the base”.
 
 > The structure morphism of the object scheme descends along the morphism to the spectrum of
 > the invariant functions.
@@ -380,7 +380,7 @@ def invariantSpectrumBaseMap {S : Scheme.{u}} (G : GroupoidScheme S) [IsAffine G
       objectsToInvariantSpectrum G ≫ f = G.objects.hom }
 ```
 
-**`AlgebraicGeometry.GroupoidScheme.isIso_quotientSheafToInvariantSpectrum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/AffineQuotient.lean, line 899](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/AffineQuotient.lean#L899). The attribute's comment: “representation of the fppf quotient sheaf”. References: SGA 3 V (4.1), “affine case, (iv) fppf”.
+**`AlgebraicGeometry.GroupoidScheme.isIso_quotientSheafToInvariantSpectrum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/AffineQuotient.lean, line 896](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatAffine/AffineQuotient.lean#L896). The attribute's comment: “representation of the fppf quotient sheaf”. References: SGA 3 V (4.1), “affine case, (iv) fppf”.
 
 > The spectrum of the invariant functions represents the fppf quotient sheaf of the
 > relation, and the representing isomorphism is compatible with the canonical projection from the
@@ -400,7 +400,7 @@ theorem isIso_quotientSheafToInvariantSpectrum {S : Scheme.{u}} (G : GroupoidSch
         (target_comp_toInvariantSpectrumOver G) hM)
 ```
 
-**`AlgebraicGeometry.GroupoidScheme.isField_invariantRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatQuotient/FieldObjectDivision.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatQuotient/FieldObjectDivision.lean#L155). The attribute's comment: “the ring of invariants of a groupoid on the spectrum of a field is a field”.
+**`AlgebraicGeometry.GroupoidScheme.isField_invariantRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatQuotient/FieldObjectDivision.lean, line 155](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/FiniteFlatQuotient/FieldObjectDivision.lean#L155). The attribute's comment: “the ring of invariants of a groupoid on the spectrum of a field is a field”.
 
 > **Stacks Project, Tag 03BM.** The ring of invariant functions of an affine groupoid scheme
 > with finite locally free source and target is a field as soon as the ring of functions on the
@@ -415,7 +415,7 @@ theorem isField_invariantRing {S : Scheme.{u}} (G : GroupoidScheme S)
     (h : IsField Γ(G.objects.left, ⊤)) : IsField (invariantRing G)
 ```
 
-**`AlgebraicGeometry.objectsToInvariantSpectrum_isFiniteLocallyFree`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/AffineQuotient/FppfQuotient.lean, line 529](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/AffineQuotient/FppfQuotient.lean#L529). The attribute's comment: “finite locally free quotient map”.
+**`AlgebraicGeometry.objectsToInvariantSpectrum_isFiniteLocallyFree`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/AffineQuotient/FppfQuotient.lean, line 527](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/AffineQuotient/FppfQuotient.lean#L527). The attribute's comment: “finite locally free quotient map”.
 
 > The canonical map to the spectrum of invariant functions is finite locally free.
 
@@ -428,7 +428,7 @@ public instance objectsToInvariantSpectrum_isFiniteLocallyFree {S : Scheme.{u}}
     IsFiniteLocallyFree (objectsToInvariantSpectrum G)
 ```
 
-**`AlgebraicGeometry.isPullback_objectsToInvariantSpectrum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/AffineQuotient/FppfQuotient.lean, line 553](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/AffineQuotient/FppfQuotient.lean#L553). The attribute's comment: “the relation is the kernel pair”.
+**`AlgebraicGeometry.isPullback_objectsToInvariantSpectrum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/AffineQuotient/FppfQuotient.lean, line 551](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/AffineQuotient/FppfQuotient.lean#L551). The attribute's comment: “the relation is the kernel pair”.
 
 > The source and target maps exhibit the arrow scheme as the kernel pair of the quotient.
 
@@ -441,7 +441,7 @@ public theorem isPullback_objectsToInvariantSpectrum {S : Scheme.{u}} (G : Group
       (objectsToInvariantSpectrum G)
 ```
 
-**`AlgebraicGeometry.quotientBaseMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/AffineQuotient/FppfQuotient.lean, line 564](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/AffineQuotient/FppfQuotient.lean#L564). The attribute's comment: “descent of the quotient over the base”.
+**`AlgebraicGeometry.quotientBaseMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/AffineQuotient/FppfQuotient.lean, line 562](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/AffineQuotient/FppfQuotient.lean#L562). The attribute's comment: “descent of the quotient over the base”.
 
 > The map from the affine invariant quotient to the base scheme, specified by descent of
 > the original structure map.
@@ -455,7 +455,7 @@ public def quotientBaseMap {S : Scheme.{u}} (G : GroupoidScheme S)
         objectsToInvariantSpectrum G ≫ f = G.objects.hom }
 ```
 
-**`AlgebraicGeometry.quotientSheaf_isRepresented`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/AffineQuotient/FppfQuotient.lean, line 642](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/AffineQuotient/FppfQuotient.lean#L642). The attribute's comment: “representation of the fppf quotient sheaf”.
+**`AlgebraicGeometry.quotientSheaf_isRepresented`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/AffineQuotient/FppfQuotient.lean, line 640](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Groupoids/Stabilizer/AffineQuotient/FppfQuotient.lean#L640). The attribute's comment: “representation of the fppf quotient sheaf”.
 
 > The spectrum of invariant functions represents the fppf quotient sheaf, with the
 > representing isomorphism compatible with the canonical projection from the objects.
@@ -485,4 +485,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 39.23, Tag 03BE](https://stacks.math.columbia.edu/tag/03BE)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

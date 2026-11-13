@@ -8,7 +8,7 @@ proof: formalized
 
 # 67.10 Monomorphisms
 
-Section 67.10 of the Stacks Project, [Tag 042K](https://stacks.math.columbia.edu/tag/042K). 9 tags here are carried by 9 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 67.10 of the Stacks Project, [Tag 042K](https://stacks.math.columbia.edu/tag/042K). 9 tags here are carried by 9 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 042L, a definition
 
@@ -16,13 +16,13 @@ Section 67.10 of the Stacks Project, [Tag 042K](https://stacks.math.columbia.edu
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.Mono`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Mono#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fold5/Monomorphisms.lean, line 63](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fold5/Monomorphisms.lean#L63) (StacksFrontier). References: EGA IV (8.11.5.1); SGA 1 V (3.6); SGA 3 VIIB (2.4.1); SGA 3 VIII (3.4); SGA 4 I (10.4); SGA 4 II (3.2).
+- [`CategoryTheory.Mono`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.Mono#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fold5/Monomorphisms.lean, line 63](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fold5/Monomorphisms.lean#L63) (StacksFrontier). References: EGA IV (8.11.5.1); SGA 1 V (3.6); SGA 3 VIIB (2.4.1); SGA 3 VIII (3.4); SGA 4 I (10.4); SGA 4 II (3.2).
 
 ## Tag 042M, a lemma
 
 [Tag 042M](https://stacks.math.columbia.edu/tag/042M) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.mono_hom_iff_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Monomorphisms.lean, line 213](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Monomorphisms.lean#L213). The attribute's comment: “parts (1) and (2)”.
+**`AlgebraicGeometry.Space.mono_hom_iff_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Monomorphisms.lean, line 213](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Monomorphisms.lean#L213). The attribute's comment: “parts (1) and (2)”.
 
 > **Stacks 042M, parts (1) and (2).** A morphism of algebraic spaces over `S` is a
 > monomorphism of the underlying presheaves exactly when it is a monomorphism of the category
@@ -33,7 +33,7 @@ theorem mono_hom_iff_mono {X Y : AlgebraicSpaces B S hS} (f : X ⟶ Y) :
     Mono f.hom ↔ Mono f
 ```
 
-**`AlgebraicGeometry.Space.mono_iff_isIso_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Monomorphisms.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Monomorphisms.lean#L227). The attribute's comment: “parts (2) and (3)”. References: EGA I (5.3.8).
+**`AlgebraicGeometry.Space.mono_iff_isIso_diagonal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Monomorphisms.lean, line 227](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Monomorphisms.lean#L227). The attribute's comment: “parts (2) and (3)”. References: EGA I (5.3.8).
 
 > **Stacks 042M, parts (2) and (3).** A morphism of algebraic spaces over `S` is a
 > monomorphism of the category of algebraic spaces over `S` exactly when its relative diagonal
@@ -48,7 +48,7 @@ theorem mono_iff_isIso_diagonal {X Y : AlgebraicSpaces B S hS} (f : X ⟶ Y) :
 
 [Tag 042N](https://stacks.math.columbia.edu/tag/042N) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isSeparated_of_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparatedQuasiFiniteEtaleDescent.lean, line 218](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SeparatedQuasiFiniteEtaleDescent.lean#L218).
+**`AlgebraicGeometry.Space.isSeparated_of_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparatedQuasiFiniteEtaleDescent.lean, line 218](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SeparatedQuasiFiniteEtaleDescent.lean#L218).
 
 > **Stacks 042N.** A monomorphism of presheaves on the big fppf site of `S` is a separated
 > morphism of algebraic spaces over `S`: its relative diagonal is an isomorphism, and an
@@ -63,7 +63,7 @@ theorem isSeparated_of_mono {F G : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u} (m : F
     IsSeparated B S hS m
 ```
 
-**`AlgebraicGeometry.Space.isSeparated_of_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativeDiagonalMonomorphism.lean, line 148](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/RelativeDiagonalMonomorphism.lean#L148).
+**`AlgebraicGeometry.Space.isSeparated_of_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/RelativeDiagonalMonomorphism.lean, line 148](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/RelativeDiagonalMonomorphism.lean#L148).
 
 > **Stacks 042N.** A monomorphism of algebraic spaces over `S` is separated: its relative
 > diagonal is an isomorphism, and an isomorphism is a closed immersion.
@@ -82,7 +82,7 @@ theorem isSeparated_of_mono {F G : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u} (g : F
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.mono_comp`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.mono_comp#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fold5/Monomorphisms.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fold5/Monomorphisms.lean#L64) (StacksFrontier).
+- [`CategoryTheory.mono_comp`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.mono_comp#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fold5/Monomorphisms.lean, line 64](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fold5/Monomorphisms.lean#L64) (StacksFrontier).
 
 ## Tag 042P, a lemma
 
@@ -90,13 +90,13 @@ Declarations registered for the tag:
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.MorphismProperty.IsStableUnderBaseChange.monomorphisms`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.MorphismProperty.IsStableUnderBaseChange.monomorphisms#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fold5/Monomorphisms.lean, line 65](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fold5/Monomorphisms.lean#L65) (StacksFrontier). References: EGA I (3.3.12), “more general”; EGA IV (2.7.1), “(ix)”; SGA 3 IV (4.5.7), “more general”; SGA 3 VIB (10.1), “monomorphisms”.
+- [`CategoryTheory.MorphismProperty.IsStableUnderBaseChange.monomorphisms`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.MorphismProperty.IsStableUnderBaseChange.monomorphisms#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fold5/Monomorphisms.lean, line 65](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Fold5/Monomorphisms.lean#L65) (StacksFrontier). References: EGA I (3.3.12), “more general”; EGA IV (2.7.1), “(ix)”; SGA 3 IV (4.5.7), “more general”; SGA 3 VIB (10.1), “monomorphisms”.
 
 ## Tag 042Q, a lemma
 
 [Tag 042Q](https://stacks.math.columbia.edu/tag/042Q) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.mono_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Monomorphisms.lean, line 239](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Monomorphisms.lean#L239).
+**`AlgebraicGeometry.Space.mono_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Monomorphisms.lean, line 239](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Monomorphisms.lean#L239).
 
 > **Stacks 042Q.** For a morphism `f : X ⟶ Y` of algebraic spaces over `S` the following are
 > equivalent: `f` is a monomorphism; every base change of `f` to a scheme of the site is a
@@ -122,7 +122,7 @@ theorem mono_tfae {X Y : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u}
 
 [Tag 042R](https://stacks.math.columbia.edu/tag/042R) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.mono_of_isImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Monomorphisms.lean, line 306](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Monomorphisms.lean#L306). The attribute's comment: “monomorphism”.
+**`AlgebraicGeometry.Space.mono_of_isImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Monomorphisms.lean, line 306](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Monomorphisms.lean#L306). The attribute's comment: “monomorphism”.
 
 > **Stacks 042R.** An immersion of algebraic spaces over `S` is a monomorphism: an immersion
 > of schemes is a monomorphism, and a morphism of presheaves all of whose represented base
@@ -133,7 +133,7 @@ theorem mono_of_isImmersion {F G : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u} {f : F
     (hf : IsImmersion B S hS f) : Mono f
 ```
 
-**`AlgebraicGeometry.Space.isSeparated_of_isImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Monomorphisms.lean, line 322](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Monomorphisms.lean#L322). The attribute's comment: “separatedness”. References: EGA I (5.5.1), “(i) immersions”.
+**`AlgebraicGeometry.Space.isSeparated_of_isImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Monomorphisms.lean, line 322](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Monomorphisms.lean#L322). The attribute's comment: “separatedness”. References: EGA I (5.5.1), “(i) immersions”.
 
 > **Stacks 042R.** An immersion of algebraic spaces over `S` is separated: it is a
 > monomorphism, so its relative diagonal is an isomorphism, and an isomorphism of presheaves is
@@ -148,7 +148,7 @@ theorem isSeparated_of_isImmersion {F G : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u}
 
 [Tag 06MG](https://stacks.math.columbia.edu/tag/06MG) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isEmpty_points_or_isIso_of_mono_to_spec_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MonoToZeroDimensionalLocalSpectra.lean, line 235](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/MonoToZeroDimensionalLocalSpectra.lean#L235).
+**`AlgebraicGeometry.Space.isEmpty_points_or_isIso_of_mono_to_spec_field`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/MonoToZeroDimensionalLocalSpectra.lean, line 235](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/MonoToZeroDimensionalLocalSpectra.lean#L235).
 
 > **Stacks 06MG.** A monomorphism of algebraic spaces over `S` whose target is the spectrum
 > of a field `k` is either a morphism out of an algebraic space with no points, or an
@@ -169,7 +169,7 @@ theorem isEmpty_points_or_isIso_of_mono_to_spec_field
 
 [Tag 06RV](https://stacks.math.columbia.edu/tag/06RV) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.pointsMap_injective_of_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PointsMono.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PointsMono.lean#L67).
+**`AlgebraicGeometry.Space.pointsMap_injective_of_mono`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PointsMono.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/PointsMono.lean#L67).
 
 > **Stacks 06RV.** A monomorphism induces an injective map on equivalence classes of
 > field-valued points.
@@ -189,4 +189,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 67.10, Tag 042K](https://stacks.math.columbia.edu/tag/042K)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

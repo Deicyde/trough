@@ -8,13 +8,13 @@ proof: formalized
 
 # 95.15 Quotients by group actions
 
-Section 95.15 of the Stacks Project, [Tag 04UV](https://stacks.math.columbia.edu/tag/04UV). 5 tags here are carried by 17 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 95.15 of the Stacks Project, [Tag 04UV](https://stacks.math.columbia.edu/tag/04UV). 5 tags here are carried by 17 declarations of the repository (all in StacksFrontier) and 3 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 04WL, a situation
 
 [Tag 04WL](https://stacks.math.columbia.edu/tag/04WL) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.GroupActionSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GroupActionSituation.lean, line 48](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/GroupActionSituation.lean#L48).
+**`AlgebraicGeometry.Space.GroupActionSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/GroupActionSituation.lean, line 48](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/GroupActionSituation.lean#L48).
 
 > **Stacks Project, Tag 04WL.** The data a quotient by a group action is formed from: a
 > scheme `S` of a big fppf site, an algebraic space `B` over `S`, a group algebraic space `G`
@@ -28,7 +28,7 @@ structure GroupActionSituation
 
 [Tag 0370](https://stacks.math.columbia.edu/tag/0370) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.TorsorWithMap.projection_isStackInGroupoids_of_isAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorStackUnconditional.lean, line 260](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorStackUnconditional.lean#L260). The attribute's comment: “in Situation 04WL: the projection of [[X/G]] is a stack in groupoids for the fppf topology, with hB and G explicit”.
+**`AlgebraicGeometry.Space.TorsorWithMap.projection_isStackInGroupoids_of_isAlgebraicSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorStackUnconditional.lean, line 260](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorStackUnconditional.lean#L260). The attribute's comment: “in Situation 04WL: the projection of [[X/G]] is a stack in groupoids for the fppf topology, with hB and G explicit”.
 
 > **Stacks 0370**: in Situation 04WL the projection `p : [[X/G]] ⟶ (Sch/S)_fppf` is a stack
 > in groupoids for the fppf topology.
@@ -43,7 +43,7 @@ theorem projection_isStackInGroupoids_of_isAlgebraicSpace (X : Over B) [ModObj G
     Functor.IsStackInGroupoids.{w} (projection hB G X) (BigFppfOver.topology 𝒞 S hS)
 ```
 
-**`AlgebraicGeometry.Space.TorsorWithMap.projection_isStackInGroupoids_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorsWithEquivariantMap.lean, line 997](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorsWithEquivariantMap.lean#L997). The attribute's comment: “in Situation 04WL: the projection of [[X/G]] is a stack in groupoids for the fppf topology”.
+**`AlgebraicGeometry.Space.TorsorWithMap.projection_isStackInGroupoids_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorsWithEquivariantMap.lean, line 997](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorsWithEquivariantMap.lean#L997). The attribute's comment: “in Situation 04WL: the projection of [[X/G]] is a stack in groupoids for the fppf topology”.
 
 > In Situation 04WL the projection `p : [[X/G]] ⟶ (Sch/S)_fppf` is a stack in groupoids for the
 > fppf topology.
@@ -58,7 +58,7 @@ theorem projection_isStackInGroupoids_unconditional
 
 [Tag 04WM](https://stacks.math.columbia.edu/tag/04WM) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.trivialTorsorWithMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TrivialTorsorWithMap.lean, line 278](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TrivialTorsorWithMap.lean#L278). The attribute's comment: “the trivial torsor with equivariant map attached to a point of X”.
+**`AlgebraicGeometry.Space.trivialTorsorWithMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TrivialTorsorWithMap.lean, line 281](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TrivialTorsorWithMap.lean#L281). The attribute's comment: “the trivial torsor with equivariant map attached to a point of X”.
 
 > **Stacks 04WM**, the trivial torsor with its equivariant map.  The object of the category
 > `[[X/G]]` of Situation 04WL attached to a point `x : U ⟶ X` of `X`: the trivial torsor
@@ -70,7 +70,7 @@ def trivialTorsorWithMap (U : BigFppfOver 𝒞 S hS) (x : yoneda.obj U ⟶ X.lef
     TorsorWithMap hB G X
 ```
 
-**`AlgebraicGeometry.Space.quotientStackTorsorEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackTorsorEquivalence.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackTorsorEquivalence.lean#L187). The attribute's comment: “the canonical equivalence [X/G] ≌ [[X/G]] over the big fppf site, whose forward functor extends the explicit pointwise comparison F\_p”.
+**`AlgebraicGeometry.Space.quotientStackTorsorEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackTorsorEquivalence.lean, line 187](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/QuotientStackTorsorEquivalence.lean#L187). The attribute's comment: “the canonical equivalence [X/G] ≌ [[X/G]] over the big fppf site, whose forward functor extends the explicit pointwise comparison F\_p”.
 
 > The quotient stack `[X/G]` of the action of a group algebraic space `G` over
 > an algebraic space `B` on an algebraic space `X` over `B` is canonically equivalent, over the big
@@ -98,7 +98,7 @@ def quotientStackTorsorEquivalence :
 
 [Tag 0CQJ](https://stacks.math.columbia.edu/tag/0CQJ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.classifyingQuotientStackEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/ClassifyingStackEquivalences.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/ClassifyingStackEquivalences.lean#L81). The attribute's comment: “the leg [B/G] ≌ [[B/G]] over the big fppf site, Stacks 04WM at X = B”.
+**`AlgebraicGeometry.Space.classifyingQuotientStackEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/ClassifyingStackEquivalences.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/ClassifyingStackEquivalences.lean#L81). The attribute's comment: “the leg [B/G] ≌ [[B/G]] over the big fppf site, Stacks 04WM at X = B”.
 
 > **Stacks 0CQJ**, the leg `[B/G] ≌ [[B/G]]`.  The quotient stack `[B/G]` of the trivial
 > action of `G` on `B` (Stacks 044Q part (2), the quotient stack of the action groupoid of
@@ -112,7 +112,7 @@ def classifyingQuotientStackEquivalence :
       (TorsorWithMap.projection hB G (𝟙_ (Over B)))
 ```
 
-**`AlgebraicGeometry.Space.classifyingStackEquivalences`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/ClassifyingStackEquivalences.lean, line 152](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/ClassifyingStackEquivalences.lean#L152). The attribute's comment: “the whole lemma: [B/G] ≌ [[B/G]] ≌ G-Torsors ≌ 𝒢/ℬ-Torsors over the big fppf site, and G-Torsors ≌ G-Principal for G ⟶ B flat and locally of finite presentation, each with its canonical forward functor”.
+**`AlgebraicGeometry.Space.classifyingStackEquivalences`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/ClassifyingStackEquivalences.lean, line 152](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/ClassifyingStackEquivalences.lean#L152). The attribute's comment: “the whole lemma: [B/G] ≌ [[B/G]] ≌ G-Torsors ≌ 𝒢/ℬ-Torsors over the big fppf site, and G-Torsors ≌ G-Principal for G ⟶ B flat and locally of finite presentation, each with its canonical forward functor”.
 
 > **Stacks 0CQJ.** Let `S` be a scheme, `B` an algebraic space over `S` and `G` a group
 > algebraic space over `B`.  Then the stacks in groupoids over `(Sch/S)_fppf`
@@ -154,7 +154,7 @@ def classifyingStackEquivalences :
         ∀ hflat hlfp, (c.2.2.2 hflat hlfp).hom.functor = FppfTorsors.toPrincipal hB G }
 ```
 
-**`AlgebraicGeometry.Space.fppfTorsorsEquivPrincipal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/FppfTorsorsPrincipalComparison.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/FppfTorsorsPrincipalComparison.lean#L102). The attribute's comment: “G-Torsors ≌ G-Principal, for G ⟶ B flat and locally of finite presentation”.
+**`AlgebraicGeometry.Space.fppfTorsorsEquivPrincipal`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/FppfTorsorsPrincipalComparison.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/FppfTorsorsPrincipalComparison.lean#L102). The attribute's comment: “G-Torsors ≌ G-Principal, for G ⟶ B flat and locally of finite presentation”.
 
 > **Stacks 0CQJ.** For `G ⟶ B` flat and locally of finite presentation the canonical functor
 > `G-Torsors ⥤ G-Principal` is an equivalence of categories, with quasi-inverse the functor
@@ -167,7 +167,7 @@ def fppfTorsorsEquivPrincipal (hB : IsAlgebraicSpace 𝒞 S hS B)
     FppfTorsors hB G ≌ PrincipalHomogeneousSpaces hB G
 ```
 
-**`AlgebraicGeometry.Space.FppfTorsors.nonempty_isEquivalenceOver_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorComparisonUnconditional.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorComparisonUnconditional.lean#L67). The attribute's comment: “the 𝒢/ℬ-Torsors leg: G-Torsors ≌ 𝒢/ℬ-Torsors over the big fppf site”.
+**`AlgebraicGeometry.Space.FppfTorsors.nonempty_isEquivalenceOver_comparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorComparisonUnconditional.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorComparisonUnconditional.lean#L67). The attribute's comment: “the 𝒢/ℬ-Torsors leg: G-Torsors ≌ 𝒢/ℬ-Torsors over the big fppf site”.
 
 > **Stacks 04UT**, with nothing carried, and with it the `𝒢/ℬ-Torsors` leg of **Stacks
 > 0CQJ**: the comparison functor `G-Torsors ⥤ 𝒢/ℬ-Torsors` is an equivalence of stacks in
@@ -184,7 +184,7 @@ theorem nonempty_isEquivalenceOver_comparison (hB : IsAlgebraicSpace 𝒞 S hS B
       (comparison hB G))
 ```
 
-**`AlgebraicGeometry.Space.torsorObjToTorsorWithMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorsWithEquivariantMap.lean, line 1108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorsWithEquivariantMap.lean#L1108). The attribute's comment: “the functor G-Torsors ⥤ [[B/G]]”.
+**`AlgebraicGeometry.Space.torsorObjToTorsorWithMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorsWithEquivariantMap.lean, line 1108](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorsWithEquivariantMap.lean#L1108). The attribute's comment: “the functor G-Torsors ⥤ [[B/G]]”.
 
 > The canonical functor `G-Torsors ⥤ [[B/G]]`, attaching to an fppf `G`-torsor its unique
 > equivariant morphism to the base and to a morphism of torsors the same morphism.
@@ -193,7 +193,7 @@ theorem nonempty_isEquivalenceOver_comparison (hB : IsAlgebraicSpace 𝒞 S hS B
 def torsorObjToTorsorWithMap : TorsorObj hB G ⥤ TorsorWithMap hB G (𝟙_ (Over B))
 ```
 
-**`AlgebraicGeometry.Space.torsorWithMapEquivTorsorObj`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorsWithEquivariantMap.lean, line 1140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorsWithEquivariantMap.lean#L1140). The attribute's comment: “[[B/G]] ≌ G-Torsors”.
+**`AlgebraicGeometry.Space.torsorWithMapEquivTorsorObj`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorsWithEquivariantMap.lean, line 1140](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorsWithEquivariantMap.lean#L1140). The attribute's comment: “[[B/G]] ≌ G-Torsors”.
 
 > The category `[[B/G]]` of fppf `G`-torsors with an equivariant morphism to the base, that is
 > the quotient category of the trivial action of `G` on `B`, is canonically equivalent to the
@@ -205,14 +205,14 @@ def torsorWithMapEquivTorsorObj : TorsorWithMap hB G (𝟙_ (Over B)) ≌ Torsor
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Space.FppfTorsors.toPrincipal`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorsToPrincipal.lean#L315), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/FppfTorsorsPrincipalComparison.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/FppfTorsorsPrincipalComparison.lean#L70) (StacksFrontier): “the functor G-Torsors ⥤ G-Principal”.
-- [`AlgebraicGeometry.Space.FppfTorsors.comparison`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorComparison.lean#L167), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorComparisonFibred.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorComparisonFibred.lean#L60) (StacksFrontier): “the canonical functor G-Torsors ⥤ 𝒢/ℬ-Torsors”.
+- [`AlgebraicGeometry.Space.FppfTorsors.toPrincipal`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorsToPrincipal.lean#L315), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/FppfTorsorsPrincipalComparison.lean, line 70](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/FppfTorsorsPrincipalComparison.lean#L70) (StacksFrontier): “the functor G-Torsors ⥤ G-Principal”.
+- [`AlgebraicGeometry.Space.FppfTorsors.comparison`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorComparison.lean#L167), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorComparisonFibred.lean, line 60](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/GroupSpaces/TorsorComparisonFibred.lean#L60) (StacksFrontier): “the canonical functor G-Torsors ⥤ 𝒢/ℬ-Torsors”.
 
 ## Tag 0371, a remark
 
 [Tag 0371](https://stacks.math.columbia.edu/tag/0371) in the Stacks Project.
 
-**`AlgebraicGeometry.AbstractGroupQuotientStack`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/AbstractGroupQuotientStack.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/AbstractGroupQuotientStack.lean#L104). The attribute's comment: “the objects of [[X/G]]”.
+**`AlgebraicGeometry.AbstractGroupQuotientStack`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/AbstractGroupQuotientStack.lean, line 104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/AbstractGroupQuotientStack.lean#L104). The attribute's comment: “the objects of [[X/G]]”.
 
 > **Stacks 0371.** An object of the quotient `[[X/G]]` of a sheaf `X` by an abstract group
 > `G`: an object `U` of `(Sch/S)_fppf`, a torsor on `(Sch/U)_fppf` under the constant sheaf of
@@ -222,7 +222,7 @@ Declarations registered for the tag:
 structure AbstractGroupQuotientStack
 ```
 
-**`AlgebraicGeometry.AbstractGroupQuotientStack.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/AbstractGroupQuotientStack.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/AbstractGroupQuotientStack.lean#L162). The attribute's comment: “the morphisms of [[X/G]]”.
+**`AlgebraicGeometry.AbstractGroupQuotientStack.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/AbstractGroupQuotientStack.lean, line 162](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/AbstractGroupQuotientStack.lean#L162). The attribute's comment: “the morphisms of [[X/G]]”.
 
 > **Stacks 0371.** A morphism `(U, P, φ) ⟶ (U', P', φ')` of the quotient `[[X/G]]`: a
 > morphism `f : U ⟶ U'` of `(Sch/S)_fppf` together with a `G`-equivariant isomorphism
@@ -235,7 +235,7 @@ structure AbstractGroupQuotientStack
 structure Hom (A A' : AbstractGroupQuotientStack B S hS G X ρ)
 ```
 
-**`AlgebraicGeometry.AbstractGroupQuotientStack.instCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/AbstractGroupQuotientStack.lean, line 226](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/AbstractGroupQuotientStack.lean#L226). The attribute's comment: “the category [[X/G]]”.
+**`AlgebraicGeometry.AbstractGroupQuotientStack.instCategory`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/AbstractGroupQuotientStack.lean, line 226](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/AbstractGroupQuotientStack.lean#L226). The attribute's comment: “the category [[X/G]]”.
 
 > **Stacks 0371.** The quotient `[[X/G]]` of a sheaf `X` by an abstract group `G` is a
 > category: morphisms compose by composing `f` and `g`.
@@ -244,7 +244,7 @@ structure Hom (A A' : AbstractGroupQuotientStack B S hS G X ρ)
 instance instCategory : Category (AbstractGroupQuotientStack B S hS G X ρ)
 ```
 
-**`AlgebraicGeometry.AbstractGroupQuotientStack.projection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/AbstractGroupQuotientStack.lean, line 237](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/AbstractGroupQuotientStack.lean#L237). The attribute's comment: “the functor to the big fppf site”.
+**`AlgebraicGeometry.AbstractGroupQuotientStack.projection`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/AbstractGroupQuotientStack.lean, line 237](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/AbstractGroupQuotientStack.lean#L237). The attribute's comment: “the functor to the big fppf site”.
 
 > **Stacks 0371.** The functor `[[X/G]] ⥤ (Sch/S)_fppf` sending a triple `(U, P, φ)` to
 > `U`, which is how `[[X/G]]` is regarded as a category over the big fppf site of `S`.
@@ -254,7 +254,7 @@ def projection :
     AbstractGroupQuotientStack B S hS G X ρ ⥤ BigFppfOver B S hS
 ```
 
-**`AlgebraicGeometry.nonempty_isEquivalenceOver_abstractGroupQuotientStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/AbstractGroupQuotientStackEquivalence.lean, line 478](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/AbstractGroupQuotientStackEquivalence.lean#L478). The attribute's comment: “the equivalence of [[X/G]] with [[X/G\_S]]”.
+**`AlgebraicGeometry.nonempty_isEquivalenceOver_abstractGroupQuotientStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/AbstractGroupQuotientStackEquivalence.lean, line 478](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/AbstractGroupQuotientStackEquivalence.lean#L478). The attribute's comment: “the equivalence of [[X/G]] with [[X/G\_S]]”.
 
 > Let `G` be an abstract group whose constant group scheme `G_S` lies in the big fppf site,
 > `X` an algebraic space over `S` and `ρ : G →* Aut X` an action. Then the stack `[[X/G]]` of
@@ -280,7 +280,7 @@ theorem nonempty_isEquivalenceOver_abstractGroupQuotientStack :
         AbstractGroupQuotientStack.projection F)
 ```
 
-**`AlgebraicGeometry.AbstractGroupQuotientStack.projection_isStackInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/AbstractGroupQuotientStackIsStack.lean, line 772](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/AbstractGroupQuotientStackIsStack.lean#L772). The attribute's comment: “[[X/G]] is a stack in groupoids over (Sch/S)\_fppf”.
+**`AlgebraicGeometry.AbstractGroupQuotientStack.projection_isStackInGroupoids`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/AbstractGroupQuotientStackIsStack.lean, line 772](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/AbstractGroupQuotientStackIsStack.lean#L772). The attribute's comment: “[[X/G]] is a stack in groupoids over (Sch/S)\_fppf”.
 
 > **Stacks 0371.** For an algebraic space `X` over `S` with an action `ρ : G →* Aut X` of an
 > abstract group `G`, the functor `[[X/G]] ⥤ (Sch/S)_fppf` of
@@ -302,7 +302,7 @@ theorem projection_isStackInGroupoids
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.constantGroupSheafRepresentedByConstantGroupScheme_bigFppf`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Topologies/Fppf/ConstantSheaf.lean#L207), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/AbstractGroupQuotientStackIsStack.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/AbstractGroupQuotientStackIsStack.lean#L88) (StacksFrontier): “the constant sheaf G is representable by G\_S on (Sch/S)\_fppf”.
+- [`AlgebraicGeometry.constantGroupSheafRepresentedByConstantGroupScheme_bigFppf`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Topologies/Fppf/ConstantSheaf.lean#L207), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/AbstractGroupQuotientStackIsStack.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/AbstractGroupQuotientStackIsStack.lean#L88) (StacksFrontier): “the constant sheaf G is representable by G\_S on (Sch/S)\_fppf”.
 
 ## Depends on
 
@@ -311,4 +311,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 95.15, Tag 04UV](https://stacks.math.columbia.edu/tag/04UV)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

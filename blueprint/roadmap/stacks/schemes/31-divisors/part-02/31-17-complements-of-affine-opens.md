@@ -8,13 +8,13 @@ proof: formalized
 
 # 31.17 Complements of affine opens
 
-Section 31.17 of the Stacks Project, [Tag 0BCQ](https://stacks.math.columbia.edu/tag/0BCQ). 6 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 31.17 of the Stacks Project, [Tag 0BCQ](https://stacks.math.columbia.edu/tag/0BCQ). 6 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0BCR, a lemma
 
 [Tag 0BCR](https://stacks.math.columbia.edu/tag/0BCR) in the Stacks Project.
 
-**`Stacks.Divisors.isAffineOpen_puncturedSpectrum_iff_krullDimLE_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/PuncturedSpectrumAffineCriterion.lean, line 358](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/PuncturedSpectrumAffineCriterion.lean#L358). References: EGA IV (21.12.9), “special case”.
+**`Stacks.Divisors.isAffineOpen_puncturedSpectrum_iff_krullDimLE_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/PuncturedSpectrumAffineCriterion.lean, line 358](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/PuncturedSpectrumAffineCriterion.lean#L358). References: EGA IV (21.12.9), “special case”.
 
 > The punctured spectrum of a Noetherian local ring is affine if and only if the ring has Krull
 > dimension at most one.
@@ -28,7 +28,7 @@ theorem isAffineOpen_puncturedSpectrum_iff_krullDimLE_one :
 
 [Tag 0BCU](https://stacks.math.columbia.edu/tag/0BCU) in the Stacks Project.
 
-**`Stacks.Divisors.krullDimLE_one_stalk_at_genericPoint_compl_affineOpenImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/PuncturedSpectrumAffineCriterion.lean, line 435](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/PuncturedSpectrumAffineCriterion.lean#L435). The attribute's comment: “dimension bound”. References: EGA IV (21.12.7), “codimension ≤ 1”; SGA 6 II (2.2.6), “dim ≤ 1 at maximal pts”; SGA 2 V (3.4).
+**`Stacks.Divisors.krullDimLE_one_stalk_at_genericPoint_compl_affineOpenImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/PuncturedSpectrumAffineCriterion.lean, line 435](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/PuncturedSpectrumAffineCriterion.lean#L435). The attribute's comment: “dimension bound”. References: EGA IV (21.12.7), “codimension ≤ 1”; SGA 6 II (2.2.6), “dim ≤ 1 at maximal pts”; SGA 2 V (3.4).
 
 > Let `U` be an open subscheme of a locally Noetherian scheme `X` whose inclusion is affine.  At
 > the generic point `ξ` of an irreducible component of `X ∖ U` the local ring has Krull dimension at
@@ -46,7 +46,7 @@ theorem krullDimLE_one_stalk_at_genericPoint_compl_affineOpenImmersion
     Ring.KrullDimLE 1 (X.presheaf.stalk (ξ : X))
 ```
 
-**`Stacks.Divisors.ringKrullDim_stalk_at_genericPoint_compl_affineOpenImmersion_eq_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/PuncturedSpectrumAffineCriterion.lean, line 503](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/PuncturedSpectrumAffineCriterion.lean#L503). The attribute's comment: “equality in the closure”. References: EGA IV (21.12.7), “codimension = 1 if dense”; SGA 6 II (2.2.6), “dim = 1 case”.
+**`Stacks.Divisors.ringKrullDim_stalk_at_genericPoint_compl_affineOpenImmersion_eq_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/PuncturedSpectrumAffineCriterion.lean, line 503](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/PuncturedSpectrumAffineCriterion.lean#L503). The attribute's comment: “equality in the closure”. References: EGA IV (21.12.7), “codimension = 1 if dense”; SGA 6 II (2.2.6), “dim = 1 case”.
 
 > With the hypotheses of
 > `Stacks.Divisors.krullDimLE_one_stalk_at_genericPoint_compl_affineOpenImmersion`, if `U` is dense
@@ -69,7 +69,7 @@ theorem ringKrullDim_stalk_at_genericPoint_compl_affineOpenImmersion_eq_one
 
 [Tag 0BCV](https://stacks.math.columbia.edu/tag/0BCV) in the Stacks Project.
 
-**`Stacks.PuncturedSpectrum.krullDimLE_one_stalk_at_genericPoint_compl_affineOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/PuncturedSpectrum/SeparatedComplement.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/PuncturedSpectrum/SeparatedComplement.lean#L71). The attribute's comment: “dimension bound”. References: EGA IV (21.12.7), “dim ≤ 1, U affine open”; SGA 2 V (3.4); SGA 6 II (2.2.6), “X sep, U affine; dim≤1”.
+**`Stacks.PuncturedSpectrum.krullDimLE_one_stalk_at_genericPoint_compl_affineOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/PuncturedSpectrum/SeparatedComplement.lean, line 71](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/PuncturedSpectrum/SeparatedComplement.lean#L71). The attribute's comment: “dimension bound”. References: EGA IV (21.12.7), “dim ≤ 1, U affine open”; SGA 2 V (3.4); SGA 6 II (2.2.6), “X sep, U affine; dim≤1”.
 
 > **Stacks Project, Tag 0BCV.** The local ring at the generic point of an irreducible
 > component of the complement of an affine open in a separated locally Noetherian scheme has
@@ -84,7 +84,7 @@ theorem krullDimLE_one_stalk_at_genericPoint_compl_affineOpen
     Ring.KrullDimLE 1 (X.presheaf.stalk (ξ : X))
 ```
 
-**`Stacks.PuncturedSpectrum.ringKrullDim_stalk_at_genericPoint_compl_affineOpen_eq_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/PuncturedSpectrum/SeparatedComplement.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/PuncturedSpectrum/SeparatedComplement.lean#L85). The attribute's comment: “equality in the closure”. References: EGA IV (21.12.7), “dim = 1, U affine open”; SGA 6 II (2.2.6), “X sep, U affine; dim=1”.
+**`Stacks.PuncturedSpectrum.ringKrullDim_stalk_at_genericPoint_compl_affineOpen_eq_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/PuncturedSpectrum/SeparatedComplement.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/PuncturedSpectrum/SeparatedComplement.lean#L85). The attribute's comment: “equality in the closure”. References: EGA IV (21.12.7), “dim = 1, U affine open”; SGA 6 II (2.2.6), “X sep, U affine; dim=1”.
 
 > **Stacks Project, Tag 0BCV.** Under the hypotheses of the dimension bound, the local ring
 > has dimension one when the affine open is dense or the generic point is in its closure.
@@ -103,7 +103,7 @@ theorem ringKrullDim_stalk_at_genericPoint_compl_affineOpen_eq_one
 
 [Tag 0BCW](https://stacks.math.columbia.edu/tag/0BCW) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_effectiveCartierDivisor_compl_affineOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/EffectiveCartier/AffineComplement.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/EffectiveCartier/AffineComplement.lean#L107). The attribute's comment: “the separated case, where the diagonal is affine”.
+**`AlgebraicGeometry.exists_effectiveCartierDivisor_compl_affineOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/EffectiveCartier/AffineComplement.lean, line 107](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/EffectiveCartier/AffineComplement.lean#L107). The attribute's comment: “the separated case, where the diagonal is affine”.
 
 > **Stacks Project, Tag 0EGJ.** The complement of a dense affine open in a Noetherian
 > scheme with affine diagonal is the support of an effective Cartier divisor if its local
@@ -120,7 +120,7 @@ theorem exists_effectiveCartierDivisor_compl_affineOpen
         (I.support : Set X) = (U : Set X)ᶜ
 ```
 
-**`AlgebraicGeometry.exists_effectiveCartierDivisor_compl_affineOpen_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/EffectiveCartier/SeparatedAffineComplement.lean, line 54](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/EffectiveCartier/SeparatedAffineComplement.lean#L54).
+**`AlgebraicGeometry.exists_effectiveCartierDivisor_compl_affineOpen_of_isSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/EffectiveCartier/SeparatedAffineComplement.lean, line 54](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/EffectiveCartier/SeparatedAffineComplement.lean#L54).
 
 > **Stacks Project, Tag 0BCW.** Let `X` be a Noetherian separated scheme and `U ⊆ X` a dense
 > affine open whose complement meets only points with factorial local rings.  Then there is an
@@ -139,7 +139,7 @@ theorem exists_effectiveCartierDivisor_compl_affineOpen_of_isSeparated
 
 [Tag 0EGJ](https://stacks.math.columbia.edu/tag/0EGJ) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_effectiveCartierDivisor_compl_affineOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/EffectiveCartier/AffineComplement.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/EffectiveCartier/AffineComplement.lean#L107).
+**`AlgebraicGeometry.exists_effectiveCartierDivisor_compl_affineOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/EffectiveCartier/AffineComplement.lean, line 107](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/EffectiveCartier/AffineComplement.lean#L107).
 
 > **Stacks Project, Tag 0EGJ.** The complement of a dense affine open in a Noetherian
 > scheme with affine diagonal is the support of an effective Cartier divisor if its local
@@ -160,7 +160,7 @@ theorem exists_effectiveCartierDivisor_compl_affineOpen
 
 [Tag 0GML](https://stacks.math.columbia.edu/tag/0GML) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isAmpleFamily_of_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/AmpleFamilyRegular.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/AmpleFamilyRegular.lean#L187). References: SGA 6 II (2.2.7.1), “more general”.
+**`AlgebraicGeometry.exists_isAmpleFamily_of_isRegular`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/AmpleFamilyRegular.lean, line 187](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/AmpleFamilyRegular.lean#L187). References: SGA 6 II (2.2.7.1), “more general”.
 
 > **Stacks Project, Tag 0GML.** A quasi-compact regular scheme whose diagonal is affine has an
 > ample family of invertible modules.
@@ -183,4 +183,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 31.17, Tag 0BCQ](https://stacks.math.columbia.edu/tag/0BCQ)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

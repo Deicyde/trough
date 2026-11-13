@@ -1,6 +1,6 @@
 # 39 Groupoid Schemes
 
-Chapter 39 of the Stacks Project, *Groupoid Schemes*, [Tag 022L](https://stacks.math.columbia.edu/tag/022L): the 23 sections of its 25 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 126 tags are carried by 310 declarations of the repository (all in StacksFrontier) and 27 registered declarations.
+Chapter 39 of the Stacks Project, *Groupoid Schemes*, [Tag 022L](https://stacks.math.columbia.edu/tag/022L): the 23 sections of its 25 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 126 tags are carried by 312 declarations of the repository (all in StacksFrontier) and 24 registered declarations.
 
 ## [39.3 Equivalence relations to 39.22 Separation conditions](part-01/README.md)
 

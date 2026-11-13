@@ -1,6 +1,6 @@
 # 76 More on Morphisms of Spaces
 
-Chapter 76 of the Stacks Project, *More on Morphisms of Spaces*, [Tag 049F](https://stacks.math.columbia.edu/tag/049F): the 54 sections of its 57 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 328 tags are carried by 950 declarations of the repository (all in StacksFrontier) and 58 registered declarations.
+Chapter 76 of the Stacks Project, *More on Morphisms of Spaces*, [Tag 049F](https://stacks.math.columbia.edu/tag/049F): the 54 sections of its 57 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 328 tags are carried by 912 declarations of the repository (all in StacksFrontier) and 50 registered declarations.
 
 ## [76.3 Radicial morphisms to 76.7 Sheaf of differentials of…](part-01/README.md)
 
@@ -20,17 +20,17 @@ Chapter 76 of the Stacks Project, *More on Morphisms of Spaces*, [Tag 049F](http
 - [76.13 Formally smooth, étale, unramified transformations](part-02/76-13-formally-smooth-etale-unramified-transform.md)
 - [76.14 Formally unramified morphisms](part-02/76-14-formally-unramified-morphisms.md)
 
-## [76.15 Universal first order… to 76.18 Infinitesimal…](part-03/README.md)
+## [76.15 Universal first order… to 76.20 Smoothness over a…](part-03/README.md)
 
 - [76.15 Universal first order thickenings](part-03/76-15-universal-first-order-thickenings.md)
 - [76.16 Formally étale morphisms](part-03/76-16-formally-etale-morphisms.md)
 - [76.17 Infinitesimal deformations of maps](part-03/76-17-infinitesimal-deformations-of-maps.md)
 - [76.18 Infinitesimal deformations of algebraic spaces](part-03/76-18-infinitesimal-deformations-of-algebraic-sp.md)
+- [76.19 Formally smooth morphisms](part-03/76-19-formally-smooth-morphisms.md)
+- [76.20 Smoothness over a Noetherian base](part-03/76-20-smoothness-over-a-noetherian-base.md)
 
-## [76.19 Formally smooth morphisms to 76.32 Catenary algebraic spaces](part-04/README.md)
+## [76.21 The naive cotangent… to 76.35 Applications of Zariski's…](part-04/README.md)
 
-- [76.19 Formally smooth morphisms](part-04/76-19-formally-smooth-morphisms.md)
-- [76.20 Smoothness over a Noetherian base](part-04/76-20-smoothness-over-a-noetherian-base.md)
 - [76.21 The naive cotangent complex](part-04/76-21-the-naive-cotangent-complex.md)
 - [76.22 Openness of the flat locus](part-04/76-22-openness-of-the-flat-locus.md)
 - [76.23 Critère de platitude par fibres](part-04/76-23-critere-de-platitude-par-fibres.md)
@@ -43,12 +43,12 @@ Chapter 76 of the Stacks Project, *More on Morphisms of Spaces*, [Tag 049F](http
 - [76.30 Connected components of fibres](part-04/76-30-connected-components-of-fibres.md)
 - [76.31 Dimension of fibres](part-04/76-31-dimension-of-fibres.md)
 - [76.32 Catenary algebraic spaces](part-04/76-32-catenary-algebraic-spaces.md)
+- [76.33 Étale localization of morphisms](part-04/76-33-etale-localization-of-morphisms.md)
+- [76.34 Zariski's Main Theorem](part-04/76-34-zariskis-main-theorem.md)
+- [76.35 Applications of Zariski's Main Theorem, I](part-04/76-35-applications-of-zariskis-main-theorem-i.md)
 
-## [76.33 Étale localization of… to 76.48 Local complete…](part-05/README.md)
+## [76.36 Stein factorization to 76.51 Characterizing…](part-05/README.md)
 
-- [76.33 Étale localization of morphisms](part-05/76-33-etale-localization-of-morphisms.md)
-- [76.34 Zariski's Main Theorem](part-05/76-34-zariskis-main-theorem.md)
-- [76.35 Applications of Zariski's Main Theorem, I](part-05/76-35-applications-of-zariskis-main-theorem-i.md)
 - [76.36 Stein factorization](part-05/76-36-stein-factorization.md)
 - [76.37 Extending properties from an open](part-05/76-37-extending-properties-from-an-open.md)
 - [76.38 Blowing up and flatness](part-05/76-38-blowing-up-and-flatness.md)
@@ -62,11 +62,11 @@ Chapter 76 of the Stacks Project, *More on Morphisms of Spaces*, [Tag 049F](http
 - [76.46 Pseudo-coherent morphisms](part-05/76-46-pseudo-coherent-morphisms.md)
 - [76.47 Perfect morphisms](part-05/76-47-perfect-morphisms.md)
 - [76.48 Local complete intersection morphisms](part-05/76-48-local-complete-intersection-morphisms.md)
+- [76.49 When is a morphism an isomorphism?](part-05/76-49-when-is-a-morphism-an-isomorphism.md)
+- [76.51 Characterizing pseudo-coherent complexes, II](part-05/76-51-characterizing-pseudo-coherent-complexes-i.md)
 
-## [76.49 When is a morphism an… to 76.57 Blowing up and the…](part-06/README.md)
+## [76.52 Relatively perfect objects to 76.57 Blowing up and the…](part-06/README.md)
 
-- [76.49 When is a morphism an isomorphism?](part-06/76-49-when-is-a-morphism-an-isomorphism.md)
-- [76.51 Characterizing pseudo-coherent complexes, II](part-06/76-51-characterizing-pseudo-coherent-complexes-i.md)
 - [76.52 Relatively perfect objects](part-06/76-52-relatively-perfect-objects.md)
 - [76.53 Theorem of the cube](part-06/76-53-theorem-of-the-cube.md)
 - [76.54 Descent of finiteness properties of complexes](part-06/76-54-descent-of-finiteness-properties-of-comple.md)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 66.3 Separation axioms
 
-Section 66.3 of the Stacks Project, [Tag 03BR](https://stacks.math.columbia.edu/tag/03BR). 4 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 66.3 of the Stacks Project, [Tag 03BR](https://stacks.math.columbia.edu/tag/03BR). 4 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 03BS, a definition
 
 [Tag 03BS](https://stacks.math.columbia.edu/tag/03BS) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isAbsolutelyQuasiSeparated_of_presentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PresentationQuasiCompact.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/PresentationQuasiCompact.lean#L125). The attribute's comment: “part (3): quasi-separated”.
+**`AlgebraicGeometry.Space.isAbsolutelyQuasiSeparated_of_presentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/PresentationQuasiCompact.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/PresentationQuasiCompact.lean#L125). The attribute's comment: “part (3): quasi-separated”.
 
 > **Stacks 07S4 for a presentation.** An algebraic space presented by a chart whose
 > underlying space is quasi-separated, with quasi-compact source projection, is
@@ -31,7 +31,7 @@ theorem isAbsolutelyQuasiSeparated_of_presentation (hZ : B.Contains (⊤_ Scheme
     IsAbsolutelyQuasiSeparated B S hS hZ F
 ```
 
-**`AlgebraicGeometry.Space.IsAbsolutelySeparated`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Separated.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Separated.lean#L95). The attribute's comment: “part (1): separated”.
+**`AlgebraicGeometry.Space.IsAbsolutelySeparated`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Separated.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Separated.lean#L95). The attribute's comment: “part (1): separated”.
 
 > An algebraic space is *separated* when it is separated over the terminal scheme, that is,
 > when its absolute diagonal is a closed immersion.
@@ -40,7 +40,7 @@ theorem isAbsolutelyQuasiSeparated_of_presentation (hZ : B.Contains (⊤_ Scheme
 abbrev IsAbsolutelySeparated (F : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u) : Prop
 ```
 
-**`AlgebraicGeometry.Space.IsAbsolutelyLocallySeparated`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Separated.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Separated.lean#L101). The attribute's comment: “part (2): locally separated”.
+**`AlgebraicGeometry.Space.IsAbsolutelyLocallySeparated`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Separated.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Separated.lean#L101). The attribute's comment: “part (2): locally separated”.
 
 > An algebraic space is *locally separated* when it is locally separated over the terminal
 > scheme, that is, when its absolute diagonal is an immersion.
@@ -49,7 +49,7 @@ abbrev IsAbsolutelySeparated (F : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u) : Prop
 abbrev IsAbsolutelyLocallySeparated (F : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u) : Prop
 ```
 
-**`AlgebraicGeometry.Space.IsAbsolutelyQuasiSeparated`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Separated.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Separated.lean#L107). The attribute's comment: “part (3): quasi-separated”.
+**`AlgebraicGeometry.Space.IsAbsolutelyQuasiSeparated`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Separated.lean, line 107](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Separated.lean#L107). The attribute's comment: “part (3): quasi-separated”.
 
 > An algebraic space is *quasi-separated* when it is quasi-separated over the terminal
 > scheme, that is, when its absolute diagonal is quasi-compact.
@@ -58,7 +58,7 @@ abbrev IsAbsolutelyLocallySeparated (F : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u) 
 abbrev IsAbsolutelyQuasiSeparated (F : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u) : Prop
 ```
 
-**`AlgebraicGeometry.Space.IsAbsolutelyZariskiLocallyQuasiSeparated`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Separated.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Separated.lean#L113). The attribute's comment: “part (4): Zariski locally quasi-separated”.
+**`AlgebraicGeometry.Space.IsAbsolutelyZariskiLocallyQuasiSeparated`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Separated.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Separated.lean#L113). The attribute's comment: “part (4): Zariski locally quasi-separated”.
 
 > An algebraic space is *Zariski locally quasi-separated* when its absolute form admits a
 > Zariski covering by quasi-separated open subspaces.
@@ -72,7 +72,7 @@ abbrev IsAbsolutelyZariskiLocallyQuasiSeparated
 
 [Tag 03DY](https://stacks.math.columbia.edu/tag/03DY) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isAbsolutelyZariskiLocallyQuasiSeparated_of_isAbsolutelyQuasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ConditionComparisons.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ConditionComparisons.lean#L101). The attribute's comment: “part (2): Zariski locally quasi-separated”.
+**`AlgebraicGeometry.Space.isAbsolutelyZariskiLocallyQuasiSeparated_of_isAbsolutelyQuasiSeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Decent/ConditionComparisons.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Decent/ConditionComparisons.lean#L101). The attribute's comment: “part (2): Zariski locally quasi-separated”.
 
 > Condition `(η)` implies condition `(ζ)`: a quasi-separated algebraic space is Zariski
 > locally quasi-separated.
@@ -83,7 +83,7 @@ theorem isAbsolutelyZariskiLocallyQuasiSeparated_of_isAbsolutelyQuasiSeparated
     IsAbsolutelyZariskiLocallyQuasiSeparated B S hS hZ X
 ```
 
-**`AlgebraicGeometry.Space.isAbsolutelyLocallySeparated_of_isAbsolutelySeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparatedVariants.lean, line 89](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SeparatedVariants.lean#L89). The attribute's comment: “part (1): locally separated”.
+**`AlgebraicGeometry.Space.isAbsolutelyLocallySeparated_of_isAbsolutelySeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparatedVariants.lean, line 89](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SeparatedVariants.lean#L89). The attribute's comment: “part (1): locally separated”.
 
 > A separated algebraic space is locally separated.
 
@@ -94,7 +94,7 @@ theorem isAbsolutelyLocallySeparated_of_isAbsolutelySeparated
     IsAbsolutelyLocallySeparated B S hS hZ F
 ```
 
-**`AlgebraicGeometry.Space.isAbsolutelyQuasiSeparated_of_isAbsolutelySeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparatedVariants.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SeparatedVariants.lean#L97). The attribute's comment: “part (1): quasi-separated”.
+**`AlgebraicGeometry.Space.isAbsolutelyQuasiSeparated_of_isAbsolutelySeparated`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparatedVariants.lean, line 97](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SeparatedVariants.lean#L97). The attribute's comment: “part (1): quasi-separated”.
 
 > A separated algebraic space is quasi-separated.
 
@@ -109,7 +109,7 @@ theorem isAbsolutelyQuasiSeparated_of_isAbsolutelySeparated
 
 [Tag 0AHR](https://stacks.math.columbia.edu/tag/0AHR) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isAbsolutelyQuasiSeparated_iff_compactSpace_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiSeparatedFibreProducts.lean, line 249](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasiSeparatedFibreProducts.lean#L249). The attribute's comment: “equivalence of (1) and (2)”.
+**`AlgebraicGeometry.Space.isAbsolutelyQuasiSeparated_iff_compactSpace_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiSeparatedFibreProducts.lean, line 249](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasiSeparatedFibreProducts.lean#L249). The attribute's comment: “equivalence of (1) and (2)”.
 
 > **Stacks 0AHR, equivalence of (1) and (2).** An algebraic space over `S` is quasi-separated
 > exactly when the fibre product of any two quasi-compact schemes over it is a quasi-compact
@@ -128,7 +128,7 @@ theorem isAbsolutelyQuasiSeparated_iff_compactSpace_pullback
           Nonempty (yoneda.obj W ≅ pullback f g)
 ```
 
-**`AlgebraicGeometry.Space.isAbsolutelyQuasiSeparated_iff_compactSpace_pullback_affine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiSeparatedFibreProducts.lean, line 270](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/QuasiSeparatedFibreProducts.lean#L270). The attribute's comment: “equivalence of (1) and (3)”.
+**`AlgebraicGeometry.Space.isAbsolutelyQuasiSeparated_iff_compactSpace_pullback_affine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/QuasiSeparatedFibreProducts.lean, line 270](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/QuasiSeparatedFibreProducts.lean#L270). The attribute's comment: “equivalence of (1) and (3)”.
 
 > **Stacks 0AHR, equivalence of (1) and (3).** It is enough to test quasi-compactness of the
 > fibre products of Stacks 0AHR on pairs of *affine* schemes over the algebraic space.
@@ -146,7 +146,7 @@ theorem isAbsolutelyQuasiSeparated_iff_compactSpace_pullback_affine
           Nonempty (yoneda.obj W ≅ pullback f g)
 ```
 
-**`AlgebraicGeometry.Space.isAbsolutelyQuasiSeparated_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparatedAffineIntersections.lean, line 570](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SeparatedAffineIntersections.lean#L570).
+**`AlgebraicGeometry.Space.isAbsolutelyQuasiSeparated_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparatedAffineIntersections.lean, line 570](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SeparatedAffineIntersections.lean#L570).
 
 > **Stacks 0AHR.** For an algebraic space `X` over `S` the following are equivalent: `X` is a
 > quasi-separated algebraic space; for every pair of morphisms into `X` from objects of the big
@@ -175,7 +175,7 @@ theorem isAbsolutelyQuasiSeparated_tfae (X : (BigFppfOver B S hS)ᵒᵖ ⥤ Type
 
 [Tag 0AHS](https://stacks.math.columbia.edu/tag/0AHS) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isAbsolutelySeparated_iff_hasAffineIntersections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparatedAffineIntersections.lean, line 384](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SeparatedAffineIntersections.lean#L384).
+**`AlgebraicGeometry.Space.isAbsolutelySeparated_iff_hasAffineIntersections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SeparatedAffineIntersections.lean, line 384](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SeparatedAffineIntersections.lean#L384).
 
 > **Stacks 0AHS.** An algebraic space over `S` is separated if and only if for every pair of
 > objects of the big fppf site with affine underlying scheme mapping to it the fibre product has
@@ -204,4 +204,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 66.3, Tag 03BR](https://stacks.math.columbia.edu/tag/03BR)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

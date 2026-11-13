@@ -8,13 +8,13 @@ proof: formalized
 
 # 42.26 Intersecting with an invertible sheaf and push and pull
 
-Section 42.26 of the Stacks Project, [Tag 0AYA](https://stacks.math.columbia.edu/tag/0AYA). 4 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 42.26 of the Stacks Project, [Tag 0AYA](https://stacks.math.columbia.edu/tag/0AYA). 4 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0EPJ, a lemma
 
 [Tag 0EPJ](https://stacks.math.columbia.edu/tag/0EPJ) in the Stacks Project.
 
-**`Stacks.Chow.flatPullback_meromorphicDivisor_eq_sum_components`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/FlatPullbackMeromorphicSection.lean, line 186](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/FlatPullbackMeromorphicSection.lean#L186).
+**`Stacks.Chow.flatPullback_meromorphicDivisor_eq_sum_components`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/FlatPullbackMeromorphicSection.lean, line 186](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/RationalEquivalence/FlatPullbackMeromorphicSection.lean#L186).
 
 > **Stacks 0EPJ.** Let `C = (S, δ)` be the base situation of chapter 42, let `X` and `Y` be
 > locally of finite type over `S` with `Y` integral of delta-dimension `n`, and let `f : X ⟶ Y` be
@@ -70,7 +70,7 @@ theorem flatPullback_meromorphicDivisor_eq_sum_components (C : ChowSituation.{u}
 
 [Tag 02SS](https://stacks.math.columbia.edu/tag/02SS) in the Stacks Project.
 
-**`Stacks.Chow.flatNaturality_firstChernIdentityCapRule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/FirstChernClassCanonical.lean, line 275](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/FirstChernClassCanonical.lean#L275). The attribute's comment: “the flat-pullback identity read for the identity cap rule of the canonical first Chern class cap product on the test schemes of X, i.e. the predicate `IdentityCapRule.FlatNaturality` that the bivariant class of Stacks 0B77 takes as its second naturality hypothesis, with no hypothesis of its own”.
+**`Stacks.Chow.flatNaturality_firstChernIdentityCapRule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/FirstChernClassCanonical.lean, line 275](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/FirstChernClassCanonical.lean#L275). The attribute's comment: “the flat-pullback identity read for the identity cap rule of the canonical first Chern class cap product on the test schemes of X, i.e. the predicate `IdentityCapRule.FlatNaturality` that the bivariant class of Stacks 0B77 takes as its second naturality hypothesis, with no hypothesis of its own”.
 
 > **The flat-pullback identity on the test schemes.** For the canonical first Chern class cap
 > product and test morphisms `g : T ⟶ X` and `h : T' ⟶ T` with `h` flat of relative dimension `r`,
@@ -87,7 +87,7 @@ theorem flatNaturality_firstChernIdentityCapRule :
       (firstChernIdentityCapRule C sX (canonicalFirstChernCapRule C) L)
 ```
 
-**`Stacks.Chow.flatPullback_firstChernCapOfInvertible_rationallyEquivalent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/InvertibleChernCapPullback.lean, line 52](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/InvertibleChernCapPullback.lean#L52).
+**`Stacks.Chow.flatPullback_firstChernCapOfInvertible_rationallyEquivalent`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/InvertibleChernCapPullback.lean, line 52](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/FlatPullback/InvertibleChernCapPullback.lean#L52).
 
 > Intersecting with the first Chern class of an invertible module commutes with flat pullback:
 > for `f : X' ⟶ X` flat of relative dimension `r`, an invertible module `L` on `X` and a
@@ -110,7 +110,7 @@ theorem flatPullback_firstChernCapOfInvertible_rationallyEquivalent (α : CycleG
 
 [Tag 02ST](https://stacks.math.columbia.edu/tag/02ST) in the Stacks Project.
 
-**`Stacks.Chow.properChowPushforward_firstChernClassCapOfInvertible_fundamentalCycle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDominantPushforward.lean, line 257](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDominantPushforward.lean#L257). The attribute's comment: “second displayed equation”.
+**`Stacks.Chow.properChowPushforward_firstChernClassCapOfInvertible_fundamentalCycle`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernClassDominantPushforward.lean, line 257](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChernClassDominantPushforward.lean#L257). The attribute's comment: “second displayed equation”.
 
 > **The second displayed equation of Stacks 02ST.** Let `X` and `Y` be integral and locally of
 > finite type over the base with `dim_δ(X) = dim_δ(Y) = n`, let `f : X ⟶ Y` be proper and dominant
@@ -148,7 +148,7 @@ theorem properChowPushforward_firstChernClassCapOfInvertible_fundamentalCycle
             (cycleAssociatedToClosedSubscheme C sY (𝟙 Y) (n - 1 + 1))
 ```
 
-**`Stacks.Chow.properPushforward_meromorphicDivisorCycleOfInvertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/MeromorphicDivisorPushforward.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/MeromorphicDivisorPushforward.lean#L191). The attribute's comment: “first displayed equation”.
+**`Stacks.Chow.properPushforward_meromorphicDivisorCycleOfInvertible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/MeromorphicDivisorPushforward.lean, line 191](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/MeromorphicDivisorPushforward.lean#L191). The attribute's comment: “first displayed equation”.
 
 > **The first displayed equation of Stacks 02ST.** For a proper dominant morphism `p : X ⟶ Y`
 > of integral schemes locally of finite type over the base with `dim_δ(X) = dim_δ(Y) = n`, an
@@ -185,7 +185,7 @@ theorem properPushforward_meromorphicDivisorCycleOfInvertible (C : ChowSituation
 
 [Tag 02SU](https://stacks.math.columbia.edu/tag/02SU) in the Stacks Project.
 
-**`Stacks.Chow.properNaturality_firstChernIdentityCapRule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/FirstChernClassCanonical.lean, line 194](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/FirstChernClassCanonical.lean#L194). The attribute's comment: “the projection formula read for the identity cap rule of the canonical first Chern class cap product on the test schemes of X, i.e. the predicate `IdentityCapRule.ProperNaturality` that the bivariant class of Stacks 0B77 takes as its first naturality hypothesis, with no hypothesis of its own”.
+**`Stacks.Chow.properNaturality_firstChernIdentityCapRule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/Bivariant/FirstChernClassCanonical.lean, line 194](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/Bivariant/FirstChernClassCanonical.lean#L194). The attribute's comment: “the projection formula read for the identity cap rule of the canonical first Chern class cap product on the test schemes of X, i.e. the predicate `IdentityCapRule.ProperNaturality` that the bivariant class of Stacks 0B77 takes as its first naturality hypothesis, with no hypothesis of its own”.
 
 > **The projection formula on the test schemes.** For the canonical first Chern class cap product
 > and test morphisms `g : T ⟶ X` and `h : T' ⟶ T` with `h` proper,
@@ -201,7 +201,7 @@ theorem properNaturality_firstChernIdentityCapRule :
       (firstChernIdentityCapRule C sX (canonicalFirstChernCapRule C) L)
 ```
 
-**`Stacks.Chow.properChowPushforward_firstChernClassCapOfInvertible_of_isProper'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernCapProperPushforward/Invertible.lean, line 268](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernCapProperPushforward/Invertible.lean#L268).
+**`Stacks.Chow.properChowPushforward_firstChernClassCapOfInvertible_of_isProper'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernCapProperPushforward/Invertible.lean, line 268](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChernCapProperPushforward/Invertible.lean#L268).
 
 > **Stacks 02SU.** Let `p : X ⟶ Y` be a proper morphism of schemes locally of finite type over
 > the base scheme of chapter 42 and let `ℒ` be an invertible `𝒪_Y`-module. Then for every
@@ -220,7 +220,7 @@ theorem properChowPushforward_firstChernClassCapOfInvertible_of_isProper'
         (properPushforward C sX sY p hp (k + 1) α)
 ```
 
-**`Stacks.Chow.properChowPushforward_firstChernClassCapOfInvertible_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernCapPushforward/Proper.lean, line 471](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ChernCapPushforward/Proper.lean#L471).
+**`Stacks.Chow.properChowPushforward_firstChernClassCapOfInvertible_of_isProper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ChernCapPushforward/Proper.lean, line 471](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ChernCapPushforward/Proper.lean#L471).
 
 > **Stacks 02SU.** Let `p : X ⟶ Y` be a proper morphism of schemes locally of finite type over
 > the base scheme of chapter 42, and let `ℒ` be an invertible `𝒪_Y`-module. Then for every
@@ -248,4 +248,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 42.26, Tag 0AYA](https://stacks.math.columbia.edu/tag/0AYA)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

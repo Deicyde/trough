@@ -1,42 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: AlgebraicGeometry.Scheme.Hom.IsRelativeDualizingComplex, AlgebraicGeometry.Scheme.Hom.IsRelativeDualizingPair, AlgebraicGeometry.Scheme.Hom.isRelativeDualizingComplex_derivedSections, AlgebraicGeometry.Scheme.Hom.IsRelativeDualizingComplex.isRelativeDualizingComplex_derivedSections, AlgebraicGeometry.Scheme.Hom.IsRelativeDualizingComplex.isIso_derivedSheafHomothety, AlgebraicGeometry.Scheme.Hom.IsRelativeDualizingComplex.existsUnique_iso, AlgebraicGeometry.Scheme.Hom.exists_isRelativeDualizingComplex, AlgebraicGeometry.Scheme.Hom.IsRelativeDualizingComplex.baseChange
+lean: AlgebraicGeometry.Scheme.Hom.IsRelativeDualizingPair, AlgebraicGeometry.Scheme.Hom.isRelativeDualizingComplex_derivedSections, AlgebraicGeometry.Scheme.Hom.IsRelativeDualizingComplex.isRelativeDualizingComplex_derivedSections, AlgebraicGeometry.Scheme.Hom.IsRelativeDualizingComplex.isIso_derivedSheafHomothety, AlgebraicGeometry.Scheme.Hom.IsRelativeDualizingComplex.existsUnique_iso, AlgebraicGeometry.Scheme.Hom.exists_isRelativeDualizingComplex, AlgebraicGeometry.Scheme.Hom.IsRelativeDualizingComplex.baseChange, Stacks.Duality.isRelativeDualizingComplex_relativeDualizingComplex
 statement: formalized
 proof: formalized
 ---
 
 # 48.28 Relative dualizing complexes
 
-Section 48.28 of the Stacks Project, [Tag 0E2S](https://stacks.math.columbia.edu/tag/0E2S). 10 tags here are carried by 12 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 48.28 of the Stacks Project, [Tag 0E2S](https://stacks.math.columbia.edu/tag/0E2S). 10 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0E2T, a definition
 
 [Tag 0E2T](https://stacks.math.columbia.edu/tag/0E2T) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Hom.IsRelativeDualizingComplex`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingComplex.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingComplex.lean#L149).
-
-> **Stacks 0E2T.** A relative dualizing complex for a flat, locally finitely presented
-> morphism `f : X ⟶ S`, relative to an open `W ⊆ X ×_S X` through which the relative diagonal
-> factors as a closed immersion `Δ : X ⟶ W`: a pair `(K, ξ)` consisting of an object `K` of
-> `D(𝒪_X)` and a map `ξ : Δ_*𝒪_X ⟶ L pr₁^*K|_W` in `D(𝒪_W)` such that `K` is `S`-perfect and
-> `ξ` defines an isomorphism of `Δ_*𝒪_X` with
-> `R SheafHom_{𝒪_W}(Δ_*𝒪_X, L pr₁^*K|_W)`.
->
-> The derived tensor product over the inverse-image ringed space is the family of certificates
-> `Dten`, as in the definition of relative perfectness.
-
-```lean
-structure IsRelativeDualizingComplex [Flat f] [LocallyOfFinitePresentation f]
-    (Dten : ∀ U : TopologicalSpace.Opens
-        (RingedSpace.inverseImage S.toRingedSpace f.base).carrier,
-      RingedSpace.CertifiedDerivedSheafTensoring.{d', u}
-        ((RingedSpace.inverseImage S.toRingedSpace f.base).restrict U.isOpenEmbedding))
-    (D : DiagonalOpen f) (K : DerivedCategory (OXMod.{u, u} X.toRingedSpace))
-    (ξ : D.diagonalObject ⟶ D.derivedPullbackProj K) : Prop
-```
-
-**`AlgebraicGeometry.Scheme.Hom.IsRelativeDualizingPair`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingPair.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingPair.lean#L101).
+**`AlgebraicGeometry.Scheme.Hom.IsRelativeDualizingPair`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingPair.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingPair.lean#L101).
 
 > **Stacks 0E2T.** A relative dualizing complex for a flat, locally finitely presented
 > morphism `f : X ⟶ S`, relative to an open `W ⊆ X ×_S X` through which the relative diagonal
@@ -55,7 +33,7 @@ structure IsRelativeDualizingPair [Flat f] [LocallyOfFinitePresentation f]
 
 [Tag 0E2U](https://stacks.math.columbia.edu/tag/0E2U) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Hom.isRelativeDualizingComplex_derivedSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingComplexAffineRestriction.lean, line 172](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingComplexAffineRestriction.lean#L172). The attribute's comment: “variant: for an arbitrary family of certified tensorings, given the Tor-dimension clause of Tag 0DI2 at every object and an affine diagonal comparison datum; the tag is AlgebraicGeometry.Scheme.Hom.IsRelativeDualizingComplex.isRelativeDualizingComplex\_derivedSections”.
+**`AlgebraicGeometry.Scheme.Hom.isRelativeDualizingComplex_derivedSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingComplexAffineRestriction.lean, line 172](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingComplexAffineRestriction.lean#L172). The attribute's comment: “variant: for an arbitrary family of certified tensorings, given the Tor-dimension clause of Tag 0DI2 at every object and an affine diagonal comparison datum; the tag is AlgebraicGeometry.Scheme.Hom.IsRelativeDualizingComplex.isRelativeDualizingComplex\_derivedSections”.
 
 > **Stacks 0E2U.** Let `f : X ⟶ S` be flat and locally of finite presentation and let
 > `(K, ξ)` be a relative dualizing complex for `f` relative to an open `W ⊆ X ×_S X` through which
@@ -102,7 +80,7 @@ theorem isRelativeDualizingComplex_derivedSections [Flat f] [LocallyOfFinitePres
       ((derivedSectionsUnbounded X U).obj K)
 ```
 
-**`AlgebraicGeometry.Scheme.Hom.IsRelativeDualizingComplex.isRelativeDualizingComplex_derivedSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingComplexAffineSections.lean, line 267](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingComplexAffineSections.lean#L267).
+**`AlgebraicGeometry.Scheme.Hom.IsRelativeDualizingComplex.isRelativeDualizingComplex_derivedSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingComplexAffineSections.lean, line 267](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingComplexAffineSections.lean#L267).
 
 > **Stacks 0E2U.** Let `f : X ⟶ S` be flat and locally of finite presentation and let `(K, ξ)`
 > be a relative dualizing complex for `f` (Stacks 0E2T), relative to an open `W ⊆ X ×_S X` through
@@ -134,7 +112,7 @@ theorem isRelativeDualizingComplex_derivedSections {D : DiagonalOpen f}
 
 [Tag 0E2V](https://stacks.math.columbia.edu/tag/0E2V) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Hom.IsRelativeDualizingComplex.isIso_derivedSheafHomothety`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingComplexEndomorphisms.lean, line 208](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingComplexEndomorphisms.lean#L208).
+**`AlgebraicGeometry.Scheme.Hom.IsRelativeDualizingComplex.isIso_derivedSheafHomothety`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingComplexEndomorphisms.lean, line 208](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingComplexEndomorphisms.lean#L208).
 
 > **Stacks 0E2V.** Let `f : X ⟶ S` be flat and locally of finite presentation and let `(K, ξ)`
 > be a relative dualizing complex for `f` (Stacks 0E2T), relative to an open `W ⊆ X ×_S X` through
@@ -159,7 +137,7 @@ theorem isIso_derivedSheafHomothety {D : DiagonalOpen f}
 
 [Tag 0E2W](https://stacks.math.columbia.edu/tag/0E2W) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Hom.IsRelativeDualizingComplex.existsUnique_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingComplexUniqueIso.lean, line 48](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingComplexUniqueIso.lean#L48).
+**`AlgebraicGeometry.Scheme.Hom.IsRelativeDualizingComplex.existsUnique_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingComplexUniqueIso.lean, line 48](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingComplexUniqueIso.lean#L48).
 
 > **Stacks 0E2W.** Let `f : X ⟶ S` be flat and locally of finite presentation, and let `W` be an
 > open of `X ×_S X` through which the relative diagonal factors as a closed immersion
@@ -185,7 +163,7 @@ theorem existsUnique_iso {D : DiagonalOpen f}
 
 [Tag 0E2X](https://stacks.math.columbia.edu/tag/0E2X) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Hom.exists_isRelativeDualizingComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingComplexExistence.lean, line 1025](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingComplexExistence.lean#L1025).
+**`AlgebraicGeometry.Scheme.Hom.exists_isRelativeDualizingComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingComplexExistence.lean, line 1025](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingComplexExistence.lean#L1025).
 
 > **Stacks 0E2X.** Let `f : X ⟶ S` be flat and locally of finite presentation. There exists a
 > relative dualizing complex `(K, ξ)` (Stacks 0E2T), relative to any open `W ⊆ X ×_S X` through
@@ -221,7 +199,7 @@ theorem exists_isRelativeDualizingComplex [Flat f] [LocallyOfFinitePresentation 
 
 [Tag 0E2Y](https://stacks.math.columbia.edu/tag/0E2Y) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Hom.IsRelativeDualizingComplex.baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingComplexBaseChangeTheorem.lean, line 154](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingComplexBaseChangeTheorem.lean#L154). The attribute's comment: “As in the source's proof, `W'` is any diagonal open of `f'` with `(g' × g')(W') ⊆ W`, and `w : W' ⟶ W` is the induced morphism.”.
+**`AlgebraicGeometry.Scheme.Hom.IsRelativeDualizingComplex.baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingComplexBaseChangeTheorem.lean, line 154](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingComplexBaseChangeTheorem.lean#L154). The attribute's comment: “As in the source's proof, `W'` is any diagonal open of `f'` with `(g' × g')(W') ⊆ W`, and `w : W' ⟶ W` is the induced morphism.”.
 
 > **Stacks 0E2Y: base change of a relative dualizing complex.** Let `X' = X ×_S S'` with
 > projections `g' : X' ⟶ X` and `f' : X' ⟶ S'`, `f` flat and locally of finite presentation, and
@@ -256,7 +234,7 @@ theorem baseChange (hpb : IsPullback g' f' f g) {D : DiagonalOpen f}
 
 [Tag 0E2Z](https://stacks.math.columbia.edu/tag/0E2Z) in the Stacks Project.
 
-**`Stacks.Duality.isRelativeDualizingComplex_relativeDualizingComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingComplexOfProperFlat.lean, line 61](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingComplexOfProperFlat.lean#L61).
+**`Stacks.Duality.isRelativeDualizingComplex_relativeDualizingComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingComplexOfProperFlat.lean, line 61](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingComplexOfProperFlat.lean#L61).
 
 > **Stacks Project, Tag 0E2Z.** Let `S` be a quasi-compact and quasi-separated scheme and let
 > `f : X ⟶ S` be a proper, flat morphism of finite presentation. The relative dualizing complex
@@ -292,7 +270,7 @@ theorem isRelativeDualizingComplex_relativeDualizingComplex {X S : Scheme.{u}} (
 
 [Tag 0E4P](https://stacks.math.columbia.edu/tag/0E4P) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Hom.relativeDualizingComplex_baseChange_twistedInverseImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingComplexProperFlatBaseChange.lean, line 193](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingComplexProperFlatBaseChange.lean#L193).
+**`AlgebraicGeometry.Scheme.Hom.relativeDualizingComplex_baseChange_twistedInverseImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingComplexProperFlatBaseChange.lean, line 193](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingComplexProperFlatBaseChange.lean#L193).
 
 > **Relative dualizing complexes and base change.** Let `f : X ⟶ S` be flat, proper and of
 > finite presentation, and let `W` be a diagonal open of `f`. There is a relative dualizing complex
@@ -343,7 +321,7 @@ theorem relativeDualizingComplex_baseChange_twistedInverseImage {X S : Scheme.{u
 
 [Tag 0E9W](https://stacks.math.columbia.edu/tag/0E9W) in the Stacks Project.
 
-**`Stacks.Duality.exists_isRelativeDualizingComplex_upperShriek`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekRelativeDualizing.lean, line 269](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekRelativeDualizing.lean#L269).
+**`Stacks.Duality.exists_isRelativeDualizingComplex_upperShriek`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/UpperShriekRelativeDualizing.lean, line 269](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/UpperShriekRelativeDualizing.lean#L269).
 
 > **Stacks Project, Tag 0E9W.** In Situation 48.16.1 (`S` Noetherian), let
 > `f : X ⟶ Y` be a flat morphism of `FTS S`, with `f^!` computed at any compactification `j`. Then
@@ -365,7 +343,7 @@ theorem exists_isRelativeDualizingComplex_upperShriek (D : f.left.DiagonalOpen) 
 
 [Tag 0E30](https://stacks.math.columbia.edu/tag/0E30) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.Hom.IsRelativeDualizingComplex.comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingComplexComposite.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingComplexComposite.lean#L97).
+**`AlgebraicGeometry.Scheme.Hom.IsRelativeDualizingComplex.comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingComplexComposite.lean, line 97](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/RelativeDualizingComplexComposite.lean#L97).
 
 > **Stacks 0E30.** Let `f : Y ⟶ X` and `g : X ⟶ S` be flat and locally of finite
 > presentation, and let `(K, ξ)` and `(M, η)` be relative dualizing complexes for `g` and `f`.
@@ -402,4 +380,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 48.28, Tag 0E2S](https://stacks.math.columbia.edu/tag/0E2S)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

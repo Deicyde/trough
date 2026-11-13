@@ -8,13 +8,13 @@ proof: formalized
 
 # 43.18 Exterior product
 
-Section 43.18 of the Stacks Project, [Tag 0B09](https://stacks.math.columbia.edu/tag/0B09). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 43.18 of the Stacks Project, [Tag 0B09](https://stacks.math.columbia.edu/tag/0B09). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0B0S, a lemma
 
 [Tag 0B0S](https://stacks.math.columbia.edu/tag/0B0S) in the Stacks Project.
 
-**`Stacks.Chow.exteriorProduct_rationallyEquivalentToZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductRationalEquivalenceZero.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductRationalEquivalenceZero.lean#L83). The attribute's comment: “over a field, unconditionally”.
+**`Stacks.Chow.exteriorProduct_rationallyEquivalentToZero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductRationalEquivalenceZero.lean, line 83](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Chow/ExteriorProductRationalEquivalenceZero.lean#L83). The attribute's comment: “over a field, unconditionally”.
 
 > **Stacks 0B0S.** Let `X` and `Y` be schemes locally of finite type over the spectrum of a
 > field, let `α` be an `r`-cycle on `X` and let `β` be an `s`-cycle on `Y`. If `α` is rationally
@@ -43,7 +43,7 @@ theorem exteriorProduct_rationallyEquivalentToZero (C : ChowSituation.{u}) [Subs
 
 [Tag 0B0R](https://stacks.math.columbia.edu/tag/0B0R) in the Stacks Project.
 
-**`Stacks.Intersection.ExteriorProductProjections.exteriorProduct_projections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/ExteriorProductIntersection.lean, line 935](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Intersection/ExteriorProductIntersection.lean#L935).
+**`Stacks.Intersection.ExteriorProductProjections.exteriorProduct_projections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Intersection/ExteriorProductIntersection.lean, line 935](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Intersection/ExteriorProductIntersection.lean#L935).
 
 > **Stacks Project, Tag 0B0R.** Let `X` and `Y` be nonsingular varieties over an algebraically
 > closed field `k`, let `α ∈ Z_r(X)` and `β ∈ Z_s(Y)`. Then
@@ -107,4 +107,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 43.18, Tag 0B09](https://stacks.math.columbia.edu/tag/0B09)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

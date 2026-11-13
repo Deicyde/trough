@@ -8,13 +8,13 @@ proof: formalized
 
 # 67.49 Normalization
 
-Section 67.49 of the Stacks Project, [Tag 07U3](https://stacks.math.columbia.edu/tag/07U3). 9 tags here are carried by 32 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 67.49 of the Stacks Project, [Tag 07U3](https://stacks.math.columbia.edu/tag/07U3). 9 tags here are carried by 32 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0BB1, a lemma
 
 [Tag 0BB1](https://stacks.math.columbia.edu/tag/0BB1) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_surjective_etale_chart_iff_hasLocallyFiniteIrreducibleComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Normalization.lean, line 213](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Normalization.lean#L213). The attribute's comment: “conditions (1) and (2)”.
+**`AlgebraicGeometry.Space.exists_surjective_etale_chart_iff_hasLocallyFiniteIrreducibleComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Normalization.lean, line 212](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Normalization.lean#L212). The attribute's comment: “conditions (1) and (2)”.
 
 > An algebraic space has a surjective étale scheme chart with finitely many irreducible
 > components over each of its quasi-compact opens if and only if every étale scheme chart has that
@@ -31,7 +31,7 @@ theorem exists_surjective_etale_chart_iff_hasLocallyFiniteIrreducibleComponents
       HasLocallyFiniteIrreducibleComponents B S hS F
 ```
 
-**`AlgebraicGeometry.Space.hasLocallyFiniteIrreducibleComponents_iff_finite_codimensionZeroPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Normalization.lean, line 240](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Normalization.lean#L240). The attribute's comment: “conditions (2) and (3)”.
+**`AlgebraicGeometry.Space.hasLocallyFiniteIrreducibleComponents_iff_finite_codimensionZeroPoints`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Normalization.lean, line 239](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Normalization.lean#L239). The attribute's comment: “conditions (2) and (3)”.
 
 > Every étale scheme chart of `F` has finitely many irreducible components over each of its
 > quasi-compact opens exactly when every quasi-compact algebraic space étale over `F` has finitely
@@ -46,7 +46,7 @@ theorem hasLocallyFiniteIrreducibleComponents_iff_finite_codimensionZeroPoints
           {x : points B S hS G | localRingDimension B S hS x = 0}.Finite
 ```
 
-**`AlgebraicGeometry.Space.hasLocallyFiniteIrreducibleComponents_iff_finite_irreducibleComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Normalization.lean, line 282](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Normalization.lean#L282). The attribute's comment: “conditions (2) and (4)”.
+**`AlgebraicGeometry.Space.hasLocallyFiniteIrreducibleComponents_iff_finite_irreducibleComponents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Normalization.lean, line 281](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Normalization.lean#L281). The attribute's comment: “conditions (2) and (4)”.
 
 > Every étale scheme chart of `F` has finitely many irreducible components over each of its
 > quasi-compact opens exactly when the space of points of every quasi-compact algebraic space étale
@@ -61,7 +61,7 @@ theorem hasLocallyFiniteIrreducibleComponents_iff_finite_irreducibleComponents
           (irreducibleComponents (points B S hS G)).Finite
 ```
 
-**`AlgebraicGeometry.Space.hasLocallyFiniteIrreducibleComponents_iff_of_isRepresentable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Normalization.lean, line 310](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Normalization.lean#L310). The attribute's comment: “representable case”.
+**`AlgebraicGeometry.Space.hasLocallyFiniteIrreducibleComponents_iff_of_isRepresentable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Normalization.lean, line 309](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Normalization.lean#L309). The attribute's comment: “representable case”.
 
 > For an algebraic space represented by a scheme of the site,
 > `HasLocallyFiniteIrreducibleComponents` is finiteness of the irreducible components of the
@@ -81,7 +81,7 @@ theorem hasLocallyFiniteIrreducibleComponents_iff_of_isRepresentable
 
 [Tag 0GMB](https://stacks.math.columbia.edu/tag/0GMB) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.hasLocallyFiniteIrreducibleComponents_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizationFiniteness.lean, line 88](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationFiniteness.lean#L88).
+**`AlgebraicGeometry.Space.hasLocallyFiniteIrreducibleComponents_of_isLocallyNoetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizationFiniteness.lean, line 88](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationFiniteness.lean#L88).
 
 > A locally Noetherian algebraic space over `S` has finitely many irreducible components over
 > every quasi-compact open of every étale scheme chart.
@@ -98,7 +98,7 @@ theorem hasLocallyFiniteIrreducibleComponents_of_isLocallyNoetherian
 
 [Tag 0GMC](https://stacks.math.columbia.edu/tag/0GMC) in the Stacks Project.
 
-**`AlgebraicGeometry.mem_genericPoints_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/FlatCodimensionZero.lean, line 183](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/FlatCodimensionZero.lean#L183). The attribute's comment: “representable case”.
+**`AlgebraicGeometry.mem_genericPoints_of_flat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/FlatCodimensionZero.lean, line 183](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/FlatCodimensionZero.lean#L183). The attribute's comment: “representable case”.
 
 > **Stacks Project, Tag 0GMC, representable case.** A flat morphism of schemes carries a
 > generic point of an irreducible component of its source to a generic point of an irreducible
@@ -110,7 +110,7 @@ public theorem mem_genericPoints_of_flat {X Y : Scheme.{u}} (f : X ⟶ Y) [Flat 
     {x : X} (hx : x ∈ genericPoints X) : f x ∈ genericPoints Y
 ```
 
-**`AlgebraicGeometry.Space.localRingDimension_eq_zero_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Normalization.lean, line 460](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Normalization.lean#L460).
+**`AlgebraicGeometry.Space.localRingDimension_eq_zero_of_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Normalization.lean, line 459](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Normalization.lean#L459).
 
 > A flat morphism of algebraic spaces takes points of codimension zero to points of codimension
 > zero.
@@ -127,7 +127,7 @@ theorem localRingDimension_eq_zero_of_isFlat
 
 [Tag 0GMD](https://stacks.math.columbia.edu/tag/0GMD) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.hasLocallyFiniteIrreducibleComponents_and_codimensionZero_of_isFlat_of_isLocallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/NormalizationFlatFiniteType.lean, line 56](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/NormalizationFlatFiniteType.lean#L56).
+**`AlgebraicGeometry.Space.hasLocallyFiniteIrreducibleComponents_and_codimensionZero_of_isFlat_of_isLocallyOfFiniteType`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/NormalizationFlatFiniteType.lean, line 56](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/NormalizationFlatFiniteType.lean#L56).
 
 > **Stacks 0GMD.** Let `f : X ⟶ Y` be a morphism of algebraic spaces over `S` which is flat and
 > locally of finite type, and assume `Y` satisfies the equivalent conditions of Stacks 0BB1. Then
@@ -150,7 +150,7 @@ theorem hasLocallyFiniteIrreducibleComponents_and_codimensionZero_of_isFlat_of_i
 
 [Tag 07U4](https://stacks.math.columbia.edu/tag/07U4) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.NormalizationData.existsUnique_normalizationLift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/NormalizationFunctoriality.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/NormalizationFunctoriality.lean#L68). The attribute's comment: “part (3), for arbitrary normalization data of the two spaces: the unique lift of a morphism preserving codimension-zero points”.
+**`AlgebraicGeometry.Space.NormalizationData.existsUnique_normalizationLift`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/NormalizationFunctoriality.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/NormalizationFunctoriality.lean#L68). The attribute's comment: “part (3), for arbitrary normalization data of the two spaces: the unique lift of a morphism preserving codimension-zero points”.
 
 > **Stacks 07U4, part (3).** Let `f : F ⟶ G` be a morphism of algebraic spaces over `S`
 > carrying every point of codimension zero to a point of codimension zero, and let `ν : F^ν ⟶ F`
@@ -171,7 +171,7 @@ theorem existsUnique_normalizationLift {G : (BigFppfOver B S hS)ᵒᵖ ⥤ Type 
     ∃! g : D.space ⟶ D'.space, g ≫ D'.hom = D.hom ≫ f
 ```
 
-**`AlgebraicGeometry.Space.NormalizationData.isIso_pullbackLift_of_isSmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/NormalizationFunctoriality.lean, line 173](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/NormalizationFunctoriality.lean#L173). The attribute's comment: “part (4), for a smooth morphism and arbitrary normalization data of the two spaces”. References: SGA 3 X (8.9), “partial”.
+**`AlgebraicGeometry.Space.NormalizationData.isIso_pullbackLift_of_isSmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/NormalizationFunctoriality.lean, line 173](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/NormalizationFunctoriality.lean#L173). The attribute's comment: “part (4), for a smooth morphism and arbitrary normalization data of the two spaces”. References: SGA 3 X (8.9), “partial”.
 
 > **Stacks 07U4, part (4).** Let `f : F ⟶ G` be a smooth — in particular an étale — morphism
 > of algebraic spaces over `S` with `G` satisfying the equivalent conditions of Stacks 0BB1, and
@@ -207,7 +207,7 @@ theorem isIso_pullbackLift_of_isSmooth {G : (BigFppfOver B S hS)ᵒᵖ ⥤ Type 
         IsIso (pullback.lift g D.hom hg)
 ```
 
-**`AlgebraicGeometry.Space.NormalizationData.exists_iso_yoneda_normalizationScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizationComparison.lean, line 96](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationComparison.lean#L96). The attribute's comment: “part (2): the normalization of a scheme as an algebraic space”.
+**`AlgebraicGeometry.Space.NormalizationData.exists_iso_yoneda_normalizationScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizationComparison.lean, line 96](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationComparison.lean#L96). The attribute's comment: “part (2): the normalization of a scheme as an algebraic space”.
 
 > Let `X` be an object of the big fppf site of `S` every
 > quasi-compact open of whose underlying scheme has finitely many irreducible components, and let
@@ -231,7 +231,7 @@ theorem exists_iso_yoneda_normalizationScheme {X : BigFppfOver B S hS}
         φ.hom ≫ yoneda.map p = D.hom
 ```
 
-**`AlgebraicGeometry.Space.NormalizationData.isNormal_and_isIntegralHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizationIntegral.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationIntegral.lean#L114). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.Space.NormalizationData.isNormal_and_isIntegralHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizationIntegral.lean, line 114](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationIntegral.lean#L114). The attribute's comment: “part (1)”.
 
 > **Stacks 07U4, part (1).** Let `F` be an algebraic space over `S` equipped with
 > normalization data. Then the normalization of `F` is a normal algebraic space over `S` and the
@@ -249,7 +249,7 @@ theorem isNormal_and_isIntegralHom {F : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u}
     Space.IsNormal B S hS D.space ∧ Space.IsIntegralHom B S hS D.hom
 ```
 
-**`AlgebraicGeometry.Space.isNormal_and_isIntegralHom_normalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizationProperties.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationProperties.lean#L83). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.Space.isNormal_and_isIntegralHom_normalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizationProperties.lean, line 83](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationProperties.lean#L83). The attribute's comment: “part (1)”.
 
 > **Stacks 07U4, part (1).** Let `F` be an algebraic space over `S` satisfying the equivalent
 > conditions of Tag 0BB1. Then its normalization `F^ν` is a normal algebraic space and the
@@ -263,7 +263,7 @@ theorem isNormal_and_isIntegralHom_normalization {F : (BigFppfOver B S hS)ᵒᵖ
       Space.IsIntegralHom B S hS (normalization B S hS hF hfin)
 ```
 
-**`AlgebraicGeometry.Space.exists_iso_yoneda_normalizationScheme_normalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizationProperties.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationProperties.lean#L97). The attribute's comment: “part (2)”.
+**`AlgebraicGeometry.Space.exists_iso_yoneda_normalizationScheme_normalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizationProperties.lean, line 97](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationProperties.lean#L97). The attribute's comment: “part (2)”.
 
 > **Stacks 07U4, part (2).** Let `X` be an object of the big fppf site of `S` every
 > quasi-compact open of whose underlying scheme has finitely many irreducible components, so that
@@ -288,7 +288,7 @@ theorem exists_iso_yoneda_normalizationScheme_normalization (X : BigFppfOver B S
           (hasLocallyFiniteIrreducibleComponents_yoneda B S hS X hX)
 ```
 
-**`AlgebraicGeometry.Space.existsUnique_comp_normalization_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizationProperties.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationProperties.lean#L119). The attribute's comment: “part (3)”.
+**`AlgebraicGeometry.Space.existsUnique_comp_normalization_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizationProperties.lean, line 119](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationProperties.lean#L119). The attribute's comment: “part (3)”.
 
 > **Stacks 07U4, part (3).** Let `f : F ⟶ G` be a morphism of algebraic spaces over `S` both
 > satisfying the equivalent conditions of Tag 0BB1, such that every point of codimension zero of
@@ -306,7 +306,7 @@ theorem existsUnique_comp_normalization_eq {F G : (BigFppfOver B S hS)ᵒᵖ ⥤
       g ≫ normalization B S hS hG hGfin = normalization B S hS hF hFfin ≫ f
 ```
 
-**`AlgebraicGeometry.Space.isIso_pullbackLift_normalization_of_isEtale_or_isSmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizationProperties.lean, line 144](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationProperties.lean#L144). The attribute's comment: “part (4)”.
+**`AlgebraicGeometry.Space.isIso_pullbackLift_normalization_of_isEtale_or_isSmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizationProperties.lean, line 144](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationProperties.lean#L144). The attribute's comment: “part (4)”.
 
 > **Stacks 07U4, part (4).** Let `f : F ⟶ G` be an étale or a smooth morphism of algebraic
 > spaces over `S` with `G` satisfying the equivalent conditions of Tag 0BB1. Then the hypotheses of
@@ -338,7 +338,7 @@ theorem isIso_pullbackLift_normalization_of_isEtale_or_isSmooth
         IsIso (pullback.lift g (normalization B S hS hF hFfin) hg)
 ```
 
-**`AlgebraicGeometry.Space.exists_normalizationData_isNormal_isIntegralHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizationSiteChart.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationSiteChart.lean#L106). The attribute's comment: “the construction and part (1) at the hypotheses of the tag: an algebraic space satisfying condition (2) of Tag 0BB1 has normalization data, its normalization is normal, and its normalization morphism is integral”.
+**`AlgebraicGeometry.Space.exists_normalizationData_isNormal_isIntegralHom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizationSiteChart.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationSiteChart.lean#L106). The attribute's comment: “the construction and part (1) at the hypotheses of the tag: an algebraic space satisfying condition (2) of Tag 0BB1 has normalization data, its normalization is normal, and its normalization morphism is integral”.
 
 > **Stacks 07U4, the construction together with part (1), at the hypotheses of the tag.** Let
 > `F` be an algebraic space over `S` satisfying condition (2) of Tag 0BB1: every quasi-compact
@@ -374,7 +374,7 @@ theorem exists_normalizationData_isNormal_isIntegralHom (B : BigFppfSite.{u}) (S
       Space.IsNormal B S hS D.space ∧ Space.IsIntegralHom B S hS D.hom
 ```
 
-**`AlgebraicGeometry.Space.NormalizationData.isPullback_hom_of_isSmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizationSmoothBaseChange07U4.lean, line 172](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationSmoothBaseChange07U4.lean#L172). The attribute's comment: “part (4) for a smooth morphism of algebraic spaces, with given normalizations”.
+**`AlgebraicGeometry.Space.NormalizationData.isPullback_hom_of_isSmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizationSmoothBaseChange07U4.lean, line 172](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationSmoothBaseChange07U4.lean#L172). The attribute's comment: “part (4) for a smooth morphism of algebraic spaces, with given normalizations”.
 
 > **Stacks 07U4, part (4), for a smooth morphism of algebraic spaces: the normalization square
 > is cartesian.** Let `φ : F ⟶ G` be a smooth morphism of algebraic spaces over `S`, let `D` be
@@ -396,7 +396,7 @@ theorem isPullback_hom_of_isSmooth (D : NormalizationData B S hS G)
     ∃ m : D'.space ⟶ D.space, IsPullback m D'.hom D.hom φ
 ```
 
-**`AlgebraicGeometry.Space.NormalizationData.exists_isPullback_hom_of_isSmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizationSmoothBaseChange07U4.lean, line 229](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationSmoothBaseChange07U4.lean#L229). The attribute's comment: “part (4) for a smooth morphism of algebraic spaces”.
+**`AlgebraicGeometry.Space.NormalizationData.exists_isPullback_hom_of_isSmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizationSmoothBaseChange07U4.lean, line 229](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationSmoothBaseChange07U4.lean#L229). The attribute's comment: “part (4) for a smooth morphism of algebraic spaces”.
 
 > **Stacks 07U4, part (4), for a smooth morphism, with the normalization of the source
 > produced.** Only normalization data for the target is given: the source satisfies the condition
@@ -412,7 +412,7 @@ theorem exists_isPullback_hom_of_isSmooth (D : NormalizationData B S hS G)
       IsPullback m D'.hom D.hom φ
 ```
 
-**`AlgebraicGeometry.Space.nonempty_normalizationData`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizationSpaceConstruction.lean, line 202](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationSpaceConstruction.lean#L202). The attribute's comment: “the existence of the normalization”.
+**`AlgebraicGeometry.Space.nonempty_normalizationData`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizationSpaceConstruction.lean, line 202](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationSpaceConstruction.lean#L202). The attribute's comment: “the existence of the normalization”.
 
 > **Tag 07U4, the existence of the normalization.** An algebraic space over `S` every
 > quasi-compact open of every étale scheme chart of which has finitely many irreducible
@@ -443,7 +443,7 @@ theorem nonempty_normalizationData {F : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u}
 
 [Tag 0BB2](https://stacks.math.columbia.edu/tag/0BB2) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.normalization`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizationSiteChart.lean, line 188](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationSiteChart.lean#L188). The attribute's comment: “the normalization ν\_F : F^ν ⟶ F of an algebraic space satisfying the conditions of Tag 0BB1, defined as the construction of Tag 07U4 (the quotient of the normalized étale presentation); unique up to unique isomorphism over F by existsUnique\_iso\_normalization”.
+**`AlgebraicGeometry.Space.normalization`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizationSiteChart.lean, line 188](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationSiteChart.lean#L188). The attribute's comment: “the normalization ν\_F : F^ν ⟶ F of an algebraic space satisfying the conditions of Tag 0BB1, defined as the construction of Tag 07U4 (the quotient of the normalized étale presentation); unique up to unique isomorphism over F by existsUnique\_iso\_normalization”.
 
 > **Stacks 0BB2, the normalization of an algebraic space.** Let `F` be an algebraic space over
 > `S` satisfying the equivalent conditions of Tag 0BB1. The *normalization* of `F` is the morphism
@@ -505,13 +505,13 @@ def normalization (B : BigFppfSite.{u}) (S : Scheme.{u}) (hS : B.Contains S)
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Space.NormalizationData.hom`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Space.NormalizationData.hom#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Normalization.lean, line 1144](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Normalization.lean#L1144) (StacksFrontier).
+- [`AlgebraicGeometry.Space.NormalizationData.hom`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AlgebraicGeometry.Space.NormalizationData.hom#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Normalization.lean, line 1143](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Normalization.lean#L1143) (StacksFrontier).
 
 ## Tag 0BB3, a lemma
 
 [Tag 0BB3](https://stacks.math.columbia.edu/tag/0BB3) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.NormalizationData.existsUnique_lift_hom_reduction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Normalization.lean, line 1078](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Normalization.lean#L1078). The attribute's comment: “the factorization through the reduction”.
+**`AlgebraicGeometry.Space.NormalizationData.existsUnique_lift_hom_reduction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Normalization.lean, line 1077](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Normalization.lean#L1077). The attribute's comment: “the factorization through the reduction”.
 
 > The normalization morphism of an algebraic space factors uniquely through any closed subspace
 > whose points are all the points of the space, in particular through the reduction.
@@ -523,7 +523,7 @@ theorem existsUnique_lift_hom_reduction (D : NormalizationData B S hS F)
     ∃! g : D.space ⟶ R.toFunctor, g ≫ R.ι = D.hom
 ```
 
-**`AlgebraicGeometry.Space.NormalizationData.existsUnique_iso_of_hom_reduction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Normalization.lean, line 1097](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Normalization.lean#L1097). The attribute's comment: “the normalization of the reduction”.
+**`AlgebraicGeometry.Space.NormalizationData.existsUnique_iso_of_hom_reduction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Normalization.lean, line 1096](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Normalization.lean#L1096). The attribute's comment: “the normalization of the reduction”.
 
 > The factorization of the normalization morphism through the reduction exhibits the
 > normalization of an algebraic space as the normalization of its reduction: it is carried to any
@@ -538,7 +538,7 @@ theorem existsUnique_iso_of_hom_reduction (D : NormalizationData B S hS F)
     ∃! e : D.space ≅ D'.space, e.hom ≫ D'.hom = g
 ```
 
-**`AlgebraicGeometry.Space.NormalizationData.onReduction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/NormalizationReductionData.lean, line 414](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/NormalizationReductionData.lean#L414). The attribute's comment: “the normalization of the reduction: the factorization is normalization data”.
+**`AlgebraicGeometry.Space.NormalizationData.onReduction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/NormalizationReductionData.lean, line 414](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/NormalizationReductionData.lean#L414). The attribute's comment: “the normalization of the reduction: the factorization is normalization data”.
 
 > **Stacks 0BB3, the normalization of the reduction.** The normalization of an algebraic
 > space *is* the normalization of its reduction: the factorization of the normalization morphism
@@ -559,7 +559,7 @@ noncomputable def onReduction (D : NormalizationData B S hS F)
     NormalizationData B S hS R.toFunctor
 ```
 
-**`AlgebraicGeometry.Space.existsUnique_comp_ι_reduction_eq_normalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizationReduction.lean, line 101](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationReduction.lean#L101). The attribute's comment: “the normalization morphism ν\_X of Tag 0BB2 factors uniquely through the reduction X\_red ⟶ X”.
+**`AlgebraicGeometry.Space.existsUnique_comp_ι_reduction_eq_normalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizationReduction.lean, line 101](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationReduction.lean#L101). The attribute's comment: “the normalization morphism ν\_X of Tag 0BB2 factors uniquely through the reduction X\_red ⟶ X”.
 
 > **Stacks 0BB3, the factorization.** Let `X` be an algebraic space over `S` satisfying the
 > equivalent conditions of Tag 0BB1. The normalization morphism `ν_X : X^ν ⟶ X` of Tag 0BB2
@@ -576,7 +576,7 @@ theorem existsUnique_comp_ι_reduction_eq_normalization
       g ≫ (reduction B S hS X hX).ι = normalization B S hS hX hfin
 ```
 
-**`AlgebraicGeometry.Space.existsUnique_iso_normalization_reduction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizationReduction.lean, line 147](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationReduction.lean#L147). The attribute's comment: “the factorization X^ν ⟶ X\_red is the normalization ν\_\{X\_red} of Tag 0BB2: they are isomorphic over X\_red by a unique isomorphism”.
+**`AlgebraicGeometry.Space.existsUnique_iso_normalization_reduction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/NormalizationReduction.lean, line 147](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/NormalizationReduction.lean#L147). The attribute's comment: “the factorization X^ν ⟶ X\_red is the normalization ν\_\{X\_red} of Tag 0BB2: they are isomorphic over X\_red by a unique isomorphism”.
 
 > **Stacks 0BB3, the factorization is the normalization of the reduction.** Let `X` be an
 > algebraic space over `S` satisfying the equivalent conditions of Tag 0BB1, so that its reduction
@@ -605,7 +605,7 @@ theorem existsUnique_iso_normalization_reduction {X : (BigFppfOver B S hS)ᵒᵖ
 
 [Tag 0BB4](https://stacks.math.columbia.edu/tag/0BB4) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.NormalizationData.hasEtaleLocalProperty_isNormal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Normalization.lean, line 566](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Normalization.lean#L566). The attribute's comment: “part (1): the normalization is normal”.
+**`AlgebraicGeometry.Space.NormalizationData.hasEtaleLocalProperty_isNormal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Normalization.lean, line 565](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Normalization.lean#L565). The attribute's comment: “part (1): the normalization is normal”.
 
 > The normalization of an algebraic space is normal.
 
@@ -615,7 +615,7 @@ theorem hasEtaleLocalProperty_isNormal (D : NormalizationData B S hS F)
     HasEtaleLocalProperty B S hS D.space (fun X : Scheme.{u} => IsNormal X)
 ```
 
-**`AlgebraicGeometry.Space.NormalizationData.isSurjective_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Normalization.lean, line 589](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Normalization.lean#L589). The attribute's comment: “part (2): the normalization morphism is surjective”.
+**`AlgebraicGeometry.Space.NormalizationData.isSurjective_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Normalization.lean, line 588](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Normalization.lean#L588). The attribute's comment: “part (2): the normalization morphism is surjective”.
 
 > The normalization morphism of an algebraic space is surjective.
 
@@ -624,7 +624,7 @@ theorem isSurjective_hom (D : NormalizationData B S hS F)
     (hF : IsAlgebraicSpace B S hS F) : IsSurjective B S hS D.hom
 ```
 
-**`AlgebraicGeometry.Space.NormalizationData.isIntegralHom_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Normalization.lean, line 618](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Normalization.lean#L618). The attribute's comment: “part (2): the normalization morphism is integral”.
+**`AlgebraicGeometry.Space.NormalizationData.isIntegralHom_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Normalization.lean, line 617](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Normalization.lean#L617). The attribute's comment: “part (2): the normalization morphism is integral”.
 
 > The normalization morphism of an algebraic space is an integral morphism of algebraic
 > spaces.
@@ -634,7 +634,7 @@ theorem isIntegralHom_hom (D : NormalizationData B S hS F)
     (hF : IsAlgebraicSpace B S hS F) : IsIntegralHom B S hS D.hom
 ```
 
-**`AlgebraicGeometry.Space.NormalizationData.bijOn_codimensionZeroPoints_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Normalization.lean, line 629](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Normalization.lean#L629). The attribute's comment: “part (3): bijection on codimension-zero points”.
+**`AlgebraicGeometry.Space.NormalizationData.bijOn_codimensionZeroPoints_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Normalization.lean, line 628](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Normalization.lean#L628). The attribute's comment: “part (3): bijection on codimension-zero points”.
 
 > The normalization morphism induces a bijection between the codimension-zero points of the
 > normalization and those of the algebraic space.
@@ -647,7 +647,7 @@ theorem bijOn_codimensionZeroPoints_hom (D : NormalizationData B S hS F)
       {x : points B S hS F | localRingDimension B S hS x = 0}
 ```
 
-**`AlgebraicGeometry.Space.NormalizationData.existsUnique_lift_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Normalization.lean, line 703](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Normalization.lean#L703). The attribute's comment: “part (4): the universal property”. References: SGA 3 X (8.9), “partial”.
+**`AlgebraicGeometry.Space.NormalizationData.existsUnique_lift_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Normalization.lean, line 702](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Normalization.lean#L702). The attribute's comment: “part (4): the universal property”. References: SGA 3 X (8.9), “partial”.
 
 > A morphism to `F` from a normal algebraic space which carries points of codimension zero to
 > points of codimension zero factors uniquely through the normalization of `F`.
@@ -666,7 +666,7 @@ theorem existsUnique_lift_hom (D : NormalizationData B S hS F)
 
 [Tag 0BB5](https://stacks.math.columbia.edu/tag/0BB5) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.NormalizationData.isFinite_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Normalization.lean, line 955](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Normalization.lean#L955).
+**`AlgebraicGeometry.Space.NormalizationData.isFinite_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Normalization.lean, line 954](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Normalization.lean#L954).
 
 > The normalization morphism of a Nagata algebraic space over `S` is a finite morphism of
 > algebraic spaces.
@@ -685,4 +685,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 67.49, Tag 07U3](https://stacks.math.columbia.edu/tag/07U3)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

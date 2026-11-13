@@ -8,13 +8,13 @@ proof: formalized
 
 # 31.13 Reflexive modules
 
-Section 31.13 of the Stacks Project, [Tag 0AVT](https://stacks.math.columbia.edu/tag/0AVT). 14 tags here are carried by 36 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 31.13 of the Stacks Project, [Tag 0AVT](https://stacks.math.columbia.edu/tag/0AVT). 14 tags here are carried by 36 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0AVU, a definition
 
 [Tag 0AVU](https://stacks.math.columbia.edu/tag/0AVU) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.ReflexiveModules.reflexiveHull`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ReflexiveHull/Hull.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ReflexiveHull/Hull.lean#L64). The attribute's comment: “reflexive hull”. References: SGA 3 VIB (13.1).
+**`Stacks.AlgebraicGeometry.ReflexiveModules.reflexiveHull`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ReflexiveHull/Hull.lean, line 64](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ReflexiveHull/Hull.lean#L64). The attribute's comment: “reflexive hull”. References: SGA 3 VIB (13.1).
 
 > The reflexive hull `F⁎⁎` of a module on a scheme: the dual of its dual.
 
@@ -22,7 +22,7 @@ Section 31.13 of the Stacks Project, [Tag 0AVT](https://stacks.math.columbia.edu
 public noncomputable abbrev reflexiveHull (F : X.Modules) : X.Modules
 ```
 
-**`Stacks.AlgebraicGeometry.ReflexiveModules.toReflexiveHull`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ReflexiveHull/Hull.lean, line 71](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ReflexiveHull/Hull.lean#L71). The attribute's comment: “canonical map to the reflexive hull”.
+**`Stacks.AlgebraicGeometry.ReflexiveModules.toReflexiveHull`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ReflexiveHull/Hull.lean, line 71](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ReflexiveHull/Hull.lean#L71). The attribute's comment: “canonical map to the reflexive hull”.
 
 > The canonical map `F ⟶ F⁎⁎` to the reflexive hull, bundled with the formula that
 > characterizes it: over an open `U` it sends a local section `f` to the functional on `F^∨|_U`
@@ -36,7 +36,7 @@ public noncomputable def toReflexiveHull (F : X.Modules) :
           (lam.app (op (Over.mk (𝟙 U)))).hom f }
 ```
 
-**`Stacks.AlgebraicGeometry.ReflexiveModules.isReflexive_iff_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ReflexiveHull/Hull.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ReflexiveHull/Hull.lean#L124). The attribute's comment: “reflexive predicate”.
+**`Stacks.AlgebraicGeometry.ReflexiveModules.isReflexive_iff_isIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ReflexiveHull/Hull.lean, line 124](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ReflexiveHull/Hull.lean#L124). The attribute's comment: “reflexive predicate”.
 
 > Reflexivity of `F` is invertibility of any morphism `F ⟶ F⁎⁎` satisfying the defining formula
 > of the canonical map.
@@ -53,7 +53,7 @@ public theorem isReflexive_iff_isIso (F : X.Modules) (j : F ⟶ reflexiveHull F)
 
 [Tag 0AY0](https://stacks.math.columbia.edu/tag/0AY0) in the Stacks Project.
 
-**`AlgebraicGeometry.isReflexive_iff_sections_isReflexive`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/AffineLocalCriterion.lean, line 131](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/AffineLocalCriterion.lean#L131).
+**`AlgebraicGeometry.isReflexive_iff_sections_isReflexive`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/AffineLocalCriterion.lean, line 131](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/AffineLocalCriterion.lean#L131).
 
 > A coherent module on an integral locally Noetherian scheme is reflexive if and only if its
 > module of sections over every affine open is reflexive.
@@ -68,7 +68,7 @@ theorem isReflexive_iff_sections_isReflexive (X : Scheme.{u}) [IsIntegral X]
 
 [Tag 0AY2](https://stacks.math.columbia.edu/tag/0AY2) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.ReflexiveModules.isTorsionFree_of_isReflexive`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Reflexive/DoubleDual.lean, line 212](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Reflexive/DoubleDual.lean#L212). The attribute's comment: “part (1)”.
+**`Stacks.AlgebraicGeometry.ReflexiveModules.isTorsionFree_of_isReflexive`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Reflexive/DoubleDual.lean, line 212](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Reflexive/DoubleDual.lean#L212). The attribute's comment: “part (1)”.
 
 > A reflexive module on an integral scheme is torsion free.
 
@@ -77,7 +77,7 @@ public theorem isTorsionFree_of_isReflexive [IsIntegral X] (F : X.Modules)
     (hF : IsReflexive F) : IsTorsionFree F
 ```
 
-**`Stacks.AlgebraicGeometry.ReflexiveModules.mono_toDoubleDual_iff_isTorsionFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ReflexiveTorsionFree/Converse.lean, line 135](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ReflexiveTorsionFree/Converse.lean#L135). The attribute's comment: “part (2)”.
+**`Stacks.AlgebraicGeometry.ReflexiveModules.mono_toDoubleDual_iff_isTorsionFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ReflexiveTorsionFree/Converse.lean, line 135](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ReflexiveTorsionFree/Converse.lean#L135). The attribute's comment: “part (2)”.
 
 > On an integral scheme, the canonical map of a coherent module to its double dual is a
 > monomorphism if and only if the module is torsion free.
@@ -91,7 +91,7 @@ public theorem mono_toDoubleDual_iff_isTorsionFree [IsIntegral X] (F : X.Modules
 
 [Tag 0AY3](https://stacks.math.columbia.edu/tag/0AY3) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.ReflexiveModules.isReflexive_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ReflexiveStalk/ClosedPoints.lean, line 238](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ReflexiveStalk/ClosedPoints.lean#L238).
+**`Stacks.AlgebraicGeometry.ReflexiveModules.isReflexive_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ReflexiveStalk/ClosedPoints.lean, line 238](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ReflexiveStalk/ClosedPoints.lean#L238).
 
 > **Stacks Project, Tag 0AY3.**  For a coherent module `F` on a locally Noetherian scheme
 > `X`, the following are equivalent:
@@ -116,7 +116,7 @@ public theorem isReflexive_tfae (X : Scheme.{u}) [IsLocallyNoetherian X] (F : X.
 
 [Tag 0EBF](https://stacks.math.columbia.edu/tag/0EBF) in the Stacks Project.
 
-**`AlgebraicGeometry.isCoherent_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherentPullback/Basic.lean, line 48](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/CoherentPullback/Basic.lean#L48). The attribute's comment: “coherence of the pullback”.
+**`AlgebraicGeometry.isCoherent_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherentPullback/Basic.lean, line 48](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/CoherentPullback/Basic.lean#L48). The attribute's comment: “coherence of the pullback”.
 
 > **Stacks Project, Tag 0EBF.** The pullback of a coherent module along a morphism of schemes
 > with locally Noetherian source is coherent.
@@ -128,7 +128,7 @@ public theorem isCoherent_pullback
     ((Scheme.Modules.pullback f).obj G).IsCoherent
 ```
 
-**`Stacks.AlgebraicGeometry.ReflexiveModules.isReflexive_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherentPullback/Reflexive.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/CoherentPullback/Reflexive.lean#L114). The attribute's comment: “reflexivity of the pullback”.
+**`Stacks.AlgebraicGeometry.ReflexiveModules.isReflexive_pullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/CoherentPullback/Reflexive.lean, line 114](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/CoherentPullback/Reflexive.lean#L114). The attribute's comment: “reflexivity of the pullback”.
 
 > **The reflexivity clause of Stacks, Tag 0EBF**: the pullback of a coherent reflexive module
 > along a flat morphism of integral locally Noetherian schemes is reflexive.
@@ -149,7 +149,7 @@ public theorem isReflexive_pullback {X Y : Scheme.{u}}
 
 [Tag 0EBG](https://stacks.math.columbia.edu/tag/0EBG) in the Stacks Project.
 
-**`AlgebraicGeometry.isReflexive_of_exact_of_isReflexive_of_isTorsionFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/ExactSequence.lean, line 54](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/ExactSequence.lean#L54).
+**`AlgebraicGeometry.isReflexive_of_exact_of_isReflexive_of_isTorsionFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/ExactSequence.lean, line 54](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/ExactSequence.lean#L54).
 
 > In an exact sequence `0 → ℱ → ℱ' → ℱ''` of coherent modules on an integral locally
 > Noetherian scheme, if `ℱ'` is reflexive and `ℱ''` is torsion free then `ℱ` is reflexive.
@@ -169,7 +169,7 @@ theorem isReflexive_of_exact_of_isReflexive_of_isTorsionFree {X : Scheme.{u}} [I
 
 [Tag 0AY4](https://stacks.math.columbia.edu/tag/0AY4) in the Stacks Project.
 
-**`AlgebraicGeometry.sheafHom_isReflexive`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/SheafHomReflexive.lean, line 39](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/SheafHomReflexive.lean#L39).
+**`AlgebraicGeometry.sheafHom_isReflexive`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/SheafHomReflexive.lean, line 39](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/SheafHomReflexive.lean#L39).
 
 > On an integral locally Noetherian scheme, the internal Hom `SheafHom(ℱ, 𝒢)` of coherent modules
 > is reflexive as soon as `𝒢` is.
@@ -185,7 +185,7 @@ theorem sheafHom_isReflexive (X : Scheme.{u}) [IsIntegral X] [IsLocallyNoetheria
 
 [Tag 0EBH](https://stacks.math.columbia.edu/tag/0EBH) in the Stacks Project.
 
-**`AlgebraicGeometry.hullReflectionAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/CoherentCategory.lean, line 82](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/CoherentCategory.lean#L82). The attribute's comment: “adjunction”.
+**`AlgebraicGeometry.hullReflectionAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/CoherentCategory.lean, line 82](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/CoherentCategory.lean#L82). The attribute's comment: “adjunction”.
 
 > On an integral locally Noetherian scheme, taking reflexive hulls is a left adjoint of the
 > inclusion of the coherent reflexive modules into the coherent modules.
@@ -194,7 +194,7 @@ theorem sheafHom_isReflexive (X : Scheme.{u}) [IsIntegral X] [IsLocallyNoetheria
 noncomputable def hullReflectionAdjunction : hullReflection X ⊣ inclusion X
 ```
 
-**`AlgebraicGeometry.coherentReflexiveModules_hasFiniteBiproducts`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/CoherentCategory.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/CoherentCategory.lean#L122). The attribute's comment: “additive”.
+**`AlgebraicGeometry.coherentReflexiveModules_hasFiniteBiproducts`**, an instance in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/CoherentCategory.lean, line 122](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/CoherentCategory.lean#L122). The attribute's comment: “additive”.
 
 > The coherent reflexive modules on an integral locally Noetherian scheme form an additive
 > category: they have finite direct sums.
@@ -204,7 +204,7 @@ noncomputable instance coherentReflexiveModules_hasFiniteBiproducts :
     HasFiniteBiproducts (CoherentReflexiveModules X)
 ```
 
-**`AlgebraicGeometry.CoherentReflexive.internalHomObj`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/CoherentInternalHom.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/CoherentInternalHom.lean#L80). The attribute's comment: “internal\_hom”.
+**`AlgebraicGeometry.CoherentReflexive.internalHomObj`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/CoherentInternalHom.lean, line 80](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/CoherentInternalHom.lean#L80). The attribute's comment: “internal\_hom”.
 
 > **Stacks Project, Tag 0EBH.**  The sheaf Hom of two coherent reflexive modules, as a
 > coherent reflexive module: it is coherent by [Stacks, Tag 01Y2] and reflexive by
@@ -215,7 +215,7 @@ noncomputable def internalHomObj (G H : CoherentReflexiveModules X) :
     CoherentReflexiveModules X
 ```
 
-**`AlgebraicGeometry.CoherentReflexive.dualObj`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/CoherentInternalHom.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/CoherentInternalHom.lean#L99). The attribute's comment: “dual”.
+**`AlgebraicGeometry.CoherentReflexive.dualObj`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/CoherentInternalHom.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/CoherentInternalHom.lean#L99). The attribute's comment: “dual”.
 
 > **Stacks Project, Tag 0EBH.**  Every coherent reflexive module has a dual object in the
 > category of coherent reflexive modules, namely `ℋom_{𝒪_X}(ℱ, 𝒪_X)`.
@@ -224,7 +224,7 @@ noncomputable def internalHomObj (G H : CoherentReflexiveModules X) :
 noncomputable def dualObj (F : CoherentReflexiveModules X) : CoherentReflexiveModules X
 ```
 
-**`AlgebraicGeometry.CoherentReflexive.isReflexive_kernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/CoherentKernels.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/CoherentKernels.lean#L92). The attribute's comment: “kernels”.
+**`AlgebraicGeometry.CoherentReflexive.isReflexive_kernel`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/CoherentKernels.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/CoherentKernels.lean#L92). The attribute's comment: “kernels”.
 
 > **Stacks Project, Tag 0EBH.**  The ordinary kernel of a morphism of coherent reflexive
 > modules is reflexive: it is the kernel of a map into the reflexive, hence torsion-free, module
@@ -234,7 +234,7 @@ noncomputable def dualObj (F : CoherentReflexiveModules X) : CoherentReflexiveMo
 theorem isReflexive_kernel (f : F ⟶ G) : IsReflexive (kernel f.hom.hom)
 ```
 
-**`AlgebraicGeometry.CoherentReflexive.kernelIsKernel`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/CoherentKernels.lean, line 123](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/CoherentKernels.lean#L123). The attribute's comment: “kernels”.
+**`AlgebraicGeometry.CoherentReflexive.kernelIsKernel`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/CoherentKernels.lean, line 123](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/CoherentKernels.lean#L123). The attribute's comment: “kernels”.
 
 > **Stacks Project, Tag 0EBH.**  The ordinary kernel, with its ordinary inclusion, is a
 > kernel in the category of coherent reflexive modules.
@@ -244,7 +244,7 @@ noncomputable def kernelIsKernel (f : F ⟶ G) :
     IsLimit (KernelFork.ofι (f := f) (kernelι f) (kernelι_comp f))
 ```
 
-**`AlgebraicGeometry.CoherentReflexive.cokernelIsCokernel`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/CoherentKernels.lean, line 179](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/CoherentKernels.lean#L179). The attribute's comment: “cokernels”.
+**`AlgebraicGeometry.CoherentReflexive.cokernelIsCokernel`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/CoherentKernels.lean, line 179](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/CoherentKernels.lean#L179). The attribute's comment: “cokernels”.
 
 > **Stacks Project, Tag 0EBH.**  The reflexive hull of the ordinary cokernel, with the
 > ordinary projection followed by the canonical map to the double dual, is a cokernel in the
@@ -255,7 +255,7 @@ noncomputable def cokernelIsCokernel (f : F ⟶ G) :
     IsColimit (CokernelCofork.ofπ (f := f) (cokernelπ f) (comp_cokernelπ f))
 ```
 
-**`AlgebraicGeometry.CoherentReflexive.tensorObj`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/CoherentTensor.lean, line 139](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/CoherentTensor.lean#L139). The attribute's comment: “tensor”.
+**`AlgebraicGeometry.CoherentReflexive.tensorObj`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/CoherentTensor.lean, line 139](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/CoherentTensor.lean#L139). The attribute's comment: “tensor”.
 
 > **Stacks Project, Tag 0EBH.**  The tensor product of the category of coherent reflexive
 > modules: the reflexive hull of the ordinary tensor product.
@@ -264,7 +264,7 @@ noncomputable def cokernelIsCokernel (f : F ⟶ G) :
 noncomputable def tensorObj (F G : CoherentReflexiveModules X) : CoherentReflexiveModules X
 ```
 
-**`AlgebraicGeometry.CoherentReflexive.tensorObjComm`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/CoherentTensor.lean, line 154](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/CoherentTensor.lean#L154). The attribute's comment: “symmetry”.
+**`AlgebraicGeometry.CoherentReflexive.tensorObjComm`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/CoherentTensor.lean, line 154](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/CoherentTensor.lean#L154). The attribute's comment: “symmetry”.
 
 > **Stacks Project, Tag 0EBH.**  The tensor product of the category of coherent reflexive
 > modules is symmetric: the hull of the braiding of the ordinary tensor product.
@@ -274,7 +274,7 @@ noncomputable def tensorObjComm (F G : CoherentReflexiveModules X) :
     tensorObj F G ≅ tensorObj G F
 ```
 
-**`AlgebraicGeometry.CoherentReflexive.tensorHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/CoherentTensor.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/CoherentTensor.lean#L187). The attribute's comment: “internal\_hom”.
+**`AlgebraicGeometry.CoherentReflexive.tensorHomEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/CoherentTensor.lean, line 187](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/CoherentTensor.lean#L187). The attribute's comment: “internal\_hom”.
 
 > **Stacks Project, Tag 0EBH.**  The internal-Hom adjunction of the category of coherent
 > reflexive modules: morphisms out of the hull tensor product `ℱ ⊗_𝒞 𝒢` are morphisms of `ℱ` into
@@ -285,7 +285,7 @@ noncomputable def tensorHomEquiv (F G H : CoherentReflexiveModules X) :
     (tensorObj F G ⟶ H) ≃ (F ⟶ internalHomObj G H)
 ```
 
-**`AlgebraicGeometry.CoherentReflexive.tensorHomEquiv_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/CoherentTensor.lean, line 198](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/CoherentTensor.lean#L198). The attribute's comment: “internal\_hom”.
+**`AlgebraicGeometry.CoherentReflexive.tensorHomEquiv_apply`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/CoherentTensor.lean, line 198](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/CoherentTensor.lean#L198). The attribute's comment: “internal\_hom”.
 
 > **Stacks Project, Tag 0EBH.**  The adjunction bijection is the currying map of
 > [Stacks, Tag 01CN], applied after restricting along the canonical map from the ordinary tensor
@@ -301,7 +301,7 @@ theorem tensorHomEquiv_apply (F G H : CoherentReflexiveModules X)
             (G.obj.obj))) ≫ f.hom.hom)
 ```
 
-**`AlgebraicGeometry.CoherentReflexive.tensorObjAssoc`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/CoherentTensorAssoc.lean, line 211](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/CoherentTensorAssoc.lean#L211). The attribute's comment: “associativity”.
+**`AlgebraicGeometry.CoherentReflexive.tensorObjAssoc`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/CoherentTensorAssoc.lean, line 211](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/CoherentTensorAssoc.lean#L211). The attribute's comment: “associativity”.
 
 > **Stacks Project, Tag 0EBH.**  The tensor product of the category of coherent reflexive
 > modules is associative.
@@ -311,7 +311,7 @@ noncomputable def tensorObjAssoc (F G K : CoherentReflexiveModules X) :
     tensorObj (tensorObj F G) K ≅ tensorObj F (tensorObj G K)
 ```
 
-**`AlgebraicGeometry.isReflexive_reflexiveHull`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/HullCoherentReflexive.lean, line 48](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/HullCoherentReflexive.lean#L48). The attribute's comment: “hull”.
+**`AlgebraicGeometry.isReflexive_reflexiveHull`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/HullCoherentReflexive.lean, line 48](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/HullCoherentReflexive.lean#L48). The attribute's comment: “hull”.
 
 > The reflexive hull `F^∨∨` of a coherent module on an integral locally Noetherian scheme is
 > reflexive: it is the dual of the coherent module `F^∨`, and duals of coherent modules are
@@ -322,7 +322,7 @@ theorem isReflexive_reflexiveHull (X : Scheme.{u}) [IsIntegral X] [IsLocallyNoet
     (F : X.Modules) [_root_.SheafOfModules.IsCoherent F] : IsReflexive (reflexiveHull F)
 ```
 
-**`AlgebraicGeometry.not_forall_fiberRank_one_tensorObj_dualObj_iso_unit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/RankOneNotInvertible.lean, line 209](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/RankOneNotInvertible.lean#L209). The attribute's comment: “unit\_failure”.
+**`AlgebraicGeometry.not_forall_fiberRank_one_tensorObj_dualObj_iso_unit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/RankOneNotInvertible.lean, line 209](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/RankOneNotInvertible.lean#L209). The attribute's comment: “unit\_failure”.
 
 > On an integral locally Noetherian scheme a coherent reflexive module of rank one at the
 > generic point need not have its dual as a tensor inverse for the hull tensor product.
@@ -335,7 +335,7 @@ theorem not_forall_fiberRank_one_tensorObj_dualObj_iso_unit :
         Nonempty ((tensorObj F (dualObj F)).obj.obj ≅ unitModule X)
 ```
 
-**`AlgebraicGeometry.not_forall_rank_one_sheafHom_iso_dualObj_tensorObj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/RankOneNotInvertible.lean, line 224](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/RankOneNotInvertible.lean#L224). The attribute's comment: “hom\_failure”.
+**`AlgebraicGeometry.not_forall_rank_one_sheafHom_iso_dualObj_tensorObj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/RankOneNotInvertible.lean, line 224](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/RankOneNotInvertible.lean#L224). The attribute's comment: “hom\_failure”.
 
 > On an integral locally Noetherian scheme the sheaf Hom of two coherent reflexive modules of
 > rank one at every point need not be the hull tensor product of the dual of the first with the
@@ -353,7 +353,7 @@ theorem not_forall_rank_one_sheafHom_iso_dualObj_tensorObj :
           (tensorObj (dualObj F) G).obj.obj)
 ```
 
-**`Stacks.AlgebraicGeometry.ReflexiveEquivalence.isCoherent_doubleDual`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/ReflexiveEquivalence/StalkDescent.lean, line 154](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/ReflexiveEquivalence/StalkDescent.lean#L154). The attribute's comment: “hull”.
+**`Stacks.AlgebraicGeometry.ReflexiveEquivalence.isCoherent_doubleDual`**, a lemma in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/ReflexiveEquivalence/StalkDescent.lean, line 154](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/ReflexiveEquivalence/StalkDescent.lean#L154). The attribute's comment: “hull”.
 
 > **[Stacks, Tag 01Y2] for the double dual.** The reflexive hull `F^∨∨` of a coherent module
 > on a locally Noetherian scheme is coherent.  This is the coherence half of the hull assertion of
@@ -365,7 +365,7 @@ public lemma isCoherent_doubleDual [IsLocallyNoetherian X] (F : X.Modules)
     _root_.SheafOfModules.IsCoherent (dualSheaf (dualSheaf F))
 ```
 
-**`Stacks.AlgebraicGeometry.InternalHomLocalKernel.reflexiveHullAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/InternalHomLocalKernel/Basic.lean, line 453](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/InternalHomLocalKernel/Basic.lean#L453). The attribute's comment: “adjunction”.
+**`Stacks.AlgebraicGeometry.InternalHomLocalKernel.reflexiveHullAdjunction`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/InternalHomLocalKernel/Basic.lean, line 453](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/InternalHomLocalKernel/Basic.lean#L453). The attribute's comment: “adjunction”.
 
 > **Stacks Tag 0EBH.** On an integral locally Noetherian scheme the double-dual functor is
 > left adjoint to the inclusion of coherent reflexive modules into coherent modules, with the
@@ -389,7 +389,7 @@ noncomputable def reflexiveHullAdjunction (X : Scheme.{u})
 
 [Tag 0AY5](https://stacks.math.columbia.edu/tag/0AY5) in the Stacks Project.
 
-**`AlgebraicGeometry.isReflexive_iff_stalk_isReflexive_or_depth_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/StalkDepthCriterion.lean, line 122](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/StalkDepthCriterion.lean#L122).
+**`AlgebraicGeometry.isReflexive_iff_stalk_isReflexive_or_depth_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/StalkDepthCriterion.lean, line 122](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/StalkDepthCriterion.lean#L122).
 
 > **Stacks Project, Tag 0AY5.** A coherent module on an integral locally Noetherian scheme is
 > reflexive if and only if at every point its stalk is either a reflexive module over the local
@@ -408,7 +408,7 @@ theorem isReflexive_iff_stalk_isReflexive_or_depth_two (X : Scheme.{u}) [IsInteg
 
 [Tag 0EBI](https://stacks.math.columbia.edu/tag/0EBI) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.ReflexiveModules.depth_stalk_ge_two_of_isReflexive`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Reflexive/ExtensionChain/Depth.lean, line 169](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Reflexive/ExtensionChain/Depth.lean#L169). The attribute's comment: “part (1)”.
+**`Stacks.AlgebraicGeometry.ReflexiveModules.depth_stalk_ge_two_of_isReflexive`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Reflexive/ExtensionChain/Depth.lean, line 171](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Reflexive/ExtensionChain/Depth.lean#L171). The attribute's comment: “part (1)”.
 
 > **[Stacks, Tag 0EBI], part (1).** A coherent reflexive module on a locally Noetherian
 > scheme has depth at least two at every point where the local ring does.
@@ -423,7 +423,7 @@ public theorem depth_stalk_ge_two_of_isReflexive [IsLocallyNoetherian X] (F : X.
       (IsLocalRing.maximalIdeal (X.presheaf.stalk x)) (F.presheaf.stalk x)
 ```
 
-**`Stacks.AlgebraicGeometry.ReflexiveModules.sheafHasPropertySk_two_of_isReflexive`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Reflexive/ExtensionChain/Depth.lean, line 240](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Reflexive/ExtensionChain/Depth.lean#L240). The attribute's comment: “part (2)”.
+**`Stacks.AlgebraicGeometry.ReflexiveModules.sheafHasPropertySk_two_of_isReflexive`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Reflexive/ExtensionChain/Depth.lean, line 242](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Reflexive/ExtensionChain/Depth.lean#L242). The attribute's comment: “part (2)”.
 
 > **[Stacks, Tag 0EBI], part (2).** On a locally Noetherian scheme satisfying Serre's
 > condition `(S₂)`, every coherent reflexive module satisfies `(S₂)`.
@@ -435,7 +435,7 @@ public theorem sheafHasPropertySk_two_of_isReflexive [IsLocallyNoetherian X] (F 
     SheafHasPropertySk X F 2
 ```
 
-**`Stacks.AlgebraicGeometry.ReflexiveStalkDepthTwo.two_le_depth_stalk_of_isCoherent_of_isReflexive`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ReflexiveStalkDepthTwo/Basic.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ReflexiveStalkDepthTwo/Basic.lean#L57). The attribute's comment: “part (1)”.
+**`Stacks.AlgebraicGeometry.ReflexiveStalkDepthTwo.two_le_depth_stalk_of_isCoherent_of_isReflexive`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ReflexiveStalkDepthTwo/Basic.lean, line 57](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ReflexiveStalkDepthTwo/Basic.lean#L57). The attribute's comment: “part (1)”.
 
 > On a locally Noetherian scheme, a coherent reflexive module has depth at least two at every
 > point at which the structure sheaf has depth at least two.
@@ -454,7 +454,7 @@ theorem two_le_depth_stalk_of_isCoherent_of_isReflexive [IsLocallyNoetherian X]
 
 [Tag 0EBJ](https://stacks.math.columbia.edu/tag/0EBJ) in the Stacks Project.
 
-**`Stacks.AlgebraicGeometry.ReflexiveModules.reflexiveCoherentEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ReflexiveOpenEquivalence/Pushforward.lean, line 158](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ReflexiveOpenEquivalence/Pushforward.lean#L158).
+**`Stacks.AlgebraicGeometry.ReflexiveModules.reflexiveCoherentEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ReflexiveOpenEquivalence/Pushforward.lean, line 158](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ReflexiveOpenEquivalence/Pushforward.lean#L158).
 
 > **Stacks Project, Tag 0EBJ.** Restriction to an open subscheme whose complement
 > has structure-sheaf depth at least two is an equivalence on coherent reflexive modules;
@@ -488,7 +488,7 @@ public noncomputable def reflexiveCoherentEquivalence (X : Scheme.{u})
 
 [Tag 0AY6](https://stacks.math.columbia.edu/tag/0AY6) in the Stacks Project.
 
-**`AlgebraicGeometry.isReflexive_isTorsionFree_propertyS2_extension_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/NormalCriterion.lean, line 345](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/NormalCriterion.lean#L345).
+**`AlgebraicGeometry.isReflexive_isTorsionFree_propertyS2_extension_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/NormalCriterion.lean, line 345](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/NormalCriterion.lean#L345).
 
 > Let `X` be an integral locally Noetherian normal scheme and let `F` be a coherent
 > `𝒪_X`-module. The following are equivalent:
@@ -517,7 +517,7 @@ theorem isReflexive_isTorsionFree_propertyS2_extension_tfae (X : Scheme.{u}) [Is
 
 [Tag 0AY7](https://stacks.math.columbia.edu/tag/0AY7) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_lift_toReflexiveHull_iff_codimension_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/HullExtension.lean, line 414](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/HullExtension.lean#L414).
+**`AlgebraicGeometry.exists_lift_toReflexiveHull_iff_codimension_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/HullExtension.lean, line 414](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/HullExtension.lean#L414).
 
 > On an integral locally Noetherian normal scheme, a linear map of generic stalks extends to a
 > map into the reflexive hull of its target if and only if, at every point whose local ring has
@@ -546,7 +546,7 @@ theorem exists_lift_toReflexiveHull_iff_codimension_one (X : Scheme.{u}) [IsInte
 
 [Tag 0B3N](https://stacks.math.columbia.edu/tag/0B3N) in the Stacks Project.
 
-**`AlgebraicGeometry.isReflexive_iff_isFiniteLocallyFree_of_isRegular_of_dim_le_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/RegularDimensionTwo.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/RegularDimensionTwo.lean#L155).
+**`AlgebraicGeometry.isReflexive_iff_isFiniteLocallyFree_of_isRegular_of_dim_le_two`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/RegularDimensionTwo.lean, line 155](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Divisors/Reflexive/RegularDimensionTwo.lean#L155).
 
 > **Stacks Project, Tag 0B3N.** A coherent module on a regular scheme of dimension at most
 > two is reflexive precisely when it is finite locally free.
@@ -565,4 +565,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 31.13, Tag 0AVT](https://stacks.math.columbia.edu/tag/0AVT)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

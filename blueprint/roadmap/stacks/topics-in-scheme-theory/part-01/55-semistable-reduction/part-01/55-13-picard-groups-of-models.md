@@ -8,13 +8,13 @@ proof: formalized
 
 # 55.13 Picard groups of models
 
-Section 55.13 of the Stacks Project, [Tag 0CAA](https://stacks.math.columbia.edu/tag/0CAA). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 55.13 of the Stacks Project, [Tag 0CAA](https://stacks.math.columbia.edu/tag/0CAA). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0CAB, a lemma
 
 [Tag 0CAB](https://stacks.math.columbia.edu/tag/0CAB) in the Stacks Project.
 
-**`Stacks.Models.nonempty_tensorPower_gcd_iso_unit_of_componentDegree_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/TrivialTensorPower.lean, line 359](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/TrivialTensorPower.lean#L359). The attribute's comment: “at the irreducible components of the special fibre: an invertible module trivial on the generic fibre C and of degree zero on every component has trivial d-th tensor power, for d the greatest common divisor of the multiplicities”.
+**`Stacks.Models.nonempty_tensorPower_gcd_iso_unit_of_componentDegree_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/TrivialTensorPower.lean, line 359](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/TrivialTensorPower.lean#L359). The attribute's comment: “at the irreducible components of the special fibre: an invertible module trivial on the generic fibre C and of degree zero on every component has trivial d-th tensor power, for d the greatest common divisor of the multiplicities”.
 
 > **Stacks Project, Tag 0CAB.** Let `X ⟶ Spec(R)` be a regular proper model of a smooth
 > projective curve `C` over the fraction field of a discrete valuation ring, write the special fibre
@@ -48,7 +48,7 @@ theorem nonempty_tensorPower_gcd_iso_unit_of_componentDegree_eq_zero
 
 [Tag 0CAC](https://stacks.math.columbia.edu/tag/0CAC) in the Stacks Project.
 
-**`Stacks.Models.RegularProperModelSituation.picardNumericalTypeHom_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/ModelPicardNumericalType.lean, line 284](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/ModelPicardNumericalType.lean#L284). The attribute's comment: “the canonical map Pic(C) -> Pic(T) and its kernel”.
+**`Stacks.Models.RegularProperModelSituation.picardNumericalTypeHom_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/ModelPicardNumericalType.lean, line 284](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/ModelPicardNumericalType.lean#L284). The attribute's comment: “the canonical map Pic(C) -> Pic(T) and its kernel”.
 
 > **Stacks Project, Tag 0CAC.** In the situation of [Stacks, Tag 0C61] let `T` be the
 > numerical type associated to `X` ([Stacks, Tag 0CA5]). The canonical map
@@ -81,7 +81,7 @@ theorem picardNumericalTypeHom_spec :
 
 [Tag 0CAD](https://stacks.math.columbia.edu/tag/0CAD) in the Stacks Project.
 
-**`Stacks.Models.RegularProperModelSituation.picardTorsionSequence_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/PicardTorsionSequence.lean, line 329](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/PicardTorsionSequence.lean#L329). The attribute's comment: “the exact sequence 0 -> Pic(X)[h] -> Pic(C)[h] -> Pic(T)[h] for h prime to d = gcd(m\_i), with T the numerical type associated to X”.
+**`Stacks.Models.RegularProperModelSituation.picardTorsionSequence_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/PicardTorsionSequence.lean, line 329](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/PicardTorsionSequence.lean#L329). The attribute's comment: “the exact sequence 0 -> Pic(X)[h] -> Pic(C)[h] -> Pic(T)[h] for h prime to d = gcd(m\_i), with T the numerical type associated to X”.
 
 > **Stacks Project, Tag 0CAD.** In the situation of [Stacks, Tag 0C61] let
 > `d = gcd(m₁, …, mₙ)` for the multiplicities `mᵢ` of the irreducible components of the special
@@ -106,7 +106,7 @@ theorem picardTorsionSequence_exact (n : ℕ) (e : Fin n ≃ irreducibleComponen
 
 [Tag 0CAE](https://stacks.math.columbia.edu/tag/0CAE) in the Stacks Project.
 
-**`Stacks.Models.injOn_schemePullbackClass_specialFiberRedι_zsmulTorsion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/PicardTorsionInjective.lean, line 406](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Curves/Models/PicardTorsionInjective.lean#L406). The attribute's comment: “restriction Pic(X)[h] → Pic((X\_k)\_red)[h] is injective for h prime to the characteristic of k”.
+**`Stacks.Models.injOn_schemePullbackClass_specialFiberRedι_zsmulTorsion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Curves/Models/PicardTorsionInjective.lean, line 406](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Curves/Models/PicardTorsionInjective.lean#L406). The attribute's comment: “restriction Pic(X)[h] → Pic((X\_k)\_red)[h] is injective for h prime to the characteristic of k”.
 
 > **Stacks Project, Tag 0CAE.** In Situation 0C61, let `h` be an integer prime to the
 > characteristic of the residue field `k`. Then restriction of invertible modules
@@ -132,4 +132,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 55.13, Tag 0CAA](https://stacks.math.columbia.edu/tag/0CAA)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

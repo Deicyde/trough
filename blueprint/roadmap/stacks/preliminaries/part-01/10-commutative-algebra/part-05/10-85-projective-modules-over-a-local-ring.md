@@ -8,13 +8,13 @@ proof: formalized
 
 # 10.85 Projective modules over a local ring
 
-Section 10.85 of the Stacks Project, [Tag 058Z](https://stacks.math.columbia.edu/tag/058Z). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 10.85 of the Stacks Project, [Tag 058Z](https://stacks.math.columbia.edu/tag/058Z). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0590, a lemma
 
 [Tag 0590](https://stacks.math.columbia.edu/tag/0590) in the Stacks Project.
 
-**`Module.forall_free_of_projective_iff_forall_free_of_projective_of_countable_span`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Projective/CountablyGenerated.lean, line 167](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Module/Projective/CountablyGenerated.lean#L167). The attribute's comment: “The equivalence, with countable generation written as a countable spanning set.”.
+**`Module.forall_free_of_projective_iff_forall_free_of_projective_of_countable_span`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Module/Projective/CountablyGenerated.lean, line 167](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Module/Projective/CountablyGenerated.lean#L167). The attribute's comment: “The equivalence, with countable generation written as a countable spanning set.”.
 
 > Let `R` be a ring. Every projective `R`-module is free if and only if every projective
 > `R`-module admitting a countable generating set is free.
@@ -31,7 +31,7 @@ public theorem Module.forall_free_of_projective_iff_forall_free_of_projective_of
 
 [Tag 0591](https://stacks.math.columbia.edu/tag/0591) in the Stacks Project.
 
-**`countablyGenerated_propertyP_free`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Kaplansky.lean, line 375](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Module/Kaplansky.lean#L375).
+**`countablyGenerated_propertyP_free`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Kaplansky.lean, line 375](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/Kaplansky.lean#L375).
 
 > Stacks Tag 0591 / Lemma 10.85.2: a countably generated module satisfying
 > property (P) is free.
@@ -46,7 +46,7 @@ theorem countablyGenerated_propertyP_free
 
 [Tag 0592](https://stacks.math.columbia.edu/tag/0592) in the Stacks Project.
 
-**`projective_local_free_summand`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Kaplansky.lean, line 512](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Module/Kaplansky.lean#L512).
+**`projective_local_free_summand`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Kaplansky.lean, line 512](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/Kaplansky.lean#L512).
 
 > **Stacks Tag 0592, Lemma 10.85.3.** Any element of a projective module over a
 > (commutative) local ring is contained in a free direct summand. Concretely, for
@@ -64,7 +64,7 @@ theorem projective_local_free_summand {R : Type*} [CommRing R] [IsLocalRing R]
 
 [Tag 0593](https://stacks.math.columbia.edu/tag/0593) in the Stacks Project.
 
-**`Module.free_of_projective_of_isLocalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Kaplansky.lean, line 621](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Module/Kaplansky.lean#L621). The attribute's comment: “Projective modules over local rings are free, with no finiteness hypothesis.”. References: SGA 3 VIA (2.1.3).
+**`Module.free_of_projective_of_isLocalRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Module/Kaplansky.lean, line 621](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Module/Kaplansky.lean#L621). The attribute's comment: “Projective modules over local rings are free, with no finiteness hypothesis.”. References: SGA 3 VIA (2.1.3).
 
 > **Stacks 0593** (Kaplansky). If `P` is a projective module over a commutative local ring `R`,
 > then `P` is free. No finiteness hypothesis on `P` is needed.
@@ -81,4 +81,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 10.85, Tag 058Z](https://stacks.math.columbia.edu/tag/058Z)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

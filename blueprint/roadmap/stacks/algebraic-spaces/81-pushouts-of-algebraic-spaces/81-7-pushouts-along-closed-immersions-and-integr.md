@@ -8,13 +8,13 @@ proof: formalized
 
 # 81.7 Pushouts along closed immersions and integral morphisms
 
-Section 81.7 of the Stacks Project, [Tag 0GG2](https://stacks.math.columbia.edu/tag/0GG2). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 81.7 of the Stacks Project, [Tag 0GG2](https://stacks.math.columbia.edu/tag/0GG2). 1 tag here is carried by 1 declaration of the repository (in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0EDP, a lemma
 
 [Tag 0EDP](https://stacks.math.columbia.edu/tag/0EDP) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.pushout_isPushout_algebraicSpaces`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/Schemes.lean, line 651](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/Schemes.lean#L651).
+**`AlgebraicGeometry.Space.pushout_isPushout_algebraicSpaces`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/Schemes.lean, line 651](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Pushouts/Schemes.lean#L651).
 
 > **Stacks 0EDP.** In the standing situation of [Stacks Project, Tag 0ECI], the scheme pushout
 > `Y ⨿_Z X` of [Stacks Project, Tag 0E25] is also a pushout in the category of algebraic spaces
@@ -61,4 +61,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 81.7, Tag 0GG2](https://stacks.math.columbia.edu/tag/0GG2)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

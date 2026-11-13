@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: Crystalline.GlobalCrystallineSituation.SmallSite.wholeSpaceSystemDerivedIso, Crystalline.GlobalCrystallineSituation.SmallSite.vanishing07LF, Crystalline.GlobalCrystallineSituation.SmallSite.crystalPairDeRhamComplex_computesCohomology, Crystalline.GlobalCrystallineSituation.SmallSite.crystalRetractPair_computesCohomology, Crystalline.GlobalCrystallineSituation.SmallSite.smoothPresentationPair_computesCohomology
+lean: Crystalline.GlobalCrystallineSituation.SmallSite.wholeSpaceSystemDerivedIso, Crystalline.GlobalCrystallineSituation.SmallSite.vanishing07LF, Crystalline.GlobalCrystallineSituation.SmallSite.crystalPairDeRhamDerivedPlusIso, Crystalline.GlobalCrystallineSituation.SmallSite.smoothPresentationPairDerivedPlusIso
 statement: formalized
 proof: formalized
 ---
 
 # 60.21 Cohomology in the affine case
 
-Section 60.21 of the Stacks Project, [Tag 07LE](https://stacks.math.columbia.edu/tag/07LE). 4 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 60.21 of the Stacks Project, [Tag 07LE](https://stacks.math.columbia.edu/tag/07LE). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 07JN, a proposition
 
 [Tag 07JN](https://stacks.math.columbia.edu/tag/07JN) in the Stacks Project.
 
-**`Crystalline.GlobalCrystallineSituation.SmallSite.wholeSpaceSystemDerivedIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/WholeSpaceSystemDerived.lean, line 226](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/WholeSpaceSystemDerived.lean#L226). The attribute's comment: “the complex M(0) → M(1) → M(2) → ⋯ of the system (X, T(n)\_e, δ(n)) computes RΓ(Cris(X/S), F): an isomorphism M(•) ≅ RΓ(Cris(X/S), F) in D⁺(Ab), the Čech comparison through an injective resolution, for F locally quasi-coherent with c\_f locally surjective along closed immersions, X and S affine”.
+**`Crystalline.GlobalCrystallineSituation.SmallSite.wholeSpaceSystemDerivedIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/WholeSpaceSystemDerived.lean, line 226](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/WholeSpaceSystemDerived.lean#L226). The attribute's comment: “the complex M(0) → M(1) → M(2) → ⋯ of the system (X, T(n)\_e, δ(n)) computes RΓ(Cris(X/S), F): an isomorphism M(•) ≅ RΓ(Cris(X/S), F) in D⁺(Ab), the Čech comparison through an injective resolution, for F locally quasi-coherent with c\_f locally surjective along closed immersions, X and S affine”.
 
 > **[Stacks, Proposition 60.20.1, Tag 07JN]: the complex `M(0) → M(1) → M(2) → ⋯` computes
 > `RΓ(Cris(X/S), F)`**, as an isomorphism in the bounded below derived category `D⁺(Ab)`:
@@ -51,7 +51,7 @@ def wholeSpaceSystemDerivedIso :
 
 [Tag 07LF](https://stacks.math.columbia.edu/tag/07LF) in the Stacks Project.
 
-**`Crystalline.GlobalCrystallineSituation.SmallSite.vanishing07LF`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/LevelFormsCosimplicialIso.lean, line 390](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/LevelFormsCosimplicialIso.lean#L390). The attribute's comment: “the vanishing of the cohomology of F ⊗ Ω^i for i > 0, X and S affine”.
+**`Crystalline.GlobalCrystallineSituation.SmallSite.vanishing07LF`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/LevelFormsCosimplicialIso.lean, line 486](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/LevelFormsCosimplicialIso.lean#L486). The attribute's comment: “the vanishing of the cohomology of F ⊗ Ω^i for i > 0, X and S affine”.
 
 > **[Stacks, Lemma 60.19.3, Tag 07LF].**  Let `(p, (S, I, γ), X)` be a global crystalline
 > situation with `X` and `S` affine, and let `F` be a sheaf of `𝒪_{X/S}`-modules on the small
@@ -75,100 +75,65 @@ theorem vanishing07LF (S : GlobalCrystallineSituation.{u}) : Vanishing07LF S
 
 [Tag 07LG](https://stacks.math.columbia.edu/tag/07LG) in the Stacks Project.
 
-**`Crystalline.GlobalCrystallineSituation.SmallSite.crystalPairDeRhamComplex_computesCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/CrystalDeRhamComputesCohomology.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/CrystalDeRhamComputesCohomology.lean#L90). The attribute's comment: “for any surjective polynomial presentation g : A[x\_i : i ∈ ι] → C, supplied as the WholeSpacePresentation instance (the default instance is the tautological one): the complex M ⊗^∧\_D Ω*\_D of the pair (M, ∇) of a crystal in quasi-coherent modules computes RΓ(Cris(X/S), F): its cohomology in every degree j is H^j(Cris(X/S), F)”.
+**`Crystalline.GlobalCrystallineSituation.SmallSite.crystalPairDeRhamDerivedPlusIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/CrystalDeRhamDerived07LG.lean, line 133](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/CrystalDeRhamDerived07LG.lean#L133). The attribute's comment: “for any surjective polynomial presentation A[x\_i : i ∈ ι] → C, supplied as the WholeSpacePresentation instance (by default the tautological one): an isomorphism M ⊗^∧\_D Ω*\_D ≅ RΓ(Cris(X/S), F) in D⁺(Ab), through the double complex M(b) ⊗^∧\_\{D(b)} Ω^a\_\{D(b)} and the comparison of 07JN, for F a crystal in quasi-coherent modules and (M, ∇) its module with connection”.
 
-> **[Stacks, Proposition 60.21.3, Tag 07LG]**: in the situation of
-> [Stacks, Proposition 60.20.1, Tag 07JN] (`X` and `S` affine, `p` nilpotent on `X`, and `D` the
-> completed envelope of any surjective polynomial presentation `A[x_i : i ∈ ι] → C`, supplied as the
-> instance `...SmallSite.WholeSpacePresentation S hp`, by default the tautological one), let `ℱ` be a
-> crystal in quasi-coherent `𝒪_{X/S}`-modules and `(M, ∇)` the module with connection over `D`
-> corresponding to it under [Stacks, Lemma 60.17.3, Tag 07JG] (`...SmallSite.crystalPairFunctor`).
-> Then the complex `M ⊗^∧_D Ω^*_D` (`...SmallSite.crystalPairDeRhamComplex`) computes
-> `RΓ(Cris(X/S), ℱ)`: for every `j`, `H^j(M ⊗^∧_D Ω^*_D) ≅ H^j(Cris(X/S), ℱ)`
-> (`...SmallSite.crystalPairDeRhamCohomologyIso`).
+> **[Stacks, Proposition 60.21.3, Tag 07LG]: the complex `M ⊗^∧_D Ω^*_D` computes
+> `RΓ(Cris(X/S), ℱ)`**, as an isomorphism in the bounded below derived category `D⁺(Ab)`:
+>
+> `M ⊗^∧_D Ω^*_D ≅ RΓ(Cris(X/S), ℱ)`.
+>
+> The situation is that of [Stacks, Proposition 60.20.1, Tag 07JN]: `X` and `S` affine, `p`
+> nilpotent on `X`, and `D` the completed envelope of a surjective polynomial presentation
+> `A[x_i : i ∈ ι] → C`, supplied as the instance `...SmallSite.WholeSpacePresentation S hp`, by
+> default the tautological one.  `ℱ` is a crystal in quasi-coherent `𝒪_{X/S}`-modules and `(M, ∇)`
+> the module with connection over `D` corresponding to it under [Stacks, Lemma 60.17.3, Tag 07JG]
+> (`...SmallSite.crystalPairFunctor`); the complex `M ⊗^∧_D Ω^*_D` is
+> `...SmallSite.crystalPairDeRhamComplex`, lifted to the universe of the abelian sheaves on
+> `Cris(X/S)` and extended by zero to `ℤ`, and `RΓ(Cris(X/S), -)` is
+> `...SmallSite.derivedGlobalSections`, the right derived functor of global sections.  Read in
+> `D(Ab)` it is `...SmallSite.crystalPairDeRhamDerivedIso`, the comparison of the proof.
 
 ```lean
-theorem crystalPairDeRhamComplex_computesCohomology :
-    ∀ j : ℕ, Nonempty (AddCommGrpCat.uliftFunctor.{u + 1, u}.obj
-        ((crystalPairDeRhamComplex hp Fc).homology j) ≅
-      (cohomologyFunctor S j).obj (abelianSheaf Fc.obj))
+def crystalPairDeRhamDerivedPlusIso :
+    DerivedCategory.Plus.Q.obj
+        (Stacks.Cohomology.extendPlusObj
+          ((AddCommGrpCat.uliftFunctor.{u + 1, u}.mapHomologicalComplex (ComplexShape.up ℕ)).obj
+            (crystalPairDeRhamComplex hp Fc))) ≅
+      (derivedGlobalSections S).obj (abelianSheaf Fc.obj)
 ```
 
 ## Tag 07LH, a lemma
 
 [Tag 07LH](https://stacks.math.columbia.edu/tag/07LH) in the Stacks Project.
 
-**`Crystalline.GlobalCrystallineSituation.SmallSite.crystalRetractPair_computesCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/CrystalRetractPairCohomology07LH.lean, line 456](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/CrystalRetractPairCohomology07LH.lean#L456). The attribute's comment: “in 07L5's reading: for A -> P' smooth and P' -> C surjective, D' the p-adically completed divided power envelope, the data A[x\_i] ->> P' -> C of 07L5 presenting the system, a retract a : D -> D', b : D' -> D of 07L5 compatible with the augmentations, and (M', nabla') the pair over D' of 07L5 corresponding to F (crystalRetractPairFunctor), the complex M' ⊗^∧\_\{D'} Ω*\_\{D'} (crystalRetractConnModule: module M', connection nabla' read in the completed one-forms of the envelope of P') computes RΓ(Cris(X/S), F): its cohomology in every degree j is H^j(Cris(X/S), F)”.
-
-> **[Stacks, Lemma 60.21.4, Tag 07LH], for the pair of [Stacks, Lemma 60.17.5, Tag 07L5]**:
-> in the situation of [Stacks, Proposition 60.21.3, Tag 07LG] (`X` and `S` affine, `p` nilpotent on
-> `X`), let `ℱ` be a crystal in quasi-coherent `𝒪_{X/S}`-modules, `A → P' → C` ring maps with
-> `A → P'` smooth and `P' → C` surjective, `D'` the `p`-adic completion of `D_{P', γ}(J')`,
-> `P = A[x_i] → P' → C` the data of [Stacks, Tag 07L5] (`q : P ↠ P'`, the composite being the
-> presentation of the system), `a : D → D'`, `b : D' → D` a retract of [Stacks, Tag 07L5] compatible
-> with the augmentations, and
-> `(M', ∇') = (crystalRetractPairFunctor hp D' a b ha hb hab hρ).obj ℱ` the pair over `D'`
-> corresponding to `ℱ` (the base change along `a` of the pair of [Stacks, Tag 07JG]).  Then the
-> complex `M' ⊗^∧_{D'} Ω^*_{D'}` computes `RΓ(Cris(X/S), ℱ)`: the module with connection
-> `...SmallSite.crystalRetractConnModule` has module `M'`
-> (`...SmallSite.crystalRetractConnModule_carrier`) and connection `∇'` read in the completed
-> one-forms `Ω̂¹_{E'/A,δ}` (`...SmallSite.crystalRetractConnModule_nabla`), and the cohomology of its
-> de Rham complex in every degree `j` is `H^j(Cris(X/S), ℱ)`.  Here `D` is the completed envelope of
-> the presentation of the system (`...SmallSite.WholeSpacePresentation S hp`), as in
-> `...SmallSite.exists_presentation_retract_crystalPairEquivalence`.
-
-```lean
-theorem crystalRetractPair_computesCohomology
-    [Algebra.Smooth ((affineSituation S hp).A : Type u) P']
-    (q : MvPolynomial (wholeSpaceIndex S hp) (affineSituation S hp).A →ₐ[(affineSituation S hp).A]
-      P') (hq : Function.Surjective q) (hgq : f'.comp q = wholeSpacePresentation S hp)
-    (haug : (completedEnvelopeAugmentation (affineSituation S hp) f' hf').comp a.toRingHom =
-      completedEnvelopeAugmentation (affineSituation S hp)
-        (tensorPowerPresentation (affineSituation S hp) (wholeSpacePresentation S hp) 0)
-        (tensorPowerPresentation_surjective (affineSituation S hp) _
-          (wholeSpacePresentation_surjective S hp) 0)) :
-    ((crystalRetractConnModule hp Fc f' hf' a ha).carrier =
-        ((crystalRetractPairFunctor hp _ a b ha hb hab hρ).obj Fc).carrier) ∧
-      (∀ x : (crystalRetractConnModule hp Fc f' hf' a ha).carrier,
-        (crystalRetractConnModule hp Fc f' hf' a ha).nabla x =
-          AdicCompletion.map (pAdicIdeal (A := (presentationFormsData (affineSituation S hp)
-              f').ring) (affineSituation S hp).p)
-            (LinearMap.lTensor (crystalRetractConnModule hp Fc f' hf' a ha).carrier
-              (retractTargetFormsEquiv hp f' hf').toLinearMap)
-            (((crystalRetractPairFunctor hp _ a b ha hb hab hρ).obj Fc).nabla x)) ∧
-      ∀ j : ℕ, Nonempty (AddCommGrpCat.uliftFunctor.{u + 1, u}.obj
-          ((crystalRetractConnModule hp Fc f' hf' a ha).complex.homology j) ≅
-        (cohomologyFunctor S j).obj (abelianSheaf Fc.obj))
-```
-
-**`Crystalline.GlobalCrystallineSituation.SmallSite.smoothPresentationPair_computesCohomology`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/SmoothPresentationCohomology07LH.lean, line 650](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/SmoothPresentationCohomology07LH.lean#L650). The attribute's comment: “for A -> P' smooth and P' -> C surjective, D' the p-adically completed divided power envelope and (M', nabla') the pair over D' corresponding to F (the base change of the pair of 07JG, for any polynomial presentation A[x\_i] -> C of the system with a variable (WholeSpacePresentation S hp, by default the tautological one), along any augmentation-compatible divided power map D -> D'), the complex M' ⊗^∧\_\{D'} Ω*\_\{D'} computes RΓ(Cris(X/S), F): its cohomology in every degree j is H^j(Cris(X/S), F)”.
+**`Crystalline.GlobalCrystallineSituation.SmallSite.smoothPresentationPairDerivedPlusIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/SmoothPresentationDerived07LH.lean, line 171](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/SmoothPresentationDerived07LH.lean#L171). The attribute's comment: “for A -> P' smooth and P' -> C surjective, D' the p-adically completed divided power envelope and (M', nabla') the pair over D' corresponding to F (the base change of the pair of 07JG, for any polynomial presentation A[x\_i] -> C of the system with a variable (WholeSpacePresentation S hp, by default the tautological one), along any augmentation-compatible divided power map D -> D'), the complex M' ⊗^∧\_\{D'} Ω*\_\{D'} computes RΓ(Cris(X/S), F): an isomorphism M' ⊗^∧\_\{D'} Ω*\_\{D'} ≅ RΓ(Cris(X/S), F) in D⁺(Ab), the base change to D inverted followed by 07LG in the derived category”.
 
 > **[Stacks, Lemma 60.21.4, Tag 07LH]**: in the situation of
-> [Stacks, Proposition 60.21.3, Tag 07LG] (`X` and `S` affine, `p` nilpotent on `X`), let
-> `ℱ` be a crystal in quasi-coherent `𝒪_{X/S}`-modules, `A → P' → C` ring maps with `A → P'`
-> smooth and `P' → C` surjective with kernel `J'`, `D'` the `p`-adic completion of
-> `D_{P', γ}(J')` and `(M', ∇')` the pair over `D'` corresponding to `ℱ`: the base change of the
-> pair `(M, ∇)` of `ℱ` along any divided power `A`-algebra map `a : D → D'` compatible with the
-> augmentations to `C` (one exists, `Crystalline.exists_smoothPresentationMap`).  Here `D` is the
-> completed envelope of the presentation `A[x_i : i ∈ ι] → C` of the system, any one with a variable
-> (the instance `...SmallSite.WholeSpacePresentation S hp`, by default the tautological
-> `A[x_c : c ∈ C] → C`).  Then the complex
-> `M' ⊗^∧_{D'} Ω^*_{D'}` computes `RΓ(Cris(X/S), ℱ)`: its cohomology in every degree `j` is
-> `H^j(Cris(X/S), ℱ)`, in the graded sense in which [Stacks, Tag 07LG] is stated
-> (`...SmallSite.crystalPairDeRhamComplex_computesCohomology`).
+> [Stacks, Proposition 60.21.3, Tag 07LG] (`X` and `S` affine, `p` nilpotent on `X`), let `ℱ` be a
+> crystal in quasi-coherent `𝒪_{X/S}`-modules, `A → P' → C` ring maps with `A → P'` smooth and
+> `P' → C` surjective with kernel `J'`, `D'` the `p`-adic completion of `D_{P', γ}(J')` and
+> `(M', ∇')` the pair over `D'` corresponding to `ℱ` (`...SmallSite.smoothPresentationPair`): the
+> base change of the pair `(M, ∇)` of `ℱ` along any divided power `A`-algebra map `a : D → D'`
+> compatible with the augmentations to `C` (one exists, `Crystalline.exists_smoothPresentationMap`).
+> Here `D` is the completed envelope of the presentation `A[x_i : i ∈ ι] → C` of the system, any one
+> with a variable (the instance `...SmallSite.WholeSpacePresentation S hp`, by default the
+> tautological `A[x_c : c ∈ C] → C`).  Then the complex `M' ⊗^∧_{D'} Ω^*_{D'}` computes
+> `RΓ(Cris(X/S), ℱ)`: there is an isomorphism
+>
+> `M' ⊗^∧_{D'} Ω^*_{D'} ≅ RΓ(Cris(X/S), ℱ)`
+>
+> in the bounded below derived category `D⁺(Ab)`, the complex lifted to the universe of the
+> abelian sheaves on `Cris(X/S)` and extended by zero to `ℤ`, and `RΓ(Cris(X/S), -)` being
+> `...SmallSite.derivedGlobalSections`, the right derived functor of global sections.  Read in
+> `D(Ab)` it is `...SmallSite.smoothPresentationPairDerivedIso`: the base change
+> `M ⊗^∧_D Ω^*_D → M' ⊗^∧_{D'} Ω^*_{D'}` inverted, followed by [Stacks, Tag 07LG].
 
 ```lean
-theorem smoothPresentationPair_computesCohomology [Nonempty (wholeSpaceIndex S hp)]
-    [Algebra.Smooth ((affineSituation S hp).A : Type u) P']
-    (haug : (completedEnvelopeAugmentation (affineSituation S hp) f' hf').comp a.toRingHom =
-      completedEnvelopeAugmentation (affineSituation S hp)
-        (tensorPowerPresentation (affineSituation S hp)
-          (wholeSpacePresentation S hp) 0)
-        (tensorPowerPresentation_surjective (affineSituation S hp) _
-          (wholeSpacePresentation_surjective S hp) 0)) :
-    ∀ j : ℕ, Nonempty (AddCommGrpCat.uliftFunctor.{u + 1, u}.obj
-        ((smoothPresentationPair hp Fc f' hf' a ha).complex.homology j) ≅
-      (cohomologyFunctor S j).obj (abelianSheaf Fc.obj))
+def smoothPresentationPairDerivedPlusIso :
+    DerivedCategory.Plus.Q.obj (Stacks.Cohomology.extendPlusObj
+        ((AddCommGrpCat.uliftFunctor.{u + 1, u}.mapHomologicalComplex (ComplexShape.up ℕ)).obj
+          (smoothPresentationPair hp Fc f' hf' a ha).complex)) ≅
+      (derivedGlobalSections S).obj (abelianSheaf Fc.obj)
 ```
 
 ## Depends on
@@ -178,4 +143,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 60.21, Tag 07LE](https://stacks.math.columbia.edu/tag/07LE)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

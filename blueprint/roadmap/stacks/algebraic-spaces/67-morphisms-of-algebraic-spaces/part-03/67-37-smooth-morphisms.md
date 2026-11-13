@@ -8,13 +8,13 @@ proof: formalized
 
 # 67.37 Smooth morphisms
 
-Section 67.37 of the Stacks Project, [Tag 03ZB](https://stacks.math.columbia.edu/tag/03ZB). 10 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 67.37 of the Stacks Project, [Tag 03ZB](https://stacks.math.columbia.edu/tag/03ZB). 10 tags here are carried by 15 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 03ZC, a definition
 
 [Tag 03ZC](https://stacks.math.columbia.edu/tag/03ZC) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.IsSmooth`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Smooth.lean, line 43](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Smooth.lean#L43). The attribute's comment: “part (1): smooth morphisms”.
+**`AlgebraicGeometry.Space.IsSmooth`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Smooth.lean, line 43](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Smooth.lean#L43). The attribute's comment: “part (1): smooth morphisms”.
 
 > A morphism of algebraic spaces over `S` is *smooth* when the scheme morphism underlying every
 > commuting square of étale scheme charts of it is smooth.
@@ -23,7 +23,7 @@ Section 67.37 of the Stacks Project, [Tag 03ZB](https://stacks.math.columbia.edu
 abbrev IsSmooth (f : X ⟶ Y) : Prop
 ```
 
-**`AlgebraicGeometry.Space.IsSmoothAt`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Smooth.lean, line 50](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Smooth.lean#L50). The attribute's comment: “part (2): smooth at a point”.
+**`AlgebraicGeometry.Space.IsSmoothAt`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Smooth.lean, line 50](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Smooth.lean#L50). The attribute's comment: “part (2): smooth at a point”.
 
 > A morphism of algebraic spaces over `S` is *smooth at* a point `x` of its source when it is
 > smooth on some open subspace of the source having a point over `x`.
@@ -36,7 +36,7 @@ abbrev IsSmoothAt (f : X ⟶ Y) (x : points B S hS X) : Prop
 
 [Tag 03ZD](https://stacks.math.columbia.edu/tag/03ZD) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isSmooth_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmoothMorphismProperty.lean, line 72](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmoothMorphismProperty.lean#L72). References: EGA IV (17.3.3), “more general”; EGA IV (6.8.3), “more general”.
+**`AlgebraicGeometry.Space.isSmooth_comp`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmoothMorphismProperty.lean, line 72](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmoothMorphismProperty.lean#L72). References: EGA IV (17.3.3), “more general”; EGA IV (6.8.3), “more general”.
 
 > **Stacks 03ZD.** The composite of two smooth morphisms of algebraic spaces over `S` is
 > smooth: this is Stacks 0AML applied to the smooth property of morphisms of schemes, which is
@@ -54,7 +54,7 @@ theorem isSmooth_comp {X Y Z : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u}
 
 [Tag 03ZE](https://stacks.math.columbia.edu/tag/03ZE) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isSmooth_isStableUnderBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/EtaleLocal/SmoothLocalAtSource.lean, line 119](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/EtaleLocal/SmoothLocalAtSource.lean#L119). References: SGA 1 II (1.3), “(ii)”.
+**`AlgebraicGeometry.Space.isSmooth_isStableUnderBaseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/EtaleLocal/SmoothLocalAtSource.lean, line 119](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/EtaleLocal/SmoothLocalAtSource.lean#L119). References: SGA 1 II (1.3), “(ii)”.
 
 > **Stacks Project, Tag 03ZE.** Smoothness of morphisms of algebraic spaces over `S` is
 > stable under base change.
@@ -69,7 +69,7 @@ theorem isSmooth_isStableUnderBaseChange :
 
 [Tag 03ZF](https://stacks.math.columbia.edu/tag/03ZF) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isSmooth_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmoothTfae.lean, line 479](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmoothTfae.lean#L479).
+**`AlgebraicGeometry.Space.isSmooth_tfae`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmoothTfae.lean, line 479](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmoothTfae.lean#L479).
 
 > The pointwise, scheme-local, étale-local, and Zariski-local criteria for
 > smoothness of a morphism of algebraic spaces.
@@ -118,7 +118,7 @@ theorem isSmooth_tfae
 
 [Tag 04AJ](https://stacks.math.columbia.edu/tag/04AJ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isLocallyOfFinitePresentation_of_isSmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteTypeProperties.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteTypeProperties.lean#L94).
+**`AlgebraicGeometry.Space.isLocallyOfFinitePresentation_of_isSmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteTypeProperties.lean, line 94](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteTypeProperties.lean#L94).
 
 > **Stacks 04AJ.** A smooth morphism of algebraic spaces over `S` is locally of finite
 > presentation.
@@ -134,7 +134,7 @@ theorem isLocallyOfFinitePresentation_of_isSmooth
 
 [Tag 06MH](https://stacks.math.columbia.edu/tag/06MH) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isLocallyOfFiniteType_of_isSmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteTypeProperties.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FiniteTypeProperties.lean#L125).
+**`AlgebraicGeometry.Space.isLocallyOfFiniteType_of_isSmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FiniteTypeProperties.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FiniteTypeProperties.lean#L125).
 
 > **Stacks 06MH.** A smooth morphism of algebraic spaces over `S` is locally of finite
 > type.
@@ -150,7 +150,7 @@ theorem isLocallyOfFiniteType_of_isSmooth
 
 [Tag 04TA](https://stacks.math.columbia.edu/tag/04TA) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isFlat_of_isSmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmoothFlat.lean, line 48](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/SmoothFlat.lean#L48).
+**`AlgebraicGeometry.Space.isFlat_of_isSmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/SmoothFlat.lean, line 48](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/SmoothFlat.lean#L48).
 
 > **Stacks 04TA.** A smooth morphism of algebraic spaces over `S` is flat: on each commuting
 > square of étale scheme charts the underlying scheme morphism is smooth, hence flat.
@@ -167,7 +167,7 @@ theorem isFlat_of_isSmooth
 
 [Tag 06CP](https://stacks.math.columbia.edu/tag/06CP) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isSyntomic_of_isSmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Syntomic.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Syntomic.lean#L190).
+**`AlgebraicGeometry.Space.isSyntomic_of_isSmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Syntomic.lean, line 190](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Syntomic.lean#L190).
 
 > **Stacks 06CP.** A smooth morphism of algebraic spaces over `S` is syntomic.
 >
@@ -183,7 +183,7 @@ theorem isSyntomic_of_isSmooth (f : X ⟶ Y) (hf : IsSmooth B S hS f) :
 
 [Tag 0DZI](https://stacks.math.columbia.edu/tag/0DZI) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.le_maximalSmoothOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Smooth.lean, line 271](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Smooth.lean#L271). The attribute's comment: “maximality of the smooth locus”.
+**`AlgebraicGeometry.Space.le_maximalSmoothOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Smooth.lean, line 271](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Smooth.lean#L271). The attribute's comment: “maximality of the smooth locus”.
 
 > **Stacks 0DZI, maximality.** Every open subspace on which `f` is smooth is contained in the
 > smooth locus: it is a member of the family the smooth locus is the supremum of.
@@ -194,7 +194,7 @@ theorem le_maximalSmoothOpen (f : X ⟶ Y) {U : Subfunctor X}
     U ≤ maximalSmoothOpen B S hS f
 ```
 
-**`AlgebraicGeometry.Space.isOpenSubspace_maximalSmoothOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Smooth.lean, line 411](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Smooth.lean#L411). The attribute's comment: “the smooth locus is an open subspace”.
+**`AlgebraicGeometry.Space.isOpenSubspace_maximalSmoothOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Smooth.lean, line 411](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Smooth.lean#L411). The attribute's comment: “the smooth locus is an open subspace”.
 
 > **Stacks 0DZI, openness.** The smooth locus of a morphism of algebraic spaces over `S` is
 > an open subspace.
@@ -205,7 +205,7 @@ theorem isOpenSubspace_maximalSmoothOpen (hX : IsAlgebraicSpace B S hS X)
     IsOpenSubspace B S hS (maximalSmoothOpen B S hS f)
 ```
 
-**`AlgebraicGeometry.Space.isSmooth_maximalSmoothOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Smooth.lean, line 419](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Smooth.lean#L419). The attribute's comment: “the morphism is smooth on its smooth locus”.
+**`AlgebraicGeometry.Space.isSmooth_maximalSmoothOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Smooth.lean, line 419](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Smooth.lean#L419). The attribute's comment: “the morphism is smooth on its smooth locus”.
 
 > **Stacks 0DZI, smoothness on the open.** A morphism of algebraic spaces over `S` is smooth
 > on its smooth locus.
@@ -216,7 +216,7 @@ theorem isSmooth_maximalSmoothOpen (hX : IsAlgebraicSpace B S hS X)
     IsSmooth B S hS ((maximalSmoothOpen B S hS f).ι ≫ f)
 ```
 
-**`AlgebraicGeometry.Space.maximalSmoothOpen_eq_preimage_of_isFlat_isLocallyOfFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Smooth.lean, line 738](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Smooth.lean#L738). The attribute's comment: “part (1): base change by a flat morphism locally of finite presentation”. References: EGA IV (17.7.4), “more general”.
+**`AlgebraicGeometry.Space.maximalSmoothOpen_eq_preimage_of_isFlat_isLocallyOfFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Smooth.lean, line 738](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Smooth.lean#L738). The attribute's comment: “part (1): base change by a flat morphism locally of finite presentation”. References: EGA IV (17.7.4), “more general”.
 
 > **Stacks 0DZI, part (1).** Formation of the smooth locus commutes with base change by a
 > morphism which is flat and locally of finite presentation.
@@ -228,7 +228,7 @@ theorem maximalSmoothOpen_eq_preimage_of_isFlat_isLocallyOfFinitePresentation
     maximalSmoothOpen B S hS f'.hom = (maximalSmoothOpen B S hS f.hom).preimage g'.hom
 ```
 
-**`AlgebraicGeometry.Space.maximalSmoothOpen_eq_preimage_of_isLocallyOfFinitePresentation_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Smooth.lean, line 749](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Smooth.lean#L749). The attribute's comment: “part (2): flat base change of a morphism locally of finite presentation”. References: EGA IV (17.7.4), “(v), special case”.
+**`AlgebraicGeometry.Space.maximalSmoothOpen_eq_preimage_of_isLocallyOfFinitePresentation_isFlat`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Smooth.lean, line 749](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/Smooth.lean#L749). The attribute's comment: “part (2): flat base change of a morphism locally of finite presentation”. References: EGA IV (17.7.4), “(v), special case”.
 
 > **Stacks 0DZI, part (2).** For a morphism locally of finite presentation, formation of the
 > smooth locus commutes with every flat base change.
@@ -244,7 +244,7 @@ theorem maximalSmoothOpen_eq_preimage_of_isLocallyOfFinitePresentation_isFlat
 
 [Tag 0AFI](https://stacks.math.columbia.edu/tag/0AFI) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.dimensionAtPoint_eq_add_of_isSmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SmoothDimensionFormula.lean, line 70](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SmoothDimensionFormula.lean#L70).
+**`AlgebraicGeometry.Space.dimensionAtPoint_eq_add_of_isSmooth`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SmoothDimensionFormula.lean, line 70](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Morphisms/SmoothDimensionFormula.lean#L70).
 
 > **Stacks 0AFI.** Let `f : X ⟶ Y` be a smooth morphism of locally Noetherian algebraic
 > spaces over `S`. For every point `x` of `X` with image `y` in `Y` we have
@@ -271,4 +271,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 67.37, Tag 03ZB](https://stacks.math.columbia.edu/tag/03ZB)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

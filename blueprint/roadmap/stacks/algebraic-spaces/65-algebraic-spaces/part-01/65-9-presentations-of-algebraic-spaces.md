@@ -8,13 +8,13 @@ proof: formalized
 
 # 65.9 Presentations of algebraic spaces
 
-Section 65.9 of the Stacks Project, [Tag 0261](https://stacks.math.columbia.edu/tag/0261). 3 tags here are carried by 6 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 65.9 of the Stacks Project, [Tag 0261](https://stacks.math.columbia.edu/tag/0261). 3 tags here are carried by 6 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0262, a lemma
 
 [Tag 0262](https://stacks.math.columbia.edu/tag/0262) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isCoequalizer_of_surjective_flat_locallyOfFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatChartCoequalizer.lean, line 140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FlatChartCoequalizer.lean#L140). The attribute's comment: “part (3), with the étale chart of the source replaced by a surjective flat chart locally of finite presentation”.
+**`AlgebraicGeometry.Space.isCoequalizer_of_surjective_flat_locallyOfFinitePresentation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatChartCoequalizer.lean, line 140](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FlatChartCoequalizer.lean#L140). The attribute's comment: “part (3), with the étale chart of the source replaced by a surjective flat chart locally of finite presentation”.
 
 > **Stacks 0262**, part (3), with the étale hypothesis on the chart weakened to flatness
 > together with local finite presentation.  A surjective flat chart locally of finite
@@ -53,7 +53,7 @@ theorem isCoequalizer_of_surjective_flat_locallyOfFinitePresentation
       Nonempty (IsColimit (Cofork.ofπ ff w))
 ```
 
-**`AlgebraicGeometry.Space.isCoequalizer_of_surjectiveFiniteLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatChartCoequalizer.lean, line 187](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FlatChartCoequalizer.lean#L187). The attribute's comment: “part (3), for a surjective finite locally free chart of the source in place of a surjective étale one”.
+**`AlgebraicGeometry.Space.isCoequalizer_of_surjectiveFiniteLocallyFree`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FlatChartCoequalizer.lean, line 187](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FlatChartCoequalizer.lean#L187). The attribute's comment: “part (3), for a surjective finite locally free chart of the source in place of a surjective étale one”.
 
 > **Stacks 0262**, part (3), for a surjective finite locally free chart in place of a
 > surjective étale one.  Such a chart of an algebraic space is the coequalizer, in fppf sheaves
@@ -89,7 +89,7 @@ theorem isCoequalizer_of_surjectiveFiniteLocallyFree
       Nonempty (IsColimit (Cofork.ofπ ff w))
 ```
 
-**`AlgebraicGeometry.Space.isEquivalenceRelation_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/KernelPairRelation.lean, line 96](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/KernelPairRelation.lean#L96). The attribute's comment: “part (1)”.
+**`AlgebraicGeometry.Space.isEquivalenceRelation_of_isPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/KernelPairRelation.lean, line 96](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/KernelPairRelation.lean#L96). The attribute's comment: “part (1)”.
 
 > The kernel pair of a map from a representable presheaf defines an equivalence
 > relation over the base scheme. This includes monicity of `R ⟶ U ×_S U`.
@@ -101,7 +101,7 @@ theorem isEquivalenceRelation_of_isPullback
       ((Over.post B.inclusion).map t)
 ```
 
-**`AlgebraicGeometry.Space.isCoequalizer_of_surjectiveEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/KernelPairRelation.lean, line 179](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/KernelPairRelation.lean#L179). The attribute's comment: “part (3)”.
+**`AlgebraicGeometry.Space.isCoequalizer_of_surjectiveEtale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/KernelPairRelation.lean, line 179](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/KernelPairRelation.lean#L179). The attribute's comment: “part (3)”.
 
 > **Stacks 0262**, part (3). A surjective étale atlas of an algebraic space is the
 > coequalizer, in fppf sheaves of sets, of its kernel pair: every map to a sheaf which
@@ -137,13 +137,13 @@ theorem isCoequalizer_of_surjectiveEtale
 
 Declarations registered for the tag:
 
-- [`CategoryTheory.MorphismProperty.relative.property`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.MorphismProperty.relative.property#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/KernelPairRelation.lean, line 173](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/KernelPairRelation.lean#L173) (StacksFrontier): “part (2), étale projections”.
+- [`CategoryTheory.MorphismProperty.relative.property`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=CategoryTheory.MorphismProperty.relative.property#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Spaces/KernelPairRelation.lean, line 173](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/KernelPairRelation.lean#L173) (StacksFrontier): “part (2), étale projections”.
 
 ## Tag 02WS, a definition
 
 [Tag 02WS](https://stacks.math.columbia.edu/tag/02WS) in the Stacks Project.
 
-**`Stacks.Groupoids.IsEtaleEquivalenceRelation`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EquivalenceRelations.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EquivalenceRelations.lean#L103).
+**`Stacks.Groupoids.IsEtaleEquivalenceRelation`**, a class in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EquivalenceRelations.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EquivalenceRelations.lean#L103).
 
 > **Stacks 02WS.** An equivalence relation over `S` is *étale* when its source and
 > target maps are étale morphisms of schemes.
@@ -156,7 +156,7 @@ class IsEtaleEquivalenceRelation {R U : Over S} (j : PreRelation R U) : Prop
 
 [Tag 0263](https://stacks.math.columbia.edu/tag/0263) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.Presentation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtalePresentation.lean, line 50](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/EtalePresentation.lean#L50).
+**`AlgebraicGeometry.Space.Presentation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/EtalePresentation.lean, line 50](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/EtalePresentation.lean#L50).
 
 > **Stacks 0263.** An étale presentation of an algebraic space by a scheme over `S` together
 > with an étale equivalence relation on it.
@@ -173,4 +173,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 65.9, Tag 0261](https://stacks.math.columbia.edu/tag/0261)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

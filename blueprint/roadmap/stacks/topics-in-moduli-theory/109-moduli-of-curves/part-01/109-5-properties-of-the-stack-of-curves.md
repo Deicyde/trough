@@ -8,13 +8,13 @@ proof: formalized
 
 # 109.5 Properties of the stack of curves
 
-Section 109.5 of the Stacks Project, [Tag 0DSP](https://stacks.math.columbia.edu/tag/0DSP). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 109.5 of the Stacks Project, [Tag 0DSP](https://stacks.math.columbia.edu/tag/0DSP). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0DSQ, a lemma
 
 [Tag 0DSQ](https://stacks.math.columbia.edu/tag/0DSQ) in the Stacks Project.
 
-**`AlgebraicGeometry.isSeparated_and_isRelativelyFinitePresentation_diagonal_curves`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesDiagonalUnconditional.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesDiagonalUnconditional.lean#L58).
+**`AlgebraicGeometry.isSeparated_and_isRelativelyFinitePresentation_diagonal_curves`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesDiagonalUnconditional.lean, line 58](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesDiagonalUnconditional.lean#L58).
 
 > **Stacks 0DSQ.** The diagonal of the algebraic stack `Curves` over `Spec ℤ` is separated and
 > of finite presentation.
@@ -38,7 +38,7 @@ theorem isSeparated_and_isRelativelyFinitePresentation_diagonal_curves :
 
 [Tag 0DSS](https://stacks.math.columbia.edu/tag/0DSS) in the Stacks Project.
 
-**`AlgebraicGeometry.isQuasiSeparated_and_isLocallyOfFinitePresentation_curvesAlgebraicStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesQuasiSeparatedLocallyFinitePresentation.lean, line 53](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurvesQuasiSeparatedLocallyFinitePresentation.lean#L53).
+**`AlgebraicGeometry.isQuasiSeparated_and_isLocallyOfFinitePresentation_curvesAlgebraicStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurvesQuasiSeparatedLocallyFinitePresentation.lean, line 53](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurvesQuasiSeparatedLocallyFinitePresentation.lean#L53).
 
 > **Stacks 0DSS.** The morphism `Curves → Spec(ℤ)` of the algebraic stack of curves is
 > quasi-separated and locally of finite presentation.
@@ -66,4 +66,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 109.5, Tag 0DSP](https://stacks.math.columbia.edu/tag/0DSP)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 36.18 Derived categories as module categories
 
-Section 36.18 of the Stacks Project, [Tag 09M2](https://stacks.math.columbia.edu/tag/09M2). 4 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 36.18 of the Stacks Project, [Tag 09M2](https://stacks.math.columbia.edu/tag/09M2). 4 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 09M3, a lemma
 
 [Tag 09M3](https://stacks.math.columbia.edu/tag/09M3) in the Stacks Project.
 
-**`AlgebraicGeometry.RingedSite.derivedCategoryB_tensorWithComplexDerived_obj_scheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/TensorWithComplexQuasicoherentAdjoint.lean, line 262](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/TensorWithComplexQuasicoherentAdjoint.lean#L262). The attribute's comment: “for the site of opens of the scheme”.
+**`AlgebraicGeometry.RingedSite.derivedCategoryB_tensorWithComplexDerived_obj_scheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/TensorWithComplexQuasicoherentAdjoint.lean, line 262](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/TensorWithComplexQuasicoherentAdjoint.lean#L262). The attribute's comment: “for the site of opens of the scheme”.
 
 > **Stacks 09M3.** *"Let `X` be a scheme, `K` a complex of `O_X`-modules with quasi-coherent
 > cohomology sheaves, `(E, d) = Hom(K, K)`. Then `- ⊗_E^𝐋 K : D(E, d) ⟶ D(O_X)` of Tag 09LX has
@@ -37,7 +37,7 @@ theorem derivedCategoryB_tensorWithComplexDerived_obj_scheme (Y : Scheme.{u})
         (Stacks.AlgebraicGeometry.ReflexiveModules.schemeRingedSite Y) ℤ K).obj M)
 ```
 
-**`AlgebraicGeometry.RingedSite.derivedCategoryB_isQuasicoherent_tensorWithComplexDerived_obj_scheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/TensorWithComplexQuasicoherentAdjoint.lean, line 284](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Modules/TensorWithComplexQuasicoherentAdjoint.lean#L284).
+**`AlgebraicGeometry.RingedSite.derivedCategoryB_isQuasicoherent_tensorWithComplexDerived_obj_scheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Modules/TensorWithComplexQuasicoherentAdjoint.lean, line 284](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Modules/TensorWithComplexQuasicoherentAdjoint.lean#L284).
 
 > **Stacks 09M3.** Every cohomology sheaf of `M ⊗_E^𝐋 K` is a quasi-coherent `O_Y`-module, for
 > `Y` a scheme and `K` a complex of `O_Y`-modules with quasi-coherent cohomology sheaves.
@@ -65,7 +65,7 @@ theorem derivedCategoryB_isQuasicoherent_tensorWithComplexDerived_obj_scheme (Y 
 
 [Tag 09M5](https://stacks.math.columbia.edu/tag/09M5) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_differentialGradedAlgebra_quasiCoherentDerivedCategory_equivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/QuasiCoherentDerived/DGAModel.lean, line 250](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/QuasiCoherentDerived/DGAModel.lean#L250).
+**`AlgebraicGeometry.exists_differentialGradedAlgebra_quasiCoherentDerivedCategory_equivalence`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/QuasiCoherentDerived/DGAModel.lean, line 250](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/QuasiCoherentDerived/DGAModel.lean#L250).
 
 > **Stacks 09M5** (Bondal–van den Bergh). *Let `X` be a quasi-compact and quasi-separated
 > scheme. Then there exist a differential graded algebra `(E, d)` with only a finite number of
@@ -93,7 +93,7 @@ theorem exists_differentialGradedAlgebra_quasiCoherentDerivedCategory_equivalenc
 
 [Tag 0DJL](https://stacks.math.columbia.edu/tag/0DJL) in the Stacks Project.
 
-**`Stacks.Duality.SupportedGeneration.exists_dga_equivalence_quasiCoherentSupported`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CompactGeneration/SupportedDGAModel.lean, line 235](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/CompactGeneration/SupportedDGAModel.lean#L235).
+**`Stacks.Duality.SupportedGeneration.exists_dga_equivalence_quasiCoherentSupported`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CompactGeneration/SupportedDGAModel.lean, line 235](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/CompactGeneration/SupportedDGAModel.lean#L235).
 
 > **[Stacks, Tag 0DJL].** *"Let `X` be a quasi-compact and quasi-separated scheme. Let
 > `T ⊂ X` be a closed subset such that `X ∖ T` is quasi-compact. The analogue of Theorem 09M5 holds
@@ -114,7 +114,7 @@ theorem exists_dga_equivalence_quasiCoherentSupported (hT : IsClosed T)
 
 [Tag 09SU](https://stacks.math.columbia.edu/tag/09SU) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_dga_quasiCoherentDerived_linearEquivalence_and_derivedTensor_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/QuasiCoherentDerived/DGAUniqueness/Remark.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/QuasiCoherentDerived/DGAUniqueness/Remark.lean#L142).
+**`AlgebraicGeometry.exists_dga_quasiCoherentDerived_linearEquivalence_and_derivedTensor_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/QuasiCoherentDerived/DGAUniqueness/Remark.lean, line 142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/QuasiCoherentDerived/DGAUniqueness/Remark.lean#L142).
 
 > **Stacks 09SU** (uniqueness of the differential graded algebra). *Let `X` be a quasi-compact
 > and quasi-separated scheme over a ring `R`. By the construction of the proof of Tag 09M5 there
@@ -204,4 +204,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 36.18, Tag 09M2](https://stacks.math.columbia.edu/tag/09M2)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

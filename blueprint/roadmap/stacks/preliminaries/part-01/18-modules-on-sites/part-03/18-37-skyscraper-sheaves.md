@@ -8,13 +8,13 @@ proof: formalized
 
 # 18.37 Skyscraper sheaves
 
-Section 18.37 of the Stacks Project, [Tag 05V6](https://stacks.math.columbia.edu/tag/05V6). 3 tags here are carried by 19 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 18.37 of the Stacks Project, [Tag 05V6](https://stacks.math.columbia.edu/tag/05V6). 3 tags here are carried by 19 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 05V7, a lemma
 
 [Tag 05V7](https://stacks.math.columbia.edu/tag/05V7) in the Stacks Project.
 
-**`Stacks.Topos.Skyscraper.skyscraperAb_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/SkyscraperExact.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Point/SkyscraperExact.lean#L157). The attribute's comment: “(1) p\_* is exact”.
+**`Stacks.Topos.Skyscraper.skyscraperAb_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/SkyscraperExact.lean, line 157](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Point/SkyscraperExact.lean#L157). The attribute's comment: “(1) p\_* is exact”.
 
 > The direct image `p_* : Ab ⥤ Ab(C)` of a point of a topos is exact.
 
@@ -23,7 +23,7 @@ theorem skyscraperAb_exact [HasSheafify J AddCommGrpCat.{w}] :
     exactFunctor AddCommGrpCat.{w} (Sheaf J AddCommGrpCat.{w}) (skyscraperAb p)
 ```
 
-**`Stacks.Topos.Skyscraper.abelianEta`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/SkyscraperStalkSplitting.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Point/SkyscraperStalkSplitting.lean#L94). The attribute's comment: “skyscraper\_splitting”.
+**`Stacks.Topos.Skyscraper.abelianEta`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/SkyscraperStalkSplitting.lean, line 94](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Point/SkyscraperStalkSplitting.lean#L94). The attribute's comment: “skyscraper\_splitting”.
 
 > The canonical map from an abelian group into the stalk of its skyscraper,
 > natural in the abelian group. Its underlying map is the elementwise map of
@@ -34,7 +34,7 @@ noncomputable def abelianEta (p : PointOfTopos.{w, v, u} J) :
     NatTrans (Functor.id (CommGrp (Type w))) (stalkSkyscraperAbFunctor p)
 ```
 
-**`Stacks.Topos.Skyscraper.abelianEta_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/SkyscraperStalkSplitting.lean, line 106](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Point/SkyscraperStalkSplitting.lean#L106). The attribute's comment: “skyscraper\_splitting”.
+**`Stacks.Topos.Skyscraper.abelianEta_hom`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/SkyscraperStalkSplitting.lean, line 106](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Point/SkyscraperStalkSplitting.lean#L106). The attribute's comment: “skyscraper\_splitting”.
 
 > The natural section on abelian group objects has the canonical underlying
 > map of Stacks Project, Tag 05UX.
@@ -45,7 +45,7 @@ theorem abelianEta_hom (p : PointOfTopos.{w, v, u} J)
     ((abelianEta p).app A).hom.hom.hom = (p.counitSection.app A.X)
 ```
 
-**`Stacks.Topos.Skyscraper.stalkSkyscraperAbFunctorIsoBiprod`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/SkyscraperStalkSplitting.lean, line 203](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Point/SkyscraperStalkSplitting.lean#L203). The attribute's comment: “skyscraper\_splitting”.
+**`Stacks.Topos.Skyscraper.stalkSkyscraperAbFunctorIsoBiprod`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/SkyscraperStalkSplitting.lean, line 203](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Point/SkyscraperStalkSplitting.lean#L203). The attribute's comment: “skyscraper\_splitting”.
 
 > **Stacks Project, Tag 05V7.** The decomposition
 > `p⁻¹p_*A = A ⊕ Iₚ(A)` is functorial in the abelian group `A`.
@@ -57,7 +57,7 @@ noncomputable def stalkSkyscraperAbFunctorIsoBiprod
       (commGrpAddEquivalence.functor ⊞ kernelComplementAbFunctor p)
 ```
 
-**`Stacks.Topos.Skyscraper.stalkSkyscraperAbFunctorIsoBiprod_fst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/SkyscraperStalkSplitting.lean, line 211](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Point/SkyscraperStalkSplitting.lean#L211). The attribute's comment: “skyscraper\_splitting”.
+**`Stacks.Topos.Skyscraper.stalkSkyscraperAbFunctorIsoBiprod_fst`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/SkyscraperStalkSplitting.lean, line 211](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Point/SkyscraperStalkSplitting.lean#L211). The attribute's comment: “skyscraper\_splitting”.
 
 > The first projection of the splitting is the canonical counit.
 
@@ -68,7 +68,7 @@ theorem stalkSkyscraperAbFunctorIsoBiprod_fst
       Functor.whiskerRight (abelianCounit p) commGrpAddEquivalence.functor
 ```
 
-**`Stacks.Topos.Skyscraper.stalkSkyscraperAbFunctorIsoBiprod_inl`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/SkyscraperStalkSplitting.lean, line 226](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Point/SkyscraperStalkSplitting.lean#L226). The attribute's comment: “skyscraper\_splitting”.
+**`Stacks.Topos.Skyscraper.stalkSkyscraperAbFunctorIsoBiprod_inl`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/SkyscraperStalkSplitting.lean, line 226](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Point/SkyscraperStalkSplitting.lean#L226). The attribute's comment: “skyscraper\_splitting”.
 
 > The first inclusion of the splitting is the canonical map from an
 > abelian group into the stalk of its skyscraper.
@@ -80,7 +80,7 @@ theorem stalkSkyscraperAbFunctorIsoBiprod_inl
       (stalkSkyscraperAbFunctorIsoBiprod p).hom = biprod.inl
 ```
 
-**`Stacks.Topos.Skyscraper.auxKernelComplementAbFunctorObjIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/SkyscraperStalkSplitting.lean, line 243](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Point/SkyscraperStalkSplitting.lean#L243). The attribute's comment: “skyscraper\_splitting”.
+**`Stacks.Topos.Skyscraper.auxKernelComplementAbFunctorObjIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/SkyscraperStalkSplitting.lean, line 243](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Point/SkyscraperStalkSplitting.lean#L243). The attribute's comment: “skyscraper\_splitting”.
 
 > Objectwise, the auxiliary kernel functor is canonically isomorphic to the
 > prescribed `Iₚ`.
@@ -92,7 +92,7 @@ noncomputable def auxKernelComplementAbFunctorObjIso
     (auxKernelComplementAbFunctor p).obj A ≅ PointOfTopos.kernelComplementOfCounit p A
 ```
 
-**`Stacks.Topos.Skyscraper.kernelComplementAbFunctorNatIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/SkyscraperStalkSplitting.lean, line 266](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Point/SkyscraperStalkSplitting.lean#L266). The attribute's comment: “skyscraper\_splitting”.
+**`Stacks.Topos.Skyscraper.kernelComplementAbFunctorNatIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/SkyscraperStalkSplitting.lean, line 266](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Point/SkyscraperStalkSplitting.lean#L266). The attribute's comment: “skyscraper\_splitting”.
 
 > The identification of the kernel summand with `Iₚ` is natural, not merely
 > an objectwise identification.
@@ -108,7 +108,7 @@ noncomputable def kernelComplementAbFunctorNatIso
 
 [Tag 05V8](https://stacks.math.columbia.edu/tag/05V8) in the Stacks Project.
 
-**`Stacks.Sheaves.RingedPoint.RingedPointSituation.pushforwardModules_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/RingedPointPushforward.lean, line 265](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/RingedPointPushforward.lean#L265). The attribute's comment: “exactness of the direct image”.
+**`Stacks.Sheaves.RingedPoint.RingedPointSituation.pushforwardModules_exact`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/RingedPointPushforward.lean, line 265](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/RingedPointPushforward.lean#L265). The attribute's comment: “exactness of the direct image”.
 
 > **Stacks 05V8.** The direct image of modules from a ringed point is exact.
 
@@ -122,7 +122,7 @@ theorem pushforwardModules_exact
       (pushforwardModules s.toRingedToposHom)
 ```
 
-**`Stacks.Sheaves.RingedPoint.RingedPointSituation.pullbackPushforwardModules_counit_epi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/RingedPointPushforward.lean, line 333](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/RingedPointPushforward.lean#L333). The attribute's comment: “surjectivity of the counit”.
+**`Stacks.Sheaves.RingedPoint.RingedPointSituation.pullbackPushforwardModules_counit_epi`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/RingedPointPushforward.lean, line 333](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/RingedPointPushforward.lean#L333). The attribute's comment: “surjectivity of the counit”.
 
 > **Stacks 05V8.** The canonical map `p^*p_*M ⟶ M` is a surjection of `O_p`-modules: it is
 > the counit of the pullback-pushforward adjunction of Stacks 03D7, hence a morphism of sheaves
@@ -138,7 +138,7 @@ theorem pullbackPushforwardModules_counit_epi
     Epi ((pullbackAdjPushforwardModules s.toRingedToposHom).counit.app M)
 ```
 
-**`Stacks.Sheaves.RingedPoint.RingedPointSituation.pullbackPushforwardModules_counit_stalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/RingedPointPushforward.lean, line 456](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/RingedPointPushforward.lean#L456). The attribute's comment: “(2) the canonical surjection p⁻¹p\_*M → M is O\_p-linear”.
+**`Stacks.Sheaves.RingedPoint.RingedPointSituation.pullbackPushforwardModules_counit_stalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/RingedPointPushforward.lean, line 456](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/RingedPointPushforward.lean#L456). The attribute's comment: “(2) the canonical surjection p⁻¹p\_*M → M is O\_p-linear”.
 
 > **Stacks 05V8.** The canonical surjection `p⁻¹p_*M ⟶ M` of Stacks 05V7 — the counit of the
 > adjunction `p⁻¹ ⊣ p_*` of the point — is `O_p`-linear: under the canonical identification
@@ -162,7 +162,7 @@ theorem pullbackPushforwardModules_counit_stalk
             (Stacks.SheafOfModules.Tensor.ringSheaf s.point.O)).obj M))
 ```
 
-**`Stacks.Sheaves.RingedPoint.GSets.realSMul_eq_twistedSMul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/RingedPointSplittingNotLinear.lean, line 261](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/RingedPointSplittingNotLinear.lean#L261). The attribute's comment: “(3) the O\_p-module structure on p⁻¹p\_*M is (r f)(σ) = σ(r) f(σ)”.
+**`Stacks.Sheaves.RingedPoint.GSets.realSMul_eq_twistedSMul`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/RingedPointSplittingNotLinear.lean, line 261](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/RingedPointSplittingNotLinear.lean#L261). The attribute's comment: “(3) the O\_p-module structure on p⁻¹p\_*M is (r f)(σ) = σ(r) f(σ)”.
 
 > **Stacks Project, Tag 05V8, part (3).** The `𝒪_p`-module structure on `p⁻¹p_*M = Map(G, M)`
 > is `(r f)(σ) = σ(r) f(σ)`.
@@ -177,7 +177,7 @@ theorem realSMul_eq_twistedSMul (r : R) (f : G → M) :
     realSMul G R M r f = twistedSMul G R M r f
 ```
 
-**`Stacks.Sheaves.RingedPoint.GSets.not_isRealLinear_skyscraperSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/RingedPointSplittingNotLinear.lean, line 339](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/RingedPointSplittingNotLinear.lean#L339). The attribute's comment: “(3) the splitting is not O\_p-linear in general”.
+**`Stacks.Sheaves.RingedPoint.GSets.not_isRealLinear_skyscraperSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Algebra/Category/ModuleCat/Sheaf/RingedPointSplittingNotLinear.lean, line 339](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Algebra/Category/ModuleCat/Sheaf/RingedPointSplittingNotLinear.lean#L339). The attribute's comment: “(3) the splitting is not O\_p-linear in general”.
 
 > **Stacks Project, Tag 05V8, part (3).** The functorial direct sum decomposition
 > `p⁻¹p_*M = M ⊕ I(M)` of Stacks 05V7 is **not** `𝒪_p`-linear in general.
@@ -202,7 +202,7 @@ theorem not_isRealLinear_skyscraperSection
 
 [Tag 05V9](https://stacks.math.columbia.edu/tag/05V9) in the Stacks Project.
 
-**`Stacks.Sites.GSets.skyscraperStalkEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/SkyscraperOnGSets.lean, line 196](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Point/SkyscraperOnGSets.lean#L196). The attribute's comment: “p⁻¹p\_*M = Map(G, M)”.
+**`Stacks.Sites.GSets.skyscraperStalkEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/SkyscraperOnGSets.lean, line 196](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Point/SkyscraperOnGSets.lean#L196). The attribute's comment: “p⁻¹p\_*M = Map(G, M)”.
 
 > **Stacks Project, Tag 05V9.** The identification `p⁻¹p_*E = Map(G, E)`: the direct image of
 > `E` is the `G`-set `Map(G, E)` and the inverse image forgets the action.
@@ -212,7 +212,7 @@ def skyscraperStalkEquiv (E : Type w) :
     ((forgetfulPoint G e).pushforward ⋙ (forgetfulPoint G e).inverseImage).obj E ≃ (G → E)
 ```
 
-**`Stacks.Sites.GSets.counit_app_eq_skyscraperStalkEquiv_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/SkyscraperOnGSets.lean, line 213](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Point/SkyscraperOnGSets.lean#L213). The attribute's comment: “the counit p⁻¹p\_*M → M is evaluation at 1\_G”.
+**`Stacks.Sites.GSets.counit_app_eq_skyscraperStalkEquiv_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/SkyscraperOnGSets.lean, line 213](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Point/SkyscraperOnGSets.lean#L213). The attribute's comment: “the counit p⁻¹p\_*M → M is evaluation at 1\_G”.
 
 > **Stacks Project, Tag 05V9.** Under the identification of `p⁻¹p_*E` with `Map(G, E)` the
 > counit `p⁻¹p_*E ⟶ E` is evaluation at `1_G`.
@@ -223,7 +223,7 @@ theorem counit_app_eq_skyscraperStalkEquiv_one (E : Type w)
     (forgetfulPoint G e).adj.counit.app E x = skyscraperStalkEquiv G e E x 1
 ```
 
-**`Stacks.Sites.GSets.skyscraperStalkEquiv_counitSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/SkyscraperOnGSets.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Point/SkyscraperOnGSets.lean#L220). The attribute's comment: “M → Map(G, M) assigns to m the constant function with value m”.
+**`Stacks.Sites.GSets.skyscraperStalkEquiv_counitSection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/SkyscraperOnGSets.lean, line 220](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Point/SkyscraperOnGSets.lean#L220). The attribute's comment: “M → Map(G, M) assigns to m the constant function with value m”.
 
 > **Stacks Project, Tag 05V9.** Under the identification of `p⁻¹p_*E` with `Map(G, E)` the
 > canonical section of the counit sends `m` to the constant function with value `m`.
@@ -234,7 +234,7 @@ theorem skyscraperStalkEquiv_counitSection (E : Type w) (m : E) :
       Function.const G m
 ```
 
-**`Stacks.Sites.GSets.kernelCounitEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/SkyscraperOnGSets.lean, line 234](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Point/SkyscraperOnGSets.lean#L234). The attribute's comment: “I(M) = \{f : G → M | f(1\_G) = 0}”.
+**`Stacks.Sites.GSets.kernelCounitEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/SkyscraperOnGSets.lean, line 234](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Point/SkyscraperOnGSets.lean#L234). The attribute's comment: “I(M) = \{f : G → M | f(1\_G) = 0}”.
 
 > **Stacks Project, Tag 05V9.** `I(M) = {f : G → M | f(1_G) = 0}`: the kernel of the counit at
 > an abelian group object `A` is the set of functions `G → A` vanishing at `1_G`. An abelian group
@@ -248,7 +248,7 @@ def kernelCounitEquiv (A : CommGrp (Type w)) :
       {f : G → A.X // f 1 = (1 : commGrpTypeEquivalenceCommGrp.functor.obj A)}
 ```
 
-**`Stacks.Sites.GSets.stalkEquivSectionsAtRegular`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/SkyscraperOnGSets.lean, line 344](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Point/SkyscraperOnGSets.lean#L344). The attribute's comment: “𝒪\_p = R forgetting the G-action: the stalk is the ring of sections over \{}\_G G”.
+**`Stacks.Sites.GSets.stalkEquivSectionsAtRegular`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/SkyscraperOnGSets.lean, line 344](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Point/SkyscraperOnGSets.lean#L344). The attribute's comment: “𝒪\_p = R forgetting the G-action: the stalk is the ring of sections over \{}\_G G”.
 
 > **Stacks Project, Tag 05V9.** The stalk `𝒪_p` of the sheaf of rings attached to `R` is its
 > ring of sections over an object presenting the regular `G`-set; with
@@ -260,7 +260,7 @@ def stalkEquivSectionsAtRegular :
       (equivariantSubring G R (ι.obj u₀))
 ```
 
-**`Stacks.Sites.GSets.sectionsAtRegularRingEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/SkyscraperOnGSets.lean, line 355](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Point/SkyscraperOnGSets.lean#L355). The attribute's comment: “𝒪\_p = R forgetting the G-action: that ring is R”.
+**`Stacks.Sites.GSets.sectionsAtRegularRingEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Point/SkyscraperOnGSets.lean, line 355](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Point/SkyscraperOnGSets.lean#L355). The attribute's comment: “𝒪\_p = R forgetting the G-action: that ring is R”.
 
 > **Stacks Project, Tag 05V9.** `𝒪_p = R` where we forget the `G`-action: evaluation at the
 > base point is a ring isomorphism from the sections of the sheaf of rings attached to `R` over an
@@ -277,4 +277,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 18.37, Tag 05V6](https://stacks.math.columbia.edu/tag/05V6)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

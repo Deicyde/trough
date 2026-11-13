@@ -1,6 +1,6 @@
 # 8 Stacks
 
-Chapter 8 of the Stacks Project, *Stacks*, [Tag 0266](https://stacks.math.columbia.edu/tag/0266): the 12 sections of its 13 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 76 tags are carried by 128 declarations of the repository (all in StacksFrontier) and 15 registered declarations.
+Chapter 8 of the Stacks Project, *Stacks*, [Tag 0266](https://stacks.math.columbia.edu/tag/0266): the 12 sections of its 13 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 76 tags are carried by 139 declarations of the repository (all in StacksFrontier) and 15 registered declarations.
 
 - [8.2 Presheaves of morphisms associated to fibred categories](8-2-presheaves-of-morphisms-associated-to-fibred.md)
 - [8.3 Descent data in fibred categories](8-3-descent-data-in-fibred-categories.md)

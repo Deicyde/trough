@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: Crystalline.FCrystalSituation, Crystalline.FCrystal, Crystalline.FCrystal.Nondegenerate, Matrix.det_mul_det_and_two_sided_of_mul_eq_pow_smul_one, Crystalline.FCrystal.nsmul_two_sided_of_rankLE, Crystalline.FCrystal.nondegenerate_conditions_of_rankLE, Crystalline.FCrystal.exists_isFiniteLocallyFreeOfRankLE_of_compactSpace, Crystalline.GlobalCrystallineSituation.SmallSite.statement07N5
+lean: Crystalline.FCrystalSituation, Crystalline.SmallFCrystal, Crystalline.SmallFCrystal.Nondegenerate, Matrix.det_mul_det_and_two_sided_of_mul_eq_pow_smul_one, Crystalline.FCrystal.nsmul_two_sided_of_rankLE, Crystalline.FCrystal.nondegenerate_conditions_of_rankLE, Crystalline.FCrystal.exists_isFiniteLocallyFreeOfRankLE_of_compactSpace, Crystalline.GlobalCrystallineSituation.SmallSite.statement07N5
 statement: formalized
 proof: formalized
 ---
 
 # 60.26 Frobenius action on crystalline cohomology
 
-Section 60.26 of the Stacks Project, [Tag 07N0](https://stacks.math.columbia.edu/tag/07N0). 4 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 60.26 of the Stacks Project, [Tag 07N0](https://stacks.math.columbia.edu/tag/07N0). 4 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 07N2, a situation
 
 [Tag 07N2](https://stacks.math.columbia.edu/tag/07N2) in the Stacks Project.
 
-**`Crystalline.FCrystalSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/FrobeniusCrystalSituation.lean, line 44](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/FrobeniusCrystalSituation.lean#L44).
+**`Crystalline.FCrystalSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/FrobeniusCrystalSituation.lean, line 44](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/FrobeniusCrystalSituation.lean#L44).
 
 > A global crystalline situation over an affine divided power base, with the distinguished
 > prime in its divided power ideal and a divided power endomorphism of the base ring lifting the
@@ -30,23 +30,23 @@ public structure FCrystalSituation
 
 [Tag 07N3](https://stacks.math.columbia.edu/tag/07N3) in the Stacks Project.
 
-**`Crystalline.FCrystal`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/FCrystal.lean, line 446](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/FCrystal.lean#L446). The attribute's comment: “F-crystal”.
+**`Crystalline.SmallFCrystal`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/FCrystal.lean, line 116](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/FCrystal.lean#L116). The attribute's comment: “F-crystal”.
 
-> **Stacks Project, Tag 07N3.**  An *F-crystal on `X/S` relative to `σ`*: a crystal in finite
-> locally free `𝒪_{X/S}`-modules `E` together with a map `F_E : (F_X)_cris^* E ⟶ E`.
+> **Stacks Project, Tag 07N3.**  An *F-crystal on `X/S` relative to `σ`*: a crystal `E` in
+> finite locally free `𝒪_{X/S}`-modules on the small crystalline site `Cris(X/S)` together with a map
+> `F_E : (F_X)_cris^* E ⟶ E`.
 >
-> The crystal in finite locally free modules is the notion of [Stacks, Tag 07IU],
-> `Crystalline.GlobalCrystallineSituation.IsFiniteLocallyFreeQuasicoherentCrystal`: quasi-coherence
-> — condition (1) of [Stacks, Tag 07IT], the form in which this library reads the source's "crystal
-> in quasi-coherent modules" — together with finite local freeness.  It is **not** the stronger
-> `Crystalline.GlobalCrystallineSituation.IsFiniteLocallyFreeCrystal`, which reads the crystal
-> condition with the comparison maps of presheaves of modules; see the module documentation.
+> The crystal in finite locally free modules is the notion of [Stacks, Tag 07IU] on `Cris(X/S)`,
+> `...SmallSite.ModuleSheaf.IsFiniteLocallyFreeQuasicoherentCrystal`:
+> quasi-coherence, condition (1) of [Stacks, Tag 07IT], together with finite local freeness.  The
+> pullback `(F_X)_cris^*` is `Crystalline.FCrystalSituation.smallFrobeniusModulePullback`, the
+> pullback of modules along `(F_X)_cris = π_X ∘ (F_X)_CRIS ∘ i_X` of [Stacks, Tag 07IK].
 
 ```lean
-structure FCrystal (T : FCrystalSituation.{u})
+structure SmallFCrystal (T : FCrystalSituation.{u})
 ```
 
-**`Crystalline.FCrystal.Nondegenerate`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/FCrystal.lean, line 459](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/FCrystal.lean#L459). The attribute's comment: “nondegenerate”.
+**`Crystalline.SmallFCrystal.Nondegenerate`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/FCrystal.lean, line 130](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/FCrystal.lean#L130). The attribute's comment: “nondegenerate”.
 
 > **Stacks Project, Tag 07N3.**  An F-crystal is *nondegenerate* when there are an integer
 > `i ≥ 0` and a map `V : E ⟶ (F_X)_cris^* E` with `V ∘ F_E = p ^ i`, the composite being taken
@@ -54,14 +54,14 @@ structure FCrystal (T : FCrystalSituation.{u})
 > through the `ℕ`-action on morphisms.
 
 ```lean
-def FCrystal.Nondegenerate {T : FCrystalSituation.{u}} (E : FCrystal T) : Prop
+def SmallFCrystal.Nondegenerate {T : FCrystalSituation.{u}} (E : SmallFCrystal T) : Prop
 ```
 
 ## Tag 07N4, a remark
 
 [Tag 07N4](https://stacks.math.columbia.edu/tag/07N4) in the Stacks Project.
 
-**`Matrix.det_mul_det_and_two_sided_of_mul_eq_pow_smul_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/FrobeniusNondegeneracy.lean, line 202](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/FrobeniusNondegeneracy.lean#L202). The attribute's comment: “the matrix computation: for r × r matrices K, L over a ring R with K L = p ^ i 1, det(K) det(L) = p ^ (r i), the adjugate L' of L satisfies L' L = L L' = det(L) 1, and K' = p ^ (r i) K satisfies K' L = p ^ j 1 and L K' = p ^ j 1 for j = r i + i”.
+**`Matrix.det_mul_det_and_two_sided_of_mul_eq_pow_smul_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/FrobeniusNondegeneracy.lean, line 202](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/FrobeniusNondegeneracy.lean#L202). The attribute's comment: “the matrix computation: for r × r matrices K, L over a ring R with K L = p ^ i 1, det(K) det(L) = p ^ (r i), the adjugate L' of L satisfies L' L = L L' = det(L) 1, and K' = p ^ (r i) K satisfies K' L = p ^ j 1 and L K' = p ^ j 1 for j = r i + i”.
 
 > **The matrix computation of [Stacks, Tag 07N4].**  Let `R` be a commutative ring, `r` an
 > integer and `K, L` two `r × r` matrices over `R` with `K L = pⁱ 1`.  Then:
@@ -85,7 +85,7 @@ theorem det_mul_det_and_two_sided_of_mul_eq_pow_smul_one {r : ℕ}
       L * (p ^ (r * i) • K) = p ^ (r * i + i) • (1 : Matrix (Fin r) (Fin r) R)
 ```
 
-**`Crystalline.FCrystal.nsmul_two_sided_of_rankLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/FrobeniusNondegeneracyBoundedRank.lean, line 97](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/FrobeniusNondegeneracyBoundedRank.lean#L97). The attribute's comment: “for an F-crystal (E, F) whose rank is bounded by rmax and V as in Definition 07N3 with V ∘ F = p ^ i id, the map V' = p ^ N V with N ≥ rmax * i satisfies V' ∘ F = p ^ (N + i) id and F ∘ V' = p ^ (N + i) id”.
+**`Crystalline.FCrystal.nsmul_two_sided_of_rankLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/FrobeniusNondegeneracyBoundedRank.lean, line 97](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/FrobeniusNondegeneracyBoundedRank.lean#L97). The attribute's comment: “for an F-crystal (E, F) whose rank is bounded by rmax and V as in Definition 07N3 with V ∘ F = p ^ i id, the map V' = p ^ N V with N ≥ rmax * i satisfies V' ∘ F = p ^ (N + i) id and F ∘ V' = p ^ (N + i) id”.
 
 > **The last sentence of [Stacks, Tag 07N4].**  Let `(E, F_E)` be an `F`-crystal whose rank is
 > bounded by `rmax`, and let `V` be as in [Stacks, Tag 07N3], `F_E ≫ V = p ^ i • 𝟙`, that is
@@ -105,7 +105,7 @@ theorem FCrystal.nsmul_two_sided_of_rankLE
       ((T.global.p ^ N) • V) ≫ E.frobenius = (T.global.p ^ (N + i)) • 𝟙 E.crystal
 ```
 
-**`Crystalline.FCrystal.nondegenerate_conditions_of_rankLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/FrobeniusNondegeneracyBoundedRank.lean, line 170](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/FrobeniusNondegeneracyBoundedRank.lean#L170). The attribute's comment: “if the rank of E is bounded, both conditions follow from the nondegeneracy condition of Definition 07N3: there is V' with V' ∘ F = p ^ n id and F ∘ V' = p ^ n id, and there is j ≥ 0 such that Ker(F) and Coker(F) are killed by p ^ j”.
+**`Crystalline.FCrystal.nondegenerate_conditions_of_rankLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/FrobeniusNondegeneracyBoundedRank.lean, line 170](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/FrobeniusNondegeneracyBoundedRank.lean#L170). The attribute's comment: “if the rank of E is bounded, both conditions follow from the nondegeneracy condition of Definition 07N3: there is V' with V' ∘ F = p ^ n id and F ∘ V' = p ^ n id, and there is j ≥ 0 such that Ker(F) and Coker(F) are killed by p ^ j”.
 
 > **[Stacks, Tag 07N4]: for an `F`-crystal of bounded rank, both conditions follow from
 > nondegeneracy.**  Let `(E, F)` be an `F`-crystal as in [Stacks, Tag 07N3] whose rank is bounded
@@ -136,7 +136,7 @@ theorem FCrystal.nondegenerate_conditions_of_rankLE
           (q : E.crystal ⟶ Q), E.frobenius ≫ q = 0 → (T.global.p ^ j) • q = 0)
 ```
 
-**`Crystalline.FCrystal.exists_isFiniteLocallyFreeOfRankLE_of_compactSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/FrobeniusNondegeneracyBoundedRank.lean, line 314](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/FrobeniusNondegeneracyBoundedRank.lean#L314). The attribute's comment: “the rank of E is bounded if X is quasi-compact”.
+**`Crystalline.FCrystal.exists_isFiniteLocallyFreeOfRankLE_of_compactSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/FrobeniusNondegeneracyBoundedRank.lean, line 314](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/FrobeniusNondegeneracyBoundedRank.lean#L314). The attribute's comment: “the rank of E is bounded if X is quasi-compact”.
 
 > If `X` is quasi-compact, there is an integer `rmax` such that every object of `CRIS(X/S)` has a
 > covering on each member of which `E` is a direct sum of at most `rmax` copies of `𝒪_{X/S}`.
@@ -151,7 +151,7 @@ theorem FCrystal.exists_isFiniteLocallyFreeOfRankLE_of_compactSpace [CompactSpac
 
 [Tag 07N5](https://stacks.math.columbia.edu/tag/07N5) in the Stacks Project.
 
-**`Crystalline.GlobalCrystallineSituation.SmallSite.statement07N5`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/Frobenius07N5Theorem.lean, line 271](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/Frobenius07N5Theorem.lean#L271). The attribute's comment: “the theorem: for a nondegenerate F-crystal over a p-adically complete Noetherian A with X -> S\_0 proper smooth, the canonical map F\_E o (F\_X)\_cris^* on RGamma(Cris(X/S), E) becomes an isomorphism after inverting p”.
+**`Crystalline.GlobalCrystallineSituation.SmallSite.statement07N5`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/Frobenius07N5Theorem.lean, line 271](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Crystalline/SmallSite/Frobenius07N5Theorem.lean#L271). The attribute's comment: “the theorem: for a nondegenerate F-crystal over a p-adically complete Noetherian A with X -> S\_0 proper smooth, the canonical map F\_E o (F\_X)\_cris^* on RGamma(Cris(X/S), E) becomes an isomorphism after inverting p”.
 
 > **[Stacks, Tag 07N5].**  In Situation [Stacks, Tag 07N2] let `(E, F_E)` be a nondegenerate
 > `F`-crystal.  Assume `A` is a `p`-adically complete Noetherian ring and that `X → S₀` is proper
@@ -187,4 +187,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 60.26, Tag 07N0](https://stacks.math.columbia.edu/tag/07N0)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

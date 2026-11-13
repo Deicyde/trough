@@ -8,13 +8,13 @@ proof: formalized
 
 # 3.7 Cofinality
 
-Section 3.7 of the Stacks Project, [Tag 000E](https://stacks.math.columbia.edu/tag/000E). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 3.7 of the Stacks Project, [Tag 000E](https://stacks.math.columbia.edu/tag/000E). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 05N2, a lemma
 
 [Tag 05N2](https://stacks.math.columbia.edu/tag/05N2) in the Stacks Project.
 
-**`Ordinal.exists_factorization_of_mk_lt_cof`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/SetTheory/Cardinal/Cofinality.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/SetTheory/Cardinal/Cofinality.lean#L78).
+**`Ordinal.exists_factorization_of_mk_lt_cof`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/SetTheory/Cardinal/Cofinality.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/SetTheory/Cardinal/Cofinality.lean#L78).
 
 > **Stacks 05N2.** Let `β` be an ordinal and `(F_α)_{α < β}` an ordinal-indexed direct
 > system with colimit `DirectLimit F f` and canonical maps `ι_α : F_α → DirectLimit F f`,
@@ -39,7 +39,7 @@ theorem exists_factorization_of_mk_lt_cof {β : Ordinal.{u}}
 
 [Tag 05N3](https://stacks.math.columbia.edu/tag/05N3) in the Stacks Project.
 
-**`Cardinal.exists_ordinal_cof_gt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/SetTheory/Cardinal/Cofinality.lean, line 61](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/SetTheory/Cardinal/Cofinality.lean#L61).
+**`Cardinal.exists_ordinal_cof_gt`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/SetTheory/Cardinal/Cofinality.lean, line 61](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/SetTheory/Cardinal/Cofinality.lean#L61).
 
 > **Stacks 05N3.** For every cardinal `κ` there is an ordinal `α` with `κ < cf(α)`:
 > the successor of the infinite cardinal `κ ⊔ ℵ₀` is regular, so the ordinal it indexes has
@@ -56,4 +56,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 3.7, Tag 000E](https://stacks.math.columbia.edu/tag/000E)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

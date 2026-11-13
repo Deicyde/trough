@@ -8,13 +8,13 @@ proof: formalized
 
 # 52.2 Formal sections, I
 
-Section 52.2 of the Stacks Project, [Tag 0EH3](https://stacks.math.columbia.edu/tag/0EH3). 1 tag here is carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 52.2 of the Stacks Project, [Tag 0EH3](https://stacks.math.columbia.edu/tag/0EH3). 1 tag here is carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0EI8, a lemma
 
 [Tag 0EI8](https://stacks.math.columbia.edu/tag/0EI8) in the Stacks Project.
 
-**`Stacks.Algebraization.AdicInverseSystem.isZero_cohomology_limitModule_of_affineOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AdicInverseSystem/AffineVanishing.lean, line 107](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AdicInverseSystem/AffineVanishing.lean#L107). The attribute's comment: “affine\_vanishing”.
+**`Stacks.Algebraization.AdicInverseSystem.isZero_cohomology_limitModule_of_affineOpen`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AdicInverseSystem/AffineVanishing.lean, line 107](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/AdicInverseSystem/AffineVanishing.lean#L107). The attribute's comment: “affine\_vanishing”.
 
 > The positive-degree cohomology of the inverse limit of an adic inverse system vanishes on
 > every affine open.
@@ -25,7 +25,7 @@ public theorem isZero_cohomology_limitModule_of_affineOpen (U : S.X.affineOpens)
     IsZero (Hgroup S.X.ringCatSheaf U.1 p S.limitModule)
 ```
 
-**`Stacks.Algebraization.AdicInverseSystem.isDerivedLimit_single_limitModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AdicInverseSystem/DerivedLimitMilnorSequence.lean, line 69](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AdicInverseSystem/DerivedLimitMilnorSequence.lean#L69). The attribute's comment: “part (1)”.
+**`Stacks.Algebraization.AdicInverseSystem.isDerivedLimit_single_limitModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AdicInverseSystem/DerivedLimitMilnorSequence.lean, line 69](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/AdicInverseSystem/DerivedLimitMilnorSequence.lean#L69). The attribute's comment: “part (1)”.
 
 > The inverse limit of an adic inverse system **is** its derived inverse limit: placed in
 > degree zero, `F = lim F_n` sits in the defining distinguished triangle
@@ -48,7 +48,7 @@ public theorem isDerivedLimit_single_limitModule :
           (SheafOfModules.{u} (structureSheafRing S.X.toRingedSpace)) 0).obj S.limitModule)
 ```
 
-**`Stacks.Algebraization.AdicInverseSystem.exists_shortExact_cohomology_limitModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AdicInverseSystem/DerivedLimitMilnorSequence.lean, line 105](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AdicInverseSystem/DerivedLimitMilnorSequence.lean#L105). The attribute's comment: “part (3)”.
+**`Stacks.Algebraization.AdicInverseSystem.exists_shortExact_cohomology_limitModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AdicInverseSystem/DerivedLimitMilnorSequence.lean, line 105](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/AdicInverseSystem/DerivedLimitMilnorSequence.lean#L105). The attribute's comment: “part (3)”.
 
 > **The Milnor short exact sequence of an adic inverse system.** For every degree `p` the
 > cohomology of `F = lim F_n` sits in a short exact sequence
@@ -111,7 +111,7 @@ public theorem exists_shortExact_cohomology_limitModule {A : Type u} [CommRing A
               (ShortComplex.mk i q w).ShortExact
 ```
 
-**`Stacks.Algebraization.AdicInverseSystem.idealPowerMultiple_limit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AdicInverseSystem/IdealPowers.lean, line 160](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AdicInverseSystem/IdealPowers.lean#L160). The attribute's comment: “ideal\_powers”.
+**`Stacks.Algebraization.AdicInverseSystem.idealPowerMultiple_limit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AdicInverseSystem/IdealPowers.lean, line 160](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/AdicInverseSystem/IdealPowers.lean#L160). The attribute's comment: “ideal\_powers”.
 
 > A morphism into the inverse limit factors through `I ^ n` of the limit if and only if all
 > its projections to the terms `F_m`, for `m ≥ n`, factor through `I ^ n F_m`. This is the
@@ -128,7 +128,7 @@ public theorem idealPowerMultiple_limit (hI : Scheme.IdealSheafData.IsFiniteType
           f ≫ limit.π S.system (op m))
 ```
 
-**`Stacks.Algebraization.AdicInverseSystem.surjective_limitComparison_moduleCohomologyFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AdicInverseSystem/MilnorSurjection.lean, line 240](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AdicInverseSystem/MilnorSurjection.lean#L240). The attribute's comment: “surjectivity of the comparison onto the limit, module-valued cohomology”.
+**`Stacks.Algebraization.AdicInverseSystem.surjective_limitComparison_moduleCohomologyFunctor`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AdicInverseSystem/MilnorSurjection.lean, line 240](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/AdicInverseSystem/MilnorSurjection.lean#L240). The attribute's comment: “surjectivity of the comparison onto the limit, module-valued cohomology”.
 
 > **The Milnor surjection of an adic inverse system, in module-valued cohomology.** For an
 > adic inverse system `(Fₙ)` of quasi-coherent modules on a scheme `X`, with inverse limit
@@ -146,7 +146,7 @@ public theorem surjective_limitComparison_moduleCohomologyFunctor (S : AdicInver
     Function.Surjective (limitComparison S (moduleCohomologyFunctor S.X p)).hom
 ```
 
-**`Stacks.Algebraization.AdicInverseSystem.exists_idealPowerQuotientIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AdicInverseSystem/Reduction.lean, line 363](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/AdicInverseSystem/Reduction.lean#L363). The attribute's comment: “reduction”.
+**`Stacks.Algebraization.AdicInverseSystem.exists_idealPowerQuotientIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/AdicInverseSystem/Reduction.lean, line 363](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/AdicInverseSystem/Reduction.lean#L363). The attribute's comment: “reduction”.
 
 > Reduction of the limit of an adic inverse system modulo `I^{n+1}` recovers its `n`-th
 > (zero-indexed) term, compatibly with the canonical limit projection.
@@ -166,4 +166,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 52.2, Tag 0EH3](https://stacks.math.columbia.edu/tag/0EH3)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

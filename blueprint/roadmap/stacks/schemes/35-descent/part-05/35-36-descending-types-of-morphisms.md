@@ -8,13 +8,13 @@ proof: formalized
 
 # 35.36 Descending types of morphisms
 
-Section 35.36 of the Stacks Project, [Tag 02W1](https://stacks.math.columbia.edu/tag/02W1). 2 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 35.36 of the Stacks Project, [Tag 02W1](https://stacks.math.columbia.edu/tag/02W1). 2 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 02W2, a definition
 
 [Tag 02W2](https://stacks.math.columbia.edu/tag/02W2) in the Stacks Project.
 
-**`AlgebraicGeometry.SatisfiesDescent`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/LocalOnSourceTopologies/MorphismDescent.lean, line 47](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/LocalOnSourceTopologies/MorphismDescent.lean#L47).
+**`AlgebraicGeometry.SatisfiesDescent`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/LocalOnSourceTopologies/MorphismDescent.lean, line 47](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/LocalOnSourceTopologies/MorphismDescent.lean#L47).
 
 > **Stacks Project, Tag 02W2.** Morphisms with property `P` satisfy descent for the coverings
 > of a precoverage `K` if every descent datum relative to a `K`-covering whose components are
@@ -28,7 +28,7 @@ abbrev SatisfiesDescent (P : MorphismProperty Scheme.{u}) (K : Precoverage Schem
 
 [Tag 02W3](https://stacks.math.columbia.edu/tag/02W3) in the Stacks Project.
 
-**`AlgebraicGeometry.DescentData.isFamilyEffective_affineBase_of_affineSingleton`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/DescendingTypesOfMorphisms.lean, line 142](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/DescendingTypesOfMorphisms.lean#L142). The attribute's comment: “the case of an affine base, for τ = fppf, étale, smooth and syntomic”.
+**`AlgebraicGeometry.DescentData.isFamilyEffective_affineBase_of_affineSingleton`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/DescendingTypesOfMorphisms.lean, line 142](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/DescendingTypesOfMorphisms.lean#L142). The attribute's comment: “the case of an affine base, for τ = fppf, étale, smooth and syntomic”.
 
 > **Stacks Project, Tag 02W3, the case of an affine base, for the fppf, étale, smooth and
 > syntomic coverings.** Let `P` be a property of morphisms of schemes over a base which is stable
@@ -54,7 +54,7 @@ theorem isFamilyEffective_affineBase_of_affineSingleton
     D.IsFamilyEffective
 ```
 
-**`AlgebraicGeometry.DescentData.isFamilyEffective_affineBase_fpqc_of_affineSingleton`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/DescendingTypesOfMorphisms.lean, line 174](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/DescendingTypesOfMorphisms.lean#L174). The attribute's comment: “the case of an affine base, for τ = fpqc”.
+**`AlgebraicGeometry.DescentData.isFamilyEffective_affineBase_fpqc_of_affineSingleton`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/DescendingTypesOfMorphisms.lean, line 174](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/DescendingTypesOfMorphisms.lean#L174). The attribute's comment: “the case of an affine base, for τ = fpqc”.
 
 > **Stacks Project, Tag 02W3, the case of an affine base, for the fpqc coverings.** Let `P` be
 > a property of morphisms of schemes over a base which is stable under any base change and such
@@ -76,7 +76,7 @@ theorem isFamilyEffective_affineBase_fpqc_of_affineSingleton
     D.IsFamilyEffective
 ```
 
-**`AlgebraicGeometry.DescentData.isFamilyEffective_of_affineSingleton`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/DescendingTypesOfMorphismsGeneralBase.lean, line 121](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/DescendingTypesOfMorphismsGeneralBase.lean#L121). The attribute's comment: “for τ = fppf, étale, smooth and syntomic, over an arbitrary base, for a covering family indexed in the universe of the schemes”.
+**`AlgebraicGeometry.DescentData.isFamilyEffective_of_affineSingleton`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/DescendingTypesOfMorphismsGeneralBase.lean, line 121](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/DescendingTypesOfMorphismsGeneralBase.lean#L121). The attribute's comment: “for τ = fppf, étale, smooth and syntomic, over an arbitrary base, for a covering family indexed in the universe of the schemes”.
 
 > **Stacks Project, Tag 02W3, for the fppf, étale, smooth and syntomic coverings.** Let `P` be
 > a property of morphisms of schemes over a base which is stable under any base change and such
@@ -100,7 +100,7 @@ theorem isFamilyEffective_of_affineSingleton [P.IsStableUnderBaseChange]
     D.IsFamilyEffective
 ```
 
-**`AlgebraicGeometry.DescentData.isFamilyEffective_fpqc_of_affineSingleton`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/DescendingTypesOfMorphismsGeneralBase.lean, line 150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/DescendingTypesOfMorphismsGeneralBase.lean#L150). The attribute's comment: “for τ = fpqc, over an arbitrary base, for a covering family indexed in the universe of the schemes”.
+**`AlgebraicGeometry.DescentData.isFamilyEffective_fpqc_of_affineSingleton`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/DescendingTypesOfMorphismsGeneralBase.lean, line 150](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/DescendingTypesOfMorphismsGeneralBase.lean#L150). The attribute's comment: “for τ = fpqc, over an arbitrary base, for a covering family indexed in the universe of the schemes”.
 
 > **Stacks Project, Tag 02W3, for the fpqc coverings.** Let `P` be a property of morphisms of
 > schemes over a base which is stable under any base change and such that a nonempty finite
@@ -121,7 +121,7 @@ theorem isFamilyEffective_fpqc_of_affineSingleton [P.IsStableUnderBaseChange]
     D.IsFamilyEffective
 ```
 
-**`AlgebraicGeometry.DescentData.isFamilyEffective_of_affineSingleton_of_anyIndex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/DescendingTypesOfMorphismsGeneralBase.lean, line 178](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/DescendingTypesOfMorphismsGeneralBase.lean#L178). The attribute's comment: “for τ = fppf, étale, smooth and syntomic, over an arbitrary base, for a covering family indexed in an arbitrary universe”.
+**`AlgebraicGeometry.DescentData.isFamilyEffective_of_affineSingleton_of_anyIndex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/DescendingTypesOfMorphismsGeneralBase.lean, line 178](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/DescendingTypesOfMorphismsGeneralBase.lean#L178). The attribute's comment: “for τ = fppf, étale, smooth and syntomic, over an arbitrary base, for a covering family indexed in an arbitrary universe”.
 
 > **Stacks Project, Tag 02W3, for the fppf, étale, smooth and syntomic coverings, with no
 > restriction on the index type of the covering family.** Let `P` be a property of morphisms of
@@ -147,7 +147,7 @@ theorem isFamilyEffective_of_affineSingleton_of_anyIndex [P.IsStableUnderBaseCha
     D.IsFamilyEffective
 ```
 
-**`AlgebraicGeometry.DescentData.isFamilyEffective_fpqc_of_affineSingleton_of_anyIndex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/DescendingTypesOfMorphismsGeneralBase.lean, line 210](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/DescendingTypesOfMorphismsGeneralBase.lean#L210). The attribute's comment: “for τ = fpqc, over an arbitrary base, for a covering family indexed in an arbitrary universe”.
+**`AlgebraicGeometry.DescentData.isFamilyEffective_fpqc_of_affineSingleton_of_anyIndex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/DescendingTypesOfMorphismsGeneralBase.lean, line 210](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/DescendingTypesOfMorphismsGeneralBase.lean#L210). The attribute's comment: “for τ = fpqc, over an arbitrary base, for a covering family indexed in an arbitrary universe”.
 
 > **Stacks Project, Tag 02W3, for the fpqc coverings, with no restriction on the index type of
 > the covering family.** Let `P` be a property of morphisms of schemes over a base which is stable
@@ -169,7 +169,7 @@ theorem isFamilyEffective_fpqc_of_affineSingleton_of_anyIndex [P.IsStableUnderBa
     D.IsFamilyEffective
 ```
 
-**`AlgebraicGeometry.DescentData.isFamilyEffective_of_isAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/FpqcDescentReduction.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Descent/FpqcDescentReduction.lean#L76). The attribute's comment: “the fpqc case over an affine base”.
+**`AlgebraicGeometry.DescentData.isFamilyEffective_of_isAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Descent/FpqcDescentReduction.lean, line 76](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Descent/FpqcDescentReduction.lean#L76). The attribute's comment: “the fpqc case over an affine base”.
 
 > Let `P` be stable under base change and closed under finite disjoint unions, and let every
 > descent datum relative to a surjective flat morphism of affine schemes whose component has `P` be
@@ -196,4 +196,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 35.36, Tag 02W1](https://stacks.math.columbia.edu/tag/02W1)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

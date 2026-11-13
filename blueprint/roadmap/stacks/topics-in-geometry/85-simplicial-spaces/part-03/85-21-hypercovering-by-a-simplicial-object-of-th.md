@@ -8,13 +8,13 @@ proof: formalized
 
 # 85.21 Hypercovering by a simplicial object of the site
 
-Section 85.21 of the Stacks Project, [Tag 09X8](https://stacks.math.columbia.edu/tag/09X8). 6 tags here are carried by 51 declarations of the repository (all in StacksFrontier) and 9 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 85.21 of the Stacks Project, [Tag 09X8](https://stacks.math.columbia.edu/tag/09X8). 6 tags here are carried by 49 declarations of the repository (all in StacksFrontier) and 9 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 09X8, the section
 
 [Tag 09X8](https://stacks.math.columbia.edu/tag/09X8) in the Stacks Project.
 
-**`Stacks.CategoryTheory.Hypercovering.IsHypercoveringAugmentation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean#L90). The attribute's comment: “the definition of the section: an augmentation of a simplicial object of the site is a hypercovering of `X` in `C` when the three displayed families are coverings”.
+**`Stacks.CategoryTheory.Hypercovering.IsHypercoveringAugmentation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean#L90). The attribute's comment: “the definition of the section: an augmentation of a simplicial object of the site is a hypercovering of `X` in `C` when the three displayed families are coverings”.
 
 > An augmentation `a : U ⟶ X` of a simplicial object `U` of the site given by
 > the pretopology `J` is a *hypercovering of `X` in `C`* when `{U₀ ⟶ X}` is a covering, the
@@ -27,7 +27,7 @@ def IsHypercoveringAugmentation (J : Pretopology C) (U : SimplicialObject C)
     (a : U ⟶ (SimplicialObject.const C).obj X) : Prop
 ```
 
-**`CategoryTheory.SimplicialOver.homEquivCommSq`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectTotalSite.lean, line 143](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectTotalSite.lean#L143). The attribute's comment: “a morphism (φ, f) : V/U\_n → W/U\_m of (C/U)\_total is φ : [m] → [n] and f : V → W with commutative square”.
+**`CategoryTheory.SimplicialOver.homEquivCommSq`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectTotalSite.lean, line 143](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectTotalSite.lean#L143). The attribute's comment: “a morphism (φ, f) : V/U\_n → W/U\_m of (C/U)\_total is φ : [m] → [n] and f : V → W with commutative square”.
 
 > A morphism `V/U_n ⟶ W/U_m` of `(C/U)_total` is a pair `(φ, f)` of a simplex map
 > `φ : [m] ⟶ [n]` and a morphism `f : V ⟶ W` of `C` such that the square formed with `V ⟶ U_n`,
@@ -40,7 +40,7 @@ def homEquivCommSq (A B : Grothendieck (slices U)) :
       p.2 ≫ (B.fiber : Over (U.obj B.base)).hom = (A.fiber : Over (U.obj A.base)).hom ≫ U.map p.1}
 ```
 
-**`CategoryTheory.SimplicialOver.toAssociatedTotal_comp_totalForget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectTotalSite.lean, line 296](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectTotalSite.lean#L296). The attribute's comment: “the morphism of topoi a is given by the cocontinuous functor V/U\_n ↦ V/X: j\_total of (C/K)\_total is V/U\_n ↦ V/X under the identification”.
+**`CategoryTheory.SimplicialOver.toAssociatedTotal_comp_totalForget`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectTotalSite.lean, line 302](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectTotalSite.lean#L302). The attribute's comment: “the morphism of topoi a is given by the cocontinuous functor V/U\_n ↦ V/X: j\_total of (C/K)\_total is V/U\_n ↦ V/X under the identification”.
 
 > Under the identification of `(C/U)_total` with `(C/K)_total`, the localization functor
 > `j_total : (C/K)_total ⥤ C/X` is the functor `V/U_n ↦ V/X`: precomposed with
@@ -53,7 +53,7 @@ theorem toAssociatedTotal_comp_totalForget :
       augmentationFunctor U a
 ```
 
-**`CategoryTheory.SimplicialOver.associatedTotalEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectTotalSite.lean, line 392](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectTotalSite.lean#L392). The attribute's comment: “the site (C/U)\_total, with objects V/U\_n and morphisms (φ, f), is (C/K)\_total of Remark 0D8C: the equivalence of categories”.
+**`CategoryTheory.SimplicialOver.associatedTotalEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectTotalSite.lean, line 398](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectTotalSite.lean#L398). The attribute's comment: “the site (C/U)\_total, with objects V/U\_n and morphisms (φ, f), is (C/K)\_total of Remark 0D8C: the equivalence of categories”.
 
 > The equivalence of categories `(C/K)_total ≌ (C/U)_total` between the total site attached
 > to `K` and the category whose objects are the `V/U_n` and whose morphisms are the pairs `(φ, f)`.
@@ -66,7 +66,7 @@ def associatedTotalEquivalence :
       Grothendieck (slices U)
 ```
 
-**`CategoryTheory.SimplicialOver.associatedTotalEquivalence_isDenseSubsite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectTotalSite.lean, line 410](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectTotalSite.lean#L410). The attribute's comment: “the site (C/U)\_total is (C/K)\_total of Remark 0D8C: the coverings agree”.
+**`CategoryTheory.SimplicialOver.associatedTotalEquivalence_isDenseSubsite`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectTotalSite.lean, line 416](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectTotalSite.lean#L416). The attribute's comment: “the site (C/U)\_total is (C/K)\_total of Remark 0D8C: the coverings agree”.
 
 > The equivalence `(C/K)_total ≌ (C/U)_total` identifies the topologies: it is a dense subsite
 > inclusion, so a sieve is covering exactly when its image is.
@@ -77,7 +77,7 @@ theorem associatedTotalEquivalence_isDenseSubsite :
       (associatedTotalTopology U a J) (SimplicialOver.totalTopology J U)
 ```
 
-**`CategoryTheory.SimplicialOver.augmentationPushforwardIsoAssociated`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectTotalSite.lean, line 495](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectTotalSite.lean#L495). The attribute's comment: “the augmentation morphism of topoi a : Sh((C/U)\_total) → Sh(C/X): the one of Remark 0D8C and the one of V/U\_n ↦ V/X agree, direct images”.
+**`CategoryTheory.SimplicialOver.augmentationPushforwardIsoAssociated`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectTotalSite.lean, line 501](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectTotalSite.lean#L501). The attribute's comment: “the augmentation morphism of topoi a : Sh((C/U)\_total) → Sh(C/X): the one of Remark 0D8C and the one of V/U\_n ↦ V/X agree, direct images”.
 
 > The direct image of the augmentation `a : Sh((C/U)_total) ⟶ Sh(C/X)` given by
 > `V/U_n ↦ V/X` is the direct image of the morphism of topoi `Sh((C/K)_total) ⟶ Sh(C/X)` induced
@@ -91,7 +91,7 @@ def augmentationPushforwardIsoAssociated :
           (associatedSimplicialObject.{u} U a)).pushforward
 ```
 
-**`CategoryTheory.SimplicialOver.augmentationInverseImageIsoAssociated`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectTotalSite.lean, line 508](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectTotalSite.lean#L508). The attribute's comment: “the augmentation morphism of topoi a : Sh((C/U)\_total) → Sh(C/X): the one of Remark 0D8C and the one of V/U\_n ↦ V/X agree, inverse images”.
+**`CategoryTheory.SimplicialOver.augmentationInverseImageIsoAssociated`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectTotalSite.lean, line 514](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectTotalSite.lean#L514). The attribute's comment: “the augmentation morphism of topoi a : Sh((C/U)\_total) → Sh(C/X): the one of Remark 0D8C and the one of V/U\_n ↦ V/X agree, inverse images”.
 
 > The inverse image of the augmentation `a : Sh((C/U)_total) ⟶ Sh(C/X)` is the inverse image
 > of the morphism of topoi `Sh((C/K)_total) ⟶ Sh(C/X)` followed by
@@ -107,21 +107,21 @@ def augmentationInverseImageIsoAssociated :
 
 Declarations registered for the tag:
 
-- [`Stacks.CategoryTheory.Hypercovering.associatedSimplicialObject`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/FromSimplicialObject.lean#L172), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectTotalSite.lean, line 525](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectTotalSite.lean#L525) (StacksFrontier): “the simplicial object K of SR(C, X) with K\_n = \{U\_n → X}”.
-- [`CategoryTheory.SimplicialSemiRepresentable.totalSituation`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean#L139), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectTotalSite.lean, line 528](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectTotalSite.lean#L528) (StacksFrontier): “the simplicial site (C/U)\_total obtained from K by Remark 0D8C, that is (C/K)\_total”.
-- [`CategoryTheory.SimplicialSemiRepresentable.augmentationMorphismOfTopoi`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean#L144), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectTotalSite.lean, line 532](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectTotalSite.lean#L532) (StacksFrontier): “the augmentation morphism of topoi a : Sh((C/U)\_total) → Sh(C/X) obtained from K by Remark 0D8C”.
-- [`CategoryTheory.SimplicialOver.totalTopology`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/OverSimplicialObject.lean#L131), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectTotalSite.lean, line 536](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectTotalSite.lean#L536) (StacksFrontier): “the site (C/U)\_total with objects V/U\_n and morphisms (φ, f): its topology”.
-- [`CategoryTheory.SimplicialOver.situation`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/OverSimplicialObjectTotalSite.lean#L510), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectTotalSite.lean, line 539](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectTotalSite.lean#L539) (StacksFrontier): “the site (C/U)\_total with objects V/U\_n and morphisms (φ, f), as a simplicial site”.
-- [`CategoryTheory.SimplicialOver.augmentationFunctor`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/OverSimplicialObjectTotalSite.lean#L664), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectTotalSite.lean, line 543](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectTotalSite.lean#L543) (StacksFrontier): “the cocontinuous functor V/U\_n ↦ V/X”.
-- [`CategoryTheory.SimplicialOver.augmentationMorphismOfTopoi`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/OverSimplicialObjectTotalSite.lean#L713), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectTotalSite.lean, line 546](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectTotalSite.lean#L546) (StacksFrontier): “the morphism of topoi a : Sh((C/U)\_total) → Sh(C/X) given by the cocontinuous functor V/U\_n ↦ V/X”.
-- [`CategoryTheory.SimplicialOver.augmentationMorphismOfTopoi_pushforward`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/OverSimplicialObjectTotalSite.lean#L722), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectTotalSite.lean, line 550](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectTotalSite.lean#L550) (StacksFrontier): “the morphism of topoi a is given by the cocontinuous functor V/U\_n ↦ V/X: direct images”.
-- [`Stacks.CategoryTheory.Hypercovering.isHypercoveringAugmentation_iff_isHypercovering`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean#L104), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectTotalSite.lean, line 554](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectTotalSite.lean#L554) (StacksFrontier): “being a hypercovering of X in C is equivalent to K being a hypercovering of X, Example 0GM9”.
+- [`Stacks.CategoryTheory.Hypercovering.associatedSimplicialObject`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/FromSimplicialObject.lean#L172), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectTotalSite.lean, line 531](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectTotalSite.lean#L531) (StacksFrontier): “the simplicial object K of SR(C, X) with K\_n = \{U\_n → X}”.
+- [`CategoryTheory.SimplicialSemiRepresentable.totalSituation`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean#L139), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectTotalSite.lean, line 534](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectTotalSite.lean#L534) (StacksFrontier): “the simplicial site (C/U)\_total obtained from K by Remark 0D8C, that is (C/K)\_total”.
+- [`CategoryTheory.SimplicialSemiRepresentable.augmentationMorphismOfTopoi`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean#L144), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectTotalSite.lean, line 538](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectTotalSite.lean#L538) (StacksFrontier): “the augmentation morphism of topoi a : Sh((C/U)\_total) → Sh(C/X) obtained from K by Remark 0D8C”.
+- [`CategoryTheory.SimplicialOver.totalTopology`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/OverSimplicialObject.lean#L131), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectTotalSite.lean, line 542](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectTotalSite.lean#L542) (StacksFrontier): “the site (C/U)\_total with objects V/U\_n and morphisms (φ, f): its topology”.
+- [`CategoryTheory.SimplicialOver.situation`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/OverSimplicialObjectTotalSite.lean#L510), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectTotalSite.lean, line 545](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectTotalSite.lean#L545) (StacksFrontier): “the site (C/U)\_total with objects V/U\_n and morphisms (φ, f), as a simplicial site”.
+- [`CategoryTheory.SimplicialOver.augmentationFunctor`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/OverSimplicialObjectTotalSite.lean#L664), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectTotalSite.lean, line 549](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectTotalSite.lean#L549) (StacksFrontier): “the cocontinuous functor V/U\_n ↦ V/X”.
+- [`CategoryTheory.SimplicialOver.augmentationMorphismOfTopoi`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/OverSimplicialObjectTotalSite.lean#L713), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectTotalSite.lean, line 552](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectTotalSite.lean#L552) (StacksFrontier): “the morphism of topoi a : Sh((C/U)\_total) → Sh(C/X) given by the cocontinuous functor V/U\_n ↦ V/X”.
+- [`CategoryTheory.SimplicialOver.augmentationMorphismOfTopoi_pushforward`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/OverSimplicialObjectTotalSite.lean#L722), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectTotalSite.lean, line 556](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectTotalSite.lean#L556) (StacksFrontier): “the morphism of topoi a is given by the cocontinuous functor V/U\_n ↦ V/X: direct images”.
+- [`Stacks.CategoryTheory.Hypercovering.isHypercoveringAugmentation_iff_isHypercovering`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean#L104), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectTotalSite.lean, line 560](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectTotalSite.lean#L560) (StacksFrontier): “being a hypercovering of X in C is equivalent to K being a hypercovering of X, Example 0GM9”.
 
 ## Tag 0DA8, a lemma
 
 [Tag 0DA8](https://stacks.math.columbia.edu/tag/0DA8) in the Stacks Project.
 
-**`CategoryTheory.SimplicialSemiRepresentable.faithful_inverseImage_augmented`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean, line 224](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean#L224). The attribute's comment: “part (1): a^\{-1} on sheaves of sets is faithful”.
+**`CategoryTheory.SimplicialSemiRepresentable.faithful_inverseImage_augmented`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean, line 224](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean#L224). The attribute's comment: “part (1): a^\{-1} on sheaves of sets is faithful”.
 
 > For a hypercovering `a : U ⟶ X` of `X` in `C` the inverse image
 > `a^{-1} : Sh(C/X) ⥤ Sh((C/U)_total)` of the augmentation is faithful.
@@ -131,7 +131,7 @@ theorem faithful_inverseImage_augmented (h : IsHypercoveringAugmentation P U a) 
     (augmentationMorphismOfTopoi P U a).inverseImage.Faithful
 ```
 
-**`CategoryTheory.SimplicialSemiRepresentable.full_inverseImage_augmented`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean, line 232](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean#L232). The attribute's comment: “part (1): a^\{-1} on sheaves of sets is full, carrying local fullness of j\_total”.
+**`CategoryTheory.SimplicialSemiRepresentable.full_inverseImage_augmented`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean, line 232](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean#L232). The attribute's comment: “part (1): a^\{-1} on sheaves of sets is full, carrying local fullness of j\_total”.
 
 > For a hypercovering `a : U ⟶ X` of `X` in `C` such that `j_total` is locally full for
 > the topology of `C/X`, the inverse image `a^{-1} : Sh(C/X) ⥤ Sh((C/U)_total)` is full.
@@ -143,7 +143,7 @@ theorem full_inverseImage_augmented (h : IsHypercoveringAugmentation P U a)
     (augmentationMorphismOfTopoi P U a).inverseImage.Full
 ```
 
-**`CategoryTheory.SimplicialSemiRepresentable.full_inverseImage_augmented'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean, line 242](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean#L242). The attribute's comment: “part (1): a^\{-1} on sheaves of sets is full”.
+**`CategoryTheory.SimplicialSemiRepresentable.full_inverseImage_augmented'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean, line 242](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean#L242). The attribute's comment: “part (1): a^\{-1} on sheaves of sets is full”.
 
 > For a hypercovering `a : U ⟶ X` of `X` in `C` the inverse image
 > `a^{-1} : Sh(C/X) ⥤ Sh((C/U)_total)` is full.
@@ -153,7 +153,7 @@ theorem full_inverseImage_augmented' (h : IsHypercoveringAugmentation P U a) :
     (augmentationMorphismOfTopoi P U a).inverseImage.Full
 ```
 
-**`CategoryTheory.SimplicialSemiRepresentable.fullyFaithfulInverseImageAugmented`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean, line 249](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean#L249). The attribute's comment: “part (1): a^\{-1} on sheaves of sets is fully faithful, carrying local fullness”.
+**`CategoryTheory.SimplicialSemiRepresentable.fullyFaithfulInverseImageAugmented`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean, line 249](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean#L249). The attribute's comment: “part (1): a^\{-1} on sheaves of sets is fully faithful, carrying local fullness”.
 
 > For a hypercovering `a : U ⟶ X` of `X` in `C` such that `j_total` is locally full,
 > the inverse image `a^{-1} : Sh(C/X) ⥤ Sh((C/U)_total)` is fully faithful.
@@ -165,7 +165,7 @@ def fullyFaithfulInverseImageAugmented (h : IsHypercoveringAugmentation P U a)
     (augmentationMorphismOfTopoi P U a).inverseImage.FullyFaithful
 ```
 
-**`CategoryTheory.SimplicialSemiRepresentable.fullyFaithfulInverseImageAugmented'`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean, line 259](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean#L259). The attribute's comment: “part (1): a^\{-1} on sheaves of sets is fully faithful”.
+**`CategoryTheory.SimplicialSemiRepresentable.fullyFaithfulInverseImageAugmented'`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean, line 259](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean#L259). The attribute's comment: “part (1): a^\{-1} on sheaves of sets is fully faithful”.
 
 > For a hypercovering `a : U ⟶ X` of `X` in `C` the inverse image
 > `a^{-1} : Sh(C/X) ⥤ Sh((C/U)_total)` is fully faithful.
@@ -175,7 +175,7 @@ def fullyFaithfulInverseImageAugmented' (h : IsHypercoveringAugmentation P U a) 
     (augmentationMorphismOfTopoi P U a).inverseImage.FullyFaithful
 ```
 
-**`CategoryTheory.SimplicialSemiRepresentable.isIso_unit_augmented`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean, line 268](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean#L268). The attribute's comment: “part (1): E = a\_* a^\{-1} E on sheaves of sets, carrying local fullness”.
+**`CategoryTheory.SimplicialSemiRepresentable.isIso_unit_augmented`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean, line 268](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean#L268). The attribute's comment: “part (1): E = a\_* a^\{-1} E on sheaves of sets, carrying local fullness”.
 
 > For a hypercovering augmentation such that `j_total` is locally full, the canonical map
 > `E ⟶ a_* a^{-1} E` is an isomorphism for every sheaf of sets `E` on `C/X`.
@@ -187,7 +187,7 @@ theorem isIso_unit_augmented (h : IsHypercoveringAugmentation P U a)
     IsIso (augmentationMorphismOfTopoi P U a).adj.unit
 ```
 
-**`CategoryTheory.SimplicialSemiRepresentable.isIso_unit_augmented'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean, line 278](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean#L278). The attribute's comment: “part (1): E = a\_* a^\{-1} E on sheaves of sets”.
+**`CategoryTheory.SimplicialSemiRepresentable.isIso_unit_augmented'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean, line 278](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean#L278). The attribute's comment: “part (1): E = a\_* a^\{-1} E on sheaves of sets”.
 
 > For a hypercovering augmentation, the canonical map `E ⟶ a_* a^{-1} E` is an
 > isomorphism for every sheaf of sets `E` on `C/X`.
@@ -197,7 +197,7 @@ theorem isIso_unit_augmented' (h : IsHypercoveringAugmentation P U a) :
     IsIso (augmentationMorphismOfTopoi P U a).adj.unit
 ```
 
-**`CategoryTheory.SimplicialSemiRepresentable.isCartesianSheaf_of_mem_essImage_augmented`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean, line 285](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean#L285). The attribute's comment: “part (1): the essential image of a^\{-1} consists of cartesian sheaves of sets”.
+**`CategoryTheory.SimplicialSemiRepresentable.isCartesianSheaf_of_mem_essImage_augmented`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean, line 285](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean#L285). The attribute's comment: “part (1): the essential image of a^\{-1} consists of cartesian sheaves of sets”.
 
 > Every sheaf of sets on `(C/U)_total` isomorphic to an inverse image along the
 > augmentation is cartesian.
@@ -209,7 +209,7 @@ theorem isCartesianSheaf_of_mem_essImage_augmented
     (totalSituation P U a).IsCartesianSheaf F
 ```
 
-**`CategoryTheory.SimplicialSemiRepresentable.mem_essImage_iff_isCartesianSheaf_augmented`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean, line 295](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean#L295). The attribute's comment: “part (1): essential image = cartesian sheaves of sets, carrying surjectivity”.
+**`CategoryTheory.SimplicialSemiRepresentable.mem_essImage_iff_isCartesianSheaf_augmented`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean, line 295](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean#L295). The attribute's comment: “part (1): essential image = cartesian sheaves of sets, carrying surjectivity”.
 
 > If every cartesian sheaf of sets on `(C/U)_total` lies in the essential image of
 > `a^{-1}`, then the essential image of `a^{-1}` is exactly the cartesian sheaves of sets.
@@ -224,7 +224,7 @@ theorem mem_essImage_iff_isCartesianSheaf_augmented
       (totalSituation P U a).IsCartesianSheaf F
 ```
 
-**`CategoryTheory.SimplicialSemiRepresentable.mem_essImage_iff_isCartesianSheaf_augmented'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean, line 307](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean#L307). The attribute's comment: “part (1): the essential image of a^\{-1} is exactly the cartesian sheaves of sets”.
+**`CategoryTheory.SimplicialSemiRepresentable.mem_essImage_iff_isCartesianSheaf_augmented'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean, line 307](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean#L307). The attribute's comment: “part (1): the essential image of a^\{-1} is exactly the cartesian sheaves of sets”.
 
 > For a hypercovering augmentation, the essential image of
 > `a^{-1} : Sh(C/X) ⥤ Sh((C/U)_total)` is exactly the cartesian sheaves of sets.
@@ -236,7 +236,7 @@ theorem mem_essImage_iff_isCartesianSheaf_augmented' (h : IsHypercoveringAugment
       (totalSituation P U a).IsCartesianSheaf F
 ```
 
-**`CategoryTheory.SimplicialSemiRepresentable.isIso_counit_app_augmented`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean, line 318](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean#L318). The attribute's comment: “part (1): a^\{-1} a\_* F = F for cartesian F, carrying the two clauses of 0D8E”.
+**`CategoryTheory.SimplicialSemiRepresentable.isIso_counit_app_augmented`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean, line 318](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean#L318). The attribute's comment: “part (1): a^\{-1} a\_* F = F for cartesian F, carrying the two clauses of 0D8E”.
 
 > For a hypercovering augmentation such that `j_total` is locally full and every cartesian
 > sheaf of sets on `(C/U)_total` lies in the essential image of `a^{-1}`, the canonical map
@@ -254,7 +254,7 @@ theorem isIso_counit_app_augmented (h : IsHypercoveringAugmentation P U a)
     IsIso ((augmentationMorphismOfTopoi P U a).adj.counit.app F)
 ```
 
-**`CategoryTheory.SimplicialSemiRepresentable.isIso_counit_app_augmented'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean, line 334](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean#L334). The attribute's comment: “part (1): a^\{-1} a\_* F = F for a cartesian sheaf of sets F”.
+**`CategoryTheory.SimplicialSemiRepresentable.isIso_counit_app_augmented'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean, line 334](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean#L334). The attribute's comment: “part (1): a^\{-1} a\_* F = F for a cartesian sheaf of sets F”.
 
 > For a hypercovering augmentation, the canonical map `a^{-1} a_* F ⟶ F` is an
 > isomorphism for every cartesian sheaf of sets `F` on `(C/U)_total`.
@@ -266,7 +266,7 @@ theorem isIso_counit_app_augmented' (h : IsHypercoveringAugmentation P U a)
     IsIso ((augmentationMorphismOfTopoi P U a).adj.counit.app F)
 ```
 
-**`CategoryTheory.SimplicialSemiRepresentable.faithful_abelianInverseImage_augmented`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean, line 346](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean#L346). The attribute's comment: “part (2): a^\{-1} on abelian sheaves is faithful”.
+**`CategoryTheory.SimplicialSemiRepresentable.faithful_abelianInverseImage_augmented`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean, line 346](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean#L346). The attribute's comment: “part (2): a^\{-1} on abelian sheaves is faithful”.
 
 > For a hypercovering `a : U ⟶ X` of `X` in `C` the inverse image
 > `a^{-1} : Ab(C/X) ⥤ Ab((C/U)_total)` of the augmentation is faithful.
@@ -276,7 +276,7 @@ theorem faithful_abelianInverseImage_augmented (h : IsHypercoveringAugmentation 
     (abelianInverseImage P U a).Faithful
 ```
 
-**`CategoryTheory.SimplicialSemiRepresentable.full_abelianInverseImage_augmented`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean, line 354](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean#L354). The attribute's comment: “part (2): a^\{-1} on abelian sheaves is full, carrying local fullness of j\_total”.
+**`CategoryTheory.SimplicialSemiRepresentable.full_abelianInverseImage_augmented`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean, line 354](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean#L354). The attribute's comment: “part (2): a^\{-1} on abelian sheaves is full, carrying local fullness of j\_total”.
 
 > For a hypercovering `a : U ⟶ X` of `X` in `C` such that `j_total` is locally full,
 > the inverse image `a^{-1} : Ab(C/X) ⥤ Ab((C/U)_total)` is full.
@@ -288,7 +288,7 @@ theorem full_abelianInverseImage_augmented (h : IsHypercoveringAugmentation P U 
     (abelianInverseImage P U a).Full
 ```
 
-**`CategoryTheory.SimplicialSemiRepresentable.full_abelianInverseImage_augmented'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean, line 364](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean#L364). The attribute's comment: “part (2): a^\{-1} on abelian sheaves is full”.
+**`CategoryTheory.SimplicialSemiRepresentable.full_abelianInverseImage_augmented'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean, line 364](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean#L364). The attribute's comment: “part (2): a^\{-1} on abelian sheaves is full”.
 
 > For a hypercovering `a : U ⟶ X` of `X` in `C` the inverse image
 > `a^{-1} : Ab(C/X) ⥤ Ab((C/U)_total)` is full.
@@ -298,7 +298,7 @@ theorem full_abelianInverseImage_augmented' (h : IsHypercoveringAugmentation P U
     (abelianInverseImage P U a).Full
 ```
 
-**`CategoryTheory.SimplicialSemiRepresentable.fullyFaithfulAbelianInverseImageAugmented`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean, line 371](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean#L371). The attribute's comment: “part (2): a^\{-1} on abelian sheaves is fully faithful, carrying local fullness”.
+**`CategoryTheory.SimplicialSemiRepresentable.fullyFaithfulAbelianInverseImageAugmented`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean, line 371](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean#L371). The attribute's comment: “part (2): a^\{-1} on abelian sheaves is fully faithful, carrying local fullness”.
 
 > For a hypercovering `a : U ⟶ X` of `X` in `C` such that `j_total` is locally full,
 > the inverse image `a^{-1} : Ab(C/X) ⥤ Ab((C/U)_total)` is fully faithful.
@@ -310,7 +310,7 @@ def fullyFaithfulAbelianInverseImageAugmented (h : IsHypercoveringAugmentation P
     (abelianInverseImage P U a).FullyFaithful
 ```
 
-**`CategoryTheory.SimplicialSemiRepresentable.fullyFaithfulAbelianInverseImageAugmented'`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean, line 381](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean#L381). The attribute's comment: “part (2): a^\{-1} on abelian sheaves is fully faithful”.
+**`CategoryTheory.SimplicialSemiRepresentable.fullyFaithfulAbelianInverseImageAugmented'`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean, line 381](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean#L381). The attribute's comment: “part (2): a^\{-1} on abelian sheaves is fully faithful”.
 
 > For a hypercovering `a : U ⟶ X` of `X` in `C` the inverse image
 > `a^{-1} : Ab(C/X) ⥤ Ab((C/U)_total)` is fully faithful.
@@ -320,7 +320,7 @@ def fullyFaithfulAbelianInverseImageAugmented' (h : IsHypercoveringAugmentation 
     (abelianInverseImage P U a).FullyFaithful
 ```
 
-**`CategoryTheory.SimplicialSemiRepresentable.isIso_abelianUnit_augmented`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean, line 390](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean#L390). The attribute's comment: “part (2): E = a\_* a^\{-1} E on abelian sheaves, carrying local fullness”.
+**`CategoryTheory.SimplicialSemiRepresentable.isIso_abelianUnit_augmented`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean, line 390](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean#L390). The attribute's comment: “part (2): E = a\_* a^\{-1} E on abelian sheaves, carrying local fullness”.
 
 > For a hypercovering augmentation such that `j_total` is locally full, the canonical map
 > `E ⟶ a_* a^{-1} E` is an isomorphism for every sheaf of abelian groups `E` on `C/X`.
@@ -332,7 +332,7 @@ theorem isIso_abelianUnit_augmented (h : IsHypercoveringAugmentation P U a)
     IsIso (abelianAdjunction P U a).unit
 ```
 
-**`CategoryTheory.SimplicialSemiRepresentable.isIso_abelianUnit_augmented'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean, line 400](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean#L400). The attribute's comment: “part (2): E = a\_* a^\{-1} E on abelian sheaves”.
+**`CategoryTheory.SimplicialSemiRepresentable.isIso_abelianUnit_augmented'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean, line 400](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean#L400). The attribute's comment: “part (2): E = a\_* a^\{-1} E on abelian sheaves”.
 
 > For a hypercovering augmentation, the canonical map `E ⟶ a_* a^{-1} E` is an
 > isomorphism for every sheaf of abelian groups `E` on `C/X`.
@@ -342,7 +342,7 @@ theorem isIso_abelianUnit_augmented' (h : IsHypercoveringAugmentation P U a) :
     IsIso (abelianAdjunction P U a).unit
 ```
 
-**`CategoryTheory.SimplicialSemiRepresentable.isCartesianAbSheaf_of_mem_essImage_augmented`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean, line 407](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean#L407). The attribute's comment: “part (2): the essential image of a^\{-1} consists of cartesian abelian sheaves”.
+**`CategoryTheory.SimplicialSemiRepresentable.isCartesianAbSheaf_of_mem_essImage_augmented`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean, line 407](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean#L407). The attribute's comment: “part (2): the essential image of a^\{-1} consists of cartesian abelian sheaves”.
 
 > Every sheaf of abelian groups on `(C/U)_total` isomorphic to an inverse image along the
 > augmentation is cartesian.
@@ -354,7 +354,7 @@ theorem isCartesianAbSheaf_of_mem_essImage_augmented
     (totalSituation P U a).IsCartesianAbSheaf F
 ```
 
-**`CategoryTheory.SimplicialSemiRepresentable.mem_essImage_iff_isCartesianAbSheaf_augmented`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean, line 417](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean#L417). The attribute's comment: “part (2): essential image = cartesian abelian sheaves, carrying surjectivity”.
+**`CategoryTheory.SimplicialSemiRepresentable.mem_essImage_iff_isCartesianAbSheaf_augmented`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean, line 417](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean#L417). The attribute's comment: “part (2): essential image = cartesian abelian sheaves, carrying surjectivity”.
 
 > If every cartesian sheaf of abelian groups on `(C/U)_total` lies in the essential image
 > of `a^{-1}`, then the essential image of `a^{-1}` is exactly the cartesian abelian sheaves.
@@ -368,7 +368,7 @@ theorem mem_essImage_iff_isCartesianAbSheaf_augmented
       (totalSituation P U a).IsCartesianAbSheaf F
 ```
 
-**`CategoryTheory.SimplicialSemiRepresentable.mem_essImage_iff_isCartesianAbSheaf_augmented'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean, line 428](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean#L428). The attribute's comment: “part (2): the essential image of a^\{-1} is exactly the cartesian abelian sheaves”.
+**`CategoryTheory.SimplicialSemiRepresentable.mem_essImage_iff_isCartesianAbSheaf_augmented'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean, line 428](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean#L428). The attribute's comment: “part (2): the essential image of a^\{-1} is exactly the cartesian abelian sheaves”.
 
 > For a hypercovering augmentation, the essential image of
 > `a^{-1} : Ab(C/X) ⥤ Ab((C/U)_total)` is exactly the cartesian abelian sheaves.
@@ -380,7 +380,7 @@ theorem mem_essImage_iff_isCartesianAbSheaf_augmented' (h : IsHypercoveringAugme
       (totalSituation P U a).IsCartesianAbSheaf F
 ```
 
-**`CategoryTheory.SimplicialSemiRepresentable.isIso_abelianCounit_app_augmented`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean, line 439](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean#L439). The attribute's comment: “part (2): a^\{-1} a\_* F = F for cartesian F, carrying the two clauses of 0D8E”.
+**`CategoryTheory.SimplicialSemiRepresentable.isIso_abelianCounit_app_augmented`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean, line 439](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean#L439). The attribute's comment: “part (2): a^\{-1} a\_* F = F for cartesian F, carrying the two clauses of 0D8E”.
 
 > For a hypercovering augmentation such that `j_total` is locally full and every cartesian
 > sheaf of abelian groups on `(C/U)_total` lies in the essential image of `a^{-1}`, the canonical
@@ -397,7 +397,7 @@ theorem isIso_abelianCounit_app_augmented (h : IsHypercoveringAugmentation P U a
     IsIso ((abelianAdjunction P U a).counit.app F)
 ```
 
-**`CategoryTheory.SimplicialSemiRepresentable.isIso_abelianCounit_app_augmented'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean, line 454](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean#L454). The attribute's comment: “part (2): a^\{-1} a\_* F = F for a cartesian abelian sheaf F”.
+**`CategoryTheory.SimplicialSemiRepresentable.isIso_abelianCounit_app_augmented'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean, line 454](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObject.lean#L454). The attribute's comment: “part (2): a^\{-1} a\_* F = F for a cartesian abelian sheaf F”.
 
 > For a hypercovering augmentation, the canonical map `a^{-1} a_* F ⟶ F` is an
 > isomorphism for every cartesian sheaf of abelian groups `F` on `(C/U)_total`.
@@ -413,86 +413,15 @@ theorem isIso_abelianCounit_app_augmented' (h : IsHypercoveringAugmentation P U 
 
 [Tag 0D8N](https://stacks.math.columbia.edu/tag/0D8N) in the Stacks Project.
 
-**`CategoryTheory.SimplicialSemiRepresentable.isIso_derivedAugmentationUnitAugmented_app`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectDerivedPushforward.lean, line 290](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectDerivedPushforward.lean#L290). The attribute's comment: “granted two inputs this library does not have: local fullness of j\_total, which is the unproved clause of Tag 0D8E, and the Ra\_*-acyclicity of a⁻¹ of a K-injective complex, which is the content of the spectral sequence of Tag 0D7A; the isomorphism is not proved unconditionally”.
+**`CategoryTheory.SimplicialSemiRepresentable.isIso_derivedAugmentationUnitAugmented_app_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringObjectDerivedPushforwardUnconditional.lean, line 158](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringObjectDerivedPushforwardUnconditional.lean#L158).
 
-> **Stacks Project, Tag 0D8N**, granted the two inputs this library does not have. For a site
-> `C` with fibre products, an object `X` of `C` and a hypercovering `a : U ⟶ X` of `X` in `C` by a
-> simplicial object `U` of `C`, the canonical map `E ⟶ Ra_* a^{-1} E` is an isomorphism for every
-> object `E` of the unbounded derived category of abelian sheaves on `C/X`.
+> For a site `C` with fibre products given by a pretopology `P`, an object `X` of `C` and a
+> hypercovering `a : U ⟶ X` of `X` in `C` by a simplicial object `U` of `C`, in the sense of
+> Stacks 09X8, the canonical map `E ⟶ Ra_* a⁻¹ E` is invertible at every object `E` of the
+> unbounded derived category `D(C/X)` of abelian sheaves on `C/X`.
 >
-> `E` is arbitrary: no boundedness is assumed and the coefficients are all abelian sheaves. The
-> source deduces this from Stacks 0D8L for the associated simplicial semi-representable object
-> over `X`, and that is the deduction performed, the hypercovering conditions on `a` entering
-> through cover density of `j_total`.
->
-> The two carried hypotheses are the ones discussed in the module docstring. `hlf`, local fullness
-> of `j_total`, is the clause of Stacks 0D8E which the library does not prove; together with the
-> degree-zero clause of `h` it supplies the underived unit `F ⟶ a_* a^{-1} F` of Stacks 0DA8 (2),
-> which is the first input of Stacks 0D8L. `hacyclic` says that the direct image of `a^{-1}` of a
-> K-injective complex needs no derivation, that is, that `R^p a_* a^{-1}` vanishes in positive
-> degrees; the source reads that off the spectral sequence of Stacks 0D7A, which this library
-> builds but without the convergence to `R^{p+q} a_*` that the reading needs. No unconditional
-> invertibility is claimed.
-
-```lean
-theorem isIso_derivedAugmentationUnitAugmented_app
-    (h : IsHypercoveringAugmentation P U a)
-    (hlf : (totalForget (associatedSimplicialObject.{u} U a)).IsLocallyFull
-      (P.toGrothendieck.over X))
-    (hacyclic : ∀ I : CochainComplex (AbelianSheavesOver P.toGrothendieck X) ℤ,
-      I.IsKInjective →
-        IsIso ((derivedAbelianTotalPushforwardOverUnit P.toGrothendieck X
-          (associatedSimplicialObject.{u} U a)).app
-            (((abelianTotalInverseImageOver P.toGrothendieck X
-              (associatedSimplicialObject.{u} U a)).mapHomotopyCategory
-                (ComplexShape.up ℤ)).obj
-                  ((HomotopyCategory.quotient (AbelianSheavesOver P.toGrothendieck X)
-                    (ComplexShape.up ℤ)).obj I))))
-    (E : DerivedCategory (AbelianSheavesOver P.toGrothendieck X)) :
-    IsIso ((derivedAugmentationUnitAugmented P U a).app E)
-```
-
-**`CategoryTheory.SimplicialSemiRepresentable.isIso_derivedAugmentationUnitAugmented_app'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectDerivedPushforwardUnconditional.lean, line 249](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectDerivedPushforwardUnconditional.lean#L249). The attribute's comment: “with the Ra\_*-acyclicity of a⁻¹ of a K-injective complex taken as an explicit input. It is discharged, and this tag carried unconditionally, by ...SimplicialSemiRepresentable.isIso\_derivedAugmentationUnitAugmented\_app\_unconditional”.
-
-> **Stacks Project, Tag 0D8N**, granted the one input this library does not have. For a site
-> `C` with fibre products, an object `X` of `C` and a hypercovering `a : U ⟶ X` of `X` in `C` by a
-> simplicial object `U` of `C`, the canonical map `E ⟶ Ra_* a^{-1} E` is an isomorphism for every
-> object `E` of the unbounded derived category of abelian sheaves on `C/X`.
->
-> `E` is arbitrary: no boundedness is assumed and the coefficients are all abelian sheaves. The
-> source deduces this from Stacks 0D8L for the associated simplicial semi-representable object
-> over `X`, and that is the deduction performed, the hypercovering conditions on `a` entering
-> through cover density and local fullness of `j_total`.
->
-> The first input of Stacks 0D8L is discharged from the hypercovering conditions alone: it is the
-> underived unit `F ⟶ a_* a^{-1} F` of Stacks 0DA8 (2),
-> `CategoryTheory.SimplicialSemiRepresentable.isIso_abelianUnit_augmented'`. What remains carried
-> is the hypothesis discussed in the module docstring: `hacyclic` says that the direct image of
-> `a^{-1}` of a K-injective complex needs no derivation, that is, that `R^p a_* a^{-1}` vanishes in
-> positive degrees; the source reads that off the spectral sequence of Stacks 0D7A, which this
-> library builds but without the convergence to `R^{p+q} a_*` that the reading needs. No
-> unconditional invertibility is claimed.
-
-```lean
-theorem isIso_derivedAugmentationUnitAugmented_app'
-    (h : IsHypercoveringAugmentation P U a)
-    (hacyclic : ∀ I : CochainComplex (AbelianSheavesOver P.toGrothendieck X) ℤ,
-      I.IsKInjective →
-        IsIso ((derivedAbelianTotalPushforwardOverUnit P.toGrothendieck X
-          (associatedSimplicialObject.{u} U a)).app
-            (((abelianTotalInverseImageOver P.toGrothendieck X
-              (associatedSimplicialObject.{u} U a)).mapHomotopyCategory
-                (ComplexShape.up ℤ)).obj
-                  ((HomotopyCategory.quotient (AbelianSheavesOver P.toGrothendieck X)
-                    (ComplexShape.up ℤ)).obj I))))
-    (E : DerivedCategory (AbelianSheavesOver P.toGrothendieck X)) :
-    IsIso ((derivedAugmentationUnitAugmented P U a).app E)
-```
-
-**`CategoryTheory.SimplicialSemiRepresentable.isIso_derivedAugmentationUnitAugmented_app_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringObjectDerivedPushforwardUnconditional.lean, line 151](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringObjectDerivedPushforwardUnconditional.lean#L151).
-
-> For a hypercovering augmentation `a : U ⟶ X` of a simplicial object of `C`, the canonical map
-> `E ⟶ Ra_* a⁻¹ E` is invertible at every object `E` of `D(C/X)`.
+> As in the source, this is Stacks 0D8L for the associated simplicial semi-representable object
+> `n ↦ {U_n ⟶ X}` over `X`.
 
 ```lean
 theorem isIso_derivedAugmentationUnitAugmented_app_unconditional (P : Pretopology C) {X : C}
@@ -506,7 +435,7 @@ theorem isIso_derivedAugmentationUnitAugmented_app_unconditional (P : Pretopolog
 
 [Tag 09X9](https://stacks.math.columbia.edu/tag/09X9) in the Stacks Project.
 
-**`CategoryTheory.SimplicialSemiRepresentable.derivedGlobalSectionsInverseImageIsoAugmented'`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectDerivedDescentUnconditional.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectDerivedDescentUnconditional.lean#L87).
+**`CategoryTheory.SimplicialSemiRepresentable.derivedGlobalSectionsInverseImageIsoAugmented'`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectDerivedDescentUnconditional.lean, line 87](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectDerivedDescentUnconditional.lean#L87).
 
 > **Stacks Project, Tag 09X9.** For a site `C` with fibre products, an object `X` of `C` and
 > a hypercovering `a : U ⟶ X` of `X` in `C` by a simplicial object `U` of `C`, with
@@ -527,7 +456,7 @@ def derivedGlobalSectionsInverseImageIsoAugmented'
         Augmentation.derivedGlobalSectionsTotal (totalSituation P U a)
 ```
 
-**`CategoryTheory.SimplicialSemiRepresentable.derivedGlobalSectionsInverseImageIsoAugmented_hom_app'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectDerivedDescentUnconditional.lean, line 102](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectDerivedDescentUnconditional.lean#L102). The attribute's comment: “the forward map of the isomorphism is the canonical one — RΓ(X, -) of the canonical map E ⟶ Ra\_*a⁻¹E of Tag 0D8L followed by the derived factorisation of Tag 08J6”.
+**`CategoryTheory.SimplicialSemiRepresentable.derivedGlobalSectionsInverseImageIsoAugmented_hom_app'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectDerivedDescentUnconditional.lean, line 102](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectDerivedDescentUnconditional.lean#L102). The attribute's comment: “the forward map of the isomorphism is the canonical one — RΓ(X, -) of the canonical map E ⟶ Ra\_*a⁻¹E of Tag 0D8L followed by the derived factorisation of Tag 08J6”.
 
 > **Stacks 09X9, the isomorphism is invertibility of the canonical comparison map.** At every
 > object `E` of `D(C/X)` the forward map of the isomorphism of Stacks 09X9 is derived global
@@ -555,7 +484,7 @@ theorem derivedGlobalSectionsInverseImageIsoAugmented_hom_app'
 
 [Tag 0DA9](https://stacks.math.columbia.edu/tag/0DA9) in the Stacks Project.
 
-**`CategoryTheory.SimplicialSemiRepresentable.derivedTotalInverseImageEquivalenceAugmented'`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectDerivedDescentUnconditional.lean, line 136](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectDerivedDescentUnconditional.lean#L136).
+**`CategoryTheory.SimplicialSemiRepresentable.derivedTotalInverseImageEquivalenceAugmented'`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectDerivedDescentUnconditional.lean, line 136](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectDerivedDescentUnconditional.lean#L136).
 
 > **Stacks Project, Tag 0DA9.** For a site `C` with fibre products, an object `X` of `C`, a
 > hypercovering `a : U ⟶ X` of `X` in `C` by a simplicial object `U` of `C`, the augmentation
@@ -577,7 +506,7 @@ def derivedTotalInverseImageEquivalenceAugmented'
         ((totalSituation P U a).IsCartesianAbSheaf)).FullSubcategory
 ```
 
-**`CategoryTheory.SimplicialSemiRepresentable.derivedTotalInverseImageEquivalenceAugmented_functor'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectDerivedDescentUnconditional.lean, line 149](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectDerivedDescentUnconditional.lean#L149). The attribute's comment: “the forward functor of the equivalence is a⁻¹”.
+**`CategoryTheory.SimplicialSemiRepresentable.derivedTotalInverseImageEquivalenceAugmented_functor'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectDerivedDescentUnconditional.lean, line 149](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectDerivedDescentUnconditional.lean#L149). The attribute's comment: “the forward functor of the equivalence is a⁻¹”.
 
 > **Stacks 0DA9, the forward functor of the equivalence is `a⁻¹`:** it is the restriction of
 > the derived inverse image along the augmentation to the bounded below subcategories.
@@ -590,7 +519,7 @@ theorem derivedTotalInverseImageEquivalenceAugmented_functor'
         (P.toGrothendieck.over X) (augmentationAugmented P U a)
 ```
 
-**`CategoryTheory.SimplicialSemiRepresentable.derivedTotalInverseImageEquivalenceAugmented_inverse'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectDerivedDescentUnconditional.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectDerivedDescentUnconditional.lean#L159). The attribute's comment: “the quasi-inverse of the equivalence is Ra\_*”.
+**`CategoryTheory.SimplicialSemiRepresentable.derivedTotalInverseImageEquivalenceAugmented_inverse'`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectDerivedDescentUnconditional.lean, line 159](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/HypercoveringBySimplicialObjectDerivedDescentUnconditional.lean#L159). The attribute's comment: “the quasi-inverse of the equivalence is Ra\_*”.
 
 > **Stacks 0DA9, the quasi-inverse of the equivalence is `Ra_*`:** it is the restriction of the
 > derived direct image along the augmentation to the bounded below subcategories.
@@ -607,7 +536,7 @@ theorem derivedTotalInverseImageEquivalenceAugmented_inverse'
 
 [Tag 09WL](https://stacks.math.columbia.edu/tag/09WL) in the Stacks Project.
 
-**`CategoryTheory.SimplicialOver.isMorphismOfSites_pullbackMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/OverSimplicialObject.lean, line 161](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/OverSimplicialObject.lean#L161). The attribute's comment: “part (1), each transition is a morphism of sites”.
+**`CategoryTheory.SimplicialOver.isMorphismOfSites_pullbackMap`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/OverSimplicialObject.lean, line 161](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/OverSimplicialObject.lean#L161). The attribute's comment: “part (1), each transition is a morphism of sites”.
 
 > **Stacks 09WL part (1).** For a simplex map `φ : [m] ⟶ [n]` the base change functor
 > `v_φ = Over.pullback f_φ : C/U_m ⥤ C/U_n` along `f_φ : U_n ⟶ U_m` represents a morphism of
@@ -624,7 +553,7 @@ theorem isMorphismOfSites_pullbackMap {m n : SimplexCategory} (φ : m ⟶ n) :
       (J.over (U.obj (op m))) (J.over (U.obj (op n)))
 ```
 
-**`CategoryTheory.SimplicialOver.pullbackMapId`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/OverSimplicialObject.lean, line 170](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/OverSimplicialObject.lean#L170). The attribute's comment: “part (1), the identity isomorphism”.
+**`CategoryTheory.SimplicialOver.pullbackMapId`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/OverSimplicialObject.lean, line 170](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/OverSimplicialObject.lean#L170). The attribute's comment: “part (1), the identity isomorphism”.
 
 > **Stacks 09WL part (1).** The transition morphism of sites attached to an identity simplex
 > map is the identity: base change along `f_{𝟙} = 𝟙 U_n` is isomorphic to the identity functor
@@ -635,7 +564,7 @@ def pullbackMapId (n : SimplexCategory) :
     Over.pullback (U.map (𝟙 n).op) ≅ 𝟭 (Over (U.obj (op n)))
 ```
 
-**`CategoryTheory.SimplicialOver.pullbackMapComp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/OverSimplicialObject.lean, line 179](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/OverSimplicialObject.lean#L179). The attribute's comment: “part (1), the composition isomorphism”.
+**`CategoryTheory.SimplicialOver.pullbackMapComp`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/OverSimplicialObject.lean, line 179](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/OverSimplicialObject.lean#L179). The attribute's comment: “part (1), the composition isomorphism”.
 
 > **Stacks 09WL part (1).** The transition morphisms of sites are compatible with
 > composition of simplex maps: base change along `f_{ψ ≫ φ} = f_φ ≫ f_ψ` is isomorphic to base
@@ -648,7 +577,7 @@ def pullbackMapComp {l m n : SimplexCategory} (ψ : l ⟶ m) (φ : m ⟶ n) :
       Over.pullback (U.map ψ.op) ⋙ Over.pullback (U.map φ.op)
 ```
 
-**`CategoryTheory.SimplicialOver.sheafPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/OverSimplicialObject.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/OverSimplicialObject.lean#L190). The attribute's comment: “part (1), the transitions induce the localization morphisms of topoi”.
+**`CategoryTheory.SimplicialOver.sheafPushforwardIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/OverSimplicialObject.lean, line 190](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/OverSimplicialObject.lean#L190). The attribute's comment: “part (1), the transitions induce the localization morphisms of topoi”.
 
 > **Stacks 09WL part (1).** The morphism of topoi `Sh(C/U_n) ⟶ Sh(C/U_m)` attached to the
 > transition morphism of sites of a simplex map `φ : [m] ⟶ [n]` is the one attached to the
@@ -663,7 +592,7 @@ def sheafPushforwardIso {m n : SimplexCategory} (φ : m ⟶ n) :
         (J.over (U.obj (op m))) (J.over (U.obj (op n)))
 ```
 
-**`CategoryTheory.SimplicialOver.totalComparisonEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/OverSimplicialObjectTotalSite.lean, line 352](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/OverSimplicialObjectTotalSite.lean#L352). The attribute's comment: “part (2), the comparison of the two total categories”.
+**`CategoryTheory.SimplicialOver.totalComparisonEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/OverSimplicialObjectTotalSite.lean, line 352](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/OverSimplicialObjectTotalSite.lean#L352). The attribute's comment: “part (2), the comparison of the two total categories”.
 
 > **Stacks 09WL part (2).** The construction of Stacks 09WC applied to the simplicial object
 > in sites of part (1) reproduces the category `(C/U)_total`: the comparison functor, which is
@@ -674,7 +603,7 @@ def sheafPushforwardIso {m n : SimplexCategory} (φ : m ⟶ n) :
 def totalComparisonEquivalence : Grothendieck (slices U) ≌ PullbackTotal U
 ```
 
-**`CategoryTheory.SimplicialOver.pullbackTotalCoverings_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/OverSimplicialObjectTotalSite.lean, line 389](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/OverSimplicialObjectTotalSite.lean#L389). The attribute's comment: “part (2), the coverings of the two total sites agree”.
+**`CategoryTheory.SimplicialOver.pullbackTotalCoverings_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/OverSimplicialObjectTotalSite.lean, line 389](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/OverSimplicialObjectTotalSite.lean#L389). The attribute's comment: “part (2), the coverings of the two total sites agree”.
 
 > **Stacks 09WL part (2).** The two sites have the same covering families: a family of the
 > total category of Stacks 09WC is covering exactly when it is the image under the comparison of
@@ -688,7 +617,7 @@ theorem pullbackTotalCoverings_iff (𝒱 : Covering.{u, u, u} (PullbackTotal U))
           𝒱 = ⟨(totalComparison U).obj 𝒰.1, 𝒰.2.map (totalComparison U)⟩
 ```
 
-**`CategoryTheory.SimplicialOver.totalTopology_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/OverSimplicialObjectTotalSite.lean, line 525](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/OverSimplicialObjectTotalSite.lean#L525). The attribute's comment: “part (2), the generic total site is (C/U)\_total”.
+**`CategoryTheory.SimplicialOver.totalTopology_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/OverSimplicialObjectTotalSite.lean, line 525](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/OverSimplicialObjectTotalSite.lean#L525). The attribute's comment: “part (2), the generic total site is (C/U)\_total”.
 
 > **Stacks 09WL part (2).** The total site of that situation is the site `(C/U)_total`: the
 > generic construction of the total site, applied to the simplicial family of sites `n ↦ C/U_n`,
@@ -698,7 +627,7 @@ theorem pullbackTotalCoverings_iff (𝒱 : Covering.{u, u, u} (PullbackTotal U))
 theorem totalTopology_eq : (situation J U).totalTopology = SimplicialOver.totalTopology J U
 ```
 
-**`CategoryTheory.SimplicialOver.isMorphismOfSites_augmentationPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/OverSimplicialObjectTotalSite.lean, line 547](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/OverSimplicialObjectTotalSite.lean#L547). The attribute's comment: “part (3), a\_0 is a morphism of sites”.
+**`CategoryTheory.SimplicialOver.isMorphismOfSites_augmentationPullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/OverSimplicialObjectTotalSite.lean, line 547](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/OverSimplicialObjectTotalSite.lean#L547). The attribute's comment: “part (3), a\_0 is a morphism of sites”.
 
 > **Stacks 09WL part (3).** For an augmentation `a : U → X`, base change along
 > `a_0 : U_0 ⟶ X` is continuous with exact pullback on sheaves of sets, that is, it represents a
@@ -710,7 +639,7 @@ theorem isMorphismOfSites_augmentationPullback :
       (J.over X) (J.over (U.obj (op (SimplexCategory.mk 0))))
 ```
 
-**`CategoryTheory.SimplicialOver.augmentationVertexCompat`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/OverSimplicialObjectTotalSite.lean, line 567](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/OverSimplicialObjectTotalSite.lean#L567). The attribute's comment: “part (3), the vertex compatibility of the augmentation”.
+**`CategoryTheory.SimplicialOver.augmentationVertexCompat`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/OverSimplicialObjectTotalSite.lean, line 567](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/OverSimplicialObjectTotalSite.lean#L567). The attribute's comment: “part (3), the vertex compatibility of the augmentation”.
 
 > **Stacks 09WL part (3).** The functor `u_0 = Over.pullback a_0` representing the
 > augmentation satisfies the compatibility of Stacks 0D6Z part (A): the composites `u_φ ∘ u_0`
@@ -726,7 +655,7 @@ def augmentationVertexCompat (n : SimplexCategory) (φ ψ : SimplexCategory.mk 0
         Over.pullback (U.map ψ.op)
 ```
 
-**`CategoryTheory.SimplicialOver.augmentation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/OverSimplicialObjectTotalSite.lean, line 616](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/OverSimplicialObjectTotalSite.lean#L616). The attribute's comment: “part (3), a\_0 is an augmentation of the simplicial site C/U”.
+**`CategoryTheory.SimplicialOver.augmentation`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/OverSimplicialObjectTotalSite.lean, line 616](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/OverSimplicialObjectTotalSite.lean#L616). The attribute's comment: “part (3), a\_0 is an augmentation of the simplicial site C/U”.
 
 > **Stacks 09WL part (3).** The augmentation `a_0 : C/U_0 → C/X` of the simplicial family of
 > sites `n ↦ C/U_n`: the localization functor `j_{a_0} = Over.map a_0` is cocontinuous and its
@@ -740,7 +669,7 @@ def augmentationVertexCompat (n : SimplexCategory) (φ ψ : SimplexCategory.mk 0
 def augmentation : (simplicialSite J U).Augmentation (Cat.of (Over X)) (J.over X)
 ```
 
-**`CategoryTheory.SimplicialOver.augmentationMorphismOfTopoi`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/OverSimplicialObjectTotalSite.lean, line 713](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/OverSimplicialObjectTotalSite.lean#L713). The attribute's comment: “part (3), the morphism of topoi Sh((C/U)\_total) to Sh(C/X) of the augmentation”.
+**`CategoryTheory.SimplicialOver.augmentationMorphismOfTopoi`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/OverSimplicialObjectTotalSite.lean, line 713](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/OverSimplicialObjectTotalSite.lean#L713). The attribute's comment: “part (3), the morphism of topoi Sh((C/U)\_total) to Sh(C/X) of the augmentation”.
 
 > **Stacks 09WL part (3).** The morphism of topoi `a : Sh((C/U)_total) ⟶ Sh(C/X)` which the
 > augmentation `a_0` gives: the morphism of topoi of Stacks 0D70 attached to the augmentation of
@@ -752,7 +681,7 @@ noncomputable def augmentationMorphismOfTopoi :
       (Sheaf (J.over X) (Type u))
 ```
 
-**`CategoryTheory.SimplicialOver.augmentationMorphismOfTopoi_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/OverSimplicialObjectTotalSite.lean, line 722](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Simplicial/OverSimplicialObjectTotalSite.lean#L722). The attribute's comment: “part (3), the augmentation gives the morphism of topoi above”.
+**`CategoryTheory.SimplicialOver.augmentationMorphismOfTopoi_pushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Simplicial/OverSimplicialObjectTotalSite.lean, line 722](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Simplicial/OverSimplicialObjectTotalSite.lean#L722). The attribute's comment: “part (3), the augmentation gives the morphism of topoi above”.
 
 > **Stacks 09WL part (3).** That morphism of topoi is the one above: its direct image is the
 > direct image of the cocontinuous functor `V/U_n ↦ V/X` of Stacks 09X8. The two are *equal*,
@@ -772,4 +701,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 85.21, Tag 09X8](https://stacks.math.columbia.edu/tag/09X8)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

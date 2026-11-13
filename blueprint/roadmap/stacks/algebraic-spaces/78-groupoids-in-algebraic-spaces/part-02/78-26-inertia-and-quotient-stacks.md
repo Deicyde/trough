@@ -8,13 +8,13 @@ proof: formalized
 
 # 78.26 Inertia and quotient stacks
 
-Section 78.26 of the Stacks Project, [Tag 06PA](https://stacks.math.columbia.edu/tag/06PA). 2 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 78.26 of the Stacks Project, [Tag 06PA](https://stacks.math.columbia.edu/tag/06PA). 2 tags here are carried by 8 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 06PB, a lemma
 
 [Tag 06PB](https://stacks.math.columbia.edu/tag/06PB) in the Stacks Project.
 
-**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.inertiaGroupoid`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/InertiaGroupoid.lean, line 890](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/InertiaGroupoid.lean#L890). The attribute's comment: “the groupoid (G, R', s', t', c')”.
+**`AlgebraicGeometry.GroupoidInAlgebraicSpaces.inertiaGroupoid`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/InertiaGroupoid.lean, line 891](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/InertiaGroupoid.lean#L891). The attribute's comment: “the groupoid (G, R', s', t', c')”.
 
 > The groupoid `(G, R', s', t', c')` in algebraic spaces over `B` built from a groupoid
 > `(U, R, s, t, c)` in algebraic spaces over `B`: its object space is the stabilizer `G/U`, its
@@ -27,7 +27,7 @@ noncomputable def inertiaGroupoid
     GroupoidInAlgebraicSpaces C S hS B
 ```
 
-**`AlgebraicGeometry.Stack.inertiaComparison_comp_toBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/InertiaQuotientStackComparison.lean, line 1373](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/InertiaQuotientStackComparison.lean#L1373). The attribute's comment: “second assertion: the comparison [G/R'] ⟶ I\_\{[U/R]} is over the site”.
+**`AlgebraicGeometry.Stack.inertiaComparison_comp_toBase`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/InertiaQuotientStackComparison.lean, line 1374](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/InertiaQuotientStackComparison.lean#L1374). The attribute's comment: “second assertion: the comparison [G/R'] ⟶ I\_\{[U/R]} is over the site”.
 
 > The comparison `[G/R'] ⟶ ℐ_{[U/R]}` composed with the structure functor of the inertia of
 > `[U/R]` is the structure functor of `[G/R']`: it is a 1-morphism of categories over the big fppf
@@ -39,7 +39,7 @@ theorem inertiaComparison_comp_toBase (G : GroupoidInAlgebraicSpaces C S hS B) :
       (quotientStack (inertiaGroupoid G)).p
 ```
 
-**`AlgebraicGeometry.Stack.inertiaComparisonForgetfulIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/InertiaQuotientStackComparison.lean, line 1382](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/InertiaQuotientStackComparison.lean#L1382). The attribute's comment: “second assertion: the comparison is a 1-morphism over [U/R]”.
+**`AlgebraicGeometry.Stack.inertiaComparisonForgetfulIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/InertiaQuotientStackComparison.lean, line 1383](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/InertiaQuotientStackComparison.lean#L1383). The attribute's comment: “second assertion: the comparison is a 1-morphism over [U/R]”.
 
 > Composing the comparison `[G/R'] ⟶ ℐ_{[U/R]}` with the forgetful 1-morphism `ℐ_{[U/R]} ⟶ [U/R]`
 > gives the 1-morphism `[G/R'] ⟶ [U/R]` of Stacks 046Q induced by the forgetful morphism of groupoids
@@ -52,7 +52,7 @@ noncomputable def inertiaComparisonForgetfulIso
       (quotientStackMap (inertiaForgetful G)).toFunctor
 ```
 
-**`AlgebraicGeometry.Stack.isEquivalence_inertiaComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/InertiaQuotientStackComparison.lean, line 1401](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/InertiaQuotientStackComparison.lean#L1401). The attribute's comment: “second assertion: I\_\{[U/R]} = [G/R'], the comparison is an equivalence”.
+**`AlgebraicGeometry.Stack.isEquivalence_inertiaComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/InertiaQuotientStackComparison.lean, line 1402](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/InertiaQuotientStackComparison.lean#L1402). The attribute's comment: “second assertion: I\_\{[U/R]} = [G/R'], the comparison is an equivalence”.
 
 > The underlying functor of the comparison `[G/R'] ⟶ ℐ_{[U/R]}` is an equivalence of categories:
 > the quotient stack of the inertia groupoid `(G, R', s', t', c')` is the inertia stack of `[U/R]`.
@@ -66,7 +66,7 @@ theorem isEquivalence_inertiaComparison (G : GroupoidInAlgebraicSpaces C S hS B)
 
 [Tag 06PC](https://stacks.math.columbia.edu/tag/06PC) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.inertiaQuotientStackSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/InertiaQuotientStackSquare.lean, line 116](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/InertiaQuotientStackSquare.lean#L116). The attribute's comment: “the canonical square, lower-left corner as the quotient stack [G/R'] of 06PB”.
+**`AlgebraicGeometry.Stack.inertiaQuotientStackSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/InertiaQuotientStackSquare.lean, line 117](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/InertiaQuotientStackSquare.lean#L117). The attribute's comment: “the canonical square, lower-left corner as the quotient stack [G/R'] of 06PB”.
 
 > For a groupoid `(U, R, s, t, c)` in algebraic spaces over `B` with stabilizer group algebraic
 > space `G/U` (Stacks 0448), the 2-commutative square
@@ -99,7 +99,7 @@ noncomputable def inertiaQuotientStackSquare (G : GroupoidInAlgebraicSpaces C S 
       (Bicategory.InducedBicategory.mkHom (quotientStackMap (inertiaForgetful G)) : I ⟶ Q)
 ```
 
-**`AlgebraicGeometry.Stack.isTwoFibreProduct_inertiaQuotientStackSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/InertiaQuotientStackSquare.lean, line 159](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/InertiaQuotientStackSquare.lean#L159). The attribute's comment: “that square is 2-cartesian, lower-left corner as the quotient stack [G/R'] of 06PB”.
+**`AlgebraicGeometry.Stack.isTwoFibreProduct_inertiaQuotientStackSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/InertiaQuotientStackSquare.lean, line 160](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Groupoids/InertiaQuotientStackSquare.lean#L160). The attribute's comment: “that square is 2-cartesian, lower-left corner as the quotient stack [G/R'] of 06PB”.
 
 > The square
 >
@@ -119,7 +119,7 @@ noncomputable def isTwoFibreProduct_inertiaQuotientStackSquare
     Bicategory.IsTwoFibreProduct (inertiaQuotientStackSquare G)
 ```
 
-**`AlgebraicGeometry.Stack.isTwoFibreProduct_quotientStackInertiaSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/InertiaQuotientStackSquareFibred.lean, line 249](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/InertiaQuotientStackSquareFibred.lean#L249). The attribute's comment: “the canonical square with corners S\_G, S\_U, I\_[U/R], [U/R] is 2-cartesian”.
+**`AlgebraicGeometry.Stack.isTwoFibreProduct_quotientStackInertiaSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/InertiaQuotientStackSquareFibred.lean, line 249](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/InertiaQuotientStackSquareFibred.lean#L249). The attribute's comment: “the canonical square with corners S\_G, S\_U, I\_[U/R], [U/R] is 2-cartesian”.
 
 > Assume `B → S` and `(U, R, s, t, c)` as in Stacks 044Q (1). Let `G/U` be the stabilizer group
 > algebraic space of the groupoid `(U, R, s, t, c, e, i)` (Stacks 0448). Then the canonical diagram
@@ -141,7 +141,7 @@ noncomputable def isTwoFibreProduct_quotientStackInertiaSquare
     Bicategory.IsTwoFibreProduct (quotientStackInertiaSquare G)
 ```
 
-**`AlgebraicGeometry.Stack.isTwoFibreProduct_quotientStackInertiaSquareInGroupoids`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/InertiaQuotientStackSquareFibred.lean, line 310](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/InertiaQuotientStackSquareFibred.lean#L310). The attribute's comment: “that square, in the 2-category of stacks in groupoids, is 2-cartesian”.
+**`AlgebraicGeometry.Stack.isTwoFibreProduct_quotientStackInertiaSquareInGroupoids`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/InertiaQuotientStackSquareFibred.lean, line 310](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/InertiaQuotientStackSquareFibred.lean#L310). The attribute's comment: “that square, in the 2-category of stacks in groupoids, is 2-cartesian”.
 
 > Assume `B → S` and `(U, R, s, t, c)` as in Stacks 044Q (1) and let `G/U` be the stabilizer
 > group algebraic space of `(U, R, s, t, c, e, i)` (Stacks 0448). Then the canonical diagram
@@ -168,4 +168,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 78.26, Tag 06PA](https://stacks.math.columbia.edu/tag/06PA)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

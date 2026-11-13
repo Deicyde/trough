@@ -8,13 +8,13 @@ proof: formalized
 
 # 76.56 The resolution property
 
-Section 76.56 of the Stacks Project, [Tag 0GUX](https://stacks.math.columbia.edu/tag/0GUX). 6 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 76.56 of the Stacks Project, [Tag 0GUX](https://stacks.math.columbia.edu/tag/0GUX). 6 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0GUY, a situation
 
 [Tag 0GUY](https://stacks.math.columbia.edu/tag/0GUY) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_affine_isSurjective_isEtale_of_isQuasiCompactSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyDescentSituation.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyDescentSituation.lean#L111). The attribute's comment: “the existence of the affine surjective étale chart of the situation”.
+**`AlgebraicGeometry.Space.exists_affine_isSurjective_isEtale_of_isQuasiCompactSpace`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyDescentSituation.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyDescentSituation.lean#L111). The attribute's comment: “the existence of the affine surjective étale chart of the situation”.
 
 > **Stacks 0GUY, the existence of the chart `V → X`.** A quasi-compact algebraic space over
 > `S` admits a surjective étale morphism from an affine scheme of the site, surjectivity being
@@ -32,7 +32,7 @@ theorem exists_affine_isSurjective_isEtale_of_isQuasiCompactSpace
         IsSurjective B S hS φ ∧ IsEtale B S hS φ
 ```
 
-**`AlgebraicGeometry.Space.ResolutionPropertyDescentSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyDescentSituation.lean, line 130](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyDescentSituation.lean#L130). The attribute's comment: “the data chosen in the situation, and the conditions imposed on it”.
+**`AlgebraicGeometry.Space.ResolutionPropertyDescentSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyDescentSituation.lean, line 130](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyDescentSituation.lean#L130). The attribute's comment: “the data chosen in the situation, and the conditions imposed on it”.
 
 > **Stacks 0GUY.** The choices fixed in the situation of the source for a quasi-compact and
 > quasi-separated algebraic space `X` over `S`: an affine scheme `V` of the site with a
@@ -53,7 +53,7 @@ structure ResolutionPropertyDescentSituation (X : AlgebraicSpaces B S hS)
 
 [Tag 0GUZ](https://stacks.math.columbia.edu/tag/0GUZ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_epi_biproduct_idealSheafPowPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ResolutionPropertySurjection.lean, line 218](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/ResolutionPropertySurjection.lean#L218).
+**`AlgebraicGeometry.Space.exists_epi_biproduct_idealSheafPowPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/ResolutionPropertySurjection.lean, line 218](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/ResolutionPropertySurjection.lean#L218).
 
 > **Stacks 0GUZ.**  In the situation of Stacks 0GUY — a quasi-compact and quasi-separated
 > algebraic space `X`, a surjective étale `φ : V ⟶ X` from an affine scheme factored as an open
@@ -80,7 +80,7 @@ theorem exists_epi_biproduct_idealSheafPowPushforward (hX : IsNoetherian B S hS 
 
 [Tag 0GV0](https://stacks.math.columbia.edu/tag/0GV0) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isFiniteLocallyFreeOnSite_epi_modulePushforwardIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyDescentIdealQuotient.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyDescentIdealQuotient.lean#L134). The attribute's comment: “the direction from the resolution property: `π_*ℐ` is coherent by Stacks 07UH, so the resolution property of the Noetherian `X` exhibits it as the quotient of a finite locally free module. The converse direction is not claimed; its input Stacks 0GUZ, the powers `ℐ^n` of a quasi-coherent sheaf of ideals on an algebraic space, and the closure of finite local freeness under tensor powers and finite direct sums are all absent from the library, as the module documentation records”.
+**`AlgebraicGeometry.Space.exists_isFiniteLocallyFreeOnSite_epi_modulePushforwardIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyDescentIdealQuotient.lean, line 134](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyDescentIdealQuotient.lean#L134). The attribute's comment: “the direction from the resolution property: `π_*ℐ` is coherent by Stacks 07UH, so the resolution property of the Noetherian `X` exhibits it as the quotient of a finite locally free module. The converse direction is not claimed; its input Stacks 0GUZ, the powers `ℐ^n` of a quasi-coherent sheaf of ideals on an algebraic space, and the closure of finite local freeness under tensor powers and finite direct sums are all absent from the library, as the module documentation records”.
 
 > **Stacks 0GV0, the direction from the resolution property.**  In the situation of
 > Stacks 0GUY with `X` Noetherian, if `X` has the resolution property then `π_*ℐ` is the quotient
@@ -96,7 +96,7 @@ theorem exists_isFiniteLocallyFreeOnSite_epi_modulePushforwardIdeal
       (p : E ⟶ modulePushforwardIdeal B S hS hZ X hqc hqs D), Epi p
 ```
 
-**`AlgebraicGeometry.Space.hasResolutionProperty_iff_exists_epi_modulePushforwardIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyNoetherianIdealCriterion.lean, line 90](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyNoetherianIdealCriterion.lean#L90). The attribute's comment: “the whole statement, both directions”.
+**`AlgebraicGeometry.Space.hasResolutionProperty_iff_exists_epi_modulePushforwardIdeal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyNoetherianIdealCriterion.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyNoetherianIdealCriterion.lean#L90). The attribute's comment: “the whole statement, both directions”.
 
 > Let `X` be a quasi-compact and quasi-separated algebraic space, `φ : V ⟶ X` a surjective
 > étale morphism from an affine scheme factored as an open immersion `j : V ⟶ Y` followed by a
@@ -116,7 +116,7 @@ theorem hasResolutionProperty_iff_exists_epi_modulePushforwardIdeal
 
 [Tag 0GV1](https://stacks.math.columbia.edu/tag/0GV1) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.ResolutionPropertyDescentSituation.exists_isFiniteLocallyFreeOnSite_epi_idealDirectImage_of_hasResolutionProperty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyIdealDirectImage.lean, line 141](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyIdealDirectImage.lean#L141). The attribute's comment: “the implication from the resolution property of `X` to `π_*ℐ` being the quotient of a finite locally free `𝒪_X`-module; the reverse implication, whose proof in the source reduces to the Noetherian case Stacks 0GV0, is not proved — see the module documentation for the inputs it needs”.
+**`AlgebraicGeometry.Space.ResolutionPropertyDescentSituation.exists_isFiniteLocallyFreeOnSite_epi_idealDirectImage_of_hasResolutionProperty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyIdealDirectImage.lean, line 141](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyIdealDirectImage.lean#L141). The attribute's comment: “the implication from the resolution property of `X` to `π_*ℐ` being the quotient of a finite locally free `𝒪_X`-module; the reverse implication, whose proof in the source reduces to the Noetherian case Stacks 0GV0, is not proved — see the module documentation for the inputs it needs”.
 
 > **Stacks 0GV1, the implication from the resolution property.**  In the situation of Stacks
 > 0GUY, if the algebraic space `X` has the resolution property then `π_*ℐ` is the quotient of a
@@ -130,7 +130,7 @@ theorem exists_isFiniteLocallyFreeOnSite_epi_idealDirectImage_of_hasResolutionPr
       (f : E ⟶ idealDirectImage B S hS hZ sit), Epi f
 ```
 
-**`AlgebraicGeometry.Space.hasResolutionProperty_iff_exists_epi_idealDirectImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyIdealDirectImageConverse.lean, line 269](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyIdealDirectImageConverse.lean#L269).
+**`AlgebraicGeometry.Space.hasResolutionProperty_iff_exists_epi_idealDirectImage`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyIdealDirectImageConverse.lean, line 269](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyIdealDirectImageConverse.lean#L269).
 
 > In the situation of Stacks 0GUY — `X` a quasi-compact and quasi-separated algebraic space
 > over `S`, `V` an affine scheme with a surjective étale `φ : V ⟶ X` factored as an open immersion
@@ -150,7 +150,7 @@ theorem hasResolutionProperty_iff_exists_epi_idealDirectImage
 
 [Tag 0GV2](https://stacks.math.columbia.edu/tag/0GV2) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.hasResolutionProperty_limitAlgebraicSpace_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyLimitIff.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyLimitIff.lean#L77).
+**`AlgebraicGeometry.Space.hasResolutionProperty_limitAlgebraicSpace_iff`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyLimitIff.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyLimitIff.lean#L77).
 
 > **Stacks 0GV2.**  Let `X = lim X_i` be the limit of a cofiltered system of quasi-compact and
 > quasi-separated algebraic spaces over `S` with affine transition morphisms.  Then `X` has the
@@ -178,7 +178,7 @@ theorem hasResolutionProperty_limitAlgebraicSpace_iff
 
 [Tag 0GV3](https://stacks.math.columbia.edu/tag/0GV3) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.isAffineHom_viewOverIntegers_diag_of_hasResolutionProperty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyAffineDiagonal.lean, line 139](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyAffineDiagonal.lean#L139).
+**`AlgebraicGeometry.Space.isAffineHom_viewOverIntegers_diag_of_hasResolutionProperty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyAffineDiagonal.lean, line 139](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/ResolutionPropertyAffineDiagonal.lean#L139).
 
 > **Stacks 0GV3.**  Let `X` be a quasi-compact and quasi-separated algebraic space over a
 > scheme `S` with the resolution property.  Then `X` has affine diagonal over `ℤ`: the diagonal of
@@ -201,4 +201,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 76.56, Tag 0GUX](https://stacks.math.columbia.edu/tag/0GUX)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 61.14 Weakly contractible hypercoverings
 
-Section 61.14 of the Stacks Project, [Tag 09A0](https://stacks.math.columbia.edu/tag/09A0). 3 tags here are carried by 13 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 61.14 of the Stacks Project, [Tag 09A0](https://stacks.math.columbia.edu/tag/09A0). 3 tags here are carried by 13 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 09A1, a lemma
 
 [Tag 09A1](https://stacks.math.columbia.edu/tag/09A1) in the Stacks Project.
 
-**`AlgebraicGeometry.ProEtale.exists_singleton_affine_weaklyContractible_hypercovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/QcqsWeaklyContractibleHypercovering.lean, line 204](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/QcqsWeaklyContractibleHypercovering.lean#L204). The attribute's comment: “(2), at the library's big pro-etale site”.
+**`AlgebraicGeometry.ProEtale.exists_singleton_affine_weaklyContractible_hypercovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/QcqsWeaklyContractibleHypercovering.lean, line 204](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Site/QcqsWeaklyContractibleHypercovering.lean#L204). The attribute's comment: “(2), at the library's big pro-etale site”.
 
 > **Stacks Project, Tag 09A1 (2).** Every quasi-compact quasi-separated object `U` of a chosen
 > big pro-étale site admits a hypercovering each of whose terms is a one-element family on an
@@ -38,7 +38,7 @@ theorem exists_singleton_affine_weaklyContractible_hypercovering (U : B.Scheme)
               B.topology.toPretopology U
 ```
 
-**`AlgebraicGeometry.ProEtale.exists_singleton_weaklyContractible_hypercovering_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/WeaklyContractibleHypercovering.lean, line 200](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/WeaklyContractibleHypercovering.lean#L200). The attribute's comment: “(1), at the library's big pro-etale site”.
+**`AlgebraicGeometry.ProEtale.exists_singleton_weaklyContractible_hypercovering_unconditional`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/WeaklyContractibleHypercovering.lean, line 200](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Site/WeaklyContractibleHypercovering.lean#L200). The attribute's comment: “(1), at the library's big pro-etale site”.
 
 > **Stacks Project, Tag 09A1 (1).** Every object `U` of a chosen big pro-étale site admits a
 > hypercovering each of whose terms is a one-element family on a weakly contractible object of the
@@ -61,7 +61,7 @@ theorem exists_singleton_weaklyContractible_hypercovering_unconditional (U : B.S
               B.topology.toPretopology U
 ```
 
-**`AlgebraicGeometry.ProEtale.exists_singleton_weaklyContractible_hypercovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/WeaklyContractibleHypercovering.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/WeaklyContractibleHypercovering.lean#L227). The attribute's comment: “(1), at the library's big pro-etale site. The one-element weakly contractible covering is Tag 0F4P, discharged here; hunions and the two instance hypotheses are Tag 0DB2's own hypotheses, propagated”.
+**`AlgebraicGeometry.ProEtale.exists_singleton_weaklyContractible_hypercovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/WeaklyContractibleHypercovering.lean, line 227](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Site/WeaklyContractibleHypercovering.lean#L227). The attribute's comment: “(1), at the library's big pro-etale site. The one-element weakly contractible covering is Tag 0F4P, discharged here; the three instance hypotheses are Tag 0DB2's own hypotheses, propagated”.
 
 > **Stacks Project, Tag 09A1 (1).** Every object `U` of a chosen big pro-étale site admits a
 > hypercovering each of whose terms is a one-element family on a weakly contractible object of the
@@ -69,18 +69,15 @@ theorem exists_singleton_weaklyContractible_hypercovering_unconditional (U : B.S
 >
 > The one-element coverings by weakly contractible objects are those of Stacks 0F4P, supplied by
 > `AlgebraicGeometry.ProEtale.exists_weaklyContractible_singleton_covering`; the hypotheses on
-> disjoint unions are those of Stacks 0DB2, together with the weak contractibility of a finite
-> disjoint union of weakly contractible objects.
+> disjoint unions are discharged as in
+> `exists_singleton_weaklyContractible_hypercovering_unconditional`.
 
 ```lean
 theorem exists_singleton_weaklyContractible_hypercovering (U : B.Scheme)
     [HasFiniteCoproducts (Over U)]
     [ObjectProperty.IsClosedUnderFiniteLimits
       (fun A : FormalCoproduct.{u + 1} (Over U) ↦ HasCoproduct A.obj)]
-    [PreservesFiniteLimits (takeUnions.{u + 1, u, u + 1} (C := Over U))]
-    (hunions : TakeUnionsFinPreservesCoverings.{u + 1} B.topology U)
-    (sum_weaklyContractible :
-      SumMemFin.{u + 1} {V : B.Scheme | B.topology.IsWeaklyContractible V} U) :
+    [PreservesFiniteLimits (takeUnions.{u + 1, u, u + 1} (C := Over U))] :
     ∃ K : SimplicialObject (FormalCoproduct.{u + 1} (Over U)),
       IsHypercovering B.topology.toPretopology K ∧
         ∀ n : ℕ, ∃ i : (K.obj (op ⦋n⦌)).I,
@@ -90,7 +87,7 @@ theorem exists_singleton_weaklyContractible_hypercovering (U : B.Scheme)
               B.topology.toPretopology U
 ```
 
-**`AlgebraicGeometry.ProEtale.SmallProetale.exists_weaklyContractible_hypercovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/WeaklyContractibleHypercoveringSmall.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/WeaklyContractibleHypercoveringSmall.lean#L113). The attribute's comment: “(1)”.
+**`AlgebraicGeometry.ProEtale.SmallProetale.exists_weaklyContractible_hypercovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/WeaklyContractibleHypercoveringSmall.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Site/WeaklyContractibleHypercoveringSmall.lean#L113). The attribute's comment: “(1)”.
 
 > **Stacks Project, Tag 09A1 (1).** Let `S` be a scheme in a chosen big pro-étale site. Every
 > object `U` of the small pro-étale site `S_proétale` admits a hypercovering `K` of `U` in
@@ -108,7 +105,7 @@ theorem exists_weaklyContractible_hypercovering (U : SmallProetale B S hS) :
               (topology B S hS).toPretopology U
 ```
 
-**`AlgebraicGeometry.ProEtale.SmallProetale.exists_affine_weaklyContractible_hypercovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/WeaklyContractibleHypercoveringSmall.lean, line 201](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/Site/WeaklyContractibleHypercoveringSmall.lean#L201). The attribute's comment: “(2)”.
+**`AlgebraicGeometry.ProEtale.SmallProetale.exists_affine_weaklyContractible_hypercovering`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/Site/WeaklyContractibleHypercoveringSmall.lean, line 201](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/Site/WeaklyContractibleHypercoveringSmall.lean#L201). The attribute's comment: “(2)”.
 
 > **Stacks Project, Tag 09A1 (2).** Let `S` be a scheme in a chosen big pro-étale site. Every
 > quasi-compact and quasi-separated object `U` of the small pro-étale site `S_proétale` admits a
@@ -128,7 +125,7 @@ theorem exists_affine_weaklyContractible_hypercovering (U : SmallProetale B S hS
               (topology B S hS).toPretopology U
 ```
 
-**`Stacks.CategoryTheory.Hypercovering.exists_singleton_weaklyContractible_hypercovering_finiteDisjointUnions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/Construction/WeaklyContractibleHypercovering.lean, line 388](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/Construction/WeaklyContractibleHypercovering.lean#L388). The attribute's comment: “(1), for a general site: the one-element weakly contractible covering is the hypothesis exists\_singleton\_cover (Tag 0F4P), and hunions is the remaining hypothesis of the library's Tag 0DB2, propagated”.
+**`Stacks.CategoryTheory.Hypercovering.exists_singleton_weaklyContractible_hypercovering_finiteDisjointUnions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/Construction/WeaklyContractibleHypercovering.lean, line 388](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/Construction/WeaklyContractibleHypercovering.lean#L388). The attribute's comment: “(1), for a general site: the one-element weakly contractible covering is the hypothesis exists\_singleton\_cover (Tag 0F4P), and hunions is the remaining hypothesis of the library's Tag 0DB2, propagated”.
 
 > **Stacks Project, Tag 09A1 (1).** On a site with fibre products in which every object has a
 > one-element covering by a weakly contractible object, every object `X` admits a hypercovering
@@ -151,7 +148,7 @@ theorem exists_singleton_weaklyContractible_hypercovering_finiteDisjointUnions
             Presieve.singleton ((K.obj (op ⦋n⦌)).obj i).hom ∈ T.toPretopology X
 ```
 
-**`Stacks.CategoryTheory.Hypercovering.exists_singleton_weaklyContractible_hypercovering_of_prop_finiteDisjointUnions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/Construction/WeaklyContractibleHypercovering.lean, line 417](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Hypercovering/Construction/WeaklyContractibleHypercovering.lean#L417). The attribute's comment: “(2), with the object property P as a parameter: the source states it for affineness on the quasi-compact quasi-separated pro-etale site, which is constructed in StacksFrontier/AlgebraicGeometry/ProEtale/Site/Qcqs.lean, and (2) itself is proved at a chosen big pro-etale site as AlgebraicGeometry.ProEtale.exists\_singleton\_affine\_weaklyContractible\_hypercovering. That instantiation runs exists\_singleton\_hypercovering\_objects\_in\_finiteDisjointUnions rather than this lemma, because the weak contractibility carried here is that of the site being worked in, while the source's — and the library statement's — is that of the ambient pro-etale site. Instantiating this lemma at the big site with P := affine would be vacuous, since a non-quasi-compact object has no one-element affine cover. Same carried hypotheses as (1)”.
+**`Stacks.CategoryTheory.Hypercovering.exists_singleton_weaklyContractible_hypercovering_of_prop_finiteDisjointUnions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Hypercovering/Construction/WeaklyContractibleHypercovering.lean, line 418](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Hypercovering/Construction/WeaklyContractibleHypercovering.lean#L418). The attribute's comment: “(2), with the object property P as a parameter: the source states it for affineness on the quasi-compact quasi-separated pro-etale site, which is constructed in StacksFrontier/AlgebraicGeometry/ProEtale/Site/Qcqs.lean, and (2) itself is proved at a chosen big pro-etale site as AlgebraicGeometry.ProEtale.exists\_singleton\_affine\_weaklyContractible\_hypercovering. That instantiation runs exists\_singleton\_hypercovering\_objects\_in\_finiteDisjointUnions rather than this lemma, because the weak contractibility carried here is that of the site being worked in, while the source's — and the library statement's — is that of the ambient pro-etale site. Instantiating this lemma at the big site with P := affine would be vacuous, since a non-quasi-compact object has no one-element affine cover. Same carried hypotheses as (1)”.
 
 > **Stacks Project, Tag 09A1 (2).** The same construction run with a further property `P` of
 > objects stable under the disjoint unions taken, such as affineness on the site of quasi-compact
@@ -177,7 +174,7 @@ theorem exists_singleton_weaklyContractible_hypercovering_of_prop_finiteDisjoint
 
 [Tag 09A2](https://stacks.math.columbia.edu/tag/09A2) in the Stacks Project.
 
-**`Stacks.CategoryTheory.Hypercovering.derivedSectionsIsoHypercoverTotalComplex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/BigSmall/HypercoverTotalComplex.lean, line 686](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/BigSmall/HypercoverTotalComplex.lean#L686).
+**`Stacks.CategoryTheory.Hypercovering.derivedSectionsIsoHypercoverTotalComplex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/BigSmall/HypercoverTotalComplex.lean, line 686](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/BigSmall/HypercoverTotalComplex.lean#L686).
 
 > A hypercovering by weakly contractible objects computes the derived
 > sections of any bounded-below complex of abelian sheaves.
@@ -203,7 +200,7 @@ public noncomputable def derivedSectionsIsoHypercoverTotalComplex
 
 [Tag 09A3](https://stacks.math.columbia.edu/tag/09A3) in the Stacks Project.
 
-**`Stacks.CategoryTheory.Hypercovering.preservesColimitsOfShape_discrete_derivedSectionsPlus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/BigSmall/DerivedSectionsCoproducts.lean, line 522](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/BigSmall/DerivedSectionsCoproducts.lean#L522). The attribute's comment: “direct sums, as preservation of colimit cocones indexed by a discrete category; same hypotheses as the cofan form below”.
+**`Stacks.CategoryTheory.Hypercovering.preservesColimitsOfShape_discrete_derivedSectionsPlus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/BigSmall/DerivedSectionsCoproducts.lean, line 522](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/BigSmall/DerivedSectionsCoproducts.lean#L522). The attribute's comment: “direct sums, as preservation of colimit cocones indexed by a discrete category; same hypotheses as the cofan form below”.
 
 > Derived sections over `U` commute with direct sums: every colimit cocone on a family of
 > objects of `D⁺(Sh(J, Ab))` is carried by `RΓ(U, -) : D⁺(Sh(J, Ab)) ⥤ D(Ab)` to a colimit cocone
@@ -216,7 +213,7 @@ public theorem preservesColimitsOfShape_discrete_derivedSectionsPlus
       ((sheafSectionsFunctor J U).rightDerivedFunctorPlus ⋙ DerivedCategory.Plus.ι)
 ```
 
-**`Stacks.CategoryTheory.Hypercovering.isColimit_mapCofan_derivedSectionsPlus`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/BigSmall/DerivedSectionsCoproducts.lean, line 631](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/BigSmall/DerivedSectionsCoproducts.lean#L631). The attribute's comment: “direct sums, at an object of a general site admitting a hypercovering by one-element families on quasi-compact objects with exact sections --- which is what Tag 09A1 provides for the pro-etale site of a quasi-compact quasi-separated scheme, modulo the hypotheses that Tag 09A1 itself carries in this library”.
+**`Stacks.CategoryTheory.Hypercovering.isColimit_mapCofan_derivedSectionsPlus`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/BigSmall/DerivedSectionsCoproducts.lean, line 631](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/BigSmall/DerivedSectionsCoproducts.lean#L631). The attribute's comment: “direct sums, at an object of a general site admitting a hypercovering by one-element families on quasi-compact objects with exact sections --- which is what Tag 09A1 provides for the pro-etale site of a quasi-compact quasi-separated scheme, modulo the hypotheses that Tag 09A1 itself carries in this library”.
 
 > Let `U` be an object of a site admitting a hypercovering each of whose terms is a one-element
 > family on a quasi-compact object over which taking sections of abelian sheaves is exact. Then
@@ -237,7 +234,7 @@ public noncomputable def isColimit_mapCofan_derivedSectionsPlus
         ((sheafSectionsFunctor J U).rightDerivedFunctorPlus.map (inj i))))
 ```
 
-**`Stacks.CategoryTheory.Hypercovering.isHomotopyColimit_derivedSectionsPlus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/BigSmall/DerivedSectionsCoproducts.lean, line 650](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/BigSmall/DerivedSectionsCoproducts.lean#L650). The attribute's comment: “homotopy colimits, under the same hypotheses on the hypercovering as the direct sums half”.
+**`Stacks.CategoryTheory.Hypercovering.isHomotopyColimit_derivedSectionsPlus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/BigSmall/DerivedSectionsCoproducts.lean, line 650](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/BigSmall/DerivedSectionsCoproducts.lean#L650). The attribute's comment: “homotopy colimits, under the same hypotheses on the hypercovering as the direct sums half”.
 
 > Derived sections over `U` carry a homotopy colimit of a system of bounded below complexes of
 > abelian sheaves to a homotopy colimit in `D(Ab)`.
@@ -257,7 +254,7 @@ public theorem isHomotopyColimit_derivedSectionsPlus
         DerivedCategory.Plus.ι).obj X)
 ```
 
-**`AlgebraicGeometry.ProEtale.derivedGlobalSections_preservesCoproducts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/DerivedGlobalSectionsDirectSums.lean, line 305](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/DerivedGlobalSectionsDirectSums.lean#L305). The attribute's comment: “direct sums, for the derived global sections of the small pro-etale site of a quasi-compact quasi-separated scheme, as preservation of colimit cocones indexed by a discrete category with an arbitrary index type”.
+**`AlgebraicGeometry.ProEtale.derivedGlobalSections_preservesCoproducts`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/DerivedGlobalSectionsDirectSums.lean, line 305](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/DerivedGlobalSectionsDirectSums.lean#L305). The attribute's comment: “direct sums, for the derived global sections of the small pro-etale site of a quasi-compact quasi-separated scheme, as preservation of colimit cocones indexed by a discrete category with an arbitrary index type”.
 
 > **Stacks 09A3, direct sums.** Let `X` be a quasi-compact and quasi-separated scheme. Then
 >
@@ -283,7 +280,7 @@ theorem derivedGlobalSections_preservesCoproducts (I : Type i₀) :
         DerivedCategory.Plus.ι)
 ```
 
-**`AlgebraicGeometry.ProEtale.derivedGlobalSections_preservesHomotopyColimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/DerivedGlobalSectionsDirectSums.lean, line 343](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ProEtale/DerivedGlobalSectionsDirectSums.lean#L343). The attribute's comment: “homotopy colimits, for the derived global sections of the small pro-etale site of a quasi-compact quasi-separated scheme”.
+**`AlgebraicGeometry.ProEtale.derivedGlobalSections_preservesHomotopyColimits`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ProEtale/DerivedGlobalSectionsDirectSums.lean, line 343](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ProEtale/DerivedGlobalSectionsDirectSums.lean#L343). The attribute's comment: “homotopy colimits, for the derived global sections of the small pro-etale site of a quasi-compact quasi-separated scheme”.
 
 > **Stacks 09A3, homotopy colimits.** Let `X` be a quasi-compact and quasi-separated scheme.
 > Then `RΓ(X, -) : D⁺(X_pro-étale) ⥤ D(Ab)` carries a homotopy colimit of a system of objects of
@@ -319,4 +316,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 61.14, Tag 09A0](https://stacks.math.columbia.edu/tag/09A0)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

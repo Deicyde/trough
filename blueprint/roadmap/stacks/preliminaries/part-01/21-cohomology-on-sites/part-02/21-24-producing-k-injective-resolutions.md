@@ -8,13 +8,13 @@ proof: formalized
 
 # 21.24 Producing K-injective resolutions
 
-Section 21.24 of the Stacks Project, [Tag 070N](https://stacks.math.columbia.edu/tag/070N). 3 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 21.24 of the Stacks Project, [Tag 070N](https://stacks.math.columbia.edu/tag/070N). 3 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 070P, an equation
 
 [Tag 070P](https://stacks.math.columbia.edu/tag/070P) in the Stacks Project.
 
-**`CochainComplex.toLimitOfTruncGEResolutions`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/IntoCandidateKInjective.lean, line 55](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/IntoCandidateKInjective.lean#L55).
+**`CochainComplex.toLimitOfTruncGEResolutions`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/IntoCandidateKInjective.lean, line 55](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/IntoCandidateKInjective.lean#L55).
 
 > **Stacks Project, Tag 070P**, the displayed arrow `ℱ• → ℐ•`. Given an inverse system `𝓘` of
 > cochain complexes and maps `f n : τ_{≥ -n} K ⟶ 𝓘ₙ` commuting with the canonical truncation maps
@@ -33,7 +33,7 @@ def toLimitOfTruncGEResolutions (𝓘 : ℕᵒᵖ ⥤ CochainComplex A ℤ) [Has
 
 [Tag 070Q](https://stacks.math.columbia.edu/tag/070Q) in the Stacks Project.
 
-**`Stacks.Cohomology.quasiIso_to_limit_of_truncGE_resolutions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/KInjectiveTowerQuasiIso.lean, line 127](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/KInjectiveTowerQuasiIso.lean#L127).
+**`Stacks.Cohomology.quasiIso_to_limit_of_truncGE_resolutions`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/KInjectiveTowerQuasiIso.lean, line 127](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/KInjectiveTowerQuasiIso.lean#L127).
 
 > Let `O` be a sheaf of rings on a site, let `K` be a cochain complex of `O`-modules, and let
 > `𝓘` be an inverse system of K-injective complexes with degreewise split-epimorphic transition
@@ -72,7 +72,7 @@ theorem quasiIso_to_limit_of_truncGE_resolutions {C : Type u} [Category.{u} C]
 
 [Tag 08CT](https://stacks.math.columbia.edu/tag/08CT) in the Stacks Project.
 
-**`Stacks.Cohomology.InverseLimits.homology_isLimit_of_local_rlim_vanishing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/CohomologyOfInverseLimits.lean, line 536](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/CohomologyOfInverseLimits.lean#L536). The attribute's comment: “canonical cohomology-limit comparison”.
+**`Stacks.Cohomology.InverseLimits.homology_isLimit_of_local_rlim_vanishing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/CohomologyOfInverseLimits.lean, line 536](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/CohomologyOfInverseLimits.lean#L536). The attribute's comment: “canonical cohomology-limit comparison”.
 
 > **Stacks 08CT.** The canonical cone from the degree-`m` cohomology of the termwise
 > inverse limit of an inverse system of complexes of modules on a ringed site to the
@@ -108,7 +108,7 @@ public theorem homology_isLimit_of_local_rlim_vanishing
         (ComplexShape.up ℤ) m).mapCone (limit.cone F)))
 ```
 
-**`Stacks.Cohomology.InverseLimits.homology_limit_projection_isIso_of_local_rlim_vanishing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/CohomologyOfInverseLimits.lean, line 588](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/CohomologyOfInverseLimits.lean#L588). The attribute's comment: “projection to a stable stage”.
+**`Stacks.Cohomology.InverseLimits.homology_limit_projection_isIso_of_local_rlim_vanishing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/CohomologyOfInverseLimits.lean, line 588](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/DerivedLimit/CohomologyOfInverseLimits.lean#L588). The attribute's comment: “projection to a stable stage”.
 
 > **Stacks 08CT.** The limit of the degree-`m` cohomology sheaves of an inverse system of
 > complexes of modules on a ringed site projects isomorphically to any stage from which the
@@ -138,4 +138,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 21.24, Tag 070N](https://stacks.math.columbia.edu/tag/070N)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: AlgebraicGeometry.VanishingSituation, AlgebraicGeometry.VanishingSituation.exists_isAdmissibleBlowup_dominating_of_noetherian, AlgebraicGeometry.VanishingSituation.exists_isAdmissibleBlowup_dominating, AlgebraicGeometry.VanishingSituation.exists_ne_zero_mem_maximalIdeal_factorization, AlgebraicGeometry.VanishingSituation.exists_ne_zero_mem_maximalIdeal_factorization_of_le_topologicalKrullDim_specialFiber, AlgebraicGeometry.VanishingSituation.invertibleCurveDegree_conormalOnComponent_pos, AlgebraicGeometry.VanishingSituation.not_isTrivial_conormalSheaf, AlgebraicGeometry.VanishingSituation.exists_subset_invertibleCurveDegree_conormalOnComponent_pos
+lean: AlgebraicGeometry.VanishingSituation, AlgebraicGeometry.VanishingSituation.exists_isAdmissibleBlowup_dominating_of_noetherian, AlgebraicGeometry.VanishingSituation.exists_ne_zero_mem_maximalIdeal_factorization, AlgebraicGeometry.VanishingSituation.exists_ne_zero_mem_maximalIdeal_factorization_of_le_topologicalKrullDim_specialFiber, AlgebraicGeometry.VanishingSituation.exists_subset_invertibleCurveDegree_conormalOnComponent_pos, AlgebraicGeometry.VanishingSituation.not_isTrivial_conormalSheaf_of_nonempty, AlgebraicGeometry.VanishingSituation.firstCohomologyRestriction_injective, AlgebraicGeometry.VanishingSituation.hom_residueFieldShift_derivedPushforwardStructureSheaf_eq_zero
 statement: formalized
 proof: formalized
 ---
 
 # 54.7 Vanishing
 
-Section 54.7 of the Stacks Project, [Tag 0AX7](https://stacks.math.columbia.edu/tag/0AX7). 8 tags here are carried by 17 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 54.7 of the Stacks Project, [Tag 0AX7](https://stacks.math.columbia.edu/tag/0AX7). 8 tags here are carried by 18 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0AX8, a situation
 
 [Tag 0AX8](https://stacks.math.columbia.edu/tag/0AX8) in the Stacks Project.
 
-**`AlgebraicGeometry.VanishingSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/Basic.lean, line 49](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/Basic.lean#L49).
+**`AlgebraicGeometry.VanishingSituation`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/Basic.lean, line 49](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/Basic.lean#L49).
 
 > **Stacks Project, Tag 0AX8.** The standing data for the vanishing results: a
 > two-dimensional Noetherian normal local domain, a modification of its spectrum, and an
@@ -28,33 +28,20 @@ structure VanishingSituation
 
 [Tag 0B4M](https://stacks.math.columbia.edu/tag/0B4M) in the Stacks Project.
 
-**`AlgebraicGeometry.VanishingSituation.exists_isAdmissibleBlowup_dominating_of_noetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/StrictTransformOpenImmersion.lean, line 134](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/StrictTransformOpenImmersion.lean#L134).
+**`AlgebraicGeometry.VanishingSituation.exists_isAdmissibleBlowup_dominating_of_noetherian`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/Flattening/StrictTransformOpenImmersion.lean, line 147](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/Flattening/StrictTransformOpenImmersion.lean#L147). The attribute's comment: “the full statement in Situation 0AX8: the inputs 080Y and 081S of 081T are proved, by `cartierBoundaryReduction` and `VanishingSituation.strictTransformOpenImmersion`”.
 
-> In a `VanishingSituation` there is a `U`-admissible blowup `b : S' ⟶ S` of the punctured
-> spectrum `U = S ∖ {s}` which dominates `X`: it factors as `S' ⟶ X ⟶ S`.
+> **Stacks Project, Tag 0B4M.** In Situation [Stacks, Tag 0AX8] — `A` a Noetherian normal
+> local domain of dimension two, `S = Spec(A)`, `U = S ∖ {s}` its punctured spectrum and
+> `f : X ⟶ S` a modification — there is a `U`-admissible blowup `b : S' ⟶ S` which dominates `X`:
+> it factors as `S' ⟶ X ⟶ S`.
+>
+> As in the source this is the case of [Stacks, Tag 081T] at `f`. Both results 081T cites are
+> proved here for this situation: [Stacks, Tag 080Y] by `AlgebraicGeometry.cartierBoundaryReduction`
+> and [Stacks, Tag 081S] by `strictTransformOpenImmersion`. The hypothesis of the source's
+> discussion that the special fibre has positive dimension is not needed.
 
 ```lean
 theorem exists_isAdmissibleBlowup_dominating_of_noetherian (V : VanishingSituation.{u}) :
-    ∃ (S' : Scheme.{u}) (b : S' ⟶ V.base),
-      Stacks.Blowup.IsAdmissibleBlowup V.puncturedSpectrumOpen b ∧
-        ∃ g : S' ⟶ V.X, g ≫ V.f = b
-```
-
-**`AlgebraicGeometry.VanishingSituation.exists_isAdmissibleBlowup_dominating`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/DominatingBlowup.lean, line 312](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/DominatingBlowup.lean#L312). The attribute's comment: “the case of the cited 081T at Situation 0AX8's modification; 081T's own carried inputs 080Y and 081S are passed through as hypotheses”.
-
-> **Stacks Project, Tag 0B4M.** In Situation [Stacks, Tag 0AX8] there is a `U`-admissible
-> blowup `b : S' ⟶ S` of the punctured spectrum `U = S ∖ {s}` which dominates `X`: it factors as
-> `S' ⟶ X ⟶ S`.
->
-> This is the case of [Stacks, Tag 081T] at the modification `f`, which is an isomorphism over `U`
-> by `isIso_morphismRestrict_puncturedSpectrumOpen`. The two hypotheses are the cited results
-> [Stacks, Tag 080Y] and [Stacks, Tag 081S] that 081T carries, passed through
-> unchanged.
-
-```lean
-public theorem exists_isAdmissibleBlowup_dominating (V : VanishingSituation.{u})
-    (h080Y : CartierBoundaryReduction V.base V.puncturedSpectrumOpen)
-    (h081S : StrictTransformOpenImmersion V.f V.puncturedSpectrumOpen) :
     ∃ (S' : Scheme.{u}) (b : S' ⟶ V.base),
       Stacks.Blowup.IsAdmissibleBlowup V.puncturedSpectrumOpen b ∧
         ∃ g : S' ⟶ V.X, g ≫ V.f = b
@@ -64,7 +51,7 @@ public theorem exists_isAdmissibleBlowup_dominating (V : VanishingSituation.{u})
 
 [Tag 0AX9](https://stacks.math.columbia.edu/tag/0AX9) in the Stacks Project.
 
-**`AlgebraicGeometry.VanishingSituation.exists_ne_zero_mem_maximalIdeal_factorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/ComponentFactorization.lean, line 427](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/ComponentFactorization.lean#L427). The attribute's comment: “under the standing observation following Situation 0AX8 that every irreducible component of the special fibre has dimension one”.
+**`AlgebraicGeometry.VanishingSituation.exists_ne_zero_mem_maximalIdeal_factorization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/ComponentFactorization.lean, line 427](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/ComponentFactorization.lean#L427). The attribute's comment: “under the standing observation following Situation 0AX8 that every irreducible component of the special fibre has dimension one”.
 
 > A nonzero element of the maximal ideal which, along every irreducible component of the special
 > fibre, admits at some closed point of that component and of no other a factorization one factor of
@@ -94,7 +81,7 @@ theorem exists_ne_zero_mem_maximalIdeal_factorization
             ((StructureSheaf.toStalk V.A (V.f _) ≫ V.f.stalkMap _) a = g * h)
 ```
 
-**`AlgebraicGeometry.VanishingSituation.exists_ne_zero_mem_maximalIdeal_factorization_of_le_topologicalKrullDim_specialFiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/ComponentFactorizationSupplement.lean, line 64](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/ComponentFactorizationSupplement.lean#L64). The attribute's comment: “the lemma under the standing exclusion of Section 54.7 (Situation 0AX8): the case dim X\_s = 0, discarded by the source, which notes there that f is then finite and hence an isomorphism. The geometric connectedness of the special fibre that the source reads off the Stein factorization is proved here where it is used: a zero-dimensional component is a point open in the special fibre, so Zariski's main theorem over the local base makes the modification an isomorphism and the special fibre a single point, which the exclusion rules out”.
+**`AlgebraicGeometry.VanishingSituation.exists_ne_zero_mem_maximalIdeal_factorization_of_le_topologicalKrullDim_specialFiber`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/ComponentFactorizationSupplement.lean, line 64](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/ComponentFactorizationSupplement.lean#L64). The attribute's comment: “the lemma under the standing exclusion of Section 54.7 (Situation 0AX8): the case dim X\_s = 0, discarded by the source, which notes there that f is then finite and hence an isomorphism. The geometric connectedness of the special fibre that the source reads off the Stein factorization is proved here where it is used: a zero-dimensional component is a point open in the special fibre, so Zariski's main theorem over the local base makes the modification an isomorphism and the special fibre a single point, which the exclusion rules out”.
 
 > **Stacks Project, Tag 0AX9.** A nonzero element of the maximal ideal which, along every
 > irreducible component of the special fibre, admits at some closed point of that component and of
@@ -154,70 +141,7 @@ theorem exists_ne_zero_mem_maximalIdeal_factorization_of_le_topologicalKrullDim_
 
 [Tag 0AXA](https://stacks.math.columbia.edu/tag/0AXA) in the Stacks Project.
 
-**`AlgebraicGeometry.VanishingSituation.invertibleCurveDegree_conormalOnComponent_pos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/ConormalDegree.lean, line 345](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/ConormalDegree.lean#L345). The attribute's comment: “the degree clause -- positivity of deg(C\_\{Z/X}|\_\{C\_i}) at a component C\_i of the special fibre contained in Z -- granted part (2) of Tag 0B40 as the general hypothesis hpos, and granted the global section of the restricted conormal sheaf whose construction from Lemma 0AX9 is the rest of the source's proof”.
-
-> **Stacks Project, Tag 0AXA**, the degree clause at a component carrying the section the
-> source's argument produces.
->
-> In Situation 0AX8 with `X` normal, let `Z ⊆ X` be a nonempty effective Cartier divisor
-> contained set theoretically in the special fibre, and let `C_i` be a component of the special
-> fibre contained in `Z`. If the restriction `𝒞_{Z/X}|_{C_i}` of the conormal sheaf of `Z` has a
-> nonzero global section with a zero, then `deg(𝒞_{Z/X}|_{C_i}) > 0`.
->
-> The component `C_i`, with its reduced induced structure, is an integral scheme proper over the
-> residue field `κ` of the closed point of the base, of dimension one by the standing observation
-> following Situation 0AX8 which is `hdim`; the restricted conormal sheaf is invertible because
-> `ℐ_Z` is. Part (2) of [Stacks, Tag 0B40] then gives the conclusion, and it is carried as the
-> hypothesis `hpos`, the library's `AlgebraicGeometry.VanishingSectionDegreePos`, which is
-> quantified over every proper integral scheme of dimension at most one over `κ` and every
-> invertible sheaf on it, so it mentions none of `X`, `Z` or `C_i`.
->
-> What this does *not* do is produce the section, which in the source is the whole of the
-> argument: the function of Lemma 0AX9 raised to a power read off from the valuations of the
-> local rings at the generic points of the components, after replacing `Z` by `e_i Z`
-> ([Stacks, Tags 02OP, 0AYX]) and using that `Z` is `(S_1)` ([Stacks, Tags 0B3S, 0346, 0B3M]) to
-> see that the function is a section of `ℐ_Z`.
-
-```lean
-theorem invertibleCurveDegree_conormalOnComponent_pos [IsNormal V.X]
-    (hdim : ∀ i : Fin V.numberOfComponents, topologicalKrullDim (V.component i) = 1)
-    (I : V.X.IdealSheafData) [Stacks.Divisors.IsEffectiveCartierDivisor I]
-    (hne : I.supportSet.Nonempty)
-    (hZs : I.supportSet ⊆ Set.range (V.f.fiberι V.closedPoint))
-    (hpos : VanishingSectionDegreePos (V.base.residueField V.closedPoint))
-    (i : Fin V.numberOfComponents) (hCi : componentInSource V i ⊆ I.supportSet)
-    (s : (conormalOnComponent V I i).sections) (hs : s.eval (op ⊤) ≠ 0)
-    (hzero : ∃ y : componentScheme V i, y ∉ Stacks.SheafOfModules.nonvanishingLocus
-      (X := (componentScheme V i).toRingedSpace) (conormalOnComponent V I i) s) :
-    0 < invertibleCurveDegree (V.base.residueField V.closedPoint)
-      (componentToSpecResidueField V i)
-      (topologicalKrullDim_componentScheme_le_one V hdim i) (conormalOnComponent V I i)
-```
-
-**`AlgebraicGeometry.VanishingSituation.not_isTrivial_conormalSheaf`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/ConormalDegree.lean, line 400](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/ConormalDegree.lean#L400). The attribute's comment: “the first clause -- the conormal sheaf of Z is not trivial -- derived from the degree clause on a component, under the same two grants as invertibleCurveDegree\_conormalOnComponent\_pos”.
-
-> **Stacks Project, Tag 0AXA**, the non-triviality clause, derived from the degree clause.
->
-> If the conormal sheaf of `Z` in `X` were trivial, its restriction to a component `C_i ⊆ Z`
-> would be isomorphic to the structure sheaf of `C_i` and so would have degree zero, which
-> contradicts the positivity of that degree.
-
-```lean
-theorem not_isTrivial_conormalSheaf [IsNormal V.X]
-    (hdim : ∀ i : Fin V.numberOfComponents, topologicalKrullDim (V.component i) = 1)
-    (I : V.X.IdealSheafData) [Stacks.Divisors.IsEffectiveCartierDivisor I]
-    (hne : I.supportSet.Nonempty)
-    (hZs : I.supportSet ⊆ Set.range (V.f.fiberι V.closedPoint))
-    (hpos : VanishingSectionDegreePos (V.base.residueField V.closedPoint))
-    (i : Fin V.numberOfComponents) (hCi : componentInSource V i ⊆ I.supportSet)
-    (s : (conormalOnComponent V I i).sections) (hs : s.eval (op ⊤) ≠ 0)
-    (hzero : ∃ y : componentScheme V i, y ∉ Stacks.SheafOfModules.nonvanishingLocus
-      (X := (componentScheme V i).toRingedSpace) (conormalOnComponent V I i) s) :
-    ¬ SheafOfModules.IsTrivial I.subscheme.presheaf I.subscheme.ringCatSheaf.2
-      (Stacks.Conormal.conormalSheaf I.subschemeι)
-```
-
-**`AlgebraicGeometry.VanishingSituation.exists_subset_invertibleCurveDegree_conormalOnComponent_pos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/ConormalDegreePositive.lean, line 708](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/ConormalDegreePositive.lean#L708). The attribute's comment: “the precise clause: in Situation 0AX8 with X normal, for a nonempty effective Cartier divisor Z of X contained set theoretically in the special fibre, there is a component C\_i of the special fibre with C\_i contained in Z and deg(C\_\{Z/X}|\_\{C\_i}) > 0”.
+**`AlgebraicGeometry.VanishingSituation.exists_subset_invertibleCurveDegree_conormalOnComponent_pos`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/ConormalDegreePositive.lean, line 710](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/ConormalDegreePositive.lean#L710). The attribute's comment: “the precise clause: in Situation 0AX8 with X normal, for a nonempty effective Cartier divisor Z of X contained set theoretically in the special fibre, there is a component C\_i of the special fibre with C\_i contained in Z and deg(C\_\{Z/X}|\_\{C\_i}) > 0; the dimension-one observation following Situation 0AX8, the section built from Lemma 0AX9 and part (2) of Tag 0B40 are all proved in the library”.
 
 > In Situation [Stacks, Tag 0AX8] let `X` be normal and let `Z ⊆ X` be a nonempty effective
 > Cartier divisor contained set theoretically in the special fibre. Then there is a component `C_i`
@@ -246,7 +170,7 @@ theorem exists_subset_invertibleCurveDegree_conormalOnComponent_pos [IsNormal V.
         (conormalOnComponent V I i)
 ```
 
-**`AlgebraicGeometry.VanishingSituation.not_isTrivial_conormalSheaf_of_nonempty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/ConormalDegreePositive.lean, line 759](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/ConormalDegreePositive.lean#L759). The attribute's comment: “the first clause: in Situation 0AX8 with X normal, the conormal sheaf of a nonempty effective Cartier divisor Z of X contained set theoretically in the special fibre is not trivial”.
+**`AlgebraicGeometry.VanishingSituation.not_isTrivial_conormalSheaf_of_nonempty`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/ConormalDegreePositive.lean, line 762](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/ConormalDegreePositive.lean#L762). The attribute's comment: “the first clause: in Situation 0AX8 with X normal, the conormal sheaf of a nonempty effective Cartier divisor Z of X contained set theoretically in the special fibre is not trivial, derived from the precise clause since a trivial conormal sheaf restricts to a sheaf of degree zero on C\_i”.
 
 > In Situation [Stacks, Tag 0AX8] with `X` normal, the conormal sheaf of a nonempty effective
 > Cartier divisor `Z ⊆ X` contained set theoretically in the special fibre is not trivial. If it
@@ -266,33 +190,27 @@ theorem not_isTrivial_conormalSheaf_of_nonempty [IsNormal V.X] (I : V.X.IdealShe
 
 [Tag 0AXB](https://stacks.math.columbia.edu/tag/0AXB) in the Stacks Project.
 
-**`AlgebraicGeometry.VanishingSituation.hOne_restrict_puncturedSpectrum_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/PuncturedBaseCohomology.lean, line 256](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/PuncturedBaseCohomology.lean#L256). The attribute's comment: “injectivity, granted the geometric construction of the source's proof as the hypothesis hgeom -- the extension of Tag 0B3A attached to the difference of the two classes, its projective bundle with the section of Tag 0B3V, the second section over f^\{-1}(U) and the scheme-theoretic image of that section, the normalization of the image (finite because A is Nagata, Tags 035S and 035B) and the pullback to it of the first section as a nonempty effective Cartier divisor in the special fibre with trivial conormal sheaf, together with the three inputs that this library's form of Tag 0AXA consumes: the dimension-one observation following Situation 0AX8, part (2) of Tag 0B40 as VanishingSectionDegreePos, and the global section of the restricted conormal sheaf. The contradiction with Tag 0AXA is what is proved here”.
+**`AlgebraicGeometry.VanishingSituation.firstCohomologyRestriction_injective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Boundedness/LipDPuncturedRestriction.lean, line 478](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Boundedness/LipDPuncturedRestriction.lean#L478). The attribute's comment: “in Situation 0AX8 with X normal, the restriction map H^1(X, O\_X) -> H^1(f^\{-1}(U), O\_X) is injective; the source's Nagata hypothesis on A is not needed”.
 
-> **Stacks Project, Tag 0AXB.** In Situation 0AX8 with `X` normal and `A` Nagata, the
-> restriction map `H¹(X, 𝒪_X) ⟶ H¹(f⁻¹(U), 𝒪_X)` on the first cohomology of the structure sheaf is
-> injective.
+> **[Stacks, Tag 0AXB].** In Situation 0AX8 with `X` normal, the restriction map
+> `H¹(X, 𝒪_X) ⟶ H¹(f⁻¹(U), 𝒪_X)` on the first cohomology of the structure sheaf is injective.
 >
-> Two distinct classes with the same restriction are fed to the construction of the source's
-> proof, the hypothesis `hgeom`, which returns a nonempty effective Cartier divisor with trivial
-> conormal sheaf inside the special fibre of a normal modification of the base; and
-> `VanishingSituation.not_isTrivial_conormalSheaf`, which is [Stacks, Tag 0AXA], forbids such a
-> divisor.
+> The source assumes `A` Nagata as well; the argument below does not use it. A class in the
+> kernel is represented, through an injective resolution `I` of `𝒪_X`, by a cocycle `c ∈ Γ(X, I¹)`
+> which has primitives on `f⁻¹(U)` and on the members of an open cover of `X` (locality of
+> cohomology, [Stacks, Tag 01E3]); `exists_d_eq_of_local_primitives` glues them, using the polar
+> lemma in place of the projective-bundle construction of the source's proof.
 
 ```lean
-theorem hOne_restrict_puncturedSpectrum_injective [IsNormal V.X] (hA : IsNagataRing V.A)
-    (hgeom : V.TrivialConormalDivisorOfEqualRestriction) :
+theorem firstCohomologyRestriction_injective [IsNormal V.X] :
     Function.Injective V.firstCohomologyRestriction
 ```
-
-Declarations registered for the tag:
-
-- [`AlgebraicGeometry.VanishingSituation.firstCohomologyRestriction_injective`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Boundedness/LipDPuncturedRestriction.lean#L478), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/PuncturedRestrictionInjectiveTag.lean, line 28](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/PuncturedRestrictionInjectiveTag.lean#L28) (StacksFrontier): “in Situation 0AX8 with X normal, the restriction map H^1(X, O\_X) -> H^1(f^\{-1}(U), O\_X) is injective, for every A (Nagata or not)”.
 
 ## Tag 0AXC, a lemma
 
 [Tag 0AXC](https://stacks.math.columbia.edu/tag/0AXC) in the Stacks Project.
 
-**`AlgebraicGeometry.VanishingSituation.hom_residueFieldShift_derivedPushforwardStructureSheaf_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/DerivedPushforwardAffineIdentification.lean, line 129](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/DerivedPushforwardAffineIdentification.lean#L129). The attribute's comment: “the vanishing of Hom\_\{D(A)}(kappa[-1], Rf\_*O\_X) with Rf\_*O\_X the ACTUAL derived direct image: the restricted unbounded derived direct image quasiCoherentDerivedPushforward applied to the structure sheaf of X in degree zero, an object of D\_QCoh(O\_S), carried into D(A) by the inverse of the derived sheafification equivalence of Tag 06Z0 (DualizingDivisor.tildeEquivalence, the affine identification D(A) = D\_QCoh(O\_S) that the tag invokes). The vanishing is the base carrier hom\_residueFieldShift\_derivedGlobalSections\_eq\_zero transported along Leray over the base ring (Tag 0D5W, DualizingDivisor.lerayIso), which identifies that object with the A-linear derived global sections RGamma(X, O\_X). Stated for X normal without the Nagata hypothesis on A, which enters the source's proof only through Tag 0AXB and is not needed on the route taken here”.
+**`AlgebraicGeometry.VanishingSituation.hom_residueFieldShift_derivedPushforwardStructureSheaf_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/DerivedPushforwardAffineIdentification.lean, line 129](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/DerivedPushforwardAffineIdentification.lean#L129). The attribute's comment: “the vanishing of Hom\_\{D(A)}(kappa[-1], Rf\_*O\_X) with Rf\_*O\_X the ACTUAL derived direct image: the restricted unbounded derived direct image quasiCoherentDerivedPushforward applied to the structure sheaf of X in degree zero, an object of D\_QCoh(O\_S), carried into D(A) by the inverse of the derived sheafification equivalence of Tag 06Z0 (DualizingDivisor.tildeEquivalence, the affine identification D(A) = D\_QCoh(O\_S) that the tag invokes). The vanishing is the base carrier hom\_residueFieldShift\_derivedGlobalSections\_eq\_zero transported along Leray over the base ring (Tag 0D5W, DualizingDivisor.lerayIso), which identifies that object with the A-linear derived global sections RGamma(X, O\_X). Stated for X normal without the Nagata hypothesis on A, which enters the source's proof only through Tag 0AXB and is not needed on the route taken here”.
 
 > In Situation [Stacks, Tag 0AX8] with `X` normal, the group
 > `Hom_{D(A)}(κ[-1], Rf_*𝒪_X)` is zero: every morphism from `κ[-1]` to the derived direct image of
@@ -310,7 +228,7 @@ theorem hom_residueFieldShift_derivedPushforwardStructureSheaf_eq_zero [IsNormal
     (α : V.residueFieldShift ⟶ V.derivedPushforwardStructureSheaf) : α = 0
 ```
 
-**`AlgebraicGeometry.VanishingSituation.hom_residueFieldShift_derivedGlobalSections_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/DerivedPushforwardStructureSheaf.lean, line 575](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/DerivedPushforwardStructureSheaf.lean#L575). The attribute's comment: “the vanishing of Hom\_\{D(A)}(kappa[-1], Rf\_*O\_X), the pushforward being the derived global sections RGamma(X, O\_X), which isDerivedPushforwardStructureSheaf\_derivedGlobalSectionsStructureSheaf identifies with Rf\_*O\_X by its cohomology H^n(X, O\_X); stated for X normal without the Nagata hypothesis on A, which is not needed. For a nonzero a in the maximal ideal the triangle of 0 -> O\_X -> O\_X -> O\_X/aO\_X -> 0 has first morphism a times the identity, so a morphism out of kappa[-1] factors through RGamma(X, O\_X/aO\_X); in degree zero that is a global section of O\_X/aO\_X annihilated by the maximal ideal, hence supported in the special fibre, hence zero by eq\_zero\_of\_res\_preimagePuncturedSpectrum\_eq\_zero (Lipman's argument from Tag 0AX9, used in place of Tag 0AXB), and Hom\_A(m, A) = A over a Noetherian normal local domain of dimension at least two kills the morphism”.
+**`AlgebraicGeometry.VanishingSituation.hom_residueFieldShift_derivedGlobalSections_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/DerivedPushforwardStructureSheaf.lean, line 575](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/DerivedPushforwardStructureSheaf.lean#L575). The attribute's comment: “the vanishing of Hom\_\{D(A)}(kappa[-1], Rf\_*O\_X), the pushforward being the derived global sections RGamma(X, O\_X), which isDerivedPushforwardStructureSheaf\_derivedGlobalSectionsStructureSheaf identifies with Rf\_*O\_X by its cohomology H^n(X, O\_X); stated for X normal without the Nagata hypothesis on A, which is not needed. For a nonzero a in the maximal ideal the triangle of 0 -> O\_X -> O\_X -> O\_X/aO\_X -> 0 has first morphism a times the identity, so a morphism out of kappa[-1] factors through RGamma(X, O\_X/aO\_X); in degree zero that is a global section of O\_X/aO\_X annihilated by the maximal ideal, hence supported in the special fibre, hence zero by eq\_zero\_of\_res\_preimagePuncturedSpectrum\_eq\_zero (Lipman's argument from Tag 0AX9, used in place of Tag 0AXB), and Hom\_A(m, A) = A over a Noetherian normal local domain of dimension at least two kills the morphism”.
 
 > **Stacks Project, Tag 0AXC.** In Situation [Stacks, Tag 0AX8] with `X` normal, every
 > morphism `κ[-1] ⟶ RΓ(X, 𝒪_X)` in `D(A)` is zero; that is, the group `Hom_{D(A)}(κ[-1], Rf_*𝒪_X)`
@@ -341,7 +259,7 @@ theorem hom_residueFieldShift_derivedGlobalSections_eq_zero (V : VanishingSituat
 
 [Tag 0B4R](https://stacks.math.columbia.edu/tag/0B4R) in the Stacks Project.
 
-**`Stacks.Duality.IsDualizingModule`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DualizingModule.lean, line 52](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/DualizingModule.lean#L52). The attribute's comment: “dualizing\_module\_terminology”.
+**`Stacks.Duality.IsDualizingModule`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DualizingModule.lean, line 52](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/DualizingModule.lean#L52). The attribute's comment: “dualizing\_module\_terminology”.
 
 > A sheaf of modules on a locally Noetherian scheme is a **dualizing module** when it is
 > coherent and becomes a dualizing complex once placed in some cohomological degree.
@@ -350,7 +268,7 @@ theorem hom_residueFieldShift_derivedGlobalSections_eq_zero (V : VanishingSituat
 abbrev IsDualizingModule {X : Scheme.{u}} [IsLocallyNoetherian X] (ω : X.Modules) : Prop
 ```
 
-**`Stacks.Duality.IsDualizingRingModule`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DualizingModule.lean, line 59](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/DualizingModule.lean#L59). The attribute's comment: “dualizing\_module\_terminology”.
+**`Stacks.Duality.IsDualizingRingModule`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DualizingModule.lean, line 59](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/DualizingModule.lean#L59). The attribute's comment: “dualizing\_module\_terminology”.
 
 > A module over a Noetherian ring is a **dualizing module** when it is finite and becomes a
 > dualizing complex once placed in some cohomological degree.
@@ -360,7 +278,7 @@ abbrev IsDualizingRingModule (A : Type u) [CommRing A] [IsNoetherianRing A] (M :
     [AddCommGroup M] [Module A M] : Prop
 ```
 
-**`Stacks.Duality.exists_isDualizingComplex_iff_exists_isDualizingModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DualizingModuleExistence.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/DualizingModuleExistence.lean#L60). The attribute's comment: “the equivalence of (1) and (2)”.
+**`Stacks.Duality.exists_isDualizingComplex_iff_exists_isDualizingModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DualizingModuleExistence.lean, line 64](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/DualizingModuleExistence.lean#L64). The attribute's comment: “the equivalence of (1) and (2)”.
 
 > **Stacks Project, Remark 0B4R, the equivalence of (1) and (2).** An integral Noetherian
 > normal scheme of dimension at most two carries a dualizing complex if and only if it carries a
@@ -373,95 +291,138 @@ public theorem exists_isDualizingComplex_iff_exists_isDualizingModule (X : Schem
       ∃ ω : X.Modules, IsDualizingModule ω
 ```
 
+**`Stacks.Duality.isDualizingModule_iff_forall_isDualizingComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DualizingModuleNormalModification.lean, line 90](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/DualizingModuleNormalModification.lean#L90). The attribute's comment: “in (2), the integer n can be any integer”.
+
+> **Stacks Project, Remark 0B4R, "where `n` can be any integer".** A sheaf of modules is a
+> dualizing module if and only if it is coherent and is a dualizing complex placed in *every*
+> cohomological degree: placing it in degree `n` is a shift of placing it in degree `m`.
+
+```lean
+theorem isDualizingModule_iff_forall_isDualizingComplex {X : Scheme.{u}} [IsLocallyNoetherian X]
+    (ω : X.Modules) :
+    IsDualizingModule ω ↔ ω.IsCoherent ∧
+      ∀ n : ℤ, IsDualizingComplex ((DerivedCategory.singleFunctor X.Modules n).obj ω)
+```
+
+**`Stacks.Duality.isDualizingRingModule_iff_forall_isDualizingComplex`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DualizingModuleNormalModification.lean, line 120](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/DualizingModuleNormalModification.lean#L120). The attribute's comment: “in (2) over a Noetherian ring, the integer n can be any integer”.
+
+> **Stacks Project, Remark 0B4R, "where `n` can be any integer", over a ring.** A module over a
+> Noetherian ring is a dualizing module if and only if it is finite and is a dualizing complex
+> placed in every cohomological degree.
+
+```lean
+theorem isDualizingRingModule_iff_forall_isDualizingComplex (A : Type u) [CommRing A]
+    [IsNoetherianRing A] (M : Type v) [AddCommGroup M] [Module A M] :
+    IsDualizingRingModule A M ↔ Module.Finite A M ∧
+      ∀ n : ℤ, Dualizing.IsDualizingComplex (A := A)
+        ((DerivedCategory.singleFunctor (ModuleCat.{v} A) n).obj (ModuleCat.of A M))
+```
+
+**`Stacks.Duality.exists_isDualizingComplex_iff_exists_isDualizingRingModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DualizingModuleNormalModification.lean, line 136](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/DualizingModuleNormalModification.lean#L136). The attribute's comment: “the equivalence of (1) and (2) for a Noetherian normal local domain of dimension 2”.
+
+> **Stacks Project, Remark 0B4R, for a Noetherian normal local domain of dimension two.** Such
+> a ring `A` has a dualizing complex if and only if it has a dualizing module, with complexes and
+> modules in any universe `max u v` containing `A`. It is Cohen–Macaulay, being normal of dimension
+> two, so by [Stacks, Tag 0AWS] a dualizing complex has its cohomology in a single degree and is
+> that cohomology module placed there.
+
+```lean
+theorem exists_isDualizingComplex_iff_exists_isDualizingRingModule (A : Type u) [CommRing A]
+    [IsLocalRing A] [IsNoetherianRing A] [IsNormalDomain A] (hA : ringKrullDim A = 2) :
+    (∃ K : DerivedCategory (ModuleCat.{max u v} A), Dualizing.IsDualizingComplex K) ↔
+      ∃ (M : Type (max u v)) (_ : AddCommGroup M) (_ : Module A M),
+        IsDualizingRingModule A M
+```
+
+**`Stacks.Duality.exists_isDualizingModule_of_isModification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DualizingModuleNormalModification.lean, line 268](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/DualizingModuleNormalModification.lean#L268). The attribute's comment: “if A has a dualizing module, so does every normal modification X of Spec(A)”.
+
+> **Stacks Project, Remark 0B4R: a normal modification inherits a dualizing module.** Let `A`
+> be a Noetherian normal local domain of dimension two which has a dualizing module, that is,
+> `Spec(A)` has one, and let `f : X ⟶ Spec(A)` be a modification with `X` normal. Then `X` has a
+> dualizing module: by [Stacks, Tag 0AWI] the twisted inverse image of the normalized dualizing
+> complex of `Spec(A)` is a dualizing complex on `X`, and its cohomology in degree `-2` is a
+> dualizing module.
+
+```lean
+theorem exists_isDualizingModule_of_isModification (hA2 : ringKrullDim A = 2)
+    (hA : ∃ ωA : (Spec (.of A)).Modules, IsDualizingModule ωA)
+    {X : Scheme.{u}} (f : X ⟶ Spec (.of A)) (hf : IsModification f) [IsNormal X] :
+    haveI : IsProper f := hf.isProper
+    letI : IsLocallyNoetherian X := LocallyOfFiniteType.isLocallyNoetherian f
+    ∃ ωX : X.Modules, IsDualizingModule ωX
+```
+
+**`Stacks.Duality.exists_normalized_isDualizingModule_of_isModification`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/DualizingModuleNormalModification.lean, line 363](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/DualizingModuleNormalModification.lean#L363). The attribute's comment: “for every dualizing module omega\_A of Spec(A), omega\_A[2] is normalized and the dualizing module omega\_X of X normalized relative to omega\_A exists: f^!(omega\_A) = omega\_X in degree zero”.
+
+> **Stacks Project, Remark 0B4R: the dualizing module of `X` normalized relative to `ω_A`.**
+> Let `A` be a Noetherian normal local domain of dimension two, `ω_A` a dualizing module of
+> `Spec(A)`, and `f : X ⟶ Spec(A)` a modification with `X` normal. Then
+>
+> * `ω_A[2]` is the normalized dualizing complex of `Spec(A)`: it is modelled on `Spec(A)` by a
+>   normalized dualizing complex over `Γ(Spec(A), ⊤)`, and
+> * there is a dualizing module `ω_X` of `X` with `f^!(ω_A[0]) ≅ ω_X[0]`.
+>
+> As `f^!` commutes with shifts, the last isomorphism says that `ω_X[2]` is the dualizing complex
+> of `X` normalized relative to `ω_A[2]`, which is the convention fixed by the remark
+> ([Stacks, Section 0AU5]). The statement is for every dualizing module `ω_A` of `Spec(A)`.
+
+```lean
+theorem exists_normalized_isDualizingModule_of_isModification (hA2 : ringKrullDim A = 2)
+    (ωA : (Spec (.of A)).Modules) (hωA : IsDualizingModule ωA)
+    {X : Scheme.{u}} (f : X ⟶ Spec (.of A)) (hf : IsModification f) [IsNormal X] :
+    haveI : IsProper f := hf.isProper
+    letI : IsLocallyNoetherian X := LocallyOfFiniteType.isLocallyNoetherian f
+    letI := isNoetherianRing_globalSections_spec A
+    letI := isLocalRing_globalSections_spec A
+    haveI : ωA.IsCoherent := hωA.1
+    (∃ ω : DerivedCategory (ModuleCat.{u} Γ(Spec (.of A), ⊤)),
+      Dualizing.IsNormalizedDualizingComplex.{u, u} ω ∧
+        IsTildeModelOnAnyModel ((DerivedCategory.singleFunctor _ (-2)).obj ωA) ⊤
+          (isAffineOpen_top _) ω) ∧
+    ∃ ωX : X.Modules, IsDualizingModule ωX ∧
+      Nonempty (((twistedInverseImage f
+          (isQuasicoherent_homology_derivedPushforward_of_qcqs f)).obj
+        (singleQuasiCoherent ωA (isQuasicoherent_of_isCoherent ωA) 0)).obj ≅
+          (DerivedCategory.singleFunctor X.Modules 0).obj ωX)
+```
+
 ## Tag 0AXD, a proposition
 
 [Tag 0AXD](https://stacks.math.columbia.edu/tag/0AXD) in the Stacks Project.
 
-**`AlgebraicGeometry.VanishingSituation.isZero_firstCohomology_dualizingModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/GrauertRiemenschneider.lean, line 194](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/GrauertRiemenschneider.lean#L194). The attribute's comment: “the conclusion R^1 f\_* omega\_X = 0 read over the affine base S = Spec(A) as the vanishing of H^1(X, omega\_X) as an A-module (Tag 01XJ), granted two inputs of the source's proof as named hypotheses: hfin, the finiteness of H^1(X, omega\_X) over A, which is coherence of the higher direct image of a coherent module under a proper morphism (Tag 02O5) and is used by the source where it produces a nonzero map R^1 f\_* omega\_X -> kappa; and hvanish, the source's duality step, in which RHom\_A(-, omega\_A^bullet) carries a nonzero alpha : Rf\_* omega\_X^bullet -> kappa[1] to a nonzero beta : kappa[-1] -> Rf\_* O\_X and contradicts Tag 0AXC, using RHom\_A(kappa[1], omega\_A^bullet) = kappa[-1] for a normalized omega\_A^bullet (Tag 0A7M), RHom\_A(Rf\_* omega\_X^bullet, omega\_A^bullet) = Rf\_* O\_X (Tags 0GEW, 0AA3) and omega\_X^bullet = omega\_X[2] (Tags 0B3D, 0AWT, 0AWI), carried as the vanishing of every A-linear map H^1(X, omega\_X) -> kappa, which also subsumes the source's normalization of omega\_X with respect to omega\_A (Tag 0B4R), not expressible without f^!; what is proved is the passage from those two to the conclusion, by Nakayama”.
+**`AlgebraicGeometry.VanishingSituation.isZero_firstCohomology_of_properRightAdjoint_isoShiftTwo`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/GrauertRiemenschneiderUnconditional.lean, line 478](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/GrauertRiemenschneiderUnconditional.lean#L478). The attribute's comment: “the conclusion R^1 f\_* omega\_X = 0 read over the affine base S = Spec(A) as the vanishing of H^1(X, omega\_X) as an A-module, for every normalized dualizing complex omega\_A^bullet over A and every O\_X-module omega\_X with f^times(omega\_A^bullet-tilde) = omega\_X[2], which is the dualizing module of Remark 0B4R normalized with respect to omega\_A^bullet; the hypotheses are the Proposition's own: the Situation of Tag 0AX8, X normal, A Nagata, and the dualizing complex omega\_A^bullet, taken normalized as the source does (Tag 0A7M). The source's proof is carried out in full: omega\_X^bullet = omega\_X[2] (Tags 0B3D, 0AWT, 0AWI), a nonzero R^1 f\_* omega\_X -> kappa gives a nonzero alpha : Rf\_* omega\_X^bullet -> kappa[1], and RHom\_A(-, omega\_A^bullet) carries it to a nonzero beta : kappa[-1] -> Rf\_* O\_X (Tags 0A7M, 0GEW, 0AA3), contradicting Tag 0AXC”.
 
-> **Stacks Project, Tag 0AXD** (Grauert-Riemenschneider). In the vanishing situation of
-> [Stacks, Tag 0AX8] with `X` normal and `A` Nagata carrying a dualizing complex `ω_A^•`, the
-> first cohomology of the dualizing module `ω_X` of `X` vanishes; over the affine base
-> `S = Spec(A)` this is `R¹f_*ω_X = 0`.
+> **Stacks Project, Tag 0AXD** (Grauert-Riemenschneider), for every normalized `ω_A^•` and
+> every `ω_X` normalized with respect to it. Let `(A, 𝔪, κ)` be a two-dimensional Noetherian
+> normal local domain, `f : X ⟶ S = Spec(A)` a modification with `X` normal, and suppose `A` is
+> Nagata. Let `ω_A^•` be a normalized dualizing complex over `A`, and let `ω_X` be an
+> `𝒪_X`-module with `f^×(ω̃_A^•) ≅ ω_X[2]` — the dualizing module of [Stacks, Remark 0B4R],
+> normalized with respect to `ω_A^•`. Then `H¹(X, ω_X) = 0`, which over the affine base `S` is
+> `R¹f_*ω_X = 0`.
 >
-> The two hypotheses carried from the source's proof are `hfin`, the finiteness of `H¹(X, ω_X)`
-> over `A`, which comes from coherence of the higher direct images under the proper morphism `f`
-> ([Stacks, Tag 02O5]) and is what lets a nonzero module be detected by a map to `κ`; and
-> `hvanish`, the outcome of the source's duality step, in which a nonzero `R¹f_*ω_X → κ` is
-> dualized by `RHom_A(-, ω_A^•)` into a nonzero `κ[-1] → Rf_*𝒪_X` and contradicts
-> [Stacks, Tag 0AXC]. The normalization of `ω_X` with respect to `ω_A` is used by the source only
-> inside that step and is subsumed in `hvanish`.
-
-```lean
-theorem isZero_firstCohomology_dualizingModule [IsNormal V.X] [IsLocallyNoetherian V.X]
-    (hnag : IsNagataRing V.A)
-    (ωA : DerivedCategory (ModuleCat.{u} V.A)) (hωA : Dualizing.IsDualizingComplex ωA)
-    (ω : V.X.Modules) (hω : Stacks.Duality.IsDualizingModule ω)
-    (hfin : Module.Finite V.A (firstCohomologySheafAsBaseModule V.X V.f ω))
-    (hvanish : ∀ φ : firstCohomologySheafAsBaseModule V.X V.f ω →ₗ[V.A]
-      IsLocalRing.ResidueField V.A, φ = 0) :
-    IsZero (firstCohomologySheafAsBaseModule V.X V.f ω)
-```
-
-**`AlgebraicGeometry.VanishingSituation.isZero_firstCohomology_normalizedDualizingModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/GrauertRiemenschneiderUnconditional.lean, line 414](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ResolutionOfSurfaces/Vanishing/GrauertRiemenschneiderUnconditional.lean#L414). The attribute's comment: “the conclusion R^1 f\_* omega\_X = 0 of Proposition 54.7.8, read over the affine base S = Spec(A) as the vanishing of H^1(X, omega\_X) as an A-module, with no hypothesis beyond the Proposition's own: the Situation of Tag 0AX8, X normal, A Nagata, and A having a dualizing complex in the form of the bare existential. The dualizing module omega\_X of Remark 0B4R is exhibited together with the normalization f^times(omega\_A^bullet-tilde) = omega\_X[2] that singles it out, a dualizing complex being determined only up to shift and twist. The source's proof is carried out in full: omega\_X^bullet = omega\_X[2] (Tags 0B3D, 0AWT, 0AWI), a nonzero R^1 f\_* omega\_X -> kappa gives a nonzero alpha : Rf\_* omega\_X^bullet -> kappa[1], and RHom\_A(-, omega\_A^bullet) carries it to a nonzero beta : kappa[-1] -> Rf\_* O\_X, using RHom\_A(kappa[1], omega\_A^bullet) = kappa[-1] for a normalized omega\_A^bullet (Tag 0A7M) and RHom\_A(Rf\_* omega\_X^bullet, omega\_A^bullet) = Rf\_* O\_X (Tags 0GEW, 0AA3), contradicting Tag 0AXC; Nakayama then gives the vanishing”.
-
-> **Stacks Project, Tag 0AXD** (Grauert-Riemenschneider). Let `(A, 𝔪, κ)` be a
-> two-dimensional Noetherian normal local domain, `f : X ⟶ S = Spec(A)` a modification with `X`
-> normal, and suppose `A` is Nagata and has a dualizing complex. Then there are a normalized
-> dualizing complex `ω_A^•` over `A` and a dualizing module `ω_X` on `X` normalized with respect to
-> it — that is, with `f^×(ω̃_A^•) ≅ ω_X[2]`, the dualizing module of [Stacks, Remark 0B4R] — whose
-> first cohomology vanishes: `H¹(X, ω_X) = 0`, which over the affine base `S` is `R¹f_*ω_X = 0`.
+> The source's hypothesis that `A` has a dualizing complex is carried by `ω_A^•` itself, which the
+> source may and does take normalized ([Stacks, Tag 0A7M]). That `ω_X` is coherent and a dualizing
+> module is not assumed: the isomorphism `f^×(ω̃_A^•) ≅ ω_X[2]` determines `ω_X` up to isomorphism,
+> and `AlgebraicGeometry.VanishingSituation.exists_isDualizingModule_properRightAdjoint_isoShiftTwo`
+> supplies a coherent such module, which is a dualizing module because `f^×` preserves dualizing
+> complexes ([Stacks, Tag 0AA3]).
 >
-> The dualizing module is exhibited rather than quantified over, because that is what the source's
-> `ω_X` is: a dualizing complex on `X` is determined only up to shift and twist by an invertible
-> object, and the normalization `f^×(ω̃_A^•) ≅ ω_X[2]` is what picks out the one the statement is
-> about.
->
-> The proof is the source's, assembled from
-> `AlgebraicGeometry.VanishingSituation.isZero_firstCohomology_dualizingModule_of_isTildeDualizing`:
-> `ω_A^•` is normalized after one shift ([Stacks, Tag 0A7L] through [Stacks, Tag 0AX1]), its
-> derived sheafification is a dualizing complex on `S`
-> (`AlgebraicGeometry.VanishingSituation.isDualizingComplex_derivedTilde_base`), and `f^×` of it is
-> a coherent module in degree `-2`
-> (`AlgebraicGeometry.VanishingSituation.exists_isDualizingModule_properRightAdjoint_isoShiftTwo`),
-> which is a dualizing module because `f^×` preserves dualizing complexes ([Stacks, Tag 0AA3]).
->
-> **A note on dependency reporting.** A tool that collects axioms from the public oleans can
-> report a spurious placeholder dependency for this theorem; this is not a defect of the proof,
-> and it affects every declaration in this part of the library.
->
-> `Duality/DerivedTilde/AffinePullbackComparison.lean` reaches its key input through `import all`,
-> and that input — `CochainComplex.DerivedExtensionScalars.isLeftDerivedFunctor_of_isIso_on_kFlat`
-> of `Homology/Tor/DerivedExtensionScalars.lean` — is `private`. A private declaration of another
-> module has no entry in Lean's exported-dependency extension and no body in the public olean, so
-> such a collector sees only a stub and records a placeholder. Everything above it inherits that
-> reading, which is the whole apparent chain through 08DW, 08EU, 0GEW and the duality transport.
-> Read in its own module the private lemma is clean, and so is every constant in the statements
-> and proofs of the two theorems that consume it.
->
-> The proof is complete: no proof in `StacksCore/` or `StacksFrontier/` is left open, Mathlib and every
-> dependency are complete, and no elaborator in this repository emits a placeholder. So no library
-> declaration can carry one at all.
->
-> The spurious report disappears with a three-line change in that one base file: import `Homology/Tor/DerivedChangeOfRings`
-> publicly instead of `import all` on `DerivedExtensionScalars`, and call the already-public twin
-> `CochainComplex.DerivedTensor.KFlatDerived.isLeftDerivedFunctor_of_isIso_on_kFlat`, which has the
-> same signature and whose body lives in its own module. It is mathematically a no-op.
+> The vanishing for that module is the source's argument,
+> `AlgebraicGeometry.VanishingSituation.isZero_firstCohomology_dualizingModule_of_isTildeDualizing`;
+> it passes to `ω_X` along the isomorphism `ω_X ≅ H⁰(ω_X[2][-2])` of the two modules.
 
 ```lean
-theorem isZero_firstCohomology_normalizedDualizingModule (V : VanishingSituation.{u})
+theorem isZero_firstCohomology_of_properRightAdjoint_isoShiftTwo (V : VanishingSituation.{u})
     [IsNormal V.X]
     (hnag : IsNagataRing V.A)
-    (hdual : ∃ K : DerivedCategory (ModuleCat.{u} V.A), Dualizing.IsDualizingComplex K) :
+    (ωA : DerivedCategory (ModuleCat.{u} V.A))
+    (hωA : Dualizing.IsNormalizedDualizingComplex.{u, u} ωA) (ωX : V.X.Modules) :
     letI : IsProper V.f := V.modification.isProper
     letI : CompactSpace V.X := QuasiCompact.compactSpace_of_compactSpace V.f
     letI : QuasiSeparatedSpace V.X := quasiSeparatedSpace_of_quasiSeparated V.f
-    letI : IsLocallyNoetherian V.X := LocallyOfFiniteType.isLocallyNoetherian V.f
-    ∃ (ωA : DerivedCategory (ModuleCat.{u} V.A)) (ωX : V.X.Modules),
-      Dualizing.IsNormalizedDualizingComplex.{u, u} ωA ∧ IsDualizingModule ωX ∧
-      Nonempty (((properRightAdjoint V.f).obj
+    Nonempty (((properRightAdjoint V.f).obj
           ((derivedTilde (CommRingCat.of V.A)).obj ωA)).obj ≅
-        ((DerivedCategory.singleFunctor V.X.Modules 0).obj ωX)⟦(2 : ℤ)⟧) ∧
+        ((DerivedCategory.singleFunctor V.X.Modules 0).obj ωX)⟦(2 : ℤ)⟧) →
       IsZero (firstCohomologySheafAsBaseModule V.X V.f ωX)
 ```
 
@@ -472,4 +433,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 54.7, Tag 0AX7](https://stacks.math.columbia.edu/tag/0AX7)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

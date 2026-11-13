@@ -1,6 +1,6 @@
 # 38 More on Flatness
 
-Chapter 38 of the Stacks Project, *More on Flatness*, [Tag 057M](https://stacks.math.columbia.edu/tag/057M): the 43 sections of its 44 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 292 tags are carried by 640 declarations of the repository (all in StacksFrontier) and 10 registered declarations.
+Chapter 38 of the Stacks Project, *More on Flatness*, [Tag 057M](https://stacks.math.columbia.edu/tag/057M): the 43 sections of its 44 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 292 tags are carried by 621 declarations of the repository (all in StacksFrontier) and 10 registered declarations.
 
 ## [38.2 Lemmas on étale… to 38.18 A criterion for purity](part-01/README.md)
 

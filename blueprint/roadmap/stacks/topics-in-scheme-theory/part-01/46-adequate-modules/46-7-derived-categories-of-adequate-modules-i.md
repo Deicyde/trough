@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: Stacks.Adequate.BigSite.isLocalization_mapDerivedCategory_restrictModuleQCoh, Stacks.Adequate.BigSite.isLocalization_mapDerivedCategoryPlus_restrictModuleQCoh, Stacks.Adequate.BigSite.isLocalization_mapDerivedCategoryMinus_restrictModuleQCoh, Stacks.Adequate.BigSite.isLocalization_mapDerivedCategoryBounded_restrictModuleQCoh, Stacks.Adequate.BigSite.isLocalization_mapHomotopyCategoryPlus_associatedModuleAdeq_affine, Stacks.Adequate.exists_adequator, Stacks.Adequate.adequateComparisonSquare, Stacks.Adequate.adequateDiagramSquare
+lean: Stacks.Adequate.BigSite.isLocalization_mapDerivedCategory_restrictModuleQCoh, Stacks.Adequate.BigSite.isLocalization_mapDerivedCategoryPlus_restrictModuleQCoh, Stacks.Adequate.BigSite.isLocalization_mapDerivedCategoryMinus_restrictModuleQCoh, Stacks.Adequate.BigSite.isLocalization_mapDerivedCategoryBounded_restrictModuleQCoh, Stacks.Adequate.BigSite.isLocalization_associatedModuleAdeq_universalQuasiIso, Stacks.Adequate.exists_adequator, Stacks.Adequate.adequateComparisonSquare, Stacks.Adequate.adequateDiagramSquare
 statement: formalized
 proof: formalized
 ---
 
 # 46.7 Derived categories of adequate modules, I
 
-Section 46.7 of the Stacks Project, [Tag 06VS](https://stacks.math.columbia.edu/tag/06VS). 7 tags here are carried by 19 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 46.7 of the Stacks Project, [Tag 06VS](https://stacks.math.columbia.edu/tag/06VS). 7 tags here are carried by 19 declarations of the repository (all in StacksFrontier) and 1 registered declaration, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 06ZQ, a lemma
 
 [Tag 06ZQ](https://stacks.math.columbia.edu/tag/06ZQ) in the Stacks Project.
 
-**`Stacks.Adequate.BigSite.isLocalization_mapDerivedCategory_restrictModuleQCoh`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/Parasitic.lean, line 583](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/Parasitic.lean#L583). The attribute's comment: “the unbounded derived quotient `D(Adeq(𝒪))/D_𝒞(Adeq(𝒪)) = D(QCoh(𝒪_S))`”.
+**`Stacks.Adequate.BigSite.isLocalization_mapDerivedCategory_restrictModuleQCoh`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/Parasitic.lean, line 583](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/Parasitic.lean#L583). The attribute's comment: “the unbounded derived quotient `D(Adeq(𝒪))/D_𝒞(Adeq(𝒪)) = D(QCoh(𝒪_S))`”.
 
 > **[Stacks, Tag 06ZQ].** `D(Adeq(𝒪))/D_𝒞(Adeq(𝒪)) = D(QCoh(𝒪_S))`: the functor
 > `D(v) : D(Adeq(𝒪)) ⥤ D(QCoh(𝒪_S))` is a localization functor for the morphisms whose cone has
@@ -33,7 +33,7 @@ public theorem BigSite.isLocalization_mapDerivedCategory_restrictModuleQCoh
           ((DerivedCategory.homologyFunctor (adequate.{u, u} B).FullSubcategory n).obj X)))
 ```
 
-**`Stacks.Adequate.BigSite.isLocalization_mapDerivedCategoryPlus_restrictModuleQCoh`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/ParasiticDerivedQuotient.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/ParasiticDerivedQuotient.lean#L80). The attribute's comment: “bounded below version `D⁺(Adeq(𝒪))/D⁺_𝒞(Adeq(𝒪)) = D⁺(QCoh(𝒪_S))`”.
+**`Stacks.Adequate.BigSite.isLocalization_mapDerivedCategoryPlus_restrictModuleQCoh`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/ParasiticDerivedQuotient.lean, line 80](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/ParasiticDerivedQuotient.lean#L80). The attribute's comment: “bounded below version `D⁺(Adeq(𝒪))/D⁺_𝒞(Adeq(𝒪)) = D⁺(QCoh(𝒪_S))`”.
 
 > **[Stacks, Tag 06ZQ], bounded below version.**
 > `D⁺(Adeq(𝒪))/D⁺_𝒞(Adeq(𝒪)) = D⁺(QCoh(𝒪_S))`: the functor
@@ -47,7 +47,7 @@ public theorem BigSite.isLocalization_mapDerivedCategoryPlus_restrictModuleQCoh 
       ((derivedCategoryB B.parasiticAdequate).inverseImage DerivedCategory.Plus.ι).trW
 ```
 
-**`Stacks.Adequate.BigSite.isLocalization_mapDerivedCategoryMinus_restrictModuleQCoh`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/ParasiticDerivedQuotient.lean, line 92](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/ParasiticDerivedQuotient.lean#L92). The attribute's comment: “bounded above version `D⁻(Adeq(𝒪))/D⁻_𝒞(Adeq(𝒪)) = D⁻(QCoh(𝒪_S))`”.
+**`Stacks.Adequate.BigSite.isLocalization_mapDerivedCategoryMinus_restrictModuleQCoh`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/ParasiticDerivedQuotient.lean, line 92](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/ParasiticDerivedQuotient.lean#L92). The attribute's comment: “bounded above version `D⁻(Adeq(𝒪))/D⁻_𝒞(Adeq(𝒪)) = D⁻(QCoh(𝒪_S))`”.
 
 > **[Stacks, Tag 06ZQ], bounded above version.**
 > `D⁻(Adeq(𝒪))/D⁻_𝒞(Adeq(𝒪)) = D⁻(QCoh(𝒪_S))`: the functor
@@ -61,7 +61,7 @@ public theorem BigSite.isLocalization_mapDerivedCategoryMinus_restrictModuleQCoh
       ((derivedCategoryB B.parasiticAdequate).inverseImage DerivedCategory.Minus.ι).trW
 ```
 
-**`Stacks.Adequate.BigSite.isLocalization_mapDerivedCategoryBounded_restrictModuleQCoh`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/ParasiticDerivedQuotient.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/ParasiticDerivedQuotient.lean#L104). The attribute's comment: “bounded version `Dᵇ(Adeq(𝒪))/Dᵇ_𝒞(Adeq(𝒪)) = Dᵇ(QCoh(𝒪_S))`”.
+**`Stacks.Adequate.BigSite.isLocalization_mapDerivedCategoryBounded_restrictModuleQCoh`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/ParasiticDerivedQuotient.lean, line 104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/ParasiticDerivedQuotient.lean#L104). The attribute's comment: “bounded version `Dᵇ(Adeq(𝒪))/Dᵇ_𝒞(Adeq(𝒪)) = Dᵇ(QCoh(𝒪_S))`”.
 
 > **[Stacks, Tag 06ZQ], bounded version.**
 > `Dᵇ(Adeq(𝒪))/Dᵇ_𝒞(Adeq(𝒪)) = Dᵇ(QCoh(𝒪_S))`: the functor
@@ -79,22 +79,27 @@ public theorem BigSite.isLocalization_mapDerivedCategoryBounded_restrictModuleQC
 
 [Tag 06ZR](https://stacks.math.columbia.edu/tag/06ZR) in the Stacks Project.
 
-**`Stacks.Adequate.BigSite.isLocalization_mapHomotopyCategoryPlus_associatedModuleAdeq_affine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/DerivedLocalizationAffineSections.lean, line 565](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/DerivedLocalizationAffineSections.lean#L565). The attribute's comment: “over an affine base `U = Spec A`, with no hypothesis: `D⁺(Adeq(𝒪))`, taken as the source does as the localization of `K⁺(Adeq(𝒪))` at the quasi-isomorphisms, is the localization of `K⁺(QCoh(𝒪_U))` at the universal quasi-isomorphisms along `u`. `(Sch/U)_fppf` is rendered as a chosen big fppf site containing `Spec A`”.
+**`Stacks.Adequate.BigSite.isLocalization_associatedModuleAdeq_universalQuasiIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/DerivedLocalizationAllTopologies.lean, line 193](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/DerivedLocalizationAllTopologies.lean#L193). The attribute's comment: “`D⁺(Adeq(𝒪))`, taken as the source does as the localization of `K⁺(Adeq(𝒪))` at the quasi-isomorphisms, is the localization of `K⁺(QCoh(𝒪_U))` at the universal quasi-isomorphisms along `u`, for `U = Spec A` and `(Sch/U)_τ` a chosen big `τ`-site over `U` for each of the five topologies `τ`”.
 
-> **[Stacks, Tag 06ZR] over an affine base, unconditionally.** Over an affine scheme
-> `U = Spec A` the bounded below derived category `D⁺(Adeq(𝒪))` is the localization of
-> `K⁺(QCoh(𝒪_U))` at the universal quasi-isomorphisms.
+> **[Stacks, Tag 06ZR].** Over an affine scheme `U = Spec A`, on a chosen big `τ`-site over
+> `U` for any of the five topologies `τ ∈ {Zar, étale, smooth, syntomic, fppf}`, the bounded below
+> derived category `D⁺(Adeq(𝒪))` is the localization of `K⁺(QCoh(𝒪_U))` at the universal
+> quasi-isomorphisms: the functor `K⁺(QCoh(𝒪_U)) ⥤ D⁺(Adeq(𝒪))` induced by `u` is a localization
+> functor for them.
 >
-> This is `BigSite.isLocalization_mapHomotopyCategoryPlus_associatedModuleAdeq_of_allAlgebras` with
-> its single hypothesis discharged by
-> `Stacks.Adequate.BigSite.universallyAcyclic_eq_inverseImage_qcohAllAlgebraSections`.
+> This is
+> `Stacks.Adequate.BigSite.isLocalization_mapHomotopyCategoryPlus_associatedModuleAdeq_of_huniv`
+> — the source's argument, from the embedding of every adequate module into a module in the image
+> of `u` ([Stacks, Tag 06VK]) and [Stacks, Tag 05T6] — with its input supplied by
+> `Stacks.Adequate.universalQuasiIso_eq_inverseImage_of_universallyAcyclic_eq` on
+> `Stacks.Adequate.BigSite.universallyAcyclic_eq_inverseImage_associatedModuleAdeq`.
 
 ```lean
-public theorem BigSite.isLocalization_mapHomotopyCategoryPlus_associatedModuleAdeq_affine :
-    (((BigSite.ofBigFppfSite B (Spec A) hS).associatedModuleAdeq).mapHomotopyCategoryPlus ⋙
+public theorem BigSite.isLocalization_associatedModuleAdeq_universalQuasiIso
+    (B : BigSite τ (Spec A)) :
+    (B.associatedModuleAdeq.mapHomotopyCategoryPlus ⋙
         MorphismProperty.Q (HomotopyCategory.Plus.quasiIso
-          (adequate.{u, u}
-            (BigSite.ofBigFppfSite B (Spec A) hS)).FullSubcategory)).IsLocalization
+          (adequate.{u, u} B).FullSubcategory)).IsLocalization
       (universalQuasiIso (Spec A))
 ```
 
@@ -102,7 +107,7 @@ public theorem BigSite.isLocalization_mapHomotopyCategoryPlus_associatedModuleAd
 
 [Tag 06ZS](https://stacks.math.columbia.edu/tag/06ZS) in the Stacks Project.
 
-**`Stacks.Adequate.exists_adequator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/Adequator.lean, line 220](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/Adequator.lean#L220).
+**`Stacks.Adequate.exists_adequator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/Adequator.lean, line 220](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/Adequator.lean#L220).
 
 > **[Stacks, Tag 06ZS].** Let `U = Spec A` be an affine scheme. The inclusion functor
 > `Adeq(𝒪) → Mod((Sch/U)_τ, 𝒪)` has a right adjoint, and the adjunction mapping `A(𝓕) → 𝓕` is
@@ -122,7 +127,7 @@ public theorem exists_adequator :
 
 [Tag 06ZT](https://stacks.math.columbia.edu/tag/06ZT) in the Stacks Project.
 
-**`Stacks.Adequate.adequateComparisonSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/Adequator.lean, line 150](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/Adequator.lean#L150). The attribute's comment: “the commutativity of the square, with the comparison functor of Tag 06ZJ as its left vertical arrow; that it is an identification is `Stacks.Adequate.isEquivalence_adequateComparison`”.
+**`Stacks.Adequate.adequateComparisonSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/Adequator.lean, line 150](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/Adequator.lean#L150). The attribute's comment: “the commutativity of the square, with the comparison functor of Tag 06ZJ as its left vertical arrow; that it is an identification is `Stacks.Adequate.isEquivalence_adequateComparison`”.
 
 > **[Stacks, Tag 06ZT]**, the commutative square in the proof of [Stacks, Tag 06ZS]: the
 > inclusion of `Adeq(𝒪)` followed by the affine-section functor into the module-valued functors on
@@ -136,7 +141,7 @@ public noncomputable def adequateComparisonSquare :
       (adequate.{u, max u m} B).ι ⋙ affineSectionsFunctor.{u, max u m} B A (𝟙 (Spec A))
 ```
 
-**`Stacks.Adequate.adequateDiagramSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/AdequatorDiagram.lean, line 96](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/AdequatorDiagram.lean#L96). The attribute's comment: “the commutativity of the diagram, with k, j and the right vertical arrow written out, at an arbitrary module universe”.
+**`Stacks.Adequate.adequateDiagramSquare`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/AdequatorDiagram.lean, line 96](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/AdequatorDiagram.lean#L96). The attribute's comment: “the commutativity of the diagram, with k, j and the right vertical arrow written out, at an arbitrary module universe”.
 
 > **[Stacks, Tag 06ZT], the commutativity of the diagram**, at an arbitrary module universe:
 > `k`, then the inclusion `j` of sheaves into presheaves, then the right vertical arrow, is the left
@@ -150,7 +155,7 @@ public noncomputable def adequateDiagramSquare :
       adequateComparison.{u, m} B ⋙ (adequateOn.{u, max u m} A (schemeSizeBelow B.cutoff)).ι
 ```
 
-**`Stacks.Adequate.adequateAffineDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/AdequatorDiagram.lean, line 128](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/AdequatorDiagram.lean#L128). The attribute's comment: “the whole diagram: both vertical arrows are equivalences, it commutes, k and j are fully faithful, and its middle category is modules on the affine objects of the site”.
+**`Stacks.Adequate.adequateAffineDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/AdequatorDiagram.lean, line 128](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/AdequatorDiagram.lean#L128). The attribute's comment: “the whole diagram: both vertical arrows are equivalences, it commutes, k and j are fully faithful, and its middle category is modules on the affine objects of the site”.
 
 > **[Stacks, Tag 06ZT], the whole diagram.** For `U = Spec A` affine, in the diagram
 > `Adeq(𝒪) --k--> Mod((Aff/U)_τ, 𝒪) --j--> PMod((Aff/U)_τ, 𝒪)` over `𝒜 --i--> 𝒫`:
@@ -188,13 +193,13 @@ public theorem adequateAffineDiagram :
 
 Declarations registered for the tag:
 
-- [`isEquivalence_adequateComparison`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=isEquivalence_adequateComparison#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/Adequator.lean, line 155](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/Adequator.lean#L155) (StacksFrontier): “the left vertical arrow of the square is an identification; the source reads it off Tag 06ZJ, and this is that tag”.
+- [`isEquivalence_adequateComparison`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=isEquivalence_adequateComparison#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/Adequator.lean, line 155](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/Adequator.lean#L155) (StacksFrontier): “the left vertical arrow of the square is an identification; the source reads it off Tag 06ZJ, and this is that tag”.
 
 ## Tag 06ZU, a lemma
 
 [Tag 06ZU](https://stacks.math.columbia.edu/tag/06ZU) in the Stacks Project.
 
-**`Stacks.Adequate.exactAt_mapHomologicalComplex_of_coreflection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/AdequatorVanishing.lean, line 177](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/AdequatorVanishing.lean#L177). The attribute's comment: “the homological step of the proof: exactness in positive degrees of a right adjoint applied to an injective resolution, from the Ext vanishing along a separating family; stated for an arbitrary adjunction”.
+**`Stacks.Adequate.exactAt_mapHomologicalComplex_of_coreflection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/AdequatorVanishing.lean, line 177](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/AdequatorVanishing.lean#L177). The attribute's comment: “the homological step of the proof: exactness in positive degrees of a right adjoint applied to an injective resolution, from the Ext vanishing along a separating family; stated for an arbitrary adjunction”.
 
 > **The homological core of [Stacks, Tag 06ZU].** Let `i ⊣ Q` be an adjunction with `i`
 > additive, let `G` be a fully faithful additive functor preserving injective objects which
@@ -214,7 +219,7 @@ public theorem exactAt_mapHomologicalComplex_of_coreflection [HasExt.{w} E]
     ((Q.mapHomologicalComplex (ComplexShape.up ℕ)).obj I.cocomplex).ExactAt n
 ```
 
-**`Stacks.Adequate.isZero_rightDerived_of_coreflection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/AdequatorVanishing.lean, line 234](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/AdequatorVanishing.lean#L234). The attribute's comment: “the same step read as the vanishing of the right derived functors of the right adjoint; stated for an arbitrary adjunction”.
+**`Stacks.Adequate.isZero_rightDerived_of_coreflection`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/AdequatorVanishing.lean, line 234](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/AdequatorVanishing.lean#L234). The attribute's comment: “the same step read as the vanishing of the right derived functors of the right adjoint; stated for an arbitrary adjunction”.
 
 > **The homological core of [Stacks, Tag 06ZU]**, read as the vanishing of a right derived
 > functor of the right adjoint: under the hypotheses of
@@ -232,7 +237,7 @@ public theorem isZero_rightDerived_of_coreflection [EnoughInjectives C] [HasExt.
     IsZero ((Q.rightDerived n).obj X)
 ```
 
-**`Stacks.Adequate.isZero_rightDerived_adequator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/AdequatorVanishing.lean, line 367](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/AdequatorVanishing.lean#L367). The attribute's comment: “the full statement, `R^p A(F) = 0` for every `p > 0` and every object of `Adeq(O)`, for the named adequator of Tag 06ZS. Assumed: that adequator's own inputs (`Q`, `E`, `adj` from Tags 06Z6 and 06ZJ over the algebras of the site, `hj` and `comm` from Tag 06ZT), right acyclicity of the affine-section functor (`hacyclic`, Tags 06YK and 06VM), the positive-degree Ext vanishing along a separating family (`hP` and `hExt`, Tag 06ZI), the three closure properties of Tag 06VQ (1) and `EnoughInjectives` for the sheaves of modules on the site. Preservation of injective objects by the affine-section functor is proved, through Tag 03FB on the affine subsite”.
+**`Stacks.Adequate.isZero_rightDerived_adequator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/AdequatorVanishing.lean, line 367](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/AdequatorVanishing.lean#L367). The attribute's comment: “the full statement, `R^p A(F) = 0` for every `p > 0` and every object of `Adeq(O)`, for the named adequator of Tag 06ZS. Assumed: that adequator's own inputs (`Q`, `E`, `adj` from Tags 06Z6 and 06ZJ over the algebras of the site, `hj` and `comm` from Tag 06ZT), right acyclicity of the affine-section functor (`hacyclic`, Tags 06YK and 06VM), the positive-degree Ext vanishing along a separating family (`hP` and `hExt`, Tag 06ZI), the three closure properties of Tag 06VQ (1) and `EnoughInjectives` for the sheaves of modules on the site. Preservation of injective objects by the affine-section functor is proved, through Tag 03FB on the affine subsite”.
 
 > **[Stacks, Tag 06ZU].** For `U = Spec A` affine, every object `𝓕` of `Adeq(𝒪)` and every
 > `p > 0`, the `p`-th right derived functor of the adequator of [Stacks, Tag 06ZS] vanishes at
@@ -252,7 +257,7 @@ public theorem isZero_rightDerived_adequator
     IsZero (((adequator.{u, max u m} B Q E).rightDerived p).obj F.obj)
 ```
 
-**`Stacks.Adequate.isZero_rightDerived_affineAdequator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/AdequatorVanishingUnconditional.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/AdequatorVanishingUnconditional.lean#L60).
+**`Stacks.Adequate.isZero_rightDerived_affineAdequator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/AdequatorVanishingUnconditional.lean, line 60](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/AdequatorVanishingUnconditional.lean#L60).
 
 > **[Stacks, Tag 06ZU].** Let `U = Spec A` be an affine scheme. For every object `𝓕` of
 > `Adeq(𝒪)` and every `p > 0`, `R^p A(𝓕) = 0`, where `A` is the adequator
@@ -279,7 +284,7 @@ public theorem isZero_rightDerived_affineAdequator
 
 [Tag 06ZV](https://stacks.math.columbia.edu/tag/06ZV) in the Stacks Project.
 
-**`Stacks.Adequate.isEquivalence_adequateBoundedBelowComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/DerivedCategoryBoundedBelow.lean, line 94](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/DerivedCategoryBoundedBelow.lean#L94). The attribute's comment: “the full statement, that the canonical comparison functor `D⁺(Adeq(𝒪)) ⥤ D⁺_Adeq(𝒪)` of the equation (46.7.5.1) of Tag 06VV is an equivalence. Assumed: a right adjoint `Ψ` of the derived inclusion on bounded below objects together with its preservation of boundedness below (`adj`, `hΨ`), which is the source's `RA`, available because the adequator of Tag 06ZS is left exact and `Mod(𝒪)` has enough injectives; the source's key fact that the adjunction maps are quasi-isomorphisms on the SINGLE modules (`hunit`, `hcounit`), which is Tag 06ZU together with the moreover clause of Tag 06ZS; and the closure of adequacy under kernels, cokernels and finite products, Tag 06VQ (1), which makes `Adeq(𝒪)` abelian. The passage from the key fact on single modules to all of `D⁺`, which is the source's spectral sequence argument via Tag 015J, is proved”.
+**`Stacks.Adequate.isEquivalence_adequateBoundedBelowComparison`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/DerivedCategoryBoundedBelow.lean, line 94](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/DerivedCategoryBoundedBelow.lean#L94). The attribute's comment: “the full statement, that the canonical comparison functor `D⁺(Adeq(𝒪)) ⥤ D⁺_Adeq(𝒪)` of the equation (46.7.5.1) of Tag 06VV is an equivalence. Assumed: a right adjoint `Ψ` of the derived inclusion on bounded below objects together with its preservation of boundedness below (`adj`, `hΨ`), which is the source's `RA`, available because the adequator of Tag 06ZS is left exact and `Mod(𝒪)` has enough injectives; the source's key fact that the adjunction maps are quasi-isomorphisms on the SINGLE modules (`hunit`, `hcounit`), which is Tag 06ZU together with the moreover clause of Tag 06ZS; and the closure of adequacy under kernels, cokernels and finite products, Tag 06VQ (1), which makes `Adeq(𝒪)` abelian. The passage from the key fact on single modules to all of `D⁺`, which is the source's spectral sequence argument via Tag 015J, is proved”.
 
 > **[Stacks, Tag 06ZV].** For `U = Spec A` affine, the canonical comparison functor
 > `D⁺(Adeq(𝒪)) ⥤ D⁺_{Adeq}(𝒪)` — the inclusion `Adeq(𝒪) ⥤ Mod(𝒪)` applied degreewise to
@@ -290,7 +295,7 @@ public theorem isEquivalence_adequateBoundedBelowComparison :
     (DerivedCategoryB.boundedBelowComparison (adequate.{u, m} B)).IsEquivalence
 ```
 
-**`Stacks.Adequate.adequateBoundedBelowEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/DerivedCategoryBoundedBelow.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/DerivedCategoryBoundedBelow.lean#L104). The attribute's comment: “the equivalence as data, `D⁺(Adeq(𝒪)) ≌ D⁺_Adeq(𝒪)`, under the hypotheses of `Stacks.Adequate.isEquivalence_adequateBoundedBelowComparison`; its functor is the canonical comparison functor by `Stacks.Adequate.adequateBoundedBelowEquivalence_functor`”.
+**`Stacks.Adequate.adequateBoundedBelowEquivalence`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/DerivedCategoryBoundedBelow.lean, line 104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/DerivedCategoryBoundedBelow.lean#L104). The attribute's comment: “the equivalence as data, `D⁺(Adeq(𝒪)) ≌ D⁺_Adeq(𝒪)`, under the hypotheses of `Stacks.Adequate.isEquivalence_adequateBoundedBelowComparison`; its functor is the canonical comparison functor by `Stacks.Adequate.adequateBoundedBelowEquivalence_functor`”.
 
 > **[Stacks, Tag 06ZV]** as an equivalence of categories:
 > `D⁺(Adeq(𝒪)) ≌ D⁺_{Adeq}(𝒪)` for `U = Spec A` affine.
@@ -301,7 +306,7 @@ public def adequateBoundedBelowEquivalence :
       (DerivedCategoryB.derivedCategoryBPlus (adequate.{u, m} B)).FullSubcategory
 ```
 
-**`Stacks.Adequate.isEquivalence_boundedBelowComparison_adequate`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/DerivedCategoryBoundedBelowUnconditional.lean, line 95](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/DerivedCategoryBoundedBelowUnconditional.lean#L95).
+**`Stacks.Adequate.isEquivalence_boundedBelowComparison_adequate`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/DerivedCategoryBoundedBelowUnconditional.lean, line 95](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/DerivedCategoryBoundedBelowUnconditional.lean#L95).
 
 > **[Stacks, Tag 06ZV].** Let `U = Spec A` be an affine scheme. The canonical functor
 > `D⁺(Adeq(𝒪)) ⥤ D⁺_{Adeq}(𝒪)`, the inclusion `Adeq(𝒪) ⥤ Mod((Sch/U)_τ, 𝒪)` applied
@@ -319,7 +324,7 @@ public theorem isEquivalence_boundedBelowComparison_adequate
 
 [Tag 06ZW](https://stacks.math.columbia.edu/tag/06ZW) in the Stacks Project.
 
-**`Stacks.Adequate.bijective_mapExtAddHom_ι_adequate_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/AdequateExtComparison.lean, line 124](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/AdequateExtComparison.lean#L124). The attribute's comment: “degree 0, where the comparison is the map on Hom and the inclusion of the strictly full subcategory of adequate modules is fully faithful; every degree is bijective\_mapExtAddHom\_ι\_adequate in HigherExtsAdequate/AdequateExtComparisonAll”.
+**`Stacks.Adequate.bijective_mapExtAddHom_ι_adequate_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/AdequateExtComparison.lean, line 124](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/AdequateExtComparison.lean#L124). The attribute's comment: “degree 0, where the comparison is the map on Hom and the inclusion of the strictly full subcategory of adequate modules is fully faithful; every degree is bijective\_mapExtAddHom\_ι\_adequate in HigherExtsAdequate/AdequateExtComparisonAll”.
 
 > For `U = Spec A` affine and adequate `𝒪`-modules `𝓕`, `𝓖`, the natural map
 > `Ext^0_{Adeq(𝒪)}(𝓕, 𝓖) ⟶ Ext^0_{Mod((Sch/U)_τ, 𝒪)}(𝓕, 𝓖)` is bijective.
@@ -344,7 +349,7 @@ public theorem bijective_mapExtAddHom_ι_adequate_zero :
       Function.Bijective ((adequate.{u, u} B).ι.mapExtAddHom.{u + 1, u + 1} F G 0)
 ```
 
-**`Stacks.Adequate.bijective_mapExtAddHom_ι_adequate_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/AdequateExtComparison.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/AdequateExtComparison.lean#L157). The attribute's comment: “degree 1, where the comparison is bijective because the adequate modules are closed under extensions, Tag 06VQ (3), and Ext^1 is the group of Yoneda extensions; every degree is bijective\_mapExtAddHom\_ι\_adequate in HigherExtsAdequate/AdequateExtComparisonAll”.
+**`Stacks.Adequate.bijective_mapExtAddHom_ι_adequate_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/AdequateExtComparison.lean, line 157](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Adequate/AdequateModules/AdequateExtComparison.lean#L157). The attribute's comment: “degree 1, where the comparison is bijective because the adequate modules are closed under extensions, Tag 06VQ (3), and Ext^1 is the group of Yoneda extensions; every degree is bijective\_mapExtAddHom\_ι\_adequate in HigherExtsAdequate/AdequateExtComparisonAll”.
 
 > For `U = Spec A` affine and adequate `𝒪`-modules `𝓕`, `𝓖`, the natural map
 > `Ext^1_{Adeq(𝒪)}(𝓕, 𝓖) ⟶ Ext^1_{Mod((Sch/U)_τ, 𝒪)}(𝓕, 𝓖)` is bijective.
@@ -369,7 +374,7 @@ public theorem bijective_mapExtAddHom_ι_adequate_one :
       Function.Bijective ((adequate.{u, u} B).ι.mapExtAddHom.{u + 1, u + 1} F G 1)
 ```
 
-**`Stacks.Adequate.bijective_mapExtAddHom_ι_adequate`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsAdequate/AdequateExtComparisonAll.lean, line 50](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsAdequate/AdequateExtComparisonAll.lean#L50). The attribute's comment: “every degree i ≥ 0”.
+**`Stacks.Adequate.bijective_mapExtAddHom_ι_adequate`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsAdequate/AdequateExtComparisonAll.lean, line 50](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Adequate/HigherExtsAdequate/AdequateExtComparisonAll.lean#L50). The attribute's comment: “every degree i ≥ 0”.
 
 > Let `U = Spec A` be affine and `𝓕`, `𝓖` adequate `𝒪`-modules. For every `i ≥ 0` the natural map
 > `Ext^i_{Adeq(𝒪)}(𝓕, 𝓖) ⟶ Ext^i_{Mod(𝒪)}(𝓕, 𝓖)`, induced by the exact inclusion of the adequate
@@ -406,4 +411,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 46.7, Tag 06VS](https://stacks.math.columbia.edu/tag/06VS)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

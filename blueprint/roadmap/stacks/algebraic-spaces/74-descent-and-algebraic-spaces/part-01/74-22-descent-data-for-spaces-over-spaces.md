@@ -8,13 +8,13 @@ proof: formalized
 
 # 74.22 Descent data for spaces over spaces
 
-Section 74.22 of the Stacks Project, [Tag 0ADF](https://stacks.math.columbia.edu/tag/0ADF). 11 tags here are carried by 22 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 74.22 of the Stacks Project, [Tag 0ADF](https://stacks.math.columbia.edu/tag/0ADF). 11 tags here are carried by 22 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0ADG, a definition
 
 [Tag 0ADG](https://stacks.math.columbia.edu/tag/0ADG) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.Descent.DescentData`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Descent.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Descent.lean#L58). The attribute's comment: “parts (1) and (2): a descent datum relative to one morphism Y → X”. References: SGA 3 IV (2.1), “descent datum”.
+**`AlgebraicGeometry.Space.Descent.DescentData`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Descent.lean, line 58](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Descent.lean#L58). The attribute's comment: “parts (1) and (2): a descent datum relative to one morphism Y → X”. References: SGA 3 IV (2.1), “descent datum”.
 
 > A descent datum relative to a family of morphisms of algebraic spaces over a scheme.
 
@@ -24,7 +24,7 @@ public structure DescentData
     (hX : ∀ i, IsAlgebraicSpace B S hS (X i))
 ```
 
-**`AlgebraicGeometry.Space.Descent.DescentData.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Descent.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Descent.lean#L84). The attribute's comment: “parts (1) and (2): a descent datum relative to one morphism Y → X”.
+**`AlgebraicGeometry.Space.Descent.DescentData.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Descent.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Descent.lean#L84). The attribute's comment: “parts (1) and (2): a descent datum relative to one morphism Y → X”.
 
 > A morphism of descent data is a compatible family of maps over the family members.
 
@@ -36,7 +36,7 @@ public structure Hom (D E : DescentData f hT hX)
 
 [Tag 0ADH](https://stacks.math.columbia.edu/tag/0ADH) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.Descent.gluingProjEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/ProjectionBaseChange.lean, line 217](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/ProjectionBaseChange.lean#L217). The attribute's comment: “the two presentations of the gluing isomorphism of a descent datum”.
+**`AlgebraicGeometry.Space.Descent.gluingProjEquiv`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/ProjectionBaseChange.lean, line 217](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/ProjectionBaseChange.lean#L217). The attribute's comment: “the two presentations of the gluing isomorphism of a descent datum”.
 
 > Over the pairwise fibre product `X i ×_T X j`, an isomorphism `V_i ×_T X_j ≅ X_i ×_T V_j`
 > is the same thing as an isomorphism `pr₀^* V_i ≅ pr₁^* V_j` of the two base changes along the
@@ -49,7 +49,7 @@ def gluingProjEquiv (i j : ι) (Vi : Over (X i)) (Vj : Over (X j)) :
       (projFstObj f i j Vi ≅ projSndObj f i j Vj)
 ```
 
-**`AlgebraicGeometry.Space.Descent.DescentData.projGluing`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/ProjectionBaseChange.lean, line 251](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/ProjectionBaseChange.lean#L251). The attribute's comment: “the gluing isomorphism read as a map pr₀^* V ⟶ pr₁^* V”.
+**`AlgebraicGeometry.Space.Descent.DescentData.projGluing`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/ProjectionBaseChange.lean, line 251](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/ProjectionBaseChange.lean#L251). The attribute's comment: “the gluing isomorphism read as a map pr₀^* V ⟶ pr₁^* V”.
 
 > The gluing isomorphism of a descent datum, read as an isomorphism `pr₀^* V_i ≅ pr₁^* V_j`
 > of algebraic spaces over the pairwise fibre product `X i ×_T X j`.
@@ -59,7 +59,7 @@ def projGluing (D : DescentData f hT hX) (i j : ι) :
     projFstObj f i j (D.obj i) ≅ projSndObj f i j (D.obj j)
 ```
 
-**`AlgebraicGeometry.Space.Descent.DescentData.projGluing01_comp_projGluing12`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/ProjectionBaseChange.lean, line 379](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/ProjectionBaseChange.lean#L379). The attribute's comment: “the cocycle condition in the form pr₀₂^* φ = pr₁₂^* φ ∘ pr₀₁^* φ”.
+**`AlgebraicGeometry.Space.Descent.DescentData.projGluing01_comp_projGluing12`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/ProjectionBaseChange.lean, line 379](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/ProjectionBaseChange.lean#L379). The attribute's comment: “the cocycle condition in the form pr₀₂^* φ = pr₁₂^* φ ∘ pr₀₁^* φ”.
 
 > The cocycle condition of a descent datum, read on base changes along the projections of
 > the triple fibre product: `pr₀₂^* φ_ik = pr₁₂^* φ_jk ∘ pr₀₁^* φ_ij`.
@@ -73,7 +73,7 @@ theorem projGluing01_comp_projGluing12 (D : DescentData f hT hX) (i j k : ι) :
 
 [Tag 0ADI](https://stacks.math.columbia.edu/tag/0ADI) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.Descent.DescentData`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Descent.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Descent.lean#L58). The attribute's comment: “part (1), descent data”. References: SGA 3 IV (2.1), “descent datum”.
+**`AlgebraicGeometry.Space.Descent.DescentData`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Descent.lean, line 58](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Descent.lean#L58). The attribute's comment: “part (1), descent data”. References: SGA 3 IV (2.1), “descent datum”.
 
 > A descent datum relative to a family of morphisms of algebraic spaces over a scheme.
 
@@ -83,7 +83,7 @@ public structure DescentData
     (hX : ∀ i, IsAlgebraicSpace B S hS (X i))
 ```
 
-**`AlgebraicGeometry.Space.Descent.DescentData.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Descent.lean, line 84](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Descent.lean#L84). The attribute's comment: “part (2), morphisms of descent data”.
+**`AlgebraicGeometry.Space.Descent.DescentData.Hom`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Descent.lean, line 84](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Descent.lean#L84). The attribute's comment: “part (2), morphisms of descent data”.
 
 > A morphism of descent data is a compatible family of maps over the family members.
 
@@ -95,7 +95,7 @@ public structure Hom (D E : DescentData f hT hX)
 
 [Tag 0ADJ](https://stacks.math.columbia.edu/tag/0ADJ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.Descent.DescentData`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Descent.lean, line 58](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Descent.lean#L58). The attribute's comment: “the gluing isomorphisms and the cocycle condition in pullback form”. References: SGA 3 IV (2.1), “descent datum”.
+**`AlgebraicGeometry.Space.Descent.DescentData`**, a structure in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Descent.lean, line 58](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/FormallySmooth/Descent.lean#L58). The attribute's comment: “the gluing isomorphisms and the cocycle condition in pullback form”. References: SGA 3 IV (2.1), “descent datum”.
 
 > A descent datum relative to a family of morphisms of algebraic spaces over a scheme.
 
@@ -109,7 +109,7 @@ public structure DescentData
 
 [Tag 0ADK](https://stacks.math.columbia.edu/tag/0ADK) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.Descent.familyCoproductEquivalenceOfAdmitsCoproductIndex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/CoproductAlgebraicityFull.lean, line 188](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/CoproductAlgebraicityFull.lean#L188).
+**`AlgebraicGeometry.Space.Descent.familyCoproductEquivalenceOfAdmitsCoproductIndex`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/CoproductAlgebraicityFull.lean, line 188](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/CoproductAlgebraicityFull.lean#L188).
 
 > Let `{f i : X i → T}` be a family of morphisms of algebraic spaces over `S` with fixed
 > target, and let `Y = ∐ X i` be the coproduct of the sources in sheaves on the big fppf site, an
@@ -131,7 +131,7 @@ public def familyCoproductEquivalenceOfAdmitsCoproductIndex :
 
 [Tag 0ADL](https://stacks.math.columbia.edu/tag/0ADL) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.Descent.pullbackDescentDataFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/HomDescent.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/HomDescent.lean#L157). The attribute's comment: “part (1), pullback functor”.
+**`AlgebraicGeometry.Space.Descent.pullbackDescentDataFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/HomDescent.lean, line 157](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/HomDescent.lean#L157). The attribute's comment: “part (1), pullback functor”.
 
 > The pullback functor on descent data, with the canonical natural comparison of its
 > underlying space over `Y'` with ordinary pullback along `f`.
@@ -170,7 +170,7 @@ public def pullbackDescentDataFunctor
                s ≫ (D.gluing PUnit.unit PUnit.unit).hom.left)) }
 ```
 
-**`AlgebraicGeometry.Space.Descent.pullbackDescentDataFunctor_canonicalIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/HomDescent.lean, line 445](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/HomDescent.lean#L445). The attribute's comment: “part (2), canonical isomorphism”.
+**`AlgebraicGeometry.Space.Descent.pullbackDescentDataFunctor_canonicalIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/HomDescent.lean, line 445](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/HomDescent.lean#L445). The attribute's comment: “part (2), canonical isomorphism”.
 
 > Pullback along two maps completing the same square is canonically and naturally
 > isomorphic, by the gluing isomorphism of the descent datum.
@@ -203,7 +203,7 @@ public def pullbackDescentDataFunctor_canonicalIso :
 
 [Tag 0ADM](https://stacks.math.columbia.edu/tag/0ADM) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.Descent.pullbackDescentDataFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/HomDescent.lean, line 157](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/HomDescent.lean#L157). The attribute's comment: “the functor so constructed is the pullback functor on descent data”.
+**`AlgebraicGeometry.Space.Descent.pullbackDescentDataFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/HomDescent.lean, line 157](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/HomDescent.lean#L157). The attribute's comment: “the functor so constructed is the pullback functor on descent data”.
 
 > The pullback functor on descent data, with the canonical natural comparison of its
 > underlying space over `Y'` with ordinary pullback along `f`.
@@ -246,7 +246,7 @@ public def pullbackDescentDataFunctor
 
 [Tag 0ADN](https://stacks.math.columbia.edu/tag/0ADN) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.Descent.pullbackDatum`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/FamilyPullback.lean, line 224](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/FamilyPullback.lean#L224). The attribute's comment: “family\_pullback\_datum”.
+**`AlgebraicGeometry.Space.Descent.pullbackDatum`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/FamilyPullback.lean, line 224](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/FamilyPullback.lean#L224). The attribute's comment: “family\_pullback\_datum”.
 
 > Pullback of a descent datum along a morphism of families of algebraic spaces.
 
@@ -255,7 +255,7 @@ public def pullbackDatum (g : T' ⟶ T) (comm : ∀ i, gᵢ i ≫ f (α i) = f' 
     PulledBackDatum f f' hT hX hT' hX' α gᵢ D
 ```
 
-**`AlgebraicGeometry.Space.Descent.pullbackFunctorCoproductComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/FamilyPullbackCoproduct.lean, line 1086](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/FamilyPullbackCoproduct.lean#L1086). The attribute's comment: “part (4), agreement with the pullback functors of 0ADL through 0ADK”.
+**`AlgebraicGeometry.Space.Descent.pullbackFunctorCoproductComparison`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/FamilyPullbackCoproduct.lean, line 1086](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/FamilyPullbackCoproduct.lean#L1086). The attribute's comment: “part (4), agreement with the pullback functors of 0ADL through 0ADK”.
 
 > **Stacks Project, Tag 0ADN part (4).** Let `U = {X j → T}` and `U' = {X' i → T'}` be
 > families of morphisms of algebraic spaces over `S` with fixed target, and let
@@ -301,7 +301,7 @@ public def pullbackFunctorCoproductComparison :
             ((fullTotalCoproduct f hT hX D).ι (α i)).hom ≫ (E.objIso D).inv.left }
 ```
 
-**`AlgebraicGeometry.Space.Descent.pullbackFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/FamilyPullbackFunctor.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/FamilyPullbackFunctor.lean#L81). The attribute's comment: “family\_pullback\_functor”.
+**`AlgebraicGeometry.Space.Descent.pullbackFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/FamilyPullbackFunctor.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/FamilyPullbackFunctor.lean#L81). The attribute's comment: “family\_pullback\_functor”.
 
 > Pullback along a morphism of families is functorial on descent data. This is the pullback
 > functor named by Tag 0ADP.
@@ -311,7 +311,7 @@ public noncomputable def pullbackFunctor :
     PullbackFunctor f f' hT hX hT' hX' α g gᵢ comm
 ```
 
-**`AlgebraicGeometry.Space.Descent.pullbackFunctorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/FamilyPullbackIndependence.lean, line 306](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/FamilyPullbackIndependence.lean#L306). The attribute's comment: “family\_map\_independence”.
+**`AlgebraicGeometry.Space.Descent.pullbackFunctorIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/FamilyPullbackIndependence.lean, line 306](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/FamilyPullbackIndependence.lean#L306). The attribute's comment: “family\_map\_independence”.
 
 > The canonical natural isomorphism between the pullback functors induced by two morphisms of
 > families with the same map of targets.
@@ -327,7 +327,7 @@ public def pullbackFunctorIso :
 
 [Tag 0ADP](https://stacks.math.columbia.edu/tag/0ADP) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.Descent.pullbackFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/FamilyPullbackFunctor.lean, line 81](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/FamilyPullbackFunctor.lean#L81).
+**`AlgebraicGeometry.Space.Descent.pullbackFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/FamilyPullbackFunctor.lean, line 81](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/FamilyPullbackFunctor.lean#L81).
 
 > Pullback along a morphism of families is functorial on descent data. This is the pullback
 > functor named by Tag 0ADP.
@@ -341,7 +341,7 @@ public noncomputable def pullbackFunctor :
 
 [Tag 0ADQ](https://stacks.math.columbia.edu/tag/0ADQ) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.Descent.trivialDescentFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/Effective.lean, line 57](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/Effective.lean#L57). The attribute's comment: “part (1), trivial descent datum”.
+**`AlgebraicGeometry.Space.Descent.trivialDescentFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/Effective.lean, line 57](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/Effective.lean#L57). The attribute's comment: “part (1), trivial descent datum”.
 
 > An algebraic space over `X` carries its trivial descent datum for the identity of `X`.
 
@@ -352,7 +352,7 @@ public def trivialDescentFunctor (X : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u)
       HomDescentData.{u, v} (𝟙 X) hX hX
 ```
 
-**`AlgebraicGeometry.Space.Descent.canonicalDescentFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/Effective.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/Effective.lean#L78). The attribute's comment: “part (2), canonical descent datum”.
+**`AlgebraicGeometry.Space.Descent.canonicalDescentFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/Effective.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/Effective.lean#L78). The attribute's comment: “part (2), canonical descent datum”.
 
 > Pulling the trivial descent datum back along a morphism gives the canonical descent
 > datum of an algebraic space over the target.
@@ -363,7 +363,7 @@ public def canonicalDescentFunctor {X Y : (BigFppfOver B S hS)ᵒᵖ ⥤ Type u}
     AlgebraicSpacesOver (B := B) (S := S) (hS := hS) X ⥤ HomDescentData.{u, v} f hX hY
 ```
 
-**`AlgebraicGeometry.Space.Descent.HomDescentData.IsEffective`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/Effective.lean, line 87](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/Effective.lean#L87). The attribute's comment: “part (3), effectivity”.
+**`AlgebraicGeometry.Space.Descent.HomDescentData.IsEffective`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/Effective.lean, line 87](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/Effective.lean#L87). The attribute's comment: “part (3), effectivity”.
 
 > A descent datum for one morphism is effective if it is isomorphic to the canonical descent
 > datum of an algebraic space over the target.
@@ -378,7 +378,7 @@ public abbrev HomDescentData.IsEffective {X Y : (BigFppfOver B S hS)ᵒᵖ ⥤ T
 
 [Tag 0ADR](https://stacks.math.columbia.edu/tag/0ADR) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.Descent.familyCanonicalDescentFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/Effective.lean, line 98](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/Effective.lean#L98). The attribute's comment: “part (1), canonical descent datum”.
+**`AlgebraicGeometry.Space.Descent.familyCanonicalDescentFunctor`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/Effective.lean, line 98](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/Effective.lean#L98). The attribute's comment: “part (1), canonical descent datum”.
 
 > Pulling the trivial descent datum over `T` back to each member of a family gives the
 > canonical descent datum of an algebraic space over `T`.
@@ -389,7 +389,7 @@ public def familyCanonicalDescentFunctor (f : ∀ i, X i ⟶ T)
     AlgebraicSpacesOver (B := B) (S := S) (hS := hS) T ⥤ DescentData f hT hX
 ```
 
-**`AlgebraicGeometry.Space.Descent.DescentData.IsEffective`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/Effective.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/Effective.lean#L108). The attribute's comment: “part (2), effectivity”.
+**`AlgebraicGeometry.Space.Descent.DescentData.IsEffective`**, an abbrev in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/Effective.lean, line 108](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Descent/SpacesOverSpaces/Effective.lean#L108). The attribute's comment: “part (2), effectivity”.
 
 > A descent datum for a family is effective if it is isomorphic to the canonical descent
 > datum of an algebraic space over the target.
@@ -406,4 +406,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 74.22, Tag 0ADF](https://stacks.math.columbia.edu/tag/0ADF)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

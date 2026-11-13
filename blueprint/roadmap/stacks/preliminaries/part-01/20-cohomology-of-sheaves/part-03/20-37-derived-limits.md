@@ -8,13 +8,13 @@ proof: formalized
 
 # 20.37 Derived limits
 
-Section 20.37 of the Stacks Project, [Tag 0BKN](https://stacks.math.columbia.edu/tag/0BKN). 11 tags here are carried by 22 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 20.37 of the Stacks Project, [Tag 0BKN](https://stacks.math.columbia.edu/tag/0BKN). 11 tags here are carried by 22 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0D60, a lemma
 
 [Tag 0D60](https://stacks.math.columbia.edu/tag/0D60) in the Stacks Project.
 
-**`Stacks.Cohomology.DerivedLimitSections.isDerivedLimit_map_derivedSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/SpaltensteinCriterion/DerivedSectionsLimit.lean, line 209](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/SpaltensteinCriterion/DerivedSectionsLimit.lean#L209). The attribute's comment: “commutation with derived limits”.
+**`Stacks.Cohomology.DerivedLimitSections.isDerivedLimit_map_derivedSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/SpaltensteinCriterion/DerivedSectionsLimit.lean, line 209](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/SpaltensteinCriterion/DerivedSectionsLimit.lean#L209). The attribute's comment: “commutation with derived limits”.
 
 > Derived sections over an open of a ringed space carry a countable derived inverse limit to a
 > derived inverse limit: `RΓ(U, R\lim Kₙ) = R\lim RΓ(U, Kₙ)`.
@@ -35,7 +35,7 @@ theorem isDerivedLimit_map_derivedSections
         (K ⋙ RGamma) h (RGamma.obj L)
 ```
 
-**`Stacks.Cohomology.DerivedLimitSections.exists_shortExact_limOne_cohomology_derivedLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/SpaltensteinCriterion/DerivedSectionsLimit.lean, line 267](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/SpaltensteinCriterion/DerivedSectionsLimit.lean#L267). The attribute's comment: “short exact sequence”.
+**`Stacks.Cohomology.DerivedLimitSections.exists_shortExact_limOne_cohomology_derivedLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/SpaltensteinCriterion/DerivedSectionsLimit.lean, line 267](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/SpaltensteinCriterion/DerivedSectionsLimit.lean#L267). The attribute's comment: “short exact sequence”.
 
 > For every open `U` of a ringed space and every degree `m`, the cohomology of a countable
 > derived inverse limit lies in the Milnor short exact sequence
@@ -81,7 +81,7 @@ theorem exists_shortExact_limOne_cohomology_derivedLimit
           Hcur.map (RGamma.map (p ≫ Pi.π (fun n : ℕ ↦ K.obj ⟨n⟩) n)))
 ```
 
-**`AlgebraicGeometry.GrothendieckExistence.isDerivedLimit_map_derivedSectionsLocallySmall`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/GrothendieckExistence/DerivedLimitBounded.lean, line 204](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Flatness/GrothendieckExistence/DerivedLimitBounded.lean#L204). The attribute's comment: “commutation with derived limits, for the Γ(X, U)-module valued derived sections over an open at the locally small model”.
+**`AlgebraicGeometry.GrothendieckExistence.isDerivedLimit_map_derivedSectionsLocallySmall`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Flatness/GrothendieckExistence/DerivedLimitBounded.lean, line 204](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Flatness/GrothendieckExistence/DerivedLimitBounded.lean#L204). The attribute's comment: “commutation with derived limits, for the Γ(X, U)-module valued derived sections over an open at the locally small model”.
 
 > **[Stacks, Tag 0D60], first assertion, for `RΓ(U, -)` at the locally small model.** If `K` is a
 > derived limit of an inverse system `(Kₙ)` in `D(𝒪_X)`, then `RΓ(U, K)` is a derived limit of the
@@ -105,7 +105,7 @@ theorem isDerivedLimit_map_derivedSectionsLocallySmall (U : X.Opens)
         (L ⋙ derivedSectionsLocallySmall X U) h ((derivedSectionsLocallySmall X U).obj K)
 ```
 
-**`Stacks.Cohomology.DerivedSectionsOverBase.isDerivedLimit_map_derivedSectionsOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/DerivedSectionsOverBase.lean, line 190](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/DerivedSectionsOverBase.lean#L190). The attribute's comment: “commutation with derived limits, for derived sections over a base ring”.
+**`Stacks.Cohomology.DerivedSectionsOverBase.isDerivedLimit_map_derivedSectionsOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/DerivedSectionsOverBase.lean, line 190](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/DerivedSectionsOverBase.lean#L190). The attribute's comment: “commutation with derived limits, for derived sections over a base ring”.
 
 > **Derived sections over a base ring commute with derived limits.** If a distinguished triangle
 > exhibits `L` as the derived limit of a countable inverse system `(K_n)` of objects of `D(𝒪_X)`,
@@ -122,7 +122,7 @@ theorem isDerivedLimit_map_derivedSectionsOver
         (K ⋙ derivedSectionsOver X ρ) h ((derivedSectionsOver X ρ).obj L)
 ```
 
-**`Stacks.Cohomology.DerivedSectionsOverBase.exists_shortExact_homology_derivedSectionsOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/DerivedSectionsOverBase.lean, line 216](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/DerivedSectionsOverBase.lean#L216). The attribute's comment: “short exact sequence, for derived sections over a base ring; both maps normalized”.
+**`Stacks.Cohomology.DerivedSectionsOverBase.exists_shortExact_homology_derivedSectionsOver`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/DerivedSectionsOverBase.lean, line 216](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/DerivedSectionsOverBase.lean#L216). The attribute's comment: “short exact sequence, for derived sections over a base ring; both maps normalized”.
 
 > **The Milnor short exact sequence for the cohomology of derived sections of a derived limit.**
 > With `L` the derived limit of `(K_n)` in `D(𝒪_X)`, the cohomology modules `Hʳ(X, L)` of its derived
@@ -173,7 +173,7 @@ theorem exists_shortExact_homology_derivedSectionsOver
               (ShortComplex.mk i q w).ShortExact
 ```
 
-**`Stacks.Cohomology.DerivedLimits.isDerivedLimit_map_derivedSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/MayerVietorisAndLimits/DerivedLimits.lean, line 248](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/MayerVietorisAndLimits/DerivedLimits.lean#L248). The attribute's comment: “commutation with derived limits”.
+**`Stacks.Cohomology.DerivedLimits.isDerivedLimit_map_derivedSections`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/MayerVietorisAndLimits/DerivedLimits.lean, line 248](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/MayerVietorisAndLimits/DerivedLimits.lean#L248). The attribute's comment: “commutation with derived limits”.
 
 > **Stacks 0D60, first assertion.** Derived sections over an open carry a countable derived
 > inverse limit to a derived inverse limit.
@@ -202,7 +202,7 @@ theorem isDerivedLimit_map_derivedSections
         (K ⋙ RGamma) h (RGamma.obj L)
 ```
 
-**`Stacks.Cohomology.DerivedLimits.exists_shortExact_limOne_cohomology_derivedLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/MayerVietorisAndLimits/DerivedLimits.lean, line 332](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/MayerVietorisAndLimits/DerivedLimits.lean#L332). The attribute's comment: “short exact sequence”.
+**`Stacks.Cohomology.DerivedLimits.exists_shortExact_limOne_cohomology_derivedLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/MayerVietorisAndLimits/DerivedLimits.lean, line 332](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/MayerVietorisAndLimits/DerivedLimits.lean#L332). The attribute's comment: “short exact sequence”.
 
 > **Stacks 0D60, second assertion.** For every open `U` and degree `m`, the cohomology of a
 > derived inverse limit lies in the Milnor short exact sequence
@@ -259,7 +259,7 @@ theorem exists_shortExact_limOne_cohomology_derivedLimit
 
 [Tag 0BKP](https://stacks.math.columbia.edu/tag/0BKP) in the Stacks Project.
 
-**`Stacks.Cohomology.DerivedAdjunctionOnRingedSpaces.isDerivedLimit_map_derivedPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/DerivedLimits.lean, line 67](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/DerivedLimits.lean#L67).
+**`Stacks.Cohomology.DerivedAdjunctionOnRingedSpaces.isDerivedLimit_map_derivedPushforward`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/DerivedLimits.lean, line 67](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedPushforward/DerivedLimits.lean#L67).
 
 > Derived pushforward along a morphism of ringed spaces commutes with derived limits: it carries
 > an object exhibited as the derived limit of a countable inverse system to the derived limit of the
@@ -280,7 +280,7 @@ theorem isDerivedLimit_map_derivedPushforward
 
 [Tag 0BKQ](https://stacks.math.columbia.edu/tag/0BKQ) in the Stacks Project.
 
-**`Stacks.Cohomology.DerivedLimits.sheafificationCohomologyPresheafSystemIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/MayerVietorisAndLimits/DerivedLimitComparisonDiagram.lean, line 168](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/MayerVietorisAndLimits/DerivedLimitComparisonDiagram.lean#L168). The attribute's comment: “the cohomology sheaf H^m(K\_n) of each member of the inverse system is the sheafification of the cohomology presheaf U ↦ H^m(U, K\_n), naturally in n”.
+**`Stacks.Cohomology.DerivedLimits.sheafificationCohomologyPresheafSystemIso`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/MayerVietorisAndLimits/DerivedLimitComparisonDiagram.lean, line 168](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/MayerVietorisAndLimits/DerivedLimitComparisonDiagram.lean#L168). The attribute's comment: “the cohomology sheaf H^m(K\_n) of each member of the inverse system is the sheafification of the cohomology presheaf U ↦ H^m(U, K\_n), naturally in n”.
 
 > **Stacks 0BKQ, first assertion.** For an inverse system `(Kₙ)` in `D(O)` and a degree `m`,
 > the cohomology sheaf `𝓗ᵐ_n = Hᵐ(Kₙ)` is the sheafification of the cohomology presheaf
@@ -307,7 +307,7 @@ def sheafificationCohomologyPresheafSystemIso {X : TopCat.{u}}
       K ⋙ DerivedCategory.homologyFunctor (SheafOfModules.{u} O) m
 ```
 
-**`Stacks.Cohomology.DerivedLimits.cohomologyDerivedLimitDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/MayerVietorisAndLimits/DerivedLimitComparisonDiagram.lean, line 198](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/MayerVietorisAndLimits/DerivedLimitComparisonDiagram.lean#L198). The attribute's comment: “the cohomology sheaves of the system and of the derived limit are the sheafifications of the cohomology presheaves U ↦ H^m(U, K\_n) and U ↦ H^m(U, R lim K\_n), and the comparison square of the remark's diagram commutes”.
+**`Stacks.Cohomology.DerivedLimits.cohomologyDerivedLimitDiagram`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/MayerVietorisAndLimits/DerivedLimitComparisonDiagram.lean, line 198](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/MayerVietorisAndLimits/DerivedLimitComparisonDiagram.lean#L198). The attribute's comment: “the cohomology sheaves of the system and of the derived limit are the sheafifications of the cohomology presheaves U ↦ H^m(U, K\_n) and U ↦ H^m(U, R lim K\_n), and the comparison square of the remark's diagram commutes”.
 
 > **Stacks 0BKQ, first assertion and diagram.** Let `O` be a sheaf of rings on a space, let
 > `(Kₙ)` be an inverse system in `D(O)` and let `L` be a derived limit of it, given by its
@@ -362,7 +362,7 @@ theorem cohomologyDerivedLimitDiagram {X : TopCat.{u}}
       (S.map a ≫ c = e.hom.app L ≫ b)
 ```
 
-**`Stacks.Cohomology.DerivedLimits.exists_shortExact_limOne_cohomology_derivedLimit_family`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/MayerVietorisAndLimits/DerivedLimits.lean, line 389](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/MayerVietorisAndLimits/DerivedLimits.lean#L389). The attribute's comment: “the short exact sequences of Equation 0BKR over each open U: 0 → R¹ lim H^(m-1)(U, K\_n) → H^m(U, R lim K\_n) → lim H^m(U, K\_n) → 0”.
+**`Stacks.Cohomology.DerivedLimits.exists_shortExact_limOne_cohomology_derivedLimit_family`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/MayerVietorisAndLimits/DerivedLimits.lean, line 389](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/MayerVietorisAndLimits/DerivedLimits.lean#L389). The attribute's comment: “the short exact sequences of Equation 0BKR over each open U: 0 → R¹ lim H^(m-1)(U, K\_n) → H^m(U, R lim K\_n) → lim H^m(U, K\_n) → 0”.
 
 > **Stacks 0BKQ.** For a family of derived-sections functors indexed by the opens of a
 > ringed space, the cohomology of a derived inverse limit lies in the Milnor short exact
@@ -427,7 +427,7 @@ theorem exists_shortExact_limOne_cohomology_derivedLimit_family
 
 [Tag 0BKS](https://stacks.math.columbia.edu/tag/0BKS) in the Stacks Project.
 
-**`Stacks.Cohomology.SpaceInverseLimits.isDerivedLimit_single_limit_of_isBasis`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/RecoveryB/InverseLimitAsDerivedLimit.lean, line 354](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/RecoveryB/InverseLimitAsDerivedLimit.lean#L354). The attribute's comment: “derived limit”.
+**`Stacks.Cohomology.SpaceInverseLimits.isDerivedLimit_single_limit_of_isBasis`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/RecoveryB/InverseLimitAsDerivedLimit.lean, line 354](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/RecoveryB/InverseLimitAsDerivedLimit.lean#L354). The attribute's comment: “derived limit”.
 
 > If the terms of a countable inverse system of modules are acyclic on a basis and `R¹ lim`
 > of their sections vanishes there, then the ordinary limit, placed in degree zero, is a derived
@@ -448,7 +448,7 @@ public theorem isDerivedLimit_single_limit_of_isBasis (X : RingedSpace.{u, u})
           (limit F))
 ```
 
-**`Stacks.Cohomology.SpaceInverseLimits.isZero_cohomology_limit_of_isBasis`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/RecoveryB/InverseLimitAsDerivedLimit.lean, line 419](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/RecoveryB/InverseLimitAsDerivedLimit.lean#L419). The attribute's comment: “higher cohomology”.
+**`Stacks.Cohomology.SpaceInverseLimits.isZero_cohomology_limit_of_isBasis`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/RecoveryB/InverseLimitAsDerivedLimit.lean, line 419](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/RecoveryB/InverseLimitAsDerivedLimit.lean#L419). The attribute's comment: “higher cohomology”.
 
 > Under the same hypotheses, the ordinary inverse limit has vanishing positive-degree
 > cohomology on every member of the basis.
@@ -468,7 +468,7 @@ public theorem isZero_cohomology_limit_of_isBasis (X : RingedSpace.{u, u})
 
 [Tag 0D61](https://stacks.math.columbia.edu/tag/0D61) in the Stacks Project.
 
-**`Stacks.Cohomology.DerivedLimitStalk.cohomology_derivedLimit_projection_mono_on_stalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/MayerVietorisAndLimits/DerivedLimitStalkInjectivity.lean, line 233](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/MayerVietorisAndLimits/DerivedLimitStalkInjectivity.lean#L233).
+**`Stacks.Cohomology.DerivedLimitStalk.cohomology_derivedLimit_projection_mono_on_stalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/MayerVietorisAndLimits/DerivedLimitStalkInjectivity.lean, line 233](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/MayerVietorisAndLimits/DerivedLimitStalkInjectivity.lean#L233).
 
 > **Stacks Project, Tag 0D61.** A locally vanishing `R¹ lim` in degree `m - 1` and eventual
 > injectivity on cohomology in degree `m`, over a fundamental system of open neighbourhoods of `x`,
@@ -523,7 +523,7 @@ public theorem cohomology_derivedLimit_projection_mono_on_stalk {X : TopCat.{u}}
 
 [Tag 0D62](https://stacks.math.columbia.edu/tag/0D62) in the Stacks Project.
 
-**`Stacks.Cohomology.DerivedLimitStalk.exists_and_forall_isIso_to_derivedLimit_truncGETower_of_local_vanishing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/MayerVietorisAndLimits/DerivedLimitStalkInjectivity.lean, line 685](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/MayerVietorisAndLimits/DerivedLimitStalkInjectivity.lean#L685). The attribute's comment: “the derived limit and the canonical map of Remark 0H72 exist, and every such canonical map is an isomorphism”.
+**`Stacks.Cohomology.DerivedLimitStalk.exists_and_forall_isIso_to_derivedLimit_truncGETower_of_local_vanishing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/MayerVietorisAndLimits/DerivedLimitStalkInjectivity.lean, line 685](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/MayerVietorisAndLimits/DerivedLimitStalkInjectivity.lean#L685). The attribute's comment: “the derived limit and the canonical map of Remark 0H72 exist, and every such canonical map is an isomorphism”.
 
 > **Stacks Project, Tag 0D62.** Let `E` be an object of the derived category of sheaves of
 > `𝒪_X`-modules on a ringed space, and suppose every point `x` carries a function `p(x, -)` and a
@@ -588,7 +588,7 @@ public theorem exists_and_forall_isIso_to_derivedLimit_truncGETower_of_local_van
 
 [Tag 0D63](https://stacks.math.columbia.edu/tag/0D63) in the Stacks Project.
 
-**`Stacks.Cohomology.DerivedLimitStalk.isIso_to_isDerivedLimit_truncGETower_of_local_bound`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/MayerVietorisAndLimits/DerivedLimitLocalBound.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/MayerVietorisAndLimits/DerivedLimitLocalBound.lean#L76).
+**`Stacks.Cohomology.DerivedLimitStalk.isIso_to_isDerivedLimit_truncGETower_of_local_bound`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/MayerVietorisAndLimits/DerivedLimitLocalBound.lean, line 76](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/MayerVietorisAndLimits/DerivedLimitLocalBound.lean#L76).
 
 > Let `E` be an object of the derived category of sheaves of `𝒪_X`-modules on a ringed space, and
 > suppose every point `x` carries an integer `dₓ ≥ 0` and a fundamental system `𝔘ₓ` of open
@@ -633,7 +633,7 @@ public theorem isIso_to_isDerivedLimit_truncGETower_of_local_bound {X : TopCat.{
 
 [Tag 08U2](https://stacks.math.columbia.edu/tag/08U2) in the Stacks Project.
 
-**`Stacks.Cohomology.DerivedLimitStalk.exists_isIso_to_derivedLimit_truncGETower_of_vanishing_on_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/MayerVietorisAndLimits/DerivedLimitStalkInjectivity.lean, line 642](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/MayerVietorisAndLimits/DerivedLimitStalkInjectivity.lean#L642). The attribute's comment: “the conclusion with the derived limit and the canonical map of Remark 0H72 constructed rather than quantified over”.
+**`Stacks.Cohomology.DerivedLimitStalk.exists_isIso_to_derivedLimit_truncGETower_of_vanishing_on_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/MayerVietorisAndLimits/DerivedLimitStalkInjectivity.lean, line 642](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/MayerVietorisAndLimits/DerivedLimitStalkInjectivity.lean#L642). The attribute's comment: “the conclusion with the derived limit and the canonical map of Remark 0H72 constructed rather than quantified over”.
 
 > **Stacks Project, Tag 08U2**, in the form the source states it: the canonical map
 > `E ⟶ R lim τ_{≥ -n} E` *is* an isomorphism. The derived limit and the canonical map are
@@ -673,7 +673,7 @@ theorem exists_isIso_to_derivedLimit_truncGETower_of_vanishing_on_cover {X : Top
         (DerivedCategory.TStructure.t.truncGEπ (-(n : ℤ))).app E) ∧ IsIso c
 ```
 
-**`Stacks.Cohomology.DerivedLimitStalk.exists_and_forall_isIso_to_derivedLimit_truncGETower_of_vanishing_on_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/MayerVietorisAndLimits/DerivedLimitStalkInjectivity.lean, line 745](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/MayerVietorisAndLimits/DerivedLimitStalkInjectivity.lean#L745). The attribute's comment: “the derived limit and the canonical map of Remark 0H72 exist, and every such canonical map is an isomorphism”.
+**`Stacks.Cohomology.DerivedLimitStalk.exists_and_forall_isIso_to_derivedLimit_truncGETower_of_vanishing_on_cover`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/MayerVietorisAndLimits/DerivedLimitStalkInjectivity.lean, line 745](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/MayerVietorisAndLimits/DerivedLimitStalkInjectivity.lean#L745). The attribute's comment: “the derived limit and the canonical map of Remark 0H72 exist, and every such canonical map is an isomorphism”.
 
 > **Stacks Project, Tag 08U2.** Let `E` be an object of the derived category of sheaves of
 > `𝒪_X`-modules on a ringed space, let `p(-)` be a function and let `𝔅` be a set of opens of `X`
@@ -738,7 +738,7 @@ public theorem exists_and_forall_isIso_to_derivedLimit_truncGETower_of_vanishing
 
 [Tag 0D64](https://stacks.math.columbia.edu/tag/0D64) in the Stacks Project.
 
-**`Stacks.Cohomology.DerivedLimitStalk.exists_and_forall_isIso_to_derivedLimit_truncGETower_of_dimension_bound`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/MayerVietorisAndLimits/DerivedLimitDimensionBound.lean, line 99](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/MayerVietorisAndLimits/DerivedLimitDimensionBound.lean#L99). The attribute's comment: “the derived limit and the canonical map of Remark 0H72 exist, and every such canonical map is an isomorphism”.
+**`Stacks.Cohomology.DerivedLimitStalk.exists_and_forall_isIso_to_derivedLimit_truncGETower_of_dimension_bound`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/MayerVietorisAndLimits/DerivedLimitDimensionBound.lean, line 99](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/MayerVietorisAndLimits/DerivedLimitDimensionBound.lean#L99). The attribute's comment: “the derived limit and the canonical map of Remark 0H72 exist, and every such canonical map is an isomorphism”.
 
 > **Stacks Project, Tag 0D64.** Let `E` be an object of the derived category of sheaves of
 > `𝒪_X`-modules on a ringed space, and suppose there are an integer `d ≥ 0` and a basis `𝔅` for the
@@ -802,7 +802,7 @@ public theorem exists_and_forall_isIso_to_derivedLimit_truncGETower_of_dimension
 
 [Tag 0BKT](https://stacks.math.columbia.edu/tag/0BKT) in the Stacks Project.
 
-**`Stacks.Algebraization.homologyIso_derivedSections_of_isAffineOpen`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/Completion/AffineEdgeQuasicoherent.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/FormalGeometry/Completion/AffineEdgeQuasicoherent.lean#L77). The attribute's comment: “over an affine open of a scheme, for an object of `D(𝒪_X)` whose cohomology sheaves are all quasi-coherent: the acyclicity hypothesis of the tag is Serre vanishing on the affine opens, which quasi-coherence supplies, and the affine opens are a basis of the topology”. References: EGA III (1.3.1), “more general”; EGA III (4.1.7.21), “H^i(U”.
+**`Stacks.Algebraization.homologyIso_derivedSections_of_isAffineOpen`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/FormalGeometry/Completion/AffineEdgeQuasicoherent.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/FormalGeometry/Completion/AffineEdgeQuasicoherent.lean#L77). The attribute's comment: “over an affine open of a scheme, for an object of `D(𝒪_X)` whose cohomology sheaves are all quasi-coherent: the acyclicity hypothesis of the tag is Serre vanishing on the affine opens, which quasi-coherence supplies, and the affine opens are a basis of the topology”. References: EGA III (1.3.1), “more general”; EGA III (4.1.7.21), “H^i(U”.
 
 > **[Stacks, Tag 0BKT] over an affine open of a scheme.** For an object `L` of `D(𝒪_X)` with
 > quasi-coherent cohomology sheaves and an affine open `U`, the hypercohomology `H^p(U, L)` is the
@@ -823,7 +823,7 @@ public def homologyIso_derivedSections_of_isAffineOpen (X : Scheme.{u})
       ModuleCat.of Γ(X, U.1) Γ((DerivedCategory.homologyFunctor X.Modules p).obj L, U.1)
 ```
 
-**`Stacks.Cohomology.AcyclicOpen.isIso_hypercohomologyEdge_app_of_isBasis`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedCategory/HypercohomologyOverAcyclicOpens.lean, line 83](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/DerivedCategory/HypercohomologyOverAcyclicOpens.lean#L83).
+**`Stacks.Cohomology.AcyclicOpen.isIso_hypercohomologyEdge_app_of_isBasis`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/DerivedCategory/HypercohomologyOverAcyclicOpens.lean, line 83](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/DerivedCategory/HypercohomologyOverAcyclicOpens.lean#L83).
 
 > **Stacks Project Tag 0BKT.** If every cohomology sheaf of `K` has vanishing higher cohomology
 > over the members of a basis of opens, then over each member of that basis the hypercohomology
@@ -844,7 +844,7 @@ theorem isIso_hypercohomologyEdge_app_of_isBasis
 
 [Tag 0BKU](https://stacks.math.columbia.edu/tag/0BKU) in the Stacks Project.
 
-**`Stacks.Cohomology.DerivedLimits.cohomology_isLimit_of_isDerivedLimit_of_isBasis`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/MayerVietorisAndLimits/CohomologyOfADerivedLimit.lean, line 75](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/MayerVietorisAndLimits/CohomologyOfADerivedLimit.lean#L75).
+**`Stacks.Cohomology.DerivedLimits.cohomology_isLimit_of_isDerivedLimit_of_isBasis`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/MayerVietorisAndLimits/CohomologyOfADerivedLimit.lean, line 75](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/MayerVietorisAndLimits/CohomologyOfADerivedLimit.lean#L75).
 
 > **Stacks Project, Tag 0BKU.** Let `(K_n)` be an inverse system of objects of `D(𝒪_X)` and let
 > `L` be a derived limit of it, exhibited by the structural map `p` and its distinguished triangle.
@@ -892,4 +892,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 20.37, Tag 0BKN](https://stacks.math.columbia.edu/tag/0BKN)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

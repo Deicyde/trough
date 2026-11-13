@@ -8,13 +8,13 @@ proof: formalized
 
 # 21.29 Comparing two topologies, II
 
-Section 21.29 of the Stacks Project, [Tag 0F17](https://stacks.math.columbia.edu/tag/0F17). 3 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 21.29 of the Stacks Project, [Tag 0F17](https://stacks.math.columbia.edu/tag/0F17). 3 tags here are carried by 11 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 07A8, a lemma
 
 [Tag 07A8](https://stacks.math.columbia.edu/tag/07A8) in the Stacks Project.
 
-**`Stacks.Cohomology.CompareTopologies.isWeakSerreClass_imageOfLE_of_vanishing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChangeOfTopology/CoarseningDerivedEquivalence.lean, line 286](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChangeOfTopology/CoarseningDerivedEquivalence.lean#L286). The attribute's comment: “the weak Serre subcategory for the coarser topology, with the dévissage step discharged”.
+**`Stacks.Cohomology.CompareTopologies.isWeakSerreClass_imageOfLE_of_vanishing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChangeOfTopology/CoarseningDerivedEquivalence.lean, line 286](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/ChangeOfTopology/CoarseningDerivedEquivalence.lean#L286). The attribute's comment: “the weak Serre subcategory for the coarser topology, with the dévissage step discharged”.
 
 > **[Stacks, Tag 07A8], first conclusion, with no hypothesis beyond the source's.** The image
 > `A'` of `A` under `ε_*` is a weak Serre subcategory of `Mod(R_τ')`. This is
@@ -26,7 +26,7 @@ theorem isWeakSerreClass_imageOfLE_of_vanishing [A.IsWeakSerreClass] :
     (imageOfLE.{u, v, r, m} h R A).IsWeakSerreClass
 ```
 
-**`Stacks.Cohomology.CompareTopologies.derivedPullbackEquivalenceImageOfLE`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChangeOfTopology/CoarseningDerivedEquivalence.lean, line 369](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChangeOfTopology/CoarseningDerivedEquivalence.lean#L369). The attribute's comment: “the equivalence of derived categories given by ε^* and Rε\_*”.
+**`Stacks.Cohomology.CompareTopologies.derivedPullbackEquivalenceImageOfLE`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChangeOfTopology/CoarseningDerivedEquivalence.lean, line 369](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/ChangeOfTopology/CoarseningDerivedEquivalence.lean#L369). The attribute's comment: “the equivalence of derived categories given by ε^* and Rε\_*”.
 
 > **[Stacks, Tag 07A8], second conclusion.** Let `J' ≤ S.J` be two topologies on the category
 > of a ringed site `S`, so that the identity functor of that category is the comparison morphism
@@ -62,7 +62,7 @@ def derivedPullbackEquivalenceImageOfLE
       (DerivedCategoryB.derivedCategoryB A).FullSubcategory
 ```
 
-**`Stacks.Cohomology.CompareTopologies.derivedPullbackEquivalenceImageOfLE_functor_comp_ι`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChangeOfTopology/CoarseningDerivedEquivalence.lean, line 423](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChangeOfTopology/CoarseningDerivedEquivalence.lean#L423). The attribute's comment: “the forward functor of the equivalence is the derived pullback”.
+**`Stacks.Cohomology.CompareTopologies.derivedPullbackEquivalenceImageOfLE_functor_comp_ι`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChangeOfTopology/CoarseningDerivedEquivalence.lean, line 423](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/ChangeOfTopology/CoarseningDerivedEquivalence.lean#L423). The attribute's comment: “the forward functor of the equivalence is the derived pullback”.
 
 > **The equivalence of [Stacks, Tag 07A8] is given by `ε^*`**: its forward functor, followed by
 > the inclusion of `D_A(𝒪_τ)` into `D(𝒪_τ)`, is the inclusion of `D_{A'}(𝒪_τ')` followed by the
@@ -82,7 +82,7 @@ theorem derivedPullbackEquivalenceImageOfLE_functor_comp_ι :
         derivedPullback (S.coarseningHom h).toRingedToposSiteHom
 ```
 
-**`Stacks.Cohomology.CompareTopologies.derivedPullbackEquivalenceImageOfLE_inverse_comp_ι`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChangeOfTopology/CoarseningDerivedEquivalence.lean, line 440](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChangeOfTopology/CoarseningDerivedEquivalence.lean#L440). The attribute's comment: “the quasi-inverse of the equivalence is the derived pushforward”.
+**`Stacks.Cohomology.CompareTopologies.derivedPullbackEquivalenceImageOfLE_inverse_comp_ι`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChangeOfTopology/CoarseningDerivedEquivalence.lean, line 440](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/ChangeOfTopology/CoarseningDerivedEquivalence.lean#L440). The attribute's comment: “the quasi-inverse of the equivalence is the derived pushforward”.
 
 > **The quasi-inverse of the equivalence of [Stacks, Tag 07A8] is `Rε_*`**: it, followed by the
 > inclusion of `D_{A'}(𝒪_τ')` into `D(𝒪_τ')`, is the inclusion of `D_A(𝒪_τ)` followed by the
@@ -97,7 +97,7 @@ theorem derivedPullbackEquivalenceImageOfLE_inverse_comp_ι :
         derivedPushforward (S.coarseningHom h).toRingedToposSiteHom
 ```
 
-**`Stacks.Cohomology.CompareTopologies.derivedEquivalenceImageOfLE_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChangeOfTopology/DerivedWeakSerreAcrossTopologies.lean, line 442](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChangeOfTopology/DerivedWeakSerreAcrossTopologies.lean#L442). The attribute's comment: “second conclusion: the equivalence of triangulated categories `D_A(𝒪_τ) ≌ D_{A'}(𝒪_τ')` given by `ε^*` and `Rε_*`”.
+**`Stacks.Cohomology.CompareTopologies.derivedEquivalenceImageOfLE_spec`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChangeOfTopology/DerivedWeakSerreAcrossTopologies.lean, line 442](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/ChangeOfTopology/DerivedWeakSerreAcrossTopologies.lean#L442). The attribute's comment: “second conclusion: the equivalence of triangulated categories `D_A(𝒪_τ) ≌ D_{A'}(𝒪_τ')` given by `ε^*` and `Rε_*`”.
 
 > **Stacks 07A8, second conclusion.**  Under the hypotheses of
 > `Stacks.Cohomology.CompareTopologies.derivedEquivalenceImageOfLE`, that equivalence
@@ -152,7 +152,7 @@ theorem derivedEquivalenceImageOfLE_spec :
           (S.coarseningHom h).toRingedToposSiteHom.pullbackTopos.mapDerivedCategory)
 ```
 
-**`Stacks.Cohomology.CompareTopologies.isWeakSerre_imageOfLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChangeOfTopology/WeakSerreAcrossTopologies.lean, line 284](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChangeOfTopology/WeakSerreAcrossTopologies.lean#L284). The attribute's comment: “the weak Serre subcategory for the coarser topology”.
+**`Stacks.Cohomology.CompareTopologies.isWeakSerre_imageOfLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChangeOfTopology/WeakSerreAcrossTopologies.lean, line 284](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/ChangeOfTopology/WeakSerreAcrossTopologies.lean#L284). The attribute's comment: “the weak Serre subcategory for the coarser topology”.
 
 > Let `J' ≤ J` be two topologies on `C` and let `R` be a sheaf of rings for the finer topology
 > `J`, so that the identity functor of `C` is the comparison morphism of ringed sites
@@ -187,7 +187,7 @@ theorem isWeakSerre_imageOfLE [HasSheafify J' AddCommGrpCat.{m}]
     WeakSerre.IsWeakSerre (imageOfLE.{u, v, r, m} h R A)
 ```
 
-**`Stacks.Cohomology.CompareTopologies.isWeakSerreClass_imageOfLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChangeOfTopology/WeakSerreAcrossTopologies.lean, line 373](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChangeOfTopology/WeakSerreAcrossTopologies.lean#L373). The attribute's comment: “the same conclusion in the closure form of Stacks 0754”.
+**`Stacks.Cohomology.CompareTopologies.isWeakSerreClass_imageOfLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChangeOfTopology/WeakSerreAcrossTopologies.lean, line 373](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/ChangeOfTopology/WeakSerreAcrossTopologies.lean#L373). The attribute's comment: “the same conclusion in the closure form of Stacks 0754”.
 
 > The same statement as `Stacks.Cohomology.CompareTopologies.isWeakSerre_imageOfLE`, with the
 > conclusion phrased in the closure form `CategoryTheory.ObjectProperty.IsWeakSerreClass` of
@@ -209,7 +209,7 @@ theorem isWeakSerreClass_imageOfLE [HasSheafify J' AddCommGrpCat.{m}]
     (imageOfLE.{u, v, r, m} h R A).IsWeakSerreClass
 ```
 
-**`Stacks.Cohomology.CompareTopologies.isWeakSerre_imageOfLE_of_univLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChangeOfTopology/WeakSerreAcrossTopologiesOfVanishing.lean, line 191](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChangeOfTopology/WeakSerreAcrossTopologiesOfVanishing.lean#L191). The attribute's comment: “first conclusion: the image of `A` is a weak Serre subcategory of `Mod(𝒪_τ')`”.
+**`Stacks.Cohomology.CompareTopologies.isWeakSerre_imageOfLE_of_univLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChangeOfTopology/WeakSerreAcrossTopologiesOfVanishing.lean, line 191](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/ChangeOfTopology/WeakSerreAcrossTopologiesOfVanishing.lean#L191). The attribute's comment: “first conclusion: the image of `A` is a weak Serre subcategory of `Mod(𝒪_τ')`”.
 
 > **Stacks 07A8, first conclusion.**  Let `J' ≤ J` be two topologies on `C` and let `R` be a
 > sheaf of rings for the finer topology `J`, so that the identity functor of `C` is the comparison
@@ -238,7 +238,7 @@ theorem isWeakSerre_imageOfLE_of_univLE (hA : WeakSerre.IsWeakSerre A) (B : Set 
     WeakSerre.IsWeakSerre (imageOfLE.{u, v, r, m} h R A)
 ```
 
-**`Stacks.Cohomology.CompareTopologies.isWeakSerreClass_imageOfLE_of_univLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChangeOfTopology/WeakSerreAcrossTopologiesOfVanishing.lean, line 204](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/ChangeOfTopology/WeakSerreAcrossTopologiesOfVanishing.lean#L204). The attribute's comment: “first conclusion, in the closure form of Stacks 0754”.
+**`Stacks.Cohomology.CompareTopologies.isWeakSerreClass_imageOfLE_of_univLE`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/ChangeOfTopology/WeakSerreAcrossTopologiesOfVanishing.lean, line 204](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/ChangeOfTopology/WeakSerreAcrossTopologiesOfVanishing.lean#L204). The attribute's comment: “first conclusion, in the closure form of Stacks 0754”.
 
 > **Stacks 07A8, first conclusion, in the closure form of Stacks 0754.**  The same statement as
 > `Stacks.Cohomology.CompareTopologies.isWeakSerre_imageOfLE_of_univLE`, with the conclusion
@@ -257,7 +257,7 @@ theorem isWeakSerreClass_imageOfLE_of_univLE (hA : WeakSerre.IsWeakSerre A) (B :
 
 [Tag 0F18](https://stacks.math.columbia.edu/tag/0F18) in the Stacks Project.
 
-**`Stacks.Cohomology.MayerVietoris.essImage_iff_forall_isCSquareIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/DescentForAFamilyOfSquares.lean, line 1171](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/DescentForAFamilyOfSquares.lean#L1171).
+**`Stacks.Cohomology.MayerVietoris.essImage_iff_forall_isCSquareIso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/DescentForAFamilyOfSquares.lean, line 1288](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/DescentForAFamilyOfSquares.lean#L1288).
 
 > **Stacks 0F18.** Let `C` carry two Grothendieck topologies `J' ≤ J` and let `𝒪` be a sheaf of
 > rings for `J`, so that the identity of `C` is a comparison of ringed sites
@@ -314,7 +314,7 @@ theorem essImage_iff_forall_isCSquareIso {A : Type*} (sq : A → Square S.C)
 
 [Tag 0F19](https://stacks.math.columbia.edu/tag/0F19) in the Stacks Project.
 
-**`Stacks.Cohomology.MayerVietoris.isCSquareIso_ofLe_of_isPushout`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/DescentForACoarserTopology.lean, line 151](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/DescentForACoarserTopology.lean#L151).
+**`Stacks.Cohomology.MayerVietoris.isCSquareIso_ofLe_of_isPushout`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/DescentForACoarserTopology.lean, line 151](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/MayerVietoris/DescentForACoarserTopology.lean#L151).
 
 > **Stacks 0F19.** Let `J' ≤ J` be two topologies on `C` and let `𝒪` be a sheaf of rings for
 > `J`, so that the identity of `C` is a comparison `ε : (C_J, 𝒪_J) ⟶ (C_{J'}, 𝒪_{J'})`. Let a
@@ -351,4 +351,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 21.29, Tag 0F17](https://stacks.math.columbia.edu/tag/0F17)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

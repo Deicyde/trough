@@ -8,13 +8,13 @@ proof: formalized
 
 # 69.21 Ample invertible sheaves and cohomology
 
-Section 69.21 of the Stacks Project, [Tag 0GF9](https://stacks.math.columbia.edu/tag/0GF9). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 69.21 of the Stacks Project, [Tag 0GF9](https://stacks.math.columbia.edu/tag/0GF9). 2 tags here are carried by 2 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0GFA, a lemma
 
 [Tag 0GFA](https://stacks.math.columbia.edu/tag/0GFA) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.tfae_isAmple_of_isProper_toAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AmpleTwistVanishing.lean, line 302](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AmpleTwistVanishing.lean#L302).
+**`AlgebraicGeometry.Space.tfae_isAmple_of_isProper_toAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AmpleTwistVanishing.lean, line 302](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AmpleTwistVanishing.lean#L302).
 
 > **Stacks 0GFA.**  Let `X` be an algebraic space proper over a Noetherian ring `R` — here an
 > affine object `V` of the site with `Γ(V, 𝒪_V) = R` Noetherian and a proper `f : X ⟶ h_V` — and let
@@ -63,7 +63,7 @@ theorem tfae_isAmple_of_isProper_toAffine
 
 [Tag 0GFB](https://stacks.math.columbia.edu/tag/0GFB) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_isAmple_iff_exists_isAmple_modulePullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AmpleFiniteSurjective.lean, line 241](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/AmpleFiniteSurjective.lean#L241).
+**`AlgebraicGeometry.Space.exists_isAmple_iff_exists_isAmple_modulePullback`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/AmpleFiniteSurjective.lean, line 241](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/AmpleFiniteSurjective.lean#L241).
 
 > **Stacks 0GFB.**  Let `R` be a Noetherian ring, `X` an algebraic space proper over `R` — a
 > proper `pX : X ⟶ h_V` with `V` affine and `Γ(V, 𝒪_V) = R` — and `f : Y ⟶ X` a finite surjective
@@ -102,4 +102,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 69.21, Tag 0GF9](https://stacks.math.columbia.edu/tag/0GF9)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

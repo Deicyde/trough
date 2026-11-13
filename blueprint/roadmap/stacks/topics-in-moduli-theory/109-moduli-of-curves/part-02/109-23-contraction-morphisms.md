@@ -8,13 +8,13 @@ proof: formalized
 
 # 109.23 Contraction morphisms
 
-Section 109.23 of the Stacks Project, [Tag 0E7B](https://stacks.math.columbia.edu/tag/0E7B). 5 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 109.23 of the Stacks Project, [Tag 0E7B](https://stacks.math.columbia.edu/tag/0E7B). 5 tags here are carried by 6 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0E88, a lemma
 
 [Tag 0E88](https://stacks.math.columbia.edu/tag/0E88) in the Stacks Project.
 
-**`AlgebraicGeometry.CurveFamily.exists_isOpen_forall_isStructureContraction_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurveFamilyContractionOpen.lean, line 56](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/CurveFamilyContractionOpen.lean#L56).
+**`AlgebraicGeometry.CurveFamily.exists_isOpen_forall_isStructureContraction_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/CurveFamilyContractionOpen.lean, line 56](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/CurveFamilyContractionOpen.lean#L56).
 
 > Let `S` be a scheme, `s ∈ S`, and `c : X ⟶ Y` a morphism over `S` of families of curves. If
 > `c_{s,*}𝒪_{X_s} = 𝒪_{Y_s}` and `R¹c_{s,*}𝒪_{X_s} = 0`, there is an open neighbourhood `W` of `s`
@@ -46,7 +46,7 @@ theorem exists_isOpen_forall_isStructureContraction_baseChange
 
 [Tag 0E89](https://stacks.math.columbia.edu/tag/0E89) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.exists_iso_near_point_of_iso_fibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ContractionUniquenessNearPoint.lean, line 415](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ContractionUniquenessNearPoint.lean#L415). The attribute's comment: “Families of curves are read as in `AlgebraicGeometry.CurveFamily` (Stacks 0D4Z): algebraic spaces `X`, `Y₁`, `Y₂` with morphisms to `S` which are flat, proper, of finite presentation and of relative dimension at most one. The fibres over `s` are the fibre products along `Spec κ(s) ⟶ S`; the hypotheses on `c₁,ₛ` are read on the morphism of schemes presenting it (the fibres being schemes by Stacks 0ADD).”.
+**`AlgebraicGeometry.Space.exists_iso_near_point_of_iso_fibre`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ContractionUniquenessNearPoint.lean, line 415](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/ContractionUniquenessNearPoint.lean#L415). The attribute's comment: “Families of curves are read as in `AlgebraicGeometry.CurveFamily` (Stacks 0D4Z): algebraic spaces `X`, `Y₁`, `Y₂` with morphisms to `S` which are flat, proper, of finite presentation and of relative dimension at most one. The fibres over `s` are the fibre products along `Spec κ(s) ⟶ S`; the hypotheses on `c₁,ₛ` are read on the morphism of schemes presenting it (the fibres being schemes by Stacks 0ADD).”.
 
 > Let `S` be a scheme and `s ∈ S` a point. Let `f : X ⟶ S` and `gᵢ : Yᵢ ⟶ S`, `i = 1, 2`, be
 > families of curves (algebraic spaces, flat, proper, of finite presentation and of relative
@@ -74,7 +74,6 @@ theorem exists_iso_near_point_of_iso_fibre (S : BigFppfOver B integerBase hZ) (s
     (hd₁ : HasRelativeDimensionLE 1 B integerBase hZ g₁)
     (hfl₂ : IsFlat B integerBase hZ g₂) (hpr₂ : IsProper B integerBase hZ g₂)
     (hfp₂ : IsFinitePresentation B integerBase hZ g₂)
-    (hd₂ : HasRelativeDimensionLE 1 B integerBase hZ g₂)
     (c₁ : X ⟶ Y₁) (c₂ : X ⟶ Y₂) (hc₁ : c₁ ≫ g₁ = f) (hc₂ : c₂ ≫ g₂ = f)
     {FX F₁ : BigFppfOver B integerBase hZ}
     (eX : yoneda.obj FX ≅ pullback f (yoneda.map (pointFieldMap S s)))
@@ -118,7 +117,7 @@ theorem exists_iso_near_point_of_iso_fibre (S : BigFppfOver B integerBase hZ) (s
 
 [Tag 0E7C](https://stacks.math.columbia.edu/tag/0E7C) in the Stacks Project.
 
-**`AlgebraicGeometry.CurveFamily.exists_elementaryEtaleNeighborhood_contraction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ContractionExistenceScheme.lean, line 225](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ContractionExistenceScheme.lean#L225).
+**`AlgebraicGeometry.CurveFamily.exists_elementaryEtaleNeighborhood_contraction`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ContractionExistenceScheme.lean, line 225](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/ContractionExistenceScheme.lean#L225).
 
 > Let `F` be a family of curves (Stacks 0D4Z) over a scheme `S` of the site, `s ∈ S`, `X₀` the
 > fibre of `F` over `s` (the cartesian square `ι` over `Spec κ(s) ⟶ S`; the fibre of a family of
@@ -180,7 +179,7 @@ theorem exists_elementaryEtaleNeighborhood_contraction {S : Scheme.{u}} (hS : B.
 
 [Tag 0E8A](https://stacks.math.columbia.edu/tag/0E8A) in the Stacks Project.
 
-**`AlgebraicGeometry.CurveFamily.exists_stabilization_and_existsUnique_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PrestableStabilizationTheorem.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/PrestableStabilizationTheorem.lean#L68). The attribute's comment: “Existence and uniqueness in one statement. `X ⟶ S` is a prestable family of curves whose fibres over all field-valued points have genus `g ≥ 2` (`HasFibresOfGenus`, the genus of a prestable family, Stacks 0E6V). The factorization `X ⟶ Y ⟶ S` is a family of curves `Y` over `S` (same base, `hb`) with `c ≫ g = f`. Condition (1) is `IsUniversalStructureContraction`: for every scheme `S' ⟶ S` of the site and the base change `c' : X' ⟶ Y'`, `𝒪_{Y'} ⟶ c'_*𝒪_{X'}` is an isomorphism and `R¹c'_*𝒪_{X'} = 0` (S' = S gives the condition for c). Condition (2) is `HasStableContractionFibres`, asserted at every field-valued point of `S` (so at every `s ∈ S` through `Spec κ(s)`): the fibre `c_s` satisfies the three conditions of Stacks 0E7Q, which characterize the contraction of rational tails and bridges of Section 0E7N up to unique isomorphism (`exists_isStableContraction_comp_tails_bridges`). Uniqueness up to unique isomorphism: for any two such `cᵢ : X ⟶ Yᵢ` (the targets need not be assumed stable) there is exactly one isomorphism `e : Y₁ ≅ Y₂` over `S` with `c₁ ≫ e = c₂`.”.
+**`AlgebraicGeometry.CurveFamily.exists_stabilization_and_existsUnique_iso`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/PrestableStabilizationTheorem.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/PrestableStabilizationTheorem.lean#L68). The attribute's comment: “Existence and uniqueness in one statement. `X ⟶ S` is a prestable family of curves whose fibres over all field-valued points have genus `g ≥ 2` (`HasFibresOfGenus`, the genus of a prestable family, Stacks 0E6V). The factorization `X ⟶ Y ⟶ S` is a family of curves `Y` over `S` (same base, `hb`) with `c ≫ g = f`. Condition (1) is `IsUniversalStructureContraction`: for every scheme `S' ⟶ S` of the site and the base change `c' : X' ⟶ Y'`, `𝒪_{Y'} ⟶ c'_*𝒪_{X'}` is an isomorphism and `R¹c'_*𝒪_{X'} = 0` (S' = S gives the condition for c). Condition (2) is `HasStableContractionFibres`, asserted at every field-valued point of `S` (so at every `s ∈ S` through `Spec κ(s)`): the fibre `c_s` satisfies the three conditions of Stacks 0E7Q, which characterize the contraction of rational tails and bridges of Section 0E7N up to unique isomorphism (`exists_isStableContraction_comp_tails_bridges`). Uniqueness up to unique isomorphism: for any two such `cᵢ : X ⟶ Yᵢ` (the targets need not be assumed stable) there is exactly one isomorphism `e : Y₁ ≅ Y₂` over `S` with `c₁ ≫ e = c₂`.”.
 
 > Let `X ⟶ S` be a prestable family of curves of genus `g ≥ 2`. Then there are a stable family
 > of curves `Y ⟶ S` and a morphism `c : X ⟶ Y` over `S` such that
@@ -217,7 +216,7 @@ theorem exists_stabilization_and_existsUnique_iso
 
 [Tag 0E8B](https://stacks.math.columbia.edu/tag/0E8B) in the Stacks Project.
 
-**`AlgebraicGeometry.stabilizationMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ModuliStabilization.lean, line 103](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ModuliStabilization.lean#L103). The attribute's comment: “the stabilization morphism Curves^\{prestable}\_g → Mbar\_g”.
+**`AlgebraicGeometry.stabilizationMorphism`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ModuliStabilization.lean, line 103](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/ModuliStabilization.lean#L103). The attribute's comment: “the stabilization morphism Curves^\{prestable}\_g → Mbar\_g”.
 
 > For `g ≥ 2`, the stabilization morphism `Curves^{prestable}_g ⟶ 𝓜̄_g` of stacks over `ℤ`, a
 > 1-morphism of categories fibred in groupoids over the big fppf site of `Spec(ℤ)`. It sends a
@@ -229,7 +228,7 @@ def stabilizationMorphism (g : ℕ) (hg : 2 ≤ g) :
     curvesPrestableOfGenus B hZ g ⟶ moduliStableCurvesOfGenus B hZ g
 ```
 
-**`AlgebraicGeometry.stabilizationMorphism_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ModuliStabilization.lean, line 115](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Quot/ModuliStabilization.lean#L115). The attribute's comment: “it sends a prestable family X → S of genus g to its stable model Y → S of 0E8A”.
+**`AlgebraicGeometry.stabilizationMorphism_obj`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Quot/ModuliStabilization.lean, line 115](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Quot/ModuliStabilization.lean#L115). The attribute's comment: “it sends a prestable family X → S of genus g to its stable model Y → S of 0E8A”.
 
 > The stabilization morphism sends a prestable family of curves `X → S` of genus `g ≥ 2` to a
 > stable family `Y → S` over the same base together with a morphism `c : X → Y` over `S` which is the
@@ -252,4 +251,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 109.23, Tag 0E7B](https://stacks.math.columbia.edu/tag/0E7B)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

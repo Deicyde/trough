@@ -1,20 +1,20 @@
 ---
 declaration: section
 origin: cited
-lean: Stacks.Cohomology.CompactObjects.exists_retract_finiteComplex_of_isCompactObject, Stacks.Cohomology.exists_retract_finiteComplex_extensionByZero_of_isCompactObject, Stacks.Cohomology.extensionByZero_unit_hom_coproduct_bijective, Stacks.Cohomology.extensionByZero_unit_hom_coproduct_bijective_of_hasIntersectionsIn, Stacks.Cohomology.CompactExtensionByZero.isCompactObject_singleFunctor_extensionByZeroUnit, Stacks.Cohomology.CompactExtensionByZero.isCompactObject_singleFunctor_extensionByZeroUnit_of_isWeaklyContractible, Stacks.Cohomology.hom_coproduct_bijective_of_isPerfect, Stacks.Cohomology.isCompactObject_of_isPerfect
+lean: Stacks.Cohomology.CompactObjects.exists_retract_finiteComplex_of_isCompactObject, Stacks.Cohomology.exists_retract_finiteComplex_extensionByZero_of_isCompactObject, Stacks.Cohomology.extensionByZero_unit_hom_coproduct_bijective, Stacks.Cohomology.extensionByZero_unit_hom_coproduct_bijective_of_hasIntersectionsIn, Stacks.Cohomology.CompactExtensionByZero.isCompactObject_singleFunctor_extensionByZeroUnit, Stacks.Cohomology.CompactExtensionByZero.isCompactObject_singleFunctor_extensionByZeroUnit_of_isWeaklyContractible, Stacks.Cohomology.QuasiCompactSite.hom_coproduct_bijective_and_isCompactObject_of_isPerfect_of_isQuasiCompactObject
 statement: formalized
 proof: formalized
 ---
 
 # 21.52 Compact objects
 
-Section 21.52 of the Stacks Project, [Tag 0948](https://stacks.math.columbia.edu/tag/0948). 7 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 21.52 of the Stacks Project, [Tag 0948](https://stacks.math.columbia.edu/tag/0948). 7 tags here are carried by 7 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 094B, a lemma
 
 [Tag 094B](https://stacks.math.columbia.edu/tag/094B) in the Stacks Project.
 
-**`Stacks.Cohomology.CompactObjects.exists_retract_finiteComplex_of_isCompactObject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CompactObjects/FromAGeneratingSet.lean, line 650](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CompactObjects/FromAGeneratingSet.lean#L650).
+**`Stacks.Cohomology.CompactObjects.exists_retract_finiteComplex_of_isCompactObject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CompactObjects/FromAGeneratingSet.lean, line 650](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/CompactObjects/FromAGeneratingSet.lean#L650).
 
 > A compact derived object is a summand of a finite complex of finite sums
 > of compact generators of the abelian category.
@@ -39,7 +39,7 @@ public theorem exists_retract_finiteComplex_of_isCompactObject
 
 [Tag 094C](https://stacks.math.columbia.edu/tag/094C) in the Stacks Project.
 
-**`Stacks.Cohomology.exists_retract_finiteComplex_extensionByZero_of_isCompactObject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriekAndPerfection/CompactObjectsOnRingedSites.lean, line 207](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriekAndPerfection/CompactObjectsOnRingedSites.lean#L207).
+**`Stacks.Cohomology.exists_retract_finiteComplex_extensionByZero_of_isCompactObject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriekAndPerfection/CompactObjectsOnRingedSites.lean, line 207](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriekAndPerfection/CompactObjectsOnRingedSites.lean#L207).
 
 > **Stacks 094C.** On a ringed site every object of which is covered by quasi-compact objects,
 > a compact object of the derived category of sheaves of modules is a direct summand of a bounded
@@ -68,7 +68,7 @@ public theorem exists_retract_finiteComplex_extensionByZero_of_isCompactObject
 
 [Tag 0G21](https://stacks.math.columbia.edu/tag/0G21) in the Stacks Project.
 
-**`Stacks.Cohomology.extensionByZero_unit_hom_coproduct_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriekAndPerfection/ExtensionByZeroRelativeCompactness.lean, line 676](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriekAndPerfection/ExtensionByZeroRelativeCompactness.lean#L676).
+**`Stacks.Cohomology.extensionByZero_unit_hom_coproduct_bijective`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriekAndPerfection/ExtensionByZeroRelativeCompactness.lean, line 676](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/LowerShriekAndPerfection/ExtensionByZeroRelativeCompactness.lean#L676).
 
 > Extension by zero of the unit module on `U` is compact with respect to
 > bounded-below direct sums, provided cohomology on `U` commutes with direct sums.
@@ -107,7 +107,7 @@ public theorem extensionByZero_unit_hom_coproduct_bijective
 
 [Tag 0G22](https://stacks.math.columbia.edu/tag/0G22) in the Stacks Project.
 
-**`Stacks.Cohomology.extensionByZero_unit_hom_coproduct_bijective_of_hasIntersectionsIn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CompactnessFromCoverings/CompactnessFromFiniteCoverings.lean, line 370](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CompactnessFromCoverings/CompactnessFromFiniteCoverings.lean#L370).
+**`Stacks.Cohomology.extensionByZero_unit_hom_coproduct_bijective_of_hasIntersectionsIn`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CompactnessFromCoverings/CompactnessFromFiniteCoverings.lean, line 370](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/CompactnessFromCoverings/CompactnessFromFiniteCoverings.lean#L370).
 
 > On a ringed site with a cofinal collection of finite coverings closed under finite
 > intersections, extension by zero of the unit module over `U` is compact with respect to
@@ -141,7 +141,7 @@ public theorem extensionByZero_unit_hom_coproduct_bijective_of_hasIntersectionsI
 
 [Tag 094D](https://stacks.math.columbia.edu/tag/094D) in the Stacks Project.
 
-**`Stacks.Cohomology.CompactExtensionByZero.isCompactObject_singleFunctor_extensionByZeroUnit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CompactObjects/ExtensionByZeroIsCompact.lean, line 768](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CompactObjects/ExtensionByZeroIsCompact.lean#L768).
+**`Stacks.Cohomology.CompactExtensionByZero.isCompactObject_singleFunctor_extensionByZeroUnit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CompactObjects/ExtensionByZeroIsCompact.lean, line 768](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/CompactObjects/ExtensionByZeroIsCompact.lean#L768).
 
 > Let `(C, O)` be a ringed site and `U` an object of `C`. If cohomology over
 > `U` has finite cohomological dimension and `H^p(U, -)` commutes with direct sums for every `p`,
@@ -170,7 +170,7 @@ theorem isCompactObject_singleFunctor_extensionByZeroUnit
 
 [Tag 094E](https://stacks.math.columbia.edu/tag/094E) in the Stacks Project.
 
-**`Stacks.Cohomology.CompactExtensionByZero.isCompactObject_singleFunctor_extensionByZeroUnit_of_isWeaklyContractible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CompactObjects/ExtensionByZeroOverAWeaklyContractibleObject.lean, line 174](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CompactObjects/ExtensionByZeroOverAWeaklyContractibleObject.lean#L174).
+**`Stacks.Cohomology.CompactExtensionByZero.isCompactObject_singleFunctor_extensionByZeroUnit_of_isWeaklyContractible`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CompactObjects/ExtensionByZeroOverAWeaklyContractibleObject.lean, line 174](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/CategoryTheory/Sites/Cohomology/CompactObjects/ExtensionByZeroOverAWeaklyContractibleObject.lean#L174).
 
 > **Stacks 094E.** Let `(C, O)` be a ringed site and let `U` be an object of `C` which is
 > quasi-compact and weakly contractible. Then `j_{U!} O_U`, placed in degree zero, is a compact
@@ -196,165 +196,47 @@ theorem isCompactObject_singleFunctor_extensionByZeroUnit_of_isWeaklyContractibl
 
 [Tag 09JC](https://stacks.math.columbia.edu/tag/09JC) in the Stacks Project.
 
-**`Stacks.Cohomology.hom_coproduct_bijective_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CompactObjects/PerfectObjectsAreCompact.lean, line 317](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CompactObjects/PerfectObjectsAreCompact.lean#L317). The attribute's comment: “(a) bounded-below compactness; assumes the 08JJ reduction, not formalized”.
+**`Stacks.Cohomology.QuasiCompactSite.hom_coproduct_bijective_and_isCompactObject_of_isPerfect_of_isQuasiCompactObject`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CompactObjects/PerfectObjectsOnAQuasiCompactSite.lean, line 302](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Topology/Sheaves/Cohomology/CompactObjects/PerfectObjectsOnAQuasiCompactSite.lean#L302). The attribute's comment: “both clauses, under hypotheses (1)-(3) of the tag; the 08JJ reduction, the Tor amplitude of the dual and the 0739 sums are all proved, none assumed”.
 
-> **Stacks 09JC (a).** Let `(C, O)` be a ringed site, let `B` be a collection of objects of `C`
-> with a cofinal system of finite coverings whose fibre products again lie in `B` — hypotheses (1),
-> (2) and (3) of the tag, with `B` the quasi-compact objects — and let `X₀` be a member of `B`, the
-> quasi-compact final object of the tag. Let `K` be a perfect object of `D(O)`. If `M : I → D(O)`
-> has a bounded-below coproduct, then morphisms from `K` into that coproduct are finite sums,
-> `Hom(K, ⨁ M_i) = ⨁ Hom(K, M_i)`: the object `K` is compact relative to `D⁺(O)`.
+> **Stacks 09JC.** Let `(C, O)` be a ringed site such that
 >
-> The hypothesis `hreduce` is the reduction the source performs, and is what perfectness of `K` is
-> used for: by Stacks 08JJ the dual `K^∨` satisfies
-> `Hom_{D(O)}(K, N) = H⁰(X₀, K^∨ ⊗^L_O N)` naturally in `N`, the functor `T = K^∨ ⊗^L_O -`
-> commutes with direct sums, and `T` keeps a bounded-below coproduct bounded below. None of those
-> three facts is available in this library — see "What this file assumes" in the module
-> documentation — so the reduction is assumed; granted it, this is Stacks 0G22 at `U = X₀`.
-
-```lean
-theorem hom_coproduct_bijective_of_isPerfect
-    (B : Set X.C) (Cov : ∀ U : X.C, Set (PreZeroHypercover.{c} U))
-    (hCov : ∀ (U : X.C) (F : PreZeroHypercover.{c} U), Cov U F → F.sieve₀ ∈ X.J U)
-    (hfinite : ∀ (U : X.C) (F : PreZeroHypercover.{c} U), Cov U F → HasIntersectionsIn B F)
-    (hcofinal : ∀ (U : X.C), B U → ∀ S ∈ X.J U,
-      ∃ F : PreZeroHypercover.{c} U, Cov U F ∧ F.sieve₀ ≤ S)
-    (X₀ : X.C) (hX₀ : B X₀)
-    (K : DerivedCategory (SheafOfModules.{u} (Stacks.SheafOfModules.Tensor.ringSheaf X.O)))
-    (hK : X.IsPerfect K)
-    {I : Type i} [DecidableEq I]
-    (M : I → DerivedCategory (SheafOfModules.{u} (Stacks.SheafOfModules.Tensor.ringSheaf X.O)))
-    [HasCoproduct M]
-    (hreduce : X.IsPerfect K →
-      ∃ T : DerivedCategory (SheafOfModules.{u} (Stacks.SheafOfModules.Tensor.ringSheaf X.O)) ⥤
-          DerivedCategory (SheafOfModules.{u} (Stacks.SheafOfModules.Tensor.ringSheaf X.O)),
-        ∃ _ : PreservesColimit (Discrete.functor M) T,
-          (DerivedCategory.TStructure.t
-            (C := SheafOfModules.{u} (Stacks.SheafOfModules.Tensor.ringSheaf X.O))).plus
-              (T.obj (∐ M)) ∧
-          ∃ e : ∀ N : DerivedCategory
-              (SheafOfModules.{u} (Stacks.SheafOfModules.Tensor.ringSheaf X.O)), (K ⟶ N) ≃+
-              ((DerivedCategory.singleFunctor
-                  (SheafOfModules.{u} (Stacks.SheafOfModules.Tensor.ringSheaf X.O)) 0).obj
-                (extensionByZeroUnit.{u, u, u, u} X.J
-                  (Stacks.SheafOfModules.Tensor.ringSheaf X.O) X₀) ⟶ T.obj N),
-            ∀ {N N' : DerivedCategory
-                (SheafOfModules.{u} (Stacks.SheafOfModules.Tensor.ringSheaf X.O))}
-              (f : K ⟶ N) (g : N ⟶ N'), e N' (f ≫ g) = e N f ≫ T.map g) :
-    Function.Bijective
-      (DirectSum.toAddMonoid fun j => Preadditive.rightComp K (Limits.Sigma.ι M j))
-```
-
-**`Stacks.Cohomology.isCompactObject_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/CategoryTheory/Sites/Cohomology/CompactObjects/PerfectObjectsAreCompact.lean, line 363](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/CategoryTheory/Sites/Cohomology/CompactObjects/PerfectObjectsAreCompact.lean#L363). The attribute's comment: “(b) unbounded compactness; assumes the 08JJ reduction, 0739 sums; not formalized”.
-
-> **Stacks 09JC (b).** Let `(C, O)` be a ringed site, let `X₀` be an object of `C` — the
-> quasi-compact final object of the tag — and let `K` be a perfect object of `D(O)`. If cohomology
-> over `X₀` has finite cohomological dimension, that is `(C, O)` has finite cohomological
-> dimension, and if the functors `F ↦ H^p(X₀, F)` commute with direct sums, then `K` is a compact
-> object of `D(O)`.
+> 1. `C` has a quasi-compact final object `X₀`,
+> 2. every quasi-compact object of `C` has a cofinal system of coverings which are finite and
+>    consist of quasi-compact objects,
+> 3. for a finite covering `{U_i → U}` with `U` and the `U_i` quasi-compact the fibre products
+>    `U_i ×_U U_j` are quasi-compact.
 >
-> The hypothesis `hreduce` is the reduction the source performs, and is what perfectness of `K` is
-> used for: by Stacks 08JJ the dual `K^∨` satisfies
-> `Hom_{D(O)}(K, N) = H⁰(X₀, K^∨ ⊗^L_O N)` naturally in `N`, and `T = K^∨ ⊗^L_O -` commutes with
-> direct sums. Neither fact is available in this library — see "What this file assumes" in the
-> module documentation — so the reduction is assumed; granted it, this is Stacks 094D at `U = X₀`.
-> The hypothesis `hsums` is what hypotheses (2) and (3) of the tag supply through Stacks 0739.
-
-```lean
-theorem isCompactObject_of_isPerfect (X₀ : X.C)
-    (K : DerivedCategory (SheafOfModules.{u} (Stacks.SheafOfModules.Tensor.ringSheaf X.O)))
-    (hK : X.IsPerfect K)
-    (hcd : ∃ d : ℤ, ∀ (p : ℕ)
-      (G : SheafOfModules.{u} (Stacks.SheafOfModules.Tensor.ringSheaf X.O)), d < (p : ℤ) →
-        IsZero (((SheafOfModules.evaluation.{u} (Stacks.SheafOfModules.Tensor.ringSheaf X.O)
-          (op X₀)).rightDerived p).obj G))
-    (hsums : ∀ (p : ℕ) (I : Type w), PreservesColimitsOfShape (Discrete I)
-      ((SheafOfModules.evaluation.{u} (Stacks.SheafOfModules.Tensor.ringSheaf X.O)
-        (op X₀)).rightDerived p))
-    (hreduce : X.IsPerfect K →
-      ∃ T : DerivedCategory (SheafOfModules.{u} (Stacks.SheafOfModules.Tensor.ringSheaf X.O)) ⥤
-          DerivedCategory (SheafOfModules.{u} (Stacks.SheafOfModules.Tensor.ringSheaf X.O)),
-        ∃ _ : ∀ I : Type w, PreservesColimitsOfShape (Discrete I) T,
-          ∃ e : ∀ N : DerivedCategory
-              (SheafOfModules.{u} (Stacks.SheafOfModules.Tensor.ringSheaf X.O)), (K ⟶ N) ≃+
-              ((DerivedCategory.singleFunctor
-                  (SheafOfModules.{u} (Stacks.SheafOfModules.Tensor.ringSheaf X.O)) 0).obj
-                ((SheafOfModules.pullback.{u} (F := Over.forget X₀)
-                  (𝟙 ((Stacks.SheafOfModules.Tensor.ringSheaf X.O).over X₀))).obj
-                    (SheafOfModules.unit ((Stacks.SheafOfModules.Tensor.ringSheaf X.O).over X₀))) ⟶
-                T.obj N),
-            ∀ {N N' : DerivedCategory
-                (SheafOfModules.{u} (Stacks.SheafOfModules.Tensor.ringSheaf X.O))}
-              (f : K ⟶ N) (g : N ⟶ N'), e N' (f ≫ g) = e N f ≫ T.map g) :
-    IsCompactObject.{w} K
-```
-
-**`AlgebraicGeometry.RingedSite.isCompactObject_of_isPerfect_of_isTerminal`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CompactObjects/PerfectDualReduction.lean, line 239](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/CompactObjects/PerfectDualReduction.lean#L239). The attribute's comment: “(b) unbounded compactness of a perfect object, with the 08JJ reduction DISCHARGED rather than assumed; the 0739 commutation of the cohomology functors with direct sums is still a hypothesis here, and is discharged from hypotheses (2) and (3) of the tag in Stacks.Cohomology.QuasiCompactSite.hom\_coproduct\_bijective\_and\_isCompactObject\_of\_isPerfect, which states both clauses”.
-
-> **Stacks 09JC (b).** Let `(C, O)` be a ringed site with a final object `X₀` and let `K` be a
-> perfect object of `D(O)`. If `(C, O)` has finite cohomological dimension, that is
-> `H^p(X₀, F) = 0` for every `O`-module `F` and every `p` beyond a fixed bound, and if the
-> functors `F ↦ H^p(X₀, F)` commute with direct sums, then `K` is a compact object of `D(O)`.
->
-> Unlike `Stacks.Cohomology.isCompactObject_of_isPerfect` this carries no hypothesis standing in
-> for the reduction of Stacks 08JJ: the functor is `- ⊗^L_O K^∨` for the canonical derived tensor
-> product of Stacks 06YU, it commutes with direct sums by
-> `preservesColimitsOfShape_derivedTensorFlip`, and the natural bijection is
-> `derivedDualHomEquivOfIsoStructureSheaf` at the identification
-> `derivedExtensionByZeroUnitIsoStructureSheaf` of `j_{X₀!}O_{X₀}[0]` with `O[0]`. Perfectness of
-> `K` is used exactly where the source uses it, to produce that bijection. What is still a
-> hypothesis, as in the conditional form, is the commutation `hsums` of the higher cohomology
-> functors with direct sums, which the source supplies from Stacks 0739.
-
-```lean
-theorem isCompactObject_of_isPerfect_of_isTerminal (X₀ : X.C) (hX₀ : IsTerminal X₀)
-    (K : DerivedCategory (SheafOfModules.{u} (Stacks.SheafOfModules.Tensor.ringSheaf X.O)))
-    (hK : X.IsPerfect K)
-    (hcd : ∃ d : ℤ, ∀ (p : ℕ)
-      (G : SheafOfModules.{u} (Stacks.SheafOfModules.Tensor.ringSheaf X.O)), d < (p : ℤ) →
-      IsZero (((SheafOfModules.evaluation.{u} (Stacks.SheafOfModules.Tensor.ringSheaf X.O)
-        (op X₀)).rightDerived p).obj G))
-    (hsums : ∀ (p : ℕ) (I : Type u), PreservesColimitsOfShape (Discrete I)
-      ((SheafOfModules.evaluation.{u} (Stacks.SheafOfModules.Tensor.ringSheaf X.O)
-        (op X₀)).rightDerived p)) :
-    IsCompactObject.{u} K
-```
-
-**`Stacks.Cohomology.QuasiCompactSite.hom_coproduct_bijective_and_isCompactObject_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Topology/Sheaves/Cohomology/CompactObjects/PerfectObjectsOnAQuasiCompactSite.lean, line 227](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Topology/Sheaves/Cohomology/CompactObjects/PerfectObjectsOnAQuasiCompactSite.lean#L227).
-
-> **Stacks 09JC.** Let `(C, O)` be a ringed site and assume `C` has the three properties of the
-> tag: a quasi-compact final object `X₀`, a cofinal system of finite coverings by quasi-compact
-> objects for every quasi-compact object, and quasi-compact fibre products inside such a covering.
 > Let `K` be a perfect object of `D(O)`. Then
 >
-> * **(a)** `K` is a compact object of `D⁺(O)` in the sense of the tag: if `M : I → D(O)` is a
->   family whose coproduct `⨁ M_i` is bounded below, then the canonical map
->   `⨁ Hom(K, M_i) → Hom(K, ⨁ M_i)` is bijective; and
+> * **(a)** `K` is a compact object of `D⁺(O)` in the following sense: if `M : I → D(O)` is a
+>   family whose coproduct `M = ⨁ M_i` is bounded below, then the canonical map
+>   `⨁ Hom(K, M_i) → Hom(K, M)` is bijective;
 > * **(b)** if `(C, O)` has finite cohomological dimension, that is if there is a `d` with
 >   `H^p(X₀, F) = 0` for `p > d` and every `O`-module `F`, then `K` is a compact object of `D(O)`.
 >
-> Hypothesis (1) of the tag is `hterm`, `hqc` and `hX₀`; hypotheses (2) and (3) are the covering
-> data `B`, `Cov`, `hCov`, `hcofinal` and `hfinite`, `Stacks.Cohomology.HasIntersectionsIn`
-> carrying the finiteness clause of (2) together with the whole of (3). See "How the hypotheses of
-> the tag are read" in the module documentation.
+> Quasi-compactness is that of Stacks 090H,
+> `CategoryTheory.GrothendieckTopology.IsQuasiCompactObject`. Hypothesis (1) is `hterm` and
+> `hqc`. Hypothesis (2) is `hcofinal`: every covering sieve of a quasi-compact object is refined by
+> a covering by finitely many quasi-compact objects. Hypothesis (3) is `hfibre`; since a
+> Grothendieck topology, unlike a site in the sense of Stacks 00VH, does not provide the fibre
+> products of a covering, (3) asserts that `U_i ×_U U_j` exists, as a limiting
+> pullback cone, and is quasi-compact.
 >
-> Both clauses rest on the source's reduction to `j_{X₀!}O_{X₀}`, which is
-> `AlgebraicGeometry.RingedSite.derivedDualHomEquivOfIsoStructureSheaf` together with
-> `AlgebraicGeometry.RingedSite.preservesColimitsOfShape_derivedTensorFlip`. Clause (a) then needs
-> the global Tor amplitude of `K^∨`, which is
-> `hasFiniteTorDimension_derivedDual_of_isPerfect` from (1); clause (b) needs the commutation of
-> the cohomology functors over `X₀` with direct sums, which is
-> `preservesCoproducts_rightDerived_evaluation_of_covers` from (2) and (3).
+> The source's proof calls on Stacks 0739 and 0G22 with the quasi-compact objects as `B`; those
+> need every iterated fibre product `U_{i₀} ×_U ⋯ ×_U U_{iₙ}` of such a covering to be quasi-compact,
+> which follows from (3) by base change, `Stacks.Cohomology.hasIntersectionsIn_of_exists_pullback`.
+> The statement is then `hom_coproduct_bijective_and_isCompactObject_of_isPerfect`.
 
 ```lean
-theorem hom_coproduct_bijective_and_isCompactObject_of_isPerfect
-    (B : Set X.C) (Cov : ∀ U : X.C, Set (PreZeroHypercover.{c} U))
-    (hCov : ∀ (U : X.C) (F : PreZeroHypercover.{c} U), Cov U F → F.sieve₀ ∈ X.J U)
-    (hfinite : ∀ (U : X.C) (F : PreZeroHypercover.{c} U), Cov U F →
-      Stacks.Cohomology.HasIntersectionsIn B F)
-    (hcofinal : ∀ (U : X.C), B U → ∀ S ∈ X.J U,
-      ∃ F : PreZeroHypercover.{c} U, Cov U F ∧ F.sieve₀ ≤ S)
-    (X₀ : X.C) (hterm : IsTerminal X₀) (hqc : X.J.IsQuasiCompactObject X₀) (hX₀ : B X₀)
+theorem hom_coproduct_bijective_and_isCompactObject_of_isPerfect_of_isQuasiCompactObject
+    (X₀ : X.C) (hterm : IsTerminal X₀) (hqc : X.J.IsQuasiCompactObject X₀)
+    (hcofinal : ∀ U : X.C, X.J.IsQuasiCompactObject U → ∀ S ∈ X.J U,
+      ∃ F : PreZeroHypercover.{u} U, F.sieve₀ ∈ X.J U ∧ F.sieve₀ ≤ S ∧ Finite F.I₀ ∧
+        ∀ i, X.J.IsQuasiCompactObject (F.X i))
+    (hfibre : ∀ (U : X.C) (F : PreZeroHypercover.{u} U), F.sieve₀ ∈ X.J U → Finite F.I₀ →
+      X.J.IsQuasiCompactObject U → (∀ i, X.J.IsQuasiCompactObject (F.X i)) →
+      ∀ i j, ∃ t : PullbackCone (F.f i) (F.f j), Nonempty (IsLimit t) ∧
+        X.J.IsQuasiCompactObject t.pt)
     (K : DerivedCategory (_root_.SheafOfModules.{u}
       (Stacks.SheafOfModules.Tensor.ringSheaf X.O))) (hK : X.IsPerfect K) :
     (∀ {I : Type u} [DecidableEq I]
@@ -377,4 +259,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 21.52, Tag 0948](https://stacks.math.columbia.edu/tag/0948)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

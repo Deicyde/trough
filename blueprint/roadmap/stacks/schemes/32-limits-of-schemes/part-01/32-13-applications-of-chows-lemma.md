@@ -8,13 +8,13 @@ proof: formalized
 
 # 32.13 Applications of Chow's lemma
 
-Section 32.13 of the Stacks Project, [Tag 0204](https://stacks.math.columbia.edu/tag/0204). 5 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 32.13 of the Stacks Project, [Tag 0204](https://stacks.math.columbia.edu/tag/0204). 5 tags here are carried by 5 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 081F, a lemma
 
 [Tag 081F](https://stacks.math.columbia.edu/tag/081F) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isProper_baseChange_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ChowFiniteType/ModuleSupport.lean, line 202](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ChowFiniteType/ModuleSupport.lean#L202).
+**`AlgebraicGeometry.exists_isProper_baseChange_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ChowFiniteType/ModuleSupport.lean, line 202](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ChowFiniteType/ModuleSupport.lean#L202).
 
 > **Stacks 081F.** Assumptions and notation as in Situation 081D: `D` is a cofiltered inverse
 > system of schemes with affine transition morphisms and limit cone `c`, and `f₀ : X₀ ⟶ Y₀` is a
@@ -42,7 +42,7 @@ theorem exists_isProper_baseChange_of_isLimit
 
 [Tag 09ZR](https://stacks.math.columbia.edu/tag/09ZR) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isLimit_isProper_finitePresentation_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/ProperFinitePresentationLimit.lean, line 66](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/ProperFinitePresentationLimit.lean#L66).
+**`AlgebraicGeometry.exists_isLimit_isProper_finitePresentation_isClosedImmersion`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/ProperFinitePresentationLimit.lean, line 66](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Limits/ProperFinitePresentationLimit.lean#L66).
 
 > **Stacks 09ZR.** A proper morphism onto a quasi-compact, quasi-separated scheme is a directed
 > inverse limit, over that scheme, of proper morphisms of finite presentation whose transition
@@ -65,7 +65,7 @@ theorem exists_isLimit_isProper_finitePresentation_isClosedImmersion
 
 [Tag 0A0P](https://stacks.math.columbia.edu/tag/0A0P) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isLimit_isProper_finiteType_arrow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/ProperLimitOfFiniteTypeOverZ.lean, line 230](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/ProperLimitOfFiniteTypeOverZ.lean#L230).
+**`AlgebraicGeometry.exists_isLimit_isProper_finiteType_arrow`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/ProperLimitOfFiniteTypeOverZ.lean, line 230](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Limits/ProperLimitOfFiniteTypeOverZ.lean#L230).
 
 > **Stacks 0A0P.** A proper morphism onto a quasi-compact and quasi-separated scheme is the
 > inverse limit, over a directed set, of an inverse system of proper morphisms whose targets are of
@@ -90,7 +90,7 @@ theorem exists_isLimit_isProper_finiteType_arrow
 
 [Tag 0EX1](https://stacks.math.columbia.edu/tag/0EX1) in the Stacks Project.
 
-**`AlgebraicGeometry.eventually_isProper_comp_π_app_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/EventuallyProperOverLimit.lean, line 307](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Limits/EventuallyProperOverLimit.lean#L307).
+**`AlgebraicGeometry.eventually_isProper_comp_π_app_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Limits/EventuallyProperOverLimit.lean, line 307](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Limits/EventuallyProperOverLimit.lean#L307).
 
 > **Stacks 0EX1.** Let `X = lim Xᵢ` be the limit of a cofiltered inverse system of quasi-compact
 > and quasi-separated schemes over `S` with affine transition morphisms. A proper morphism
@@ -114,7 +114,7 @@ theorem eventually_isProper_comp_π_app_of_isLimit
 
 [Tag 081G](https://stacks.math.columbia.edu/tag/081G) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isProper_schemeTheoreticSupport_baseChange_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ChowFiniteType/ModuleSupport.lean, line 250](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/ChowFiniteType/ModuleSupport.lean#L250).
+**`AlgebraicGeometry.exists_isProper_schemeTheoreticSupport_baseChange_of_isLimit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/ChowFiniteType/ModuleSupport.lean, line 250](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/ChowFiniteType/ModuleSupport.lean#L250).
 
 > **Stacks 081G.** Assumptions and notation as in Situation 081D, and let `F₀` be a
 > quasi-coherent `O_{X₀}`-module, with `F` and `F_i` its pullbacks to the base changes `X` and
@@ -149,4 +149,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 32.13, Tag 0204](https://stacks.math.columbia.edu/tag/0204)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

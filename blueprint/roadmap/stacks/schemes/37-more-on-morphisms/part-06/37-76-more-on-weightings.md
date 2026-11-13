@@ -8,13 +8,13 @@ proof: formalized
 
 # 37.76 More on weightings
 
-Section 37.76 of the Stacks Project, [Tag 0F3F](https://stacks.math.columbia.edu/tag/0F3F). 9 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 37.76 of the Stacks Project, [Tag 0F3F](https://stacks.math.columbia.edu/tag/0F3F). 9 tags here are carried by 9 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0F3G, a lemma
 
 [Tag 0F3G](https://stacks.math.columbia.edu/tag/0F3G) in the Stacks Project.
 
-**`AlgebraicGeometry.isLocallyConstructible_weighting_levelSet`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/Weighting/LevelSetConstructible.lean, line 657](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/Weighting/LevelSetConstructible.lean#L657).
+**`AlgebraicGeometry.isLocallyConstructible_weighting_levelSet`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/Weighting/LevelSetConstructible.lean, line 657](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/Weighting/LevelSetConstructible.lean#L657).
 
 > **Stacks Project, Tag 0F3G.** The level sets of a weighting of a locally quasi-finite
 > morphism are locally constructible in the source.
@@ -34,7 +34,7 @@ theorem isLocallyConstructible_weighting_levelSet
 
 [Tag 0F3H](https://stacks.math.columbia.edu/tag/0F3H) in the Stacks Project.
 
-**`AlgebraicGeometry.isLocallyConstructible_separableDegreeWeightedFiberSum_levelSet`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/Weighting/FibreSumLevelSetConstructible.lean, line 618](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/Weighting/FibreSumLevelSetConstructible.lean#L618).
+**`AlgebraicGeometry.isLocallyConstructible_separableDegreeWeightedFiberSum_levelSet`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/Weighting/FibreSumLevelSetConstructible.lean, line 618](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/Weighting/FibreSumLevelSetConstructible.lean#L618).
 
 > **Stacks Project, Tag 0F3H.** Each level set of the weighted fibre sum of a weighting of a
 > locally quasi-finite morphism of finite presentation is locally constructible on the target.
@@ -56,7 +56,7 @@ theorem isLocallyConstructible_separableDegreeWeightedFiberSum_levelSet
 
 [Tag 0F3I](https://stacks.math.columbia.edu/tag/0F3I) in the Stacks Project.
 
-**`AlgebraicGeometry.IsWeighting.upperSemicontinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/Weighting/Semicontinuity.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/Weighting/Semicontinuity.lean#L111).
+**`AlgebraicGeometry.IsWeighting.upperSemicontinuous`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/Weighting/Semicontinuity.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/Weighting/Semicontinuity.lean#L111).
 
 > **Stacks Project, Tag 0F3I.** A positive weighting of a locally quasi-finite morphism is
 > upper semicontinuous on its source.
@@ -73,7 +73,7 @@ theorem IsWeighting.upperSemicontinuous
 
 [Tag 0F3J](https://stacks.math.columbia.edu/tag/0F3J) in the Stacks Project.
 
-**`AlgebraicGeometry.lowerSemicontinuous_separableDegreeWeightedFiberSum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/Weighting/Semicontinuity.lean, line 125](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/Weighting/Semicontinuity.lean#L125). References: EGA IV (18.2.8), “semicontinuity of n(y)”.
+**`AlgebraicGeometry.lowerSemicontinuous_separableDegreeWeightedFiberSum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/Weighting/Semicontinuity.lean, line 125](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/Weighting/Semicontinuity.lean#L125). References: EGA IV (18.2.8), “semicontinuity of n(y)”.
 
 > **Stacks Project, Tag 0F3J.** The weighted fibre sum of a positive weighting of a
 > separated, locally quasi-finite morphism with finite fibres is lower semicontinuous.
@@ -91,7 +91,7 @@ theorem lowerSemicontinuous_separableDegreeWeightedFiberSum
 
 [Tag 0F3K](https://stacks.math.columbia.edu/tag/0F3K) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isGreatest_range_separableDegreeWeightedFiberSum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/Weighting/FibreSumMaximum.lean, line 376](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/Weighting/FibreSumMaximum.lean#L376). The attribute's comment: “the target is assumed nonempty”.
+**`AlgebraicGeometry.exists_isGreatest_range_separableDegreeWeightedFiberSum`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/Weighting/FibreSumMaximum.lean, line 376](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/Weighting/FibreSumMaximum.lean#L376). The attribute's comment: “the target is assumed nonempty”.
 
 > **Stacks Project, Tag 0F3K.** The weighted fibre sum of a weighting of a locally quasi-finite
 > morphism with quasi-compact source attains its maximum: its set of values has a greatest
@@ -111,7 +111,7 @@ public theorem exists_isGreatest_range_separableDegreeWeightedFiberSum
 
 [Tag 0F3L](https://stacks.math.columbia.edu/tag/0F3L) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_isFinite_restrict_separableDegreeWeightedFiberSum_maxLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/Weighting/MaximalLocus.lean, line 309](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/Weighting/MaximalLocus.lean#L309).
+**`AlgebraicGeometry.exists_isFinite_restrict_separableDegreeWeightedFiberSum_maxLocus`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/Weighting/MaximalLocus.lean, line 309](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/Weighting/MaximalLocus.lean#L309).
 
 > **Stacks Project, Tag 0F3L.** A separated locally quasi-finite morphism with finite fibres
 > and a positive weighting is finite over the open locus where its weighted fibre sum attains its
@@ -135,7 +135,7 @@ theorem exists_isFinite_restrict_separableDegreeWeightedFiberSum_maxLocus
 
 [Tag 0F3M](https://stacks.math.columbia.edu/tag/0F3M) in the Stacks Project.
 
-**`Algebra.exists_finitePresentation_algebra_universal_for_idempotents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/IdempotentUniversalAlgebra.lean, line 91](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/IdempotentUniversalAlgebra.lean#L91).
+**`Algebra.exists_finitePresentation_algebra_universal_for_idempotents`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/IdempotentUniversalAlgebra.lean, line 91](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/IdempotentUniversalAlgebra.lean#L91).
 
 > **Stacks Project, Tag 0F3M.** A finite, finitely presented algebra has a finitely
 > presented weakly universal base change equipped with an idempotent: every idempotent after an
@@ -159,7 +159,7 @@ theorem Algebra.exists_finitePresentation_algebra_universal_for_idempotents
 
 [Tag 0F3N](https://stacks.math.columbia.edu/tag/0F3N) in the Stacks Project.
 
-**`AlgebraicGeometry.exists_universal_finite_open_subscheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/UniversalFiniteOpen.lean, line 242](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/UniversalFiniteOpen.lean#L242).
+**`AlgebraicGeometry.exists_universal_finite_open_subscheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/UniversalFiniteOpen.lean, line 242](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/WeaklyEtale/UniversalFiniteOpen.lean#L242).
 
 > **Stacks Project, Tag 0F3N.** A quasi-finite morphism of finite presentation between affine
 > schemes admits a base change of finite presentation carrying a universal finite open subscheme:
@@ -187,7 +187,7 @@ theorem exists_universal_finite_open_subscheme
 
 [Tag 0F3P](https://stacks.math.columbia.edu/tag/0F3P) in the Stacks Project.
 
-**`AlgebraicGeometry.eventually_exists_weighting_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/Weighting/LimitDescent/FiniteStage.lean, line 495](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/MoreMorphisms/Weighting/LimitDescent/FiniteStage.lean#L495).
+**`AlgebraicGeometry.eventually_exists_weighting_baseChange`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/MoreMorphisms/Weighting/LimitDescent/FiniteStage.lean, line 495](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/MoreMorphisms/Weighting/LimitDescent/FiniteStage.lean#L495).
 
 > A weighting on the limit base change of a quasi-finite finitely presented
 > morphism of affine schemes comes from a weighting at every sufficiently late
@@ -224,4 +224,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 37.76, Tag 0F3F](https://stacks.math.columbia.edu/tag/0F3F)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

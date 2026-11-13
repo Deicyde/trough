@@ -8,13 +8,13 @@ proof: formalized
 
 # 15.125 Extensions of valuation rings
 
-Section 15.125 of the Stacks Project, [Tag 0ASF](https://stacks.math.columbia.edu/tag/0ASF). 6 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 15.125 of the Stacks Project, [Tag 0ASF](https://stacks.math.columbia.edu/tag/0ASF). 6 tags here are carried by 10 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0ASG, a definition
 
 [Tag 0ASG](https://stacks.math.columbia.edu/tag/0ASG) in the Stacks Project.
 
-**`ValuationRing.IsExtension`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Valuation/Extension/Defs.lean, line 43](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Valuation/Extension/Defs.lean#L43). The attribute's comment: “extension of valuation rings”.
+**`ValuationRing.IsExtension`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Valuation/Extension/Defs.lean, line 43](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Valuation/Extension/Defs.lean#L43). The attribute's comment: “extension of valuation rings”.
 
 > An extension of valuation rings is an injective local ring homomorphism.
 
@@ -25,7 +25,7 @@ def IsExtension {A : Type u} {B : Type v}
     (f : A →+* B) : Prop
 ```
 
-**`ValuationRing.valueGroupMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Valuation/Extension/Defs.lean, line 52](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Valuation/Extension/Defs.lean#L52). The attribute's comment: “map on value groups”.
+**`ValuationRing.valueGroupMap`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Valuation/Extension/Defs.lean, line 52](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Valuation/Extension/Defs.lean#L52). The attribute's comment: “map on value groups”.
 
 > The canonical homomorphism `Γ_A → Γ_B` induced by an extension of valuation
 > rings. Here `K` and `L` are arbitrary fraction fields of `A` and `B`, respectively.
@@ -40,7 +40,7 @@ noncomputable def valueGroupMap {A : Type u} {B : Type v} {K : Type w} {L : Type
     (ValueGroup A K)ˣ →* (ValueGroup B L)ˣ
 ```
 
-**`ValuationRing.IsWeaklyUnramified`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Valuation/Extension/Defs.lean, line 86](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Valuation/Extension/Defs.lean#L86). The attribute's comment: “weakly unramified”.
+**`ValuationRing.IsWeaklyUnramified`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Valuation/Extension/Defs.lean, line 86](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Valuation/Extension/Defs.lean#L86). The attribute's comment: “weakly unramified”.
 
 > An extension of valuation rings is weakly unramified when its canonical map on value
 > groups is bijective.
@@ -52,7 +52,7 @@ def IsWeaklyUnramified {A : Type u} {B : Type v}
     (f : A →+* B) (hf : IsExtension f) : Prop
 ```
 
-**`ValuationRing.residueDegree`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Valuation/Extension/Defs.lean, line 96](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Valuation/Extension/Defs.lean#L96). The attribute's comment: “residue degree”.
+**`ValuationRing.residueDegree`**, a def in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Valuation/Extension/Defs.lean, line 96](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Valuation/Extension/Defs.lean#L96). The attribute's comment: “residue degree”.
 
 > The residue degree of an extension of valuation rings, namely `[κ_B : κ_A]` for the
 > residue-field map induced by the local homomorphism, and zero when that extension is infinite.
@@ -64,7 +64,7 @@ noncomputable def residueDegree {A : Type u} {B : Type v}
     (f : A →+* B) (hf : IsExtension f) : ℕ
 ```
 
-**`ValuationRing.valueGroupMap_valuation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Valuation/Extension/Defs.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Valuation/Extension/Defs.lean#L108). The attribute's comment: “commutative value-group diagram”.
+**`ValuationRing.valueGroupMap_valuation`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Valuation/Extension/Defs.lean, line 108](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Valuation/Extension/Defs.lean#L108). The attribute's comment: “commutative value-group diagram”.
 
 > The canonical map on value groups sends the valuation class of every nonzero element of
 > the smaller valuation ring to the valuation class of its image. This is the commutative square
@@ -87,7 +87,7 @@ theorem valueGroupMap_valuation {A : Type u} {B : Type v} {K : Type w} {L : Type
 
 [Tag 0ASH](https://stacks.math.columbia.edu/tag/0ASH) in the Stacks Project.
 
-**`ext_valuation_rings_degree_ineq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Valuation/Extension/FundamentalInequality.lean, line 392](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Valuation/Extension/FundamentalInequality.lean#L392).
+**`ext_valuation_rings_degree_ineq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Valuation/Extension/FundamentalInequality.lean, line 392](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Valuation/Extension/FundamentalInequality.lean#L392).
 
 > Let `A ⊆ B` be an extension of valuation rings with fraction fields `K ⊆ L`, and assume the
 > field extension `L/K` is finite. Then:
@@ -121,7 +121,7 @@ theorem ext_valuation_rings_degree_ineq
 
 [Tag 0H37](https://stacks.math.columbia.edu/tag/0H37) in the Stacks Project.
 
-**`integralClosure_isValuationRing_of_isPurelyInseparable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Valuation/Extension/PurelyInseparable.lean, line 115](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Valuation/Extension/PurelyInseparable.lean#L115).
+**`integralClosure_isValuationRing_of_isPurelyInseparable`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Valuation/Extension/PurelyInseparable.lean, line 115](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Valuation/Extension/PurelyInseparable.lean#L115).
 
 > Let `A` be a valuation ring with fraction field `K` of exponential characteristic `p`, and
 > let `L/K` be a purely inseparable field extension. Then the integral closure `B` of `A` in `L`
@@ -144,7 +144,7 @@ theorem integralClosure_isValuationRing_of_isPurelyInseparable [ExpChar K p] [Is
 
 [Tag 0ASI](https://stacks.math.columbia.edu/tag/0ASI) in the Stacks Project.
 
-**`ValuationRing.exists_eq_unit_mul_pow_of_flat_local`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Valuation/Extension/Descent.lean, line 310](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Valuation/Extension/Descent.lean#L310).
+**`ValuationRing.exists_eq_unit_mul_pow_of_flat_local`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Valuation/Extension/Descent.lean, line 310](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Valuation/Extension/Descent.lean#L310).
 
 > Let `A → B` be a flat local homomorphism of Noetherian local normal domains. Suppose every
 > height-one prime of `A` has a weakly unramified height-one prime of `B` lying over it. If an
@@ -177,7 +177,7 @@ theorem exists_eq_unit_mul_pow_of_flat_local
 
 [Tag 0ASJ](https://stacks.math.columbia.edu/tag/0ASJ) in the Stacks Project.
 
-**`ValuationRing.isWeaklyUnramified_localization_atPrime_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Valuation/Extension/Etale.lean, line 525](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Valuation/Extension/Etale.lean#L525).
+**`ValuationRing.isWeaklyUnramified_localization_atPrime_of_etale`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Valuation/Extension/Etale.lean, line 524](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Valuation/Extension/Etale.lean#L524).
 
 > **Stacks Tag 0ASJ.** If `A` is a valuation ring, `A → B` is étale, and `m` is a
 > prime of `B` lying over the maximal ideal of `A`, then the canonical map from `A` to `Bₘ` is
@@ -200,7 +200,7 @@ theorem isWeaklyUnramified_localization_atPrime_of_etale
 
 [Tag 0ASK](https://stacks.math.columbia.edu/tag/0ASK) in the Stacks Project.
 
-**`ValuationRing.isWeaklyUnramified_henselization_and_strictHenselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Valuation/Extension/Etale.lean, line 1037](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/Valuation/Extension/Etale.lean#L1037).
+**`ValuationRing.isWeaklyUnramified_henselization_and_strictHenselization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/RingTheory/Valuation/Extension/Etale.lean, line 1036](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/Valuation/Extension/Etale.lean#L1036).
 
 > **Stacks Tag 0ASK.** The henselization and strict henselization of a valuation ring are
 > valuation rings, and both canonical inclusions induce bijections on value groups.
@@ -231,4 +231,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 15.125, Tag 0ASF](https://stacks.math.columbia.edu/tag/0ASF)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

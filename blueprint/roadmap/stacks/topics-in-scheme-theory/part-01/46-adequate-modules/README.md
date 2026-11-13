@@ -1,6 +1,6 @@
 # 46 Adequate Modules
 
-Chapter 46 of the Stacks Project, *Adequate Modules*, [Tag 06Z1](https://stacks.math.columbia.edu/tag/06Z1): the 8 sections of its 10 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 69 tags are carried by 159 declarations of the repository (all in StacksFrontier) and 4 registered declarations.
+Chapter 46 of the Stacks Project, *Adequate Modules*, [Tag 06Z1](https://stacks.math.columbia.edu/tag/06Z1): the 8 sections of its 10 with a tag that a declaration carries, one article each, in the Stacks Project's order. Their 69 tags are carried by 157 declarations of the repository (all in StacksFrontier) and 4 registered declarations.
 
 - [46.3 Adequate functors](46-3-adequate-functors.md)
 - [46.4 Higher exts of adequate functors](46-4-higher-exts-of-adequate-functors.md)

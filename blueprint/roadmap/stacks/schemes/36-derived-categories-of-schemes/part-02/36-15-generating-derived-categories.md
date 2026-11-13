@@ -8,13 +8,13 @@ proof: formalized
 
 # 36.15 Generating derived categories
 
-Section 36.15 of the Stacks Project, [Tag 09IP](https://stacks.math.columbia.edu/tag/09IP). 4 tags here are carried by 19 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 36.15 of the Stacks Project, [Tag 09IP](https://stacks.math.columbia.edu/tag/09IP). 4 tags here are carried by 18 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 09IQ, a lemma
 
 [Tag 09IQ](https://stacks.math.columbia.edu/tag/09IQ) in the Stacks Project.
 
-**`Stacks.DerivedQCoh.AnyModel.exists_isPerfect_retract_derivedRestrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/AnyModel/PerfectSummandOfRestriction.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedQCoh/AnyModel/PerfectSummandOfRestriction.lean#L79).
+**`Stacks.DerivedQCoh.AnyModel.exists_isPerfect_retract_derivedRestrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/AnyModel/PerfectSummandOfRestriction.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedQCoh/AnyModel/PerfectSummandOfRestriction.lean#L79).
 
 > **[Stacks, Tag 09IQ].** Let `X` be a quasi-compact quasi-separated scheme and `U ⊆ X` a
 > quasi-compact open. Every perfect object `P` of `D(𝒪_U)` is a direct summand -- a retract -- of
@@ -33,7 +33,7 @@ theorem exists_isPerfect_retract_derivedRestrict {X : Scheme.{u}} [CompactSpace 
         (p : (Stacks.Duality.OpenImmersion.derivedRestrict U.ι).obj R ⟶ P), i ≫ p = 𝟙 P
 ```
 
-**`Stacks.DerivedQCoh.OpenLift.exists_isPerfectComplex_retract_of_isPerfect_of_qcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/OpenLift/QcqsSummandOfRestriction.lean, line 459](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedQCoh/OpenLift/QcqsSummandOfRestriction.lean#L459). The attribute's comment: “the perfect object on X exhibited by a perfect complex; any model of D(O\_U)”.
+**`Stacks.DerivedQCoh.OpenLift.exists_isPerfectComplex_retract_of_isPerfect_of_qcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/OpenLift/QcqsSummandOfRestriction.lean, line 459](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedQCoh/OpenLift/QcqsSummandOfRestriction.lean#L459). The attribute's comment: “the perfect object on X exhibited by a perfect complex; any model of D(O\_U)”.
 
 > **[Stacks, Tag 09IQ].** Let `X` be a quasi-compact and quasi-separated scheme and `U ⊆ X` a
 > quasi-compact open. Every perfect object `P` of `D(𝒪_U)` is a direct summand -- a retract -- of
@@ -53,7 +53,7 @@ theorem exists_isPerfectComplex_retract_of_isPerfect_of_qcqs (X : Scheme.{u}) [C
           M)))
 ```
 
-**`Stacks.DerivedQCoh.OpenLift.exists_isPerfect_retract_derivedRestrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/OpenLift/QcqsSummandOfRestriction.lean, line 484](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedQCoh/OpenLift/QcqsSummandOfRestriction.lean#L484). The attribute's comment: “in D(O\_X), at any models of the two derived categories”.
+**`Stacks.DerivedQCoh.OpenLift.exists_isPerfect_retract_derivedRestrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/OpenLift/QcqsSummandOfRestriction.lean, line 484](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedQCoh/OpenLift/QcqsSummandOfRestriction.lean#L484). The attribute's comment: “in D(O\_X), at any models of the two derived categories”.
 
 > **[Stacks, Tag 09IQ], in `D(𝒪_X)`.** Let `X` be a quasi-compact and quasi-separated scheme
 > and `U ⊆ X` a quasi-compact open. Every perfect object `P` of `D(𝒪_U)` is a retract of the
@@ -70,7 +70,7 @@ theorem exists_isPerfect_retract_derivedRestrict (X : Scheme.{u}) [CompactSpace 
       Nonempty (Retract P ((Scheme.Modules.restrictFunctor U.ι).mapDerivedCategory.obj R))
 ```
 
-**`Stacks.DerivedQCoh.OpenLift.exists_isPerfectComplex_retract_restrict_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/OpenLift/SummandOfRestriction.lean, line 76](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedQCoh/OpenLift/SummandOfRestriction.lean#L76). The attribute's comment: “for X affine; the quasi-compact quasi-separated case is deduced in the source from 09IM, whose induction over an affine cover needs 08EK and 08EH, neither of which this library has”.
+**`Stacks.DerivedQCoh.OpenLift.exists_isPerfectComplex_retract_restrict_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/OpenLift/SummandOfRestriction.lean, line 76](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedQCoh/OpenLift/SummandOfRestriction.lean#L76). The attribute's comment: “for X affine; the quasi-compact quasi-separated case is deduced in the source from 09IM, whose induction over an affine cover needs 08EK and 08EH, neither of which this library has”.
 
 > **[Stacks, Tag 09IQ] for `X` affine.** Let `X` be an affine scheme and `U ⊆ X` a
 > quasi-compact open. Every perfect object `P` of `D(𝒪_U)` is a direct summand -- a retract -- of
@@ -88,7 +88,7 @@ theorem exists_isPerfectComplex_retract_restrict_of_isPerfect
           U).mapHomologicalComplex (ComplexShape.up ℤ)).obj M)))
 ```
 
-**`Stacks.Duality.OpenImmersion.exists_isPerfect_retract_derivedRestrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/PerfectApproximation/SummandOfRestriction.lean, line 61](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/PerfectApproximation/SummandOfRestriction.lean#L61).
+**`Stacks.Duality.OpenImmersion.exists_isPerfect_retract_derivedRestrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/PerfectApproximation/SummandOfRestriction.lean, line 61](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/PerfectApproximation/SummandOfRestriction.lean#L61).
 
 > **[Stacks, Tag 09IQ].** Let `X` be a quasi-compact quasi-separated scheme and `U ⊆ X` a
 > quasi-compact open. Every perfect object `P` of `D(𝒪_U)` is a direct summand -- a retract -- of
@@ -108,7 +108,7 @@ theorem exists_isPerfect_retract_derivedRestrict (X : Scheme.{u}) [CompactSpace 
 
 [Tag 09IR](https://stacks.math.columbia.edu/tag/09IR) in the Stacks Project.
 
-**`Stacks.Koszul.Truncation.hom_koszulObject_eq_zero_of_isIso_unit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/KoszulOrthogonality/AffineSituation.lean, line 186](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/KoszulOrthogonality/AffineSituation.lean#L186). The attribute's comment: “(1) implies (2)”.
+**`Stacks.Koszul.Truncation.hom_koszulObject_eq_zero_of_isIso_unit`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/KoszulOrthogonality/AffineSituation.lean, line 186](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/KoszulOrthogonality/AffineSituation.lean#L186). The attribute's comment: “(1) implies (2)”.
 
 > **[Stacks, Tag 09IR], the implication "(1) implies (2)".** In Situation [Stacks, Tag 08CZ],
 > if the canonical map `E ⟶ Rj_*(E|_U)` is invertible then `Hom_{D(𝒪_X)}(K[n], E) = 0` for every
@@ -126,7 +126,7 @@ theorem hom_koszulObject_eq_zero_of_isIso_unit
     ∀ (n : ℤ) (g : (koszulObject f)⟦n⟧ ⟶ E), g = 0
 ```
 
-**`Stacks.Koszul.Truncation.isIso_unit_of_hom_koszulObject_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/KoszulOrthogonality/AffineSituation.lean, line 261](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/KoszulOrthogonality/AffineSituation.lean#L261). The attribute's comment: “(2) implies (1)”.
+**`Stacks.Koszul.Truncation.isIso_unit_of_hom_koszulObject_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/KoszulOrthogonality/AffineSituation.lean, line 261](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/KoszulOrthogonality/AffineSituation.lean#L261). The attribute's comment: “(2) implies (1)”.
 
 > **[Stacks, Tag 09IR], the implication "(2) implies (1)".** In Situation [Stacks, Tag 08CZ],
 > let `E` be an object of `D_QCoh(𝒪_X)`, that is one whose cohomology sheaves are quasi-coherent.
@@ -162,7 +162,7 @@ theorem isIso_unit_of_hom_koszulObject_eq_zero
 
 [Tag 09IS](https://stacks.math.columbia.edu/tag/09IS) in the Stacks Project.
 
-**`Stacks.DerivedQCoh.AnyModel.hasPerfectGenerator_of_qcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/PerfectGeneratorInduction.lean, line 415](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedQCoh/PerfectGeneratorInduction.lean#L415). The attribute's comment: “the generator, in the ObjectProperty.IsWeakTriangulatedGenerator spelling”.
+**`Stacks.DerivedQCoh.AnyModel.hasPerfectGenerator_of_qcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/PerfectGeneratorInduction.lean, line 416](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedQCoh/PerfectGeneratorInduction.lean#L416). The attribute's comment: “the generator, in the ObjectProperty.IsWeakTriangulatedGenerator spelling”.
 
 > **[Stacks, Tag 09IS], the theorem of Bondal and Van den Bergh**, in the form that
 > `D_QCoh(𝒪_X)` is weakly generated by a single perfect object: on a quasi-compact quasi-separated
@@ -179,7 +179,7 @@ theorem hasPerfectGenerator_of_qcqs (X : Scheme.{u}) [CompactSpace X] [QuasiSepa
     HasPerfectGenerator X
 ```
 
-**`Stacks.DerivedQCoh.AnyModel.exists_isPerfect_isZero_iff_forall_hom_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/PerfectGeneratorInduction.lean, line 431](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/DerivedQCoh/PerfectGeneratorInduction.lean#L431).
+**`Stacks.DerivedQCoh.AnyModel.exists_isPerfect_isZero_iff_forall_hom_eq_zero`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/DerivedQCoh/PerfectGeneratorInduction.lean, line 432](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/DerivedQCoh/PerfectGeneratorInduction.lean#L432).
 
 > **[Stacks, Tag 09IS], the theorem of Bondal and Van den Bergh, in the source's own words.**
 > Let `X` be a quasi-compact quasi-separated scheme. There is a perfect object `P` of `D(𝒪_X)` such
@@ -199,7 +199,7 @@ theorem exists_isPerfect_isZero_iff_forall_hom_eq_zero (X : Scheme.{u}) [Compact
           (IsZero E ↔ ∀ (n : ℤ) (g : P⟦n⟧ ⟶ E), g = 0)
 ```
 
-**`Stacks.Duality.AffineGeneration.exists_isCompactObject_isWeakTriangulatedGenerator_of_isAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CompactGeneration/AffineQuasiCoherent.lean, line 370](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/CompactGeneration/AffineQuasiCoherent.lean#L370). The attribute's comment: “FOR AN AFFINE SCHEME ONLY, and with the generator exhibited as a COMPACT rather than a perfect object. The source's induction over the quasi-compact opens, Tag 08DR, is available and so is its generation step, but two of its inputs are not: Tag 09IQ at a quasi-compact quasi-separated scheme (the library has only the affine case, Stacks.DerivedQCoh.OpenLift.exists\_isPerfectComplex\_retract\_restrict\_of\_isPerfect; the source deduces the rest from Tag 09IM, needing Tags 08EK and 08EH, none of the three being present), and the implication perfect implies compact of Tag 09M1, which the source draws from the Hom formula of Tag 08DQ, absent. The generator here is the image of the regular module in degree zero under the comparison of Tag 06Z0, that is the structure sheaf in degree zero, which is the source's generator for an affine scheme; that it is perfect as well as compact is Tag 07LT carried across Tag 06Z0, which is not done here because the library's statement of the affine case of Tag 09M1, AlgebraicGeometry.isCompactObject\_iff\_isPerfect\_spec, is pinned to CategoryTheory.HasDerivedCategory.standard and so speaks of a different derived category. Compactness is what the consumers of the tag ask for”.
+**`Stacks.Duality.AffineGeneration.exists_isCompactObject_isWeakTriangulatedGenerator_of_isAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CompactGeneration/AffineQuasiCoherent.lean, line 370](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/CompactGeneration/AffineQuasiCoherent.lean#L370). The attribute's comment: “FOR AN AFFINE SCHEME ONLY, and with the generator exhibited as a COMPACT rather than a perfect object. The source's induction over the quasi-compact opens, Tag 08DR, is available and so is its generation step, but two of its inputs are not: Tag 09IQ at a quasi-compact quasi-separated scheme (the library has only the affine case, Stacks.DerivedQCoh.OpenLift.exists\_isPerfectComplex\_retract\_restrict\_of\_isPerfect; the source deduces the rest from Tag 09IM, needing Tags 08EK and 08EH, none of the three being present), and the implication perfect implies compact of Tag 09M1, which the source draws from the Hom formula of Tag 08DQ, absent. The generator here is the image of the regular module in degree zero under the comparison of Tag 06Z0, that is the structure sheaf in degree zero, which is the source's generator for an affine scheme; that it is perfect as well as compact is Tag 07LT carried across Tag 06Z0, which is not done here because the library's statement of the affine case of Tag 09M1, AlgebraicGeometry.isCompactObject\_iff\_isPerfect\_spec, is pinned to CategoryTheory.HasDerivedCategory.standard and so speaks of a different derived category. Compactness is what the consumers of the tag ask for”.
 
 > **[Stacks, Tag 09IS] for an affine scheme.** `D_QCoh(𝒪_X)` is generated by a single compact
 > object: there is an object `P` of `D_QCoh(𝒪_X)` which is compact and such that an object of
@@ -219,7 +219,7 @@ theorem exists_isCompactObject_isWeakTriangulatedGenerator_of_isAffine (X : Sche
       IsCompactObject.{u} P ∧ (ObjectProperty.singleton P).IsWeakTriangulatedGenerator
 ```
 
-**`Stacks.Duality.AffineGeneration.isCompactlyGenerated_derivedQuasiCoherent_of_isAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CompactGeneration/AffineQuasiCoherent.lean, line 397](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/CompactGeneration/AffineQuasiCoherent.lean#L397). The attribute's comment: “FOR AN AFFINE SCHEME ONLY, in the IsCompactlyGenerated form of Tag 09SQ and with the generator exhibited as compact rather than perfect; see Stacks.Duality.AffineGeneration.exists\_isCompactObject\_isWeakTriangulatedGenerator\_of\_isAffine for the full caveat”.
+**`Stacks.Duality.AffineGeneration.isCompactlyGenerated_derivedQuasiCoherent_of_isAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CompactGeneration/AffineQuasiCoherent.lean, line 397](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/CompactGeneration/AffineQuasiCoherent.lean#L397). The attribute's comment: “FOR AN AFFINE SCHEME ONLY, in the IsCompactlyGenerated form of Tag 09SQ and with the generator exhibited as compact rather than perfect; see Stacks.Duality.AffineGeneration.exists\_isCompactObject\_isWeakTriangulatedGenerator\_of\_isAffine for the full caveat”.
 
 > **[Stacks, Tag 09IS] for an affine scheme, in the form [Stacks, Tag 09SQ] defines and Brown
 > representability consumes.** `D_QCoh(𝒪_X)` is compactly generated: the one-element family
@@ -237,7 +237,7 @@ theorem isCompactlyGenerated_derivedQuasiCoherent_of_isAffine (X : Scheme.{u}) [
         (SheafOfModules.isQuasicoherent X.ringCatSheaf)).FullSubcategory
 ```
 
-**`Stacks.Duality.AffineGeneration.isCompactlyGenerated_quasiCoherentDerivedCategory_of_isAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CompactGeneration/AffineQuasiCoherent.lean, line 413](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/CompactGeneration/AffineQuasiCoherent.lean#L413). The attribute's comment: “FOR AN AFFINE SCHEME ONLY, in the IsCompactlyGenerated form of Tag 09SQ at the Scheme.Modules spelling of the category, which is the one Tag 0A9E's statement uses; see Stacks.Duality.AffineGeneration.exists\_isCompactObject\_isWeakTriangulatedGenerator\_of\_isAffine for the full caveat”.
+**`Stacks.Duality.AffineGeneration.isCompactlyGenerated_quasiCoherentDerivedCategory_of_isAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CompactGeneration/AffineQuasiCoherent.lean, line 413](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/CompactGeneration/AffineQuasiCoherent.lean#L413). The attribute's comment: “FOR AN AFFINE SCHEME ONLY, in the IsCompactlyGenerated form of Tag 09SQ at the Scheme.Modules spelling of the category, which is the one Tag 0A9E's statement uses; see Stacks.Duality.AffineGeneration.exists\_isCompactObject\_isWeakTriangulatedGenerator\_of\_isAffine for the full caveat”.
 
 > **[Stacks, Tag 09IS] for an affine scheme**, at the spelling of `D_QCoh(𝒪_X)` over
 > `AlgebraicGeometry.Scheme.Modules X` — the one the statement of [Stacks, Tag 0A9E] uses. The two
@@ -250,7 +250,7 @@ theorem isCompactlyGenerated_quasiCoherentDerivedCategory_of_isAffine (X : Schem
     IsCompactlyGenerated.{u} (Stacks.Duality.quasiCoherentDerivedCategory X)
 ```
 
-**`Stacks.Duality.QuasiAffineGeneration.exists_isCompactObject_isWeakTriangulatedGenerator_of_isQuasiAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CompactGeneration/QuasiAffineQuasiCoherent.lean, line 334](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/CompactGeneration/QuasiAffineQuasiCoherent.lean#L334). The attribute's comment: “FOR A QUASI-AFFINE SCHEME, and with the generator exhibited as a COMPACT rather than a perfect object. This weakens the affine hypothesis of Stacks.Duality.AffineGeneration.exists\_isCompactObject\_isWeakTriangulatedGenerator\_of\_isAffine but does NOT reach the tag's quasi-compact quasi-separated statement. The route is the reverse of the source's: compact generation passes DOWN from a scheme to a quasi-compact open of it, by Stacks.Duality.OpenImmersion.isCompactlyGenerated\_quasiCoherentDerivedCategory\_of\_isOpenImmersion, so from the affine case it reaches exactly the schemes with a quasi-compact open immersion into an affine scheme, the quasi-affine ones. The source's own induction over the quasi-compact opens, Tag 08DR, goes the other way and still needs Tag 09IQ at a quasi-compact quasi-separated scheme and the implication perfect implies compact of Tag 09M1, neither of which is in the library; see the implementation notes of StacksFrontier/AlgebraicGeometry/Duality/CompactGeneration/AffineQuasiCoherent.lean. Nothing here needs either: the generator is compact by construction and compactness is what the consumers of the tag ask for”.
+**`Stacks.Duality.QuasiAffineGeneration.exists_isCompactObject_isWeakTriangulatedGenerator_of_isQuasiAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CompactGeneration/QuasiAffineQuasiCoherent.lean, line 335](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/CompactGeneration/QuasiAffineQuasiCoherent.lean#L335). The attribute's comment: “FOR A QUASI-AFFINE SCHEME, and with the generator exhibited as a COMPACT rather than a perfect object. This weakens the affine hypothesis of Stacks.Duality.AffineGeneration.exists\_isCompactObject\_isWeakTriangulatedGenerator\_of\_isAffine but does NOT reach the tag's quasi-compact quasi-separated statement. The route is the reverse of the source's: compact generation passes DOWN from a scheme to a quasi-compact open of it, by Stacks.Duality.OpenImmersion.isCompactlyGenerated\_quasiCoherentDerivedCategory\_of\_isOpenImmersion, so from the affine case it reaches exactly the schemes with a quasi-compact open immersion into an affine scheme, the quasi-affine ones. The source's own induction over the quasi-compact opens, Tag 08DR, goes the other way and still needs Tag 09IQ at a quasi-compact quasi-separated scheme and the implication perfect implies compact of Tag 09M1, neither of which is in the library; see the implementation notes of StacksFrontier/AlgebraicGeometry/Duality/CompactGeneration/AffineQuasiCoherent.lean. Nothing here needs either: the generator is compact by construction and compactness is what the consumers of the tag ask for”.
 
 > **[Stacks, Tag 09IS] for a quasi-affine scheme.** `D_QCoh(𝒪_X)` is generated by a single
 > compact object.
@@ -270,7 +270,7 @@ theorem exists_isCompactObject_isWeakTriangulatedGenerator_of_isQuasiAffine (X :
       IsCompactObject.{u} P ∧ (ObjectProperty.singleton P).IsWeakTriangulatedGenerator
 ```
 
-**`Stacks.Duality.QuasiAffineGeneration.isCompactlyGenerated_quasiCoherentDerivedCategory_of_isQuasiAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CompactGeneration/QuasiAffineQuasiCoherent.lean, line 350](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/CompactGeneration/QuasiAffineQuasiCoherent.lean#L350). The attribute's comment: “FOR A QUASI-AFFINE SCHEME, in the IsCompactlyGenerated form of Tag 09SQ at the Scheme.Modules spelling of the category, which is the one Tag 0A9E's statement uses; see Stacks.Duality.QuasiAffineGeneration.exists\_isCompactObject\_isWeakTriangulatedGenerator\_of\_isQuasiAffine for the full caveat”.
+**`Stacks.Duality.QuasiAffineGeneration.isCompactlyGenerated_quasiCoherentDerivedCategory_of_isQuasiAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CompactGeneration/QuasiAffineQuasiCoherent.lean, line 352](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/CompactGeneration/QuasiAffineQuasiCoherent.lean#L352). The attribute's comment: “FOR A QUASI-AFFINE SCHEME, in the IsCompactlyGenerated form of Tag 09SQ at the Scheme.Modules spelling of the category, which is the one Tag 0A9E's statement uses; see Stacks.Duality.QuasiAffineGeneration.exists\_isCompactObject\_isWeakTriangulatedGenerator\_of\_isQuasiAffine for the full caveat”.
 
 > **[Stacks, Tag 09IS] for a quasi-affine scheme, in the form [Stacks, Tag 09SQ] defines and
 > Brown representability consumes**, at the spelling of `D_QCoh(𝒪_X)` over
@@ -282,7 +282,7 @@ theorem isCompactlyGenerated_quasiCoherentDerivedCategory_of_isQuasiAffine (X : 
     IsCompactlyGenerated.{u} (Stacks.Duality.quasiCoherentDerivedCategory X)
 ```
 
-**`Stacks.Duality.QuasiAffineGeneration.isCompactlyGenerated_derivedQuasiCoherent_of_isQuasiAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CompactGeneration/QuasiAffineQuasiCoherent.lean, line 366](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/CompactGeneration/QuasiAffineQuasiCoherent.lean#L366). The attribute's comment: “FOR A QUASI-AFFINE SCHEME, in the IsCompactlyGenerated form of Tag 09SQ at the SheafOfModules spelling of the category, which is the one Tag 0CR0's hypothesis uses; see Stacks.Duality.QuasiAffineGeneration.exists\_isCompactObject\_isWeakTriangulatedGenerator\_of\_isQuasiAffine for the full caveat”.
+**`Stacks.Duality.QuasiAffineGeneration.isCompactlyGenerated_derivedQuasiCoherent_of_isQuasiAffine`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CompactGeneration/QuasiAffineQuasiCoherent.lean, line 369](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/CompactGeneration/QuasiAffineQuasiCoherent.lean#L369). The attribute's comment: “FOR A QUASI-AFFINE SCHEME, in the IsCompactlyGenerated form of Tag 09SQ at the SheafOfModules spelling of the category, which is the one Tag 0CR0's hypothesis uses; see Stacks.Duality.QuasiAffineGeneration.exists\_isCompactObject\_isWeakTriangulatedGenerator\_of\_isQuasiAffine for the full caveat”.
 
 > **[Stacks, Tag 09IS] for a quasi-affine scheme**, at the spelling of `D_QCoh(𝒪_X)` over
 > `AlgebraicGeometry.SheafOfModules X.ringCatSheaf` — the one the hypothesis of [Stacks, Tag 0CR0]
@@ -297,7 +297,7 @@ theorem isCompactlyGenerated_derivedQuasiCoherent_of_isQuasiAffine (X : Scheme.{
         (SheafOfModules.isQuasicoherent X.ringCatSheaf)).FullSubcategory
 ```
 
-**`Stacks.SheafOfModules.exists_isPerfect_generator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/QcqsPerfectGenerator.lean, line 292](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Perfect/QcqsPerfectGenerator.lean#L292).
+**`Stacks.SheafOfModules.exists_isPerfect_generator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Perfect/QcqsPerfectGenerator.lean, line 292](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Perfect/QcqsPerfectGenerator.lean#L292).
 
 > **[Stacks, Tag 09IS].** Let `X` be a quasi-compact and quasi-separated scheme. Then
 > `D_QCoh(𝒪_X)` has a perfect generator: there is a perfect object `G` of `D(𝒪_X)` such that every
@@ -332,7 +332,7 @@ theorem exists_isPerfect_generator {X : Scheme.{u}}
 
 [Tag 0A9A](https://stacks.math.columbia.edu/tag/0A9A) in the Stacks Project.
 
-**`Stacks.Duality.SupportedGeneration.exists_isPerfect_quasiCoherentSupported_isWeakGenerator_of_qcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CompactGeneration/QcqsPerfectGenerator.lean, line 282](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Duality/CompactGeneration/QcqsPerfectGenerator.lean#L282).
+**`Stacks.Duality.SupportedGeneration.exists_isPerfect_quasiCoherentSupported_isWeakGenerator_of_qcqs`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Duality/CompactGeneration/QcqsPerfectGenerator.lean, line 282](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Duality/CompactGeneration/QcqsPerfectGenerator.lean#L282).
 
 > **[Stacks, Tag 0A9A]** (Rouquier, Theorem 6.8). Let `X` be a quasi-compact and
 > quasi-separated scheme and let `T ⊆ X` be a closed subset such that `X ∖ T` is quasi-compact.
@@ -356,7 +356,7 @@ theorem exists_isPerfect_quasiCoherentSupported_isWeakGenerator_of_qcqs (X : Sch
           (∀ (n : ℤ) (g : P⟦n⟧ ⟶ E), g = 0) → IsZero E
 ```
 
-**`Stacks.Rouquier.exists_isPerfect_isWeakTriangulatedGenerator_supported`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Rouquier/SupportedGeneratorQcqs.lean, line 128](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Rouquier/SupportedGeneratorQcqs.lean#L128). The attribute's comment: “the generator, in the ObjectProperty.IsWeakTriangulatedGenerator spelling”.
+**`Stacks.Rouquier.exists_isPerfect_isWeakTriangulatedGenerator_supported`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Rouquier/SupportedGeneratorQcqs.lean, line 130](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Rouquier/SupportedGeneratorQcqs.lean#L130). The attribute's comment: “the generator is an object of D\_\{QCoh,T}(O\_X), perfect in D(O\_X); generation in the sense of 09SJ, as ObjectProperty.IsWeakTriangulatedGenerator”.
 
 > **The theorem of Rouquier.** Let `X` be a quasi-compact quasi-separated
 > scheme and let `T ⊆ X` be closed with quasi-compact complement. Then `D_{QCoh,T}(𝒪_X)` has a weak
@@ -370,21 +370,6 @@ theorem exists_isPerfect_isWeakTriangulatedGenerator_supported (X : Scheme.{u}) 
         (ObjectProperty.singleton G).IsWeakTriangulatedGenerator
 ```
 
-**`Stacks.Rouquier.exists_isPerfect_isZero_iff_forall_hom_eq_zero_supported`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Rouquier/SupportedGeneratorQcqs.lean, line 145](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Rouquier/SupportedGeneratorQcqs.lean#L145).
-
-> **The theorem of Rouquier, with the generator condition spelled out.** Let `X` be a
-> quasi-compact quasi-separated scheme and let `T ⊆ X` be closed with quasi-compact complement.
-> There is a perfect object `P` of `D(𝒪_X)` such that for every object `E` of `D_{QCoh,T}(𝒪_X)` the
-> following are equivalent: `E = 0`, and `Hom_{D(𝒪_X)}(P⟦n⟧, E) = 0` for all `n : ℤ`.
-
-```lean
-theorem exists_isPerfect_isZero_iff_forall_hom_eq_zero_supported (X : Scheme.{u}) [CompactSpace X]
-    [QuasiSeparatedSpace X] (T : Set X) (hT : IsClosed T) (hTc : IsCompact Tᶜ) :
-    ∃ P : DerivedCategory X.Modules, IsPerfect (X := X.toRingedSpace) P ∧
-      ∀ E : DerivedCategory X.Modules, Stacks.Duality.quasiCoherentSupported X T E →
-        (IsZero E ↔ ∀ (n : ℤ) (g : P⟦n⟧ ⟶ E), g = 0)
-```
-
 ## Depends on
 
 No dependencies are recorded: this chapter reads the repository's source text without running Lean, which edges between declarations need.
@@ -392,4 +377,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 36.15, Tag 09IP](https://stacks.math.columbia.edu/tag/09IP)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

@@ -8,13 +8,13 @@ proof: formalized
 
 # 33.41 Normalization of one dimensional schemes
 
-Section 33.41 of the Stacks Project, [Tag 0C44](https://stacks.math.columbia.edu/tag/0C44). 2 tags here are carried by 20 declarations of the repository (all in StacksFrontier) and 9 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 33.41 of the Stacks Project, [Tag 0C44](https://stacks.math.columbia.edu/tag/0C44). 2 tags here are carried by 20 declarations of the repository (all in StacksFrontier) and 9 registered declarations, quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0C45, a lemma
 
 [Tag 0C45](https://stacks.math.columbia.edu/tag/0C45) in the Stacks Project.
 
-**`AlgebraicGeometry.normalization_of_isLocallyNoetherian_dimension_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/NormalizationNoetherianDimensionOne.lean, line 140](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/NormalizationNoetherianDimensionOne.lean#L140). References: EGA IV (18.9.7.8), “more general”.
+**`AlgebraicGeometry.normalization_of_isLocallyNoetherian_dimension_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/NormalizationNoetherianDimensionOne.lean, line 140](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/NormalizationNoetherianDimensionOne.lean#L140). References: EGA IV (18.9.7.8), “more general”.
 
 > **Stacks Project, Tag 0C45.** Let `X` be a locally Noetherian scheme of dimension `1` and
 > let `ν : X^ν → X` be its normalization. Then
@@ -80,7 +80,7 @@ theorem normalization_of_isLocallyNoetherian_dimension_one (X : Scheme.{u})
 
 [Tag 0C1R](https://stacks.math.columbia.edu/tag/0C1R) in the Stacks Project.
 
-**`AlgebraicGeometry.Scheme.isBirational_normalization_morphismRestrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Birational/RestrictOpen.lean, line 104](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Birational/RestrictOpen.lean#L104). The attribute's comment: “finite\_normalization”.
+**`AlgebraicGeometry.Scheme.isBirational_normalization_morphismRestrict`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Morphisms/Birational/RestrictOpen.lean, line 104](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Birational/RestrictOpen.lean#L104). The attribute's comment: “finite\_normalization”.
 
 > **Stacks Project, Tag 0C1R.** Over every open of a reduced scheme, the normalization
 > morphism is birational.
@@ -91,7 +91,7 @@ public theorem isBirational_normalization_morphismRestrict (X : Scheme.{u}) [IsR
     (V : X.Opens) : IsBirational (X.normalization hX ∣_ V)
 ```
 
-**`Stacks.AlgebraicGeometry.NormalizationQuotient.existsUnique_linearEquiv_quotient_adicCompletion_normalizationPushforwardStalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NormalizationQuotient/Completion.lean, line 138](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/NormalizationQuotient/Completion.lean#L138). The attribute's comment: “quotient\_completion”.
+**`Stacks.AlgebraicGeometry.NormalizationQuotient.existsUnique_linearEquiv_quotient_adicCompletion_normalizationPushforwardStalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NormalizationQuotient/Completion.lean, line 138](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/NormalizationQuotient/Completion.lean#L138). The attribute's comment: “quotient\_completion”.
 
 > **Stacks Project, Tag 0C1R.** Let `X` be a reduced scheme of dimension one with
 > normalization `ν`, let `x ∈ X`, write `A = 𝒪_{X,x}` and `A' = (ν_* 𝒪_{X^ν})_x`, and complete at
@@ -123,7 +123,7 @@ public theorem existsUnique_linearEquiv_quotient_adicCompletion_normalizationPus
             (normalizationPushforwardStalk X hX x) a)
 ```
 
-**`Stacks.AlgebraicGeometry.NormalizationQuotient.normalizationQuotient_iso_coproduct_skyscraperModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NormalizationQuotient/DirectSum.lean, line 60](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/NormalizationQuotient/DirectSum.lean#L60). The attribute's comment: “quotient\_sheaf”.
+**`Stacks.AlgebraicGeometry.NormalizationQuotient.normalizationQuotient_iso_coproduct_skyscraperModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NormalizationQuotient/DirectSum.lean, line 60](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/NormalizationQuotient/DirectSum.lean#L60). The attribute's comment: “quotient\_sheaf”.
 
 > **Stacks Project, Tag 0C1R(2).** For a reduced Nagata scheme of dimension one the quotient
 > `ν_* 𝒪_{X^ν} / 𝒪_X` is the direct sum of the skyscraper sheaves of its stalks at the singular
@@ -141,7 +141,7 @@ public theorem normalizationQuotient_iso_coproduct_skyscraperModule (X : Scheme.
               (finite_irreducibleComponents_of_isNagataScheme X hX) z.1))
 ```
 
-**`Stacks.AlgebraicGeometry.NormalizationQuotient.normalizationQuotientStalk_linearEquiv_quotient_range`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NormalizationQuotient/StalkLength.lean, line 441](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/NormalizationQuotient/StalkLength.lean#L441). The attribute's comment: “delta\_length”.
+**`Stacks.AlgebraicGeometry.NormalizationQuotient.normalizationQuotientStalk_linearEquiv_quotient_range`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NormalizationQuotient/StalkLength.lean, line 441](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/NormalizationQuotient/StalkLength.lean#L441). The attribute's comment: “delta\_length”.
 
 > **Stacks Project, Tag 0C1R.** The stalk of the normalization quotient `ν_* 𝒪_{X^ν} / 𝒪_X`
 > at a point of a reduced scheme is the normalization stalk modulo the image of the local ring.
@@ -161,7 +161,7 @@ public theorem normalizationQuotientStalk_linearEquiv_quotient_range
           (normalizationPushforwardStalk X hX x))))
 ```
 
-**`Stacks.AlgebraicGeometry.NormalizationQuotient.length_normalizationQuotientStalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NormalizationQuotient/StalkLength.lean, line 582](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/NormalizationQuotient/StalkLength.lean#L582). The attribute's comment: “delta\_length”.
+**`Stacks.AlgebraicGeometry.NormalizationQuotient.length_normalizationQuotientStalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NormalizationQuotient/StalkLength.lean, line 582](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/NormalizationQuotient/StalkLength.lean#L582). The attribute's comment: “delta\_length”.
 
 > **Stacks Project, Tag 0C1R.** The length of the stalk of the normalization quotient is the
 > delta invariant of the local ring.
@@ -176,7 +176,7 @@ public theorem length_normalizationQuotientStalk (X : Scheme.{u}) [IsReduced X]
       Ring.deltaInvariant (X.presheaf.stalk x)
 ```
 
-**`Stacks.AlgebraicGeometry.NormalizationQuotient.isFiniteLength_normalizationQuotientStalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NormalizationQuotient/StalkLength.lean, line 625](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/NormalizationQuotient/StalkLength.lean#L625). The attribute's comment: “delta\_length”.
+**`Stacks.AlgebraicGeometry.NormalizationQuotient.isFiniteLength_normalizationQuotientStalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NormalizationQuotient/StalkLength.lean, line 625](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/NormalizationQuotient/StalkLength.lean#L625). The attribute's comment: “delta\_length”.
 
 > **Stacks Project, Tag 0C1R.** On a reduced Nagata scheme of dimension one the stalk of the
 > normalization quotient has finite length.
@@ -191,7 +191,7 @@ public theorem isFiniteLength_normalizationQuotientStalk (X : Scheme.{u}) [IsRed
     IsFiniteLength (X.presheaf.stalk x) (normalizationQuotientStalk X hX x)
 ```
 
-**`Stacks.AlgebraicGeometry.NormalizationQuotientDirectSum.normalizationQuotientIsoCoproductSkyscraper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NormalizationQuotientDirectSum/Basic.lean, line 41](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/NormalizationQuotientDirectSum/Basic.lean#L41). The attribute's comment: “quotient\_sheaf”.
+**`Stacks.AlgebraicGeometry.NormalizationQuotientDirectSum.normalizationQuotientIsoCoproductSkyscraper`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NormalizationQuotientDirectSum/Basic.lean, line 41](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/NormalizationQuotientDirectSum/Basic.lean#L41). The attribute's comment: “quotient\_sheaf”.
 
 > For a reduced Nagata scheme `X` of dimension one, the normalization quotient of `X` is
 > isomorphic to the direct sum, over the singular points `x` of `X`, of the skyscraper modules at
@@ -211,7 +211,7 @@ public theorem normalizationQuotientIsoCoproductSkyscraper (X : Scheme.{u}) [IsR
                 X hX) x.1))
 ```
 
-**`AlgebraicGeometry.existsUnique_algHom_normalizationPushforwardStalk_fractionRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NormalizationStalkAmbient/UniqueEmbedding.lean, line 108](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/NormalizationStalkAmbient/UniqueEmbedding.lean#L108). The attribute's comment: “normalization\_stalk”.
+**`AlgebraicGeometry.existsUnique_algHom_normalizationPushforwardStalk_fractionRing`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/NormalizationStalkAmbient/UniqueEmbedding.lean, line 108](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/NormalizationStalkAmbient/UniqueEmbedding.lean#L108). The attribute's comment: “normalization\_stalk”.
 
 > **Stacks Project, Tag 0C1R.** At a point of a reduced scheme the stalk of the pushforward of
 > the structure sheaf of the normalization carries exactly one injective algebra map into the total
@@ -234,7 +234,7 @@ public theorem existsUnique_algHom_normalizationPushforwardStalk_fractionRing
         f.range = integralClosure (X.presheaf.stalk x) (FractionRing (X.presheaf.stalk x))
 ```
 
-**`AlgebraicGeometry.exists_pi_isDiscreteValuationRing_adicCompletion_normalizationStalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/NormalizationStalkCompletion.lean, line 417](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/NormalizationStalkCompletion.lean#L417). The attribute's comment: “complete\_dvr\_product”.
+**`AlgebraicGeometry.exists_pi_isDiscreteValuationRing_adicCompletion_normalizationStalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/NormalizationStalkCompletion.lean, line 417](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/NormalizationStalkCompletion.lean#L417). The attribute's comment: “complete\_dvr\_product”.
 
 > **Stacks Project, Tag 0C1R.** At a point of a reduced Nagata scheme whose local ring has
 > dimension one, the completion of the stalk of the pushforward of the structure sheaf of the
@@ -260,7 +260,7 @@ public theorem exists_pi_isDiscreteValuationRing_adicCompletion_normalizationSta
           (normalizationPushforwardStalk X hX x) ≃+* ∀ i, D i)
 ```
 
-**`AlgebraicGeometry.exists_injective_range_eq_integralClosure_adicCompletion_normalizationStalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/NormalizationStalkCompletion.lean, line 471](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/NormalizationStalkCompletion.lean#L471). The attribute's comment: “normalization\_after\_completion”. References: EGA IV (7.6.1), “special case”.
+**`AlgebraicGeometry.exists_injective_range_eq_integralClosure_adicCompletion_normalizationStalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/NormalizationStalkCompletion.lean, line 471](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/NormalizationStalkCompletion.lean#L471). The attribute's comment: “normalization\_after\_completion”. References: EGA IV (7.6.1), “special case”.
 
 > **Stacks Project, Tag 0C1R.** Completing the stalk of the pushforward of the structure sheaf
 > of the normalization of a reduced one-dimensional Nagata scheme, along the ideal generated by
@@ -300,7 +300,7 @@ public theorem exists_injective_range_eq_integralClosure_adicCompletion_normaliz
           (∀ a' : A', g (algebraMap A' C a') = q (f₀ a'))
 ```
 
-**`AlgebraicGeometry.Scheme.isFinite_surjective_isBirational_normalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/PrepareDeltaInvariant.lean, line 85](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/PrepareDeltaInvariant.lean#L85). The attribute's comment: “part (1): ν is finite, surjective and birational”. References: EGA II (6.3.8), “special case”.
+**`AlgebraicGeometry.Scheme.isFinite_surjective_isBirational_normalization`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/PrepareDeltaInvariant.lean, line 85](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/PrepareDeltaInvariant.lean#L85). The attribute's comment: “part (1): ν is finite, surjective and birational”. References: EGA II (6.3.8), “special case”.
 
 > **Stacks Project, Tag 0C1R, part (1).** The normalization `ν : X^ν ⟶ X` of a reduced Nagata
 > scheme is finite, surjective and birational.
@@ -315,7 +315,7 @@ public theorem isFinite_surjective_isBirational_normalization (X : Scheme.{u}) [
       IsBirational (X.normalization (finite_irreducibleComponents_of_isNagataScheme X hX))
 ```
 
-**`AlgebraicGeometry.normalizationQuotient_mono_iso_coproduct_skyscraperModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/PrepareDeltaInvariant.lean, line 120](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/PrepareDeltaInvariant.lean#L120). The attribute's comment: “part (2): O\_X ⊂ ν\_*O, the quotient a sum of skyscrapers Q\_x at singular points”.
+**`AlgebraicGeometry.normalizationQuotient_mono_iso_coproduct_skyscraperModule`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/PrepareDeltaInvariant.lean, line 120](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/PrepareDeltaInvariant.lean#L120). The attribute's comment: “part (2): O\_X ⊂ ν\_*O, the quotient a sum of skyscrapers Q\_x at singular points”.
 
 > **Stacks Project, Tag 0C1R, part (2).** For a reduced Nagata scheme `X` of dimension one,
 > `𝒪_X ⊂ ν_* 𝒪_{X^ν}` — the map is a monomorphism both of sheaves of rings and of `𝒪_X`-modules —
@@ -339,7 +339,7 @@ public theorem normalizationQuotient_mono_iso_coproduct_skyscraperModule (X : Sc
           (finite_irreducibleComponents_of_isNagataScheme X hX) x) ↔ x ∈ singularLocus X
 ```
 
-**`AlgebraicGeometry.normalizationQuotientStalk_finiteLength_eq_deltaInvariant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/PrepareDeltaInvariant.lean, line 144](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/PrepareDeltaInvariant.lean#L144). The attribute's comment: “part (4): Q\_x = A'/A has finite length equal to the δ-invariant”.
+**`AlgebraicGeometry.normalizationQuotientStalk_finiteLength_eq_deltaInvariant`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/PrepareDeltaInvariant.lean, line 144](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/PrepareDeltaInvariant.lean#L144). The attribute's comment: “part (4): Q\_x = A'/A has finite length equal to the δ-invariant”.
 
 > **Stacks Project, Tag 0C1R, part (4).** On a reduced Nagata scheme of dimension one, the
 > stalk `𝒬_x` of `ν_* 𝒪_{X^ν} / 𝒪_X` at `x` is `A' / A`, where `A = 𝒪_{X,x}` and
@@ -365,7 +365,7 @@ public theorem normalizationQuotientStalk_finiteLength_eq_deltaInvariant (X : Sc
         Ring.deltaInvariant (X.presheaf.stalk x)
 ```
 
-**`AlgebraicGeometry.normalizationPushforwardStalk_semilocal_finiteProductOfDedekindDomains`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/PrepareDeltaInvariant.lean, line 170](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/PrepareDeltaInvariant.lean#L170). The attribute's comment: “part (5): A' is semi-local and a finite product of Dedekind domains”.
+**`AlgebraicGeometry.normalizationPushforwardStalk_semilocal_finiteProductOfDedekindDomains`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/PrepareDeltaInvariant.lean, line 170](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/PrepareDeltaInvariant.lean#L170). The attribute's comment: “part (5): A' is semi-local and a finite product of Dedekind domains”.
 
 > **Stacks Project, Tag 0C1R, part (5).** On a Nagata scheme of dimension one, the stalk
 > `A' = (ν_* 𝒪_{X^ν})_x` is a semi-local ring — it has finitely many maximal ideals — which is a
@@ -382,7 +382,7 @@ public theorem normalizationPushforwardStalk_semilocal_finiteProductOfDedekindDo
         (normalizationPushforwardStalk X (finite_irreducibleComponents_of_isNagataScheme X hX) x)
 ```
 
-**`AlgebraicGeometry.adicCompletion_stalk_reduced_noetherian_complete_local_dim_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/PrepareDeltaInvariant.lean, line 188](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/PrepareDeltaInvariant.lean#L188). The attribute's comment: “part (6): A^ is reduced Noetherian complete local of dimension 1 (dim A = 1)”. References: EGA IV (7.3.19), “dim(Â)=1”.
+**`AlgebraicGeometry.adicCompletion_stalk_reduced_noetherian_complete_local_dim_one`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/PrepareDeltaInvariant.lean, line 188](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/PrepareDeltaInvariant.lean#L188). The attribute's comment: “part (6): A^ is reduced Noetherian complete local of dimension 1 (dim A = 1)”. References: EGA IV (7.3.19), “dim(Â)=1”.
 
 > **Stacks Project, Tag 0C1R, part (6)**, at a point whose local ring has dimension one. For a
 > reduced Nagata scheme `X` and a point `x` with `dim 𝒪_{X,x} = 1`, the completion `A^∧` of
@@ -408,7 +408,7 @@ public theorem adicCompletion_stalk_reduced_noetherian_complete_local_dim_one (X
               (AdicCompletion (maximalIdeal (X.presheaf.stalk x)) (X.presheaf.stalk x)) = 1
 ```
 
-**`AlgebraicGeometry.adicCompletion_stalk_reduced_noetherian_complete_local_ringKrullDim_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/PrepareDeltaInvariant.lean, line 218](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/PrepareDeltaInvariant.lean#L218). The attribute's comment: “part (6) at every point: A^ reduced Noetherian complete local, dim A^ = dim A ≤ 1”. References: EGA IV (7.3.19), “dim(Â)=1”.
+**`AlgebraicGeometry.adicCompletion_stalk_reduced_noetherian_complete_local_ringKrullDim_eq`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/PrepareDeltaInvariant.lean, line 218](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/PrepareDeltaInvariant.lean#L218). The attribute's comment: “part (6) at every point: A^ reduced Noetherian complete local, dim A^ = dim A ≤ 1”. References: EGA IV (7.3.19), “dim(Â)=1”.
 
 > **Stacks Project, Tag 0C1R, part (6)**, at every point. Let `X` be a reduced Nagata scheme of
 > dimension one, `x ∈ X` and `A = 𝒪_{X,x}`.  The completion `A^∧` of `A` at its maximal ideal is a
@@ -440,7 +440,7 @@ public theorem adicCompletion_stalk_reduced_noetherian_complete_local_ringKrullD
       (ringKrullDim (X.presheaf.stalk x) = 1 ↔ ¬ IsField (X.presheaf.stalk x))
 ```
 
-**`AlgebraicGeometry.exists_injective_range_eq_integralClosure_adicCompletion_normalizationStalk_of_isNagataScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/PrepareDeltaInvariant.lean, line 266](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/PrepareDeltaInvariant.lean#L266). The attribute's comment: “part (7): (A')^ is the integral closure of A^ in its total ring of fractions”.
+**`AlgebraicGeometry.exists_injective_range_eq_integralClosure_adicCompletion_normalizationStalk_of_isNagataScheme`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/PrepareDeltaInvariant.lean, line 266](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/PrepareDeltaInvariant.lean#L266). The attribute's comment: “part (7): (A')^ is the integral closure of A^ in its total ring of fractions”.
 
 > **Stacks Project, Tag 0C1R, part (7).** Let `X` be a reduced Nagata scheme of dimension one,
 > `A = 𝒪_{X,x}` and `A' = (ν_* 𝒪_{X^ν})_x`.  The completion `(A')^∧` of `A'` along `𝔪_A A'` is the
@@ -471,7 +471,7 @@ public theorem
         ∀ y : Ac, g (k y) = algebraMap Ac (FractionRing Ac) y
 ```
 
-**`AlgebraicGeometry.finite_maximalSpectrum_normalizationPushforwardStalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/SemilocalDedekind.lean, line 151](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/SemilocalDedekind.lean#L151). The attribute's comment: “semilocal\_dedekind”.
+**`AlgebraicGeometry.finite_maximalSpectrum_normalizationPushforwardStalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/SemilocalDedekind.lean, line 151](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/SemilocalDedekind.lean#L151). The attribute's comment: “semilocal\_dedekind”.
 
 > **Stacks Project, Tag 0C1R.** The stalk of the pushforward of the structure sheaf of the
 > normalization of a Nagata scheme is semilocal: it has finitely many maximal ideals.
@@ -487,7 +487,7 @@ public theorem finite_maximalSpectrum_normalizationPushforwardStalk
     Finite (MaximalSpectrum (normalizationPushforwardStalk X hX x))
 ```
 
-**`AlgebraicGeometry.isFiniteProductOfDedekindDomains_normalizationPushforwardStalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/SemilocalDedekind.lean, line 174](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/SemilocalDedekind.lean#L174). The attribute's comment: “semilocal\_dedekind”.
+**`AlgebraicGeometry.isFiniteProductOfDedekindDomains_normalizationPushforwardStalk`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/SemilocalDedekind.lean, line 174](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/OneDimensional/SemilocalDedekind.lean#L174). The attribute's comment: “semilocal\_dedekind”.
 
 > **Stacks Project, Tag 0C1R.** On a Nagata scheme of dimension one, the stalk of the
 > pushforward of the structure sheaf of the normalization is a finite product of Dedekind
@@ -505,15 +505,15 @@ public theorem isFiniteProductOfDedekindDomains_normalizationPushforwardStalk
 
 Declarations registered for the tag:
 
-- [`AlgebraicGeometry.Scheme.isFinite_normalization`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/NagataNormalization/Basic.lean#L233), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/Birational/RestrictOpen.lean, line 113](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Birational/RestrictOpen.lean#L113) (StacksFrontier): “finite\_normalization”.
-- [`AlgebraicGeometry.Scheme.surjective_normalization`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/UniversalHomeomorphism.lean#L75), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/Birational/RestrictOpen.lean, line 114](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Morphisms/Birational/RestrictOpen.lean#L114) (StacksFrontier): “finite\_normalization”.
-- [`Stacks.AlgebraicGeometry.Normalization.mono_toRingCatSheafHom_normalization`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/NormalizationMono/Basic.lean#L127), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/NormalizationQuotient/DirectSum.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/NormalizationQuotient/DirectSum.lean#L77) (StacksFrontier): “quotient\_sheaf”.
-- [`normalizationQuotientStalk_nonzero_iff_mem_singularLocus`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=normalizationQuotientStalk_nonzero_iff_mem_singularLocus#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/NormalizationQuotient/DirectSum.lean, line 80](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/NormalizationQuotient/DirectSum.lean#L80) (StacksFrontier): “quotient\_sheaf”.
-- [`AdicCompletion.isNoetherianRing`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/RingTheory/AdicCompletion/NoetherianRing/PowerSeriesSurjection.lean#L236), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/Completion.lean, line 44](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/Completion.lean#L44) (StacksFrontier): “completed\_local\_ring”.
-- [`AdicCompletion.isLocalRing_of_fg`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AdicCompletion.isLocalRing_of_fg#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/Completion.lean, line 45](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/Completion.lean#L45) (StacksFrontier): “completed\_local\_ring”. References: EGA IV (8.11.4), “Â is a local ring”; SGA 3 VIIB (0.1.1), “special case”; SGA 3 X (4.0), “partial”.
-- [`AdicCompletion.isAdicComplete_of_fg`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AdicCompletion.isAdicComplete_of_fg#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/Completion.lean, line 46](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/Completion.lean#L46) (StacksFrontier): “completed\_local\_ring”. References: EGA 0 (7.2.12), “special case”.
-- [`IsLocalRing.isReduced_adicCompletion_maximalIdeal_of_isNagataRing`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/Completion.lean#L55), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/Completion.lean, line 77](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/Completion.lean#L77) (StacksFrontier): “completed\_local\_ring”.
-- [`IsLocalRing.ringKrullDim_adicCompletion_maximalIdeal`](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/Completion.lean#L70), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/Completion.lean, line 79](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/Completion.lean#L79) (StacksFrontier): “completed\_local\_ring”.
+- [`AlgebraicGeometry.Scheme.isFinite_normalization`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/NagataNormalization/Basic.lean#L233), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/Birational/RestrictOpen.lean, line 113](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Birational/RestrictOpen.lean#L113) (StacksFrontier): “finite\_normalization”.
+- [`AlgebraicGeometry.Scheme.surjective_normalization`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Normalization/UniversalHomeomorphism.lean#L75), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Morphisms/Birational/RestrictOpen.lean, line 114](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Morphisms/Birational/RestrictOpen.lean#L114) (StacksFrontier): “finite\_normalization”.
+- [`Stacks.AlgebraicGeometry.Normalization.mono_toRingCatSheafHom_normalization`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/NormalizationMono/Basic.lean#L127), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/NormalizationQuotient/DirectSum.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/NormalizationQuotient/DirectSum.lean#L77) (StacksFrontier): “quotient\_sheaf”.
+- [`normalizationQuotientStalk_nonzero_iff_mem_singularLocus`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=normalizationQuotientStalk_nonzero_iff_mem_singularLocus#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/NormalizationQuotient/DirectSum.lean, line 80](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/NormalizationQuotient/DirectSum.lean#L80) (StacksFrontier): “quotient\_sheaf”.
+- [`AdicCompletion.isNoetherianRing`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/RingTheory/AdicCompletion/NoetherianRing/PowerSeriesSurjection.lean#L236), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/Completion.lean, line 44](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/Completion.lean#L44) (StacksFrontier): “completed\_local\_ring”.
+- [`AdicCompletion.isLocalRing_of_fg`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AdicCompletion.isLocalRing_of_fg#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/Completion.lean, line 45](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/Completion.lean#L45) (StacksFrontier): “completed\_local\_ring”. References: EGA IV (8.11.4), “Â is a local ring”; SGA 3 VIIB (0.1.1), “special case”; SGA 3 X (4.0), “partial”.
+- [`AdicCompletion.isAdicComplete_of_fg`](https://leanprover-community.github.io/mathlib4_docs/find/?pattern=AdicCompletion.isAdicComplete_of_fg#doc) registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/Completion.lean, line 46](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/Completion.lean#L46) (StacksFrontier): “completed\_local\_ring”. References: EGA 0 (7.2.12), “special case”.
+- [`IsLocalRing.isReduced_adicCompletion_maximalIdeal_of_isNagataRing`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/Completion.lean#L55), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/Completion.lean, line 77](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/Completion.lean#L77) (StacksFrontier): “completed\_local\_ring”.
+- [`IsLocalRing.ringKrullDim_adicCompletion_maximalIdeal`](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/Completion.lean#L70), declared in the repository, registered with `add_to_stacks` in [StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/Completion.lean, line 79](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Variety/DeltaInvariant/Completion.lean#L79) (StacksFrontier): “completed\_local\_ring”.
 
 ## Depends on
 
@@ -522,4 +522,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 33.41, Tag 0C44](https://stacks.math.columbia.edu/tag/0C44)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

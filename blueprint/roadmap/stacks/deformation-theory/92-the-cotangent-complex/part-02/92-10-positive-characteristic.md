@@ -8,13 +8,13 @@ proof: formalized
 
 # 92.10 Positive characteristic
 
-Section 92.10 of the Stacks Project, [Tag 0G5X](https://stacks.math.columbia.edu/tag/0G5X). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 92.10 of the Stacks Project, [Tag 0G5X](https://stacks.math.columbia.edu/tag/0G5X). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0G5Y, a lemma
 
 [Tag 0G5Y](https://stacks.math.columbia.edu/tag/0G5Y) in the Stacks Project.
 
-**`CommAlgCat.nonempty_homotopy_frobeniusEndo_squareEndo`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/StandardResolutionFrobeniusHomotopy.lean, line 1236](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/StandardResolutionFrobeniusHomotopy.lean#L1236).
+**`CommAlgCat.nonempty_homotopy_frobeniusEndo_squareEndo`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/StandardResolutionFrobeniusHomotopy.lean, line 1236](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/StandardResolutionFrobeniusHomotopy.lean#L1236).
 
 > **Stacks Project, Tag 0G5Y.** Let `A → B` be a ring map with `p = 0` in `A` for a prime `p`,
 > and let `P_•` be the standard resolution of `B` over `A`. The endomorphism of `P_•` induced by
@@ -33,7 +33,7 @@ public theorem nonempty_homotopy_frobeniusEndo_squareEndo (hp : p.Prime) (A : Ty
 
 [Tag 0G5Z](https://stacks.math.columbia.edu/tag/0G5Z) in the Stacks Project.
 
-**`CommAlgCat.nonempty_homotopy_squareCotangentComplexMap_frobeniusSquare`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/FrobeniusNullHomotopy.lean, line 281](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/FrobeniusNullHomotopy.lean#L281).
+**`CommAlgCat.nonempty_homotopy_squareCotangentComplexMap_frobeniusSquare`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/FrobeniusNullHomotopy.lean, line 281](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/FrobeniusNullHomotopy.lean#L281).
 
 > Let `p` be a prime, let `A → B` be a ring map with `p = 0` in `A`, and let `F_A` and `F_B` be
 > the Frobenius endomorphisms. The endomorphism of the cotangent complex `L_{B/A}` induced by the
@@ -55,7 +55,7 @@ public theorem nonempty_homotopy_squareCotangentComplexMap_frobeniusSquare :
 
 [Tag 0G60](https://stacks.math.columbia.edu/tag/0G60) in the Stacks Project.
 
-**`CommAlgCat.isZero_cotangentComplexDerived_of_perfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PerfectVanishing.lean, line 100](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/Cotangent/PerfectVanishing.lean#L100).
+**`CommAlgCat.isZero_cotangentComplexDerived_of_perfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/Cotangent/PerfectVanishing.lean, line 100](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/Cotangent/PerfectVanishing.lean#L100).
 
 > Let `p` be a prime number, let `A → B` be a ring homomorphism with `p = 0` in `A`, and assume
 > that `A` and `B` are perfect. Then `L_{B/A}` is zero in `D(B)`.
@@ -73,4 +73,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 92.10, Tag 0G5X](https://stacks.math.columbia.edu/tag/0G5X)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

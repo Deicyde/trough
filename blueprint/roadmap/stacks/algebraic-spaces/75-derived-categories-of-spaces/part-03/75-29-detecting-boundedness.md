@@ -8,13 +8,13 @@ proof: formalized
 
 # 75.29 Detecting Boundedness
 
-Section 75.29 of the Stacks Project, [Tag 0GFE](https://stacks.math.columbia.edu/tag/0GFE). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 75.29 of the Stacks Project, [Tag 0GFE](https://stacks.math.columbia.edu/tag/0GFE). 4 tags here are carried by 4 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 0GFF, a lemma
 
 [Tag 0GFF](https://stacks.math.columbia.edu/tag/0GFF) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.eventually_subsingleton_hom_iff_truncGE_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DetectingBoundednessTruncGE.lean, line 162](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DetectingBoundednessTruncGE.lean#L162).
+**`AlgebraicGeometry.Space.eventually_subsingleton_hom_iff_truncGE_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DetectingBoundednessTruncGE.lean, line 162](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DetectingBoundednessTruncGE.lean#L162).
 
 > **[Stacks, Tag 0GFF].**  Let `S` be a scheme, let `X` be a quasi-compact and quasi-separated
 > algebraic space over `S`, let `P` be a perfect object of `D(𝒪_X)`, let `E` be an object of
@@ -57,7 +57,7 @@ theorem eventually_subsingleton_hom_iff_truncGE_of_isPerfect
 
 [Tag 0GFG](https://stacks.math.columbia.edu/tag/0GFG) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.eventually_subsingleton_hom_iff_truncLE_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DetectingBoundednessTruncLE.lean, line 111](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DetectingBoundednessTruncLE.lean#L111).
+**`AlgebraicGeometry.Space.eventually_subsingleton_hom_iff_truncLE_of_isPerfect`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DetectingBoundednessTruncLE.lean, line 111](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/DetectingBoundednessTruncLE.lean#L111).
 
 > **[Stacks, Tag 0GFG].** Let `S` be a scheme, let `X` be a quasi-compact and quasi-separated
 > algebraic space over `S`, let `P` be a perfect object of `D(𝒪_X)`, let `E` be an object of
@@ -95,7 +95,7 @@ theorem eventually_subsingleton_hom_iff_truncLE_of_isPerfect
 
 [Tag 0GFH](https://stacks.math.columbia.edu/tag/0GFH) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.tfae_isLE_of_isPerfect_generator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/BoundedAboveCriterion.lean, line 115](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/BoundedAboveCriterion.lean#L115).
+**`AlgebraicGeometry.Space.tfae_isLE_of_isPerfect_generator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/BoundedAboveCriterion.lean, line 115](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/BoundedAboveCriterion.lean#L115).
 
 > **Stacks 0GFH.** Let `X` be a quasi-compact and quasi-separated algebraic space, `G` a perfect
 > object of `D(𝒪_X)` which generates `D_QCoh(𝒪_X)`, and `E` an object of `D_QCoh(𝒪_X)`. The
@@ -150,7 +150,7 @@ theorem tfae_isLE_of_isPerfect_generator (X : AlgebraicSpaces B S hS)
 
 [Tag 0GFI](https://stacks.math.columbia.edu/tag/0GFI) in the Stacks Project.
 
-**`AlgebraicGeometry.Space.tfae_isGE_of_isPerfect_generator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/BoundedBelowCriterion.lean, line 133](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/BoundedBelowCriterion.lean#L133).
+**`AlgebraicGeometry.Space.tfae_isGE_of_isPerfect_generator`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Spaces/Perfect/BoundedBelowCriterion.lean, line 133](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Spaces/Perfect/BoundedBelowCriterion.lean#L133).
 
 > **Stacks 0GFI.** Let `X` be a quasi-compact and quasi-separated algebraic space, `G` a perfect
 > object of `D(𝒪_X)` which generates `D_QCoh(𝒪_X)`, and `E` an object of `D_QCoh(𝒪_X)`. The
@@ -208,4 +208,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 75.29, Tag 0GFE](https://stacks.math.columbia.edu/tag/0GFE)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)

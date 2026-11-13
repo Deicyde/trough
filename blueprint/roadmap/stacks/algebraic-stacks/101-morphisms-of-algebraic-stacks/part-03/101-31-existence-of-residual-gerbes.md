@@ -8,13 +8,13 @@ proof: formalized
 
 # 101.31 Existence of residual gerbes
 
-Section 101.31 of the Stacks Project, [Tag 06UH](https://stacks.math.columbia.edu/tag/06UH). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7).
+Section 101.31 of the Stacks Project, [Tag 06UH](https://stacks.math.columbia.edu/tag/06UH). 3 tags here are carried by 3 declarations of the repository (all in StacksFrontier), quoted below from [AxiomMath/Stacks](https://github.com/AxiomMath/Stacks) at commit [c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b).
 
 ## Tag 06RD, a lemma
 
 [Tag 06RD](https://stacks.math.columbia.edu/tag/06RD) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.hasReducedSingletonPointMonomorphism_of_isQuasiCompact_inertia`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeQuasiCompactInertia.lean, line 78](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeQuasiCompactInertia.lean#L78).
+**`AlgebraicGeometry.Stack.hasReducedSingletonPointMonomorphism_of_isQuasiCompact_inertia`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeQuasiCompactInertia.lean, line 78](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeQuasiCompactInertia.lean#L78).
 
 > Let `𝒳` be an algebraic stack over `S` whose inertia projection `I_𝒳 ⟶ 𝒳` is
 > quasi-compact. Then the residual gerbe of `𝒳` exists at every point `x` of `|𝒳|`, in the sense
@@ -33,7 +33,7 @@ theorem hasReducedSingletonPointMonomorphism_of_isQuasiCompact_inertia
 
 [Tag 06UI](https://stacks.math.columbia.edu/tag/06UI) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.exists_isResidualGerbeAt_of_isAbsolutelyQuasiDM`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeQuasiDMExistence.lean, line 68](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeQuasiDMExistence.lean#L68). The attribute's comment: “the residual gerbe of a quasi-DM algebraic stack exists at every point of its space, in the sense of 06MU: some strictly full subcategory meets the 06MT specification IsResidualGerbeAt, i.e. is a reduced locally Noetherian algebraic substack with one point lying over x. Nothing is left open: the source's chart comes from 06MF proved outright (hasQuasiDMPresentation\_of\_isAbsolutelyQuasiDM) and its 06S1 step from isLocallyQuasiFinite\_comp\_of\_mono\_to\_field”.
+**`AlgebraicGeometry.Stack.exists_isResidualGerbeAt_of_isAbsolutelyQuasiDM`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeQuasiDMExistence.lean, line 68](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeQuasiDMExistence.lean#L68). The attribute's comment: “the residual gerbe of a quasi-DM algebraic stack exists at every point of its space, in the sense of 06MU: some strictly full subcategory meets the 06MT specification IsResidualGerbeAt, i.e. is a reduced locally Noetherian algebraic substack with one point lying over x. Nothing is left open: the source's chart comes from 06MF proved outright (hasQuasiDMPresentation\_of\_isAbsolutelyQuasiDM) and its 06S1 step from isLocallyQuasiFinite\_comp\_of\_mono\_to\_field”.
 
 > **Stacks 06UI.** Let `𝒳` be a quasi-DM algebraic stack over `S`. Then the residual gerbe of
 > `𝒳` at `x` exists for every `x ∈ |𝒳|`: some strictly full subcategory `P` of `𝒳` meets the
@@ -59,7 +59,7 @@ theorem exists_isResidualGerbeAt_of_isAbsolutelyQuasiDM
 
 [Tag 0H22](https://stacks.math.columbia.edu/tag/0H22) in the Stacks Project.
 
-**`AlgebraicGeometry.Stack.exists_isResidualGerbeAt_of_isLocallyNoetherianStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeLocallyNoetherian.lean, line 175](https://github.com/AxiomMath/Stacks/blob/5ed82d14634e8d9576bb844c7bd4e3da66d450e7/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeLocallyNoetherian.lean#L175).
+**`AlgebraicGeometry.Stack.exists_isResidualGerbeAt_of_isLocallyNoetherianStack`**, a theorem in StacksFrontier (drafted, not yet reviewed), declared in [StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeLocallyNoetherian.lean, line 174](https://github.com/AxiomMath/Stacks/blob/c496df0d9beea9deaeabcea8492605f9a0a2313b/StacksFrontier/AlgebraicGeometry/Stacks/ResidualGerbeLocallyNoetherian.lean#L174).
 
 > **Stacks 0H22.** Let `𝒳` be a locally Noetherian algebraic stack. Then the residual gerbe of
 > `𝒳` at `x` exists for every `x ∈ |𝒳|`: some strictly full subcategory of `𝒳` meets the
@@ -80,4 +80,4 @@ No dependencies are recorded: this chapter reads the repository's source text wi
 ## Sources
 
 - [Section 101.31, Tag 06UH](https://stacks.math.columbia.edu/tag/06UH)
-- [AxiomMath/Stacks at 5ed82d14](https://github.com/AxiomMath/Stacks/tree/5ed82d14634e8d9576bb844c7bd4e3da66d450e7)
+- [AxiomMath/Stacks at c496df0d](https://github.com/AxiomMath/Stacks/tree/c496df0d9beea9deaeabcea8492605f9a0a2313b)
