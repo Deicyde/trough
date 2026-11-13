@@ -5,7 +5,7 @@ statement: formalized
 proof: formalized
 ---
 
-# λ-calculus (Safety)
+# λ-calculus (Stlc/Safety)
 
 `Cslib.Languages.LambdaCalculus.LocallyNameless.Stlc.Safety`, in [Cslib/Languages/LambdaCalculus/LocallyNameless/Stlc/Safety.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/LambdaCalculus/LocallyNameless/Stlc/Safety.lean), by Chris Henson.
 
@@ -45,7 +45,7 @@ theorem progress {t : Term Var} {τ : Ty Base} (ht : [] ⊢ t ∶ τ) : t.Value 
 ## Depends on
 
 - [Relations: Definitions](../../../../foundations/relation/defs.md)
-- [λ-calculus (Basic)](basic.md)
+- [λ-calculus (Stlc/Basic)](basic.md)
 - [β-reduction for the λ-calculus](../untyped/fullbeta.md)
 
 ## Sources

@@ -95,7 +95,7 @@ theorem ecomplexity_append_self_le (g : (Fin n → U) → Fin k → U) :
 
 ```lean
 theorem ecomplexityGiven_self (f : (Fin n → U) → Fin m → U) :
-ecomplexityGiven I f f = 0
+    ecomplexityGiven I f f = 0
 ```
 
 `Cslib.Circuits.ecomplexityGiven_le_ecomplexity` (theorem, [line 92](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/RelativeComplexity.lean#L92))
@@ -171,14 +171,14 @@ noncomputable def complexityGiven (I : Interpretation σ U) [I.IsComplete]
 
 ```lean
 theorem natCast_complexityGiven (f : (Fin n → U) → Fin m → U)
-(g : (Fin n → U) → Fin k → U) : (complexityGiven I f g : ℕ∞) = ecomplexityGiven I f g
+    (g : (Fin n → U) → Fin k → U) : (complexityGiven I f g : ℕ∞) = ecomplexityGiven I f g
 ```
 
 `Cslib.Circuits.complexityGiven_self` (theorem, [line 209](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/RelativeComplexity.lean#L209))
 
 ```lean
 theorem complexityGiven_self (f : (Fin n → U) → Fin m → U) :
-complexityGiven I f f = 0
+    complexityGiven I f f = 0
 ```
 
 `Cslib.Circuits.complexityGiven_le_complexity` (theorem, [line 215](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/RelativeComplexity.lean#L215))

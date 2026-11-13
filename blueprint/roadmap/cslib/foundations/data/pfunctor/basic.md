@@ -182,21 +182,21 @@ lemma purePower_punit : purePower PUnit = y
 
 ```lean
 def add (P : PFunctor.{uA₁, uB}) (Q : PFunctor.{uA₂, uB}) :
-PFunctor.{max uA₁ uA₂, uB}
+    PFunctor.{max uA₁ uA₂, uB}
 ```
 
 `PFunctor.instHAddPFunctor` (instance, [line 131](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/PFunctor/Basic.lean#L131))
 
 ```lean
 instance instHAddPFunctor :
-HAdd PFunctor.{uA₁, uB} PFunctor.{uA₂, uB} PFunctor.{max uA₁ uA₂, uB}
+    HAdd PFunctor.{uA₁, uB} PFunctor.{uA₂, uB} PFunctor.{max uA₁ uA₂, uB}
 ```
 
 `PFunctor.add_eq_add` (lemma, [line 137](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/PFunctor/Basic.lean#L137))
 
 ```lean
 lemma add_eq_add (P : PFunctor.{uA₁, uB}) (Q : PFunctor.{uA₂, uB}) :
-P.add Q = P + Q
+    P.add Q = P + Q
 ```
 
 `PFunctor.prod` (definition, [line 146](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/PFunctor/Basic.lean#L146))
@@ -206,21 +206,21 @@ P.add Q = P + Q
 
 ```lean
 def prod (P : PFunctor.{uA₁, uB₁}) (Q : PFunctor.{uA₂, uB₂}) :
-PFunctor.{max uA₁ uA₂, max uB₁ uB₂}
+    PFunctor.{max uA₁ uA₂, max uB₁ uB₂}
 ```
 
 `PFunctor.instHMulPFunctor` (instance, [line 149](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/PFunctor/Basic.lean#L149))
 
 ```lean
 instance instHMulPFunctor :
-HMul PFunctor.{uA₁, uB₁} PFunctor.{uA₂, uB₂} PFunctor.{max uA₁ uA₂, max uB₁ uB₂}
+    HMul PFunctor.{uA₁, uB₁} PFunctor.{uA₂, uB₂} PFunctor.{max uA₁ uA₂, max uB₁ uB₂}
 ```
 
 `PFunctor.prod_eq_mul` (lemma, [line 153](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/PFunctor/Basic.lean#L153))
 
 ```lean
 lemma prod_eq_mul (P : PFunctor.{uA₁, uB₁}) (Q : PFunctor.{uA₂, uB₂}) :
-P.prod Q = P * Q
+    P.prod Q = P * Q
 ```
 
 `PFunctor.Unary` (class, [line 161](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/PFunctor/Basic.lean#L161))

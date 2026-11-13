@@ -2,6 +2,6 @@
 
 3 modules under `Cslib/Languages/LambdaCalculus/LocallyNameless/Stlc/`, with 21 public declarations.
 
-- [λ-calculus (Basic)](basic.md)
-- [λ-calculus (Safety)](safety.md)
-- [StrongNorm](strongnorm.md)
+- [λ-calculus (Stlc/Basic)](basic.md)
+- [λ-calculus (Stlc/Safety)](safety.md)
+- [Stlc/StrongNorm](strongnorm.md)

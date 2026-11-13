@@ -73,21 +73,21 @@ protected abbrev Circuit.id (σ : Signature) (inputCount : Nat) : Circuit σ inp
 
 ```lean
 theorem Circuit.size_wiring (select : Fin outputCount → Fin inputCount) :
-(wiring σ select).size = 0
+    (wiring σ select).size = 0
 ```
 
 `Cslib.Circuits.Circuit.program_wiring` (theorem, [line 77](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Basic.lean#L77))
 
 ```lean
 theorem Circuit.program_wiring (select : Fin outputCount → Fin inputCount) :
-(wiring σ select).program = .empty
+    (wiring σ select).program = .empty
 ```
 
 `Cslib.Circuits.Circuit.outputs_wiring` (theorem, [line 80](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Basic.lean#L80))
 
 ```lean
 theorem Circuit.outputs_wiring (select : Fin outputCount → Fin inputCount) :
-(wiring σ select).outputs = .input ∘ select
+    (wiring σ select).outputs = .input ∘ select
 ```
 
 `Cslib.Circuits.Circuit.mapInputs` (definition, [line 85](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Basic.lean#L85))
@@ -103,8 +103,8 @@ def Circuit.mapInputs {inputCount' : ℕ} (f : Fin inputCount → Fin inputCount
 
 ```lean
 theorem Circuit.mapInputs_id :
-(Circuit.mapInputs id :
-Circuit σ inputCount outputCount → Circuit σ inputCount outputCount) = id
+    (Circuit.mapInputs id :
+      Circuit σ inputCount outputCount → Circuit σ inputCount outputCount) = id
 ```
 
 `Cslib.Circuits.Circuit.mapInputs_mapInputs` (theorem, [line 98](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Basic.lean#L98))
@@ -128,8 +128,8 @@ def Circuit.comapOutputs {outputCount' : ℕ} (f : Fin outputCount' → Fin outp
 
 ```lean
 theorem Circuit.comapOutputs_id :
-(Circuit.comapOutputs id :
-Circuit σ inputCount outputCount → Circuit σ inputCount outputCount) = id
+    (Circuit.comapOutputs id :
+      Circuit σ inputCount outputCount → Circuit σ inputCount outputCount) = id
 ```
 
 `Cslib.Circuits.Circuit.comapOutputs_comapOutputs` (theorem, [line 116](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Basic.lean#L116))
@@ -163,7 +163,7 @@ instance Circuit.instDecidableFanInAtMost
 
 ```lean
 theorem Circuit.fanInAtMost_wiring (select : Fin outputCount → Fin inputCount)
-(r : Nat) : (Circuit.wiring σ select).FanInAtMost r
+    (r : Nat) : (Circuit.wiring σ select).FanInAtMost r
 ```
 
 `Cslib.Circuits.Circuit.outputDepths` (definition, [line 136](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Basic.lean#L136))
@@ -186,14 +186,14 @@ def Circuit.depth (c : Circuit σ inputCount outputCount) : Nat
 
 ```lean
 theorem Circuit.outputDepths_wiring (select : Fin outputCount → Fin inputCount) :
-(Circuit.wiring σ select).outputDepths = fun _ => 0
+    (Circuit.wiring σ select).outputDepths = fun _ => 0
 ```
 
 `Cslib.Circuits.Circuit.depth_wiring` (theorem, [line 146](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Basic.lean#L146))
 
 ```lean
 theorem Circuit.depth_wiring (select : Fin outputCount → Fin inputCount) :
-(Circuit.wiring σ select).depth = 0
+    (Circuit.wiring σ select).depth = 0
 ```
 
 `Cslib.Circuits.Circuit.eval` (definition, [line 156](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Basic.lean#L156))
@@ -220,10 +220,10 @@ def Circuit.inputSupport
 
 ```lean
 theorem Circuit.mem_inputSupport
-{c : Circuit σ inputCount outputCount}
-{input : Fin inputCount} :
-input ∈ c.inputSupport ↔
-∃ output, input ∈ c.program.wireSupport (c.outputs output)
+    {c : Circuit σ inputCount outputCount}
+    {input : Fin inputCount} :
+    input ∈ c.inputSupport ↔
+      ∃ output, input ∈ c.program.wireSupport (c.outputs output)
 ```
 
 `Cslib.Circuits.Circuit.dependsOn_eval` (theorem, [line 175](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Basic.lean#L175))
@@ -243,8 +243,8 @@ theorem Circuit.dependsOn_eval
 
 ```lean
 theorem Circuit.eval_wiring (select : Fin outputCount → Fin inputCount)
-(interpretation : Interpretation σ U) (input : Fin inputCount → U) :
-(Circuit.wiring σ select).eval interpretation input = input ∘ select
+    (interpretation : Interpretation σ U) (input : Fin inputCount → U) :
+    (Circuit.wiring σ select).eval interpretation input = input ∘ select
 ```
 
 `Cslib.Circuits.Circuit.eval_mapInputs` (theorem, [line 191](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Basic.lean#L191))
@@ -253,9 +253,9 @@ theorem Circuit.eval_wiring (select : Fin outputCount → Fin inputCount)
 
 ```lean
 theorem Circuit.eval_mapInputs {inputCount' : ℕ}
-(c : Circuit σ inputCount outputCount) (f : Fin inputCount → Fin inputCount')
-(i : Interpretation σ U) (inputs : Fin inputCount' → U) :
-(c.mapInputs f).eval i inputs = c.eval i (inputs ∘ f)
+    (c : Circuit σ inputCount outputCount) (f : Fin inputCount → Fin inputCount')
+    (i : Interpretation σ U) (inputs : Fin inputCount' → U) :
+    (c.mapInputs f).eval i inputs = c.eval i (inputs ∘ f)
 ```
 
 `Cslib.Circuits.Circuit.eval_comapOutputs` (theorem, [line 199](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Basic.lean#L199))
@@ -264,9 +264,9 @@ theorem Circuit.eval_mapInputs {inputCount' : ℕ}
 
 ```lean
 theorem Circuit.eval_comapOutputs {outputCount' : ℕ}
-(c : Circuit σ inputCount outputCount) (f : Fin outputCount' → Fin outputCount)
-(i : Interpretation σ U) (inputs : Fin inputCount → U) :
-(c.comapOutputs f).eval i inputs = c.eval i inputs ∘ f
+    (c : Circuit σ inputCount outputCount) (f : Fin outputCount' → Fin outputCount)
+    (i : Interpretation σ U) (inputs : Fin inputCount → U) :
+    (c.comapOutputs f).eval i inputs = c.eval i inputs ∘ f
 ```
 
 `Cslib.Circuits.Circuit.Computes` (definition, [line 205](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Basic.lean#L205))
@@ -292,7 +292,7 @@ def single (f : (Fin inputCount → U) → U) : (Fin inputCount → U) → Fin 1
 
 ```lean
 theorem single_apply (f : (Fin inputCount → U) → U) (x : Fin inputCount → U)
-(i : Fin 1) : single f x i = f x
+    (i : Fin 1) : single f x i = f x
 ```
 
 `Cslib.Circuits.Circuit.ComputesOn` (definition, [line 221](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Basic.lean#L221))
@@ -312,8 +312,8 @@ def Circuit.ComputesOn (c : Circuit σ inputCount outputCount)
 
 ```lean
 theorem Circuit.computesOn_univ_iff (c : Circuit σ inputCount outputCount)
-(interpretation : Interpretation σ U) (f : (Fin inputCount → U) → Fin outputCount → U) :
-c.ComputesOn interpretation Set.univ f ↔ c.Computes interpretation f
+    (interpretation : Interpretation σ U) (f : (Fin inputCount → U) → Fin outputCount → U) :
+    c.ComputesOn interpretation Set.univ f ↔ c.Computes interpretation f
 ```
 
 `Cslib.Circuits.Circuit.Computes.computesOn` (theorem, [line 234](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Basic.lean#L234))

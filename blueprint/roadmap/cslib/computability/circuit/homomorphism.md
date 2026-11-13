@@ -35,10 +35,10 @@ structure Homomorphism (i₁ : Interpretation σ U₁) (i₂ : Interpretation σ
 
 ```lean
 theorem ext
-{source : Interpretation σ U₁}
-{target : Interpretation σ U₂}
-{left right : Homomorphism source target}
-(map_eq : left.map = right.map) : left = right
+    {source : Interpretation σ U₁}
+    {target : Interpretation σ U₂}
+    {left right : Homomorphism source target}
+    (map_eq : left.map = right.map) : left = right
 ```
 
 `Cslib.Circuits.Homomorphism.id` (definition, [line 53](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Homomorphism.lean#L53))
@@ -67,40 +67,40 @@ def comp
 
 ```lean
 theorem id_map
-(interpretation : Interpretation σ U) :
-(Homomorphism.id interpretation).map = _root_.id
+    (interpretation : Interpretation σ U) :
+    (Homomorphism.id interpretation).map = _root_.id
 ```
 
 `Cslib.Circuits.Homomorphism.comp_map` (theorem, [line 77](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Homomorphism.lean#L77))
 
 ```lean
 theorem comp_map
-{i₁ : Interpretation σ U₁}
-{i₂ : Interpretation σ U₂}
-{i₃ : Interpretation σ U₃}
-(outer : Homomorphism i₂ i₃)
-(inner : Homomorphism i₁ i₂) :
-(outer.comp inner).map = outer.map ∘ inner.map
+    {i₁ : Interpretation σ U₁}
+    {i₂ : Interpretation σ U₂}
+    {i₃ : Interpretation σ U₃}
+    (outer : Homomorphism i₂ i₃)
+    (inner : Homomorphism i₁ i₂) :
+    (outer.comp inner).map = outer.map ∘ inner.map
 ```
 
 `Cslib.Circuits.Homomorphism.id_comp` (theorem, [line 85](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Homomorphism.lean#L85))
 
 ```lean
 theorem id_comp
-{source : Interpretation σ U₁}
-{target : Interpretation σ U₂}
-(homomorphism : Homomorphism source target) :
-(Homomorphism.id target).comp homomorphism = homomorphism
+    {source : Interpretation σ U₁}
+    {target : Interpretation σ U₂}
+    (homomorphism : Homomorphism source target) :
+    (Homomorphism.id target).comp homomorphism = homomorphism
 ```
 
 `Cslib.Circuits.Homomorphism.comp_id` (theorem, [line 93](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Homomorphism.lean#L93))
 
 ```lean
 theorem comp_id
-{source : Interpretation σ U₁}
-{target : Interpretation σ U₂}
-(homomorphism : Homomorphism source target) :
-homomorphism.comp (Homomorphism.id source) = homomorphism
+    {source : Interpretation σ U₁}
+    {target : Interpretation σ U₂}
+    (homomorphism : Homomorphism source target) :
+    homomorphism.comp (Homomorphism.id source) = homomorphism
 ```
 
 `Cslib.Circuits.Homomorphism.comp_assoc` (theorem, [line 101](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Homomorphism.lean#L101))

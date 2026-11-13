@@ -30,8 +30,8 @@ theorem orderedInsertM_nil (a : α) : orderedInsertM r a [] = pure [a]
 
 ```lean
 theorem orderedInsertM_cons (a b : α) (l : List α) :
-orderedInsertM r a (b :: l) = do
-if ← r a b then return a :: b :: l else return b :: (← orderedInsertM r a l)
+    orderedInsertM r a (b :: l) = do
+      if ← r a b then return a :: b :: l else return b :: (← orderedInsertM r a l)
 ```
 
 `List.orderedInsertM_pure` (theorem, [line 39](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/Lean/Sort/Insertion.lean#L39))
@@ -75,7 +75,7 @@ theorem insertionSortM_nil : insertionSortM r [] = pure []
 
 ```lean
 theorem insertionSortM_cons (b : α) (l : List α) :
-insertionSortM r (b :: l) = (do orderedInsertM r b (← insertionSortM r l))
+    insertionSortM r (b :: l) = (do orderedInsertM r b (← insertionSortM r l))
 ```
 
 `List.insertionSortM_pure` (theorem, [line 67](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/Lean/Sort/Insertion.lean#L67))

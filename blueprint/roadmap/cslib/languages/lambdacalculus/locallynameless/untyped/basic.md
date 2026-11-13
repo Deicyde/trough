@@ -5,7 +5,7 @@ statement: formalized
 proof: formalized
 ---
 
-# λ-calculus (Basic)
+# λ-calculus (LocallyNameless/Untyped/Basic)
 
 `Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.Basic`, in [Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/Basic.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/Basic.lean), by Chris Henson.
 

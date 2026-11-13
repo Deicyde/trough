@@ -38,7 +38,7 @@ alias Commute.toConfluent
 
 ```lean
 theorem StronglyCommute.to_stronglyConfluent :
-StronglyCommute r r = StronglyConfluent r
+  StronglyCommute r r = StronglyConfluent r
 ```
 
 `Relation.StronglyCommute.toStronglyConfluent` (alias, [line 44](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Relation/Confluence.lean#L44))

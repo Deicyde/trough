@@ -1,8 +1,8 @@
 # Computability
 
-110 modules under `Cslib/Computability/`, with 1,476 public declarations.
+110 modules under `Cslib/Computability/`, with 1,438 public declarations.
 
-Its README opens:
+Its [README](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/README.md) opens:
 
 > This directory hosts **formal developments in computability and neighbouring areas**. Its scope includes automata, complexity classes, formal languages over finite and infinite words, and other machine models.
 

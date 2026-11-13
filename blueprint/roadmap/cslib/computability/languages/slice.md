@@ -30,7 +30,7 @@ noncomputable def slice (L : Language α) (n : ℕ) : (Fin n → α) → Bool
 
 ```lean
 theorem slice_eq_true_iff {L : Language α} {n : ℕ} {x : Fin n → α} :
-L.slice n x = true ↔ List.ofFn x ∈ L
+    L.slice n x = true ↔ List.ofFn x ∈ L
 ```
 
 `Language.ofSlices` (definition, [line 39](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/Slice.lean#L39))
@@ -52,14 +52,14 @@ theorem mem_ofSlices {f : ∀ n, (Fin n → α) → Bool} {w : List α} :
 
 ```lean
 theorem ofFn_mem_ofSlices {f : ∀ n, (Fin n → α) → Bool} {n : ℕ} {x : Fin n → α} :
-.ofFn x ∈ ofSlices f ↔ f n x
+    .ofFn x ∈ ofSlices f ↔ f n x
 ```
 
 `Language.slice_ofSlices` (theorem, [line 50](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Languages/Slice.lean#L50))
 
 ```lean
 theorem slice_ofSlices (f : ∀ n, (Fin n → α) → Bool) (n : ℕ) :
-(ofSlices f).slice n = f n
+    (ofSlices f).slice n = f n
 ```
 
 ## Depends on

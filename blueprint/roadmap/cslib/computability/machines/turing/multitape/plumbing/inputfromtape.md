@@ -44,7 +44,7 @@ public def clampMove (wvip wflag : Option Symbol) (m : SignType) : SignType
 
 ```lean
 public noncomputable def inputFromTape (tm : MultiTapeTM k Symbol State) :
-MultiTapeTM (k + 2) Symbol State
+    MultiTapeTM (k + 2) Symbol State
 ```
 
 `Turing.MultiTapeTM.inCfg` (definition, [line 67](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/InputFromTape.lean#L67))
@@ -56,7 +56,7 @@ MultiTapeTM (k + 2) Symbol State
 
 ```lean
 public def inCfg (mark : Symbol) {input : List Symbol} (c : Cfg k Symbol State input)
-(outerInput : List Symbol) : Cfg (k + 2) Symbol State outerInput
+    (outerInput : List Symbol) : Cfg (k + 2) Symbol State outerInput
 ```
 
 `Turing.MultiTapeTM.inCfg_inputPos` (lemma, [line 81](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/InputFromTape.lean#L81))
@@ -150,8 +150,8 @@ public lemma val_moveInputPos_sub_one_eq_clampMove (mark : Symbol) (c : Cfg k Sy
 
 ```lean
 public noncomputable def inCfgHom (tm : MultiTapeTM k Symbol State)
-(mark : Symbol) (outerInput : List Symbol) :
-(tm.stepRel input).Hom (tm.inputFromTape.stepRel outerInput)
+    (mark : Symbol) (outerInput : List Symbol) :
+    (tm.stepRel input).Hom (tm.inputFromTape.stepRel outerInput)
 ```
 
 `Turing.MultiTapeTM.space_map_inCfgHom_le` (lemma, [line 176](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/InputFromTape.lean#L176))

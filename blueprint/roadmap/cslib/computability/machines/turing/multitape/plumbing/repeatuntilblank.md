@@ -1,6 +1,6 @@
 ---
 catalog: module
-lean: Turing.MultiTapeTM.RepeatUntilBlank.blankTest, Turing.MultiTapeTM.repeatUntilBlank, Turing.MultiTapeTM.RepeatUntilBlank.step_check, Turing.MultiTapeTM.RepeatUntilBlank.exists_round, Turing.MultiTapeTM.transformsTapes_repeatUntilBlank
+lean: Turing.MultiTapeTM.RepeatUntilBlank.blankTest, Turing.MultiTapeTM.repeatUntilBlank, Turing.MultiTapeTM.transformsTapes_repeatUntilBlank
 statement: formalized
 proof: formalized
 ---
@@ -37,36 +37,6 @@ public def RepeatUntilBlank.blankTest (i : Fin k) : MultiTapeTM k Symbol Unit
 ```lean
 public noncomputable abbrev repeatUntilBlank (i : Fin k) (tm : MultiTapeTM k Symbol State) :
     MultiTapeTM k Symbol (State ⊕ Unit)
-```
-
-`Turing.MultiTapeTM.RepeatUntilBlank.step_check` (lemma, [line 50](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RepeatUntilBlank.lean#L50))
-
-> From the test on a `wordsCfg` configuration, the machine halts if the word on tape `i` is empty
-> and otherwise restarts `tm`, leaving the words unchanged.
-
-```lean
-lemma step_check (ws : Fin k → List Symbol) (out : List Symbol) :
-    (repeatUntilBlank i tm).step (wordsCfg input (some (.inr ())) ws out) =
-      wordsCfg input (if ws i = [] then none else some (.inl tm.q₀)) ws out
-```
-
-`Turing.MultiTapeTM.RepeatUntilBlank.exists_round` (lemma, [line 62](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RepeatUntilBlank.lean#L62))
-
-> One round of the loop. If `tm` transforms words satisfying `P` within `t` steps and `s` cells,
-> then from `tm`'s initial state on such words `w` the loop has a run path of at most `t + 1` steps
-> within `[-s, s]` to the words `w'` that `tm` leaves: the running steps of `tm`, and then reading
-> tape `i`, which halts the loop if `w' i` is empty and otherwise starts the next round.
-
-```lean
-lemma exists_round {P : (input : List Symbol) → (Fin k → List Symbol) → Prop}
-    {Q : (input : List Symbol) → (Fin k → List Symbol) → (Fin k → List Symbol) →
-      List Symbol → Prop} {t s : ℕ}
-    (h : TransformsTapes tm P Q t s) {w : Fin k → List Symbol} (out : List Symbol)
-    (hP : P input w) :
-    ∃ w' e, Q input w w' e ∧ ∃ p : (repeatUntilBlank i tm).RunPath input,
-      p.head = wordsCfg input (some (.inl tm.q₀)) w out ∧
-      p.last = wordsCfg input (if w' i = [] then none else some (.inl tm.q₀)) w' (out ++ e) ∧
-      p.length ≤ t + 1 ∧ p.InWindow s
 ```
 
 `Turing.MultiTapeTM.transformsTapes_repeatUntilBlank` (theorem, [line 97](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RepeatUntilBlank.lean#L97))

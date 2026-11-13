@@ -42,8 +42,6 @@ structure Judgement World τ Atom where
   w : World
   /-- The proposition satisfied by the world `w`. -/
   φ : Proposition τ Atom
-
-@[inherit_doc] scoped notation "Modal[" m "," w " ⊨ " φ "]" => Judgement.mk m w φ
 ```
 
 `Cslib.Logic.Modal.Satisfies.Bundled` (definition, [line 46](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Logics/Modal/Semantics.lean#L46))

@@ -21,8 +21,6 @@ class HasHContext (α β : Type*) where
   {Context : Type*}
   /-- Replaces the hole in the context with a value, resulting in a new value. -/
   fill (c : Context) (b : β) : α
-
-@[inherit_doc] notation:max c "<[" t "]" => HasHContext.fill c t
 ```
 
 `Cslib.HasContext` (abbreviation, [line 28](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Syntax/Context.lean#L28))

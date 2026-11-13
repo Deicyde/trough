@@ -26,7 +26,7 @@ proof: formalized
 
 ```lean
 theorem eval_merge (oracle : {ι : Type} → LEQuery α ι → ι) (xs ys : List α) :
-(merge xs ys).eval oracle = xs.merge ys (fun a b => oracle (.le a b))
+    (merge xs ys).eval oracle = xs.merge ys (fun a b => oracle (.le a b))
 ```
 
 `Cslib.Query.eval_mergeSort` (theorem, [line 49](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/Lean/Query/Sort/Merge/Lemmas.lean#L49))
@@ -40,7 +40,7 @@ theorem eval_merge (oracle : {ι : Type} → LEQuery α ι → ι) (xs ys : List
 
 ```lean
 theorem eval_mergeSort (oracle : {ι : Type} → LEQuery α ι → ι) (xs : List α) :
-(mergeSort xs).eval oracle = xs.mergeSort (fun a b => oracle (.le a b))
+    (mergeSort xs).eval oracle = xs.mergeSort (fun a b => oracle (.le a b))
 ```
 
 > ## Correctness, transferred from the `List.mergeSort` API
@@ -108,13 +108,13 @@ theorem countQueries_mergeSort_singleton (oracle : {ι : Type} → LEQuery α ι
 
 ```lean
 theorem countQueries_mergeSort_cons_cons (oracle : {ι : Type} → LEQuery α ι → ι)
-(x y : α) (zs : List α) :
-(mergeSort (x :: y :: zs)).countQueries oracle =
-(mergeSort (x :: y :: zs).split.1).countQueries oracle +
-((mergeSort (x :: y :: zs).split.2).countQueries oracle +
-(merge ((x :: y :: zs).split.1.mergeSort fun a b => oracle (.le a b))
-      ((x :: y :: zs).split.2.mergeSort fun a b => oracle (.le a b))).countQueries
- oracle)
+    (x y : α) (zs : List α) :
+    (mergeSort (x :: y :: zs)).countQueries oracle =
+      (mergeSort (x :: y :: zs).split.1).countQueries oracle +
+      ((mergeSort (x :: y :: zs).split.2).countQueries oracle +
+       (merge ((x :: y :: zs).split.1.mergeSort fun a b => oracle (.le a b))
+              ((x :: y :: zs).split.2.mergeSort fun a b => oracle (.le a b))).countQueries
+         oracle)
 ```
 
 > ## Query count proofs

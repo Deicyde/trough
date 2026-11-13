@@ -358,7 +358,7 @@ theorem cons_append_ωSequence (a : α) (l : List α) (s : ωSequence α) :
 
 ```lean
 theorem singleton_append_ωSequence (a : α) (s : ωSequence α) :
-[a] ++ω s = a ::ω s
+  [a] ++ω s = a ::ω s
 ```
 
 `Cslib.ωSequence.append_append_ωSequence` (theorem, [line 263](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/OmegaSequence/Init.lean#L263))

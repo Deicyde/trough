@@ -171,14 +171,14 @@ def handOver {State₀ State₁ : Type*} (q₁ : State₁) (state : Option State
 
 ```lean
 lemma handOver_some {State₀ State₁ : Type*} (q₁ : State₁) (q : State₀) :
-handOver q₁ (some q) = some (.inl q)
+    handOver q₁ (some q) = some (.inl q)
 ```
 
 `Turing.MultiTapeTM.handOver_none` (lemma, [line 155](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L155))
 
 ```lean
 lemma handOver_none {State₀ State₁ : Type*} (q₁ : State₁) :
-handOver (State₀ := State₀) q₁ none = some (.inr q₁)
+    handOver (State₀ := State₀) q₁ none = some (.inr q₁)
 ```
 
 `Turing.MultiTapeTM.follows_combine_left` (lemma, [line 165](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Deterministic.lean#L165))

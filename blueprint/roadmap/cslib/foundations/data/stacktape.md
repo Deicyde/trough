@@ -25,9 +25,6 @@ proof: formalized
 > This design might complicate reasoning about the length of the tape, but could make other operations
 > more straightforward.
 >
-> Future design work might explore this alternative representation and compare its
-> advantages and disadvantages.
->
 > …
 
 `Cslib.Turing.StackTape` (structure, [line 49](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/StackTape.lean#L49))

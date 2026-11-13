@@ -482,7 +482,7 @@ lemma subst_fresh {γ : Binding Var} (nmem : X ∉ γ.fv) (δ : Ty Var) : γ = �
 
 - [HasFresh](../../../../foundations/data/hasfresh.md)
 - [HasSubstitution](../../../../foundations/syntax/hassubstitution.md)
-- [λ-calculus (Basic)](basic.md)
+- [λ-calculus (Fsub/Basic)](basic.md)
 
 ## Sources
 

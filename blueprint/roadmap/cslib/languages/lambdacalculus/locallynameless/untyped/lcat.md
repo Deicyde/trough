@@ -133,7 +133,7 @@ lemma lcAt_openRec_above_lcAt (M N : Term Var) (i j : ℕ) (h : i ≤ j) (lc : L
 ## Depends on
 
 - [HasFresh](../../../../foundations/data/hasfresh.md)
-- [λ-calculus (Basic)](basic.md)
+- [λ-calculus (LocallyNameless/Untyped/Basic)](basic.md)
 
 ## Sources
 

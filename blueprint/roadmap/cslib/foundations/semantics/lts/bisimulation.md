@@ -331,7 +331,7 @@ theorem Bisimilarity.gfp (r : State₁ → State₂ → Prop) (h : IsBisimulatio
 
 ```lean
 lemma coe_sup (r s : {r // IsBisimulation lts₁ lts₂ r}) :
-(↑(r ⊔ s) : State₁ → State₂ → Prop) = (r : State₁ → State₂ → Prop) ⊔ s
+    (↑(r ⊔ s) : State₁ → State₂ → Prop) = (r : State₁ → State₂ → Prop) ⊔ s
 ```
 
 `Cslib.LTS.IsBisimulation.bot` (theorem, [line 295](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Semantics/LTS/Bisimulation.lean#L295))

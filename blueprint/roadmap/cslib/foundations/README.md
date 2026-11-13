@@ -1,8 +1,8 @@
 # Foundations
 
-84 modules under `Cslib/Foundations/`, with 1,303 public declarations.
+84 modules under `Cslib/Foundations/`, with 1,282 public declarations.
 
-Its README opens:
+Its [README](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/README.md) opens:
 
 > This directory covers **common foundations** for the rest of CSLib and downstream developments. As such, it acts as its fulcrum of integration through common concepts and APIs. This directory includes also additional results about foundational data objects defined in Mathlib, such as `Nat` and `Set`.
 

@@ -151,7 +151,7 @@ theorem ecomplexityOn_le_ecomplexity : ecomplexityOn I S f ≤ ecomplexity I f
 
 ```lean
 theorem ecomplexityOn_wiring (select : Fin m → Fin n) :
-ecomplexityOn I S (fun x => x ∘ select) = 0
+    ecomplexityOn I S (fun x => x ∘ select) = 0
 ```
 
 `Cslib.Circuits.ecomplexityOn_comp_le` (theorem, [line 139](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Complexity.lean#L139))
@@ -263,7 +263,7 @@ theorem le_ecomplexity_iff {k : ℕ∞} :
 
 ```lean
 theorem ecomplexity_wiring (select : Fin m → Fin n) :
-ecomplexity I (fun x => x ∘ select) = 0
+    ecomplexity I (fun x => x ∘ select) = 0
 ```
 
 `Cslib.Circuits.ecomplexity_comp_le` (theorem, [line 228](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Complexity.lean#L228))
@@ -462,7 +462,7 @@ theorem complexityOn_le_complexity : complexityOn I S f ≤ complexity I f
 
 ```lean
 theorem complexityOn_wiring (select : Fin m → Fin n) :
-complexityOn I S (fun x => x ∘ select) = 0
+    complexityOn I S (fun x => x ∘ select) = 0
 ```
 
 `Cslib.Circuits.complexityOn_comp_le` (theorem, [line 359](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Complexity.lean#L359))
@@ -506,7 +506,7 @@ theorem complexityOn_le_complexityOn_append_right (f : (Fin n → U) → Fin m �
 
 ```lean
 theorem complexity_wiring (select : Fin m → Fin n) :
-complexity I (fun x => x ∘ select) = 0
+    complexity I (fun x => x ∘ select) = 0
 ```
 
 `Cslib.Circuits.complexity_comp_le` (theorem, [line 394](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Complexity.lean#L394))

@@ -19,14 +19,14 @@ proof: formalized
 
 ```lean
 theorem append_comp_castAdd (u : Fin m → α) (v : Fin n → α) :
-append u v ∘ castAdd n = u
+    append u v ∘ castAdd n = u
 ```
 
 `Fin.append_comp_natAdd` (theorem, [line 32](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Composition.lean#L32))
 
 ```lean
 theorem append_comp_natAdd (u : Fin m → α) (v : Fin n → α) :
-append u v ∘ natAdd m = v
+    append u v ∘ natAdd m = v
 ```
 
 `Cslib.Circuits.Program.appendedWire` (definition, [line 50](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Composition.lean#L50))
@@ -44,14 +44,14 @@ def appendedWire (feed : Fin k → Wire n g₁) : Wire k g₂ → Wire n (g₁ +
 
 ```lean
 theorem appendedWire_input (feed : Fin k → Wire n g₁) (i : Fin k) :
-appendedWire (g₂ := g₂) feed (Wire.input i) = (feed i).castAdd g₂
+    appendedWire (g₂ := g₂) feed (Wire.input i) = (feed i).castAdd g₂
 ```
 
 `Cslib.Circuits.Program.appendedWire_gate` (theorem, [line 57](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Composition.lean#L57))
 
 ```lean
 theorem appendedWire_gate (feed : Fin k → Wire n g₁) (j : Fin g₂) :
-appendedWire feed (Wire.gate j) = Wire.gate (Fin.natAdd g₁ j)
+    appendedWire feed (Wire.gate j) = Wire.gate (Fin.natAdd g₁ j)
 ```
 
 `Cslib.Circuits.Program.append` (definition, [line 61](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Composition.lean#L61))
@@ -95,7 +95,7 @@ protected def comp (d : Circuit σ m p) (c : Circuit σ n m) : Circuit σ n p
 
 ```lean
 theorem size_comp (d : Circuit σ m p) (c : Circuit σ n m) :
-(d.comp c).size = c.size + d.size
+    (d.comp c).size = c.size + d.size
 ```
 
 `Cslib.Circuits.Circuit.program_comp` (theorem, [line 112](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Composition.lean#L112))
@@ -116,7 +116,7 @@ theorem outputs_comp (d : Circuit σ m p) (c : Circuit σ n m) :
 
 ```lean
 theorem eval_comp (d : Circuit σ m p) (c : Circuit σ n m) (x : Fin n → U) :
-(d.comp c).eval I x = d.eval I (c.eval I x)
+    (d.comp c).eval I x = d.eval I (c.eval I x)
 ```
 
 `Cslib.Circuits.Circuit.append` (definition, [line 127](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Composition.lean#L127))
@@ -131,14 +131,14 @@ def append (c : Circuit σ n m) (d : Circuit σ n p) : Circuit σ n (m + p)
 
 ```lean
 theorem size_append (c : Circuit σ n m) (d : Circuit σ n p) :
-(c.append d).size = c.size + d.size
+    (c.append d).size = c.size + d.size
 ```
 
 `Cslib.Circuits.Circuit.eval_append` (theorem, [line 135](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Composition.lean#L135))
 
 ```lean
 theorem eval_append (c : Circuit σ n m) (d : Circuit σ n p) (x : Fin n → U) :
-(c.append d).eval I x = Fin.append (c.eval I x) (d.eval I x)
+    (c.append d).eval I x = Fin.append (c.eval I x) (d.eval I x)
 ```
 
 `Cslib.Circuits.Circuit.Computes.comp` (theorem, [line 147](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Composition.lean#L147))

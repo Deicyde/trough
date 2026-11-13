@@ -1,6 +1,6 @@
 # Plumbing
 
-12 modules under `Cslib/Computability/Machines/Turing/MultiTape/Plumbing/`, with 112 public declarations.
+12 modules under `Cslib/Computability/Machines/Turing/MultiTape/Plumbing/`, with 102 public declarations.
 
 - [A machine that clears a work tape](clearwork.md)
 - [Extending a machine with additional work tapes](extendtapes.md)

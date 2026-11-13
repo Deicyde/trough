@@ -268,7 +268,7 @@ lemma coe_one : ((1 : Fact P) : Set P) = (PhaseSpace.bot : Set P)⫠
 
 ```lean
 lemma mem_one :
-p ∈ (1 : Fact P) ↔ (∀ q ∈ PhaseSpace.bot, p * q ∈ PhaseSpace.bot)
+  p ∈ (1 : Fact P) ↔ (∀ q ∈ PhaseSpace.bot, p * q ∈ PhaseSpace.bot)
 ```
 
 `Cslib.Logic.CLL.PhaseSpace.one_mem_one` (lemma, [line 213](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Logics/LinearLogic/CLL/PhaseSemantics/Basic.lean#L213))

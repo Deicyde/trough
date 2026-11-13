@@ -159,7 +159,7 @@ theorem MTr.single_invert (s1 : State) (μ : Label) (s2 : State) :
 
 ```lean
 theorem MTr.singleton_iff (s1 : State) (μ : Label) (s2 : State) :
-lts.MTr s1 [μ] s2 ↔ lts.Tr s1 μ s2
+  lts.MTr s1 [μ] s2 ↔ lts.Tr s1 μ s2
 ```
 
 `Cslib.LTS.MTr.split` (theorem, [line 168](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Semantics/LTS/Basic.lean#L168))

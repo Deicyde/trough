@@ -2,7 +2,7 @@
 
 17 modules under `Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/`, with 239 public declarations.
 
-- [λ-calculus (Basic)](basic.md)
+- [λ-calculus (LocallyNameless/Untyped/Basic)](basic.md)
 - [Redex Positions](betaat.md)
 - [Call-by-Name Evaluation](callbyname.md)
 - [Congruence for the λ-calculus](congruence.md)
@@ -18,4 +18,4 @@
 - [MultiSubst](multisubst.md)
 - [Properties](properties.md)
 - [Standard Reduction and the Standardization Theorem](standardreduction.md)
-- [StrongNorm](strongnorm.md)
+- [Untyped/StrongNorm](strongnorm.md)

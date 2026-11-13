@@ -67,21 +67,21 @@ def Program.cost {g : ℕ} (p : Program σ n g) (cost : σ.Op → ℕ) : ℕ
 
 ```lean
 theorem Program.cost_empty (cost : σ.Op → ℕ) :
-(Program.empty : Program σ n 0).cost cost = 0
+    (Program.empty : Program σ n 0).cost cost = 0
 ```
 
 `Cslib.Circuits.Program.cost_gate` (theorem, [line 69](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Simulation.lean#L69))
 
 ```lean
 theorem Program.cost_gate (p : Program σ n g) (line : Line σ n g)
-(cost : σ.Op → ℕ) : (p.gate line).cost cost = p.cost cost + cost line.op
+    (cost : σ.Op → ℕ) : (p.gate line).cost cost = p.cost cost + cost line.op
 ```
 
 `Cslib.Circuits.Program.cost_const` (theorem, [line 72](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Simulation.lean#L72))
 
 ```lean
 theorem Program.cost_const (p : Program σ n g) (b : ℕ) :
-p.cost (fun _ => b) = b * g
+    p.cost (fun _ => b) = b * g
 ```
 
 `Cslib.Circuits.Program.cost_mono` (theorem, [line 76](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Simulation.lean#L76))

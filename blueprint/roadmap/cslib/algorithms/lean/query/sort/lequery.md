@@ -33,7 +33,7 @@ abbrev LEQuery.ask (a b : α) : FreeM (LEQuery α) Bool
 
 ```lean
 theorem LEQuery.eval_ask (oracle : {ι : Type} → LEQuery α ι → ι) (a b : α) :
-(LEQuery.ask a b).eval oracle = oracle (.le a b)
+    (LEQuery.ask a b).eval oracle = oracle (.le a b)
 ```
 
 `Cslib.Query.LEQuery.oracleOf` (definition, [line 34](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/Lean/Query/Sort/LEQuery.lean#L34))
@@ -48,7 +48,7 @@ def LEQuery.oracleOf (f : α → α → Bool) : {ι : Type} → LEQuery α ι �
 
 ```lean
 theorem LEQuery.oracleOf_le (f : α → α → Bool) (a b : α) :
-LEQuery.oracleOf f (.le a b) = f a b
+    LEQuery.oracleOf f (.le a b) = f a b
 ```
 
 `Cslib.Query.LEQuery.cardResponse_eq_two` (theorem, [line 41](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/Lean/Query/Sort/LEQuery.lean#L41))

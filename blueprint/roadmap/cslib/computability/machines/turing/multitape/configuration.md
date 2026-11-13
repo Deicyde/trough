@@ -251,7 +251,7 @@ abbrev Cfg.Halted (cfg : Cfg k Symbol State input) : Prop
 
 ```lean
 def Cfg.prependOutput (c : Cfg k Symbol State input) (pre : List Symbol) :
-Cfg k Symbol State input
+    Cfg k Symbol State input
 ```
 
 `Turing.Cfg.withState` (definition, [line 225](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Configuration.lean#L225))
@@ -260,7 +260,7 @@ Cfg k Symbol State input
 
 ```lean
 def Cfg.withState (cfg : Cfg k Symbol State input)
-{State' : Type*} (q : Option State') : Cfg k Symbol State' input
+    {State' : Type*} (q : Option State') : Cfg k Symbol State' input
 ```
 
 `Turing.Cfg.mapState` (definition, [line 232](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Configuration.lean#L232))
@@ -271,7 +271,7 @@ def Cfg.withState (cfg : Cfg k Symbol State input)
 
 ```lean
 def Cfg.mapState {State' : Type*} (φ : Option State → Option State')
-(c : Cfg k Symbol State input) : Cfg k Symbol State' input
+    (c : Cfg k Symbol State input) : Cfg k Symbol State' input
 ```
 
 `Turing.Cfg.init` (definition, [line 238](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Configuration.lean#L238))

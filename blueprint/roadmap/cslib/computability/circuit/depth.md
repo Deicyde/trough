@@ -43,35 +43,35 @@ theorem Line.depth_pos (line : Line σ n g) (depths : Wire n g → Nat) :
 
 ```lean
 theorem Program.depths_gate_last (p : Program σ n g) (line : Line σ n g) :
-(p.gate line).depths (Fin.last g) = line.depth p.wireDepths
+    (p.gate line).depths (Fin.last g) = line.depth p.wireDepths
 ```
 
 `Cslib.Circuits.Program.depths_gate_castSucc` (theorem, [line 56](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Depth.lean#L56))
 
 ```lean
 theorem Program.depths_gate_castSucc (p : Program σ n g) (line : Line σ n g)
-(j : Fin g) : (p.gate line).depths j.castSucc = p.depths j
+    (j : Fin g) : (p.gate line).depths j.castSucc = p.depths j
 ```
 
 `Cslib.Circuits.Program.wireDepths_input` (theorem, [line 60](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Depth.lean#L60))
 
 ```lean
 theorem Program.wireDepths_input (p : Program σ n g) (i : Fin n) :
-p.wireDepths (.input i) = 0
+    p.wireDepths (.input i) = 0
 ```
 
 `Cslib.Circuits.Program.wireDepths_gateWire` (theorem, [line 63](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Depth.lean#L63))
 
 ```lean
 theorem Program.wireDepths_gateWire (p : Program σ n g) (j : Fin g) :
-p.wireDepths (.gate j) = p.depths j
+    p.wireDepths (.gate j) = p.depths j
 ```
 
 `Cslib.Circuits.Program.wireDepths_gate_castSucc` (theorem, [line 66](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Depth.lean#L66))
 
 ```lean
 theorem Program.wireDepths_gate_castSucc (p : Program σ n g) (line : Line σ n g)
-(w : Wire n g) : (p.gate line).wireDepths w.castSucc = p.wireDepths w
+    (w : Wire n g) : (p.gate line).wireDepths w.castSucc = p.wireDepths w
 ```
 
 `Cslib.Circuits.Program.depth_empty` (theorem, [line 70](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Depth.lean#L70))
@@ -84,7 +84,7 @@ theorem Program.depth_empty : (Program.empty : Program σ n 0).depth = 0
 
 ```lean
 theorem Program.depth_gate (p : Program σ n g) (line : Line σ n g) :
-(p.gate line).depth = max p.depth (line.depth p.wireDepths)
+    (p.gate line).depth = max p.depth (line.depth p.wireDepths)
 ```
 
 `Cslib.Circuits.Program.depth_le_iff` (theorem, [line 77](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Depth.lean#L77))

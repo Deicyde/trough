@@ -1,6 +1,6 @@
 ---
 catalog: module
-lean: Turing.MultiTapeTM.forwardWork, Turing.MultiTapeTM.ForwardWork.runFrom_walk, Turing.MultiTapeTM.runFrom_forwardWork, Turing.MultiTapeTM.workTapePos_runFrom_forwardWork
+lean: Turing.MultiTapeTM.forwardWork, Turing.MultiTapeTM.runFrom_forwardWork, Turing.MultiTapeTM.workTapePos_runFrom_forwardWork
 statement: formalized
 proof: formalized
 ---
@@ -35,18 +35,6 @@ proof: formalized
 
 ```lean
 public def forwardWork (Symbol : Type*) : MultiTapeTM 1 Symbol Unit
-```
-
-`Turing.MultiTapeTM.ForwardWork.runFrom_walk` (lemma, [line 53](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/ForwardWork.lean#L53))
-
-> Walking right over the word: from cell `p`, after `n` steps with `p + n ≤ w.length` the head
-> is at cell `p + n`.
-
-```lean
-lemma runFrom_walk {w : List Symbol} {p : ℕ} (n : ℕ) (hn : p + n ≤ w.length) :
-    (forwardWork Symbol).runFrom
-        ⟨some (), inpos, fun _ => tapeOfList w, fun _ => (p : ℤ), out⟩ n =
-      ⟨some (), inpos, fun _ => tapeOfList w, fun _ => (p : ℤ) + n, out⟩
 ```
 
 `Turing.MultiTapeTM.runFrom_forwardWork` (theorem, [line 72](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/ForwardWork.lean#L72))

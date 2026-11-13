@@ -18,7 +18,7 @@ proof: formalized
 
 ```lean
 def UpperBound (prog : α → FreeM Q β)
-(size : α → Nat) (bound : Nat → Nat) : Prop
+    (size : α → Nat) (bound : Nat → Nat) : Prop
 ```
 
 `Cslib.Query.LowerBound` (definition, [line 33](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/Lean/Query/Bounds.lean#L33))
@@ -28,7 +28,7 @@ def UpperBound (prog : α → FreeM Q β)
 
 ```lean
 def LowerBound (prog : α → FreeM Q β)
-(size : α → Nat) (bound : Nat → Nat) : Prop
+    (size : α → Nat) (bound : Nat → Nat) : Prop
 ```
 
 `Cslib.Query.UpperBound.of_pointwise` (theorem, [line 40](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/Lean/Query/Bounds.lean#L40))

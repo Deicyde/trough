@@ -530,7 +530,7 @@ instance instMonadWithReaderOf : MonadWithReaderOf σ (FreeReader σ)
 
 ```lean
 theorem run_withReader (f : σ → σ) (m : FreeReader σ α) (s : σ) :
-run (withTheReader σ f m) s = run m (f s)
+    run (withTheReader σ f m) s = run m (f s)
 ```
 
 ## Depends on

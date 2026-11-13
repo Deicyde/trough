@@ -291,7 +291,7 @@ theorem subst.commutativity {m r1 r2 : Term Var} {x y : Var} :
 
 ## Depends on
 
-- [λ-calculus (Basic)](basic.md)
+- [λ-calculus (Named/Untyped/Basic)](basic.md)
 
 ## Sources
 

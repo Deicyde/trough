@@ -36,11 +36,11 @@ theorem mergeM_right (xs : List α) (le : α → α → m Bool) : mergeM xs [] l
 
 ```lean
 theorem cons_mergeM_cons (x y : α) (xs ys : List α) (le : α → α → m Bool) :
-mergeM (x :: xs) (y :: ys) le = do
-if ← le x y then
-return x :: (← mergeM xs (y :: ys) le)
-else
-return y :: (← mergeM (x :: xs) ys le)
+    mergeM (x :: xs) (y :: ys) le = do
+      if ← le x y then
+        return x :: (← mergeM xs (y :: ys) le)
+      else
+        return y :: (← mergeM (x :: xs) ys le)
 ```
 
 `List.mergeM_pure` (theorem, [line 54](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/Lean/Sort/Merge.lean#L54))
@@ -83,7 +83,7 @@ theorem mergeSortM_nil (le : α → α → m Bool) : mergeSortM [] le = pure []
 
 ```lean
 theorem mergeSortM_singleton (a : α) (le : α → α → m Bool) :
-mergeSortM [a] le = pure [a]
+    mergeSortM [a] le = pure [a]
 ```
 
 `List.mergeSortM_pure` (theorem, [line 88](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/Lean/Sort/Merge.lean#L88))

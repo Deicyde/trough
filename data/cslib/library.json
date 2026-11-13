@@ -4,6 +4,7 @@
  "readme": [
   "The Lean library for Computer Science.",
   "Official website at <https://www.cslib.io/>.",
+  "…",
   "CSLib aims at formalising Computer Science theories and tools, broadly construed, in the Lean programming language."
  ],
  "maintainers": [
@@ -50,7 +51,7 @@
    "copyright": "Fabrizio Montesi",
    "authors": "Fabrizio Montesi",
    "title": "Milner's Vending Machine",
-   "doc": "This file formalises Milner's vending machine example for CCS.\n\nWe formalise two versions:\n- A machine with a deterministic LTS: `coin.(tea.VM + coffee.VM)`.\n- A machine with a nondeterministic LTS: `coin.tea.VM + coin.coffee.VM`.\n\nWe then prove the classical example that the two are not bisimilar.\nWe also show the distinction with HML: only the deterministic machine offers the choice of drink\nafter a coin is inserted.\n\nFuture work on proving that the two vending machines are trace equivalent would be welcome.",
+   "doc": "This file formalises Milner's vending machine example for CCS.\n\nWe formalise two versions:\n- A machine with a deterministic LTS: `coin.(tea.VM + coffee.VM)`.\n- A machine with a nondeterministic LTS: `coin.tea.VM + coin.coffee.VM`.\n\nWe then prove the classical example that the two are not bisimilar.\nWe also show the distinction with HML: only the deterministic machine offers the choice of drink\nafter a coin is inserted.\n\n…",
    "items": [
     {
      "line": 37,
@@ -549,7 +550,7 @@
      "kind": "def",
      "line": 26,
      "doc": "Upper bound: for all oracles, inputs of size ≤ n make at most `bound n` queries.",
-     "statement": "def UpperBound (prog : α → FreeM Q β)\n(size : α → Nat) (bound : Nat → Nat) : Prop",
+     "statement": "def UpperBound (prog : α → FreeM Q β)\n    (size : α → Nat) (bound : Nat → Nat) : Prop",
      "sorry": false
     },
     {
@@ -557,7 +558,7 @@
      "kind": "def",
      "line": 33,
      "doc": "Lower bound: for every size n, there exists an input of size at most n and an oracle\nmaking the program perform ≥ `bound n` queries.",
-     "statement": "def LowerBound (prog : α → FreeM Q β)\n(size : α → Nat) (bound : Nat → Nat) : Prop",
+     "statement": "def LowerBound (prog : α → FreeM Q β)\n    (size : α → Nat) (bound : Nat → Nat) : Prop",
      "sorry": false
     },
     {
@@ -611,7 +612,7 @@
      "kind": "def",
      "line": 93,
      "doc": "Weighted query cost in an additive monoid: each query has a cost given by `weight`,\naccumulated along the oracle-determined path. Defined as `liftM` into `TimeM`.",
-     "statement": "def cost {T : Type t} [AddMonoid T] (oracle : {ι : Type u} → F ι → ι)\n(weight : {ι : Type u} → F ι → T) (p : FreeM F α) : T",
+     "statement": "def cost {T : Type t} [AddMonoid T] (oracle : {ι : Type u} → F ι → ι)\n    (weight : {ι : Type u} → F ι → T) (p : FreeM F α) : T",
      "sorry": false
     },
     {
@@ -631,7 +632,7 @@
      "kind": "theorem",
      "line": 106,
      "doc": "",
-     "statement": "theorem eval_pure (oracle : {ι : Type u} → F ι → ι) (a : α) :\neval oracle (pure a : FreeM F α) = a",
+     "statement": "theorem eval_pure (oracle : {ι : Type u} → F ι → ι) (a : α) :\n    eval oracle (pure a : FreeM F α) = a",
      "sorry": false
     },
     {
@@ -639,7 +640,7 @@
      "kind": "theorem",
      "line": 109,
      "doc": "",
-     "statement": "theorem eval_liftBind (oracle : {ι : Type u} → F ι → ι)\n{ι : Type u} (op : F ι) (cont : ι → FreeM F α) :\neval oracle (FreeM.lift op >>= cont) = eval oracle (cont (oracle op))",
+     "statement": "theorem eval_liftBind (oracle : {ι : Type u} → F ι → ι)\n    {ι : Type u} (op : F ι) (cont : ι → FreeM F α) :\n    eval oracle (FreeM.lift op >>= cont) = eval oracle (cont (oracle op))",
      "sorry": false
     },
     {
@@ -647,7 +648,7 @@
      "kind": "theorem",
      "line": 113,
      "doc": "",
-     "statement": "theorem eval_lift (oracle : {ι : Type u} → F ι → ι) {ι : Type u} (op : F ι) :\neval oracle (FreeM.lift op) = oracle op",
+     "statement": "theorem eval_lift (oracle : {ι : Type u} → F ι → ι) {ι : Type u} (op : F ι) :\n    eval oracle (FreeM.lift op) = oracle op",
      "sorry": false
     },
     {
@@ -655,7 +656,7 @@
      "kind": "theorem",
      "line": 116,
      "doc": "",
-     "statement": "theorem eval_bind (oracle : {ι : Type u} → F ι → ι)\n(t : FreeM F α) (f : α → FreeM F β) :\neval oracle (t >>= f) = eval oracle (f (eval oracle t))",
+     "statement": "theorem eval_bind (oracle : {ι : Type u} → F ι → ι)\n    (t : FreeM F α) (f : α → FreeM F β) :\n    eval oracle (t >>= f) = eval oracle (f (eval oracle t))",
      "sorry": false
     },
     {
@@ -663,7 +664,7 @@
      "kind": "theorem",
      "line": 121,
      "doc": "",
-     "statement": "theorem eval_map (oracle : {ι : Type u} → F ι → ι)\n(t : FreeM F α) (f : α → β) :\neval oracle (f <$> t) = f (eval oracle t)",
+     "statement": "theorem eval_map (oracle : {ι : Type u} → F ι → ι)\n    (t : FreeM F α) (f : α → β) :\n    eval oracle (f <$> t) = f (eval oracle t)",
      "sorry": false
     },
     {
@@ -683,7 +684,7 @@
      "kind": "theorem",
      "line": 132,
      "doc": "",
-     "statement": "theorem cost_pure {T : Type t} [AddMonoid T] (oracle : {ι : Type u} → F ι → ι)\n(weight : {ι : Type u} → F ι → T) (a : α) :\ncost oracle weight (pure a : FreeM F α) = 0",
+     "statement": "theorem cost_pure {T : Type t} [AddMonoid T] (oracle : {ι : Type u} → F ι → ι)\n    (weight : {ι : Type u} → F ι → T) (a : α) :\n    cost oracle weight (pure a : FreeM F α) = 0",
      "sorry": false
     },
     {
@@ -691,7 +692,7 @@
      "kind": "theorem",
      "line": 136,
      "doc": "",
-     "statement": "theorem cost_liftBind {T : Type t} [AddMonoid T]\n(oracle : {ι : Type u} → F ι → ι) (weight : {ι : Type u} → F ι → T)\n{ι : Type u} (op : F ι) (cont : ι → FreeM F α) :\ncost oracle weight (FreeM.lift op >>= cont) =\nweight op + cost oracle weight (cont (oracle op))",
+     "statement": "theorem cost_liftBind {T : Type t} [AddMonoid T]\n    (oracle : {ι : Type u} → F ι → ι) (weight : {ι : Type u} → F ι → T)\n    {ι : Type u} (op : F ι) (cont : ι → FreeM F α) :\n    cost oracle weight (FreeM.lift op >>= cont) =\n      weight op + cost oracle weight (cont (oracle op))",
      "sorry": false
     },
     {
@@ -699,7 +700,7 @@
      "kind": "theorem",
      "line": 142,
      "doc": "",
-     "statement": "theorem cost_lift {T : Type t} [AddMonoid T]\n(oracle : {ι : Type u} → F ι → ι) (weight : {ι : Type u} → F ι → T)\n{ι : Type u} (op : F ι) :\ncost oracle weight (FreeM.lift op) = weight op",
+     "statement": "theorem cost_lift {T : Type t} [AddMonoid T]\n    (oracle : {ι : Type u} → F ι → ι) (weight : {ι : Type u} → F ι → T)\n    {ι : Type u} (op : F ι) :\n    cost oracle weight (FreeM.lift op) = weight op",
      "sorry": false
     },
     {
@@ -707,7 +708,7 @@
      "kind": "theorem",
      "line": 148,
      "doc": "",
-     "statement": "theorem cost_bind {T : Type t} [AddMonoid T] (oracle : {ι : Type u} → F ι → ι)\n(weight : {ι : Type u} → F ι → T) (t : FreeM F α) (f : α → FreeM F β) :\ncost oracle weight (t >>= f) =\ncost oracle weight t + cost oracle weight (f (eval oracle t))",
+     "statement": "theorem cost_bind {T : Type t} [AddMonoid T] (oracle : {ι : Type u} → F ι → ι)\n    (weight : {ι : Type u} → F ι → T) (t : FreeM F α) (f : α → FreeM F β) :\n    cost oracle weight (t >>= f) =\n      cost oracle weight t + cost oracle weight (f (eval oracle t))",
      "sorry": false
     },
     {
@@ -715,7 +716,7 @@
      "kind": "theorem",
      "line": 154,
      "doc": "",
-     "statement": "theorem cost_map {T : Type t} [AddMonoid T]\n(oracle : {ι : Type u} → F ι → ι) (weight : {ι : Type u} → F ι → T)\n(t : FreeM F α) (f : α → β) :\ncost oracle weight (f <$> t) = cost oracle weight t",
+     "statement": "theorem cost_map {T : Type t} [AddMonoid T]\n    (oracle : {ι : Type u} → F ι → ι) (weight : {ι : Type u} → F ι → T)\n    (t : FreeM F α) (f : α → β) :\n    cost oracle weight (f <$> t) = cost oracle weight t",
      "sorry": false
     },
     {
@@ -727,7 +728,7 @@
      "kind": "theorem",
      "line": 162,
      "doc": "",
-     "statement": "theorem countQueries_pure (oracle : {ι : Type u} → F ι → ι) (a : α) :\ncountQueries oracle (pure a : FreeM F α) = 0",
+     "statement": "theorem countQueries_pure (oracle : {ι : Type u} → F ι → ι) (a : α) :\n    countQueries oracle (pure a : FreeM F α) = 0",
      "sorry": false
     },
     {
@@ -735,7 +736,7 @@
      "kind": "theorem",
      "line": 165,
      "doc": "",
-     "statement": "theorem countQueries_liftBind (oracle : {ι : Type u} → F ι → ι)\n{ι : Type u} (op : F ι) (cont : ι → FreeM F α) :\ncountQueries oracle (FreeM.lift op >>= cont) =\n1 + countQueries oracle (cont (oracle op))",
+     "statement": "theorem countQueries_liftBind (oracle : {ι : Type u} → F ι → ι)\n    {ι : Type u} (op : F ι) (cont : ι → FreeM F α) :\n    countQueries oracle (FreeM.lift op >>= cont) =\n      1 + countQueries oracle (cont (oracle op))",
      "sorry": false
     },
     {
@@ -743,7 +744,7 @@
      "kind": "theorem",
      "line": 170,
      "doc": "",
-     "statement": "theorem countQueries_lift (oracle : {ι : Type u} → F ι → ι)\n{ι : Type u} (op : F ι) :\ncountQueries oracle (FreeM.lift op) = 1",
+     "statement": "theorem countQueries_lift (oracle : {ι : Type u} → F ι → ι)\n    {ι : Type u} (op : F ι) :\n    countQueries oracle (FreeM.lift op) = 1",
      "sorry": false
     },
     {
@@ -751,7 +752,7 @@
      "kind": "theorem",
      "line": 175,
      "doc": "",
-     "statement": "theorem countQueries_bind (oracle : {ι : Type u} → F ι → ι)\n(t : FreeM F α) (f : α → FreeM F β) :\ncountQueries oracle (t >>= f) =\ncountQueries oracle t + countQueries oracle (f (eval oracle t))",
+     "statement": "theorem countQueries_bind (oracle : {ι : Type u} → F ι → ι)\n    (t : FreeM F α) (f : α → FreeM F β) :\n    countQueries oracle (t >>= f) =\n      countQueries oracle t + countQueries oracle (f (eval oracle t))",
      "sorry": false
     },
     {
@@ -759,7 +760,7 @@
      "kind": "theorem",
      "line": 181,
      "doc": "",
-     "statement": "theorem countQueries_map (oracle : {ι : Type u} → F ι → ι)\n(t : FreeM F α) (f : α → β) :\ncountQueries oracle (f <$> t) = countQueries oracle t",
+     "statement": "theorem countQueries_map (oracle : {ι : Type u} → F ι → ι)\n    (t : FreeM F α) (f : α → β) :\n    countQueries oracle (f <$> t) = countQueries oracle t",
      "sorry": false
     },
     {
@@ -843,7 +844,7 @@
      "kind": "theorem",
      "line": 32,
      "doc": "Evaluating query-based insertion agrees with `List.orderedInsert` using the relation\nsupplied by the oracle.",
-     "statement": "theorem eval_orderedInsert (oracle : {ι : Type} → LEQuery α ι → ι)\n(x : α) (xs : List α) :\n(orderedInsert x xs).eval oracle =\nxs.orderedInsert (fun x y => oracle (.le x y)) x",
+     "statement": "theorem eval_orderedInsert (oracle : {ι : Type} → LEQuery α ι → ι)\n    (x : α) (xs : List α) :\n    (orderedInsert x xs).eval oracle =\n      xs.orderedInsert (fun x y => oracle (.le x y)) x",
      "sorry": false
     },
     {
@@ -851,7 +852,7 @@
      "kind": "theorem",
      "line": 44,
      "doc": "Evaluating query-based insertion sort agrees with `List.insertionSort` using the relation\nsupplied by the oracle.\n\nThis is the essential correctness statement: it identifies the query program as *the*\ninsertion sort operation, so correctness properties (permutation, sortedness) transfer\ndirectly from the `List.insertionSort` API rather than being restated here.",
-     "statement": "theorem eval_insertionSort (oracle : {ι : Type} → LEQuery α ι → ι) (xs : List α) :\n(insertionSort xs).eval oracle =\nxs.insertionSort (fun x y => oracle (.le x y))",
+     "statement": "theorem eval_insertionSort (oracle : {ι : Type} → LEQuery α ι → ι) (xs : List α) :\n    (insertionSort xs).eval oracle =\n      xs.insertionSort (fun x y => oracle (.le x y))",
      "sorry": false
     },
     {
@@ -959,7 +960,7 @@
      "kind": "theorem",
      "line": 30,
      "doc": "",
-     "statement": "theorem LEQuery.eval_ask (oracle : {ι : Type} → LEQuery α ι → ι) (a b : α) :\n(LEQuery.ask a b).eval oracle = oracle (.le a b)",
+     "statement": "theorem LEQuery.eval_ask (oracle : {ι : Type} → LEQuery α ι → ι) (a b : α) :\n    (LEQuery.ask a b).eval oracle = oracle (.le a b)",
      "sorry": false
     },
     {
@@ -975,7 +976,7 @@
      "kind": "theorem",
      "line": 37,
      "doc": "",
-     "statement": "theorem LEQuery.oracleOf_le (f : α → α → Bool) (a b : α) :\nLEQuery.oracleOf f (.le a b) = f a b",
+     "statement": "theorem LEQuery.oracleOf_le (f : α → α → Bool) (a b : α) :\n    LEQuery.oracleOf f (.le a b) = f a b",
      "sorry": false
     },
     {
@@ -1069,7 +1070,7 @@
      "kind": "theorem",
      "line": 37,
      "doc": "",
-     "statement": "theorem split_fst_length_eq (xs : List α) :\n(split xs).1.length = (xs.length + 1) / 2",
+     "statement": "theorem split_fst_length_eq (xs : List α) :\n    (split xs).1.length = (xs.length + 1) / 2",
      "sorry": false
     },
     {
@@ -1077,7 +1078,7 @@
      "kind": "theorem",
      "line": 42,
      "doc": "",
-     "statement": "theorem split_snd_length_eq (xs : List α) :\n(split xs).2.length = xs.length / 2",
+     "statement": "theorem split_snd_length_eq (xs : List α) :\n    (split xs).2.length = xs.length / 2",
      "sorry": false
     },
     {
@@ -1139,7 +1140,7 @@
      "kind": "theorem",
      "line": 39,
      "doc": "Evaluating the query-based merge agrees with `List.merge` using the relation supplied\nby the oracle.",
-     "statement": "theorem eval_merge (oracle : {ι : Type} → LEQuery α ι → ι) (xs ys : List α) :\n(merge xs ys).eval oracle = xs.merge ys (fun a b => oracle (.le a b))",
+     "statement": "theorem eval_merge (oracle : {ι : Type} → LEQuery α ι → ι) (xs ys : List α) :\n    (merge xs ys).eval oracle = xs.merge ys (fun a b => oracle (.le a b))",
      "sorry": false
     },
     {
@@ -1147,7 +1148,7 @@
      "kind": "theorem",
      "line": 49,
      "doc": "Evaluating query-based merge sort agrees with `List.mergeSort` using the relation\nsupplied by the oracle.\n\nThis is the essential correctness statement: it identifies the query program as *the*\nmerge sort operation, so correctness properties (permutation, sortedness, stability)\ntransfer directly from the `List.mergeSort` API rather than being restated here.",
-     "statement": "theorem eval_mergeSort (oracle : {ι : Type} → LEQuery α ι → ι) (xs : List α) :\n(mergeSort xs).eval oracle = xs.mergeSort (fun a b => oracle (.le a b))",
+     "statement": "theorem eval_mergeSort (oracle : {ι : Type} → LEQuery α ι → ι) (xs : List α) :\n    (mergeSort xs).eval oracle = xs.mergeSort (fun a b => oracle (.le a b))",
      "sorry": false
     },
     {
@@ -1219,7 +1220,7 @@
      "kind": "theorem",
      "line": 102,
      "doc": "",
-     "statement": "theorem countQueries_mergeSort_cons_cons (oracle : {ι : Type} → LEQuery α ι → ι)\n(x y : α) (zs : List α) :\n(mergeSort (x :: y :: zs)).countQueries oracle =\n(mergeSort (x :: y :: zs).split.1).countQueries oracle +\n((mergeSort (x :: y :: zs).split.2).countQueries oracle +\n(merge ((x :: y :: zs).split.1.mergeSort fun a b => oracle (.le a b))\n      ((x :: y :: zs).split.2.mergeSort fun a b => oracle (.le a b))).countQueries\n oracle)",
+     "statement": "theorem countQueries_mergeSort_cons_cons (oracle : {ι : Type} → LEQuery α ι → ι)\n    (x y : α) (zs : List α) :\n    (mergeSort (x :: y :: zs)).countQueries oracle =\n      (mergeSort (x :: y :: zs).split.1).countQueries oracle +\n      ((mergeSort (x :: y :: zs).split.2).countQueries oracle +\n       (merge ((x :: y :: zs).split.1.mergeSort fun a b => oracle (.le a b))\n              ((x :: y :: zs).split.2.mergeSort fun a b => oracle (.le a b))).countQueries\n         oracle)",
      "sorry": false
     },
     {
@@ -1293,7 +1294,7 @@
      "kind": "theorem",
      "line": 33,
      "doc": "",
-     "statement": "theorem orderedInsertM_cons (a b : α) (l : List α) :\norderedInsertM r a (b :: l) = do\nif ← r a b then return a :: b :: l else return b :: (← orderedInsertM r a l)",
+     "statement": "theorem orderedInsertM_cons (a b : α) (l : List α) :\n    orderedInsertM r a (b :: l) = do\n      if ← r a b then return a :: b :: l else return b :: (← orderedInsertM r a l)",
      "sorry": false
     },
     {
@@ -1341,7 +1342,7 @@
      "kind": "theorem",
      "line": 62,
      "doc": "",
-     "statement": "theorem insertionSortM_cons (b : α) (l : List α) :\ninsertionSortM r (b :: l) = (do orderedInsertM r b (← insertionSortM r l))",
+     "statement": "theorem insertionSortM_cons (b : α) (l : List α) :\n    insertionSortM r (b :: l) = (do orderedInsertM r b (← insertionSortM r l))",
      "sorry": false
     },
     {
@@ -1407,7 +1408,7 @@
      "kind": "theorem",
      "line": 45,
      "doc": "",
-     "statement": "theorem cons_mergeM_cons (x y : α) (xs ys : List α) (le : α → α → m Bool) :\nmergeM (x :: xs) (y :: ys) le = do\nif ← le x y then\nreturn x :: (← mergeM xs (y :: ys) le)\nelse\nreturn y :: (← mergeM (x :: xs) ys le)",
+     "statement": "theorem cons_mergeM_cons (x y : α) (xs ys : List α) (le : α → α → m Bool) :\n    mergeM (x :: xs) (y :: ys) le = do\n      if ← le x y then\n        return x :: (← mergeM xs (y :: ys) le)\n      else\n        return y :: (← mergeM (x :: xs) ys le)",
      "sorry": false
     },
     {
@@ -1455,7 +1456,7 @@
      "kind": "theorem",
      "line": 83,
      "doc": "",
-     "statement": "theorem mergeSortM_singleton (a : α) (le : α → α → m Bool) :\nmergeSortM [a] le = pure [a]",
+     "statement": "theorem mergeSortM_singleton (a : α) (le : α → α → m Bool) :\n    mergeSortM [a] le = pure [a]",
      "sorry": false
     },
     {
@@ -1529,7 +1530,7 @@
      "kind": "theorem",
      "line": 98,
      "doc": "",
-     "statement": "theorem ret_bind {α β} [Add T] (m : TimeM T α) (f : α → TimeM T β) :\n(m >>= f).ret = (f m.ret).ret",
+     "statement": "theorem ret_bind {α β} [Add T] (m : TimeM T α) (f : α → TimeM T β) :\n    (m >>= f).ret = (f m.ret).ret",
      "sorry": false
     },
     {
@@ -1545,7 +1546,7 @@
      "kind": "theorem",
      "line": 101,
      "doc": "",
-     "statement": "theorem ret_mapConst {α β} (a : α) (x : TimeM T β) :\n(Functor.mapConst a x).ret = a",
+     "statement": "theorem ret_mapConst {α β} (a : α) (x : TimeM T β) :\n    (Functor.mapConst a x).ret = a",
      "sorry": false
     },
     {
@@ -1553,7 +1554,7 @@
      "kind": "theorem",
      "line": 103,
      "doc": "",
-     "statement": "theorem ret_seqRight {α} (x : TimeM T α) (y : Unit → TimeM T β) [Add T] :\n(SeqRight.seqRight x y).ret = (y ()).ret",
+     "statement": "theorem ret_seqRight {α} (x : TimeM T α) (y : Unit → TimeM T β) [Add T] :\n    (SeqRight.seqRight x y).ret = (y ()).ret",
      "sorry": false
     },
     {
@@ -1561,7 +1562,7 @@
      "kind": "theorem",
      "line": 105,
      "doc": "",
-     "statement": "theorem ret_seqLeft {α} [Add T] (x : TimeM T α) (y : Unit → TimeM T β) :\n(SeqLeft.seqLeft x y).ret = x.ret",
+     "statement": "theorem ret_seqLeft {α} [Add T] (x : TimeM T α) (y : Unit → TimeM T β) :\n    (SeqLeft.seqLeft x y).ret = x.ret",
      "sorry": false
     },
     {
@@ -1569,7 +1570,7 @@
      "kind": "theorem",
      "line": 107,
      "doc": "",
-     "statement": "theorem ret_seq {α β} [Add T] (f : TimeM T (α → β)) (x : Unit → TimeM T α) :\n(Seq.seq f x).ret = f.ret (x ()).ret",
+     "statement": "theorem ret_seq {α β} [Add T] (f : TimeM T (α → β)) (x : Unit → TimeM T α) :\n    (Seq.seq f x).ret = f.ret (x ()).ret",
      "sorry": false
     },
     {
@@ -1585,7 +1586,7 @@
      "kind": "theorem",
      "line": 119,
      "doc": "",
-     "statement": "theorem time_bind {α β} [Add T] (m : TimeM T α) (f : α → TimeM T β) :\n(m >>= f).time = m.time + (f m.ret).time",
+     "statement": "theorem time_bind {α β} [Add T] (m : TimeM T α) (f : α → TimeM T β) :\n    (m >>= f).time = m.time + (f m.ret).time",
      "sorry": false
     },
     {
@@ -1609,7 +1610,7 @@
      "kind": "theorem",
      "line": 123,
      "doc": "",
-     "statement": "theorem time_seqRight {α} [Add T] (x : TimeM T α) (y : Unit → TimeM T β) :\n(SeqRight.seqRight x y).time = x.time + (y ()).time",
+     "statement": "theorem time_seqRight {α} [Add T] (x : TimeM T α) (y : Unit → TimeM T β) :\n    (SeqRight.seqRight x y).time = x.time + (y ()).time",
      "sorry": false
     },
     {
@@ -1617,7 +1618,7 @@
      "kind": "theorem",
      "line": 125,
      "doc": "",
-     "statement": "theorem time_seqLeft {α} [Add T] (x : TimeM T α) (y : Unit → TimeM T β) :\n(SeqLeft.seqLeft x y).time = x.time + (y ()).time",
+     "statement": "theorem time_seqLeft {α} [Add T] (x : TimeM T α) (y : Unit → TimeM T β) :\n    (SeqLeft.seqLeft x y).time = x.time + (y ()).time",
      "sorry": false
     },
     {
@@ -1625,7 +1626,7 @@
      "kind": "theorem",
      "line": 127,
      "doc": "",
-     "statement": "theorem time_seq {α β} [Add T] (f : TimeM T (α → β)) (x : Unit → TimeM T α) :\n(Seq.seq f x).time = f.time + (x ()).time",
+     "statement": "theorem time_seq {α β} [Add T] (f : TimeM T (α → β)) (x : Unit → TimeM T α) :\n    (Seq.seq f x).time = f.time + (x ()).time",
      "sorry": false
     },
     {
@@ -1660,7 +1661,7 @@
    "copyright": "Fabrizio Montesi",
    "authors": "Fabrizio Montesi",
    "title": "Diffie-Hellman Key Exchange in Stateful Processes (testbed)",
-   "doc": "This module formalises the Diffie-Hellman key exchange protocol in `StatefulProcesses`.\n\nIt is also intended as a simple testbed to measure improvement on how CSLib deals with embedded DSLs\nlike Stateful Processes and reasoning on operational semantics.\n\nCurrent aspects that stand out and could be more ergonomic are:\n1. The integration of Lean terms within expressions for computation at processes requires\n  significant plumbing. Ideally, it should be seamless.\n2. The protocol has two obvious symbolic traces, yet proving `net_completeTraces` is cumbersome.\n  Perhaps an API for unique transitions could be partially helpful:\n```\ndef _root_.Cslib.LTS.TrUnique (lts : LTS State Label) (s : State) (μ : Label) (s' : State) :=\n  lts.Tr s μ s' ∧ ∀ μ' s'', lts.Tr s μ' s'' → μ' = μ ∧ s'' = s'\n```\n  The terms for `Alice` and `Bob` after one and two steps of their executions are provided as\n  reference for this endeavour.\n3. As a consequence of (2), proving `net_fun_correct` is cumbersome.\n\n## Implementation notes\n\nThe current implementation requires proofs that `p` is prime and that `g` is a primitive root modulo\n`p`, but does not use these facts. They are reserved for future work on security results.",
+   "doc": "This module formalises the Diffie-Hellman key exchange protocol in `StatefulProcesses`.\n\nIt is also intended as a simple testbed to measure improvement on how CSLib deals with embedded DSLs\nlike Stateful Processes and reasoning on operational semantics.\n\nCurrent aspects that stand out and could be more ergonomic are:\n1. The integration of Lean terms within expressions for computation at processes requires\n  significant plumbing. Ideally, it should be seamless.\n2. The protocol has two obvious symbolic traces, yet proving `net_completeTraces` is cumbersome.\n  Perhaps an API for unique transitions could be partially helpful:\n```\ndef _root_.Cslib.LTS.TrUnique (lts : LTS State Label) (s : State) (μ : Label) (s' : State) :=\n  lts.Tr s μ s' ∧ ∀ μ' s'', lts.Tr s μ' s'' → μ' = μ ∧ s'' = s'\n```\n  The terms for `Alice` and `Bob` after one and two steps of their executions are provided as\n  reference for this endeavour.\n3. As a consequence of (2), proving `net_fun_correct` is cumbersome.\n\n## Implementation notes\n\nThe current implementation requires proofs that `p` is prime and that `g` is a primitive root modulo\n`p`, but does not use these facts. …",
    "items": [
     {
      "line": 47,
@@ -3675,7 +3676,7 @@
      "kind": "theorem",
      "line": 74,
      "doc": "",
-     "statement": "theorem Circuit.size_wiring (select : Fin outputCount → Fin inputCount) :\n(wiring σ select).size = 0",
+     "statement": "theorem Circuit.size_wiring (select : Fin outputCount → Fin inputCount) :\n    (wiring σ select).size = 0",
      "sorry": false
     },
     {
@@ -3683,7 +3684,7 @@
      "kind": "theorem",
      "line": 77,
      "doc": "",
-     "statement": "theorem Circuit.program_wiring (select : Fin outputCount → Fin inputCount) :\n(wiring σ select).program = .empty",
+     "statement": "theorem Circuit.program_wiring (select : Fin outputCount → Fin inputCount) :\n    (wiring σ select).program = .empty",
      "sorry": false
     },
     {
@@ -3691,7 +3692,7 @@
      "kind": "theorem",
      "line": 80,
      "doc": "",
-     "statement": "theorem Circuit.outputs_wiring (select : Fin outputCount → Fin inputCount) :\n(wiring σ select).outputs = .input ∘ select",
+     "statement": "theorem Circuit.outputs_wiring (select : Fin outputCount → Fin inputCount) :\n    (wiring σ select).outputs = .input ∘ select",
      "sorry": false
     },
     {
@@ -3707,7 +3708,7 @@
      "kind": "theorem",
      "line": 91,
      "doc": "",
-     "statement": "theorem Circuit.mapInputs_id :\n(Circuit.mapInputs id :\nCircuit σ inputCount outputCount → Circuit σ inputCount outputCount) = id",
+     "statement": "theorem Circuit.mapInputs_id :\n    (Circuit.mapInputs id :\n      Circuit σ inputCount outputCount → Circuit σ inputCount outputCount) = id",
      "sorry": false
     },
     {
@@ -3731,7 +3732,7 @@
      "kind": "theorem",
      "line": 111,
      "doc": "",
-     "statement": "theorem Circuit.comapOutputs_id :\n(Circuit.comapOutputs id :\nCircuit σ inputCount outputCount → Circuit σ inputCount outputCount) = id",
+     "statement": "theorem Circuit.comapOutputs_id :\n    (Circuit.comapOutputs id :\n      Circuit σ inputCount outputCount → Circuit σ inputCount outputCount) = id",
      "sorry": false
     },
     {
@@ -3763,7 +3764,7 @@
      "kind": "theorem",
      "line": 132,
      "doc": "",
-     "statement": "theorem Circuit.fanInAtMost_wiring (select : Fin outputCount → Fin inputCount)\n(r : Nat) : (Circuit.wiring σ select).FanInAtMost r",
+     "statement": "theorem Circuit.fanInAtMost_wiring (select : Fin outputCount → Fin inputCount)\n    (r : Nat) : (Circuit.wiring σ select).FanInAtMost r",
      "sorry": false
     },
     {
@@ -3787,7 +3788,7 @@
      "kind": "theorem",
      "line": 143,
      "doc": "",
-     "statement": "theorem Circuit.outputDepths_wiring (select : Fin outputCount → Fin inputCount) :\n(Circuit.wiring σ select).outputDepths = fun _ => 0",
+     "statement": "theorem Circuit.outputDepths_wiring (select : Fin outputCount → Fin inputCount) :\n    (Circuit.wiring σ select).outputDepths = fun _ => 0",
      "sorry": false
     },
     {
@@ -3795,7 +3796,7 @@
      "kind": "theorem",
      "line": 146,
      "doc": "",
-     "statement": "theorem Circuit.depth_wiring (select : Fin outputCount → Fin inputCount) :\n(Circuit.wiring σ select).depth = 0",
+     "statement": "theorem Circuit.depth_wiring (select : Fin outputCount → Fin inputCount) :\n    (Circuit.wiring σ select).depth = 0",
      "sorry": false
     },
     {
@@ -3819,7 +3820,7 @@
      "kind": "theorem",
      "line": 167,
      "doc": "",
-     "statement": "theorem Circuit.mem_inputSupport\n{c : Circuit σ inputCount outputCount}\n{input : Fin inputCount} :\ninput ∈ c.inputSupport ↔\n∃ output, input ∈ c.program.wireSupport (c.outputs output)",
+     "statement": "theorem Circuit.mem_inputSupport\n    {c : Circuit σ inputCount outputCount}\n    {input : Fin inputCount} :\n    input ∈ c.inputSupport ↔\n      ∃ output, input ∈ c.program.wireSupport (c.outputs output)",
      "sorry": false
     },
     {
@@ -3835,7 +3836,7 @@
      "kind": "theorem",
      "line": 186,
      "doc": "Output `j` of a wiring circuit is input `select j`.",
-     "statement": "theorem Circuit.eval_wiring (select : Fin outputCount → Fin inputCount)\n(interpretation : Interpretation σ U) (input : Fin inputCount → U) :\n(Circuit.wiring σ select).eval interpretation input = input ∘ select",
+     "statement": "theorem Circuit.eval_wiring (select : Fin outputCount → Fin inputCount)\n    (interpretation : Interpretation σ U) (input : Fin inputCount → U) :\n    (Circuit.wiring σ select).eval interpretation input = input ∘ select",
      "sorry": false
     },
     {
@@ -3843,7 +3844,7 @@
      "kind": "theorem",
      "line": 191,
      "doc": "Evaluating a circuit with relabeled inputs precomposes its input valuation.",
-     "statement": "theorem Circuit.eval_mapInputs {inputCount' : ℕ}\n(c : Circuit σ inputCount outputCount) (f : Fin inputCount → Fin inputCount')\n(i : Interpretation σ U) (inputs : Fin inputCount' → U) :\n(c.mapInputs f).eval i inputs = c.eval i (inputs ∘ f)",
+     "statement": "theorem Circuit.eval_mapInputs {inputCount' : ℕ}\n    (c : Circuit σ inputCount outputCount) (f : Fin inputCount → Fin inputCount')\n    (i : Interpretation σ U) (inputs : Fin inputCount' → U) :\n    (c.mapInputs f).eval i inputs = c.eval i (inputs ∘ f)",
      "sorry": false
     },
     {
@@ -3851,7 +3852,7 @@
      "kind": "theorem",
      "line": 199,
      "doc": "Selecting output wires selects the corresponding values after evaluation.",
-     "statement": "theorem Circuit.eval_comapOutputs {outputCount' : ℕ}\n(c : Circuit σ inputCount outputCount) (f : Fin outputCount' → Fin outputCount)\n(i : Interpretation σ U) (inputs : Fin inputCount → U) :\n(c.comapOutputs f).eval i inputs = c.eval i inputs ∘ f",
+     "statement": "theorem Circuit.eval_comapOutputs {outputCount' : ℕ}\n    (c : Circuit σ inputCount outputCount) (f : Fin outputCount' → Fin outputCount)\n    (i : Interpretation σ U) (inputs : Fin inputCount → U) :\n    (c.comapOutputs f).eval i inputs = c.eval i inputs ∘ f",
      "sorry": false
     },
     {
@@ -3875,7 +3876,7 @@
      "kind": "theorem",
      "line": 215,
      "doc": "",
-     "statement": "theorem single_apply (f : (Fin inputCount → U) → U) (x : Fin inputCount → U)\n(i : Fin 1) : single f x i = f x",
+     "statement": "theorem single_apply (f : (Fin inputCount → U) → U) (x : Fin inputCount → U)\n    (i : Fin 1) : single f x i = f x",
      "sorry": false
     },
     {
@@ -3891,7 +3892,7 @@
      "kind": "theorem",
      "line": 227,
      "doc": "Computing on every input is computing.",
-     "statement": "theorem Circuit.computesOn_univ_iff (c : Circuit σ inputCount outputCount)\n(interpretation : Interpretation σ U) (f : (Fin inputCount → U) → Fin outputCount → U) :\nc.ComputesOn interpretation Set.univ f ↔ c.Computes interpretation f",
+     "statement": "theorem Circuit.computesOn_univ_iff (c : Circuit σ inputCount outputCount)\n    (interpretation : Interpretation σ U) (f : (Fin inputCount → U) → Fin outputCount → U) :\n    c.ComputesOn interpretation Set.univ f ↔ c.Computes interpretation f",
      "sorry": false
     },
     {
@@ -3949,7 +3950,7 @@
      "kind": "inductive",
      "line": 29,
      "doc": "Operations of the De Morgan basis, including constants.",
-     "statement": "inductive Op where\n  /-- A Boolean constant. -/\n  | const (value : Bool)\n  /-- Negation. -/\n  | not\n  /-- Binary conjunction. -/\n  | and\n  /-- Binary disjunction. -/\n  | or\n  deriving DecidableEq, Fintype\n\n/-- The De Morgan basis has five operation symbols, counting its two constants. -/\n@[simp] theorem Op.card : Fintype.card Op = 5 := rfl",
+     "statement": "inductive Op where\n  /-- A Boolean constant. -/\n  | const (value : Bool)\n  /-- Negation. -/\n  | not\n  /-- Binary conjunction. -/\n  | and\n  /-- Binary disjunction. -/\n  | or\n  deriving DecidableEq, Fintype",
      "sorry": false
     },
     {
@@ -4314,7 +4315,7 @@
      "kind": "theorem",
      "line": 132,
      "doc": "Selecting, permuting, or duplicating inputs costs nothing.",
-     "statement": "theorem ecomplexityOn_wiring (select : Fin m → Fin n) :\necomplexityOn I S (fun x => x ∘ select) = 0",
+     "statement": "theorem ecomplexityOn_wiring (select : Fin m → Fin n) :\n    ecomplexityOn I S (fun x => x ∘ select) = 0",
      "sorry": false
     },
     {
@@ -4414,7 +4415,7 @@
      "kind": "theorem",
      "line": 224,
      "doc": "Selecting, permuting, or duplicating inputs costs nothing.",
-     "statement": "theorem ecomplexity_wiring (select : Fin m → Fin n) :\necomplexity I (fun x => x ∘ select) = 0",
+     "statement": "theorem ecomplexity_wiring (select : Fin m → Fin n) :\n    ecomplexity I (fun x => x ∘ select) = 0",
      "sorry": false
     },
     {
@@ -4610,7 +4611,7 @@
      "kind": "theorem",
      "line": 353,
      "doc": "Selecting, permuting, or duplicating inputs costs nothing.",
-     "statement": "theorem complexityOn_wiring (select : Fin m → Fin n) :\ncomplexityOn I S (fun x => x ∘ select) = 0",
+     "statement": "theorem complexityOn_wiring (select : Fin m → Fin n) :\n    complexityOn I S (fun x => x ∘ select) = 0",
      "sorry": false
     },
     {
@@ -4650,7 +4651,7 @@
      "kind": "theorem",
      "line": 389,
      "doc": "Selecting, permuting, or duplicating inputs costs nothing.",
-     "statement": "theorem complexity_wiring (select : Fin m → Fin n) :\ncomplexity I (fun x => x ∘ select) = 0",
+     "statement": "theorem complexity_wiring (select : Fin m → Fin n) :\n    complexity I (fun x => x ∘ select) = 0",
      "sorry": false
     },
     {
@@ -4708,7 +4709,7 @@
      "kind": "theorem",
      "line": 28,
      "doc": "",
-     "statement": "theorem append_comp_castAdd (u : Fin m → α) (v : Fin n → α) :\nappend u v ∘ castAdd n = u",
+     "statement": "theorem append_comp_castAdd (u : Fin m → α) (v : Fin n → α) :\n    append u v ∘ castAdd n = u",
      "sorry": false
     },
     {
@@ -4716,7 +4717,7 @@
      "kind": "theorem",
      "line": 32,
      "doc": "",
-     "statement": "theorem append_comp_natAdd (u : Fin m → α) (v : Fin n → α) :\nappend u v ∘ natAdd m = v",
+     "statement": "theorem append_comp_natAdd (u : Fin m → α) (v : Fin n → α) :\n    append u v ∘ natAdd m = v",
      "sorry": false
     },
     {
@@ -4732,7 +4733,7 @@
      "kind": "theorem",
      "line": 54,
      "doc": "",
-     "statement": "theorem appendedWire_input (feed : Fin k → Wire n g₁) (i : Fin k) :\nappendedWire (g₂ := g₂) feed (Wire.input i) = (feed i).castAdd g₂",
+     "statement": "theorem appendedWire_input (feed : Fin k → Wire n g₁) (i : Fin k) :\n    appendedWire (g₂ := g₂) feed (Wire.input i) = (feed i).castAdd g₂",
      "sorry": false
     },
     {
@@ -4740,7 +4741,7 @@
      "kind": "theorem",
      "line": 57,
      "doc": "",
-     "statement": "theorem appendedWire_gate (feed : Fin k → Wire n g₁) (j : Fin g₂) :\nappendedWire feed (Wire.gate j) = Wire.gate (Fin.natAdd g₁ j)",
+     "statement": "theorem appendedWire_gate (feed : Fin k → Wire n g₁) (j : Fin g₂) :\n    appendedWire feed (Wire.gate j) = Wire.gate (Fin.natAdd g₁ j)",
      "sorry": false
     },
     {
@@ -4780,7 +4781,7 @@
      "kind": "theorem",
      "line": 108,
      "doc": "",
-     "statement": "theorem size_comp (d : Circuit σ m p) (c : Circuit σ n m) :\n(d.comp c).size = c.size + d.size",
+     "statement": "theorem size_comp (d : Circuit σ m p) (c : Circuit σ n m) :\n    (d.comp c).size = c.size + d.size",
      "sorry": false
     },
     {
@@ -4804,7 +4805,7 @@
      "kind": "theorem",
      "line": 121,
      "doc": "",
-     "statement": "theorem eval_comp (d : Circuit σ m p) (c : Circuit σ n m) (x : Fin n → U) :\n(d.comp c).eval I x = d.eval I (c.eval I x)",
+     "statement": "theorem eval_comp (d : Circuit σ m p) (c : Circuit σ n m) (x : Fin n → U) :\n    (d.comp c).eval I x = d.eval I (c.eval I x)",
      "sorry": false
     },
     {
@@ -4820,7 +4821,7 @@
      "kind": "theorem",
      "line": 132,
      "doc": "",
-     "statement": "theorem size_append (c : Circuit σ n m) (d : Circuit σ n p) :\n(c.append d).size = c.size + d.size",
+     "statement": "theorem size_append (c : Circuit σ n m) (d : Circuit σ n p) :\n    (c.append d).size = c.size + d.size",
      "sorry": false
     },
     {
@@ -4828,7 +4829,7 @@
      "kind": "theorem",
      "line": 135,
      "doc": "",
-     "statement": "theorem eval_append (c : Circuit σ n m) (d : Circuit σ n p) (x : Fin n → U) :\n(c.append d).eval I x = Fin.append (c.eval I x) (d.eval I x)",
+     "statement": "theorem eval_append (c : Circuit σ n m) (d : Circuit σ n p) (x : Fin n → U) :\n    (c.append d).eval I x = Fin.append (c.eval I x) (d.eval I x)",
      "sorry": false
     },
     {
@@ -4886,7 +4887,7 @@
      "kind": "theorem",
      "line": 56,
      "doc": "",
-     "statement": "theorem mem_computableFunctions {f : (Fin n → U) → U} :\nf ∈ computableFunctions I n s ↔\n∃ c : Circuit σ n 1, c.Computes I (single f) ∧ c.size ≤ s",
+     "statement": "theorem mem_computableFunctions {f : (Fin n → U) → U} :\n    f ∈ computableFunctions I n s ↔\n      ∃ c : Circuit σ n 1, c.Computes I (single f) ∧ c.size ≤ s",
      "sorry": false
     },
     {
@@ -4910,7 +4911,7 @@
      "kind": "theorem",
      "line": 87,
      "doc": "",
-     "statement": "theorem mem_irredundantFunctions {f : (Fin n → U) → U} :\nf ∈ irredundantFunctions I n g ↔\n∃ c : Circuit σ n 1, c.Computes I (single f) ∧ c.Irredundant I ∧ c.size = g",
+     "statement": "theorem mem_irredundantFunctions {f : (Fin n → U) → U} :\n    f ∈ irredundantFunctions I n g ↔\n      ∃ c : Circuit σ n 1, c.Computes I (single f) ∧ c.Irredundant I ∧ c.size = g",
      "sorry": false
     },
     {
@@ -4976,7 +4977,7 @@
      "kind": "theorem",
      "line": 52,
      "doc": "",
-     "statement": "theorem Program.depths_gate_last (p : Program σ n g) (line : Line σ n g) :\n(p.gate line).depths (Fin.last g) = line.depth p.wireDepths",
+     "statement": "theorem Program.depths_gate_last (p : Program σ n g) (line : Line σ n g) :\n    (p.gate line).depths (Fin.last g) = line.depth p.wireDepths",
      "sorry": false
     },
     {
@@ -4984,7 +4985,7 @@
      "kind": "theorem",
      "line": 56,
      "doc": "",
-     "statement": "theorem Program.depths_gate_castSucc (p : Program σ n g) (line : Line σ n g)\n(j : Fin g) : (p.gate line).depths j.castSucc = p.depths j",
+     "statement": "theorem Program.depths_gate_castSucc (p : Program σ n g) (line : Line σ n g)\n    (j : Fin g) : (p.gate line).depths j.castSucc = p.depths j",
      "sorry": false
     },
     {
@@ -4992,7 +4993,7 @@
      "kind": "theorem",
      "line": 60,
      "doc": "",
-     "statement": "theorem Program.wireDepths_input (p : Program σ n g) (i : Fin n) :\np.wireDepths (.input i) = 0",
+     "statement": "theorem Program.wireDepths_input (p : Program σ n g) (i : Fin n) :\n    p.wireDepths (.input i) = 0",
      "sorry": false
     },
     {
@@ -5000,7 +5001,7 @@
      "kind": "theorem",
      "line": 63,
      "doc": "",
-     "statement": "theorem Program.wireDepths_gateWire (p : Program σ n g) (j : Fin g) :\np.wireDepths (.gate j) = p.depths j",
+     "statement": "theorem Program.wireDepths_gateWire (p : Program σ n g) (j : Fin g) :\n    p.wireDepths (.gate j) = p.depths j",
      "sorry": false
     },
     {
@@ -5008,7 +5009,7 @@
      "kind": "theorem",
      "line": 66,
      "doc": "",
-     "statement": "theorem Program.wireDepths_gate_castSucc (p : Program σ n g) (line : Line σ n g)\n(w : Wire n g) : (p.gate line).wireDepths w.castSucc = p.wireDepths w",
+     "statement": "theorem Program.wireDepths_gate_castSucc (p : Program σ n g) (line : Line σ n g)\n    (w : Wire n g) : (p.gate line).wireDepths w.castSucc = p.wireDepths w",
      "sorry": false
     },
     {
@@ -5024,7 +5025,7 @@
      "kind": "theorem",
      "line": 72,
      "doc": "",
-     "statement": "theorem Program.depth_gate (p : Program σ n g) (line : Line σ n g) :\n(p.gate line).depth = max p.depth (line.depth p.wireDepths)",
+     "statement": "theorem Program.depth_gate (p : Program σ n g) (line : Line σ n g) :\n    (p.gate line).depth = max p.depth (line.depth p.wireDepths)",
      "sorry": false
     },
     {
@@ -5178,7 +5179,7 @@
      "kind": "theorem",
      "line": 101,
      "doc": "Full-basis operations consist of all function tables and all constants.",
-     "statement": "theorem card (k : ℕ) (U : Type*) [Finite U] :\nNat.card (FullOp k U) = Nat.card U ^ (Nat.card U ^ k) + Nat.card U",
+     "statement": "theorem card (k : ℕ) (U : Type*) [Finite U] :\n    Nat.card (FullOp k U) = Nat.card U ^ (Nat.card U ^ k) + Nat.card U",
      "sorry": false
     },
     {
@@ -5278,7 +5279,7 @@
      "kind": "theorem",
      "line": 42,
      "doc": "",
-     "statement": "theorem ext\n{source : Interpretation σ U₁}\n{target : Interpretation σ U₂}\n{left right : Homomorphism source target}\n(map_eq : left.map = right.map) : left = right",
+     "statement": "theorem ext\n    {source : Interpretation σ U₁}\n    {target : Interpretation σ U₂}\n    {left right : Homomorphism source target}\n    (map_eq : left.map = right.map) : left = right",
      "sorry": false
     },
     {
@@ -5302,7 +5303,7 @@
      "kind": "theorem",
      "line": 73,
      "doc": "",
-     "statement": "theorem id_map\n(interpretation : Interpretation σ U) :\n(Homomorphism.id interpretation).map = _root_.id",
+     "statement": "theorem id_map\n    (interpretation : Interpretation σ U) :\n    (Homomorphism.id interpretation).map = _root_.id",
      "sorry": false
     },
     {
@@ -5310,7 +5311,7 @@
      "kind": "theorem",
      "line": 77,
      "doc": "",
-     "statement": "theorem comp_map\n{i₁ : Interpretation σ U₁}\n{i₂ : Interpretation σ U₂}\n{i₃ : Interpretation σ U₃}\n(outer : Homomorphism i₂ i₃)\n(inner : Homomorphism i₁ i₂) :\n(outer.comp inner).map = outer.map ∘ inner.map",
+     "statement": "theorem comp_map\n    {i₁ : Interpretation σ U₁}\n    {i₂ : Interpretation σ U₂}\n    {i₃ : Interpretation σ U₃}\n    (outer : Homomorphism i₂ i₃)\n    (inner : Homomorphism i₁ i₂) :\n    (outer.comp inner).map = outer.map ∘ inner.map",
      "sorry": false
     },
     {
@@ -5318,7 +5319,7 @@
      "kind": "theorem",
      "line": 85,
      "doc": "",
-     "statement": "theorem id_comp\n{source : Interpretation σ U₁}\n{target : Interpretation σ U₂}\n(homomorphism : Homomorphism source target) :\n(Homomorphism.id target).comp homomorphism = homomorphism",
+     "statement": "theorem id_comp\n    {source : Interpretation σ U₁}\n    {target : Interpretation σ U₂}\n    (homomorphism : Homomorphism source target) :\n    (Homomorphism.id target).comp homomorphism = homomorphism",
      "sorry": false
     },
     {
@@ -5326,7 +5327,7 @@
      "kind": "theorem",
      "line": 93,
      "doc": "",
-     "statement": "theorem comp_id\n{source : Interpretation σ U₁}\n{target : Interpretation σ U₂}\n(homomorphism : Homomorphism source target) :\nhomomorphism.comp (Homomorphism.id source) = homomorphism",
+     "statement": "theorem comp_id\n    {source : Interpretation σ U₁}\n    {target : Interpretation σ U₂}\n    (homomorphism : Homomorphism source target) :\n    homomorphism.comp (Homomorphism.id source) = homomorphism",
      "sorry": false
     },
     {
@@ -5426,7 +5427,7 @@
      "kind": "theorem",
      "line": 78,
      "doc": "",
-     "statement": "theorem Line.mapInputs_id :\n(Line.mapInputs id : Line σ inputCount gateCount → Line σ inputCount gateCount) = id",
+     "statement": "theorem Line.mapInputs_id :\n    (Line.mapInputs id : Line σ inputCount gateCount → Line σ inputCount gateCount) = id",
      "sorry": false
     },
     {
@@ -5450,7 +5451,7 @@
      "kind": "theorem",
      "line": 97,
      "doc": "",
-     "statement": "theorem Line.mapWires_op\n(line : Line σ sourceInputCount sourceGateCount)\n(wireMap : Wire sourceInputCount sourceGateCount → Wire targetInputCount targetGateCount) :\n(line.mapWires wireMap).op = line.op",
+     "statement": "theorem Line.mapWires_op\n    (line : Line σ sourceInputCount sourceGateCount)\n    (wireMap : Wire sourceInputCount sourceGateCount → Wire targetInputCount targetGateCount) :\n    (line.mapWires wireMap).op = line.op",
      "sorry": false
     },
     {
@@ -5458,7 +5459,7 @@
      "kind": "theorem",
      "line": 102,
      "doc": "",
-     "statement": "theorem Line.mapWires_wires\n(line : Line σ sourceInputCount sourceGateCount)\n(wireMap : Wire sourceInputCount sourceGateCount → Wire targetInputCount targetGateCount)\n(argument : Fin (σ.Arity line.op)) :\n(line.mapWires wireMap).wires argument = wireMap (line.wires argument)",
+     "statement": "theorem Line.mapWires_wires\n    (line : Line σ sourceInputCount sourceGateCount)\n    (wireMap : Wire sourceInputCount sourceGateCount → Wire targetInputCount targetGateCount)\n    (argument : Fin (σ.Arity line.op)) :\n    (line.mapWires wireMap).wires argument = wireMap (line.wires argument)",
      "sorry": false
     },
     {
@@ -5498,7 +5499,7 @@
      "kind": "theorem",
      "line": 139,
      "doc": "",
-     "statement": "theorem Program.foldl_empty\n(f : ∀ {k : Nat}, α → Line σ inputCount k → α) (init : α) :\n(Program.empty : Program σ inputCount 0).foldl f init = init",
+     "statement": "theorem Program.foldl_empty\n    (f : ∀ {k : Nat}, α → Line σ inputCount k → α) (init : α) :\n    (Program.empty : Program σ inputCount 0).foldl f init = init",
      "sorry": false
     },
     {
@@ -5506,7 +5507,7 @@
      "kind": "theorem",
      "line": 143,
      "doc": "",
-     "statement": "theorem Program.foldl_gate (p : Program σ inputCount gateCount)\n(line : Line σ inputCount gateCount)\n(f : ∀ {k : Nat}, α → Line σ inputCount k → α) (init : α) :\n(p.gate line).foldl f init = f (p.foldl f init) line",
+     "statement": "theorem Program.foldl_gate (p : Program σ inputCount gateCount)\n    (line : Line σ inputCount gateCount)\n    (f : ∀ {k : Nat}, α → Line σ inputCount k → α) (init : α) :\n    (p.gate line).foldl f init = f (p.foldl f init) line",
      "sorry": false
     },
     {
@@ -5530,7 +5531,7 @@
      "kind": "theorem",
      "line": 168,
      "doc": "",
-     "statement": "theorem Program.foldr_empty\n(f : ∀ {k : Nat}, Line σ inputCount k → α → α) (init : α) :\n(Program.empty : Program σ inputCount 0).foldr f init = init",
+     "statement": "theorem Program.foldr_empty\n    (f : ∀ {k : Nat}, Line σ inputCount k → α → α) (init : α) :\n    (Program.empty : Program σ inputCount 0).foldr f init = init",
      "sorry": false
     },
     {
@@ -5538,7 +5539,7 @@
      "kind": "theorem",
      "line": 172,
      "doc": "",
-     "statement": "theorem Program.foldr_gate (p : Program σ inputCount gateCount)\n(line : Line σ inputCount gateCount)\n(f : ∀ {k : Nat}, Line σ inputCount k → α → α) (init : α) :\n(p.gate line).foldr f init = p.foldr f (f line init)",
+     "statement": "theorem Program.foldr_gate (p : Program σ inputCount gateCount)\n    (line : Line σ inputCount gateCount)\n    (f : ∀ {k : Nat}, Line σ inputCount k → α → α) (init : α) :\n    (p.gate line).foldr f init = p.foldr f (f line init)",
      "sorry": false
     },
     {
@@ -5578,7 +5579,7 @@
      "kind": "theorem",
      "line": 206,
      "doc": "",
-     "statement": "theorem Program.mapInputs_id :\n(Program.mapInputs id :\nProgram σ inputCount gateCount → Program σ inputCount gateCount) = id",
+     "statement": "theorem Program.mapInputs_id :\n    (Program.mapInputs id :\n      Program σ inputCount gateCount → Program σ inputCount gateCount) = id",
      "sorry": false
     },
     {
@@ -5626,7 +5627,7 @@
      "kind": "theorem",
      "line": 267,
      "doc": "Evaluating a line with relabeled inputs precomposes its input valuation.",
-     "statement": "theorem Line.eval_mapInputs {inputCount' : ℕ}\n(line : Line σ inputCount gateCount) (f : Fin inputCount → Fin inputCount')\n(i : Interpretation σ U) (inputs : Fin inputCount' → U) (gates : Fin gateCount → U) :\n(line.mapInputs f).eval i inputs gates = line.eval i (inputs ∘ f) gates",
+     "statement": "theorem Line.eval_mapInputs {inputCount' : ℕ}\n    (line : Line σ inputCount gateCount) (f : Fin inputCount → Fin inputCount')\n    (i : Interpretation σ U) (inputs : Fin inputCount' → U) (gates : Fin gateCount → U) :\n    (line.mapInputs f).eval i inputs gates = line.eval i (inputs ∘ f) gates",
      "sorry": false
     },
     {
@@ -5666,7 +5667,7 @@
      "kind": "theorem",
      "line": 322,
      "doc": "",
-     "statement": "theorem Program.eval_gate_last\n(program : Program σ inputCount gateCount)\n(line : Line σ inputCount gateCount)\n(interpretation : Interpretation σ U)\n(input : Fin inputCount → U) :\n(program.gate line).eval interpretation input (Fin.last gateCount) =\nline.eval interpretation input (program.eval interpretation input)",
+     "statement": "theorem Program.eval_gate_last\n    (program : Program σ inputCount gateCount)\n    (line : Line σ inputCount gateCount)\n    (interpretation : Interpretation σ U)\n    (input : Fin inputCount → U) :\n    (program.gate line).eval interpretation input (Fin.last gateCount) =\n      line.eval interpretation input (program.eval interpretation input)",
      "sorry": false
     },
     {
@@ -5674,7 +5675,7 @@
      "kind": "theorem",
      "line": 331,
      "doc": "",
-     "statement": "theorem Program.eval_gate_castSucc\n(program : Program σ inputCount gateCount)\n(line : Line σ inputCount gateCount)\n(interpretation : Interpretation σ U)\n(input : Fin inputCount → U)\n(gate : Fin gateCount) :\n(program.gate line).eval interpretation input gate.castSucc =\nprogram.eval interpretation input gate",
+     "statement": "theorem Program.eval_gate_castSucc\n    (program : Program σ inputCount gateCount)\n    (line : Line σ inputCount gateCount)\n    (interpretation : Interpretation σ U)\n    (input : Fin inputCount → U)\n    (gate : Fin gateCount) :\n    (program.gate line).eval interpretation input gate.castSucc =\n      program.eval interpretation input gate",
      "sorry": false
     },
     {
@@ -5682,7 +5683,7 @@
      "kind": "theorem",
      "line": 342,
      "doc": "Evaluating a program with relabeled inputs precomposes its input valuation.",
-     "statement": "theorem Program.eval_mapInputs {inputCount' : ℕ}\n(program : Program σ inputCount gateCount) (f : Fin inputCount → Fin inputCount')\n(i : Interpretation σ U) (inputs : Fin inputCount' → U) :\n(program.mapInputs f).eval i inputs = program.eval i (inputs ∘ f)",
+     "statement": "theorem Program.eval_mapInputs {inputCount' : ℕ}\n    (program : Program σ inputCount gateCount) (f : Fin inputCount → Fin inputCount')\n    (i : Interpretation σ U) (inputs : Fin inputCount' → U) :\n    (program.mapInputs f).eval i inputs = program.eval i (inputs ∘ f)",
      "sorry": false
     },
     {
@@ -5730,7 +5731,7 @@
      "kind": "theorem",
      "line": 389,
      "doc": "",
-     "statement": "theorem Program.trace_input\n(program : Program σ inputCount gateCount)\n(interpretation : Interpretation σ U)\n(input : Fin inputCount → U)\n(sourceInput : Fin inputCount) :\nprogram.trace interpretation input (Wire.input sourceInput) =\ninput sourceInput",
+     "statement": "theorem Program.trace_input\n    (program : Program σ inputCount gateCount)\n    (interpretation : Interpretation σ U)\n    (input : Fin inputCount → U)\n    (sourceInput : Fin inputCount) :\n    program.trace interpretation input (Wire.input sourceInput) =\n      input sourceInput",
      "sorry": false
     },
     {
@@ -5738,7 +5739,7 @@
      "kind": "theorem",
      "line": 397,
      "doc": "",
-     "statement": "theorem Program.trace_gate_castSucc\n(program : Program σ inputCount gateCount)\n(line : Line σ inputCount gateCount)\n(interpretation : Interpretation σ U)\n(input : Fin inputCount → U)\n(wire : Wire inputCount gateCount) :\n(program.gate line).trace interpretation input wire.castSucc =\nprogram.trace interpretation input wire",
+     "statement": "theorem Program.trace_gate_castSucc\n    (program : Program σ inputCount gateCount)\n    (line : Line σ inputCount gateCount)\n    (interpretation : Interpretation σ U)\n    (input : Fin inputCount → U)\n    (wire : Wire inputCount gateCount) :\n    (program.gate line).trace interpretation input wire.castSucc =\n      program.trace interpretation input wire",
      "sorry": false
     },
     {
@@ -5762,7 +5763,7 @@
      "kind": "theorem",
      "line": 419,
      "doc": "",
-     "statement": "theorem Line.mem_inputSupport\n{line : Line σ inputCount gateCount}\n{wireSupport : Wire inputCount gateCount → Finset (Fin inputCount)}\n{input : Fin inputCount} :\ninput ∈ line.inputSupport wireSupport ↔\n∃ argument, input ∈ wireSupport (line.wires argument)",
+     "statement": "theorem Line.mem_inputSupport\n    {line : Line σ inputCount gateCount}\n    {wireSupport : Wire inputCount gateCount → Finset (Fin inputCount)}\n    {input : Fin inputCount} :\n    input ∈ line.inputSupport wireSupport ↔\n      ∃ argument, input ∈ wireSupport (line.wires argument)",
      "sorry": false
     },
     {
@@ -5778,7 +5779,7 @@
      "kind": "theorem",
      "line": 433,
      "doc": "",
-     "statement": "theorem Program.wireSupport_input\n(program : Program σ inputCount gateCount)\n(input : Fin inputCount) :\nprogram.wireSupport (.input input) = {input}",
+     "statement": "theorem Program.wireSupport_input\n    (program : Program σ inputCount gateCount)\n    (input : Fin inputCount) :\n    program.wireSupport (.input input) = {input}",
      "sorry": false
     },
     {
@@ -5786,7 +5787,7 @@
      "kind": "theorem",
      "line": 439,
      "doc": "",
-     "statement": "theorem Program.wireSupport_gate_castSucc\n(program : Program σ inputCount gateCount)\n(line : Line σ inputCount gateCount)\n(wire : Wire inputCount gateCount) :\n(program.gate line).wireSupport wire.castSucc = program.wireSupport wire",
+     "statement": "theorem Program.wireSupport_gate_castSucc\n    (program : Program σ inputCount gateCount)\n    (line : Line σ inputCount gateCount)\n    (wire : Wire inputCount gateCount) :\n    (program.gate line).wireSupport wire.castSucc = program.wireSupport wire",
      "sorry": false
     },
     {
@@ -5794,7 +5795,7 @@
      "kind": "theorem",
      "line": 447,
      "doc": "",
-     "statement": "theorem Program.wireSupport_gate_last\n(program : Program σ inputCount gateCount)\n(line : Line σ inputCount gateCount) :\n(program.gate line).wireSupport (.gate (Fin.last gateCount)) =\nline.inputSupport program.wireSupport",
+     "statement": "theorem Program.wireSupport_gate_last\n    (program : Program σ inputCount gateCount)\n    (line : Line σ inputCount gateCount) :\n    (program.gate line).wireSupport (.gate (Fin.last gateCount)) =\n      line.inputSupport program.wireSupport",
      "sorry": false
     },
     {
@@ -5834,7 +5835,7 @@
      "kind": "theorem",
      "line": 521,
      "doc": "",
-     "statement": "theorem Program.gateFunction_apply\n(program : Program σ inputCount gateCount)\n(interpretation : Interpretation σ U)\n(gate : Fin gateCount)\n(input : Fin inputCount → U) :\nprogram.gateFunction interpretation gate input =\nprogram.eval interpretation input gate",
+     "statement": "theorem Program.gateFunction_apply\n    (program : Program σ inputCount gateCount)\n    (interpretation : Interpretation σ U)\n    (gate : Fin gateCount)\n    (input : Fin inputCount → U) :\n    program.gateFunction interpretation gate input =\n      program.eval interpretation input gate",
      "sorry": false
     },
     {
@@ -5842,7 +5843,7 @@
      "kind": "theorem",
      "line": 529,
      "doc": "",
-     "statement": "theorem Program.wireFunction_input\n(program : Program σ inputCount gateCount)\n(interpretation : Interpretation σ U)\n(inputWire : Fin inputCount) :\nprogram.wireFunction interpretation (Wire.input inputWire) =\nfun input => input inputWire",
+     "statement": "theorem Program.wireFunction_input\n    (program : Program σ inputCount gateCount)\n    (interpretation : Interpretation σ U)\n    (inputWire : Fin inputCount) :\n    program.wireFunction interpretation (Wire.input inputWire) =\n      fun input => input inputWire",
      "sorry": false
     },
     {
@@ -5850,7 +5851,7 @@
      "kind": "theorem",
      "line": 536,
      "doc": "",
-     "statement": "theorem Program.wireFunction_gate\n(program : Program σ inputCount gateCount)\n(interpretation : Interpretation σ U)\n(gate : Fin gateCount) :\nprogram.wireFunction interpretation (Wire.gate gate) =\nprogram.gateFunction interpretation gate",
+     "statement": "theorem Program.wireFunction_gate\n    (program : Program σ inputCount gateCount)\n    (interpretation : Interpretation σ U)\n    (gate : Fin gateCount) :\n    program.wireFunction interpretation (Wire.gate gate) =\n      program.gateFunction interpretation gate",
      "sorry": false
     },
     {
@@ -5858,7 +5859,7 @@
      "kind": "theorem",
      "line": 543,
      "doc": "",
-     "statement": "theorem Program.gateFunction_gate_last\n(program : Program σ inputCount gateCount)\n(line : Line σ inputCount gateCount)\n(interpretation : Interpretation σ U) :\n(program.gate line).gateFunction interpretation (Fin.last gateCount) =\nfun input => line.eval interpretation input\n(program.eval interpretation input)",
+     "statement": "theorem Program.gateFunction_gate_last\n    (program : Program σ inputCount gateCount)\n    (line : Line σ inputCount gateCount)\n    (interpretation : Interpretation σ U) :\n    (program.gate line).gateFunction interpretation (Fin.last gateCount) =\n      fun input => line.eval interpretation input\n        (program.eval interpretation input)",
      "sorry": false
     },
     {
@@ -5866,7 +5867,7 @@
      "kind": "theorem",
      "line": 553,
      "doc": "",
-     "statement": "theorem Program.gateFunction_gate_castSucc\n(program : Program σ inputCount gateCount)\n(line : Line σ inputCount gateCount)\n(interpretation : Interpretation σ U)\n(gate : Fin gateCount) :\n(program.gate line).gateFunction interpretation gate.castSucc =\nprogram.gateFunction interpretation gate",
+     "statement": "theorem Program.gateFunction_gate_castSucc\n    (program : Program σ inputCount gateCount)\n    (line : Line σ inputCount gateCount)\n    (interpretation : Interpretation σ U)\n    (gate : Fin gateCount) :\n    (program.gate line).gateFunction interpretation gate.castSucc =\n      program.gateFunction interpretation gate",
      "sorry": false
     },
     {
@@ -5874,7 +5875,7 @@
      "kind": "theorem",
      "line": 563,
      "doc": "",
-     "statement": "theorem Program.trace_gateWire\n(program : Program σ inputCount gateCount)\n(interpretation : Interpretation σ U)\n(input : Fin inputCount → U)\n(gate : Fin gateCount) :\nprogram.trace interpretation input (Wire.gate gate) =\nprogram.gateFunction interpretation gate input",
+     "statement": "theorem Program.trace_gateWire\n    (program : Program σ inputCount gateCount)\n    (interpretation : Interpretation σ U)\n    (input : Fin inputCount → U)\n    (gate : Fin gateCount) :\n    program.trace interpretation input (Wire.gate gate) =\n      program.gateFunction interpretation gate input",
      "sorry": false
     },
     {
@@ -5890,7 +5891,7 @@
      "kind": "theorem",
      "line": 580,
      "doc": "",
-     "statement": "theorem Program.lines_gate_last\n(program : Program σ inputCount gateCount)\n(line : Line σ inputCount gateCount) :\n(program.gate line).lines (Fin.last gateCount) =\nline.mapWires Wire.Renaming.castSucc",
+     "statement": "theorem Program.lines_gate_last\n    (program : Program σ inputCount gateCount)\n    (line : Line σ inputCount gateCount) :\n    (program.gate line).lines (Fin.last gateCount) =\n      line.mapWires Wire.Renaming.castSucc",
      "sorry": false
     },
     {
@@ -5898,7 +5899,7 @@
      "kind": "theorem",
      "line": 587,
      "doc": "",
-     "statement": "theorem Program.lines_gate_castSucc\n(program : Program σ inputCount gateCount)\n(line : Line σ inputCount gateCount)\n(gate : Fin gateCount) :\n(program.gate line).lines gate.castSucc =\n(program.lines gate).mapWires Wire.Renaming.castSucc",
+     "statement": "theorem Program.lines_gate_castSucc\n    (program : Program σ inputCount gateCount)\n    (line : Line σ inputCount gateCount)\n    (gate : Fin gateCount) :\n    (program.gate line).lines gate.castSucc =\n      (program.lines gate).mapWires Wire.Renaming.castSucc",
      "sorry": false
     },
     {
@@ -5988,7 +5989,7 @@
      "kind": "theorem",
      "line": 84,
      "doc": "Every function is free given itself: `C(f | f) = 0`.",
-     "statement": "theorem ecomplexityGiven_self (f : (Fin n → U) → Fin m → U) :\necomplexityGiven I f f = 0",
+     "statement": "theorem ecomplexityGiven_self (f : (Fin n → U) → Fin m → U) :\n    ecomplexityGiven I f f = 0",
      "sorry": false
     },
     {
@@ -6056,7 +6057,7 @@
      "kind": "theorem",
      "line": 205,
      "doc": "",
-     "statement": "theorem natCast_complexityGiven (f : (Fin n → U) → Fin m → U)\n(g : (Fin n → U) → Fin k → U) : (complexityGiven I f g : ℕ∞) = ecomplexityGiven I f g",
+     "statement": "theorem natCast_complexityGiven (f : (Fin n → U) → Fin m → U)\n    (g : (Fin n → U) → Fin k → U) : (complexityGiven I f g : ℕ∞) = ecomplexityGiven I f g",
      "sorry": false
     },
     {
@@ -6064,7 +6065,7 @@
      "kind": "theorem",
      "line": 209,
      "doc": "",
-     "statement": "theorem complexityGiven_self (f : (Fin n → U) → Fin m → U) :\ncomplexityGiven I f f = 0",
+     "statement": "theorem complexityGiven_self (f : (Fin n → U) → Fin m → U) :\n    complexityGiven I f f = 0",
      "sorry": false
     },
     {
@@ -6230,7 +6231,7 @@
      "kind": "theorem",
      "line": 66,
      "doc": "",
-     "statement": "theorem Program.cost_empty (cost : σ.Op → ℕ) :\n(Program.empty : Program σ n 0).cost cost = 0",
+     "statement": "theorem Program.cost_empty (cost : σ.Op → ℕ) :\n    (Program.empty : Program σ n 0).cost cost = 0",
      "sorry": false
     },
     {
@@ -6238,7 +6239,7 @@
      "kind": "theorem",
      "line": 69,
      "doc": "",
-     "statement": "theorem Program.cost_gate (p : Program σ n g) (line : Line σ n g)\n(cost : σ.Op → ℕ) : (p.gate line).cost cost = p.cost cost + cost line.op",
+     "statement": "theorem Program.cost_gate (p : Program σ n g) (line : Line σ n g)\n    (cost : σ.Op → ℕ) : (p.gate line).cost cost = p.cost cost + cost line.op",
      "sorry": false
     },
     {
@@ -6246,7 +6247,7 @@
      "kind": "theorem",
      "line": 72,
      "doc": "",
-     "statement": "theorem Program.cost_const (p : Program σ n g) (b : ℕ) :\np.cost (fun _ => b) = b * g",
+     "statement": "theorem Program.cost_const (p : Program σ n g) (b : ℕ) :\n    p.cost (fun _ => b) = b * g",
      "sorry": false
     },
     {
@@ -6626,7 +6627,7 @@
      "kind": "theorem",
      "line": 45,
      "doc": "",
-     "statement": "theorem elim_input (inputs : Fin inputCount → α) (gates : Fin gateCount → α)\n(i : Fin inputCount) : Wire.elim inputs gates (input i) = inputs i",
+     "statement": "theorem elim_input (inputs : Fin inputCount → α) (gates : Fin gateCount → α)\n    (i : Fin inputCount) : Wire.elim inputs gates (input i) = inputs i",
      "sorry": false
     },
     {
@@ -6634,7 +6635,7 @@
      "kind": "theorem",
      "line": 48,
      "doc": "",
-     "statement": "theorem elim_gate (inputs : Fin inputCount → α) (gates : Fin gateCount → α)\n(j : Fin gateCount) : Wire.elim inputs gates (gate j) = gates j",
+     "statement": "theorem elim_gate (inputs : Fin inputCount → α) (gates : Fin gateCount → α)\n    (j : Fin gateCount) : Wire.elim inputs gates (gate j) = gates j",
      "sorry": false
     },
     {
@@ -6682,7 +6683,7 @@
      "kind": "theorem",
      "line": 82,
      "doc": "",
-     "statement": "theorem mapInputs_id :\n(mapInputs id : Wire inputCount gateCount → Wire inputCount gateCount) = id",
+     "statement": "theorem mapInputs_id :\n    (mapInputs id : Wire inputCount gateCount → Wire inputCount gateCount) = id",
      "sorry": false
     },
     {
@@ -6698,7 +6699,7 @@
      "kind": "theorem",
      "line": 94,
      "doc": "Evaluating a relabeled wire precomposes the input valuation with the relabeling.",
-     "statement": "theorem elim_mapInputs {inputCount' : ℕ} (f : Fin inputCount → Fin inputCount')\n(inputs : Fin inputCount' → α) (gates : Fin gateCount → α) (wire : Wire inputCount gateCount) :\nWire.elim inputs gates (wire.mapInputs f) = Wire.elim (inputs ∘ f) gates wire",
+     "statement": "theorem elim_mapInputs {inputCount' : ℕ} (f : Fin inputCount → Fin inputCount')\n    (inputs : Fin inputCount' → α) (gates : Fin gateCount → α) (wire : Wire inputCount gateCount) :\n    Wire.elim inputs gates (wire.mapInputs f) = Wire.elim (inputs ∘ f) gates wire",
      "sorry": false
     },
     {
@@ -6706,7 +6707,7 @@
      "kind": "theorem",
      "line": 100,
      "doc": "Function form of `elim_mapInputs`.",
-     "statement": "theorem elim_comp_mapInputs {inputCount' : ℕ} (f : Fin inputCount → Fin inputCount')\n(inputs : Fin inputCount' → α) (gates : Fin gateCount → α) :\nWire.elim inputs gates ∘ Wire.mapInputs f = Wire.elim (inputs ∘ f) gates",
+     "statement": "theorem elim_comp_mapInputs {inputCount' : ℕ} (f : Fin inputCount → Fin inputCount')\n    (inputs : Fin inputCount' → α) (gates : Fin gateCount → α) :\n    Wire.elim inputs gates ∘ Wire.mapInputs f = Wire.elim (inputs ∘ f) gates",
      "sorry": false
     },
     {
@@ -6722,7 +6723,7 @@
      "kind": "theorem",
      "line": 111,
      "doc": "",
-     "statement": "theorem castSucc_input (i : Fin inputCount) :\n(input i : Wire inputCount gateCount).castSucc = input i",
+     "statement": "theorem castSucc_input (i : Fin inputCount) :\n    (input i : Wire inputCount gateCount).castSucc = input i",
      "sorry": false
     },
     {
@@ -6730,7 +6731,7 @@
      "kind": "theorem",
      "line": 114,
      "doc": "",
-     "statement": "theorem castSucc_gate (j : Fin gateCount) :\n(gate j : Wire inputCount gateCount).castSucc = gate j.castSucc",
+     "statement": "theorem castSucc_gate (j : Fin gateCount) :\n    (gate j : Wire inputCount gateCount).castSucc = gate j.castSucc",
      "sorry": false
     },
     {
@@ -6746,7 +6747,7 @@
      "kind": "theorem",
      "line": 122,
      "doc": "",
-     "statement": "theorem castAdd_input (extra : Nat) (i : Fin inputCount) :\n(input i : Wire inputCount gateCount).castAdd extra = input i",
+     "statement": "theorem castAdd_input (extra : Nat) (i : Fin inputCount) :\n    (input i : Wire inputCount gateCount).castAdd extra = input i",
      "sorry": false
     },
     {
@@ -6754,7 +6755,7 @@
      "kind": "theorem",
      "line": 125,
      "doc": "",
-     "statement": "theorem castAdd_gate (extra : Nat) (j : Fin gateCount) :\n(gate j : Wire inputCount gateCount).castAdd extra = gate (j.castAdd extra)",
+     "statement": "theorem castAdd_gate (extra : Nat) (j : Fin gateCount) :\n    (gate j : Wire inputCount gateCount).castAdd extra = gate (j.castAdd extra)",
      "sorry": false
     },
     {
@@ -6786,7 +6787,7 @@
      "kind": "theorem",
      "line": 161,
      "doc": "",
-     "statement": "theorem apply_input\n(ρ : Wire.Renaming inputCount sourceGateCount targetGateCount) (input : Fin inputCount) :\nρ (Wire.input input) = Wire.input input",
+     "statement": "theorem apply_input\n    (ρ : Wire.Renaming inputCount sourceGateCount targetGateCount) (input : Fin inputCount) :\n    ρ (Wire.input input) = Wire.input input",
      "sorry": false
     },
     {
@@ -6794,7 +6795,7 @@
      "kind": "theorem",
      "line": 165,
      "doc": "",
-     "statement": "theorem apply_gate\n(ρ : Wire.Renaming inputCount sourceGateCount targetGateCount) (gate : Fin sourceGateCount) :\nρ (Wire.gate gate) = ρ.gates gate",
+     "statement": "theorem apply_gate\n    (ρ : Wire.Renaming inputCount sourceGateCount targetGateCount) (gate : Fin sourceGateCount) :\n    ρ (Wire.gate gate) = ρ.gates gate",
      "sorry": false
     },
     {
@@ -6810,7 +6811,7 @@
      "kind": "theorem",
      "line": 173,
      "doc": "",
-     "statement": "theorem id_apply (wire : Wire inputCount gateCount) :\n(id : Wire.Renaming inputCount gateCount gateCount) wire = wire",
+     "statement": "theorem id_apply (wire : Wire inputCount gateCount) :\n    (id : Wire.Renaming inputCount gateCount gateCount) wire = wire",
      "sorry": false
     },
     {
@@ -6826,7 +6827,7 @@
      "kind": "theorem",
      "line": 184,
      "doc": "",
-     "statement": "theorem comp_apply\n(outer : Wire.Renaming inputCount middleGateCount targetGateCount)\n(inner : Wire.Renaming inputCount sourceGateCount middleGateCount)\n(wire : Wire inputCount sourceGateCount) :\n(outer.comp inner) wire = outer (inner wire)",
+     "statement": "theorem comp_apply\n    (outer : Wire.Renaming inputCount middleGateCount targetGateCount)\n    (inner : Wire.Renaming inputCount sourceGateCount middleGateCount)\n    (wire : Wire inputCount sourceGateCount) :\n    (outer.comp inner) wire = outer (inner wire)",
      "sorry": false
     },
     {
@@ -6842,7 +6843,7 @@
      "kind": "theorem",
      "line": 195,
      "doc": "",
-     "statement": "theorem castSucc_apply (wire : Wire inputCount gateCount) :\n(castSucc : Wire.Renaming inputCount gateCount (gateCount + 1)) wire = wire.castSucc",
+     "statement": "theorem castSucc_apply (wire : Wire inputCount gateCount) :\n    (castSucc : Wire.Renaming inputCount gateCount (gateCount + 1)) wire = wire.castSucc",
      "sorry": false
     },
     {
@@ -6858,7 +6859,7 @@
      "kind": "theorem",
      "line": 206,
      "doc": "",
-     "statement": "theorem skipLast_gates_last\n(prior : Wire.Renaming inputCount sourceGateCount targetGateCount)\n(replacement : Wire inputCount targetGateCount) :\n(prior.skipLast replacement).gates (Fin.last sourceGateCount) = replacement",
+     "statement": "theorem skipLast_gates_last\n    (prior : Wire.Renaming inputCount sourceGateCount targetGateCount)\n    (replacement : Wire inputCount targetGateCount) :\n    (prior.skipLast replacement).gates (Fin.last sourceGateCount) = replacement",
      "sorry": false
     },
     {
@@ -6866,7 +6867,7 @@
      "kind": "theorem",
      "line": 212,
      "doc": "",
-     "statement": "theorem skipLast_castSucc\n(prior : Wire.Renaming inputCount sourceGateCount targetGateCount)\n(replacement : Wire inputCount targetGateCount)\n(wire : Wire inputCount sourceGateCount) :\nprior.skipLast replacement wire.castSucc = prior wire",
+     "statement": "theorem skipLast_castSucc\n    (prior : Wire.Renaming inputCount sourceGateCount targetGateCount)\n    (replacement : Wire inputCount targetGateCount)\n    (wire : Wire inputCount sourceGateCount) :\n    prior.skipLast replacement wire.castSucc = prior wire",
      "sorry": false
     },
     {
@@ -6882,7 +6883,7 @@
      "kind": "theorem",
      "line": 226,
      "doc": "",
-     "statement": "theorem appendLast_gates_last\n(prior : Wire.Renaming inputCount sourceGateCount targetGateCount) :\nprior.appendLast.gates (Fin.last sourceGateCount) = Wire.gate (Fin.last targetGateCount)",
+     "statement": "theorem appendLast_gates_last\n    (prior : Wire.Renaming inputCount sourceGateCount targetGateCount) :\n    prior.appendLast.gates (Fin.last sourceGateCount) = Wire.gate (Fin.last targetGateCount)",
      "sorry": false
     },
     {
@@ -6890,7 +6891,7 @@
      "kind": "theorem",
      "line": 231,
      "doc": "",
-     "statement": "theorem appendLast_castSucc\n(prior : Wire.Renaming inputCount sourceGateCount targetGateCount)\n(wire : Wire inputCount sourceGateCount) :\nprior.appendLast wire.castSucc = (prior wire).castSucc",
+     "statement": "theorem appendLast_castSucc\n    (prior : Wire.Renaming inputCount sourceGateCount targetGateCount)\n    (wire : Wire inputCount sourceGateCount) :\n    prior.appendLast wire.castSucc = (prior wire).castSucc",
      "sorry": false
     },
     {
@@ -10278,7 +10279,7 @@
      "kind": "theorem",
      "line": 34,
      "doc": "",
-     "statement": "theorem slice_eq_true_iff {L : Language α} {n : ℕ} {x : Fin n → α} :\nL.slice n x = true ↔ List.ofFn x ∈ L",
+     "statement": "theorem slice_eq_true_iff {L : Language α} {n : ℕ} {x : Fin n → α} :\n    L.slice n x = true ↔ List.ofFn x ∈ L",
      "sorry": false
     },
     {
@@ -10302,7 +10303,7 @@
      "kind": "theorem",
      "line": 45,
      "doc": "",
-     "statement": "theorem ofFn_mem_ofSlices {f : ∀ n, (Fin n → α) → Bool} {n : ℕ} {x : Fin n → α} :\n.ofFn x ∈ ofSlices f ↔ f n x",
+     "statement": "theorem ofFn_mem_ofSlices {f : ∀ n, (Fin n → α) → Bool} {n : ℕ} {x : Fin n → α} :\n    .ofFn x ∈ ofSlices f ↔ f n x",
      "sorry": false
     },
     {
@@ -10310,7 +10311,7 @@
      "kind": "theorem",
      "line": 50,
      "doc": "",
-     "statement": "theorem slice_ofSlices (f : ∀ n, (Fin n → α) → Bool) (n : ℕ) :\n(ofSlices f).slice n = f n",
+     "statement": "theorem slice_ofSlices (f : ∀ n, (Fin n → α) → Bool) (n : ℕ) :\n    (ofSlices f).slice n = f n",
      "sorry": false
     }
    ]
@@ -11080,7 +11081,7 @@
      "kind": "def",
      "line": 220,
      "doc": "The same configuration with a word prepended to the output tape. A machine never reads its\noutput, so prepending to it preserves steps: cf. `Turing.MultiTapeNTM.prependOutputHom`.",
-     "statement": "def Cfg.prependOutput (c : Cfg k Symbol State input) (pre : List Symbol) :\nCfg k Symbol State input",
+     "statement": "def Cfg.prependOutput (c : Cfg k Symbol State input) (pre : List Symbol) :\n    Cfg k Symbol State input",
      "sorry": false
     },
     {
@@ -11088,7 +11089,7 @@
      "kind": "def",
      "line": 225,
      "doc": "The same configuration in a different control state, possibly of a different state type.",
-     "statement": "def Cfg.withState (cfg : Cfg k Symbol State input)\n{State' : Type*} (q : Option State') : Cfg k Symbol State' input",
+     "statement": "def Cfg.withState (cfg : Cfg k Symbol State input)\n    {State' : Type*} (q : Option State') : Cfg k Symbol State' input",
      "sorry": false
     },
     {
@@ -11096,7 +11097,7 @@
      "kind": "def",
      "line": 232,
      "doc": "Remap the (optional) state of a configuration through `φ`, leaving the input head, the work\ntapes, the work-tape heads and the output alone. Control-flow combinators such as `seq` embed a\nsub-machine's configurations into the combined machine by exactly such a state remap.",
-     "statement": "def Cfg.mapState {State' : Type*} (φ : Option State → Option State')\n(c : Cfg k Symbol State input) : Cfg k Symbol State' input",
+     "statement": "def Cfg.mapState {State' : Type*} (φ : Option State → Option State')\n    (c : Cfg k Symbol State input) : Cfg k Symbol State' input",
      "sorry": false
     },
     {
@@ -11234,7 +11235,7 @@
      "kind": "lemma",
      "line": 152,
      "doc": "",
-     "statement": "lemma handOver_some {State₀ State₁ : Type*} (q₁ : State₁) (q : State₀) :\nhandOver q₁ (some q) = some (.inl q)",
+     "statement": "lemma handOver_some {State₀ State₁ : Type*} (q₁ : State₁) (q : State₀) :\n    handOver q₁ (some q) = some (.inl q)",
      "sorry": false
     },
     {
@@ -11242,7 +11243,7 @@
      "kind": "lemma",
      "line": 155,
      "doc": "",
-     "statement": "lemma handOver_none {State₀ State₁ : Type*} (q₁ : State₁) :\nhandOver (State₀ := State₀) q₁ none = some (.inr q₁)",
+     "statement": "lemma handOver_none {State₀ State₁ : Type*} (q₁ : State₁) :\n    handOver (State₀ := State₀) q₁ none = some (.inr q₁)",
      "sorry": false
     },
     {
@@ -11820,7 +11821,7 @@
      "kind": "def",
      "line": 64,
      "doc": "`tm` run on the tapes selected by the embedding `e`, leaving other tapes untouched: work tape\n`e j` plays the role of `tm`'s tape `j`, and any tape outside `range e` is never written and never\nmoves.",
-     "statement": "public noncomputable def extendTapes (tm : MultiTapeTM k Symbol State)\n(e : Fin k ↪ Fin k') : MultiTapeTM k' Symbol State",
+     "statement": "public noncomputable def extendTapes (tm : MultiTapeTM k Symbol State)\n    (e : Fin k ↪ Fin k') : MultiTapeTM k' Symbol State",
      "sorry": false
     },
     {
@@ -11836,7 +11837,7 @@
      "kind": "def",
      "line": 79,
      "doc": "A configuration of `tm`, embedded: tape `j` goes to tape `e j`, the tapes outside `range e`\ncarry the given `extraTapes` contents and `extraPos` head positions.",
-     "statement": "public def embed (e : Fin k ↪ Fin k') (cfg : Cfg k Symbol State input)\n(extraTapes : Fin k' → ℤ → Option Symbol) (extraPos : Fin k' → ℤ) :\nCfg k' Symbol State input",
+     "statement": "public def embed (e : Fin k ↪ Fin k') (cfg : Cfg k Symbol State input)\n    (extraTapes : Fin k' → ℤ → Option Symbol) (extraPos : Fin k' → ℤ) :\n    Cfg k' Symbol State input",
      "sorry": false
     },
     {
@@ -11892,7 +11893,7 @@
      "kind": "def",
      "line": 128,
      "doc": "`embed` as a homomorphism of step relations: each step `c → c'` of `tm` becomes the step\n`embed c → embed c'` of the reindexed machine, so a run path of `tm` maps to a run path of the\nreindexed machine, with the extra tapes held fixed. `Follows.stepHom` builds it, since `embed`\nagrees with the adapter defining `extendTapes`.",
-     "statement": "public noncomputable def embedHom (tm : MultiTapeTM k Symbol State)\n(e : Fin k ↪ Fin k') (extraTapes : Fin k' → ℤ → Option Symbol) (extraPos : Fin k' → ℤ) :\n(tm.stepRel input).Hom ((tm.extendTapes e).stepRel input)",
+     "statement": "public noncomputable def embedHom (tm : MultiTapeTM k Symbol State)\n    (e : Fin k ↪ Fin k') (extraTapes : Fin k' → ℤ → Option Symbol) (extraPos : Fin k' → ℤ) :\n    (tm.stepRel input).Hom ((tm.extendTapes e).stepRel input)",
      "sorry": false
     },
     {
@@ -11952,7 +11953,7 @@
      "kind": "def",
      "line": 186,
      "doc": "The one-tape view of a configuration of a machine with `k` work tapes: the tape and head of\ntape `i`, with everything else as it is.",
-     "statement": "public def oneTapeCfg (i : Fin k) (cfg : Cfg k Symbol State input) :\nCfg 1 Symbol State input",
+     "statement": "public def oneTapeCfg (i : Fin k) (cfg : Cfg k Symbol State input) :\n    Cfg 1 Symbol State input",
      "sorry": false
     },
     {
@@ -12092,7 +12093,7 @@
      "kind": "def",
      "line": 51,
      "doc": "`tm`, reading its input from the virtual input tape `Fin.natAdd k 0`, with the flag tape\n`Fin.natAdd k 1` marking the cell left of the input. The real input tape is never read and never\nmoved.",
-     "statement": "public noncomputable def inputFromTape (tm : MultiTapeTM k Symbol State) :\nMultiTapeTM (k + 2) Symbol State",
+     "statement": "public noncomputable def inputFromTape (tm : MultiTapeTM k Symbol State) :\n    MultiTapeTM (k + 2) Symbol State",
      "sorry": false
     },
     {
@@ -12100,7 +12101,7 @@
      "kind": "def",
      "line": 67,
      "doc": "A configuration of `tm` on `input`, as the redirecting machine sees it, over an arbitrary\nambient input: `input` sits on the virtual input tape with the head at cell `inputPos - 1`, the flag\ntape carries its mark at `-1` with its head in lockstep, and the ambient input head rests at\n`1`.",
-     "statement": "public def inCfg (mark : Symbol) {input : List Symbol} (c : Cfg k Symbol State input)\n(outerInput : List Symbol) : Cfg (k + 2) Symbol State outerInput",
+     "statement": "public def inCfg (mark : Symbol) {input : List Symbol} (c : Cfg k Symbol State input)\n    (outerInput : List Symbol) : Cfg (k + 2) Symbol State outerInput",
      "sorry": false
     },
     {
@@ -12188,7 +12189,7 @@
      "kind": "def",
      "line": 161,
      "doc": "The redirection preserves steps, so it maps run paths of `tm` to run paths of the redirected\nmachine.",
-     "statement": "public noncomputable def inCfgHom (tm : MultiTapeTM k Symbol State)\n(mark : Symbol) (outerInput : List Symbol) :\n(tm.stepRel input).Hom (tm.inputFromTape.stepRel outerInput)",
+     "statement": "public noncomputable def inCfgHom (tm : MultiTapeTM k Symbol State)\n    (mark : Symbol) (outerInput : List Symbol) :\n    (tm.stepRel input).Hom (tm.inputFromTape.stepRel outerInput)",
      "sorry": false
     },
     {
@@ -12214,7 +12215,7 @@
      "kind": "def",
      "line": 31,
      "doc": "`tm`, with its output writes redirected onto a fresh last work tape, whose head always stands\nat the write frontier.",
-     "statement": "public noncomputable def outputToTape (tm : MultiTapeTM k Symbol State) :\nMultiTapeTM (k + 1) Symbol State",
+     "statement": "public noncomputable def outputToTape (tm : MultiTapeTM k Symbol State) :\n    MultiTapeTM (k + 1) Symbol State",
      "sorry": false
     },
     {
@@ -12222,7 +12223,7 @@
      "kind": "def",
      "line": 46,
      "doc": "A configuration of `tm`, as the redirected machine sees it: the output so far sits on the\nlast work tape with the head at its end, and the real output is empty.",
-     "statement": "public def outCfg (c : Cfg k Symbol State input) :\nCfg (k + 1) Symbol State input",
+     "statement": "public def outCfg (c : Cfg k Symbol State input) :\n    Cfg (k + 1) Symbol State input",
      "sorry": false
     },
     {
@@ -12270,7 +12271,7 @@
      "kind": "def",
      "line": 80,
      "doc": "The redirection preserves steps, so it maps run paths of `tm` to run paths of the redirected\nmachine.",
-     "statement": "public noncomputable def outCfgHom (tm : MultiTapeTM k Symbol State) :\n(tm.stepRel input).Hom (tm.outputToTape.stepRel input)",
+     "statement": "public noncomputable def outCfgHom (tm : MultiTapeTM k Symbol State) :\n    (tm.stepRel input).Hom (tm.outputToTape.stepRel input)",
      "sorry": false
     },
     {
@@ -13121,7 +13122,7 @@
    "copyright": "Bolton Bailey",
    "authors": "Bolton Bailey, Pim Spelier, Daan van Gent",
    "title": "Single-Tape Turing Machines",
-   "doc": "Defines a single-tape Turing machine for computing functions on `List Symbol`\nfor finite alphabet `Symbol`.\n\n## Design\n\nHere are some design choices made in this file:\n\nThese machines have access to a single bidirectionally-infinite tape (`BiTape`)\nwhich uses symbols from `Option Symbol`.\n\nThe transition function of the machine takes a state\nand a tape alphabet character under the read-head (i.e. an `Option Symbol`)\nand returns a `Stmt` describing the tape action to take,\nas well as an optional new state to transition to (where `none` means halt).\n\nWe do not make the \"halting state\" a member of the state type for a few reasons:\n\n* To avoid the need for passing a subtype of \"non-halting states\" to the transition function.\n* To make clear that TMs are not expected to continue on after entering this special state\n  (in contrast to, say, a DFA entering/leaving an accepting state).\n* To make it simpler to match on halting when modifying a machine.\n\nWe also include the possibility for non-movement actions,\nfor convenience in composition of machines.\n\n## Important Declarations\n\nWe define a number of structures related to Turing machine computation:\n\n* `Stmt`: the write and movement operations a TM can do in a single step.\n* `SingleTapeTM`: the TM itself.\n* `Cfg`: the configuration of a TM, including internal and tape state.\n* `TimeComputable f`: a TM for computing `f`, packaged with a bound on runtime.\n* `PolyTimeComputable f`: `TimeComputable f` packaged with a polynomial bound on runtime.\n\nWe also provide ways of constructing polynomial-runtime TMs\n\n* `PolyTimeComputable.id`: computes the identity function\n* `PolyTimeComputable.comp`: computes the composition of polynomial time machines\n* `TimeComputable.withMonotoneBound`, `PolyTimeComputable.withMonotoneBound`: replace the time\n  bound with a monotone one (its `partialSups`) without changing the machine\n\n## TODOs\n\n- Encoding of types in lists to represent computations on arbitrary types.\n- Add `∘` notation for `compComputer`.",
+   "doc": "Defines a single-tape Turing machine for computing functions on `List Symbol`\nfor finite alphabet `Symbol`.\n\n## Design\n\nHere are some design choices made in this file:\n\nThese machines have access to a single bidirectionally-infinite tape (`BiTape`)\nwhich uses symbols from `Option Symbol`.\n\nThe transition function of the machine takes a state\nand a tape alphabet character under the read-head (i.e. an `Option Symbol`)\nand returns a `Stmt` describing the tape action to take,\nas well as an optional new state to transition to (where `none` means halt).\n\nWe do not make the \"halting state\" a member of the state type for a few reasons:\n\n* To avoid the need for passing a subtype of \"non-halting states\" to the transition function.\n* To make clear that TMs are not expected to continue on after entering this special state\n  (in contrast to, say, a DFA entering/leaving an accepting state).\n* To make it simpler to match on halting when modifying a machine.\n\nWe also include the possibility for non-movement actions,\nfor convenience in composition of machines.\n\n## Important Declarations\n\nWe define a number of structures related to Turing machine computation:\n\n* `Stmt`: the write and movement operations a TM can do in a single step.\n* `SingleTapeTM`: the TM itself.\n* `Cfg`: the configuration of a TM, including internal and tape state.\n* `TimeComputable f`: a TM for computing `f`, packaged with a bound on runtime.\n* `PolyTimeComputable f`: `TimeComputable f` packaged with a polynomial bound on runtime.\n\nWe also provide ways of constructing polynomial-runtime TMs\n\n* `PolyTimeComputable.id`: computes the identity function\n* `PolyTimeComputable.comp`: computes the composition of polynomial time machines\n* `TimeComputable.withMonotoneBound`, `PolyTimeComputable.withMonotoneBound`: replace the time\n  bound with a monotone one (its `partialSups`) without changing the machine\n\n…",
    "items": [
     {
      "name": "Cslib.Turing.SingleTapeTM.Stmt",
@@ -16982,7 +16983,7 @@
      "kind": "theorem",
      "line": 446,
      "doc": "",
-     "statement": "theorem run_withReader (f : σ → σ) (m : FreeReader σ α) (s : σ) :\nrun (withTheReader σ f m) s = run m (f s)",
+     "statement": "theorem run_withReader (f : σ → σ) (m : FreeReader σ α) (s : σ) :\n    run (withTheReader σ f m) s = run m (f s)",
      "sorry": false
     }
    ]
@@ -19266,7 +19267,7 @@
      "kind": "theorem",
      "line": 259,
      "doc": "",
-     "statement": "theorem singleton_append_ωSequence (a : α) (s : ωSequence α) :\n[a] ++ω s = a ::ω s",
+     "statement": "theorem singleton_append_ωSequence (a : α) (s : ωSequence α) :\n  [a] ++ω s = a ::ω s",
      "sorry": false
     },
     {
@@ -20080,7 +20081,7 @@
      "kind": "def",
      "line": 127,
      "doc": "The sum of two polynomial functors `P` and `Q`, written as `P + Q`,\ndefined as the sum of the head types and the dependent sum recursor for the child types.\n\nThe child universes must agree. The named spelling `P.add Q` can elaborate in contexts where\n`P + Q` fails to infer universes, such as under `PFunctor.W`; see `CslibTests.PFunctor`.",
-     "statement": "def add (P : PFunctor.{uA₁, uB}) (Q : PFunctor.{uA₂, uB}) :\nPFunctor.{max uA₁ uA₂, uB}",
+     "statement": "def add (P : PFunctor.{uA₁, uB}) (Q : PFunctor.{uA₂, uB}) :\n    PFunctor.{max uA₁ uA₂, uB}",
      "sorry": false
     },
     {
@@ -20088,7 +20089,7 @@
      "kind": "instance",
      "line": 131,
      "doc": "",
-     "statement": "instance instHAddPFunctor :\nHAdd PFunctor.{uA₁, uB} PFunctor.{uA₂, uB} PFunctor.{max uA₁ uA₂, uB}",
+     "statement": "instance instHAddPFunctor :\n    HAdd PFunctor.{uA₁, uB} PFunctor.{uA₂, uB} PFunctor.{max uA₁ uA₂, uB}",
      "sorry": false
     },
     {
@@ -20096,7 +20097,7 @@
      "kind": "lemma",
      "line": 137,
      "doc": "",
-     "statement": "lemma add_eq_add (P : PFunctor.{uA₁, uB}) (Q : PFunctor.{uA₂, uB}) :\nP.add Q = P + Q",
+     "statement": "lemma add_eq_add (P : PFunctor.{uA₁, uB}) (Q : PFunctor.{uA₂, uB}) :\n    P.add Q = P + Q",
      "sorry": false
     },
     {
@@ -20104,7 +20105,7 @@
      "kind": "def",
      "line": 146,
      "doc": "The product of two polynomial functors `P` and `Q`, written as `P * Q`,\ndefined as the product of the head types and the sum of the child types.",
-     "statement": "def prod (P : PFunctor.{uA₁, uB₁}) (Q : PFunctor.{uA₂, uB₂}) :\nPFunctor.{max uA₁ uA₂, max uB₁ uB₂}",
+     "statement": "def prod (P : PFunctor.{uA₁, uB₁}) (Q : PFunctor.{uA₂, uB₂}) :\n    PFunctor.{max uA₁ uA₂, max uB₁ uB₂}",
      "sorry": false
     },
     {
@@ -20112,7 +20113,7 @@
      "kind": "instance",
      "line": 149,
      "doc": "",
-     "statement": "instance instHMulPFunctor :\nHMul PFunctor.{uA₁, uB₁} PFunctor.{uA₂, uB₂} PFunctor.{max uA₁ uA₂, max uB₁ uB₂}",
+     "statement": "instance instHMulPFunctor :\n    HMul PFunctor.{uA₁, uB₁} PFunctor.{uA₂, uB₂} PFunctor.{max uA₁ uA₂, max uB₁ uB₂}",
      "sorry": false
     },
     {
@@ -20120,7 +20121,7 @@
      "kind": "lemma",
      "line": 153,
      "doc": "",
-     "statement": "lemma prod_eq_mul (P : PFunctor.{uA₁, uB₁}) (Q : PFunctor.{uA₂, uB₂}) :\nP.prod Q = P * Q",
+     "statement": "lemma prod_eq_mul (P : PFunctor.{uA₁, uB₁}) (Q : PFunctor.{uA₂, uB₂}) :\n    P.prod Q = P * Q",
      "sorry": false
     },
     {
@@ -20194,7 +20195,7 @@
      "kind": "lemma",
      "line": 97,
      "doc": "",
-     "statement": "lemma lift_ne_pure (a : P.A) (y : P.B a) :\n(lift a : P.FreeM (P.B a)) ≠ pure y",
+     "statement": "lemma lift_ne_pure (a : P.A) (y : P.B a) :\n    (lift a : P.FreeM (P.B a)) ≠ pure y",
      "sorry": false
     },
     {
@@ -20202,7 +20203,7 @@
      "kind": "lemma",
      "line": 100,
      "doc": "",
-     "statement": "lemma pure_ne_lift (a : P.A) (y : P.B a) :\npure y ≠ (lift a : P.FreeM (P.B a))",
+     "statement": "lemma pure_ne_lift (a : P.A) (y : P.B a) :\n    pure y ≠ (lift a : P.FreeM (P.B a))",
      "sorry": false
     },
     {
@@ -20258,7 +20259,7 @@
      "kind": "lemma",
      "line": 146,
      "doc": "",
-     "statement": "lemma liftObj_ne_pure (x : P.Obj α) (y : α) :\n(liftObj x : P.FreeM α) ≠ pure y",
+     "statement": "lemma liftObj_ne_pure (x : P.Obj α) (y : α) :\n    (liftObj x : P.FreeM α) ≠ pure y",
      "sorry": false
     },
     {
@@ -20266,7 +20267,7 @@
      "kind": "lemma",
      "line": 149,
      "doc": "",
-     "statement": "lemma pure_ne_liftObj (x : P.Obj α) (y : α) :\npure y ≠ (liftObj x : P.FreeM α)",
+     "statement": "lemma pure_ne_liftObj (x : P.Obj α) (y : α) :\n    pure y ≠ (liftObj x : P.FreeM α)",
      "sorry": false
     },
     {
@@ -20354,7 +20355,7 @@
      "kind": "lemma",
      "line": 206,
      "doc": "",
-     "statement": "lemma bind_eq_pure_iff (x : P.FreeM α) (f : α → P.FreeM β) (b : β) :\nx.bind f = pure b ↔ ∃ a, x = pure a ∧ f a = pure b",
+     "statement": "lemma bind_eq_pure_iff (x : P.FreeM α) (f : α → P.FreeM β) (b : β) :\n    x.bind f = pure b ↔ ∃ a, x = pure a ∧ f a = pure b",
      "sorry": false
     },
     {
@@ -20362,7 +20363,7 @@
      "kind": "lemma",
      "line": 217,
      "doc": "",
-     "statement": "lemma pure_eq_bind_iff (x : P.FreeM α) (f : α → P.FreeM β) (b : β) :\npure b = x.bind f ↔ ∃ a, x = pure a ∧ pure b = f a",
+     "statement": "lemma pure_eq_bind_iff (x : P.FreeM α) (f : α → P.FreeM β) (b : β) :\n    pure b = x.bind f ↔ ∃ a, x = pure a ∧ pure b = f a",
      "sorry": false
     },
     {
@@ -20765,7 +20766,7 @@
    "copyright": "Bolton Bailey",
    "authors": "Bolton Bailey",
    "title": "StackTape: Infinite, eventually-`none` lists of `Option`s",
-   "doc": "This file defines `StackTape`, a stack-like data structure of `Option` values,\nwhere the tape is considered to be infinite and eventually all `none`s.\nThis is useful as a data structure with a simple API for manipulation by Turing machines.\n\n## Design\n\n`StackTape` is represented as a list of `Option` values where the list cannot end with `none`.\nThe end of the list is then treated as the start of an infinite sequence of `none` values\nby the low-level API.\nThis design makes it convenient to express the length of the tape in terms of the list length.\n\nAn alternative design would be to represent the tape as a `Stream' (Option Symbol)`,\nwith additional fields tracking the length and the fact that the stream eventually becomes `none`.\nThis design might complicate reasoning about the length of the tape, but could make other operations\nmore straightforward.\n\nFuture design work might explore this alternative representation and compare its\nadvantages and disadvantages.\n\n…",
+   "doc": "This file defines `StackTape`, a stack-like data structure of `Option` values,\nwhere the tape is considered to be infinite and eventually all `none`s.\nThis is useful as a data structure with a simple API for manipulation by Turing machines.\n\n## Design\n\n`StackTape` is represented as a list of `Option` values where the list cannot end with `none`.\nThe end of the list is then treated as the start of an infinite sequence of `none` values\nby the low-level API.\nThis design makes it convenient to express the length of the tape in terms of the list length.\n\nAn alternative design would be to represent the tape as a `Stream' (Option Symbol)`,\nwith additional fields tracking the length and the fact that the stream eventually becomes `none`.\nThis design might complicate reasoning about the length of the tape, but could make other operations\nmore straightforward.\n\n…",
    "items": [
     {
      "name": "Cslib.Turing.StackTape",
@@ -21114,7 +21115,7 @@
      "kind": "class",
      "line": 28,
      "doc": "The type `α` has an and connective (`∧`).",
-     "statement": "class HasAnd (α : Type*) where\n  /-- `a ∧ b` is the conjunction of `a` and `b`. -/\n  and (a b : α) : α\n\n@[inherit_doc] scoped infixr:36 \" ∧ \" => HasAnd.and",
+     "statement": "class HasAnd (α : Type*) where\n  /-- `a ∧ b` is the conjunction of `a` and `b`. -/\n  and (a b : α) : α",
      "sorry": false
     },
     {
@@ -21122,7 +21123,7 @@
      "kind": "class",
      "line": 35,
      "doc": "The type `α` has an or connective (`∨`).",
-     "statement": "class HasOr (α : Type*) where\n  /-- `a ∨ b` is the disjunction of `a` and `b`. -/\n  or (a b : α) : α\n\n@[inherit_doc] scoped infixr:30 \" ∨ \" => HasOr.or",
+     "statement": "class HasOr (α : Type*) where\n  /-- `a ∨ b` is the disjunction of `a` and `b`. -/\n  or (a b : α) : α",
      "sorry": false
     },
     {
@@ -21178,7 +21179,7 @@
      "kind": "class",
      "line": 66,
      "doc": "The type `α` has an implication connective (`→`).",
-     "statement": "class HasImp (α : Type*) where\n  /-- `a → b` denotes `a` implies `b`. -/\n  imp (a b : α) : α\n\n@[inherit_doc] scoped infixr:25 \" → \" => HasImp.imp",
+     "statement": "class HasImp (α : Type*) where\n  /-- `a → b` denotes `a` implies `b`. -/\n  imp (a b : α) : α",
      "sorry": false
     },
     {
@@ -21186,7 +21187,7 @@
      "kind": "class",
      "line": 73,
      "doc": "The type `α` has a bi-implication connective (`↔`).",
-     "statement": "class HasIff (α : Type*) where\n  /-- `a ↔ b` denotes `a` implies `b` and vice-versa. -/\n  iff (a b : α) : α\n\n@[inherit_doc] scoped infixr:20 \" ↔ \" => HasIff.iff",
+     "statement": "class HasIff (α : Type*) where\n  /-- `a ↔ b` denotes `a` implies `b` and vice-versa. -/\n  iff (a b : α) : α",
      "sorry": false
     },
     {
@@ -21194,7 +21195,7 @@
      "kind": "class",
      "line": 80,
      "doc": "The type `α` has a negation connective (`¬`).",
-     "statement": "class HasNot (α : Type*) where\n  /-- `¬a` is the negation of `a`. -/\n  not (a : α) : α\n\n@[inherit_doc] scoped notation:max \"¬\" p:40 => HasNot.not p",
+     "statement": "class HasNot (α : Type*) where\n  /-- `¬a` is the negation of `a`. -/\n  not (a : α) : α",
      "sorry": false
     },
     {
@@ -21206,7 +21207,7 @@
      "kind": "class",
      "line": 93,
      "doc": "The type `α` has a family of triangle operators (`Δ`).",
-     "statement": "class HasTriangle (α : Type*) (τ : outParam PFunctor) where\n  /-- `Δ[op](φ₁, ..., φₙ)` means that `φ₁`, ..., `φₙ` are valid at some respective related states.\n  -/\n  triangle (op : τ.A) (arg : τ.B op → α) : α\n\n@[inherit_doc] scoped notation:50 \"Δ[\" op \"]\" arg:max => HasTriangle.triangle op arg",
+     "statement": "class HasTriangle (α : Type*) (τ : outParam PFunctor) where\n  /-- `Δ[op](φ₁, ..., φₙ)` means that `φ₁`, ..., `φₙ` are valid at some respective related states.\n  -/\n  triangle (op : τ.A) (arg : τ.B op → α) : α",
      "sorry": false
     },
     {
@@ -21214,19 +21215,19 @@
      "kind": "class",
      "line": 101,
      "doc": "The type `α` has a family of nabla operators (`∇`).",
-     "statement": "class HasNabla (α : Type*) (τ : outParam PFunctor) where\n  /-- `∇[op](φ₁, ..., φₙ)` means that `φ₁`, ..., `φₙ` are valid at all respective related states. -/\n  nabla (op : τ.A) (arg : τ.B op → α) : α\n\n@[inherit_doc] scoped notation:50 \"∇[\" op \"]\" arg:max => HasNabla.nabla op arg",
+     "statement": "class HasNabla (α : Type*) (τ : outParam PFunctor) where\n  /-- `∇[op](φ₁, ..., φₙ)` means that `φ₁`, ..., `φₙ` are valid at all respective related states. -/\n  nabla (op : τ.A) (arg : τ.B op → α) : α",
      "sorry": false
     },
     {
      "line": 111,
-     "note": "## Dynamic modalities\n\nHere we need to use the prefix `d` to distinguish our notation from the normal `[·]` and `⟨·⟩`.\nA refactoring that makes this unnecessary would be welcome."
+     "note": "## Dynamic modalities\n\nHere we need to use the prefix `d` to distinguish our notation from the normal `[·]` and `⟨·⟩`.\n…"
     },
     {
      "name": "Cslib.Logic.HasDynamicDiamond",
      "kind": "class",
      "line": 118,
      "doc": "The type `α` has a dynamic diamond modality with action type `β` (`d⟨a⟩φ`).",
-     "statement": "class HasDynamicDiamond (α : Type*) (β : outParam Type*) where\n  /-- `b` is possibly valid after `a`. -/\n  dynDiamond (a : β) (b : α) : α\n\n@[inherit_doc] scoped notation \"d⟨\" a \"⟩\" φ:max => HasDynamicDiamond.dynDiamond a φ",
+     "statement": "class HasDynamicDiamond (α : Type*) (β : outParam Type*) where\n  /-- `b` is possibly valid after `a`. -/\n  dynDiamond (a : β) (b : α) : α",
      "sorry": false
     },
     {
@@ -21234,7 +21235,7 @@
      "kind": "class",
      "line": 125,
      "doc": "The type `α` has a dynamic box modality with action type `β` (`d[a]φ`).",
-     "statement": "class HasDynamicBox (α : Type*) (β : outParam Type*) where\n  /-- `b` is necessarily valid after `a`. -/\n  dynBox (a : β) (b : α) : α\n\n@[inherit_doc] scoped notation \"d[\" a \"]\" φ:max => HasDynamicBox.dynBox a φ",
+     "statement": "class HasDynamicBox (α : Type*) (β : outParam Type*) where\n  /-- `b` is necessarily valid after `a`. -/\n  dynBox (a : β) (b : α) : α",
      "sorry": false
     },
     {
@@ -21262,7 +21263,7 @@
      "kind": "class",
      "line": 156,
      "doc": "The type `α` has a box modality (`□`).",
-     "statement": "class HasBox (α : Type*) where\n  /-- `a` is valid in all immediately reachable states. -/\n  box (a : α) : α\n\n@[inherit_doc] scoped prefix:40 \"□\" => HasBox.box",
+     "statement": "class HasBox (α : Type*) where\n  /-- `a` is valid in all immediately reachable states. -/\n  box (a : α) : α",
      "sorry": false
     },
     {
@@ -21270,7 +21271,7 @@
      "kind": "class",
      "line": 163,
      "doc": "The type `α` has a diamond modality (`◇`).",
-     "statement": "class HasDiamond (α : Type*) where\n  /-- `a` is valid in a reachable state. -/\n  diamond (a : α) : α\n\n@[inherit_doc] scoped prefix:40 \"◇\" => HasDiamond.diamond",
+     "statement": "class HasDiamond (α : Type*) where\n  /-- `a` is valid in a reachable state. -/\n  diamond (a : α) : α",
      "sorry": false
     },
     {
@@ -21298,7 +21299,7 @@
      "kind": "class",
      "line": 192,
      "doc": "The type `α` has a tensor connective (⊗).",
-     "statement": "class HasTensor (α : Type*) where\n  /-- `a ⊗ b` is the multiplicative conjunction of `a` and `b`. -/\n  tensor (a b : α) : α\n\n@[inherit_doc] scoped infixr:35 \" ⊗ \" => HasTensor.tensor",
+     "statement": "class HasTensor (α : Type*) where\n  /-- `a ⊗ b` is the multiplicative conjunction of `a` and `b`. -/\n  tensor (a b : α) : α",
      "sorry": false
     }
    ]
@@ -21989,7 +21990,7 @@
      "kind": "theorem",
      "line": 41,
      "doc": "",
-     "statement": "theorem StronglyCommute.to_stronglyConfluent :\nStronglyCommute r r = StronglyConfluent r",
+     "statement": "theorem StronglyCommute.to_stronglyConfluent :\n  StronglyCommute r r = StronglyConfluent r",
      "sorry": false
     },
     {
@@ -24711,7 +24712,7 @@
      "kind": "theorem",
      "line": 164,
      "doc": "A 1-sized multistep transition is exactly a single transition with the given label.",
-     "statement": "theorem MTr.singleton_iff (s1 : State) (μ : Label) (s2 : State) :\nlts.MTr s1 [μ] s2 ↔ lts.Tr s1 μ s2",
+     "statement": "theorem MTr.singleton_iff (s1 : State) (μ : Label) (s2 : State) :\n  lts.MTr s1 [μ] s2 ↔ lts.Tr s1 μ s2",
      "sorry": false
     },
     {
@@ -25285,7 +25286,7 @@
      "kind": "lemma",
      "line": 283,
      "doc": "",
-     "statement": "lemma coe_sup (r s : {r // IsBisimulation lts₁ lts₂ r}) :\n(↑(r ⊔ s) : State₁ → State₂ → Prop) = (r : State₁ → State₂ → Prop) ⊔ s",
+     "statement": "lemma coe_sup (r s : {r // IsBisimulation lts₁ lts₂ r}) :\n    (↑(r ⊔ s) : State₁ → State₂ → Prop) = (r : State₁ → State₂ → Prop) ⊔ s",
      "sorry": false
     },
     {
@@ -27496,7 +27497,7 @@
      "kind": "class",
      "line": 18,
      "doc": "Class for types with a canonical notion of heterogeneous single-hole contexts.",
-     "statement": "class HasHContext (α β : Type*) where\n  /-- The type of contexts. -/\n  {Context : Type*}\n  /-- Replaces the hole in the context with a value, resulting in a new value. -/\n  fill (c : Context) (b : β) : α\n\n@[inherit_doc] notation:max c \"<[\" t \"]\" => HasHContext.fill c t",
+     "statement": "class HasHContext (α β : Type*) where\n  /-- The type of contexts. -/\n  {Context : Type*}\n  /-- Replaces the hole in the context with a value, resulting in a new value. -/\n  fill (c : Context) (b : β) : α",
      "sorry": false
     },
     {
@@ -34058,7 +34059,7 @@
    "copyright": "Fabrizio Montesi",
    "authors": "Fabrizio Montesi",
    "title": "Local expressions, stores, and evaluation",
-   "doc": "Choreographic programming and associated languages (like process calculi for modelling distributed\nprotocol implementations) are typically defined abstracting from how processes locally compute and\nstore values [Montesi2023]. This module defines this interface, as well as the derived concept of\nglobal store.\n\n## Implementation notes\n\nThe module is currently developed with minimality in mind. In the future, we plan on adding\nfacilities for typing expressions and easy integration with Lean and other IRs/FFIs.\n\n## References\n\n* [F. Montesi, *Introduction to Choreographies*][Montesi2023]",
+   "doc": "Choreographic programming and associated languages (like process calculi for modelling distributed\nprotocol implementations) are typically defined abstracting from how processes locally compute and\nstore values [Montesi2023]. This module defines this interface, as well as the derived concept of\nglobal store.\n\n## Implementation notes\n\nThe module is currently developed with minimality in mind. …\n\n## References\n\n* [F. Montesi, *Introduction to Choreographies*][Montesi2023]",
    "items": [
     {
      "name": "Cslib.Mech.Expr",
@@ -34132,7 +34133,7 @@
    "copyright": "Fabrizio Montesi",
    "authors": "Fabrizio Montesi",
    "title": "Stateful Processes",
-   "doc": "The language of Stateful Processes (SP for short), a process calculus\nwhere processes communicate via message passing [Montesi2023]. Stateful processes or similar\nlanguages are typically used to model implementations of choreographic programs (concurrent and/or\ndistributed protocols), but they are also designed to be used as abstract representations that can\nbe later compiled to executable mainstream languages.\n\n## Limitations\n\nThe current formalisation does not cover process polymorphism (procedures do not take process\nparameters) nor general recursion (this is the tail-recursive fragment of Stateful Processes).\nFor recursion, only the syntax is currently implemented. Its semantics will follow a similar\napproach to that for `CCS`.\n\n## Implementation notes\n\nThis development follows the presentation in [Montesi2023], with one difference: we adopt a modular\napproach to the definition of operational semantics, by first defining a symbolic semantics from\nwhich a concrete semantics is then derived by adding stores (process memory). This approach is\ndescribed in [Acclavio2026].\n\n## References\n\n* [M. Acclavio, G. Manara, F. Montesi, X. Qin, *Choreographic Programming: a Semantic Approach*][Acclavio2026]\n* [F. Montesi, *Introduction to Choreographies*][Montesi2023]",
+   "doc": "The language of Stateful Processes (SP for short), a process calculus\nwhere processes communicate via message passing [Montesi2023]. Stateful processes or similar\nlanguages are typically used to model implementations of choreographic programs (concurrent and/or\ndistributed protocols), but they are also designed to be used as abstract representations that can\nbe later compiled to executable mainstream languages.\n\n## Limitations\n\nThe current formalisation does not cover process polymorphism (procedures do not take process\nparameters) nor general recursion (this is the tail-recursive fragment of Stateful Processes).\nFor recursion, only the syntax is currently implemented. …\n\n## Implementation notes\n\nThis development follows the presentation in [Montesi2023], with one difference: we adopt a modular\napproach to the definition of operational semantics, by first defining a symbolic semantics from\nwhich a concrete semantics is then derived by adding stores (process memory). This approach is\ndescribed in [Acclavio2026].\n\n## References\n\n* [M. Acclavio, G. Manara, F. Montesi, X. Qin, *Choreographic Programming: a Semantic Approach*][Acclavio2026]\n* [F. Montesi, *Introduction to Choreographies*][Montesi2023]",
    "items": [
     {
      "line": 51,
@@ -35479,7 +35480,7 @@
      "kind": "lemma",
      "line": 210,
      "doc": "",
-     "statement": "lemma mem_one :\np ∈ (1 : Fact P) ↔ (∀ q ∈ PhaseSpace.bot, p * q ∈ PhaseSpace.bot)",
+     "statement": "lemma mem_one :\n  p ∈ (1 : Fact P) ↔ (∀ q ∈ PhaseSpace.bot, p * q ∈ PhaseSpace.bot)",
      "sorry": false
     },
     {
@@ -36961,7 +36962,7 @@
      "kind": "structure",
      "line": 33,
      "doc": "Judgement, representing the conclusions one reaches in modal logic.",
-     "statement": "structure Judgement World τ Atom where\n  /-- Constructs a judgement. -/\n  mk ::\n  /-- Model. -/\n  m : Model World τ Atom\n  /-- The world satisfying the proposition `φ`. -/\n  w : World\n  /-- The proposition satisfied by the world `w`. -/\n  φ : Proposition τ Atom\n\n@[inherit_doc] scoped notation \"Modal[\" m \",\" w \" ⊨ \" φ \"]\" => Judgement.mk m w φ",
+     "statement": "structure Judgement World τ Atom where\n  /-- Constructs a judgement. -/\n  mk ::\n  /-- Model. -/\n  m : Model World τ Atom\n  /-- The world satisfying the proposition `φ`. -/\n  w : World\n  /-- The proposition satisfied by the world `w`. -/\n  φ : Proposition τ Atom",
      "sorry": false
     },
     {
@@ -38330,7 +38331,7 @@
      "name": "Cslib.Logic.PL.NaturalDeduction.Derivation.subs",
      "kind": "def",
      "line": 253,
-     "doc": "Substitution of a family of derivations `D` for hypotheses in the context `Γ` of `E`. TODO:\nthis implementation is not capture avoiding.",
+     "doc": "Substitution of a family of derivations `D` for hypotheses in the context `Γ` of `E`. …",
      "statement": "def Derivation.subs {Γ Γ' Δ : Ctx Atom} {B : Proposition Atom}\n    (Ds : ∀ A ∈ Γ', (ND T)⇓(Δ ⊢ A)) :\n      Derivation T Γ B → Derivation T (Γ \\ Γ' ∪ Δ) B",
      "sorry": false
     },
@@ -39280,7 +39281,7 @@
    "copyright": "Samuel Schlesinger",
    "authors": "Josha Dekker, Devon Tuma, Kexing Ying, Samuel Schlesinger",
    "title": "PMF Utilities",
-   "doc": "## NB: This module is temporary\n\nThe bind/pure and posterior lemmas here have no dependence on any domain-specific\nstructure. They should be upstreamed to Mathlib\n(likely `Mathlib.Probability.ProbabilityMassFunction.Monad` or a new\n`Mathlib.Probability.ProbabilityMassFunction.Prod`). Once accepted upstream,\nthese lemmas should be removed and their consumers should import the Mathlib module instead.\n\nThe uniform samplers retain the PMF interface removed in\n[mathlib#42909](https://github.com/leanprover-community/mathlib4/pull/42909),\npending a decision on CSLib's probability API. Their definitions and proofs are adapted from\n`Mathlib.Probability.Distributions.Uniform` before that PR, by Josha Dekker, Devon Tuma,\nand Kexing Ying, under the Apache 2.0 license.\nOriginal sampler copyright (c) 2024 Josha Dekker. All rights reserved.\n\n## Main results\n\n- `Cslib.Probability.PMF.bind_pair_apply`: the \"pairing\" bind at `(a, b)` equals `p a * f a b`\n- `Cslib.Probability.PMF.bind_pair_tsum_fst`: marginalizing over the first component\n- `Cslib.Probability.PMF.uniformOfFintype_map_equiv`:\n  a uniform distribution is invariant under equivalence\n- `Cslib.Probability.PMF.posteriorDist`: the posterior as a `PMF`\n- `Cslib.Probability.PMF.posteriorDist_eq_prior_of_outputIndist`:\n  if the output distribution does not depend on the input, conditioning does\n  not change the prior",
+   "doc": "## NB: This module is temporary\n\n…\n\nThe uniform samplers retain the PMF interface removed in\n[mathlib#42909](https://github.com/leanprover-community/mathlib4/pull/42909),\npending a decision on CSLib's probability API. Their definitions and proofs are adapted from\n`Mathlib.Probability.Distributions.Uniform` before that PR, by Josha Dekker, Devon Tuma,\nand Kexing Ying, under the Apache 2.0 license.\nOriginal sampler copyright (c) 2024 Josha Dekker. All rights reserved.\n\n## Main results\n\n- `Cslib.Probability.PMF.bind_pair_apply`: the \"pairing\" bind at `(a, b)` equals `p a * f a b`\n- `Cslib.Probability.PMF.bind_pair_tsum_fst`: marginalizing over the first component\n- `Cslib.Probability.PMF.uniformOfFintype_map_equiv`:\n  a uniform distribution is invariant under equivalence\n- `Cslib.Probability.PMF.posteriorDist`: the posterior as a `PMF`\n- `Cslib.Probability.PMF.posteriorDist_eq_prior_of_outputIndist`:\n  if the output distribution does not depend on the input, conditioning does\n  not change the prior",
    "items": [
     {
      "name": "Cslib.Probability.PMF.uniformOfFinset",

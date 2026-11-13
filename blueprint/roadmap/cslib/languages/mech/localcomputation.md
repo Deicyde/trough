@@ -16,8 +16,7 @@ proof: formalized
 >
 > ## Implementation notes
 >
-> The module is currently developed with minimality in mind. In the future, we plan on adding
-> facilities for typing expressions and easy integration with Lean and other IRs/FFIs.
+> The module is currently developed with minimality in mind. …
 >
 > ## References
 >

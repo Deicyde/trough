@@ -30,7 +30,7 @@ proof: formalized
 > ## Implementation notes
 >
 > The current implementation requires proofs that `p` is prime and that `g` is a primitive root modulo
-> `p`, but does not use these facts. They are reserved for future work on security results.
+> `p`, but does not use these facts. …
 
 > ## Basics
 

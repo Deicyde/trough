@@ -19,8 +19,7 @@ proof: formalized
 >
 > The current formalisation does not cover process polymorphism (procedures do not take process
 > parameters) nor general recursion (this is the tail-recursive fragment of Stateful Processes).
-> For recursion, only the syntax is currently implemented. Its semantics will follow a similar
-> approach to that for `CCS`.
+> For recursion, only the syntax is currently implemented. …
 >
 > ## Implementation notes
 >

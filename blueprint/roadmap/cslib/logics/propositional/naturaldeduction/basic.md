@@ -288,8 +288,7 @@ theorem _root_.Cslib.Logic.InferenceSystem.DerivableIn.cut_away {Γ Γ' : Ctx At
 
 `Cslib.Logic.PL.NaturalDeduction.Derivation.subs` (definition, [line 253](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Logics/Propositional/NaturalDeduction/Basic.lean#L253))
 
-> Substitution of a family of derivations `D` for hypotheses in the context `Γ` of `E`. TODO:
-> this implementation is not capture avoiding.
+> Substitution of a family of derivations `D` for hypotheses in the context `Γ` of `E`. …
 
 ```lean
 def Derivation.subs {Γ Γ' Δ : Ctx Atom} {B : Proposition Atom}

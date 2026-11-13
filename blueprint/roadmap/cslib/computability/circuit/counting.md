@@ -34,8 +34,8 @@ noncomputable def computableFunctions (I : Interpretation σ U) (n s : ℕ) :
 
 ```lean
 theorem mem_computableFunctions {f : (Fin n → U) → U} :
-f ∈ computableFunctions I n s ↔
-∃ c : Circuit σ n 1, c.Computes I (single f) ∧ c.size ≤ s
+    f ∈ computableFunctions I n s ↔
+      ∃ c : Circuit σ n 1, c.Computes I (single f) ∧ c.size ≤ s
 ```
 
 `Cslib.Circuits.mem_computableFunctions_iff_ecomplexity_le` (theorem, [line 68](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Counting.lean#L68))
@@ -62,8 +62,8 @@ noncomputable def irredundantFunctions (I : Interpretation σ U) (n g : ℕ) :
 
 ```lean
 theorem mem_irredundantFunctions {f : (Fin n → U) → U} :
-f ∈ irredundantFunctions I n g ↔
-∃ c : Circuit σ n 1, c.Computes I (single f) ∧ c.Irredundant I ∧ c.size = g
+    f ∈ irredundantFunctions I n g ↔
+      ∃ c : Circuit σ n 1, c.Computes I (single f) ∧ c.Irredundant I ∧ c.size = g
 ```
 
 `Cslib.Circuits.card_irredundantFunctions_mul_factorial_le` (theorem, [line 172](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Counting.lean#L172))

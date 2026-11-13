@@ -29,9 +29,6 @@ inductive Op where
   /-- Binary disjunction. -/
   | or
   deriving DecidableEq, Fintype
-
-/-- The De Morgan basis has five operation symbols, counting its two constants. -/
-@[simp] theorem Op.card : Fintype.card Op = 5 := rfl
 ```
 
 `Cslib.Circuits.Boolean.Op.card` (theorem, [line 41](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Boolean/Basic.lean#L41))

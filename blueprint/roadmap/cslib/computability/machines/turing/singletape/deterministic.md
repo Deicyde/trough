@@ -51,10 +51,7 @@ proof: formalized
 > * `TimeComputable.withMonotoneBound`, `PolyTimeComputable.withMonotoneBound`: replace the time
 >   bound with a monotone one (its `partialSups`) without changing the machine
 >
-> ## TODOs
->
-> - Encoding of types in lists to represent computations on arbitrary types.
-> - Add `∘` notation for `compComputer`.
+> …
 
 `Cslib.Turing.SingleTapeTM.Stmt` (structure, [line 83](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/SingleTape/Deterministic.lean#L83))
 

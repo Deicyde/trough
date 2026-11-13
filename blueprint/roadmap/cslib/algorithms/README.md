@@ -2,7 +2,7 @@
 
 18 modules under `Cslib/Algorithms/`, with 188 public declarations.
 
-Its README opens:
+Its [README](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/README.md) opens:
 
 > This directory hosts **algorithms and their properties**. These properties concern functional correctness, complexity, and other relevant results. The directory also includes dedicated facilities for reasoning about algorithms written in Lean.
 

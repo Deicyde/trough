@@ -2,7 +2,7 @@
 
 15 modules under `Cslib/Crypto/`, with 131 public declarations.
 
-Its README opens:
+Its [README](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Crypto/README.md) opens:
 
 > This directory hosts **cryptographic definitions, primitives, protocol models, and related security metatheory**. Its scope includes both basic cryptographic notions and larger developments such as security protocols.
 

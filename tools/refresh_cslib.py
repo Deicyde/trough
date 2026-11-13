@@ -63,7 +63,7 @@ def refresh(checkout: Path, out: Path) -> list[str]:
     (out / "source.json").write_text(json.dumps(source, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
     previous.write_text(json.dumps(record, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
     tally = cslib.counts(record["modules"])
-    print(f"{cslib.REPO} {rev[:8]}: {len(record['modules'])} modules, {tally['declarations']} public declarations "
+    print(f"{cslib.REPO} {rev[:8]}: {len(record['modules'])} modules, {tally['declarations']} declarations read "
           f"({tally['documented']} documented, {tally['sorry']} holding sorry), "
           f"{sum(1 for module in record['modules'] if module['title'])} modules titled by their docstrings, "
           f"{len(record['folders'])} folder READMEs", file=sys.stderr)

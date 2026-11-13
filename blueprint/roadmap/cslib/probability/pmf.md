@@ -11,11 +11,7 @@ proof: formalized
 
 > ## NB: This module is temporary
 >
-> The bind/pure and posterior lemmas here have no dependence on any domain-specific
-> structure. They should be upstreamed to Mathlib
-> (likely `Mathlib.Probability.ProbabilityMassFunction.Monad` or a new
-> `Mathlib.Probability.ProbabilityMassFunction.Prod`). Once accepted upstream,
-> these lemmas should be removed and their consumers should import the Mathlib module instead.
+> …
 >
 > The uniform samplers retain the PMF interface removed in
 > [mathlib#42909](https://github.com/leanprover-community/mathlib4/pull/42909),

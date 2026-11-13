@@ -25,7 +25,7 @@ proof: formalized
 
 ```lean
 public noncomputable def outputToTape (tm : MultiTapeTM k Symbol State) :
-MultiTapeTM (k + 1) Symbol State
+    MultiTapeTM (k + 1) Symbol State
 ```
 
 `Turing.MultiTapeTM.outCfg` (definition, [line 46](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/OutputToTape.lean#L46))
@@ -35,7 +35,7 @@ MultiTapeTM (k + 1) Symbol State
 
 ```lean
 public def outCfg (c : Cfg k Symbol State input) :
-Cfg (k + 1) Symbol State input
+    Cfg (k + 1) Symbol State input
 ```
 
 `Turing.MultiTapeTM.outCfg_workTapes_last` (lemma, [line 54](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/OutputToTape.lean#L54))
@@ -80,7 +80,7 @@ public lemma outCfg_workTapeSymbols_castSucc (c : Cfg k Symbol State input) (j :
 
 ```lean
 public noncomputable def outCfgHom (tm : MultiTapeTM k Symbol State) :
-(tm.stepRel input).Hom (tm.outputToTape.stepRel input)
+    (tm.stepRel input).Hom (tm.outputToTape.stepRel input)
 ```
 
 `Turing.MultiTapeTM.initCfg_outputToTape` (lemma, [line 91](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/OutputToTape.lean#L91))

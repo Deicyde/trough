@@ -91,14 +91,14 @@ def lift (a : P.A) : P.FreeM (P.B a)
 
 ```lean
 lemma lift_ne_pure (a : P.A) (y : P.B a) :
-(lift a : P.FreeM (P.B a)) ≠ pure y
+    (lift a : P.FreeM (P.B a)) ≠ pure y
 ```
 
 `PFunctor.FreeM.pure_ne_lift` (lemma, [line 100](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/PFunctor/Free.lean#L100))
 
 ```lean
 lemma pure_ne_lift (a : P.A) (y : P.B a) :
-pure y ≠ (lift a : P.FreeM (P.B a))
+    pure y ≠ (lift a : P.FreeM (P.B a))
 ```
 
 `PFunctor.FreeM.bind` (definition, [line 106](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/PFunctor/Free.lean#L106))
@@ -162,14 +162,14 @@ abbrev liftObj (x : P.Obj α) : P.FreeM α
 
 ```lean
 lemma liftObj_ne_pure (x : P.Obj α) (y : α) :
-(liftObj x : P.FreeM α) ≠ pure y
+    (liftObj x : P.FreeM α) ≠ pure y
 ```
 
 `PFunctor.FreeM.pure_ne_liftObj` (lemma, [line 149](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/PFunctor/Free.lean#L149))
 
 ```lean
 lemma pure_ne_liftObj (x : P.Obj α) (y : α) :
-pure y ≠ (liftObj x : P.FreeM α)
+    pure y ≠ (liftObj x : P.FreeM α)
 ```
 
 `PFunctor.FreeM.monadLift_eq_liftObj` (lemma, [line 152](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/PFunctor/Free.lean#L152))
@@ -250,14 +250,14 @@ lemma liftObj_bind (x : P.Obj α) (f : α → P.FreeM β) :
 
 ```lean
 lemma bind_eq_pure_iff (x : P.FreeM α) (f : α → P.FreeM β) (b : β) :
-x.bind f = pure b ↔ ∃ a, x = pure a ∧ f a = pure b
+    x.bind f = pure b ↔ ∃ a, x = pure a ∧ f a = pure b
 ```
 
 `PFunctor.FreeM.pure_eq_bind_iff` (lemma, [line 217](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/PFunctor/Free.lean#L217))
 
 ```lean
 lemma pure_eq_bind_iff (x : P.FreeM α) (f : α → P.FreeM β) (b : β) :
-pure b = x.bind f ↔ ∃ a, x = pure a ∧ pure b = f a
+    pure b = x.bind f ↔ ∃ a, x = pure a ∧ pure b = f a
 ```
 
 `PFunctor.FreeM.id_map` (theorem, [line 231](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Data/PFunctor/Free.lean#L231))

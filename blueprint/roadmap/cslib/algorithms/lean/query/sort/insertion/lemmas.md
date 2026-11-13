@@ -22,9 +22,9 @@ proof: formalized
 
 ```lean
 theorem eval_orderedInsert (oracle : {ι : Type} → LEQuery α ι → ι)
-(x : α) (xs : List α) :
-(orderedInsert x xs).eval oracle =
-xs.orderedInsert (fun x y => oracle (.le x y)) x
+    (x : α) (xs : List α) :
+    (orderedInsert x xs).eval oracle =
+      xs.orderedInsert (fun x y => oracle (.le x y)) x
 ```
 
 `Cslib.Query.eval_insertionSort` (theorem, [line 44](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/Lean/Query/Sort/Insertion/Lemmas.lean#L44))
@@ -38,8 +38,8 @@ xs.orderedInsert (fun x y => oracle (.le x y)) x
 
 ```lean
 theorem eval_insertionSort (oracle : {ι : Type} → LEQuery α ι → ι) (xs : List α) :
-(insertionSort xs).eval oracle =
-xs.insertionSort (fun x y => oracle (.le x y))
+    (insertionSort xs).eval oracle =
+      xs.insertionSort (fun x y => oracle (.le x y))
 ```
 
 > ## Query count proofs

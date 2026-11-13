@@ -65,7 +65,7 @@ public lemma partialInv_isPartialInv (e : Fin k ↪ Fin k') :
 
 ```lean
 public noncomputable def extendTapes (tm : MultiTapeTM k Symbol State)
-(e : Fin k ↪ Fin k') : MultiTapeTM k' Symbol State
+    (e : Fin k ↪ Fin k') : MultiTapeTM k' Symbol State
 ```
 
 `Turing.MultiTapeTM.extendTapes_q₀` (lemma, [line 74](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/ExtendTapes.lean#L74))
@@ -82,8 +82,8 @@ public lemma extendTapes_q₀ (tm : MultiTapeTM k Symbol State) (e : Fin k ↪ F
 
 ```lean
 public def embed (e : Fin k ↪ Fin k') (cfg : Cfg k Symbol State input)
-(extraTapes : Fin k' → ℤ → Option Symbol) (extraPos : Fin k' → ℤ) :
-Cfg k' Symbol State input
+    (extraTapes : Fin k' → ℤ → Option Symbol) (extraPos : Fin k' → ℤ) :
+    Cfg k' Symbol State input
 ```
 
 `Turing.MultiTapeTM.partialInv_embed` (lemma, [line 93](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/ExtendTapes.lean#L93))
@@ -145,8 +145,8 @@ public lemma embed_workTapeSymbols_embed (e : Fin k ↪ Fin k') (cfg : Cfg k Sym
 
 ```lean
 public noncomputable def embedHom (tm : MultiTapeTM k Symbol State)
-(e : Fin k ↪ Fin k') (extraTapes : Fin k' → ℤ → Option Symbol) (extraPos : Fin k' → ℤ) :
-(tm.stepRel input).Hom ((tm.extendTapes e).stepRel input)
+    (e : Fin k ↪ Fin k') (extraTapes : Fin k' → ℤ → Option Symbol) (extraPos : Fin k' → ℤ) :
+    (tm.stepRel input).Hom ((tm.extendTapes e).stepRel input)
 ```
 
 `Turing.MultiTapeTM.space_map_embedHom_le` (lemma, [line 141](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/ExtendTapes.lean#L141))
@@ -210,7 +210,7 @@ public lemma embed_tapeEmb (i : Fin k) (cfg : Cfg 1 Symbol State input)
 
 ```lean
 public def oneTapeCfg (i : Fin k) (cfg : Cfg k Symbol State input) :
-Cfg 1 Symbol State input
+    Cfg 1 Symbol State input
 ```
 
 `Turing.MultiTapeTM.embed_oneTapeCfg` (lemma, [line 191](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/ExtendTapes.lean#L191))

@@ -32,14 +32,14 @@ def split (xs : List α) : List α × List α
 
 ```lean
 theorem split_fst_length_eq (xs : List α) :
-(split xs).1.length = (xs.length + 1) / 2
+    (split xs).1.length = (xs.length + 1) / 2
 ```
 
 `List.split_snd_length_eq` (theorem, [line 42](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/Lean/Query/Sort/Merge/Defs.lean#L42))
 
 ```lean
 theorem split_snd_length_eq (xs : List α) :
-(split xs).2.length = xs.length / 2
+    (split xs).2.length = xs.length / 2
 ```
 
 `List.split_fst_append_split_snd` (theorem, [line 47](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/Lean/Query/Sort/Merge/Defs.lean#L47))

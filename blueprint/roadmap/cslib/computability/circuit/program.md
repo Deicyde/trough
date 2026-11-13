@@ -70,7 +70,7 @@ def Line.mapInputs {inputCount' : ℕ} (f : Fin inputCount → Fin inputCount')
 
 ```lean
 theorem Line.mapInputs_id :
-(Line.mapInputs id : Line σ inputCount gateCount → Line σ inputCount gateCount) = id
+    (Line.mapInputs id : Line σ inputCount gateCount → Line σ inputCount gateCount) = id
 ```
 
 `Cslib.Circuits.Line.mapInputs_mapInputs` (theorem, [line 84](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Program.lean#L84))
@@ -96,19 +96,19 @@ def Line.mapWires
 
 ```lean
 theorem Line.mapWires_op
-(line : Line σ sourceInputCount sourceGateCount)
-(wireMap : Wire sourceInputCount sourceGateCount → Wire targetInputCount targetGateCount) :
-(line.mapWires wireMap).op = line.op
+    (line : Line σ sourceInputCount sourceGateCount)
+    (wireMap : Wire sourceInputCount sourceGateCount → Wire targetInputCount targetGateCount) :
+    (line.mapWires wireMap).op = line.op
 ```
 
 `Cslib.Circuits.Line.mapWires_wires` (theorem, [line 102](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Program.lean#L102))
 
 ```lean
 theorem Line.mapWires_wires
-(line : Line σ sourceInputCount sourceGateCount)
-(wireMap : Wire sourceInputCount sourceGateCount → Wire targetInputCount targetGateCount)
-(argument : Fin (σ.Arity line.op)) :
-(line.mapWires wireMap).wires argument = wireMap (line.wires argument)
+    (line : Line σ sourceInputCount sourceGateCount)
+    (wireMap : Wire sourceInputCount sourceGateCount → Wire targetInputCount targetGateCount)
+    (argument : Fin (σ.Arity line.op)) :
+    (line.mapWires wireMap).wires argument = wireMap (line.wires argument)
 ```
 
 `Cslib.Circuits.Program` (inductive type, [line 109](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Program.lean#L109))
@@ -155,17 +155,17 @@ def Program.foldl {gateCount : Nat} (p : Program σ inputCount gateCount)
 
 ```lean
 theorem Program.foldl_empty
-(f : ∀ {k : Nat}, α → Line σ inputCount k → α) (init : α) :
-(Program.empty : Program σ inputCount 0).foldl f init = init
+    (f : ∀ {k : Nat}, α → Line σ inputCount k → α) (init : α) :
+    (Program.empty : Program σ inputCount 0).foldl f init = init
 ```
 
 `Cslib.Circuits.Program.foldl_gate` (theorem, [line 143](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Program.lean#L143))
 
 ```lean
 theorem Program.foldl_gate (p : Program σ inputCount gateCount)
-(line : Line σ inputCount gateCount)
-(f : ∀ {k : Nat}, α → Line σ inputCount k → α) (init : α) :
-(p.gate line).foldl f init = f (p.foldl f init) line
+    (line : Line σ inputCount gateCount)
+    (f : ∀ {k : Nat}, α → Line σ inputCount k → α) (init : α) :
+    (p.gate line).foldl f init = f (p.foldl f init) line
 ```
 
 `Cslib.Circuits.Program.foldl_rel` (theorem, [line 150](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Program.lean#L150))
@@ -196,17 +196,17 @@ def Program.foldr {gateCount : Nat} (p : Program σ inputCount gateCount)
 
 ```lean
 theorem Program.foldr_empty
-(f : ∀ {k : Nat}, Line σ inputCount k → α → α) (init : α) :
-(Program.empty : Program σ inputCount 0).foldr f init = init
+    (f : ∀ {k : Nat}, Line σ inputCount k → α → α) (init : α) :
+    (Program.empty : Program σ inputCount 0).foldr f init = init
 ```
 
 `Cslib.Circuits.Program.foldr_gate` (theorem, [line 172](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Program.lean#L172))
 
 ```lean
 theorem Program.foldr_gate (p : Program σ inputCount gateCount)
-(line : Line σ inputCount gateCount)
-(f : ∀ {k : Nat}, Line σ inputCount k → α → α) (init : α) :
-(p.gate line).foldr f init = p.foldr f (f line init)
+    (line : Line σ inputCount gateCount)
+    (f : ∀ {k : Nat}, Line σ inputCount k → α → α) (init : α) :
+    (p.gate line).foldr f init = p.foldr f (f line init)
 ```
 
 `Cslib.Circuits.Program.foldr_rel` (theorem, [line 179](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Program.lean#L179))
@@ -251,8 +251,8 @@ theorem Program.mapInputs_gate {inputCount' : ℕ} (f : Fin inputCount → Fin i
 
 ```lean
 theorem Program.mapInputs_id :
-(Program.mapInputs id :
-Program σ inputCount gateCount → Program σ inputCount gateCount) = id
+    (Program.mapInputs id :
+      Program σ inputCount gateCount → Program σ inputCount gateCount) = id
 ```
 
 `Cslib.Circuits.Program.mapInputs_mapInputs` (theorem, [line 215](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Program.lean#L215))
@@ -320,9 +320,9 @@ theorem Line.eval_mapWires
 
 ```lean
 theorem Line.eval_mapInputs {inputCount' : ℕ}
-(line : Line σ inputCount gateCount) (f : Fin inputCount → Fin inputCount')
-(i : Interpretation σ U) (inputs : Fin inputCount' → U) (gates : Fin gateCount → U) :
-(line.mapInputs f).eval i inputs gates = line.eval i (inputs ∘ f) gates
+    (line : Line σ inputCount gateCount) (f : Fin inputCount → Fin inputCount')
+    (i : Interpretation σ U) (inputs : Fin inputCount' → U) (gates : Fin gateCount → U) :
+    (line.mapInputs f).eval i inputs gates = line.eval i (inputs ∘ f) gates
 ```
 
 `Cslib.Circuits.Line.eval_mapRenaming` (theorem, [line 275](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Program.lean#L275))
@@ -383,25 +383,25 @@ def Program.eval {gateCount : Nat}
 
 ```lean
 theorem Program.eval_gate_last
-(program : Program σ inputCount gateCount)
-(line : Line σ inputCount gateCount)
-(interpretation : Interpretation σ U)
-(input : Fin inputCount → U) :
-(program.gate line).eval interpretation input (Fin.last gateCount) =
-line.eval interpretation input (program.eval interpretation input)
+    (program : Program σ inputCount gateCount)
+    (line : Line σ inputCount gateCount)
+    (interpretation : Interpretation σ U)
+    (input : Fin inputCount → U) :
+    (program.gate line).eval interpretation input (Fin.last gateCount) =
+      line.eval interpretation input (program.eval interpretation input)
 ```
 
 `Cslib.Circuits.Program.eval_gate_castSucc` (theorem, [line 331](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Program.lean#L331))
 
 ```lean
 theorem Program.eval_gate_castSucc
-(program : Program σ inputCount gateCount)
-(line : Line σ inputCount gateCount)
-(interpretation : Interpretation σ U)
-(input : Fin inputCount → U)
-(gate : Fin gateCount) :
-(program.gate line).eval interpretation input gate.castSucc =
-program.eval interpretation input gate
+    (program : Program σ inputCount gateCount)
+    (line : Line σ inputCount gateCount)
+    (interpretation : Interpretation σ U)
+    (input : Fin inputCount → U)
+    (gate : Fin gateCount) :
+    (program.gate line).eval interpretation input gate.castSucc =
+      program.eval interpretation input gate
 ```
 
 `Cslib.Circuits.Program.eval_mapInputs` (theorem, [line 342](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Program.lean#L342))
@@ -410,9 +410,9 @@ program.eval interpretation input gate
 
 ```lean
 theorem Program.eval_mapInputs {inputCount' : ℕ}
-(program : Program σ inputCount gateCount) (f : Fin inputCount → Fin inputCount')
-(i : Interpretation σ U) (inputs : Fin inputCount' → U) :
-(program.mapInputs f).eval i inputs = program.eval i (inputs ∘ f)
+    (program : Program σ inputCount gateCount) (f : Fin inputCount → Fin inputCount')
+    (i : Interpretation σ U) (inputs : Fin inputCount' → U) :
+    (program.mapInputs f).eval i inputs = program.eval i (inputs ∘ f)
 ```
 
 `Cslib.Circuits.Program.depths` (definition, [line 352](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Program.lean#L352))
@@ -468,25 +468,25 @@ def Program.trace
 
 ```lean
 theorem Program.trace_input
-(program : Program σ inputCount gateCount)
-(interpretation : Interpretation σ U)
-(input : Fin inputCount → U)
-(sourceInput : Fin inputCount) :
-program.trace interpretation input (Wire.input sourceInput) =
-input sourceInput
+    (program : Program σ inputCount gateCount)
+    (interpretation : Interpretation σ U)
+    (input : Fin inputCount → U)
+    (sourceInput : Fin inputCount) :
+    program.trace interpretation input (Wire.input sourceInput) =
+      input sourceInput
 ```
 
 `Cslib.Circuits.Program.trace_gate_castSucc` (theorem, [line 397](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Program.lean#L397))
 
 ```lean
 theorem Program.trace_gate_castSucc
-(program : Program σ inputCount gateCount)
-(line : Line σ inputCount gateCount)
-(interpretation : Interpretation σ U)
-(input : Fin inputCount → U)
-(wire : Wire inputCount gateCount) :
-(program.gate line).trace interpretation input wire.castSucc =
-program.trace interpretation input wire
+    (program : Program σ inputCount gateCount)
+    (line : Line σ inputCount gateCount)
+    (interpretation : Interpretation σ U)
+    (input : Fin inputCount → U)
+    (wire : Wire inputCount gateCount) :
+    (program.gate line).trace interpretation input wire.castSucc =
+      program.trace interpretation input wire
 ```
 
 `Cslib.Circuits.supportInterpretation` (definition, [line 408](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Program.lean#L408))
@@ -513,11 +513,11 @@ def Line.inputSupport
 
 ```lean
 theorem Line.mem_inputSupport
-{line : Line σ inputCount gateCount}
-{wireSupport : Wire inputCount gateCount → Finset (Fin inputCount)}
-{input : Fin inputCount} :
-input ∈ line.inputSupport wireSupport ↔
-∃ argument, input ∈ wireSupport (line.wires argument)
+    {line : Line σ inputCount gateCount}
+    {wireSupport : Wire inputCount gateCount → Finset (Fin inputCount)}
+    {input : Fin inputCount} :
+    input ∈ line.inputSupport wireSupport ↔
+      ∃ argument, input ∈ wireSupport (line.wires argument)
 ```
 
 `Cslib.Circuits.Program.wireSupport` (definition, [line 428](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Program.lean#L428))
@@ -534,29 +534,29 @@ def Program.wireSupport
 
 ```lean
 theorem Program.wireSupport_input
-(program : Program σ inputCount gateCount)
-(input : Fin inputCount) :
-program.wireSupport (.input input) = {input}
+    (program : Program σ inputCount gateCount)
+    (input : Fin inputCount) :
+    program.wireSupport (.input input) = {input}
 ```
 
 `Cslib.Circuits.Program.wireSupport_gate_castSucc` (theorem, [line 439](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Program.lean#L439))
 
 ```lean
 theorem Program.wireSupport_gate_castSucc
-(program : Program σ inputCount gateCount)
-(line : Line σ inputCount gateCount)
-(wire : Wire inputCount gateCount) :
-(program.gate line).wireSupport wire.castSucc = program.wireSupport wire
+    (program : Program σ inputCount gateCount)
+    (line : Line σ inputCount gateCount)
+    (wire : Wire inputCount gateCount) :
+    (program.gate line).wireSupport wire.castSucc = program.wireSupport wire
 ```
 
 `Cslib.Circuits.Program.wireSupport_gate_last` (theorem, [line 447](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Program.lean#L447))
 
 ```lean
 theorem Program.wireSupport_gate_last
-(program : Program σ inputCount gateCount)
-(line : Line σ inputCount gateCount) :
-(program.gate line).wireSupport (.gate (Fin.last gateCount)) =
-line.inputSupport program.wireSupport
+    (program : Program σ inputCount gateCount)
+    (line : Line σ inputCount gateCount) :
+    (program.gate line).wireSupport (.gate (Fin.last gateCount)) =
+      line.inputSupport program.wireSupport
 ```
 
 `Cslib.Circuits.Program.trace_congr` (theorem, [line 460](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Program.lean#L460))
@@ -616,70 +616,70 @@ def Program.wireFunction
 
 ```lean
 theorem Program.gateFunction_apply
-(program : Program σ inputCount gateCount)
-(interpretation : Interpretation σ U)
-(gate : Fin gateCount)
-(input : Fin inputCount → U) :
-program.gateFunction interpretation gate input =
-program.eval interpretation input gate
+    (program : Program σ inputCount gateCount)
+    (interpretation : Interpretation σ U)
+    (gate : Fin gateCount)
+    (input : Fin inputCount → U) :
+    program.gateFunction interpretation gate input =
+      program.eval interpretation input gate
 ```
 
 `Cslib.Circuits.Program.wireFunction_input` (theorem, [line 529](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Program.lean#L529))
 
 ```lean
 theorem Program.wireFunction_input
-(program : Program σ inputCount gateCount)
-(interpretation : Interpretation σ U)
-(inputWire : Fin inputCount) :
-program.wireFunction interpretation (Wire.input inputWire) =
-fun input => input inputWire
+    (program : Program σ inputCount gateCount)
+    (interpretation : Interpretation σ U)
+    (inputWire : Fin inputCount) :
+    program.wireFunction interpretation (Wire.input inputWire) =
+      fun input => input inputWire
 ```
 
 `Cslib.Circuits.Program.wireFunction_gate` (theorem, [line 536](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Program.lean#L536))
 
 ```lean
 theorem Program.wireFunction_gate
-(program : Program σ inputCount gateCount)
-(interpretation : Interpretation σ U)
-(gate : Fin gateCount) :
-program.wireFunction interpretation (Wire.gate gate) =
-program.gateFunction interpretation gate
+    (program : Program σ inputCount gateCount)
+    (interpretation : Interpretation σ U)
+    (gate : Fin gateCount) :
+    program.wireFunction interpretation (Wire.gate gate) =
+      program.gateFunction interpretation gate
 ```
 
 `Cslib.Circuits.Program.gateFunction_gate_last` (theorem, [line 543](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Program.lean#L543))
 
 ```lean
 theorem Program.gateFunction_gate_last
-(program : Program σ inputCount gateCount)
-(line : Line σ inputCount gateCount)
-(interpretation : Interpretation σ U) :
-(program.gate line).gateFunction interpretation (Fin.last gateCount) =
-fun input => line.eval interpretation input
-(program.eval interpretation input)
+    (program : Program σ inputCount gateCount)
+    (line : Line σ inputCount gateCount)
+    (interpretation : Interpretation σ U) :
+    (program.gate line).gateFunction interpretation (Fin.last gateCount) =
+      fun input => line.eval interpretation input
+        (program.eval interpretation input)
 ```
 
 `Cslib.Circuits.Program.gateFunction_gate_castSucc` (theorem, [line 553](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Program.lean#L553))
 
 ```lean
 theorem Program.gateFunction_gate_castSucc
-(program : Program σ inputCount gateCount)
-(line : Line σ inputCount gateCount)
-(interpretation : Interpretation σ U)
-(gate : Fin gateCount) :
-(program.gate line).gateFunction interpretation gate.castSucc =
-program.gateFunction interpretation gate
+    (program : Program σ inputCount gateCount)
+    (line : Line σ inputCount gateCount)
+    (interpretation : Interpretation σ U)
+    (gate : Fin gateCount) :
+    (program.gate line).gateFunction interpretation gate.castSucc =
+      program.gateFunction interpretation gate
 ```
 
 `Cslib.Circuits.Program.trace_gateWire` (theorem, [line 563](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Program.lean#L563))
 
 ```lean
 theorem Program.trace_gateWire
-(program : Program σ inputCount gateCount)
-(interpretation : Interpretation σ U)
-(input : Fin inputCount → U)
-(gate : Fin gateCount) :
-program.trace interpretation input (Wire.gate gate) =
-program.gateFunction interpretation gate input
+    (program : Program σ inputCount gateCount)
+    (interpretation : Interpretation σ U)
+    (input : Fin inputCount → U)
+    (gate : Fin gateCount) :
+    program.trace interpretation input (Wire.gate gate) =
+      program.gateFunction interpretation gate input
 ```
 
 `Cslib.Circuits.Program.lines` (definition, [line 572](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Program.lean#L572))
@@ -695,21 +695,21 @@ def Program.lines {gateCount : Nat} :
 
 ```lean
 theorem Program.lines_gate_last
-(program : Program σ inputCount gateCount)
-(line : Line σ inputCount gateCount) :
-(program.gate line).lines (Fin.last gateCount) =
-line.mapWires Wire.Renaming.castSucc
+    (program : Program σ inputCount gateCount)
+    (line : Line σ inputCount gateCount) :
+    (program.gate line).lines (Fin.last gateCount) =
+      line.mapWires Wire.Renaming.castSucc
 ```
 
 `Cslib.Circuits.Program.lines_gate_castSucc` (theorem, [line 587](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Program.lean#L587))
 
 ```lean
 theorem Program.lines_gate_castSucc
-(program : Program σ inputCount gateCount)
-(line : Line σ inputCount gateCount)
-(gate : Fin gateCount) :
-(program.gate line).lines gate.castSucc =
-(program.lines gate).mapWires Wire.Renaming.castSucc
+    (program : Program σ inputCount gateCount)
+    (line : Line σ inputCount gateCount)
+    (gate : Fin gateCount) :
+    (program.gate line).lines gate.castSucc =
+      (program.lines gate).mapWires Wire.Renaming.castSucc
 ```
 
 `Cslib.Circuits.Program.lines_eval` (theorem, [line 596](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Program.lean#L596))

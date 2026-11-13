@@ -5,7 +5,7 @@ statement: formalized
 proof: formalized
 ---
 
-# StrongNorm
+# Stlc/StrongNorm
 
 `Cslib.Languages.LambdaCalculus.LocallyNameless.Stlc.StrongNorm`, in [Cslib/Languages/LambdaCalculus/LocallyNameless/Stlc/StrongNorm.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/LambdaCalculus/LocallyNameless/Stlc/StrongNorm.lean), by David Wegmann.
 
@@ -110,9 +110,9 @@ theorem strong_norm {t : Term Var} {τ : Ty Base} (der : Γ ⊢ t ∶ τ) : SN F
 
 ## Depends on
 
-- [λ-calculus (Basic)](basic.md)
+- [λ-calculus (Stlc/Basic)](basic.md)
 - [MultiSubst](../untyped/multisubst.md)
-- [StrongNorm](../untyped/strongnorm.md)
+- [Untyped/StrongNorm](../untyped/strongnorm.md)
 
 ## Sources
 

@@ -19,7 +19,7 @@ proof: formalized
 > We also show the distinction with HML: only the deterministic machine offers the choice of drink
 > after a coin is inserted.
 >
-> Future work on proving that the two vending machines are trace equivalent would be welcome.
+> …
 
 > Action names.
 

@@ -2,7 +2,7 @@
 
 8 modules under `Cslib/Computability/Distributed/FLP/`, with 116 public declarations.
 
-Its README opens:
+Its [README](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Distributed/FLP/README.md) opens:
 
 > This directory contains a formalization of Völzer's proof [Volzer2004] of the famous result in
 > distributed computing, first proved by Fischer, Lynch and Paterson [FLP1985], that asynchronous

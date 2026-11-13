@@ -88,7 +88,7 @@ def equiv (k : ℕ) (U : Type*) : FullOp k U ≃ (((Fin k → U) → U) ⊕ U)
 
 ```lean
 theorem card (k : ℕ) (U : Type*) [Finite U] :
-Nat.card (FullOp k U) = Nat.card U ^ (Nat.card U ^ k) + Nat.card U
+    Nat.card (FullOp k U) = Nat.card U ^ (Nat.card U ^ k) + Nat.card U
 ```
 
 `Cslib.Circuits.Line.card_full` (theorem, [line 111](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Circuit/Finite.lean#L111))

@@ -1,6 +1,6 @@
 ---
 catalog: module
-lean: Turing.MultiTapeTM.RewindState, Turing.MultiTapeTM.inputAction, Turing.MultiTapeTM.rewindInput, Turing.MultiTapeTM.Rewind.step_eq, Turing.MultiTapeTM.Rewind.runFrom_walk, Turing.MultiTapeTM.runFrom_rewindInput
+lean: Turing.MultiTapeTM.RewindState, Turing.MultiTapeTM.rewindInput, Turing.MultiTapeTM.runFrom_rewindInput
 statement: formalized
 proof: formalized
 ---
@@ -42,15 +42,6 @@ public inductive RewindState : Type
   deriving DecidableEq
 ```
 
-`Turing.MultiTapeTM.inputAction` (abbreviation, [line 51](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RewindInput.lean#L51))
-
-> The only kind of action the rewinding machine takes: move the input head by `m` and enter
-> `state`, without output.
-
-```lean
-abbrev inputAction (m : SignType) (state : Option RewindState) : Action 0 Symbol RewindState
-```
-
 `Turing.MultiTapeTM.rewindInput` (definition, [line 57](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RewindInput.lean#L57))
 
 > The rewinding machine. In state `start` it moves the input head left, unconditionally, and
@@ -59,28 +50,6 @@ abbrev inputAction (m : SignType) (state : Option RewindState) : Action 0 Symbol
 
 ```lean
 public def rewindInput (Symbol : Type*) : MultiTapeTM 0 Symbol RewindState
-```
-
-`Turing.MultiTapeTM.Rewind.step_eq` (lemma, [line 69](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RewindInput.lean#L69))
-
-> A live step moves the input head and changes the state; nothing else changes.
-
-```lean
-lemma step_eq {c : Cfg 0 Symbol RewindState input} {q : RewindState} (hc : c.state = some q) :
-    (rewindInput Symbol).step c =
-      let a := (rewindInput Symbol).tr q c.inputSymbol c.workTapeSymbols
-      ⟨a.state, moveInputPos c.inputPos a.inputTape, c.workTapes, c.workTapePos, c.output⟩
-```
-
-`Turing.MultiTapeTM.Rewind.runFrom_walk` (lemma, [line 80](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RewindInput.lean#L80))
-
-> From `walk` at position `p ≤ input.length` the machine halts with the input head at position `1`
-> after `p + 1` steps.
-
-```lean
-lemma runFrom_walk (p : Fin (input.length + 2)) (hp : p.val ≤ input.length) :
-    (rewindInput Symbol).runFrom ⟨some .walk, p, tapes, heads, out⟩ (p.val + 1) =
-      ⟨none, 1, tapes, heads, out⟩
 ```
 
 `Turing.MultiTapeTM.runFrom_rewindInput` (theorem, [line 99](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RewindInput.lean#L99))

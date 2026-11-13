@@ -52,7 +52,7 @@ Trough reads these sources. The catalog of libraries is `catalog/libraries.toml`
 
 ## CSLib
 
-- `data/cslib/library.json`: each module's title, docstrings and authors, and its public declarations with their kinds, lines, docstrings and Lean statements, read from the source text without Lean, with the opening of each folder's README, the README's description and the maintainers GOVERNANCE.md names, from [leanprover/cslib at 86d560b6](https://github.com/leanprover/cslib/tree/86d560b6cbb379bd82512424cbcd2a915a1565e7), Apache-2.0. `data/cslib/deps.json`: the modules each module's statements and proofs use, written by `lean/cslib/CslibDeps.lean` in GitHub Actions. `data/cslib/source.json` records the commit, its Lean toolchain and Mathlib.
+- `data/cslib/library.json`: each module's title, docstrings and authors, and its public declarations with their kinds, lines, docstrings and Lean statements, read from the source text without Lean, with the opening of each folder's README, the README's description and the maintainers GOVERNANCE.md names, from [leanprover/cslib at 86d560b6](https://github.com/leanprover/cslib/tree/86d560b6cbb379bd82512424cbcd2a915a1565e7), Apache-2.0. `data/cslib/deps.json`: the modules each module's statements and proofs use, and the names read from the source that Lean has only as private declarations or not at all, written by `lean/cslib/CslibDeps.lean` in GitHub Actions. `data/cslib/source.json` records the commit, its Lean toolchain and Mathlib.
 
 ## Libraries
 

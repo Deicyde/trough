@@ -2,7 +2,7 @@
 
 20 modules under `Cslib/Logics/`, with 502 public declarations.
 
-Its README opens:
+Its [README](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Logics/README.md) opens:
 
 > CSLib offers **formal logics** for defining specifications and reasoning about programs and systems. Each subdirectory focuses on a specific logic or framework.
 

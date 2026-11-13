@@ -23,8 +23,6 @@ proof: formalized
 class HasAnd (α : Type*) where
   /-- `a ∧ b` is the conjunction of `a` and `b`. -/
   and (a b : α) : α
-
-@[inherit_doc] scoped infixr:36 " ∧ " => HasAnd.and
 ```
 
 `Cslib.Logic.HasOr` (class, [line 35](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Logic/Operators.lean#L35))
@@ -35,8 +33,6 @@ class HasAnd (α : Type*) where
 class HasOr (α : Type*) where
   /-- `a ∨ b` is the disjunction of `a` and `b`. -/
   or (a b : α) : α
-
-@[inherit_doc] scoped infixr:30 " ∨ " => HasOr.or
 ```
 
 `Cslib.Logic.finiteAnd` (definition, [line 42](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Logic/Operators.lean#L42))
@@ -89,8 +85,6 @@ theorem finiteOr_cons [HasOr α] [Bot α] (a : α) (as : List α) :
 class HasImp (α : Type*) where
   /-- `a → b` denotes `a` implies `b`. -/
   imp (a b : α) : α
-
-@[inherit_doc] scoped infixr:25 " → " => HasImp.imp
 ```
 
 `Cslib.Logic.HasIff` (class, [line 73](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Logic/Operators.lean#L73))
@@ -101,8 +95,6 @@ class HasImp (α : Type*) where
 class HasIff (α : Type*) where
   /-- `a ↔ b` denotes `a` implies `b` and vice-versa. -/
   iff (a b : α) : α
-
-@[inherit_doc] scoped infixr:20 " ↔ " => HasIff.iff
 ```
 
 `Cslib.Logic.HasNot` (class, [line 80](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Logic/Operators.lean#L80))
@@ -113,8 +105,6 @@ class HasIff (α : Type*) where
 class HasNot (α : Type*) where
   /-- `¬a` is the negation of `a`. -/
   not (a : α) : α
-
-@[inherit_doc] scoped notation:max "¬" p:40 => HasNot.not p
 ```
 
 > ## General modalities from modal similarity types (polynomial functors)
@@ -128,8 +118,6 @@ class HasTriangle (α : Type*) (τ : outParam PFunctor) where
   /-- `Δ[op](φ₁, ..., φₙ)` means that `φ₁`, ..., `φₙ` are valid at some respective related states.
   -/
   triangle (op : τ.A) (arg : τ.B op → α) : α
-
-@[inherit_doc] scoped notation:50 "Δ[" op "]" arg:max => HasTriangle.triangle op arg
 ```
 
 `Cslib.Logic.HasNabla` (class, [line 101](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Logic/Operators.lean#L101))
@@ -140,14 +128,12 @@ class HasTriangle (α : Type*) (τ : outParam PFunctor) where
 class HasNabla (α : Type*) (τ : outParam PFunctor) where
   /-- `∇[op](φ₁, ..., φₙ)` means that `φ₁`, ..., `φₙ` are valid at all respective related states. -/
   nabla (op : τ.A) (arg : τ.B op → α) : α
-
-@[inherit_doc] scoped notation:50 "∇[" op "]" arg:max => HasNabla.nabla op arg
 ```
 
 > ## Dynamic modalities
 >
 > Here we need to use the prefix `d` to distinguish our notation from the normal `[·]` and `⟨·⟩`.
-> A refactoring that makes this unnecessary would be welcome.
+> …
 
 `Cslib.Logic.HasDynamicDiamond` (class, [line 118](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Logic/Operators.lean#L118))
 
@@ -157,8 +143,6 @@ class HasNabla (α : Type*) (τ : outParam PFunctor) where
 class HasDynamicDiamond (α : Type*) (β : outParam Type*) where
   /-- `b` is possibly valid after `a`. -/
   dynDiamond (a : β) (b : α) : α
-
-@[inherit_doc] scoped notation "d⟨" a "⟩" φ:max => HasDynamicDiamond.dynDiamond a φ
 ```
 
 `Cslib.Logic.HasDynamicBox` (class, [line 125](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Logic/Operators.lean#L125))
@@ -169,8 +153,6 @@ class HasDynamicDiamond (α : Type*) (β : outParam Type*) where
 class HasDynamicBox (α : Type*) (β : outParam Type*) where
   /-- `b` is necessarily valid after `a`. -/
   dynBox (a : β) (b : α) : α
-
-@[inherit_doc] scoped notation "d[" a "]" φ:max => HasDynamicBox.dynBox a φ
 ```
 
 `Cslib.Logic.dynDiamond_eq_triangle` (theorem, [line 137](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Logic/Operators.lean#L137))
@@ -197,8 +179,6 @@ theorem dynBox_eq_nabla [HasNabla α τ] (op : τ.A) (φ : α) :
 class HasBox (α : Type*) where
   /-- `a` is valid in all immediately reachable states. -/
   box (a : α) : α
-
-@[inherit_doc] scoped prefix:40 "□" => HasBox.box
 ```
 
 `Cslib.Logic.HasDiamond` (class, [line 163](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Logic/Operators.lean#L163))
@@ -209,8 +189,6 @@ class HasBox (α : Type*) where
 class HasDiamond (α : Type*) where
   /-- `a` is valid in a reachable state. -/
   diamond (a : α) : α
-
-@[inherit_doc] scoped prefix:40 "◇" => HasDiamond.diamond
 ```
 
 `Cslib.Logic.diamond_eq_dynDiamond` (theorem, [line 174](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Foundations/Logic/Operators.lean#L174))
@@ -237,8 +215,6 @@ theorem box_eq_dynBox [Unique β] [HasDynamicBox α β] {φ : α} :
 class HasTensor (α : Type*) where
   /-- `a ⊗ b` is the multiplicative conjunction of `a` and `b`. -/
   tensor (a b : α) : α
-
-@[inherit_doc] scoped infixr:35 " ⊗ " => HasTensor.tensor
 ```
 
 ## Depends on

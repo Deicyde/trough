@@ -84,7 +84,7 @@ def eval (oracle : {ι : Type u} → F ι → ι) (p : FreeM F α) : α
 
 ```lean
 def cost {T : Type t} [AddMonoid T] (oracle : {ι : Type u} → F ι → ι)
-(weight : {ι : Type u} → F ι → T) (p : FreeM F α) : T
+    (weight : {ι : Type u} → F ι → T) (p : FreeM F α) : T
 ```
 
 `Cslib.FreeM.countQueries` (definition, [line 101](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/Lean/Query/FreeM.lean#L101))
@@ -104,38 +104,38 @@ def countQueries (oracle : {ι : Type u} → F ι → ι) (p : FreeM F α) : Nat
 
 ```lean
 theorem eval_pure (oracle : {ι : Type u} → F ι → ι) (a : α) :
-eval oracle (pure a : FreeM F α) = a
+    eval oracle (pure a : FreeM F α) = a
 ```
 
 `Cslib.FreeM.eval_liftBind` (theorem, [line 109](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/Lean/Query/FreeM.lean#L109))
 
 ```lean
 theorem eval_liftBind (oracle : {ι : Type u} → F ι → ι)
-{ι : Type u} (op : F ι) (cont : ι → FreeM F α) :
-eval oracle (FreeM.lift op >>= cont) = eval oracle (cont (oracle op))
+    {ι : Type u} (op : F ι) (cont : ι → FreeM F α) :
+    eval oracle (FreeM.lift op >>= cont) = eval oracle (cont (oracle op))
 ```
 
 `Cslib.FreeM.eval_lift` (theorem, [line 113](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/Lean/Query/FreeM.lean#L113))
 
 ```lean
 theorem eval_lift (oracle : {ι : Type u} → F ι → ι) {ι : Type u} (op : F ι) :
-eval oracle (FreeM.lift op) = oracle op
+    eval oracle (FreeM.lift op) = oracle op
 ```
 
 `Cslib.FreeM.eval_bind` (theorem, [line 116](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/Lean/Query/FreeM.lean#L116))
 
 ```lean
 theorem eval_bind (oracle : {ι : Type u} → F ι → ι)
-(t : FreeM F α) (f : α → FreeM F β) :
-eval oracle (t >>= f) = eval oracle (f (eval oracle t))
+    (t : FreeM F α) (f : α → FreeM F β) :
+    eval oracle (t >>= f) = eval oracle (f (eval oracle t))
 ```
 
 `Cslib.FreeM.eval_map` (theorem, [line 121](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/Lean/Query/FreeM.lean#L121))
 
 ```lean
 theorem eval_map (oracle : {ι : Type u} → F ι → ι)
-(t : FreeM F α) (f : α → β) :
-eval oracle (f <$> t) = f (eval oracle t)
+    (t : FreeM F α) (f : α → β) :
+    eval oracle (f <$> t) = f (eval oracle t)
 ```
 
 `Cslib.FreeM.isMonadHom_pure_eval` (theorem, [line 126](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/Lean/Query/FreeM.lean#L126))
@@ -151,45 +151,45 @@ theorem isMonadHom_pure_eval (oracle : {ι : Type u} → F ι → ι) :
 
 ```lean
 theorem cost_pure {T : Type t} [AddMonoid T] (oracle : {ι : Type u} → F ι → ι)
-(weight : {ι : Type u} → F ι → T) (a : α) :
-cost oracle weight (pure a : FreeM F α) = 0
+    (weight : {ι : Type u} → F ι → T) (a : α) :
+    cost oracle weight (pure a : FreeM F α) = 0
 ```
 
 `Cslib.FreeM.cost_liftBind` (theorem, [line 136](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/Lean/Query/FreeM.lean#L136))
 
 ```lean
 theorem cost_liftBind {T : Type t} [AddMonoid T]
-(oracle : {ι : Type u} → F ι → ι) (weight : {ι : Type u} → F ι → T)
-{ι : Type u} (op : F ι) (cont : ι → FreeM F α) :
-cost oracle weight (FreeM.lift op >>= cont) =
-weight op + cost oracle weight (cont (oracle op))
+    (oracle : {ι : Type u} → F ι → ι) (weight : {ι : Type u} → F ι → T)
+    {ι : Type u} (op : F ι) (cont : ι → FreeM F α) :
+    cost oracle weight (FreeM.lift op >>= cont) =
+      weight op + cost oracle weight (cont (oracle op))
 ```
 
 `Cslib.FreeM.cost_lift` (theorem, [line 142](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/Lean/Query/FreeM.lean#L142))
 
 ```lean
 theorem cost_lift {T : Type t} [AddMonoid T]
-(oracle : {ι : Type u} → F ι → ι) (weight : {ι : Type u} → F ι → T)
-{ι : Type u} (op : F ι) :
-cost oracle weight (FreeM.lift op) = weight op
+    (oracle : {ι : Type u} → F ι → ι) (weight : {ι : Type u} → F ι → T)
+    {ι : Type u} (op : F ι) :
+    cost oracle weight (FreeM.lift op) = weight op
 ```
 
 `Cslib.FreeM.cost_bind` (theorem, [line 148](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/Lean/Query/FreeM.lean#L148))
 
 ```lean
 theorem cost_bind {T : Type t} [AddMonoid T] (oracle : {ι : Type u} → F ι → ι)
-(weight : {ι : Type u} → F ι → T) (t : FreeM F α) (f : α → FreeM F β) :
-cost oracle weight (t >>= f) =
-cost oracle weight t + cost oracle weight (f (eval oracle t))
+    (weight : {ι : Type u} → F ι → T) (t : FreeM F α) (f : α → FreeM F β) :
+    cost oracle weight (t >>= f) =
+      cost oracle weight t + cost oracle weight (f (eval oracle t))
 ```
 
 `Cslib.FreeM.cost_map` (theorem, [line 154](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/Lean/Query/FreeM.lean#L154))
 
 ```lean
 theorem cost_map {T : Type t} [AddMonoid T]
-(oracle : {ι : Type u} → F ι → ι) (weight : {ι : Type u} → F ι → T)
-(t : FreeM F α) (f : α → β) :
-cost oracle weight (f <$> t) = cost oracle weight t
+    (oracle : {ι : Type u} → F ι → ι) (weight : {ι : Type u} → F ι → T)
+    (t : FreeM F α) (f : α → β) :
+    cost oracle weight (f <$> t) = cost oracle weight t
 ```
 
 > ### Simp lemmas for `countQueries`
@@ -198,41 +198,41 @@ cost oracle weight (f <$> t) = cost oracle weight t
 
 ```lean
 theorem countQueries_pure (oracle : {ι : Type u} → F ι → ι) (a : α) :
-countQueries oracle (pure a : FreeM F α) = 0
+    countQueries oracle (pure a : FreeM F α) = 0
 ```
 
 `Cslib.FreeM.countQueries_liftBind` (theorem, [line 165](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/Lean/Query/FreeM.lean#L165))
 
 ```lean
 theorem countQueries_liftBind (oracle : {ι : Type u} → F ι → ι)
-{ι : Type u} (op : F ι) (cont : ι → FreeM F α) :
-countQueries oracle (FreeM.lift op >>= cont) =
-1 + countQueries oracle (cont (oracle op))
+    {ι : Type u} (op : F ι) (cont : ι → FreeM F α) :
+    countQueries oracle (FreeM.lift op >>= cont) =
+      1 + countQueries oracle (cont (oracle op))
 ```
 
 `Cslib.FreeM.countQueries_lift` (theorem, [line 170](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/Lean/Query/FreeM.lean#L170))
 
 ```lean
 theorem countQueries_lift (oracle : {ι : Type u} → F ι → ι)
-{ι : Type u} (op : F ι) :
-countQueries oracle (FreeM.lift op) = 1
+    {ι : Type u} (op : F ι) :
+    countQueries oracle (FreeM.lift op) = 1
 ```
 
 `Cslib.FreeM.countQueries_bind` (theorem, [line 175](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/Lean/Query/FreeM.lean#L175))
 
 ```lean
 theorem countQueries_bind (oracle : {ι : Type u} → F ι → ι)
-(t : FreeM F α) (f : α → FreeM F β) :
-countQueries oracle (t >>= f) =
-countQueries oracle t + countQueries oracle (f (eval oracle t))
+    (t : FreeM F α) (f : α → FreeM F β) :
+    countQueries oracle (t >>= f) =
+      countQueries oracle t + countQueries oracle (f (eval oracle t))
 ```
 
 `Cslib.FreeM.countQueries_map` (theorem, [line 181](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/Lean/Query/FreeM.lean#L181))
 
 ```lean
 theorem countQueries_map (oracle : {ι : Type u} → F ι → ι)
-(t : FreeM F α) (f : α → β) :
-countQueries oracle (f <$> t) = countQueries oracle t
+    (t : FreeM F α) (f : α → β) :
+    countQueries oracle (f <$> t) = countQueries oracle t
 ```
 
 `Cslib.FreeM.countQueries_eq_cost_one` (theorem, [line 186](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Algorithms/Lean/Query/FreeM.lean#L186))

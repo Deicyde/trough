@@ -1,6 +1,6 @@
 ---
 catalog: module
-lean: Turing.MultiTapeTM.RewindWorkState, Turing.MultiTapeTM.rewindWork, Turing.MultiTapeTM.RewindWork.step_start, Turing.MultiTapeTM.RewindWork.step_scan_some, Turing.MultiTapeTM.RewindWork.step_scan_none, Turing.MultiTapeTM.RewindWork.runFrom_scan, Turing.MultiTapeTM.runFrom_rewindWork, Turing.MultiTapeTM.runFrom_rewindWork_none, Turing.MultiTapeTM.runFrom_rewindWork_erase, Turing.MultiTapeTM.workTapePos_runFrom_rewindWork
+lean: Turing.MultiTapeTM.RewindWorkState, Turing.MultiTapeTM.rewindWork, Turing.MultiTapeTM.runFrom_rewindWork, Turing.MultiTapeTM.runFrom_rewindWork_none, Turing.MultiTapeTM.runFrom_rewindWork_erase, Turing.MultiTapeTM.workTapePos_runFrom_rewindWork
 statement: formalized
 proof: formalized
 ---
@@ -55,52 +55,6 @@ public inductive RewindWorkState : Type
 ```lean
 public def rewindWork (Symbol : Type*) (write : Option (Option Symbol) := none) :
     MultiTapeTM 1 Symbol RewindWorkState
-```
-
-`Turing.MultiTapeTM.RewindWork.step_start` (lemma, [line 71](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RewindWork.lean#L71))
-
-> Moving the head left in state `start`, unconditionally, entering `scan`.
-
-```lean
-lemma step_start :
-    (rewindWork Symbol write).step ⟨some .start, ip, fun _ => t, fun _ => p, out⟩ =
-      ⟨some .scan, ip, fun _ => t, fun _ => p - 1, out⟩
-```
-
-`Turing.MultiTapeTM.RewindWork.step_scan_some` (lemma, [line 79](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RewindWork.lean#L79))
-
-> Walking left in state `scan`: over a symbol the machine writes `write` and the head moves left,
-> staying in `scan`.
-
-```lean
-lemma step_scan_some {s : Symbol} (hs : t p = some s) :
-    (rewindWork Symbol write).step ⟨some .scan, ip, fun _ => t, fun _ => p, out⟩ =
-      ⟨some .scan, ip, fun _ => write.elim t (Function.update t p), fun _ => p - 1, out⟩
-```
-
-`Turing.MultiTapeTM.RewindWork.step_scan_none` (lemma, [line 87](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RewindWork.lean#L87))
-
-> Halting in state `scan`: on the first blank — the cell at position `-1` — the head moves right
-> and the machine halts.
-
-```lean
-lemma step_scan_none (hs : t p = none) :
-    (rewindWork Symbol write).step ⟨some .scan, ip, fun _ => t, fun _ => p, out⟩ =
-      ⟨none, ip, fun _ => t, fun _ => p + 1, out⟩
-```
-
-`Turing.MultiTapeTM.RewindWork.runFrom_scan` (lemma, [line 95](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RewindWork.lean#L95))
-
-> The scanning phase: from `scan` at cell `l - 1` of the word, after `n ≤ l` steps the head has
-> walked left `n` cells, writing `write` to the cells it left.
-
-```lean
-lemma runFrom_scan {w : List Symbol} (hw : t = tapeOfList w) {l : ℕ} (hl : l ≤ w.length) (n : ℕ)
-    (hn : n ≤ l) :
-    (rewindWork Symbol write).runFrom
-        ⟨some .scan, ip, fun _ => t, fun _ => (l : ℤ) - 1, out⟩ n =
-      ⟨some .scan, ip, fun _ z => if (l : ℤ) - n ≤ z ∧ z < l then write.getD (t z) else t z,
-        fun _ => (l : ℤ) - 1 - n, out⟩
 ```
 
 `Turing.MultiTapeTM.runFrom_rewindWork` (theorem, [line 128](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Computability/Machines/Turing/MultiTape/Plumbing/RewindWork.lean#L128))

@@ -5,7 +5,7 @@ statement: formalized
 proof: formalized
 ---
 
-# StrongNorm
+# Untyped/StrongNorm
 
 `Cslib.Languages.LambdaCalculus.LocallyNameless.Untyped.StrongNorm`, in [Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/StrongNorm.lean](https://github.com/leanprover/cslib/blob/86d560b6cbb379bd82512424cbcd2a915a1565e7/Cslib/Languages/LambdaCalculus/LocallyNameless/Untyped/StrongNorm.lean), by David Wegmann.
 
