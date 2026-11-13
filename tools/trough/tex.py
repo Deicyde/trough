@@ -288,7 +288,8 @@ TRANSPARENT = {"textrm", "textsf", "textup", "textnormal", "textmd", "textsc", "
                "uline", "textlf", "foreignlanguage", "selectlanguage", "texorpdfstring", "NoCaseChange"}
 DROPPED = {"label", "lean", "uses", "proves", "discussion", "alsoIn", "index", "hspace", "vspace", "hskip", "includegraphics",
            "vskip", "phantom", "hphantom", "vphantom", "color", "pagecolor", "setlength", "addtolength",
-           "addcontentsline", "nocite", "bibliographystyle", "bibliography", "raisebox", "kern", "rule"}
+           "addcontentsline", "nocite", "bibliographystyle", "bibliography", "raisebox", "kern", "rule",
+           "title", "author", "date"}
 QUIET = {"leanok", "mathlibok", "notready", "noindent", "indent", "medskip", "bigskip", "smallskip", "newline",
          "linebreak", "pagebreak", "newpage", "clearpage", "centering", "raggedright", "raggedleft", "par",
          "relax", "protect", "nobreak", "allowbreak", "quad", "qquad", "enspace", "thinspace", "normalfont",

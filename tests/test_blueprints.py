@@ -315,6 +315,18 @@ def test_an_input_that_holds_no_tex_is_skipped(tmp_path):
     assert not any(leanblueprint.UNREAD.search(problem) for problem in problems)  # so a refresh goes ahead
 
 
+def test_the_web_branch_of_ifplastex_is_read(tmp_path):
+    (tmp_path / "web.tex").write_text("\\newif\\ifplastex\n\\begin{document}\n\\chapter{A}\nSee \\ifplastex the web\n"
+                                      "\\else the PDF\n\\fi page.\n\\begin{lemma}\\label{a} B. \\end{lemma}\n\\end{document}\n")
+    blueprint = leanblueprint.read(tmp_path, "web.tex")
+    assert [" ".join(prose.text.split()) for prose in blueprint.prose] == ["See the web page."]
+    assert blueprint.graph[0].where == leanblueprint.Where("web.tex", 7)  # lines still count
+
+
+def test_a_title_block_in_the_text_is_dropped():
+    assert writer().statement(r"\title[Short]{A long title} \date{\today} \author{A \and B} Text.") == "Text."
+
+
 def test_a_proof_inside_a_proof_is_part_of_it(tmp_path):
     (tmp_path / "web.tex").write_text(
         "\\begin{document}\\chapter{C}\\begin{lemma}\\label{a} A. \\end{lemma}\n"
