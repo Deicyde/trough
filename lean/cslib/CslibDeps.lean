@@ -13,10 +13,15 @@ and everything that the declarations Lean generates for it (matchers, auxiliary 
 declarations use. A constant belongs to the module that declares it, so the walk stops at the first constant
 of another module: every module has its own record.
 
+Of the names in `$TROUGH_NAMES`, one per line, the declarations read from the source, it lists under `private`
+each one Lean has only as a private declaration of a `Cslib` module (in a `module` file, a declaration outside a
+`public section` and not marked `public` is private), and under `missing` each one it has neither as a public nor
+as a private declaration there: the map shows only what Lean has as public under the name the source gives.
+
 This is a plain file, not a `module`, so it sees each module's private part, where theorem proofs live under
 the module system; without it the run stops rather than give partial data.
 
-    TROUGH_OUT=deps.json TROUGH_CSLIB_REV=<commit> lake env lean CslibDeps.lean
+    TROUGH_NAMES=names.txt TROUGH_OUT=deps.json TROUGH_CSLIB_REV=<commit> lake env lean CslibDeps.lean
 -/
 
 open Lean Meta
@@ -49,11 +54,16 @@ def uses (env : Environment) (info : ConstantInfo) : Array Name × Array Name :=
   | .ctorInfo _ | .recInfo _ | .quotInfo _ => (#[], #[])
   | _ => (type, #[])
 
+/-- A name as the source writes it, with `«»` around a component that is not an identifier. -/
+def parseName (text : String) : Name :=
+  (Syntax.decodeNameLit ("`" ++ text)).getD text.toName
+
 def sorted (names : Std.HashSet Name) : Json :=
   Json.arr ((names.toArray.map toString).qsort (· < ·) |>.map Json.str)
 
 def run : MetaM Unit := do
   let env ← getEnv
+  let some namesPath ← IO.getEnv "TROUGH_NAMES" | throwError "TROUGH_NAMES is not set"
   let some outPath ← IO.getEnv "TROUGH_OUT" | throwError "TROUGH_OUT is not set"
   let rev := (← IO.getEnv "TROUGH_CSLIB_REV").getD ""
   let moduleNames := env.header.moduleNames
@@ -62,6 +72,8 @@ def run : MetaM Unit := do
     let module := moduleNames[idx.toNat]!
     if (`Cslib).isPrefixOf module then some module else none
   let mut records : Array (String × Json) := #[]
+  -- The names private declarations of Cslib modules are written with.
+  let mut privateNames : Std.HashSet Name := {}
   let mut theorems := 0
   let mut withProof := 0
   let mut statementEdges := 0
@@ -72,6 +84,7 @@ def run : MetaM Unit := do
     let mut statement : Std.HashSet Name := {}
     let mut proof : Std.HashSet Name := {}
     for name in env.header.moduleData[i]!.constNames do
+      if let some user := privateToUserName? name then privateNames := privateNames.insert user
       let some info := env.find? name | continue
       let (stated, proved) := uses env info
       if info matches .thmInfo _ then
@@ -96,19 +109,32 @@ def run : MetaM Unit := do
   -- Without a module's private data its theorems import as axioms.
   if theorems == 0 || withProof == 0 then
     throwError "{theorems} theorems, {withProof} with a readable proof: private module data is missing"
+  let requested := ((← IO.FS.readFile namesPath).splitOn "\n").filter (· ≠ "")
+  let isPublic (name : Name) : Bool := env.contains name && !isPrivateName name && (moduleOf name).isSome
+  let privateOnly := requested.filter fun text =>
+    let name := parseName text
+    !isPublic name && privateNames.contains name
+  let missing := requested.filter fun text =>
+    let name := parseName text
+    !isPublic name && !privateNames.contains name
   let out := Json.mkObj [
     ("schema", "trough-cslib-deps/v1"),
     ("rev", rev),
     ("lean_githash", Json.str Lean.githash),
     ("modules", Json.mkObj ((records.qsort (·.1 < ·.1)).toList)),
+    ("private", Json.arr (privateOnly.toArray.map Json.str)),
+    ("missing", Json.arr (missing.toArray.map Json.str)),
     ("stats", Json.mkObj [
       ("modules", toJson records.size),
       ("theorems", toJson theorems),
       ("theorems_with_proof", toJson withProof),
       ("statement_edges", toJson statementEdges),
-      ("proof_edges", toJson proofEdges)])]
+      ("proof_edges", toJson proofEdges),
+      ("requested", toJson requested.length),
+      ("private", toJson privateOnly.length),
+      ("missing", toJson missing.length)])]
   IO.FS.writeFile outPath (out.pretty 100 ++ "\n")
-  IO.println s!"{records.size} modules, {theorems} theorems ({withProof} with a proof), {statementEdges} statement and {proofEdges} proof edges before reduction"
+  IO.println s!"{records.size} modules, {theorems} theorems ({withProof} with a proof), {statementEdges} statement and {proofEdges} proof edges before reduction; of {requested.length} names read from the source, {privateOnly.length} private, {missing.length} missing"
 
 end TroughCslib
 

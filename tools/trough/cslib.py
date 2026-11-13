@@ -5,8 +5,10 @@ Languages, Logics, Algorithms, Crypto and smaller ones), and documents each modu
 docstring with a `#` title, its main definitions and statements, and a docstring on each definition.
 tools/refresh_cslib.py reads a checkout at a pinned commit into data/cslib/ without Lean: each module's title,
 docstrings, the authors its header names and its public declarations, as trough.leansource reads them, with the
-area READMEs' descriptions. The chapter has a part per area, a page per folder and an article per module, with a
-block per declaration in file order.
+area READMEs' descriptions. lean/cslib/CslibDeps.lean then reads, with Lean, the modules each module's statements
+and proofs use, and which of those names Lean has only as private declarations: in a `module` file, a declaration
+outside a `public section` and not marked `public` is private, which the source reading does not follow. The chapter
+has a part per area, a page per folder and an article per module, with a block per public declaration in file order.
 """
 
 from __future__ import annotations
@@ -27,43 +29,103 @@ SCHEMA = "trough-cslib/v1"
 REPO = "leanprover/cslib"
 GITHUB = "https://github.com"
 LIBRARY = "Cslib"
-INDEX = "Cslib.lean"
 # A header's copyright holders and its optional list of authors, which AUTHORS.md says name a file's authors.
 COPYRIGHT = re.compile(r"^Copyright \(c\) \d{4}(?:[-–]\d{4})? (?P<holders>.+?)\.? All rights reserved\.?$", re.M)
 AUTHORS = re.compile(r"^Authors?:[ \t]*(?P<authors>.+(?:\n(?![A-Z][a-z]+:)[ \t]*\S.*)*)", re.M)
 # A section of a README or docstring that says what the library plans, not what it has.
-PLANS = re.compile(r"^(?:plans?|future work|todo|roadmap)\b", re.I)
+PLANS = re.compile(r"^(?:plans?|future work|todos?|roadmap)\b", re.I)
 PLANNED = re.compile(r"\b(?:plan(?:s|ned)?|placeholder|upstream(?:ing)?)\b", re.I)
 HEADING = re.compile(r"^(#{1,6})[ \t]+(.+?)[ \t]*#*[ \t]*$")
-TODO_LINE = re.compile(r"^[ \t]*(?:[-*][ \t]+)?TODO\b")
+TODO = re.compile(r"\bTODO\b")
+CODE_SPAN = re.compile(r"`[^`\n]*`")
+# A line that starts a list item, which ends the paragraph a TODO cut runs to.
+LIST_ITEM = re.compile(r"^[ \t]*(?:[-*+]|\d+[.)])[ \t]")
+# A sentence that plans or invites future work, and a paragraph about moving code elsewhere; kept narrow, as words such
+# as "in the future" or "not yet" also describe what a module has (BTL's temporal modalities).
+PLAN_SENTENCE = re.compile(r"would be welcome|\bwe plan\b|reserved for future work|future work on|future design work|"
+                           r"\bwill follow\b", re.I)
+UPSTREAMING = re.compile(r"should be upstreamed", re.I)
+SENTENCE = re.compile(r"(?<=[.!?])\s+")
 CUT = "\x00"  # where without_plans() cut, until it writes …
 # Definitions whose whole text is shown: their fields or constructors say what they are.
 WHOLE = ("structure", "class", "inductive")
 
 
 def without_plans(markdown: str) -> str:
-    """The Markdown without its sections on plans, future work or TODOs, each up to the next heading of its level
-    or above, and without lines that start with TODO; a cut inside the text is marked with …"""
+    """The Markdown without what it says of plans and TODOs, each cut marked with …: a section headed plans, future
+    work, TODO(s) or roadmap, up to the next heading of its level or above; a TODO, from where it stands to the end of
+    its paragraph (a blank line, a heading or the next list item); a sentence that plans or invites future work; a
+    paragraph saying code should be upstreamed; and a heading left with nothing but cuts under it."""
     out: list[str] = []
     skipping: int | None = None
-    fence = False
+    cutting = fence = False
     for line in markdown.split("\n"):
-        if line.lstrip().startswith(("```", "~~~")):
+        is_fence = line.lstrip().startswith(("```", "~~~"))
+        if is_fence:
             fence = not fence
-        heading = None if fence else HEADING.match(line)
+        heading = None if fence or is_fence else HEADING.match(line)
         if heading and skipping is not None and len(heading.group(1)) <= skipping:
             skipping = None
         if skipping is not None:
             continue
+        if cutting and (not line.strip() or heading or is_fence or LIST_ITEM.match(line)):
+            cutting = False
+        if cutting:
+            continue
         if heading and PLANS.match(heading.group(2).strip("*_ ")):
             skipping = len(heading.group(1))
             out.append(CUT)
-        elif not fence and TODO_LINE.match(line):
-            out.append(CUT)
-        else:
-            out.append(line)
+            continue
+        todo = None if fence or is_fence else next(
+            (match for match in TODO.finditer(line)
+             if not any(span.start() < match.start() < span.end() for span in CODE_SPAN.finditer(line))), None)
+        if todo:
+            before = line[:todo.start()].rstrip()
+            out.append(f"{before} {CUT}" if before and not LIST_ITEM.match(before + " ") else CUT)
+            cutting = True
+            continue
+        out.append(line)
+    paragraphs = re.split(r"(\n[ \t]*\n)", "\n".join(out))
+    fence = False
+    for index in range(0, len(paragraphs), 2):
+        paragraph = paragraphs[index]
+        inside = fence or paragraph.lstrip().startswith(("```", "~~~"))
+        fence ^= paragraph.count("```") % 2 == 1
+        if inside or HEADING.match(paragraph.strip()):
+            continue
+        if UPSTREAMING.search(paragraph):
+            paragraphs[index] = CUT
+        elif PLAN_SENTENCE.search(paragraph):
+            pieces = SENTENCE.split(paragraph)
+            separators = SENTENCE.findall(paragraph)
+            kept = [CUT if PLAN_SENTENCE.search(piece) else piece for piece in pieces]
+            paragraphs[index] = "".join(piece + (separators[number] if number < len(separators) else "")
+                                        for number, piece in enumerate(kept))
+    text = drop_empty_headings("".join(paragraphs))
     # Consecutive cuts are one.
-    return re.sub(rf"{CUT}(?:\s*{CUT})+", CUT, "\n".join(out)).strip().replace(CUT, "…")
+    return re.sub(rf"{CUT}(?:\s*{CUT})+", CUT, text).strip().replace(CUT, "…")
+
+
+def drop_empty_headings(text: str) -> str:
+    """The text without a heading whose section, up to the next heading, holds only cuts."""
+    lines = text.split("\n")
+    kept: list[str] = []
+    dropped = False
+    for index, line in enumerate(lines):
+        if dropped and not line.strip():
+            continue
+        dropped = False
+        if HEADING.match(line):
+            section = []
+            for later in lines[index + 1:]:
+                if HEADING.match(later):
+                    break
+                section.append(later)
+            if CUT in "".join(section) and not "".join(section).replace(CUT, "").strip():
+                dropped = True
+                continue
+        kept.append(line)
+    return "\n".join(kept)
 
 
 def header(text: str) -> dict:
@@ -96,30 +158,34 @@ def statement_of(text: str, declaration: leansource.Declaration) -> str:
 
 
 def whole(text: str, line: int, header_only: bool = False) -> str:
-    """A declaration's text from its keyword's line while lines are indented, blank or a `deriving` clause; with
-    *header_only*, it also stops at a line that starts a `|` case."""
-    lines = leansource.blank_attributes(leansource.blank(text)).split("\n")
+    """A declaration's text from its keyword's line while lines are indented past the command's start, blank or a
+    `deriving` clause; with *header_only*, it also stops at a line that starts a `|` case. The command starts at its
+    attribute list when one shares the keyword's line, so a next command that opens with one ends it too."""
+    plain = leansource.blank(text).split("\n")
+    keyword = leansource.blank_attributes("\n".join(plain)).split("\n")
     source = text.split("\n")
-    column = len(lines[line - 1]) - len(lines[line - 1].lstrip())
+    start = len(plain[line - 1]) - len(plain[line - 1].lstrip())
+    column = len(keyword[line - 1]) - len(keyword[line - 1].lstrip())
     end = line
-    for number in range(line, len(lines)):
-        code = lines[number]
+    for number in range(line, len(plain)):
+        code = plain[number]
         stripped = code.strip()
         if header_only and (not stripped or stripped.startswith("|")):
             break
-        if stripped and len(code) - len(code.lstrip()) <= column and not stripped.startswith("deriving"):
+        clause = stripped.startswith("deriving") and not stripped.startswith("deriving instance")
+        if stripped and len(code) - len(code.lstrip()) <= start and not clause:
             break
         if stripped:
             end = number + 1
     # It ends at its last line of code: a comment or docstring after it belongs to what follows.
-    return leansource.dedent("\n".join([source[line - 1][column:]] + source[line:end]).rstrip(), column)
+    return leansource.dedent("\n".join([source[line - 1][column:]] + source[line:end]).rstrip(), start)
 
 
 def read_module(text: str, path: str) -> dict:
     """A module's record: its title, docstrings and public declarations in file order; `items` is None when its
     scopes don't close as they open. The module docstring is the first `/-! ... -/` before any declaration; each
     later one is an item of its own, where the file writes it."""
-    found = leansource.declarations(text)
+    found = leansource.declarations(text, relaxed=True)
     record = {"module": module_name(path), "file": path, **header(text), "title": "", "doc": "", "items": None}
     if found is None:
         return record
@@ -139,7 +205,7 @@ def read_module(text: str, path: str) -> dict:
         elif cut := without_plans(doc):
             notes.append({"line": line, "note": cut})
     declarations = [{"name": declaration.name, "kind": declaration.kind, "line": declaration.line,
-                     "doc": declaration.doc, "statement": statement_of(text, declaration),
+                     "doc": without_plans(declaration.doc), "statement": statement_of(text, declaration),
                      "sorry": declaration.proof_sorry if declaration.statement is not None else declaration.sorry}
                     for declaration in found if declaration.name and not declaration.private]
     record["items"] = sorted(notes + declarations, key=lambda item: item["line"])
@@ -160,14 +226,15 @@ def maintainers(governance: str) -> list[dict]:
 
 def readme_description(readme: str) -> list[str]:
     """The README's paragraphs before its first `#` section after the title, and those of its "What's CSLib?"
-    section, without its aims, which say what the library means to offer."""
+    section, without its aims, which say what the library means to offer; a paragraph "…" stands for the heading
+    between them."""
     sections = re.split(r"^# ", readme, flags=re.M)
     kept = []
     for index, section in enumerate(sections[1:]):
         title, _, body = section.partition("\n")
         if index == 0 or title.strip().lower().startswith("what"):
             body = re.split(r"^##? ", body, maxsplit=1, flags=re.M)[0]
-            kept += [part.strip() for part in re.split(r"\n\s*\n", body) if part.strip()]
+            kept += (["…"] if index else []) + [part.strip() for part in re.split(r"\n\s*\n", body) if part.strip()]
     return kept
 
 
@@ -272,13 +339,29 @@ def stem(module: dict) -> str:
 
 
 def titles(modules: list[dict]) -> dict[str, str]:
-    """Each module's title: its docstring's, with its file name after it where other modules share it, or its file
-    name when its docstring has none."""
+    """Each module's title: its docstring's, or its file name when the docstring has none. Where modules share one,
+    each takes the shortest end of its file's path that no other of them shares, in brackets after a docstring's
+    title or in place of a file name."""
     # A title is a heading, so a full stop that ends it as a sentence goes.
     plain = {module["module"]: re.sub(r"(?<!\.)\.$", "", module["title"]) for module in modules}
-    shared = Counter(title for title in plain.values() if title)
-    return {module: (f"{title} ({stem(by_name)})" if shared[title] > 1 else title) if title else stem(by_name)
-            for (module, title), by_name in zip(plain.items(), modules)}
+    groups: dict[str, list[dict]] = {}
+    for module in modules:
+        groups.setdefault(plain[module["module"]] or stem(module), []).append(module)
+    named = {}
+    for base, members in groups.items():
+        for module in members:
+            if len(members) == 1:
+                named[module["module"]] = base
+                continue
+            parts = module["file"].removesuffix(".lean").split("/")
+            others = [other["file"].removesuffix(".lean").split("/") for other in members if other is not module]
+            depth = next(depth for depth in range(1, len(parts) + 1) if all(other[-depth:] != parts[-depth:] for other in others))
+            piece = "/".join(parts[-depth:])
+            named[module["module"]] = f"{base} ({piece})" if plain[module["module"]] else piece
+    shared = [title for title, count in Counter(named.values()).items() if count > 1]
+    if shared:
+        raise ValueError(f"modules still share the titles {', '.join(shared)}")
+    return named
 
 
 def declarations(module: dict) -> list[dict]:
@@ -341,9 +424,18 @@ def credit(rev: str) -> str:
 def chapter(data: dict) -> tuple[Built, dict[str, str]]:
     """The chapter's root, with its articles and counts, and each declaration's source line (for
     hooks/lean-links.json). A part per area, a page per folder below it and an article per module."""
-    rev, modules = data["rev"], data["modules"]
-    named = titles(modules)
+    rev, deps = data["rev"], data.get("deps")
     stats: Counter = Counter()
+    # Lean decides which of the names read from the source are public: one private to its module, or one Lean does not
+    # have, is left out.
+    private, missing = (set(deps.get("private", [])), set(deps.get("missing", []))) if deps else (set(), set())
+    modules = []
+    for module in data["modules"]:
+        stats["private"] += sum(item.get("name") in private for item in module["items"])
+        stats["unresolved"] += sum(item.get("name") in missing for item in module["items"])
+        modules.append({**module, "items": [item for item in module["items"]
+                                            if item.get("name") not in private | missing or "name" not in item]})
+    named = titles(modules)
     targets: dict[str, Leaf | Container] = {}
     links: dict[str, str] = {}
     leaves: dict[str, Leaf] = {}
@@ -365,9 +457,12 @@ def chapter(data: dict) -> tuple[Built, dict[str, str]]:
         container = Container(escape(name), slugify(name), entries)
         inside = every(node)
         tally = counts(inside)
-        lines = [f"{plural(len(inside), 'module')} under `{path}/`, with {plural(tally['declarations'], 'public declaration')}."]
+        held = (f", with {plural(tally['declarations'], 'public declaration')}." if tally["declarations"] else
+                ", none of which declares anything public by name." if len(inside) > 1 else
+                ", which declares nothing public by name.")
+        lines = [f"{plural(len(inside), 'module')} under `{path}/`{held}"]
         if path in data["folders"]:
-            lines.append(f"Its README opens:\n\n{quote(data['folders'][path])}")
+            lines.append(f"Its [README]({blob(rev, path + '/README.md')}) opens:\n\n{quote(data['folders'][path])}")
         if part:
             lines.append(credit(rev))
         container.prose = "\n\n".join(lines)
@@ -386,6 +481,7 @@ def chapter(data: dict) -> tuple[Built, dict[str, str]]:
         parts.append(Entry(leaf))
     edges(data, leaves, stats)
     stats.update(counts(modules))
+    stats["empty"] = sum(1 for module in modules if not declarations(module))
     root = Container(TITLE, "cslib", parts)
     root.prose = intro(data, stats)
     return Built(root, targets, {}, dict(stats), Counter()), dict(sorted(links.items()))
@@ -430,7 +526,11 @@ def edges(data: dict, leaves: dict[str, Leaf], stats: Counter) -> None:
                       if not any(child in reach_all[other] for other in (stmt[module] | proof[module]) - {child})}
         leaf.depends = [leaves[child] for child in sorted(kept_stmt)]
         leaf.proof_depends = [leaves[child] for child in sorted(kept_proof)]
-        leaf.no_depends = "Its statements use no other CSLib module's declarations."
+        if module in deps:
+            leaf.no_depends = "Its statements use no other CSLib module's declarations."
+        else:
+            leaf.no_depends = "The Lean dump has no record of this module, so its dependencies are unknown."
+            stats["unrecorded"] += 1
         stats["statement_edges"] += len(leaf.depends)
         stats["proof_edges"] += len(leaf.proof_depends)
 
@@ -441,34 +541,46 @@ def intro(data: dict, stats: Counter) -> str:
     theorems = stats["theorem"] + stats["lemma"]
     definitions = sum(stats[kind] for kind in ("def", "abbrev", "structure", "class", "inductive", "opaque"))
     others = stats["declarations"] - theorems - definitions
-    empty = sum(1 for module in data["modules"] if not declarations(module))
-    deps = data.get("deps")
-    edges_text = (
-        "Edges come from Lean: a GitHub Actions run builds CSLib at this commit and reads, for each module, which "
-        "other modules' declarations its own use. “Depends on” lists the modules its statements use, the types of its "
-        "declarations and the values of its definitions, and “Proof depends on” those only its proofs use; a "
-        f"dependency reached through another is left out. That gives {plural(stats['statement_edges'], 'statement edge')} "
-        f"and {plural(stats['proof_edges'], 'proof edge')}." if deps else
-        "The articles have no edges yet: they come from a Lean run over CSLib, which this commit has not had.")
+    if data.get("deps"):
+        lean = (
+            "Edges come from Lean: a GitHub Actions run builds CSLib at this commit and reads, for each module, which "
+            "other modules' declarations its own use. “Depends on” lists the modules its statements use, the types of "
+            "its declarations and the values of its definitions, and “Proof depends on” those only its proofs use; a "
+            f"dependency reached through another is left out. That gives "
+            f"{plural(stats['statement_edges'], 'statement edge')} and {plural(stats['proof_edges'], 'proof edge')}."
+            + (f" The run has no record of {plural(stats['unrecorded'], 'module')}, whose dependencies are unknown."
+               if stats["unrecorded"] else "")
+            + " The same run checks the names read from the source"
+            + (f": Lean marks {stats['private']:,} of them as private to their modules (in a `module` file, a "
+               "declaration outside a `public section` and not marked `public` is private), and these are left out"
+               + (f", as {'is' if stats['unresolved'] == 1 else 'are'} {plural(stats['unresolved'], 'name')} Lean does "
+                  "not have" if stats["unresolved"] else "")
+               + "." if stats["private"] or stats["unresolved"] else ", and Lean has each as a public declaration."))
+    else:
+        lean = ("The articles have no edges, and the names read from the source are not checked against Lean: both come "
+                "from a Lean run over CSLib at this commit, which the data lack.")
     return "\n\n".join(part for part in [
         f"[{REPO}]({GITHUB}/{REPO}), the Lean Computer Science Library, says in its README:",
         quote("\n\n".join(data["readme"])),
         f"Its GOVERNANCE.md names {listing(roles)}." if roles else "",
-        f"This chapter maps CSLib at commit {at(rev)} ({data['date'][:10]}), the newest commit of its main branch whose "
-        f"CI passed, with Lean toolchain {data['toolchain']} and Mathlib {data['mathlib'][:8]}. It has an article for "
-        f"each of the {plural(stats['articles'], 'module')} under `{LIBRARY}/`, in a part per folder of `{LIBRARY}/` and "
-        f"a page per folder below. They hold {plural(stats['declarations'], 'public declaration')}, "
+        f"This chapter maps CSLib at commit {at(rev)} ({data['date'][:10]}), with Lean toolchain {data['toolchain']} and "
+        f"Mathlib {data['mathlib'][:8]}. It has an article for each of the {plural(stats['articles'], 'module')} under "
+        f"`{LIBRARY}/`, in a part per folder of `{LIBRARY}/` and a page per folder below. They hold "
+        f"{plural(stats['declarations'], 'public declaration')}, "
         + listing([plural(count, word, words) for count, word, words in (
             (theorems, "theorem", None), (definitions, "definition", None),
             (others, "instance or alias", "instances and aliases")) if count])
         + f", {stats['documented']:,} of them with a docstring"
-        + (f"; {plural(empty, 'module declares', 'modules declare')} nothing public by name." if empty else "."),
-        "An article is titled by its module docstring and gives the module's authors as its header names them, its "
-        "docstrings, and a block per public declaration in file order with its Lean statement: the text up to the `:=` "
-        "or `where` that starts its value, or the whole text of a structure, class or inductive type. These are read "
-        "from the source text, without Lean. Private declarations and unnamed instances are left out, and so are "
-        "docstring sections on plans or TODOs and lines that start with TODO; an ellipsis marks each cut."
+        + (f"; {plural(stats['empty'], 'module declares', 'modules declare')} nothing public by name."
+           if stats["empty"] else "."),
+        "An article is titled by its module docstring, or by its file name when the docstring has no title; where "
+        "modules share a title, each adds the shortest end of its path that tells them apart. It gives the module's "
+        "authors as its header names them, its docstrings, and a block per public declaration in file order with its "
+        "Lean statement: the text up to the `:=` or `where` that starts its value, or the whole text of a structure, "
+        "class or inductive type. These are read from the source text, without Lean. Unnamed instances and the names "
+        "an `alias ⟨…⟩` command gives are left out, and so are TODO notes and text about plans or inviting future "
+        "work; an ellipsis marks each cut."
         + ("" if stats["sorry"] else " No declaration's value holds `sorry`."),
-        edges_text,
+        lean,
         credit(rev),
     ] if part)

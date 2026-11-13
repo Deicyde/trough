@@ -285,7 +285,8 @@ def sources_readme(libraries: list[dict], mathlib_rev: str, thousand_plus: dict 
             "with their kinds, lines, docstrings and Lean statements, read from the source text without Lean, with the "
             "opening of each folder's README, the README's description and the maintainers GOVERNANCE.md names, from "
             f"[leanprover/cslib at {cslib[:8]}](https://github.com/leanprover/cslib/tree/{cslib}), Apache-2.0. "
-            "`data/cslib/deps.json`: the modules each module's statements and proofs use, written by "
+            "`data/cslib/deps.json`: the modules each module's statements and proofs use, and the names read from "
+            "the source that Lean has only as private declarations or not at all, written by "
             "`lean/cslib/CslibDeps.lean` in GitHub Actions. `data/cslib/source.json` records the commit, its Lean "
             "toolchain and Mathlib.",
         ]

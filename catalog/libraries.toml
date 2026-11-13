@@ -218,7 +218,7 @@ mathlib = "887bb849a9f6"
 lean_files = 344
 map_status = "live"
 map_unit = "module"
-map_plan = "One article per module under Cslib/, titled by its module docstring, in a part per area and a page per folder: the module's authors, its docstrings and a block per public declaration with its docstring and Lean statement, read from the source without Lean; edges between modules from a Lean run over the built library, split into what statements and what proofs use."
+map_plan = "One article per module under Cslib/, titled by its module docstring or its file name, in a part per area and a page per folder: the module's authors, its docstrings and a block per public declaration with its docstring and Lean statement, read from the source without Lean; a Lean run over the built library gives the edges between modules, split into what statements and what proofs use, and decides which declarations are public."
 
 [[library]]
 id = "foundation"

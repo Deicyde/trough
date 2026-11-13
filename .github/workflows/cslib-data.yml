@@ -1,7 +1,8 @@
 # Reads CSLib at the commit data/cslib/source.json pins: each module's
-# docstrings and public declarations, read from the source without Lean
+# docstrings and declarations, read from the source without Lean
 # (tools/refresh_cslib.py), then, with CSLib built on Mathlib's cache, the
-# modules each module's statements and proofs use (lean/cslib/CslibDeps.lean).
+# modules each module's statements and proofs use and which of the names read
+# are not public declarations in Lean (lean/cslib/CslibDeps.lean).
 # The pages are then regenerated from that data.
 #
 # A push that changes the reader, the dump or the data runs it too, so the
@@ -130,13 +131,18 @@ jobs:
           lake exe cache get
           /usr/bin/time -v lake build
 
+      # The names read from the source go in too: Lean says which are public.
       - name: Read which modules each module uses
         working-directory: ${{ runner.temp }}/cslib
         env:
+          TROUGH_NAMES: ${{ runner.temp }}/names.txt
           TROUGH_OUT: ${{ github.workspace }}/data/cslib/deps.json
           TROUGH_CSLIB_REV: ${{ steps.pin.outputs.rev }}
         run: |
           set -euo pipefail
+          jq -r '.modules[].items[] | select(.name) | .name' "$GITHUB_WORKSPACE/data/cslib/library.json" \
+            | LC_ALL=C sort -u > "$TROUGH_NAMES"
+          wc -l < "$TROUGH_NAMES"
           cp "$GITHUB_WORKSPACE/lean/cslib/CslibDeps.lean" TroughCslibDeps.lean
           /usr/bin/time -v lake env lean TroughCslibDeps.lean
 
