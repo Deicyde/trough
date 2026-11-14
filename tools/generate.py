@@ -296,10 +296,12 @@ def generate() -> dict[Path, str]:
             # annotations.
             previous = host.path.read_text(encoding="utf-8") if host.path.is_file() else None
             files[host.path] = render_container(host, VAULT, previous, not host.path.is_relative_to(ROADMAP / "mathlib"))
+        boxes = ", ".join(f"[{page.title}](../roadmap/{page.path.relative_to(ROADMAP).as_posix()})"
+                          for _, page, _ in pages if page is not None)
         blueprint_rows.append((
             "Satellite projects", "DECOMPOSED",
-            f"{sat_stats['cards']} project cards, each in a projects box on the page of the library it builds on; "
-            f"{sat_stats['without_headline']} more listed there without a named main result"
+            f"{sat_stats['cards']} project cards, each in a projects box on the page of the library it builds on "
+            f"({boxes}); {sat_stats['without_headline']} more listed there without a named main result"
             + (f"; {sat_stats['held_back']} held back, as they build on neither Mathlib nor a library mapped here"
                if sat_stats["held_back"] else "") + "."))
         print(

@@ -460,7 +460,7 @@ def read_project(checkout: Path, project: dict, rev: str, date: str, paths: list
     record["license"] = license_record
     record["readme"] = {"file": readme_path, "title": title,
                         "excerpt": excerpt if license_record["spdx"] else None}
-    record["lean_files"] = sum(path.endswith(".lean") for path in paths)
+    record["lean_files"] = sum(path.endswith(".lean") and path.rsplit("/", 1)[-1] != "lakefile.lean" for path in paths)
     if folder is None:
         record["admitted"] = False
         record["reason"] = ("a Lean 3 project: leanpkg.toml and no lakefile" if any(

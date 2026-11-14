@@ -395,7 +395,7 @@ def test_the_host_lists_its_projects_page_without_owning_it_so_links_never_see_i
     vault = tmp_path
     before = render_tree(root, vault, annotated=True)
     rows_before = links.files(root, vault / "links" / "mathlib", MATHLIB_REV)
-    statement = record("graphs", headlines=[record("x")["headlines"][0] | {"names": ["SimpleGraph"]}])
+    statement = record("graphs", mathlib_imports={"Mathlib.Combinatorics.SimpleGraph.Basic": 3})
     pages, _, _ = satellites.chapter([statement], {}, {}, LIBRARIES, hosts, heads, {})
     for host, projects, _ in pages:
         assign_paths(projects, host.path.parent / "projects")
