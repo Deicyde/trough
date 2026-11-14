@@ -53,7 +53,7 @@ def declaration_pattern(kinds: dict[str, str]) -> re.Pattern:
 DECLARATION = declaration_pattern(KINDS)
 DECLARATION_WANTED = declaration_pattern(KINDS | WANTED_KINDS)
 NAMESPACE = re.compile(rf"^[ \t]*namespace[ \t]+(?P<name>{NAME})[ \t]*$")
-SECTION = re.compile(rf"^[ \t]*(?:(?:noncomputable|public)[ \t]+)*section(?:[ \t]+(?P<name>{NAME}))?[ \t]*$")
+SECTION = re.compile(rf"^[ \t]*(?:(?:noncomputable|public|meta)[ \t]+)*section(?:[ \t]+(?P<name>{NAME}))?[ \t]*$")
 MUTUAL = re.compile(r"^[ \t]*mutual[ \t]*$")
 END = re.compile(rf"^[ \t]*end(?:[ \t]+(?P<name>{NAME}))?[ \t]*$")
 # A line at column 0 that starts a command ends the declaration before it.
