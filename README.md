@@ -507,25 +507,26 @@ names it after it, and every Physlib and PhyslibAlpha module carries a module
 docstring, so the chapter has an article per module with a declaration, in a
 part per library, on a page per area, per folder below it and per deeper folder
 with an API map; a module in another deeper folder is on the page of the nearest
-folder above, under a line naming its folder. An article is titled by its
-module docstring, or else by its module's name, with its library or the end of
-its path added where titles would repeat. It quotes the module's docstring and
-section docstrings, their headings shown as the article's and the table of
-contents left out, and shows each declaration in file order: its name, kind and
-line, its docstring and its Lean statement. An instance with no name is
-shown without one; `private` declarations are counted, not shown. The
-repository keeps the keyword `theorem` for what
-`scripts/lint/exemptions/Theorems.txt` lists as significant results, and their
-blocks say so and lead their cards' Lean rows. An API map, the repository's own
-account of an area with numbered citations of the declarations that formalize
-it, is quoted on its folder's page without the sentences it marks `[TODO]`, and
-each citation links the article of the module it names. Informal results
-(`informal_lemma`, `informal_definition`, `semiformal_result`) and TODO items
-are not mapped, and a docstring is quoted without its TODO notes, its sections
-on future work and its sentences about plans or inviting work, each cut marked
-with …. An article depends on the modules whose
-declarations its statements use, and its proof on those that only its proofs
-use, each without what another of them reaches.
+folder above, under a line naming its folder. An article is titled by its module
+docstring, or else by its module's name, with its library or the end of its path
+added where titles would repeat. It quotes the module's docstring and section
+docstrings, their headings shown as the article's and the table of contents left
+out, and shows each declaration in file order: its name, kind and line, its
+docstring and its Lean statement. An instance with no name is shown without one;
+`private` declarations are counted, not shown. The repository keeps the keyword
+`theorem` for what `scripts/lint/exemptions/Theorems.txt` lists as significant
+results, and their blocks say so and lead their cards' Lean rows. An API map,
+the repository's own account of an area with numbered citations of the
+declarations that formalize it, is quoted on its folder's page without the
+sentences it marks `[TODO]`, and each citation links the article of the module
+it names. Informal results (`informal_lemma`, `informal_definition`,
+`semiformal_result`) and TODO items are not mapped, and a docstring is quoted
+without its TODO notes, its sections on future work and its sentences about
+plans or inviting work, each cut marked with …; the docstrings of Physlib's own
+tooling under `Physlib/Meta/`, which define and count TODO items, keep their
+mentions of them. An article depends on the modules whose declarations its
+statements use, and its proof on those that only its proofs use, each without
+what another of them reaches.
 
 1. `tools/refresh_physlib.py CHECKOUT` reads a checkout and writes
    `data/physlib/`: `source.json`, the commit, its date, toolchain and Mathlib,
@@ -537,11 +538,11 @@ use, each without what another of them reaches.
    indentation its lines have in the file; a structure, class or inductive type
    shows its whole text, its fields or constructors. It does not read `alias
    ⟨mp, mpr⟩ := …`, which names the two directions of an equivalence; the record
-   counts those commands, and the front page says how many are not shown. A
-   module docstring is the first `/-!` comment when it comes before the first
-   declaration, and the later ones are section docstrings. A link in a docstring
-   to one of the repository's files points at that module's article, or else at
-   the file at the pin.
+   counts those commands, and the front page says how many, if any, are not
+   shown. A module docstring is the first `/-!` comment when it comes before the
+   first declaration, and the later ones are section docstrings. A link in a
+   docstring to one of the repository's modules points at that module's article;
+   a link to a path that is no module at the pin keeps only its label.
 2. Physlib publishes a build cache for each commit of its `master` branch whose
    build passes, so Lean runs for this chapter. After the refresh, the **Physlib
    data** workflow (`.github/workflows/physlib-data.yml`) fetches that cache
@@ -650,5 +651,6 @@ Free Documentation License, whose text is otherwise not copied.
 The statements, titles and prose in `data/atlas/` come from ATLAS's vault on
 [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean), Apache-2.0; its
 LICENSE adds that the code is not meant for training models.
-The docstrings, Lean statements and API maps quoted in `data/physlib/` come from
+The docstrings, Lean statements, API maps and README text quoted in
+`data/physlib/` come from
 [Physlib](https://github.com/leanprover-community/physlib), Apache-2.0.

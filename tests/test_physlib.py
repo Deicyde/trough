@@ -1,6 +1,7 @@
 import json
 import os
 import subprocess
+from collections import Counter
 from pathlib import Path
 
 import pytest
@@ -92,6 +93,10 @@ private lemma helper : True := trivial
 TODO: extend this to the damped oscillator. -/
 theorem energy_conservation (t : ℝ) : S.m = S.m := by
   rfl
+
+/-! TODO: the damped oscillator. -/
+
+/-! TODO: the driven oscillator. -/
 
 end HarmonicOscillator
 
@@ -321,6 +326,74 @@ citing the papers associated with the origin of these projects. For the former p
 ```
 """
 
+# From QuantumInfo/Capacity/Capacity.lean's module docstring at the pin: a wish list, and a TODO note whose list and
+# following paragraph go with it.
+CAPACITY = """## ii. Key results
+
+The most basic facts:
+ * `emulates_self`: Every channel emulates itself.
+ * `emulates_trans`: If A emulates B and B emulates C, then A emulates C. (That is, emulation
+   is an ordering.)
+ * `εApproximates A B ε` is equivalent to the existence of some δ (depending on ε and dims(A))
+   so that |A-B| has diamond norm at most δ, and δ→0 as ε→0.
+ * `achievesRate_0`: Every channel out of a nonempty space achievesRate 0. So, in that case,
+   the set of achievable rates is Nonempty.
+ * If a channel achievesRate R₁, it also achievesRate every R₂ ≤ R₁, i.e. it is an interval
+   extending left towards -∞. Achievable rates are `¬BddBelow`.
+ * `bddAbove_achievesRate`: A channel C : dimX → dimY cannot achievesRate R with
+   `R > log2(min(dimX, dimY))`. Thus, the interval is `BddAbove`.
+
+The nice lemmas we would want:
+ * Capacity of a replacement channel is zero.
+ * Capacity of an identity channel is `log2(D)`.
+ * Capacity is superadditive under tensor products. (That is, at least additive. Showing that
+   it isn't _exactly_ additive, unlike classical capacity which is additive, is a much harder
+   task.)
+ * Capacity of a kth tensor power is exactly k times the capacity of the original channel.
+ * Capacity does not decrease under tensor sums.
+ * Capacity does not increase under composition.
+
+Then, we should show that our definition is equivalent to some above. Most, except (3), should
+be not too hard to prove.
+
+Then the LSD theorem establishes that the single-copy coherent information is a lower bound.
+This is stated in `coherentInfo_le_quantumCapacity`. The corollary, that the n-copy coherent
+information converges to the capacity, is `quantumCapacity_eq_piProd_coherentInfo`.
+
+TODO: The only notion of "capacity" here currently is "quantum capacity" in the usual sense.
+But there are several non-equal capacities relevant to quantum channels, see e.g. [Watrous's
+notes](https://cs.uwaterloo.ca/~watrous/TQI/TQI.8.pdf) for a list:
+ * Quantum capacity (`quantumCapacity`)
+ * Quantum 1-shot capacity
+ * Entanglement-assisted classical capacity
+ * Qss, the quantum side-channel capacity
+ * Holevo capacity, aka Holevo χ. The Holevo–Schumacher–Westmoreland theorem as a major theorem
+ * Entanglement-assisted Holevo capacity
+ * Entanglement-assisted quantum capacity
+ * One- and two-way distillable entanglement
+
+And other important theorems like superdense coding, nonadditivity, superactivation.
+
+## iii. Table of contents
+
+- A. Basic definitions
+- B. Emulation between channels
+- C. Approximation between channels
+- D. Achievable rates
+- E. The quantum capacity"""
+
+# From Physlib/Units/Basic.lean's module docstring: a mid-paragraph `TODO` that keeps the next paragraph.
+UNITS_DOC = """The fundamental choices one has in physics are related to:
+- Time
+- Length
+- Mass
+- Charge
+- Temperature
+
+(In fact temperature is not really a fundamental choice, however we leave this as a `TODO`.)
+
+From these fundamental choices one can construct all other units and dimensions."""
+
 MANIFEST = {"packages": [{"name": "mathlib", "rev": "b" * 40, "inputRev": "v4.35.0"}]}
 APACHE = "\n                                 Apache License\n                           Version 2.0, January 2004\n"
 FILES = {
@@ -367,7 +440,9 @@ def test_a_module_keeps_its_docstrings_and_its_declarations_in_file_order():
     assert record["title"] == "The Classical Harmonic Oscillator"
     assert record["doc"].startswith("## i. Overview\n\nThe classical harmonic oscillator is a mass `m`")
     assert [(section["line"], section["text"].split("\n")[0]) for section in record["sections"]] == [
-        (line_of(OSCILLATOR, "/-!\n\n## A."), "## A. The input data"), (line_of(OSCILLATOR, "/-!\n\n## B."), "## B. Energy")]
+        (line_of(OSCILLATOR, "/-!\n\n## A."), "## A. The input data"), (line_of(OSCILLATOR, "/-!\n\n## B."), "## B. Energy"),
+        (line_of(OSCILLATOR, "/-! TODO: the damped"), "TODO: the damped oscillator."),
+        (line_of(OSCILLATOR, "/-! TODO: the driven"), "TODO: the driven oscillator.")]
     rows = [(item["name"], item["kind"], item["line"], item["sorry"]) for item in record["declarations"]]
     assert rows == [
         ("ClassicalMechanics.HarmonicOscillator", "structure", line_of(OSCILLATOR, "structure Harmonic"), False),
@@ -384,6 +459,8 @@ def test_a_module_keeps_its_docstrings_and_its_declarations_in_file_order():
     assert theorem["doc"] == "Energy is conserved.\n\nTODO: extend this to the damped oscillator."
     # The private lemma is counted, not kept.
     assert record["private"] == 1
+    # The copyright line says whose code the file is; `TODO "..."` commands and informal results are counted.
+    assert record["copyright"] == "2025 Joseph Tooby-Smith" and record["informal"] == 1
     # An `alias ⟨mp, mpr⟩` is not read, only counted.
     geometric = physlib.read_module(GEOMETRIC, "Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/Basic.lean")
     assert record["aliases"] == 0 and geometric["aliases"] == 1
@@ -410,8 +487,9 @@ def test_a_docstring_shows_its_headings_and_quotes_its_prose_without_its_content
 
 
 def test_what_mentions_a_todo_is_cut_and_marked():
-    assert physlib.without_todos("Keep this.\n\n- one\n- TODO two\n- three\n\nTODO para\n\nTODO again\n\nEnd.") == (
-        "Keep this.\n\n- one\n- three\n\n…\n\nEnd.")
+    # A paragraph that starts with a TODO note takes what follows it up to the next heading.
+    assert physlib.without_todos("Keep this.\n\n- one\n- TODO two\n- three\n\nTODO para\n\nAnd more.\n\n## Next\n\nEnd.") == (
+        "Keep this.\n\n- one\n- three\n\n…\n\n## Next\n\nEnd.")
     assert physlib.without_todos("TODO: everything.") == "…"
     # From PhyslibAlpha/QuantumMechanics/Hydrogen/Eigenfunctions.lean: TODOs count as a TODO.
     assert physlib.without_todos("The spectral statements are the TODOs of `Hydrogen.Basic`.") == "…"
@@ -434,8 +512,9 @@ def test_what_mentions_a_todo_is_cut_and_marked():
 def test_sentences_about_plans_go_and_what_bounds_the_library_stays():
     # Physlib/Mathematics/ForMathlib/Trigonometry/SinSq.lean and Physlib/Optics/Polarization/Basic.lean.
     assert physlib.without_todos(
-        "This file may eventually be upstreamed to Mathlib.\n\nThis file records the strict bound. It is used for "
-        "the pendulum.") == "…\n\nThis file records the strict bound. It is used for the pendulum."
+        "This file may eventually be upstreamed to Mathlib.\n\n## i. Overview\n\nThis file records the strict bound. "
+        "It is used for the pendulum.") == (
+        "…\n\n## i. Overview\n\nThis file records the strict bound. It is used for the pendulum.")
     assert physlib.without_todos(
         "The material moved to `HarmonicWave`.\nThis file is kept because there is still some material to be added "
         "here in the future. Contributions would be welcome.") == "The material moved to `HarmonicWave`.\n…"
@@ -455,6 +534,72 @@ def test_sentences_about_plans_go_and_what_bounds_the_library_stays():
         "…", "## A.4. Limitations", "> Only finite systems."]
     assert physlib.doc_markdown("## Roadmap\n\nNext.\n\n### Later\n\nMore.\n\n## Done\n\nDone.") == [
         "…", "## Done", "> Done."]
+
+
+def test_a_wish_list_and_a_todo_note_go_with_what_follows_them_to_the_next_heading():
+    kept = physlib.without_todos(CAPACITY)
+    for gone in ["we would want", "Capacity of a replacement channel", "we should show", "not too hard to prove",
+                 "coherentInfo_le_quantumCapacity", "The only notion", "Entanglement-assisted",
+                 "And other important theorems"]:
+        assert gone not in kept
+    assert "The most basic facts:\n * `emulates_self`: Every channel emulates itself." in kept
+    assert "Thus, the interval is `BddAbove`.\n\n…\n\n## iii. Table of contents\n\n- A. Basic definitions" in kept
+    # A TODO in the middle of a paragraph cuts that paragraph only.
+    kept = physlib.without_todos(UNITS_DOC)
+    assert "(In fact temperature" not in kept and kept.endswith(
+        "- Temperature\n\n…\n\nFrom these fundamental choices one can construct all other units and dimensions.")
+
+
+def test_invitations_and_plans_for_files_go():
+    # QuantumInfo/ForMathlib/HermitianMat/Inner.lean, OneDimension/PlaneWaves.lean, ClassicalMechanics/Force.lean,
+    # HarmonicOscillator/Solution/Basic.lean and Operators/OneDimension/Unbounded.lean.
+    assert physlib.without_todos(
+        "Theorems about `HermitianMat`s that have to do with the topological structure. Pretty much everything here "
+        "will\nassume these are matrices over ℂ, but changes to upgrade this to other types are welcome.") == (
+        "Theorems about `HermitianMat`s that have to do with the topological structure. …")
+    assert physlib.without_todos(
+        "The plane waves.\n\nThis module has been generalized to d-dimensions in\n"
+        "`QuantumMechanics/HilbertSpaces/SpaceD/MomentumStates.lean` and will be removed in the near future.") == (
+        "The plane waves.\n\n…")
+    assert physlib.without_todos(
+        "Newtonian mechanics is\nnot limited to point particles, so this force representation is kept independent\n"
+        "of any particular model of matter, with the intention it may get generalized for\nrigid body mechanics.") == "…"
+    assert physlib.without_todos(
+        "To each initial condition we association a trajectory.\n\nEventually we will show that these trajectories "
+        "satisfy the equation of motion.") == "To each initial condition we association a trajectory.\n\n…"
+    assert physlib.without_todos("It is likely one day the material in this file will be moved to Mathlib.") == "…"
+    # A sentence on what the library does not have stays.
+    kept = "The FLRW metric is not yet an object of Physlib."
+    assert physlib.without_todos(kept) == kept
+
+
+def test_a_docstring_cut_whole_shows_its_mark_and_physlibs_tooling_keeps_its_todo_words():
+    source = {"repo": physlib.REPO, "rev": REV}
+    declaration = {"name": "A.count", "kind": "def", "line": 3, "doc": "The number of TODO items.",
+                   "statement": "def count : ℕ", "sorry": False}
+    tooling = physlib.declaration_block(declaration, {"file": "Physlib/Meta/TODO/Basic.lean"}, source, set(), {})
+    assert "> The number of TODO items." in tooling
+    elsewhere = physlib.declaration_block({**declaration, "doc": "TODO: See above."}, {"file": "Physlib/A.lean"},
+                                          source, set(), {})
+    assert "\n\n> …\n\n```lean\ndef count : ℕ\n```" in elsewhere
+
+
+def test_a_class_abbrev_is_read_under_its_own_name():
+    record = physlib.read_module("namespace A\n\n/-- Both. -/\nclass abbrev Both (M : Type) := Inhabited M, Nonempty M\n\n"
+                                 "end A\n", "Physlib/A.lean")
+    assert [(item["name"], item["kind"], item["statement"]) for item in record["declarations"]] == [
+        ("A.Both", "class", "class abbrev Both (M : Type) := Inhabited M, Nonempty M")]
+
+
+def test_links_into_the_repository_follow_the_pin():
+    source = {"repo": physlib.REPO, "rev": REV}
+    assert physlib.pinned("See [here](https://github.com/leanprover-community/physlib/blob/master/scripts/a.md).",
+                          source) == f"See [here]({BLOB}/scripts/a.md)."
+    # A link to a path that is no module of the commit keeps its label; a module's links its article.
+    keys = {"Physlib/A/Basic.lean": "physlib-Physlib.A.Basic"}
+    text = physlib.quoted_prose("See [the old file](../Missing/Basic.lean) and [the basics](Basic.lean).",
+                                "Physlib/A/Covariant.lean", source, keys)
+    assert text == "> See the old file and [the basics](trough:physlib-Physlib.A.Basic)."
 
 
 def test_a_structure_class_or_inductive_type_keeps_its_whole_command_and_no_more():
@@ -636,6 +781,9 @@ def test_the_refresh_writes_nothing_from_a_checkout_it_cannot_read_in_full(tmp_p
     without = README.replace("### [**QuantumInfo**](./QuantumInfo)", "### QuantumInfo")
     assert refused(checkout(tmp_path / "readme", readme=without)) == [
         "README.md: no description of QuantumInfo in its table of libraries"]
+    manifestless = checkout(tmp_path / "manifest")
+    (manifestless / "lake-manifest.json").unlink()
+    assert refused(manifestless) == ["not checked out: lake-manifest.json"]
     no_alpha = README.replace("## PhyslibAlpha\n", "## Alpha\n")
     assert refused(checkout(tmp_path / "alpha", readme=no_alpha)) == ["README.md: no PhyslibAlpha section"]
 
@@ -743,6 +891,8 @@ def test_an_article_shows_the_module_docstring_and_each_declaration_under_its_se
                     "ClassicalMechanics/HarmonicOscillator/Basic.lean#L76). Listed as a significant result in "
                     f"[Theorems.txt]({BLOB}/scripts/lint/exemptions/Theorems.txt).")
     assert "> Energy is conserved.\n>\n> …" in body
+    # The two TODO-only section docstrings after it show one cut mark.
+    assert body.endswith("```\n\n> …") and "> …\n\n> …" not in body
     assert "```lean\ntheorem energy_conservation (t : ℝ) : S.m = S.m\n```" in body
     assert "```lean\nstructure HarmonicOscillator where\n  /-- The mass. -/\n  m : ℝ\n  k : ℝ\n```" in body
     assert links["ClassicalMechanics.HarmonicOscillator"] == f"{BLOB}/Physlib/ClassicalMechanics/HarmonicOscillator/Basic.lean#L49"
@@ -752,7 +902,8 @@ def test_a_docstrings_links_to_the_repository_point_at_articles_or_the_pin(tmp_p
     result, links, pages = built(tmp_path)
     body = pages["physlib/spaceandtime/time/basic.md"]
     assert "[`Units.lean`](deep-units.md)" in body
-    assert f"[the README]({BLOB}/README.md)" in body
+    # A path that is no module of the commit keeps only its label.
+    assert "see also\n> the README and" in body and f"{BLOB}/README.md" not in body
     # A link keeps its target whole, underscores and all.
     assert "[a\\_b](https://example.org/a_b)" in body
     geometric = pages["physlib/classicalmechanics/harmonicoscillator/geometric/README.md"]
@@ -785,6 +936,47 @@ def test_a_module_the_dump_has_no_record_of_is_said_to_have_unknown_dependencies
     assert "The dump has no record" not in built(tmp_path / "full")[0].root.prose
 
 
+def test_a_dump_that_has_under_half_the_names_read_is_refused(tmp_path):
+    loaded = data(tmp_path, DEPS)
+    names = [item["name"] for module in loaded["modules"] for item in module["declarations"] if item["name"]]
+    loaded["deps"]["missing"] = names[: len(names) // 2 + 1]
+    with pytest.raises(ValueError, match="names read from the source missing, over half"):
+        physlib.chapter(loaded)
+
+
+def test_the_front_page_counts_why_a_module_has_no_article(tmp_path):
+    loaded = data(tmp_path, DEPS)
+    result, _ = physlib.chapter(loaded)
+    stats = Counter(result.stats) + Counter({"unshown": 34, "unshown informal": 10, "unshown unread": 1,
+                                             "unshown other": 23})
+    assert ("35 modules have no declaration to show and so no article: 24 declare nothing, holding only imports, a "
+            "module docstring or other commands; 10 hold informal results or TODO items but no declaration to show; "
+            "1 holds only declarations that are private or that Lean does not have.") in physlib.intro(loaded, stats)
+
+
+def test_a_folder_of_tau_cetis_code_says_so_and_links_its_chapter(tmp_path):
+    loaded = data(tmp_path, DEPS)
+    for module in loaded["modules"]:
+        if module["file"].startswith("Physlib/SpaceAndTime/Time/"):
+            module["copyright"] = "2026 The Tau Ceti contributors"
+    result, _ = physlib.chapter(loaded, Container("Tau Ceti", "tauceti"))
+    time = result.targets["physlib-folder-Physlib/SpaceAndTime/Time"]
+    assert ("Its files' headers read “Copyright (c) 2026 The Tau Ceti contributors”: the folder holds code of "
+            "[Tau Ceti](trough:tauceti), which has a chapter of its own here.") in time.prose
+    assert "Tau Ceti" not in physlib.chapter(data(tmp_path / "plain", DEPS))[0].targets[
+        "physlib-folder-Physlib/SpaceAndTime/Time"].prose
+
+
+def test_folder_pages_and_articles_word_one_and_none(tmp_path):
+    result, links, pages = built(tmp_path)
+    geometric = result.targets["physlib-folder-Physlib/ClassicalMechanics/HarmonicOscillator/Geometric"]
+    assert geometric.prose.startswith(f"The folder [Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/]"
+                                      f"(https://github.com/{physlib.REPO}/tree/{REV}/Physlib/ClassicalMechanics/"
+                                      "HarmonicOscillator/Geometric): 1 module, with an article.")
+    braket = result.targets["physlib-QuantumInfo.States.Pure.Braket"]
+    assert "1 declaration, none with a docstring, 1 listed as significant." in braket.body
+
+
 def test_a_dump_of_another_commit_is_refused(tmp_path):
     loaded = data(tmp_path, DEPS)
     loaded["deps"]["rev"] = "c" * 40
@@ -795,12 +987,13 @@ def test_a_dump_of_another_commit_is_refused(tmp_path):
 def test_the_front_page_quotes_the_repository_and_says_how_the_map_is_read(tmp_path):
     result, links, pages = built(tmp_path)
     front = result.root.prose
-    assert front.startswith(f"[Physlib](https://github.com/{physlib.REPO}) is, in its README's words, “An open-source, "
-                            "community, project to digitalize results from physics into Lean 4”.")
+    assert front.startswith(f"[Physlib](https://github.com/{physlib.REPO}) is, in the words of its [README]({BLOB}/README.md),"
+                            " “An open-source, community, project to digitalize results from physics into Lean 4”.")
     assert "maintainers: Léo Lessa and Joseph Tooby-Smith." in front
     assert ("6 articles, 4 in [Physlib](physlib/README.md), 1 in [PhyslibAlpha](physlibalpha/README.md) and 1 in "
             "[QuantumInfo](quantuminfo/README.md).") in front
-    assert "1 module holds nothing else" in front
+    assert "1 module has no declaration to show and so no article." in front
+    assert "without the sentences they mark as not yet formalized: 2 of the 2." in front
     assert "Lean toolchain v4.35.0, Mathlib v4.35.0, [bbbbbbbb]" in front
     assert "—" not in front
     # The pin is named, not described as the newest of anything: that stops being true.

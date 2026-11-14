@@ -196,6 +196,7 @@ formalization_yaml = "absent"
 license = "Apache-2.0"
 toolchain = "v4.35.0"
 mathlib = "56a005855ea1"
+lean_files = 1584
 map_status = "live"
 map_unit = "module"
 map_plan = "One article per Lean module with a declaration, in a part per library (Physlib, PhyslibAlpha, QuantumInfo), on a page per area and per folder below it: the module docstring, then each declaration's docstring and Lean statement under the module's own section headings, the significant results marked. The API maps are quoted on their folders' pages without what they mark as not yet formalized. Edges between modules from Lean: the modules whose declarations a module's statements, or only its proofs, use."

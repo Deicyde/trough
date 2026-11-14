@@ -253,7 +253,7 @@ def generate() -> dict[Path, str]:
         )
     physlib_data = physlib.load(DATA)
     if physlib_data:
-        physlib_built, physlib_links = physlib.chapter(physlib_data)
+        physlib_built, physlib_links = physlib.chapter(physlib_data, tau_root)
         assign_paths(physlib_built.root, ROADMAP / "physlib")
         blueprints.resolve(physlib_built, VAULT)
         files.update(render_tree(physlib_built.root, VAULT))
