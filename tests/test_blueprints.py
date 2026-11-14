@@ -193,6 +193,16 @@ def test_the_catalogs_chapter_note_is_on_the_front_page(blueprint, tmp_path):
     assert demo.note == note
 
 
+def test_a_relative_dochome_is_read_from_the_projects_homepage(tmp_path):
+    (tmp_path / "web.tex").write_text("\\dochome{../docs}\n\\begin{document}\\chapter{C}\n"
+                                      "\\begin{lemma}\\label{a}\\lean{A.b}\\leanok B.\\end{lemma}\n\\end{document}\n")
+    blueprint = leanblueprint.read(tmp_path, "web.tex")
+    site = dataclasses.replace(project(tmp_path), homepage="https://example.org/proj/")
+    assert blueprints.chapter(site, blueprint, {}).lean_links["A.b"] == "https://example.org/proj/docs/find/#doc/A.b"
+    # Without a homepage there is nothing to read it from, and the site check finds the links.
+    assert blueprints.chapter(project(tmp_path), blueprint, {}).lean_links["A.b"] == "../docs/find/#doc/A.b"
+
+
 def test_a_node_in_mathlib_is_the_mathlib_article_it_names(blueprint, tmp_path):
     from trough.vault import Leaf
 

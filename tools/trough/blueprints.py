@@ -21,7 +21,7 @@ import re
 from collections import Counter
 from dataclasses import dataclass
 from pathlib import Path
-from urllib.parse import quote, unquote
+from urllib.parse import quote, unquote, urljoin
 
 from trough import bibtex, leanblueprint
 from trough.leanblueprint import Blueprint, Node, Prose, Proof, Unit, Where
@@ -54,6 +54,7 @@ class Project:
     text: bool  # whether trough may reproduce the blueprint's text
     directory: Path
     note: str = ""  # the catalog's chapter_note, a paragraph for the chapter's front page
+    homepage: str = ""  # the catalog's homepage, where the project publishes its blueprint and docs
 
     @property
     def url(self) -> str:
@@ -83,7 +84,7 @@ def load_projects(data: Path, libraries: list[dict]) -> list[Project]:
         source = json.loads((directory / "source.json").read_text(encoding="utf-8"))
         projects.append(Project(library["id"], library["name"], source["repo"], source["rev"], source.get("date", ""),
                                 source["entry"], source.get("license"), bool(source.get("text", True)), directory,
-                                library.get("chapter_note", "")))
+                                library.get("chapter_note", ""), library.get("homepage", "")))
     return projects
 
 
@@ -234,6 +235,9 @@ def chapter(project: Project, blueprint: Blueprint, mathlib_heads: dict[str, Lea
     references print."""
     captions = {**{kind: kind.capitalize() for kind in KINDS}, **blueprint.captions}
     dochome = blueprint.links.get("dochome", "https://leanprover-community.github.io/mathlib4_docs")
+    if "://" not in dochome and project.homepage:
+        # A relative \dochome is relative to the blueprint, which leanblueprint publishes at <home>/blueprint/.
+        dochome = urljoin(f"{project.homepage.rstrip('/')}/blueprint/", dochome).rstrip("/")
     nodes = [node for node in blueprint.graph if in_lean(node)]
     present = set(nodes)
     # A section whose every node is left out goes with its prose, which is about those results; one
