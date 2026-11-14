@@ -1,0 +1,54 @@
+# The one-off Lean projects trough maps as satellites of the libraries they build on, one [[project]] each.
+# tools/refresh_satellites.py reads each at a pinned commit into data/satellites/<slug>.json. The slug is
+# fixed at admission, as it names the project's page. kind is the survey's: research-project, verification,
+# research-math, textbook-or-course or corpus.
+
+[[project]]
+repo = "fpvandoorn/carleson"
+slug = "fpvandoorn--carleson"
+kind = "research-project"
+
+[[project]]
+repo = "AlexKontorovich/quasi-rh"
+slug = "alexkontorovich--quasi-rh"
+kind = "research-project"
+
+[[project]]
+repo = "Polarnova/FABL"
+slug = "polarnova--fabl"
+kind = "textbook-or-course"
+
+[[project]]
+repo = "MichaelStollBayreuth/JPointsLean"
+slug = "michaelstollbayreuth--jpointslean"
+kind = "verification"
+
+[[project]]
+repo = "AxiomMath/BandMatrixQUE"
+slug = "axiommath--bandmatrixque"
+kind = "research-math"
+
+[[project]]
+repo = "LionSR/CertifiedGaps"
+slug = "lionsr--certifiedgaps"
+kind = "research-project"
+
+[[project]]
+repo = "enaslund/unit-distance-bound-0.0427"
+slug = "enaslund--unit-distance-bound-0-0427"
+kind = "research-project"
+
+[[project]]
+repo = "mfornet/busybeaver"
+slug = "mfornet--busybeaver"
+kind = "research-project"
+
+[[project]]
+repo = "dwrensha/compfiles"
+slug = "dwrensha--compfiles"
+kind = "corpus"
+
+[[project]]
+repo = "kimihiro64/bombieri-vinogradov"
+slug = "kimihiro64--bombieri-vinogradov"
+kind = "research-project"

@@ -26,8 +26,8 @@ from pathlib import Path
 
 from collections import Counter
 
-from trough import anthropic_flt, atlas, blueprints, catalog, cfsg, ff, formal_conjectures, lean_pool, links, mathlib, stacks, tauceti, wiki
-from trough.vault import Leaf, assign_paths, render_tree, walk
+from trough import anthropic_flt, atlas, blueprints, catalog, cfsg, ff, formal_conjectures, lean_pool, links, mathlib, satellites, stacks, tauceti, wiki
+from trough.vault import Container, Leaf, assign_paths, render_container, render_tree, walk
 
 ROOT = Path(__file__).resolve().parent.parent
 VAULT = ROOT / "blueprint"
@@ -56,11 +56,14 @@ def generate() -> dict[Path, str]:
             if first:
                 heads.setdefault(first, node)
     blueprint_rows, lean_links = [], {}
+    # The page of each live chapter, by catalog id, where a satellite project that requires its library goes.
+    hosts: dict[str, Container] = {}
     projects = blueprints.load_projects(DATA, libraries)
     imperial = None
     for project in projects:
         built = blueprints.chapter(project, blueprints.load_blueprint(project), heads)
         assign_paths(built.root, ROADMAP / project.id)
+        hosts[project.id] = built.root
         if project.id == anthropic_flt.IMPERIAL:
             imperial = built.root
         blueprints.resolve(built, VAULT)
@@ -83,6 +86,7 @@ def generate() -> dict[Path, str]:
     if tau and tau.deps:
         tau_root, tau_stats, tau_links = tauceti.chapter(tau)
         assign_paths(tau_root, ROADMAP / "tauceti")
+        hosts["tauceti"] = tau_root
         files.update(render_tree(tau_root, VAULT))
         chapters["tauceti"] = "tauceti/README.md"
         lean_links["tauceti"] = dict(sorted(tau_links.items()))
@@ -104,6 +108,7 @@ def generate() -> dict[Path, str]:
     if ff_libraries:
         ff_built, ff_sections = ff.chapter(ff_libraries)
         assign_paths(ff_built.root, ROADMAP / "formal-frontier")
+        hosts.update(ff_built.targets)
         blueprints.resolve(ff_built, VAULT)
         files.update(render_tree(ff_built.root, VAULT))
         chapters["formal-frontier"] = "formal-frontier/README.md"
@@ -138,6 +143,7 @@ def generate() -> dict[Path, str]:
     if fc_data:
         fc_built, fc_links = formal_conjectures.chapter(fc_data)
         assign_paths(fc_built.root, ROADMAP / "formal-conjectures")
+        hosts["formal-conjectures"] = fc_built.root
         blueprints.resolve(fc_built, VAULT)
         files.update(render_tree(fc_built.root, VAULT))
         chapters["formal-conjectures"] = "formal-conjectures/README.md"
@@ -160,6 +166,7 @@ def generate() -> dict[Path, str]:
     if pool:
         pool_root, pool_stats, pool_parts = lean_pool.chapter(*pool)
         assign_paths(pool_root, ROADMAP / "lean-pool")
+        hosts["lean-pool"] = pool_root
         files.update(render_tree(pool_root, VAULT))
         chapters["lean-pool"] = "lean-pool/README.md"
         for part, names in pool_parts:
@@ -179,6 +186,7 @@ def generate() -> dict[Path, str]:
     if aflt:
         aflt_built, aflt_links = anthropic_flt.chapter(*aflt, imperial)
         assign_paths(aflt_built.root, ROADMAP / "anthropic-flt")
+        hosts["anthropic-flt"] = aflt_built.root
         blueprints.resolve(aflt_built, VAULT)
         files.update(render_tree(aflt_built.root, VAULT))
         chapters["anthropic-flt"] = "anthropic-flt/README.md"
@@ -198,6 +206,7 @@ def generate() -> dict[Path, str]:
     if cfsg_data:
         cfsg_built, cfsg_links = cfsg.chapter(cfsg_data, tau_root)
         assign_paths(cfsg_built.root, ROADMAP / "cfsg")
+        hosts["cfsg"] = cfsg_built.root
         blueprints.resolve(cfsg_built, VAULT)
         files.update(render_tree(cfsg_built.root, VAULT))
         chapters["cfsg"] = "cfsg/README.md"
@@ -218,6 +227,7 @@ def generate() -> dict[Path, str]:
     if stacks_data:
         stacks_built, stacks_links = stacks.chapter(stacks_data)
         assign_paths(stacks_built.root, ROADMAP / "stacks")
+        hosts["stacks"] = stacks_built.root
         blueprints.resolve(stacks_built, VAULT)
         files.update(render_tree(stacks_built.root, VAULT))
         chapters["stacks"] = "stacks/README.md"
@@ -237,6 +247,7 @@ def generate() -> dict[Path, str]:
     if atlas_data:
         atlas_built, atlas_links = atlas.chapter(atlas_data)
         assign_paths(atlas_built.root, ROADMAP / "atlas")
+        hosts["atlas-lean"] = atlas_built.root
         blueprints.resolve(atlas_built, VAULT)
         files.update(render_tree(atlas_built.root, VAULT))
         chapters["atlas-lean"] = "atlas/README.md"
@@ -249,6 +260,55 @@ def generate() -> dict[Path, str]:
             f"atlas: {at['articles']} topic articles on {at['containers']} pages in {at['subjects']} subjects and "
             f"{at['parts']} areas; {at['results']} results: {at['proved']} proved, {at['wanted']} wanted, {at['sorry']} "
             f"with sorry, {at['absent']} not declared, {at['none']} without a declaration",
+            file=sys.stderr,
+        )
+    sat_records, sat_packages, sat_overrides = satellites.load(DATA)
+    sat_stats = None
+    if sat_records:
+        overview = chapter.entries[0].node
+        areas = {f"mathlib:{area.slug}": area for area in overview.children if isinstance(area, Container)}
+        names: dict[str, Leaf] = {}
+        for root in {id(host): host for host in hosts.values()}.values():
+            for node in walk(root):
+                if isinstance(node, Leaf):
+                    for name in dict(node.fields).get("lean", "").split(", "):
+                        if name:
+                            names.setdefault(name, node)
+        pages, sat_stats, sat_targets = satellites.chapter(
+            sat_records, sat_packages, sat_overrides, libraries, areas | {satellites.OVERVIEW: overview} | hosts,
+            heads, names)
+        for host, projects_page, _ in pages:
+            if any(child.slug == "projects" for child in host.children):
+                raise ValueError(f"{host.path}: a child named projects is in the way of its satellite projects")
+            assign_paths(projects_page, host.path.parent / "projects")
+        for host, projects_page, names_here in pages:
+            blueprints.resolve(blueprints.Built(projects_page, sat_targets, {}, {}, Counter()), VAULT)
+            files.update(render_tree(projects_page, VAULT))
+            if names_here:
+                lean_links[projects_page.path.parent.relative_to(ROADMAP).as_posix()] = dict(sorted(names_here.items()))
+            satellites.attach(host, projects_page)
+        if any(host.path.is_relative_to(ROADMAP / "mathlib") for host, _, _ in pages):
+            chapter.prose += ("\n\nLean projects outside the libraries mapped here that build on Mathlib have cards in a "
+                              "projects box beside the sections of the overview area they draw on most.")
+            pages.append((chapter, None, None))
+        for host in {id(host): host for host, _, _ in pages}.values():
+            # The host's page, again, now that it lists its projects page; Mathlib's pages keep their facts in
+            # annotations.
+            previous = host.path.read_text(encoding="utf-8") if host.path.is_file() else None
+            files[host.path] = render_container(host, VAULT, previous, not host.path.is_relative_to(ROADMAP / "mathlib"))
+        blueprint_rows.append((
+            "Satellite projects", "DECOMPOSED",
+            f"{sat_stats['cards']} project cards, each in a projects box on the page of the library it builds on; "
+            f"{sat_stats['without_headline']} more listed there without a named main result"
+            + (f"; {sat_stats['held_back']} held back, as they build on neither Mathlib nor a library mapped here"
+               if sat_stats["held_back"] else "") + "."))
+        print(
+            f"satellites: {sat_stats['cards']} cards of {sat_stats['admitted']} admitted projects "
+            f"({sat_stats['projects']} read) in {sat_stats['homes']} homes; {sat_stats['without_headline']} without "
+            f"a headline, {sat_stats['held_back']} held back; headlines by blueprint {sat_stats['rule_blueprint']}, "
+            f"README {sat_stats['rule_readme']}, Main module {sat_stats['rule_main']}; {sat_stats['statement_edges']} "
+            f"statement, {sat_stats['proof_edges']} proof and {sat_stats['satellite_edges']} project edges; "
+            f"{sat_stats['mathlib_edges']} cards with Mathlib edges",
             file=sys.stderr,
         )
     files[ROOT / "hooks" / "lean-links.json"] = json.dumps(lean_links, indent=1, ensure_ascii=False) + "\n"
@@ -279,6 +339,7 @@ def generate() -> dict[Path, str]:
         cfsg=cfsg_data["rev"] if cfsg_data else None,
         stacks=stacks_data["source"]["rev"] if stacks_data else None,
         atlas=atlas_data["source"]["rev"] if atlas_data else None,
+        satellites=sat_stats["projects"] if sat_stats else None,
     )
     print(
         f"mathlib: {stats['articles']} articles ({stats['formalized']} in Mathlib, {stats['stated']} stated only, "

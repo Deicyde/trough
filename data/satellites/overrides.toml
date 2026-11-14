@@ -1,0 +1,8 @@
+# Homes chosen by hand, one [[override]] each, for projects the placement rules put in the wrong place.
+# home is an overview area of Mathlib ("mathlib:<slug>") or a catalog library's id; reason is shown in the
+# project's Placement note.
+
+[[override]]
+repo = "enaslund/unit-distance-bound-0.0427"
+home = "mathlib:combinatorics"
+reason = "Its README states lower bounds for the number of unit-distance pairs among points in the Euclidean plane, a counting question of combinatorial geometry; the number fields it imports are its tools."

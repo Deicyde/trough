@@ -1,0 +1,13 @@
+# Lake packages that are not a catalog library's repository but stand for one in trough, one [[package]]
+# each. A requirement on a catalog library's repository needs no entry here; one on a package listed
+# nowhere is shown as plain text. chapter is a catalog library's id.
+
+[[package]]
+url = "https://github.com/kimihiro64/PrimeNumberTheoremAnd"
+chapter = "pnt-plus"
+reason = "a GitHub fork of AlexKontorovich/PrimeNumberTheoremAnd"
+
+[[package]]
+url = "https://github.com/smmercuri/PrimeNumberTheoremAnd"
+chapter = "pnt-plus"
+reason = "a GitHub fork of AlexKontorovich/PrimeNumberTheoremAnd"
