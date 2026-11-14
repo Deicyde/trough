@@ -278,7 +278,7 @@ LETTERS = {"ss": "ß", "o": "ø", "O": "Ø", "ae": "æ", "AE": "Æ", "oe": "œ",
            "ldots": "…", "dots": "…", "textellipsis": "…", "textendash": "–", "textemdash": "—",
            "textquoteright": "’", "textquoteleft": "‘", "textquotedblleft": "“", "textquotedblright": "”",
            "LaTeX": "LaTeX", "TeX": "TeX", "textbackslash": "\\\\", "textasciitilde": "~", "textbar": "|",
-           "textless": "$<$", "textgreater": "$>$", "textdegree": "°", "pounds": "£", "euro": "€"}
+           "textless": "$<$", "textgreater": "$>$", "textdegree": "°", "pounds": "£", "euro": "€", "checkmark": "✓"}
 SYMBOLS = {"%": "%", "&": "&", "#": "\\#", "_": "\\_", "$": "\\$", "{": "{", "}": "}", " ": " ", ",": " ",
            ";": " ", ":": " ", "!": "", "/": "", "-": "", "\\": " ", "\n": " ", "\t": " ", "@": ""}
 EMPHASIS = {"emph", "textit", "textsl", "mathit"}
@@ -288,7 +288,8 @@ TRANSPARENT = {"textrm", "textsf", "textup", "textnormal", "textmd", "textsc", "
                "uline", "textlf", "foreignlanguage", "selectlanguage", "texorpdfstring", "NoCaseChange"}
 DROPPED = {"label", "lean", "uses", "proves", "discussion", "alsoIn", "index", "hspace", "vspace", "hskip", "includegraphics",
            "vskip", "phantom", "hphantom", "vphantom", "color", "pagecolor", "setlength", "addtolength",
-           "addcontentsline", "nocite", "bibliographystyle", "bibliography", "raisebox", "kern", "rule"}
+           "addcontentsline", "nocite", "bibliographystyle", "bibliography", "raisebox", "kern", "rule",
+           "title", "author", "date"}
 QUIET = {"leanok", "mathlibok", "notready", "noindent", "indent", "medskip", "bigskip", "smallskip", "newline",
          "linebreak", "pagebreak", "newpage", "clearpage", "centering", "raggedright", "raggedleft", "par",
          "relax", "protect", "nobreak", "allowbreak", "quad", "qquad", "enspace", "thinspace", "normalfont",
@@ -519,6 +520,9 @@ class Writer:
                 elif env in LISTS:
                     flush()
                     out.extend(self.list_block(env, body))
+                elif env == "thebibliography":
+                    flush()
+                    out.extend(self.list_block("itemize", bibliography_items(body)))
                 elif env in QUOTES:
                     flush()
                     out.append(Quote(self.blocks(body)))
@@ -781,6 +785,14 @@ class Writer:
                 return j
             para.append(self.styled(self.inline(arg[0]).strip(), "strong" if name in STRONG else "em"))
             return arg[1]
+        if name == "verb" and j < len(tex):
+            k = j + (tex[j] == "*")
+            end = tex.find(tex[k], k + 1) if k < len(tex) else -1
+            if end < 0:
+                return j
+            code = tex[k + 1 : end]
+            para.append(f"`{code}`" if self.markdown and code else code)
+            return end + 1
         if name in CODE:
             arg = argument(tex, j)
             if not arg:
@@ -919,6 +931,14 @@ class Writer:
     def plain_text(self, tex: str) -> str:
         writer = Writer(self.macros, self.ref, self.bib, markdown=False)
         return re.sub(r"\s+", " ", writer.inline(tex)).strip()
+
+
+def bibliography_items(body: str) -> str:
+    """A thebibliography's body as an itemize body: the widest label goes, and each \\bibitem, with its
+    key and any printed label, is an \\item."""
+    widest = argument(body, 0)
+    body = body[widest[1]:] if widest else body
+    return re.sub(r"\\bibitem\s*(?:\[[^\]]*\])?\s*\{[^}]*\}", r"\\item ", body)
 
 
 def cited(text: str) -> list[str]:

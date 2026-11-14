@@ -1,0 +1,12 @@
+# Introduction
+
+Steininger and Yurkevich ([Steininger and Yurkevich 2025](https://arxiv.org/abs/2508.18475)) constructed a convex polyhedron, the *Noperthedron*, and proved that it does not have Rupert's property: no copy of it can be passed through a hole in another copy. This blueprint describes a Lean proof of the same theorem that is checked by the Lean kernel alone, using only the standard axioms.
+
+The overall strategy agrees with ([Steininger and Yurkevich 2025](https://arxiv.org/abs/2508.18475)): reduce to purely rotational passages, use the symmetries of the Noperthedron to shrink the space of rotation pairs to a bounded box, cover that box by a large tree of sub-boxes, and exclude each sub-box by exhibiting an inner vertex whose shadow lies outside the outer shadow. The details differ in several ways.
+
+- **Rational coordinates.** Rotations are parametrized by Cayley coordinates (Chapter [Cayley coordinates](../cayley-coordinates/README.md)) instead of angles. Every rotation matrix in the case analysis is a rational function of the box coordinates, so every leaf check is exact polynomial arithmetic. The only irrational numbers are the fixed constants $\cos(2\pi k/15)$, $\sin(2\pi k/15)$ and the vertices (Chapter [Irrational data](../irrational-data/README.md)).
+- **A different reduction.** The symmetry reduction (Chapter [The reduction](../the-reduction/README.md)) puts the outer view in a wedge, picks the relative rotation from its orbit under the symmetries by maximizing a score, and covers the result by five Cayley charts.
+- **No local theorem.** Near the configurations where the inner and outer shadows coincide, ([Steininger and Yurkevich 2025](https://arxiv.org/abs/2508.18475)) uses a separate local argument. Here these configurations are blown up (Section [The blow-up](../boxes-and-leaf-certificates/the-blow-up/README.md)): the vanishing gap factors exactly, and the remaining factor is checked like any other polynomial.
+- **Polynomial bounds instead of Lipschitz bounds.** A box is excluded by a lower bound of a polynomial on $[-1,1]^5$ (Chapter [Lower bounds of polynomials](../lower-bounds-of-polynomials/README.md)), computed from its coefficients or from its Bernstein coefficients.
+
+The case analysis is a tree with $245{,}484$ leaves. It is produced by an untrusted floating-point search and checked by a Lean function that the kernel evaluates (Chapter [The case analysis and the main theorem](../the-case-analysis-and-the-main-theorem/README.md)).

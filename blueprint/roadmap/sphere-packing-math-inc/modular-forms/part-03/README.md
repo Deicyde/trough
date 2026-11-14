@@ -1,0 +1,56 @@
+---
+navigation: transparent
+---
+
+# lv1-lv2-identities to anti-serre-der-pos
+
+These are also related to $E_4$, $E_6$, and $\Delta$ as follows.
+
+- [lv1-lv2-identities](lemma-lv1-lv2-identities.md)
+
+The *strict* positivity of Jacobi theta functions might needed later.
+
+- [theta-pos](cor-theta-pos.md)
+
+## Quasimodular forms and derivatives
+
+Morally, quasimodular forms can be thought as *modular forms with differentiations*. It can be defined formally as follows: Let $f: \mathfrak{H} \to \mathbb{C}$ be a holomorphic function, and let $k$ and $s \ge 0$ be integers. The function $f$ is a *quasimodular form of weight $k$, level $\Gamma$, and depth $s$* if there exist holomorphic functions $f_0, \dots, f_s : \mathfrak{H} \to \mathbb{C}$ such that
+
+$$
+(f|_{k}\gamma)(z) = (cz + d)^{-k} f\left(\frac{az + b}{cz + d}\right) = \sum_{j=0}^{s} f_j(z) \left(\frac{c}{cz + d}\right)^j\qquad\text{(33)}
+$$
+
+for all $z \in \mathfrak{H}$ and $\gamma = \left(\begin{smallmatrix} a&b\\c&d \end{smallmatrix}\right) \in \Gamma$.
+
+By taking $\gamma = \left(\begin{smallmatrix} 1 & 0 \\ 0 & 1 \end{smallmatrix}\right)$, one can check that we should have $f_0 = f$. Thus, a quasimodular form of depth $0$ is just a modular form of same weight and level. Also, it is easy to see that the space of quasimodular forms is closed under the normalized derivative.
+
+In the Lean formalization, we do not use the above definition of quasimodular forms directly. Instead, we only use $E_2$ (defined in [Definition E2](../part-01/def-e2.md)) and define the normalized derivative operator $D$ ([Definition derivative](def-derivative.md)) and the Serre derivative $\partial_k$ ([Definition serre-der](def-serre-der.md)) as the main tools to work with quasimodular forms.
+
+- [derivative](def-derivative.md)
+
+Normalizing the derivative by $1/(2 \pi i)$ as in [(34)](def-derivative.md) is standard in the theory of modular forms, since it makes the $q$-expansion coefficients nicer.
+
+- [der-q-series](lemma-der-q-series.md)
+
+The most important example of quasimodular form is the weight 2 Eisenstein series $E_2$ ([Definition E2](../part-01/def-e2.md)). Using it, we can define the *Serre derivative* of a quasimodular form.
+
+- [serre-der](def-serre-der.md)
+- [serre-der-equiv-action](thm-serre-der-equiv-action.md)
+
+As a direct consequence of Theorem [serre-der-equiv-action](thm-serre-der-equiv-action.md), we can check that the Serre derivative preserves the modularity of a modular form.
+
+- [serre-der-modularity](thm-serre-der-modularity.md)
+
+**Remark.** More generally, the following theorem holds: if $F$ is a quasimodular form of weight $k$ and depth $s$, then $\partial_{k-s}F$ is a quasimodular form of weight $k + 2$ *and depth $\le s$* of the same level. We will not prove this here.
+
+- [ramanujan-formula](thm-ramanujan-formula.md)
+- [logder-disc-E2](cor-logder-disc-e2.md)
+
+Similar argument allow us to compute (Serre) derivatives of $H_2, H_3, H_4$.
+
+- [theta-der](prop-theta-der.md)
+- [serre-der-prod-rule](thm-serre-der-prod-rule.md)
+
+We also have the following useful theorem for proving positivity of quasimodular forms on the imaginary axis, which is (Lee, Proposition 3.5, Corollary 3.6).
+
+- [anti-serre-der-pos](thm-anti-serre-der-pos.md)

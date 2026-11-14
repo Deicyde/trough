@@ -13,6 +13,22 @@ Each library is a row. A mapped library has one row per source it is mapped from
 | Polynomial Freiman-Ruzsa | `DECOMPOSED` | [213 blueprint nodes in Lean](../roadmap/pfr/README.md), one article per node. |
 | Equational Theories | `DECOMPOSED` | [137 blueprint nodes in Lean](../roadmap/equational-theories/README.md), one article per node. |
 | Strong PNT (Math Inc) | `DECOMPOSED` | [615 blueprint nodes in Lean](../roadmap/strongpnt/README.md), one article per node. |
+| Carleson's theorem | `DECOMPOSED` | [179 blueprint nodes in Lean](../roadmap/carleson/README.md), one article per node. |
+| Sphere packing in dimension 8 | `DECOMPOSED` | [94 blueprint nodes in Lean](../roadmap/sphere-packing/README.md), one article per node. |
+| Sphere packing in dimensions 8 and 24 (Math Inc) | `DECOMPOSED` | [159 blueprint nodes in Lean](../roadmap/sphere-packing-math-inc/README.md), one article per node. |
+| Consistency of New Foundations | `DECOMPOSED` | [59 blueprint nodes in Lean](../roadmap/con-nf/README.md), one article per node. |
+| Brownian motion | `DECOMPOSED` | [492 blueprint nodes in Lean](../roadmap/brownian-motion/README.md), one article per node. |
+| Sphere eversion | `DECOMPOSED` | [73 blueprint nodes in Lean](../roadmap/sphere-eversion/README.md), one article per node. |
+| Noperthedron | `DECOMPOSED` | [68 blueprint nodes in Lean](../roadmap/noperthedron/README.md), one article per node. |
+| Kummer's criterion | `DECOMPOSED` | [93 blueprint nodes in Lean](../roadmap/kummer-criterion/README.md), one article per node. |
+| Kelley-Meka bound | `DECOMPOSED` | [37 blueprint nodes in Lean](../roadmap/apap/README.md), one article per node. |
+| Exchangeability and de Finetti | `DECOMPOSED` | [52 blueprint nodes in Lean](../roadmap/exchangeability/README.md), one article per node. |
+| Class field theory | `DECOMPOSED` | [52 blueprint nodes in Lean](../roadmap/class-field-theory/README.md), one article per node. |
+| Lower bounds for hypothesis testing | `DECOMPOSED` | [180 blueprint nodes in Lean](../roadmap/testing-lower-bounds/README.md), one article per node. |
+| MIP* = RE | `DECOMPOSED` | [667 blueprint nodes in Lean](../roadmap/mip-re/README.md), one article per node. |
+| ArkLib | `DECOMPOSED` | [261 blueprint nodes in Lean](../roadmap/arklib/README.md), one article per node. |
+| Formal Book | `DECOMPOSED` | [62 blueprint nodes in Lean](../roadmap/formal-book/README.md), one article per node. |
+| Toric varieties | `DECOMPOSED` | [66 blueprint nodes in Lean](../roadmap/toric/README.md), one article per node. |
 | Tau Ceti | `DECOMPOSED` | [3,608 articles on 4,865 declarations](../roadmap/tauceti/README.md) its roadmaps' statuses name or its docstrings name as results, the forms of one result in one article. |
 | Formal Frontier / Adic modules | `DECOMPOSED` | [1 highlight of its formalization.yaml](../roadmap/formal-frontier/commutative-algebra/adic-modules/README.md) whose declarations the scan finds in the linked file, one article each. |
 | Formal Frontier / Algebraic direct limits | `OUT` | Mapped as [a page](../roadmap/formal-frontier/commutative-algebra/algebraic-direct-limits/README.md) without articles: none of its headline results links a declaration the scan finds in the linked file at the pinned commit. |

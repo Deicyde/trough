@@ -1,0 +1,73 @@
+# f-divergences
+
+## Definition and basic properties
+
+Everywhere in this document, the functions used in divergences are assumed measurable, continuous and convex on $[0, +\infty)$. For such a function $f : \mathbb{R} \to \mathbb{R}$, we write $f'(\infty) = \lim_{x \to +\infty} f(x)/x$ (which can be infinite).
+
+For $\mu, \nu$ two measures, we denote by $\mu_{\perp \nu}$ the singular part of $\mu$ with respect to $\nu$.
+
+## [f-divergence to integrable_fDiv_compProd_iff](part-01/README.md)
+
+- [f-divergence](part-01/def-fdiv.md)
+- [fDiv_ne_top_iff](part-01/lem-fdiv-ne-top-iff.md)
+- [fDiv_self](part-01/lem-fdiv-self.md)
+- [fDiv_eq_zero_iff](part-01/lem-fdiv-eq-zero-iff.md)
+- [fDiv_mul](part-01/lem-fdiv-mul.md)
+- [fDiv_add](part-01/lem-fdiv-add.md)
+- [fDiv_map_measurableEmbedding](part-01/lem-fdiv-map-measurableembedding.md)
+- [fDiv_symm](part-01/lem-fdiv-symm.md)
+- [fDiv_add_smul_left](part-01/lem-fdiv-add-smul-left.md)
+- [fDiv_add_smul_right](part-01/lem-fdiv-add-smul-right.md)
+- [fDiv_add_smul_right'](part-01/lem-fdiv-add-smul-right-2.md)
+- [fDiv_absolutelyContinuous_add_mutuallySingular](part-01/lem-fdiv-absolutelycontinuous-add-mutuallysingul.md)
+- [Superseded by Lemma fDiv_add_measure_le](part-01/lem-fdiv-add-measure-le-of-ac.md)
+- [fDiv_add_measure_le](part-01/lem-fdiv-add-measure-le.md)
+- [fDiv_eq_add_withDensity_derivAtTop](part-01/lem-fdiv-eq-add-withdensity-derivattop.md)
+- [Superseded by Lemma le_fDiv](part-01/lem-le-fdiv-of-ac.md)
+- [le_fDiv](part-01/lem-le-fdiv.md)
+- [Conditional f-divergence](part-01/def-condfdiv.md)
+- [condFDiv_const](part-01/lem-condfdiv-const.md)
+- [integrable_fDiv_compProd_iff](part-01/lem-integrable-fdiv-compprod-iff.md)
+
+## [condFDiv_ne_top_iff to fDiv_statInfoFun_eq](part-02/README.md)
+
+- [condFDiv_ne_top_iff](part-02/lem-condfdiv-ne-top-iff.md)
+- [fDiv_compProd_ne_top_iff](part-02/lem-fdiv-compprod-ne-top-iff.md)
+- [fDiv_compProd_right](part-02/lem-fdiv-compprod-right.md)
+- [Curvature measure](part-02/def-curvaturemeasure.md)
+- [curvatureMeasure_mul](part-02/lem-curvaturemeasure-mul.md)
+- [curvatureMeasure_add](part-02/lem-curvaturemeasure-add.md)
+- [convex_taylor](part-02/lem-convex-taylor.md)
+- [statInfoFun](part-02/def-statinfofun.md)
+- [fDiv_eq_integral_eGamma](part-02/thm-fdiv-eq-integral-egamma.md)
+- [DPI_of_DPI_ac](part-02/lem-dpi-of-dpi-ac.md)
+- [Composition-product with a kernel](part-02/thm-fdiv-compprod-left-1.md)
+- [fDiv_prod_left_1](part-02/cor-fdiv-prod-left-1.md)
+- [fDiv_map_le](part-02/thm-fdiv-map-le.md)
+- [Data-processing](part-02/thm-fdiv-data-proc-3.md)
+- [fDiv_le_compProd_1](part-02/thm-fdiv-le-compprod-1.md)
+- [Marginals](part-02/thm-fdiv-fst-le-1.md)
+- [fDiv_comp_le_compProd_1](part-02/lem-fdiv-comp-le-compprod-1.md)
+- [Conditioning increases f-divergence](part-02/thm-fdiv-comp-le-condfdiv-1.md)
+- [Data-processing](part-02/thm-fdiv-data-proc-1.md)
+- [fDiv_statInfoFun_eq](part-02/lem-fdiv-statinfofun-eq.md)
+
+## [fDiv_statInfoFun_eq_statInfo to tv_eq_fDiv](part-03/README.md)
+
+- [fDiv_statInfoFun_eq_statInfo](part-03/cor-fdiv-statinfofun-eq-statinfo.md)
+- [fDiv_phi_data_proc](part-03/lem-fdiv-phi-data-proc.md)
+- [Data-processing](part-03/thm-fdiv-data-proc-2.md)
+- [fDiv_trim_le](part-03/thm-fdiv-trim-le.md)
+- [fDiv_map_eq_fDiv_trim_of_ac](part-03/lem-fdiv-map-eq-fdiv-trim-of-ac.md)
+- [fDiv_le_compProd_2](part-03/thm-fdiv-le-compprod-2.md)
+- [fDiv_comp_le_compProd_2](part-03/thm-fdiv-comp-le-compprod-2.md)
+- [Conditioning increases f-divergence](part-03/thm-fdiv-comp-le-condfdiv-2.md)
+- [Marginals](part-03/thm-fdiv-fst-le-2.md)
+- [fDiv_compProd_prod_eq](part-03/lem-fdiv-compprod-prod-eq.md)
+- [data_proc_event](part-03/cor-data-proc-event.md)
+- [Joint convexity](part-03/thm-fdiv-convex.md)
+- [fDiv_mono_fun](part-03/lem-fdiv-mono-fun.md)
+- [bh_fDiv](part-03/thm-bh-fdiv.md)
+- [Bretagnolle-Huber inequality](part-03/cor-bh-kl.md)
+- [statInfo_eq_fDiv](part-03/lem-statinfo-eq-fdiv.md)
+- [tv_eq_fDiv](part-03/lem-tv-eq-fdiv.md)

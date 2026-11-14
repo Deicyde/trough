@@ -1,0 +1,56 @@
+---
+navigation: transparent
+---
+
+# The value is a continuous… to The Aldous–Lyons conjecture is…
+
+- [The value is a continuous functional; I:550](lem-val-on-continuous.md)
+- [The sofic value is at most the ergodic value, with equality under Aldous–Lyons; Corollary I:550](cor-sof-eq-erg.md)
+- [Main Theorem I (1): the sofic value is approximable from below; I:594](thm-main-theorem-i-lower.md)
+- [From word indicators to invariant random subgroups](lem-irs-of-good.md)
+- [Pseudo-subgroup polytopes, discretized; I:927, I:1105](def-pseudo-subgroup-polytope.md)
+- [The upper value bounds the ergodic value](lem-erg-le-upper.md)
+- [The upper value converges to the ergodic value](lem-upper-converge.md)
+- [Main Theorem I (2): the ergodic value is approximable from above; I:594](thm-main-theorem-i-upper.md)
+- [Aldous–Lyons makes the sofic value approximable; Corollary I:605](cor-al-sof-approximable.md)
+- [The Aldous–Lyons conjecture is false; Corollary I:2144](thm-aldous-lyons-false.md)
+- [The Aldous–Lyons conjecture is false, from tailored answer reduction](cor-aldous-lyons-false-ar.md)
+- [The Aldous–Lyons conjecture is false](cor-aldous-lyons-false-final.md)
+
+- Z. Ji, A. Natarajan, T. Vidick, J. Wright, H. Yuen. $\mathrm{MIP}^* = \mathrm{RE}$. arXiv:2001.04383, 2020 (revised 2022).
+- Z. Ji, A. Natarajan, T. Vidick, J. Wright, H. Yuen. Quantum soundness of the classical low individual degree test. arXiv:2009.12982, 2020.
+- Z. Ji, A. Natarajan, T. Vidick, J. Wright, H. Yuen. Quantum soundness of testing tensor codes. *Discrete Analysis*, 2024:6. arXiv:2111.08131.
+- A. Coladangelo, J. Stark. Robust self-testing for linear constraint system games. arXiv:1709.09267, 2017.
+- A. Natarajan, T. Vidick. A quantum linearity test for robustly verifying entanglement. *STOC 2017*. arXiv:1610.03574.
+- A. Natarajan, J. Wright. $\mathrm{NEEXP} \subseteq \mathrm{MIP}^*$. In *Proc. 60th FOCS*, 2019. arXiv:1904.05870.
+- W. T. Gowers, O. Hatami. Inverse and stability theorems for approximate representations of finite groups. *Sbornik: Mathematics*, 208(12):1784–1817, 2017. arXiv:1510.04085.
+- M. de la Salle. Orthogonalization of positive operator valued measures. arXiv:2103.14126, 2021.
+- T. Vidick. Almost synchronous quantum correlations. *Journal of Mathematical Physics*, 63(2):022201, 2022. arXiv:2103.02468.
+- M. Bavarian, T. Vidick, H. Yuen. Hardness amplification for entangled games via anchoring. In *Proc. 49th STOC*, 2017. arXiv:1509.07466.
+- A. Marks, S. S. Nezhadi, H. Yuen. The recursive compression method for proving undecidability results. Manuscript.
+- J. Lin. Tracially embeddable strategies: lifting MIP$^*$ tricks to MIP$^{\mathrm{co}}$. arXiv:2304.01940, 2023.
+- J. Lin. $\mathrm{MIP}^{\mathrm{co}} = \mathrm{coRE}$. In *Proc. 58th STOC*, 2026. arXiv:2510.07162.
+- X. Wu, J.-D. Bancal, M. McKague, V. Scarani. Device-independent parallel self-testing of two singlets. *Physical Review A*, 93:062121, 2016. arXiv:1512.02074.
+- J. Fitzsimons, Z. Ji, T. Vidick, H. Yuen. Quantum proof systems for iterated exponential time, and beyond. In *Proc. 51st STOC*, 2019. arXiv:1805.12166.
+- W. Slofstra. The set of quantum correlations is not closed. *Forum of Mathematics, Pi*, 7:E1, 2019. arXiv:1703.08618.
+- M. Junge, M. Navascués, C. Palazuelos, D. Pérez-García, V. Scholz, R. Werner. Connes' embedding problem and Tsirelson's problem. *Journal of Mathematical Physics*, 52(1):012102, 2011.
+- T. Fritz. Tsirelson's problem and Kirchberg's conjecture. *Reviews in Mathematical Physics*, 24(05):1250012, 2012.
+- N. Ozawa. About the Connes embedding conjecture: algebraic approaches. *Japanese Journal of Mathematics*, 8(1):147–183, 2013.
+- S.-J. Kim, V. Paulsen, C. Schafhauser. A synchronous game for binary constraint systems. *Journal of Mathematical Physics*, 59(3):032201, 2018.
+- V. Paulsen, S. Severini, D. Stahlke, I. Todorov, A. Winter. Estimating quantum chromatic numbers. *Journal of Functional Analysis*, 270(6):2188–2222, 2016.
+- C. Papadimitriou, M. Yannakakis. A note on succinct representations of graphs. *Information and Control*, 71(3):181–185, 1986.
+- S. Cook. The complexity of theorem-proving procedures. In *Proc. 3rd STOC*, 1971.
+- V. Shoup. New algorithms for finding irreducible polynomials over finite fields. *Mathematics of Computation*, 54(189):435–447, 1990.
+- H. W. Lenstra, Jr. Finding isomorphisms between finite fields. *Mathematics of Computation*, 56(193):329–347, 1991.
+- J. Schwartz. Fast probabilistic algorithms for verification of polynomial identities. *Journal of the ACM*, 27(4):701–717, 1980.
+- R. Zippel. Probabilistic algorithms for sparse polynomials. In *Symbolic and Algebraic Computation*, pages 216–226, 1979.
+- J. W. Helton, S. A. McCullough. A Positivstellensatz for non-commutative polynomials. *Transactions of the American Mathematical Society*, 356(9):3721–3737, 2004.
+- M. Navascués, S. Pironio, A. Acín. A convergent hierarchy of semidefinite programs characterizing the set of quantum correlations. *New Journal of Physics*, 10(7):073013, 2008.
+- B. Durand, A. Romashchenko, A. Shen. Fixed-point tile sets and their applications. *Journal of Computer and System Sciences*, 78(3):731–764, 2012.
+- OpenAI. Ten advances in mathematics and theoretical computer science. Chapter 6: Exponential parallel repetition for all two-player entangled games. 2026. <https://cdn.openai.com/pdf/ten-proofs-oai.pdf>; Lean formalization at <https://github.com/openai/ten-proofs>.
+- T. Vidick. Uniform direct parallel repetition for two-player commuting-operator strategies. Manuscript with Lean formalization, 2026. <https://github.com/vidick/commuting-repetition>.
+- Adversarial verification campaign of the `mipre-proof` manuscript. Repository `vidick/mipre-proof` at commit `4768735`, 2026; report on this blueprint of 11 September 2026, with its ledger and claim-tests. The findings acted on, and those deferred, are recorded in `planning/next-steps.md`. Claims it makes about sources not vendored here are marked as unverified where they are used below.
+- Companion paper and proof ledger. Repository `vidick/MIPRE-proof` at commit `a459dee4413a256107fc2d227bab298eba04051c`, consulted September 2026. Current source contracts and reviewed corrections; the correspondence and remaining formalization adapters are recorded in `planning/paper-correspondence.md`. Ledger review is distinct from a Lean proof.
+- S. Basu, R. Pollack and M.-F. Roy. *Algorithms in Real Algebraic Geometry*, 2nd edition. Algorithms and Computation in Mathematics 10, Springer, 2006.
+- L. Bowen, M. Chapman, T. Vidick. The Aldous–Lyons conjecture II: undecidability. arXiv:2501.00173, 2025.
+- L. Bowen, M. Chapman, A. Lubotzky, T. Vidick. The Aldous–Lyons conjecture I: subgroup tests. arXiv:2408.00110, 2024.

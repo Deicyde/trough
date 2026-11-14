@@ -1,3 +1,4 @@
+import dataclasses
 import json
 from pathlib import Path
 
@@ -184,6 +185,24 @@ def test_articles_carry_the_blueprints_marks(blueprint, tmp_path):
     assert basics.tail == "**Remark.** A remark.\n\n*Proof.* Proves the remark, not the lemma."
 
 
+def test_the_catalogs_chapter_note_is_on_the_front_page(blueprint, tmp_path):
+    note = "A fork of o/q, one commit ahead of it."
+    built = blueprints.chapter(dataclasses.replace(project(tmp_path), note=note), blueprint, {})
+    assert built.root.prose.split("\n\n")[1] == note
+    [demo] = blueprints.load_projects(DATA.parent, [{"id": "pfr", "name": "PFR", "chapter_note": note}])
+    assert demo.note == note
+
+
+def test_a_relative_dochome_is_read_from_the_projects_homepage(tmp_path):
+    (tmp_path / "web.tex").write_text("\\dochome{../docs}\n\\begin{document}\\chapter{C}\n"
+                                      "\\begin{lemma}\\label{a}\\lean{A.b}\\leanok B.\\end{lemma}\n\\end{document}\n")
+    blueprint = leanblueprint.read(tmp_path, "web.tex")
+    site = dataclasses.replace(project(tmp_path), homepage="https://example.org/proj/")
+    assert blueprints.chapter(site, blueprint, {}).lean_links["A.b"] == "https://example.org/proj/docs/find/#doc/A.b"
+    # Without a homepage there is nothing to read it from, and the site check finds the links.
+    assert blueprints.chapter(project(tmp_path), blueprint, {}).lean_links["A.b"] == "../docs/find/#doc/A.b"
+
+
 def test_a_node_in_mathlib_is_the_mathlib_article_it_names(blueprint, tmp_path):
     from trough.vault import Leaf
 
@@ -303,6 +322,41 @@ def test_missing_files_are_problems(tmp_path):
     assert all(leanblueprint.UNREAD.search(problem) for problem in problems)  # so a refresh refuses
     with pytest.raises(FileNotFoundError):
         leanblueprint.read(tmp_path, "renamed.tex")
+
+
+def test_an_input_that_holds_no_tex_is_skipped(tmp_path):
+    """A bibliography LaTeX writes, or a Markdown file outside the blueprint's TeX, is no text to read."""
+    (tmp_path / "web.tex").write_text("\\author{\\input{../../AUTHORS.md}}\n\\begin{document}\n"
+                                      "\\chapter{A}\n\\input{../print/bu1.bbl}\n\\end{document}\n")
+    problems = leanblueprint.read(tmp_path, "web.tex").problems
+    assert problems == ["web.tex:1: \\input{../../AUTHORS.md} holds no blueprint text; skipped",
+                        "web.tex:4: \\input{../print/bu1.bbl} holds no blueprint text; skipped"]
+    assert not any(leanblueprint.UNREAD.search(problem) for problem in problems)  # so a refresh goes ahead
+
+
+def test_the_web_branch_of_ifplastex_is_read(tmp_path):
+    (tmp_path / "web.tex").write_text("\\newif\\ifplastex\n\\begin{document}\n\\chapter{A}\nSee \\ifplastex the web\n"
+                                      "\\else the PDF\n\\fi page.\n\\begin{lemma}\\label{a} B. \\end{lemma}\n\\end{document}\n")
+    blueprint = leanblueprint.read(tmp_path, "web.tex")
+    assert [" ".join(prose.text.split()) for prose in blueprint.prose] == ["See the web page."]
+    assert blueprint.graph[0].where == leanblueprint.Where("web.tex", 7)  # lines still count
+
+
+def test_a_title_block_in_the_text_is_dropped():
+    assert writer().statement(r"\title[Short]{A long title} \date{\today} \author{A \and B} Text.") == "Text."
+
+
+def test_a_checkmark_is_a_check_mark():
+    assert writer().statement(r"Gowers--Hatami & \checkmark") == "Gowers–Hatami & ✓"
+
+
+def test_verb_is_code():
+    assert writer().statement(r"see \verb|Rep.leftRegular R G| and \verb!a|b!.") == "see `Rep.leftRegular R G` and `a|b`."
+
+
+def test_a_thebibliography_is_a_list():
+    tex_ = "\\begin{thebibliography}{9}\n\\bibitem{a}\nL.~Carlitz, \\emph{Note}.\n\n\\bibitem[IR]{b} K. Ireland.\n\\end{thebibliography}"
+    assert writer().statement(tex_) == "- L. Carlitz, *Note*.\n- K. Ireland."
 
 
 def test_a_proof_inside_a_proof_is_part_of_it(tmp_path):

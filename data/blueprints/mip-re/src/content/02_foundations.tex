@@ -1,0 +1,1698 @@
+\section{Foundations}
+\label{ch:foundations}
+
+This chapter fixes the objects that everything else refers to: games, strategies and
+values (in the synchronous framework, see Section~\ref{sec:departures}), the
+computability conventions, and normal form verifiers. Definitions here are meant to be
+final; they are the first formalization targets of the project.
+
+Statements marked \qlib{} are general-purpose quantum information content: they are
+intended to be developed in, or contributed to, the
+\href{\qliburl}{QuantumLib (Lean-QuantumInfo)} library rather than to remain specific
+to this project. The badge marks the general-purpose layer --- games, strategies,
+values, and the rigidity theorems of Section~\ref{ch:required-results} --- as opposed
+to project-specific machinery such as normal form verifiers and the game
+transformations.
+
+\subsection{Games, strategies, and values}
+
+\subsubsection{Games}
+
+\begin{definition}[Nonlocal game]
+\label{def:game}
+\ledgernode{1.1, 1.1.1}
+\lean{MIPRE.Game}
+\leanok
+\qlib{}
+A \emph{two-player one-round game} $\game$ is a tuple
+$(\mX, \mY, \mA, \mB, \mu, D)$ where $\mX, \mY$ are finite question alphabets, $\mA,
+\mB$ are finite answer alphabets, $\mu$ is a probability distribution on $\mX \times
+\mY$, and $D : \mX \times \mY \times \mA \times \mB \to \{0,1\}$ is the decision
+predicate ($1$ = accept).
+\end{definition}
+
+\begin{definition}[Synchronous game]
+\label{def:sync-game}
+\uses{def:game}
+\lean{MIPRE.SynchronousGame, MIPRE.SynchronousGame.toGame}
+\leanok
+\qlib{}
+A game is \emph{synchronous} if $\mX = \mY$, $\mA = \mB$, and unequal answers to equal
+questions are rejected: $D(x,x,a,b) = 0$ whenever $a \neq b$. We write a synchronous
+game as $\game = (\mX, \mA, \mu, D)$.
+\end{definition}
+
+\subsubsection{Strategies}
+
+
+\begin{definition}[Tensor-product strategy]
+\label{def:tensor-strategy}
+\uses{def:game}
+\lean{MIPRE.TensorProductStrategy}
+\leanok
+\qlib{}
+A \emph{tensor-product strategy} for $\game$ consists of finite-dimensional Hilbert
+spaces $\mH_\alice$, $\mH_\bob$, a unit vector $\ket{\psi} \in \mH_\alice \ot
+\mH_\bob$, and projective measurements (PVMs) $\{A^x_a\}$ on $\mH_\alice$ and
+$\{B^y_b\}$ on $\mH_\bob$, one for each $x$ (resp.\ $y$): each $A^x_a$ is an
+orthogonal projection and $\sum_a A^x_a = \Id$.
+
+Outcome probabilities are computed using the Born rule: the players answer $(a,b)$ to questions $(x,y)$
+with probability $\bra{\psi} A^x_a \ot B^y_b \ket{\psi}$. Restricting to projective
+measurements follows~\cite{JNVWY20}; by Naimark dilation, allowing general POVMs
+would define the same quantum value.
+\end{definition}
+
+
+\begin{definition}[Synchronous strategy]
+\label{def:sync-strategy}
+\uses{def:sync-game}
+\lean{MIPRE.SyncStrategy}
+\leanok
+\qlib{}
+A \emph{synchronous strategy} for a synchronous game $\game = (\mX, \mA, \mu, D)$ is a
+dimension $d \geq 1$ together with a family of projective measurements (PVMs)
+$\{M^x_a\}_{a \in \mA}$ on $\C^d$, one for each $x \in \mX$: each $M^x_a$ is an
+orthogonal projection and $\sum_a M^x_a = \Id$. 
+
+Outcome probabilities are computed with the
+tracial state $\tau(M) = \tr(M)/d$: the players answer $(a,b)$ to questions $(x,y)$
+with probability $\tau(M^x_a M^y_b)$.
+\end{definition}
+
+
+\begin{definition}[Commuting strategy]
+\label{def:commuting-strategy}
+\uses{def:sync-game}
+\lean{MIPRE.CommutingStrategy}
+\leanok
+\qlib{}
+A \emph{commuting strategy} for a synchronous game $\game = (\mX, \mA, \mu, D)$ is a
+unital $C^*$-algebra $\alg$ with a tracial state $\tau$ (a positive linear functional
+with $\tau(1) = 1$ and $\tau(ab) = \tau(ba)$ for all $a, b \in \alg$), together with a
+family of projective measurements $\{M^x_a\}_{a \in \mA}$ in $\alg$, one for each
+$x \in \mX$: each $M^x_a$ is a self-adjoint idempotent and $\sum_a M^x_a = 1$.
+
+Outcome probabilities are computed with $\tau$: the players answer $(a,b)$ to questions
+$(x,y)$ with probability $\tau(M^x_a M^y_b)$, a nonnegative real number since
+$\tau(M^x_a M^y_b) = \tau(M^x_a M^y_b M^x_a)$.
+\end{definition}
+
+\begin{remark}
+A synchronous strategy (Definition~\ref{def:sync-strategy}) is exactly the
+finite-dimensional case $\alg = \C^{d \times d}$, $\tau = \tr/d$. Via the GNS
+representation, commuting strategies capture exactly the synchronous
+commuting-operator correlations of the usual two-prover picture, with Bob's
+measurements acting in the commutant on $L^2(\alg, \tau)$ --- \cite[Theorem
+5.5]{PSSTW16}; see also \cite{Lin23} and \cite[Section 3.4]{Lin25}.
+\end{remark}
+
+\begin{definition}[PCC strategy]
+\label{def:pcc}
+\uses{def:sync-strategy}
+\lean{MIPRE.SyncStrategy.IsPCC}
+\leanok
+\qlib{}
+A synchronous strategy $\strategy = (d, M)$ for a synchronous game $\game = (\mX,
+\mA, \mu, D)$ is \emph{PCC} (\emph{projective, consistent, and commuting},
+following~\cite[Section 5.2]{JNVWY20}) if the measurements associated with any pair
+of questions asked with positive probability commute: for all $(x, y)$ in the support
+of $\mu$,
+\begin{equation*}
+  M^x_a M^y_b = M^y_b M^x_a \qquad \text{for all } a, b \in \mA\;.
+\end{equation*}
+\end{definition}
+
+\begin{remark}[Source PCC and the required representation bridge]
+\label{rem:pcc-representation-bridge}
+\uses{def:pcc,def:tensor-strategy,lem:sync-le-valstar}
+The paper's PCC condition applies to a tensor-product strategy on equal local spaces.
+Besides projectivity and $[A^x_a,B^y_b]=0$ on the support of the question distribution,
+it requires each measurement separately to be consistent with itself on the state:
+\begin{equation*}
+  (A^x_a\ot\Id)\ket{\psi}=(\Id\ot A^x_a)\ket{\psi},
+  \qquad
+  (B^y_b\ot\Id)\ket{\psi}=(\Id\ot B^y_b)\ket{\psi}.
+\end{equation*}
+These are the conditions of \texttt{def:consistent-measurement},
+\texttt{def:consistent-strategy} and \texttt{def:spcc} in the companion
+\texttt{games.tex}~\cite{AuditSync26}; see also~\cite[Section 5.2]{JNVWY20}.
+The checked realization in Lemma~\ref{lem:sync-le-valstar} uses $A=M$ and
+$B=M^{\mathsf T}$. It preserves
+probabilities and gives cross-player consistency, but does not establish the displayed
+same-measurement identities for arbitrary complex $M$, nor does commutation of two
+matrices imply commutation of one with the transpose of the other.
+
+Consequently Definition~\ref{def:pcc} is the current synchronous PCC interface, and
+using it as an input to the paper's completeness theorems requires a separate
+\emph{PCC representation bridge}. The forward bridge must preserve all probabilities
+and support commutation while producing a source PCC strategy. A candidate is to
+realify each complex projector on dimension $2d$, then use the same real symmetric
+projectors on both halves of a maximally entangled state. Projectivity, the normalized
+trace probabilities, the two consistency identities and the symmetry required for
+SPCC all need verification for that construction; no such bridge is proved here.
+Any transfer back from source PCC strategies to this synchronous interface also needs
+its own stated hypotheses and proof. The name PCC in the Lean definition does not
+discharge either direction. In both interfaces, commutation is required only on
+question pairs in the support of $\mu$ and is distinct from the commuting-operator
+model of Definition~\ref{def:commuting-strategy}.
+\end{remark}
+
+
+
+\subsubsection{Values}
+
+\begin{definition}[Quantum value]
+\label{def:q-value}
+\uses{def:tensor-strategy}
+\lean{MIPRE.TensorProductStrategy.value, MIPRE.quantumValue}
+\leanok
+\qlib{}
+The value of a tensor-product strategy $\strategy = (\mH_\alice,\mH_\bob,\psi,A,B)$ in $\game$ is
+\begin{equation*}
+  \valstar(\game, \strategy) = \sum_{x, y, a, b} \mu(x,y)\, D(x,y,a,b)\,
+  \bra{\psi} A^x_a \ot B^y_b \ket{\psi}\;,
+\end{equation*}
+and the \emph{quantum value} $\valstar(\game)$ is the supremum of
+$\valstar(\game, \strategy)$ over all tensor-product strategies. 
+\end{definition}
+
+
+
+\begin{definition}[Synchronous value]
+\label{def:sync-value}
+\uses{def:sync-strategy}
+\lean{MIPRE.SyncStrategy.value, MIPRE.syncValue}
+\leanok
+\qlib{}
+The value of a synchronous strategy $\strategy = (d, M)$ in $\game$ is
+\begin{equation*}
+  \synval(\game, \strategy) = \sum_{x, y, a, b} \mu(x,y)\, D(x,y,a,b)\,
+  \tau\bigl(M^x_a M^y_b\bigr)\;,
+\end{equation*}
+and the \emph{synchronous value} of $\game$ is $\synval(\game) = \sup_\strategy
+\synval(\game, \strategy)$.
+\end{definition}
+
+
+\begin{definition}[Commuting value]
+\label{def:commuting-value}
+\uses{def:commuting-strategy}
+\lean{MIPRE.CommutingStrategy.value, MIPRE.commValue}
+\leanok
+\qlib{}
+The value of a commuting strategy $\strategy = (\alg, \tau, M)$ in $\game$ is
+\begin{equation*}
+  \valco(\game, \strategy) = \sum_{x, y, a, b} \mu(x,y)\, D(x,y,a,b)\,
+  \tau\bigl(M^x_a M^y_b\bigr)\;,
+\end{equation*}
+and the \emph{commuting value} of $\game$ is $\valco(\game) = \sup_\strategy
+\valco(\game, \strategy)$.
+\end{definition}
+
+
+\begin{lemma}[A perfect strategy rejects nothing on the support]
+\label{lem:perfect-rejects-nothing}
+\uses{def:sync-value}
+\lean{MIPRE.sum_re_tracial, MIPRE.re_nonneg_tracial,
+  MIPRE.re_eq_zero_of_tracialValue_eq_one, MIPRE.SyncStrategy.value_eq_tracialValue,
+  MIPRE.SyncStrategy.re_eq_zero_of_value_eq_one}
+\leanok
+Let $\game$ be a synchronous game, $\tau$ a tracial state and $M$ a family of projective
+measurements with $\valco(\game, M) = 1$. Then $\tau(M^x_a M^y_b) = 0$ whenever
+$\mu(x,y) > 0$ and $D(x,y,a,b) = 0$. In particular a value-$1$ synchronous strategy has
+$\mathrm{Tr}(M^x_a M^y_b) = 0$ at every rejected answer pair of every question pair the verifier asks.
+\end{lemma}
+
+\begin{proof}
+\leanok
+At a fixed question pair the outcome probabilities sum to one, $\sum_{a,b} \tau(M^x_a M^y_b)
+= \tau(1) = 1$, and each is nonnegative; this is why the value is at most one. The value is
+the same sum with the rejected terms deleted, so equality with $1$ forces each deleted term to
+vanish, and $\mu(x,y) > 0$ cancels.
+\end{proof}
+
+\paragraph{Comments.} Every completeness argument in the pipeline needs this step --- a
+strategy of value $1$ does not merely win on average, it assigns probability zero to each
+rejected answer at each question actually asked --- and it was used implicitly inside the proof
+that the value is at most one, without being available as a lemma. It is stated at the generic
+tracial level, so it serves synchronous and commuting strategies alike.
+
+Two formalization notes. The instance set of the ambient algebra must be exactly the
+$[\mathrm{Ring}]\,[\mathrm{StarRing}]\,[\mathrm{Module}\ \mathbb{C}]$ of
+Definition~\ref{def:commuting-strategy}: demanding a normed algebra instead sends the
+elaborator looking for a normed-algebra instance on matrices at every application, which is a
+\texttt{whnf} timeout. And the application to a synchronous strategy goes through the named
+\texttt{value\_eq\_tracialValue} rather than letting the unifier see through
+\texttt{SyncStrategy.value}, for the same reason.
+
+\begin{definition}[Entanglement requirement]
+\label{def:ent}
+\uses{def:sync-value}
+\lean{MIPRE.entRequirement}
+\leanok
+\qlib{}
+For a game $\game$ and $\nu \in [0,1]$, $\Ent(\game, \nu)$ is the least $d$ such that
+there exists a synchronous strategy (Definition~\ref{def:sync-strategy}) with dimension at most $d$ achieving value at least
+$\nu$ in $\game$, and $\infty$ if no synchronous strategy achieves $\nu$.
+\end{definition}
+
+
+\subsubsection{Relationship lemmas}
+
+\begin{lemma}[Synchronous value lower-bounds the quantum value]
+\label{lem:sync-le-valstar}
+\uses{def:sync-value,def:q-value}
+\lean{MIPRE.syncValue_le_quantumValue}
+\leanok
+\qlib{}
+For every synchronous game $\game$, $\synval(\game) \leq \valstar(\game)$.
+\end{lemma}
+\begin{proof}
+\leanok
+Given a synchronous strategy $\{M^x_a\}$ on $\C^d$, take the tensor-product strategy
+with $\mH_\alice = \mH_\bob = \C^d$, $A^x_a = M^x_a$, $B^y_b = (M^y_b)^{\mathsf{T}}$,
+and $\ket{\psi} = d^{-1/2}\sum_i \ket{i}\ket{i}$ (in Lean,
+\texttt{MIPRE.SyncStrategy.toTensorProductStrategy}). On that state
+$\bra{\psi} M \ot N \ket{\psi} = \tr(M N^{\mathsf{T}})/d$
+(\texttt{MIPRE.dotProduct\_kronecker\_maxEntangled}), so with $N = (M^y_b)^{\mathsf{T}}$ the
+Born-rule probability is $\tau(M^x_a M^y_b)$ and the values agree
+(\texttt{MIPRE.SyncStrategy.value\_toTensorProductStrategy}). Taking the supremum uses that
+the quantum value is a supremum over a possibly empty type with bounded range:
+\texttt{MIPRE.TensorProductStrategy.value\_le\_one} and
+\texttt{MIPRE.quantumValue\_nonneg}, both proved from the Born rule.
+\end{proof}
+
+The converse direction --- every good tensor-product strategy for a synchronous game
+whose questions carry proportional weight on the diagonal can be rounded to a good
+synchronous strategy --- is the almost-synchronicity theorem, imported as
+Theorem~\ref{thm:almost-sync}. The hypothesis on the diagonal cannot be dropped: without
+it the two values are unrelated (Remark~\ref{rem:almost-sync-hypothesis}).
+
+\begin{lemma}[Synchronous value lower-bounds the commuting value]
+\label{lem:sync-le-valco}
+\uses{def:sync-value,def:commuting-value}
+\lean{MIPRE.syncValue_le_commValue}
+\leanok
+\qlib{}
+For every synchronous game $\game$, $\synval(\game) \leq \valco(\game)$.
+\end{lemma}
+\begin{proof}
+\leanok
+A synchronous strategy $(d, M)$ is a commuting strategy with $\alg = \C^{d \times d}$
+and $\tau = \tr/d$, with the same value (in Lean,
+\texttt{MIPRE.SyncStrategy.toCommutingStrategy}; the value is preserved by
+definitional equality).
+\end{proof}
+
+\subsection{Linear constraint system games}
+\label{sec:lcs-games}
+
+A well-studied class of nonlocal games arises from systems of linear equations over
+$\F_2$: the referee asks Alice for a satisfying assignment to a randomly chosen
+equation and Bob for the value of a randomly chosen variable in it, and checks
+consistency. The Mermin--Peres magic square is the canonical example. The
+formalization of this subsection was contributed by Sean Perazzolo
+(\texttt{MIPRE.LCS}); beyond the definitions below it includes observable- and
+projector-based strategy formalisms and their equivalence, a sum-of-squares
+decomposition of the loss operators, the extraction of operator identities from
+perfect play on the EPR state, matrix representations of solution groups, and the
+magic square as a worked example
+(\texttt{MIPRE.LCS.MagicSquare.merminPeresStrategy}).
+
+\begin{definition}[LCS instance]
+\label{def:lcs-instance}
+\lean{MIPRE.LCS.Layout, MIPRE.LCS.Game}
+\leanok
+A \emph{binary linear constraint system} consists of $r$ equations over $s$
+$\F_2$-valued variables, specified by the set $V_i \subseteq \{1, \dots, s\}$ of
+variables occurring in each equation $i$ together with a right-hand side
+$b \in \F_2^r$; equation $i$ reads $\sum_{j \in V_i} x_j = b_i$.
+\end{definition}
+
+\begin{definition}[LCS game]
+\label{def:lcs-game}
+\uses{def:lcs-instance,def:game}
+\lean{MIPRE.LCS.Layout.Question, MIPRE.LCS.Layout.Answer,
+MIPRE.LCS.Layout.questionDist, MIPRE.LCS.Game.accepts,
+MIPRE.LCS.Game.toNonlocalGame}
+\leanok
+The \emph{nonlocal game} of an LCS instance. Both players receive questions from the same
+alphabet --- an equation or a variable --- and answer in the same alphabet --- an assignment
+to all the variables, or a single bit. The referee samples an equation $i$ uniformly at
+random, a uniformly random variable $j \in V_i$, and a uniform \emph{orientation}: one
+player is asked $i$ and the other $j$. The player asked the equation answers an assignment
+$a$ (only its restriction to $V_i$ is read), the player asked the variable answers a bit $c$,
+and they win if $\sum_{k \in V_i} a_k = b_i$ and $a_j = c$. An answer whose shape does not
+match its question loses, as does an off-support pair $j \notin V_i$.
+\end{definition}
+
+\paragraph{Comments.} The orientation is what makes the game \emph{symmetric in the players},
+and it is not cosmetic. A one-directional version --- the equation always to Alice, the
+variable always to Bob --- cannot express a statement about both players' variable
+observables, which is exactly what the Pauli basis test consumes from the Magic Square
+(Lemma~\ref{lem:ms-direct-anticomm}): Alice would never receive a variable question, so
+$A^{\Variable_j}$ would not exist. It also fixes that lemma's constant, the conditional
+failures being summed over $2 \sum_i \abs{V_i}$ oriented incidences rather than
+$\sum_i \abs{V_i}$ unoriented ones.
+
+The shape and support checks in the decider are the discipline
+Definition~\ref{def:lidt-cl} learned the hard way: a missing format check made the seeded CL
+game vacuous and a soundness theorem about it false. The formalization pins each outcome with
+explicit answers --- an accepted pair in each orientation, and one rejected for disagreement,
+one for parity, one for shape, one for being off support.
+
+\begin{definition}[Solution group]
+\label{def:solution-group}
+\uses{def:lcs-instance}
+\lean{MIPRE.LCS.SolutionGroup}
+\leanok
+The \emph{solution group} of an LCS instance is the group presented by generators
+$g_1, \dots, g_s$ and $J$ subject to the relations: all generators are involutions,
+$J$ is central, variables occurring in a common equation commute, and
+$\prod_{j \in V_i} g_j = J^{b_i}$ for each equation $i$. Operator solutions of the
+system correspond to representations sending $J \mapsto -I$ (in Lean,
+\texttt{MIPRE.LCS.SolutionGroup.solutionGroupRepresentationOfEPRLoss}).
+\end{definition}
+
+\begin{definition}[Binary observables]
+\label{def:observable}
+\lean{MIPRE.LCS.IsObservable, MIPRE.LCS.observableOfMeasurementSystem,
+MIPRE.LCS.binary_measurement_eq_projector}
+\leanok
+An \emph{observable} in a star-algebra is a self-adjoint element squaring to $1$. Binary
+projective measurements and observables are two views of the same data: $\{P_0, P_1\}$
+gives the observable $P_0 - P_1$, and an observable $O$ gives the measurement
+$\{\tfrac12(1 + O), \tfrac12(1 - O)\}$.
+\end{definition}
+
+\begin{lemma}[Observables and projective measurements correspond]
+\label{lem:observable-projector}
+\uses{def:observable}
+\lean{MIPRE.LCS.observableToProjector,
+MIPRE.LCS.isMeasurementSystem_observableToProjector,
+MIPRE.LCS.commute_observableToProjector}
+\leanok
+For an observable $O$ the family $a \mapsto \tfrac12(1 + (-1)^a O)$ is a projective
+measurement indexed by $\F_2$, and the correspondence preserves commutation: if $O_1$ and
+$O_2$ commute then so do all of their projectors.
+\end{lemma}
+
+\begin{proof}
+\leanok
+Self-adjointness, idempotence, orthogonality and summation to $1$ are each a two-line
+computation from $O^* = O$ and $O^2 = 1$; commutation is inherited term by term.
+\end{proof}
+
+\begin{lemma}[From an observable strategy to a projective strategy]
+\label{lem:observable-strategy}
+\uses{def:observable,lem:observable-projector,def:lcs-instance}
+\lean{MIPRE.LCS.ObservableStrategy.toProjectorStrategy,
+MIPRE.LCS.ObservableStrategy.isMeasurementSystem_aliceMeasurement,
+MIPRE.LCS.ObservableStrategy.aliceMeasurement_commute_bobMeasurement}
+\leanok
+A strategy given by commuting observables, one per variable of an LCS instance, yields a
+strategy given by genuine projective measurements: for a question consisting of several
+variables the joint measurement is the product of the corresponding binary projectors,
+which is projective because the observables commute, and the two players' measurements
+commute with each other.
+\end{lemma}
+
+\begin{proof}
+\leanok
+The joint family over an equation's support is a product of commuting binary projectors,
+so it is a projective measurement and sums to $1$ over the outcomes; commutation across
+players is inherited from commutation of the underlying observables.
+\end{proof}
+
+\begin{definition}[The Magic Square]
+\label{def:magic-square}
+\uses{def:lcs-instance,def:solution-group}
+\lean{MIPRE.LCS.MagicSquare.layout, MIPRE.LCS.MagicSquare.game,
+MIPRE.LCS.MagicSquare.solutionGroup}
+\leanok
+The Magic Square is the LCS instance over $\F_2$ with nine variables in a $3 \times 3$
+grid and six equations, one per row and column, the rows summing to $0$ and the columns to
+$1$. It has no classical solution, since the six equations sum to $0 = 1$.
+\end{definition}
+
+\begin{lemma}[The Mermin--Peres strategy is perfect]
+\label{lem:mermin-peres}
+\uses{def:magic-square,def:observable}
+\lean{MIPRE.LCS.MagicSquare.grid, MIPRE.LCS.MagicSquare.isObservable_grid,
+MIPRE.LCS.MagicSquare.grid_sameEquation_comm, MIPRE.LCS.MagicSquare.merminPeresStrategy}
+\leanok
+There are nine observables on $(\C^2)^{\ot 2}$, one per cell of the Magic Square, such
+that the three in each row or column commute and multiply to $+1$ for a row and $-1$ for a
+column. They give a strategy for the Magic Square game of value $1$ on two EPR pairs.
+\end{lemma}
+
+\begin{proof}
+\leanok
+The grid is the Mermin--Peres square of tensor products of Pauli matrices. That each entry
+is an observable, and that entries sharing an equation commute, are finite computations on
+$4 \times 4$ matrices.
+\end{proof}
+
+\begin{theorem}[Perfect strategies from operator solutions]
+\label{thm:lcs-perfect}
+\uses{def:lcs-game,def:tensor-strategy,def:q-value,lem:observable-strategy}
+\lean{MIPRE.LCS.exists_tensorStrategy_value_eq_one_of_localLoss_annihilates_epr}
+\leanok
+If a bipartite observable strategy for an LCS instance is perfect --- its local loss
+operators annihilate the EPR vector --- then the associated LCS game has a
+tensor-product strategy of value $1$.
+\end{theorem}
+\begin{proof}
+\leanok
+Take both players' spaces to be $\C^n$ with the normalized EPR state. The game is
+symmetric, so each player needs measurements at both kinds of question, and both use the
+same ones: at an equation, the joint projective measurement of its observables, answered
+as an assignment extended by zero; at a variable, the binary measurement of its
+observable. At an equation--variable incidence the accepted Born-rule weight is the EPR
+expectation of the local winning operator, which is $1$ because the local loss operator
+annihilates the EPR vector. The other orientation has the same weight, since
+$\langle \Omega, (A \otimes B) \Omega\rangle = \sum_{a,k} A_{ak} B_{ak}$ is symmetric in
+$A$ and $B$ and the decider is symmetric in the players. No transposes are needed.
+\end{proof}
+
+\subsection{Distance measures}
+\label{sec:distances}
+
+\begin{definition}[Normalized Hilbert--Schmidt norm]
+\label{def:hs-norm}
+\lean{MIPRE.hsInner, MIPRE.hsNormSq}
+\leanok
+\qlib{}
+For matrices $A, B \in \C^{d \times d}$, let
+$\langle A, B \rangle_{hs} = \tau(A^\dagger B)$ and
+$\norm{A}_{hs}^2 = \tau(A^\dagger A)$, where $\tau = \tr/d$ is the
+dimension-normalized trace.
+\end{definition}
+
+\begin{definition}[POVM distance]
+\label{def:distance}
+\ledgernode{1.1.1.1}
+\uses{def:hs-norm}
+\lean{MIPRE.povmDistance, MIPRE.IsPOVMClose}
+\leanok
+\qlib{}
+Let $\mu$ be a distribution on a finite set $\mX$, and
+$\{M^x_a\}$, $\{N^x_a\}$ families of POVMs. We say $M$ and $N$ are
+\emph{$\delta$-close}, written $M^x_a \approx_\delta N^x_a$, if
+$\E_{x \sim \mu} \sum_a \norm{M^x_a - N^x_a}_{hs}^2 \leq \delta$. Since each
+difference $M^x_a - N^x_a$ is Hermitian, the summand equals
+$\tau((M^x_a - N^x_a)^2)$.
+\end{definition}
+
+\begin{definition}[State-dependent POVM distance]
+\label{def:state-distance}
+\lean{MIPRE.stateVec, MIPRE.stateNorm, MIPRE.stateSqNorm, MIPRE.stateDist,
+  MIPRE.IsStateClose, MIPRE.povmStateDist, MIPRE.IsPOVMStateClose,
+  MIPRE.quadForm_eq, MIPRE.stateSqNorm_eq}
+\leanok
+Let $\mu$ be a distribution on a finite set $\mX$, let
+$\ket{\psi} \in \C^{d_\alice} \ot \C^{d_\bob}$, and let $\{A^x\}$, $\{B^x\}$ be families of
+operators on $\C^{d_\alice}$. We say $A$ and $B$ are \emph{$\delta$-close on $\ket{\psi}$},
+written $A^x \approx_\delta B^x$ when $\mu$ and $\ket{\psi}$ are clear from context, if
+\begin{equation*}
+  \E_{x \sim \mu} \bra{\psi} \bigl( (A^x - B^x) \ot \Id_\bob \bigr)^\dagger
+    \bigl( (A^x - B^x) \ot \Id_\bob \bigr) \ket{\psi} \;\leq\; \delta\;,
+\end{equation*}
+equivalently if $\E_{x\sim\mu} \norm{((A^x - B^x) \ot \Id_\bob)\ket{\psi}}^2 \leq \delta$. For
+families indexed by answers as well, $\{A^x_a\}$ and $\{B^x_a\}$, the outcome sum sits inside the
+question average.
+\end{definition}
+
+\paragraph{Comments.} This is \emph{not} Definition~\ref{def:distance}, and the difference is
+not presentational. Definition~\ref{def:distance} is the normalized Hilbert--Schmidt distance,
+which is the distance of a \emph{synchronous} strategy --- there the state is the normalized
+trace itself, which is why \texttt{MIPRE/Foundations/Closeness.lean} is the calculus of that one.
+The appendix of the Pauli basis test (Section~\ref{sec:rr-qld}) works throughout with the
+state-dependent distance above, on a bipartite state that is fixed by context, and every
+$\approx_\delta$ in that section is this one.
+
+Two departures from the paper's own definition (\cite{AuditSync26}, \texttt{qld-prelim.tex}),
+both in the direction of a stronger statement. The paper writes $\leq O(\delta)$ \emph{inside}
+the relation; here the relation is an inequality against $\delta$ and the constants appear in
+the lemmas that produce them, so Lemma~\ref{lem:qld-averaging} preserves $\delta$ exactly and
+Lemma~\ref{lem:qld-povm-to-obs} gives exactly $\abs{\mA}\delta$. And the paper defines
+$\approx_\delta$ only for question-indexed operators, using the answer-indexed form without
+comment; both are defined here.
+
+\begin{definition}[Cross-party state-dependent distance]
+\label{def:cross-distance}
+\uses{def:game,def:state-distance,lem:qld-povm-to-obs,def:generalized-pauli}
+\lean{MIPRE.xSqNorm, MIPRE.xPovmDist, MIPRE.IsXPOVMClose, MIPRE.POVM.mul_self_le_self,
+  MIPRE.sum_stateSqNorm_le_one, MIPRE.sum_stateSqNormB_le_one, MIPRE.sub_kronecker_right,
+  MIPRE.xSqNorm_sum_le_two_mul, MIPRE.sum_bornProb_mapA, MIPRE.sum_bornProb_mapB,
+  MIPRE.sum_weight_bornProb_map, MIPRE.sum_bornProb_map,
+  MIPRE.one_sub_sum_bornProb_le_condFail, MIPRE.xSqNorm_sum_le_condFail,
+  MIPRE.sum_mul_condFail_le, MIPRE.sum_condFail_le_of_pushforward,
+  MIPRE.sum_condFail_le_of_le, MIPRE.xStateDist, MIPRE.xStateDist_obsOf_le,
+  MIPRE.stateVecB_smul, MIPRE.stateVecB_sum, MIPRE.xNorm, MIPRE.xNorm_nonneg,
+  MIPRE.xSqNorm_eq_sq, MIPRE.xNorm_eq_snorm, MIPRE.norm_stateVec_eq_snorm,
+  MIPRE.norm_stateVecB_eq_snorm, MIPRE.xNorm_mul_le, MIPRE.xNorm_mul_le_one,
+  MIPRE.xSqNorm_mul_le_one, MIPRE.norm_stateVec_anticomm_le, MIPRE.obs2,
+  MIPRE.obsOf_sgn_eq_obs2, MIPRE.obs2_conjTranspose, MIPRE.obs2_mul_self_le_one,
+  MIPRE.norm_stateVec_comm_le, MIPRE.xSqNorm_eq_snorm_sq, MIPRE.sum_weighted_xSqNorm_eq,
+  MIPRE.sum_weighted_xSqNorm_eq', MIPRE.stateSqNorm_sum_le, MIPRE.stateSqNorm_sub_comm,
+  MIPRE.norm_stateVecB_sub_comm, MIPRE.mulVec_kronecker_swapVec, MIPRE.swapVec_sub,
+  MIPRE.norm_swapVec, MIPRE.snorm_swapVec_aOp_sub_bOp, MIPRE.snorm_swapVec_aOp}
+\leanok
+Let $\mu$ be a distribution on a finite set $\mX$, let
+$\ket{\psi} \in \C^{d_\alice} \ot \C^{d_\bob}$, and let $\{M^x_a\}$ and $\{N^x_a\}$ be families
+of POVMs with a common question set $\mX$ and a common answer set, the first on
+$\C^{d_\alice}$ and the second on $\C^{d_\bob}$. We say they are \emph{$\delta$-close across the
+two parties}, written $M^x_a \ot \Id \simeq_\delta \Id \ot N^x_a$, if
+\begin{equation*}
+  \E_{x \sim \mu} \sum_a \norm{\bigl( M^x_a \ot \Id_\bob - \Id_\alice \ot N^x_a \bigr)
+    \ket{\psi}}^2 \;\leq\; \delta\;.
+\end{equation*}
+Then, for any two POVMs $M$ and $N$ with a common answer set and $\ket{\psi}$ a unit vector,
+\begin{equation}
+  \label{eq:cross-from-agreement}
+  \sum_a \norm{\bigl( M_a \ot \Id - \Id \ot N_a \bigr)\ket{\psi}}^2
+    \;\leq\; 2 \Bigl( 1 - \sum_a \bra{\psi} M_a \ot N_a \ket{\psi} \Bigr)\;,
+\end{equation}
+twice the probability that the two measurements disagree.
+\end{definition}
+
+\paragraph{Comments.} This is the $\simeq_\delta$ of the Pauli appendix, and it is not
+Definition~\ref{def:state-distance}: that one compares two families of operators on the
+\emph{same} factor, which is what the orthonormalization step of
+Corollary~\ref{cor:ortho-from-consistency} needs, whereas every consistency statement of
+Lemma~\ref{lem:qld-win} compares one player's operator with the \emph{other} player's. The paper
+uses both symbols and says the two are interchangeable up to
+Fact~\texttt{fact:agreement}; the formalization keeps them apart, because the conversion is the
+factor $2$ of~\eqref{eq:cross-from-agreement} and it is better spent once than assumed
+throughout.
+
+Inequality~\eqref{eq:cross-from-agreement} is the whole analytic content of the file
+(\texttt{MIPRE/Foundations/CrossConsistency.lean}): expand each square, and the two diagonal
+sums are at most one because a POVM element satisfies $A^\dagger A = A^2 \leq A$
+(\texttt{POVM.mul\_self\_le\_self}) and the elements sum to the identity. \textbf{No projectivity
+is used}, so the inequality holds for arbitrary POVM strategies. On the paper's route projectivity
+arrives only later, through Corollary~\ref{cor:ortho-from-consistency}; the formalized route
+assumes it from the start, Theorem~\ref{thm:qld} being stated for projective strategies.
+
+Two things the formalization needs that the paper leaves implicit. First, what a subtest buys is
+not that its decider \emph{equals} an agreement predicate but that \emph{accepting implies
+agreeing}: a real decider checks the answer formats first and rejects an ill-formatted pair even
+when the post-processings agree. So the readings that coarse-grain the answers may send an
+ill-formatted answer anywhere --- $0$, here --- and the implication is all
+\texttt{one\_sub\_sum\_bornProb\_le\_condFail} asks. Second, ``divided by the probability that
+the subtest is selected'' needs no injectivity: the subtests of the Pauli basis test are indexed
+by the verifier's content and several contents give the same question pair, a $(\pauli, W)$
+question reading none of it, so the hypothesis is a condition on the push-forward
+(\texttt{sum\_condFail\_le\_of\_pushforward}).
+
+\texttt{xStateDist\_obsOf\_le} is Lemma~\ref{lem:qld-povm-to-obs} across the two parties, with
+the same proof and the same factor $\abs{\mA}$: the appendix needs it to pass from a two-outcome
+coarse-graining of a point measurement to the $\pm 1$-observable it defines, and
+Definition~\ref{def:state-distance}'s version compares the wrong pair.
+
+\textbf{The order reversal, and where the sign comes from.} One algebraic rule is proved here
+rather than inlined at its two uses, because the paper's own correction note on
+Lemma~\ref{lem:qld-obs-commutation} records two displays that had it backwards. If
+$A \ot \Id \simeq \Id \ot A'$ and $B \ot \Id \simeq \Id \ot B'$ then
+\begin{equation}
+  \label{eq:order-reversal-bp}
+  AB \ot \Id \;\simeq\; \Id \ot B'A'\;,
+\end{equation}
+Bob's factors in the \emph{reverse} order, at the sum of the two deviations
+(\texttt{xNorm\_mul\_le\_one}; \texttt{xNorm\_mul\_le} carries operator-norm bounds $K$ and $L$ in
+front of them). The proof is the split
+$AB \ot \Id - \Id \ot B'A' = (A \ot \Id)(B \ot \Id - \Id \ot B') + (\Id \ot B')(A \ot \Id - \Id
+\ot A')$, and the reversal is exactly the step that commutes $A \ot \Id$ past $\Id \ot B'$ to
+factor the second summand: it puts $B'$ to the \emph{left} of $A'$. Applying it in both orders
+and cancelling Bob's two products gives the form the anticommuting case of
+Lemma~\ref{lem:qld-obs-commutation} consumes,
+\begin{equation}
+  \label{eq:anticomm-transfer-bp}
+  \norm{(AB + BA) \ot \Id \ket{\psi}} \;\leq\; 2 \norm{(A \ot \Id - \Id \ot A')\ket{\psi}}
+    + 2 \norm{(B \ot \Id - \Id \ot B')\ket{\psi}}
+    + \norm{\Id \ot (A'B' + B'A') \ket{\psi}}\;,
+\end{equation}
+\texttt{norm\_stateVec\_anticomm\_le}: an anticommutation on Bob's side transfers to Alice's. The
+two reversals do not cancel each other, because what sits between them is a \emph{sum}. Both
+statements are on the unsquared deviation, since the triangle inequality is what the argument
+uses; \texttt{xSqNorm\_mul\_le\_one} squares the first at the usual cost of a factor two.
+
+Each operator in sight has to be a contraction, and for the $\pm 1$-observable of a two-outcome
+POVM that is \texttt{POVM.sub\_mul\_self\_le\_one}, which needs the observable written as a
+\emph{difference} of two POVM elements rather than as the weighted sum $\sum_a (-1)^a M_a$ that
+\texttt{obsOf} produces. \texttt{obs2} is that difference and \texttt{obsOf\_sgn\_eq\_obs2}
+identifies the two, so a consumer can quote whichever form its input is stated in.
+
+\textbf{The swap, and the commutator form.} Two more entries serve the appendix's commutation
+step. \texttt{norm\_stateVec\_comm\_le} is~\eqref{eq:anticomm-transfer-bp} with a commutator in the middle
+instead of an anticommutator --- the same split, Bob's two products cancelling either way. And
+\texttt{snorm\_swapVec\_aOp\_sub\_bOp} exchanges the two sides of a cross-party deviation, which is what lets
+a lemma proved for Alice's factor be applied to Bob's: the clean statement is at the level of
+vectors, $(X \ot Y)\,\mathrm{swap}\ket{\psi} = \mathrm{swap}\,(Y \ot X)\ket{\psi}$, and everything
+else follows by linearity. On the paper's route Corollary~\ref{cor:ortho-from-consistency}
+produces a projective measurement on \emph{Alice's} factor only, so the commutation analysis below
+is run on Bob's observables and carried back; that swap is the bridge. The formalized route assumes
+the first player's measurements projective from the outset and uses the swap in the same way.
+
+\subsection{The expanded state}
+
+\begin{definition}[The expanded state, and an inert ancilla]
+\label{def:expanded-state}
+\uses{def:state-distance}
+\lean{MIPRE.expVec, MIPRE.expEquiv, MIPRE.sum_prod_mul, MIPRE.norm_evec_expVec,
+  MIPRE.expVec_dotProduct, MIPRE.expVec_unit, MIPRE.mulVec_kron_expVec,
+  MIPRE.norm_stateVec_kron_unitary, MIPRE.norm_stateVec_expVec_kron_one,
+  MIPRE.expVec_dotProduct_of_pair, MIPRE.mulVec_kron_kron_expVec, MIPRE.bornProb_expVec_kron,
+  MIPRE.POVM.kron, MIPRE.POVM.kron_mats, MIPRE.bornProb_sum_sum, MIPRE.sum_bornProb_le_map,
+  MIPRE.IsPVM.toPOVM, MIPRE.IsPVM.toPOVM_mats, MIPRE.POVM.ext', MIPRE.POVM.map_mats,
+  MIPRE.POVM.map_map, MIPRE.POVM.kron_map, MIPRE.IsPVM.coarse, MIPRE.isPVM_kron,
+  MIPRE.isPVM_povm_map, MIPRE.isPVM_povm_kron}
+\leanok
+Let $\ket{\psi}$ be a state on $\C^{d_\alice} \ot \C^{d_\bob}$ and $\ket{e}$ one on
+$\C^{a} \ot \C^{a'}$. The \emph{expanded state} is $\ket{\psi} \ot \ket{e}$, \textbf{re-bipartitioned}
+so that the first party holds $\C^{d_\alice} \ot \C^{a}$ and the second $\C^{d_\bob} \ot \C^{a'}$:
+one half of the ancilla goes to each. Then
+\begin{enumerate}
+\item an operator of product form acts factor by factor,
+  $\bigl((M \ot N) \ot \Id\bigr)(\ket{\psi} \ot \ket{e})
+   = \bigl((M \ot \Id)\ket{\psi}\bigr) \ot \bigl((N \ot \Id)\ket{e}\bigr)$;
+\item the norm of a product state is the product of the norms, so the expanded state is a unit
+  vector when both factors are;
+\item consequently an operator with an \emph{inert} ancilla has the same state-norm on the expanded
+  state as on the original one: $\norm{(M \ot \Id_a) \ot \Id \,\ket{\hat\psi}} =
+  \norm{(M \ot \Id_\bob)\ket{\psi}}$ when $\ket{e}$ is a unit vector;
+\item and a \emph{unitary} on the ancilla is invisible:
+  $\norm{(M \ot U) \ot \Id \ket{\hat\psi}} = \norm{(M \ot \Id_a) \ot \Id \ket{\hat\psi}}$.
+\end{enumerate}
+\end{definition}
+
+\paragraph{Comments.} Formalized in \texttt{MIPRE/Foundations/Expanded.lean}. This is the
+bookkeeping of the appendix's \texttt{sec:expanding}, isolated from the Pauli test: items 3 and 4 are
+what let a bound proved \emph{before} the expansion be used \emph{after} it, and they are why the
+expansion stage costs exactly the constant of Lemma~\ref{lem:qld-obs-commutation} and nothing more.
+The re-bipartition is the point --- the ancilla halves are split between the parties, which is what
+makes the ancilla observables tied together --- and it is why the statements are about
+$\ket{\psi} \ot \ket{e}$ rather than about a tensor power.
+
+\textbf{Born probabilities factorize, and that is where data processing lives.} The consistency
+half of the expansion stage is about a measurement of \emph{product} form, and what it needs is
+that its Born probabilities split: $\bra{\hat\psi} (M \ot N) \ot (M' \ot N') \ket{\hat\psi} =
+\bra{\psi} M \ot M' \ket{\psi} \cdot \bra{e} N \ot N' \ket{e}$
+(\texttt{bornProb\_expVec\_kron}; only the ancilla's two operators need be positive, which is what
+makes their quadratic form real so the real part of the product splits). \texttt{POVM.kron} is the
+product measurement, and \texttt{sum\_bornProb\_le\_map} is the data-processing inequality that
+holds: coarse-graining \emph{both} players the same way can only increase the probability that they
+agree.
+
+That last one is stated at the Born level deliberately. The state-dependent distance has
+\textbf{no} data-processing inequality --- NW19 states theirs for $\simeq_\delta$ and the remark
+following it gives a counterexample for $\approx_\delta$ --- so every coarse-graining in the
+appendix is taken on Born probabilities and converted once, at the end, by
+\eqref{eq:cross-from-agreement}. A formalization that reached for the $\approx$ form would be
+proving something false.
+
+\subsection{Naimark dilation against a fixed state}
+
+\begin{lemma}[Naimark dilation of a question-indexed family]
+\label{lem:naimark-dilation}
+\lean{MIPRE.ancillaProj, MIPRE.ancillaProj_conjTranspose, MIPRE.ancillaProj_mul_self,
+  MIPRE.sum_ancillaProj, MIPRE.exists_isometry_of_povm, MIPRE.ancillaEmbed,
+  MIPRE.ancillaEmbed_isometry, MIPRE.exists_unitary_extending,
+  MIPRE.exists_projective_dilation, MIPRE.dotProduct_mulVec_submatrix,
+  MIPRE.dotProduct_comp_equiv, MIPRE.dotProduct_mulVec_conj}
+\leanok
+Let $\{E^x_a\}$ be a family of POVMs on $\C^d$, indexed by questions $x$ and outcomes
+$a \in \mA$. Then there is a family of \emph{projective} measurements $\{P^x_a\}$ on
+$\C^d \ot \C^{\mA}$ and a \emph{single}, question-independent isometry
+$V : \C^d \to \C^d \ot \C^{\mA}$, $\ket{v} \mapsto \ket{v} \ot \ket{a_0}$, such that
+$V^\dagger P^x_a V = E^x_a$ for every $x$ and $a$.
+\end{lemma}
+
+\begin{proof}
+\leanok
+The columns of the matrix $V^x$ whose $(q, j)$ entry is $\sqrt{E^x}$-like --- concretely, the
+square root of $E^x_a$ read off in the $a$-th block --- form an isometry $\C^d \to \C^d \ot
+\C^{\mA}$ compressing the block-diagonal projectors $\Pi_a = \Id \ot \ket{a}\bra{a}$
+back to $E^x_a$. Extending each $V^x$ to a unitary $U^x$ of the larger space that agrees with it on
+the $a_0$-slice --- the completion of an orthonormal family to an orthonormal basis --- makes
+$P^x_a = (U^x)^\dagger \Pi_a U^x$ projective with the compression along the
+\emph{fixed} isometry $\ket{v} \mapsto \ket{v} \ot \ket{a_0}$. The question-independence of that
+isometry is the whole point: the expectations are taken against a shared state, which must not
+depend on the question.
+\end{proof}
+
+\paragraph{Comments.} Formalized in \texttt{MIPRE/Foundations/Dilation.lean}, extracted from the
+repetition development where it was written for \texttt{lem:povm-value-eq}. Its other consumers are
+Lemma~\ref{lem:ms-direct-anticomm}, which dilates the Magic Square's six constraint POVMs against
+one shared ancilla, and Theorem~\ref{thm:linearity}.
+
+\subsection{The commutation analysis}
+
+\begin{lemma}[Commutation analysis]
+\label{lem:commutation-analysis}
+\uses{def:cross-distance,def:game}
+\lean{MIPRE.qform_nonneg_of_nonneg, MIPRE.qform_le_of_le, MIPRE.sum_snorm_sq_mul_le,
+  MIPRE.sum_snorm_sq_triangle', MIPRE.sum_snorm_sq_triangle3,
+  MIPRE.sum_weighted_snorm_sq_triangle3, MIPRE.POVM.sum_mats_map_prod,
+  MIPRE.POVM.sum_mats_map_prod', MIPRE.sum_xSqNorm_le_of_two_step, MIPRE.aOp_mono,
+  MIPRE.bOp_mono, MIPRE.bOp_sum, MIPRE.sum_aOp_conjTranspose_mul_self_le_one,
+  MIPRE.sum_bOp_conjTranspose_mul_self_le_one, MIPRE.sum_bOp_conjTranspose_mul_self_of_isPVM,
+  MIPRE.IsPVM.marg_mul_marg, MIPRE.IsPVM.marg_mul_marg', MIPRE.IsPVM.sum_marg_left,
+  MIPRE.IsPVM.sum_marg_right, MIPRE.IsPVM.marg_left, MIPRE.IsPVM.marg_right,
+  MIPRE.sum_prod_snorm_sq_mul_le_fst, MIPRE.sum_prod_snorm_sq_mul_le_snd,
+  MIPRE.commutation_analysis_abstract, MIPRE.commutation_analysis,
+  MIPRE.commutation_analysis_aOp, MIPRE.obs2_commutator_eq}
+\leanok
+Let $\{A_b\}$ and $\{C_c\}$ be POVMs on $\C^{d_\alice}$ and let $\{B_{b,c}\}$ be a
+\emph{projective} measurement on $\C^{d_\bob}$ with outcomes the pairs, with marginals
+$B_b = \sum_c B_{b,c}$ and $B_c = \sum_b B_{b,c}$. If
+\begin{equation*}
+  A_b \ot \Id \simeq_\delta \Id \ot B_b \qquad\text{and}\qquad
+  C_c \ot \Id \simeq_\delta \Id \ot B_c\;,
+\end{equation*}
+then Alice's two POVMs approximately commute on the state:
+\begin{equation}
+  \label{eq:commutation-analysis-bp}
+  \sum_{b, c} \norm{\bigl( [A_b, C_c] \ot \Id \bigr) \ket{\psi}}^2 \;\leq\; 16\, \delta\;.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+\leanok
+\uses{def:cross-distance}
+Both products reach the \emph{same} operator on Bob's factor, $\Id \ot B_{b,c}$. For
+$A_b C_c \ot \Id$: put $A_b \ot \Id$ in front of $C$'s relation, and put $\Id \ot B_c$ in front of
+$A$'s; the two meet at $A_b \ot B_c$, and the second step lands on
+$\Id \ot B_c B_b = \Id \ot B_{b,c}$ --- which is where projectivity is used, and the only place
+(\texttt{IsPVM.marg\_mul\_marg}). For $C_c A_b \ot \Id$, the same two steps in the other order,
+using $B_b B_c = B_{b,c}$. Each side is therefore within $4\delta$ after one triangle inequality,
+and~\eqref{eq:commutation-analysis-bp} is one more.
+
+Putting an operator in front costs nothing and \emph{adds} its index to the sum, which is the
+paper's \texttt{fact:add-a-proj}: if $\sum_i F_i^\dagger F_i \leq \Id$ then
+$\sum_i \norm{F_i v}^2 \leq \norm{v}^2$. For a POVM that hypothesis is $A_b^2 \leq A_b$ with
+$\sum_b A_b = \Id$, so it needs no projectivity of Alice's measurements
+(\texttt{sum\_aOp\_conjTranspose\_mul\_self\_le\_one}).
+\end{proof}
+
+\paragraph{Comments.} Formalized in \texttt{MIPRE/Foundations/Commutation.lean}. This is the
+paper's \texttt{lem:commutation-analysis} (\texttt{games.tex}), and it is the only step of the
+Pauli appendix that genuinely uses projectivity of a measurement.
+
+\textbf{Proved for abstract families in one algebra.} The two parties enter only through four
+hypotheses --- the two factors commute, and Bob's two marginals multiply to the joint element in
+either order --- so \texttt{commutation\_analysis\_abstract} is stated for families in a single
+matrix algebra and the bipartite version is its instance. That is not tidiness: stating it with
+$\ot$ in the hypotheses made the unifier's work quadratic in the number of rewrites and the proof
+timed out; in one algebra it elaborates in seconds.
+
+\textbf{No square root, and the constant is exact.} Every step is a triangle inequality or an
+operator-norm bound, so $16\delta$ is what the argument gives. The last step of the appendix's
+commuting case is also exact: expanding a two-outcome observable as $\Id - 2 M_1$, the commutator
+of two of them is \emph{four times} the commutator of the two $M_1$'s
+(\texttt{obs2\_commutator\_eq}), because the identity commutes with everything --- a factor $16$ in
+the squared norm and no approximation.
+
+\subsection{Attaching a projection, and the pasting lemma}
+
+\begin{lemma}[Cool closeness fact, and the marginal step]
+\label{lem:cool-closeness-fact}
+\uses{def:state-distance,def:cross-distance}
+\lean{MIPRE.snorm_sq_mul_le_of_contraction, MIPRE.snorm_sq_sum_proj_mul,
+  MIPRE.sum_snorm_sq_cool, MIPRE.sum_fibre_fst, MIPRE.sum_snorm_sq_cool_prod,
+  MIPRE.IsPVM.aOp, MIPRE.IsPVM.bOp, MIPRE.sum_xSqNorm_marg_le,
+  MIPRE.sum_snorm_sq_mul_proj_le, MIPRE.sum_xSqNorm_marg_le'}
+\leanok
+Let $\{A_i\}_{i \in \mA}$ be a projective measurement and $\{B_i\}$ any family of
+operators on the same space, with
+$\sum_i \norm{(A_i - B_i)\ket{\psi}}^2 \leq \delta$. Then for any map $f : \mA \to \mB$,
+\begin{equation}
+  \label{eq:cool-closeness-bp}
+  \sum_{k} \Bigl\| \sum_{i \,:\, f(i) = k} \bigl( A_i - A_i B_i \bigr) \ket{\psi} \Bigr\|^2
+    \;\leq\; \delta\;,
+\end{equation}
+\emph{simultaneously} over all the fibres of $f$ --- multiplying each element by $A$'s own element
+costs nothing, and neither does summing along a fibre.
+
+Consequently, if $\{Q_{a,b}\}$ is a projective measurement on $\C^{d_\alice}$ with outcomes pairs,
+$\{Z_b\}$ is a projective measurement on $\C^{d_\bob}$, and $\{X_a\}$ is any family on
+$\C^{d_\bob}$, then the $b$-marginal of $Q$ inherits $Q$'s consistency with the ordered product:
+\begin{equation}
+  \label{eq:marginal-step-bp}
+  \sum_a \norm{\Bigl( \bigl(\sum_b Q_{a,b}\bigr) \ot \Id - \Id \ot X_a \Bigr)
+      \ket{\psi}}^2
+    \;\leq\; 2 \sum_{a, b} \norm{\bigl( Q_{a,b} \ot Z_b - Q_{a,b} \ot \Id \bigr)\ket{\psi}}^2
+      + 2 \sum_{a, b} \norm{\bigl( Q_{a,b} \ot \Id - \Id \ot Z_b X_a \bigr)\ket{\psi}}^2\;.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+\leanok
+\uses{def:state-distance}
+For~\eqref{eq:cool-closeness-bp}: projectivity gives $A_i - A_i B_i = A_i (A_i - B_i)$, and the
+cross terms of one fibre vanish because $A_i A_{i'} = 0$ for $i \neq i'$, so the fibre's squared
+norm is the sum of its terms' squared norms. Each term loses only $A_i \leq \Id$, and the fibres
+are disjoint, so the outer sum is absorbed rather than repeated.
+
+For~\eqref{eq:marginal-step-bp}, the intermediate operator is
+$\sum_b Q_{a,b} \ot Z_b$. Reaching it from $\sum_b Q_{a,b} \ot \Id$ is exactly the first part,
+applied along the fibres of the first projection. Reaching $\Id \ot X_a$ from it uses
+$\sum_b Z_b = \Id$ to write the difference as
+$\sum_b (\Id \ot Z_b)\bigl( Q_{a,b} \ot \Id - \Id \ot Z_b X_a \bigr)$, whose terms are again
+mutually orthogonal --- which is what makes the sum over the summed-out outcome free rather than a
+factor $|\mB|$. One triangle inequality joins the two.
+\end{proof}
+
+\paragraph{Comments.} Formalized in \texttt{MIPRE/Foundations/Commutation.lean} (the fact) and
+\texttt{MIPRE/Foundations/Pasting.lean} (the marginal step). This is the paper's
+\texttt{lem:cool-closeness-fact} in the partition form its round-11 repair gives it, and the
+partition form is the point: the consumer applies it to the $q$ fibres of an outcome map at once,
+and the single-subset form would cost a factor $q$ there.
+
+\begin{lemma}[Pasting, the two-measurement case]
+\label{lem:pasting-updated}
+\uses{def:cross-distance,lem:commutation-analysis}
+\lean{MIPRE.fibSum, MIPRE.isPVM_fibSum, MIPRE.sum_fiber, MIPRE.abs_sum_sum_le_sqrt,
+  MIPRE.sum_comm4, MIPRE.sum_prod_eq, MIPRE.sum_prod_uniform, MIPRE.sum_prod_uniform_one,
+  MIPRE.sum_weighted_add, MIPRE.sum_weighted_div, MIPRE.sum_weighted_const_mul,
+  MIPRE.IsPVM.comp_equiv, MIPRE.qform_conjTranspose,
+  MIPRE.sum_sq_le_one_of_sum_eq_one, MIPRE.sum_snorm_sq_orth_le_one,
+  MIPRE.sum_snorm_sq_povm_le_one, MIPRE.sum_snorm_sq_prod_le_one,
+  MIPRE.sum_bornProb_le_fibSum, MIPRE.sum_xSqNorm_fibSum_le, MIPRE.sum_snorm_sq_comm_eq,
+  MIPRE.pasteJ, MIPRE.sandOp_posSemidef, MIPRE.sum_sandOp, MIPRE.sum_snorm_sq_sandOp_le_one,
+  MIPRE.sandOpG_posSemidef, MIPRE.sum_sandOpG, MIPRE.pasteJ_posSemidef, MIPRE.sum_pasteJ,
+  MIPRE.abs_sigma_sub_cloud_le, MIPRE.abs_sand_sub_ord_le, MIPRE.sum_bornProb_ord_ge,
+  MIPRE.sum_snorm_sq_comm_coarse_le, MIPRE.collisionTerm, MIPRE.collisionTerm_nonneg,
+  MIPRE.strife_sub_cloud_eq, MIPRE.sum_snorm_sq_comm_fine_le,
+  MIPRE.one_sub_sum_bornProb_pasteJ_le', MIPRE.one_sub_sum_bornProb_pasteJ_le,
+  MIPRE.sum_xSqNorm_pasteJ_le, MIPRE.sum_collisionTerm_le}
+\leanok
+Let $\mu$ be a distribution on questions, $\ket{\psi}$ a unit vector, and suppose given, for each
+question:
+\begin{itemize}
+\item a \emph{projective} measurement $\{A_{b,a}\}$ on $\C^{d_\alice}$ with outcomes pairs in
+  $\mA \times \mB$;
+\item a \emph{projective} measurement $\{R_b\}_{b \in \mA}$ on $\C^{d_\bob}$ --- in the
+  application already the coarse-graining of the first family along its own outcome map, which is
+  why only its projectivity appears;
+\item a \emph{projective} measurement $\{G_g\}_{g \in \mC}$ on $\C^{d_\bob}$, a copy
+  $\{G'_g\}$ of it on $\C^{d_\alice}$, and an outcome map $e : \mC \to \mB$.
+\end{itemize}
+Write $J_{b, a} = \sum_{g \,:\, e(g) = a} G_g R_b G_g$ for the pasted family, which is a POVM.
+Suppose that
+\begin{equation}
+  \label{eq:pasting-hyp-bp}
+  \bigl(\sum_a A_{b,a}\bigr) \ot \Id \simeq_\delta \Id \ot R_b\;, \qquad
+  \bigl(\sum_b A_{b,a}\bigr) \ot \Id \simeq_\delta
+    \Id \ot \sum_{g \,:\, e(g) = a} G_g\;, \qquad
+  G'_g \ot \Id \simeq_\eta \Id \ot G_g\;,
+\end{equation}
+and that the \emph{collision term}
+$\E \sum_b \sum_{g \neq g' \,:\, e(g) = e(g')}
+  \bra{\psi} G'_{g'} \ot G_g R_b G_g \ket{\psi}$ is at most $\eps$. Then
+\begin{equation}
+  \label{eq:pasting-conclusion-bp}
+  1 - \E \sum_{b, a} \bra{\psi} A_{b,a} \ot J_{b,a} \ket{\psi}
+    \;\leq\; \frac{\delta}{2} + \sqrt{\frac{\delta}{2}}
+      + \sqrt{32 \delta + 4\sqrt{\eta} + 2 \eps}\;,
+\end{equation}
+and hence $A_{b,a} \ot \Id \simeq_{\delta_{\mathrm{pasting}}} \Id \ot J_{b,a}$ with
+$\delta_{\mathrm{pasting}}$ twice the right-hand side of~\eqref{eq:pasting-conclusion-bp}.
+
+Finally, if the question is a pair $(z, y)$ with $y$ uniform and independent of $z$, every family
+above depending on $z$ alone and only $e$ on $y$, and if any two distinct $g, g'$ satisfy
+$e_z(y)(g) = e_z(y)(g')$ for at most an $\eps(z)$ fraction of the probes $y$, then the collision
+term is at most the average of $\eps(z)$. The dependence on $z$ is what the consumer needs: for a
+\emph{degenerate} line --- a direction that is zero, which the seeded test's diagonal branch does
+sample --- the outcome map separates nothing at all, and what makes the average small is that such
+lines are rare, not that the bound holds at every question.
+\end{lemma}
+
+\begin{proof}
+\leanok
+\uses{lem:commutation-analysis,def:cross-distance,lem:qld-combined-points}
+The target is the agreement of $A$ with the sandwich. Two steps reach it. The ordered product
+$G_g R_b$ carries all but $\delta/2 + \sqrt{\delta/2}$: its outer factor sums away against
+Alice's second marginal by the second hypothesis, and what is left is Alice's first marginal
+against $\Id - R_b$, whose Cauchy--Schwarz costs the square root of the first hypothesis. Passing
+from the ordered product to the sandwich costs one more Cauchy--Schwarz against Bob's commutator
+$[R_b, G_g]$, the front factor $A_{b, e(g)} \ot G_g$ being a mutually orthogonal family and so a
+contraction.
+
+So everything reduces to the \emph{fine-grained} commutator $\sum_{b, g} \norm{[R_b, G_g]
+\ket{\psi}}^2$. Its coarse-grained counterpart, with $G$ replaced by its fibre sums, is at most
+$16(\delta + \delta)$ by Lemma~\ref{lem:commutation-analysis} --- read in the mirror, with both
+families on Bob's factor and Alice's joint measurement supplying the operator both products reach.
+Expanding either commutator, the two diagonal terms are \emph{exactly one} because $R$ and $G$ are
+projective, so each equals $2 - 2\Sigma$ for its own overlap $\Sigma$, and the two off-diagonal
+terms are complex conjugates. Comparing the two overlaps is the only remaining work, and it passes
+through the paper's cloud and strife: replacing Bob's outer factor by Alice's copy of it costs
+$\sqrt\eta$ on each side --- and nothing depending on $|\mC|$, because one factor $R_b$
+stays in front of the deviation, so the sum over $b$ is absorbed --- while the cloud and the strife
+differ by exactly the collision term.
+
+For the last part, the Born probabilities do not depend on the probe, so the probe average acts on
+the collision indicator alone; what multiplies it is a POVM's total mass, which is one.
+\end{proof}
+
+\paragraph{Comments.} Formalized in \texttt{MIPRE/Foundations/Pasting.lean}. This is NW19's
+Fact 4.35, the paper's \texttt{lem:pasting-updated} (\texttt{games.tex}), at $k = 2$; the paper's
+reduction of general $k$ to $k = 2$ is an induction that adds nothing, and the consumer
+(Lemma~\ref{lem:qld-pairs-of-lines}) needs $k = 2$ only.
+
+\textbf{Two hypotheses of the paper's statement are absent, and both are absences rather than
+gaps.} First, the inner family is assumed \emph{projective}; the paper allows a POVM there, and
+then the two diagonal sums of the commutator expansion are only approximately one, which is what
+its appeal to Fact 4.31 of~\cite{NW19} repairs. With projectivity they are exactly one and that
+fact is not needed at all --- the consumer's inner family is a line measurement, which is
+projective. Second, the cross-party self-consistency of $G$ at the \emph{fine} level is a
+hypothesis here, where the paper derives it from the backwards consistency and Alice's
+self-consistency and pays a further $\eps$ for the passage from the fibres to the fine family. The
+consumer has the fine-level relation directly, as item 1 of
+Lemma~\ref{lem:qld-expanded-lines}, so the derivation would be work spent to weaken a hypothesis
+that is already met. Neither change touches the conclusion.
+
+\textbf{The collision term is a hypothesis of the abstract lemma and a lemma of its own for the
+product case.} That split is what keeps the analytic core free of the question distribution: the
+core needs only that the off-diagonal cloud terms are small in total, and the product-distribution
+bridge (\texttt{sum\_collisionTerm\_le}) is where uniformity of the probe and the separating
+property of the outcome map are used.
+
+\textbf{Constants.} $32\delta$ rather than the $16\delta$ of
+Lemma~\ref{lem:commutation-analysis} because the two marginal hypotheses enter that lemma as a
+single $\delta$, here instantiated at their sum. Nothing in the chain is a per-outcome estimate,
+so no constant depends on $|\mC|$ or on $|\mB|$.
+
+\subsection{Generalized Pauli observables}
+
+\begin{definition}[Generalized Pauli observables in characteristic two]
+\label{def:generalized-pauli}
+\lean{MIPRE.sgn, MIPRE.sgn_add, MIPRE.star_sgn, MIPRE.norm_sgn, MIPRE.sum_sgn,
+  MIPRE.Weyl.two_eq_zero, MIPRE.Weyl.add_self, MIPRE.Weyl.add_eq_zero_iff,
+  MIPRE.Weyl.trDot, MIPRE.Weyl.trDot_comm, MIPRE.Weyl.trDot_add_left,
+  MIPRE.Weyl.trDot_add_right, MIPRE.Weyl.trDotL, MIPRE.Weyl.wX, MIPRE.Weyl.wZ,
+  MIPRE.Weyl.wX_mul_wX, MIPRE.Weyl.wZ_mul_wZ, MIPRE.Weyl.wX_mul_self,
+  MIPRE.Weyl.wZ_mul_self, MIPRE.Weyl.wX_conjTranspose, MIPRE.Weyl.wZ_conjTranspose,
+  MIPRE.Weyl.wX_isUnitary, MIPRE.Weyl.wZ_isUnitary, MIPRE.Weyl.wX_comm,
+  MIPRE.Weyl.wZ_comm, MIPRE.Weyl.wX_mul_wZ, MIPRE.Weyl.wX_mul_wZ_of_ne,
+  MIPRE.Weyl.wX_mul_wZ_of_eq, MIPRE.Weyl.trDotL_ne_zero, MIPRE.Weyl.sum_sgn_trDot,
+  MIPRE.Weyl.sum_sgn_trDot_zero, MIPRE.Weyl.zProj, MIPRE.Weyl.sum_zProj,
+  MIPRE.Weyl.wZ_eq_sum_zProj, MIPRE.Weyl.sum_sgn_smul_wZ,
+  MIPRE.LowDegree.card_filter_ker_mul', MIPRE.Weyl.IsWeylFamily,
+  MIPRE.Weyl.isWeylFamily_wZ, MIPRE.Weyl.isWeylFamily_wX, MIPRE.Weyl.proj,
+  MIPRE.Weyl.proj_wZ, MIPRE.Weyl.proj_mul, MIPRE.Weyl.proj_mul_proj, MIPRE.Weyl.sum_proj,
+  MIPRE.Weyl.eq_sum_proj, MIPRE.Weyl.proj_conjTranspose, MIPRE.Weyl.xProj,
+  MIPRE.Weyl.sum_xProj, MIPRE.Weyl.wX_eq_sum_xProj, MIPRE.Weyl.xProj_mul_xProj,
+  MIPRE.Weyl.xProj_conjTranspose, MIPRE.Weyl.dotF, MIPRE.Weyl.trDot_smul,
+  MIPRE.Weyl.trMulL, MIPRE.Weyl.sum_sgn_linear, MIPRE.Weyl.sum_sgn_trMul,
+  MIPRE.Weyl.syn, MIPRE.Weyl.sum_sgn_smul_line}
+\leanok
+Let $q = 2^k$ be an admissible field size and let $n$ be a
+finite index set, so that $\F_q^n$ indexes a basis of $(\C^q)^{\ot n}$. Write
+$\fieldtr : \F_q \to \F_2$ for the field trace and, for $a, b \in \F_q^n$,
+\begin{equation*}
+  \langle a, b \rangle \;=\; \fieldtr\Bigl(\sum_{l \in n} a_l b_l\Bigr) \;\in\; \F_2\;.
+\end{equation*}
+The \emph{generalized Pauli}, or \emph{Weyl}, \emph{observables} are
+\begin{equation*}
+  \qp^X(a) \;=\; \sum_{i \in \F_q^n} \ket{i + a}\bra{i}\;, \qquad
+  \qp^Z(b) \;=\; \sum_{i \in \F_q^n} (-1)^{\langle b, i \rangle}\, \ket{i}\bra{i}\;.
+\end{equation*}
+They satisfy, for all $a, a', b, b' \in \F_q^n$:
+\begin{enumerate}
+\item $\qp^W(a) \qp^W(a') = \qp^W(a + a')$, so $\qp^W(0) = \Id$ and each family commutes;
+\item $\qp^W(a)^\dagger = \qp^W(a)$ and $\qp^W(a)^2 = \Id$: each is a self-adjoint involution,
+  hence a $\pm 1$-observable and a unitary;
+\item (\emph{twisted commutation})
+  $\qp^X(a)\, \qp^Z(b) = (-1)^{\langle a, b \rangle}\, \qp^Z(b)\, \qp^X(a)$; so the two commute
+  when $\langle a, b\rangle = 0$ and anticommute when it is $1$.
+\end{enumerate}
+For $W \in \{X, Z\}$ define the \emph{spectral projectors} of the family by Fourier averaging,
+\begin{equation}
+  \label{eq:pauli-inversion-bp}
+  \qp^W_e \;=\; \E_{a \in \F_q^n} (-1)^{\langle a, e \rangle}\, \qp^W(a)\;.
+\end{equation}
+For $W = Z$ these are the projectors onto the computational basis vectors. They form a projective
+measurement and invert~\eqref{eq:pauli-inversion-bp}:
+\begin{equation}
+  \label{eq:pauli-obs-proj-bp}
+  \qp^W_e \qp^W_{e'} = \delta_{e, e'}\, \qp^W_e\;, \qquad
+  \sum_e \qp^W_e = \Id\;, \qquad
+  \qp^W(a) \;=\; \sum_{e} (-1)^{\langle a, e\rangle}\, \qp^W_e\;.
+\end{equation}
+Finally, for $v \in \F_q^n$ and $a \in \F_q$ write $v \cdot e = \sum_l v_l e_l \in \F_q$ for the
+pairing before the trace, and define the \emph{syndrome projector}
+$\qp^W_{[\,\cdot\, v = a]} = \sum_{e \,:\, e \cdot v = a} \qp^W_e$. Averaging the family along the
+line $r \mapsto r v$ recovers it:
+\begin{equation}
+  \label{eq:pauli-line-bp}
+  \E_{r \in \F_q} (-1)^{\fieldtr(a r)}\, \qp^W(r v) \;=\; \qp^W_{[\,\cdot\, v = a]}\;.
+\end{equation}
+\end{definition}
+
+\paragraph{Source.} The pinned paper~\cite{AuditSync26}, \texttt{preliminaries.tex},
+\texttt{sec:generalized-pauli}: \texttt{eq:pauli-fp} and its $\F_q$ analogue,
+\texttt{eq:twisted-fq}, \texttt{eq:pauli-product-power}, \texttt{eq:pauli-obs-proj} and
+\texttt{eq:pauli-inversion-0}. The cancellation behind the inversion is the paper's
+\texttt{lem:cancellation} (Fact 3.2 of~\cite{NW19}).
+
+\paragraph{Comments.} The formalization is \texttt{MIPRE/Foundations/Weyl.lean}. It is the half of
+the Pauli basis test's infrastructure that was missing: \texttt{MIPRE/LCS/Pauli.lean} is the
+$2 \times 2$ Pauli matrices for the Magic Square, and what the expansion stage of
+Remark~\ref{rem:qld-architecture} and its swap isometry both run on is this $\F_q$ Weyl system.
+Three points, two of them restrictions stated so that no later statement is read as more general
+than it is.
+
+\textbf{Characteristic two only.} The paper gives the construction over $\F_p$ with phases
+$\omega = e^{2\pi i/p}$ and then specializes; this is the $p = 2$ case throughout, where
+$\omega = -1$ and every phase is the real sign \texttt{MIPRE.sgn}. Nothing is lost here: the test's
+parameters are admissible by hypothesis, which means $q = 2^k$, and no consumer instantiates it
+elsewhere. What it buys is that the operators are self-adjoint \emph{involutions} rather than
+order-$p$ unitaries --- so they are genuine $\pm 1$-observables, and item 2 above is where the
+paper needs $(\qp^W(a))^p = \Id$.
+
+\textbf{One matrix, not an iterated Kronecker product.} $(\C^q)^{\ot n}$ is presented as matrices
+indexed by the functions $n \to \F_q$, which \emph{is} $\F_q^n$, so $\qp^W(a)$ is a single matrix
+and the $n$-register statements are the one-register statements with no associativity
+bookkeeping. The index set $n$ is an arbitrary finite type rather than $\{1, \ldots, n\}$, which is
+what lets the test use it at $n = \{0,1\}^m$ --- the indexing of $\F_q^M$, $M = 2^m$, that
+Definition~\ref{def:ld-encoding} already uses.
+
+\textbf{The cancellation lemma needed a generalization, not a port.} The identity behind the
+inversion in~\eqref{eq:pauli-obs-proj-bp} is that a nontrivial sign character of $\F_q^n$ sums to
+zero, and that is the index-two kernel of a nonzero $\F_2$-linear functional. The repository had
+that count only for a functional on a field \emph{extension}
+(\texttt{card\_filter\_ker\_mul}); the proof uses nothing but the module structure and a vector
+off the kernel, so it is now stated for any finite $\F$-vector space
+(\texttt{card\_filter\_ker\_mul'}), with the field-extension form as the instance. The paper's own
+correction note on \texttt{lem:cancellation} warns that the ambient space must be a subspace over the
+\emph{base} field and that the statement is false over a subfield; here the space is all of
+$\F_q^n$ over $\F_2$, so there is nothing to check.
+
+\textbf{The spectral theory is proved once, for both families.} The only properties of a family
+that~\eqref{eq:pauli-obs-proj-bp} and~\eqref{eq:pauli-line-bp} use are the three of
+\texttt{IsWeylFamily}: it represents the additive group, its operators are self-adjoint, and the
+identity sits at $0$. So the projectors are built by~\eqref{eq:pauli-inversion-bp} from any such
+family and the statements hold for both, which means the paper's Fourier transform
+(\texttt{eq:fourier-f}) conjugating $\qp^Z$ into $\qp^X$ is \emph{not needed} to reach the
+$X$-side projectors. That is worth avoiding: the transform carries a $q^{-1/2}$, and a square root
+in matrix entries costs far more in Lean than it does on paper.
+
+Two of the identities turn out to need even less. The expansion of an operator in its own
+projectors, and the line average~\eqref{eq:pauli-line-bp}, use \emph{no} group law at all --- they
+are Fourier inversion on the index group and hold for an arbitrary family. What the group law buys
+is that the projectors are mutually \emph{orthogonal}, which is what makes them a measurement
+rather than a resolution.
+
+Equation~\eqref{eq:pauli-line-bp} is the identity Lemma~\ref{lem:qld-expanded-points} averages
+to, at $v = \ind_m(u)$.
+
+\begin{definition}[The maximally entangled state of the Weyl system]
+\label{def:weyl-epr}
+\uses{def:generalized-pauli,def:state-distance}
+\lean{MIPRE.Weyl.eprScale, MIPRE.Weyl.epr, MIPRE.Weyl.epr_same, MIPRE.Weyl.epr_ne,
+  MIPRE.Weyl.eprScale_sq, MIPRE.Weyl.epr_unit, MIPRE.Weyl.stateVec_entry,
+  MIPRE.Weyl.stateVec_epr, MIPRE.Weyl.wX_transpose, MIPRE.Weyl.wZ_transpose,
+  MIPRE.Weyl.stateVec_epr_wX, MIPRE.Weyl.stateVec_epr_wZ, MIPRE.Weyl.stateVec_epr_proj,
+  MIPRE.sgn_sum, MIPRE.Weyl.isPVM_syn, MIPRE.Weyl.stateVec_epr_syn,
+  MIPRE.Weyl.synOf, MIPRE.Weyl.syn_eq_synOf, MIPRE.Weyl.sum_synOf,
+  MIPRE.Weyl.isPVM_synOf, MIPRE.Weyl.stateVec_epr_synOf}
+\leanok
+On two copies of $(\C^q)^{\ot n}$,
+\begin{equation*}
+  \ket{\EPR_q}^{\ot n} \;=\; \frac{1}{\sqrt{q^n}} \sum_{a \in \F_q^n} \ket{a} \ot \ket{a}\;,
+\end{equation*}
+a unit vector. For any operator $M$ on one copy,
+\begin{equation}
+  \label{eq:epr-transport-bp}
+  (M \ot \Id) \ket{\EPR_q}^{\ot n} \;=\; (\Id \ot M^{\mathsf T}) \ket{\EPR_q}^{\ot n}\;,
+\end{equation}
+and the Weyl operators and their spectral projectors are \emph{symmetric}, so for them the
+transpose is invisible: the two parties' operators act identically on the state.
+
+Both facts about the syndrome projectors $\qp^W_{[\,\cdot\, v = a]}$ --- that they are a projective
+measurement, and that they transport across the state --- hold for the coarse-graining of the
+eigenbasis measurement along a level set of an \emph{arbitrary} label, the syndrome being the case
+of the label $e \mapsto \langle e, v\rangle$; and coarse-graining such a family again gives the
+family of the composite label.
+\end{definition}
+
+\paragraph{Comments.} Formalized in \texttt{MIPRE/Foundations/WeylEPR.lean}. The stabilizer
+relation of~\eqref{eq:epr-transport-bp} at $M = \qp^W(a)$ is what the expansion stage of
+Remark~\ref{rem:qld-architecture} runs on: its expanded state adjoins $\ket{\EPR_q}^{\ot M}$ to
+each player, and the sign $(-1)^{\gamma(\omega)}$ that the strategy's own observables carry is
+cancelled against one the \emph{ancilla} observables carry, for which the two ancilla halves must
+be tied together.
+
+This is the second dividend of characteristic two, after the operators being involutions. Over
+$\F_p$ for odd $p$ the transpose of $\qp^Z(b)$ is $\qp^Z(b)$ but its conjugate is $\qp^Z(-b)$, and
+the bookkeeping reappears; here every entry is real and the transpose is the identity map on the
+whole family, projectors included (\texttt{stateVec\_epr\_proj}, which needs only that the family
+is symmetric).
+
+\effortEasy
+
+\begin{lemma}[Qudits are qubits, in characteristic two]
+\label{lem:pauli-binary}
+\uses{def:generalized-pauli,def:weyl-epr}
+\lean{MIPRE.Weyl.binEquiv, MIPRE.Weyl.binEquiv_apply, MIPRE.Weyl.binEquiv_add,
+  MIPRE.Weyl.binEquiv_injective, MIPRE.Weyl.binEquiv_eq_iff, MIPRE.Weyl.trDot_binEquiv,
+  MIPRE.Weyl.wX_binEquiv, MIPRE.Weyl.wZ_binEquiv, MIPRE.Weyl.card_binEquiv,
+  MIPRE.Weyl.proj_binEquiv, MIPRE.Weyl.proj_wZ_binEquiv, MIPRE.Weyl.proj_wX_binEquiv,
+  MIPRE.Weyl.eprScale_binEquiv, MIPRE.Weyl.epr_binEquiv, MIPRE.Weyl.pauli_binary,
+  MIPRE.Weyl.exists_binEquiv_pauli_binary, MIPRE.Weyl.trDot_two, MIPRE.Weyl.sgn_trDot_two,
+  MIPRE.Weyl.wZ_two_diag, MIPRE.Weyl.wX_two_apply}
+\leanok
+Let $q = 2^k$ be an admissible field size, let $L$ be a finite index set, and let
+$\{e_1, \ldots, e_k\}$ be a self-dual basis of $\F_q$ over $\F_2$, with coordinate map
+$\kappa$. Then the relabelling
+\begin{equation*}
+  \phi : \F_q^L \to \F_2^{L \times k}\;, \qquad \phi(u)_{i j} \;=\; \kappa(u_i)_j\;,
+\end{equation*}
+is a bijection, and conjugating by it carries the whole Weyl system over $\F_q$ on $L$ registers
+to the Weyl system over $\F_2$ on $L k$ registers: the form $\langle \cdot, \cdot \rangle$, the
+two operator families $\qp^X$ and $\qp^Z$, their spectral projectors, and
+$\ket{\EPR_q}^{\ot L} \mapsto \ket{\EPR_2}^{\ot L k}$. Such a basis exists whenever $k$ is odd.
+\end{lemma}
+
+\begin{proof}
+\leanok
+\uses{def:generalized-pauli,def:weyl-epr,lem:self-dual-basis-exists,lem:downsize-field}
+Four steps, one per piece, and only the first uses self-duality. The form transports because
+$\fieldtr(x y) = \kappa(x) \cdot \kappa(y)$, which is item 2 of the paper's
+\texttt{lem:downsize\_field} and is exactly self-duality
+(\texttt{MIPRE.LowDegree.trace\_mul\_eq\_dot}); summing over the $L$ registers is
+\texttt{trDot\_binEquiv}. $\qp^Z$ transports because its entries are the characters of the form,
+so it transports as soon as the form does. $\qp^X$ transports because $\phi$ is
+\emph{additive}, which is all a shift knows about --- no self-duality. The projectors transport
+because the Fourier average of~\eqref{eq:pauli-inversion-bp} reindexes along $\phi$ and the
+normalization is one cardinality counted on either side. The state transports because both sides
+are the normalized diagonal and a relabelling preserves the diagonal. Existence of the basis is
+the existence half of Lemma~\ref{lem:self-dual-basis}.
+\end{proof}
+
+\paragraph{Comments.} Formalized in \texttt{MIPRE/Foundations/WeylBinary.lean}; this is the
+paper's \texttt{lem:pauli-binary} (\texttt{preliminaries.tex}), which is what makes the Pauli
+basis test a self-test for \emph{qubit} Pauli observables and $\ket{\EPR_2}$, as its
+\texttt{cor:pauli-binary} states.
+
+\textbf{A relabelling, not an isometry.} The paper builds an isometry
+$\theta : \C^q \to (\C^2)^{\ot k}$ and states the conclusion as
+$\qp^W_u = \phi^\dagger (\bigotimes_{i,j} \sigma^W_{u_{ij}}) \phi$. Here both systems are
+matrices indexed by a finite set --- $\F_q^L$ on one side, $\F_2^{L \times k}$ on the other ---
+and $\phi$ is a bijection \emph{of those index sets}, so conjugating by the corresponding
+permutation unitary is \texttt{Matrix.submatrix} along $\phi$ and no unitary has to be
+constructed. That is the same simplification as presenting $(\C^q)^{\ot n}$ as one matrix rather
+than an iterated Kronecker product, and it is why the four items are four short calculations.
+
+\textbf{What ``these are qubit Paulis'' means here.} The target is the Weyl system at
+$\F = \F_2$ and index set $L \times k$, whose matrices are indexed by
+$\F_2^{L \times k}$ --- the computational basis of $(\C^2)^{\ot L k}$. That the operators really
+are the tensor products of single-qubit Paulis is then a statement \emph{inside} that system, and
+it is checked rather than read off the encoding: the form is the plain dot product
+(\texttt{trDot\_two}, the field trace of a one-dimensional extension being the identity), its
+character is a product over the qubits (\texttt{sgn\_trDot\_two}), and each operator's entries
+factor accordingly (\texttt{wZ\_two\_diag} on the diagonal, \texttt{wX\_two\_apply} everywhere).
+The paper's $\bigotimes_{i=1}^L \bigotimes_{j=1}^k \sigma^W_{u_{ij}}$ is that factorization.
+
+\textbf{The oddness of $k$ is inherited, not needed.} Every statement above holds for any
+self-dual basis, given as a hypothesis; only the existence clause asks $k$ to be odd, and that is
+the restriction of Lemma~\ref{lem:self-dual-basis}'s formalized half, not of this lemma. The
+paper's admissible sizes satisfy it.
+
+\begin{definition}[Inconsistency]
+\label{def:inconsistency}
+\lean{MIPRE.inconsistency}
+\leanok
+Let $\mu$ be a distribution on a finite set $\mX$, let
+$\ket{\psi} \in \C^{d_\alice} \ot \C^{d_\bob}$, and let $\{M^x_a\}$, $\{N^x_a\}$ be
+families of POVMs on the two factors with a common question set $\mX$ and a common
+answer set. Their \emph{inconsistency} on $\ket{\psi}$ is
+\begin{equation*}
+  \E_{x \sim \mu} \sum_{a \neq b} \bra{\psi} M^x_a \ot N^x_b \ket{\psi},
+\end{equation*}
+the probability that the two measurements return different answers. We say $M$ and $N$
+are \emph{$\delta$-consistent} if their inconsistency is at most $\delta$.
+\end{definition}
+
+\paragraph{Comments.} This is Definition 4.8 of~\cite{JNVWY21qld}, in the two-space
+form used by Theorem~\ref{thm:lidt-soundness}. It is a different notion from the POVM
+distance of Definition~\ref{def:distance}: consistency compares two families across the
+two factors of the state, whereas $\approx_\delta$ compares them as operator families.
+
+\begin{remark}[The POVM distance and the state]
+\label{rem:distance-state}
+\uses{def:distance,def:sync-strategy,def:sync-value}
+Definition~\ref{def:distance} is \emph{state-independent}, whereas the companion paper's
+$\approx_\delta$ (\texttt{games.tex}) is the state-dependent quantity $\E_{x \sim \mu}
+\sum_a \norm{(M^x_a - N^x_a)\ket{\psi}}^2$. For a \emph{synchronous} strategy the two agree.
+The state is then the maximally entangled state on $\C^d \ot \C^d$, and for it
+$\bra{\psi} (A^\dagger A) \ot I \ket{\psi} = \tr(A^\dagger A)/d = \norm{A}_{hs}^2$, so
+Definition~\ref{def:distance} \emph{is} the state-dependent distance at the tracial state.
+Every formalized consumer of Definition~\ref{def:distance} is synchronous, and the soundness
+of oracularization (Lemma~\ref{lem:oracular-soundness}) reads it that way. For a general
+bipartite strategy the two notions differ, so a chapter~3 consumer that is not synchronous
+will need the state-dependent notion added rather than this one reused.
+\end{remark}
+
+\begin{lemma}[Closeness from two disagreements]
+\label{lem:hs-closeness}
+\uses{def:hs-norm}
+\lean{MIPRE.sum_hsNormSq_sub_le}
+\leanok
+Let $\{O_i\}_{i \in I}$, $\{C_i\}_{i \in I}$, $\{D_i\}_{i \in I}$ be finite families of
+projections on $\C^{d \times d}$ with $\sum_i \tau(O_i) = 1$ and $\sum_i \tau(C_i D_i) = 1$.
+Then
+\begin{equation*}
+  \sum_i \norm{C_i D_i - O_i}_{hs}^2 \;\leq\; 3 \Bigl( \sum_i \tau\bigl(O_i (1 - D_i)\bigr)
+    + \sum_i \tau\bigl(O_i (1 - C_i)\bigr) \Bigr).
+\end{equation*}
+\end{lemma}
+\begin{proof}
+\leanok
+Write $X_i = (1 - C_i) O_i$ and $Y_i = (1 - D_i) O_i$, so that $C_i O_i = O_i - X_i$ and
+$D_i O_i = O_i - Y_i$. Since $1 - C_i$ and $1 - D_i$ are projections,
+$\norm{X_i}_{hs}^2 = \tau(O_i (1 - C_i))$ and $\norm{Y_i}_{hs}^2 = \tau(O_i (1 - D_i))$; write
+$\beta$ and $\alpha$ for the two sums, which are therefore nonnegative. Expanding the
+left-hand side and using $\sum_i \tau(C_i D_i) = \sum_i \tau(O_i) = 1$,
+\begin{equation*}
+  \sum_i \norm{C_i D_i - O_i}_{hs}^2 \;=\; 2 - 2 \sum_i \tau(O_i D_i C_i).
+\end{equation*}
+Since $O_i$ is a projection, $\tau(O_i D_i C_i) = \langle D_i O_i, C_i O_i \rangle_{hs} =
+\langle O_i - Y_i, O_i - X_i \rangle_{hs}$, which expands to $\tau(O_i) -
+\tau(O_i(1 - C_i)) - \tau(O_i(1 - D_i)) + \langle Y_i, X_i \rangle_{hs}$. Summing over $i$,
+$\sum_i \tau(O_i D_i C_i) = 1 - \alpha - \beta + \sum_i \langle Y_i, X_i \rangle_{hs}$, and
+Cauchy--Schwarz followed by the arithmetic--geometric mean inequality gives
+$\bigl| \sum_i \langle Y_i, X_i \rangle_{hs} \bigr| \leq \sqrt{\alpha}\sqrt{\beta} \leq
+(\alpha + \beta)/2$. Hence $\sum_i \norm{C_i D_i - O_i}_{hs}^2 \leq 2(\alpha + \beta) +
+(\alpha + \beta)$.
+\end{proof}
+
+\begin{lemma}[Close measurements have close values]
+\label{lem:close-measurements-close-values}
+\uses{def:hs-norm}
+\lean{MIPRE.sum_ntr_mul_ge}
+\leanok
+Let $\{O_i\}_{i \in I}$, $\{C_i\}_{i \in I}$, $\{D_i\}_{i \in I}$ be finite families of
+projections on $\C^{d \times d}$ with $\sum_i \tau(O_i) = 1$, and let
+$\mathrm{acc} \subseteq I$. Then
+\begin{equation*}
+  \sum_{i \in \mathrm{acc}} \tau(O_i)
+    \;-\; 2 \sqrt{\sum_i \norm{C_i D_i - O_i}_{hs}^2}
+    \;\leq\; \sum_{i \in \mathrm{acc}} \tau(C_i D_i).
+\end{equation*}
+\end{lemma}
+\begin{proof}
+\leanok
+This is the measurement-level form of \cite[Fact 4.31]{NW19}, in the one direction a soundness
+argument needs and in the synchronous setting, where $\tau((C_iD_i)^\dagger C_iD_i) =
+\tau(C_iD_i)$ makes the products a measurement on the nose. Put $w_i = C_iD_i - O_i$. Then
+$\tau(C_iD_i) = \norm{C_iD_i}_{hs}^2 = \norm{O_i + w_i}_{hs}^2 = \tau(O_i) +
+2\langle O_i, w_i\rangle_{hs} + \norm{w_i}_{hs}^2$. Summing over $\mathrm{acc}$ and dropping
+the last term, which is nonnegative,
+\begin{equation*}
+  \sum_{i \in \mathrm{acc}} \tau(C_iD_i) \;\geq\; \sum_{i \in \mathrm{acc}} \tau(O_i)
+    - 2 \Bigl| \sum_{i \in \mathrm{acc}} \langle O_i, w_i \rangle_{hs} \Bigr|,
+\end{equation*}
+and Cauchy--Schwarz over the index bounds the last modulus by
+$\sqrt{\sum_{i \in \mathrm{acc}} \tau(O_i)} \cdot \sqrt{\sum_{i \in \mathrm{acc}}
+\norm{w_i}_{hs}^2} \leq 1 \cdot \sqrt{\sum_i \norm{w_i}_{hs}^2}$.
+\end{proof}
+
+\paragraph{Comments.} The square root is spent here and nowhere else in the soundness of
+oracularization; everything before it, including Lemma~\ref{lem:hs-closeness}, is linear.
+That is what repair~1 of Remark~\ref{rem:oracularization-repairs} is about.
+
+\subsection{Computability conventions}
+\label{sec:computability-conventions}
+
+Turing machines are represented by their G\"odel numbers; in Lean the intended model is
+Mathlib's \texttt{Nat.Partrec.Code}, with $\phi_e$ the partial function computed by
+code $e$ and ``$e$ halts on empty input'' meaning $(\texttt{e.eval } 0).\texttt{Dom}$.
+Running times are counted as in~\cite{MNY}; polynomial-time computability of a function
+of strings and integers means time polynomial in the lengths of the string inputs and
+in $\log$ of the integer inputs, unless an integer is explicitly given in unary.
+
+\begin{definition}[Recursively enumerable]
+\label{def:re}
+\lean{MIPRE.IsRE, MIPRE.isRE_iff}
+\leanok
+A language $L \subseteq \{0,1\}^*$ is in $\RE$ if it is the domain (equivalently, the
+range) of a partial computable function. The \emph{halting problem} --- the set of $e$
+such that $\phi_e$ halts on the empty input --- is $\RE$-complete under many-one
+reductions.
+\end{definition}
+
+In Lean (\texttt{MIPRE.IsRE}) membership in $L$ is Mathlib's \texttt{REPred}, the domain
+of a partial computable function; equivalently (\texttt{MIPRE.isRE\_iff}), $L$ is the
+halting set of a well-scoped program of the ambient model
+(Section~\ref{sec:rr-computability}) on encoded strings, which is the form in which the
+compressibility criterion (Lemma~\ref{lem:compressible-criterion}) consumes recursive
+enumerability. The completeness of the halting problem is
+Theorem~\ref{thm:halting-undecidable}, not part of the definition.
+
+\begin{definition}[Succinct description]
+\label{def:succinct}
+\lean{MIPRE.Cost.IsSuccinctDesc, MIPRE.Cost.bitQueryAnswer}
+\leanok
+Following~\cite{MNY}, a pair $(e, n)$ of a Turing machine $e$ and integer $n$ is a
+\emph{succinct description} of the string $x \in \{0,1\}^*$ if $\abs{x} \leq 2^n$, the
+runtime of $e$ on input $m$ is at most $(n+1)(\abs{m}+1)^2$, and $\phi_e(m)$ equals the
+$m$-th bit of $x$ for $m < \abs{x}$, and $2$ for $m \geq \abs{x}$. (\cite{MNY} require
+runtime at most $n$ on every input; in a model that charges for reading its input this is
+vacuous for $\abs{m} > n$, and the polynomial slack in $\abs{m}$ is what the ambient
+model's bit-indexing program achieves. Any fixed polynomial in $n$ and $\abs{m}$ would
+do, provided the same one is used in Theorem~\ref{thm:compression}.)
+\end{definition}
+
+\begin{definition}[Game description]
+\label{def:game-description}
+\uses{def:sync-game}
+\lean{HaltingGameValue.GameData, HaltingGameValue.GameData.toGame,
+  HaltingGameValue.GameData.game}
+\leanok
+A \emph{game description} is a tuple $g = (n_\mX, n_\mA, w, \mathrm{acc})$ of two
+integers, a finite list $w$ of weighted question pairs, and a finite list
+$\mathrm{acc}$ of accepted answer tuples. It determines a synchronous game
+$\game_g$ on question alphabet $\{0, \ldots, n_\mX\}$ and answer alphabet $\{0, \ldots,
+n_\mA\}$: the question distribution is $w$ normalized (a fixed point mass if $w$ has
+total weight zero), and the predicate accepts exactly the tuples listed in
+$\mathrm{acc}$, except that unequal answers to equal questions always lose. Game
+descriptions are first-order data and carry a canonical G\"odel numbering
+(\texttt{GameData} in the Lean file).
+\end{definition}
+
+\subsection{Normal form verifiers}
+\label{sec:normal-form-verifiers}
+
+Games produced in the proof are presented by pairs of Turing machines: a
+\emph{sampler}, generating questions by a rigid linear-algebraic procedure that
+introspection can certify, and a \emph{decider}, checking answers.
+
+\begin{definition}[Sampler]
+\label{def:sampler}
+\uses{def:cl-function,lem:cl-structure}
+\lean{MIPRE.CL.Sampler, MIPRE.CL.Sampler.Query, MIPRE.CL.Sampler.dist,
+  MIPRE.CL.Sampler.TimeBound}
+\leanok
+An \emph{$\ell$-level sampler} (with field size $2$) is a Turing machine $\sampler$ together
+with, for each $n$, a dimension $s(n)$ and two $\ell$-level CL functions $L^\alice, L^\bob$ on
+$V = \F_2^{s(n)}$ given with exact decomposition data (Lemma~\ref{lem:cl-structure}) such
+that, writing vectors and register subspaces of $V$ as bit strings of length $s(n)$
+(coordinates, respectively indicator vectors), for all $w \in \{\alice, \bob\}$, $j \in \{1,
+\ldots, \ell\}$ and bit strings $z, u, y$ of length $s(n)$:
+\begin{itemize}
+\item on input $(n, \mathtt{dimension})$, $\sampler$ outputs $s(n)$;
+\item on input $(n, w, \mathtt{marginal}, j, z)$, it outputs the marginal $L^w_{\leq j}(z)$;
+\item on input $(n, w, \mathtt{linear}, j, u, y)$, it outputs $L^w_{j,u}(y)$, provided
+  $u \in L^w_{<j}(V)$;
+\item on input $(n, w, \mathtt{factor}, j, u)$, it outputs the factor space $V^w_{j,u}$,
+  provided $u \in L^w_{<j}(V)$;
+\end{itemize}
+and $\sampler$ halts on every input of the form $(n, \ldots)$, well formed or not; nothing is
+required of its outputs on other inputs. The \emph{distribution of $\sampler$ at index $n$}
+is the CL distribution $\mu_n$ of $(L^\alice(x), L^\bob(x))$ for uniform $x \in V$
+(Definition~\ref{def:cl-function}). In the paper's Turing-machine model,
+$\TIME_\sampler(n)$ denotes the absolute supremum of the running times over all inputs
+of the form $(n, \ldots)$; totality alone does not make that supremum finite.
+\end{definition}
+
+\paragraph{Comments.} This follows the query interface of the paper's
+\texttt{def:sampler} (\texttt{linear.tex})~\cite{AuditSync26} at
+field size $2$, the only size the normal form verifiers of this blueprint use; the paper's
+samplers over $\F_{2^t}$ reach this form by downsizing (Section~\ref{sec:ps-cl}). Two
+interface details matter here. The correctness clauses for $\mathtt{linear}$ and $\mathtt{factor}$
+are imposed only for prefixes in the range of $L^w_{<j}$, as the paper's amended definition
+states, and are well defined there by Lemma~\ref{lem:cl-structure}. The paper additionally
+requires bounded-prefix format and length checks: after computing $s(n)$, a sampler
+inspects only the prescribed prefix of each auxiliary input, rejecting with a fixed default
+when the format fails. Together with totality, this bounds the paper's absolute
+$\TIME_\sampler(n)$ uniformly over even malformed or overlong inputs. A total program
+that scans an ignored, arbitrarily long suffix would not satisfy that source contract.
+
+In Lean the machine is a program of the ambient cost model
+(Section~\ref{sec:computability-conventions}), its well-formed input is the pair of $n$
+and a query (\texttt{Sampler.Query}), and \texttt{Sampler.TimeBoundAt n T k} is a
+\emph{relative cost bound}: it requires halting within
+$T\cdot(\abs{d}+1)^k$ on every input $(n,d)$, well formed or not. It is a separate
+predicate, not a bound $\TIME_\sampler(n)\leq T$ on the absolute supremum. In particular,
+neither this predicate nor the totality field supplies the paper's bounded-prefix contract.
+
+Two departures from the paper are forced here, and both were found by trying to prove the
+bound for a concrete machine rather than by inspection. First, the paper's bound is
+\emph{uniform} over all inputs, and that reading is not available in the ambient model: a
+value is inspected in place one node at a time, but a loop carries the rest of a list to its
+next iteration only by copying it, so no program walks an unbounded list within a cost
+independent of its length, and a uniform bound is met by no sampler or decider that checks
+the length of a string against an unbounded $s(n)$. The running time is therefore bounded by a
+polynomial in the size of the input. Second, the \emph{degree} $k$ of that polynomial has to
+be carried alongside the coefficient $T$, because every decider of the pipeline runs another
+program through the universal machine, whose overhead is a polynomial $Q$ of degree above one
+(\texttt{Cost.Universal.univPoly}): a simulated run costing $T (\abs{d}+1)^k$ becomes one
+costing about $Q(T (\abs{d}+1)^k)$, of degree $k \cdot \deg Q$. No fixed degree is closed
+under the composition the deciders perform; a bounded degree is. Collapsing the two into one
+parameter --- reading the bound as $T (\abs{d}+1)^T$ --- would also be closed, but then
+$\lambda$-boundedness would allow degree $n^\lambda$ in the input size, which is not a
+polynomial-time condition at all and would make Theorem~\ref{thm:compression} assume
+compression of verifiers its proof cannot compress.
+
+\begin{definition}[Decider]
+\label{def:decider}
+\lean{MIPRE.Decider, MIPRE.Decider.Accepts, MIPRE.Decider.TimeBound}
+\leanok
+A \emph{decider} is a $5$-input Turing machine $\decider$, whose input is interpreted
+as $(n, x, y, a, b)$ with $n$ an integer index and $x, y, a, b$ strings. It \emph{accepts}
+if it halts with output $1$, and \emph{rejects} otherwise (output $0$, or a timeout).
+In the paper, $\TIME_\decider(n)$ denotes the absolute supremum of its running times
+over all inputs with index $n$, possibly infinite. In Lean,
+\texttt{Decider.TimeBoundAt n T k} instead requires halting within cost
+$T \cdot (\abs{d} + 1)^k$ on every input $(n, d)$. This relative bound implies
+totality at index $n$, but need not imply finite absolute $\TIME_\decider(n)$, for the
+reasons given after Definition~\ref{def:sampler}.
+\end{definition}
+
+\begin{definition}[Normal form verifier in the ambient model]
+\label{def:normal-verifier}
+\uses{def:sampler,def:decider,def:game,def:sync-game}
+\lean{MIPRE.Verifier, MIPRE.Verifier.game, MIPRE.Verifier.Answers, MIPRE.Verifier.size,
+  MIPRE.Verifier.IsSynchronousAt, MIPRE.Verifier.syncGame}
+\leanok
+An ambient \emph{normal form verifier} is a pair $\verifier=(\sampler,\decider)$ of
+a sampler over $\F_2$ and a decider satisfying the extensional condition
+\begin{equation*}
+  \decider(n,x,y,a,b)\text{ accepts}\;\Rightarrow\;
+  \abs{x}=\abs{y}=s(n).
+\end{equation*}
+This is \texttt{Verifier.accepts\_length}; no particular sequence of preliminary checks
+is part of the structure. For each index $n$ and independently chosen answer cut
+$T\in\N$, the game $\verifier_{n,T}$ (\texttt{Verifier.game n T}) has question sets
+$\mX=\mY=\{0,1\}^{s(n)}$, answer sets consisting of the bit strings of length at most
+$T$, the sampler distribution at index $n$, and decision predicate equal to the decider's
+acceptance predicate. Its definition imposes no time-bound hypothesis. We write
+$\verifier_n$ when the answer cut is specified by the surrounding statement.
+
+The condition \texttt{Verifier.IsSynchronousAt n} says that the decider rejects unequal
+answers to equal questions at index $n$. Under this condition,
+\texttt{Verifier.syncGame n T} is the same game as a synchronous game, so its synchronous
+value is defined (Remark~\ref{rem:sync-invariant}). The description length is
+$\abs{\verifier} = \max\{\abs{\sampler}, \abs{\decider}\}$, and the number of levels of
+$\verifier$ is that of $\sampler$.
+\end{definition}
+
+\begin{remark}[Comparison with the source normal-verifier contract]
+\label{rem:source-normal-verifier}
+\ledgernode{1.1.3}
+\uses{def:normal-verifier,rem:runtime-contract-bridge}
+The paper's \texttt{def:normal-ver} requires an operational first step: compute $s(n)$
+and check both question lengths before continuing. Its \texttt{def:normal-game} uses
+answer strings of length at most the finite absolute time $\TIME_\decider(n)$
+(\texttt{games.tex}~\cite{AuditSync26}). The dimension check yields
+$s(n)\leq\TIME_\decider(n)$ in that machine model. These source requirements are not
+the checked ambient definition above.
+
+Relating executions in the two models and identifying the source answer cut are part of
+the pending normalization in Remark~\ref{rem:runtime-contract-bridge}. An ambient
+relative-cost coefficient need not be the source absolute time, and increasing an answer
+cut may change the value. In the ambient model acceptance is halting with output $1$;
+the relative time bound ensures totality with input-dependent budgets. The dimension bound
+needed by the pipeline is required independently in Definition~\ref{def:lambda-bounded}.
+\end{remark}
+
+\begin{remark}[The synchronization invariant]
+\label{rem:sync-invariant}
+\uses{def:normal-verifier,def:sync-game,thm:almost-sync}
+An earlier arrangement of the pipeline of Section~\ref{ch:proof-structure} asked two
+properties of the games it produces, neither of which follows from symmetrizing the
+players' roles. The pipeline no longer needs either, its soundness being carried in
+$\valstar$ throughout (Remark~\ref{rem:bipartite-route}); the two are recorded here
+because they are what a synchronous route would have to establish, and because the second
+is the reason there is no synchronous route:
+\begin{enumerate}
+\item \emph{Synchronicity}: equal questions reject unequal answers, so that $\synval$ is
+  defined at all. For a game given by a game description this holds by fiat
+  (Definition~\ref{def:game-description}); for a game given by a normal form verifier it
+  is a condition on the decider. It would be needed wherever $\synval$ occurs; direct
+  repetition preserves it, since two unequal answer tuples to equal question tuples differ
+  in some coordinate, where the repeated game rejects.
+\item \emph{Common marginals and diagonal weight}: the game's two marginals agree,
+  with common marginal $\nu$, and the almost-synchronous transport requires
+  $\mu(x,x)\geq\kappa\nu(x)$ for every $x$, with the same
+  $\kappa > 0$ along the whole recursion. This is the hypothesis of
+  Theorem~\ref{thm:almost-sync}, without which the two values of a game are unrelated
+  (Remark~\ref{rem:almost-sync-hypothesis}).
+\end{enumerate}
+The second property is emphatically not one of repeated games: the $k$-fold repetition of
+a game with diagonal weight $\kappa$ has diagonal weight $\kappa^k$. A synchronous route
+would therefore have to establish it for the constructions of introspection,
+oracularization and answer reduction --- never inheriting it from the game being
+compressed, and never applying the transport to a repeated game --- and in~\cite{JNVWY20}
+both properties come from the typed structure of the samplers, which this blueprint does
+not carry (Section~\ref{sec:departures}). Neither is established here, and neither needs
+to be.
+\end{remark}
+
+\begin{definition}[$\lambda$-bounded verifier in the ambient model]
+\label{def:lambda-bounded}
+\uses{def:normal-verifier}
+\lean{MIPRE.Verifier.IsBounded}
+\leanok
+For $\lambda\in\N$, an ambient normal form verifier $\verifier=(\sampler,\decider)$
+is \emph{$\lambda$-bounded} if $\abs{\verifier}\leq\lambda$ and, for every $n\geq2$,
+$s(n)\leq n^\lambda$ and both programs halt within cost
+$n^\lambda(\abs{d}+1)^\lambda$ on every encoded input $(n,d)$. Equivalently, both
+\texttt{Sampler.TimeBoundAt} and \texttt{Decider.TimeBoundAt} hold at parameters
+$(n,n^\lambda,\lambda)$. The parameter $\lambda$ controls
+the coefficient's growth in $n$ and bounds the polynomial degree in the auxiliary input
+size. The dimension bound is a separate clause; neither it nor an absolute-time bound
+is inferred from the relative cost predicates.
+\end{definition}
+
+\begin{remark}[Comparison with source boundedness]
+\label{rem:source-lambda-bounded}
+\uses{def:lambda-bounded,rem:source-normal-verifier}
+The paper's \texttt{def:lambda} instead requires
+$\TIME_\sampler(n),\TIME_\decider(n)\leq n^\lambda$ in the absolute-time model,
+for $n\geq2$, and $\abs{\verifier}\leq\lambda$~\cite{AuditSync26}. The source dimension
+bound follows from writing the sampler's output and from the decider's initial checks.
+This condition and the marked ambient definition above are different contracts; their
+comparison requires the normalization obligation below.
+\end{remark}
+
+\begin{remark}[The runtime-contract bridge remains an obligation]
+\label{rem:runtime-contract-bridge}
+\uses{def:sampler,def:decider,def:normal-verifier,def:lambda-bounded}
+The paper's transformation contracts use absolute simulation budgets and, where stated,
+standard timeout form. They cannot be applied to \texttt{Verifier.IsBounded} solely by
+reinterpreting $\TIME$: even on inputs of size $O(N^\lambda)$ the relative budget
+$N^\lambda(\abs{d}+1)^\lambda$ can be much larger than $N^\lambda$. A normalization
+bridge must supply bounded-prefix behavior and the required timeout form, preserve the
+sampler distribution and the chosen finite game, and transfer the relevant completeness
+witnesses. It must keep the original answer cut by rejecting longer answers rather than
+silently enlarging the alphabet when it increases the simulation budget. Any new absolute
+bound, for example $N^{p(\lambda)}$, must then be propagated through the transformation
+parameters. This is a pending bridge between the source and ambient interfaces; the
+existing conditional Lean results do not construct it.
+\end{remark}
+
+\begin{definition}[The class $\MIPstar_{1,1/2}(2,1)$]
+\label{def:mipstar}
+\uses{def:q-value,def:normal-verifier}
+\lean{MIPRE.MIPStar, MIPRE.PolyVerifier, MIPRE.PolyVerifier.Efficient,
+  MIPRE.PolyVerifier.game}
+\leanok
+A language $L\subseteq\{0,1\}^*$ is in $\MIPstar_{1,1/2}(2,1)$, written $\MIPstar$ here, if
+there are two machines, a sampler $\sampler$ and a decider $\decider$, and a polynomial $P$
+such that for every string $z$, writing $B = P(\abs{z})$:
+\begin{enumerate}
+\item \emph{Efficiency.} On input $z$ and a uniformly random seed $r\in\{0,1\}^B$, the
+  sampler halts within time $P(\abs{z}+\abs{r})$ with a pair $(x,y)$ of strings of length at
+  most $B$; write $\mu_z$ for the distribution of $(x,y)$. On input $(z,x,y,a,b)$, the decider halts within
+  time $P(\abs{z}+\abs{x}+\abs{y}+\abs{a}+\abs{b})$ with a bit $D_z(x,y,a,b)$, and this bit
+  is $0$ whenever one of $x,y,a,b$ is longer than $B$. The game $\game_z$ has the strings of
+  length at most $B$ as its question and answer alphabets, question distribution $\mu_z$ and
+  decision predicate $D_z$.
+\item \emph{Completeness.} If $z\in L$ then $\valstar(\game_z)=1$.
+\item \emph{Soundness.} If $z\notin L$ then $\valstar(\game_z)\leq\tfrac12$.
+\end{enumerate}
+\end{definition}
+
+The paper's definition (\texttt{games.tex}~\cite{AuditSync26}) has the decider run in time
+$\poly(\abs{z})$ ``even for long inputs $a,b$'', which its footnote makes precise by having the
+decider return $0$ whenever the four strings are too long. In the ambient model a program
+reads a list only by walking it (the discussion under Definition~\ref{def:decider}), so the
+time bound is stated in the total input length and the footnote's clause is a separate
+requirement; the game on the strings of length at most $B$ is then the paper's finite game, and
+the two readings define the same class. A randomized machine is a deterministic program with an
+explicit uniform seed of the length $B$ of its time bound, and for the same reason the sampler's
+time is bounded by $P$ in its total input length $\abs{z} + \abs{r} = \abs{z} + B$: a
+program cannot read a seed of length $B$ within time $B$, and with $B$ polynomial in $\abs{z}$
+the bound is still $\poly(\abs{z})$. In Lean the verifier is a
+\texttt{PolyVerifier}, the clause is \texttt{PolyVerifier.Efficient}, the game is
+\texttt{PolyVerifier.game} and the class is \texttt{MIPRE.MIPStar}.
+
+\begin{definition}[The computable class]
+\label{def:mipstar-computable}
+\uses{def:q-value,def:game-description,def:value-model}
+\lean{MIPRE.MIPStarComputable}
+\leanok
+A language $L\subseteq\{0,1\}^*$ is in the \emph{computable class} if there exists
+a computable map $g$ from bit strings to \texttt{HaltingGameValue.GameData}
+(Definition~\ref{def:game-description}) such that for every string $z$,
+\begin{equation*}
+  z\in L\ \Longrightarrow\ \valstar(\game_{g(z)})=1,
+  \qquad
+  z\notin L\ \Longrightarrow\ \valstar(\game_{g(z)})\leq\tfrac12.
+\end{equation*}
+The game $\game_{g(z)}$ is the explicit game \texttt{(g z).game}. Computability is the
+Mathlib \texttt{Computable} predicate; there is no polynomial-time bound on $g$ in this
+definition. This is \texttt{MIPRE.MIPStarComputable}, the class used by the checked inclusion
+in $\RE$ and by the main theorem in its current form (Theorem~\ref{thm:mipstar-eq-re}); in
+Lean it is the class \texttt{MIPRE.MIPClass} of Definition~\ref{def:value-model} at the
+tensor-product value model.
+\end{definition}
+
+\begin{lemma}[The class is contained in the computable one]
+\label{lem:mipstar-poly-sub}
+\uses{def:mipstar,def:mipstar-computable}
+\lean{MIPRE.MIPStar.toComputable, MIPRE.MIPStar.isRE, MIPRE.PolyVerifier.tab,
+  MIPRE.PolyVerifier.tab_computable, MIPRE.PolyVerifier.quantumValue_tab}
+\leanok
+Every language in $\MIPstar$ (Definition~\ref{def:mipstar}) is in the computable class of
+Definition~\ref{def:mipstar-computable}, hence recursively enumerable.
+\end{lemma}
+
+\begin{proof}
+\uses{lem:mipstar-sub-re}
+\leanok
+Given $z$, run the sampler on every seed of length $B$ and the decider on every tuple of
+strings of length at most $B$, each under the budget the efficiency clause supplies; a run
+within a known budget is decidable, so the table of $\game_z$ is computable from $z$. It is
+written as a game description with Alice's questions and Bob's tagged apart (the description
+format forces unequal answers to equal questions to lose, and $\game_z$ is a general bipartite
+game), and the tagged game has the value of $\game_z$ (\texttt{quantumValue\_doubled}). In Lean:
+\texttt{PolyVerifier.tab}, \texttt{tab\_computable} and \texttt{quantumValue\_tab}. The
+inclusion in $\RE$ is then Lemma~\ref{lem:mipstar-sub-re}.
+\end{proof}
+
+\begin{remark}[Comparison with the source complexity class]
+\label{rem:source-mipstar}
+\ledgernode{1.1.7, 1.1.7.1}
+\uses{def:mipstar,def:mipstar-computable,rem:source-normal-verifier}
+Definition~\ref{def:mipstar} is the paper's $\MIPstar_{1,1/2}(2,1)$ up to the readings of the
+time bounds recorded after it. The checked halting reduction (Theorem~\ref{thm:halting}) has
+two forms. Along the criterion route it supplies its game as an explicit description computed
+with no time bound --- the tabulation of a verifier at a level exponential in the machine's
+size, whose questions no polynomial-time sampler can write down --- which is what the computable
+class of Definition~\ref{def:mipstar-computable} asks for. Along the paper's route it supplies
+the verifier $\vhalt$ at the fixed level $C$ with $\lambda = \poly(\abs{\machine})$
+(Lemma~\ref{lem:lambda}), played on input $z$ by a polynomial-time sampler and decider, which is
+what Definition~\ref{def:mipstar} asks for; so Theorem~\ref{thm:mipstar-eq-re} holds for both
+classes (\texttt{MIPRE.Halting.mipstar\_eq\_re}, \texttt{MIPRE.Halting.mipstarComputable\_eq\_re}),
+and Lemma~\ref{lem:mipstar-poly-sub} is the inclusion of the first in the second. General
+bipartite games must be represented in
+\texttt{GameData} with value-preserving transport; merely forcing unequal answers to equal
+questions to lose can destroy a perfect strategy, which is why both tabulations tag the two
+players' questions apart.
+\end{remark}

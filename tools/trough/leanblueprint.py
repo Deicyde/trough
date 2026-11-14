@@ -53,6 +53,11 @@ VERBATIM = re.compile(r"\\begin\s*\{(verbatim\*?|Verbatim|lstlisting|minted)\}")
 ARCHITECT = "leanarchitect"  # where a copy of LeanArchitect's .lake/build/blueprint sits, beside the TeX
 ARCHITECT_PATH = re.compile(r"(?:^|/)\.lake/build/blueprint/(.+)$")
 UNREAD = re.compile(r" names no (?:file|module|node)$| nests too deep$")  # problems that leave text unread
+# Files an \input can name that hold no blueprint text: a bibliography a LaTeX run writes, or Markdown
+# such as an authors list. When one is missing, nothing the blueprint says is left unread.
+NOT_TEX = (".bbl", ".md")
+# \ifplastex web \else print \fi: plasTeX, which builds the web blueprint, reads the first branch.
+IFPLASTEX = re.compile(r"(?<!\\newif)\\ifplastex(?![A-Za-z])")
 SECTION = re.compile(r"\\(part|chapter|section|subsection|subsubsection)(\*?)(?![A-Za-z])")
 MATH = re.compile(
     r"(?s)\$\$.*?\$\$|(?<!\\)\$.*?(?<!\\)\$|\\\[.*?\\\]|\\\(.*?\\\)"
@@ -165,7 +170,7 @@ class Document:
         if self.resolve(entry) is None:
             raise FileNotFoundError(f"no blueprint entry file {entry} in {root}")
         self.visit(entry, 0)
-        self.text = "".join(self.parts)
+        self.text = web_branch("".join(self.parts))
 
     def resolve(self, name: str) -> str | None:
         """The file *name* names, as a path under root; LeanArchitect's output, wherever the
@@ -188,6 +193,9 @@ class Document:
 
     def visit(self, name: str, depth: int, origin: str = "") -> None:
         rel = self.resolve(name)
+        if rel is None and name.endswith(NOT_TEX):
+            self.missing.append(f"{origin}: \\input{{{name}}} holds no blueprint text; skipped")
+            return
         if rel is None or depth > 16:
             self.missing.append(f"{origin}: \\input{{{name}}} names no file" if rel is None
                                 else f"{origin}: \\input{{{name}}} nests too deep")
@@ -270,6 +278,28 @@ class Document:
 
     def where(self, offset: int) -> Where:
         return self.origins[max(0, bisect.bisect_right(self.starts, offset) - 1)]
+
+
+def web_branch(text: str) -> str:
+    """*text* as the web blueprint reads it: each \\ifplastex keeps its first branch, and the rest of the
+    conditional is blanked, newlines kept, so every offset still finds its file and line."""
+    def blank(span: str) -> str:
+        return re.sub(r"[^\n]", " ", span)
+
+    position, parts = 0, []
+    for match in IFPLASTEX.finditer(text):
+        if match.start() < position:
+            continue
+        end = re.compile(r"\\(else|fi)(?![A-Za-z])").search(text, match.end())
+        if not end:
+            break
+        fi = end if end.group(1) == "fi" else re.compile(r"\\fi(?![A-Za-z])").search(text, end.end())
+        if not fi:
+            break
+        parts += [text[position:match.start()], blank(match.group()), text[match.end():end.start()],
+                  blank(text[end.start():fi.end()])]
+        position = fi.end()
+    return "".join(parts) + text[position:]
 
 
 def theorem_kinds(text: str) -> dict[str, str]:
