@@ -1,0 +1,3450 @@
+{
+ "schema": "trough-physlib/v1",
+ "rev": "2a1dfe43134b49b643642f13d33031754021bb5d",
+ "modules": [
+  {
+   "file": "Physlib/ProbabilisticTheory/Basic.lean",
+   "module": "Physlib.ProbabilisticTheory.Basic",
+   "title": "Probabilistic theories",
+   "doc": "A probabilistic theory is described by its ordered real observables and a certain outcome.\n\n## i. Overview\n\nThe observables of a physical system form an ordered real vector space. Positive observables are\nthose whose measured values are never negative. The certain outcome `1` bounds every observable\nup to a multiple and sets the scale of the theory. The order is Archimedean, so no observable is\ninfinitesimally positive and the certain outcome defines a genuine norm.\n\n## ii. Key results\n\n- `ProbabilisticTheory` : ordered real observables with a certain outcome and an Archimedean\n  order.\n\n## iii. Table of contents\n\n- A. Observable space and certain outcome\n\n## iv. References",
+   "copyright": "2026 Tom Ole Diem",
+   "sections": [
+    {
+     "line": 38,
+     "text": "## A. Observable space and certain outcome"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "ProbabilisticTheory",
+     "kind": "structure",
+     "line": 41,
+     "doc": "An ordered real observable space with a certain outcome and no infinitesimal observables.",
+     "statement": "structure ProbabilisticTheory where\n  /-- The real observables. -/\n  Observables : Type*\n  /-- Observables can be added and subtracted. -/\n  [addCommGroup : AddCommGroup Observables]\n  /-- The order saying which observables are positive. -/\n  [partialOrder : PartialOrder Observables]\n  /-- Observables can be scaled by real numbers. -/\n  [module : Module ℝ Observables]\n  /-- Adding an observable preserves the order. -/\n  [isOrderedAddMonoid : IsOrderedAddMonoid Observables]\n  /-- Scaling by a nonnegative real preserves the order. -/\n  [posSMulMono : PosSMulMono ℝ Observables]\n  /-- The certain outcome. -/\n  [one : One Observables]\n  /-- The certain outcome is nonnegative. -/\n  one_nonneg' : 0 ≤ (1 : Observables)\n  /-- Every observable is bounded above by a natural multiple of the certain outcome. -/\n  exists_nsmul_one_le' : ∀ B : Observables, ∃ n : ℕ, B ≤ n • (1 : Observables)\n  /-- An observable below every positive multiple of the certain outcome is nonpositive. -/\n  le_zero_of_forall_pos_smul_one_le' : ∀ A : Observables,\n    (∀ ε : ℝ, 0 < ε → A ≤ ε • (1 : Observables)) → A ≤ 0",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/ProbabilisticTheory/Channel/Basic.lean",
+   "module": "Physlib.ProbabilisticTheory.Channel.Basic",
+   "title": "Positive unital maps",
+   "doc": "## i. Overview\n\nIn the order-unit-space model used here, a channel is a positive unital transformation: it sends\nobservables to observables without turning a possible outcome negative, and it leaves the certain\noutcome certain. This covers time evolution, noise, and measurements whose outcomes are discarded\nat the level of a general probabilistic theory. For quantum systems with a specified composite\nstructure, physical channels normally require the stronger condition of complete positivity,\nwhich is not expressible using the order-unit structure alone.\n\nA channel `Φ : Channel P Q` between probabilistic theories is a unital positive linear map from\n`P.Observables` to `Q.Observables`. States and local nets still use unital positive linear maps\nbetween bare order-unit spaces.\n\n## ii. Key results\n\n- `UnitalPositiveLinearMap` : a positive linear map preserving `1`, notated `E →ₚ₁[R] F`.\n- `PositiveLinearMap` scalar action : positive linear maps can be scaled by nonnegative reals.\n- `UnitalPositiveLinearMap.ofLinearMap` : bundle a linear map after checking positivity and\n  unitality.\n- `UnitalPositiveLinearMap.ofPositiveLinearMap` : bundle a positive linear map after checking\n  unitality.\n- `UnitalPositiveLinearMap.id`, `UnitalPositiveLinearMap.comp` : the identity and composition of\n  unital positive linear maps.\n- `Channel` : channels between probabilistic theories.\n- `Channel.id`, `Channel.comp` : the identity and composition of channels.\n\n## iii. Table of contents\n\n- A. Unital positive linear maps\n- B. Constructing unital positive linear maps\n- C. Scaling positive linear maps\n- D. Channels between probabilistic theories\n\n## iv. References",
+   "copyright": "2026 Tom Ole Diem",
+   "sections": [
+    {
+     "line": 54,
+     "text": "## A. Unital positive linear maps"
+    },
+    {
+     "line": 146,
+     "text": "## B. Constructing unital positive linear maps"
+    },
+    {
+     "line": 171,
+     "text": "## C. Scaling positive linear maps\n\nPositive linear maps are closed under addition and under scaling by nonnegative reals, but\nunital ones are not closed under scaling."
+    },
+    {
+     "line": 195,
+     "text": "## D. Channels between probabilistic theories"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "UnitalPositiveLinearMap",
+     "kind": "structure",
+     "line": 62,
+     "doc": "A positive linear map preserving `1`.",
+     "statement": "structure UnitalPositiveLinearMap (R E F : Type*) [Semiring R]\n    [AddCommMonoid E] [PartialOrder E] [AddCommMonoid F] [PartialOrder F]\n    [Module R E] [Module R F] [One E] [One F] extends E →ₚ[R] F, OneHom E F",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 80,
+     "doc": "",
+     "statement": "instance : FunLike (E →ₚ₁[R] F) E F",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 84,
+     "doc": "",
+     "statement": "instance : LinearMapClass (E →ₚ₁[R] F) R E F",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 88,
+     "doc": "",
+     "statement": "instance : OrderHomClass (E →ₚ₁[R] F) E F",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 91,
+     "doc": "",
+     "statement": "instance : OneHomClass (E →ₚ₁[R] F) E F",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 94,
+     "doc": "",
+     "statement": "instance : Coe (E →ₚ₁[R] F) (E →ₚ[R] F)",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.toPositiveLinearMap_apply",
+     "kind": "lemma",
+     "line": 97,
+     "doc": "",
+     "statement": "lemma toPositiveLinearMap_apply (f : E →ₚ₁[R] F) (x : E) : f.toPositiveLinearMap x = f x",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.toPositiveLinearMap_injective",
+     "kind": "lemma",
+     "line": 100,
+     "doc": "Unital positive linear maps are determined by their underlying positive linear map.",
+     "statement": "lemma toPositiveLinearMap_injective :\n    Function.Injective (toPositiveLinearMap (R := R) (E := E) (F := F))",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.toLinearMap_injective",
+     "kind": "lemma",
+     "line": 105,
+     "doc": "Unital positive linear maps are determined by their underlying linear map.",
+     "statement": "lemma toLinearMap_injective : Function.Injective (fun f : E →ₚ₁[R] F => f.toLinearMap)",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.id",
+     "kind": "def",
+     "line": 111,
+     "doc": "The identity as a unital positive linear map.",
+     "statement": "def id : E →ₚ₁[R] E",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.comp",
+     "kind": "def",
+     "line": 116,
+     "doc": "The composition of unital positive linear maps.",
+     "statement": "def comp (g : F →ₚ₁[R] G) (f : E →ₚ₁[R] F) : E →ₚ₁[R] G",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.id_apply",
+     "kind": "lemma",
+     "line": 120,
+     "doc": "",
+     "statement": "lemma id_apply (x : E) : UnitalPositiveLinearMap.id R E x = x",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.comp_apply",
+     "kind": "lemma",
+     "line": 122,
+     "doc": "",
+     "statement": "lemma comp_apply (g : F →ₚ₁[R] G) (f : E →ₚ₁[R] F) (x : E) : g.comp f x = g (f x)",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.comp_id",
+     "kind": "lemma",
+     "line": 124,
+     "doc": "",
+     "statement": "lemma comp_id (f : E →ₚ₁[R] F) : f.comp (.id R E) = f",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.id_comp",
+     "kind": "lemma",
+     "line": 126,
+     "doc": "",
+     "statement": "lemma id_comp (f : E →ₚ₁[R] F) : (UnitalPositiveLinearMap.id R F).comp f = f",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 130,
+     "doc": "Unital positive linear maps from a space to itself form a monoid under composition, with the\nidentity as unit.",
+     "statement": "instance : Monoid (E →ₚ₁[R] E)",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.ofLinearMap",
+     "kind": "def",
+     "line": 153,
+     "doc": "Bundle a linear map after proving only positivity and preservation of `1`.",
+     "statement": "def ofLinearMap (f : E →ₗ[R] F) (hpos : ∀ x, 0 ≤ x → 0 ≤ f x) (hone : f 1 = 1) : E →ₚ₁[R] F",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.ofPositiveLinearMap",
+     "kind": "def",
+     "line": 158,
+     "doc": "Bundle a positive linear map after proving only that it preserves `1`.",
+     "statement": "def ofPositiveLinearMap (f : E →ₚ[R] F) (hone : f 1 = 1) : E →ₚ₁[R] F",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.ofPositiveLinearMap_apply",
+     "kind": "lemma",
+     "line": 164,
+     "doc": "",
+     "statement": "lemma ofPositiveLinearMap_apply (f : E →ₚ[R] F) (hone : f 1 = 1) (x : E) :\n    ofPositiveLinearMap f hone x = f x",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 186,
+     "doc": "",
+     "statement": "instance : SMul NNReal (E →ₚ[R] F)",
+     "sorry": false
+    },
+    {
+     "name": "PositiveLinearMap.nnreal_smul_apply",
+     "kind": "lemma",
+     "line": 191,
+     "doc": "",
+     "statement": "lemma nnreal_smul_apply (c : NNReal) (f : E →ₚ[R] F) (x : E) : (c • f) x = c • f x",
+     "sorry": false
+    },
+    {
+     "name": "Channel",
+     "kind": "structure",
+     "line": 203,
+     "doc": "A channel preserves positivity and the certain outcome between observable spaces.",
+     "statement": "structure Channel (P Q : ProbabilisticTheory) extends P.Observables →ₚ[ℝ] Q.Observables where\n  /-- The certain outcome is sent to the certain outcome. -/\n  map_one' : toFun 1 = 1",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 211,
+     "doc": "",
+     "statement": "instance : FunLike (Channel P Q) P.Observables Q.Observables",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 215,
+     "doc": "",
+     "statement": "instance : AddMonoidHomClass (Channel P Q) P.Observables Q.Observables",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 219,
+     "doc": "",
+     "statement": "instance : LinearMapClass (Channel P Q) ℝ P.Observables Q.Observables",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 223,
+     "doc": "",
+     "statement": "instance : OrderHomClass (Channel P Q) P.Observables Q.Observables",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 226,
+     "doc": "",
+     "statement": "instance : OneHomClass (Channel P Q) P.Observables Q.Observables",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 229,
+     "doc": "",
+     "statement": "instance : Coe (Channel P Q) (P.Observables →ₚ[ℝ] Q.Observables)",
+     "sorry": false
+    },
+    {
+     "name": "Channel.toPositiveLinearMap_apply",
+     "kind": "lemma",
+     "line": 232,
+     "doc": "",
+     "statement": "lemma toPositiveLinearMap_apply (f : Channel P Q) (x : P.Observables) :\n    f.toPositiveLinearMap x = f x",
+     "sorry": false
+    },
+    {
+     "name": "Channel.toPositiveLinearMap_injective",
+     "kind": "lemma",
+     "line": 236,
+     "doc": "Channels are determined by their underlying positive linear map.",
+     "statement": "lemma toPositiveLinearMap_injective :\n    Function.Injective (toPositiveLinearMap (P := P) (Q := Q))",
+     "sorry": false
+    },
+    {
+     "name": "Channel.toLinearMap_injective",
+     "kind": "lemma",
+     "line": 241,
+     "doc": "Channels are determined by their underlying linear map.",
+     "statement": "lemma toLinearMap_injective : Function.Injective (fun f : Channel P Q => f.toLinearMap)",
+     "sorry": false
+    },
+    {
+     "name": "Channel.id",
+     "kind": "def",
+     "line": 246,
+     "doc": "The identity as a channel.",
+     "statement": "def id : Channel P P",
+     "sorry": false
+    },
+    {
+     "name": "Channel.comp",
+     "kind": "def",
+     "line": 251,
+     "doc": "The composition of channels.",
+     "statement": "def comp (g : Channel Q R) (f : Channel P Q) : Channel P R",
+     "sorry": false
+    },
+    {
+     "name": "Channel.id_apply",
+     "kind": "lemma",
+     "line": 255,
+     "doc": "",
+     "statement": "lemma id_apply (x : P.Observables) : Channel.id P x = x",
+     "sorry": false
+    },
+    {
+     "name": "Channel.comp_apply",
+     "kind": "lemma",
+     "line": 257,
+     "doc": "",
+     "statement": "lemma comp_apply (g : Channel Q R) (f : Channel P Q) (x : P.Observables) :\n    g.comp f x = g (f x)",
+     "sorry": false
+    },
+    {
+     "name": "Channel.comp_id",
+     "kind": "lemma",
+     "line": 260,
+     "doc": "",
+     "statement": "lemma comp_id (f : Channel P Q) : f.comp (.id P) = f",
+     "sorry": false
+    },
+    {
+     "name": "Channel.id_comp",
+     "kind": "lemma",
+     "line": 262,
+     "doc": "",
+     "statement": "lemma id_comp (f : Channel P Q) : (Channel.id Q).comp f = f",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 265,
+     "doc": "Channels on an observable space form a monoid under composition.",
+     "statement": "instance : Monoid (Channel P P)",
+     "sorry": false
+    },
+    {
+     "name": "Channel.ofLinearMap",
+     "kind": "def",
+     "line": 273,
+     "doc": "Bundle a linear map after proving only positivity and preservation of `1`.",
+     "statement": "def ofLinearMap (f : P.Observables →ₗ[ℝ] Q.Observables) (hpos : ∀ x, 0 ≤ x → 0 ≤ f x)\n    (hone : f 1 = 1) : Channel P Q",
+     "sorry": false
+    },
+    {
+     "name": "Channel.ofPositiveLinearMap",
+     "kind": "def",
+     "line": 279,
+     "doc": "Bundle a positive linear map after proving only that it preserves `1`.",
+     "statement": "def ofPositiveLinearMap (f : P.Observables →ₚ[ℝ] Q.Observables) (hone : f 1 = 1) : Channel P Q",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/ProbabilisticTheory/Channel/Covariant.lean",
+   "module": "Physlib.ProbabilisticTheory.Channel.Covariant",
+   "title": "Covariant channels",
+   "doc": "Channels that commute with two group actions by reversible transformations.\n\n## i. Overview\n\nMore general channels may lose information but can still respect the symmetries of a system. This\nis captured by covariance: a channel `Φ` between two spaces carrying group actions `ρ` and `σ` by\nreversible transformations is covariant, or intertwining, if\n\n`Φ ∘ ρ g = σ g ∘ Φ` for every group element `g`.\n\nCovariance preserves invariant states under pullback. A reversible transformation is covariant\nexactly when the target action is the transport of the source action. Together with the reversible\ntransformations, this gives a common framework for symmetries and dynamics of observable spaces.\n\n## ii. Key results\n\n- `IsIntertwining`: Covariance of a channel under two group actions.\n- `IsIntertwining.comap_isInvariant`: Pullback of invariant states along covariant channels.\n- `Reversible.isIntertwining_iff_eq_transport`: Characterization of the transported action.\n\n## iii. Table of contents\n\n- A. Covariant channels\n  - A.1. Definition and closure properties\n  - A.2. Invariant states\n- B. Covariance of transport\n\n## iv. References",
+   "copyright": "2026 Tom Ole Diem",
+   "sections": [
+    {
+     "line": 51,
+     "text": "## A. Covariant channels"
+    },
+    {
+     "line": 53,
+     "text": "### A.1. Definition and closure properties"
+    },
+    {
+     "line": 74,
+     "text": "### A.2. Invariant states"
+    },
+    {
+     "line": 91,
+     "text": "## B. Covariance of transport"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "ProbabilisticTheory.IsIntertwining",
+     "kind": "def",
+     "line": 56,
+     "doc": "A channel intertwines two group actions if it commutes with their transformations.",
+     "statement": "def IsIntertwining (Φ : Channel P Q) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.isIntertwining_id",
+     "kind": "lemma",
+     "line": 59,
+     "doc": "The identity channel intertwines a group action with itself.",
+     "statement": "lemma isIntertwining_id : IsIntertwining ρ ρ (Channel.id P)",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.IsIntertwining.comp",
+     "kind": "lemma",
+     "line": 68,
+     "doc": "The composition of intertwining channels also intertwines the group actions.",
+     "statement": "lemma comp {R : ProbabilisticTheory} {τ : G →* Reversible R R}\n    {Φ : Channel P Q} {Ψ : Channel Q R} (hΦ : IsIntertwining ρ σ Φ)\n    (hΨ : IsIntertwining σ τ Ψ) : IsIntertwining ρ τ (Ψ.comp Φ)",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.IsIntertwining.comap_isInvariant",
+     "kind": "lemma",
+     "line": 77,
+     "doc": "Pulling back an invariant state along an intertwining channel preserves invariance.",
+     "statement": "lemma comap_isInvariant {Φ : Channel P Q} (h : IsIntertwining ρ σ Φ)\n    {ω : 𝓢[ℝ, Q.Observables]} (hω : IsInvariant σ ω) :\n    IsInvariant ρ (Channel.comap Φ ω)",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Reversible.isIntertwining_transport",
+     "kind": "lemma",
+     "line": 98,
+     "doc": "A reversible transformation intertwines an action with its transport.",
+     "statement": "lemma isIntertwining_transport :\n    IsIntertwining ρ (e.transport ρ) e.toChannel",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Reversible.isIntertwining_iff_eq_transport",
+     "kind": "lemma",
+     "line": 105,
+     "doc": "A reversible transformation intertwines two actions exactly when the target action\nis the transport of the source action.",
+     "statement": "lemma isIntertwining_iff_eq_transport :\n    IsIntertwining ρ σ e.toChannel ↔ σ = e.transport ρ",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/ProbabilisticTheory/Channel/Norm.lean",
+   "module": "Physlib.ProbabilisticTheory.Channel.Norm",
+   "title": "Channels are contractions",
+   "doc": "Unital positive linear maps are contractions with respect to the order-unit norm and are\ntherefore continuous.\n\n## i. Overview\n\nThe norm bound follows from the characterization of the order-unit norm in terms of states.\nEvery state on the codomain pulls back along a channel to a state on the domain, so evaluating\nthe image of an observable cannot exceed its original norm.\n\n## ii. Key results\n\n- `UnitalPositiveLinearMap.norm_apply_le`: Channels are contractions.\n- `UnitalPositiveLinearMap.continuous`: Channels are continuous.\n- `UnitalPositiveLinearMap.toContinuousLinearMap`: Channels as continuous linear maps.\n\n## iii. Table of contents\n\n- A. Contractivity and continuity\n\n## iv. References",
+   "copyright": "2026 Tom Ole Diem",
+   "sections": [
+    {
+     "line": 41,
+     "text": "## A. Contractivity and continuity"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "UnitalPositiveLinearMap.orderUnitNorm_apply_le",
+     "kind": "lemma",
+     "line": 48,
+     "doc": "Unital positive linear maps are contractions for the order-unit norm.",
+     "statement": "lemma orderUnitNorm_apply_le (T : E →ₚ₁[ℝ] F) (x : E) :\n    orderUnitNorm (T x) ≤ orderUnitNorm x",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.norm_apply_le",
+     "kind": "lemma",
+     "line": 58,
+     "doc": "Unital positive linear maps are contractions for the norm.",
+     "statement": "lemma norm_apply_le (T : E →ₚ₁[ℝ] F) (x : E) : ‖T x‖ ≤ ‖x‖",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.continuous",
+     "kind": "lemma",
+     "line": 63,
+     "doc": "Unital positive linear maps are continuous.",
+     "statement": "lemma continuous (T : E →ₚ₁[ℝ] F) : Continuous T",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.toContinuousLinearMap",
+     "kind": "def",
+     "line": 67,
+     "doc": "A unital positive linear map regarded as a continuous linear map.",
+     "statement": "noncomputable def toContinuousLinearMap (T : E →ₚ₁[ℝ] F) : E →L[ℝ] F",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.toContinuousLinearMap_apply",
+     "kind": "lemma",
+     "line": 70,
+     "doc": "",
+     "statement": "lemma toContinuousLinearMap_apply (T : E →ₚ₁[ℝ] F) (x : E) :\n    T.toContinuousLinearMap x = T x",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/ProbabilisticTheory/Channel/Reversible.lean",
+   "module": "Physlib.ProbabilisticTheory.Channel.Reversible",
+   "title": "Reversible transformations of observables",
+   "doc": "Reversible transformations of observable spaces, their group structure, their action on states and\nthe transport of group actions.\n\n## i. Overview\n\nTime evolution, spatial symmetries and changes of reference frame all have something in common:\nthey transform observables in a way that can be undone.\n\nThis motivates reversible transformations, defined as unital linear order isomorphisms of\nobservable spaces. They form a group and naturally act on states. A group representation by\nreversible transformations describes symmetries or reversible dynamics. For example, time evolution\nis represented by the additive group of real numbers. A reversible transformation also transports a\ngroup action from one observable space to another by conjugation.\n\n## ii. Key results\n\n- `Reversible`: Reversible transformations, i.e. unital linear order isomorphisms of\n  observable spaces.\n- `Reversible.toChannelHom`: Reversible transformations embed in the monoid of channels.\n- `Reversible.instMulActionState`: The induced action on states.\n- `Reversible.transport`: Transport of a group action along a reversible transformation.\n- `IsInvariant`: A state fixed by every transformation of a group action.\n\n## iii. Table of contents\n\n- A. Reversible transformations\n  - A.1. Definition\n  - A.2. Group structure\n  - A.3. As channels\n- B. Action on states\n- C. Transport of group actions\n  - C.1. Conjugation\n  - C.2. Transported actions\n- D. Invariant states\n\n## iv. References",
+   "copyright": "2026 Tom Ole Diem",
+   "sections": [
+    {
+     "line": 57,
+     "text": "## A. Reversible transformations"
+    },
+    {
+     "line": 59,
+     "text": "### A.1. Definition"
+    },
+    {
+     "line": 85,
+     "text": "### A.2. Group structure"
+    },
+    {
+     "line": 136,
+     "text": "### A.3. As channels"
+    },
+    {
+     "line": 154,
+     "text": "## B. Action on states"
+    },
+    {
+     "line": 165,
+     "text": "## C. Transport of group actions"
+    },
+    {
+     "line": 167,
+     "text": "### C.1. Conjugation"
+    },
+    {
+     "line": 175,
+     "text": "### C.2. Transported actions"
+    },
+    {
+     "line": 183,
+     "text": "## D. Invariant states"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "ProbabilisticTheory.Reversible",
+     "kind": "structure",
+     "line": 63,
+     "doc": "A reversible transformation between observable spaces: a linear bijection that preserves and\nreflects the order and preserves the order unit. Both it and its inverse are channels.",
+     "statement": "structure Reversible (P Q : ProbabilisticTheory)\n    extends P.Observables ≃ₗ[ℝ] Q.Observables where\n  /-- The equivalence preserves and reflects the order. -/\n  map_le_map_iff' : ∀ {x y : P.Observables}, toLinearEquiv x ≤ toLinearEquiv y ↔ x ≤ y\n  /-- The order unit is preserved. -/\n  map_one' : toLinearEquiv 1 = 1",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 74,
+     "doc": "",
+     "statement": "instance : FunLike (Reversible P Q) P.Observables Q.Observables",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Reversible.ext",
+     "kind": "lemma",
+     "line": 83,
+     "doc": "",
+     "statement": "lemma ext {e f : Reversible P Q} (h : ∀ x, e x = f x) : e = f",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Reversible.refl",
+     "kind": "def",
+     "line": 88,
+     "doc": "The identity reversible transformation.",
+     "statement": "def refl (P : ProbabilisticTheory) : Reversible P P",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Reversible.symm",
+     "kind": "def",
+     "line": 94,
+     "doc": "The inverse of a reversible transformation.",
+     "statement": "def symm (e : Reversible P Q) : Reversible Q P",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Reversible.trans",
+     "kind": "def",
+     "line": 101,
+     "doc": "Composition of reversible transformations, applying `e₁` before `e₂`.",
+     "statement": "def trans (e₁ : Reversible P Q) (e₂ : Reversible Q R) : Reversible P R",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Reversible.refl_apply",
+     "kind": "lemma",
+     "line": 109,
+     "doc": "",
+     "statement": "lemma refl_apply (x : P.Observables) : refl P x = x",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Reversible.symm_apply_apply",
+     "kind": "lemma",
+     "line": 111,
+     "doc": "",
+     "statement": "lemma symm_apply_apply (e : Reversible P Q) (x : P.Observables) : e.symm (e x) = x",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Reversible.apply_symm_apply",
+     "kind": "lemma",
+     "line": 114,
+     "doc": "",
+     "statement": "lemma apply_symm_apply (e : Reversible P Q) (y : Q.Observables) : e (e.symm y) = y",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Reversible.trans_apply",
+     "kind": "lemma",
+     "line": 117,
+     "doc": "",
+     "statement": "lemma trans_apply (e₁ : Reversible P Q) (e₂ : Reversible Q R) (x : P.Observables) :\n    e₁.trans e₂ x = e₂ (e₁ x)",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Reversible.automorphismGroup",
+     "kind": "instance",
+     "line": 121,
+     "doc": "Reversible transformations of a single space form a group under composition.",
+     "statement": "instance automorphismGroup : Group (Reversible P P)",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Reversible.mul_apply",
+     "kind": "lemma",
+     "line": 130,
+     "doc": "",
+     "statement": "lemma mul_apply (f g : Reversible P P) (x : P.Observables) : (f * g) x = f (g x)",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Reversible.one_apply",
+     "kind": "lemma",
+     "line": 132,
+     "doc": "",
+     "statement": "lemma one_apply (x : P.Observables) : (1 : Reversible P P) x = x",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Reversible.inv_apply",
+     "kind": "lemma",
+     "line": 134,
+     "doc": "",
+     "statement": "lemma inv_apply (f : Reversible P P) (x : P.Observables) : f⁻¹ x = f.symm x",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Reversible.toChannel",
+     "kind": "def",
+     "line": 139,
+     "doc": "A reversible transformation regarded as a channel.",
+     "statement": "def toChannel (e : Reversible P Q) : Channel P Q",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Reversible.toChannel_apply",
+     "kind": "lemma",
+     "line": 143,
+     "doc": "",
+     "statement": "lemma toChannel_apply (e : Reversible P Q) (x : P.Observables) : e.toChannel x = e x",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Reversible.toChannelHom",
+     "kind": "def",
+     "line": 146,
+     "doc": "Regarding reversible transformations as channels is a homomorphism of monoids.",
+     "statement": "def toChannelHom : Reversible P P →* Channel P P",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Reversible.toChannelHom_apply",
+     "kind": "lemma",
+     "line": 151,
+     "doc": "",
+     "statement": "lemma toChannelHom_apply (e : Reversible P P) (x : P.Observables) :\n    toChannelHom e x = e x",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Reversible.instMulActionState",
+     "kind": "instance",
+     "line": 157,
+     "doc": "The action on states induced by the inverse of a reversible transformation.",
+     "statement": "instance instMulActionState : MulAction (Reversible P P) (𝓢[ℝ, P.Observables])",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Reversible.smul_state_apply",
+     "kind": "lemma",
+     "line": 162,
+     "doc": "",
+     "statement": "lemma smul_state_apply (φ : Reversible P P) (ω : 𝓢[ℝ, P.Observables]) (x : P.Observables) :\n    (φ • ω) x = ω (φ.symm x)",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Reversible.conj",
+     "kind": "def",
+     "line": 170,
+     "doc": "Conjugation transports reversible dynamics between observable spaces.",
+     "statement": "def conj (e : Reversible P Q) : Reversible P P →* Reversible Q Q",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Reversible.transport",
+     "kind": "def",
+     "line": 178,
+     "doc": "Transport a group action between observable spaces along a reversible transformation.",
+     "statement": "def transport (ρ : G →* Reversible P P) (e : Reversible P Q) :\n    G →* Reversible Q Q",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.IsInvariant",
+     "kind": "def",
+     "line": 186,
+     "doc": "A state is invariant if it is fixed by every transformation of the group action.",
+     "statement": "def IsInvariant {G : Type*} [Group G] {P : ProbabilisticTheory} (ρ : G →* Reversible P P)\n    (ω : 𝓢[ℝ, P.Observables]) : Prop",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/ProbabilisticTheory/CStarAlgebra/OrderUnit.lean",
+   "module": "Physlib.ProbabilisticTheory.CStarAlgebra.OrderUnit",
+   "title": "The observables of a C⋆-algebra",
+   "doc": "The self-adjoint part of a unital C⋆-algebra is an Archimedean order-unit space.\n\n## i. Overview\n\nThe observables of a quantum system are the self-adjoint elements of its C⋆-algebra. One\nobservable lies below another if their difference has no negative measurement outcome. The\nidentity is the certain outcome.\n\nEvery observable lies below a multiple of the identity. So no outcome exceeds the norm.\n\nAn observable that lies below every positive multiple of the identity has no positive outcome.\nThis is the Archimedean property.\n\n## ii. Key results\n\n- `selfAdjoint.le_nsmul_one_ceil_norm` : every observable lies below a natural multiple of the\n  identity.\n- `selfAdjoint.le_zero_of_forall_pos_smul_one_le` : an element below every positive multiple of\n  the identity is below zero.\n- `selfAdjoint.instOrderUnitSpace` : the observables form an order-unit space.\n- `selfAdjoint.instArchimedeanOrderUnitSpace` : it is Archimedean.\n\n## iii. Table of contents\n\n- A. The order-unit space of observables\n- B. The Archimedean property\n\n## iv. References",
+   "copyright": "2026 Tom Ole Diem",
+   "sections": [
+    {
+     "line": 51,
+     "text": "## A. The order-unit space of observables"
+    },
+    {
+     "line": 81,
+     "text": "## B. The Archimedean property"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "selfAdjoint.instPosSMulMono",
+     "kind": "instance",
+     "line": 60,
+     "doc": "Nonnegative real scalars preserve the order on observables.",
+     "statement": "instance instPosSMulMono : PosSMulMono ℝ (selfAdjoint 𝒜)",
+     "sorry": false
+    },
+    {
+     "name": "selfAdjoint.le_nsmul_one_ceil_norm",
+     "kind": "lemma",
+     "line": 66,
+     "doc": "Every observable lies below a natural multiple of the identity.",
+     "statement": "lemma le_nsmul_one_ceil_norm (x : selfAdjoint 𝒜) : x ≤ ⌈‖(x : 𝒜)‖⌉₊ • (1 : selfAdjoint 𝒜)",
+     "sorry": false
+    },
+    {
+     "name": "selfAdjoint.instOrderUnitSpace",
+     "kind": "instance",
+     "line": 77,
+     "doc": "The observables of a quantum system form an order-unit space with unit `1`.",
+     "statement": "noncomputable instance instOrderUnitSpace : OrderUnitSpace (selfAdjoint 𝒜)",
+     "sorry": false
+    },
+    {
+     "name": "selfAdjoint.le_zero_of_forall_pos_smul_one_le",
+     "kind": "lemma",
+     "line": 88,
+     "doc": "An observable below every positive multiple of the identity is below zero.",
+     "statement": "lemma le_zero_of_forall_pos_smul_one_le {x : selfAdjoint 𝒜}\n    (h : ∀ ε : ℝ, 0 < ε → x ≤ ε • (1 : selfAdjoint 𝒜)) : x ≤ 0",
+     "sorry": false
+    },
+    {
+     "name": "selfAdjoint.instArchimedeanOrderUnitSpace",
+     "kind": "instance",
+     "line": 97,
+     "doc": "The order of observables is Archimedean.",
+     "statement": "noncomputable instance instArchimedeanOrderUnitSpace :\n    ArchimedeanOrderUnitSpace (selfAdjoint 𝒜)",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/ProbabilisticTheory/Effect/Basic.lean",
+   "module": "Physlib.ProbabilisticTheory.Effect.Basic",
+   "title": "Effects",
+   "doc": "## i. Overview\n\nAn effect models a yes/no measurement outcome, ranging continuously between the impossible\noutcome `0` and the certain outcome `1`. Formally, it is a point of the order interval `[0, 1]`\ninside `E`. For self-adjoint matrices, effects are exactly the operators `0 ≤ M ≤ 1` — the\nelements of a POVM.\n\n## ii. Key results\n\n- `Effect` : a bounded measurement outcome, the order interval `[0, 1]`.\n- `Effect.mem_iff_mem_posCone_and_one_sub_mem_posCone` : an effect is exactly a positive element\n  whose complement from the order unit is also positive.\n- `Effect.exists_pos_smul_mem` : every positive observable becomes an effect after scaling it down\n  enough.\n\n## iii. Table of contents\n\n- A. Effects\n\n## iv. References\n\n- G. Ludwig, *Foundations of Quantum Mechanics I*, Springer, 1983.\n  <https://link.springer.com/book/10.1007/978-3-642-86751-4>",
+   "copyright": "2026 Tom Ole Diem",
+   "sections": [
+    {
+     "line": 44,
+     "text": "## A. Effects"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "ProbabilisticTheory.Effect",
+     "kind": "abbrev",
+     "line": 51,
+     "doc": "A bounded measurement outcome.",
+     "statement": "abbrev Effect (E : Type*) [PartialOrder E] [One E] [Zero E]",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Effect.mem_iff_mem_posCone_and_one_sub_mem_posCone",
+     "kind": "lemma",
+     "line": 60,
+     "doc": "An effect is a positive element whose complement from the order unit is positive.",
+     "statement": "lemma mem_iff_mem_posCone_and_one_sub_mem_posCone {A : E} :\n    A ∈ Effect E ↔ A ∈ PosCone E ∧ 1 - A ∈ PosCone E",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Effect.instZero",
+     "kind": "instance",
+     "line": 70,
+     "doc": "",
+     "statement": "instance instZero : Zero (Effect E)",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Effect.instOne",
+     "kind": "instance",
+     "line": 72,
+     "doc": "",
+     "statement": "instance instOne : One (Effect E)",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Effect.instNonempty",
+     "kind": "instance",
+     "line": 74,
+     "doc": "",
+     "statement": "instance instNonempty : Nonempty (Effect E)",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Effect.coe_zero",
+     "kind": "lemma",
+     "line": 76,
+     "doc": "",
+     "statement": "lemma coe_zero : ((0 : Effect E) : E) = 0",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Effect.coe_one",
+     "kind": "lemma",
+     "line": 78,
+     "doc": "",
+     "statement": "lemma coe_one : ((1 : Effect E) : E) = 1",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Effect.exists_pos_smul_mem",
+     "kind": "lemma",
+     "line": 82,
+     "doc": "Every nonnegative observable becomes an effect after scaling it down by a large enough\npositive real: the effect interval reaches in every direction the positive cone does.",
+     "statement": "lemma exists_pos_smul_mem {B : E} (hB : 0 ≤ B) :\n    ∃ r : ℝ, 0 < r ∧ r • B ∈ Effect E",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/ProbabilisticTheory/Effect/Complement.lean",
+   "module": "Physlib.ProbabilisticTheory.Effect.Complement",
+   "title": "Complementary effects",
+   "doc": "The complement `1 - e` of an effect, its antitonicity and compatibility with mixtures.\n\n## i. Overview\n\nThe complement of an effect `e` is the yes/no test that fires exactly when `e` doesn't: `1 - e`.\nPhysically, a state's probability of \"no\" is always `1` minus its probability of \"yes\".\n\n## ii. Key results\n\n- `Effect.complement` : the complementary effect `1 - e`.\n- `Effect.complement_antitone` : the complement reverses order.\n- `Effect.complement_mix` : the complement of a mixture is the mixture of the complements.\n\n## iii. Table of contents\n\n- A. The complement\n- B. Monotonicity of the complement\n- C. The complement and mixtures\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Tom Ole Diem",
+   "sections": [
+    {
+     "line": 46,
+     "text": "## A. The complement"
+    },
+    {
+     "line": 63,
+     "text": "## B. Monotonicity of the complement"
+    },
+    {
+     "line": 79,
+     "text": "## C. The complement and mixtures"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "ProbabilisticTheory.Effect.complement",
+     "kind": "def",
+     "line": 53,
+     "doc": "The complementary effect.",
+     "statement": "def complement (e : Effect E) : Effect E",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Effect.coe_complement",
+     "kind": "lemma",
+     "line": 57,
+     "doc": "",
+     "statement": "lemma coe_complement (e : Effect E) : ((complement e : Effect E) : E) = 1 - e",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Effect.complement_complement",
+     "kind": "lemma",
+     "line": 60,
+     "doc": "",
+     "statement": "lemma complement_complement (e : Effect E) : complement (complement e) = e",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Effect.complement_antitone",
+     "kind": "lemma",
+     "line": 70,
+     "doc": "The complement reverses order: a more certain test's complement is a less certain one.",
+     "statement": "lemma complement_antitone : Antitone (complement (E := E))",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Effect.complement_zero",
+     "kind": "lemma",
+     "line": 74,
+     "doc": "",
+     "statement": "lemma complement_zero : complement (0 : Effect E) = 1",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Effect.complement_one",
+     "kind": "lemma",
+     "line": 77,
+     "doc": "",
+     "statement": "lemma complement_one : complement (1 : Effect E) = 0",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Effect.complement_mix",
+     "kind": "lemma",
+     "line": 86,
+     "doc": "Mixing commutes with taking the complement.",
+     "statement": "lemma complement_mix (e f : Effect E) (t : unitInterval) :\n    complement (mix e f t) = mix (complement e) (complement f) t",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/ProbabilisticTheory/Effect/Convex.lean",
+   "module": "Physlib.ProbabilisticTheory.Effect.Convex",
+   "title": "Convexity and mixtures of effects",
+   "doc": "The effect interval is convex, so effects can be mixed with a given probability.\n\n## i. Overview\n\nThe effect interval `[0, 1]` is convex: randomizing between two effects with some probability\ngives back an effect. Physically, flipping a biased coin to decide which of two measurements to\nactually run is itself a legitimate measurement.\n\n## ii. Key results\n\n- `Effect.convex` : the effect interval is convex.\n- `Effect.mix` : randomize between two effects with a given probability.\n\n## iii. Table of contents\n\n- A. Convexity and mixtures of effects\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Tom Ole Diem",
+   "sections": [
+    {
+     "line": 45,
+     "text": "## A. Convexity and mixtures of effects"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "ProbabilisticTheory.Effect.convex",
+     "kind": "lemma",
+     "line": 52,
+     "doc": "The effect interval is convex.",
+     "statement": "lemma convex : Convex ℝ (Effect E)",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Effect.mix",
+     "kind": "def",
+     "line": 55,
+     "doc": "Randomize between two effects with probability `t` of testing the first.",
+     "statement": "def mix (e f : Effect E) (t : unitInterval) : Effect E",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Effect.coe_mix",
+     "kind": "lemma",
+     "line": 61,
+     "doc": "Evaluation of a mixture is the pointwise convex combination.",
+     "statement": "lemma coe_mix (e f : Effect E) (t : unitInterval) :\n    ((mix e f t : Effect E) : E) = (t : ℝ) • (e : E) + (1 - (t : ℝ)) • (f : E)",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/ProbabilisticTheory/Effect/Metric.lean",
+   "module": "Physlib.ProbabilisticTheory.Effect.Metric",
+   "title": "The metric space of effects",
+   "doc": "The order-unit metric on effects and their identification with the order-unit-norm ball.\n\n## i. Overview\n\nEffects sit inside `E`, so pulling back the order-unit norm along the inclusion `Effect E ↪ E`\ngives them a metric space structure for free.\n\nEffects also correspond to points of the order-unit-norm ball, by the affine rescaling\n`e ↦ 2 • e - 1` that turns `[0, 1]` into the symmetric `[-1, 1]` the norm itself ranges over.\n\n## ii. Key results\n\n- `Effect.dist_eq_orderUnitNorm` : the effect metric is the order-unit norm of the difference.\n- `Effect.effectEquiv` : effects correspond to points of the order-unit-norm ball.\n\n## iii. Table of contents\n\n- A. The effect metric\n- B. Effects as points of the order-unit-norm ball\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Tom Ole Diem",
+   "sections": [
+    {
+     "line": 49,
+     "text": "## A. The effect metric"
+    },
+    {
+     "line": 64,
+     "text": "## B. Effects as points of the order-unit-norm ball"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "ProbabilisticTheory.Effect.instMetricSpace",
+     "kind": "instance",
+     "line": 56,
+     "doc": "Effects, metrized by the order-unit norm on `E`.",
+     "statement": "noncomputable scoped instance instMetricSpace : MetricSpace (Effect E)",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Effect.dist_eq_orderUnitNorm",
+     "kind": "lemma",
+     "line": 61,
+     "doc": "",
+     "statement": "lemma dist_eq_orderUnitNorm (e f : Effect E) : dist e f = orderUnitNorm ((e : E) - (f : E))",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Effect.orderUnitNorm_two_smul_sub_one_le_one",
+     "kind": "lemma",
+     "line": 71,
+     "doc": "Doubling and re-centering an effect at the order unit lands in the order-unit-norm ball.",
+     "statement": "lemma orderUnitNorm_two_smul_sub_one_le_one (e : Effect E) :\n    orderUnitNorm (2 • (e : E) - 1) ≤ 1",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Effect.mem_effect_two_inv_smul_one_add",
+     "kind": "lemma",
+     "line": 85,
+     "doc": "Undoing the re-centering on a point of the order-unit-norm ball gives back an effect.",
+     "statement": "lemma mem_effect_two_inv_smul_one_add {A : E} (hA : orderUnitNorm A ≤ 1) :\n    (2 : ℝ)⁻¹ • (1 + A) ∈ Effect E",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Effect.two_inv_smul_one_add_two_smul_sub_one",
+     "kind": "lemma",
+     "line": 96,
+     "doc": "Re-centering, then undoing it, returns the original effect.",
+     "statement": "lemma two_inv_smul_one_add_two_smul_sub_one (e : Effect E) :\n    (2 : ℝ)⁻¹ • (1 + (2 • (e : E) - 1)) = (e : E)",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Effect.two_smul_two_inv_smul_one_add_sub_one",
+     "kind": "lemma",
+     "line": 102,
+     "doc": "Undoing the re-centering, then redoing it, returns the original ball point.",
+     "statement": "lemma two_smul_two_inv_smul_one_add_sub_one (A : E) :\n    2 • ((2 : ℝ)⁻¹ • (1 + A)) - 1 = A",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Effect.effectEquiv",
+     "kind": "def",
+     "line": 109,
+     "doc": "Effects correspond to points of the order-unit-norm ball by doubling and re-centering at the\norder unit: `e ↦ 2 • e - 1`, with inverse `A ↦ (1 + A) / 2`.",
+     "statement": "noncomputable def effectEquiv : Effect E ≃ {A : E // orderUnitNorm A ≤ 1}",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/ProbabilisticTheory/Effect/Sharp.lean",
+   "module": "Physlib.ProbabilisticTheory.Effect.Sharp",
+   "title": "Sharp effects",
+   "doc": "Sharp effects: extreme points of the effect interval, preserved by taking complements.\n\n## i. Overview\n\nThe effect interval `[0, 1]` is convex. A sharp effect is an extreme point of it: one that cannot\nbe written as a nontrivial mixture of two distinct effects. Sharp effects generalize projections.\n\n## ii. Key results\n\n- `Effect.IsSharp` : an effect that cannot be written as a nontrivial mixture of two distinct\n  effects.\n- `Effect.isSharp_complement_iff` : sharpness is preserved by taking the complement.\n\n## iii. Table of contents\n\n- A. Sharp effects\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Tom Ole Diem",
+   "sections": [
+    {
+     "line": 46,
+     "text": "## A. Sharp effects"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "ProbabilisticTheory.Effect.IsSharp",
+     "kind": "def",
+     "line": 54,
+     "doc": "An effect is sharp when it is an extreme point of the effect interval: it cannot be written as\na nontrivial mixture of two distinct effects.",
+     "statement": "def IsSharp (e : Effect E) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Effect.isSharp_zero",
+     "kind": "lemma",
+     "line": 57,
+     "doc": "The impossible outcome 0 is sharp.",
+     "statement": "lemma isSharp_zero : IsSharp (0 : Effect E)",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Effect.isSharp_complement",
+     "kind": "lemma",
+     "line": 65,
+     "doc": "Sharpness is preserved by taking the complement:\n`e ↦ 1 - e` is an affine involution of the effect interval.",
+     "statement": "lemma isSharp_complement {e : Effect E} (h : IsSharp e) : IsSharp (complement e)",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Effect.isSharp_complement_iff",
+     "kind": "lemma",
+     "line": 74,
+     "doc": "Sharpness is preserved by taking the complement, in either direction.",
+     "statement": "lemma isSharp_complement_iff {e : Effect E} : IsSharp (complement e) ↔ IsSharp e",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Effect.isSharp_one",
+     "kind": "lemma",
+     "line": 78,
+     "doc": "The certain outcome 1 is sharp.",
+     "statement": "lemma isSharp_one : IsSharp (1 : Effect E)",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/ProbabilisticTheory/LocalNet/Basic.lean",
+   "module": "Physlib.ProbabilisticTheory.LocalNet.Basic",
+   "title": "Local nets of observables",
+   "doc": "Observables of subsystems and their inclusion into larger subsystems.\n\n## i. Overview\n\nLet `R` index subsystems, with `X ≤ Y` meaning that `X` is contained in `Y`. The observables of\n`X` form an order-unit space `A X`. A local net assigns to `X ≤ Y` a channel,\nwhich regards an observable of `X` as one of `Y`.\n\nFor a tensor product system with `H_Y ≃ H_X ⊗ H_rest`, take `A X` to be the Hermitian operators\non `H_X`. Then the inclusion is the familiar map `M ↦ M ⊗ 1`: the observable acts as `M` on `X` and\nas the identity on the remaining factors.\n\nThe local observables can also be viewed in one space, `N.Quasilocal`, the algebraic direct limit\nof the local observable spaces. It is a real vector space and carries no norm. Completing it in a\nnorm, which needs more structure than is assumed here, gives the quasilocal algebra of the physics\nliterature. Inductive limits of order-unit spaces are developed in [ref: arxiv_1705_04663].\n\n## ii. Key results\n\n- `LocalNet`: subsystem observables with channels into larger subsystems.\n- `LocalNet.IsOrderEmbedding`: the inclusion maps reflect order.\n- `LocalNet.map_le_map_iff`: inclusion preserves and reflects inequalities.\n- `LocalNet.incl_injective`: order-embedding inclusion maps are injective.\n- `LocalNet.Quasilocal`: the algebraic direct limit of the local observable spaces.\n- `LocalNet.toQuasilocal`: regard an observable of one subsystem as a quasilocal observable.\n- `LocalNet.toQuasilocal_eq_iff`: equality of quasilocal observables can be checked in a common\n  larger subsystem.\n- `LocalNet.toQuasilocal_injective`: order-embedding inclusions keep local observables distinct.\n- `LocalNet.exists_toQuasilocal_eq`, `exists_toQuasilocal_eq₂`: quasilocal observables have\n  representatives in a single subsystem, and any two have representatives in a common one.\n\n## iii. Table of contents\n\n- A. Subsystems and inclusions\n- B. Order-embedding inclusions\n- C. The quasilocal observable space\n- D. Embedding the local observables\n- E. Directed families of subsystems\n\n## iv. References\n\n* L. Mawhinney, I. G. Todorov, *Inductive limits in the operator system and related categories*,\n  arXiv:1705.04663. [ref: arxiv_1705_04663]",
+   "copyright": "2026 Tom Ole Diem",
+   "sections": [
+    {
+     "line": 67,
+     "text": "## A. Subsystems and inclusions"
+    },
+    {
+     "line": 94,
+     "text": "## B. Order-embedding inclusions"
+    },
+    {
+     "line": 113,
+     "text": "## C. The quasilocal observable space\n\nFor a directed family of subsystems, observables from different subsystems can be included in a\ncommon larger one and combined there. The direct limit identifies all such local descriptions\nconsistently and supplies the resulting real vector space."
+    },
+    {
+     "line": 148,
+     "text": "## D. Embedding the local observables\n\nThe map `toQuasilocal N i` takes an observable of subsystem `i` to the quasilocal observable it\nrepresents."
+    },
+    {
+     "line": 172,
+     "text": "## E. Directed families of subsystems\n\nIf any two subsystems are contained in a common larger one, the quasilocal observable space is\ndescribed by representatives in single subsystems."
+    }
+   ],
+   "declarations": [
+    {
+     "name": "ProbabilisticTheory.LocalNet",
+     "kind": "structure",
+     "line": 71,
+     "doc": "The observables of each subsystem, with channels into larger subsystems.",
+     "statement": "structure LocalNet (R : Type*) [Preorder R] (A : R → Type*)\n    [∀ X, OrderUnitSpace (A X)] where\n  /-- Regard an observable of `X` as an observable of `Y` when `X ≤ Y`. -/\n  incl : ∀ {X Y : R}, X ≤ Y → A X →ₚ₁[ℝ] A Y\n  /-- Inclusion into the same subsystem is the identity. -/\n  incl_refl : ∀ X : R, incl (le_refl X) = .id ℝ (A X)\n  /-- Including through an intermediate subsystem agrees with direct inclusion. -/\n  incl_trans : ∀ {X Y Z : R} (h₁ : X ≤ Y) (h₂ : Y ≤ Z) (h₃ : X ≤ Z),\n    incl h₃ = (incl h₂).comp (incl h₁)",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.LocalNet.incl_refl_apply",
+     "kind": "lemma",
+     "line": 86,
+     "doc": "An observable is unchanged by inclusion into the same subsystem.",
+     "statement": "lemma incl_refl_apply (X : R) (a : A X) : N.incl (le_refl X) a = a",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.LocalNet.incl_trans_apply",
+     "kind": "lemma",
+     "line": 90,
+     "doc": "Including an observable through an intermediate subsystem agrees with direct inclusion.",
+     "statement": "lemma incl_trans_apply (h₁ : X ≤ Y) (h₂ : Y ≤ Z) (h₃ : X ≤ Z) (a : A X) :\n    N.incl h₃ a = N.incl h₂ (N.incl h₁ a)",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.LocalNet.IsOrderEmbedding",
+     "kind": "class",
+     "line": 97,
+     "doc": "The inclusion maps are order embeddings if each reflects positivity.",
+     "statement": "class IsOrderEmbedding (N : LocalNet R A) : Prop where\n  /-- An observable that is positive in a larger subsystem is already positive in the smaller. -/\n  nonneg_of_incl_nonneg : ∀ {X Y : R} (h : X ≤ Y) {a : A X}, 0 ≤ N.incl h a → 0 ≤ a",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.LocalNet.map_le_map_iff",
+     "kind": "lemma",
+     "line": 102,
+     "doc": "Inclusion in an order-embedding net preserves and reflects inequalities.",
+     "statement": "lemma map_le_map_iff [N.IsOrderEmbedding] (h : X ≤ Y) {a b : A X} :\n    N.incl h a ≤ N.incl h b ↔ a ≤ b",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.LocalNet.incl_injective",
+     "kind": "lemma",
+     "line": 108,
+     "doc": "The inclusion maps of an order-embedding net are injective.",
+     "statement": "lemma incl_injective [N.IsOrderEmbedding] (h : X ≤ Y) : Function.Injective (N.incl h)",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.LocalNet.inclLin",
+     "kind": "abbrev",
+     "line": 125,
+     "doc": "The inclusions as linear maps: the transition maps of the direct limit defining\n`N.Quasilocal`.",
+     "statement": "abbrev inclLin (N : LocalNet R A) ⦃X Y : R⦄ (h : X ≤ Y) : A X →ₗ[ℝ] A Y",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.LocalNet.directedSystem",
+     "kind": "instance",
+     "line": 130,
+     "doc": "The inclusions form a directed system: including a subsystem into itself does nothing, and\nsuccessive inclusions compose.",
+     "statement": "instance directedSystem (N : LocalNet R A) : DirectedSystem A fun _ _ h => N.inclLin h",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.LocalNet.Quasilocal",
+     "kind": "def",
+     "line": 135,
+     "doc": "The algebraic direct limit of the local observable spaces.",
+     "statement": "def Quasilocal (N : LocalNet R A) : Type _",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 141,
+     "doc": "Quasilocal observables add, as elements of a direct limit of vector spaces.",
+     "statement": "noncomputable instance : AddCommGroup N.Quasilocal",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 145,
+     "doc": "Quasilocal observables can be scaled by real numbers.",
+     "statement": "noncomputable instance : Module ℝ N.Quasilocal",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.LocalNet.toQuasilocal",
+     "kind": "def",
+     "line": 158,
+     "doc": "Regard an observable of subsystem `i` as a quasilocal observable.",
+     "statement": "noncomputable def toQuasilocal (i : R) : A i →ₗ[ℝ] N.Quasilocal",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.LocalNet.toQuasilocal_incl",
+     "kind": "lemma",
+     "line": 162,
+     "doc": "Including an observable in a larger subsystem does not change its quasilocal representation.",
+     "statement": "lemma toQuasilocal_incl {i j : R} (h : i ≤ j) (a : A i) :\n    toQuasilocal N j (N.incl h a) = toQuasilocal N i a",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.LocalNet.toQuasilocal_eq_of_incl_eq",
+     "kind": "lemma",
+     "line": 168,
+     "doc": "Observables that agree in a common larger subsystem represent the same quasilocal\nobservable.",
+     "statement": "lemma toQuasilocal_eq_of_incl_eq {i j k : R} (hik : i ≤ k) (hjk : j ≤ k) {a : A i} {b : A j}\n    (h : N.incl hik a = N.incl hjk b) : toQuasilocal N i a = toQuasilocal N j b",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.LocalNet.exists_incl_eq_of_toQuasilocal_eq",
+     "kind": "lemma",
+     "line": 187,
+     "doc": "Observables representing the same quasilocal observable agree in a common larger\nsubsystem.",
+     "statement": "lemma exists_incl_eq_of_toQuasilocal_eq {i j : R} {a : A i} {b : A j}\n    (h : toQuasilocal N i a = toQuasilocal N j b) :\n    ∃ (k : R) (hik : i ≤ k) (hjk : j ≤ k), N.incl hik a = N.incl hjk b",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.LocalNet.toQuasilocal_eq_iff",
+     "kind": "lemma",
+     "line": 199,
+     "doc": "Two local observables represent the same quasilocal observable exactly when they agree in a\ncommon larger subsystem.",
+     "statement": "lemma toQuasilocal_eq_iff {i j : R} (a : A i) (b : A j) :\n    toQuasilocal N i a = toQuasilocal N j b ↔\n      ∃ (k : R) (hik : i ≤ k) (hjk : j ≤ k), N.incl hik a = N.incl hjk b",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.LocalNet.toQuasilocal_injective",
+     "kind": "lemma",
+     "line": 205,
+     "doc": "Order-embedding inclusions keep distinct local observables distinct in the quasilocal space.",
+     "statement": "lemma toQuasilocal_injective [N.IsOrderEmbedding] (i : R) :\n    Function.Injective (toQuasilocal N i)",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.LocalNet.exists_toQuasilocal_eq",
+     "kind": "lemma",
+     "line": 214,
+     "doc": "Every quasilocal observable has a representative in some subsystem.",
+     "statement": "lemma exists_toQuasilocal_eq (x : N.Quasilocal) : ∃ (i : R) (a : A i), toQuasilocal N i a = x",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.LocalNet.exists_toQuasilocal_eq₂",
+     "kind": "lemma",
+     "line": 218,
+     "doc": "Any two quasilocal observables have representatives in a common subsystem.",
+     "statement": "lemma exists_toQuasilocal_eq₂ (x y : N.Quasilocal) :\n    ∃ (i : R) (a b : A i), toQuasilocal N i a = x ∧ toQuasilocal N i b = y",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/ProbabilisticTheory/LocalNet/Interaction/Basic.lean",
+   "module": "Physlib.ProbabilisticTheory.LocalNet.Interaction.Basic",
+   "title": "Interactions on a local net",
+   "doc": "An interaction is a family of local observables, each associated with a region of the net.\n\n## i. Overview\n\nExtensive observables such as energy, magnetization and particle number can be expressed as\nsums of local terms. An interaction assigns a supporting region and an observable to each\nlabel. Each term can be included into any larger region and is taken to be zero when its\nsupport is not contained in the region.\n\n## ii. Key results\n\n- `Interaction`: A family of local observables with specified supports.\n- `Interaction.termIn`: An interaction term expressed in a given region.\n- `Interaction.incl_termIn`: Compatibility with inclusions of regions.\n- `Interaction.termIn_add`: Compatibility with addition.\n- `Interaction.termIn_smul`: Compatibility with scalar multiplication.\n\n## iii. Table of contents\n\n- A. Interactions\n- B. Interaction terms in a region\n\n## iv. References",
+   "copyright": "2026 Tom Ole Diem",
+   "sections": [
+    {
+     "line": 46,
+     "text": "## A. Interactions"
+    },
+    {
+     "line": 59,
+     "text": "## B. Interaction terms in a region"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "ProbabilisticTheory.Interaction",
+     "kind": "structure",
+     "line": 49,
+     "doc": "A family of local observables on `N`, indexed by `ι`, with specified supports.",
+     "statement": "structure Interaction (N : LocalNet R A) (ι : Type*) where\n  /-- The supporting region of each term. -/\n  supp : ι → R\n  /-- The observable associated with each term. -/\n  term : ∀ i, A (supp i)",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Interaction.labelsIn",
+     "kind": "def",
+     "line": 62,
+     "doc": "The labels of terms supported in `Λ`.",
+     "statement": "def labelsIn (Λ : R) : Set ι",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Interaction.termIn",
+     "kind": "def",
+     "line": 66,
+     "doc": "The term `i` expressed in `Λ`, or zero if its support is not contained in `Λ`.",
+     "statement": "noncomputable def termIn (Λ : R) (i : ι) : A Λ",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Interaction.incl_termIn",
+     "kind": "lemma",
+     "line": 71,
+     "doc": "Including a term from `Λ` into `Λ'` agrees with evaluating it in `Λ'` whenever\nits support is contained in `Λ`, and gives zero otherwise.",
+     "statement": "lemma incl_termIn {Λ Λ' : R} (h : Λ ≤ Λ') (i : ι) :\n    N.incl h (Φ.termIn Λ i) = (Φ.labelsIn Λ).indicator (Φ.termIn Λ') i",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Interaction.termIn_add",
+     "kind": "lemma",
+     "line": 78,
+     "doc": "Evaluating interaction terms in a region preserves addition.",
+     "statement": "lemma termIn_add (s : ι → R) (t t' : ∀ i, A (s i)) (Λ : R) (i : ι) :\n    (⟨s, t + t'⟩ : Interaction N ι).termIn Λ i =\n      (⟨s, t⟩ : Interaction N ι).termIn Λ i +\n        (⟨s, t'⟩ : Interaction N ι).termIn Λ i",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Interaction.termIn_smul",
+     "kind": "lemma",
+     "line": 85,
+     "doc": "Evaluating interaction terms in a region preserves scalar multiplication.",
+     "statement": "lemma termIn_smul (s : ι → R) (c : ℝ) (t : ∀ i, A (s i)) (Λ : R) (i : ι) :\n    (⟨s, c • t⟩ : Interaction N ι).termIn Λ i =\n      c • (⟨s, t⟩ : Interaction N ι).termIn Λ i",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/ProbabilisticTheory/LocalNet/Interaction/Sum.lean",
+   "module": "Physlib.ProbabilisticTheory.LocalNet.Interaction.Sum",
+   "title": "Integrating interactions over local regions",
+   "doc": "An interaction defines a local observable by integrating its terms over a region.\n\n## i. Overview\n\nThe integral of an interaction gives an observable in each region. The choice of measure allows\nboth discrete sums and continuum integrals.\n\nFor nested regions, the observable in the larger region decomposes into the observable of the\nsmaller region and the remaining interaction terms. For two regions with disjoint sets of\nsupported terms, the observable decomposes into their contributions and the terms supported\nin neither region.\n\n## ii. Key results\n\n- `Interaction.sumIn`: The integral of interaction terms in a region.\n- `Interaction.norm_sumIn_le`: A norm bound for the integral.\n- `Interaction.sumIn_add`, `Interaction.sumIn_smul`: Linearity of integration.\n- `Interaction.sumIn_split`: Decomposition for nested regions.\n- `Interaction.sumIn_disjoint`: Decomposition for regions with disjoint sets of terms.\n- `Interaction.sumIn_count`, `Interaction.sumIn_count_tsum`: Discrete sums over finite or\n  countable labels.\n\n## iii. Table of contents\n\n- A. Integration over a region\n- B. Nested regions\n- C. Disjoint regions\n- D. Discrete interactions\n\n## iv. References",
+   "copyright": "2026 Tom Ole Diem",
+   "sections": [
+    {
+     "line": 70,
+     "text": "## A. Integration over a region"
+    },
+    {
+     "line": 108,
+     "text": "## B. Nested regions"
+    },
+    {
+     "line": 122,
+     "text": "## C. Disjoint regions"
+    },
+    {
+     "line": 141,
+     "text": "## D. Discrete interactions"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "ProbabilisticTheory.Interaction.norm_termIn_le",
+     "kind": "lemma",
+     "line": 63,
+     "doc": "The norm of a term cannot increase when included into another region.",
+     "statement": "lemma norm_termIn_le (Λ : R) (i : ι) : ‖Φ.termIn Λ i‖ ≤ ‖Φ.term i‖",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Interaction.sumIn",
+     "kind": "def",
+     "line": 73,
+     "doc": "The observable in `Λ` obtained by integrating the interaction terms supported there.",
+     "statement": "noncomputable def sumIn (Λ : R) : A Λ",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Interaction.norm_sumIn_le",
+     "kind": "lemma",
+     "line": 76,
+     "doc": "The norm of the integral is bounded by the integral of the norms.",
+     "statement": "lemma norm_sumIn_le (Λ : R) : ‖Φ.sumIn μ Λ‖ ≤ ∫ i, ‖Φ.termIn Λ i‖ ∂μ",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Interaction.sumIn_add",
+     "kind": "lemma",
+     "line": 80,
+     "doc": "Integration preserves addition of interaction terms with the same supports.",
+     "statement": "lemma sumIn_add (s : ι → R) (t t' : ∀ i, A (s i)) {Λ : R}\n    (h : Integrable ((⟨s, t⟩ : Interaction N ι).termIn Λ) μ)\n    (h' : Integrable ((⟨s, t'⟩ : Interaction N ι).termIn Λ) μ) :\n    (⟨s, t + t'⟩ : Interaction N ι).sumIn μ Λ =\n      (⟨s, t⟩ : Interaction N ι).sumIn μ Λ + (⟨s, t'⟩ : Interaction N ι).sumIn μ Λ",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Interaction.sumIn_smul",
+     "kind": "lemma",
+     "line": 89,
+     "doc": "Integration preserves scalar multiplication of interaction terms.",
+     "statement": "lemma sumIn_smul (s : ι → R) (c : ℝ) (t : ∀ i, A (s i)) (Λ : R) :\n    (⟨s, c • t⟩ : Interaction N ι).sumIn μ Λ =\n      c • (⟨s, t⟩ : Interaction N ι).sumIn μ Λ",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Interaction.setIntegral_labelsIn",
+     "kind": "lemma",
+     "line": 101,
+     "doc": "Integrating the terms supported in `Λ` in a larger region `Λ'` agrees with including\nthe integral over `Λ` into `Λ'`.",
+     "statement": "lemma setIntegral_labelsIn {Λ Λ' : R} (h : Λ ≤ Λ') (hS : MeasurableSet (Φ.labelsIn Λ))\n    (h1 : Integrable (Φ.termIn Λ) μ) :\n    ∫ i in Φ.labelsIn Λ, Φ.termIn Λ' i ∂μ = N.incl h (Φ.sumIn μ Λ)",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Interaction.coupling",
+     "kind": "def",
+     "line": 111,
+     "doc": "The contribution in `Λ'` from terms not supported in `Λ`.",
+     "statement": "noncomputable def coupling (Λ Λ' : R) : A Λ'",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Interaction.sumIn_split",
+     "kind": "lemma",
+     "line": 116,
+     "doc": "The observable in a larger region is the included observable of the smaller region\nplus the remaining interaction terms.",
+     "statement": "lemma sumIn_split {Λ Λ' : R} (h : Λ ≤ Λ') (hS : MeasurableSet (Φ.labelsIn Λ))\n    (h1 : Integrable (Φ.termIn Λ) μ) (h2 : Integrable (Φ.termIn Λ') μ) :\n    Φ.sumIn μ Λ' = N.incl h (Φ.sumIn μ Λ) + Φ.coupling μ Λ Λ'",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Interaction.crossingIn",
+     "kind": "def",
+     "line": 125,
+     "doc": "The contribution in `Λ` from terms supported in neither `Λ₁` nor `Λ₂`.",
+     "statement": "noncomputable def crossingIn (Λ₁ Λ₂ Λ : R) : A Λ",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Interaction.sumIn_disjoint",
+     "kind": "lemma",
+     "line": 130,
+     "doc": "For regions with disjoint sets of supported terms, the observable in a common larger\nregion is the sum of their included observables and the remaining interaction terms.",
+     "statement": "lemma sumIn_disjoint {Λ₁ Λ₂ Λ : R} (h₁ : Λ₁ ≤ Λ) (h₂ : Λ₂ ≤ Λ)\n    (hd : Disjoint (Φ.labelsIn Λ₁) (Φ.labelsIn Λ₂)) (m₁ : MeasurableSet (Φ.labelsIn Λ₁))\n    (m₂ : MeasurableSet (Φ.labelsIn Λ₂)) (g₁ : Integrable (Φ.termIn Λ₁) μ)\n    (g₂ : Integrable (Φ.termIn Λ₂) μ) (g : Integrable (Φ.termIn Λ) μ) :\n    Φ.sumIn μ Λ = N.incl h₁ (Φ.sumIn μ Λ₁) + N.incl h₂ (Φ.sumIn μ Λ₂) +\n      Φ.crossingIn μ Λ₁ Λ₂ Λ",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Interaction.sumIn_count",
+     "kind": "lemma",
+     "line": 146,
+     "doc": "With finitely many labels, integration against the counting measure is a finite sum.",
+     "statement": "lemma sumIn_count [Fintype ι] (Λ : R) :\n    Φ.sumIn Measure.count Λ = ∑ i, Φ.termIn Λ i",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.Interaction.sumIn_count_tsum",
+     "kind": "lemma",
+     "line": 152,
+     "doc": "With countably many labels, integration against the counting measure is an infinite sum,\nprovided the terms are integrable.",
+     "statement": "lemma sumIn_count_tsum [Countable ι] {Λ : R}\n    (h : Integrable (Φ.termIn Λ) Measure.count) :\n    Φ.sumIn Measure.count Λ = ∑' i, Φ.termIn Λ i",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/ProbabilisticTheory/LocalNet/QuasilocalOrder.lean",
+   "module": "Physlib.ProbabilisticTheory.LocalNet.QuasilocalOrder",
+   "title": "Order-unit structure on quasilocal observables",
+   "doc": "Positivity and a common unit for observables assembled from a local net.\n\n## i. Overview\n\nThe quasilocal construction treats observables from different subsystems as observables of one\nglobal system. A quantity measured locally can also be described in a larger subsystem; these\ndescriptions must refer to the same physical quantity. For the global description to work, it must\npreserve more than identity: whether an observable is positive, how it compares with other\nobservables, and what represents the certain outcome.\n\nThis file shows how those properties carry over from the local systems. Positive local observables\ngive the quasilocal space its notion of positivity, and the local copies of `1` give it one certain\nobservable. Local observables thereby retain their interpretation as observables of the whole\nsystem. The resulting order-unit structure lets a state of the global system assign positive,\nnormalized expectations to them.\n\n## ii. Key results\n\n- `LocalNet.Quasilocal.positive`: the global observables with a positive local representative.\n- `LocalNet.Quasilocal.toQuasilocal_nonneg_iff`: local and global positivity agree when inclusions\n  reflect order.\n- `LocalNet.Quasilocal.instOrderUnitSpace`: the global observables inherit an order unit.\n- `LocalNet.Quasilocal.toQuasilocalChannel`: each subsystem maps to the global observable space\n  by a channel.\n- `LocalNet.Quasilocal.instArchimedeanOrderUnitSpace`: the global space is Archimedean when the\n  local spaces are.\n\n## iii. Table of contents\n\n- A. Positivity\n- B. The common order unit\n- C. The order\n- D. The quasilocal order-unit space and local channels\n- E. The Archimedean property\n\n## iv. References",
+   "copyright": "2026 Tom Ole Diem",
+   "sections": [
+    {
+     "line": 68,
+     "text": "## A. Positivity\n\nAn observable assembled from local pieces is positive when it has a positive local description.\nPositive observables from different subsystems can be brought into a common larger subsystem and\nadded there. Nonnegative scaling preserves positivity within any one subsystem."
+    },
+    {
+     "line": 122,
+     "text": "## B. The common order unit\n\nThe certain observable must not depend on which subsystem describes it. Every inclusion preserves\n`1`, so the local units all represent one global observable."
+    },
+    {
+     "line": 147,
+     "text": "## C. The order\n\nA comparison `x ≤ y` means that `y - x` has a positive local description. This is a partial order:\nan observable cannot be both positive and negative unless it is zero. When inclusions reflect\norder, comparisons made within a subsystem agree with comparisons in the global system."
+    },
+    {
+     "line": 204,
+     "text": "## D. The quasilocal order-unit space and local channels\n\nEvery global observable has a local representative bounded by a multiple of the local unit. The\nsame bound holds for the global unit, making it an order unit. The map from each subsystem to the\nglobal space preserves positivity and `1`, so it is a channel."
+    },
+    {
+     "line": 238,
+     "text": "## E. The Archimedean property\n\nThe global description should not introduce infinitesimal observables absent from every local\nsystem. This property can be checked on a local representative, so it passes to the quasilocal\nspace."
+    }
+   ],
+   "declarations": [
+    {
+     "name": "ProbabilisticTheory.LocalNet.Quasilocal.positive",
+     "kind": "def",
+     "line": 80,
+     "doc": "Global observables with a positive local representative.",
+     "statement": "def positive : Set N.Quasilocal",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.LocalNet.Quasilocal.toQuasilocal_mem_pos",
+     "kind": "lemma",
+     "line": 84,
+     "doc": "A positive local observable is positive globally.",
+     "statement": "lemma toQuasilocal_mem_pos {i : R} {a : A i} (ha : 0 ≤ a) :\n    toQuasilocal N i a ∈ positive N",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.LocalNet.Quasilocal.smul_mem_pos",
+     "kind": "lemma",
+     "line": 89,
+     "doc": "Nonnegative scaling preserves global positivity.",
+     "statement": "lemma smul_mem_pos {c : ℝ} (hc : 0 ≤ c) {x : N.Quasilocal}\n    (hx : x ∈ positive N) : c • x ∈ positive N",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.LocalNet.Quasilocal.add_mem_pos",
+     "kind": "lemma",
+     "line": 97,
+     "doc": "The sum of positive global observables is positive.",
+     "statement": "lemma add_mem_pos {x y : N.Quasilocal} (hx : x ∈ positive N) (hy : y ∈ positive N) :\n    x + y ∈ positive N",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.LocalNet.Quasilocal.eq_zero_of_mem_pos_of_neg_mem_pos",
+     "kind": "lemma",
+     "line": 106,
+     "doc": "A global observable that is both positive and negative is zero.",
+     "statement": "lemma eq_zero_of_mem_pos_of_neg_mem_pos {x : N.Quasilocal}\n    (hx : x ∈ positive N) (hx' : -x ∈ positive N) : x = 0",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 134,
+     "doc": "The common global image of the local units.",
+     "statement": "noncomputable instance : One N.Quasilocal",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.LocalNet.Quasilocal.one_eq_toQuasilocal",
+     "kind": "lemma",
+     "line": 138,
+     "doc": "The global unit is represented by the unit of the chosen subsystem.",
+     "statement": "lemma one_eq_toQuasilocal :\n    (1 : N.Quasilocal) = toQuasilocal N (Classical.arbitrary R) 1",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.LocalNet.Quasilocal.toQuasilocal_one",
+     "kind": "lemma",
+     "line": 142,
+     "doc": "Every local unit represents the global unit.",
+     "statement": "lemma toQuasilocal_one (i : R) : toQuasilocal N i 1 = (1 : N.Quasilocal)",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.LocalNet.Quasilocal.posCone",
+     "kind": "def",
+     "line": 158,
+     "doc": "The cone of positive global observables.",
+     "statement": "noncomputable def posCone : AddGroupCone N.Quasilocal",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 165,
+     "doc": "The order on global observables induced by local positivity.",
+     "statement": "noncomputable instance : PartialOrder N.Quasilocal",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.LocalNet.Quasilocal.le_iff",
+     "kind": "lemma",
+     "line": 169,
+     "doc": "`x ≤ y` exactly when `y - x` has a positive local representative.",
+     "statement": "lemma le_iff {x y : N.Quasilocal} : x ≤ y ↔ y - x ∈ positive N",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.LocalNet.Quasilocal.nonneg_iff",
+     "kind": "lemma",
+     "line": 172,
+     "doc": "A global observable is nonnegative exactly when it belongs to `positive N`.",
+     "statement": "lemma nonneg_iff {x : N.Quasilocal} : 0 ≤ x ↔ x ∈ positive N",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.LocalNet.Quasilocal.toQuasilocal_nonneg_iff",
+     "kind": "lemma",
+     "line": 177,
+     "doc": "A local observable is positive globally exactly when it is positive locally.",
+     "statement": "lemma toQuasilocal_nonneg_iff (i : R) (a : A i) : 0 ≤ toQuasilocal N i a ↔ 0 ≤ a",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 187,
+     "doc": "Adding the same global observable preserves a comparison.",
+     "statement": "instance : IsOrderedAddMonoid N.Quasilocal",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 190,
+     "doc": "Nonnegative scaling preserves comparisons between global observables.",
+     "statement": "instance : PosSMulMono ℝ N.Quasilocal",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 196,
+     "doc": "Global observables form an ordered real vector space.",
+     "statement": "noncomputable instance : OrderedVectorSpace N.Quasilocal",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.LocalNet.Quasilocal.toQuasilocal_le_iff",
+     "kind": "lemma",
+     "line": 200,
+     "doc": "A comparison of local observables has the same meaning globally.",
+     "statement": "lemma toQuasilocal_le_iff (i : R) (a b : A i) :\n    toQuasilocal N i a ≤ toQuasilocal N i b ↔ a ≤ b",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 215,
+     "doc": "The global observable space inherits an order unit from its subsystems.",
+     "statement": "noncomputable instance : OrderUnitSpace N.Quasilocal",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.LocalNet.Quasilocal.toQuasilocalChannel",
+     "kind": "def",
+     "line": 228,
+     "doc": "Regard a subsystem observable as a global observable by a channel.",
+     "statement": "noncomputable def toQuasilocalChannel (i : R) : A i →ₚ₁[ℝ] N.Quasilocal",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.LocalNet.Quasilocal.toQuasilocalChannel_apply",
+     "kind": "lemma",
+     "line": 233,
+     "doc": "",
+     "statement": "lemma toQuasilocalChannel_apply (i : R) (a : A i) :\n    toQuasilocalChannel N i a = toQuasilocal N i a",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 254,
+     "doc": "The global observable space is Archimedean when every subsystem is Archimedean.",
+     "statement": "noncomputable instance : ArchimedeanOrderUnitSpace N.Quasilocal",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean",
+   "module": "Physlib.ProbabilisticTheory.OrderUnit.Archimedean",
+   "title": "Archimedean order-unit spaces",
+   "doc": "## i. Overview\n\nThe Archimedean condition is a regularity assumption on an order-unit space that rules out\ninfinitesimal elements. With it, the order and the distinguished unit `1` determine a natural\nnorm,\n\n`‖A‖₁ = inf {r ≥ 0 | -r • 1 ≤ A ≤ r • 1}`.\n\nThus the unit interval sets the scale of the theory: `[-1, 1]` is exactly the closed unit ball. For\nself-adjoint matrices, this recovers the usual operator norm. Concretely, this is the Minkowski\nfunctional of the order interval `[-1, 1]`: convexity of that interval gives the triangle\ninequality, and its symmetry gives homogeneity, for free. The Archimedean condition is only needed\nafterwards, to upgrade this from a seminorm to a genuine norm.\n\n## ii. Key results\n\n- `ProbabilisticTheory.instArchimedeanOrderUnitSpace` : the observables of a probabilistic theory\n  form an Archimedean order-unit space.\n- `ProbabilisticTheory.of` : an Archimedean order-unit space regarded as a probabilistic theory.\n- `ArchimedeanOrderUnitSpace.orderUnitNorm_eq_zero_iff` : the order-unit norm separates points.\n- `ArchimedeanOrderUnitSpace.closedIciTopology` : the positive cone is closed in the order-unit-norm\n  topology.\n\n## iii. Table of contents\n\n- A. Archimedean order units\n- B. The order-unit bounds and norm\n- C. Norm axioms\n- D. The induced normed space\n- E. Order-closedness of the topology\n\n## iv. References",
+   "copyright": "2026 Tom Ole Diem",
+   "sections": [
+    {
+     "line": 54,
+     "text": "## A. Archimedean order units"
+    },
+    {
+     "line": 98,
+     "text": "## B. The order-unit bounds and norm"
+    },
+    {
+     "line": 181,
+     "text": "## C. Norm axioms"
+    },
+    {
+     "line": 277,
+     "text": "## D. The induced normed space"
+    },
+    {
+     "line": 299,
+     "text": "## E. Order-closedness of the topology"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "ProbabilisticTheory.ArchimedeanOrderUnitSpace",
+     "kind": "class",
+     "line": 61,
+     "doc": "An order-unit space whose distinguished order unit is Archimedean.",
+     "statement": "class ArchimedeanOrderUnitSpace (E : Type*) extends OrderUnitSpace E where\n  /-- If `A` is smaller than every positive multiple of `1`, `A` is already `≤ 0`. -/\n  le_zero_of_forall_pos_smul_one_le : ∀ A : E, (∀ ε : ℝ, 0 < ε → A ≤ ε • (1 : E)) → A ≤ 0",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.instArchimedeanOrderUnitSpaceReal",
+     "kind": "instance",
+     "line": 66,
+     "doc": "The real numbers form an Archimedean order-unit space.",
+     "statement": "instance instArchimedeanOrderUnitSpaceReal : ArchimedeanOrderUnitSpace ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.instArchimedeanOrderUnitSpace",
+     "kind": "instance",
+     "line": 78,
+     "doc": "The observables stored in a probabilistic theory form an Archimedean order-unit space.",
+     "statement": "instance instArchimedeanOrderUnitSpace (P : ProbabilisticTheory) :\n    ArchimedeanOrderUnitSpace P.Observables",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.of",
+     "kind": "abbrev",
+     "line": 83,
+     "doc": "Bundle an existing Archimedean order-unit space as a probabilistic theory.",
+     "statement": "abbrev of (E : Type*) [ArchimedeanOrderUnitSpace E] : ProbabilisticTheory",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.ArchimedeanOrderUnitSpace.orderUnitBounds",
+     "kind": "def",
+     "line": 105,
+     "doc": "The nonnegative scalars that bound an element on both sides by the order unit.",
+     "statement": "def orderUnitBounds (A : E) : Set ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.ArchimedeanOrderUnitSpace.orderUnitNorm",
+     "kind": "def",
+     "line": 109,
+     "doc": "The order-unit norm is the infimum of the order-unit bounds.",
+     "statement": "noncomputable def orderUnitNorm (A : E) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.ArchimedeanOrderUnitSpace.orderUnitBounds_bddBelow",
+     "kind": "lemma",
+     "line": 113,
+     "doc": "The order-unit bounds are bounded below by `0`.",
+     "statement": "lemma orderUnitBounds_bddBelow (A : E) : BddBelow (orderUnitBounds A)",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.ArchimedeanOrderUnitSpace.orderUnitNorm_le",
+     "kind": "lemma",
+     "line": 117,
+     "doc": "Any order-unit bound on `A` is an upper bound for `A`'s order-unit norm.",
+     "statement": "lemma orderUnitNorm_le {A : E} {r : ℝ} (hr : r ∈ orderUnitBounds A) :\n    orderUnitNorm A ≤ r",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.ArchimedeanOrderUnitSpace.orderUnitBounds_nonempty",
+     "kind": "lemma",
+     "line": 122,
+     "doc": "Every element has some order-unit bound.",
+     "statement": "lemma orderUnitBounds_nonempty (A : E) : (orderUnitBounds A).Nonempty",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.ArchimedeanOrderUnitSpace.orderUnitNorm_nonneg",
+     "kind": "lemma",
+     "line": 129,
+     "doc": "The order-unit norm is an infimum of nonnegative reals, hence itself nonnegative.",
+     "statement": "lemma orderUnitNorm_nonneg (A : E) : 0 ≤ orderUnitNorm A",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.ArchimedeanOrderUnitSpace.orderUnitNorm_zero",
+     "kind": "lemma",
+     "line": 133,
+     "doc": "",
+     "statement": "lemma orderUnitNorm_zero : orderUnitNorm (0 : E) = 0",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.ArchimedeanOrderUnitSpace.orderUnitBounds_neg",
+     "kind": "lemma",
+     "line": 140,
+     "doc": "Negation preserves the set of order-unit bounds: a symmetric interval bounding `A` bounds\n`-A` too.",
+     "statement": "lemma orderUnitBounds_neg (A : E) : orderUnitBounds (-A) = orderUnitBounds A",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.ArchimedeanOrderUnitSpace.orderUnitNorm_neg",
+     "kind": "lemma",
+     "line": 147,
+     "doc": "",
+     "statement": "lemma orderUnitNorm_neg (A : E) : orderUnitNorm (-A) = orderUnitNorm A",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.ArchimedeanOrderUnitSpace.add_mem_orderUnitBounds",
+     "kind": "lemma",
+     "line": 152,
+     "doc": "A bound for `A` and a bound for `B` add up to a bound for `A + B`.",
+     "statement": "lemma add_mem_orderUnitBounds {A B : E} {r s : ℝ} (hr : r ∈ orderUnitBounds A)\n    (hs : s ∈ orderUnitBounds B) : r + s ∈ orderUnitBounds (A + B)",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.ArchimedeanOrderUnitSpace.exists_orderUnitBound_lt",
+     "kind": "lemma",
+     "line": 165,
+     "doc": "There is an order-unit bound on `A` within `ε` of its norm.",
+     "statement": "lemma exists_orderUnitBound_lt (A : E) {ε : ℝ} (hε : 0 < ε) :\n    ∃ r ∈ orderUnitBounds A, r < orderUnitNorm A + ε",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.ArchimedeanOrderUnitSpace.orderUnitNorm_add_le",
+     "kind": "lemma",
+     "line": 169,
+     "doc": "",
+     "statement": "lemma orderUnitNorm_add_le (A B : E) :\n    orderUnitNorm (A + B) ≤ orderUnitNorm A + orderUnitNorm B",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.ArchimedeanOrderUnitSpace.smul_one_mono",
+     "kind": "lemma",
+     "line": 189,
+     "doc": "Scaling the unit by a larger nonnegative real gives a larger multiple: `r ↦ r • 1` is\nmonotone.",
+     "statement": "lemma smul_one_mono {r s : ℝ} (hrs : r ≤ s) :\n    r • (1 : E) ≤ s • (1 : E)",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.ArchimedeanOrderUnitSpace.le_orderUnitNorm_smul_one",
+     "kind": "lemma",
+     "line": 194,
+     "doc": "Every element is bounded above by its order-unit norm times `1`.",
+     "statement": "lemma le_orderUnitNorm_smul_one (A : E) : A ≤ orderUnitNorm A • (1 : E)",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.ArchimedeanOrderUnitSpace.neg_orderUnitNorm_smul_one_le",
+     "kind": "lemma",
+     "line": 206,
+     "doc": "`A` is also bounded below by `-(orderUnitNorm A • 1)`.",
+     "statement": "lemma neg_orderUnitNorm_smul_one_le (A : E) : -(orderUnitNorm A • (1 : E)) ≤ A",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.ArchimedeanOrderUnitSpace.orderUnitNorm_mem_orderUnitBounds",
+     "kind": "lemma",
+     "line": 213,
+     "doc": "The norm itself is an order-unit bound, i.e. the infimum defining `orderUnitNorm` is a\nminimum.",
+     "statement": "lemma orderUnitNorm_mem_orderUnitBounds (A : E) : orderUnitNorm A ∈ orderUnitBounds A",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.ArchimedeanOrderUnitSpace.le_smul_one_of_orderUnitNorm_lt",
+     "kind": "lemma",
+     "line": 217,
+     "doc": "An element with order-unit norm strictly below `ε` is itself bounded above by `ε • 1`.",
+     "statement": "lemma le_smul_one_of_orderUnitNorm_lt {A : E} {ε : ℝ} (h : orderUnitNorm A < ε) :\n    A ≤ ε • (1 : E)",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.ArchimedeanOrderUnitSpace.neg_smul_one_le_of_orderUnitNorm_lt",
+     "kind": "lemma",
+     "line": 222,
+     "doc": "The mirror image of `le_smul_one_of_orderUnitNorm_lt`.",
+     "statement": "lemma neg_smul_one_le_of_orderUnitNorm_lt {A : E} {ε : ℝ} (h : orderUnitNorm A < ε) :\n    -(ε • (1 : E)) ≤ A",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.ArchimedeanOrderUnitSpace.orderUnitNorm_le_iff",
+     "kind": "lemma",
+     "line": 228,
+     "doc": "The order-unit norm is characterized exactly by its symmetric order interval.",
+     "statement": "lemma orderUnitNorm_le_iff {A : E} {r : ℝ} :\n    orderUnitNorm A ≤ r ↔ 0 ≤ r ∧ -(r • (1 : E)) ≤ A ∧ A ≤ r • (1 : E)",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.ArchimedeanOrderUnitSpace.orderUnitNorm_eq_zero_iff",
+     "kind": "lemma",
+     "line": 236,
+     "doc": "The order-unit norm is definite: `‖A‖₁ = 0` forces `A = 0`.",
+     "statement": "lemma orderUnitNorm_eq_zero_iff {A : E} : orderUnitNorm A = 0 ↔ A = 0",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.ArchimedeanOrderUnitSpace.orderUnitNorm_smul_le",
+     "kind": "lemma",
+     "line": 243,
+     "doc": "Nonnegative scalar multiplication scales the order-unit norm from above.",
+     "statement": "lemma orderUnitNorm_smul_le {r : ℝ} (hr : 0 ≤ r) (A : E) :\n    orderUnitNorm (r • A) ≤ r * orderUnitNorm A",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.ArchimedeanOrderUnitSpace.orderUnitNorm_smul_of_pos",
+     "kind": "lemma",
+     "line": 253,
+     "doc": "Positive scalar multiplication scales the order-unit norm.",
+     "statement": "lemma orderUnitNorm_smul_of_pos {r : ℝ} (hr : 0 < r) (A : E) :\n    orderUnitNorm (r • A) = r * orderUnitNorm A",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.ArchimedeanOrderUnitSpace.orderUnitNorm_smul",
+     "kind": "lemma",
+     "line": 260,
+     "doc": "The order-unit norm is absolutely homogeneous.",
+     "statement": "lemma orderUnitNorm_smul (r : ℝ) (A : E) :\n    orderUnitNorm (r • A) = |r| * orderUnitNorm A",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.ArchimedeanOrderUnitSpace.exists_orderUnitNorm_le_one_smul_eq",
+     "kind": "lemma",
+     "line": 270,
+     "doc": "Rescaling any nonzero element down to the unit ball: `(orderUnitNorm A)⁻¹ • A` has norm at\nmost `1`, and scaling it back up by `orderUnitNorm A` recovers `A`.",
+     "statement": "lemma exists_orderUnitNorm_le_one_smul_eq {A : E} (hA : orderUnitNorm A ≠ 0) :\n    ∃ B : E, orderUnitNorm B ≤ 1 ∧ orderUnitNorm A • B = A",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.ArchimedeanOrderUnitSpace.orderUnitAddGroupNorm",
+     "kind": "def",
+     "line": 284,
+     "doc": "The order-unit norm packaged as an additive-group norm.",
+     "statement": "noncomputable def orderUnitAddGroupNorm : AddGroupNorm E",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.ArchimedeanOrderUnitSpace.orderUnitNormedAddCommGroup",
+     "kind": "instance",
+     "line": 292,
+     "doc": "The normed additive group given by the order-unit norm.",
+     "statement": "noncomputable scoped instance orderUnitNormedAddCommGroup : NormedAddCommGroup E",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.ArchimedeanOrderUnitSpace.orderUnitNormedSpace",
+     "kind": "instance",
+     "line": 296,
+     "doc": "The real normed space given by the order-unit norm.",
+     "statement": "noncomputable scoped instance orderUnitNormedSpace : NormedSpace ℝ E",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.ArchimedeanOrderUnitSpace.isClosed_Ici_zero",
+     "kind": "lemma",
+     "line": 306,
+     "doc": "The positive cone is closed in the order-unit-norm topology.",
+     "statement": "lemma isClosed_Ici_zero : IsClosed (Set.Ici (0 : E))",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.ArchimedeanOrderUnitSpace.closedIciTopology",
+     "kind": "instance",
+     "line": 319,
+     "doc": "Every upper set `[a, ∞)` is closed in the order-unit-norm topology.",
+     "statement": "scoped instance closedIciTopology : ClosedIciTopology E",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/ProbabilisticTheory/OrderUnit/Basic.lean",
+   "module": "Physlib.ProbabilisticTheory.OrderUnit.Basic",
+   "title": "Ordered vector spaces and order units",
+   "doc": "## i. Overview\n\nOrder-unit spaces capture the basic structure needed for a probabilistic theory: observables,\npositivity, effects, states and probabilities. They do this without assuming that the theory is\nclassical or quantum, or that observables have any particular algebraic structure.\n\nIn quantum mechanics, the standard example is the real vector space of self-adjoint matrices,\nordered by positive semidefiniteness, with the identity matrix as 1. Keeping only the vector\nspace, its order, and this distinguished unit gives the abstract order-unit setting.\n\n## ii. Key results\n\n- `OrderUnitSpace.exists_two_sided_bound` : every observable sits between `-(n • 1)` and `n • 1`,\n  for some `n`.\n- `OrderUnitSpace.exists_eq_sub_nonneg` : every observable is a difference of two positive\n  observables.\n- `OrderUnitSpace.exists_real_shift_nonneg` : enough copies of the order unit shift any element\n  into the positive cone.\n- `OrderedVectorSpace.nonneg_add_eq_zero` : the positive cone meets its negation only at `0`.\n\n## iii. Table of contents\n\n- A. Ordered vector spaces and order units\n- B. Consequences of being an order unit\n\n## iv. References",
+   "copyright": "2026 Tom Ole Diem",
+   "sections": [
+    {
+     "line": 47,
+     "text": "## A. Ordered vector spaces and order-unit elements"
+    },
+    {
+     "line": 75,
+     "text": "## B. Consequences of being an order unit"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "ProbabilisticTheory.OrderedVectorSpace",
+     "kind": "class",
+     "line": 54,
+     "doc": "An ordered real vector space.",
+     "statement": "class OrderedVectorSpace (E : Type*) extends AddCommGroup E, PartialOrder E, Module ℝ E,\n    IsOrderedAddMonoid E, PosSMulMono ℝ E",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.OrderUnitSpace",
+     "kind": "class",
+     "line": 60,
+     "doc": "An ordered real vector space whose distinguished element `1` is an order unit: it is\nnonnegative, and every element is bounded above by a natural multiple of it. No multiplication is\nassumed.",
+     "statement": "class OrderUnitSpace (E : Type*) extends OrderedVectorSpace E, One E where\n  /-- The distinguished unit is nonnegative. -/\n  one_nonneg : 0 ≤ (1 : E)\n  /-- Every element is bounded above by a natural multiple of the order unit. -/\n  exists_nsmul_one_le : ∀ B : E, ∃ n : ℕ, B ≤ n • (1 : E)",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.instOrderUnitSpace",
+     "kind": "instance",
+     "line": 67,
+     "doc": "The observables stored in a probabilistic theory form an order-unit space.",
+     "statement": "instance instOrderUnitSpace (P : ProbabilisticTheory) : OrderUnitSpace P.Observables",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.OrderUnitSpace.exists_two_sided_bound",
+     "kind": "lemma",
+     "line": 82,
+     "doc": "Every element is bounded on both sides by a natural multiple of the order unit.",
+     "statement": "lemma exists_two_sided_bound (A : E) : ∃ n : ℕ, -(n • (1 : E)) ≤ A ∧ A ≤ n • (1 : E)",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.OrderUnitSpace.exists_eq_sub_nonneg",
+     "kind": "lemma",
+     "line": 89,
+     "doc": "Every element is a difference of two positive elements.",
+     "statement": "lemma exists_eq_sub_nonneg (A : E) : ∃ Ap An : E, 0 ≤ Ap ∧ 0 ≤ An ∧ A = Ap - An",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.OrderUnitSpace.exists_real_shift_nonneg",
+     "kind": "lemma",
+     "line": 97,
+     "doc": "Every element becomes nonnegative after adding enough copies of the order unit: the positive\ncone reaches everywhere, once you're allowed to shift by the unit.",
+     "statement": "lemma exists_real_shift_nonneg (A : E) : ∃ r : ℝ, 0 ≤ r • (1 : E) + A",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.OrderedVectorSpace.nonneg_add_eq_zero",
+     "kind": "lemma",
+     "line": 111,
+     "doc": "A nonnegative vector that adds with another nonnegative vector to `0` is itself `0`: the\npositive cone meets its negation only at `0`.",
+     "statement": "lemma nonneg_add_eq_zero {A B : E} (hA : 0 ≤ A) (hB : 0 ≤ B) (hAB : A + B = 0) : A = 0",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/ProbabilisticTheory/OrderUnit/Cone.lean",
+   "module": "Physlib.ProbabilisticTheory.OrderUnit.Cone",
+   "title": "Ordered positive cones",
+   "doc": "## i. Overview\n\n`PosCone E` collects the positive elements of `E`. In quantum mechanics, `E` is the real vector\nspace of self-adjoint matrices, whose spectra are real. Its positive cone consists exactly of\nthose matrices whose spectra are nonnegative.\nThese elements form a cone: they are closed under addition and scaling by nonnegative reals.\n\n## ii. Key results\n\n- `PosCone` : the cone of positive observables, `PointedCone.positive ℝ E`. Its carrier is exactly\n  `{A | 0 ≤ A}` (`PointedCone.mem_positive`) and it is convex (`PointedCone.convex`).\n- `PosCone.isClosed` : the positive cone is closed in the order-unit-norm topology of an\n  Archimedean order-unit space.\n\n## iii. Table of contents\n\n- A. The positive cone\n- B. Topological closedness\n- C. The order unit",
+   "copyright": "2026 Tom Ole Diem",
+   "sections": [
+    {
+     "line": 42,
+     "text": "## A. The positive cone"
+    },
+    {
+     "line": 64,
+     "text": "## B. Topological closedness"
+    },
+    {
+     "line": 81,
+     "text": "## C. The order unit"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "ProbabilisticTheory.PosCone",
+     "kind": "abbrev",
+     "line": 49,
+     "doc": "The positive pointed cone of an ordered real module.",
+     "statement": "abbrev PosCone (E : Type*) [OrderedVectorSpace E] : PointedCone ℝ E",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.PosCone.instModule",
+     "kind": "instance",
+     "line": 59,
+     "doc": "The positive cone carries a nonnegative-real scalar action.",
+     "statement": "instance instModule : Module ℝ≥0 (PosCone E)",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.PosCone.isClosed",
+     "kind": "lemma",
+     "line": 77,
+     "doc": "The positive cone is closed in the topology induced by the order-unit norm.",
+     "statement": "lemma isClosed : IsClosed (PosCone E : Set E)",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.PosCone.instOne",
+     "kind": "instance",
+     "line": 94,
+     "doc": "The order unit, regarded as a point of the positive cone.",
+     "statement": "instance instOne : One (PosCone E)",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.PosCone.coe_one",
+     "kind": "lemma",
+     "line": 97,
+     "doc": "",
+     "statement": "lemma coe_one : ((1 : PosCone E) : E) = (1 : E)",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/ProbabilisticTheory/StarAlgebra/State.lean",
+   "module": "Physlib.ProbabilisticTheory.StarAlgebra.State",
+   "title": "Observables and states of a star algebra",
+   "doc": "A positive map sends observables to observables. A state gives observables real expectation\nvalues. A tracial state does not see the order of a product.\n\n## i. Overview\n\nThe observables of a quantum system are the self-adjoint operators of its algebra. A state gives\nevery operator a complex expectation value.\n\nA state is tracial if the expectation value of a product does not depend on the order of the\nfactors: `ω (a b) = ω (b a)`. Then `ω` vanishes on every commutator. A tracial state gives the\nsame expectation value after a change of frame by a unitary `u`: `ω (u x u⋆) = ω x`.\n\nA state has a real expectation value on every observable. Its real part is a state of the\nobservables.\n\nA positive map sends the operators of one system to operators of another. It sends observables to\nobservables. A unital positive map restricts to a channel between the observables.\n\n## ii. Key results\n\n- `Observable` : the self-adjoint elements, such as Hermitian operators.\n- `UnitalPositiveLinearMap.IsTracial` : a tracial state.\n- `UnitalPositiveLinearMap.IsTracial.map_commutator` : a tracial state vanishes on commutators.\n- `UnitalPositiveLinearMap.IsTracial.map_conj` : a tracial state is invariant under\n  `x ↦ u * x * u⋆` for a unitary `u`.\n- `UnitalPositiveLinearMap.isTracial_iff_star_mul_self_eq_mul_star_self` : `ω` is tracial if and\n  only if `ω (a⋆ * a) = ω (a * a⋆)` for all `a`.\n- `UnitalPositiveLinearMap.onObservables` : a state restricted to a state of the observables.\n- `UnitalPositiveLinearMap.coe_onObservables_apply` : the expectation value of an observable is\n  real.\n- `UnitalPositiveLinearMap.restrictObservables` : a unital positive map restricted to a channel\n  between observables.\n\n## iii. Table of contents\n\n- A. Observables and tracial states\n- B. States of observables\n- C. Channels between observables\n\n## iv. References",
+   "copyright": "2026 Tom Ole Diem",
+   "sections": [
+    {
+     "line": 64,
+     "text": "## A. Observables and tracial states"
+    },
+    {
+     "line": 111,
+     "text": "## B. States of observables"
+    },
+    {
+     "line": 134,
+     "text": "## C. Channels between observables"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "Observable",
+     "kind": "abbrev",
+     "line": 71,
+     "doc": "An observable: a self-adjoint element, such as a Hermitian operator.",
+     "statement": "abbrev Observable (𝒜 : Type*) [AddGroup 𝒜] [StarAddMonoid 𝒜]",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.IsTracial",
+     "kind": "def",
+     "line": 78,
+     "doc": "A state `ω` is tracial if `ω (a * b) = ω (b * a)` for all `a` and `b`.",
+     "statement": "def IsTracial (ω : 𝓢[ℂ, 𝒜]) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.IsTracial.map_mul_comm",
+     "kind": "lemma",
+     "line": 82,
+     "doc": "A tracial state does not see the order of a product.",
+     "statement": "lemma IsTracial.map_mul_comm {ω : 𝓢[ℂ, 𝒜]} (h : ω.IsTracial) (a b : 𝒜) :\n    ω (a * b) = ω (b * a)",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.IsTracial.map_commutator",
+     "kind": "lemma",
+     "line": 87,
+     "doc": "A tracial state vanishes on commutators.",
+     "statement": "lemma IsTracial.map_commutator {ω : 𝓢[ℂ, 𝒜]} (h : ω.IsTracial) (a b : 𝒜) :\n    ω (a * b - b * a) = 0",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.IsTracial.map_conj",
+     "kind": "lemma",
+     "line": 94,
+     "doc": "A tracial state is invariant under the change of frame `x ↦ u * x * u⋆` by a unitary.",
+     "statement": "lemma IsTracial.map_conj {ω : 𝓢[ℂ, 𝒜]} (h : ω.IsTracial) (u : unitary 𝒜) (x : 𝒜) :\n    ω (u * x * star (u : 𝒜)) = ω x",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.isTracial_iff_star_mul_self_eq_mul_star_self",
+     "kind": "lemma",
+     "line": 105,
+     "doc": "A state is tracial if and only if `ω (a⋆ * a) = ω (a * a⋆)` for all `a`.",
+     "statement": "lemma isTracial_iff_star_mul_self_eq_mul_star_self (ω : 𝓢[ℂ, 𝒜]) :\n    ω.IsTracial ↔ ∀ a : 𝒜, ω (star a * a) = ω (a * star a)",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.onObservables",
+     "kind": "def",
+     "line": 121,
+     "doc": "The real part of a state is a state of the observables. Its value is the expectation value\n(`coe_onObservables_apply`).",
+     "statement": "noncomputable def onObservables (ω : 𝓢[ℂ, 𝒜]) : 𝓢[ℝ, Observable 𝒜]",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.coe_onObservables_apply",
+     "kind": "lemma",
+     "line": 130,
+     "doc": "The expectation value of an observable is real. It equals its real part.",
+     "statement": "lemma coe_onObservables_apply (ω : 𝓢[ℂ, 𝒜]) (x : Observable 𝒜) :\n    ((ω.onObservables x : ℝ) : ℂ) = ω (x : 𝒜)",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.restrictObservables",
+     "kind": "def",
+     "line": 144,
+     "doc": "A unital positive map restricts to a channel between observables.",
+     "statement": "noncomputable def restrictObservables (f : 𝒜 →ₚ₁[ℂ] ℬ) : Observable 𝒜 →ₚ₁[ℝ] Observable ℬ",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.coe_restrictObservables_apply",
+     "kind": "lemma",
+     "line": 153,
+     "doc": "The restricted channel acts as the original map.",
+     "statement": "lemma coe_restrictObservables_apply (f : 𝒜 →ₚ₁[ℂ] ℬ) (x : Observable 𝒜) :\n    (f.restrictObservables x : ℬ) = f x",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/ProbabilisticTheory/StarAlgebra/Traciality.lean",
+   "module": "Physlib.ProbabilisticTheory.StarAlgebra.Traciality",
+   "title": "Tracial functionals",
+   "doc": "A functional on an algebra is tracial if the order of a product does not change its value.\n\n## i. Overview\n\nA functional `f` on an algebra is tracial if `f (x y) = f (y x)` for all `x` and `y`. The order\nof a product does not change its value.\n\nOn an algebra with an adjoint it is enough to check `f (x⋆ x) = f (x x⋆)`. An operator and its\nadjoint then give the same value in both orders.\n\n## ii. Key results\n\n- `LinearMap.IsTracial` : a complex-linear functional with `f (x * y) = f (y * x)`.\n- `LinearMap.isTracial_iff_star_mul_self_eq_mul_star_self` : `f` is tracial if and only if\n  `f (x⋆ * x) = f (x * x⋆)` for all `x`.\n\n## iii. Table of contents\n\n- A. Tracial functionals\n- B. Checking on `x⋆ x`\n\n## iv. References",
+   "copyright": "2026 Tom Ole Diem",
+   "sections": [
+    {
+     "line": 47,
+     "text": "## A. Tracial functionals"
+    },
+    {
+     "line": 57,
+     "text": "## B. Checking on `x⋆ x`\n\nApply the hypothesis to `x⋆ + y` and `x⋆ + i y`. The cross terms leave `C - C' = 0` and\n`C + C' = 0` for the commutators `C = f [x, y]` and `C' = f [x⋆, y⋆]`, so `C = 0`."
+    }
+   ],
+   "declarations": [
+    {
+     "name": "LinearMap.IsTracial",
+     "kind": "def",
+     "line": 54,
+     "doc": "A complex-linear functional is tracial if `f (x * y) = f (y * x)` for all `x` and `y`.",
+     "statement": "def IsTracial (f : 𝒜 →ₗ[ℂ] ℂ) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "LinearMap.isTracial_iff_star_mul_self_eq_mul_star_self",
+     "kind": "lemma",
+     "line": 69,
+     "doc": "A functional is tracial if and only if `f (x⋆ x) = f (x x⋆)` for all `x`.",
+     "statement": "lemma isTracial_iff_star_mul_self_eq_mul_star_self (f : 𝒜 →ₗ[ℂ] ℂ) :\n    f.IsTracial ↔ ∀ x : 𝒜, f (star x * x) = f (x * star x)",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/ProbabilisticTheory/State/Basic.lean",
+   "module": "Physlib.ProbabilisticTheory.State.Basic",
+   "title": "States",
+   "doc": "## i. Overview\n\nA state assigns each observable its expectation value: a positive linear functional\n(`0 ≤ A ⟹ 0 ≤ ω A`), normalized so the certain outcome reads `ω 1 = 1`. In quantum mechanics,\n`ω A = tr(ρA)` for a density matrix `ρ`.\n\n## ii. Key results\n\n- `𝓢[𝕜, A]` : states on an ordered `𝕜`-vector space with a distinguished unit.\n- `UnitalPositiveLinearMap.comap` : the state on the input of a channel that evaluates an\n  observable by first sending it through the channel.\n- `Channel.comap` : the same pullback of states along a channel between probabilistic theories.\n\n## iii. Table of contents\n\n- A. Notation for positive functionals and states\n- B. Transporting states along channels\n\n## iv. References",
+   "copyright": "2026 Tom Ole Diem",
+   "sections": [
+    {
+     "line": 38,
+     "text": "## A. Notation for positive functionals and states"
+    },
+    {
+     "line": 50,
+     "text": "## B. Transporting states along channels"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "UnitalPositiveLinearMap.comap",
+     "kind": "def",
+     "line": 64,
+     "doc": "The state on `E` that evaluates an observable by first sending it through a channel `f` and\nthen evaluating the state `ω` on the result.",
+     "statement": "def comap (f : E →ₚ₁[ℝ] F) (ω : 𝓢[ℝ, F]) : 𝓢[ℝ, E]",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.comap_apply",
+     "kind": "lemma",
+     "line": 69,
+     "doc": "",
+     "statement": "lemma comap_apply (f : E →ₚ₁[ℝ] F) (ω : 𝓢[ℝ, F]) (x : E) : comap f ω x = ω (f x)",
+     "sorry": false
+    },
+    {
+     "name": "Channel.comap",
+     "kind": "def",
+     "line": 78,
+     "doc": "Pull back a state by applying the channel before evaluating each observable.",
+     "statement": "def comap (f : Channel P Q) (ω : 𝓢[ℝ, Q.Observables]) : 𝓢[ℝ, P.Observables]",
+     "sorry": false
+    },
+    {
+     "name": "Channel.comap_apply",
+     "kind": "lemma",
+     "line": 83,
+     "doc": "",
+     "statement": "lemma comap_apply (f : Channel P Q) (ω : 𝓢[ℝ, Q.Observables]) (x : P.Observables) :\n    comap f ω x = ω (f x)",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/ProbabilisticTheory/State/Convex.lean",
+   "module": "Physlib.ProbabilisticTheory.State.Convex",
+   "title": "Convex state spaces",
+   "doc": "Convexity of the state space and its pure and mixed states.\n\n## i. Overview\n\nStates mix: a probabilistic combination of two states is again a state, and the state space\nembeds convexly into the algebraic dual. A pure state is one that's never a genuine mixture of\ntwo others, an extreme point of that convex set. A mixed state is one that is a mixture.\n\n## ii. Key results\n\n- `UnitalPositiveLinearMap.mix` : randomize between two states with a given probability.\n- `UnitalPositiveLinearMap.stateSpace_convex` : the state space is convex in the algebraic dual.\n- `UnitalPositiveLinearMap.IsPure` : pure states are extreme points of the state space.\n- `UnitalPositiveLinearMap.isPure_iff_forall_mix_eq` : a pure state admits only trivial\n  genuine mixtures.\n- `UnitalPositiveLinearMap.isMixed_iff_exists_mem_openSegment` : mixed states lie between\n  two other states.\n\n## iii. Table of contents\n\n- A. Mixing states\n- B. The state space\n- C. Pure and mixed states\n\n## iv. References",
+   "copyright": "2026 Tom Ole Diem",
+   "sections": [
+    {
+     "line": 51,
+     "text": "## A. Mixing states"
+    },
+    {
+     "line": 80,
+     "text": "## B. The state space"
+    },
+    {
+     "line": 97,
+     "text": "## C. Pure and mixed states"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "UnitalPositiveLinearMap.mix",
+     "kind": "def",
+     "line": 59,
+     "doc": "Randomize between two states with probability `t` of choosing the first, so\n`t • ω + σ t • φ` with `σ t = 1 - t`.",
+     "statement": "def mix (ω φ : 𝓢[ℝ, E]) (t : unitInterval) : 𝓢[ℝ, E]",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.mix_apply",
+     "kind": "lemma",
+     "line": 65,
+     "doc": "Evaluation of a mixture is the pointwise convex combination.",
+     "statement": "lemma mix_apply (ω φ : 𝓢[ℝ, E]) (t : unitInterval) (A : E) :\n    mix ω φ t A = (t : ℝ) * ω A + (1 - (t : ℝ)) * φ A",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.toLinearMap_mix",
+     "kind": "lemma",
+     "line": 70,
+     "doc": "The underlying linear map of a mixture is the corresponding combination of linear maps.",
+     "statement": "lemma toLinearMap_mix (ω φ : 𝓢[ℝ, E]) (t : unitInterval) :\n    (mix ω φ t).toLinearMap = (t : ℝ) • ω.toLinearMap + (1 - (t : ℝ)) • φ.toLinearMap",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.mix_symm",
+     "kind": "lemma",
+     "line": 76,
+     "doc": "Swapping the two states swaps the weights: `σ` is the symmetry of the interval.",
+     "statement": "lemma mix_symm (ω φ : 𝓢[ℝ, E]) (t : unitInterval) : mix ω φ t = mix φ ω (σ t)",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.stateSpace",
+     "kind": "def",
+     "line": 87,
+     "doc": "States embedded into the algebraic dual.",
+     "statement": "def stateSpace : Set (E →ₗ[ℝ] ℝ)",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.stateSpace_convex",
+     "kind": "lemma",
+     "line": 91,
+     "doc": "The state space is convex in the algebraic dual.",
+     "statement": "lemma stateSpace_convex : Convex ℝ (stateSpace (E := E))",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.IsPure",
+     "kind": "def",
+     "line": 104,
+     "doc": "A state is pure when it is an extreme point of the state space.",
+     "statement": "def IsPure (ω : 𝓢[ℝ, E]) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.IsMixed",
+     "kind": "def",
+     "line": 107,
+     "doc": "A state is mixed when it isn't pure.",
+     "statement": "def IsMixed (ω : 𝓢[ℝ, E]) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.isPure_iff_forall_mem_openSegment",
+     "kind": "lemma",
+     "line": 110,
+     "doc": "A state is pure exactly when any open segment containing it has both endpoints equal to it.",
+     "statement": "lemma isPure_iff_forall_mem_openSegment {ω : 𝓢[ℝ, E]} :\n    ω.IsPure ↔ ∀ φ ψ : 𝓢[ℝ, E],\n      ω.toLinearMap ∈ openSegment ℝ φ.toLinearMap ψ.toLinearMap → φ = ω ∧ ψ = ω",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.isMixed_iff_exists_mem_openSegment",
+     "kind": "lemma",
+     "line": 117,
+     "doc": "A state is mixed exactly when it lies in an open segment with a different endpoint.",
+     "statement": "lemma isMixed_iff_exists_mem_openSegment {ω : 𝓢[ℝ, E]} :\n    ω.IsMixed ↔ ∃ φ ψ : 𝓢[ℝ, E],\n      ω.toLinearMap ∈ openSegment ℝ φ.toLinearMap ψ.toLinearMap ∧ (φ ≠ ω ∨ ψ ≠ ω)",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.mem_openSegment_iff_exists_mix",
+     "kind": "lemma",
+     "line": 123,
+     "doc": "Open segments between states consist exactly of their genuine mixtures.",
+     "statement": "lemma mem_openSegment_iff_exists_mix (ω φ ψ : 𝓢[ℝ, E]) :\n    ω.toLinearMap ∈ openSegment ℝ φ.toLinearMap ψ.toLinearMap ↔\n      ∃ t : unitInterval, 0 < t ∧ t < 1 ∧ mix φ ψ t = ω",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.isPure_iff_forall_mix_eq",
+     "kind": "lemma",
+     "line": 132,
+     "doc": "A state is pure exactly when every genuine binary mixture producing it is trivial.",
+     "statement": "lemma isPure_iff_forall_mix_eq {ω : 𝓢[ℝ, E]} :\n    ω.IsPure ↔ ∀ φ ψ t, 0 < t → t < 1 → mix φ ψ t = ω → φ = ω ∧ ψ = ω",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/ProbabilisticTheory/State/Discrimination.lean",
+   "module": "Physlib.ProbabilisticTheory.State.Discrimination",
+   "title": "State discrimination",
+   "doc": "Optimal binary discrimination probabilities and their relation to the state distance.\n\n## i. Overview\n\nA system is prepared in state `ω₀` (with probability `p`) or `ω₁` (with probability `1 - p`). We\nget to run a single yes/no test on it — an effect `e` — and have to guess which state it was,\nbased only on whether `e` \"clicked\". We guess `ω₀` on a click and `ω₁` otherwise; `successProb`\nis the probability that guess is right.\n\nAlways guessing `ω₁`, without even looking at the system, is already right with probability\n`1 - p` — that's our baseline. Running a test can only add to it: its `advantage` is how much\nextra success probability it buys over that baseline. Taking the supremum over all tests gives the\nclassic Helstrom bound (`optimalSuccessProb_eq`), without assuming an optimizing test exists.\n\nFor equal priors (`p = 1/2`) the bound simplifies to `1/2 + dist ω₀ ω₁ / 4`.\nTwo equally likely states are easier to tell apart exactly when they sit farther apart.\n\n## ii. Key results\n\n- `UnitalPositiveLinearMap.optimalSuccessProb_eq` : the Helstrom bound.\n- `UnitalPositiveLinearMap.optimalSuccessProb_half_half_eq` : for equal priors, the bound is the\n  state distance.\n\n## iii. Table of contents\n\n- A. Success probability and the advantage of a test\n- B. The Helstrom bound\n- C. Equal priors: the bound is the state distance\n\n## iv. References\n\n- C.W. Helstrom, *Quantum Detection and Estimation Theory*, Academic Press, 1976.",
+   "copyright": "2026 Tom Ole Diem",
+   "sections": [
+    {
+     "line": 60,
+     "text": "## A. Success probability and the advantage of a test"
+    },
+    {
+     "line": 77,
+     "text": "## B. The Helstrom bound"
+    },
+    {
+     "line": 101,
+     "text": "## C. Equal priors: the bound is the state distance"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "UnitalPositiveLinearMap.successProb",
+     "kind": "def",
+     "line": 64,
+     "doc": "Probability of guessing right between `ω₀` (prior `p`) and `ω₁` (prior `1 - p`) using test\n`e`: guess `ω₀` on a click, `ω₁` otherwise.",
+     "statement": "def successProb (ω₀ ω₁ : 𝓢[ℝ, E]) (p : unitInterval) (e : Effect E) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.advantage",
+     "kind": "def",
+     "line": 68,
+     "doc": "How much test `e` improves on the baseline of always guessing `ω₁`.",
+     "statement": "def advantage (ω₀ ω₁ : 𝓢[ℝ, E]) (p : unitInterval) (e : Effect E) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.successProb_eq_add_advantage",
+     "kind": "lemma",
+     "line": 72,
+     "doc": "Success probability equals the baseline `1 - p` plus the advantage of test `e`.",
+     "statement": "lemma successProb_eq_add_advantage (ω₀ ω₁ : 𝓢[ℝ, E]) (p : unitInterval) (e : Effect E) :\n    successProb ω₀ ω₁ p e = (1 - p) + advantage ω₀ ω₁ p e",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.advantage_le",
+     "kind": "lemma",
+     "line": 80,
+     "doc": "No test's advantage beats the prior weight `p` of the state it favors.",
+     "statement": "lemma advantage_le (ω₀ ω₁ : 𝓢[ℝ, E]) (p : unitInterval) (e : Effect E) :\n    advantage ω₀ ω₁ p e ≤ p",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.bddAbove_advantage",
+     "kind": "lemma",
+     "line": 86,
+     "doc": "Advantages of tests are bounded above.",
+     "statement": "lemma bddAbove_advantage (ω₀ ω₁ : 𝓢[ℝ, E]) (p : unitInterval) :\n    BddAbove (Set.range (advantage ω₀ ω₁ p))",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.optimalSuccessProb",
+     "kind": "def",
+     "line": 91,
+     "doc": "The best a single test can do.",
+     "statement": "noncomputable def optimalSuccessProb (ω₀ ω₁ : 𝓢[ℝ, E]) (p : unitInterval) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.optimalSuccessProb_eq",
+     "kind": "lemma",
+     "line": 96,
+     "doc": "The Helstrom bound: optimal success probability is the baseline `1 - p` plus the best\nadvantage any test can give.",
+     "statement": "lemma optimalSuccessProb_eq (ω₀ ω₁ : 𝓢[ℝ, E]) (p : unitInterval) :\n    optimalSuccessProb ω₀ ω₁ p = (1 - p) + ⨆ e : Effect E, advantage ω₀ ω₁ p e",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.sub_complement_eq_neg_sub",
+     "kind": "lemma",
+     "line": 104,
+     "doc": "Complementing an effect negates `ω₀ e - ω₁ e`.",
+     "statement": "lemma sub_complement_eq_neg_sub (ω₀ ω₁ : 𝓢[ℝ, E]) (e : Effect E) :\n    ω₀ (complement e) - ω₁ (complement e) = -(ω₀ e - ω₁ e)",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.bddAbove_abs_sub",
+     "kind": "lemma",
+     "line": 109,
+     "doc": "The differences `|ω₀ e - ω₁ e|` over effects are bounded above.",
+     "statement": "lemma bddAbove_abs_sub (ω₀ ω₁ : 𝓢[ℝ, E]) :\n    BddAbove (Set.range fun e : Effect E => |ω₀ e - ω₁ e|)",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.bddAbove_sub",
+     "kind": "lemma",
+     "line": 117,
+     "doc": "The differences `ω₀ e - ω₁ e` over effects are bounded above.",
+     "statement": "lemma bddAbove_sub (ω₀ ω₁ : 𝓢[ℝ, E]) :\n    BddAbove (Set.range fun e : Effect E => ω₀ e - ω₁ e)",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.ciSup_sub_eq_ciSup_abs_sub",
+     "kind": "lemma",
+     "line": 125,
+     "doc": "The supremum of the state-value difference equals that of its absolute value: complementing\nan effect flips the sign.",
+     "statement": "lemma ciSup_sub_eq_ciSup_abs_sub (ω₀ ω₁ : 𝓢[ℝ, E]) :\n    (⨆ e : Effect E, (ω₀ e - ω₁ e)) = ⨆ e : Effect E, |ω₀ e - ω₁ e|",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.dist_eq_ciSup_abs_sub",
+     "kind": "lemma",
+     "line": 142,
+     "doc": "The state distance is the supremum of the differences on recentered effects.",
+     "statement": "lemma dist_eq_ciSup_abs_sub (ω₀ ω₁ : 𝓢[ℝ, E]) :\n    dist ω₀ ω₁ =\n      ⨆ e : Effect E, |ω₀ (effectEquiv e) - ω₁ (effectEquiv e)|",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.dist_eq_two_mul_ciSup_sub",
+     "kind": "lemma",
+     "line": 148,
+     "doc": "The state distance is twice the largest state-value difference over all effects.",
+     "statement": "lemma dist_eq_two_mul_ciSup_sub (ω₀ ω₁ : 𝓢[ℝ, E]) :\n    dist ω₀ ω₁ = 2 * ⨆ e : Effect E, (ω₀ e - ω₁ e)",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.optimalSuccessProb_half_half_eq",
+     "kind": "lemma",
+     "line": 154,
+     "doc": "For equal priors, the Helstrom bound is `1/2` plus a quarter of the state distance.",
+     "statement": "lemma optimalSuccessProb_half_half_eq (ω₀ ω₁ : 𝓢[ℝ, E]) :\n    optimalSuccessProb ω₀ ω₁ ⟨1 / 2, by norm_num, by norm_num⟩ = 1 / 2 + dist ω₀ ω₁ / 4",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/ProbabilisticTheory/State/Local.lean",
+   "module": "Physlib.ProbabilisticTheory.State.Local",
+   "title": "States of a local net",
+   "doc": "Compatible subsystem states and states of the whole system.\n\n## i. Overview\n\nAn observable of a smaller subsystem can also be measured in a larger one. A state of the larger\nsubsystem therefore determines a state of the smaller one: assign each smaller observable the\nexpectation it has when viewed in the larger system. This operation is called restriction.\nObservable inclusions point from smaller to larger subsystems, state restrictions point the other\nway.\n\nIn a tensor product system, including an observable means letting it act as the identity on the\nadditional factors. Restricting a density-matrix state then amounts to tracing out those factors.\nA `LocalNet.CompatibleStates` assigns a state to every subsystem, with the requirement that a\nsmaller subsystem's state agrees with the restriction of any larger subsystem's state. Thus the\nexpectation of an observable does not depend on which containing subsystem is used to evaluate\nit.\n\nFor a nonempty directed family, local positivity defines an order on the quasilocal observables.\nEvery compatible family then defines a unique state of the whole system. Conversely, a quasilocal\nstate restricts to a compatible family of subsystem states.\n\n## ii. Key results\n\n- `LocalNet.restrict`: precomposition with the observable inclusion map.\n- `LocalNet.CompatibleStates`: a compatible family of states on the subsystems.\n- `LocalNet.CompatibleStates.compat_apply`: compatible states agree on included observables.\n- `LocalNet.Quasilocal.toState`: the quasilocal state defined by a compatible family.\n- `LocalNet.Quasilocal.stateEquiv`: quasilocal states correspond to compatible local states.\n\n## iii. Table of contents\n\n- A. Restriction of states\n- B. Compatible local states\n- C. States of the whole system\n\n## iv. References",
+   "copyright": "2026 Tom Ole Diem",
+   "sections": [
+    {
+     "line": 61,
+     "text": "## A. Restriction of states"
+    },
+    {
+     "line": 87,
+     "text": "## B. Compatible local states\n\nA compatible family assigns a state to every local subsystem. Whenever one subsystem is contained\nin another, its state must agree with the restriction of the larger subsystem's state. This\nensures that local observables have consistent expectation values, even in infinite systems with\ncorrelations and entanglement."
+    },
+    {
+     "line": 118,
+     "text": "## C. States of the whole system\n\nA quasilocal observable has a local representative. A compatible family evaluates that\nrepresentative in its subsystem; compatibility makes the result independent of the representative."
+    }
+   ],
+   "declarations": [
+    {
+     "name": "ProbabilisticTheory.LocalNet.restrict",
+     "kind": "def",
+     "line": 68,
+     "doc": "Restrict a state of `Y` to `X` by pulling it back along the observable inclusion channel.",
+     "statement": "def restrict (h : X ≤ Y) (ω : 𝓢[ℝ, A Y]) : 𝓢[ℝ, A X]",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.LocalNet.restrict_apply",
+     "kind": "lemma",
+     "line": 72,
+     "doc": "Restriction evaluates an observable through its inclusion into the larger subsystem.",
+     "statement": "lemma restrict_apply (h : X ≤ Y) (ω : 𝓢[ℝ, A Y]) (a : A X) :\n    N.restrict h ω a = ω (N.incl h a)",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.LocalNet.restrict_refl",
+     "kind": "lemma",
+     "line": 77,
+     "doc": "Restriction to the same subsystem is the identity.",
+     "statement": "lemma restrict_refl (ω : 𝓢[ℝ, A X]) : N.restrict (le_refl X) ω = ω",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.LocalNet.restrict_restrict",
+     "kind": "lemma",
+     "line": 82,
+     "doc": "Successive restrictions agree with direct restriction.",
+     "statement": "lemma restrict_restrict (h₁ : X ≤ Y) (h₂ : Y ≤ Z) (h₃ : X ≤ Z) (ω : 𝓢[ℝ, A Z]) :\n    N.restrict h₁ (N.restrict h₂ ω) = N.restrict h₃ ω",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.LocalNet.CompatibleStates",
+     "kind": "structure",
+     "line": 98,
+     "doc": "A state on each subsystem whose restrictions agree with the states of smaller subsystems.",
+     "statement": "structure CompatibleStates (N : LocalNet R A) where\n  /-- The state of the subsystem `X`. -/\n  state : ∀ X, 𝓢[ℝ, A X]\n  /-- The state of `X` is the restriction of the state of any larger subsystem `Y`. -/\n  compat : ∀ {X Y : R} (h : X ≤ Y), N.restrict h (state Y) = state X",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.LocalNet.CompatibleStates.compat_apply",
+     "kind": "lemma",
+     "line": 105,
+     "doc": "An observable has the same expectation in every subsystem containing it.",
+     "statement": "lemma CompatibleStates.compat_apply {N : LocalNet R A} (ω : N.CompatibleStates)\n    {X Y : R} (h : X ≤ Y) (a : A X) :\n    ω.state Y (N.incl h a) = ω.state X a",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 116,
+     "doc": "Decidable equality used internally by the direct-limit construction.",
+     "statement": "noncomputable local instance : DecidableEq R",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.LocalNet.Quasilocal.lift",
+     "kind": "def",
+     "line": 126,
+     "doc": "The expectation functional of `LocalNet.CompatibleStates` on the whole system.",
+     "statement": "noncomputable def lift (σ : N.CompatibleStates) : N.Quasilocal →ₗ[ℝ] ℝ",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.LocalNet.Quasilocal.lift_apply",
+     "kind": "lemma",
+     "line": 136,
+     "doc": "The expectation functional of `LocalNet.CompatibleStates` evaluates a quasilocal observable\nin any subsystem representing it.",
+     "statement": "lemma lift_apply (σ : N.CompatibleStates) (i : R) (a : A i) :\n    lift σ (toQuasilocal N i a) = σ.state i a",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.LocalNet.Quasilocal.toState",
+     "kind": "def",
+     "line": 144,
+     "doc": "The state of the whole system defined by `LocalNet.CompatibleStates`.",
+     "statement": "noncomputable def toState (σ : N.CompatibleStates) : 𝓢[ℝ, N.Quasilocal]",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.LocalNet.Quasilocal.toState_apply",
+     "kind": "lemma",
+     "line": 155,
+     "doc": "On a quasilocal observable represented in the subsystem `i`, `toState σ` is the state of `i`.",
+     "statement": "lemma toState_apply (σ : N.CompatibleStates) (i : R) (a : A i) :\n    toState σ (toQuasilocal N i a) = σ.state i a",
+     "sorry": false
+    },
+    {
+     "name": "ProbabilisticTheory.LocalNet.Quasilocal.stateEquiv",
+     "kind": "def",
+     "line": 160,
+     "doc": "A state of the whole system is the same as `LocalNet.CompatibleStates`.",
+     "statement": "noncomputable def stateEquiv : 𝓢[ℝ, N.Quasilocal] ≃ N.CompatibleStates",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/ProbabilisticTheory/State/Metric.lean",
+   "module": "Physlib.ProbabilisticTheory.State.Metric",
+   "title": "The metric space of states",
+   "doc": "The operator-norm distance between states and their distance to the set of pure states.\n\n## i. Overview\n\nA state is just a positive linear functional — no continuity is assumed. It turns out to be\nautomatically bounded: `|ω A| ≤ ‖A‖`. Physically, a state can never predict\nan expectation value bigger than what the observable itself can read.\n\nThat bound induces a genuine operator-norm distance between states, `dist`, making `𝓢[ℝ, E]` a\n`MetricSpace`. It also defines `distToPure`, the infimum distance to the set of pure states.\n\n## ii. Key results\n\n- `UnitalPositiveLinearMap.abs_apply_le_orderUnitNorm` : a state's values are bounded by the\n  order-unit norm.\n- `UnitalPositiveLinearMap.dist` : the operator-norm distance between states.\n- `UnitalPositiveLinearMap.distToPure` : a state's infimum distance to the set of pure states.\n\n## iii. Table of contents\n\n- A. States are bounded by the order-unit norm\n- B. The state metric\n- C. Distance to pure states\n\n## iv. References",
+   "copyright": "2026 Tom Ole Diem",
+   "sections": [
+    {
+     "line": 53,
+     "text": "## A. States are bounded by the order-unit norm"
+    },
+    {
+     "line": 79,
+     "text": "## B. The state metric"
+    },
+    {
+     "line": 142,
+     "text": "## C. Distance to pure states"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "UnitalPositiveLinearMap.apply_le_one",
+     "kind": "lemma",
+     "line": 60,
+     "doc": "A state takes values at most `1` on observables bounded by the unit.",
+     "statement": "lemma apply_le_one {F : Type*} [OrderUnitSpace F] (ω : 𝓢[ℝ, F]) {A : F} (hA : A ≤ 1) :\n    ω A ≤ 1",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.apply_le_orderUnitNorm",
+     "kind": "lemma",
+     "line": 65,
+     "doc": "A state never overshoots the order-unit norm.",
+     "statement": "lemma apply_le_orderUnitNorm (ω : 𝓢[ℝ, E]) (A : E) : ω A ≤ orderUnitNorm A",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.abs_apply_le_orderUnitNorm",
+     "kind": "lemma",
+     "line": 69,
+     "doc": "A state's values are bounded by the order-unit norm in both directions.",
+     "statement": "lemma abs_apply_le_orderUnitNorm (ω : 𝓢[ℝ, E]) (A : E) : |ω A| ≤ orderUnitNorm A",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.abs_apply_sub_apply_le_two",
+     "kind": "lemma",
+     "line": 75,
+     "doc": "Two states' predictions on any observable of order-unit norm at most `1` never differ by more\nthan `2`.",
+     "statement": "lemma abs_apply_sub_apply_le_two (ω φ : 𝓢[ℝ, E]) {A : E} (hA : orderUnitNorm A ≤ 1) :\n    |ω A - φ A| ≤ 2",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.dist_bddAbove",
+     "kind": "lemma",
+     "line": 87,
+     "doc": "The values `|ω A - φ A|` of two states, restricted to the order-unit-norm unit ball, are\nbounded by `2`.",
+     "statement": "lemma dist_bddAbove (ω φ : 𝓢[ℝ, E]) :\n    BddAbove (Set.range fun A : {A : E // orderUnitNorm A ≤ 1} => |ω A - φ A|)",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.instNonemptyOrderUnitBall",
+     "kind": "instance",
+     "line": 91,
+     "doc": "",
+     "statement": "instance instNonemptyOrderUnitBall : Nonempty {A : E // orderUnitNorm A ≤ 1}",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.dist",
+     "kind": "def",
+     "line": 95,
+     "doc": "The operator-norm distance between two states: how far apart their predictions can get on an\nobservable of order-unit norm at most `1`.",
+     "statement": "noncomputable def dist (ω φ : 𝓢[ℝ, E]) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.dist_nonneg",
+     "kind": "lemma",
+     "line": 99,
+     "doc": "Distances between states are nonnegative.",
+     "statement": "lemma dist_nonneg (ω φ : 𝓢[ℝ, E]) : 0 ≤ dist ω φ",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.dist_le_two",
+     "kind": "lemma",
+     "line": 103,
+     "doc": "The whole state space has diameter at most `2`: it's a bounded metric space.",
+     "statement": "lemma dist_le_two (ω φ : 𝓢[ℝ, E]) : dist ω φ ≤ 2",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.dist_self",
+     "kind": "lemma",
+     "line": 107,
+     "doc": "",
+     "statement": "lemma dist_self (ω : 𝓢[ℝ, E]) : dist ω ω = 0",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.dist_comm",
+     "kind": "lemma",
+     "line": 111,
+     "doc": "The state distance is symmetric.",
+     "statement": "lemma dist_comm (ω φ : 𝓢[ℝ, E]) : dist ω φ = dist φ ω",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.dist_triangle",
+     "kind": "lemma",
+     "line": 115,
+     "doc": "The state distance satisfies the triangle inequality.",
+     "statement": "lemma dist_triangle (ω φ ψ : 𝓢[ℝ, E]) : dist ω ψ ≤ dist ω φ + dist φ ψ",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.eq_of_dist_eq_zero",
+     "kind": "lemma",
+     "line": 120,
+     "doc": "`dist` separates states: two states at distance `0` are equal.",
+     "statement": "lemma eq_of_dist_eq_zero {ω φ : 𝓢[ℝ, E]} (h : dist ω φ = 0) : ω = φ",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.apply_effectEquiv",
+     "kind": "lemma",
+     "line": 130,
+     "doc": "A state's value at a doubled, re-centered effect (`effectEquiv`) is twice its value at\nthe effect, minus one.",
+     "statement": "lemma apply_effectEquiv (ψ : 𝓢[ℝ, E]) (e : Effect E) :\n    ψ (effectEquiv e) = 2 * ψ e - 1",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.instMetricSpace",
+     "kind": "instance",
+     "line": 135,
+     "doc": "States, metrized by the operator norm induced by the order-unit norm on `E`.",
+     "statement": "noncomputable instance instMetricSpace : MetricSpace (𝓢[ℝ, E])",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.distToPure",
+     "kind": "def",
+     "line": 149,
+     "doc": "The infimum distance to the set of pure states, using `Metric.infDist`.",
+     "statement": "noncomputable def distToPure (ω : 𝓢[ℝ, E]) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.distToPure_nonneg",
+     "kind": "lemma",
+     "line": 153,
+     "doc": "The distance to the set of pure states is nonnegative.",
+     "statement": "lemma distToPure_nonneg (ω : 𝓢[ℝ, E]) : 0 ≤ distToPure ω",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.distToPure_eq_zero_of_isPure",
+     "kind": "lemma",
+     "line": 157,
+     "doc": "A pure state is at distance `0` from the set of pure states.",
+     "statement": "lemma distToPure_eq_zero_of_isPure {ω : 𝓢[ℝ, E]} (h : IsPure ω) : distToPure ω = 0",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/ProbabilisticTheory/State/Pairing.lean",
+   "module": "Physlib.ProbabilisticTheory.State.Pairing",
+   "title": "The state–effect pairing",
+   "doc": "State–effect evaluation gives probabilities and separates both states and effects.\n\n## i. Overview\n\nStates and effects are paired by evaluation, `(ω, e) ↦ ω e ∈ [0, 1]`. This pairing is affine in\nboth arguments. It also separates both spaces: a state is determined by its values on all\neffects, and an effect is determined by its values under all states. Moreover, the distance\nbetween two effects is the largest difference in probability that they can produce over all\nstates.\n\nThus states and effects admit faithful representations as probability-valued functions on one\nanother.\n\n## ii. Key results\n\n- `UnitalPositiveLinearMap.apply_mem_Icc` : state–effect evaluation takes values in `[0, 1]`.\n- `UnitalPositiveLinearMap.apply_mix` : evaluation is affine in the effect argument.\n- `UnitalPositiveLinearMap.ext_of_effect_eq` : effects separate states.\n- `Effect.dist_eq_sSup_abs_apply` : effect distance is determined by state evaluations.\n- `Effect.ext_of_forall_apply_eq` : states separate effects.\n- `UnitalPositiveLinearMap.injective_apply_effect` : states embed into functions on effects.\n- `Effect.injective_apply_state` : effects embed into functions on states.\n\n## iii. Table of contents\n\n- A. State–effect evaluation\n- B. Effects separate states\n- C. States separate effects\n\n## iv. References",
+   "copyright": "2026 Tom Ole Diem",
+   "sections": [
+    {
+     "line": 59,
+     "text": "## A. State–effect evaluation"
+    },
+    {
+     "line": 74,
+     "text": "## B. Effects separate states"
+    },
+    {
+     "line": 106,
+     "text": "## C. States separate effects"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "UnitalPositiveLinearMap.apply_mem_Icc",
+     "kind": "lemma",
+     "line": 66,
+     "doc": "State–effect evaluation takes values in `[0, 1]`.",
+     "statement": "lemma apply_mem_Icc (ω : 𝓢[ℝ, E]) (e : Effect E) : ω e ∈ Set.Icc 0 1",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.apply_mix",
+     "kind": "lemma",
+     "line": 70,
+     "doc": "Evaluation is affine in the effect argument.",
+     "statement": "lemma apply_mix (ω : 𝓢[ℝ, E]) (e f : Effect E) (t : unitInterval) :\n    ω (Effect.mix e f t) = (t : ℝ) * ω e + (1 - (t : ℝ)) * ω f",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.ext_of_effect_eq_of_nonneg",
+     "kind": "lemma",
+     "line": 81,
+     "doc": "Two states that agree on all effects agree on every nonnegative element.",
+     "statement": "lemma ext_of_effect_eq_of_nonneg {ω φ : 𝓢[ℝ, E]}\n    (h : ∀ e : Effect E, ω e = φ e) {B : E} (hB : 0 ≤ B) : ω B = φ B",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.ext_of_effect_eq",
+     "kind": "lemma",
+     "line": 87,
+     "doc": "A state is determined by its values on effects.",
+     "statement": "lemma ext_of_effect_eq {ω φ : 𝓢[ℝ, E]}\n    (h : ∀ e : Effect E, ω e = φ e) : ω = φ",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.injective_apply_effect",
+     "kind": "lemma",
+     "line": 94,
+     "doc": "Evaluation on effects is injective on states.",
+     "statement": "lemma injective_apply_effect :\n    Function.Injective (fun (ω : 𝓢[ℝ, E]) (e : Effect E) => ω e)",
+     "sorry": false
+    },
+    {
+     "name": "Effect.dist_eq_sSup_abs_apply",
+     "kind": "lemma",
+     "line": 114,
+     "doc": "The distance between two effects is the supremum of the difference in their evaluations over\nall states.",
+     "statement": "lemma dist_eq_sSup_abs_apply [Nontrivial E] (e f : Effect E) :\n    Dist.dist e f = sSup (Set.range fun ω : 𝓢[ℝ, E] => |ω e - ω f|)",
+     "sorry": false
+    },
+    {
+     "name": "Effect.ext_of_forall_apply_eq",
+     "kind": "lemma",
+     "line": 120,
+     "doc": "An effect is determined by its values under all states.",
+     "statement": "lemma ext_of_forall_apply_eq {e f : Effect E}\n    (h : ∀ ω : 𝓢[ℝ, E], ω e = ω f) : e = f",
+     "sorry": false
+    },
+    {
+     "name": "Effect.injective_apply_state",
+     "kind": "lemma",
+     "line": 125,
+     "doc": "Evaluation by states is injective on effects.",
+     "statement": "lemma injective_apply_state :\n    Function.Injective (fun (e : Effect E) (ω : 𝓢[ℝ, E]) => ω e)",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/ProbabilisticTheory/State/Separation.lean",
+   "module": "Physlib.ProbabilisticTheory.State.Separation",
+   "title": "Separation by states",
+   "doc": "States determine positivity, the order-unit norm, and equality of observables.\n\n## i. Overview\n\nIn an Archimedean order-unit space, states determine the entire ordered normed structure. An\nelement is positive exactly when every state assigns it a nonnegative value, and its order-unit\nnorm is `‖A‖₁ = sup { |ω A| : ω a state }`. Consequently, states separate points: two elements are\nequal whenever every state assigns them the same value.\n\nThe main ingredient is Hahn–Banach separation of a point from the positive cone. Applied to an\nelement `A ≱ 0`, it produces a state `ω` with `ω A < 0`. Everything else follows from this one\nseparation fact.\n\n## ii. Key results\n\n- `UnitalPositiveLinearMap.exists_apply_neg_of_not_nonneg` : every element outside the positive\n  cone is separated from it by a state.\n- `UnitalPositiveLinearMap.nonneg_iff_forall_state_nonneg` : states determine the positive cone.\n- `UnitalPositiveLinearMap.sSup_abs_apply_eq_orderUnitNorm` : states determine the order-unit norm.\n- `UnitalPositiveLinearMap.ext_of_forall_apply_eq` : states separate points.\n\n## iii. Table of contents\n\n- A. Separating points from the cone\n- B. The positive cone\n- C. The order-unit norm\n- D. Separation of points\n\n## iv. References",
+   "copyright": "2026 Tom Ole Diem",
+   "sections": [
+    {
+     "line": 56,
+     "text": "## A. Separating points from the cone"
+    },
+    {
+     "line": 81,
+     "text": "## B. The positive cone"
+    },
+    {
+     "line": 94,
+     "text": "## C. The order-unit norm"
+    },
+    {
+     "line": 130,
+     "text": "## D. Separation of points"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "UnitalPositiveLinearMap.apply_eq_zero_of_apply_one_eq_zero",
+     "kind": "lemma",
+     "line": 63,
+     "doc": "A positive functional vanishing at the order unit vanishes everywhere.",
+     "statement": "lemma apply_eq_zero_of_apply_one_eq_zero [OrderUnitSpace E] {p : E →ₚ[ℝ] ℝ}\n    (h1 : p (1 : E) = 0) (A : E) : p A = 0",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.exists_apply_neg_of_not_nonneg",
+     "kind": "lemma",
+     "line": 72,
+     "doc": "Every element outside the positive cone is strictly separated from it by a state.",
+     "statement": "lemma exists_apply_neg_of_not_nonneg {A : E} (hA : ¬ 0 ≤ A) : ∃ ω : 𝓢[ℝ, E], ω A < 0",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.nonneg_iff_forall_state_nonneg",
+     "kind": "lemma",
+     "line": 88,
+     "doc": "An element is positive iff every state assigns it a nonnegative value.",
+     "statement": "lemma nonneg_iff_forall_state_nonneg (A : E) : 0 ≤ A ↔ ∀ ω : 𝓢[ℝ, E], 0 ≤ ω A",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.instNonemptyState",
+     "kind": "instance",
+     "line": 101,
+     "doc": "Every nontrivial Archimedean order-unit space has a state.",
+     "statement": "instance instNonemptyState [Nontrivial E] : Nonempty (𝓢[ℝ, E])",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.orderUnitNorm_le_iff_forall_abs_apply_le",
+     "kind": "lemma",
+     "line": 109,
+     "doc": "The order-unit norm is at most `r` iff every state predicts an absolute value at most `r`.",
+     "statement": "lemma orderUnitNorm_le_iff_forall_abs_apply_le [Nontrivial E] (A : E) (r : ℝ) :\n    orderUnitNorm A ≤ r ↔ ∀ ω : 𝓢[ℝ, E], |ω A| ≤ r",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.sSup_abs_apply_eq_orderUnitNorm",
+     "kind": "lemma",
+     "line": 119,
+     "doc": "The order-unit norm is the supremum of `|ω A|` over all states `ω`.",
+     "statement": "lemma sSup_abs_apply_eq_orderUnitNorm [Nontrivial E] (A : E) :\n    sSup (Set.range fun ω : 𝓢[ℝ, E] => |ω A|) = orderUnitNorm A",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.orderUnitNorm_one",
+     "kind": "lemma",
+     "line": 127,
+     "doc": "The order unit has norm exactly `1`.",
+     "statement": "lemma orderUnitNorm_one [Nontrivial E] : orderUnitNorm (1 : E) = 1",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.ext_of_forall_apply_eq",
+     "kind": "lemma",
+     "line": 137,
+     "doc": "States separate points: if `ω A = ω B` for every state `ω`, then `A = B`.",
+     "statement": "lemma ext_of_forall_apply_eq {A B : E} (h : ∀ ω : 𝓢[ℝ, E], ω A = ω B) : A = B",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/ProbabilisticTheory/State/WeightEquivalence.lean",
+   "module": "Physlib.ProbabilisticTheory.State.WeightEquivalence",
+   "title": "Equivalence between states and finite normalized weights",
+   "doc": "Finite normalized weights correspond exactly to positive unital linear functionals.\n\n## i. Overview\n\nA state is, on its own terms, a normalized positive linear functional — `𝓢[ℝ, E]`, already fully\nbuilt in `State/Basic.lean`. It is not *defined* as a weight; the two are independent notions, and\nthe correspondence between them is a genuine theorem.\n\n## ii. Key results\n\n- `Weight.stateEquiv` : finite normalized weights correspond exactly to states.\n\n## iii. Table of contents\n\n- A. From a normalized weight to a state\n- B. From a state to a weight\n- C. The equivalence\n\n## iv. References",
+   "copyright": "2026 Tom Ole Diem",
+   "sections": [
+    {
+     "line": 47,
+     "text": "## A. From a normalized weight to a state"
+    },
+    {
+     "line": 72,
+     "text": "## B. From a state to a weight"
+    },
+    {
+     "line": 105,
+     "text": "## C. The equivalence"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "Weight.IsState.toState",
+     "kind": "def",
+     "line": 56,
+     "doc": "A finite normalized weight extends to a state.",
+     "statement": "noncomputable def toState (hw : w.IsState) : 𝓢[ℝ, E]",
+     "sorry": false
+    },
+    {
+     "name": "Weight.IsState.toState_apply",
+     "kind": "lemma",
+     "line": 63,
+     "doc": "The extended state agrees with the weight on positive observables.",
+     "statement": "lemma toState_apply (hw : w.IsState) (A : PosCone E) : hw.toState A = (w A).toReal",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.toWeight",
+     "kind": "def",
+     "line": 80,
+     "doc": "The weight induced by a state: `ENNReal.ofReal` applied to the state's values on the positive\ncone, where they are automatically nonnegative.",
+     "statement": "noncomputable def toWeight (s : 𝓢[ℝ, E]) : Weight E",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.toWeight_apply",
+     "kind": "lemma",
+     "line": 88,
+     "doc": "",
+     "statement": "lemma toWeight_apply (s : 𝓢[ℝ, E]) (A : PosCone E) : s.toWeight A = ENNReal.ofReal (s (A : E))",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.toReal_toWeight_apply",
+     "kind": "lemma",
+     "line": 92,
+     "doc": "The weight induced by a state agrees with the state itself on the positive cone.",
+     "statement": "lemma toReal_toWeight_apply (s : 𝓢[ℝ, E]) (A : PosCone E) :\n    (s.toWeight A).toReal = s (A : E)",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPositiveLinearMap.toWeight_isState",
+     "kind": "lemma",
+     "line": 97,
+     "doc": "The weight induced by a state is finite and normalized.",
+     "statement": "lemma toWeight_isState (s : 𝓢[ℝ, E]) : s.toWeight.IsState",
+     "sorry": false
+    },
+    {
+     "name": "Weight.stateEquiv",
+     "kind": "def",
+     "line": 112,
+     "doc": "Finite normalized weights correspond exactly to states.",
+     "statement": "noncomputable def stateEquiv : {w : Weight E // w.IsState} ≃ 𝓢[ℝ, E]",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/ProbabilisticTheory/Weight/Basic.lean",
+   "module": "Physlib.ProbabilisticTheory.Weight.Basic",
+   "title": "Weights",
+   "doc": "## i. Overview\n\nA state assigns each positive observable a nonnegative expectation value, normalized so the\ncertain outcome reads exactly `1`. A *weight* generalizes this by dropping the normalization and\nletting the values be extended nonnegative reals, possibly `+∞`. This matters especially in\ninfinite dimensions: the trace on `B(H)` is only finite on the trace-class operators and genuinely\ndiverges to `+∞` elsewhere. A state is then the special case that happens to be finite everywhere\nand normalized.\n\n## ii. Key results\n\n- `Weight.monotone` : weights are monotone on the positive cone.\n- `Weight.IsFinite.isSemifinite` : a finite weight is automatically semifinite.\n- `Weight.IsFinite.normalize_isState` : rescaling a finite weight that's nonzero at the order unit\n  turns it into a state.\n\n## iii. Table of contents\n\n- A. Weights\n- B. States as weights\n\n## iv. References\n\n- G. Ludwig, *Foundations of Quantum Mechanics I*, Springer, 1983.\n  <https://link.springer.com/book/10.1007/978-3-642-86751-4>",
+   "copyright": "2026 Tom Ole Diem",
+   "sections": [
+    {
+     "line": 47,
+     "text": "## A. Weights"
+    },
+    {
+     "line": 101,
+     "text": "## B. States as weights"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "Weight",
+     "kind": "abbrev",
+     "line": 54,
+     "doc": "An extended nonnegative linear functional on the positive cone.",
+     "statement": "abbrev Weight (E : Type*) [OrderedVectorSpace E]",
+     "sorry": false
+    },
+    {
+     "name": "Weight.IsFaithful",
+     "kind": "def",
+     "line": 63,
+     "doc": "Only the zero positive element has weight zero.",
+     "statement": "def IsFaithful (w : Weight E) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "Weight.IsFinite",
+     "kind": "def",
+     "line": 66,
+     "doc": "A weight has no infinite values.",
+     "statement": "def IsFinite (w : Weight E) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "Weight.IsSemifinite",
+     "kind": "def",
+     "line": 69,
+     "doc": "A weight is the supremum of its finite values below each positive element.",
+     "statement": "def IsSemifinite (w : Weight E) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "Weight.monotone",
+     "kind": "lemma",
+     "line": 73,
+     "doc": "Weights are monotone on the positive cone.",
+     "statement": "lemma monotone (w : Weight E) : Monotone w",
+     "sorry": false
+    },
+    {
+     "name": "Weight.IsFinite.isSemifinite",
+     "kind": "lemma",
+     "line": 81,
+     "doc": "A finite weight is semifinite.",
+     "statement": "lemma IsFinite.isSemifinite {w : Weight E} (hw : w.IsFinite) : w.IsSemifinite",
+     "sorry": false
+    },
+    {
+     "name": "Weight.IsFinite.toReal_map_add",
+     "kind": "lemma",
+     "line": 85,
+     "doc": "A finite weight's real value is additive.",
+     "statement": "lemma IsFinite.toReal_map_add {w : Weight E} (hw : w.IsFinite) (A B : PosCone E) :\n    (w (A + B)).toReal = (w A).toReal + (w B).toReal",
+     "sorry": false
+    },
+    {
+     "name": "Weight.toReal_map_nnreal_smul",
+     "kind": "lemma",
+     "line": 90,
+     "doc": "A weight's real value scales linearly under nonnegative real scaling.",
+     "statement": "lemma toReal_map_nnreal_smul (w : Weight E) (k : ℝ≥0) (A : PosCone E) :\n    (w (k • A)).toReal = k * (w A).toReal",
+     "sorry": false
+    },
+    {
+     "name": "Weight.IsNormal",
+     "kind": "def",
+     "line": 96,
+     "doc": "A weight is normal when it preserves least upper bounds of increasing sequences in the\npositive cone.",
+     "statement": "def IsNormal (w : Weight E) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "Weight.IsState",
+     "kind": "structure",
+     "line": 112,
+     "doc": "A weight that's finite everywhere and gives the certain outcome weight exactly `1`.",
+     "statement": "structure IsState (w : Weight E) : Prop where\n  /-- A state is finite everywhere. -/\n  finite : w.IsFinite\n  /-- A state gives the certain outcome weight exactly `1`. -/\n  normalized : w 1 = 1",
+     "sorry": false
+    },
+    {
+     "name": "Weight.normalize",
+     "kind": "def",
+     "line": 119,
+     "doc": "Rescale a weight by the inverse of its value at the order unit.",
+     "statement": "noncomputable def normalize (w : Weight E) : Weight E",
+     "sorry": false
+    },
+    {
+     "name": "Weight.normalize_apply",
+     "kind": "lemma",
+     "line": 124,
+     "doc": "",
+     "statement": "lemma normalize_apply (w : Weight E) (A : PosCone E) :\n    normalize w A = (w 1)⁻¹ * w A",
+     "sorry": false
+    },
+    {
+     "name": "Weight.IsFinite.normalize_isFinite",
+     "kind": "lemma",
+     "line": 128,
+     "doc": "Normalizing a finite weight that's nonzero at the order unit keeps it finite.",
+     "statement": "lemma IsFinite.normalize_isFinite {w : Weight E} (hw : w.IsFinite) (h : w 1 ≠ 0) :\n    (normalize w).IsFinite",
+     "sorry": false
+    },
+    {
+     "name": "Weight.IsFinite.normalize_isState",
+     "kind": "lemma",
+     "line": 134,
+     "doc": "Normalizing a finite weight that's nonzero at the order unit makes it a state: the order unit\nis scaled to weight exactly `1`.",
+     "statement": "lemma IsFinite.normalize_isState {w : Weight E} (hw : w.IsFinite) (h : w 1 ≠ 0) :\n    (normalize w).IsState",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/ProbabilisticTheory/Weight/Extension.lean",
+   "module": "Physlib.ProbabilisticTheory.Weight.Extension",
+   "title": "Extending finite weights",
+   "doc": "## i. Overview\n\nAn `ℝ≥0`-linear map on the positive cone extends uniquely to an `ℝ`-linear map on the whole space\nas soon as every element is a difference `P - Q` of positive elements: send `P - Q` to\n`f P - f Q`. In an order-unit space every element is such a difference, so a finite weight extends\nto a positive linear functional.\n\n## ii. Key results\n\n- `PosCone.extend` : the `ℝ`-linear extension of an `ℝ≥0`-linear map on the positive cone.\n- `Weight.IsFinite.toLinearMap` : the `ℝ`-linear map extending a finite weight to all of `E`.\n\n## iii. Table of contents\n\n- A. Extension from the positive cone\n- B. Extending finite weights\n\n## iv. References",
+   "copyright": "2026 Tom Ole Diem",
+   "sections": [
+    {
+     "line": 40,
+     "text": "## A. Extension from the positive cone"
+    },
+    {
+     "line": 106,
+     "text": "## B. Extending finite weights"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "PosCone.coe_nnreal_smul",
+     "kind": "lemma",
+     "line": 51,
+     "doc": "",
+     "statement": "lemma coe_nnreal_smul (t : ℝ≥0) (P : PosCone E) : ((t • P : PosCone E) : E) = (t : ℝ) • (P : E)",
+     "sorry": false
+    },
+    {
+     "name": "PosCone.map_sub_eq_map_sub",
+     "kind": "lemma",
+     "line": 55,
+     "doc": "`P - Q ↦ f P - f Q` does not depend on how an element is written as a difference.",
+     "statement": "lemma map_sub_eq_map_sub {P Q P' Q' : PosCone E} (h : (P : E) - Q = P' - Q') :\n    f P - f Q = f P' - f Q'",
+     "sorry": false
+    },
+    {
+     "name": "PosCone.exists_sub",
+     "kind": "lemma",
+     "line": 62,
+     "doc": "In an order unit space, every element is a difference of positive elements.",
+     "statement": "lemma exists_sub (A : E) : ∃ P Q : PosCone E, (P : E) - Q = A",
+     "sorry": false
+    },
+    {
+     "name": "PosCone.extendFun",
+     "kind": "def",
+     "line": 67,
+     "doc": "The value of the extension, computed from a chosen decomposition `A = P - Q`.",
+     "statement": "noncomputable def extendFun (A : E) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "PosCone.extendFun_eq",
+     "kind": "lemma",
+     "line": 70,
+     "doc": "",
+     "statement": "lemma extendFun_eq {A : E} {P Q : PosCone E} (h : (P : E) - Q = A) :\n    extendFun f A = f P - f Q",
+     "sorry": false
+    },
+    {
+     "name": "PosCone.extend",
+     "kind": "def",
+     "line": 75,
+     "doc": "The `ℝ`-linear extension of an `ℝ≥0`-linear map on an order unit space's positive cone.",
+     "statement": "noncomputable def extend : E →ₗ[ℝ] ℝ",
+     "sorry": false
+    },
+    {
+     "name": "PosCone.extend_apply",
+     "kind": "lemma",
+     "line": 97,
+     "doc": "",
+     "statement": "lemma extend_apply {P Q : PosCone E} : extend f ((P : E) - Q) = f P - f Q",
+     "sorry": false
+    },
+    {
+     "name": "PosCone.extend_coe",
+     "kind": "lemma",
+     "line": 101,
+     "doc": "",
+     "statement": "lemma extend_coe (P : PosCone E) : extend f (P : E) = f P",
+     "sorry": false
+    },
+    {
+     "name": "Weight.IsFinite.toReal",
+     "kind": "def",
+     "line": 119,
+     "doc": "A finite weight, read as a real-valued `ℝ≥0`-linear map on the positive cone.",
+     "statement": "noncomputable def IsFinite.toReal (hw : w.IsFinite) : PosCone E →ₗ[ℝ≥0] ℝ",
+     "sorry": false
+    },
+    {
+     "name": "Weight.IsFinite.toReal_apply",
+     "kind": "lemma",
+     "line": 125,
+     "doc": "",
+     "statement": "lemma IsFinite.toReal_apply (hw : w.IsFinite) (A : PosCone E) : hw.toReal A = (w A).toReal",
+     "sorry": false
+    },
+    {
+     "name": "Weight.IsFinite.toLinearMap",
+     "kind": "def",
+     "line": 134,
+     "doc": "The `ℝ`-linear map extending a finite weight.",
+     "statement": "noncomputable def IsFinite.toLinearMap (hw : w.IsFinite) : E →ₗ[ℝ] ℝ",
+     "sorry": false
+    },
+    {
+     "name": "Weight.IsFinite.toLinearMap_coe",
+     "kind": "lemma",
+     "line": 138,
+     "doc": "",
+     "statement": "lemma IsFinite.toLinearMap_coe (hw : w.IsFinite) (A : PosCone E) :\n    hw.toLinearMap (A : E) = (w A).toReal",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  }
+ ]
+}

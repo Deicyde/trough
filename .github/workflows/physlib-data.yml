@@ -1,0 +1,312 @@
+# Reads Physlib at the commit data/physlib/source.json pins
+# (tools/refresh_physlib.py): each module's docstrings and declarations, read
+# from the source without Lean, the API maps, the significant results
+# scripts/lint/exemptions/Theorems.txt lists and the README's words on the
+# project. Then, with the repository's build cache and Mathlib's,
+# lean/physlib/PhyslibDeps.lean reads which modules each module's statements
+# and proofs use, and which of the names read from the source Lean has. The
+# pages are then regenerated from that data.
+#
+# A push that changes the reader or the data runs it too, so the committed data
+# always match the pin. The weekly run, or a dispatch with "newest", moves the
+# pin to the newest master commit whose build passed and whose build cache was
+# published. On main, the commit job records the data and the pages, then
+# starts the Pages and Tests workflows. On a pull request the run fails when the
+# committed data differ from what the pin gives, and keeps a patch.
+
+name: Physlib data
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "lean/physlib/**"
+      - "tools/refresh_physlib.py"
+      - "tools/trough/physlib.py"
+      - "tools/trough/leansource.py"
+      - "tools/trough/stacks.py"
+      - "tools/trough/ff.py"
+      - "tools/trough/formalization.py"
+      - "tools/trough/formal_conjectures.py"
+      - "tools/trough/tex.py"
+      - "tools/trough/blueprints.py"
+      - "tools/trough/bibtex.py"
+      - "tools/trough/leanblueprint.py"
+      - "tools/trough/mathlib.py"
+      - "tools/trough/wiki.py"
+      - "tools/trough/catalog.py"
+      - "tools/trough/vault.py"
+      - "data/physlib/**"
+      - ".github/workflows/physlib-data.yml"
+  pull_request:
+    paths:
+      - "lean/physlib/**"
+      - "tools/refresh_physlib.py"
+      - "tools/trough/physlib.py"
+      - "tools/trough/leansource.py"
+      - "tools/trough/stacks.py"
+      - "tools/trough/ff.py"
+      - "tools/trough/formalization.py"
+      - "tools/trough/formal_conjectures.py"
+      - "tools/trough/tex.py"
+      - "tools/trough/blueprints.py"
+      - "tools/trough/bibtex.py"
+      - "tools/trough/leanblueprint.py"
+      - "tools/trough/mathlib.py"
+      - "tools/trough/wiki.py"
+      - "tools/trough/catalog.py"
+      - "tools/trough/vault.py"
+      - "data/physlib/**"
+      - ".github/workflows/physlib-data.yml"
+  workflow_dispatch:
+    inputs:
+      newest:
+        description: Pin the newest Physlib commit whose build passed
+        type: boolean
+        default: false
+  schedule:
+    - cron: "53 6 * * 4"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: physlib-data-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  refresh:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    outputs:
+      changed: ${{ steps.compare.outputs.changed }}
+      rev: ${{ steps.pin.outputs.rev }}
+      sha: ${{ steps.head.outputs.sha }}
+    steps:
+      # Outside pull requests, read the branch as it is now rather than the
+      # commit that started the run.
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.event_name != 'pull_request' && github.ref || '' }}
+          persist-credentials: false
+
+      - name: Record the commit this run reads
+        id: head
+        run: echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9 # v9.0.0
+        with:
+          version: "0.12.1"
+
+      # The newest commit whose build passed and whose build cache was
+      # published, so that the Lean step below compiles nothing.
+      - name: Choose the Physlib commit
+        id: pin
+        env:
+          GH_TOKEN: ${{ github.token }}
+          NEWEST: ${{ github.event_name == 'schedule' || inputs.newest }}
+        run: |
+          set -euo pipefail
+          rev=$(jq -r '.rev // empty' data/physlib/source.json 2>/dev/null || true)
+          if [ "$NEWEST" = true ] || [ -z "$rev" ]; then
+            runs="repos/leanprover-community/physlib/actions/workflows"
+            query="runs?branch=master&event=push&status=success&per_page=50"
+            built=$(gh api "$runs/build.yml/$query" --jq '.workflow_runs[].head_sha')
+            cached=$(gh api "$runs/publish-cache.yml/$query" --jq '.workflow_runs[].head_sha')
+            rev=$(grep -Fxf <(echo "$cached") <(echo "$built") | head -n 1)
+          fi
+          if [ -z "$rev" ]; then
+            echo "::error::No Physlib commit whose build passed and whose cache was published."
+            exit 1
+          fi
+          echo "Physlib $rev"
+          echo "rev=$rev" >> "$GITHUB_OUTPUT"
+
+      - name: Fetch Physlib at that commit
+        env:
+          REV: ${{ steps.pin.outputs.rev }}
+        run: |
+          set -euo pipefail
+          dir="$RUNNER_TEMP/physlib"
+          git init --quiet "$dir"
+          git -C "$dir" fetch --quiet --depth 1 https://github.com/leanprover-community/physlib.git "$REV"
+          git -C "$dir" checkout --quiet FETCH_HEAD
+          du -sh "$dir"
+
+      - name: Read the modules
+        run: uv run --no-dev python tools/refresh_physlib.py "$RUNNER_TEMP/physlib"
+
+      - name: Install elan v4.2.4
+        run: |
+          set -euo pipefail
+          installer_dir="${RUNNER_TEMP}/elan-installer"
+          archive="${installer_dir}/elan-x86_64-unknown-linux-gnu.tar.gz"
+          mkdir -p "$installer_dir"
+          curl --fail --silent --show-error --location \
+            --proto '=https' --tlsv1.2 \
+            https://github.com/leanprover/elan/releases/download/v4.2.4/elan-x86_64-unknown-linux-gnu.tar.gz \
+            --output "$archive"
+          echo "42b94d4244e8353142c456ec0e4ca6528fd898a6c604d4059f494e706e431f63  $archive" \
+            | sha256sum --check --strict
+          tar xzf "$archive" -C "$installer_dir"
+          "$installer_dir/elan-init" -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+
+      # Physlib's own build outputs come from its public cache (lake-cache.toml),
+      # a scope for Physlib and QuantumInfo and one for PhyslibAlpha, as its
+      # build workflow fetches them; `lake build` then compiles only what both
+      # caches miss.
+      - name: Fetch the build caches
+        working-directory: ${{ runner.temp }}/physlib
+        env:
+          LAKE_CACHE_DIR: .lake/cache
+          LAKE_CONFIG: ${{ runner.temp }}/physlib/lake-cache.toml
+        run: |
+          set -euo pipefail
+          lake exe cache get
+          scope="physlib-master/$(tr '/:' '--' < lean-toolchain | tr -d '[:space:]')"
+          lake cache get --scope="$scope/physlib"
+          # The two scopes share Lake's local copy of the revision mappings.
+          rm -rf "$LAKE_CACHE_DIR/revisions/Physlib"
+          lake cache get --scope="$scope/alpha"
+
+      - name: Build the libraries
+        working-directory: ${{ runner.temp }}/physlib
+        env:
+          LAKE_CACHE_DIR: .lake/cache
+        run: |
+          set -euo pipefail
+          /usr/bin/time -v lake build Physlib QuantumInfo PhyslibAlpha 2>&1 | tail -n 30
+
+      # The script runs below an import of every module of the three libraries.
+      - name: Read the dependencies
+        working-directory: ${{ runner.temp }}/physlib
+        env:
+          TROUGH_NAMES: ${{ runner.temp }}/names.txt
+          TROUGH_OUT: ${{ github.workspace }}/data/physlib/deps.json
+          TROUGH_PHYSLIB_REV: ${{ steps.pin.outputs.rev }}
+        run: |
+          set -euo pipefail
+          jq -r '.modules[].declarations[].name | select(. != "")' "$GITHUB_WORKSPACE"/data/physlib/modules/*.json \
+            | LC_ALL=C sort -u > "$TROUGH_NAMES"
+          wc -l < "$TROUGH_NAMES"
+          find Physlib PhyslibAlpha QuantumInfo -name '*.lean' | LC_ALL=C sort \
+            | sed 's|\.lean$||; s|/|.|g; s|^|import |' > "$RUNNER_TEMP/imports.lean"
+          wc -l < "$RUNNER_TEMP/imports.lean"
+          cat "$RUNNER_TEMP/imports.lean" "$GITHUB_WORKSPACE/lean/physlib/PhyslibDeps.lean" > TroughPhyslibDeps.lean
+          /usr/bin/time -v lake env lean TroughPhyslibDeps.lean
+
+      - name: Regenerate the pages
+        run: uv run --no-dev python tools/generate.py
+
+      - name: Run the tests on the new data
+        run: uv run pytest -q
+
+      - name: Compare with the committed data
+        id: compare
+        run: |
+          git add -A data/physlib blueprint hooks/lean-links.json
+          if git diff --cached --quiet; then
+            echo "The committed data are what the pin gives."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git diff --cached --stat | tail -n 20
+          git diff --cached --binary > physlib-data.patch
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+          if [ "$GITHUB_EVENT_NAME" = pull_request ]; then
+            base=$(git cat-file -p HEAD | sed -n 's/^parent //p' | head -n 1)
+            echo "::error::The committed data differ from what the pin gives. Merge main and apply the patch: git fetch origin ${base} && git merge --no-edit ${base} && gh run download ${GITHUB_RUN_ID} -R ${GITHUB_REPOSITORY} -n physlib-data && git apply physlib-data.patch"
+            exit 1
+          fi
+
+      - name: Keep the patch
+        if: always() && steps.compare.outputs.changed == 'true'
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: physlib-data
+          path: physlib-data.patch
+          retention-days: 14
+
+      - name: Keep the data for the commit job
+        if: steps.compare.outputs.changed == 'true' && github.event_name != 'pull_request'
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: physlib-data-files
+          path: data/physlib/
+          retention-days: 14
+
+  # Records the data in the newest main, regenerating the pages with main's
+  # generator, as the other data workflows do. Only a change to data/physlib
+  # meanwhile wins: that push's run records the data.
+  commit:
+    needs: refresh
+    if: >-
+      needs.refresh.outputs.changed == 'true' &&
+      github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      actions: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+
+      - name: Fetch the data
+        uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: physlib-data-files
+          path: ${{ runner.temp }}/data
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9 # v9.0.0
+        with:
+          version: "0.12.1"
+
+      - name: Commit the data and pages
+        env:
+          REV: ${{ needs.refresh.outputs.rev }}
+          READ: ${{ needs.refresh.outputs.sha }}
+          GIT_AUTHOR_NAME: github-actions[bot]
+          GIT_AUTHOR_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+          GIT_COMMITTER_NAME: github-actions[bot]
+          GIT_COMMITTER_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+        run: |
+          set -euo pipefail
+          # The artifact keeps the files without their common folder, data/physlib.
+          src="$RUNNER_TEMP/data"
+          if (cd "$src" && find . -type f | sed 's|^\./||') | grep -vE '^(source|api-maps|deps)\.json$|^modules/[A-Za-z]+(\.[A-Za-z0-9]+)?\.json$'; then
+            echo "::error::The data artifact holds the files listed above."
+            exit 1
+          fi
+          for attempt in 1 2 3; do
+            git fetch --quiet origin main
+            git reset --quiet --hard origin/main
+            if ! git diff --quiet "$READ" HEAD -- data/physlib; then
+              echo "::notice::main has changed data/physlib since ${READ:0:8}; that push's run records the data."
+              exit 0
+            fi
+            git rm --quiet -r --ignore-unmatch data/physlib/modules
+            mkdir -p data/physlib
+            cp -R "$src"/. data/physlib/
+            uv run --no-dev python tools/generate.py
+            git add -A data/physlib blueprint hooks/lean-links.json
+            if git diff --cached --quiet; then
+              echo "main already has this data."
+              exit 0
+            fi
+            git commit --quiet -m "Physlib data at ${REV:0:8}"
+            if git push --quiet origin HEAD:main; then
+              exit 0
+            fi
+          done
+          exit 1
+
+      - name: Rebuild the site and run the tests
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh workflow run pages.yml --ref main -R "$GITHUB_REPOSITORY"
+          gh workflow run tests.yml --ref main -R "$GITHUB_REPOSITORY"

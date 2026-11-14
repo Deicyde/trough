@@ -26,7 +26,7 @@ from pathlib import Path
 
 from collections import Counter
 
-from trough import anthropic_flt, atlas, blueprints, catalog, cfsg, ff, formal_conjectures, lean_pool, links, mathlib, openai_math, stacks, tauceti, wiki
+from trough import anthropic_flt, atlas, blueprints, catalog, cfsg, ff, formal_conjectures, lean_pool, links, mathlib, openai_math, physlib, stacks, tauceti, wiki
 from trough.vault import Leaf, assign_paths, render_tree, walk
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -268,6 +268,26 @@ def generate() -> dict[Path, str]:
             f"{om['formalized']} families with Lean, {om['statements']} statements, {om['proved']} proved in a file read",
             file=sys.stderr,
         )
+    physlib_data = physlib.load(DATA)
+    if physlib_data:
+        physlib_built, physlib_links = physlib.chapter(physlib_data, tau_root)
+        assign_paths(physlib_built.root, ROADMAP / "physlib")
+        blueprints.resolve(physlib_built, VAULT)
+        files.update(render_tree(physlib_built.root, VAULT))
+        chapters["physlib"] = "physlib/README.md"
+        lean_links["physlib"] = physlib_links
+        ph = Counter(physlib_built.stats)
+        blueprint_rows.append((physlib.TITLE, "DECOMPOSED",
+                               f"[{ph['articles']:,} modules](../roadmap/physlib/README.md) with a declaration, one "
+                               "article each, with a block per declaration."))
+        print(
+            f"physlib: {ph['articles']} module articles on {ph['pages']} folder pages in {ph['parts']} parts; "
+            f"{ph['declarations']} declarations ({ph['instances']} instances with no name, {ph['documented']} "
+            f"documented, {ph['significant']} significant, {ph['sorry']} with sorry), {ph['private']} private not shown, "
+            f"{ph['unresolved']} not in Lean; {ph['unshown']} modules without an article; {ph['statement_edges']} "
+            f"statement and {ph['proof_edges']} proof edges",
+            file=sys.stderr,
+        )
     files[ROOT / "hooks" / "lean-links.json"] = json.dumps(lean_links, indent=1, ensure_ascii=False) + "\n"
     root = ROADMAP / "README.md"
     previous = root.read_text(encoding="utf-8") if root.is_file() else None
@@ -297,6 +317,7 @@ def generate() -> dict[Path, str]:
         stacks=stacks_data["source"]["rev"] if stacks_data else None,
         atlas=atlas_data["source"]["rev"] if atlas_data else None,
         openai_math=oai_data["source"]["rev"] if oai_data else None,
+        physlib=physlib_data["source"]["rev"] if physlib_data else None,
     )
     print(
         f"mathlib: {stats['articles']} articles ({stats['formalized']} in Mathlib, {stats['stated']} stated only, "

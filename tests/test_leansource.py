@@ -91,6 +91,9 @@ def test_scopes_that_do_not_close_as_they_open_declare_nothing():
     # `end A.B` closes namespaces A and B opened one at a time.
     assert set(leansource.scan("namespace A\nnamespace B\ntheorem x : True := trivial\nend A.B\ntheorem y : True := trivial\n")) == {
         "A.B.x", "y"}
+    # `end section` is `end`, then a new `section`: `section` is a keyword, not a name.
+    assert set(leansource.scan("namespace A\nsection\nend section\ntheorem x : True := trivial\nend\nend A\n")) == {"A.x"}
+    assert leansource.scan("namespace A\nend section\n") is None
 
 
 def test_a_name_on_the_line_after_its_keyword_is_not_read():

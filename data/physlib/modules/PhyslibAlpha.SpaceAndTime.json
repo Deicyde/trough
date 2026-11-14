@@ -1,0 +1,2255 @@
+{
+ "schema": "trough-physlib/v1",
+ "rev": "2a1dfe43134b49b643642f13d33031754021bb5d",
+ "modules": [
+  {
+   "file": "PhyslibAlpha/SpaceAndTime/Space/Surfaces/HalfPlane.lean",
+   "module": "PhyslibAlpha.SpaceAndTime.Space.Surfaces.HalfPlane",
+   "title": "Half-plane surface in `Space 3`",
+   "doc": "The half-plane in `Space 3` with its measure, distribution and vanishing ambient volume.\n\n## i. Overview\n\nThe half-plane is the coordinate plane in `Space 3` with nonnegative second\ncoordinate. It is the image of the domain `halfPlaneDomain` in `Space 2` under the coordinate\nplane embedding `halfPlane`. Pushing forward the restricted volume gives the measure\n`halfPlaneMeasure`, and integrating against it gives the distribution `halfPlaneDist`. The\nhalf-plane lies in a proper linear subspace, so it has ambient volume zero.\n\n## ii. Key results\n\n- `halfPlaneDomain` : the domain of the half-plane inside `Space 2`.\n- `halfPlane` : the coordinate plane embedding of `Space 2` into `Space 3`.\n- `halfPlaneMeasure` : the measure corresponding to integration over the half-plane.\n- `halfPlaneDist` : the distribution corresponding to integration over the half-plane.\n- `volume_halfPlane_image_domain` : the half-plane has ambient volume zero.\n\n## iii. Table of contents\n\n- A. The definition of the half-plane surface\n- B. The measure associated with the half-plane\n- C. The distribution associated with the half-plane\n- D. The half-plane has ambient volume zero\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Robert Sneiderman",
+   "sections": [
+    {
+     "line": 55,
+     "text": "## A. The definition of the half-plane surface"
+    },
+    {
+     "line": 88,
+     "text": "## B. The measure associated with the half-plane"
+    },
+    {
+     "line": 114,
+     "text": "## C. The distribution associated with the half-plane"
+    },
+    {
+     "line": 133,
+     "text": "## D. The half-plane has ambient volume zero"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "Space.halfPlaneDomain",
+     "kind": "def",
+     "line": 62,
+     "doc": "The domain of the half-plane inside `Space 2`.",
+     "statement": "def halfPlaneDomain : Set (Space 2)",
+     "sorry": false
+    },
+    {
+     "name": "Space.halfPlane",
+     "kind": "def",
+     "line": 65,
+     "doc": "The coordinate plane embedding used for the half-plane surface in `Space 3`.",
+     "statement": "def halfPlane : Space 2 → Space 3",
+     "sorry": false
+    },
+    {
+     "name": "Space.halfPlane_eq",
+     "kind": "lemma",
+     "line": 67,
+     "doc": "",
+     "statement": "lemma halfPlane_eq : halfPlane = (slice (2 : Fin 3)).symm ∘ (fun x : Space 2 => (0, x))",
+     "sorry": false
+    },
+    {
+     "name": "Space.halfPlane_injective",
+     "kind": "lemma",
+     "line": 69,
+     "doc": "",
+     "statement": "lemma halfPlane_injective : Function.Injective halfPlane",
+     "sorry": false
+    },
+    {
+     "name": "Space.halfPlane_continuous",
+     "kind": "lemma",
+     "line": 76,
+     "doc": "",
+     "statement": "lemma halfPlane_continuous : Continuous halfPlane",
+     "sorry": false
+    },
+    {
+     "name": "Space.halfPlane_measurableEmbedding",
+     "kind": "lemma",
+     "line": 80,
+     "doc": "",
+     "statement": "lemma halfPlane_measurableEmbedding : MeasurableEmbedding halfPlane",
+     "sorry": false
+    },
+    {
+     "name": "Space.norm_halfPlane",
+     "kind": "lemma",
+     "line": 84,
+     "doc": "",
+     "statement": "lemma norm_halfPlane (x : Space 2) : ‖halfPlane x‖ = ‖x‖",
+     "sorry": false
+    },
+    {
+     "name": "Space.halfPlaneMeasure",
+     "kind": "def",
+     "line": 95,
+     "doc": "The measure on `Space 3` corresponding to integration over a half-plane.",
+     "statement": "def halfPlaneMeasure : Measure (Space 3)",
+     "sorry": false
+    },
+    {
+     "name": "Space.halfPlaneMeasure_hasTemperateGrowth",
+     "kind": "instance",
+     "line": 98,
+     "doc": "",
+     "statement": "instance halfPlaneMeasure_hasTemperateGrowth :\n    halfPlaneMeasure.HasTemperateGrowth",
+     "sorry": false
+    },
+    {
+     "name": "Space.halfPlaneMeasure_sFinite",
+     "kind": "instance",
+     "line": 110,
+     "doc": "",
+     "statement": "instance halfPlaneMeasure_sFinite : SFinite halfPlaneMeasure",
+     "sorry": false
+    },
+    {
+     "name": "Space.halfPlaneDist",
+     "kind": "def",
+     "line": 121,
+     "doc": "The distribution on `Space 3` corresponding to integration over a half-plane.",
+     "statement": "def halfPlaneDist : (Space 3) →d[ℝ] ℝ",
+     "sorry": false
+    },
+    {
+     "name": "Space.halfPlaneDist_apply_eq_integral_halfPlaneMeasure",
+     "kind": "lemma",
+     "line": 124,
+     "doc": "",
+     "statement": "lemma halfPlaneDist_apply_eq_integral_halfPlaneMeasure (f : 𝓢(Space 3, ℝ)) :\n    halfPlaneDist f = ∫ x, f x ∂halfPlaneMeasure",
+     "sorry": false
+    },
+    {
+     "name": "Space.halfPlaneDist_apply_eq_integral_volume",
+     "kind": "lemma",
+     "line": 128,
+     "doc": "",
+     "statement": "lemma halfPlaneDist_apply_eq_integral_volume (f : 𝓢(Space 3, ℝ)) :\n    halfPlaneDist f = ∫ x, f (halfPlane x) ∂(volume.restrict halfPlaneDomain)",
+     "sorry": false
+    },
+    {
+     "name": "Space.halfPlaneSubmodule",
+     "kind": "def",
+     "line": 140,
+     "doc": "The coordinate plane containing the half-plane in `Space 3`.",
+     "statement": "def halfPlaneSubmodule : Submodule ℝ (Space 3)",
+     "sorry": false
+    },
+    {
+     "name": "Space.halfPlane_mem_halfPlaneSubmodule",
+     "kind": "lemma",
+     "line": 150,
+     "doc": "",
+     "statement": "lemma halfPlane_mem_halfPlaneSubmodule (x : Space 2) : halfPlane x ∈ halfPlaneSubmodule",
+     "sorry": false
+    },
+    {
+     "name": "Space.halfPlane_image_domain_subset_halfPlaneSubmodule",
+     "kind": "lemma",
+     "line": 153,
+     "doc": "",
+     "statement": "lemma halfPlane_image_domain_subset_halfPlaneSubmodule :\n    halfPlane '' halfPlaneDomain ⊆ (halfPlaneSubmodule : Set (Space 3))",
+     "sorry": false
+    },
+    {
+     "name": "Space.halfPlaneSubmodule_ne_top",
+     "kind": "lemma",
+     "line": 158,
+     "doc": "",
+     "statement": "lemma halfPlaneSubmodule_ne_top : halfPlaneSubmodule ≠ ⊤",
+     "sorry": false
+    },
+    {
+     "name": "Space.volume_halfPlane_image_domain",
+     "kind": "lemma",
+     "line": 165,
+     "doc": "",
+     "statement": "lemma volume_halfPlane_image_domain :\n    volume (halfPlane '' halfPlaneDomain : Set (Space 3)) = 0",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "PhyslibAlpha/SpaceAndTime/Space/Surfaces/Line.lean",
+   "module": "PhyslibAlpha.SpaceAndTime.Space.Surfaces.Line",
+   "title": "Line surfaces in `Space d`",
+   "doc": "The coordinate line in `Space d` with its measure, distribution and vanishing ambient volume.\n\n## i. Overview\n\nThe line surface is the coordinate line in `Space d`, the image of `ℝ` under the embedding\n`line d`. Pushing forward the volume on `ℝ` gives the measure `lineMeasure d`, and integrating\nagainst it gives the distribution `lineDist d`, roughly the integral of a test function against a\ndensity concentrated on a line. For `2 ≤ d` the line lies in a proper linear subspace, so it has\nambient volume zero.\n\n## ii. Key results\n\n- `line` : the coordinate line embedded in `Space d`.\n- `lineMeasure` : the measure corresponding to integration along the line.\n- `lineDist` : the distribution corresponding to integration along the line.\n- `lineSubmodule` : the linear subspace spanned by the line.\n- `volume_line_range` : for `2 ≤ d` the line has ambient volume zero.\n\n## iii. Table of contents\n\n- A. The definition of the line surface\n- B. The measure associated with the line\n- C. The distribution associated with the line\n- D. The line has ambient volume zero\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Robert Sneiderman",
+   "sections": [
+    {
+     "line": 53,
+     "text": "## A. The definition of the line surface"
+    },
+    {
+     "line": 84,
+     "text": "## B. The measure associated with the line"
+    },
+    {
+     "line": 106,
+     "text": "## C. The distribution associated with the line"
+    },
+    {
+     "line": 127,
+     "text": "## D. The line has ambient volume zero"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "Space.line",
+     "kind": "def",
+     "line": 60,
+     "doc": "The coordinate line embedded in `Space d`.",
+     "statement": "def line (d : ℕ) [NeZero d] : ℝ → Space d",
+     "sorry": false
+    },
+    {
+     "name": "Space.line_eq_smul_basis",
+     "kind": "lemma",
+     "line": 63,
+     "doc": "",
+     "statement": "lemma line_eq_smul_basis (d : ℕ) [NeZero d] :\n    line d = fun r => r • basis (0 : Fin d)",
+     "sorry": false
+    },
+    {
+     "name": "Space.line_injective",
+     "kind": "lemma",
+     "line": 66,
+     "doc": "",
+     "statement": "lemma line_injective (d : ℕ) [NeZero d] : Function.Injective (line d)",
+     "sorry": false
+    },
+    {
+     "name": "Space.line_continuous",
+     "kind": "lemma",
+     "line": 72,
+     "doc": "",
+     "statement": "lemma line_continuous (d : ℕ) [NeZero d] : Continuous (line d)",
+     "sorry": false
+    },
+    {
+     "name": "Space.line_measurableEmbedding",
+     "kind": "lemma",
+     "line": 76,
+     "doc": "",
+     "statement": "lemma line_measurableEmbedding (d : ℕ) [NeZero d] : MeasurableEmbedding (line d)",
+     "sorry": false
+    },
+    {
+     "name": "Space.norm_line",
+     "kind": "lemma",
+     "line": 80,
+     "doc": "",
+     "statement": "lemma norm_line (d : ℕ) [NeZero d] (r : ℝ) : ‖line d r‖ = ‖r‖",
+     "sorry": false
+    },
+    {
+     "name": "Space.lineMeasure",
+     "kind": "def",
+     "line": 91,
+     "doc": "The measure on `Space d` corresponding to integration along a coordinate line.",
+     "statement": "def lineMeasure (d : ℕ) [NeZero d] : Measure (Space d)",
+     "sorry": false
+    },
+    {
+     "name": "Space.lineMeasure_hasTemperateGrowth",
+     "kind": "instance",
+     "line": 94,
+     "doc": "",
+     "statement": "instance lineMeasure_hasTemperateGrowth (d : ℕ) [NeZero d] :\n    (lineMeasure d).HasTemperateGrowth",
+     "sorry": false
+    },
+    {
+     "name": "Space.lineDist",
+     "kind": "def",
+     "line": 115,
+     "doc": "The distribution on `Space d` corresponding to integration along a coordinate line.\nOne can roughly think of this distribution as taking a test function `f` to its integral against\na mass, charge or current density concentrated on a line.",
+     "statement": "def lineDist (d : ℕ) [NeZero d] : (Space d) →d[ℝ] ℝ",
+     "sorry": false
+    },
+    {
+     "name": "Space.lineDist_apply_eq_integral_lineMeasure",
+     "kind": "lemma",
+     "line": 118,
+     "doc": "",
+     "statement": "lemma lineDist_apply_eq_integral_lineMeasure (d : ℕ) [NeZero d] (f : 𝓢(Space d, ℝ)) :\n    lineDist d f = ∫ x, f x ∂lineMeasure d",
+     "sorry": false
+    },
+    {
+     "name": "Space.lineDist_apply_eq_integral_volume",
+     "kind": "lemma",
+     "line": 122,
+     "doc": "",
+     "statement": "lemma lineDist_apply_eq_integral_volume (d : ℕ) [NeZero d] (f : 𝓢(Space d, ℝ)) :\n    lineDist d f = ∫ r : ℝ, f (line d r)",
+     "sorry": false
+    },
+    {
+     "name": "Space.lineSubmodule",
+     "kind": "def",
+     "line": 134,
+     "doc": "The linear subspace spanned by the coordinate line in `Space d`.",
+     "statement": "def lineSubmodule (d : ℕ) [NeZero d] : Submodule ℝ (Space d)",
+     "sorry": false
+    },
+    {
+     "name": "Space.line_mem_lineSubmodule",
+     "kind": "lemma",
+     "line": 137,
+     "doc": "",
+     "statement": "lemma line_mem_lineSubmodule (d : ℕ) [NeZero d] (r : ℝ) : line d r ∈ lineSubmodule d",
+     "sorry": false
+    },
+    {
+     "name": "Space.range_line_subset_lineSubmodule",
+     "kind": "lemma",
+     "line": 141,
+     "doc": "",
+     "statement": "lemma range_line_subset_lineSubmodule (d : ℕ) [NeZero d] :\n    Set.range (line d) ⊆ (lineSubmodule d : Set (Space d))",
+     "sorry": false
+    },
+    {
+     "name": "Space.lineSubmodule_ne_top",
+     "kind": "lemma",
+     "line": 146,
+     "doc": "",
+     "statement": "lemma lineSubmodule_ne_top (d : ℕ) [NeZero d] (hd : 2 ≤ d) : lineSubmodule d ≠ ⊤",
+     "sorry": false
+    },
+    {
+     "name": "Space.volume_line_range",
+     "kind": "lemma",
+     "line": 156,
+     "doc": "",
+     "statement": "lemma volume_line_range (d : ℕ) [NeZero d] (hd : 2 ≤ d) :\n    volume (Set.range (line d) : Set (Space d)) = 0",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "PhyslibAlpha/SpaceAndTime/Space/Surfaces/Ring.lean",
+   "module": "PhyslibAlpha.SpaceAndTime.Space.Surfaces.Ring",
+   "title": "Ring surface in `Space 3`",
+   "doc": "The unit ring in `Space 3` with its measure and the distribution of integration around it.\n\n## i. Overview\n\nThe ring surface is the unit circle `S¹` of `Space 2`, embedded into `Space 3` by `ring`. Pushing\nforward the measure on the sphere gives the finite measure `ringMeasure`, of total mass `2π`, and\nintegrating against it gives the distribution `ringDist`. The file also gives integrability\ncriteria for continuous functions and the invariance of `ringMeasure.prod volume` under a shear.\n\n## ii. Key results\n\n- `ring` : the embedding of the unit circle into `Space 3`.\n- `ringMeasure` : the measure corresponding to integration around the ring.\n- `ringMeasure_univ` : the total mass of the ring measure is `2π`.\n- `integrable_ringMeasure_of_continuous` : continuous functions on the ring are integrable.\n- `ringDist` : the distribution corresponding to integration around the ring.\n- `ringDist_eq_integral_delta` : `ringDist` as an integral of Dirac deltas over the ring.\n\n## iii. Table of contents\n\n- A. The definition of the ring surface\n- B. The measure associated with the ring\n- C. The distribution associated with the ring\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Joseph Tooby-Smith",
+   "sections": [
+    {
+     "line": 53,
+     "text": "## A. The definition of the ring surface"
+    },
+    {
+     "line": 80,
+     "text": "## B. The measure associated with the ring"
+    },
+    {
+     "line": 146,
+     "text": "## C. The distribution associated with the ring"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "Space.ring",
+     "kind": "def",
+     "line": 60,
+     "doc": "The embedding of the unit ring (a circle `S¹` in `Space 2`) into `Space 3`.",
+     "statement": "def ring : Metric.sphere (0 : Space 2) 1 → Space 3",
+     "sorry": false
+    },
+    {
+     "name": "Space.ring_eq",
+     "kind": "lemma",
+     "line": 63,
+     "doc": "",
+     "statement": "lemma ring_eq : ring = (slice 2).symm ∘ (fun x => (0, sphericalShell 2 x))",
+     "sorry": false
+    },
+    {
+     "name": "Space.ring_injective",
+     "kind": "lemma",
+     "line": 65,
+     "doc": "",
+     "statement": "lemma ring_injective : Function.Injective ring",
+     "sorry": false
+    },
+    {
+     "name": "Space.ring_continuous",
+     "kind": "lemma",
+     "line": 71,
+     "doc": "",
+     "statement": "lemma ring_continuous : Continuous ring",
+     "sorry": false
+    },
+    {
+     "name": "Space.ring_measurableEmbedding",
+     "kind": "lemma",
+     "line": 76,
+     "doc": "",
+     "statement": "lemma ring_measurableEmbedding : MeasurableEmbedding ring",
+     "sorry": false
+    },
+    {
+     "name": "Space.ringMeasure",
+     "kind": "def",
+     "line": 87,
+     "doc": "The measure on `Space 3` corresponding to integration around a ring.",
+     "statement": "def ringMeasure : Measure (Space 3)",
+     "sorry": false
+    },
+    {
+     "name": "Space.ringMeasure_hasTemperateGrowth",
+     "kind": "instance",
+     "line": 90,
+     "doc": "",
+     "statement": "instance ringMeasure_hasTemperateGrowth :\n    ringMeasure.HasTemperateGrowth",
+     "sorry": false
+    },
+    {
+     "name": "Space.ringMeasure_prod_volume_hasTemperateGrowth",
+     "kind": "instance",
+     "line": 97,
+     "doc": "",
+     "statement": "instance ringMeasure_prod_volume_hasTemperateGrowth :\n    (ringMeasure.prod (volume (α := Space))).HasTemperateGrowth",
+     "sorry": false
+    },
+    {
+     "name": "Space.ringMeasure_sFinite",
+     "kind": "instance",
+     "line": 101,
+     "doc": "",
+     "statement": "instance ringMeasure_sFinite: SFinite ringMeasure",
+     "sorry": false
+    },
+    {
+     "name": "Space.ringMeasure_finite",
+     "kind": "instance",
+     "line": 105,
+     "doc": "",
+     "statement": "instance ringMeasure_finite: IsFiniteMeasure ringMeasure",
+     "sorry": false
+    },
+    {
+     "name": "Space.integrable_ringMeasure_of_continuous",
+     "kind": "lemma",
+     "line": 109,
+     "doc": "",
+     "statement": "lemma integrable_ringMeasure_of_continuous (f : Space → ℝ) (hf : Continuous (f ∘ ring)) :\n    Integrable f ringMeasure",
+     "sorry": false
+    },
+    {
+     "name": "Space.integrable_ringMeasure_of_continuous_euclid",
+     "kind": "lemma",
+     "line": 118,
+     "doc": "",
+     "statement": "lemma integrable_ringMeasure_of_continuous_euclid (f : Space → EuclideanSpace ℝ (Fin n))\n    (hf : Continuous (f ∘ ring)) :\n    Integrable f ringMeasure",
+     "sorry": false
+    },
+    {
+     "name": "Space.ringMeasure_prod_volume_map",
+     "kind": "lemma",
+     "line": 127,
+     "doc": "",
+     "statement": "lemma ringMeasure_prod_volume_map :\n    (ringMeasure.prod (volume (α := Space))).map (fun x : Space × Space => (x.1, x.2 + x.1))\n     = (ringMeasure.prod (volume (α := Space)))",
+     "sorry": false
+    },
+    {
+     "name": "Space.ringMeasure_univ",
+     "kind": "lemma",
+     "line": 138,
+     "doc": "",
+     "statement": "lemma ringMeasure_univ : ringMeasure Set.univ = ENNReal.ofReal ((2 : ℝ) * π)",
+     "sorry": false
+    },
+    {
+     "name": "Space.ringDist",
+     "kind": "def",
+     "line": 153,
+     "doc": "The distribution on `Space 3` corresponding to integration around a ring.",
+     "statement": "def ringDist : (Space 3) →d[ℝ] ℝ",
+     "sorry": false
+    },
+    {
+     "name": "Space.ringDist_apply_eq_integral_ringMeasure",
+     "kind": "lemma",
+     "line": 156,
+     "doc": "",
+     "statement": "lemma ringDist_apply_eq_integral_ringMeasure (f : 𝓢(Space 3, ℝ)) :\n    ringDist f = ∫ x, f x ∂ringMeasure",
+     "sorry": false
+    },
+    {
+     "name": "Space.ringDist_eq_integral_delta",
+     "kind": "lemma",
+     "line": 160,
+     "doc": "",
+     "statement": "lemma ringDist_eq_integral_delta (f : 𝓢(Space 3, ℝ)) :\n    ringDist f = ∫ z, diracDelta ℝ z f ∂ringMeasure",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidCylinder.lean",
+   "module": "PhyslibAlpha.SpaceAndTime.Space.Surfaces.SolidCylinder",
+   "title": "Solid cylinder surface in `Space 3`",
+   "doc": "The solid unit cylinder in `Space 3` with its measure, distribution and positive volume.\n\n## i. Overview\n\nThe solid cylinder is the closed unit disk in `Space 2` extruded along the third coordinate.\nIt is the solid analogue of the spherical cylinder, in the same way that the solid sphere is the\nsolid analogue of the spherical shell. Like the solid sphere it is a region of positive ambient\nvolume, so the measure associated with it is built from the ambient volume of the cross-sectional\ndisk (the solid-sphere measure in `Space 2`) extruded along the axis, rather than a pushforward of\na lower-dimensional surface measure. The measure-zero requirement is therefore not applicable here\nand is replaced by a statement that the solid cylinder has positive ambient volume.\n\n## ii. Key results\n\n- `solidCylinder` : the embedding of a cross-sectional disk extruded along the axis.\n- `solidCylinderMeasure` : the measure corresponding to integration over the solid cylinder.\n- `solidCylinderDist` : the distribution corresponding to integration over the solid cylinder.\n- `solidCylinderMeasure_univ_pos` : the solid cylinder has positive measure.\n\n## iii. Table of contents\n\n- A. The definition of the solid cylinder surface\n- B. The measure associated with the solid cylinder\n- C. The distribution associated with the solid cylinder\n- D. The solid cylinder has positive ambient volume\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Robert Sneiderman",
+   "sections": [
+    {
+     "line": 56,
+     "text": "## A. The definition of the solid cylinder surface"
+    },
+    {
+     "line": 89,
+     "text": "## B. The measure associated with the solid cylinder"
+    },
+    {
+     "line": 130,
+     "text": "## C. The distribution associated with the solid cylinder"
+    },
+    {
+     "line": 152,
+     "text": "## D. The solid cylinder has positive ambient volume"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "Space.solidCylinder",
+     "kind": "def",
+     "line": 64,
+     "doc": "The map embedding a cross-sectional disk extruded along the axis into `Space 3`. The disk is\ncut out by the solid-cylinder measure, which is supported on the closed unit disk.",
+     "statement": "def solidCylinder : Space 2 × ℝ → Space 3",
+     "sorry": false
+    },
+    {
+     "name": "Space.solidCylinder_eq",
+     "kind": "lemma",
+     "line": 67,
+     "doc": "",
+     "statement": "lemma solidCylinder_eq :\n    solidCylinder = (slice 2).symm ∘ (fun x : Space 2 × ℝ => (x.2, x.1))",
+     "sorry": false
+    },
+    {
+     "name": "Space.solidCylinder_injective",
+     "kind": "lemma",
+     "line": 70,
+     "doc": "",
+     "statement": "lemma solidCylinder_injective : Function.Injective solidCylinder",
+     "sorry": false
+    },
+    {
+     "name": "Space.solidCylinder_continuous",
+     "kind": "lemma",
+     "line": 77,
+     "doc": "",
+     "statement": "lemma solidCylinder_continuous : Continuous solidCylinder",
+     "sorry": false
+    },
+    {
+     "name": "Space.solidCylinder_measurableEmbedding",
+     "kind": "lemma",
+     "line": 81,
+     "doc": "",
+     "statement": "lemma solidCylinder_measurableEmbedding : MeasurableEmbedding solidCylinder",
+     "sorry": false
+    },
+    {
+     "name": "Space.norm_solidCylinder",
+     "kind": "lemma",
+     "line": 85,
+     "doc": "",
+     "statement": "lemma norm_solidCylinder (x : Space 2 × ℝ) :\n    ‖solidCylinder x‖ = √(‖x.2‖ ^ 2 + ‖x.1‖ ^ 2)",
+     "sorry": false
+    },
+    {
+     "name": "Space.solidCylinderMeasure",
+     "kind": "def",
+     "line": 98,
+     "doc": "The measure on `Space 3` corresponding to integration over a solid cylinder, i.e. the\npushforward of the product of the solid-sphere (closed unit disk) measure on `Space 2` with the\nline measure along the axis.",
+     "statement": "def solidCylinderMeasure : Measure (Space 3)",
+     "sorry": false
+    },
+    {
+     "name": "Space.solidCylinderMeasure_hasTemperateGrowth",
+     "kind": "instance",
+     "line": 101,
+     "doc": "",
+     "statement": "instance solidCylinderMeasure_hasTemperateGrowth :\n    solidCylinderMeasure.HasTemperateGrowth",
+     "sorry": false
+    },
+    {
+     "name": "Space.solidCylinderMeasure_sFinite",
+     "kind": "instance",
+     "line": 126,
+     "doc": "",
+     "statement": "instance solidCylinderMeasure_sFinite : SFinite solidCylinderMeasure",
+     "sorry": false
+    },
+    {
+     "name": "Space.solidCylinderDist",
+     "kind": "def",
+     "line": 139,
+     "doc": "The distribution on `Space 3` corresponding to integration over a solid cylinder.\nOne can roughly think of this distribution as taking a test function `f` to its integral against\na mass, charge or current density spread over a solid cylinder.",
+     "statement": "def solidCylinderDist : (Space 3) →d[ℝ] ℝ",
+     "sorry": false
+    },
+    {
+     "name": "Space.solidCylinderDist_apply_eq_integral_solidCylinderMeasure",
+     "kind": "lemma",
+     "line": 142,
+     "doc": "",
+     "statement": "lemma solidCylinderDist_apply_eq_integral_solidCylinderMeasure (f : 𝓢(Space 3, ℝ)) :\n    solidCylinderDist f = ∫ x, f x ∂solidCylinderMeasure",
+     "sorry": false
+    },
+    {
+     "name": "Space.solidCylinderDist_apply_eq_integral_disk_volume",
+     "kind": "lemma",
+     "line": 146,
+     "doc": "",
+     "statement": "lemma solidCylinderDist_apply_eq_integral_disk_volume (f : 𝓢(Space 3, ℝ)) :\n    solidCylinderDist f =\n    ∫ x, f (solidCylinder x) ∂((solidSphereMeasure 2).prod (volume (α := ℝ)))",
+     "sorry": false
+    },
+    {
+     "name": "Space.solidCylinderMeasure_univ_pos",
+     "kind": "lemma",
+     "line": 158,
+     "doc": "",
+     "statement": "lemma solidCylinderMeasure_univ_pos : 0 < solidCylinderMeasure Set.univ",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidSphere.lean",
+   "module": "PhyslibAlpha.SpaceAndTime.Space.Surfaces.SolidSphere",
+   "title": "Solid sphere surfaces in `Space d`",
+   "doc": "The closed unit ball in `Space d` with its measure, distribution and positive volume.\n\n## i. Overview\n\nThe solid sphere is the closed unit ball in `Space d`. Unlike the line or the spherical\nshell, it is a region of positive ambient volume, so the measure associated with it is the\nambient volume restricted to the ball rather than a pushforward of a lower-dimensional measure.\nThe requirement that the surface has ambient measure zero is therefore not applicable here, and\nis replaced by a statement that the solid sphere has positive ambient volume.\n\n## ii. Key results\n\n- `solidSphere` : the inclusion of the closed unit ball into `Space d`.\n- `solidSphereMeasure` : the measure corresponding to integration over the solid sphere.\n- `solidSphereDist` : the distribution corresponding to integration over the solid sphere.\n- `solidSphere_volume_pos`, `solidSphereMeasure_univ_pos` : the solid sphere has positive volume.\n\n## iii. Table of contents\n\n- A. The definition of the solid sphere surface\n- B. The measure associated with the solid sphere\n- C. The distribution associated with the solid sphere\n- D. The solid sphere has positive ambient volume\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Robert Sneiderman",
+   "sections": [
+    {
+     "line": 52,
+     "text": "## A. The definition of the solid sphere surface"
+    },
+    {
+     "line": 80,
+     "text": "## B. The measure associated with the solid sphere"
+    },
+    {
+     "line": 100,
+     "text": "## C. The distribution associated with the solid sphere"
+    },
+    {
+     "line": 120,
+     "text": "## D. The solid sphere has positive ambient volume"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "Space.solidSphere",
+     "kind": "def",
+     "line": 59,
+     "doc": "The inclusion into `Space d` of its closed unit ball `B^d` (the subtype coercion `x ↦ x.1`).",
+     "statement": "def solidSphere (d : ℕ) : Metric.closedBall (0 : Space d) 1 → Space d",
+     "sorry": false
+    },
+    {
+     "name": "Space.solidSphere_injective",
+     "kind": "lemma",
+     "line": 61,
+     "doc": "",
+     "statement": "lemma solidSphere_injective (d : ℕ) : Function.Injective (solidSphere d)",
+     "sorry": false
+    },
+    {
+     "name": "Space.solidSphere_continuous",
+     "kind": "lemma",
+     "line": 66,
+     "doc": "",
+     "statement": "lemma solidSphere_continuous (d : ℕ) : Continuous (solidSphere d)",
+     "sorry": false
+    },
+    {
+     "name": "Space.solidSphere_measurableEmbedding",
+     "kind": "lemma",
+     "line": 68,
+     "doc": "",
+     "statement": "lemma solidSphere_measurableEmbedding (d : ℕ) : MeasurableEmbedding (solidSphere d)",
+     "sorry": false
+    },
+    {
+     "name": "Space.norm_solidSphere_le",
+     "kind": "lemma",
+     "line": 74,
+     "doc": "",
+     "statement": "lemma norm_solidSphere_le (d : ℕ) (x : Metric.closedBall (0 : Space d) 1) :\n    ‖solidSphere d x‖ ≤ 1",
+     "sorry": false
+    },
+    {
+     "name": "Space.solidSphereMeasure",
+     "kind": "def",
+     "line": 88,
+     "doc": "The measure on `Space d` corresponding to integration over a solid sphere, i.e. the\nambient volume measure restricted to the closed unit ball.",
+     "statement": "def solidSphereMeasure (d : ℕ) : Measure (Space d)",
+     "sorry": false
+    },
+    {
+     "name": "Space.solidSphereMeasure_isFiniteMeasure",
+     "kind": "instance",
+     "line": 91,
+     "doc": "",
+     "statement": "instance solidSphereMeasure_isFiniteMeasure (d : ℕ) :\n    IsFiniteMeasure (solidSphereMeasure d)",
+     "sorry": false
+    },
+    {
+     "name": "Space.solidSphereMeasure_hasTemperateGrowth",
+     "kind": "instance",
+     "line": 96,
+     "doc": "",
+     "statement": "instance solidSphereMeasure_hasTemperateGrowth (d : ℕ) :\n    (solidSphereMeasure d).HasTemperateGrowth",
+     "sorry": false
+    },
+    {
+     "name": "Space.solidSphereDist",
+     "kind": "def",
+     "line": 109,
+     "doc": "The distribution on `Space d` corresponding to integration over a solid sphere.\nOne can roughly think of this distribution as taking a test function `f` to its integral against\na mass, charge or current density spread over a solid ball.",
+     "statement": "def solidSphereDist (d : ℕ) : (Space d) →d[ℝ] ℝ",
+     "sorry": false
+    },
+    {
+     "name": "Space.solidSphereDist_apply_eq_integral_solidSphereMeasure",
+     "kind": "lemma",
+     "line": 112,
+     "doc": "",
+     "statement": "lemma solidSphereDist_apply_eq_integral_solidSphereMeasure (d : ℕ) (f : 𝓢(Space d, ℝ)) :\n    solidSphereDist d f = ∫ x, f x ∂solidSphereMeasure d",
+     "sorry": false
+    },
+    {
+     "name": "Space.solidSphereDist_apply_eq_integral_closedBall",
+     "kind": "lemma",
+     "line": 116,
+     "doc": "",
+     "statement": "lemma solidSphereDist_apply_eq_integral_closedBall (d : ℕ) (f : 𝓢(Space d, ℝ)) :\n    solidSphereDist d f = ∫ x in Metric.closedBall (0 : Space d) 1, f x",
+     "sorry": false
+    },
+    {
+     "name": "Space.solidSphere_volume_pos",
+     "kind": "lemma",
+     "line": 126,
+     "doc": "",
+     "statement": "lemma solidSphere_volume_pos (d : ℕ) :\n    0 < volume (Metric.closedBall (0 : Space d) 1)",
+     "sorry": false
+    },
+    {
+     "name": "Space.solidSphereMeasure_univ_pos",
+     "kind": "lemma",
+     "line": 132,
+     "doc": "",
+     "statement": "lemma solidSphereMeasure_univ_pos (d : ℕ) : 0 < solidSphereMeasure d Set.univ",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "PhyslibAlpha/SpaceAndTime/Space/Surfaces/SphericalCylinder.lean",
+   "module": "PhyslibAlpha.SpaceAndTime.Space.Surfaces.SphericalCylinder",
+   "title": "Spherical cylinder surface in `Space 3`",
+   "doc": "The unit spherical cylinder in `Space 3` with its measure and distribution.\n\n## i. Overview\n\nThe spherical cylinder is the unit circular shell in `Space 2` extruded along the\nthird coordinate. The embedding `sphericalCylinder` pushes forward the product of the sphere\nmeasure and the volume on the axis to give `sphericalCylinderMeasure`, and integrating against it\ngives the distribution `sphericalCylinderDist`.\n\n## ii. Key results\n\n- `sphericalCylinder` : the embedding of the unit circle extruded along the axis.\n- `sphericalCylinderMeasure` : the measure corresponding to integration over the cylinder.\n- `sphericalCylinderDist` : the distribution corresponding to integration over the cylinder.\n\n## iii. Table of contents\n\n- A. The definition of the spherical cylinder surface\n- B. The measure associated with the spherical cylinder\n- C. The distribution associated with the spherical cylinder\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Robert Sneiderman",
+   "sections": [
+    {
+     "line": 51,
+     "text": "## A. The definition of the spherical cylinder surface"
+    },
+    {
+     "line": 85,
+     "text": "## B. The measure associated with the spherical cylinder"
+    },
+    {
+     "line": 125,
+     "text": "## C. The distribution associated with the spherical cylinder"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "Space.sphericalCylinder",
+     "kind": "def",
+     "line": 58,
+     "doc": "The map embedding the unit circular shell extruded along the axis into `Space 3`.",
+     "statement": "def sphericalCylinder : Metric.sphere (0 : Space 2) 1 × ℝ → Space 3",
+     "sorry": false
+    },
+    {
+     "name": "Space.sphericalCylinder_eq",
+     "kind": "lemma",
+     "line": 61,
+     "doc": "",
+     "statement": "lemma sphericalCylinder_eq :\n    sphericalCylinder = (slice 2).symm ∘ (fun x => (x.2, sphericalShell 2 x.1))",
+     "sorry": false
+    },
+    {
+     "name": "Space.sphericalCylinder_injective",
+     "kind": "lemma",
+     "line": 64,
+     "doc": "",
+     "statement": "lemma sphericalCylinder_injective : Function.Injective sphericalCylinder",
+     "sorry": false
+    },
+    {
+     "name": "Space.sphericalCylinder_continuous",
+     "kind": "lemma",
+     "line": 71,
+     "doc": "",
+     "statement": "lemma sphericalCylinder_continuous : Continuous sphericalCylinder",
+     "sorry": false
+    },
+    {
+     "name": "Space.sphericalCylinder_measurableEmbedding",
+     "kind": "lemma",
+     "line": 76,
+     "doc": "",
+     "statement": "lemma sphericalCylinder_measurableEmbedding : MeasurableEmbedding sphericalCylinder",
+     "sorry": false
+    },
+    {
+     "name": "Space.norm_sphericalCylinder",
+     "kind": "lemma",
+     "line": 80,
+     "doc": "",
+     "statement": "lemma norm_sphericalCylinder (x : Metric.sphere (0 : Space 2) 1 × ℝ) :\n    ‖sphericalCylinder x‖ = √(‖x.2‖ ^ 2 + 1)",
+     "sorry": false
+    },
+    {
+     "name": "Space.sphericalCylinderMeasure",
+     "kind": "def",
+     "line": 92,
+     "doc": "The measure on `Space 3` corresponding to integration over a spherical cylinder.",
+     "statement": "def sphericalCylinderMeasure : Measure (Space 3)",
+     "sorry": false
+    },
+    {
+     "name": "Space.sphericalCylinderMeasure_hasTemperateGrowth",
+     "kind": "instance",
+     "line": 96,
+     "doc": "",
+     "statement": "instance sphericalCylinderMeasure_hasTemperateGrowth :\n    sphericalCylinderMeasure.HasTemperateGrowth",
+     "sorry": false
+    },
+    {
+     "name": "Space.sphericalCylinderMeasure_sFinite",
+     "kind": "instance",
+     "line": 120,
+     "doc": "",
+     "statement": "instance sphericalCylinderMeasure_sFinite : SFinite sphericalCylinderMeasure",
+     "sorry": false
+    },
+    {
+     "name": "Space.sphericalCylinderDist",
+     "kind": "def",
+     "line": 132,
+     "doc": "The distribution on `Space 3` corresponding to integration over a spherical cylinder.",
+     "statement": "def sphericalCylinderDist : (Space 3) →d[ℝ] ℝ",
+     "sorry": false
+    },
+    {
+     "name": "Space.sphericalCylinderDist_apply_eq_integral_sphericalCylinderMeasure",
+     "kind": "lemma",
+     "line": 135,
+     "doc": "",
+     "statement": "lemma sphericalCylinderDist_apply_eq_integral_sphericalCylinderMeasure (f : 𝓢(Space 3, ℝ)) :\n    sphericalCylinderDist f = ∫ x, f x ∂sphericalCylinderMeasure",
+     "sorry": false
+    },
+    {
+     "name": "Space.sphericalCylinderDist_apply_eq_integral_sphere_volume",
+     "kind": "lemma",
+     "line": 139,
+     "doc": "",
+     "statement": "lemma sphericalCylinderDist_apply_eq_integral_sphere_volume (f : 𝓢(Space 3, ℝ)) :\n    sphericalCylinderDist f =\n    ∫ x, f (sphericalCylinder x)\n      ∂((MeasureTheory.Measure.toSphere volume).prod (volume (α := ℝ)))",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "PhyslibAlpha/SpaceAndTime/Space/Surfaces/SphericalShell.lean",
+   "module": "PhyslibAlpha.SpaceAndTime.Space.Surfaces.SphericalShell",
+   "title": "Spherical surfaces on Space",
+   "doc": "The unit sphere in `Space d` with its measure and the distribution of integration over it.\n\n## i. Overview\n\nThe spherical shell is the unit sphere `S^{d-1}` of `Space d`, included by `sphericalShell d`.\nPushing forward the sphere measure gives `sphericalShellMeasure d`, and integrating against it\ngives the distribution `sphericalShellDist d`, which one can roughly think of as taking a test\nfunction to its integral against a mass, charge or current distribution on the shell.\n\n## ii. Key results\n\n- `sphericalShell` : the inclusion of the unit sphere into `Space d`.\n- `sphericalShellMeasure` : the measure corresponding to integration over the spherical shell.\n- `sphericalShellDist` : the distribution corresponding to integration over the spherical shell.\n\n## iii. Table of contents\n\n- A. The definition of the spherical shell surface\n- B. The measure associated with the spherical shell\n- C. The distribution associated with the spherical shell\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Joseph Tooby-Smith",
+   "sections": [
+    {
+     "line": 51,
+     "text": "## A. The definition of the spherical shell surface"
+    },
+    {
+     "line": 77,
+     "text": "## B. The measure associated with the spherical shell"
+    },
+    {
+     "line": 94,
+     "text": "## C. The distribution associated with the spherical shell"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "Space.sphericalShell",
+     "kind": "def",
+     "line": 58,
+     "doc": "The inclusion into `Space d` of its unit sphere `S^{d-1}` (the subtype coercion `x ↦ x.1`).",
+     "statement": "def sphericalShell (d : ℕ) : Metric.sphere (0 : Space d) 1 → Space d",
+     "sorry": false
+    },
+    {
+     "name": "Space.sphericalShell_injective",
+     "kind": "lemma",
+     "line": 60,
+     "doc": "",
+     "statement": "lemma sphericalShell_injective (d : ℕ) : Function.Injective (sphericalShell d)",
+     "sorry": false
+    },
+    {
+     "name": "Space.sphericalShell_continuous",
+     "kind": "lemma",
+     "line": 65,
+     "doc": "",
+     "statement": "lemma sphericalShell_continuous (d : ℕ) : Continuous (sphericalShell d)",
+     "sorry": false
+    },
+    {
+     "name": "Space.sphericalShell_measurableEmbedding",
+     "kind": "lemma",
+     "line": 67,
+     "doc": "",
+     "statement": "lemma sphericalShell_measurableEmbedding (d : ℕ) : MeasurableEmbedding (sphericalShell d)",
+     "sorry": false
+    },
+    {
+     "name": "Space.norm_sphericalShell",
+     "kind": "lemma",
+     "line": 73,
+     "doc": "",
+     "statement": "lemma norm_sphericalShell (d : ℕ) (x : Metric.sphere (0 : Space d) 1) :\n    ‖sphericalShell d x‖ = 1",
+     "sorry": false
+    },
+    {
+     "name": "Space.sphericalShellMeasure",
+     "kind": "def",
+     "line": 84,
+     "doc": "The measure on `Space d` corresponding to integration around a spherical shell.",
+     "statement": "def sphericalShellMeasure (d : ℕ) : Measure (Space d)",
+     "sorry": false
+    },
+    {
+     "name": "Space.sphericalShellMeasure_hasTemperateGrowth",
+     "kind": "instance",
+     "line": 87,
+     "doc": "",
+     "statement": "instance sphericalShellMeasure_hasTemperateGrowth (d : ℕ) :\n    (sphericalShellMeasure d).HasTemperateGrowth",
+     "sorry": false
+    },
+    {
+     "name": "Space.sphericalShellDist",
+     "kind": "def",
+     "line": 104,
+     "doc": "The distribution associated with a spherical shell.\nOne can roughly think of this distribution as the distribution which\ntakes test functions `f (r)` to `∫ d³r f(r) ρ(r)` where `ρ(r)` is the\nmass, charge or current etc. distribution.",
+     "statement": "def sphericalShellDist (d : ℕ) : (Space d) →d[ℝ] ℝ",
+     "sorry": false
+    },
+    {
+     "name": "Space.sphericalShellDist_apply_eq_integral_sphericalShellMeasure",
+     "kind": "lemma",
+     "line": 108,
+     "doc": "",
+     "statement": "lemma sphericalShellDist_apply_eq_integral_sphericalShellMeasure (d : ℕ) (f : 𝓢(Space d, ℝ)) :\n    sphericalShellDist d f = ∫ x, f x ∂sphericalShellMeasure d",
+     "sorry": false
+    },
+    {
+     "name": "Space.sphericalShellDist_apply_eq_integral_sphere_volume",
+     "kind": "lemma",
+     "line": 112,
+     "doc": "",
+     "statement": "lemma sphericalShellDist_apply_eq_integral_sphere_volume (d : ℕ) (f : 𝓢(Space d, ℝ)) :\n    sphericalShellDist d f =\n    ∫ x, f (sphericalShell d x) ∂(MeasureTheory.Measure.toSphere volume)",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "PhyslibAlpha/SpaceAndTime/SpaceTime/Fields.lean",
+   "module": "PhyslibAlpha.SpaceAndTime.SpaceTime.Fields",
+   "title": "Smooth fields and distributions on spacetime",
+   "doc": "Smooth fields form a local space of functions on `SpaceTime d` with derivatives.\n\n## i. Overview\n\nSmooth fields form a local space of functions on `SpaceTime d` with derivatives. Distribution fields\nare the distributions with values in a normed space.\n\n## ii. Key results\n\n- `smoothFields` : Smooth spacetime fields with values in a fixed real vector space.\n- `TestField` : Smooth compactly supported test fields on Minkowski spacetime.\n- `smoothDerivative` : The existing spacetime derivative restricted to smooth fields.\n- `smoothFiberMap` : Apply a constant continuous linear transformation to each field value.\n- `DistributionField` : Distributional fields on all of Minkowski spacetime use Mathlib's native\n  continuous dual.\n- `testFunctionEquiv` : The existing compact smooth test fields are Mathlib test functions on the\n  whole spacetime.\n\n## iii. Table of contents\n\n- A. Smooth Minkowski fields\n- B. Minkowski test fields and distributions\n\n## iv. References\n\nNone.\n\n## A. Smooth Minkowski fields\n\n- `smoothFields` : Smooth spacetime fields with values in a fixed real vector space.\n- `TestField` : Smooth compactly supported test fields on Minkowski spacetime.\n- `smoothDerivative` : The existing spacetime derivative restricted to smooth fields.\n- `smoothFiberMap` : Apply a constant continuous linear transformation to each field value.\n\nLemmas: `smoothFields_contDiff`, `smoothFields_isLocal`, `smoothDerivative_coe`,\n`smoothDerivative_support`, `smoothField_support_sum`, `smoothFiberMap_derivative`.\n\n## B. Minkowski test fields and distributions\n\n- `DistributionField` : Distributional fields on all of Minkowski spacetime use Mathlib's native\n  continuous dual.\n- `testFunctionEquiv` : The existing compact smooth test fields are Mathlib test functions on the\n  whole spacetime.",
+   "copyright": "2026 Tom Ole Diem",
+   "sections": [],
+   "declarations": [
+    {
+     "name": "Minkowski.smoothFields",
+     "kind": "def",
+     "line": 75,
+     "doc": "Smooth spacetime fields with values in a fixed real vector space.",
+     "statement": "def smoothFields (d : ℕ) (V : Type) [NormedAddCommGroup V] [NormedSpace ℝ V] :\n    Submodule ℝ (SpaceTime d → V)",
+     "sorry": false
+    },
+    {
+     "name": "Minkowski.TestField",
+     "kind": "abbrev",
+     "line": 87,
+     "doc": "Smooth compactly supported test fields on Minkowski spacetime.",
+     "statement": "abbrev TestField (d : ℕ) (V : Type) [NormedAddCommGroup V] [NormedSpace ℝ V]",
+     "sorry": false
+    },
+    {
+     "name": "Minkowski.smoothFields_contDiff",
+     "kind": "lemma",
+     "line": 91,
+     "doc": "The regularity carried by an admissible smooth field.",
+     "statement": "lemma smoothFields_contDiff (u : smoothFields d V) : ContDiff ℝ ∞ u.val",
+     "sorry": false
+    },
+    {
+     "name": "Minkowski.smoothFields_isLocal",
+     "kind": "lemma",
+     "line": 94,
+     "doc": "Smooth spacetime fields satisfy the local gluing hypothesis of the Green extension theorem.",
+     "statement": "lemma smoothFields_isLocal : IsLocalFieldSpace (smoothFields d V)",
+     "sorry": false
+    },
+    {
+     "name": "Minkowski.smoothDerivative",
+     "kind": "def",
+     "line": 103,
+     "doc": "The existing spacetime derivative restricted to smooth fields.",
+     "statement": "def smoothDerivative (μ : Fin 1 ⊕ Fin d) : smoothFields d V →ₗ[ℝ] smoothFields d V",
+     "sorry": false
+    },
+    {
+     "name": "Minkowski.smoothDerivative_coe",
+     "kind": "lemma",
+     "line": 114,
+     "doc": "",
+     "statement": "lemma smoothDerivative_coe (μ : Fin 1 ⊕ Fin d) (u : smoothFields d V) :\n    (smoothDerivative μ u : SpaceTime d → V) = SpaceTime.deriv μ u.val",
+     "sorry": false
+    },
+    {
+     "name": "Minkowski.smoothDerivative_support",
+     "kind": "lemma",
+     "line": 118,
+     "doc": "Spacetime differentiation is local in the support sense required by field equations.",
+     "statement": "lemma smoothDerivative_support (μ : Fin 1 ⊕ Fin d) (u : smoothFields d V) :\n    tsupport (smoothDerivative μ u : SpaceTime d → V) ⊆ tsupport (u : SpaceTime d → V)",
+     "sorry": false
+    },
+    {
+     "name": "Minkowski.smoothField_support_sum",
+     "kind": "lemma",
+     "line": 123,
+     "doc": "",
+     "statement": "lemma smoothField_support_sum {ι : Type*} (s : Finset ι)\n    (f : ι → SpaceTime d → V) (K : Set (SpaceTime d))\n    (hf : ∀ i ∈ s, tsupport (f i) ⊆ K) :\n    tsupport (∑ i ∈ s, f i) ⊆ K",
+     "sorry": false
+    },
+    {
+     "name": "Minkowski.smoothFiberMap",
+     "kind": "def",
+     "line": 137,
+     "doc": "Apply a constant continuous linear transformation to each field value.",
+     "statement": "def smoothFiberMap {W : Type} [NormedAddCommGroup W] [NormedSpace ℝ W]\n    (L : V →L[ℝ] W) : smoothFields d V →ₗ[ℝ] smoothFields d W",
+     "sorry": false
+    },
+    {
+     "name": "Minkowski.smoothFiberMap_derivative",
+     "kind": "lemma",
+     "line": 144,
+     "doc": "Constant fibre transformations commute with spacetime differentiation.",
+     "statement": "lemma smoothFiberMap_derivative {W : Type} [NormedAddCommGroup W] [NormedSpace ℝ W]\n    (L : V →L[ℝ] W) (μ : Fin 1 ⊕ Fin d) (u : smoothFields d V) :\n    smoothDerivative μ (smoothFiberMap L u) = smoothFiberMap L (smoothDerivative μ u)",
+     "sorry": false
+    },
+    {
+     "name": "Minkowski.DistributionField",
+     "kind": "abbrev",
+     "line": 155,
+     "doc": "Distributional fields on all of Minkowski spacetime use Mathlib's native continuous dual.",
+     "statement": "abbrev DistributionField (d : ℕ) (V : Type) [NormedAddCommGroup V] [NormedSpace ℝ V]",
+     "sorry": false
+    },
+    {
+     "name": "Minkowski.testFunctionEquiv",
+     "kind": "def",
+     "line": 160,
+     "doc": "The existing compact smooth test fields are Mathlib test functions on the whole spacetime.\nThe equivalence is algebraic. The LF topology lives on the Mathlib side.",
+     "statement": "def testFunctionEquiv : TestField d V ≃ₗ[ℝ]\n    _root_.TestFunction (⊤ : TopologicalSpace.Opens (SpaceTime d)) V ⊤",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean",
+   "module": "PhyslibAlpha.SpaceAndTime.SpaceTime.SpaceTimeAlgebra.Basic",
+   "title": "Star, derivatives, truncation and the Euler operator on the jet ring",
+   "doc": "The further structure the jet ring of spacetime carries, beyond its ring structure.\n\n## i. Overview\n\n`Physlib.SpaceAndTime.SpaceTime.SpaceTimeAlgebra.Basic` carries `SpaceTimeAlgebra`, the ring of\nformal power series in the spacetime coordinates, which is the ring of jets of a field at a\npoint. Four further pieces of structure on it are developed here, each needed to state a\nLagrangian as an element of a jet algebra.\n\nThe star operation is coefficientwise complex conjugation, fixing the formal variables: the\nspacetime coordinates are self-adjoint. It makes the jet ring a `StarRing` and a `StarModule`\nover both `ℝ` and `ℂ`, and `starConjEquiv` identifies the conjugate module of the jet ring with\nthe jet ring itself, honestly `ℂ`-linearly, since the conjugate-linearity of `star` cancels\nagainst the twisted scalar action. That is what identifies the jets of a conjugate field with\nthe conjugates of the jets.\n\nThe formal partial derivative commutes with the star, and the iterated derivative\n`iteratedPDeriv` is additive, homogeneous and satisfies a Leibniz rule over the antidiagonal of\nthe multiset of directions; `constantCoeff_iteratedPDeriv_mul` is the form a component\ncomputation uses.\n\nThe truncation `truncation n` sets the Taylor coefficients of total degree above `n` to zero.\n\nFinally the Euler operator `∑ x^ρ ∂_ρ` detects jets: a jet with vanishing constant coefficient\nkilled by the Euler operator is zero, and `coeff_eq_zero_of_coeff_pderiv_eq_zero` is the graded\nform of that statement, where control of the first derivatives below degree `n` controls the\ncoefficients up to degree `n`.\n\n## ii. Key results\n\n- `SpaceTimeAlgebra.coeff_star`, `SpaceTimeAlgebra.star_X` : the star is coefficientwise, and\n  the coordinates are self-adjoint.\n- `SpaceTimeAlgebra.starConjEquiv` : the conjugate module of the jet ring is the jet ring.\n- `SpaceTimeAlgebra.pderiv_star`, `SpaceTimeAlgebra.iteratedPDeriv_mul` : the derivative\n  commutes with the star, and the Leibniz rule for iterated derivatives.\n- `SpaceTimeAlgebra.truncation` : the truncation of a jet.\n- `SpaceTimeAlgebra.eq_zero_of_sum_X_smul_pderiv_eq_zero` : the Euler operator detects jets.\n- `SpaceTimeAlgebra.coeff_eq_zero_of_coeff_pderiv_eq_zero` : its graded form.\n\n## iii. Table of contents\n\n- A. The star structure on the jet ring\n- B. The formal partial derivative\n- C. Truncation of jets\n- D. The Euler operator\n  - D.1. The Euler vanishing principle by degree\n\n## iv. References\n\nThe jet ring itself is in `Physlib.SpaceAndTime.SpaceTime.SpaceTimeAlgebra.Basic`.",
+   "copyright": "2026 Jinzheng Li",
+   "sections": [
+    {
+     "line": 71,
+     "text": "## A. The star structure on the jet ring\n\nThe star operation on the jet ring is coefficientwise complex conjugation, fixing\nthe formal variables. In particular the spacetime coordinates are self-adjoint."
+    },
+    {
+     "line": 127,
+     "text": "## B. The formal partial derivative"
+    },
+    {
+     "line": 185,
+     "text": "## C. Truncation of jets"
+    },
+    {
+     "line": 245,
+     "text": "## D. The Euler operator"
+    },
+    {
+     "line": 297,
+     "text": "### D.1. The Euler vanishing principle by degree\n\nThe graded form of `eq_zero_of_sum_X_smul_pderiv_eq_zero`: control of the first\nderivatives below degree `n` controls the coefficients up to degree `n`."
+    }
+   ],
+   "declarations": [
+    {
+     "name": "SpaceTimeAlgebra.starConjEquiv",
+     "kind": "def",
+     "line": 90,
+     "doc": "**The real structure of the jet ring.** Coefficientwise conjugation is a `ℂ`-linear\nequivalence from the conjugate module of the jet ring back to the jet ring itself. It is\nhonestly `ℂ`-linear, not merely semilinear, because the conjugate-linearity of `star`\ncancels against the twisted scalar action of `ConjModule`.\n\nThis is what identifies the jets of a conjugate field with the conjugates of the jets:\n`ConjModule (SpaceTimeAlgebra ⊗[ℂ] V)` and `SpaceTimeAlgebra ⊗[ℂ] ConjModule V` differ\nexactly by this equivalence on the jet-ring factor.",
+     "statement": "noncomputable def starConjEquiv : ConjModule SpaceTimeAlgebra ≃ₗ[ℂ] SpaceTimeAlgebra",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeAlgebra.starConjEquiv_apply",
+     "kind": "lemma",
+     "line": 94,
+     "doc": "",
+     "statement": "lemma starConjEquiv_apply (f : ConjModule SpaceTimeAlgebra) :\n    starConjEquiv f = star ((conjEquiv (k := ℂ) (M := SpaceTimeAlgebra)).symm f)",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeAlgebra.starConjEquiv_symm_apply",
+     "kind": "lemma",
+     "line": 98,
+     "doc": "",
+     "statement": "lemma starConjEquiv_symm_apply (f : SpaceTimeAlgebra) :\n    starConjEquiv.symm f = conjEquiv (k := ℂ) (M := SpaceTimeAlgebra) (star f)",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeAlgebra.coeff_single_one_mul",
+     "kind": "lemma",
+     "line": 105,
+     "doc": "The first-order Leibniz rule: the degree-one Taylor coefficient, in the\ndirection `μ`, of a product of jets. This is the coefficient-level statement\nthat the first jet of a product is given by the product rule.",
+     "statement": "lemma coeff_single_one_mul (μ : Fin 1 ⊕ Fin 3) (f g : SpaceTimeAlgebra) :\n    coeff (Finsupp.single μ 1) (f * g) =\n      coeff (Finsupp.single μ 1) f * constantCoeff g +\n        constantCoeff f * coeff (Finsupp.single μ 1) g",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeAlgebra.constantCoeffₗ",
+     "kind": "def",
+     "line": 119,
+     "doc": "The constant-coefficient evaluation of a jet, as a `ℂ`-linear map.",
+     "statement": "noncomputable def constantCoeffₗ : SpaceTimeAlgebra →ₗ[ℂ] ℂ",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeAlgebra.constantCoeffₗ_apply",
+     "kind": "lemma",
+     "line": 125,
+     "doc": "",
+     "statement": "lemma constantCoeffₗ_apply (f : SpaceTimeAlgebra) : constantCoeffₗ f = constantCoeff f",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeAlgebra.iteratedPDeriv_pderiv",
+     "kind": "lemma",
+     "line": 134,
+     "doc": "Iterated formal derivatives commute with a single formal partial derivative.",
+     "statement": "lemma iteratedPDeriv_pderiv (s : Multiset (Fin 1 ⊕ Fin 3)) (μ : Fin 1 ⊕ Fin 3)\n    (f : SpaceTimeAlgebra) :\n    iteratedPDeriv s (pderiv μ f) = pderiv μ (iteratedPDeriv s f)",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeAlgebra.iteratedPDeriv_smul",
+     "kind": "lemma",
+     "line": 144,
+     "doc": "Iterated formal derivatives preserve complex scalar multiplication.",
+     "statement": "lemma iteratedPDeriv_smul (s : Multiset (Fin 1 ⊕ Fin 3)) (c : ℂ)\n    (f : SpaceTimeAlgebra) :\n    iteratedPDeriv s (c • f) = c • iteratedPDeriv s f",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeAlgebra.iteratedPDeriv_neg",
+     "kind": "lemma",
+     "line": 152,
+     "doc": "Iterated formal derivatives commute with negation.",
+     "statement": "lemma iteratedPDeriv_neg (s : Multiset (Fin 1 ⊕ Fin 3)) (f : SpaceTimeAlgebra) :\n    iteratedPDeriv s (-f) = -iteratedPDeriv s f",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeAlgebra.iteratedPDeriv_zero_apply",
+     "kind": "lemma",
+     "line": 160,
+     "doc": "The iterated formal derivative of the zero jet vanishes.",
+     "statement": "lemma iteratedPDeriv_zero_apply (s : Multiset (Fin 1 ⊕ Fin 3)) :\n    iteratedPDeriv s (0 : SpaceTimeAlgebra) = 0",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeAlgebra.iteratedPDeriv_sum",
+     "kind": "lemma",
+     "line": 167,
+     "doc": "The iterated formal derivative of a finite sum.",
+     "statement": "lemma iteratedPDeriv_sum {κ : Type*} (s : Multiset (Fin 1 ⊕ Fin 3)) (t : Finset κ)\n    (f : κ → SpaceTimeAlgebra) :\n    iteratedPDeriv s (∑ k ∈ t, f k)\n      = ∑ k ∈ t, iteratedPDeriv s (f k)",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeAlgebra.iteratedPDeriv_C_of_ne_zero",
+     "kind": "lemma",
+     "line": 179,
+     "doc": "The iterated derivative of a constant jet vanishes for a nonempty multiset of\ndirections.",
+     "statement": "lemma iteratedPDeriv_C_of_ne_zero {s : Multiset (Fin 1 ⊕ Fin 3)} (hs : s ≠ 0) (c : ℂ) :\n    iteratedPDeriv s (C c : SpaceTimeAlgebra) = 0",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeAlgebra.truncation",
+     "kind": "def",
+     "line": 192,
+     "doc": "The `n`-th truncation of a jet: the Taylor coefficients of total degree\ngreater than `n` are set to zero.",
+     "statement": "noncomputable def truncation (n : ℕ) (f : SpaceTimeAlgebra) : SpaceTimeAlgebra",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeAlgebra.coeff_truncation_of_le",
+     "kind": "lemma",
+     "line": 196,
+     "doc": "",
+     "statement": "lemma coeff_truncation_of_le {n : ℕ} {m : (Fin 1 ⊕ Fin 3) →₀ ℕ}\n    (h : Finsupp.degree m ≤ n) (f : SpaceTimeAlgebra) :\n    coeff m (truncation n f) = coeff m f",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeAlgebra.coeff_truncation_of_gt",
+     "kind": "lemma",
+     "line": 201,
+     "doc": "",
+     "statement": "lemma coeff_truncation_of_gt {n : ℕ} {m : (Fin 1 ⊕ Fin 3) →₀ ℕ}\n    (h : n < Finsupp.degree m) (f : SpaceTimeAlgebra) :\n    coeff m (truncation n f) = 0",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeAlgebra.truncation_add",
+     "kind": "lemma",
+     "line": 205,
+     "doc": "",
+     "statement": "lemma truncation_add (n : ℕ) (f g : SpaceTimeAlgebra) :\n    truncation n (f + g) = truncation n f + truncation n g",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeAlgebra.truncation_zero",
+     "kind": "lemma",
+     "line": 215,
+     "doc": "",
+     "statement": "lemma truncation_zero (n : ℕ) : truncation n (0 : SpaceTimeAlgebra) = 0",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeAlgebra.truncation_one",
+     "kind": "lemma",
+     "line": 224,
+     "doc": "Truncation fixes the identity: a constant series has its only nonzero Taylor\ncoefficient in degree zero, which every truncation keeps.",
+     "statement": "lemma truncation_one (n : ℕ) : truncation n (1 : SpaceTimeAlgebra) = 1",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeAlgebra.truncation_eq_one_of_coeff",
+     "kind": "lemma",
+     "line": 233,
+     "doc": "A power series with value `1` and no coefficients in nonzero degree up to `n`\ntruncates to `1`.",
+     "statement": "lemma truncation_eq_one_of_coeff {n : ℕ} {f : SpaceTimeAlgebra} (h0 : constantCoeff f = 1)\n    (hf : ∀ p : (Fin 1 ⊕ Fin 3) →₀ ℕ, p ≠ 0 → Finsupp.degree p ≤ n → coeff p f = 0) :\n    SpaceTimeAlgebra.truncation n f = SpaceTimeAlgebra.truncation n (1 : SpaceTimeAlgebra)",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeAlgebra.coeff_X_smul",
+     "kind": "lemma",
+     "line": 253,
+     "doc": "The Taylor coefficients of a jet multiplied by a formal coordinate: the\ncoefficient shifts down by one in that direction.",
+     "statement": "lemma coeff_X_smul (ρ : Fin 1 ⊕ Fin 3) (f : SpaceTimeAlgebra) (p : (Fin 1 ⊕ Fin 3) →₀ ℕ) :\n    coeff p ((X ρ : SpaceTimeAlgebra) • f) =\n      if Finsupp.single ρ 1 ≤ p then coeff (p - Finsupp.single ρ 1) f else 0",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeAlgebra.coeff_sum_X_smul_pderiv",
+     "kind": "lemma",
+     "line": 262,
+     "doc": "The Euler (radial) operator acts on Taylor coefficients as multiplication by the\ntotal degree.",
+     "statement": "lemma coeff_sum_X_smul_pderiv (f : SpaceTimeAlgebra) (p : (Fin 1 ⊕ Fin 3) →₀ ℕ) :\n    coeff p (∑ ρ, (X ρ : SpaceTimeAlgebra) • pderiv ρ f) =\n      ((Finsupp.degree p : ℕ) : ℂ) * coeff p f",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeAlgebra.eq_zero_of_sum_X_smul_pderiv_eq_zero",
+     "kind": "lemma",
+     "line": 286,
+     "doc": "The scalar vanishing principle for the Euler operator: a jet vanishing at the base\npoint that is killed by the Euler operator is zero.",
+     "statement": "lemma eq_zero_of_sum_X_smul_pderiv_eq_zero {f : SpaceTimeAlgebra} (h0 : constantCoeff f = 0)\n    (hf : ∑ ρ, (X ρ : SpaceTimeAlgebra) • pderiv ρ f = 0) : f = 0",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeAlgebra.coeff_mul_eq_zero_of_lt",
+     "kind": "lemma",
+     "line": 308,
+     "doc": "A product with a factor whose coefficients vanish below degree `n` has coefficients\nvanishing below degree `n`.",
+     "statement": "lemma coeff_mul_eq_zero_of_lt {n : ℕ} {w : SpaceTimeAlgebra}\n    (hw : ∀ q : (Fin 1 ⊕ Fin 3) →₀ ℕ, Finsupp.degree q < n → coeff q w = 0) (v : SpaceTimeAlgebra)\n    {q : (Fin 1 ⊕ Fin 3) →₀ ℕ} (hq : Finsupp.degree q < n) : coeff q (w * v) = 0",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeAlgebra.coeff_eq_zero_of_coeff_pderiv_eq_zero",
+     "kind": "lemma",
+     "line": 323,
+     "doc": "The Euler vanishing principle: a power series all of whose first derivatives have\ncoefficients vanishing below degree `n` has vanishing coefficients in every nonzero degree\nup to `n`, since `∑_ρ x_ρ ∂_ρ f` has the coefficient of `f` at `p` scaled by the degree\nof `p`.",
+     "statement": "lemma coeff_eq_zero_of_coeff_pderiv_eq_zero {n : ℕ} {f : SpaceTimeAlgebra}\n    (hf : ∀ (ρ : Fin 1 ⊕ Fin 3) (q : (Fin 1 ⊕ Fin 3) →₀ ℕ), Finsupp.degree q < n →\n      coeff q (pderiv ρ f) = 0)\n    {p : (Fin 1 ⊕ Fin 3) →₀ ℕ} (hp : p ≠ 0) (hpn : Finsupp.degree p ≤ n) : coeff p f = 0",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeAlgebra.coeff_eq_zero_of_pderiv_eq_mul",
+     "kind": "lemma",
+     "line": 345,
+     "doc": "A power series satisfying a radial relation `∂_ρ f = x_ρ f`, with the `x_ρ` vanishing\nbelow degree `n`, has no coefficients in nonzero degree up to `n`.",
+     "statement": "lemma coeff_eq_zero_of_pderiv_eq_mul {n : ℕ} {f : SpaceTimeAlgebra}\n    {x : (Fin 1 ⊕ Fin 3) → SpaceTimeAlgebra}\n    (hd : ∀ ρ, pderiv ρ f = x ρ * f)\n    (hx : ∀ (ρ : Fin 1 ⊕ Fin 3) (q : (Fin 1 ⊕ Fin 3) →₀ ℕ), Finsupp.degree q < n →\n      coeff q (x ρ) = 0)\n    {p : (Fin 1 ⊕ Fin 3) →₀ ℕ} (hp : p ≠ 0) (hpn : Finsupp.degree p ≤ n) : coeff p f = 0",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeAlgebra.C_real_smul",
+     "kind": "lemma",
+     "line": 354,
+     "doc": "",
+     "statement": "lemma C_real_smul (r : ℝ) (x : ℂ) :\n    (MvPowerSeries.C (r • x) : SpaceTimeAlgebra) = r • MvPowerSeries.C x",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeAlgebra.constantCoeff_real_smul",
+     "kind": "lemma",
+     "line": 359,
+     "doc": "The constant coefficient commutes with real scalars.",
+     "statement": "lemma constantCoeff_real_smul (r : ℝ) (f : SpaceTimeAlgebra) :\n    MvPowerSeries.constantCoeff (r • f) = r • MvPowerSeries.constantCoeff f",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeAlgebra.pderiv_real_smul",
+     "kind": "lemma",
+     "line": 364,
+     "doc": "The formal derivatives commute with real scalars.",
+     "statement": "lemma pderiv_real_smul (μ : Fin 1 ⊕ Fin 3) (r : ℝ) (f : SpaceTimeAlgebra) :\n    MvPowerSeries.pderiv μ (r • f) = r • MvPowerSeries.pderiv μ f",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Jacobi.lean",
+   "module": "PhyslibAlpha.SpaceAndTime.SpaceTime.SpaceTimeAlgebra.Jacobi",
+   "title": "Jacobi's formula for matrices of jets",
+   "doc": "## i. Overview\n\nJacobi's formula `∂ det M = tr (∂M · adj M)` for a square matrix of jets, in the generality\nneeded by the jets of any special unitary group: it is what makes the Maurer–Cartan form\n`i (∂U) U⁻¹` of an `SU(n)` jet traceless, since `det U = 1` and `U⁻¹ = adj U`.\n\n## ii. Key results\n\n- `SpaceTimeAlgebra.pderiv_finset_prod` : the Leibniz rule for a finite product.\n- `SpaceTimeAlgebra.jacobi` : Jacobi's formula.\n\n## iii. Table of contents\n\n- A. The Leibniz rule for a finite product\n- B. Jacobi's formula\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Jinzheng Li",
+   "sections": [
+    {
+     "line": 42,
+     "text": "## A. The Leibniz rule for a finite product"
+    },
+    {
+     "line": 63,
+     "text": "## B. Jacobi's formula"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "SpaceTimeAlgebra.pderiv_finset_prod",
+     "kind": "lemma",
+     "line": 49,
+     "doc": "The Leibniz rule for a finite product.",
+     "statement": "lemma pderiv_finset_prod {ι : Type*} [DecidableEq ι] (μ : Fin 1 ⊕ Fin 3) (s : Finset ι)\n    (f : ι → SpaceTimeAlgebra) :\n    pderiv μ (∏ i ∈ s, f i) = ∑ i ∈ s, (∏ j ∈ s.erase i, f j) * pderiv μ (f i)",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeAlgebra.jacobi",
+     "kind": "lemma",
+     "line": 71,
+     "doc": "**Jacobi's formula**: the derivative of a determinant is the trace of the derivative\nagainst the adjugate.",
+     "statement": "lemma jacobi {κ : Type} [Fintype κ] [DecidableEq κ] (M : Matrix κ κ SpaceTimeAlgebra)\n    (μ : Fin 1 ⊕ Fin 3) :\n    pderiv μ M.det = (M.map (pderiv μ) * M.adjugate).trace",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean",
+   "module": "PhyslibAlpha.SpaceAndTime.SpaceTime.SpaceTimeAlgebra.Matrix",
+   "title": "Matrices over the jet ring",
+   "doc": "## i. Overview\n\nResults about matrices with entries in `SpaceTimeAlgebra`, chiefly the Euler (radial) transport: a\nmatrix of jets vanishing at the base point is the radial logarithmic derivative of a formal\nfundamental solution.\n\n## ii. Key results\n\n- `mapMatrix_constantCoeff_star` : entrywise evaluation at the base point commutes with the\n  conjugate transpose\n- `coeff_sum_X_smul_map_pderiv` : the Euler operator on matrices of jets acts entrywise on Taylor\n  coefficients as multiplication by the total degree\n- `matrix_eq_zero_of_euler_eq_mul_add_mul` : the vanishing principle for the Euler operator: a\n  matrix of jets vanishing at the base point and satisfying `E W = A W + W B` with `A`, `B`\n  vanishing at the base point is zero\n- `exists_matrix_eulerTransport` : the Euler (radial) transport of a jet matrix `R` vanishing at the\n  base point: a fundamental solution of the radial system `E U = R U` based at the identity, built\n  order-by-order by the Euler recursion\n\n## iii. Table of contents\n\n- A. The Euler operator toolkit on matrices\n- B. The Euler vanishing principle by degree on matrices\n- C. Unitarity and determinant of the Euler transport\n- D. The Leibniz rule at the base point for matrices of power series\n- E. Conjugation, scalars and derivatives of matrices of jets\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Joseph Tooby-Smith",
+   "sections": [
+    {
+     "line": 54,
+     "text": "## A. The Euler operator toolkit on matrices"
+    },
+    {
+     "line": 208,
+     "text": "## B. The Euler vanishing principle by degree on matrices"
+    },
+    {
+     "line": 254,
+     "text": "## C. Unitarity and determinant of the Euler transport"
+    },
+    {
+     "line": 370,
+     "text": "## D. The Leibniz rule at the base point for matrices of power series"
+    },
+    {
+     "line": 402,
+     "text": "## E. Conjugation, scalars and derivatives of matrices of jets"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "SpaceTimeAlgebra.mapMatrix_constantCoeff_star",
+     "kind": "lemma",
+     "line": 61,
+     "doc": "Entrywise evaluation at the base point commutes with the conjugate transpose.",
+     "statement": "lemma mapMatrix_constantCoeff_star {n : Type} [Fintype n] [DecidableEq n]\n    (A : Matrix n n SpaceTimeAlgebra) :\n    (constantCoeff : SpaceTimeAlgebra →+* ℂ).mapMatrix (star A) =\n      star ((constantCoeff : SpaceTimeAlgebra →+* ℂ).mapMatrix A)",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeAlgebra.coeff_sum_X_smul_map_pderiv",
+     "kind": "lemma",
+     "line": 70,
+     "doc": "The Euler operator on matrices of jets acts entrywise on Taylor coefficients as\nmultiplication by the total degree.",
+     "statement": "lemma coeff_sum_X_smul_map_pderiv {κ : Type}\n    (M : Matrix κ κ SpaceTimeAlgebra) (p : (Fin 1 ⊕ Fin 3) →₀ ℕ) (i j : κ) :\n    coeff p ((∑ ρ, (X ρ : SpaceTimeAlgebra) • M.map (pderiv ρ)) i j) =\n      ((Finsupp.degree p : ℕ) : ℂ) * coeff p (M i j)",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeAlgebra.matrix_eq_zero_of_euler_eq_mul_add_mul",
+     "kind": "lemma",
+     "line": 84,
+     "doc": "The vanishing principle for the Euler operator: a matrix of jets vanishing at the\nbase point and satisfying `E W = A W + W B` with `A`, `B` vanishing at the base point\nis zero. Each Taylor coefficient of `W` is a multiple of coefficients of strictly\nsmaller degree, so all vanish by strong induction on the degree.",
+     "statement": "lemma matrix_eq_zero_of_euler_eq_mul_add_mul {κ : Type} [Fintype κ]\n    {W : Matrix κ κ SpaceTimeAlgebra} (A B : Matrix κ κ SpaceTimeAlgebra)\n    (hA : ∀ i j, constantCoeff (A i j) = 0) (hB : ∀ i j, constantCoeff (B i j) = 0)\n    (h0 : ∀ i j, constantCoeff (W i j) = 0)\n    (hW : ∑ ρ, (X ρ : SpaceTimeAlgebra) • W.map (pderiv ρ) = A * W + W * B) :\n    W = 0",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeAlgebra.exists_matrix_eulerTransport",
+     "kind": "lemma",
+     "line": 145,
+     "doc": "The Euler (radial) transport of a jet matrix `R` vanishing at the base point:\na fundamental solution of the radial system `E U = R U` based at the identity,\nbuilt order-by-order by the Euler recursion.",
+     "statement": "lemma exists_matrix_eulerTransport {κ : Type} [Fintype κ] [DecidableEq κ]\n    (R : Matrix κ κ SpaceTimeAlgebra) (hR0 : ∀ i j, constantCoeff (R i j) = 0) :\n    ∃ U : Matrix κ κ SpaceTimeAlgebra, (constantCoeff : SpaceTimeAlgebra →+* ℂ).mapMatrix U = 1 ∧\n      ∑ ρ, (X ρ : SpaceTimeAlgebra) • U.map (pderiv ρ) = R * U",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeAlgebra.coeff_entry_eq_zero_of_map_pderiv_eq_mul",
+     "kind": "lemma",
+     "line": 217,
+     "doc": "The matrix form of `coeff_eq_zero_of_pderiv_eq_mul`: the entries of a matrix of power\nseries satisfying `∂_ρ A = X_ρ A`, with the `X_ρ` vanishing below degree `n`, have no\ncoefficients in nonzero degree up to `n`.",
+     "statement": "lemma coeff_entry_eq_zero_of_map_pderiv_eq_mul {κ : Type} [Fintype κ] {n : ℕ}\n    {A : Matrix κ κ SpaceTimeAlgebra} {X : (Fin 1 ⊕ Fin 3) → Matrix κ κ SpaceTimeAlgebra}\n    (hd : ∀ ρ, A.map (pderiv ρ) = X ρ * A)\n    (hX : ∀ (ρ : Fin 1 ⊕ Fin 3) (q : (Fin 1 ⊕ Fin 3) →₀ ℕ), Finsupp.degree q < n →\n      ∀ i j, coeff q (X ρ i j) = 0)\n    (i j : κ) {p : (Fin 1 ⊕ Fin 3) →₀ ℕ} (hp : p ≠ 0) (hpn : Finsupp.degree p ≤ n) :\n    coeff p (A i j) = 0",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeAlgebra.matrix_map_truncation_eq_one",
+     "kind": "lemma",
+     "line": 231,
+     "doc": "A matrix of power series with identity value and no coefficients in nonzero degree up\nto `n` truncates to the identity.",
+     "statement": "lemma matrix_map_truncation_eq_one {κ : Type} [Fintype κ] [DecidableEq κ] {n : ℕ}\n    {A : Matrix κ κ SpaceTimeAlgebra}\n        (h0 : (constantCoeff : SpaceTimeAlgebra →+* ℂ).mapMatrix A = 1)\n    (hA : ∀ (i j : κ) (p : (Fin 1 ⊕ Fin 3) →₀ ℕ), p ≠ 0 → Finsupp.degree p ≤ n →\n      coeff p (A i j) = 0) :\n    A.map (SpaceTimeAlgebra.truncation n) = (1 : Matrix κ κ SpaceTimeAlgebra).map\n        (SpaceTimeAlgebra.truncation n)",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeAlgebra.matrix_map_pderiv_mul",
+     "kind": "lemma",
+     "line": 261,
+     "doc": "The entrywise Leibniz rule for matrix products of jets.",
+     "statement": "lemma matrix_map_pderiv_mul {κ : Type} [Fintype κ] (ρ : Fin 1 ⊕ Fin 3)\n    (M N : Matrix κ κ SpaceTimeAlgebra) :\n    (M * N).map (pderiv ρ) = M.map (pderiv ρ) * N + M * N.map (pderiv ρ)",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeAlgebra.sum_X_smul_map_pderiv_mul",
+     "kind": "lemma",
+     "line": 270,
+     "doc": "The Euler operator on matrices of jets is a derivation.",
+     "statement": "lemma sum_X_smul_map_pderiv_mul {κ : Type} [Fintype κ]\n    (M N : Matrix κ κ SpaceTimeAlgebra) :\n    ∑ ρ, (X ρ : SpaceTimeAlgebra) • (M * N).map (pderiv ρ) =\n      (∑ ρ, (X ρ : SpaceTimeAlgebra) • M.map (pderiv ρ)) * N +\n        M * ∑ ρ, (X ρ : SpaceTimeAlgebra) • N.map (pderiv ρ)",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeAlgebra.sum_X_smul_map_pderiv_star",
+     "kind": "lemma",
+     "line": 280,
+     "doc": "The Euler operator commutes with the conjugate transpose.",
+     "statement": "lemma sum_X_smul_map_pderiv_star {κ : Type}\n    (M : Matrix κ κ SpaceTimeAlgebra) :\n    ∑ ρ, (X ρ : SpaceTimeAlgebra) • (star M).map (pderiv ρ) =\n      star (∑ ρ, (X ρ : SpaceTimeAlgebra) • M.map (pderiv ρ))",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeAlgebra.sum_X_smul_map_pderiv_one",
+     "kind": "lemma",
+     "line": 289,
+     "doc": "The Euler operator kills the identity matrix.",
+     "statement": "lemma sum_X_smul_map_pderiv_one {κ : Type} [DecidableEq κ] :\n    ∑ ρ, (X ρ : SpaceTimeAlgebra) • (1 : Matrix κ κ SpaceTimeAlgebra).map (pderiv ρ) = 0",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeAlgebra.eulerTransport_mul_star",
+     "kind": "lemma",
+     "line": 298,
+     "doc": "A fundamental solution of the radial system `E U = R U` based at the identity is\nunitary when `R` is anti-hermitian: `U U† − 1` vanishes at the base point and\nsatisfies a homogeneous linear radial system, so it vanishes identically.",
+     "statement": "lemma eulerTransport_mul_star {κ : Type} [Fintype κ] [DecidableEq κ]\n    {R U : Matrix κ κ SpaceTimeAlgebra} (hRstar : star R = -R)\n    (hR0 : ∀ i j, constantCoeff (R i j) = 0)\n    (hU0 : (constantCoeff : SpaceTimeAlgebra →+* ℂ).mapMatrix U = 1)\n    (hEU : ∑ ρ, (X ρ : SpaceTimeAlgebra) • U.map (pderiv ρ) = R * U) :\n    U * star U = 1",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeAlgebra.sum_X_smul_mcMatrix_of_eulerTransport",
+     "kind": "lemma",
+     "line": 325,
+     "doc": "The radial Maurer–Cartan component of a unitary fundamental solution of the radial\nsystem `E V = −i P V` is `P`: `∑_μ x_μ · i (∂_μ V) V† = P`.",
+     "statement": "lemma sum_X_smul_mcMatrix_of_eulerTransport {κ : Type} [Fintype κ] [DecidableEq κ]\n    {P V : Matrix κ κ SpaceTimeAlgebra} (hVu : V * star V = 1)\n    (hEV : ∑ μ, (X μ : SpaceTimeAlgebra) • V.map (pderiv μ) = ((-Complex.I) • P) * V) :\n    ∑ μ, (X μ : SpaceTimeAlgebra) • (Complex.I • (V.map (pderiv μ) * star V)) = P",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeAlgebra.eulerTransport_det",
+     "kind": "lemma",
+     "line": 341,
+     "doc": "A fundamental solution of the radial system `E U = R U` based at the identity has\ndeterminant one when `R` is traceless: by Jacobi's formula the determinant is killed\nby the Euler operator, so it is the constant `1`.",
+     "statement": "lemma eulerTransport_det {κ : Type} [Fintype κ] [DecidableEq κ]\n    {R U : Matrix κ κ SpaceTimeAlgebra}\n    (hjac : ∀ (M : Matrix κ κ SpaceTimeAlgebra) (μ : Fin 1 ⊕ Fin 3),\n      pderiv μ M.det = (M.map (pderiv μ) * M.adjugate).trace)\n    (hRtr : R.trace = 0)\n    (hU0 : (constantCoeff : SpaceTimeAlgebra →+* ℂ).mapMatrix U = 1)\n    (hEU : ∑ ρ, (X ρ : SpaceTimeAlgebra) • U.map (pderiv ρ) = R * U) :\n    U.det = 1",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeAlgebra.matrix_multiset_sum_apply",
+     "kind": "lemma",
+     "line": 377,
+     "doc": "The entry of a multiset sum of matrices is the multiset sum of the entries.",
+     "statement": "lemma matrix_multiset_sum_apply {κ α : Type*} [AddCommMonoid α]\n    (m : Multiset (Matrix κ κ α)) (i j : κ) :\n    m.sum i j = (m.map fun A => A i j).sum",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeAlgebra.matrix_constantCoeff_iteratedPDeriv_mul",
+     "kind": "lemma",
+     "line": 388,
+     "doc": "The matrix Leibniz rule at the base point: the base-point Taylor coefficients of a\nproduct of matrices of jets are the antidiagonal convolution of the base-point\ncoefficients of the factors.",
+     "statement": "lemma matrix_constantCoeff_iteratedPDeriv_mul {κ : Type} [Fintype κ]\n    (s : Multiset (Fin 1 ⊕ Fin 3)) (M N : Matrix κ κ SpaceTimeAlgebra) :\n    ((M * N).map fun f => constantCoeff (iteratedPDeriv s f))\n      = (s.antidiagonal.map fun p =>\n          (M.map fun f => constantCoeff (iteratedPDeriv p.1 f)) *\n            (N.map fun f => constantCoeff (iteratedPDeriv p.2 f))).sum",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeAlgebra.mapMatrix_C_star",
+     "kind": "lemma",
+     "line": 413,
+     "doc": "Entrywise inclusion of constants commutes with the conjugate transpose.",
+     "statement": "lemma mapMatrix_C_star [Fintype κ] [DecidableEq κ] (A : Matrix κ κ ℂ) :\n    (C : ℂ →+* SpaceTimeAlgebra).mapMatrix (star A) = star\n        ((C : ℂ →+* SpaceTimeAlgebra).mapMatrix A)",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeAlgebra.mapMatrix_C_smul",
+     "kind": "lemma",
+     "line": 420,
+     "doc": "Entrywise inclusion of constants commutes with complex scalars.",
+     "statement": "lemma mapMatrix_C_smul [Fintype κ] [DecidableEq κ] (c : ℂ) (M : Matrix κ κ ℂ) :\n    (C : ℂ →+* SpaceTimeAlgebra).mapMatrix (c • M) = c •\n        (C : ℂ →+* SpaceTimeAlgebra).mapMatrix M",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeAlgebra.mapMatrix_constantCoeff_smul",
+     "kind": "lemma",
+     "line": 428,
+     "doc": "The entrywise constant coefficient commutes with complex scalars.",
+     "statement": "lemma mapMatrix_constantCoeff_smul [Fintype κ] [DecidableEq κ] (c : ℂ)\n    (M : Matrix κ κ SpaceTimeAlgebra) :\n    (constantCoeff : SpaceTimeAlgebra →+* ℂ).mapMatrix (c • M)\n      = c • (constantCoeff : SpaceTimeAlgebra →+* ℂ).mapMatrix M",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeAlgebra.star_map_pderiv",
+     "kind": "lemma",
+     "line": 436,
+     "doc": "The entrywise derivative commutes with the conjugate transpose.",
+     "statement": "lemma star_map_pderiv (μ : Fin 1 ⊕ Fin 3) (A : Matrix κ κ SpaceTimeAlgebra) :\n    star (A.map (pderiv μ)) = (star A).map (pderiv μ)",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeAlgebra.map_pderiv_smul",
+     "kind": "lemma",
+     "line": 443,
+     "doc": "Pulling a complex scalar out of the entrywise derivative.",
+     "statement": "lemma map_pderiv_smul (μ : Fin 1 ⊕ Fin 3) (c : ℂ) (M : Matrix κ κ SpaceTimeAlgebra) :\n    (c • M).map (pderiv μ) = c • M.map (pderiv μ)",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeAlgebra.map_pderiv_sub",
+     "kind": "lemma",
+     "line": 448,
+     "doc": "The entrywise derivative of a difference.",
+     "statement": "lemma map_pderiv_sub (μ : Fin 1 ⊕ Fin 3) (M N : Matrix κ κ SpaceTimeAlgebra) :\n    (M - N).map (pderiv μ) = M.map (pderiv μ) - N.map (pderiv μ)",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeAlgebra.map_pderiv_star_of_unitary",
+     "kind": "lemma",
+     "line": 455,
+     "doc": "The entrywise derivative of the conjugate transpose of a unitary matrix, through the\ndifferentiated unitarity relation.",
+     "statement": "lemma map_pderiv_star_of_unitary [Fintype κ] [DecidableEq κ] (μ : Fin 1 ⊕ Fin 3)\n    {U : Matrix κ κ SpaceTimeAlgebra}\n    (hU : U * star U = 1) (hU' : star U * U = 1) :\n    (star U).map (pderiv μ) = -(star U * U.map (pderiv μ) * star U)",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeAlgebra.star_mcMatrix",
+     "kind": "lemma",
+     "line": 470,
+     "doc": "The Maurer–Cartan matrix `i (∂_μ U) U†` of a unitary matrix of jets is hermitian.",
+     "statement": "lemma star_mcMatrix [Fintype κ] [DecidableEq κ] (μ : Fin 1 ⊕ Fin 3)\n    {U : Matrix κ κ SpaceTimeAlgebra}\n    (hU : U * star U = 1) (hU' : star U * U = 1) :\n    star (Complex.I • (U.map (pderiv μ) * star U)) = Complex.I • (U.map (pderiv μ) * star U)",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Taylor.lean",
+   "module": "PhyslibAlpha.SpaceAndTime.SpaceTime.SpaceTimeAlgebra.Taylor",
+   "title": "Taylor determinacy and completeness of jets",
+   "doc": "## i. Overview\n\nA jet is determined by the base-point values of its iterated derivatives, and a jet all of\nwhose first derivatives vanish is the constant jet of its value. These are the two facts\nthat make the jets of a matrix gauge group a faithful package of local gauge data, in the\nsense of `LocalGaugeData.Faithful`. Conversely every family of base-point Taylor data is\nrealized by a jet, `ofDerivValues`, and entrywise by a matrix of jets, `taylorMatrix`: this\nis the Taylor completeness half of `LocalGaugeData.Free`.\n\n## ii. Key results\n\n- `SpaceTimeAlgebra.ext_of_constantCoeff_iteratedPDeriv` : Taylor determinacy.\n- `SpaceTimeAlgebra.eq_C_of_pderiv_eq_zero` : a jet with vanishing derivatives is constant.\n- `SpaceTimeAlgebra.ofDerivValues` :\n  Taylor completeness.\n- `SpaceTimeAlgebra.taylorMatrix` : Taylor completeness for matrices of jets.\n\n## iii. Table of contents\n\n- A. Taylor completeness\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Jinzheng Li",
+   "sections": [
+    {
+     "line": 46,
+     "text": "## A. Taylor completeness"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "SpaceTimeAlgebra.star_ofDerivValues",
+     "kind": "lemma",
+     "line": 52,
+     "doc": "",
+     "statement": "lemma star_ofDerivValues (f : Multiset (Fin 1 ⊕ Fin 3) → ℂ) :\n    star (ofDerivValues f) = ofDerivValues fun s => star (f s)",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeAlgebra.ofDerivValues_sum",
+     "kind": "lemma",
+     "line": 58,
+     "doc": "",
+     "statement": "lemma ofDerivValues_sum {ι : Type} (t : Finset ι) (f : ι → Multiset (Fin 1 ⊕ Fin 3) → ℂ) :\n    ofDerivValues (fun s => ∑ i ∈ t, f i s) = ∑ i ∈ t, ofDerivValues (f i)",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeAlgebra.taylorMatrix",
+     "kind": "def",
+     "line": 64,
+     "doc": "The matrix of jets with prescribed base-point Taylor data `M`, entrywise.",
+     "statement": "noncomputable def taylorMatrix {κ : Type} (M : Multiset (Fin 1 ⊕ Fin 3) → Matrix κ κ ℂ) :\n    Matrix κ κ SpaceTimeAlgebra",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeAlgebra.taylorMatrix_apply",
+     "kind": "lemma",
+     "line": 68,
+     "doc": "",
+     "statement": "lemma taylorMatrix_apply {κ : Type} (M : Multiset (Fin 1 ⊕ Fin 3) → Matrix κ κ ℂ) (i j : κ) :\n    taylorMatrix M i j = ofDerivValues fun s => M s i j",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeAlgebra.star_taylorMatrix",
+     "kind": "lemma",
+     "line": 72,
+     "doc": "",
+     "statement": "lemma star_taylorMatrix {κ : Type} {M : Multiset (Fin 1 ⊕ Fin 3) → Matrix κ κ ℂ}\n    (hM : ∀ s, star (M s) = M s) : star (taylorMatrix M) = taylorMatrix M",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeAlgebra.trace_taylorMatrix",
+     "kind": "lemma",
+     "line": 78,
+     "doc": "",
+     "statement": "lemma trace_taylorMatrix {κ : Type} [Fintype κ] {M : Multiset (Fin 1 ⊕ Fin 3) → Matrix κ κ ℂ}\n    (hM : ∀ s, (M s).trace = 0) : (taylorMatrix M).trace = 0",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeAlgebra.map_constantCoeff_iteratedPDeriv_taylorMatrix",
+     "kind": "lemma",
+     "line": 86,
+     "doc": "The base-point Taylor data of `taylorMatrix M` are `M`, entrywise.",
+     "statement": "lemma map_constantCoeff_iteratedPDeriv_taylorMatrix {κ : Type}\n    (M : Multiset (Fin 1 ⊕ Fin 3) → Matrix κ κ ℂ) (s : Multiset (Fin 1 ⊕ Fin 3)) :\n    (taylorMatrix M).map (fun f => constantCoeff (iteratedPDeriv s f)) = M s",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean",
+   "module": "PhyslibAlpha.SpaceAndTime.SpaceTime.SpaceTimeDerivAlgebra",
+   "title": "Derivative algebras",
+   "doc": "## i. Overview\n\n\n## ii. Key results\n\n- `SpaceTimeDerivAlgebraℂ` : the ℂ-algebra of derivative symbols in spacetime\n- `basis` : the basis of the algebra of derivative symbols, indexed by multisets of spacetime\n  indices: the multiset `s` labels the monomial `∂_s`\n- `basis_apply_symmetricAlgebra` : the basis vector at a multiset of derivative indices is the\n  monomial of the symmetric algebra of dual symbols\n- `basis_nil` : the basis vector at the empty multiset is the unit of the algebra: the zeroth-order\n  symbol carries no derivatives\n\n## iii. Table of contents\n\n- A. The complex derivative algebra\n  - A.1. The basis indexed by multisets\n  - A.2. The derivative operator\n  - A.3. Evaluating on the Jet ring\n  - A.4. The action of the Jet ring\n  - A.5. The action of the Lorentz group\n  - A.6. The derivative-degree scaling\n  - A.7. The derivative-degree polynomial\n- B. The real derivative algebra\n- C. The multiset basis of `SpaceTimeDerivAlgebraℝ`\n- D. The derivative-degree polynomial on the real derivative algebra\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Joseph Tooby-Smith",
+   "sections": [
+    {
+     "line": 51,
+     "text": "## A. The complex derivative algebra"
+    },
+    {
+     "line": 59,
+     "text": "### A.1. The basis indexed by multisets"
+    },
+    {
+     "line": 87,
+     "text": "### A.2. The derivative operator"
+    },
+    {
+     "line": 129,
+     "text": "### A.3. Evaluating on the Jet ring"
+    },
+    {
+     "line": 251,
+     "text": "### A.4. The action of the Jet ring"
+    },
+    {
+     "line": 453,
+     "text": "### A.5. The action of the Lorentz group"
+    },
+    {
+     "line": 558,
+     "text": "### A.6. The derivative-degree scaling"
+    },
+    {
+     "line": 602,
+     "text": "### A.7. The derivative-degree polynomial\n\nThe degree scaling of the previous section records the derivative degree in a scalar. The\nsame construction with the scalar replaced by a formal variable records it in a polynomial:\n`gradePoly` is the linear map sending the basis monomial `∂_s` to `X ^ |s| ∂_s`, so the\ncoefficient of `X ^ n` in `gradePoly a` is the part of `a` of derivative degree `n`."
+    },
+    {
+     "line": 653,
+     "text": "## B. The real derivative algebra"
+    },
+    {
+     "line": 735,
+     "text": "## C. The multiset basis of `SpaceTimeDerivAlgebraℝ`"
+    },
+    {
+     "line": 804,
+     "text": "## D. The derivative-degree polynomial on the real derivative algebra"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "SpaceTimeDerivAlgebraℂ.basis_apply_symmetricAlgebra",
+     "kind": "lemma",
+     "line": 69,
+     "doc": "The basis vector at a multiset of derivative indices is the corresponding basis monomial\nof the symmetric algebra of dual symbols. This is `basis_apply` of\n`Physlib.SpaceAndTime.SpaceTime.SpaceTimeDerivAlgebra.Basic` in the symmetric-algebra form,\nrather than through `SymmetricAlgebra.equivMvPolynomial`.",
+     "statement": "lemma basis_apply_symmetricAlgebra (s : Multiset (Fin 1 ⊕ Fin 3)) :\n    basis s =\n      Lorentz.ComplexCoVector.basis.dualBasis.symmetricAlgebra (Multiset.toFinsupp s)",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeDerivAlgebraℂ.basis_nil",
+     "kind": "lemma",
+     "line": 77,
+     "doc": "The basis vector at the empty multiset is the unit of the algebra: the\nzeroth-order symbol carries no derivatives.",
+     "statement": "lemma basis_nil :\n    basis ({} : Multiset (Fin 1 ⊕ Fin 3)) = 1",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeDerivAlgebraℂ.deriv",
+     "kind": "def",
+     "line": 95,
+     "doc": "The derivative of an element in `SpaceTimeDerivAlgebraℂ` taking e.g.\n`∂_s` to `∂_μ ∂_s`.",
+     "statement": "noncomputable def deriv (μ : Fin 1 ⊕ Fin 3) : SpaceTimeDerivAlgebraℂ →ₗ[ℂ] SpaceTimeDerivAlgebraℂ",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeDerivAlgebraℂ.deriv_basis",
+     "kind": "lemma",
+     "line": 99,
+     "doc": "",
+     "statement": "lemma deriv_basis (μ : Fin 1 ⊕ Fin 3) (m : (Fin 1 ⊕ Fin 3) →₀ ℕ) :\n    deriv μ (Lorentz.ComplexCoVector.basis.dualBasis.symmetricAlgebra m) =\n      Lorentz.ComplexCoVector.basis.dualBasis.symmetricAlgebra (m + Finsupp.single μ 1)",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeDerivAlgebraℂ.deriv_comm_apply",
+     "kind": "lemma",
+     "line": 104,
+     "doc": "",
+     "statement": "lemma deriv_comm_apply (μ ν : Fin 1 ⊕ Fin 3) (x : SpaceTimeDerivAlgebraℂ) :\n    deriv μ (deriv ν x) = deriv ν (deriv μ x)",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeDerivAlgebraℂ.deriv_basis_multiset",
+     "kind": "lemma",
+     "line": 114,
+     "doc": "The derivative operator on the multiset basis: appending the derivative\nindex to the multiset.",
+     "statement": "lemma deriv_basis_multiset (μ : Fin 1 ⊕ Fin 3) (s : Multiset (Fin 1 ⊕ Fin 3)) :\n    deriv μ (basis s) = basis (s + {μ})",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeDerivAlgebraℂ.deriv_apply_eq_mul",
+     "kind": "lemma",
+     "line": 122,
+     "doc": "The derivative operator is right multiplication by the first-order derivative\nsymbol.",
+     "statement": "lemma deriv_apply_eq_mul (μ : Fin 1 ⊕ Fin 3) (a : SpaceTimeDerivAlgebraℂ) :\n    deriv μ a = a * basis ({μ} : Multiset (Fin 1 ⊕ Fin 3))",
+     "sorry": false
+    },
+    {
+     "name": "MvPowerSeries.pderiv_comm",
+     "kind": "lemma",
+     "line": 138,
+     "doc": "Formal partial derivatives of a multivariate power series commute: each is given on\ncoefficients by a shift and a multiplication, and the two shifts commute.",
+     "statement": "lemma _root_.MvPowerSeries.pderiv_comm {σ R : Type*} [CommSemiring R] (i j : σ)\n    (f : MvPowerSeries σ R) :\n    MvPowerSeries.pderiv i (MvPowerSeries.pderiv j f) =\n      MvPowerSeries.pderiv j (MvPowerSeries.pderiv i f)",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 154,
+     "doc": "Differentiating a jet along a multiset of directions is well defined: the partial\nderivatives commute, so the fold over a multiset does not depend on the order.",
+     "statement": "instance : RightCommutative\n    (fun (f : SpaceTimeAlgebra) (μ : Fin 1 ⊕ Fin 3) => MvPowerSeries.pderiv μ f)",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeDerivAlgebraℂ.eval",
+     "kind": "def",
+     "line": 159,
+     "doc": "The evaluation map taking a function `f : SpaceTimeAlgebra` to `∂_μ f`.",
+     "statement": "noncomputable def eval : SpaceTimeDerivAlgebraℂ →ₗ[ℂ] SpaceTimeAlgebra →ₗ[ℂ] ℂ",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeDerivAlgebraℂ.eval_basis",
+     "kind": "lemma",
+     "line": 165,
+     "doc": "",
+     "statement": "lemma eval_basis (m : (Fin 1 ⊕ Fin 3) →₀ ℕ) (f : SpaceTimeAlgebra) :\n    eval (Lorentz.ComplexCoVector.basis.dualBasis.symmetricAlgebra m) f =\n      (∏ μ, (m μ)! : ℕ) • MvPowerSeries.coeff m f",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeDerivAlgebraℂ.eval_monomial",
+     "kind": "lemma",
+     "line": 171,
+     "doc": "",
+     "statement": "lemma eval_monomial (p : SpaceTimeDerivAlgebraℂ) (m : (Fin 1 ⊕ Fin 3) →₀ ℕ) :\n    eval p (MvPowerSeries.monomial m 1) =\n      ((∏ μ, (m μ)! : ℕ) : ℂ) *\n        Lorentz.ComplexCoVector.basis.dualBasis.symmetricAlgebra.repr p m",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeDerivAlgebraℂ.eval_injective",
+     "kind": "lemma",
+     "line": 189,
+     "doc": "",
+     "statement": "lemma eval_injective {p q : SpaceTimeDerivAlgebraℂ}\n    (h : ∀ f, eval p f = eval q f) : p = q",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeDerivAlgebraℂ.eval_deriv",
+     "kind": "lemma",
+     "line": 201,
+     "doc": "Adjointness: the shift of derivative symbols is the transpose of the formal\npartial derivative under the divided-power pairing.",
+     "statement": "lemma eval_deriv (ν : Fin 1 ⊕ Fin 3) (p : SpaceTimeDerivAlgebraℂ) (f : SpaceTimeAlgebra) :\n    eval (deriv ν p) f = eval p (MvPowerSeries.pderiv ν f)",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeDerivAlgebraℂ.eval_one",
+     "kind": "lemma",
+     "line": 226,
+     "doc": "The pairing of the unit derivative symbol with a jet is its value at the base\npoint: the empty derivative multiset reads off the constant term.",
+     "statement": "lemma eval_one (f : SpaceTimeAlgebra) :\n    eval (1 : SpaceTimeDerivAlgebraℂ) f = MvPowerSeries.constantCoeff f",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeDerivAlgebraℂ.eval_basis_eq_constantCoeff_iteratedPDeriv",
+     "kind": "lemma",
+     "line": 236,
+     "doc": "Iterating adjointness: the pairing of the basis monomial `∂_s` with a jet is the\nconstant term of the iterated formal partial derivative `∂_s f`. This is the concrete\ndescription of the divided-power pairing that `eval_deriv` encodes one derivative at a\ntime.",
+     "statement": "lemma eval_basis_eq_constantCoeff_iteratedPDeriv (s : Multiset (Fin 1 ⊕ Fin 3))\n    (f : SpaceTimeAlgebra) :\n    eval (basis s) f =\n      MvPowerSeries.constantCoeff (SpaceTimeAlgebra.iteratedPDeriv s f)",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeDerivAlgebraℂ.jetRingAction",
+     "kind": "def",
+     "line": 259,
+     "doc": "The action of `χ` on the derivatives, this takes `∂_μ ·` to `∂_μ (χ ·)`,\nexpanded out explicitly.",
+     "statement": "noncomputable def jetRingAction (χ : SpaceTimeAlgebra) :\n    SpaceTimeDerivAlgebraℂ →ₗ[ℂ] SpaceTimeDerivAlgebraℂ",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeDerivAlgebraℂ.jetRingAction_basis",
+     "kind": "lemma",
+     "line": 266,
+     "doc": "",
+     "statement": "lemma jetRingAction_basis (χ : SpaceTimeAlgebra) (m : (Fin 1 ⊕ Fin 3) →₀ ℕ) :\n    jetRingAction χ (Lorentz.ComplexCoVector.basis.dualBasis.symmetricAlgebra m) =\n      ∑ p ∈ Finset.antidiagonal m,\n        ((∏ μ, (m μ).descFactorial (p.1 μ) : ℕ) : ℂ) • MvPowerSeries.coeff p.1 χ •\n          Lorentz.ComplexCoVector.basis.dualBasis.symmetricAlgebra p.2",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeDerivAlgebraℂ.eval_jetRingAction",
+     "kind": "lemma",
+     "line": 273,
+     "doc": "",
+     "statement": "lemma eval_jetRingAction (χ f : SpaceTimeAlgebra) (p : SpaceTimeDerivAlgebraℂ) :\n    eval (jetRingAction χ p) f = eval p (χ * f)",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeDerivAlgebraℂ.jetRingAction_basis_multiset",
+     "kind": "lemma",
+     "line": 310,
+     "doc": "The action of a jet on a derivative monomial, in multiset form: `∂_s` is sent to the\nall-orders Leibniz convolution, each splitting `s = s₁ + s₂` of the derivative multiset\ncontributing the base-point Taylor coefficient `(∂_{s₁} χ)(0)` against the lower monomial\n`∂_{s₂}`.\n\nThis is `jetRingAction_basis` with the `Nat.choose` bookkeeping traded for the\ndivided-power pairing: both sides are compared through `eval`, where the identity is the\nLeibniz rule `SpaceTimeAlgebra.constantCoeff_iteratedPDeriv_mul` at the base point. It is the form\nin which the transformation law of a matter field is stated.",
+     "statement": "lemma jetRingAction_basis_multiset (χ : SpaceTimeAlgebra) (s : Multiset (Fin 1 ⊕ Fin 3)) :\n    jetRingAction χ (basis s) =\n      (s.antidiagonal.map fun p =>\n        MvPowerSeries.constantCoeff\n            (SpaceTimeAlgebra.iteratedPDeriv p.1 χ) • basis p.2).sum",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeDerivAlgebraℂ.jetRingAction_C",
+     "kind": "lemma",
+     "line": 332,
+     "doc": "Constant jets act on the derivative symbols by their value: `C c` has no\nderivative coordinates.",
+     "statement": "lemma jetRingAction_C (c : ℂ) :\n    jetRingAction (MvPowerSeries.C c) = c • LinearMap.id",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeDerivAlgebraℂ.jetRingAction_one",
+     "kind": "lemma",
+     "line": 341,
+     "doc": "",
+     "statement": "lemma jetRingAction_one : jetRingAction (1 : SpaceTimeAlgebra) = LinearMap.id",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeDerivAlgebraℂ.jetRingAction_mul",
+     "kind": "lemma",
+     "line": 348,
+     "doc": "The derivative action is multiplicative: it is the transpose of multiplication\nin the commutative jet ring. This makes `χ ↦ χ(∂)` a monoid homomorphism and\nhence yields representations of the jet gauge group on polynomial jet spaces.",
+     "statement": "lemma jetRingAction_mul (χ ψ : SpaceTimeAlgebra) :\n    jetRingAction (χ * ψ) = jetRingAction χ ∘ₗ jetRingAction ψ",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeDerivAlgebraℂ.jetRingAction_zero",
+     "kind": "lemma",
+     "line": 357,
+     "doc": "",
+     "statement": "lemma jetRingAction_zero : jetRingAction (0 : SpaceTimeAlgebra) = 0",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeDerivAlgebraℂ.jetRingAction_add",
+     "kind": "lemma",
+     "line": 363,
+     "doc": "",
+     "statement": "lemma jetRingAction_add (χ ψ : SpaceTimeAlgebra) :\n    jetRingAction (χ + ψ) = jetRingAction χ + jetRingAction ψ",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeDerivAlgebraℂ.jetRingActionHom",
+     "kind": "def",
+     "line": 372,
+     "doc": "The derivative action as a ring homomorphism from the jet ring to the\nendomorphisms of the algebra of derivative symbols: the module structure of the\njet ring on its graded dual.",
+     "statement": "noncomputable def jetRingActionHom : SpaceTimeAlgebra →+* Module.End ℂ SpaceTimeDerivAlgebraℂ",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeDerivAlgebraℂ.jetRingAction_comm",
+     "kind": "lemma",
+     "line": 380,
+     "doc": "The actions of two jets commute: the jet ring is commutative.",
+     "statement": "lemma jetRingAction_comm (χ ψ : SpaceTimeAlgebra) (a : SpaceTimeDerivAlgebraℂ) :\n    jetRingAction χ (jetRingAction ψ a) = jetRingAction ψ (jetRingAction χ a)",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeDerivAlgebraℂ.jetRingAction_apply_one",
+     "kind": "lemma",
+     "line": 388,
+     "doc": "The derivative action on the zeroth-order (field) symbol: it is scaled by the\nvalue of the jet at the base point.",
+     "statement": "lemma jetRingAction_apply_one (χ : SpaceTimeAlgebra) :\n    jetRingAction χ (1 : SpaceTimeDerivAlgebraℂ) =\n      MvPowerSeries.constantCoeff χ • 1",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeDerivAlgebraℂ.jetRingAction_apply_ι",
+     "kind": "lemma",
+     "line": 405,
+     "doc": "The derivative action on a first-order derivative symbol implements the Leibniz\nrule: `∂_μ ↦ χ(0) ∂_μ + (∂_μχ)(0) 1`. The value of the jet multiplies the\nfirst-derivative symbol, and its first derivative feeds the zeroth-order\nsymbol.",
+     "statement": "lemma jetRingAction_apply_ι (χ : SpaceTimeAlgebra) (μ : Fin 1 ⊕ Fin 3) :\n    jetRingAction χ (SymmetricAlgebra.ι ℂ (Module.Dual ℂ Lorentz.ComplexCoVector)\n        (Lorentz.ComplexCoVector.basis.dualBasis μ)) =\n      MvPowerSeries.constantCoeff χ •\n        SymmetricAlgebra.ι ℂ (Module.Dual ℂ Lorentz.ComplexCoVector)\n          (Lorentz.ComplexCoVector.basis.dualBasis μ) +\n        MvPowerSeries.coeff (Finsupp.single μ 1) χ • 1",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeDerivAlgebraℂ.jetRingAction_deriv",
+     "kind": "lemma",
+     "line": 445,
+     "doc": "The commutation of the jet-ring action with the derivative operator: acting by\n`χ` after differentiating equals differentiating after acting, plus the action\nof the derivative `∂_ν χ`. This is the operator form of the Leibniz rule\n`∂_ν (χ f) = χ ∂_ν f + (∂_ν χ) f` under the divided-power pairing.",
+     "statement": "lemma jetRingAction_deriv (χ : SpaceTimeAlgebra) (ν : Fin 1 ⊕ Fin 3) (a : SpaceTimeDerivAlgebraℂ) :\n    jetRingAction χ (deriv ν a) =\n      deriv ν (jetRingAction χ a) + jetRingAction (MvPowerSeries.pderiv ν χ) a",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeDerivAlgebraℂ.repLorentzGroup",
+     "kind": "def",
+     "line": 463,
+     "doc": "The representation of the Lorentz group `SL(2,ℂ)` on the algebra of derivative\nsymbols, extending the dual covector representation multiplicatively.",
+     "statement": "noncomputable def repLorentzGroup : Representation ℂ SL(2,ℂ) SpaceTimeDerivAlgebraℂ",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeDerivAlgebraℂ.repLorentzGroup_apply_one",
+     "kind": "lemma",
+     "line": 486,
+     "doc": "",
+     "statement": "lemma repLorentzGroup_apply_one (Λ : SL(2,ℂ)) : repLorentzGroup Λ 1 = 1",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeDerivAlgebraℂ.repLorentzGroup_apply_mul",
+     "kind": "lemma",
+     "line": 489,
+     "doc": "",
+     "statement": "lemma repLorentzGroup_apply_mul (Λ : SL(2,ℂ)) (a b : SpaceTimeDerivAlgebraℂ) :\n    repLorentzGroup Λ (a * b) = repLorentzGroup Λ a * repLorentzGroup Λ b",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeDerivAlgebraℂ.repLorentzGroup_apply_ι",
+     "kind": "lemma",
+     "line": 495,
+     "doc": "The Lorentz action on a generator.",
+     "statement": "lemma repLorentzGroup_apply_ι (Λ : SL(2,ℂ)) (x : Module.Dual ℂ Lorentz.ComplexCoVector) :\n    repLorentzGroup Λ (SymmetricAlgebra.ι ℂ (Module.Dual ℂ Lorentz.ComplexCoVector) x) =\n      SymmetricAlgebra.ι ℂ (Module.Dual ℂ Lorentz.ComplexCoVector)\n        (Lorentz.ComplexCoVector.SL2CRep.dual Λ x)",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeDerivAlgebraℂ.repLorentzGroup_deriv",
+     "kind": "lemma",
+     "line": 504,
+     "doc": "The Lorentz action on a derivative: the derivative symbol transforms as a\ncovector, mixing the spacetime directions by the components of `Λ` in the dual\ncovector representation.",
+     "statement": "lemma repLorentzGroup_deriv (Λ : SL(2,ℂ)) (μ : Fin 1 ⊕ Fin 3) (a : SpaceTimeDerivAlgebraℂ) :\n    repLorentzGroup Λ (deriv μ a) =\n      ∑ ν, (Lorentz.ComplexCoVector.SL2CRep.dual Λ (Lorentz.ComplexCoVector.basis.dualBasis μ))\n        (Lorentz.ComplexCoVector.basis ν) • deriv ν (repLorentzGroup Λ a)",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeDerivAlgebraℂ.repLorentzGroup_basis_singleton",
+     "kind": "lemma",
+     "line": 524,
+     "doc": "The Lorentz action on the singleton derivative monomial: the derivative\nslot transforms by the columns of the Lorentz matrix.",
+     "statement": "lemma repLorentzGroup_basis_singleton (Λ : SL(2,ℂ)) (μ : Fin 1 ⊕ Fin 3) :\n    repLorentzGroup Λ (basis ({μ} : Multiset (Fin 1 ⊕ Fin 3))) =\n      ∑ ν, (((Lorentz.SL2C.toLorentzGroup Λ).1 ν μ : ℝ) : ℂ) •\n        basis ({ν} : Multiset (Fin 1 ⊕ Fin 3))",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeDerivAlgebraℂ.repLorentzGroup_basis_ofFn",
+     "kind": "lemma",
+     "line": 535,
+     "doc": "The Lorentz action on the derivative monomial of an ordered tuple of directions: every\nslot mixes by the columns of the Lorentz matrix, one factor per slot.",
+     "statement": "lemma repLorentzGroup_basis_ofFn (Λ : SL(2,ℂ)) {n : ℕ} (l : Fin n → (Fin 1 ⊕ Fin 3)) :\n    repLorentzGroup Λ (basis (List.ofFn l)) =\n      ∑ p : Fin n → (Fin 1 ⊕ Fin 3),\n        (∏ i, (((Lorentz.SL2C.toLorentzGroup Λ).1 (p i) (l i) : ℝ) : ℂ)) • basis (List.ofFn p)",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeDerivAlgebraℂ.gradeScale",
+     "kind": "def",
+     "line": 567,
+     "doc": "The derivative-degree scaling on the algebra of derivative symbols: the\nalgebra map multiplying each generator by `t`, hence each degree-`n` monomial\nby `t ^ n`.",
+     "statement": "noncomputable def gradeScale (t : ℂ) : SpaceTimeDerivAlgebraℂ →ₐ[ℂ] SpaceTimeDerivAlgebraℂ",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeDerivAlgebraℂ.gradeScale_ι",
+     "kind": "lemma",
+     "line": 571,
+     "doc": "",
+     "statement": "lemma gradeScale_ι (t : ℂ) (x : Module.Dual ℂ Lorentz.ComplexCoVector) :\n    gradeScale t (SymmetricAlgebra.ι ℂ (Module.Dual ℂ Lorentz.ComplexCoVector) x) =\n      t • SymmetricAlgebra.ι ℂ (Module.Dual ℂ Lorentz.ComplexCoVector) x",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeDerivAlgebraℂ.gradeScale_basis",
+     "kind": "lemma",
+     "line": 578,
+     "doc": "The degree scaling multiplies the basis monomial at `s` by `t ^ |s|`.",
+     "statement": "lemma gradeScale_basis (t : ℂ) (s : Multiset (Fin 1 ⊕ Fin 3)) :\n    gradeScale t (basis s) = t ^ s.card • basis s",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeDerivAlgebraℂ.gradeScale_repLorentzGroup",
+     "kind": "lemma",
+     "line": 591,
+     "doc": "The degree scaling commutes with the Lorentz action: the Lorentz action\npreserves the derivative degree.",
+     "statement": "lemma gradeScale_repLorentzGroup (t : ℂ) (Λ : SL(2,ℂ)) (a : SpaceTimeDerivAlgebraℂ) :\n    gradeScale t (repLorentzGroup Λ a) = repLorentzGroup Λ (gradeScale t a)",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeDerivAlgebraℂ.gradePoly",
+     "kind": "def",
+     "line": 616,
+     "doc": "The derivative-degree polynomial on the algebra of derivative symbols: the linear map\nsending the basis monomial `∂_s` to `X ^ |s|` times itself. It is `gradeScale` with the\nscalar replaced by the formal variable `X`.",
+     "statement": "noncomputable def gradePoly : SpaceTimeDerivAlgebraℂ →ₗ[ℂ] Polynomial SpaceTimeDerivAlgebraℂ",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeDerivAlgebraℂ.gradePoly_basis",
+     "kind": "lemma",
+     "line": 621,
+     "doc": "The derivative-degree polynomial of a basis monomial is the monomial of degree `|s|`.",
+     "statement": "lemma gradePoly_basis (s : Multiset (Fin 1 ⊕ Fin 3)) :\n    gradePoly (basis s) = Polynomial.monomial (Multiset.card s) (basis s)",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeDerivAlgebraℂ.eval_algebraMap_gradePoly",
+     "kind": "lemma",
+     "line": 627,
+     "doc": "Evaluating the derivative-degree polynomial at a scalar is the derivative-degree\nscaling by that scalar: the two descriptions of the grading agree.",
+     "statement": "lemma eval_algebraMap_gradePoly (t : ℂ) (a : SpaceTimeDerivAlgebraℂ) :\n    (gradePoly a).eval (algebraMap ℂ SpaceTimeDerivAlgebraℂ t) = gradeScale t a",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeDerivAlgebraℂ.gradePoly_eval_one",
+     "kind": "lemma",
+     "line": 643,
+     "doc": "Setting the formal variable to one recovers the original element: the pieces of a\ngraded decomposition sum to the element.",
+     "statement": "lemma gradePoly_eval_one (a : SpaceTimeDerivAlgebraℂ) : (gradePoly a).eval 1 = a",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeDerivAlgebraℝ",
+     "kind": "abbrev",
+     "line": 660,
+     "doc": "The ℝ-algebra of derivative symbols in spacetime.",
+     "statement": "abbrev SpaceTimeDerivAlgebraℝ",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeDerivAlgebraℝ.repLorentzGroup",
+     "kind": "def",
+     "line": 667,
+     "doc": "The representation of the Lorentz group `SL(2,ℂ)` on the algebra of derivative\nsymbols, extending the dual covector representation multiplicatively.",
+     "statement": "noncomputable def repLorentzGroup : Representation ℝ SL(2,ℂ) SpaceTimeDerivAlgebraℝ",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeDerivAlgebraℝ.repLorentzGroup_apply_ι",
+     "kind": "lemma",
+     "line": 691,
+     "doc": "The Lorentz action on a generator of the real derivative algebra.",
+     "statement": "lemma repLorentzGroup_apply_ι (Λ : SL(2,ℂ)) (x : Module.Dual ℝ Lorentz.CoVector) :\n    repLorentzGroup Λ (SymmetricAlgebra.ι ℝ (Module.Dual ℝ Lorentz.CoVector) x) =\n      SymmetricAlgebra.ι ℝ (Module.Dual ℝ Lorentz.CoVector)\n        (Lorentz.CoVector.sl2Rep.dual Λ x)",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeDerivAlgebraℝ.repLorentzGroup_apply_mul",
+     "kind": "lemma",
+     "line": 699,
+     "doc": "The real derivative-algebra representation is multiplicative: it is the lift of a linear\nmap to the symmetric algebra.",
+     "statement": "lemma repLorentzGroup_apply_mul (Λ : SL(2,ℂ))\n    (a b : SpaceTimeDerivAlgebraℝ) :\n    SpaceTimeDerivAlgebraℝ.repLorentzGroup Λ (a * b) =\n      SpaceTimeDerivAlgebraℝ.repLorentzGroup Λ a * SpaceTimeDerivAlgebraℝ.repLorentzGroup Λ b",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeDerivAlgebraℝ.repLorentzGroup_apply_one",
+     "kind": "lemma",
+     "line": 706,
+     "doc": "",
+     "statement": "lemma repLorentzGroup_apply_one (Λ : SL(2,ℂ)) :\n    SpaceTimeDerivAlgebraℝ.repLorentzGroup Λ 1 = 1",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeDerivAlgebraℝ.gradeScale",
+     "kind": "def",
+     "line": 712,
+     "doc": "The derivative-degree scaling on the real algebra of derivative symbols:\nthe algebra map multiplying each generator by `t`.",
+     "statement": "noncomputable def gradeScale (t : ℝ) : SpaceTimeDerivAlgebraℝ →ₐ[ℝ] SpaceTimeDerivAlgebraℝ",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeDerivAlgebraℝ.gradeScale_ι",
+     "kind": "lemma",
+     "line": 716,
+     "doc": "",
+     "statement": "lemma gradeScale_ι (t : ℝ) (x : Module.Dual ℝ Lorentz.CoVector) :\n    gradeScale t (SymmetricAlgebra.ι ℝ (Module.Dual ℝ Lorentz.CoVector) x) =\n      t • SymmetricAlgebra.ι ℝ (Module.Dual ℝ Lorentz.CoVector) x",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeDerivAlgebraℝ.gradeScale_repLorentzGroup",
+     "kind": "lemma",
+     "line": 724,
+     "doc": "The degree scaling commutes with the Lorentz action on the real derivative\nsymbols.",
+     "statement": "lemma gradeScale_repLorentzGroup (t : ℝ) (Λ : SL(2,ℂ)) (a : SpaceTimeDerivAlgebraℝ) :\n    gradeScale t (repLorentzGroup Λ a) = repLorentzGroup Λ (gradeScale t a)",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeDerivAlgebraℝ.basisMultiset",
+     "kind": "def",
+     "line": 745,
+     "doc": "The basis of the symmetric algebra of dual real jet slots, indexed by multisets of\nspacetime indices.",
+     "statement": "noncomputable def basisMultiset :\n    Basis (Multiset (Fin 1 ⊕ Fin 3)) ℝ (SymmetricAlgebra ℝ (Module.Dual ℝ Lorentz.CoVector))",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeDerivAlgebraℝ.basisMultiset_apply",
+     "kind": "lemma",
+     "line": 751,
+     "doc": "The multiset basis of the dual derivative symbols, as a basis vector of the\nsymmetric algebra at the corresponding multi-index.",
+     "statement": "lemma basisMultiset_apply (s : Multiset (Fin 1 ⊕ Fin 3)) :\n    basisMultiset s =\n      Lorentz.CoVector.basis.dualBasis.symmetricAlgebra (Multiset.toFinsupp s)",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeDerivAlgebraℝ.basisMultiset_mul",
+     "kind": "lemma",
+     "line": 759,
+     "doc": "The multiset basis vectors of the real dual derivative slots multiply by adding the\nmultisets.",
+     "statement": "lemma basisMultiset_mul (s t : Multiset (Fin 1 ⊕ Fin 3)) :\n    basisMultiset s * basisMultiset t =\n      basisMultiset (s + t)",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeDerivAlgebraℝ.basisMultiset_nil",
+     "kind": "lemma",
+     "line": 774,
+     "doc": "The multiset basis of the real dual derivative slots at the empty multiset is the\nunit.",
+     "statement": "lemma basisMultiset_nil :\n    basisMultiset (0 : Multiset (Fin 1 ⊕ Fin 3)) = 1",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeDerivAlgebraℝ.basisMultiset_singleton",
+     "kind": "lemma",
+     "line": 792,
+     "doc": "The multiset basis of the real dual derivative slots at a singleton index.",
+     "statement": "lemma basisMultiset_singleton (μ : Fin 1 ⊕ Fin 3) :\n    basisMultiset ({μ} : Multiset (Fin 1 ⊕ Fin 3)) =\n      SymmetricAlgebra.ι ℝ (Module.Dual ℝ Lorentz.CoVector)\n        (Lorentz.CoVector.basis.dualBasis μ)",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeDerivAlgebraℝ.gradeScale_basisMultiset",
+     "kind": "lemma",
+     "line": 811,
+     "doc": "The degree scaling multiplies the real basis monomial at `s` by `t ^ |s|`.",
+     "statement": "lemma gradeScale_basisMultiset (t : ℝ) (s : Multiset (Fin 1 ⊕ Fin 3)) :\n    gradeScale t (basisMultiset s) = t ^ Multiset.card s • basisMultiset s",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeDerivAlgebraℝ.gradePoly",
+     "kind": "def",
+     "line": 824,
+     "doc": "The derivative-degree polynomial on the real algebra of derivative symbols: the linear\nmap sending the basis monomial `∂_s` to `X ^ |s|` times itself.",
+     "statement": "noncomputable def gradePoly : SpaceTimeDerivAlgebraℝ →ₗ[ℝ] Polynomial SpaceTimeDerivAlgebraℝ",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeDerivAlgebraℝ.gradePoly_basisMultiset",
+     "kind": "lemma",
+     "line": 830,
+     "doc": "The derivative-degree polynomial of a real basis monomial is the monomial of degree\n`|s|`.",
+     "statement": "lemma gradePoly_basisMultiset (s : Multiset (Fin 1 ⊕ Fin 3)) :\n    gradePoly (basisMultiset s) =\n      Polynomial.monomial (Multiset.card s) (basisMultiset s)",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeDerivAlgebraℝ.eval_algebraMap_gradePoly",
+     "kind": "lemma",
+     "line": 837,
+     "doc": "Evaluating the real derivative-degree polynomial at a scalar is the derivative-degree\nscaling by that scalar.",
+     "statement": "lemma eval_algebraMap_gradePoly (t : ℝ) (a : SpaceTimeDerivAlgebraℝ) :\n    (gradePoly a).eval (algebraMap ℝ SpaceTimeDerivAlgebraℝ t) = gradeScale t a",
+     "sorry": false
+    },
+    {
+     "name": "SpaceTimeDerivAlgebraℝ.gradePoly_eval_one",
+     "kind": "lemma",
+     "line": 853,
+     "doc": "Setting the formal variable to one recovers the original element of the real\nderivative algebra.",
+     "statement": "lemma gradePoly_eval_one (a : SpaceTimeDerivAlgebraℝ) : (gradePoly a).eval 1 = a",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  }
+ ]
+}

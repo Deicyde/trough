@@ -1,0 +1,253 @@
+---
+declaration: module
+origin: cited
+lean: Real.completeEllipticK, Real.completeEllipticK_def, Real.completeEllipticK_radicand_pos, Real.continuous_completeEllipticK_integrand, Real.intervalIntegrable_completeEllipticK_integrand, Real.completeEllipticK_zero, Real.completeEllipticK_pos, Real.completeEllipticK_mono
+statement: formalized
+proof: formalized
+---
+
+# The complete elliptic integral of the first kind
+
+The module `Physlib.Mathematics.SpecialFunctions.EllipticIntegral`, [Physlib/Mathematics/SpecialFunctions/EllipticIntegral.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/SpecialFunctions/EllipticIntegral.lean): 16 declarations, 16 with a docstring.
+
+> …
+
+## i. Overview
+
+> Legendre's complete elliptic integral of the first kind is, in the parameter convention,
+>
+> `K(m) = ∫ φ in 0..π/2, (1 - m sin² φ) ^ (-1/2)`
+>
+> (Abramowitz & Stegun 17.3.1). The physics literature more often uses the modulus convention and
+> writes `K(k)`, as Landau & Lifshitz do, for what is here `completeEllipticK (k ^ 2)`; the two
+> conventions are related by `m = k²`. Mathlib knows the Weierstrass elliptic function `℘`
+> (`PeriodPair.weierstrassP`) but has no Legendre-form elliptic integrals; this file defines the
+> complete integral of the first kind and develops its basic theory on the domain `m < 1`, where
+> the radicand `1 - m sin² φ` is positive and the integrand continuous.
+>
+> The integral enters physics wherever a period or a potential is computed exactly rather than in a
+> small-parameter expansion. Physlib's use of it so far is the simple pendulum: released from rest
+> at amplitude `θ₀`, the pendulum has period `4 √(ℓ / g) K(sin² (θ₀ / 2))` (Landau & Lifshitz §11,
+> Problem 1), the consumer being `Physlib.ClassicalMechanics.Pendulum.SimplePendulum.PeriodFormula`.
+> More broadly, the complete integrals of the first and second kind give the magnetic field of a
+> circular current loop and the potential of a uniformly charged ring, and the second kind, `E`,
+> gives the arc length of an ellipse. This file defines `K` so that such results can be stated.
+>
+> For `m ≥ 1` the definition still elaborates, but its value is not Legendre's. At `m = 1` the
+> integrand is `1 / cos φ`, which is not interval integrable on `[0, π/2]`, so the integral is `0`
+> by `intervalIntegral.integral_undef`, whereas `K(1) = ∞`. For `m > 1` the radicand is negative on
+> `(arcsin (1/√m), π/2]`, where the real power at exponent `-(1/2)` of a negative base vanishes
+> (`Real.rpow_def_of_neg` supplies the factor `cos (-(1 / 2) * π) = 0`), so the Lean value is the
+> finite positive integral over `[0, arcsin (1/√m)]`; by the reciprocal-modulus transformation this
+> is `K(1/m) / √m`, the real part of the complex Legendre integral (DLMF §19.7(ii)) — not proved
+> here. Every lemma of this file about a general parameter therefore carries its domain hypothesis
+> `m < 1` explicitly.
+
+## ii. Key results
+
+> - `completeEllipticK` : the complete elliptic integral of the first kind, as a function of
+>   the parameter `m`.
+> - `completeEllipticK_zero` : `K 0 = π / 2`.
+> - `completeEllipticK_pos` : for `m < 1` the integral is positive.
+> - `completeEllipticK_mono` : for `m₁ ≤ m₂ < 1`, `K m₁ ≤ K m₂`.
+> - `completeEllipticK_strictMono` : for `m₁ < m₂ < 1`, `K m₁ < K m₂`.
+> - `pi_div_two_le_completeEllipticK` : for `0 ≤ m < 1`, `π / 2 ≤ K m`.
+> - `completeEllipticK_le` : for `0 ≤ m < 1`, `K m ≤ π / 2 * (1 - m) ^ (-1/2)`.
+> - `continuousOn_completeEllipticK` : `K` is continuous on `(-∞, 1)`.
+> - `continuousAt_completeEllipticK` : `K` is continuous at every `m < 1`.
+
+## iv. References
+
+> * M. Abramowitz, I. A. Stegun, Handbook of Mathematical Functions, §17.3 (the parameter convention,
+>   17.3.1). [ref: abramowitz\_stegun\_1964]
+> * NIST DLMF §19.7(ii) (the reciprocal-modulus transformation). [ref: nist\_dlmf]
+> * Landau & Lifshitz, Mechanics, 3rd ed., §11, Problem 1 (the pendulum period as `K(k)`, modulus
+>   convention). [ref: landau\_mechanics]
+
+## A. Definition and the integrand
+
+> The integral is defined for every real parameter `m`; on the domain `m < 1` the radicand is
+> positive, so the integrand is continuous and interval integrable.
+
+**`Real.completeEllipticK`**, a def, [line 97](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/SpecialFunctions/EllipticIntegral.lean#L97).
+
+> The complete elliptic integral of the first kind in the parameter convention,
+> `K(m) = ∫ φ in 0..π/2, (1 - m sin² φ) ^ (-1/2)`. The physics literature often writes `K(k)`
+> with `m = k²`. The integrand is written as a real power rather than `1 / √(…)` so that
+> continuity, positivity and monotonicity in `m` come from the `rpow` API (`Continuous.rpow_const`,
+> `Real.rpow_pos_of_pos`, `Real.rpow_le_rpow_of_nonpos`); the two forms agree by
+> `Real.sqrt_eq_rpow` and `Real.rpow_neg`. For `m ≥ 1` see the module docstring.
+
+```lean
+noncomputable def completeEllipticK (m : ℝ) : ℝ
+```
+
+**`Real.completeEllipticK_def`**, a lemma, [line 102](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/SpecialFunctions/EllipticIntegral.lean#L102).
+
+> Unfolding lemma: `completeEllipticK m` is the interval integral of its integrand over
+> `[0, π/2]`.
+
+```lean
+lemma completeEllipticK_def (m : ℝ) :
+    completeEllipticK m = ∫ φ in (0 : ℝ)..π / 2, (1 - m * sin φ ^ 2) ^ (-(1 / 2 : ℝ))
+```
+
+**`Real.completeEllipticK_radicand_pos`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/SpecialFunctions/EllipticIntegral.lean#L108).
+
+> For `m < 1` the radicand `1 - m sin² φ` of the integrand of `completeEllipticK m` is
+> positive at every angle `φ`.
+
+```lean
+lemma completeEllipticK_radicand_pos {m : ℝ} (hm : m < 1) (φ : ℝ) :
+    0 < 1 - m * sin φ ^ 2
+```
+
+**`Real.continuous_completeEllipticK_integrand`**, a lemma, [line 115](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/SpecialFunctions/EllipticIntegral.lean#L115).
+
+> For `m < 1` the integrand of `completeEllipticK m` is continuous, the real power being
+> taken at a positive base.
+
+```lean
+lemma continuous_completeEllipticK_integrand {m : ℝ} (hm : m < 1) :
+    Continuous fun φ : ℝ => (1 - m * sin φ ^ 2) ^ (-(1 / 2 : ℝ))
+```
+
+**`Real.intervalIntegrable_completeEllipticK_integrand`**, a lemma, [line 121](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/SpecialFunctions/EllipticIntegral.lean#L121).
+
+> For `m < 1` the integrand of `completeEllipticK m` is interval integrable on `[0, π/2]`.
+
+```lean
+lemma intervalIntegrable_completeEllipticK_integrand {m : ℝ} (hm : m < 1) :
+    IntervalIntegrable (fun φ : ℝ => (1 - m * sin φ ^ 2) ^ (-(1 / 2 : ℝ))) volume 0 (π / 2)
+```
+
+## B. Value at zero and positivity
+
+> At `m = 0` the integrand is the constant `1` and the integral is elementary; for `m < 1` the
+> integral is positive, being the integral of a positive continuous function.
+
+**`Real.completeEllipticK_zero`**, a lemma, [line 136](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/SpecialFunctions/EllipticIntegral.lean#L136).
+
+> `K 0 = π / 2`: at parameter zero the integrand of `completeEllipticK` is the constant `1`.
+
+```lean
+lemma completeEllipticK_zero : completeEllipticK 0 = π / 2
+```
+
+**`Real.completeEllipticK_pos`**, a lemma, [line 140](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/SpecialFunctions/EllipticIntegral.lean#L140).
+
+> For `m < 1` the complete elliptic integral `completeEllipticK m` is positive.
+
+```lean
+lemma completeEllipticK_pos {m : ℝ} (hm : m < 1) : 0 < completeEllipticK m
+```
+
+## C. Monotonicity and bounds in the parameter
+
+> For fixed `φ` the radicand `1 - m sin² φ` decreases in `m`, so the integrand, a negative power of
+> the radicand, increases in `m` on the domain; integrating the pointwise inequality over
+> `[0, π/2]` gives monotonicity of `K`, and since the inequality is strict at `φ = π/2` the
+> monotonicity is strict. Together with `K 0 = π / 2` this bounds `K` below on `[0, 1)`; bounding
+> the radicand below by `1 - m` bounds `K` above by `π / 2 * (1 - m) ^ (-1/2)` there.
+
+**`Real.completeEllipticK_mono`**, a lemma, [line 161](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/SpecialFunctions/EllipticIntegral.lean#L161).
+
+> `completeEllipticK` is monotone on its domain: for `m₁ ≤ m₂ < 1`, `K m₁ ≤ K m₂`. The
+> integrand is pointwise monotone in the parameter, the radicand being positive for both
+> parameters.
+
+```lean
+lemma completeEllipticK_mono {m₁ m₂ : ℝ} (h12 : m₁ ≤ m₂) (h2 : m₂ < 1) :
+    completeEllipticK m₁ ≤ completeEllipticK m₂
+```
+
+**`Real.monotoneOn_completeEllipticK`**, a lemma, [line 172](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/SpecialFunctions/EllipticIntegral.lean#L172).
+
+> `completeEllipticK` is monotone on its domain `(-∞, 1)`, as a `MonotoneOn` statement.
+
+```lean
+lemma monotoneOn_completeEllipticK : MonotoneOn completeEllipticK (Set.Iio 1)
+```
+
+**`Real.completeEllipticK_strictMono`**, a lemma, [line 178](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/SpecialFunctions/EllipticIntegral.lean#L178).
+
+> `completeEllipticK` is strictly monotone on its domain: for `m₁ < m₂ < 1`, `K m₁ < K m₂`.
+> The pointwise inequality between the integrands is strict at `φ = π / 2`, where `sin² φ = 1`.
+
+```lean
+lemma completeEllipticK_strictMono {m₁ m₂ : ℝ} (h12 : m₁ < m₂) (h2 : m₂ < 1) :
+    completeEllipticK m₁ < completeEllipticK m₂
+```
+
+**`Real.strictMonoOn_completeEllipticK`**, a lemma, [line 191](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/SpecialFunctions/EllipticIntegral.lean#L191).
+
+> `completeEllipticK` is strictly increasing on `(-∞, 1)`, as a bundled `StrictMonoOn`.
+
+```lean
+lemma strictMonoOn_completeEllipticK : StrictMonoOn completeEllipticK (Set.Iio 1)
+```
+
+**`Real.pi_div_two_le_completeEllipticK`**, a lemma, [line 196](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/SpecialFunctions/EllipticIntegral.lean#L196).
+
+> For `0 ≤ m < 1` the complete elliptic integral `completeEllipticK m` is at least its value
+> `π / 2` at `m = 0`.
+
+```lean
+lemma pi_div_two_le_completeEllipticK {m : ℝ} (hm0 : 0 ≤ m) (hm1 : m < 1) :
+    π / 2 ≤ completeEllipticK m
+```
+
+**`Real.completeEllipticK_le`**, a lemma, [line 206](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/SpecialFunctions/EllipticIntegral.lean#L206).
+
+> For `0 ≤ m < 1` the complete elliptic integral `completeEllipticK m` is at most
+> `π / 2 * (1 - m) ^ (-1/2)`: the radicand is at least `1 - m`, `sin² φ` being at most `1`, so the
+> integrand is at most the constant `(1 - m) ^ (-1/2)`. With `pi_div_two_le_completeEllipticK` this
+> sandwiches `K` on `[0, 1)`; for the pendulum, where `m = sin² (θ₀ / 2)`, it bounds the period by
+> `T ≤ 2π √(ℓ / g) / cos (θ₀ / 2)`.
+
+```lean
+lemma completeEllipticK_le {m : ℝ} (hm0 : 0 ≤ m) (hm1 : m < 1) :
+    completeEllipticK m ≤ π / 2 * (1 - m) ^ (-(1 / 2 : ℝ))
+```
+
+## D. Continuity on the domain
+
+> The integrand is jointly continuous in `(m, φ)` on `(-∞, 1) × ℝ`, where the radicand is
+> positive, but not on all of `ℝ × ℝ`. Restricting the parameter to the subtype `Set.Iio 1` makes
+> the joint continuity global, so Mathlib's continuity of a parametric interval integral with
+> fixed endpoints (`intervalIntegral.continuous_parametric_intervalIntegral_of_continuous'`)
+> applies and gives continuity of `K` on the domain. Continuity at each point `m < 1` follows,
+> `(-∞, 1)` being a neighbourhood of `m`.
+
+**`Real.continuousOn_completeEllipticK`**, a lemma, [line 230](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/SpecialFunctions/EllipticIntegral.lean#L230).
+
+> `completeEllipticK` is continuous on its domain `(-∞, 1)`.
+
+```lean
+lemma continuousOn_completeEllipticK : ContinuousOn completeEllipticK (Set.Iio 1)
+```
+
+**`Real.continuousAt_completeEllipticK`**, a lemma, [line 243](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/SpecialFunctions/EllipticIntegral.lean#L243).
+
+> `completeEllipticK` is continuous at every point `m < 1` of its domain, `(-∞, 1)` being a
+> neighbourhood of `m`.
+
+```lean
+lemma continuousAt_completeEllipticK {m : ℝ} (hm : m < 1) : ContinuousAt completeEllipticK m
+```
+
+**`Real.continuousAt_completeEllipticK_zero`**, a lemma, [line 247](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/SpecialFunctions/EllipticIntegral.lean#L247).
+
+> `completeEllipticK` is continuous at `m = 0`, an interior point of its domain `(-∞, 1)`.
+
+```lean
+lemma continuousAt_completeEllipticK_zero : ContinuousAt completeEllipticK 0
+```
+
+## Depends on
+
+Its declarations' statements use no declaration of another module with an article here.
+
+## Sources
+
+- [Physlib/Mathematics/SpecialFunctions/EllipticIntegral.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/SpecialFunctions/EllipticIntegral.lean)

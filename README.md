@@ -21,7 +21,7 @@ headline results, Formal Conjectures from its problem files, Lean Pool from
 its project cards, Anthropic's FLT from the landmark theorems of its proof,
 Axiom's CFSG from its proof's case division and its milestones, Axiom's
 Stacks Project formalization from its Stacks tags, ATLAS from the topics of
-its vault, and OpenAI Math from its result families.
+its vault, OpenAI Math from its result families, and Physlib from its modules.
 
 ## The Mathlib map
 
@@ -537,6 +537,74 @@ the line where the repository's Lean proves it.
    Lean file it reads is in the commit but not checked out; or when the
    families, or those with Lean, drop under half the last record's.
 
+## The Physlib chapter
+
+[Physlib](https://github.com/leanprover-community/physlib) digitalises results
+from physics in Lean, on Mathlib. Its repository holds three libraries, as its
+README presents them: Physlib, the reviewed core; PhyslibAlpha, downstream of it
+under a lighter review; and QuantumInfo, quantum information theory with
+conventions of its own. Its handbook organizes a file around one definition and
+names it after it, and every Physlib and PhyslibAlpha module carries a module
+docstring, so the chapter has an article per module with a declaration, in a
+part per library, on a page per area, per folder below it and per deeper folder
+with an API map; a module in another deeper folder is on the page of the nearest
+folder above, under a line naming its folder. An article is titled by its module
+docstring, or else by its module's name, with its library or the end of its path
+added where titles would repeat. It quotes the module's docstring and section
+docstrings, their headings shown as the article's and the table of contents left
+out, and shows each declaration in file order: its name, kind and line, its
+docstring and its Lean statement. An instance with no name is shown without one;
+`private` declarations are counted, not shown. The repository keeps the keyword
+`theorem` for what `scripts/lint/exemptions/Theorems.txt` lists as significant
+results, and their blocks say so and lead their cards' Lean rows. An API map,
+the repository's own account of an area with numbered citations of the
+declarations that formalize it, is quoted on its folder's page without the
+sentences it marks `[TODO]`, and each citation links the article of the module
+it names. Informal results (`informal_lemma`, `informal_definition`,
+`semiformal_result`) and TODO items are not mapped, and a docstring is quoted
+without its TODO notes, its sections on future work and its sentences about
+plans or inviting work, each cut marked with …; the docstrings of Physlib's own
+tooling under `Physlib/Meta/`, which define and count TODO items, keep their
+mentions of them. An article depends on the modules whose declarations its
+statements use, and its proof on those that only its proofs use, each without
+what another of them reaches.
+
+1. `tools/refresh_physlib.py CHECKOUT` reads a checkout and writes
+   `data/physlib/`: `source.json`, the commit, its date, toolchain and Mathlib,
+   the README's words on the project and its maintainers, the names Theorems.txt
+   lists and the counts; `api-maps.json`, each API map's title, content and
+   references; and `modules/<library>.<area>.json`, each module's title, module
+   docstring, section docstrings and declarations. `tools/trough/leansource.py`
+   reads each file as it does for the Stacks chapter, so a statement keeps the
+   indentation its lines have in the file; a structure, class or inductive type
+   shows its whole text, its fields or constructors. It does not read `alias
+   ⟨mp, mpr⟩ := …`, which names the two directions of an equivalence; the record
+   counts those commands, and the front page says how many, if any, are not
+   shown. A module docstring is the first `/-!` comment when it comes before the
+   first declaration, and the later ones are section docstrings. A link in a
+   docstring to one of the repository's modules points at that module's article;
+   a link to a path that is no module at the pin keeps only its label.
+2. Physlib publishes a build cache for each commit of its `master` branch whose
+   build passes, so Lean runs for this chapter. After the refresh, the **Physlib
+   data** workflow (`.github/workflows/physlib-data.yml`) fetches that cache
+   with Mathlib's, builds the three libraries, which compiles nothing, and runs
+   `lean/physlib/PhyslibDeps.lean` below an import of every module. It writes
+   `data/physlib/deps.json`: for each module, the other modules whose
+   declarations its own declarations use in a statement (a type, a definition's
+   value, a structure's fields) or in a proof, and the names read from the
+   source that are not public declarations Lean has, such as a declaration
+   private to its module. Those are left out of the articles, and the generator
+   refuses a dump of another commit than `source.json` pins.
+3. The workflow runs weekly, on a dispatch and on pull requests that touch its
+   paths; it regenerates the pages and runs the tests, and on a pull request it
+   fails when the committed data differ from what the pin gives. The weekly
+   run, or a dispatch with `newest`, moves the pin to the newest `master` commit
+   whose build passed and whose build cache was published. A refresh writes
+   nothing, and the workflow fails, when the repository is not Apache-2.0, a
+   file the commit lists is not checked out, a module's scopes don't close, the
+   README no longer describes each library, or the declarations drop under half
+   the last record's.
+
 ## Working on it
 
     uv run python tools/generate.py           # rewrite blueprint/ from data/ and catalog/
@@ -627,3 +695,6 @@ LICENSE adds that the code is not meant for training models.
 The descriptions, titles, abstracts, Lean pages and statements in
 `data/openai-math/` come from [openai/math](https://github.com/openai/math),
 Apache-2.0.
+The docstrings, Lean statements, API maps and README text quoted in
+`data/physlib/` come from
+[Physlib](https://github.com/leanprover-community/physlib), Apache-2.0.
