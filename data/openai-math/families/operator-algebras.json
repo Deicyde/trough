@@ -1,0 +1,1374 @@
+{
+ "schema": "trough-openai-math/v1",
+ "rev": "4eaee87548250b2682affda7d05d947c05554bae",
+ "families": [
+  {
+   "number": "285",
+   "title": "Counterexamples to Baum–Connes and Kadison–Kaplansky",
+   "description": "Disproves the coefficient-free reduced Baum–Connes conjecture through a failure of rational injectivity and a separate failure of surjectivity of assembly. A finitely generated torsion-free example witnesses the injectivity failure. Separately, a torsion-free group has a nontrivial projection in its reduced group $C^{∗}$-algebra, disproving the Kadison–Kaplansky conjecture.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "A torsion-free counterexample to reduced Baum–Connes injectivity",
+     "path": "preprints/A-Torsion-Free-Counterexample-to-Reduced-Baum-Connes-Injectivity-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We disprove rational injectivity of the coefficient-free reduced Baum–Connes assembly map for torsion-free groups. Specifically, we construct a finitely generated torsion-free discrete group whose degree-zero assembly map has a kernel class of infinite order."
+    },
+    {
+     "title": "A torsion-free counterexample to the Kadison–Kaplansky projection conjecture",
+     "path": "preprints/A-Torsion-Free-Counterexample-to-the-Kadison-Kaplansky-Projection-Conjecture-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We construct a finitely generated torsion-free discrete group whose reduced group $C^{∗}$-algebra contains a projection other than zero and the identity. This disproves the Kadison–Kaplansky projection conjecture."
+    },
+    {
+     "title": "An irrational-trace counterexample to reduced Baum–Connes",
+     "path": "preprints/An-Irrational-Trace-Counterexample-to-Reduced-Baum-Connes-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We construct a finitely generated discrete group whose reduced group $C^{∗}$-algebra contains a projection of irrational canonical trace. Its $K_{0}$-class lies outside the image of the coefficient-free reduced Baum–Connes assembly map. This disproves the coefficient-free reduced Baum–Connes conjecture for countable discrete groups."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "286",
+   "title": "Rigidity and arithmetic of lattice von Neumann algebras",
+   "description": "Classifies finite-index bimodules between scalar-twisted group factors of ICC groups commensurable with property-$(T)$ lattices over characteristic-zero local fields and arbitrary ICC group factors. Every such bimodule is a summand of finite sums of models arising from finite-index subgroup isomorphisms and finite-dimensional projective representations. The classification also recovers the group, scalar cocycle and amplification scale up to the stated stable equivalence.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "Arithmeticity of twisted finite correspondences for lattices over local fields",
+     "path": "preprints/Arithmeticity-of-twisted-finite-correspondences-for-lattices-over-local-fields-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove arithmetic exhaustion for bifinite correspondences between arbitrarily scalar-twisted group factors of ICC groups commensurable with property-$(T)$ lattices over characteristic-zero local fields and twisted group factors of arbitrary countable ICC groups. Every such correspondence is a closed summand of a finite direct sum of models obtained from actual finite-index subgroup isomorphisms and finite-dimensional projective representations of the matched cocycle ratio. The proof includes reducible products, mixed real and finite places, and quaternionic and Cayley rank-one factors."
+    },
+    {
+     "title": "The arithmetic category and stable recovery of lattice factors",
+     "path": "preprints/The-arithmetic-category-and-stable-recovery-of-lattice-factors-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove stable canonical recovery for scalar-twisted group factors of ICC groups commensurable with property-$(T)$ lattices over characteristic-zero local fields. Every specified stable isomorphism to a scalar-twisted factor of any countably infinite ICC group recovers the group, the cocycle up to a normalized cochain, and equal amplification scales, with an implementing partial isometry in the given matrix corners. We compute the arithmetic correspondence subcategory for arbitrary countable ICC groups, including all bounded maps, summands, conjugates, and Connes fusion, and combine it with the companion's arithmetic exhaustion theorem. Multiplication also recovers arbitrary finite-index factor neighbors, with the exact projective condition on the matched cocycle ratio."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "287",
+   "title": "Isomorphism of the free group factors",
+   "description": "Resolves the free group factor isomorphism problem: $L(\\mathbb F_2)\\cong L(\\mathbb F_3)$, and hence all interpolated free group factors, including $L(\\mathbb F_\\infty)$, are isomorphic. Their common factor has fundamental group $\\mathbb R_{\\gt 0}$.",
+   "doc": "lean/docs/287.md",
+   "manuscripts": [
+    {
+     "title": "An isomorphism of the free group factors",
+     "path": "preprints/An-isomorphism-of-the-free-group-factors-September-23-2026/An-isomorphism-of-the-free-group-factors-September-23-2026.pdf",
+     "note": "",
+     "abstract": "We solve the free group factor isomorphism problem affirmatively by proving that $L(\\mathbb F_2)$ and $L(\\mathbb F_3)$ are isomorphic as tracial von Neumann algebras. The classical free group factor alternative then implies that all interpolated free group factors, including $L(\\mathbb F_\\infty)$, are isomorphic and have fundamental group $\\mathbb R_{\\gt 0}$."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/287.md",
+    "title": "Isomorphism of the free group factors",
+    "papers": [
+     "preprints/An-isomorphism-of-the-free-group-factors-September-23-2026/An-isomorphism-of-the-free-group-factors-September-23-2026.pdf"
+    ],
+    "scope": "The free group factor problem asks whether the von Neumann algebras of free groups of different ranks are isomorphic. The formalization proves that interpolated free group factors with any parameters $r,s>1$, including the infinite parameter, are normally trace-preservingly isomorphic. The paper's fundamental-group conclusion is a further consequence rather than a separate selected statement here.",
+    "results": [
+     {
+      "label": "Isomorphism of all interpolated free group factors",
+      "challenge": "lean/ComparatorChallenges/InterpolatedFactors.lean",
+      "config": "lean/ComparatorChallenges/InterpolatedFactors.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.FreeGroupFactorMain.Interpolation.allInterpolatedIsomorphic",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 216,
+        "statement": "theorem allInterpolatedIsomorphic (r s : ℝ≥0∞) (hr : 1<r) (hs : 1<s) :\n    Nonempty (NormalTracialEquiv (interpolatedTrace r) (interpolatedTrace s)\n      (interpolatedTopology r) (interpolatedTopology s))",
+        "proof": {
+         "file": "lean/OAI/Analysis/InterpolatedFactors/Interpolation.lean",
+         "line": 101,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/InterpolatedFactors/Interpolation.lean",
+        "main": false
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "288",
+   "title": "Kadison's similarity conjecture",
+   "description": "Proves Kadison's similarity conjecture: every bounded complex-linear unital algebra homomorphism from a unital complex $C^{∗}$-algebra to operators on a Hilbert space becomes a $*$-homomorphism after conjugation by a bounded invertible operator.",
+   "doc": "lean/docs/288.md",
+   "manuscripts": [
+    {
+     "title": "Kadison's similarity theorem through uniform derivation estimates",
+     "path": "preprints/Kadisons-similarity-theorem-through-uniform-derivation-estimates-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove that every bounded complex-linear unital algebra homomorphism from a unital complex $C^{∗}$-algebra into the bounded operators on an arbitrary Hilbert space is similar to a $*$-homomorphism. This resolves Kadison's similarity conjecture positively. We also obtain one universal hyperreflexivity constant for all unital von Neumann algebras on arbitrary complex Hilbert spaces."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/288.md",
+    "title": "Kadison's similarity conjecture",
+    "papers": [
+     "preprints/Kadisons-similarity-theorem-through-uniform-derivation-estimates-September-23-2026/paper.pdf"
+    ],
+    "scope": "Kadison's similarity problem asks whether every bounded unital homomorphism from a unital complex $C^*$-algebra into operators on a Hilbert space is similar to a $*$-homomorphism. The formalization proves this for arbitrary Hilbert spaces. It also gives one universal hyperreflexivity constant for all unital von Neumann algebras.\n\nThe linked commutator estimate is uniform over all finite matrix amplifications: its constant is independent of the algebra, Hilbert space, and amplification size. This is the quantitative derivation estimate supporting the similarity result.",
+    "results": [
+     {
+      "label": "Kadison's similarity theorem and uniform hyperreflexivity",
+      "challenge": "lean/ComparatorChallenges/KadisonSimilarity.lean",
+      "config": "lean/ComparatorChallenges/KadisonSimilarity.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.KadisonSimilarity.universalCommutatorTheorem",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 107,
+        "statement": "theorem universalCommutatorTheorem : UniversalCommutatorTheorem.{u}",
+        "proof": {
+         "file": "lean/OAI/Analysis/KadisonSimilarity/UnconditionalMain.lean",
+         "line": 19,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/KadisonSimilarity/UnconditionalSimilarity.lean",
+        "main": false
+       },
+       {
+        "name": "OAI.KadisonSimilarity.universalHyperreflexivity",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 111,
+        "statement": "theorem universalHyperreflexivity : UniversalHyperreflexivity.{u} universalConstant",
+        "proof": {
+         "file": "lean/OAI/Analysis/KadisonSimilarity/UnconditionalMain.lean",
+         "line": 23,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/KadisonSimilarity/UnconditionalSimilarity.lean",
+        "main": false
+       },
+       {
+        "name": "OAI.KadisonSimilarity.similarityTheorem",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 115,
+        "statement": "theorem similarityTheorem : SimilarityTheorem.{u,v}",
+        "proof": {
+         "file": "lean/OAI/Analysis/KadisonSimilarity/UnconditionalSimilarity.lean",
+         "line": 16,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/KadisonSimilarity/UnconditionalSimilarity.lean",
+        "main": false
+       }
+      ]
+     },
+     {
+      "label": "Uniform amplified commutator estimate",
+      "challenge": "lean/ComparatorChallenges/UniformCommutator.lean",
+      "config": "lean/ComparatorChallenges/UniformCommutator.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.Kadison.uniform_commutator",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 26,
+        "statement": "theorem uniform_commutator :\n    ∃ C : ℝ, 0 ≤ C ∧ ∀ (K : Type u) [NormedAddCommGroup K] [InnerProductSpace ℂ K]\n      [CompleteSpace K] (P : VonNeumannAlgebra K) (Y : K →L[ℂ] K)\n      (h : ℕ), 1 ≤ h → ∀ (X : Matrix (Fin h) (Fin h) (K →L[ℂ] K)),\n      (∀ i j, X i j ∈ P) →\n      ‖diagonalAmplification h Y * matrixOperator h X -\n        matrixOperator h X * diagonalAmplification h Y‖ ≤\n        C * commutatorSeminorm P Y * ‖matrixOperator h X‖",
+        "proof": {
+         "file": "lean/OAI/Analysis/Commutator/UniversalMain.lean",
+         "line": 16,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/Commutator/Main.lean",
+        "main": false
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "289",
+   "title": "Strong Kadison–Kastler stability and its spatial boundaries",
+   "description": "Proves that sufficiently close unital von Neumann algebras on the same Hilbert space are conjugate by a unitary arbitrarily close to the identity, with a universal tolerance in the operator-norm distance between unit balls. Counterexamples show that near-identity conjugacy fails for one-sided near inclusions, and that arbitrarily close norm-separable $C^{∗}$-algebras need not be ambiently unitarily conjugate.",
+   "doc": "lean/docs/289.md",
+   "manuscripts": [
+    {
+     "title": "Universal strong Kadison–Kastler stability",
+     "path": "preprints/Universal-strong-Kadison-Kastler-stability-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove that sufficiently close unital von Neumann algebras are conjugate by a unitary arbitrarily close to the identity. The tolerance depends only on the prescribed distance of that unitary from the identity, uniformly over all algebras, representations, and Hilbert spaces. This resolves the strong Kadison–Kastler conjecture."
+    },
+    {
+     "title": "Near Inclusions of von Neumann Algebras Without Small Spatial Embeddings",
+     "path": "preprints/Near-Inclusions-of-von-Neumann-Algebras-Without-Small-Spatial-Embeddings-October-5-2026/near-inclusions.pdf",
+     "note": "",
+     "abstract": "We give a negative answer to the unrestricted small-spatial-embedding problem for one-sided near inclusions of von Neumann algebras. On separable complex Hilbert spaces, we construct pairs of unital von Neumann algebras with common identity whose one-sided gaps tend to zero. Spatial embeddings of the source into the target exist, but every implementing unitary stays a fixed positive distance from the identity. The obstruction therefore concerns small implementing unitaries, rather than the existence of spatial embeddings."
+    },
+    {
+     "title": "Close Separable C*-Algebras Without Spatial Conjugacy",
+     "path": "preprints/Close-Separable-Cstar-Algebras-Without-Spatial-Conjugacy-October-5-2026/paper.pdf",
+     "note": "",
+     "abstract": "We disprove the separable $C^{∗}$-algebraic spatial form of the Kadison–Kastler conjecture. For every *ε* > 0, we construct unital, norm-separable $C^{∗}$-algebras on a common separable complex Hilbert space, with the same identity and Kadison–Kastler distance less than *ε*, that are not conjugate by any unitary. The two algebras have the same von Neumann closure."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/289.md",
+    "title": "Strong Kadison–Kastler stability and its spatial boundaries",
+    "papers": [
+     "preprints/Universal-strong-Kadison-Kastler-stability-September-23-2026/paper.pdf"
+    ],
+    "scope": "The formalization proves the strong Kadison–Kastler conjecture uniformly. For every $\\varepsilon>0$, there is a $\\delta>0$ such that any two unital von Neumann algebras on the same complex Hilbert space at Kadison–Kastler distance below $\\delta$ are conjugate by a unitary $u$ with $\\lVert u-1\\rVert<\\varepsilon$. The tolerance depends only on $\\varepsilon$, uniformly over the algebras, their representations, and the Hilbert space.",
+    "results": [
+     {
+      "label": "Universal near-identity unitary conjugacy for close von Neumann algebras",
+      "challenge": "lean/ComparatorChallenges/StrongKadisonKastler.lean",
+      "config": "lean/ComparatorChallenges/StrongKadisonKastler.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.KadisonKastler.universal_strong_stability",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 37,
+        "statement": "theorem universal_strong_stability : UniversalStrongStability.{u}",
+        "proof": {
+         "file": "lean/OAI/Analysis/KadisonKastler/UnconditionalStability.lean",
+         "line": 41,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/KadisonKastler/StrongStability.lean",
+        "main": false
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "290",
+   "title": "Relative bicentralizers and modular spectral recovery",
+   "description": "Proves Connes' bicentralizer conjecture for every type III$_{1}$ factor with separable predual and every faithful normal state. More generally, for every inclusion $N\\subset M$ of von Neumann algebras with separable preduals admitting a faithful normal conditional expectation, constructs an amenable expected subalgebra $P\\subset N$ with $P'\\cap c(M)=N'\\cap c(M)$, resolving the relative bicentralizer conjecture.",
+   "doc": "lean/docs/290.md",
+   "manuscripts": [
+    {
+     "title": "Expected amenable subalgebras preserving core commutants",
+     "path": "preprints/Expected-amenable-subalgebras-preserving-core-commutants-September-23-2026/Expected-amenable-subalgebras-preserving-core-commutants-September-23-2026.pdf",
+     "note": "",
+     "abstract": "We prove that every inclusion $N\\subset M$ of von Neumann algebras with separable preduals and a faithful normal conditional expectation contains an expected amenable subalgebra $P\\subset N$ such that $P'\\cap c(M)=N'\\cap c(M)$, where $c(M)$ denotes the continuous core of *M*. This resolves the relative bicentralizer conjecture in this setting."
+    },
+    {
+     "title": "Bounded recovery for modular spectral averages",
+     "path": "preprints/Bounded-recovery-for-modular-spectral-averages-September-23-2026/Bounded-recovery-for-modular-spectral-averages-September-23-2026.pdf",
+     "note": "",
+     "abstract": "We prove a bounded spectral recovery theorem for a von Neumann algebra with a faithful normal state whose centralizer consists only of scalars. A positive averaged squared norm for an arbitrary bounded Hilbert-space operator on shrinking modular spectral bands can be recovered on uniformly bounded algebra elements with shrinking spectral support. We apply this theorem to spectral intertwining rigidity and obtain an alternative proof of bicentralizer triviality for type III$_{1}$ factors with separable predual."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/290.md",
+    "title": "Relative bicentralizers and modular spectral recovery",
+    "papers": [
+     "preprints/Bounded-recovery-for-modular-spectral-averages-September-23-2026/Bounded-recovery-for-modular-spectral-averages-September-23-2026.pdf"
+    ],
+    "scope": "For a faithful normal state with scalar centralizer in the stated standard-space representation, the formalized result converts positive modular spectral averages into uniformly bounded algebra elements. Given unit vectors in shrinking spectral bands around a real number $s$ and a positive limiting symmetric average for a bounded operator $T$, it finds a subsequence of bounded algebra elements whose images under $T$ stay uniformly nonzero and whose spectral bands have four times the original widths. The absolute bicentralizer conjecture is not included.",
+    "results": [
+     {
+      "label": "Bounded recovery from modular spectral averages",
+      "challenge": "lean/ComparatorChallenges/BoundedRecovery.lean",
+      "config": "lean/ComparatorChallenges/BoundedRecovery.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.BoundedRecovery.bounded_recovery",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 88,
+        "statement": "theorem bounded_recovery (S : StandardModularData H) (hscalar : S.ScalarCentralizer)\n    (omega : Ultrafilter ℕ) (hfree : (omega : Filter ℕ) ≤ Filter.atTop)\n    (T : H →L[ℂ] H) (s : ℝ) (delta : ℕ → ℝ) (hdelta : ∀ n, 0 < delta n)\n    (hdelta0 : Tendsto delta atTop (𝓝 0)) (h : ℕ → H) (hunit : ∀ n, ‖h n‖ = 1)\n    (hband : ∀ n, S.D.HasSpectralSupport (Icc (s - delta n) (s + delta n)) (h n))\n    (hpositive : 0 < Filter.limsup\n      (fun n => fixedMean omega (fun t => ‖T (S.D.unitary t (h n))‖ ^ 2)) atTop) :\n    RecoveryConclusion S T s delta",
+        "proof": {
+         "file": "lean/OAI/Analysis/ModularRecovery/Recovery.lean",
+         "line": 227,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/ModularRecovery/Main.lean",
+        "main": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "291",
+   "title": "Cuntz comparison, nuclear dimension, and equivariant Jiang–Su stability",
+   "description": "Proves equivariant Jiang–Su stability for every countable discrete amenable group action on a simple separable unital infinite-dimensional nuclear stably finite Jiang–Su-stable $C^{∗}$-algebra, resolving this case of Szabó's conjecture without restrictions on trace dynamics. The family also proves the unital Toms–Winter conjecture, equating strict comparison, finite nuclear dimension and Jiang–Su stability in the simple separable unital infinite-dimensional nuclear setting.",
+   "doc": "lean/docs/291.md",
+   "manuscripts": [
+    {
+     "title": "Equivariant Jiang–Su Stability for Amenable Actions in the Unital Stably Finite Case",
+     "path": "preprints/Equivariant-Jiang-Su-Stability-for-Amenable-Actions-in-the-Unital-Stably-Finite-Case-October-5-2026/paper.pdf",
+     "note": "",
+     "abstract": "Every action of a countable discrete amenable group on a simple, separable, unital, infinite-dimensional, nuclear, stably finite complex C$^{∗}$-algebra that is already Jiang–Su stable absorbs the trivial action on the Jiang–Su algebra up to cocycle conjugacy. No restriction is imposed on the action on the tracial-state simplex. This proves the unital, stably finite case of Szabó's Conjecture A on automatic equivariant Jiang–Su stability."
+    },
+    {
+     "title": "Cuntz comparison and Jiang–Su absorption",
+     "path": "preprints/Cuntz-comparison-and-Jiang-Su-absorption-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove that strict comparison in the extended-functional sense implies Jiang–Su absorption for separable simple nuclear non-elementary $C^{∗}$-algebras. This resolves the corresponding implication of the Toms–Winter regularity problem, including nonunital algebras and allowing unbounded traces. More generally, every separable nuclear $C^{∗}$-algebra whose Cuntz semigroup is almost unperforated and fully almost divisible absorbs the Jiang–Su algebra."
+    },
+    {
+     "title": "Nuclear dimension and Jiang–Su stability without elementary subquotients",
+     "path": "preprints/Nuclear-dimension-and-Jiang-Su-stability-without-elementary-subquotients-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "For separable nuclear $C^{∗}$-algebras with no nonzero elementary ideal subquotients, finite nuclear dimension is equivalent to Jiang–Su stability. More generally, $\\dim_{\\mathrm{nuc}}(A_0\\otimes\\mathcal Z)\\le1$ for every separable nuclear $A_{0}$. This proves Robert and Tikuisis's Conjecture (C1) and the nuclear-dimension equivalence in the nonsimple Toms–Winter regularity question."
+    },
+    {
+     "title": "Tracial projection methods and uniform property Gamma",
+     "path": "preprints/Tracial-projection-methods-and-uniform-property-Gamma-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "For a simple, separable, unital, infinite-dimensional, nuclear, stably finite $C^{∗}$-algebra with traces, real rank zero of the uniform tracial ultrapower of its uniform tracial completion implies uniform property Γ. This answers Problem XXI of Schafhauser, Tikuisis and White affirmatively. Independently, strict comparison implies Jiang–Su absorption for simple, separable, unital, infinite-dimensional nuclear algebras, resolving the unital Toms–Winter conjecture. Under comparison tested on traces of finite target rank, we also obtain uniform property Γ and absorption for simple, separable, nuclear, stably projectionless algebras whose densely finite traces are all bounded and have a nonempty compact normalized base."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/291.md",
+    "title": "Cuntz comparison, nuclear dimension, and equivariant Jiang–Su stability",
+    "papers": [
+     "preprints/Tracial-projection-methods-and-uniform-property-Gamma-September-23-2026/paper.pdf"
+    ],
+    "scope": "The formalization proves that real rank zero of the uniform tracial ultrapower of the uniform tracial completion implies uniform property $\\Gamma$ for a simple separable unital infinite-dimensional nuclear stably finite $C^*$-algebra with traces. The conclusion holds at every specified free ultrafilter under the corresponding real-rank-zero hypothesis.\n\nThe linked comparison results also prove Jiang–Su absorption and uniform property $\\Gamma$ for simple separable unital infinite-dimensional nuclear algebras with strict comparison, and for the stated stably projectionless nuclear algebras with bounded densely finite traces, a nonempty compact normalized trace base, and the prescribed finite-target-rank comparison condition.",
+    "results": [
+     {
+      "label": "Uniform property $\\Gamma$ from tracial real rank zero",
+      "challenge": "lean/ComparatorChallenges/UniformGamma.lean",
+      "config": "lean/ComparatorChallenges/UniformGamma.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.ComparatorModel.CurrentMain.main",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 600,
+        "statement": "theorem CurrentMain.main : MainClaim.{uNuclear}",
+        "proof": {
+         "file": "lean/OAI/Analysis/TracialSplitting/Challenge.lean",
+         "line": 75,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/TracialSplitting/Challenge.lean",
+        "main": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "292",
+   "title": "Kirchberg's $\\mathcal O_2$ norm-ultrapower embedding problem",
+   "description": "Constructs an explicit separable unital full group $C^{∗}$-algebra that cannot embed unitally into the norm ultrapower of any fixed nonzero unital nuclear $C^{∗}$-algebra, for any free ultrafilter on the natural numbers. Taking the target to be $\\mathcal O_2$ answers Kirchberg's norm-ultrapower embedding problem negatively.",
+   "doc": "lean/docs/292.md",
+   "manuscripts": [
+    {
+     "title": "An explicit obstruction to nuclear norm-ultrapower embeddings",
+     "path": "preprints/An-explicit-obstruction-to-nuclear-norm-ultrapower-embeddings-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We give a negative answer to Kirchberg's norm-ultrapower embedding problem. We construct an explicit separable unital full group $C^{∗}$-algebra that admits no unital embedding into $B^{ω}$, for any nonzero unital nuclear $C^{∗}$-algebra *B* and any free ultrafilter *ω* on ℕ. In particular, it does not embed unitally into $\\mathcal O_2^\\omega$."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/292.md",
+    "title": "Kirchberg's $`\\mathcal O_2`$ norm-ultrapower embedding problem",
+    "papers": [
+     "preprints/An-explicit-obstruction-to-nuclear-norm-ultrapower-embeddings-September-23-2026/paper.pdf"
+    ],
+    "scope": "Kirchberg's norm-ultrapower embedding problem asks whether separable $C^*$-algebras embed into norm ultrapowers of nuclear algebras. The formalization constructs an explicit separable unital full group $C^*$-algebra that has no unital embedding into $B^\\omega$ for any nonzero unital nuclear $C^*$-algebra $B$ and any free ultrafilter $\\omega$ on $\\mathbb N$. In particular, it does not embed unitally into an ultrapower of the Cuntz algebra $\\mathcal O_2$.",
+    "results": [
+     {
+      "label": "Obstruction to nuclear norm-ultrapower embeddings",
+      "challenge": "lean/ComparatorChallenges/NuclearUltrapower.lean",
+      "config": "lean/ComparatorChallenges/NuclearUltrapower.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.NuclearUltrapower.main_no_embedding",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 208,
+        "statement": "theorem main_no_embedding : MainStatementWithCuntzCorollary.{0}",
+        "proof": {
+         "file": "lean/OAI/Analysis/NuclearUltrapower/Main.lean",
+         "line": 14,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/NuclearUltrapower/Main.lean",
+        "main": false
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "293",
+   "title": "Invariant projections, hyperinvariant subspaces, and transitive algebras",
+   "description": "Constructs a nonzero norm-quasinilpotent operator on every infinite-dimensional separable complex Hilbert space with no nonzero proper closed subspace invariant under every commuting operator. The construction also gives operators with no nontrivial invariant projection in the hyperfinite type II$_{1}$ factor.",
+   "doc": "lean/docs/293.md",
+   "manuscripts": [
+    {
+     "title": "Invariant-projection counterexamples for every irrational rotation",
+     "path": "preprints/Invariant-projection-counterexamples-for-every-irrational-rotation-September-27-2026/paper.pdf",
+     "note": "",
+     "abstract": "For every irrational angle, we construct a continuous nonnegative circle weight with exactly one zero and logarithmic integral $-\\infty$ whose weighted rotation has no nontrivial invariant projection in the associated hyperfinite type II$_{1}$ factor. This answers negatively the question of Zhu, Fang, and Shi, with the angle prescribed in advance. The resulting operator is nonzero and norm-quasinilpotent."
+    },
+    {
+     "title": "Backward intertwiners and a transitive commutant",
+     "path": "preprints/Backward-intertwiners-and-a-transitive-commutant-September-27-2026/paper.pdf",
+     "note": "",
+     "abstract": "We give a negative answer to the hyperinvariant-subspace problem by constructing, on every infinite-dimensional separable complex Hilbert space, a nonzero bounded norm-quasinilpotent operator with no nonzero proper closed hyperinvariant subspace. Its commutant is a proper strongly closed unital transitive complex operator algebra."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/293.md",
+    "title": "Invariant projections, hyperinvariant subspaces, and transitive algebras",
+    "papers": [
+     "preprints/Invariant-projection-counterexamples-for-every-irrational-rotation-September-27-2026/paper.pdf",
+     "preprints/Backward-intertwiners-and-a-transitive-commutant-September-27-2026/paper.pdf"
+    ],
+    "scope": "For every irrational rotation angle $\\theta\\in(0,1)$, the formalization constructs a continuous nonnegative circle weight with a single zero and logarithmic integral $-\\infty$ whose weighted rotation is nonzero and quasinilpotent. In its associated hyperfinite type $\\mathrm{II}_1$ factor, the operator has no nontrivial invariant projection: $(1-p)Tp=0$ forces $p=0$ or $p=1$. The linked statements also include an earlier existence construction, a product realization, and the selected product model's Brown measure $\\delta_0$.\n\nThe formalization for the companion paper [Backward intertwiners and a transitive commutant](../../preprints/Backward-intertwiners-and-a-transitive-commutant-September-27-2026/paper.pdf) gives, on every separable infinite-dimensional complex Hilbert space, a nonzero quasinilpotent operator whose commutant is transitive, proper, and closed in the strong operator topology. Thus no nontrivial closed subspace is invariant under every operator in the commutant.\n\nThe hyperinvariant-subspace problem asks whether every bounded operator on a complex Hilbert space has a nontrivial closed subspace invariant under every operator that commutes with it. The formalization gives a negative answer on every separable infinite-dimensional complex Hilbert space: there is a nonzero quasinilpotent operator with a transitive commutant. Its commutant is a proper unital operator algebra closed in the strong operator topology. The construction therefore has no nonzero proper closed hyperinvariant subspace.",
+    "results": [
+     {
+      "label": "Finite-factor invariant-projection counterexample",
+      "challenge": "lean/ComparatorChallenges/FiniteFactor.lean",
+      "config": "lean/ComparatorChallenges/FiniteFactor.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.FiniteFactor.main_theorem",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 41,
+        "statement": "theorem main_theorem : MainTarget.{0}",
+        "proof": {
+         "file": "lean/OAI/Analysis/FiniteFactor/Main.lean",
+         "line": 11,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/FiniteFactor/Main.lean",
+        "main": false
+       }
+      ]
+     },
+     {
+      "label": "Quasinilpotent operator with transitive commutant",
+      "challenge": "lean/ComparatorChallenges/BackwardIntertwiners.lean",
+      "config": "lean/ComparatorChallenges/BackwardIntertwiners.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.BackwardIntertwiners.direct_algebra_corollary",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 36,
+        "statement": "theorem direct_algebra_corollary (H : Type*) [NormedAddCommGroup H] [InnerProductSpace ℂ H]\n    [CompleteSpace H] [TopologicalSpace.SeparableSpace H] (hInf : ¬FiniteDimensional ℂ H) :\n    Hyperinvariant233.FullClaim (H:=H)",
+        "proof": {
+         "file": "lean/OAI/Analysis/BackwardIntertwiners/AlgebraCorollary.lean",
+         "line": 78,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/BackwardIntertwiners/AlgebraCorollary.lean",
+        "main": true
+       }
+      ]
+     },
+     {
+      "label": "Continuous-weight invariant-projection counterexample",
+      "challenge": "lean/ComparatorChallenges/ContinuousCircleWeight.lean",
+      "config": "lean/ComparatorChallenges/ContinuousCircleWeight.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.ContinuousCircleWeight.main_theorem",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 50,
+        "statement": "theorem main_theorem : MainStatement",
+        "proof": {
+         "file": "lean/OAI/Analysis/RotationWeights/Main.lean",
+         "line": 267,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/RotationWeights/Main.lean",
+        "main": false
+       }
+      ]
+     },
+     {
+      "label": "Quasinilpotent operator with a transitive commutant",
+      "challenge": "lean/ComparatorChallenges/HyperinvariantSubspaces.lean",
+      "config": "lean/ComparatorChallenges/HyperinvariantSubspaces.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.Hyperinvariant.main_theorem",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 38,
+        "statement": "theorem main_theorem (hInf : ¬FiniteDimensional ℂ H) : FullClaim (H := H)",
+        "proof": {
+         "file": "lean/OAI/Analysis/Hyperinvariant/Main.lean",
+         "line": 15,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/Hyperinvariant/Main.lean",
+        "main": false
+       }
+      ]
+     },
+     {
+      "label": "Invariant-projection counterexamples for every irrational rotation",
+      "challenge": "lean/ComparatorChallenges/IrrationalRotation.lean",
+      "config": "lean/ComparatorChallenges/IrrationalRotation.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.Invariant233.Results.prescribed_irrational_counterexample",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 838,
+        "statement": "theorem prescribed_irrational_counterexample (θ : ℝ)\n    (hθ0 : 0 < θ) (hθ1 : θ < 1) (hθ : Irrational θ) :\n    ∃ f : C(Circle, ℝ), Rotation.IsContinuousCounterexample θ f",
+        "proof": {
+         "file": "lean/OAI/Analysis/IrrationalRotation/PrescribedAngle.lean",
+         "line": 17,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/IrrationalRotation/Main.lean",
+        "main": false
+       },
+       {
+        "name": "OAI.Invariant233.Results.product_realization",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 843,
+        "statement": "theorem product_realization :\n    ∃ θ c : ℕ → ℝ, ProductModel.IsCounterexampleRealization θ c",
+        "proof": {
+         "file": "lean/OAI/Analysis/IrrationalRotation/Main.lean",
+         "line": 670,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/IrrationalRotation/Main.lean",
+        "main": false
+       }
+      ]
+     },
+     {
+      "label": "Brown measure of the selected product weighted shift",
+      "challenge": "lean/ComparatorChallenges/ProductBrown.lean",
+      "config": "lean/ComparatorChallenges/ProductBrown.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.FiniteFactor.productBrown",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 752,
+        "statement": "theorem productBrown : ProductBrownClaim",
+        "proof": {
+         "file": "lean/OAI/Analysis/BrownMeasure/Main.lean",
+         "line": 14,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/BrownMeasure/Main.lean",
+        "main": false
+       }
+      ]
+     },
+     {
+      "label": "Quasinilpotent operator without a hyperinvariant subspace",
+      "challenge": "lean/ComparatorChallenges/HyperinvariantSubspaces.lean",
+      "config": "lean/ComparatorChallenges/HyperinvariantSubspaces.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.Hyperinvariant.main_theorem",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 38,
+        "statement": "theorem main_theorem (hInf : ¬FiniteDimensional ℂ H) : FullClaim (H := H)",
+        "proof": {
+         "file": "lean/OAI/Analysis/Hyperinvariant/Main.lean",
+         "line": 15,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/Hyperinvariant/Main.lean",
+        "main": false
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "294",
+   "title": "Kaplansky's quasitrace conjecture and failure of tensor-product stable finiteness",
+   "description": "Disproves Kaplansky's quasitrace conjecture by constructing a separable unital complex $C^{∗}$-algebra admitting normalized 2-quasitraces, all of which are nonadditive. As a consequence, two unital simple stably finite $C^{∗}$-algebras can have a properly infinite minimal tensor product, with one factor $C_r^*(\\mathbb F_2)$.",
+   "doc": "lean/docs/294.md",
+   "manuscripts": [
+    {
+     "title": "A counterexample to Kaplansky's quasitrace conjecture and failure of tensor-product stable finiteness",
+     "path": "preprints/A-counterexample-to-Kaplanskys-quasitrace-conjecture-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We refute Kaplansky's quasitrace conjecture by constructing a separable unital complex $C^{∗}$-algebra that admits normalized 2-quasitraces but has no tracial state. As a consequence, we show that the minimal tensor product of two unital simple stably finite complex $C^{∗}$-algebras can be properly infinite, even when one factor is the reduced free-group algebra $C_r^*(\\mathbb F_2)$."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/294.md",
+    "title": "Kaplansky's quasitrace conjecture and failure of tensor-product stable finiteness",
+    "papers": [
+     "preprints/A-counterexample-to-Kaplanskys-quasitrace-conjecture-September-23-2026/paper.pdf"
+    ],
+    "scope": "Kaplansky's quasitrace conjecture predicts that every $2$-quasitrace on a $C^*$-algebra is a trace. The formalization constructs a separable $C^*$-algebra with normalized $2$-quasitraces and fixed positive contractions $a,b$ for which every such quasitrace satisfies $\\mathrm{Re}(\\tau(a+b)-\\tau(a)-\\tau(b))\\ge1/144$. Thus none is additive on this pair.\n\nThe formalization also gives simple stably finite $C^*$-algebras whose spatial tensor product is properly infinite, a separable stably finite algebra with no tracial state, and a tensor-product example in which normalized $2$-quasitraces are lost. These are the stable-finiteness consequences named in the paper's title.",
+    "results": [
+     {
+      "label": "Nonadditive normalized $2$-quasitraces",
+      "challenge": "lean/ComparatorChallenges/KaplanskyQuasitrace.lean",
+      "config": "lean/ComparatorChallenges/KaplanskyQuasitrace.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.Kaplansky.kaplansky_quasitrace_counterexample",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 48,
+        "statement": "theorem kaplansky_quasitrace_counterexample : MainTarget",
+        "proof": {
+         "file": "lean/OAI/Analysis/Kaplansky/Main.lean",
+         "line": 17,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/Kaplansky/Main.lean",
+        "main": true
+       }
+      ]
+     },
+     {
+      "label": "Tensor-product failure of stable finiteness and quasitrace consequences",
+      "challenge": "lean/ComparatorChallenges/KaplanskyStableFiniteness.lean",
+      "config": "lean/ComparatorChallenges/KaplanskyStableFiniteness.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.KaplanskyConsequences.stable_finiteness_bundle",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 240,
+        "statement": "theorem stable_finiteness_bundle : StableFinitenessBundle",
+        "proof": {
+         "file": "lean/OAI/Analysis/Kaplansky/StableFiniteness.lean",
+         "line": 18,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/Kaplansky/StableFiniteness.lean",
+        "main": false
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "295",
+   "title": "The Kadison–Ringrose cohomology conjecture",
+   "description": "Proves that every bounded Hochschild cocycle of degree at least two on a complex von Neumann algebra, with coefficients in the algebra itself, has a bounded primitive. Equivalently, all higher bounded Hochschild cohomology groups vanish, resolving the Kadison–Ringrose conjecture.",
+   "doc": "lean/docs/295.md",
+   "manuscripts": [
+    {
+     "title": "Vanishing of higher bounded Hochschild cohomology",
+     "path": "preprints/Vanishing-of-higher-bounded-Hochschild-cohomology-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove that every bounded Hochschild cocycle of degree at least two on a complex von Neumann algebra, with values in the algebra itself, has a bounded primitive. Together with the established degree-one inner-derivation theorem, this resolves the Kadison–Ringrose cohomology conjecture positively."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/295.md",
+    "title": "The Kadison–Ringrose cohomology conjecture",
+    "papers": [
+     "preprints/Vanishing-of-higher-bounded-Hochschild-cohomology-September-23-2026/paper.pdf"
+    ],
+    "scope": "The formalization proves vanishing of bounded Hochschild cohomology in every degree at least two for a complex von Neumann algebra with coefficients in itself. Every bounded multilinear cocycle of such a degree is the Hochschild differential of a bounded multilinear cochain one degree lower. No separability or type restriction is imposed. The degree-one inner-derivation theorem is outside this selected statement.",
+    "results": [
+     {
+      "label": "Bounded primitives for all Hochschild cocycles of degree at least two",
+      "challenge": "lean/ComparatorChallenges/KadisonRingrose.lean",
+      "config": "lean/ComparatorChallenges/KadisonRingrose.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.BoundedHochschild.KadisonRingrose.main_result",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 30,
+        "statement": "theorem main_result\n    {M : Type u} [CStarAlgebra M] [PartialOrder M] [StarOrderedRing M] [WStarAlgebra M]\n    (n : ℕ) (f : Cochain M (n + 2))\n    (hf : ∀ x : Fin (n + 3) → M, differentialValue f x = 0) :\n    ∃ g : Cochain M (n + 1), ∀ x : Fin (n + 2) → M,\n      differentialValue g x = f x",
+        "proof": {
+         "file": "lean/OAI/Analysis/BoundedHochschild/MainResult.lean",
+         "line": 13,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/BoundedHochschild/MainResult.lean",
+        "main": false
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "296",
+   "title": "The generator problem for finite factors",
+   "description": "Proves that every type II$_{1}$ factor with separable predual is generated by a single operator, equivalently by two self-adjoint operators, resolving the generator problem. More strongly, for every irreducible inclusion $P\\subset M$ of such factors, the unitaries *u* with $M=W^*(P,u)$ form a dense $G_{δ}$ subset in the trace 2-norm topology.",
+   "doc": "lean/docs/296.md",
+   "manuscripts": [
+    {
+     "title": "Relative generation and the generator problem for finite factors",
+     "path": "preprints/Relative-generation-and-the-generator-problem-for-finite-factors-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove that every type II$_{1}$ factor with separable predual is generated by one operator, equivalently by two self-adjoint operators. Combined with the established direct-integral reduction to this case, this gives an affirmative solution of the generator problem for von Neumann algebras with separable predual."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/296.md",
+    "title": "The generator problem for finite factors",
+    "papers": [
+     "preprints/Relative-generation-and-the-generator-problem-for-finite-factors-September-23-2026/paper.pdf"
+    ],
+    "scope": "The formalization answers the generator problem affirmatively for type $\\mathrm{II}_1$ factors with separable predual: one bounded operator generates the factor under adjoints and weak-operator closure. It imposes no separability assumption on the representing Hilbert space or on the operator-norm topology.\n\nIt also proves the paper's relative-generation result. For an irreducible inclusion of type $\\mathrm{II}_1$ factors with separable predual for the larger factor, the unitaries that generate the larger factor together with the smaller one form a dense $G_\\delta$ set in the normalized trace two-norm topology. The normalized faithful normal trace is included in the assertion.",
+    "results": [
+     {
+      "label": "Single generation of separable-predual $\\mathrm{II}_1$ factors",
+      "challenge": "lean/ComparatorChallenges/FactorGeneration.lean",
+      "config": "lean/ComparatorChallenges/FactorGeneration.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.Generator.single_generation_of_II1_separable_predual",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 41,
+        "statement": "theorem single_generation_of_II1_separable_predual\n    (S : StarSubalgebra ℂ (H →L[ℂ] H)) (hS : IsII1Factor S)\n    (hsep : HasSeparablePredual S) : SinglyGenerated S",
+        "proof": {
+         "file": "lean/OAI/Analysis/FactorGeneration/Main.lean",
+         "line": 15,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/FactorGeneration/Main.lean",
+        "main": true
+       }
+      ]
+     },
+     {
+      "label": "Dense relative generators for irreducible inclusions of finite factors",
+      "challenge": "lean/ComparatorChallenges/RelativeGeneration.lean",
+      "config": "lean/ComparatorChallenges/RelativeGeneration.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.RelativeGeneration.main_theorem",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 103,
+        "statement": "theorem main_theorem : MainTarget.{level}",
+        "proof": {
+         "file": "lean/OAI/Analysis/RelativeGeneration/Main.lean",
+         "line": 92,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/RelativeGeneration/Main.lean",
+        "main": false
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "297",
+   "title": "A ZFC counterexample to Naimark's problem",
+   "description": "Gives an alternative to [Tanaka's ZFC construction](https://arxiv.org/abs/2609.26930v1) of a unital infinite-dimensional simple complex $C^{∗}$-algebra with a faithful tracial state and exactly one nonzero irreducible representation up to unitary equivalence. Thus the unrestricted compact-operator characterization fails without additional set-theoretic assumptions; the counterexample is nonseparable.",
+   "doc": "lean/docs/297.md",
+   "manuscripts": [
+    {
+     "title": "A counterexample to Naimark's problem in ZFC",
+     "path": "preprints/A-counterexample-to-Naimarks-problem-in-ZFC-September-24-2026/naimark-counterexample-zfc.pdf",
+     "note": "",
+     "abstract": "We construct in ZFC a unital infinite-dimensional simple complex $C^{∗}$-algebra with a faithful tracial state whose nonzero irreducible representations are all unitarily equivalent. This gives a negative answer to Naimark's problem without additional set-theoretic assumptions."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/297.md",
+    "title": "A ZFC counterexample to Naimark's problem",
+    "papers": [
+     "preprints/A-counterexample-to-Naimarks-problem-in-ZFC-September-24-2026/naimark-counterexample-zfc.pdf"
+    ],
+    "scope": "Naimark's problem asks whether a $C^*$-algebra whose nonzero irreducible representations are all unitarily equivalent must be an algebra of compact operators. The formalization gives a counterexample in ZFC: a unital infinite-dimensional simple complex $C^*$-algebra with a faithful tracial state has that uniqueness property for irreducible representations but is not isomorphic to the compact operators on any Hilbert space. No additional set-theoretic assumption is used.",
+    "results": [
+     {
+      "label": "Counterexample to Naimark's problem in ZFC",
+      "challenge": "lean/ComparatorChallenges/Naimark.lean",
+      "config": "lean/ComparatorChallenges/Naimark.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.NaimarkZFC.main",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 44,
+        "statement": "theorem main :\n    ∃ (A : Type u) (_ : CStarAlgebra A),\n      IsSimpleCStar A ∧ ¬ FiniteDimensional ℂ A ∧\n      (∃ τ : A →L[ℂ] ℂ, IsFaithfulTracialState τ) ∧\n      HasUniqueIrreducibleRepresentation.{u, v, w} A ∧\n      ∀ (H : Type v) [NormedAddCommGroup H] [InnerProductSpace ℂ H] [CompleteSpace H],\n        ¬ IsIsomorphicToCompacts A H",
+        "proof": {
+         "file": "lean/OAI/Analysis/Naimark/Tracial.lean",
+         "line": 243,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/Naimark/Tracial.lean",
+        "main": false
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "298",
+   "title": "Two notions of free entropy differ even when both are finite",
+   "description": "Constructs a bounded self-adjoint tuple in a tracial von Neumann algebra whose microstates and nonmicrostates free entropies satisfy $-\\infty\\lt \\chi\\lt \\chi^*\\lt \\infty$. This answers Voiculescu’s finite-entropy equality question negatively: the matrix-approximation and free-Fisher-information definitions differ even when both are finite.",
+   "doc": "lean/docs/298.md",
+   "manuscripts": [
+    {
+     "title": "A finite-entropy separation of microstates and nonmicrostates free entropy",
+     "path": "preprints/A-finite-entropy-separation-of-microstates-and-nonmicrostates-free-entropy-September-25-2026/paper.pdf",
+     "note": "",
+     "abstract": "We answer the finite-entropy equality question for microstates and nonmicrostates free entropy negatively. We construct a bounded self-adjoint tuple *X* in a von Neumann algebra with faithful normal tracial state such that $-\\infty\\lt \\chi(X)\\leq\\chi^*(X)-\\tfrac12\\lt \\infty$. Here *χ* is the original microstates entropy with an operator-norm cutoff and a limsup over matrix sizes. The counterexample uses a large but fixed number of variables."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/298.md",
+    "title": "Two notions of free entropy differ even when both are finite",
+    "papers": [
+     "preprints/A-finite-entropy-separation-of-microstates-and-nonmicrostates-free-entropy-September-25-2026/paper.pdf"
+    ],
+    "scope": "The formalization disproves equality of microstates and nonmicrostates free entropy even when both quantities are finite. It constructs a bounded self-adjoint tuple $X$ in a von Neumann algebra with a faithful normal tracial state such that $-\\infty<\\chi(X)\\le\\chi^*(X)-1/2<\\infty$. Here $\\chi$ is the microstates entropy with an operator-norm cutoff and a limsup over matrix sizes, and $\\chi^*$ is the nonmicrostates entropy defined using free semicircular noise. The example has a fixed finite number of variables.",
+    "results": [
+     {
+      "label": "Finite separation of microstates and nonmicrostates free entropy",
+      "challenge": "lean/ComparatorChallenges/FiniteEntropySeparation.lean",
+      "config": "lean/ComparatorChallenges/FiniteEntropySeparation.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.FiniteEntropySeparation.main",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 108,
+        "statement": "theorem main :\n    ∃ (H : Type) (_ : NormedAddCommGroup H) (_ : InnerProductSpace ℂ H)\n      (_ : CompleteSpace H) (M : VonNeumannAlgebra H) (τ : TracialVector M)\n      (n : ℕ) (X S : Fin n → H →L[ℂ] H),\n      2 ≤ n ∧\n      (∀ i, X i ∈ M ∧ IsSelfAdjoint (X i)) ∧\n      (∀ i, S i ∈ M ∧ IsSelfAdjoint (S i)) ∧\n      FreeStandardNoise τ X S ∧\n      (⊥ : EReal) < chi τ X ∧\n      chi τ X ≤ chiStar τ X S - (1 / 2 : EReal) ∧\n      chiStar τ X S - (1 / 2 : EReal) < (⊤ : EReal)",
+        "proof": {
+         "file": "lean/OAI/Analysis/FreeEntropy/Main.lean",
+         "line": 9,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/FreeEntropy/Main.lean",
+        "main": false
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "299",
+   "title": "The Kirchberg–Rørdam character criterion and infinite tensor-power Jiang–Su stability",
+   "description": "A nonzero unital separable complex $C^{∗}$-algebra is Jiang–Su stable exactly when its norm central-sequence algebra has no characters, for every free ultrafilter. This answers the Kirchberg–Rørdam character question. Also, the infinite minimal tensor power of every such algebra without characters is Jiang–Su stable, answering the Dadarlat–Toms question.",
+   "doc": "lean/docs/299.md",
+   "manuscripts": [
+    {
+     "title": "The Kirchberg–Rørdam character criterion",
+     "path": "preprints/The-Kirchberg-Rordam-character-criterion-September-25-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove the Kirchberg–Rørdam character criterion: for every free ultrafilter on ℕ, a nonzero unital separable complex $C^{∗}$-algebra absorbs the Jiang–Su algebra if and only if its norm central-sequence algebra has no characters. We also prove that the infinite minimal tensor power of every nonzero unital separable complex $C^{∗}$-algebra without characters is $\\mathcal Z$-stable and contains a unital copy of $\\mathcal Z$."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/299.md",
+    "title": "The Kirchberg–Rørdam character criterion and infinite tensor-power Jiang–Su stability",
+    "papers": [
+     "preprints/The-Kirchberg-Rordam-character-criterion-September-25-2026/paper.pdf"
+    ],
+    "scope": "The Kirchberg–Rørdam criterion relates Jiang–Su absorption to characters of the central-sequence algebra. The formalized result proves that, for every nonzero unital separable complex $C^*$-algebra $A$ and every free ultrafilter on $\\mathbb N$, the norm central-sequence algebra has no nonzero character exactly when $A\\cong A\\otimes_{\\min}\\mathcal Z$. No nuclearity, simplicity, trace, or comparison hypothesis is imposed.",
+    "results": [
+     {
+      "label": "Kirchberg–Rørdam character criterion",
+      "challenge": "lean/ComparatorChallenges/CharacterCriterion.lean",
+      "config": "lean/ComparatorChallenges/CharacterCriterion.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.KirchbergRordam.character_criterion",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 2128,
+        "statement": "theorem character_criterion\n    (A : Type) [CStarAlgebra A] [Nontrivial A] [TopologicalSpace.SeparableSpace A]\n    (ω : Ultrafilter ℕ) (hω : (ω : Filter ℕ)≤Filter.cofinite) :\n    OAI.KirchbergRordam.HasNoCharacters (NormUltrapower.CentralAlgebra A ω) ↔\n      Nonempty (A ≃⋆ₐ[ℂ] MinTensor.Algebra A JiangSu.Algebra)",
+        "proof": {
+         "file": "lean/OAI/Analysis/CharacterCriterion/Main.lean",
+         "line": 52,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/CharacterCriterion/Main.lean",
+        "main": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "300",
+   "title": "Approximation and quadratic strong-operator paving",
+   "description": "Proves that every self-adjoint element of a complex von Neumann algebra admits strong-operator paving relative to any maximal abelian subalgebra with $O(\\varepsilon^{-2})$ blocks. The norm bound holds after compression by a projection arbitrarily close to the identity in the strong topology, resolving the Popa–Vaes quadratic paving conjecture.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "Approximation Paving over Arbitrary Maximal Abelian Subalgebras",
+     "path": "preprints/Approximation-Paving-over-Arbitrary-Maximal-Abelian-Subalgebras-September-25-2026/Approximation-Paving-over-Arbitrary-Maximal-Abelian-Subalgebras-September-25-2026.pdf",
+     "note": "",
+     "abstract": "We prove the approximation-paving conjecture of Popa and Vaes for every maximal abelian subalgebra of a complex von Neumann algebra. For each $0\\lt \\varepsilon\\lt 1$, every self-adjoint operator is a strong limit of self-adjoint operators of norm at most three times its norm, each admitting a norm paving with error at most *ε* times the approximant's own norm. The number of projections is at most $C\\varepsilon^{-6}$ for a universal constant *C*. No separability or conditional-expectation hypothesis is required."
+    },
+    {
+     "title": "Quadratic Strong-Operator Paving over Arbitrary Maximal Abelian Subalgebras",
+     "path": "preprints/Quadratic-Strong-Operator-Paving-over-Arbitrary-Maximal-Abelian-Subalgebras-September-25-2026/Quadratic-Strong-Operator-Paving-over-Arbitrary-Maximal-Abelian-Subalgebras-September-25-2026.pdf",
+     "note": "",
+     "abstract": "We prove the quadratic strong-operator paving conjecture of Popa and Vaes. For every $0\\lt \\varepsilon \\lt 1$, every self-adjoint element of a von Neumann algebra admits strong-operator paving over each maximal abelian subalgebra with at most $5\\times10^8\\varepsilon ^{-2}$ projections. The bound is uniform over representations and requires no separability or conditional-expectation assumption."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "301",
+   "title": "Trace cones and Razak–Jacelon stabilization",
+   "description": "Classifies separable nuclear complex $C^{∗}$-algebras after tensoring with the Razak–Jacelon algebra and the compact operators, using their full topological cones of extended lower-semicontinuous tracial weights. This answers Robert’s trace-cone question, including algebras with arbitrary ideal structure and both finite and infinite subquotients.",
+   "doc": "lean/docs/301.md",
+   "manuscripts": [
+    {
+     "title": "The trace cone classifies Razak–Jacelon stabilizations",
+     "path": "preprints/The-trace-cone-classifies-Razak-Jacelon-stabilizations-September-25-2026/The-trace-cone-classifies-Razak-Jacelon-stabilizations-September-25-2026.pdf",
+     "note": "",
+     "abstract": "We prove that the canonical topological cone of all extended lower-semicontinuous tracial weights determines a separable nuclear $C^{∗}$-algebra after tensoring with the Razak–Jacelon algebra and the compact operators, answering Robert's trace-cone classification question positively. The isomorphism realizes the prescribed cone map, with arbitrary ideal structure and without a density assumption on the finite domains of the weights."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/301.md",
+    "title": "Trace cones and Razak–Jacelon stabilization",
+    "papers": [
+     "preprints/The-trace-cone-classifies-Razak-Jacelon-stabilizations-September-25-2026/The-trace-cone-classifies-Razak-Jacelon-stabilizations-September-25-2026.pdf"
+    ],
+    "scope": "The paper classifies separable nuclear complex $C^*$-algebras after tensoring with the Razak–Jacelon algebra and the compact operators, using their cones of extended lower-semicontinuous traces. The linked formalization proves the supporting ideal-transport result from Section 2: a trace-cone equivalence induces an order isomorphism of closed two-sided ideals, carrying the ideals determined by finiteness and vanishing of each trace to those of its image. Here a trace-cone equivalence preserves addition, zero, positive scalar multiplication, and canonical convergence in both directions. The finite ideal is the norm closure of $\\{x : \\tau(x^*x)<\\infty\\}$; the zero ideal is characterized on positive elements by $\\tau(a)=0$.\n\nFor each closed ideal $I$, it also constructs the trace that is zero on positive elements of $I$ and infinite elsewhere. These traces are exactly the additive idempotents, meaning $\\tau+\\tau=\\tau$, and their addition recovers ideal inclusion.\n\nThe construction includes proofs of the required ideal and closure properties of the finite domain. It also proves lower semicontinuity of the support weight, which is zero where a given trace vanishes and infinite elsewhere.\n\nThe paper's main conclusion is an actual isomorphism $A\\otimes\\mathcal W\\otimes\\mathcal K\\cong B\\otimes\\mathcal W\\otimes\\mathcal K$ realizing the trace-cone data. This comparison does not establish that conclusion. Existence of the stabilization models, norm uniqueness, and final intertwining are also outside it.",
+    "results": [
+     {
+      "label": "Transport of trace ideals and their additive-idempotent description",
+      "challenge": "lean/ComparatorChallenges/TraceIdealTransportSupport.lean",
+      "config": "lean/ComparatorChallenges/TraceIdealTransportSupport.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.TraceConeClassification.TraceConeEquiv.idealOrderIso_finIdeal",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 225,
+        "statement": "theorem idealOrderIso_finIdeal (τ : ExtendedTrace A) :\n    F.idealOrderIso τ.finIdeal = (F.toEquiv τ).finIdeal",
+        "proof": {
+         "file": "lean/OAI/Analysis/TraceCone/IdealTransport.lean",
+         "line": 400,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/TraceCone/IdealTransport.lean",
+        "main": true
+       },
+       {
+        "name": "OAI.TraceConeClassification.TraceConeEquiv.idealOrderIso_zeroIdeal",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 229,
+        "statement": "theorem idealOrderIso_zeroIdeal (τ : ExtendedTrace A) :\n    F.idealOrderIso τ.zeroIdeal = (F.toEquiv τ).zeroIdeal",
+        "proof": {
+         "file": "lean/OAI/Analysis/TraceCone/IdealTransport.lean",
+         "line": 411,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/TraceCone/IdealTransport.lean",
+        "main": true
+       },
+       {
+        "name": "OAI.TraceConeClassification.closed_ideal_weight_exists",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 61,
+        "statement": "theorem closed_ideal_weight_exists\n    (I : NonUnitalStarSubalgebra ℂ A) (hI : IsClosed (I : Set A))\n    (hleft : ∀ (x y : A), y ∈ I → x * y ∈ I)\n    (hright : ∀ (x y : A), x ∈ I → x * y ∈ I) :\n    ∃ τ : ExtendedTrace A, ∀ a : Positive A, τ a = if a.1 ∈ I then 0 else ∞",
+        "proof": {
+         "file": "lean/OAI/Analysis/TraceCone/FiniteIdeal.lean",
+         "line": 106,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/TraceCone/IdealTransport.lean",
+        "main": true
+       },
+       {
+        "name": "OAI.TraceConeClassification.ExtendedTrace.zero_mem_finiteSquareSet",
+        "role": "theorem",
+        "kind": "lemma",
+        "line": 71,
+        "statement": "lemma zero_mem_finiteSquareSet : (0 : A) ∈ τ.finiteSquareSet",
+        "proof": {
+         "file": "lean/OAI/Analysis/TraceCone/FiniteIdeal.lean",
+         "line": 174,
+         "kind": "lemma",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/TraceCone/IdealTransport.lean",
+        "main": false
+       },
+       {
+        "name": "OAI.TraceConeClassification.ExtendedTrace.star_mem_finiteSquareSet",
+        "role": "theorem",
+        "kind": "lemma",
+        "line": 72,
+        "statement": "lemma star_mem_finiteSquareSet {x : A} (hx : x ∈ τ.finiteSquareSet) :\n    star x ∈ τ.finiteSquareSet",
+        "proof": {
+         "file": "lean/OAI/Analysis/TraceCone/FiniteIdeal.lean",
+         "line": 178,
+         "kind": "lemma",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/TraceCone/IdealTransport.lean",
+        "main": false
+       },
+       {
+        "name": "OAI.TraceConeClassification.ExtendedTrace.smul_mem_finiteSquareSet",
+        "role": "theorem",
+        "kind": "lemma",
+        "line": 74,
+        "statement": "lemma smul_mem_finiteSquareSet (c : ℂ) {x : A} (hx : x ∈ τ.finiteSquareSet) :\n    c • x ∈ τ.finiteSquareSet",
+        "proof": {
+         "file": "lean/OAI/Analysis/TraceCone/FiniteIdeal.lean",
+         "line": 187,
+         "kind": "lemma",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/TraceCone/IdealTransport.lean",
+        "main": false
+       },
+       {
+        "name": "OAI.TraceConeClassification.ExtendedTrace.add_mem_finiteSquareSet",
+        "role": "theorem",
+        "kind": "lemma",
+        "line": 76,
+        "statement": "lemma add_mem_finiteSquareSet {x y : A}\n    (hx : x ∈ τ.finiteSquareSet) (hy : y ∈ τ.finiteSquareSet) :\n    x + y ∈ τ.finiteSquareSet",
+        "proof": {
+         "file": "lean/OAI/Analysis/TraceCone/FiniteIdeal.lean",
+         "line": 202,
+         "kind": "lemma",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/TraceCone/IdealTransport.lean",
+        "main": false
+       },
+       {
+        "name": "OAI.TraceConeClassification.ExtendedTrace.mul_mem_finiteSquareSet_left",
+        "role": "theorem",
+        "kind": "lemma",
+        "line": 79,
+        "statement": "lemma mul_mem_finiteSquareSet_left (x : A) {y : A} (hy : y ∈ τ.finiteSquareSet) :\n    x * y ∈ τ.finiteSquareSet",
+        "proof": {
+         "file": "lean/OAI/Analysis/TraceCone/FiniteIdeal.lean",
+         "line": 218,
+         "kind": "lemma",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/TraceCone/IdealTransport.lean",
+        "main": false
+       },
+       {
+        "name": "OAI.TraceConeClassification.ExtendedTrace.isClosed_finiteIdeal",
+        "role": "theorem",
+        "kind": "lemma",
+        "line": 91,
+        "statement": "lemma isClosed_finiteIdeal : IsClosed (τ.finiteIdeal : Set A)",
+        "proof": {
+         "file": "lean/OAI/Analysis/TraceCone/FiniteIdeal.lean",
+         "line": 246,
+         "kind": "lemma",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/TraceCone/IdealTransport.lean",
+        "main": false
+       },
+       {
+        "name": "OAI.TraceConeClassification.ExtendedTrace.mul_mem_finiteIdeal_left",
+        "role": "theorem",
+        "kind": "lemma",
+        "line": 92,
+        "statement": "lemma mul_mem_finiteIdeal_left (x : A) {y : A} (hy : y ∈ τ.finiteIdeal) :\n    x * y ∈ τ.finiteIdeal",
+        "proof": {
+         "file": "lean/OAI/Analysis/TraceCone/FiniteIdeal.lean",
+         "line": 249,
+         "kind": "lemma",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/TraceCone/IdealTransport.lean",
+        "main": false
+       },
+       {
+        "name": "OAI.TraceConeClassification.ExtendedTrace.mul_mem_finiteIdeal_right",
+        "role": "theorem",
+        "kind": "lemma",
+        "line": 94,
+        "statement": "lemma mul_mem_finiteIdeal_right {x : A} (hx : x ∈ τ.finiteIdeal) (y : A) :\n    x * y ∈ τ.finiteIdeal",
+        "proof": {
+         "file": "lean/OAI/Analysis/TraceCone/FiniteIdeal.lean",
+         "line": 256,
+         "kind": "lemma",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/TraceCone/IdealTransport.lean",
+        "main": false
+       },
+       {
+        "name": "OAI.TraceConeClassification.ExtendedTrace.lowerSemicontinuous_supportWeight",
+        "role": "theorem",
+        "kind": "lemma",
+        "line": 134,
+        "statement": "lemma lowerSemicontinuous_supportWeight (τ : ExtendedTrace A) :\n    LowerSemicontinuous (fun a : Positive A => if τ a = 0 then (0 : ℝ≥0∞) else ∞)",
+        "proof": {
+         "file": "lean/OAI/Analysis/TraceCone/IdealTransport.lean",
+         "line": 280,
+         "kind": "lemma",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/TraceCone/IdealTransport.lean",
+        "main": false
+       },
+       {
+        "name": "OAI.TraceConeClassification.ClosedIdeal.weight_idempotent",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 157,
+        "statement": "theorem weight_idempotent (I : ClosedIdeal A) : I.weight.add I.weight = I.weight",
+        "proof": {
+         "file": "lean/OAI/Analysis/TraceCone/IdealTransport.lean",
+         "line": 83,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/TraceCone/IdealTransport.lean",
+        "main": false
+       },
+       {
+        "name": "OAI.TraceConeClassification.ClosedIdeal.finiteIdeal_weight",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 158,
+        "statement": "theorem finiteIdeal_weight (I : ClosedIdeal A) : I.weight.finiteIdeal = I.1",
+        "proof": {
+         "file": "lean/OAI/Analysis/TraceCone/IdealTransport.lean",
+         "line": 89,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/TraceCone/IdealTransport.lean",
+        "main": false
+       },
+       {
+        "name": "OAI.TraceConeClassification.ClosedIdeal.le_iff_add_weight",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 159,
+        "statement": "theorem le_iff_add_weight (I J : ClosedIdeal A) :\n    I ≤ J ↔ I.weight.add J.weight = I.weight",
+        "proof": {
+         "file": "lean/OAI/Analysis/TraceCone/IdealTransport.lean",
+         "line": 108,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/TraceCone/IdealTransport.lean",
+        "main": false
+       },
+       {
+        "name": "OAI.TraceConeClassification.ExtendedTrace.idempotent_eq_weight",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 164,
+        "statement": "theorem idempotent_eq_weight {τ : ExtendedTrace A} (hτ : τ.add τ = τ) :\n    τ.finIdeal.weight = τ",
+        "proof": {
+         "file": "lean/OAI/Analysis/TraceCone/IdealTransport.lean",
+         "line": 151,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/TraceCone/IdealTransport.lean",
+        "main": false
+       },
+       {
+        "name": "OAI.TraceConeClassification.closedIdealEquivOfAdditive_weight",
+        "role": "theorem",
+        "kind": "lemma",
+        "line": 193,
+        "statement": "lemma closedIdealEquivOfAdditive_weight (e : ExtendedTrace A ≃ ExtendedTrace B)\n    (he : ∀ τ σ, e (τ.add σ) = (e τ).add (e σ)) (I : ClosedIdeal A) :\n    (closedIdealEquivOfAdditive e he I).weight = e I.weight",
+        "proof": {
+         "file": "lean/OAI/Analysis/TraceCone/IdealTransport.lean",
+         "line": 210,
+         "kind": "lemma",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/TraceCone/IdealTransport.lean",
+        "main": false
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "302",
+   "title": "Radius of comparison equals half the mean dimension",
+   "description": "For every minimal homeomorphism *h* of an infinite compact metrizable space *X*, the radius of comparison of $C(X)\\rtimes_h\\mathbb Z$ equals $\\tfrac12\\mathrm{mdim}(X,h)$, including infinite values. Zero mean dimension is equivalent to the small boundary property, Jiang–Su stability and finite nuclear dimension; in this case nuclear dimension is at most one.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "Filtered products and boundary-preserving compression in complex cobordism",
+     "path": "preprints/Filtered-products-and-boundary-preserving-compression-in-complex-cobordism-September-25-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove that, in sufficiently large smash powers, an $MU$-null restriction to a finite pointed subcomplex becomes stably null on the entire union of products with a fixed positive proportion of restricted factors. This coherent vanishing theorem yields boundary-preserving compression of cube-valued maps on every compact metrizable input space. When the torus slot bundle embeds continuously into a trivial bundle of rank less than twice the source rank, the compression places a positive proportion of slots on their boundaries in arbitrarily large powers and fixes every original boundary slot exactly. An example at equality shows that the strict rank inequality cannot be removed."
+    },
+    {
+     "title": "Radius of comparison equals half the mean dimension",
+     "path": "preprints/Radius-of-comparison-equals-half-the-mean-dimension-September-25-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove the integer-action case of the Phillips–Toms conjecture: for every minimal homeomorphism of an infinite compact metrizable space, the radius of comparison of its crossed product equals one half of its mean dimension, including equality at infinity. For these systems, zero mean dimension and the small boundary property are equivalent to Jiang–Su stability and to finite nuclear dimension of the crossed product; in this case its nuclear dimension is at most one."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "303",
+   "title": "Weak pure infiniteness and Cuntz-algebra absorption",
+   "description": "Resolves the ordinary-to-strong pure-infiniteness question of Kirchberg and Rørdam for complex $C^{∗}$-algebras. For exact algebras, proper infiniteness of one fixed finite amplification of every positive element also suffices. Consequently, every separable nuclear algebra with this property absorbs $\\mathcal O_\\infty$, without unitality or simplicity assumptions.",
+   "doc": "lean/docs/303.md",
+   "manuscripts": [
+    {
+     "title": "Weak pure infiniteness and O-infinity absorption",
+     "path": "preprints/Weak-pure-infiniteness-and-O-infinity-absorption-September-25-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove that every complex $C^{∗}$-algebra in which each positive element is properly infinite is strongly purely infinite. This answers the ordinary-to-strong part of Kirchberg–Rørdam's comparison question. For exact algebras, we also prove that proper infiniteness of one fixed finite amplification of every positive element implies proper infiniteness of each positive element. Consequently, every separable nuclear algebra with this fixed-amplification property absorbs $\\mathcal O_\\infty$, without assumptions of unitality or simplicity."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/303.md",
+    "title": "Weak pure infiniteness and Cuntz-algebra absorption",
+    "papers": [
+     "preprints/Weak-pure-infiniteness-and-O-infinity-absorption-September-25-2026/paper.pdf"
+    ],
+    "scope": "The formalization proves that a complex $C^*$-algebra in which every positive element is properly infinite is strongly purely infinite, with the full positive-element diagonalization property. No exactness, nuclearity, unitality, or simplicity assumption is needed for this implication.\n\nFor exact algebras, proper infiniteness of one fixed finite amplification of every positive element already implies individual proper infiniteness and strong pure infiniteness.",
+    "results": [
+     {
+      "label": "Fixed-amplification pure infiniteness for exact algebras",
+      "challenge": "lean/ComparatorChallenges/ExactInfiniteness.lean",
+      "config": "lean/ComparatorChallenges/ExactInfiniteness.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.WeakPureInfiniteness.exact_weaklyPurelyInfinite_individuallyProperlyInfinite_any",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 164,
+        "statement": "theorem exact_weaklyPurelyInfinite_individuallyProperlyInfinite_any\n    {A : Type u} [NonUnitalCStarAlgebra A] [PartialOrder A] [StarOrderedRing A]\n    (hA : Exact A) (hW : WeaklyPurelyInfinite A) {a : A} (ha : 0 ≤ a) :\n    ProperlyInfinite (diagonalCopies 1 a)",
+        "proof": {
+         "file": "lean/OAI/Analysis/WeakInfiniteness/UniverseIndividualInfiniteness.lean",
+         "line": 57,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/WeakInfiniteness/Main.lean",
+        "main": false
+       },
+       {
+        "name": "OAI.WeakPureInfiniteness.exact_weaklyPurelyInfinite_stronglyPurelyInfinite",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 170,
+        "statement": "theorem exact_weaklyPurelyInfinite_stronglyPurelyInfinite\n    (A : Type u) [NonUnitalCStarAlgebra A] [PartialOrder A] [StarOrderedRing A]\n    (hExact : Exact A) (hWeak : WeaklyPurelyInfinite A) : StronglyPurelyInfinite A",
+        "proof": {
+         "file": "lean/OAI/Analysis/WeakInfiniteness/ExactInfiniteness.lean",
+         "line": 23,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/WeakInfiniteness/Main.lean",
+        "main": false
+       }
+      ]
+     },
+     {
+      "label": "Individual proper infiniteness implies strong pure infiniteness",
+      "challenge": "lean/ComparatorChallenges/IndividualStrongInfiniteness.lean",
+      "config": "lean/ComparatorChallenges/IndividualStrongInfiniteness.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.MainGap.Manuscript.individual_to_strong_main",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 319,
+        "statement": "theorem individual_to_strong_main (hP : PropertyP A) :\n    (∀ a b : A, 0 ≤ a → 0 ≤ b → ∀ c : A, ∀ ε : ℝ, 0 < ε →\n      ∃ s t : A,\n        ‖star s * a * s - a‖ < ε ∧\n        ‖star t * b * t - b‖ < ε ∧\n        ‖star s * c * t‖ < ε) ∧\n    MainGap.StronglyPurelyInfinite A",
+        "proof": {
+         "file": "lean/OAI/Analysis/CStarAlgebra/PureInfiniteness/Main.lean",
+         "line": 43,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/CStarAlgebra/PureInfiniteness/Main.lean",
+        "main": false
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

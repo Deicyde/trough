@@ -20,8 +20,8 @@ Theories, Strong PNT and PNT+), the Formal Frontier libraries from their
 headline results, Formal Conjectures from its problem files, Lean Pool from
 its project cards, Anthropic's FLT from the landmark theorems of its proof,
 Axiom's CFSG from its proof's case division and its milestones, Axiom's
-Stacks Project formalization from its Stacks tags, ATLAS from the topics
-of its vault, and Physlib from its modules.
+Stacks Project formalization from its Stacks tags, ATLAS from the topics of
+its vault, OpenAI Math from its result families, and Physlib from its modules.
 
 ## The Mathlib map
 
@@ -496,6 +496,47 @@ non-commercial license and is not read.
    a link annotation does not read, or when the results drop under half the
    last record's.
 
+## The OpenAI Math chapter
+
+[OpenAI Math](https://github.com/openai/math) is a collection of mathematical
+manuscripts produced by an OpenAI model, with Lean formalizations of some of
+their results. `CONTENTS.md` lists its result families, each with its
+description and its manuscripts' titles, PDFs and abstracts; `overview.tex`
+files the families under subjects. A family with Lean has a page,
+`lean/docs/NNN.md`, whose scope section says what the Lean covers and whose
+table links a statement file under `lean/ComparatorChallenges/` for each
+formalized result. Beside each statement file, a configuration names the
+declarations it states and the solution module whose declarations of the same
+names prove them. The chapter has a part per subject and an article per family:
+its description, a block per manuscript and, for a family with Lean, the scope
+and a block per result, with each statement as the statement file writes it and
+the line where the repository's Lean proves it.
+
+1. `tools/refresh_openai_math.py CHECKOUT` reads a checkout and writes
+   `data/openai-math/`: `source.json`, the commit, the README's sentences the
+   chapter quotes, `formalization.yaml`'s facts and the counts;
+   `structure.json`, the subjects and their families; and
+   `families/<subject>.json`, each family's description, manuscripts and Lean
+   page, with each result's statements and proofs. A proof is found where the
+   solution module, a module it imports, or the file `formalization.yaml` names
+   for it declares the statement's name, read by `tools/trough/leansource.py`
+   without Lean; the statement files leave their proofs as `sorry` by design.
+2. The **OpenAI Math data** workflow (`.github/workflows/openai-math-data.yml`)
+   fetches the repository at the commit `source.json` pins, as a blobless
+   sparse checkout of the text files, the Lean pages, the statement files, the
+   solution modules, the files `formalization.yaml` names for its main results
+   and, where a solution module does not declare every name itself, the
+   modules it imports; never the PDFs. It runs the refresh, regenerates the
+   pages and runs the tests; on a pull request it fails when the committed
+   data differ from what the pin gives. The weekly run, or a dispatch with
+   `newest`, moves the pin to the newest commit. A refresh writes nothing when
+   the LICENSE is not Apache-2.0's text; when `README.md`, `CONTENTS.md`,
+   `overview.tex`, `formalization.yaml`, a Lean page, a statement file, a
+   configuration or a Lean file read for a proof does not read or does not
+   match the others; when text keeps HTML or a character reference; when a
+   Lean file it reads is in the commit but not checked out; or when the
+   families, or those with Lean, drop under half the last record's.
+
 ## The Physlib chapter
 
 [Physlib](https://github.com/leanprover-community/physlib) digitalises results
@@ -651,6 +692,9 @@ Free Documentation License, whose text is otherwise not copied.
 The statements, titles and prose in `data/atlas/` come from ATLAS's vault on
 [Deicyde/atlas-lean](https://github.com/Deicyde/atlas-lean), Apache-2.0; its
 LICENSE adds that the code is not meant for training models.
+The descriptions, titles, abstracts, Lean pages and statements in
+`data/openai-math/` come from [openai/math](https://github.com/openai/math),
+Apache-2.0.
 The docstrings, Lean statements, API maps and README text quoted in
 `data/physlib/` come from
 [Physlib](https://github.com/leanprover-community/physlib), Apache-2.0.

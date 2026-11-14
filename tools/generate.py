@@ -26,7 +26,7 @@ from pathlib import Path
 
 from collections import Counter
 
-from trough import anthropic_flt, atlas, blueprints, catalog, cfsg, ff, formal_conjectures, lean_pool, links, mathlib, physlib, stacks, tauceti, wiki
+from trough import anthropic_flt, atlas, blueprints, catalog, cfsg, ff, formal_conjectures, lean_pool, links, mathlib, openai_math, physlib, stacks, tauceti, wiki
 from trough.vault import Leaf, assign_paths, render_tree, walk
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -251,6 +251,23 @@ def generate() -> dict[Path, str]:
             f"with sorry, {at['absent']} not declared, {at['none']} without a declaration",
             file=sys.stderr,
         )
+    oai_data = openai_math.load(DATA)
+    if oai_data:
+        oai_built, oai_links = openai_math.chapter(oai_data)
+        assign_paths(oai_built.root, ROADMAP / "openai-math")
+        blueprints.resolve(oai_built, VAULT)
+        files.update(render_tree(oai_built.root, VAULT))
+        chapters["openai-math"] = "openai-math/README.md"
+        lean_links["openai-math"] = oai_links
+        om = Counter(oai_built.stats)
+        blueprint_rows.append((openai_math.TITLE, "DECOMPOSED",
+                               f"[{om['families']:,} result families](../roadmap/openai-math/README.md), one article "
+                               "each, with a block per manuscript and per formalized result."))
+        print(
+            f"openai-math: {om['families']} families in {om['parts']} subjects, {om['manuscripts']} manuscripts; "
+            f"{om['formalized']} families with Lean, {om['statements']} statements, {om['proved']} proved in a file read",
+            file=sys.stderr,
+        )
     physlib_data = physlib.load(DATA)
     if physlib_data:
         physlib_built, physlib_links = physlib.chapter(physlib_data, tau_root)
@@ -299,6 +316,7 @@ def generate() -> dict[Path, str]:
         cfsg=cfsg_data["rev"] if cfsg_data else None,
         stacks=stacks_data["source"]["rev"] if stacks_data else None,
         atlas=atlas_data["source"]["rev"] if atlas_data else None,
+        openai_math=oai_data["source"]["rev"] if oai_data else None,
         physlib=physlib_data["source"]["rev"] if physlib_data else None,
     )
     print(
