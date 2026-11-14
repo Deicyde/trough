@@ -1,3 +1,4 @@
+import dataclasses
 import json
 from pathlib import Path
 
@@ -182,6 +183,14 @@ def test_articles_carry_the_blueprints_marks(blueprint, tmp_path):
     # The remark and its proof sit between the cards of the nodes around them.
     assert [entry.node.title for entry in basics.entries] == ["Thing", "a-proof-label"]
     assert basics.tail == "**Remark.** A remark.\n\n*Proof.* Proves the remark, not the lemma."
+
+
+def test_the_catalogs_chapter_note_is_on_the_front_page(blueprint, tmp_path):
+    note = "A fork of o/q, one commit ahead of it."
+    built = blueprints.chapter(dataclasses.replace(project(tmp_path), note=note), blueprint, {})
+    assert built.root.prose.split("\n\n")[1] == note
+    [demo] = blueprints.load_projects(DATA.parent, [{"id": "pfr", "name": "PFR", "chapter_note": note}])
+    assert demo.note == note
 
 
 def test_a_node_in_mathlib_is_the_mathlib_article_it_names(blueprint, tmp_path):

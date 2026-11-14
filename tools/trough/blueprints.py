@@ -53,6 +53,7 @@ class Project:
     license: str | None
     text: bool  # whether trough may reproduce the blueprint's text
     directory: Path
+    note: str = ""  # the catalog's chapter_note, a paragraph for the chapter's front page
 
     @property
     def url(self) -> str:
@@ -81,7 +82,8 @@ def load_projects(data: Path, libraries: list[dict]) -> list[Project]:
             continue
         source = json.loads((directory / "source.json").read_text(encoding="utf-8"))
         projects.append(Project(library["id"], library["name"], source["repo"], source["rev"], source.get("date", ""),
-                                source["entry"], source.get("license"), bool(source.get("text", True)), directory))
+                                source["entry"], source.get("license"), bool(source.get("text", True)), directory,
+                                library.get("chapter_note", "")))
     return projects
 
 
@@ -661,6 +663,8 @@ def intro(project: Project, blueprint: Blueprint, stats: Counter) -> str:
         + ". A statement for which the blueprint marks no proof `\\leanok` says so. Dependencies are the "
         "blueprint's `\\uses`: a statement's under *Depends on*, a proof's under *Proof depends on*.",
     ]
+    if project.note:
+        lines.append(project.note)
     if project.text:
         lines.append(
             f"The text is the blueprint's, under its {project.license} license: each page has a section's prose, "
