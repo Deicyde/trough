@@ -346,6 +346,10 @@ def test_a_title_block_in_the_text_is_dropped():
     assert writer().statement(r"\title[Short]{A long title} \date{\today} \author{A \and B} Text.") == "Text."
 
 
+def test_a_checkmark_is_a_check_mark():
+    assert writer().statement(r"Gowers--Hatami & \checkmark") == "Gowers–Hatami & ✓"
+
+
 def test_verb_is_code():
     assert writer().statement(r"see \verb|Rep.leftRegular R G| and \verb!a|b!.") == "see `Rep.leftRegular R G` and `a|b`."
 

@@ -278,7 +278,7 @@ LETTERS = {"ss": "ß", "o": "ø", "O": "Ø", "ae": "æ", "AE": "Æ", "oe": "œ",
            "ldots": "…", "dots": "…", "textellipsis": "…", "textendash": "–", "textemdash": "—",
            "textquoteright": "’", "textquoteleft": "‘", "textquotedblleft": "“", "textquotedblright": "”",
            "LaTeX": "LaTeX", "TeX": "TeX", "textbackslash": "\\\\", "textasciitilde": "~", "textbar": "|",
-           "textless": "$<$", "textgreater": "$>$", "textdegree": "°", "pounds": "£", "euro": "€"}
+           "textless": "$<$", "textgreater": "$>$", "textdegree": "°", "pounds": "£", "euro": "€", "checkmark": "✓"}
 SYMBOLS = {"%": "%", "&": "&", "#": "\\#", "_": "\\_", "$": "\\$", "{": "{", "}": "}", " ": " ", ",": " ",
            ";": " ", ":": " ", "!": "", "/": "", "-": "", "\\": " ", "\n": " ", "\t": " ", "@": ""}
 EMPHASIS = {"emph", "textit", "textsl", "mathit"}
