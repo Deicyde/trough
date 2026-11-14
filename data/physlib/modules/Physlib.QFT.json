@@ -7,6 +7,7 @@
    "module": "Physlib.QFT.AnomalyCancellation.Basic",
    "title": "Anomaly cancellation conditions",
    "doc": "## i. Overview\n\nAnomaly cancellation conditions (ACCs) are consistency conditions which arise\nin gauge field theories. They correspond to a set of homogeneous diophantine equations\nin the rational charges assigned to fermions under `u(1)` contributions to the gauge group.\n\nThese formally arise from triangle Feynman diagrams, but can otherwise be got from\nindex theorems.\n\n## ii. Key results\n\nThere are four different types related to the underlying structure of\nthe ACCs:\n- `ACCSystemCharges`: the structure carrying the number of charges present.\n- `ACCSystemLinear`: the structure extending `ACCSystemCharges` with linear anomaly cancellation\n  conditions.\n- `ACCSystemQuad`: the structure extending `ACCSystemLinear` with quadratic anomaly cancellation\n  conditions.\n- `ACCSystem`: the structure extending `ACCSystemQuad` with the cubic anomaly cancellation\n  condition.\n\nRelated to these are the different types of spaces of charges:\n- `Charges`: the module of all possible charge allocations.\n- `LinSols`: the module of solutions to the linear ACCs.\n- `QuadSols`: the solutions to the linear and quadratic ACCs.\n- `Sols`: the solutions to the full ACCs.\n\n## iii. Table of contents\n\n- A. The module of charges\n- B. The module of charges\n  - B.1. The `ℚ`-module structure on the type `Charges`\n  - B.2. The finiteness of the `ℚ`-module structure on `Charges`\n- C. The linear anomaly cancellation conditions\n- D. The module of solutions to the linear ACCs\n  - D.1. Extensionality of solutions to the linear ACCs\n  - D.2. Module structure on the solutions to the linear ACCs\n  - D.3. Embedding of the solutions to the linear ACCs into the module of charges\n- E. The quadratic anomaly cancellation conditions\n- F. The solutions to the quadratic and linear anomaly cancellation conditions\n  - F.1. Extensionality of solutions to the quadratic and linear ACCs\n  - F.2. MulAction of rationals on the solutions to the quadratic and linear ACCs\n  - F.3. Embeddings of quadratic solutions into linear solutions\n  - F.4. Embeddings of solutions to linear ACCs into quadratic solutions when no quadratics\n  - F.5. Embeddings of quadratic solutions into all charges\n- G. The full anomaly cancellation conditions\n- H. The solutions to the full anomaly cancellation conditions\n  - H.1. Extensionality of solutions to the ACCs\n  - H.2. The `IsSolution` predicate\n  - H.3. MulAction of `ℚ` on the solutions to the ACCs\n  - H.4. Embeddings of solutions to the ACCs into quadratic solutions\n  - H.5. Embeddings of solutions to the ACCs into linear solutions\n  - H.6. Embeddings of solutions to the ACCs into charges\n- I. Morphisms between ACC systems\n  - I.1. Composition of morphisms between ACC systems\n- J. Open TODO items\n\n## iv. References\n\n* Alvarez-Gaume, L. and Ginsparg, P. H. (1985). The Structure of Gauge and Gravitational Anomalies.\n  [ref: alvarez_gaume_ginsparg_1985]\n* Bilal, A. (2008). Lectures on Anomalies. arXiv preprint. [ref: bilal_2008_anomalies]\n* Nash, C. (1991). Differential topology and quantum field theory. Elsevier. [ref: nash_1991_dtqft]",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 82,
@@ -408,13 +409,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 3
   },
   {
    "file": "Physlib/QFT/AnomalyCancellation/GroupActions.lean",
    "module": "Physlib.QFT.AnomalyCancellation.GroupActions",
    "title": "Group actions on ACC systems.",
    "doc": "We define a group action on an ACC system as a representation on the vector spaces of charges\nunder which the anomaly equations are invariant.\n\nFrom this we define\n- The representation acting on the vector space of solutions to the linear ACCs.\n- The group action acting on solutions to the linear + quadratic equations.\n- The group action acting on solutions to the anomaly cancellation conditions.",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -515,13 +518,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/CreateAnnihilate.lean",
    "module": "Physlib.QFT.PerturbationTheory.CreateAnnihilate",
    "title": "Creation and annihilation parts of fields",
    "doc": "",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -606,23 +611,27 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/FeynmanDiagrams/Basic.lean",
    "module": "Physlib.QFT.PerturbationTheory.FeynmanDiagrams.Basic",
    "title": "Feynman diagrams",
    "doc": "Feynman diagrams form a type into which permissible Wick contractions\nembed.\n\nA permissible Wick contraction is one which does not contribute zero to\nthe vacuum expectation value.\n\nFeynman diagrams are based on multisets of `FieldOp`. This should be contrasted\nwith Wick contractions which are based on lists of `FieldOp`.\n\nIn particular a Feynman diagram is a partition of a Multiset into\ndisjoint pairs.\n\n## Note\n\nThis directory is currently a work in progress.\n(Contact JTS before working in this directory.)",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/Basic.lean",
    "module": "Physlib.QFT.PerturbationTheory.FieldOpFreeAlgebra.Basic",
    "title": "Creation and annihilation free-algebra",
    "doc": "This module defines the creation and annihilation algebra for a field structure.\n\nThe creation and annihilation algebra extends from the state algebra by adding information about\nwhether a state is a creation or annihilation operator.\n\nThe algebra is spanned by lists of creation/annihilation states.\n\nThe main structures defined in this module are:\n\n* `FieldOpFreeAlgebra` - The creation and annihilation algebra\n* `ofCrAnOpF` - Maps a creation/annihilation state to the algebra\n* `ofCrAnListF` - Maps a list of creation/annihilation states to the algebra\n* `ofFieldOpF` - Maps a state to a sum of creation and annihilation operators\n* `crPartF` - The creation part of a state in the algebra\n* `anPartF` - The annihilation part of a state in the algebra\n* `superCommuteF` - The super commutator on the algebra\n\nThe key lemmas show how these operators interact, particularly focusing on the\nsuper commutation relations between creation and annihilation operators.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 142,
@@ -888,13 +897,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/Grading.lean",
    "module": "Physlib.QFT.PerturbationTheory.FieldOpFreeAlgebra.Grading",
    "title": "Grading on the FieldOpFreeAlgebra",
    "doc": "",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -1091,13 +1102,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormalOrder.lean",
    "module": "Physlib.QFT.PerturbationTheory.FieldOpFreeAlgebra.NormalOrder",
    "title": "Normal Ordering in the FieldOpFreeAlgebra",
    "doc": "In the module\n`Physlib.QFT.PerturbationTheory.FieldSpecification.NormalOrder`\nwe defined the normal ordering of a list of `CrAnFieldOp`.\nIn this module we extend the normal ordering to a linear map on `FieldOpFreeAlgebra`.\n\nWe derive properties of this normal ordering.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 124,
@@ -1403,13 +1416,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 1
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/NormTimeOrder.lean",
    "module": "Physlib.QFT.PerturbationTheory.FieldOpFreeAlgebra.NormTimeOrder",
    "title": "Norm-time Ordering in the FieldOpFreeAlgebra",
    "doc": "",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 27,
@@ -1435,13 +1450,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/SuperCommute.lean",
    "module": "Physlib.QFT.PerturbationTheory.FieldOpFreeAlgebra.SuperCommute",
    "title": "Super Commute",
    "doc": "",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 22,
@@ -1863,13 +1880,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/FieldOpFreeAlgebra/TimeOrder.lean",
    "module": "Physlib.QFT.PerturbationTheory.FieldOpFreeAlgebra.TimeOrder",
    "title": "Time Ordering in the FieldOpFreeAlgebra",
    "doc": "",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 26,
@@ -2059,13 +2078,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/FieldSpecification/Basic.lean",
    "module": "Physlib.QFT.PerturbationTheory.FieldSpecification.Basic",
    "title": "Field specification",
    "doc": "In this module is the definition of a field specification.\nA field specification is a structure consisting of a type of fields and a\nthe field statistics of each field.\n\nFrom each field we can create three different types of `FieldOp`.\n- Negative asymptotic states.\n- Position states.\n- Positive asymptotic states.\n\nThese states carry the same field statistic as the field they are derived from.\n\n## References\n\n* https://particle.physics.ucdavis.edu/modernsusy/slides/slideimages/spinorfeynrules.pdf.\n  [ref: ucdavis_spinorfeynrules]",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -2110,13 +2131,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/FieldSpecification/CrAnFieldOp.lean",
    "module": "Physlib.QFT.PerturbationTheory.FieldSpecification.CrAnFieldOp",
    "title": "Creation and annihilation states",
    "doc": "Called `CrAnFieldOp` for short here.\n\nGiven a field specification, in addition to defining states\n(see: `Physlib.QFT.PerturbationTheory.FieldSpecification.Basic`),\nwe can also define creation and annihilation states.\nThese are similar to states but come with an additional specification of whether they correspond to\ncreation or annihilation operators.\n\nIn particular we have the following creation and annihilation states for each field:\n- Negative asymptotic states - with the implicit specification that it is a creation state.\n- Position states with a creation specification.\n- Position states with an annihilation specification.\n- Positive asymptotic states - with the implicit specification that it is an annihilation state.\n\nIn this module in addition to defining `CrAnFieldOp` we also define some maps:\n- The map `crAnFieldOpToFieldOp` takes a `CrAnFieldOp` to its state in `FieldOp`.\n- The map `crAnFieldOpToCreateAnnihilate` takes a `CrAnFieldOp` to its corresponding\n`CreateAnnihilate` value.\n- The map `crAnStatistics` takes a `CrAnFieldOp` to its corresponding `FieldStatistic`\n(bosonic or fermionic).",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -2193,13 +2216,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/FieldSpecification/CrAnSection.lean",
    "module": "Physlib.QFT.PerturbationTheory.FieldSpecification.CrAnSection",
    "title": "Creation and annihilation sections",
    "doc": "In the module\n`Physlib.QFT.PerturbationTheory.FieldSpecification.Basic`\nwe defined states for a field specification, and in the module\n`Physlib.QFT.PerturbationTheory.FieldStatistics.CrAnFieldOp`\nwe defined a refinement of states called `CrAnFieldOp` which distinguishes between the\ncreation and annihilation components of states.\nThere exists, in particular, a map from `CrAnFieldOp` to `FieldOp` called `crAnFieldOpToFieldOp`.\n\nGiven a list of `FieldOp`, `φs`, in this module we define a section of `φs` to be a list of\n`CrAnFieldOp`, `ψs`, such that under the map `crAnFieldOpToFieldOp`, `ψs` is mapped to `φs`.\nThat is to say, the states underlying `ψs` are the states in `φs`.\nWe denote these sections as `CrAnSection φs`.\n\nLooking forward the main consequence of this definition is the lemma\n`FieldSpecification.FieldOpFreeAlgebra.ofFieldOpListF_sum`.\n\nIn this module we define various properties of `CrAnSection`.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -2580,13 +2605,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/FieldSpecification/Filters.lean",
    "module": "Physlib.QFT.PerturbationTheory.FieldSpecification.Filters",
    "title": "Filters of lists of CrAnFieldOp",
    "doc": "",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -2687,13 +2714,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/FieldSpecification/NormalOrder.lean",
    "module": "Physlib.QFT.PerturbationTheory.FieldSpecification.NormalOrder",
    "title": "Normal Ordering of states",
    "doc": "",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 45,
@@ -3011,13 +3040,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/FieldSpecification/TimeOrder.lean",
    "module": "Physlib.QFT.PerturbationTheory.FieldSpecification.TimeOrder",
    "title": "Time ordering of states",
    "doc": "",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 22,
@@ -3483,13 +3514,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/FieldStatistics/Basic.lean",
    "module": "Physlib.QFT.PerturbationTheory.FieldStatistics.Basic",
    "title": "Field statistics",
    "doc": "Basic properties related to whether a field, or list of fields, is bosonic or fermionic.",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 254,
@@ -3843,13 +3876,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/FieldStatistics/ExchangeSign.lean",
    "module": "Physlib.QFT.PerturbationTheory.FieldStatistics.ExchangeSign",
    "title": "Exchange sign for field statistics",
    "doc": "Suppose we have two fields `φ` and `ψ`, and the term `φψ`, if we swap them\n`ψφ`, we may pick up a sign. This sign is called the exchange sign.\nThis sign is `-1` if both fields `ψ` and `φ` are fermionic and `1` otherwise.\n\nIn this module we define the exchange sign for general field statistics,\nand prove some properties of it. Importantly:\n- It is symmetric `exchangeSign_symm`.\n- When multiplied with itself it is `1` `exchangeSign_mul_self`.\n- It is a cocycle `exchangeSign_cocycle`.",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -3934,13 +3969,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/FieldStatistics/OfFinset.lean",
    "module": "Physlib.QFT.PerturbationTheory.FieldStatistics.OfFinset",
    "title": "Field statistics of a finite set.",
    "doc": "",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -4033,13 +4070,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/Koszul/KoszulSign.lean",
    "module": "Physlib.QFT.PerturbationTheory.Koszul.KoszulSign",
    "title": "Koszul sign",
    "doc": "",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 386,
@@ -4209,13 +4248,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/Koszul/KoszulSignInsert.lean",
    "module": "Physlib.QFT.PerturbationTheory.Koszul.KoszulSignInsert",
    "title": "Koszul sign insert",
    "doc": "",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -4364,13 +4405,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickAlgebra/Basic.lean",
    "module": "Physlib.QFT.PerturbationTheory.WickAlgebra.Basic",
    "title": "The Wick Algebra",
    "doc": "This is the algebra with the minimal assumptions necessary to prove Wick's theorem.\nIt satisfies the appropriate universality conditions with respect to the operator algebra.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 150,
@@ -4860,13 +4903,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 1
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickAlgebra/Grading.lean",
    "module": "Physlib.QFT.PerturbationTheory.WickAlgebra.Grading",
    "title": "Grading on the field operation algebra",
    "doc": "",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 95,
@@ -5192,13 +5237,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickAlgebra/NormalOrder/Basic.lean",
    "module": "Physlib.QFT.PerturbationTheory.WickAlgebra.NormalOrder.Basic",
    "title": "Normal Ordering on Field operator algebra",
    "doc": "",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 26,
@@ -5332,13 +5379,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickAlgebra/NormalOrder/Lemmas.lean",
    "module": "Physlib.QFT.PerturbationTheory.WickAlgebra.NormalOrder.Lemmas",
    "title": "Basic properties of normal ordering",
    "doc": "",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 26,
@@ -5664,13 +5713,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickAlgebra/NormalOrder/WickContractions.lean",
    "module": "Physlib.QFT.PerturbationTheory.WickAlgebra.NormalOrder.WickContractions",
    "title": "Normal ordering with relation to Wick contractions",
    "doc": "",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 27,
@@ -5696,13 +5747,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickAlgebra/StaticWickTerm.lean",
    "module": "Physlib.QFT.PerturbationTheory.WickAlgebra.StaticWickTerm",
    "title": "Static Wick's terms",
    "doc": "",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -5747,13 +5800,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickAlgebra/StaticWickTheorem.lean",
    "module": "Physlib.QFT.PerturbationTheory.WickAlgebra.StaticWickTheorem",
    "title": "Static Wick's theorem",
    "doc": "",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -5766,13 +5821,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickAlgebra/SuperCommute.lean",
    "module": "Physlib.QFT.PerturbationTheory.WickAlgebra.SuperCommute",
    "title": "SuperCommute on Field operator algebra",
    "doc": "",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 35,
@@ -6214,13 +6271,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickAlgebra/TimeContraction.lean",
    "module": "Physlib.QFT.PerturbationTheory.WickAlgebra.TimeContraction",
    "title": "Time contractions",
    "doc": "We define the state algebra of a field structure to be the free algebra\ngenerated by the states.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -6337,13 +6396,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickAlgebra/TimeOrder.lean",
    "module": "Physlib.QFT.PerturbationTheory.WickAlgebra.TimeOrder",
    "title": "Time Ordering on Field operator algebra",
    "doc": "",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 289,
@@ -6541,13 +6602,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickAlgebra/Universality.lean",
    "module": "Physlib.QFT.PerturbationTheory.WickAlgebra.Universality",
    "title": "Universality properties of WickAlgebra",
    "doc": "",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -6592,13 +6655,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickAlgebra/WicksTheorem.lean",
    "module": "Physlib.QFT.PerturbationTheory.WickAlgebra.WicksTheorem",
    "title": "Wick's theorem",
    "doc": "This file constrains the time-dependent version of Wick's theorem\nfor lists of fields containing both fermions and bosons.\n\nWick's theorem is related to Isserlis' theorem in mathematics.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 30,
@@ -6628,13 +6693,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickAlgebra/WicksTheoremNormal.lean",
    "module": "Physlib.QFT.PerturbationTheory.WickAlgebra.WicksTheoremNormal",
    "title": "Wick's theorem for normal ordered lists",
    "doc": "",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -6695,13 +6762,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickAlgebra/WickTerm.lean",
    "module": "Physlib.QFT.PerturbationTheory.WickAlgebra.WickTerm",
    "title": "Wick term",
    "doc": "",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -6746,13 +6815,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickContraction/Basic.lean",
    "module": "Physlib.QFT.PerturbationTheory.WickContraction.Basic",
    "title": "Wick contractions",
    "doc": "",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 219,
@@ -7210,13 +7281,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickContraction/Card.lean",
    "module": "Physlib.QFT.PerturbationTheory.WickContraction.Card",
    "title": "Cardinality of Wick contractions",
    "doc": "",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -7333,13 +7406,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickContraction/Erase.lean",
    "module": "Physlib.QFT.PerturbationTheory.WickContraction.Erase",
    "title": "Erasing an element from a contraction",
    "doc": "",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -7400,13 +7475,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickContraction/ExtractEquiv.lean",
    "module": "Physlib.QFT.PerturbationTheory.WickContraction.ExtractEquiv",
    "title": "Equivalence extracting element from contraction",
    "doc": "",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -7491,13 +7568,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickContraction/InsertAndContract.lean",
    "module": "Physlib.QFT.PerturbationTheory.WickContraction.InsertAndContract",
    "title": "Inserting an element into a contraction based on a list",
    "doc": "",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 25,
@@ -7707,13 +7786,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickContraction/InsertAndContractNat.lean",
    "module": "Physlib.QFT.PerturbationTheory.WickContraction.InsertAndContractNat",
    "title": "Inserting an element into a contraction",
    "doc": "",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 25,
@@ -8015,13 +8096,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickContraction/Involutions.lean",
    "module": "Physlib.QFT.PerturbationTheory.WickContraction.Involutions",
    "title": "Involution associated with a contraction",
    "doc": "",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -8090,13 +8173,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickContraction/IsFull.lean",
    "module": "Physlib.QFT.PerturbationTheory.WickContraction.IsFull",
    "title": "Full contraction",
    "doc": "We say that a contraction is full if it has no uncontracted fields.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -8149,13 +8234,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickContraction/Join.lean",
    "module": "Physlib.QFT.PerturbationTheory.WickContraction.Join",
    "title": "Join of contractions",
    "doc": "",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 513,
@@ -8509,13 +8596,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickContraction/Perm.lean",
    "module": "Physlib.QFT.PerturbationTheory.WickContraction.Perm",
    "title": "Permutations of Wick contractions",
    "doc": "We define two Wick contractions to be permutations of each other\nif the Wick term they produce is equal.\n\n## TODO\n\nThe long term aim is to simplify this condition as much as possible,\nso that it can eventually be made decidable.\n\nIt should become apparent that two Wick contractions are permutations of each other\nif they correspond to the same Feynman diagram.\nPlease speak to JTS before working in this direction.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -8552,13 +8641,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 2
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickContraction/Sign/Basic.lean",
    "module": "Physlib.QFT.PerturbationTheory.WickContraction.Sign.Basic",
    "title": "Sign associated with a contraction",
    "doc": "",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -8595,13 +8686,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickContraction/Sign/InsertNone.lean",
    "module": "Physlib.QFT.PerturbationTheory.WickContraction.Sign.InsertNone",
    "title": "Sign on inserting and not contracting",
    "doc": "",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -8686,13 +8779,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickContraction/Sign/InsertSome.lean",
    "module": "Physlib.QFT.PerturbationTheory.WickContraction.Sign.InsertSome",
    "title": "Sign on inserting and contracting",
    "doc": "The main results of this file are `sign_insert_some_of_lt` and `sign_insert_some_of_not_lt` which\nwrite the sign of `(φsΛ ↩Λ φ i (some k)).sign` in terms of the sign of `φsΛ`.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 29,
@@ -8854,13 +8949,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickContraction/Sign/Join.lean",
    "module": "Physlib.QFT.PerturbationTheory.WickContraction.Sign.Join",
    "title": "Sign associated with joining two Wick contractions",
    "doc": "",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -8985,13 +9082,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickContraction/Singleton.lean",
    "module": "Physlib.QFT.PerturbationTheory.WickContraction.Singleton",
    "title": "Singleton of contractions",
    "doc": "",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -9116,13 +9215,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickContraction/StaticContract.lean",
    "module": "Physlib.QFT.PerturbationTheory.WickContraction.StaticContract",
    "title": "Time contractions",
    "doc": "",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -9167,13 +9268,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickContraction/SubContraction.lean",
    "module": "Physlib.QFT.PerturbationTheory.WickContraction.SubContraction",
    "title": "Sub contractions",
    "doc": "",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -9274,13 +9377,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickContraction/TimeCond.lean",
    "module": "Physlib.QFT.PerturbationTheory.WickContraction.TimeCond",
    "title": "Time contractions",
    "doc": "",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -9557,13 +9662,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickContraction/TimeContract.lean",
    "module": "Physlib.QFT.PerturbationTheory.WickContraction.TimeContract",
    "title": "Time contractions",
    "doc": "",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -9624,13 +9731,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickContraction/Uncontracted.lean",
    "module": "Physlib.QFT.PerturbationTheory.WickContraction.Uncontracted",
    "title": "Uncontracted elements",
    "doc": "",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -9731,13 +9840,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QFT/PerturbationTheory/WickContraction/UncontractedList.lean",
    "module": "Physlib.QFT.PerturbationTheory.WickContraction.UncontractedList",
    "title": "List of uncontracted elements of a Wick contraction",
    "doc": "",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 25,
@@ -10243,13 +10354,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QFT/QED/AnomalyCancellation/Basic.lean",
    "module": "Physlib.QFT.QED.AnomalyCancellation.Basic",
    "title": "Anomaly cancellation of a theory with a pure U(1)-gauge group",
    "doc": "In a pure U(1) gauge theory with `n` Weyl fermions carrying charges `xᵢ` the anomaly cancellation\nconditions (ACCs) which must be satisfied for a consistent gauge theory correspond to:\n\n- The linear ACC: `∑ xᵢ = 0`\n- The cubic ACC: `∑ xᵢ³ = 0`\n\nThe charges `xᵢ` have rational fractions with one another, here they are specified as\nrational numbers.",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -10358,13 +10471,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 1
   },
   {
    "file": "Physlib/QFT/QED/AnomalyCancellation/BasisLinear.lean",
    "module": "Physlib.QFT.QED.AnomalyCancellation.BasisLinear",
    "title": "Basis of `LinSols`",
    "doc": "We give a basis of vector space `LinSols`, and find the rank thereof.",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -10441,13 +10556,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QFT/QED/AnomalyCancellation/ConstAbs.lean",
    "module": "Physlib.QFT.QED.AnomalyCancellation.ConstAbs",
    "title": "Charges assignments with constant abs",
    "doc": "We look at charge assignments in which all charges have the same absolute value.",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -10708,13 +10825,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QFT/QED/AnomalyCancellation/Even/BasisLinear.lean",
    "module": "Physlib.QFT.QED.AnomalyCancellation.Even.BasisLinear",
    "title": "Splitting the linear solutions in the even case into two ACC-satisfying planes",
    "doc": "## i. Overview\n\nWe split the linear solutions of `PureU1 (2 * n.succ)` into two planes,\nwhere every point in either plane satisfies both the linear and cubic anomaly cancellation\nconditions.\n\n## ii. Key results\n\n- `Unshifted.planeLinSols` : The inclusion of the unshifted plane into linear solutions\n- `Unshifted.planeCharges_accCube` : The statement that charges from the unshifted plane\n  satisfy the cubic ACC\n- `Shifted.planeLinSols` : The inclusion of the shifted plane.\n- `Shifted.planeCharges_accCube` : The statement that charges from the shifted plane\n  satisfy the cubic ACC\n- `span_basis` : Every linear solution is the sum of a point from each plane.\n\n## iii. Table of contents\n\n- A. Splitting the charges up into groups\n  - A.1. The even split: Spltting the charges up via `n.succ + n.succ`\n  - A.2. The shifted even split: Spltting the charges up via `1 + (n + n + 1)`\n  - A.3. Lemmas relating the two splittings\n- B. The unshifted plane\n  - B.1. The basis vectors of the unshifted plane as charges\n  - B.2. Components of the basis vectors\n  - B.3. The basis vectors satisfy the linear ACCs\n  - B.4. The basis vectors satisfy the cubic ACC\n  - B.5. The basis vectors as linear solutions\n  - B.6. The inclusion of the unshifted plane into charges\n  - B.7. Components of the inclusion into charges\n  - B.8. The inclusion into charges satisfies the linear and cubic ACCs\n  - B.9. Kernel of the inclusion into charges\n  - B.10. The inclusion of the plane into linear solutions\n  - B.11. The basis vectors are linearly independent\n  - B.12. Every vector-like even solution is in the span of the basis of the unshifted plane\n- C. The shifted plane\n  - C.2. Components of the vectors\n  - C.3. The vectors satisfy the linear ACCs\n  - C.4. The vectors satisfy the cubic ACC\n  - C.6. The vectors as linear solutions\n  - C.7. The inclusion of the shifted plane into charges\n  - C.8. Components of the inclusion into charges\n  - C.9. The inclusion into charges satisfies the cubic ACC\n  - C.10. Kernel of the inclusion into charges\n  - C.11. The inclusion of the shifted plane into the span of the basis\n  - C.12. The inclusion of the plane into linear solutions\n  - C.13. The basis vectors are linearly independent\n  - C.14. Properties of the basis vectors relating to the span\n  - C.15. Permutations as additions of basis vectors\n- D. Mixed cubic ACCs involving points from both planes\n- E. The combined basis\n  - E.1. As a map into linear solutions\n  - E.2. Inclusion of the span of the basis into charges\n  - E.3. Components of the inclusion into charges\n  - E.4. Kernel of the inclusion into charges\n  - E.5. The inclusion of the span of the basis into linear solutions\n  - E.6. The combined basis vectors are linearly independent\n  - E.7. Injectivity of the inclusion into linear solutions\n  - E.8. Cardinality of the basis\n  - E.9. The basis vectors as a basis\n- F. Every Lienar solution is the sum of a point from each plane\n  - F.1. Relation under permutations\n\n## iv. References\n\n* https://arxiv.org/pdf/1912.04804.pdf. [ref: arxiv_1912_04804]",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 92,
@@ -11536,13 +11655,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QFT/QED/AnomalyCancellation/Even/LineInCubic.lean",
    "module": "Physlib.QFT.QED.AnomalyCancellation.Even.LineInCubic",
    "title": "Line In Cubic Even case",
    "doc": "We say that a linear solution satisfies the `lineInCubic` property\nif the line through that point and through the two different planes formed by the basis of\n`LinSols` lies in the cubic.\n\nWe show that for a solution all its permutations satisfy this property, then there exists\na permutation for which it lies in the unshifted plane.\n\n## References\n\n* The main reference for this file is https://arxiv.org/pdf/1912.04804.pdf. [ref: arxiv_1912_04804]",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -11651,13 +11772,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QFT/QED/AnomalyCancellation/Even/Parameterization.lean",
    "module": "Physlib.QFT.QED.AnomalyCancellation.Even.Parameterization",
    "title": "Parameterization in even case",
    "doc": "Given maps `g : Fin n.succ → ℚ`, `f : Fin n → ℚ` and `a : ℚ` we form a solution to the anomaly\nequations. We show that every solution can be got in this way, up to permutation, unless it, up to\npermutation, lives in the unshifted plane.\n\n## References\n\n* The main reference is https://arxiv.org/pdf/1912.04804.pdf. [ref: arxiv_1912_04804]",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -11774,13 +11897,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QFT/QED/AnomalyCancellation/LineInPlaneCond.lean",
    "module": "Physlib.QFT.QED.AnomalyCancellation.LineInPlaneCond",
    "title": "Line in plane condition",
    "doc": "We say a `LinSol` satisfies the `line in plane` condition if for all distinct `i1`, `i2`, `i3` in\n`Fin n`, we have\n`S i1 = S i2` or `S i1 = - S i2` or `2 S i3 + S i1 + S i2 = 0`.\n\nWe look at various consequences of this.\nThe main reference for this material is\n\n- https://arxiv.org/pdf/1912.04804.pdf [ref: arxiv_1912_04804]\n\nWe will show that `n ≥ 4` the `line in plane` condition on solutions implies the\n`constAbs` condition.",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -11873,13 +11998,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QFT/QED/AnomalyCancellation/LowDim/One.lean",
    "module": "Physlib.QFT.QED.AnomalyCancellation.LowDim.One",
    "title": "The Pure U(1) case with 1 fermion",
    "doc": "We show that in this case the charge must be zero.",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -11892,13 +12019,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QFT/QED/AnomalyCancellation/LowDim/Three.lean",
    "module": "Physlib.QFT.QED.AnomalyCancellation.LowDim.Three",
    "title": "The Pure U(1) case with 3 fermion",
    "doc": "We show that S is a solution only if one of its charges is zero.\nWe define a surjective map from `LinSols` with a charge equal to zero to `Sols`.",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -11943,13 +12072,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QFT/QED/AnomalyCancellation/LowDim/Two.lean",
    "module": "Physlib.QFT.QED.AnomalyCancellation.LowDim.Two",
    "title": "The Pure U(1) case with 2 fermions",
    "doc": "We define an equivalence between `LinSols` and `Sols`.",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -11962,13 +12093,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QFT/QED/AnomalyCancellation/Odd/BasisLinear.lean",
    "module": "Physlib.QFT.QED.AnomalyCancellation.Odd.BasisLinear",
    "title": "Splitting the linear solutions in the odd case into two ACC-satisfying planes",
    "doc": "## i. Overview\n\nWe split the linear solutions of `PureU1 (2 * n + 1)` into two planes,\nwhere every point in either plane satisfies both the linear and cubic anomaly cancellation\nconditions.\n\n## ii. Key results\n\n- `Unshifted.planeLinSols` : The inclusion of the unshifted plane into linear solutions\n- `Unshifted.planeCharges_accCube` : The statement that charges from the unshifted plane\n  satisfy the cubic ACC\n- `Shifted.planeLinSols` : The inclusion of the shifted plane.\n- `Shifted.planeCharges_accCube` : The statement that charges from the shifted plane\n  satisfy the cubic ACC\n- `span_basis` : Every linear solution is the sum of a point from each plane.\n\n## iii. Table of contents\n\n- A. Splitting the charges up into groups\n  - A.1. The symmetric split: Spltting the charges up via `(n + 1) + 1`\n  - A.2. The shifted split: Spltting the charges up via `1 + n + n`\n  - A.3. The shifte shifted split: Spltting the charges up via `((1+n)+1) + n.succ`\n  - A.4. Relating the splittings together\n- B. The unshifted plane\n  - B.1. The basis vectors of the unshifted plane as charges\n  - B.2. Components of the basis vectors as charges\n  - B.3. The basis vectors satisfy the linear ACCs\n  - B.4. The basis vectors as `LinSols`\n  - B.5. The inclusion of the unshifted plane into charges\n  - B.6. Components of the unshifted plane\n  - B.7. Points on the unshifted plane satisfies the ACCs\n  - B.8. Kernel of the inclusion into charges\n  - B.9. The basis vectors are linearly independent\n- C. The shifted plane\n  - C.1. The basis vectors of the shifted plane as charges\n  - C.2. Components of the basis vectors as charges\n  - C.3. The basis vectors satisfy the linear ACCs\n  - C.4. The basis vectors as `LinSols`\n  - C.5. Permutations equal adding basis vectors\n  - C.6. The inclusion of the shifted plane into charges\n  - C.7. Components of the shifted plane\n  - C.8. Points on the shifted plane satisfies the ACCs\n  - C.9. Kernel of the inclusion into charges\n  - C.10. The inclusion of the shifted plane into LinSols\n  - C.11. The basis vectors are linearly independent\n- D. The mixed cubic ACC from points in both planes\n- E. The combined basis\n  - E.1. The combined basis as `LinSols`\n  - E.2. The inclusion of the span of the combined basis into charges\n  - E.3. Components of the inclusion\n  - E.4. Kernel of the inclusion into charges\n  - E.5. The inclusion of the span of the combined basis into LinSols\n  - E.6. The combined basis vectors are linearly independent\n  - E.7. Injectivity of the inclusion into linear solutions\n  - E.8. Cardinality of the basis\n  - E.9. The basis vectors as a basis\n- F. Every Lienar solution is the sum of a point from each plane\n  - F.1. Relation under permutations\n\n## iv. References\n\n* https://arxiv.org/pdf/1912.04804.pdf. [ref: arxiv_1912_04804]",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 87,
@@ -12830,13 +12963,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QFT/QED/AnomalyCancellation/Odd/LineInCubic.lean",
    "module": "Physlib.QFT.QED.AnomalyCancellation.Odd.LineInCubic",
    "title": "Line In Cubic Odd case",
    "doc": "We say that a linear solution satisfies the `lineInCubic` property\nif the line through that point and through the two different planes formed by the basis of\n`LinSols` lies in the cubic.\n\nWe show that for a solution all its permutations satisfy this property,\nthen the charge must be zero.\n\n## References\n\n* The main reference for this file is https://arxiv.org/pdf/1912.04804.pdf. [ref: arxiv_1912_04804]",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -12937,13 +13072,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QFT/QED/AnomalyCancellation/Odd/Parameterization.lean",
    "module": "Physlib.QFT.QED.AnomalyCancellation.Odd.Parameterization",
    "title": "Parameterization in odd case",
    "doc": "Given maps `g : Fin n → ℚ`, `f : Fin n → ℚ` and `a : ℚ` we form a solution to the anomaly\nequations. We show that every solution can be got in this way, up to permutation, unless it is zero.\n\n## References\n\n* The main reference is https://arxiv.org/pdf/1912.04804.pdf. [ref: arxiv_1912_04804]",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -13060,13 +13197,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QFT/QED/AnomalyCancellation/Permutations.lean",
    "module": "Physlib.QFT.QED.AnomalyCancellation.Permutations",
    "title": "Permutations of Pure U(1) ACC",
    "doc": "We define the permutation group action on the charges of the Pure U(1) ACC system.\nWe further define the action on the ACC System.",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -13319,13 +13458,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QFT/QED/AnomalyCancellation/Sorts.lean",
    "module": "Physlib.QFT.QED.AnomalyCancellation.Sorts",
    "title": "Sort for Pure U(1) charges",
    "doc": "We define the sort function for Pure U(1) charges, and prove some basic properties.",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -13410,13 +13551,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QFT/QED/AnomalyCancellation/VectorLike.lean",
    "module": "Physlib.QFT.QED.AnomalyCancellation.VectorLike",
    "title": "Vector like charges",
    "doc": "For the `n`-even case we define the property of a charge assignment being vector like.",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -13445,7 +13588,8 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   }
  ]
 }

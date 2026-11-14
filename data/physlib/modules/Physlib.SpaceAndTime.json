@@ -7,6 +7,7 @@
    "module": "Physlib.SpaceAndTime.GalileanGroup.Basic",
    "title": "The Galilean group",
    "doc": "This file defines Galilean transformations in `d` spatial dimensions, together with their group\nlaw and their action on `Time × Space d`.\n\nAn element consists of a spatial orthogonal transformation `R`, a boost velocity `v`, a spatial\ntranslation `a`, and a time translation `b`. We use the active convention\n`(t, x) ↦ (t + b, R x + v t + a)`.",
+   "copyright": "2026 Rob Sneiderman",
    "sections": [
     {
      "line": 42,
@@ -444,13 +445,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/SpaceAndTime/ReferenceFrame.lean",
    "module": "Physlib.SpaceAndTime.ReferenceFrame",
    "title": "Reference frames",
    "doc": "A point in space and a list of coordinates are different kinds of data. Assigning coordinates to a\npoint requires an origin and a basis for measuring displacements from that origin. A\n`ReferenceFrame` records those choices at every time.\n\nThis distinction is built into `Space d`, which is an affine space. Two points determine a\ndisplacement, but no point is automatically the zero point. The chosen origin therefore belongs to\nthe frame, not to space itself. Similarly, a displacement has coordinate components only after a\nbasis has been chosen. Real-valued coordinates in all frames use the same implicit units of space\nand time. Different frames represent different coordinate grids, not different units.\n\nMost applications should use frames that are both inertial and orthonormal. In orthonormal frames,\nthe norm and inner product of coordinate vectors are given by the familiar Euclidean formulas. The\nextra generality here also permits nonorthonormal coordinate grids. Giving every coordinate tuple\nthe standard Euclidean norm and dot product, independently of its basis, would make coordinate\ntransformations involving such a grid non-isometric: the same geometric displacement could acquire\ndifferent lengths, or a pair of displacements a different angle, merely by changing frames. Instead,\nthe metric on frame vectors is pulled back from geometric displacement space through the frame\nbasis. The usual component formulas are recovered for orthonormal frames.",
+   "copyright": "2026 Raunak Chhatwal",
    "sections": [
     {
      "line": 40,
@@ -676,13 +679,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Space/Basic.lean",
    "module": "Physlib.SpaceAndTime.Space.Basic",
    "title": "Space",
    "doc": "In this module, we define the the type `Space d` which corresponds\nto `d`-dimensional flat Euclidean space and prove some properties about it.\n\nThe scope of this module is to define on `Space d` basic instances related translations and\nthe metric. We do not here define the structure of a `Module` on `Space d`, as this is done in\n`Physlib.SpaceAndTime.Space.Module`.\n\nPhyslib sits downstream of Mathlib, and above we import the necessary Mathlib modules\nwhich contain (perhaps transitively through imports) the definitions and theorems we need.\n\n## Implementation details\n\nThe exact implementation of `Space d` into Physlib is discussed in numerous places\non the Lean Zulip, including:\n\n- https://leanprover.zulipchat.com/#narrow/channel/479953-Physlib/topic/Space.20vs.20EuclideanSpace/with/575332888\n\nThere is a choice between defining `Space d` as an `abbrev` of `EuclideanSpace ℝ (Fin d)`,\nas a `def` of a type with value `EuclideanSpace ℝ (Fin d)` or as a structure\nwith a field `val : Fin d → ℝ` :\n\n+---------------------------------------------------+---------+-------+-----------+\n|                                                   | abbrev  |  def  | structure |\n+---------------------------------------------------+---------+-------+-----------+\n| allows casting from `EuclideanSpace`              |   yes   |  yes  |    no     |\n| carries instances from `EuclideanSpace`           |   yes   |  no   |    no     |\n| requires reproving of lemmas from `EuclideanSpace`|   no    |  yes  |    yes    |\n+---------------------------------------------------+---------+-------+-----------+\n\nThe `structure` is the most conservative choice, as everything needs redefining. However,\nthere is are two benefits of using it:\n\n1. It allows us to be precise about the instances we define on `Space d`, and makes\n  future refactoring of those instances easier.\n2. It allows us to give the necessary physics context to results about `Space d`, which\n  would not otherwise be possible if we reuse results from Mathlib.\n\nIn this module we give `Space d` the instances of a `NormedAddTorsor`\nand a `MetricSpace`. These physically correspond to the statement that\nyou can add a vector to a point in space, and that there is a notion of distance between\npoints in space. This notion of distance corresponds to a choice of length unit.\n\nIn `Physlib.SpaceAndTime.Space.Module` we give `Space d` the structure of a `Module`\n(aka vector space), a `Norm` and an `InnerProductSpace`. These require certain choices, for example\nthe choice of a zero in `Space d`.\n\nThis module structure is necessary in numerous places. For example,\nthe normal derivatives used by physicists `∂_x, ∂_y, ∂_z` require a\nmodule structure.\n\nBecause of this, one should be careful to avoid using the explicit zero in `Space d`,\nor adding two `Space d` values together. Where possible one should use\nthe `VAdd (EuclideanSpace ℝ (Fin d)) (Space d)` instance instead.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 71,
@@ -936,13 +941,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Space/ConstantSliceDist.lean",
    "module": "Physlib.SpaceAndTime.Space.ConstantSliceDist",
    "title": "Constant slice distributions",
    "doc": "## i. Overview\n\nIn this module we define the lift of distributions on `Space d` to distributions\non `Space d.succ` which are constant between slices in the `i`th direction.\n\nThis is used, for example, to define distributions which are translationally invariant\nin the `i`th direction.\n\nExamples of distributions which can be constructed in this way include the dirac deltas for\nlines and planes, rather then points.\n\n## ii. Key results\n\n- `sliceSchwartz` : The continuous linear map which takes a Schwartz map on\n  `Space d.succ` and gives a Schwartz map on `Space d` by integrating over the `i`th direction.\n- `constantSliceDist` : The distribution on `Space d.succ` formed by a distribution on `Space d`\n  which is translationally invariant in the `i`th direction.\n\n## iii. Table of contents\n\n- A. Schwartz maps\n  - A.1. Bounded condition for derivatives of Schwartz maps on slices\n  - A.2. Integrability for of Schwartz maps on slices\n  - A.3. Continiuity of integrations of slices of Schwartz maps\n  - A.4. Derivative of integrations of slices of Schwartz maps\n  - A.5. Differentiability as a slices of Schwartz maps\n  - A.6. Smoothness as slices of Schwartz maps\n  - A.7. Iterated derivatives of integrations of slices of Schwartz maps\n  - A.8. The map integrating over one component of a Schwartz map\n- B. Constant slice distribution\n  - B.1. Derivative of constant slice distributions\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 66,
@@ -1160,13 +1167,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Space/CrossProduct.lean",
    "module": "Physlib.SpaceAndTime.Space.CrossProduct",
    "title": "The cross product on Euclidean vectors in three dimensions",
    "doc": "## i. Overview\n\nIn this module we define the cross product on `EuclideanSpace ℝ (Fin 3)`,\nand prove various properties about it related to time derivatives and inner products.\n\n## ii. Key results\n\n- `⨯ₑ₃` : The cross product on `EuclideanSpace ℝ (Fin 3)`.\n- `time_deriv_cross_commute` : Time derivatives move out of cross products.\n- `inner_cross_self` : Inner product of a vector with the cross product of another vector\n  and itself is zero.\n- `inner_self_cross` : Inner product of a vector with the cross product of itself\n  and another vector is zero.\n\n## iii. Table of contents\n\n- A. The notation for the cross product\n- B. Time derivatives move out of cross products\n- C. Inner product of vectors with cross products involving themselves\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Zhi Kai Pong",
    "sections": [
     {
      "line": 44,
@@ -1216,13 +1225,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Space/Derivatives/Basic.lean",
    "module": "Physlib.SpaceAndTime.Space.Derivatives.Basic",
    "title": "Derivatives on Space",
    "doc": "## i. Overview\n\nIn this module we define derivatives of functions and distributions on space `Space d`,\nin the standard directions.\n\n## ii. Key results\n\n- `deriv` : The derivative of a function on space in a given direction.\n- `distDeriv` : The derivative of a distribution on space in a given direction.\n\n## iii. Table of contents\n\n- A. Derivatives of functions on `Space d`\n  - A.1. Basic equalities\n  - A.2. Derivative of the constant function\n  - A.3. Derivative distributes over addition\n  - A.4. Derivative distributes over scalar multiplication\n  - A.5. Two spatial derivatives commute\n  - A.6. Derivative of a component\n  - A.7. Derivative of a component squared\n  - A.8. Derivivatives of components\n  - A.9. Derivative of a norm squared\n    - A.9.1. Differentiability of the norm squared function\n    - A.9.2. Derivative of the norm squared function\n  - A.10. Derivative of the inner product\n    - A.10.1. Differentiability of the inner product function\n    - A.10.2. Derivative of the inner product function\n    - A.10.3. Derivative of the inner product on one side\n  - A.11. Differentiability of derivatives\n- B. Derivatives of distributions on `Space d`\n  - B.1. The definition\n  - B.2. Basic equality\n  - B.3. Commutation of derivatives\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 63,
@@ -1636,13 +1647,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 1
   },
   {
    "file": "Physlib/SpaceAndTime/Space/Derivatives/Curl.lean",
    "module": "Physlib.SpaceAndTime.Space.Derivatives.Curl",
    "title": "Curl on Space",
    "doc": "## i. Overview\n\nIn this module we define the curl of functions and distributions on 3-dimensional\nspace `Space 3`.\n\nWe also prove some basic vector-identities involving of the curl operator.\n\n## ii. Key results\n\n- `curl` : The curl operator on functions from `Space 3` to `EuclideanSpace ℝ (Fin 3)`.\n- `distCurl` : The curl operator on distributions from `Space 3` to `EuclideanSpace ℝ (Fin 3)`.\n- `div_of_curl_eq_zero` : The divergence of the curl of a function is zero.\n- `distCurl_distGrad_eq_zero` : The curl of the gradient of a distribution is zero.\n- `curl_eq_sum_leviCivitaSymbol` : The components of the curl as a contraction with the\n  Levi-Civita symbol.\n\n## iii. Table of contents\n\n- A. The curl on functions\n  - A.1. The curl on the zero function\n  - A.2. The curl on a constant function\n  - A.3. Basic operations on curl\n  - A.4. The curl of a linear map is a linear map\n  - A.5. Preliminary lemmas about second derivatives\n  - A.6. The div of a curl is zero\n  - A.7. The curl of a grad is zero\n  - A.8. The curl of a curl\n  - A.9. A divergence-free field is a curl\n  - A.10. A curl-free field is a gradient\n  - A.11. The curl in terms of the Levi-Civita symbol\n- B. The curl on distributions\n  - B.1. The components of the curl\n  - B.2. Basic equalities\n  - B.3. The curl of a grad is zero\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 65,
@@ -1912,13 +1925,15 @@
     }
    ],
    "private": 10,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 2
   },
   {
    "file": "Physlib/SpaceAndTime/Space/Derivatives/DerivativeIndex.lean",
    "module": "Physlib.SpaceAndTime.Space.Derivatives.DerivativeIndex",
    "title": "Bounded derivative indices",
    "doc": "## i. Overview\n\nThis module defines bounded derivative indices on `Space d`, i.e. multi-indices of total order at\nmost `k`.\n\nThese are the finite indexing objects used later for finite-order local jet coordinates, while\nremaining independent of any specific jet or field-theory construction.\n\n## ii. Key results\n\n- `Physlib.DerivativeIndex`\n\n## iii. Table of contents\n\n- A. Definition and basic instances\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Juan Jose Fernandez Morales",
    "sections": [
     {
      "line": 38,
@@ -1976,13 +1991,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Space/Derivatives/Div.lean",
    "module": "Physlib.SpaceAndTime.Space.Derivatives.Div",
    "title": "Divergence on Space",
    "doc": "## i. Overview\n\nIn this module we define the divergence operator on functions and\ndistributions from `Space d` to `EuclideanSpace ℝ (Fin d)`, and prove various basic\nproperties about it.\n\n## ii. Key results\n\n- `div` : The divergence operator on functions from `Space d` to `EuclideanSpace ℝ (Fin d)`.\n- `distDiv` : The divergence operator on distributions from `Space d` to `EuclideanSpace ℝ (Fin d)`.\n- `distDiv_ofFunction` : The divergence of a distribution from a bounded function.\n\n## iii. Table of contents\n\n- A. The divergence on functions\n  - A.1. The divergence on the zero function\n  - A.2. The divergence on a constant function\n  - A.3. The divergence distributes over addition\n  - A.4. The divergence distributes over scalar multiplication\n  - A.5. The divergence of a linear map is a linear map\n- B. Divergence of distributions\n  - B.1. Basic equalities\n  - B.2. Divergence on distributions from bounded functions\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 51,
@@ -2112,13 +2129,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Space/Derivatives/Grad.lean",
    "module": "Physlib.SpaceAndTime.Space.Derivatives.Grad",
    "title": "Gradient of functions and distributions on `Space d`",
    "doc": "## i. Overview\n\nThis module defines and proves basic properties of the gradient operator\non functions from `Space d` to `ℝ` and on distributions from `Space d` to `ℝ`.\n\nThe gradient operator returns a vector field whose components are the partial derivatives\nof the input function with respect to each spatial coordinate.\n\n## ii. Key results\n\n- `grad` : The gradient operator on functions from `Space d` to `ℝ`.\n- `distGrad` : The gradient operator on distributions from `Space d` to `ℝ`.\n\n## iii. Table of contents\n\n- A. The gradient of functions on `Space d`\n  - A.1. Gradient of the zero function\n  - A.2. Gradient distributes over addition\n  - A.3. Gradient of a constant function\n  - A.4. Gradient distributes over scalar multiplication\n  - A.5. Gradient distributes over negation\n  - A.6. Expansion in terms of basis vectors\n  - A.7. Components of the gradient\n  - A.8. Inner product with a gradient\n  - A.9. Gradient is equal to `gradient` from Mathlib\n  - A.10. Value of gradient in the direction of the position vector\n  - A.11. Gradient of the norm squared function\n  - A.12. Gradient of the inner product function\n  - A.13. Integrability with bounded functions\n  - A.14. Differentiability of gradient\n- B. Gradient of distributions\n  - B.1. The definition\n  - B.2. The gradient of inner products\n  - B.3. The gradient as a sum over basis vectors\n  - B.4. The underlying function of the gradient distribution\n  - B.5. The gradient applied to a Schwartz function\n  - B.6. Gradient of constant distributions\n  - B.7. The gradient of a Schwartz map\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 65,
@@ -2536,13 +2555,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Space/Derivatives/Iterated.lean",
    "module": "Physlib.SpaceAndTime.Space.Derivatives.Iterated",
    "title": "Iterated derivatives on `Space d`",
    "doc": "## i. Overview\n\nThis module defines iterated coordinate derivatives on `Space d` indexed by multi-indices.\n\nThe implementation is intentionally modest. A multi-index is first expanded into a canonical list\nof coordinate directions, and the iterated derivative is then defined by repeated application of\n`Space.deriv` along that list.\n\n## ii. Key results\n\n- `Space.iteratedDeriv` : iterated coordinate derivatives on `Space d`.\n- `∂^[I] f` : notation for the iterated derivative indexed by the multi-index `I`.\n- `Space.iteratedDeriv_add`, `Space.iteratedDeriv_const_smul` :\n  algebraic compatibility for smooth scalar-valued functions.\n- `Space.iteratedDeriv_contDiff` : smooth scalar-valued functions remain smooth after\n  iterated coordinate differentiation.\n- `Space.tsupport_iteratedDeriv_subset` :\n  the support of an iterated spatial derivative is contained in that of the original function.\n\n## iii. Table of contents\n\n- A. Iterated derivatives on `Space d`\n- B. Algebraic and regularity lemmas\n- C. Support lemmas\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Juan Jose Fernandez Morales",
    "sections": [
     {
      "line": 52,
@@ -2640,13 +2661,15 @@
     }
    ],
    "private": 5,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Space/Derivatives/Laplacian.lean",
    "module": "Physlib.SpaceAndTime.Space.Derivatives.Laplacian",
    "title": "The Laplacian operator on `Space d`",
    "doc": "## i. Overview\n\nIn this module we define the Laplacian operator on functions and vector-valued\nfunctions defined on `Space d`.\n\n## ii. Key results\n\n- `laplacian` : The Laplacian operator on scalar functions on `Space d`.\n- `laplacianVec` : The Laplacian operator on vector-valued functions on `Space d`.\n- `distLaplacian` : The Laplacian operator on distributions on `Space d`.\n- `laplacian_comp_linearIsometryEquiv` : The Laplacian commutes with composition by a linear\n  isometry of `Space d`.\n- `laplacianVec_comp_linearIsometryEquiv` : The vector Laplacian commutes with composition by a\n  linear isometry of `Space d`.\n\n## iii. Table of contents\n\n- A. Laplacian on functions to ℝ\n  - A.1. Relation between laplacian and divergence of gradient\n- B. Laplacian on vector valued functions\n- C. Laplacian of distributions\n  - C.1. Laplacian of constant distributions\n- D. Composition with a linear isometry\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 46,
@@ -2732,13 +2755,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Space/Derivatives/MatrixDiv.lean",
    "module": "Physlib.SpaceAndTime.Space.Derivatives.MatrixDiv",
    "title": "Matrix divergence on Space",
    "doc": "## i. Overview\n\nIn this module we define the matrix divergence operator on matrix-valued\nfunctions from `Space d`.\n\nFor a field `T : Space d → Matrix (Fin d) (Fin d) ℝ`, the matrix divergence is\nthe vector field whose `i`th component is\n\n`∑ j, ∂[j] (fun x => T x i j) x`.\n\n## ii. Key results\n\n- `matrixDiv` : The divergence of a matrix-valued function on `Space d`.\n\n## iii. Table of contents\n\n- A. The matrix divergence on functions\n  - A.1. Basic equalities\n  - A.2. The matrix divergence on the zero function\n  - A.3. The matrix divergence on a constant function\n  - A.4. The matrix divergence distributes over addition\n  - A.5. The matrix divergence distributes over scalar multiplication\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Florian Wiesner",
    "sections": [
     {
      "line": 47,
@@ -2816,13 +2841,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Space/Derivatives/MultiIndex.lean",
    "module": "Physlib.SpaceAndTime.Space.Derivatives.MultiIndex",
    "title": "Multi-indices",
    "doc": "## i. Overview\n\nThis module defines the basic type of multi-indices used to index iterated partial derivatives.\n\nA multi-index on `d` source coordinates is represented as a structure with an underlying function\n`Fin d → ℕ`, together with the first basic operations needed later in the local Classical Field\nTheory development.\n\n## ii. Key results\n\n- `Physlib.MultiIndex` : multi-indices on `d` coordinates.\n- `MultiIndex.order` : the order `|I|` of a multi-index.\n- `MultiIndex.increment` : increment a single coordinate of a multi-index.\n- `MultiIndex.toList` : the canonical ordered list of directions encoded by a multi-index.\n\n## iii. Table of contents\n\n- A. The basic type of multi-indices\n  - A.1. Basic operations\n  - A.2. Basic lemmas\n  - A.3. Canonical ordered lists of directions\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Juan Jose Fernandez Morales",
    "sections": [
     {
      "line": 47,
@@ -3036,13 +3063,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Space/DistConst.lean",
    "module": "Physlib.SpaceAndTime.Space.DistConst",
    "title": "The constant distribution on space",
    "doc": "## i. Overview\n\nIn this module we define the constant distribution from `Space d` to a module `M`.\nThat is the distribution which sends every Schwartz function to its\nintegral multiplied by a fixed element `m : M`.\n\nWe show that the derivatives of this constant distribution are zero.\n## ii. Key results\n\n- `distConst` : The constant distribution from `Space d` to a module `M`.\n\n## iii. Table of contents\n\n- A. The definition of the constant distribution\n- B. Derivatives of the constant distribution\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 41,
@@ -3096,13 +3125,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Space/DistOfFunction.lean",
    "module": "Physlib.SpaceAndTime.Space.DistOfFunction",
    "title": "Distributions from functions on space",
    "doc": "## i. Overview\n\nIn this module we define distributions on space constructed from functions\n`f : Space d → F` satisfying the condition `IsDistBounded f`.\n\nThis gives a convenient way to construct distributions from functions, without needing\nto reference the underlying Schwartz maps.\n\n## ii. Key results\n\n- `distOfFunction f hf` : The distribution on space constructed from the function\n  `f : Space d → F` satisfying the `IsDistBounded f` condition.\n\n## iii. Table of contents\n\n- A. Definition of a distribution from a function\n- B. Linarity properties of getting distributions from functions\n- C. Properties related to inner products\n- D. Derivatives\n- E. Components\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 53,
@@ -3216,13 +3247,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Space/EuclideanGroup/Action.lean",
    "module": "Physlib.SpaceAndTime.Space.EuclideanGroup.Action",
    "title": "The action of the Euclidean group on `Space`",
    "doc": "The Euclidean group `EuclideanGroup d = ℝᵈ ⋊ O(d)` (`Space/EuclideanGroup/Basic.lean`) is the group\nof rigid motions of `d`-dimensional space. This file makes that geometric meaning literal: it\nendows the affine space of points `Space d` (`Space/Basic.lean`) with a `MulAction` of\n`EuclideanGroup d` **by isometries**, and specialises it to the rotations.\n\n## Main results\n\n* `EuclideanGroup.smul_vsub_smul` — displacements transform by the linear part alone.\n* `EuclideanGroup.dist_smul` — the action preserves distance.\n* `EuclideanGroup.rotation_smul_origin` / `rotation_smul_vsub_origin` — rotations fix the origin\n  and act about it by their orthogonal part.\n* `EuclideanGroup.chartEuclidean_smul` — agreement with the affine-isometry model\n  (`AffineGroup.lean`); the rest of the file does not depend on it.\n\n## Implementation notes\n\n`Space d` is an affine space (`NormedAddTorsor`) with no canonical origin, so the action uses its\nvector-space zero `(0 : Space d)` as the basepoint:\n\n`g • p = (g.linear • (p -ᵥ (0 : Space d)) + g.translation) +ᵥ (0 : Space d)`.\n\nThe `Zero` instance and the chart `Space.chartEuclidean` are defined in `Space/Origin.lean`.",
+   "copyright": "2026 Shaopeng Zhu",
    "sections": [
     {
      "line": 44,
@@ -3312,13 +3345,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Space/EuclideanGroup/AffineGroup.lean",
    "module": "Physlib.SpaceAndTime.Space.EuclideanGroup.AffineGroup",
    "title": "The inclusion of the Euclidean group into the affine automorphism group",
    "doc": "This file has two parts.\n\n**Part 1: the inclusion.** The abstract Euclidean group `EuclideanGroup n = ℝⁿ ⋊ O(n)` is\nincluded into Mathlib's affine automorphism group as the composite of two monoid homomorphisms\n\n`EuclideanGroup n →* AffineIsometryEquiv ℝ (EuclideanSpace ℝ (Fin n)) _ →* AffineEquiv ℝ _ _`.\n\n* `EuclideanGroup.orthogonalToLinearIsometryEquiv` : an orthogonal matrix as a linear isometry\n  equivalence of `EuclideanSpace ℝ (Fin n)`; the linear ingredient of the first leg.\n* `EuclideanGroup.toAffineIsometryHom` : the first leg, `⟨t, Q⟩ ↦ (x ↦ Q x + t)`.\n* `AffineIsometryEquiv.toAffineEquivHom` : the second leg, `AffineIsometryEquiv.toAffineEquiv`\n  as a monoid homomorphism.\n* `EuclideanGroup.toAffineEquiv` : the composite of the two legs; the result intended for use\n  elsewhere.\n\n**Part 2: strengthening the first leg to an isomorphism.** Every affine isometry of\n`EuclideanSpace ℝ (Fin n)` is `x ↦ Q x + t` for a unique orthogonal `Q` and translation `t`, so\nthe first leg is in fact a group isomorphism. We record it as\n`EuclideanGroup.toAffineIsometryMulEquiv`, a `MulEquiv` whose fields are supplied as follows:\n\n* `toFun`, `map_mul'` : reused from `EuclideanGroup.toAffineIsometryHom` in part 1;\n* `invFun` : built from `EuclideanGroup.linearIsometryEquivToOrthogonal`, the inverse of the\n  linear bridge `orthogonalToLinearIsometryEquiv`;\n* `left_inv` : from the round trip `orthogonalToLinearIsometryEquiv_left_inv` together with the\n  projection lemma `linearIsometryEquiv_constVAdd_mul`;\n* `right_inv` : from the round trip `orthogonalToLinearIsometryEquiv_right_inv`.\n\nPart 2 is self-contained; nothing in part 1 depends on it.",
+   "copyright": "2026 Shaopeng Zhu",
    "sections": [
     {
      "line": 49,
@@ -3428,13 +3463,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Space/EuclideanGroup/Basic.lean",
    "module": "Physlib.SpaceAndTime.Space.EuclideanGroup.Basic",
    "title": "Euclidean group",
    "doc": "This file defines the Euclidean group as translations composed with orthogonal maps, together\nwith the special Euclidean group, translation subgroup, and rotation subgroups.\n\nThe affine group, together with the inclusion of the Euclidean group into it, is defined in\n`Physlib.SpaceAndTime.Space.EuclideanGroup.AffineGroup`.",
+   "copyright": "2026 Shaopeng Zhu",
    "sections": [
     {
      "line": 63,
@@ -3724,13 +3761,15 @@
     }
    ],
    "private": 2,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Space/Integrals/Basic.lean",
    "module": "Physlib.SpaceAndTime.Space.Integrals.Basic",
    "title": "Integrals in Space",
    "doc": "## i. Overview\n\nIn this module we give general properties of integrals over `Space d`.\nWe focus here on the volume measure, which is the usual measure on `Space d`, i.e.\n`dx dy dz`.\n\n## ii. Key results\n\n- `volume_eq_addHaar` : The volume measure on `Space d` is the same as the Haar measure\n  associated with the basis of `Space d`.\n- `integral_volume_eq_spherical` : The integral of a function over `Space d` with\n  respect to the volume measure can be expressed as an integral over the unit sphere and\n  the positive reals.\n- `lintegral_volume_eq_spherical` : The lower Lebesgue integral of a function over `Space d`\n  with respect to the volume measure can be expressed as a lower Lebesgue integral over the unit\n  sphere and the positive reals.",
+   "copyright": "2026 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 41,
@@ -3856,13 +3895,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Space/Integrals/NormPow.lean",
    "module": "Physlib.SpaceAndTime.Space.Integrals.NormPow",
    "title": "Integrability of norm powers on subsets of Space",
    "doc": "## i. Overview\n\nThis module contains results on the integrability of `x ↦ ‖x‖ᵖ` for real exponents `p` on subsets of\n`Space d`.\n\nThe integrability of `x ↦ ‖x‖ᵖ` on `ball 0 b` and `(ball 0 b)ᶜ` follows from the 1d results\n`integrableOn_Ioo_rpow_iff` and `integrableOn_Ioi_rpow_iff` after changing to spherical coordinates.\n\n## ii. Key results\n\n- `integrableOn_norm_rpow_iff_of_isBounded_nhds`: Necessary and sufficient condition for\n    integrability on a set `s` which is a bounded neighborhood of the origin.\n- `integrableOn_norm_rpow_of_isBounded_compl_nhds`: Integrability for all bounded sets `s`\n    with `0 ∉ closure s`.\n- `integrableOn_norm_rpow_of_compl_nhds`: A sufficient condition for integrability on `s`\n    with `0 ∉ closure s`.\n- `radial_norm_power_spherical_integral_eq_space_integral`: The spherical-coordinate integral\n    identity for integer powers of the norm against a Schwartz map.\n\n## iii. Table of contents\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Gregory J. Loges",
    "sections": [],
    "declarations": [
     {
@@ -3931,13 +3972,15 @@
     }
    ],
    "private": 2,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Space/Integrals/RadialAngularMeasure.lean",
    "module": "Physlib.SpaceAndTime.Space.Integrals.RadialAngularMeasure",
    "title": "The radial angular measure on Space",
    "doc": "## i. Overview\n\nThe normal measure on `Space d` is `r^(d-1) dr dΩ` in spherical coordinates,\nwhere `dΩ` is the angular measure on the unit sphere. The radial angular measure\nis the measure `dr dΩ`, cancelling the radius contribution from the measure in spherical\ncoordinates.\n\nThis file is equivalent to `invPowMeasure`, which will slowly be deprecated.\n\n## ii. Key results\n\n- `radialAngularMeasure`: The radial angular measure on `Space d`.\n\n## iii. Table of contents\n\n- A. The definition of the radial angular measure\n  - A.1. Basic equalities\n- B. Integrals with respect to radialAngularMeasure\n- C. The radialAngularMeasure on balls\n- D. Integrability conditions\n- E. HasTemperateGrowth of measures\n  - E.1. Integrability of powers\n  - E.2. radialAngularMeasure has temperate growth\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 56,
@@ -4083,13 +4126,15 @@
     }
    ],
    "private": 1,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Space/IsDistBounded.lean",
    "module": "Physlib.SpaceAndTime.Space.IsDistBounded",
    "title": "Functions on `Space d` which can be made into distributions",
    "doc": "## i. Overview\n\nIn this module, for functions `f : Space d → F`, we define the property `IsDistBounded f`.\nFunctions satisfying this property can be used to create distributions `Space d →d[ℝ] F`\nby integrating them against Schwartz maps.\n\nThe condition `IsDistBounded f` essentially says that `f` is bounded by a finite sum of terms\nof the form `c * ‖x + g‖ ^ p` for constants `c`, `g` and `- (d - 1) ≤ p ` where `d` is the dimension\nof the space.\n\n## ii. Key results\n\n- `IsDistBounded` : The boundedness condition on functions `Space d → F` for them to\n  form distributions.\n- `IsDistBounded.integrable_space` : If `f` satisfies `IsDistBounded f`, then\n  `fun x => η x • f x` is integrable for any Schwartz map `η : 𝓢(Space d, ℝ)`.\n- `IsDistBounded.integrable_time_space` : If `f` satisfies `IsDistBounded f`, then\n  `fun x => η x • f x.2` is integrable for any Schwartz map\n  `η : 𝓢(Time × Space d, ℝ)`.\n- `IsDistBounded.mono` : If `f₁` satisfies `IsDistBounded f₁` and\n  `‖f₂ x‖ ≤ ‖f₁ x‖` for all `x`, then `f₂` satisfies `IsDistBounded f₂`.\n\n## iii. Table of contents\n\n- A. The predicate `IsDistBounded f`\n- B. Integrability properties of functions satisfying `IsDistBounded f`\n  - B.1. `AEStronglyMeasurable` conditions\n  - B.2. Integrability with respect to Schwartz maps on space\n  - B.3. Integrability with respect to Schwartz maps on time and space\n  - B.4. Integrability with respect to inverse powers\n- C. Integral on Schwartz maps is bounded by seminorms\n- D. Construction rules for `IsDistBounded f`\n  - D.1. Addition\n  - D.2. Finite sums\n  - D.3. Scalar multiplication\n  - D.4. Components of functions\n  - D.5. Compositions with additions and subtractions\n  - D.6. Congruence with respect to the norm\n  - D.7. Monotonicity with respect to the norm\n  - D.8. Inner products\n  - D.9. Scalar multiplication with constant\n- E. Specific functions that are `IsDistBounded`\n  - E.1. Constant functions\n  - E.2. Powers of norms\n- F. Multiplication by norms and components\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 81,
@@ -4691,13 +4736,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Space/LengthUnit.lean",
    "module": "Physlib.SpaceAndTime.Space.LengthUnit",
    "title": "Units on Length",
    "doc": "A unit of length corresponds to a choice of translationally-invariant\nmetric on the space manifold (to be defined). Such a choice is (non-canonically) equivalent to a\nchoice of positive real number. We define the type `LengthUnit` to be equivalent to the\npositive reals.\n\nOn `LengthUnit` there is an instance of division giving a real number, corresponding to the\nratio of the two scales of length unit.\n\nTo define specific length units, we first state the existence of a\na given length unit, and then construct all other length units from it. We choose to state the\nexistence of the length unit of meters, and construct all other length units from that.\n\n## References\n\n* The BIPM SI Brochure, for the meter, the speed of light, and SI prefixes.\n  [ref: bipm_si_brochure_2019]\n* NIST Handbook 44, Appendix C, for the international foot-based units and the international\n  nautical mile. [ref: nist_hb44_2023]\n* IAU 2012 Resolution B2, for the astronomical unit. [ref: iau_2012_resolution_b2]\n* The IAU Style Manual recommendations, for the Julian year convention used in the light-year.\n  [ref: iau_style_manual_units]\n* IAU 2015 Resolution B2, for the exact parsec convention. [ref: iau_2015_resolution_b2]",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 59,
@@ -4903,13 +4950,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Space/Module.lean",
    "module": "Physlib.SpaceAndTime.Space.Module",
    "title": "The structure of a module on Space",
    "doc": "The scope of this module is to define on `Space d` the structure of a `Module`\n(aka vector space), a `Norm` and an `InnerProductSpace`, and give properties of these structures.\n\nThese instances require certain non-canonical choices to be made, for example the choice\nof a zero and for a basis, a choice of orientation.\n\n## Instances in Lean\n\nIn Lean, an `instance` supplies a typeclass automatically. When a definition or\ntheorem needs a structure such as `AddCommGroup (Space d)`, `Module ℝ (Space d)`,\n`NormedAddCommGroup (Space d)`, `InnerProductSpace ℝ (Space d)`, or\n`MeasurableSpace (Space d)`, typeclass inference searches for the corresponding\ninstance and inserts it without the user passing it explicitly.\n\nThese instances make `Space d` usable with standard mathematical notation and\nwith the Mathlib API. For example, they allow expressions such as `p + q`,\n`c • p`, `‖p‖`, `inner ℝ p q`, and measurable-set arguments involving the Borel\nstructure. They also make general theorems about modules, normed groups, inner\nproduct spaces, and measurable spaces apply directly to `Space d`.\n\nFor `Space d`, these instances are intentional choices rather than inherited\nfacts: the type was defined as a structure instead of an abbreviation for\nEuclidean space. In particular, the additive and module structures choose an\norigin, while the norm, inner product, and Borel structure choose the standard\nEuclidean coordinate geometry.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 48,
@@ -5735,13 +5784,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Space/Norm/Basic.lean",
    "module": "Physlib.SpaceAndTime.Space.Norm.Basic",
    "title": "The norm on space",
    "doc": "## i. Overview\n\nThe main content of this file is defining `Space.normPowerSeries`, a sequence of smooth\nfunctions which are differentiable everywhere, and which tend to the norm in the limit as `n → ∞`.\n\nWe use properties of this sequence to prove various results about distributions involving norms.\n\n## ii. Key results\n\n- `normPowerSeries` : A sequence of functions which are differentiable everywhere, and in the limit\n  as `n → ∞` tends to `‖x‖`.\n- `normPowerSeries_differentiable` : Each `normPowerSeries n` is differentiable everywhere.\n- `normPowerSeries_tendsto` : `normPowerSeries n` tends to the norm in the limit as `n → ∞`.\n- `distGrad_distOfFunction_norm_zpow` : The gradient of the distribution defined by a power of the\n  norm.\n- `distGrad_distOfFunction_log_norm` : The gradient of the distribution defined by the logarithm\n  of the norm.\n- `distDiv_norm_zpow_smul_repr_self_eq_smul` : The divergence of the distribution defined by\n  `x ↦ ‖x‖ ^ q • x`.\n- `distLaplacian_distOfFunction_norm_zpow` : The Laplacian of the distribution defined by a power\n  of the norm.\n- `distDiv_inv_pow_eq_dim` : The divergence of `x ↦ ‖x‖ ^ (-d) • x` equals `d * volume (ball 0 1)`\n  times the Dirac delta at the origin.\n- `distLaplacian_fundamentalSolution_norm_zpow` : The Laplacian of the power-form fundamental\n  solution `‖x‖ ^ (2 - d)`, in every dimension (trivial at `d = 0, 2`).\n- `distLaplacian_fundamentalSolution_log_norm` : The Laplacian of the two-dimensional logarithmic\n  fundamental solution `Real.log ‖x‖`.\n\n## iii. Table of contents\n\n- A. The norm as a limit of smooth functions\n  - A.1. Differentiability of the smooth approximation of the norm\n  - A.2. The limit of the smooth approximation of the norm\n  - A.3. The derivative of the smooth approximation of the norm\n  - A.4. Limits of the derivative of the smooth approximation\n  - A.5. The smooth approximation is AEStronglyMeasurable\n  - A.6. Bounds on the smooth approximation of the norm\n  - A.7. The `IsDistBounded` property of the smooth approximation of the norm\n  - A.8. Differentiability of functions\n  - A.9. Derivatives of functions\n  - A.10. Gradients of distributions based on powers\n    - A.10.1. The limits of gradients of distributions based on powers\n  - A.11. Gradients of distributions based on logs\n    - A.11.1. The limits of gradients of distributions based on logs\n- B. Distributions involving norms\n  - B.1. The gradient of distributions based on powers\n  - B.2. The gradient of distributions based on logs\n  - B.3. Divergence of radial norm-power distributions\n  - B.4. The Laplacian of distributions based on powers\n  - B.5. Divergence equal dirac delta\n  - B.6. The Laplacian of the fundamental solution\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 84,
@@ -6207,13 +6258,15 @@
     }
    ],
    "private": 3,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Space/Norm/IteratedLaplacian.lean",
    "module": "Physlib.SpaceAndTime.Space.Norm.IteratedLaplacian",
    "title": "Iterated Laplacians of norm distributions",
    "doc": "## i. Overview\n\nThis file proves the distributional identity corresponding to the classical odd-dimensional\nformula that, in dimension `2 * m + 1`, applying the Laplacian `m + 1` times to the norm\ngives a nonzero constant multiple of the Dirac delta at the origin.\n\n## ii. Key results\n\n- `iterated_distLaplacian_norm_zpow_odd_eq_smul_diracDelta` : The `(m + 1)`-fold\n  Laplacian of the norm in dimension `2 * m + 1` is a nonzero multiple of the Dirac delta.\n\n## iii. Table of contents\n\n- A. The odd-dimensional iterated Laplacian of the norm\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Lazar Milikic",
    "sections": [
     {
      "line": 43,
@@ -6247,13 +6300,15 @@
     }
    ],
    "private": 3,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Space/Norm/Regularized.lean",
    "module": "Physlib.SpaceAndTime.Space.Norm.Regularized",
    "title": "Regularized powers of the norm on space",
    "doc": "## i. Overview\n\nThis file contains basic API for regularized powers of the norm on `Space d`, namely\n`x ↦ (‖x‖ ^ 2 + ε ^ 2) ^ (s / 2)`.\n\n## ii. Key results\n\n- `normRegularizedPow` : The regularized norm power `x ↦ (‖x‖ ^ 2 + ε ^ 2) ^ (s / 2)`.\n- `normRegularizedPow_pos` : Positivity for nonzero regularization parameter.\n- `normRegularizedPow_hasTemperateGrowth` : Temperate growth of regularized norm powers.\n- `normRegularizedPow_measurable` : Measurability of regularized norm powers.\n\n## iii. Table of contents\n\n- A. Regularized powers of the norm\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Gregory J. Loges",
    "sections": [
     {
      "line": 42,
@@ -6311,13 +6366,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Space/Origin.lean",
    "module": "Physlib.SpaceAndTime.Space.Origin",
    "title": "The origin of `Space` and the Euclidean chart",
    "doc": "The choice of origin for `Space d` is its vector-space zero `(0 : Space d)`. This file provides\nthat `Zero` instance and the standard chart, isolated so they can be shared by the full module\nstructure (`Space/Module.lean`) and the Euclidean action (`Space/EuclideanGroup/Action.lean`)\nwithout those depending on each other.\n\n* `(0 : Space d)` — the coordinate origin, the point all of whose coordinates vanish.\n* `Space.chartEuclidean` — the standard affine isometry `Space d ≃ᵃⁱ[ℝ] EuclideanSpace ℝ (Fin d)`,\n  `p ↦ p -ᵥ 0`, identifying a point with its coordinate vector relative to the origin.",
+   "copyright": "2026 Shaopeng Zhu",
    "sections": [],
    "declarations": [
     {
@@ -6386,13 +6443,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Space/Slice.lean",
    "module": "Physlib.SpaceAndTime.Space.Slice",
    "title": "Slices of space",
    "doc": "## i. Overview\n\nIn this module we will define the equivalence between `Space d.succ` and `ℝ × Space d` which\nextracts the `i`th coordinate on `Space d.succ`.\n\n## ii. Key results\n\n- `slice` : The continuous linear equivalence between `Space d.succ` and `ℝ × Space d` extracting\n  the `i`th coordinate.\n\n## iii. Table of contents\n\n- A. Slicing spaces\n  - A.1. Basic applications of the slicing map\n  - A.2. Slice as a measurable embedding\n  - A.3. The norm of the slice map\n  - A.4. Derivative of the slice map\n  - A.5. Basis in terms of slices\n\n## iv. References\n\n* https://leanprover.zulipchat.com/#narrow/channel/479953-Physlib/topic/API.20around.20.60Space.20.28d1.20.2B.20d2.29.60.20to.20.60Space.20d1.20x.20Space.20d2.60/with/556754634.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 49,
@@ -6542,13 +6601,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Space/SmoothFunctions.lean",
    "module": "Physlib.SpaceAndTime.Space.SmoothFunctions",
    "title": "Smooth real-valued functions on space",
    "doc": "`Space.cmap` bundles a smooth real-valued function on `Space d`, given as a plain function\ntogether with a `ContDiff` proof, into the space of bundled smooth maps\n`C^⊤⟮𝓘(ℝ, Space d), Space d; 𝓘(ℝ, ℝ), ℝ⟯`. Such bundled maps are, for instance, the test\nfunctions on which the mass distribution of a rigid body acts.",
+   "copyright": "2026 Giuseppe Sorge",
    "sections": [],
    "declarations": [
     {
@@ -6569,13 +6630,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Space/Translations.lean",
    "module": "Physlib.SpaceAndTime.Space.Translations",
    "title": "Translations on space",
    "doc": "We define translations on space, and how translations act on distributions.\nTranslations for part of the Poincaré group.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 32,
@@ -6649,13 +6712,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/SpaceAndTime/SpaceTime/Basic.lean",
    "module": "Physlib.SpaceAndTime.SpaceTime.Basic",
    "title": "Spacetime",
    "doc": "## i. Overview\n\nIn this file we define the type `SpaceTime d` which corresponds to `d+1` dimensional\nspacetime. This is equipped with an instance of the action of a Lorentz group,\ncorresponding to Minkowski-spacetime.\n\nIt is defined through `Lorentz.Vector d`, and carries the tensorial instance,\nallowing it to be used in tensorial expressions.\n\n## ii. Key results\n\n- `SpaceTime d` : The type corresponding to `d+1` dimensional spacetime.\n- `space_equivariant` : Spatial projection intertwines the Lorentz and Euclidean actions\n  of the same rotation about the coordinate origin.\n- `toTimeAndSpace` : A continuous linear equivalence between `SpaceTime d`\n  and `Time × Space d`.\n\n## iii. Table of contents\n\n- A. The definition of `SpaceTime d`\n- C. Continuous linear map to coordinates\n- D. Measures on `SpaceTime d`\n  - D.1. Instance of a measurable space\n  - D.2. Instance of a borel space\n  - D.4. Instance of a measure space\n  - D.5. Volume measure is positive on non-empty open sets\n  - D.6. Volume measure is a finite measure on compact sets\n  - D.7. Volume measure is an additive Haar measure\n- B. Maps to and from `Space` and `Time`\n  - B.1. Linear map to `Space d`\n    - B.1.1. Explicit expansion of map to space\n    - B.1.2. Equivariance of the to space under rotations\n  - B.2. Linear map to `Time`\n    - B.2.1. Explicit expansion of map to time in terms of coordinates\n  - B.3. `toTimeAndSpace`: Continuous linear equivalence to `Time × Space d`\n    - B.3.1. Derivative of `toTimeAndSpace`\n    - B.3.2. Derivative of the inverse of `toTimeAndSpace`\n    - B.3.3. `toTimeAndSpace` acting on spatial basis vectors\n    - B.3.4. `toTimeAndSpace` acting on the temporal basis vectors\n  - B.4. Time space basis\n    - B.4.1. Elements of the basis\n    - B.4.2. Equivalence adjusting time basis vector\n    - B.4.3. Determinant of the equivalence\n    - B.4.4. Time space basis expressed in terms of the Lorentz basis\n    - B.4.5. The additive Haar measure associated to the time space basis\n  - B.5. Integrals over `SpaceTime d`\n    - B.5.1. Measure preserving property of `toTimeAndSpace.symm`\n    - B.5.2. Integrals over `SpaceTime d` expressed as integrals over `Time` and `Space d`\n\n## iv. References\n\n* None.",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 74,
@@ -7081,13 +7146,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 1
   },
   {
    "file": "Physlib/SpaceAndTime/SpaceTime/Boosts.lean",
    "module": "Physlib.SpaceAndTime.SpaceTime.Boosts",
    "title": "Boosts of space time",
    "doc": "## i. Overview\n\nIn this module we consider boosts acting on points in space time,and recover simple\nformulae for such applications.\n\nNote that the material here currently assumes that the speed of light `c = 1`.\n\n## ii. Key results\n\n- `boost_x_smul` : The action of a boost in the x-direction on a point in space time.\n\n## iii. Table of contents\n\n- A. The action of a boost in the x-direction\n\n## iv. References\n\n* https://en.wikipedia.org/wiki/Lorentz_transformation. [ref: wiki_lorentz_transformation]",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 43,
@@ -7113,13 +7180,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/SpaceAndTime/SpaceTime/Derivatives.lean",
    "module": "Physlib.SpaceAndTime.SpaceTime.Derivatives",
    "title": "Derivatives on SpaceTime",
    "doc": "## i. Overview\n\nIn this module we define and prove basic lemmas about derivatives of functions and\ndistributions on `SpaceTime d`.\n\n## ii. Key results\n\n- `deriv` : The derivative of a function `SpaceTime d → M` along the `μ` coordinate.\n- `manifoldDeriv` : The derivative of a function from `SpaceTime d` to a manifold along\n  the `μ` coordinate.\n- `contDiff_deriv` : If `f` is `C^{n+1}` then `∂_ μ f` is `C^n`.\n- `differentiable_deriv` : If `f` is `C^2` then `∂_ μ f` is differentiable.\n- `deriv_commute` : Derivatives on `SpaceTime d` commute (Clairaut's theorem).\n- `deriv_sum_inr` : The derivative along a spatial coordinate in terms of the\n  derivative on `Space d`.\n- `deriv_sum_inl` : The derivative along the temporal coordinate in terms of the\n  derivative on `Time`.\n- `iteratedDeriv` : Iterated derivatives along a multiset of coordinates.\n- `distDeriv` : The derivative of a distribution on `SpaceTime d` along the `μ` coordinate.\n- `distDeriv_commute` : Derivatives of distributions on `SpaceTime d` commute.\n\n## iii. Table of contents\n\n- A. Derivatives of functions on `SpaceTime d`\n  - A.1. The definition of the derivative\n  - A.2. Basic equality lemmas\n  - A.3. Linearity of the derivative\n  - A.4. Smoothness and differentiability of the derivative\n  - A.5. Derivatives commute\n  - A.6. The derivative of a function composed with a Lorentz transformation\n  - A.7. Spacetime derivatives in terms of time and space derivatives\n  - A.8. Iterated derivatives\n- B. Derivatives of distributions\n  - B.1. Commutation of derivatives of distributions\n  - B.2. Lorentz group action on derivatives of distributions\n- C. Derivatives of tensors\n  - C.1. Derivatives of tensors for distributions\n\n## iv. References\n\n* None.",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 71,
@@ -7533,13 +7602,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/SpaceAndTime/SpaceTime/LorentzAction.lean",
    "module": "Physlib.SpaceAndTime.SpaceTime.LorentzAction",
    "title": "Lorentz group actions related to SpaceTime",
    "doc": "## i. Overview\n\nWe already have a Lorentz group action on `SpaceTime d`, in this module\nwe define the induced action on Schwartz functions and distributions.\n\n## ii. Key results\n\n- `schwartzAction` : Defines the action of the Lorentz group on Schwartz functions.\n- An instance of `DistribMulAction` for the Lorentz group acting on distributions.\n\n## iii. Table of contents\n\n- A. Lorentz group action on Schwartz functions\n  - A.1. The definition of the action\n  - A.2. Basic properties of the action\n  - A.3. Injectivity of the action\n  - A.4. Surjectivity of the action\n- B. Lorentz group action on distributions\n  - B.1. The SMul instance\n  - B.2. The DistribMulAction instance\n  - B.3. The SMulCommClass instance\n  - B.4. Action as a linear map\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 55,
@@ -7665,13 +7736,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean",
    "module": "Physlib.SpaceAndTime.SpaceTime.SpaceTimeAlgebra.Basic",
    "title": "The spacetime algebra",
    "doc": "## i. Overview\n\nThe spacetime algebra `SpaceTimeAlgebra` is the ring of formal power series with complex\ncoefficients in four variables, one for each spacetime direction. The value at the base point of\nan iterated partial derivative of a series is the corresponding coefficient multiplied by a\nfactorial. Consequently, a series is determined by these derivative values, and every family of\nvalues arises from exactly one series. Iterated derivatives of a product obey the all-orders\nLeibniz rule.\n\n## ii. Key results\n\n- `SpaceTimeAlgebra` : formal power series in the spacetime directions.\n- `SpaceTimeAlgebra.iteratedPDeriv` : iterated formal partial derivatives.\n- `SpaceTimeAlgebra.constantCoeff_iteratedPDeriv` : derivative values are `s!` times coefficients.\n- `SpaceTimeAlgebra.iteratedPDeriv_mul` : the all-orders Leibniz rule.\n- `SpaceTimeAlgebra.ext_of_constantCoeff_iteratedPDeriv` : derivative values determine a series.\n- `SpaceTimeAlgebra.ofDerivValues` : the series with given derivative values.\n- `SpaceTimeAlgebra.ofDerivValues_constantCoeff_iteratedPDeriv` : Taylor's formula.\n- `SpaceTimeAlgebra.derivValuesEquiv` : series and derivative values are linearly equivalent.\n\n## iii. Table of contents\n\n- A. The spacetime algebra\n- B. Iterated formal partial derivatives\n  - B.1. Commutation of formal partial derivatives\n  - B.2. Base-point values of iterated derivatives\n  - B.3. The Leibniz rule\n- C. Series with equal derivative values\n- D. Series from derivative values\n  - D.1. Series with prescribed derivative values\n  - D.2. The linear equivalence\n\n## iv. References\n\n* P. Haukkanen, Formal power series in several variables, Notes on Number Theory and Discrete\n  Mathematics 25 (2019) 44–57, Section 4, Definitions 4.1–4.2 and Theorem 4.1, p. 48.\n  https://doi.org/10.7546/nntdm.2019.25.4.44-57 [ref: haukkanen_2019_formal_power_series]\n* I. Kolář, P. W. Michor and J. Slovák, Natural Operations in Differential Geometry,\n  Sections 12.5–12.6 and 12.18, for the interpretation of Taylor series as coordinate\n  expressions of jets. https://www.mat.univie.ac.at/~michor/kmsbookh.pdf\n  [ref: kolar_michor_slovak_1993]",
+   "copyright": "2026 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 59,
@@ -7865,13 +7938,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Star.lean",
    "module": "Physlib.SpaceAndTime.SpaceTime.SpaceTimeAlgebra.Star",
    "title": "Complex conjugation in the spacetime algebra",
    "doc": "The spacetime algebra is a star ring under complex conjugation of the Taylor coefficients.\n\n## i. Overview\n\nThe star of a series in the spacetime algebra conjugates each of its complex coefficients and\nfixes each coordinate variable `x^μ`. The Taylor coefficients of the complex conjugate of a smooth\nfield are the conjugates of its Taylor coefficients, so if `f` records a field at the base point\nthen `star f` records the conjugate field.\n\nConjugation is an involution that respects sums and products. It conjugates complex scalars, fixes\nreal scalars, and commutes with every iterated derivative `∂^s`.\n\n## ii. Key results\n\n- `SpaceTimeAlgebra.coeff_star` : the coefficients of `star f` are the conjugates of those of `f`.\n- `SpaceTimeAlgebra.star_C` : conjugating a constant series conjugates the constant.\n- `SpaceTimeAlgebra.star_X` : the coordinate variables are fixed by conjugation.\n- `SpaceTimeAlgebra.pderiv_star` : conjugation commutes with formal partial derivatives.\n- `SpaceTimeAlgebra.iteratedPDeriv_star` : conjugation commutes with iterated derivatives.\n\n## iii. Table of contents\n\n- A. Coefficientwise conjugation\n  - A.1. The star ring structure\n  - A.2. Constants and coordinates\n  - A.3. Real and complex scalars\n- B. Formal partial derivatives\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 54,
@@ -7977,13 +8052,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/TaylorSeries.lean",
    "module": "Physlib.SpaceAndTime.SpaceTime.SpaceTimeAlgebra.TaylorSeries",
    "title": "Taylor series of functions on spacetime",
    "doc": "## i. Overview\n\nThe Taylor series of a complex-valued function `f` on spacetime at a point `x₀` is the element of\nthe spacetime algebra whose base-point derivative values are the iterated derivatives of `f` at\n`x₀`. For smooth `f` it is additive and `ℂ`-homogeneous in `f`, and it takes the derivative of `f`\nalong a direction to the formal partial derivative of the series along the same direction.\n\n## ii. Key results\n\n- `SpaceTimeAlgebra.taylorSeries` : the Taylor series of a function at a point.\n- `SpaceTimeAlgebra.constantCoeff_iteratedPDeriv_taylorSeries` : derivative values of `f` at `x₀`.\n- `SpaceTimeAlgebra.taylorSeries_deriv` : derivatives become formal partial derivatives.\n\n## iii. Table of contents\n\n- A. The Taylor series of a function\n- B. Taylor series of derivatives\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 45,
@@ -8045,13 +8122,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 1
   },
   {
    "file": "Physlib/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra/Action.lean",
    "module": "Physlib.SpaceAndTime.SpaceTime.SpaceTimeDerivAlgebra.Action",
    "title": "The action of spacetime series on derivative symbols",
    "doc": "The action of formal power series in spacetime coordinates on polynomials in derivatives.\n\n## i. Overview\n\nMultiplying a field component `φ` by a spacetime-dependent function `χ`, such as a matrix element\nof a local gauge transformation, changes its derivatives by the product rule. At a point `x₀`,\n`∂_μ (χ φ)(x₀) = χ(x₀) ∂_μ φ(x₀) + (∂_μ χ)(x₀) φ(x₀)`, so a first derivative of `χ φ` is a\ncombination of derivatives of `φ`, and the same holds for any derivative symbol `P`. The symbol\n`seriesAction χ P` records this combination, applying `P` after multiplying by `χ`. We define the\naction on monomials by the product rule, and it respects sums and products of series, so\n`seriesAction` is a ring homomorphism from the spacetime algebra to the linear endomorphisms of\nthe derivative algebra.\n\nIn the statements `χ` is a series, the Taylor series of the function at `x₀`, and we use the\nnotation of `SpaceTimeDerivAlgebraℂ` throughout.\n\n## ii. Key results\n\n- `SpaceTimeDerivAlgebraℂ.seriesAction` : the action of series on derivative symbols.\n- `SpaceTimeDerivAlgebraℂ.pairing_seriesAction` : the action applies `P` after multiplying by `χ`.\n- `SpaceTimeDerivAlgebraℂ.seriesAction_basis_singleton` : the product rule for first-order\n  symbols.\n- `SpaceTimeDerivAlgebraℂ.seriesAction_mul_basis_singleton` : the action commutes with\n  multiplication by `∂_μ` up to the action of `pderiv μ χ`.\n\n## iii. Table of contents\n\n- A. The action of a series\n  - A.1. The action on monomials\n  - A.2. Multiplication before differentiation\n- B. Low-order symbols and derivatives\n  - B.1. The unit and first-order symbols\n  - B.2. Multiplication by a derivative symbol\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 58,
@@ -8129,13 +8208,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra/Basic.lean",
    "module": "Physlib.SpaceAndTime.SpaceTime.SpaceTimeDerivAlgebra.Basic",
    "title": "The spacetime derivative algebra",
    "doc": "The algebra of derivative symbols on spacetime, which evaluate on the spacetime algebra.\n\n## i. Overview\n\nIn field theory, local quantities are built from a field and finitely many of its derivatives at\na point. A linear combination of such derivatives is the value `(P φ)(x₀)` of a linear\ndifferential operator `P` with constant coefficients, and such an operator is a polynomial in the\npartial derivatives `∂_μ`. These polynomials, which we call derivative symbols, form the algebra\n`SpaceTimeDerivAlgebraℂ`. The value `(P φ)(x₀)` is determined by the derivatives of `φ` at `x₀`,\nwhich its Taylor series `taylorSeries x₀ φ` records as an element of the spacetime algebra. We\ntherefore pair a symbol `P` with any series `f` by applying `P` to `f` and taking the value at the\nbase point, so that pairing with `taylorSeries x₀ φ` gives `(P φ)(x₀)`.\n\nThroughout we use the notation of `SpaceTimeAlgebra`, whose elements we call series. For a\nmultiset `s` of directions,\n\n- `x^s` is the monomial in which each `x^μ` occurs as often as `μ` occurs in `s`;\n- `∂^s f` is the iterated derivative of a series `f`, and `(∂^s f)(x₀)` is its value at the base\n  point `x₀`;\n- `s!` is the product of the factorials of the multiplicities in `s`;\n- `∂^s` is the derivative symbol of `∂^s f`, written `∂^[s]` in Lean.\n\n## ii. Key results\n\n- `SpaceTimeDerivAlgebraℂ` : the algebra of derivative symbols.\n- `SpaceTimeDerivAlgebraℂ.basis` : the monomial basis indexed by multisets of directions.\n- `SpaceTimeDerivAlgebraℂ.basis_mul` : monomials multiply by adding multisets.\n- `SpaceTimeDerivAlgebraℂ.pairing` : applies a symbol to a series and evaluates at the base\n  point.\n- `SpaceTimeDerivAlgebraℂ.pairing_basis` : `∂^s` pairs with `f` to the value `(∂^s f)(x₀)`.\n- `SpaceTimeDerivAlgebraℂ.pairing_injective` : the pairing separates derivative symbols.\n- `SpaceTimeDerivAlgebraℂ.pairing_mul_basis_singleton` : multiplying by `∂_μ` differentiates the\n  series.\n\n## iii. Table of contents\n\n- A. The derivative algebra\n  - A.1. The monomial basis\n- B. Pairing symbols with series\n  - B.1. Pairing with monomials\n  - B.2. Injectivity of the pairing\n  - B.3. Multiplication by a derivative symbol\n  - B.4. Pairing with a product\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 66,
@@ -8289,13 +8370,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/SpaceAndTime/SpaceTime/TimeSlice.lean",
    "module": "Physlib.SpaceAndTime.SpaceTime.TimeSlice",
    "title": "Time slice",
    "doc": "Time slicing functions on spacetime, turning them into a function\n`Time → Space d → M`.\n\nThis is useful when going from relativistic physics (defined using `SpaceTime`)\nto non-relativistic physics (defined using `Space` and `Time`).",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 110,
@@ -8437,13 +8520,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Time/Basic.lean",
    "module": "Physlib.SpaceAndTime.Time.Basic",
    "title": "Time",
    "doc": "`Time` represents instants with a fixed but arbitrary unit and orientation. It is an\naffine space over `ℝ`: two instants determine a real-valued elapsed time, and adding\nsuch a duration to an instant produces another instant. There is no distinguished zero.\n\nThe field `Time.val` is an implementation coordinate, not a frame-relative time\ncoordinate. A reference frame chooses its own time origin. Import\n`Physlib.SpaceAndTime.Time.InnerProductSpace` to use the inner product space structure with the\nimplicit origin `Time.mk 0`, including addition of instants, norms, and derivatives.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 27,
@@ -8597,13 +8682,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Time/Derivatives.lean",
    "module": "Physlib.SpaceAndTime.Time.Derivatives",
    "title": "Time Derivatives",
    "doc": "## i. Overview\n\nIn this module we define and prove basic lemmas about derivatives of functions on `Time`.\n\n## ii. Key results\n\n- `deriv` : The derivative of a function `Time → M` at a given time.\n- `manifoldDeriv` : The derivative of a function from `Time` to a manifold.\n- `derivVec` : The derivative of a function from `Time` into a torsor, such as `Space d`,\n  valued in the vector space of displacements of that torsor.\n- `hasDerivAt_comp_toRealCLE_symm` : The time derivative as a `HasDerivAt` on `ℝ`, for a curve\n  reparametrised through the canonical equivalence `toRealCLE.symm : ℝ ≃L[ℝ] Time`.\n- `deriv_comp_toRealCLE_of_hasDerivAt` : Its converse, a `HasDerivAt` on `ℝ` read as the time\n  derivative of the curve pulled back to `Time` through `toRealCLE`.\n- `hasDerivAt_mk_of_differentiableAt` and `deriv_eq_of_hasDerivAt` : The same two bridges for a\n  real-valued curve `f : Time → ℝ`, stated at `t : Time` through the curve `τ ↦ f ⟨τ⟩` on `ℝ`.\n- `deriv_comp_neg` and `deriv_deriv_comp_neg` : The first and second time derivatives under the\n  reversal of time `t ↦ -t`.\n\n## iii. Table of contents\n\n- A. The definition of the derivative\n  - A.1. Derivatives of functions into vector spaces\n  - A.2. The derivative through the canonical equivalence with `ℝ`\n  - A.3. Derivatives of functions into manifolds\n  - A.4. Derivatives of functions into torsors\n- B. Linearlity properties of the derivative\n- C. Derivative of constant functions\n- D. Smoothness properties and the reversal of time\n- E. Derivatives of components\n- F. Derivatives of trajectories into `Space`\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 61,
@@ -8961,13 +9048,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Time/InnerProductSpace.lean",
    "module": "Physlib.SpaceAndTime.Time.InnerProductSpace",
    "title": "Time as an inner product space",
    "doc": "## i. Overview\n\nIn this module we equip the affine type `Time` with a real inner product space structure,\nchoosing the implicit origin represented by `Time.mk 0`. The units and orientation agree with the\nreal-valued displacements defined in `Physlib.SpaceAndTime.Time.Basic`.\n\nWe note that this is the version of time most often used in undergraduate and\nnon-mathematical physics.\n\nThe choice of units or origin can be made on a case-by-case basis, as\nlong as they are done consistently. However, since the choice of units and origin is\nleft implicit, Lean will not catch inconsistencies in the choice of units or origin when\nworking with `Time`.\n\nFor example, for the classical mechanics system corresponding to the harmonic oscillator,\none can take the origin of time to be the time at which the initial conditions are specified,\nand the units can be taken as anything as long as the units chosen for time `t` and\nthe angular frequency `ω` are consistent.\n\nWith this choice, `Time` becomes a 1d vector space over `ℝ` with an inner product.\n\n## ii. Key results\n\n- `toRealCLE` : The continuous linear equivalence from `Time` to `ℝ`.\n\n## iii. Table of contents\n\n- A. Instances on Time\n  - A.1. Natural numbers as elements of `Time`\n  - A.2. Real numbers as elements of `Time`\n  - A.3. Time is inhabited\n  - A.4. The order on `Time`\n  - A.5. Addition of times\n  - A.6. Negation of times\n  - A.7. Subtraction of times\n  - A.8. Scalar multiplication of time\n  - A.9. Module on `Time`\n  - A.10. Norm of time\n  - A.11. Inner product on `Time`\n  - A.12. Decidability of `Time`\n  - A.13. Measurability of `Time`\n- B. Basis of `Time`\n- C. Maps from `Time` to `ℝ`\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 66,
@@ -9517,13 +9606,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Time/ManifoldCurves.lean",
    "module": "Physlib.SpaceAndTime.Time.ManifoldCurves",
    "title": "Curves in normed spaces over `Time`",
    "doc": "A curve `Time → F` is smooth, or has a given derivative, iff its coordinate curve does.\n\n## i. Overview\n\nThe charts of `Time` are translations, so the coordinate curve `τ ↦ γ (τ +ᵥ t₀)` needs no origin.\n\n## ii. Key results\n\n- `Time.contMDiff_iff_contDiff_vadd`: a curve is `C^n` iff its coordinate curve is\n- `Time.mfderiv_eq_deriv_vadd`: the manifold derivative is the derivative of the coordinate curve\n- `Time.tangentMap_eq_deriv_vadd`: the tangent map of a curve in coordinates\n\n## iii. Table of contents\n\n- A. Smoothness and differentiability of curves\n- B. Derivatives of curves\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Michal Mogielnicki",
    "sections": [
     {
      "line": 44,
@@ -9593,13 +9684,15 @@
     }
    ],
    "private": 2,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Time/MatrixDerivatives.lean",
    "module": "Physlib.SpaceAndTime.Time.MatrixDerivatives",
    "title": "Time derivatives of matrix-valued functions",
    "doc": "General lemmas on the time derivative `∂ₜ` of square-matrix-valued functions of time: a product\nrule, the commutation of the derivative with transpose, and the commutation of the derivative with\ntaking a matrix entry. These are the tools needed to differentiate a path of matrices.\n\nThey rely on the (opt-in) operator-norm structure on matrices — activated here as local instances —\nonly to invoke the product rule and to view transpose (through `Matrix.transposeLinearEquiv`) as a\ncontinuous linear map. Since all norms on a fixed finite-dimensional space induce the same topology,\ndifferentiability does not depend on this choice.",
+   "copyright": "2026 Giuseppe Sorge",
    "sections": [],
    "declarations": [
     {
@@ -9636,13 +9729,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Time/TimeMan.lean",
    "module": "Physlib.SpaceAndTime.Time.TimeMan",
    "title": "The time manifold",
    "doc": "In this module we define the type `TimeMan`, corresponding to the time manifold,\nwithout any additional structures except an orientation, such as a choice of metric or origin.\nI.e. it is a manifold diffeomorphic to `ℝ` with no additional structure.\n\nIf you are looking for a more standard version of time see the type `Time`.\n\n`TimeMan` is sometimes called topological time, due to the absence of a metric, and its use in\ntopological field theories.\n\n## Implementation details\n\nThe manifold `TimeMan` is defined via the type `ℝ`, and thus inherits a given choice\nof map `TimeMan.val : TimeMan → ℝ`, which can be extended to a homeomorphism or a\ndiffeomorphism. When using `TimeMan.val`, one should be aware that using it does\nconstitute a choice being made.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 42,
@@ -9772,13 +9867,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/SpaceAndTime/Time/TimeUnit.lean",
    "module": "Physlib.SpaceAndTime.Time.TimeUnit",
    "title": "Units on time",
    "doc": "A unit of time corresponds to a choice of translationally-invariant\nmetric on the time manifold. Such a choice is (non-canonically) equivalent to a\nchoice of positive real number. We define the type `TimeUnit` to be equivalent to the\npositive reals.\n\nOn `TimeUnit` there is an instance of division giving a real number, corresponding to the\nratio of the two scales of time unit.\n\nWe define `HasTimeDimension` to be a property of a function from `TimeUnit` to a type `M`\nwhich is a function that scales with the time unit with respect to the rational power `d`.\n\nTo define specific time units, we first state the existence of a\na given time unit, and then construct all other time units from it. We choose to state the\nexistence of the time unit of seconds, and construct all other time units from that.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 53,
@@ -9968,13 +10065,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/SpaceAndTime/TimeAndSpace/Basic.lean",
    "module": "Physlib.SpaceAndTime.TimeAndSpace.Basic",
    "title": "Functions and distributions on Time and Space d",
    "doc": "## i. Overview\n\nIn this module we define `TimeAndSpace d` as the product of `Time` and `Space d`, and\nprove basic lemmas about derivatives of functions and distributions on both coordinates.\n\nThe derivative and distribution results are in the namespace `Space` by convention.\n\n## ii. Key results\n\n- `TimeAndSpace d` : Euclidean spacetime as the product of time and space.\n- `TimeAndSpace.time` : The projection from `TimeAndSpace d` to `Time`.\n- `TimeAndSpace.space` : The projection from `TimeAndSpace d` to `Space d`.\n- `distTimeDeriv` : The derivative of a distribution on `Time × Space d` along the\n  temporal coordinate.\n- `distSpaceDeriv` : The derivative of a distribution on `Time × Space d` along the\n  spatial `i` coordinate.\n- `distSpaceGrad` : The spatial gradient of a distribution on `Time × Space d`.\n- `distSpaceDiv` : The spatial divergence of a distribution on `Time × Space d`.\n- `distSpaceCurl` : The spatial curl of a distribution on `Time × Space 3`.\n\n## iii. Table of contents\n\n- A. The coordinate product and derivatives involving time and space\n  - A.1. The `TimeAndSpace` coordinate product\n  - A.2. Space and time derivatives in terms of curried functions\n  - A.3. Commuting time and space derivatives\n  - A.4. Differentiablity conditions\n  - A.5. Time derivative commute with curl\n  - A.6. Constant of time deriative and space derivatives zero\n  - A.7. Equal up to a constant of time and space derivatives equal\n- B. Derivatives of distributions on Time × Space d\n  - B.1. Time derivatives\n    - B.1.1. Composition with a CLM\n  - B.2. Space derivatives\n    - B.2.1. Space derivatives commute\n    - B.2.2. Composition with a CLM\n  - B.3. Time and space derivatives commute\n  - B.4. The spatial gradient\n  - B.5. The spatial divergence\n  - B.6. The spatial curl\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 63,
@@ -10340,13 +10439,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/SpaceAndTime/TimeAndSpace/ConstantTimeDist.lean",
    "module": "Physlib.SpaceAndTime.TimeAndSpace.ConstantTimeDist",
    "title": "Distributions which are constant in time",
    "doc": "## i. Overview\n\nin this module given a distribution on `Space d`, we define the associated distribution\non `Time × Space d` which is constant in time.\n\nThis is defined by integrating Schwartz Maps on `Time × Space d` over the time coordinate,\nto get a Schwartz Map on `Space d`.\n\n## ii. Key results\n\n- `Space.timeIntegralSchwartz` : the integral over time of a Schwartz map on `Time × Space d`\n  to give a Schwartz map on `Space d`.\n- `Space.constantTime` : the distribution on `Time × Space d` associated with a distribution\n  on `Space d`, which is constant in time.\n\n## iii. Table of contents\n\n- A. Properties of time integrals of Schwartz maps\n  - A.1. Continuity as a function of space\n  - A.2. Derivative a function of space\n  - A.3. Differentiability as a function of space\n  - A.4. Integrability of the derivative as a function of space\n  - A.5. Smoothness as a function of space\n- B. Properties of schwartz maps at a constant space point\n  - B.1. Integrability\n  - B.2. Integrability of powers times norm of iterated derivatives\n    - B.2.1. Bounds on powers times norm of iterated derivatives\n    - B.2.2. Integrability of powers times norm of iterated derivatives\n  - B.3. Integrability of iterated derivatives\n- C. Decay results for derivatives of the time integral\n  - C.1. Moving the iterated derivative inside the time integral\n  - C.2. Bound on the norm of iterated derivative\n  - C.3. Bound on the norm of iterated derivative mul a power\n- D. The time integral as a schwartz map\n- E. Constant time distributions\n  - E.1. Space derivatives of constant time distributions\n  - E.2. Space gradient of constant time distributions\n  - E.3. Space divergence of constant time distributions\n  - E.4. Space curl of constant time distributions\n  - E.5. Time derivative of constant time distributions\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 75,
@@ -10628,13 +10729,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/SpaceAndTime/TimeAndSpace/EuclideanGroup/Action.lean",
    "module": "Physlib.SpaceAndTime.TimeAndSpace.EuclideanGroup.Action",
    "title": "The action of the Euclidean group on `TimeAndSpace`",
    "doc": "## i. Overview\n\nIn this file we define the action of the Euclidean group on `TimeAndSpace d`. The action fixes\nthe time coordinate and acts on the space coordinate by the usual Euclidean-group action on\n`Space d`.\n\n## ii. Key results\n\n- `TimeAndSpace.instMulActionEuclideanGroup` : The action of the Euclidean group on\n  `TimeAndSpace d`.\n- `TimeAndSpace.dist_smul` : The Euclidean group action on `TimeAndSpace d` preserves distance.\n- `TimeAndSpace.smul_hasTemperateGrowth` : The Euclidean group action has temperate growth.\n- `TimeAndSpace.antilipschitz_smul` : The Euclidean group action is antilipschitz.\n\n## iii. Table of contents\n\n- A. The Euclidean group action\n- B. Temperate growth of the coordinate action\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Rob Sneiderman",
    "sections": [
     {
      "line": 44,
@@ -10752,13 +10855,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/SpaceAndTime/TimeAndSpace/EuclideanGroup/SchwartzAction.lean",
    "module": "Physlib.SpaceAndTime.TimeAndSpace.EuclideanGroup.SchwartzAction",
    "title": "The Euclidean group action on Schwartz maps over `TimeAndSpace`",
    "doc": "## i. Overview\n\nIn this file we define the pullback action of the Euclidean group on Schwartz maps over\n`TimeAndSpace d`. The action is\n`g • η = fun tx => η (g⁻¹ • tx)`.\n\n## ii. Key results\n\n- `TimeAndSpace.schwartzEuclideanAction` : The Euclidean group action on Schwartz maps as a\n  continuous representation (`ContRepresentation`).\n- `TimeAndSpace.instMulActionSchwartzMap` : The induced `MulAction` instance on Schwartz maps.\n- `TimeAndSpace.smul_schwartzMap_apply` : Pointwise formula for the action.\n\n## iii. Table of contents\n\n- A. The pullback action on Schwartz maps\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Rob Sneiderman",
    "sections": [
     {
      "line": 45,
@@ -10824,13 +10929,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/SpaceAndTime/WaveVectorSpace/Basic.lean",
    "module": "Physlib.SpaceAndTime.WaveVectorSpace.Basic",
    "title": "Wave Vector Space",
    "doc": "## i. Overview\n\nIn this module we define the type `WaveVectorSpace d` corresponding to the `d`-dimensional\nspace of (angular) wave vectors in `Space d`.\n\nIn contrast to `Space d`, `WaveVectorSpace d` has a distinguished zero;\nthe purpose of this file is to define this zero, the structure of a `Module`\non `WaveVectorSpace d`, and the structure of a real `InnerProductSpace` on `WaveVectorSpace d`,\nnone of which requires any non-canonical choices.\n\n`WaveVectorSpace d` is implemented as a structure with a field `val : Fin d → ℝ`\nrather than as an `abbrev` of `EuclideanSpace ℝ (Fin d)` or a `def` of a type with value\n`EuclideanSpace ℝ (Fin d)` for the same reasons as for `Space d`;\nsee `Physlib.SpaceAndTime.Space.Basic` for a discussion of the (dis)advantages of each.\n\n## ii. Key results\n\n- `WaveVectorSpace d` : the space of wave vectors in `Space d`\n- `instModuleReal` : `WaveVectorSpace d` is a module over `ℝ`\n- `instInnerProductSpaceReal` : `WaveVectorSpace d` is a real inner product space\n- `equivEuclideanSpace` : the linear isometric equivalence between `WaveVectorSpace d` and `ℝᵈ`\n\n## iii. Table of contents\n\n- A. The `WaveVectorSpace` type\n- B. Instances on `WaveVectorSpace`\n  - B.1. Coercion to functions\n  - B.2. Subsingleton for `d = 0`\n  - B.3. Zero\n  - B.4. Additive commutative group\n  - B.5. Module over `ℝ`\n  - B.6. Inner product space\n- C. Linear isometric equivalence with `ℝᵈ`\n  - C.1. Standard basis\n  - C.2. Coordinate functions\n\n## iv. References",
+   "copyright": "2026 Gregory J. Loges",
    "sections": [
     {
      "line": 57,
@@ -11216,13 +11323,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/SpaceAndTime/WaveVectorSpace/DualPairing.lean",
    "module": "Physlib.SpaceAndTime.WaveVectorSpace.DualPairing",
    "title": "Duality of `Space` and `WaveVectorSpace`",
    "doc": "## i. Overview\n\nUpon selecting an origin for the affine space `Space d`,\nthe spaces `Space d` and `WaveVectorSpace d` are dual as real vector spaces.\nThere is natural continuous bilinear map `WaveVectorSpace d × Space d → ℝ` which sends\nthe pair `(k, x)` to `∑ᵢ kⁱxᵢ`. For fixed `k` this gives rise to a functional `Space d →L[ℝ] ℝ`\nmapping `x ↦ k ⬝ᵥ x`, and similarly for fixed `x`.\n\n## ii. Key results\n\n- `Space.dual x` : the functional on `WaveVectorSpace` corresponding to `x : Space d`,\n  bundled as a continuous linear map.\n- `WaveVectorSpace.dual k` : the functional on `Space` corresponding to `k : WaveVectorSpace d`,\n  bundled as a continuous linear map.\n- `WaveVectorSpace.pairingCLM` : the dual pairing between `WaveVectorSpace` and `Space`,\n  bundled as a continuous bilinear map.\n\n## iii. Table of contents\n\n- A. Strong duals\n- B. Bilinear pairing\n\n## iv. References",
+   "copyright": "2026 Gregory J. Loges",
    "sections": [
     {
      "line": 47,
@@ -11292,7 +11401,8 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 1
   }
  ]
 }

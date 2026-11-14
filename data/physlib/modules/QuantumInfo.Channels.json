@@ -7,6 +7,7 @@
    "module": "QuantumInfo.Channels.Bundled",
    "title": "Classes of Matrix Maps",
    "doc": "The bundled `MatrixMap`s: `HPMap`, `UnitalMap`, `TPMap`, `PMap`, and `CPMap`.\nThese are defined over the bare minimum rings (`Semiring` or `RCLike`, respectively).\n\nThe combinations `PTPMap` (positive trace-preserving), `CPTPMap`, and `CPUMap`\n(CP unital maps) take ℂ as the default class.\n\nThe majority of quantum theory revolves around `CPTPMap`s, so those are explored more\nthoroughly in their file CPTP.lean.",
+   "copyright": "2025 Alex Meiburg",
    "sections": [
     {
      "line": 85,
@@ -508,13 +509,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/Channels/CPTP.lean",
    "module": "QuantumInfo.Channels.CPTP",
    "title": "Completely Positive Trace Preserving maps",
    "doc": "A `CPTPMap` is a `ℂ`-linear map between matrices (`MatrixMap` is an alias), bundled with the facts\nthat it `IsCompletelyPositive` and `IsTracePreserving`. CPTP maps are typically regarded as the\n\"most general quantum operation\", as they map density matrices (`MState`s) to density matrices. The\ntype `PTPMap`, for maps that are positive (but not necessarily completely positive) is also\ndeclared.\n\nA large portion of the theory is in terms of the Choi matrix (`MatrixMap.choi_matrix`), as the\npositive-definiteness of this matrix corresponds to being a CP map. This is\n[Choi's theorem on CP maps](https://en.wikipedia.org/wiki/Choi%27s_theorem_on_completely_positive_maps).\n\nThis file also defines several important examples of, classes of, and operations on, CPTPMaps:\n * `compose`: Composition of maps\n * `id`: The identity map\n * `replacement`: The replacement channel that always outputs the same state\n * `prod`: Tensor product of two CPTP maps, with notation M₁ ⊗ M₂\n * `piProd`: Tensor product of finitely many CPTP maps (Pi-type product)\n * `of_unitary`: The CPTP map corresponding to a unitary operation `U`\n * `IsUnitary`: Predicate whether the map corresponds to any unitary\n * `purify`: Purifying a channel into a unitary on a larger Hilbert space\n * `complementary`: The complementary channel to its purification\n * `IsEntanglementBreaking`, `IsDegradable`, `IsAntidegradable`: Entanglement breaking, degradable\n    and antidegradable channels.\n * `SWAP`, `assoc`, `assoc'`, `traceLeft`, `traceRight`: The CPTP maps corresponding to important\n    operations on states. These correspond directly to `MState.SWAP`, `MState.assoc`,\n    `MState.assoc'`, `MState.traceLeft`, and `MState.traceRight`.",
+   "copyright": "2025 Alex Meiburg",
    "sections": [],
    "declarations": [
     {
@@ -1023,13 +1026,15 @@
     }
    ],
    "private": 9,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/Channels/DegradableOrder.lean",
    "module": "QuantumInfo.Channels.DegradableOrder",
    "title": "The Degradable Order",
    "doc": "We define the \"degradable order\" on channels, where M ≤ N if N can be degraded to M. This is a\nscoped instance, because there are other reasonable orders on channels.\n\nThe degradable order is actually only a preorder, because channels that are degradable to each other\nare not necessarily equal. (For instance, unitary channels are degradable to the identity and vice\nversa.) It can compare channels of different output dimensions, but they must have the same input\ndimension. For this reason the `DegradablePreorder` is parameterized by the channel input type.\n\nOne might hope that if this was defined on the quotient type of \"channels up to unitary equivalence\"\nthat it would become an order; but this is not the case. That is, there are channels `A → B` that\nare degradable to each other, but cannot be degraded to each other by unitary operations. For\ninstance, let A be the replacement channel that goes to a mixed state, and B be a replacement\nchannel that goes to a pure state.\n\nTechnical notes: to model \"channels of different output types\", the preorder is on the Sigma type of\nchannels parameterized by their output type. And since the output type needs to be a Fintype and\nDecidableEq, the argument is also a Sigma to bring this along.",
+   "copyright": "2025 Alex Meiburg",
    "sections": [],
    "declarations": [
     {
@@ -1042,13 +1047,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/Channels/Dual.lean",
    "module": "QuantumInfo.Channels.Dual",
    "title": "Duals of matrix map",
    "doc": "Definitions and theorems about the dual of a matrix map.",
+   "copyright": "2025 Alex Meiburg",
    "sections": [],
    "declarations": [
     {
@@ -1325,13 +1332,15 @@
     }
    ],
    "private": 1,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/Channels/MatrixMap.lean",
    "module": "QuantumInfo.Channels.MatrixMap",
    "title": "Linear maps of matrices",
    "doc": "This file works with `MatrixMap`s, that is, linear maps from square matrices to square matrices.\nAlthough this is just a shorthand for `Matrix A A R →ₗ[R] Matrix B B R`, there are several\nconcepts that specifically make sense in this context.\n\n * `toMatrix` is the rectangular \"transfer matrix\", where matrix multiplication commutes with map\n   composition.\n * `choi_matrix` is the square \"Choi matrix\", see `MatrixMap.choi_PSD_iff_CP_map` for example usage\n * `kron` is the Kronecker product of matrix maps\n * `IsTracePreserving` states the trace of the output is always equal to the trace of the input.\n\nWe provide simp lemmas for relating these facts, prove basic facts e.g. composition and identity,\nand some facts about `IsTracePreserving` maps.",
+   "copyright": "2025 Alex Meiburg",
    "sections": [],
    "declarations": [
     {
@@ -1608,13 +1617,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/Channels/Pinching.lean",
    "module": "QuantumInfo.Channels.Pinching",
    "title": "Pinching channels",
    "doc": "A pinching channel decoheres in the eigenspaces of a given state.\nMore precisely, given a state ρ, the pinching channel with respect to ρ is defined as\n  E(σ) = ∑ Pᵢ σ Pᵢ\nwhere the P_i are the projectors onto the i-th eigenspaces of ρ = ∑ᵢ pᵢ Pᵢ, with i ≠ j → pᵢ ≠ pⱼ.\n\nTODO: Generalize to pinching with respect to arbitrary P(O)VM.",
+   "copyright": "2025 Leonardo A Lessa",
    "sections": [],
    "declarations": [
     {
@@ -1811,13 +1822,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/Channels/Unbundled.lean",
    "module": "QuantumInfo.Channels.Unbundled",
    "title": "Properties of Matrix Maps",
    "doc": "Building on `MatrixMap`s, this defines the properties: `IsTracePreserving`, `Unital`,\n`IsHermitianPreserving`, `IsPositive` and `IsCompletelyPositive`. They have basic facts\nsuch as closure under composition, addition, and scaling.\n\nThese are the *unbundled* versions, which just state the relevant properties of a given `MatrixMap`.\nThe bundled versions are `HPMap`, `UnitalMap`, `TPMap`, `PMap`, and `CPMap` respectively, given\nin Bundled.lean.",
+   "copyright": "2025 Alex Meiburg",
    "sections": [],
    "declarations": [
     {
@@ -2318,7 +2331,8 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   }
  ]
 }

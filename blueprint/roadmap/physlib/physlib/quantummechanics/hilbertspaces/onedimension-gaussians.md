@@ -8,7 +8,7 @@ proof: formalized
 
 # Gaussians and the hilbert space
 
-The module `Physlib.QuantumMechanics.HilbertSpaces.OneDimension.Gaussians`, [Physlib/QuantumMechanics/HilbertSpaces/OneDimension/Gaussians.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/OneDimension/Gaussians.lean): 10 declarations, 0 with a docstring.
+The module `Physlib.QuantumMechanics.HilbertSpaces.OneDimension.Gaussians`, [Physlib/QuantumMechanics/HilbertSpaces/OneDimension/Gaussians.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/OneDimension/Gaussians.lean): 10 declarations, none with a docstring.
 
 ## Gaussians
 

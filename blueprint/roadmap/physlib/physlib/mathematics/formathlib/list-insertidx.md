@@ -8,7 +8,7 @@ proof: formalized
 
 # List lemmas (InsertIdx)
 
-The module `Physlib.Mathematics.ForMathlib.List.InsertIdx`, [Physlib/Mathematics/ForMathlib/List/InsertIdx.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/ForMathlib/List/InsertIdx.lean): 14 declarations, 0 with a docstring.
+The module `Physlib.Mathematics.ForMathlib.List.InsertIdx`, [Physlib/Mathematics/ForMathlib/List/InsertIdx.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/ForMathlib/List/InsertIdx.lean): 14 declarations, none with a docstring.
 
 **`Physlib.List.insertIdx_map`**, a lemma, [line 23](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/ForMathlib/List/InsertIdx.lean#L23).
 

@@ -63,7 +63,7 @@ The module `PhyslibAlpha.Particles.StandardModel.Realization.CovStandardModel`, 
 > into a pure jet and a constant jet is `localGaugeData.eq_truncationProjZero_mul_ofConstant`.
 > The laws of the second half are consumed by the three sector structures of
 > [`IsGaugeSector/Basic.lean`](../part-06/isgaugesector-basic.md),
-> [`HiggsAlgebraCovRealization/Basic.lean`](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/StandardModel/HiggsAlgebraCovRealization/Basic.lean) and
+> `HiggsAlgebraCovRealization/Basic.lean` and
 > [`IsFermionSector/Basic.lean`](../part-05/isfermionsector-basic.md).
 
 ## A. The global gauge action

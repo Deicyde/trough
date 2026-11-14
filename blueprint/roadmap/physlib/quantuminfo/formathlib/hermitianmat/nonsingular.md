@@ -8,7 +8,7 @@ proof: formalized
 
 # QuantumInfo.ForMathlib.HermitianMat.NonSingular
 
-The module `QuantumInfo.ForMathlib.HermitianMat.NonSingular`, [QuantumInfo/ForMathlib/HermitianMat/NonSingular.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HermitianMat/NonSingular.lean): 34 declarations (1 instance with no name), 0 with a docstring.
+The module `QuantumInfo.ForMathlib.HermitianMat.NonSingular`, [QuantumInfo/ForMathlib/HermitianMat/NonSingular.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HermitianMat/NonSingular.lean): 34 declarations (1 instance with no name), none with a docstring.
 
 **`Matrix.isUnit_smul`**, a lemma, [line 19](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HermitianMat/NonSingular.lean#L19).
 

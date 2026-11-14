@@ -7,6 +7,7 @@
    "module": "QuantumInfo.ClassicalInfo.Capacity",
    "title": "",
    "doc": "",
+   "copyright": "2025 Alex Meiburg",
    "sections": [],
    "declarations": [
     {
@@ -27,13 +28,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 1
   },
   {
    "file": "QuantumInfo/ClassicalInfo/Channel.lean",
    "module": "QuantumInfo.ClassicalInfo.Channel",
    "title": "",
    "doc": "",
+   "copyright": "2025 Alex Meiburg",
    "sections": [],
    "declarations": [
     {
@@ -62,13 +65,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/ClassicalInfo/Distribution.lean",
    "module": "QuantumInfo.ClassicalInfo.Distribution",
    "title": "Distributions on finite sets",
    "doc": "We define the type `Distribution α` on a `Fintype α`. By restricting ourselves to distributoins on\nfinite types, a lot of notation and casts are greatly simplified.\nThis suffices for (most) finite-dimensional quantum theory.",
+   "copyright": "2025 Alex Meiburg",
    "sections": [],
    "declarations": [
     {
@@ -393,13 +398,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/ClassicalInfo/Entropy.lean",
    "module": "QuantumInfo.ClassicalInfo.Entropy",
    "title": "Shannon entropy",
    "doc": "Definitions and facts about the Shannon entropy function -x*ln(x), both on a single\nvariable and on a distribution.\n\nThere is significant overlap with `Real.negMulLog` and `Real.binEntropy` in Mathlib,\nand probably these files could be combined in some form.",
+   "copyright": "2025 Alex Meiburg",
    "sections": [],
    "declarations": [
     {
@@ -532,13 +539,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/ClassicalInfo/ForMathlib/Analysis/SpecialFunctions/Log/NegMulLog.lean",
    "module": "QuantumInfo.ClassicalInfo.ForMathlib.Analysis.SpecialFunctions.Log.NegMulLog",
    "title": "",
    "doc": "",
+   "copyright": "2025 Alex Meiburg",
    "sections": [],
    "declarations": [
     {
@@ -567,13 +576,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/ClassicalInfo/Prob.lean",
    "module": "QuantumInfo.ClassicalInfo.Prob",
    "title": "Probabilities",
    "doc": "This defines a type `Prob`, which is simply any real number in the interval O to 1.\nThis then comes with additional statements such as its application to convex sets, and\nit makes useful type alias for functions that only make sense on probabilities.\n\nA significant application is in the `Mixable` typeclass, also in this file, which is a\ngeneral notion of convex combination that applies to types as opposed to sets;\nelements are `Mixable.mix`ed using `Prob`s.",
+   "copyright": "2025 Alex Meiburg",
    "sections": [],
    "declarations": [
     {
@@ -1178,7 +1189,8 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   }
  ]
 }

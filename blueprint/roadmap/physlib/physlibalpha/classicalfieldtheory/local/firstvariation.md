@@ -8,7 +8,7 @@ proof: formalized
 
 # First variation and the Euler-Lagrange criterion
 
-The module `PhyslibAlpha.ClassicalFieldTheory.Local.FirstVariation`, [PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation.lean): 3 declarations, 0 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.Local.FirstVariation`, [PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation.lean): 3 declarations, none with a docstring.
 
 > Public entry point: a field is critical iff its local Euler-Lagrange operator vanishes.
 

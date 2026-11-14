@@ -15,8 +15,7 @@ The module `Physlib.ClassicalMechanics.HarmonicOscillator.Solution.Basic`, [Phys
 > To each initial condition we association a trajectory. We will prove some basic properties
 > of these trajectories.
 >
-> Eventually we will show that these trajectories satisfy the equation of motion, for
-> now we can think of them as some choice of trajectory associated with the initial conditions.
+> …
 
 ## ii. Key results
 

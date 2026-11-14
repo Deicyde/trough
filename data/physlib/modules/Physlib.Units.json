@@ -7,6 +7,7 @@
    "module": "Physlib.Units.Basic",
    "title": "Dimensions and unit",
    "doc": "A unit in physics arises from choice of something in physics which is non-canonical.\nAn example is the choice of translationally-invariant metric on the time manifold `TimeMan`.\n\nA dimension is a property of a quantity related to how it changes with respect to a\nchange in the unit.\n\nThe fundamental choices one has in physics are related to:\n- Time\n- Length\n- Mass\n- Charge\n- Temperature\n\n(In fact temperature is not really a fundamental choice, however we leave this as a `TODO`.)\n\nFrom these fundamental choices one can construct all other units and dimensions.\n\n## Implementation details\n\nUnits within Physlib are implemented with the following convention:\n- The fundamental units, and the choices they correspond to, are defined within the\n  appropriate physics directory, in particular:\n  - `Physlib/SpaceAndTime/Time/TimeUnit.lean`\n  - `Physlib/SpaceAndTime/Space/LengthUnit.lean`\n  - `Physlib/ClassicalMechanics/Mass/MassUnit.lean`\n  - `Physlib/Electromagnetism/Charge/ChargeUnit.lean`\n  - `Physlib/Thermodynamics/Temperature/TemperatureUnit.lean`\n- In this `Units` directory, we define the necessary structures and properties\n  to work derived units and dimensions.\n\n## References\n\nZulip chats discussing units:\n\n* https://leanprover.zulipchat.com/#narrow/channel/479953-Physlib/topic/physical.20units.\n* https://leanprover.zulipchat.com/#narrow/channel/116395-maths/topic/Dimensional.20Analysis.20Revisited/with/530238303.\n\n## Note\n\nA lot of the results around units is still experimental and should be adapted based on needs.\n\n## Other implementations of units\n\nThere are other implementations of units in Lean, in particular:\n1. https://github.com/ATOMSLab/LeanDimensionalAnalysis/tree/main\n2. https://github.com/teorth/analysis/blob/main/analysis/Analysis/Misc/SI.lean\n3. https://github.com/ecyrbe/lean-units\nEach of these have their own advantages and specific use-cases.\nFor example both (1) and (3) allow for or work in Floats, allowing computability and the use\nof `#eval`. This is currently not possible with the more theoretical implementation here\nin Physlib which is based exclusively on Reals.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 76,
@@ -295,7 +296,7 @@
      "sorry": false
     },
     {
-     "name": "abbrev",
+     "name": "CarriesDimension",
      "kind": "class",
      "line": 372,
      "doc": "A type `M` carries a dimension `d` if every element of `M` is supposed to have\nthis dimension. For example, the type `Time` will carry a dimension `T𝓭`.",
@@ -408,13 +409,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 2
   },
   {
    "file": "Physlib/Units/Constants.lean",
    "module": "Physlib.Units.Constants",
    "title": "Physical constants",
    "doc": "An index of the physical constants in Physlib, and the format of their files.\n\n## i. Overview\n\nEach constant has its own file, which this module imports. Use these constants instead of defining\nnew ones or writing out their values: a result in any units takes the type, such as\n`c : SpeedOfLight`, and the value in our world is `speedOfLight`. A new constant gets a file in the\nformat of section A, an import above, a row in the table below and an `example` in section B.\n\n## ii. Key results\n\n| Constant | Dimension | Value in SI units |\n|---|---|---|\n| `speedOfLight` | `L T⁻¹` | `299792458 m s⁻¹`, exact |\n| `boltzmannConstant` | `M L² T⁻² Θ⁻¹` | `1.380649 × 10⁻²³ J K⁻¹`, exact |\n\nNot yet in this format: `Constants.h`, `Constants.ℏ` and `ChargeUnit.elementaryCharge`.\n\n- `exists_units_constants_eq_one` : There are units in which the speed of light and the Boltzmann\n  constant are `1`.\n\n## iii. Table of contents\n\n- A. The format of a constant\n- B. Checked values\n- C. Planck units\n\n## iv. References\n\n* The defining constants of the SI. [ref: bipm_si_brochure_2019]\n\n## A. The format of a constant\n\nThe file of a constant with type `X` and value `x` has these sections, as in\n`Physlib/Relativity/SpeedOfLight.lean`.\n\n| Section | Contents |\n|---|---|\n| A. The type | `structure X` with fields `val : ℝ` and `pos : 0 < val` |\n| B. Instances | `X.instPositiveRealUnitCore`, `Coe X ℝ`, `X.positiveRealUnitCore_val` |\n| C. Positivity | `X.val_pos`, `X.val_nonneg`, `X.val_ne_zero` |\n| D. The dimension | `X.instHasDim` |\n| E. The value in our world | `x : Dimensionful X` and `x_in_SI` |\n| F. Specific to this constant | Optional, for example `One` or other forms of the constant |\n\nThe value `x` is `X` in lower camel case, defined by `toDimensionful SI`, and `x_in_SI` is proved by\n`toDimensionful_apply_self`. The docstring of `x` gives the number with its SI unit, followed by\n`exact` or, for a measured constant, the CODATA edition.",
+   "copyright": "2026 Jinzheng Li",
    "sections": [
     {
      "line": 69,
@@ -436,13 +439,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 1
   },
   {
    "file": "Physlib/Units/Dimension.lean",
    "module": "Physlib.Units.Dimension",
    "title": "Dimension",
    "doc": "In this module we define the type `Dimension` which carries the dimension\nof a physical quantity.\n\nA `Dimension B` is parameterised by a *basis* `B` of base dimensions equipped with a\n`DimensionBasis` representation. Each representation is additively equivalent to assigning an\n`Exponent` to every base dimension `b : B`. The parameterisation is purely in\nthe dimensional *algebra*: `Dimension B` is a `CommGroup` for every represented basis `B`\n(multiplication adds exponents, inversion negates them), so quantities can be typed by\ndimensions over any basis. The commutative-group, `Exponent`- and `ℚ`-power structures, decidable\nequality (`DecidableEq`), the base vectors `single b`, and the change-of-basis map\n`extend` are all generic in `B`.\n\nPhysLib's default basis is `LTMCTDimensionBase` — length, time, mass, charge,\ntemperature — whose projections and named generators (`L𝓭`, `T𝓭`, …) live in\n`Physlib.Units.LTMCTDimensionBase`. It is *charge*-based with five generators, so it\nis **not** the SI/ISQ base-quantity set; the ISQ set is `ISQDimensionBase`, and other\nsystems (Gaussian–CGS, natural units, …) are equally expressible as `Dimension B` for\na suitable basis `B`.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 37,
@@ -680,13 +685,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Units/Examples.lean",
    "module": "Physlib.Units.Examples",
    "title": "Examples of units in Physlib",
    "doc": "In this module we give some examples of how to use the units system in Physlib.\nThis module should not be imported into any other module, and the results here\nshould not be used in the proofs of any other results other then those in this file.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 25,
@@ -896,13 +903,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Units/Exponent.lean",
    "module": "Physlib.Units.Exponent",
    "title": "Reducible rational arithmetic for dimension exponents",
    "doc": "This module defines `Exponent`, a wrapper around the rational numbers whose arithmetic is\nreducible. This lets concrete arithmetic on dimension exponents hold by definitional equality.\n\nThe corresponding rational operations are irreducible in Lean. Locally unsealing them does not\nexport their reducibility to downstream modules, while globally changing the reducibility of an\nimported declaration requires `allowUnsafeReducibility`. The wrapper instead owns transparent\noperations while remaining equivalent to `ℚ`.\n\nThe reducibility guarantee applies to the custom addition, subtraction, multiplication, inversion,\nand division below. Other operations supplied by the `Field` instance are transferred from `ℚ`.\nIn particular, rational scalar multiplication and negative integer powers may require propositional\nreasoning rather than `rfl`.",
+   "copyright": "2026 Raunak Chhatwal",
    "sections": [
     {
      "line": 35,
@@ -1348,13 +1357,15 @@
     }
    ],
    "private": 1,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Units/FDeriv.lean",
    "module": "Physlib.Units.FDeriv",
    "title": "Dimensional invariance of fderiv",
    "doc": "In this module we prove that the derivative is dimensionally correct.\nThat is to say for a function `f : M1 → M2` where `M1` carries dimensions `d1` and `M2` carries\ndimension `d2` such that `f` has the correct dimension, then\n`fderiv ℝ f : M1 → M1 →L[ℝ] M2` has the correct dimensions.\n\nTo give an explicit example let us say `M1` has dimension `L𝓭` and `M2` has dimension\n`L𝓭 * L𝓭` and `f : M1 → M2 : x ↦ x ^ 2`, this is dimensionally correct.\nThe `fderiv` of this `fderiv ℝ f : M1 → M1 →L[ℝ] M2` takes\n`x dx ↦ dx • (2 * x)` which is still dimensionally correct. Here `dx` is the direction\nin which the derivative is taken.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -1383,13 +1394,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Units/Integral.lean",
    "module": "Physlib.Units.Integral",
    "title": "Dimensional invariance of the integral",
    "doc": "In this module we prove that the dimensional properties of the integral.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -1418,13 +1431,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Units/ISQBridge.lean",
    "module": "Physlib.Units.ISQBridge",
    "title": "Bridging PhysLib's default basis and the ISQ basis",
    "doc": "`LTMCTDimensionBase` (length, time, mass, charge, temperature) and `ISQDimensionBase`\n(the seven ISO/IEC 80000-1 base quantities) make different base/derived choices. This\nmodule relates them by the two truth-preserving directions of `Dimension.Embedding`\nand `Dimension.Projection`:\n\n* `ltmctToISQ : Dimension.Embedding LTMCTDimensionBase ISQDimensionBase` — the\n  dimension-preserving **inclusion** of PhysLib dimensions into ISQ dimensions. It\n  sends the charge generator to the *derived* ISQ charge `I · T` (`toISQHom_C𝓭`), so it\n  is faithful (`toISQHom_injective`) and physically correct, not a bare relabelling.\n* `isqToLTMCT : Dimension.Projection ISQDimensionBase LTMCTDimensionBase` — the\n  truth-preserving **reduction** of ISQ dimensions onto PhysLib's. It reads electric\n  current as charge/time and forgets amount of substance and luminous intensity (the\n  base quantities PhysLib does not track).\n\nThe two fit together as a retraction, `isqToLTMCT ∘ ltmctToISQ = id`\n(`isqToLTMCT_comp_ltmctToISQ`): PhysLib's basis embeds faithfully into ISQ and is\nrecovered exactly by the projection — but the reverse composite is *not* the identity,\nbecause amount of substance and luminous intensity cannot be recovered once dropped.\nThat is the asymmetry: one can reduce ISQ to LTMCT, but not conjure the extra base\nquantities back without *adding* them.",
+   "copyright": "2026 Nicolas Rouquette",
    "sections": [],
    "declarations": [
     {
@@ -1533,13 +1548,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Units/ISQDimensionBase.lean",
    "module": "Physlib.Units.ISQDimensionBase",
    "title": "The ISQ base quantities",
    "doc": "The International System of Quantities (ISQ), specified in ISO/IEC 80000-1 and\ndescribed in the International Vocabulary of Metrology (VIM, 3rd edition,\nJCGM 200:2012), fixes seven mutually independent *base quantities*: length, mass,\ntime, electric current, thermodynamic temperature, amount of substance, and\nluminous intensity.\n\n`ISQDimensionBase` is that seven-element basis, realised as an instantiation\n`Dimension ISQDimensionBase` of the parametric dimensional algebra. It differs from\nPhysLib's default `LTMCTDimensionBase` in two ways:\n\n* the electromagnetic base quantity is *electric current*, so electric charge is a\n  *derived* dimension (`Q = I · T`, `ISQDimensionBase.charge`); and\n* *amount of substance* and *luminous intensity* are additional independent base\n  quantities.\n\n## References\n\n* ISO/IEC 80000-1:2009, Quantities and units — Part 1: General. [ref: iso_80000_1_2009]\n* JCGM 200:2012, International vocabulary of metrology — Basic and general concepts and associated\n  terms (VIM, 3rd edition). [ref: jcgm_200_2012]",
+   "copyright": "2026 Nicolas Rouquette",
    "sections": [],
    "declarations": [
     {
@@ -1624,13 +1641,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Units/LTMCTDimensionBase.lean",
    "module": "Physlib.Units.LTMCTDimensionBase",
    "title": "PhysLib's default dimension basis",
    "doc": "`LTMCTDimensionBase` is PhysLib's default basis of base dimensions — length, time,\nmass, charge and temperature. `Dimension LTMCTDimensionBase` is the familiar\nfive-exponent dimension, and this module provides the concrete API on top of the\ngeneric `Dimension B`:\n\n* the `.length`, `.time`, `.mass`, `.charge`, `.temperature` exponent projections;\n* the `ofLTMCTDimensionBase` constructor from five exponents; and\n* the named generators `L𝓭`, `T𝓭`, `M𝓭`, `C𝓭`, `Θ𝓭`, shown to be the generic\n  `single` base vectors.\n\nThis basis is *charge*-based with five generators, so it is deliberately **not** the\nSI/ISQ base-quantity set (which takes electric current as base and adds amount of\nsubstance and luminous intensity); see `ISQDimensionBase`.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 72,
@@ -2292,13 +2311,15 @@
     }
    ],
    "private": 1,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Units/ParametricDimensionExamples.lean",
    "module": "Physlib.Units.ParametricDimensionExamples",
    "title": "Examples: parametric dimensions and comparing dimensioned quantities",
    "doc": "`Dimension B` is parameterised by a basis `B` of base dimensions. This module\nillustrates two consequences.\n\n## Comparing a length with a velocity times a time\n\nA recurring question is how to compare a quantity of dimension `length` with a\nproduct of a quantity of dimension `length / time` and a quantity of dimension\n`time`. In the fixed-tuple representation of `LTMCTDimensionBase`, reducible exponent\narithmetic makes this concrete cancellation a definitional equality:\n\n* `(L𝓭 / T𝓭) * T𝓭 = L𝓭` is closed by `rfl`.\n* `WithDim ((L𝓭 / T𝓭) * T𝓭) ℝ` and `WithDim L𝓭 ℝ` are therefore definitionally\n  equal types.\n\nConsequently a bare `x = v * t` is well-typed for these concrete dimensions. For a\nrepresentation where the same cancellation holds only propositionally, `WithDim.cast`\nbridges the two dimension-indexed types.\n\n## A non-standard basis\n\nBecause `Dimension` is parametric, the same dimensional algebra and `cast`-based\ncomparison are available over any represented basis, not just the physical\n`LTMCTDimensionBase`. The unit-scaling layer (`LTMCTUnitChoices`, `dimScale`) is not\nneeded for either the algebra or the comparison, so neither is referenced here.\n\nThis module is illustrative and should not be imported by other modules.",
+   "copyright": "2026 Nicolas Rouquette",
    "sections": [
     {
      "line": 75,
@@ -2340,13 +2361,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Units/ParametricUnits.lean",
    "module": "Physlib.Units.ParametricUnits",
    "title": "The unit side, parametrised in the same basis",
    "doc": "The dimension basis is parametric (`Dimension B`), but the *unit* side of the\nbridge is hardwired in parallel: `LTMCTUnitChoices` has five named unit fields and\n`LTMCTUnitChoices.dimScale` folds over exactly those five. This module provides the\ngeneric twin, parametrised in the same basis `B`.\n\nEvery PhysLib base unit (`LengthUnit`, `TimeUnit`, …) is, structurally, a positive\nreal (`{ val : ℝ // 0 < val }`); the typed names carry no extra algebraic content.\nSo a unit choice over a basis `B` is a positive real per base dimension, and the\nscaling homomorphism folds the per-base unit ratio over `B`:\n\n* `UnitScale B` — a positive-real magnitude for each `b : B`.\n* `UnitScale.dimScale : UnitScale B → UnitScale B → Dimension B →* ℝ≥0` — the\n  `MonoidHom` `d ↦ ∏ b, (u₁ b / u₂ b) ^ d.exponent b`, generic in `B`.\n\nThe current five-field `LTMCTUnitChoices.dimScale` is the `LTMCTDimensionBase` instance of this\nfold, written out by hand; `LTMCTUnitChoices.toScale` exhibits the correspondence.",
+   "copyright": "2026 Nicolas Rouquette",
    "sections": [
     {
      "line": 90,
@@ -2412,13 +2435,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Units/PositiveRealUnit.lean",
    "module": "Physlib.Units.PositiveRealUnit",
    "title": "A. Shared arithmetic for positive-real unit types",
    "doc": "`PositiveRealUnitCore` records a unit magnitude and its inverse construction.\nEach concrete unit declares this instance explicitly and keeps its own structure.\nThe inhabited and same-type division instances, rescaling operation, and arithmetic\nlaws are provided generically. No command or type-specific lemma wrappers are needed.\n\nThe arithmetic is adapted from the existing unit modules by Joseph Tooby-Smith.\nThis interface describes an individual unit type, independently of the selection\nand combination of units by `UnitMagnitudeCatalog` and `UnitSystem`.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 28,
@@ -2636,13 +2661,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Units/SIUnitChoices.lean",
    "module": "Physlib.Units.SIUnitChoices",
    "title": "A typed unit choice over the ISQ base quantities (the SI units)",
    "doc": "`LTMCTUnitChoices` is the typed unit choice over PhysLib's default dimension basis\n`LTMCTDimensionBase`. This module gives the *second* typed unit choice — over the\nseven ISQ base quantities `ISQDimensionBase` — realised through the basis-generic\n`UnitMagnitudeCatalog` / `UnitSystem` machinery of `Physlib.Units.UnitSystem`. It is the concrete\npayoff of parametrising the unit side: the same generic layer produces a fully *typed*\nunit choice over a different basis, and the scaling homomorphism comes for free from\n`UnitScale.dimScale` — nothing is re-proved by hand.\n\nThe ISQ base quantities are length, mass, time, electric current, thermodynamic\ntemperature, amount of substance and luminous intensity. Four of the corresponding typed\nunit types already exist (`LengthUnit`, `MassUnit`, `TimeUnit`, `TemperatureUnit`); the\nremaining three — `CurrentUnit`, `AmountUnit`, `LuminousIntensityUnit` — are introduced\nhere. They follow the `LengthUnit` convention of a positive-real magnitude and support\nrescaling and unit-ratio laws through `PositiveRealUnitCore`. Following PhysLib's\nlayout, these types may ultimately live under the relevant physics directories.\n\n`SIUnitChoices := UnitSystem ISQDimensionBase` is then the typed SI unit choice, and\n`SIUnitChoices.SI` is the coherent SI choice (metre, kilogram, second, ampere, kelvin,\nmole, candela). Contrast `SIUnitChoices` (current-based, seven typed slots) with\n`LTMCTUnitChoices` (charge-based, five typed slots): the machinery supports both, and the\n`Dimension.ltmctToISQ` / `Dimension.isqToLTMCT` bridge relates their bases.",
+   "copyright": "2026 Nicolas Rouquette",
    "sections": [
     {
      "line": 43,
@@ -2792,13 +2819,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Units/UnitDependent.lean",
    "module": "Physlib.Units.UnitDependent",
    "title": "",
    "doc": "## Types which depend on dimensions\n\nIn addition to types which carry a dimension, we also have types whose elements\ndepend on a choice of a units. For example a function\n`f : M1 → M2` between two types `M1` and `M2` which carry dimensions does not itself\ncarry a dimensions, but is dependent on a choice of units.\n\nWe define three versions\n- `UnitDependent M` having a function `scaleUnit : LTMCTUnitChoices → LTMCTUnitChoices → M → M`\n  subject to two conditions `scaleUnit_trans` and `scaleUnit_id`\n- `LinearUnitDependent M` extends `UnitDependent M` with additional linearity conditions\n  on `scaleUnit`.\n- `ContinuousLinearUnitDependent M` extends `LinearUnitDependent M` with an additional\n  continuity condition on `scaleUnit`.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 78,
@@ -3208,13 +3237,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Units/UnitSystem.lean",
    "module": "Physlib.Units.UnitSystem",
    "title": "Unit systems, parametrised in a dimension basis",
    "doc": "A **unit system** is the everyday physics object: a rule fixing one concrete unit for\neach base quantity. SI fixes the metre for length, the second for time, the kilogram for\nmass, …; CGS fixes the centimetre, second and gram. Choosing a system gives every quantity\na numerical value; changing systems rescales those values.\n\nThis module makes that notion work for *any* dimension basis `B` (matching the\nbasis-generic `Dimension B`), while keeping units *typed*: the unit in the length slot has\ntype `LengthUnit`, the one in the time slot `TimeUnit`, so the checker rejects a mass unit\nin a length slot.\n\n* `UnitMagnitudeCatalog B` — the **menu** for basis `B`. For each base dimension `b : B` it\n  gives a *type* `Unit b` of admissible units — so a dimension may offer many (length: metre,\n  kilometre, micrometre, …) — and a *function* `mag` assigning each unit its one positive-real\n  magnitude. The menu lists the options and picks none; many unit systems share one catalog.\n* `UnitSystem B` — the **pick**: a function choosing *exactly one* unit per base dimension. A\n  single unit system therefore fixes one length unit — metre *or* kilometre, never both — so\n  metre and kilometre are two menu entries selected by two different `UnitSystem`s over the\n  same catalog. SI and CGS are two such picks.\n* `UnitSystem.toScale : UnitSystem B → UnitScale B` — forget the unit *types*, keep only\n  the magnitudes, landing in the bare magnitude layer `UnitScale B` where the scaling\n  homomorphism `UnitScale.dimScale` is proved once.\n\n**Menu vs. pick.** The catalog is a menu, not a choice: it says which units exist and what\neach weighs, but selects none — a `UnitSystem` makes the selection. And in PhysLib a base\nunit *is* a positive real (`{ val : ℝ // 0 < val }`), i.e. its own magnitude, so the\nmagnitude comes fixed with the unit; there is no separate \"assign a magnitude\" step. Hence\nmetre, micrometre and kilometre are three *different* units on the one length menu, and\n\"SI in metres\" versus \"the same in micrometres\" are two different `UnitSystem`s over the\n**same** catalog — related by `UnitScale.dimScale`, which computes the 10⁶ factor between\nthem. (The multiplicity one might expect from \"many magnitudes\" lives here, among the unit\nsystems, not in many catalogs.)\n\nThe `LTMCTDimensionBase` catalog recovers PhysLib's five named unit types, and\n`LTMCTUnitChoices ≃ UnitSystem LTMCTDimensionBase` exhibits the bespoke five-field record\nas that instance. Scaling laws are **not** re-proved here — they live once on `UnitScale B`,\nand the typed layer is a thin faithful wrapper projecting onto it via `toScale`.\n\nThis is the typed, basis-generic layer discussed as \"Option D\" in the review of the\ndimension-parametrisation PR; it is the only design that keeps *both* basis-genericity and\ntyped-unit safety.",
+   "copyright": "2026 Nicolas Rouquette",
    "sections": [
     {
      "line": 101,
@@ -3312,13 +3343,15 @@
     }
    ],
    "private": 5,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Units/WithDim/Analysis.lean",
    "module": "Physlib.Units.WithDim.Analysis",
    "title": "A. Analysis of dimension-tagged quantities",
    "doc": "The numerical value of `WithDim d M` identifies it with `M`. We use that explicit\nidentification to induce a norm on the existing additive group, not to replace\nits addition, natural/integer scalar multiplication, or the existing `NNReal` action.\n\nThe norm measures a numerical representation in fixed units. It is not asserted to\nbe invariant under a change of units. The coordinate equivalence is explicit: no\ncoercion silently discards a dimension tag. No `Ring` or `Field` on a nontrivial\nphysical dimension is introduced.\n\n`transport` and `transportLinearMap` lift a function and its derivative between tagged\ncoordinates. They do not assert that the function is dimensionally correct. In particular,\nchanging the units of model parameters is a separate question. `hasFDerivAt_transport`\nuses the existing calculus of continuous linear equivalences.",
+   "copyright": "2026 Hirotaka Monya",
    "sections": [
     {
      "line": 38,
@@ -3436,13 +3469,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Units/WithDim/Area.lean",
    "module": "Physlib.Units.WithDim.Area",
    "title": "Area",
    "doc": "In this module we define the dimensionful type corresponding to an area.\nWe define specific instances of areas, such as square meters, square feet, etc.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 30,
@@ -3572,13 +3607,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Units/WithDim/Basic.lean",
    "module": "Physlib.Units.WithDim.Basic",
    "title": "",
    "doc": "## WithDim\n\nWithDim is the type `M` which carrying the dimension `d`.\n\nThe dimension `d : Dimension B` may be taken over any basis `B` of base dimensions.\nThe *algebraic* structure of `WithDim d M` (its additive, order, scalar-action,\nmultiplication, division and casting instances) is available for every basis `B`.\nThe *unit-scaling* structure (`HasDim`, `DMul`, and the `scaleUnit` lemmas), which\nroutes through `LTMCTUnitChoices.dimScale`, is provided for the standard basis\n`LTMCTDimensionBase`.\n\nReal scalar multiplication acts on numerical values. Import\n`Physlib.Units.WithDim.Analysis` for the normed-space structures and explicit\ncoordinate equivalences used to reuse existing analytic results.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 54,
@@ -3996,13 +4033,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 1
   },
   {
    "file": "Physlib/Units/WithDim/Energy.lean",
    "module": "Physlib.Units.WithDim.Energy",
    "title": "Energy",
    "doc": "In this module we define the dimensionful type corresponding to an energy.\nWe define specific instances of energy.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -4047,23 +4086,27 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Units/WithDim/Mass.lean",
    "module": "Physlib.Units.WithDim.Mass",
    "title": "Mass",
    "doc": "In this module we define the type `Mass`, which represents the mass of a particle,\nin an arbitrary (but given) set of units.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Units/WithDim/Momentum.lean",
    "module": "Physlib.Units.WithDim.Momentum",
    "title": "Momentum",
    "doc": "In this module we define the type `Momentum`, which represents the momentum of a particle\nin `d`-dimensional space, in an arbitrary (but given) set of units.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -4076,13 +4119,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Units/WithDim/Pressure.lean",
    "module": "Physlib.Units.WithDim.Pressure",
    "title": "Pressure",
    "doc": "In this module we define the dimensionful type corresponding to an pressure.\nWe define specific instances of pressure.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -4143,13 +4188,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Units/WithDim/Speed.lean",
    "module": "Physlib.Units.WithDim.Speed",
    "title": "Speed",
    "doc": "In this module we define the dimensionful type corresponding to an speed.\nWe define specific instances of speed, such as miles per hour, kilometers per hour, etc.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 30,
@@ -4263,17 +4310,20 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Units/WithDim/Velocity.lean",
    "module": "Physlib.Units.WithDim.Velocity",
    "title": "Velocity",
    "doc": "In this module we define the type `Velocity`, which represents the velocity of a particle\nin `d`-dimensional space, in an arbitrary (but given) set of units.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   }
  ]
 }

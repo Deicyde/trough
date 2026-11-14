@@ -7,26 +7,31 @@
    "module": "Physlib.CondensedMatter.BandTheory.Basic",
    "title": "A. Band theory",
    "doc": "This module provides a home for the theory of Bloch Hamiltonians and states, band projectors,\nenergy bands and gaps, and band geometry. Generic quantum-mechanical infrastructure should be\nreused from Physlib rather than redefined here.",
+   "copyright": "2026 Wahaj Ayub",
    "sections": [],
    "declarations": [],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/CondensedMatter/Basic.lean",
    "module": "Physlib.CondensedMatter.Basic",
    "title": "A. Condensed matter",
    "doc": "Condensed matter physics studies the collective behavior of matter, from crystalline structure\nand lattice models to interacting phases, topology, and material response.\n\n## A.1. Scope\n\n- `Crystal` covers crystal structures, reciprocal-space descriptions, symmetries, and dynamics.\n- `LatticeModels` covers Hamiltonian models whose degrees of freedom live on lattices.\n- `BandTheory` covers Bloch descriptions, energy bands, gaps, and band geometry.\n- `ManyBody` covers correlations, quasiparticles, Green functions, and interacting matter.\n- `Topology` covers topological phases and invariants in condensed matter systems.\n- `Response` covers transport and the linear, optical, and nonlinear response of materials.\n\n## A.2. Existing modules\n\nExisting condensed-matter modules currently include `TightBindingChain` and `Thermoelectric`.\nThey remain in their existing locations and have not been reorganized into the scopes above.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/CondensedMatter/Crystal/Basic.lean",
    "module": "Physlib.CondensedMatter.Crystal.Basic",
    "title": "Crystals, cells and sites",
    "doc": "A crystal is a finite unit cell repeated periodically.\n\n## i. Overview\n\nThe goal is to construct crystals such as the square, hexagonal, fcc, bcc and hcp lattices. The\nstandard starting point is a unit cell repeated by translations; see the reference below. We\nstart combinatorially, with a unit cell that repeats many times over. This periodicity is modeled\nby a finitely generated abelian group `G`, written additively, with `ℤᵈ` as the prototypical\nexample. Each unit cell consists of finitely many things, such as atoms, spins or orbitals, which\nare labeled by a type `F`. Repeating the cell gives one site `⟨n, i⟩` for every cell `n : G` and\nlabel `i : F`. Translation acts only on the cell:\n\n`a +ᵥ ⟨n, i⟩ = ⟨a + n, i⟩`.\n\nA crystal with one site per cell has a single label, while the honeycomb and hcp lattices have two.\nA species assignment gives each label a species, for example a chemical element.\n\nFor `ℤᵈ` the sites form an infinite array, and for `(ℤ/mℤ)ᵈ` a finite array with periodic\nboundary conditions. Coordinates in space, and with them distances and angles, are not part of this\ndescription and is added in other files.\n\n## ii. Key results\n\n- `Crystal` : a finitely generated abelian translation group with a finite, nonempty unit cell.\n- `Crystal.ofUnitCell` : the crystal obtained by repeating a labeled unit cell.\n- `Crystal.Site` : a site given by its cell and unit-cell label.\n- `Crystal.Site.ref` : the site with a given label in the reference cell.\n- `Crystal.Species` : a species assignment, one species for each unit-cell label.\n- `Crystal.Site.mem_orbit_iff_label_eq` : the translates of a site are exactly the sites with the\n  same label.\n\n## iii. Table of contents\n\n- A. The unit cell\n- B. Constructing a crystal from a unit cell\n- C. Sites and their finiteness\n- D. Translation symmetry\n- E. Species\n\n## iv. References\n\n* F. Göhmann, *Introduction to Solid State Physics*, lecture L3, Section 3.1, for the standard\n  description of a crystal as translated copies of a unit cell. [ref: goehmann_solid_state_2021]",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 64,
@@ -196,13 +201,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/CondensedMatter/Crystal/Bonds.lean",
    "module": "Physlib.CondensedMatter.Crystal.Bonds",
    "title": "Bonds in a crystal",
    "doc": "A bond connects sites in two unit cells of a crystal.\n\n## i. Overview\n\nA bond `⟨i, j, d⟩` joins the site with label `i` in cell `n` to the site with label `j`\nin cell `n + d`. Translating both endpoints gives another copy of the same bond.\n\n## ii. Key results\n\n- `Bond` : a source label, a target label and the displacement between their cells.\n- `Bond.Links` : the relation between sites connected by a bond.\n\n## iii. Table of contents\n\n- A. Bonds in a unit cell\n\n## iv. References\n\n* F. Göhmann, *Introduction to Solid State Physics*, lecture L3, Section 3.1, for the standard\n  description of a crystal. [ref: goehmann_solid_state_2021]",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 42,
@@ -268,13 +275,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/CondensedMatter/Crystal/Bravais/Basic.lean",
    "module": "Physlib.CondensedMatter.Crystal.Bravais.Basic",
    "title": "Bravais lattices",
    "doc": "A Bravais lattice with one site per cell, repeated by `d` independent translations, and its\nembedding given by `d` primitive vectors.\n\n## i. Overview\n\nA Bravais lattice of dimension `d` is the crystal with translation group `ℤᵈ` and a unit cell with\na single site. Its embedding in a normed space `E` is fixed by the `d` primitive vectors, one for\neach generator of `ℤᵈ`: the cell `n` goes to the integer combination of these vectors with\ncoefficients `n j`, and the single site sits at the origin of its cell. The different lattice types\ndiffer only in these vectors, so the general facts are proved here once.\n\n## ii. Key results\n\n- `Crystal.bravais` : the crystal with translation group `ℤᵈ` and one site per cell.\n- `Crystal.Embedding.ofVectors` : the embedding of `Crystal.bravais d` given by `d` primitive\n  vectors.\n- `Crystal.Embedding.position_ofVectors` : the position of a site is the integer combination of\n  the primitive vectors given by its cell.\n- `Crystal.Embedding.isSpaceFilling_ofVectors_iff` : the embedding is space filling exactly when the\n  primitive vectors span the space.\n- `Crystal.Embedding.position_ofVectors_injective` : linearly independent primitive vectors give\n  distinct positions to distinct sites.\n- `Crystal.Embedding.finrank_eq_of_ofVectors` : a space-filling embedding with linearly\n  independent primitive vectors lives in a space of dimension `d`.\n\n## iii. Table of contents\n\n- A. The crystal\n- B. The embedding\n- C. Spanning and independence\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Eduardo Nava-Hernandez",
    "sections": [
     {
      "line": 54,
@@ -340,13 +349,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/CondensedMatter/Crystal/Embedding.lean",
    "module": "Physlib.CondensedMatter.Crystal.Embedding",
    "title": "A crystal in space",
    "doc": "Embedding of a crystal into a space.\n\n## i. Overview\n\nGiven a normed additive commutative group `E`, an embedding sends each translation of the crystal to\na vector in `E` and each site of the reference cell to a point in `E`. The site `(n, i)` is then\nplaced at the vector of `n` plus the point of `i`. The embedding is space filling if the vectors of\nthe translations span `E`.\n\n## ii. Key results\n\n- `Crystal.Embedding` : the vectors `ρ` of the translations and the positions `p` of the\n  sites of the reference cell, in a normed group.\n- `Crystal.Embedding.positionHom` : the positions commute with the translations, as an equivariant\n  map of the sites.\n- `Crystal.Embedding.position_vadd` : translating a site translates its position.\n- `Crystal.Embedding.dist_position_vadd` : translating two sites does not change the\n  distance between their positions.\n- `Crystal.Embedding.IsSpaceFilling` : the vectors of the translations span the space.\n- `Crystal.Embedding.isSpaceFilling_iff` : space filling can be checked on a generating set.\n- `Crystal.Embedding.IsSpaceFilling.finiteDimensional` : a space-filling embedding lies in a\n  finite-dimensional space.\n- `Crystal.Embedding.IsSpaceFilling.finrank_eq_rank` : the dimension of the space equals the rank\n  of the translation group when the vectors of a basis of the group are linearly independent.\n\n## iii. Table of contents\n\n- A. Vectors and positions\n- B. Filling the space\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 59,
@@ -440,13 +451,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/CondensedMatter/Crystal/PeriodicGraph.lean",
    "module": "Physlib.CondensedMatter.Crystal.PeriodicGraph",
    "title": "Periodic graphs of crystals",
    "doc": "A finite set of bonds, repeated in every unit cell, gives the connections of a crystal.\n\n## i. Overview\n\nA crystal is a set of sites with a translation action. Connections between sites, such as the\nnearest-neighbor links of a square lattice, give it a graph. Since the crystal is periodic, so is\nits graph: translating both ends of a connection preserves adjacency,\n\n`Adj (a +ᵥ x) (a +ᵥ y) ↔ Adj x y`.\n\nIt is enough to list the connections once. A finite set of bonds gives a periodic graph, and\nconversely every periodic graph in which each site has finitely many neighbors comes from finitely\nmany bonds.\n\n## ii. Key results\n\n- `PeriodicGraph` : a graph on the sites that is invariant under translation and has finitely\n  many neighbors at each site.\n- `PeriodicGraph.ofBonds` : the periodic graph generated by a finite set of bonds.\n- `PeriodicGraph.eq_ofBonds` : every periodic graph is generated by finitely many bonds.\n- `PeriodicGraph.degree_vadd` : every copy of a site has the same number of neighbors.\n- `PeriodicGraph.graphAutomorphisms` : the adjacency-preserving permutations of the sites.\n\n## iii. Table of contents\n\n- A. Translation-invariant connectivity\n- B. Building the graph from bonds\n- C. Adjacency depends on cell differences\n- D. The periodic graph of a finite set of bonds\n- E. Every periodic graph comes from bonds\n- F. Graph automorphisms\n\n## iv. References\n\n* F. Göhmann, *Introduction to Solid State Physics*, lecture L3, Section 3.1, for the standard\n  description of a crystal. [ref: goehmann_solid_state_2021]",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 59,
@@ -652,43 +665,51 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/CondensedMatter/LatticeModels/Basic.lean",
    "module": "Physlib.CondensedMatter.LatticeModels.Basic",
    "title": "A. Lattice models",
    "doc": "This module provides a home for hopping Hamiltonians, tight-binding and Hubbard-type models,\nand spin lattice models. A future design issue is the relation between real-space lattice\nHamiltonians and momentum-space Bloch Hamiltonians.",
+   "copyright": "2026 Wahaj Ayub",
    "sections": [],
    "declarations": [],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/CondensedMatter/ManyBody/Basic.lean",
    "module": "Physlib.CondensedMatter.ManyBody.Basic",
    "title": "A. Many-body physics",
    "doc": "This module provides a home for correlation functions, quasiparticles, Green functions,\nmean-field descriptions, and interacting quantum matter.",
+   "copyright": "2026 Wahaj Ayub",
    "sections": [],
    "declarations": [],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/CondensedMatter/Response/Basic.lean",
    "module": "Physlib.CondensedMatter.Response.Basic",
    "title": "A. Response",
    "doc": "This module provides a home for electrical and thermal transport, linear and thermoelectric\nresponse, optical response, and nonlinear response.",
+   "copyright": "2026 Wahaj Ayub",
    "sections": [],
    "declarations": [],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/CondensedMatter/Thermoelectric/Basic.lean",
    "module": "Physlib.CondensedMatter.Thermoelectric.Basic",
    "title": "Thermoelectric figure of merit",
    "doc": "## i. Overview\n\nA thermoelectric material converts a temperature difference into electrical\npower. In the linear-response (Onsager) regime, the coupled transport of\ncharge and heat in an isotropic material is governed by the constitutive\nrelations\n\n  J = σ (E − S ∇T),        q = T S J − κ ∇T,\n\nso a thermoelectric material is characterized by exactly four transport\ncoefficients: the Seebeck coefficient `S`, the electrical conductivity `σ`,\nand the thermal conductivity `κ = κl + κe`, split into its lattice (phonon)\nand electronic contributions because the two channels respond independently\nto material design. These four coefficients are collected in the structure\n`ThermoelectricMaterial`, and everything in this file is stated on it.\n\nThe performance of the material at absolute temperature `T` is captured by\nthe dimensionless figure of merit\n\n  zT = σ S² T / (κl + κe),\n\nwhose numerator groups into the power factor `PF = σ S²`. Temperature is a\nstate variable, not a material property, so `T` enters as an argument rather\nthan a field. The four coefficients of a real material are themselves\ntemperature-dependent, so a `ThermoelectricMaterial` should be read as a\nmaterial at an operating point, its coefficients evaluated at the same\ntemperature at which `zT` is evaluated.\n\nIn this file all quantities are real numbers in a fixed consistent system of\nunits, following the convention of `Physlib.Thermodynamics.IdealGas.Basic`.\n\n## ii. Key results\n\n- `ThermoelectricMaterial`: the four linear-response transport coefficients\n  of a thermoelectric material, with their physical sign constraints.\n- `powerFactor`: the thermoelectric power factor `σ S²`.\n- `totalThermalConductivity`: the total thermal conductivity `κl + κe`.\n- `figureOfMerit`: the dimensionless figure of merit `zT`.\n- `figureOfMerit_eq`: the flat form `zT = σ S² T / (κl + κe)`.\n- `figureOfMerit_pos`: positivity of `zT` for a material with a nonzero\n  Seebeck coefficient at positive temperature.\n- `figureOfMerit_le_of_le`: lowering the lattice thermal conductivity raises\n  `zT`, the phonon-glass electron-crystal design principle.\n\n## iii. Table of contents\n\n- A. The thermoelectric material\n- B. The power factor\n- C. The total thermal conductivity\n- D. The figure of merit\n  - D.1. Equalities for the figure of merit\n  - D.2. Positivity of the figure of merit\n  - D.3. Monotonicity in the lattice thermal conductivity\n\n## iv. References\n\n* Ioffe, A.F., Semiconductor Thermoelements and Thermoelectric Cooling, Infosearch (1957).\n  [ref: ioffe_1957]\n* Snyder, G.J., Toberer, E.S., Complex thermoelectric materials, Nature Materials 7, 105–114\n  (2008). [ref: snyder_toberer_2008]",
+   "copyright": "2026 Giuseppe Barbalinardo",
    "sections": [
     {
      "line": 83,
@@ -794,13 +815,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/CondensedMatter/TightBindingChain/Basic.lean",
    "module": "Physlib.CondensedMatter.TightBindingChain.Basic",
    "title": "The tight binding chain",
    "doc": "## i. Overview\n\nThe tight binding chain corresponds to an electron in motion\nin a 1d solid with the assumption the electron can sit only on the atoms of the solid.\n\nThe solid is assumed to consist of `N` sites with a separation of `a` between them\n\nMathematically, the tight binding chain corresponds to a\nQM problem located on a lattice with only self and nearest neighbour interactions,\nwith periodic boundary conditions.\n\n## ii. Key results\n\n- `TightBindingChain` : The physical parameters making up the tight binding chain.\n- `localizedState` : The orthonormal basis of localized states.\n- `hamiltonian` : The Hamiltonian of the tight binding chain.\n- `BrillouinZone` : The Brillouin zone of the tight binding chain.\n- `QuantaWaveNumber` : The quantized wavenumbers of the energy eigenstates.\n- `energyEigenstate` : The energy eigenstates of the tight binding chain.\n- `energyEigenbasis` : The orthonormal basis of normalized energy eigenstates.\n- `energyEigenvalue` : The energy eigenvalues of the tight binding chain.\n- `hamiltonian_energyEigenstate` : The Hamiltonian acting on an energy eigenstate\n  gives the corresponding energy eigenvalue times the energy eigenstate.\n- `hasEigenvalue_hamiltonian_iff` : The eigenvalues of the Hamiltonian are exactly the\n  energy eigenvalues.\n\n## iii. Table of contents\n\n- A. The setup\n  - A.1. The input data for the tight binding chain\n  - A.2. The Hilbert space\n- B. The localized states\n  - B.1. The orthonormal basis of localized states\n  - B.2. Notation for localized states\n  - B.3. Orthonormality of the localized states\n- C. The operator `|m⟩⟨n|`\n  - C.1. Definition of the operator `|m⟩⟨n|`\n  - C.2. Notation for the operator `|m⟩⟨n|`\n  - C.3. The operator `|m⟩⟨n|` applied to a localized state\n- D. The Hamiltonian of the tight binding chain\n  - D.1. Hermiticity of the Hamiltonian\n  - D.2. Hamiltonian applied to a localized state\n  - D.3. Mean energy of a localized state\n- E. The Brillouin zone and quantized wavenumbers\n  - E.1. The Brillouin zone\n  - E.2. The quantized wavenumbers of the energy eigenstates\n  - E.3. Wavenumbers lie in the Brillouin zone\n  - E.4. Expotentials related to the quantized wavenumbers\n- F. The energy eigenstates and eigenvalues\n  - F.1. The energy eigenstates\n  - F.2. Orthonormality of the energy eigenstates\n  - F.3. The energy eigenvalues\n  - F.4. The time-independent Schrodinger equation\n  - F.5. The spectrum of the Hamiltonian\n\n## iv. References\n\n* https://www.damtp.cam.ac.uk/user/tong/aqm/aqmtwo.pdf. [ref: tong_statistical_physics]",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 79,
@@ -1182,17 +1205,20 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/CondensedMatter/Topology/Basic.lean",
    "module": "Physlib.CondensedMatter.Topology.Basic",
    "title": "A. Topological condensed matter",
    "doc": "This module provides a home for topological invariants of bands, Chern and topological\ninsulators, Weyl and nodal semimetals, topological superconductors, symmetry-protected phases,\nand interacting topological phases. It distinguishes local band geometry from global\ntopological invariants.",
+   "copyright": "2026 Wahaj Ayub",
    "sections": [],
    "declarations": [],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   }
  ]
 }

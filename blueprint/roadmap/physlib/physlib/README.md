@@ -1,12 +1,12 @@
 # Physlib
 
-The repository's core library, [Physlib/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib). Its README describes it:
+The repository's core library, [Physlib/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib). Its [README](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/README.md) describes it:
 
 > The core library — physics digitalizations reviewed and curated to a high standard, built for long-term reuse, readability, trust, and maintenance.
 
 Its 645 modules with a declaration are mapped here, an article each, on a page per area and per folder below it.
 
-The docstrings, Lean statements and API maps are quoted from [leanprover-community/physlib](https://github.com/leanprover-community/physlib) at commit [2a1dfe43](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d), under its Apache-2.0 license.
+The docstrings, Lean statements, API maps and README text are quoted from [leanprover-community/physlib](https://github.com/leanprover-community/physlib) at commit [2a1dfe43](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d), under its Apache-2.0 license.
 
 - [ClassicalFieldTheory](classicalfieldtheory/README.md)
 - [ClassicalMechanics](classicalmechanics/README.md)

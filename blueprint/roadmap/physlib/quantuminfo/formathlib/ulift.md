@@ -8,7 +8,7 @@ proof: formalized
 
 # Typeclass instances for `ULift`
 
-The module `QuantumInfo.ForMathlib.ULift`, [QuantumInfo/ForMathlib/ULift.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/ULift.lean): 11 declarations (4 instances with no name), 0 with a docstring.
+The module `QuantumInfo.ForMathlib.ULift`, [QuantumInfo/ForMathlib/ULift.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/ULift.lean): 11 declarations (4 instances with no name), none with a docstring.
 
 > This file equips `ULift` with algebraic and analytic typeclass instances lifted from the
 > underlying type, including `Star`, `StarMul`, `StarRing`, `NormedField`, `DenselyNormedField`

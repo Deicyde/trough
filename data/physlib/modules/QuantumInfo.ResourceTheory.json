@@ -7,6 +7,7 @@
    "module": "QuantumInfo.ResourceTheory.FreeState",
    "title": "",
    "doc": "",
+   "copyright": "2025 Alex Meiburg",
    "sections": [],
    "declarations": [
     {
@@ -387,13 +388,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/ResourceTheory/HypothesisTesting.lean",
    "module": "QuantumInfo.ResourceTheory.HypothesisTesting",
    "title": "",
    "doc": "Defines `OptimalHypothesisRate`, the optimal rate of distinguishing an `MState` ρ from a set of other\nmixed states `S`, with at most Type I error ε.\n\nThat is to say: take a projective measurement (a `POVM`) with elements `{T, 1-T}`, where measuring `T`\nwill mean we conclude our unknown state was ρ, and measuring `1-T` will mean we think the state was\nsomething in `S`. We only accept T's such that `Tr[(1-T)ρ] ≤ ε`, that is, we have at most an ε\nprobability of incorrectly concluding it was ρ. The Type II error associated to this T is then\n`max_{σ ∈ S} Tr[T σ]`, that is, the (worst possible, over possible states) chance of incorrectly\nconcluding our state was in `S`. Optimize over `T` to get the lowest possible Type II error rate,\nand the resulting error rate is `OptimalHypothesisRate ρ ε S`.\n\nWe make this accessible through the notation `β_ ε(ρ‖S)`.\n\nSee [The tangled state of quantum hypothesis testing](https://doi.org/10.1038/s41567-023-02289-9) by\nMario Berta et al. for a broader overview.",
+   "copyright": "2025 Alex Meiburg",
    "sections": [],
    "declarations": [
     {
@@ -566,13 +569,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/ResourceTheory/SteinsLemma.lean",
    "module": "QuantumInfo.ResourceTheory.SteinsLemma",
    "title": "",
    "doc": "",
+   "copyright": "2025 Alex Meiburg",
    "sections": [],
    "declarations": [
     {
@@ -697,7 +702,8 @@
     }
    ],
    "private": 44,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   }
  ]
 }

@@ -21,6 +21,8 @@ The module `Physlib.Meta.Informal.SemiFormal`, [Physlib/Meta/Informal/SemiFormal
 
 **`WantedInfo`**, a structure, [line 31](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Meta/Informal/SemiFormal.lean#L31).
 
+> The information from a `TODO ...` command.
+
 ```lean
 structure WantedInfo where
   /-- The content of the note. -/
@@ -43,7 +45,9 @@ structure WantedInfo where
 > Semiformal results cannot be used in further code. They are essentially
 > forgot about after made.
 >
-> …
+> With minor modification they act in a similar way to `proof_wanted`, however
+> they appear in Physlib's TODO list and must be tagged accordingly.
+> They must also always have a doc-string.
 
 ```lean
 meta def «semiformal_result»

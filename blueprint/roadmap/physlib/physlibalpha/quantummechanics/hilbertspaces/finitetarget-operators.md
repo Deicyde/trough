@@ -5,7 +5,7 @@ origin: cited
 
 # Operators on the Hilbert space of a finite target system
 
-The module `PhyslibAlpha.QuantumMechanics.HilbertSpaces.FiniteTarget.Operators`, [PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/Operators.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/Operators.lean): 3 declarations (3 instances with no name), 0 with a docstring.
+The module `PhyslibAlpha.QuantumMechanics.HilbertSpaces.FiniteTarget.Operators`, [PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/Operators.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/Operators.lean): 3 declarations (3 instances with no name), none with a docstring.
 
 > Real scalar tower and self-adjoint decomposition instances for operators on `𝓗[d]`.
 

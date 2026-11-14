@@ -1,6 +1,6 @@
 # StarAlgebra
 
-The folder [PhyslibAlpha/ProbabilisticTheory/StarAlgebra/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra): 13 modules, an article each, in path order with Basic.lean first in its folder.
+The folder [PhyslibAlpha/ProbabilisticTheory/StarAlgebra/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/StarAlgebra): 13 modules, an article each, in path order.
 
 - [Expectation values of non-self-adjoint operators](complexextension.md)
 - [The covariance form of a state and its symmetries](covarianceform.md)

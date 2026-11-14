@@ -8,7 +8,7 @@ proof: formalized
 
 # Boosts on the electric and magnetic fields
 
-The module `Physlib.Electromagnetism.Kinematics.Boosts`, [Physlib/Electromagnetism/Kinematics/Boosts.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/Boosts.lean): 4 declarations, 0 with a docstring.
+The module `Physlib.Electromagnetism.Kinematics.Boosts`, [Physlib/Electromagnetism/Kinematics/Boosts.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism/Kinematics/Boosts.lean): 4 declarations, none with a docstring.
 
 ## i. Overview
 

@@ -7,6 +7,7 @@
    "module": "Physlib.QuantumMechanics.Blackbody.PlancksLaw",
    "title": "Planck's Law",
    "doc": "In this module we define Planck's law for blackbody radiation: The spectral density of\nelectromagnetic radiation emitted by a black body in thermal equilibrium at a given\ntemperature T, when there is no net flow of matter or energy between the body and\nits environment.\n\n## i. Overview\n\nAccording to Planck's distribution law, the spectral energy radiance\n(per unit frequency) for a black body at given temperature `T` as a function of frequency `ν`\nis given by\n\n    `B(ν, T) = 2 h ν³ / c² · 1 / (e^{h ν / (k_B T)} - 1)`\n\nwhere `h` is Planck's constant, `c` the speed of light, and `k_B` the Boltzmann constant.\n\nand per unit wavelength `λ`, given by\n\n    `B(λ, T) = 2 h c² / λ⁵ · 1 / (e^{h c / (λ k_B T)} - 1)`\n\nThe two forms are related by `B(λ, T) = (c / λ²) B(ν = c/λ, T)`\n(see `spectralRadianceWave_eq_spectralRadiance`), where the frequency `c / λ`\nis given by `Frequency.ofWavelength`. The frequency and wavelength are taken to be\nof the types `Frequency` and `Wavelength` from `Physlib.Optics`, i.e. nonnegative\nquantities carrying the dimensions of inverse time and of length respectively.\n\n## ii. Key results\n\n- `BlackBody` : Structure representing an idealized black body in thermal equilibrium.\n- `spectralRadiance` : The spectral radiance per unit frequency of blackbody radiation,\n  as a function of a `Frequency`.\n- `spectralRadiance_pos` : The spectral radiance is positive for positive frequency and temperature.\n- `spectralRadiance_absZero` : The spectral radiance is 0 at absolute zero.\n- `spectralRadianceWave` : Spectral radiance per unit wavelength, as a function of a `Wavelength`.\n- `spectralRadianceWave_eq_spectralRadiance` : Correspondence between the two forms,\n  via `Frequency.ofWavelength`.\n- `firstRadiationConstant` / `secondRadiationConstant` : Radiation constants `c₁L` and `c₂`.\n- `spectralRadianceWave_eq_constants` : Planck's law in terms of radiation constants.\n\n## iii. Table of contents\n\n- A. The BlackBody structure\n- B. Spectral radiance per unit frequency\n- C. Spectral radiance per unit wavelength\n- D. Correspondence between the two forms\n- E. First and second radiation constants\n\n## iv. References\n\n* https://en.wikipedia.org/wiki/Planck%27s_law\n* M. Planck, \"Ueber das Gesetz der Energieverteilung im Normalspectrum\",\n  Ann. Phys. 309 (3), 553–563 (1901).",
+   "copyright": "2026 Samyak Rai",
    "sections": [
     {
      "line": 73,
@@ -200,13 +201,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QuantumMechanics/FiniteTarget.lean",
    "module": "Physlib.QuantumMechanics.FiniteTarget",
    "title": "Finite-dimensional quantum systems",
    "doc": "A `FiniteTarget` consists of a finite-dimensional Hilbert space together with a self-adjoint\nHamiltonian. Its Hamiltonian determines a unitary time evolution through Stone's correspondence.\n\nPhysical examples of such systems include:\n- Spin systems.\n- Tight binding chains.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -267,13 +270,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 1
   },
   {
    "file": "Physlib/QuantumMechanics/FreeParticle/Basic.lean",
    "module": "Physlib.QuantumMechanics.FreeParticle.Basic",
    "title": "The free particle on `Space d`",
    "doc": "## i. Overview\n\nThe free quantum particle is one of the simplest quantum systems.\nStates for a particle of mass `m` are elements of `SpaceDHilbertSpace d` and evolve according\nto the Hamiltonian `p²/2m` with no potential.\n\n## ii. Key results\n\n## iii. Table of contents\n\n- A. Basic properties\n- B. Hilbert space\n- C. Hamiltonian\n- D. As a quantum system\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Gregory J. Loges",
    "sections": [
     {
      "line": 49,
@@ -343,13 +348,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 2
   },
   {
    "file": "Physlib/QuantumMechanics/HarmonicOscillator/Basic.lean",
    "module": "Physlib.QuantumMechanics.HarmonicOscillator.Basic",
    "title": "The quantum harmonic oscillator",
    "doc": "## i. Overview\n\nThe harmonic oscillator is one of the most important examples in non-relativistic quantum mechanics.\nIt describes a particle of mass `m` subject to a positive-definite quadratic potential\nin `d` dimensions.\n\n- `Basic.lean` : Properties of the potential, definition of isotropic oscillators,\n    kinetic, potential and Hamiltonian operators.\n- `LadderOperators.lean` : Definitions of the raising/lowering/number operators\n    and their algebraic properties.\n- `NumberOperator.lean` : The number operators as unbounded operators, symmetry.\n\n## ii. Key results\n\n## iii. Table of contents\n\n- A. Basic properties\n  - A.1. Positive mass\n  - A.2. Positive natural frequencies\n- B. Characteristic lengths\n  - B.1. Coordinate rescaling\n- C. The quadratic potential function\n  - C.1. Positive-definite matrix\n  - C.2. Quadratic form\n  - C.3. Potential function\n- D. Isotropic oscillators\n- E. Hilbert space\n- F. Operators\n  - E.1. Kinetic energy\n  - E.2. Potential energy\n  - E.3. Hamiltonian\n- G. As a quantum system\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Gregory J. Loges",
    "sections": [
     {
      "line": 73,
@@ -755,13 +762,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 2
   },
   {
    "file": "Physlib/QuantumMechanics/HarmonicOscillator/Eigenstates.lean",
    "module": "Physlib.QuantumMechanics.HarmonicOscillator.Eigenstates",
    "title": "Energy eigenstates of the quantum harmonic oscillator",
    "doc": "## i. Overview\n\nThe quantum harmonic oscillator in `d` dimensions is exactly solvable - the energy eigenvalues\nand eigenfunction can be computed analytically.\n\nThe ground-state wavefunction is a normalized Gaussian with covariance controlled\nby the harmonic oscillator's characteristic lengths. A general state is then obtained by acting\non the ground state with the raising operators and is labelled by `d` integer quantum numbers.\nTheir wavefunctions are given by products of (physicist's) Hermite polynomials multiplying\nthe ground-state Gaussian. The ladder operators of `LadderOperators.lean` act on them by shifting\none quantum number, `aᵢ† ψₙ = √(nᵢ + 1) ψₙ₊ₑᵢ` and `aᵢ ψₙ = √nᵢ ψₙ₋ₑᵢ`, so that `Nᵢ ψₙ = nᵢ ψₙ` and\n`H ψₙ = Eₙ ψₙ` with `Eₙ = ∑ᵢ ℏ ωᵢ (nᵢ + ½)` for the Hamiltonian of `Basic.lean`, which acts on\nSchwartz maps as `∑ᵢ ℏ ωᵢ (Nᵢ + ½)` (`hamiltonian_apply_schwartz`).\n\nWhen the potential is isotropic another description of the energy eigenstates is possible;\nenergy eigenspaces carry SO(d) representations and eigenfunctions can be written in terms of\nhyperspherical harmonics. In such cases the energies only depend on the radial quantum number.\n\n## ii. Key results\n\n- `raising_eigenfunction`, `lowering_eigenfunction`: `aᵢ† ψₙ = √(nᵢ + 1) ψₙ₊ₑᵢ`,\n  `aᵢ ψₙ = √nᵢ ψₙ₋ₑᵢ`; `lowering_eigenfunction_zero`: `aᵢ ψ₀ = 0`.\n- `number_eigenfunction`: `Nᵢ ψₙ = nᵢ ψₙ`.\n- `sum_number_eigenfunction`, `hamiltonian_eigenstate`: `H ψₙ = Eₙ ψₙ`.\n\n## iii. Table of contents\n\n- A. Cartesian basis\n  - A.1. Energy eigenvalues\n  - A.2. Eigenfunctions\n  - A.3. Eigenstates\n- B. The ladder operators on the eigenfunctions\n- C. The eigenvalue equation\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Gregory J. Loges",
    "sections": [
     {
      "line": 74,
@@ -1007,13 +1016,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 4
   },
   {
    "file": "Physlib/QuantumMechanics/HarmonicOscillator/LadderOperators.lean",
    "module": "Physlib.QuantumMechanics.HarmonicOscillator.LadderOperators",
    "title": "Ladder operators",
    "doc": "## i. Overview\n\nThe ladder operators of the `d`-dimensional quantum harmonic oscillator, acting on Schwartz maps:\nthe lowering (annihilation) operators `aᵢ = (xᵢ/ξᵢ + i ξᵢ pᵢ/ℏ)/√2` and the raising (creation)\noperators `aᵢ† = (xᵢ/ξᵢ - i ξᵢ pᵢ/ℏ)/√2`, together with\ntheir commutation relations, which all follow from the canonical commutation relations\n`position_commutation_momentum`. The ladder operators are then lifted to unbounded operators on the\nHilbert space with the Schwartz submodule as domain (like `momentumOperator`), `aᵢ†` being the\nformal adjoint of `aᵢ`. The number operators `Nᵢ = aᵢ† aᵢ` and the Hamiltonian written through them\nare in `NumberOperator.lean`.\n\n## ii. Key results\n\n- `lowering_commutation_raising`: `[aᵢ, aⱼ†] = δᵢⱼ 𝟙`; `lowering_commutation_lowering`,\n  `raising_commutation_raising`: `[aᵢ, aⱼ] = 0`, `[aᵢ†, aⱼ†] = 0`.\n- `position_eq_lowering_add_raising`, `momentum_eq_raising_sub_lowering`: the position and\n  momentum operators in terms of the ladder operators.\n- `loweringOperator_isFormalAdjoint_raisingOperator`: `aᵢ†` is the formal adjoint of `aᵢ`.\n\n## iii. Table of contents\n\n- A. Ladder operators\n  - A.1. Definitions\n  - A.2. Commutation relations\n  - A.3. Position and momentum in terms of the ladder operators\n  - A.4. The ladder operators as unbounded operators, adjointness\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Gregory J. Loges",
    "sections": [
     {
      "line": 61,
@@ -1183,13 +1194,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QuantumMechanics/HarmonicOscillator/NumberOperator.lean",
    "module": "Physlib.QuantumMechanics.HarmonicOscillator.NumberOperator",
    "title": "Number operators",
    "doc": "## i. Overview\n\nThe number operators `Nᵢ = aᵢ† aᵢ` of the `d`-dimensional quantum harmonic oscillator, built from\nthe ladder operators of `LadderOperators.lean` and acting on Schwartz maps: their commutation\nrelations with the ladder operators and with each other, and the Hamiltonian of `Basic.lean`, which\non Schwartz maps acts as `H_N = ∑ᵢ ℏ ωᵢ (Nᵢ + ½)`, commutes with the number operators and lowers\nand raises energies by `ℏ ωᵢ`. The number operators are then lifted to unbounded operators on the\nHilbert space with the Schwartz submodule as domain (like `momentumOperator`), where they are\nsymmetric, as is the Hamiltonian.\n\n## ii. Key results\n\n- `number_commutation_number`: `[Nᵢ, Nⱼ] = 0`; `number_commutation_lowering`,\n  `number_commutation_raising`: `[Nᵢ, aⱼ] = -δᵢⱼ aⱼ`, `[Nᵢ, aⱼ†] = δᵢⱼ aⱼ†`.\n- `lowering_comp_raising`: `aᵢ aᵢ† = Nᵢ + 𝟙`; `numberCLM_inner`:\n  `⟪ Nᵢ f, g⟫ = ⟪ f, Nᵢ g⟫` for Schwartz maps.\n- `sum_number_commutation_lowering`, `sum_number_commutation_raising`,\n  `sum_number_commutation_number`: with `H_N = ∑ⱼ ℏ ωⱼ (Nⱼ + ½)`, `[H_N, aᵢ] = -ℏ ωᵢ aᵢ`,\n  `[H_N, aᵢ†] = ℏ ωᵢ aᵢ†`, `[H_N, Nᵢ] = 0`.\n- `sum_number_apply`: `H_N ψ = (1/2m) ∑ᵢ pᵢ (pᵢ ψ) + V ψ` on Schwartz maps;\n  `hamiltonian_apply_schwartz`: the Hamiltonian of `Basic.lean` acts on Schwartz maps as `H_N`;\n  `hamiltonian_inner_schwartz`: it is symmetric on the Schwartz submodule.\n- `numberOperator_isSymmetric`: the number operators are symmetric.\n\n## iii. Table of contents\n\n- A. Number operators\n  - A.1. Definition\n  - A.2. Commutation relations\n  - A.3. Inner products\n- B. Hamiltonian\n  - B.1. Commutation relations with the ladder and number operators\n  - B.2. The Hamiltonian on Schwartz maps\n- C. The number operators as unbounded operators\n- D. Symmetry\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Philippe Kevorkian",
    "sections": [
     {
      "line": 69,
@@ -1367,13 +1380,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 1
   },
   {
    "file": "Physlib/QuantumMechanics/HarmonicOscillator/OneDimension/Basic.lean",
    "module": "Physlib.QuantumMechanics.HarmonicOscillator.OneDimension.Basic",
    "title": "1d Harmonic Oscillator",
    "doc": "The quantum harmonic oscillator in 1d.\nThis file contains\n- the definition of the Schrodinger operator\n- the definition of eigenfunctions and eigenvalues of the Schrodinger operator in terms\n  of Hermite polynomials\n- proof that eigenfunctions and eigenvalues are indeed eigenfunctions and eigenvalues.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 28,
@@ -1591,13 +1606,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 1
   },
   {
    "file": "Physlib/QuantumMechanics/HarmonicOscillator/OneDimension/Completeness.lean",
    "module": "Physlib.QuantumMechanics.HarmonicOscillator.OneDimension.Completeness",
    "title": "Completeness of the eigenfunctions of the Harmonic Oscillator",
    "doc": "Completeness of the eigenfunctions follows from Plancherel's theorem.\n\nThe steps of this proof are:\n\n1. Prove that if `f` is orthogonal to all eigenvectors then the Fourier transform of\n  it multiplied by `exp(-c x^2)` for a `0<c` is zero.\n  Part of this is using the concept of `dominated_convergence`.\n2. Use 'Plancherel's theorem' to show that `f` is zero.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 139,
@@ -1711,13 +1728,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QuantumMechanics/HarmonicOscillator/OneDimension/Eigenfunction.lean",
    "module": "Physlib.QuantumMechanics.HarmonicOscillator.OneDimension.Eigenfunction",
    "title": "Eigenfunction of the Harmonic Oscillator",
    "doc": "Note: These eigenfunctions have been generalized to `d` dimensions in\n`QuantumMechanics/HarmonicOscillator/Eigenstates.lean`.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 69,
@@ -1891,13 +1910,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QuantumMechanics/HarmonicOscillator/OneDimension/Examples.lean",
    "module": "Physlib.QuantumMechanics.HarmonicOscillator.OneDimension.Examples",
    "title": "Examples: 1d Quantum Harmonic Oscillator",
    "doc": "This module gives simple examples of how to use the\n`QuantumMechanics.OneDimension.HarmonicOscillator` API.\n\nIt is intended for experimentation and pedagogical use, and should\nnot be imported into other modules.\n\nTo run it from the command line:\n```\nlake env lean Physlib/QuantumMechanics/OneDimension/HarmonicOscillator/Examples.lean\n```",
+   "copyright": "2025 Nicola Bernini",
    "sections": [],
    "declarations": [
     {
@@ -1910,13 +1931,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QuantumMechanics/HarmonicOscillator/OneDimension/TISE.lean",
    "module": "Physlib.QuantumMechanics.HarmonicOscillator.OneDimension.TISE",
    "title": "The time-independent Schrodinger equation",
    "doc": "",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 31,
@@ -2006,13 +2029,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QuantumMechanics/HilbertSpaces/FiniteTarget/Basic.lean",
    "module": "Physlib.QuantumMechanics.HilbertSpaces.FiniteTarget.Basic",
    "title": "The Hilbert space of a finite target quantum mechanical system",
    "doc": "A finite target quantum mechanical system is one whose states live in a finite\ndimensional Hilbert space, with the basis states labelled by a finite type `d`\n(for example the sites of a finite lattice, or the levels of a qudit).\n\nThis file contains\n- the definition of `FiniteHilbertSpace d`, the Hilbert space of such a system,\n  as a structure wrapping `EuclideanSpace ℂ d`, together with the notation `𝓗[d]`;\n- its vector space structure (`AddCommGroup` and `Module ℂ`), transferred from\n  `EuclideanSpace ℂ d` along the equivalence `equivEuclidean`;\n- its Hilbert space structure (`NormedAddCommGroup`, `InnerProductSpace ℂ`,\n  `FiniteDimensional ℂ` and `CompleteSpace`), induced along `linearEquivEuclidean`;\n- the standard orthonormal basis `basisFun`, whose elements are the states\n  localized at the points of `d`.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 81,
@@ -2166,13 +2191,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 1
   },
   {
    "file": "Physlib/QuantumMechanics/HilbertSpaces/OneDimension/Basic.lean",
    "module": "Physlib.QuantumMechanics.HilbertSpaces.OneDimension.Basic",
    "title": "Hilbert space for one dimension quantum mechanics",
    "doc": "",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 54,
@@ -2386,13 +2413,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 1
   },
   {
    "file": "Physlib/QuantumMechanics/HilbertSpaces/OneDimension/Gaussians.lean",
    "module": "Physlib.QuantumMechanics.HilbertSpaces.OneDimension.Gaussians",
    "title": "Gaussians and the hilbert space",
    "doc": "",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 34,
@@ -2482,13 +2511,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 1
   },
   {
    "file": "Physlib/QuantumMechanics/HilbertSpaces/OneDimension/PlaneWaves.lean",
    "module": "Physlib.QuantumMechanics.HilbertSpaces.OneDimension.PlaneWaves",
    "title": "Plane waves",
    "doc": "We define plane waves as a member of the dual of the Schwartz submodule of the 1d Hilbert space.\n\nThis module has been generalized to d-dimensions in\n`QuantumMechanics/HilbertSpaces/SpaceD/MomentumStates.lean` and will be removed in the near future.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -2517,13 +2548,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QuantumMechanics/HilbertSpaces/OneDimension/PositionStates.lean",
    "module": "Physlib.QuantumMechanics.HilbertSpaces.OneDimension.PositionStates",
    "title": "Position states",
    "doc": "We define position state as a member of the dual of the Schwartz submodule of the 1d Hilbert space.\n\nThis module has been generalized to d-dimensions in\n`QuantumMechanics/HilbertSpaces/SpaceD/PositionStates.lean` and will be removed in the near future.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -2552,13 +2585,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QuantumMechanics/HilbertSpaces/OneDimension/SchwartzSubmodule.lean",
    "module": "Physlib.QuantumMechanics.HilbertSpaces.OneDimension.SchwartzSubmodule",
    "title": "Schwartz submodule of the Hilbert space",
    "doc": "This can be used to define e.g.\nthe rigged Hilbert space.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -2595,13 +2630,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 1
   },
   {
    "file": "Physlib/QuantumMechanics/HilbertSpaces/SpaceD/Basic.lean",
    "module": "Physlib.QuantumMechanics.HilbertSpaces.SpaceD.Basic",
    "title": "Hilbert spaces for quantum mechanics on `Space d`",
    "doc": "## i. Overview\n\nThe Hilbert spaces appropriate for doing quantum mechanics on `Space d` are the $L^2$-spaces\n`SpaceDHilbertSpace d μ := Lp ℂ 2 μ`, where `μ` is some measure on `Space d`.\nElements of `SpaceDHilbertSpace d μ` are _equivalence classes_ of functions `Space d → ℂ` which are\nsquare-integrable with respect to `μ`, i.e. `∫ x, ‖f x‖ ^ 2 ∂μ` is finite, and where `f` and `g` are\nin the same equivalence class if they are `μ`-a.e. equal.\n\nThe ability of a function to be interpreted as an element of `SpaceDHilbertSpace d μ` is captured\nby the property `MemHS`. If one has `hf : MemHS f μ` for a function `f : Space d → ℂ` this means\nthat `f` is `μ`-a.e. strongly measurable and square-integrable; `mk hf` constructs the corresponding\nequivalence class of `f` in `SpaceDHilbertSpace d μ`.\n\nGiven `SpaceDHilbertSpace d μ` and `Ω : Set (Space d)`, the Hilbert space\n`SpaceDHilbertSpaceOn Ω μ ≔ SpaceDHilbertSpace d (μ.restrict Ω)` may be interpreted as the\nsub-Hilbert space consisting of those vectors with domain contained in `Ω`.\nThe reason is that for each `ψ` in `SpaceDHilbertSpaceOn Ω μ` we have\n`ψ =ᵐ[μ.restrict Ω] Ω.indicator ψ`, namely the equivalence class of `ψ` always\ncontains a representative which vanishes on the complement of `Ω`.\nThe linear isometry `restrictIncl Ω μ` describes this sub-Hilbert space relationship\nby mapping each `ψ` to this special representative in its equivalence class.\nSimilarly, we may project `SpaceDHilbertSpace d μ` onto `SpaceDHilbertSpaceOn Ω μ` by enlarging the\nequivalence classes, essentially dropping information about the functions on the complement of `Ω`.\n\n## ii. Key results\n\n- `SpaceDHilbertSpace d μ` : The $L^2$-space on `Space d` with respect to the measure `μ`.\n- `toBra` : The linear equivalence between the Hilbert space and its dual. This is the map which\n    sends each ket to its corresponding bra and _vice versa_.\n- `MemHS f μ` : The proposition capturing exactly when a function `f : Space d → ℂ` can be lifted\n    to an element of the Hilbert space.\n- `SpaceDHilbertSpaceOn Ω μ` : An abbreviation for the Hilbert space\n    `SpaceDHilbertSpace d (μ.restrict Ω)` appropriate for describing the $L^2$-space of complex\n    functions on a subset of `Space d`.\n- `subspaceProjection` : The continuous linear projection of `SpaceDHilbertSpace d μ` onto\n    `SpaceDHilbertSpaceOn Ω μ`.\n- `subspaceIncl` : The linear isometry including `SpaceDHilbertSpaceOn Ω μ`\n    as a sub-Hilbert space of `SpaceDHilbertspace d μ`.\n\n## iii. Table of contents\n\n- A. SpaceDHilbertSpace\n  - A.1. Dual space\n  - A.2. Membership\n  - A.3. Construction of elements\n  - A.4. Coersions\n  - A.5. Misc.\n- B. SpaceDHilbertSpaceOn\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Gregory J. Loges",
    "sections": [
     {
      "line": 78,
@@ -3051,13 +3088,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QuantumMechanics/HilbertSpaces/SpaceD/DirichletSubmodule.lean",
    "module": "Physlib.QuantumMechanics.HilbertSpaces.SpaceD.DirichletSubmodule",
    "title": "Dirichlet submodule",
    "doc": "## i. Overview\n\nIn this module we define the Dirichlet submodule of `SpaceDHilbertSpaceOn Ω μ` consisting of\nequivalence classes of Schwartz maps which vanish on `frontier Ω`. The frontier (or boundary)\nof a set `Ω` contains all points whose neighborhoods always intersect with both `Ω` and `Ωᶜ`.\n\nThese serve as a convenient dense domain for operators acting on wavefunctions satisfying\nhomogeneous Dirichlet boundary conditions on `Ω`.\n\n## ii. Key results\n\n- `DirichletSubmoduleOn Ω μ`: The subspace of `SchwartzSubmodule d μ` consisting of Schwartz maps\n  which vanish on the frontier of `Ω`.\n\n## iii. Table of contents\n\n- A. Definitions\n- B. Contained in SchwartzSubmoduleOn\n- C. Density\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Gregory J. Loges",
    "sections": [
     {
      "line": 49,
@@ -3107,13 +3146,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 1
   },
   {
    "file": "Physlib/QuantumMechanics/HilbertSpaces/SpaceD/Fourier.lean",
    "module": "Physlib.QuantumMechanics.HilbertSpaces.SpaceD.Fourier",
    "title": "The Fourier transform on `SpaceDHilbertSpace`",
    "doc": "## i. Overview\n\nIn this module we define the Fourier transform on `SpaceDHilbertSpace d` as a unitary operator.\nMathlib's L² Fourier transform `MeasureTheory.Lp.fourierTransformₗᵢ` is a linear isometry\nequivalence of `Lp ℂ 2 volume`, hence of `SpaceDHilbertSpace d`, onto itself; packaged as\n`fourierUnitary d`.\n\n## ii. Key results\n\n- `fourierUnitary d` : the L² Fourier transform as a unitary\n  `SpaceDHilbertSpace d ≃ₗᵢ[ℂ] SpaceDHilbertSpace d`, acting as `𝓕`/`𝓕⁻`\n  (`fourierUnitary_apply`, `fourierUnitary_symm_apply`).\n- `schwartzIncl_fourier_eq` : `𝓕 (schwartzIncl f) = schwartzIncl (𝓕 f)`.\n- `schwartzIncl_fourierInv_eq` : the inverse acts by the inverse Schwartz Fourier transform.\n- `fourierUnitary_map_schwartzSubmodule` : `fourierUnitary d` maps the Schwartz submodule onto\n  itself.\n\n## iii. Table of contents\n\n- A. The Fourier unitary\n- B. Action on the Schwartz submodule\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Adam Bornemann",
    "sections": [
     {
      "line": 52,
@@ -3183,13 +3224,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QuantumMechanics/HilbertSpaces/SpaceD/MomentumStates.lean",
    "module": "Physlib.QuantumMechanics.HilbertSpaces.SpaceD.MomentumStates",
    "title": "Momentum states",
    "doc": "## i. Overview\n\nInformally, the momentum \"state\" corresponding to the wave vector `p`, of momentum `ℏ p`, is the\nnon-normalizable plane wave `exp (I p ⬝ᵥ x)`. More precisely, the momentum \"state\" lives in the\n_rigged_ Hilbert space `𝓢(Space d, ℂ) < SpaceDHilbertSpace d μ < StrongDual ℂ 𝓢(Space d, ℂ)`\nas the bra `⟨p|`. This is the linear functional `ψ ↦ ⟨exp (I p ⬝ᵥ x), ψ⟩ = 𝓕 ψ ((2π)⁻¹ • p)`.\n\nAn operator `A` acts on `momentumState p` by precomposition, `⟨p| A = momentumState p ∘L A`.\n\n## ii. Key results\n\n- `momentumState` : the momentum state as a member of the strong dual of the Schwartz space.\n- `momentumState_comp_momentumCLM` : the momentum state `momentumState p` is a generalized\n  eigenvector of `𝐩 i` with eigenvalue `ℏ pᵢ`.\n\n## iii. Table of contents\n\n- A. Momentum states\n- B. Momentum states as generalized eigenvectors\n\n## iv. References\n\n* https://en.wikipedia.org/wiki/Rigged_Hilbert_space. [ref: wiki_rigged_hilbert_space]",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 53,
@@ -3235,13 +3278,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 1
   },
   {
    "file": "Physlib/QuantumMechanics/HilbertSpaces/SpaceD/PolyBddSchwartzSubmodule.lean",
    "module": "Physlib.QuantumMechanics.HilbertSpaces.SpaceD.PolyBddSchwartzSubmodule",
    "title": "Polynomially-bounded Schwartz submodules",
    "doc": "## i. Overview\n\nIn this module we define polynomially-bounded Schwartz submodules of `SpaceDHilbertSpace d μ`.\n\nFor each `a : ℕ∞`, `PolyBddSchwartzSubmodule d a μ` is the submodule corresponding to Schwartz\nmaps `f` satisfying the polynomial growth bounds `‖x‖ ^ (-k) * ‖f x‖ ≤ Cₖ` for all `(k : ℕ) ≤ a`.\nIn particular, for `a = ⊤` such a bound holds for all natural numbers.\n\nThese serve as a natural domain for singular unbounded operators. For example, the `1/r` Coulomb\npotential operator maps `PolyBddSchwartzSubmodule d ⊤ μ` to itself. In the same way that multiplying\na Schwartz map by any polynomial in the coordinates results in a square-integrable function,\npolynomially-bounded Schwartz maps may be multiplied by Laurent polynomials and remain\nsquare-integrable (the precise condition depends on `d`, `a` and the negative degree of\nthe Laurent polynomial).\n\nNote: the condition defining polynomially-bounded Schwartz maps is phrased as\n`‖x‖ ^ (-k) * ‖f x‖ ≤ Cₖ` rather than as `‖f x‖ ≤ Cₖ * ‖x‖ ^ k` to mirror `SchwartzMap.decay`.\nThese two conditions only differ at `x = 0` and are therefore equivalent for `d > 0` since\nthen `f 0` may be determined by continuity. For `d = 0` the former does not constrain `f 0 = 0`\n(since `x = 0` is the only point and `0⁻¹ = 0`) while the latter does (and would therefore spoil\ntheir being dense in `SpaceDHilbertSpace 0 ≅ ℂ`).\n\n## ii. Key results\n\n- `PolyBddSchwartzSubmodule d (a : ℕ∞) μ`: Restriction of `SchwartzSubmodule d μ` to those\n  Schwartz maps which are bounded by powers of `‖x‖`.\n- `PolyBddSchwartzSubmodule.dense`: These submodules are dense in `SpaceDHilbertSpace d μ`.\n\n## iii. Table of contents\n\n- A. Definitions\n- B. Coercions\n- C. (In)equalities\n- D. Density\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Gregory J. Loges",
    "sections": [
     {
      "line": 67,
@@ -3399,13 +3444,15 @@
     }
    ],
    "private": 2,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 1
   },
   {
    "file": "Physlib/QuantumMechanics/HilbertSpaces/SpaceD/PositionStates.lean",
    "module": "Physlib.QuantumMechanics.HilbertSpaces.SpaceD.PositionStates",
    "title": "Position states",
    "doc": "## i. Overview\n\nInformally, the position \"state\" at `x : Space d` has a non-normalizable wavefunction which is\na Dirac-delta function centered at `x`. More precisely, the position \"state\" lives in the _rigged_\nHilbert space `𝓢(Space d, ℂ) < SpaceDHilbertSpace d μ < StrongDual ℂ 𝓢(Space d, ℂ)` as the element\nof the dual of `𝓢(Space d, ℂ)` defined by evaluation at `x`.\n\n## ii. Key results\n\n- `positionState` : the position state as a member of the strong dual of the Schwartz space.\n- `positionState_comp_positionCLM` : the position state `positionState x` is a generalized\n  eigenvector of `𝐱 i` with eigenvalue `xᵢ`.\n\n## iii. Table of contents\n\n- A. Position states\n- B. Position states as generalized eigenvectors\n\n## iv. References\n\n* https://en.wikipedia.org/wiki/Rigged_Hilbert_space. [ref: wiki_rigged_hilbert_space]",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 49,
@@ -3451,13 +3498,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 1
   },
   {
    "file": "Physlib/QuantumMechanics/HilbertSpaces/SpaceD/SchwartzSubmodule.lean",
    "module": "Physlib.QuantumMechanics.HilbertSpaces.SpaceD.SchwartzSubmodule",
    "title": "Schwartz submodule",
    "doc": "## i. Overview\n\nIn this module we define the Schwartz submodule of `SpaceDHilbertSpace d μ`.\n`SchwartzSubmodule d μ` consists of the `μ`-a.e. equal equivalence classes of Schwartz maps\non `Space d`.\n\nThis is an import subspace of the Hilbert space. For one, the Fourier transform maps the Schwartz\nsubmodule into itself. It also is a convenient dense domain on which to define derivative operators.\n\n## ii. Key results\n\n- `SchwartzSubmodule d μ`: Submodule of `SpaceDHilbertSpace d μ` consisting of the L² equivalence\n  classes of Schwartz maps `𝓢(Space d, ℂ)`.\n- `SchwartzSubmoduleOn Ω μ`: The projection of `SchwartzSubmodule d μ`\n  onto `SpaceDHilbertSpaceOn Ω μ`.\n\n## iii. Table of contents\n\n- A. SchwartzSubmodule\n  - A.1. Coercions\n  - A.2. Misc.\n- B. SchwartzSubmoduleOn\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Gregory J. Loges",
    "sections": [
     {
      "line": 52,
@@ -3599,13 +3648,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QuantumMechanics/HilbertSpaces/SpaceD/SobolevSubmodule.lean",
    "module": "Physlib.QuantumMechanics.HilbertSpaces.SpaceD.SobolevSubmodule",
    "title": "Sobolev submodules of `SpaceDHilbertSpace`",
    "doc": "## i. Overview\n\nIn this module we define the Sobolev submodules of `SpaceDHilbertSpace`.\n\n## ii. Key results\n\n- `SobolevSubmodule d s` : the Sobolev space `H^s` as a submodule of `SpaceDHilbertSpace d`.\n- `SobolevSubmodule.schwartzIncl_mem` / `schwartzSubmodule_le_sobolevSubmodule` /\n    `SobolevSubmodule.dense` : Schwartz maps lie in every `H^s`, which is therefore dense.\n- `SobolevSubmodule.antitone` : `H^s ≤ H^s'` for `s' ≤ s`.\n\n## iii. Table of contents\n\n- A. The Sobolev submodule `H^s`\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Adam Bornemann",
    "sections": [
     {
      "line": 44,
@@ -3663,13 +3714,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QuantumMechanics/HilbertSpaces/TensorProducts/CompleteTensorProduct.lean",
    "module": "Physlib.QuantumMechanics.HilbertSpaces.TensorProducts.CompleteTensorProduct",
    "title": "Complete tensor product",
    "doc": "## i. Overview\n\nGiven two inner product spaces `E` and `F` over `𝕜`, their tensor product `E ⊗[𝕜] F` consists\nof finite sums of simple (a.k.a. pure) tensors `m ⊗ₜ[𝕜] n`. This tensor product is again an inner\nproduct space with inner product defined by `⟪m ⊗ₜ n, m' ⊗ₜ n'⟫_𝕜 = ⟪m, m'⟫_𝕜 * ⟪n, n'⟫_𝕜`\non simple tensors and then extended by linearity (c.f. `TensorProduct.instInnerProductSpace`).\n\nHowever, in general this procedure does not result in a Hilbert space: Cauchy sequences need not\nconverge because the tensor product does not contain any _infinite_ sums of simple tensors.\nIn order to obtain a Hilbert space for use in quantum mechanics, we must _add in_ the limits\nof Cauchy sequences by taking the completion.\n\nIn this module we define the complete tensor product,\n`CompleteTensorProduct 𝕜 E F := Completion (E ⊗[𝕜] F)` with notation `E ⊗ₕ[𝕜] F` and `E ⊗ₕ F`,\nprovide some basic properties for the maps which embed `E ⊗[𝕜] F` into `E ⊗ₕ[𝕜] F`\nand prove that `⊗ₕ` is commutative and associative (up to linear isometric equivalence).\n\n## ii. Key results\n\n- `CompleteTensorProduct 𝕜 E F` (notation `E ⊗ₕ[𝕜] F` and `E ⊗ₕ F`) :\n    The _completion_ of the tensor product of a pair of inner product spaces `E` and `F` over `𝕜`.\n- `CompleteTensorProduct.comm 𝕜 E F` : The linear isometric equivalence between\n    `E ⊗ₕ[𝕜] F` and `F ⊗ₕ[𝕜] E`.\n- `CompleteTensorProduct.assoc 𝕜 E F G` : The linear isometric equivalence between\n    `E ⊗ₕ[𝕜] F ⊗ₕ[𝕜] G` and `E ⊗ₕ[𝕜] (F ⊗ₕ[𝕜] G)`.\n- `CompleteTensorProduct.assoc_tIncl₃ₗᵢ` : On the algebraic threefold tensor product,\n    `CompleteTensorProduct.assoc` reduces to `TensorProduct.assoc`.\n\n## iii. Table of contents\n\n- A. Definition\n- B. Nontrivial\n- C. Coercions\n- D. Induction principle\n- E. Commutative\n- F. Associative\n  - F.1. Associativity on the algebraic tensor product\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Gregory J. Loges",
    "sections": [
     {
      "line": 66,
@@ -3967,13 +4020,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 2
   },
   {
    "file": "Physlib/QuantumMechanics/Hydrogen/Basic.lean",
    "module": "Physlib.QuantumMechanics.Hydrogen.Basic",
    "title": "Hydrogen atom",
    "doc": "This module introduces the `d`-dimensional hydrogen atom with `1/r` potential.\n\nIn addition to the dimension `d`, the quantum mechanical system is characterized by\na mass `m > 0` and constant `k` appearing in the potential `V = -k/r`.\nThe standard hydrogen atom has `d=3`, `m = mₑmₚ/(mₑ + mₚ) ≈ mₑ` and `k = e²/4πε₀`.\n\nThe potential `V = -k/r` is singular at the origin. To address this we define a regularized\nHamiltonian in which the potential is replaced by `-k·r(ε)⁻¹`, where `r(ε)² = ‖x‖² + ε²`.\nThis goes by several names including \"soft-core\" and \"truncated\" Coulomb potential.\n\nThe (unregularized) Hamiltonian is densely defined in any dimension: its domain contains the\ndense submodule of polynomially-bounded Schwartz maps (`hamiltonianOperator_hasDenseDomain`).\n\n## References\n\n* https://doi.org/10.1103/PhysRevA.80.032507. [ref: doi_physreva_80_032507]\n* https://doi.org/10.1063/1.3290740. [ref: doi_1063_1_3290740]",
+   "copyright": "2026 Gregory J. Loges",
    "sections": [
     {
      "line": 66,
@@ -4055,13 +4110,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 6
   },
   {
    "file": "Physlib/QuantumMechanics/Hydrogen/LaplaceRungeLenzVector.lean",
    "module": "Physlib.QuantumMechanics.Hydrogen.LaplaceRungeLenzVector",
    "title": "Laplace-Runge-Lenz vector",
    "doc": "In this file we define\n- The (regularized) LRL vector operator for the quantum mechanical hydrogen atom,\n  `𝐀(ε)ᵢ ≔ ½(𝐩ⱼ𝐋ᵢⱼ + 𝐋ᵢⱼ𝐩ⱼ) - mk·𝐫(ε)⁻¹𝐱ᵢ`.\n\nThe main results are\n- The commutators `⁅𝐋ᵢⱼ, 𝐀(ε)ₖ⁆ = iℏ(δᵢₖ𝐀(ε)ⱼ - δⱼₖ𝐀(ε)ᵢ)` in `angularMomentum_commutation_lrl`\n- The cyclic relation `𝐋ᵢⱼ𝐀(ε)ₖ + 𝐋ⱼₖ𝐀(ε)ᵢ + 𝐋ₖᵢ𝐀(ε)ⱼ = 0` (in `d = 3`: `𝐋 · 𝐀(ε) = 0`) in\n  `angularMomentum_cyclic_lrl`, and with `𝐀(ε)` on the left in `lrl_cyclic_angularMomentum`\n- The commutators `⁅𝐀(ε)ᵢ, 𝐀(ε)ⱼ⁆ = (-2iℏm·𝐇(ε) + iℏmkε²·𝐫(ε)⁻³))𝐋ᵢⱼ` in `lrl_commutation_lrl`\n- The commutators `⁅𝐇(ε), 𝐀(ε)ᵢ⁆ = iℏε²(⋯)` in `hamiltonianReg_commutation_lrl`\n- The relation `𝐀(ε)² = 2m 𝐇(ε)(𝐋² + ¼ℏ²(d-1)²) + m²k² + ε²(⋯)` in `lrlOperatorSqr_eq`",
+   "copyright": "2026 Gregory J. Loges",
    "sections": [],
    "declarations": [
     {
@@ -4170,13 +4227,15 @@
     }
    ],
    "private": 29,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QuantumMechanics/Hydrogen/Rydberg.lean",
    "module": "Physlib.QuantumMechanics.Hydrogen.Rydberg",
    "title": "The Rydberg formula and the spectral series of the hydrogen atom",
    "doc": "## i. Overview\n\nThe bound-state energies expected for the `d`-dimensional hydrogen atom with potential `-k / r`\nare `E_n = -Ry / (n + (d - 1) / 2) ^ 2` for `n : ℕ`, with the Rydberg energy\n`Ry = m k ^ 2 / (2 ℏ ^ 2)`. This module defines these Bohr levels and derives from them, by\nalgebra alone, the Rydberg formula for the energy, the frequency and the wavelength of the\nphoton emitted in a transition between two levels, together with the Lyman, Balmer and Paschen\nseries and their series limits.\n\nThe statement that these values are the point spectrum of the hydrogen Hamiltonian is not\nproved here; it is a separate TODO of the `Basic` module. Nothing in this module depends on\nthe Hamiltonian.\n\n## ii. Key results\n\nDefinitions:\n- `rydbergEnergy` : the Rydberg energy `Ry = m k ^ 2 / (2 ℏ ^ 2)`.\n- `levelIndex` : the effective principal quantum number `L n = n + (d - 1) / 2`.\n- `energyLevel` : the Bohr levels `E_n = -Ry / L n ^ 2`.\n- `transitionFrequency` : the frequency `ν = (E_{n₂} - E_{n₁}) / h` of the photon emitted in\n    the transition from `n₂` to `n₁`, and `wavelength` its wavelength `c / ν`.\n- `rydbergFrequency` : the Rydberg frequency `R_ν = Ry / h`.\n- `lymanFrequency`, `balmerFrequency`, `paschenFrequency` : the three classical series.\n\nLemmas:\n- `energyLevel_strictMono` : the Bohr levels increase strictly with `n` when `2 ≤ d`\n    and `k ≠ 0`.\n- `transitionFrequency_eq` : the Rydberg formula `ν = R_ν (1 / L n₁ ^ 2 - 1 / L n₂ ^ 2)`.\n- `wavelength_inv` : its wavenumber form `1 / λ = (R_ν / c) (1 / L n₁ ^ 2 - 1 / L n₂ ^ 2)`.\n- `tendsto_transitionFrequency` : the series limit `ν → R_ν / L n₁ ^ 2` as `n₂ → ∞`.\n- `balmerFrequency_lt_lymanFrequency` : for `2 ≤ d ≤ 5`, every Balmer line lies below every\n    Lyman line.\n\n## iii. Table of contents\n\n- A. The level index\n- B. The Bohr levels\n- C. Transitions and the Rydberg formula\n- D. The spectral series\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Philippe Kevorkian",
    "sections": [
     {
      "line": 68,
@@ -4542,13 +4601,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QuantumMechanics/InfiniteSquareWell/Basic.lean",
    "module": "Physlib.QuantumMechanics.InfiniteSquareWell.Basic",
    "title": "The infinite square well",
    "doc": "## i. Overview\n\nThe particle in an infinite square well is one of the simplest quantum systems.\nThe domain is an axis-aligned cuboid (the well) and energy eigenstates are (products of)\ntrigonometric functions satisfying appropriate boundary conditions.\n\n## ii. Key results\n\n## iii. Table of contents\n\n- A. Basic properties\n- B. Domain\n- C. Hilbert space\n- D. Hamiltonian\n- E. As a quantum system\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Gregory J. Loges",
    "sections": [
     {
      "line": 61,
@@ -4630,13 +4691,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 3
   },
   {
    "file": "Physlib/QuantumMechanics/Operators/AngularMomentum.lean",
    "module": "Physlib.QuantumMechanics.Operators.AngularMomentum",
    "title": "Angular momentum operator",
    "doc": "## i. Overview\n\nIn this module we introduce several angular momentum operators for quantum mechanics on `Space d`.\nEach component also acts symmetrically on `SpaceDHilbertSpace d` with domain `SchwartzSubmodule d`.\nWe prove its symmetry and commutation relations.\n\n## ii. Key results\n\nDefinitions:\n- `angularMomentumCLM` : (components of) the angular momentum operator acting on Schwartz maps\n    `𝓢(Space d, ℂ)` as `𝐱ᵢ∘𝐩ⱼ - 𝐱ⱼ∘𝐩ᵢ`.\n- `angularMomentumOperatorSqr` : the operator acting on Schwartz maps `𝓢(Space d, ℂ)`\n    as `½ ∑ᵢⱼ 𝐋ᵢⱼ∘𝐋ᵢⱼ`.\n- `angularMomentumOperator2D` : the (pseudo)scalar angular momentum operator for `d = 2`.\n- `angularMomentumOperator3D` : the (pseudo)vector angular momentum operator for `d = 3`.\n- `angularMomentumOperator` : each component as a partially defined operator on\n    `SpaceDHilbertSpace d`, preserving the dense Schwartz submodule.\n- `angularMomentumSqOperator` : angular momentum squared on the same Schwartz domain.\n\nLemmas:\n- `angularMomentumOperator_isSymmetric` : angular momentum is symmetric on the Schwartz domain.\n- `angularMomentumSqOperator_isSymmetric` : its sum of component squares is also symmetric.\n- `angularMomentum_commutation_angularMomentum` : angular momenta generate an `𝔰𝔬(d)` algebra.\n\nNotation:\n- `𝐋` for `angularMomentumCLM`\n- `𝐋²` for `angularMomentumOperatorSqr`\n\n## iii. Table of contents\n\n- A. Angular momentum operator\n  - A.1 Antisymmetry\n- B. Angular momentum squared operator\n- C. Special cases in low dimensions\n- D. Hilbert-space angular momentum operator\n  - D.1. Angular momentum squared on the Hilbert space\n- E. Algebraic relations\n  - E.1. Angular momentum / position\n  - E.2. Angular momentum / momentum\n  - E.3. Angular momentum / angular momentum\n  - E.4. Angular momentum / dilation operator\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Gregory J. Loges",
    "sections": [
     {
      "line": 68,
@@ -5054,13 +5117,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QuantumMechanics/Operators/AngularMomentum/DimThree.lean",
    "module": "Physlib.QuantumMechanics.Operators.AngularMomentum.DimThree",
    "title": "Three-dimensional angular momentum",
    "doc": "Cartesian components, commutation relations, and ladder operators on the Schwartz domain.\n\n## i. Overview\n\nThe Cartesian components use the right-handed convention\n`Lx = L₁₂`, `Ly = L₂₀`, `Lz = L₀₁`, with coordinate indices `0, 1, 2`.\nThe Schwartz operators are the existing `angularMomentumOperator3D`; the Hilbert-space\noperators have the common invariant domain `SchwartzSubmodule 3`.\nTheir commutation algebra and the raising/lowering operators are proved first on Schwartz maps\nand then transported to this Hilbert-space domain. In particular, a zero commutator means zero\non that domain; it is not an equality with the everywhere-defined zero `LinearPMap`.\n\n## ii. Key results\n\n- `angularMomentumDimThreeOperator`: the Hilbert-space Cartesian components.\n- `angularMomentumOperatorSqr_eq_sum_dimThree`: `L² = Lx² + Ly² + Lz²` on Schwartz maps.\n- `angularMomentumDimThreeOperator_isSymmetric`: symmetry of each Cartesian component.\n- `angularMomentumDimThree_commutation`: `[Li, Lj] = iℏ ∑k εijk Lk`.\n- `angularMomentumRaisingCLM`, `angularMomentumLoweringCLM`: `Lx ± i Ly` on Schwartz maps.\n- `angularMomentumRaisingOperator`, `angularMomentumLoweringOperator`: their Hilbert-space lifts.\n- `angularMomentumZOperator_commutation_raising`, `angularMomentumZOperator_commutation_lowering`:\n  `[Lz, L±] = ±ℏ L±` on the Schwartz domain.\n- `angularMomentumSqOperator_commutation_raising`, `angularMomentumSqOperator_commutation_lowering`:\n  `[L², L±] = 0` on that domain.\n\nOpen the `AngularMomentum` scope for `𝐋₃ i` on Schwartz maps and `𝓛₃ i` on the Hilbert space,\nwhere `i : Fin 3` and indices `0`, `1`, `2` correspond to `x`, `y`, `z`.\nThe notation `𝓛²` denotes the Hilbert-space square.\nThe same scope provides `𝐋⁺`, `𝐋⁻` and `𝓛⁺`, `𝓛⁻` for the ladder operators.\n\n## iii. Table of contents\n\n- A. Cartesian components\n  - A.1. Hilbert-space transport\n  - A.2. Sum of the three squares\n- B. Commutation algebra\n- C. Ladder operators\n  - C.1. Hilbert-space ladder operators\n  - C.2. Hilbert-space commutation relations on the invariant domain\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Zhuoran Li",
    "sections": [
     {
      "line": 68,
@@ -5454,13 +5519,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QuantumMechanics/Operators/Commutation.lean",
    "module": "Physlib.QuantumMechanics.Operators.Commutation",
    "title": "Commutation relations",
    "doc": "## i. Overview\n\nIn this module we compute the commutators of position and momentum operators on Schwartz maps\non `Space d`, including regularized powers of the radius.\n\nCommutator lemmas come in three flavors:\n  - 1. `a_commutation_b` lemmas are of the form `⁅a, b⁆ = (⋯)`.\n  - 2. `a_comp_b_commute` and `a_comp_commute` lemmas are of the form `a ∘ b = b ∘ a`.\n  - 3. `a_comp_b_eq` lemmas are of the form `a ∘ b = b ∘ a + (⋯)`.\n\n## ii. Key results\n\n- `position_commutation_momentum` : The canonical commutation relations.\n\n## iii. Table of contents\n\n- A. General\n- B. Commutators\n  - B.1. Position / position\n  - B.2. Momentum / momentum\n  - B.3. Position / momentum\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Gregory J. Loges",
    "sections": [
     {
      "line": 54,
@@ -5670,13 +5737,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QuantumMechanics/Operators/Covariance.lean",
    "module": "Physlib.QuantumMechanics.Operators.Covariance",
    "title": "Covariance",
    "doc": "## i. Overview\n\nIn this module we define the covariance of two partial linear maps `A` and `B` in a common state\n`ψ` as the real part of the inner product of their centered vectors.\n\n## ii. Key results\n\n- `covariance` : the real part of the centered inner product.\n- `covariance_comm` : covariance is symmetric in the two observables.\n- `covariance_eq_re_symm_centered` : covariance as the real part of the symmetrized centered\n  inner product.\n- `covariance_self_eq_variance` : the covariance of an observable with itself is its variance.\n\n## iii. Table of contents\n\n- A. Covariance\n\n## iv. References\n\n* B. C. Hall, Quantum Theory for Mathematicians, Chapter 12. [ref: hall2013quantum]",
+   "copyright": "2026 Axiomatic-AI",
    "sections": [
     {
      "line": 45,
@@ -5726,23 +5795,27 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QuantumMechanics/Operators/Examples.lean",
    "module": "Physlib.QuantumMechanics.Operators.Examples",
    "title": "Operator examples",
    "doc": "This is currently a stub, intended to host examples of operators with notable properties.",
+   "copyright": "2026 Gregory J. Loges",
    "sections": [],
    "declarations": [],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 3
   },
   {
    "file": "Physlib/QuantumMechanics/Operators/Momentum.lean",
    "module": "Physlib.QuantumMechanics.Operators.Momentum",
    "title": "Momentum operators",
    "doc": "## i. Overview\n\nIn this module we introduce several momentum operators for quantum mechanics on `Space d`.\n\n## ii. Key results\n\nDefinitions:\n- `momentumCLM` : (components of) the momentum vector operator acting on Schwartz maps\n    `𝓢(Space d, ℂ)` as `-iℏ∂ᵢ`.\n- `momentumOperator` : a symmetric unbounded operator acting on the Schwartz submodule\n    of the Hilbert space `SpaceDHilbertSpace d`.\n\nNotation:\n- `𝐩` for `momentumOperator`\n\n## iii. Table of contents\n\n- A. Momentum vector operator\n- B. Unbounded momentum vector operator\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Gregory J. Loges",
    "sections": [
     {
      "line": 56,
@@ -5868,13 +5941,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 2
   },
   {
    "file": "Physlib/QuantumMechanics/Operators/Multiplication.lean",
    "module": "Physlib.QuantumMechanics.Operators.Multiplication",
    "title": "Multiplication operators on `SpaceDHilbertSpace`",
    "doc": "## i. Overview\n\nIn this module we define and develop the properties of multiplication operators.\nGiven a measure `μ` on `Space d` and any function `f : Space d → ℂ`, the multiplication operator\n`𝓜 μ f` is the partial linear map on `SpaceDHilbertSpace d μ` with domain\n`{ψ : SpaceDHilbertSpace d μ | MemHS (f • ψ) μ}` and mapping `ψ` to `f • ψ`.\nPrime examples of multiplication operators are the position operators which multiply by `xᵢ` and\nthe potential operators which multiply by the potential function `V(x)` of a quantum system.\n\nAlthough the domain of `𝓜 μ f` is defined implicitly through `MemHS`, simple assumptions on `f`\nallow one to nail down some of its properties. For example, when `f` is `μ`-a.e. strongly measurable\nthen the corresponding multiplication operator is densely defined, if `f` is `μ`-a.e. bounded then\nthe domain is `⊤` and if `f` has temperate growth then the domain contains the Schwartz submodule.\n\nMultiplication operators also form the backbone for derivative operators, which are defined\nthrough multiplication in the Fourier domain: see `Operators/Derivative.lean`.\n\n## ii. Key results\n\n- `mulOperator μ f` (notation `𝓜 μ f`) : The operator defined by `ψ ↦ f • ψ`\n    with maximal domain `{ψ : SpaceDHilbertSpace d μ | MemHS (f • ψ) μ}`.\n- `mulOperator_adjoint_eq_conj` : The adjoint of `𝓜 μ f` is the multiplication operator\n    defined by the conjugate of `f`.\n- `mulOperator_isSelfAdjoint` : The multiplication operator of a real function is self-adjoint.\n- `mulOperator_isUnbounded` : Multiplication operators with maximal domain are unbounded\n    (i.e. densely defined and closable).\n- `mulOperator_isClosed` : Multiplication operators with maximal domain are closed.\n- `mulOperator_eq_iff_ae_eq` : `𝓜 μ f = 𝓜 μ g ↔ f =ᵐ[μ] g` for `μ`-a.e. strongly measurable `f`\n    and σ-finite `μ`.\n- `mulOperator_const_smul_eq` : `𝓜 μ (c • f) = c • 𝓜 μ f` for non-zero `c`.\n- `mulOperator_add_ge` / `mulOperator_sub_ge` : `𝓜 μ (f ± g)` is an extension of `𝓜 μ f ± 𝓜 μ g`.\n- `mulOperator_smul_ge` : `𝓜 μ (f • g)` is an extension of `𝓜 μ f * 𝓜 μ g`.\n\n## iii. Table of contents\n\n- A. Definition\n- B. Domain\n- C. Adjoint\n  - C.1. Self-adjoint\n- D. Closed & unbounded\n- E. Basic properties\n  - E.1. Smul & neg\n  - E.2. Add & sub\n  - E.3. Composition\n- F. Spectrum\n\n## iv. References\n\n* Konrad Schmüdgen, Unbounded Self-Adjoint Operators on Hilbert Space, examples 1.3 and 3.8.\n  [ref: Schmudgen2012]",
+   "copyright": "2026 Gregory J. Loges",
    "sections": [
     {
      "line": 79,
@@ -6152,13 +6227,15 @@
     }
    ],
    "private": 2,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 4
   },
   {
    "file": "Physlib/QuantumMechanics/Operators/OneDimension/Commutation.lean",
    "module": "Physlib.QuantumMechanics.Operators.OneDimension.Commutation",
    "title": "Commutation relations",
    "doc": "The commutation relations between different operators.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 28,
@@ -6192,13 +6269,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QuantumMechanics/Operators/OneDimension/Momentum.lean",
    "module": "Physlib.QuantumMechanics.Operators.OneDimension.Momentum",
    "title": "Momentum operator",
    "doc": "In this module we define:\n- The momentum operator on functions `ℝ → ℂ`\n- The momentum operator on Schwartz maps as an unbounded operator on the Hilbert space.\n\nWe show that plane waves are generalized eigenvectors of the momentum operator.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 35,
@@ -6300,13 +6379,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QuantumMechanics/Operators/OneDimension/Parity.lean",
    "module": "Physlib.QuantumMechanics.Operators.OneDimension.Parity",
    "title": "Parity operator",
    "doc": "",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 28,
@@ -6364,13 +6445,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QuantumMechanics/Operators/OneDimension/Position.lean",
    "module": "Physlib.QuantumMechanics.Operators.OneDimension.Position",
    "title": "Position operator",
    "doc": "In this module we define:\n- The position operator on functions `ℝ → ℂ`\n- The position operator on Schwartz maps as an unbounded operator on the Hilbert space.\n\nWe show that position wavefunctions are generalized eigenvectors of the position operator.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 34,
@@ -6448,13 +6531,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QuantumMechanics/Operators/OneDimension/Unbounded.lean",
    "module": "Physlib.QuantumMechanics.Operators.OneDimension.Unbounded",
    "title": "Unbounded operators",
    "doc": "## Note\n\nIt is likely one day the material in this file will be moved to or appear\nin another form within Mathlib.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -6515,13 +6600,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QuantumMechanics/Operators/Position.lean",
    "module": "Physlib.QuantumMechanics.Operators.Position",
    "title": "Position operators",
    "doc": "## i. Overview\n\nIn this module we introduce several position operators for quantum mechanics on `Space d`.\n\n## ii. Key results\n\nDefinitions:\n- `positionCLM` : (components of) the position vector operator acting on Schwartz maps\n    `𝓢(Space d, ℂ)` by multiplication by `xᵢ`.\n- `radiusRegPowCLM` : operator acting on Schwartz maps by multiplication by\n    `(‖x‖² + ε²)^(s/2)`, a smooth regularization of `‖x‖ˢ`.\n- `positionOperator` : a self-adjoint multiplication operator acting on `SpaceDHilbertSpace d`.\n- `readiusRegPowOperator` : a self-adjoint multiplication operator acting on `SpaceDHilbertSpace d`.\n\nNotation:\n- `𝐱` for `positionCLM`\n- `𝐫₀` for `radiusRegPowCLM`\n- `𝐫` for `radiusPowLM`\n\n## iii. Table of contents\n\n- A. Schwartz operators\n  - A.1. Position vector\n  - A.2. Radius powers (regularized)\n  - A.3. Radius powers\n    - A.3.1. As limit of regularized operators\n- B. Unbounded operators\n  - B.1. Position vector\n  - B.2. Radius powers (regularized)\n  - B.3. Radius powers\n    - B.3.1. As limit of regularized operators\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Gregory J. Loges",
    "sections": [
     {
      "line": 66,
@@ -6851,13 +6938,15 @@
     }
    ],
    "private": 1,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QuantumMechanics/Operators/SpectralTheory/Basic.lean",
    "module": "Physlib.QuantumMechanics.Operators.SpectralTheory.Basic",
    "title": "Spectral theory for closed operators",
    "doc": "## i. Overview\n\nIn this module we develop the basics for the spectral theory of closed unbounded operators.\nThis forms the basis for the spectral theory of self-adjoint unbounded operators,\nwhich are of central importance in quantum mechanics.\n\nDefinitions for subsets of ℂ associated to an operator `T : H →ₗ.[ℂ] H` vary by author.\nHere we adopt those used in\n[Konrad Schmüdgen, Unbounded Self-Adjoint Operators on Hilbert Space][Schmudgen2012]\n[ref: Schmudgen2012], summarized in the following table:\n\n| Subset of ℂ | abbrev. | `D(T - z)` | `R(T - z)` | `(T - z)⁻¹` |\n| :---------- | :-----: | :--------: | :--------: | :---------: |\n| Regularity domain | | `= ⊥` | | continuous |\n| Resolvent set | `ρ` | `= ⊥` | `= ⊤` | continuous |\n| Point spectrum | `σᵖ` | `≠ ⊥` | | |\n| Residual spectrum | `σʳ` | `= ⊥` | `≠ ⊤` | continuous |\n| Continuous spectrum | `σᶜ` | | not closed | |\n\n## ii. Key results\n\nDefinitions (corresponding to an operator `T : H →ₗ.[ℂ] H`)\n- `LinearPMap.regularityDomain` : The set of regular points. A complex number `z` is a regular\n    point if there exists `c > 0` such that `c * ‖x‖ ≤ ‖T x - z • x‖` for all `x : T.domain`.\n- `LinearPMap.deficiencySubspace` : Given a complex number `z`, the closed submodule which\n    is orthogonal to the range of `T - z • 1`.\n- `LinearPMap.defectNumber` : Given a complex number `z`, the rank of the corresponding\n    deficiency subspace as a (possibly infinite) cardinal.\n- `LinearPMap.numericalRange` (`Θ`) : The set of complex numbers `⟪x, T x⟫_ℂ` as `x` ranges over\n    the unit sphere in `T.domain`.\n- `LinearPMap.resolventSet` (`ρ`) : The set of complex numbers `z` for which `T - z • 1`\n    has a continuous (equivalently, bounded) inverse with domain all of `H`.\n- `LinearPMap.spectrum` (`σ`) : The complement of the resolvent set.\n- `LinearPMap.pointSpectrum` (`σᵖ`) : The set of complex numbers `z` for which `T - z • 1`\n    fails to be invertible.\n- `LinearPMap.residualSpectrum` (`σʳ`) : The set of complex numbers `z` for which `T - z • 1`\n    has a continuous (equivalently, bounded) inverse with domain not all of `H`.\n- `LinearPMap.continuousSpectrum` (`σᶜ`) : The set of complex numbers `z` for which\n    the range of `T - z • 1` is not dense in `H`.\n\nMain results\n- `regularityDomain_isOpen` : The regularity domain is an open subset of `ℂ`.\n- `closure_range_sub_eq_range_closure_sub` : If `z` is a regular point for a closable operator `T`\n    then the closure of `(T - z • 1).range` is `(T.closure - z • 1).range`.\n- `defectNumber_const` : The defect number is constant on each connected component\n    of the regularity domain.\n- `compl_closure_numericalRange_subset_regularityDomain` : The regularity domain contains\n    the exterior of the numerical range.\n- `numericalRange_convex` : The Toeplitz-Hausdorff theorem — the numerical range is a convex set.\n- `resolventSet_isOpen` and `spectrum_isClosed` : The resolvent set is an open subset of ℂ\n    and its complement, the spectrum, is closed.\n- `IsClosed.spectrum_eq` : For a closed operator the spectrum is the union of the point, residual\n    and continuous spectra.\n\n## iii. Table of contents\n\n- A. Regularity domain\n- B. Deficiency subspace & defect number\n- C. Numerical range\n  - C.1. The Toeplitz-Hausdorff theorem\n- D. Spectrum of a closed operator\n  - D.1. Resolvent set\n  - D.2. Spectrum\n    - D.2.1. Point spectrum\n    - D.2.2. Residual spectrum\n    - D.2.3. Continuous spectrum\n  - D.3. Spectrum decomposition\n- E. Resolvent identities\n\n## iv. References\n\n* Konrad Schmüdgen, Unbounded Self-Adjoint Operators on Hilbert Space. [ref: Schmudgen2012]",
+   "copyright": "2026 Gregory J. Loges",
    "sections": [
     {
      "line": 111,
@@ -7447,13 +7536,15 @@
     }
    ],
    "private": 1,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 1
   },
   {
    "file": "Physlib/QuantumMechanics/Operators/SpectralTheory/SelfAdjoint.lean",
    "module": "Physlib.QuantumMechanics.Operators.SpectralTheory.SelfAdjoint",
    "title": "Spectral theory for self-adjoint operators",
    "doc": "## i. Overview\n\nIn this module we develop the spectral theory for self-adjoint operators.\n\n## ii. Key results\n\n- `resolventSet_eq_regularityDomain` : The resolvent set and regularity domain coincide. That is,\n    if `T - z • 1` has a continuous (equivalently, bounded) inverse then its range is all of `H`.\n- `mem_resolventSet_of_im_ne_zero` : every non-real `z` lies in the resolvent set of a\n    self-adjoint operator.\n- `sub_smul_surjective` : A self-adjoint `T` has `T - z • 1` surjective for every non-real `z`\n    (in particular `T ± i • 1` are onto).\n- `spectrum_real` : The spectrum of a self-adjoint unbounded operator is real.\n- `unitaryConj_isSelfAdjoint` : Unitary conjugation preserves self-adjointness.\n\n## iii. Table of contents\n\n- A. Resolvent set\n- B. Spectrum\n- C. Unitary conjugation\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Gregory J. Loges",
    "sections": [
     {
      "line": 52,
@@ -7527,13 +7618,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QuantumMechanics/Operators/SpectralTheory/SpectralMeasure.lean",
    "module": "Physlib.QuantumMechanics.Operators.SpectralTheory.SpectralMeasure",
    "title": "Spectral measures",
    "doc": "## i. Overview\n\nA spectral measure `μS` on a measurable space `α` is a σ-additive function `Set α → H →L[ℂ] H`\nsuch that each set is mapped to a star projection on `H`, the empty set and non-measurable sets are\nmapped to zero, and `univ` is mapped to the identity.\nThis is implemented as a structure extending `VectorMeasure α (H →L[ℂ] H)` with additional fields\nconstraining `μS A` to be a star projection for each set `A` and `μS univ = 1`.\n\nFor each `x : H` there is an associated measure `μₓ` given by `μₓ A = ‖μS A x‖² = ⟪x, μS A x⟫ ≤ 1`.\n\n## ii. Key results\n\n- `SpectralMeasure` : A star projection-valued measure.\n- `comp_eq_of_inter` : For a spectral measure `μS` and measurable sets `A` and `B`,\n    the composition `μS A ∘ μS B = μS (A ∩ B)`.\n\n## iii. Table of contents\n\n- A. Definition\n- B. Composition\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Gregory J. Loges",
    "sections": [
     {
      "line": 54,
@@ -7627,13 +7720,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QuantumMechanics/Operators/SpectralTheory/Symmetric.lean",
    "module": "Physlib.QuantumMechanics.Operators.SpectralTheory.Symmetric",
    "title": "Spectral theory for symmetric operators",
    "doc": "## i. Overview\n\nIn this module we develop the spectral theory for symmetric operators.\n\nThe numerical range of an operator, `Θ T = {⟪x, T x⟫_ℂ | x ∈ T.domain ∧ ‖x‖ = 1}`, is a subset of ℂ.\nFor symmetric operators the numerical range consists only of real numbers and it is meaningful\nto discuss its upper/lower bounds. To facilitate this, we define `LinearPMap.realNumericalRange`\nas the projection of `LinearPMap.numericalRange` onto the real axis. For symmetric operators this\nsimply reinterprets the numerical range as a subset of ℝ.\n\n## ii. Key results\n\n- `realNumericalRange` (`Θᵣₑ`) : The projection of the numerical range onto the real axis.\n- `compl_ofReal_subset_regularityDomain` : The regularity domain of a symmetric operator contains\n    all complex numbers with non-zero imaginary part.\n- `regularityDomain_isConnected_iff` : The regularity domain of a symmetric operator is connected\n    if and only if it contains a real number.\n- `IsSymmetric.isEssentiallySelfAdjoint_of_defectNumber_eq_zero` : The basic criterion for\n    essential self-adjointness: symmetric + densely defined + vanishing defect numbers at `± i`.\n\n## iii. Table of contents\n\n- A. Numerical range\n- B. Regularity domain\n- C. Point spectrum\n- D. Essential self-adjointness\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Gregory J. Loges",
    "sections": [
     {
      "line": 56,
@@ -7783,13 +7878,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QuantumMechanics/Operators/StateObservables/ExpectedValue.lean",
    "module": "Physlib.QuantumMechanics.Operators.StateObservables.ExpectedValue",
    "title": "Expectation values and centered vectors",
    "doc": "For a partial linear map `T` on a complex inner product space and `ψ ∈ T.domain`, this file\ndefines the expectation value and the centered vector `Tψ - ⟨T⟩_ψ ψ`.\n\n## Main definitions\n\n- `LinearPMap.expectedValue`: the real part of `⟪ψ, Tψ⟫_ℂ`.\n- `LinearPMap.centered`: the centered vector `Tψ - ⟨T⟩ψ`.\n\n## Main statements\n\n- `LinearPMap.expectedValue_eq_inner`: for symmetric `T`, the complex inner product is real and\n  equals the real expectation value coerced to `ℂ`.\n\n## References\n\n* B. C. Hall, Quantum Theory for Mathematicians, Chapter 12. [ref: hall2013quantum]",
+   "copyright": "2026 Axiomatic-AI",
    "sections": [],
    "declarations": [
     {
@@ -7866,13 +7963,15 @@
     }
    ],
    "private": 1,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QuantumMechanics/Operators/StateObservables/IsEigenvector.lean",
    "module": "Physlib.QuantumMechanics.Operators.StateObservables.IsEigenvector",
    "title": "Eigenvectors of partial linear maps",
    "doc": "## Main definitions\n\n- `LinearPMap.IsEigenvector`: a nonzero domain vector satisfying `T ψ = μ • ψ`.",
+   "copyright": "2026 Axiomatic-AI",
    "sections": [],
    "declarations": [
     {
@@ -7901,13 +8000,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QuantumMechanics/Operators/StateObservables/Variance.lean",
    "module": "Physlib.QuantumMechanics.Operators.StateObservables.Variance",
    "title": "Variance and standard deviation",
    "doc": "The variance of a partial linear map `T` in a state `ψ` is `‖Tψ - ⟨T⟩_ψ ψ‖ ^ 2`. It only\nrequires `ψ ∈ T.domain`.\n\nWhen `T` is symmetric, `‖ψ‖ = 1`, and `Tψ ∈ T.domain`, it also equals `⟨T^2⟩_ψ - ⟨T⟩_ψ ^ 2`.\n\n## Main definitions\n\n- `LinearPMap.variance` and `LinearPMap.standardDeviation`.\n\n## Main statements\n\n- `LinearPMap.variance_eq_norm_sq_sub_expectedValue_sq`: for a unit vector and symmetric `T`,\n  the variance is `‖Tψ‖ ^ 2 - ⟨T⟩_ψ ^ 2`.\n- `LinearPMap.variance_eq_re_inner_sub_expectedValue_sq`: the second-order formula when\n`Tψ ∈ T.domain`.\n- `LinearPMap.variance_eq_zero_iff_isEigenvector` and\n  `LinearPMap.standardDeviation_eq_zero_iff_isEigenvector`: for a unit vector, zero variance or\n  standard deviation is equivalent to the eigenvector condition.\n\n## References\n\n* B. C. Hall, Quantum Theory for Mathematicians, Chapter 12. [ref: hall2013quantum]",
+   "copyright": "2026 Axiomatic-AI",
    "sections": [],
    "declarations": [
     {
@@ -8048,13 +8149,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QuantumMechanics/Operators/Unbounded.lean",
    "module": "Physlib.QuantumMechanics.Operators.Unbounded",
    "title": "Unbounded operators",
    "doc": "## i. Overview\n\nThe appropriate mathematical objects for discussing operators in non-relativistic quantum mechanics\nare partially-defined linear map (`LinearPMap`) between complex Hilbert spaces, `H →ₗ.[ℂ] H'`.\nAn import class of operators in NRQM are those which are both densely defined and closable,\nwhich we refer to as _unbounded_. When `H = H'` operators may also be symmetric, self-adjoint or\nessentially self-adjoint (closure is self-adjoint).\n\nIn this module we collect results on how the properties `HasDenseDomain`, `IsUnbounded`,\n`IsSymmetric`, `IsSelfAdjoint` and `IsEssentiallySelfAdjoint` interact with the basic algebraic\noperations, closure, adjoints, unitary conjugation and each other.\n\n### Notes\n\n- Naming convention : Definitions of `LinearPMap`s for quantum mechanical unbounded operators should\n    have a name of the form `[…]Operator` and notation should use calligraphic capital letters,\n    e.g. `mulOperator f` (`𝓜 f`) for the multiplication operator associated with the function `f`.\n\n- Implementation : Although operators encountered in quantum mechanics are almost always unbounded,\n    we opt to implement unbounded operators via the property `IsUnbounded` on `LinearPMap` rather\n    than as a structure `UnboundedOperator` extending `LinearPMap`. The basic reason for this\n    is that addition/subtraction and composition of unbounded operators in general does not result\n    in another unbounded operator. This means, for example, that any attempt to define addition of\n    `UnboundedOperator`s would inevitably require introducing junk values that spoil associativity.\n\n## ii. Key results\n\nDefinitions\n- `HasDenseDomain` : An operator `U : H →ₗ.[ℂ] H'` has dense domain if `U.domain` is dense in `H`.\n- `IsUnbounded` : An operator is unbounded if it is both densely defined and closable.\n- `IsSymmetric` : An operator `T : H →ₗ.[ℂ] H` is symmetric if `⟪T x, y⟫_ℂ = ⟪x, T y⟫_ℂ` holds\n    for all `x y : T.domain`.\n- `IsEssentiallySelfAdjoint` : An operator `T : H →ₗ.[ℂ] H` is essentially self-adjoint if\n    its closure is self-adjoint.\n\nResults\n- `adjoint_add_le_add_adjoint` : The inequality `U₁† + U₂† ≤ (U₁ + U₂)†` when `U₁ + U₂` has\n    dense domain.\n- `unitaryConj` : The conjugation `u A u⁻¹ : H' →ₗ.[ℂ] H'` of `A` by a unitary `u`, with domain\n    `u (A.domain)`.\n- `IsFormalAdjoint.unitaryConj` : Unitary conjugation preserves formal-adjoint pairs.\n- `HasDenseDomain.unitaryConj_dense_domain` : If `A` has dense domain, then so does `u A u⁻¹`.\n- `unitaryConj_sub_smul_surjective` : If `A - z` is surjective for a scalar `z : ℂ`,\n    then so is `u A u⁻¹ - z`.\n- `adjoint_compRestricted_le_compRestricted_adjoint` : The inequality `U† ∘ᵣ V† ≤ (V ∘ᵣ U)†`\n    when `V` and `V ∘ᵣ U` have dense domain.\n- `IsUnbounded.adjoint` : The adjoint of an unbounded operator is also unbounded.\n- `IsUnbounded.adjoint_closure_eq_adjoint` : An unbounded operator and its closure have\n    the same adjoint.\n- `IsUnbounded.adjoint_adjoint_eq_closure` : An unbounded operator `U` satisfies `U†† = U.closure`.\n- `IsEssentiallySelfAdjoint.unique_self_adjoint_extension` : The closure of an essentially\n    self-adjoint unbounded operator is its unique self-adjoint extension.\n\n## iii. Table of contents\n\n- A. Definitions\n- B. Basic properties\n  - B.1. Dense domain\n  - B.2. Closability\n  - B.3. Adjoints\n  - B.4. Continuity / boundedness\n  - B.5. Unitary conjugation\n- C. Classes of operators\n  - C.1. Unbounded operators\n  - C.2. Symmetric operators\n  - C.3. Self-adjoint operators\n  - C.4. Essentially self-adjoint operators\n\n## iv. References\n\n* Reed and Simon, Methods of Modern Mathematical Physics, Vol. I: Functional Analysis.\n  [ref: Reed1972]\n* Konrad Schmüdgen, Unbounded Self-Adjoint Operators on Hilbert Space. [ref: Schmudgen2012]",
+   "copyright": "2026 Gregory J. Loges",
    "sections": [
     {
      "line": 114,
@@ -8996,13 +9099,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 2
   },
   {
    "file": "Physlib/QuantumMechanics/Operators/Uncertainty.lean",
    "module": "Physlib.QuantumMechanics.Operators.Uncertainty",
    "title": "Uncertainty bounds for partial linear maps",
    "doc": "## i. Overview\n\nIn this module we prove abstract Robertson and Robertson–Schrödinger uncertainty bounds for\nsymmetric partial linear maps on a complex inner product space. The statements are independent of\nany concrete position or momentum operator.\n\nThe centered-commutator results use only the domain assumptions needed to form the centered\nvectors. The raw-commutator results add the second-order domain hypotheses required to apply `A`\nto `Bψ` and `B` to `Aψ`.\n\n## ii. Key results\n\n- `inner_im_of_commutator_eq` : an anti-Hermitian commutator identity fixes the imaginary part of\n  an inner product.\n- `centeredCommutatorExpectation` : the scalar commutator of the centered vectors.\n- `rawCommutatorExpectation` : the expectation of the raw commutator on a state.\n- `inner_centered_commutator_of_raw_commutator` : a raw commutator expectation gives the centered\n  commutator expectation.\n- `state_uncertainty_squared_of_centered_commutator` : the Robertson squared bound from a centered\n  commutator identity.\n- `state_uncertainty_squared_with_covariance_of_centered_commutator` : the strengthened\n  Robertson–Schrödinger bound.\n- `state_uncertainty_of_centered_commutator` : the standard-deviation form of the bound.\n- `state_uncertainty_squared_of_raw_commutator`,\n  `state_uncertainty_squared_with_covariance_of_raw_commutator`, and\n  `state_uncertainty_of_raw_commutator` : variants using a raw commutator expectation.\n\n## iii. Table of contents\n\n- A. Inner product lemmas\n- B. Centered commutator bounds\n- C. Raw commutator bounds\n\n## iv. References\n\n* H. P. Robertson, The Uncertainty Principle (1929). [ref: robertson1929uncertainty]\n* E. Schrodinger, Zum Heisenbergschen Unscharfeprinzip (1930). [ref: schrodinger1930heisenberg]\n* B. C. Hall, Quantum Theory for Mathematicians, Chapter 12. [ref: hall2013quantum]",
+   "copyright": "2026 Axiomatic-AI",
    "sections": [
     {
      "line": 63,
@@ -9132,13 +9237,15 @@
     }
    ],
    "private": 1,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QuantumMechanics/PlanckConstant.lean",
    "module": "Physlib.QuantumMechanics.PlanckConstant",
    "title": "Planck's constant",
    "doc": "In this module we define the reduced Planck's constant `ℏ` as a positive real number.\nand also define the Planck's constant `h` also to be a positive real number with the\ndefinition `h = 2 π ℏ`.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -9223,13 +9330,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QuantumMechanics/PoschlTeller/Basic.lean",
    "module": "Physlib.QuantumMechanics.PoschlTeller.Basic",
    "title": "1d Pöschl-Teller",
    "doc": "## i. Overview\n\nThe Pöschl-Teller potential, `$V(x) \\propto -\\mathrm{sech}^2{(\\kappa x)}$`, gives rise\nto a one-dimensional quantum system for which the energy eigenvalues, energy eigenstates and\nscattering data can be computed exactly. Notably, the potential is _reflectionless_ when\nthe parameter controlling its depth is a positive integer.\n\n## ii. Key results\n\n- `potential` is the Pöschl-Teller potential `-(ℏ² κ² N (N + 1)) / (2 m cosh² (κ x))`, of depth\n  `depth = ℏ² κ² N (N + 1) / (2 m)`; it is negative, bounded below by `-depth`, even, of temperate\n  growth (`potential_hasTemperateGrowth`) and continuous.\n- `toSpaceDQuantumSystem` realises the Pöschl-Teller system as a `SpaceDQuantumSystem` of\n  dimension `1`; its kinetic, potential and Hamiltonian operators are the generic ones of\n  `SpaceDQuantumSystem`, for which this file gives the pointwise formulas in dimension one\n  (`toSpaceDQuantumSystem_kineticCLM_apply`, `toSpaceDQuantumSystem_hamiltonianCLM_apply`) and the\n  self-adjointness of the potential operator\n  (`toSpaceDQuantumSystem_potentialOperator_isSelfAdjoint`).\n- `creationCLM_apply`, `annihilationCLM_apply` give the pointwise action of the ladder operators;\n  their sum and difference are `(2 / √(2m)) 𝐩` and `(2 i ℏ κ / √(2m)) tanh (κ X)`.\n\n## iii. Table of contents\n\n- A. Potential function\n  - A.1. Definition and depth\n  - A.2. Sign, bounds and parity\n  - A.3. Regularity\n- B. As a quantum system\n- C. Operators\n  - C.1. Kinetic energy, potential energy and Hamiltonian\n  - C.2. Creation and annihilation operators\n    - C.2.1. On Schwartz functions\n    - C.2.2. As unbounded operators\n\n## iv. References\n\n* https://arxiv.org/pdf/2411.14941. [ref: arxiv_2411_14941]",
+   "copyright": "2025 Afiq Hatta",
    "sections": [
     {
      "line": 83,
@@ -9555,13 +9664,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 2
   },
   {
    "file": "Physlib/QuantumMechanics/PoschlTeller/Scattering.lean",
    "module": "Physlib.QuantumMechanics.PoschlTeller.Scattering",
    "title": "Scattering states of the 1d Pöschl-Teller system",
    "doc": "The polynomials describing the scattering states of the Pöschl-Teller system.\n\n## i. Overview\n\nAt energy `E = ℏ² k² / (2 m)` the scattering states of the Pöschl-Teller system are of the form\n`ψₖ(x) = Pₖ(tanh (κ x)) e^{i k x}`, where the polynomial `Pₖ` is obtained by applying the\noperators `-∂ₓ + n κ tanh (κ x)`, for `n = 1, …, N`, to the plane wave `e^{i k x}`. The operator\n`-∂ₓ + n κ tanh (κ x)` intertwines the Hamiltonians of the Pöschl-Teller systems with family\nnumbers `n - 1` and `n`, so it maps solutions of the one to solutions of the other at the same\nenergy.\n\nThis file works with the polynomial in `tanh (κ x)` multiplying `e^{i k x}`, as an element of\n`ℂ[X]`. The derivative, the raising operators and the Hamiltonian become operators on `ℂ[X]`, and\nthe intertwining relation becomes an identity of polynomials.\n\n## ii. Key results\n\n- `polyReducedHamiltonian_polyRaise` : the raising operator intertwines the Hamiltonians with family\n  numbers `n` and `n + 1`.\n- `polyReducedHamiltonian_polyScattering` : the scattering polynomial `Pₖ` is an eigenvector of the\n  reduced Hamiltonian with eigenvalue `k²`.\n- `polyScattering_eval_one`, `polyScattering_eval_neg_one` : the values `Pₖ(1) = ∏ₙ (n κ - i k)`\n  and `Pₖ(-1) = ∏ₙ (-n κ - i k)`.\n\n## iii. Table of contents\n\n- A. Polynomials in `tanh (κ x)`\n  - A.1. Derivative, raising operator and Hamiltonian\n  - A.2. The intertwining relation\n  - A.3. The scattering polynomials\n  - A.4. Values at `±1`\n\n## iv. References\n\n* https://arxiv.org/pdf/2411.14941. [ref: arxiv_2411_14941]",
+   "copyright": "2026 Emil Kubanychbek",
    "sections": [
     {
      "line": 61,
@@ -9699,13 +9810,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QuantumMechanics/QuantumSystem/Basic.lean",
    "module": "Physlib.QuantumMechanics.QuantumSystem.Basic",
    "title": "Quantum system",
    "doc": "## i. Overview\n\nIn non-relativistic quantum mechanics a quantum system is characterized by a Hilbert space\n(complete inner product space) and self-adjoint Hamiltonian operator; these data are collected in\nthe `QuantumSystem` structure.\n\nTwo quantum systems are said to be \"unitary equivalent\" if there is a unitary bijection between\ntheir respective Hilbert spaces which sends one Hamiltonian to the other under conjugation.\nUnitary equivalent quantum systems are physically indestinguishable, as all operators, states,\nmatrix elements, probabilities, eigenvalues, etc. are in 1-1 correspondence.\n\n## ii. Key results\n\nDefinitions\n- `QuantumSystem` : Structure bundling together a choice of Hilbert space\n    and self-adjoint Hamiltonian operator.\n- `UnitaryRelation` : The unitary equivalence relation.\n\n## iii. Table of contents\n\n- A. Definition\n- B. Creation from an essentially self-adjoint operator\n- C. Zero\n- D. Unitary equivalence\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Gregory J. Loges",
    "sections": [
     {
      "line": 51,
@@ -9823,13 +9936,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/QuantumMechanics/RectangularBarrier/Basic.lean",
    "module": "Physlib.QuantumMechanics.RectangularBarrier.Basic",
    "title": "The rectangular potential barrier",
    "doc": "## i. Overview\n\nThe rectangular potential barrier in one dimension provides the simplest example of quantum\ntunnelling. A particle of mass `m` is subject to a piece-wise constant potential which is `V₀`\non a closed interval and zero elsewhere.\n\n## ii. Key results\n\n## iii. Table of contents\n\n- A. Basic properties\n- B. Potential function\n- C. Hilbert space\n- D. Operators\n  - D.1. Kinetic\n  - D.2. Potential\n  - D.3. Hamiltonian\n- E. As a quantum system\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Gregory J. Loges",
    "sections": [
     {
      "line": 65,
@@ -9955,13 +10070,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 3
   },
   {
    "file": "Physlib/QuantumMechanics/SpaceDQuantumSystem.lean",
    "module": "Physlib.QuantumMechanics.SpaceDQuantumSystem",
    "title": "Single-particle quantum system on `Space d`",
    "doc": "## i. Overview\n\nIn this module we introduce the general notion of a single-particle quantum system on `Space d`.\n\nThe structure `SpaceDQuantumSystem` encompasses the basic information needed to specify the system,\nnamely the number of spatial dimensions, the particle's mass and the potential function.\n\n## ii. Key results\n\n## iii. Table of contents\n\n- A. Basic properties\n- B. Operators\n  - B.1. Kinetic energy\n  - B.2. Potential energy\n  - B.3. Hamiltonian\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Gregory J. Loges",
    "sections": [
     {
      "line": 62,
@@ -10155,7 +10272,8 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   }
  ]
 }

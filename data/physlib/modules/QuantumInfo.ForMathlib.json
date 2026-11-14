@@ -7,6 +7,7 @@
    "module": "QuantumInfo.ForMathlib.ComplexLaplaceTransform",
    "title": "",
    "doc": "",
+   "copyright": "2025 Dennj Osele",
    "sections": [],
    "declarations": [
     {
@@ -83,13 +84,15 @@
     }
    ],
    "private": 8,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/ContinuousLinearMap.lean",
    "module": "QuantumInfo.ForMathlib.ContinuousLinearMap",
    "title": "Continuous linear maps",
    "doc": "This file collects auxiliary results about `ContinuousLinearMap`s that are not (yet) available in\nMathlib.\n\n## Main results\n\n* `ContinuousLinearMap.ker_mk`: the kernel of the continuous linear map built from a continuous\n  semilinear map `f` agrees with the kernel of `f`.\n* `ContinuousLinearMap.support_eq_sup_eigenspace_nonzero`: the range of a symmetric continuous\n  linear map on a finite-dimensional Euclidean space is the supremum of its eigenspaces for\n  nonzero eigenvalues.",
+   "copyright": "2025 Alex Meiburg",
    "sections": [],
    "declarations": [
     {
@@ -110,13 +113,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/ContinuousSup.lean",
    "module": "QuantumInfo.ForMathlib.ContinuousSup",
    "title": "",
    "doc": "",
+   "copyright": "2025 Alex Meiburg",
    "sections": [],
    "declarations": [
     {
@@ -281,13 +286,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/ExchangeRelations.lean",
    "module": "QuantumInfo.ForMathlib.ExchangeRelations",
    "title": "Products of functions on a finite product",
    "doc": "With at least one coordinate, a function `T` on a finite product `(i : ι) → κ i` is a product of\nfunctions of one variable exactly when it satisfies the exchange relations.\n\n## i. Overview\n\nFor a function `T : ((i : ι) → κ i) → K` with values in a field, the exchange relations say\nthat for every coordinate `i`, values `a b : κ i` and points `x y`,\n`T (x[i ← a]) * T (y[i ← b]) = T (x[i ← b]) * T (y[i ← a])`, where `x[i ← a]` is `x` with\ncoordinate `i` replaced by `a`. They say that all `2 × 2` minors of the one-coordinate\nflattenings of `T` vanish. The flattening at `i` has rows indexed by `κ i` and columns indexed\nby assignments to the remaining coordinates.\n\nIf the index type `ι` is finite and nonempty, the exchange relations hold exactly when\n`T x = ∏ i, v i (x i)` for some functions `v i : κ i → K`. Nonemptiness is necessary: if `ι` is\nempty, the exchange relations are vacuous, so every function satisfies them, but an empty\nproduct is always `1`.\n\nFor finite-dimensional tensors, these equations characterize the tensors of rank at most one,\nwhich form the affine cone over the Segre variety.\n\nThis file is a temporary copy of results intended for Mathlib.\n\n## ii. Key results\n\n- `exists_prod_iff_mul_update` : with at least one coordinate, `T` is a product of functions of\n  one variable if and only if it satisfies the exchange relations.\n\n## iii. Table of contents\n\n- A. Product identities\n- B. Factorization from the exchange relations\n\n## iv. References\n\n- M. Michałek and B. Sturmfels, Invitation to Nonlinear Algebra, §9.2, p. 141.\n  [ref: michalek_sturmfels_2021]",
+   "copyright": "2026 Ruth Wang",
    "sections": [
     {
      "line": 58,
@@ -349,13 +356,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/Filter.lean",
    "module": "QuantumInfo.ForMathlib.Filter",
    "title": "",
    "doc": "",
+   "copyright": "2025 Alex Meiburg",
    "sections": [],
    "declarations": [
     {
@@ -376,13 +385,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/HayataGroup/TraceInequality/BlockDiagonal.lean",
    "module": "QuantumInfo.ForMathlib.HayataGroup.TraceInequality.BlockDiagonal",
    "title": "`2 × 2` block operators on a Hilbert sum",
    "doc": "This file develops the operator-matrix (\"block operator\") calculus on the two-fold Hilbert\nsum `ℋ ⊕ ℋ`, the main tool in the block-operator proof of the Jensen operator inequality.\n\n## Main definitions\n\n* `HSum ℋ`: the `ℓ²` direct sum `ℋ ⊕ ℋ` of two copies of a Hilbert space `ℋ`, realised as\n  `PiLp 2 (fun _ : Fin 2 => ℋ)`.\n* `hsumProj`, `hsumIncl`: the coordinate projections `HSum ℋ →L[ℂ] ℋ` and inclusions\n  `ℋ →L[ℂ] HSum ℋ` exhibiting `HSum ℋ` as a direct sum; they are mutually adjoint.\n* `blockDiagonal A B`: the block-diagonal operator `diag(A, B)` on `HSum ℋ`.\n* `blockOp A00 A01 A10 A11`: a general `2 × 2` block operator on `HSum ℋ`.\n* `blockDiagonalHom`: the `⋆`-algebra homomorphism `(A, B) ↦ diag(A, B)`.\n\nHere `L ℋ = ℋ →L[ℂ] ℋ` is the algebra of bounded operators (quantum observables) on `ℋ`;\nrepresenting a pair of observables as a block-diagonal operator on `ℋ ⊕ ℋ` is the dilation\ntrick underlying the operator inequalities used throughout quantum information theory.",
+   "copyright": "2026 Hayata Yamasaki",
    "sections": [],
    "declarations": [
     {
@@ -563,13 +574,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/HayataGroup/TraceInequality/GeneralizedPerspectiveFunction.lean",
    "module": "QuantumInfo.ForMathlib.HayataGroup.TraceInequality.GeneralizedPerspectiveFunction",
    "title": "",
    "doc": "",
+   "copyright": "2026 Hayata Yamasaki",
    "sections": [],
    "declarations": [
     {
@@ -678,13 +691,15 @@
     }
    ],
    "private": 13,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/HayataGroup/TraceInequality/HilbertSchmidtOperatorSpace.lean",
    "module": "QuantumInfo.ForMathlib.HayataGroup.TraceInequality.HilbertSchmidtOperatorSpace",
    "title": "",
    "doc": "",
+   "copyright": "2026 Hayata Yamasaki",
    "sections": [],
    "declarations": [
     {
@@ -1129,13 +1144,15 @@
     }
    ],
    "private": 6,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/HayataGroup/TraceInequality/JensenOperatorInequality.lean",
    "module": "QuantumInfo.ForMathlib.HayataGroup.TraceInequality.JensenOperatorInequality",
    "title": "",
    "doc": "",
+   "copyright": "2026 Hayata Yamasaki",
    "sections": [],
    "declarations": [
     {
@@ -1204,13 +1221,15 @@
     }
    ],
    "private": 9,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/HayataGroup/TraceInequality/JensenOperatorInequalityIImpIV.lean",
    "module": "QuantumInfo.ForMathlib.HayataGroup.TraceInequality.JensenOperatorInequalityIImpIV",
    "title": "",
    "doc": "",
+   "copyright": "2026 Hayata Yamasaki",
    "sections": [],
    "declarations": [
     {
@@ -1295,13 +1314,15 @@
     }
    ],
    "private": 30,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/HayataGroup/TraceInequality/JensenOperatorInequalityIVtoV.lean",
    "module": "QuantumInfo.ForMathlib.HayataGroup.TraceInequality.JensenOperatorInequalityIVtoV",
    "title": "",
    "doc": "",
+   "copyright": "2026 Hayata Yamasaki",
    "sections": [],
    "declarations": [
     {
@@ -1362,13 +1383,15 @@
     }
    ],
    "private": 6,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LiebAndoTrace.lean",
    "module": "QuantumInfo.ForMathlib.HayataGroup.TraceInequality.LiebAndoTrace",
    "title": "",
    "doc": "",
+   "copyright": "2026 Hayata Yamasaki",
    "sections": [],
    "declarations": [
     {
@@ -1485,13 +1508,15 @@
     }
    ],
    "private": 21,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzCore.lean",
    "module": "QuantumInfo.ForMathlib.HayataGroup.TraceInequality.LownerHeinzCore",
    "title": "",
    "doc": "## 構造（Core / Wrapper）\n\nこのファイルは Löwner–Heinz まわりの議論を、**一般の C★代数 `𝓐`** 上で再利用できるように\nCore として切り出したものです。\n\n- `section Pure`：`cfcR` と `OperatorMonotone(On)` / `OperatorConvexOn` などの **定義**（軽い層）\n- `section Spectrum`：`NonnegSpectrumClass` などを仮定して、主要定理群を置く **重い層**\n- `namespace LownerHeinzCore.Spectral`：`spectralOrder` を **`local instance`** として閉じ込めた wrapper\n\n`spectralOrder` を Core 本体に混ぜず、wrapper 側で局所化することで、他モジュールへの順序変更が\n漏れないようにしています。また `NonnegSpectrumClass` は必要な層で明示し、場当たりの `infer_instance`\n散布を避けています。",
+   "copyright": "2026 Hayata Yamasaki",
    "sections": [],
    "declarations": [
     {
@@ -1840,13 +1865,15 @@
     }
    ],
    "private": 24,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/HayataGroup/TraceInequality/LownerHeinzTheorem.lean",
    "module": "QuantumInfo.ForMathlib.HayataGroup.TraceInequality.LownerHeinzTheorem",
    "title": "",
    "doc": "## Wrapper（`B(ℋ)`）\n\nこのファイルは `LownerHeinzCore` の結果を、`L ℋ := ℋ →L[ℂ] ℋ`（有界線形作用素）に\n**特殊化して再公開する薄い wrapper** です。\n\n- 証明は `simpa using` による Core の特殊化のみ（重複証明は書かない）\n- `B(ℋ)` 側では既存の Loewner order の ecosystem を尊重し、`spectralOrder` は導入しません\n  （`spectralOrder` が必要な場合は `LownerHeinzCore.Spectral` を利用）",
+   "copyright": "2026 Hayata Yamasaki",
    "sections": [],
    "declarations": [
     {
@@ -2131,13 +2158,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/HayataGroup/TraceInequality/OperatorGeometricMean.lean",
    "module": "QuantumInfo.ForMathlib.HayataGroup.TraceInequality.OperatorGeometricMean",
    "title": "",
    "doc": "",
+   "copyright": "2026 Hayata Yamasaki",
    "sections": [],
    "declarations": [
     {
@@ -2166,23 +2195,27 @@
     }
    ],
    "private": 4,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/HermitianMat.lean",
    "module": "QuantumInfo.ForMathlib.HermitianMat",
    "title": "",
    "doc": "",
+   "copyright": "2025 Alex Meiburg",
    "sections": [],
    "declarations": [],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/HermitianMat/Basic.lean",
    "module": "QuantumInfo.ForMathlib.HermitianMat.Basic",
    "title": "",
    "doc": "",
+   "copyright": "2025 Alex Meiburg",
    "sections": [],
    "declarations": [
     {
@@ -3227,13 +3260,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/HermitianMat/CFC.lean",
    "module": "QuantumInfo.ForMathlib.HermitianMat.CFC",
    "title": "",
    "doc": "Matrix operations on HermitianMats with the CFC",
+   "copyright": "2025 Alex Meiburg",
    "sections": [
     {
      "line": 151,
@@ -3979,13 +4014,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/HermitianMat/CompoundMatrix.lean",
    "module": "QuantumInfo.ForMathlib.HermitianMat.CompoundMatrix",
    "title": "Compound matrices on `HermitianMat`",
    "doc": "This file lifts the compound-matrix construction from\n`QuantumInfo.ForMathlib.Majorization` to `HermitianMat`. The compound matrix of\na Hermitian matrix is again Hermitian, and inherits the natural spectral and\npositivity properties of the original.",
+   "copyright": "2026 Dennj Osele",
    "sections": [],
    "declarations": [
     {
@@ -4022,13 +4059,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/HermitianMat/Inner.lean",
    "module": "QuantumInfo.ForMathlib.HermitianMat.Inner",
    "title": "Inner product of Hermitian Matrices",
    "doc": "For general matrices there are multiple reasonable notions of \"inner product\" (Hilbert–Schmidt inner product,\nFrobenius inner product), and so Mathlib avoids giving a canonical `InnerProductSpace` instance. But for the\nparticular case of Hermitian matrices, these all coincide, so we can put a canonical `InnerProductSpace`\ninstance.\n\nThis _does_ however induce a `Norm` on `HermitianMat` as well, the Frobenius norm, and this is less obviously\na uniquely correct choice. It is something that one essentially has to live with, with the way that Mathlib\ncurrently structures the instances. (Thankfully, all norms induce the same _topology and bornology_ on\nfinite-dimensional matrices.)\n\nSome care to be taken so that the topology induced by the InnerProductSpace is defeq with the Subtype\ntopology that HermitianMat inherits from the topology on Matrix. This can be done via\n`InnerProductSpace.ofCoreOfTopology`.",
+   "copyright": "2025 Alex Meiburg",
    "sections": [
     {
      "line": 276,
@@ -4438,13 +4477,15 @@
     }
    ],
    "private": 1,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/HermitianMat/Jordan.lean",
    "module": "QuantumInfo.ForMathlib.HermitianMat.Jordan",
    "title": "",
    "doc": "Hermitian matrices have a Jordan algebra structure given by\n`A * B := 2⁻¹ • (A.toMat * B.toMat + B.toMat * A.toMat)`. We call this operation\n`HermitianMat.symmMul`, but it's available as `*` multiplication scoped under\n`HermMul`. When `A` and `B` commute, this reduces to standard matrix multiplication.",
+   "copyright": "2025 Alex Meiburg",
    "sections": [],
    "declarations": [
     {
@@ -4601,13 +4642,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/HermitianMat/LiebConcavity.lean",
    "module": "QuantumInfo.ForMathlib.HermitianMat.LiebConcavity",
    "title": "",
    "doc": "## Main result for DPI\n\nWe derive the concavity of the trace functional `σ ↦ Tr[(σ^s H σ^s)^p]` from\nthe Lieb–Ando trace inequalities proved in `LiebAndoTrace.lean`.",
+   "copyright": "2026 Alex Meiburg",
    "sections": [
     {
      "line": 146,
@@ -4705,13 +4748,15 @@
     }
    ],
    "private": 11,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/HermitianMat/LogExp.lean",
    "module": "QuantumInfo.ForMathlib.HermitianMat.LogExp",
    "title": "Properties of the matrix logarithm and exponential",
    "doc": "In particular, operator monotonicity and concavity of the matrix logarithm.\nThese are proved using `inv_antitone`, so, first showing that the matrix inverse\nis operator antitone for positive definite matrices.",
+   "copyright": "2025 Alex Meiburg",
    "sections": [],
    "declarations": [
     {
@@ -5052,13 +5097,15 @@
     }
    ],
    "private": 1,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/HermitianMat/NonSingular.lean",
    "module": "QuantumInfo.ForMathlib.HermitianMat.NonSingular",
    "title": "",
    "doc": "",
+   "copyright": "2025 Alex Meiburg",
    "sections": [],
    "declarations": [
     {
@@ -5335,13 +5382,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/HermitianMat/Order.lean",
    "module": "QuantumInfo.ForMathlib.HermitianMat.Order",
    "title": "",
    "doc": "",
+   "copyright": "2025 Alex Meiburg",
    "sections": [
     {
      "line": 554,
@@ -5847,13 +5896,15 @@
     }
    ],
    "private": 1,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/HermitianMat/Peierls.lean",
    "module": "QuantumInfo.ForMathlib.HermitianMat.Peierls",
    "title": "",
    "doc": "",
+   "copyright": "2026 Alex Meiburg",
    "sections": [],
    "declarations": [
     {
@@ -5898,13 +5949,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/HermitianMat/Proj.lean",
    "module": "QuantumInfo.ForMathlib.HermitianMat.Proj",
    "title": "Projectors associated to Hermitian matrices",
    "doc": "* `projector`: The `HermitianMat` that projects onto a given submodule\n * `supportProj`: The `HermitianMat` that projects onto the range (nonzero eigenvalues)\n * `kerProj`: The `HermitianMat` that projects onto the kernel\n * `projLE`: With notation `{A ≤ₚ B}`, `projLE A B` is the projector onto the nonnegative\n   eigenspace of `B - A`.\n * `projLT`: With notation `{A <ₚ B}`, `projLT A B` is the projector onto the positive\n   eigenspace of `B - A`.\n * Positive and negative part, written `A⁺` and `A⁻`, give the restriction of a HermitianMat\n   onto its positive (resp. negative) eigenvalues; equivalently, it's nonnegative (resp.\n   nonpositive) eigenvalues.",
+   "copyright": "2025 Leonardo A Lessa",
    "sections": [],
    "declarations": [
     {
@@ -6421,13 +6474,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/HermitianMat/Reindex.lean",
    "module": "QuantumInfo.ForMathlib.HermitianMat.Reindex",
    "title": "",
    "doc": "Much like `Matrix.reindex` and `Matrix.submatrix`, we can reindex a Hermitian matrix to get another\nHermitian matrix; however, this only makes sense when both permutations are the same, accordingly,\n`HermitianMat.reindex` only takes one `Equiv` argument (as opposed to `Matrix.reindex`'s two).\n\nThis file then gives relevant lemmas for simplifying this.",
+   "copyright": "2025 Alex Meiburg",
    "sections": [
     {
      "line": 33,
@@ -6557,13 +6612,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/HermitianMat/Rpow.lean",
    "module": "QuantumInfo.ForMathlib.HermitianMat.Rpow",
    "title": "Matrix Powers With Real Exponents",
    "doc": "This file defines real powers of finite-dimensional Hermitian matrices by continuous\nfunctional calculus:\n\n`A ^ r = A.cfc (fun x => x ^ r)`.\n\nThe scalar function is `Real.rpow`, so this is a total operation on Hermitian matrices.\nFor positive semidefinite matrices it has the expected spectral meaning. For negative\nexponents on singular matrices it follows the `Real.rpow` convention, so zero eigenvalues\nremain zero; use positive-definiteness hypotheses for inverse laws.\n\nMain results:\n* algebraic and spectral lemmas for real powers;\n* continuity in the exponent and in the matrix argument;\n* the Loewner-Heinz monotonicity theorem for `0 < q <= 1`;\n* Lieb-Thirring and Rotfel'd trace inequalities for `0 < p <= 1`.",
+   "copyright": "2026 Alex Meiburg",
    "sections": [
     {
      "line": 373,
@@ -6981,13 +7038,15 @@
     }
    ],
    "private": 19,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/HermitianMat/Schatten.lean",
    "module": "QuantumInfo.ForMathlib.HermitianMat.Schatten",
    "title": "Schatten norms",
    "doc": "",
+   "copyright": "2026 Alex Meiburg",
    "sections": [
     {
      "line": 76,
@@ -7113,13 +7172,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/HermitianMat/Sqrt.lean",
    "module": "QuantumInfo.ForMathlib.HermitianMat.Sqrt",
    "title": "",
    "doc": "",
+   "copyright": "2026 Alex Meiburg",
    "sections": [],
    "declarations": [
     {
@@ -7204,13 +7265,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/HermitianMat/Trace.lean",
    "module": "QuantumInfo.ForMathlib.HermitianMat.Trace",
    "title": "Trace of Hermitian Matrices",
    "doc": "While the trace of a Hermitian matrix is, in informal math, typically just \"the same as\" a trace of\na matrix that happens to be Hermitian - it is a real number, not a complex number. Or more generally,\nit is a self-adjoint element of the base `StarAddMonoid`.\n\nWorking directly with `Matrix.trace` then means that there would be constant casts between rings,\nchasing imaginary parts and inequalities and so on. By defining `HermitianMat.trace` as its own\noperation, we encapsulate the mess and give a clean interface.\n\nThe `IsMaximalSelfAdjoint` class is used so that (for example) for matrices over ℤ or ℝ,\n`HermitianMat.trace` works as well and is in fact defeq to `Matrix.trace`. For ℂ or `RCLike`,\nit uses the real part.",
+   "copyright": "2025 Alex Meiburg",
    "sections": [],
    "declarations": [
     {
@@ -7527,13 +7590,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/HermitianMat/Unitary.lean",
    "module": "QuantumInfo.ForMathlib.HermitianMat.Unitary",
    "title": "",
    "doc": "",
+   "copyright": "2025 Alex Meiburg",
    "sections": [],
    "declarations": [
     {
@@ -7634,13 +7699,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/IsMaximalSelfAdjoint.lean",
    "module": "QuantumInfo.ForMathlib.IsMaximalSelfAdjoint",
    "title": "Maximal self-adjoint subrings",
    "doc": "This file introduces the `IsMaximalSelfAdjoint R α` typeclass, which records that the\n`TrivialStar` ring `R` carries the self-adjoint part of a star ring `α`. It bundles an\nadditive, `R`-linear map `selfadjMap : α →+ R` that inverts `algebraMap R α` on self-adjoint\nelements. The guiding example is `R = ℝ`, `α = ℂ`: it lets a quantity such as the trace of a\nHermitian matrix be valued in `ℝ` instead of `ℂ`, reflecting that physical observables are\nself-adjoint and take real expectation values.",
+   "copyright": "2025 Alex Meiburg",
    "sections": [],
    "declarations": [
     {
@@ -7685,13 +7752,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/Isometry.lean",
    "module": "QuantumInfo.ForMathlib.Isometry",
    "title": "",
    "doc": "",
+   "copyright": "2025 Alex Meiburg",
    "sections": [],
    "declarations": [
     {
@@ -8032,13 +8101,15 @@
     }
    ],
    "private": 1,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/LimSupInf.lean",
    "module": "QuantumInfo.ForMathlib.LimSupInf",
    "title": "",
    "doc": "Several 'bespoke' facts about limsup and liminf on ENNReal / NNReal needed in SteinsLemma",
+   "copyright": "2025 Alex Meiburg",
    "sections": [],
    "declarations": [
     {
@@ -8147,13 +8218,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/LinearEquiv.lean",
    "module": "QuantumInfo.ForMathlib.LinearEquiv",
    "title": "Relabelling linear equivalences",
    "doc": "## i. Overview\n\nThis module provides linear equivalences obtained by relabelling the index type of a finite\nfunction space `d → R` or of `EuclideanSpace 𝕜 d` along an index equivalence `e : d ≃ d₂`,\ntogether with lemmas relating them to `Matrix.reindex`.\n\n## ii. Key results\n\n- `LinearEquiv.ofRelabel` : the `R`-linear equivalence `(d₂ → R) ≃ₗ[R] (d → R)` induced by an\n  index equivalence `e : d ≃ d₂`.\n- `LinearEquiv.euclideanOfRelabel` : the `EuclideanSpace` analogue of `ofRelabel`.\n- `Matrix.reindex_toLin'` and `Matrix.reindex_toEuclideanLin` : reindexing a matrix conjugates\n  its associated linear map by these relabelling equivalences.\n\n## iii. Table of contents\n\n- A. Relabelling linear equivalences\n- B. Reindexing matrices and their linear maps\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Alex Meiburg",
    "sections": [
     {
      "line": 41,
@@ -8247,13 +8320,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/Majorization.lean",
    "module": "QuantumInfo.ForMathlib.Majorization",
    "title": "Majorization and weak log-majorization",
    "doc": "This file develops the theory of majorization for finite sequences, leading to\nthe key singular value inequality needed for the Schatten–Hölder inequality.\n\n## Main results\n\n* `sum_rpow_singularValues_mul_le`: for `r > 0`, the singular values of `A * B`\n  satisfy `∑ σᵢ(AB)^r ≤ ∑ σ↓ᵢ(A)^r · σ↓ᵢ(B)^r`.\n* `holder_step_for_singularValues`: the Hölder step giving\n  `∑ σ↓ᵢ(A)^r · σ↓ᵢ(B)^r ≤ (∑ σᵢ(A)^p)^{r/p} · (∑ σᵢ(B)^q)^{r/q}`.",
+   "copyright": "2026 Alex Meiburg",
    "sections": [
     {
      "line": 33,
@@ -8611,13 +8686,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/Matrix.lean",
    "module": "QuantumInfo.ForMathlib.Matrix",
    "title": "",
    "doc": "",
+   "copyright": "2025 Alex Meiburg",
    "sections": [],
    "declarations": [
     {
@@ -9374,13 +9451,15 @@
     }
    ],
    "private": 2,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/MatrixNorm/TraceNorm.lean",
    "module": "QuantumInfo.ForMathlib.MatrixNorm.TraceNorm",
    "title": "",
    "doc": "",
+   "copyright": "2025 Alex Meiburg",
    "sections": [],
    "declarations": [
     {
@@ -9569,13 +9648,15 @@
     }
    ],
    "private": 3,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/Minimax.lean",
    "module": "QuantumInfo.ForMathlib.Minimax",
    "title": "",
    "doc": "",
+   "copyright": "2025 Alex Meiburg",
    "sections": [],
    "declarations": [
     {
@@ -9644,13 +9725,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/Misc.lean",
    "module": "QuantumInfo.ForMathlib.Misc",
    "title": "",
    "doc": "",
+   "copyright": "2025 Alex Meiburg",
    "sections": [],
    "declarations": [
     {
@@ -9727,13 +9810,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/SionMinimax.lean",
    "module": "QuantumInfo.ForMathlib.SionMinimax",
    "title": "",
    "doc": "",
+   "copyright": "2025 Alex Meiburg",
    "sections": [
     {
      "line": 326,
@@ -9975,13 +10060,15 @@
     }
    ],
    "private": 3,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/Superadditive.lean",
    "module": "QuantumInfo.ForMathlib.Superadditive",
    "title": "",
    "doc": "",
+   "copyright": "2025 Alex Meiburg",
    "sections": [],
    "declarations": [
     {
@@ -10026,33 +10113,39 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/Tactic/Commutes.lean",
    "module": "QuantumInfo.ForMathlib.Tactic.Commutes",
    "title": "Tactic for `Commute`",
    "doc": "This tactic uses `aesop` to discharge goals relating to the `Commute` relation. It mostly\ntries to do straightforward recursion on expressions, along with some basic normalization\nof ring operations.",
+   "copyright": "2026 Alex Meiburg",
    "sections": [],
    "declarations": [],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/Tactic/Commutes/Attribute.lean",
    "module": "QuantumInfo.ForMathlib.Tactic.Commutes.Attribute",
    "title": "Commutes Rule Set",
    "doc": "This module defines the `Commutes` Aesop rule set which is used by the\n`commutes` tactic. Aesop rule sets only become visible once the file in which\nthey're declared is imported, so we must put this declaration into its own file.",
+   "copyright": "2026 Alex Meiburg",
    "sections": [],
    "declarations": [],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/ULift.lean",
    "module": "QuantumInfo.ForMathlib.ULift",
    "title": "Typeclass instances for `ULift`",
    "doc": "This file equips `ULift` with algebraic and analytic typeclass instances lifted from the\nunderlying type, including `Star`, `StarMul`, `StarRing`, `NormedField`, `DenselyNormedField`\nand `RCLike` structures, together with the corresponding `simp` lemmas relating operations on\n`ULift.{v, u} α` to operations on the underlying `α`.",
+   "copyright": "2025 Alex Meiburg",
    "sections": [],
    "declarations": [
     {
@@ -10145,13 +10238,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/ForMathlib/Unitary.lean",
    "module": "QuantumInfo.ForMathlib.Unitary",
    "title": "",
    "doc": "",
+   "copyright": "2025 Alex Meiburg",
    "sections": [],
    "declarations": [
     {
@@ -10196,7 +10291,8 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   }
  ]
 }

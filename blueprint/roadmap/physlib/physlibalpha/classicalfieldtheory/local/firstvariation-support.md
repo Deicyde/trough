@@ -8,7 +8,7 @@ proof: formalized
 
 # First variation support lemmas
 
-The module `PhyslibAlpha.ClassicalFieldTheory.Local.FirstVariation.Support`, [PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Support.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Support.lean): 10 declarations, 0 with a docstring.
+The module `PhyslibAlpha.ClassicalFieldTheory.Local.FirstVariation.Support`, [PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Support.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ClassicalFieldTheory/Local/FirstVariation/Support.lean): 10 declarations, none with a docstring.
 
 > Support lemmas for the first variation: varied fields, test functions, varied jet coordinates.
 

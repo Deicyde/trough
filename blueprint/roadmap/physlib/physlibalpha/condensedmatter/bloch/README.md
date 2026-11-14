@@ -1,6 +1,6 @@
 # Bloch
 
-The folder [PhyslibAlpha/CondensedMatter/Bloch/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Bloch): 7 modules, an article each, in path order with Basic.lean first in its folder.
+The folder [PhyslibAlpha/CondensedMatter/Bloch/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/CondensedMatter/Bloch): 7 modules, an article each, in path order.
 
 - [Bloch's theorem on the lattice](algebraic.md)
 - [The spectrum of a finite periodic crystal](finitebloch.md)

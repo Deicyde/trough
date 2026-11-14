@@ -8,7 +8,7 @@ proof: formalized
 
 # The zero Lie algebra on `Unit`
 
-The module `PhyslibAlpha.Mathematics.LieAlgebraUnit`, [PhyslibAlpha/Mathematics/LieAlgebraUnit.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/LieAlgebraUnit.lean): 3 declarations (1 instance with no name), 0 with a docstring.
+The module `PhyslibAlpha.Mathematics.LieAlgebraUnit`, [PhyslibAlpha/Mathematics/LieAlgebraUnit.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/LieAlgebraUnit.lean): 3 declarations (1 instance with no name), none with a docstring.
 
 ## i. Overview
 

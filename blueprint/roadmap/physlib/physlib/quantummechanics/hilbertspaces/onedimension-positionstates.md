@@ -12,8 +12,7 @@ The module `Physlib.QuantumMechanics.HilbertSpaces.OneDimension.PositionStates`,
 
 > We define position state as a member of the dual of the Schwartz submodule of the 1d Hilbert space.
 >
-> This module has been generalized to d-dimensions in
-> `QuantumMechanics/HilbertSpaces/SpaceD/PositionStates.lean` and will be removed in the near future.
+> …
 
 **`QuantumMechanics.OneDimension.HilbertSpace.positionState`**, a def, [line 32](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/OneDimension/PositionStates.lean#L32).
 

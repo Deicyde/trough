@@ -7,16 +7,19 @@
    "module": "Physlib.Cosmology.Basic",
    "title": "Cosmology",
    "doc": "This directory is currently a place holder.\nPlease feel free to contribute!\n\nSome directories which are NOT currently place holders are:\n- Mathematics\n- Meta\n- Particles\n- QFT\n- Quantum Mechanics\n- Relativity",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Cosmology/FLRW/Age.lean",
    "module": "Physlib.Cosmology.FLRW.Age",
    "title": "The age of the universe",
    "doc": "## i. Overview\n\nIntegrating `dt = da / (a H)` from `a = 0` to the present value of the scale factor, with\n`H = H₀ E(a / a₀)` for a reduced Hubble function `E` (for instance `reducedHubble` of\n`Physlib.Cosmology.FLRW.ReducedHubble`), gives the age of the universe\n`t₀ = H₀⁻¹ ∫₀¹ dx / (x E(x))`. It is proportional to `1 / H₀`: the dimensionless integral depends\nonly on the shape of `E`.\n\nThe age is defined here for an arbitrary function `E`, as an interval integral; no convergence\nis asserted.\n\n## ii. Key results\n\n- `age`: `t₀ = H₀⁻¹ ∫₀¹ dx / (x E(x))`.\n- `age_eq`: `t₀ ∝ 1 / H₀`.\n\n## iii. Table of contents\n\n- A. The age of the universe\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Jinzheng Li",
    "sections": [
     {
      "line": 43,
@@ -42,13 +45,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Cosmology/FLRW/Basic.lean",
    "module": "Physlib.Cosmology.FLRW.Basic",
    "title": "The Friedmann-Lemaître-Robertson-Walker metric",
    "doc": "The spatial geometry of an FLRW model and its curvature parameter, the structures `FLRW` and\n`CosmicFluid`, the density and pressure of the cosmological constant as a fluid and the cosmic\nfluid with the cosmological constant folded in, the tangent-line bound for an FLRW model whose\nscale factor decelerates and the resulting lower bound on its interval of time, the first- and\nsecond-order Friedmann equations, the proposition `FLRW.FriedmannSolution` that a model and a\nfluid solve them, and the Hubble and deceleration parameters.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 193,
@@ -354,23 +359,27 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 3
   },
   {
    "file": "Physlib/Cosmology/FLRW/ConformalTime.lean",
    "module": "Physlib.Cosmology.FLRW.ConformalTime",
    "title": "Conformal time in FLRW cosmology",
    "doc": "Placeholder file collecting TODO items for the conformal time and the conformal\nHubble factor of a Friedmann-Lemaître-Robertson-Walker model. This file contains\nonly TODO items; no definitions or lemmas are formalized yet.",
+   "copyright": "2026 Jinzheng Li",
    "sections": [],
    "declarations": [],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 5
   },
   {
    "file": "Physlib/Cosmology/FLRW/DensityParameters.lean",
    "module": "Physlib.Cosmology.FLRW.DensityParameters",
    "title": "Density parameters and the closure relation",
    "doc": "## i. Overview\n\nThe first-order Friedmann equation of `Physlib.Cosmology.FLRW.Basic`,\n`H² = (8 π G / 3) ρ - k c² / a² + Λ c² / 3`, can be read as a budget for the expansion rate `H`.\n\nThe critical density `ρ_cr = 3 H² / (8 π G)` is the density for which this equation holds with\n`k = 0` and `Λ = 0`. When `Λ = 0`, a universe denser than `ρ_cr` is spatially closed (`k > 0`), a\nless dense one is open (`k < 0`), and one at exactly `ρ_cr` is flat.\n\nMeasuring each term in units of `ρ_cr` gives the density parameter `Ω = ρ / ρ_cr` of a fluid, the\ndensity parameter `Ω_Λ = Λ c² / (3 H²)` of the cosmological constant and the curvature density\nparameter `Ω_K = - k c² / (H² a²)`. Dividing the Friedmann equation by `H²` gives the closure\nrelation `Ω + Ω_Λ + Ω_K = 1`.\n\nThese quantities are defined for an FLRW model. For a solution of the Friedmann equations, the\nclosure relation holds at every time of the interval of the model at which `H ≠ 0`.\n\nThe reduced Hubble function of the standard cosmological model is in\n`Physlib.Cosmology.FLRW.ReducedHubble`, and the age of the universe in\n`Physlib.Cosmology.FLRW.Age`.\n\n## ii. Key results\n\n- `FLRW.criticalDensity`, `FLRW.densityParameter`, `FLRW.curvatureDensityParameter`,\n  `FLRW.lambdaDensityParameter`: the critical density and the density parameters of an FLRW\n  model.\n- `FLRW.lambdaDensityParameter_eq_densityParameter`,\n  `FLRW.densityParameter_addCosmologicalConstant`: `Ω_Λ` is the density parameter of the\n  cosmological constant as a fluid.\n- `FLRW.FriedmannSolution.densityParameter_add_lambda_add_curvature`,\n  `FLRW.FriedmannSolution.densityParameter_add_curvature`: the closure relations\n  `Ω + Ω_Λ + Ω_K = 1` and, for `Λ = 0`, `Ω + Ω_K = 1`.\n\n## iii. Table of contents\n\n- A. The critical density and the density parameters\n- B. The closure relation",
+   "copyright": "2026 Jinzheng Li",
    "sections": [
     {
      "line": 61,
@@ -448,13 +457,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Cosmology/FLRW/DeSitter.lean",
    "module": "Physlib.Cosmology.FLRW.DeSitter",
    "title": "The de Sitter solution of the Friedmann equations",
    "doc": "## i. Overview\n\nThe de Sitter solution of the Friedmann equations (`FirstOrderFriedmann` and\n`SecondOrderFriedmann` of `Physlib.Cosmology.FLRW.Basic`): the scale factor\n`a(t) = a₀ exp(σ √(Λ/3) c t)`, `σ = ±1`, solves both equations with `ρ = 0`, `p = 0`, flat\nspatial slices and `Λ > 0`; its Hubble parameter is constant and its deceleration parameter is\n`q = -1`. As an FLRW model filled with the empty cosmic fluid, `FLRW.deSitter`, it is defined at\nall times: its interval of time is not bounded below, whereas a solution with `0 ≤ ρ`, `0 ≤ p`\nand `Λ = 0` that expands at one time has a Big Bang\n(`Physlib.Cosmology.FLRW.FriedmannSolution`).\n\n## ii. Key results\n\n- `deSitterScaleFactor`: `a(t) = a₀ exp(σ √(Λ/3) c t)` with `σ = ±1`.\n- `deSitterScaleFactor_firstOrderFriedmann`, `deSitterScaleFactor_secondOrderFriedmann`:\n  it solves both Friedmann equations with `ρ = 0`, `p = 0`, `k = 0` and `Λ > 0`.\n- `hubbleConstant_deSitterScaleFactor`: its Hubble parameter is the constant `σ √(Λ/3) c`\n  (for any `σ`, `Λ`, `c`).\n- `decelerationParameter_deSitterScaleFactor`: its deceleration parameter is `q = -1`.\n- `FLRW.deSitter`, `FLRW.friedmannSolution_deSitter`: the de Sitter model, defined at all\n  times, filled with the empty cosmic fluid solves the Friedmann equations.\n- `FLRW.not_bddBelow_deSitter_I`: the interval of the de Sitter model is not bounded below.\n\n## iii. Table of contents\n\n- A. The scale factor and its derivatives\n- B. The Friedmann equations\n- C. The Hubble and deceleration parameters\n- D. The de Sitter model\n- E. The de Sitter model is defined at all times\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Jinzheng Li",
    "sections": [
     {
      "line": 56,
@@ -568,13 +579,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Cosmology/FLRW/Distances.lean",
    "module": "Physlib.Cosmology.FLRW.Distances",
    "title": "Distances and redshift in FLRW cosmology",
    "doc": "## i. Overview\n\nThe distances of this file are defined for an FLRW model. They have their meaning at the times\nof the interval of the model.\n\nThe comoving distance of a source emitting at the time `t` and observed at `t₀` is\n`χ = c ∫_t^{t₀} dτ / a(τ)`, so that `∂ₜ χ = - c / a`. The redshift is `1 + z = a(t₀) / a(t)`,\nwith `∂ₜ z = -(1 + z) H`. Combining the two gives `∂ₜ χ = (c / (a(t₀) H)) ∂ₜ z`. For\n`a(t₀) = 1`, this is the change of variables `dχ = c dz / H` behind the distance integrals in the\nredshift.\n\nThe proper distance `D = a χ` obeys the Hubble-Lemaître law `∂ₜ D = H D`. The recession velocity\nequals `c` exactly at the Hubble radius `R_H = c / H`.\n\nThe transverse comoving distance `r(χ)` is the function `S` of the spatial geometry of the model.\nIts closed forms are written in the curvature parameter `K` of that geometry, with curvature\nradius `1 / √|K|`.\n\nThe particle and event horizons at `t` integrate `c / a` over the times of the interval of the\nmodel before and after `t`. The particle horizon of the Einstein-de Sitter model\n`FLRW.einsteinDeSitter` is computed.\n\n## ii. Key results\n\n- `FLRW.comovingDistance`, `FLRW.deriv_comovingDistance`: `∂ₜ χ = - c / a`.\n- `FLRW.redshift`, `FLRW.deriv_redshift`: `∂ₜ z = -(1 + z) H`.\n- `FLRW.deriv_comovingDistance_eq_mul_deriv_redshift`: `∂ₜ χ = (c / (a(t₀) H)) ∂ₜ z`.\n- `FLRW.properDistance`, `FLRW.deriv_properDistance`: the Hubble-Lemaître law.\n- `FLRW.hubbleRadius`, `FLRW.deriv_properDistance_eq_iff`: the recession velocity at the Hubble\n  radius.\n- `FLRW.transverseComovingDistance` and its three closed forms.\n- `FLRW.particleHorizon`, `FLRW.eventHorizon`, `FLRW.particleHorizon_einsteinDeSitter`.\n\n## iii. Table of contents\n\n- A. The comoving distance\n- B. The redshift and the change of variables\n- C. The proper distance and the Hubble radius\n- D. The transverse comoving distance\n- E. The horizons",
+   "copyright": "2026 Jinzheng Li",
    "sections": [
     {
      "line": 65,
@@ -744,13 +757,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 4
   },
   {
    "file": "Physlib/Cosmology/FLRW/EnergyConditions.lean",
    "module": "Physlib.Cosmology.FLRW.EnergyConditions",
    "title": "Energy conditions of the cosmic fluid",
    "doc": "## i. Overview\n\nThe null, weak, strong and dominant energy conditions of a cosmic fluid `F : CosmicFluid`\n(`Physlib.Cosmology.FLRW.Basic`), described by its total energy density `F.ρ` and its pressure\n`F.p`, at one time `t`, `c : SpeedOfLight` being the speed of light, and the implications between\nthem. They are used in `Physlib.Cosmology.FLRW.FriedmannSolution` to state the acceleration\ncriterion.\n\n## ii. Key results\n\n- `CosmicFluid.NullEnergyCondition`, `CosmicFluid.WeakEnergyCondition`,\n  `CosmicFluid.StrongEnergyCondition`, `CosmicFluid.DominantEnergyCondition`: the four energy\n  conditions.\n- `CosmicFluid.DominantEnergyCondition.weakEnergyCondition`,\n  `CosmicFluid.WeakEnergyCondition.nullEnergyCondition`,\n  `CosmicFluid.StrongEnergyCondition.nullEnergyCondition`: the implications between them.\n\n## iii. Table of contents\n\n- A. The energy conditions\n- B. Implications between the energy conditions\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Jinzheng Li",
    "sections": [
     {
      "line": 47,
@@ -820,13 +835,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Cosmology/FLRW/FriedmannSolution.lean",
    "module": "Physlib.Cosmology.FLRW.FriedmannSolution",
    "title": "Solutions of the Friedmann equations: dynamical criteria",
    "doc": "## i. Overview\n\nQualitative consequences of the Friedmann equations for an FLRW model `U : FLRW` filled with a\ncosmic fluid `F : CosmicFluid` that solves them, `U.FriedmannSolution F Λ G c`. The proposition\n`FLRW.FriedmannSolution` itself is defined in `Physlib.Cosmology.FLRW.Basic`, together with the\ntangent-line bound for a decelerating FLRW model, which does not use the Friedmann equations; the\ncontinuity equation (`Physlib.Cosmology.FLRW.MatterContent`) and the density parameters, which\nare used here, are stated about it. The energy conditions of the cosmic fluid are in\n`Physlib.Cosmology.FLRW.EnergyConditions`. On the interval `U.I` of the model: a solution with\ncosmological constant `Λ` is a solution without it for the fluid with `Λ` folded in; the\nexpansion accelerates if and only if the fluid, with the cosmological constant folded in as a\n`w = -1` component, violates the strong energy condition; the deceleration parameter is\n`q = ½ Σ_x Ω_x (1 + 3 w_x)` for a finite family of barotropic fluids, and\n`q = ½ (Ω_m + 2 Ω_r - 2 Ω_Λ)` for ΛCDM; with a spatial geometry of non-positive curvature,\npositive density and `0 ≤ Λ`, the derivative `∂ₜ a` of the scale factor does not vanish, so that\na model expanding at one time of `U.I` expands at all times of `U.I`. Finally, with `0 ≤ ρ`,\n`0 ≤ p` and `Λ = 0` the scale factor decelerates on `U.I`, so that a model expanding at\n`t₀ ∈ U.I` cannot be defined at any time earlier than `t₀ - 1 / H(t₀)`: its interval of time is\nbounded below, the Big Bang being at most `1 / H(t₀)` in the past. The de Sitter model of\n`Physlib.Cosmology.FLRW.DeSitter`, with `0 < Λ`, is defined at all times.\n\n## ii. Key results\n\n- `FLRW.friedmannSolution_iff_addCosmologicalConstant`: a solution with `Λ` is a solution\n  without `Λ` for the fluid `F.addCosmologicalConstant Λ G c`.\n- `FLRW.FriedmannSolution.deriv_deriv_scaleFactor_pos_iff`: `0 < ∂ₜ ∂ₜ a ↔ ρ + 3 p / c² < 0`\n  (`Λ = 0`); `FLRW.FriedmannSolution.deriv_deriv_scaleFactor_pos_iff_lambda`: the same for the\n  total fluid with `Λ` folded in.\n- `FLRW.FriedmannSolution.decelerationParameter_eq_sum`: `q = ½ Σ_i Ω_i (1 + 3 w_i)`;\n  `FLRW.FriedmannSolution.decelerationParameter_lambdaCDM`: `q = ½ (Ω_m + 2 Ω_r - 2 Ω_Λ)`.\n- `FLRW.FriedmannSolution.deriv_scaleFactor_ne_zero`,\n  `FLRW.FriedmannSolution.deriv_scaleFactor_pos`: eternal expansion for a non-positive curvature.\n- `FLRW.FriedmannSolution.deriv_deriv_scaleFactor_nonpos`,\n  `FLRW.FriedmannSolution.lt_of_mem_I`, `FLRW.FriedmannSolution.bddBelow_I`: the Big-Bang bound.\n\n## iii. Table of contents\n\n- A. The cosmological constant folded into the cosmic fluid\n- B. Accelerated expansion and the strong energy condition\n- C. The deceleration parameter in terms of the density parameters\n- D. Eternal expansion\n- E. The Big-Bang bound for a solution of the Friedmann equations\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Jinzheng Li",
    "sections": [
     {
      "line": 69,
@@ -932,13 +949,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Cosmology/FLRW/MatterContent.lean",
    "module": "Physlib.Cosmology.FLRW.MatterContent",
    "title": "Matter content of FLRW cosmology",
    "doc": "## i. Overview\n\nThis file describes the matter content of a Friedmann-Lemaître-Robertson-Walker universe\nthrough the continuity equation `∂ₜ ρ + 3 H (ρ + p / c²) = 0` of the cosmic fluid and its\nrelation to the two Friedmann equations of `Physlib.Cosmology.FLRW.Basic`: the continuity\nequation follows from the first-order equation (holding at all times near the instant\nconsidered) and the second-order equation, and conversely the second-order equation follows\nfrom the first-order equation and the continuity equation whenever `∂ₜ a ≠ 0`. The three\nequations are therefore not independent, but not symmetrically so: where `∂ₜ a = 0` the\nfirst-order and the continuity equations leave `p` unconstrained, while the second-order\nequation still fixes `ρ + 3 p / c²` (the Einstein static universe of\n`Physlib.Cosmology.FLRW.Solutions`). The two Friedmann equations are the primitive pair, and\nthe continuity equation is derived from them; accordingly, the proposition\n`FLRW.FriedmannSolution` consists of the two Friedmann equations, and the continuity equation is\nthe lemma `FLRW.FriedmannSolution.continuityEquation`. For a barotropic equation of state\n`p = w ρ c²` with\nconstant `w`, the continuity equation gives the density scaling law `ρ ∝ a^(-3(1+w))`,\nspecialised to dust, radiation and vacuum energy; and the cosmological constant is equivalent\nto a `w = -1` fluid of density `ρ_Λ = Λ c² / (8 π G)`. The perfect-fluid stress-energy\ntensor is still a TODO item.\n\nTime derivatives of curves `Time → ℝ` are computed through the bridge\n`Time.hasDerivAt_mk_of_differentiableAt` to Mathlib's `HasDerivAt` on `ℝ`.\n\n## ii. Key results\n\n- `ContinuityEquation`: the continuity equation at an instant `t`.\n- `deriv_firstOrderFriedmann`: the time derivative of the first-order Friedmann equation,\n  `2 H (a''/a - H²) = (8 π G / 3) ρ' + 2 k c² H / a²`.\n- `continuityEquation_of_friedmann`: the continuity equation follows from the two Friedmann\n  equations.\n- `secondOrderFriedmann_of_continuityEquation`: the second-order Friedmann equation follows\n  from the first-order equation and the continuity equation when `∂ₜ a ≠ 0`.\n- `FLRW.FriedmannSolution.continuityEquation`: the continuity equation holds on the interval of\n  an FLRW model whose cosmic fluid solves the Friedmann equations.\n- `barotropicPressure`: `p = w ρ c²`; `density_scaling`: under the barotropic continuity\n  equation at all times, `ρ t = ρ t₀ (a t / a t₀)^(-3(1+w))`; `continuityEquation_of_scaling`:\n  the converse; `density_scaling_dust`, `density_scaling_radiation`,\n  `density_scaling_vacuum`: `ρ ∝ a⁻³`, `ρ ∝ a⁻⁴`, `ρ` constant.\n- `firstOrderFriedmann_iff_lambdaFluid`, `secondOrderFriedmann_iff_lambdaFluid`: the Friedmann\n  equations with `Λ` are the Friedmann equations without `Λ` for the fluid `ρ + ρ_Λ`, `p + p_Λ`,\n  where `ρ_Λ = Λ c² / (8 π G)` and `p_Λ = - ρ_Λ c²` (`cosmologicalConstantDensity` and\n  `cosmologicalConstantPressure`, defined in `Physlib.Cosmology.FLRW.Basic`);\n  `cosmologicalConstantPressure_eq_barotropic`: `p_Λ` is the `w = -1` barotropic pressure.\n\n## iii. Table of contents\n\n- A. The continuity equation\n  - A.1. The definition\n  - A.2. The derivative of the first-order Friedmann equation\n  - A.3. Continuity from the Friedmann equations\n  - A.4. The second-order Friedmann equation from continuity\n  - A.5. The continuity equation of a solution of the Friedmann equations\n- B. The barotropic equation of state and the density scaling law\n  - B.1. The equation of state\n  - B.2. The density scaling law\n  - B.3. Dust, radiation and vacuum energy\n- C. The cosmological constant as a fluid\n- D. Remaining TODO items",
+   "copyright": "2026 Jinzheng Li",
    "sections": [
     {
      "line": 83,
@@ -1112,13 +1131,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 3
   },
   {
    "file": "Physlib/Cosmology/FLRW/ReducedHubble.lean",
    "module": "Physlib.Cosmology.FLRW.ReducedHubble",
    "title": "The reduced Hubble function of the standard cosmological model",
    "doc": "## i. Overview\n\nThe reduced Hubble function of the standard cosmological model is\n`E(x) = √(Ω_Λ + Ω_m x⁻³ + Ω_r x⁻⁴ + Ω_K x⁻²)`, with the density parameters of\n`Physlib.Cosmology.FLRW.DensityParameters` taken at a reference time `t₀`. For an FLRW model\nfilled with matter (`ρ ∝ a⁻³`) and radiation (`ρ ∝ a⁻⁴`) that solves the Friedmann equations, the\nHubble parameter is `H = H₀ E(a / a₀)` with `H₀ = H(t₀) > 0` and `H ≥ 0`. The scaling laws of the\ndensities between `t₀` and `t` are hypotheses, not derived here.\n\nThe equality scale factors are the values of `x = a / a₀` at which two terms of `E²` are equal:\nradiation and matter at `a_eq = Ω_r / Ω_m`, matter and cosmological constant at\n`a_Λ = (Ω_m / Ω_Λ)^(1/3)`.\n\n## ii. Key results\n\n- `reducedHubble`: the reduced Hubble function of the standard model.\n- `FLRW.FriedmannSolution.sq_hubbleConstant_eq_mul_densityParameters`: the normalised Friedmann\n  equation `H² = H₀² (Ω_Λ + Ω_m x⁻³ + Ω_r x⁻⁴ + Ω_K x⁻²)` with `x = a / a₀`.\n- `FLRW.FriedmannSolution.sq_hubbleConstant_eq_reducedHubble`,\n  `FLRW.FriedmannSolution.hubbleConstant_eq_reducedHubble`: `H² = H₀² E(a / a₀)²` and\n  `H = H₀ E(a / a₀)`.\n- `equalityScaleFactorRadiationMatter`, `equalityScaleFactorMatterLambda` and the equalities\n  they realise.\n\n## iii. Table of contents\n\n- A. The reduced Hubble function\n- B. The equality scale factors\n- C. The Hubble parameter of a solution of the Friedmann equations\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Jinzheng Li",
    "sections": [
     {
      "line": 55,
@@ -1200,13 +1221,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Cosmology/FLRW/Solutions.lean",
    "module": "Physlib.Cosmology.FLRW.Solutions",
    "title": "Exact solutions of the Friedmann equations",
    "doc": "## i. Overview\n\nThis file collects the standard closed-form solutions of the Friedmann equations\n(`FirstOrderFriedmann` and `SecondOrderFriedmann` of `Physlib.Cosmology.FLRW.Basic`) and\nproves that they solve them: the spatially flat power-law solutions (radiation-dominated\nand Einstein-de Sitter), the Milne model, and the equilibrium relations of the Einstein static\nuniverse. The de Sitter solution is in `Physlib.Cosmology.FLRW.DeSitter`. The vanishing of the\ncurvature of the Milne model and the instability of the Einstein static universe are still TODO\nitems: neither the curvature of the FLRW metric nor a perturbation theory of the Friedmann\nequations is available yet.\n\nThe flat power-law solutions are also given as FLRW models: `FLRW.powerLaw` in\n`Physlib.Cosmology.FLRW.SpecificCases.PowerLaw`, `FLRW.radiationDominated` in\n`Physlib.Cosmology.FLRW.SpecificCases.RadiationDominated` and `FLRW.einsteinDeSitter` in\n`Physlib.Cosmology.FLRW.SpecificCases.EinsteinDeSitter`.\n\nEach solution is a scale factor `a : Time → ℝ` given by an explicit function of the time\ncoordinate `t.val`. Its time derivative `∂ₜ a` is computed through the bridge\n`deriv_comp_toRealCLE_of_hasDerivAt` from Mathlib's `HasDerivAt` on `ℝ`.\n\n## ii. Key results\n\n- `hubbleConstant_powerLaw`, `decelerationParameter_powerLaw`, `powerLaw_firstOrderFriedmann`,\n  `powerLaw_secondOrderFriedmann`: the flat power-law solutions `a = (t / t₀) ^ n`, stated\n  inline, have Hubble parameter `n / t` and deceleration parameter `(1 - n) / n`, and solve the\n  flat (`k = 0`, `Λ = 0`) Friedmann equations with the density `ρ = 3 n² / (8 π G t²)` and the\n  pressure `p = w ρ c²`, `1 + 3 w = 2 (1 - n) / n`, for `t > 0`.\n- `radiationScaleFactor_firstOrderFriedmann`, `radiationScaleFactor_secondOrderFriedmann`:\n  `a = (t / t₀) ^ (1/2)` solves the flat Friedmann equations with the density\n  `ρ = 3 / (32 π G t²)` and the radiation pressure `p = ρ c² / 3`; `q = 1` and\n  `H(t₀) = 1 / (2 t₀)`.\n- `einsteinDeSitterScaleFactor_firstOrderFriedmann`,\n  `einsteinDeSitterScaleFactor_secondOrderFriedmann`: `a = (t / t₀) ^ (2/3)` solves the flat\n  Friedmann equations with the dust density `ρ = 1 / (6 π G t²)` and `p = 0`; `q = 1 / 2` and\n  `H(t₀) = 2 / (3 t₀)`.\n\n- `milneScaleFactor_firstOrderFriedmann`, `milneScaleFactor_secondOrderFriedmann`: the Milne\n  scale factor `a = c t` solves the empty (`ρ = 0`, `p = 0`, `Λ = 0`) Friedmann equations with\n  `k = -1`; `q = 0`. `FLRW.milne`, `FLRW.friedmannSolution_milne`: the Milne model on the\n  interval `t > 0`, with the saddle geometry of curvature parameter `-1`, filled with the empty\n  cosmic fluid solves the Friedmann equations.\n- `einsteinStatic_density`, `einsteinStatic_curvature`: if `∂ₜ a = ∂ₜ ∂ₜ a = 0` at `t` and the\n  Friedmann equations hold there with `p = 0`, then `ρ = Λ c² / (4 π G)` and\n  `k c² / a² = 4 π G ρ`, so that `k > 0` when `ρ > 0` (`einsteinStatic_curvature_pos`).\n\nIn the power-law solutions `t₀ : Time` is the normalisation epoch (`a(t₀) = 1`) and the Big\nBang is at the origin `t.val = 0` of the time chart.\n\n## iii. Table of contents\n\n- A. The spatially flat power-law solutions\n  - A.1. Derivatives of the power-law scale factor\n  - A.2. The Hubble and deceleration parameters\n  - A.3. The radiation-dominated solution\n  - A.4. The Einstein-de Sitter solution\n- B. The Milne solution\n- C. The Einstein static universe\n- D. Remaining TODO items",
+   "copyright": "2026 Jinzheng Li",
    "sections": [
     {
      "line": 81,
@@ -1460,13 +1483,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 2
   },
   {
    "file": "Physlib/Cosmology/FLRW/SpecificCases/EinsteinDeSitter.lean",
    "module": "Physlib.Cosmology.FLRW.SpecificCases.EinsteinDeSitter",
    "title": "The Einstein-de Sitter model",
    "doc": "## i. Overview\n\nThe Einstein-de Sitter solution `einsteinDeSitterScaleFactor t₀`, `a(t) = (t / t₀) ^ (2/3)`, of\n`Physlib.Cosmology.FLRW.Solutions` as an FLRW model: the flat power-law model of\n`Physlib.Cosmology.FLRW.SpecificCases.PowerLaw` with `n = 2/3`, on the interval `t > 0`. Filled\nwith its cosmic fluid `CosmicFluid.powerLaw (2/3) 0 G c`, dust of density\n`3 n² / (8 π G t²) = 1 / (6 π G t²)` with `n = 2/3` and zero pressure, it solves the Friedmann\nequations without cosmological constant.\n\n## ii. Key results\n\n- `FLRW.einsteinDeSitter`: the Einstein-de Sitter model.\n- `FLRW.einsteinDeSitter_a`: its scale factor is `einsteinDeSitterScaleFactor t₀`.\n- `FLRW.friedmannSolution_einsteinDeSitter`: filled with dust, it solves the Friedmann\n  equations.\n\n## iii. Table of contents\n\n- A. The Einstein-de Sitter model\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Philippe Kevorkian",
    "sections": [
     {
      "line": 45,
@@ -1500,13 +1525,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Cosmology/FLRW/SpecificCases/PowerLaw.lean",
    "module": "Physlib.Cosmology.FLRW.SpecificCases.PowerLaw",
    "title": "The flat power-law models",
    "doc": "## i. Overview\n\nThe spatially flat power-law solutions `a(t) = (t / t₀) ^ n` of `Physlib.Cosmology.FLRW.Solutions`\nas FLRW models. The model `FLRW.powerLaw t₀ ht₀ n` lives on the interval `t > 0`, after the\norigin `t.val = 0` of the time chart (for `n > 0`, the Big Bang, where the scale factor vanishes),\nfor a normalisation epoch `t₀ > 0`, and has flat spatial slices. Filled with the cosmic fluid\n`CosmicFluid.powerLaw n w G c`, of density `3 n² / (8 π G t²)` and pressure `w ρ c²`, it solves\nthe Friedmann equations without cosmological constant when `n ≠ 0` and\n`1 + 3 w = 2 (1 - n) / n`. The radiation-dominated and Einstein-de Sitter models, the\ncases `n = 1/2` and `n = 2/3`, are in `Physlib.Cosmology.FLRW.SpecificCases.RadiationDominated`\nand `Physlib.Cosmology.FLRW.SpecificCases.EinsteinDeSitter`.\n\n## ii. Key results\n\n- `FLRW.powerLaw`: the flat power-law model on the interval `t > 0`.\n- `CosmicFluid.powerLaw`: the cosmic fluid of the flat power-law solution.\n- `FLRW.friedmannSolution_powerLaw`: the model filled with this fluid solves the Friedmann\n  equations.\n\n## iii. Table of contents\n\n- A. The power-law model\n- B. The cosmic fluid and the Friedmann equations\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Philippe Kevorkian",
    "sections": [
     {
      "line": 49,
@@ -1544,13 +1571,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Cosmology/FLRW/SpecificCases/RadiationDominated.lean",
    "module": "Physlib.Cosmology.FLRW.SpecificCases.RadiationDominated",
    "title": "The radiation-dominated model",
    "doc": "## i. Overview\n\nThe radiation-dominated solution `radiationScaleFactor t₀`, `a(t) = (t / t₀) ^ (1/2)`, of\n`Physlib.Cosmology.FLRW.Solutions` as an FLRW model: the flat power-law model of\n`Physlib.Cosmology.FLRW.SpecificCases.PowerLaw` with `n = 1/2`, on the interval `t > 0`. Filled\nwith its cosmic fluid `CosmicFluid.powerLaw (1/2) (1/3) G c`, radiation of density\n`3 n² / (8 π G t²) = 3 / (32 π G t²)` with `n = 1/2` and pressure `ρ c² / 3`, it solves the\nFriedmann equations without cosmological constant.\n\n## ii. Key results\n\n- `FLRW.radiationDominated`: the radiation-dominated model.\n- `FLRW.radiationDominated_a`: its scale factor is `radiationScaleFactor t₀`.\n- `FLRW.friedmannSolution_radiationDominated`: filled with radiation, it solves the Friedmann\n  equations.\n\n## iii. Table of contents\n\n- A. The radiation-dominated model\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Philippe Kevorkian",
    "sections": [
     {
      "line": 45,
@@ -1584,7 +1613,8 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   }
  ]
 }

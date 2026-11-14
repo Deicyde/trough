@@ -8,7 +8,7 @@ proof: formalized
 
 # The Degradable Order
 
-The module `QuantumInfo.Channels.DegradableOrder`, [QuantumInfo/Channels/DegradableOrder.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/Channels/DegradableOrder.lean): 1 declaration, 0 with a docstring.
+The module `QuantumInfo.Channels.DegradableOrder`, [QuantumInfo/Channels/DegradableOrder.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/Channels/DegradableOrder.lean): 1 declaration, none with a docstring.
 
 > We define the "degradable order" on channels, where M ≤ N if N can be degraded to M. This is a
 > scoped instance, because there are other reasonable orders on channels.

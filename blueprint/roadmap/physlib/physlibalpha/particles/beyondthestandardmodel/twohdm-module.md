@@ -8,7 +8,7 @@ proof: formalized
 
 # The Module structure on the two Higgs doublet model
 
-The module `PhyslibAlpha.Particles.BeyondTheStandardModel.TwoHDM.Module`, [PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/Module.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/Module.lean): 14 declarations (6 instances with no name), 0 with a docstring.
+The module `PhyslibAlpha.Particles.BeyondTheStandardModel.TwoHDM.Module`, [PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/Module.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Particles/BeyondTheStandardModel/TwoHDM/Module.lean): 14 declarations (6 instances with no name), none with a docstring.
 
 > The complex vector space (module) structure on two Higgs doublet configurations.
 

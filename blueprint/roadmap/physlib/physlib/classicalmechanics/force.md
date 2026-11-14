@@ -27,10 +27,7 @@ The module `Physlib.ClassicalMechanics.Force`, [Physlib/ClassicalMechanics/Force
 > `frame.Force Object`, but also occupies a general name that future non-particle
 > Newtonian formalizations may need.
 >
-> The target type `Object` is therefore deliberately left arbitrary. Newtonian mechanics is
-> not limited to point particles, so this force representation is kept independent
-> of any particular model of matter, with the intention it may get generalized for
-> rigid body mechanics, continuum mechanics, or other Newtonian models in the future.
+> The target type `Object` is therefore deliberately left arbitrary. …
 
 **`ClassicalMechanics.ReferenceFrame.Force`**, a structure, [line 45](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/Force.lean#L45).
 

@@ -7,6 +7,7 @@
    "module": "Physlib.Relativity.Bispinors.Basic",
    "title": "",
    "doc": "## Bispinors",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 27,
@@ -52,13 +53,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 3
   },
   {
    "file": "Physlib/Relativity/Bispinors/Pauli/Basic.lean",
    "module": "Physlib.Relativity.Bispinors.Pauli.Basic",
    "title": "",
    "doc": "## Pauli matrices as Lorentz tensors\n\nThe results in this file are primarily used to show that\nthe pauli matrices in invariant under the `SL(2,ℂ)` action.",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -119,13 +122,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Bispinors/Pauli/Relations.lean",
    "module": "Physlib.Relativity.Bispinors.Pauli.Relations",
    "title": "",
    "doc": "## Contraction of indices of Pauli matrix.\n\nThe results in this file include contractions, anticommutators, and triple-product identities\nfor the Pauli four-vectors.\n\nThe current way this result is proved is by using tensor tree manipulations.\nThere is likely a more direct path to this result.\n\n## References\n\n* Dreiner, Haber and Martin, *Two-component spinor techniques and Feynman rules for quantum\n  field theory and supersymmetry*, arXiv:0812.1594, equations (2.54) and (2.55), in the\n  conventions `g = diag(+1, -1, -1, -1)` and `ε⁰¹²³ = +1`. [ref: Dreiner:2008tw]",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 140,
@@ -215,13 +220,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Bispinors/Pauli/ToTensor.lean",
    "module": "Physlib.Relativity.Bispinors.Pauli.ToTensor",
    "title": "Pauli matrices as a tensor",
    "doc": "",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 36,
@@ -483,13 +490,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 1
   },
   {
    "file": "Physlib/Relativity/Causality/Basic.lean",
    "module": "Physlib.Relativity.Causality.Basic",
    "title": "",
    "doc": "## Causality of Lorentz vectors",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -638,13 +647,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Causality/CausallyFollows.lean",
    "module": "Physlib.Relativity.Causality.CausallyFollows",
    "title": "Vectors in the causal future of the origin",
    "doc": "## i. Overview\n\nA vector `u` with `causallyFollows 0 u` is future-directed causal: time-like or light-like with a\nnonnegative time component (`causallyFollows_zero_iff`). For two such vectors of Minkowski space\n(signature `+---`), the Minkowski product dominates the product of the Minkowski norms,\n`⟪u, v⟫ₘ ≥ √⟪u, u⟫ₘ √⟪v, v⟫ₘ` (reverse Cauchy-Schwarz inequality), and the Minkowski norm of the\nsum dominates the sum of the norms, `√⟪u + v, u + v⟫ₘ ≥ √⟪u, u⟫ₘ + √⟪v, v⟫ₘ` (reverse triangle\ninequality). The proofs reduce to the elementary inequality `√(a² - c²) √(b² - d²) ≤ a b - c d` for\n`0 ≤ c ≤ a`, `0 ≤ d ≤ b`, applied to the time components and the Euclidean norms of the spatial\nparts, together with the Euclidean Cauchy-Schwarz inequality.\n\n## ii. Key results\n\n- `causallyFollows_zero_iff`: `causallyFollows 0 u ↔ 0 ≤ ⟪u, u⟫ₘ ∧ 0 ≤ u⁰`;\n  `causallyFollows_zero_sub`: `q - p` is in the causal future of `0` when `q` causally follows `p`.\n- `norm_spatialPart_le_timeComponent_of_causallyFollows`: `‖u_spatial‖ ≤ u⁰`.\n- `sqrt_mul_sqrt_le_minkowskiProduct_of_causallyFollows`: the reverse Cauchy-Schwarz inequality.\n- `sqrt_add_sqrt_le_sqrt_add_of_causallyFollows`: the reverse triangle inequality;\n  `causallyFollows_zero_add_of_causallyFollows`.\n- `minkowskiProduct_eq_iff_of_causallyFollows`: equality in the reverse Cauchy-Schwarz inequality\n  holds if and only if the two vectors are proportional (with a nonnegative factor).\n- `sqrt_add_eq_iff_of_causallyFollows`: equality in the reverse triangle inequality holds if and\n  only if equality holds in the reverse Cauchy-Schwarz inequality.\n\n## iii. Table of contents\n\n- A. The causal future of the origin\n- B. The reverse Cauchy-Schwarz inequality\n- C. The reverse triangle inequality\n- D. The equality cases",
+   "copyright": "2026 Philippe Kevorkian",
    "sections": [
     {
      "line": 55,
@@ -730,13 +741,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Causality/LightLike.lean",
    "module": "Physlib.Relativity.Causality.LightLike",
    "title": "",
    "doc": "## Properties of light like vectors",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -781,13 +794,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Causality/TimeLike.lean",
    "module": "Physlib.Relativity.Causality.TimeLike",
    "title": "",
    "doc": "## Properties of time like vectors",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -872,13 +887,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/CliffordAlgebra.lean",
    "module": "Physlib.Relativity.CliffordAlgebra",
    "title": "The Clifford algebra of the gamma matrices",
    "doc": "The real algebra generated by the gamma matrices in the Dirac representation is isomorphic to the\nClifford algebra of the Minkowski quadratic form.\n\n## i. Overview\n\nThis file obtains the gamma matrices in the Dirac representation from the endomorphisms\n`Fermion.Dirac.gamma`. The algebra equivalence `Fermion.Dirac.endEquivMatrix` changes their chiral\ncoordinates to Dirac coordinates, and the lemmas `γ0_eq_matrix` to `γ3_eq_matrix` give their\nentries.\n\nThe gamma matrices obey the anticommutation relations `γ^μ γ^ν + γ^ν γ^μ = 2 η^μν`, where `η` is\nthe Minkowski metric of signature `(+,-,-,-)`. The Clifford algebra of the quadratic form\n`diracForm` is the real algebra generated by four elements subject to these relations and to no\nothers. Sending its generators to the gamma matrices gives an algebra homomorphism\n`ofCliffordAlgebra` onto the real algebra `diracAlgebra` generated by the gamma matrices. The main\nresult is that this homomorphism is an isomorphism. In other words, every identity between\npolynomial expressions with real coefficients in the gamma matrices follows from the\nanticommutation relations.\n\nThe proof counts dimensions. The Clifford algebra has dimension `2 ^ 4 = 16`, one for each subset\nof its four generators. The algebra `diracAlgebra` is the image of the Clifford algebra, so its\ndimension is at most 16. It contains the 16 products of gamma matrices with increasing indices,\nwhich are linearly independent, so its dimension is exactly 16. Hence `ofCliffordAlgebra`, a\nsurjective linear map between two spaces of the same finite dimension, is injective.\n\n## ii. Key results\n\n- `γ0`, `γ1`, `γ2`, `γ3` : the gamma matrices in the Dirac representation.\n- `γ_anticomm` : the anticommutation relations of the gamma matrices.\n- `γ5` : the chirality matrix `i γ0 γ1 γ2 γ3`.\n- `diracAlgebra` : the algebra generated by the gamma matrices over `ℝ`.\n- `γProd` : the products of the gamma matrices with increasing indices.\n- `linearIndependent_γProd` : the 16 products `γProd s` are linearly independent over `ℝ`.\n- `diracForm` : the quadratic form with Minkowski signature `(+,-,-,-)`.\n- `finrank_cliffordAlgebra_diracForm` : the Clifford algebra of `diracForm` has dimension 16\n  over `ℝ`.\n- `ofCliffordAlgebra` : the algebra homomorphism from the Clifford algebra to `diracAlgebra`.\n- `ofCliffordAlgebra_surjective` : the homomorphism `ofCliffordAlgebra` is surjective.\n- `finrank_diracAlgebra` : the algebra `diracAlgebra` has dimension 16 over `ℝ`.\n- `ofCliffordAlgebra_injective` : the homomorphism `ofCliffordAlgebra` is injective.\n- `ofCliffordAlgebraEquiv` : the isomorphism of algebras between the Clifford algebra of\n  `diracForm` and `diracAlgebra`.\n\n## iii. Table of contents\n\n- A. Dirac matrix representation\n  - A.1. The gamma matrices\n  - A.2. Products and the anticommutation relations\n  - A.3. Unitarity and the chirality matrix\n- B. The algebra generated by the gamma matrices\n  - B.1. The ordered products of the gamma matrices\n- C. The Clifford algebra of diracForm\n- D. The homomorphism ofCliffordAlgebra\n  - D.1. Definition and values on the generators\n  - D.2. Surjectivity\n  - D.3. The dimension of diracAlgebra\n  - D.4. Injectivity and the isomorphism\n\n## iv. References\n\n* Dreiner, Haber and Martin, Two-component spinor techniques and Feynman rules for quantum\n  field theory and supersymmetry, Phys. Rept. 494 (2010) 1-196. [ref: Dreiner:2008tw]\n  The products of gamma matrices with increasing indices are linearly independent:\n  Appendix G.3, page 213 of arXiv:0812.1594v6. The case of four dimensions: eq. (G.1.102)\n  and footnote 129, page 207.",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 94,
@@ -1324,13 +1341,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 1
   },
   {
    "file": "Physlib/Relativity/Fermions/Dirac/Basic.lean",
    "module": "Physlib.Relativity.Fermions.Dirac.Basic",
    "title": "Dirac fermions",
    "doc": "In this file we define Dirac fermions.\nThis corresponds to a combination of two Weyl fermions (ψ^α, χ_{dot α})\nThat is a LeftHandedWeyl and a DualRightHandedWeyl.\nThe algebra equivalence `Dirac.endEquivMatrix` expresses their endomorphisms\nas matrices in the Dirac representation, using an explicit change from the chiral basis.\n\n## References\n\n* arXiv:0812.1594 page 197. [ref: Dreiner:2008tw]",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 45,
@@ -1484,13 +1503,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Fermions/Dirac/GammaMatrices.lean",
    "module": "Physlib.Relativity.Fermions.Dirac.GammaMatrices",
    "title": "Gamma endomorphisms of Dirac fermions",
    "doc": "The basis `chiralBasis` orders the coordinates as\n`(left 0, left 1, dualRight 0, dualRight 1)`. The Weyl bases are the standard\ncoordinate bases: the first component has an undotted upper spinor index and the\nsecond a dotted lower spinor index.\n\n`gammaMatrix` is Clifford multiplication by a real Lorentz vector, valued in\ncomplex linear endomorphisms of `Dirac`. Physlib's `Lorentz.Vector` has upper\nLorentz indices and uses the Pauli basis `(1, -σ¹, -σ², -σ³)` for its Hermitian\nmatrix representation. Thus `gammaMatrix v` has upper-right block\n`v⁰ 1 - vⁱ σⁱ` and lower-left block `v⁰ 1 + vⁱ σⁱ` in the chiral basis.\n\nThe upper-index components `gamma μ` are derived by raising the index of\n`gammaMatrix (Lorentz.Vector.basis μ)`. In particular,\n`gammaMatrix v = v⁰ gamma 0 - vⁱ gamma i`, with signature `(+,-,-,-)`.\nThese coordinates differ from the Dirac representation in\n`Physlib.Relativity.CliffordAlgebra`.\n\nThe Clifford relations hold at the endomorphism level. The chirality operator\n`gamma5` has matrix `diag(-1, -1, 1, 1)`, and defines the complementary projectors\n`leftChiralProjector` and `rightChiralProjector`.",
+   "copyright": "2026 Zhuoran Li",
    "sections": [
     {
      "line": 44,
@@ -1744,13 +1765,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Fermions/Dirac/Slash.lean",
    "module": "Physlib.Relativity.Fermions.Dirac.Slash",
    "title": "The Dirac slash operator",
    "doc": "This file defines the Dirac slash `k̸ = k_μ γ^μ` of a Lorentz vector, in the Dirac\nrepresentation obtained from the gamma endomorphisms `Fermion.Dirac.gamma` via the change of\ncoordinates `Fermion.Dirac.endEquivMatrix`. The slash is the Dirac representation of Clifford\nmultiplication `Fermion.Dirac.gammaMatrix`, and so contracts the lowered coordinates of a\nLorentz vector with the gamma matrices.\n\n## Main Definitions\n\n- `Slash.slash`: The Dirac slash `k̸ = k_μ γ^μ` of a Lorentz vector\n- `Slash.slashProd`: The product of the Dirac slashes of a list of Lorentz vectors",
+   "copyright": "2026 Wouter Deconinck",
    "sections": [],
    "declarations": [
     {
@@ -1843,13 +1866,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Fermions/Weyl/Contraction.lean",
    "module": "Physlib.Relativity.Fermions.Weyl.Contraction",
    "title": "Contraction of Weyl fermions",
    "doc": "The `SL(2, ℂ)`-invariant contractions of Weyl fermions with their duals, unique up to scale.\n\n## i. Overview\n\nA left-handed Weyl fermion `ψ^a` and a dual-left-handed Weyl fermion `φ_a` contract to the\nnumber `ψ^a φ_a`, the dot product of their components in the standard bases. It is invariant\nunder `SL(2, ℂ)` because `M` acts on `ψ` by `M` and on `φ` by `(M⁻¹)ᵀ`. Likewise a right-handed\nfermion `ψ^{dot a}`, acted on by the complex conjugate of `M`, contracts with a\ndual-right-handed fermion `φ_{dot a}`, acted on by `(M⁻¹)^†`.\n\n## ii. Key results\n\n- `LeftHandedWeyl.contr` : the contraction `ψ^a φ_a`.\n- `DualLeftHandedWeyl.contr` : the contraction `φ_a ψ^a`.\n- `RightHandedWeyl.contr` : the contraction `ψ^{dot a} φ_{dot a}`.\n- `DualRightHandedWeyl.contr` : the contraction `φ_{dot a} ψ^{dot a}`.\n- `LeftHandedWeyl.eq_smul_contr` : every invariant pairing of left-handed with dual-left-handed\n  Weyl fermions is a multiple of `LeftHandedWeyl.contr`; likewise\n  `DualLeftHandedWeyl.eq_smul_contr`, `RightHandedWeyl.eq_smul_contr` and\n  `DualRightHandedWeyl.eq_smul_contr`.\n\n## iii. Table of contents\n\n- A. Contractions of left-handed Weyl fermions\n  - A.1. The contraction `ψ^a φ_a`\n    - A.1.1. Basic properties\n  - A.2. The contraction `φ_a ψ^a`\n    - A.2.1. Basic properties\n  - A.3. Symmetry\n  - A.4. Nondegeneracy\n  - A.5. Perfect pairing\n  - A.6. Uniqueness up to scale\n- B. Contractions of right-handed Weyl fermions\n  - B.1. The contraction `ψ^{dot a} φ_{dot a}`\n    - B.1.1. Basic properties\n  - B.2. The contraction `φ_{dot a} ψ^{dot a}`\n    - B.2.1. Basic properties\n  - B.3. Symmetry\n  - B.4. Nondegeneracy\n  - B.5. Perfect pairing\n  - B.6. Uniqueness up to scale\n\n## iv. References\n\n* Dreiner, Haber and Martin, Two-component spinor techniques and Feynman rules for quantum\n  field theory and supersymmetry, Phys. Rept. 494 (2010) 1-196. [ref: Dreiner:2008tw]",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 76,
@@ -2199,13 +2224,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Fermions/Weyl/DualLeftHanded.lean",
    "module": "Physlib.Relativity.Fermions.Weyl.DualLeftHanded",
    "title": "Dual left handed Weyl fermions",
    "doc": "Dual left-handed Weyl fermions and the irreducible representation of `SL(2, ℂ)` they carry.\n\n## i. Overview\n\nDual left-handed Weyl fermions sit in the dual of the fundamental representation of `SL(2,ℂ)`,\nand we consider them to have down indices `ψ_α` with `α = 1,2`.\n\nIn this file we define the type `DualLeftHandedWeyl`, equip it with the structure of a\ntwo-dimensional complex vector space with a standard basis, define the representation `rep` of\n`SL(2, ℂ)` on it by `M ↦ (M⁻¹)ᵀ`, and show that `rep` is irreducible (C.1).\n\n## ii. Key results\n\n- `DualLeftHandedWeyl` : the type of dual left-handed Weyl fermions.\n- `DualLeftHandedWeyl.basis` : the standard basis, indexed by `Fin 2`.\n- `DualLeftHandedWeyl.rep` : the representation of `SL(2, ℂ)`.\n- `DualLeftHandedWeyl.eq_zero_of_rep_eq_smul` : `rep` has no common eigenvector.\n- `DualLeftHandedWeyl.end_eq_smul_id_of_commute_rep` : Schur's lemma for `rep`.\n\n## iii. Table of contents\n\n- A. The definition of the type\n  - A.1. Underlying module structure\n- B. Basis\n- C. Representation\n  - C.1. Irreducibility\n\n## iv. References\n\n* A good reference for the material in this file, although it uses a different\n  index convention: https://particle.physics.ucdavis.edu/modernsusy/slides/slideimages/spinorfeynrules.pdf. [ref: ucdavis_spinorfeynrules]",
+   "copyright": "2026 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 54,
@@ -2439,13 +2466,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 1
   },
   {
    "file": "Physlib/Relativity/Fermions/Weyl/DualRightHanded.lean",
    "module": "Physlib.Relativity.Fermions.Weyl.DualRightHanded",
    "title": "Dual right handed Weyl fermions",
    "doc": "Dual right-handed Weyl fermions and the irreducible representation of `SL(2, ℂ)` they carry.\n\n## i. Overview\n\nDual right-handed Weyl fermions sit in the dual-conjugate representation of `SL(2,ℂ)`,\nand we consider them to have down indices `ψ_{dot α}` with `α = 1,2`.\n\nIn this file we define the type `DualRightHandedWeyl`, equip it with the structure of a\ntwo-dimensional complex vector space with a standard basis, define the representation `rep` of\n`SL(2, ℂ)` on it by `M ↦ (M⁻¹)^†`, and show that `rep` is irreducible (C.1).\n\n## ii. Key results\n\n- `DualRightHandedWeyl` : the type of dual right-handed Weyl fermions.\n- `DualRightHandedWeyl.basis` : the standard basis, indexed by `Fin 2`.\n- `DualRightHandedWeyl.rep` : the representation of `SL(2, ℂ)`.\n- `DualRightHandedWeyl.eq_zero_of_rep_eq_smul` : `rep` has no common eigenvector.\n- `DualRightHandedWeyl.end_eq_smul_id_of_commute_rep` : Schur's lemma for `rep`.\n\n## iii. Table of contents\n\n- A. The definition of the type\n  - A.1. Underlying module structure\n- B. Basis\n- C. Representation\n  - C.1. Irreducibility\n\n## iv. References\n\n* Dreiner, Haber and Martin, Two-component spinor techniques and Feynman rules for quantum\n  field theory and supersymmetry, Phys. Rept. 494 (2010) 1-196. [ref: Dreiner:2008tw]",
+   "copyright": "2026 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 54,
@@ -2679,13 +2708,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 1
   },
   {
    "file": "Physlib/Relativity/Fermions/Weyl/Duals.lean",
    "module": "Physlib.Relativity.Fermions.Weyl.Duals",
    "title": "Duals for fermions",
    "doc": "In this file we give the relationship between Weyl fermions\nand their duals.",
+   "copyright": "2026 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 33,
@@ -2751,13 +2782,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 2
   },
   {
    "file": "Physlib/Relativity/Fermions/Weyl/LeftHanded.lean",
    "module": "Physlib.Relativity.Fermions.Weyl.LeftHanded",
    "title": "Left handed Weyl fermions",
    "doc": "Left-handed Weyl fermions and the irreducible representation of `SL(2, ℂ)` they carry.\n\n## i. Overview\n\nLeft-handed Weyl fermions sit in the fundamental representation of `SL(2,ℂ)`,\nand we consider them to have up indices `ψ^α` with `α = 1,2`.\n\nIn this file we define the type `LeftHandedWeyl`, equip it with the structure of a\ntwo-dimensional complex vector space with a standard basis, define the representation `rep` of\n`SL(2, ℂ)` on it by `M ↦ M`, and show that `rep` is irreducible (C.1).\n\n## ii. Key results\n\n- `LeftHandedWeyl` : the type of left-handed Weyl fermions.\n- `LeftHandedWeyl.basis` : the standard basis, indexed by `Fin 2`.\n- `LeftHandedWeyl.rep` : the representation of `SL(2, ℂ)`.\n- `LeftHandedWeyl.eq_zero_of_rep_eq_smul` : `rep` has no common eigenvector.\n- `LeftHandedWeyl.end_eq_smul_id_of_commute_rep` : Schur's lemma for `rep`.\n\n## iii. Table of contents\n\n- A. The definition of the type\n  - A.1. Underlying module structure\n- B. Basis\n- C. Representation\n  - C.1. Irreducibility\n\n## iv. References\n\n* Dreiner, Haber and Martin, Two-component spinor techniques and Feynman rules for quantum\n  field theory and supersymmetry, Phys. Rept. 494 (2010) 1-196. [ref: Dreiner:2008tw]",
+   "copyright": "2026 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 55,
@@ -2991,13 +3024,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Fermions/Weyl/Metric.lean",
    "module": "Physlib.Relativity.Fermions.Weyl.Metric",
    "title": "Metrics of Weyl fermions",
    "doc": "We define the metrics for Weyl fermions, often denoted `ε` in the literature.\nThese allow us to go from left-handed to dual-left-handed Weyl fermions and back,\nand from right-handed to dual-right-handed Weyl fermions and back.",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 30,
@@ -3243,13 +3278,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 1
   },
   {
    "file": "Physlib/Relativity/Fermions/Weyl/RightHanded.lean",
    "module": "Physlib.Relativity.Fermions.Weyl.RightHanded",
    "title": "Right handed Weyl fermions",
    "doc": "Right-handed Weyl fermions and the irreducible representation of `SL(2, ℂ)` they carry.\n\n## i. Overview\n\nRight-handed Weyl fermions sit in the conjugate representation of `SL(2,ℂ)`,\nand we consider them to have up indices `ψ^{dot α}` with `α = 1,2`.\n\nIn this file we define the type `RightHandedWeyl`, equip it with the structure of a\ntwo-dimensional complex vector space with a standard basis, define the representation `rep` of\n`SL(2, ℂ)` on it by `M ↦ M̅`, and show that `rep` is irreducible (C.1).\n\n## ii. Key results\n\n- `RightHandedWeyl` : the type of right-handed Weyl fermions.\n- `RightHandedWeyl.basis` : the standard basis, indexed by `Fin 2`.\n- `RightHandedWeyl.rep` : the representation of `SL(2, ℂ)`.\n- `RightHandedWeyl.eq_zero_of_rep_eq_smul` : `rep` has no common eigenvector.\n- `RightHandedWeyl.end_eq_smul_id_of_commute_rep` : Schur's lemma for `rep`.\n\n## iii. Table of contents\n\n- A. The definition of the type\n  - A.1. Underlying module structure\n- B. Basis\n- C. Representation\n  - C.1. Irreducibility\n\n## iv. References\n\n* Dreiner, Haber and Martin, Two-component spinor techniques and Feynman rules for quantum\n  field theory and supersymmetry, Phys. Rept. 494 (2010) 1-196. [ref: Dreiner:2008tw]",
+   "copyright": "2026 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 53,
@@ -3483,13 +3520,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Fermions/Weyl/Two.lean",
    "module": "Physlib.Relativity.Fermions.Weyl.Two",
    "title": "Tensor product of two Weyl fermion",
    "doc": "",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 30,
@@ -3843,13 +3882,15 @@
     }
    ],
    "private": 1,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Fermions/Weyl/Unit.lean",
    "module": "Physlib.Relativity.Fermions.Weyl.Unit",
    "title": "Units of Weyl fermions",
    "doc": "We define the units for Weyl fermions, often denoted `δ` in the literature.",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 212,
@@ -4055,13 +4096,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/LorentzAlgebra/Basic.lean",
    "module": "Physlib.Relativity.LorentzAlgebra.Basic",
    "title": "The Lorentz Algebra",
    "doc": "We define\n\n- Define `lorentzAlgebra` via `LieAlgebra.Orthogonal.so'` as a subalgebra of\n  `Matrix (Fin 1 ⊕ Fin 3) (Fin 1 ⊕ Fin 3) ℝ`.\n- In `mem_iff` prove that a matrix is in the Lorentz algebra if and only if it satisfies the\n  condition `Aᵀ * η = - η * A`.",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -4130,13 +4173,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/LorentzAlgebra/Basis.lean",
    "module": "Physlib.Relativity.LorentzAlgebra.Basis",
    "title": "Generators of the Lorentz algebra",
    "doc": "Standard boost and rotation generators and the tangent of a finite boost curve.\n\n## i. Overview\n\nThis file defines the 6 standard generators of the Lorentz algebra so(1,3) :\n- **Boost generators** K₀, K₁, K₂: Generate Lorentz transformations (velocity changes)\n- **Rotation generators** J₀, J₁, J₂: Generate spatial rotations\n\nThese generators form a basis for the 6-dimensional Lie algebra so(1,3), though the full\nbasis structure (linear independence and spanning) is not yet proven here.\n\n- `boostGenerator i`: Infinitesimal boost in the i-th spatial direction. The native\n  boost curve parametrized by rapidity has tangent `-boostGenerator i` at zero.\n- `rotationGenerator i`: Infinitesimal rotation about the i-th axis following the\n  right-hand rule. Exponentiating this generator produces spatial rotations.\n\nEach generator satisfies the Lorentz algebra condition: Aᵀ η = -η A, where η is the\nMinkowski metric with signature (+,-,-,-).\n\nThe boost generators are symmetric matrices with non-zero entries only in the time-space\nblock, while rotation generators are antisymmetric matrices acting only on spatial indices.\n\nTODO can be completed by proving linear independence and spanning of these\n6 generators, then constructing a formal `Basis (Fin 2 × Fin 3) ℝ lorentzAlgebra`.\n\n## ii. Key results\n\n- `boostGenerator_mem` and `rotationGenerator_mem`: the generators lie in the Lorentz algebra.\n- `hasDerivAt_boost_tanh_zero`: the rapidity boost curve has tangent the negative boost generator.\n\n## iii. Table of contents\n\n- A. Generator definitions\n- B. Algebraic properties\n- C. Rapidity derivatives\n\n## iv. References\n\n* Weinberg, The Quantum Theory of Fields, Vol 1, Section 2.7. [ref: weinberg_qft1]\n* Peskin & Schroeder, An Introduction to QFT, Appendix A. [ref: peskin_schroeder_qft]",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 65,
@@ -4226,13 +4271,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/LorentzAlgebra/ExponentialMap.lean",
    "module": "Physlib.Relativity.LorentzAlgebra.ExponentialMap",
    "title": "Exponential map from the Lorentz algebra to the restricted Lorentz group",
    "doc": "In 1+3 Minkowski space with metric η, the Lie algebra `lorentzAlgebra` exponentiates\nonto the proper orthochronous Lorentz group (`LorentzGroup.restricted 3`). We prove:\n* exp_mem_lorentzGroup : `NormedSpace.exp ℝ A.1 ∈ LorentzGroup 3` (η-preserving).\n* exp_transpose_of_mem_algebra : `exp (A.1ᵀ) = η * exp (−A.1) * η`.\n* exp_isProper : `det (exp A) = 1`.\n* exp_isOrthochronous : `(exp A)₀₀ ≥ 1`.\nHence `exp A ∈ LorentzGroup.restricted 3`.",
+   "copyright": "2025 Matteo Cipollina",
    "sections": [],
    "declarations": [
     {
@@ -4325,13 +4372,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/LorentzGroup/Basic.lean",
    "module": "Physlib.Relativity.LorentzGroup.Basic",
    "title": "The Lorentz Group",
    "doc": "We define the Lorentz group.\n\n## References\n\n* Lorentz Transformations, Rotations, and Boosts, Jaffe.\n  <https://cdn.ku.edu.tr/cdn/files/amostafazadeh/phys517_518/phys517_2016f/Handouts/A_Jaffi_Lorentz_Group.pdf>.\n  [ref: jaffe_lorentz_notes]",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 36,
@@ -4821,13 +4870,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 1
   },
   {
    "file": "Physlib/Relativity/LorentzGroup/Boosts/Apply.lean",
    "module": "Physlib.Relativity.LorentzGroup.Boosts.Apply",
    "title": "",
    "doc": "## Boosts applied to Lorentz vectors\n\nThese recover what one would describe as the ordinary Lorentz transformations\nof Lorentz vectors.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -4864,13 +4915,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/LorentzGroup/Boosts/Axis.lean",
    "module": "Physlib.Relativity.LorentzGroup.Boosts.Axis",
    "title": "Coordinate-axis boosts in `SL(2,ℂ)` and the Lorentz group",
    "doc": "## i. Overview\n\nWe define the axis-indexed lift `Lorentz.SL2C.boostAxis` in `SL(2,ℂ)` and its image\n`LorentzGroup.boostAxis` in the Lorentz group.\n\nThe parameter `t ≠ 0` is multiplicative; replacing `t` by `t⁻¹` reverses the boost. For\n`t > 0`, its rapidity is `2 * log t`; negative values retain the action of the central\nelement `-1 : SL(2,ℂ)`.\n\nFor the `z`-axis, `LorentzGroup.boostAxis 2 t ht` agrees with the velocity-parameterized boost\n`LorentzGroup.boost 2 β` at `β = (t² - t⁻²) / (t² + t⁻²)`.\n\nThe lift is Hermitian along every axis, and the `x`- and `y`-axis lifts are conjugates of\nthe diagonal `z`-axis lift.\n\nThe index `Sum.inl 0` is the time coordinate, while `Sum.inr 0`, `Sum.inr 1`, and\n`Sum.inr 2` are the `x`, `y`, and `z` coordinates. Accordingly, axis indices `0`, `1`, and\n`2` select the `x`-, `y`-, and `z`-axis boosts. The covering map uses the action\n`X ↦ M X Mᴴ` on self-adjoint matrices.\n\n## ii. Key results\n\n- `Lorentz.SL2C.boostAxis` defines the axis-boost lifts.\n- `Lorentz.SL2C.boostAxis_inv` and `Lorentz.SL2C.boostAxis_conjTranspose` give their\n  inverses and Hermiticity.\n- `LorentzGroup.boostAxis` defines the induced Lorentz transformations, with entries given by\n  `LorentzGroup.boostAxis_apply`.\n- `Lorentz.SL2C.exists_conj_boostAxis` proves that every lift is conjugate to the `z`-boost.\n\n## iii. Table of contents\n\n- A. The axis-boost lift\n- B. Axis conjugation\n- C. The induced Lorentz transformation",
+   "copyright": "2026 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 57,
@@ -4968,13 +5021,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/LorentzGroup/Boosts/Basic.lean",
    "module": "Physlib.Relativity.LorentzGroup.Boosts.Basic",
    "title": "Boosts in the Lorentz group",
    "doc": "Lorentz factors, finite coordinate boosts and their matrix entries.\n\n## i. Overview\n\nThe Lorentz factor `γ β` determines a boost at speed `β`, with `|β| < 1`.\nParametrizing the speed by rapidity gives `γ (Real.tanh r) = Real.cosh r`.\nThe Minkowski signature has one positive time coordinate and negative spatial coordinates.\nThe time-space entries of a boost are `-γ β * β`.\n\n## ii. Key results\n\n- `γ_tanh`: the Lorentz factor expressed in terms of rapidity.\n- `boost`: a Lorentz boost along one spatial coordinate.\n- `boost_transpose_eq_self` and `boost_inverse`: transpose and inverse identities.\n- `boost_inl_0_inr_self`: the active time-space matrix entry of a boost.\n\n## iii. Table of contents\n\n- A. The Lorentz factor\n- B. Lorentz boosts\n- C. Boosts in the zero-direction\n\n## iv. References\n\nThe rapidity identity uses the hyperbolic-function identities in\n`Mathlib.Analysis.SpecialFunctions.Artanh`.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 54,
@@ -5232,13 +5287,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/LorentzGroup/Boosts/Generalized.lean",
    "module": "Physlib.Relativity.LorentzGroup.Boosts.Generalized",
    "title": "Generalized Boosts",
    "doc": "This module defines a generalization of the traditional boosts.\nThey are define given two velocities `u` and `v`, as an input an take\nthe velocity `u` to the velocity `v`.\n\nWe show that these generalised boosts are Lorentz transformations,\nand furthermore sit in the restricted Lorentz group.\n\nA boost is the special case of a generalised boost when `u = basis 0`.\n\n## References\n\n* The main argument follows: Guillem Cobos, The Lorentz Group, 2015:\n  https://diposit.ub.edu/dspace/bitstream/2445/68763/2/memoria.pdf. [ref: cobos_2015_lorentz_group]",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 38,
@@ -5500,13 +5557,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/LorentzGroup/Orthochronous/Basic.lean",
    "module": "Physlib.Relativity.LorentzGroup.Orthochronous.Basic",
    "title": "The Orthochronous Lorentz Group",
    "doc": "We define the give a series of lemmas related to the orthochronous property of lorentz\nmatrices.",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -5743,13 +5802,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 1
   },
   {
    "file": "Physlib/Relativity/LorentzGroup/Proper.lean",
    "module": "Physlib.Relativity.LorentzGroup.Proper",
    "title": "The Proper Lorentz Group",
    "doc": "The proper Lorentz group is the subgroup of the Lorentz group with determinant `1`.\n\nWe define the give a series of lemmas related to the determinant of the Lorentz group.",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -5914,13 +5975,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/LorentzGroup/Restricted/Basic.lean",
    "module": "Physlib.Relativity.LorentzGroup.Restricted.Basic",
    "title": "The Restricted Lorentz Group",
    "doc": "This file is currently a stub.",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -5957,13 +6020,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 1
   },
   {
    "file": "Physlib/Relativity/LorentzGroup/Restricted/FromBoostRotation.lean",
    "module": "Physlib.Relativity.LorentzGroup.Restricted.FromBoostRotation",
    "title": "The construction of an element of the Lorentz group from a boost and a rotation",
    "doc": "The main result of this module is the homeomorphism `toBoostRotation`\nfrom the restricted Lorentz group to the product of Lorentz velocities and rotations.\n\nThe inverse of this homeomorphism writes elements of the restricted Lorentz group\nas a product of a generalized boost and a rotation.",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -6024,13 +6089,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/LorentzGroup/Rotations.lean",
    "module": "Physlib.Relativity.LorentzGroup.Rotations",
    "title": "Rotations",
    "doc": "In this module we define rotations of in the Lorentz group.",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -6099,13 +6166,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/LorentzGroup/ToVector.lean",
    "module": "Physlib.Relativity.LorentzGroup.ToVector",
    "title": "Vectors from Lorentz group elements",
    "doc": "Every element of the Lorentz group defines a Lorentz vector, but it's first column.",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -6198,13 +6267,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/MinkowskiMatrix.lean",
    "module": "Physlib.Relativity.MinkowskiMatrix",
    "title": "The Minkowski matrix",
    "doc": "## i. Overview\n\nThe aim of this module is to define the Minkowski matrix `η` in `d+1` dimensions, and\nprove properties thereof.\n\nThe Minkowski matrix is the real matrix of the form `diag(1, -1, -1, -1, ...)`,\nIt is related to the Minkowski metric on `ℝ^(d+1)`.\n\nRelated to the Minkowski matrix is the notion of the dual of a matrix with respect to\nthe Minkowski metric. This is defined as `η * Λᵀ * η`, where `Λ` is a real matrix.\nThis will be used to help define the Lorentz group in later files.\n\n## ii. Key results\n\n- `minkowskiMatrix` : The Minkowski matrix in `d+1` dimensions.\n- `minkowskiMatrix.dual` : The dual of a matrix with respect to the Minkowski metric,\n  defined to be `η * Λᵀ * η`.\n\n## iii. Table of contents\n\n- A. The Minkowski Matrix\n  - A.1. Basic equalities\n  - A.2. Notation for the Minkowski matrix\n  - A.3. Components of the Minkowski matrix\n  - A.4. Squaring the Minkowski matrix\n  - A.5. Symmetry properties of the Minkowski matrix\n  - A.6. Determinant of the Minkowski matrix\n  - A.7. Injective properties of multiplying diagonal components\n  - A.8. Action of the Minkowski matrix on vectors\n- B. The Minkowski dual\n  - B.1. The dual on the identity\n  - B.2. The dual swaps multiplication\n  - B.3. The dual is an involution\n  - B.4. The dual commutes with the transpose\n  - B.5. The dual preserves the Minkowski matrix\n  - B.6. The dual preserves the determinants\n  - B.7. Components of the dual\n\n## iv. References\n\n* None.",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 61,
@@ -6494,13 +6565,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/PauliMatrices/Basic.lean",
    "module": "Physlib.Relativity.PauliMatrices.Basic",
    "title": "",
    "doc": "## Pauli matrices\n\nThe pauli matrices are defined ultimately through\n- `pauliMatrix` which is a map `Fin 1 ⊕ Fin 3 → Matrix (Fin 2) (Fin 2) ℂ`.\n  The notation `σ` can be used as short hand.\n\nA tensorial structure is put on `Fin 1 ⊕ Fin 3 → Matrix (Fin 2) (Fin 2) ℂ` to allow the\nuse of index notation.",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 59,
@@ -6854,13 +6927,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/PauliMatrices/CliffordAlgebra.lean",
    "module": "Physlib.Relativity.PauliMatrices.CliffordAlgebra",
    "title": "The Pauli matrices, interpreted as a Clifford algebra",
    "doc": "",
+   "copyright": "2025 Eric Wieser",
    "sections": [],
    "declarations": [
     {
@@ -6889,13 +6964,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/PauliMatrices/SelfAdjoint.lean",
    "module": "Physlib.Relativity.PauliMatrices.SelfAdjoint",
    "title": "",
    "doc": "## Interaction of Pauli matrices with self-adjoint matrices",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 172,
@@ -7173,13 +7250,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/SL2C/AxisRotations.lean",
    "module": "Physlib.Relativity.SL2C.AxisRotations",
    "title": "Coordinate-axis rotations in `SL(2,ℂ)`",
    "doc": "This file defines chosen `SL(2,ℂ)` rotations carrying the `z`-axis to a selected coordinate axis.\nThe spatial-axis convention is `0 = x`, `1 = y`, and `2 = z`; consequently, the rotation associated\nwith axis `2` is the identity.\n\nConjugation by these rotations transports a matrix written in the diagonal `z`-axis basis to\nthe corresponding coordinate-axis basis. This provides the common change of basis used by\ncoordinate-axis boosts and later constructions based on diagonal representatives.\n\nThe main declarations are:\n\n- `rotationZToAxis`, the indexed family of rotations;\n- `rotationZToAxis_zero_apply` and its companions, their matrix entries;\n- `rotationZToAxis_zero_mul_diagonal_mul_inv` and its companions, their action on a\n  diagonal matrix.",
+   "copyright": "2026 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -7264,13 +7343,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/SL2C/Basic.lean",
    "module": "Physlib.Relativity.SL2C.Basic",
    "title": "The group SL(2, ℂ) and it's relation to the Lorentz group",
    "doc": "The aim of this file is to give the relationship between `SL(2, ℂ)` and the Lorentz group.",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 30,
@@ -7448,13 +7529,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/SL2C/CayleyKlein.lean",
    "module": "Physlib.Relativity.SL2C.CayleyKlein",
    "title": "Cayley–Klein parameters",
    "doc": "## i. Overview\n\nTwo complex numbers `a b` with `‖a‖² + ‖b‖² = 1`, the Cayley–Klein parameters, give the unitary\nelement `!![a, -conj b; b, conj a]` of `SL(2, ℂ)`. Its image in the Lorentz group is a rotation,\nwhose matrix is written explicitly in terms of `a` and `b`.\n\n## ii. Key results\n\n- `cayleyKlein` : the element of `SL(2, ℂ)` with Cayley–Klein parameters `a b`.\n- `cayleyKlein_mem_unitaryGroup` : a Cayley–Klein element is unitary.\n- `toLorentzGroup_cayleyKlein_mem_rotations` : the image of a Cayley–Klein element is a\n  rotation.\n- `cayleyKleinRotation` : the Lorentz-group rotation of the Cayley–Klein parameters `a b`.\n- `cayleyKleinRotation_inr_inr` : the spatial block of `cayleyKleinRotation a b h` is the\n  matrix written explicitly in terms of `a` and `b`.\n- `exists_cayleyKleinRotation_apply_two` : every unit vector is the image of the third axis\n  under some Cayley–Klein rotation.\n\n## iii. Table of contents\n\n- A. The Cayley–Klein element\n- B. The Cayley–Klein rotation\n\n## iv. References\n\n* https://mathworld.wolfram.com/Cayley-KleinParameters.html",
+   "copyright": "2026 Eduardo Nava-Hernandez",
    "sections": [
     {
      "line": 53,
@@ -7516,13 +7599,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/SL2C/Cover.lean",
    "module": "Physlib.Relativity.SL2C.Cover",
    "title": "`SL(2, ℂ)` is a double cover of the restricted Lorentz group",
    "doc": "## i. Overview\n\nThe homomorphism `toRestrictedLorentzGroup` from `SL(2, ℂ)` to the restricted Lorentz group is\nsurjective; together with the kernel `{1, -1}` (`toLorentzGroup_eq_one_iff`), this makes\n`SL(2, ℂ)` a double cover. Rotations come from the unitary elements, written with\ntheir Cayley–Klein parameters `a b`; the time axis is moved to any velocity by a lower\ntriangular element. The proof follows the boost and rotation decomposition\n`LorentzGroup.exists_boost_mul_rotation`.\n\n## ii. Key results\n\n- `exists_unitary_toLorentzGroup_eq` : every rotation is the image of a unitary element.\n- `toRestrictedLorentzGroup_surjective` : the homomorphism to the restricted Lorentz group is\n  surjective.\n\n## iii. Table of contents\n\n- A. Rotations\n- B. Boosts and surjectivity\n\n## iv. References\n\n* B. Oblak, *From the Lorentz Group to the Celestial Sphere*, arXiv:1508.00920,\n  Section 2.3.2.",
+   "copyright": "2026 Eduardo Nava-Hernandez",
    "sections": [
     {
      "line": 51,
@@ -7560,13 +7645,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/SL2C/SelfAdjoint.lean",
    "module": "Physlib.Relativity.SL2C.SelfAdjoint",
    "title": "Extra lemmas regarding `Lorentz.SL2C.toSelfAdjointMap`",
    "doc": "This file redefines `Lorentz.SL2C.toSelfAdjointMap` by dropping the special linear condition for its\nfirst argument `M`. Then, `Lorentz.SL2C.toSelfAdjointMap_det_one` is proved for `M` being upper\ntriangular.\n\n## Main definitions\n\n- `Lorentz.SL2C.toSelfAdjointMap'`: definitionally equal to `Lorentz.SL2C.toSelfAdjointMap` but `M`\nis not required to be special linear.\n- `Lorentz.SL2C.toSelfAdjointMap_det_one'`: proves `Lorentz.SL2C.toSelfAdjointMap_det_one` with the\nadditional requirement that `M` be upper triangular. The general case is reduced to this special\ncase via `Matrix.schur_triangulation` in `Lorentz.SL2C.toSelfAdjointMap_det_one`.",
+   "copyright": "2025 Gordon Hsu",
    "sections": [
     {
      "line": 54,
@@ -7624,13 +7711,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Special/ProperTime.lean",
    "module": "Physlib.Relativity.Special.ProperTime",
    "title": "Proper Time",
    "doc": "This file introduces 4d Minkowski spacetime.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -7667,13 +7756,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Special/TwinParadox/Basic.lean",
    "module": "Physlib.Relativity.Special.TwinParadox.Basic",
    "title": "Twin Paradox",
    "doc": "The twin paradox corresponds to the following scenario:\n\nTwo twins start at the same point `startPoint` in spacetime.\nTwin A travels at constant speed to the spacetime point `endPoint`,\nwhilst twin B makes a detour through the spacetime `twinBMid` and then to `endPoint`.\n\nIn this file, we assume that both twins travel at constant speed,\nand that the acceleration of Twin B is instantaneous.\n\nThe conclusion of this scenario is that Twin A will be older than Twin B when they meet at\n`endPoint`. This is something we show here with an explicit example.\n\nThe origin of the twin paradox dates back to Paul Langevin in 1911.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 134,
@@ -7779,13 +7870,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 1
   },
   {
    "file": "Physlib/Relativity/SpeedOfLight.lean",
    "module": "Physlib.Relativity.SpeedOfLight",
    "title": "The Speed of Light",
    "doc": "The speed of light in a vacuum, in the format of `Physlib/Units/Constants.lean`.\n\n## i. Overview\n\nThe speed of light has the dimension `L T⁻¹`, and its value in SI units is exact. Section F adds\nthe instance of one and the speed of light as a dimensioned quantity.\n\n## ii. Key results\n\n- `SpeedOfLight` : The speed of light in a chosen but arbitrary system of units.\n- `speedOfLight` : The speed of light in our world, `299792458 m s⁻¹`.\n- `SpeedOfLight.toWithDim` : The speed of light as a quantity with the dimension of\n  length over time.\n- `SpeedOfLight.toWithDim_scaleUnit` : The map `toWithDim` commutes with changes of units.\n\n## iii. Table of contents\n\n- A. The type\n- B. Instances\n- C. Positivity\n- D. The dimension\n- E. The value in our world\n- F. Specific to the speed of light\n  - F.1. The instance of one\n  - F.2. As a dimensioned quantity\n\n## iv. References\n\n* The defining value of the speed of light. [ref: bipm_si_brochure_2019]",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 49,
@@ -7955,13 +8048,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/Basic.lean",
    "module": "Physlib.Relativity.Tensors.Basic",
    "title": "Tensors",
    "doc": "This module sets up the tensors used for index notation in Physlib.\n\nPhysics picture:\n- Choose a symmetry group `G` (for example, the Lorentz group).\n- Give each index kind a name called a *color* (encoded by a type `C`).\n  In Lorentzian notation, a typical choice is two colors: `up` and `down`.\n- For each color, choose a representation of `G`.\n- Fix a basis for each color. This determines which values that index can take and\n  lets us speak about tensor components explicitly.\n- Specify a dual color for each color, telling us which index pairs can contract.\n- For dual pairs, provide the contraction/unit/metric data used for contraction and\n  for raising/lowering indices.\n\nAll of this structure is packaged as a `TensorSpecies`.\n\nFor `S : TensorSpecies` and a list of index colors `c : Fin n → C`:\n- `Tensor S c` is the type of tensors with those indices.\n- `Pure S c` is the type of pure tensors, i.e. tensors of the form\n  `v₀ ⊗ₜ v₁ ⊗ₜ v₂ …`.\n- `ComponentIdx S c` is the type of allowed component labels for those indices.\n\nThis file realizes `Tensor S c` as a `PiTensorProduct`, relates pure tensors to\ntheir components, constructs the component basis, and supplies the inherited\nfinite-dimensional and module-topology instances. It also defines the natural\naction of `G` on pure tensors and tensors, the associated permutation maps, and\nthe map from rank-zero tensors to the scalars `k`.\n\nFrom this setup we get the usual index-notation operations in a uniform way:\ncontraction, raising/lowering, and permutation of indices.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 72,
@@ -8691,13 +8786,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/ComplexTensor/Basic.lean",
    "module": "Physlib.Relativity.Tensors.ComplexTensor.Basic",
    "title": "",
    "doc": "## Complex Lorentz tensors",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -8870,13 +8967,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/ComplexTensor/Lemmas.lean",
    "module": "Physlib.Relativity.Tensors.ComplexTensor.Lemmas",
    "title": "",
    "doc": "## Lemmas related to complex Lorentz tensors.",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -8889,13 +8988,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/ComplexTensor/Matrix/Pre.lean",
    "module": "Physlib.Relativity.Tensors.ComplexTensor.Matrix.Pre",
    "title": "Tensor products of two complex Lorentz vectors",
    "doc": "",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 105,
@@ -9037,13 +9138,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/ComplexTensor/Metrics/Basic.lean",
    "module": "Physlib.Relativity.Tensors.ComplexTensor.Metrics.Basic",
    "title": "",
    "doc": "## Metrics as complex Lorentz tensors",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 26,
@@ -9437,13 +9540,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/ComplexTensor/Metrics/Lemmas.lean",
    "module": "Physlib.Relativity.Tensors.ComplexTensor.Metrics.Lemmas",
    "title": "",
    "doc": "## Basic lemmas regarding metrics",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 27,
@@ -9557,13 +9662,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/ComplexTensor/Metrics/Pre.lean",
    "module": "Physlib.Relativity.Tensors.ComplexTensor.Metrics.Pre",
    "title": "Metric for complex Lorentz vectors",
    "doc": "",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 135,
@@ -9653,13 +9760,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 1
   },
   {
    "file": "Physlib/Relativity/Tensors/ComplexTensor/OfGaussianInt.lean",
    "module": "Physlib.Relativity.Tensors.ComplexTensor.OfGaussianInt",
    "title": "Complex Lorentz tensors with Gaussian integer components",
    "doc": "A complex Lorentz tensor whose components in the standard basis are Gaussian integers can be\nwritten as `ofGaussianInt f` for a map `f` from component indices to `GaussianInt`. The\nproduct, contraction and permutation of such tensors are again of this form, so identities\nbetween them reduce to decidable equalities of Gaussian integers.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -9728,13 +9837,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/ComplexTensor/Units/Basic.lean",
    "module": "Physlib.Relativity.Tensors.ComplexTensor.Units.Basic",
    "title": "",
    "doc": "## Unit tensors for complex Lorentz tensors",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 27,
@@ -10128,13 +10239,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/ComplexTensor/Units/Pre.lean",
    "module": "Physlib.Relativity.Tensors.ComplexTensor.Units.Pre",
    "title": "Unit for complex Lorentz vectors",
    "doc": "",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 133,
@@ -10260,13 +10373,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/ComplexTensor/Units/Symm.lean",
    "module": "Physlib.Relativity.Tensors.ComplexTensor.Units.Symm",
    "title": "",
    "doc": "## Symmetry lemmas relating to units",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 21,
@@ -10324,13 +10439,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/ComplexTensor/Vector/Basic.lean",
    "module": "Physlib.Relativity.Tensors.ComplexTensor.Vector.Basic",
    "title": "Complex Lorentz vectors",
    "doc": "We define complex Lorentz vectors in 4d space-time as representations of SL(2, C).",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 157,
@@ -10596,13 +10713,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/ComplexTensor/Vector/Contraction.lean",
    "module": "Physlib.Relativity.Tensors.ComplexTensor.Vector.Contraction",
    "title": "Contraction of Lorentz vectors",
    "doc": "",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 162,
@@ -10708,13 +10827,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 1
   },
   {
    "file": "Physlib/Relativity/Tensors/ComplexTensor/Vector/Modules.lean",
    "module": "Physlib.Relativity.Tensors.ComplexTensor.Vector.Modules",
    "title": "",
    "doc": "## Modules associated with complex Lorentz vectors\n\nWe define the modules underlying complex Lorentz vectors.\nThese definitions are preludes to the definitions of\n`Lorentz.complexContr` and `Lorentz.complexCo`.",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -10927,13 +11048,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/ComponentIdx/Basic.lean",
    "module": "Physlib.Relativity.Tensors.ComponentIdx.Basic",
    "title": "Component indices",
    "doc": "## i. Overview\n\nFor a tensor species `S` and a list of colors `c : Fin n → C`, `ComponentIdx S c`\nis the type of choices of a basis index for every color in `c`. For example, for a\ntensor with colors `![.up, .down]`, an element of `ComponentIdx ![.up, .down]`\nrecords one contravariant component index and one covariant component index.\n\nThis file contains the basic definition and congruence/cast API. Operations on\ncomponent indices induced by tensor products and contractions live in sibling files.\n\n## ii. Key results\n\n- `TensorSpecies.Tensor.ComponentIdx` is the type of component indices for a tensor\n  with a given list of colors.\n- `TensorSpecies.Tensor.ComponentIdx.congr_right` relates entries whose positions are equal.\n- `TensorSpecies.Tensor.ComponentIdx.cast` casts component indices along equivalent color maps.\n\n## iii. Table of contents\n\n- A. Basic definitions\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 52,
@@ -10967,13 +11090,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/ComponentIdx/Contraction.lean",
    "module": "Physlib.Relativity.Tensors.ComponentIdx.Contraction",
    "title": "Contractions of component indices",
    "doc": "## i. Overview\n\nThis file contains the component-index API induced by dropping a pair of contracted\nindices from a tensor.\n\nThe constructions here describe how component indices restrict along\n`Fin.succSuccAbove`, and how the fiber of this restriction is equivalent to the two\ncomponent choices at the contracted positions.\n\n## ii. Key results\n\n- `TensorSpecies.Tensor.ComponentIdx.dropPair` restricts a component index by dropping\n  two positions.\n- `TensorSpecies.Tensor.ComponentIdx.DropPairSection` is the finite set of component\n  indices mapping to a fixed restricted component index.\n- `TensorSpecies.Tensor.ComponentIdx.DropPairSection.ofFinEquiv` identifies a\n  `DropPairSection` with the two basis indices at the dropped positions.\n\n## iii. Table of contents\n\n- A. Dropping a pair\n- B. Sections of the drop-pair map\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 57,
@@ -11083,13 +11208,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/ComponentIdx/Insert.lean",
    "module": "Physlib.Relativity.Tensors.ComponentIdx.Insert",
    "title": "Component indices split at a single slot",
    "doc": "Component-index insertion and evaluation at a distinguished slot.\n\n## i. Overview\n\n`ComponentIdx c` is `∀ j, basisIdx (c j)`, so singling out one slot `i` splits a component index\ninto the label there and a component index for the remaining colours `c ∘ i.succAbove`. That is\nmathlib's `Fin.insertNthEquiv` read at the family `fun j => basisIdx (c j)`, and it carries no\ntransports of its own.\n\nThis is the one-slot counterpart of the two-slot `DropPairSection.ofFinEquiv`, which singles out\nthe pair a contraction consumes, and of `ComponentIdx.prod`, which splits a concatenated colour\nlist into its two halves. Where those two are shaped by the operation that produced the colour\nlist, this one is shaped by a slot the caller names, which is what a general-rank component formula\nneeds: an operation acting at slot `i` leaves the other slots alone, and the formula should say so\nat every rank rather than at the rank where the colour list happens to be a literal.\n\n## ii. Key results\n\n- `TensorSpecies.Tensor.ComponentIdx.insert` : the equivalence splitting a component index at a\n    named slot.\n- `TensorSpecies.Tensor.ComponentIdx.insert_apply_self` and\n    `TensorSpecies.Tensor.ComponentIdx.insert_apply_succAbove` : the two directions, slotwise.\n\n## iii. Table of contents\n\n- A. The single-slot equivalence\n\n## iv. References\n\nThere are no known references for the material in this module.",
+   "copyright": "2026 Andrea Pari",
    "sections": [
     {
      "line": 61,
@@ -11123,13 +11250,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/ComponentIdx/Pair.lean",
    "module": "Physlib.Relativity.Tensors.ComponentIdx.Pair",
    "title": "Component indices for two-index tensors",
    "doc": "Component indices of two-index tensors as pairs of basis indices.\n\n## i. Overview\n\nThis file defines the equivalence between component indices for two colors and pairs of basis\nindices of those colors.\n\n## ii. Key results\n\n- `TensorSpecies.Tensor.ComponentIdx.pair` is the equivalence between `ComponentIdx cs` and\n  `basisIdx (cs 0) × basisIdx (cs 1)`.\n\n## iii. Table of contents\n\n- A. The two-index equivalence\n\n## iv. References\n\nThere are no known references for the material in this module.",
+   "copyright": "2026 Andrea Pari",
    "sections": [
     {
      "line": 48,
@@ -11171,13 +11300,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/ComponentIdx/Product.lean",
    "module": "Physlib.Relativity.Tensors.ComponentIdx.Product",
    "title": "Products of component indices",
    "doc": "## i. Overview\n\nThis file contains the component-index API induced by appending two lists of tensor colors.\n\nThe main construction identifies component indices for appended color lists with pairs\nof component indices for each side of the append.\n\n## ii. Key results\n\n- `TensorSpecies.Tensor.ComponentIdx.prod` is the equivalence between\n  `ComponentIdx (Fin.append c c1)` and `ComponentIdx c × ComponentIdx c1`.\n\n## iii. Table of contents\n\n- A. Product equivalence\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 47,
@@ -11243,13 +11374,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/ComponentIdx/Single.lean",
    "module": "Physlib.Relativity.Tensors.ComponentIdx.Single",
    "title": "Component indices for one-index tensors",
    "doc": "## i. Overview\n\nThis file defines the canonical equivalence between component indices for a single\ncolor and the basis indices of that color.\n\n## ii. Key results\n\n- `TensorSpecies.Tensor.ComponentIdx.single` is the equivalence between\n  `ComponentIdx ![c]` and `basisIdx c`.\n- `TensorSpecies.Tensor.ComponentIdx.single_apply` and\n  `TensorSpecies.Tensor.ComponentIdx.single_symm_apply` are simp lemmas for the two\n  directions of this equivalence.\n\n## iii. Table of contents\n\n- A. Single-index equivalence\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 48,
@@ -11283,13 +11416,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/Conjugation/Basic.lean",
    "module": "Physlib.Relativity.Tensors.Conjugation.Basic",
    "title": "Conjugation structure on a tensor species",
    "doc": "## i. Overview\n\nEach index of a tensor carries a colour naming the representation it transforms in. A species\nalready has the variance dual `τ c`, the colour an index must meet to contract. Conjugation adds a\nsecond involution, the conjugate colour `bar c`: the colour an index transforms in after complex\nconjugation. A spinor index is the textbook example: complex conjugation sends a left-handed Weyl\nspinor to a right-handed one, `(ψ_α)* = ψ̄_α̇`, so `bar` swaps the left- and right-handed colours\nwhile fixing a real vector colour. Variance is untouched, so `bar` commutes with `τ`. In an N=1\nchiral sector `bar` swaps chiral and anti-chiral indices.\n\n`conjT` conjugates a tensor at the basis level: `star` each coordinate in the species basis and\nplace it at the conjugate colour. Reality and Hermiticity are stated through it: a tensor is real\nwhen conjugation fixes it, and a metric is Hermitian when conjugating it swaps its two indices.\n\nConjugation is intrinsic species data, not a detachable add-on: a `ConjTensorSpecies` is a\n`TensorSpecies` bundled (`extends`) with the conjugate-colour involution `bar` and the coherence\nthe recipe needs. `bar c` shares basis labels with `c` (`barIdx_eq`) and the contraction\ncoefficients survive `star` (`conj_contrComm`), which together make conjugation commute with\ncontraction. `conjT` is then `conj`-semilinear, involutive, and commutes with contraction; the\nlast makes reality and Hermiticity compatible with raising and lowering indices.\n\nAt the single-index level, `conjEquiv : V c ≃ₛₗ V (bar c)` realises this conjugation: it reads a\nvector's coordinates, conjugates them with `ConjModule.starFinsupp`, and re-seats them at the\nconjugate colour. It rests on the conjugate module `ConjModule`\n(`Physlib.Mathematics.Modules.ConjModule`), the same vectors with the scalar action twisted by\nconjugation (`i` acts as `−i`). Equipping the conjugate colours with such conjugate-module\ncarriers is what makes a metric `V c ⊗ V (bar c) → k` genuinely bilinear and `IsHermitian` an\nhonest conjugate-transpose.\n\n## ii. Key results\n\n- `ConjTensorSpecies` is a tensor species bundled with its conjugation.\n- `ConjTensorSpecies.conjT` is the conjugation of a tensor.\n- `ConjTensorSpecies.conjT_conjT` proves that conjugation is an involution.\n- `ConjTensorSpecies.conjT_contrT` proves that conjugation commutes with contraction.\n- `ConjTensorSpecies.conjT_eq_permT_iff` is the componentwise criterion for\n  `conjT t = permT σ h t'`, the workhorse for proving reality and Hermiticity conditions.\n- `ConjTensorSpecies.conjEquiv` is the single-slot conjugate-linear isomorphism `V c ≃ₛₗ V (bar c)`.\n- `ConjTensorSpecies.IsHermitian` is the structural conjugate-transpose condition on a metric slot.\n- `ConjTensorSpecies.toSquareMatrix` is the square component matrix of a rank-two tensor whose\n  second colour is the conjugate of its first;\n  `ConjTensorSpecies.conjT_eq_permT_swap_iff_toSquareMatrix_isHermitian` says that conjugation swaps\n  the two slots of `M` exactly when this matrix is Hermitian.\n- `ConjTensorSpecies.isContrDualMatching_bar` and `ConjTensorSpecies.dualIdxEquiv_bar` say that\n  conjugation preserves which basis labels pair to `1` under contraction: the basis vectors of\n  `bar c` and `τ (bar c)` with labels `i` and `j` contract to `1` exactly when those of `c` and\n  `τ c` with the same labels do.\n- `ConjTensorSpecies.conjSingleT` is the conjugation of a one-slot tensor, at the colour\n  `![bar x]`; `ConjTensorSpecies.conjSingleT_basis` is its action on basis vectors.\n- `ConjTensorSpecies.toSesqForm` is the sesquilinear form `s, t ↦ M(t, s̄)` of a rank-two tensor\n  `M` with `bar (c 0) = c 1`. Hermiticity of `M` is Hermiticity of this form, Mathlib's\n  `LinearMap.IsSymm`;\n  `ConjTensorSpecies.isSymm_toSesqForm_iff_conjT_eq_permT` and\n  `ConjTensorSpecies.isSymm_toSesqForm_iff_toSquareMatrix_isHermitian` are its tensor and matrix\n  forms.\n- `ConjTensorSpecies.isPosDef_toSesqForm_iff_toSquareMatrix_posDef`: `M` is positive-definite, i.e.\n  its form is (`LinearMap.IsPosDef`), exactly when its square component matrix is `Matrix.PosDef`.\n\n## iii. Table of contents\n\n- A. The conjugation structure\n- B. The conjugation of vectors\n- C. Conjugation of tensors\n- D. The involution law\n- E. Commutation with contraction\n- F. Hermitian pairings\n- G. Dual bases under conjugation\n- H. The sesquilinear form of a tensor\n- I. Positive-definite tensors",
+   "copyright": "2026 Andrea Pari",
    "sections": [
     {
      "line": 93,
@@ -11619,13 +11754,15 @@
     }
    ],
    "private": 1,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/Conjugation/Inverse.lean",
    "module": "Physlib.Relativity.Tensors.Conjugation.Inverse",
    "title": "The inverse of a rank-two tensor",
    "doc": "The inverse `g^{J̄I}` of a tensor `g_{IJ̄}` with one index and one conjugate index, such as a\nHermitian metric, and the linear equivalence that contracts an index with `g`.\n\n## i. Overview\n\nThe inverse of a tensor `g_{IJ̄}` is the tensor `g^{J̄I}`, with two upper indices, for which\n`g_{IJ̄} g^{J̄K} = δ_I^K` and `g^{J̄I} g_{IK̄} = δ^J̄_K̄`.\n\nThe colours of the inverse are `![τ (c 1), τ (c 0)]`, so its barred index comes first, `g^{J̄I}`.\nThe usual `g^{IJ̄}` is the same tensor with its two indices swapped. With the barred index first,\n`g_{IJ̄} g^{J̄K}` contracts adjacent indices, so the contraction laws need no reordering of the\ninverse. The matrix `(g^{J̄I})`, with row `J` and column `I`, is the inverse of the matrix\n`(g_{IJ̄})`. `inverseT` is defined by this matrix inversion and is zero when `(g_{IJ̄})` is not\ninvertible. The inverse of a Hermitian `g` is Hermitian (A), and the inverse of a\npositive-definite `g` is positive-definite (B). When `(g_{IJ̄})` is invertible, the two contraction\nlaws hold and the inverse is unique (C). Then contracting an index with `g` is a linear\nequivalence whose inverse contracts with `g^{J̄I}` (D).\n\n## ii. Key results\n\n- `ConjTensorSpecies.inverseT` is the inverse `g^{J̄I}` of a tensor `g_{IJ̄}`.\n- `ConjTensorSpecies.toSquareMatrix_inverseT` says that the matrix `(g^{J̄I})` is `(g_{IJ̄})⁻¹`.\n- `ConjTensorSpecies.isSymm_toSesqForm_inverseT` and\n  `ConjTensorSpecies.isPosDef_toSesqForm_inverseT` say that the inverse of a Hermitian or\n  positive-definite `g` is again Hermitian or positive-definite.\n- `ConjTensorSpecies.contractInnerT_inverseT` and `ConjTensorSpecies.inverseT_contractInnerT` are\n  the contraction laws `g_{IJ̄} g^{J̄K} = δ_I^K` and `g^{J̄I} g_{IK̄} = δ^J̄_K̄`.\n- `ConjTensorSpecies.eq_inverseT_of_contractInnerT_eq_unitTensor` says that the inverse is unique.\n- `ConjTensorSpecies.toConjDualAtIndex` contracts an index with `g`, as a linear equivalence\n  whose inverse contracts with `g^{J̄I}`.\n\n## iii. Table of contents\n\n- A. The inverse\n- B. Positive-definiteness\n- C. The contraction laws\n- D. Changing an index to its conjugate dual\n\n## iv. References\n\n- `Matrix.inv` and `Matrix.inv_def`, in `Mathlib/LinearAlgebra/Matrix/NonsingularInverse.lean`;\n- `Matrix.PosDef.inv`, in `Mathlib/LinearAlgebra/Matrix/PosDef.lean`.",
+   "copyright": "2026 Andrea Pari",
    "sections": [
     {
      "line": 76,
@@ -11735,13 +11872,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/Constructors.lean",
    "module": "Physlib.Relativity.Tensors.Constructors",
    "title": "Constructors of tensors.",
    "doc": "There are a number of ways to construct explicit tensors.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 32,
@@ -12111,13 +12250,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/Contraction/Basic.lean",
    "module": "Physlib.Relativity.Tensors.Contraction.Basic",
    "title": "Contractions on tensors",
    "doc": "## i. Overview\n\nThis file defines tensor contraction for an arbitrary `TensorSpecies`.\n\nThe colors of a tensor record the type of each index. A pair of positions can be\ncontracted when their colors are dual, expressed by a proof\n`S.τ (c i) = c j`, where `S.τ` is the color involution in the tensor species.\nFor a tensor with colors `c : Fin (n + 1 + 1) → C`, contraction at positions\n`i` and `j` produces a tensor with two fewer indices and colors\n`c ∘ Fin.succSuccAbove i j`.\n\nThe construction is first made on pure tensors in\n`Physlib.Relativity.Tensors.Contraction.Pure`. There, `Pure.dropPair` removes the\ntwo contracted factors from the remaining pure tensor, `Pure.contrPCoeff`\ncomputes the scalar contraction of the two removed factors using `S.contr`, and\n`Pure.contrP` multiplies that scalar by the dropped tensor. This file extends the\noperation linearly to arbitrary tensors via `contrT`.\n\n## ii. Key results\n\n- `TensorSpecies.Tensor.contrT` is the linear contraction map on tensors.\n- `TensorSpecies.Tensor.contrT_pure` identifies `contrT` on pure tensors with\n  `Pure.contrP`.\n- `TensorSpecies.Tensor.contrT_equivariant` says contraction commutes with the\n  symmetry-group action.\n- `TensorSpecies.Tensor.contrT_permT`, `TensorSpecies.Tensor.contrT_symm`, and\n  `TensorSpecies.Tensor.contrT_comm` describe the interaction of contraction with\n  reindexing, swapping the contracted pair, and performing two contractions.\n\n## iii. Related files\n\n- `Physlib.Relativity.Tensors.Contraction.SuccSuccAbove` contains the finite-index\n  maps used to drop two positions.\n- `Physlib.Relativity.Tensors.Contraction.Pure` defines `Pure.dropPair`,\n  `Pure.contrPCoeff`, `Pure.contrP`, and the multilinear map used to define\n  `contrT`.\n- `Physlib.Relativity.Tensors.Contraction.Products` proves compatibility between\n  contractions and tensor products.\n\n## iv. Table of contents\n\n- A. Tensor contraction\n\n## v. References\n\nThere are no known references for the material in this module.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 75,
@@ -12191,13 +12332,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/Contraction/Basis.lean",
    "module": "Physlib.Relativity.Tensors.Contraction.Basis",
    "title": "Contractions on basis tensors",
    "doc": "",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -12250,13 +12393,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/Contraction/CrossToEnd.lean",
    "module": "Physlib.Relativity.Tensors.Contraction.CrossToEnd",
    "title": "Cross contraction at named slots",
    "doc": "## i. Overview\n\n`contrT` contracts two slots of a single tensor. Contracting a slot of one tensor against a slot of\nanother (`T^{μν} u_ν`, `g_{μν} v^ν`) is `prodT` then `contrT`, which leaves every call site to\nlocate the two post-product slots and discharge the distinctness and `τ`-duality goals.\n\n`crossToEnd i j hc` performs that contraction at named slots `i` and `j`, with\n`hc : S.τ (cA i) = cB j` recording their `τ`-duality. The output color is\n`Fin.append (cA ∘ i.succAbove) (cB ∘ j.succAbove)`: every slot of `cA` except `i`, in order, then\nevery slot of `cB` except `j`. These are the survivors. Any slot is reachable:\n`crossToEnd 2 0 _ R u` reads as `R_{μνρσ} u^ρ`. The survivors are appended rather than interleaved,\nand appending is associative, so both bracketings of a chain produce the same survivor list in the\nsame order.\n\nThe complementary convention keeps the replacement index in place. Contracting slot `1` of\n`![c₀, c₁, c₂, c₃]` against a rank-two `![S.τ c₁, d]` gives `![c₀, c₂, c₃, d]` here and\n`![c₀, d, c₂, c₃]` there; that operation is `crossToSlot`, built on this substrate in\n`Physlib.Relativity.Tensors.Contraction.CrossToSlot`.\n\n## ii. Key results\n\n- `TensorSpecies.Tensor.crossToEnd` : the slot-addressed cross contraction.\n- `TensorSpecies.Tensor.crossToEnd_two` : at rank two on each factor, a plain `contrT` of the\n    product on slots `1, 2`.\n- `TensorSpecies.Tensor.crossToEnd_basis` : the contraction of two basis tensors, which\n    characterises `crossToEnd`.\n- `TensorSpecies.Tensor.crossToEnd_basis_repr_eq_sum_fin` : the component formula at arbitrary\n    slots and ranks for any species, the contraction of the two contracted basis vectors left as an\n    opaque coefficient.\n- `TensorSpecies.Tensor.crossToEnd_basis_repr_eq_sum_dual` : the same formula for a species with\n    contraction-dual bases, the δ collapsing the two sums into one.\n- `TensorSpecies.Tensor.crossToEnd_pair_basis_repr` : the component formula at rank two on each\n    factor.\n- `TensorSpecies.Tensor.toMatrix_crossToEnd_pair` : the same as a matrix equation, cross\n    contraction being the product of the component matrices.\n- `TensorSpecies.Tensor.crossToEnd_equivariant` : the contraction commutes with the `G`-action.\n- `TensorSpecies.Tensor.crossToEnd_assoc_rankTwo` : rebracket the chain\n    `A —(iA·0)— B —(last·0)— C` at rank-two `B` and `C`, up to `permT id`. Not full associativity.\n- `TensorSpecies.Tensor.crossToEnd_permT_left` / `crossToEnd_permT_right` : move a relabelling of\n    the left or right factor through the contraction, the contracted slot moving with it.\n\n## iii. Table of contents\n\n- A. Slot-addressed cross contraction\n- B. Component formulas and equivariance\n- C. Rebracketing the metric chain\n- D. Permutation commutators\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Andrea Pari",
    "sections": [
     {
      "line": 82,
@@ -12366,13 +12511,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/Contraction/CrossToSlot.lean",
    "module": "Physlib.Relativity.Tensors.Contraction.CrossToSlot",
    "title": "Result-to-slot contraction against a rank-2 tensor",
    "doc": "## i. Overview\n\n`crossToEnd` deposits the surviving index of a slot contraction at the end of the survivor list.\nRaising and lowering a named index instead wants the replacement to stay *in place*: contracting\nslot `i` of `t` against a rank-2 tensor `M` (a metric, the unit tensor) should return `t` with only\nslot `i`'s color changed, `T^{μ}{}_{νρ} ↦ T_{μνρ}`. `crossToSlot i j hc M` is that operation, and\n`crossToSlot_eq_crossToEnd` is the one place the two conventions meet.\n\nThis module stays at the `CommRing` altitude of `crossToEnd`; the `RCLike` round trips built on the\noperation live with the unit-tensor collapse theory in\n`Physlib.Relativity.Tensors.Contraction.UnitTensorContraction`.\n\n## ii. Key results\n\n- `TensorSpecies.Tensor.crossToSlot` : contract slot `i` against slot `j` of a rank-2 tensor and\n    rotate the survivor back into position `i`; raising and lowering a named index.\n- `TensorSpecies.Tensor.crossToSlot_eq_crossToEnd` : the bridge to the result-to-end convention.\n- `TensorSpecies.Tensor.crossToSlot_basis_repr_apply` : the component bridge from result-to-slot\n    to result-to-end contraction.\n- `TensorSpecies.Tensor.crossToSlotInv` : the returning half of a round trip, the contraction\n    against the second factor with the round trip's color cast absorbed.\n- `TensorSpecies.Tensor.crossToSlot_basis_repr_eq_sum_fin` : the component formula at arbitrary\n    rank and slot for any species, the contraction of the two contracted basis vectors left as an\n    opaque coefficient.\n- `TensorSpecies.Tensor.crossToSlot_basis_repr_eq_sum_dual` : the same formula for a species with\n    contraction-dual bases, the δ collapsing the two sums into one.\n- `TensorSpecies.Tensor.crossToSlot_permT_right_id` : an identity reindexing of the rank-2 tensor\n    passes through the contraction.\n- `TensorSpecies.Tensor.crossToSlot_equivariant` : the contraction commutes with the `G`-action.\n\n## iii. Table of contents\n\n- A. The result-to-slot contraction\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Andrea Pari",
    "sections": [
     {
      "line": 64,
@@ -12454,13 +12601,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/Contraction/Products.lean",
    "module": "Physlib.Relativity.Tensors.Contraction.Products",
    "title": "The interaction of contractions and products",
    "doc": "",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 29,
@@ -12526,13 +12675,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/Contraction/Pure.lean",
    "module": "Physlib.Relativity.Tensors.Contraction.Pure",
    "title": "Contractions on pure tensors",
    "doc": "",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 27,
@@ -12782,13 +12933,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 1
   },
   {
    "file": "Physlib/Relativity/Tensors/Contraction/RankTwo.lean",
    "module": "Physlib.Relativity.Tensors.Contraction.RankTwo",
    "title": "The bilinear map and the product of rank-two tensors",
    "doc": "The bilinear map of a rank-two tensor and the product of two rank-two tensors.\n\n## i. Overview\n\nA rank-two tensor `M` defines a bilinear map on one-slot tensors by contracting one argument into\neach of its slots, `t, s ↦ M_{zw} tᶻ sʷ`. In the bases dual to the slots of `M` the matrix of this\nmap is the component matrix `toMatrix M`.\n\n`contractInnerT A B` is the tensor `A_{μν} B^{νρ}`, in which the second index of `A` is contracted\nwith the first index of `B`. Its indices are `μ` and `ρ`, with colours `![cs 0, ds 1]`. The general\ncontraction `crossToEnd` gives the same tensor, but its colours are a composite of the two colour\nlists. With `contractInnerT`, an identity such as `η_{μν} η^{νρ} = δ_μ^ρ` needs no renaming of the\ncolours of the product. For contraction-dual bases, the matrix of `A_{μν} B^{νρ}` is the matrix\nproduct of `(A_{μν})` and `(B^{νρ})` (`toMatrix_contractInnerT`).\n\n## ii. Key results\n\n- `TensorSpecies.Tensor.toLinearMap₂` : the bilinear map `t, s ↦ M_{zw} tᶻ sʷ` of a rank-two\n    tensor, with its component formula `toLinearMap₂_apply`.\n- `TensorSpecies.Tensor.toMatrix₂_toLinearMap₂` : its matrix in the dual bases is the component\n    matrix of `M`.\n- `TensorSpecies.Tensor.contractInnerT` : the contraction `A_{μν} B^{νρ}` of two rank-two tensors.\n- `TensorSpecies.Tensor.toMatrix_contractInnerT` : for contraction-dual bases, its matrix is the\n    matrix product.\n\n## iii. Table of contents\n\n- A. Pairing a rank-two tensor with two vectors\n- B. Contracting two rank-two tensors\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Andrea Pari",
    "sections": [
     {
      "line": 63,
@@ -12874,13 +13027,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/Contraction/SuccSuccAbove.lean",
    "module": "Physlib.Relativity.Tensors.Contraction.SuccSuccAbove",
    "title": "Defining succSuccAbove",
    "doc": "In Mathlib there is the `Fin.succAbove` function which gives an embedding of `Fin n` into\n`Fin (n + 1)` by leaving a hole at a specified index. We will need a version of this which\ngives an embedding of `Fin n` into `Fin (n + 1 + 1)` by leaving holes at\ntwo specified indices. We call this `succSuccAbove`.\n\nWe will also need an explicit inverse of this map from\n`Fin (n + 1 + 1)` to `Fin n` which is defined on the complement of the two specified indices.\nThis is similar to `Fin.predAbove` (although not exactly the same),\nfor this reason we call it `predPredAbove`.\n\n## Implementation\n\nIn previous versions of Physlib the function which is now called `succSuccAbove`\nwas previously called `dropPairEmb` and the function which is now called `predPredAbove` was\npreviously called `dropPairEmbPre`.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 37,
@@ -13250,13 +13405,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/Contraction/UnitTensorContraction.lean",
    "module": "Physlib.Relativity.Tensors.Contraction.UnitTensorContraction",
    "title": "Contraction against the unit tensor",
    "doc": "## i. Overview\n\nThe unit tensor is the identity for slot contraction: contracting any slot of `t` against\n`unitTensor` for that slot's color returns `t`, the slot relabelled to the survivor tail. That is\nwhat collapses \"raise then lower\" to the identity, a metric contracted against its dual becoming\nthe unit tensor and then contracting away.\n\n`crossToEnd_unitTensor` is proved by decomposing `t` along its last slot (`eq_sum_evalT`) and\ntransporting to an arbitrary slot with the transposition `swap i (last)`. On it the round trip\nagainst a matched pair is assembled in both conventions, and a pair collapsing in *both* orders\nmakes the two contractions mutually inverse, which `crossToSlotEquiv` bundles as a linear\nequivalence between the two color assignments.\n\nSince `unitTensor` is `RCLike`-valued, this material sits over an `[RCLike k]` variable block, apart\nfrom the `CommRing` `crossToEnd`/`crossToSlot` algebra.\n\n## ii. Key results\n\n- `TensorSpecies.Tensor.crossToEnd_unitTensor` : the unit tensor is an identity for `crossToEnd`\n    at any named slot.\n- `TensorSpecies.Tensor.crossToEnd_round_trip_of_unit_slot` : two contractions against a pair that\n    collapses to the unit tensor return the original tensor, in result-to-end form.\n- `TensorSpecies.Tensor.crossToSlot_raise_lower_round_trip` : the round trip in result-to-slot\n    form, every color propositional.\n- `TensorSpecies.Tensor.crossToSlotEquiv` : raising and lowering a named index against a pair that\n    collapses in both orders, as a linear equivalence.\n- `TensorSpecies.Tensor.contractInnerT_eq_unitTensor_comm` : if the label sets of the two indices\n    of `M` are in bijection, `M_{μν} M'^{νρ} = δ_μ^ρ` implies `M'^{νρ} M_{ρσ} = δ^ν_σ`.\n\n## iii. Table of contents\n\n- A. The unit tensor as a slot-contraction identity\n- B. Round trips against a matched pair\n- C. Raising and lowering as an equivalence\n- D. One contraction law from the other\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Andrea Pari",
    "sections": [
     {
      "line": 69,
@@ -13334,13 +13491,15 @@
     }
    ],
    "private": 3,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/Dual.lean",
    "module": "Physlib.Relativity.Tensors.Dual",
    "title": "Dual tensors",
    "doc": "## i. Overview\n\nThe metric tensor identifies a tensor with the one obtained by dualising the color of a single\nindex: contracting slot `i` of `t` against `metricTensor (S.τ (c i))` returns a tensor of color\n`Function.update c i (S.τ (c i))`, leaving every other slot alone. This is the raising and lowering\nof a named index, `T^{μν} ↦ T_{μ}{}^{ν}`. `toDualMapAtIndex i` is that contraction, `crossToSlot`\nagainst the metric, at every rank and every named slot.\n\nA metric contracted against the metric at the dual color collapses to the unit tensor, in both\norders. So the contraction back against `metricTensor (c i)`, `fromDualMapAtIndex i`, inverts it,\nand the two assemble into the linear equivalence `toDualAtIndex i`: the two color assignments\ncarry the same information. Dualising the same index twice returns the original tensor, up to the\nreindexing of the colors.\n\n## ii. Key results\n\n- `TensorSpecies.Tensor.toDualMapAtIndex` : dualise the color of the index `i` by contracting with\n    the metric tensor.\n- `TensorSpecies.Tensor.fromDualMapAtIndex` : the returning contraction, against the metric tensor\n    at `c i`.\n- `TensorSpecies.Tensor.toDualMapAtIndex_toDualMapAtIndex` : dualising the index `i` twice returns\n    the original tensor.\n- `TensorSpecies.Tensor.toDualMapAtIndex_equivariant` : dualising an index commutes with the\n    `G`-action.\n- `TensorSpecies.Tensor.toDualAtIndex` : raising and lowering the index `i` as a linear\n    equivalence.\n\n## iii. Table of contents\n\n- A. Dualising a named index\n- B. Contracting a metric against its dual\n- C. Dualising twice\n- D. The returning contraction\n- E. Equivariance\n- F. Raising and lowering as an equivalence\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 67,
@@ -13458,13 +13617,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/Elab.lean",
    "module": "Physlib.Relativity.Tensors.Elab",
    "title": "Elaboration of tensor expressions",
    "doc": "- Syntax in Lean allows us to represent tensor expressions in a way close to what we expect to\n  see on pen-and-paper.\n- The elaborator turns this syntax into a tensor tree.\n\n## Examples\n\n- Suppose `T` and `T'` are tensors with color `![c1, c2]`.\n- `{T | μ ν}ᵀ` is `tensorNode T`.\n- We can also write e.g. `{T | μ ν}ᵀ.tensor` to get the tensor itself.\n- `{- T | μ ν}ᵀ` is `neg (tensorNode T)`.\n- `{T | 0 ν}ᵀ` is `eval 0 0 (tensorNode T)`.\n- `{T | [μ] ν}ᵀ` is `eval 0 μ (tensorNode T)`.\n- `{T | μ ν + T' | μ ν}ᵀ` is `addNode (tensorNode T) (perm _ (tensorNode T'))`, where\n  here `_` will be the identity permutation so does nothing.\n- `{T | μ ν = T' | μ ν}ᵀ` is `(tensorNode T).tensor = (perm _ (tensorNode T')).tensor`.\n- If `a ∈ k` then `{a •ₜ T | μ ν}ᵀ` is `smulNode a (tensorNode T)`.\n- If `g ∈ S.G` then `{g •ₐ T | μ ν}ᵀ` is `actionNode g (tensorNode T)`.\n- Suppose `T2` is a tensor with color `![c3]`.\n  Then `{T | μ ν ⊗ T2 | σ}ᵀ` is `prodNode (tensorNode T) (tensorNode T2)`.\n- If `T3` is a tensor with color `![S.τ c1, S.τ c2]`, then\n  `{T | μ ν ⊗ T3 | μ σ}ᵀ` is `contr 0 1 _ (prodNode (tensorNode T) (tensorNode T3))`.\n  `{T | μ ν ⊗ T3 | μ ν }ᵀ` is\n  `contr 0 0 _ (contr 0 1 _ (prodNode (tensorNode T) (tensorNode T3)))`.\n- If `T4` is a tensor with color `![c2, c1]` then\n  `{T | μ ν + T4 | ν μ }ᵀ`is `addNode (tensorNode T) (perm _ (tensorNode T4))` where `_`\n  is the permutation of the two indices of `T4`.\n  `{T | μ ν = T4 | ν μ }ᵀ` is `(tensorNode T).tensor = (perm _ (tensorNode T4)).tensor` is the\n  permutation of the two indices of `T4`.\n\n## Comments\n\n- In all of these expressions `μ`, `ν` etc are free. It does not matter what they are called,\n  Lean will elaborate them in the same way. In other words, `{T | μ ν ⊗ T3 | μ ν }ᵀ` is exactly\n  the same to Lean as `{T | α β ⊗ T3 | α β }ᵀ`.\n- Note that compared to ordinary index notation, we do not rise or lower the indices.\n  This is for two reasons: 1) It is difficult to make this general for all tensor species,\n  2) It is a redundancy in ordinary index notation, since the tensor `T` itself already tells you\n  this information.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 61,
@@ -13802,13 +13963,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/Evaluation.lean",
    "module": "Physlib.Relativity.Tensors.Evaluation",
    "title": "Evaluation of tensor indices",
    "doc": "",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 33,
@@ -14022,13 +14185,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 4
   },
   {
    "file": "Physlib/Relativity/Tensors/LeviCivita/Basic.lean",
    "module": "Physlib.Relativity.Tensors.LeviCivita.Basic",
    "title": "The Levi-Civita tensor as a real Lorentz tensor",
    "doc": "## i. Overview\n\nThis file defines the rank-four Levi-Civita tensor `εᵘᵛᵖᵟ` as a real Lorentz tensor in\n`d = 3` spatial dimensions, with `ε⁰¹²³ = 1`, and proves its antisymmetry under each\nadjacent transposition of indices.\n\nThe component on a multi-index `f` is the generalized Kronecker delta of `f` against the\nidentity, i.e. the sign of `f` when `f` is a permutation and `0` otherwise. The integer\ncomponents are carried by `TensorSpecies.Tensor.TensorInt.toTensor`.\n\n## ii. Key results\n\n- `leviCivita` : the rank-four Levi-Civita tensor `ε4`, with `ε⁰¹²³ = 1`.\n- `leviCivita_basis_repr_apply` : its standard-basis components as a generalized Kronecker delta.\n- `leviCivita_basis_repr_eq_leviCivitaSymbol` : its standard-basis components as the\n  general-dimension Levi-Civita symbol `leviCivitaSymbol` at `ι = Fin 4`.\n- `leviCivita_antisymm`, `leviCivita_antisymm_mid`, `leviCivita_antisymm_last` : antisymmetry\n  under each adjacent transposition of the indices.\n\n## iii. Table of contents\n\n- A. Definition\n- B. Components in the standard basis\n- C. Antisymmetry\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Robert Sneiderman",
    "sections": [
     {
      "line": 56,
@@ -14126,13 +14291,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/LeviCivita/Complex.lean",
    "module": "Physlib.Relativity.Tensors.LeviCivita.Complex",
    "title": "The Levi-Civita tensor as a complex Lorentz tensor",
    "doc": "This file complexifies the real Lorentz Levi-Civita tensor and records its components in the\nGaussian integer tensor basis.",
+   "copyright": "2026 Robert Sneiderman",
    "sections": [
     {
      "line": 31,
@@ -14174,13 +14341,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/LeviCivita/Contractions.lean",
    "module": "Physlib.Relativity.Tensors.LeviCivita.Contractions",
    "title": "Contraction identities for the Levi-Civita tensor",
    "doc": "## i. Overview\n\nThis file proves the \"epsilon-epsilon\" contraction identities for the rank-four Levi-Civita\ntensor `leviCivita` (notation `ε4`) in `d = 4`, stated in terms of the standard-basis\ncomponents of `ε4` itself (`realLorentzTensor.leviCivita_basis_repr_apply`).\n\nThe underlying facts about the `generalizedKroneckerDelta` alone, with no\ntensor content, live in `Physlib.Mathematics.KroneckerDelta.Contraction`, next to the\ndefinition of `generalizedKroneckerDelta`. Here we specialise those facts to the components of\n`ε4`, where `(ε4)_b = (Tensor.basis _).repr ε4 b` is the standard-basis component of `ε4`, an\ninteger Levi-Civita symbol carried to the reals, and the sums run over the remaining\n(uncontracted) component slots.\n\nIt also proves the Lorentzian tensor identities obtained by lowering all four indices of one\nfactor: the complete contraction is `-24`, while contracting three index pairs gives `-6` times\nthe unit tensor.\n\nThe Lorentzian proofs proceed through reusable component statements: lowering all four indices\ncontributes the orientation sign, tensor contractions become finite sums of matching components,\nand the Euclidean contraction theorems evaluate those sums.\n\n## ii. Key results\n\n- `euclidLeviCivita_symbol_contract_zero` : full Euclidean contraction equals `24`.\n- `euclidLeviCivita_symbol_contract_one` : the triple Euclidean contraction equals `6 · δ[a,b]`.\n- `euclidLeviCivita_symbol_contract_two` :\n  `∑_h (ε4)_{r,s,h} · (ε4)_{t,w,h} = 2 · (δ[r,t]·δ[s,w] - δ[r,w]·δ[s,t])`.\n- `realLorentzTensor.leviCivita_lowered_basis_repr_apply` : lowering all four indices changes\n  every standard-basis component by the Lorentzian orientation sign `-1`.\n- `realLorentzTensor.leviCivita_contract_three_basis_repr_apply` : the tensor triple contraction\n  is the sum of matching standard-basis components.\n- `leviCivita_contract_self` : `ε^{μνρσ} ε_{μνρσ} = -24`.\n- `leviCivita_contract_three` : `ε^{μνρσ} ε_{μνρτ} = -6 δ^σ_τ`.\n\n## iii. Table of contents\n\n- A. Euclidean epsilon-epsilon contraction identities\n- B. Lorentzian epsilon-epsilon contraction identities\n  - B.1. The epsilon-epsilon contraction identities\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Robert Sneiderman",
    "sections": [
     {
      "line": 65,
@@ -14286,13 +14455,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 1
   },
   {
    "file": "Physlib/Relativity/Tensors/MetricTensor.lean",
    "module": "Physlib.Relativity.Tensors.MetricTensor",
    "title": "The metric tensors",
    "doc": "",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -14369,13 +14540,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/OfInt.lean",
    "module": "Physlib.Relativity.Tensors.OfInt",
    "title": "Basis for tensors in a tensor species",
    "doc": "",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -14412,13 +14585,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/Product.lean",
    "module": "Physlib.Relativity.Tensors.Product",
    "title": "The product of tensors",
    "doc": "## i. Overview\n\nIn this module we define the tensor product of\n- index components of tensors,\n- pure tensors, and\n- tensors.\nWe prove a number of properties about these products, for example,\npermutation of the factors, equivariance, and associativity.\n\n## ii. Key results\n\n- `Pure.prodP` : The tensor product of two pure tensors.\n- `prodT` : The tensor product of two tensors.\n\nThe following results exist for both `prodP` and `prodT` :\n- `prodT_swap` : Swapping the order of the product of two tensors.\n- `prodT_permT_left` : Permuting the indices of the left tensor commute with the product.\n- `prodT_permT_right` : Permuting the indices of the right tensor commute with the product.\n- `prodT_equivariant` : The product of two tensors is equivariant.\n- `prodT_assoc` : The product of three tensors is associative.\n- `prodT_assoc'` : The product of three tensors is associative in the other direction.\n\n## iii. Table of contents\n\n- A. Products of index components\n  - A.1. The product of component indices as an equivalence\n- B. Products of pure tensors\n  - B.1. Indexing pure tensors by `Fin n1 ⊕ Fin n2` rather than `Fin (n1 + n2)`\n  - B.2. The product of two pure tensors\n  - B.3. The vectors making up product of two pure tensors\n  - B.4. The product of two pure basis vectors\n  - B.5. The basis components of the product of two pure tensors\n  - B.6. Equivariance of the product of two pure tensors\n  - B.7. Product with a tensor with no indices on the right\n  - B.8. Swapping the order of the product of two pure tensors\n  - B.9. Permuting the indices of the left tensor in a product\n  - B.10. Permuting the indices of the right tensor in a product\n  - B.11. Associativity of the product of three pure tensors in one direction\n  - B.12. Associativity of the product of three pure tensors in the other direction\n- C. Products of tensors\n  - C.1. Indexing tensors by `Fin n1 ⊕ Fin n2` rather than `Fin (n1 + n2)`\n  - C.2. The product of two tensors\n  - C.3. The product of two pure tensors as a tensor\n  - C.4. The product of basis vectors\n  - C.5. The product as an equivalence\n  - C.6. Rewriting the basis for the product in terms of the tensor product basis\n  - C.7. Equivariance of the product of two tensors\n  - C.8. The product with the default tensor with no indices on the right\n  - C.9. Swapping the order of the product of two tensors\n  - C.10. Permuting the indices of the left tensor in a product\n  - C.11. Permuting the indices of the right tensor in a product\n  - C.12. Associativity of the product of three tensors in one direction\n  - C.13. Associativity of the product of three tensors in the other direction\n\n## iv. References\n\n* Tooby-Smith, Formalization of physics index notation in Lean 4, arXiv:2411.07667.\n  [ref: tooby_smith_2024_index_notation]",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 88,
@@ -14780,13 +14955,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/RealTensor/Basic.lean",
    "module": "Physlib.Relativity.Tensors.RealTensor.Basic",
    "title": "",
    "doc": "## Real Lorentz tensors\n\nWithin this directory `Pre` is used to denote that the definitions are preliminary and\nwhich are used to define `realLorentzTensor`.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 148,
@@ -14948,13 +15125,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 1
   },
   {
    "file": "Physlib/Relativity/Tensors/RealTensor/Contraction/CrossToEnd.lean",
    "module": "Physlib.Relativity.Tensors.RealTensor.Contraction.CrossToEnd",
    "title": "Components of real Lorentz cross contractions",
    "doc": "## i. Overview\n\nThis file gives the standard-basis component formula for `crossToEnd` on real Lorentz tensors.\nThe contraction pairing of the standard covariant and contravariant bases reduces the generic\ncomponent expansion to one finite sum.\n\n## ii. Key results\n\n- `realLorentzTensor.crossToEnd_basis_repr_apply_eq_fin` expresses each component of a cross\n  contraction as a sum over the contracted Lorentz index.\n\n## iii. Table of contents\n\n- A. Basis components\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Robert Sneiderman",
    "sections": [
     {
      "line": 41,
@@ -14972,13 +15151,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/RealTensor/CoVector/Basic.lean",
    "module": "Physlib.Relativity.Tensors.RealTensor.CoVector.Basic",
    "title": "Lorentz co vectors",
    "doc": "In this module we define Lorentz vectors as real Lorentz tensors with a single up index.\nWe create an API around Lorentz vectors to make working with them as easy as possible.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 142,
@@ -15196,13 +15377,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/RealTensor/CoVector/Representation.lean",
    "module": "Physlib.Relativity.Tensors.RealTensor.CoVector.Representation",
    "title": "Representation of the Lorentz group on Lorentz vectors",
    "doc": "In this module we define the representation of the Lorentz group on Lorentz covectors.\nThis does not define the MulAction on `Lorentz.CoVector`, which is induced\nby its tensor structure.",
+   "copyright": "2026 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 42,
@@ -15284,13 +15467,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/RealTensor/CoVector/Tensorial.lean",
    "module": "Physlib.Relativity.Tensors.RealTensor.CoVector.Tensorial",
    "title": "Tensorial nature of Lorentz covectors",
    "doc": "We define the tensorial instance on `Lorentz.coVector`, and show\nprove properties related to the Lorentz group action and the basis.",
+   "copyright": "2026 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 37,
@@ -15452,13 +15637,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/RealTensor/Matrix/Pre.lean",
    "module": "Physlib.Relativity.Tensors.RealTensor.Matrix.Pre",
    "title": "Tensor products of two real Lorentz vectors",
    "doc": "",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 102,
@@ -15600,13 +15787,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/RealTensor/Metrics/Basic.lean",
    "module": "Physlib.Relativity.Tensors.RealTensor.Metrics.Basic",
    "title": "",
    "doc": "## Metrics as real Lorentz tensors",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 26,
@@ -15728,13 +15917,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/RealTensor/Metrics/Pre.lean",
    "module": "Physlib.Relativity.Tensors.RealTensor.Metrics.Pre",
    "title": "Metric for real Lorentz vectors",
    "doc": "",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 105,
@@ -15840,13 +16031,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/RealTensor/Representation/Contraction.lean",
    "module": "Physlib.Relativity.Tensors.RealTensor.Representation.Contraction",
    "title": "Contraction of Real Lorentz Vectors and Covectors",
    "doc": "We define the intertwining maps which define the contraction of a contravariant Lorentz vector with\na covariant Lorentz vector, and vice versa.\n\nNote: This file will eventually replace `./Pre/Contraction.lean` when we move\n  `realLorentzTensor` over to `Vector` and `CoVector`.",
+   "copyright": "2026 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 33,
@@ -15948,13 +16141,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 1
   },
   {
    "file": "Physlib/Relativity/Tensors/RealTensor/ToComplex.lean",
    "module": "Physlib.Relativity.Tensors.RealTensor.ToComplex",
    "title": "Complex Lorentz tensors from real Lorentz tensors",
    "doc": "## i. Overview\n\nIn this module we describe how to pass from real Lorentz tensors to complex Lorentz tensors\nin a functorial way.\nSpecifically, we construct a canonical equivariant semilinear map\n\n* `toComplex : ℝT(3, c) →ₛₗ[Complex.ofRealHom] ℂT(colorToComplex ∘ c)`\n\nwhich is compatible with the natural operations on tensors (permutations of\nindices, tensor products, contractions and evaluations).\n\n## ii. Key results\n\nThe main definitions and statements are:\n\n* `colorToComplex` upgrades the colour of a real Lorentz tensor to the\n  corresponding complex Lorentz colour.\n* `TensorSpecies.Tensor.ComponentIdx.complexify` transports component indices\n  along `colorToComplex`.\n* `toComplex` is the basic semilinear map from real to complex Lorentz tensors.\n* `toComplex_basis` and `toComplex_pure_basisVector` show that `toComplex`\n  sends basis tensors to basis tensors.\n* `toComplex_eq_zero_iff` and `toComplex_injective` show that `toComplex` is\n  injective.\n* `toComplex_equivariant` states that `toComplex` is equivariant for the action\n  of the complexified Lorentz group.\n* `permT_toComplex`, `prodT_toComplex`, `contrT_toComplex` and `evalT_toComplex`\n  express that `toComplex` commutes with the basic tensor operations.\n\n## iii. Table of contents\n\n* A. Colours and component indices\n* B. The semilinear map `toComplex`\n  * B.1. Expression in the tensor basis\n  * B.2. Behaviour on basis vectors and injectivity\n  * B.3. Equivariance under the Lorentz action\n* C. Compatibility with permutations: `permT`\n* D. Compatibility with tensor products: `prodT`\n* E. Compatibility with contraction: `contrT`\n* F. Compatibility with evaluation: `evalT`\n\n## iv. References\n\n* None — the general formalism of Lorentz tensors and their operations is\n  developed in other parts of the library; here we only specialise to the\n  passage from real to complex Lorentz tensors.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 69,
@@ -16344,13 +16539,15 @@
     }
    ],
    "private": 2,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/RealTensor/Units/Basic.lean",
    "module": "Physlib.Relativity.Tensors.RealTensor.Units.Basic",
    "title": "Unit tensors for real Lorentz tensors",
    "doc": "## i. Overview\n\nThis file computes the unit tensors of `realLorentzTensor` in the standard covariant and\ncontravariant bases.\n\n## ii. Key results\n\n- `realLorentzTensor.unitTensor_repr_apply` identifies the standard-basis components of either\n  real Lorentz unit tensor with the Kronecker delta.\n\n## iii. Table of contents\n\n- A. Basis components\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Robert Sneiderman",
    "sections": [
     {
      "line": 42,
@@ -16368,13 +16565,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/RealTensor/Units/Pre.lean",
    "module": "Physlib.Relativity.Tensors.RealTensor.Units.Pre",
    "title": "Unit for complex Lorentz vectors",
    "doc": "",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 126,
@@ -16484,13 +16683,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/RealTensor/Vector/Basic.lean",
    "module": "Physlib.Relativity.Tensors.RealTensor.Vector.Basic",
    "title": "Lorentz Vectors",
    "doc": "In this module we define Lorentz vectors as real Lorentz tensors with a single up index.\nWe create an API around Lorentz vectors to make working with them as easy as possible.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 278,
@@ -17060,13 +17261,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/RealTensor/Vector/MinkowskiProduct.lean",
    "module": "Physlib.Relativity.Tensors.RealTensor.Vector.MinkowskiProduct",
    "title": "Minkowski product on Lorentz vectors",
    "doc": "In this module we define and create an API around the Minkowski product on Lorentz vectors.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 33,
@@ -17340,13 +17543,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/RealTensor/Vector/Pre/Basic.lean",
    "module": "Physlib.Relativity.Tensors.RealTensor.Vector.Pre.Basic",
    "title": "Real Lorentz vectors",
    "doc": "We define real Lorentz vectors in as representations of the Lorentz group.",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 110,
@@ -17520,13 +17725,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/RealTensor/Vector/Pre/Contraction.lean",
    "module": "Physlib.Relativity.Tensors.RealTensor.Vector.Pre.Contraction",
    "title": "Contraction of Real Lorentz vectors",
    "doc": "",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 128,
@@ -17880,13 +18087,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/RealTensor/Vector/Pre/Modules.lean",
    "module": "Physlib.Relativity.Tensors.RealTensor.Vector.Pre.Modules",
    "title": "",
    "doc": "## Modules associated with Real Lorentz vectors\n\nWe define the modules underlying real Lorentz vectors.\n\nThese definitions are preludes to the definitions of\n`Lorentz.contr` and `Lorentz.co`.",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 79,
@@ -18376,13 +18585,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/RealTensor/Vector/Representation.lean",
    "module": "Physlib.Relativity.Tensors.RealTensor.Vector.Representation",
    "title": "Representation of the Lorentz group on Lorentz vectors",
    "doc": "In this module we define the representation of the Lorentz group on Lorentz vectors.\nThis does not define the MulAction on `Lorentz.Vector`, which is induced\nby its tensor structure.",
+   "copyright": "2026 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 39,
@@ -18472,13 +18683,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/RealTensor/Vector/Tensorial.lean",
    "module": "Physlib.Relativity.Tensors.RealTensor.Vector.Tensorial",
    "title": "Tensorial nature of Lorentz vectors",
    "doc": "We define the tensorial instance on `Lorentz.Vector`, and show\nprove properties related to the Lorentz group action and the basis.",
+   "copyright": "2026 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 38,
@@ -18696,13 +18909,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/RealTensor/Velocity/Basic.lean",
    "module": "Physlib.Relativity.Tensors.RealTensor.Velocity.Basic",
    "title": "Lorentz Velocities",
    "doc": "In this module we define Lorentz velocities to be\nLorentz vectors which have norm equal to one and which are future-directed.",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 182,
@@ -18916,13 +19131,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/RealTensor/Velocity/Deriv.lean",
    "module": "Physlib.Relativity.Tensors.RealTensor.Velocity.Deriv",
    "title": "Derivatives of Lorentz velocities",
    "doc": "Derivatives of unit four-velocity curves and the spatial-part constructor.\n\n## i. Overview\n\nDifferentiating the normalization of a curve in `Lorentz.Velocity` gives orthogonality\nof its value and derivative. The spatial-part constructor has an explicit derivative,\nobtained from the squared Euclidean norm and the square-root chain rule. Derivatives are\ntaken in the ambient Lorentz vector space. For a worldline's four-velocity parametrized\nby proper time, the derivative is four-acceleration.\n\n## ii. Key results\n\n- `Lorentz.Velocity.minkowskiProduct_eq_zero_of_hasDerivAt`: the derivative of a curve of\n  unit four-velocities is Minkowski orthogonal to its value.\n- `Lorentz.Velocity.hasDerivAt_ofSpatialPart`: the ambient derivative of the unit\n  four-velocity determined by a differentiable spatial-part curve.\n\n## iii. Table of contents\n\n- A. Derivative orthogonality\n- B. Derivative of the spatial-part constructor\n\n## iv. References\n\nThe proofs use the bilinear derivative rule from `Mathlib.Analysis.Calculus.Deriv.Mul`\nand the squared-norm derivative from `Mathlib.Analysis.InnerProductSpace.Calculus`.",
+   "copyright": "2026 Scott Hughes",
    "sections": [
     {
      "line": 51,
@@ -18952,13 +19169,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/Reindexing.lean",
    "module": "Physlib.Relativity.Tensors.Reindexing",
    "title": "Reindexing of tensor components",
    "doc": "In this file we give results related to the reindexing of tensors.\nIf a tensor has indices specified by a list of colors `c : Fin n → C`, then reindexing the\ntensor corresponds to a bijection `σ : Fin m → Fin n` such that `c ∘ σ = c1` for some other\nlist of colors `c1 : Fin m → C`. A reindexing might take a tensor ψⁱⱼ to a tensor ψʲᵢ\nby reordering the indices, or it might take a tensor ψⁱⱼᵏ to a tensor ψⁱᵏ.\n\nWe are interested in the interaction of reindexing with the following operations on tensors:\n- `Fin.append` corresponds to the product of tensors.\n- `Fin.succAbove` corresponds to the evaluation of a tensor at a given index.\n- `Fin.succSuccAbove` corresponds to the contraction of a tensor at two given indices.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 33,
@@ -19352,13 +19571,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/Tensorial.lean",
    "module": "Physlib.Relativity.Tensors.Tensorial",
    "title": "Tensorial class",
    "doc": "## i. Overview\n\nWe define a class called `Tensorial`.\nThis class is used to enable the use of index notation on a type `M` via a linear equivalence to a\ntensor of a `TensorSpecies`.\n\nWe define the class `Tensorial` here, and provide an API around its use.\n\n## ii. Key results\n\n- `Tensorial` : The class used to allow index notation on a type `M`.\n- `Tensorial.numIndices` : The number of indices of an element of an `M`\n  carrying a tensorial instance.\n- `Tensorial.mulAction` : The action of the group `G` on a\n  type `M` carrying a tensorial instance.\n- `Tensorial.prod` : The product of two tensorial instances is a tensorial instance.\n\n## iii. Table of contents\n\n- A. Defining the tensorial class\n  - A.1. Tensors carry a tensorial instance\n  - A.2. The number of indices\n- B. The action of the group on a module with a tensorial instance\n  - B.1. Relation between the action and the equivalence to tensors\n  - B.2. Linear properties of the action\n  - B.3. The action as a linear map\n  - B.4. The SMulCommClass property\n- C. Properties of the basis\n- D. Products of tensorial instances\n  - D.1. The equivalence to tensors on products\n  - D.2. The group action on products\n  - D.3. The basis on products\n- E. Continuous properties\n  - E.1. Finite dimensionality\n  - E.2. The map to tensors as a continuous linear equivalence\n  - E.3. The Lorentz action as a continuous linear equivalence\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 67,
@@ -19640,13 +19861,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/TensorSpecies/Basic.lean",
    "module": "Physlib.Relativity.Tensors.TensorSpecies.Basic",
    "title": "Tensor species",
    "doc": "- A tensor species is a structure including all of the ingredients needed to define a type of\n  tensor.\n- Examples of tensor species will include real Lorentz tensors, complex Lorentz tensors, and\n  Einstein tensors.\n- Tensor species are built upon symmetric monoidal categories.",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 67,
@@ -19796,13 +20019,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 1
   },
   {
    "file": "Physlib/Relativity/Tensors/TensorSpecies/DualBasis.lean",
    "module": "Physlib.Relativity.Tensors.TensorSpecies.DualBasis",
    "title": "Species whose bases at dual colors are dual bases",
    "doc": "## i. Overview\n\nThis file defines `HasContrDualBases`: species whose basis at `S.τ c` is dual to the basis at `c`\nunder the pairing `S.contr c`.\n\nA matching `e : basisIdx (S.τ c) ≃ basisIdx c` satisfies the δ law (`IsContrDualMatching`) if\n`S.contr c (b c x₁ ⊗ₜ b (S.τ c) x₂) = if x₁ = e x₂ then 1 else 0`. The class asks for one such\nmatching at every color, so the label types need only be in bijection.\n\nOver a nontrivial ring the matching is unique (`IsContrDualMatching.unique`). Hence\n`contrDualIdxEquiv`, although picked by choice, is the only matching, so nothing depends on the\nchoice. A concrete species identifies it through `contrDualIdxEquiv_eq_of_isContrDualMatching`,\nand the double-dual law `contrDualIdxEquiv_tau` is a theorem.\n\nThe contraction functionals are the dual basis of `b c` (`contr_tmul_basis_eq_dualBasis`).\nContracted basis vectors have δ coefficients (`Pure.contrPCoeff_basisVector`), and components of a\ncontraction are single sums (`contrT_basis_repr_apply_eq_sum_dual`).\n\n## ii. Key results\n\n- `TensorSpecies.IsContrDualMatching.unique` : the δ law determines the matching.\n- `TensorSpecies.HasContrDualBases` : the class.\n- `TensorSpecies.HasContrDualBases.contrDualIdxEquiv` : the matching of the labels at `S.τ c`\n    with those at `c`.\n- `TensorSpecies.HasContrDualBases.contr_basis_eq_ite` : the δ law for `contrDualIdxEquiv`.\n- `TensorSpecies.HasContrDualBases.contrDualIdxEquiv_eq_of_isContrDualMatching` : any matching\n    satisfying the δ law is `contrDualIdxEquiv`.\n- `TensorSpecies.HasContrDualBases.dualIdxEquiv` : the equivalence between labels of dual\n    indices.\n- `TensorSpecies.HasContrDualBases.contrDualIdxEquiv_tau` : the matching at `S.τ c` is the\n    inverse of the one at `c`, through `S.τ (S.τ c) = c`.\n- `TensorSpecies.HasContrDualBases.dualIdxEquiv_symm` : the inverse of `dualIdxEquiv` from `c1`\n    to `c2` is `dualIdxEquiv` from `c2` to `c1`.\n- `TensorSpecies.HasContrDualBases.contr_tmul_basis_eq_dualBasis` : contracting with a basis vector\n    at `S.τ c` is an element of `Module.Basis.dualBasis`.\n\n## iii. Table of contents\n\n- A. Matchings satisfying the δ law\n- B. The class\n- C. The matching\n- D. The double dual\n- E. The dual basis\n\n## iv. References\n\nThere are no known references for the material in this module.",
+   "copyright": "2026 Andrea Pari",
    "sections": [
     {
      "line": 75,
@@ -19916,13 +20141,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Relativity/Tensors/UnitTensor.lean",
    "module": "Physlib.Relativity.Tensors.UnitTensor",
    "title": "The unit tensors",
    "doc": "",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -20047,7 +20274,8 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   }
  ]
 }

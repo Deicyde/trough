@@ -8,7 +8,7 @@ proof: formalized
 
 # Boosts of space time
 
-The module `Physlib.SpaceAndTime.SpaceTime.Boosts`, [Physlib/SpaceAndTime/SpaceTime/Boosts.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/SpaceTime/Boosts.lean): 2 declarations, 0 with a docstring.
+The module `Physlib.SpaceAndTime.SpaceTime.Boosts`, [Physlib/SpaceAndTime/SpaceTime/Boosts.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/SpaceAndTime/SpaceTime/Boosts.lean): 2 declarations, none with a docstring.
 
 ## i. Overview
 

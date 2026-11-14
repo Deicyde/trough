@@ -8,7 +8,7 @@ proof: formalized
 
 # fderiv currying lemmas
 
-The module `Physlib.Mathematics.ForMathlib.FDerivCurry`, [Physlib/Mathematics/ForMathlib/FDerivCurry.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/ForMathlib/FDerivCurry.lean): 24 declarations, 0 with a docstring.
+The module `Physlib.Mathematics.ForMathlib.FDerivCurry`, [Physlib/Mathematics/ForMathlib/FDerivCurry.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Mathematics/ForMathlib/FDerivCurry.lean): 24 declarations, none with a docstring.
 
 > Various lemmas related to fderiv on curried/uncurried functions.
 

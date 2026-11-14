@@ -37,8 +37,7 @@ The module `Physlib.StringTheory.FTheory.SU5.Charges.Viable`, [Physlib/StringThe
 > which are in `viableCharges` but not in `viableCompletions`. This helps split some of the
 > proofs.
 >
-> Note that this file is slow to run, any improvements to the speed of this file
-> will be very welcome. In particular working out a way to restrict by anomaly cancellation.
+> …
 
 ## ii. Key results
 

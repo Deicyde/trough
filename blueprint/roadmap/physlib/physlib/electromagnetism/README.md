@@ -1,6 +1,6 @@
 # Electromagnetism
 
-The folder [Physlib/Electromagnetism/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism): 1 module, an article each, in path order with Basic.lean first in its folder; then 9 folders below it, a page each, 35 modules in all.
+The folder [Physlib/Electromagnetism/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Electromagnetism): 1 module, with an article; then 9 folders below it, a page each, 35 modules in all.
 
 - [A. Electromagnetism](basic.md)
 - [Charge](charge/README.md)

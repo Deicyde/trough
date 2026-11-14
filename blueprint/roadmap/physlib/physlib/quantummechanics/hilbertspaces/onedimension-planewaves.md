@@ -12,8 +12,7 @@ The module `Physlib.QuantumMechanics.HilbertSpaces.OneDimension.PlaneWaves`, [Ph
 
 > We define plane waves as a member of the dual of the Schwartz submodule of the 1d Hilbert space.
 >
-> This module has been generalized to d-dimensions in
-> `QuantumMechanics/HilbertSpaces/SpaceD/MomentumStates.lean` and will be removed in the near future.
+> …
 
 **`QuantumMechanics.OneDimension.HilbertSpace.planewaveFunctional`**, a def, [line 36](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/HilbertSpaces/OneDimension/PlaneWaves.lean#L36).
 

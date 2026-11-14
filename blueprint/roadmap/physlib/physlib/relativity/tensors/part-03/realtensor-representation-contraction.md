@@ -13,8 +13,7 @@ The module `Physlib.Relativity.Tensors.RealTensor.Representation.Contraction`, [
 > We define the intertwining maps which define the contraction of a contravariant Lorentz vector with
 > a covariant Lorentz vector, and vice versa.
 >
-> Note: This file will eventually replace `./Pre/Contraction.lean` when we move
->   `realLorentzTensor` over to `Vector` and `CoVector`.
+> …
 
 ## A. The definitions
 

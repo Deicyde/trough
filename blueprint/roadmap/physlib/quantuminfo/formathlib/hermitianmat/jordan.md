@@ -8,7 +8,7 @@ proof: formalized
 
 # QuantumInfo.ForMathlib.HermitianMat.Jordan
 
-The module `QuantumInfo.ForMathlib.HermitianMat.Jordan`, [QuantumInfo/ForMathlib/HermitianMat/Jordan.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HermitianMat/Jordan.lean): 19 declarations (7 instances with no name), 0 with a docstring.
+The module `QuantumInfo.ForMathlib.HermitianMat.Jordan`, [QuantumInfo/ForMathlib/HermitianMat/Jordan.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HermitianMat/Jordan.lean): 19 declarations (7 instances with no name), none with a docstring.
 
 > Hermitian matrices have a Jordan algebra structure given by
 > `A * B := 2⁻¹ • (A.toMat * B.toMat + B.toMat * A.toMat)`. We call this operation

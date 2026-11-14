@@ -1,6 +1,6 @@
 # Relativity
 
-The folder [PhyslibAlpha/Relativity/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity): 4 modules, an article each, in path order with Basic.lean first in its folder; then 8 folders below it, a page each, 36 modules in all.
+The folder [PhyslibAlpha/Relativity/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Relativity): 4 modules, an article each, in path order; then 8 folders below it, a page each, 36 modules in all.
 
 - [Class IsLorentzDeriv](islorentzderiv.md)
 - [The light-cone basis of an axis](lightconederiv.md)

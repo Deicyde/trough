@@ -7,6 +7,7 @@
    "module": "QuantumInfo.Entropy.DPI",
    "title": "DPI (Data Processing Inequality)",
    "doc": "The Data Processing Inequality (DPI) for the sandwiched Rényi relative entropy, and\nas a consequence, the quantum relative entropy.\n\n## Proof structure (for α > 1)\n\nFollowing Leditzky–Rouzé–Datta (arXiv:1306.5920), the proof proceeds as follows:\n\n1. Define the **trace functional** `Q̃_α(ρ‖σ) = Tr[(σ^γ ρ σ^γ)^α]` where `γ = (1 - α) / (2α)`.\n   The sandwiched Rényi divergence satisfies `D̃_α(ρ‖σ) = log(Q̃_α(ρ‖σ)) / (α - 1)`.\n\n2. The DPI for `D̃_α` reduces to **monotonicity of `Q̃_α` under partial trace**:\n   `Q̃_α(ρ_AB‖σ_AB) ≥ Q̃_α(ρ_A‖σ_A)` for `α > 1`.\n\n3. This monotonicity is proved via the **twirling argument**:\n   - `Q̃_α` is invariant under joint unitary conjugation.\n   - `Q̃_α` is jointly convex for `α > 1` (Frank–Lieb).\n   - A twirling set of unitaries `{V_i}` averages any state to a product with the\n     maximally mixed state.\n   - `Q̃_α` is invariant under tensoring with a fixed state.\n\n4. The general DPI for CPTP maps follows via **Stinespring dilation**:\n   any CPTP map can be decomposed as ancilla preparation + unitary + partial trace.",
+   "copyright": "2026 Alex Meiburg",
    "sections": [
     {
      "line": 57,
@@ -480,13 +481,15 @@
     }
    ],
    "private": 18,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/Entropy/Relative.lean",
    "module": "QuantumInfo.Entropy.Relative",
    "title": "",
    "doc": "To do relative entropies, we start with the _sandwiched Renyi Relative Entropy_ which is a nice general form.\nThen instead of proving many theorems (like DPI, relabelling, additivity, etc.) several times, we just prove\nit for this one quantity, then it follows for other quantities (like the relative entropy) as a special case.",
+   "copyright": "2026 Alex Meiburg",
    "sections": [],
    "declarations": [
     {
@@ -923,13 +926,15 @@
     }
    ],
    "private": 70,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/Entropy/SSA.lean",
    "module": "QuantumInfo.Entropy.SSA",
    "title": "",
    "doc": "Quantities of quantum _relative entropy_, namely the (standard) quantum relative\nentropy, and generalizations such as sandwiched Rényi relative entropy.",
+   "copyright": "2026 Alex Meiburg",
    "sections": [
     {
      "line": 332,
@@ -1287,13 +1292,15 @@
     }
    ],
    "private": 36,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/Entropy/VonNeumann.lean",
    "module": "QuantumInfo.Entropy.VonNeumann",
    "title": "",
    "doc": "Quantum notions of information and entropy.\n\nWe start with quantities of _entropy_, namely the von Neumann entropy and its derived quantities:\n * Quantum conditional entropy, `qConditionalEnt`\n * Quantum mutual information, `qMutualInfo`\n * Coherent information, `coherentInfo`\n * Quantum conditional mutual information, `qcmi`.\nand then prove facts about them.",
+   "copyright": "2025 Alex Meiburg",
    "sections": [],
    "declarations": [
     {
@@ -1490,7 +1497,8 @@
     }
    ],
    "private": 10,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   }
  ]
 }

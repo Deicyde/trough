@@ -7,6 +7,7 @@
    "module": "Physlib.Electromagnetism.Basic",
    "title": "A. Electromagnetism",
    "doc": "Electromagnetism describes electric and magnetic fields, their potentials and sources, and the\nrelations between them on space and spacetime. This module provides a compact foundational API used\nby more specialized electromagnetism modules in Physlib.\n\n## A.1. Main definitions\n\nThe module contains coordinate-level types for electric and magnetic fields, a spacetime vector\npotential, charge and current densities, and the constants describing an electromagnetic system.\nFor an `EMSystem`, it also defines the speed of light and Coulomb's constant in terms of the vacuum\npermittivity and permeability.\n\n## A.2. Current status\n\nThe definitions here are intentionally lightweight. More developed APIs are organized under the\n`Kinematics`, `Dynamics`, `TemperedDistributional`, `ThreeDimension`, and `Vacuum` subdirectories.\nThe abbreviations in this file remain useful as shared entry points while those APIs continue to\nconverge.\n\n## A.3. Future work\n\nCharge and current densities should be generalized to signed measures while remaining convenient\nfor integration and tensor notation. As the specialized APIs stabilize, overlapping legacy\ninterfaces should be consolidated without breaking the physical meaning of existing declarations.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -75,13 +76,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 1
   },
   {
    "file": "Physlib/Electromagnetism/Charge/ChargeUnit.lean",
    "module": "Physlib.Electromagnetism.Charge.ChargeUnit",
    "title": "The units of charge",
    "doc": "A unit of charge corresponding to a choice of translationally-invariant\nmetric on the charge manifold (to be defined diffeomorphic to `ℝ`).\nSuch a choice is (non-canonically) equivalent to a\nchoice of positive real number. We define the type `ChargeUnit` to be equivalent to the\npositive reals.\n\nWe assume that the charge manifold is already defined with an orientation, with the\nelectron being in the negative direction.\n\nOn `ChargeUnit` there is an instance of division giving a real number, corresponding to the\nratio of the two scales of temperature unit.\n\nTo define specific charge units, we first state the existence of a\na given charge unit, and then construct all other charge units from it.\nWe choose to state the\nexistence of the charge unit of the coulomb, and construct all other charge units from that.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 56,
@@ -123,13 +126,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Electromagnetism/Current/CircularCoil.lean",
    "module": "Physlib.Electromagnetism.Current.CircularCoil",
    "title": "The electrostatics of a circular coil",
    "doc": "## i. Overview\n\nThis module is currently a stub, but will eventually contain the electrostatics of a\ncircular coil carrying a steady current. The references below have in them statements of the\nelectromagnetic potentials and fields around a circular coil.\n\n## ii. Key results\n\n## iii. Table of contents\n\n- A. The current density\n\n## iv. References\n\n* https://ntrs.nasa.gov/api/citations/20140002333/downloads/20140002333.pdf.\n  [ref: nasa_ntrs_20140002333]",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 40,
@@ -138,13 +143,15 @@
    ],
    "declarations": [],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 1
   },
   {
    "file": "Physlib/Electromagnetism/Current/InfiniteWire.lean",
    "module": "Physlib.Electromagnetism.Current.InfiniteWire",
    "title": "The magnetic field around a infinite wire",
    "doc": "## i. Overview\n\nIn this module we verify the electromagnetic properties of an infinite wire\ncarrying a steady current along the x-axis.\n\n## ii. Key results\n\n- `wireCurrentDensity` : The current density associated with an infinite wire\n  carrying a current `I` along the `x`-axis.\n- `infiniteWire` : The electromagnetic potential associated with an infinite wire\n  carrying a current `I` along the `x`-axis.\n- `infiniteWire_isExterma` : The electromagnetic potential of an infinite wire\n  carrying a current `I` along the `x`-axis satisfies Maxwell's equations.\n\n## iii. Table of contents\n\n- A. The current density\n- B. The electromagnetic potential\n  - B.1. The scalar potential\n  - B.2. The vector potential\n- C. The electric field\n- D. Maxwell's equations\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 52,
@@ -294,13 +301,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Electromagnetism/Distributional/Basic.lean",
    "module": "Physlib.Electromagnetism.Distributional.Basic",
    "title": "The Electromagnetic Potential",
    "doc": "## i. Overview\n\nThe electromagnetic potential `A^μ` is the fundamental objects in\nelectromagnetism. Mathematically it is related to a connection\non a `U(1)`-bundle.\n\nWe define the electromagnetic potential as a distribution from\nspacetime to contravariant Lorentz vectors. The notation \"𝓓'(Ω, F)\" is used for the\nspace of `F`-valued distributions on the open set `Ω`. It is also worth noting here that this\ndefinition of distribution is over the reals ℝ.\n\n## ii. Key results\n\n- `DistElectromagneticPotential` : the type of electromagnetic potentials as distributions.\n\n## iii. Table of contents\n\n- A. The electromagnetic potential as a distribution\n  - A.1. Equivalence to distributions\n- B. Functions as distributions\n\n## iv. References\n\n* https://www.dpmms.cam.ac.uk/~cmw50/resources/M3P18/M3P18Ch2.pdf [ref: cambridge_m3p18_ch2]\n* L. Schwartz, Théorie des distributions [ref: schwartz1950]",
+   "copyright": "2026 Cameron Lee",
    "sections": [
     {
      "line": 53,
@@ -366,13 +375,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Electromagnetism/Dynamics/Basic.lean",
    "module": "Physlib.Electromagnetism.Dynamics.Basic",
    "title": "Free space",
    "doc": "## i. Overview\n\nIn this module we define a type `FreeSpace` which encapsulates the\nelectric permittivity and magnetic permeability of free space, that is\nthe physical constants which make it up.\n\nWe prove basic properties from this definition, and define the speed of light\nin free space in terms of these constants.\n\n## ii. Key results\n\n- `FreeSpace` : The structure encapsulating the electric permittivity\n  and magnetic permeability of free space.\n- `FreeSpace.c` : The speed of light in free space.\n\n## iii. Table of contents\n\n- A. The definition of the free space type\n- B. Positivity properties\n- C. The speed of light\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 43,
@@ -462,13 +473,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Electromagnetism/Dynamics/CurrentDensity.lean",
    "module": "Physlib.Electromagnetism.Dynamics.CurrentDensity",
    "title": "The Lorentz Current Density",
    "doc": "## i. Overview\n\nIn this module we define the Lorentz current density\nand its decomposition into charge density and current density.\nThe Lorentz current density is often called the four-current and given then the symbol `J`.\n\nThe current density is given in terms of the charge density `ρ` and the current density\n` \\vec j` as `J = (c ρ, \\vec j)`.\n\n## ii. Key results\n\n- `LorentzCurrentDensity` : The type of Lorentz current densities.\n- `LorentzCurrentDensity.chargeDensity` : The charge density associated with a\n  Lorentz current density.\n- `LorentzCurrentDensity.currentDensity` : The current density associated with a\n  Lorentz current density.\n\n## iii. Table of contents\n\n- A. The Lorentz Current Density\n- B. The underlying charge\n  - B.1. Charge density of zero Lorentz current density\n  - B.2. Differentiability of the charge density\n  - B.3. Smoothness of the charge density\n- C. The underlying current density\n  - C.1. current density of zero Lorentz current density\n  - C.2. Differentiability of the current density\n  - C.3. Smoothness of the current density\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 59,
@@ -646,13 +659,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Electromagnetism/Dynamics/Hamiltonian.lean",
    "module": "Physlib.Electromagnetism.Dynamics.Hamiltonian",
    "title": "The Hamiltonian in electromagnetism",
    "doc": "## i. Overview\n\nIn this module we define the canonical momentum and the Hamiltonian for the\nelectromagnetic field in presence of a current density. We prove properties of these\nquantities, and express the Hamiltonian in terms of the electric and magnetic fields\nin the case of three spatial dimensions.\n\n## ii. Key results\n\n- `canonicalMomentum` : The canonical momentum for the electromagnetic field in presence of a\n  Lorentz current density.\n- `hamiltonian` : The Hamiltonian for the electromagnetic field in presence of a\n  Lorentz current density.\n- `hamiltonian_eq_electricField_magneticField` : The Hamiltonian expressed\n  in terms of the electric and magnetic fields.\n\n## iii. Table of contents\n\n- A. The canonical momentum\n  - A.1. The canonical momentum in terms of the kinetic term\n  - A.2. The canonical momentum in terms of the field strength tensor\n  - A.3. The canonical momentum in terms of the electric field\n- B. The Hamiltonian\n  - B.1. The hamiltonian in terms of the vector potential\n  - B.2. The hamiltonian in terms of the electric and magnetic fields\n\n## iv. References\n\n* https://quantummechanics.ucsd.edu/ph130a/130_notes/node452.html. [ref: ucsd_ph130a_node452]\n* https://ph.qmul.ac.uk/sites/default/files/EMT10new.pdf. [ref: qmul_emt10_notes]",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 66,
@@ -750,13 +765,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Electromagnetism/Dynamics/IsExtrema.lean",
    "module": "Physlib.Electromagnetism.Dynamics.IsExtrema",
    "title": "Extrema of the Lagrangian density",
    "doc": "## i. Overview\n\nIn this module we define what it means for an electromagnetic potential\nto be an extremum of the Lagrangian density in presence of a Lorentz current density.\n\nThis is equivalent to the electromagnetic potential satisfying\nMaxwell's equations with sources, i.e. Gauss's law and Ampère's law.\n\n## ii. Key results\n\n- `IsExtrema` : The condition on an electromagnetic potential to be an extrema of the lagrangian.\n- `isExtrema_iff_gauss_ampere_magneticFieldMatrix` : The electromagnetic potential is an extrema\n  of the lagrangian if and only if Gauss's law and Ampère's law hold\n  (in terms of the magnetic field matrix).\n- `time_deriv_time_deriv_magneticFieldMatrix_of_isExtrema` : A wave-like equation for the\n  magnetic field matrix from the extrema condition.\n- `time_deriv_time_deriv_electricField_of_isExtrema` : A wave-like equation for the\n  electric field from the extrema condition.\n\n## iii. Table of contents\n\n- A. The condition for an extrema of the Lagrangian density\n  - A.1. Extrema condition in terms of the field strength matrix\n  - A.2. Extrema condition in terms of tensors\n  - A.3. Equivariance of the extrema condition\n- B. Gauss's law and Ampère's law and the extrema condition\n- C. Time derivatives from the extrema condition\n- D. Second time derivatives from the extrema condition\n  - D.1. Second time derivatives of the magnetic field from the extrema condition\n  - D.2. Second time derivatives of the electric field from the extrema condition\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 68,
@@ -870,13 +887,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Electromagnetism/Dynamics/KineticTerm.lean",
    "module": "Physlib.Electromagnetism.Dynamics.KineticTerm",
    "title": "The kinetic term",
    "doc": "## i. Overview\n\nThe kinetic term of the electromagnetic field is `- 1/(4 μ₀) F_μν F^μν`.\nWe define this, show it is invariant under Lorentz transformations,\nand show properties of its variational gradient.\n\nIn particular the variational gradient `gradKineticTerm` of the kinetic term\nis directly related to Gauss's law and the Ampere law.\n\nIn this implementation we have set `μ₀ = 1`. It is a TODO to introduce this constant.\n\n## ii. Key results\n\n- `ElectromagneticPotential.kineticTerm` is the kinetic term of an electromagnetic potential.\n- `ElectromagneticPotential.kineticTerm_equivariant` shows that the kinetic term is\n  Lorentz invariant.\n- `ElectromagneticPotential.gradKineticTerm` is the variational gradient of the kinetic term.\n- `ElectromagneticPotential.gradKineticTerm_eq_electric_magnetic` gives a first expression for the\n  variational gradient in terms of the electric and magnetic fields.\n\n## iii. Table of contents\n\n- A. The kinetic term\n  - A.1. Lorentz invariance of the kinetic term\n  - A.2. Kinetic term simplified expressions\n  - A.3. The kinetic term in terms of the electric and magnetic fields\n  - A.4. The kinetic term in terms of the electric and magnetic matrix\n  - A.5. The kinetic term for constant fields\n  - A.6. Smoothness of the kinetic term\n  - A.7. The kinetic term shifted by time mul a constant\n- B. Variational gradient of the kinetic term\n  - B.1. Variational gradient in terms of fderiv\n  - B.2. Writing the variational gradient as a sums over double derivatives of the potential\n  - B.3. Variational gradient as sums over the components of the field strength tensor\n  - B.4. Variational gradient in terms of the Gauss's and Ampère laws\n  - B.5. Linearity properties of the variational gradient\n  - B.6. HasVarGradientAt for the variational gradient\n  - B.7. Gradient of the kinetic term in terms of the tensor derivative\n\n## iv. References\n\n* https://quantummechanics.ucsd.edu/ph130a/130_notes/node452.html. [ref: ucsd_ph130a_node452]",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 77,
@@ -1130,13 +1149,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Electromagnetism/Dynamics/Lagrangian.lean",
    "module": "Physlib.Electromagnetism.Dynamics.Lagrangian",
    "title": "The Lagrangian in electromagnetism",
    "doc": "## i. Overview\n\nIn this module we define the Lagrangian density for the electromagnetic field in\npresence of a current density. We prove properties of this lagrangian density,\nand find it's variational gradient.\n\nThe lagrangian density is given by\n`L = -1/(4 μ₀) F_{μν} F^{μν} - A_μ J^μ`\n\nIn this implementation we set `μ₀ = 1`. It is a TODO to introduce this constant.\n\n## ii. Key results\n\n- `freeCurrentPotential` : The potential energy from the interaction of the electromagnetic\n  potential with a free Lorentz current density.\n- `gradFreeCurrentPotential` : The variational gradient of the free current potential.\n- `lagrangian` : The lagrangian density for the electromagnetic field in presence of a\n  Lorentz current density.\n- `gradLagrangian` : The variational gradient of the lagrangian density.\n- `gradLagrangian_eq_electricField_magneticField` : The variational gradient of the lagrangian\n  density expressed in Gauss's and Ampère laws.\n\n## iii. Table of contents\n\n- A. Free current potential\n  - A.1. Shifts in the free current potential under shifts in the potential\n  - A.2. The free current potential has a variational gradient\n  - A.3. The free current potential in terms of the scalar and vector potentials\n  - A.4. The variational gradient of the free current potential\n- B. The Lagrangian density\n  - B.1. Shifts in the lagrangian under shifts in the potential\n  - B.2. Lagrangian in terms of electric and magnetic fields\n- C. The variational gradient of the lagrangian density\n  - C.1. The lagrangian density has a variational gradient\n  - C.2. The definition of, `gradLagrangian`, the variational gradient of the lagrangian density\n  - C.3. The variational gradient in terms of the gradient of the kinetic term\n  - C.4. The lagrangian density has the variational gradient equal to `gradLagrangian`\n  - C.5. The variational gradient in terms of the field strength tensor\n  - C.6. The lagrangian gradient recovering Gauss's and Ampère laws\n  - C.7. The lagrangian gradient in tensor notation\n\n## iv. References\n\n* https://quantummechanics.ucsd.edu/ph130a/130_notes/node452.html. [ref: ucsd_ph130a_node452]\n* https://ph.qmul.ac.uk/sites/default/files/EMT10new.pdf. [ref: qmul_emt10_notes]",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 80,
@@ -1350,13 +1371,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Electromagnetism/Kinematics/Boosts.lean",
    "module": "Physlib.Electromagnetism.Kinematics.Boosts",
    "title": "Boosts on the electric and magnetic fields",
    "doc": "## i. Overview\n\nWe find the transformations of the electric and magnetic field matrix under\nboosts in the 'x' direction. We do this in full-generality for `d+1` space dimensions.\n\n## ii. Key results\n\n- `electricField_apply_x_boost_zero` : The transformation of the x-component of the electric\n  field under a boost in the 'x' direction.\n- `electricField_apply_x_boost_succ` : The transformation of the other components of the electric\n  field under a boost in the 'x' direction.\n- `magneticFieldMatrix_apply_x_boost_zero_succ` : The transformation of the 'x-components' of the\n  magnetic field matrix under a boost in the 'x' direction\n- `magneticFieldMatrix_apply_x_boost_succ_succ` : The transformation of the other components of the\n  magnetic field matrix under a boost in the 'x' direction.\n\n## iii. Table of contents\n\n- A. Boost of the electric field\n  - A.1. Boost of the x-component of the electric field\n  - A.2. Boost of other components of the electric field\n- B. Boost of the magnetic field\n  - B.1. Boost of the 'x-components' of the magnetic field matrix\n  - B.2. Boost of the other components of the magnetic field matrix\n\n## iv. References\n\n* https://en.wikipedia.org/wiki/Classical_electromagnetism_and_special_relativity.\n  [ref: wiki_classical_em_and_sr]",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 55,
@@ -1418,13 +1441,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Electromagnetism/Kinematics/ElectricField.lean",
    "module": "Physlib.Electromagnetism.Kinematics.ElectricField",
    "title": "The Electric Field",
    "doc": "## i. Overview\n\nThe electric field is defined in terms of the electromagnetic potential `A` as\n`E = - ∇ φ - ∂ₜ \\vec A`.\n\nIn this module we define the electric field, and prove lemmas about it.\n\n## ii. Key results\n\n- `electricField` : The electric field from the electromagnetic potential.\n- `electricField_eq_toFieldStrength_eval` : The electric field expressed in terms of the\n  components of the field strength tensor.\n\n## iii. Table of contents\n\n- A. Definition of the Electric Field\n- B. Relation to the field strength tensor\n- C. Smoothness of the electric field\n- D. Differentiability of the electric field\n- E. Time derivative of the vector potential in terms of the electric field\n- F. Derivatives of the electric field in terms of field strength tensor\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 60,
@@ -1570,13 +1595,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Electromagnetism/Kinematics/EMPotential.lean",
    "module": "Physlib.Electromagnetism.Kinematics.EMPotential",
    "title": "The Electromagnetic Potential",
    "doc": "## i. Overview\n\nThe electromagnetic potential `A^μ` is the fundamental objects in\nelectromagnetism. Mathematically it is related to a connection\non a `U(1)`-bundle.\n\nWe define the electromagnetic potential as a function from\nspacetime to contravariant Lorentz vectors.\n\n## ii. Key results\n\n- `ElectromagneticPotential` : is the type of electromagnetic potentials.\n- `ElectromagneticPotential.deriv` : the derivative tensor `∂_μ A^ν`.\n- `ElectromagneticPotential.contDiff_deriv_deriv_component` : the second derivatives\n  `∂_μ ∂_ν A^ρ` are `C^n` if the potential is `C^{n+2}`.\n- `ElectromagneticPotential.contDiff_deriv` : the derivative tensor is `C^n` if the potential\n  is `C^{n+1}`.\n\n## iii. Table of contents\n\n- A. The electromagnetic potential\n  - A.1. Basic instances on the type of electromagnetic potentials\n  - A.2. Basic constructors of the electromagnetic potential\n  - A.3. The group action on the ElectromagneticPotential\n  - A.4. Differentiability\n    - A.4.1. Differentiability of the derivative of the potential\n  - A.5. Differentiability in terms of constructors\n  - A.6. The action on the space-time derivatives\n  - A.7. Variational adjoint derivative of component\n  - A.8. Variational adjoint derivative of derivatives of the potential\n- B. The derivative tensor of the electromagnetic potential\n  - B.1. Equivariance of the derivative tensor\n  - B.2. The elements of the derivative tensor in terms of the basis\n  - B.3. Differentiability of the derivative tensor\n\n## iv. References\n\n* https://quantummechanics.ucsd.edu/ph130a/130_notes/node452.html. [ref: ucsd_ph130a_node452]\n* https://ph.qmul.ac.uk/sites/default/files/EMT10new.pdf. [ref: qmul_emt10_notes]",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 63,
@@ -2110,13 +2137,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 1
   },
   {
    "file": "Physlib/Electromagnetism/Kinematics/FieldStrength.lean",
    "module": "Physlib.Electromagnetism.Kinematics.FieldStrength",
    "title": "The Field Strength Tensor",
    "doc": "## i. Overview\n\nIn this module we define the field strength tensor in terms of the electromagnetic potential.\n\nWe define the tensor and prove various properties of it. Its components are accessed\nthrough index evaluation, `toScalar {A.toFieldStrength x | [μ] [ν]}ᵀ`.\n\n## ii. Key results\n\n- `toFieldStrength` : The field strength tensor from an electromagnetic potential.\n- `toFieldStrength_eval_apply_eq_single` : The components of the field strength tensor\n  in terms of derivatives of the potential, `F^{μν} = η^{μμ} ∂_μ A^ν - η^{νν} ∂_ν A^μ`.\n\n## iii. Table of contents\n\n- A. The field strength tensor\n  - A.1. Tensor equalities\n  - A.2. Vector equalities\n  - A.3. The group action acting on the field strength tensor\n  - A.4. Differentiability and smoothness of the field strength tensor\n  - A.5. Components of the field strength tensor\n    - A.5.1. Index evaluation\n    - A.5.2. Differentiability of the components\n  - A.6. The antisymmetry of the field strength tensor\n  - A.7. Equivariance of the components of the field strength tensor\n  - A.8. Linearity of the field strength tensor\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 63,
@@ -2402,13 +2431,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Electromagnetism/Kinematics/GaugeTransformation.lean",
    "module": "Physlib.Electromagnetism.Kinematics.GaugeTransformation",
    "title": "Gauge Transformations of the Electromagnetic Potential",
    "doc": "## i. Overview\n\nIn this module we define gauge transformations of the electromagnetic potential\n`A^μ ↦ A^μ + ∂^μ χ` where `χ : SpaceTime d → ℝ` is a smooth gauge function, and prove\nthat the field strength tensor is invariant under such transformations.\n\nThe raised-index gradient `∂^μ χ := η^{μν} ∂_ν χ` is necessary because the bare covariant gradient\n`∂_μ χ` does not make `F^{μν}` invariant. The formal witness is\n`toFieldStrength_eval_bareGradient_inl_inr` (§B.5), which computes a specific nonzero component of\nthe field strength of a bare-gradient potential. The invariance theorem\n`toFieldStrength_gaugeTransform` doubles as a correctness test of `ofGradient`.\n\n## ii. Key results\n\n- `ofGradient` : The pure-gauge potential `A^μ = η^{μν} ∂_ν χ` built from a gauge function `χ`.\n- `gaugeTransform` : The gauge transformation `A^μ ↦ A^μ + ∂^μ χ`.\n- `toFieldStrength_ofGradient` : A pure-gauge potential has vanishing field strength.\n- `toFieldStrength_gaugeTransform` : The field strength tensor is invariant under gauge\n  transformations.\n- `toFieldStrength_eval_gaugeTransform` : The components of the field strength tensor are\n  invariant under gauge transformations.\n- `gaugeTransform_gaugeTransform` : Composing two gauge shifts equals shifting by the sum;\n  upgrades one-step F-invariance to invariance along any finite chain.\n- `ofGradient_equivariant` : `ofGradient` intertwines the Lorentz action with function composition.\n- `gaugeTransform_equivariant` : Gauge transformations commute with Lorentz transformations.\n- `toFieldStrength_eval_bareGradient_inl_inr` : The `(inl 0, inr i)` field-strength component of\n  the bare-gradient potential `χ(x) = x⁰·xⁱ` equals `2`; in particular the bare gradient does\n  not give a gauge-invariant field strength (necessity of the metric contraction in `ofGradient`).\n\n## iii. Table of contents\n\n- A. The pure-gauge potential\n  - A.1. Definition and basic lemmas\n  - A.2. Differentiability of the pure-gauge potential\n  - A.3. Vanishing field strength of the pure-gauge potential\n  - A.4. Lorentz equivariance of the pure-gauge potential\n- B. Gauge transformations\n  - B.1. Definition and basic lemmas\n  - B.2. Invariance of the field strength\n  - B.3. Group structure of gauge shifts\n  - B.4. Equivariance under Lorentz transformations\n  - B.5. Necessity: bare gradient does not give gauge invariance\n\n## iv. References\n\n* https://en.wikipedia.org/wiki/Mathematical_descriptions_of_the_electromagnetic_field#Gauge_freedom.\n  [ref: wiki_em_field_gauge_freedom]",
+   "copyright": "2026 Justin Findlay",
    "sections": [
     {
      "line": 79,
@@ -2602,13 +2633,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Electromagnetism/Kinematics/MagneticField.lean",
    "module": "Physlib.Electromagnetism.Kinematics.MagneticField",
    "title": "The Magnetic Field",
    "doc": "## i. Overview\n\nIn 3-spatial dimensions from the electromagnetic potential we can define the magnetic field\n` \\vec B` as `(∇ ⨯ (A.vectorPotential t)) x`.\nIn this module we define this magnetic field from the electromagnetic potential.\n\nIn general dimensions we define the magnetic field matrix from the spatial components of the\nfield strength matrix. This is an antisymmetric matrix.\n\n## ii. Key results\n\n- `ElectromagneticPotential.magneticField` : The magnetic field from the electromagnetic potential\n  in 3 spatial dimensions.\n- `ElectromagneticPotential.magneticFieldMatrix` : The magnetic field matrix from the\n  electromagnetic potential in general spatial dimensions.\n- `ElectromagneticPotential.time_deriv_magneticFieldMatrix` : The time derivative of the magnetic\n  field matrix in terms of the vector potential. (Aka Faraday's law).\n\n## iii. Table of contents\n\n- A. The magnetic field\n  - A.1. Relation between the magnetic field and the field strength matrix\n  - A.2. Divergence of the magnetic field\n- B. The field strength matrix in terms of the electric and magnetic fields\n- C. Magnetic field matrix\n  - C.1. Antisymmetry of the magnetic field matrix\n  - C.2. Magnetic field in terms of the magnetic field matrix\n  - C.3. Magnetic field matrix in terms of vector potentials\n  - C.4. Smoothness of the magnetic field matrix\n  - C.5. Differentiablity of the magnetic field matrix\n  - C.6. Spatial derivative of the magnetic field matrix\n  - C.7. Temporal derivative of the magnetic field matrix\n  - C.8. `curl` of the magnetic field matrix\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 72,
@@ -2854,13 +2887,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Electromagnetism/Kinematics/ScalarPotential.lean",
    "module": "Physlib.Electromagnetism.Kinematics.ScalarPotential",
    "title": "The Scalar Potential",
    "doc": "## i. Overview\n\nThe electromagnetic potential is given by\n`A = (1/c φ, \\vec A)`\nwhere `φ` is the scalar potential and `\\vec A` is the vector potential.\n\nIn this module we define the scalar potential, and prove lemmas about it.\n\nSince `A` is relativistic it is a function of `SpaceTime d`, whilst\nthe scalar potential is non-relativistic and is therefore a function of `Time` and `Space d`.\n\n## ii. Key results\n\n- `ElectromagneticPotential.scalarPotential` : The scalar potential from an\n  electromagnetic potential.\n\n## iii. Table of contents\n\n- A. Definition of the Scalar Potential\n- B. Relation to constructors\n- C. Smoothness of the Scalar Potential\n- D. Differentiability of the Scalar Potential\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 57,
@@ -2978,13 +3013,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Electromagnetism/Kinematics/VectorPotential.lean",
    "module": "Physlib.Electromagnetism.Kinematics.VectorPotential",
    "title": "The vector Potential",
    "doc": "## i. Overview\n\nThe electromagnetic potential is given by\n`A = (1/c φ, \\vec A)`\nwhere `φ` is the scalar potential and `\\vec A` is the vector potential.\n\nIn this module we define the vector potential, and prove lemmas about it.\n\nSince `A` is relativistic it is a function of `SpaceTime d`, whilst\nthe vector potential is non-relativistic and is therefore a function of `Time` and `Space d`.\n\n## ii. Key results\n\n- `ElectromagneticPotential.vectorPotential` : The vector potential from an\n  electromagnetic potential.\n\n## iii. Table of contents\n\n- A. Definition of the Vector Potential\n- B. Smoothness of the vector potential\n- C. Differentiablity of the vector potential\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 57,
@@ -3162,13 +3199,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Electromagnetism/PointParticle/OneDimension.lean",
    "module": "Physlib.Electromagnetism.PointParticle.OneDimension",
    "title": "The electrostatics of a stationary point particle in 1d",
    "doc": "## i. Overview\n\nIn this module we give the electromagnetic properties of a point particle\nsitting at the origin in 1d space.\n\n## ii. Key results\n\n- `oneDimPointParticle` : The electromagnetic potential of a point particle\n  stationary at the origin of 1d space.\n- `oneDimPointParticle_isExterma` : The electric field of a point\n  particle stationary at the origin of 1d space satisfies Maxwell's equations\n\n## iii. Table of contents\n\n- A. The current density\n- B. The Potentials\n  - B.1. The electromagnetic potential\n  - B.2. The vector potential is zero\n  - B.3. The scalar potential\n- C. The electric field\n  - C.1. The time derivative of the electric field\n- D. The magnetic field\n- E. Maxwell's equations\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 53,
@@ -3310,13 +3349,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Electromagnetism/PointParticle/ThreeDimension.lean",
    "module": "Physlib.Electromagnetism.PointParticle.ThreeDimension",
    "title": "Electrostatics of a stationary point particle in 3d",
    "doc": "## i. Overview\n\nIn this module we give the electromagnetic properties of a point particle\nsitting at the origin in 3d space.\n\n## ii. Key results\n\n- `threeDimPointParticle` : The electromagnetic potential of a point particle\n  stationary at a point in 3d space.\n- `threeDimPointParticle_isExterma` : The electric field of a point\n  particle stationary at a point of 3d space satisfies Maxwell's equations\n\n## iii. Table of contents\n\n- A. The current density\n  - A.1. The charge density\n  - A.2. The 3-current density\n- B. The Potentials\n  - B.1. The electromagnetic potential\n  - B.2. The scalar potential\n  - B.3. The vector potential is zero\n- C. The electric field\n  - C.1. the time derivative of the electric field\n- D. The magnetic field\n- E. Maxwell's equations\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 55,
@@ -3470,13 +3511,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Electromagnetism/TemperedDistributional/Basic.lean",
    "module": "Physlib.Electromagnetism.TemperedDistributional.Basic",
    "title": "The Electromagnetic Potential",
    "doc": "## i. Overview\n\nThe electromagnetic potential `A^μ` is the fundamental objects in\nelectromagnetism. Mathematically it is related to a connection\non a `U(1)`-bundle.\n\nWe define the electromagnetic potential as a distribution from\nspacetime to contravariant Lorentz vectors.\n\n## ii. Key results\n\n- `TempDistElectromagneticPotential` : the type of electromagnetic potentials as distributions.\n\n## iii. Table of contents\n\n- A. The electromagnetic potential as a distribution\n  - A.1. Constructors\n  - A.2. The derivative of the electromagnetic potential as a distribution\n  - A.3. The derivative in terms of the basis\n\n## iv. References\n\n* https://quantummechanics.ucsd.edu/ph130a/130_notes/node452.html. [ref: ucsd_ph130a_node452]\n* https://ph.qmul.ac.uk/sites/default/files/EMT10new.pdf. [ref: qmul_emt10_notes]",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 48,
@@ -3586,13 +3629,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 1
   },
   {
    "file": "Physlib/Electromagnetism/TemperedDistributional/Dynamics/CurrentDensity.lean",
    "module": "Physlib.Electromagnetism.TemperedDistributional.Dynamics.CurrentDensity",
    "title": "The Lorentz Current Density",
    "doc": "## i. Overview\n\nIn this module we define the Lorentz current density\nand its decomposition into charge density and current density.\nThe Lorentz current density is often called the four-current and given then the symbol `J`.\n\nThe current density is given in terms of the charge density `ρ` and the current density\n` \\vec j` as `J = (c ρ, \\vec j)`.\n\n## ii. Key results\n\n- `TempDistLorentzCurrentDensity` : The type of Lorentz current densities\n  as distributions.\n\n## iii. Table of contents\n\n- A. The Lorentz current density as a distribution\n  - A.1. The underlying charge density\n  - A.2. The underlying current density\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 50,
@@ -3634,13 +3679,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Electromagnetism/TemperedDistributional/Dynamics/IsExtrema.lean",
    "module": "Physlib.Electromagnetism.TemperedDistributional.Dynamics.IsExtrema",
    "title": "Extrema of the Lagrangian density",
    "doc": "## i. Overview\n\nIn this module we define what it means for an electromagnetic potential\nto be an extremum of the Lagrangian density in presence of a Lorentz current density.\n\nThis is equivalent to the electromagnetic potential satisfying\nMaxwell's equations with sources, i.e. Gauss's law and Ampère's law.\n\n## ii. Key results\n\n- `IsExtrema` : The condition on an electromagnetic potential to be an extrema of the lagrangian.\n\n## iii. Table of contents\n\n- A. Is Extrema condition in the distributional case\n  - A.1. IsExtrema and Gauss's law and Ampère's law\n  - A.2. IsExtrema in terms of Vector Potentials\n  - A.3. The extrema condition in terms of tensors\n  - A.4. The invariance of the extrema condition under Lorentz transformations\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 44,
@@ -3722,13 +3769,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Electromagnetism/TemperedDistributional/Dynamics/KineticTerm.lean",
    "module": "Physlib.Electromagnetism.TemperedDistributional.Dynamics.KineticTerm",
    "title": "The kinetic term",
    "doc": "## i. Overview\n\nThe kinetic term of the electromagnetic field is `- 1/(4 μ₀) F_μν F^μν`.\nWe define this, show it is invariant under Lorentz transformations,\nand show properties of its variational gradient.\n\nIn particular the variational gradient `gradKineticTerm` of the kinetic term\nis directly related to Gauss's law and the Ampere law.\n\nIn this implementation we have set `μ₀ = 1`. It is a TODO to introduce this constant.\n\n## ii. Key results\n\n- `TempDistElectromagneticPotential.gradKineticTerm` is the variational gradient of the kinetic term\n  for distributional electromagnetic potentials.\n\n## iii. Table of contents\n\n- A. The gradient of the kinetic term for distributions\n  - A.1. The gradient of the kinetic term as a tensor\n\n## iv. References\n\n* https://quantummechanics.ucsd.edu/ph130a/130_notes/node452.html. [ref: ucsd_ph130a_node452]",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 48,
@@ -3790,13 +3839,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Electromagnetism/TemperedDistributional/Dynamics/Lagrangian.lean",
    "module": "Physlib.Electromagnetism.TemperedDistributional.Dynamics.Lagrangian",
    "title": "The Lagrangian in electromagnetism",
    "doc": "## i. Overview\n\nIn this module we define the Lagrangian density for the electromagnetic field in\npresence of a current density. We prove properties of this lagrangian density,\nand find it's variational gradient.\n\nThe lagrangian density is given by\n`L = -1/(4 μ₀) F_{μν} F^{μν} - A_μ J^μ`\n\nIn this implementation we set `μ₀ = 1`. It is a TODO to introduce this constant.\n\n## ii. Key results\n\n- `gradFreeCurrentPotential` : The variational gradient of the free current potential.\n- `gradLagrangian` : The variational gradient of the lagrangian density.\n\n## iii. Table of contents\n\n- A. The gradient of the lagrangian density for distributions\n  - A.1. The gradient of the free current potential\n    - A.1.1. Free current potential as a tensor\n  - A.2. The gradient of the lagrangian density\n    - A.2.1. The lagrangian gradient as a tensor\n\n## iv. References\n\n* https://quantummechanics.ucsd.edu/ph130a/130_notes/node452.html. [ref: ucsd_ph130a_node452]\n* https://ph.qmul.ac.uk/sites/default/files/EMT10new.pdf. [ref: qmul_emt10_notes]",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 51,
@@ -3894,13 +3945,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Electromagnetism/TemperedDistributional/ElectricField.lean",
    "module": "Physlib.Electromagnetism.TemperedDistributional.ElectricField",
    "title": "The Electric Field",
    "doc": "## i. Overview\n\nThe electric field is defined in terms of the electromagnetic potential `A` as\n`E = - ∇ φ - ∂ₜ \\vec A`.\n\nIn this module we define the electric field, and prove lemmas about it.\n\n## ii. Key results\n\n- `DistElectromagneticPotential.electricField` : The electric field for\n  electromagnetic potentials which are distributions.\n\n## iii. Table of contents\n\n- A. Electric field for distributions\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 42,
@@ -3926,13 +3979,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Electromagnetism/TemperedDistributional/FieldStrength.lean",
    "module": "Physlib.Electromagnetism.TemperedDistributional.FieldStrength",
    "title": "The Field Strength Tensor",
    "doc": "## i. Overview\n\nIn this module we define the field strength tensor in terms of the electromagnetic potential.\n\n## ii. Key results\n\n- `TempDistElectromagneticPotential.fieldStrength` : The field strength for\n  electromagnetic potentials which are distributions.\n\n## iii. Table of contents\n\n- A. Field strength for distributions\n  - A.1. Auxiliary definition of field strength for distributions, with no linearity\n  - A.2. The definition of the field strength\n  - A.3. Field strength written in terms of a basis\n  - A.4. Equivariance of the field strength for distributions\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 42,
@@ -4086,13 +4141,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Electromagnetism/TemperedDistributional/MagneticField.lean",
    "module": "Physlib.Electromagnetism.TemperedDistributional.MagneticField",
    "title": "The Magnetic Field",
    "doc": "## i. Overview\n\nIn general dimensions we define the magnetic field matrix from the spatial components of the\nfield strength matrix. This is an antisymmetric matrix. We define it\nin this module for distributions.\n\n## ii. Key results\n\n- `TempDistElectromagneticPotential.magneticFieldMatrix` : The magnetic field matrix from the\n  electromagnetic potential in general spatial dimensions.\n\n## iii. Table of contents\n\n- A. Magnetic field matrix for distributions\n  - A.1. Magnetic field matrix in terms of vector potentials\n  - A.2. The magnetic field matrix in terms of the field strength\n  - A.3. Magnetic field matrix in 1d\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 44,
@@ -4162,13 +4219,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Electromagnetism/TemperedDistributional/ScalarPotential.lean",
    "module": "Physlib.Electromagnetism.TemperedDistributional.ScalarPotential",
    "title": "The Scalar Potential",
    "doc": "## i. Overview\n\nThe electromagnetic potential is given by\n`A = (1/c φ, \\vec A)`\nwhere `φ` is the scalar potential and `\\vec A` is the vector potential.\n\nIn this module we define the scalar potential, and prove lemmas about it.\n\nSince `A` is relativistic it is a distribution of `SpaceTime d`, whilst\nthe scalar potential is non-relativistic and is therefore a distribution of `Time` and `Space d`.\n\n## ii. Key results\n\n- `TempDistElectromagneticPotential.scalarPotential` : The scalar potential from an\n  electromagnetic potential which is a distribution.\n\n## iii. Table of contents\n\n- A. Scalar potential for distributions\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 45,
@@ -4186,13 +4245,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Electromagnetism/TemperedDistributional/VectorPotential.lean",
    "module": "Physlib.Electromagnetism.TemperedDistributional.VectorPotential",
    "title": "The vector Potential",
    "doc": "## i. Overview\n\nThe electromagnetic potential is given by\n`A = (1/c φ, \\vec A)`\nwhere `φ` is the scalar potential and `\\vec A` is the vector potential.\n\nIn this module we define the vector potential, and prove lemmas about it.\n\nSince `A` is relativistic it is a distribution of `SpaceTime d`, whilst\nthe vector potential is non-relativistic and is therefore a distribution of `Time` and `Space d`.\n\n## ii. Key results\n\n- `TempDistElectromagneticPotential.vectorPotential` : The vector potential from an\n  electromagnetic potential which is a distribution.\n\n## iii. Table of contents\n\n- A. Vector potential for distributions\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 46,
@@ -4210,13 +4271,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Electromagnetism/ThreeDimension/Basic.lean",
    "module": "Physlib.Electromagnetism.ThreeDimension.Basic",
    "title": "Three-Dimensional Electromagnetism",
    "doc": "This directory provides a three-dimensional, vector-calculus-facing layer for\nelectromagnetism.\n\nThe backend theory is formulated in a tensorial and dimension-general way.\nHere we re-express the relevant constructions in the familiar language of\nscalar and vector potentials, electric and magnetic fields, and spatial\nderivatives.",
+   "copyright": "2026 Zhi Kai Pong",
    "sections": [
     {
      "line": 38,
@@ -4242,13 +4305,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Electromagnetism/ThreeDimension/MaxwellEquations.lean",
    "module": "Physlib.Electromagnetism.ThreeDimension.MaxwellEquations",
    "title": "A. Maxwell's equations in three dimensions",
    "doc": "Maxwell's equations relate electric and magnetic fields to electric charge and current. In three\nspatial dimensions they can be written using the familiar divergence, curl, and time-derivative\noperators of vector calculus.\n\n## A.1. Main results\n\nThis module proves the four differential equations:\n\n- `gaussLawElectric`, relating the divergence of the electric field to charge density;\n- `gaussLawMagnetic`, stating that the magnetic field is divergence-free;\n- `ampereLaw`, including both the electric current and displacement-current terms;\n- `faradayLaw`, relating the curl of the electric field to the time derivative of the magnetic\n  field.\n\n## A.2. Relation to the covariant formulation\n\nThe electric and magnetic fields are obtained from an electromagnetic potential. Gauss's law for\nthe electric field and Ampère's law are derived from the covariant extremality condition\n`IsExtrema`, while the two homogeneous equations follow from the potential definitions and\nsmoothness assumptions. The results therefore connect the tensorial backend to the standard\nthree-dimensional presentation.\n\n## A.3. Current scope\n\nThe statements here are pointwise differential equations in free space. Integral formulations,\nboundary conditions, and constitutive laws for material media are outside the current scope of this\nmodule.",
+   "copyright": "2026 Zhi Kai Pong",
    "sections": [],
    "declarations": [
     {
@@ -4285,13 +4350,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Electromagnetism/Vacuum/Constant.lean",
    "module": "Physlib.Electromagnetism.Vacuum.Constant",
    "title": "The constant electric and magnetic fields",
    "doc": "## i. Overview\n\nIn this module we define the electromagnetic potential which gives rise to a\ngiven constant electric and magnetic field matrix.\n\nWe will show that this electromagnetic potential is an extrema of the free-space\nelectromagnetic action.\n\n## ii. Key results\n\n## iii. Table of contents\n\n- A. The definition of the potential\n- B. Smoothness of the potential\n- C. The scalar potential\n- D. The vector potential\n  - D.1. Time derivative of the vector potential\n  - D.2. Space derivative of the vector potential\n- E. The electric field\n- F. The magnetic field\n- G. Is extrema\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 58,
@@ -4405,13 +4472,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Electromagnetism/Vacuum/HarmonicWave.lean",
    "module": "Physlib.Electromagnetism.Vacuum.HarmonicWave",
    "title": "Harmonic Wave in Vacuum",
    "doc": "## i. Overview\n\nIn this module we define the electromagnetic potential for a monochromatic harmonic wave\ntravelling in the x-direction in free space, and prove various properties about it,\nincluding that it satisfies Maxwell's equations in free space, that it is a plane wave.\n\nWe work here in a general dimension `d` so we use the magnetic field is the\nform of a matrix rather than a vector.\n\n## ii. Key results\n\n- `harmonicWaveX` : Definition of the electromagnetic\n  potential for a harmonic wave travelling in the x-direction.\n- `harmonicWaveX_isExtrema` : The harmonic wave satisfies Maxwell's equations in free space.\n- `harmonicWaveX_isPlaneWave` : The harmonic wave is a plane wave.\n- `harmonicWaveX_polarization_ellipse` : The polarization ellipse equation for the harmonic wave.\n\n## iii. Table of contents\n\n- A. The electromagnetic potential for a harmonic wave\n  - A.1. Differentiability of the electromagnetic potential\n  - A.2. Smoothness of the electromagnetic potential\n- B. The scalar potential\n- C. The vector potential\n  - C.1. Components of the vector potential\n  - C.2. Space derivatives of the vector potential\n- D. The electric field\n  - D.1. Components of the electric field\n  - D.2. Spatial derivatives of the electric field\n  - D.3. Time derivatives of the electric field\n  - D.4. Divergence of the electric field\n- E. The magnetic field matrix for a harmonic wave\n  - E.1. Components of the magnetic field matrix\n  - E.2. Space derivatives of the magnetic field matrix\n- F. Maxwell's equations for a harmonic wave\n- G. The harmonic wave is a plane wave\n- H. Polarization ellipse of the harmonic wave\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Zhi Kai Pong",
    "sections": [
     {
      "line": 70,
@@ -4681,13 +4750,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Electromagnetism/Vacuum/IsPlaneWave.lean",
    "module": "Physlib.Electromagnetism.Vacuum.IsPlaneWave",
    "title": "Electromagnetic wave equation",
    "doc": "## i. Overview\n\nIn this module we define a proposition `IsPlaneWave` on electromagnetic potentials\nwhich is true if the potential corresponds to a plane wave.\nFrom this we derive various properties of plane waves including\nthe orthogonality of the electric field, magnetic field and direction of propagation,\nin general dimensions.\n\n## ii. Key results\n\n- `IsPlaneWave` : The proposition defining plane waves.\n- `IsPlaneWave.electricFunction` : The electric function corresponding to a plane wave.\n- `IsPlaneWave.magneticFunction` : The magnetic function corresponding to a plane wave.\n- `IsPlaneWave.magneticFieldMatrix_eq_propogator_cross_electricField` :\n    The magnetic field expressed in terms of the electric field and direction of propagation.\n- `IsPlaneWave.electricField_eq_propogator_cross_magneticFieldMatrix` :\n    The electric field expressed in terms of the magnetic field and direction of propagation.\n\n## iii. Table of contents\n\n- A. The property of being a plane wave\n  - A.1. The electric and magnetic functions from a plane wave\n    - A.1.1. Electric function and magnetic function in terms of E and B fields\n    - A.1.2. Uniqueness of the electric function\n    - A.1.3. Uniqueness of the magnetic function\n  - A.2. Differentiability conditions\n  - A.3. Time derivative of electric and magnetic fields of a plane wave\n  - A.4. Space derivative of electric and magnetic fields of a plane wave\n  - A.5. Space derivative in terms of time derivative\n- B. The magnetic field in terms of the electric field\n  - B.1. Time derivative of the magnetic field in terms of electric field\n  - B.2. Space derivative of the magnetic field in terms of electric field\n  - B.3. Magnetic field equal propogator cross electric field up to constant\n- C. The electric field in terms of the magnetic field\n  - C.1. The time derivative of the electric field in terms of magnetic field\n  - C.2. The space derivative of the electric field in terms of magnetic field\n  - C.3. Electric field equal propogator cross magnetic field up to constant\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Zhi Kai Pong",
    "sections": [
     {
      "line": 66,
@@ -4945,7 +5016,8 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   }
  ]
 }

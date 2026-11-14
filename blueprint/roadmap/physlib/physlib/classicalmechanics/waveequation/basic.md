@@ -164,7 +164,7 @@ theorem planeWave_waveEquation (c : ℝ) (s : Direction d)
 
 ## C. Old lemmas used throughout files
 
-> These lemmas will eventually be moved, renamed and/or replaced.
+> …
 
 **`ClassicalMechanics.wave_differentiable`**, a lemma, [line 292](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/WaveEquation/Basic.lean#L292).
 

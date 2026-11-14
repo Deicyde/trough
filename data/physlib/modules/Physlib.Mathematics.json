@@ -7,6 +7,7 @@
    "module": "Physlib.Mathematics.Calculus.AdjFDeriv",
    "title": "Adjoint Fréchet derivative",
    "doc": "`adjFDeriv 𝕜 f x = (fderiv 𝕜 f x).adjoint`\n\nThe main purpose of defining `adjFDeriv` is to compute `gradient f x = adjFDeriv 𝕜 f x 1`.\nThe advantage of working with `adjFDeriv` is that we can formulate composition theorem.\n\nThe reason why we do not want to compute `fderiv` and then `adjoint` is that to compute `fderiv 𝕜 f`\nor `adjoint f` we decompose `f = f₁ ∘ ... ∘ fₙ` and then apply composition theorem. The problem is\nthat this decomposition has to be done differently for `fderiv` and `adjoint`. The problem is\nthat when working with `fderiv` the natural product type is `X × Y` but when working with `adjoint`\nthe natural product is `WithLp 2 (X × Y)`.\nFor example:",
+   "copyright": "2025 Tomas Skrivan",
    "sections": [],
    "declarations": [
     {
@@ -275,13 +276,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Mathematics/Calculus/Divergence.lean",
    "module": "Physlib.Mathematics.Calculus.Divergence",
    "title": "Divergence",
    "doc": "In this module we define and create an API around the divergence of a map `f : E → E`\nwhere `E` is a normed space over a field `𝕜`.",
+   "copyright": "2025 Tomas Skrivan",
    "sections": [],
    "declarations": [
     {
@@ -374,13 +377,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Mathematics/Calculus/Gradient.lean",
    "module": "Physlib.Mathematics.Calculus.Gradient",
    "title": "Elementary rules for the gradient",
    "doc": "Algebraic and chain rules for gradients of classical-mechanical observables.\n\n## i. Overview\n\nMathlib defines the gradient `∇ f x` of a real-valued function on a real Hilbert space as the\nRiesz representative of its Fréchet derivative, but records no rules for the algebraic operations\non `f` beyond constants. This file collects the elementary rules used throughout the classical\nmechanics of Physlib: algebraic and chain rules, together with the gradients of scalar products,\nquadratic forms, the norm, and coordinate functionals on Euclidean space.\n\nThese are the rules needed to differentiate Lagrangians and Hamiltonians of the form\n`kinetic − potential` with respect to positions and velocities.\n\nThe `HasGradientAt` rules establish differentiability and the value of the gradient together.\nThey allow the gradients of conserved quantities in central-force systems, built from\n`⟪p, p⟫`, `⟪q, q⟫`, `⟪q, p⟫` and `‖q‖`, to be computed compositionally.\n\nThese are rules for Mathlib's `gradient` on an abstract real Hilbert space. They are distinct from\n`Physlib.SpaceAndTime.Space.Derivatives.Grad`, whose `Space.grad` is a coordinate-valued operator on\nthe structure `Space d`; nothing there applies to `EuclideanSpace ℝ (Fin 1)` or to a general inner\nproduct space. The file is deliberately real: two of its rules (`gradient_const_mul` and\n`gradient_inner_self`) are specific to real scalars, so the remaining ones are stated over\n`ℝ` as well.\n\n## ii. Key results\n\n- `HasGradientAt.add`, `HasGradientAt.sub`, `HasGradientAt.mul`, `HasGradientAt.const_mul` :\n  algebraic rules for differentiable observables.\n- `HasDerivAt.comp_hasGradientAt` : the chain rule for a real function of an observable.\n- `hasGradientAt_inner_left`, `hasGradientAt_inner_right`, `hasGradientAt_inner_self`,\n  `hasGradientAt_norm`, `hasGradientAt_coord` : the basic gradients with differentiability.\n- `gradient_add_const` : `∇ (f + c) = ∇ f`.\n- `gradient_add` : `∇ (f + g) = ∇ f + ∇ g` for differentiable `f` and `g`.\n- `gradient_const_mul` : `∇ (c * f) = c • ∇ f` for differentiable `f`.\n- `gradient_inner_self` : `∇ (fun y => ⟪y, y⟫) x = 2 • x`.\n- `gradient_const_mul_inner_self` : `∇ (fun y => c * ⟪y, y⟫) x = (2 * c) • x`.\n- `gradient_coord` : `∇ (fun y => y i) x = EuclideanSpace.single i 1`.\n- `gradient_comp_coord` : `∇ (fun y => f (y i)) x = f' • EuclideanSpace.single i 1` when\n  `HasDerivAt f f' (x i)`.\n\n## iii. Table of contents\n\n- A. Algebraic rules\n- B. The chain rule\n- C. Scalar products and quadratic forms\n- D. The norm\n- E. Coordinate functionals on Euclidean space\n\n## iv. References\n\n* Mathlib, `Mathlib.Analysis.Calculus.Gradient.Basic`.",
+   "copyright": "2026 Aadarsh Agarwal",
    "sections": [
     {
      "line": 76,
@@ -542,13 +547,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Mathematics/Calculus/ParametricIntegration.lean",
    "module": "Physlib.Mathematics.Calculus.ParametricIntegration",
    "title": "Parametric Integration",
    "doc": "In this module we give some lemmas around parametric integration in Lean.\nThese extend some lemmas in Mathlib, and give them in a more physics-friendly way.",
+   "copyright": "2026 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -609,13 +616,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Mathematics/Calculus/PartialDerivatives.lean",
    "module": "Physlib.Mathematics.Calculus.PartialDerivatives",
    "title": "Partial derivatives on products",
    "doc": "Splitting derivatives of functions on `X × Y × Z` and of families `H : ℝ × ℝ → F`.\n\n## i. Overview\n\nThe derivative of `f (a, y, z)` splits into partial derivatives, and mixed derivatives of `H (s, τ)`\ncommute.\n\n## ii. Key results\n\n- `fderiv_apply_zero_prod`: splitting of the derivative of `f (a, y, z)`\n- `deriv_fderiv_apply_comm`: commutation of mixed derivatives of `H (s, τ)`\n\n## iii. Table of contents\n\n- A. Functions on a triple product\n- B. Two-parameter families\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Michal Mogielnicki",
    "sections": [
     {
      "line": 39,
@@ -661,13 +670,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Mathematics/Calculus/Wirtinger/Basic.lean",
    "module": "Physlib.Mathematics.Calculus.Wirtinger.Basic",
    "title": "Wirtinger calculus",
    "doc": "## Notation\n\n* The differentiation direction is a *subscript*: `∂_v f` and `∂̄_v f` are the holomorphic and\n  anti-holomorphic Wirtinger derivatives of `f` in direction `v`, splitting the total real\n  derivative `d_v f` (straight `d` for the total, `∂`/`∂̄` for the parts). For iterated\n  derivatives (§I) the operators compose, `∂_v ∂̄_w f`.\n* A `/∂` fraction differentiates with respect to a *variable*, not a direction: a real\n  coordinate `∂f/∂x`, or the argument of a one-variable function in the chain rule, `∂g/∂f`,\n  `∂g/∂f̄` (outer `g : ℂ → ℂ`, inner `f : V → ℂ`).\n* `f̄` is the pointwise conjugate `p ↦ conj (f p)`.\n\n* `v`, `w` are directions in `V`.\n* `u : V` is the *fixed* base point a derivative is evaluated at — the implicit point in the\n  subscript notation.\n* `p : V` is the *bound* base-point variable when a derivative is repackaged as a function of\n  position: the inner field of an iterated operator (`fun p => dWirtingerAntiDir f w p`, §I),\n  or the composite in the chain rule (`fun p => g (f p)`, §D).\n\nBase points (`u`, `p`) and directions (`v`, `w`) all live in `V`: a vector space is its own\ntangent space, so a displacement from a point is again an element of `V` (`u + t·v`).\n\n## i. Overview\n\nThis module is the **foundation** of physlib's Wirtinger calculus. It defines the\n**directional Wirtinger derivatives** of `f : V → ℂ` on a complex vector space `V`, along a\ndirection `v : V` (a complex number when `V = ℂ`, a vector in general):\n\n  `∂_v f  = (1/2)(d_v f − i·d_{i·v} f)`     (`dWirtingerDir`)\n  `∂̄_v f = (1/2)(d_v f + i·d_{i·v} f)`     (`dWirtingerAntiDir`)\n\nHere `d_v f = fderiv ℝ f u v` is the real Fréchet derivative along `v`, the limit\n`lim_{t→0} (f(u + t·v) − f(u)) / t` over real `t`; so \"real\" names the scalar `t`, not the\ndirection `v`, and over all `v` these limits form the `ℝ`-linear map `fderiv ℝ f u : V → ℂ`.\nThe second direction `i·v` is `v` turned 90° by the complex structure on `V`, so `(v, i·v)`\nis an orthogonal frame in `v`'s own (arbitrary) direction, a rotated and rescaled copy of the\naxes `(1, i)`. For `V = ℂ` one may take `v = 1`, giving `d_v f = ∂f/∂x` and\n`d_{i·v} f = ∂f/∂y`; writing `z = x + i y` and `z̄ = x − i y`, the formulas recover the\nclassical `∂f/∂z = (1/2)(∂_x − i ∂_y)f` and `∂f/∂z̄ = (1/2)(∂_x + i ∂_y)f`.\n\nThe two operators measure the failure of `ℂ`-linearity. The real derivative always commutes\nwith real scaling and addition; `ℂ`-linearity asks in addition that it commute with `i`, that\nis `d_{i·v} f = i·d_v f`. The gap `d_{i·v} f − i·d_v f` to that condition is exactly\n`−2i·∂̄_v f`, so `∂̄_v f` is the obstruction to `ℂ`-linearity and vanishes precisely when `f`\nis holomorphic. Equivalently, the operators split the real derivative into its holomorphic and\nanti-holomorphic parts, the directional form of the Dolbeault decomposition `d = ∂ + ∂̄`,\nwhich sum back to\n\n  `d_v f = ∂_v f + ∂̄_v f`.\n\nThis is the coordinate-free form of treating `z` and `z̄` as independent (the `V = ℂ` case\nabove). When `f` is holomorphic the anti-holomorphic half vanishes and `∂_v f` is the ordinary\ncomplex derivative (§F). Everything rests on `fderiv ℝ`, with no lower Wirtinger layer.\n\nOn these operators the module builds the **full directional calculus**:\n\n* real-linearity, the Leibniz rule, and the finite-sum rule (§B);\n* the inner-field conjugation lemmas, swapping the two operators (§C);\n* the two-term Wirtinger chain rule for an outer `g : ℂ → ℂ` (§D);\n* domain conjugation: precomposing with a conjugate-linear map swaps the two\n  operators (§E);\n* the holomorphic / anti-holomorphic collapse, keyed on `ℂ`-linearity or\n  conjugate-linearity of the real derivative along `v` (§F);\n* differentiability and locality of the operators on a `C²` field (§H).\n\nThe capstone (§I) is **Schwarz's theorem** in Wirtinger form. On a `C²` field the\nholomorphic and anti-holomorphic derivatives in any two directions commute:\n\n  `∂_v ∂̄_w f = ∂̄_w ∂_v f`     (`dWirtingerDir_dWirtingerAntiDir_comm`)\n\nIt is no new analytic fact: it reduces to the symmetry of the second real Fréchet\nderivative (`ContDiffAt.isSymmSndFDerivAt`), carried out via the `weightedDirDeriv` bridge\nof §G.\n\n## ii. Key results\n\n- `Physlib.Wirtinger.dWirtingerDir` / `dWirtingerAntiDir` : directional Wirtinger\n    derivatives of `f : V → ℂ` along `v`.\n- `Physlib.Wirtinger.dWirtingerDir_add` / `dWirtingerDir_smul` /\n    `dWirtingerDir_mul` / `dWirtingerDir_fun_sum` : real-linearity, the Leibniz\n    rule, and the finite-sum rule (each with an anti-holomorphic dual).\n- `Physlib.Wirtinger.dWirtingerDir_star_comp` / `dWirtingerAntiDir_star_comp` :\n    conjugating the inner field swaps the holomorphic and anti-holomorphic operators.\n- `Physlib.Wirtinger.dWirtingerDir_comp` / `dWirtingerAntiDir_comp` : the two-term\n    Wirtinger chain rule for an outer `g : ℂ → ℂ`.\n- `Physlib.Wirtinger.dWirtingerDir_comp_conjLinear` /\n    `dWirtingerAntiDir_comp_conjLinear` : precomposing with a conjugate-`ℂ`-linear\n    map swaps the two operators (with the base point and direction transported\n    through the map).\n- `Physlib.Wirtinger.dWirtingerDir_eq_of_clinear` /\n    `dWirtingerAntiDir_eq_zero_of_clinear` : the holomorphic collapse, keyed on\n    `ℂ`-linearity of the real derivative along the direction (each with a\n    conjugate-`ℂ`-linear dual).\n- `Physlib.Wirtinger.clinear_of_dWirtingerAntiDir_eq_zero` : `∂̄_v f = 0` implies\n    `d_{i·v} f = i·d_v f`, the converse of `dWirtingerAntiDir_eq_zero_of_clinear`.\n- `Physlib.Wirtinger.differentiableAt_complex_iff_dWirtingerAntiDir_eq_zero` : the\n    Cauchy–Riemann criterion.\n- `Physlib.Wirtinger.differentiableAt_dWirtingerDir` /\n    `differentiableAt_dWirtingerAntiDir` : the directional derivative of a `C²`\n    field is itself real-differentiable.\n- `Physlib.Wirtinger.dWirtingerDir_congr_of_eventuallyEq` /\n    `dWirtingerAntiDir_congr_of_eventuallyEq` : the directional derivative depends\n    only on the field near the point.\n- `Physlib.Wirtinger.dWirtingerDir_dWirtingerAntiDir_comm` : Schwarz's theorem,\n    `∂_v ∂̄_w f = ∂̄_w ∂_v f` for a `C²` `f`.\n- `Physlib.Wirtinger.realLinear_apply_eq_wirtinger` : the real-linear Wirtinger split\n    `L w = a·w + b·star w` of any `L : ℂ →L[ℝ] ℂ`, the algebraic input to the chain rule (§D).\n- `Physlib.Wirtinger.fderiv_star_eq` : the real derivative of a pointwise conjugate\n    `p ↦ star (f p)` is `conjCLE` composed with `fderiv ℝ f`, the analytic input to the\n    conjugation lemmas (§C).\n\n## iii. Table of contents\n\n- A. The directional Wirtinger operators\n- B. Real-linearity and the Leibniz rule\n- C. Conjugation\n- D. The Wirtinger chain rule\n- E. Domain conjugation\n- F. The holomorphic collapse\n- G. The second-derivative bridge\n- H. Differentiability and locality\n- I. Schwarz's theorem\n\n## iv. References\n\n* Kreutz-Delgado, The Complex Gradient Operator and the CR-Calculus, arXiv:0906.4835 —\n  directional/multivariable formulation and two-term chain rule (§D); second-order theory behind\n  §G–I. [ref: kreutz_delgado_cr_calculus]\n* Mortini & Rupp, The Clairaut–Schwarz Theorem for Mixed Wirtinger Derivatives, Bull. Iranian\n  Math. Soc. 48 (2022), 2643–2647 — the mixed holomorphic/anti-holomorphic symmetry of §I under the\n  same `C²` hypothesis, with the same reduction to real Schwarz used here. [ref: mortini_rupp_2022]\n* Koor, Qiu, Kwek & Rebentrost, A short tutorial on Wirtinger Calculus with applications in quantum\n  information, arXiv:2312.04858 — companion exposition of the scalar single/multivariable calculus\n  and sign conventions. [ref: koor_et_al_2023_wirtinger]\n* Complex differential form, Wikipedia (section \"The Dolbeault operators\") — the `d = ∂ + ∂̄`\n  splitting and the `∂`/`∂̄` notation this module's operators are named after.\n  [ref: wiki_complex_differential_form]",
+   "copyright": "2026 Andrea Pari",
    "sections": [
     {
      "line": 162,
@@ -1005,13 +1016,15 @@
     }
    ],
    "private": 8,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Mathematics/Calculus/Wirtinger/Coordinate.lean",
    "module": "Physlib.Mathematics.Calculus.Wirtinger.Coordinate",
    "title": "Partial Wirtinger derivatives `∂_I`, `∂̄_I` in a complex coordinate basis on `ℂ^n`",
    "doc": "## Notation\n\nThe conventions of `Wirtinger.Basic` carry over verbatim, with the directional subscript `v`\nreplaced by a coordinate index `I` (standing for the direction `Pi.single I 1`).\n\n* `∂_I f` and `∂̄_I f` are the holomorphic and anti-holomorphic coordinate Wirtinger\n  derivatives of `f` in the I-th coordinate direction `Pi.single I 1` — the bar sits on the\n  operator, never on the subscript. They are the directional `∂_v f` / `∂̄_v f` of\n  `Wirtinger.Basic` at `v = Pi.single I 1`. For iterated derivatives the operators compose,\n  `∂_I ∂̄_J f`.\n* `z^I` is the I-th coordinate `u ↦ u^I`; `z̄^I = star z^I` is its pointwise conjugate (the\n  `f̄` convention of `Wirtinger.Basic`).\n* `∂_x`, `∂_y` are the slot-I real and imaginary Fréchet derivatives, along the directions\n  `Pi.single I 1` and `Pi.single I i`.\n* `δ_IJ` is the Kronecker delta.\n\n## i. Overview\n\nCoordinate specialization of `Wirtinger.Basic` to `V = ℂ^n` (spelled `ι → ℂ`,\n`n = |ι|`, `ι` a `Fintype`), fixing the direction to the I-th basis vector\n`Pi.single I 1`:\n\n  `∂_I f  := ∂_v f`   at `v = Pi.single I 1`   (`dWirtingerCoord`)\n  `∂̄_I f := ∂̄_v f`  at `v = Pi.single I 1`   (`dWirtingerAntiCoord`)\n\n`∂_I`, `∂̄_I` are the partial Wirtinger derivatives w.r.t. coordinate `I`, the\nother coordinates fixed. Coordinate values:\n\n  `∂_I z^J = δ_IJ`,   `∂̄_I z̄^J = δ_IJ`,   `∂̄_I z^J = ∂_I z̄^J = 0`.\n\nThe basis makes the directional calculus computational. The operators\n`dWirtingerCoord` / `dWirtingerAntiCoord` (§A, with real-Fréchet unfolding\n`(1/2)(∂_x ∓ i ∂_y)`) come with:\n\n- independence: `∂_I` annihilates every `z̄` and `∂̄_I` every `z` (the coordinate\n  values above), so `z` and `z̄` behave as independent variables;\n- additivity, `ℂ`-linearity, the Leibniz product rule, and the finite-sum rule\n  (§B–C), so any polynomial in the coordinates and their conjugates differentiates\n  termwise;\n- conjugation, swapping the two operators (§B–C): `∂_I f̄ = conj (∂̄_I f)` and\n  `∂̄_I f̄ = conj (∂_I f)`;\n- holomorphic collapse (§B–C): for holomorphic `f`, `∂̄_I f = 0` and `∂_I f` is\n  the ordinary complex partial `fderiv ℂ f u (Pi.single I 1)` (anti-holomorphic\n  `f` dually);\n- the per-coordinate chain rule for an outer `g : ℂ → ℂ` (§D), collapsing to a\n  single term `∂_I (g ∘ f) = deriv g (f u) · ∂_I f` on holomorphic `g` (and `∂̄_I`\n  likewise);\n- the coordinate difference `z^J − z̄^J` (§C);\n- Schwarz's theorem `∂_I ∂̄_J f = ∂̄_J ∂_I f` on `C²` `f` (§E,\n  `dWirtingerCoord_dWirtingerAntiCoord_comm`).\n\nIndexing by `I` casts the calculus in the language of several complex variables.\nThe first derivatives assemble into a gradient, the family of partials `∂_I f`\nranging over the coordinates `I`; the critical points of a holomorphic `h` are\nthen where `∂_I h = 0` for every `I`. The mixed second derivatives assemble into a\ncomplex Hessian, the matrix with entries `∂_I ∂̄_J f` indexed by the pair `(I, J)`;\nfor a real function `Φ` the entries `∂_I ∂̄_J Φ` record its second-order behaviour.\n\nThat Hessian is Hermitian, by Schwarz (§E). For a real `K`, write the Kähler\nmetric `g_{IJ̄} = ∂_I ∂̄_J K`; conjugation gives `star (g_{JĪ}) = ∂̄_J ∂_I K`,\nwhich Schwarz equates with `∂_I ∂̄_J K`, so `g_{IJ̄} = star (g_{JĪ})`. That is\nKähler-metric hermiticity.\n\nThe coordinate maps are Mathlib primitives — `z^I` is `ContinuousLinearMap.proj`, `z̄^I` its\n`star` — and the holomorphic collapse reads `fderiv ℝ f = fderiv ℂ f` off the `restrictScalars`\nbridge (§B).\n\nDifferentiability convention: hypothesis-bearing rules are pointwise (at `u`,\n`DifferentiableAt`), valid on a proper subdomain (e.g. a slit-domain log Kähler\npotential); `funext` locally for a function-level form. Hypothesis-free constant\nand coordinate facts are function equalities.\n\n## ii. Key results\n\n- `Physlib.Wirtinger.dWirtingerCoord` / `dWirtingerAntiCoord` : the\n    coordinate Wirtinger operators, definitionally the directional operators\n    along `Pi.single I 1`; their real-Fréchet form `dWirtingerCoord_apply` /\n    `dWirtingerAntiCoord_apply` is `∂_I f = (1/2)(∂_x ∓ i ∂_y) f`.\n- `Physlib.Wirtinger.dWirtingerCoord_coordProj` /\n    `dWirtingerAntiCoord_coordProj` / `dWirtingerCoord_conjCoord` /\n    `dWirtingerAntiCoord_conjCoord` : the four Kronecker coordinate values\n    `∂_I z^J = δ_IJ`, `∂̄_I z̄^J = δ_IJ`, `∂̄_I z^J = ∂_I z̄^J = 0`.\n- `Physlib.Wirtinger.dWirtingerCoord_add_apply` / `dWirtingerCoord_smul_apply` /\n    `dWirtingerCoord_mul_apply` / `dWirtingerCoord_fun_sum_apply` : additivity,\n    `ℂ`-linearity, the Leibniz rule, and the finite-sum rule (with\n    anti-holomorphic duals).\n- `Physlib.Wirtinger.dWirtingerCoord_star_comp_apply` /\n    `dWirtingerAntiCoord_star_comp_apply` : conjugating the inner field swaps the\n    two operators, `∂_I f̄ = conj (∂̄_I f)`.\n- `Physlib.Wirtinger.dWirtingerCoord_eq_complex_fderiv_apply` /\n    `dWirtingerAntiCoord_eq_zero_of_holomorphic_apply` : holomorphic collapse for\n    the coordinate operators (with anti-holomorphic duals).\n- `Physlib.Wirtinger.dWirtingerCoord_comp_apply` /\n    `dWirtingerCoord_comp_holomorphic_apply` (and their anti-holomorphic duals): the\n    two-term Wirtinger chain rule for an outer `g : ℂ → ℂ`, collapsing to the\n    single-term `deriv g (f u) · ∂_I f` for holomorphic `g`.\n- `Physlib.Wirtinger.dWirtingerCoord_coordDiff` /\n    `dWirtingerAntiCoord_coordDiff` : Wirtinger derivatives of the\n    coordinate difference `z^J − z̄^J`.\n- `Physlib.Wirtinger.differentiableAt_dWirtingerCoord` /\n    `differentiableAt_dWirtingerAntiCoord` : a first coordinate Wirtinger derivative of a\n    `C²` function is itself real-differentiable (§E).\n- `Physlib.Wirtinger.dWirtingerCoord_dWirtingerAntiCoord_comm` : Schwarz's\n    theorem for the coordinate operators, `∂_I ∂̄_J f = ∂̄_J ∂_I f` on\n    `C²` `f`.\n- `Physlib.Wirtinger.dWirtingerCoord_comp_clm_zero` / `dWirtingerCoord_comp_clm_col` (and their\n    anti-holomorphic duals): the derivative of `h ∘ P` for a continuous ℝ-linear map `P`, read off\n    from how `P` acts on the coordinate column (§F).\n\n## iii. Table of contents\n\n- A. The coordinate Wirtinger operators\n- B. Properties of `dWirtingerCoord`\n- C. Properties of `dWirtingerAntiCoord`\n- D. Wirtinger chain rules for an outer function\n- E. Schwarz's theorem for the coordinate operators\n- F. Chain rule for an inner continuous linear map",
+   "copyright": "2026 Andrea Pari",
    "sections": [
     {
      "line": 142,
@@ -1381,13 +1394,15 @@
     }
    ],
    "private": 6,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Mathematics/Calculus/Wirtinger/Hessian.lean",
    "module": "Physlib.Mathematics.Calculus.Wirtinger.Hessian",
    "title": "The mixed Wirtinger Hessian",
    "doc": "The mixed Wirtinger Hessian, and its block-diagonal form for a sum of sector functions.\n\n## i. Overview\n\nIn an `N = 1` supersymmetric theory the kinetic terms of the complex scalar fields `φ^I` are\nweighted by the Kähler metric\n\n  `g_{IJ̄}(φ) = ∂_I ∂̄_J K(φ)`,   `∂_I = ∂/∂φ^I`,   `∂̄_J = ∂/∂φ̄^J`,\n\nof the real Kähler potential `K`. The metric is Hermitian, `(g_{JĪ})^* = g_{IJ̄}`, so the kinetic\nterm is real.\n\nSuppose the fields split into sectors `k`, with fields `φ_k = (φ_k^a)` in sector `k`, and the\nKähler potential is a sum of sector potentials with no term mixing two sectors:\n\n  `K(φ) = ∑_k K_k(φ_k)`,\n\nas for several moduli `T_k` with `K = -∑_k n_k log(T_k + T̄_k)` and positive constants `n_k`.\nThen the metric is block-diagonal and the sectors have no kinetic mixing:\n\n  `∂²K / ∂φ_k^a ∂φ̄_l^b = δ_{kl} ∂²K_k / ∂φ_k^a ∂φ̄_k^b`.\n\nEach `K_k` need only be `C²` at the point considered, so potentials defined on a proper\nsubdomain, such as `log`, are covered.\n\nIn Lean, the fields of sector `k` are labelled by a finite type `ι k`, and the field `φ_k^a`\nby the pair `⟨k, a⟩ : Σ k, ι k`. A point `φ` in field space is a function\n`q : (Σ k, ι k) → ℂ` with `q ⟨k, a⟩ = φ_k^a`, and the sector fields `φ_k` are\n`q ∘ Sigma.mk k`, the function `a ↦ q ⟨k, a⟩`. The sector potentials `K_k` are `f k`. The\nmetric `g_{IJ̄}(φ)` is `hessianMatrixOfR K q`, or `hessianMatrixOf` for a complex-valued\nfunction. At a point `u`, the block-diagonal statement reads\n\n  `hessianMatrixOf (fun q => ∑ k, f k (q ∘ Sigma.mk k)) u`\n  `  = blockDiagonal' (fun k => hessianMatrixOf (f k) (u ∘ Sigma.mk k))`.\n\nThe two-sector case over `ι₁ ⊕ ι₂` is stated with `Matrix.fromBlocks`.\n\n## ii. Key results\n\n- `Physlib.Wirtinger.hessianMatrixOf` : the mixed Wirtinger Hessian.\n- `Physlib.Wirtinger.hessianMatrixOfR` : the same for a real-valued function.\n- `Physlib.Wirtinger.hessianMatrixOfR_isHermitian` : the Hessian of a real `C²` function is\n    Hermitian.\n- `Physlib.Wirtinger.dWirtingerAntiCoord_block_sum` : `∂̄` of a sum of sector functions along a\n    sector-`k` coordinate is the `∂̄` of the sector-`k` function; `dWirtingerCoord_block_sum` is\n    the same for `∂`.\n- `Physlib.Wirtinger.hessianMatrixOf_sum_eq_blockDiagonal'` : the Hessian of a sum of sector\n    functions is block-diagonal.\n- `Physlib.Wirtinger.hessianMatrixOf_comp_equiv` : relabelling the coordinates by `ε` reindexes\n    the Hessian by `ε`.\n- `Physlib.Wirtinger.hessianMatrixOf_add_eq_fromBlocks` : the two-sector case, as\n    `Matrix.fromBlocks`.\n\n## iii. Table of contents\n\n- A. The mixed Wirtinger Hessian\n- B. Block-diagonal Hessian of a sum over sectors\n- C. Coordinate reindexing of the Hessian\n- D. Two sectors\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Andrea Pari",
    "sections": [
     {
      "line": 87,
@@ -1585,13 +1600,15 @@
     }
    ],
    "private": 1,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Mathematics/Distribution/PowMul.lean",
    "module": "Physlib.Mathematics.Distribution.PowMul",
    "title": "",
    "doc": "## The multiple of a Schwartz map by `x`\n\nIn this module we define the continuous linear map from the Schwartz space\n`𝓢(ℝ, 𝕜)` to itself which takes a Schwartz map `η` to the Schwartz map `x * η`.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -1620,13 +1637,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Mathematics/Distribution/TemperedDistribution.lean",
    "module": "Physlib.Mathematics.Distribution.TemperedDistribution",
    "title": "Distributions",
    "doc": "## i. Overview\n\nDistributions are often used implicitly in physics, for example the correct way to handle\na dirac delta function is to treat it as a distribution. In this file we will\ndefine distributions and some properties on them.\n\nThe distributions from a space `E` to space `F` can be thought of as a generalization of\nfunctions from `E` to `F`. We give a more precise definition of distributions below.\n\nIn this file we define distributions generally. Properties of distributions directly related to\n`Space` are defined in the `Physlib.SpaceAndTime.Space` directory, for example in\n`Physlib.SpaceAndTime.Space.DistOfFunction`.\n\n## ii. Key results\n\n- `E →d[𝕜] F` is the type of distributions from `E` to `F`.\n- `Distribution.derivative` and `Distribution.fourierTransform` allow us to make sense of these\n  operations that might not make sense a priori on general functions.\n- `Distribution.toTemperedDistribution` converts a Physlib distribution to a Mathlib\n  tempered distribution.\n- `Distribution.ofFiniteMeasure` is the scalar distribution associated to a finite measure.\n- `Distribution.ofFiniteMeasure_eq_iff` says that finite measures are determined by their\n  associated complex scalar distributions.\n- `Distribution.integralOfBound` integrates a family with an integrable Schwartz seminorm bound.\n- `Distribution.fderivD_integralOfBound_apply` differentiates this integral after evaluation.\n\n## iii. Table of contents\n\n- A. The definition of a distribution\n- B. Construction of distributions from linear maps\n- C. Derivatives of distributions\n  - C.1. Differentiating integrals of distributions\n- D. Fourier transform of distributions\n  - D.1. Bridge to Mathlib tempered distributions\n- E. Specific distributions\n  - E.1. The constant distribution\n  - E.2. Distributions associated to finite measures\n  - E.3. The dirac delta distribution\n  - E.4. The heaviside step function\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Kenny Lau",
    "sections": [
     {
      "line": 66,
@@ -1900,13 +1919,15 @@
     }
    ],
    "private": 3,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Mathematics/ForMathlib/ComplexLinear.lean",
    "module": "Physlib.Mathematics.ForMathlib.ComplexLinear",
    "title": "Upgrading a real-linear map to a complex-linear one",
    "doc": "## i. Overview\n\nAn `ℝ`-linear map between complex vector spaces that commutes with multiplication by `i` is\n`ℂ`-linear, since `c = c.re + c.im · i`. Mathlib has the case of a map out of `ℂ`\n(`real_linearMap_map_smul_complex`, `ContinuousLinearMap.complexOfReal`); this file treats an\narbitrary domain.\n\n## ii. Key results\n\n- `LinearMap.map_smul_of_commutesI` : the law along one direction.\n- `LinearMap.commutesI_of_basis` : commuting with `i` on a `ℂ`-basis suffices.\n- `ContinuousLinearMap.complexOfCommutesI` : the resulting continuous `ℂ`-linear map.\n\n## iii. Table of contents\n\n- A. The scalar law\n- B. Commuting with `i` on a basis\n- C. The complex-linear map\n\n## iv. References\n\nThere are no known references for the material in this module.",
+   "copyright": "2026 Andrea Pari",
    "sections": [
     {
      "line": 48,
@@ -1956,13 +1977,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Mathematics/ForMathlib/Contraction.lean",
    "module": "Physlib.Mathematics.ForMathlib.Contraction",
    "title": "The coordinate pairing of two bases",
    "doc": "Two bases with the same labels pair two modules by their coordinates.\n\n## i. Overview\n\nMathlib pairs a module `M` with its own dual. In physics the space paired with `M` is often a\ntype of its own with its own basis, not `Module.Dual M`. Covectors `w_μ`, with the basis `e^μ`,\npair with vectors `x^μ`, with the basis `e_μ`, as `x^μ w_μ = ∑ μ, x^μ w_μ`. This file gives that\npairing for any two modules `M` and `N` with bases `b` and `b'` labelled by the same finite type\n`ι`, and shows that it identifies `N` with the dual of `M`, so Mathlib's results on duals apply.\n\nThe coordinate pairing `coordPairing` sends `x ⊗ y` to `∑_I (b x)_I (b' y)_I`. It is Mathlib's\n`b'.toDual`, applied after the equivalence `b.equiv b'` that sends `b I` to `b' I`. The two bases\nare dual for it, it is the only pairing for which they are, and it is a perfect pairing in\nMathlib's sense. When the two modules carry representations and some invariant pairing makes the\nbases dual, the coordinate pairing is that pairing, so it is invariant.\n\n## ii. Key results\n\n- `Module.Basis.coordPairing` : the coordinate pairing `∑_I (b x)_I (b' y)_I` of two bases with\n  the same labels.\n- `Module.Basis.coordPairing_basis_basis` : the two bases are dual for the coordinate pairing, and\n  `Module.Basis.eq_coordPairing` : it is the only such pairing.\n- `Module.Basis.isPerfPair_coordPairing` : the coordinate pairing is a perfect pairing.\n- `Module.Basis.coordPairing_invariant` : the coordinate pairing is invariant when an invariant\n  pairing makes the bases dual.\n\n## iii. Table of contents\n\n- A. The coordinate pairing of two bases\n- B. Invariance of the coordinate pairing\n\n## iv. References\n\nThere are no known references for the material in this module.",
+   "copyright": "2026 Andrea Pari",
    "sections": [
     {
      "line": 58,
@@ -2040,13 +2063,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Mathematics/ForMathlib/DataStructures/Matrix/LieTrace.lean",
    "module": "Physlib.Mathematics.ForMathlib.DataStructures.Matrix.LieTrace",
    "title": "Lie's Trace Formula",
    "doc": "This file proves the formula `det (exp A) = exp (tr A)` for matrices, also known as Lie's trace\nformula.\n\nThe proof proceeds by first showing the formula for upper-triangular matrices and then\nleveraging Schur triangulation to generalize to any matrix. An upper-triangular matrix `A`\nis defined in `mathlib` as `Matrix.BlockTriangular A id`.\n\n## Main results\n\n- `Matrix.det_exp`: The determinant of the exponential of a matrix is the exponential of its trace.",
+   "copyright": "2025 Matteo Cipollina",
    "sections": [
     {
      "line": 46,
@@ -2216,13 +2241,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Mathematics/ForMathlib/FDerivCurry.lean",
    "module": "Physlib.Mathematics.ForMathlib.FDerivCurry",
    "title": "fderiv currying lemmas",
    "doc": "Various lemmas related to fderiv on curried/uncurried functions.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -2419,13 +2446,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Mathematics/ForMathlib/Fin.lean",
    "module": "Physlib.Mathematics.ForMathlib.Fin",
    "title": "Fin lemmas",
    "doc": "The purpose of this file is to define some results Fin currently\nin Mathlib.\n\nAt some point these should either be up-streamed to Mathlib or replaced with definitions already\nin Mathlib.",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -2726,13 +2755,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Mathematics/ForMathlib/Fin/Involutions.lean",
    "module": "Physlib.Mathematics.ForMathlib.Fin.Involutions",
    "title": "Fin involutions",
    "doc": "Some properties of involutions of `Fin n`.\n\nThese involutions are used in e.g. proving results about Wick contractions.",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 226,
@@ -2922,13 +2953,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Mathematics/ForMathlib/HasTemperateGrowth.lean",
    "module": "Physlib.Mathematics.ForMathlib.HasTemperateGrowth",
    "title": "Functions of temperate growth",
    "doc": "This file is intended to collect useful general properties of `HasTemperateGrowth` which are not\n(yet) in Mathlib.",
+   "copyright": "2026 Gregory J. Loges",
    "sections": [],
    "declarations": [
     {
@@ -2941,13 +2974,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Mathematics/ForMathlib/Integration/Basic.lean",
    "module": "Physlib.Mathematics.ForMathlib.Integration.Basic",
    "title": "Basic integration results",
    "doc": "Basic results related to integration not in Mathlib.\n\n## i. Overview\n\nMathlib's `MeasureTheory.integral_withDensity_eq_integral_smul` converts an integral against a\nmeasure `μ.withDensity f` into an integral against `μ`, but it takes the density as an\n`NNReal`-valued function.\n\nThis file contains the version of that lemma for densities given as real-valued functions.\n\n## ii. Key results\n\n- `Integration.integral_withDensity_ofReal_eq_integral_smul` : for measurable `f ≥ 0`,\n  `∫ x, g x ∂(μ.withDensity fun x => ENNReal.ofReal (f x)) = ∫ x, f x • g x ∂μ`.\n\n## iii. Table of contents\n\n- A. Integrals against a real-valued density\n\n## iv. References",
+   "copyright": "2026 Art Mountain",
    "sections": [
     {
      "line": 40,
@@ -2965,13 +3000,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Mathematics/ForMathlib/LinearMaps.lean",
    "module": "Physlib.Mathematics.ForMathlib.LinearMaps",
    "title": "Linear maps",
    "doc": "Some definitions and properties of linear, bilinear, and trilinear maps, along with homogeneous\nquadratic and cubic equations.",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -3304,13 +3341,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Mathematics/ForMathlib/LinearPMap.lean",
    "module": "Physlib.Mathematics.ForMathlib.LinearPMap",
    "title": "LinearPMap",
    "doc": "## i. Overview\n\nIn this module we collect some basic results about `LinearPMap`s.\n\nMost important is the definition of restricted composition.\nThe composition of two partial linear maps `g : F →ₗ.[R] G` and `f : E →ₗ.[R] F` is defined\nonly if the range of `f` is contained in the domain of `g` (c.f. `LinearPMap.comp`).\n`g.compRestricted f` (`g ∘ᵣ f`) is defined to be the composition of `g` with the restriction of `f`\nto exactly those `x : f.domain` for which `f x ∈ g.domain`. This allows one to work with the\ncomposition of partial linear maps while having the domain implicitly accounted for.\n\n## ii. Key results\n\n- `LinearPMap.sum` : The finite sum of partial linear maps.\n- `LinearPMap.compRestricted` (`∘ᵣ`) : For two partial linear maps\n    `g : F →ₗ[R] G` and `f : E →ₗ[R] F`, the composition of `g` with `f`\n    with natural domain `{x : f.domain | f x ∈ g.domain}`.\n- `LinearPMap.instMonoid` : Partial linear maps `E →ₗ.[R] E` with `compRestricted`\n    for multiplication and the identity map for `1` comprise a monoid.\n\n## iii. Table of contents\n\n- A. Inequalities\n- B. Zero smul\n- C. Finite sums\n- D. Restricted composition\n- E. Monoid\n- F. Inverses\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Gregory J. Loges",
    "sections": [
     {
      "line": 57,
@@ -3780,13 +3819,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Mathematics/ForMathlib/List.lean",
    "module": "Physlib.Mathematics.ForMathlib.List",
    "title": "List lemmas",
    "doc": "",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -4255,13 +4296,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Mathematics/ForMathlib/List/InsertIdx.lean",
    "module": "Physlib.Mathematics.ForMathlib.List.InsertIdx",
    "title": "List lemmas",
    "doc": "",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -4378,13 +4421,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Mathematics/ForMathlib/List/InsertionSort.lean",
    "module": "Physlib.Mathematics.ForMathlib.List.InsertionSort",
    "title": "List lemmas",
    "doc": "",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 337,
@@ -4610,13 +4655,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Mathematics/ForMathlib/OneParameterSubgroups/Basic.lean",
    "module": "Physlib.Mathematics.ForMathlib.OneParameterSubgroups.Basic",
    "title": "One-parameter subgroups of real Banach algebras",
    "doc": "## i. Overview\n\nLet `E` be a real Banach algebra. This file proves that every continuous additive character\n`U : AddChar ℝ E` has the form `U(t) = exp (t • A)`, where `A = deriv U 0`.\n\nThis is the Banach-algebra argument underlying the correspondence between norm-continuous unitary\none-parameter groups and bounded self-adjoint generators. See\n`Physlib.Mathematics.ForMathlib.OneParameterSubgroups.Unitary` for that correspondence.\n\n**Proof outline.** Continuity at zero implies that, for sufficiently small `d > 0`, the integral of\n`U` over `[0, d]` is close to `d • 1` and therefore invertible. If `I` is the indefinite integral of\n`U`, the homomorphism law gives `U(t) * I(d) = I(t + d) - I(t)`. This identity proves that `U` is\ndifferentiable. Setting `A` to the derivative at zero then gives the differential equation\n`U'(t) = U(t)A`. Consequently `U(t) * exp (-tA)` has zero derivative and is constant. Uniqueness\nfollows by differentiating two exponential representations at zero.\n\n## ii. Key results\n\n* `OneParameterSubgroup.apply_eq_exp_smul_deriv`: A continuous one-parameter subgroup is the\n  exponential of its derivative at zero.\n* `OneParameterSubgroup.generator_unique`: Any exponential generator equals the derivative at zero.\n\n## iii. References\n\n* None.",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [],
    "declarations": [
     {
@@ -4669,13 +4716,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Mathematics/ForMathlib/OneParameterSubgroups/Unitary.lean",
    "module": "Physlib.Mathematics.ForMathlib.OneParameterSubgroups.Unitary",
    "title": "Unitary one-parameter groups",
    "doc": "A norm-continuous unitary one-parameter group on a complex Hilbert space has a unique bounded\nself-adjoint generator. With the convention used here, the group generated by `A` is\n`U(t) = exp (-itA)`.\n\nThe same correspondence describes bounded generators of time translations, spatial translations,\nrotations, and other norm-continuous unitary one-parameter groups. The general theorem for strongly\ncontinuous groups and unbounded generators requires spectral theory that is not yet available in\nPhyslib.\n\n## Main results\n\n* `UnitaryOneParameterGroup.generator`: The canonical bounded self-adjoint generator.\n* `UnitaryOneParameterGroup.apply_eq_exp_generator`: The formula `U(t) = exp (-itA)`.\n* `UnitaryOneParameterGroup.ofSelfAdjoint`: The group generated by a bounded self-adjoint operator.\n* `UnitaryOneParameterGroup.stoneEquiv`: Stone's correspondence for bounded generators.\n\n## References\n\n* M. H. Stone, Linear Transformations in Hilbert Space III. Operational Methods and Group Theory,\n  Proc. Natl. Acad. Sci. 16 (1930), 172-175. [ref: stone_1930]",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [],
    "declarations": [
     {
@@ -4824,13 +4873,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Mathematics/ForMathlib/OrthogonalMatrix.lean",
    "module": "Physlib.Mathematics.ForMathlib.OrthogonalMatrix",
    "title": "Orthogonal matrices and the dot product",
    "doc": "An orthogonal matrix — a square matrix `A` with `Aᵀ A = 1` — preserves the dot product of vectors,\nand in particular their squared lengths. This is the algebraic content behind the\nframe-independence of the *rotational* kinetic energy in rigid-body dynamics: rotating a velocity\ndoes not change its speed.",
+   "copyright": "2026 Giuseppe Sorge",
    "sections": [],
    "declarations": [
     {
@@ -4843,13 +4894,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Mathematics/ForMathlib/SchurTriangulation.lean",
    "module": "Physlib.Mathematics.ForMathlib.SchurTriangulation",
    "title": "Schur triangulation",
    "doc": "Schur triangulation is more commonly known as Schur decomposition or Schur triangularization, but\n\"triangulation\" makes the API more readable. It states that a square matrix over an algebraically\nclosed field, e.g., `ℂ`, is unitarily similar to an upper triangular matrix.\n\n## Main definitions\n\n- `Matrix.schur_triangulation` : a matrix `A : Matrix n n 𝕜` with `𝕜` being algebraically closed can\nbe decomposed as `A = U * T * star U` where `U` is unitary and `T` is upper triangular.\n- `Matrix.schurTriangulationUnitary` : the unitary matrix `U` as previously stated.\n- `Matrix.schurTriangulation` : the upper triangular matrix `T` as previously stated.\n- Some auxiliary definitions are not meant to be used directly, but\n`LinearMap.SchurTriangulationAux.of` contains the main algorithm for the triangulation procedure.",
+   "copyright": "2025 Gordon Hsu",
    "sections": [
     {
      "line": 103,
@@ -4979,13 +5032,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Mathematics/ForMathlib/SesquilinearForm.lean",
    "module": "Physlib.Mathematics.ForMathlib.SesquilinearForm",
    "title": "Positive-definite sesquilinear forms",
    "doc": "A sesquilinear form is positive-definite when it is symmetric and strictly positive on nonzero\nvectors.\n\n## i. Overview\n\nMathlib has positive-semidefinite sesquilinear forms (`LinearMap.IsPosSemidef`) and\npositive-definite matrices (`Matrix.PosDef`), but no positive-definite sesquilinear forms.\n`LinearMap.IsPosDef` fills this gap with the shape of `LinearMap.IsPosSemidef`: a structure\nextending `LinearMap.IsSymm`. For a form `M →ₗ⋆[R] M →ₗ[R] R` symmetry is Hermiticity,\n`star (B x y) = B y x`. A positive-definite form is positive-semidefinite and nondegenerate, and\nin a basis it is positive-definite exactly when its matrix is.\n\n## ii. Key results\n\n- `LinearMap.IsPosDef` : a sesquilinear form is symmetric and `0 < B x x` for `x ≠ 0`.\n- `LinearMap.IsPosDef.isPosSemidef` : a positive-definite form is positive-semidefinite.\n- `LinearMap.IsPosDef.nondegenerate` : a positive-definite form is nondegenerate.\n- `LinearMap.isPosDef_iff_posDef_toMatrix` : a form is positive-definite exactly when its matrix in\n  a basis is.\n\n## iii. Table of contents\n\n- A. Positive-definite sesquilinear forms\n  - A.1. The definition\n  - A.2. Consequences over a preorder\n  - A.3. The matrix of a positive-definite form\n\n## iv. References\n\n- `LinearMap.IsPosSemidef` and `LinearMap.IsSymm`, in\n  `Mathlib/LinearAlgebra/SesquilinearForm/Basic.lean`;\n- `Matrix.PosDef`, in `Mathlib/LinearAlgebra/Matrix/PosDef.lean`.",
+   "copyright": "2026 Andrea Pari",
    "sections": [
     {
      "line": 54,
@@ -5043,13 +5098,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Mathematics/ForMathlib/Trigonometry/SinSq.lean",
    "module": "Physlib.Mathematics.ForMathlib.Trigonometry.SinSq",
    "title": "Strict bounds on the square of the sine",
    "doc": "This file may eventually be upstreamed to Mathlib.\n\n## i. Overview\n\nMathlib bounds the square of the sine by `sin x ^ 2 ≤ 1` for every real `x` (`Real.sin_sq_le_one`),\nwith equality exactly at the odd multiples of `π / 2`. This file records the strict form of that\nbound, `sin x ^ 2 < 1` on the open interval `|x| < π / 2`, where the cosine is positive and\n`1 - sin² x = cos² x`, together with its half-angle form `sin (θ / 2) ^ 2 < 1` for `|θ| < π`.\n\nPhyslib uses the half-angle form for the simple pendulum: the parameter `sin² (θ₀ / 2)` of the\nperiod formula lies in the domain `m < 1` of the complete elliptic integral `Real.completeEllipticK`\nfor every libration amplitude `|θ₀| < π`.\n\n## ii. Key results\n\n- `Real.sin_sq_lt_one` : `sin x ^ 2 < 1` for `|x| < π / 2`.\n- `Real.sin_half_sq_lt_one` : `sin (θ / 2) ^ 2 < 1` for `|θ| < π`.\n\n## iii. Table of contents\n\n- A. Strict bounds on the square of the sine\n\n## iv. References\n\n* Landau & Lifshitz, Mechanics, 3rd ed., §11, Problem 1 (the pendulum period, whose parameter is\n  `sin² (θ₀ / 2)`). [ref: landau_mechanics]",
+   "copyright": "2026 Aadarsh Agarwal",
    "sections": [
     {
      "line": 45,
@@ -5075,13 +5132,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Mathematics/ForMathlib/Trigonometry/Tanh.lean",
    "module": "Physlib.Mathematics.ForMathlib.Trigonometry.Tanh",
    "title": "Properties of Tanh",
    "doc": "We want to prove that the reflectionless potential is a Schwartz map.\nThis means proving that pointwise multiplication of a Schwartz map with tanh is a Schwartz map.\nThis means we need to prove that all derivatives of tanh are bounded and continuous, so that\nthe nth derivative of a function multiplied by tanh decays faster than any polynomial.\n\n## TODO\n- Add these to mathlib eventually\n- Fill in the proofs for the properties of tanh",
+   "copyright": "2025 Afiq Hatta",
    "sections": [],
    "declarations": [
     {
@@ -5206,13 +5265,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Mathematics/Groups/SO3/Basic.lean",
    "module": "Physlib.Mathematics.Groups.SO3.Basic",
    "title": "The group SO(3)",
    "doc": "",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -5393,13 +5454,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/Adjoint.lean",
    "module": "Physlib.Mathematics.Groups.SpecialUnitary.LieAlgebra.Adjoint",
    "title": "The adjoint representation of `SU(n)`",
    "doc": "The adjoint representation of `SU(n)` and its complexification, defined as `x ↦ g x g†`, and\nthe irreducibility of the latter.\n\n## i. Overview\n\nWe define the adjont representation of `SU(n)` on its Lie algebra `su(n)` and its complexification.\nThe adjoint is defined by conjugation, `x ↦ g x g†`. It preserves the bracket, and its kernel is\nthe centre of `SU(n)`, the scalar matrices (A.1, A.2). On the underlying matrices of the\ncomplexification the adjoint action of any unitary matrix, and in particular of any permutation of\nthe coordinates, is realised by an element of `SU(n)`; diagonal elements of `SU(n)` act on the\nentries by phases (A.3). The complex adjoint representation is irreducible for `2 ≤ n` (C.1),\nand hence, by Schur's lemma over an algebraically closed field, that every endomorphism of the\ncomplexification commuting with the adjoint action is a multiple of the identity (C.2).\n\n## ii. Key results\n\n- `SULieAlgebra.adjoint` : the adjoint representation on `su(n)`.\n- `SULieAlgebra.adjointℂ` : the adjoint representation on the complexification.\n- `SULieAlgebra.adjoint_eq_iff` : the adjoint representation is faithful modulo the centre.\n- `SULieAlgebra.isIrreducible_adjointℂ` : the complex adjoint representation is irreducible.\n- `SULieAlgebra.end_eq_smul_id_of_commute_adjointℂ` : Schur's lemma for the complex adjoint\n  representation.\n\n## iii. Table of contents\n\n- A. The adjoint representation\n  - A.1. The real adjoint representation\n  - A.2. The complex adjoint representation\n  - A.3. The action on the underlying matrices\n- B. The relation to single-entry elements\n- C. Irreducibility and Schur's lemma\n  - C.1. Irreducibility\n  - C.2. Schur's lemma\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 63,
@@ -5609,13 +5672,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/Basic.lean",
    "module": "Physlib.Mathematics.Groups.SpecialUnitary.LieAlgebra.Basic",
    "title": "The Lie algebra `su(n)` in the hermitian presentation",
    "doc": "## i. Overview\n\nIn physics, `su(n)` is described through generators `T^a`, `a = 1, …, n² - 1`, a basis of the\ntraceless hermitian `n × n` complex matrices, satisfying `[T^a, T^b] = i f_{abc} T^c` with real\nstructure constants `f_{abc}`. Here `i` is the imaginary unit and the repeated index `c` is summed.\nThis file makes the traceless hermitian matrices into a real Lie algebra with the bracket\n`⁅x, y⁆ = i (x y - y x)`, on which the unitary group acts by conjugation. The construction allows\nentries in any commutative `*`-ring `R` that is both a real and a complex `*`-algebra, as\n`SULieAlgebra n R`; the Lie algebra `su(n)` itself is `SULieAlgebra n ℂ`.\n\nSending `z ⊗ x` to the matrix `z x` identifies the complexification `ℂ ⊗[ℝ] su(n)` with the\ntraceless complex matrices. The inverse writes a traceless matrix `M` as `ℜ M + i ℑ M`, its real\nand imaginary parts `ℜ M` and `ℑ M` being traceless hermitian.\n\n## ii. Key results\n\n- `SULieAlgebra n R` : traceless hermitian `n × n` matrices over `R`, as a real Lie algebra.\n- `SULieAlgebra.conj` : the representation `x ↦ U x U†` of the unitary group.\n- `SULieAlgebra.conj_lie` : conjugation by a unitary matrix preserves the bracket.\n- `SULieAlgebra.Complexification n` : the complexification `ℂ ⊗[ℝ] su(n)`.\n- `SULieAlgebra.toMatrixℂ` : the underlying matrix of an element of the complexification.\n- `SULieAlgebra.toMatrixℂ_lie` : the matrix of a bracket is `i` times the commutator.\n- `SULieAlgebra.toMatrixℂ_injective`, `SULieAlgebra.range_toMatrixℂ` : the complexification is\n  the traceless complex matrices.\n- `SULieAlgebra.equivTraceKer` : the linear equivalence between the complexification and the\n  traceless complex matrices.\n- `SULieAlgebra.finrank_eq`, `SULieAlgebra.finrank_complexification` : `su(n)` and its\n  complexification have dimension `n² - 1`.\n\n## iii. Table of contents\n\n- A. Traceless hermitian matrices\n- B. The conjugation representation\n- C. The bracket\n- D. Conjugation preserves the bracket\n- E. The complexification\n  - E.1. The underlying matrix of the complexification\n  - E.2. The element with a given traceless matrix\n  - E.3. The injectivity and surjectivity of the matrix map\n  - E.4. Commuting with all elements of `su(n)`\n  - E.5. Linear equivalences\n  - E.6. Specific elements\n  - E.7. Spanning the complexification\n- F. The dimension\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 72,
@@ -5945,13 +6010,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/Contractions.lean",
    "module": "Physlib.Mathematics.Groups.SpecialUnitary.LieAlgebra.Contractions",
    "title": "The contraction of adjoint indices of `SU(n)`",
    "doc": "The trace form on `su(n)` and on its complexification, and the invariant bilinear forms.\n\n## i. Overview\n\nThe contraction `adjointContr` of two real adjoint indices is the trace form `x ⊗ y ↦ tr (x y)` on\n`su(n)`, which is real since `x` and `y` are hermitian, and invariant under the adjoint action by\nthe cyclicity of the trace. It is symmetric, invariant under the bracket, and positive definite\nsince `tr (x x) = tr (x x†)` vanishes only for `x = 0` (A.1).\n\nThe contraction `adjointℂContr` of two complex adjoint indices is its complexification. On the\nunderlying matrices it is the trace form `A ⊗ B ↦ tr (A B)`, and it is again symmetric, invariant\nunder the bracket and nondegenerate (A.2).\n\nEvery bilinear form on the complexification is the contraction against an endomorphism, which\ncommutes with the adjoint action if the form is invariant. By Schur's lemma such an endomorphism is\na scalar, so every `SU(n)`-invariant bilinear form on the complexification is a multiple of the\ncontraction (B).\n\n## ii. Key results\n\n- `SULieAlgebra.adjointContr` : the contraction of two real adjoint indices.\n- `SULieAlgebra.adjointℂContr` : the contraction of two complex adjoint indices.\n- `SULieAlgebra.adjointContr_self_pos` : the real contraction is positive definite.\n- `SULieAlgebra.adjointℂContr_nondegenerate` : the complex contraction is nondegenerate.\n- `SULieAlgebra.intertwiningMap_eq_smul_adjointℂContr` : every intertwiner `adj ⊗ adj → ℂ` is a\n  multiple of the complex contraction.\n\n## iii. Table of contents\n\n- A. The contraction of adjoint indices\n  - A.1. The real case\n  - A.2. The complex case\n- B. Invariant bilinear forms\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 62,
@@ -6193,13 +6260,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Adjoint.lean",
    "module": "Physlib.Mathematics.Groups.SpecialUnitary.LieAlgebra.GellMann.Adjoint",
    "title": "The adjoint action in the Gell-Mann basis",
    "doc": "The matrix of the adjoint action of `SU(n)` on `su(n)` in the generalized Gell-Mann basis.\n\n## i. Overview\n\nThe adjoint action `x ↦ g x g†` of `g ∈ SU(n)` on `su(n)` is, in the Gell-Mann basis, a real\nmatrix `R(g)` with entries `re tr (λ_i g λ_j g†) / 2`. As `g ↦ R(g)` is a monoid homomorphism and\nthe adjoint action preserves the contraction, `R(g)` is orthogonal (A). It acts on the Gell-Mann\nmatrices as `g λ_j g† = ∑ i, R_ij(g) λ_i`, and on the coordinates in the Gell-Mann basis by matrix\nmultiplication (B).\n\n## ii. Key results\n\n- `SULieAlgebra.adjointGellMannBasis` : the matrix of the adjoint action in the Gell-Mann basis.\n- `SULieAlgebra.adjointGellMannBasis_transpose_mul_self` : that matrix is orthogonal.\n- `SULieAlgebra.adjoint_gellMannMatrices` : the adjoint action on the Gell-Mann matrices.\n\n## iii. Table of contents\n\n- A. The matrix of the adjoint action\n- B. The adjoint action on Gell-Mann matrices and coordinates\n\n## iv. References\n\n* https://mathworld.wolfram.com/GeneralizedGell-MannMatrix.html",
+   "copyright": "2026 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 46,
@@ -6269,13 +6338,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/Basic.lean",
    "module": "Physlib.Mathematics.Groups.SpecialUnitary.LieAlgebra.GellMann.Basic",
    "title": "The generalized Gell-Mann matrices",
    "doc": "The generalized Gell-Mann matrices, orthogonality, the basis and the structure constants they form.\n\n## i. Overview\n\nThe generalized Gell-Mann matrices are the standard basis of `su(n)`, generalizing the Pauli\nmatrices (`n = 2`) and the Gell-Mann matrices (`n = 3`). They are labelled by `GellMannIndex n`,\nwhich has `n² - 1` elements, of three kinds (A):\n\n- for `p < q` the symmetric matrix `E_pq + E_qp`,\n- for `p < q` the antisymmetric matrix `-i E_pq + i E_qp`,\n- for `1 ≤ m ≤ n - 1` the diagonal matrix `√(2 / (m (m + 1))) (E_00 + ⋯ + E_(m-1)(m-1) - m E_mm)`.\n\nThey are orthogonal under the contraction, `adjointContr (λ_i ⊗ λ_j) = tr (λ_i λ_j) = 2 δ_ij`, and\nso linearly independent (B).\n\nAs there are as many as the dimension `n² - 1` of `su(n)`, they form a basis, whose coordinates\nare the contractions `adjointContr (λ_i ⊗ x) / 2`, and its base change is a basis of the\ncomplexification (C). In this basis the bracket defines the structure constants\n`[λ_a, λ_b] = 2 i f_abc λ_c`, which are totally antisymmetric (D).\n\n## ii. Key results\n\n- `SULieAlgebra.GellMannIndex` : the labels of the generalized Gell-Mann matrices.\n- `SULieAlgebra.gellMannMatrices` : the generalized Gell-Mann matrices.\n- `SULieAlgebra.adjointContr_gellMannMatrices` : the Gell-Mann matrices are orthogonal.\n- `SULieAlgebra.gellMannBasis` : the Gell-Mann basis of `su(n)`.\n- `SULieAlgebra.gellMannBasisℂ` : the Gell-Mann basis of the complexification of `su(n)`.\n- `SULieAlgebra.gellMannStructureConst` : the structure constants, `[λ_a, λ_b] = 2 i f_abc λ_c`.\n\n## iii. Table of contents\n\n- A. The indexing type of the Gell-Mann matrices\n  - A.1. The cardinality of `GellMannIndex`\n- B. The generalized Gell-Mann matrices\n  - B.1. Symmetry properties\n  - B.2. Explicit forms\n  - B.3. Orthogonality\n    - B.3.1. Between different types\n    - B.3.2. Between the same type\n    - B.3.3. The full orthogonality relation\n  - B.4. Linear independence\n- C. The Gell-Mann basis\n  - C.1. The basis of `su(n)`\n  - C.2. The basis of the complexification\n- D. The structure constants\n\n## iv. References\n\n* https://mathworld.wolfram.com/GeneralizedGell-MannMatrix.html",
+   "copyright": "2026 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 73,
@@ -6589,13 +6660,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/GellMann/SpecialCases.lean",
    "module": "Physlib.Mathematics.Groups.SpecialUnitary.LieAlgebra.GellMann.SpecialCases",
    "title": "The Pauli and Gell-Mann matrices",
    "doc": "The generalized Gell-Mann matrices in the special cases `n = 2` and `n = 3`.\n\n## i. Overview\n\nFor `n = 2` the generalized Gell-Mann matrices are the Pauli matrices `σ₁, σ₂, σ₃` (A), and for\n`n = 3` they are the Gell-Mann matrices `λ₁, …, λ₈` (B). In each case an equivalence of\n`GellMannIndex n` with `Fin (n² - 1)` puts the labels in the standard order.\n\n## ii. Key results\n\n- `SULieAlgebra.gellMannMatrices_two` : for `n = 2`, the Pauli matrices `σ₁, σ₂, σ₃`.\n- `SULieAlgebra.gellMannMatrices_three` : for `n = 3`, the Gell-Mann matrices `λ₁, …, λ₈`.\n\n## iii. Table of contents\n\n- A. The case `n = 2`\n- B. The case `n = 3`\n\n## iv. References\n\n* https://mathworld.wolfram.com/GeneralizedGell-MannMatrix.html",
+   "copyright": "2026 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 44,
@@ -6641,13 +6714,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Mathematics/Groups/SpecialUnitary/LieAlgebra/KillingForm.lean",
    "module": "Physlib.Mathematics.Groups.SpecialUnitary.LieAlgebra.KillingForm",
    "title": "The Killing form of `su(n)`",
    "doc": "The Killing form of `su(n)` and its complexification, and its relation to the adjoint contraction.\n\n## i. Overview\n\nThe Killing form `K(A, B) = tr (ad A ∘ ad B)` of the complexification is computed by transporting\n`ad A ∘ ad B` to the matrices, where it is `M ↦ -[A, [B, M]]`, the sign coming from the factor `i`\nin the bracket. Its trace is `-2n tr (A B)` (A).\n\nThe contractions `adjointℂContr` and `adjointContr` of adjoint indices are therefore `-1 / (2n)`\ntimes the Killing forms of the complexification and of `su(n)` (B).\n\n## ii. Key results\n\n- `SULieAlgebra.killingForm_eq_trace` : the Killing form of the complexification is `-2n` times\n  the trace form.\n- `SULieAlgebra.adjointℂContr_eq_killingForm` : the complex contraction is `-1 / (2n)` times the\n  Killing form.\n- `SULieAlgebra.adjointContr_eq_killingForm` : the real contraction is `-1 / (2n)` times the\n  Killing form.\n\n## iii. Table of contents\n\n- A. The Killing form as a trace\n- B. The contraction as the Killing form\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 52,
@@ -6685,13 +6760,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Mathematics/InnerProductSpace/Adjoint.lean",
    "module": "Physlib.Mathematics.InnerProductSpace.Adjoint",
    "title": "Adjoint of a linear map",
    "doc": "This module defines the adjoint of a linear map `f : E → F` where\n`E` and `F` carry the instances of `InnerProductSpace'` over a field `𝕜`.\n\nThis is a generalization of the usual adjoint defined on `InnerProductSpace` for\ncontinuous linear maps.",
+   "copyright": "2025 Tomas Skrivan",
    "sections": [],
    "declarations": [
     {
@@ -6848,13 +6925,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Mathematics/InnerProductSpace/Basic.lean",
    "module": "Physlib.Mathematics.InnerProductSpace.Basic",
    "title": "Inner product space",
    "doc": "In this module we define the type class `InnerProductSpace' 𝕜 E` which is a\ngeneralization of `InnerProductSpace 𝕜 E`, as it does not require the condition `‖x‖^2 = ⟪x,x⟫`\nbut instead the condition `∃ (c > 0) (d > 0), c • ‖x‖^2 ≤ ⟪x,x⟫ ≤ d • ‖x‖^2`.\nInstead `E` is equipped with a L₂ norm `‖x‖₂` which satisfies `‖x‖₂ = √⟪x,x⟫`.\n\nThis allows us to define the inner product space structure on product types `E × F` and\npi types `ι → E`, which would otherwise not be possible due to the use of max norm on these types.\n\nWe define the following maps:\n\n- `InnerProductSpace 𝕜 E → InnerProductSpace' 𝕜 E` which sets `‖x‖₂ = ‖x‖`.\n- `InnerProductSpace' 𝕜 E → InnerProductSpace 𝕜 (WithLp 2 E)` which uses the fact that the norm\n  defined on `WithLp 2 E` is L₂ norm.",
+   "copyright": "2025 Tomas Skrivan",
    "sections": [
     {
      "line": 115,
@@ -7236,13 +7315,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Mathematics/InnerProductSpace/Calculus.lean",
    "module": "Physlib.Mathematics.InnerProductSpace.Calculus",
    "title": "Generalization of calculus results to `InnerProductSpace'`",
    "doc": "",
+   "copyright": "2025 Tomas Skrivan",
    "sections": [],
    "declarations": [
     {
@@ -7287,13 +7368,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Mathematics/InnerProductSpace/Gaussian.lean",
    "module": "Physlib.Mathematics.InnerProductSpace.Gaussian",
    "title": "Gaussians in inner product spaces",
    "doc": "Gaussians and their products with real linear exponentials as Schwartz maps.\n\n## i. Overview\n\nIn this module we define Gaussians as Schwartz maps in general inner product spaces.\n\nThe most general Gaussian constructed is `exp (-2⁻¹ * ‖B⁻¹ (x - x₀)‖ ^ 2)` (mean `x₀`\nand covariance `BBᵀ`) as a Schwartz map `𝓢(E, 𝕜)`, where `B : D ≃L[ℝ] E` is a linear equivalence\nof inner product spaces. This is accomplished by first constructing the Gaussian\n`exp (-2⁻¹ * ‖x‖ ^ 2)` as a Schwartz map `𝓢(E, ℝ)` using explicit bounds on the derivatives\nof `‖x‖ ^ 2 = innerSL ℝ x x` and limiting properties of the real exponential,\nthen composing with an invertible affine transformation.\n\nThe Gaussians are left unnormalized since the appropriate condition will depend on context and\nwhether `E` is finite- or infinite-dimensional. For example, the normalization conditions when\ninterpreted as a probability density function vs. as a quantum state require different pre-factors.\n\nFor some relevant Gaussian integrals see\n`Mathlib/Analysis/SpecialFunctions/Gaussian/FourierTransform`.\n\n## ii. Key results\n\n- `gaussian 𝕜 B x₀` : Given a linear equivalence `B : D ≃L[ℝ] E` and mean `x₀ : E`,\n    the Gaussian `exp (-2⁻¹ * ‖B⁻¹ (x - x₀)‖ ^ 2)` centered on `x₀` as a Schwartz map `𝓢(E, 𝕜)`.\n- `gaussian₀ 𝕜 B` : Given a linear equivalence `B : D ≃L[ℝ] E` of inner product spaces,\n    the Gaussian `exp (-2⁻¹ * ‖B⁻¹ x‖ ^ 2)` centered on the origin as a Schwartz map `𝓢(E, 𝕜)`.\n- `stdGaussian E 𝕜` : The standard Gaussian `exp (-2⁻¹ * ‖x‖ ^ 2)` as a Schwartz map `𝓢(E, 𝕜)`.\n- `exp_mul_gaussian` : Completing the square for multiplication by `exp ⟪v, x⟫`.\n- `gaussianExpMul 𝕜 B x₀ v` : This product as a Schwartz map when `D` and `E` are complete.\n\n## iii. Table of contents\n\n- A. Standard, real-valued\n- B. General, RCLike-valued\n- C. Multiplication by a real linear exponential\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Gregory J. Loges",
    "sections": [
     {
      "line": 71,
@@ -7375,13 +7458,15 @@
     }
    ],
    "private": 2,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Mathematics/InnerProductSpace/Submodule.lean",
    "module": "Physlib.Mathematics.InnerProductSpace.Submodule",
    "title": "Submodules of `E × F`",
    "doc": "In this module we define `submoduleToLp` which reinterprets a submodule of `E × F`,\nwhere `E` and `F` are inner product spaces, as a submodule of `WithLp 2 (E × F)`.\nThis allows us to take advantage of the inner product structure, since otherwise\nby default `E × F` is given the sup norm.",
+   "copyright": "2026 Gregory J. Loges",
    "sections": [],
    "declarations": [
     {
@@ -7442,13 +7527,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Mathematics/KroneckerDelta/Basic.lean",
    "module": "Physlib.Mathematics.KroneckerDelta.Basic",
    "title": "Kronecker delta",
    "doc": "## i. Overview\n\nThis module defines the Kronecker delta `kroneckerDelta i j` (notation `δ[i,j]`), equal to\n`1` when `i = j` and `0` otherwise, together with its behaviour under scalar multiplication,\nsymmetrization, and finite sums. It also defines the `generalizedKroneckerDelta`, the\ndeterminant of a matrix of Kronecker deltas.\n\n## ii. Key results\n\n- `kroneckerDelta` : the Kronecker delta on a type with decidable equality.\n- `generalizedKroneckerDelta` : the determinant form `det (δ[μᵢ, νⱼ])`.\n\n## iii. Table of contents\n\n- A. The Kronecker delta\n- B. Conditions for smul to vanish\n- C. Symmetrization\n- D. Sums\n- E. The generalized Kronecker delta\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Gregory J. Loges",
    "sections": [
     {
      "line": 44,
@@ -7658,13 +7745,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Mathematics/KroneckerDelta/Contraction.lean",
    "module": "Physlib.Mathematics.KroneckerDelta.Contraction",
    "title": "Contraction identities for the generalized Kronecker delta",
    "doc": "## i. Overview\n\nThis file proves the combinatorial contraction facts for the `generalizedKroneckerDelta`\n(defined in `Physlib.Mathematics.KroneckerDelta.Basic`). Everything here is purely about the\nabstract generalized Kronecker delta on a finite type; no tensor or physics content appears.\nThese facts are the reusable backbone of the Levi-Civita epsilon-epsilon contraction\nidentities proved in `Physlib.Relativity.Tensors.LeviCivita.Contractions`.\n\nThe central fact is that summing a `generalizedKroneckerDelta` over one shared index lowers\nits rank by one and multiplies it by `card α - n` (`generalizedKroneckerDelta_sum_snoc`).\nIterating that fact gives the fully-, singly-, and doubly-free contractions over an arbitrary\nfinite index type, with the falling product `(card α - m) (card α - m - 1) ⋯` for `m` free pairs\n(`sum_generalizedKroneckerDelta_self_card`, `sum_generalizedKroneckerDelta_cons_card`,\n`sum_generalizedKroneckerDelta_cons₂_card`), and `k!` for the full contraction when the index type\nhas `k` elements (`sum_generalizedKroneckerDelta_self_eq_factorial`). Together with the product\nidentity\n`generalizedKroneckerDelta μ ν = generalizedKroneckerDelta μ id * generalizedKroneckerDelta ν id`\n(`generalizedKroneckerDelta_mul`), their `Fin 4` instances `sum_generalizedKroneckerDelta_self`,\n`sum_generalizedKroneckerDelta_cons`, and `sum_generalizedKroneckerDelta_cons₂` give the\ncontractions used for the Levi-Civita identities.\n\nThe proof of `generalizedKroneckerDelta_sum_snoc` borders the delta matrix with the appended\nindex (a Schur-complement reduction) and then applies the ring-general rank-one determinant\nupdate lemma `Matrix.det_add_rankOne`, which is proved here because Mathlib only provides the\nmatrix determinant lemma when `det A` is a unit and Kronecker-delta matrices are singular.\n\n## ii. Key results\n\n- `generalizedKroneckerDelta_sum_snoc` : summing over one shared index lowers the rank by one.\n- `sum_generalizedKroneckerDelta_self_card`, `sum_generalizedKroneckerDelta_cons_card`,\n  `sum_generalizedKroneckerDelta_cons₂_card` : the fully-, singly-, and doubly-free contractions\n  over any finite index type; `sum_generalizedKroneckerDelta_self_eq_factorial` : the full\n  contraction is `k!` when the type has `k` elements.\n- `sum_generalizedKroneckerDelta_mul_self`, `sum_generalizedKroneckerDelta_mul_cons`,\n  `sum_generalizedKroneckerDelta_mul_snoc`, `sum_generalizedKroneckerDelta_mul_cons₂` : the\n  fully-, singly-, and doubly-free symbol-level contractions over `Fin 4`.\n\n## iii. Table of contents\n\n- A. The rank-one determinant update\n- B. Contraction identities\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Robert Sneiderman",
    "sections": [
     {
      "line": 66,
@@ -7782,13 +7871,15 @@
     }
    ],
    "private": 3,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Mathematics/LeviCivita/Basic.lean",
    "module": "Physlib.Mathematics.LeviCivita.Basic",
    "title": "The Levi-Civita symbol in general dimension",
    "doc": "## i. Overview\n\nThis module defines the Levi-Civita symbol `leviCivitaSymbol` on a general finite index\ntype `ι`: for `g : ι → ι` it is the sign of `g` when `g` is a permutation and `0`\notherwise. Taking `ι = Fin d` gives the Levi-Civita symbol `ε_{i₁ ⋯ i_d}` in dimension\n`d`, normalized by `ε_{0 1 ⋯ (d-1)} = 1`.\n\nThe definition is the `generalizedKroneckerDelta` of `g` against the identity, i.e. the\ndeterminant of the matrix of Kronecker deltas `δ[g i, j]`, so the basic properties are\ninherited from the determinant: the value `1` on the identity, antisymmetry under\ntransposition of two indices, vanishing on repeated indices, and the sign of a\npermutation via `Matrix.det_permutation`.\n\n## ii. Key results\n\n- `leviCivitaSymbol` : the Levi-Civita symbol on a finite index type, valued in `ℤ`.\n- `leviCivitaSymbol_id` : the normalization `ε_{0 1 ⋯ (d-1)} = 1`.\n- `leviCivitaSymbol_perm` : on a permutation `σ` the symbol is the sign of `σ`.\n- `leviCivitaSymbol_comp_swap` : antisymmetry under transposition of two indices.\n- `leviCivitaSymbol_swap_comp` : antisymmetry under transposition of two index values.\n- `leviCivitaSymbol_eq_zero_iff` : the symbol vanishes exactly on repeated indices.\n- `leviCivitaSymbol_eq_prod_prod_Ioi` : on `Fin n` the symbol is the product over pairs\n  `i < j` of the sign of `g j - g i`.\n\n## iii. Table of contents\n\n- A. Definition\n- B. Value on permutations\n- C. Antisymmetry\n- D. Vanishing on repeated indices\n- E. Closed form on `Fin n`\n\n## iv. References\n\n* https://en.wikipedia.org/wiki/Levi-Civita_symbol. [ref: wiki_levi_civita_symbol]",
+   "copyright": "2026 Robert Sneiderman",
    "sections": [
     {
      "line": 55,
@@ -7894,13 +7985,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Mathematics/Modules/ConjModule.lean",
    "module": "Physlib.Mathematics.Modules.ConjModule",
    "title": "The conjugate module",
    "doc": "Over a commutative star-ring `k`, the *conjugate module* `ConjModule M` of a `k`-module `M` is the\nsame additive group with the scalar action twisted by conjugation: `r • v := star r • v`. It turns a\nsesquilinear pairing into a bilinear one: a map conjugate-linear in a slot `M` is linear in the slot\n`ConjModule M`.\n\n`ConjModule M` is a type synonym carrying a fresh `Module k` instance (`Module.compHom` along\n`starRingEnd k`), so the twisted action does not leak onto `M` and vice versa. The canonical\nconjugate-linear identity `conjEquiv : M ≃ₛₗ[starRingEnd k] ConjModule M`, the involution\n`ConjModule (ConjModule M) ≃ₗ[k] M`, and the transported basis `Basis.conj` are provided.\n\n## Key results\n\n- `ConjModule` : the conjugate-module type synonym, with its twisted `Module` instance.\n- `conjEquiv` : the canonical conjugate-linear equivalence `M ≃ₛₗ[starRingEnd k] ConjModule M`.\n- `ConjModule.involution` : the involution `ConjModule (ConjModule M) ≃ₗ[k] M`.\n- `Basis.conj` : a basis of `M` transported to a basis of `ConjModule M` (coordinates by `star`).",
+   "copyright": "2026 Andrea Pari",
    "sections": [],
    "declarations": [
     {
@@ -7977,13 +8070,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Mathematics/Modules/CrossProduct.lean",
    "module": "Physlib.Mathematics.Modules.CrossProduct",
    "title": "The cross product of three-dimensional vectors",
    "doc": "Identities for the cross product `⨯₃` on `Fin 3 → ℝ`, beyond those already in Mathlib, used in the\nformalisation of rigid-body dynamics.",
+   "copyright": "2026 Giuseppe Sorge",
    "sections": [],
    "declarations": [
     {
@@ -8012,13 +8107,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Mathematics/Modules/CrossProductMatrix.lean",
    "module": "Physlib.Mathematics.Modules.CrossProductMatrix",
    "title": "The hat map on three-dimensional vectors",
    "doc": "The hat map sends a vector `ω : Fin 3 → ℝ` to the skew-symmetric matrix `[ω]ₓ` characterised by\n`[ω]ₓ *ᵥ v = ω ⨯₃ v`. It realises the correspondence between `ℝ³` and the skew-symmetric `3 × 3`\nmatrices (the Lie algebra `𝖘𝖔(3)`), and underlies the angular velocity of a rigid body.\nThe vee map only selects matrix entries and is defined for arbitrary coefficient types,\nincluding operator-valued matrices.",
+   "copyright": "2026 Giuseppe Sorge",
    "sections": [],
    "declarations": [
     {
@@ -8071,13 +8168,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Mathematics/SpecialFunctions/EllipticIntegral.lean",
    "module": "Physlib.Mathematics.SpecialFunctions.EllipticIntegral",
    "title": "The complete elliptic integral of the first kind",
    "doc": "This file may eventually be upstreamed to Mathlib.\n\n## i. Overview\n\nLegendre's complete elliptic integral of the first kind is, in the parameter convention,\n\n`K(m) = ∫ φ in 0..π/2, (1 - m sin² φ) ^ (-1/2)`\n\n(Abramowitz & Stegun 17.3.1). The physics literature more often uses the modulus convention and\nwrites `K(k)`, as Landau & Lifshitz do, for what is here `completeEllipticK (k ^ 2)`; the two\nconventions are related by `m = k²`. Mathlib knows the Weierstrass elliptic function `℘`\n(`PeriodPair.weierstrassP`) but has no Legendre-form elliptic integrals; this file defines the\ncomplete integral of the first kind and develops its basic theory on the domain `m < 1`, where\nthe radicand `1 - m sin² φ` is positive and the integrand continuous.\n\nThe integral enters physics wherever a period or a potential is computed exactly rather than in a\nsmall-parameter expansion. Physlib's use of it so far is the simple pendulum: released from rest\nat amplitude `θ₀`, the pendulum has period `4 √(ℓ / g) K(sin² (θ₀ / 2))` (Landau & Lifshitz §11,\nProblem 1), the consumer being `Physlib.ClassicalMechanics.Pendulum.SimplePendulum.PeriodFormula`.\nMore broadly, the complete integrals of the first and second kind give the magnetic field of a\ncircular current loop and the potential of a uniformly charged ring, and the second kind, `E`,\ngives the arc length of an ellipse. This file defines `K` so that such results can be stated.\n\nFor `m ≥ 1` the definition still elaborates, but its value is not Legendre's. At `m = 1` the\nintegrand is `1 / cos φ`, which is not interval integrable on `[0, π/2]`, so the integral is `0`\nby `intervalIntegral.integral_undef`, whereas `K(1) = ∞`. For `m > 1` the radicand is negative on\n`(arcsin (1/√m), π/2]`, where the real power at exponent `-(1/2)` of a negative base vanishes\n(`Real.rpow_def_of_neg` supplies the factor `cos (-(1 / 2) * π) = 0`), so the Lean value is the\nfinite positive integral over `[0, arcsin (1/√m)]`; by the reciprocal-modulus transformation this\nis `K(1/m) / √m`, the real part of the complex Legendre integral (DLMF §19.7(ii)) — not proved\nhere. Every lemma of this file about a general parameter therefore carries its domain hypothesis\n`m < 1` explicitly.\n\n## ii. Key results\n\n- `completeEllipticK` : the complete elliptic integral of the first kind, as a function of\n  the parameter `m`.\n- `completeEllipticK_zero` : `K 0 = π / 2`.\n- `completeEllipticK_pos` : for `m < 1` the integral is positive.\n- `completeEllipticK_mono` : for `m₁ ≤ m₂ < 1`, `K m₁ ≤ K m₂`.\n- `completeEllipticK_strictMono` : for `m₁ < m₂ < 1`, `K m₁ < K m₂`.\n- `pi_div_two_le_completeEllipticK` : for `0 ≤ m < 1`, `π / 2 ≤ K m`.\n- `completeEllipticK_le` : for `0 ≤ m < 1`, `K m ≤ π / 2 * (1 - m) ^ (-1/2)`.\n- `continuousOn_completeEllipticK` : `K` is continuous on `(-∞, 1)`.\n- `continuousAt_completeEllipticK` : `K` is continuous at every `m < 1`.\n\n## iii. Table of contents\n\n- A. Definition and the integrand\n- B. Value at zero and positivity\n- C. Monotonicity and bounds in the parameter\n- D. Continuity on the domain\n\n## iv. References\n\n* M. Abramowitz, I. A. Stegun, Handbook of Mathematical Functions, §17.3 (the parameter convention,\n  17.3.1). [ref: abramowitz_stegun_1964]\n* NIST DLMF §19.7(ii) (the reciprocal-modulus transformation). [ref: nist_dlmf]\n* Landau & Lifshitz, Mechanics, 3rd ed., §11, Problem 1 (the pendulum period as `K(k)`, modulus\n  convention). [ref: landau_mechanics]",
+   "copyright": "2026 Aadarsh Agarwal",
    "sections": [
     {
      "line": 81,
@@ -8227,13 +8326,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Mathematics/SpecialFunctions/PhysHermite.lean",
    "module": "Physlib.Mathematics.SpecialFunctions.PhysHermite",
    "title": "Physicist's Hermite Polynomials",
    "doc": "This file may eventually be upstreamed to Mathlib.\n\n## i. Overview\n\nThe physicist's Hermite polynomials are a family of orthogonal polynomials defined by the recursion\n$H_0(x) = 1$ and $H_{n+1}(x) = 2x\\,H_n(x) - H_n'(x)$.\nThese are a rescaling of the so-called probabalist's Hermite polynomials (`Polynomial.hermite`)\nand, up to numerical factors, satisfy all of the same properties.\n\n## ii. Key results\n\n## iii. Table of contents\n\n- A. Recursive definition\n- B. Coefficients & degree\n- C. Iterated derivatives\n- D. As functions `ℝ → ℝ`\n  - D.1. Recursion\n  - D.2. Parity\n  - D.3. Differentiability\n  - D.4. Temperate growth\n- E. Relationship to Gaussians\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 53,
@@ -8699,13 +8800,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Mathematics/Tensors/Color.lean",
    "module": "Physlib.Mathematics.Tensors.Color",
    "title": "Colors of tensor indices",
    "doc": "A color gives the kind of an index of a tensor and whether the index is up or down.\n\n## i. Overview\n\nA color `⟨κ, v⟩` is a kind of index `κ : K` and a variance `v`, `up` or `down`. For Lorentz\ntensors there is one kind, `vec`. The vector index of `v^μ` has color `⟨vec, up⟩` and the\ncovector index of `w_μ` has color `⟨vec, down⟩`. Complex Lorentz tensors have three kinds, one\nfor each of the two types of Weyl spinor index and one for the vector index.\n\nA tensor has one color per index. A species (`Species.lean`) gives each color a space, and a\ntensor is an element of the tensor product of the spaces of its indices. Each index has a color\nrather than a space, so that whether two indices can be contracted is an equation of colors,\n`c j = (c i).dual`, which Lean checks by computation when the colors are known. When two colors\nare equal only through a proof, vectors are moved between their spaces by `S.cast`\n(`Species.lean`, §C).\n\nThe dual of `⟨κ, v⟩` is `⟨κ, v.dual⟩`, the same kind with the other variance. A contraction such\nas `v^μ w_μ` pairs an index of color `c` with an index of color `c.dual`. `Color K` is a structure\nrather than the product `K × Variance`, so that `c.dual` works as dot notation.\n\n## ii. Key results\n\n- `Variance` : the variance of an index, with `Variance.up`, `Variance.down` and\n  `Variance.dual`.\n- `Color` : a kind of index and a variance.\n- `Color.dual` : the dual color, and `Color.dual_dual` : `c.dual.dual = c` by `rfl`.\n\n## iii. Table of contents\n\n- A. Variance\n- B. Colors\n\n## iv. References\n\nThere are no known references for the material in this module.",
+   "copyright": "2026 Andrea Pari",
    "sections": [
     {
      "line": 55,
@@ -8775,13 +8878,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Mathematics/Tensors/Species.lean",
    "module": "Physlib.Mathematics.Tensors.Species",
    "title": "Tensor species",
    "doc": "A species gives each color of index a space, an action of the symmetry group and a basis. Its\ntensors are built from these.\n\n## i. Overview\n\nA species `S : Species k G K basisIdx` over `k = ℝ` or `ℂ` (`RCLike k`) gives each color `c` a\n`k`-vector space `S.V c`, a representation `S.rep c` of the group `G` on it, and a basis\n`S.basis c`. A tensor of `S` with index colors `c₁, …, cₙ` is an element of `V c₁ ⊗ ⋯ ⊗ V cₙ`,\nwith the action of `G` on each factor.\n\nFor real Lorentz tensors in `1 + d` dimensions, `k = ℝ`, `G` is the Lorentz group, and there is\none kind `vec`, whose basis labels are `basisIdx vec = Fin 1 ⊕ Fin d`. The space of `⟨vec, up⟩`\nis `Vector d`, the vectors with `1 + d` components, with the action `v^μ ↦ Λ^μ_ν v^ν` and the\nstandard basis `e_μ`. The space of `⟨vec, down⟩` is `CoVector d`, also with `1 + d` components,\nwith the action `w_μ ↦ w_ν (Λ⁻¹)^ν_μ` and the dual basis `e^μ`.\n\nEach lower space is given by the species, not built as `Module.Dual` of the upper space, so that\na covector is an element of `CoVector d` itself rather than a linear form on `Vector d`. The bases\nfix the contraction, which identifies `V c.dual` with the dual space of `V c`, and the condition on\nthe species makes this identification respect the group action:\n\n- The contraction `S.contr c : V c ⊗ V c.dual → k` multiplies the components of its two arguments\n  in the bases of `c` and `c.dual` and adds them up, `S.contr c (u ⊗ α) = ∑ μ, u^μ α_μ`. A basis\n  vector has one component equal to `1` and the others `0`, so `S.contr c (e_μ ⊗ e^ν) = δ_μ^ν` and\n  the two bases are dual. Every linear form on `V c` is `u ↦ u^μ α_μ` for exactly one `α`, with\n  `α_μ` its value on `e_μ`, so the contraction identifies `V c.dual` with the dual space of `V c`\n  (`isPerfPair_contr`).\n- The condition on a species (`invariant`) says that the contraction is invariant,\n  `(Λu)^μ (Λα)_μ = u^μ α_μ` for every `Λ : G`. Equivalently `u^μ (Λα)_μ = (Λ⁻¹u)^μ α_μ`\n  (`contr_tmul_rep`), which is how `G` acts on linear forms on `V c`. So the identification\n  respects the action, and `V c.dual` is the dual representation of `V c` (`dualEquiv`).\n\nA repeated index is contracted, so `u^μ α_μ` is `S.contr c (u ⊗ α)`.\n\n## ii. Key results\n\n- `Species` : the data of a tensor species and the condition on it, and\n  `Species.invariant_of_up` : the condition from the upper colors alone.\n- `Species.contr` : the contraction `u^μ α_μ`, with `Species.contr_tmul_eq_sum_basis` : its\n  formula in components, `Species.contr_basis` : the bases are dual, `Species.contr_tmul_symm` :\n  it is symmetric, and `Species.contr_invariant` : it is invariant.\n- `Species.isPerfPair_contr` : the contraction is a perfect pairing, `Species.ext_contr` : a\n  vector of `V c.dual` is determined by its contractions, and `Species.dualEquiv` : `V c.dual` is\n  the dual representation of `V c`.\n- `Species.cast` : a vector moved along an equality of colors, with `Species.cast_rep`,\n  `Species.basis_repr_cast`, `Species.contr_cast_tmul_cast` and\n  `Species.contr_cast_tmul_cast_symm` : this keeps the action, the components and the\n  contraction.\n\n## iii. Table of contents\n\n- A. Species\n- B. The contraction\n- C. Moving a vector along an equality of colors\n\n## iv. References\n\nThere are no known references for the material in this module.",
+   "copyright": "2026 Andrea Pari",
    "sections": [
     {
      "line": 83,
@@ -8959,13 +9064,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Mathematics/VariationalCalculus/Basic.lean",
    "module": "Physlib.Mathematics.VariationalCalculus.Basic",
    "title": "Fundamental lemma of the calculus of variations",
    "doc": "The key took in variational calculus is:\n```\n∀ h, ∫ x, f x * h x = 0 → f = 0\n```\nwhich allows use to go from reasoning about integrals to reasoning about functions.\n\n## Overview of variational calculus\n\nThe variational calculus API in Physlib is designed to match and formalize the physicists intuition\nof variational calculus. It is not designed to be a general API for variational calculus.\n\nWithin variational caclulus we are interested in function transformations, `F : (X → U) → (Y → V)`.\nIn physics this functional is often of the form `L : (Time → U) → Time → ℝ`,\nwhich represents the Lagrangian of a system. We will use this to explain the formalization\nwithin this API.\n\nThe action is nominally given by\n$$S[u] = \\int L(u, t) dt,$$\nhowever it is convenient to\nintroduce another function `φ` and define the action as\n$$S[u] = \\int φ(t) L(u, t) dt.$$\nIn the end we will set `φ := fun _ => 1`.\n\nWe now consider $$\\frac{\\partial}{\\partial s} S[u + s * \\delta u]$$ at `s = 0`,\nwhich is the variational derivative of `S` at `u` in the direction `δu`.\nThis is equal to\n$$\n\\int φ(t) * \\left. \\frac{\\partial}{\\partial s} L(u + s * \\delta u, t)\\right|_{s = 0}dt\n$$\nLet us denote the function\n$$\n\\delta u,\\, t \\mapsto \\left. \\frac{\\partial}{\\partial s} L(u + s * \\delta u, t)\\right|_{s = 0}\n$$ as `Lᵤ : (Time → U) → (Time → ℝ)`.\nThen the variational derivative is\n$$\\int φ (t) Lᵤ(δu, t) dt.$$\n\nIt may then be possible to find a function `Gᵤ : (Time → ℝ) → Time → U`\nsuch that\n$$\n\\int φ(t) Lᵤ(δu, t) dt = \\int \\langle Gᵤ(φ, t), δu(t)\\rangle dt\n$$\nThis is usually done by integration by parts.\n\nWe now set `φ := fun _ => 1` and get `grad u := Gᵤ (fun _ => 1)`, which is the\nvariational gradient at `u`. The Euler–Lagrange equations, for example, are then `grad u = 0`.\n\nIn our API, the relationship between\n- `Lᵤ` and `Gᵤ` is captured by the `HasVarAdjoint`.\n- `L` and `Gᵤ` by `HasVarAdjDeriv`.\n- `L` and `grad u` by `HasVarGradientAt`.\n\nIn practice we assume that `L` has a certain locality property\n`IsLocalizedFunctionTransform`, which allows us to work with functions\n`φ` and `δu` which have compact support.\n\nThis API assumes that `U` is an inner-product space. This can be considered as the full\nconfiguration space, or a local chart thereof.\n\n## References\n\n* https://leanprover.zulipchat.com/#narrow/channel/479953-Physlib/topic/Variational.20Calculus/with/529022834.",
+   "copyright": "2025 Tomas Skrivan",
    "sections": [],
    "declarations": [
     {
@@ -8986,13 +9093,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Mathematics/VariationalCalculus/HasVarAdjDeriv.lean",
    "module": "Physlib.Mathematics.VariationalCalculus.HasVarAdjDeriv",
    "title": "Variational adjoint derivative",
    "doc": "Variational adjoint derivative of `F` at `u` is a generalization of `(fderiv ℝ F u).adjoint`\nto function spaces. In particular, variational gradient is an analog of\n`gradient F u := (fderiv ℝ F u).adjoint 1`.\n\nThe definition of `HasVarAdjDerivAt` is constructed exactly such that we can prove composition\ntheorem saying\n```\n  HasVarAdjDerivAt F F' (G u)) → HasVarAdjDerivAt G G' u →\n    HasVarAdjDerivAt (F ∘ G) (G' ∘ F') u\n```\nThis theorem is the main tool to mechanistically compute variational gradient.",
+   "copyright": "2025 Tomas Skrivan",
    "sections": [],
    "declarations": [
     {
@@ -9261,13 +9370,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Mathematics/VariationalCalculus/HasVarAdjoint.lean",
    "module": "Physlib.Mathematics.VariationalCalculus.HasVarAdjoint",
    "title": "Variational adjoint",
    "doc": "Definition of adjoint of linear function between function spaces. It is inspired by the definition\nof distributional adjoint of linear maps between test functions as described here:\nhttps://en.wikipedia.org/wiki/Distribution_(mathematics) under 'Preliminaries: Transpose of a linear\noperator' but we require that the adjoint is function between test functions too.\n\nThe key results are:\n  - variational adjoint is unique on test functions\n  - variational adjoint of identity is identity, `HasVarAdjoint.id`\n  - variational adjoint of composition is composition of adjoint in reverse order,\n    `HasVarAdjoint.comp`\n  - variational adjoint of deriv is `- deriv`, `HasVarAdjoint.deriv`\n  - variational adjoint of algebraic operations is algebraic operation of adjoints,\n    `HasVarAdjoint.neg`, `HasVarAdjoint.add`, `HasVarAdjoint.sub`, `HasVarAdjoint.mul_left`,\n    `HasVarAdjoint.mul_right`, `HasVarAdjoint.smul_left`, `HasVarAdjoint.smul_right`",
+   "copyright": "2025 Tomas Skrivan",
    "sections": [],
    "declarations": [
     {
@@ -9496,13 +9607,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Mathematics/VariationalCalculus/HasVarGradient.lean",
    "module": "Physlib.Mathematics.VariationalCalculus.HasVarGradient",
    "title": "Variational gradient",
    "doc": "Definition of variational gradient that allows for formal treatment of variational calculus\nas used in physics textbooks.",
+   "copyright": "2025 Tomas Skrivan",
    "sections": [],
    "declarations": [
     {
@@ -9563,13 +9676,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Mathematics/VariationalCalculus/Interval.lean",
    "module": "Physlib.Mathematics.VariationalCalculus.Interval",
    "title": "Fundamental lemma on an interval",
    "doc": "The fundamental lemma of variational calculus on `[a, b]`.\n\n## i. Overview\n\nA covector-valued `f` continuous on `[a, b]` with zero integral against every smooth `ψ`\nsupported in `(a, b)` vanishes. This is the step from a stationary action to the Euler-Lagrange\nequations, see `LagrangianSystem.eulerLagrange_eq_zero_of_isCriticalPoint`.\n\n## ii. Key results\n\n- `eqOn_Icc_zero_of_integral_contDiff_smul_eq_zero`: the fundamental lemma on `[a, b]`\n\n## iii. Table of contents\n\n- A. The fundamental lemma\n\n## iv. References\n\n* V. I. Arnold, Mathematical Methods of Classical Mechanics. [ref: arnold_mechanics]\n* L. D. Landau and E. M. Lifshitz, Mechanics. [ref: landau_mechanics]",
+   "copyright": "2026 Michal Mogielnicki",
    "sections": [
     {
      "line": 41,
@@ -9587,13 +9702,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Mathematics/VariationalCalculus/IsLocalizedfunctionTransform.lean",
    "module": "Physlib.Mathematics.VariationalCalculus.IsLocalizedfunctionTransform",
    "title": "Localized function transforms",
    "doc": "In this module we define a locality property for function transforms, `F : (X → U) → (Y → V)`.\nThe locality property `IsLocalizedFunctionTransform`, says that for every compact\nset `K` in `Y` there exists a compact set `L` of `X`, such that if `φ` and `φ'` are equal on `L`,\nthen `F φ` and `F φ'` are equal on `K`.",
+   "copyright": "2025 Tomas Skrivan",
    "sections": [],
    "declarations": [
     {
@@ -9758,13 +9875,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Mathematics/VariationalCalculus/IsTestFunction.lean",
    "module": "Physlib.Mathematics.VariationalCalculus.IsTestFunction",
    "title": "Test functions",
    "doc": "Definition of test function, smooth and compactly supported function, and theorems about them.",
+   "copyright": "2025 Tomas Skrivan",
    "sections": [],
    "declarations": [
     {
@@ -10057,7 +10176,8 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   }
  ]
 }

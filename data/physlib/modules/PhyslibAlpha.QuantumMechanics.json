@@ -7,6 +7,7 @@
    "module": "PhyslibAlpha.QuantumMechanics.AngularMomentum.Addition",
    "title": "Addition of angular momenta",
    "doc": "Couples two angular momenta and identifies the total angular momentum on the\nClebsch–Gordan decomposition.\n\n## i. Overview\n\nTwo angular momentum representations on `V` and `W` give one on `V ⊗ W`, with total angular\nmomentum `J = J₁ ⊗ 1 + 1 ⊗ J₂`. The standard module `V(n)` carries the spin-`n/2`\nrepresentation with `Jz = H/2`, `J+ = E` and `J- = F`. For spins `j₁ = m/2` and `j₂ = n/2` the\ntotal `J²` acts on the `k`-th lowering string of `V(m) ⊗ V(n)` by `J(J + 1)` with\n`J = j₁ + j₂ - k`, and `Jz` acts on its `l`-th vector by `J - l`. As `k` runs from `0` to\n`min m n`, `J` runs from `j₁ + j₂` down to `|j₁ - j₂|`. The Clebsch–Gordan equivalence\n`cgEquiv` intertwines `Jz`, `J+` and `J-` of the coupled system with those of the spin-`J`\nrepresentations on the summands.\n\n## ii. Key results\n\n- `AngularMomentumRepresentation.tensor` is the coupled representation on `V ⊗ W`.\n- `AngularMomentumRepresentation.standard` is the spin-`n/2` representation on `V(n)`.\n- `Jsq_coupled_stringVec` and `Jz_coupled_stringVec` give the total `J²` and `Jz` on the\n  lowering strings.\n- `cgEquiv_Jz_coupled`, `cgEquiv_Jp_coupled` and `cgEquiv_Jm_coupled` give the intertwining\n  with the summands.\n\n## iii. Table of contents\n\n- A. Coupled angular momentum\n- B. The spin-`n/2` representation on `V(n)`\n- C. Total angular momentum on `V(m) ⊗ V(n)`\n  - C.1. Eigenvalues on the lowering strings\n  - C.2. Intertwining with the summands\n\n## iv. References\n\n- Mathlib, `Mathlib.Algebra.Lie.Sl2`.\n\n## A. Coupled angular momentum",
+   "copyright": "2026 Daniel Leonforte",
    "sections": [
     {
      "line": 86,
@@ -232,13 +233,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/AngularMomentum/Basic.lean",
    "module": "PhyslibAlpha.QuantumMechanics.AngularMomentum.Basic",
    "title": "Abstract angular momentum representations",
    "doc": "Packages three endomorphisms obeying the angular momentum commutation relations and\nconnects them to `sl₂`.\n\n## i. Overview\n\nThe commutation relations for three complex-linear angular momentum operators determine an\n`sl₂` triple with Cartan operator `2Jz` and raising and lowering operators `Jp` and `Jm`.\nThis lets Mathlib’s primitive-vector theory classify finite-dimensional irreducible\nrepresentations. The square `Jx² + Jy² + Jz²` commutes with the three operators and acts as\n`j(j+1)` on an irreducible representation of highest weight `2j`.\n\n## ii. Key results\n\n- `AngularMomentumRepresentation` records the angular momentum commutators.\n- `isSl2Triple` identifies `2Jz`, `Jp`, and `Jm` with an `sl₂` triple.\n- `Jsq_eq_smul` gives the Casimir eigenvalue on an irreducible representation.\n- `magneticBasisVec` defines the lowering-string vectors; no basis theorem is asserted here.\n\n## iii. Table of contents\n\n- A. Angular momentum and its `sl₂` triple\n  - A.1. Spin classification\n\n## iv. References\n\n- Mathlib, `Mathlib.Algebra.Lie.Sl2`.\n\n## A. Angular momentum and its `sl₂` triple",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 130,
@@ -576,13 +579,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanCircuit.lean",
    "module": "PhyslibAlpha.QuantumMechanics.AngularMomentum.ClebschGordanCircuit",
    "title": "A two-qubit circuit for the Clebsch–Gordan coefficients of two spins ½",
    "doc": "The change of basis from the product basis to the coupled basis of two spins `1/2` as a\ntwo-qubit circuit.\n\n## i. Overview\n\nA spin `1/2` is a qubit with `|↑⟩ = |0⟩` and `|↓⟩ = |1⟩`. The product basis of two spins is\nindexed by `Qubit × Qubit`, in the order `|00⟩, |01⟩, |10⟩, |11⟩ = |↑↑⟩, |↑↓⟩, |↓↑⟩, |↓↓⟩`; the\nfirst qubit is the first spin. The coupled basis is indexed by `Qubit × Qubit` as well, the\ncolumns `(0,0), (0,1), (1,0), (1,1)` being the triplet states `|1, 1⟩, |1, 0⟩, |1, -1⟩` and the\nsinglet `|0, 0⟩`. The matrix `cgMatrix` of the change of basis has the Clebsch–Gordan\ncoefficients `cgCoefficient 1 1 k l a b` of `ClebschGordanCoefficients` as entries, with\nCondon–Shortley phases.\n\nIt is the matrix of the circuit which first applies a Hadamard gate to the first qubit\ncontrolled by the second (`CH21`), then the CNOT gate with the first qubit as control:\n`CNOT * CH21 = cgMatrix` (`cnot_mul_CH21`). In particular `cgMatrix` is unitary\n(`cgMatrix_mem_unitaryGroup`).\n\n## ii. Key results\n\n- `cgMatrix`: the Clebsch–Gordan matrix of two spins `1/2`.\n- `CH21`: the controlled Hadamard gate with the second qubit as control.\n- `cnot_mul_CH21`: the circuit `CNOT * CH21` is the Clebsch–Gordan matrix.\n- `cgMatrix_mem_unitaryGroup`: the Clebsch–Gordan matrix is unitary.\n\n## iii. Table of contents\n\n- A. The Clebsch–Gordan matrix and the circuit\n\n## iv. References\n\n- The Clebsch–Gordan coefficients and their phase convention are those of\n  `ClebschGordanCoefficients`; the gates are those of `QuantumInfo.States.Pure.Qubit`.\n\n## A. The Clebsch–Gordan matrix and the circuit",
+   "copyright": "2026 Daniel Leonforte",
    "sections": [],
    "declarations": [
     {
@@ -643,13 +648,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanCoefficients.lean",
    "module": "PhyslibAlpha.QuantumMechanics.AngularMomentum.ClebschGordanCoefficients",
    "title": "Clebsch–Gordan coefficients",
    "doc": "The orthonormal coupled basis `|J, M⟩` of `V(m) ⊗ V(n)` over `ℝ` and the Clebsch–Gordan\ncoefficients `⟨j₁ m₁ j₂ m₂ | J M⟩` in the standard normalisation and phase convention.\n\n## i. Overview\n\nThe contravariant forms on `V(m)` and `V(n)` combine to a symmetric bilinear form on\n`V(m) ⊗ V(n)` for which the diagonal raising and lowering operators are adjoint. For the\nlowering strings `f^l w_k` of the highest-weight vectors `w_k` this gives\n\n`⟨f^a w_k, f^b w_{k'}⟩ = δ_{kk'} δ_{ab} · a! N!/(N - a)! · ⟨w_k, w_k⟩`,  `N = m + n - 2k`,\n\nand `⟨w_k, w_k⟩ > 0`. Normalising gives the orthonormal coupled basis\n`|J, M⟩ = coupledVec m n k l` with `J = (m + n)/2 - k`, `M = J - l`, on which `J₊, J₋`\nact by the textbook formulas. The Clebsch–Gordan coefficient is the inner product\n\n`⟨j₁ m₁ j₂ m₂ | J M⟩ = cgCoefficient m n k l a b = ⟨u_a ⊗ u_b, |J, M⟩⟩`\n\nwith `j₁ = m/2`, `m₁ = j₁ - a`, `j₂ = n/2`, `m₂ = j₂ - b`. This file proves:\n\n- the coupled states are orthonormal and satisfy the ladder relations of `|J, M⟩`;\n- `⟨j₁ m₁ j₂ m₂ | J M⟩ = 0` unless `m₁ + m₂ = M`;\n- the Condon–Shortley phase convention `⟨j₁ j₁ j₂ (J - j₁) | J J⟩ > 0`;\n- every coupled state is `Σ ⟨j₁ m₁ j₂ m₂ | J M⟩ |j₁ m₁⟩ ⊗ |j₂ m₂⟩`, and the orthogonality\n  relation `Σ_{m₁ m₂} ⟨j₁ m₁ j₂ m₂ | J M⟩ ⟨j₁ m₁ j₂ m₂ | J' M'⟩ = δ_{JJ'} δ_{MM'}`;\n- the values `⟨j₁ j₁ j₂ j₂ | j₁+j₂, j₁+j₂⟩ = 1`, and for two spins `1/2` the singlet\n  `⟨½ ½ ½ -½ | 0 0⟩ = 1/√2`, `⟨½ -½ ½ ½ | 0 0⟩ = -1/√2` and the triplet\n  `⟨½ ½ ½ -½ | 1 0⟩ = ⟨½ -½ ½ ½ | 1 0⟩ = 1/√2`, `⟨½ -½ ½ -½ | 1 -1⟩ = 1`.\n\nThese properties determine the Clebsch–Gordan coefficients uniquely, so they agree with the\ntabulated values. A closed formula (Racah's formula) is not proved here.\n\n## ii. Key results\n\n- `tensorForm`, `tensorForm_tensorF` (contravariance) and `tensorForm_stringVec`.\n- `hwNormSq_pos`, `coupledVec`, `tensorForm_coupledVec` (orthonormality),\n  `tensorF_coupledVec`, `tensorE_coupledVec_succ` (ladder relations).\n- `cgCoefficient`, `cgCoefficient_eq_zero_of_ne`, `cgCoefficient_top_pos`,\n  `coupledVec_eq_sum`, `sum_cgCoefficient_mul`.\n- `cgCoefficient_stretched`, `cgCoefficient_singlet_up`, `cgCoefficient_singlet_down`,\n  `cgCoefficient_triplet_zero_up`, `cgCoefficient_triplet_zero_down`,\n  `cgCoefficient_triplet_minus`.\n\n## iii. Table of contents\n\n- A. The form on the tensor product\n- B. Inner products of the lowering strings\n- C. The orthonormal coupled basis\n- D. Clebsch–Gordan coefficients\n  - D.1. Definition, weight rule and phase\n  - D.2. Expansion and orthogonality\n  - D.3. Values\n\n## iv. References\n\n- J. J. Sakurai and J. Napolitano, *Modern Quantum Mechanics*, 3rd ed., Cambridge University\n  Press (2020), section 3.8.\n\n## A. The form on the tensor product",
+   "copyright": "2026 Daniel Leonforte",
    "sections": [
     {
      "line": 143,
@@ -1035,13 +1042,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/AngularMomentum/ClebschGordanFormula.lean",
    "module": "PhyslibAlpha.QuantumMechanics.AngularMomentum.ClebschGordanFormula",
    "title": "Closed formulas for the Clebsch–Gordan coefficients",
    "doc": "The second orthogonality relation, an explicit single-sum formula and Racah's formula for\n`⟨j₁ m₁ j₂ m₂ | J M⟩`.\n\n## i. Overview\n\nThe coupled states `|J, M⟩` form an orthonormal basis of `V(m) ⊗ V(n)`, so every vector is\n`Σ_{J M} ⟨J M | x⟩ |J M⟩`. Applied to product states this gives the second orthogonality relation\n`Σ_{J M} ⟨j₁ m₁ j₂ m₂ | J M⟩ ⟨j₁ m₁' j₂ m₂' | J M⟩ = δ_{m₁ m₁'} δ_{m₂ m₂'}`.\n\nFor the closed formula, two computations are combined.\n\n- The squared norm of the highest-weight vector `w_k` has the closed form\n  `⟨w_k, w_k⟩ = k! m! n! (m - k)! (n - k)! (m + n - k + 1)! / (m + n - 2k + 1)!`.\n  It reduces to the factorial identity\n  `Σ_a C(k, a) (p + a)! (k + s - a)! · (p + s + 1)! = (p + k + s + 1)! p! s!`, proved by induction\n  on `k` with Pascal's rule.\n- The lowering operator on `V(m) ⊗ V(n)` is `f ⊗ 1 + 1 ⊗ f` with commuting summands, so the\n  binomial theorem gives `f^l (v_a ⊗ v_b) = Σ_i C(l, i) v_{a+i} ⊗ v_{b+l-i}`.\n\nTogether with the coefficients of `w_k` from `TensorHighestWeight` this yields, with\n`J = (m + n)/2 - k`, `M = J - l`, `m₁ = m/2 - α`, `m₂ = n/2 - β` and `α + β = k + l`, a formula\n`⟨j₁ m₁ j₂ m₂ | J M⟩ = S · √(…)` with the single alternating sum\n`S = Σ_a (-1)^a C(k, a) C(l, α - a) (n - k + a)! (m - a)!`.\n\nRacah's formula has a different alternating sum. After dividing out factorials both sums become\nbinomial sums,\n`L(k, α, s) = Σ_a (-1)^a C(k, a) C(r + k - a, α - a) C(p + a, s + a)` and\n`R(k, α, s) = Σ_z (-1)^z C(k, z) C(r, α - z) C(p, s + z)`,\nwith lower indices in `ℤ` (`C(n, j) = 0` for `j < 0`). Pascal's rule shows that both satisfy\n`X(k + 1, α, s) = X(k, α, s) - X(k, α - 1, s + 1)`, and they agree for `k = 0`, so `L = R`.\nThis proves Racah's formula.\n\nFor `n = 1`, coupling a spin `j₁ = m/2` with a spin `½`, the single sum has at most two terms and\nthe closed formula gives the four coefficients in square-root form, with `J = j₁ ± ½`.\n\n## ii. Key results\n\n- `eq_sum_coupledVec` and `sum_cgCoefficient_mul_cgCoefficient`: completeness of the coupled basis\n  and the second orthogonality relation.\n- `sum_choose_mul_factorial` and `hwNormSq_closed`: the closed norm of `w_k`.\n- `tensorF_pow_tmul_vNat`: the explicit lowering.\n- `cgCoefficient_eq_cgSum` and `cgCoefficient_closed`: the closed single-sum formula.\n- `racahL_eq_racahR` and `cgCoefficient_racah`: Racah's formula.\n- `cgCoefficient_add_half_up`, `cgCoefficient_add_half_down`, `cgCoefficient_sub_half_up`,\n  `cgCoefficient_sub_half_down`: the coefficients for coupling with a spin `½`.\n\n## iii. Table of contents\n\n- A. Completeness and the second orthogonality relation\n- B. The norm of the highest-weight vectors\n  - B.1. A factorial identity\n  - B.2. The closed norm\n- C. The lowering strings in the product basis\n- D. The closed formula\n- E. Racah's formula\n  - E.1. Binomial coefficients with an integer lower index\n  - E.2. Two binomial sums with the same recursion\n  - E.3. Racah's formula\n- F. Coupling with a spin ½\n\n## iv. References\n\n- G. Racah, *Theory of complex spectra. II*, Phys. Rev. 62, 438 (1942).\n- J. J. Sakurai and J. Napolitano, *Modern Quantum Mechanics*, 3rd ed., Cambridge University\n  Press (2020), section 3.8.\n- D. A. Varshalovich, A. N. Moskalev, V. K. Khersonskii, *Quantum Theory of Angular Momentum:\n  Irreducible Tensors, Spherical Harmonics, Vector Coupling Coefficients, 3nj Symbols*, World\n  Scientific (1988), Table 8.1, p. 271.\n\n## A. Completeness and the second orthogonality relation",
+   "copyright": "2026 Daniel Leonforte",
    "sections": [
     {
      "line": 176,
@@ -1383,13 +1392,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/AngularMomentum/CouplingSchemes.lean",
    "module": "PhyslibAlpha.QuantumMechanics.AngularMomentum.CouplingSchemes",
    "title": "The two coupling schemes of three angular momenta",
    "doc": "The irreducible components of `V(m) ⊗ V(n)` as isometric embeddings, the triple tensor product\n`V(a) ⊗ V(b) ⊗ V(c)` with its Casimir operator, and the two ways of coupling three angular\nmomenta.\n\n## i. Overview\n\nThree angular momenta `j₁ = a/2`, `j₂ = b/2`, `j₃ = c/2` live on\n`V(a) ⊗ V(b) ⊗ V(c)`. A state of total angular momentum `J` and projection `M` can be built in\ntwo ways:\n\n- `|(j₁ j₂) j₁₂, j₃; J M⟩`: first couple `j₁` and `j₂` to `j₁₂`, then `j₁₂` and `j₃` to `J`;\n- `|j₁, (j₂ j₃) j₂₃; J M⟩`: first couple `j₂` and `j₃` to `j₂₃`, then `j₁` and `j₂₃` to `J`.\n\nBoth are built from the Clebsch–Gordan states `coupledVec` of `ClebschGordanCoefficients`. The\n`k`-th irreducible component of `V(m) ⊗ V(n)` is the image of the isometric embedding\n`embed : V(m + n - 2k) → V(m) ⊗ V(n)`, `u_l ↦ |J, J - l⟩`, which intertwines `E`, `F` and `H`\n(it is a rescaled inverse of `cgEquiv`). The first scheme is `embed ⊗ 1` applied to the coupled\nstates of `V(a + b - 2k₁) ⊗ V(c)`, the second is `1 ⊗ embed` followed by the associator.\n\nThe recoupling coefficients between the two schemes and the 6j symbols are in `SixJ`.\n\n## ii. Key results\n\n- `embed`, `tensorForm_embed`, `tensorF_embed`: the isometric intertwining embeddings.\n- `Triple`, `tripleForm`, `tripleE`, `tripleF`, `tripleH`: the triple tensor product with its\n  contravariant form and the total `E`, `F`, `H`.\n- `tensorCas`, `tripleCas`: the Casimir operators.\n- `stateA`, `stateB`: the two coupling schemes.\n\n## iii. Table of contents\n\n- A. The irreducible components as isometric embeddings\n- B. The triple tensor product\n- C. The Casimir operator\n- D. The two coupling schemes\n\n## iv. References\n\n- A. R. Edmonds, *Angular Momentum in Quantum Mechanics*, Princeton University Press (1957),\n  chapter 6.\n\n## A. The irreducible components as isometric embeddings",
+   "copyright": "2026 Daniel Leonforte",
    "sections": [
     {
      "line": 164,
@@ -1767,13 +1778,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/AngularMomentum/MultipoleSumRule.lean",
    "module": "PhyslibAlpha.QuantumMechanics.AngularMomentum.MultipoleSumRule",
    "title": "A sum rule for multipole transitions",
    "doc": "`Σ_{μ M_f} ⟨J_i M_i λ μ | J_f M_f⟩² = (2J_f + 1) / (2J_i + 1)`, independent of `M_i`.\n\n## i. Overview\n\nA multipole operator `T^λ_μ` of rank `λ` connects an initial level `J_i` with a final level\n`J_f`. By the Wigner–Eckart theorem its matrix elements are\n`⟨J_f M_f | T^λ_μ | J_i M_i⟩ = ⟨J_i M_i λ μ | J_f M_f⟩ · ⟨J_f ‖ T^λ ‖ J_i⟩ / √(2J_f + 1)`,\nso the total transition rate out of the substate `|J_i M_i⟩`, summed over all final substates and\nall components `μ`, is proportional to\n\n`Σ_{μ M_f} ⟨J_i M_i λ μ | J_f M_f⟩² = (2J_f + 1) / (2J_i + 1)`.\n\nThe right-hand side does not depend on `M_i`: an unpolarised and a fully polarised initial state\ndecay at the same total rate, and `|⟨J_f ‖ T^λ ‖ J_i⟩|² / (2J_i + 1)` is the rate of every\nsubstate.\n\nThe sum runs over the first and the third column of the Clebsch–Gordan coefficient, which the\northogonality relations of `ClebschGordanCoefficients` do not cover. It follows from the cyclic\nsymmetry of the 3j symbols (`threeJR_cycle_columns`), which moves `J_i` into the third column,\nand the orthogonality of the 3j symbols.\n\n## ii. Key results\n\n- `wigner3j_cycle`: the cyclic symmetry in the parameters of `ClebschGordanCoefficients`.\n- `sum_sq_cgCoefficient_initial`: the sum rule.\n\n## iii. Table of contents\n\n- A. The cyclic symmetry\n- B. The sum rule\n\n## iv. References\n\n- A. Bohr and B. R. Mottelson, *Nuclear Structure*, Vol. I, Benjamin (1969), appendix 1A.\n- A. R. Edmonds, *Angular Momentum in Quantum Mechanics*, Princeton University Press (1957),\n  section 5.4.\n\n## A. The cyclic symmetry",
+   "copyright": "2026 Daniel Leonforte",
    "sections": [
     {
      "line": 80,
@@ -1799,13 +1812,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/AngularMomentum/NineJ.lean",
    "module": "PhyslibAlpha.QuantumMechanics.AngularMomentum.NineJ",
    "title": "The 9j symbols",
    "doc": "The 9j symbols as sums over products of three 6j symbols, and their invariance under\ntransposition.\n\n## i. Overview\n\nIn doubled units, the 9j symbol\n`{j₁₁ j₁₂ j₁₃; j₂₁ j₂₂ j₂₃; j₃₁ j₃₂ j₃₃}` is\n`Σ_J (-1)^J (J + 1) {j₁₁ j₂₁ j₃₁; j₃₂ j₃₃ J} {j₁₂ j₂₂ j₃₂; j₂₁ J j₂₃} {j₁₃ j₂₃ j₃₃; J j₁₁ j₁₂}`\n(`nineJSym`), with the 6j symbols `sixJSym` of `SixJSymmetry`. The first 6j symbol contains the\ntriad `(j₁₁ j₃₃ J)`, so it vanishes for `J > j₁₁ + j₃₃` (`sixJSym_eq_zero_of_lt`) and the sum is\nover `J ≤ j₁₁ + j₃₃`. Extending the range does not change it (`nineJSym_eq_sum`).\n\nTransposition of the 3 × 3 array fixes `j₁₁` and `j₃₃`, and hence the range of summation. It\nexchanges the first and third 6j symbols and maps the second to itself, up to the tetrahedral\nsymmetries `sixJSym_swap₁₂`, `sixJSym_swap₂₃`, `sixJSym_flip₁₂`. So the 9j symbol is invariant\nunder transposition summand by summand (`nineJSym_transpose`).\n\n## ii. Key results\n\n- `nineJSym`: the 9j symbol as a sum over products of three 6j symbols.\n- `nineJSym_eq_sum`: the sum may be taken over any larger range.\n- `nineJSym_transpose`: invariance under transposition.\n\n## iii. Table of contents\n\n- A. The 9j symbol\n- B. Invariance under transposition\n\n## iv. References\n\n- NIST Digital Library of Mathematical Functions, §34.6, https://dlmf.nist.gov/34.6, equation\n  34.6.2, and §34.7, https://dlmf.nist.gov/34.7.\n- D. A. Varshalovich, A. N. Moskalev, V. K. Khersonskii, *Quantum Theory of Angular Momentum*,\n  World Scientific (1988), chapter 10.\n\n## A. The 9j symbol",
+   "copyright": "2026 Daniel Leonforte",
    "sections": [
     {
      "line": 88,
@@ -1847,13 +1862,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/AngularMomentum/NormalizedBasis.lean",
    "module": "PhyslibAlpha.QuantumMechanics.AngularMomentum.NormalizedBasis",
    "title": "The invariant form and the normalised basis of the standard modules",
    "doc": "The contravariant form on `V(n)` and the orthonormal basis `|j, m⟩` with the textbook matrix\nelements of `J₊`, `J₋` and `Jz`.\n\n## i. Overview\n\nThe basis `v_a = f^a v_0` of `V(n)` used throughout is not normalised. There is a symmetric\nbilinear form on `V(n)`, unique up to a scalar, for which the raising and lowering operators are\nadjoint and the weight operator is symmetric:\n`⟨e x, y⟩ = ⟨x, f y⟩`, `⟨h x, y⟩ = ⟨x, h y⟩`. In the basis `v_a` it is diagonal with\n`⟨v_a, v_a⟩ = a! · n!/(n - a)!`.\n\nOver `ℝ` the rescaled vectors `u_a = v_a / √⟨v_a, v_a⟩` are orthonormal. With `j = n/2` and\n`m = j - a` they are the states `|j, m⟩`, and the operators act by the textbook formulas\n(Condon–Shortley phases):\n\n- `J₊ |j, m⟩ = √((j - m)(j + m + 1)) |j, m + 1⟩`, i.e. `e u_{a+1} = √((a+1)(n-a)) u_a`;\n- `J₋ |j, m⟩ = √((j + m)(j - m + 1)) |j, m - 1⟩`, i.e. `f u_a = √((a+1)(n-a)) u_{a+1}`;\n- `2Jz |j, m⟩ = 2m |j, m⟩`, i.e. `h u_a = (n - 2a) u_a`.\n\n## ii. Key results\n\n- `normSq` is `⟨v_a, v_a⟩` and `invForm` the contravariant form.\n- `invForm_comp_ρE` and `invForm_comp_ρH` express that `e, f` are adjoint and `h` is symmetric.\n- `normVec` is the normalised basis over `ℝ`; `invForm_normVec` is orthonormality.\n- `ρE_normVec_succ`, `ρF_normVec` and `ρH_normVec` are the textbook matrix elements.\n\n## iii. Table of contents\n\n- A. The contravariant form\n  - A.1. Squared norms\n  - A.2. Definition and values\n  - A.3. Contravariance\n- B. The normalised basis over ℝ\n\n## iv. References\n\n- J. J. Sakurai and J. Napolitano, *Modern Quantum Mechanics*, 3rd ed., Cambridge University\n  Press (2020), section 3.5.\n\n## A. The contravariant form\n\n### A.1. Squared norms",
+   "copyright": "2026 Daniel Leonforte",
    "sections": [
     {
      "line": 80,
@@ -1999,13 +2016,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/AngularMomentum/ProjectionTheorem.lean",
    "module": "PhyslibAlpha.QuantumMechanics.AngularMomentum.ProjectionTheorem",
    "title": "The projection theorem for vector operators",
    "doc": "Tensor operators are unique up to a scalar, and every vector operator on an irreducible\nmultiplet is a multiple of the angular momentum itself.\n\n## i. Overview\n\nBy the Wigner–Eckart theorem the tensor operators of rank `k` from `V(m)` to `V(p)` form a space\nof dimension at most one. So if one nonzero tensor operator is known, every other one is a scalar\nmultiple of it.\n\nFor rank `k = 2` (vector operators, `κ = 1` in physics notation) and `m = p = n` there is a\ncanonical nonzero tensor operator: the `sl₂` action itself, `v_0 ↦ e`, `v_1 ↦ -h`, `v_2 ↦ -2f`,\ncorresponding to the spherical components of the angular momentum `J`. Hence every vector\noperator `T` on the multiplet `V(n)` satisfies `T = c • J` for a single scalar `c`. This is the\nprojection theorem behind the Landé `g`-factor; the usual formula\n`c = ⟨J · V⟩ / (j(j+1))` for the scalar is not part of this file.\n\n## ii. Key results\n\n- `IsTensorIntertwiner.exists_eq_smul_of_ne_zero` and `IsTensorOperator.exists_eq_smul_of_ne_zero`\n  give uniqueness up to a scalar.\n- `sl2Operator` is the `sl₂` action as a rank-2 tensor operator, see `isTensorOperator_sl2Operator`.\n- `IsTensorOperator.exists_eq_smul_sl2Operator` is the projection theorem.\n\n## iii. Table of contents\n\n- A. Uniqueness up to a scalar\n- B. The angular momentum as a vector operator\n  - B.1. Definition and values\n  - B.2. Commutation relations\n- C. The projection theorem\n\n## iv. References\n\n- J. J. Sakurai and J. Napolitano, *Modern Quantum Mechanics*, 3rd ed., Cambridge University\n  Press (2020), section 3.11.\n\n## A. Uniqueness up to a scalar",
+   "copyright": "2026 Daniel Leonforte",
    "sections": [
     {
      "line": 101,
@@ -2175,13 +2194,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/AngularMomentum/SelectionRules.lean",
    "module": "PhyslibAlpha.QuantumMechanics.AngularMomentum.SelectionRules",
    "title": "Selection rules for multipole transitions",
    "doc": "The triangle rule for tensor operators in the usual inequality form, and the angular momentum\nand parity selection rules for electromagnetic multipole transitions.\n\n## i. Overview\n\nBy the Wigner–Eckart theorem a nonzero tensor operator of rank `k` from `V(m)` to `V(p)` requires\n`p = k + m - 2j` for some `j ≤ min k m`. In doubled units (`k = 2λ`, `m = 2Iᵢ`, `p = 2I_f`) this is\nthe triangle rule `|Iᵢ - I_f| ≤ λ ≤ Iᵢ + I_f` together with `Iᵢ + I_f + λ ∈ ℕ`, written here as\n`TriangleRule k m p`.\n\nFor an electromagnetic multipole transition of order `λ` the photon carries angular momentum\n`λ ≥ 1`, and the transition operator has parity `(-1)^λ` (electric, `Eλ`) or `(-1)^(λ+1)`\n(magnetic, `Mλ`). These two facts are standard input and are not derived here; the parity\ncondition is the elementary statement `parity_eq_of_ne_zero`. `IsAllowedMultipole` collects the\nthree conditions. As an example, the file checks the three branches that depopulate the\n`16⁺` isomer of `¹⁷⁸Hf` (`E3` to `13⁻`, `M4` to `12⁻`, `E5` to `11⁻`) and the `E1` decay of the\n`8⁻` isomer, and shows that each is the lowest allowed multipole. The hindrance of these\ntransitions by the `K` quantum number is a separate effect and not a selection rule.\n\n## ii. Key results\n\n- `TriangleRule` and `exists_eq_iff_triangleRule` translate the Clebsch–Gordan condition.\n- `IsTensorOperator.triangleRule` is the triangle rule for nonzero tensor operators.\n- `parity_eq_of_ne_zero` is the parity rule.\n- `IsAllowedMultipole` combines the rules; `hf178_primary_branches_allowed` and the lemmas after\n  it are worked examples.\n\n## iii. Table of contents\n\n- A. The triangle rule\n- B. Parity and multipole transitions\n- C. Example: the decay of the ¹⁷⁸ᵐ²Hf isomer\n\n## iv. References\n\n- J. M. Blatt and V. F. Weisskopf, *Theoretical Nuclear Physics*, Wiley (1952), chapter XII.\n- ENSDF, ¹⁷⁸Hf adopted levels and gammas, E. Achterberg, O. A. Capurro, G. V. Marti,\n  Nucl. Data Sheets 110, 1473 (2009).\n\n## A. The triangle rule",
+   "copyright": "2026 Daniel Leonforte",
    "sections": [
     {
      "line": 96,
@@ -2307,13 +2328,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJ.lean",
    "module": "PhyslibAlpha.QuantumMechanics.AngularMomentum.SixJ",
    "title": "Recoupling coefficients and the 6j symbols",
    "doc": "The recoupling coefficients between the two coupling schemes of `j₁ ⊗ j₂ ⊗ j₃` and the\n6j symbols, with their independence of `M` and their orthogonality.\n\n## i. Overview\n\nThe two coupling schemes `stateA` and `stateB` of `CouplingSchemes` consist of eigenvectors of\nthe total `J²` and `J_z`. The recoupling coefficient\n`⟨(j₁ j₂) j₁₂, j₃; J M | j₁, (j₂ j₃) j₂₃; J M⟩` is the contravariant form between the two\n(`recoupling`). The main results are:\n\n- both schemes consist of eigenvectors of the total `J²` and `J_z`, so states of different `J` or\n  `M` are orthogonal (`tripleForm_stateA_stateB_eq_zero`);\n- the first scheme is an orthonormal basis (`eq_sum_vecA`), so the recoupling coefficients form\n  an orthogonal matrix (`sum_recoupling_mul_recoupling`);\n- the recoupling coefficients do not depend on `M` (`recoupling_eq_recoupling_zero`): the total\n  lowering operator moves `M` in both schemes by the same factor `√((J + M)(J - M + 1))`, and it\n  is adjoint to the raising operator.\n\nThe 6j symbol is defined by\n`⟨(j₁ j₂) j₁₂, j₃; J | j₁, (j₂ j₃) j₂₃; J⟩ = (-1)^(j₁ + j₂ + j₃ + J) √((2j₁₂ + 1)(2j₂₃ + 1))\n{j₁ j₂ j₁₂; j₃ J j₂₃}` (`sixJ`), and satisfies\n`Σ_{j₁₂} (2j₁₂ + 1)(2j₂₃ + 1) {j₁ j₂ j₁₂; j₃ J j₂₃} {j₁ j₂ j₁₂; j₃ J j₂₃'} = δ_{j₂₃ j₂₃'}`\n(`sum_sixJ_mul_sixJ`).\n\nRacah's closed formula for the 6j symbols is not proved here.\n\n## ii. Key results\n\n- `eq_sum_vecA`: completeness of the first scheme.\n- `tripleForm_stateA_stateB_eq_zero`: separation by `J` and `M`.\n- `recoupling`, `recoupling_eq_recoupling_zero`, `sum_recoupling_mul_recoupling`.\n- `sixJ`, `recoupling_eq_sixJ`, `sum_sixJ_mul_sixJ`.\n\n## iii. Table of contents\n\n- A. Eigenvalues, ladders and orthonormality of the coupled states\n  - A.1. Completeness of the first coupling scheme\n  - A.2. Separation by `J` and `M`\n  - A.3. The recoupling coefficients\n  - A.4. Orthogonality\n- B. The 6j symbols\n\n## iv. References\n\n- G. Racah, *Theory of complex spectra. II*, Phys. Rev. 62, 438 (1942).\n- A. R. Edmonds, *Angular Momentum in Quantum Mechanics*, Princeton University Press (1957),\n  chapter 6.",
+   "copyright": "2026 Daniel Leonforte",
    "sections": [
     {
      "line": 74,
@@ -2559,13 +2582,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/AngularMomentum/SixJSymmetry.lean",
    "module": "PhyslibAlpha.QuantumMechanics.AngularMomentum.SixJSymmetry",
    "title": "The tetrahedral symmetry of the 6j symbols",
    "doc": "The 3j symbols with general arguments, the 6j symbols as sums over four 3j symbols, their\nagreement with the 6j symbols of `SixJ`, and the 24 symmetries of the tetrahedron.\n\n## i. Overview\n\n`threeJ j₁ j₂ j₃ m₁ m₂ m₃` is the 3j symbol with spins and projections in doubled units, defined\nthrough the Regge square of `Wigner3j` and set to zero for inadmissible arguments. It changes by\n`(-1)^(j₁ + j₂ + j₃)` under an odd permutation of the columns and under `m ↦ -m`, and is invariant\nunder cyclic permutations (`threeJ_swap`, `threeJ_cycle`, `threeJ_neg`).\n\nThe 6j symbol\n\n`{j₁ j₂ j₃; j₄ j₅ j₆} = Σ_m (-1)^(Σ (jᵢ - mᵢ)) (j₁ j₂ j₃; -m₁ -m₂ -m₃) (j₁ j₅ j₆; m₁ -m₅ m₆)\n(j₄ j₂ j₆; m₄ m₂ -m₆) (j₄ j₅ j₃; -m₄ m₅ m₃)`\n\n(`sixJSym`) is attached to a tetrahedron whose four faces are the four triads. Each generator of\nits symmetry group is a change of summation variables, a permutation and sign change of the six\nprojections, under which the four 3j symbols are permuted and transformed by the 3j symmetries;\nthe signs cancel on the support. This gives\n\n- `sixJSym_swap₁₂`, `sixJSym_swap₂₃`: invariance under permutations of the columns;\n- `sixJSym_flip₁₂`: invariance under exchange of upper and lower arguments in two columns.\n\nIndexing the six arguments by the edges of the tetrahedron whose vertices `0, 1, 2, 3` are the\ntriads `(j₁ j₂ j₃)`, `(j₁ j₅ j₆)`, `(j₄ j₂ j₆)`, `(j₄ j₅ j₃)` (`sixJSymEdge`), the three generators\nbecome the vertex permutations `(1 2)`, `(2 3)` and `(0 3)(1 2)`. These generate the symmetric\ngroup on the four vertices, so `sixJSymEdge_comp_map` gives invariance under every permutation of\nthe triads. The action on the edges is faithful (`sym2_map_perm_injective`), so these are 24\ndistinct symmetries.\n\nThe connection to the recoupling coefficients of `SixJ` is `sixJ_eq_sixJSym`. Expanding both\ncoupled states in the product basis writes `⟨(j₁ j₂) j₁₂, j₃; J M | j₁, (j₂ j₃) j₂₃; J M⟩` as a sum\nover four Clebsch–Gordan coefficients (`recoupling_eq_sum`). Summing over `M`, which by\n`recoupling_eq_recoupling_zero` multiplies by `2J + 1`, and converting the coefficients into 3j\nsymbols turns every summand into a summand of `sixJSym` (`cg_four_eq`, `sum_sixJTerm_eq`).\n\n## ii. Key results\n\n- `threeJ`, `threeJ_swap`, `threeJ_cycle`, `threeJ_neg`: the 3j symbol and its symmetries.\n- `sixJSym`: the 6j symbol as a sum over four 3j symbols.\n- `sixJSymEdge_comp_map`: invariance under all 24 symmetries of the tetrahedron, with the\n  generators `sixJSym_swap₁₂`, `sixJSym_swap₂₃`, `sixJSym_flip₁₂` as special cases.\n- `recoupling_eq_sum`: the recoupling coefficient through four Clebsch–Gordan coefficients.\n- `sixJ_eq_sixJSym`: the 6j symbols of `SixJ` are the symmetric sums.\n\n## iii. Table of contents\n\n- A. The 3j symbol with general arguments\n- B. The 6j symbol as a sum over four 3j symbols\n- C. The tetrahedral symmetry\n- D. The 6j symbols of `SixJ` as sums over four 3j symbols\n\n## iv. References\n\n- G. Racah, *Theory of complex spectra. II*, Phys. Rev. 62, 438 (1942).\n- A. R. Edmonds, *Angular Momentum in Quantum Mechanics*, Princeton University Press (1957),\n  chapter 6.\n\n## A. The 3j symbol with general arguments",
+   "copyright": "2026 Daniel Leonforte",
    "sections": [
     {
      "line": 203,
@@ -2887,13 +2912,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/AngularMomentum/SpinOrbit.lean",
    "module": "PhyslibAlpha.QuantumMechanics.AngularMomentum.SpinOrbit",
    "title": "Spin–orbit coupling",
    "doc": "The operator `L · S` on coupled angular momenta, its eigenvalues on the states of total angular\nmomentum `J`, the fine-structure doublet and Landé's interval rule.\n\n## i. Overview\n\nFor two angular momenta `L` on `V` and `S` on `W` the scalar product\n`L · S = Lx ⊗ Sx + Ly ⊗ Sy + Lz ⊗ Sz` satisfies, for the total angular momentum\n`J = L ⊗ 1 + 1 ⊗ S`,\n\n`J² = L² ⊗ 1 + 1 ⊗ S² + 2 L · S`.\n\nThis is pure algebra on pure tensors (`Jsq_tensor`). On `V(m) ⊗ V(n)` with `l = m/2`,\n`s = n/2`, the operators `L²` and `S²` are the scalars `l(l + 1)` and `s(s + 1)`\n(`Jsq_standard`), and `J²` acts on the `k`-th lowering string by `J(J + 1)`,\n`J = l + s - k` (`Jsq_coupled_stringVec`). Hence every state of total angular momentum `J` is an\neigenvector of `L · S`:\n\n`L · S = (J(J + 1) - l(l + 1) - s(s + 1)) / 2`.\n\nWith a spin-orbit Hamiltonian `ζ L · S` this gives\n\n- the fine-structure doublet for `s = 1/2`: `L · S = l/2` for `J = l + 1/2` and\n  `L · S = -(l + 1)/2` for `J = l - 1/2`, a splitting of `(2l + 1)/2` in units of `ζ`;\n- Landé's interval rule: neighbouring levels `J` and `J - 1` of a multiplet are `J` apart in\n  units of `ζ`.\n\n## ii. Key results\n\n- `dot`, `Jsq_tensor`: the operator `L · S` and the identity `J² = L² + S² + 2 L · S`.\n- `Jsq_standard`: `J² = j(j + 1)` on the spin-`j` representation.\n- `dot_coupled_stringVec`: the eigenvalues of `L · S`.\n- `dot_coupled_stringVec_doublet_upper`, `dot_coupled_stringVec_doublet_lower`: the doublet.\n- `spinOrbitValue_sub_succ`: the interval rule.\n\n## iii. Table of contents\n\n- A. The scalar product of two angular momenta\n- B. The Casimir operator of `V(n)`\n- C. Eigenvalues of `L · S`\n- D. Fine structure and the interval rule\n\n## iv. References\n\n- J. J. Sakurai and J. Napolitano, *Modern Quantum Mechanics*, 3rd ed., Cambridge University\n  Press (2020), sections 3.8 and 5.3.\n- A. Landé, *Termstruktur und Zeemaneffekt der Multipletts*, Z. Phys. 15, 189 (1923).\n\n## A. The scalar product of two angular momenta",
+   "copyright": "2026 Daniel Leonforte",
    "sections": [
     {
      "line": 96,
@@ -2983,13 +3010,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/AngularMomentum/Wigner3j.lean",
    "module": "PhyslibAlpha.QuantumMechanics.AngularMomentum.Wigner3j",
    "title": "Wigner 3j symbols",
    "doc": "The 3j symbols in Regge's form, their relation to the Clebsch–Gordan coefficients, their\nsymmetries and orthogonality relations.\n\n## i. Overview\n\nFor angular momenta `j₁, j₂, j₃` and projections `m₁ + m₂ + m₃ = 0` the nine numbers\n\n```\n  -j₁ + j₂ + j₃   j₁ - j₂ + j₃   j₁ + j₂ - j₃\n   j₁ - m₁         j₂ - m₂        j₃ - m₃\n   j₁ + m₁         j₂ + m₂        j₃ + m₃\n```\n\nform Regge's square `R`: natural numbers whose rows and columns all add up to\n`J = j₁ + j₂ + j₃`. Racah's formula for the 3j symbol reads, in these entries,\n\n`(j₁ j₂ j₃; m₁ m₂ m₃) = (-1)^(R₂₀ + R₁₁) √(∏ R_ij! / (J + 1)!) · S`,\n\n`S = Σ_z (-1)^z / (z! (R₀₂ - z)! (R₁₀ - z)! (R₂₁ - z)! (R₀₁ - R₁₀ + z)! (R₀₀ - R₂₁ + z)!)`.\n\nThis is taken as the definition (`threeJR`). The sum `S` is a special case of\n`sixSum a b = Σ_z (-1)^z / ∏_i (z - a_i)! ∏_i (b_i - z)!`, which is invariant under permutations\nof the `a_i` and of the `b_i`, changes by `(-1)^c` under the shift `a, b ↦ a + c, b + c`, and is\nunchanged under `a, b ↦ -b, -a`. Each symmetry of the 3j symbol is one of these moves:\n\n- transposing `R` (a Regge symmetry) and permuting its columns cyclically leave it unchanged,\n- swapping two columns or the last two rows (`m ↦ -m`) multiplies it by `(-1)^J`.\n\nTogether they give `threeJR_perm`: permuting the rows by `σ` and the columns by `τ` multiplies the\n3j symbol by `(sign(σ) sign(τ))^J`. The columns are handled by induction over transpositions,\ngenerated by one swap and the cyclic permutation, and the rows reduce to the columns by\ntransposition. The 36 row and column permutations move the nine entries in pairwise different ways\nand none of them is the transposition (`perm_prodMap_injective`, `prodMap_ne_swap`), so with\n`threeJR_transpose` this gives 72 distinct symmetries of the 3j symbol.\n\n`cgCoefficient_eq_threeJR` identifies the symbol with the Clebsch–Gordan coefficients of\n`ClebschGordanCoefficients` through `cgCoefficient_racah`:\n`⟨j₁ m₁ j₂ m₂ | J M⟩ = (-1)^(j₁ - j₂ + M) √(2J + 1) (j₁ j₂ J; m₁ m₂ -M)`.\nThe orthogonality relations of the 3j symbols follow.\n\n## ii. Key results\n\n- `sixSum_shift`, `sixSum_neg`: the moves of the six-factorial sum.\n- `threeJR`: the 3j symbol of a Regge square.\n- `threeJR_transpose`, `threeJR_swap_columns`, `threeJR_cycle_columns`, `threeJR_swap_rows`:\n  the generating symmetries.\n- `threeJR_perm`, `threeJR_perm_columns`: the symmetries under all permutations of rows and\n  columns, with sign `(sign(σ) sign(τ))^J`.\n- `cgCoefficient_eq_threeJR`: relation to the Clebsch–Gordan coefficients.\n- `sum_wigner3j_mul_wigner3j`, `sum_wigner3j_mul_wigner3j_JM`: the orthogonality relations.\n\n## iii. Table of contents\n\n- A. The six-factorial sum\n- B. Regge squares and the 3j symbol\n- C. Symmetries\n- D. Relation to the Clebsch–Gordan coefficients\n- E. Orthogonality\n\n## iv. References\n\n- T. Regge, *Symmetry properties of Clebsch–Gordan's coefficients*, Nuovo Cimento 10, 544 (1958).\n- A. R. Edmonds, *Angular Momentum in Quantum Mechanics*, Princeton University Press (1957),\n  section 3.7.\n\n## A. The six-factorial sum",
+   "copyright": "2026 Daniel Leonforte",
    "sections": [
     {
      "line": 156,
@@ -3323,13 +3352,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/AngularMomentum/WignerEckart.lean",
    "module": "PhyslibAlpha.QuantumMechanics.AngularMomentum.WignerEckart",
    "title": "The Wigner–Eckart theorem for sl₂",
    "doc": "Tensor operators between standard `sl₂` modules and the factorisation of their matrix elements.\n\n## i. Overview\n\nA tensor operator of rank `k` from `V(m)` to `V(p)` is a linear map\n`T : V(k) → Hom(V(m), V(p))` with `[X, T x] = T (X x)` for the raising, lowering and weight\noperators `X`. In physics notation, with `k = 2κ`, `m = 2j` and `p = 2j'`, the vectors `T v_q` are\nthe components `T^{(κ)}_μ` of a spherical tensor operator, and the condition is the usual\ncommutator definition.\n\nThe map `x ⊗ y ↦ T x y` is then a tensor intertwiner `V(k) ⊗ V(m) → V(p)`. By the results of\n`Sl2.TensorIntertwiner` this gives the Wigner–Eckart theorem: if `p = k + m - 2j`, there is a\nsingle scalar `c` (the reduced matrix element) with `T x y = c • cgProj (x ⊗ y)` for all `x, y`,\nso every matrix element is `c` times a Clebsch–Gordan coefficient. If `p` is not of this form,\n`T = 0` (the triangle and parity rule). Independently of this, the weight operator alone gives the\nrule for the magnetic quantum numbers: a matrix element vanishes unless the weights add up.\n\nThe basis `v_l = f^l v_0` of the standard modules is not normalised, so the Clebsch–Gordan\ncoefficients here differ from the usual tabulated values by normalisation factors. The statements\nthemselves do not depend on this choice.\n\n## ii. Key results\n\n- `IsTensorOperator` is the predicate for tensor operators.\n- `IsTensorOperator.lift_isTensorIntertwiner` turns a tensor operator into a tensor intertwiner.\n- `IsTensorOperator.exists_eq_smul_cgProj` is the Wigner–Eckart theorem.\n- `IsTensorOperator.eq_zero_of_forall_ne` is the triangle and parity selection rule.\n- `IsTensorOperator.apply_vNat_eq_zero_of_weight_ne` is the selection rule for the weights.\n\n## iii. Table of contents\n\n- A. Tensor operators\n  - A.1. Definition\n  - A.2. Tensor operators as tensor intertwiners\n- B. The Wigner–Eckart theorem\n  - B.1. Factorisation and the triangle rule\n  - B.2. The weight selection rule\n\n## iv. References\n\n- E. P. Wigner, *Group Theory and its Application to the Quantum Mechanics of Atomic Spectra*,\n  Academic Press (1959), chapter 21.\n- C. Eckart, *The application of group theory to the quantum dynamics of monatomic systems*,\n  Rev. Mod. Phys. 2, 305 (1930).\n\n## A. Tensor operators\n\n### A.1. Definition",
+   "copyright": "2026 Daniel Leonforte",
    "sections": [
     {
      "line": 86,
@@ -3419,13 +3450,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/AngularMomentum/WignerEckartIrreducible.lean",
    "module": "PhyslibAlpha.QuantumMechanics.AngularMomentum.WignerEckartIrreducible",
    "title": "The Wigner–Eckart theorem for irreducible angular momentum representations",
    "doc": "Tensor operators between arbitrary finite-dimensional irreducible angular momentum\nrepresentations.\n\n## i. Overview\n\n`AngularMomentumRepresentation` packages operators `Jx, Jy, Jz` on a complex vector space with\nthe angular momentum commutation relations. By `spin_classification`, a finite-dimensional\nirreducible representation with `Jz ≠ 0` is isomorphic to a standard module `V(n)` by a linear\nequivalence carrying `J₊`, `J₋` and `2Jz` to `e`, `f` and `h`; `n = 2j` is twice the spin.\n\nA tensor operator of rank `k` from `ρ₁` on `V` to `ρ₂` on `W` is a linear map\n`T : V(k) → Hom(V, W)` with `[J₊, T x] = T (e x)`, `[J₋, T x] = T (f x)` and\n`[2Jz, T x] = T (h x)`. Conjugating with the equivalences turns it into a tensor operator between\nstandard modules, so the results for standard modules carry over:\n\n- two tensor operators of the same rank between the same irreducible representations are\n  proportional (the Wigner–Eckart theorem: a single reduced matrix element);\n- a nonzero tensor operator satisfies the triangle rule for the spins.\n\nThe spin-0 representation (`Jz = 0`) is excluded throughout, since it does not generate a copy of\n`sl₂`.\n\n## ii. Key results\n\n- `IsStandardEquiv` and `exists_isStandardEquiv` give the comparison with a standard module.\n- `IsTensorOperatorOf` is the predicate for tensor operators between representations.\n- `IsTensorOperatorOf.isTensorOperator_conjStd` transports a tensor operator to standard modules.\n- `IsTensorOperatorOf.exists_eq_smul_of_ne_zero` is the Wigner–Eckart theorem.\n- `IsTensorOperatorOf.triangleRule` is the triangle rule.\n\n## iii. Table of contents\n\n- A. Comparison with the standard modules\n- B. Tensor operators between representations\n- C. The Wigner–Eckart theorem\n\n## iv. References\n\n- E. P. Wigner, *Group Theory and its Application to the Quantum Mechanics of Atomic Spectra*,\n  Academic Press (1959), chapter 21.\n\n## A. Comparison with the standard modules",
+   "copyright": "2026 Daniel Leonforte",
    "sections": [
     {
      "line": 174,
@@ -3575,13 +3608,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/AngularMomentum/WignerEckartNormalized.lean",
    "module": "PhyslibAlpha.QuantumMechanics.AngularMomentum.WignerEckartNormalized",
    "title": "The Wigner–Eckart theorem with Clebsch–Gordan coefficients",
    "doc": "The matrix elements of a tensor operator in the orthonormal bases are a reduced matrix element\ntimes the Clebsch–Gordan coefficients, and the total rate out of a substate does not depend on\nthe substate.\n\n## i. Overview\n\n`WignerEckart` shows that a tensor operator `T` of rank `κ = k/2` from `V(m)` to\n`V(k + m - 2j)` is `T x y = c • cgProj (x ⊗ y)`. Here the projection is written in the\northonormal bases: `⟨u_s, cgProj x⟩ = ⟨w_j, w_j⟩^(-1/2) ⟨|J', J' - s⟩, x⟩` (`invForm_cgProj`),\nbecause the component `V(k + m - 2j)` sits isometrically inside `V(k) ⊗ V(m)` (`embed`) and is\northogonal to the other components. With `J = m/2`, `M = J - r`, `μ = κ - q`, `J' = J + κ - j`\nand `M' = J' - s` this gives\n\n`⟨J' M' | T^κ_μ | J M⟩ = R · ⟨κ μ J M | J' M'⟩`\n\nwith one reduced matrix element `R` (`IsTensorOperator.exists_normVec_eq`). The coefficient is\ncoupled in the order `κ ⊗ J`; `cgCoefficient_swap` relates it to the order `J ⊗ κ` by the phase\n`(-1)^(J + κ - J')`.\n\nCombined with the sum rule of `MultipoleSumRule`, the total transition strength out of\n`|J M⟩`,\n\n`Σ_{μ M'} |⟨J' M' | T^κ_μ | J M⟩|² = R² (2J' + 1) / (2J + 1)`,\n\ndoes not depend on `M` (`IsTensorOperator.sum_sq_normVec`).\n\n## ii. Key results\n\n- `wigner3j_swap`, `cgCoefficient_swap`: exchanging the two coupled angular momenta.\n- `invForm_cgProj`: the Clebsch–Gordan projection in the orthonormal bases.\n- `IsTensorOperator.exists_normVec_eq`: the Wigner–Eckart theorem with Clebsch–Gordan\n  coefficients.\n- `IsTensorOperator.sum_sq_normVec`: the total strength out of a substate.\n\n## iii. Table of contents\n\n- A. Exchanging the coupled angular momenta\n- B. The projections in the orthonormal bases\n- C. The Wigner–Eckart theorem\n- D. The total strength out of a substate\n\n## iv. References\n\n- J. J. Sakurai and J. Napolitano, *Modern Quantum Mechanics*, 3rd ed., Cambridge University\n  Press (2020), section 3.11.\n- A. R. Edmonds, *Angular Momentum in Quantum Mechanics*, Princeton University Press (1957),\n  section 5.4.\n\n## A. Exchanging the coupled angular momenta",
+   "copyright": "2026 Daniel Leonforte",
    "sections": [
     {
      "line": 121,
@@ -3655,13 +3690,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/Blackbody/RayleighJeans.lean",
    "module": "PhyslibAlpha.QuantumMechanics.Blackbody.RayleighJeans",
    "title": "Planck's law lies strictly below the Rayleigh–Jeans law",
    "doc": "## i. Overview\n\nA field mode of frequency `ν` in thermal equilibrium at temperature `T` is an oscillator.\nTreated as a canonical ensemble with continuous energies `E ≥ 0`, its mean energy is `kB T`\n(equipartition) and the spectral radiance is the Rayleigh–Jeans law `2 ν² kB T / c²`.\nTreated as a canonical ensemble with quantized energies `n h ν`, its mean energy is\n`h ν / (e^{h ν / (kB T)} - 1)` and the spectral radiance is Planck's law. Since `e^x - 1 > x`\nfor `x > 0`, the quantized mean energy is strictly below `kB T` at every frequency and every\npositive temperature: no continuous Boltzmann statistics reproduces Planck's law. This is the\nstarting point of Poincaré's 1911–1912 proof that the quantum is necessary.\n\n## ii. Key results\n\n- `quantizedOscillator` : the canonical ensemble of levels `n ε`, `n : ℕ`.\n- `quantizedOscillator_meanEnergy` : its mean energy is `ε / (e^{β ε} - 1)`.\n- `classicalOscillator` : the canonical ensemble of energies `E > 0` with Lebesgue measure.\n- `classicalOscillator_meanEnergy` : its mean energy is `kB T`.\n- `quantizedOscillator_meanEnergy_lt` : the quantized mean energy is below `kB T`.\n- `spectralRadiance_eq_meanEnergy` : Planck's law is `2 ν² / c²` times the quantized mean energy.\n- `rayleighJeans` : the Rayleigh–Jeans spectral radiance `2 ν² kB T / c²`.\n- `spectralRadiance_lt_rayleighJeans` : Planck's law is strictly below Rayleigh–Jeans.\n\n## iii. Table of contents\n\n- A. The quantized oscillator\n- B. The classical oscillator\n- C. Planck's law and the Rayleigh–Jeans law\n\n## iv. References\n\n* H. Poincaré, *Sur la théorie des quanta*, J. Phys. Théor. Appl. 2 (1912) 5–34.\n* https://en.wikipedia.org/wiki/Rayleigh%E2%80%93Jeans_law",
+   "copyright": "2026 Eduardo Nava-Hernandez",
    "sections": [
     {
      "line": 56,
@@ -3783,13 +3820,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/Foundations/OntologicalModel.lean",
    "module": "PhyslibAlpha.QuantumMechanics.Foundations.OntologicalModel",
    "title": "Ontological models of a quantum system",
    "doc": "Ontological models of a finite target quantum system, ψ-ontic models and preparation\nindependence.\n\n## i. Overview\n\nAn ontological model (in the sense of Harrigan and Spekkens) of a quantum system reproduces\nthe predictions of quantum mechanics by assigning to the system a \"real\" or ontic state `l` in a\nmeasurable space `Λ`. Preparing the system in the pure state of a unit vector `ψ` samples `l`\nfrom a probability measure `prep ψ` on `Λ`, and performing a measurement `M` in the ontic state\n`l` gives outcome `x` with probability `resp M x l`. Averaging over `l` must give the Born rule:\nthe expectation in the vector state of `ψ` of the effect of `x`.\n\nThe model is ψ-ontic if the ontic state determines the quantum state: the preparation measures\nof two unit vectors with different vector states are mutually singular. Otherwise it is\nψ-epistemic, and the quantum state is (at least partly) a state of knowledge about `l`.\n\nPusey, Barrett and Rudolph (PBR) show that every model satisfying their preparation-independence\nassumption is ψ-ontic. Preparation independence says that `n` independently prepared systems\nhave independent ontic states `l 0, …, l (n - 1)`, each distributed according to the\nsingle-copy preparation measure, and that these jointly determine the ontic state of the `n`\nsystems: preparing the product vector gives the ontic state `ι n (l 0, …, l (n - 1))` for some\nmeasurable map `ι n`. The ontic space of the `n` systems need not be the Cartesian product of\n`n` copies of `Λ`. Requiring it to be, with `ι n` the identity, is what Leifer calls the\nCartesian Product Assumption; it is strictly stronger, and it is recovered by\n`OntologicalModel.PreparationIndependent.of_prep_piProdVec`. The PBR theorem itself is\n`OntologicalModel.PreparationIndependent.isPsiOntic` in\n`PhyslibAlpha/QuantumMechanics/Foundations/PBR/Theorem.lean`.\n\n## ii. Key results\n\n- `OntologicalModel` : an ontological model of the quantum system `𝓗[d]`.\n- `OntologicalModel.IsPsiOntic` : the ψ-ontic property.\n- `OntologicalModel.PreparationIndependent` : the PBR preparation-independence assumption.\n- `OntologicalModel.PreparationIndependent.of_prep_piProdVec` : the Cartesian-product form of\n  preparation independence implies preparation independence.\n\n## iii. Table of contents\n\n- A. Ontological models\n- B. ψ-ontic models\n- C. Preparation independence\n\n## iv. References\n\n- N. Harrigan and R. W. Spekkens, *Einstein, incompleteness, and the epistemic view of quantum\n  states*, Found. Phys. 40, 125–157 (2010), arXiv:0706.2661. [ref: Harrigan:2007wfc]\n- M. F. Pusey, J. Barrett and T. Rudolph, *On the reality of the quantum state*,\n  Nature Phys. 8, 475–478 (2012), arXiv:1111.3328. [ref: Pusey:2011de]\n- M. S. Leifer, *Is the quantum state real? An extended review of ψ-ontology theorems*,\n  Quanta 3, 67–155 (2014), arXiv:1409.1570. [ref: Leifer:2014sza]",
+   "copyright": "2026 brent",
    "sections": [
     {
      "line": 79,
@@ -3839,13 +3878,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/Foundations/PBR/Phases.lean",
    "module": "PhyslibAlpha.QuantumMechanics.Foundations.PBR.Phases",
    "title": "The choice of the PBR phases",
    "doc": "The choice of the number of copies, the angle and the unit-modulus phases in the PBR measurement.\n\n## i. Overview\n\nThe entangled measurement in the Pusey–Barrett–Rudolph (PBR) theorem acts on `n` qubits and\ninvolves a family of unit-modulus phases `ω z`. The product states it is tested against have real\namplitudes `∏ i, ![c, s] (z i)` on the computational basis vectors `z`, with `0 ≤ s ≤ c`. This\nfile makes the two choices on which the construction rests: a number of copies `n` with\n`2 cⁿ ≤ (c + s)ⁿ`, and phases with `∑ z, ω z * ∏ i, ![c, s] (z i) = 0`, found with the\nintermediate value theorem. In the PBR proof the latter makes every outcome of the measurement\northogonal to one product state.\n\n## ii. Key results\n\n- `PBR.exists_two_mul_pow_le` : the choice of the number of copies.\n- `PBR.exists_norm_pow_sub_pow_eq` : the choice of the angle.\n- `PBR.exists_phases` : the choice of the unit-modulus phases.\n\n## iii. Table of contents\n\n- A. Choosing the number of copies\n- B. Choosing the phases\n  - B.1. Choosing the angle\n  - B.2. Products of amplitudes\n  - B.3. The phases\n\n## iv. References\n\n- M. F. Pusey, J. Barrett and T. Rudolph, *On the reality of the quantum state*,\n  Nature Phys. 8, 475–478 (2012), arXiv:1111.3328. [ref: Pusey:2011de]",
+   "copyright": "2026 Brent Yee",
    "sections": [
     {
      "line": 52,
@@ -3915,13 +3956,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/HarmonicOscillator/LadderSystem.lean",
    "module": "PhyslibAlpha.QuantumMechanics.HarmonicOscillator.LadderSystem",
    "title": "The harmonic oscillator as a ladder system",
    "doc": "The ladder operators of the d-dimensional harmonic oscillator form a `LadderSystem`.\n\n## i. Overview\n\nThe lowering and raising operators `loweringCLM`/`raisingCLM` of the `d`-dimensional quantum\nharmonic oscillator satisfy the canonical commutation relations, so they form a\n`LadderSystem` on Schwartz space. The number operator of that ladder system is `numberCLM`.\n\n## ii. Key results\n\n- `toLadderSystem` : the lowering and raising operators bundled as a `LadderSystem`.\n- `toLadderSystem_N_toLinearMap` : the number operators of `toLadderSystem` are `numberCLM`.\n\n## iii. Table of contents\n\n- A. The ladder system\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Gregory J. Loges",
    "sections": [
     {
      "line": 47,
@@ -3947,13 +3990,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/HarmonicOscillator/Vacuum.lean",
    "module": "PhyslibAlpha.QuantumMechanics.HarmonicOscillator.Vacuum",
    "title": "A vacuum state for the harmonic oscillator",
    "doc": "An explicit Gaussian vacuum for the d-dimensional harmonic oscillator ladder system.\n\n## i. Overview\n\nFor a `d`-dimensional oscillator `Q`, `vacuumGaussian` is the Gaussian\n`exp(-∑ᵢ(xᵢ/ξᵢ)²/2)`, rescaled coordinatewise by the characteristic lengths `ξᵢ` through the\ndiagonal continuous linear equivalence `diagEquiv`. Every annihilation operator kills this\nSchwartz function, so `hasVacuum_vacuumGaussian` supplies a `LadderSystem.HasVacuum` witness\nwithout an isotropy assumption.\n\nThe isotropic unit-length case (`Q.ξ i = 1` for all `i`) is represented by\n`stdGaussian (Space d) ℂ`, the function `x ↦ exp(-‖x‖²/2)` from\n`Physlib.Mathematics.InnerProductSpace.Gaussian`.\n`hasVacuum_stdGaussian_of_forall_xi_eq_one` derives the unit-length case from `vacuumGaussian`.\nThe theorem `loweringCLM_stdGaussian_of_xi_eq_one` assumes unit length only in the selected\nmode, so it is proved separately.\n\n## ii. Key results\n\n- `diagEquiv` : the diagonal rescaling of `Space d` by the characteristic lengths.\n- `vacuumGaussian` : the anisotropic vacuum Gaussian, `exp(-∑ᵢ(xᵢ/ξᵢ)²/2)`.\n- `loweringCLM_vacuumGaussian` : every `loweringCLM i` kills the vacuum Gaussian.\n- `hasVacuum_vacuumGaussian` : `Q.vacuumGaussian` is a vacuum for `Q.toLadderSystem`.\n- `loweringCLM_stdGaussian_of_xi_eq_one`, `hasVacuum_stdGaussian_of_forall_xi_eq_one` : the\n    isotropic-unit-length special case.\n\n## iii. Table of contents\n\n- A. The standard Gaussian: derivative and momentum action\n- B. The general, anisotropic vacuum\n- C. The isotropic-unit-length special case\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Tom Diem",
    "sections": [
     {
      "line": 61,
@@ -4115,13 +4160,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/Operators.lean",
    "module": "PhyslibAlpha.QuantumMechanics.HilbertSpaces.FiniteTarget.Operators",
    "title": "Operators on the Hilbert space of a finite target system",
    "doc": "Real scalar tower and self-adjoint decomposition instances for operators on `𝓗[d]`.\n\n## i. Overview\n\nThe bounded operators `𝓗[d] →L[ℂ] 𝓗[d]` form a C⋆-algebra, ordered by the Loewner order.\nThis file registers, directly on these operators, the real scalar action commuting with\ncomposition and the decomposition of a self-adjoint operator into positive and negative parts.\n\nThese instances hold for the operators on any complex Hilbert space, but on `𝓗[d]` inferring\nthem unifies the two real actions on operators through the transferred complex module,\nwhich runs out of budget. Stated here once, they let hermitian operators on `𝓗[d]` be used\nwhere `SelfAdjointDecompose` is required, for instance as observables.\n\n## ii. Key results\n\n- `IsScalarTower ℝ`, `SMulCommClass ℝ` instances : the real scalar action on `𝓗[d] →L[ℂ] 𝓗[d]`\n  commutes with composition.\n- `SelfAdjointDecompose` instance : the decomposition of a self-adjoint operator into positive and\n  negative parts, from the continuous functional calculus.\n\n## iii. Table of contents\n\n- A. The real scalar action\n- B. Positive and negative parts\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Eduardo Nava-Hernandez",
    "sections": [
     {
      "line": 54,
@@ -4159,13 +4206,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/Product.lean",
    "module": "PhyslibAlpha.QuantumMechanics.HilbertSpaces.FiniteTarget.Product",
    "title": "Operators on one coordinate of a product of finite targets",
    "doc": "## i. Overview\n\nA system whose configurations are pairs `(a, b)` has the Hilbert space `𝓗[α × β]`. An operator\n`A` on `𝓗[α]` acts on the first coordinate alone, `(A Ψ) (a, b) = ∑ a', ⟨a|A|a'⟩ Ψ (a', b)`,\nand leaves the second in place; an operator on `𝓗[β]` acts on the second coordinate in the same\nway. Operators on different coordinates commute, acting twice on one coordinate composes the\noperators, and hermitian operators stay hermitian.\n\n## ii. Key results\n\n- `onFst`, `onSnd` : an operator acting on one coordinate of `𝓗[α × β]`.\n- `onFst_comp`, `onSnd_comp` : acting twice on the same coordinate.\n- `onFst_comp_onSnd` : operators on different coordinates commute.\n- `onFst_isSymmetric`, `onSnd_isSymmetric` : hermitian operators stay hermitian.\n\n## iii. Table of contents\n\n- A. Amplitudes\n- B. Operators on one coordinate\n- C. Composition\n- D. Hermiticity\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Eduardo Nava-Hernandez",
    "sections": [
     {
      "line": 51,
@@ -4291,13 +4340,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/HilbertSpaces/FiniteTarget/ProductState.lean",
    "module": "PhyslibAlpha.QuantumMechanics.HilbertSpaces.FiniteTarget.ProductState",
    "title": "Product states of a product of finite targets",
    "doc": "## i. Overview\n\nThe product state `(ψ ⊗ φ) (a, b) = ψ a φ b` of two unit vectors describes two uncorrelated\ncoordinates. An observable acting on one coordinate only sees that coordinate: its mean, its\nvariance, its covariance with another such observable and their centered Gram defect are those\nof the factor state.\n\nMore generally, a family of vectors `v i` on `𝓗[α]`, indexed by a finite type `ι`, has the\nproduct vector `(⊗ i, v i) k = ∏ i, v i (k i)` on `𝓗[ι → α]`, describing independently prepared\ncopies of a system; inner products and norms of product vectors are products.\n\n## ii. Key results\n\n- `prodVec` : the product vector `ψ ⊗ φ`, of norm `‖ψ‖ ‖φ‖` by `norm_prodVec`.\n- `onFst_prodVec`, `onSnd_prodVec` : `(A ⊗ 1) (ψ ⊗ φ) = A ψ ⊗ φ` and `(1 ⊗ B) (ψ ⊗ φ) = ψ ⊗ B φ`.\n- `onFstObservable`, `onSndObservable` : an observable acting on one coordinate.\n- `variance_onFstObservable`, `covariance_onFstObservable`,\n  `centeredGramDefect_onFstObservable` : the statistics of the first coordinate.\n- `variance_onSndObservable`, `covariance_onSndObservable`,\n  `centeredGramDefect_onSndObservable` : the statistics of the second coordinate.\n- `covariance_onFstObservable_onSndObservable` : the two coordinates are uncorrelated.\n- `piProdVec` : the product vector `⊗ i, v i` of a finite family.\n- `inner_piProdVec`, `norm_piProdVec`, `norm_piProdVec_eq_one` : `⟪⊗ v, ⊗ w⟫ = ∏ i, ⟪v i, w i⟫`,\n  `‖⊗ v‖ = ∏ i, ‖v i‖`, and a product of unit vectors is a unit vector.\n\n## iii. Table of contents\n\n- A. Product vectors\n- B. Observables on one coordinate\n- C. Statistics of the first coordinate\n- D. Statistics of the second coordinate\n- E. Different coordinates are uncorrelated\n- F. Product vectors of finite families\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Eduardo Nava-Hernandez",
    "sections": [
     {
      "line": 67,
@@ -4567,13 +4618,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/Hydrogen/BoundStatesL2.lean",
    "module": "PhyslibAlpha.QuantumMechanics.Hydrogen.BoundStatesL2",
    "title": "The hydrogen bound states in `L²`",
    "doc": "## i. Overview\n\nThe bound states `boundState H N l P` of `Eigenfunctions.lean` are square integrable: they are a\npolynomial in the coordinates and in `‖y‖` times `e^(-κ‖y‖)`, and such functions decay faster than\nany power of `1 + ‖y‖`. They therefore define vectors of the Hilbert space `SpaceDHilbertSpace d`.\nSince they are continuous, the linear independence of the bound states of one level\n(`boundStateMap_injective`) carries over to the Hilbert space; since they are real valued, it\nholds over `ℂ` as well.\n\n## ii. Key results\n\n- `memHS_boundState`, `boundStateHS` : the bound states as vectors of `SpaceDHilbertSpace d`.\n- `boundStateMapHS_injective` : the bound states of one level are linearly independent in\n  `SpaceDHilbertSpace d`.\n- `finrank_range_boundStateMapHS_three` : in three dimensions they span a real subspace of\n  dimension `(n + 1)²`.\n- `linearIndependent_complex_of_real_inner` : vectors with real Gram matrix which are linearly\n  independent over `ℝ` are linearly independent over `ℂ`.\n- `finrank_span_range_boundStateMapHS_three` : in three dimensions the bound states of the level\n  `n` span a complex subspace of dimension `(n + 1)²`.\n\n## iii. Table of contents\n\n- A. The bound states in the Hilbert space\n- B. Linear independence in the Hilbert space\n\n## iv. References\n\n- None.",
+   "copyright": "2026 Daniel Leonforte",
    "sections": [
     {
      "line": 53,
@@ -4691,13 +4744,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/Hydrogen/Degeneracy.lean",
    "module": "PhyslibAlpha.QuantumMechanics.Hydrogen.Degeneracy",
    "title": "The degeneracy of the hydrogen bound states",
    "doc": "## i. Overview\n\nThe bound states `boundState H N l P` of `Eigenfunctions.lean` at the Bohr level `n = N + l` are\nbuilt from homogeneous harmonic polynomials `P` of degree `l ≤ n`. The space of such polynomials\nin `d` variables has dimension `C(l + d - 1, d - 1) - C(l + d - 3, d - 1)`, which is `2l + 1` for\n`d = 3`. The bound states for different `l` and linearly independent `P` are linearly\nindependent, so the level `n` carries at least `Σ_{l ≤ n} (2l + 1) = (n + 1)²` independent\neigenfunctions in three dimensions.\n\n## ii. Key results\n\n- `harmonicSubmodule` : homogeneous harmonic polynomials of degree `l` in `d` variables.\n- `finrank_harmonicSubmodule` : their dimension.\n- `boundState_eigen_of_mem_harmonicSubmodule` : such polynomials give bound states.\n- `boundStateMap_injective` : the bound states of one level are linearly independent.\n- `finrank_range_boundStateMap` : they span a space of dimension `Σ_{l ≤ n} dim Harm_l`.\n- `finrank_range_boundStateMap_three` : `(n + 1)²` independent bound states in three dimensions.\n\n## iii. Table of contents\n\n- A. Homogeneous harmonic polynomials\n- B. Polynomials as functions on space\n- C. Linear independence of the bound states\n\n## iv. References\n\n- S. Axler, P. Bourdon and W. Ramey, *Harmonic Function Theory*, 2nd ed., Graduate Texts in\n  Mathematics 137, Springer (2001), chapter 5 (Harmonic Polynomials),\n  doi:10.1007/978-1-4757-8137-3_5.",
+   "copyright": "2026 Daniel Leonforte",
    "sections": [
     {
      "line": 56,
@@ -5075,13 +5130,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/Hydrogen/Eigenfunctions.lean",
    "module": "PhyslibAlpha.QuantumMechanics.Hydrogen.Eigenfunctions",
    "title": "The bound-state wave functions of the `d`-dimensional hydrogen atom",
    "doc": "The bound-state wave functions of the hydrogen atom of physlib in `d ≥ 2` dimensions, as\nexplicit eigenfunctions of `-ℏ²/(2m) Δ - k/r` with the Bohr energies `HydrogenAtom.energyLevel`.\n\n## i. Overview\n\nThe angular part is carried by a homogeneous harmonic polynomial `P` of degree `l`\n(`Σᵢ yᵢ ∂ᵢP = l P`, `ΔP = 0`); in three dimensions these are the solid harmonics `r^l Y_lm`. For\na radial function `f`, the product rule and `Δ‖y‖² = 2d` give, away from the origin,\n\n`Δ(f(r) P) = (f'' + (d - 1 + 2l) f'/r) P`\n\n(`laplacian_radial_mul`, `laplacian_radial_harmonic`). This is the separation of variables in\nspherical coordinates written without angles. The radial factor\n`f(r) = e^(-κr) L_N^(2l+d-2)(2κr)` satisfies\n`r f'' + (2l + d - 1) f' + (2κ(N + l + (d - 1)/2) - κ² r) f = 0` by the Laguerre equation\n(`radialFactor_ode`). With `κ = 1/(a L)`, `a = ℏ²/(m k)` and `L = N + l + (d - 1)/2` the\nSchrödinger equation holds with energy `-ℏ²κ²/(2m) = -Ry/L²`, physlib's Bohr level\n`HydrogenAtom.energyLevel (N + l)` (`boundState_eigen`). The `s` and `p` states are spelled out\nwith `P = 1` and `P = yⱼ`.\n\nThe equation is proved pointwise away from the nucleus, where `ψ` is smooth. It does not say\nthat these are all eigenfunctions, nor that they lie in the domain of the self-adjoint\nHamiltonian; the spectral statements are the TODOs of `Physlib.QuantumMechanics.Hydrogen.Basic`.\n\n## ii. Key results\n\n- `laplacian_radial_mul`: the Laplacian of `G(‖y‖²) P(y)`.\n- `laplacian_radial_harmonic`: the radial reduction for homogeneous harmonic `P`.\n- `radialFactor_ode`: the radial equation of `e^(-κr) L_N^(α)(2κr)`.\n- `boundState_eigen`: the bound states and their energies `E_{N+l}`.\n- `boundState_eigen_s`, `boundState_eigen_p`: the `s` and `p` states.\n\n## iii. Table of contents\n\n- A. The Laplacian of a radial function times a polynomial\n- B. Radial functions of `‖y‖`\n- C. The radial factor\n- D. The bound states of the `d`-dimensional hydrogen atom\n\n## iv. References\n\n- H. A. Bethe and E. E. Salpeter, *Quantum Mechanics of One- and Two-Electron Atoms*, Springer\n  (1957).\n- J. J. Sakurai and J. Napolitano, *Modern Quantum Mechanics*, 3rd ed., Cambridge University\n  Press (2020), section 3.7.\n\n## A. The Laplacian of a radial function times a polynomial",
+   "copyright": "2026 Daniel Leonforte",
    "sections": [
     {
      "line": 157,
@@ -5275,13 +5332,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/Hydrogen/FineStructure.lean",
    "module": "PhyslibAlpha.QuantumMechanics.Hydrogen.FineStructure",
    "title": "The fine structure of hydrogen",
    "doc": "The first-order fine structure of hydrogen: relativistic kinetic, spin–orbit and Darwin\ncorrections, evaluated with the radial expectation values of `RadialFunctions.lean` and the\nspin–orbit eigenvalues of `SpinOrbit.lean`, add up to a shift that depends on `j` only.\n\n## i. Overview\n\nFor the level `(ν, l, j)` with Bohr energy `E_ν = -Ry/ν²` and `α = k/(ℏc)` the three standard\nfirst-order corrections are\n\n- `E_rel = -⟨(E_ν - V)²⟩/(2mc²)` with `V = -k/r`,\n- `E_SO = k/(2m²c²) ⟨1/r³⟩ ⟨L · S⟩`,\n- `E_D = π k ℏ²/(2m²c²) |ψ(0)|²`, non-zero only for `l = 0`.\n\nInserting the proved values of `⟨1/r⟩`, `⟨1/r²⟩`, `⟨1/r³⟩`, `|R(0)|²` and of `L · S` on the\n`j = l ± 1/2` states gives\n\n`E_rel + E_SO + E_D = E_ν α²/ν² (ν/(j + 1/2) - 3/4)`\n\nin both cases (`fineStructureShift_upper`, `fineStructureShift_lower`), so `2s_{1/2}` and\n`2p_{1/2}` stay degenerate (`fineStructureShift_upper_eq_lower`).\n\nWhat is taken as physical input: the three perturbation operators and the first-order formula\n`ΔE = ⟨H'⟩`, the identity `⟨p⁴⟩ = 4m²⟨(E - V)²⟩`, and `|ψ(0)|² = |R(0)|²/(4π)`. What is proved:\nthe radial equation, the radial integrals, the `L · S` eigenvalues and the algebra that combines\nthem.\n\n## ii. Key results\n\n- `relativisticShift`, `spinOrbitShift`, `darwinShift`, `fineStructureShift`: the corrections.\n- `fineStructureShift_upper`: the formula for `j = l + 1/2`, including `l = 0`.\n- `fineStructureShift_lower`: the formula for `j = l - 1/2`, `l ≥ 1`.\n- `fineStructureShift_upper_eq_lower`: the shift depends on `j` only.\n\n## iii. Table of contents\n\n- A. The three first-order corrections\n- B. The fine-structure formula\n\n## iv. References\n\n- H. A. Bethe and E. E. Salpeter, *Quantum Mechanics of One- and Two-Electron Atoms*, Springer\n  (1957).\n- J. J. Sakurai and J. Napolitano, *Modern Quantum Mechanics*, 3rd ed., Cambridge University\n  Press (2020), section 5.3.\n\n## A. The three first-order corrections",
+   "copyright": "2026 Daniel Leonforte",
    "sections": [
     {
      "line": 101,
@@ -5379,13 +5438,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/Hydrogen/GreenIdentity.lean",
    "module": "PhyslibAlpha.QuantumMechanics.Hydrogen.GreenIdentity",
    "title": "Green's identity and regularised radial functions",
    "doc": "## i. Overview\n\nFor a `C²` function `u` on `Space d` such that `u`, `∂ᵢu` and `∂ᵢ∂ᵢu` are polynomially bounded and\na Schwartz map `f`, Green's identity `∫ u Δf = ∫ (Δu) f` holds (two integrations by parts).\nFunctions of the form `R(‖y‖) Q(y)` are in general not smooth at the origin; replacing `‖y‖` by\nthe regularised radius `ρ_ε = √(‖y‖² + ε²)` makes them smooth for `ε ≠ 0`. This module provides\nthe derivatives of `G(‖y‖²) Q(y)` and the polynomial bounds needed to apply Green's identity to the\nregularised functions, uniformly in `|ε| ≤ 1` when `R` is a polynomial times `e^(-κr)`.\n\n## ii. Key results\n\n- `integral_ofReal_mul_sum_deriv_deriv` : Green's identity `∫ u Σᵢ∂ᵢ∂ᵢf = ∫ (Σᵢ∂ᵢ∂ᵢu) f`.\n- `deriv_radial_mul`, `deriv_deriv_radial_mul` : first and second coordinate derivatives of\n  `G(‖y‖²) Q(y)` at every point.\n- `regG`, `hasDerivAt_regG`, `hasDerivAt_regG'` : the regularised profile `s ↦ f(√(s + ε²))` and\n  its derivatives.\n- `isPolyBounded_regG`, `isPolyBounded_regG'`, `isPolyBounded_regG''`,\n  `exists_abs_poly_exp_regRadius_le` : polynomial bounds, uniform in `|ε| ≤ 1`.\n\n## iii. Table of contents\n\n- A. Green's identity for smooth functions\n- B. Derivatives of radial functions\n- C. Regularised radial profiles\n\n## iv. References\n\n- None.",
+   "copyright": "2026 Daniel Leonforte",
    "sections": [
     {
      "line": 53,
@@ -5547,13 +5608,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/Hydrogen/PauliSpectrum.lean",
    "module": "PhyslibAlpha.QuantumMechanics.Hydrogen.PauliSpectrum",
    "title": "Pauli's algebraic derivation of the hydrogen spectrum",
    "doc": "## i. Overview\n\nPauli (1926) obtained the bound-state energies of the hydrogen atom from the commutation\nrelations of the angular momentum `L`, the Laplace-Runge-Lenz vector `A` and the Hamiltonian\n`H` alone. On an eigenspace of `H` with eigenvalue `E < 0` the rescaled vector\n`K = A / √(-2mE)` makes `J = (L + K) / 2` a copy of `su(2)` (and likewise `(L - K) / 2`).\nBy `L · A = 0` and the relation for `A²`, its Casimir is the scalar\n`J² = -(ℏ² + m k² / (2E)) / 4`. Comparing with the Casimir `ℏ² j(j+1)` of `su(2)` gives\n`E = -m k² / (2 ℏ² n²)` with `n = 2j + 1`. The two copies `J₊ = (L + K) / 2` and\n`J₋ = (L - K) / 2` commute and have the same Casimir, so a common highest-weight vector\ngenerates `n²` linearly independent states: the eigenspace has dimension at least `n²`.\n\nThis file formulates the argument abstractly, independently of any functional analysis: the\noperators live on an arbitrary complex vector space and are only required to satisfy the\nrelations of `Physlib/QuantumMechanics/Hydrogen/LaplaceRungeLenzVector.lean` at `ε → 0`,\nin dimension `d = 3` (with `Lᵢ = ½ εᵢⱼₖ Lⱼₖ`).\n\n## ii. Key results\n\n- `PauliSystem` : operators `L`, `A`, `H` with the hydrogen commutation relations.\n- `PauliSystem.exists_energyLevel` : every nonzero finite-dimensional eigenspace of `H` with\n  eigenvalue `E < 0` has `E` equal to a Bohr level.\n- `PauliSystem.exists_energyLevel_le_finrank` : such an eigenspace, at the Bohr level with\n  principal quantum number `n`, has dimension at least `n²`.\n\n## iii. Table of contents\n\n- A. The abstract Pauli system\n- B. The `su(2)` generated by `L` and `K`\n- C. The Bohr levels\n- D. The degeneracy\n\n## iv. References\n\n- W. Pauli, *Über das Wasserstoffspektrum vom Standpunkt der neuen Quantenmechanik*,\n  Z. Phys. 36 (1926), 336–363, doi:10.1007/BF01450175.",
+   "copyright": "2026 Daniel Leonforte",
    "sections": [
     {
      "line": 63,
@@ -5767,13 +5830,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/Hydrogen/PolyBounded.lean",
    "module": "PhyslibAlpha.QuantumMechanics.Hydrogen.PolyBounded",
    "title": "Polynomially bounded functions and integrability on `Space d`",
    "doc": "## i. Overview\n\nA function `f : Space d → ℝ` is polynomially bounded if `|f y| ≤ C (1 + ‖y‖)^k`. Such functions\nform an algebra containing the coordinates, `‖y‖` and polynomials; multiplied by `e^(-c‖y‖)`\n(`c > 0`) they are square integrable, multiplied by a Schwartz map they are integrable, and for\n`d ≥ 2` this stays true after an additional factor `‖y‖⁻¹`.\n\n## ii. Key results\n\n- `IsPolyBounded` : at most polynomial growth `|f y| ≤ C (1 + ‖y‖)^k`.\n- `integrable_sq_of_le_mul_exp` : `f²` is integrable if `|f| ≤ |g| e^(-c‖y‖)` with `g` polynomially\n  bounded and `c > 0`.\n- `IsPolyBounded.integrable_ofReal_mul_schwartz` : polynomially bounded times Schwartz is\n  integrable.\n- `IsPolyBounded.integrable_inv_norm_mul` : the same with an extra factor `‖y‖⁻¹`, for `d ≥ 2`.\n\n## iii. Table of contents\n\n- A. Polynomially bounded functions\n- B. Exponential decay and integrability\n\n## iv. References\n\n- None.",
+   "copyright": "2026 Daniel Leonforte",
    "sections": [
     {
      "line": 48,
@@ -5955,13 +6020,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/Hydrogen/RadialCompleteness.lean",
    "module": "PhyslibAlpha.QuantumMechanics.Hydrogen.RadialCompleteness",
    "title": "Completeness of the regular radial solutions of hydrogen",
    "doc": "Every solution of the radial equation of hydrogen that vanishes at the origin is of the power\nseries form assumed in `RadialQuantization`. Together with `radial_quantization` this shows,\nwithout any ansatz, that a square integrable solution vanishing at the origin exists only for the\nBohr levels.\n\n## i. Overview\n\nIn Rydberg units the reduced radial function of a state of energy `-κ²` and angular momentum `l`\nsolves `u'' = q u` on `(0, ∞)` with `q(ρ) = l(l+1)/ρ² - 2/ρ + κ²` (`radialPot`). The origin is a\nregular singular point with indicial exponents `l + 1` and `-l`.\n\n- The Frobenius solution for the exponent `l + 1` is built explicitly: the coefficients\n  `regCoeff κ l` solve the recursion `RadialRec` with `c_0 = 1` and define an everywhere\n  convergent series (ratio test), and `radialSeries κ l (regCoeff κ l)` solves the radial equation\n  (`radial_ode_of_radialRec`). It behaves like `ρ^(l+1)` near `0`.\n- The second solution is never constructed. Instead, for any solution `u` the Wronskian\n  `u u₁' - u' u₁` with the regular solution `u₁` is constant; if it were non-zero, `u` would grow\n  like `ρ^(-l)` at `0` (and tend to a non-zero constant for `l = 0`). So `u → 0` forces the\n  Wronskian to vanish, and `u` is a multiple of `u₁` near `0`.\n- Uniqueness for the first-order system `(u, u')` (`ODE_solution_unique_of_mem_Ioo`) extends this\n  to all of `(0, ∞)`.\n\nThe boundary condition `u(ρ) → 0` as `ρ → 0⁺` is the physical one: for `l = 0` the second solution\ntends to a non-zero constant, so `u₂(r)/r ~ 1/r` near the origin, which lies in `L²(ℝ³)` but not in\nthe domain of the Hamiltonian.\n\n## ii. Key results\n\n- `entireCoeff_regCoeff`, `radial_ode_of_radialRec`: the regular solution.\n- `wronskian_eq_zero_of_tendsto`: a solution tending to `0` has vanishing Wronskian with it.\n- `eqOn_zero_of_eqOn_Ioo`: a solution vanishing near `0` vanishes on `(0, ∞)`.\n- `radial_regular_solution`: every solution vanishing at `0` is `radialSeries κ l c` for an\n  everywhere convergent `c` satisfying the recursion.\n- `radial_quantization_of_tendsto`: the quantisation of the hydrogen levels without the power\n  series ansatz.\n\n## iii. Table of contents\n\n- A. The regular solution\n- B. The regular solution near the origin and the Wronskian\n- C. Solutions vanishing at the origin\n- D. Uniqueness away from the origin\n- E. Completeness and quantisation\n\n## iv. References\n\n- J. J. Sakurai and J. Napolitano, *Modern Quantum Mechanics*, 3rd ed., Cambridge University\n  Press (2020), section 3.7.\n\n## A. The regular solution",
+   "copyright": "2026 Daniel Leonforte",
    "sections": [
     {
      "line": 152,
@@ -6103,13 +6170,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/Hydrogen/RadialFunctions.lean",
    "module": "PhyslibAlpha.QuantumMechanics.Hydrogen.RadialFunctions",
    "title": "The radial functions of the hydrogen atom",
    "doc": "The bound-state radial functions of the three-dimensional hydrogen atom, the radial\nSchrödinger equation they solve, and the expectation values `⟨1/r⟩`, `⟨1/r²⟩`, `⟨1/r³⟩` and\n`|R(0)|²` that enter the fine structure.\n\n## i. Overview\n\nIn units of the Bohr radius, with principal quantum number `ν` and `l < ν`,\n\n`u_{νl}(ρ) = ρ^(l+1) e^(-ρ/ν) L_{ν-l-1}^(2l+1)(2ρ/ν)`.\n\nWriting `u = Q e^(-ρ/ν)` with the polynomial `Q`, the radial equation\n`u'' = (l(l+1)/ρ² - 2/ρ + 1/ν²) u` becomes a polynomial identity that follows from the Laguerre\nequation at `x = 2ρ/ν` together with `(ν - l - 1) + l + 1 = ν` (`radialU_ode`). In physical units\nthis is the radial Schrödinger equation with eigenvalue `-Ry/ν²`, which is physlib's Bohr level\n`HydrogenAtom.energyLevel (ν - 1)` for `d = 3` (`radialFun_schrodinger`).\n\nThe substitution `x = 2ρ/ν` turns the moments `∫ u² ρ^(-k) dρ` into the Laguerre integrals of\n`Laguerre.lean`, which gives\n\n- `⟨1/ρ⟩ = 1/ν²`,\n- `⟨1/ρ²⟩ = 1/(ν³ (l + 1/2))`,\n- `⟨1/ρ³⟩ = 1/(ν³ l (l + 1/2)(l + 1))` for `l ≥ 1`,\n- `|R_{ν0}(0)|²/‖u‖² = 4/ν³`.\n\nThe functions are not normalised; all expectation values are quotients by `‖u‖²`. The\nseparation of the three-dimensional Schrödinger equation into spherical harmonics is not part of\nthis module.\n\n## ii. Key results\n\n- `radialU`, `radialR`: the radial functions `u_{νl}` and `R_{νl} = u_{νl}/ρ`.\n- `radialU_ode`: the radial equation in atomic units.\n- `radialFun_schrodinger`: the radial Schrödinger equation in physical units.\n- `radialMoment_zero`: `‖u_{νl}‖² = (ν/2)^(2l+3) (ν + l)!/(ν - l - 1)! · 2ν`.\n- `radialMean_one`, `radialMean_two`, `radialMean_three`: the expectation values.\n- `radialR_zero_sq_div`: the density at the origin for `s` states.\n\n## iii. Table of contents\n\n- A. Polynomial times exponential\n- B. The radial functions and the radial equation\n- C. Radial moments and expectation values\n- D. The value at the origin\n- E. Physical units\n\n## iv. References\n\n- H. A. Bethe and E. E. Salpeter, *Quantum Mechanics of One- and Two-Electron Atoms*, Springer\n  (1957).\n- J. J. Sakurai and J. Napolitano, *Modern Quantum Mechanics*, 3rd ed., Cambridge University\n  Press (2020), section 3.7.\n\n## A. Polynomial times exponential",
+   "copyright": "2026 Daniel Leonforte",
    "sections": [
     {
      "line": 93,
@@ -6363,13 +6432,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/Hydrogen/RadialQuantization.lean",
    "module": "PhyslibAlpha.QuantumMechanics.Hydrogen.RadialQuantization",
    "title": "Quantisation of the hydrogen levels",
    "doc": "Why the bound-state energies of hydrogen are discrete: a square integrable solution of the radial\nequation of the form `ρ^(l+1) e^(-κρ) × (power series)` exists only for `κ = 1/ν` with a natural\nnumber `ν > l`, and is then the radial function `u_{νl}` of `RadialFunctions`.\n\n## i. Overview\n\nIn Rydberg units a bound state of energy `-κ²`, `κ > 0`, and angular momentum `l` has a reduced\nradial function solving\n\n`u'' = (l(l+1)/ρ² - 2/ρ + κ²) u`   on `(0, ∞)`.\n\nWe take the standard ansatz `u(ρ) = ρ^(l+1) e^(-κρ) Σ_k c_k ρ^k` with an everywhere convergent\npower series and `c_0 ≠ 0` (`radialSeries`). Then:\n\n- the series can be differentiated termwise (`hasDerivAt_psum`), and the radial equation turns\n  into `ρ W'' + (2l + 2 - 2κρ) W' + (2 - 2κ(l + 1)) W = 0` for `W = Σ c_k ρ^k`; comparing\n  coefficients (`coeff_eq_zero_of_psum`) gives the recursion\n  `(k + 1)(k + 2l + 2) c_{k+1} = (2κ(k + l + 1) - 2) c_k` (`recursion_of_radial_ode`);\n- if `κ(N + l + 1) = 1` for some `N`, the recursion stops after `c_N` and reproduces the Laguerre\n  polynomial `L_N^(2l+1)(2κρ)`, so `u` is a multiple of `u_{νl}` with `ν = N + l + 1`\n  (`radialSeries_eq_of_terminating`);\n- otherwise all `c_k` are non-zero and eventually `c_{k+1}/c_k ≥ (3κ/2)/(k + 1)`, so\n  `W(ρ) ≥ δ e^(3κρ/2) - (polynomial)`; then `u(ρ)² ≥ 1` for large `ρ` and `u` is not square\n  integrable (`not_integrableOn_of_nonterminating`).\n\nTogether this is `radial_quantization`: normalisability forces `E = -1/ν²`.\n\nWhat is assumed here: the power series ansatz, i.e. that the solution regular at the origin is\n`ρ^(l+1) e^(-κρ)` times an entire function. That every solution with `u(ρ) → 0` as `ρ → 0⁺` has\nthis form is `radial_regular_solution` in `RadialCompleteness`, which also states the\nquantisation without the ansatz (`radial_quantization_of_tendsto`).\n\n## ii. Key results\n\n- `hasDerivAt_psum`, `coeff_eq_zero_of_psum`: termwise differentiation and the identity theorem\n  for everywhere convergent power series on `(0, ∞)`.\n- `recursion_of_radial_ode`: the coefficient recursion.\n- `radialSeries_eq_of_terminating`: the terminating solutions are the hydrogen radial functions.\n- `not_integrableOn_of_nonterminating`: non-terminating solutions are not normalisable.\n- `radial_quantization`: the quantisation of the hydrogen levels.\n\n## iii. Table of contents\n\n- A. Power series with infinite radius of convergence\n- B. The radial equation for a power series ansatz\n- C. Terminating series: the Laguerre polynomials\n- D. Non-terminating series are not normalisable\n- E. Quantisation\n\n## iv. References\n\n- J. J. Sakurai and J. Napolitano, *Modern Quantum Mechanics*, 3rd ed., Cambridge University\n  Press (2020), section 3.7.\n- H. A. Bethe and E. E. Salpeter, *Quantum Mechanics of One- and Two-Electron Atoms*, Springer\n  (1957).\n\n## A. Power series with infinite radius of convergence",
+   "copyright": "2026 Daniel Leonforte",
    "sections": [
     {
      "line": 238,
@@ -6655,13 +6726,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/QuantumHarmonicOscillator.lean",
    "module": "PhyslibAlpha.QuantumMechanics.QuantumHarmonicOscillator",
    "title": "Quantum harmonic oscillator",
    "doc": "Ladder operators, commutation relation and coherent states of the quantum harmonic oscillator.\n\n## i. Overview\n\nThe one-dimensional quantum harmonic oscillator in the number basis, with states modelled as\nsequences `ℕ → ℂ`. The annihilation operator `a` and creation operator `a_dag` act by\n`a |n + 1⟩ = √(n + 1) |n⟩` and `a† |n⟩ = √(n + 1) |n + 1⟩`, and satisfy the canonical commutation\nrelation `a a† - a† a = 1`. The coherent states are the eigenvectors of `a`; their number\ndistribution is Poisson, and they lie in `ℓ²`. The creation operator has no eigenvectors.\n\n## ii. Key results\n\n- `a`, `a_dag` : the annihilation and creation operators.\n- `aLin`, `a_dagLin` : the annihilation and creation operators as linear maps.\n- `commutation_relation`, `commutationRelation` : the canonical commutation relation.\n- `coherentState` : the coherent state with parameter `α`.\n- `probabilityOf_eq_poisson_C` : a coherent state has a Poisson number distribution.\n- `coherentState_only_eigenvector` : the only eigenvectors of `a` are the coherent states.\n- `no_a_dag_eigenvector` : `a_dag` has no nonzero eigenvectors.\n- `coherentState_ℓ2` : the coherent state as an element of `ℓ²(ℂ)`.\n\n## iii. Table of contents\n\n- A. The ladder operators\n- B. Matrix elements and the commutation relation\n- C. Coherent states\n- D. Eigenvectors of the creation operator\n- E. The commutation relation for linear maps\n- F. Coherent states in ℓ²\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Bjørn Kjos-Hanssen",
    "sections": [
     {
      "line": 51,
@@ -6867,13 +6940,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/QubitGates.lean",
    "module": "PhyslibAlpha.QuantumMechanics.QubitGates",
    "title": "Real rotations of a qubit and multiplexed gates",
    "doc": "The rotation `Ry` of a qubit given by its cosine and sine, and gates controlled by the value of a\nregister.\n\n## i. Overview\n\nFor real `c`, `s` with `c² + s² = 1` the matrix `!![c, -s; s, c]` is a unitary gate on a qubit,\n`ry c s h`. With `c = cos (θ/2)` and `s = sin (θ/2)` it is the rotation by `θ` about the `y`-axis;\ngiving it by `c` and `s` avoids trigonometric functions when the entries are square roots.\n\nFor a family of unitary gates `g r` on `k`, indexed by the values `r` of a register `ι`, the\nmultiplexed gate `multiplex g` on `ι × k` applies `g r` when the register is in the state `|r⟩`:\n`Σ_r |r⟩⟨r| ⊗ g r`. Up to the order of the factors it is the block-diagonal matrix\n`Matrix.blockDiagonal` of the `g r`, which is unitary since each block is.\n\n## ii. Key results\n\n- `ry`: the rotation `!![c, -s; s, c]` as a unitary gate for `c² + s² = 1`.\n- `blockDiagonal_mem_unitaryGroup`: a block-diagonal matrix of unitary blocks is unitary.\n- `multiplex`, `multiplex_apply`: the gate `Σ_r |r⟩⟨r| ⊗ g r` and its entries.\n\n## iii. Table of contents\n\n- A. The rotation `Ry`\n- B. Multiplexed gates\n\n## iv. References\n\n- The gates and the notation `𝐔[·]` are those of `QuantumInfo.States.Pure.Qubit`.\n\n## A. The rotation `Ry`",
+   "copyright": "2026 Daniel Leonforte",
    "sections": [
     {
      "line": 68,
@@ -6923,13 +6998,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/QuantumMechanics/StinespringDilation.lean",
    "module": "PhyslibAlpha.QuantumMechanics.StinespringDilation",
    "title": "Stinespring dilation",
    "doc": "Kraus maps, the Stinespring isometry and unitary dilation, and completion of Kraus families.\n\n## i. Overview\n\nCompletely positive maps on matrices over an `RCLike` field, given by a Kraus family `K`, act as\n`krausApply K ρ = ∑ i, K i * ρ * (K i)ᴴ`. The Stinespring operator `stinespringOp K` (often `V`)\nstacks the Kraus operators into one matrix, and the Kraus map is recovered as the partial trace of\n`V ρ Vᴴ`. For a trace-preserving family `V` is an isometry; its columns are extended to an\northonormal basis to build a unitary dilation `Ud`, which acts on `ρ` tensored with an ancilla\nstate. A trace non-increasing family is completed to a trace-preserving one by adding one extra\nKraus operator.\n\nThere is a different version of the Stinespring dilation in `QuantumInfo.Channels.CPTP`; see the\nTODO in this file about unifying the two.\n\n## ii. Key results\n\n- `krausApply` : the completely positive map of a Kraus family.\n- `IsKrausChannel`, `QuantumOperation` : trace-preserving and trace non-increasing Kraus families.\n- `densityMatrix` : density matrices.\n- `tr₂` : the partial trace over the second factor.\n- `stinespringOp` : the Stinespring isometry `V`.\n- `stinespringForm_CPTP_isometry` : `V` is an isometry for a trace-preserving family.\n- `Ud`, `Ud_unitary` : the unitary dilation, and its unitarity.\n- `stinespringGeneralForm_works`, `stinespringUnitaryForm_works` : the dilation forms reproduce\n  `krausApply K`.\n- `krausCompletion`, `krausCompletion_isometry_of_TNI` : the completion of a trace non-increasing\n  family, and its isometry property.\n- `CPTP_of_CPTNI` : every quantum operation extends to a quantum channel.\n- `stinespringForm_eq` : a version of the Stinespring dilation theorem,\n  `tr₂ (stinespringDilation K ρ) = krausApply K ρ`.\n\n## iii. Table of contents\n\n- A. Kraus maps and density matrices\n- B. The Stinespring isometry\n- C. Extending the Stinespring columns to an orthonormal basis\n- D. The unitary dilation\n- E. Stinespring forms\n- F. The Kraus completion\n- G. Partial traces and unitary dilations\n- H. Completing quantum operations to channels\n- I. The Stinespring dilation theorem\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Bjørn Kjos-Hanssen",
    "sections": [
     {
      "line": 75,
@@ -7419,7 +7496,8 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 1
   }
  ]
 }

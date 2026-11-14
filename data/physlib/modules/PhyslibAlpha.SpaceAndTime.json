@@ -7,6 +7,7 @@
    "module": "PhyslibAlpha.SpaceAndTime.Space.Surfaces.HalfPlane",
    "title": "Half-plane surface in `Space 3`",
    "doc": "The half-plane in `Space 3` with its measure, distribution and vanishing ambient volume.\n\n## i. Overview\n\nThe half-plane is the coordinate plane in `Space 3` with nonnegative second\ncoordinate. It is the image of the domain `halfPlaneDomain` in `Space 2` under the coordinate\nplane embedding `halfPlane`. Pushing forward the restricted volume gives the measure\n`halfPlaneMeasure`, and integrating against it gives the distribution `halfPlaneDist`. The\nhalf-plane lies in a proper linear subspace, so it has ambient volume zero.\n\n## ii. Key results\n\n- `halfPlaneDomain` : the domain of the half-plane inside `Space 2`.\n- `halfPlane` : the coordinate plane embedding of `Space 2` into `Space 3`.\n- `halfPlaneMeasure` : the measure corresponding to integration over the half-plane.\n- `halfPlaneDist` : the distribution corresponding to integration over the half-plane.\n- `volume_halfPlane_image_domain` : the half-plane has ambient volume zero.\n\n## iii. Table of contents\n\n- A. The definition of the half-plane surface\n- B. The measure associated with the half-plane\n- C. The distribution associated with the half-plane\n- D. The half-plane has ambient volume zero\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Robert Sneiderman",
    "sections": [
     {
      "line": 55,
@@ -172,13 +173,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/SpaceAndTime/Space/Surfaces/Line.lean",
    "module": "PhyslibAlpha.SpaceAndTime.Space.Surfaces.Line",
    "title": "Line surfaces in `Space d`",
    "doc": "The coordinate line in `Space d` with its measure, distribution and vanishing ambient volume.\n\n## i. Overview\n\nThe line surface is the coordinate line in `Space d`, the image of `ℝ` under the embedding\n`line d`. Pushing forward the volume on `ℝ` gives the measure `lineMeasure d`, and integrating\nagainst it gives the distribution `lineDist d`, roughly the integral of a test function against a\ndensity concentrated on a line. For `2 ≤ d` the line lies in a proper linear subspace, so it has\nambient volume zero.\n\n## ii. Key results\n\n- `line` : the coordinate line embedded in `Space d`.\n- `lineMeasure` : the measure corresponding to integration along the line.\n- `lineDist` : the distribution corresponding to integration along the line.\n- `lineSubmodule` : the linear subspace spanned by the line.\n- `volume_line_range` : for `2 ≤ d` the line has ambient volume zero.\n\n## iii. Table of contents\n\n- A. The definition of the line surface\n- B. The measure associated with the line\n- C. The distribution associated with the line\n- D. The line has ambient volume zero\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Robert Sneiderman",
    "sections": [
     {
      "line": 53,
@@ -328,13 +331,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/SpaceAndTime/Space/Surfaces/Ring.lean",
    "module": "PhyslibAlpha.SpaceAndTime.Space.Surfaces.Ring",
    "title": "Ring surface in `Space 3`",
    "doc": "The unit ring in `Space 3` with its measure and the distribution of integration around it.\n\n## i. Overview\n\nThe ring surface is the unit circle `S¹` of `Space 2`, embedded into `Space 3` by `ring`. Pushing\nforward the measure on the sphere gives the finite measure `ringMeasure`, of total mass `2π`, and\nintegrating against it gives the distribution `ringDist`. The file also gives integrability\ncriteria for continuous functions and the invariance of `ringMeasure.prod volume` under a shear.\n\n## ii. Key results\n\n- `ring` : the embedding of the unit circle into `Space 3`.\n- `ringMeasure` : the measure corresponding to integration around the ring.\n- `ringMeasure_univ` : the total mass of the ring measure is `2π`.\n- `integrable_ringMeasure_of_continuous` : continuous functions on the ring are integrable.\n- `ringDist` : the distribution corresponding to integration around the ring.\n- `ringDist_eq_integral_delta` : `ringDist` as an integral of Dirac deltas over the ring.\n\n## iii. Table of contents\n\n- A. The definition of the ring surface\n- B. The measure associated with the ring\n- C. The distribution associated with the ring\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 53,
@@ -488,13 +493,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidCylinder.lean",
    "module": "PhyslibAlpha.SpaceAndTime.Space.Surfaces.SolidCylinder",
    "title": "Solid cylinder surface in `Space 3`",
    "doc": "The solid unit cylinder in `Space 3` with its measure, distribution and positive volume.\n\n## i. Overview\n\nThe solid cylinder is the closed unit disk in `Space 2` extruded along the third coordinate.\nIt is the solid analogue of the spherical cylinder, in the same way that the solid sphere is the\nsolid analogue of the spherical shell. Like the solid sphere it is a region of positive ambient\nvolume, so the measure associated with it is built from the ambient volume of the cross-sectional\ndisk (the solid-sphere measure in `Space 2`) extruded along the axis, rather than a pushforward of\na lower-dimensional surface measure. The measure-zero requirement is therefore not applicable here\nand is replaced by a statement that the solid cylinder has positive ambient volume.\n\n## ii. Key results\n\n- `solidCylinder` : the embedding of a cross-sectional disk extruded along the axis.\n- `solidCylinderMeasure` : the measure corresponding to integration over the solid cylinder.\n- `solidCylinderDist` : the distribution corresponding to integration over the solid cylinder.\n- `solidCylinderMeasure_univ_pos` : the solid cylinder has positive measure.\n\n## iii. Table of contents\n\n- A. The definition of the solid cylinder surface\n- B. The measure associated with the solid cylinder\n- C. The distribution associated with the solid cylinder\n- D. The solid cylinder has positive ambient volume\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Robert Sneiderman",
    "sections": [
     {
      "line": 56,
@@ -620,13 +627,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/SpaceAndTime/Space/Surfaces/SolidSphere.lean",
    "module": "PhyslibAlpha.SpaceAndTime.Space.Surfaces.SolidSphere",
    "title": "Solid sphere surfaces in `Space d`",
    "doc": "The closed unit ball in `Space d` with its measure, distribution and positive volume.\n\n## i. Overview\n\nThe solid sphere is the closed unit ball in `Space d`. Unlike the line or the spherical\nshell, it is a region of positive ambient volume, so the measure associated with it is the\nambient volume restricted to the ball rather than a pushforward of a lower-dimensional measure.\nThe requirement that the surface has ambient measure zero is therefore not applicable here, and\nis replaced by a statement that the solid sphere has positive ambient volume.\n\n## ii. Key results\n\n- `solidSphere` : the inclusion of the closed unit ball into `Space d`.\n- `solidSphereMeasure` : the measure corresponding to integration over the solid sphere.\n- `solidSphereDist` : the distribution corresponding to integration over the solid sphere.\n- `solidSphere_volume_pos`, `solidSphereMeasure_univ_pos` : the solid sphere has positive volume.\n\n## iii. Table of contents\n\n- A. The definition of the solid sphere surface\n- B. The measure associated with the solid sphere\n- C. The distribution associated with the solid sphere\n- D. The solid sphere has positive ambient volume\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Robert Sneiderman",
    "sections": [
     {
      "line": 52,
@@ -752,13 +761,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/SpaceAndTime/Space/Surfaces/SphericalCylinder.lean",
    "module": "PhyslibAlpha.SpaceAndTime.Space.Surfaces.SphericalCylinder",
    "title": "Spherical cylinder surface in `Space 3`",
    "doc": "The unit spherical cylinder in `Space 3` with its measure and distribution.\n\n## i. Overview\n\nThe spherical cylinder is the unit circular shell in `Space 2` extruded along the\nthird coordinate. The embedding `sphericalCylinder` pushes forward the product of the sphere\nmeasure and the volume on the axis to give `sphericalCylinderMeasure`, and integrating against it\ngives the distribution `sphericalCylinderDist`.\n\n## ii. Key results\n\n- `sphericalCylinder` : the embedding of the unit circle extruded along the axis.\n- `sphericalCylinderMeasure` : the measure corresponding to integration over the cylinder.\n- `sphericalCylinderDist` : the distribution corresponding to integration over the cylinder.\n\n## iii. Table of contents\n\n- A. The definition of the spherical cylinder surface\n- B. The measure associated with the spherical cylinder\n- C. The distribution associated with the spherical cylinder\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Robert Sneiderman",
    "sections": [
     {
      "line": 51,
@@ -872,13 +883,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/SpaceAndTime/Space/Surfaces/SphericalShell.lean",
    "module": "PhyslibAlpha.SpaceAndTime.Space.Surfaces.SphericalShell",
    "title": "Spherical surfaces on Space",
    "doc": "The unit sphere in `Space d` with its measure and the distribution of integration over it.\n\n## i. Overview\n\nThe spherical shell is the unit sphere `S^{d-1}` of `Space d`, included by `sphericalShell d`.\nPushing forward the sphere measure gives `sphericalShellMeasure d`, and integrating against it\ngives the distribution `sphericalShellDist d`, which one can roughly think of as taking a test\nfunction to its integral against a mass, charge or current distribution on the shell.\n\n## ii. Key results\n\n- `sphericalShell` : the inclusion of the unit sphere into `Space d`.\n- `sphericalShellMeasure` : the measure corresponding to integration over the spherical shell.\n- `sphericalShellDist` : the distribution corresponding to integration over the spherical shell.\n\n## iii. Table of contents\n\n- A. The definition of the spherical shell surface\n- B. The measure associated with the spherical shell\n- C. The distribution associated with the spherical shell\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 51,
@@ -976,13 +989,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/SpaceAndTime/SpaceTime/Fields.lean",
    "module": "PhyslibAlpha.SpaceAndTime.SpaceTime.Fields",
    "title": "Smooth fields and distributions on spacetime",
    "doc": "Smooth fields form a local space of functions on `SpaceTime d` with derivatives.\n\n## i. Overview\n\nSmooth fields form a local space of functions on `SpaceTime d` with derivatives. Distribution fields\nare the distributions with values in a normed space.\n\n## ii. Key results\n\n- `smoothFields` : Smooth spacetime fields with values in a fixed real vector space.\n- `TestField` : Smooth compactly supported test fields on Minkowski spacetime.\n- `smoothDerivative` : The existing spacetime derivative restricted to smooth fields.\n- `smoothFiberMap` : Apply a constant continuous linear transformation to each field value.\n- `DistributionField` : Distributional fields on all of Minkowski spacetime use Mathlib's native\n  continuous dual.\n- `testFunctionEquiv` : The existing compact smooth test fields are Mathlib test functions on the\n  whole spacetime.\n\n## iii. Table of contents\n\n- A. Smooth Minkowski fields\n- B. Minkowski test fields and distributions\n\n## iv. References\n\nNone.\n\n## A. Smooth Minkowski fields\n\n- `smoothFields` : Smooth spacetime fields with values in a fixed real vector space.\n- `TestField` : Smooth compactly supported test fields on Minkowski spacetime.\n- `smoothDerivative` : The existing spacetime derivative restricted to smooth fields.\n- `smoothFiberMap` : Apply a constant continuous linear transformation to each field value.\n\nLemmas: `smoothFields_contDiff`, `smoothFields_isLocal`, `smoothDerivative_coe`,\n`smoothDerivative_support`, `smoothField_support_sum`, `smoothFiberMap_derivative`.\n\n## B. Minkowski test fields and distributions\n\n- `DistributionField` : Distributional fields on all of Minkowski spacetime use Mathlib's native\n  continuous dual.\n- `testFunctionEquiv` : The existing compact smooth test fields are Mathlib test functions on the\n  whole spacetime.",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [],
    "declarations": [
     {
@@ -1083,13 +1098,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Basic.lean",
    "module": "PhyslibAlpha.SpaceAndTime.SpaceTime.SpaceTimeAlgebra.Basic",
    "title": "Star, derivatives, truncation and the Euler operator on the jet ring",
    "doc": "The further structure the jet ring of spacetime carries, beyond its ring structure.\n\n## i. Overview\n\n`Physlib.SpaceAndTime.SpaceTime.SpaceTimeAlgebra.Basic` carries `SpaceTimeAlgebra`, the ring of\nformal power series in the spacetime coordinates, which is the ring of jets of a field at a\npoint. Four further pieces of structure on it are developed here, each needed to state a\nLagrangian as an element of a jet algebra.\n\nThe star operation is coefficientwise complex conjugation, fixing the formal variables: the\nspacetime coordinates are self-adjoint. It makes the jet ring a `StarRing` and a `StarModule`\nover both `ℝ` and `ℂ`, and `starConjEquiv` identifies the conjugate module of the jet ring with\nthe jet ring itself, honestly `ℂ`-linearly, since the conjugate-linearity of `star` cancels\nagainst the twisted scalar action. That is what identifies the jets of a conjugate field with\nthe conjugates of the jets.\n\nThe formal partial derivative commutes with the star, and the iterated derivative\n`iteratedPDeriv` is additive, homogeneous and satisfies a Leibniz rule over the antidiagonal of\nthe multiset of directions; `constantCoeff_iteratedPDeriv_mul` is the form a component\ncomputation uses.\n\nThe truncation `truncation n` sets the Taylor coefficients of total degree above `n` to zero.\n\nFinally the Euler operator `∑ x^ρ ∂_ρ` detects jets: a jet with vanishing constant coefficient\nkilled by the Euler operator is zero, and `coeff_eq_zero_of_coeff_pderiv_eq_zero` is the graded\nform of that statement, where control of the first derivatives below degree `n` controls the\ncoefficients up to degree `n`.\n\n## ii. Key results\n\n- `SpaceTimeAlgebra.coeff_star`, `SpaceTimeAlgebra.star_X` : the star is coefficientwise, and\n  the coordinates are self-adjoint.\n- `SpaceTimeAlgebra.starConjEquiv` : the conjugate module of the jet ring is the jet ring.\n- `SpaceTimeAlgebra.pderiv_star`, `SpaceTimeAlgebra.iteratedPDeriv_mul` : the derivative\n  commutes with the star, and the Leibniz rule for iterated derivatives.\n- `SpaceTimeAlgebra.truncation` : the truncation of a jet.\n- `SpaceTimeAlgebra.eq_zero_of_sum_X_smul_pderiv_eq_zero` : the Euler operator detects jets.\n- `SpaceTimeAlgebra.coeff_eq_zero_of_coeff_pderiv_eq_zero` : its graded form.\n\n## iii. Table of contents\n\n- A. The star structure on the jet ring\n- B. The formal partial derivative\n- C. Truncation of jets\n- D. The Euler operator\n  - D.1. The Euler vanishing principle by degree\n\n## iv. References\n\nThe jet ring itself is in `Physlib.SpaceAndTime.SpaceTime.SpaceTimeAlgebra.Basic`.",
+   "copyright": "2026 Jinzheng Li",
    "sections": [
     {
      "line": 71,
@@ -1339,13 +1356,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Jacobi.lean",
    "module": "PhyslibAlpha.SpaceAndTime.SpaceTime.SpaceTimeAlgebra.Jacobi",
    "title": "Jacobi's formula for matrices of jets",
    "doc": "## i. Overview\n\nJacobi's formula `∂ det M = tr (∂M · adj M)` for a square matrix of jets, in the generality\nneeded by the jets of any special unitary group: it is what makes the Maurer–Cartan form\n`i (∂U) U⁻¹` of an `SU(n)` jet traceless, since `det U = 1` and `U⁻¹ = adj U`.\n\n## ii. Key results\n\n- `SpaceTimeAlgebra.pderiv_finset_prod` : the Leibniz rule for a finite product.\n- `SpaceTimeAlgebra.jacobi` : Jacobi's formula.\n\n## iii. Table of contents\n\n- A. The Leibniz rule for a finite product\n- B. Jacobi's formula\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Jinzheng Li",
    "sections": [
     {
      "line": 42,
@@ -1375,13 +1394,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Matrix.lean",
    "module": "PhyslibAlpha.SpaceAndTime.SpaceTime.SpaceTimeAlgebra.Matrix",
    "title": "Matrices over the jet ring",
    "doc": "## i. Overview\n\nResults about matrices with entries in `SpaceTimeAlgebra`, chiefly the Euler (radial) transport: a\nmatrix of jets vanishing at the base point is the radial logarithmic derivative of a formal\nfundamental solution.\n\n## ii. Key results\n\n- `mapMatrix_constantCoeff_star` : entrywise evaluation at the base point commutes with the\n  conjugate transpose\n- `coeff_sum_X_smul_map_pderiv` : the Euler operator on matrices of jets acts entrywise on Taylor\n  coefficients as multiplication by the total degree\n- `matrix_eq_zero_of_euler_eq_mul_add_mul` : the vanishing principle for the Euler operator: a\n  matrix of jets vanishing at the base point and satisfying `E W = A W + W B` with `A`, `B`\n  vanishing at the base point is zero\n- `exists_matrix_eulerTransport` : the Euler (radial) transport of a jet matrix `R` vanishing at the\n  base point: a fundamental solution of the radial system `E U = R U` based at the identity, built\n  order-by-order by the Euler recursion\n\n## iii. Table of contents\n\n- A. The Euler operator toolkit on matrices\n- B. The Euler vanishing principle by degree on matrices\n- C. Unitarity and determinant of the Euler transport\n- D. The Leibniz rule at the base point for matrices of power series\n- E. Conjugation, scalars and derivatives of matrices of jets\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 54,
@@ -1591,13 +1612,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeAlgebra/Taylor.lean",
    "module": "PhyslibAlpha.SpaceAndTime.SpaceTime.SpaceTimeAlgebra.Taylor",
    "title": "Taylor determinacy and completeness of jets",
    "doc": "## i. Overview\n\nA jet is determined by the base-point values of its iterated derivatives, and a jet all of\nwhose first derivatives vanish is the constant jet of its value. These are the two facts\nthat make the jets of a matrix gauge group a faithful package of local gauge data, in the\nsense of `LocalGaugeData.Faithful`. Conversely every family of base-point Taylor data is\nrealized by a jet, `ofDerivValues`, and entrywise by a matrix of jets, `taylorMatrix`: this\nis the Taylor completeness half of `LocalGaugeData.Free`.\n\n## ii. Key results\n\n- `SpaceTimeAlgebra.ext_of_constantCoeff_iteratedPDeriv` : Taylor determinacy.\n- `SpaceTimeAlgebra.eq_C_of_pderiv_eq_zero` : a jet with vanishing derivatives is constant.\n- `SpaceTimeAlgebra.ofDerivValues` :\n  Taylor completeness.\n- `SpaceTimeAlgebra.taylorMatrix` : Taylor completeness for matrices of jets.\n\n## iii. Table of contents\n\n- A. Taylor completeness\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Jinzheng Li",
    "sections": [
     {
      "line": 46,
@@ -1663,13 +1686,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/SpaceAndTime/SpaceTime/SpaceTimeDerivAlgebra.lean",
    "module": "PhyslibAlpha.SpaceAndTime.SpaceTime.SpaceTimeDerivAlgebra",
    "title": "Derivative algebras",
    "doc": "## i. Overview\n\n\n## ii. Key results\n\n- `SpaceTimeDerivAlgebraℂ` : the ℂ-algebra of derivative symbols in spacetime\n- `basis` : the basis of the algebra of derivative symbols, indexed by multisets of spacetime\n  indices: the multiset `s` labels the monomial `∂_s`\n- `basis_apply_symmetricAlgebra` : the basis vector at a multiset of derivative indices is the\n  monomial of the symmetric algebra of dual symbols\n- `basis_nil` : the basis vector at the empty multiset is the unit of the algebra: the zeroth-order\n  symbol carries no derivatives\n\n## iii. Table of contents\n\n- A. The complex derivative algebra\n  - A.1. The basis indexed by multisets\n  - A.2. The derivative operator\n  - A.3. Evaluating on the Jet ring\n  - A.4. The action of the Jet ring\n  - A.5. The action of the Lorentz group\n  - A.6. The derivative-degree scaling\n  - A.7. The derivative-degree polynomial\n- B. The real derivative algebra\n- C. The multiset basis of `SpaceTimeDerivAlgebraℝ`\n- D. The derivative-degree polynomial on the real derivative algebra\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 51,
@@ -2223,7 +2248,8 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   }
  ]
 }

@@ -44,10 +44,6 @@ The module `PhyslibAlpha.Particles.QED.CurrentCoupling`, [PhyslibAlpha/Particles
 
 > …
 
-> …
-
-> …
-
 ## A. The minimal-coupling decomposition of the kinetic term
 
 > The photon coordinates commute with the fermion coordinates

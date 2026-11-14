@@ -7,6 +7,7 @@
    "module": "PhyslibAlpha.Basic",
    "title": "PhyslibAlpha",
    "doc": "The entry point of PhyslibAlpha, an extension of Physlib with a lighter review process.\n\n## i. Overview\n\nPhyslibAlpha is an extension of Physlib with a lighter review process.\nWe expect the file structure to match where possible that of Physlib.\n\nThis file contains no declarations; it documents the purpose and review policy of the project.\n\n## ii. Key results\n\n* None: this file contains only documentation.\n\n## iii. Table of contents\n\n- A. Review policy\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 34,
@@ -15,7 +16,8 @@
    ],
    "declarations": [],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   }
  ]
 }

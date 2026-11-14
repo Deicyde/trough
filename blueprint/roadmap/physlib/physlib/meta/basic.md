@@ -211,11 +211,15 @@ def noLines : IO Nat
 
 **`Physlib.noTODOs`**, a def, [line 220](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Meta/Basic.lean#L220).
 
+> The number of TODO items.
+
 ```lean
 def noTODOs : IO Nat
 ```
 
 **`Physlib.noFilesWithTODOs`**, a def, [line 226](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Meta/Basic.lean#L226).
+
+> The number of files with a TODO item.
 
 ```lean
 def noFilesWithTODOs : IO Nat

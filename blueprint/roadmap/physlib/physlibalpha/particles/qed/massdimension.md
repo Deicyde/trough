@@ -48,10 +48,6 @@ The module `PhyslibAlpha.Particles.QED.MassDimension`, [PhyslibAlpha/Particles/Q
 
 > …
 
-> …
-
-> …
-
 ## A. The scaling of the jet coordinates
 
 > The photon-level scaling of the field strength and the Maxwell term, used to

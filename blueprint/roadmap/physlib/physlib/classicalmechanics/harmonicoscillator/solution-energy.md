@@ -8,7 +8,7 @@ proof: formalized
 
 # The energy of the trajectories
 
-The module `Physlib.ClassicalMechanics.HarmonicOscillator.Solution.Energy`, [Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Energy.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Energy.lean): 1 declaration, 0 with a docstring.
+The module `Physlib.ClassicalMechanics.HarmonicOscillator.Solution.Energy`, [Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Energy.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Energy.lean): 1 declaration, none with a docstring.
 
 ## i. Overview
 

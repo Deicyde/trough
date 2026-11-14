@@ -8,7 +8,7 @@ proof: formalized
 
 # QuantumInfo.ForMathlib.Filter
 
-The module `QuantumInfo.ForMathlib.Filter`, [QuantumInfo/ForMathlib/Filter.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/Filter.lean): 2 declarations, 0 with a docstring.
+The module `QuantumInfo.ForMathlib.Filter`, [QuantumInfo/ForMathlib/Filter.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/Filter.lean): 2 declarations, none with a docstring.
 
 **`Filter.Tendsto_inv_nat_mul_div_real`**, a lemma, [line 18](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/Filter.lean#L18).
 

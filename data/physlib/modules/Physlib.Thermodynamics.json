@@ -7,16 +7,19 @@
    "module": "Physlib.Thermodynamics.Basic",
    "title": "Thermodynamics",
    "doc": "This directory is currently a place holder.\nPlease feel free to contribute!\n\nSome directories which are NOT currently place holders are:\n- Mathematics\n- Meta\n- Particles\n- QFT\n- Quantum Mechanics\n- Relativity",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Thermodynamics/IdealGas/Basic.lean",
    "module": "Physlib.Thermodynamics.IdealGas.Basic",
    "title": "Ideal gas: basic entropy and adiabatic relations",
    "doc": "In this module we formalize a simple thermodynamic model of a monophase\nideal gas. We:\n\n* Define the entropy\n    S(U,V,N) = N s₀ + N R (c \\log(U/U₀) + \\log(V/V₀) - (c+1)\\log(N/N₀)),\n* Prove equivalent formulations of the adiabatic relation for two states\n  (U_a, V_a) and (U_b, V_b) at fixed N:\n\n  1. c \\log(U_a/U_b) + \\log(V_a/V_b) = 0,\n  2. (U_a/U_b)^c (V_a/V_b) = 1,\n  3. U_a^c V_a = U_b^c V_b (the latter follows from (2)).",
+   "copyright": "2025 Fabio Anza",
    "sections": [],
    "declarations": [
     {
@@ -45,13 +48,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Thermodynamics/Temperature/Basic.lean",
    "module": "Physlib.Thermodynamics.Temperature.Basic",
    "title": "Temperature",
    "doc": "In this module we define the type `Temperature`, corresponding to the temperature in a given\n(but arbitrary) set of units which have absolute zero at zero.\n\nThis is the version of temperature most often used in undergraduate and\nnon-mathematical physics.\n\nThe choice of units can be made on a case-by-case basis, as long as they are done consistently.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 97,
@@ -321,13 +326,15 @@
     }
    ],
    "private": 1,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Thermodynamics/Temperature/TemperatureUnits.lean",
    "module": "Physlib.Thermodynamics.Temperature.TemperatureUnits",
    "title": "Units on Temperature",
    "doc": "A unit of temperature corresponds to a choice of translationally-invariant\nmetric on the temperature manifold (to be defined diffeomorphic to `ℝ≥0`).\nSuch a choice is (non-canonically) equivalent to a\nchoice of positive real number. We define the type `TemperatureUnit` to be equivalent to the\npositive reals.\n\nOn `TemperatureUnit` there is an instance of division giving a real number, corresponding to the\nratio of the two scales of temperature unit.\n\nTo define specific temperature units, we first state the existence of a\na given temperature unit, and then construct all other temperature units from it.\nWe choose to state the\nexistence of the temperature unit of kelvin, and construct all other temperature units from that.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 52,
@@ -393,7 +400,8 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   }
  ]
 }

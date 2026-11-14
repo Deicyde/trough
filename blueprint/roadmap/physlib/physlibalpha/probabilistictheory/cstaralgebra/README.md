@@ -1,6 +1,6 @@
 # CStarAlgebra
 
-The folder [PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra): 15 modules, an article each, in path order with Basic.lean first in its folder.
+The folder [PhyslibAlpha/ProbabilisticTheory/CStarAlgebra/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/CStarAlgebra): 15 modules, an article each, in path order.
 
 - [⋆-automorphisms and reversible dynamics](automorphism.md)
 - [Commutative C⋆-algebras are classical](commutative.md)

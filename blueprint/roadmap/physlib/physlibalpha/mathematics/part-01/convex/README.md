@@ -1,6 +1,6 @@
 # Convex
 
-The folder [PhyslibAlpha/Mathematics/Convex/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Convex): 6 modules, an article each, in path order with Basic.lean first in its folder.
+The folder [PhyslibAlpha/Mathematics/Convex/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/Convex): 6 modules, an article each, in path order.
 
 - [Separation from dominated cones](dominatedcone.md)
 - [Extreme points of `ℓq` balls](lpball.md)

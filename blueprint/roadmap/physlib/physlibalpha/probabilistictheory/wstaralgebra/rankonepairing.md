@@ -8,7 +8,7 @@ proof: formalized
 
 # Rank-one operators in the trace pairing
 
-The module `PhyslibAlpha.ProbabilisticTheory.WStarAlgebra.RankOnePairing`, [PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/RankOnePairing.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/RankOnePairing.lean): 2 declarations, 0 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.WStarAlgebra.RankOnePairing`, [PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/RankOnePairing.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/WStarAlgebra/RankOnePairing.lean): 2 declarations, none with a docstring.
 
 > The trace pairing of a rank-one operator `|x⟩⟨y|` with a trace-class `T` is `⟪y, T x⟫`.
 

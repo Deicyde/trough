@@ -7,16 +7,19 @@
    "module": "Physlib.ClassicalMechanics.Basic",
    "title": "A. Classical mechanics",
    "doc": "Classical mechanics describes the motion of physical systems using trajectories, forces,\nenergies, and variational principles. Physlib develops both general formulations of the subject\nand formally verified examples of mechanical systems.\n\n## A.1. Scope\n\nThe general infrastructure includes the Euler–Lagrange equations, Hamilton's equations, and\nrelations between equivalent Lagrangian descriptions. Concrete models cover free particles,\nharmonic and damped oscillators, pendula, rigid bodies, orbital mechanics, scattering, vibrations,\nand wave equations.\n\n## A.2. Current status\n\nThis module is an overview and currently introduces no declarations. The definitions and results\nfor each topic live in the corresponding submodules under `Physlib.ClassicalMechanics`.\n\n## A.3. Future work\n\nShared declarations should be added here only when they apply across several areas of classical\nmechanics. Definitions and results specific to one physical system should remain in its dedicated\nmodule so that the library stays navigable.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/ConfigurationSpace/Basic.lean",
    "module": "Physlib.ClassicalMechanics.ConfigurationSpace.Basic",
    "title": "Configuration spaces",
    "doc": "Smooth manifolds without boundary.\n\n## i. Overview\n\nThe configuration space of a mechanical system is the manifold of its configurations.\n\n## ii. Key results\n\n- `ConfigurationSpace` : a smooth manifold without boundary.\n\n## iii. Table of contents\n\n- A. Configuration spaces\n\n## iv. References\n\n* V. I. Arnold, Mathematical Methods of Classical Mechanics. [ref: arnold_mechanics]",
+   "copyright": "2026 Michal Mogielnicki",
    "sections": [
     {
      "line": 41,
@@ -42,13 +45,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 2
   },
   {
    "file": "Physlib/ClassicalMechanics/ConfigurationSpace/Variation.lean",
    "module": "Physlib.ClassicalMechanics.ConfigurationSpace.Variation",
    "title": "Variations of curves",
    "doc": "Smooth variations of a curve in a configuration space fixing the endpoints.\n\n## i. Overview\n\nVariations probe the action of a Lagrangian system around a curve.\n\n## ii. Key results\n\n- `Variation` : smooth variations fixing the endpoints.\n- `Variation.contDiff_comp_vadd` : a variation of a curve in a normed space is smooth in\n  coordinates.\n- `Variation.exists_bump` : a bump function gives a variation of a curve in a normed space.\n\n## iii. Table of contents\n\n- A. Variations\n- B. Variations in a normed space\n\n## iv. References\n\n* I. Terek, Introductory Variational Calculus on Manifolds. [ref: terek_variational_manifolds]",
+   "copyright": "2026 Michal Mogielnicki",
    "sections": [
     {
      "line": 48,
@@ -94,13 +99,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/DampedHarmonicOscillator/Basic.lean",
    "module": "Physlib.ClassicalMechanics.DampedHarmonicOscillator.Basic",
    "title": "The damped harmonic oscillator",
    "doc": "The equation of motion, energy dissipation, damping regimes and variational formulation.\n\n## i. Overview\n\nThe damped harmonic oscillator is a classical mechanical system consisting of a mass `m`\nunder a restoring force `- k x` and a damping force `- γ ẋ`, where `k` is the spring\nconstant, `γ` is the damping coefficient, `x` is the position, and `ẋ` is the velocity.\n\nThe equation of motion for the damped harmonic oscillator is:\n```\nm ẍ + γ ẋ + k x = 0\n```\n\nDepending on the relationship between the damping coefficient and the natural frequency,\nthe system exhibits three different behaviors:\n- **Underdamped** (`γ^2 < 4 * m * k`) : oscillatory motion with exponentially decaying\n  amplitude.\n- **Critically damped** (`γ^2 = 4 * m * k`) : fastest return to equilibrium without\n  oscillation.\n- **Overdamped** (`4 * m * k < γ^2`) : slow return to equilibrium without oscillation.\n\nIn this file, the position and velocity both have type `EuclideanSpace ℝ (Fin 1)`. This\ncoordinate model is useful for a first formalization, but it works only because the\none-dimensional configuration space and its tangent space are both isomorphic to\none-dimensional Euclidean space. A more geometric formalization should represent the\nconfiguration space and its tangent bundle directly.\n\n## ii. Key results\n\nThe key results in the study of the classical damped harmonic oscillator are the following:\n\nIn the `Basic` module:\n- `DampedHarmonicOscillator` contains the input data to the problem.\n- `EquationOfMotion` defines the damped oscillator equation `m ẍ + γ ẋ + k x = 0`.\n- `energy_dissipation_rate` computes the rate at which damping removes mechanical energy.\n- `energy_balance` gives the mechanical energy change over a finite time interval.\n- `energy_antitone` shows that mechanical energy is nonincreasing along a solution.\n- `IsUnderdamped`, `IsCriticallyDamped`, and `IsOverdamped` define the three damping\n  regimes from the discriminant `γ^2 - 4 * m * k`.\n- `angularFrequency` selects the real frequency parameter from the damping regime.\n- `qualityFactor` and `relaxationTime` define the quality factor `Q = ω / (2 β)` and the\n  amplitude relaxation time `τ = 1 / β` from the decay rate `β = γ / (2 m)`;\n  `isUnderdamped_iff_half_lt_qualityFactor` and its companions characterise the three damping\n  regimes by `Q`.\n- `toUndamped_equationOfMotion` relates the damped and undamped equations of motion when\n  the damping coefficient is zero.\n- `lagrangian` defines the Caldirola–Kanai lagrangian `exp (γ/m * t) * (T - V)`.\n- `gradLagrangian` defines the variational gradient of the corresponding action, and\n  `equationOfMotion_iff_gradLagrangian_zero` shows that its vanishing is equivalent to\n  the equation of motion.\n\nIn the `Solution` module:\n- `InitialConditions` contains the initial position and velocity.\n- `trajectory` gives the explicit solution selected from the damping regime.\n\n## iii. Table of contents\n\n- A. The input data\n- B. The equation of motion and energy dissipation\n  - B.1. The equation of motion\n  - B.2. Energy dissipation\n- C. Newton's second law\n  - C.1. The force\n  - C.2. Equation of motion if and only if Newton's second law\n- D. Damping regimes\n  - D.1. The discriminant, the decay rate and the angular frequency\n  - D.2. The quality factor and the relaxation time\n- E. To undamped oscillator\n- F. The Caldirola–Kanai lagrangian and the equation of motion\n  - F.1. The lagrangian\n    - F.1.1. Equalities for the lagrangian\n    - F.1.2. Smoothness of the lagrangian\n    - F.1.3. Gradients of the lagrangian\n  - F.2. The variational gradient of the action\n    - F.2.1. The variational gradient and Newton's second law\n  - F.3. Equation of motion iff the variational gradient vanishes\n\n## iv. References\n\nReferences for the damped harmonic oscillator include:\n\n* Landau & Lifshitz, Mechanics, page 76, section 25. [ref: landau_mechanics]\n* Goldstein, Classical Mechanics, Chapter 6, Section 6.5 (Forced Vibrations and the Effect of\n  Dissipative Forces). [ref: goldstein_classicalmechanics]\n\nReferences for the Caldirola–Kanai lagrangian include:\n\n* Caldirola, Nuovo Cimento 18 (1941) 393. [ref: caldirola_1941]\n* Kanai, Progress of Theoretical Physics 3 (1948) 440. [ref: kanai_1948]",
+   "copyright": "2026 Nicola Bernini",
    "sections": [
     {
      "line": 118,
@@ -734,13 +741,15 @@
     }
    ],
    "private": 1,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 1
   },
   {
    "file": "Physlib/ClassicalMechanics/DampedHarmonicOscillator/Solution.lean",
    "module": "Physlib.ClassicalMechanics.DampedHarmonicOscillator.Solution",
    "title": "Solutions to the damped harmonic oscillator",
    "doc": "## i. Overview\n\nIn this module we define the solution to the damped harmonic oscillator for given initial\nconditions and prove that it satisfies the equation of motion. The solution selects the\nappropriate closed form from the sign of the discriminant: trigonometric for the underdamped\ncase, polynomial for the critically damped case, and hyperbolic for the overdamped case.\n\n## ii. Key results\n\n- `InitialConditions` is a structure for the initial position and velocity.\n- `trajectory` selects the appropriate regime-specific trajectory from the sign of the\n  discriminant; `trajectory_eq_of_underdamped_relaxationTime` rewrites the underdamped\n  solution with the relaxation time `τ`.\n- `trajectory_equationOfMotion_of_underdamped`,\n  `trajectory_equationOfMotion_of_criticallyDamped`, and\n  `trajectory_equationOfMotion_of_overdamped` prove the selected trajectory satisfies the\n  equation of motion in each damping regime.\n- `trajectory_equationOfMotion` proves that the selected trajectory satisfies the equation\n  of motion.\n- `equationOfMotion_unique` proves that two smooth solutions with the same initial data agree, and\n  `trajectories_unique` proves that the selected trajectory is the unique solution with the given\n  initial conditions.\n\n## iii. Table of contents\n\n- A. The initial conditions\n- B. Trajectories associated with the initial conditions\n  - B.1. Regime-specific base trajectories\n  - B.2. The selected trajectory\n  - B.3. Shared calculus lemmas\n  - B.4. Derivatives of the base trajectories\n- C. Trajectories and equation of motion\n  - C.1. The selected trajectory satisfies the equation of motion\n  - C.2. Uniqueness of the solutions\n\n## iv. References\n\nReferences for the damped harmonic oscillator include:\n\n* Landau & Lifshitz, Mechanics, page 76, section 25. [ref: landau_mechanics]\n* Goldstein, Classical Mechanics, Chapter 6, Section 6.5 (Forced Vibrations and the Effect of\n  Dissipative Forces). [ref: goldstein_classicalmechanics]",
+   "copyright": "2026 Florian Wiesner",
    "sections": [
     {
      "line": 70,
@@ -918,13 +927,15 @@
     }
    ],
    "private": 12,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/EulerLagrange.lean",
    "module": "Physlib.ClassicalMechanics.EulerLagrange",
    "title": "A. Euler–Lagrange equations",
    "doc": "The Euler–Lagrange equations characterize stationary trajectories of an action functional. For a\nLagrangian `L t q v`, they compare the gradient with respect to position to the time derivative of\nthe gradient with respect to velocity.\n\n## A.1. Mathematical setting\n\nTrajectories take values in a complete real inner-product space `X`. The Lagrangian has type\n`Time → X → X → ℝ`, and the corresponding action is the time integral of\n`L t (q t) (∂ₜ q t)`.\n\n## A.2. Main definitions and results\n\n- `eulerLagrangeOp` defines the Euler–Lagrange operator\n  `∂L/∂q - ∂ₜ (∂L/∂v)` along a trajectory.\n- `eulerLagrangeOp_eq` exposes its pointwise formula.\n- `eulerLagrangeOp_zero` evaluates the operator for the zero Lagrangian.\n- `euler_lagrange_varGradient` proves that the variational gradient of the action equals the\n  Euler–Lagrange operator for smooth trajectories and Lagrangians.\n- `canonicalMomentum` and `eulerLagrange` give the covector form `∂L/∂q - dₜ(∂L/∂q̇)` for a\n  Lagrangian system `S` on a normed space `E` and time origin `t₀`, with `contDiff_eulerLagrange`,\n  `eulerLagrange_congr` and `eulerLagrange_congr_lagrangian`.\n\n## A.3. Current scope\n\nThe result is formulated for smooth data and Hilbert-space-valued trajectories. Applications to\nspecific mechanical systems are developed in their corresponding modules, where vanishing of the\noperator becomes the system's equation of motion.",
+   "copyright": "2025 Tomas Skrivan",
    "sections": [],
    "declarations": [
     {
@@ -1001,13 +1012,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 2
   },
   {
    "file": "Physlib/ClassicalMechanics/Force.lean",
    "module": "Physlib.ClassicalMechanics.Force",
    "title": "Forces",
    "doc": "This module defines forces acting on objects, expressed in a reference frame.\nA `Force` records its target and its vector value over time. An `InternalForce`\nadditionally records a distinct source object.\n\nThe time-dependent vector describes the force acting on the target, without\nprescribing how that force is determined. For example, a gravitational force can\nbe specified directly from the target's mass, while a constraint force can be\nspecified by its relation to the motion of the objects. Representing both by the\nsame type allows Newton's laws to be stated independently of the particular\ninteractions present.\n\nThe reference frame appears in the type of a force's vector values, keeping their\ncoordinate dependence explicit. The definition lives in the\n`ClassicalMechanics.ReferenceFrame` namespace to support dot notation such as\n`frame.Force Object`, but also occupies a general name that future non-particle\nNewtonian formalizations may need.\n\nThe target type `Object` is therefore deliberately left arbitrary. Newtonian mechanics is\nnot limited to point particles, so this force representation is kept independent\nof any particular model of matter, with the intention it may get generalized for\nrigid body mechanics, continuum mechanics, or other Newtonian models in the future.",
+   "copyright": "2026 Raunak Chhatwal",
    "sections": [],
    "declarations": [
     {
@@ -1068,13 +1081,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/FreeParticle/Basic.lean",
    "module": "Physlib.ClassicalMechanics.FreeParticle.Basic",
    "title": "The Free Particle",
    "doc": "## i. Overview\n\nThe free particle is one of the simplest systems in classical mechanics: a particle of mass `m`\nmoving with no external forces acting on it. Physically, this means the particle just keeps moving\nat constant velocity.\n\nIn this file, we work in a simple 1D coordinate system where position and velocity are functions\nof time with values in `ℝ`. This keeps things easy to reason about. A more complete treatment would\nuse manifolds and tangent bundles.\n\n## ii. Key results\n\nThe main things we show about the free particle are:\n\nIn the `Basic` module:\n- `FreeParticle` stores the mass of the particle.\n- `NewtonsSecondLaw` encodes the equation `m * q'' = 0`.\n- `accel_zero` shows that this implies `q'' = 0`.\n- `velocity_const_of_zero_acc` shows that zero acceleration means velocity is constant.\n- `linearMomentum_conserved` shows that linear momentum stays constant over time.\n- `kineticEnergy_conserved` shows that kinetic energy stays constant over time.\n\nSo overall, we formalise the usual chain:\nNewton’s law → zero acceleration → constant velocity → constant momentum and energy.\n\n## iii. Table of contents\n\n- A. The setup\n- B. Equation of motion\n  - B.1. Newton's second law\n  - B.2. Zero acceleration\n- C. What zero acceleration implies\n  - C.1. Constant velocity\n- D. Momentum\n  - D.1. Linear momentum\n  - D.2. Momentum conservation\n- E. Energy\n  - E.1. Kinetic energy\n  - E.2. Energy conservation\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Pranav Magdum",
    "sections": [],
    "declarations": [
     {
@@ -1167,13 +1182,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/HamiltonianMechanics/HamiltonsEquations.lean",
    "module": "Physlib.ClassicalMechanics.HamiltonianMechanics.HamiltonsEquations",
    "title": "Hamilton's equations",
    "doc": "In this module, given a Hamiltonian function `H : Time → X → X → ℝ`,\nwe define the operator `hamiltonEqOp`\nwhich when equals zero implies hamilton's equations.\n\nWe show that the variational derivative of the action functional\n`∫ ⟪p, dq/dt⟫ - H(t, p, q) dt` is equal to the `hamiltonEqOp`\napplied to `(p, q)`.\n\n## References\n\n* G. J. Sussman and J. Wisdom, \"Structure and Interpretation of Classical Mechanics\", Section 3.1.2.\n  <https://groups.csail.mit.edu/mac/users/gjs/6946/sicm-html/book-Z-H-36.html#%_sec_3.1.2>.\n  [ref: sussman_wisdom_sicm]",
+   "copyright": "2025 Tomas Skrivan",
    "sections": [],
    "declarations": [
     {
@@ -1210,13 +1227,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/HamiltonianMechanics/PoissonBracket.lean",
    "module": "Physlib.ClassicalMechanics.HamiltonianMechanics.PoissonBracket",
    "title": "The Poisson bracket",
    "doc": "The Poisson bracket of phase-space observables and their Hamiltonian time evolution.\n\n## i. Overview\n\nThe Poisson bracket packages, into a single antisymmetric bilinear operation on phase-space\nfunctions, the way an observable evolves along a Hamiltonian flow. Following the convention of\n`hamiltonEqOp` in `HamiltonsEquations.lean`, a phase-space function is a function `f : X → X → ℝ`\nread as `f p q` for `p` a momentum and `q` a position, both valued in a real inner product space\n`X`. The bracket of two such functions is\n\n$$\\{f, g\\} := \\left\\langle \\frac{\\partial f}{\\partial q}, \\frac{\\partial g}{\\partial p}\n  \\right\\rangle - \\left\\langle \\frac{\\partial f}{\\partial p}, \\frac{\\partial g}{\\partial q}\n  \\right\\rangle,$$\n\nbuilt from the same currying-and-`gradient` idiom `hamiltonEqOp` already uses to express partial\nderivatives on phase space.\n\n## ii. Key results\n\n- `poissonBracket` : the Poisson bracket of two phase-space functions.\n- `poissonBracket_eq_of_hasGradientAt` : computes the bracket from known partial gradients.\n- `poissonBracket_antisymm` : the bracket is antisymmetric.\n- `poissonBracket_self` : every observable Poisson-commutes with itself.\n- `poissonBracket_add_left`, `poissonBracket_add_right`, `poissonBracket_const_mul_left`,\n  `poissonBracket_const_mul_right` : the bracket is bilinear, that is additive and homogeneous in\n  each argument.\n- `poissonBracket_mul_left`, `poissonBracket_mul_right` : the bracket satisfies the Leibniz rule\n  in each argument.\n- `deriv_comp_eq_inner_gradient_add` : the time derivative of a phase-space function composed with\n  a trajectory is the sum of its gradients paired with the trajectory's velocities.\n- `deriv_comp_eq_poissonBracket` : along a solution of Hamilton's equations, the time derivative of\n  an observable is its Poisson bracket with the Hamiltonian.\n\n## iii. Table of contents\n\n- A. The definition of the Poisson bracket\n- B. Antisymmetry\n- C. Bilinearity\n- D. The Leibniz rule\n- E. Time evolution along a Hamiltonian flow\n  - E.1. The chain rule for a phase-space function along a trajectory\n  - E.2. Time evolution as the Poisson bracket with the Hamiltonian\n\n## iv. References\n\n* G. J. Sussman and J. Wisdom, \"Structure and Interpretation of Classical Mechanics\", Section 3.2.\n  <https://groups.csail.mit.edu/mac/users/gjs/6946/sicm-html/book-Z-H-37.html>.\n  [ref: sussman_wisdom_sicm]",
+   "copyright": "2026 Rithwik Ranganathan",
    "sections": [
     {
      "line": 75,
@@ -1346,13 +1365,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 1
   },
   {
    "file": "Physlib/ClassicalMechanics/HarmonicOscillator/Basic.lean",
    "module": "Physlib.ClassicalMechanics.HarmonicOscillator.Basic",
    "title": "The Classical Harmonic Oscillator",
    "doc": "## i. Overview\n\nThe classical harmonic oscillator is a classical mechanical system corresponding to a\nmass `m` under a force `- k x` where `k` is the spring constant and `x` is the position.\n\nIn this file, a coordinate system is assumed where position and velocity both have type\n`EuclideanSpace ℝ (Fin 1)`. This is a simpler model often used for pedagogical purpose,\nbut only works because both the configuration space (position) and its tangent space (velocity)\nare isomorphic to Euclidean Space. A proper formalisation should include the geometric properties\nof the state space via manifolds and tangent bundles.\n\n## ii. Key results\n\nThe key results in the study of the classical harmonic oscillator are the follows:\n\nIn the `Basic` module:\n- `HarmonicOscillator` contains the input data to the problem.\n- `EquationOfMotion` defines the equation of motion for the harmonic oscillator.\n- `energy_conservation_of_equationOfMotion` proves that a trajectory satisfying the\n  equation of motion conserves energy.\n- `equationOfMotion_tfae` proves that the equation of motion of motion is equivalent to\n  - Newton's second law,\n  - Hamilton's equations,\n  - the variational principal for the action,\n  - the Hamilton variation principal.\n\nIn the `Solution` module:\n- `InitialConditions` is a structure for the initial conditions for the harmonic oscillator.\n- `trajectories` is the trajectories to the harmonic oscillator for given initial conditions.\n- `trajectories_equationOfMotion` proves that the solution satisfies the equation of motion.\n\n## iii. Table of contents\n\n- A. The input data\n- B. The angular frequency\n- C. The energies\n  - C.1. The definitions of the energies\n  - C.2. Simple equalities for the energies\n  - C.3. Differentiability of the energies\n  - C.4. Time derivatives of the energies\n- D. Lagrangian and the equation of motion\n  - D.1. The Lagrangian\n    - D.1.1. Equalities for the lagrangian\n    - D.1.2. Smoothness of the lagrangian\n    - D.1.3. Gradients of the lagrangian\n  - D.2. The variational derivative of the action\n    - D.2.1. Equality for the variational derivative\n  - D.3. The equation of motion\n    - D.3.1. Equation of motion if and only if variational-gradient of Lagrangian is zero\n- E. Newton's second law\n  - E.1. The force\n    - E.1.1. The force is equal to `- k x`\n  - E.2. Variational derivative of lagrangian and force\n  - E.3. Equation of motion if and only if Newton's second law\n- F. Energy conservation\n  - F.1. Energy conservation in terms of time derivatives\n  - F.2. Energy conservation in terms of constant energy\n- G. Hamiltonian formulation\n  - G.1. The canonical momentum\n    - G.1.1. Equality for the canonical momentum\n  - G.2. The Hamiltonian\n    - G.2.1. Equality for the Hamiltonian\n    - G.2.2. Smoothness of the Hamiltonian\n    - G.2.3. Gradients of the Hamiltonian\n  - G.3. Relation between Hamiltonian and energy\n  - G.4. Hamilton equation operator\n  - G.5. Equation of motion if and only if Hamilton's equations\n- H. Equivalences between the different formulations of the equations of motion\n\n## iv. References\n\nReferences for the classical harmonic oscillator include:\n\n* Landau & Lifshitz, Mechanics, page 58, section 21. [ref: landau_mechanics]\n\nA reference for the geometric model of position/velocity discussed in a TODO below:\n\n* https://web.williams.edu/Mathematics/it3/texts/var_noether.pdf.\n  [ref: terek_variational_manifolds]",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 110,
@@ -1906,13 +1927,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 1
   },
   {
    "file": "Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/Basic.lean",
    "module": "Physlib.ClassicalMechanics.HarmonicOscillator.Geometric.Basic",
    "title": "Configuration space of the harmonic oscillator",
    "doc": "## i. Overview\n\nThe configuration space `Q` of the one-dimensional harmonic oscillator is the space of\npossible positions of the oscillator, formalised here as a one-dimensional smooth manifold.\n\n`Q` carries a single chosen global coordinate, modeled by `EuclideanSpace ℝ (Fin 1)`. This\ncoordinate supplies the topology and the smooth-manifold structure through a single global\nchart.\n\nThe global coordinate also identifies each tangent space with the same Euclidean model. The\nmap `tangentCoord q` records the coordinate representative of a tangent vector at `q`; this\ntangent-coordinate infrastructure is used by later geometric constructions on the oscillator.\n\n## ii. Key results\n\n- `ConfigurationSpace` : the configuration manifold `Q` of the harmonic oscillator, wrapping\n  the chosen `EuclideanSpace ℝ (Fin 1)` coordinate.\n- `ConfigurationSpace.valEquiv` : the coordinate equivalence identifying `Q` with its\n  `EuclideanSpace ℝ (Fin 1)` model.\n- `ConfigurationSpace.valHomeomorphism` : the global coordinate homeomorphism underlying the\n  manifold chart.\n- `ConfigurationSpace.valDiffeomorph` : the global coordinate chart as an analytic\n  diffeomorphism, upgrading `valHomeomorphism` to a smooth identification of `Q` with its model.\n- the `ChartedSpace` and `IsManifold` instances, exhibiting `Q` as a one-dimensional analytic\n  manifold modeled on `EuclideanSpace ℝ (Fin 1)`.\n- `tangentCoord` : the chart-induced continuous linear equivalence from the tangent space at a\n  configuration to `EuclideanSpace ℝ (Fin 1)`.\n- `instNormedAddCommGroupTangent` and `instNormedSpaceTangent` : the normed real vector-space\n  structure on tangent spaces, supplied through the global coordinate model.\n- `instFiniteDimensionalTangent` : finite-dimensionality of each tangent space, transported\n  through `tangentCoord`.\n- `ConfigurationSpace.toSpace` : the point of physical `Space 1` determined by a\n  configuration.\n\n## iii. Table of contents\n\n- A. The configuration space type\n- B. Topology and coordinate homeomorphism\n- C. Smooth manifold structure\n- D. The coordinate diffeomorphism\n- E. Tangent-coordinate infrastructure\n- F. Map to physical space\n\n## iv. References\n\n* Ivo Terek, Introductory Variational Calculus on Manifolds, page 1 (Section 1, Basic definitions\n  and examples). [ref: terek_variational_manifolds]",
+   "copyright": "2026 Nicola Bernini",
    "sections": [
     {
      "line": 75,
@@ -2086,13 +2109,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 1
   },
   {
    "file": "Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/KineticEnergy.lean",
    "module": "Physlib.ClassicalMechanics.HarmonicOscillator.Geometric.KineticEnergy",
    "title": "Geometric kinetic energy of the harmonic oscillator",
    "doc": "## i. Overview\n\nThe configuration space of the geometric harmonic oscillator is `ConfigurationSpace`.\nAt a configuration `q`, velocities are tangent vectors in\n`TangentSpace 𝓘(ℝ, EuclideanSpace ℝ (Fin 1)) q`.\n\nThe oscillator mass determines a Riemannian metric on `ConfigurationSpace`. At each\nconfiguration `q`, the metric is the mass-scaled Euclidean inner product on tangent\nvectors, recorded by `massMetricVal S q`.\n\nThe kinetic energy associated with this mass metric is\n`geometricKineticEnergy S q v = (1 / 2 : ℝ) * S.massRiemannianMetric.inner q v v`.\nIn coordinates this gives the standard expression\n`(1 / 2 : ℝ) * S.m * ⟪tangentCoord q v, tangentCoord q v⟫_ℝ`.\n\n## ii. Key results\n\n- `massRiemannianMetric` : the mass-scaled Euclidean inner product as a Riemannian metric\n  on `ConfigurationSpace`.\n- `geometricKineticEnergy` : the geometric kinetic-energy function associated to the\n  oscillator mass metric.\n- `massRiemannianMetric_inner_apply` : evaluation of the mass metric in global tangent\n  coordinates.\n- `massRiemannianMetric_pos` : positive definiteness of the mass Riemannian metric.\n- `geometricKineticEnergy_massMetric_eq` : the metric-induced kinetic energy for\n  the oscillator mass metric is the mass-scaled coordinate kinetic energy.\n\n## iii. Table of contents\n\n- A. Pointwise mass metric\n- B. Riemannian mass metric\n- C. Geometric kinetic energy\n- D. Coordinate formula\n\n## iv. References\n\n* Ivo Terek, Introductory Variational Calculus on Manifolds, pages 1-2.\n  [ref: terek_variational_manifolds]",
+   "copyright": "2026 Nathaneal Sajan",
    "sections": [
     {
      "line": 71,
@@ -2210,13 +2235,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/HarmonicOscillator/Geometric/Trajectory.lean",
    "module": "Physlib.ClassicalMechanics.HarmonicOscillator.Geometric.Trajectory",
    "title": "Geometric trajectories of the harmonic oscillator",
    "doc": "## i. Overview\n\nA trajectory of the harmonic oscillator is a time-parametrized curve in the configuration\nmanifold `Q`. Since this model of `Q` has a single global coordinate valued in\n`EuclideanSpace ℝ (Fin 1)`, every geometric trajectory has an associated coordinate curve.\n\nThe coordinate diffeomorphism from `Q` to its model space lets smoothness of a geometric\ntrajectory be tested as ordinary smoothness of its coordinate curve.\n\n## ii. Key results\n\n- `Trajectory` : a curve from `Time` into the configuration manifold.\n- `Trajectory.coord` : the global Euclidean coordinate curve of a trajectory.\n- `Trajectory.toSpace` : the physical-space position along a trajectory.\n- `Trajectory.contMDiff_iff_contDiff_coord` : geometric smoothness of a trajectory is\n  equivalent to ordinary smoothness of its coordinate curve.\n- `Trajectory.velocity` : the geometric velocity of a trajectory as a tangent vector.\n- `Trajectory.velocity_eq_deriv_coord` : in the global coordinate, geometric velocity is\n  represented by the time derivative of the coordinate curve.\n\n## iii. Table of contents\n\n- A. The trajectory type and coordinate projection\n- B. Smoothness of trajectories\n- C. Velocity in the tangent bundle\n\n## iv. References\n\n* Ivo Terek, Introductory Variational Calculus on Manifolds, pages 1-2 (Section 1, Basic definitions\n  and examples). [ref: terek_variational_manifolds]",
+   "copyright": "2026 Nathaneal Sajan",
    "sections": [
     {
      "line": 54,
@@ -2298,13 +2325,15 @@
     }
    ],
    "private": 1,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/HarmonicOscillator/Solution/AmplitudePhase.lean",
    "module": "Physlib.ClassicalMechanics.HarmonicOscillator.Solution.AmplitudePhase",
    "title": "Amplitude–phase parametrization",
    "doc": "## i. Overview\n\nThe state of the harmonic oscillator at `t = 0` is captured by `InitialConditions` as a position\n`x₀` and a velocity `v₀`. An equivalent and often more physical description writes the solution as\na single shifted cosine of amplitude `A` and phase `φ`:\n  `x(t) = A cos (ω t - φ)`.\n\nExpanding with the angle-subtraction identity,\n  `A cos (ω t - φ) = (A cos φ) cos (ω t) + (A sin φ) sin (ω t)`,\nand matching coefficients against the standard solution\n  `x(t) = cos (ω t) x₀ + (sin (ω t) / ω) v₀`\ngives the change of coordinates\n  `x₀ = A cos φ`,   `v₀ = A ω sin φ`.\n\nWe implement the forward map `(A, φ) ↦ (x₀, v₀)` as `toInitialConditions`, prove the resulting\ntrajectory is the cosine normal form above (with velocity `-A ω sin (ω t - φ)`), and implement the\ninverse map `(x₀, v₀) ↦ (A, φ)` as `fromInitialConditions`, recovering `A` and `φ` as the polar\ncoordinates of the phase vector `(x₀, v₀ / ω)`.\n\n## ii. Key results\n\n- `toInitialConditions`: Amplitude–phase initial conditions converted to standard\n  initial conditions.\n- `toInitialConditions_trajectory_eq_cos`: The trajectory of amplitude–phase initial conditions is\n  the cosine normal form.\n- `toInitialConditions_velocity_eq_sin`: The trajectory of amplitude–phase initial conditions is\n  the sine normal form.\n- `fromInitialConditions`: Amplitude–phase initial conditions from standard initial conditions.\n- `toInitialConditions_fromInitialConditions`: Right inverse of `fromInitialConditions`.\n\n## iii. Table of contents\n- A. The amplitude–phase initial conditions\n- B. Conversion to standard initial conditions\n- C. The trajectory in normal form\n- D. Recovering the amplitude and phase\n\n## iv. References\n\nReferences for the classical harmonic oscillator include:\n\n* Landau & Lifshitz, Mechanics, page 58, section 21. [ref: landau_mechanics]",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 64,
@@ -2374,13 +2403,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Basic.lean",
    "module": "Physlib.ClassicalMechanics.HarmonicOscillator.Solution.Basic",
    "title": "Basic properties of trajectories",
    "doc": "## i. Overview\n\nTo each initial condition we association a trajectory. We will prove some basic properties\nof these trajectories.\n\nEventually we will show that these trajectories satisfy the equation of motion, for\nnow we can think of them as some choice of trajectory associated with the initial conditions.\n\n## ii. Key results\n\n- `trajectory`: The trajectory has the expected sinusoidal form.\n- `trajectory_eq`: Definitonal equality for the trajectory.\n- `trajectory_zero`: For zero initial conditions, the trajectory is zero.\n- `trajectory_contDiff`: The time derivative of the trajectory exists and is smooth.\n- `trajectory_velocity`: The velocity has the expected sinusoidal form.\n- `trajectory_acceleration`: The acceleration has the expected sinusoidal form.\n- `trajectory_position_at_zero`: The trajectory has the correct position at the point the initial\n  conditions are specified.\n- `lemma trajectory_velocity_at_zero`: The trajectory has the correct velocity at the point the\n  initial conditions are specified.\n- `trajectory_equationOfMotion`: The trajectories satisfy the equation of motion.\n\n## iii. Table of contents\n- A. The trajectory associated with the initial conditions\n  - A.1. Definitional equality for the trajectory\n- B. The trajectory for zero initial conditions\n- C. Smoothness of the trajectories\n- D. Velocity of the trajectories\n- E. Acceleration of the trajectories\n- F. The initial conditions of the trajectories\n- G. Trajectories and Equation of motion\n\n## iv. References\n\nReferences for the classical harmonic oscillator include:\n\n* Landau & Lifshitz, Mechanics, page 58, section 21. [ref: landau_mechanics]",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 64,
@@ -2490,13 +2521,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Consistency.lean",
    "module": "Physlib.ClassicalMechanics.HarmonicOscillator.Solution.Consistency",
    "title": "Consistency of the initial conditions",
    "doc": "## i. Overview\n\nDemonstrate that the different choices of initial conditions are self-consistent\n\n## ii. Key results\n\n- `InitialConditionsAtTime.toInitialConditions_trajectory_at_t₀`: The initial conditions specified\n  at a point in time create trajectories that pass through the correct point.\n  `InitialConditionsAtTime.toInitialConditions_velocity_at_t₀`: The initial conditions specified\n  at a point in time create trajectories that pass through the initial point with the correct\n  velocity.\n  `InitialConditionsAtTime.toInitialConditions_energy_at_t₀`: The initial conditions specified\n  at a point in time create trajectories that pass through the initial point with the correct\n  energy.\n- `InitialConditionsFromTwoPositions.toInitialConditions_trajectory_at_t₁`: Check that when the\n  initial conditions are specified with two (time, position) pairs that the resulting\n  trajectory has the correct position at the first of the two specified points.\n  `InitialConditionsFromTwoPositions.toInitialConditions_trajectory_at_t₂`: As above for the\n  second specified point.\n- `InitialConditionsFromTwoVelocities.toInitialConditions_velocity_at_t₁`: Check that when the\n  initial conditions are specified with two (time, velocity) pairs that the resulting\n  trajectory has the correct velocity at the first of the two specified points.\n  `InitialConditionsFromTwoVelocities.toInitialConditions_velocity_at_t₂`: As above for the\n  second specified point.\n\n## iii. Table of contents\n- A. Correctness of Initial Conditions\n  - A.1. Correctness of InitialConditionsAtTime conversion\n  - A.2. Correctness of InitialConditionsFromTwoPositions conversion\n  - A.3. Correctness of InitialConditionsFromTwoVelocities conversion\n\n## iv. References\n\nReferences for the classical harmonic oscillator include:\n\n* Landau & Lifshitz, Mechanics, page 58, section 21. [ref: landau_mechanics]",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 67,
@@ -2574,13 +2607,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 1
   },
   {
    "file": "Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Energy.lean",
    "module": "Physlib.ClassicalMechanics.HarmonicOscillator.Solution.Energy",
    "title": "The energy of the trajectories",
    "doc": "## i. Overview\n\nShow that the energy is a conserved quantity, i.e. a constant of motion.\n\n## ii. Key results\n\n- `trajectory_energy`: The energy is conserved along any trajectory.\n\n## iii. Table of contents\n- A. Conservation of energy\n\n## iv. References\n\nReferences for the classical harmonic oscillator include:\n\n* Landau & Lifshitz, Mechanics, page 58, section 21. [ref: landau_mechanics]",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 42,
@@ -2598,13 +2633,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/HarmonicOscillator/Solution/InitialData.lean",
    "module": "Physlib.ClassicalMechanics.HarmonicOscillator.Solution.InitialData",
    "title": "The initial conditions",
    "doc": "## i. Overview\n\nWe define the type of initial conditions for the harmonic oscillator.\nThe initial conditions are currently defined as an initial position and an initial velocity,\nthat is the values of the solution and its time derivative at time `0`.\n\n## ii. Key results\n\n- `toInitialConditions`: Convert initial conditions at time `t₀` to standard initial conditions\n  at `t=0`.\n- `InitialConditionsFromTwoPositionstoInitialCondition`: Convert two-position initial conditions\n  to standard initial conditions at `t = 0`.\n- `InitialConditionsFromTwoVelocities.toInitialConditions`: Convert two-velocity initial\n  conditions to standard initial conditions at `t = 0`.\n- `x₀_zero`: The zero initial condition has zero starting point. : x₀ 0 = 0 := rfl\n- `lemma v₀_zero`: The zero initial condition has zero starting velocity.\n\n## iii. Table of contents\n- A. Definition of the initial conditions\n- B. Relation to other types of initial conditions\n  - B.1. Initial conditions at arbitrary time\n  - B.2. Initial conditions from two positions at different times\n  - B.3. Initial conditions from two velocities at different times\n- C. The zero initial conditions\n  - C.1. Simple results for the zero initial conditions\n\n## iv. References\n\nReferences for the classical harmonic oscillator include:\n\n* Landau & Lifshitz, Mechanics, page 58, section 21. [ref: landau_mechanics]",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 57,
@@ -2722,13 +2759,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 1
   },
   {
    "file": "Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Periodicity.lean",
    "module": "Physlib.ClassicalMechanics.HarmonicOscillator.Solution.Periodicity",
    "title": "Periodicity and recurrence",
    "doc": "## i. Overview\n\nEvery trajectory is a shifted cosine of angular frequency `ω`, so it repeats after a fixed period\n`T = 2π / ω`. We record the period, show the trajectory is periodic, and prove that — for\nnon-trivial initial data — the trajectory returns to its initial position and velocity exactly at\ninteger multiples of the period.\n\n## ii. Key results\n\n- `period`: The oscillator period is the standard 2 pi / angular frequency.\n- `period_eq`: The notation \"T\" corresponds to the period defined above.\n- `period_pos`: The period is positive.\n- `trajectory_periodic`: The trajectory of the harmonic oscillator is periodic with\n  period of `2 * π / ω`.\n- `return_time`: The oscillator returns to its starting point on integer multiples of its period.\n\n## iii. Table of contents\n- A. The period\n- B. Periodicity of the trajectory\n- C. Return to the initial state\n\n## iv. References\n\nReferences for the classical harmonic oscillator include:\n\n* Landau & Lifshitz, Mechanics, page 58, section 21. [ref: landau_mechanics]",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 53,
@@ -2786,13 +2825,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/HarmonicOscillator/Solution/SpecialPoints.lean",
    "module": "Physlib.ClassicalMechanics.HarmonicOscillator.Solution.SpecialPoints",
    "title": "Special conditions of the trajectory",
    "doc": "## i. Overview\n\nWe demonstrate particular results about solution trajectories such as return times and points when\nthe position or veliocity becomes zero\n\n## ii. Key results\n\n- `TempDistElectromagneticPotential`: The type of electromagnetic potentials as distributions.\n- `trajectory_eq_cos` shows that on converting the initial conditions to amplitude-phase form\n  and `trajectory_velocity_eq_sin`: Similarly, the velocity is a shifted sine.\n- There are 2 results showing that the velocity vanishes when the sine has value zero.\n  `trajectory_velocity_eq_zero_iff_sin_eq_zero`: Velocity is 0 when the solution sine is zero.\n  `lemma trajectory_velocity_eq_zero_iff_exists_int`: Velocity is 0 when the phase is a multiple\n  of pi.\n- `trajectory_velocity_eq_zero_iff_norm_eq_amplitude`: The velocity vanishes when the trajectory\n  has norm equal to the amplitude, i.e. when it is at an extremum of position.\n- `trajectory_eq_zero_iff_cos_eq_zero`: The trajectory passes through zero when the\n  cosine factor in amplitude-phase form vanishes and `trajectory_eq_zero_iff_exists_int` shows that\n  the trajectory passes through zero when the phase is a half-odd-integer multiple of pi.\n\n## iii. Table of contents\n- A. Normal form for standard initial conditions\n- B. Times at which the velocity is zero\n- C. The position when the velocity is zero\n- D. Times at which the trajectory passes through zero\n\n## iv. References\n\nReferences for the classical harmonic oscillator include:\n\n* Landau & Lifshitz, Mechanics, page 58, section 21. [ref: landau_mechanics]",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 57,
@@ -2870,13 +2911,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/HarmonicOscillator/Solution/Uniqueness.lean",
    "module": "Physlib.ClassicalMechanics.HarmonicOscillator.Solution.Uniqueness",
    "title": "Uniqueness",
    "doc": "## i. Overview\n\nWe show that the trajectories are the unique solutions to the equation of motion\nfor the given initial conditions.\n\n## ii. Key results\n\n- `trajectories_unique`: The soluition trajectory is unique given a set of initial conditions.\n\n## iii. Table of contents\n- A. Uniqueness\n\n## iv. References\n\n* Landau and Lifshitz, Mechanics, Section 32. [ref: landau_mechanics]",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 42,
@@ -2894,13 +2937,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/HarmonicOscillator/WithDim.lean",
    "module": "Physlib.ClassicalMechanics.HarmonicOscillator.WithDim",
    "title": "A. A harmonic oscillator with dimension-tagged parameters",
    "doc": "This module applies `WithDim` to the existing harmonic-oscillator model. The mass and spring\nconstant themselves carry their physical dimensions, and the potential energy is assembled from\ndimension-tagged quantities. Its output dimension is therefore checked by the type of the\nexpression rather than attached only after evaluating a numerical function.\n\nThe explicit map `toHarmonicOscillator` connects the tagged model to the existing numerical model.\nThe analytic results then reuse the general `WithDim` transport API and the existing numerical\npotential energy. The derivative remains an ordinary continuous linear map between the tagged\ncoordinate spaces; a derivative whose value itself carries the quotient of output and input\ndimensions remains separate follow-up work.",
+   "copyright": "2026 Hirotaka Monya",
    "sections": [
     {
      "line": 32,
@@ -2986,13 +3031,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/Lagrangian/Basic.lean",
    "module": "Physlib.ClassicalMechanics.Lagrangian.Basic",
    "title": "Lagrangian systems",
    "doc": "Lagrangians on `TM` and their action.\n\n## i. Overview\n\nThe motions of a Lagrangian system are the critical points of its action, see\n`LagrangianSystem.IsCriticalPoint`.\n\n## ii. Key results\n\n- `LagrangianSystem` : smooth time-dependent Lagrangians on `TM`.\n- `LagrangianSystem.coord` : `L` in a time coordinate.\n- `LagrangianSystem.action` : the action of a curve.\n- `LagrangianSystem.action_eq_integral_coord` : the action of a curve in a normed space in\n  coordinates.\n\n## iii. Table of contents\n\n- A. Lagrangian systems\n  - A.1. Basic instances\n  - A.2. The coordinate form\n  - A.3. The action\n\n## iv. References\n\n* V. I. Arnold, Mathematical Methods of Classical Mechanics. [ref: arnold_mechanics]\n* I. Terek, Introductory Variational Calculus on Manifolds. [ref: terek_variational_manifolds]",
+   "copyright": "2026 Michal Mogielnicki",
    "sections": [
     {
      "line": 55,
@@ -3086,13 +3133,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 2
   },
   {
    "file": "Physlib/ClassicalMechanics/Lagrangian/CriticalPoint.lean",
    "module": "Physlib.ClassicalMechanics.Lagrangian.CriticalPoint",
    "title": "Critical points and Euler-Lagrange equations",
    "doc": "Critical points of the action are the solutions of the Euler-Lagrange equations.\n\n## i. Overview\n\n`γ` is a critical point over `[t₀, t₁]` if it is smooth and every variation has zero first\nvariation of the action, which is Hamilton's principle `δS = 0` for variations fixing the\nendpoints. For `t₀ ≠ t₁`, `γ` is a critical point over `[t₀, t₁]` iff the Euler-Lagrange equations\n`eulerLagrange S t₀ q = 0` hold on `[0, t₁ -ᵥ t₀]`, where `q σ = γ (σ +ᵥ t₀)`. This section treats a\nnormed space `E` as the configuration space.\n\n## ii. Key results\n\n- `LagrangianSystem.IsCriticalPoint`: critical points of the action\n- `LagrangianSystem.isCriticalPoint_of_vsub_nonpos`: every smooth curve is critical over an empty\n  or one-point interval\n- `LagrangianSystem.isCriticalPoint_of_eulerLagrange_eq_zero`: equations imply criticality\n- `LagrangianSystem.eulerLagrange_eq_zero_of_isCriticalPoint`: criticality implies equations\n- `LagrangianSystem.isCriticalPoint_iff_eulerLagrange`: the two are equivalent\n\n## iii. Table of contents\n\n- A. Critical points\n  - A.1. The definition\n  - A.2. Euler-Lagrange equations\n\n## iv. References\n\n* V. I. Arnold, Mathematical Methods of Classical Mechanics. [ref: arnold_mechanics]\n* I. Terek, Introductory Variational Calculus on Manifolds. [ref: terek_variational_manifolds]\n* L. D. Landau and E. M. Lifshitz, Mechanics. [ref: landau_mechanics]",
+   "copyright": "2026 Michal Mogielnicki",
    "sections": [
     {
      "line": 58,
@@ -3146,13 +3195,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/Lagrangian/FirstVariation.lean",
    "module": "Physlib.ClassicalMechanics.Lagrangian.FirstVariation",
    "title": "First variation of the action",
    "doc": "The first variation of `∫ L (τ, H, ∂τ H) dτ`.\n\n## i. Overview\n\n`H (s, τ)` is a smooth family of curves around `H (0, ·)`.\nAlong a smooth family fixing the endpoints, the derivative of the action is the integral of the\nEuler-Lagrange covector `∂L/∂q - dₜ(∂L/∂q̇)` against the variation field.\n\n## ii. Key results\n\n- `LagrangianSystem.contDiff_action_integrand`: smoothness of the action integrand\n- `LagrangianSystem.fderiv_action_integrand_apply`: first variation of the integrand, the\n  Euler-Lagrange term plus a total `τ`-derivative\n- `LagrangianSystem.hasDerivAt_integral_variation`: first variation of the action\n- `LagrangianSystem.action_variation_eq_integral`: the action along a variation in coordinates\n- `LagrangianSystem.hasDerivAt_action_variation`: first variation of the action along a variation\n\n## iii. Table of contents\n\n- A. First variation\n- B. The action along a variation\n\n## iv. References\n\n* I. Terek, Introductory Variational Calculus on Manifolds. [ref: terek_variational_manifolds]\n* L. D. Landau and E. M. Lifshitz, Mechanics. [ref: landau_mechanics]",
+   "copyright": "2026 Michal Mogielnicki",
    "sections": [
     {
      "line": 54,
@@ -3206,13 +3257,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/Lagrangian/TotalDerivativeEquivalence.lean",
    "module": "Physlib.ClassicalMechanics.Lagrangian.TotalDerivativeEquivalence",
    "title": "Equivalent Lagrangians under Total Derivatives",
    "doc": "## i. Overview\n\nTwo Lagrangians are physically equivalent if they differ by a total time derivative\nd/dt F(q, t). This is because the Euler-Lagrange equations depend only on extremizing\nthe action integral, and total derivatives don't affect which paths are extremal.\n\nThis module defines the key concept of a function being a total time derivative,\nwhich is essential for analyzing symmetries like Galilean invariance.\n\nNote: Some authors call this \"gauge equivalence\" by analogy with gauge transformations\nin field theory, but we avoid that terminology here since no gauge fields are involved.\n\n## ii. Key insight\n\nA general function δL(t, q, dₜ q) is a total time derivative if there exists a function\nF(t, q) (independent of velocity) such that:\n  δL(t, q, dₜ q) = d/dt F(t, q) = fderiv ℝ F (t q) (v, 1)\n\nBy the chain rule, this expands to:\n  δL(t, q, dₜ q) = ∂F/∂t + ⟨∇ᵣF, dₜ q⟩\n\nFor the special case where δL depends only on velocity dₜ q (not position or time),\nthis implies a strong constraint:\n  δL(dₜ q) = ⟨g, dₜ q⟩ for some constant vector g\n\nThis is because:\n1. d/dt F(t, q) = ∂F/∂t + ⟨∇F, dₜ q⟩\n2. For δL to be q-independent, ∇F must be q-independent\n3. For δL to be t-independent, the time-dependent part must vanish\n4. The result is δL = ⟨g, dₜ q⟩ for constant g\n\n## iii. Key definitions\n\n- `IsTotalTimeDerivative`: General case for δL(t, q, dₜ q)\n- `IsTotalTimeDerivativeVelocity`: Velocity-only case, equivalent to δL(dₜ q) = ⟨g, dₜ q⟩\n\n## iv. References\n\n* Landau & Lifshitz, \"Mechanics\", §2 (The principle of least action). [ref: landau_mechanics]\n* Landau & Lifshitz, \"Mechanics\", §4 (The Lagrangian for a free particle). [ref: landau_mechanics]",
+   "copyright": "2025 Rein Zustand",
    "sections": [
     {
      "line": 65,
@@ -3302,13 +3355,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/Mass/MassUnit.lean",
    "module": "Physlib.ClassicalMechanics.Mass.MassUnit",
    "title": "Units on Mass",
    "doc": "A unit of mass corresponds to a choice of translationally-invariant\nmetric on the mass manifold (to be defined diffeomorphic to `ℝ≥0`).\nSuch a choice is (non-canonically) equivalent to a\nchoice of positive real number. We define the type `MassUnit` to be equivalent to the\npositive reals.\n\nOn `MassUnit` there is an instance of division giving a real number, corresponding to the\nratio of the two scales of mass unit.\n\nTo define specific mass units, we first state the existence of a\na given mass unit, and then construct all other mass units from it. We choose to state the\nexistence of the mass unit of kilograms, and construct all other mass units from that.\n\n## References\n\n* The numerical value used for the nominal solar mass. [ref: nominal_solar_mass_article]",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 55,
@@ -3466,13 +3521,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/OrbitalMechanics/VisViva.lean",
    "module": "Physlib.ClassicalMechanics.OrbitalMechanics.VisViva",
    "title": "Circular Orbit Vis Viva",
    "doc": "The vis-viva equation relates the speed of an orbiting body to its position\nand the mass of the central body. This module defines a simplified version of the\nvis-viva equation that is restricted to circular orbits (v^2 = G M / r).",
+   "copyright": "2026 Hannah Dawe",
    "sections": [],
    "declarations": [
     {
@@ -3509,33 +3566,39 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/Pendulum/CoplanarDoublePendulum.lean",
    "module": "Physlib.ClassicalMechanics.Pendulum.CoplanarDoublePendulum",
    "title": "Coplanar Double Pendulum",
    "doc": "### Tag: LnL_1.5.1\n## Source:\n* Textbook: Landau and Lifshitz, Mechanics, 3rd Edition\n* Chapter: 1 The Equations of motion\n* Section: 5 The Lagrangian for a system of particles\n* Problem: 1 Coplanar Double Pendulum\n\nDescription: This problem involves:\na) identifying the appropriate Degrees of Freedom or generalized coordinates\nand their relation to cartesian coordinates\n\nb) and using them to write down the Lagrangian for\n\na coplanar double pendulum made up of two\npoint masses $m_1$ and $m_2$. Mass $m_1$ is attached to the pivot and $m_2$ is attached\nto $m_1$ via strings of length $l_1$ and $l_2$ respectively.\n\nSolution:\n\nThe Cartesian coordinates $(x_1, y_1)$ for mass $m_1$ and $(x_2, y_2)$ for mass $m_2$ can be\nexpressed in terms of the two angles $\\phi_1$ and $\\phi_2$ made by the strings with the vertical:\n$$\n\\begin{aligned}\nx_1 &= l_1\\sin\\phi_1\\\\\ny_1 &= -l_1\\cos\\phi_1\\\\\nx_2 &= l_1\\sin\\phi_1 + l_2\\sin\\phi_2\\\\\ny_2 &= -l_1\\cos\\phi_1 - l_2\\cos\\phi_2\n\\end{aligned}\n$$\n\nb) The Lagrangian is obtained by writing down the kinetic and potential energies\nfirst in terms of cartesian coordinates and their time derivates and then substituting\nthe coordinates and derivatives with transformations obtained in a) :\n\n$$\\mathcal{L} = T_1 + T_2 - V_1 - V_2$$ where $T$ denotes the kinetic energy and $V$\nthe potential energy\n$$\n\\begin{aligned}\nT_1 &= \\tfrac{1}{2}m_1(\\dot{x}_1^2 + \\dot{y}_1^2) = \\tfrac{1}{2}m_1 l_1^2\\dot{\\phi}_1^2\\\\\nV_1 &= m_1 g y_1 = -m_1 g l_1\\cos\\phi_1\\\\\nT_2 &= \\tfrac{1}{2}m_2(\\dot{x}_2^2 + \\dot{y}_2^2)\n    = \\tfrac{1}{2}m_2\\bigl(l_1^2\\dot{\\phi}_1^2 + l_2^2\\dot{\\phi}_2^2\n      + 2l_1 l_2\\dot{\\phi}_1\\dot{\\phi}_2\\cos(\\phi_1 - \\phi_2)\\bigr)\\\\\nV_2 &= m_2 g y_2 = -m_2 g\\bigl(l_1\\cos\\phi_1 + l_2\\cos\\phi_2\\bigr)\n\\end{aligned}\n$$\n\nso that the Lagrangian becomes:\n    $$\n\\mathcal{L} = \\tfrac{1}{2}(m_1 + m_2)l_1^2\\dot{\\phi}_1^2 + \\tfrac{1}{2}m_2 l_2^2\\dot{\\phi}_2^2+\n  m_2 l_1 l_2\\dot{\\phi}_1\\dot{\\phi}_2\\cos(\\phi_1 - \\phi_2)+\n  (m_1 + m_2)g l_1\\cos\\phi_1 + m_2 g l_2\\cos\\phi_2\n$$",
+   "copyright": "2025 Shlok Vaibhav Singh",
    "sections": [],
    "declarations": [],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 1
   },
   {
    "file": "Physlib/ClassicalMechanics/Pendulum/MiscellaneousPendulumPivotMotions.lean",
    "module": "Physlib.ClassicalMechanics.Pendulum.MiscellaneousPendulumPivotMotions",
    "title": "Miscellaneous Pendulum Pivot Motions",
    "doc": "### Tag: LnL_1.5.3\n## Source:\n* Textbook: Landau and Lifshitz, Mechanics, 3rd Edition\n* Chapter 1 The Equations of motion\n* Section 5 The Lagrangian for a system of particles\n* Problem 3: Pendulum with a moving suspension point\n\nIn all three cases described below, the point of support moves in the same plane as the pendulum as\nper a given function of time. The lagrangian of the pendulum is to be found.\n\n## Part a)\nDescription: The pendulum moves uniformally in a vertical circle of radius $a$ and angular velocity\n$\\gamma$\n\nSolution:\nThe coordinates of m can be expressed as:\n$$\n\\begin{aligned}\nx &= a\\cos(\\gamma t) + l\\sin\\phi\\\\\ny &= a\\sin(\\gamma t) - l\\cos\\phi\n\\end{aligned}\n$$\n(where generalized coordinate, $\\phi$, is the angle the string makes\nwith vertical, $\\gamma$ is angle with horizontal)\n\n$$\\mathcal{L} = T-V$$ where\nKinetic and potential energies:\n$$\n\\begin{aligned}\nT &= \\tfrac{1}{2}m(\\dot{x}^2 + \\dot{y}^2)\n= \\tfrac{1}{2}m\\bigl(l^2\\dot{\\phi}^2 + 2al\\gamma\\sin(\\phi-\\gamma t)\\dot{\\phi} + a^2\\gamma^2\\bigr)\\\\\nV &= mg y = mg\\bigl(a\\sin(\\gamma t) - l\\cos\\phi\\bigr)\n\\end{aligned}\n$$\n\nWe can ignore the constant term $\\tfrac{1}{2}ma^2\\gamma^2$ in $T$ as it does not affect the\nequations of motion.\nLike wise, $mg a\\sin(\\gamma t)$ in $V$ can be ignored since its contribution to action is constant\nLet us note that the total derivative of $a l \\cos(\\phi - \\gamma t)$ is:\n$$\n\\frac{d}{dt}\\bigl[al\\cos(\\phi-\\gamma t)\\bigr]\n= -al\\sin(\\phi-\\gamma t)\\dot{\\phi} + al\\gamma\\sin(\\phi-\\gamma t)\n$$\n\nRearraging the terms, the lagrangian can be written as:\n$$\nL = \\tfrac{1}{2}m l^{2}\\dot{\\phi}^{2} + m a l \\gamma^{2}\\sin(\\phi-\\gamma t) + m g l \\cos\\phi-\n  m\\gamma\\frac{d}{dt}\\bigl[al\\cos(\\phi-\\gamma t)\\bigr]\n$$\nSince lagrangians differing by a total time derivate lead to the same equations of motion\nwe can ignore the last term. So that the final lagrangian becomes:\n$$\nL = \\tfrac{1}{2}m l^2\\dot{\\phi}^2 + m a l \\gamma^2 \\sin(\\phi-\\gamma t) + m g l \\cos\\phi\n$$\n\n## Part b)\nDescription: The point of support oscillates horizontally according to the law $x = a\\cos(\\gamma t)$\n\nSolution:\nThe coordinates of $m$ can be expressed as:\n$$\n\\begin{aligned}\nx &= a\\cos(\\gamma t) + l\\sin\\phi\\\\\ny &= -l\\cos\\phi\n\\end{aligned}\n$$\n(where generalized coordinate, $\\phi$, is the angle the string makes with vertical)\nso that $\\dot{x} = -a\\gamma\\sin(\\gamma t) + l\\dot{\\phi}\\cos\\phi$ and $\\dot{y} = l\\dot{\\phi}\\sin\\phi$\n$\\mathcal{L} = T - V$ where\n\n$$\n\\begin{aligned}\nT &= \\tfrac{1}{2}m(\\dot{x}^2 + \\dot{y}^2)\n  = \\tfrac{1}{2}m\\bigl(l^2\\dot{\\phi}^2 + a^2\\gamma^2\\sin^2(\\gamma t)\n    - 2 a l \\gamma\\sin(\\gamma t)\\dot{\\phi}\\cos\\phi\\bigr)\\\\\nV &= m g y = - m g l \\cos\\phi\n\\end{aligned}\n$$\nWe can ignore the constant term $\\tfrac{1}{2}m a^2\\gamma^2\\sin^2(\\gamma t)$ in $T$ again.\nThe derivative of $\\sin\\phi\\sin(\\gamma t)$ is\n$$\n\\frac{d}{dt}\\bigl[\\sin\\phi\\sin(\\gamma t)\\bigr]\n= \\dot{\\phi}\\cos\\phi\\sin(\\gamma t) + \\gamma\\sin\\phi\\cos(\\gamma t)\n$$\nsubstituting this in the lagrangian, we get:\n$$\nL = \\tfrac{1}{2} m l^2\\dot{\\phi}^2 + m a l \\gamma^2 \\sin\\phi\\cos(\\gamma t) + m g l \\cos\\phi-\n  m a l \\gamma\\frac{d}{dt}\\bigl[\\sin\\phi\\sin(\\gamma t)\\bigr]\n$$\n\nIgnoring the total time derivate term, the final lagrangian becomes:\n$$\nL = \\tfrac{1}{2} m l^2\\dot{\\phi}^2 + m a l \\gamma^2 \\sin\\phi\\cos(\\gamma t) + m g l \\cos\\phi\n$$\n## Part c)\nDescription: The point of support oscillates vertically according to the law $y = a\\cos(\\gamma t)$\n\nSolution:\nThe coordinates of m can be expressed as:\n$$\n\\begin{aligned}\nx &= l\\sin\\phi\\\\\ny &= a\\cos(\\gamma t) - l\\cos\\phi\n\\end{aligned}\n$$\n(where generalized coordinate, $\\phi$, is angle string makes with vertical)\n$L = T - V$ where\n$$\n\\begin{aligned}\nT &= \\tfrac{1}{2}m(\\dot{x}^2 + \\dot{y}^2)\n  = \\tfrac{1}{2}m\\bigl(l^2\\dot{\\phi}^2 + a^2\\gamma^2\\sin^2(\\gamma t)\n    - 2 a l \\gamma\\sin(\\gamma t)\\dot{\\phi}\\sin\\phi\\bigr)\\\\\nV &= m g y = m g\\bigl(a\\cos(\\gamma t) - l\\cos\\phi\\bigr)\n\\end{aligned}\n$$\n\nWe can ignore the constant term $\\tfrac{1}{2}m a^2\\gamma^2\\sin^2(\\gamma t)$ in $T$ as it does not\nlead to variation.\nLikewise, $m g a\\cos(\\gamma t)$ in $V$ can be ignored since its contribution to action is constant.\nThe time derivative of $\\cos\\phi\\sin(\\gamma t)$ is:\n$$\n\\frac{d}{dt}\\bigl[\\cos\\phi\\sin(\\gamma t)\\bigr]\n= -\\dot{\\phi}\\sin\\phi\\sin(\\gamma t) + \\gamma\\cos\\phi\\cos(\\gamma t)\n$$\nsubstituting this in the lagrangian, we get:\n$$\nL = \\tfrac{1}{2} m l^2\\dot{\\phi}^2 + m g l \\cos\\phi -\n  m a l \\gamma^2 \\cos\\phi\\cos(\\gamma t) +\n  m a l \\gamma\\frac{d}{dt}\\bigl[\\cos\\phi\\cos(\\gamma t)\\bigr]\n$$\nIgnoring the total time derivate term, the final lagrangian becomes:\n$$\nL = \\tfrac{1}{2} m l^2\\dot{\\phi}^2 + m g l \\cos\\phi - m a l \\gamma^2 \\cos\\phi\\cos(\\gamma t)\n$$",
+   "copyright": "2025 Shlok Vaibhav Singh",
    "sections": [],
    "declarations": [],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Basic.lean",
    "module": "Physlib.ClassicalMechanics.Pendulum.SimplePendulum.Basic",
    "title": "The simple gravity pendulum",
    "doc": "## i. Overview\n\nA simple gravity pendulum is a bob of mass `m` fixed to one end of a rigid massless rod of length\n`ℓ`, the other end of which is pinned at a pivot, swinging in a vertical plane under a uniform\ngravitational acceleration `g`. Its configuration is the angle `θ` of the rod from the downward\nvertical. The bob moves on the circle of radius `ℓ` about the pivot, so its moment of inertia\nabout the pivot is `I = m ℓ²` and its kinetic energy is `T = ½ I θ̇²`. Swinging out to the angle\n`θ` raises the bob by `ℓ (1 - cos θ)` against gravity, so the potential energy is\n`V = m g ℓ (1 - cos θ)`, normalized to vanish at the bottom of the swing. Balancing the rate of\nchange of the angular momentum about the pivot against the torque `-m g ℓ sin θ` of gravity gives\nthe equation of motion `I θ̈ = -m g ℓ sin θ`, equivalently `θ̈ + (g/ℓ) sin θ = 0`. The mass drops\nout of the motion, which is governed by the single quantity `ω = √(g/ℓ)`, the angular frequency of\nthe small oscillations about the bottom.\n\nThe configuration of the pendulum is genuinely an angle modulo a full turn, an element of the\ncircle `SimplePendulum.ConfigurationSpace`. As for the harmonic oscillator, the dynamics in this\nfile are written instead on the Euclidean lift `Time → EuclideanSpace ℝ (Fin 1)`: the angle is\ncarried by a real number, from which the configuration is recovered by\n`SimplePendulum.ConfigurationSpace.ofAngle`, and the one-dimensional Euclidean space stands in for\nboth the configuration space and its tangent space, so that the Euler–Lagrange operator of Physlib\napplies verbatim. Two lifts differing by `2π n` describe the same motion: the invariance of the\ndynamics under such shifts is proved in the module `SimplePendulum.LiftInvariance`, and the full\nconnection of the model here with the geometric configuration space is made in a later module.\nThe first consequences of the dynamics — the equilibria, and the below- and above-separatrix\nenergy bounds characteristic of libration and rotation — follow in `SimplePendulum.Equilibria`.\n\n## ii. Key results\n\n- `SimplePendulum` contains the input data of the problem: the mass `m` of the bob, the length `ℓ`\n  of the rod and the gravitational acceleration `g`.\n- `SimplePendulum.ω` is the angular frequency `√(g/ℓ)` of the small oscillations, and\n  `SimplePendulum.inertia` is the moment of inertia `m ℓ²` of the bob about the pivot. They are\n  tied together by `SimplePendulum.ω_sq_mul_inertia`, the identity by which the mass cancels from\n  the equation of motion.\n- `SimplePendulum.kineticEnergy`, `SimplePendulum.potentialEnergy` and `SimplePendulum.energy` are\n  the energies, with the bounds `potentialEnergy_nonneg`, `potentialEnergy_le` and\n  `potentialEnergy_eq_zero_iff`, the gradient `gradient_potentialEnergy` of the potential and the\n  time derivatives `kineticEnergy_deriv`, `potentialEnergy_deriv` and `energy_deriv`.\n- `SimplePendulum.lagrangian` is the Lagrangian `T - V` of the pendulum, and\n  `SimplePendulum.torque` is the torque about the pivot, the generalized force conjugate to\n  the angle.\n- `SimplePendulum.EquationOfMotion` is the equation of motion `I θ̈ = τ(θ)`, with its scalar form\n  `equationOfMotion_iff_scalar` and its independence of the mass `equationOfMotion_iff_of_eq_ω`;\n  `SimplePendulum.IsSolution` is a smooth solution of it.\n- `SimplePendulum.gradLagrangian` is the variational derivative of the action, computed by\n  `gradLagrangian_eq_eulerLagrangeOp` and `gradLagrangian_eq_torque`.\n- `SimplePendulum.equationOfMotion_iff_gradLagrangian_zero` identifies the equation of motion,\n  for smooth lifts of the angle, with the vanishing of the variational derivative of the action,\n  and `SimplePendulum.isSolution_iff` characterizes the solutions as the smooth critical points\n  of the action.\n- `SimplePendulum.energy_conservation_of_equationOfMotion`,\n  `SimplePendulum.energy_conservation_of_equationOfMotion'` and\n  `SimplePendulum.IsSolution.energy_eq` express the conservation of energy along the motions of\n  the pendulum.\n## iii. Table of contents\n\n- A. The input data\n  - A.1. The structure of the input data\n  - A.2. Simple inequalities for the input data\n- B. Frequency and moment of inertia\n  - B.1. The angular frequency\n  - B.2. The moment of inertia\n- C. The energies\n  - C.1. The definitions of the energies\n  - C.2. Simple equalities and bounds for the energies\n  - C.3. Smoothness of the energies and the gradient of the potential\n  - C.4. Time derivatives of the energies\n- D. The Lagrangian\n  - D.1. The definition of the Lagrangian and equalities for it\n  - D.2. Smoothness of the Lagrangian\n  - D.3. Gradients of the Lagrangian\n- E. The torque and the equation of motion\n  - E.1. The torque\n  - E.2. The equation of motion\n  - E.3. Smooth solutions\n  - E.4. The scalar equation and independence of the mass\n- F. The variational derivative of the action\n  - F.1. The definition of the variational derivative\n  - F.2. Equality with the Euler–Lagrange operator\n  - F.3. The variational derivative in terms of the torque\n- G. Equation of motion and the variational principle\n  - G.1. Equivalence with the vanishing of the variational derivative\n  - G.2. The variational characterization of solutions\n- H. Energy conservation\n  - H.1. Energy conservation in terms of time derivatives\n  - H.2. Energy conservation in terms of constant energy\n  - H.3. Energy conservation for solutions\n## iv. References\n\nReferences for the simple gravity pendulum include:\n\n* Landau & Lifshitz, Mechanics, 3rd ed., §5 and §21. [ref: landau_mechanics]\n* Arnold, Mathematical Methods of Classical Mechanics, 2nd ed., §4. [ref: arnold_mechanics]",
+   "copyright": "2026 Aadarsh Agarwal",
    "sections": [
     {
      "line": 114,
@@ -4105,13 +4168,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Equilibria.lean",
    "module": "Physlib.ClassicalMechanics.Pendulum.SimplePendulum.Equilibria",
    "title": "Equilibria and energy regimes of the simple pendulum",
    "doc": "## i. Overview\n\nThe equation of motion of the simple gravity pendulum, `I θ̈ = -m g ℓ sin θ` in the lifted\nformulation of `SimplePendulum.Basic`, has two elementary consequences that follow from the\nvanishing of the torque and from energy conservation alone, before any non-constant solution is\nconstructed. The first is the equilibria: the torque of gravity vanishes exactly where `sin θ`\ndoes, so the constant lifts at the angle `0` — the bob hanging at rest below the pivot — and at\nthe angle `π` — the bob balanced above it — solve the equation of motion, and conversely a\nconstant lift is a solution only at the multiples of `π`. The second is the division of the\nsmooth motions into regimes by the value of the conserved energy. The threshold is the energy\n`2 m g ℓ` of the inverted equilibrium, the separatrix energy: below it the potential energy\ncannot reach its value at the top of the swing, so the bob never gets there — classically the\nregime of libration, the bob swinging back and forth; above it the kinetic energy never\nvanishes, so the bob never halts — classically the regime of rotation, the pendulum circulating\nover the top. This is the phase portrait of the pendulum drawn in Arnold §4, whose level curves\nof the energy are closed ovals below the threshold and unbounded waves above it.\n\nAs in `SimplePendulum.Basic`, the motion is written on the Euclidean lift\n`Time → EuclideanSpace ℝ (Fin 1)` of the angle. Only the bounds characteristic of each regime\nare proved here: the librating and rotating motions themselves, and the instability of the\ninverted equilibrium, are statements about non-constant solutions and are not constructed in\nthis module.\n\n## ii. Key results\n\n- `SimplePendulum.equationOfMotion_const_zero` and `SimplePendulum.equationOfMotion_const_pi`\n  are the hanging and the inverted equilibrium, packaged as the simplest explicit solutions of\n  the pendulum by `SimplePendulum.isSolution_const_zero` and `SimplePendulum.isSolution_const_pi`,\n  and `SimplePendulum.equationOfMotion_const_iff` shows that the constant solutions are exactly\n  the equilibria.\n- `SimplePendulum.separatrixEnergy` is the energy `2 m g ℓ` of the inverted equilibrium\n  (`SimplePendulum.energy_const_pi`), the threshold between libration and rotation.\n- `SimplePendulum.neg_one_lt_cos_of_energy_lt`: below the threshold the bob never reaches the\n  top of the swing. `SimplePendulum.deriv_ne_zero_of_energy_gt`: above it the angular velocity\n  never vanishes. `SimplePendulum.potentialEnergy_eq_energy_of_deriv_eq_zero`: at a turning\n  point the potential energy equals the total energy.\n\n## iii. Table of contents\n\n- A. Equilibria\n  - A.1. The hanging equilibrium\n  - A.2. The inverted equilibrium\n  - A.3. The constant solutions are the equilibria\n- B. Energy regimes\n  - B.1. The separatrix energy\n  - B.2. Energy bounds\n  - B.3. Libration and rotation\n  - B.4. Turning points\n\n## iv. References\n\nReferences for the equilibria and the energy regimes of the simple pendulum include:\n\n* Landau & Lifshitz, Mechanics, 3rd ed., §11 (motion in one dimension: the turning points, and\n  finite and infinite motion according to the energy). [ref: landau_mechanics]\n* Arnold, Mathematical Methods of Classical Mechanics, 2nd ed., §4 (the phase portrait of the\n  pendulum). [ref: arnold_mechanics]",
+   "copyright": "2026 Aadarsh Agarwal",
    "sections": [
     {
      "line": 82,
@@ -4273,13 +4338,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Basic.lean",
    "module": "Physlib.ClassicalMechanics.Pendulum.SimplePendulum.Geometric.Basic",
    "title": "Configuration space of the simple pendulum",
    "doc": "## i. Overview\n\nA simple pendulum is a bob fixed to one end of a rigid massless rod of length `ℓ`, the other end\nof which is pinned at a pivot, swinging in a vertical plane under gravity. Its position is fixed by\nthe angle of the rod from the downward vertical, and two angles that differ by a full turn describe\nthe same position. The configuration space is therefore a circle.\n\nWe record a configuration by its angle modulo `2π`, i.e. by an element of `Real.Angle`, as the\nsliding pendulum does (`Physlib.ClassicalMechanics.Pendulum.SlidingPendulum`). The circle carries\nthe structure of a compact analytic one-dimensional manifold; we obtain it by identifying the\nconfiguration space with Mathlib's unit circle `Circle` and pulling back its charts. The smooth\nidentification of the configuration space with `Circle` (the analogue of the harmonic oscillator's\n`valDiffeomorph`) is deferred to a later module. The real-valued angle that is used to\nwrite down the dynamics is a lift of the configuration along the covering map\n`ℝ → ConfigurationSpace`; it is not a chart, and two lifts differing by `2π n` describe the same\nconfiguration. Finally the position of the bob in the plane is recorded by `toSpace ℓ`, which sends\nthe configuration at angle `θ` to `(ℓ sin θ, -ℓ cos θ)`: the pivot is the origin and the second axis\npoints upwards.\n\n## ii. Key results\n\n- `ConfigurationSpace` : the configuration space of the planar simple pendulum.\n- `ConfigurationSpace.circleHomeomorph` : its identification with the unit circle, with inverse\n  `ConfigurationSpace.ofCircle` (`toCircle_ofCircle`, `ofCircle_toCircle`).\n- `ConfigurationSpace.instChartedSpace`, `ConfigurationSpace.instIsManifold` : the analytic\n  manifold structure, pulled back from `Circle` (`chartAt_source`, `chartAt_target`).\n- `ConfigurationSpace.ofAngle` : the angular lift `ℝ → ConfigurationSpace`, periodic with period\n  `2π`, continuous, surjective, analytic, and a covering map (`isCoveringMap_ofAngle`).\n- `ConfigurationSpace.toSpace` : the position of the bob in `Space 2`, with\n  `toSpace_ofAngle` and the rod-length constraint `toSpace_norm`; for `ℓ ≠ 0` it is a closed\n  embedding (`toSpace_isClosedEmbedding`).\n\n## iii. Table of contents\n\n- A. The configuration space type\n- B. Topology and identification with the unit circle\n- C. Manifold structure\n- D. The angular lift\n- E. Map to physical space\n\n## iv. References\n\n* Landau & Lifshitz, Mechanics, 3rd ed., §5, Problems 1–3 (pendulum configurations).\n  [ref: landau_mechanics]\n* Mathlib, `Mathlib.Geometry.Manifold.Instances.Sphere` (the manifold structure on `Circle`).",
+   "copyright": "2026 Aadarsh Agarwal",
    "sections": [
     {
      "line": 71,
@@ -4681,13 +4748,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/PhysicalSpace.lean",
    "module": "Physlib.ClassicalMechanics.Pendulum.SimplePendulum.Geometric.PhysicalSpace",
    "title": "The simple pendulum in physical space",
    "doc": "## i. Overview\n\nThe trajectory module places the bob in the plane along a lifted trajectory; this module fixes a\nsimple pendulum `S` and identifies the dynamics of `SimplePendulum.Basic`, written on the\nEuclidean lift of the angle, with the dynamics of the bob moving in physical space. Along a lift\n`θ` the bob is at `S.spaceTrajectory θ`, at the fixed distance `ℓ` from the pivot; its velocity\nis obtained by differentiating the position componentwise, and the square of its speed is\n`ℓ² θ̇²`. The chart kinetic energy `½ I θ̇²` is then exactly the kinetic energy `½ m ‖v‖²` of\nthe bob, the chart potential energy `m g ℓ (1 - cos θ)` is exactly the gravitational potential\n`m g h` of the bob with the height `h` measured from the bottom of the swing, and the chart\nLagrangian is the constrained Lagrangian `T - V` of a point mass moving on the circle of radius\n`ℓ` about the pivot. Velocities in this module are physical-space time derivatives; the\ngeometric velocity as a tangent vector to the configuration circle is deferred, as discussed in\nthe trajectory module.\n\n## ii. Key results\n\n- `SimplePendulum.spaceTrajectory` : the bob's position in the plane along a lifted trajectory,\n  with the rod-length constraint `SimplePendulum.norm_spaceTrajectory`.\n- `SimplePendulum.deriv_spaceTrajectory` : the bob's velocity along a lifted trajectory, with\n  the square of its speed `SimplePendulum.norm_sq_deriv_spaceTrajectory`.\n- `SimplePendulum.kineticEnergy_eq_space`, `SimplePendulum.potentialEnergy_eq_height` and\n  `SimplePendulum.lagrangian_eq_space` : the chart kinetic energy, potential energy and\n  Lagrangian are those of the bob in physical space; `SimplePendulum.energy_eq_space` is the\n  corresponding statement for the total energy.\n\n## iii. Table of contents\n\n- A. The bob's position along a lifted trajectory\n- B. The bob's velocity and speed\n- C. The energies and the Lagrangian in physical space\n\n## iv. References\n\n* `Physlib.ClassicalMechanics.Pendulum.SimplePendulum.Basic` (the lifted dynamics: the energies and\n  the Lagrangian on the Euclidean lift of the angle).\n* `Physlib.ClassicalMechanics.Pendulum.SimplePendulum.Geometric.Trajectory` (trajectories on the\n  configuration circle and the position of the bob along them).\n* Landau & Lifshitz, Mechanics, 3rd ed., §5, Problems 1–3 (pendulum configurations).\n  [ref: landau_mechanics]",
+   "copyright": "2026 Aadarsh Agarwal",
    "sections": [
     {
      "line": 64,
@@ -4817,13 +4886,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Geometric/Trajectory.lean",
    "module": "Physlib.ClassicalMechanics.Pendulum.SimplePendulum.Geometric.Trajectory",
    "title": "Geometric trajectories of the simple pendulum",
    "doc": "## i. Overview\n\nA trajectory of the simple pendulum is a time-parametrized curve in the configuration circle.\nThe dynamics of the pendulum is written for a real-valued lift of the angle;\n`Trajectory.ofLift` sends such a lift to the trajectory it describes on the circle, by applying\nthe angular lift `ConfigurationSpace.ofAngle` at each time. Two lifts describe the same\ntrajectory exactly when at each time they differ by a whole number of turns, a smooth lift\ndescribes a smooth curve in the circle, and composing with `ConfigurationSpace.toSpace` places\nthe bob in the plane along the trajectory, at distance `|ℓ|` from the pivot at all times.\n\nThe geometric velocity — the `mfderiv` of a trajectory as a tangent vector to the circle, read\nin its stereographic charts — is left for a later module, as is the smooth identification of\nthe configuration space with `Circle`; in this module and the next, velocities are computed in\nphysical space, on the position of the bob in the plane.\n\n## ii. Key results\n\n- `Trajectory` : a trajectory of the pendulum, a curve in the configuration circle.\n- `Trajectory.ofLift` : the trajectory described by a lift of the angle, with\n  `Trajectory.ofLift_add_int_mul_two_pi` and `Trajectory.ofLift_eq_iff` making precise that two\n  lifts describe the same trajectory exactly when they differ by whole turns at each time.\n- `Trajectory.contMDiff_ofLift` : the trajectory described by a `C^n` lift is a `C^n` curve in\n  the configuration circle; `Trajectory.continuous_ofLift` is the topological counterpart.\n- `Trajectory.toSpace` : the physical position of the bob along a trajectory, with the\n  rod-length constraint `Trajectory.norm_toSpace`.\n\n## iii. Table of contents\n\n- A. The trajectory type and the lift\n- B. Smoothness of lifted trajectories\n- C. Physical position along a trajectory\n\n## iv. References\n\n* `Physlib.ClassicalMechanics.Pendulum.SimplePendulum.Geometric.Basic` (the configuration circle,\n  the angular lift `ofAngle` and the map to physical space).\n* `Physlib.ClassicalMechanics.HarmonicOscillator.Geometric.Trajectory` (the corresponding trajectory\n  module of the harmonic oscillator, whose structure this module follows).",
+   "copyright": "2026 Aadarsh Agarwal",
    "sections": [
     {
      "line": 62,
@@ -4929,13 +5000,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Hamiltonian.lean",
    "module": "Physlib.ClassicalMechanics.Pendulum.SimplePendulum.Hamiltonian",
    "title": "The Hamiltonian formulation of the simple pendulum",
    "doc": "## i. Overview\n\nThis module gives the Hamiltonian formulation of the simple gravity pendulum, on the same\none-dimensional Euclidean lift of the angle as `SimplePendulum.Basic`. The canonical momentum\nconjugate to the angle is the gradient of the Lagrangian in the angular velocity, the angular\nmomentum `p = I θ̇` about the pivot; since the moment of inertia is positive, taking the\ncanonical momentum is a linear equivalence between velocities and momenta. The Hamiltonian is\nthe Legendre transform `H = ⟪p, θ̇⟫ - L` of the Lagrangian, which works out to the energy\nwritten on momentum-angle phase space, `H(t, p, θ) = ½ (1/I) ‖p‖² + V(θ)`; along any lift of\nthe angle it is the energy of the lift. Hamilton's equations for the pendulum are packaged, as\nfor the harmonic oscillator, into the vanishing of an operator on phase space, and for a smooth\nlift of the angle they are equivalent to the equation of motion of `SimplePendulum.Basic`.\n\n## ii. Key results\n\n- `SimplePendulum.canonicalMomentum` is the canonical momentum `p = ∂L/∂θ̇ = I θ̇`, as a\n  linear equivalence between velocities and momenta, with its value recorded by\n  `canonicalMomentum_eq`.\n- `SimplePendulum.hamiltonian` is the Legendre transform of the Lagrangian, computed by\n  `hamiltonian_eq` to be `½ (1/I) ‖p‖² + V(θ)`, smooth by `hamiltonian_contDiff`, with the\n  two partial gradients `gradient_hamiltonian_position_eq` and\n  `gradient_hamiltonian_momentum_eq`.\n- `SimplePendulum.hamiltonian_eq_energy` identifies the Hamiltonian, evaluated along any lift\n  of the angle on its canonical momentum, with the energy of the lift.\n- `SimplePendulum.hamiltonEqOp` is the operator on momentum-angle phase space whose vanishing\n  is Hamilton's equations, and `SimplePendulum.equationOfMotion_iff_hamiltonEqOp_eq_zero`\n  proves that, for a smooth lift of the angle, Hamilton's equations are equivalent to the\n  equation of motion.\n- `SimplePendulum.equationOfMotion_tfae` gathers the formulations into a single equivalence:\n  for a smooth lift of the angle the equation of motion, its scalar form `θ̈ + ω² sin θ = 0`,\n  Hamilton's equations, and the Lagrangian and Hamiltonian variational principles are all\n  equivalent.\n\n## iii. Table of contents\n\n- A. The canonical momentum and the Hamiltonian\n  - A.1. The canonical momentum\n  - A.2. The Hamiltonian\n    - A.2.1. Equality for the Hamiltonian\n    - A.2.2. Smoothness of the Hamiltonian\n    - A.2.3. Gradients of the Hamiltonian\n  - A.3. Relation between Hamiltonian and energy\n  - A.4. Hamilton equation operator\n  - A.5. Equation of motion if and only if Hamilton's equations\n- B. Equivalences between the formulations\n\n## iv. References\n\nReferences for the Hamiltonian formulation of the simple pendulum include:\n\n* Landau & Lifshitz, Mechanics, 3rd ed., §40, for the canonical momentum, the Hamiltonian as the\n  Legendre transform of the Lagrangian, and Hamilton's equations. [ref: landau_mechanics]\n* The module `Physlib.ClassicalMechanics.Pendulum.SimplePendulum.Basic`, whose Lagrangian, energy\n  and equation of motion this module reformulates.",
+   "copyright": "2026 Aadarsh Agarwal",
    "sections": [
     {
      "line": 81,
@@ -5069,13 +5142,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/Pendulum/SimplePendulum/LiftInvariance.lean",
    "module": "Physlib.ClassicalMechanics.Pendulum.SimplePendulum.LiftInvariance",
    "title": "Independence of the lift for the simple pendulum",
    "doc": "## i. Overview\n\nThe dynamics of the simple gravity pendulum in `SimplePendulum.Basic` is written on a lift of the\nmotion: the real angle `θ t 0` stands for the configuration `ConfigurationSpace.ofAngle (θ t 0)`,\nand two lifts differing by a whole number of turns carry the same configurations. For the lifted\nformulation to describe the pendulum faithfully, nothing dynamical may depend on the choice of\nthe lift. This module proves that the dynamical quantities — the potential and kinetic energies,\nthe torque, the energy, and the equation of motion together with its solutions — are invariant\nunder the deck transformations `θ ↦ θ + 2π n` of the angular lift, and closes by making the\nstarting point precise: the shifted lift describes the same configuration, by the periodicity of\nthe angular lift of the geometric configuration space. The packaging of this invariance at the\nlevel of configuration-space trajectories comes with the geometric bridge in a later module.\n\n## ii. Key results\n\n- `SimplePendulum.potentialEnergy_add_int_mul_two_pi` and\n  `SimplePendulum.torque_add_int_mul_two_pi`: the potential energy and the torque are unchanged\n  by shifting the angle by a whole number of turns.\n- `SimplePendulum.kineticEnergy_add_const` and `SimplePendulum.energy_add_int_mul_two_pi`: the\n  kinetic energy is unchanged by any constant shift of the lift, and the energy by a shift by a\n  whole number of turns.\n- `SimplePendulum.equationOfMotion_add_int_mul_two_pi` and\n  `SimplePendulum.isSolution_add_int_mul_two_pi`: the equation of motion and its solutions are\n  invariant under shifting the lift by a whole number of turns.\n- `SimplePendulum.ofAngle_add_int_mul_two_pi_coord`: the shifted lift describes the same\n  configuration.\n\n## iii. Table of contents\n\n- A. Independence of the lift\n  - A.1. Invariance of the potential energy and the torque\n  - A.2. Invariance of the energy\n  - A.3. Invariance of the equation of motion and its solutions\n  - A.4. The shifted lift describes the same configuration\n\n## iv. References\n\nReferences for the simple gravity pendulum include:\n\n* Landau & Lifshitz, Mechanics, 3rd ed., §5 and §21. [ref: landau_mechanics]\n* Arnold, Mathematical Methods of Classical Mechanics, 2nd ed., §4. [ref: arnold_mechanics]",
+   "copyright": "2026 Aadarsh Agarwal",
    "sections": [
     {
      "line": 67,
@@ -5157,13 +5232,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/Pendulum/SimplePendulum/PeriodFormula.lean",
    "module": "Physlib.ClassicalMechanics.Pendulum.SimplePendulum.PeriodFormula",
    "title": "The period formula of the simple gravity pendulum",
    "doc": "## i. Overview\n\nBeyond the small-angle approximation the period of the simple gravity pendulum depends on the\namplitude of the swing. Released from rest at the angle `θ₀`, with `0 < θ₀ < π`, the pendulum\nlibrates about the bottom of its swing, and the classical calculation (Landau & Lifshitz, §11,\nProblem 1) integrates the energy first integral by quadrature: the quarter period is the time\nof descent from `θ₀` to the bottom, the substitution `sin (θ/2) = sin (θ₀/2) sin φ` turns the\nresulting integral into a complete elliptic integral of the first kind, and the period is\n\n`T = 4 √(ℓ/g) K(sin ½θ₀)`,\n\nwith `K` Legendre's complete elliptic integral of the first kind in the modulus convention. In\nthe parameter convention of `Real.completeEllipticK`, where the parameter is the square\n`m = k²` of the modulus, the same formula reads `4 √(ℓ/g) completeEllipticK (sin² (θ₀/2))`.\n\nThis module records that formula as `SimplePendulum.periodFormula` and proves what follows\nfor it from the theory of `completeEllipticK` alone: it is even in the amplitude, at zero\namplitude it is the small-angle period `2π √(ℓ/g)`, it is continuous on `(-π, π)` and tends to\nthe small-angle period as the amplitude tends to zero, it is never below the small-angle\nperiod, it is strictly increasing in the amplitude on `[0, π)`, and it is at most\n`2π √(ℓ/g) / cos (θ₀/2)`. The formula is therefore not constant in the amplitude — the\nclassical statement that the pendulum is not isochronous, once the identification below is\nproved — and the upper bound quantifies how it grows as the amplitude approaches the inverted\nposition.\n\nWhat this module does not do is identify `periodFormula θ₀` with the period of a solution of\nthe nonlinear equation of motion released from rest at `θ₀`. That identification is the\ntheorem the formula is named for, and its formalization — the quarter period as a first hitting\ntime, the quadrature of the energy first integral, the substitution, and their assembly, on top\nof the uniqueness of solutions and the time-reversal symmetry of the equation of motion\n(formalized in the companion module `SimplePendulum/Solution.lean`) — is not yet carried out;\nthe `TODO` after the definition lists the milestones. The pointwise energy first integral itself,\n`θ̇² = (2g/ℓ)(cos θ - cos θ₀)`, is now proved in the companion module\n`SimplePendulum/ReleasedFromRest.lean`; turning it into the quarter period as a definite integral\nremains open, along with the rest of the milestones below. Until then\n`periodFormula` is a definition, and the statements about it are statements about the elliptic\nintegral.\n\n## ii. Key results\n\n- `SimplePendulum.periodFormula` is the classical formula `4 √(ℓ/g) K(sin² (θ₀/2))` for the\n  period of libration with amplitude `θ₀`; for `|θ₀| < π` its parameter `sin² (θ₀/2)` lies\n  below `1` (`Real.sin_half_sq_lt_one`), so it is evaluated on the domain of\n  `completeEllipticK`.\n- `SimplePendulum.periodFormula_neg`: the formula is even in the amplitude.\n- `SimplePendulum.periodFormula_zero`: at zero amplitude the formula is the small-angle\n  period, `periodFormula 0 = smallAnglePeriod`.\n- `SimplePendulum.continuousOn_periodFormula` and\n  `SimplePendulum.continuousAt_periodFormula_zero`: the formula is continuous on `(-π, π)`,\n  in particular at `0`.\n- `SimplePendulum.periodFormula_tendsto_smallAnglePeriod`: the formula tends to the\n  small-angle period as the amplitude tends to zero.\n- `SimplePendulum.periodFormula_mono` and `SimplePendulum.periodFormula_strictMono`, with the\n  bundled `SimplePendulum.monotoneOn_periodFormula` and\n  `SimplePendulum.strictMonoOn_periodFormula`: on `[0, π)` the formula is increasing, and\n  strictly increasing, in the amplitude.\n- `SimplePendulum.smallAnglePeriod_le_periodFormula` and `SimplePendulum.periodFormula_pos`:\n  the formula is at least the small-angle period, in particular positive, whenever\n  `sin² (θ₀/2) < 1`.\n- `SimplePendulum.periodFormula_le` and `SimplePendulum.periodFormula_le'`: for `|θ₀| < π` the\n  formula is at most `2π √(ℓ/g) / cos (θ₀/2) = smallAnglePeriod / cos (θ₀/2)`.\n\n## iii. Table of contents\n\n- A. The period formula, its continuity and its small-angle limit\n  - A.1. The formula, its domain and its evenness\n  - A.2. Continuity and the small-angle limit\n- B. Monotonicity and bounds in the amplitude\n  - B.1. Monotonicity in the amplitude\n  - B.2. Bounds\n\n## iv. References\n\n* Landau & Lifshitz, Mechanics, 3rd ed., §11, Problem 1: `T = 4 √(l/g) K(sin ½φ₀)`, in the modulus\n  convention `K(k) = ∫ φ in 0..π/2, (1 - k² sin² φ)^(-1/2)`. [ref: landau_mechanics]\n* M. Abramowitz, I. A. Stegun, Handbook of Mathematical Functions, 17.3.1 (the parameter convention\n  `K(m)`, `m = k²`, used by `Real.completeEllipticK`). [ref: abramowitz_stegun_1964]\n* The module `Physlib.Mathematics.SpecialFunctions.EllipticIntegral`, for `completeEllipticK` and\n  its theory on the domain `m < 1`.\n* The module `Physlib.ClassicalMechanics.Pendulum.SimplePendulum.SmallAngle`, for the small-angle\n  period `smallAnglePeriod = 2π √(ℓ/g)`.",
+   "copyright": "2026 Aadarsh Agarwal",
    "sections": [
     {
      "line": 106,
@@ -5305,13 +5382,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 1
   },
   {
    "file": "Physlib/ClassicalMechanics/Pendulum/SimplePendulum/ReleasedFromRest.lean",
    "module": "Physlib.ClassicalMechanics.Pendulum.SimplePendulum.ReleasedFromRest",
    "title": "The simple pendulum released from rest",
    "doc": "## i. Overview\n\nThis module collects what is known about the simple pendulum released from rest at an angle\n`θ₀`, across both the exact nonlinear dynamics and the small-angle approximation.\n\nFor the exact equation of motion, this module begins the identification of\n`SimplePendulum.periodFormula` with the actual period of the nonlinear pendulum, the theorem\nleft open by `Physlib.ClassicalMechanics.Pendulum.SimplePendulum.PeriodFormula`. The classical\nargument (Landau & Lifshitz, §11, Problem 1) starts from the energy first integral: multiplying\nthe equation of motion by the angular velocity and integrating once, using energy conservation,\ngives `θ̇² = (2g/ℓ)(cos θ - cos θ₀)` along a solution released from rest at the angle `θ₀`. That\nquadrature is proved here. It is purely algebraic — a rearrangement of\n`SimplePendulum.energy_conservation_of_equationOfMotion'` together with the initial data of a\nmotion released from rest — and does not yet touch the harder analytic content of the classical\nargument: the quarter period as a first hitting time, the further substitution turning the\nquadrature into `SimplePendulum.periodFormula`, and the identification of the resulting period\nwith a genuine (globally defined) solution. Those remain open; see the module docstring of\n`PeriodFormula` for the full list of milestones.\n\nFor the small-angle approximation, this module also records the linearized motion released from\nrest, the cosine `θ₀ cos (ω t)`: its identification with the small-angle trajectory of the\ncorresponding initial data, its initial angle and vanishing initial angular velocity, and its\ndynamics — satisfying the linearized equation of motion and being periodic with the small-angle\nperiod.\n\n## ii. Key results\n\n- `SimplePendulum.inertia_mul_sq_deriv_eq_of_isSolution_of_deriv_zero`: along a solution `θ` of\n  the exact equation of motion with `θ 0 0 = θ₀` and released from rest,\n  `I θ̇² = 2 m g ℓ (cos θ - cos θ₀)` at every instant.\n- `SimplePendulum.sq_deriv_eq_of_isSolution_of_deriv_zero`: the same identity with the mass and\n  moment of inertia cancelled, `θ̇² = 2 ω² (cos θ - cos θ₀)`.\n- `SimplePendulum.sq_deriv_eq_of_isSolution_of_deriv_zero'`: the classical form,\n  `θ̇² = (2 g / ℓ) (cos θ - cos θ₀)`.\n- `SimplePendulum.releasedFromRest` is the small-angle motion released from rest at angle `θ₀`,\n  the cosine `θ₀ cos (ω t)`, identified with the small-angle trajectory of the corresponding\n  initial data by `releasedFromRest_eq`, with its initial data recorded by\n  `releasedFromRest_at_zero` and `releasedFromRest_velocity_at_zero`, and its dynamics by\n  `releasedFromRest_linearizedEquationOfMotion` and `releasedFromRest_periodic`.\n\n## iii. Table of contents\n\n- A. The energy first integral of a motion released from rest\n- B. The linearized motion released from rest\n  - B.1. The motion and its identification with the small-angle trajectory\n  - B.2. Initial data and dynamics\n\n## iv. References\n\n- Landau & Lifshitz, Mechanics, 3rd ed., §11, Problem 1 (the quadrature of the energy first\n  integral on the descent).\n- The module `Physlib.ClassicalMechanics.Pendulum.SimplePendulum.PeriodFormula`, for the theorem\n  this quadrature is a first step towards.\n- The module `Physlib.ClassicalMechanics.Pendulum.SimplePendulum.SmallAngle`, for the small-angle\n  approximation and its solution theory, of which section B is a specialization.",
+   "copyright": "2026 Rithwik Ranganathan",
    "sections": [
     {
      "line": 81,
@@ -5405,13 +5484,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/Pendulum/SimplePendulum/SmallAngle.lean",
    "module": "Physlib.ClassicalMechanics.Pendulum.SimplePendulum.SmallAngle",
    "title": "Small-angle motion of the simple gravity pendulum",
    "doc": "## i. Overview\n\nNear the bottom of its swing the torque of the simple gravity pendulum is\n`-m g ℓ sin θ ≈ -m g ℓ θ`, so for small angles the equation of motion `I θ̈ = -m g ℓ sin θ`\nlinearizes to `I θ̈ = -m g ℓ θ`: the equation of a harmonic oscillator whose mass is the moment\nof inertia `I = m ℓ²` of the pendulum and whose spring constant is the coefficient `m g ℓ` of\nthe linearized torque. The angular frequency `√(k/m)` of this oscillator is `√(g/ℓ)`, which is\nexactly the constant `ω` of `SimplePendulum.Basic`, there described as the frequency of the\nsmall oscillations.\n\nThis module packages the oscillator of the small oscillations as\n`SimplePendulum.toHarmonicOscillator`, defines the linearized equation of motion\n`θ̈ + ω² θ = 0` on the same Euclidean lift of the angle as the nonlinear equation, and proves\nthat for smooth lifts of the angle it is the equation of motion of the associated harmonic\noscillator, so that the solution theory of the harmonic oscillator applies verbatim to the\nsmall oscillations of the pendulum.\n\nThe equivalence carries the whole solution theory of the oscillator over to the small\noscillations. Every choice of initial angle and initial angular velocity determines a smooth\nsmall-angle motion, unique among the smooth solutions of the linearized equation of motion,\nwith the closed form `cos (ω t) x₀ + (sin (ω t)/ω) v₀`. Every small-angle motion is periodic\nwith the small-angle period `2π √(ℓ/g)`, in which neither the mass of the bob nor the amplitude\nof the swing appears: within the linearization the pendulum is isochronous. The small-angle\nmotion released from rest at a given angle, the cosine `θ₀ cos (ω t)`, and its properties are\nrecorded in the companion module `SimplePendulum/ReleasedFromRest.lean`. The linearization is\nnot exact, and the final section measures what it discards: the torque differs from its\nlinearization `-m g ℓ θ` by exactly `m g ℓ (θ - sin θ)`, of norm at most `m g ℓ ‖θ‖³/6`, so every\nsmall-angle motion solves the equation of motion of the pendulum itself up to a residual\ncubically small in the angle.\n\n## ii. Key results\n\n- `SimplePendulum.toHarmonicOscillator` is the harmonic oscillator to which the pendulum\n  linearizes, of mass `I = m ℓ²` and spring constant `m g ℓ`. The simp lemmas\n  `toHarmonicOscillator_m` and `toHarmonicOscillator_k` record its data, and\n  `toHarmonicOscillator_ω` identifies its angular frequency with the constant\n  `SimplePendulum.ω` of the pendulum.\n- `SimplePendulum.LinearizedEquationOfMotion` is the small-angle equation of motion\n  `θ̈ + ω² θ = 0`. Its rotational Newton form is `linearizedEquationOfMotion_iff_newton`, and\n  `linearizedEquationOfMotion_iff` identifies it, for smooth lifts of the angle, with the\n  equation of motion of the associated harmonic oscillator. The linearization is literally\n  differentiation: `fderiv_torque_zero_apply` identifies the derivative of the torque at the\n  hanging equilibrium with the force of the oscillator, and\n  `linearizedEquationOfMotion_iff_fderiv_torque` restates the linearized equation as the\n  equation of motion with the torque replaced by that derivative.\n- `SimplePendulum.smallAngleTrajectory` is the small-angle motion determined by a choice of\n  initial conditions, the trajectory of the associated harmonic oscillator: it has the closed\n  form `cos (ω t) x₀ + (sin (ω t)/ω) v₀` (`smallAngleTrajectory_eq`), it is smooth\n  (`smallAngleTrajectory_contDiff`), it assumes its initial data at time `0`\n  (`smallAngleTrajectory_at_zero`, `smallAngleTrajectory_velocity_at_zero`), and it satisfies\n  the linearized equation of motion (`smallAngleTrajectory_linearizedEquationOfMotion`).\n- `SimplePendulum.linearized_unique`: a smooth solution of the linearized equation of motion\n  with the initial data of `IC` is `smallAngleTrajectory IC`. Together with the previous point,\n  this is the existence and uniqueness of the small-angle motions.\n- `SimplePendulum.smallAnglePeriod` is the period of the small oscillations, the period of the\n  associated harmonic oscillator: `2π/ω` (`smallAnglePeriod_eq_two_pi_div_ω`), with closed\n  form `2π √(ℓ/g)` (`smallAnglePeriod_eq`). Every small-angle trajectory is periodic with this\n  period (`smallAngleTrajectory_periodic`), and along each the energy of the associated\n  oscillator is the constant fixed by the initial data (`smallAngleTrajectory_energy`).\n- `SimplePendulum.torque_sub_toHarmonicOscillator_force` computes the exact difference between\n  the torque and the force of the associated oscillator: the term `m g ℓ (θ - sin θ)` the\n  linearization discards. Its norm is at most `m g ℓ ‖θ‖³/6`\n  (`norm_torque_sub_toHarmonicOscillator_force_le`), in coordinates `abs_torque_add_linear_le`,\n  and `gradLagrangian_sub_toHarmonicOscillator` identifies the difference of the variational\n  gradients of the two actions with the difference of torque and linearized force, with the\n  norm bound `norm_gradLagrangian_sub_toHarmonicOscillator_le`.\n- `SimplePendulum.norm_equationOfMotion_residual_le`: a small-angle motion nearly solves the\n  equation of motion of the pendulum itself, leaving at every instant a residual of norm at\n  most `m g ℓ ‖θ‖³/6` — the sense in which the small-angle theory approximates the pendulum;\n  in variational form, `norm_gradLagrangian_le_of_linearizedEquationOfMotion` makes it a\n  near-critical point of the pendulum's action.\n\n## iii. Table of contents\n\n- A. The harmonic oscillator of small oscillations\n  - A.1. The associated harmonic oscillator\n  - A.2. The frequency of the associated oscillator\n- B. The linearized equation of motion\n  - B.1. The linearized equation\n  - B.2. Equivalence with the equation of motion of the oscillator\n  - B.3. Linearization as differentiation of the torque\n- C. Small-angle trajectories\n  - C.1. The trajectory of given initial conditions\n  - C.2. Existence and uniqueness\n- D. The small-angle period\n  - D.1. The period and its closed form\n  - D.2. Periodicity and the energy of the small-angle motions\n- E. The error of the linearization\n  - E.1. The cubic bound on the torque\n  - E.2. The variational gradients\n  - E.3. The residual of the small-angle motions\n\n## iv. References\n\nReferences for the small-angle motion of the simple pendulum include:\n\n* Huygens, Horologium Oscillatorium (1673). [ref: huygens_1673]\n* Landau & Lifshitz, Mechanics, 3rd ed., §21. [ref: landau_mechanics]\n* The module `Physlib.ClassicalMechanics.Pendulum.SimplePendulum.Basic`, whose equation of motion\n  this module linearizes.",
+   "copyright": "2026 Aadarsh Agarwal",
    "sections": [
     {
      "line": 129,
@@ -5717,13 +5798,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 1
   },
   {
    "file": "Physlib/ClassicalMechanics/Pendulum/SimplePendulum/Solution.lean",
    "module": "Physlib.ClassicalMechanics.Pendulum.SimplePendulum.Solution",
    "title": "Existence and uniqueness of the solutions of the simple pendulum",
    "doc": "## i. Overview\n\nThe equation of motion of the simple pendulum, `θ̈ + ω² sin θ = 0`, is nonlinear, and unlike the\nharmonic oscillator it has no solution in closed elementary form. Whatever is to be proved about\n\"the\" motion of the pendulum released with a given angle and angular velocity must therefore rest\non the general theory of ordinary differential equations rather than on an explicit formula. This\nmodule supplies that foundation: two smooth solutions of the equation of motion with the same\ninitial angle and the same initial angular velocity coincide for all time, and for any initial\nangle and angular velocity there is a curve with that initial data satisfying the equation of\nmotion on some interval of time about the initial instant.\n\nThe argument is the one used for the damped harmonic oscillator. The second-order equation is\nrewritten as the first-order system `(θ, θ̇)' = (θ̇, -ω² sin θ)` on the phase space, whose\nright-hand side, the phase-space vector field of the pendulum, is globally Lipschitz because `sin`\nis. The global uniqueness theorem for Lipschitz first-order systems, Mathlib's\n`ODE_solution_unique_univ`, then gives the uniqueness. The uniqueness is global in time and does\nnot depend on the size of the motion: it holds for librations and rotations alike. Existence comes\nfrom the Picard–Lindelöf theorem applied to the same first-order system, the phase-space vector\nfield being smooth; the theorem is local, and so is the statement proved here.\n\nThe equation of motion contains no first derivative of the angle: there is no damping. Reversing\nthe direction of time therefore carries solutions to solutions, and combined with uniqueness this\nshows that a pendulum released from rest retraces its path, the angle being an even function of\nthe time since release.\n\n## ii. Key results\n\n- `SimplePendulum.phaseVectorField` is the phase-space vector field `(θ, θ̇) ↦ (θ̇, -ω² sin θ)`,\n  and `SimplePendulum.phaseVectorField_lipschitz` proves that it is globally Lipschitz, with\n  constant `1 + ω²`.\n- `SimplePendulum.acceleration_eq_of_equationOfMotion` solves the equation of motion for the\n  angular acceleration, and `SimplePendulum.phaseCurve_hasDerivAt` shows that the phase curve\n  `(θ, θ̇)` of a smooth solution is an integral curve of the phase-space vector field.\n- `SimplePendulum.equationOfMotion_unique` proves that two smooth solutions of the equation of\n  motion with the same initial angle and angular velocity are equal, and\n  `SimplePendulum.IsSolution.eq_of_initial` is the same statement for solutions.\n- `SimplePendulum.isSolution_comp_neg` proves that the time reversal `t ↦ θ (-t)` of a solution\n  is a solution, and `SimplePendulum.releasedFromRest_even` that a solution released from rest is\n  an even function of time.\n- `SimplePendulum.exists_local_solution` proves, from the Picard–Lindelöf theorem, that for any\n  initial angle and angular velocity there is a curve with that initial data, differentiable\n  together with its velocity and satisfying the equation of motion at all times within some\n  `ε > 0` of the initial instant.\n\n## iii. Table of contents\n\n- A. The phase-space vector field\n  - A.1. The definition of the vector field\n  - A.2. The Lipschitz bound\n- B. The phase curve of a solution\n  - B.1. The angular acceleration along a solution\n  - B.2. The phase curve as an integral curve\n- C. Uniqueness of the solutions\n- D. Time-reversal symmetry\n  - D.1. Time reversal of solutions\n  - D.2. Motions released from rest\n- E. Local existence\n  - E.1. Smoothness of the phase-space vector field\n  - E.2. Local existence of solutions\n\n## iv. References\n\nReferences for the motion of the pendulum, its phase plane, and the existence and uniqueness\ntheorem for ordinary differential equations include:\n\n* Landau & Lifshitz, Mechanics, 3rd ed., §11, for motion in one dimension. [ref: landau_mechanics]\n* Arnold, Mathematical Methods of Classical Mechanics, 2nd ed., §4, for the phase plane of the\n  pendulum. [ref: arnold_mechanics]\n* Arnold, Ordinary Differential Equations, Chapter 4 (Proofs of the main theorems), for the\n  existence and uniqueness theorem by Picard iteration. [ref: arnold_ode]\n\nThe reduction to a first-order system on the phase space follows\n`DampedHarmonicOscillator.equationOfMotion_unique`.",
+   "copyright": "2026 Aadarsh Agarwal",
    "sections": [
     {
      "line": 98,
@@ -5869,13 +5952,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/Pendulum/SlidingPendulum.lean",
    "module": "Physlib.ClassicalMechanics.Pendulum.SlidingPendulum",
    "title": "Sliding Pendulum",
    "doc": "### Tag: LnL_1.5.2\n## Source:\n* Textbook: Landau and Lifshitz, Mechanics, 3rd Edition\n* Chapter: 1 The Equations of motion\n* Section: 5 The Lagrangian for a system of particles\n* Problem: 2 Sliding Pendulum\n\nDescription:\nA simple pendulum of mass $m_2$ attached to a mass $m_1$ as its point of support via a string of\nlength $l$. The mass $m_1$ is free to move horizontally.\nThe Lagrangian of the system is to be found.\n\nSolution:\nFirst, the constraints are identified:\n$$\n\\begin{aligned}\ny_1 &= 0\\\\\n(x_2 - x_1)^2 + (y_2 - y_1)^2 &= l^2\n\\end{aligned}\n$$\nAnd the second constraint gives:\n$$\n\\begin{aligned}\nx_2 - x_1 &= l\\sin\\phi\\\\\ny_2 - y_1 &= y_2 = -\\,l\\cos\\phi\n\\end{aligned}\n$$\nwith the generalized coordinate $\\phi$ being the angle the string makes with the vertical.\n\nThe Lagrangian is obtained as:\n$$\\mathcal{L} = T_1 + T_2 - V_1 - V_2$$ where\n\n$$\n\\begin{aligned}\nT_1 &= \\tfrac{1}{2} m_1 \\dot{x}_1^2, & V_1 &= 0,\\\\[4pt]\nT_2 &= \\tfrac{1}{2} m_2(\\dot{x}_2^2 + \\dot{y}_2^2)\n    = \\tfrac{1}{2} m_2\\bigl(l^2\\dot{\\phi}^2 + \\dot{x}_1^2 + 2l\\dot{\\phi}\\dot{x}_1\\cos\\phi\\bigr),\n    & V_2 &= m_2 g y_2 = -m_2 g l \\cos\\phi\n\\end{aligned}\n$$\n\nThus the Lagrangian is\n$$\n\\mathcal{L} = \\tfrac{1}{2}(m_1 + m_2)\\dot{x}_1^2 + \\tfrac{1}{2} m_2\\bigl(l^2\\dot{\\phi}^2+\n2l\\dot{\\phi}\\dot{x}_1\\cos\\phi\\bigr) + m_2 g l \\cos\\phi\n$$",
+   "copyright": "2025 Shlok Vaibhav Singh",
    "sections": [
     {
      "line": 66,
@@ -5893,13 +5978,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/PointParticle/Basic.lean",
    "module": "Physlib.ClassicalMechanics.PointParticle.Basic",
    "title": "Point particles",
    "doc": "This module defines point particles together with their motion relative to a\nreference frame. A `Particle` has a constant positive mass and a position over\ntime. Velocity and acceleration are derived from that position rather than stored\nas independent data.\n\nThe trajectory is part of the particle's description, but need not be given by an\nexplicit solution formula. Particle values can be considered subject to conditions\non their positions and on the forces acting on them. A particular mechanical model\ncan therefore be specified by constraints on particles, with the existence of\nparticles satisfying those constraints established separately.\n\nA particle by itself carries no equation of motion or assumption about which\nforces act on it. It is a constituent from which systems can be assembled, rather\nthan a specification of an isolated or unconstrained one-particle system. Newton's\nlaws are imposed when particles and forces are assembled in\n`ClassicalMechanics.PointParticle.NewtonianSystem`.\n\nPosition and its first time derivative are required to be differentiable when the\nframe is inertial. This ensures that the velocity and acceleration used in\nNewtonian systems are genuine derivatives. The trajectories in this definition\nare defined for all real-valued time coordinates relative to the frame's time origin.",
+   "copyright": "2026 Raunak Chhatwal",
    "sections": [],
    "declarations": [
     {
@@ -5952,13 +6039,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/PointParticle/NewtonianSystem/Basic.lean",
    "module": "Physlib.ClassicalMechanics.PointParticle.NewtonianSystem.Basic",
    "title": "Newtonian point-particle systems",
    "doc": "This module defines `NewtonianSystem`, consisting of an inertial reference frame, a finite\ncollection of point particles, and the internal and external forces acting on\nthem. Particles carry masses and positions over time; forces carry vector values\nover time and identify the particles they act on.\n\nNewton's second law requires the net force on each particle to equal its mass\ntimes its acceleration. Newton's third law requires the multiset of internal\nforces to be invariant under equal-and-opposite reversal.\n\nParticles and forces are stored in multisets. For example, if two identical springs\nconnect the same pair of particles, the net force on either particle must count\nboth spring forces, even though they are equal.\n\nMany classical systems are specified by constraints rather than explicit position\nand force functions. Such models can be formalized as conditions on `NewtonianSystem`\nvalues: which particles and forces are present, geometric constraints such as\nfixed distances, and restrictions on the forces such as centrality.\n\nResults can be proved for arbitrary systems satisfying these conditions. An\nexistence proof establishes that a satisfying system exists for given parameters\nand initial conditions; choice can then be used to select one. Explicit formulas\nfor the positions and forces are not required to state the conditions or to\nreason about systems satisfying them.",
+   "copyright": "2026 Raunak Chhatwal",
    "sections": [
     {
      "line": 48,
@@ -6220,13 +6309,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/RigidBody/AngularMomentum.lean",
    "module": "Physlib.ClassicalMechanics.RigidBody.AngularMomentum",
    "title": "Angular momentum of a rigid body",
    "doc": "For a rigid body rotating with angular velocity `ω` about its reference point, each body point at\nposition `r` moves with velocity `ω × r`, so the body's angular momentum about that point is\n`L = ∫ r × (ω × r) dm`. Expanding the double cross product,\n`r × (ω × r) = |r|² ω − (r · ω) r`, shows that `L` is linear in `ω` with matrix the inertia tensor:\n`L = I ω`.\n\n## References\n\n* Landau and Lifshitz, Mechanics, Section 32. [ref: landau_mechanics]",
+   "copyright": "2026 Giuseppe Sorge",
    "sections": [],
    "declarations": [
     {
@@ -6247,13 +6338,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/RigidBody/AngularVelocity.lean",
    "module": "Physlib.ClassicalMechanics.RigidBody.AngularVelocity",
    "title": "The angular velocity of a rigid body",
    "doc": "For a rigid body in motion the orientation `R(t) = orientation t` is a time-dependent rotation. Its\ninstantaneous rate of change is encoded by the *angular velocity tensor*\n`Ω(t) = Ṙ(t) R(t)ᵀ`, the antisymmetric tensor `Ω` appearing in the Landau–Lifshitz decomposition\n`v = V + Ω × r` of the velocity of a point of the body.\n\nA basic consistency check is that `Ω` is skew-symmetric, `Ωᵀ = -Ω` (equivalently `Ω ∈ 𝔰𝔬(d)`); this\nfollows by differentiating the orthogonality identity `R Rᵀ = 1`. The general product and transpose\nrules for time derivatives of matrices used for this live in\n`Physlib.SpaceAndTime.Time.MatrixDerivatives`.\n\nIn three dimensions the skew-symmetric tensor `Ω` is dual to the *angular velocity vector*\n`ω(t) = Ωᵛ` via the hat map (`Physlib.Mathematics.Modules.CrossProductMatrix`), with\n`[ω]ₓ = Ω`; `ω` is the angular velocity proper, appearing in the decomposition `v = V + ω × r`\nas an honest cross product.\n\nThe angular velocity can equally be expressed in the *body frame*: the moving coordinate system\nrigidly attached to the body, with origin at the centre of mass and axes rotating with the body,\nin which every material point has time-independent coordinates. The orientation `R(t)` is\nprecisely the rotational part of the change of frame: a point fixed at position `a` in the body\nframe sits at `r = R(t) a` relative to the centre of mass in the lab frame (the inertial frame in\nwhich the trajectories of `RigidBodyMotion` are written), and a vector with lab-frame components\n`u` has body-frame components `R(t)ᵀ u`. The body frame is in general *not* inertial — it rotates\nwith the body, and its origin follows the (generally accelerating) centre of mass — but it is the\nnatural setting for the inertia tensor and Euler's equations, since the mass distribution, and\nwith it the inertia tensor, is time-independent in body-fixed axes.\n\nThe *body-frame angular velocity tensor* `Ω_body(t) = R(t)ᵀ Ṙ(t)` is defined directly from the\norientation, mirroring the spatial `Ω = Ṙ Rᵀ` rather than being derived from it — the two tensors\nare the derivative `Ṙ` translated back to the identity from the two sides — and they are related\nby conjugation, `Ω_body = Rᵀ Ω R`. The body-frame tensor is again skew-symmetric; in three\ndimensions its dual is the *body-frame angular velocity vector* `ω_body = Ω_bodyᵛ`, the angular\nvelocity `ω` resolved along the body-fixed axes, `ω_body = Rᵀ ω`.\n\n## References\n\n* Landau and Lifshitz, Mechanics, Sections 31 and 32. [ref: landau_mechanics]",
+   "copyright": "2026 Giuseppe Sorge",
    "sections": [],
    "declarations": [
     {
@@ -6442,13 +6535,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/RigidBody/Basic.lean",
    "module": "Physlib.ClassicalMechanics.RigidBody.Basic",
    "title": "Rigid bodies",
    "doc": "A rigid body is one where the distance and relative orientation between particles does not change.\nIn other words, the body remains undeformed.\n\nIn this module we will define the basic properties of a rigid body, including\n- mass\n- center of mass\n- inertia tensor\n- inertia tensor about an arbitrary point\n\nThe moments of the last are taken about the given point rather than about the origin of the\nreference frame. The parallel-axis theorem expresses it in terms of the inertia tensor about the\ncentre of mass.\n\n## References\n\n* Landau and Lifshitz, Mechanics, page 100, Section 32. [ref: landau_mechanics]",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -6565,13 +6660,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 27
   },
   {
    "file": "Physlib/ClassicalMechanics/RigidBody/KineticEnergy.lean",
    "module": "Physlib.ClassicalMechanics.RigidBody.KineticEnergy",
    "title": "Kinetic energy of a rigid body",
    "doc": "For a rigid body rotating with angular velocity `ω` about its reference point the point at\nposition `r` has velocity `ω × r`, so its kinetic energy is `T = ½ ∫ |ω × r|² dm`. Since\n`|ω × r|² = ω · (r × (ω × r))` and the angular momentum is `L = ∫ r × (ω × r) dm = I ω`, the\nkinetic energy is the quadratic form `T = ½ ω · L = ½ ω · I ω` in the inertia tensor.\n\nFor a rigid body in motion the total kinetic energy is the mass integral of half the squared\nspeed of its points, `T = ½ ∫ ⟪v, v⟫ dm`. König's theorem splits it into the kinetic energy of\nthe centre of mass plus the rotational energy about the centre of mass,\n`T = ½ M ⟪V, V⟫ + ½ ∫ |Ṙ (y − c)|² dm`: the cross term vanishes because the first moment of the\nmass distribution about its centre of mass is zero. In three dimensions the rotational term is\n`½ ∫ |ω × r|² dm`, with `ω` the angular velocity vector and `r` the position of the body point\nrelative to the centre of mass.\n\nThe total kinetic energy is defined with the point velocity taken in the closed form\n`Ṙ(t) (y − c) + V(t)` (`velocityClosedForm`), which is polynomial in the body point and hence\nsmooth for any motion; for differentiable motions it agrees with the honest point velocity\n`∂ₜ (displacement · y)`, recovering `T = ½ ∫ ⟪v, v⟫ dm` (`kineticEnergy_eq_integral_velocity`).\n\n## References\n\n* Landau and Lifshitz, Mechanics, Section 32. [ref: landau_mechanics]",
+   "copyright": "2026 Giuseppe Sorge",
    "sections": [],
    "declarations": [
     {
@@ -6648,13 +6745,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/RigidBody/Motion.lean",
    "module": "Physlib.ClassicalMechanics.RigidBody.Motion",
    "title": "Rigid body motion",
    "doc": "The static `RigidBody` records a body-fixed mass distribution. To describe a rigid body *in\nmotion* we record, in addition, the trajectory of its centre of mass in the inertial frame and the\nbody's time-dependent orientation (a rotation about the centre of mass).\n\nFrom this configuration we define the velocity of the centre of mass and the body's linear\nmomentum. The reference point is taken to be the centre of mass, following the decomposition of\na rigid motion into a translation of the centre of mass plus a rotation about it.\n\n## References\n\n* Landau and Lifshitz, Mechanics, Section 32. [ref: landau_mechanics]",
+   "copyright": "2026 Giuseppe Sorge",
    "sections": [],
    "declarations": [
     {
@@ -6859,13 +6958,15 @@
     }
    ],
    "private": 1,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 1
   },
   {
    "file": "Physlib/ClassicalMechanics/RigidBody/SolidSphere.lean",
    "module": "Physlib.ClassicalMechanics.RigidBody.SolidSphere",
    "title": "The solid sphere as a rigid body",
    "doc": "In this module we consider the solid sphere as a rigid body, and compute its mass,\ncenter of mass and inertia tensor.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -6894,33 +6995,39 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 1
   },
   {
    "file": "Physlib/ClassicalMechanics/Scattering/RigidSphere.lean",
    "module": "Physlib.ClassicalMechanics.Scattering.RigidSphere",
    "title": "Scattering off a perfectly rigid sphere",
    "doc": "## References\n\n* Landau and Lifshitz, Mechanics, page 50, Section 18, Problem 1. [ref: landau_mechanics]",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 1
   },
   {
    "file": "Physlib/ClassicalMechanics/Vibrations/LinearTriatomic.lean",
    "module": "Physlib.ClassicalMechanics.Vibrations.LinearTriatomic",
    "title": "Vibrations of a symmetric linear triatomic molecule",
    "doc": "## References\n\n* Landau and Lifshitz, Mechanics, page 72, Section 24, Problem 1. [ref: landau_mechanics]",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 1
   },
   {
    "file": "Physlib/ClassicalMechanics/WaveEquation/Basic.lean",
    "module": "Physlib.ClassicalMechanics.WaveEquation.Basic",
    "title": "Wave equation",
    "doc": "## i. Overview\n\nIn this module we define the wave equation in `d`-dimensional Euclidean space,\nand prove that plane waves are solutions to the wave equation.\nBy a plne wave we mean a function of the form `f(t, x) = f₀(⟪x, s⟫_ℝ - c * t)` where\n`s` is a direction vector and `c` is the propagation speed.\n\n## ii. Key results\n\n- `WaveEquation`: The general form of the wave equation where `c` is the propagation speed.\n- `planeWave`: A vector-valued plane wave travelling in the direction of `s` with\n  propagation speed `c`.\n- `planeWave_waveEquation`: The plane wave satisfies the wave equation.\n\n## iii. Table of contents\n\n- A. The wave equation\n- B. Plane wave solutions\n  - B.1. Definition of a plane wave\n  - B.2. Differentiablity conditions\n  - B.3. Time derivatives of plane waves\n  - B.4. Space derivatives of plane waves\n  - B.5. Laplacian of plane waves\n  - B.6. Plane waves satisfy the wave equation\n- C. Old lemmas used throughout files\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Zhi Kai Pong",
    "sections": [
     {
      "line": 53,
@@ -7130,13 +7237,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/ClassicalMechanics/WaveEquation/HarmonicWave.lean",
    "module": "Physlib.ClassicalMechanics.WaveEquation.HarmonicWave",
    "title": "Harmonic Wave",
    "doc": "Time-harmonic waves.\n\nNote TODO `EGU3E` may require considerable effort to be made rigorous and may heavily depend on\nthe status of Fourier theory in Mathlib.",
+   "copyright": "2025 Zhi Kai Pong",
    "sections": [],
    "declarations": [
     {
@@ -7181,7 +7290,8 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 2
   }
  ]
 }

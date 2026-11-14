@@ -611,6 +611,8 @@ lemma cfc_le_cfc_of_commute_monoOn (hf : MonotoneOn f (Set.Ioi 0))
 
 **`HermitianMat.cfc_le_cfc_of_commute`**, a theorem, [line 1215](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HermitianMat/CFC.lean#L1215). Listed as a significant result in [Theorems.txt](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/scripts/lint/exemptions/Theorems.txt).
 
+> …
+
 ```lean
 theorem cfc_le_cfc_of_commute (hf : Monotone f) (hAB₁ : Commute A.mat B.mat) (hAB₂ : A ≤ B) :
     A.cfc f ≤ B.cfc f

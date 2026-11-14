@@ -7,6 +7,7 @@
    "module": "Physlib.FluidDynamics.Basic",
    "title": "Basic field types for fluid dynamics",
    "doc": "## i. Overview\n\nThis module defines the basic field types used to describe a fluid on `d`-dimensional space.\nThe structure-specific APIs are organized in the corresponding `FluidFlow`, `CauchyFlow`, and\n`ThermodynamicCauchyFlow` subdirectories.\n\n## ii. Key results\n\n- `ScalarField` : A time-dependent scalar field on space.\n- `VectorField` : A time-dependent vector field on space.\n- `MassDensity` : A time-dependent scalar density field.\n- `VelocityField` : A time-dependent vector velocity field.\n- `MomentumDensityField` : A time-dependent vector momentum density field.\n- `StressTensor` : A time-dependent matrix-valued stress field.\n\n## iii. Table of contents\n\n- A. Field types\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Florian Wiesner",
    "sections": [
     {
      "line": 45,
@@ -64,13 +65,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/FluidDynamics/CauchyFlow/Basic.lean",
    "module": "Physlib.FluidDynamics.CauchyFlow.Basic",
    "title": "Basic API for Cauchy flows",
    "doc": "## i. Overview\n\nThis module defines `CauchyFlow`, the momentum-balance layer of the fluid API.\nSpecialized predicates and equations for Cauchy flows are organized in sibling modules.\n\nA local Cauchy momentum balance needs two kinds of force data beyond density and velocity. The\nstress tensor encodes contact forces through its divergence, while the specific body force encodes\nvolumetric forces per unit mass and therefore contributes mass density times specific body force.\nTogether these fields are sufficient to state the balance without choosing a material model.\n\nThe momentum equation constrains the flow and forces but does not define a constitutive relation\nbetween them. Pressure and viscosity are therefore not stored as additional fields.\nThey enter through constitutive stress laws, such as the inviscid and Newtonian predicates,\nwhich avoids duplicating data and imposing consistency conditions inside the carrier.\nThermodynamic data is deferred to `ThermodynamicCauchyFlow` because it is not needed\nfor momentum balance alone.\n\n## ii. Key results\n\n- `CauchyFlow` : A fluid flow with Cauchy stress and specific body force.\n\n## iii. Table of contents\n\n- A. Cauchy-flow structure\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Florian Wiesner",
    "sections": [
     {
      "line": 47,
@@ -88,13 +91,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/FluidDynamics/CauchyFlow/BodyForce.lean",
    "module": "Physlib.FluidDynamics.CauchyFlow.BodyForce",
    "title": "Body-force predicates for Cauchy flows",
    "doc": "## i. Overview\n\nThis module defines predicates for conservative specific body forces on `CauchyFlow`.\n\n## ii. Key results\n\n- `CauchyFlow.HasBodyForcePotential` : Predicate encoding the convention\n  `specificBodyForce = -grad Phi`.\n- `CauchyFlow.HasConservativeBodyForce` : Predicate saying the specific body force has some\n  potential.\n\n## iii. Table of contents\n\n- A. Conservative-force convention\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Florian Wiesner",
    "sections": [
     {
      "line": 42,
@@ -120,13 +125,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/FluidDynamics/CauchyFlow/Inviscid.lean",
    "module": "Physlib.FluidDynamics.CauchyFlow.Inviscid",
    "title": "Inviscid stress laws for Cauchy flows",
    "doc": "## i. Overview\n\nThis module defines the inviscid stress law for `CauchyFlow` and the corresponding\nmatrix-divergence identity for pressure stress.\n\n## ii. Key results\n\n- `CauchyFlow.IsInviscid` : Predicate saying the Cauchy stress is the inviscid pressure stress.\n- `CauchyFlow.matrixDiv_stress_eq_neg_grad_pressure_of_is_inviscid` : The inviscid stress\n  contributes the usual pressure-gradient force term.\n\n## iii. Table of contents\n\n- A. Inviscid stress law\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Florian Wiesner",
    "sections": [
     {
      "line": 42,
@@ -160,13 +167,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/FluidDynamics/CauchyFlow/Momentum.lean",
    "module": "Physlib.FluidDynamics.CauchyFlow.Momentum",
    "title": "Cauchy momentum equations",
    "doc": "## i. Overview\n\nThis module defines the conservative and convective Cauchy momentum equations for a fluid flow\nwith stress and specific body-force fields. The stress tensor is left as an input field, so this\nis the balance-law layer before specializing to a constitutive law, such as Euler or\nNavier-Stokes.\n\n## ii. Key results\n\n- `CauchyFlow.CauchyMomentumEquation` : Conservation of momentum using `Space.matrixDiv`.\n- `CauchyFlow.ConvectiveCauchyMomentumEquation` : The Cauchy momentum equation in convective\n  form.\n- `CauchyFlow.cauchyMomentumEquation_iff_convectiveCauchyMomentumEquation` : Equivalence of the\n  two Cauchy momentum equations when continuity holds and the fields are differentiable.\n\n## iii. Table of contents\n\n- A. Cauchy momentum equations\n- B. Equivalence of conservative and convective Cauchy momentum\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Florian Wiesner",
    "sections": [
     {
      "line": 48,
@@ -204,13 +213,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/FluidDynamics/CauchyFlow/NavierStokes.lean",
    "module": "Physlib.FluidDynamics.CauchyFlow.NavierStokes",
    "title": "The Navier-Stokes equations",
    "doc": "## i. Overview\n\nThe Navier-Stokes equations are a set of partial differential equations that describe\nthe motion of viscous fluid substances. They are fundamental in fluid dynamics and are\nused to model the behavior of fluids in various contexts, including gas flow and water flow.\n\nThis file defines the Navier-Stokes equations as continuity, Cauchy momentum, and a Newtonian\nstress law. The Cauchy momentum equation supplies the balance-law layer, while\n`CauchyFlow.IsNewtonian` specializes the stress tensor through pressure and viscosity fields.\n\n## ii. Key results\n\n- `NavierStokes` : Classical continuity, Cauchy momentum, and Newtonian stress together.\n- `ConvectiveNavierStokes` : Classical continuity, convective Cauchy momentum, and Newtonian\n  stress together.\n- `navier_stokes_iff_convective_navier_stokes` : Equivalence of the two forms when the fields\n  are differentiable.\n\n## iii. Table of contents\n\n- A. Navier-Stokes equations\n- B. Equivalence of conservative and convective Navier-Stokes forms\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Florian Wiesner",
    "sections": [
     {
      "line": 46,
@@ -248,13 +259,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/FluidDynamics/CauchyFlow/Newtonian.lean",
    "module": "Physlib.FluidDynamics.CauchyFlow.Newtonian",
    "title": "Newtonian stress law for Cauchy flows",
    "doc": "## i. Overview\n\nThis module defines the Newtonian constitutive stress law for `CauchyFlow`.\n\n## ii. Key results\n\n- `CauchyFlow.IsNewtonian` : Predicate saying the Cauchy stress has Newtonian constitutive form.\n\n## iii. Table of contents\n\n- A. Newtonian Cauchy flows\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Florian Wiesner",
    "sections": [
     {
      "line": 37,
@@ -272,13 +285,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/FluidDynamics/Euler/Basic.lean",
    "module": "Physlib.FluidDynamics.Euler.Basic",
    "title": "Euler equation for fluid flows",
    "doc": "## i. Overview\n\nThis module defines the Euler equations for inviscid fluid flow as continuity, Cauchy momentum,\nand an inviscid stress law. The pressure field appears through the constitutive relation for\nthe Cauchy stress tensor rather than as a field of the flow data.\n\n## ii. Key results\n\n- `Euler` : Classical continuity, Cauchy momentum, and inviscid stress together.\n- `ConvectiveEuler` : Classical continuity, convective Cauchy momentum, and inviscid stress.\n- `euler_iff_convectiveEuler` : Equivalence of the conservative and convective forms when the\n  fields are differentiable.\n\n## iii. Table of contents\n\n- A. Euler equations\n- B. Equivalence of conservative and convective Euler forms\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Florian Wiesner",
    "sections": [
     {
      "line": 41,
@@ -316,13 +331,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/FluidDynamics/FluidFlow/Basic.lean",
    "module": "Physlib.FluidDynamics.FluidFlow.Basic",
    "title": "Basic API for fluid flows",
    "doc": "## i. Overview\n\nThis module defines `FluidFlow`, the kinematic and mass-transport layer of the fluid API.\n\nThe fluid API is split according to which physical processes require which data. Density and\nvelocity are sufficient at this first layer: they determine the mass flux, momentum density,\nconvective momentum flux, and material derivatives used in continuity and kinematic statements.\n\nStress, body force, and thermodynamic fields are deliberately excluded. Kinematic and\nmass-transport statements do not require them, while adding them here would force those statements\nto depend on unrelated dynamic or constitutive choices. The extension structures add such data\nonly at the layer where it becomes necessary.\n\n## ii. Key results\n\n- `FluidFlow` : The density and velocity fields of a fluid.\n\n## iii. Table of contents\n\n- A. Fluid-flow structure\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Florian Wiesner",
    "sections": [
     {
      "line": 43,
@@ -340,13 +357,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/FluidDynamics/FluidFlow/Continuity.lean",
    "module": "Physlib.FluidDynamics.FluidFlow.Continuity",
    "title": "Continuity equation for fluid flows",
    "doc": "## i. Overview\n\nThis module defines the classical conservative mass-balance equation for a fluid flow and the\ncorresponding continuity residual. These definitions are independent of a particular momentum\nequation, so they can be reused by Navier-Stokes, Euler, and other fluid models.\n\n## ii. Key results\n\n- `FluidFlow.ClassicalContinuityEquation` : Classical conservation of mass in conservative form.\n- `FluidFlow.continuityResidual` : The scalar residual `partial_t rho + div (rho u)`.\n- `FluidFlow.SmoothContinuityEquation` : Continuity for globally differentiable fields.\n- `FluidFlow.classicalContinuityEquation_of_smoothContinuityEquation` : A smooth continuity\n  equation implies the classical continuity equation.\n\n## iii. Table of contents\n\n- A. Continuity equations\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Florian Wiesner",
    "sections": [
     {
      "line": 47,
@@ -388,13 +407,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/FluidDynamics/FluidFlow/Incompressible.lean",
    "module": "Physlib.FluidDynamics.FluidFlow.Incompressible",
    "title": "Incompressible fluid flows",
    "doc": "## i. Overview\n\nThis module defines general incompressibility predicates for fluid flows. These predicates are\nnot tied to a particular equation of motion, so they can be reused later by incompressible\nNavier-Stokes, incompressible Euler, and Bernoulli-style developments.\n\n## ii. Key results\n\n- `FluidFlow.incompressibilityResidual` : The divergence of the velocity field.\n- `FluidFlow.ClassicalIncompressible` : Incompressibility guarded by velocity differentiability.\n- `FluidFlow.SmoothIncompressible` : Incompressibility with globally differentiable velocity.\n- `FluidFlow.classicalIncompressible_of_smoothIncompressible` : Smooth incompressibility implies\n  classical incompressibility.\n\n## iii. Table of contents\n\n- A. Incompressibility predicates\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Florian Wiesner",
    "sections": [
     {
      "line": 45,
@@ -436,13 +457,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/FluidDynamics/FluidFlow/Kinematics.lean",
    "module": "Physlib.FluidDynamics.FluidFlow.Kinematics",
    "title": "Kinematic quantities for fluid flows",
    "doc": "## i. Overview\n\nThis module defines basic kinematic scalar quantities associated to `FluidFlow`.\n\n## ii. Key results\n\n- `FluidFlow.materialDerivative` : The material derivative along a fluid velocity field.\n- `FluidFlow.specificKineticEnergy` : The specific kinetic energy `|u|^2 / 2`.\n\n## iii. Table of contents\n\n- A. Flow-derived scalar quantities\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Florian Wiesner",
    "sections": [
     {
      "line": 43,
@@ -468,13 +491,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/FluidDynamics/FluidFlow/Momentum.lean",
    "module": "Physlib.FluidDynamics.FluidFlow.Momentum",
    "title": "Momentum fields for fluid flows",
    "doc": "## i. Overview\n\nThis module defines generic momentum fields for fluid flow and relates conservative momentum\ntransport to mass density times material acceleration. The definitions do not choose a particular\nforce law or stress model, so they can be reused by Navier-Stokes, Euler, and related systems.\n\n## ii. Key results\n\n- `FluidFlow.momentumDensity` : The vector momentum density `rho u`.\n- `FluidFlow.momentumFlux` : The convective momentum flux `rho u ⊗ u`.\n- `FluidFlow.convectiveTerm` : The nonlinear transport term `(u · ∇)u`.\n- `FluidFlow.materialAcceleration` : The material acceleration `∂ₜ u + (u · ∇)u`.\n- `FluidFlow.momentumTransport_eq_materialAcceleration_add_continuityResidual` :\n  The momentum-transport identity relating conservative and convective quantities.\n\n## iii. Table of contents\n\n- A. Momentum fields\n- B. Momentum transport identity\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Florian Wiesner",
    "sections": [
     {
      "line": 48,
@@ -560,13 +585,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/FluidDynamics/FluidFlow/Newtonian.lean",
    "module": "Physlib.FluidDynamics.FluidFlow.Newtonian",
    "title": "Newtonian stress tensors for fluid flows",
    "doc": "## i. Overview\n\nThis module defines the velocity gradient and Newtonian stress tensor associated to a\n`FluidFlow`.\n\n## ii. Key results\n\n- `FluidFlow.velocityGradient` : The spatial velocity-gradient matrix.\n- `FluidFlow.newtonianStressTensor` : The Newtonian stress tensor determined by pressure and\n  viscosity.\n\n## iii. Table of contents\n\n- A. Newtonian stress tensor\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Florian Wiesner",
    "sections": [
     {
      "line": 42,
@@ -592,13 +619,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/FluidDynamics/ThermodynamicCauchyFlow/Basic.lean",
    "module": "Physlib.FluidDynamics.ThermodynamicCauchyFlow.Basic",
    "title": "Basic predicates for thermodynamic Cauchy flows",
    "doc": "## i. Overview\n\nThis module defines `ThermodynamicCauchyFlow`, the thermodynamic layer currently needed for\nisentropic and Bernoulli-type statements.\n\nThis structure is intentionally the minimal carrier for the present thermodynamic API, not a claim\nthat entropy and enthalpy describe every thermodynamic process. Temperature, heat flux, and other\nstate data should be introduced by a further extension when an energy or heat-transport law needs\nthem. Keeping those fields out here lets Bernoulli and isentropic results avoid assumptions\nunrelated to their statements.\n\n## ii. Key results\n\n- `ThermodynamicCauchyFlow` : A Cauchy flow with entropy and enthalpy fields.\n\n## iii. Table of contents\n\n- A. Thermodynamic Cauchy-flow structure\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Florian Wiesner",
    "sections": [
     {
      "line": 41,
@@ -616,13 +645,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/FluidDynamics/ThermodynamicCauchyFlow/Bernoulli.lean",
    "module": "Physlib.FluidDynamics.ThermodynamicCauchyFlow.Bernoulli",
    "title": "Bernoulli theory for thermodynamic Cauchy flows",
    "doc": "## i. Overview\n\nThis module is reserved for Bernoulli definitions and results based on the shared\n`ThermodynamicCauchyFlow` data together with an explicit external potential parameter, rather\nthan defining a separate Bernoulli-flow structure.\n\n## ii. Key results\n\n- `bernoulliFunction` : The Bernoulli function `|u|^2 / 2 + h + Phi`.\n- `LocalBernoulliLaw` : Vanishing spatial gradient of the Bernoulli function.\n- `BernoulliLaw` : Spatial constancy of the Bernoulli function at each time.\n\n## iii. Table of contents\n\n- A. Bernoulli function\n- B. Bernoulli-law predicates\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Florian Wiesner",
    "sections": [
     {
      "line": 42,
@@ -660,13 +691,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/FluidDynamics/ThermodynamicCauchyFlow/Isentropic.lean",
    "module": "Physlib.FluidDynamics.ThermodynamicCauchyFlow.Isentropic",
    "title": "Isentropic thermodynamic Cauchy flows",
    "doc": "## i. Overview\n\nThis module defines the isentropic predicate for thermodynamic Cauchy flows.\n\n## ii. Key results\n\n- `ThermodynamicCauchyFlow.IsIsentropic` : A thermodynamic Cauchy flow whose entropy is\n  materially conserved.\n\n## iii. Table of contents\n\n- A. Thermodynamic-flow predicates\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Florian Wiesner",
    "sections": [
     {
      "line": 38,
@@ -684,7 +717,8 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   }
  ]
 }

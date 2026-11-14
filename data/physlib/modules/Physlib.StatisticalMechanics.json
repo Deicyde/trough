@@ -7,6 +7,7 @@
    "module": "Physlib.StatisticalMechanics.BoltzmannConstant",
    "title": "Boltzmann constant",
    "doc": "The Boltzmann constant, in the format of `Physlib/Units/Constants.lean`.\n\n## i. Overview\n\nThe Boltzmann constant, named after Ludwig Boltzmann, has the dimension `M L² T⁻² Θ⁻¹` of an energy\nover a temperature, and its value in SI units is exact. Section F adds the instance of one.\n\n## ii. Key results\n\n- `BoltzmannConstant` : The Boltzmann constant in a chosen but arbitrary system of units.\n- `boltzmannConstant` : The Boltzmann constant in our world, `1.380649 × 10⁻²³ J K⁻¹`.\n\n## iii. Table of contents\n\n- A. The type\n- B. Instances\n- C. Positivity\n- D. The dimension\n- E. The value in our world\n- F. Specific to the Boltzmann constant\n\n## iv. References\n\n* The defining value of the Boltzmann constant. [ref: bipm_si_brochure_2019]",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 43,
@@ -132,13 +133,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/StatisticalMechanics/CanonicalEnsemble/Basic.lean",
    "module": "Physlib.StatisticalMechanics.CanonicalEnsemble.Basic",
    "title": "Canonical Ensemble: Core Definitions",
    "doc": "A *canonical ensemble* describes a system in thermal equilibrium with a heat bath at fixed\ntemperature `T`. This file gives a measure–theoretic, semi–classical formalization intended to\nwork uniformly for discrete (counting measure) and continuous (Lebesgue–type) models.\n\n## 1. Semi–Classical Normalization\n\nClassical phase–space integrals produce *dimensionful* quantities. To obtain dimensionless\nthermodynamic objects (and an absolute entropy) we introduce:\n\n* `phaseSpaceUnit : ℝ` (physically Planck's constant `h`);\n* `dof : ℕ` the number of degrees of freedom.\n\nThe *physical* partition function is obtained from the *mathematical* one by dividing by\n`phaseSpaceUnit ^ dof`. This yields the standard semi–classical correction preventing\nambiguities such as the Gibbs paradox.\n\n## 2. Mathematical vs Physical Quantities\n\nWe keep both layers:\n\n* Mathematical / raw:\n  - `mathematicalPartitionFunction kB T` : ∫ exp(-β E) dμ\n  - `probability` (density w.r.t. `μ`)\n  - `differentialEntropy` (can be negative, unit–dependent)\n\n* Physical / dimensionless:\n  - `partitionFunction` : `Z = Z_math / h^dof`\n  - `physicalProbability` : dimensionless density\n  - `helmholtzFreeEnergy` : `F = -kB T log Z`\n  - `thermodynamicEntropy` : absolute entropy `(U - F)/T = -kB ∫ ρ_phys log ρ_phys`\n\nEach physical quantity is expressed explicitly in terms of its mathematical ancestor.\n\n## 3. Core Structure\n\nWe assume `phaseSpaceUnit > 0` and `μ` σ–finite. No probability assumption is imposed:\nnormalization is recovered via the Boltzmann weighted measure.\n\n## 4. Boltzmann & Probability Measures\n\n* `μBolt kB T` : Boltzmann (unnormalized) measure `withDensity exp(-β E)`\n* `μProd kB T` : normalized probability measure (rescaled `μBolt kB T`)\n* `probability kB T i` : the density `exp(-β E(i)) / Z_math`\n* `physicalProbability` : `probability * (phase_space_unit ^ dof)`\n\n## 5. Energies & Entropies\n\n* `meanEnergy` : expectation of energy under `μProd`.\n* `differentialEntropy` : `-kB ∫ log(probability) dμProd`\n* `thermodynamicEntropy` : `-kB ∫ log(physicalProbability) dμProd`\n  (proved later to coincide with the textbook `(U - F)/T`).\n\nA helper lemma supplies positivity of the partition function under mild assumptions and\nnon–negativity criteria for the entropy when `probability ≤ 1` (automatic in finite discrete\nsettings, not in general continuous ones).\n\n## 6. Algebraic Operations\n\nWe construct composite ensembles:\n\n* Addition `(𝓒₁ + 𝓒₂)` on product microstates: energies add, measures take product,\n  degrees of freedom add, and (physically) the same `phaseSpaceUnit` is reused.\n* Multiplicity `nsmul n 𝓒`: `n` distinguishable, non–interacting copies (product of `n` copies).\n* Transport along measurable equivalences via `congr`.\n\nThese operations respect partition functions, free energies, and (under suitable hypotheses)\nmean energies and integrability.\n\n## 7. Notational & Implementation Notes\n\n* We work over an arbitrary measurable type `ι`, allowing both finite and continuous models.\n* `β` is accessed through the `Temperature` structure (`T.β kB`, for a Boltzmann constant `kB`).\n* Every quantity that depends on the temperature takes the Boltzmann constant\n  `kB : BoltzmannConstant` before `T`.\n* Most positivity / finiteness conditions are hypotheses on lemmas instead of global axioms,\n  enabling reuse in formal derivations of fluctuation and response identities.\n\n## 8. References\n\n* L. D. Landau & E. M. Lifshitz, Statistical Physics, Part 1. [ref: landau_statphys1]\n* D. Tong, Cambridge Lecture Notes (sections on canonical ensemble).\n  - https://www.damtp.cam.ac.uk/user/tong/statphys/one.pdf [ref: tong_statphys_notes_one]\n  - https://www.damtp.cam.ac.uk/user/tong/statphys/two.pdf [ref: tong_statphys_notes_two]\n\n## 9. Roadmap\n\nSubsequent files (`Lemmas.lean`) prove:\n* Relations among entropies and free energies.\n* Fundamental identity `F = U - T S`.\n* Derivative (response) formulas: `U = -∂_β log Z`.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 205,
@@ -996,13 +999,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/StatisticalMechanics/CanonicalEnsemble/Finite.lean",
    "module": "Physlib.StatisticalMechanics.CanonicalEnsemble.Finite",
    "title": "Finite Canonical Ensemble",
    "doc": "This file specializes the general measure-theoretic framework of the canonical ensemble to systems\nwith a finite number of discrete microstates. This is a common and important case in statistical\nmechanics to study models like spin systems (e.g., the Ising model) and other systems with a\ndiscrete quantum state space.\n\n## Main Definitions and Results\n\nThe specialization is achieved through the `IsFinite` class, which asserts that:\n1. The type of microstates `ι` is a `Fintype`.\n2. The measure `μ` on `ι` is the standard counting measure.\n3. The number of degrees of freedom `dof` is 0.\n4. The `phaseSpaceunit` is 1.\n\nThese assumptions correspond to systems where the state space is fundamentally discrete, and no\nsemi-classical approximation from a continuous phase space is needed. Consequently, the\ndimensionless physical quantities are directly equivalent to their mathematical counterparts.\n\nThe main results proved in this file are:\n- The abstract integral definitions for thermodynamic quantities (partition function, mean energy)\n  are shown to reduce to the familiar finite sums found in introductory texts. For example, the\n  partition function becomes `Z = ∑ᵢ exp(-β Eᵢ)`.\n- The abstract `thermodynamicEntropy`, defined generally for measure-theoretic systems, is proven\n  to be equal to the standard `shannonEntropy` (`S = -k_B ∑ᵢ pᵢ log pᵢ`). The semi-classical\n  correction terms from the general theory vanish under the `IsFinite` assumptions.\n- The **fluctuation-dissipation theorem** in the form `C_V = Var(E) / (k_B T²)`, which connects the\n  heat capacity `C_V` to the variance of energy fluctuations, is formally proven for these systems.\n\nThis file also confirms that the `IsFinite` property is preserved under the composition of\nsystems (addition, `nsmul`, and `congr`).\n\n## References\n\n* L. D. Landau & E. M. Lifshitz, Statistical Physics, Part 1, §31. [ref: landau_statphys1]\n* D. Tong, Lectures on Statistical Physics, §1.3. [ref: tong_statistical_physics]",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 309,
@@ -1328,13 +1333,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/StatisticalMechanics/CanonicalEnsemble/Lemmas.lean",
    "module": "Physlib.StatisticalMechanics.CanonicalEnsemble.Lemmas",
    "title": "Canonical Ensemble: Thermodynamic Identities and Relations",
    "doc": "This file develops relations between the *mathematical* objects defined in\n`Basic.lean` and the *physical* thermodynamic quantities, together with\ncalculus identities for the canonical ensemble.\n\n## Contents Overview\n\n1. Helmholtz Free Energies\n  * `mathematicalHelmholtzFreeEnergy`\n  * Relation to physical `helmholtzFreeEnergy` with semi–classical correction.\n\n2. Entropy Relations\n  * Pointwise logarithm of (mathematical / physical) Boltzmann probabilities.\n  * Key identity:\n      `differentialEntropy = kB * β * meanEnergy + kB * log Z_math`\n  * Fundamental link:\n      `thermodynamicEntropy = differentialEntropy - kB * dof * log h`\n    (semi–classical correction term).\n  * Specializations removing the correction when `dof = 0` or `phaseSpaceUnit = 1`.\n\n3. Fundamental Thermodynamic Identity\n  * Proof of `F = U - T S_thermo`.\n  * Equivalent rearrangements giving entropy from energies and free energy.\n  * Discrete / normalized specialization (no correction).\n\n4. Mean energy as\n      `U = - d/dβ log Z_math`\n      and likewise with the physical partition function (constant factor cancels).\n\n## Design Notes\n\n* All derivative statements are given as `derivWithin` on `Set.Ioi 0`, matching the physical\n  domain β > 0.\n* Assumptions (finiteness, integrability) are parameterized to keep lemmas reusable.\n* Semi–classical correction appears systematically as\n    `kB * dof * log phaseSpaceUnit`.\n\n## References\n\n* Same references as `Basic.lean`. [ref: landau_statphys1]\n* Same references as `Basic.lean`, especially the identities `F = U - T S` and\n  `U = -∂_β log Z`. [ref: tong_statistical_physics]",
+   "copyright": "2025 Matteo Cipollina",
    "sections": [
     {
      "line": 164,
@@ -1560,13 +1567,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/StatisticalMechanics/CanonicalEnsemble/TwoState.lean",
    "module": "Physlib.StatisticalMechanics.CanonicalEnsemble.TwoState",
    "title": "Two-state canonical ensemble",
    "doc": "This module contains the definitions and properties related to the two-state\ncanonical ensemble.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -1675,13 +1684,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/StatisticalMechanics/MicroCanonicalEnsemble/Basic.lean",
    "module": "Physlib.StatisticalMechanics.MicroCanonicalEnsemble.Basic",
    "title": "The Microcanonical Ensemble",
    "doc": "",
+   "copyright": "2025 Alex Meiburg",
    "sections": [],
    "declarations": [
     {
@@ -1726,13 +1737,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/StatisticalMechanics/MicroCanonicalEnsemble/IdealGas.lean",
    "module": "Physlib.StatisticalMechanics.MicroCanonicalEnsemble.IdealGas",
    "title": "Ideal gas as a Micro Canonical Ensemble",
    "doc": "In this module we give the",
+   "copyright": "2025 Alex Meiburg",
    "sections": [],
    "declarations": [
     {
@@ -1777,13 +1790,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/StatisticalMechanics/MicroCanonicalEnsemble/ThermoQuantities.lean",
    "module": "Physlib.StatisticalMechanics.MicroCanonicalEnsemble.ThermoQuantities",
    "title": "The theormodynamical quantities of a microcanonical ensemble",
    "doc": "",
+   "copyright": "2025 Alex Meiburg",
    "sections": [],
    "declarations": [
     {
@@ -1900,7 +1915,8 @@
     }
    ],
    "private": 1,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   }
  ]
 }

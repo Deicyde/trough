@@ -7,6 +7,7 @@
    "module": "PhyslibAlpha.Relativity.Causality.LightCone",
    "title": "Light cones in time and space",
    "doc": "Causal future and past of sets in time and space and in Minkowski spacetime.\n\n## i. Overview\n\nCausal future and past of sets in time and space and in Minkowski spacetime. Causal futures of\ncompact sets are closed and causal diamonds are compact.\n\n## ii. Key results\n\n- `causalFuture` : The causal future of a set of spacetime points, in units where the speed of light\n  is `1`.\n- `causalPast` : The causal past of a set of spacetime points.\n- `precedes_iff_time_space` : In any speed-of-light units the existing geometric causal relation has\n  the familiar elapsed-time and spatial-distance characterization.\n- `causallyFollows_iff_norm` : The existing Lorentzian causal order is equivalently the spatial norm\n  bounded by elapsed Lorentz time.\n\n## iii. Table of contents\n\n- A. Minkowski causal geometry for Green operators\n- B. Causal support of the retarded solution\n\n## iv. References\n\nNone.\n\n## A. Minkowski causal geometry for Green operators\n\nLemmas: `causallyFollows_iff_displacement`, `causallyFollows_iff_norm`, `norm_space_eq_spatialPart`,\n`precedes_iff_time_space`, `isClosed_causalFuture_zero`, `causalFuture_eq_add`,\n`isClosed_causalFuture`, `causalPast_eq_add_neg`, `isClosed_causalPast`,\n`component_bound_of_causalDiamond` and more.\n\n## B. Causal support of the retarded solution\n\n- `causalFuture` : The causal future of a set of spacetime points, in units where the speed of light\n  is `1`.\n- `causalPast` : The causal past of a set of spacetime points.\n\nLemmas: `isClosed_causalFuture`.",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [],
    "declarations": [
     {
@@ -147,13 +148,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/Fermions/Dirac/MinimalDimension.lean",
    "module": "PhyslibAlpha.Relativity.Fermions.Dirac.MinimalDimension",
    "title": "The gamma matrices need four dimensions",
    "doc": "## i. Overview\n\nA Clifford family is a choice of `n × n` complex matrices `γ^μ`, one for each Lorentz index,\nwith `γ^μ γ^ν + γ^ν γ^μ = 2 η^{μν} 1`. Dirac (1928) found one with `n = 4`, and no smaller\nsize works. Each `γ^μ` squares to `± 1`, so it is invertible, and `γ^0 γ^1 = -γ^1 γ^0` forces\n`det (γ^0 γ^1) = (-1)ⁿ det (γ^0 γ^1)`: the size is even. Size two is excluded by the three\nPauli matrices: `γ^0, i γ^1, i γ^2, i γ^3` would be four anticommuting `2 × 2` involutions, and\n`2 × 2` holds at most three. The Dirac endomorphisms `gamma` of Physlib, written as `4 × 4`\nmatrices, attain the bound.\n\n## ii. Key results\n\n- `IsCliffordFamily` : the relation `γ^μ γ^ν + γ^ν γ^μ = 2 η^{μν} 1`.\n- `IsCliffordFamily.even` : a Clifford family has even size.\n- `IsCliffordFamily.ne_two` : there are no `2 × 2` Clifford families.\n- `IsCliffordFamily.four_le` : a nonempty Clifford family has size at least four.\n- `isCliffordFamily_gamma` : the Dirac gamma matrices are a Clifford family.\n- `isLeast_size_isCliffordFamily` : the smallest size of a Clifford family is four.\n\n## iii. Table of contents\n\n- A. Clifford families\n- B. The size is even\n- C. Size two is excluded\n- D. Dirac's matrices attain the bound\n\n## iv. References\n\n* P. A. M. Dirac, *The quantum theory of the electron*, Proc. R. Soc. London A 117 (1928)\n  610–624.",
+   "copyright": "2026 Eduardo Nava-Hernandez",
    "sections": [
     {
      "line": 53,
@@ -263,13 +266,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/Fermions/Weyl/BoostWeight.lean",
    "module": "PhyslibAlpha.Relativity.Fermions.Weyl.BoostWeight",
    "title": "The boost weights of a Weyl spinor",
    "doc": "## i. Overview\n\nAlong the `z`-axis the `SL(2,ℂ)` boost is the diagonal matrix `diag (t, t⁻¹)`, so both\nWeyl bases are bases of boost eigenvectors: the first component carries weight `+1` and\nthe second weight `-1`.  A Weyl spinor is a half-vector.\n\n## ii. Key results\n\n- `weylWeight` : the boost weight of a Weyl-spinor index\n- `rightHandedWeyl_rep_boostAxis_two_basis` : the right-handed Weyl basis diagonalises the\n  `z`-boost, with weights `±1`\n- `leftHandedWeyl_rep_boostAxis_two_basis` : the left-handed Weyl basis diagonalises the `z`-boost,\n  with weights `±1`\n\n## iii. Table of contents\n\n- A. The boost weight along the `z`-axis\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 44,
@@ -303,13 +308,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/Fermions/Weyl/Metric.lean",
    "module": "PhyslibAlpha.Relativity.Fermions.Weyl.Metric",
    "title": "The Weyl metric as an element of `SL(2, ℂ)`",
    "doc": "The symplectic form `ε` as a group element, and the identities moving it past a group element.\n\n## i. Overview\n\nThe Weyl metric `Fermion.metricRaw = !![0, 1; -1, 0]` has determinant one, so it is itself an\nelement of `SL(2, ℂ)`, written `Lorentz.SL2C.epsilon`. In that form it is the invariant symplectic\nform, `gᵀ ε g = ε`. Contracting spinor indices needs the single-index version of that invariance: a\nfactor of `(g⁻¹)ᵀ`, or of `(g⁻¹)ᴴ`, moved across `ε` becomes a factor of `g`, or of its entrywise\nconjugate, on the other slot. Those are `metricRaw_comm` and `metricRaw_comm_star` at `g⁻¹`, read\nentrywise. Alongside this, `LeftHandedWeyl.metricVal_rep` states the invariance of `εᵃᵃ` as the\nplain equation on the tensor product, rather than through the intertwining property of\n`LeftHandedWeyl.metric`.\n\n## ii. Key results\n\n- `Fermion.LeftHandedWeyl.metricVal_rep` : `εᵃᵃ` is invariant under `SL(2, ℂ)`.\n- `Lorentz.SL2C.epsilon` : the Weyl metric as an element of `SL(2, ℂ)`.\n- `Lorentz.SL2C.transpose_mul_epsilon_mul` : `ε` is the invariant symplectic form.\n- `Lorentz.SL2C.sum_epsilon_mul_inv_transpose`,\n  `Lorentz.SL2C.sum_epsilon_mul_inv_conjTranspose` : the single-index forms.\n\n## iii. Table of contents\n\n- A. Invariance of the left metric\n- B. The symplectic form as an element of `SL(2, ℂ)`\n\n## iv. References\n\nThe Weyl metrics and `Fermion.metricRaw` are in `Physlib.Relativity.Fermions.Weyl.Metric`.",
+   "copyright": "2026 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 55,
@@ -395,13 +402,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/General/Schwarzschild/IncompressibleSphere.lean",
    "module": "PhyslibAlpha.Relativity.General.Schwarzschild.IncompressibleSphere",
    "title": "Schwarzschild's incompressible fluid sphere and its junction with the exterior solution",
    "doc": "Junction of Schwarzschild's incompressible fluid sphere with the exterior Schwarzschild metric.\n\n## i. Overview\n\nIn his second 1916 paper, Schwarzschild solved Einstein's equations for a static sphere of\nincompressible fluid of constant density `ρ₀`. The interior space is a portion of a\nthree-sphere of curvature radius `Rc`, with `Rc ^ 2 = 3 / (κ ρ₀)` (`κ = 8 π G`, `c = 1`),\nand the surface of the fluid sits at the polar angle `χ_a` with `sin χ_a = Ra / Rc`, where\n`Ra` is the areal radius of the surface. In the areal radius `r = Rc sin χ` the interior metric\ncoefficients are\n\n- `g_tt = ((3 cos χ_a - cos χ) / 2) ^ 2 = (3 / 2 cos χ_a - 1 / 2 √(1 - r ^ 2 / Rc ^ 2)) ^ 2`,\n- `g_rr = 1 / (1 - r ^ 2 / Rc ^ 2)`,\n\nwhile outside the sphere the metric is the exterior Schwarzschild solution with\n`g_tt = 1 - α / r`, `g_rr = 1 / (1 - α / r)` and `α = Ra ^ 3 / Rc ^ 2`. The pressure is\n`ρ₀ + p = ρ₀ 2 cos χ_a / (3 cos χ_a - cos χ)`.\n\nThis file takes the two metrics and the pressure as given (the field equations are not\nverified here) and proves the elementary properties of the junction at `r = Ra`: continuity\nof `g_tt` and `g_rr`, differentiability of the glued `g_tt`, non-differentiability of the glued\n`g_rr` in the curvature coordinate `r`, the vanishing of the pressure at the surface, and the\nSchwarzschild bound `cos χ_a > 1 / 3` (equivalently `Ra > 9 / 8 α`) for the central pressure to\nbe positive.\n\n## ii. Key results\n\n- `IncompressibleSphere` contains the input data: `Rc`, `Ra`, `ρ₀` with `0 < Ra < Rc` and\n  `0 < ρ₀`.\n- `rs_div_Ra`: Schwarzschild's relation (40), `α / Ra = sin χ_a ^ 2`.\n- `pressure_chia`: the pressure vanishes at the surface.\n- `pressure_zero_pos_iff`: the central pressure is positive if and only if `cos χ_a > 1 / 3`.\n- `one_third_lt_cosChia_iff_rs`: `cos χ_a > 1 / 3` if and only if `9 / 8 α < Ra`.\n- `gttIn_Ra`, `grrIn_Ra`: the interior and exterior formulas agree at `r = Ra`.\n- `gttGlue_hasDerivAt`: the glued `g_tt` is differentiable at `Ra` with derivative `Ra / Rc ^ 2`.\n- `grrGlue_not_differentiableAt`: the glued `g_rr` is continuous but not differentiable at\n  `Ra` (one-sided derivatives `2 Ra / (Rc ^ 2 cos χ_a ^ 4)` and `- Ra / (Rc ^ 2 cos χ_a ^ 4)`).\n\n## iii. Table of contents\n\n- A. The input data\n- B. The Schwarzschild radius and the angle of the surface\n- C. The pressure\n  - C.1. Pressure at the surface and at the centre\n  - C.2. The bound `cos χ_a > 1 / 3`\n- D. The metric coefficients\n  - D.1. The interior metric in the angle `χ`\n  - D.2. The values at the surface agree\n- E. Derivatives of the metric coefficients at the surface\n  - E.1. Two auxiliary derivatives\n  - E.2. Derivatives of `g_tt`\n  - E.3. Derivatives of `g_rr`\n- F. The glued metric coefficients\n- G. Consequences for the junction\n- H. A numerical instance\n\n## iv. References\n\n- K. Schwarzschild, \"Uber das Gravitationsfeld einer Kugel aus inkompressibler Flussigkeit nach\n  der Einsteinschen Theorie\", Sitzungsberichte der Koniglich Preussischen Akademie der\n  Wissenschaften (1916), 424-434. English translation by S. Antoci, arXiv:physics/9912033.\n  Equations (28), (29), (30), (35), (36), (39), (40) and the discussion on pages 8-9 of the\n  translation (pressure diverging at `cos χ_a = 1 / 3`, limit `9 / 8 α`).\n- A. Lichnerowicz, \"Theories relativistes de la gravitation et de l'electromagnetisme\",\n  Masson (1955), chapter III, sections 27-29 (junction conditions).",
+   "copyright": "2026 Philippe Kevorkian",
    "sections": [
     {
      "line": 93,
@@ -891,13 +900,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/IsLorentzDeriv.lean",
    "module": "PhyslibAlpha.Relativity.IsLorentzDeriv",
    "title": "Class IsLorentzDeriv",
    "doc": "## i. Overview\n\nA family of operators indexed by the four spacetime directions is a Lorentz derivative\nwhen the representation of `SL(2,ℂ)` intertwines it through the columns of the Lorentz\nmatrix, as the jet derivatives on a jet algebra do. The iterated operator along a multiset\nof directions then transforms by one column of the Lorentz matrix per slot\n(`rep_iteratedD_ofFn`), which is the law `IsLorentzDerivTransforms` and its covariant form\n`IsLorentzCovDerivTransforms` record for a family of derivative symbols.\n\n## ii. Key results\n\n- `IsLorentzDerivTransforms` : a family of derivative symbols `F : s ↦ [∂_s ψ^φ]`, indexed by the\n  dual of a value space `V` carrying a representation of `SL(2,ℂ)`, transforms as the derivative\n  symbols of a Lorentz-covariant field: each ordered symbol mixes into all tuples of directions by\n  the per-slot columns of the Lorentz matrix, while the value index transforms by the contragredient\n  action `rep.dual` on the dual of `V`\n- `IsLorentzCovDerivTransforms` : a family of *covariant*-derivative symbols, indexed by ordered\n  tuples of directions (covariant derivatives do not commute) and by the dual of a Lorentz\n  representation `V`, transforms as the covariant derivatives of a Lorentz-covariant field: each\n  derivative slot mixes by the columns of the Lorentz matrix, while the value index transforms by\n  the contragredient action `rep.dual` on the dual of `V` — the ordered-tuple analogue of\n  `IsLorentzDerivTransforms`\n- `rep_iteratedD_ofFn` : the Lorentz transformation of iterated derivatives: for a Lorentz\n  derivative the ordered derivative symbol `D_{l 0} ⋯ D_{l (n-1)} x` mixes into all tuples of\n  directions, with one Lorentz matrix factor per slot\n\n## iii. Table of contents\n\n- A. Lorentz-covariant families of derivative symbols\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 52,
@@ -1011,13 +1022,15 @@
     }
    ],
    "private": 1,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/LightConeDeriv.lean",
    "module": "PhyslibAlpha.Relativity.LightConeDeriv",
    "title": "The light-cone basis of an axis",
    "doc": "## i. Overview\n\nA tuple of spacetime directions can be re-read in the light-cone basis along a boost axis:\n`lightConeCoeff` gives the four light-cone directions `D₀ - Dᵢ`, `D₀ + Dᵢ` and the two\ntransverse ones, and `lightConeCoeffInv` the inverse change of basis.  The point of the\nchange of basis is `sum_boostAxis_lightConeCoeff`: the four directions are eigenvectors of\nthe boost along the axis, of weight `lightConeWeight` — `+2` for `D₀ - Dᵢ`, `-2` for\n`D₀ + Dᵢ`, and `0` for the transverse directions.\n\nOn a tuple of slots the two coefficient matrices are still inverse to one another\n(`sum_prod_lightConeCoeff`, `sum_prod_lightConeCoeffInv`) and the weights add\n(`sum_prod_lightConeCoeff`).  That is what the classification of the Lorentz invariants in\n`LorentzGroup/Invariants` runs on: it writes a coefficient tensor in this basis and keeps\nonly the piece of total weight zero.\n\n## ii. Key results\n\n- `lightConeCoeff` : the four light-cone directions along the `i`-th axis, written as coefficient\n  vectors on the coordinate directions: `D₀ - Dᵢ`, `D₀ + Dᵢ`, and the two transverse directions\n- `lightConeWeight` : the boost weight carried by each light-cone direction: `+2` for `D₀ - Dᵢ`,\n  `-2` for `D₀ + Dᵢ`, and `0` for the two transverse directions\n- `sum_boostAxis_lightConeCoeff` : the light-cone directions are eigenvectors of the boost\n- `lightConeCoeffInv` : the coordinate directions written back in the light-cone basis: `D₀` and\n  `Dᵢ` are the half-sum and half-difference of `D₀ ∓ Dᵢ`, and the transverse directions are\n  themselves\n- `sum_prod_lightConeCoeff` : the scalar behind `lightConeDeriv_mem`: the boost acts on a light-cone\n  multi-index slot by slot, so the product of the per-slot eigenvalues factors out\n- `sum_prod_lightConeCoeffInv` : the two coefficient matrices are inverse slot by slot, hence\n  inverse on multi-indices; this is `sum_prod_lightConeCoeff` with the two factors the other way\n  round\n\n## iii. Table of contents\n\n- A. The light-cone basis of an axis\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 53,
@@ -1099,13 +1112,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/LorentzGroup/Basic.lean",
    "module": "PhyslibAlpha.Relativity.LorentzGroup.Basic",
    "title": "The defining relation of the Lorentz group on its entries",
    "doc": "The relation `Λ η Λᵀ = η` over `ℂ`, read on a single entry and with integer metric entries.\n\n## i. Overview\n\n`Physlib.Relativity.LorentzGroup.Basic` states the defining relation of the Lorentz group as\nthe matrix equation `Λ η Λᵀ = η` over `ℝ`. A classification of invariant tensors contracts\nthat relation one metric pairing at a time, over `ℂ` and against entries which a decision\nprocedure has to evaluate. `sum_minkowskiMatrixZ_mul` is the relation in exactly that form:\nthe entry `(a, b)`, the coefficients cast into `ℂ`, and the metric entries taken from\n`minkowskiMatrixZ` rather than `minkowskiMatrix`.\n\n## ii. Key results\n\n- `LorentzGroup.sum_minkowskiMatrixZ_mul` : the defining relation on the entry `(a, b)`, over\n  `ℂ` and with integer metric entries.\n\n## iii. Table of contents\n\n- A. The defining relation on an entry\n\n## iv. References\n\nThe defining relation and its matrix forms are in `Physlib.Relativity.LorentzGroup.Basic`.",
+   "copyright": "2026 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 52,
@@ -1123,13 +1138,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/LorentzGroup/Boosts/Axis.lean",
    "module": "PhyslibAlpha.Relativity.LorentzGroup.Boosts.Axis",
    "title": "Entries of an axis boost",
    "doc": "The Hermiticity of a coordinate-axis boost in `SL(2, ℂ)`, read on its entries.\n\n## i. Overview\n\nA boost along a coordinate axis, `boostAxis i t ht`, is a Hermitian element of `SL(2, ℂ)`:\n`Physlib.Relativity.LorentzGroup.Boosts.Axis` states this as the matrix equation\n`(boostAxis i t ht).1ᴴ = (boostAxis i t ht).1`. Contracting an axis boost against a family\nof tensor components needs that equation one entry at a time, which is what\n`star_boostAxis_apply` provides: conjugating an entry transposes it.\n\n## ii. Key results\n\n- `Lorentz.SL2C.star_boostAxis_apply` : conjugating an entry of an axis boost transposes it.\n\n## iii. Table of contents\n\n- A. Hermiticity on the entries\n\n## iv. References\n\nThe matrix form of the axis boosts is fixed in `Physlib.Relativity.LorentzGroup.Boosts.Axis`.",
+   "copyright": "2026 Jinzheng Li",
    "sections": [
     {
      "line": 42,
@@ -1147,13 +1164,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/LorentzGroup/FermionicParity.lean",
    "module": "PhyslibAlpha.Relativity.LorentzGroup.FermionicParity",
    "title": "Fermionic parity",
    "doc": "## i. Overview\n\nThe homomorphism `SL(2, ℂ) → LorentzGroup 3` is two-to-one, and the nontrivial element of its\nkernel is `-1`. Physically it is the rotation by `2π`: it acts as the identity on every tensor,\nand as `-1` on every spinor, so it measures the parity of the number of fermionic indices\ncarried by a quantity. We call it the *fermionic parity*.\n\nBecause it lies in the Lorentz group's double cover and projects to the identity, any quantity\nrequired to be invariant under `SL(2, ℂ)` is fixed by it. A quantity carrying an odd number of\nspinor indices is negated by it, and therefore vanishes: this is the selection rule that forbids\nterms with an odd number of fermions.\n\n## ii. Key results\n\n- `LorentzGroup.fermionicParity` : the nontrivial element of the kernel of the covering\n  `SL(2, ℂ) → LorentzGroup 3`.\n- `LorentzGroup.toSelfAdjointMap_fermionicParity` : it acts trivially on self-adjoint matrices.\n- `LorentzGroup.toLorentzGroup_fermionicParity` : it projects to the identity Lorentz\n  transformation.\n- `LorentzGroup.fermionicParity_sq` : it squares to one.\n- `LorentzGroup.fermionicParity_ne_one` : it is not itself the identity.\n\n## iii. Table of contents\n\n- A. Fermionic parity\n- B. The action on vectors and on spinors\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 54,
@@ -1223,13 +1242,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/LorentzGroup/Invariants/AdjointClosed.lean",
    "module": "PhyslibAlpha.Relativity.LorentzGroup.Invariants.AdjointClosed",
    "title": "The colours of complex Lorentz tensors are closed under adjoints",
    "doc": "## i. Overview\n\nA family of vectors in a representation `repLorentz` of `SL(2,ℂ)` on `B`, carrying Lorentz\nindices of colours `c`, is packaged as a linear map `f : ℂT(c) →ₗ[ℂ] B`, equivariant in the sense\n`complexLorentzTensor.IsEquivariant c repLorentz f`. The invariants in the range of such a map\ncome from invariant tensors whenever the colours are closed under adjoints,\n`TensorSpecies.IsAdjointClosed`.\n\nFor `SL(2,ℂ)` this follows from each colour being dagger compatible: in its basis, the matrix of\n`g†` is the conjugate transpose of the matrix of `g`. This holds for all six colours (B), so\nevery list of colours is closed under adjoints, `complexLorentzTensor.isAdjointClosed`.\n\n## ii. Key results\n\n- `Lorentz.IsDaggerCompatible` : the matrix of `g†` is the conjugate transpose of that of `g`.\n- `Lorentz.isDaggerCompatible` : every colour is dagger compatible.\n- `complexLorentzTensor.isAdjointClosed` : every list of colours is closed under adjoints.\n\n## iii. Table of contents\n\n- A. The matrices of the colours\n- B. Dagger-compatible colours\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 49,
@@ -1355,13 +1376,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/LorentzGroup/Invariants/Basic.lean",
    "module": "PhyslibAlpha.Relativity.LorentzGroup.Invariants.Basic",
    "title": "Invariant coefficient tensors on spacetime indices",
    "doc": "## i. Overview\n\nThe invariants in the range of an equivariant map out of the complex Lorentz tensors with `n`\ncontravariant indices are the images of invariant tensors, and the components of a tensor,\nrelabelled by `Fin 1 ⊕ Fin 3` in each slot, are a coefficient tensor on which `SL(2,ℂ)` acts by\n`act` (`Invariants.LorentzCovariance`). This file holds the machinery the rank-specific files use\nto classify the invariant coefficient tensors, `IsInvariantCoeff`.\n\nA matrix `M` acts on coefficient functions by `actMat M`, and a covector that the transposed\nmatrix reproduces up to a scalar reads off a component that `actMat M` scales by that scalar, so\nan invariant coefficient function has no such component unless the scalar is `1` (A). Writing\neach slot of a coefficient tensor in the light-cone basis of an axis splits it into pieces that\na boost scales by powers of its parameter, and an invariant keeps only the piece of weight zero:\n`IsInvariantCoeff.lightConeComponent_eq_zero` (B). Section C records what the half turns about the\naxes and the cyclic rotation of the axes force on an invariant coefficient tensor, for any number\nof slots.\n\nThe conjugate transpose `dagger g` of an element of `SL(2,ℂ)`, whose Lorentz matrix is the\ntranspose of that of `g`, also lives here; it makes the colours of complex Lorentz tensors closed\nunder adjoints (`Invariants.AdjointClosed`).\n\n## ii. Key results\n\n- `Lorentz.Invariants.IsInvariantCoeff` : invariant coefficient tensors.\n- `Lorentz.Invariants.IsInvariantCoeff.lightConeComponent_eq_zero` : the boost kills the\n  light-cone components of nonzero weight.\n- `Lorentz.Invariants.dagger` : the conjugate transpose in `SL(2,ℂ)`.\n\n## iii. Table of contents\n\n- A. Coefficient functions moved by a matrix\n- B. Coefficient tensors on spacetime indices\n- C. The half turns and the cyclic rotation\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 62,
@@ -1547,13 +1570,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/LorentzGroup/Invariants/Centre.lean",
    "module": "PhyslibAlpha.Relativity.LorentzGroup.Invariants.Centre",
    "title": "Lorentz invariants of a half-integer spin",
    "doc": "## i. Overview\n\nThe other files of this folder classify the invariants of a given index pattern by contracting\nthe components with a coefficient tensor. This one settles, in one step and for every pattern\nat once, the patterns that carry no invariant for the crudest of reasons: they are of\nhalf-integer spin, and a half-integer spin has no invariant because the centre of `SL(2,ℂ)`\nalready tells integer spin from half-integer spin apart.\n\nThe element `-1` of `SL(2,ℂ)` covers the identity Lorentz transformation\n(`SL2C.toLorentzGroup_neg_one`), so a representation of `SL(2,ℂ)` that factors through the\nLorentz group — a tensor of four-vector indices — sends it to the identity, while each Weyl\nindex contributes a sign. A subspace with an odd number of Weyl indices therefore lies in the\n`-1` eigenspace of `repLorentz (-1)`, and a vector both fixed by the group and negated by `-1`\nis zero. `centreEigenspace` names the eigenspace, `mul_le_centreEigenspace` multiplies the two\nsigns in a product of subspaces, and `mem_of_invariant_of_mem_sup_centreEigenspace_neg_one` is\nthe classification modulo a Lorentz-stable subspace `S`, the form the Standard Model files use.\n\nThe subspaces that arise there are spans of symbol families, so section B reads the sign of\nsuch a span off the sign of the value space: the covariant-derivative slots of a family\nobeying `IsLorentzCovDerivTransforms` are inert at the centre, and only the value index moves.\n\nThe argument uses the central element alone: it needs neither a grading nor a light-cone\nbasis.\n\n## ii. Key results\n\n- `centreEigenspace` : the subspace on which the centre of `SL(2,ℂ)` acts by the scalar `ε`: an\n  integer spin sits at `ε = 1` and a half-integer spin at `ε = -1`\n- `mul_le_centreEigenspace` : the sign of a product is the product of the signs\n- `mem_of_invariant_of_mem_sup_centreEigenspace_neg_one` : a subspace of half-integer spin carries\n  no Lorentz invariant beyond a Lorentz-stable submodule `S`: an invariant of the join with `S`\n  already lies in `S`\n\n## iii. Table of contents\n\n- A. The sign a subspace carries at the centre\n- B. The sign of a symbol family\n- C. Signs multiply\n- D. The classification modulo a Lorentz-stable submodule\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 69,
@@ -1631,13 +1656,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsBiLeftWeyl.lean",
    "module": "PhyslibAlpha.Relativity.LorentzGroup.Invariants.IsBiLeftWeyl",
    "title": "Lorentz invariants of two Weyl indices of the same kind",
    "doc": "## i. Overview\n\nLet `k` be one of the four Weyl colours and `f : ℂT[k, k] →ₗ[ℂ] B` a Lorentz-equivariant linear\nmap. Every Lorentz invariant in the range of `f` is a multiple of `f (metricTensor k)`, the\nimage of the `ε` metric of that colour, the shape of a Majorana or Dirac mass term. That is\n`exists_smul_map_metricTensor_add_of_invariant`, stated modulo a\nLorentz-stable submodule `S`, and packaged for the reductions of the Standard Model as\n`invariantReductionToMetricTensor`. The families with two left-handed,\ntwo right-handed, two dual left-handed and two dual right-handed indices are `IsBiLeftWeyl`,\n`IsBiRightWeyl`, `IsBiDualLeftWeyl` and `IsBiDualRightWeyl` (A).\n\nBy `TensorSpecies.IsEquivariant.invariantReductionToSpan` it is enough to show that the invariant\ntensors of `ℂT[k, k]` are the multiples of `metricTensor k` (B). Two elements of `SL(2,ℂ)` pin\nthe components `r` of an invariant tensor down. The first acts on the colour `k` by\n`diag (2, 2⁻¹)`, which scales `r (0, 0)` by `4` and `r (1, 1)` by `4⁻¹`, so these vanish. The\nsecond acts by an antidiagonal matrix with entries `μ`, `μ² = -1`, which sends `r (0, 1)` to\n`μ² r (1, 0)`, so `r (0, 1) = -r (1, 0)`. For `k = upL` these are the boost along `z` and the\nhalf turn about `x`; for the other colours they are their images under conjugation and inversion.\nThe metric is itself invariant, with a nonzero `(0, 1)` component, so `r` is a multiple of its\ncomponents.\n\n## ii. Key results\n\n- `IsBiLeftWeyl` : a family with two left-handed Weyl indices `T^{α₁ α₂}`: an equivariant linear map\n  out of `ℂT[.upL, .upL]`\n- `IsBiRightWeyl` : a family with two right-handed Weyl indices `T^{α̇₁ α̇₂}`: an equivariant linear\n  map out of `ℂT[.upR, .upR]`\n- `IsBiDualLeftWeyl` : a family with two dual left-handed Weyl indices `T_{α₁ α₂}`: an equivariant\n  linear map out of `ℂT[.downL, .downL]`\n- `IsBiDualRightWeyl` : a family with two dual right-handed Weyl indices `T_{α̇₁ α̇₂}`: an\n  equivariant linear map out of `ℂT[.downR, .downR]`\n- `invariantReductionToMetricTensor`\n- `exists_smul_map_metricTensor_add_of_invariant` : for a Weyl colour `k` and an equivariant map `f`\n  out of `ℂT[k, k]`, every Lorentz invariant of `LinearMap.range f ⊔ S`, for `S` a Lorentz-stable\n  submodule, is a multiple of the image `f (metricTensor k)` of the metric plus an element of `S`\n\n## iii. Table of contents\n\n- A. Families with two Weyl indices of the same kind\n- B. The invariant tensors with two Weyl indices of the same kind\n- C. The classification of the invariants\n- D. Maps from components\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 67,
@@ -1819,13 +1846,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsLeftRightWeyl.lean",
    "module": "PhyslibAlpha.Relativity.LorentzGroup.Invariants.IsLeftRightWeyl",
    "title": "Lorentz invariants of a left-handed and a right-handed Weyl index",
    "doc": "## i. Overview\n\nA bispinor `T^{α α'}`, carrying one left-handed and one right-handed Weyl index, has no Lorentz\ninvariant but `0`: the pair carries the `(1/2, 1/2)` representation, a single four-vector index,\nwhich has nothing to contract with. The same holds for the dual pair `T_{α α'}`. The families are\nequivariant linear maps out of `ℂT[.upL, .upR]` and `ℂT[.downL, .downR]`, `IsLeftRightWeyl` and\n`IsDualLeftRightWeyl` (A).\n\nBy `TensorSpecies.IsEquivariant.reducesInvariantsTo_bot` it is enough that the only invariant\ntensor is zero (B). Two diagonal elements of `SL(2,ℂ)` already force this. A diagonal\n`g = diag (λ₀, λ₁)` multiplies the component `(a₁, a₂)` of a tensor of `ℂT[.upL, .upR]` by\n`λ_{a₁} * conj λ_{a₂}`, and that of a tensor of `ℂT[.downL, .downR]` by the inverse of this. The\nboost `diag (2, 2⁻¹)` along `z` scales `(0, 0)` by `4` and `(1, 1)` by `4⁻¹`, so these vanish,\nand the half turn `diag (-i, i)` about `z` multiplies `(0, 1)` and `(1, 0)` by `-1`, so these\nvanish too (C).\n\n## ii. Key results\n\n- `Lorentz.eq_zero_of_invariant_leftRight` : an invariant tensor with a left- and a\n  right-handed Weyl index is zero.\n- `Lorentz.IsLeftRightWeyl.reducesInvariantsTo_bot` : the invariants of the range of a\n  left-right family reduce to `⊥`.\n- `Lorentz.IsDualLeftRightWeyl.reducesInvariantsTo_bot` : the same for the dual indices.\n\n## iii. Table of contents\n\n- A. Left-right families as equivariant maps\n- B. The invariant tensors vanish\n- C. The classification of the invariants\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 54,
@@ -1899,13 +1928,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/LorentzGroup/Invariants/IsVectorLeftRightWeyl.lean",
    "module": "PhyslibAlpha.Relativity.LorentzGroup.Invariants.IsVectorLeftRightWeyl",
    "title": "Lorentz invariants of a four-vector index and a left-right Weyl pair",
    "doc": "## i. Overview\n\nA family `T^{μ α α'}` carrying one four-vector index and one opposite-chirality Weyl pair is an\nequivariant linear map `f : ℂT[.up, .upL, .upR] →ₗ[ℂ] B`, `IsVectorLeftRightWeyl` (A). Every\nLorentz invariant in the range of `f` is a multiple of `f σ^^^`, the image of the Pauli\nmatrices as a tensor, the shape of the fermion kinetic term `ψ̄_{α'} σ̄^{μ α' α} ∂_μ ψ_α`. That is\n`IsVectorLeftRightWeyl.exists_smul_map_pauliMatrix_add_of_invariant`, stated modulo a\nLorentz-stable submodule `S`, and packaged as `IsVectorLeftRightWeyl.invariantReductionToSpan`\n(D).\n\nAn opposite-chirality Weyl pair carries the `(1/2, 1/2)` representation, which is the\nfour-vector representation, so the three indices are two four-vector indices, and two of those\nadmit only the metric. The proof makes that literal. The components `f (e_μ ⊗ e_α ⊗ e_α')` of `f`\nmove as `T^{μ α α'}` (B); contracting their Weyl pair against the covariant Pauli matrices\n`PauliMatrix.pauliLower`, which intertwine the two index laws (`SL2C.sum_pauliLower_mul_sl2c`),\ngives a family `vectorPair f` of two four-vector indices, whose map is equivariant, whose range\nis the range of `f` by Fierz completeness, and which sends the metric to `f σ^^^` (C); `RankTwo`\nsupplies the classification (D). A family of components is turned back into a map by\n`ofVectorComponents` (E).\n\nThe Standard Model's fermion symbols are `Module.Dual`-valued, so their spinor indices are dual\nWeyl indices: an equivariant map out of `ℂT[.up, .downR, .downL]`, `IsVectorDualLeftRightWeyl`.\nDualising both Weyl indices, `dualWeylMap`, is an equivariant surjection from\n`ℂT[.up, .upL, .upR]` carrying `σ^^^` to `σ^__`, so every invariant in the range of such a map is\na multiple of `f σ^__` (F). A family of dual components is turned into a map by\n`ofDualVectorComponents` (G).\n\n## ii. Key results\n\n- `Lorentz.IsVectorLeftRightWeyl.invariantReductionToSpan` : the invariants reduce to `f σ^^^`.\n- `Lorentz.dualWeylMap` : the dualisation of the Weyl indices.\n- `Lorentz.IsVectorDualLeftRightWeyl.invariantReductionToSpan` : the invariants reduce to\n  `f σ^__`.\n\n## iii. Table of contents\n\n- A. Vector-Weyl families as equivariant maps\n- B. The components of an equivariant map\n- C. The reduction to a pair of four-vector indices\n- D. The classification of the Lorentz invariants\n- E. Maps from components\n- F. Dual Weyl indices\n- G. Maps from dual components\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 69,
@@ -2187,13 +2218,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/LorentzGroup/Invariants/LightCone.lean",
    "module": "PhyslibAlpha.Relativity.LorentzGroup.Invariants.LightCone",
    "title": "The light-cone basis of a boost axis over the integers",
    "doc": "## i. Overview\n\n`lightConeCoeff` and `lightConeCoeffInv` of `LightConeDeriv` change a spacetime index into the\nlight-cone basis of a spatial axis `i`: the two directions `D₀ - Dᵢ` and `D₀ + Dᵢ` of the plane\nthe boost along `i` moves, and the two transverse directions. Their entries are `0`, `±1` and\n`±1/2`, so both matrices have integer mirrors, and the rank-four classification computes with\nthem in the kernel, which evaluates `ℤ` and does not evaluate `ℂ`. This file holds the mirrors\nand what is proved about them at an arbitrary number of indices.\n\nThe change of basis one way is `lightConeCoeffZ`, an exact integer copy. The other way needs\nthe halves, and `lightConeCoeffInvZ` clears them, so it is twice the true inverse and a\ncontraction over `n` slots carries a factor `2 ^ n` that the rank-four file divides out. That\nis the only normalization in play, and `coe_lightConeCoeffInvZ_eq_two_mul` records it against\n`ℂ`.\n\n`InBoostPlane` separates the two directions of weight `±2` from the two transverse ones, one\nindex at a time. `slotZ` is one slot of the change of basis, and `transitionZ` composes it over\n`n` slots into `2 ^ n` times the map keeping the light-cone components of total weight `m`;\n`transitionZ_eq_sum` unfolds that recursion into a single sum over the multi-indices of that\nweight.\n\n## ii. Key results\n\n- `lightConeCoeffZ` : the four light-cone directions of axis `i`, as integers\n- `lightConeCoeffInvZ` : twice the coordinate directions in the light-cone basis, the `2` clearing\n  the halves\n- `coe_lightConeCoeffInvZ_eq_two_mul` : the integer copy is exactly twice `lightConeCoeffInv`\n- `InBoostPlane` : the boost plane of axis `i`: time and the axis, the two directions the boost\n  moves\n- `slotZ` : one slot's factor: twice the coefficient of `κ` in `μ`, times that of `ν` in `κ`\n- `transitionZ` : two to the number of slots times the entry, at `d` and `e`, of the map keeping the\n  light-cone components of total weight `m` along axis `i`; the factor is the one\n  `lightConeCoeffInvZ` carries, one per slot\n- `transitionZ_eq_sum` : the recursion unfolded, as a sum over the multi-indices of total weight `m`\n\n## iii. Table of contents\n\n- A. The change of basis over the integers\n- B. The boost plane\n- C. The weight-keeping transition over any number of slots\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 68,
@@ -2307,13 +2340,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/LorentzGroup/Invariants/LorentzCovariance.lean",
    "module": "PhyslibAlpha.Relativity.LorentzGroup.Invariants.LorentzCovariance",
    "title": "Equivariant maps out of tensors with four-vector indices",
    "doc": "## i. Overview\n\nA family of vectors of a complex module `B`, indexed by `n` spacetime directions and moved by a\nrepresentation `repLorentz` of `SL(2,ℂ)` with one factor of the Lorentz matrix per index, is\npackaged as a linear map `f` out of the complex Lorentz tensors with `n` contravariant indices,\nand `IsLorentzCovariant n B repLorentz f` says that `f` is equivariant (A). The rank-specific\nfiles of this folder classify the Lorentz invariants in the range of such a map.\n\nThe components of a tensor, relabelled by `Fin 1 ⊕ Fin 3` in each slot, are a coefficient tensor,\n`coeffEquiv` (B), on which `SL(2,ℂ)` acts by `Invariants.act`. An invariant tensor therefore has\nan invariant coefficient tensor, `Invariants.IsInvariantCoeff`, and a classification of the\ninvariant coefficient tensors is a classification of the invariants in the range of `f` (C).\n\nA family `T` of vectors indexed by `n` directions is the map `ofComponents T`, sending each basis\ntensor to the matching vector, and it is equivariant exactly when the vectors obey the\ntransformation law of the components of a tensor (D),\n\n`repLorentz g (T l) = ∑_a (∏ i, Λ(g)_{a i, l i}) • T a`,\n\nwith `l` free and `a` summed, and the summed index first in each factor of the Lorentz matrix\n`Λ(g)` of `g`. Permuting the slots by `permT σ` reads the coefficient tensor and the family at\npermuted index vectors (`permT_coeffEquiv_symm`, `ofComponents_comp_permT`).\n\n## ii. Key results\n\n- `Lorentz.IsLorentzCovariant` : equivariant maps out of tensors with `n` four-vector indices.\n- `Lorentz.coeffEquiv` : the components of such a tensor, as a coefficient tensor.\n- `Lorentz.invariant_iff_isInvariantCoeff` : a tensor is invariant exactly when its coefficient\n  tensor is.\n- `Lorentz.IsLorentzCovariant.reducesInvariantsTo_span` : a spanning set of the invariant\n  coefficient tensors gives a reduction of the invariants of the range.\n- `Lorentz.isLorentzCovariant_ofComponents_iff` : the map of a family is equivariant exactly when\n  the family obeys the transformation law.\n\n## iii. Table of contents\n\n- A. Equivariant maps\n- B. Coefficient tensors\n- C. The reduction to invariant coefficient tensors\n- D. Maps from components\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 65,
@@ -2511,13 +2546,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankFour.lean",
    "module": "PhyslibAlpha.Relativity.LorentzGroup.Invariants.RankFour",
    "title": "Lorentz invariants of a rank-four tensor",
    "doc": "## i. Overview\n\nA rank-four tensor `T^{μνρσ}` has `4 ^ 4 = 256` components, and four invariant tensors can be\ncontracted with it:\n\n* `η_{μν} η_{ρσ}`, `η_{μρ} η_{νσ}` and `η_{μσ} η_{νρ}`, the three pairings of the metric,\n* `ε_{μνρσ}`, the Levi-Civita symbol.\n\nThese are the tensors `contractionTensor i`. There are no others: for an equivariant map\n`f : ℂT(fun _ : Fin 4 => .up) →ₗ[ℂ] B`, `IsLorentzCovariant 4`, a vector of `LinearMap.range f ⊔ S`,\nfor `S` a Lorentz-stable submodule, is invariant exactly when it is a combination of the four\nimages `f (contractionTensor i)` plus an invariant of `S`, `mem_range_sup_invariant_iff` (H), and\n`reducesInvariantsTo_span_contractionTensor` reads the left-to-right direction as a reduction.\nThe fourth tensor is a pseudoscalar, so it would drop out if reflections were allowed;\nindependence is not proved, and for a given `f` the four images may be dependent or zero.\nWhen `f` is antisymmetric under exchanging its last two slots, two images already span: that\nof `η_{μρ} η_{νσ}` and that of `ε_{μνρσ}` (B.4). When `f` is moreover symmetric under exchanging\nits first two slots, both of those vanish too (B.5).\n\nThe four tensors are invariant, by `Λ η Λᵀ = η` and `det Λ = 1` (B); an invariant of the range of\n`f` is the image of an invariant tensor, whose coefficient tensor is invariant (C); and such a\ncoefficient tensor is a combination of the four, two rotations cutting `256` coefficients to `22`\n(D), a boost keeping only what it does not rescale (E), and the `22 × 22` integer equation left\nbeing solved by one checked matrix identity (F, G).\n\n## ii. Key results\n\n- `Lorentz.RankFour.contractionTensor` : the four invariant tensors.\n- `Lorentz.RankFour.exists_eq_sum` : an invariant coefficient tensor is a combination of them.\n- `Lorentz.RankFour.mem_range_sup_invariant_iff` : the classification of the invariants.\n- `Lorentz.RankFour.reducesInvariantsTo_span_contractionTensor` : the same as a reduction.\n- `Lorentz.RankFour.span_range_contractionTensor_of_antisymm` : for a map antisymmetric in its\n  last two slots, two of the four images span.\n- `Lorentz.RankFour.apply_contractionTensor_one_of_symm_of_antisymm`,\n  `Lorentz.RankFour.apply_contractionTensor_three_of_symm` : symmetry in the first two slots\n  kills those two images.\n\n## iii. Table of contents\n\n- A. Coefficient tensors\n- B. The four invariant tensors\n- C. The metric, the Levi-Civita symbol and the invariant tensors\n- D. The four coefficient tensors are invariant\n- E. The four tensors are Lorentz invariant\n- F. Exchanging the last two slots\n- G. Exchanging the first two slots\n- H. Invariants of the range come from invariant coefficient tensors\n- I. The rotations by `π` about the axes and the rotation `x → y → z → x`\n- J. The boost along an axis\n- K. An invariant tensor has boost weight zero\n- L. The weight-zero projection\n- M. The `22` orbit coordinates and the orbit matrix\n- N. The orbits\n- O. The orbit matrix\n- P. The certificate\n- Q. The classification of the invariants of an equivariant map\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 82,
@@ -2947,13 +2984,15 @@
     }
    ],
    "private": 2,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankOne.lean",
    "module": "PhyslibAlpha.Relativity.LorentzGroup.Invariants.RankOne",
    "title": "Lorentz invariants of a single four-vector index",
    "doc": "## i. Overview\n\nA four-vector `T^{μ}` has no Lorentz invariant but `0`. There is nothing to contract it with:\nthe metric takes two indices and the Levi-Civita symbol four. For an equivariant map\n`f : ℂT(fun _ : Fin 1 => .up) →ₗ[ℂ] B`, `IsLorentzCovariant 1`, that is `eq_zero_of_invariant`,\nand `reducesInvariantsTo_bot`, the form the Standard Model files use, is the same statement\nmodulo a Lorentz-stable submodule `S`.\n\nThe invariants of the range of `f` are the images of invariant tensors, so it is enough that an\ninvariant coefficient tensor `c` (`Invariants.Basic`) vanishes. Along a spatial axis the four\nlight-cone directions carry boost weights `2`, `-2`, `0`, `0`, and an invariant `c` has no\nlight-cone component of nonzero weight, which with one index says `c_d = 0` unless `d` is one of\nthe two directions transverse to time and to that axis (A). No direction is transverse to all three\naxes, so running the three axes in turn leaves `c = 0` (B). Section C applies this to `f`.\n\n## ii. Key results\n\n- `eq_zero_of_invariant` : every Lorentz invariant in the range of `f` is zero: one index carry no\n  invariant contraction\n- `reducesInvariantsTo_bot` : the range of `f` reduces to `⊥`: a Lorentz invariant of\n  `LinearMap.range f ⊔ S`, for `S` a Lorentz-stable submodule, lies in `S`\n\n## iii. Table of contents\n\n- A. What one axis leaves\n- B. The classification of the Lorentz invariants\n- C. The invariants of an equivariant map\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 57,
@@ -3035,13 +3074,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankThree.lean",
    "module": "PhyslibAlpha.Relativity.LorentzGroup.Invariants.RankThree",
    "title": "Lorentz invariants of three four-vector indices",
    "doc": "## i. Overview\n\nA rank-three tensor `T^{μνρ}` has no Lorentz invariant but `0`. Nothing ties three indices:\nthe metric takes two and the Levi-Civita symbol four, and an odd number is left over either way.\nFor an equivariant map `f : ℂT(fun _ : Fin 3 => .up) →ₗ[ℂ] B`, `IsLorentzCovariant 3`, that is\n`eq_zero_of_invariant`, and `reducesInvariantsTo_bot`, the form the Standard Model files use, is\nthe same statement modulo a Lorentz-stable submodule `S`.\n\nThe invariants of the range of `f` are the images of invariant tensors, so it is enough that an\ninvariant coefficient tensor `c` (`Invariants.Basic`) vanishes. One axis then does all the work,\nwith a parity argument in place of a certificate. Along a spatial axis the four light-cone\ndirections carry boost weights `2`, `-2`, `0`, `0`, and an invariant `c` has no light-cone component\nof nonzero weight. In a multi-index of total weight `0` the `+2` and `-2` slots pair off, leaving an\nodd number of the three slots transverse. The half turn about the axis, the rotation by `π`, fixes\ntime and the axis and negates the two transverse directions (A), so it multiplies each weight-zero\ncomponent by `-1` to an odd power, that is by `-1`, and an invariant component both fixed and\nnegated is `0` (B). Every light-cone component of `c` vanishes, so `c` does, and with it the\ninvariant. Section C applies this to `f`.\n\n## ii. Key results\n\n- `eq_zero_of_invariant` : every Lorentz invariant in the range of `f` is zero: three indices carry\n  no invariant contraction\n- `reducesInvariantsTo_bot` : the range of `f` reduces to `⊥`: a Lorentz invariant of\n  `LinearMap.range f ⊔ S`, for `S` a Lorentz-stable submodule, lies in `S`\n\n## iii. Table of contents\n\n- A. The half turn about a spatial axis\n- B. The classification of the Lorentz invariants\n- C. The invariants of an equivariant map\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 58,
@@ -3131,13 +3172,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/LorentzGroup/Invariants/RankTwo.lean",
    "module": "PhyslibAlpha.Relativity.LorentzGroup.Invariants.RankTwo",
    "title": "Lorentz invariants among two four-vector indices",
    "doc": "## i. Overview\n\nA rank-two tensor `T^{μν}` has a single Lorentz invariant up to scale, its contraction with the\nmetric: nothing else ties two indices, the Levi-Civita symbol needing four. For an equivariant\nmap `f : ℂT(fun _ : Fin 2 => .up) →ₗ[ℂ] B`, `IsLorentzCovariant 2`, every Lorentz invariant in the\nrange of `f` is a multiple of `f metric`, the image of the metric `η` (A), and modulo a\nLorentz-stable submodule `S` the invariants of `LinearMap.range f ⊔ S` reduce to the line through\nit (C). For a given `f` the image may be zero.\n\nThe invariants of the range of `f` are the images of invariant tensors, so it is enough that an\ninvariant coefficient tensor `c` (`Invariants.Basic`) is a multiple of the Minkowski metric, and\nthree kinds of transformation pin `c` down (B). The half turn about each axis has a diagonal\nLorentz matrix with entries `±1`, and for `μ ≠ ν` one of the three negates `c_{μν}`, so the\noff-diagonal coefficients vanish. The cyclic rotation `x → y → z → x` permutes the spatial\ndirections, so `c_xx = c_yy = c_zz`. The boost along `z` scales the light-cone component of `c`\nalong `D₀ - D_z` in both slots by `t⁴`, so that component vanishes, and with the off-diagonal\ncoefficients gone it is `c_tt + c_zz`. So `c` is `c_tt` times the Minkowski metric.\n\n## ii. Key results\n\n- `Lorentz.RankTwo.metric` : the metric `η` with the colours of `IsLorentzCovariant 2`.\n- `Lorentz.RankTwo.exists_smul_map_metric_of_invariant` : an invariant in the range of `f` is a\n  multiple of `f metric`.\n- `Lorentz.RankTwo.reducesInvariantsTo_span_metric` : the same modulo a stable submodule.\n\n## iii. Table of contents\n\n- A. The metric\n- B. The classification of the invariant coefficient tensors\n- C. The invariants of an equivariant map\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 62,
@@ -3251,13 +3294,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/LorentzMix.lean",
    "module": "PhyslibAlpha.Relativity.LorentzMix",
    "title": "The Lorentz mixing of derivative slots",
    "doc": "## i. Overview\n\nA Lorentz transformation mixes each derivative slot of a symbol through a column `Λ_{b a}`\nof the Lorentz matrix. On families indexed by multisets of directions this is the operator\n`lorentzMix`: peel one direction `a`, put it back as every direction `b` weighted by\n`Λ_{b a}`, and mix what is left; peeling commutes, so the operator descends to multisets,\nand `lorentzMix_ofFn` is its tuple form. The correction terms of a covariant derivative are\nLeibniz convolutions `derivConv` over the multiset antidiagonal, and `lorentzMix` is a\nmorphism for the convolution. The Lorentz law of any covariant tower built one slot at a\ntime from a covariant correction is then one induction, `repLorentz_tower`. Nothing here\ndepends on a gauge group.\n\n## ii. Key results\n\n- `Lorentz.lorentzMix`, `Lorentz.lorentzMix_ofFn` : the mixing operator and its tuple form.\n- `Lorentz.derivConv`, `Lorentz.lorentzMix_derivConv` : the Leibniz convolution, and the\n  mixing operator as a morphism for it.\n- `Lorentz.repLorentz_tower` : the Lorentz law of an abstract covariant tower.\n\n## iii. Table of contents\n\n- A. The Lorentz mixing of derivative slots\n- B. The Leibniz convolution\n- C. The Lorentz law of a covariant tower\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 55,
@@ -3427,13 +3472,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/MinkowskiMatrix.lean",
    "module": "PhyslibAlpha.Relativity.MinkowskiMatrix",
    "title": "The Minkowski matrix over the integers",
    "doc": "The Minkowski matrix with integer entries, so that the kernel can evaluate it.\n\n## i. Overview\n\nThe entries of `minkowskiMatrix` are integers, but it is a matrix over `ℝ`, and the kernel\ncannot evaluate arithmetic in `ℝ`. Statements which a decision procedure has to evaluate are\ntherefore stated with `minkowskiMatrixZ`, the same diagonal matrix `diag(1, -1, …, -1)` taken\nover `ℤ`. The bridge back is `minkowskiMatrixZ.cast_apply`, which casts an entry to the\ncorresponding entry of `minkowskiMatrix`; the remaining lemmas are the entry values and the\nsymmetry, matching the `minkowskiMatrix` API.\n\n## ii. Key results\n\n- `minkowskiMatrixZ` : the Minkowski matrix over `ℤ`.\n- `minkowskiMatrixZ.cast_apply` : its cast to `ℝ` is `minkowskiMatrix`, entry by entry.\n- `minkowskiMatrixZ.inl_0_inl_0`, `minkowskiMatrixZ.inr_i_inr_i`,\n  `minkowskiMatrixZ.off_diag_zero` : the entries.\n- `minkowskiMatrixZ.comm` : it is symmetric.\n\n## iii. Table of contents\n\n- A. The Minkowski matrix over the integers\n\n## iv. References\n\nThe real Minkowski matrix and its API are in `Physlib.Relativity.MinkowskiMatrix`.",
+   "copyright": "2026 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 45,
@@ -3499,13 +3546,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/PauliMatrices/Anticommuting.lean",
    "module": "PhyslibAlpha.Relativity.PauliMatrices.Anticommuting",
    "title": "Three anticommuting matrices are the most `2 × 2` can hold",
    "doc": "## i. Overview\n\nA family `τ` of `2 × 2` complex matrices is anticommuting when `τ_a τ_b + τ_b τ_a = 2 δ_ab 1`:\neach `τ_a` squares to `1` and two different ones anticommute. Conjugating `τ_a` by another\nmember reverses its sign, so every member is traceless, and the trace pairs the members with\neach other and with `1` orthonormally. Together with `1` they are linearly independent in the\nfour dimensional space of `2 × 2` matrices, so such a family has at most three members. The\nPauli matrices `σ1, σ2, σ3` attain the bound: they are a maximal anticommuting family, one for\neach axis of space.\n\n## ii. Key results\n\n- `IsAnticommuting` : the relation `τ_a τ_b + τ_b τ_a = 2 δ_ab 1`.\n- `IsAnticommuting.trace_mul`, `IsAnticommuting.trace_eq_zero` : the trace pairing.\n- `IsAnticommuting.linearIndependent` : the members together with `1` are independent.\n- `IsAnticommuting.card_le_three` : an anticommuting family has at most three members.\n- `isAnticommuting_pauliMatrix` : the Pauli matrices are anticommuting.\n- `isGreatest_card_isAnticommuting` : the largest anticommuting family has three members.\n\n## iii. Table of contents\n\n- A. Anticommuting families\n- B. At most three members\n- C. The Pauli matrices attain the bound\n\n## iv. References\n\n* W. Pauli, *Zur Quantenmechanik des magnetischen Elektrons*, Z. Phys. 43 (1927) 601–623.",
+   "copyright": "2026 Eduardo Nava-Hernandez",
    "sections": [
     {
      "line": 50,
@@ -3595,13 +3644,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/PauliMatrices/SelfAdjoint.lean",
    "module": "PhyslibAlpha.Relativity.PauliMatrices.SelfAdjoint",
    "title": "The covariant Pauli matrices as plain matrices",
    "doc": "The Pauli matrices with the vector index lowered, and their completeness relation.\n\n## i. Overview\n\n`Physlib.Relativity.PauliMatrices.SelfAdjoint` carries the Pauli matrices as self-adjoint\nmatrices and as the basis `pauliBasis'` of the self-adjoint `2 × 2` matrices. Contracting\nthem against tensor components needs them as plain matrices, which is `pauliLower μ`, the\nmatrix underlying `pauliSelfAdjoint' μ`; `pauliBasis'_coe` identifies it with the basis vector\nand `pauliLower_eq_smul` with `η_{μμ} σ^μ`. The Fierz completeness relation\n`sum_pauliLower_mul_pauliLower` then says that these four matrices span the `2 × 2` matrices,\nwith the trace pairing as the duality and normalisation `2`; it is the relation which turns a\nsum over a Lorentz index into a pair of Kronecker deltas on the spinor indices.\n\n## ii. Key results\n\n- `PauliMatrix.pauliLower` : the covariant Pauli matrices as plain matrices.\n- `PauliMatrix.pauliBasis'_coe` : they underlie the basis `pauliBasis'`.\n- `PauliMatrix.pauliLower_eq_smul` : lowering the index multiplies by the metric entry.\n- `PauliMatrix.sum_pauliLower_mul_pauliLower` : the Fierz completeness relation.\n\n## iii. Table of contents\n\n- A. The covariant Pauli matrices as plain matrices\n\n## iv. References\n\nThe self-adjoint Pauli matrices and the basis `pauliBasis'` are in\n`Physlib.Relativity.PauliMatrices.SelfAdjoint`.",
+   "copyright": "2026 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 51,
@@ -3643,13 +3694,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/PauliMatrices/ToTensor.lean",
    "module": "PhyslibAlpha.Relativity.PauliMatrices.ToTensor",
    "title": "The Pauli tensor in components",
    "doc": "The basis of `ℂT[.up, .upL, .upR]` indexed by a Lorentz and two spinor indices.\n\n## i. Overview\n\n`Physlib.Relativity.Bispinors.Pauli.ToTensor` carries the Pauli matrices as the tensor\n`σ^^^ : ℂT[.up, .upL, .upR]` and the equivalence `indexEquiv` identifying the component index\nof that tensor with a triple `(μ, α, β)`. Reindexing the tensor basis along `indexEquiv` gives\n`indexBasis`, the basis labelled by such triples, and `toTensor_eq_sum_indexBasis` expands the\nPauli tensor in it: the coefficient of `e_μ ⊗ e_α ⊗ e_β` is the entry `σ^μ_{α β}`. This is the\nform in which the Pauli tensor enters a component computation.\n\n## ii. Key results\n\n- `PauliMatrix.indexBasis` : the basis of `ℂT[.up, .upL, .upR]` indexed by `(μ, α, β)`.\n- `PauliMatrix.toTensor_eq_sum_indexBasis` : `σ^^^ = ∑ σ^μ_{α β} e_μ ⊗ e_α ⊗ e_β`.\n\n## iii. Table of contents\n\n- A. The basis indexed by a Lorentz and two spinor indices\n\n## iv. References\n\nThe Pauli tensor and `indexEquiv` are in `Physlib.Relativity.Bispinors.Pauli.ToTensor`.",
+   "copyright": "2026 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 54,
@@ -3683,13 +3736,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/Poincare/Basic.lean",
    "module": "PhyslibAlpha.Relativity.Poincare.Basic",
    "title": "The Poincaré group",
    "doc": "The Poincaré group acts on spacetime by Lorentz transformations and translations.\n\n## i. Overview\n\nAn element of the Poincaré group is a pair of a translation `a` and a Lorentz transformation `Λ`.\nIt acts on a point `x` by `x ↦ Λ x + a`. The group is built from the existing `LorentzGroup d`\nand the vector group of `SpaceTime d`. The file also defines the action on functions of\nspacetime by `(g • u) x = u (g⁻¹ x)`. A group element is orthochronous when its Lorentz part is.\nThe action on functions sends the support of a function to the image of the support.\n\n## ii. Key results\n\n- `PoincareGroup` : the group of translations and Lorentz transformations.\n- `PoincareGroup.IsOrthochronous` : the Lorentz part preserves the direction of time.\n- `PoincareGroup.act` : the action on functions of spacetime.\n- `PoincareGroup.tsupport_act` : the support of `g • u` is the image of the support of `u`.\n\n## iii. Table of contents\n\n- A. The group\n- B. The action on spacetime\n- C. Orthochronous elements\n- D. Point reflections\n- E. The action on functions\n\n## iv. References\n\nNone.\n\n## A. The group\n\n- `PoincareGroup` : the group of translations and Lorentz transformations.\n\n## B. The action on spacetime\n\n- `PoincareGroup.toHomeomorph` : each element is a homeomorphism of spacetime.\n\n## C. Orthochronous elements\n\n- `PoincareGroup.IsOrthochronous` : the Lorentz part preserves the direction of time.\n\n## D. Point reflections\n\n- `PoincareGroup.pointReflection` : the point reflection `x ↦ p - x`.\n- `PoincareGroup.not_isOrthochronous_pointReflection` : it is not orthochronous.\n\n## E. The action on functions\n\n- `PoincareGroup.act` : the action `(g • u) x = u (g⁻¹ x)` on functions of spacetime.",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [],
    "declarations": [
     {
@@ -3910,13 +3965,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/Poincare/Causality.lean",
    "module": "PhyslibAlpha.Relativity.Poincare.Causality",
    "title": "The causal structure is Poincaré invariant",
    "doc": "Orthochronous Poincaré transformations preserve causal futures and pasts.\n\n## i. Overview\n\nAn event `q` causally follows `p` when the difference lies in the closed future light cone.\nA Lorentz transformation preserves the Minkowski product. An orthochronous one also preserves the\ndirection of time, so it maps the future light cone to itself. A translation does not change\ndifferences. So an orthochronous Poincaré transformation maps the causal future of a set to the\ncausal future of the image. A transformation that reverses time exchanges causal future and past.\n\n## ii. Key results\n\n- `causallyFollows_zero_smul` : orthochronous Lorentz maps preserve the future light cone.\n- `causallyFollows_smul_iff` : orthochronous Poincaré maps preserve causal order.\n- `causalFuture_smul` : the causal future of the image is the image of the causal future.\n- `causalFuture_smul_of_not` : a time-reversing map sends the causal future to the causal past.\n\n## iii. Table of contents\n\n- A. The future light cone\n- B. The causal order\n- C. Causal futures and pasts of sets\n\n## iv. References\n\nNone.\n\n## A. The future light cone\n\n- `causallyFollows_zero_smul` : orthochronous Lorentz maps preserve the future light cone.\n\n## B. The causal order\n\n- `causallyFollows_smul_iff` : orthochronous Poincaré maps preserve causal order.\n\n## C. Causal futures and pasts of sets\n\n- `causalFuture_smul` : the causal future of the image is the image of the causal future.",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [],
    "declarations": [
     {
@@ -4009,13 +4066,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/Poincare/Distributions.lean",
    "module": "PhyslibAlpha.Relativity.Poincare.Distributions",
    "title": "The Poincaré action on test functions and distributions",
    "doc": "The Poincaré group acts on test functions by pullback and on distributions by transposition.\n\n## i. Overview\n\nA Poincaré element `g` acts on a test function by `(g • φ) x = φ (g⁻¹ x)`. The action is\ncontinuous on the space of test functions because pullback by a Lorentz transformation and by a\ntranslation are. A distribution `T` is transformed by `(g • T) φ = T (g⁻¹ • φ)`. Then the\ndelta distribution at `p` goes to the delta distribution at `g p`. A distribution that vanishes\noutside a set goes to a distribution that vanishes outside the image of the set.\n\n## ii. Key results\n\n- `PoincareGroup.actTestFunction` : the action on test functions.\n- `PoincareGroup.actDist` : the action on distributions.\n- `PoincareGroup.isVanishingOn_actDist` : the support of a transformed distribution.\n- `PoincareGroup.actDist_delta` : the action sends a delta distribution to a delta distribution.\n\n## iii. Table of contents\n\n- A. Test functions\n- B. Distributions\n\n## iv. References\n\nNone.\n\n## A. Test functions\n\n- `PoincareGroup.actTestFunction` : the action on test functions.\n\n## B. Distributions\n\n- `PoincareGroup.actDist` : the action on distributions.",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [],
    "declarations": [
     {
@@ -4132,13 +4191,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/Poincare/Fields.lean",
    "module": "PhyslibAlpha.Relativity.Poincare.Fields",
    "title": "The Poincaré action on smooth fields",
    "doc": "The Poincaré group acts on smooth fields and on compactly supported smooth fields.\n\n## i. Overview\n\nThe action `(g • u) x = u (g⁻¹ x)` sends smooth functions to smooth functions. It is linear and\nit sends the support to the image of the support. So it preserves compact support. The file\nrestricts the action to the submodule of smooth fields and to the submodule of test fields.\n\n## ii. Key results\n\n- `PoincareGroup.actSmooth` : the action as a linear map on smooth fields.\n- `PoincareGroup.actTest` : the action as a linear map on test fields.\n- `PoincareGroup.tsupport_actSmooth` : the support of a transformed field.\n\n## iii. Table of contents\n\n- A. Smooth fields\n- B. Test fields\n\n## iv. References\n\nNone.\n\n## A. Smooth fields\n\n- `PoincareGroup.actSmooth` : the action as a linear map on smooth fields.\n\n## B. Test fields\n\n- `PoincareGroup.actTest` : the action as a linear map on test fields.",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [],
    "declarations": [
     {
@@ -4231,13 +4292,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/SL2C/AxisRotations.lean",
    "module": "PhyslibAlpha.Relativity.SL2C.AxisRotations",
    "title": "The cyclic rotation and the half turns",
    "doc": "The rotation cycling the spatial axes, and the rotations by `π` about a coordinate axis.\n\n## i. Overview\n\n`Physlib.Relativity.SL2C.AxisRotations` carries the rotations taking the `z`-axis to a chosen\ncoordinate axis. Two further distinguished rotations are added here, both of which act on the\nLorentz index by a permutation or a sign and so can be used to relabel the axes in a\nclassification.\n\nThe cyclic rotation `rotationCycle` is the rotation by `2π/3` about the diagonal spatial axis.\nIts Lorentz matrix is the permutation matrix of `cycDir`, the permutation fixing time and\nsending `x → y → z → x`. Since `cycDir` has order three, an index family not fixed by it has\nthree distinct rotations, which is `cycDir_orbit_distinct`: that is what lets one axis of a\nthree-axis statement be proved and the other two obtained by relabelling.\n\nThe half turn `halfTurn k` is the rotation by `π` about the axis `k`, taken as the lift\n`-i σ_k`. Its Lorentz matrix is diagonal: it fixes time and the axis and negates the two\ntransverse directions, with the signs recorded by `halfTurnSign`.\n\nThe spatial-axis convention is `0 = x`, `1 = y`, `2 = z`.\n\n## ii. Key results\n\n- `Lorentz.cycDir` : the cyclic permutation of Lorentz direction labels.\n- `Lorentz.cycDir_cycDir_cycDir`, `Lorentz.cycDir_orbit_distinct` : it has order three, and an\n  index family it does not fix has three distinct rotations.\n- `Lorentz.SL2C.rotationCycle` : the cyclic rotation in `SL(2, ℂ)`.\n- `Lorentz.SL2C.toLorentzGroup_rotationCycle_apply` : its Lorentz matrix is the permutation\n  matrix of `cycDir`.\n- `Lorentz.halfTurnSign`, `Lorentz.SL2C.halfTurn` : the half turn about a coordinate axis.\n- `Lorentz.SL2C.toLorentzGroup_halfTurn_apply` : its diagonal Lorentz matrix.\n\n## iii. Table of contents\n\n- A. The cyclic coordinate rotation\n- B. Half turns about the coordinate axes\n\n## iv. References\n\nThe rotations from the `z`-axis to a coordinate axis are in\n`Physlib.Relativity.SL2C.AxisRotations`.",
+   "copyright": "2026 Jinzheng Li",
    "sections": [
     {
      "line": 59,
@@ -4395,13 +4458,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/SL2C/Basic.lean",
    "module": "PhyslibAlpha.Relativity.SL2C.Basic",
    "title": "Conjugation and the kernel of the covering map",
    "doc": "Entrywise conjugation on `SL(2, ℂ)`, and the covering map on `-1`, on entries and on adjoints.\n\n## i. Overview\n\nThree things about the covering map `SL(2, ℂ) →* LorentzGroup 3` are collected here, all\nneeded to carry a Lorentz index through a spinor computation.\n\nEntrywise complex conjugation is a monoid endomorphism `conjHom` of `SL(2, ℂ)`, an involution,\nand conjugating the group argument undoes the conjugation of the entries: the inverse\nconjugate transpose at `conjHom g` is the inverse transpose at `g`. This is what lets a\nright-handed slot be treated as a conjugated left-handed one.\n\nThe covering map sandwiches, `A ↦ M A Mᴴ`, so the two signs of `-1` cancel and\n`toLorentzGroup (-1) = 1`: the map is two-to-one. It also intertwines conjugate transposition\nwith matrix transposition, `L(M†) = L(M)ᵀ`.\n\nFinally `sum_pauliLower_mul_sl2c` is the defining intertwining identity read entrywise:\nsandwiching `σ_μ` between `g` and `gᴴ` mixes the covariant Pauli matrices by the column `μ` of\nthe Lorentz matrix of `g`.\n\n## ii. Key results\n\n- `Lorentz.SL2C.conjHom` : entrywise conjugation as a monoid endomorphism.\n- `Lorentz.SL2C.conjHom_involutive`, `Lorentz.SL2C.conjHom_inv_conjTranspose` : its\n  involutivity, and its effect on the inverse conjugate transpose.\n- `Lorentz.SL2C.toLorentzGroup_neg_one` : the centre covers the identity.\n- `Lorentz.SL2C.sum_pauliLower_mul_sl2c` : the intertwining identity on entries.\n- `Lorentz.SL2C.toLorentzGroup_conjTranspose` : `L(M†) = L(M)ᵀ`.\n\n## iii. Table of contents\n\n- A. Entrywise conjugation\n- B. The kernel of the covering map\n- C. The intertwining identity on entries\n- D. The covering map and adjoints\n\n## iv. References\n\nThe covering map and its properties are in `Physlib.Relativity.SL2C.Basic`.",
+   "copyright": "2026 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 65,
@@ -4479,13 +4544,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/Tensors/ComplexTensor/Vector/Basic.lean",
    "module": "PhyslibAlpha.Relativity.Tensors.ComplexTensor.Vector.Basic",
    "title": "The dual of the complex covector representation",
    "doc": "How dual complex covectors transform, on the dual basis.\n\n## i. Overview\n\nA covector representation induces one on the dual space, and a classification of invariant\ntensors has to know how the dual basis transforms. For the complex covectors\n`Lorentz.ComplexCoVector` the answer is that dual covectors transform contravariantly: the dual\nbasis vector `e^μ` goes to the combination of dual basis vectors given by the column `μ` of the\ncomplexified Lorentz matrix. This is the complex analogue of\n`Lorentz.CoVector.sl2Rep_dual_dualBasis`, and is obtained from\n`Representation.dual_apply_dualBasis` with the transposed inverse matrix read off from\n`Lorentz.ComplexCoVector.basis_ρ_apply`.\n\n## ii. Key results\n\n- `Lorentz.ComplexCoVector.SL2CRep_dual_dualBasis` : dual complex covectors transform by the columns\n  of the complexified Lorentz matrix.\n\n## iii. Table of contents\n\n- A. The dual representation on the dual basis\n\n## iv. References\n\nThe complex covector representation is in\n`Physlib.Relativity.Tensors.ComplexTensor.Vector.Basic`.",
+   "copyright": "2026 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 51,
@@ -4503,13 +4570,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/Tensors/Equivariant.lean",
    "module": "PhyslibAlpha.Relativity.Tensors.Equivariant",
    "title": "Equivariant maps out of the tensors of a species",
    "doc": "## i. Overview\n\nA family of vectors in a representation `ρ` of the group `G` of a tensor species `S`, carrying\nindices of colors `c`, is packaged as a linear map `f : S.Tensor c →ₗ[k] B`, and\n`S.IsEquivariant c ρ f` says that `f` intertwines the action of `G` on tensors with `ρ` (A).\n\nOver `ℂ`, the invariants in the range of such a map come from invariant tensors (C): every\ninvariant of `LinearMap.range f ⊔ W`, for `W` a `G`-stable submodule, is `f t + y` with `t` an\ninvariant tensor and `y ∈ W`. This holds whenever the colors are closed under adjoints (B): for\nevery `g` some `g'` acts on each color by the conjugate transpose of the matrix of `g`. The\nclassification of the invariants in the range of `f` is thereby reduced to that of the invariant\ntensors of `S.Tensor c`, `IsEquivariant.invariantReductionToSpan`.\n\nA map is specified by its values on the basis tensors with `Basis.constr`, and\n`isEquivariant_constr` turns a transformation law of those values into equivariance (D). With\nthe component indices relabelled by `e`, the map of a family `T` is `familyMap e T`, and it is\nequivariant exactly when `T` obeys that law, `isEquivariant_familyMap_iff`.\n\n## ii. Key results\n\n- `TensorSpecies.IsEquivariant` : equivariant linear maps out of `S.Tensor c`.\n- `TensorSpecies.smul_basis_eq_sum` : the action on the basis tensors.\n- `TensorSpecies.IsAdjointClosed` : the colors are closed under conjugate transposition.\n- `TensorSpecies.IsEquivariant.exists_invariant_add_of_mem_sup` : invariants of the range come from\n  invariant tensors.\n- `TensorSpecies.IsEquivariant.reducesInvariantsTo_map` : the reduction to the image of a\n  submodule containing the invariant tensors.\n- `TensorSpecies.IsEquivariant.invariantReductionToSpan` : the reduction to one invariant tensor.\n- `TensorSpecies.isEquivariant_familyMap_iff` : the map of a family is equivariant exactly when\n  the family obeys the transformation law of the components.\n\n## iii. Table of contents\n\n- A. Equivariant maps and the action on basis tensors\n- B. Colors closed under adjoints\n- C. Invariants in the range come from invariant tensors\n- D. Building equivariant maps\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 63,
@@ -4739,13 +4808,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/Relativity/Tensors/RealTensor/CoVector/Representation.lean",
    "module": "PhyslibAlpha.Relativity.Tensors.RealTensor.CoVector.Representation",
    "title": "The representation of `SL(2, ℂ)` on real Lorentz covectors",
    "doc": "The covector representation pulled back along the covering map, and its dual.\n\n## i. Overview\n\n`Physlib.Relativity.Tensors.RealTensor.CoVector.Representation` carries the representation of\nthe Lorentz group on real Lorentz covectors. Composing it with the covering map\n`SL(2, ℂ) →* LorentzGroup 3` gives `sl2Rep`, the representation of `SL(2, ℂ)` on the same\nspace, which is the form a spinor computation needs. Its dual acts on the dual basis\ncontravariantly: `sl2Rep_dual_dualBasis` says that `e^μ` goes to the combination given by the\ncolumn `μ` of the Lorentz matrix.\n\n## ii. Key results\n\n- `Lorentz.CoVector.sl2Rep` : the representation of `SL(2, ℂ)` on real Lorentz covectors.\n- `Lorentz.CoVector.sl2Rep_dual_dualBasis` : dual covectors transform by the columns of the\n  Lorentz matrix.\n\n## iii. Table of contents\n\n- A. The representation of `SL(2, ℂ)`\n\n## iv. References\n\nThe Lorentz-group representation is in\n`Physlib.Relativity.Tensors.RealTensor.CoVector.Representation`.",
+   "copyright": "2026 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 50,
@@ -4771,7 +4842,8 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   }
  ]
 }

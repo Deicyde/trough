@@ -12,6 +12,8 @@ The module `Physlib.Meta.TODO.Basic`, [Physlib/Meta/TODO/Basic.lean](https://git
 
 **`Physlib.todoInfo`**, a structure, [line 22](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Meta/TODO/Basic.lean#L22).
 
+> The information from a `TODO ...` command.
+
 ```lean
 structure todoInfo where
   /-- The content of the note. -/
@@ -25,6 +27,8 @@ structure todoInfo where
 ```
 
 **`Physlib.elabTODO`**, a def, [line 45](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Meta/TODO/Basic.lean#L45).
+
+> Elaborator for the `TODO ...` command
 
 ```lean
 meta def elabTODO : Elab.Command.CommandElab

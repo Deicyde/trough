@@ -7,6 +7,7 @@
    "module": "QuantumInfo.Operators.Unitary",
    "title": "Unitary operators on quantum state",
    "doc": "This file is intended for lemmas about unitary matrices (`Matrix.unitaryGroup`) and how they\napply to `Bra`s, `Ket`s, and `MState` mixed states.\n\nThis is imported by `CPTPMap` to define things like unitary channels, Kraus operators, and\ncomplementary channels, so this file itself does not discuss channels yet.",
+   "copyright": "2025 Alex Meiburg",
    "sections": [],
    "declarations": [
     {
@@ -43,7 +44,8 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   }
  ]
 }

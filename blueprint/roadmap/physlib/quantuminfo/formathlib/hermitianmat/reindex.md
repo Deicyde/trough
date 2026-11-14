@@ -8,7 +8,7 @@ proof: formalized
 
 # QuantumInfo.ForMathlib.HermitianMat.Reindex
 
-The module `QuantumInfo.ForMathlib.HermitianMat.Reindex`, [QuantumInfo/ForMathlib/HermitianMat/Reindex.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HermitianMat/Reindex.lean): 15 declarations, 0 with a docstring.
+The module `QuantumInfo.ForMathlib.HermitianMat.Reindex`, [QuantumInfo/ForMathlib/HermitianMat/Reindex.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HermitianMat/Reindex.lean): 15 declarations, none with a docstring.
 
 > Much like `Matrix.reindex` and `Matrix.submatrix`, we can reindex a Hermitian matrix to get another
 > Hermitian matrix; however, this only makes sense when both permutations are the same, accordingly,

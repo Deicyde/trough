@@ -7,6 +7,7 @@
    "module": "Physlib.ProbabilisticTheory.Basic",
    "title": "Probabilistic theories",
    "doc": "A probabilistic theory is described by its ordered real observables and a certain outcome.\n\n## i. Overview\n\nThe observables of a physical system form an ordered real vector space. Positive observables are\nthose whose measured values are never negative. The certain outcome `1` bounds every observable\nup to a multiple and sets the scale of the theory. The order is Archimedean, so no observable is\ninfinitesimally positive and the certain outcome defines a genuine norm.\n\n## ii. Key results\n\n- `ProbabilisticTheory` : ordered real observables with a certain outcome and an Archimedean\n  order.\n\n## iii. Table of contents\n\n- A. Observable space and certain outcome\n\n## iv. References",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 38,
@@ -24,13 +25,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/ProbabilisticTheory/Channel/Basic.lean",
    "module": "Physlib.ProbabilisticTheory.Channel.Basic",
    "title": "Positive unital maps",
    "doc": "## i. Overview\n\nIn the order-unit-space model used here, a channel is a positive unital transformation: it sends\nobservables to observables without turning a possible outcome negative, and it leaves the certain\noutcome certain. This covers time evolution, noise, and measurements whose outcomes are discarded\nat the level of a general probabilistic theory. For quantum systems with a specified composite\nstructure, physical channels normally require the stronger condition of complete positivity,\nwhich is not expressible using the order-unit structure alone.\n\nA channel `Φ : Channel P Q` between probabilistic theories is a unital positive linear map from\n`P.Observables` to `Q.Observables`. States and local nets still use unital positive linear maps\nbetween bare order-unit spaces.\n\n## ii. Key results\n\n- `UnitalPositiveLinearMap` : a positive linear map preserving `1`, notated `E →ₚ₁[R] F`.\n- `PositiveLinearMap` scalar action : positive linear maps can be scaled by nonnegative reals.\n- `UnitalPositiveLinearMap.ofLinearMap` : bundle a linear map after checking positivity and\n  unitality.\n- `UnitalPositiveLinearMap.ofPositiveLinearMap` : bundle a positive linear map after checking\n  unitality.\n- `UnitalPositiveLinearMap.id`, `UnitalPositiveLinearMap.comp` : the identity and composition of\n  unital positive linear maps.\n- `Channel` : channels between probabilistic theories.\n- `Channel.id`, `Channel.comp` : the identity and composition of channels.\n\n## iii. Table of contents\n\n- A. Unital positive linear maps\n- B. Constructing unital positive linear maps\n- C. Scaling positive linear maps\n- D. Channels between probabilistic theories\n\n## iv. References",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 54,
@@ -372,13 +375,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/ProbabilisticTheory/Channel/Covariant.lean",
    "module": "Physlib.ProbabilisticTheory.Channel.Covariant",
    "title": "Covariant channels",
    "doc": "Channels that commute with two group actions by reversible transformations.\n\n## i. Overview\n\nMore general channels may lose information but can still respect the symmetries of a system. This\nis captured by covariance: a channel `Φ` between two spaces carrying group actions `ρ` and `σ` by\nreversible transformations is covariant, or intertwining, if\n\n`Φ ∘ ρ g = σ g ∘ Φ` for every group element `g`.\n\nCovariance preserves invariant states under pullback. A reversible transformation is covariant\nexactly when the target action is the transport of the source action. Together with the reversible\ntransformations, this gives a common framework for symmetries and dynamics of observable spaces.\n\n## ii. Key results\n\n- `IsIntertwining`: Covariance of a channel under two group actions.\n- `IsIntertwining.comap_isInvariant`: Pullback of invariant states along covariant channels.\n- `Reversible.isIntertwining_iff_eq_transport`: Characterization of the transported action.\n\n## iii. Table of contents\n\n- A. Covariant channels\n  - A.1. Definition and closure properties\n  - A.2. Invariant states\n- B. Covariance of transport\n\n## iv. References",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 51,
@@ -448,13 +453,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/ProbabilisticTheory/Channel/Norm.lean",
    "module": "Physlib.ProbabilisticTheory.Channel.Norm",
    "title": "Channels are contractions",
    "doc": "Unital positive linear maps are contractions with respect to the order-unit norm and are\ntherefore continuous.\n\n## i. Overview\n\nThe norm bound follows from the characterization of the order-unit norm in terms of states.\nEvery state on the codomain pulls back along a channel to a state on the domain, so evaluating\nthe image of an observable cannot exceed its original norm.\n\n## ii. Key results\n\n- `UnitalPositiveLinearMap.norm_apply_le`: Channels are contractions.\n- `UnitalPositiveLinearMap.continuous`: Channels are continuous.\n- `UnitalPositiveLinearMap.toContinuousLinearMap`: Channels as continuous linear maps.\n\n## iii. Table of contents\n\n- A. Contractivity and continuity\n\n## iv. References",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 41,
@@ -504,13 +511,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/ProbabilisticTheory/Channel/Reversible.lean",
    "module": "Physlib.ProbabilisticTheory.Channel.Reversible",
    "title": "Reversible transformations of observables",
    "doc": "Reversible transformations of observable spaces, their group structure, their action on states and\nthe transport of group actions.\n\n## i. Overview\n\nTime evolution, spatial symmetries and changes of reference frame all have something in common:\nthey transform observables in a way that can be undone.\n\nThis motivates reversible transformations, defined as unital linear order isomorphisms of\nobservable spaces. They form a group and naturally act on states. A group representation by\nreversible transformations describes symmetries or reversible dynamics. For example, time evolution\nis represented by the additive group of real numbers. A reversible transformation also transports a\ngroup action from one observable space to another by conjugation.\n\n## ii. Key results\n\n- `Reversible`: Reversible transformations, i.e. unital linear order isomorphisms of\n  observable spaces.\n- `Reversible.toChannelHom`: Reversible transformations embed in the monoid of channels.\n- `Reversible.instMulActionState`: The induced action on states.\n- `Reversible.transport`: Transport of a group action along a reversible transformation.\n- `IsInvariant`: A state fixed by every transformation of a group action.\n\n## iii. Table of contents\n\n- A. Reversible transformations\n  - A.1. Definition\n  - A.2. Group structure\n  - A.3. As channels\n- B. Action on states\n- C. Transport of group actions\n  - C.1. Conjugation\n  - C.2. Transported actions\n- D. Invariant states\n\n## iv. References",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 57,
@@ -736,13 +745,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/ProbabilisticTheory/CStarAlgebra/OrderUnit.lean",
    "module": "Physlib.ProbabilisticTheory.CStarAlgebra.OrderUnit",
    "title": "The observables of a C⋆-algebra",
    "doc": "The self-adjoint part of a unital C⋆-algebra is an Archimedean order-unit space.\n\n## i. Overview\n\nThe observables of a quantum system are the self-adjoint elements of its C⋆-algebra. One\nobservable lies below another if their difference has no negative measurement outcome. The\nidentity is the certain outcome.\n\nEvery observable lies below a multiple of the identity. So no outcome exceeds the norm.\n\nAn observable that lies below every positive multiple of the identity has no positive outcome.\nThis is the Archimedean property.\n\n## ii. Key results\n\n- `selfAdjoint.le_nsmul_one_ceil_norm` : every observable lies below a natural multiple of the\n  identity.\n- `selfAdjoint.le_zero_of_forall_pos_smul_one_le` : an element below every positive multiple of\n  the identity is below zero.\n- `selfAdjoint.instOrderUnitSpace` : the observables form an order-unit space.\n- `selfAdjoint.instArchimedeanOrderUnitSpace` : it is Archimedean.\n\n## iii. Table of contents\n\n- A. The order-unit space of observables\n- B. The Archimedean property\n\n## iv. References",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 51,
@@ -796,13 +807,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/ProbabilisticTheory/Effect/Basic.lean",
    "module": "Physlib.ProbabilisticTheory.Effect.Basic",
    "title": "Effects",
    "doc": "## i. Overview\n\nAn effect models a yes/no measurement outcome, ranging continuously between the impossible\noutcome `0` and the certain outcome `1`. Formally, it is a point of the order interval `[0, 1]`\ninside `E`. For self-adjoint matrices, effects are exactly the operators `0 ≤ M ≤ 1` — the\nelements of a POVM.\n\n## ii. Key results\n\n- `Effect` : a bounded measurement outcome, the order interval `[0, 1]`.\n- `Effect.mem_iff_mem_posCone_and_one_sub_mem_posCone` : an effect is exactly a positive element\n  whose complement from the order unit is also positive.\n- `Effect.exists_pos_smul_mem` : every positive observable becomes an effect after scaling it down\n  enough.\n\n## iii. Table of contents\n\n- A. Effects\n\n## iv. References\n\n- G. Ludwig, *Foundations of Quantum Mechanics I*, Springer, 1983.\n  <https://link.springer.com/book/10.1007/978-3-642-86751-4>",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 44,
@@ -876,13 +889,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/ProbabilisticTheory/Effect/Complement.lean",
    "module": "Physlib.ProbabilisticTheory.Effect.Complement",
    "title": "Complementary effects",
    "doc": "The complement `1 - e` of an effect, its antitonicity and compatibility with mixtures.\n\n## i. Overview\n\nThe complement of an effect `e` is the yes/no test that fires exactly when `e` doesn't: `1 - e`.\nPhysically, a state's probability of \"no\" is always `1` minus its probability of \"yes\".\n\n## ii. Key results\n\n- `Effect.complement` : the complementary effect `1 - e`.\n- `Effect.complement_antitone` : the complement reverses order.\n- `Effect.complement_mix` : the complement of a mixture is the mixture of the complements.\n\n## iii. Table of contents\n\n- A. The complement\n- B. Monotonicity of the complement\n- C. The complement and mixtures\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 46,
@@ -956,13 +971,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/ProbabilisticTheory/Effect/Convex.lean",
    "module": "Physlib.ProbabilisticTheory.Effect.Convex",
    "title": "Convexity and mixtures of effects",
    "doc": "The effect interval is convex, so effects can be mixed with a given probability.\n\n## i. Overview\n\nThe effect interval `[0, 1]` is convex: randomizing between two effects with some probability\ngives back an effect. Physically, flipping a biased coin to decide which of two measurements to\nactually run is itself a legitimate measurement.\n\n## ii. Key results\n\n- `Effect.convex` : the effect interval is convex.\n- `Effect.mix` : randomize between two effects with a given probability.\n\n## iii. Table of contents\n\n- A. Convexity and mixtures of effects\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 45,
@@ -996,13 +1013,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/ProbabilisticTheory/Effect/Metric.lean",
    "module": "Physlib.ProbabilisticTheory.Effect.Metric",
    "title": "The metric space of effects",
    "doc": "The order-unit metric on effects and their identification with the order-unit-norm ball.\n\n## i. Overview\n\nEffects sit inside `E`, so pulling back the order-unit norm along the inclusion `Effect E ↪ E`\ngives them a metric space structure for free.\n\nEffects also correspond to points of the order-unit-norm ball, by the affine rescaling\n`e ↦ 2 • e - 1` that turns `[0, 1]` into the symmetric `[-1, 1]` the norm itself ranges over.\n\n## ii. Key results\n\n- `Effect.dist_eq_orderUnitNorm` : the effect metric is the order-unit norm of the difference.\n- `Effect.effectEquiv` : effects correspond to points of the order-unit-norm ball.\n\n## iii. Table of contents\n\n- A. The effect metric\n- B. Effects as points of the order-unit-norm ball\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 49,
@@ -1072,13 +1091,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/ProbabilisticTheory/Effect/Sharp.lean",
    "module": "Physlib.ProbabilisticTheory.Effect.Sharp",
    "title": "Sharp effects",
    "doc": "Sharp effects: extreme points of the effect interval, preserved by taking complements.\n\n## i. Overview\n\nThe effect interval `[0, 1]` is convex. A sharp effect is an extreme point of it: one that cannot\nbe written as a nontrivial mixture of two distinct effects. Sharp effects generalize projections.\n\n## ii. Key results\n\n- `Effect.IsSharp` : an effect that cannot be written as a nontrivial mixture of two distinct\n  effects.\n- `Effect.isSharp_complement_iff` : sharpness is preserved by taking the complement.\n\n## iii. Table of contents\n\n- A. Sharp effects\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 46,
@@ -1128,13 +1149,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/ProbabilisticTheory/LocalNet/Basic.lean",
    "module": "Physlib.ProbabilisticTheory.LocalNet.Basic",
    "title": "Local nets of observables",
    "doc": "Observables of subsystems and their inclusion into larger subsystems.\n\n## i. Overview\n\nLet `R` index subsystems, with `X ≤ Y` meaning that `X` is contained in `Y`. The observables of\n`X` form an order-unit space `A X`. A local net assigns to `X ≤ Y` a channel,\nwhich regards an observable of `X` as one of `Y`.\n\nFor a tensor product system with `H_Y ≃ H_X ⊗ H_rest`, take `A X` to be the Hermitian operators\non `H_X`. Then the inclusion is the familiar map `M ↦ M ⊗ 1`: the observable acts as `M` on `X` and\nas the identity on the remaining factors.\n\nThe local observables can also be viewed in one space, `N.Quasilocal`, the algebraic direct limit\nof the local observable spaces. It is a real vector space and carries no norm. Completing it in a\nnorm, which needs more structure than is assumed here, gives the quasilocal algebra of the physics\nliterature. Inductive limits of order-unit spaces are developed in [ref: arxiv_1705_04663].\n\n## ii. Key results\n\n- `LocalNet`: subsystem observables with channels into larger subsystems.\n- `LocalNet.IsOrderEmbedding`: the inclusion maps reflect order.\n- `LocalNet.map_le_map_iff`: inclusion preserves and reflects inequalities.\n- `LocalNet.incl_injective`: order-embedding inclusion maps are injective.\n- `LocalNet.Quasilocal`: the algebraic direct limit of the local observable spaces.\n- `LocalNet.toQuasilocal`: regard an observable of one subsystem as a quasilocal observable.\n- `LocalNet.toQuasilocal_eq_iff`: equality of quasilocal observables can be checked in a common\n  larger subsystem.\n- `LocalNet.toQuasilocal_injective`: order-embedding inclusions keep local observables distinct.\n- `LocalNet.exists_toQuasilocal_eq`, `exists_toQuasilocal_eq₂`: quasilocal observables have\n  representatives in a single subsystem, and any two have representatives in a common one.\n\n## iii. Table of contents\n\n- A. Subsystems and inclusions\n- B. Order-embedding inclusions\n- C. The quasilocal observable space\n- D. Embedding the local observables\n- E. Directed families of subsystems\n\n## iv. References\n\n* L. Mawhinney, I. G. Todorov, *Inductive limits in the operator system and related categories*,\n  arXiv:1705.04663. [ref: arxiv_1705_04663]",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 67,
@@ -1312,13 +1335,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/ProbabilisticTheory/LocalNet/Interaction/Basic.lean",
    "module": "Physlib.ProbabilisticTheory.LocalNet.Interaction.Basic",
    "title": "Interactions on a local net",
    "doc": "An interaction is a family of local observables, each associated with a region of the net.\n\n## i. Overview\n\nExtensive observables such as energy, magnetization and particle number can be expressed as\nsums of local terms. An interaction assigns a supporting region and an observable to each\nlabel. Each term can be included into any larger region and is taken to be zero when its\nsupport is not contained in the region.\n\n## ii. Key results\n\n- `Interaction`: A family of local observables with specified supports.\n- `Interaction.termIn`: An interaction term expressed in a given region.\n- `Interaction.incl_termIn`: Compatibility with inclusions of regions.\n- `Interaction.termIn_add`: Compatibility with addition.\n- `Interaction.termIn_smul`: Compatibility with scalar multiplication.\n\n## iii. Table of contents\n\n- A. Interactions\n- B. Interaction terms in a region\n\n## iv. References",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 46,
@@ -1380,13 +1405,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/ProbabilisticTheory/LocalNet/Interaction/Sum.lean",
    "module": "Physlib.ProbabilisticTheory.LocalNet.Interaction.Sum",
    "title": "Integrating interactions over local regions",
    "doc": "An interaction defines a local observable by integrating its terms over a region.\n\n## i. Overview\n\nThe integral of an interaction gives an observable in each region. The choice of measure allows\nboth discrete sums and continuum integrals.\n\nFor nested regions, the observable in the larger region decomposes into the observable of the\nsmaller region and the remaining interaction terms. For two regions with disjoint sets of\nsupported terms, the observable decomposes into their contributions and the terms supported\nin neither region.\n\n## ii. Key results\n\n- `Interaction.sumIn`: The integral of interaction terms in a region.\n- `Interaction.norm_sumIn_le`: A norm bound for the integral.\n- `Interaction.sumIn_add`, `Interaction.sumIn_smul`: Linearity of integration.\n- `Interaction.sumIn_split`: Decomposition for nested regions.\n- `Interaction.sumIn_disjoint`: Decomposition for regions with disjoint sets of terms.\n- `Interaction.sumIn_count`, `Interaction.sumIn_count_tsum`: Discrete sums over finite or\n  countable labels.\n\n## iii. Table of contents\n\n- A. Integration over a region\n- B. Nested regions\n- C. Disjoint regions\n- D. Discrete interactions\n\n## iv. References",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 70,
@@ -1504,13 +1531,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/ProbabilisticTheory/LocalNet/QuasilocalOrder.lean",
    "module": "Physlib.ProbabilisticTheory.LocalNet.QuasilocalOrder",
    "title": "Order-unit structure on quasilocal observables",
    "doc": "Positivity and a common unit for observables assembled from a local net.\n\n## i. Overview\n\nThe quasilocal construction treats observables from different subsystems as observables of one\nglobal system. A quantity measured locally can also be described in a larger subsystem; these\ndescriptions must refer to the same physical quantity. For the global description to work, it must\npreserve more than identity: whether an observable is positive, how it compares with other\nobservables, and what represents the certain outcome.\n\nThis file shows how those properties carry over from the local systems. Positive local observables\ngive the quasilocal space its notion of positivity, and the local copies of `1` give it one certain\nobservable. Local observables thereby retain their interpretation as observables of the whole\nsystem. The resulting order-unit structure lets a state of the global system assign positive,\nnormalized expectations to them.\n\n## ii. Key results\n\n- `LocalNet.Quasilocal.positive`: the global observables with a positive local representative.\n- `LocalNet.Quasilocal.toQuasilocal_nonneg_iff`: local and global positivity agree when inclusions\n  reflect order.\n- `LocalNet.Quasilocal.instOrderUnitSpace`: the global observables inherit an order unit.\n- `LocalNet.Quasilocal.toQuasilocalChannel`: each subsystem maps to the global observable space\n  by a channel.\n- `LocalNet.Quasilocal.instArchimedeanOrderUnitSpace`: the global space is Archimedean when the\n  local spaces are.\n\n## iii. Table of contents\n\n- A. Positivity\n- B. The common order unit\n- C. The order\n- D. The quasilocal order-unit space and local channels\n- E. The Archimedean property\n\n## iv. References",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 68,
@@ -1704,13 +1733,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/ProbabilisticTheory/OrderUnit/Archimedean.lean",
    "module": "Physlib.ProbabilisticTheory.OrderUnit.Archimedean",
    "title": "Archimedean order-unit spaces",
    "doc": "## i. Overview\n\nThe Archimedean condition is a regularity assumption on an order-unit space that rules out\ninfinitesimal elements. With it, the order and the distinguished unit `1` determine a natural\nnorm,\n\n`‖A‖₁ = inf {r ≥ 0 | -r • 1 ≤ A ≤ r • 1}`.\n\nThus the unit interval sets the scale of the theory: `[-1, 1]` is exactly the closed unit ball. For\nself-adjoint matrices, this recovers the usual operator norm. Concretely, this is the Minkowski\nfunctional of the order interval `[-1, 1]`: convexity of that interval gives the triangle\ninequality, and its symmetry gives homogeneity, for free. The Archimedean condition is only needed\nafterwards, to upgrade this from a seminorm to a genuine norm.\n\n## ii. Key results\n\n- `ProbabilisticTheory.instArchimedeanOrderUnitSpace` : the observables of a probabilistic theory\n  form an Archimedean order-unit space.\n- `ProbabilisticTheory.of` : an Archimedean order-unit space regarded as a probabilistic theory.\n- `ArchimedeanOrderUnitSpace.orderUnitNorm_eq_zero_iff` : the order-unit norm separates points.\n- `ArchimedeanOrderUnitSpace.closedIciTopology` : the positive cone is closed in the order-unit-norm\n  topology.\n\n## iii. Table of contents\n\n- A. Archimedean order units\n- B. The order-unit bounds and norm\n- C. Norm axioms\n- D. The induced normed space\n- E. Order-closedness of the topology\n\n## iv. References",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 54,
@@ -2000,13 +2031,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/ProbabilisticTheory/OrderUnit/Basic.lean",
    "module": "Physlib.ProbabilisticTheory.OrderUnit.Basic",
    "title": "Ordered vector spaces and order units",
    "doc": "## i. Overview\n\nOrder-unit spaces capture the basic structure needed for a probabilistic theory: observables,\npositivity, effects, states and probabilities. They do this without assuming that the theory is\nclassical or quantum, or that observables have any particular algebraic structure.\n\nIn quantum mechanics, the standard example is the real vector space of self-adjoint matrices,\nordered by positive semidefiniteness, with the identity matrix as 1. Keeping only the vector\nspace, its order, and this distinguished unit gives the abstract order-unit setting.\n\n## ii. Key results\n\n- `OrderUnitSpace.exists_two_sided_bound` : every observable sits between `-(n • 1)` and `n • 1`,\n  for some `n`.\n- `OrderUnitSpace.exists_eq_sub_nonneg` : every observable is a difference of two positive\n  observables.\n- `OrderUnitSpace.exists_real_shift_nonneg` : enough copies of the order unit shift any element\n  into the positive cone.\n- `OrderedVectorSpace.nonneg_add_eq_zero` : the positive cone meets its negation only at `0`.\n\n## iii. Table of contents\n\n- A. Ordered vector spaces and order units\n- B. Consequences of being an order unit\n\n## iv. References",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 47,
@@ -2076,13 +2109,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/ProbabilisticTheory/OrderUnit/Cone.lean",
    "module": "Physlib.ProbabilisticTheory.OrderUnit.Cone",
    "title": "Ordered positive cones",
    "doc": "## i. Overview\n\n`PosCone E` collects the positive elements of `E`. In quantum mechanics, `E` is the real vector\nspace of self-adjoint matrices, whose spectra are real. Its positive cone consists exactly of\nthose matrices whose spectra are nonnegative.\nThese elements form a cone: they are closed under addition and scaling by nonnegative reals.\n\n## ii. Key results\n\n- `PosCone` : the cone of positive observables, `PointedCone.positive ℝ E`. Its carrier is exactly\n  `{A | 0 ≤ A}` (`PointedCone.mem_positive`) and it is convex (`PointedCone.convex`).\n- `PosCone.isClosed` : the positive cone is closed in the order-unit-norm topology of an\n  Archimedean order-unit space.\n\n## iii. Table of contents\n\n- A. The positive cone\n- B. Topological closedness\n- C. The order unit",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 42,
@@ -2140,13 +2175,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/ProbabilisticTheory/StarAlgebra/State.lean",
    "module": "Physlib.ProbabilisticTheory.StarAlgebra.State",
    "title": "Observables and states of a star algebra",
    "doc": "A positive map sends observables to observables. A state gives observables real expectation\nvalues. A tracial state does not see the order of a product.\n\n## i. Overview\n\nThe observables of a quantum system are the self-adjoint operators of its algebra. A state gives\nevery operator a complex expectation value.\n\nA state is tracial if the expectation value of a product does not depend on the order of the\nfactors: `ω (a b) = ω (b a)`. Then `ω` vanishes on every commutator. A tracial state gives the\nsame expectation value after a change of frame by a unitary `u`: `ω (u x u⋆) = ω x`.\n\nA state has a real expectation value on every observable. Its real part is a state of the\nobservables.\n\nA positive map sends the operators of one system to operators of another. It sends observables to\nobservables. A unital positive map restricts to a channel between the observables.\n\n## ii. Key results\n\n- `Observable` : the self-adjoint elements, such as Hermitian operators.\n- `UnitalPositiveLinearMap.IsTracial` : a tracial state.\n- `UnitalPositiveLinearMap.IsTracial.map_commutator` : a tracial state vanishes on commutators.\n- `UnitalPositiveLinearMap.IsTracial.map_conj` : a tracial state is invariant under\n  `x ↦ u * x * u⋆` for a unitary `u`.\n- `UnitalPositiveLinearMap.isTracial_iff_star_mul_self_eq_mul_star_self` : `ω` is tracial if and\n  only if `ω (a⋆ * a) = ω (a * a⋆)` for all `a`.\n- `UnitalPositiveLinearMap.onObservables` : a state restricted to a state of the observables.\n- `UnitalPositiveLinearMap.coe_onObservables_apply` : the expectation value of an observable is\n  real.\n- `UnitalPositiveLinearMap.restrictObservables` : a unital positive map restricted to a channel\n  between observables.\n\n## iii. Table of contents\n\n- A. Observables and tracial states\n- B. States of observables\n- C. Channels between observables\n\n## iv. References",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 64,
@@ -2244,13 +2281,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/ProbabilisticTheory/StarAlgebra/Traciality.lean",
    "module": "Physlib.ProbabilisticTheory.StarAlgebra.Traciality",
    "title": "Tracial functionals",
    "doc": "A functional on an algebra is tracial if the order of a product does not change its value.\n\n## i. Overview\n\nA functional `f` on an algebra is tracial if `f (x y) = f (y x)` for all `x` and `y`. The order\nof a product does not change its value.\n\nOn an algebra with an adjoint it is enough to check `f (x⋆ x) = f (x x⋆)`. An operator and its\nadjoint then give the same value in both orders.\n\n## ii. Key results\n\n- `LinearMap.IsTracial` : a complex-linear functional with `f (x * y) = f (y * x)`.\n- `LinearMap.isTracial_iff_star_mul_self_eq_mul_star_self` : `f` is tracial if and only if\n  `f (x⋆ * x) = f (x * x⋆)` for all `x`.\n\n## iii. Table of contents\n\n- A. Tracial functionals\n- B. Checking on `x⋆ x`\n\n## iv. References",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 47,
@@ -2280,13 +2319,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/ProbabilisticTheory/State/Basic.lean",
    "module": "Physlib.ProbabilisticTheory.State.Basic",
    "title": "States",
    "doc": "## i. Overview\n\nA state assigns each observable its expectation value: a positive linear functional\n(`0 ≤ A ⟹ 0 ≤ ω A`), normalized so the certain outcome reads `ω 1 = 1`. In quantum mechanics,\n`ω A = tr(ρA)` for a density matrix `ρ`.\n\n## ii. Key results\n\n- `𝓢[𝕜, A]` : states on an ordered `𝕜`-vector space with a distinguished unit.\n- `UnitalPositiveLinearMap.comap` : the state on the input of a channel that evaluates an\n  observable by first sending it through the channel.\n- `Channel.comap` : the same pullback of states along a channel between probabilistic theories.\n\n## iii. Table of contents\n\n- A. Notation for positive functionals and states\n- B. Transporting states along channels\n\n## iv. References",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 38,
@@ -2332,13 +2373,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/ProbabilisticTheory/State/Convex.lean",
    "module": "Physlib.ProbabilisticTheory.State.Convex",
    "title": "Convex state spaces",
    "doc": "Convexity of the state space and its pure and mixed states.\n\n## i. Overview\n\nStates mix: a probabilistic combination of two states is again a state, and the state space\nembeds convexly into the algebraic dual. A pure state is one that's never a genuine mixture of\ntwo others, an extreme point of that convex set. A mixed state is one that is a mixture.\n\n## ii. Key results\n\n- `UnitalPositiveLinearMap.mix` : randomize between two states with a given probability.\n- `UnitalPositiveLinearMap.stateSpace_convex` : the state space is convex in the algebraic dual.\n- `UnitalPositiveLinearMap.IsPure` : pure states are extreme points of the state space.\n- `UnitalPositiveLinearMap.isPure_iff_forall_mix_eq` : a pure state admits only trivial\n  genuine mixtures.\n- `UnitalPositiveLinearMap.isMixed_iff_exists_mem_openSegment` : mixed states lie between\n  two other states.\n\n## iii. Table of contents\n\n- A. Mixing states\n- B. The state space\n- C. Pure and mixed states\n\n## iv. References",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 51,
@@ -2452,13 +2495,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/ProbabilisticTheory/State/Discrimination.lean",
    "module": "Physlib.ProbabilisticTheory.State.Discrimination",
    "title": "State discrimination",
    "doc": "Optimal binary discrimination probabilities and their relation to the state distance.\n\n## i. Overview\n\nA system is prepared in state `ω₀` (with probability `p`) or `ω₁` (with probability `1 - p`). We\nget to run a single yes/no test on it — an effect `e` — and have to guess which state it was,\nbased only on whether `e` \"clicked\". We guess `ω₀` on a click and `ω₁` otherwise; `successProb`\nis the probability that guess is right.\n\nAlways guessing `ω₁`, without even looking at the system, is already right with probability\n`1 - p` — that's our baseline. Running a test can only add to it: its `advantage` is how much\nextra success probability it buys over that baseline. Taking the supremum over all tests gives the\nclassic Helstrom bound (`optimalSuccessProb_eq`), without assuming an optimizing test exists.\n\nFor equal priors (`p = 1/2`) the bound simplifies to `1/2 + dist ω₀ ω₁ / 4`.\nTwo equally likely states are easier to tell apart exactly when they sit farther apart.\n\n## ii. Key results\n\n- `UnitalPositiveLinearMap.optimalSuccessProb_eq` : the Helstrom bound.\n- `UnitalPositiveLinearMap.optimalSuccessProb_half_half_eq` : for equal priors, the bound is the\n  state distance.\n\n## iii. Table of contents\n\n- A. Success probability and the advantage of a test\n- B. The Helstrom bound\n- C. Equal priors: the bound is the state distance\n\n## iv. References\n\n- C.W. Helstrom, *Quantum Detection and Estimation Theory*, Academic Press, 1976.",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 60,
@@ -2588,13 +2633,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/ProbabilisticTheory/State/Local.lean",
    "module": "Physlib.ProbabilisticTheory.State.Local",
    "title": "States of a local net",
    "doc": "Compatible subsystem states and states of the whole system.\n\n## i. Overview\n\nAn observable of a smaller subsystem can also be measured in a larger one. A state of the larger\nsubsystem therefore determines a state of the smaller one: assign each smaller observable the\nexpectation it has when viewed in the larger system. This operation is called restriction.\nObservable inclusions point from smaller to larger subsystems, state restrictions point the other\nway.\n\nIn a tensor product system, including an observable means letting it act as the identity on the\nadditional factors. Restricting a density-matrix state then amounts to tracing out those factors.\nA `LocalNet.CompatibleStates` assigns a state to every subsystem, with the requirement that a\nsmaller subsystem's state agrees with the restriction of any larger subsystem's state. Thus the\nexpectation of an observable does not depend on which containing subsystem is used to evaluate\nit.\n\nFor a nonempty directed family, local positivity defines an order on the quasilocal observables.\nEvery compatible family then defines a unique state of the whole system. Conversely, a quasilocal\nstate restricts to a compatible family of subsystem states.\n\n## ii. Key results\n\n- `LocalNet.restrict`: precomposition with the observable inclusion map.\n- `LocalNet.CompatibleStates`: a compatible family of states on the subsystems.\n- `LocalNet.CompatibleStates.compat_apply`: compatible states agree on included observables.\n- `LocalNet.Quasilocal.toState`: the quasilocal state defined by a compatible family.\n- `LocalNet.Quasilocal.stateEquiv`: quasilocal states correspond to compatible local states.\n\n## iii. Table of contents\n\n- A. Restriction of states\n- B. Compatible local states\n- C. States of the whole system\n\n## iv. References",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 61,
@@ -2708,13 +2755,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/ProbabilisticTheory/State/Metric.lean",
    "module": "Physlib.ProbabilisticTheory.State.Metric",
    "title": "The metric space of states",
    "doc": "The operator-norm distance between states and their distance to the set of pure states.\n\n## i. Overview\n\nA state is just a positive linear functional — no continuity is assumed. It turns out to be\nautomatically bounded: `|ω A| ≤ ‖A‖`. Physically, a state can never predict\nan expectation value bigger than what the observable itself can read.\n\nThat bound induces a genuine operator-norm distance between states, `dist`, making `𝓢[ℝ, E]` a\n`MetricSpace`. It also defines `distToPure`, the infimum distance to the set of pure states.\n\n## ii. Key results\n\n- `UnitalPositiveLinearMap.abs_apply_le_orderUnitNorm` : a state's values are bounded by the\n  order-unit norm.\n- `UnitalPositiveLinearMap.dist` : the operator-norm distance between states.\n- `UnitalPositiveLinearMap.distToPure` : a state's infimum distance to the set of pure states.\n\n## iii. Table of contents\n\n- A. States are bounded by the order-unit norm\n- B. The state metric\n- C. Distance to pure states\n\n## iv. References",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 53,
@@ -2876,13 +2925,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/ProbabilisticTheory/State/Pairing.lean",
    "module": "Physlib.ProbabilisticTheory.State.Pairing",
    "title": "The state–effect pairing",
    "doc": "State–effect evaluation gives probabilities and separates both states and effects.\n\n## i. Overview\n\nStates and effects are paired by evaluation, `(ω, e) ↦ ω e ∈ [0, 1]`. This pairing is affine in\nboth arguments. It also separates both spaces: a state is determined by its values on all\neffects, and an effect is determined by its values under all states. Moreover, the distance\nbetween two effects is the largest difference in probability that they can produce over all\nstates.\n\nThus states and effects admit faithful representations as probability-valued functions on one\nanother.\n\n## ii. Key results\n\n- `UnitalPositiveLinearMap.apply_mem_Icc` : state–effect evaluation takes values in `[0, 1]`.\n- `UnitalPositiveLinearMap.apply_mix` : evaluation is affine in the effect argument.\n- `UnitalPositiveLinearMap.ext_of_effect_eq` : effects separate states.\n- `Effect.dist_eq_sSup_abs_apply` : effect distance is determined by state evaluations.\n- `Effect.ext_of_forall_apply_eq` : states separate effects.\n- `UnitalPositiveLinearMap.injective_apply_effect` : states embed into functions on effects.\n- `Effect.injective_apply_state` : effects embed into functions on states.\n\n## iii. Table of contents\n\n- A. State–effect evaluation\n- B. Effects separate states\n- C. States separate effects\n\n## iv. References",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 59,
@@ -2964,13 +3015,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/ProbabilisticTheory/State/Separation.lean",
    "module": "Physlib.ProbabilisticTheory.State.Separation",
    "title": "Separation by states",
    "doc": "States determine positivity, the order-unit norm, and equality of observables.\n\n## i. Overview\n\nIn an Archimedean order-unit space, states determine the entire ordered normed structure. An\nelement is positive exactly when every state assigns it a nonnegative value, and its order-unit\nnorm is `‖A‖₁ = sup { |ω A| : ω a state }`. Consequently, states separate points: two elements are\nequal whenever every state assigns them the same value.\n\nThe main ingredient is Hahn–Banach separation of a point from the positive cone. Applied to an\nelement `A ≱ 0`, it produces a state `ω` with `ω A < 0`. Everything else follows from this one\nseparation fact.\n\n## ii. Key results\n\n- `UnitalPositiveLinearMap.exists_apply_neg_of_not_nonneg` : every element outside the positive\n  cone is separated from it by a state.\n- `UnitalPositiveLinearMap.nonneg_iff_forall_state_nonneg` : states determine the positive cone.\n- `UnitalPositiveLinearMap.sSup_abs_apply_eq_orderUnitNorm` : states determine the order-unit norm.\n- `UnitalPositiveLinearMap.ext_of_forall_apply_eq` : states separate points.\n\n## iii. Table of contents\n\n- A. Separating points from the cone\n- B. The positive cone\n- C. The order-unit norm\n- D. Separation of points\n\n## iv. References",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 56,
@@ -3056,13 +3109,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/ProbabilisticTheory/State/WeightEquivalence.lean",
    "module": "Physlib.ProbabilisticTheory.State.WeightEquivalence",
    "title": "Equivalence between states and finite normalized weights",
    "doc": "Finite normalized weights correspond exactly to positive unital linear functionals.\n\n## i. Overview\n\nA state is, on its own terms, a normalized positive linear functional — `𝓢[ℝ, E]`, already fully\nbuilt in `State/Basic.lean`. It is not *defined* as a weight; the two are independent notions, and\nthe correspondence between them is a genuine theorem.\n\n## ii. Key results\n\n- `Weight.stateEquiv` : finite normalized weights correspond exactly to states.\n\n## iii. Table of contents\n\n- A. From a normalized weight to a state\n- B. From a state to a weight\n- C. The equivalence\n\n## iv. References",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 47,
@@ -3136,13 +3191,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/ProbabilisticTheory/Weight/Basic.lean",
    "module": "Physlib.ProbabilisticTheory.Weight.Basic",
    "title": "Weights",
    "doc": "## i. Overview\n\nA state assigns each positive observable a nonnegative expectation value, normalized so the\ncertain outcome reads exactly `1`. A *weight* generalizes this by dropping the normalization and\nletting the values be extended nonnegative reals, possibly `+∞`. This matters especially in\ninfinite dimensions: the trace on `B(H)` is only finite on the trace-class operators and genuinely\ndiverges to `+∞` elsewhere. A state is then the special case that happens to be finite everywhere\nand normalized.\n\n## ii. Key results\n\n- `Weight.monotone` : weights are monotone on the positive cone.\n- `Weight.IsFinite.isSemifinite` : a finite weight is automatically semifinite.\n- `Weight.IsFinite.normalize_isState` : rescaling a finite weight that's nonzero at the order unit\n  turns it into a state.\n\n## iii. Table of contents\n\n- A. Weights\n- B. States as weights\n\n## iv. References\n\n- G. Ludwig, *Foundations of Quantum Mechanics I*, Springer, 1983.\n  <https://link.springer.com/book/10.1007/978-3-642-86751-4>",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 47,
@@ -3268,13 +3325,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/ProbabilisticTheory/Weight/Extension.lean",
    "module": "Physlib.ProbabilisticTheory.Weight.Extension",
    "title": "Extending finite weights",
    "doc": "## i. Overview\n\nAn `ℝ≥0`-linear map on the positive cone extends uniquely to an `ℝ`-linear map on the whole space\nas soon as every element is a difference `P - Q` of positive elements: send `P - Q` to\n`f P - f Q`. In an order-unit space every element is such a difference, so a finite weight extends\nto a positive linear functional.\n\n## ii. Key results\n\n- `PosCone.extend` : the `ℝ`-linear extension of an `ℝ≥0`-linear map on the positive cone.\n- `Weight.IsFinite.toLinearMap` : the `ℝ`-linear map extending a finite weight to all of `E`.\n\n## iii. Table of contents\n\n- A. Extension from the positive cone\n- B. Extending finite weights\n\n## iv. References",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 40,
@@ -3384,7 +3443,8 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   }
  ]
 }

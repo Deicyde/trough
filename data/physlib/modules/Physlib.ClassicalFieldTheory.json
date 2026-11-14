@@ -7,6 +7,7 @@
    "module": "Physlib.ClassicalFieldTheory.GaugeTheory.LocalGaugeData.Basic",
    "title": "Local gauge data",
    "doc": "The jets of gauge transformations at a point, as the data a local Lagrangian sees.\n\n## i. Overview\n\nThe full gauge group of a theory is some class of functions from spacetime to a global gauge\ngroup `G₀` with Lie algebra `𝔤`; for the Standard Model `G₀ = SU(3) × SU(2) × U(1)`, ignoring\ndiscrete quotients. Physicists are usually agnostic about which class, because a local\nLagrangian only sees how a gauge transformation acts on the fields and finitely many of their\nderivatives at a point `x`, and that depends only on the Taylor series of the gauge transformation\nat `x`. If every smooth function is an allowed gauge transformation — the one assumption made\nabout the class — then by Borel's theorem every Taylor series compatible with the group\narises, convergent or not. These Taylor series, the *jets* at `x`, form the group `GJ`, and\ntheir infinitesimal counterparts the Lie algebra `𝔤J` over `ℝ`.\n\nHow best to present `GJ` depends on `G₀`, so it is taken as input rather than constructed.\nFor a matrix group such as `SU(2)`, the jet of a gauge transformation is a matrix with entries\nin `SpaceTimeAlgebra`, the formal Taylor series at `x`. The Taylor series of a product is the\nproduct of the Taylor series, so the group law is still matrix multiplication, and `GJ` is cut\nout by the same equations `U† U = 1` and `det U = 1` read over `SpaceTimeAlgebra`; likewise\n`𝔤J` is the traceless self-adjoint matrices over `SpaceTimeAlgebra` with the usual bracket\n` ⁅A, B⁆ = i(AB − BA)`.\n\n\n## ii. Key results\n\n- `LocalGaugeData` : the structure.\n- `LocalGaugeData.adjoint_bracket` : the adjoint action of `G₀` on `𝔤` is by Lie algebra\n  automorphisms, from the jet-level law applied to constants.\n- `LocalGaugeData.iteratedDeriv` : the iterated derivative `∂_s` on `𝔤J` along a multiset\n  of directions, with `iteratedDeriv_cons`, `iteratedDeriv_add` and the iterated Leibniz\n  rule `iteratedDeriv_bracket`.\n- `LocalGaugeData.evalLie_iteratedDeriv_mulCoord` : the coordinate multiplication identity\n- `LocalGaugeData.Hom` : a morphism of local gauge data, with `Hom.id` and `Hom.comp`.\n\n## iii. Table of contents\n\n- A. The structure\n- B. Simple derived properties\n- C. The iterated derivative on the jet Lie algebra\n  - C.1. Commutativity of derivatives\n  - C.2. Definition of the iterated derivative\n  - C.3. Properties of the iterated derivative\n- D. Morphisms\n  - D.1. The adjoint action\n  - D.2. Relation to iterated derivatives\n  - D.3. Identity morphisms\n  - D.4. Composition of morphisms\n\n## iv. References",
+   "copyright": "2026 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 69,
@@ -240,13 +241,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 3
   },
   {
    "file": "Physlib/ClassicalFieldTheory/Local/Variation.lean",
    "module": "Physlib.ClassicalFieldTheory.Local.Variation",
    "title": "Admissible local variations",
    "doc": "## i. Overview\n\nThis module packages the admissible variations used in the local first-variation problem.\n\nFor the first local stage, a variation is admissible if it is a smooth compactly supported map\n`Space d → U` for a real normed vector space `U`. This reuses the existing `IsTestFunction`\npredicate rather than introducing a second support calculus.\n\n## ii. Key results\n\n- `ClassicalFieldTheory.Local.AdmissibleVariation` : compactly supported smooth variations.\n\n## iii. Table of contents\n\n- A. Admissible variations\n- B. Basic operations on admissible variations\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Juan Jose Fernandez Morales",
    "sections": [
     {
      "line": 42,
@@ -380,7 +383,8 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   }
  ]
 }

@@ -7,16 +7,19 @@
    "module": "Physlib.Particles.BeyondTheStandardModel.GeorgiGlashow.Basic",
    "title": "The Georgi-Glashow Model",
    "doc": "The Georgi-Glashow model is a grand unified theory that unifies the Standard Model gauge group into\n`SU(5)`.\n\nThis file currently contains informal-results about the Georgi-Glashow group.\n\n## References\n\n* Baez's Grand Unified Theories notes, cited throughout below. [ref: baez_guts_notes]",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 4
   },
   {
    "file": "Physlib/Particles/BeyondTheStandardModel/PatiSalam/Basic.lean",
    "module": "Physlib.Particles.BeyondTheStandardModel.PatiSalam.Basic",
    "title": "The Pati-Salam Model",
    "doc": "The Pati-Salam model is a petite unified theory that unifies the Standard Model gauge group into\n`SU(4) x SU(2) x SU(2)`.\n\nThis file currently contains informal-results about the Pati-Salam group.\n\n## References\n\n* Baez's Grand Unified Theories notes, cited throughout below. [ref: baez_guts_notes]\n* A reference for the kernel of `inclSM`, cited below. [ref: arxiv_2201_07245]",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 28,
@@ -25,13 +28,15 @@
    ],
    "declarations": [],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 9
   },
   {
    "file": "Physlib/Particles/BeyondTheStandardModel/RHN/AnomalyCancellation/Basic.lean",
    "module": "Physlib.Particles.BeyondTheStandardModel.RHN.AnomalyCancellation.Basic",
    "title": "Anomaly cancellation conditions for the Standard Model with right-handed neutrinos",
    "doc": "This directory is related to the anomaly cancellation conditions (ACCs) for the Standard Model with\nright-handed neutrinos (SMν).",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -324,13 +329,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Particles/BeyondTheStandardModel/RHN/AnomalyCancellation/FamilyMaps.lean",
    "module": "Physlib.Particles.BeyondTheStandardModel.RHN.AnomalyCancellation.FamilyMaps",
    "title": "Family maps for the Standard Model for RHN ACCs",
    "doc": "We define the a series of maps between the charges for different numbers of families.",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -511,13 +518,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Particles/BeyondTheStandardModel/RHN/AnomalyCancellation/NoGrav/Basic.lean",
    "module": "Physlib.Particles.BeyondTheStandardModel.RHN.AnomalyCancellation.NoGrav.Basic",
    "title": "ACC system for SM with RHN and no gravitational anomaly.",
    "doc": "We define the ACC system for the Standard Model with right-handed neutrinos and no gravitational\nanomaly.",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -610,13 +619,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Particles/BeyondTheStandardModel/RHN/AnomalyCancellation/Ordinary/Basic.lean",
    "module": "Physlib.Particles.BeyondTheStandardModel.RHN.AnomalyCancellation.Ordinary.Basic",
    "title": "ACC system for SM with RHN (without hypercharge).",
    "doc": "We define the ACC system for the Standard Model (without hypercharge) with right-handed neutrinos.",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -717,13 +728,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Particles/BeyondTheStandardModel/RHN/AnomalyCancellation/Ordinary/DimSevenPlane.lean",
    "module": "Physlib.Particles.BeyondTheStandardModel.RHN.AnomalyCancellation.Ordinary.DimSevenPlane",
    "title": "Dimension 7 plane",
    "doc": "We work here in the three family case.\nWe give an example of a 7 dimensional plane on which every point satisfies the ACCs.\n\nThe main result of this file is `seven_dim_plane_exists` which states that there exists a\n7 dimensional plane of charges on which every point satisfies the ACCs.",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -960,13 +973,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 1
   },
   {
    "file": "Physlib/Particles/BeyondTheStandardModel/RHN/AnomalyCancellation/Ordinary/FamilyMaps.lean",
    "module": "Physlib.Particles.BeyondTheStandardModel.RHN.AnomalyCancellation.Ordinary.FamilyMaps",
    "title": "Family Maps for SM with RHN (no hypercharge)",
    "doc": "We give some properties of the family maps for the SM with RHN, in particular, we\ndefine family universal maps in the case of `LinSols`, `QuadSols`, and `Sols`.",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -995,13 +1010,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Particles/BeyondTheStandardModel/RHN/AnomalyCancellation/Permutations.lean",
    "module": "Physlib.Particles.BeyondTheStandardModel.RHN.AnomalyCancellation.Permutations",
    "title": "Permutations of SM charges with RHN.",
    "doc": "We define the group of permutations for the SM charges with RHN.",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -1102,13 +1119,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Particles/BeyondTheStandardModel/RHN/AnomalyCancellation/PlusU1/Basic.lean",
    "module": "Physlib.Particles.BeyondTheStandardModel.RHN.AnomalyCancellation.PlusU1.Basic",
    "title": "ACC system for SM with RHN",
    "doc": "We define the ACC system for the Standard Model with right-handed neutrinos.",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -1225,13 +1244,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Particles/BeyondTheStandardModel/RHN/AnomalyCancellation/PlusU1/BMinusL.lean",
    "module": "Physlib.Particles.BeyondTheStandardModel.RHN.AnomalyCancellation.PlusU1.BMinusL",
    "title": "B Minus L in SM with RHN.",
    "doc": "Relevant definitions for the SM `B-L`.",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -1324,13 +1345,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Particles/BeyondTheStandardModel/RHN/AnomalyCancellation/PlusU1/BoundPlaneDim.lean",
    "module": "Physlib.Particles.BeyondTheStandardModel.RHN.AnomalyCancellation.PlusU1.BoundPlaneDim",
    "title": "Bound on plane dimension",
    "doc": "We place an upper bound on the dimension of a plane of charges on which every point is a solution.\nThe upper bound is 7, proven in the theorem `plane_exists_dim_le_7`.",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -1359,13 +1382,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Particles/BeyondTheStandardModel/RHN/AnomalyCancellation/PlusU1/FamilyMaps.lean",
    "module": "Physlib.Particles.BeyondTheStandardModel.RHN.AnomalyCancellation.PlusU1.FamilyMaps",
    "title": "Family Maps for SM with RHN",
    "doc": "We give some properties of the family maps for the SM with RHN, in particular, we\ndefine family universal maps in the case of `LinSols`, `QuadSols`, and `Sols`.",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -1394,13 +1419,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Particles/BeyondTheStandardModel/RHN/AnomalyCancellation/PlusU1/HyperCharge.lean",
    "module": "Physlib.Particles.BeyondTheStandardModel.RHN.AnomalyCancellation.PlusU1.HyperCharge",
    "title": "Hypercharge in SM with RHN.",
    "doc": "Relevant definitions for the SM hypercharge.",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -1533,13 +1560,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Particles/BeyondTheStandardModel/RHN/AnomalyCancellation/PlusU1/PlaneNonSols.lean",
    "module": "Physlib.Particles.BeyondTheStandardModel.RHN.AnomalyCancellation.PlusU1.PlaneNonSols",
    "title": "Plane of non-solutions",
    "doc": "Working in the three family case, we show that there exists an eleven dimensional plane in the\nvector space of charges on which there are no solutions.\n\nThe main result of this file is `eleven_dim_plane_of_no_sols_exists`, which states that\nan 11 dimensional plane of charges exists on which there are no solutions except the origin.",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -1832,13 +1861,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Particles/BeyondTheStandardModel/RHN/AnomalyCancellation/PlusU1/QuadSol.lean",
    "module": "Physlib.Particles.BeyondTheStandardModel.RHN.AnomalyCancellation.PlusU1.QuadSol",
    "title": "Properties of Quad Sols for SM with RHN",
    "doc": "We give a series of properties held by solutions to the quadratic equation.\n\nIn particular given a quad solution we define a map from linear solutions to quadratic solutions\nand show that it is a surjection.\n\n## References\n\n* The main reference for this is https://arxiv.org/abs/2006.03588. [ref: arxiv_2006_03588]",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -1995,13 +2026,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Particles/BeyondTheStandardModel/RHN/AnomalyCancellation/PlusU1/QuadSolToSol.lean",
    "module": "Physlib.Particles.BeyondTheStandardModel.RHN.AnomalyCancellation.PlusU1.QuadSolToSol",
    "title": "Solutions from quad solutions",
    "doc": "We use $B-L$ to form a surjective map from quad solutions to solutions.\n\n## References\n\n* The main reference for this material is https://arxiv.org/abs/2006.03588. [ref: arxiv_2006_03588]",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -2166,23 +2199,27 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Particles/BeyondTheStandardModel/Spin10/Basic.lean",
    "module": "Physlib.Particles.BeyondTheStandardModel.Spin10.Basic",
    "title": "The Spin(10) Model",
    "doc": "Note: By physicists this is usually called SO(10). However, the true gauge group involved\nis Spin(10).\n\n## References\n\n* Baez's Grand Unified Theories notes, cited throughout below. [ref: baez_guts_notes]",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 6
   },
   {
    "file": "Physlib/Particles/BeyondTheStandardModel/TwoHDM/Basic.lean",
    "module": "Physlib.Particles.BeyondTheStandardModel.TwoHDM.Basic",
    "title": "The Two Higgs Doublet Model",
    "doc": "The two Higgs doublet model is the standard model plus an additional Higgs doublet.\n\n## i. Overview\n\nThe two Higgs doublet model (2HDM) is an extension of the Standard Model which adds a second Higgs\ndoublet.\n\n## References\n\n* https://arxiv.org/abs/hep-ph/0605184. [ref: arxiv_hep_ph_0605184]\n* https://arxiv.org/abs/1605.03237. [ref: arxiv_1605_03237]",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 30,
@@ -2244,13 +2281,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Particles/BeyondTheStandardModel/TwoHDM/GramMatrix.lean",
    "module": "Physlib.Particles.BeyondTheStandardModel.TwoHDM.GramMatrix",
    "title": "The gram matrix for the two Higgs doublet model",
    "doc": "We will show that the gram matrix of the two Higgs doublet model\ndescribes the gauge orbits of the configuration space.\n\n## References\n\n* The main reference for material in this section is https://arxiv.org/pdf/hep-ph/0605184. [ref: arxiv_hep_ph_0605184]",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 28,
@@ -2564,13 +2603,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Particles/BeyondTheStandardModel/TwoHDM/Potential.lean",
    "module": "Physlib.Particles.BeyondTheStandardModel.TwoHDM.Potential",
    "title": "The potential of the Two Higgs doublet model",
    "doc": "## i. Overview\n\nIn this module we give the define the parameters of the 2HDM potential, and\ngive stability properties of the potential.\n\n## ii. Key results\n\n- `PotentialParameters` : The parameters of the 2HDM potential.\n- `massTerm` : The mass term of the 2HDM potential.\n- `quarticTerm` : The quartic term of the 2HDM potential.\n- `potential` : The full potential of the 2HDM.\n- `PotentialIsStable` : The condition that the potential is stable.\n\n## iii. Table of contents\n\n- A. The parameters of the potential\n  - A.1. The potential parameters corresponding to zero\n  - A.2. Gram parameters\n  - A.3. Specific cases\n- B. The mass term\n- C. The quartic term\n- D. The full potential\n- E. Stability of the potential\n  - E.1. The stability condition\n  - E.2. Instability of the stabilityCounterExample potential\n  - E.3. The reduced mass term\n  - E.4. The reduced quartic term\n  - E.5. Stability in terms of the gram vectors\n  - E.6. Strong stability implies stability\n  - E.7. Showing step in hep-ph/0605184 is invalid\n\n## iv. References\n\n* For the parameterization of the potential we follow the convention of\n  https://arxiv.org/pdf/1605.03237. [ref: arxiv_1605_03237]\n* Stability arguments of the potential follow, in part, those from\n  https://arxiv.org/abs/hep-ph/0605184, although we note that we explicitly prove that one of\n  the steps in this paper is not valid. [ref: arxiv_hep_ph_0605184]",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 58,
@@ -3100,13 +3141,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 1
   },
   {
    "file": "Physlib/Particles/FlavorPhysics/CKMMatrix/Basic.lean",
    "module": "Physlib.Particles.FlavorPhysics.CKMMatrix.Basic",
    "title": "The CKM Matrix",
    "doc": "The definition of the type of CKM matrices as unitary $3×3$-matrices.\n\nAn equivalence relation on CKM matrices is defined, where two matrices are equivalent if they are\nrelated by phase shifts.\n\nThe notation `[V]ud` etc can be used for the elements of a CKM matrix, and\n`[V]ud|us` etc for the ratios of elements.",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -3471,13 +3514,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Particles/FlavorPhysics/CKMMatrix/Invariants.lean",
    "module": "Physlib.Particles.FlavorPhysics.CKMMatrix.Invariants",
    "title": "Invariants of the CKM Matrix",
    "doc": "The CKM matrix is only defined up to an equivalence.\n\nThis file defines some invariants of the CKM matrix, which are well-defined with respect to\nthis equivalence.\n\nOf note, this file defines the complex jarlskog invariant.",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -3522,13 +3567,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Particles/FlavorPhysics/CKMMatrix/PhaseFreedom.lean",
    "module": "Physlib.Particles.FlavorPhysics.CKMMatrix.PhaseFreedom",
    "title": "Phase freedom of the CKM Matrix",
    "doc": "The CKM matrix is only defined up to an equivalence. This leads to a freedom\nto shift the phases of the matrices elements of the CKM matrix.\n\nIn this file we define two sets of conditions on the CKM matrices\n`fstRowThdColRealCond` which we show can be satisfied by any CKM matrix up to equivalence\nand `ubOnePhaseCond` which we show can be satisfied by any CKM matrix up to equivalence as long as\nthe ub element as absolute value 1.",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -3661,13 +3708,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Particles/FlavorPhysics/CKMMatrix/Relations.lean",
    "module": "Physlib.Particles.FlavorPhysics.CKMMatrix.Relations",
    "title": "Relations for the CKM Matrix",
    "doc": "This file contains a collection of relations and properties between the elements of the CKM\nmatrix.",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -3968,13 +4017,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Particles/FlavorPhysics/CKMMatrix/Rows.lean",
    "module": "Physlib.Particles.FlavorPhysics.CKMMatrix.Rows",
    "title": "Rows for the CKM Matrix",
    "doc": "This file contains the definition extracting the rows of the CKM matrix and\nproves some properties between them.\n\nThe first row can be extracted as `[V]u` for a CKM matrix `V`.",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -4211,13 +4262,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Particles/FlavorPhysics/CKMMatrix/StandardParameterization/Basic.lean",
    "module": "Physlib.Particles.FlavorPhysics.CKMMatrix.StandardParameterization.Basic",
    "title": "Standard parameterization for the CKM Matrix",
    "doc": "This file defines the standard parameterization of CKM matrices in terms of\nfour real numbers `θ₁₂`, `θ₁₃`, `θ₂₃` and `δ₁₃`.\n\nWe will show that every CKM matrix can be written within this standard parameterization\nin the file `FlavorPhysics.CKMMatrix.StandardParameters`.",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -4286,13 +4339,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Particles/FlavorPhysics/CKMMatrix/StandardParameterization/StandardParameters.lean",
    "module": "Physlib.Particles.FlavorPhysics.CKMMatrix.StandardParameterization.StandardParameters",
    "title": "Standard parameters for the CKM Matrix",
    "doc": "Given a CKM matrix `V` we can extract four real numbers `θ₁₂`, `θ₁₃`, `θ₂₃` and `δ₁₃`.\nThese, when used in the standard parameterization return `V` up to equivalence.\n\nThis leads to the theorem `standParam.exists_for_CKMatrix` which says that up to equivalence every\nCKM matrix can be written using the standard parameterization.",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -4817,13 +4872,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Particles/NeutrinoPhysics/Basic.lean",
    "module": "Physlib.Particles.NeutrinoPhysics.Basic",
    "title": "The PMNS matrix",
    "doc": "The definition the PMNS matrix, which describes neutrino oscillations as part of U(3).",
+   "copyright": "2025 Prabhoda Chandra Sarjapur",
    "sections": [],
    "declarations": [
     {
@@ -4940,13 +4997,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Particles/StandardModel/AnomalyCancellation/Basic.lean",
    "module": "Physlib.Particles.StandardModel.AnomalyCancellation.Basic",
    "title": "Anomaly cancellation conditions for the n-family SM.",
    "doc": "We define the ACC system for the Standard Model with`n`-families and no RHN.",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -5167,13 +5226,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Particles/StandardModel/AnomalyCancellation/FamilyMaps.lean",
    "module": "Physlib.Particles.StandardModel.AnomalyCancellation.FamilyMaps",
    "title": "Family maps for the Standard Model ACCs",
    "doc": "We define the a series of maps between the charges for different numbers of families.",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -5234,13 +5295,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Particles/StandardModel/AnomalyCancellation/NoGrav/Basic.lean",
    "module": "Physlib.Particles.StandardModel.AnomalyCancellation.NoGrav.Basic",
    "title": "Anomaly Cancellation in the Standard Model without Gravity",
    "doc": "This file defines the system of anomaly equations for the SM without RHN, and\nwithout the gravitational ACC.",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -5325,13 +5388,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Particles/StandardModel/AnomalyCancellation/NoGrav/One/Lemmas.lean",
    "module": "Physlib.Particles.StandardModel.AnomalyCancellation.NoGrav.One.Lemmas",
    "title": "Lemmas for 1 family SM Accs",
    "doc": "The main result of this file is the conclusion of this paper:\n  [Lohitsiri and Tong][Lohitsiri:2019fuu] [ref: Lohitsiri:2019fuu]\n\nThat every solution to the ACCs without gravity satisfies for free the gravitational anomaly.\n\n## References\n\n* The main result of this file is the conclusion of this paper. [ref: Lohitsiri:2019fuu]",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -5368,13 +5433,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Particles/StandardModel/AnomalyCancellation/NoGrav/One/LinearParameterization.lean",
    "module": "Physlib.Particles.StandardModel.AnomalyCancellation.NoGrav.One.LinearParameterization",
    "title": "Parameterizations for solutions to the linear ACCs for 1 family",
    "doc": "In this file we give two parameterizations\n- `linearParameters` of solutions to the linear ACCs for 1 family\n- `linearParametersQENeqZero` of solutions to the linear ACCs for 1 family with Q and E non-zero\n\n## References\n\n* These parameterizations are based on https://arxiv.org/abs/1907.00514.\n  [ref: Lohitsiri:2019fuu]",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -5595,13 +5662,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Particles/StandardModel/AnomalyCancellation/Permutations.lean",
    "module": "Physlib.Particles.StandardModel.AnomalyCancellation.Permutations",
    "title": "Permutations of SM with no RHN.",
    "doc": "We define the group of permutations for the SM charges with no RHN.",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -5702,13 +5771,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Particles/StandardModel/Fermions/DownSinglet.lean",
    "module": "Physlib.Particles.StandardModel.Fermions.DownSinglet",
    "title": "Down-type singlets",
    "doc": "## i. Overview\n\nThe Standard Model down-type singlet is a right-handed Weyl spinor in the `(3, 1)_{-2}`\nrepresentation. Here charges are normalized as `6Y`, so `-2` is the usual hypercharge\n`Y = -1/3`.\n\n`DownSinglet` is the target vector space of one down-type quark multiplet. Its Weyl factor\ncarries the Lorentz index and its three-dimensional factor carries the colour index. The absence\nof a weak factor makes it an `SU(2)` singlet.\n\nThe Lorentz and gauge actions are first defined separately. The gauge action is then computed on a\nbasis, used to identify its kernel, and descended to each supported global form of the Standard\nModel gauge group.\n\n## ii. Key results\n\n- `DownSinglet` : the target space of the `(3, 1)_{-2}` multiplet.\n- `repLorentzGroup` : the right-handed Lorentz action.\n- `repGaugeGroupI` : the action of the unquotiented gauge group.\n- `repGaugeGroupI_tmul_basis_eq_sum` : the gauge action in a tensor-product basis.\n- `mem_repGaugeGroupI_ker_iff_eq` : the kernel of the full-group action.\n- `gaugeGroup_subgroup_ℤ₆_le_ker_repGaugeGroupI` : triviality of the central `ℤ₆`.\n- `repGaugeGroup` : the action descended to every supported gauge-group quotient.\n\n## iii. Table of contents\n\n- A. The down-singlet space\n- B. Linear structure\n- C. Lorentz action\n- D. Gauge action\n- E. Kernel of the gauge action\n- F. Descent to quotient gauge groups",
+   "copyright": "2026 Nathaneal Sajan",
    "sections": [
     {
      "line": 54,
@@ -5882,13 +5953,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Particles/StandardModel/Fermions/LeptonDoublet.lean",
    "module": "Physlib.Particles.StandardModel.Fermions.LeptonDoublet",
    "title": "Lepton doublets",
    "doc": "## i. Overview\n\nThe Standard Model lepton doublet is a left-handed Weyl spinor in the `(1, 2)_{-3}`\nrepresentation. Here charges are normalized as `6Y`, so `-3` is the usual hypercharge\n`Y = -1/2`.\n\n`LeptonDoublet` is the target vector space of one lepton multiplet. Its Weyl factor\ncarries the Lorentz index and its two-dimensional factor carries the weak index.\nThe absence of a colour factor makes it an `SU(3)` singlet.\n\nThe Lorentz and gauge actions are first defined separately. The gauge action is then\ncomputed on a basis, used to identify its kernel, and descended to each supported global\nform of the Standard Model gauge group.\n\n## ii. Key results\n\n- `LeptonDoublet` : the target space of the `(1, 2)_{-3}` multiplet.\n- `repLorentzGroup` : the left-handed Lorentz action.\n- `repGaugeGroupI` : the action of the unquotiented gauge group.\n- `repGaugeGroupI_tmul_basis_eq_sum` : the gauge action in a tensor-product basis.\n- `mem_repGaugeGroupI_ker_iff_eq` : the kernel of the full-group action.\n- `gaugeGroup_subgroup_ℤ₆_le_ker_repGaugeGroupI` : triviality of the central `ℤ₆`.\n- `repGaugeGroup` : the action descended to every supported gauge-group quotient.\n\n## iii. Table of contents\n\n- A. The lepton-doublet space\n- B. Linear structure\n- C. Lorentz action\n- D. Gauge action\n- E. Kernel of the gauge action\n- F. Descent to quotient gauge groups",
+   "copyright": "2026 Nathaneal Sajan",
    "sections": [
     {
      "line": 54,
@@ -6062,13 +6135,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Particles/StandardModel/Fermions/LeptonSinglet.lean",
    "module": "Physlib.Particles.StandardModel.Fermions.LeptonSinglet",
    "title": "Charged-lepton singlets",
    "doc": "## i. Overview\n\nThe Standard Model charged-lepton singlet is a right-handed Weyl spinor in the `(1, 1)_{-6}`\nrepresentation. Here charges are normalized as `6Y`, so `-6` is the usual hypercharge\n`Y = -1`.\n\n`LeptonSinglet` is the target vector space of one charged-lepton singlet. Its only index is\nthe Lorentz index carried by the Weyl spinor.\n\nThe Lorentz and gauge actions are first defined separately. The gauge action is then computed\non an arbitrary spinor, used to identify its kernel, and descended to each supported global\nform of the Standard Model gauge group.\n\n## ii. Key results\n\n- `LeptonSinglet` : the target space of the `(1, 1)_{-6}` multiplet.\n- `repLorentzGroup` : the right-handed Lorentz action.\n- `repGaugeGroupI` : the action of the unquotiented gauge group.\n- `repGaugeGroupI_apply` : the gauge action on a spinor.\n- `mem_repGaugeGroupI_ker_iff_eq` : the kernel of the full-group action.\n- `gaugeGroup_subgroup_ℤ₆_le_ker_repGaugeGroupI` : triviality of the central `ℤ₆`.\n- `repGaugeGroup` : the action descended to every supported gauge-group quotient.\n\n## iii. Table of contents\n\n- A. The charged-lepton-singlet space\n- B. Linear structure\n- C. Lorentz action\n- D. Gauge action\n- E. Kernel of the gauge action\n- F. Descent to quotient gauge groups",
+   "copyright": "2026 Nathaneal Sajan",
    "sections": [
     {
      "line": 51,
@@ -6242,13 +6317,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Particles/StandardModel/Fermions/QuarkDoublet.lean",
    "module": "Physlib.Particles.StandardModel.Fermions.QuarkDoublet",
    "title": "The type corresponding to quark doublets",
    "doc": "In this module we define the type corresponding to\nthe target vector space of a quark field in the Standard Model.\n\nOn this type we define a representation of the Lorentz group, and a\nrepresentation of the Standard Model gauge group.",
+   "copyright": "2026 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 36,
@@ -6414,13 +6491,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 1
   },
   {
    "file": "Physlib/Particles/StandardModel/Fermions/UpSinglet.lean",
    "module": "Physlib.Particles.StandardModel.Fermions.UpSinglet",
    "title": "Up-type singlets",
    "doc": "In this module we define the type corresponding to\nthe target vector space of an up-type singlet quark field in the Standard Model.\n\nOn this type we define a representation of the Lorentz group, and a\nrepresentation of the Standard Model gauge group.",
+   "copyright": "2026 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 36,
@@ -6586,13 +6665,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Particles/StandardModel/GaugeGroup/Basic.lean",
    "module": "Physlib.Particles.StandardModel.GaugeGroup.Basic",
    "title": "The Standard Model Gauge Group",
    "doc": "The standard model gauge group, `SU(3) x SU(2) x U(1)` and its quotients.\n\n## References\n\n* Baez's Grand Unified Theories notes, cited throughout below. [ref: baez_guts_notes]",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 31,
@@ -7442,13 +7523,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 4
   },
   {
    "file": "Physlib/Particles/StandardModel/GaugeGroup/Unbroken.lean",
    "module": "Physlib.Particles.StandardModel.GaugeGroup.Unbroken",
    "title": "The unbroken gauge group",
    "doc": "We define the gauge group `SU(3) × U(1)_EM` left unbroken by the Higgs vacuum.\n\n## i. Overview\n\nA non-zero Higgs vacuum breaks `SU(3) × SU(2) × U(1)` down to color and electromagnetism,\n`SU(3) × U(1)_EM`. This file defines that group and its inclusion into `GaugeGroupI`.\n\n## ii. Key results\n\n- `UnbrokenGaugeGroupI`: The group `SU(3) × U(1)_EM`.\n- `UnbrokenGaugeGroupI.incl`: Its inclusion `(h, u) ↦ (h, diag(u³, ū³), u)` into `GaugeGroupI`.\n\n## iii. Table of contents\n\n- A. The unbroken gauge group\n\n## iv. References\n\n* Peskin & Schroeder, An Introduction to QFT, chapter 20. [ref: peskin_schroeder_qft]",
+   "copyright": "2026 Luca Mantani",
    "sections": [
     {
      "line": 41,
@@ -7498,13 +7581,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Particles/StandardModel/HiggsBoson/Basic.lean",
    "module": "Physlib.Particles.StandardModel.HiggsBoson.Basic",
    "title": "The Higgs field",
    "doc": "## i. Overview\n\nThe Higgs field describes is the underlying field of the Higgs boson.\nIt is a map from SpaceTime to a 2-dimensional complex vector space.\nIn this module we define the Higgs field and prove some basic properties.\n\n## ii. Key results\n\n- `HiggsVec`: The 2-dimensional complex vector space which is the target space of the Higgs field.\n  This vector space is equipped with an action of the global gauge group of the Standard Model.\n- `HiggsBundle`: The trivial vector bundle over `SpaceTime` with fiber `HiggsVec`.\n- `HiggsField`: The type of smooth sections of the `HiggsBundle`, i.e., the type of Higgs fields.\n- `stabilizer_ofReal`: The stability group of the Higgs vacuum `(0, √a)`, i.e. the gauge\n  group left unbroken by it, is `SU(3) × U(1)_EM`.\n\n## iii. Table of contents\n\n- A. The Higgs vector space\n  - A.1. Definition of the Higgs vector space\n  - A.2. Orthonormal basis\n  - A.3. Generating Higgs vectors from real numbers\n  - A.4. Action of the gauge group on `HiggsVec`\n    - A.4.1. Definition of the representation\n    - A.4.2. Unitary nature of the action\n    - A.4.3. Group properties of the representation applied to vectors\n  - A.5. The Gauge orbit of a Higgs vector\n    - A.5.1. The rotation matrix to ofReal\n    - A.5.2. Members of orbits\n  - A.6. The stability group of a Higgs vector\n  - A.7. The electromagnetic U(1) and the phase of the first component\n  - A.8. To real scalars\n- B. The Higgs bundle\n  - B.1. Definition of the Higgs bundle\n  - B.2. Instance of a vector bundle\n- C. The Higgs fields\n  - C.1. Relations between `HiggsField` and `HiggsVec`\n    - C.1.1. The constant Higgs field\n    - C.1.2. The map from `HiggsField` to `SpaceTime → HiggsVec`\n  - C.2. Smoothness properties of components\n  - C.3. The pointwise inner product\n    - C.3.1. Basic equalities\n    - C.3.2. Symmetry properties\n    - C.3.3. Linearity conditions\n    - C.3.4. Smoothness of the inner product\n  - C.4. The pointwise norm\n    - C.4.1. Basic equalities\n    - C.4.2. Positivity\n    - C.4.3. On the zero section\n    - C.4.4. Smoothness of the norm-squared\n    - C.4.5. Norm-squared of constant Higgs fields\n  - C.5. The action of the gauge group on Higgs fields\n\n## iv. References\n\n* The particle data group has properties of the Higgs boson Review of Particle Physics, PDG.\n  [ref: ParticleDataGroup:2018ovx]",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 84,
@@ -8118,13 +8203,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 5
   },
   {
    "file": "Physlib/Particles/StandardModel/HiggsBoson/EffectivePotential.lean",
    "module": "Physlib.Particles.StandardModel.HiggsBoson.EffectivePotential",
    "title": "The effective potential of the Higgs field",
    "doc": "We define a general effective potential for the Higgs field.\nFor this we define two properties of the potential: invariance under the gauge group, and a\nmaximum mass dimension.\n\nGiven these, we prove that the potential can be expressed as a polynomial in the norm of the\nHiggs field.",
+   "copyright": "2026 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 38,
@@ -8306,13 +8393,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Particles/StandardModel/HiggsBoson/Potential.lean",
    "module": "Physlib.Particles.StandardModel.HiggsBoson.Potential",
    "title": "The potential of the Higgs field",
    "doc": "We define the potential of the Higgs field.\n\nWe show that the potential is a smooth function on spacetime.",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 32,
@@ -8610,13 +8699,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 2
   },
   {
    "file": "Physlib/Particles/StandardModel/Representations.lean",
    "module": "Physlib.Particles.StandardModel.Representations",
    "title": "Representations appearing in the Standard Model",
    "doc": "This file defines the basic representations which appear in the Standard Model.",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -8653,13 +8744,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 1
   },
   {
    "file": "Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/B3.lean",
    "module": "Physlib.Particles.SuperSymmetry.MSSMNu.AnomalyCancellation.B3",
    "title": "The definition of the solution B₃ and properties thereof",
    "doc": "We define `B₃` and show that it is a double point of the cubic.\n\n# References\n\n* The main reference for the material in this file. [ref: Allanach:2021yjy]",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -8696,13 +8789,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/Basic.lean",
    "module": "Physlib.Particles.SuperSymmetry.MSSMNu.AnomalyCancellation.Basic",
    "title": "The MSSM with 3 families and RHNs",
    "doc": "We define the system of ACCs for the MSSM with 3 families and RHNs.\nWe define the system of charges for 1-species. We prove some basic lemmas about them.",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -9107,13 +9202,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/HyperCharge.lean",
    "module": "Physlib.Particles.SuperSymmetry.MSSMNu.AnomalyCancellation.HyperCharge",
    "title": "Hypercharge in MSSM.",
    "doc": "Relevant definitions for the MSSM hypercharge.",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -9134,13 +9231,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/LineY3B3.lean",
    "module": "Physlib.Particles.SuperSymmetry.MSSMNu.AnomalyCancellation.LineY3B3",
    "title": "The line through B₃ and Y₃",
    "doc": "We give properties of lines through `B₃` and `Y₃`. We show that every point on this line\nis a solution to the quadratic `lineY₃B₃Charges_quad` and a double point of the cubic\n`lineY₃B₃_doublePoint`.\n\n# References\n\n* The main reference for the material in this file. [ref: Allanach:2021yjy]",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -9209,13 +9308,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/OrthogY3B3/Basic.lean",
    "module": "Physlib.Particles.SuperSymmetry.MSSMNu.AnomalyCancellation.OrthogY3B3.Basic",
    "title": "The type of solutions perpendicular to `Y₃` and `B₃`",
    "doc": "We define the type of solutions which are orthogonal to `Y₃` and `B₃` and prove some basic lemmas\nabout them.\n\n# References\n\n* The main reference for the material in this file is https://arxiv.org/pdf/2107.07926.pdf.\n  [ref: Allanach:2021yjy]",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -9316,13 +9417,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/OrthogY3B3/PlaneWithY3B3.lean",
    "module": "Physlib.Particles.SuperSymmetry.MSSMNu.AnomalyCancellation.OrthogY3B3.PlaneWithY3B3",
    "title": "Plane Y₃ B₃ and an orthogonal third point",
    "doc": "The plane spanned by Y₃, B₃ and third orthogonal point.\n\n# References\n\n* https://arxiv.org/pdf/2107.07926.pdf. [ref: Allanach:2021yjy]",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -9527,13 +9630,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/OrthogY3B3/ToSols.lean",
    "module": "Physlib.Particles.SuperSymmetry.MSSMNu.AnomalyCancellation.OrthogY3B3.ToSols",
    "title": "From charges perpendicular to `Y₃` and `B₃` to solutions",
    "doc": "The main aim of this file is to take charge assignments perpendicular to `Y₃` and `B₃` and\nproduce solutions to the anomaly cancellation conditions. In this regard we will define\na surjective map `toSol` from `MSSMACC.AnomalyFreePerp × ℚ × ℚ × ℚ` to `MSSMACC.Sols`.\n\nTo define `toSols` we define a series of other maps from various subtypes of\n`MSSMACC.AnomalyFreePerp × ℚ × ℚ × ℚ` to `MSSMACC.Sols`. And show that these maps form a\nsurjection on certain subtypes of `MSSMACC.Sols`.\n\n# References\n\n* The main reference for the material in this file is https://arxiv.org/pdf/2107.07926.pdf.\n  [ref: Allanach:2021yjy]",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -9930,13 +10035,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/Permutations.lean",
    "module": "Physlib.Particles.SuperSymmetry.MSSMNu.AnomalyCancellation.Permutations",
    "title": "Permutations of MSSM charges and solutions",
    "doc": "The three family MSSM charges has a family permutation of S₃⁶. This file defines this group\nand its action on the MSSM.",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -10061,13 +10168,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Particles/SuperSymmetry/MSSMNu/AnomalyCancellation/Y3.lean",
    "module": "Physlib.Particles.SuperSymmetry.MSSMNu.AnomalyCancellation.Y3",
    "title": "The definition of the solution Y₃ and properties thereof",
    "doc": "We define $Y_3$ and show that it is a double point of the cubic.\n\n# References\n\n* The main reference for the material in this file is https://arxiv.org/pdf/2107.07926.pdf.\n  [ref: Allanach:2021yjy]",
+   "copyright": "2024 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [
     {
@@ -10104,13 +10213,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Particles/SuperSymmetry/N1/Basic.lean",
    "module": "Physlib.Particles.SuperSymmetry.N1.Basic",
    "title": "SUSY N=1 chiral sector: index, configuration, and conjugation data",
    "doc": "The index data, field configuration and conjugation of the N=1 chiral sector, as a tensor species.\n\n## i. Overview\n\nThe chiral scalars are indexed by a finite type `ι`, and a configuration is a point of `ι → ℂ`\n(`ChiralScalarConfiguration`). The anti-chiral scalars are the complex conjugates of this\nconfiguration, not independent field data. A tensor index carries one of four colours\n(`ChiralColor`): holomorphic or anti-holomorphic, crossed with up or down. The four colours have\nfour carriers: `chiralUp` the vectors `ι → ℂ`, `chiralDown` their dual, and `antiUp` and\n`antiDown` the conjugate modules of these two (`ConjModule`, in which `i` acts as `−i`).\n\nThe dual colour `τ` flips variance and keeps holomorphy, and two indices contract only when their\ncolours are `τ`-related, so `g^{IJ̄} D_I W D̄_J̄ W̄` type-checks. The conjugate colour `bar` flips\nholomorphy and keeps variance. Contraction is the δ pairing of coordinate vectors: the basis at\n`τ c` is the dual basis of the basis at `c` (`chiralTensor.instHasContrDualBases`), so a\ncontraction is a sum over `ι`. Every colour carries the trivial representation of `Unit`.\n\n`chiralTensor` packages this data as a `ConjTensorSpecies`. It gives the chiral sector the generic\ntensor API, and the conjugation map `conjT` in which reality and Hermiticity are stated.\n\n## ii. Key results\n\n- `SUSY.N1.ChiralScalarConfiguration` : the configuration space `ι → ℂ`.\n- `SUSY.N1.ChiralColor` : the four colours, with the dual involution `ChiralColor.tau`.\n- `SUSY.N1.chiralTensor` : the chiral sector as a `ConjTensorSpecies`.\n- `SUSY.N1.chiralTensor.instHasContrDualBases` : the chiral species has dual bases at dual\n    colours, matched by the identity on `ι`.\n\n## iii. Table of contents\n\n- A. The chiral scalar configuration\n- B. The chiral colours and the dual involution\n- C. Carrier, representation, and basis\n- D. The δ structure on based finite modules\n- E. The chiral-index tensor species\n- F. Conjugation\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Andrea Pari",
    "sections": [
     {
      "line": 63,
@@ -10408,13 +10519,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Particles/SuperSymmetry/N1/Superpotential.lean",
    "module": "Physlib.Particles.SuperSymmetry.N1.Superpotential",
    "title": "SUSY N=1 superpotential",
    "doc": "The superpotential of the N=1 chiral sector, and its gradient as a chiral tensor.\n\n## i. Overview\n\nA superpotential on a domain `D` of configurations is a function `W` that is holomorphic on `D`.\nIt coerces to that function, so `W u` is its value at `u`.\nIts gradient `∂_I W` is the covector of colour `chiralDown` whose components are the holomorphic\nWirtinger derivatives of `W`. The conjugates `W̄` and `∂̄_J̄ W̄` are `star W` and\n`conjChiralCovector` of the gradient.\n\n## ii. Key results\n\n- `SUSY.N1.Superpotential` : a superpotential, holomorphic on a domain.\n- `SUSY.N1.Superpotential.dW` : its gradient, a `chiralDown` covector.\n- `SUSY.N1.Superpotential.repr_dW` : the components of the gradient are `∂_I W`.\n\n## iii. Table of contents\n\n- A. The superpotential\n- B. The gradient\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Andrea Pari",
    "sections": [
     {
      "line": 50,
@@ -10460,13 +10573,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/AllowsTerm.lean",
    "module": "Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.AllowsTerm",
    "title": "Charges allowing terms",
    "doc": "## i. Overview\n\nTo each charge spectrum `x : ChargeSpectrum 𝓩` we say it\nallows the potential term `T : PotentialTerm`, if one of the charges associated with that\npotential term is zero.\n\nWhat this means, is that there is a choice of charges from the charge spectrum `x` that\ncan be assigned to the fields in the potential term `T` such that the total charge is zero,\nand therefore that the term is present in the potential. The presence of\nabsence of certain terms is of phenomenological importance.\n\nThis concept is captured by the proposition `AllowsTerm`.\n\nIn addition to this, for each potential term `T`, we define a function `allowsTermForm`\nwhich takes three elements of `𝓩`, `a`, `b`, and `c` and returns a charge spectrum\nwhich allows the term `T`. We will show in `allowsTerm_iff_subset_allowsTermForm`\nthat any charge spectrum that allows a term `T` has a subset which can be expressed as\n`allowsTermForm a b c T` for some `a`, `b`, and `c`.\n\nWe also define the propositions `AllowsTermQ5 x q5 T` and `AllowsTermQ10 x q10 T`\nwhich correspond to the condition that adding a charge `q5` to the `Q5` charges of\nthe charge spectrum `x`, or adding a charge `q10` to the `Q10` charges of the\ncharge spectrum `x`, leads to a zero charge in the charges of potential term `T`.\n\n## ii. Key results\n\n- `AllowsTerm` : The proposition that a charge spectrum allows a potential term.\n- `allowsTermForm` : A function which for each potential term `T` and three charges\n  `a`, `b`, and `c` returns a charge spectrum which allows the term `T`,\n  and such that any charge spectrum allowing `T` has a subset of this form.\n- `AllowsTermQ5` : The proposition that adding a charge `q5` to the `Q5` charges\n  of a charge spectrum `x` allows the potential term `T` due to the addition of that charge.\n- `AllowsTermQ10` : The proposition that adding a charge `q10` to the `Q10` charges\n  of a charge spectrum `x` allows the potential term `T` due to the addition of that charge.\n\n## iii. Table of contents\n\n- A. Charge spectrums allowing potential terms\n  - A.1. Decidability of `AllowsTerm`\n  - A.2. Monotonicity of `AllowsTerm`\n- B. Forms of charges which allow potential terms\n  - B.1. `allowsTermForm` allows the potential term\n  - B.2. Subset relations for `allowsTermForm`\n  - B.3. Card of `allowsTermForm`\n  - B.4. If `AllowsTerm` then subset equal to `allowsTermForm a b c T`\n  - B.5. `AllowsTerm` if and only if subset equal to `allowsTermForm a b c T`\n  - B.6. Cardinality of subset allowing potential term\n- C. Allowing a potential term by insertion of a `Q5` charge\n  - C.1. Decidability of `AllowsTermQ5`\n  - C.2. AllowsTermQ5 or AllowsTerm from AllowsTerm with inserted of `Q5` charge\n  - C.3. AllowsTerm with inserted of `Q5` charge from AllowsTermQ5\n  - C.4. AllowsTerm with inserted of `Q5` charge iff AllowsTermQ5 or AllowsTerm\n- D. Allowing a potential term by insertion of a `Q10` charge\n  - D.1. Decidability of `AllowsTermQ5`\n  - D.2. AllowsTermQ10 or AllowsTerm from AllowsTerm with inserted of `Q10` charge\n  - D.3. AllowsTerm with inserted of `Q10` charge from AllowsTermQ5\n  - D.4. AllowsTerm with inserted of `Q10` charge iff AllowsTermQ10 or AllowsTerm\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 85,
@@ -10728,13 +10843,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Basic.lean",
    "module": "Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.Basic",
    "title": "Charge Spectrum",
    "doc": "## i. Overview\n\nIn this module we define the charge spectrum of a `SU(5)` SUSY GUT theory with\nadditional charges (usually `U(1)`) valued in `𝓩` satisfying the condition of:\n- The optional existence of a `Hd` particle in the `bar 5` representation.\n- The optional existence of a `Hu` particle in the `5` representation.\n- The optional existence of matter in the `bar 5` representation.\n- The optional existence of matter in the `10` representation.\n\nThe charge spectrum contains the information of the *unique* charges of each type of particle\npresent in theory. Importantly, the charge spectrum does not contain information\nabout the multiplicity of those charges.\n\nWith just the charge spectrum of the theory it is possible to put a number of constraints\non the theory, most notably phenomenological constraints.\n\nBy keeping the presence of `Hd` and `Hu` optional, we can define a number of useful properties\nof the charge spectrum, which can help in searching for viable theories.\n\n## ii. Key results\n\n- `ChargeSpectrum 𝓩` : The type of charge spectra with charges of type `𝓩`, which is usually\n  `ℤ`.\n\n## iii. Table of contents\n\n- A. The definition of the charge spectrum\n  - A.1. Extensionality properties\n  - A.2. Relation to products\n  - A.3. Rendering\n- B. The subset relation\n- C. The empty charge spectrum\n- D. The cardinality of a charge spectrum\n- E. The power set of a charge spectrum\n- F. Finite sets of charge spectra with values\n  - F.1. Cardinality of finite sets of charge spectra with values\n\n## iv. References\n\n* None — these charge spectra were created specifically for the purpose of\n  Physlib; there is no external reference.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 65,
@@ -11132,13 +11249,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Completions.lean",
    "module": "Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.Completions",
    "title": "Completions of charges",
    "doc": "## i. Overview\n\nRecall that a charge spectrum has optional `Hu` and `Hd` charges, and\ncan have an empty set of `5`-bar or `10` charges.\n\nWe say a charge spectrum is complete if it has all types of fields present, i.e.\nthe `Hd` and `Hu` charges are present, and the sets of `5`-bar and `10` charges are non-empty.\n\nGiven a non-complete charge spectrum `x` we can find all the completions of `x`,\nwhich charges in given subsets. That is, all charge spectra `y` which are a super set of `x`,\nare complete, and have their charges in the given subsets.\n\n## ii. Key results\n\n- `IsComplete` : A predicate saying a charge spectrum is complete.\n- `completions` : Given a charge spectrum `x` and finite sets of charges `S5` and `S10`,\n  the multiset of completions of `x` with charges in `S5` and `S10`.\n- `completionsTopYukawa` : A fast version of `completions` for an `x` which is in\n  `minimallyAllowsTermsOfFinset S5 S10 .topYukawa`, or in other words has a `qHu` charge,\n  a non-empty set of `10` charges, but does not have a `qHd` charge or any `5`-bar charges.\n\n## iii. Table of contents\n\n- A. The IsComplete predicate\n  - A.1. The empty spectrum is not complete\n  - A.2. The predicate `IsCompelete` is monotonic\n- B. Multiset of completions\n  - B.1. A membership condition\n  - B.2. No duplicate condition\n  - B.3. Completions of a complete charge spectrum\n  - B.4. Membership of own completions\n  - B.5. Completeness of members of completions\n  - B.6. Subset of members of completions\n- C. Completions for top Yukawa\n  - C.1. No duplicates in completionsTopYukawa\n  - C.2. Equivalence of completions and completionsTopYukawa\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 64,
@@ -11316,13 +11435,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Map.lean",
    "module": "Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.Map",
    "title": "Mapping charge spectra values",
    "doc": "## i. Overview\n\nIn this module we define a function `map` which takes an additive monoid homomorphism\n`f : 𝓩 →+ 𝓩1` and a charge spectra `x : ChargeSpectrum 𝓩`, and returns the charge\n`x.map f : ChargeSpectrum 𝓩1` obtained by mapping the elements of `x` by `f`.\n\nThere are various properties which are preserved under this mapping:\n- The presence of a specific term in the potential.\n- Being complete.\n\nThere are some properties which are reflected under this mapping:\n- Not being pheno-constrained.\n- Not regenerating dangerous Yukawa terms at a given level.\n\nWe define the preimage of this mapping within a subset `ofFinset S5 S10` of `Charges 𝓩` in\na computationally efficient way.\n\n## ii. Key results\n\n- `map` : The mapping of charge spectra under an additive monoid homomorphism.\n- `map_allowsTerm` : If a charge spectrum allows a potential term, then so does its mapping.\n- `map_isPhenoConstrained` : If a charge spectrum is pheno-constrained, then so is its mapping.\n- `map_isComplete_iff` : A charge spectrum is complete if and only if its mapping is complete.\n- `map_yukawaGeneratesDangerousAtLevel` : A charge spectrum regenerates dangerous Yukawa terms\n  at a given level then so does its mapping.\n- `preimageOfFinset` : The preimage of a charge spectrum in `ofFinset S5 S10`\n  under a mapping.\n- `preimageOfFinsetCard` : The cardinality of the preimage of a charge spectrum\n  in `ofFinset S5 S10` under a mapping.\n\n## iii. Table of contents\n\n- A. The mapping of charge spectra\n  - A.1. Mapping the empty charge spectrum gives the empty charge spectrum\n  - A.2. Mapping of charge spectra obeys composing maps\n  - A.3. Mapping of charge spectra obeys the identity\n  - A.4. The charges of a field label commute with mapping of charge spectra\n  - A.5. Mappings of charge spectra preserve the subset relation\n  - A.6. Mappings of charge spectra and charges of potential terms\n  - A.7. Mapping charge spectra of `allowsTermForm\n  - A.8. Mapping preserves whether a charge spectrum allows a potential term\n  - A.9. Mapping preserves if a charge spectrum is pheno-constrained\n  - A.10. Mapping preserves completeness of charge spectra\n  - A.11. Mapping commutes with charges of Yukawa terms\n  - A.12. Mapping of charge spectra and regenerating dangerous Yukawa terms\n- B. Preimage of a charge spectrum under a mapping\n  - B.1. `preimageOfFinset` gives the actual preimage\n  - B.2. Efficient definition for the cardinality of the preimage\n  - B.3. Definition for the cardinality equals cardinality of the preimage\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 80,
@@ -11600,13 +11721,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/Basic.lean",
    "module": "Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.MinimallyAllowsTerm.Basic",
    "title": "Charge spectrum which minimally allows terms",
    "doc": "## i. Overview\n\nWe can say that a charge spectrum `x : ChargeSpectrum 𝓩` minimally allows a potential term\n`T : PotentialTerm` if it allows the term `T` and no strict subset of `x` allows `T`.\n\nThat is to say, you need all of the charges in `x` to allow the term `T`.\n\nWe show that any charge spectrum which allows `T` has a subset which minimally allows `T`.\n\nWe show that every charge spectrum which minimally allows `T` is of the form\n`allowsTermForm a b c T` for some `a b c : 𝓩`, and the reverse is true for\n`T` not equal to `W1` or `W2`.\n\n## ii. Key results\n\n- `MinimallyAllowsTerm` : Predicate on charge spectra which is true if the charge spectrum\n  minimally allows a potential term.\n- `allowsTerm_iff_subset_minimallyAllowsTerm` : A charge spectrum which allows a term\n  has a subset which minimally allows the term, and vice versa.\n- `eq_allowsTermForm_of_minimallyAllowsTerm` : Any charge spectrum which minimally allows a term\n  is of the form `allowsTermForm a b c T` for some `a b c : 𝓩`.\n\n## iii. Table of contents\n\n- A. Charge spectra which minimally allow potential terms\n  - A.1. Decidability of `MinimallyAllowsTerm`\n  - A.2. A charge spectrum which minimally allows a term allows the term\n  - A.3. Spectrum with a subset which minimally allows a term, allows the term\n  - A.4. Minimally allows term iff only member of powerset allowing term\n  - A.5. Minimally allows term iff powerset allowing term has cardinal one\n  - A.6. A charge spectrum which allows a term has a subset which minimally allows the term\n  - A.7. A charge spectrum allows a term iff it has a subset which minimally allows the term\n  - A.8. Cardinality of spectrum which minimally allows term is at most degree of term\n- B. Relation between `MinimallyAllowsTerm` and `allowsTermForm`\n  - B.1. A charge spectrum which minimally allows a term is of the form `allowsTermForm a b c T`\n  - B.2. `allowsTermForm a b c T` minimally allows `T` if `T` is not `W1` or `W2`\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 65,
@@ -11748,13 +11871,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/FinsetTerms.lean",
    "module": "Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.MinimallyAllowsTerm.FinsetTerms",
    "title": "Minimally allows a set of terms",
    "doc": "## i. Overview\n\nIn this module we consider those charge spectra which minimally allow a\nfinite set of potential terms.\nThat is, they those charge spectra which allow each term in the set, but no proper subset of the\ncharge spectra allows each term in that set.\n\nWe have special focus on those charge spectra which minimally allow a top and bottom Yukawa term.\n\n## ii. Key results\n\n- `MinimallyAllowsFinsetTerms`: the proposition that a charge spectrum\n  minimally allows a given finite set of potential terms.\n- `minTopBottom`: a finite set of charge spectra which contains every\n  charge spectrum which minimally allows a top and bottom Yukawa term, given\n  finite sets of possible `5`-bar and `10` charges.\n\n## iii. Table of contents\n\n- A. Charge spectra which minimally allow a finite set of potential terms\n  - A.1. `MinimallyAllowsFinsetTerms`: Prop of minimally allowing a finset of potential terms\n  - A.2. The prop `MinimallyAllowsFinsetTerms` is decidable\n  - A.3. Every element of `MinimallyAllowsFinsetTerms` allows each term in the finset\n  - A.4. `MinimallyAllowsFinsetTerms` for the singleton set is equivalent to `MinimallyAllowsTerm`\n- B. Minimally allowing the top and bottom Yukawa\n  - B.1. Finset of charge spectra containing those which minimally allow top and bottom Yukawa\n  - B.2. Every element of `minTopBottom` allows a top Yukawa\n  - B.3. Every element of `minTopBottom` allows a bottom Yukawa\n  - B.4. Every charge spectrum minimally allowing a top and bottom Yukawa in `minTopBottom`\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 59,
@@ -11864,13 +11989,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimallyAllowsTerm/OfFinset.lean",
    "module": "Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.MinimallyAllowsTerm.OfFinset",
    "title": "The set of charges which minimally allows a potential term",
    "doc": "## i. Overview\n\nIn this module given finite sets for the `5`-bar and `10`d charges `S5` and `S10`\nwe find the sets of charge spectra which minimally allowed a potential term `T`.\nThe set we will actually define will be a multiset, for computational\nefficiency (using multisets saves Lean having to manually check for duplicates,\nwhich can be very costly)\n\nTo do this we define some auxiliary results which create multisets of a given cardinality\nfrom a finset.\n\n## ii. Key results\n\n- `minimallyAllowsTermsOfFinset S5 S10 T` : the multiset of all charge spectra\n  with charges in `S5` and `S10` which minimally allow the potential term `T`.\n- `minimallyAllowsTerm_iff_mem_minimallyAllowsTermOfFinset` : the\n  statement that `minimallyAllowsTermsOfFinset S5 S10 T` contains exactly the charge spectra\n  with charges in `S5` and `S10` which minimally allow the potential term `T`.\n\n## iii. Table of contents\n\n- A. Construction of set of charges which minimally allow a potential term\n  - A.1. Preliminary: Multisets from finite sets\n    - A.1.1. Multisets of cardinality `1`\n    - A.1.2. Multisets of cardinality `2`\n    - A.1.3. Multisets of cardinality `3`\n  - A.2. `minimallyAllowsTermsOfFinset`: the set of charges which minimally allow a potential term\n  - A.3. Showing `minimallyAllowsTermsOfFinset` has charges in given sets\n- B. Proving the `minimallyAllowsTermsOfFinset` is set of charges which minimally allow a term\n  - B.1. An element of `minimallyAllowsTermsOfFinset` is of the form `allowsTermForm`\n  - B.2. Every element of `minimallyAllowsTermsOfFinset` allows the term\n  - B.3. Every element of `minimallyAllowsTermsOfFinset` minimally allows the term\n  - B.4. Every charge spectra which minimally allows term is in `minimallyAllowsTermsOfFinset`\n  - B.5. In `minimallyAllowsTermsOfFinset` iff minimally allowing term\n- C. Other properties of `minimallyAllowsTermsOfFinset`\n  - C.1. Monotonicity of `minimallyAllowsTermsOfFinset` in allowed sets of charges\n  - C.2. Not phenomenologically constrained if in `minimallyAllowsTermsOfFinset` for topYukawa\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 66,
@@ -12068,13 +12195,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/MinimalSuperSet.lean",
    "module": "Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.MinimalSuperSet",
    "title": "Minimal super set",
    "doc": "## i. Overview\n\nThe minimally super set of a spectrum of charges `x` is the finite set of\nspectrums of charges `y` such that `x ⊆ y` and there is no `z` such that `x ⊆ z ⊂ y`.\nThe minimal super set is defined using a finite set of possible charges in the `5`-bar and `10`\nrepresentations of `su(5)`. This is to ensure that the minimal super set is itself finite.\n\nIn this file we define the minimal super set and prove some basic properties of it.\n\n## ii. Key results\n\n- `minimalSuperSet`: the minimal super set of a charge spectrum.\n- `exists_minimalSuperSet`: the existence of a member of the minimal super set\n  between two charge spectra.\n- `subset_insert_filter_card_zero`: a statement related to closure properties of multisets\n  of charge spectra under a proposition `p` satisfying certain properties. The proof\n  of this result relies on induction on minimal super sets.\n\n## iii. Table of contents\n\n- A. The minimal super set\n  - A.1. Members of the minimal super set are super sets\n  - A.2. Self is not a member of the minimal super set\n  - A.3. Cardinality of member of the minimal super set\n  - A.4. Inserting charges and minimal super sets\n  - A.5. Existence of a minimal super set member between two charges\n- B. Induction properties on the minimal super set\n  - B.1. Lifting propositions from minimal super sets to super sets\n  - B.2. Closure of multisets based on proposition for minimal super sets\n  - B.3. Closure of multisets based on propositions\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 58,
@@ -12232,13 +12361,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/OfFieldLabel.lean",
    "module": "Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.OfFieldLabel",
    "title": "Charges associated with a field label",
    "doc": "## i. Overview\n\nRecall that a `FieldLabel` is one of the seven possible superfields in the SU(5) GUT,\ncorresponding to the fields present and their conjugates.\n\nGiven a charge spectrum `x : ChargeSpectrum 𝓩`, we are interested in the finite set of\ncharges carried by representations associated with a given `FieldLabel`.\n\nResults in this module will be used to find the charges associated with\nterms in the potential.\n\n## ii. Key results\n\n- `ofFieldLabel` : Given a charge spectrum `x : ChargeSpectrum 𝓩`,\n  `ofFieldLabel x F` is the finite set of charges associated with representations\n  corresponding to the field label `F`.\n\n## iii. Table of contents\n\n- A. Charges associated with a field label\n  - A.1. The field labels for the empty charge spectrum\n  - A.2. Monotonicity of `ofFieldLabel`\n  - A.3. Membership of conjugate charges\n  - A.4. Extensionality of charge spectra via `ofFieldLabel`\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 54,
@@ -12320,13 +12451,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/OfPotentialTerm.lean",
    "module": "Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.OfPotentialTerm",
    "title": "Charges associated with a potential term",
    "doc": "## i. Overview\n\nIn this module we give the multiset of charges associated with a given type of potential term,\ngiven a charge spectrum.\n\nWe will define two versions of this, one based on the underlying fields on the\npotentials, and the charges that they carry, and one more explicit version which\nis faster to compute with. The former is `ofPotentialTerm`, and the latter is\n`ofPotentialTerm'`.\n\nWe will show that these two multisets have the same elements.\n\n## ii. Key results\n\n- `ofPotentialTerm` : The multiset of charges associated with a potential term,\n  defined in terms of the fields making up that potential term, given a charge spectrum.\n- `ofPotentialTerm'` : The multiset of charges associated with a potential term,\n  defined explicitly, given a charge spectrum.\n\n## iii. Table of contents\n\n- A. Charges of a potential term from field labels\n  - A.1. Monotonicity of `ofPotentialTerm`\n  - A.2. Charges of potential terms for the empty charge spectrum\n- B. Explicit construction of charges of a potential term\n  - B.1. Explicit multisets for `ofPotentialTerm'`\n  - B.2. `ofPotentialTerm'` on the empty charge spectrum\n- C. Relation between two constructions of charges of potential terms\n  - C.1. Showing that `ofPotentialTerm` is a subset of `ofPotentialTerm'`\n  - C.2. Showing that `ofPotentialTerm'` is a subset of `ofPotentialTerm`\n  - C.3. Equivalence of elements of `ofPotentialTerm` and `ofPotentialTerm'`\n  - C.4. Induced monotonicity of `ofPotentialTerm'`\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 63,
@@ -12512,13 +12645,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoClosed.lean",
    "module": "Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.PhenoClosed",
    "title": "Phenomenologically closed sets of charge spectra",
    "doc": "## i. Overview\n\nThe main goal of this file is to prove the lemma\n`completeness_of_isPhenoClosedQ5_isPhenoClosedQ10`, which\nallows us to prove that a multiset of charge spectra contains all\nphenomenologically viable charge spectra, given a finite set of allowed\n`5`-bar and `10`-dimensional.\n\nThis lemma relies on the multiset of charge spectra satisfying a number of conditions,\nwhich include three which are defined in this file: `IsPhenoClosedQ5`, `IsPhenoClosedQ10` and\n`ContainsPhenoCompletionsOfMinimallyAllows`.\n\n## ii. Key results\n\n- `IsPhenoClosedQ5` : The proposition that a multiset of charges is phenomenologically closed\n  under addition of `5`-bar charges from a finite set `S5`.\n- `IsPhenoClosedQ10` : The proposition that a multiset of charges is phenomenologically closed\n  under addition of `10`-dimensional charges from a finite set `S10`.\n- `ContainsPhenoCompletionsOfMinimallyAllows` : The proposition that a multiset of charges\n  contains all phenomenologically viable completions of charge spectra which permit the\n  top Yukawa.\n- `completeMinSubset` : For a given `S5 S10 : Finset 𝓩`,\n  the minimal multiset of charges which satisfies the condition\n  `ContainsPhenoCompletionsOfMinimallyAllows`.\n- `completeness_of_isPhenoClosedQ5_isPhenoClosedQ10` : A lemma for simplifying the proof\n  that a multiset contains all phenomenologically viable charge spectra.\n- `viableChargesMultiset` : A computable multiset containing all phenomenologically viable\n  charge spectra for a given `S5 S10 : Finset 𝓩`.\n\n## iii. Table of contents\n\n- A. Phenomenologically closed under additions of 5-bar charges\n  - A.1. Simplification using pheno-constrained due to additional of 5-bar charge\n- B. Phenomenologically closed under additions of 10d charges\n  - B.1. Simplification using pheno-constrained due to additional of 10d charge\n- C. Prop for multiset containing all pheno-viable completions of charges permitting top Yukawa\n  - C.1. Simplification using fast version of completions of charges permitting top Yukawa\n  - C.2. Decidability of proposition\n  - C.3. Monotonicity of proposition\n  - C.4. `completeMinSubset`: Minimal multiset with viable completions of top-permitting charges\n    - C.4.1. The multiset `completeMinSubset` has no duplicates\n    - C.4.2. The multiset `completeMinSubset` is minimal\n    - C.4.3. The multiset `completeMinSubset` contains all completions\n- D. Multisets containing all pheno-viable charge spectra\n  - D.1. Lemma for simplifying proof that a multiset contains all pheno-viable charge spectra\n  - D.2. Computable multiset containing all pheno-viable charge spectra\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 76,
@@ -12700,13 +12835,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 1
   },
   {
    "file": "Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/PhenoConstrained.lean",
    "module": "Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.PhenoConstrained",
    "title": "Pheno constrained charge spectra",
    "doc": "## i. Overview\n\nWe define a predicate `IsPhenoConstrained` on `ChargeSpectrum 𝓩` which is true if the charge\nspectrum allows any super-potential or Kähler potential term leading to proton decay or\nR-parity violation.\n\nWe prove basic properties of this predicate including monotonicity.\n\nWe define some variations of this result.\n\n## ii. Key results\n\n- `IsPhenoConstrained`: The predicate defining a pheno-constrained charge spectrum\n  as one allowing any term leading to proton decay or R-parity violation.\n- `phenoConstrainingChargesSP`: The multiset of charges of terms in the super-potential\n  leading to a pheno-constrained charge spectrum.\n- `IsPhenoConstrainedQ5`: The predicate defining when a charge spectrum becomes\n  pheno-constrained after adding a single charge to the `Q5` set.\n- `IsPhenoConstrainedQ10`: The predicate defining when a charge spectrum becomes\n  pheno-constrained after adding a single charge to the `Q10` set.\n\n## iii. Table of contents\n\n- A. Phenomenological constrained charge spectra\n  - A.1. Decidability of `IsPhenoConstrained`\n  - A.2. The empty charge spectrum is not pheno-constrained\n  - A.3. Monotonicity of being pheno-constrained\n- B. Charges of pheno-constraining terms in the super potential\n  - B.1. The empty charge spectrum has an empty set of pheno-constraining term charges\n  - B.2. The charges of pheno-constraining terms in the SP is monotone\n- C. Phenomenologically constrained charge spectra after adding a single Q5 charge\n  - C.2. Reducing the condition `IsPhenoConstrainedQ5`\n  - C.3. Decidability of `IsPhenoConstrainedQ5`\n  - C.4. Charge spectra with added `Q5` charge is pheno-constrained iff\n- D. Phenomenologically constrained charge spectra after adding a single Q10 charge\n  - D.2. Reducing the condition `IsPhenoConstrainedQ10`\n  - D.3. Decidability of `IsPhenoConstrainedQ10`\n  - D.4. Charge spectra with added `Q10` charge is pheno-constrained iff\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 68,
@@ -12892,13 +13029,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/Yukawa.lean",
    "module": "Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.Yukawa",
    "title": "Yukawa charges",
    "doc": "## i. Overview\n\nIn this module we look at the charges associated with the Yukawa terms\nin the super potential, and when they can regenerate\nphenomenologically constrained super-potential terms at different levels.\n\nWe do not not consider the regeneration of terms in the Kähler potential within\nthis module.\n\n## ii. Key results\n\n- `ofYukawaTerms`: the multiset of charges associated with the Yukawa terms\n- `ofYukawaTermsNSum`: the multiset of charges associated with up-to `n` copies of the Yukawa terms\n  or equivalently the charges of singlet insertions needed to regenerate Yukawa terms.\n- `YukawaGeneratesDangerousAtLevel`: the proposition that a charge spectrum regenerates a\n  phenomenologically constrained term in the super-potential\n  with up-to `n` insertions of singlets needed to regenerate\n  the Yukawa terms.\n\n## iii. Table of contents\n\n- A. Charges of the Yukawa terms\n  - A.1. Monotonicity of charges of the Yukawa terms\n  - A.2. upto n-copies of charges of the Yukawa terms (aka charges of singlet insertions)\n  - A.3. Monotonicity of set of charges of upto n-copies of the Yukawa terms\n- B. Regeneration of phenomenologically constrained terms via upto n Yukawa singlet insertions\n  - B.1. Decidability of `YukawaGeneratesDangerousAtLevel`\n  - B.2. Simplifications of condition for regenerating dangerous terms\n  - B.3. Empty charge spectrum does not regenerate dangerous terms\n  - B.4. Monotonicity of regeneration of dangerous terms in charge spectra\n  - B.5. Monotonicity of regeneration of dangerous terms in level\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 59,
@@ -13048,13 +13187,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Particles/SuperSymmetry/SU5/ChargeSpectrum/ZMod.lean",
    "module": "Physlib.Particles.SuperSymmetry.SU5.ChargeSpectrum.ZMod",
    "title": "Charge spectra with values in `ZMod n`",
    "doc": "## i. Overview\n\nThe way that we have defined `ChargeSpectrum` means we can consider values\nof charges which are not only elements of `ℤ`, but also elements of other types.\n\nIn this file we will consider `ChargeSpectrum` which have values in `ZMod n` for various\nnatural numbers `n`, as well as charge spectra with values in `ZMod n × ZMod m`.\n\nIn this file we focus on 4-insertions of singlets to be phenomenologically viable.\nIn other files we usually just consider one.\n\n## ii. Key results\n\n- `ZModCharges n` : The finite set of `ZMod n` valued charges which are complete,\n  not pheno-constrained and don't regenerate dangerous couplings\n  with the Yukawa term up-to 4-inserstions of singlets.\n- `ZModZModCharges m n` : The finite set of `ZMod n × ZMod m` valued charges which are complete,\n  not pheno-constrained and don't regenerate dangerous couplings\n  with the Yukawa term up-to 4-inserstions of singlets.\n\n## iii. Table of contents\n\n- A. The finite set of viable `ZMod n` charge spectra\n  - A.1. General construction\n  - A.2. Finite set of viable `ZMod 1` charge spectra is empty\n  - A.3. Finite set of viable `ZMod 2` charge spectra is empty\n  - A.4. Finite set of viable `ZMod 3` charge spectra is empty\n  - A.5. Finite set of viable `ZMod 4` has four elements\n  - A.6. Finite set of viable `ZMod 5` charge spectra is empty (pseudo result)\n  - A.7. Finite set of viable `ZMod 6` charge spectra is non-empty (pseudo result)\n- B. The finite set of viable `ZMod n × ZMod m` charge spectra\n  - B.1. General construction\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 65,
@@ -13164,13 +13305,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Particles/SuperSymmetry/SU5/FieldLabels.lean",
    "module": "Physlib.Particles.SuperSymmetry.SU5.FieldLabels",
    "title": "The field labels",
    "doc": "## i. Overview\n\nTo each field and it's conjugate in the `SU(5)` SUSY GUT we assign a label,\nnamely an element of the inductive type `FieldLabel`.\n\nThis field label will be used to specify the representations of fields present in\nterms of the lagrangian.\n\n## ii. Key results\n\nThe key results are\n- `FieldLabel` : the inductive type of field labels.\n- `FieldLabel.RParity` : the R-parity of a field label, being `1` if it is in\n  the non-trivial representation and `0` otherwise.\n\n## iii. Table of contents\n\n- A. The field labels\n- B. R-parity of a field label\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 44,
@@ -13208,13 +13351,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Particles/SuperSymmetry/SU5/Potential.lean",
    "module": "Physlib.Particles.SuperSymmetry.SU5.Potential",
    "title": "Potential of the SU(5) + U(1) GUT",
    "doc": "## i. Overview\n\nIn this module we will write down some of the potential terms appearing in\nan `SU(5)` SUSY GUT model, with matter in the 5-bar and 10d representations.\n\nA future iteration of this file will include all terms,\nand derive them from symmetry properties.\n\nThe terms of the super-potential we will consider are:\n`W ⊃ μ 5Hu 5̄Hd + 𝛽ᵢ 5̄Mⁱ5Hu + 𝜆ᵢⱼₖ 5̄Mⁱ 5̄Mʲ 10ᵏ + W¹ᵢⱼₖₗ 10ⁱ 10ʲ 10ᵏ 5̄Mˡ`\n`+ W²ᵢⱼₖ 10ⁱ 10ʲ 10ᵏ 5̄Hd + W³ᵢⱼ 5̄Mⁱ 5̄Mʲ 5Hu 5Hu + W⁴ᵢ 5̄Mⁱ 5̄Hd 5Hu 5Hu`\n\nThe terms of the Kahler potential are:\n`K ⊃ K¹ᵢⱼₖ 10ⁱ 10ʲ 5Mᵏ + K²ᵢ 5̄Hu 5̄Hd 10ⁱ`\n\n## ii. Key results\n\n- `PotentialTerm` : The inductive type indexing the potential terms.\n- `violateRParity` : The finite set of terms which violate R-parity.\n  `β`, `λ`, `W²`, `W⁴`, `K¹`, `K²`\n- `causeProtonDecay` : The finite set of terms which contribute to proton decay.\n  `W¹`, `W²`, `K¹`, `λ`\n\n## iii. Table of contents\n\n- A. The definition of `PotentialTerm`\n- B. Relation to field labels\n- C. Presence in the super-potential\n  - C.1. In super potential implies no conjugate fields\n- D. Degree of the potential term\n- E. R-parity of the potential terms\n- F. Terms which violate proton decay\n\n## iv. References\n\n* The main reference for the terms, and notation used in this module is: arXiv:0912.0853 A previous\n  version of this code was replaced in PR#569. [ref: arxiv_0912_0853]",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 59,
@@ -13328,7 +13473,8 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   }
  ]
 }

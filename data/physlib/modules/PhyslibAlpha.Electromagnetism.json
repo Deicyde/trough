@@ -7,6 +7,7 @@
    "module": "PhyslibAlpha.Electromagnetism.BoxChargeConservation",
    "title": "Charge conservation on a box from Maxwell's equations",
    "doc": "## i. Overview\n\nLet `V` be an electromagnetic potential and `J₄` a Lorentz current density such that `V` is an\nextremum of the free-space action with source `J₄`, i.e. Maxwell's equations hold. Taking the\ndivergence of Ampère's law, the divergence of the curl of the magnetic field vanishes, and the\ndivergence of the displacement current is, by Gauss's law, the time derivative of the charge\ndensity. This gives the continuity equation `∂ₜ ρ + ∇ ⬝ J = 0`.\n\nIntegrating the continuity equation over a coordinate box `[a, b]` and applying the divergence\ntheorem, the net current leaving the box equals minus the rate of change of the charge it\ncontains. In particular, if no charge accumulates inside the box, the currents leaving through\nits six faces sum to zero.\n\nThis is motivated by Kirchhoff's current law, but is not that law: Kirchhoff's current law is a\nstatement about the branch currents meeting at the nodes of a lumped-element circuit, whereas\nthe results here are the integral form of charge conservation on a single box.\n\n## ii. Key results\n\n- `Space.integral_div_box` : the divergence theorem on a coordinate box in `Space`.\n- `Electromagnetism.ThreeDimension.continuityEquation` : the continuity equation.\n- `Electromagnetism.LorentzCurrentDensity.boxFaceCurrent`,\n  `Electromagnetism.LorentzCurrentDensity.boxOutwardCurrent` : the current through a face of a\n  coordinate box, and the net current leaving the box.\n- `Electromagnetism.ThreeDimension.boxOutwardCurrent_eq` : the integral form of charge\n  conservation.\n- `Electromagnetism.ThreeDimension.boxOutwardCurrent_eq_zero_of_steady` : the net current\n  leaving a box in which no charge accumulates is zero.\n\n## iii. Table of contents\n\n- A. Vector calculus on `Space`\n  - A.1. Time derivatives and the divergence\n  - A.2. Smoothness of the curl\n  - A.3. The divergence theorem on a coordinate box\n- B. The continuity equation\n  - B.1. The continuity equation from Gauss's and Ampère's laws\n  - B.2. The continuity equation for an electromagnetic potential\n- C. Charge conservation on a box\n  - C.1. Currents through a box\n  - C.2. The integral form of charge conservation\n  - C.3. Steady charge in a box\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 70,
@@ -140,13 +141,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/Electromagnetism/TemperedDistributional/WireJunction.lean",
    "module": "PhyslibAlpha.Electromagnetism.TemperedDistributional.WireJunction",
    "title": "Junctions of thin wires",
    "doc": "## i. Overview\n\nLet `A` be a distributional electromagnetic potential and `J` a distributional Lorentz current\ndensity such that Maxwell's equations hold, `IsExtrema 𝓕 A J`. Taking the divergence of\nAmpère's law and using Gauss's law gives the continuity equation `∂ₜ ρ + ∇ ⬝ J = 0` as an\nequation of distributions.\n\nDistributions allow currents to be carried by thin wires. A junction is modelled by finitely\nmany straight, semi-infinite wires leaving the origin in the directions `u k`, carrying steady\ncurrents `I k`. The divergence of such a current density is `(∑ k, I k) δ₀`: the wires end at\nthe origin, where the currents must come from somewhere. If no charge accumulates, the\ncontinuity equation forces `∑ k, I k = 0`.\n\nThis is motivated by Kirchhoff's current law, of which it is a special case: a single node with\nsteady currents, rather than the branch currents at every node of a lumped-element circuit.\n\n## ii. Key results\n\n- `Electromagnetism.TempDistElectromagneticPotential.continuityEquation` : the continuity equation\n  for distributions.\n- `Electromagnetism.TempDistLorentzCurrentDensity.IsWireJunction` : the current density of a\n  junction of thin wires.\n- `Electromagnetism.TempDistLorentzCurrentDensity.IsWireJunction.distSpaceDiv_currentDensity` : the\n  divergence of the current density of a junction.\n- `Electromagnetism.TempDistLorentzCurrentDensity.IsWireJunction.sum_currents_eq_zero` : the\n  currents leaving a junction of thin wires sum to zero.\n\n## iii. Table of contents\n\n- A. Analysis on `Space`\n  - A.1. Time derivatives and the divergence of distributions\n  - A.2. Schwartz functions along a ray\n  - A.3. Integrating test functions over time\n- B. The continuity equation\n- C. Junctions of thin wires\n  - C.1. The current density of a junction\n  - C.2. The currents at a junction sum to zero\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Joseph Tooby-Smith",
    "sections": [
     {
      "line": 64,
@@ -256,7 +259,8 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   }
  ]
 }

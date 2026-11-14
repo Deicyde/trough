@@ -212,8 +212,7 @@ lemma reindex_inner (e : d ≃ d₂) (B : HermitianMat d₂ 𝕜) :
     ⟪A.reindex e, B⟫ = ⟪A, B.reindex e.symm⟫
 ```
 
-> Theorems about `HermitianMat`s that have to do with the topological structure. Pretty much everything here will
-> assume these are matrices over ℂ, but changes to upgrade this to other types are welcome.
+> Theorems about `HermitianMat`s that have to do with the topological structure. …
 
 **`HermitianMat.inner_continuous`**, a lemma, [line 289](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/QuantumInfo/ForMathlib/HermitianMat/Inner.lean#L289).
 

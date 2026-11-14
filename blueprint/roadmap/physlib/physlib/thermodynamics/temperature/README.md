@@ -2,7 +2,7 @@
 
 The folder [Physlib/Thermodynamics/Temperature/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Thermodynamics/Temperature): 2 modules, an article each, in path order with Basic.lean first in its folder.
 
-The repository's API map for this folder, *Temperature* ([Physlib/Thermodynamics/Temperature/API-map.md](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Thermodynamics/Temperature/API-map.md)), with the sentences it marks as not yet formalized left out (…). A citation \[n\] links the module its n-th Lean reference names.
+The repository's API map for this folder, *Temperature* ([Physlib/Thermodynamics/Temperature/API-map.md](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Thermodynamics/Temperature/API-map.md)): its Content section, with the sentences it marks as not yet formalized left out (…). A citation \[n\] links the module its n-th Lean reference names.
 
 *Content (Alpha)*
 

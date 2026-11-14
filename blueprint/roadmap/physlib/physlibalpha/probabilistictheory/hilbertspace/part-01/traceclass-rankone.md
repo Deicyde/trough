@@ -8,7 +8,7 @@ proof: formalized
 
 # Rank-one positive operators
 
-The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.TraceClass.RankOne`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/RankOne.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/RankOne.lean): 4 declarations, 0 with a docstring.
+The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.TraceClass.RankOne`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/RankOne.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/TraceClass/RankOne.lean): 4 declarations, none with a docstring.
 
 > The rank-one operator `|x⟩⟨x|` is trace class with trace and trace norm `‖x‖²`.
 

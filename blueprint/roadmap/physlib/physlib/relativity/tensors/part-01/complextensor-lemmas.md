@@ -8,7 +8,7 @@ proof: formalized
 
 # Physlib.Relativity.Tensors.ComplexTensor.Lemmas
 
-The module `Physlib.Relativity.Tensors.ComplexTensor.Lemmas`, [Physlib/Relativity/Tensors/ComplexTensor/Lemmas.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/ComplexTensor/Lemmas.lean): 1 declaration, 0 with a docstring.
+The module `Physlib.Relativity.Tensors.ComplexTensor.Lemmas`, [Physlib/Relativity/Tensors/ComplexTensor/Lemmas.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/Tensors/ComplexTensor/Lemmas.lean): 1 declaration, none with a docstring.
 
 ## Lemmas related to complex Lorentz tensors.
 

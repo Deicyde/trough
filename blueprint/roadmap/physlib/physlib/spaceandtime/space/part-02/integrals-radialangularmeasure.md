@@ -17,7 +17,7 @@ The module `Physlib.SpaceAndTime.Space.Integrals.RadialAngularMeasure`, [Physlib
 > is the measure `dr dΩ`, cancelling the radius contribution from the measure in spherical
 > coordinates.
 >
-> This file is equivalent to `invPowMeasure`, which will slowly be deprecated.
+> …
 
 ## ii. Key results
 

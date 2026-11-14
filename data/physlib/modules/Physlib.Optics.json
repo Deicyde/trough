@@ -7,16 +7,19 @@
    "module": "Physlib.Optics.Basic",
    "title": "Optics",
    "doc": "This directory is currently a place holder.\nPlease feel free to contribute!\n\nSome directories which are NOT currently place holders are:\n- Mathematics\n- Meta\n- Particles\n- QFT\n- Quantum Mechanics\n- Relativity",
+   "copyright": "2025 Joseph Tooby-Smith",
    "sections": [],
    "declarations": [],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Optics/Frequency.lean",
    "module": "Physlib.Optics.Frequency",
    "title": "Frequency",
    "doc": "In this module we define the type `Frequency`, corresponding to the frequency of a wave\ncarrying the dimension of inverse time.\n\n## i. Overview\n\nThe type `Frequency` is `WithDim T𝓭⁻¹ ℝ≥0`, i.e., a nonnegative real number tagged with\nthe dimension of inverse time.\n\n## ii. Key results\n\n- `Frequency` : The type of frequencies of waves.\n\n## iii. Table of contents\n\n- A. The Frequency type\n\n## iv. References\n\n- https://en.wikipedia.org/wiki/Frequency\n- https://en.wikipedia.org/wiki/Wavelength",
+   "copyright": "2026 Samyak Rai",
    "sections": [
     {
      "line": 41,
@@ -34,23 +37,27 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Optics/Polarization/Basic.lean",
    "module": "Physlib.Optics.Polarization.Basic",
    "title": "Polarization",
    "doc": "In this file the real representation is used to develop representations of polarizations\nsuch as the polarization ellipse, Stokes parameters and the Poincaré sphere for monochromatic\ntime-harmonic electromagnetic plane waves.\n\nMore general definitions that can be applied to a wider range of situations will be shown to\nbe equivalent to the definitions in this file where appropriate.\n\nThe material that was in this file has been moved to\n`Physlib.Electromagnetism.Vacuum.HarmonicWave` for better organization.\nThis file is kept because there is still some material to be added here in the future.",
+   "copyright": "2025 Zhi Kai Pong",
    "sections": [],
    "declarations": [],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "Physlib/Optics/Wavelength.lean",
    "module": "Physlib.Optics.Wavelength",
    "title": "Wavelength",
    "doc": "In this module we define the type `Wavelength`, corresponding to the wavelength of a wave\ncarrying the dimension of length, and relate it to the type `Frequency` through the\npropagation speed of the wave via the relation `c = λ * ν`.\n\n## i. Overview\n\nThe type `Wavelength` is `WithDim L𝓭 ℝ≥0`, i.e., a nonnegative real number tagged with\nthe dimension of length.\n\nFor a wave of frequency `ν > 0` propagating at a speed `c` (e.g. the speed of light),\nthe associated wavelength is `λ = c / ν`, and conversely a wave of wavelength `λ > 0`\nhas frequency `ν = c / λ`. These two constructions are inverse to one another.\n\n## ii. Key results\n\n- `Wavelength` : The type of wavelengths of waves.\n- `Wavelength.ofFrequency` : The wavelength `c / ν` associated with a positive frequency.\n- `Frequency.ofWavelength` : The frequency `c / λ` associated with a positive wavelength.\n- `Wavelength.ofFrequency_mul` : The relation `λ * ν = c`.\n- `Frequency.ofWavelength_mul` : The relation `ν * λ = c`.\n- `Wavelength.ofFrequency_ofWavelength` and `Frequency.ofWavelength_ofFrequency` : The\n  two constructions are inverse to one another.\n- `Wavelength.ofFrequency_scaleUnit` and `Frequency.ofWavelength_scaleUnit` : The\n  constructions commute with changes of units.\n- `speedEqWavelengthMulFrequency_isDimensionallyCorrect` : The relation `c = λ * ν` is\n  dimensionally correct.\n\n## iii. Table of contents\n\n- A. The Wavelength type\n- B. Wavelength from frequency\n- C. Frequency from wavelength\n- D. Round trips\n- E. Dimensional correctness\n\n## iv. References\n\n- https://en.wikipedia.org/wiki/Wavelength",
+   "copyright": "2026 Samyak Rai",
    "sections": [
     {
      "line": 60,
@@ -196,7 +203,8 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   }
  ]
 }

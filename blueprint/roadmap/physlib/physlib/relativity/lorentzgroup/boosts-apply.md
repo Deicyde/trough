@@ -8,7 +8,7 @@ proof: formalized
 
 # Physlib.Relativity.LorentzGroup.Boosts.Apply
 
-The module `Physlib.Relativity.LorentzGroup.Boosts.Apply`, [Physlib/Relativity/LorentzGroup/Boosts/Apply.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/LorentzGroup/Boosts/Apply.lean): 4 declarations, 0 with a docstring.
+The module `Physlib.Relativity.LorentzGroup.Boosts.Apply`, [Physlib/Relativity/LorentzGroup/Boosts/Apply.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Relativity/LorentzGroup/Boosts/Apply.lean): 4 declarations, none with a docstring.
 
 ## Boosts applied to Lorentz vectors
 

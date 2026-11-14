@@ -8,7 +8,7 @@ proof: formalized
 
 # Dimensions and unit
 
-The module `Physlib.Units.Basic`, [Physlib/Units/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Units/Basic.lean): 47 declarations (3 instances with no name), 19 with a docstring.
+The module `Physlib.Units.Basic`, [Physlib/Units/Basic.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Units/Basic.lean): 48 declarations (3 instances with no name), 20 with a docstring.
 
 > A unit in physics arises from choice of something in physics which is non-canonical.
 > An example is the choice of translationally-invariant metric on the time manifold `TimeMan`.
@@ -385,6 +385,15 @@ class HasDim (M : Type) where
 
 ```lean
 alias dim
+```
+
+**`CarriesDimension`**, a class, [line 372](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/Units/Basic.lean#L372).
+
+> A type `M` carries a dimension `d` if every element of `M` is supposed to have
+> this dimension. For example, the type `Time` will carry a dimension `T𝓭`.
+
+```lean
+class abbrev CarriesDimension (M : Type) := HasDim M, MulAction ℝ≥0ˣ M
 ```
 
 ## Terms of the current dimension

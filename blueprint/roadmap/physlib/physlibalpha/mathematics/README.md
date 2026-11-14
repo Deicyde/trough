@@ -1,6 +1,6 @@
 # Mathematics
 
-The folder [PhyslibAlpha/Mathematics/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics): 17 modules, an article each, in path order with Basic.lean first in its folder; then 16 folders below it, a page each, 140 modules in all.
+The folder [PhyslibAlpha/Mathematics/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics): 17 modules, an article each, in path order; then 16 folders below it, a page each, 140 modules in all.
 
 ## [Relations checked on generators to Convex](part-01/README.md)
 

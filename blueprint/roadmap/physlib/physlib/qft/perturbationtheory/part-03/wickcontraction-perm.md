@@ -14,13 +14,6 @@ The module `Physlib.QFT.PerturbationTheory.WickContraction.Perm`, [Physlib/QFT/P
 > if the Wick term they produce is equal.
 >
 > …
->
-> The long term aim is to simplify this condition as much as possible,
-> so that it can eventually be made decidable.
->
-> It should become apparent that two Wick contractions are permutations of each other
-> if they correspond to the same Feynman diagram.
-> Please speak to JTS before working in this direction.
 
 **`WickContraction.Perm`**, a def, [line 43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/PerturbationTheory/WickContraction/Perm.lean#L43).
 

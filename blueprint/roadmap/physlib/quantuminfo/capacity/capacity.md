@@ -41,26 +41,7 @@ The module `QuantumInfo.Capacity.Capacity`, [QuantumInfo/Capacity/Capacity.lean]
 >  * `bddAbove_achievesRate`: A channel C : dimX → dimY cannot achievesRate R with
 >    `R > log2(min(dimX, dimY))`. Thus, the interval is `BddAbove`.
 >
-> The nice lemmas we would want:
->  * Capacity of a replacement channel is zero.
->  * Capacity of an identity channel is `log2(D)`.
->  * Capacity is superadditive under tensor products. (That is, at least additive. Showing that
->    it isn't \_exactly\_ additive, unlike classical capacity which is additive, is a much harder
->    task.)
->  * Capacity of a kth tensor power is exactly k times the capacity of the original channel.
->  * Capacity does not decrease under tensor sums.
->  * Capacity does not increase under composition.
->
-> Then, we should show that our definition is equivalent to some above. Most, except (3), should
-> be not too hard to prove.
->
-> Then the LSD theorem establishes that the single-copy coherent information is a lower bound.
-> This is stated in `coherentInfo_le_quantumCapacity`. The corollary, that the n-copy coherent
-> information converges to the capacity, is `quantumCapacity_eq_piProd_coherentInfo`.
->
 > …
->
-> And other important theorems like superdense coding, nonadditivity, superactivation.
 
 ## iv. References
 

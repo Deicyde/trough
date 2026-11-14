@@ -7,6 +7,7 @@
    "module": "QuantumInfo.States.Ensemble",
    "title": "",
    "doc": "",
+   "copyright": "2025 Leonardo A Lessa",
    "sections": [],
    "declarations": [
     {
@@ -315,13 +316,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/States/Entanglement.lean",
    "module": "QuantumInfo.States.Entanglement",
    "title": "",
    "doc": "Entanglement measures. (Mixed) convex roof extensions. Definition of product / separable / entangled states\nare in `Braket.lean` and/or `MState.lean`\n\nImportant definitions:\n * `convex_roof`: Convex roof extension of `g : KetUpToPhase d → ℝ≥0`\n * `mixed_convex_roof`: Mixed convex roof extension of `f : MState d → ℝ≥0`\n * `EoF`: Entanglement of Formation\n\nTODO:\n - Other entanglement measures (not necessarily based on convex roof extensions). In roughly increasing order of\n   difficulty to implement: (Logarithmic) Negativity, Entanglement of Purification, Squashed Entanglement, Relative\n   Entropy of Entanglement, Entanglement Cost, Distillable Entanglement.\n   For a compendium on the zoo of entanglement measures, see\n   [1] Christandl, Matthias. “The Structure of Bipartite Quantum States - Insights from Group Theory and Cryptography.”\n       https://doi.org/10.48550/arXiv.quant-ph/0604183.\n - Define classes of entanglement measures with good properties, including: monotonicity under LOCC (easier: just LO),\n   monotonicity on average under LOCC, convexity (if the latter two are present, it is called an entanglement monotone\n   by some), vanishing on separable states, normalized on the maximally entangled state, (sub)additivity, regularisible.\n   For other properties, see [1] above and:\n   [2] Szalay, Szilárd. “Multipartite Entanglement Measures.” (mainly Sec. IV)\n       https://doi.org/10.1103/PhysRevA.92.042329.\n   [3] Horodecki, Ryszard, Paweł Horodecki, Michał Horodecki, and Karol Horodecki. “Quantum Entanglement.”\n       https://doi.org/10.1103/RevModPhys.81.865.\n - Useful properties of convex roof extensions:\n   1. If f is monotonically non-increasing under LOCC, so is its convex roof.\n   2. If f ψ is zero if and only if ψ is a product state, then its convex roof is faithful: zero if and only if\n      the mixed state is separable\n   For other properties, see Sec. IV.F of [2] above.",
+   "copyright": "2025 Leonardo A Lessa",
    "sections": [],
    "declarations": [
     {
@@ -502,13 +505,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/States/Mixed/Fidelity.lean",
    "module": "QuantumInfo.States.Mixed.Fidelity",
    "title": "",
    "doc": "",
+   "copyright": "2025 Alex Meiburg",
    "sections": [],
    "declarations": [
     {
@@ -577,13 +582,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 1
   },
   {
    "file": "QuantumInfo/States/Mixed/MState.lean",
    "module": "QuantumInfo.States.Mixed.MState",
    "title": "",
    "doc": "Finite dimensional quantum mixed states, ρ.\n\nThe same comments apply as in `Braket`:\n\nThese could be done with a Hilbert space of Fintype, which would look like\n```lean4\n(H : Type*) [NormedAddCommGroup H] [InnerProductSpace ℂ H] [CompleteSpace H] [FiniteDimensional ℂ H]\n```\nor by choosing a particular `Basis` and asserting it is `Fintype`. But frankly it seems easier to\nmostly focus on the basis-dependent notion of `Matrix`, which has the added benefit of an obvious\n\"classical\" interpretation (as the basis elements, or diagonal elements of a mixed state). In that\nsense, this quantum theory comes with the a particular classical theory always preferred.\n\nImportant definitions:\n * `instMixable`: the `Mixable` instance allowing convex combinations of `MState`s\n * `ofClassical`: Mixed states representing classical distributions\n * `purity`: The purity `Tr[ρ^2]` of a state\n * `spectrum`: The spectrum of the matrix\n * `uniform`: The maximally mixed state\n * `mix`: The total state corresponding to an ensemble\n * `average`: Averages a function over an ensemble, with appropriate weights",
+   "copyright": "2025 Alex Meiburg",
    "sections": [],
    "declarations": [
     {
@@ -1644,13 +1651,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/States/Mixed/TraceDistance.lean",
    "module": "QuantumInfo.States.Mixed.TraceDistance",
    "title": "",
    "doc": "",
+   "copyright": "2025 Alex Meiburg",
    "sections": [],
    "declarations": [
     {
@@ -1703,13 +1712,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/States/Pure/BargmannInvariant.lean",
    "module": "QuantumInfo.States.Pure.BargmannInvariant",
    "title": "Bargmann Invariant and Geometric Phase",
    "doc": "The Bargmann invariant for three quantum states is the cyclic product\nof inner products `⟨ψ₁|ψ₂⟩ · ⟨ψ₂|ψ₃⟩ · ⟨ψ₃|ψ₁⟩`. Its argument is\nthe geometric (Pancharatnam-Berry) phase accumulated around the\ngeodesic triangle in projective Hilbert space.\n\n## Important definitions\n * `bargmannInvariantThree`: the 3-vertex Bargmann invariant `Δ₃`\n * `bargmannPhaseThree`: the geometric phase `arg(Δ₃)`\n\n## Important results\n * `bargmannInvariantThree_degenerate`: identical states give `Δ₃ = 1`\n * `bargmannPhaseThree_degenerate`: identical states give phase `= 0`\n * `bargmannInvariantThree_reverse`: reversing conjugates `Δ₃`\n * `bargmannPhaseThree_reverse`: reversing negates the phase (mod 2π)\n * `bargmannInvariantThree_cyclic`: cyclic permutation preserves `Δ₃`\n * `bargmannPhaseThree_cyclic`: cyclic permutation preserves the phase\n * `norm_bargmannInvariantThree_le_one`: `‖Δ₃‖ ≤ 1` (via `Braket.norm_dot_le_one`)\n\n## References\n\n* V. Bargmann, Note on Wigner's theorem on symmetry operations, J. Math. Phys. 5, 862–868 (1964).\n  [ref: bargmann1964]\n* S. Pancharatnam, Generalized theory of interference, and its applications, Proc. Indian Acad.\n  Sci. A 44, 247–262 (1956). [ref: pancharatnam1956]",
+   "copyright": "2026 Anand Nambakam",
    "sections": [
     {
      "line": 57,
@@ -1803,13 +1814,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/States/Pure/BlochSphere.lean",
    "module": "QuantumInfo.States.Pure.BlochSphere",
    "title": "Bloch Sphere",
    "doc": "The Bloch sphere is the unit sphere S² in ℝ³, used to represent\npure states of a two-level quantum system (qubit). Each point on the\nsphere corresponds to a qubit state up to global phase.\n\nThis file defines the Bloch sphere type and its angular parameterization,\nthen builds the solid angle and dot product API on sphere points.\n\n## Important definitions\n * `BlochSphere`: the unit sphere `Metric.sphere 0 1` in `EuclideanSpace ℝ (Fin 3)`\n * `blochPoint`: point on the Bloch sphere from polar angle α and azimuthal angle θ\n * `solidAngle`: solid angle of a geodesic triangle via Van Vleck formula\n\n## Important results\n * `blochPoint_norm`: the Bloch vector has unit norm\n * `dot_blochPoint`: dot product of Bloch vectors in terms of angle differences\n\n## References\n\n* S. Pancharatnam, Generalized theory of interference, and its applications, Proc. Indian Acad.\n  Sci. A 44, 247–262 (1956). [ref: pancharatnam1956]\n* M. V. Berry, Quantal phase factors accompanying adiabatic changes, Proc. R. Soc. London A 392,\n  45–57 (1984). [ref: berry1984]",
+   "copyright": "2026 Anand Nambakam",
    "sections": [
     {
      "line": 79,
@@ -1879,13 +1892,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/States/Pure/Braket.lean",
    "module": "QuantumInfo.States.Pure.Braket",
    "title": "",
    "doc": "Finite dimensional quantum pure states, bra and kets. Mixed states are `MState` in that file.\n\nThese could be done with a Hilbert space of Fintype, which would look like\n```lean4\n(H : Type*) [NormedAddCommGroup H] [InnerProductSpace ℂ H] [CompleteSpace H] [FiniteDimensional ℂ H]\n```\nor by choosing a particular `Basis` and asserting it is `Fintype`. But frankly it seems easier to\nmostly focus on the basis-dependent notion of `Matrix`, which has the added benefit of an obvious\n\"classical\" interpretation (as the basis elements, or diagonal elements of a mixed state). In that\nsense, this quantum theory comes with the a particular classical theory always preferred.",
+   "copyright": "2025 Alex Meiburg",
    "sections": [
     {
      "line": 561,
@@ -2399,13 +2414,15 @@
     }
    ],
    "private": 3,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "QuantumInfo/States/Pure/Qubit.lean",
    "module": "QuantumInfo.States.Pure.Qubit",
    "title": "Qubits",
    "doc": "## i. Overview\n\nA qubit is a two-level quantum system. In this module the computational basis of a qubit is\nindexed by `Qubit`, an abbreviation for `Fin 2`, and a gate on a qubit is an element of\n`𝐔[Qubit]`, the group of unitary `2 × 2` complex matrices. The standard single-qubit gates are\ndefined by their matrices in the computational basis, and the basic identities between them are\nproved. For a unitary matrix `g` indexed by a finite type `k`, the controlled gate `C[g]` acts on\n`Qubit × k`: it is the identity when the `Qubit` component, the control, is `0`, and applies `g`\nwhen it is `1`. The CNOT gate is `C[X]`.\n\nMost proofs use the tactic `matrix_expand`, defined at the start of the module, which reduces an\nequality of small matrices to its entries and tries to close them with `simp`, `norm_num`,\n`field_simp` and `ring_nf`.\n\n## ii. Key results\n\n- `Qubit` : the index type `Fin 2` of the computational basis of a qubit.\n- `matrix_expand` : a tactic reducing an equality of small matrices to its entries and\n  simplifying them.\n- `Qubit.X`, `Qubit.Y`, `Qubit.Z` : the Pauli gates.\n- `Qubit.H`, `Qubit.S`, `Qubit.T` : the Hadamard gate and the gates `S = diag(1, i)` and\n  `T = diag(1, (1 + i) / √2)`.\n- `Qubit.X_Y_anticomm`, `Qubit.Y_Z_anticomm`, `Qubit.Z_X_anticomm` : the Pauli gates\n  anticommute.\n- `Qubit.controllize` : the controlled gate `C[g]` of a unitary `g`.\n- `Qubit.CNOT`, `Qubit.CNOT_matrix` : the CNOT gate and its `4 × 4` matrix, with `Fin 2 × Fin 2`\n  reindexed by `finProdFinEquiv`.\n- `Qubit.X_controllize_X` : conjugating `C[g]` by `X` on the control qubit gives\n  `(1 ⊗ᵤ g) * C[g⁻¹]`.\n\n## iii. Table of contents\n\n- A. The qubit index type and the `matrix_expand` tactic\n- B. The single-qubit gates\n- C. Identities between the single-qubit gates\n- D. Controlled gates\n\n## iv. References\n\n* M. A. Nielsen and I. L. Chuang, Quantum Computation and Quantum Information, Cambridge\n  University Press (2010). [ref: nielsen_chuang_qci]",
+   "copyright": "2025 Alex Meiburg",
    "sections": [
     {
      "line": 61,
@@ -2683,7 +2700,8 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   }
  ]
 }

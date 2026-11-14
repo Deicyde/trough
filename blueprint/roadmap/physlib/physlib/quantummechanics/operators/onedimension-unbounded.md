@@ -12,8 +12,7 @@ The module `Physlib.QuantumMechanics.Operators.OneDimension.Unbounded`, [Physlib
 
 ## Note
 
-> It is likely one day the material in this file will be moved to or appear
-> in another form within Mathlib.
+> …
 
 **`QuantumMechanics.OneDimension.UnboundedOperator`**, a def, [line 32](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QuantumMechanics/Operators/OneDimension/Unbounded.lean#L32).
 

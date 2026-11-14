@@ -7,6 +7,7 @@
    "module": "PhyslibAlpha.CondensedMatter.Bloch.Algebraic",
    "title": "Bloch's theorem on the lattice",
    "doc": "A translation-invariant evolution of configurations of unit cells acts through its Bloch matrix.\n\n## i. Overview\n\nConsider degrees of freedom attached to the cells of a lattice whose translation group is `Λ`,\nan abelian group such as `ℤ ^ d`. The contents of one unit cell, orbitals or spin components, form\na module `M`, and a configuration is a finitely supported assignment of an element of `M` to each\ncell: `ψ : Λ →₀ M`. Translation acts by `(T a ψ) m = ψ (m - a)`. A crystal momentum is a character\n`χ` of `Λ`, and the Fourier transform of a configuration is `ev χ ψ = ∑ m, χ m • ψ m`.\n\n* The kernel of the Fourier transform is precisely the span that defines the momentum fiber. So the\n  fiber at momentum `χ` is a copy of the unit cell `M`: Bloch's reduction to a single cell.\n* Every translation-invariant linear map `D` satisfies `ev χ (D ψ) = H(k) (ev χ ψ)` for a matrix\n  `H(k)` on the unit cell, its *Bloch matrix*. No finite-range assumption is needed, as a\n  configuration has finite support, and the matrix is `H(k) v = ∑ m, χ m • (D (δ₀ v)) m`.\n* The Bloch matrix of a product is the product of Bloch matrices, and of the inverse the inverse.\n* A hopping Hamiltonian with amplitude `t n` to the cell displaced by `n` has\n  `H(k) = ∑ n, exp (i k n) t n`: the Fourier transform of its hoppings.\n\nNo analysis, finite dimensionality or positivity is used. The analytic counterpart on `ℓ²` is in\n`RegularRep` and `Spectrum`, and the finite periodic crystal in `FiniteBloch`.\n\n## ii. Key results\n\n- `translation` : translating a configuration of unit cells.\n- `ev` : the Fourier transform of a configuration at a crystal momentum.\n- `ker_ev` : the kernel of the Fourier transform defines the momentum fiber.\n- `fiberEquiv` : the fiber at momentum `χ` is the contents of a unit cell.\n- `symbol` : the Bloch matrix of a translation-invariant map.\n- `ev_apply` : Bloch's theorem, Fourier transform intertwines the map and its Bloch matrix.\n- `symbol_comp`, `symbol_id`, `isUnit_symbol` : the Bloch matrix of a product and of an inverse.\n- `hopping`, `symbol_hopping` : the Bloch Hamiltonian of a hopping model.\n\n## iii. Table of contents\n\n- A. Translations and Fourier evaluation\n- B. The momentum fiber is the unit cell\n- C. Bloch matrices\n- D. Hopping operators\n\n## iv. References\n\n* F. Bloch, Über die Quantenmechanik der Elektronen in Kristallgittern, Z. Phys. 52 (1929). [ref:\n  bloch_1929]\n* N. Ashcroft & N. D. Mermin, Solid State Physics, Chapters 4 and 8.",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 76,
@@ -220,13 +221,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/CondensedMatter/Bloch/FiniteBloch.lean",
    "module": "PhyslibAlpha.CondensedMatter.Bloch.FiniteBloch",
    "title": "The spectrum of a finite periodic crystal",
    "doc": "The spectrum of a translation-invariant operator on a finite periodic crystal is the union of the\nspectra of its Bloch matrices.\n\n## i. Overview\n\nA finite periodic crystal has a finite abelian translation group `G`, for instance `(ℤ / mℤ) ^ d`,\nand `N` orbitals in each cell. A configuration is a function `ψ : G → ℂ ^ N`, and a hopping\noperator `(B ψ) x = ∑_r A_r ψ (x - r)` moves amplitude by the lattice vector `r` through the\nmatrix `A_r`. A plane wave `x ↦ χ(x) v` of crystal momentum `χ`, a character of `G`, is mapped to\n`χ(x) b(χ) v`, where `b(χ) = ∑_r χ(-r) A_r` is the Bloch matrix. So an eigenvector of `b(χ)`\ngives an eigenvector of `B` with the same eigenvalue. Conversely, the Fourier transform\n`ψ̂(χ) = ∑_x χ(-x) ψ(x)` of an eigenvector of `B` satisfies `b(χ) ψ̂(χ) = λ ψ̂(χ)`, and a\nnonzero function has a nonzero Fourier transform at some momentum, by orthogonality of the\ncharacters. Hence `spec B = ⋃_χ spec b(χ)`, with no analysis: the space is finite dimensional.\n\nFor the infinite lattice `ℤ ^ d` the same statement holds on `ℓ²`, where the Fourier transform is\na unitary map onto `L²` of the Brillouin zone, and is proved in `RegularRep.spectrum_blochOperator`.\n\n## ii. Key results\n\n- `FiniteBloch.hopping` : the hopping operator with matrices `A_r`.\n- `FiniteBloch.bloch` : its Bloch matrix at a crystal momentum.\n- `FiniteBloch.fourier_hopping` : the Fourier transform intertwines the operator with its Bloch\n  matrix.\n- `FiniteBloch.spectrum_hopping` : the spectrum is the union of the spectra of the Bloch matrices.\n\n## iii. Table of contents\n\n- A. The hopping operator and its Bloch matrix\n- B. The spectrum\n\n## iv. References\n\n* F. Bloch, Über die Quantenmechanik der Elektronen in Kristallgittern, Z. Phys. 52 (1929). [ref:\n  bloch_1929]\n* N. Ashcroft & N. D. Mermin, Solid State Physics, Chapters 4 and 8.",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 64,
@@ -336,13 +339,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/CondensedMatter/Bloch/Hypercubic.lean",
    "module": "PhyslibAlpha.CondensedMatter.Bloch.Hypercubic",
    "title": "Nearest-neighbour hopping on the hypercubic lattice",
    "doc": "The band of nearest-neighbour hopping on the hypercubic lattice, and the irreducible zone modulo\nthe hyperoctahedral group.\n\n## i. Overview\n\nNearest-neighbour hopping with amplitude `t` on `ℤ^d` has the Bloch matrix, a `1 × 1` matrix,\n`2 t ∑_j cos (2π k_j)` at the momentum with coordinates `k`. Every signed permutation of the\naxes is a symmetry of the lattice, and acts on the coordinates by permuting them and changing\ntheir signs, so the band is invariant. Every momentum is carried by a signed permutation into the\nset `0 ≤ k_{d-1} ≤ … ≤ k_1 ≤ k_0 ≤ 1/2`, a simplex which is a fraction `1 / (2^d d!)` of the\nBrillouin zone. This is the irreducible zone: the Brillouin zone modulo the point group. The\nspectrum of the hopping is therefore the set of values of the band on this simplex.\n\n## ii. Key results\n\n- `hypercubicZone` : the simplex `0 ≤ k_{d-1} ≤ … ≤ k_0 ≤ 1/2`.\n- `coversOrbits_hypercubic` : every momentum is equivalent to a momentum in the simplex.\n- `exists_signedPerm_to_cone` : an explicit signed permutation carrying a momentum into the\n  simplex.\n- `hypercubicBand`, `hoppingSymbol_hypercubic` : the Bloch matrix of nearest-neighbour hopping.\n- `iUnion_spectrum_hypercubic` : the spectrum is the set of values of the band on the simplex.\n- `littleGroup_gamma`, `littleGroup_corner` : the centre and the corner of the zone are fixed by\n  every symmetry.\n- `iUnion_spectrum_hypercubic_eq_Icc` : the spectrum is the interval `[-2 d |t|, 2 d |t|]`.\n\n## iii. Table of contents\n\n- A. The irreducible zone\n- B. The nearest-neighbour band\n- C. The spectrum is an interval\n- D. The fully symmetric momenta\n\n## iv. References\n\n* N. Ashcroft & N. D. Mermin, Solid State Physics, Chapter 8.",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 61,
@@ -500,13 +505,15 @@
     }
    ],
    "private": 3,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/CondensedMatter/Bloch/PointSymmetry.lean",
    "module": "PhyslibAlpha.CondensedMatter.Bloch.PointSymmetry",
    "title": "Symmetry of the Bloch matrices of a crystal",
    "doc": "The Bloch matrices of a symmetric crystal at momenta in one orbit of the point group are\nconjugate, and at a momentum fixed by a symmetry they commute with it.\n\n## i. Overview\n\nTake a crystal with translation group `G` and the finite set `F` of sites in a cell, and a\ntranslation-invariant Hamiltonian on `ℓ²(G, ℂ^F)` given by hopping matrices `T r`. Its Bloch\nmatrix at a momentum `χ` is `b(χ) = ∑_r χ(r) T r`. A symmetry `s = (A, σ, b)` moves the site `i`\nof the cell `n` to the site `σ i` of the cell `A n + b i`. On the Fourier transform\n`ψ̂(χ) = ∑_n χ(n) ψ(n)` it acts by\n`(U_s ψ)^(χ) = V_s(χ) ψ̂(χ ∘ A)`, where the fibre matrix `V_s(χ)` is the monomial matrix with the\nentry `χ(b i)` at `(σ i, i)`. The symmetry carries the fibre at `χ ∘ A` to the fibre at\n`s • χ = χ ∘ A⁻¹`. The fibre matrices satisfy the cocycle identity\n`V_{st}(χ) = V_s(χ) V_t(s⁻¹ • χ)`, and they are unitary. The phases `χ(b i)` come from the\noffsets `b i` of the sites: for a symmetry that is a pure rotation or reflection of a crystal\nwith one site per cell they are absent, and a screw axis or glide plane is what makes them\nmomentum dependent.\n\nThe Hamiltonian commutes with `U_s` exactly when `V_s(s • χ) b(χ) = b(s • χ) V_s(s • χ)` for all\n`χ`, which is what *covariance* of the symbol means. It holds when the hopping is invariant\nunder the symmetry, `T (A r + b i - b j) (σ i) (σ j) = T r i j`. Two consequences follow. Along\nan orbit of the point group, the Bloch matrices are unitarily equivalent, so their eigenvalues\nare the same: the bands are functions on the irreducible zone. At a momentum fixed by `s`, the\nBloch matrix commutes with `V_s(χ)`, so its eigenspaces are representation spaces of the little\ngroup, and an eigenvalue of a Hermitian Bloch matrix has multiplicity at least the least\ndimension of an invariant subspace: the degeneracies forced by symmetry.\n\n## ii. Key results\n\n- `fibreMatrix` : the monomial matrix of a symmetry at a momentum.\n- `fibreMatrix_mul` : the cocycle identity.\n- `fibreMatrix_unitary` : the fibre matrices are unitary.\n- `hoppingSymbol` : the Bloch matrix of a family of hopping matrices.\n- `IsCovariant`, `isCovariant_of_invariant` : invariant hopping has a covariant symbol.\n- `eigenvalues_eq_of_covariant` : the bands agree at momenta related by a symmetry.\n- `bandsOnZone` : the bands are functions on the irreducible zone.\n- `uniformHopping`, `isCovariant_uniformHopping` : uniform hopping on a periodic graph is covariant\n  under all its bond-preserving symmetries.\n- `iUnion_spectrum_eq_of_covers` : the spectrum is the union over an irreducible zone.\n- `two_le_finrank_of_no_common_eigenvector` : a criterion for twofold degeneracy.\n- `le_finrank_eigenspace`, `le_finrank_eigenspace_of_littleGroup` : the multiplicity of an\n  eigenvalue at a momentum fixed by the symmetries is at least the least dimension of an\n  invariant subspace.\n\n## iii. Table of contents\n\n- A. The fibre matrices\n- B. The symbol of a hopping family\n- C. Bands on the irreducible zone\n- D. The little group at a momentum\n- E. Hopping from a graph and its symmetries\n- F. Restricting to a set of representatives\n\n## iv. References\n\n* N. Ashcroft & N. D. Mermin, Solid State Physics, Chapter 7.",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 84,
@@ -784,13 +791,15 @@
     }
    ],
    "private": 1,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/CondensedMatter/Bloch/RegularRep.lean",
    "module": "PhyslibAlpha.CondensedMatter.Bloch.RegularRep",
    "title": "The space of wavefunctions on a lattice with internal states",
    "doc": "`ℓ²(G, ℂ^N)` with its translation representation and its internal matrix algebra.\n\n## i. Overview\n\nThe Hilbert space `ℓ²(G, ℂ^N)` of square-summable functions on a countable abelian group `G` with\nvalues in `ℂ^N` carries two commuting structures: the translations `(U_g ψ)(x) = ψ(x - g)`, a\nunitary representation of `G`, and the pointwise action of the matrices `M_N(ℂ)` on the internal\nindex. This is the setting of band theory: `G` is the lattice of translations of a crystal, and `N`\nthe number of internal states per primitive cell. The space is realized as `L²` of the counting\nmeasure so that the Koopman representation of the translation action applies.\n\n## ii. Key results\n\n- `RegularRep.translation` : the translation representation on `ℓ²(G, ℂ^N)`.\n- `RegularRep.internal` : the internal ⋆-homomorphism `M_N(ℂ) → B(ℓ²)`.\n- `RegularRep.commute` : the translations commute with the internal algebra.\n\n## iii. Table of contents\n\n- A. Counting measure and translations\n- B. The internal algebra\n- C. The translation commutes with the internal algebra\n- D. Localized states and their momentum distribution\n- E. The momentum distribution of localized states\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 64,
@@ -1008,13 +1017,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/CondensedMatter/Bloch/SiteRepresentation.lean",
    "module": "PhyslibAlpha.CondensedMatter.Bloch.SiteRepresentation",
    "title": "The translations and symmetries of a crystal on `ℓ²` of its sites",
    "doc": "The space of square-summable functions on the sites of a crystal carries the translations and the\nbond-preserving symmetries as a covariant unitary representation.\n\n## i. Overview\n\nThe Hilbert space `ℓ²(C.Site)` of a crystal is `L²` of the counting measure on its sites. The\ntranslations act on the sites by permutations, and so do the bond-preserving symmetries. Every\npermutation preserves the counting measure, so each group acts unitarily by composition: the\nKoopman representation. The two actions are compatible: a symmetry with linear part `A` carries\nthe translation by `a` to the translation by `A a`. This is exactly the covariance of\n`PointCovariance`. The Hilbert space needs no choice of orbitals, and covers any number of sites\nper cell.\n\nConsequently the sector reduction of `SectorReduction` applies to every bounded operator on\n`ℓ²(C.Site)` that commutes with the translations and the symmetries: the adjacency operator of the\nbond graph, any hopping Hamiltonian with symmetric amplitudes, or the unitary group of a\nSchrödinger evolution.\n\n## ii. Key results\n\n- `siteTranslation`, `siteSymmetry` : the actions on `ℓ²(C.Site)`.\n- `siteTranslation_covariant` : the covariance of the two representations.\n- `spectrum_sectorOp_eq_site` : the symmetry reduction of the spectrum of an invariant operator\n  to the sectors of momentum.\n\n## iii. Table of contents\n\n- A. Counting measure on the sites\n- B. The representations\n- C. Symmetry reduction\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 64,
@@ -1136,13 +1147,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/CondensedMatter/Bloch/Spectrum.lean",
    "module": "PhyslibAlpha.CondensedMatter.Bloch.Spectrum",
    "title": "The spectrum of a translation-invariant operator is the union of the Bloch bands",
    "doc": "For the space `ℓ²(G, ℂ^N)`, the spectrum of the operator of a continuous symbol is exactly the union\nof the spectra of its values.\n\n## i. Overview\n\nLet `b` be a continuous function from the Brillouin zone `Ĝ` to the `N × N` matrices, and let\n`B = ∫ b dP` be the corresponding translation-invariant operator on `ℓ²(G, ℂ^N)`. We showed that\n`spec B ⊆ ⋃_χ spec b(χ)`. The converse holds on `ℓ²(G, ℂ^N)`. If `λ` is an eigenvalue of `b(χ₀)`\nwith eigenvector `e₀`, the state localized at the origin with internal state `e₀` has the uniform\nmomentum distribution given by Haar measure, so its component in a small neighbourhood `W` of `χ₀`\nis nonzero, and on `W` the symbol maps `e₀` to within `δ` of `λ e₀`. These components are\napproximate eigenvectors of `B` with eigenvalue `λ`, so `λ` is in the spectrum. Hence\n`spec B = ⋃_χ spec b(χ)`: the spectrum of a translation-invariant operator is the union of the\nbands.\n\n## ii. Key results\n\n- `RegularRep.norm_sq_calculus_projection_localized` : the norm of a symbol applied to the\n  momentum-`W` component of a localized state.\n- `RegularRep.spectrum_blochHom` : `spec ∫ b dP = ⋃_χ spec b(χ)`.\n\n## iii. Table of contents\n\n- A. Norms of spectral components of localized states\n- B. The spectrum\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 68,
@@ -1252,13 +1265,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/CondensedMatter/Crystal/Balls.lean",
    "module": "PhyslibAlpha.CondensedMatter.Crystal.Balls",
    "title": "Balls in the bond graph of a crystal",
    "doc": "The sites within a given number of bonds of a site, and their behaviour under symmetries.\n\n## i. Overview\n\nThe *ball* of radius `n` around a site is the set of sites reached by at most `n` bonds. It is a\nfinite set, as every site has finitely many neighbours. A group acting on the sites and preserving\nthe bonds carries balls to balls. Balls give the finite regions on which a finite-range\ninteraction acts: the interactions of a region only reach its bond neighbours.\n\n## ii. Key results\n\n- `PeriodicGraph.ball` : the sites within `n` bonds of a site.\n- `PeriodicGraph.mem_ball_add` : following `m` bonds and then `n` bonds stays within `m + n` bonds.\n- `PeriodicGraph.mem_ball_smul_iff` : bond preserving group actions carry balls to balls.\n\n## iii. Table of contents\n\n- A. Balls\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 43,
@@ -1316,13 +1331,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/CondensedMatter/Crystal/Basic.lean",
    "module": "PhyslibAlpha.CondensedMatter.Crystal.Basic",
    "title": "Crystals, cells and sites",
    "doc": "## i. Overview\n\nA crystal is a perfect periodic arrangement obtained by repeating a unit cell. The unit\ncell contains finitely many sites, which may carry atoms, spins or orbitals. A cell is one\ntranslated copy of the unit cell. A label identifies which site within that copy: for\nexample, A or B in a cell containing two sites. A cell index and a site label together\nidentify one site in the full crystal.\n\nThe translation group `G` determines how the cells repeat. The usual choice is `ℤᵈ`, giving\nan infinite discrete crystal. Choosing `(ℤ/mℤ)ᵈ` with positive `m` gives a finite periodic\narray with opposite boundaries identified. The definition also permits `ℝᵈ`, describing\ncontinuously translated arrangements.\n\n`Crystal.ofUnitCell G F` constructs the crystal from its translation group `G` and the\nfinite set `F` of site labels in the unit cell. Taking `F = Fin 2` gives two sites per cell,\nlabelled `0` and `1`. With `G = Fin 2 → ℤ`, the cells form an infinite two-dimensional\narray. With `G = Fin 2 → ZMod 4`, there are four cells in each direction with periodic\nidentification.\n\nFor a crystal `C` built this way, `C.Site` is the type of its sites. The site `⟨n, i⟩` has\ncell index `n` and label `i`. Translation by `a`, written `a +ᵥ x`, changes its cell index\nto `a + n` and preserves its label. These indices specify site addresses; a geometric\nrealization supplies physical positions.\n\n## ii. Key results\n\n- `Crystal` : a perfectly repeating arrangement of sites under a translation group.\n- `Crystal.ofUnitCell` : the crystal obtained by repeating a unit cell with finitely many labels.\n- `CellSite` : the address of a site, a cell index together with a label.\n\n## iii. Table of contents\n\n- A. Constructing a crystal from a unit cell\n\n## iv. References\n\n* N. Ashcroft & N. D. Mermin, Solid State Physics, Chapter 4.",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 79,
@@ -1380,13 +1397,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/CondensedMatter/Crystal/Brillouin.lean",
    "module": "PhyslibAlpha.CondensedMatter.Crystal.Brillouin",
    "title": "Symmetries of a crystal acting on its Brillouin zone",
    "doc": "The symmetries of a crystal act on the crystal momenta, the translations trivially.\n\n## i. Overview\n\nThe crystal momenta of a crystal with translation group `G` are the characters of `G`: the\nBrillouin zone. A symmetry `s = (A, σ, b)` sends a plane wave of momentum `χ` to a plane wave of\nmomentum `χ ∘ A⁻¹`, so the symmetries act on the Brillouin zone through their linear parts. This\nis an action of the whole group `CellSymmetry G F` of the crystal, for any number of sites per\ncell. Translations have the trivial linear part and act trivially, so the action descends to the\npoint group, the quotient by the translations.\n\nThe stabilizer of a momentum `χ` in the group of symmetries is the *little group* of `χ`. It\ncontains all translations. Its image in the point group is the *little co-group*. At a generic\nmomentum the little co-group is trivial, and at a high-symmetry momentum it is large. The orbits of\nthe point group in the Brillouin zone are the classes of equivalent momenta. The orbit space is the\nirreducible Brillouin zone: a band structure of a symmetric crystal is a function on it.\n\n## ii. Key results\n\n- `BrillouinZone` : the group of characters of the translations.\n- `CellSymmetry.instMulActionBrillouinZone` : the action of the symmetries on crystal momenta.\n- `PeriodicGraph.pointAction` : the action of the point group on the Brillouin zone.\n- `PeriodicGraph.littleGroup` : the stabilizer of a momentum among the bond-preserving symmetries.\n- `PeriodicGraph.IrreducibleZone` : the orbit space of the Brillouin zone under the point group.\n\n## iii. Table of contents\n\n- A. The action of the symmetries\n- B. The point group and the little groups\n- C. The irreducible zone\n\n## iv. References\n\n* N. Ashcroft & N. D. Mermin, Solid State Physics, Chapter 7.",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 56,
@@ -1564,13 +1583,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/CondensedMatter/Crystal/BrillouinCoordinates.lean",
    "module": "PhyslibAlpha.CondensedMatter.Crystal.BrillouinCoordinates",
    "title": "Coordinates on the Brillouin zone and the action of the symmetries",
    "doc": "The Brillouin zone of `ℤ^d` is the torus of coordinates modulo `1`, and a symmetry acts on the\ncoordinates by an explicit integer matrix.\n\n## i. Overview\n\nA crystal momentum of the lattice `ℤ^d` is a character `r ↦ exp (2πi k · r)`, determined by the\ncoordinates `k ∈ ℝ^d` modulo `ℤ^d`: the Brillouin zone is the torus `ℝ^d / ℤ^d`, in coordinates\nalong the reciprocal basis. A symmetry with linear part `A` sends the momentum of coordinates `k`\nto the momentum of coordinates `k'`, with `k'_j = ∑_i k_i (A⁻¹ e_j)_i`: the transpose of the\ninverse of the matrix of `A`. Momenta with coordinates in `(1/n) ℤ`, which include the high-symmetry\npoints of the standard lattices, are the points of finite order. Their equality and the action of a\nsymmetry on them reduce to divisibility of integers, which can be decided by computation.\n\nTogether with `littleGroup` and `IrreducibleZone`, this lets one prove which momenta are equivalent\nand what the little group of a momentum is for a given lattice, by integer arithmetic.\n\n## ii. Key results\n\n- `brillouinPoint` : the momentum with given coordinates.\n- `brillouinPoint_eq_iff` : two sets of coordinates give the same momentum exactly when they\n  differ by integers.\n- `brillouinPoint_surjective` : every momentum has coordinates.\n- `smul_brillouinPoint` : the action of a symmetry on coordinates.\n- `torsionPoint`, `smul_torsionPoint`, `torsionPoint_eq_iff` : momenta of finite order.\n- `mem_littleGroup_torsionPoint_iff` : the little group of a momentum of finite order.\n\n## iii. Table of contents\n\n- A. Momenta from coordinates\n- B. The action of a symmetry on coordinates\n- C. Momenta of finite order\n\n## iv. References\n\n* N. Ashcroft & N. D. Mermin, Solid State Physics, Chapters 5 and 7.",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 58,
@@ -1684,13 +1705,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/CondensedMatter/Crystal/Examples/AxisStepWords.lean",
    "module": "PhyslibAlpha.CondensedMatter.Crystal.Examples.AxisStepWords",
    "title": "The nearest neighbours of fcc and bcc are words of axis steps",
    "doc": "## i. Overview\n\nThe bonds `fccBonds` and `bccBonds` are written in the basis of primitive vectors. In the\ncoordinates of the box, in units of half its sides, a site of the fcc lattice is a point of `ℤ³`\nand a nearest neighbour is the sum of two steps of length one along different axes: a face\ndiagonal. A nearest neighbour of the bcc lattice is the sum of three steps along the three axes:\na body diagonal. Here the converse: every such sum is a nearest neighbour.\n\nA step along an axis is forward or backward, so there are two steps per axis. Steps along\ndifferent axes commute, so the two orders of a pair of steps reach the same site. Each face\ndiagonal is reached by `2` words of two steps and each body diagonal by `6` words of three steps.\n\n## ii. Key results\n\n- `fccBonds_eq_twoStepWords` : the nearest neighbours of fcc, up to sign, are the sums of two\n  steps along different axes.\n- `bccBonds_eq_threeStepWords` : the nearest neighbours of bcc, up to sign, are the sums of three\n  steps along the three axes.\n- `card_twoStepWords_fiber`, `card_threeStepWords_fiber` : each neighbour is reached by exactly\n  `2`, respectively `6`, words.\n\n## iii. Table of contents\n\n- A. Axis steps and their words\n- B. Coordinates of the box\n- C. The neighbours as words\n\n## iv. References\n\n* N. Ashcroft & N. D. Mermin, Solid State Physics, Chapter 4.",
+   "copyright": "2026 Eduardo Nava-Hernandez",
    "sections": [
     {
      "line": 51,
@@ -1828,13 +1851,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/CondensedMatter/Crystal/Examples/Basic.lean",
    "module": "PhyslibAlpha.CondensedMatter.Crystal.Examples.Basic",
    "title": "Standard crystals",
    "doc": "## i. Overview\n\nThese examples specify the same three ingredients: a repeated unit cell, its physical\npositions and its bonds. The crystal, geometry and graph remain separately accessible.\n\nThe hypercubic lattice has one site per cell in any dimension. The chain and square\nlattice are its one- and two-dimensional cases. The triangular lattice has six neighbors\nper site. The honeycomb lattice has two sites per cell, each with three neighbors.\nTheir Euclidean geometries use unit nearest-neighbor spacing.\n\nThe finite periodic chain places equally spaced sites on a circle of circumference one.\nIts bonds connect consecutive cells modulo the period.\n\n## ii. Key results\n\n- `hypercubic`, `square`, `chain` : one site per cell.\n- `triangular`, `honeycomb`, `diamond` : standard lattices with their geometries and bond graphs.\n- `periodicChain` : a finite periodic chain.\n- `honeycomb_neighbors_card`, `diamond_neighbors_card` : coordination numbers.\n\n## iii. Table of contents\n\n- A. Hypercubic lattices\n- B. Triangular lattice\n- C. Honeycomb lattice\n- D. Diamond lattice\n- E. Finite periodic chain\n- F. Coordination numbers\n- G. Bond lengths\n\n## iv. References\n\n* N. Ashcroft & N. D. Mermin, Solid State Physics, Chapter 4.",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 54,
@@ -2268,13 +2293,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/CondensedMatter/Crystal/Examples/Monoclinic.lean",
    "module": "PhyslibAlpha.CondensedMatter.Crystal.Examples.Monoclinic",
    "title": "Monoclinic and triclinic lattices",
    "doc": "The primitive and base-centred monoclinic lattices and the triclinic lattice, with their\nembeddings and the bonds of their first neighbour shells.\n\n## i. Overview\n\nA monoclinic lattice has two axes `a = (a, 0, 0)` and `b = (0, b, 0)` and a third axis\n`c = (c₁, 0, c₃)` in the plane of `a` and perpendicular to `b`, at an angle `β ≠ π / 2` with\n`a`. The base-centred lattice adds the centres of the `a`–`b` faces. A triclinic lattice has\nthree axes with no relation between their lengths and angles. Here they are\n`(a, 0, 0)`, `(b₁, b₂, 0)`, `(c₁, c₂, c₃)`. As for the orthorhombic lattices, the first shell\nalone sees more symmetry than the lattice, and the graph keeps the shells up to the first ones\nthat pin the point group down. With the lengths below these are:\n\n- primitive monoclinic, `a = 3`, `b = 5`, `c = (1, 0, 3)`: twenty neighbours, the shells at\n  squared lengths `9, 10, 13, 25, 34, 35`;\n- base-centred monoclinic, `a = 4`, `b = 2`, `c = (1, 0, 3)`: sixteen neighbours, the shells at\n  squared lengths `4, 5, 10, 11, 13`;\n- triclinic, `(3, 0, 0)`, `(1, 4, 0)`, `(1, 1, 5)`: sixteen neighbours, the shells at squared\n  lengths `9, 17, 20, 27, 30, 32, 34, 36`.\n\n## ii. Key results\n\n- `monoclinic`, `baseCentredMonoclinic`, `triclinic` : the lattices, with one site per cell.\n- `monoclinicVectors`, `baseCentredMonoclinicVectors`, `triclinicVectors` : primitive vectors.\n- `monoclinic_neighbors_card`, `baseCentredMonoclinic_neighbors_card`,\n  `triclinic_neighbors_card` : the coordination numbers `20`, `16` and `16`.\n\n## iii. Table of contents\n\n- A. Primitive monoclinic lattice\n- B. Base-centred monoclinic lattice\n- C. Triclinic lattice\n- D. Coordination numbers\n\n## iv. References\n\n* N. Ashcroft & N. D. Mermin, Solid State Physics, Chapter 7.",
+   "copyright": "2026 Eduardo Nava-Hernandez",
    "sections": [
     {
      "line": 58,
@@ -2440,13 +2467,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/CondensedMatter/Crystal/Examples/Orthorhombic.lean",
    "module": "PhyslibAlpha.CondensedMatter.Crystal.Examples.Orthorhombic",
    "title": "Orthorhombic lattices",
    "doc": "The primitive, base-centred, body-centred and face-centred orthorhombic lattices, with their\nembeddings and the bonds of their first neighbour shells.\n\n## i. Overview\n\nAn orthorhombic lattice has three different lengths `a`, `b`, `c` along three orthogonal axes.\nThe bonds of the first shell alone do not see the three axes as different. For the primitive\nlattice the six bonds `±x, ±y, ±z` are those of the simple cubic lattice. A graph with\northorhombic symmetry needs the shells up to the first ones that tell each axis from the other\ntwo. With the lengths below these are:\n\n- primitive, `(a, b, c) = (3, 4, 7)`: the shells at `3, 4, 5, 6, 7`, twelve neighbours, namely\n  `±a x`, `±b y`, `±c z`, the in-plane diagonals `±a x ± b y` and `±2a x`;\n- base-centred, `(a, b, c) = (3, 6, 5)`: twelve neighbours, namely `(±a / 2, ±b / 2, 0)`,\n  `±a x`, `±c z` and `(±3a / 2, ±b / 2, 0)`;\n- body-centred, `(a, b, c) = (2, 7, 5)`: fourteen neighbours, namely the eight\n  `(±a / 2, ±b / 2, ±c / 2)`, `±a x`, `±2a x` and `±c z`;\n- face-centred, `(a, b, c) = (2, 4, 5)`: eighteen neighbours, namely the twelve face diagonals,\n  `±a x` and `(±3a / 2, ±b / 2, 0)`.\n\nAs for the cubic lattices, the graph does not depend on the lengths and the embedding does.\n\n## ii. Key results\n\n- `orthorhombic`, `baseCentredOrthorhombic`, `bodyCentredOrthorhombic`,\n  `faceCentredOrthorhombic` : the lattices, with one site per cell.\n- `baseCentredVectors` : the primitive vectors of the base-centred lattice.\n- `orthorhombic_neighbors_card`, `baseCentredOrthorhombic_neighbors_card`,\n  `bodyCentredOrthorhombic_neighbors_card`, `faceCentredOrthorhombic_neighbors_card` : the\n  coordination numbers `12`, `12`, `14` and `18`.\n\n## iii. Table of contents\n\n- A. Primitive orthorhombic lattice\n- B. Base-centred orthorhombic lattice\n- C. Body-centred and face-centred orthorhombic lattices\n- D. Coordination numbers\n\n## iv. References\n\n* N. Ashcroft & N. D. Mermin, Solid State Physics, Chapter 7.",
+   "copyright": "2026 Eduardo Nava-Hernandez",
    "sections": [
     {
      "line": 62,
@@ -2620,13 +2649,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/CondensedMatter/Crystal/Examples/Rhombohedral.lean",
    "module": "PhyslibAlpha.CondensedMatter.Crystal.Examples.Rhombohedral",
    "title": "The rhombohedral lattice",
    "doc": "The rhombohedral lattice, with its embedding and the bonds of its first two neighbour shells.\n\n## i. Overview\n\nA rhombohedral lattice has three primitive vectors of the same length with the same angle `α`\nbetween any two of them. Up to a rotation they are `(p, q, q)`, `(q, p, q)` and `(q, q, p)`,\nwith `cos α = (2 p q + q ²) / (p ² + 2 q ²)`. The six bonds `±aᵢ` of the first shell are those of\nthe simple cubic lattice, so the first shell alone does not see the threefold axis. When\n`-1 / 4 < cos α < 0` the second shell is made of the six vectors `±(aᵢ + aⱼ)`, and the graph with\nboth shells has twelve neighbours. This holds for instance for `(p, q) = (10, -1)`, with\n`cos α = -19 / 102`. The graph is defined by these twelve bonds and does not depend on `p`\nand `q`: that they form the two nearest shells is the statement above, not yet a lemma.\n\n## ii. Key results\n\n- `rhombohedral` : the lattice, with one site per cell.\n- `rhombohedralVectors` : the primitive vectors `(p, q, q)`, `(q, p, q)`, `(q, q, p)`.\n- `rhombohedralGeometry` : the embedding, for `p ≠ q` and `p + 2 q ≠ 0`.\n- `rhombohedral_neighbors_card` : the coordination number `12`.\n\n## iii. Table of contents\n\n- A. The lattice and its embedding\n- B. Bonds and coordination number\n\n## iv. References\n\n* N. Ashcroft & N. D. Mermin, Solid State Physics, Chapter 7.",
+   "copyright": "2026 Eduardo Nava-Hernandez",
    "sections": [
     {
      "line": 49,
@@ -2696,13 +2727,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/CondensedMatter/Crystal/Examples/TetragonalHexagonal.lean",
    "module": "PhyslibAlpha.CondensedMatter.Crystal.Examples.TetragonalHexagonal",
    "title": "Tetragonal and hexagonal lattices",
    "doc": "The primitive and body-centred tetragonal lattices and the primitive hexagonal lattice, with\ntheir embeddings and the bonds of their first neighbour shells.\n\n## i. Overview\n\nA tetragonal lattice is a cubic lattice stretched along one axis: the in-plane length `a` and the\nperiod `c` differ. The bonds of the first shell alone do not see this. For the primitive lattice\nthe six bonds `±x, ±y, ±z` are those of the simple cubic lattice, and for the body-centred\nlattice with `c = a √2` the twelve nearest neighbours are those of the face-centred cubic lattice.\nA graph with tetragonal symmetry needs the shells up to the first one that tells `z` from `x`:\n\n- primitive tetragonal, `a < c < a √2`: the shells at `a`, `c` and `a √2`, ten neighbours;\n- body-centred tetragonal, `a √2 < c < a √6`: the shells at `a`, `√(a² / 2 + c² / 4)` and\n  `a √2`, sixteen neighbours.\n\nThe primitive hexagonal lattice has six neighbours at `a` in the plane and two at `c` along the\naxis. For `c < a √3` these are the first shells, whatever the order of `a` and `c`.\n\nAs for the cubic lattices, the graph does not depend on the lengths and the embedding does.\n\n## ii. Key results\n\n- `tetragonal`, `bodyCentredTetragonal`, `hexagonal` : the lattices, with one site per cell.\n- `tetragonalGeometry`, `bodyCentredTetragonalGeometry`, `hexagonalGeometry` : their embeddings.\n- `tetragonalGraph`, `bodyCentredTetragonalGraph`, `hexagonalGraph` : their bond graphs.\n- `tetragonal_neighbors_card`, `bodyCentredTetragonal_neighbors_card`,\n  `hexagonal_neighbors_card` : the coordination numbers `10`, `16` and `8`.\n\n## iii. Table of contents\n\n- A. Primitive tetragonal lattice\n- B. Body-centred tetragonal lattice\n- C. Primitive hexagonal lattice\n- D. Coordination numbers\n\n## iv. References\n\n* N. Ashcroft & N. D. Mermin, Solid State Physics, Chapter 7.",
+   "copyright": "2026 Eduardo Nava-Hernandez",
    "sections": [
     {
      "line": 59,
@@ -2844,13 +2877,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/CondensedMatter/Crystal/Examples/ThreeDimensional.lean",
    "module": "PhyslibAlpha.CondensedMatter.Crystal.Examples.ThreeDimensional",
    "title": "Orthorhombic, cubic and hexagonal close-packed crystals",
    "doc": "The orthorhombic lattice and the face-centred cubic, body-centred cubic and hexagonal\nclose-packed crystals, with embeddings that allow different lengths along the coordinate axes.\n\n## i. Overview\n\nA cubic lattice has one length, the lattice constant. Stretching the three axes independently\ngives the orthorhombic lattice with lengths `a`, `b`, `c`. The face-centred cubic (fcc) lattice\nhas one site per primitive cell, with primitive vectors from a corner of the conventional cell to\nthe centres of the three adjacent faces. Each site has twelve nearest neighbours. The body-centred\ncubic (bcc) lattice has one site per primitive cell, with primitive vectors from a corner to the\ncentres of three conventional cells, and eight nearest neighbours. The hexagonal close-packed\n(hcp) crystal has two sites per primitive cell, on two interpenetrating hexagonal lattices, and\ntwelve nearest neighbours for the ideal ratio `c / a = √(8 / 3)`.\n\nEach crystal is a graph, given by the bonds of its nearest neighbours, together with an embedding\nin three-dimensional space. The graph does not depend on the lengths. The embedding depends on\n`a`, `b` and `c` in the cubic cases, and on `a` and `c` for hcp, and any positive values give an\nembedding in which distinct sites have distinct positions. Only for the cubic values `a = b = c`\nand the ideal ratio do all bonds of the graph have equal length, so that the graph is the\nnearest-neighbour graph of the embedding.\n\n## ii. Key results\n\n- `orthorhombicGeometry` : the hypercubic crystal with a separate length for each axis.\n- `fcc`, `bcc`, `hcp` : the crystals, with `fccGraph`, `bccGraph`, `hcpGraph` their bond graphs.\n- `fccGeometry`, `bccGeometry`, `hcpGeometry` : their embeddings with free lengths.\n- `fcc_neighbors_card`, `bcc_neighbors_card`, `hcp_neighbors_card` : the coordination numbers\n  `12`, `8` and `12`.\n- `fcc_bond_length`, `bcc_bond_length`, `hcp_bond_length` : bond lengths of the cubic and ideal\n  lattices.\n\n## iii. Table of contents\n\n- A. Orthorhombic lattices\n- B. Face-centred cubic lattice\n- C. Body-centred cubic lattice\n- D. Hexagonal close-packed crystal\n- E. Coordination numbers\n- F. Bond lengths\n\n## iv. References\n\n* N. Ashcroft & N. D. Mermin, Solid State Physics, Chapter 4.",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 64,
@@ -3128,13 +3163,15 @@
     }
    ],
    "private": 1,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/CondensedMatter/Crystal/Folner.lean",
    "module": "PhyslibAlpha.CondensedMatter.Crystal.Folner",
    "title": "Boxes of a lattice are asymptotically translation invariant",
    "doc": "The cubes `{0, …, n-1}^d` of the lattice `ℤ^d` satisfy the Følner condition for the translations.\n\n## i. Overview\n\nA translation by `h` moves the cube `B_n = {0, …, n-1}^d` to a cube that overlaps `B_n` in\n`∏_j (n - |h_j|)` points, so the fraction of points not shared is `1 - ∏_j (1 - |h_j|/n)`, which\ntends to zero. This is the Følner condition (`ProbabilisticTheory.IsRightFolner`) that makes the\naverages of a state over the translations by the elements of `B_n` invariant in the limit.\n\n## ii. Key results\n\n- `box` : the cube `{0, …, m-1}^d` of `ℤ^d`.\n- `card_box` : it has `m ^ d` points.\n- `isRightFolner_boxes` : the cubes are asymptotically invariant under translations along any\n  ultrafilter finer than the filter of large cubes.\n\n## iii. Table of contents\n\n- A. Cubes and their translates\n- B. The Følner property\n\n## iv. References\n\n* F. Greenleaf, Invariant Means on Topological Groups.",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 51,
@@ -3236,13 +3273,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/CondensedMatter/Crystal/Geometry.lean",
    "module": "PhyslibAlpha.CondensedMatter.Crystal.Geometry",
    "title": "Crystal geometry",
    "doc": "## i. Overview\n\nThe geometry of a crystal assigns a physical position to each site. Positions lie in a\nmetric space `A`, on which the translation group `G` acts by isometries. Translating a\nsite translates its position by the same group element. Distinct sites occupy distinct\npositions.\n\nThe physical space may be Euclidean for an infinite crystal,\nor a torus for a finite periodic crystal. Its translation action specifies the\nphysical displacement associated with each cell translation. The periodic and ambient\ndimensions need not coincide: a sheet can be embedded in three-dimensional space.\n\n`Geometry C A` supplies the embedding `position` of a crystal `C` into `A`. The physical\ndistance between sites is the distance between their positions. It is invariant under a\ncommon translation and vanishes exactly when the sites coincide. The same distances\ndefine a metric on the site set through `Geometry.metricSpace`.\n\n## ii. Key results\n\n- `Geometry` : an embedding of a crystal into a metric space compatible with translations.\n- `Geometry.ofDisplacements` : positions from lattice displacements and unit-cell offsets.\n- `latticeMap` : the linear map from cell indices to physical translations.\n- `Geometry.distance_eq_of_adj` : bond lengths depend only on the bond.\n\n## iii. Table of contents\n\n- A. Positions and translations\n- B. Physical distances\n- C. Positions from a unit cell\n- D. Bond lengths\n- E. Euclidean lattice displacements\n\n## iv. References\n\n* N. Ashcroft & N. D. Mermin, Solid State Physics, Chapter 4.",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 57,
@@ -3388,13 +3427,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/CondensedMatter/Crystal/Graph.lean",
    "module": "PhyslibAlpha.CondensedMatter.Crystal.Graph",
    "title": "Crystal bonds and connectivity",
    "doc": "## i. Overview\n\nA bond specifies a connection between two crystal sites, such as a spin interaction or\nan allowed hopping connection. Its endpoints may belong to the same cell or to different\ncells. The choice of bonds describes the crystal's connectivity; geometry supplies their\nphysical positions and lengths.\n\nIn a chosen unit cell, a bond is specified by two site labels `i`, `j` and a cell\ndisplacement `δ : G`. It connects site `i` in cell `n` to site `j` in cell `n + δ`, for\nevery cell `n`. When `δ = 0`, both sites belong to the same cell.\n\n`PeriodicGraph.ofBonds` constructs a connectivity graph from a finite list of bonds.\n\n## ii. Key results\n\n- `PeriodicGraph` : a translation-invariant, locally finite graph on the sites of a crystal.\n- `PeriodicGraph.ofBonds` : the graph generated by a finite list of unit-cell bonds.\n- `PeriodicGraph.card_neighbors_cell` : the coordination number depends only on the label.\n\n## iii. Table of contents\n\n- A. Connections between finite regions\n- B. Translation-invariant connectivity\n- C. Bonds between finite regions\n- D. Bonds in a unit cell\n- E. Building the graph from bonds\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 51,
@@ -3644,13 +3685,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/CondensedMatter/Crystal/InvariantState.lean",
    "module": "PhyslibAlpha.CondensedMatter.Crystal.InvariantState",
    "title": "Translation invariant states of an infinite crystal",
    "doc": "Every state of the quasi-local algebra of the crystal `ℤ^d` with a finite unit cell has a\ntranslation invariant limit state, and so does every thermodynamic limit state of an interaction.\n\n## i. Overview\n\nThe translations of the crystal `ℤ^d` act on its quasi-local algebra by `*`-automorphisms\n(`translationAction`). The averages of a state over the translations by the points of the cube\n`{0, …, n}^d` become invariant as `n → ∞`, because the cubes satisfy the Følner condition\n(`isRightFolner_boxes`). A limit point of the averages along an ultrafilter is therefore an\ninvariant state of the infinite crystal. Applied to the thermodynamic limit state of a canonical\nensemble, this gives a translation invariant state of the interacting infinite system, which is\nthe input to the reduction of the many-body problem to momentum sectors.\n\n## ii. Key results\n\n- `exists_translation_invariant_state` : every state has a translation invariant limit state.\n- `Interaction.translationInvariantState` : the translation invariant state of the canonical\n  ensemble of an interaction.\n\n## iii. Table of contents\n\n- A. Invariant states of the crystal\n\n## iv. References\n\n* O. Bratteli & D. Robinson, Operator Algebras and Quantum Statistical Mechanics 1,\n  Section 4.3.",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 59,
@@ -3708,13 +3751,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/CondensedMatter/Crystal/InvariantStateUncertainty.lean",
    "module": "PhyslibAlpha.CondensedMatter.Crystal.InvariantStateUncertainty",
    "title": "Uncertainty relations in the invariant states of an infinite crystal",
    "doc": "Robertson's relation for several observables holds in the translation invariant state of an\ninteraction on the crystal `ℤ^d`, and the translations that fix the state fix entries of `Σ`\nand `Ω`.\n\n## i. Overview\n\nThe translation invariant state of the canonical ensemble of an interaction is a state on the\nquasi-local algebra of the crystal, so `AlgState.robertson_det` applies to it: for every finite\nfamily of observables, `|det Ω| ≤ det Σ`.\n\nThe state is invariant under every translation `t_a`. If `t_a` fixes an observable `A` and\nreverses an observable `B`, as a translation by one site does for the uniform and the staggered\nmagnetization of a finite block of an antiferromagnet, then `Σ_AB = Ω_AB = 0` by\n`AlgState.covariance_eq_zero_of_symm`. A state that breaks the translation by `a`, such as a\nNéel state, need not satisfy this.\n\n## ii. Key results\n\n- `robertson_det_translationInvariantState` : `|det Ω| ≤ det Σ` in the translation invariant\n  state of an interaction.\n- `covariance_translationInvariantState_eq_zero`,\n  `bracket_translationInvariantState_eq_zero` : an observable fixed and one reversed by a\n  translation have `Σ_AB = Ω_AB = 0`.\n\n## iii. Table of contents\n\n- A. Uncertainty relations in the invariant state\n\n## iv. References\n\n* O. Bratteli & D. Robinson, Operator Algebras and Quantum Statistical Mechanics 1,\n  Section 4.3.",
+   "copyright": "2026 Eduardo Nava-Hernandez",
    "sections": [
     {
      "line": 63,
@@ -3748,13 +3793,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/CondensedMatter/Crystal/ManyBody.lean",
    "module": "PhyslibAlpha.CondensedMatter.Crystal.ManyBody",
    "title": "Symmetry reduction of a many-body dynamics on an infinite crystal",
    "doc": "The dynamics of an infinite crystal in a symmetric state is reduced by the sectors of total\nmomentum, and the point symmetries relate the sectors in an orbit.\n\n## i. Overview\n\nTake the quasi-local algebra `𝔄` of an infinite crystal, with its action of the cell symmetries\nby `*`-automorphisms, and a state `ω` invariant under a subgroup `H` of the cell symmetries that\ncontains the translations. The GNS construction represents `H` unitarily on the Hilbert space of\n`ω`. The translations are a subgroup of `H` acting by `π`, and `H` acts by `ρ`; a symmetry `s`\ncarries the translation by `a` to the translation by `A a`, which is the covariance required by\nthe sector reduction of `SectorReduction`.\n\nLet a group `Δ`, such as the time translations, act on `𝔄` by `*`-automorphisms preserving `ω`\nand commuting with `H`: a translation invariant dynamics with the point symmetries. It acts on\nthe GNS space by unitaries commuting with `π` and `ρ`. Therefore each unitary of the dynamics is\nreduced by the sectors of total momentum, and its restrictions to the sector of the momenta in `S`\nand to the sector of the momenta in `s • S` are unitarily equivalent, with the same spectrum, for\nevery symmetry `s` in `H`. The statement is about arbitrary interacting many-body dynamics: it\nuses nothing but the symmetry.\n\n## ii. Key results\n\n- `manyBodyRep` : the unitary representation of the symmetries on the GNS space.\n- `manyBodyRep_covariant` : the translations and the symmetries are covariant.\n- `spectrum_sectorOp_eq_manyBody` : the symmetry reduction of the spectrum of an invariant dynamics\n  to the sectors of total momentum.\n\n## iii. Table of contents\n\n- A. The representation on the GNS space\n- B. The symmetry reduction\n\n## iv. References\n\n* O. Bratteli & D. Robinson, Operator Algebras and Quantum Statistical Mechanics 1,\n  Section 2.3.",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 73,
@@ -3840,13 +3887,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Basic.lean",
    "module": "PhyslibAlpha.CondensedMatter.Crystal.PointGroup.Basic",
    "title": "Point groups of Bravais lattices",
    "doc": "The point group of a crystal with one site per cell is the group of automorphisms of its\ntranslation lattice that preserve its bonds.\n\n## i. Overview\n\nThe point group of a crystal is the group of its bond-preserving symmetries modulo translations.\nA symmetry of any crystal acts on the lattice of cell translations by a lattice automorphism, its\nlinear part, and this gives a homomorphism `pointLinearHom` from the point group to the lattice\nautomorphisms. It is not injective in general: a symmetry may permute the sites within every cell\nand move none of the cells, and such a symmetry is not a translation.\n\nWhen there is one site per cell, a symmetry is determined, up to a translation, by its linear part.\nAn automorphism of the lattice then extends to a bond-preserving symmetry exactly when it maps\nthe set of bonded displacements to itself. In this case the point group is isomorphic to the\ngroup of lattice automorphisms preserving the bonded displacements (`pointGroupEquiv`). This group\nis finite when the graph is connected and has finitely many neighbours; it is the group of\nrotations and reflections of the lattice that leave it invariant. No geometry is involved: a\nsquare and a rectangular lattice with the same bonds have the same point group as graphs.\n\n## ii. Key results\n\n- `PeriodicGraph.pointLinearHom` : the action of the point group of any crystal on the lattice.\n- `PeriodicGraph.pointStabilizer` : the lattice automorphisms preserving the bonded displacements.\n- `PeriodicGraph.pointGroupEquiv` : the point group is isomorphic to this group.\n\n## iii. Table of contents\n\n- A. Automorphisms preserving the bonds\n- B. The point group of a crystal with one site per cell\n- C. The action on the lattice of any crystal\n\n## iv. References\n\n* N. Ashcroft & N. D. Mermin, Solid State Physics, Chapter 7.",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 60,
@@ -3928,13 +3977,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Count.lean",
    "module": "PhyslibAlpha.CondensedMatter.Crystal.PointGroup.Count",
    "title": "Counting the point group of a Bravais lattice",
    "doc": "The point group of an `n`-dimensional lattice with a finite set `N` of neighbour displacements\nis counted by the possible images of the `n` basis vectors.\n\n## i. Overview\n\nAn automorphism of `ℤⁿ` that preserves the set `N` of bonded displacements is determined by the\nimages of the basis vectors, which are neighbour displacements when the basis vectors are\nthemselves bonded. A tuple of neighbour displacements, one for each basis vector, defines such\nan automorphism exactly when the linear map it determines maps `N` into itself, and is injective\non `N`. Injectivity on the finite set `N` makes the map a bijection of `N`, so its image contains\nthe basis, and a surjective endomorphism of `ℤⁿ` is an automorphism. The point group is therefore\nin bijection with the set of such tuples, a finite set that is counted by a direct computation.\n\n## ii. Key results\n\n- `PeriodicGraph.pointStabilizerEquiv` : the point group is in bijection with the admissible\n  tuples of neighbour displacements.\n- `PeriodicGraph.card_pointGroup` : its cardinality is the number of admissible tuples.\n\n## iii. Table of contents\n\n- A. Linear maps determined by the images of the basis\n- B. Admissible tuples\n- C. The count\n\n## iv. References\n\n* N. Ashcroft & N. D. Mermin, Solid State Physics, Chapter 7.",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 56,
@@ -4056,13 +4107,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Cubic.lean",
    "module": "PhyslibAlpha.CondensedMatter.Crystal.PointGroup.Cubic",
    "title": "The point groups of the face-centred and body-centred cubic lattices",
    "doc": "The point group of both cubic Bravais lattices with centring has order forty-eight.\n\n## i. Overview\n\nBy `PeriodicGraph.card_pointGroup`, the order of the point group of a Bravais lattice is the\nnumber of triples of neighbour displacements that define a lattice automorphism preserving the\nneighbours. For the face-centred cubic lattice, with its twelve neighbours, and the body-centred\ncubic lattice, with its eight neighbours, this number is `48`, the order of the full octahedral\ngroup, the symmetry group of the cube with reflections.\n\nThe count is established by reflection. Vectors in three dimensions are written as triples of\nintegers, admissibility becomes a Boolean test on a list of such triples, and the number of\nadmissible tuples is the length of a list that the kernel computes. The finite type of triples of\nneighbours, `PeriodicGraph.admissibleEquiv`, is kept as the direct formulation; deciding the count\non it needs far more memory than the reflection, and does not fit on the cubic lattices.\n\n## ii. Key results\n\n- `PeriodicGraph.card_admissible_eq_length` : the number of admissible tuples is the length of\n  the list of admissible triples.\n- `fcc_card_pointGroup` : the point group of the face-centred cubic lattice has order `48`.\n- `bcc_card_pointGroup` : the point group of the body-centred cubic lattice has order `48`.\n\n## iii. Table of contents\n\n- A. Neighbour displacements\n- B. Computing the count\n  - B.1. Admissible tuples as a finite type\n  - B.2. Vectors as triples of integers\n  - B.3. The Boolean test for admissibility\n  - B.4. The count as the length of a list\n- C. The cubic lattices\n\n## iv. References\n\n* N. Ashcroft & N. D. Mermin, Solid State Physics, Chapter 7.",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 60,
@@ -4360,13 +4413,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Hypercubic.lean",
    "module": "PhyslibAlpha.CondensedMatter.Crystal.PointGroup.Hypercubic",
    "title": "The point group of the hypercubic lattice in every dimension",
    "doc": "The point group of the hypercubic lattice in `d` dimensions consists of the signed permutations\nof the axes and has order `2 ^ d * d !`.\n\n## i. Overview\n\nThe nearest neighbours of a site of the hypercubic lattice `ℤ^d` are the displacements `±e_j`,\nwhich are the integer vectors whose coordinates have absolute values summing to one. A lattice\nautomorphism preserves the set of these displacements exactly when it maps each basis vector to\n`±e_k` for a distinct axis `k`: it is a permutation of the axes together with a choice of sign\nfor each axis. All of these signed permutations preserve the bonds. The point group is therefore\nthe hyperoctahedral group, the symmetry group of the `d`-dimensional cube, which has `2 ^ d`\nsign choices and `d !` permutations. For `d = 2` it is the dihedral group of order eight and for\n`d = 3` the octahedral group of order forty-eight.\n\n## ii. Key results\n\n- `signedPerm` : the lattice automorphism given by a permutation of the axes and signs.\n- `mem_pointStabilizer_hypercubic_iff` : a lattice automorphism preserves the bonds of the\n  hypercubic lattice exactly when it is a signed permutation.\n- `card_pointGroup_hypercubic` : the point group has order `2 ^ d * d !`.\n\n## iii. Table of contents\n\n- A. Bonds of the hypercubic lattice\n- B. Signed permutations\n- C. The point group\n\n## iv. References\n\n* N. Ashcroft & N. D. Mermin, Solid State Physics, Chapter 7.",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 57,
@@ -4536,13 +4591,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Monoclinic.lean",
    "module": "PhyslibAlpha.CondensedMatter.Crystal.PointGroup.Monoclinic",
    "title": "The point groups of the monoclinic and triclinic lattices",
    "doc": "The point groups of the two monoclinic lattices have order four, the holohedry `2/m`, and the\npoint group of the triclinic lattice has order two, the holohedry `-1`.\n\n## i. Overview\n\nThe admissible triples are located by tests, as for the orthorhombic lattices. For the primitive\nmonoclinic lattice the four point operations are the identity, the reflection `b ↦ -b` in the\nplane of `a` and `c`, the rotation by `π` about `b`, and the inversion. For the base-centred\nlattice the reflection exchanges the two primitive vectors in the `a`–`b` plane. The triclinic\nlattice keeps only the identity and the inversion, the symmetry of every lattice.\n\n## ii. Key results\n\n- `monoclinic_admissible_iff`, `baseCentredMonoclinic_admissible_iff`,\n  `triclinic_admissible_iff` : the admissible triples.\n- `monoclinic_card_pointGroup`, `baseCentredMonoclinic_card_pointGroup` : order `4`.\n- `triclinic_card_pointGroup` : order `2`.\n\n## iii. Table of contents\n\n- A. The admissible triples\n- B. The orders\n\n## iv. References\n\n* N. Ashcroft & N. D. Mermin, Solid State Physics, Chapter 7.",
+   "copyright": "2026 Eduardo Nava-Hernandez",
    "sections": [
     {
      "line": 50,
@@ -4628,13 +4685,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Orthorhombic.lean",
    "module": "PhyslibAlpha.CondensedMatter.Crystal.PointGroup.Orthorhombic",
    "title": "The point groups of the orthorhombic lattices",
    "doc": "The point groups of the four orthorhombic lattices have order eight: they are the reflections in\nthe three coordinate planes and their products, the holohedry `mmm`.\n\n## i. Overview\n\nAn element of the point group is determined by the images of the three basis vectors, an\nadmissible triple. Instead of checking all triples of neighbour displacements, each basis vector\nis located by a few tests: a displacement `d` is a neighbour exactly when its image is. For the\nprimitive lattice:\n\n- `x` is the only neighbour, up to sign, whose double is a neighbour, so it goes to `±x`;\n- `y` is the only neighbour on both diagonals `x ± y` through `x`, so it goes to `±y`;\n- `z` is on no diagonal through `x`, so it goes to `±z`.\n\nThe centred lattices are located in the same way by sums of two and three basis vectors. Each\nlattice then has exactly eight admissible triples, listed explicitly in the basis of its graph.\n\n## ii. Key results\n\n- `PeriodicGraph.admissible_iff_of_tests` : the admissible triples are a given set, if only its\n  triples pass the tests.\n- `orthorhombic_admissible_iff`, `baseCentredOrthorhombic_admissible_iff`,\n  `bodyCentredOrthorhombic_admissible_iff`, `faceCentredOrthorhombic_admissible_iff` : the eight\n  admissible triples of each lattice.\n- `orthorhombic_card_pointGroup`, `baseCentredOrthorhombic_card_pointGroup`,\n  `bodyCentredOrthorhombic_card_pointGroup`, `faceCentredOrthorhombic_card_pointGroup` :\n  order `8`.\n\n## iii. Table of contents\n\n- A. Tests on admissible triples\n- B. The admissible triples\n- C. The orders\n\n## iv. References\n\n* N. Ashcroft & N. D. Mermin, Solid State Physics, Chapter 7.",
+   "copyright": "2026 Eduardo Nava-Hernandez",
    "sections": [
     {
      "line": 61,
@@ -4780,13 +4839,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Rhombohedral.lean",
    "module": "PhyslibAlpha.CondensedMatter.Crystal.PointGroup.Rhombohedral",
    "title": "The point group of the rhombohedral lattice",
    "doc": "The point group of the rhombohedral lattice has order twelve: it permutes the three primitive\nvectors and may reverse all of them, the holohedry `-3m`.\n\n## i. Overview\n\nThe admissible triples are located by tests, as for the orthorhombic lattices. A neighbour `a`\ngoes to a neighbour, and the sums `a + b`, `a + c`, `b + c` and `2a + 2b + c` decide which\ntriples of neighbours are images of the basis. Exactly twelve triples pass: the six permutations\nof the primitive vectors, and the same with all signs reversed. The permutations are the\nrotations about the threefold axis `a₁ + a₂ + a₃` and the reflections in the planes through it;\nthe sign reversal is the inversion.\n\n## ii. Key results\n\n- `rhombohedral_admissible_iff` : the twelve admissible triples.\n- `rhombohedral_card_pointGroup` : order `12`.\n\n## iii. Table of contents\n\n- A. The admissible triples\n- B. The order\n\n## iv. References\n\n* N. Ashcroft & N. D. Mermin, Solid State Physics, Chapter 7.",
+   "copyright": "2026 Eduardo Nava-Hernandez",
    "sections": [
     {
      "line": 49,
@@ -4824,13 +4885,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/CondensedMatter/Crystal/PointGroup/Sublattices.lean",
    "module": "PhyslibAlpha.CondensedMatter.Crystal.PointGroup.Sublattices",
    "title": "The point group of a crystal with several sites per cell",
    "doc": "The point group of a crystal with several sites per cell is compared with the point group of a\nBravais lattice, the lattice of differences of its bonds.\n\n## i. Overview\n\nFor a graph given by a list of bonds, the displacements `d` for which site `i` of the reference\ncell is bonded to site `j` of the cell `d` form a finite set `E i j`. A cell symmetry `(A, σ, b)`\npreserves the bonds exactly when it maps each `E i j` onto `E (σ i) (σ j)` by\n`d ↦ A d + b j - b i`, a finite condition.\n\nIf site `i` is bonded to site `j` in the cells `d₁` and `d₂`, the difference `d₁ - d₂` is a\ntranslation between two sites with the same label. A symmetry maps both bonds to bonds with\ncommon labels, so its linear part maps these differences to differences. When the differences are\nthe neighbours of a Bravais lattice, for instance the face-centred cubic lattice for diamond or the\ntriangular lattice for the honeycomb, the linear parts of the symmetries lie in the point group\nof that lattice. If moreover only translations have the identity as linear part, and every point\noperation of the lattice lifts to a symmetry, the two point groups are isomorphic. Both conditions\nreduce to finite checks.\n\n## ii. Key results\n\n- `PeriodicGraph.bondDisplacements` : the finite sets `E i j` of a bond list.\n- `PeriodicGraph.mem_symmetries_ofBonds_iff` : the finite criterion for symmetries.\n- `PeriodicGraph.bondDifferences` : the differences `d₁ - d₂` of displacements in a common `E i j`.\n- `PeriodicGraph.linear_mem_bondDifferences_iff` : linear parts of symmetries preserve them.\n- `PeriodicGraph.pointGroupMulEquivOfLift` : the point group is that of the lattice of\n  differences, when the linear part is injective modulo translations and every point operation\n  lifts.\n- `PeriodicGraph.mem_translations_of_linear_eq` and `PeriodicGraph.lift_of_admissible` : the\n  finite checks of these two conditions.\n\n## iii. Table of contents\n\n- A. Bonded displacements of a bond list\n- B. Differences of bonds\n- C. Comparison of point groups\n- D. Finite checks\n\n## iv. References\n\n* N. Ashcroft & N. D. Mermin, Solid State Physics, Chapter 7.",
+   "copyright": "2026 Eduardo Nava-Hernandez",
    "sections": [
     {
      "line": 66,
@@ -4956,13 +5019,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/CondensedMatter/Crystal/PointGroup/TetragonalHexagonal.lean",
    "module": "PhyslibAlpha.CondensedMatter.Crystal.PointGroup.TetragonalHexagonal",
    "title": "The point groups of the tetragonal and hexagonal lattices",
    "doc": "The point groups of the primitive and body-centred tetragonal lattices have order sixteen, and\nthe point group of the primitive hexagonal lattice has order twenty-four.\n\n## i. Overview\n\nThe orders are counted as for the cubic lattices, by `PeriodicGraph.card_pointGroup` and the\nreflection of admissibility into a Boolean test on lists of triples of integers. They are those of\nthe holohedries `4/mmm` and `6/mmm`. With the bonds of the first shell only, the primitive\ntetragonal graph is the simple cubic graph, and its point group has order `48`.\n\nThe exponent of each group is computed in the same way: an element of the point stabilizer is\ndetermined by the images of the three basis vectors, so it is enough to check its powers on the\nbasis, for each admissible triple, which is again a Boolean test on the list of admissible\ntriples. Every element of the primitive tetragonal point group satisfies `A ^ 4 = 1`, and every\nelement of the hexagonal point group satisfies `A ^ 6 = 1`. So the primitive tetragonal group has\nno rotation of order three, and the hexagonal group none of order four.\n\n## ii. Key results\n\n- `tetragonal_card_pointGroup`, `bodyCentredTetragonal_card_pointGroup` : order `16`.\n- `hexagonal_card_pointGroup` : order `24`.\n- `tetragonal_pow_four` : `A ^ 4 = 1` on the point stabilizer.\n- `hexagonal_pow_six` : `A ^ 6 = 1` on the point stabilizer.\n\n## iii. Table of contents\n\n- A. Powers from admissible triples\n- B. The orders\n- C. The exponents\n\n## iv. References\n\n* N. Ashcroft & N. D. Mermin, Solid State Physics, Chapter 7.",
+   "copyright": "2026 Eduardo Nava-Hernandez",
    "sections": [
     {
      "line": 57,
@@ -5116,13 +5181,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/CondensedMatter/Crystal/QuasiLocal.lean",
    "module": "PhyslibAlpha.CondensedMatter.Crystal.QuasiLocal",
    "title": "The quasi-local algebra of an infinite crystal",
    "doc": "The quasi-local algebra of a crystal carries an action of its cell symmetries, the translations\namong them.\n\n## i. Overview\n\nThe sites of a crystal are the sites `⟨n, i⟩` of the cells `n`, a countable set, infinite for the\ntranslation group `ℤ^d`. If every site carries the same finite configuration space `Ω₀`, such as\nthe two states of a spin, the observables of a finite set of sites form a matrix algebra, and the\nquasi-local algebra of the crystal is the direct limit over the finite regions.\n\nThe group `CellSymmetry G F` of the crystal acts on its sites, so it acts on the quasi-local\nalgebra by `*`-automorphisms. This group contains the translations as a normal subgroup, so the\ntranslations act as a subgroup of the automorphisms. A symmetry `s` and a translation `t_a`\nsatisfy `s t_a s⁻¹ = t_{A a}` in the group, and the action respects this relation. Every bond\npreserving symmetry of a periodic graph is among the cell symmetries.\n\n## ii. Key results\n\n- `crystalAlgebra` : the quasi-local algebra of a crystal.\n- `cellSymmetryAction` : the action of the cell symmetries by `*`-automorphisms.\n- `translationAction` : the action of the translations.\n- `cellSymmetryAction_translation_conj` : a symmetry carries the translation by `a` to the\n  translation by `A a`.\n\n## iii. Table of contents\n\n- A. The quasi-local algebra of a crystal\n- B. The symmetries and the translations\n\n## iv. References\n\n* O. Bratteli & D. Robinson, Operator Algebras and Quantum Statistical Mechanics 2,\n  Section 6.1.",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 62,
@@ -5176,13 +5243,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/CondensedMatter/Crystal/Reciprocal.lean",
    "module": "PhyslibAlpha.CondensedMatter.Crystal.Reciprocal",
    "title": "Reciprocal lattice",
    "doc": "## i. Overview\n\nA Bravais lattice with primitive translations `a₁, …, a_d` in Euclidean space acts on\nfunctions of position by translation. A plane wave `r ↦ exp(i k · r)` of wave vector `k`\nrestricts to the lattice as the character `n ↦ exp(i Σ_j n_j ⟨a_j, k⟩)` of the translation\ngroup `ℤ^d`. Two wave vectors give the same character exactly when they differ by an element of\nthe reciprocal lattice, the set of `k` with `⟨a_j, k⟩ ∈ 2π ℤ` for every `j`. The Brillouin zone\nis the quotient of wave-vector space by this lattice, and it is the Pontryagin dual of the\ntranslation group.\n\n`dualCharacter a k` is the character of `ℤ^d` determined by the wave vector `k`.\n`reciprocalLattice a` is its kernel in wave-vector space. For `d` independent vectors in\n`ℝ^d`, `reciprocalBasis` is the basis `b_i` with `⟨a_j, b_i⟩ = 2π δ_ij`, and\n`dualCharacter_surjective` states that every character of `ℤ^d` arises from a wave vector, so\nthat wave-vector space modulo the reciprocal lattice is the full dual.\n\n## ii. Key results\n\n- `dualCharacter` : the character of the translation group given by a wave vector.\n- `reciprocalLattice` : the wave vectors whose plane wave is trivial on the lattice.\n- `dualCharacter_eq_one_iff` : the kernel of `dualCharacter` is the reciprocal lattice.\n- `reciprocalBasis` : the basis `b_i` with `⟨a_j, b_i⟩ = 2π δ_ij`.\n- `dualCharacter_surjective` : every character of the translation group is a plane wave.\n\n## iii. Table of contents\n\n- A. Characters from wave vectors\n- B. The reciprocal basis\n\n## iv. References\n\n* N. Ashcroft & N. D. Mermin, Solid State Physics, Chapter 5.",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 57,
@@ -5284,13 +5353,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/CondensedMatter/Crystal/Symmetry.lean",
    "module": "PhyslibAlpha.CondensedMatter.Crystal.Symmetry",
    "title": "Symmetries of a crystal graph",
    "doc": "## i. Overview\n\nThe symmetries of a crystal that map translated copies of the unit cell onto translated copies\nare described by finite data. A symmetry `(A, σ, b)` consists of an automorphism `A` of the\ntranslation group, a permutation `σ` of the site labels of the unit cell, and for each label `i`\na cell offset `b i`. It sends the site `i` of cell `n` to the site `σ i` of cell `A n + b i`.\nComposing two symmetries composes these data, so they form a group `CellSymmetry G F`.\nTranslations by `a` are the symmetries with `A = 1`, `σ = 1` and `b = a`. Conjugating a\ntranslation by a symmetry gives the translation by `A a`, so the translations form a normal\nsubgroup. The quotient is the abstract point group, which need not be a subgroup: a screw axis or\nglide plane of a non-symmorphic crystal is a symmetry whose offsets cannot be removed.\n\nA symmetry preserves the bonds of a periodic graph exactly when the relation \"site `i` in the\nreference cell is bonded to site `j` in the cell `d`\" is carried to the same relation for the\ntransformed data, namely `(σ i, σ j, A d + b j - b i)`. This is a finite condition on the bond\ndata of one unit cell. Bond-preserving symmetries form a subgroup `PeriodicGraph.symmetries` and\nact by automorphisms of the bond graph. Conversely, every graph automorphism that normalises the\ntranslations arises this way.\n\nThe graph alone knows nothing of physical lengths and angles. A square lattice has the symmetry\ngroup `ℤ² ⋊ D₄` as a graph, whether or not its two lattice constants are equal. The geometric\npoint group is the subgroup of these symmetries compatible with a chosen `Geometry`.\n\n## ii. Key results\n\n- `CellSymmetry` : the group of symmetries `(A, σ, b)` of the translation structure.\n- `CellSymmetry.translations` : the normal subgroup of translations.\n- `PeriodicGraph.symmetries` : the subgroup preserving the bonds of a periodic graph.\n- `PeriodicGraph.mem_symmetries_iff` : a finite criterion on the bond data of one unit cell.\n- `PeriodicGraph.exists_symmetry_of_equivariant` : every graph automorphism normalising the\n  translations is such a symmetry.\n\n## iii. Table of contents\n\n- A. The group of cell symmetries\n- B. Translations form a normal subgroup\n- C. Bond-preserving symmetries\n\n## iv. References\n\n* N. Ashcroft & N. D. Mermin, Solid State Physics, Chapter 7.",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 64,
@@ -5564,13 +5635,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/CondensedMatter/IsingModel/Basic.lean",
    "module": "PhyslibAlpha.CondensedMatter.IsingModel.Basic",
    "title": "Classical Ising interactions on a graph",
    "doc": "## i. Overview\n\nA classical Ising configuration assigns an up or down spin to every vertex of a graph.\nEdges specify which spins interact. `IsingModel` adds a uniform exchange coupling `J`\nand longitudinal field `h`, both in a fixed energy unit, to this connectivity.\n\nThe energy of a finite region is\n`-J ∑ {x,y} σ(x) σ(y) - h ∑ x σ(x)`, where the first sum runs over its internal graph edges\nand each spin has value ±1. We implement the edge sum as half the sum over ordered adjacent pairs:\nsymmetry counts each undirected edge twice and the simple graph excludes self-interactions.\nPositive `J` favors alignment (ferromagnetism), negative `J` favors opposite spins,\nand positive `h` favors up spins.\n\nJoining disjoint regions changes their combined energy only through bonds connecting the\nregions. Each crossing bond contributes at most `|J|` in absolute value. If sites have at\nmost `q` neighbors, the absolute energy is bounded by `(|J| q / 2 + |h|) |Λ|`. These bounds\ncontrol boundary corrections and energy growth with volume.\n\nFor ferromagnetic exchange `J ≥ 0`, uniform polarization aligned with the field attains\nthe least energy on every finite region. Its energy per site converges whenever the\naverage internal coordination converges. These results apply to arbitrary graphs;\ncrystal translations supply an additional symmetry.\n\n## ii. Key results\n\n- `IsingModel` : the nearest-neighbour Ising model on a graph, with uniform coupling and field.\n- `IsingModel.energy` : the energy of a finite region.\n- `IsingModel.abs_energy_union_sub_le` : the failure of additivity is bounded by the crossing bonds.\n- `IsingModel.abs_energy_le_of_degree_le` : the energy grows at most linearly with the volume.\n- `IsingModel.groundEnergy_eq` : the ferromagnetic ground-state energy of a region.\n- `IsingModel.tendsto_groundEnergyDensity` : the ground-state energy density converges when the\n  average internal coordination does.\n- `IsingModel.energy_translate` : the energy is invariant under crystal translations.\n\n## iii. Table of contents\n\n- A. Spin configurations\n- B. Finite-region energy and locality\n- C. Boundary interactions\n- D. Energy growth with volume\n- E. Ferromagnetic ground states\n- F. Ground-state energy per site\n- G. Crystal translation symmetry\n\n## iv. References\n\n* E. Ising, Beitrag zur Theorie des Ferromagnetismus.",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 78,
@@ -5844,13 +5917,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/CondensedMatter/IsingModel/Examples.lean",
    "module": "PhyslibAlpha.CondensedMatter.IsingModel.Examples",
    "title": "Classical Ising models on standard crystals",
    "doc": "## i. Overview\n\nUniform exchange and field parameters turn the existing crystal bond graphs into classical\nIsing models. The hypercubic model works in arbitrary dimension; the square lattice is its\ntwo-dimensional specialization. Honeycomb uses the same energy definition with its three\nbonds per site. Geometry plays no role in either construction.\n\nThe main result concerns the ferromagnetic ground state of any crystal in `d` dimensions,\nwith any number of sites per unit cell. Take a hypercube of `n + 1` unit cells along each\nlattice vector. Spins near its surface miss some of their neighbors, but they form a vanishing\nfraction of the sample as it grows. The ground-state energy per spin therefore converges to\n`-(J / 2) z̄ - |h|`, where `z̄` is the mean coordination of one unit cell: every spin\ncontributes `-J` for half of its `z̄` bonds, and the aligned field contributes `-|h|`.\nThe square lattice (`z̄ = 4`) and the honeycomb lattice (`z̄ = 3`) are instances.\n\n## ii. Key results\n\n- `IsingModel.hypercubic`, `IsingModel.square`, `IsingModel.honeycomb` : uniform Ising models on\n  the standard bond graphs.\n- `IsingModel.Hypercube.tendsto_averageCoordination` : surface spins form a vanishing fraction of a\n  growing hypercube of cells.\n- `IsingModel.tendsto_groundEnergyDensity_hypercube` : the ferromagnetic ground-state energy per\n  spin of any crystal converges to `-(J / 2) z̄ - |h|`.\n- `IsingModel.tendsto_groundEnergyDensity_square`, `..._honeycomb` : the square and honeycomb\n  lattices.\n- `IsingModel.tendsto_groundEnergyDensity_of_card` : the density for a crystal in which every\n  site has `q` neighbours, with the diamond, fcc, bcc and hcp lattices as instances.\n\n## iii. Table of contents\n\n- A. Ising models on the standard crystals\n- B. Hypercubes of unit cells in an arbitrary crystal\n- C. Ground-state energy density of a ferromagnetic crystal\n- D. Regular crystals\n\n## iv. References\n\n* E. Ising, Beitrag zur Theorie des Ferromagnetismus.",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 60,
@@ -6136,13 +6211,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/CondensedMatter/QuasiLocal/Gibbs.lean",
    "module": "PhyslibAlpha.CondensedMatter.QuasiLocal.Gibbs",
    "title": "Gibbs weights and states of a finite-dimensional system",
    "doc": "The Gibbs state of a Hermitian energy operator, and the canonical and grand canonical ensembles.\n\n## i. Overview\n\nFor a Hermitian matrix `h`, thought of as `β` times an energy, the *Gibbs weight* is `e^{-h}`,\nand the *Gibbs state* is `a ↦ tr(e^{-h} a) / tr(e^{-h})`. It is a state of the matrix algebra: it\nis normalized, Hermitian, and positive, because the weight is the square `r²` of the Hermitian\nmatrix `r = e^{-h/2}`, so that `tr(r² a* a) = tr((a r)* (a r)) ≥ 0`, and the partition function\n`tr(r²)` is positive.\n\nEvery ensemble is a special case.\n\n* The *canonical ensemble* at inverse temperature `β` for a Hamiltonian `H` has `h = β H`.\n* The *grand canonical ensemble* at inverse temperature `β` and chemical potential `μ`, for a\n  Hamiltonian `H` and a charge `N` such as the particle number, has `h = β (H - μ N)`.\n  When the charge is conserved, `H` and `N` commute and the weight factorizes as\n  `e^{-βH} e^{βμN}`: the canonical weight times a fugacity `e^{βμ}` per unit charge.\n\nNo structure of the system enters, so the same definitions serve a finite region of any lattice,\nquantum or classical. A classical system is the case of diagonal matrices, where the Gibbs weight\nis the Boltzmann factor `e^{-E(c)}` of each configuration `c`.\n\n## ii. Key results\n\n- `gibbsWeight` : the weight `e^{-h}`.\n- `gibbsState` : the Gibbs state of a Hermitian operator, as a state of the matrix algebra.\n- `canonicalState` : the canonical ensemble.\n- `grandCanonicalState` : the grand canonical ensemble.\n- `grandCanonicalWeight_of_commute` : factorization for a conserved charge.\n\n## iii. Table of contents\n\n- A. The Gibbs weight\n- B. The Gibbs state\n- C. The canonical and grand canonical ensembles\n- D. Classical systems\n\n## iv. References\n\n* O. Bratteli & D. Robinson, Operator Algebras and Quantum Statistical Mechanics 2,\n  Section 5.3.",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 74,
@@ -6340,13 +6417,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/CondensedMatter/QuasiLocal/GibbsSymmetry.lean",
    "module": "PhyslibAlpha.CondensedMatter.QuasiLocal.GibbsSymmetry",
    "title": "Covariance of the finite-volume ensembles under site symmetries",
    "doc": "A symmetry of an interaction carries the Hamiltonian and the ensembles of a box to those of the\nmoved box.\n\n## i. Overview\n\nLet a group `Γ` act on the sites, all of which carry the same finite configuration space. An\ninteraction is *invariant* if moving a term moves the term of the moved region:\n`quantumIso γ X (Φ X) = Φ (γ • X)`. Then the Hamiltonian of a box `Λ` is carried to the Hamiltonian\nof `γ • Λ`, because moving commutes with lifting and with the sum over the regions inside the box.\nMoving is a `*`-isomorphism preserving the trace, so it commutes with the exponential and carries\nthe Gibbs weight to the Gibbs weight and the Gibbs state to the Gibbs state: the expectation of the\nmoved observable in the ensemble of the moved box equals the expectation in the ensemble of the box.\n\n## ii. Key results\n\n- `quantumIso_exp` : moving commutes with the exponential.\n- `Interaction.hamiltonian_smul` : the Hamiltonian of a moved box.\n- `Interaction.canonicalState_smul`, `Interaction.grandCanonicalState_smul` : covariance of the\n  canonical and grand canonical ensembles.\n\n## iii. Table of contents\n\n- A. Moving the Gibbs weight\n- B. Moving the Hamiltonian\n- C. Moving the ensembles\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 61,
@@ -6468,13 +6547,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/CondensedMatter/QuasiLocal/Instances.lean",
    "module": "PhyslibAlpha.CondensedMatter.QuasiLocal.Instances",
    "title": "The quantum and classical nets of a system with finite site spaces",
    "doc": "The two nets of algebras over a set of sites with finite configuration spaces: operators and\nfunctions.\n\n## i. Overview\n\nFor sites `s` carrying finite sets `Ω s`, the quantum net assigns to a region the matrices on its\nconfigurations, with the inclusions `M ↦ M ⊗ 1`. The classical net assigns to a region the complex\nfunctions on its configurations, which are the diagonal operators, with the inclusions\n`f ↦ f ∘ restr`: a function of the values in `X` is a function of the values in `Y ⊇ X`. Both\nsatisfy the axioms of a net, and the classical net sits in the quantum net as diagonal matrices.\nBoth have a quasi-local algebra by the construction on any net.\n\nThe inclusions are injective as soon as every site space is nonempty.\n\n## ii. Key results\n\n- `quantumNet` : the net of operators.\n- `classicalNet` : the net of functions of configurations.\n- `diagonalInclusion` : the classical algebra of a region as diagonal operators.\n- `diagonalInclusion_incl` : the classical net is a subnet of the quantum net.\n\n## iii. Table of contents\n\n- A. The quantum net\n- B. The classical net\n\n## iv. References\n\n* O. Bratteli & D. Robinson, Operator Algebras and Quantum Statistical Mechanics 2,\n  Section 6.1.",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 63,
@@ -6536,13 +6617,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/CondensedMatter/QuasiLocal/Interaction.lean",
    "module": "PhyslibAlpha.CondensedMatter.QuasiLocal.Interaction",
    "title": "Interactions, finite-volume Hamiltonians and ensembles of a lattice system",
    "doc": "An interaction assigns an operator to each finite region of a lattice, and the finite-volume\nHamiltonian is the sum of the lifts to a box of the terms it contains.\n\n## i. Overview\n\nAn *interaction* `Φ` assigns to each finite region `X` of the sites a Hermitian operator `Φ X` of\nthe algebra of `X`. The Ising chain has `Φ {x} = h σᶻ_x` and `Φ {x, y} = - J σᶻ_x σᶻ_y` for\nneighbours. The *Hamiltonian of a finite box* `Λ` is\n`H_Λ = ∑_{X ⊆ Λ} (Φ X ⊗ 1)`: every term supported inside the box, lifted to the box by `M ↦ M ⊗ 1`\nand summed. A *charge* is a function `q_x` on the configuration space of each site, such as the\noccupation number, and the total charge `N_Λ = ∑_{x ∈ Λ} q_x` of a box is the diagonal operator\nwith value `∑ q_x(c_x)` on the configuration `c`.\n\nThe lifts commute with the exponential: for a unital `*`-homomorphism `φ`, `φ (e^a) = e^{φ a}`, so\nthe Gibbs weight of a lifted operator is the lift of its Gibbs weight. The canonical and grand\ncanonical states of a box are the Gibbs states of `H_Λ` and `H_Λ - μ N_Λ` at inverse temperature\n`β`, as in `Gibbs`. If the interaction conserves the charge, they factorize.\n\n## ii. Key results\n\n- `Interaction` : a family of Hermitian operators indexed by finite regions.\n- `Interaction.hamiltonian` : the Hamiltonian of a finite box.\n- `inclMat_exp` : the lift of an exponential is the exponential of the lift.\n- `chargeOp` : the total charge of a box.\n- `Interaction.canonicalState`, `Interaction.grandCanonicalState` : the ensembles of a box.\n\n## iii. Table of contents\n\n- A. Interactions and the Hamiltonian of a box\n- B. Lifts and the exponential\n- C. Charges and the ensembles of a box\n\n## iv. References\n\n* O. Bratteli & D. Robinson, Operator Algebras and Quantum Statistical Mechanics 2,\n  Section 6.2.",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 69,
@@ -6656,13 +6739,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/CondensedMatter/QuasiLocal/InvariantLimit.lean",
    "module": "PhyslibAlpha.CondensedMatter.QuasiLocal.InvariantLimit",
    "title": "Symmetric thermodynamic limit states",
    "doc": "Averaging the thermodynamic limit state of a lattice system over a group of site symmetries gives\na state of the infinite system that is invariant under the group.\n\n## i. Overview\n\nThe Gibbs states of finite boxes break the symmetries of the lattice, because a box has a\nboundary. Their limit points need not be invariant, and indeed are not in a phase with broken\nsymmetry. A limit point that is invariant is obtained by averaging over the group before taking\nthe limit: if the finite sets `F i` of group elements are asymptotically invariant (a Følner\ncondition), the limit of the averages of any state over them is invariant under the group.\n\nFor a lattice system with site symmetry group `Γ`, for instance the translations of a crystal, the\nquasi-local algebra carries the action `symAction` of `Γ` by `*`-automorphisms. This gives a\ntranslation invariant state of the infinite crystal, which is the hypothesis of the reduction of\nthe many-body problem to momentum sectors.\n\n## ii. Key results\n\n- `exists_invariant_state` : every state of the quasi-local algebra of a uniform lattice system has\n  an invariant limit state.\n- `Interaction.invariantLimitState` : the invariant state obtained from the canonical ensemble of\n  an interaction.\n\n## iii. Table of contents\n\n- A. Invariant states of a uniform lattice system\n- B. The ensembles of an interaction\n\n## iv. References\n\n* O. Bratteli & D. Robinson, Operator Algebras and Quantum Statistical Mechanics 2,\n  Section 6.2.3.",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 65,
@@ -6716,13 +6801,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/CondensedMatter/QuasiLocal/LimitState.lean",
    "module": "PhyslibAlpha.CondensedMatter.QuasiLocal.LimitState",
    "title": "Thermodynamic limit states of an interaction",
    "doc": "The Gibbs states of the finite boxes have limit points, which are states of the infinite system.\n\n## i. Overview\n\nEvery local operator of a quantum lattice system is bounded, `a* a ≤ ‖a‖² · 1`, so the net of\nbox expectations of a fixed local observable is bounded. By compactness the canonical or grand\ncanonical Gibbs states of the boxes `Λ` converge, along any ultrafilter finer than the filter of\nlarge boxes, to a state of the quasi-local algebra. This is the *thermodynamic limit state*. It is\na state of the infinite crystal, not a number attached to it.\n\n## ii. Key results\n\n- `matrix_exists_sumSq` : in a matrix algebra `a* a + p = c · 1` for a sum of squares `p`.\n- `quantumNet_isLocallyBounded` : the net of operators is locally bounded.\n- `Interaction.canonicalLimitState` : the thermodynamic limit state of the canonical ensemble.\n- `Interaction.grandCanonicalLimitState` : that of the grand canonical ensemble.\n\n## iii. Table of contents\n\n- A. Local boundedness of the net of operators\n- B. Limit states of the ensembles\n\n## iv. References\n\n* O. Bratteli & D. Robinson, Operator Algebras and Quantum Statistical Mechanics 2,\n  Section 6.2.3.",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 57,
@@ -6776,13 +6863,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/CondensedMatter/QuasiLocal/Local.lean",
    "module": "PhyslibAlpha.CondensedMatter.QuasiLocal.Local",
    "title": "Local algebras of a system with a finite configuration space at each site",
    "doc": "The algebra of operators of a finite region is the algebra of matrices on the configurations of\nits sites, and a larger region contains it through `M ↦ M ⊗ 1`.\n\n## i. Overview\n\nEvery site `s` of a system carries a finite set `Ω s`: the basis states of its local Hilbert\nspace, such as the two `σ^z` values of a spin, the occupation numbers of a fermion mode, or the\norbitals of an atom. A configuration of a finite region `X` assigns a value to each of its sites,\nand the Hilbert space of the region is spanned by these configurations. This is the tensor\nproduct of the local spaces. The operators of the region are the complex matrices indexed by its\nconfigurations, a finite-dimensional C*-algebra, and the operators of a larger region `Y ⊇ X`\ncontain them as `M ↦ M ⊗ 1`: `M` acts on the sites of `X` and the identity on the others.\nThis is an injective unital `*`-homomorphism, compatible with composition.\n\nThe sites may be the sites of an infinite crystal, and the regions are its finite subsets, so\nthat the quasi-local algebra of the infinite system is the limit of the local ones. Only finite\nsite spaces are used.\n\n## ii. Key results\n\n- `Cfg` : the configurations of a region.\n- `Alg` : the algebra of operators of a region.\n- `inclStarAlg` : the inclusion `M ↦ M ⊗ 1` as a unital `*`-homomorphism.\n- `inclMat_trans`, `inclMat_refl` : functoriality of the inclusions.\n\n## iii. Table of contents\n\n- A. Configurations of a region and gluing\n- B. The operator `M ⊗ 1`\n\n## iv. References\n\n* O. Bratteli & D. Robinson, Operator Algebras and Quantum Statistical Mechanics 2,\n  Section 6.1.",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 63,
@@ -6988,13 +7077,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/CondensedMatter/QuasiLocal/Symmetry.lean",
    "module": "PhyslibAlpha.CondensedMatter.QuasiLocal.Symmetry",
    "title": "Symmetries of the quantum net",
    "doc": "A group acting on the sites acts on the operators of regions by `*`-isomorphisms, compatibly with\nthe inclusions.\n\n## i. Overview\n\nLet a group `Γ` act on the sites, all of which carry the same finite configuration space `Ω₀`. The\ngroup moves a region `X` to `γ • X`, and a configuration of `γ • X` to one of `X` by reading the\nvalue at `γ • x` for `x ∈ X`. This moves an operator of `X` to an operator of `γ • X`: it is a\n`*`-isomorphism `A X → A (γ • X)`. It is compatible with the inclusion of regions, because it moves\nthe sites outside `X` to the sites outside `γ • X`.\n\n## ii. Key results\n\n- `cfgEquiv` : a configuration of `γ • X` is a configuration of `X`.\n- `quantumIso` : the `*`-homomorphism of operators carried by `γ`.\n- `quantumIso_incl` : naturality with respect to the inclusions of regions.\n- `symAction` : the group acts on the quasi-local algebra by `*`-automorphisms.\n\n## iii. Table of contents\n\n- A. Configurations of a moved region\n- B. The moved operators\n- C. The action on the quasi-local algebra\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Tom Ole Diem",
    "sections": [
     {
      "line": 60,
@@ -7164,13 +7255,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/CondensedMatter/TightBindingChain/Cube/AxisCommutation.lean",
    "module": "PhyslibAlpha.CondensedMatter.TightBindingChain.Cube.AxisCommutation",
    "title": "Which observables of the open tight binding cube commute",
    "doc": "## i. Overview\n\nThe six observables of the cube are the Hamiltonian `H` and the position `X` of each axis\n(`cubePairs`). Two of them on different axes commute (`bracket_cubePairs_of_ne`). Here the\nconverse: `H` and `X` of one axis do not commute, since their bracket has a nonzero expectation in\nthe maximal current state, and by Robertson's relation the product of their variances is positive\nin that state. So two distinct observables of the cube commute if and only if they lie on\ndifferent axes.\n\n## ii. Key results\n\n- `bracket_openHamiltonian_position_eq_zero_iff` : on one chain, `⁅H, X⁆ = 0` if and only if\n  `t = 0` or the chain has a single site, so the hypotheses below cannot be dropped.\n- `axisBracket_maxCurrentCubeVectorState_ne_zero` : in the maximal current state, the expectation\n  of `⁅H, X⁆` is nonzero on each axis.\n- `bracket_cubePairs_pair_ne_zero` : `H` and `X` of one axis do not commute.\n- `bracket_cubePairs_eq_zero_iff` : two distinct observables of the cube commute if and only if\n  they lie on different axes.\n- `variance_mul_variance_cubePairs_pos` : in the maximal current state, `Var H · Var X > 0` on\n  each axis.\n\n## iii. Table of contents\n\n- A. One chain: when `H` and `X` commute\n- B. The pair of an axis does not commute\n- C. Commuting and axes\n\n## iv. References\n\n* H. P. Robertson, *The uncertainty principle*, Phys. Rev. 34 (1929) 163.",
+   "copyright": "2026 Eduardo Nava-Hernandez",
    "sections": [
     {
      "line": 56,
@@ -7236,13 +7329,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/CondensedMatter/TightBindingChain/Cube/Basic.lean",
    "module": "PhyslibAlpha.CondensedMatter.TightBindingChain.Cube.Basic",
    "title": "The open tight binding cube",
    "doc": "## i. Overview\n\nThree open tight binding chains `Tx`, `Ty`, `Tz` along the axes of a cube give the sites\n`(nx, ny, nz)` and the Hilbert space `𝓗[Fin Nx × Fin Ny × Fin Nz]`. Each observable of a chain\nacts on its own axis and leaves the other two in place. Observables of different axes commute:\nonly the Hamiltonian and the position of the same axis fail to commute.\n\nIn the maximal current state of the cube, the product of the maximal current states of the three\nchains, each axis carries the constant `C` of its own chain. The energy–position uncertainty\nrelation of an axis is an equality exactly when that axis has `2` or `3` sites, and it is strict\nfrom `4` sites on, on the three axes at once.\n\nThe six observables `(H, X)` of the three axes satisfy Robertson's relation `|det Ω| ≤ det Σ` in\nevery state of the cube. Since different axes commute, `Ω` is block diagonal and `|det Ω|` is the\nproduct of the squared brackets of the three axes. In the maximal current state `Σ` is block\ndiagonal too, and `det Σ / |det Ω|` is the product of the squares of the three constants\n`C`, so the relation is strict from `4 × 4 × 4` on.\n\n## ii. Key results\n\n- `alongX`, `alongY`, `alongZ` : an observable of a chain acting on its axis of the cube.\n- `bracket_alongX_alongY`, `bracket_alongX_alongZ`, `bracket_alongY_alongZ` : different axes\n  commute.\n- `maxCurrentCubeState` : the maximal current state of the cube.\n- `uncertaintyRatio_alongX`, `uncertaintyRatio_alongY`, `uncertaintyRatio_alongZ` : each axis\n  carries its own `C`.\n- `centeredGramDefect_alongX_eq_zero_iff` (and `Y`, `Z`) : saturation on an axis iff it has `2`\n  or `3` sites.\n- `robertson_schrodinger_cube` : from `4 × 4 × 4` on, strict on the three axes.\n- `cubePairs` : the six observables `(H, X)` of the three axes.\n- `bracketMatrix_cubePairs` : in every state `Ω` is block diagonal, one block per axis.\n- `robertson_det_cube` : Robertson's relation for the six observables, in every state.\n- `covarianceMatrix_maxCurrentCubeState` : in the maximal current state `Σ` is block diagonal.\n- `det_covarianceMatrix_maxCurrentCubeState` : `det Σ = (C(x) C(y) C(z))² |det Ω|`.\n- `robertson_det_maxCurrentCubeState_strict` : from `4 × 4 × 4` on, `|det Ω| < det Σ`.\n\n## iii. Table of contents\n\n- A. Observables along the axes\n- B. Different axes commute\n- C. The maximal current state of the cube\n- D. The uncertainty relation along each axis\n- E. Robertson's relation for the six observables of the cube\n- F. Robertson's relation in the maximal current state of the cube\n\n## iv. References\n\n* https://www.damtp.cam.ac.uk/user/tong/aqm/aqmtwo.pdf. [ref: tong_statistical_physics]",
+   "copyright": "2026 Eduardo Nava-Hernandez",
    "sections": [
     {
      "line": 73,
@@ -7624,13 +7719,15 @@
     }
    ],
    "private": 5,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/CondensedMatter/TightBindingChain/Cube/MandelstamTamm.lean",
    "module": "PhyslibAlpha.CondensedMatter.TightBindingChain.Cube.MandelstamTamm",
    "title": "Mandelstam–Tamm and Cramér–Rao on the open tight binding cube",
    "doc": "## i. Overview\n\nIn the maximal current state of the cube, each axis sees only its own chain, so the\nMandelstam–Tamm ratio `⟨J⟩² / (4 Var H · Var X)` of an axis is the ratio `1 / C²` of the maximal\ncurrent state of that chain.\n\n## ii. Key results\n\n- `mandelstamTammRatio_alongX` (and `Y`, `Z`) : each axis of the cube has the ratio of its chain.\n\n## iii. Table of contents\n\n- A. The Mandelstam–Tamm ratio along each axis\n\n## iv. References\n\n* https://www.damtp.cam.ac.uk/user/tong/aqm/aqmtwo.pdf. [ref: tong_statistical_physics]",
+   "copyright": "2026 Eduardo Nava-Hernandez",
    "sections": [
     {
      "line": 41,
@@ -7664,13 +7761,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/CondensedMatter/TightBindingChain/Cube/VolumetricQuantum.lean",
    "module": "PhyslibAlpha.CondensedMatter.TightBindingChain.Cube.VolumetricQuantum",
    "title": "The volumetric quantum of the open tight binding cube",
    "doc": "## i. Overview\n\nA cube `Nx × Ny × Nz` carries one constant `C` per axis (`uncertaintyRatio_alongX`,\n`uncertaintyRatio_alongY`, `uncertaintyRatio_alongZ`), so its volumetric quantum is the product\n`δ(Nx) δ(Ny) δ(Nz)` of the dimensional quanta `δ = C - 1` of its axes: it vanishes iff some axis\nhas `2` or `3` sites, is positive from `4 × 4 × 4` on, grows strictly in each axis and stays\nbelow `(√(π² / 3 - 2) - 1)³`.\n\n## ii. Key results\n\n- `volQuantum` : the volumetric quantum `δ(Nx) δ(Ny) δ(Nz)` of the cube.\n- `volQuantum_eq_zero_iff`, `volQuantum_pos` : it vanishes iff some axis has `2` or `3` sites.\n- `volQuantum_lt_volQuantum_x` (and `y`, `z`), `volQuantum_lt` : strict growth in each axis,\n  below its limit.\n\n## iii. Table of contents\n\n- A. The volumetric quantum\n\n## iv. References\n\n* H. P. Robertson, *A general formulation of the uncertainty principle and its classical\n  interpretation*, Phys. Rev. 35 (1930) 667.",
+   "copyright": "2026 Eduardo Nava-Hernandez",
    "sections": [
     {
      "line": 46,
@@ -7736,13 +7835,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/CondensedMatter/TightBindingChain/Current/Basic.lean",
    "module": "PhyslibAlpha.CondensedMatter.TightBindingChain.Current.Basic",
    "title": "The current operator of the open tight binding chain",
    "doc": "The current operator `J = i (H X - X H)` of the open tight binding chain and its matrix elements.\n\n## i. Overview\n\nBy the Heisenberg equation the velocity of the electron is `dX/dt = i [H, X]` (with `ħ = 1`).\nOn the open tight binding chain this current operator `J = i (H X - X H)` only moves the\nelectron to a neighbouring site, with amplitude `∓ i a t`. Stationary states and localized\nstates carry no current.\n\nThe current only sees the hopping part `K = H - E₀` of the Hamiltonian, its kinetic energy. With\nposition it closes on `K`: `J X - X J = i a² K`. With the Hamiltonian it gives the rate of change\nof the current, and `H J - J H` is diagonal and vanishes inside the chain: the current changes only\nat the two ends, `-2 i a t²` on the first site and `2 i a t²` on the last. Finally `K` and `J` share\nno eigenvector: `K ψ = μ ψ` is a recurrence fixed by `ψ` on the first site, and `J ψ = 0` forces\n`X ψ` to solve the same recurrence and vanish there.\n\n## ii. Key results\n\n- `current` : the current operator `J = i (H X - X H)`.\n- `inner_current_eq` : `J` moves the electron exactly one site, with amplitude `∓ i a t`.\n- `inner_current_self_of_eigen` : stationary states carry no current.\n- `inner_current_localizedState` : localized states carry no current.\n- `hopping` : the hopping part `K = H - E₀` of the Hamiltonian.\n- `current_comp_position_sub` : `J X - X J = i a² K`.\n- `inner_openHamiltonian_comp_current_sub` : `H J - J H` lives on the two ends of the chain.\n- `eq_zero_of_hopping_eq_smul` : a solution of `K ψ = μ ψ` vanishing on the first site vanishes.\n- `eq_zero_of_hopping_eq_smul_of_current_eq_zero` : `K` and `J` share no eigenvector.\n\n## iii. Table of contents\n\n- A. The current operator\n- B. Matrix elements\n- C. States without current\n- D. The hopping part of the Hamiltonian\n- E. Commutators of the current\n- F. The hopping and the current share no eigenvector\n\n## iv. References\n\n* https://www.damtp.cam.ac.uk/user/tong/aqm/aqmtwo.pdf. [ref: tong_statistical_physics]",
+   "copyright": "2026 Eduardo Nava-Hernandez",
    "sections": [
     {
      "line": 62,
@@ -7916,13 +8017,15 @@
     }
    ],
    "private": 4,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/CondensedMatter/TightBindingChain/Current/Eigenstates.lean",
    "module": "PhyslibAlpha.CondensedMatter.TightBindingChain.Current.Eigenstates",
    "title": "The current eigenstates of the open tight binding chain",
    "doc": "## i. Overview\n\nThe standing waves `sin ((n + 1) k π / (N + 1))` of the open chain vanish just outside both\nends. Dressed with the phase `iⁿ`, they diagonalize the current operator `J`: the state\n`∑ n, iⁿ sin ((n + 1) k π / (N + 1)) |n⟩` moves with current `2 a t cos (k π / (N + 1))`.\n\n## ii. Key results\n\n- `currentEigenstate` : the current eigenstate with quantum number `k`.\n- `current_currentEigenstate` : `J ψ_k = 2 a t cos (k π / (N + 1)) ψ_k`.\n- `norm_sq_currentEigenstate` : `‖ψ_k‖² = (N + 1) / 2` for `1 ≤ k ≤ N`.\n\n## iii. Table of contents\n\n- A. The current eigenstates\n- B. The eigenvalue equation\n- C. The norm\n\n## iv. References\n\n* https://www.damtp.cam.ac.uk/user/tong/aqm/aqmtwo.pdf. [ref: tong_statistical_physics]",
+   "copyright": "2026 Eduardo Nava-Hernandez",
    "sections": [
     {
      "line": 44,
@@ -7988,13 +8091,15 @@
     }
    ],
    "private": 2,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/CondensedMatter/TightBindingChain/Current/MandelstamTamm.lean",
    "module": "PhyslibAlpha.CondensedMatter.TightBindingChain.Current.MandelstamTamm",
    "title": "Mandelstam–Tamm and Cramér–Rao in the open tight binding chain",
    "doc": "## i. Overview\n\nThe bracket `⁅H, X⁆ = -(i/2) (H X - X H)` is `-J / 2`, with `J = i (H X - X H)` the current, the\nvelocity `d⟨X⟩/dt`. The energy–position uncertainty relation therefore reads in two ways:\n\n* **Mandelstam–Tamm**: `|⟨J⟩| ≤ 2 ΔH ΔX`, the position moves no faster than the energy spread\n  allows;\n* **quantum Cramér–Rao**: the error-propagation Fisher information `⟨J⟩² / Var X` of the position,\n  for a displacement generated by `H`, is at most `4 Var H`, the quantum Fisher information of a\n  pure state.\n\nBoth are the single statement `⟨J⟩² ≤ 4 Var H · Var X`, that is `mandelstamTammRatio ≤ 1`.\n\n## ii. Key results\n\n- `currentObservable` : the current `J` as an observable.\n- `coe_bracket_openHamiltonian_position` : `⁅H, X⁆ = -J / 2`.\n- `sq_expectation_current_le` : `⟨J⟩² ≤ 4 Var H · Var X`.\n- `mandelstam_tamm` : `|⟨J⟩| ≤ 2 ΔH ΔX`.\n- `cramer_rao` : `⟨J⟩² / Var X ≤ 4 Var H`.\n- `mandelstamTammRatio` : `⟨J⟩² / (4 Var H · Var X)`, at most one by\n  `mandelstamTammRatio_le_one`.\n\n## iii. Table of contents\n\n- A. The current as an observable\n- B. Mandelstam–Tamm and Cramér–Rao\n\n## iv. References\n\n* https://www.damtp.cam.ac.uk/user/tong/aqm/aqmtwo.pdf. [ref: tong_statistical_physics]",
+   "copyright": "2026 Eduardo Nava-Hernandez",
    "sections": [
     {
      "line": 57,
@@ -8072,13 +8177,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/CondensedMatter/TightBindingChain/Current/SpeedLimit.lean",
    "module": "PhyslibAlpha.CondensedMatter.TightBindingChain.Current.SpeedLimit",
    "title": "The speed limit of the open tight binding chain",
    "doc": "## i. Overview\n\nFor `t ≠ 0` the current eigenstates `ψ_1, …, ψ_N` carry distinct currents, so, normalized, they\nform an orthonormal basis. Every current `2 a t cos (k π / (N + 1))` is at most\n`maxCurrent = 2 |a t| cos (π / (N + 1))` in absolute value, hence so is the current `⟨J⟩` of\nevery state, pure or mixed: no state moves faster. The maximal current state reaches the bound.\n\n## ii. Key results\n\n- `currentBasis` : the orthonormal basis of normalized current eigenstates.\n- `re_inner_current_eq_sum` : `re ⟨ψ|J|ψ⟩ = ∑ k, λ_k |⟨k|ψ⟩|²` in that basis.\n- `abs_currentEigenvalue_le` : `|2 a t cos (k π / (N + 1))| ≤ maxCurrent` for `1 ≤ k ≤ N`.\n- `expectation_current_maxCurrentState` : `⟨J⟩ = 2 a t cos (π / (N + 1))` in the maximal current\n  state.\n- `abs_expectation_current_le` : `|⟨J⟩| ≤ maxCurrent` in every state.\n- `abs_expectation_current_maxCurrentState` : the maximal current state moves at `maxCurrent`.\n\n## iii. Table of contents\n\n- A. The largest current\n- B. The basis of current eigenstates\n- C. No state is faster\n\n## iv. References\n\n* https://www.damtp.cam.ac.uk/user/tong/aqm/aqmtwo.pdf. [ref: tong_statistical_physics]",
+   "copyright": "2026 Eduardo Nava-Hernandez",
    "sections": [
     {
      "line": 51,
@@ -8192,13 +8299,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/CondensedMatter/TightBindingChain/Current/TimeReversal.lean",
    "module": "PhyslibAlpha.CondensedMatter.TightBindingChain.Current.TimeReversal",
    "title": "Time reversal in the open tight binding chain",
    "doc": "## i. Overview\n\nTime reversal `Θ` conjugates the amplitudes of a state in the site basis. It is antiunitary. The\nHamiltonian and the position operator have real matrix elements, so they commute with `Θ`, while\nthe current `J = i (H X - X H)` changes sign.\n\n## ii. Key results\n\n- `timeReversal` : complex conjugation of amplitudes.\n- `inner_timeReversal`, `norm_timeReversal` : `Θ` is antiunitary.\n- `apply_timeReversal` : an operator with real matrix elements commutes with `Θ`.\n- `openHamiltonian_timeReversal`, `position_timeReversal` : `H` and `X` commute with `Θ`.\n- `current_timeReversal` : `Θ` reverses the current.\n\n## iii. Table of contents\n\n- A. Time reversal\n\n## iv. References\n\n* https://www.damtp.cam.ac.uk/user/tong/aqm/aqmtwo.pdf. [ref: tong_statistical_physics]",
+   "copyright": "2026 Eduardo Nava-Hernandez",
    "sections": [
     {
      "line": 44,
@@ -8296,13 +8405,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Basic.lean",
    "module": "PhyslibAlpha.CondensedMatter.TightBindingChain.MaxCurrentState.Basic",
    "title": "The maximal current state of the open tight binding chain",
    "doc": "## i. Overview\n\nThe longest standing wave, the current eigenstate with `k = 1`, carries the largest current\n`2 a t cos (π / (N + 1))` among the current eigenstates when `t ≥ 0`. Normalized, it is the\nmaximal current state. It sits at\nthe centre of the chain, `⟨X⟩ = a (N - 1) / 2`, at the centre of the band, `⟨H⟩ = E0`, and\n`⟨⁅H, X⁆⟩ = -a t cos (π / (N + 1))` is the bound of its energy–position uncertainty relation.\n\n## ii. Key results\n\n- `currentEigenvalue_le_one` : for `t ≥ 0`, `k = 1` carries the largest current.\n- `inner_openHamiltonian_currentEigenstate` : the Hamiltonian on the current eigenstates.\n- `maxCurrentState` : the maximal current state, of norm one by `norm_maxCurrentState`.\n- `expectation_openHamiltonian_maxCurrentState` : `⟨H⟩ = E0`.\n- `expectation_position_maxCurrentState` : `⟨X⟩ = a (N - 1) / 2`.\n- `expectation_bracket_maxCurrentState` : `⟨⁅H, X⁆⟩ = -a t cos (π / (N + 1))`.\n- `robertson_schrodinger_maxCurrentState` : the energy–position uncertainty relation of the maximal\n  current state.\n\n## iii. Table of contents\n\n- A. The largest current\n- B. The Hamiltonian on the current eigenstates\n- C. The maximal current state\n- D. Expectations\n\n## iv. References\n\n* https://www.damtp.cam.ac.uk/user/tong/aqm/aqmtwo.pdf. [ref: tong_statistical_physics]",
+   "copyright": "2026 Eduardo Nava-Hernandez",
    "sections": [
     {
      "line": 54,
@@ -8428,13 +8539,15 @@
     }
    ],
    "private": 2,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/FluctuationAngle.lean",
    "module": "PhyslibAlpha.CondensedMatter.TightBindingChain.MaxCurrentState.FluctuationAngle",
    "title": "The fluctuation angle of the maximal current state",
    "doc": "## i. Overview\n\nIn the maximal current state the energy and position fluctuations are uncorrelated, so the\npairing `ω(δH δX)` reduces to the bracket term `a t cos (π / (N + 1))`. Its modulus over\n`σ_H σ_X` is the cosine of the angle between the two fluctuations: the fluctuation angle, with\n`cos θ = 1 / C`. It vanishes exactly for `N = 2, 3`, opens from four sites on, grows\nstrictly with `N` and stays below `arccos (1 / √(π² / 3 - 2))`. The excess `δ = C - 1` is the\ndimensional quantum of the chain, and it fixes the angle.\n\n## ii. Key results\n\n- `fluctuationAngle` : the angle between the energy and position fluctuations.\n- `fluctuationAngle_eq` : `θ = arccos (1 / C)`.\n- `fluctuationAngle_eq_zero_iff`, `fluctuationAngle_pos` : it vanishes iff `N = 2, 3`, and opens\n  from `N = 4`.\n- `fluctuationAngle_lt_fluctuationAngle`, `fluctuationAngle_lt` : it grows strictly with `N`, below\n  its limit.\n- `dimQuantum` : the dimensional quantum `δ = C - 1`.\n- `fluctuationAngle_eq_dimQuantum` : `θ = arccos (1 / (1 + δ))`.\n\n## iii. Table of contents\n\n- A. The fluctuation angle\n- B. The dimensional quantum\n\n## iv. References\n\n* H. P. Robertson, *A general formulation of the uncertainty principle and its classical\n  interpretation*, Phys. Rev. 35 (1930) 667.",
+   "copyright": "2026 Eduardo Nava-Hernandez",
    "sections": [
     {
      "line": 53,
@@ -8552,13 +8665,15 @@
     }
    ],
    "private": 1,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/LongChainLimit.lean",
    "module": "PhyslibAlpha.CondensedMatter.TightBindingChain.MaxCurrentState.LongChainLimit",
    "title": "The long chain limit of `C`",
    "doc": "## i. Overview\n\nIn the maximal current state, `C` depends only on the number of sites `N`. As the chain\ngrows, `θ = π / (N + 1) → 0`, `(N + 1) sin θ → π` and `cos θ → 1`, so the closed form of\n`C²` tends to `2 (π² / 6 - 1) = π² / 3 - 2`. Every long enough chain has\n`C` close to `C_∞ = √(π² / 3 - 2) ≈ 1.1357`, which is strictly larger than one: the\nuncertainty relation stays strict in the long chain limit.\n\n## ii. Key results\n\n- `uncertaintyRatioSqForm` : the closed form of `C²` as a function of `n = N + 1`.\n- `uncertaintyRatio_sq_eq_uncertaintyRatioSqForm` : `C² = uncertaintyRatioSqForm (N + 1)` for\n  `N ≥ 2`.\n- `tendsto_uncertaintyRatioSqForm` : `uncertaintyRatioSqForm n → π² / 3 - 2` as `n → ∞`.\n- `tendsto_uncertaintyRatio` : `C → √(π² / 3 - 2)` along any family of chains with `N → ∞`.\n- `one_lt_sqrt_pi_sq_div_three_sub_two` : `1 < √(π² / 3 - 2)`.\n\n## iii. Table of contents\n\n- A. The limit of the closed form\n- B. The limit of `C`\n\n## iv. References\n\n* https://www.damtp.cam.ac.uk/user/tong/aqm/aqmtwo.pdf. [ref: tong_statistical_physics]",
+   "copyright": "2026 Eduardo Nava-Hernandez",
    "sections": [
     {
      "line": 48,
@@ -8612,13 +8727,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/LongChainMonotonicity.lean",
    "module": "PhyslibAlpha.CondensedMatter.TightBindingChain.MaxCurrentState.LongChainMonotonicity",
    "title": "`C` grows with the length of the chain",
    "doc": "## i. Overview\n\nFrom four sites on, `C` of the maximal current state is strictly increasing in the number\nof sites `N`, and so it stays strictly below its long chain limit `√(π² / 3 - 2)`. With\n`x = π / (N + 1)`, the closed form of `C²` is\n`((π² / x² - 2π / x - 4 + 8x / π) / 3) tan² x - 2 + 4x / π`, whose derivative is negative on\n`0 < x ≤ π / 5`. The sign follows from Taylor bounds for `sin` and `cos`, the bounds\n`3.141592 < π < 3.141593`, and a Bernstein certificate for one polynomial of degree twelve.\n\n## ii. Key results\n\n- `uncertaintyRatioSqForm_strictMonoOn` : the closed form of `C²` is strictly increasing on `n ≥ 5`.\n- `uncertaintyRatio_lt_uncertaintyRatio` : `C` strictly increases with `N` from four sites on.\n- `uncertaintyRatio_lt_sqrt_pi_sq_div_three_sub_two` : `C < √(π² / 3 - 2)` from four sites on.\n\n## iii. Table of contents\n\n- A. Taylor bounds\n- B. A polynomial certificate\n- C. The closed form in the angle\n- D. Monotonicity\n\n## iv. References\n\n* https://www.damtp.cam.ac.uk/user/tong/aqm/aqmtwo.pdf. [ref: tong_statistical_physics]",
+   "copyright": "2026 Eduardo Nava-Hernandez",
    "sections": [
     {
      "line": 49,
@@ -8664,13 +8781,15 @@
     }
    ],
    "private": 11,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/MandelstamTamm.lean",
    "module": "PhyslibAlpha.CondensedMatter.TightBindingChain.MaxCurrentState.MandelstamTamm",
    "title": "Mandelstam–Tamm and Cramér–Rao in the maximal current state",
    "doc": "## i. Overview\n\nIn the maximal current state the current is `⟨J⟩ = 2 a t cos (π / (N + 1))`\n(`expectation_current_maxCurrentState`), and the Mandelstam–Tamm ratio\n`⟨J⟩² / (4 Var H · Var X)` is exactly `1 / C²`. Mandelstam–Tamm and Cramér–Rao are therefore\nattained together, exactly for `N = 2` and `N = 3`, and both are missed from four sites on.\n\n## ii. Key results\n\n- `mandelstamTammRatio_maxCurrentState` : the ratio is `1 / C²`.\n- `mandelstamTammRatio_maxCurrentState_eq_one_iff` : both bounds are attained iff `N = 2, 3`.\n- `mandelstamTammRatio_maxCurrentState_lt_one` : both are missed for `N ≥ 4`.\n\n## iii. Table of contents\n\n- A. The Mandelstam–Tamm ratio of the maximal current state\n\n## iv. References\n\n* https://www.damtp.cam.ac.uk/user/tong/aqm/aqmtwo.pdf. [ref: tong_statistical_physics]",
+   "copyright": "2026 Eduardo Nava-Hernandez",
    "sections": [
     {
      "line": 45,
@@ -8704,13 +8823,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Saturation.lean",
    "module": "PhyslibAlpha.CondensedMatter.TightBindingChain.MaxCurrentState.Saturation",
    "title": "Saturation of the uncertainty relation in the maximal current state",
    "doc": "## i. Overview\n\nThe energy–position uncertainty relation is an equality exactly when the centered Gram defect\nvanishes, that is when the energy and position fluctuations of the state are parallel. In the\nmaximal current state of an open chain with `N ≥ 2` sites and hopping `t ≠ 0` this happens only\nfor `N = 2` and `N = 3`: the first two sites force `4 cos² (π / (N + 1)) = N - 1`. From four\nsites on, the relation is strict.\n\n## ii. Key results\n\n- `inner_energyFluctuation_maxCurrentState` : the energy fluctuation, site by site.\n- `inner_positionFluctuation_maxCurrentState` : the position fluctuation, site by site.\n- `centeredGramDefect_maxCurrentState_eq_zero_iff` : the defect vanishes iff `N = 2, 3`.\n- `robertson_schrodinger_maxCurrentState_eq_iff` : the relation is an equality iff `N = 2, 3`.\n- `robertson_schrodinger_maxCurrentState_lt` : the relation is strict for `N ≥ 4`.\n\n## iii. Table of contents\n\n- A. The fluctuations\n- B. Saturation\n\n## iv. References\n\n* https://www.damtp.cam.ac.uk/user/tong/aqm/aqmtwo.pdf. [ref: tong_statistical_physics]",
+   "copyright": "2026 Eduardo Nava-Hernandez",
    "sections": [
     {
      "line": 48,
@@ -8764,13 +8885,15 @@
     }
    ],
    "private": 1,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/UncertaintyRatio.lean",
    "module": "PhyslibAlpha.CondensedMatter.TightBindingChain.MaxCurrentState.UncertaintyRatio",
    "title": "The elemental uncertainty of the open tight binding chain",
    "doc": "## i. Overview\n\nIn the maximal current state of the open chain the energy and position fluctuations are\nuncorrelated, so the uncertainty relation closes as an identity: the variance product is the\nsquared bracket `(a t cos (π / (N + 1)))²` plus the centered Gram defect. The uncertainty ratio\n`C = √(Var H · Var X) / |a t cos (π / (N + 1))|` is therefore at least one, and equals one exactly\nfor `N = 2` and `N = 3`. From four sites on it is strictly larger than one.\n\n## ii. Key results\n\n- `covariance_maxCurrentState` : `Cov(H, X) = 0` in the maximal current state.\n- `variance_mul_variance_maxCurrentState` : `Var H · Var X = (a t cos (π / (N + 1)))² + defect`.\n- `uncertaintyRatio` : `C = √(Var H · Var X) / |a t cos (π / (N + 1))|`.\n- `one_le_uncertaintyRatio`, `uncertaintyRatio_eq_one_iff`, `one_lt_uncertaintyRatio`.\n- `robertson_schrodinger_uncertaintyRatio` : everything at once.\n\n## iii. Table of contents\n\n- A. No correlation\n- B. The uncertainty ratio `C`\n\n## iv. References\n\n* https://www.damtp.cam.ac.uk/user/tong/aqm/aqmtwo.pdf. [ref: tong_statistical_physics]",
+   "copyright": "2026 Eduardo Nava-Hernandez",
    "sections": [
     {
      "line": 48,
@@ -8848,13 +8971,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/CondensedMatter/TightBindingChain/MaxCurrentState/Variances.lean",
    "module": "PhyslibAlpha.CondensedMatter.TightBindingChain.MaxCurrentState.Variances",
    "title": "The variances of the maximal current state",
    "doc": "## i. Overview\n\nIn the maximal current state of the open chain with `N` sites, write `θ = π / (N + 1)`. The energy\nand position variances are\n\n  `Var H = 4 t² sin² θ (N - 1) / (N + 1)`,\n  `Var X = a² (((N + 1)² + 2) / 12 - 1 / (2 sin² θ))`.\n\nThe position variance rests on one sum over the `(N + 1)`-th roots of unity,\n`∑ j < N + 1, (j - (N + 1) / 2)² cos (2 j θ) = (N + 1) / (2 sin² θ)`, obtained by summation by\nparts. Hence `C²` has the closed form\n`2 (N - 1) / ((N + 1) cos² θ) · (((N + 1)² + 2) / 6 · sin² θ - 1)`.\n\n## ii. Key results\n\n- `variance_openHamiltonian_maxCurrentState` : `Var H = 4 t² sin² θ (N - 1) / (N + 1)`.\n- `variance_position_maxCurrentState` : `Var X = a² (((N + 1)² + 2) / 12 - 1 / (2 sin² θ))`.\n- `uncertaintyRatio_sq_eq` : the closed form of `C²`.\n\n## iii. Table of contents\n\n- A. Sums over the roots of unity\n- B. The energy variance\n- C. The position variance\n- D. The closed form of `C`\n\n## iv. References\n\n* https://www.damtp.cam.ac.uk/user/tong/aqm/aqmtwo.pdf. [ref: tong_statistical_physics]",
+   "copyright": "2026 Eduardo Nava-Hernandez",
    "sections": [
     {
      "line": 53,
@@ -8900,13 +9025,15 @@
     }
    ],
    "private": 5,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/CondensedMatter/TightBindingChain/Open/Basic.lean",
    "module": "PhyslibAlpha.CondensedMatter.TightBindingChain.Open.Basic",
    "title": "The tight binding chain with open boundary conditions",
    "doc": "The position operator and the Hamiltonian of the tight binding chain with open boundaries.\n\n## i. Overview\n\nA finite piece of a 1d solid has two ends: the electron cannot hop from the last site back to\nthe first. This is the tight binding chain with open boundary conditions. It also carries a\nposition operator, which the periodic chain lacks, since there the site `N` is identified\nwith the site `0`.\n\n## ii. Key results\n\n- `position` : the position operator `X = ∑ n, a n |n⟩⟨n|`.\n- `openHamiltonian` : the Hamiltonian with open boundary conditions.\n- `inner_openHamiltonian` : the open chain only hops between neighbouring sites.\n- `inner_commutator_position` : `⟨m|(A X - X A)|n⟩ = a (n - m) ⟨m|A|n⟩`.\n\n## iii. Table of contents\n\n- A. The position operator\n- B. The Hamiltonian with open boundary conditions\n  - B.1. Hermiticity\n  - B.2. Matrix elements\n- C. Commutators with the position operator\n\n## iv. References\n\n* https://www.damtp.cam.ac.uk/user/tong/aqm/aqmtwo.pdf. [ref: tong_statistical_physics]",
+   "copyright": "2026 Eduardo Nava-Hernandez",
    "sections": [
     {
      "line": 49,
@@ -8988,13 +9115,15 @@
     }
    ],
    "private": 1,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/CondensedMatter/TightBindingChain/Open/LocalizedUncertainty.lean",
    "module": "PhyslibAlpha.CondensedMatter.TightBindingChain.Open.LocalizedUncertainty",
    "title": "The uncertainty of a localized electron",
    "doc": "## i. Overview\n\nAn eigenvector of `H` or of `X` has no fluctuation in that observable, so its centered Gram\ndefect vanishes. For a localized electron `|n⟩` this means `Var X = 0`: both sides of the\nenergy–position uncertainty relation are `0`, and the relation says nothing about the pair.\n\nThe pair does not vanish there. As soon as the chain hops, `t ≠ 0`, and has two sites, a\nlocalized electron fluctuates in energy, `Var H > 0`: fixing the position sends the whole\nuncertainty to the energy, and only the bracket `⟨n|⁅H, X⁆|n⟩` is zero.\n\nConversely, a vector with positive defect is an eigenvector of neither `H` nor `X`: it\nfluctuates in both.\n\n## ii. Key results\n\n- `flucOf_eq_zero_of_eigen` : an eigenvector has no fluctuation in its observable.\n- `fluc_ne_zero_of_defectOf_pos` : a positive defect forces fluctuations in `H` and `X`.\n- `flucOf_openHamiltonian_localizedState_ne_zero` : a localized electron fluctuates in energy.\n- `inner_bracket_localizedState` : the bracket vanishes in a localized electron.\n- `robertson_schrodinger_localizedState` : in `|n⟩`, `Var X = 0` and the defect is `0`, while\n  `Var H > 0`.\n\n## iii. Table of contents\n\n- A. Eigenvectors\n- B. The localized electron\n\n## iv. References\n\n* H. P. Robertson, *The uncertainty principle*, Phys. Rev. 34 (1929) 163.\n* https://www.damtp.cam.ac.uk/user/tong/aqm/aqmtwo.pdf. [ref: tong_statistical_physics]",
+   "copyright": "2026 Eduardo Nava-Hernandez",
    "sections": [
     {
      "line": 55,
@@ -9080,13 +9209,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/CondensedMatter/TightBindingChain/Open/Uncertainty.lean",
    "module": "PhyslibAlpha.CondensedMatter.TightBindingChain.Open.Uncertainty",
    "title": "Energy–position uncertainty in the open tight binding chain",
    "doc": "The energy–position uncertainty relation for the tight binding chain with open boundaries.\n\n## i. Overview\n\nThe Hamiltonian and the position operator of the tight binding chain with open boundary\nconditions are observables of the C⋆-algebra of operators on the Hilbert space of the chain.\nThe Robertson–Schrödinger relation then bounds their spreads in every state by the expected\nbracket `⁅H, X⁆ = -(i/2) (H X - X H)`, which only sees hopping: its matrix elements are\n`-(i/2) a (n - m) ⟨m|H|n⟩`.\n\n## ii. Key results\n\n- `toObservable` : a hermitian operator of the chain as an observable.\n- `openHamiltonianObservable`, `positionObservable` : `H` and `X` as observables.\n- `inner_bracket_openHamiltonian_position` : the matrix elements of `⁅H, X⁆`.\n- `inner_bracket_openHamiltonian_position_eq` : `⁅H, X⁆` moves exactly one site `a`.\n- `robertson_schrodinger_openHamiltonian_position` : the energy–position uncertainty relation.\n\n## iii. Table of contents\n\n- A. The Hamiltonian and position as observables\n- B. The bracket of the Hamiltonian and position\n- C. The uncertainty relation\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Eduardo Nava-Hernandez",
    "sections": [
     {
      "line": 56,
@@ -9152,13 +9283,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Basic.lean",
    "module": "PhyslibAlpha.CondensedMatter.TightBindingChain.VelocityBand.Basic",
    "title": "The velocity band of forced uncertainty",
    "doc": "## i. Overview\n\nA unit vector has minimum uncertainty when the energy–position uncertainty relation is an\nequality, that is when the centered Gram defect of `H` and `X` vanishes. These vectors form a\ncompact set, so among them some moves fastest: the threshold `v*` is attained. Every vector\nmoving faster, with `v* < |⟨J⟩| ≤ maxCurrent`, carries a positive defect. This is the velocity\nband `(v*, maxCurrent]`. For `N = 2, 3` the maximal current state has minimum uncertainty,\nso the band is empty.\n\n## ii. Key results\n\n- `defectOf` : the centered Gram defect of `H` and `X` in a vector.\n- `minUncertainty` : the unit vectors of minimum uncertainty, a compact set.\n- `threshold` : the largest speed `|⟨J⟩|` of a vector of minimum uncertainty, attained by\n  `exists_threshold`.\n- `velocityBand` : the band `(threshold, maxCurrent]`.\n- `defectOf_pos_of_mem_velocityBand` : in the band, the defect is forced.\n- `velocityBand_eq_empty` : for `N = 2, 3` the band is empty.\n\n## iii. Table of contents\n\n- A. Uncertainty in a vector\n- B. The threshold\n- C. The band\n\n## iv. References\n\n* https://www.damtp.cam.ac.uk/user/tong/aqm/aqmtwo.pdf. [ref: tong_statistical_physics]",
+   "copyright": "2026 Eduardo Nava-Hernandez",
    "sections": [
     {
      "line": 53,
@@ -9320,13 +9453,15 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   },
   {
    "file": "PhyslibAlpha/CondensedMatter/TightBindingChain/VelocityBand/Width.lean",
    "module": "PhyslibAlpha.CondensedMatter.TightBindingChain.VelocityBand.Width",
    "title": "The velocity band is open from four sites on",
    "doc": "## i. Overview\n\nTime reversal `Θ` (`Current/TimeReversal`) commutes with `H` and `X` and reverses the current `J`,\nso it keeps the uncertainty defect, as does a global phase. A unit vector moving at the\nspeed limit is, up to a phase, an extreme current eigenstate, the maximal current state or its\ntime reverse, so it has the defect of the maximal current state. From four sites on this defect\nis positive, and since the threshold is attained it lies strictly below the speed limit: the\nvelocity band is not empty.\n\n## ii. Key results\n\n- `defectOf_timeReversal`, `meanOf_current_timeReversal` : `Θ` keeps the defect and reverses\n  the current.\n- `defectOf_eq_of_meanOf_current_eq` : at the speed limit, the defect of the maximal current state.\n- `threshold_lt_maxCurrent`, `maxCurrent_mem_velocityBand` : for `N ≥ 4` the band is not empty.\n\n## iii. Table of contents\n\n- A. Time reversal and the uncertainty defect\n- B. The speed limit is reached only by extreme eigenstates\n- C. The band is not empty\n\n## iv. References\n\n* https://www.damtp.cam.ac.uk/user/tong/aqm/aqmtwo.pdf. [ref: tong_statistical_physics]",
+   "copyright": "2026 Eduardo Nava-Hernandez",
    "sections": [
     {
      "line": 49,
@@ -9432,7 +9567,8 @@
     }
    ],
    "private": 0,
-   "aliases": 0
+   "aliases": 0,
+   "informal": 0
   }
  ]
 }

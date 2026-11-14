@@ -8,7 +8,7 @@ proof: formalized
 
 # The Pure U(1) case with 1 fermion
 
-The module `Physlib.QFT.QED.AnomalyCancellation.LowDim.One`, [Physlib/QFT/QED/AnomalyCancellation/LowDim/One.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/QED/AnomalyCancellation/LowDim/One.lean): 1 declaration, 0 with a docstring.
+The module `Physlib.QFT.QED.AnomalyCancellation.LowDim.One`, [Physlib/QFT/QED/AnomalyCancellation/LowDim/One.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/Physlib/QFT/QED/AnomalyCancellation/LowDim/One.lean): 1 declaration, none with a docstring.
 
 > We show that in this case the charge must be zero.
 
