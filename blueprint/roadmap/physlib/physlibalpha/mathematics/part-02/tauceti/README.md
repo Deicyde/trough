@@ -2,6 +2,8 @@
 
 The folder [PhyslibAlpha/Mathematics/TauCeti/](https://github.com/leanprover-community/physlib/tree/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/Mathematics/TauCeti): 40 modules, an article each, in path order with Basic.lean first in its folder.
 
+The headers of 37 of its 40 files read “Copyright (c) 2026 The Tau Ceti contributors”: the folder holds code of [Tau Ceti](../../../../../tauceti/README.md), which has a chapter of its own here.
+
 ## [Bochner's theorem on discrete… to Normalizing positive-definite…](part-01/README.md)
 
 - [Bochner's theorem on discrete abelian groups](part-01/analysis-bochner-discretegroup.md)
