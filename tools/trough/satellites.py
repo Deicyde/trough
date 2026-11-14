@@ -10,7 +10,8 @@ declarations, by the first of three rules that gives any:
 
 1. the Lean names of the blueprint nodes no other node uses, marked \\leanok;
 2. the names its README sets in code spans that the project declares;
-3. the theorems of a module named Main, MainTheorem(s) or Statement(s).
+3. the theorems of a top-level module named Main, MainTheorem(s) or Statement(s),
+   as `Main` or `<Library>.Main`.
 
 A project with headlines is a card: its `lean:` names are its headlines, its
 statement edges the Mathlib concepts and other chapters' declarations their
@@ -55,7 +56,7 @@ THEOREMS = ("theorem", "lemma")
 RULES = {
     "blueprint": "Lean names of the blueprint nodes that no other node uses, marked \\leanok",
     "readme": "theorems its README names in code",
-    "main": "theorems of its module named Main, MainTheorem(s) or Statement(s)",
+    "main": "theorems of its top-level module named Main, MainTheorem(s) or Statement(s)",
 }
 LICENSE_NAME = re.compile(r"^(?:LICEN[CS]E|COPYING)(?:[-._][^/]*)?$", re.I)
 README_NAME = re.compile(r"^README(?:\.md|\.markdown)?$", re.I)
@@ -393,7 +394,7 @@ def headlines(checkout: Path, paths: list[str], readmes: list[str],
     if names:
         return "readme", names[:MAX_HEADLINES], len(names)
     names = [name for name, (_, module, found) in sorted(declared.items(), key=lambda item: (item[1][0], item[1][2].line))
-             if module.rsplit(".", 1)[-1] in MAIN_MODULES and found.kind in THEOREMS]
+             if module.split(".")[-1] in MAIN_MODULES and len(module.split(".")) <= 2 and found.kind in THEOREMS]
     if names:
         return "main", names[:MAX_HEADLINES], len(names)
     return None, [], 0

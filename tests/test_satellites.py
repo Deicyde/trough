@@ -423,3 +423,12 @@ def test_the_committed_records_build_the_chapter():
         if item["readme"].get("excerpt"):
             assert item["license"]["spdx"]
     assert Counter(override["home"].split(":")[0] for override in overrides.values())
+
+
+def test_only_a_top_level_main_module_names_headlines(tmp_path):
+    def declared(module: str, kind: str = "theorem") -> tuple:
+        return (module.replace(".", "/") + ".lean", module, satellites.leansource.Declaration("x", kind, 1, False))
+    nested = {"A.Sub.Main.t": declared("A.Sub.Main")}
+    assert satellites.headlines(tmp_path, [], [""], nested) == (None, [], 0)
+    top = nested | {"A.Main.t": declared("A.Main"), "A.Main.d": declared("A.Main", "def")}
+    assert satellites.headlines(tmp_path, [], [""], top) == ("main", ["A.Main.t"], 1)
