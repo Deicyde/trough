@@ -9,3 +9,4 @@
 - [Structure theory of endomorphisms](structure-theory-of-endomorphisms/README.md)
 - [Bilinear and quadratic forms](bilinear-and-quadratic-forms/README.md)
 - [Finite-dimensional inner product spaces (see also Hilbert spaces, below)](finite-dimensional-inner-product-spaces-see-also/README.md)
+- [Projects building on Linear algebra (1)](projects/README.md)

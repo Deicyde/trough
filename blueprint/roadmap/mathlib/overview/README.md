@@ -12,3 +12,4 @@ Mathlib's own overview of what it contains, area by area ([docs/overview.yaml](h
 - [Dynamics](dynamics/README.md)
 - [Data structures](data-structures/README.md)
 - [Logic and computation](logic-and-computation/README.md)
+- [Projects across Mathlib (1)](projects/README.md)

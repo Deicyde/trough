@@ -14,3 +14,4 @@ The text is the blueprint's, under its Apache-2.0 license: each page has a secti
 - [Tertiary explicit estimates](tertiary-explicit-estimates/README.md)
 - [Iwaniec-Kowalski](iwaniec-kowalski/README.md)
 - [Bombieri-Vinogradov](bombieri-vinogradov/README.md)
+- [Projects building on PNT+ (1)](projects/README.md)

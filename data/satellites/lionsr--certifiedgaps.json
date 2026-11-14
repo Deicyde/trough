@@ -1,0 +1,263 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "LionSR/CertifiedGaps",
+ "slug": "lionsr--certifiedgaps",
+ "rev": "d00eca060ecbaf0987d7f00e8b6c36ef4592d1c4",
+ "date": "2026-11-12T15:26:34Z",
+ "stable": "e3541bfdfb000e8432eb9b1f057f3ab101da3b04c0b3ea918fcb1561dabf2784",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": null,
+  "file": null,
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Certified Spectral Gaps of Quantum Spin Chains",
+  "excerpt": null
+ },
+ "lean_files": 205,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.36.0-rc1",
+ "mathlib": "807d3836b165983210ee2ecf3cd28f239436949c",
+ "requirements": [],
+ "libraries": [
+  {
+   "name": "CertifiedGaps",
+   "src": "code/lean",
+   "roots": [
+    "CertifiedGaps"
+   ]
+  },
+  {
+   "name": "SeedKernel",
+   "src": "code/lean",
+   "roots": [
+    "SeedKernel",
+    "SeedKernel.Audit"
+   ]
+  },
+  {
+   "name": "SeedKernelBench",
+   "src": "code/lean",
+   "roots": [
+    "SeedKernel.Bench",
+    "SeedKernelBench"
+   ]
+  },
+  {
+   "name": "SeedKernelEval",
+   "src": "code/lean",
+   "roots": [
+    "SeedKernel.Eval",
+    "SeedKernelEval"
+   ]
+  },
+  {
+   "name": "Leaderboard",
+   "src": "code/leaderboard",
+   "roots": [
+    "Leaderboard"
+   ]
+  }
+ ],
+ "library_files": 203,
+ "capped": false,
+ "declarations": 3288,
+ "sorry_files": 9,
+ "axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": "blueprint",
+ "headline_count": 47,
+ "headlines": [
+  {
+   "name": "CertifiedGaps.GapGT.lt_sub_of_monotone",
+   "module": "CertifiedGaps.PurityCriterion",
+   "file": "code/lean/CertifiedGaps/PurityCriterion.lean",
+   "line": 346,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "CertifiedGaps.one_sub_squaredPurity_le_squaringDefect",
+   "module": "CertifiedGaps.PurityCriterion",
+   "file": "code/lean/CertifiedGaps/PurityCriterion.lean",
+   "line": 120,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "HasSum"
+   ]
+  },
+  {
+   "name": "CertifiedGaps.gapGT_of_purities",
+   "module": "CertifiedGaps.PurityCriterion",
+   "file": "code/lean/CertifiedGaps/PurityCriterion.lean",
+   "line": 886,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Real.log"
+   ]
+  },
+  {
+   "name": "CertifiedGaps.Spectral.eigCount_le_of_schur_LDL",
+   "module": "CertifiedGaps.Spectral.Schur",
+   "file": "code/lean/CertifiedGaps/Spectral/Schur.lean",
+   "line": 153,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "LinearMap.ker",
+    "LinearMap.range",
+    "Matrix"
+   ]
+  },
+  {
+   "name": "CertifiedGaps.Spectral.sum_le_binned",
+   "module": "CertifiedGaps.Spectral.TraceBounds",
+   "file": "code/lean/CertifiedGaps/Spectral/TraceBounds.lean",
+   "line": 121,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Finset"
+   ]
+  },
+  {
+   "name": "CertifiedGaps.Spectral.binned_le_sum",
+   "module": "CertifiedGaps.Spectral.TraceBounds",
+   "file": "code/lean/CertifiedGaps/Spectral/TraceBounds.lean",
+   "line": 169,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Finset"
+   ]
+  },
+  {
+   "name": "CertifiedGaps.Spectral.antitone_exp_neg_mul",
+   "module": "CertifiedGaps.Spectral.TraceBounds",
+   "file": "code/lean/CertifiedGaps/Spectral/TraceBounds.lean",
+   "line": 194,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Real.exp"
+   ]
+  },
+  {
+   "name": "CertifiedGaps.SpinOneHeisenberg.ThermalPacked.seamBand",
+   "module": "CertifiedGaps.Heisenberg.ThermalPacked",
+   "file": "code/lean/CertifiedGaps/Heisenberg/ThermalPacked.lean",
+   "line": 96,
+   "kind": "def",
+   "sorry": false,
+   "names": []
+  }
+ ],
+ "mathlib_imports": {
+  "Mathlib.Algebra.BigOperators.Fin": 4,
+  "Mathlib.Algebra.BigOperators.Ring.Finset": 1,
+  "Mathlib.Algebra.Order.BigOperators.Ring.Finset": 2,
+  "Mathlib.Algebra.Ring.GeomSum": 1,
+  "Mathlib.Analysis.Calculus.Deriv.Add": 1,
+  "Mathlib.Analysis.Calculus.Deriv.Comp": 1,
+  "Mathlib.Analysis.Calculus.Deriv.Inv": 1,
+  "Mathlib.Analysis.Calculus.Deriv.MeanValue": 1,
+  "Mathlib.Analysis.Calculus.Deriv.Mul": 2,
+  "Mathlib.Analysis.Calculus.Deriv.Pow": 1,
+  "Mathlib.Analysis.Calculus.Deriv.Slope": 1,
+  "Mathlib.Analysis.Complex.Basic": 2,
+  "Mathlib.Analysis.Complex.ExponentialBounds": 3,
+  "Mathlib.Analysis.InnerProductSpace.PiL2": 3,
+  "Mathlib.Analysis.Matrix.HermitianFunctionalCalculus": 1,
+  "Mathlib.Analysis.Matrix.Normed": 2,
+  "Mathlib.Analysis.Matrix.PosDef": 1,
+  "Mathlib.Analysis.Matrix.Spectrum": 5,
+  "Mathlib.Analysis.Normed.Algebra.Exponential": 1,
+  "Mathlib.Analysis.Normed.Algebra.MatrixExponential": 3,
+  "Mathlib.Analysis.SpecialFunctions.Exp": 2,
+  "Mathlib.Analysis.SpecialFunctions.Exponential": 5,
+  "Mathlib.Analysis.SpecialFunctions.Pow.Continuity": 1,
+  "Mathlib.Analysis.SpecialFunctions.Pow.Real": 2,
+  "Mathlib.Analysis.SpecificLimits.Basic": 1,
+  "Mathlib.Analysis.SpecificLimits.Normed": 1,
+  "Mathlib.Basic.Real.Basic": 5,
+  "Mathlib.Data.List.GetD": 1,
+  "Mathlib.Data.Matrix.Block": 1,
+  "Mathlib.Data.Matrix.Mul": 1,
+  "Mathlib.Data.Matrix.PEquiv": 1,
+  "Mathlib.Data.Nat.Choose.Sum": 1,
+  "Mathlib.Data.Nat.Log": 1,
+  "Mathlib.Data.Rat.BigOperators": 2,
+  "Mathlib.Data.Rat.Cast.Defs": 1,
+  "Mathlib.Data.Rat.Cast.Lemmas": 1,
+  "Mathlib.Data.Rat.Cast.Order": 2,
+  "Mathlib.LinearAlgebra.FiniteDimensional.Lemmas": 1,
+  "Mathlib.LinearAlgebra.Matrix.Block": 1,
+  "Mathlib.LinearAlgebra.Matrix.Hermitian": 1,
+  "Mathlib.LinearAlgebra.Matrix.Kronecker": 5,
+  "Mathlib.LinearAlgebra.Matrix.Notation": 3,
+  "Mathlib.LinearAlgebra.Matrix.PosDef": 2,
+  "Mathlib.LinearAlgebra.Matrix.SemiringInverse": 1,
+  "Mathlib.LinearAlgebra.Matrix.Trace": 3,
+  "Mathlib.Logic.Equiv.Fin.Rotate": 2,
+  "Mathlib.Tactic.Abel": 1,
+  "Mathlib.Tactic.FieldSimp": 3,
+  "Mathlib.Tactic.FinCases": 2,
+  "Mathlib.Tactic.GCongr": 3,
+  "Mathlib.Tactic.Linarith": 4,
+  "Mathlib.Tactic.NoncommRing": 1,
+  "Mathlib.Tactic.NormNum": 2,
+  "Mathlib.Tactic.Positivity": 3,
+  "Mathlib.Tactic.Ring": 4,
+  "Mathlib.Topology.MetricSpace.Sequences": 1
+ },
+ "import_roots": {
+  "CertifiedGaps": 127,
+  "Leaderboard": 14,
+  "Lean": 2,
+  "Mathlib": 37,
+  "SeedKernel": 59,
+  "Std": 2
+ },
+ "uses": {
+  "Algebra": 1,
+  "Array": 2,
+  "CompleteSpace": 1,
+  "Complex": 2,
+  "Continuous": 3,
+  "Equiv.Perm": 8,
+  "Field": 1,
+  "Filter": 19,
+  "Filter.Tendsto": 13,
+  "Finset": 48,
+  "HasDerivAt": 5,
+  "HasSum": 2,
+  "Int": 9,
+  "IsCompact": 2,
+  "LinearMap.ker": 3,
+  "LinearMap.range": 3,
+  "List": 54,
+  "Matrix": 99,
+  "Matrix.inv": 1,
+  "Module": 3,
+  "Nat": 21,
+  "NormedSpace": 17,
+  "NormedSpace.exp": 17,
+  "Rat": 1,
+  "Real": 39,
+  "Real.exp": 32,
+  "Real.log": 30,
+  "Set": 6,
+  "Submodule.exists_isCompl": 1,
+  "add_pow": 1,
+  "norm_add_le": 7
+ },
+ "ci": "FAILURE"
+}

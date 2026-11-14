@@ -50,6 +50,10 @@ Trough reads these sources. The catalog of libraries is `catalog/libraries.toml`
 
 - `data/atlas/articles/`: each result of ATLAS's vault, its title, statement and Lean declaration, and where the repository's Lean declares it, read from the source text without Lean; `data/atlas/structure.json`: the vault's areas, subjects and containers, with their titles and prose. From [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce), the `wiki/autoform-blueprint` branch, Apache-2.0. The archived `v1/`, under a non-commercial license, is not read.
 
+## Satellite projects
+
+- `data/satellites/<slug>.json`: for each of the 10 projects in `data/satellites/projects.toml`, read at the commit the file records without Lean: its Lake requirements, the Mathlib modules it imports, the Mathlib concepts its files name, its headline declarations, and its README's opening where its license file is Apache-2.0, MIT, MIT-0, BSD-2-Clause, BSD-3-Clause, CC0-1.0 or CC-BY-4.0. Placements set by hand are in `data/satellites/overrides.toml`.
+
 ## Libraries
 
 ### Core library

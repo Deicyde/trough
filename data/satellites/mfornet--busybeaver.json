@@ -1,0 +1,165 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "mfornet/busybeaver",
+ "slug": "mfornet--busybeaver",
+ "rev": "732740ac71c8b1b8f58955aa2a2783e0490d8cd2",
+ "date": "2026-11-12T13:07:23Z",
+ "stable": "9d2403988d1ad43605e167b350a67b91ff083d6c51f6ae384ffb57064eca6257",
+ "license": {
+  "files": [
+   "LICENSES/BSD-2-Clause"
+  ],
+  "spdx": null,
+  "file": null,
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "A Lean proof of BB(5)",
+  "excerpt": null
+ },
+ "lean_files": 97,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.35.0",
+ "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+ "requirements": [
+  {
+   "name": "«lean-tqdm»",
+   "url": "https://github.com/mfornet/lean-tqdm",
+   "rev": "6db46168e5824c92a96ebcdb6d13edb9964e3f54"
+  }
+ ],
+ "libraries": [
+  {
+   "name": "Busybeaver",
+   "src": ".",
+   "roots": [
+    "Busybeaver"
+   ]
+  },
+  {
+   "name": "Witness",
+   "src": ".",
+   "roots": [
+    "Witness"
+   ]
+  },
+  {
+   "name": "BBTheorems",
+   "src": ".",
+   "roots": [
+    "BBTheorems"
+   ]
+  },
+  {
+   "name": "Skelet1Fast",
+   "src": ".",
+   "roots": [
+    "Skelet1Fast"
+   ]
+  },
+  {
+   "name": "Skelet1Kernel",
+   "src": ".",
+   "roots": [
+    "Skelet1Kernel"
+   ]
+  },
+  {
+   "name": "Skelet1Cert",
+   "src": ".",
+   "roots": [
+    "Skelet1Cert"
+   ]
+  }
+ ],
+ "library_files": 94,
+ "capped": false,
+ "declarations": 2121,
+ "sorry_files": 0,
+ "axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": "readme",
+ "headline_count": 4,
+ "headlines": [
+  {
+   "name": "BBTheorems.bb5_literature",
+   "module": "BBTheorems.BB5",
+   "file": "BBTheorems/BB5.lean",
+   "line": 28,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "TM.Table.Machine.Isomorph.decide",
+   "module": "Busybeaver.Enumerate.Quotient",
+   "file": "Busybeaver/Enumerate/Quotient.lean",
+   "line": 111,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "TM.Busybeaver.BBCompute.correct_complete",
+   "module": "Busybeaver.Enumerate.Alg",
+   "file": "Busybeaver/Enumerate/Alg.lean",
+   "line": 1014,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "TM.Busybeaver.BBCompute",
+   "module": "Busybeaver.Enumerate.Alg",
+   "file": "Busybeaver/Enumerate/Alg.lean",
+   "line": 277,
+   "kind": "def",
+   "sorry": false,
+   "names": []
+  }
+ ],
+ "mathlib_imports": {
+  "Mathlib.Algebra.BigOperators.Group.Finset.Basic": 1,
+  "Mathlib.Algebra.BigOperators.Group.Finset.Defs": 1,
+  "Mathlib.Algebra.Group.Even": 1,
+  "Mathlib.Algebra.Order.Group.Nat": 1,
+  "Mathlib.Computability.TuringMachine.StackTuringMachine": 2,
+  "Mathlib.Data.Finset.Basic": 1,
+  "Mathlib.Data.Finset.Defs": 1,
+  "Mathlib.Data.Finset.Sort": 1,
+  "Mathlib.Data.List.Basic": 1,
+  "Mathlib.Data.List.GetD": 1,
+  "Mathlib.Data.Nat.Notation": 1,
+  "Mathlib.Data.Num.Lemmas": 1,
+  "Mathlib.Tactic.Cases": 6,
+  "Mathlib.Tactic.Linarith": 8,
+  "Mathlib.Tactic.Ring": 8
+ },
+ "import_roots": {
+  "BBTheorems": 5,
+  "Batteries": 1,
+  "Busybeaver": 84,
+  "Cli": 1,
+  "Init": 1,
+  "Lean": 3,
+  "LeanTqdm": 1,
+  "Mathlib": 13,
+  "SQLite": 1,
+  "Skelet1Cert": 1,
+  "Std": 4,
+  "Witness": 3
+ },
+ "uses": {
+  "Array": 16,
+  "Finset": 8,
+  "Int": 8,
+  "List": 31,
+  "Multiset": 4,
+  "Nat": 13,
+  "Set": 1,
+  "Std.HashMap": 1
+ },
+ "ci": "SUCCESS"
+}

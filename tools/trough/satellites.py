@@ -53,9 +53,9 @@ STALE_DAYS = 90  # a pin older than this, by its commit's date, moves to the new
 MAIN_MODULES = {"Main", "MainTheorem", "MainTheorems", "Statement", "Statements"}
 THEOREMS = ("theorem", "lemma")
 RULES = {
-    "blueprint": "the Lean names of its blueprint's nodes that no other node uses, marked \\leanok",
-    "readme": "the names its README sets in code that the project declares",
-    "main": "the theorems of its module named Main, MainTheorem(s) or Statement(s)",
+    "blueprint": "Lean names of the blueprint nodes that no other node uses, marked \\leanok",
+    "readme": "theorems its README names in code",
+    "main": "theorems of its module named Main, MainTheorem(s) or Statement(s)",
 }
 LICENSE_NAME = re.compile(r"^(?:LICEN[CS]E|COPYING)(?:[-._][^/]*)?$", re.I)
 README_NAME = re.compile(r"^README(?:\.md|\.markdown)?$", re.I)
@@ -217,7 +217,7 @@ def lean_libraries(project: Path) -> list[dict]:
         for library in config.get("lean_lib", []):
             name = str(library.get("name", ""))
             roots = [str(root) for root in library.get("roots", [])] or [name]
-            roots += [re.sub(r"\.[+*]$", "", str(glob)) for glob in library.get("globs", [])]
+            roots += [re.sub(r"\.[+*]$", "", str(glob)).rstrip(".") for glob in library.get("globs", [])]
             libraries.append({"name": name, "src": join(base, str(library.get("srcDir", "."))),
                               "roots": sorted(set(filter(None, roots)))})
         return libraries
@@ -228,11 +228,12 @@ def lean_libraries(project: Path) -> list[dict]:
     base = re.search(r'srcDir\s*:=\s*"([^"]*)"', original[package.start(1):package.end(1)]) if package else None
     base_dir = base.group(1).strip("/") or "." if base else "."
     libraries = []
-    for match in re.finditer(r"^lean_lib[ \t]+(«[^»\n]+»|[^\s{]+)([^\n]*(?:\n(?:[ \t][^\n]*)?)*)", text, re.M):
+    for match in re.finditer(r"^(?:@\[[^\]\n]*\][ \t]*)?lean_lib[ \t]+(«[^»\n]+»|[^\s{]+)([^\n]*(?:\n(?:[ \t][^\n]*)?)*)",
+                             text, re.M):
         name = match.group(1).strip("«»")
         body = original[match.start(2):match.end(2)]
         src = re.search(r'srcDir\s*:=\s*"([^"]*)"', body)
-        roots = [root.strip("«»") for key in ("roots", "globs")
+        roots = [root.strip("«»").rstrip(".") for key in ("roots", "globs")
                  for listing in re.findall(rf"{key}\s*:=\s*#\[([^\]]*)\]", body)
                  for root in re.findall(r"`(«[^»]+»|[\w.'«»]+)", listing)]
         libraries.append({"name": name, "src": join(base_dir, src.group(1) if src else "."),
@@ -385,11 +386,10 @@ def headlines(checkout: Path, paths: list[str], readmes: list[str],
     names = []
     for readme in readmes:
         for span in readme_names(readme):
+            # Only theorems: a README names definitions as its vocabulary, not as its results.
             full = by_suffix(span, declared, by_last)
-            if full and full not in names and declared[full][2].kind != "instance":
+            if full and full not in names and declared[full][2].kind in THEOREMS:
                 names.append(full)
-    # Theorems first, so the card's kind is a theorem's when any is named.
-    names.sort(key=lambda name: declared[name][2].kind not in THEOREMS)
     if names:
         return "readme", names[:MAX_HEADLINES], len(names)
     names = [name for name, (_, module, found) in sorted(declared.items(), key=lambda item: (item[1][0], item[1][2].line))
@@ -479,6 +479,9 @@ def read_project(checkout: Path, project: dict, rev: str, date: str, paths: list
     uses: Counter = Counter()
     counts: Counter = Counter()
     file_scopes: dict[str, list[str]] = {}
+    file_imports: dict[str, set[str]] = {}
+    sorry_paths: set[str] = set()
+    axioms: dict[str, int] = {}
     head_index = index(heads)
     for path in sorted(files)[:MAX_FILES]:
         text = read_text(checkout / path)
@@ -486,8 +489,10 @@ def read_project(checkout: Path, project: dict, rev: str, date: str, paths: list
         imported = {module for line in IMPORT.findall(code) for module in line.split() if leansource.is_name(module)}
         imports.update(module for module in imported if module.startswith("Mathlib."))
         roots.update({module.split(".")[0] for module in imported})
-        counts["sorry_files"] += bool(leansource.SORRY.search(code))
-        counts["axioms"] += len(AXIOM.findall(code))
+        file_imports[path] = imported
+        if leansource.SORRY.search(code):
+            sorry_paths.add(path)
+        axioms[path] = len(AXIOM.findall(code))
         scopes = opens(code)
         file_scopes[path] = scopes
         uses.update(resolve(code, scopes, heads, head_index))
@@ -514,7 +519,17 @@ def read_project(checkout: Path, project: dict, rev: str, date: str, paths: list
         named = resolve(leansource.blank(statement), scopes, targets, target_index) - {name}
         heads_out.append({"name": name, "module": module, "file": path, "line": declaration.line,
                           "kind": declaration.kind, "sorry": declaration.sorry, "names": sorted(named)})
-    record.update(declarations=len(declared), sorry_files=counts["sorry_files"], axioms=counts["axioms"],
+    # The files the headlines' files import, directly or not, through the project's own modules.
+    by_module = {module: path for path, module in files.items() if path in file_imports}
+    closure, todo = set(), sorted({declared[name][0] for name in chosen})
+    while todo:
+        path = todo.pop()
+        if path not in closure:
+            closure.add(path)
+            todo += [by_module[module] for module in file_imports.get(path, ()) if module in by_module]
+    record.update(declarations=len(declared), sorry_files=len(sorry_paths), axioms=sum(axioms.values()),
+                  closure_files=len(closure), closure_sorry=sorted(closure & sorry_paths)[:20],
+                  closure_axioms=sum(axioms[path] for path in closure),
                   unclosed_files=counts["unclosed_files"], headline_rule=rule, headline_count=total,
                   headlines=heads_out, mathlib_imports=dict(sorted(imports.items())),
                   import_roots=dict(sorted(roots.items())), uses=dict(sorted(uses.items())))
@@ -647,7 +662,7 @@ def home(record: dict, live: dict[str, tuple[str, str]], hosts: dict, overrides:
     if override := overrides.get(record["repo"].lower()):
         if override["home"] not in hosts:
             raise ValueError(f"overrides.toml: {record['repo']} has home {override['home']!r}, which is no page here")
-        return override["home"], f"Placed by hand: {override['reason']}"
+        return override["home"], f"Placed by hand. {override['reason']}"
     chapters = live_requirements(record, live, hosts)
     if chapters:
         roots = record.get("import_roots", {})
@@ -657,8 +672,8 @@ def home(record: dict, live: dict[str, tuple[str, str]], hosts: dict, overrides:
                         + (f", whose modules {plural(files, 'file')} of the project import." if files else "."))
     if not record.get("mathlib") and not record.get("mathlib_imports"):
         return None, "It requires neither Mathlib nor a library mapped here."
-    if area := plurality(statement_areas, areas.order):
-        counts = Counter(statement_areas)
+    counts = Counter(statement_areas)
+    if len(statement_areas) >= 3 and (area := plurality(statement_areas, areas.order)) and counts[area] * 2 > len(statement_areas):
         return f"mathlib:{area}", (f"{counts[area]} of the {plural(len(statement_areas), 'Mathlib concept')} its "
                                    f"headline statements name are in {areas.titles[area]}.")
     if lifts := area_lifts(record, areas, baseline):
@@ -685,7 +700,7 @@ def at(record: dict) -> str:
 
 
 def proof_formalized(record: dict) -> bool:
-    return not (record["sorry_files"] or record["axioms"] or record["capped"])
+    return bool(record["headlines"]) and not (record["closure_sorry"] or record["closure_axioms"] or record["capped"])
 
 
 def notice(record: dict) -> str:
@@ -716,9 +731,14 @@ def card(record: dict, depends: list[Leaf], uses: list[Leaf], named: int, placem
                  f"({blob(record, record['readme']['file'])}), {notice(record)}.*")
     count = (f"{len(heads)} of the {record['headline_count']}" if record["headline_count"] > len(heads)
              else "the")
+    proof = (f"No file its headlines import, directly or not ({plural(record['closure_files'], 'file')}), holds "
+             "`sorry`, `admit` or an axiom." if proof_formalized(record) else
+             f"Of the files its headlines import, directly or not, {', '.join(f'`{path}`' for path in record['closure_sorry'])} "
+             "hold `sorry` or `admit`." if record["closure_sorry"] else "")
     rows = [f"- [`{head['name']}`]({blob(record, head['file'], head['line'])}) ({head['kind']}"
             + (", its text holds `sorry`" if head["sorry"] else "") + ")" for head in heads]
-    notes = [("Main results", f"Its Lean names are {count} {RULES[record['headline_rule']]}:\n\n" + "\n".join(rows))]
+    notes = [("Main results", f"Its Lean names are {count} {RULES[record['headline_rule']]}:\n\n" + "\n".join(rows)
+              + (f"\n\n{proof}" if proof else ""))]
     facts = [f"- Lean {record['toolchain'] or 'toolchain not given'}"
              + (f", Mathlib at [{record['mathlib'][:8]}]({MATHLIB_REPO}/tree/{record['mathlib']})"
                 if re.fullmatch(r"[0-9a-f]{40}", record.get("mathlib") or "") else "") + ".",
@@ -821,7 +841,8 @@ def chapter(records: list[dict], packages: dict, overrides: dict, libraries: lis
             continue
         cards, links, without = [], {}, []
         for record, statement, uses, named, placement, builds_on, lifts in members:
-            if not record["headlines"]:
+            # A corpus collects many problems or theorems: none is its main result.
+            if not record["headlines"] or record["kind"] == "corpus":
                 without.append(record)
                 stats["without_headline"] += 1
                 continue
@@ -837,11 +858,16 @@ def chapter(records: list[dict], packages: dict, overrides: dict, libraries: lis
         cards.sort(key=lambda leaf: title_key(leaf.title))
         where = "across Mathlib" if key == OVERVIEW else f"building on {host.title}"
         projects = Container(f"Projects {where} ({len(cards) + len(without)})", "projects", [Entry(leaf) for leaf in cards])
-        projects.prose = (f"Lean projects outside the libraries mapped here that build on "
-                          f"{'Mathlib' if key == OVERVIEW else host.title}, one card each, read at a pinned commit "
-                          "without Lean.")
+        projects.prose = ("Lean projects outside the libraries mapped here that build on "
+                          + ("Mathlib" if key == OVERVIEW else f"Mathlib, placed by their use of its {host.title.lower()}"
+                             if key.startswith("mathlib:") else host.title)
+                          + ", read at a pinned commit without Lean" + (", one card each." if cards else "."))
         if without:
-            projects.tail = "\n".join(["## Projects without a named main result", ""] + [listed(record) for record in without])
+            listing = "\n".join(["## Projects without a named main result", ""] + [listed(record) for record in without])
+            if cards:
+                projects.tail = listing
+            else:
+                projects.prose += "\n\n" + listing
         chunk(projects, budget=300_000)
         out.append((host, projects, links))
         stats["homes"] += 1

@@ -1,0 +1,55 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "AlexKontorovich/quasi-rh",
+ "slug": "alexkontorovich--quasi-rh",
+ "rev": "d26d846d6f3129017f06b6fd3f78dd72d361d60b",
+ "date": "2026-10-26T22:11:35Z",
+ "stable": "5c25f820051d3fc339b77c6165c7e6822c4c2c37b999c5d7496afde95f8c7391",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Quasi-RH at 11/12",
+  "excerpt": null
+ },
+ "lean_files": 307,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.34.1",
+ "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+ "requirements": [
+  {
+   "name": "«rellich-kondrachov»",
+   "url": "https://github.com/abenenson/rellich-kondrachov.git",
+   "rev": "70f85d4c1bf99c6e7d61e8be4daa6f3664d08d23"
+  }
+ ],
+ "libraries": [
+  {
+   "name": "OAI",
+   "src": ".",
+   "roots": [
+    "OAI."
+   ]
+  }
+ ],
+ "library_files": 0,
+ "capped": false,
+ "declarations": 0,
+ "sorry_files": 0,
+ "axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": null,
+ "headline_count": 0,
+ "headlines": [],
+ "mathlib_imports": {},
+ "import_roots": {},
+ "uses": {},
+ "ci": "SUCCESS"
+}

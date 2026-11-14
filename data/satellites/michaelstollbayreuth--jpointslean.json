@@ -1,0 +1,235 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "MichaelStollBayreuth/JPointsLean",
+ "slug": "michaelstollbayreuth--jpointslean",
+ "rev": "1152475138ed5b78d6a294f0bc7aa88417b15ef8",
+ "date": "2026-11-08T12:05:35Z",
+ "stable": "114d3fc47e32beaa2958463ef17a04e508f2775794b6308b5744022c6ae07f11",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "JPointsLean",
+  "excerpt": null
+ },
+ "lean_files": 132,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.35.0",
+ "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+ "requirements": [],
+ "libraries": [
+  {
+   "name": "JPointsModel",
+   "src": ".",
+   "roots": [
+    "JPoints.Model"
+   ]
+  },
+  {
+   "name": "JPoints",
+   "src": ".",
+   "roots": [
+    "JPoints"
+   ]
+  },
+  {
+   "name": "Challenge",
+   "src": "comparator",
+   "roots": [
+    "Challenge"
+   ]
+  },
+  {
+   "name": "Solution",
+   "src": "comparator",
+   "roots": [
+    "Solution"
+   ]
+  }
+ ],
+ "library_files": 128,
+ "capped": false,
+ "declarations": 2140,
+ "sorry_files": 1,
+ "axioms": 0,
+ "unclosed_files": 1,
+ "headline_rule": "blueprint",
+ "headline_count": 5,
+ "headlines": [
+  {
+   "name": "JPoints.Program.exists_run_eq_of_readInput_eq_ok_of_quiet_eq_false",
+   "module": "JPoints.Proof.Main",
+   "file": "JPoints/Proof/Main.lean",
+   "line": 258,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "List"
+   ]
+  },
+  {
+   "name": "JPoints.Program.mem_iff_isPoint_of_run_eq",
+   "module": "JPoints.Proof.Main",
+   "file": "JPoints/Proof/Main.lean",
+   "line": 298,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "List"
+   ]
+  },
+  {
+   "name": "JPoints.Program.nodup_of_run_eq",
+   "module": "JPoints.Proof.Main",
+   "file": "JPoints/Proof/Main.lean",
+   "line": 314,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "List"
+   ]
+  },
+  {
+   "name": "JPoints.Double.lt_nextUp_and_nextDown_lt_ofRatio",
+   "module": "JPoints.Proof.Rounding",
+   "file": "JPoints/Proof/Rounding.lean",
+   "line": 518,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "JPoints.Double.lt_nextUp_and_nextDown_lt_ofDyadic",
+   "module": "JPoints.Proof.Rounding",
+   "file": "JPoints/Proof/Rounding.lean",
+   "line": 560,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  }
+ ],
+ "mathlib_imports": {
+  "Mathlib.Algebra.Algebra.Defs": 1,
+  "Mathlib.Algebra.Algebra.Rat": 1,
+  "Mathlib.Algebra.BigOperators.Associated": 1,
+  "Mathlib.Algebra.BigOperators.Group.Finset.Basic": 1,
+  "Mathlib.Algebra.BigOperators.Group.Finset.Defs": 1,
+  "Mathlib.Algebra.BigOperators.Intervals": 1,
+  "Mathlib.Algebra.BigOperators.Ring.Finset": 2,
+  "Mathlib.Algebra.CharZero.Infinite": 1,
+  "Mathlib.Algebra.Field.Rat": 1,
+  "Mathlib.Algebra.Field.ZMod": 2,
+  "Mathlib.Algebra.GCDMonoid.Nat": 4,
+  "Mathlib.Algebra.Group.Defs": 1,
+  "Mathlib.Algebra.Group.Even": 1,
+  "Mathlib.Algebra.Group.Nat.Even": 2,
+  "Mathlib.Algebra.Order.Archimedean.Real.Basic": 1,
+  "Mathlib.Algebra.Order.BigOperators.Group.Finset": 1,
+  "Mathlib.Algebra.Order.BigOperators.GroupWithZero.List": 1,
+  "Mathlib.Algebra.Order.Field.Basic": 1,
+  "Mathlib.Algebra.Order.Field.Power": 7,
+  "Mathlib.Algebra.Order.Field.Rat": 3,
+  "Mathlib.Algebra.Order.Floor.Semifield": 2,
+  "Mathlib.Algebra.Order.Ring.Abs": 7,
+  "Mathlib.Algebra.Order.Ring.Defs": 1,
+  "Mathlib.Algebra.Order.Ring.Pow": 1,
+  "Mathlib.Algebra.Order.Ring.Rat": 1,
+  "Mathlib.Algebra.Polynomial.Basic": 2,
+  "Mathlib.Algebra.Polynomial.Degree.Lemmas": 1,
+  "Mathlib.Algebra.Polynomial.Derivative": 3,
+  "Mathlib.Algebra.Polynomial.Eval.Coeff": 1,
+  "Mathlib.Algebra.Polynomial.Eval.Defs": 1,
+  "Mathlib.Algebra.Polynomial.FieldDivision": 1,
+  "Mathlib.Algebra.Polynomial.Mirror": 1,
+  "Mathlib.Algebra.Polynomial.Reverse": 1,
+  "Mathlib.Algebra.Polynomial.Roots": 3,
+  "Mathlib.Algebra.Polynomial.Sturm.Sequence": 4,
+  "Mathlib.Algebra.QuadraticDiscriminant": 3,
+  "Mathlib.Algebra.Squarefree.Basic": 6,
+  "Mathlib.Analysis.Calculus.Deriv.Polynomial": 1,
+  "Mathlib.Analysis.Calculus.LocalExtr.Basic": 1,
+  "Mathlib.Analysis.Polynomial.CauchyBound": 1,
+  "Mathlib.Analysis.Polynomial.Order": 1,
+  "Mathlib.Basic.Real.Basic": 2,
+  "Mathlib.Basic.Sign.Basic": 1,
+  "Mathlib.Data.Fintype.Parity": 1,
+  "Mathlib.Data.Int.Basic": 1,
+  "Mathlib.Data.Int.Cast.Field": 1,
+  "Mathlib.Data.Int.GCD": 1,
+  "Mathlib.Data.Int.ModEq": 5,
+  "Mathlib.Data.Int.Sqrt": 1,
+  "Mathlib.Data.List.Basic": 2,
+  "Mathlib.Data.List.DropRight": 1,
+  "Mathlib.Data.List.GetD": 3,
+  "Mathlib.Data.List.Nodup": 1,
+  "Mathlib.Data.List.SignVariations": 3,
+  "Mathlib.Data.List.Sort": 4,
+  "Mathlib.Data.Nat.Bitwise": 1,
+  "Mathlib.Data.Nat.Cast.Order.Field": 1,
+  "Mathlib.Data.Nat.Digits.Defs": 1,
+  "Mathlib.Data.Nat.Factorization.Basic": 1,
+  "Mathlib.Data.Nat.Factorization.Defs": 2,
+  "Mathlib.Data.Nat.Prime.Basic": 2,
+  "Mathlib.Data.Nat.Prime.Defs": 5,
+  "Mathlib.Data.Nat.Prime.Int": 1,
+  "Mathlib.Data.Nat.Sqrt": 2,
+  "Mathlib.Data.Rat.Cast.Defs": 2,
+  "Mathlib.Data.Rat.Cast.Order": 1,
+  "Mathlib.Data.Rat.Floor": 2,
+  "Mathlib.Data.Rat.Lemmas": 1,
+  "Mathlib.Data.Set.Card": 2,
+  "Mathlib.Data.ZMod.Basic": 2,
+  "Mathlib.Data.ZMod.Defs": 1,
+  "Mathlib.FieldTheory.Finite.Basic": 2,
+  "Mathlib.FieldTheory.Perfect": 3,
+  "Mathlib.FieldTheory.Separable": 3,
+  "Mathlib.Order.Interval.Set.Defs": 1,
+  "Mathlib.Order.Prod.Lex.Basic": 2,
+  "Mathlib.Order.WithBotTop": 2,
+  "Mathlib.RingTheory.Int.Basic": 2,
+  "Mathlib.Tactic.Field": 3,
+  "Mathlib.Tactic.IntervalCases": 5,
+  "Mathlib.Tactic.Linarith": 5,
+  "Mathlib.Tactic.LinearCombination": 10,
+  "Mathlib.Tactic.Positivity": 2,
+  "Mathlib.Tactic.ReduceModChar": 1,
+  "Mathlib.Tactic.Ring": 3,
+  "Mathlib.Topology.Algebra.Polynomial": 1,
+  "Mathlib.Topology.Order.IntermediateValue": 1
+ },
+ "import_roots": {
+  "JPoints": 94,
+  "Mathlib": 78,
+  "Std": 35
+ },
+ "uses": {
+  "Algebra": 1,
+  "Array": 60,
+  "Continuous": 1,
+  "Field": 6,
+  "Finset": 6,
+  "Int": 28,
+  "Int.ModEq": 1,
+  "IsCoprime": 3,
+  "IsOrderedRing": 3,
+  "List": 83,
+  "Multiset": 1,
+  "Nat": 29,
+  "Polynomial": 18,
+  "Polynomial.derivative": 7,
+  "Polynomial.eval": 3,
+  "Polynomial.roots": 1,
+  "Prime": 1,
+  "Rat": 6,
+  "Set": 1,
+  "ZMod.pow_card_sub_one_eq_one": 1
+ },
+ "ci": "SUCCESS"
+}
