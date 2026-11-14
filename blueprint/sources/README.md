@@ -50,6 +50,10 @@ Trough reads these sources. The catalog of libraries is `catalog/libraries.toml`
 
 - `data/atlas/articles/`: each result of ATLAS's vault, its title, statement and Lean declaration, and where the repository's Lean declares it, read from the source text without Lean; `data/atlas/structure.json`: the vault's areas, subjects and containers, with their titles and prose. From [Deicyde/atlas-lean at 035e1808](https://github.com/Deicyde/atlas-lean/tree/035e1808ca0c8983682b74153a02628d616d77ce), the `wiki/autoform-blueprint` branch, Apache-2.0. The archived `v1/`, under a non-commercial license, is not read.
 
+## OpenAI Math
+
+- `data/openai-math/families/`: each result family's description, its manuscripts' titles, PDFs and abstracts, and its Lean page, with each formalized result's statements as the statement file writes them and where the repository's Lean proves them, read from the source text without Lean; `data/openai-math/structure.json`: the subjects and their families. From [openai/math at 4eaee875](https://github.com/openai/math/tree/4eaee87548250b2682affda7d05d947c05554bae), Apache-2.0.
+
 ## Libraries
 
 ### Core library
@@ -80,7 +84,7 @@ Trough reads these sources. The catalog of libraries is `catalog/libraries.toml`
 ### Large corpora
 
 - [Fermat's Last Theorem (Anthropic)](https://github.com/anthropics/fermats-last-theorem) at 6e837e753555: Its README states that it is a complete, machine-checked proof of FLT via Frey, Serre, Ribet, Wiles and Taylor-Wiles, from the three standard axioms, checked by comparator and the nanoda kernel.
-- [OpenAI Math](https://github.com/openai/math) at 4eaee8754825: Lean proofs of results from about 721 model-generated research manuscripts (README says ~42% of top-line results are formalized). Includes Hodge for CM abelian varieties, BSD cases, and counterexamples (Hadwiger, Kaplansky).
+- [OpenAI Math](https://github.com/openai/math) at 4eaee8754825: Research manuscripts produced by an OpenAI model, with Lean formalizations of some of their results (Hodge for CM abelian varieties; counterexamples to Hadwiger and Kaplansky).
 - [Classification of Finite Simple Groups (Axiom)](https://github.com/AxiomMath/CFSG) at 69cb972f587a: A sorry-free proof of the Classification of Finite Simple Groups, mostly first-generation, using TauCeti's ClassificationStatement; produced by AxiomProver.
 - [Lean Pool](https://github.com/LeanPool/lean-pool) at 701389c04bdd: A pool of permissively licensed Lean projects outside Mathlib's scope, e.g. Navier-Stokes, CKN, Davis-Kahan, Conway-Soifer, Zeta5Irrational, MovingSofa.
 - [The Stacks Project in Lean (Axiom)](https://github.com/AxiomMath/Stacks) at c496df0d9bee: A formalization of the Stacks Project, indexed by Stacks tag, in two tiers: StacksCore, human-reviewed, and StacksFrontier, drafted with AxiomProver and not yet reviewed. Declarations also carry the EGA and SGA items they prove.

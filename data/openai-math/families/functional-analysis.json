@@ -1,0 +1,933 @@
+{
+ "schema": "trough-openai-math/v1",
+ "rev": "4eaee87548250b2682affda7d05d947c05554bae",
+ "families": [
+  {
+   "number": "322",
+   "title": "Tingley’s sphere-isometry problem",
+   "description": "Resolves Tingley's problem: every surjective isometry between the unit spheres of nonzero real Banach spaces extends uniquely to a surjective real-linear isometry of the whole spaces. No dimension restriction is imposed, so the metric geometry of the unit sphere determines the Banach space up to linear isometry.",
+   "doc": "lean/docs/322.md",
+   "manuscripts": [
+    {
+     "title": "A positive solution to Tingley’s problem",
+     "path": "preprints/A-positive-solution-to-Tingleys-problem-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "Every surjective isometry between the unit spheres of real Banach spaces extends uniquely to a surjective real-linear isometry, giving an affirmative solution to Tingley's problem. If distances between different radii are not preserved, we realize the positive maximal defect in a possibly enlarged pair of Banach spaces. We then align extremal chords using common supports and Darbo's fixed-point theorem and obtain a contradiction from support and convexity estimates."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/322.md",
+    "title": "Tingley’s sphere-isometry problem",
+    "papers": [
+     "preprints/A-positive-solution-to-Tingleys-problem-September-23-2026/paper.pdf"
+    ],
+    "scope": "Tingley's problem asks whether a surjective isometry between the unit spheres of Banach spaces extends to a linear isometry of the spaces. The formalized result gives a unique surjective real-linear isometric extension for arbitrary nonzero real Banach spaces, with no finite-dimensionality, separability, reflexivity, or convexity assumptions. For complex spaces viewed as real spaces, the conclusion is real linearity rather than complex linearity.",
+    "results": [
+     {
+      "label": "Tingley's sphere-isometry extension",
+      "challenge": "lean/ComparatorChallenges/TingleySphereIsometry.lean",
+      "config": "lean/ComparatorChallenges/TingleySphereIsometry.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.Tingley.tingley_sphere_isometry_full",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 22,
+        "statement": "theorem tingley_sphere_isometry_full\n    {X : Type u} {Y : Type v}\n    [NormedAddCommGroup X] [NormedSpace ℝ X] [CompleteSpace X]\n    [NormedAddCommGroup Y] [NormedSpace ℝ Y] [CompleteSpace Y]\n    [Nontrivial X] [Nontrivial Y]\n    (f : UnitSphere X → UnitSphere Y) (hf : Isometry f) (hs : Function.Surjective f) :\n    ∃ T : X ≃ₗᵢ[ℝ] Y,\n      (∀ u : UnitSphere X, T (u : X) = (f u : Y)) ∧\n      T 0 = 0 ∧\n      (∀ x : X, ∀ hx : x ≠ 0, T x = ‖x‖ • (f (normalize x hx) : Y)) ∧\n      Function.Surjective T ∧\n      (∀ L : X →ₗ[ℝ] Y, (∀ u : UnitSphere X, L (u : X) = (f u : Y)) →\n        L = T.toLinearEquiv.toLinearMap)",
+        "proof": {
+         "file": "lean/OAI/Analysis/SphereIsometry/Extension.lean",
+         "line": 101,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/SphereIsometry/Main.lean",
+        "main": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "323",
+   "title": "Independence of the separable quotient problem",
+   "description": "Establishes, relative to the consistency of a measurable cardinal, that the separable quotient problem is independent of ZFC. The assertion that every infinite-dimensional Banach space has a separable infinite-dimensional quotient can hold for all real and complex Banach spaces, whereas the continuum hypothesis yields counterexamples over both fields.",
+   "doc": "lean/docs/323.md",
+   "manuscripts": [
+    {
+     "title": "Relative independence of the separable quotient problem",
+     "path": "preprints/Relative-independence-of-the-separable-quotient-problem-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "The separable quotient problem asks whether every infinite-dimensional Banach space has a separable infinite-dimensional quotient. We prove that this statement is independent of ZFC, relative to the consistency of ZFC with a measurable cardinal. This holds over both the real and complex fields. For spaces of norm density ℵ$_{1}$, we obtain independence relative to the consistency of ZFC alone."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/323.md",
+    "title": "Independence of the separable quotient problem",
+    "papers": [
+     "preprints/Relative-independence-of-the-separable-quotient-problem-September-23-2026/paper.pdf"
+    ],
+    "scope": "The separable quotient problem asks whether every infinite-dimensional Banach space has an infinite-dimensional separable quotient. The linked formalization proves the negative direction under the continuum hypothesis: over both the real and complex fields, there is an infinite-dimensional Banach space admitting no bounded linear surjection onto an infinite-dimensional separable Banach space.\n\nThis is the conditional counterexample direction. The positive consistency direction and the paper's full relative-independence conclusions are outside the selected statement.",
+    "results": [
+     {
+      "label": "Failure of the separable quotient assertion under the continuum hypothesis",
+      "challenge": "lean/ComparatorChallenges/SeparableQuotientNegative.lean",
+      "config": "lean/ComparatorChallenges/SeparableQuotientNegative.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.SeparableQuotient.negative_main",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 26,
+        "statement": "theorem negative_main (hCH : CH) : ¬ SQ.{u} ℝ ∧ ¬ SQ.{u} ℂ",
+        "proof": {
+         "file": "lean/OAI/Analysis/SeparableQuotients/Main.lean",
+         "line": 9,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/SeparableQuotients/Main.lean",
+        "main": false
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "324",
+   "title": "Lipschitz equivalent Banach spaces need not be linearly isomorphic",
+   "description": "Constructs separable real Banach spaces that are globally bi-Lipschitz equivalent but not linearly isomorphic, resolving the separable Lipschitz-isomorphism problem negatively. Thus even the complete metric structure up to bi-Lipschitz equivalence does not determine a separable Banach space's linear isomorphism class.",
+   "doc": "lean/docs/324.md",
+   "manuscripts": [
+    {
+     "title": "Lipschitz Equivalent Separable Banach Spaces Need Not Be Linearly Isomorphic",
+     "path": "preprints/Lipschitz-Equivalent-Separable-Banach-Spaces-Need-Not-Be-Linearly-Isomorphic-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "There are separable real Banach spaces that are globally bi-Lipschitz equivalent but not linearly isomorphic. This gives a negative answer to the separable Banach-space Lipschitz-isomorphism problem."
+    },
+    {
+     "title": "Bi-Lipschitz Absorption of c0 Without a Linear Copy of c0",
+     "path": "preprints/Bi-Lipschitz-Absorption-of-c0-Without-a-Linear-Copy-of-c0-September-26-2026/paper.pdf",
+     "note": "",
+     "abstract": "We construct a separable real Banach space *Z* that contains no linear copy of $c_{0}$, yet is bi-Lipschitz equivalent to $Z\\oplus_\\infty c_0$. The same space contains a bi-Lipschitz image of every separable metric space."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/324.md",
+    "title": "Lipschitz equivalent Banach spaces need not be linearly isomorphic",
+    "papers": [
+     "preprints/Lipschitz-Equivalent-Separable-Banach-Spaces-Need-Not-Be-Linearly-Isomorphic-September-24-2026/paper.pdf",
+     "preprints/Bi-Lipschitz-Absorption-of-c0-Without-a-Linear-Copy-of-c0-September-26-2026/paper.pdf"
+    ],
+    "scope": "The formalized counterexample gives separable real Banach spaces $X,Y$ that are bi-Lipschitz equivalent but not linearly isomorphic. The bijection has lower Lipschitz bound $4/21$ and upper bound $76/25$. The linear obstruction is explicit: $X$ contains a linear isometric copy of $c_0(\\ell_2)$, whereas $Y$ contains no bounded linear copy of that space.\n\nThe formalized result constructs one separable real Banach space $X$ that is bi-Lipschitz equivalent to $X\\times c_0$ but contains no closed linear subspace isomorphic to $c_0$. The same space contains a bi-Lipschitz copy of $c_0$, is bi-Lipschitz universal for separable metric spaces, and is not linearly isomorphic to $X\\times c_0$. Thus nonlinear absorption of $c_0$ does not force a linear copy of it.",
+    "results": [
+     {
+      "label": "Bi-Lipschitz equivalent nonisomorphic Banach spaces",
+      "challenge": "lean/ComparatorChallenges/LipschitzEquivalence.lean",
+      "config": "lean/ComparatorChallenges/LipschitzEquivalence.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.LipschitzCounterexample.main",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 38,
+        "statement": "theorem main : MainClaim",
+        "proof": {
+         "file": "lean/OAI/Analysis/LipschitzEquivalence/Main.lean",
+         "line": 8,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/LipschitzEquivalence/Main.lean",
+        "main": true
+       }
+      ]
+     },
+     {
+      "label": "Bi-Lipschitz absorption of $c_0$",
+      "challenge": "lean/ComparatorChallenges/C0Absorption.lean",
+      "config": "lean/ComparatorChallenges/C0Absorption.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.C0Absorption.main_result",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 29,
+        "statement": "theorem main_result : MainConclusion",
+        "proof": {
+         "file": "lean/OAI/Analysis/C0Absorption/Main.lean",
+         "line": 33,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/C0Absorption/Main.lean",
+        "main": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "325",
+   "title": "The complete Crouzeix conjecture",
+   "description": "Resolves the complete Crouzeix conjecture: for every bounded operator *A* on a complex Hilbert space and every finite matrix-valued polynomial *P*, one has $\\lVert P[A]\\rVert\\le2\\sup_{z\\in W(A)}\\lVert P(z)\\rVert$, where $W(A)$ is the numerical range. The constant 2 is sharp, independent of the matrix size, and valid in infinite dimensions.",
+   "doc": "lean/docs/325.md",
+   "manuscripts": [
+    {
+     "title": "A direct proof of the complete Crouzeix inequality",
+     "path": "preprints/A-direct-proof-of-the-complete-Crouzeix-inequality-September-26-2026/paper.pdf",
+     "note": "",
+     "abstract": "We give a direct proof of the sharp constant-two numerical-range inequality for matrix-valued polynomials in all finite base and coefficient dimensions. This resolves the complete Crouzeix conjecture in its matrix formulation, including matrices whose numerical ranges are points or line segments."
+    },
+    {
+     "title": "The complete Crouzeix theorem: optimal similarity and a common positive boundary representation",
+     "path": "preprints/The-complete-Crouzeix-theorem-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We resolve the complete Crouzeix conjecture by proving the sharp constant-two numerical-range inequality for every bounded operator on a complex Hilbert space and every matrix-valued polynomial. No separability assumption is needed. The closure of the numerical range is a complete 2-spectral set, and the bound extends to finite matrix-valued functions holomorphic near that closure. For a finite matrix and a bounded convex domain containing its numerical range with regular real-analytic Jordan boundary, the optimal similarity making its conformal disk image contractive is attained with condition number at most two. For the similar matrix, one continuous positive boundary density of mass the identity represents the evaluation of every matrix-valued function holomorphic near the closed domain."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/325.md",
+    "title": "The complete Crouzeix conjecture",
+    "papers": [
+     "preprints/A-direct-proof-of-the-complete-Crouzeix-inequality-September-26-2026/paper.pdf",
+     "preprints/The-complete-Crouzeix-theorem-September-23-2026/paper.pdf"
+    ],
+    "scope": "The complete Crouzeix inequality bounds a matrix-valued polynomial evaluated at a matrix by its maximum norm on the numerical range. The formalized result proves the bound with constant $2$ for every positive matrix and coefficient size, every polynomial degree, and arbitrary complex coefficients. It also proves that no smaller universal constant works. Normality of the matrix and nonempty interior of its numerical range are not assumed.\n\nThe formalization proves the complete Crouzeix inequality with sharp constant two for every bounded operator on an arbitrary complex Hilbert space. For every matrix-valued polynomial, its operator evaluation has norm at most twice its supremum norm on the numerical range. The same bound holds for finite matrix-valued functions holomorphic near the closure of the numerical range and for rational functions with poles outside that closure. No separability assumption is required.\n\nFor finite matrices in a bounded convex domain with regular real-analytic Jordan boundary, the structural result gives an attained optimal similarity with condition number at most two and one continuous positive boundary density of mass the identity representing every matrix-valued analytic test. The linked supporting statements include numerical-range geometry and finite-compression identities.",
+    "results": [
+     {
+      "label": "Complete Crouzeix inequality and sharpness",
+      "challenge": "lean/ComparatorChallenges/DirectCrouzeix.lean",
+      "config": "lean/ComparatorChallenges/DirectCrouzeix.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.DirectCrouzeix.complete_crouzeix",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 34,
+        "statement": "theorem complete_crouzeix : UniversalBound 2",
+        "proof": {
+         "file": "lean/OAI/Analysis/DirectCrouzeix/CompleteBound.lean",
+         "line": 65,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/DirectCrouzeix/Main.lean",
+        "main": true
+       },
+       {
+        "name": "OAI.DirectCrouzeix.uniform_sharpness",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 37,
+        "statement": "theorem uniform_sharpness (c : ℝ) (hc : UniversalBound c) : 2 ≤ c",
+        "proof": {
+         "file": "lean/OAI/Analysis/DirectCrouzeix/Sharpness.lean",
+         "line": 75,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/DirectCrouzeix/Main.lean",
+        "main": false
+       }
+      ]
+     },
+     {
+      "label": "Complete polynomial inequality and sharpness",
+      "challenge": "lean/ComparatorChallenges/CompleteCrouzeix.lean",
+      "config": "lean/ComparatorChallenges/CompleteCrouzeix.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.CompleteCrouzeix.main",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 33,
+        "statement": "theorem main : UniversalBound 2 ∧ ∀ C : ℝ, UniversalBound C → 2 ≤ C",
+        "proof": {
+         "file": "lean/OAI/Analysis/NumericalRange/Main.lean",
+         "line": 61,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/NumericalRange/Main.lean",
+        "main": true
+       }
+      ]
+     },
+     {
+      "label": "Optimal similarity and boundary representation",
+      "challenge": "lean/ComparatorChallenges/StructuralCrouzeix.lean",
+      "config": "lean/ComparatorChallenges/StructuralCrouzeix.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.StructuralCrouzeixReference.challenge",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 210,
+        "statement": "theorem challenge : StructuralCrouzeix.FullEndpoint ∧\n    StructuralCrouzeix.IsAdmissible (Metric.ball (0 : ℂ) 1)",
+        "proof": {
+         "file": "lean/OAI/Analysis/StructuralCrouzeix/Endpoint.lean",
+         "line": 7,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/StructuralCrouzeix/Endpoint.lean",
+        "main": true
+       }
+      ]
+     },
+     {
+      "label": "Complete sharp Crouzeix theorem on arbitrary Hilbert spaces",
+      "challenge": "lean/ComparatorChallenges/CrouzeixHilbert.lean",
+      "config": "lean/ComparatorChallenges/CrouzeixHilbert.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.CrouzeixHilbert.hilbert",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 148,
+        "statement": "theorem hilbert (H : Type u) [NormedAddCommGroup H] [InnerProductSpace ℂ H]\n    [CompleteSpace H] (A : Operator H) :\n    (Nontrivial H → NonzeroConclusion A) ∧\n    (Subsingleton H → ZeroConclusion A) ∧ SharpConstant",
+        "proof": {
+         "file": "lean/OAI/Analysis/Crouzeix/HilbertInequality.lean",
+         "line": 12,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/Crouzeix/Main.lean",
+        "main": false
+       }
+      ]
+     },
+     {
+      "label": "Numerical-range geometry and finite-compression support",
+      "challenge": "lean/ComparatorChallenges/HilbertCrouzeix.lean",
+      "config": "lean/ComparatorChallenges/HilbertCrouzeix.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.HilbertCrouzeix.numericalClosure_geometry",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 115,
+        "statement": "theorem numericalClosure_geometry (A : H →L[ℂ] H) :\n    IsCompact (numericalClosure A) ∧ Convex ℝ (numericalClosure A) ∧\n      spectrum ℂ A ⊆ numericalClosure A",
+        "proof": null,
+        "module": "lean/OAI/Analysis/HilbertCrouzeix/Main.lean",
+        "main": false
+       },
+       {
+        "name": "OAI.HilbertCrouzeix.exists_finite_compression",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 121,
+        "statement": "theorem exists_finite_compression {m d : ℕ} (A : H →L[ℂ] H)\n    (B : Fin (d + 1) → Coeff m) (ξ : H ⊗[ℂ] CoeffSpace m) :\n    ∃ (E : Submodule ℂ H) (hE : FiniteDimensional ℂ E),\n      letI : FiniteDimensional ℂ E := hE\n      ∃ η : Amplification E m,\n        tensorInclusion E m η = (↑ξ : Amplification H m) ∧\n        tensorInclusion E m (polynomialEval (compression A E) B η) =\n          polynomialEval A B (↑ξ)",
+        "proof": null,
+        "module": "lean/OAI/Analysis/HilbertCrouzeix/Main.lean",
+        "main": false
+       },
+       {
+        "name": "OAI.HilbertCrouzeix.rational_denominator_isUnit",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 131,
+        "statement": "theorem rational_denominator_isUnit [Nontrivial H] (A : H →L[ℂ] H)\n    {m : ℕ} (R : RationalMatrix m) (hR : numericalClosure A ⊆ poleFreeSet R)\n    (i j : Fin m) : IsUnit (Polynomial.aeval A (R i j).denom)",
+        "proof": {
+         "file": "lean/OAI/Analysis/HilbertCrouzeix/Calculus.lean",
+         "line": 51,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/HilbertCrouzeix/Main.lean",
+        "main": false
+       },
+       {
+        "name": "OAI.HilbertCrouzeix.zeroConclusion",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 136,
+        "statement": "theorem zeroConclusion [Subsingleton H] (A : H →L[ℂ] H) : ZeroConclusion A",
+        "proof": {
+         "file": "lean/OAI/Analysis/HilbertCrouzeix/Calculus.lean",
+         "line": 84,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/HilbertCrouzeix/Main.lean",
+        "main": false
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "326",
+   "title": "The cotype–cotype conjecture under the approximation property",
+   "description": "Resolves the cotype–cotype conjecture for real Banach spaces with the approximation property. Such a nonzero space is *K*-convex if and only if both it and its dual have finite Rademacher cotype, with possibly different exponents. Equivalently, these cotype assumptions force nontrivial Rademacher type.",
+   "doc": "lean/docs/326.md",
+   "manuscripts": [
+    {
+     "title": "The cotype–cotype conjecture under the approximation property",
+     "path": "preprints/The-cotype-cotype-conjecture-under-the-approximation-property-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove the cotype–cotype conjecture under the ordinary approximation property. A nonzero real Banach space with this property is *K*-convex if and only if both the space and its dual have finite Rademacher cotype, possibly with different exponents."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/326.md",
+    "title": "The cotype–cotype conjecture under the approximation property",
+    "papers": [
+     "preprints/The-cotype-cotype-conjecture-under-the-approximation-property-September-23-2026/paper.pdf"
+    ],
+    "scope": "The cotype–cotype problem asks whether finite cotype of a Banach space and its dual characterizes $K$-convexity. The formalized result establishes this equivalence for every nonzero real Banach space with the approximation property: $X$ is $K$-convex exactly when both $X$ and $X^*$ have finite cotype.",
+    "results": [
+     {
+      "label": "Cotype–cotype equivalence with approximation property",
+      "challenge": "lean/ComparatorChallenges/Cotype.lean",
+      "config": "lean/ComparatorChallenges/Cotype.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.Cotype.mainTarget_proved",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 53,
+        "statement": "theorem mainTarget_proved [Nontrivial X] : MainTarget X",
+        "proof": {
+         "file": "lean/OAI/Analysis/Cotype/Main.lean",
+         "line": 26,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/Cotype/Main.lean",
+        "main": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "327",
+   "title": "Markov type characterizes superreflexivity",
+   "description": "Proves that every real Banach space with Markov type *p* for some *p* > 1 admits an equivalent uniformly convex norm, answering Naor's renorming question. Together with the known converse, this characterizes superreflexivity by nontrivial Markov type.",
+   "doc": "lean/docs/327.md",
+   "manuscripts": [
+    {
+     "title": "Nontrivial Markov Type Forces Superreflexivity",
+     "path": "preprints/Nontrivial-Markov-Type-Forces-Superreflexivity-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove that every real Banach space with Markov type *p* > 1 is superreflexive. Together with the known converse, this characterizes superreflexivity by nontrivial Markov type. This answers Naor's question: every real Banach space with nontrivial Markov type admits an equivalent uniformly smooth norm."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/327.md",
+    "title": "Markov type characterizes superreflexivity",
+    "papers": [
+     "preprints/Nontrivial-Markov-Type-Forces-Superreflexivity-September-23-2026/paper.pdf"
+    ],
+    "scope": "The formalized result proves that a real Banach space has nontrivial Markov type exactly when it admits an equivalent uniformly convex norm, hence exactly when it is superreflexive. Nontrivial Markov type means a uniform Markov-type bound for some exponent $p>1$ over all finite stationary reversible chains and all positive times. The exponent and equivalent norm may depend on the space, and the zero space is included. Additional formalized consequences concern uniformly smooth renormings and reflexivity of finitely representable spaces.",
+    "results": [
+     {
+      "label": "Nontrivial Markov type and superreflexivity",
+      "challenge": "lean/ComparatorChallenges/MarkovType.lean",
+      "config": "lean/ComparatorChallenges/MarkovType.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.MarkovSuperreflexivity.hasNontrivialMarkovType_iff_hasEquivalentUCNorm",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 71,
+        "statement": "theorem hasNontrivialMarkovType_iff_hasEquivalentUCNorm [CompleteSpace X] :\n    HasNontrivialMarkovType X ↔ HasEquivalentUCNorm X",
+        "proof": {
+         "file": "lean/OAI/Analysis/MarkovType/Main.lean",
+         "line": 36,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/MarkovType/Main.lean",
+        "main": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "328",
+   "title": "Nonexpansive fixed points in reflexive Banach spaces",
+   "description": "Resolves Kirk's reflexive-space fixed-point problem: every nonexpansive selfmap of a nonempty closed bounded convex subset of a real reflexive Banach space has a fixed point. The result uses the original norm, without assuming uniform convexity.",
+   "doc": "lean/docs/328.md",
+   "manuscripts": [
+    {
+     "title": "Fixed Points of Nonexpansive Maps in Reflexive Banach Spaces",
+     "path": "preprints/Fixed-Points-of-Nonexpansive-Maps-in-Reflexive-Banach-Spaces-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "Every nonexpansive selfmap of a nonempty closed bounded convex subset of a real reflexive Banach space has a fixed point. This resolves the reflexive-space fixed point problem for the given norm."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/328.md",
+    "title": "Nonexpansive fixed points in reflexive Banach spaces",
+    "papers": [
+     "preprints/Fixed-Points-of-Nonexpansive-Maps-in-Reflexive-Banach-Spaces-September-24-2026/paper.pdf"
+    ],
+    "scope": "The fixed-point question asks whether reflexivity suffices for nonexpansive maps on bounded convex sets. The formalized result gives an affirmative answer: every nonexpansive self-map of a nonempty closed bounded convex subset of a real reflexive Banach space has a fixed point in the original norm. Zero and nonseparable spaces are included, with no uniform convexity, normal structure, or weak-continuity assumption.",
+    "results": [
+     {
+      "label": "Nonexpansive fixed points in reflexive spaces",
+      "challenge": "lean/ComparatorChallenges/ReflexiveFixedPoints.lean",
+      "config": "lean/ComparatorChallenges/ReflexiveFixedPoints.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.ReflexiveFixedPoints.exists_fixedPoint_of_canonicallyReflexive",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 21,
+        "statement": "theorem exists_fixedPoint_of_canonicallyReflexive\n    {X : Type u} [NormedAddCommGroup X] [NormedSpace ℝ X] [CompleteSpace X]\n    (hX : CanonicallyReflexive X) (C : Set X)\n    (hne : C.Nonempty) (hclosed : IsClosed C)\n    (hbounded : Bornology.IsBounded C) (hconvex : Convex ℝ C)\n    (F : C → C)\n    (hF : ∀ a b : C, ‖(F a : X) - (F b : X)‖ ≤ ‖(a : X) - (b : X)‖) :\n    ∃ a : C, F a = a",
+        "proof": {
+         "file": "lean/OAI/Analysis/Nonexpansive/Main.lean",
+         "line": 40,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/Nonexpansive/Main.lean",
+        "main": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "329",
+   "title": "A counterexample to metric-entropy duality",
+   "description": "Disproves Pietsch's dimension-free duality conjecture for metric entropy. Origin-symmetric convex bodies violate every proposed choice of universal constants in the conjectured comparison between covering numbers and those of the polar bodies, even when the covering body is a cube.",
+   "doc": "lean/docs/329.md",
+   "manuscripts": [
+    {
+     "title": "Counterexamples to the duality conjecture for metric entropy",
+     "path": "preprints/Counterexamples-to-the-duality-conjecture-for-metric-entropy-September-24-2026/main.pdf",
+     "note": "",
+     "abstract": "We disprove Pietsch's dimension-free duality conjecture for metric entropy. For every proposed pair of universal constants, we construct origin-symmetric convex bodies that violate the corresponding covering-entropy inequality, already when the covering body is a cube."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/329.md",
+    "title": "A counterexample to metric-entropy duality",
+    "papers": [
+     "preprints/Counterexamples-to-the-duality-conjecture-for-metric-entropy-September-24-2026/main.pdf"
+    ],
+    "scope": "Metric-entropy duality predicts a universal comparison between covering numbers of convex bodies and their polars. The formalized result disproves such a comparison: for every $a,b\\ge1$, there is an origin-symmetric convex body $K$ in a positive finite dimension with $\\log N(K,B_\\infty)>b\\log N(B_\\infty^\\circ,a^{-1}K^\\circ)$, where $N$ is the least number of translates in a finite cover. A further construction makes the dual-to-primal logarithmic entropy ratio tend to zero as the dimension grows.",
+    "results": [
+     {
+      "label": "Counterexample to metric-entropy duality",
+      "challenge": "lean/ComparatorChallenges/MetricEntropyDuality.lean",
+      "config": "lean/ComparatorChallenges/MetricEntropyDuality.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.MetricEntropyDuality.exists_entropy_duality_counterexample_with_covers",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 45,
+        "statement": "theorem exists_entropy_duality_counterexample_with_covers\n    (a b : ℝ) (ha : 1 ≤ a) (hb : 1 ≤ b) :\n    ∃ n : ℕ, 0 < n ∧ ∃ K : Set (RealSpace (Fin n)),\n      IsSymmetricConvexBody K ∧\n      Coverable K (cube (Fin n)) ∧\n      Coverable (polar (cube (Fin n))) (a⁻¹ • polar K) ∧\n      b * Real.log (coveringNumber (polar (cube (Fin n))) (a⁻¹ • polar K) : ℝ) <\n        Real.log (coveringNumber K (cube (Fin n)) : ℝ)",
+        "proof": {
+         "file": "lean/OAI/Analysis/MetricEntropy/Main.lean",
+         "line": 48,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/MetricEntropy/Main.lean",
+        "main": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "330",
+   "title": "A uniformly discrete counterexample to bounded approximation in Lipschitz-free spaces",
+   "description": "Constructs a countable uniformly discrete metric space whose real Lipschitz-free Banach space has the approximation property but not the bounded approximation property, answering Kalton's question negatively. Finite-rank operators approximate the identity on every compact set, but their norms cannot share a finite bound.",
+   "doc": "lean/docs/330.md",
+   "manuscripts": [
+    {
+     "title": "A uniformly discrete counterexample to bounded approximation in Lipschitz-free spaces",
+     "path": "preprints/Failure-of-Bounded-Approximation-in-a-Lipschitz-Free-Space-over-a-Uniformly-Discrete-Metric-Space-September-26-2026/main.pdf",
+     "note": "",
+     "abstract": "We construct a countable uniformly discrete metric space whose real Lipschitz-free space has the approximation property but fails the bounded approximation property, answering Kalton's question negatively. The identity can be approximated on every compact set by finite-rank operators, but no uniform bound on their norms is possible."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/330.md",
+    "title": "A uniformly discrete counterexample to bounded approximation in Lipschitz-free spaces",
+    "papers": [
+     "preprints/Failure-of-Bounded-Approximation-in-a-Lipschitz-Free-Space-over-a-Uniformly-Discrete-Metric-Space-September-26-2026/main.pdf"
+    ],
+    "scope": "Kalton's question asks whether uniform discreteness of a metric space forces its Lipschitz-free space to have the bounded approximation property. The formalization constructs a countable metric space with all distinct points at distance at least one whose real Lipschitz-free space has the approximation property but fails every bounded approximation bound. The metric space is unbounded and not proper.\n\nThe earlier quantitative renorming result for real $\\ell_1$ is retained: for each integer $p\\ge1$, an equivalent complete norm has the $2B_p$-bounded approximation property but fails the $p$-bounded approximation property, where $B_p=300p^2+150p+5$.",
+    "results": [
+     {
+      "label": "Quantitative renorming of real $\\ell_1$",
+      "challenge": "lean/ComparatorChallenges/RealL1Renorming.lean",
+      "config": "lean/ComparatorChallenges/RealL1Renorming.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.DiscreteFree.real_l1_quantitative_renorming",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 48,
+        "statement": "theorem real_l1_quantitative_renorming : RealL1RenormingStatement",
+        "proof": {
+         "file": "lean/OAI/Analysis/LipschitzFree/Renorming.lean",
+         "line": 41,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/LipschitzFree/Renorming.lean",
+        "main": false
+       }
+      ]
+     },
+     {
+      "label": "Uniformly discrete Lipschitz-free space with AP but no BAP",
+      "challenge": "lean/ComparatorChallenges/DiscreteLipschitzFree.lean",
+      "config": "lean/ComparatorChallenges/DiscreteLipschitzFree.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.DiscreteFree.source_endpoints",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 156,
+        "statement": "theorem source_endpoints : BlockStatement ∧ MainStatement",
+        "proof": {
+         "file": "lean/OAI/Analysis/LipschitzFree/Main.lean",
+         "line": 92,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/LipschitzFree/Main.lean",
+        "main": false
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "331",
+   "title": "Reflexive midpoint convexity and diamond distortion",
+   "description": "Constructs a real reflexive Banach space with an asymptotically midpoint uniformly convex norm but no equivalent asymptotically uniformly convex norm, extending Baudier's separation to reflexive spaces. In the same space, depth-*k* countably branching diamonds require distortion at least $\\sqrt{1+k/12}$, so midpoint uniform convexity does not force uniformly bounded diamond distortion even under reflexivity.",
+   "doc": "lean/docs/331.md",
+   "manuscripts": [
+    {
+     "title": "Asymptotic midpoint uniform convexity and unbounded diamond distortion in a reflexive tree space",
+     "path": "preprints/Asymptotic-midpoint-uniform-convexity-and-unbounded-diamond-distortion-in-a-reflexive-tree-space-September-27-2026/manuscript.pdf",
+     "note": "",
+     "abstract": "We construct a separable reflexive real Banach space whose given norm is asymptotically midpoint uniformly convex but which admits no asymptotically uniformly convex equivalent norm. Its averaged midpoint modulus is at least $\\sqrt{1+t^2/12}-1$, and the countably branching diamond of depth *k* has distortion at least $\\sqrt{1+k/12}$ in this space. This gives a negative answer to the reflexive diamond converse for asymptotic uniform convexifiability."
+    },
+    {
+     "title": "Midpoint lenses in segment spaces",
+     "path": "preprints/Midpoint-lenses-in-segment-spaces-September-27-2026/manuscript.pdf",
+     "note": "",
+     "abstract": "For a real segment-forest dual with unbounded finite component heights and the real infinite-height coordinate predual, we bound the tail of an arbitrary displacement in a symmetric lens by $2\\sqrt{R^2-\\|x\\|^2}$, where *R* is the lens radius and *x* is its finitely supported center. Both given norms are asymptotically midpoint uniformly convex, although neither space admits an equivalent asymptotically uniformly convex norm. The finite-height forest dual is reflexive."
+    },
+    {
+     "title": "Distortion of countably branching diamonds from midpoint and tree energies",
+     "path": "preprints/Diamond-distortion-from-midpoint-and-tree-energies-September-27-2026/manuscript.pdf",
+     "note": "",
+     "abstract": "We derive quantitative distortion bounds for countably branching diamond graphs from midpoint estimates and direct tree energies. In the dual of a finite-height segment forest, every distortion-*D* embedding of the depth-*k* diamond satisfies $D^2\\ge1+k/4$. The same bound holds in the infinite-height coordinate predual. We also obtain power-type distortion bounds for path-cost and recursive tree norms."
+    },
+    {
+     "title": "Exact asymptotic moduli in a Daugavet subspace of L1",
+     "path": "preprints/Exact-asymptotic-moduli-in-a-Daugavet-subspace-of-L1-September-27-2026/manuscript.pdf",
+     "note": "",
+     "abstract": "For an infinite-dimensional real subspace of $L^{1}$ whose unit ball is totally bounded in measure and whose norm has the Daugavet property, we compute the averaged midpoint and one-sided asymptotic moduli at every unit center. They are $\\max\\{t/2,t-1\\}$ and $\\max\\{0,t-2\\}$, respectively. The same weak-neighborhood geometry excludes every equivalent asymptotically uniformly convex norm. A quantitative realization of the Kadets–Werner construction supplies a space with both hypotheses."
+    },
+    {
+     "title": "Midpoint convexity from bounded tree potentials and path costs",
+     "path": "preprints/Midpoint-convexity-from-bounded-tree-potentials-and-path-costs-September-27-2026/manuscript.pdf",
+     "note": "",
+     "abstract": "Four real Banach spaces defined by bounded tree potentials satisfy the averaged asymptotic midpoint bound $\\widehat\\delta(t)\\ge\\sqrt{1+t^2/4}-1$ for $0\\lt t\\lt 1$, while none admits an asymptotically uniformly convex (AUC) renorming. On finite-height trees, the globally constrained norm equals the least additive cost of a Hilbert vector and root paths. The quadratic path and segment-start outer Hilbert sums are reflexive and asymptotically midpoint uniformly convex, and admit no equivalent AUC norm."
+    },
+    {
+     "title": "Independent products in real L1: asymptotic midpoint convexity without AUC renormings",
+     "path": "preprints/Independent-products-in-real-L1-asymptotic-midpoint-convexity-without-AUC-renormings-September-27-2026/manuscript.pdf",
+     "note": "",
+     "abstract": "For a countably branching tree, the closed real $L^{1}$ spans of products of independent exponential or Gaussian-square multipliers along its paths have positive averaged asymptotic midpoint moduli and admit no equivalent asymptotically uniformly convex norm. The renorming obstruction holds for every positive nonconstant mean-one multiplier with finite second moment."
+    },
+    {
+     "title": "Midpoint convexity from two recursive potentials",
+     "path": "preprints/Midpoint-convexity-from-two-recursive-potentials-September-27-2026/manuscript.pdf",
+     "note": "",
+     "abstract": "We study tree norms computed by two least nonnegative fields whose difference is the vector. For Euclidean child aggregation, two root-sum spaces have an averaged asymptotic midpoint modulus of at least $t^3/128$ for $0\\lt t\\lt 1$, including a reflexive joining-root space. A reflexive construction with a fixed zero root also satisfies a homogeneous cubic estimate. These spaces admit no equivalent asymptotically uniformly convex norm. We also obtain sixth-power and cubic estimates when the aggregation exponent depends on the height of a finite component."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/331.md",
+    "title": "Reflexive midpoint convexity and diamond distortion",
+    "papers": [
+     "preprints/Asymptotic-midpoint-uniform-convexity-and-unbounded-diamond-distortion-in-a-reflexive-tree-space-September-27-2026/manuscript.pdf",
+     "preprints/Midpoint-lenses-in-segment-spaces-September-27-2026/manuscript.pdf",
+     "preprints/Diamond-distortion-from-midpoint-and-tree-energies-September-27-2026/manuscript.pdf",
+     "preprints/Exact-asymptotic-moduli-in-a-Daugavet-subspace-of-L1-September-27-2026/manuscript.pdf",
+     "preprints/Midpoint-convexity-from-bounded-tree-potentials-and-path-costs-September-27-2026/manuscript.pdf",
+     "preprints/Independent-products-in-real-L1-asymptotic-midpoint-convexity-without-AUC-renormings-September-27-2026/manuscript.pdf",
+     "preprints/Midpoint-convexity-from-two-recursive-potentials-September-27-2026/manuscript.pdf"
+    ],
+    "scope": "The paper constructs a Banach space whose midpoint geometry is asymptotically uniformly convex even though no equivalent norm is asymptotically uniformly convex in the usual one-sided sense. The formalization proves that the full dual of the specified segment-norm completion is infinite-dimensional, separable, and reflexive; its averaged midpoint modulus is at least $\\sqrt{1+t^2/12}-1$ for every $t>0$, while every equivalent norm fails asymptotic uniform convexity. It also proves that an embedding of a depth-$k$ countably branching diamond has distortion at least $\\sqrt{1+k/12}$.\n\nThe general-forest and word-forest results use the closed span of the coordinate functionals. Their conclusions retain the finite-ancestor and equivalent-norm hypotheses, including the scale $\\alpha/(2\\beta)$ when $0<\\alpha\\le\\beta$ and the new norm lies between $\\alpha$ and $\\beta$ times the original norm; they do not identify that span with the full dual or assert reflexivity for every forest.\n\nThe paper controls midpoint lenses in Banach spaces defined by tree-segment norms. The formalization proves the following estimate in both the full dual of the finite-height forest space and the coordinate predual of the infinite-tree space. If $x$ is supported on a finite ancestral set $H$, $R\\ge0$, and $\\|x+y\\|,\\|x-y\\|\\le R$, then the part of $y$ outside $H$ has norm at most $2\\sqrt{R^2-\\|x\\|^2}$.\n\nThe formalization also covers selected consequences for averaged midpoint moduli and separated families of vectors, together with reflexivity and renorming obstructions. This scope concerns the segment-space results; the companion results on diamond energies remain separate.\n\nThe paper studies embeddings of countably branching diamond graphs into Banach spaces built from tree segments. The formalization proves that every embedding of the depth-$k$ diamond with distortion $D$, at any positive scale, satisfies $1+k/4\\le D^2$ in either of two spaces: the full dual of the completed finite-height forest space and the closed coordinate span in the dual of the infinite-tree space. The bound applies to all pairs of vertices and is unconditional.\n\nThe formalization also contains selected graph deductions under explicit companion assumptions. Twenty-two of those companion inputs are assumed in these deductions; the diamond distortion bound above does not require them.\n\nThe paper exhibits a real $L_1$ subspace with positive averaged midpoint convexity but no equivalent asymptotically uniformly convex norm. For every closed infinite-dimensional subspace whose unit ball is precompact in measure and which has the Daugavet property, the formalization computes the moduli at every unit vector: the averaged midpoint modulus is $\\max(t/2,t-1)$ and the usual one-sided asymptotic modulus is $\\max(0,t-2)$ for every $t>0$. The same formulas hold after taking the infimum over unit vectors, and every equivalent norm fails asymptotic uniform convexity.\n\nThe formalization also constructs such a subspace on a countable product of unit intervals and proves that it has the stated measure-precompactness and Daugavet properties, so the modulus formulas apply to an actual example.\n\nThe paper constructs Banach spaces from bounded tree potentials and path costs to separate averaged midpoint convexity from asymptotic uniform convexity. For the specified tree-potential completions, the formalization proves completeness, separability, infinite dimension, and an averaged midpoint modulus of at least $\\sqrt{1+t^2/4}-1$ for $0<t<1$. No space linearly isomorphic to one of these completions is asymptotically uniformly convex.\n\nThe formalization also covers selected path-cost duality and comparison results, clipping and energy estimates, and further renorming obstructions. These retain their stated support, head, and tail hypotheses; the remaining auxiliary assertions of the paper are outside this scope.\n\nThe paper forms a real $L_1$ space from the closed span of products of independent multipliers along tree paths. For a positive, nonconstant multiplier of mean one and finite second moment, the formalization proves that this space is infinite-dimensional and has no equivalent asymptotically uniformly convex norm.\n\nFor every $t>0$, the averaged midpoint modulus nevertheless has explicit positive lower bounds. If $G$ is a standard real Gaussian, the exponential-multiplier bound is $\\frac{7t}{480}\\mathbb E[(|G|-20/t)_+]$, where $u_+=\\max(u,0)$. For squared-Gaussian multipliers, the bounds are $\\frac18\\Pr(|G|\\ge4\\sqrt2(2+\\sqrt2)/t)$ and $\\frac14\\Pr(|G|\\ge8\\sqrt6/t)$.\n\nThe paper constructs three Banach spaces from recursive tree potentials: a root-sum space, a zero-root space, and a joined space. The formalization proves that all three are infinite-dimensional and have no equivalent asymptotically uniformly convex norm. The root-sum and joined spaces have averaged midpoint modulus at least $t^3/128$ for $0<t<1$, and the root-sum modulus is positive for every $t>0$. The zero-root estimate retains its finite ancestral support and tail hypotheses, and the zero-root and joined spaces are reflexive.\n\nThe formalization also covers a separated-midpoint result for the joined space and a variable-exponent model with its recursive norm, duality, projections, renorming obstruction, and sixth- and third-order stability estimates. The separation, sequence, support, and head assumptions in these results are essential parts of their statements.",
+    "results": [
+     {
+      "label": "Reflexive tree space, midpoint modulus, and diamond distortion",
+      "challenge": "lean/ComparatorChallenges/ForestSpace.lean",
+      "config": "lean/ComparatorChallenges/ForestSpace.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.ForestSpace.main_theorem",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 453,
+        "statement": "theorem main_theorem :\n    (¬FiniteDimensional ℝ (FullDual Vertex)) ∧\n    TopologicalSpace.SeparableSpace (FullDual Vertex) ∧\n    Reflexive (FullDual Vertex) ∧\n    (∀ (α β : ℝ) (R : EquivalentNorm (FullDual Vertex) α β), ¬IsAUC R.N) ∧\n    (∀ t : ℝ, 0 < t →\n      Real.sqrt (1+t^2/12)-1 ≤ averageModulus (FullDual Vertex) norm t) ∧\n    (∀ (k : ℕ) (f : (Diamond.diamond k).V → FullDual Vertex) (C : ℝ),\n      Diamond.EmbeddingBound k f C → Real.sqrt (1+(k:ℝ)/12) ≤ C)",
+        "proof": {
+         "file": "lean/OAI/Analysis/ForestSpace/Main.lean",
+         "line": 16,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/ForestSpace/Main.lean",
+        "main": true
+       }
+      ]
+     },
+     {
+      "label": "Midpoint-lens tail estimate",
+      "challenge": "lean/ComparatorChallenges/MidpointLenses.lean",
+      "config": "lean/ComparatorChallenges/MidpointLenses.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.SegmentLenses.midpoint_lens_main",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 328,
+        "statement": "theorem midpoint_lens_main :\n    (∀ (H : Finset ForestVertex) (_ : Ancestral ForestAncestor H)\n      (x y : X) (_ : x = head H x) (R : ℝ) (_ : 0 ≤ R)\n      (_ : ‖x + y‖ ≤ R) (_ : ‖x - y‖ ≤ R),\n      ‖tail H y‖ ≤ 2 * Real.sqrt (R ^ 2 - ‖x‖ ^ 2)) ∧\n    (∀ (H : Finset InfiniteVertex) (_ : Ancestral List.IsPrefix H)\n      (x y : BInfinite) (_ : x.val = head H x.val) (R : ℝ) (_ : 0 ≤ R)\n      (_ : ‖x + y‖ ≤ R) (_ : ‖x - y‖ ≤ R),\n      ‖tail H y.val‖ ≤ 2 * Real.sqrt (R ^ 2 - ‖x‖ ^ 2))",
+        "proof": {
+         "file": "lean/OAI/Analysis/SegmentLenses/Main.lean",
+         "line": 7,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/SegmentLenses/Main.lean",
+        "main": true
+       }
+      ]
+     },
+     {
+      "label": "All-pairs diamond distortion bound",
+      "challenge": "lean/ComparatorChallenges/DiamondDistortion.lean",
+      "config": "lean/ComparatorChallenges/DiamondDistortion.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.DiamondDistortion.headline_all_pairs",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 302,
+        "statement": "theorem headline_all_pairs :\n    (∀ (k : ℕ) (f : Diamond.Vertex k → ForestDual) (D s : ℝ),\n      0 < s → (∀ u v,s*Diamond.distance k u v ≤ ‖f u-f v‖ ∧\n        ‖f u-f v‖ ≤ D*s*Diamond.distance k u v) → 1+(k:ℝ)/4 ≤ D^2) ∧\n    (∀ (k : ℕ) (f : Diamond.Vertex k → InfinitePredual) (D s : ℝ),\n      0 < s → (∀ u v,s*Diamond.distance k u v ≤ ‖f u-f v‖ ∧\n        ‖f u-f v‖ ≤ D*s*Diamond.distance k u v) → 1+(k:ℝ)/4 ≤ D^2)",
+        "proof": {
+         "file": "lean/OAI/Analysis/DiamondDistortion/Descent.lean",
+         "line": 104,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/DiamondDistortion/Descent.lean",
+        "main": true
+       }
+      ]
+     },
+     {
+      "label": "Exact asymptotic moduli and a Daugavet example",
+      "challenge": "lean/ComparatorChallenges/DaugavetModuli.lean",
+      "config": "lean/ComparatorChallenges/DaugavetModuli.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.ExactModuli.exact_main",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 72,
+        "statement": "theorem exact_main {Ω : Type u_1} [MeasurableSpace Ω] (μ : Measure Ω)\n    [IsProbabilityMeasure μ] (E : Submodule ℝ (Lp ℝ 1 μ))\n    (_hclosed : IsClosed (E : Set (Lp ℝ 1 μ))) (hdim : ¬ FiniteDimensional ℝ E)\n    (hprecompact : MeasurePrecompactBall μ E) (hdaugavet : Daugavet E) :\n    (∀ (x : E), ‖x‖ = 1 → ∀ t : ℝ, 0 < t →\n      H (normSeminorm ℝ E) x t = max (t / 2) (t - 1) ∧\n      D (normSeminorm ℝ E) x t = max 0 (t - 2)) ∧\n    (∀ t : ℝ, 0 < t →\n      averagedModulus (normSeminorm ℝ E) t = max (t / 2) (t - 1) ∧\n      oneSidedModulus (normSeminorm ℝ E) t = max 0 (t - 2)) ∧\n    (∀ N : Seminorm ℝ E, EquivalentNorm N → ¬ AUC N)",
+        "proof": null,
+        "module": "lean/OAI/Analysis/Daugavet/Main.lean",
+        "main": false
+       },
+       {
+        "name": "OAI.ExactModuli.kadets_werner_existence",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 85,
+        "statement": "theorem kadets_werner_existence :\n    ∃ E : Submodule ℝ (Lp ℝ 1 kwMeasure),\n      IsClosed (E : Set (Lp ℝ 1 kwMeasure)) ∧ (¬ FiniteDimensional ℝ E) ∧\n      MeasurePrecompactBall kwMeasure E ∧ UnitSliceProperty E ∧ Daugavet E",
+        "proof": {
+         "file": "lean/OAI/Analysis/Daugavet/Main.lean",
+         "line": 11,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/Daugavet/Main.lean",
+        "main": false
+       },
+       {
+        "name": "OAI.ExactModuli.exact_example",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 91,
+        "statement": "theorem exact_example :\n    ∃ E : Submodule ℝ (Lp ℝ 1 kwMeasure),\n      IsClosed (E : Set (Lp ℝ 1 kwMeasure)) ∧ (¬ FiniteDimensional ℝ E) ∧\n      MeasurePrecompactBall kwMeasure E ∧ UnitSliceProperty E ∧ Daugavet E ∧\n      (∀ (x : E), ‖x‖ = 1 → ∀ t : ℝ, 0 < t →\n        H (normSeminorm ℝ E) x t = max (t / 2) (t - 1) ∧\n        D (normSeminorm ℝ E) x t = max 0 (t - 2)) ∧\n      (∀ t : ℝ, 0 < t →\n        averagedModulus (normSeminorm ℝ E) t = max (t / 2) (t - 1) ∧\n        oneSidedModulus (normSeminorm ℝ E) t = max 0 (t - 2)) ∧\n      (∀ N : Seminorm ℝ E, EquivalentNorm N → ¬ AUC N)",
+        "proof": {
+         "file": "lean/OAI/Analysis/Daugavet/Main.lean",
+         "line": 22,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/Daugavet/Main.lean",
+        "main": true
+       }
+      ]
+     },
+     {
+      "label": "Tree-potential midpoint convexity and renorming obstruction",
+      "challenge": "lean/ComparatorChallenges/BoundedTreePotentials.lean",
+      "config": "lean/ComparatorChallenges/BoundedTreePotentials.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.BoundedTreePotentials.TreeCalculus.main_counterexample",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 339,
+        "statement": "theorem TreeCalculus.main_counterexample (r : Bool) (k : QuadraticKind) :\n    (CompleteSpace (TestCompletion (treeTestFamily r k)) ∧\n      TopologicalSpace.SeparableSpace (TestCompletion (treeTestFamily r k)) ∧\n      ¬Module.Finite ℝ (TestCompletion (treeTestFamily r k))) ∧\n    (∀ t : ℝ, 0 < t → t < 1 →\n      Real.sqrt (1 + t ^ 2 / 4) - 1 ≤\n        averagedModulusReal (TestCompletion (treeTestFamily r k)) t) ∧\n    (∀ (Y : Type u) [NormedAddCommGroup Y] [NormedSpace ℝ Y],\n      (TestCompletion (treeTestFamily r k) ≃L[ℝ] Y) → ¬IsAUCReal Y)",
+        "proof": {
+         "file": "lean/OAI/Analysis/TreePotential/Main.lean",
+         "line": 12,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/TreePotential/Main.lean",
+        "main": true
+       }
+      ]
+     },
+     {
+      "label": "Independent-product spaces and positive midpoint moduli",
+      "challenge": "lean/ComparatorChallenges/IndependentProducts.lean",
+      "config": "lean/ComparatorChallenges/IndependentProducts.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.IndependentProducts.main_general",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 89,
+        "statement": "theorem main_general (μ : Measure ℝ) (hμ : MultiplierHypotheses μ) :\n    ¬ FiniteDimensional ℝ (productSpan μ) ∧\n    ∀ N : Seminorm ℝ (productSpan μ),\n      IsEquivalentNorm (productSpan μ) N → ¬ IsAUC (productSpan μ) N",
+        "proof": {
+         "file": "lean/OAI/Analysis/ProductSpaces/WeakNullity.lean",
+         "line": 203,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/ProductSpaces/Main.lean",
+        "main": true
+       },
+       {
+        "name": "OAI.IndependentProducts.main_exponential",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 95,
+        "statement": "theorem main_exponential (t : ℝ) (ht : 0 < t) :\n    (7 * t / 30) * excessConstant (10 / t) ≤\n      averagedMidpointModulus (productSpan exponentialLaw)\n        (normSeminorm ℝ (productSpan exponentialLaw)) t ∧\n    0 < (7 * t / 30) * excessConstant (10 / t)",
+        "proof": {
+         "file": "lean/OAI/Analysis/ProductSpaces/Main.lean",
+         "line": 54,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/ProductSpaces/Main.lean",
+        "main": true
+       },
+       {
+        "name": "OAI.IndependentProducts.main_gaussian_24",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 102,
+        "statement": "theorem main_gaussian_24 (t : ℝ) (ht : 0 < t) :\n    gaussianTail (4 * Real.sqrt 2 * (2 + Real.sqrt 2) / t) / 8 ≤\n      averagedMidpointModulus (productSpan gaussianSquareLaw)\n        (normSeminorm ℝ (productSpan gaussianSquareLaw)) t ∧\n    0 < gaussianTail (4 * Real.sqrt 2 * (2 + Real.sqrt 2) / t) / 8",
+        "proof": null,
+        "module": "lean/OAI/Analysis/ProductSpaces/Main.lean",
+        "main": false
+       },
+       {
+        "name": "OAI.IndependentProducts.main_gaussian_12",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 109,
+        "statement": "theorem main_gaussian_12 (t : ℝ) (ht : 0 < t) :\n    gaussianTail (8 * Real.sqrt 6 / t) / 4 ≤\n      averagedMidpointModulus (productSpan gaussianSquareLaw)\n        (normSeminorm ℝ (productSpan gaussianSquareLaw)) t ∧\n    0 < gaussianTail (8 * Real.sqrt 6 / t) / 4",
+        "proof": null,
+        "module": "lean/OAI/Analysis/ProductSpaces/Main.lean",
+        "main": false
+       }
+      ]
+     },
+     {
+      "label": "Recursive-potential spaces and midpoint convexity",
+      "challenge": "lean/ComparatorChallenges/RecursivePotentials.lean",
+      "config": "lean/ComparatorChallenges/RecursivePotentials.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.ComparatorModel.RecursivePotentials.main",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 955,
+        "statement": "theorem main : MainClaim",
+        "proof": {
+         "file": "lean/OAI/Analysis/RecursivePotentials/Challenge.lean",
+         "line": 259,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/RecursivePotentials/Challenge.lean",
+        "main": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "332",
+   "title": "Metric Markov cotype of $ℓ_{1}$ and Hilbert-space Lipschitz extension",
+   "description": "Proves that real $ℓ_{1}$ has metric Markov cotype two, answering Mendel and Naor's question. Consequently, every Lipschitz map from an arbitrary subset of a real Hilbert space into $ℓ_{1}$ extends to the whole space with a universal multiplicative loss in its Lipschitz constant, resolving Ball's extension problem for this target.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "Metric Markov Cotype Two of $ℓ_{1}$",
+     "path": "preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/l1-markov-cotype.pdf",
+     "note": "",
+     "abstract": "We prove that the real Banach space $ℓ_{1}$ has metric Markov cotype two, answering a question of Mendel and Naor. As a consequence, every Lipschitz map from an arbitrary subset of a real Hilbert space into $ℓ_{1}$ extends to the whole Hilbert space with a universal multiplicative loss in its Lipschitz constant, resolving Ball's extension problem for this target."
+    }
+   ],
+   "lean": null
+  }
+ ]
+}

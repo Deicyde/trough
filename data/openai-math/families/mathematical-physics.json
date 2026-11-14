@@ -1,0 +1,1423 @@
+{
+ "schema": "trough-openai-math/v1",
+ "rev": "4eaee87548250b2682affda7d05d947c05554bae",
+ "families": [
+  {
+   "number": "260",
+   "title": "Spacetime Penrose inequalities: enclosing area, charge, rotation, and anti-de Sitter extensions",
+   "description": "Proves the sharp enclosing-area spacetime Penrose inequality for smooth one-ended asymptotically flat initial data in every spatial dimension *n* ≥ 3, under dominant energy, weak future trapping, positive enclosing area, and the stated decay assumptions. It bounds invariant ADM mass below using minimum enclosing area, with equality rigidity under additional horizon hypotheses. Charged upper-area bounds treat dyonic three-dimensional data; the higher-dimensional purely electric extension uses the matched neutral theorem.",
+   "doc": "lean/docs/260.md",
+   "manuscripts": [
+    {
+     "title": "The spacetime Penrose inequality with charge and original-data rigidity",
+     "path": "preprints/The-spacetime-Penrose-inequality-with-charge-and-original-data-rigidity-October-5-2026/paper.pdf",
+     "note": "",
+     "abstract": "Under the stated energy, decay, and trapping hypotheses, we prove the sharp charged spacetime Penrose upper-area inequality for one-ended three-dimensional initial data with source-free electric and magnetic fields. The theorem allows arbitrary second fundamental form, nonzero ADM momentum, and disconnected boundary. Writing *m* for invariant ADM mass, *Q* for total charge magnitude, and $r_{A}$ for the minimum-enclosing-area radius, the bound is *m* ≥ *Q* and $r_A\\le m+\\sqrt{m^2-Q^2}$. The polynomial mass bound $m\\ge(r_A+Q^2/r_A)/2$ is asserted only when $r_A\\gt Q$. When *m* > *Q*, equality under the stated connected, outermost, outer-area-minimizing future-horizon hypotheses identifies the original data as a smooth spacelike slice of dyonic Reissner–Nordström, including smooth attachment at the future horizon."
+    },
+    {
+     "title": "A Charged Reduction of the Spacetime Penrose Inequality in Spatial Dimensions at Least Four",
+     "path": "preprints/A-Charged-Reduction-of-the-Spacetime-Penrose-Inequality-in-Spatial-Dimensions-at-Least-Four-October-5-2026/paper.pdf",
+     "note": "",
+     "abstract": "Using the companion neutral spacetime Penrose theorem exactly at its stated strong-decay, future-trapped, positive-area, and future-timelike scope, we prove the sharp purely electric upper-area inequality in every spatial dimension *n* ≥ 4 for one-ended charged data satisfying the charged dominant energy condition and $\\mathop{\\mathrm{div}}\\nolimits _g E=0$, with the specified decay, integrability, and finite-flux assumptions. The data may have arbitrary interior topology and ADM momentum, with a future or past trapping sign chosen independently on each boundary component. Positive enclosing area and strict ADM timelikeness are conclusions. The polynomial mass rearrangement is asserted only when the $(n-2)$nd power of the enclosing-area radius exceeds $|Q|$. When $m\\gt |Q|$, equality under the stated connected, outermost, outer-area-minimizing future-horizon hypotheses recovers the original metric, second fundamental form, and electric field as a global spacelike slice of a Reissner–Nordström–Tangherlini exterior. The equality classification includes only slices whose induced magnetic two-form vanishes."
+    },
+    {
+     "title": "Spacetime Penrose inequalities: enclosing area, charge, and rigidity",
+     "path": "preprints/Spacetime-Penrose-inequalities-enclosing-area-charge-and-rigidity-October-5-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove sharp spacetime Penrose inequalities for invariant ADM mass and minimum enclosing area in three and four spatial dimensions. Under their respective designated-end conventions, the neutral numerical results allow arbitrary second fundamental form, nonzero momentum, disconnected weakly future trapped boundary, and finitely many ends. Under the stated horizon hypotheses, equality for the neutral inequalities reconstructs the original exterior data as spacelike slices of Schwarzschild spacetime in three dimensions and Schwarzschild–Tangherlini spacetime in four; the four-dimensional equality theorem concerns a connected, one-ended exterior. We also prove a three-dimensional electric–magnetic charged upper-area inequality for one-ended data with nonzero momentum, with separate purely electric rest-frame corollaries allowing finitely many ends. Finally, for each fixed transverse-traceless seed and prescribed decaying solution branch, we prove a local Schwarzschild–anti-de Sitter inequality."
+    },
+    {
+     "title": "The Kerr–Newman Penrose Inequality for Axisymmetric Electrovacuum Exteriors",
+     "path": "preprints/The-Kerr-Newman-Penrose-Inequality-for-Axisymmetric-Electrovacuum-Exteriors-October-5-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove the sharp Kerr–Newman Penrose inequality\n\n$\\displaystyle m^2\\ge \\frac{A}{16\\pi}+\\frac{Q^2}{2} +\\frac{\\pi(Q^4+4J^2)}{A}.$\n\nHere $Q^2=Q_e^2+Q_b^2$, and *J* is the conserved total angular momentum, including its electromagnetic contribution. The result applies to smooth axisymmetric electrovacuum exteriors in the stated one-ended topological and decay class, with a connected outermost, outer-area-minimizing future marginally outer trapped boundary, Coulomb electromagnetic asymptotics, zero ADM momentum, and the explicitly assumed physical-area condition $A\\ge4\\pi\\sqrt{Q^4+4J^2}$. No maximality assumption is made. On the strict area branch, equality within this class characterizes the original data as an admissible spacelike exterior slice of a subextremal dyonic Kerr–Newman spacetime, with the boundary mapped smoothly to a future-horizon cross-section or the bifurcation sphere."
+    },
+    {
+     "title": "Electromagnetic tails and the Kerr–Newman Penrose inequality",
+     "path": "preprints/Electromagnetic-tails-and-the-Kerr-Newman-Penrose-inequality-October-5-2026/paper.pdf",
+     "note": "",
+     "abstract": "We construct smooth axisymmetric electrovacuum exteriors that violate the Kerr–Newman Penrose inequality when *J* is the bare gravitational ADM angular momentum and the electromagnetic fields have only $O(r^{-2})$ decay, allowing angularly varying leading tails. The examples have zero total electric and magnetic charge even though both electromagnetic fields are nonzero. They have a connected outermost, outer-area-minimizing future marginally outer trapped boundary and lie strictly on the physical area branch. We also obtain equality examples whose original data admit no Kerr–Newman spacelike realization with the corresponding mass, angular momentum, and charges. These counterexamples do not refute formulations using conserved total angular momentum with its electromagnetic correction or stronger Coulomb asymptotics."
+    },
+    {
+     "title": "The nonmaximal anti-de Sitter Penrose Inequality and original-data rigidity",
+     "path": "preprints/The-nonmaximal-anti-de-Sitter-Penrose-Inequality-and-original-data-rigidity-October-5-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove the spacetime Penrose Inequality for smooth three-dimensional initial-data exteriors with one spherical asymptotically anti-de Sitter end, satisfying the stated decay and integrability assumptions, the dominant energy condition, and a compact weakly future outer trapped boundary. We assume that the hyperbolic metric four-flux is future timelike; its Lorentz norm is the mass, and the area is the infimum over full enclosing cuts. On the connected outermost, outer area-minimizing horizon subclass, equality characterizes the original data as a spacelike hypersurface in Schwarzschild–anti-de Sitter spacetime with matching metric mass. No maximality, evolution, or auxiliary solvability assumption is used."
+    },
+    {
+     "title": "The Penrose inequality for maximal asymptotically hyperbolic initial data",
+     "path": "preprints/The-Penrose-inequality-for-maximal-asymptotically-hyperbolic-initial-data-October-5-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove the sharp Penrose inequality for three-dimensional maximal asymptotically hyperbolic initial data with spherical conformal infinity. Under the dominant energy condition, the stated decay and integrability assumptions, and a future-timelike mass covector, the invariant mass is bounded below by the Schwarzschild–anti-de Sitter mass associated with the minimum enclosing area of a weakly future outer-trapped boundary. The boundary may be disconnected, and no restriction is imposed on the compact topology."
+    },
+    {
+     "title": "A local Penrose inequality for conformal perturbations of Schwarzschild–anti-de Sitter data",
+     "path": "preprints/A-local-Penrose-inequality-for-conformal-perturbations-of-Schwarzschild-anti-de-Sitter-data-October-5-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove the asymptotically hyperbolic Penrose inequality for sufficiently small maximal vacuum conformal perturbations of a positive-mass Schwarzschild–anti-de Sitter exterior, for every fixed decaying transverse-traceless seed and every solution branch satisfying the stated decay and mass assumptions. The bound uses the area of the marginally outer trapped boundary itself; it requires neither outermostness nor outer area-minimization, and no bulk-versus-boundary domination condition. For sufficiently small positive parameters, equality holds for radial seeds and the inequality is strict otherwise."
+    },
+    {
+     "title": "The spacetime Penrose inequality and enclosing area",
+     "path": "preprints/The-spacetime-Penrose-inequality-and-enclosing-area-September-27-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove the sharp spacetime Penrose inequality for smooth one-ended initial-data exteriors in every spatial dimension *n* ≥ 3, under the dominant energy condition, weak future trapping, the stated differentiated decay and positive enclosing area. These hypotheses force the ADM energy-momentum to be future timelike. Area is the infimum over full enclosing cuts in the original metric. In dimensions three and four, two metric derivatives and one tensor derivative suffice, and both positive enclosing area and future timelikeness follow from the hypotheses."
+    },
+    {
+     "title": "Conformal flow and the Riemannian Penrose inequality with minimizing frontiers",
+     "path": "preprints/Conformal-flow-and-the-Riemannian-Penrose-inequality-with-minimizing-frontiers-September-27-2026/paper.pdf",
+     "note": "",
+     "abstract": "We give a detailed conformal-flow proof of the numerical Riemannian Penrose inequality in every dimension *n* ≥ 3 for complete asymptotically flat exteriors with nonnegative scalar curvature and full compact frontiers that are outer minimizing and locally perimeter minimizing. The metric extends smoothly through the possibly singular frontier; neither spin nor frontier connectedness is assumed. The proof follows the conformal-flow approach of Bray, Bray–Lee, and Bi–Zhu."
+    },
+    {
+     "title": "Equality and rigidity in the spacetime Penrose inequality",
+     "path": "preprints/Equality-and-rigidity-in-the-spacetime-Penrose-inequality-September-27-2026/paper.pdf",
+     "note": "",
+     "abstract": "Equality in the spacetime Penrose inequality identifies the original initial data as a spacelike slice of a Schwarzschild–Tangherlini exterior, smoothly attached to its horizon, under the stated outermostness and decay hypotheses. We prove this in every spatial dimension *n* ≥ 3 for a strong-decay exterior class and for weaker decay in dimensions three and four. In dimension three the finite-component theorem forces a single spherical horizon and gives qualitative strictness for disconnected boundaries."
+    },
+    {
+     "title": "Boundary graph deformations for the spacetime Penrose inequality",
+     "path": "preprints/Boundary-graph-deformations-for-the-spacetime-Penrose-inequality-September-27-2026/paper.pdf",
+     "note": "",
+     "abstract": "We construct graph and conformal deformations of trapped initial-data exteriors in three and four spatial dimensions. The resulting metrics have nonnegative scalar curvature, strictly negative inner mean curvature, a lower bound protecting every enclosing cut, and an arbitrarily small upper error in ADM energy. We also give a direct four-dimensional maximal vacuum construction that retains a noncompact decaying second fundamental form. These constructions give boundary routes to the corresponding numerical Penrose inequalities."
+    },
+    {
+     "title": "Area-controlled end replacement and the Bondi Penrose inequality in the CKS class",
+     "path": "preprints/Area-controlled-end-replacement-and-the-Bondi-Penrose-inequality-in-the-CKS-class-September-27-2026/paper.pdf",
+     "note": "",
+     "abstract": "We replace a three-dimensional Cha–Khuri–Sakovich hyperboloidal end by an asymptotically flat end while preserving the dominant energy condition and each fixed compact interior. For strictly future-timelike CKS initial-data charge, the replacements lose asymptotically no enclosing area and their ADM masses tend to the invariant Bondi mass. Combining this construction with the companion numerical spacetime Penrose theorem yields the sharp Bondi bound for possibly disconnected weakly future trapped boundaries in this class. Horizon-regular Schwarzschild exteriors attain equality at every positive mass."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/260.md",
+    "title": "Spacetime Penrose inequalities: enclosing area, charge, rotation, and anti-de Sitter extensions",
+    "papers": [
+     "preprints/Area-controlled-end-replacement-and-the-Bondi-Penrose-inequality-in-the-CKS-class-September-27-2026/paper.pdf"
+    ],
+    "scope": "The formalization replaces a three-dimensional Cha–Khuri–Sakovich hyperboloidal end by asymptotically flat ends while preserving each fixed compact interior, completeness, and the dominant energy condition. For strictly future-timelike initial-data charge, the ADM masses approach the invariant Bondi mass and the loss of enclosing area tends to zero.\n\nThe Comparator also includes canonical Schwarzschild equality examples at every positive mass, with $m_{\\mathrm{Bondi}}=m$ and enclosing area $16\\pi m^2$. The paper's general Bondi–Penrose inequality for possibly disconnected weakly trapped boundaries remains unformalized.\n\nThe implementation retains a conditional inequality for the connected marginal-boundary case, assuming the asymptotically flat exterior Penrose inequality. This supporting result is not selected as a substitute for the paper's main inequality.",
+    "results": [
+     {
+      "label": "Area-controlled end replacement and Schwarzschild equality examples",
+      "challenge": "lean/ComparatorChallenges/CKSBondiPenrose.lean",
+      "config": "lean/ComparatorChallenges/CKSBondiPenrose.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.CKSSourceExterior.area_controlled_end_replacement",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 3312,
+        "statement": "theorem area_controlled_end_replacement\n    (g : OAI.CKSMetricGluing.SmoothMetric OAI.CKSGeometricCuts.I3 (M := N)) (K : OAI.CKSMetricGluing.InnerField OAI.CKSGeometricCuts.I3 (M := N))\n    (hK : ContMDiff OAI.CKSGeometricCuts.I3 (OAI.CKSGeometricCuts.I3.prod 𝓘(ℝ,OAI.CKSLorentz.SpatialBilinear)) ∞ (OAI.CKSMetricGluing.innerSection OAI.CKSGeometricCuts.I3 K))\n    (hKsym : ∀ x v w, K x v w = K x w v)\n    (hOrient : OAI.CKSSourceExterior.Orientable (N := N))\n    (hScompact : IsCompact (OAI.CKSGeometricCuts.I3.boundary N)) (hSnonempty : (OAI.CKSGeometricCuts.I3.boundary N).Nonempty)\n    (hcomplete : OAI.CKSReplacementCompleteness.IsComplete OAI.CKSGeometricCuts.I3 g.toContinuousRiemannianMetric)\n    (hDEC : OAI.CKSSpatialManifold.PhysicalDEC OAI.CKSGeometricCuts.I3 g.inner K)\n    (d : OAI.CKSSourceExterior.CKSData g K)\n    (ht : ‖(OAI.CKSLorentz.bondiCharge d.massAspect).2‖ < (OAI.CKSLorentz.bondiCharge d.massAspect).1) :\n    ∃ (d' : OAI.CKSSourceExterior.CKSData g K) (R₀ : ℝ) (ε : ℝ → ℝ),\n      OAI.CKSLorentz.bondiCharge d'.massAspect =\n        (Real.sqrt ((OAI.CKSLorentz.bondiCharge d.massAspect).1^2 - ‖(OAI.CKSLorentz.bondiCharge d.massAspect).2‖^2),0) ∧\n      d'.chart.radius < R₀ ∧ 12 ≤ R₀ ∧ Tendsto ε atTop (𝓝 0) ∧\n      OAI.CKSFullCutArea.minEnclosingArea g < ⊤ ∧\n      ∀ R ≥ R₀, (0 ≤ ε R ∧ ε R < 1) ∧\n        ∃ (gR : OAI.CKSMetricGluing.SmoothMetric OAI.CKSGeometricCuts.I3 (M := N)) (kR : OAI.CKSMetricGluing.InnerField OAI.CKSGeometricCuts.I3 (M := N))\n          (G k : OAI.CKSLorentz.SpatialTensor) (η : ℝ),\n          ContMDiff OAI.CKSGeometricCuts.I3 (OAI.CKSGeometricCuts.I3.prod 𝓘(ℝ,OAI.CKSLorentz.SpatialBilinear)) ∞ (OAI.CKSMetricGluing.innerSection OAI.CKSGeometricCuts.I3 kR) ∧\n          (∀ x v w, kR x v w = kR x w v) ∧\n          (∀ x, x ∉ d'.chart.domain ∨ ‖d'.chart.coordinate x‖ ≤ R →\n            gR.inner x = g.inner x ∧ kR x = K x) ∧\n          OAI.CKSSpatialManifold.PhysicalDEC OAI.CKSGeometricCuts.I3 gR.inner kR ∧\n          (∀ x v, (1-ε R) * g.inner x v v ≤ gR.inner x v v) ∧\n          OAI.CKSReplacementCompleteness.IsComplete OAI.CKSGeometricCuts.I3 gR.toContinuousRiemannianMetric ∧\n          OAI.CKSSourceExterior.constraintsIntegrable gR kR ∧\n          (∀ x ∈ d'.chart.domain,\n            gR.inner x = OAI.CKSSpatialManifold.endInner OAI.CKSGeometricCuts.I3 d'.chart.coordinate G x ∧\n            kR x = OAI.CKSSpatialManifold.endInner OAI.CKSGeometricCuts.I3 d'.chart.coordinate k x) ∧\n          (∀ i j : Fin 3, OAI.CKSADM.Symbol 1\n            (fun x => OAI.CKSLorentz.spatialCartesian G x i j - (if i=j then 1 else 0))) ∧\n          (∀ x : OAI.CKSLorentz.E, 2*R^2 < ‖x‖ → k x = 0) ∧\n          Tendsto (OAI.CKSLorentz.spatialADMEnergy G) atTop\n            (𝓝 (Real.sqrt ((OAI.CKSLorentz.bondiCharge d.massAspect).1^2 - ‖(OAI.CKSLorentz.bondiCharge d.massAspect).2‖^2) + η)) ∧\n          Tendsto (OAI.CKSLorentz.spatialADMMomentum G k) atTop (𝓝 0) ∧\n          0 ≤ η ∧ η ≤ 2 * R ^ (-(1/2 : ℝ)) ∧\n          OAI.CKSFullCutArea.minEnclosingArea gR < ⊤ ∧\n          (1-ε R) * OAI.CKSSourceExterior.minimumEnclosingArea g ≤ OAI.CKSSourceExterior.minimumEnclosingArea gR ∧\n          ∀ D : OAI.CKSGeometricCuts.OuterDomain N,\n            OAI.CKSFullCutArea.area g D < ⊤ ∧ OAI.CKSFullCutArea.area gR D < ⊤ ∧\n            (1-ε R) * OAI.CKSSourceExterior.cutArea g D ≤ OAI.CKSSourceExterior.cutArea gR D",
+        "proof": null,
+        "module": "lean/OAI/Geometry/Relativity/CKS/ComparatorMain.lean",
+        "main": false
+       },
+       {
+        "name": "OAI.CKSMain.schwarzschild_equality_examples",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 3591,
+        "statement": "theorem schwarzschild_equality_examples (m : ℝ) (hm : 0 < m) :\n    SchwarzschildExample.{v} m hm",
+        "proof": {
+         "file": "lean/OAI/Geometry/Relativity/CKS/ComparatorMain.lean",
+         "line": 12,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Geometry/Relativity/CKS/ComparatorMain.lean",
+        "main": false
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "261",
+   "title": "Localization and delocalization in the Anderson model",
+   "description": "Resolves the predicted spectral contrast for the lattice Anderson model with independent uniform site potentials. In dimension two, every positive disorder strength gives almost surely pure-point spectrum. In every fixed dimension *d* ≥ 3, sufficiently weak positive disorder gives purely absolutely continuous spectrum on a fixed open interval with nonzero spectral weight.",
+   "doc": "lean/docs/261.md",
+   "manuscripts": [
+    {
+     "title": "Absolutely Continuous Spectrum for Weak-Disorder Anderson Models in Dimensions at Least Three",
+     "path": "preprints/Absolutely-Continuous-Spectrum-for-Weak-Disorder-Anderson-Models-in-Dimensions-at-Least-Three-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "For each fixed dimension *d* ≥ 3 and each fixed sufficiently small positive disorder strength, we prove that the Anderson operator on ℤ$^{d}$ with independent uniform site potentials almost surely has purely absolutely continuous spectrum with nonzero weight on an open energy interval. The interval may depend on *d* but is independent of the disorder strength. This settles the purely absolutely continuous energy-range question in Simon's Problem 1 for this model."
+    },
+    {
+     "title": "Pure-Point Spectrum for the Two-Dimensional Anderson Model at Every Positive Disorder",
+     "path": "preprints/Pure-Point-Spectrum-for-the-Two-Dimensional-Anderson-Model-at-Every-Positive-Disorder-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "For each fixed positive disorder strength, we prove that the nearest-neighbor Anderson operator on the square lattice with independent uniform site potentials almost surely has pure-point spectral type throughout its spectrum. This resolves the pure-point assertion of the two-dimensional Anderson localization conjecture for the uniform single-site law."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/261.md",
+    "title": "Localization and delocalization in the Anderson model",
+    "papers": [
+     "preprints/Pure-Point-Spectrum-for-the-Two-Dimensional-Anderson-Model-at-Every-Positive-Disorder-September-23-2026/paper.pdf"
+    ],
+    "scope": "The linked formalization proves a supporting spectral statement for the nearest-neighbor Anderson operator on $\\mathbb Z^2$. For every disorder strength $h>0$ with independent site potentials uniform on $[-h,h]$, it constructs the bounded self-adjoint operator almost surely and identifies its spectrum as the real interval $[-4-h,4+h]$.\n\nThis selected statement identifies the spectral set. It does not assert the pure-point spectral type claimed in the accompanying paper.",
+    "results": [
+     {
+      "label": "Almost-sure spectrum of the planar Anderson operator",
+      "challenge": "lean/ComparatorChallenges/PlanarAndersonSpectrum.lean",
+      "config": "lean/ComparatorChallenges/PlanarAndersonSpectrum.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.PlanarAnderson.anderson_spectrum_ae",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 26,
+        "statement": "theorem anderson_spectrum_ae {h : ℝ} (hh : 0 < h) :\n    ∀ᵐ v ∂disorderLaw h, ∃ H : Hilbert →L[ℂ] Hilbert,\n      IsAndersonOperator v H ∧ IsSelfAdjoint H ∧ spectrum ℂ H = spectralInterval h",
+        "proof": {
+         "file": "lean/OAI/MathematicalPhysics/PlanarAnderson/Spectrum.lean",
+         "line": 674,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/MathematicalPhysics/PlanarAnderson/Spectrum.lean",
+        "main": false
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "262",
+   "title": "Sharp finite-matrix Lieb–Thirring inequalities and all equality cases",
+   "description": "Proves the sharp one-dimensional Lieb–Thirring inequality for $1/2\\lt \\gamma\\lt 3/2$ and arbitrary finite-matrix potentials *W* ≥ 0 with $\\int\\mathop{\\mathrm{tr}}\\nolimits (W^{\\gamma+1/2})\\lt \\infty$: the optimal constant is the scalar one-bound-state value, independent of matrix size. All equality cases are direct sums, in one constant unitary basis, of scalar sech$^{2}$ solitons with independent scales and centers, and zero channels.",
+   "doc": "lean/docs/262.md",
+   "manuscripts": [
+    {
+     "title": "Equality cases in the sharp one-dimensional matrix Lieb–Thirring inequality",
+     "path": "preprints/Equality-cases-in-the-sharp-one-dimensional-matrix-Lieb-Thirring-inequality-October-5-2026/sharp-one-dimensional-lieb-thirring-inequalities-matrix-potentials.pdf",
+     "note": "",
+     "abstract": "We classify all equality cases in the sharp one-dimensional Lieb–Thirring inequality for every finite matrix size and $1/2\\lt \\gamma\\lt 3/2$. For measurable Hermitian positive semidefinite potentials *W* with $\\int_\\mathbb R\\mathop{\\mathrm{tr}}\\nolimits (W^{\\gamma+1/2})\\lt \\infty$, equality holds precisely for direct sums, in one constant unitary basis, of scalar one-bound-state solitons and zero channels. The nonzero solitons may have independent scales and centers."
+    },
+    {
+     "title": "Sharp one-dimensional Lieb–Thirring inequalities for matrix potentials",
+     "path": "preprints/Sharp-one-dimensional-Lieb-Thirring-inequalities-for-matrix-potentials-October-5-2026/sharp-matrix-lieb-thirring.pdf",
+     "note": "",
+     "abstract": "We prove the sharp one-dimensional Lieb–Thirring inequality for every finite matrix size and every exponent $1/2\\lt \\gamma\\lt 3/2$. The optimal constant is the scalar one-bound-state constant, independently of the matrix size. The inequality bounds the full sum of negative eigenvalue moments for every measurable Hermitian positive semidefinite potential *W* satisfying $\\int_\\mathbb R\\mathop{\\mathrm{tr}}\\nolimits (W^{\\gamma+1/2})\\lt \\infty$. The matrices may have arbitrary rank and need not commute at different points."
+    },
+    {
+     "title": "Sharp one-dimensional Lieb–Thirring constants",
+     "path": "preprints/Sharp-One-Dimensional-Lieb-Thirring-Constants-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We resolve affirmatively the remaining cases of the scalar one-dimensional Lieb–Thirring conjecture: for every $\\frac12\\lt \\gamma\\lt \\frac32$, the optimal constant is the one-bound-state constant. The estimate holds for every nonnegative potential in $L^{\\gamma+1/2}(\\mathbb R)$, with all negative eigenvalues included."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/262.md",
+    "title": "Sharp finite-matrix Lieb–Thirring inequalities and all equality cases",
+    "papers": [
+     "preprints/Sharp-One-Dimensional-Lieb-Thirring-Constants-September-23-2026/paper.pdf"
+    ],
+    "scope": "The formalized result determines the sharp one-dimensional Lieb–Thirring constant for $1/2<\\gamma<3/2$. For every nonnegative $W\\in L^{\\gamma+1/2}(\\mathbb R)$, it bounds the full negative-eigenvalue moment of $-d^2/dx^2-W$ by the one-bound-state constant times the potential integral. This constant is optimal and is attained by $(r+1)\\mathrm{sech}^2(rx)$, where $r=(\\gamma-1/2)^{-1}$. No finite spectral cutoff is imposed.",
+    "results": [
+     {
+      "label": "Sharp one-dimensional Lieb–Thirring inequality",
+      "challenge": "lean/ComparatorChallenges/LiebThirring.lean",
+      "config": "lean/ComparatorChallenges/LiebThirring.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.SharpLiebThirring.sharp_lieb_thirring",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 94,
+        "statement": "theorem sharp_lieb_thirring : MainClaim",
+        "proof": {
+         "file": "lean/OAI/Analysis/LiebThirring/Main.lean",
+         "line": 38,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/LiebThirring/Main.lean",
+        "main": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "263",
+   "title": "The ionization and generalized ionization conjectures",
+   "description": "For the full nonrelativistic Coulomb model with two electron spin states, proves that a molecule with *M* fixed nuclei of charges at least one and total charge *Z* strictly binds at most $Z+CM$ electrons. Neutral-atom first ionization energies and radii containing all but an expected half-electron have universal positive upper and lower bounds. The energy cost of removing *m* electrons has Thomas–Fermi asymptotics as $m\\to\\infty$ and $Z/m\\to\\infty$; neutral-atom outer radii have the corresponding iterated-limit asymptotics, taking $Z\\to\\infty$ first.",
+   "doc": "lean/docs/263.md",
+   "manuscripts": [
+    {
+     "title": "Uniform excess charge for Coulomb molecules and the outer radius of neutral atoms",
+     "path": "preprints/Uniform-excess-charge-for-Coulomb-molecules-and-the-outer-radius-of-neutral-atoms-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove that a molecule with *M* fixed nuclei of real charges at least one and total nuclear charge *Z* strictly binds at most $Z+CM$ electrons, where *C* is universal. The result holds for the full nonrelativistic Coulomb Hamiltonian with two spin states and arbitrary distinct nuclear positions. For neutral atoms with integer nuclear charge *Z* ≥ 1, the first ionization energy and, for every ground state, the radius outside which one half of an electron remains are each bounded above and below by positive universal constants."
+    },
+    {
+     "title": "Generalized ionization energies for full Coulomb atoms",
+     "path": "preprints/Generalized-ionization-energies-for-full-Coulomb-atoms-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove the energy part of the generalized ionization conjecture for full nonrelativistic Coulomb atoms with two electron spin states. The energy needed to remove *m* electrons is asymptotic to $a_{\\mathrm{TF}}m^{7/3}$ whenever $m\\to\\infty$ and $Z/m\\to\\infty$, with the Thomas–Fermi constant in atomic units. We also obtain both conjectured iterated limits."
+    },
+    {
+     "title": "Generalized outer-electron radii of neutral Coulomb atoms",
+     "path": "preprints/Generalized-outer-electron-radii-of-neutral-Coulomb-atoms-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove the radius part of the generalized ionization conjecture for neutral nonrelativistic Coulomb atoms with two spin states. For every choice of ground states, the upper and lower large-nuclear-charge limits of the radius defined by an expected exterior electron mass *m* are both asymptotic to $(81\\pi^2/2)^{1/3}m^{-1/3}$ as *m* tends to infinity."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/263.md",
+    "title": "The ionization and generalized ionization conjectures",
+    "papers": [
+     "preprints/Generalized-ionization-energies-for-full-Coulomb-atoms-September-24-2026/paper.pdf",
+     "preprints/Generalized-outer-electron-radii-of-neutral-Coulomb-atoms-September-24-2026/paper.pdf"
+    ],
+    "scope": "The formalization gives the large-ionization asymptotics for the full nonrelativistic two-spin Coulomb atom. Let $I_m(Z)$ be the energy needed to remove $m$ electrons from a neutral atom of nuclear charge $Z$. There is a positive coefficient $a_{\\mathrm{TF}}$ with the Thomas–Fermi variational characterization such that $I_m(Z)/m^{7/3}\\to a_{\\mathrm{TF}}$ whenever $m\\to\\infty$ and $Z/m\\to\\infty$, with integers $Z>m\\ge1$. The corresponding iterated limsup and liminf limits hold with $Z\\to\\infty$ first. The energy uses the full antisymmetric Sobolev form domain; fixed-$m$ convergence and ground-state attainment are outside this statement.\n\nFor neutral Coulomb atoms with two electron spin states, the formalization proves the asymptotic law for generalized outer-electron radii defined by an expected exterior electron mass $m$. For every choice of normalized ground states, both the upper and lower large-nuclear-charge radius limits satisfy\n$m^{1/3}R_m\\longrightarrow (81\\pi^2/2)^{1/3}$ as $m\\to\\infty$. The large-nuclear-charge limit is taken first. Ground states are inputs to the statement; their existence is not asserted separately.",
+    "results": [
+     {
+      "label": "Generalized Coulomb ionization-energy asymptotics",
+      "challenge": "lean/ComparatorChallenges/CoulombIonization.lean",
+      "config": "lean/ComparatorChallenges/CoulombIonization.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.CoulombAtom.generalized_ionization",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 92,
+        "statement": "theorem generalized_ionization : MainStatement",
+        "proof": {
+         "file": "lean/OAI/Analysis/CoulombIonization/Main.lean",
+         "line": 46,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/CoulombIonization/Main.lean",
+        "main": true
+       }
+      ]
+     },
+     {
+      "label": "Asymptotic outer-electron radii of neutral atoms",
+      "challenge": "lean/ComparatorChallenges/CoulombRadii.lean",
+      "config": "lean/ComparatorChallenges/CoulombRadii.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.NeutralAtom.generalized_outer_radii",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 77,
+        "statement": "theorem generalized_outer_radii\n    (Ψ : ∀ N : ℕ, Wavefunction (N + 1))\n    (hΨ : ∀ N : ℕ, IsNormalizedGroundState (N + 1) (Ψ N)) :\n    Tendsto (fun m : ℕ => (((m : ℝ) ^ (1 / 3 : ℝ) : ℝ) : EReal) * upperRadius Ψ m)\n      atTop (𝓝 (bTF : EReal)) ∧\n    Tendsto (fun m : ℕ => (((m : ℝ) ^ (1 / 3 : ℝ) : ℝ) : EReal) * lowerRadius Ψ m)\n      atTop (𝓝 (bTF : EReal))",
+        "proof": {
+         "file": "lean/OAI/Analysis/CoulombRadii/Main.lean",
+         "line": 15,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/CoulombRadii/Main.lean",
+        "main": false
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "264",
+   "title": "Strong cosmic censorship near two-ended Kerr data",
+   "description": "Proves local strong cosmic censorship near each fixed rotating subextremal Kerr bridge. A dense $G_{δ}$ subset of a weighted smooth neighborhood of smooth complete two-ended asymptotically flat vacuum data has full maximal globally hyperbolic developments with no future continuous nondegenerate extension whose weak connection is locally square-integrable. No symmetry is imposed; extensions need not satisfy the vacuum equations.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "Generic Future Inextendibility with Square-Integrable Connection Near a Fixed Kerr Spacetime",
+     "path": "preprints/Generic-Future-Inextendibility-with-Square-Integrable-Connection-Near-a-Fixed-Kerr-Spacetime-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "For each fixed rotating subextremal Kerr background with mass *M* > 0 and rotation $0\\lt |\\mathfrak a|\\lt M$, we prove that the smooth vacuum data near its complete two-ended bridge whose full maximal globally hyperbolic development admits a future $C^0\\cap W^{1,2}_{\\mathrm{loc}}$ extension form a meagre set in the weighted smooth topology. The extension metric is continuous and nondegenerate, and its weak connection is locally square-integrable. The neighborhood requires smallness of only the tenth weighted seminorm, while the topology tests every finite order."
+    },
+    {
+     "title": "Generic C1 Future Inextendibility Near Rotating Subextremal Kerr Spacetimes",
+     "path": "preprints/Generic-C1-Future-Inextendibility-Near-Rotating-Subextremal-Kerr-Spacetimes-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "For each fixed Kerr spacetime with mass *M* > 0 and rotation $0\\lt \\mathfrak a\\lt M$, we prove that a dense $G_{δ}$ set of nearby smooth, complete two-ended vacuum data has a maximal globally hyperbolic development with no future $C^{1}$ extension. The neighborhood and genericity are defined in a weighted smooth topology, and ambient extensions may be nonvacuum."
+    },
+    {
+     "title": "Quantitative Near-Kerr Evolution and Generic C2 Future Inextendibility",
+     "path": "preprints/Quantitative-Near-Kerr-Evolution-and-Generic-C2-Future-Inextendibility-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "For every fixed rotating subextremal Kerr bridge, we prove that smooth vacuum data admitting a $C^{2}$ future extension of their full maximal globally hyperbolic development form a meagre set in a neighborhood defined by one finite-order seminorm. The topology allows arbitrary symbol-bounded asymptotically flat tails and imposes no symmetry."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "265",
+   "title": "Area laws and tensor networks for two-dimensional gapped systems",
+   "description": "Proves an entropy area law for unique ground states of finite-range Hamiltonians on arbitrary finite induced square-lattice domains, using only a uniform full-system spectral gap and bounds on the local interactions. On open $L\\times L$ squares, uniformly gapped nearest-neighbor ground states also admit projected entangled-pair state approximations with polynomial bond dimension and global vector error at most $L^{−1}$.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "A two-dimensional area law from a global spectral gap",
+     "path": "preprints/A-two-dimensional-area-law-from-a-global-spectral-gap-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove an entropy area law for the unique ground state of a finite-range Hamiltonian on any finite induced subgraph of the square lattice. A lower bound on the spectral gap of the full Hamiltonian and fixed bounds on the local dimension, interaction range, and interaction strength suffice. For every set of sites, its entanglement entropy is bounded by a constant times the number of edges crossing its boundary, independently of the size and shape of the domain."
+    },
+    {
+     "title": "Polynomial PEPS approximation of gapped square-grid ground states",
+     "path": "preprints/Polynomial-PEPS-approximation-of-gapped-square-grid-ground-states-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove that the unique ground state of a uniformly gapped nearest-neighbor Hamiltonian on an $L\\times L$ square lattice admits a projected entangled-pair state approximation with bond dimension polynomial in *L* and global vector error at most $L^{−1}$ after normalization. Only the gap of the full Hamiltonian is assumed. The result is an existence theorem, with constants uniform over Hamiltonians of fixed local dimension, interaction strength, and gap."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "266",
+   "title": "Exactly three mutually unbiased bases in dimension six",
+   "description": "Proves $N(6)=3$, resolving Zauner's dimension-six mutually unbiased bases conjecture: three such bases exist in ℂ$^{6}$, but four cannot. The exclusion is a complete certified computation under the stated binary64 arithmetic and compiler conditions. An independent companion proves the Matolcsi–Ruzsa–Weiner Fourier-vanishing conjecture for order-six complex Hadamard matrices outside Tao's cubic equivalence class.",
+   "doc": "lean/docs/266.md",
+   "manuscripts": [
+    {
+     "title": "The maximum number of mutually unbiased bases in dimension six",
+     "path": "preprints/The-maximum-number-of-mutually-unbiased-bases-in-dimension-six-September-24-2026/The-maximum-number-of-mutually-unbiased-bases-in-dimension-six-September-24-2026.pdf",
+     "note": "",
+     "abstract": "We prove that the maximum number of mutually unbiased orthonormal bases in ℂ$^{6}$ is three, resolving Zauner's dimension-six MUB conjecture. The upper bound is computer-assisted: under the stated binary64 arithmetic and compiler conditions, a complete execution of the documented verification pipeline excludes four arbitrary complex bases."
+    },
+    {
+     "title": "Exact Fourier certificates for complex Hadamard matrices of order six",
+     "path": "preprints/Exact-Fourier-certificates-for-complex-Hadamard-matrices-of-order-six-September-24-2026/Exact-Fourier-certificates-for-complex-Hadamard-matrices-of-order-six-September-24-2026.pdf",
+     "note": "",
+     "abstract": "We prove the Fourier-vanishing conjecture of Matolcsi, Ruzsa, and Weiner: every complex Hadamard matrix of order six outside Tao's cubic equivalence class has a vanishing character sum at every permutation of $(1,1,1,-1,-1,-1)$. We also give an exact certificate excluding seven mutually unbiased bases in ℂ$^{6}$; by Weiner's completion theorem, this yields an upper bound of five. Both certificates use only integer and rational arithmetic, and the complete verifier is included."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/266.md",
+    "title": "Exactly three mutually unbiased bases in dimension six",
+    "papers": [
+     "preprints/The-maximum-number-of-mutually-unbiased-bases-in-dimension-six-September-24-2026/The-maximum-number-of-mutually-unbiased-bases-in-dimension-six-September-24-2026.pdf",
+     "preprints/Exact-Fourier-certificates-for-complex-Hadamard-matrices-of-order-six-September-24-2026/Exact-Fourier-certificates-for-complex-Hadamard-matrices-of-order-six-September-24-2026.pdf"
+    ],
+    "scope": "The paper claims that at most three mutually unbiased orthonormal bases exist in $\\mathbb C^6$. The linked formalization proves a weaker family bound: every family in its mutually unbiased bases model has at most five members. It also proves a Fourier character-sum vanishing statement for order-six complex Hadamard matrices not equivalent to the Tao matrix, uniformly over coordinate permutations.\n\nThe selected statement does not establish the paper's upper bound of three or its computer-assisted exclusion of four arbitrary bases.\n\nThe linked formalization proves a cancellation lemma used in the order-six complex Hadamard analysis. Let $H$ and its entrywise square both be complex Hadamard matrices, and fix two distinct rows. If the cubes of their six entrywise ratios take only two distinct values, then the sum of the row-ratio terms over either specified cube fiber is zero.\n\nThis is a supporting Fourier cancellation statement. The paper's full character-sum vanishing theorem and its mutually unbiased bases bound are outside this selected statement.",
+    "results": [
+     {
+      "label": "Order-six Hadamard Fourier vanishing and a five-basis upper bound",
+      "challenge": "lean/ComparatorChallenges/MUBSix.lean",
+      "config": "lean/ComparatorChallenges/MUBSix.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.MUB6.fourier_and_family_bound",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 56,
+        "statement": "theorem fourier_and_family_bound :\n    (∀ H : CMatrix, IsHadamard H → ¬Equivalent H tao →\n      ∀ π : Equiv.Perm Coord, g H (permuteCharge π alpha) = 0) ∧\n    (∀ n : ℕ, Attainable n → n ≤ 5)",
+        "proof": {
+         "file": "lean/OAI/Analysis/MutuallyUnbiased/Main.lean",
+         "line": 22,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/MutuallyUnbiased/Main.lean",
+        "main": false
+       }
+      ]
+     },
+     {
+      "label": "Cube-fiber cancellation for order-six Hadamard row ratios",
+      "challenge": "lean/ComparatorChallenges/HadamardCubeFiber.lean",
+      "config": "lean/ComparatorChallenges/HadamardCubeFiber.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.HadamardSix.rowRatio_cubeFiber_sum_zero",
+        "role": "theorem",
+        "kind": "lemma",
+        "line": 28,
+        "statement": "lemma rowRatio_cubeFiber_sum_zero {H : Matrix6} (hH : IsComplexHadamard H)\n    (hs : IsComplexHadamard (entrywiseSquare H)) {i j : Index} (hij : i ≠ j)\n    (a b : ℂ) (hne : a ≠ b)\n    (hab : ∀ k, rowRatio H i j k ^ 3 = a ∨ rowRatio H i j k ^ 3 = b) :\n    ∑ k ∈ cubeFiber (rowRatio H i j) a, H i k * star (H j k) = 0",
+        "proof": {
+         "file": "lean/OAI/LinearAlgebra/Hadamard/CubeFibers.lean",
+         "line": 172,
+         "kind": "lemma",
+         "sorry": false
+        },
+        "module": "lean/OAI/LinearAlgebra/Hadamard/Main.lean",
+        "main": false
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "267",
+   "title": "Positive-temperature Bose–Einstein condensation and exact quantum depletion",
+   "description": "Proves Bose–Einstein condensation for the exact canonical Gibbs state of the three-dimensional hard-sphere gas: each fixed exclusion distance and sufficiently small fixed density admit a strictly positive temperature, independent of volume, with positive condensate fraction in the thermodynamic limit. At zero temperature, proves the Bogoliubov leading quantum-depletion law for hard spheres and fixed bounded nonnegative radial finite-range potentials of positive scattering length, taking the thermodynamic limit before the dilute limit.",
+   "doc": "lean/docs/267.md",
+   "manuscripts": [
+    {
+     "title": "Bose–Einstein condensation at positive temperature in the dilute hard-sphere gas",
+     "path": "preprints/Bose-Einstein-condensation-at-positive-temperature-in-the-dilute-hard-sphere-gas-October-5-2026/positive-temperature-hard-spheres.pdf",
+     "note": "",
+     "abstract": "We prove Bose–Einstein condensation at positive temperature in the three-dimensional dilute hard-sphere gas. For each fixed exclusion distance and every sufficiently small fixed density, there is a strictly positive temperature, independent of the volume, at which the exact canonical Gibbs state has a positive condensate fraction in the thermodynamic limit. The condensate occupies the constant orbital."
+    },
+    {
+     "title": "Quantum Depletion and Momentum Distribution in the Dilute Hard-Sphere Bose Gas",
+     "path": "preprints/Quantum-Depletion-and-Momentum-Distribution-in-the-Dilute-Hard-Sphere-Bose-Gas-October-5-2026/Quantum-Depletion-in-the-Dilute-Hard-Sphere-Bose-Gas.pdf",
+     "note": "",
+     "abstract": "We prove the full scaled Bogoliubov momentum distribution for the depleted particles in the three-dimensional hard-sphere Bose gas at zero temperature. The thermodynamic limit is taken at each fixed density before the dilute limit, uniformly over all pure and mixed ground states. All thermodynamic accumulation values have the same dilute asymptotic: the limiting nonzero-momentum occupation measure has total mass $8/(3\\sqrt\\pi)$, giving the depletion fraction $\\frac{8}{3\\sqrt\\pi}\\sqrt{\\rho a^3}+o(\\sqrt{\\rho a^3})$ for density *ρ* and hard-sphere exclusion distance *a*."
+    },
+    {
+     "title": "Quantum Depletion for Fixed Bounded Repulsive Potentials",
+     "path": "preprints/Quantum-Depletion-for-Fixed-Bounded-Repulsive-Potentials-October-5-2026/fixed-repulsion-quantum-depletion.pdf",
+     "note": "",
+     "abstract": "We prove the Bogoliubov quantum-depletion asymptotic for the ground state of a three-dimensional Bose gas with a fixed bounded, nonnegative, radial interaction of finite range and positive scattering length *a*. The thermodynamic limit is taken at each fixed density *ρ* before the dilute limit. Every thermodynamic accumulation value of the fraction outside the constant mode is $\\frac{8}{3\\sqrt\\pi}\\sqrt{\\rho a^3}+o(\\sqrt{\\rho a^3})$ as $\\rho\\downarrow0$. The assertion is uniform over ground-state density matrices and does not require the occupation to have a unique thermodynamic limit."
+    },
+    {
+     "title": "A density-uniform condensate bound for dilute Bose gases",
+     "path": "preprints/A-density-uniform-condensate-bound-for-dilute-Bose-gases-September-27-2026/paper.pdf",
+     "note": "",
+     "abstract": "For each fixed bounded measurable, nonnegative, radial interaction of finite range in three dimensions that is not zero almost everywhere, we prove a positive lower bound on the constant-orbital condensate fraction that is uniform over all sufficiently small densities and all temperatures between zero and the square of the density. The interaction and density remain fixed in the thermodynamic limit."
+    },
+    {
+     "title": "Ground-state condensation in the dilute hard-sphere gas",
+     "path": "preprints/Ground-state-condensation-in-the-dilute-hard-sphere-gas-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove Bose–Einstein condensation in every ground state of a dilute three-dimensional hard-sphere Bose gas. At every sufficiently small fixed gas parameter, the constant orbital contains a positive fraction of the particles in the thermodynamic limit. The fraction can be chosen independently of the gas parameter, and the conclusion holds for arbitrary complex ground states."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/267.md",
+    "title": "Positive-temperature Bose–Einstein condensation and exact quantum depletion",
+    "papers": [
+     "preprints/Ground-state-condensation-in-the-dilute-hard-sphere-gas-September-24-2026/paper.pdf"
+    ],
+    "scope": "The formalization proves ground-state Bose–Einstein condensation in the dilute hard-sphere gas. There are absolute constants $\\varepsilon_0,c_0>0$ such that, whenever the density $\\rho$ and hard-sphere radius $a$ satisfy $\\rho a^3<\\varepsilon_0$, the condensate occupation fraction has limit inferior at least $c_0$ along every thermodynamic sequence with $N/L^3\\to\\rho$.\n\nThe bound covers every pure ground state, every mixed state supported on the ground space, and the normalized ground-space projection. It is uniform in the gas parameter within this range and concerns ground states, without a positive-temperature assertion.",
+    "results": [
+     {
+      "label": "Uniform ground-state condensation in the dilute hard-sphere gas",
+      "challenge": "lean/ComparatorChallenges/HardSphere.lean",
+      "config": "lean/ComparatorChallenges/HardSphere.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.HardSphere.condensation_with_mixed",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 372,
+        "statement": "theorem condensation_with_mixed :\n    ∃ε₀ c₀ : ℝ,0<ε₀ ∧ 0<c₀ ∧\n    ∀a ρ : ℝ,0<a → 0<ρ → ρ*a^3<ε₀ →\n    ∀(N : ℕ→ℕ) (L : ℕ→Length) (hN : ∀k,0<N k),\n      Tendsto N atTop atTop → Tendsto (fun k ↦ (L k).val) atTop atTop →\n      Tendsto (fun k ↦ (N k:ℝ)/(L k).val^3) atTop (𝓝 ρ) →\n      (∀Ψ : (k : ℕ)→Jet (N k) (L k),\n        (∀k,IsGroundVector (N k) (L k) a (Ψ k)) →\n        c₀≤liminf (fun k ↦ occupation (hN k) (Ψ k).1) atTop) ∧\n      (∀T : (k : ℕ)→Density.Operator (ScalarL2 (N k) (L k)),\n        (∀k,GroundSupported a (T k)) →\n        c₀≤liminf (fun k ↦ mixedOccupation (hN k) (T k)) atTop)",
+        "proof": null,
+        "module": "lean/OAI/Analysis/HardSphere/Main.lean",
+        "main": false
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "268",
+   "title": "The spin-one Haldane gap",
+   "description": "Proves the spin-one Haldane gap conjecture for the pure antiferromagnetic Heisenberg chain on even periodic rings: the spectral gap stays uniformly positive as the chain grows. A companion establishes a gap for odd open chains with endpoint field $h=3/5$ and gives boundary-selected infinite-volume states with topological index −1.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "The periodic spin-one Haldane gap",
+     "path": "preprints/The-periodic-spin-one-Haldane-gap-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove a uniform positive spectral gap for the pure antiferromagnetic spin-one Heisenberg chain on even periodic rings, establishing the positive even-periodic formulation of the spin-one Haldane conjecture."
+    },
+    {
+     "title": "A boundary-field gap for the spin-one Heisenberg chain",
+     "path": "preprints/A-boundary-field-gap-for-the-spin-one-Heisenberg-chain-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove a uniform spectral gap for odd open spin-one antiferromagnetic Heisenberg chains with the same fixed magnetic field at both endpoints. The field $h=3/5$ gives a gap greater than $\\log(10)/392$ on every chain of $2L+1$ sites with *L* ≥ 960. Tasaki's index theorem then gives index −1 for every subsequential local limit of these boundary-selected ground states."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "269",
+   "title": "Uniform Laughlin gap and stability under bounded scalar disorder",
+   "description": "Proves the fermionic Laughlin spectral-gap conjecture for the full $V_{1}$ interaction at filling 1/3 on the round sphere. The unique ground state remains uniformly gapped under sufficiently weak bounded real scalar one-body potentials projected to the lowest Landau level. Both the gap and disorder threshold are uniform over all sufficiently large particle numbers and all normalized potential profiles.",
+   "doc": "lean/docs/269.md",
+   "manuscripts": [
+    {
+     "title": "Uniform Stability of the Spherical Laughlin Gap",
+     "path": "preprints/Uniform-Stability-of-the-Spherical-Laughlin-Gap-October-5-2026/uniform-stability-spherical-laughlin-gap.pdf",
+     "note": "",
+     "abstract": "We prove that the fermionic Laughlin $V_{1}$ Hamiltonian at filling 1/3 on expanding round spheres retains a unique ground state and a uniform spectral gap under sufficiently weak bounded real scalar one-body potentials projected to the lowest Landau level. With coefficient one for each pair projector and Laughlin flux $q=3(N-1)$, the gap and perturbation threshold are uniform for all sufficiently large particle numbers and all potential profiles of supremum norm at most one. The result uses the uniform unperturbed Fock-space gap and gives existential constants."
+    },
+    {
+     "title": "A Fock-space inequality and the Laughlin spectral gap",
+     "path": "preprints/A-Fock-space-inequality-and-the-Laughlin-spectral-gap-September-24-2026/A-Fock-space-inequality-and-the-Laughlin-spectral-gap-September-24-2026.pdf",
+     "note": "",
+     "abstract": "We prove the spherical fermionic Laughlin spectral-gap conjecture for the full $V_{1}$ interaction. With coefficient one for each pair projector, the gap above the Laughlin state at filling 1/3 on the round sphere is at least 1/25 for all sufficiently large systems. More generally, $H_Q^2\\ge\\gamma H_Q$ for some fixed $\\gamma\\gt 1/25$ on the entire lowest-Landau-level Fock space for all sufficiently large flux *Q*, independently of particle number."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/269.md",
+    "title": "Uniform Laughlin gap and stability under bounded scalar disorder",
+    "papers": [
+     "preprints/Uniform-Stability-of-the-Spherical-Laughlin-Gap-October-5-2026/uniform-stability-spherical-laughlin-gap.pdf",
+     "preprints/A-Fock-space-inequality-and-the-Laughlin-spectral-gap-September-24-2026/A-Fock-space-inequality-and-the-Laughlin-spectral-gap-September-24-2026.pdf"
+    ],
+    "scope": "The linked formalization proves the uniform unperturbed gap estimate used in the paper's stability argument for the fermionic Laughlin state at filling $1/3$ on the sphere. At flux $q=3(N-1)$ and all sufficiently large particle numbers $N$, every antisymmetric state has $V_1$ energy at least $1/25$ times its squared distance from the Laughlin ground-state line.\n\nThis selected statement is the unperturbed Fock-space inequality. Stability under projected one-body potentials and uniqueness of the perturbed ground state are outside it.\n\nThe Laughlin spectral-gap problem asks for a positive gap that remains uniform as the system grows. The formalization includes the finite spherical $V_1$ bound of $1/100$ above the Laughlin state at flux $3(N-1)$ for all sufficiently large particle numbers $N$. It also proves the stronger Fock-space inequality $H_Q^2\\ge\\gamma H_Q$ for every fixed $0<\\gamma<\\gamma_*$ and all sufficiently large fluxes $Q$, independently of particle number, where $\\gamma_*=4616733319001/10^{14}>1/25$.\n\nFor the untruncated planar model, the formalization proves the corresponding inequality at the endpoint $\\gamma_*$ on every homogeneous particle sector. These statements use coefficient one for each pair projector.",
+    "results": [
+     {
+      "label": "Uniform unperturbed spherical Laughlin gap inequality",
+      "challenge": "lean/ComparatorChallenges/LaughlinGap.lean",
+      "config": "lean/ComparatorChallenges/LaughlinGap.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.LaughlinGap.thm_main",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 78,
+        "statement": "theorem thm_main : MainTarget",
+        "proof": {
+         "file": "lean/OAI/Analysis/LaughlinGap/Main.lean",
+         "line": 57,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/LaughlinGap/Main.lean",
+        "main": false
+       }
+      ]
+     },
+     {
+      "label": "Uniform Laughlin $V_1$ spectral gap",
+      "challenge": "lean/ComparatorChallenges/Laughlin.lean",
+      "config": "lean/ComparatorChallenges/Laughlin.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.Laughlin.mainTarget_proved",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 61,
+        "statement": "theorem mainTarget_proved : MainTarget",
+        "proof": {
+         "file": "lean/OAI/Analysis/Laughlin/Main.lean",
+         "line": 19,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/Laughlin/Main.lean",
+        "main": true
+       }
+      ]
+     },
+     {
+      "label": "Uniform Fock-space spectral-gap inequality",
+      "challenge": "lean/ComparatorChallenges/LaughlinFock.lean",
+      "config": "lean/ComparatorChallenges/LaughlinFock.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.LaughlinFock.thm_fock",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 58,
+        "statement": "theorem thm_fock (γ : ℝ) (hγ : 0 < γ) (hγStar : γ < gammaStar) :\n    ∃ Qγ : ℤ, 1 ≤ Qγ ∧ ∀ Q : ℤ, Qγ ≤ Q → FockInequality Q.toNat γ",
+        "proof": {
+         "file": "lean/OAI/Analysis/LaughlinFock/Main.lean",
+         "line": 69,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/LaughlinFock/Main.lean",
+        "main": false
+       }
+      ]
+     },
+     {
+      "label": "Planar spectral-gap inequality",
+      "challenge": "lean/ComparatorChallenges/LaughlinPlanar.lean",
+      "config": "lean/ComparatorChallenges/LaughlinPlanar.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.Laughlin.planar_gap",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 76,
+        "statement": "theorem planar_gap {N : ℕ} (ψ : Planar.HomogeneousState N) :\n    ENNReal.ofReal gammaStar * Planar.fullEnergy ψ ≤ Planar.fullSquareNorm ψ",
+        "proof": {
+         "file": "lean/OAI/Analysis/Laughlin/UniformGap.lean",
+         "line": 29,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/Laughlin/UniformGap.lean",
+        "main": false
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "270",
+   "title": "Threshold and positive-energy bound states of the BFSS matrix model",
+   "description": "Proves that the undeformed relative $\\mathrm{SU}(N)$ BFSS model has exactly one normalizable zero-energy state for every finite *N* ≥ 2, resolving the threshold-bound-state conjecture. For $\\mathrm{SU}(2)$, a companion proves infinitely many normalizable positive-energy eigenstates with unbounded energies, contradicting the original BFSS paper's exclusion of additional bound states at *N* = 2.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "The unique threshold bound state of the SU(N) BFSS model",
+     "path": "preprints/The-unique-threshold-bound-state-of-the-SU-N-BFSS-model-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "For every finite *N* ≥ 2, we prove that undeformed $\\mathop{\\mathrm{SU}}\\nolimits (N)$ BFSS matrix quantum mechanics has exactly one normalizable zero-energy state after removing the center of mass. This establishes the threshold-bound-state conjecture."
+    },
+    {
+     "title": "Positive eigenvalues of the relative SU(2) BFSS Hamiltonian",
+     "path": "preprints/Positive-eigenvalues-of-the-relative-SU-2-BFSS-Hamiltonian-October-5-2026/positive-eigenvalues-relative-su2-bfss.pdf",
+     "note": "",
+     "abstract": "We prove that the relative $\\mathop{\\mathrm{SU}}\\nolimits (2)$ BFSS Hamiltonian has infinitely many positive eigenvalues tending to infinity, with square-integrable eigenvectors. The operator is defined by closing the gauge-invariant supercharge form. This refutes, at *N* = 2, the exclusion of normalizable positive-energy states stated in the original BFSS paper."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "271",
+   "title": "Bloch's law, its lattice correction, and the spherical magnetization law",
+   "description": "Proves Bloch's $T^{3/2}$ law with its exact coefficient for three-dimensional quantum Heisenberg ferromagnets at every positive quantum spin, allowing nonnegative symmetric finite-range couplings whose support generates ℤ$^{3}$. The thermodynamic limit precedes the zero-field derivative and low-temperature limit. The family also proves spontaneous magnetization for nearest-neighbor models in every dimension *d* ≥ 3 and determines the first lattice correction for three-dimensional nearest-neighbor couplings.",
+   "doc": "lean/docs/271.md",
+   "manuscripts": [
+    {
+     "title": "Bloch's Law for Finite-Range Heisenberg Ferromagnets in Three Dimensions",
+     "path": "preprints/Blochs-Law-for-Finite-Range-Heisenberg-Ferromagnets-in-Three-Dimensions-October-5-2026/bloch-law-heisenberg.pdf",
+     "note": "",
+     "abstract": "We prove Bloch's $T^{3/2}$ law for the spontaneous magnetization of three-dimensional quantum Heisenberg ferromagnets at every fixed positive quantum spin. The result holds for every nonnegative symmetric finite-range interaction whose support generates ℤ$^{3}$, including spatially anisotropic couplings. The leading magnetization deficit has the exact coefficient determined by the determinant of the quadratic one-magnon dispersion. The thermodynamic limit is taken before the right field derivative at zero, and the low-temperature limit is taken last."
+    },
+    {
+     "title": "The first lattice correction to Bloch's law",
+     "path": "preprints/The-first-lattice-correction-to-Blochs-law-October-5-2026/first-lattice-correction-bloch-law.pdf",
+     "note": "",
+     "abstract": "We prove the first lattice correction to Bloch's law for the three-dimensional nearest-neighbor quantum Heisenberg ferromagnet at every fixed spin $S=\\tfrac12,1,\\tfrac32,\\ldots$. The spontaneous-magnetization deficit agrees with the full ideal-magnon density up to $o(\\beta^{-5/2})$. In addition to the leading Bloch term, this gives the correction $3\\zeta(5/2)(\\beta S)^{-5/2}/(128\\pi^{3/2})$. The magnetization is the right derivative at zero field of the thermodynamic pressure; the volume limit precedes the field derivative, and the low-temperature limit is taken last."
+    },
+    {
+     "title": "The spherical magnetization law for the three-dimensional quantum Heisenberg ferromagnet",
+     "path": "preprints/The-spherical-magnetization-law-for-the-three-dimensional-quantum-Heisenberg-ferromagnet-October-5-2026/spherical-magnetization.pdf",
+     "note": "",
+     "abstract": "We prove the spherical magnetization law for the three-dimensional nearest-neighbor isotropic quantum Heisenberg ferromagnet at every fixed positive quantum spin and every sufficiently low fixed positive temperature. As the even periodic cubes grow, the symmetric zero-field magnetization converges in moments to a uniform direction with a deterministic positive magnitude. This magnitude equals the right derivative at zero field of the infinite-volume pressure. The law is expressed through self-adjoint linear combinations of the spin components and requires no joint measurement of noncommuting observables."
+    },
+    {
+     "title": "Spontaneous magnetization in the quantum Heisenberg ferromagnet",
+     "path": "preprints/Spontaneous-magnetization-in-the-quantum-Heisenberg-ferromagnet-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "For every dimension *d* ≥ 3 and every spin $S\\in\\{\\frac12,1,\\frac32,\\ldots\\}$, we prove that the nearest-neighbor isotropic quantum Heisenberg ferromagnet has a translation-invariant, spontaneously magnetized equilibrium state at every sufficiently low positive temperature. The same state satisfies the KMS condition for the zero-field dynamics and has magnetization at least $S/4$. This resolves the low-temperature ordering problem in the spontaneous-magnetization formulation."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/271.md",
+    "title": "Bloch's law, its lattice correction, and the spherical magnetization law",
+    "papers": [
+     "preprints/Spontaneous-magnetization-in-the-quantum-Heisenberg-ferromagnet-September-24-2026/paper.pdf"
+    ],
+    "scope": "The formalization proves spontaneous magnetization for the nearest-neighbor isotropic quantum Heisenberg ferromagnet on $\\mathbb Z^d$ for every $d\\ge3$ and every spin $S\\in\\{\\tfrac12,1,\\tfrac32,\\ldots\\}$. At every sufficiently low positive temperature, it constructs a translation-invariant equilibrium state satisfying the KMS condition for the zero-field dynamics and having magnetization at least $S/4$.\n\nIt also proves convergence of the finite-volume dynamics to the infinite-volume dynamics used in the KMS statement.",
+    "results": [
+     {
+      "label": "Low-temperature spontaneous magnetization for every positive spin",
+      "challenge": "lean/ComparatorChallenges/Heisenberg.lean",
+      "config": "lean/ComparatorChallenges/Heisenberg.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.Heisenberg.spontaneous_magnetization",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 206,
+        "statement": "theorem spontaneous_magnetization (d ℓ : ℕ) (hd : 3≤d) (hℓ : 1≤ℓ) :\n    DynamicsConverges d ℓ ∧\n      ∃ β₀ : ℝ,0<β₀ ∧ ∀ β : ℝ,β₀≤β →\n        ∃ ω : State d ℓ,TranslationInvariant ω ∧ IsKMS β ω ∧\n          (ω.functional (spinZ d ℓ 0)).im=0 ∧\n          (ℓ:ℝ)/8≤(ω.functional (spinZ d ℓ 0)).re",
+        "proof": {
+         "file": "lean/OAI/MathematicalPhysics/Heisenberg/Main.lean",
+         "line": 60,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/MathematicalPhysics/Heisenberg/Main.lean",
+        "main": false
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "272",
+   "title": "Entanglement without distillable secret key",
+   "description": "Constructs an entangled state on $\\mathbb C^{10}\\otimes\\mathbb C^{10}$ with zero distillable secret key for the specified local-instrument protocols that complete almost surely. These allow joint local processing and authenticated two-way public communication, with no other shared private resource and an eavesdropper holding the input purification and public record. A trace-preserving PPT channel on $M_{21}(\\mathbb C)$ whose square is not entanglement breaking disproves Christandl's PPT-square conjecture.",
+   "doc": "lean/docs/272.md",
+   "manuscripts": [
+    {
+     "title": "Entanglement with zero distillable secret key in local dimension ten",
+     "path": "preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/paper.pdf",
+     "note": "",
+     "abstract": "We construct an entangled state on $\\mathbb C^{10}\\otimes\\mathbb C^{10}$ with zero distillable secret key for the local-instrument protocols specified here. They allow joint processing of all copies and unlimited two-way public communication, with the input as the only shared private resource and an eavesdropper holding a purification and the complete public record. The construction also disproves the unrestricted two-map PPT-composition conjecture. A separate trace-preserving PPT channel on $M_{21}(\\mathbb C)$ has a square that is not entanglement breaking."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/272.md",
+    "title": "Entanglement without distillable secret key",
+    "papers": [
+     "preprints/Entanglement-with-zero-distillable-secret-key-in-local-dimension-ten-September-27-2026/paper.pdf"
+    ],
+    "scope": "The paper's entanglement construction yields counterexamples to PPT-composition claims. The linked formalization covers these consequences: two explicitly specified PPT maps on $10\\times10$ complex matrices have a composition that is not entanglement breaking, and the nonzero Choi matrix of that composition has no nonzero product vector in its range. A separate trace-preserving PPT channel on $21\\times21$ matrices has a square that is not entanglement breaking.\n\nThe paper's zero-distillable-secret-key statement is outside these two selected Comparator statements.",
+    "results": [
+     {
+      "label": "PPT channel on dimension 21 whose square is not entanglement breaking",
+      "challenge": "lean/ComparatorChallenges/DimensionTenChannel.lean",
+      "config": "lean/ComparatorChallenges/DimensionTenChannel.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.DimensionTen.exists_channel_fin21",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 45,
+        "statement": "theorem exists_channel_fin21 :\n    ∃ Θ : ChannelCompletion.Map (Fin 21) (Fin 21),\n      ChannelCompletion.PPT Θ ∧ ChannelCompletion.TracePreserving Θ ∧\n        ¬ ChannelCompletion.EntanglementBreaking (Θ.comp Θ)",
+        "proof": {
+         "file": "lean/OAI/Analysis/Quantum/DimensionTen/Channel.lean",
+         "line": 140,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/Quantum/DimensionTen/Channel.lean",
+        "main": false
+       }
+      ]
+     },
+     {
+      "label": "Dimension-ten PPT pair with non-entanglement-breaking composition",
+      "challenge": "lean/ComparatorChallenges/DimensionTenPair.lean",
+      "config": "lean/ComparatorChallenges/DimensionTenPair.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.DimensionTen.main_pair",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 112,
+        "statement": "theorem main_pair :\n    ∃ Φ₁ Φ₂ : Mat 10 → Mat 10,\n      Φ₁ = phiOne ∧ Φ₂ = phiTwo ∧ PPT Φ₁ ∧ PPT Φ₂ ∧\n      (let Z := choi (Φ₂ ∘ Φ₁)\n       Z ≠ 0 ∧\n       (∀ u v : Fin 10 → ℂ, ∀ w : Fin 10 × Fin 10 → ℂ,\n         Z *ᵥ w = productVector u v → u = 0 ∨ v = 0) ∧\n       ¬ EntanglementBreaking (Φ₂ ∘ Φ₁))",
+        "proof": {
+         "file": "lean/OAI/Analysis/Quantum/DimensionTen/Main.lean",
+         "line": 90,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/Quantum/DimensionTen/Main.lean",
+        "main": false
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "273",
+   "title": "The entropy photon-number inequality",
+   "description": "Proves the entropy photon-number inequality for beam-splitter mixing of two independent finite-energy bosonic inputs in any finite number of modes: the output's entropy photon number is at least the transmissivity-weighted average of the inputs'. Arbitrary entanglement within each input is allowed, and product thermal inputs attain equality even when their entropies differ.",
+   "doc": "lean/docs/273.md",
+   "manuscripts": [
+    {
+     "title": "The entropy photon-number inequality",
+     "path": "preprints/The-entropy-photon-number-inequality-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove the entropy photon-number inequality for two independent bosonic inputs with finite mean energy, for every finite number of modes. This resolves the entropy photon-number conjecture in this finite-energy setting while allowing arbitrary entanglement among the modes within either input. As a consequence, we determine the exact minimum output entropy at fixed input entropy for every finite tensor power of an identical thermal attenuator, over finite-energy inputs that may be entangled across modes. We also obtain the exact classical capacity region of the degraded two-receiver pure-loss bosonic broadcast channel under a mean photon constraint."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/273.md",
+    "title": "The entropy photon-number inequality",
+    "papers": [
+     "preprints/The-entropy-photon-number-inequality-September-24-2026/paper.pdf"
+    ],
+    "scope": "The formalization proves the entropy photon-number inequality for two independent bosonic inputs with finite mean energy and any finite positive number $n$ of modes. Write $N(\\rho)=g^{-1}(S(\\rho)/n)$, where $S$ is von Neumann entropy and $g(x)=(x+1)\\log(x+1)-x\\log x$ is the thermal entropy per mode. For a beam splitter of transmissivity $0\\le\\eta\\le1$, its output satisfies $N(\\rho_C)\\ge\\eta N(\\rho_A)+(1-\\eta)N(\\rho_B)$.\n\nEntanglement among modes within either input is allowed. The thermal-attenuator minimum-output-entropy and broadcast-capacity consequences in the paper are outside this selected inequality.",
+    "results": [
+     {
+      "label": "Entropy photon-number inequality for finite-energy bosonic inputs",
+      "challenge": "lean/ComparatorChallenges/EntropyPhotonNumber.lean",
+      "config": "lean/ComparatorChallenges/EntropyPhotonNumber.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.EntropyPhotonNumber.entropy_photon_number_inequality",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 99,
+        "statement": "theorem entropy_photon_number_inequality\n    (n : ℕ) (hn : 1 ≤ n) (ρA ρB ρC : State n)\n    (hA : FiniteEnergy ρA) (hB : FiniteEnergy ρB)\n    (η : ℝ) (hη : η ∈ Set.Icc 0 1)\n    (hC : IsBeamSplitterOutput η ρA ρB ρC) :\n    η * gInv (entropy ρA / n) + (1 - η) * gInv (entropy ρB / n) ≤\n      gInv (entropy ρC / n)",
+        "proof": {
+         "file": "lean/OAI/InformationTheory/PhotonNumber/Inequality.lean",
+         "line": 689,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/InformationTheory/PhotonNumber/Inequality.lean",
+        "main": false
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "274",
+   "title": "Parity is not in QAC$^{0}$",
+   "description": "Resolves Moore's parity conjecture in the measured-output model: constant-depth quantum circuits with arbitrary one-qubit gates, unbounded-arity Toffoli gates and polynomially many total qubits cannot compute parity with any fixed positive worst-case advantage. Ancillas start in zero, one output qubit is measured, and all other registers may be discarded. Xu–Li's reductions give the same bounded-error obstruction for strict majority.",
+   "doc": "lean/docs/274.md",
+   "manuscripts": [
+    {
+     "title": "Product-projection localization and the QAC0 parity lower bound",
+     "path": "preprints/Product-projection-localization-and-the-QAC0-parity-lower-bound-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove that constant-depth quantum circuits with arbitrary one-qubit and unbounded-arity Toffoli gates cannot compute parity with any fixed positive worst-case advantage using polynomially many qubits. Ancillas start in zero, only one output qubit is measured, and all final garbage is unrestricted. This resolves Moore's parity conjecture in the measured-output model."
+    },
+    {
+     "title": "Regular trajectories, pruning and quantum parity",
+     "path": "preprints/Regular-trajectories-pruning-and-quantum-parity-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove that constant-depth quantum circuits with arbitrary one-qubit gates and unbounded-arity Toffoli gates cannot compute parity with any fixed positive worst-case advantage using polynomially many total qubits. Ancillary qubits are initialized to $|0\\rangle$, one output qubit is measured, and all other final registers may be discarded without restriction. This resolves Moore's parity conjecture in the measured-output model."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/274.md",
+    "title": "Parity is not in QAC<sup>0</sup>",
+    "papers": [
+     "preprints/Product-projection-localization-and-the-QAC0-parity-lower-bound-September-24-2026/paper.pdf",
+     "preprints/Regular-trajectories-pruning-and-quantum-parity-September-24-2026/paper.pdf"
+    ],
+    "scope": "The formalization rules out bounded-error parity computation by constant-depth quantum circuits with polynomially many zero-initialized ancillary qubits. For every fixed depth, polynomial bound on the total number of qubits, and $0<\\varepsilon\\le1/2$, every sufficiently large input length has an input on which the measured-output parity success probability is less than $1/2+\\varepsilon$. A companion specialization gives success strictly below $2/3$. The formalization also includes the product-projection localization estimate supporting this bound.\n\nThe formalized result supplies the polynomial-size parity consequence of the paper. For every fixed circuit depth and polynomial bound on the number of qubits, all sufficiently large input lengths have an input on which any such circuit computes measured-output parity with probability strictly below $2/3$. Ancillary qubits start at zero. The formalization also contains the general positive-advantage parity bound and its product-projection localization estimate; regular-trajectory propagation and pruning are not separate formalized statements here.",
+    "results": [
+     {
+      "label": "Constant-depth quantum parity lower bound",
+      "challenge": "lean/ComparatorChallenges/QACParity.lean",
+      "config": "lean/ComparatorChallenges/QACParity.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.QAC.parity_lower_bound",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 71,
+        "statement": "theorem QAC.parity_lower_bound : QAC.ParityStatement",
+        "proof": {
+         "file": "lean/OAI/InformationTheory/QuantumCircuit/Parity.lean",
+         "line": 45,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/InformationTheory/QuantumCircuit/Parity.lean",
+        "main": true
+       }
+      ]
+     },
+     {
+      "label": "Polynomial-size parity specialization",
+      "challenge": "lean/ComparatorChallenges/RegularParity.lean",
+      "config": "lean/ComparatorChallenges/RegularParity.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.QAC.parity_lower_bound_polynomial_size",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 63,
+        "statement": "theorem parity_lower_bound_polynomial_size (d k C : ℕ)\n    (_hd : 0 < d) (_hk : 0 < k) (_hC : 0 < C) :\n    ∃ n₀ : ℕ, ∀ n ≥ n₀, ∀ N : ℕ, n ≤ N → N ≤ C * (n + 1) ^ k →\n      ∀ layers : List (PhysicalLayer N), layers.length ≤ d →\n        ∀ out : Fin N, ∃ x : Word n,\n          successProbability (physicalCircuitMatrix layers) out x < (2 : ℝ) / 3",
+        "proof": {
+         "file": "lean/OAI/InformationTheory/QuantumCircuit/Main.lean",
+         "line": 12,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/InformationTheory/QuantumCircuit/Main.lean",
+        "main": true
+       }
+      ]
+     },
+     {
+      "label": "Polynomial-size quantum parity lower bound",
+      "challenge": "lean/ComparatorChallenges/RegularParity.lean",
+      "config": "lean/ComparatorChallenges/RegularParity.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.QAC.parity_lower_bound_polynomial_size",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 63,
+        "statement": "theorem parity_lower_bound_polynomial_size (d k C : ℕ)\n    (_hd : 0 < d) (_hk : 0 < k) (_hC : 0 < C) :\n    ∃ n₀ : ℕ, ∀ n ≥ n₀, ∀ N : ℕ, n ≤ N → N ≤ C * (n + 1) ^ k →\n      ∀ layers : List (PhysicalLayer N), layers.length ≤ d →\n        ∀ out : Fin N, ∃ x : Word n,\n          successProbability (physicalCircuitMatrix layers) out x < (2 : ℝ) / 3",
+        "proof": {
+         "file": "lean/OAI/InformationTheory/QuantumCircuit/Main.lean",
+         "line": 12,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/InformationTheory/QuantumCircuit/Main.lean",
+        "main": true
+       }
+      ]
+     },
+     {
+      "label": "General positive-advantage parity lower bound",
+      "challenge": "lean/ComparatorChallenges/QACParity.lean",
+      "config": "lean/ComparatorChallenges/QACParity.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.QAC.parity_lower_bound",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 71,
+        "statement": "theorem QAC.parity_lower_bound : QAC.ParityStatement",
+        "proof": {
+         "file": "lean/OAI/InformationTheory/QuantumCircuit/Parity.lean",
+         "line": 45,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/InformationTheory/QuantumCircuit/Parity.lean",
+        "main": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "275",
+   "title": "QMA-hardness of continuum Coulomb energy",
+   "description": "Proves QMA-hardness of approximating the electronic Coulomb energy infimum in three dimensions, minimizing over the full spinful fermionic continuum space. Deterministic polynomial-time reductions work even with only unit-charge nuclei at distinct rational positions, polynomially many electrons and an energy-threshold separation of at least one.",
+   "doc": "lean/docs/275.md",
+   "manuscripts": [
+    {
+     "title": "Continuum Coulomb hardness with binary nuclear charges",
+     "path": "preprints/Continuum-Coulomb-hardness-with-binary-nuclear-charges-September-24-2026/Continuum-Coulomb-hardness-with-binary-nuclear-charges-September-24-2026.pdf",
+     "note": "",
+     "abstract": "We prove that approximating the electronic Coulomb spectral infimum in three-dimensional space is QMA-hard when positive integer nuclear charges are encoded in binary. The nuclei have distinct rational positions, the electron number is unary, and the energy is minimized over all antisymmetric continuum states and spin sectors. A deterministic classical polynomial-time reduction produces instances with threshold separation at least one. The nuclear charges may be exponentially large, but every output has polynomial bit length."
+    },
+    {
+     "title": "QMA-hardness of continuum Coulomb energy with unit nuclear charges",
+     "path": "preprints/QMA-hardness-of-continuum-Coulomb-energy-with-unit-nuclear-charges-September-24-2026/QMA-hardness-of-continuum-Coulomb-energy-with-unit-nuclear-charges-September-24-2026.pdf",
+     "note": "",
+     "abstract": "We prove that approximating the electronic ground-energy infimum for clamped unit-charge nuclei is QMA-hard on the full spinful fermionic continuum space. A deterministic classical polynomial-time reduction produces polynomially many nuclei at distinct rational positions and polynomially many electrons, with polynomial rational bit lengths and threshold separation at least one. No orbital basis, magnetic field, or additional external potential is supplied, and no binding assumption is imposed."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/275.md",
+    "title": "QMA-hardness of continuum Coulomb energy",
+    "papers": [
+     "preprints/Continuum-Coulomb-hardness-with-binary-nuclear-charges-September-24-2026/Continuum-Coulomb-hardness-with-binary-nuclear-charges-September-24-2026.pdf",
+     "preprints/QMA-hardness-of-continuum-Coulomb-energy-with-unit-nuclear-charges-September-24-2026/QMA-hardness-of-continuum-Coulomb-energy-with-unit-nuclear-charges-September-24-2026.pdf"
+    ],
+    "scope": "The formalization proves QMA-hardness of approximating the electronic Coulomb spectral infimum in three-dimensional continuum space when positive integer nuclear charges are encoded in binary. The instances have distinct rational nuclear positions and a unary electron count, and the energy ranges over antisymmetric continuum states and all spin sectors. A deterministic polynomial-time many-one reduction produces the promise gap with threshold separation at least one, while keeping the complete output length polynomial. The same Comparator file also contains the companion unit-charge result.\n\nThe formalization proves QMA-hardness of approximating the electronic ground-energy infimum for clamped unit-charge nuclei in the full spinful fermionic continuum. The reduction is deterministic and polynomial time, with rational nuclear positions and separated rational energy thresholds. No orbital basis, magnetic field, additional external potential, or binding premise is part of the input.\n\nThe same Comparator file also includes the companion hardness result when positive integer nuclear charges are encoded in binary.",
+    "results": [
+     {
+      "label": "QMA-hardness of continuum Coulomb energy with binary charges",
+      "challenge": "lean/ComparatorChallenges/ContinuumCoulombHardness.lean",
+      "config": "lean/ComparatorChallenges/ContinuumCoulombHardness.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.ContinuumCoulomb.unit_coulomb_qmaHard",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 546,
+        "statement": "theorem unit_coulomb_qmaHard : QMAHard unitCoulombCodec.encode unitCoulombPromise",
+        "proof": {
+         "file": "lean/OAI/MathematicalPhysics/ContinuumCoulomb/Reduction/Hardness.lean",
+         "line": 14,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/MathematicalPhysics/ContinuumCoulomb/Reduction/Hardness.lean",
+        "main": false
+       },
+       {
+        "name": "OAI.ContinuumCoulomb.binary_coulomb_qmaHard",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 549,
+        "statement": "theorem binary_coulomb_qmaHard : QMAHard binaryCoulombCodec.encode binaryCoulombPromise",
+        "proof": {
+         "file": "lean/OAI/MathematicalPhysics/ContinuumCoulomb/Reduction/Hardness.lean",
+         "line": 17,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/MathematicalPhysics/ContinuumCoulomb/Reduction/Hardness.lean",
+        "main": false
+       }
+      ]
+     },
+     {
+      "label": "QMA-hardness of continuum Coulomb ground-energy approximation",
+      "challenge": "lean/ComparatorChallenges/ContinuumCoulombHardness.lean",
+      "config": "lean/ComparatorChallenges/ContinuumCoulombHardness.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.ContinuumCoulomb.unit_coulomb_qmaHard",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 546,
+        "statement": "theorem unit_coulomb_qmaHard : QMAHard unitCoulombCodec.encode unitCoulombPromise",
+        "proof": {
+         "file": "lean/OAI/MathematicalPhysics/ContinuumCoulomb/Reduction/Hardness.lean",
+         "line": 14,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/MathematicalPhysics/ContinuumCoulomb/Reduction/Hardness.lean",
+        "main": false
+       },
+       {
+        "name": "OAI.ContinuumCoulomb.binary_coulomb_qmaHard",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 549,
+        "statement": "theorem binary_coulomb_qmaHard : QMAHard binaryCoulombCodec.encode binaryCoulombPromise",
+        "proof": {
+         "file": "lean/OAI/MathematicalPhysics/ContinuumCoulomb/Reduction/Hardness.lean",
+         "line": 17,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/MathematicalPhysics/ContinuumCoulomb/Reduction/Hardness.lean",
+        "main": false
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "276",
+   "title": "Classical capacity of generalized amplitude damping",
+   "description": "Determines the unassisted classical capacity of every qubit generalized amplitude-damping channel, including all damping and thermal parameters. An explicit one-variable optimization gives the capacity, attained by independent two-state signal ensembles with collective decoding. Holevo capacity, minimum output entropy and regularized classical capacity are additive when tensoring with any finite-dimensional quantum channel.",
+   "doc": "lean/docs/276.md",
+   "manuscripts": [
+    {
+     "title": "Classical capacity and entropy inequalities for generalized amplitude damping",
+     "path": "preprints/Classical-capacity-and-entropy-inequalities-for-generalized-amplitude-damping-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "We determine the unassisted classical capacity of every qubit generalized amplitude-damping channel, for all damping strengths and thermal occupations. It equals the one-shot Holevo capacity and is given by a one-variable maximum. A binary pure-state ensemble attains the one-use optimum, and its independent products attain the optimum at every block length. We also prove that one-shot Holevo capacity, minimum output entropy, and regularized unassisted classical capacity are additive under tensor product with every finite-dimensional completely positive trace-preserving partner channel."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/276.md",
+    "title": "Classical capacity of generalized amplitude damping",
+    "papers": [
+     "preprints/Classical-capacity-and-entropy-inequalities-for-generalized-amplitude-damping-September-24-2026/paper.pdf"
+    ],
+    "scope": "The formalized result determines the unassisted classical capacity of every generalized amplitude-damping channel with parameters in $[0,1]^2$. Its unrestricted Holevo information is additive across every number of repeated uses, equals an attained scalar maximum, and agrees with the operational capacity per use. Every maximizing equiprobable phase-pair product ensemble attains the corresponding block value. Additivity with an arbitrary different partner channel and decoding by separate measurements are not included.",
+    "results": [
+     {
+      "label": "Additivity and capacity for generalized amplitude damping",
+      "challenge": "lean/ComparatorChallenges/AmplitudeDamping.lean",
+      "config": "lean/ComparatorChallenges/AmplitudeDamping.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.GAD.main",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 113,
+        "statement": "theorem main (γ ν : ℝ) (hγ : γ ∈ Set.Icc (0 : ℝ) 1)\n    (hν : ν ∈ Set.Icc (0 : ℝ) 1) :\n    (∀ n : ℕ, 1 ≤ n → holevo γ ν n = (n : ℝ) * holevo γ ν 1) ∧\n    (∃ p : ℝ, Maximizes γ ν p ∧\n      ∀ n : ℕ, 1 ≤ n → holevo γ ν n = (n : ℝ) / Real.log 2 * objective γ ν p) ∧\n    capacity γ ν = holevo γ ν 1 ∧\n    (∀ p : ℝ, Maximizes γ ν p → ∀ n : ℕ, 1 ≤ n →\n      (∀ s : Basis n, IsState (phaseState p s)) ∧\n      holevo γ ν n = phaseValue γ ν p n)",
+        "proof": {
+         "file": "lean/OAI/InformationTheory/AmplitudeDamping/Main.lean",
+         "line": 38,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/InformationTheory/AmplitudeDamping/Main.lean",
+        "main": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "277",
+   "title": "Threshold repetition for entangled games",
+   "description": "Proves exponential threshold repetition for every finite two-player one-round game: if its entangled value is *v* < 1, the probability of winning at least a fraction $v+\\delta$ of *k* independent repetitions decays exponentially in *k*, for $0\\lt \\delta\\lt 1-v$. Arbitrary joint finite-dimensional entangled strategies and correlated question distributions are allowed.",
+   "doc": "lean/docs/277.md",
+   "manuscripts": [
+    {
+     "title": "Threshold parallel repetition for finite-dimensional entangled games",
+     "path": "preprints/Threshold-parallel-repetition-for-finite-dimensional-entangled-games-September-25-2026/paper.pdf",
+     "note": "",
+     "abstract": "For every finite two-player game with entangled value *v* < 1, we prove exponential decay for the probability of winning at least a $v+\\delta$ fraction of *k* independent repetitions, uniformly over all finite-dimensional joint strategies. The result allows arbitrary correlated question distributions and holds for every $0\\lt \\delta\\lt 1-v$ and *k* ≥ 1. Its universal rate is proportional to $\\delta^5/(1+\\log(|\\mathcal A||\\mathcal B|))$, where $\\mathcal A,\\mathcal B$ are the answer alphabets. For each fixed question distribution, we also obtain an explicit cubic rate in *δ*."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/277.md",
+    "title": "Threshold repetition for entangled games",
+    "papers": [
+     "preprints/Threshold-parallel-repetition-for-finite-dimensional-entangled-games-September-25-2026/paper.pdf"
+    ],
+    "scope": "The formalization gives exponential threshold parallel repetition for every finite two-player game with arbitrary correlated questions. If its finite-dimensional entangled value is $v<1$, its answer sets are $A,B$, and $0<\\delta<1-v$, then the probability of winning at least the fraction $v+\\delta$ of $k$ repetitions is at most $\\exp(-\\kappa\\delta^{13}k/(1+\\log(|A||B|)))$ for one universal $\\kappa>0$. The bound applies to every joint finite-dimensional strategy and to their supremum, without assuming attainment. The separate distribution-dependent cubic bound is outside this scope.",
+    "results": [
+     {
+      "label": "Threshold parallel repetition for entangled games",
+      "challenge": "lean/ComparatorChallenges/EntangledGames.lean",
+      "config": "lean/ComparatorChallenges/EntangledGames.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.ThresholdParallelRepetition.threshold_parallel_repetition",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 64,
+        "statement": "theorem threshold_parallel_repetition :\n    ∃ κ₀ : ℝ, 0 < κ₀ ∧\n      ∀ (x y a b : ℕ) (G : Game x y a b), entangledValue G < 1 →\n      ∀ (δ : ℝ), 0 < δ → δ < 1 - entangledValue G →\n      ∀ (k : ℕ), 1 ≤ k →\n        (∀ S : RepeatedStrategy x y a b k,\n          thresholdProbability G δ S ≤\n            Real.exp (-κ₀ * δ ^ 13 / (1 + Real.log (((a + 1) * (b + 1) : ℕ) : ℝ)) * k)) ∧\n        thresholdValue (k := k) G δ ≤\n          Real.exp (-κ₀ * δ ^ 13 / (1 + Real.log (((a + 1) * (b + 1) : ℕ) : ℝ)) * k)",
+        "proof": {
+         "file": "lean/OAI/Probability/EntangledGames/Main.lean",
+         "line": 9,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Probability/EntangledGames/Main.lean",
+        "main": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "278",
+   "title": "Failure of Kohn–Sham ensemble representation",
+   "description": "Constructs a three-electron Coulomb molecule with two equal positive-integer-charge nuclei whose absolute ground-state density has no noninteracting ground-state ensemble representation by a single real spin-independent local potential in $L^{3/2}(\\mathbb R^3)+L^\\infty(\\mathbb R^3)$. This disproves Kohn–Sham ensemble representability for that potential class; the required nuclear charge is specified nonnumerically.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "A Coulomb ground-state density without Kohn-Sham ensemble representation",
+     "path": "preprints/A-Coulomb-Ground-State-Density-without-Kohn-Sham-Ensemble-Representation-September-25-2026/paper.pdf",
+     "note": "",
+     "abstract": "We construct a finite three-electron Coulomb molecule whose spin-summed ground-state density cannot be reproduced by any ground-state ensemble of noninteracting electrons in a single real, spin-independent local potential in $L^{3/2}(\\mathbf R^3)+L^\\infty(\\mathbf R^3)$. The molecule has two equal positive integer nuclear charges, specified by an exact finite nonnumerical formula."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "279",
+   "title": "Exact quantum factoring over a fixed finite gate set",
+   "description": "Gives a polynomial-time uniform quantum circuit family that outputs the complete prime factorization of every integer with probability one. Both gate count and qubit count are polynomial in the input length, and one fixed finite gate set suffices.",
+   "doc": "lean/docs/279.md",
+   "manuscripts": [
+    {
+     "title": "Exact quantum factoring over a fixed finite gate set",
+     "path": "preprints/Exact-quantum-factoring-over-a-fixed-finite-gate-set-September-25-2026/main.pdf",
+     "note": "",
+     "abstract": "We give a polynomial-time uniform quantum circuit family that outputs the complete prime factorization of every integer *N* ≥ 2 with probability one. A fixed finite set of bounded-arity gates suffices, and both the gate count and the number of qubits have polynomial worst-case bounds in the input length."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/279.md",
+    "title": "Exact quantum factoring over a fixed finite gate set",
+    "papers": [
+     "preprints/Exact-quantum-factoring-over-a-fixed-finite-gate-set-September-25-2026/main.pdf"
+    ],
+    "scope": "The formalization constructs a polynomial-time uniform quantum circuit family that outputs the complete prime factorization of every integer $N\\ge2$ with probability exactly one. The circuits use one fixed finite set of bounded-arity gates, and both the gate count and number of qubits have polynomial worst-case bounds in the bit length of $N$. The probability-one conclusion is exact, rather than an asymptotic or bounded-error guarantee.",
+    "results": [
+     {
+      "label": "Exact quantum factoring over a fixed finite gate set",
+      "challenge": "lean/ComparatorChallenges/ExactQuantumFactoring.lean",
+      "config": "lean/ComparatorChallenges/ExactQuantumFactoring.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.ExactQuantumFactoring.exact_quantum_factoring",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 149,
+        "statement": "theorem exact_quantum_factoring : MainTheorem",
+        "proof": {
+         "file": "lean/OAI/Computability/QuantumFactoring/Main.lean",
+         "line": 17,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Computability/QuantumFactoring/Main.lean",
+        "main": false
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "280",
+   "title": "Unitary vertex operator algebras and conformal nets",
+   "description": "Proves the strongly rational case of the strong-locality conjecture: every simple unitary strongly rational complex vertex operator algebra generates a completely rational conformal net. Its simple modules are unitarizable, and its representation category agrees with the net’s finite-index sectors as a braided unitary tensor category.",
+   "doc": "lean/docs/280.md",
+   "manuscripts": [
+    {
+     "title": "Strongly rational unitary vertex operator algebras and conformal nets",
+     "path": "preprints/Strongly-rational-unitary-vertex-operator-algebras-and-conformal-nets-September-25-2026/paper.pdf",
+     "note": "",
+     "abstract": "Every simple unitary strongly rational vertex operator algebra generates a completely rational conformal net. All its simple grading-restricted modules are unitarizable, its canonical fusion forms are positive, and the Carpi–Weiner–Xu functor gives a braided unitary tensor equivalence from its grading-restricted finite-length module category onto the finite-index sectors of the net. Gui's extension theorems then identify normalized irreducible finite-index local extensions of these nets with simple CFT-type conformal extensions of the vertex operator algebras."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/280.md",
+    "title": "Unitary vertex operator algebras and conformal nets",
+    "papers": [
+     "preprints/Strongly-rational-unitary-vertex-operator-algebras-and-conformal-nets-September-25-2026/paper.pdf"
+    ],
+    "scope": "The linked formalization proves the first construction step relating strongly rational unitary vertex operator algebras to conformal nets. For a simple unitary strongly rational vertex operator algebra, it establishes polynomial energy bounds and strong locality and constructs an irreducible conformal net with the stated covariance, vacuum, and positive-energy properties.\n\nThe selected statement does not include complete rationality of the net, unitarizability of all simple modules, the braided tensor equivalence, or the classification of local extensions described in the paper.",
+    "results": [
+     {
+      "label": "Energy bounds, strong locality, and an irreducible conformal net",
+      "challenge": "lean/ComparatorChallenges/VertexAlgebraNet.lean",
+      "config": "lean/ComparatorChallenges/VertexAlgebraNet.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.MinimalVertex.main",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 822,
+        "statement": "theorem main (_hSimple : A.toVertexAlgebra.IsSimple)\n    (hSR : A.IsStronglyRational.{u,v}) :\n    A.PolynomialEnergyBounds ∧ OAI.MinimalVertex.CKLWStrongLocal U hSR.2.2 ∧\n      Nonempty (OAI.MinimalVertex.IrreducibleConformalNetStructure (OAI.MinimalVertex.intervalAlgebra U hSR.2.2))",
+        "proof": {
+         "file": "lean/OAI/RepresentationTheory/VertexAlgebra/MinimalComparator.lean",
+         "line": 676,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/RepresentationTheory/VertexAlgebra/MinimalComparator.lean",
+        "main": false
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "281",
+   "title": "QAOA attains the SK optimum in the thermodynamic-first limit",
+   "description": "Proves that QAOA approaches the ground-state energy of the Gaussian zero-field Sherrington–Kirkpatrick model when system size tends to infinity before circuit depth. For every accuracy, finite depth and deterministic angles independent of size and disorder achieve the required limiting expected energy per spin. This also yields leading-order optimal expected MaxCut values on large-degree random regular graphs, with size tending to infinity before degree.",
+   "doc": "lean/docs/281.md",
+   "manuscripts": [
+    {
+     "title": "QAOA attains the SK ground-state energy in the thermodynamic-first limit",
+     "path": "preprints/QAOA-attains-the-SK-ground-state-energy-in-the-thermodynamic-first-limit-September-25-2026/QAOA-attains-the-SK-ground-state-energy-in-the-thermodynamic-first-limit-September-25-2026.pdf",
+     "note": "",
+     "abstract": "We prove that the Quantum Approximate Optimization Algorithm (QAOA) approaches the ground-state energy per spin of the Gaussian zero-field Sherrington–Kirkpatrick model when system size tends to infinity first and circuit depth then increases. For every accuracy, some finite depth and deterministic angles, independent of system size and disorder, achieve that accuracy in the limiting expected energy per spin using the standard cost Hamiltonian and transverse-field mixer. This proves the eventual Parisi-optimality conjecture of Basso, Farhi, Marwaha, Villalonga, and Zhou in its fixed-parameter thermodynamic formulation. We give no quantitative bound on the required depth or efficient angle-selection procedure."
+    },
+    {
+     "title": "Full support of the zero-temperature Sherrington-Kirkpatrick order parameter",
+     "path": "preprints/Full-support-of-the-zero-temperature-Sherrington-Kirkpatrick-order-parameter-September-27-2026/main.pdf",
+     "note": "",
+     "abstract": "We prove that every admissible integrable minimizer of the zero-temperature Parisi functional for the pure, zero-field Sherrington–Kirkpatrick model has full relative Stieltjes support on $[0,1)$. Thus its support has no gaps at any overlap scale below one. We use the covariance normalization $\\xi(t)=t^2/2$."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/281.md",
+    "title": "QAOA attains the SK optimum in the thermodynamic-first limit",
+    "papers": [
+     "preprints/QAOA-attains-the-SK-ground-state-energy-in-the-thermodynamic-first-limit-September-25-2026/QAOA-attains-the-SK-ground-state-energy-in-the-thermodynamic-first-limit-September-25-2026.pdf",
+     "preprints/Full-support-of-the-zero-temperature-Sherrington-Kirkpatrick-order-parameter-September-27-2026/main.pdf"
+    ],
+    "scope": "The linked formalization supplies variational identities for the Gaussian zero-field Sherrington–Kirkpatrick ground-state energy used in the paper's QAOA argument. Conditional on an admissible Parisi minimizer and its associated diffusion, it proves convergence of the finite-system ground-state energy, identifies its limit with the Parisi value, and gives equivalent terminal-martingale and integrated-curvature formulas.\n\nIt also proves convergence of finite Gaussian coefficient sums to the curvature integral, which approaches the ground-state value as the terminal time tends to one. The selected statement covers these value and approximation results; it does not itself assert convergence of QAOA circuit energies.\n\nThe formalization proves that every admissible integrable minimizer of the zero-temperature Parisi functional for the pure zero-field Sherrington–Kirkpatrick model has full relative Stieltjes support on $[0,1)$. Equivalently, the order parameter increases strictly between every two overlap values below one, so its support has no gap. The covariance normalization is $\\xi(t)=t^2/2$.\n\nThe statement also constructs the associated diffusion and proves its selected self-consistency moment identities. It is conditional on the order parameter being a minimizer and does not separately assert existence of a minimizer.",
+    "results": [
+     {
+      "label": "Parisi ground-state value identities and finite Gaussian approximation",
+      "challenge": "lean/ComparatorChallenges/SKValue.lean",
+      "config": "lean/ComparatorChallenges/SKValue.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.SKValue.value_consequences",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 163,
+        "statement": "theorem value_consequences :\n    (∀ (W : BrownianSpace) (γ : OrderParameter) (X : ℝ → W.Ω → ℝ),\n      IsMinimizer W γ → IsDiffusion W γ X → ScalarValueConclusion W γ X) ∧\n    (∀ (W : BrownianSpace) (γ : OrderParameter) (X : ℝ → W.Ω → ℝ) (T : ℝ),\n      0 < T → T < 1 → IsMinimizer W γ → IsDiffusion W γ X →\n      FiniteGaussianConclusion W γ X T) ∧\n    (∀ (W : BrownianSpace) (γ : OrderParameter),\n      IsMinimizer W γ → groundStateValue = parisi W γ)",
+        "proof": {
+         "file": "lean/OAI/Probability/SKValue/Main.lean",
+         "line": 16,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Probability/SKValue/Main.lean",
+        "main": false
+       }
+      ]
+     },
+     {
+      "label": "Full support of zero-temperature SK minimizers",
+      "challenge": "lean/ComparatorChallenges/SKFullSupport.lean",
+      "config": "lean/ComparatorChallenges/SKFullSupport.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.ZeroTemperatureSK.full_support",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 90,
+        "statement": "theorem full_support (W : BrownianSystem Ω) (γ : OrderParameter)\n    (hmin : IsMinimizer W γ) : FullSupportConclusion W γ",
+        "proof": {
+         "file": "lean/OAI/Probability/SKSupport/Main.lean",
+         "line": 35,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Probability/SKSupport/Main.lean",
+        "main": false
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "282",
+   "title": "From scale symmetry to local conformal symmetry in four-dimensional QFT",
+   "description": "Under the stated bounded-local-net and field-reconstruction hypotheses, proves that scale symmetry implies local conformal symmetry for four-dimensional unitary positive-energy theories with a discrete bounded-below scaling spectrum of finite multiplicity, finite scaling support and a physical local scale current. The stress tensor has a traceless improvement with unchanged spacetime charges. The conclusion concerns local Ward identities, not a global conformal action on the whole net.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "Scale and conformal symmetry in four-dimensional operational quantum field theory",
+     "path": "preprints/Scale-and-conformal-symmetry-in-four-dimensional-operational-quantum-field-theory-September-26-2026/main.pdf",
+     "note": "",
+     "abstract": "We prove that scale symmetry implies local conformal symmetry for a class of four-dimensional unitary, positive-energy quantum field theories with a Poincaré- and scale-invariant vacuum. The class has a discrete, bounded-below spectrum of scaling dimensions with finite multiplicities, and each original field has finite scaling support. The original fields and their adjoints have compatible affiliated realizations in a causally commuting bounded local net, and a physical local dilatation current generates scale transformations through its local Ward identities. The operational framework admits sharply localized reconstructed fields after their joint products and compatible affiliated realizations in the same net have been established. Under these hypotheses, the stress tensor admits a symmetric, conserved, traceless improvement with unchanged translation and Lorentz charges. The corresponding conformal currents satisfy unbroken local Ward identities on the physical field algebra. The conclusion is local; integration to a global conformal action on the whole bounded net remains a separate question."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "283",
+   "title": "Polynomial-time unitary synthesis from a Boolean oracle",
+   "description": "Solves the constant-error Aaronson–Kuperberg unitary synthesis problem: a uniform polynomial-size quantum oracle circuit approximates every *n*-qubit unitary channel within diamond-norm error 1/2, after a suitable Boolean oracle is chosen. Gates, qubits, oracle calls and query length are polynomially bounded. The target-dependent oracle may have an unrestricted truth table; its efficient classical construction is not asserted.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "Polynomial-Time Unitary Synthesis from a Boolean Oracle",
+     "path": "preprints/Polynomial-Time-Unitary-Synthesis-from-a-Boolean-Oracle-October-5-2026/paper.pdf",
+     "note": "",
+     "abstract": "We give a positive answer to the constant-error formulation of the Aaronson–Kuperberg unitary synthesis problem. For every *n*, a quantum oracle circuit generated in polynomial time from *n* alone can approximate the channel of every *n*-qubit unitary to full diamond-norm error at most 1/2, after a suitable Boolean oracle is chosen. Using the fixed gates $H,T,T^\\dagger,\\mathrm{CNOT}$, the circuit has polynomially many qubits, elementary gates, and oracle calls, and its oracle queries have polynomial length. The oracle may depend on the target unitary; the theorem does not give an efficient classical procedure for constructing it."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "284",
+   "title": "The optimal quartic separation between randomized and quantum queries",
+   "description": "Shows that the universal bound $R(f)=O((1+Q(f))^4)$ for total Boolean functions is sharp in its exponent, ruling out every smaller power and disproving the conjectured cubic relation. Here *R* and *Q* are randomized and quantum worst-case bit-query complexities with error at most 1/3; computation between queries is unrestricted.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "A Nearly Quartic Separation Between Randomized and Quantum Query Complexity",
+     "path": "preprints/A-Nearly-Quartic-Separation-Between-Randomized-and-Quantum-Query-Complexity-October-5-2026/quartic-query-separation.pdf",
+     "note": "",
+     "abstract": "We construct total Boolean functions with a nearly quartic separation between bounded-error randomized and quantum query complexity. Writing these complexities as $\\mathrm R(f)$ and $\\mathrm Q(f)$, the examples rule out every universal bound $\\mathrm R(f)=O((1+\\mathrm Q(f))^\\alpha)$ with *α* < 4. Thus the known quartic upper bound has the optimal exponent, disproving the conjectured cubic bound. Both complexities count worst-case bit queries with error at most 1/3 on every input."
+    }
+   ],
+   "lean": null
+  }
+ ]
+}
