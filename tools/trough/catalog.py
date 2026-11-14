@@ -132,14 +132,16 @@ def sources_readme(libraries: list[dict], mathlib_rev: str, thousand_plus: dict 
                    tauceti: tuple[str, str] | None = None, formal_frontier: dict[str, str] | None = None,
                    formal_conjectures: str | None = None, lean_pool: str | None = None,
                    anthropic_flt: dict | None = None, cfsg: str | None = None,
-                   stacks: str | None = None, atlas: str | None = None, cslib: str | None = None) -> str:
+                   stacks: str | None = None, atlas: str | None = None, openai_math: str | None = None,
+                   cslib: str | None = None) -> str:
     """The sources page. *blueprints* has (id, name, repo, license, text) for each blueprint library;
     *tauceti* has the Tau Ceti and roadmap commits, once the chapter is built; *formal_frontier* has the
     commit each Formal Frontier library's record pins, by library id; *formal_conjectures* is the Formal
     Conjectures commit read, *lean_pool* the commit Lean Pool's record pins, *anthropic_flt* the
     source record of Anthropic's Fermat's Last Theorem, whose commit it pins, *cfsg* the commit Axiom
     Math's CFSG's record pins, *stacks* the commit of Axiom's Stacks Project formalization, *atlas* the
-    commit of ATLAS's vault, on its fork's wiki/autoform-blueprint branch, and *cslib* the commit of CSLib."""
+    commit of ATLAS's vault, on its fork's wiki/autoform-blueprint branch, *openai_math* the commit of
+    OpenAI Math's record, and *cslib* the commit of CSLib."""
     formal_frontier = formal_frontier or {}
     # Every chapter whose data pins a library's commit, by library id; the Libraries list shows that commit.
     pinned = (formal_frontier | ({"formal-conjectures": formal_conjectures} if formal_conjectures else {})
@@ -147,6 +149,7 @@ def sources_readme(libraries: list[dict], mathlib_rev: str, thousand_plus: dict 
               | ({"anthropic-flt": anthropic_flt["rev"]} if anthropic_flt else {})
               | ({"cfsg": cfsg} if cfsg else {})
               | ({"stacks": stacks} if stacks else {})
+              | ({"openai-math": openai_math} if openai_math else {})
               | ({"cslib": cslib} if cslib else {}))
     lines = [
         "# Sources",
@@ -275,6 +278,17 @@ def sources_readme(libraries: list[dict], mathlib_rev: str, thousand_plus: dict 
             "the vault's areas, subjects and containers, with their titles and prose. From "
             f"[Deicyde/atlas-lean at {atlas[:8]}](https://github.com/Deicyde/atlas-lean/tree/{atlas}), the "
             "`wiki/autoform-blueprint` branch, Apache-2.0. The archived `v1/`, under a non-commercial license, is not read.",
+        ]
+    if openai_math:
+        lines += [
+            "",
+            "## OpenAI Math",
+            "",
+            "- `data/openai-math/families/`: each result family's description, its manuscripts' titles, PDFs and "
+            "abstracts, and its Lean page, with each formalized result's statements as the statement file writes them "
+            "and where the repository's Lean proves them, read from the source text without Lean; "
+            "`data/openai-math/structure.json`: the subjects and their families. From "
+            f"[openai/math at {openai_math[:8]}](https://github.com/openai/math/tree/{openai_math}), Apache-2.0.",
         ]
     if cslib:
         lines += [

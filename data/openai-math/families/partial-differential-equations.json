@@ -1,0 +1,839 @@
+{
+ "schema": "trough-openai-math/v1",
+ "rev": "4eaee87548250b2682affda7d05d947c05554bae",
+ "families": [
+  {
+   "number": "362",
+   "title": "Global smoothness for relativistic Vlasov–Maxwell",
+   "description": "Proves large-data global existence and uniqueness for the three-dimensional, one-species relativistic Vlasov–Maxwell system. Smooth admissible initial data may be arbitrary provided the particle density is compactly supported and the electromagnetic fields have finite energy and bounded derivatives of every order; the solution remains smooth on every finite time interval.",
+   "doc": "lean/docs/362.md",
+   "manuscripts": [
+    {
+     "title": "Global classical solutions of the three-dimensional relativistic Vlasov–Maxwell system",
+     "path": "preprints/Global-classical-solutions-of-the-three-dimensional-relativistic-Vlasov-Maxwell-system-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove global existence and uniqueness for arbitrary smooth admissible initial data in the three-dimensional, one-species relativistic Vlasov–Maxwell system. The particle density is initially compactly supported, and the electromagnetic fields have finite energy and bounded derivatives of all orders. The solution remains smooth on every finite time interval. This resolves the large-data global classical regularity problem for this model, without size or symmetry restrictions on the data."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/362.md",
+    "title": "Global smoothness for relativistic Vlasov–Maxwell",
+    "papers": [
+     "preprints/Global-classical-solutions-of-the-three-dimensional-relativistic-Vlasov-Maxwell-system-September-23-2026/paper.pdf"
+    ],
+    "scope": "The formalized result gives global existence and uniqueness for the three-dimensional one-species relativistic Vlasov–Maxwell system. The initial particle density is nonnegative, smooth, and compactly supported; the initial fields have bounded derivatives of all orders, finite energy, and satisfy both Gauss constraints. The solution is smooth on every finite time interval, has compact particle phase support there, and is unique among classical solutions. No smallness, symmetry, or neutrality assumption is imposed.",
+    "results": [
+     {
+      "label": "Global classical Vlasov–Maxwell solutions",
+      "challenge": "lean/ComparatorChallenges/VlasovMaxwell.lean",
+      "config": "lean/ComparatorChallenges/VlasovMaxwell.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.RVM.global_classical_solution",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 103,
+        "statement": "theorem global_classical_solution (d : Datum) (hd : Admissible d) :\n    ∃ s : Solution, Classical d s ∧ SmoothOnFiniteHorizons s ∧\n      ∀ s' : Solution, Classical d s' → SameNonnegativeTime s s'",
+        "proof": {
+         "file": "lean/OAI/Analysis/VlasovMaxwell/Main.lean",
+         "line": 44,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/VlasovMaxwell/Main.lean",
+        "main": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "363",
+   "title": "Nonuniqueness with local conservation for the hard-sphere Boltzmann equation",
+   "description": "Constructs two distinct global entropy solutions of the three-dimensional periodic hard-sphere Boltzmann equation from the same nonnegative initial density, with bounded velocity support and finite mass, energy and absolute entropy. Both are strongly continuous in $L^{1}$ and satisfy exact local conservation of mass, momentum and kinetic energy.",
+   "doc": "lean/docs/363.md",
+   "manuscripts": [
+    {
+     "title": "Nonuniqueness with local conservation for the hard-sphere Boltzmann equation",
+     "path": "preprints/Nonuniqueness-with-local-conservation-for-the-hard-sphere-Boltzmann-equation-October-5-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove nonuniqueness for the three-dimensional periodic hard-sphere Boltzmann equation among global entropy solutions satisfying exact local conservation of mass, momentum, and kinetic energy. We construct one nonnegative initial density with bounded velocity support and finite mass, energy, and absolute entropy that gives rise to two distinct such solutions. Both are strongly continuous in $L^{1}$, and their collision gain and loss terms are integrable with every polynomial velocity weight on every bounded time interval."
+    },
+    {
+     "title": "Nonuniqueness for the periodic hard-sphere Boltzmann equation",
+     "path": "preprints/Nonuniqueness-for-the-periodic-hard-sphere-Boltzmann-equation-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove nonuniqueness for the periodic hard-sphere Boltzmann equation by constructing two distinct global renormalized solutions with the same nonnegative initial density on $\\mathbb T^3\\times\\mathbb R^3$. This density has bounded velocity support and finite mass, energy, and absolute entropy. Both solutions conserve local mass and total momentum and satisfy the global energy and entropy-dissipation inequalities. On a common initial interval, they are strongly continuous in $L^{1}$, and their collision gains and losses are integrable."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/363.md",
+    "title": "Nonuniqueness with local conservation for the hard-sphere Boltzmann equation",
+    "papers": [
+     "preprints/Nonuniqueness-for-the-periodic-hard-sphere-Boltzmann-equation-September-23-2026/paper.pdf"
+    ],
+    "scope": "The formalization proves nonuniqueness for the periodic hard-sphere Boltzmann equation by constructing two distinct global renormalized solutions on $\\mathbb T^3\\times\\mathbb R^3$ with the same nonnegative initial density. The data have bounded velocity support and finite mass, energy, and absolute entropy. Both solutions conserve local mass and total momentum and satisfy the global energy and entropy-dissipation inequalities.\n\nOn a common initial interval they are strongly continuous in $L^1$, with integrable collision gains and losses. These are the conditions of the selected periodic result; later local-conservation refinements are outside it.",
+    "results": [
+     {
+      "label": "Two periodic hard-sphere Boltzmann solutions with the same data",
+      "challenge": "lean/ComparatorChallenges/BoltzmannNonuniqueness.lean",
+      "config": "lean/ComparatorChallenges/BoltzmannNonuniqueness.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.BoltzmannNonuniqueness.nonuniqueness",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 204,
+        "statement": "theorem nonuniqueness :\n    ∃ f₀ : Density, BoundedVelocitySupport f₀ ∧\n      ∃ (F G : Evolution) (T : ℝ), AdmissibleGlobal f₀ F ∧ AdmissibleGlobal f₀ G ∧\n        StrongEarly T F ∧ StrongEarly T G ∧\n        ∃ t ∈ Set.Icc 0 T, ¬(F t =ᵐ[MeasureTheory.volume] G t)",
+        "proof": {
+         "file": "lean/OAI/MathematicalPhysics/Boltzmann/Main.lean",
+         "line": 13,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/MathematicalPhysics/Boltzmann/Main.lean",
+        "main": false
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "364",
+   "title": "Kinetic limits and fluctuations over the Boltzmann lifespan",
+   "description": "Derives the nonlinear Boltzmann equation from three-dimensional grand-canonical Newtonian gases throughout every regular kinetic interval with uniform Gaussian decay. Stable finite-range radial potentials may have attractive wells and a singular repulsive core; initial pair exclusion and spatially summable Gaussian density and gradient bounds are assumed. A companion gives finite-dimensional hard-sphere Gaussian fluctuations, centered at the exact microscopic expectation and governed by the linear fluctuating Boltzmann equation.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "The Boltzmann–Grad limit for stable radial potentials on regular kinetic intervals",
+     "path": "preprints/The-Boltzmann-Grad-limit-for-stable-radial-potentials-on-regular-kinetic-intervals-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We derive the nonlinear Boltzmann equation from a grand-canonical Newtonian gas with initial pair exclusion. We treat stable, finite-range radial potentials that are $C^{2}$ except for an allowed repulsive singularity at the origin, and $C^{1}$ initial probability densities with spatially summable Gaussian bounds on the density and its spatial gradient. All fixed-order rescaled factorial marginals converge in $L^{1}$, uniformly throughout every finite interval on which the classical kinetic solution has a uniform Gaussian bound. The result allows attractive wells and dynamically formed clusters, without restrictions on the differential scattering cross-section."
+    },
+    {
+     "title": "Hard-sphere fluctuations on the regular Boltzmann lifespan",
+     "path": "preprints/Hard-sphere-fluctuations-on-the-regular-Boltzmann-lifespan-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove a finite-dimensional central limit theorem away from equilibrium for a deterministic grand-canonical hard-sphere gas in three dimensions. The initial probability density is smooth, with spatially summable Gaussian velocity bounds on the density and its spatial gradient. The limit holds on every finite interval on which the classical Boltzmann solution has uniform Gaussian velocity decay. The empirical measure is centered by its exact microscopic expectation. Its fluctuations converge to the Gaussian solution of the linear fluctuating Boltzmann equation."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "365",
+   "title": "Joint metric and connection recovery from one boundary patch",
+   "description": "Zero-frequency measurements on any nonempty open boundary patch determine a smooth metric and smooth unitary connection on a trivial Hermitian rank-two bundle over a compact connected manifold of dimension at least three, up to diffeomorphism and gauge fixed on that patch. Inputs and observations use the same patch. In contrast, distinct uniformly positive bounded measurable scalar conductivities on a three-dimensional ball can have identical full-boundary data.",
+   "doc": "lean/docs/365.md",
+   "manuscripts": [
+    {
+     "title": "Determination of a metric and a unitary connection from one boundary patch",
+     "path": "preprints/Determination-of-a-metric-and-a-unitary-connection-from-one-boundary-patch-October-5-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove that zero-frequency boundary measurements on any nonempty open boundary patch determine both a smooth Riemannian metric and a smooth unitary connection on the trivial Hermitian rank-two bundle over a compact connected smooth manifold of dimension at least three with smooth boundary. Both inputs and observations are restricted to the same patch. The metric and connection are determined up to a diffeomorphism and a unitary gauge that restrict to the identity on the measured patch."
+    },
+    {
+     "title": "Smooth anisotropic uniqueness in the Calderón problem from one boundary patch",
+     "path": "preprints/Smooth-Anisotropic-Uniqueness-in-the-Calderon-Problem-from-One-Boundary-Patch-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "We resolve the smooth anisotropic Calderón uniqueness problem with arbitrary same-patch measurements. A smooth Riemannian metric on a compact connected manifold of dimension at least three is determined, up to a diffeomorphism fixing the measured patch, by its zero-frequency Dirichlet-to-Neumann energy form with both input and observation on any nonempty open boundary patch."
+    },
+    {
+     "title": "Nonuniqueness for bounded measurable scalar conductivities in three dimensions",
+     "path": "preprints/Nonuniqueness-for-Bounded-Measurable-Scalar-Conductivities-in-Three-Dimensions-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We construct two distinct uniformly positive bounded measurable scalar conductivities on a ball in ℝ$^{3}$ with the same full Dirichlet-to-Neumann operator. Both conductivities equal one near the boundary. This gives nonuniqueness in the scalar Calderón problem at bounded measurable regularity."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/365.md",
+    "title": "Joint metric and connection recovery from one boundary patch",
+    "papers": [
+     "preprints/Nonuniqueness-for-Bounded-Measurable-Scalar-Conductivities-in-Three-Dimensions-September-23-2026/paper.pdf"
+    ],
+    "scope": "The Calderón inverse problem asks whether boundary measurements determine an interior conductivity. The formalized result gives nonuniqueness for bounded measurable scalar conductivities on the ball $B(0,3)\\subset\\mathbb R^3$: two uniformly positive conductivities differ on a set of positive volume, equal $1$ near the boundary, and have the same full weak Dirichlet-to-Neumann operator. Weak solutions exist uniquely for every boundary trace.",
+    "results": [
+     {
+      "label": "Scalar conductivity nonuniqueness",
+      "challenge": "lean/ComparatorChallenges/Conductivity.lean",
+      "config": "lean/ComparatorChallenges/Conductivity.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.ScalarConductivity.main_nonuniqueness",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 77,
+        "statement": "theorem main_nonuniqueness : MainStatement",
+        "proof": {
+         "file": "lean/OAI/Analysis/Conductivity/Main.lean",
+         "line": 73,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/Conductivity/Main.lean",
+        "main": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "366",
+   "title": "The planar Mumford–Shah regularity conjecture and local weak-$L^{4}$ gradient bounds",
+   "description": "Resolves the interior regularity conjecture for reduced absolute planar Mumford–Shah minimizers with bounded fidelity data. Locally, the closed discontinuity set is a $C^{1,\\alpha}$ arc, a regular crack tip, or three arcs meeting at $120^\\circ$; only finitely many global connected components meet any compact interior region.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "Interior regularity of planar Mumford–Shah minimizers",
+     "path": "preprints/Interior-regularity-of-planar-Mumford-Shah-minimizers-September-24-2026/Interior-regularity-of-planar-Mumford-Shah-minimizers-September-24-2026.pdf",
+     "note": "",
+     "abstract": "We prove the interior regularity assertion of the planar Mumford–Shah conjecture for reduced absolute minimizers with bounded fidelity data. Every interior point of the closed discontinuity set has a neighborhood consisting of a $C^{1,\\alpha}$ arc, an arc ending at that point, or three such arcs meeting at 120 degrees. Only finitely many global connected components meet any relatively compact open set."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "367",
+   "title": "The critical dimension for the one-phase Bernoulli problem",
+   "description": "Establishes seven as the first dimension admitting a nonflat, one-homogeneous global minimizer of the one-phase Bernoulli energy. Consequently, minimizing free boundaries are smooth through dimension six, and their singular sets have dimension at most $n-7$ in higher dimensions.",
+   "doc": "lean/docs/367.md",
+   "manuscripts": [
+    {
+     "title": "The critical dimension for one-phase Bernoulli minimizers",
+     "path": "preprints/The-critical-dimension-for-one-phase-Bernoulli-minimizers-September-24-2026/The-critical-dimension-for-one-phase-Bernoulli-minimizers-September-24-2026.pdf",
+     "note": "",
+     "abstract": "We prove that seven is the critical dimension for the one-phase Bernoulli problem: every nonzero one-homogeneous global minimizer in dimensions at most six is flat, while a nonflat one-homogeneous global minimizer exists in dimension seven. It follows that the interior free boundary of a local minimizer is smooth in dimensions at most six. In dimension *n* ≥ 7, its singular set has Hausdorff dimension at most $n-7$, and this bound is sharp. In dimension seven, the singular set is locally finite."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/367.md",
+    "title": "The critical dimension for the one-phase Bernoulli problem",
+    "papers": [
+     "preprints/The-critical-dimension-for-one-phase-Bernoulli-minimizers-September-24-2026/The-critical-dimension-for-one-phase-Bernoulli-minimizers-September-24-2026.pdf"
+    ],
+    "scope": "The paper identifies seven as the critical dimension for nonflat one-homogeneous global minimizers of the one-phase Bernoulli problem. The linked formalization proves the existence side: in dimension seven there is a nonzero one-homogeneous global minimizer that is not a half-space solution.\n\nThe flatness classification in dimensions at most six and the resulting regularity and singular-set bounds are outside this selected statement.",
+    "results": [
+     {
+      "label": "A nonflat one-homogeneous Bernoulli minimizer in dimension seven",
+      "challenge": "lean/ComparatorChallenges/BernoulliNonflatInSeven.lean",
+      "config": "lean/ComparatorChallenges/BernoulliNonflatInSeven.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.Bernoulli.nonflat_in_seven",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 78,
+        "statement": "theorem nonflat_in_seven : ∃ u : Space 7 → ℝ,\n    GlobalMinimizer u ∧ Nonzero u ∧ OneHomogeneous u ∧ ¬ Flat u",
+        "proof": {
+         "file": "lean/OAI/Analysis/BernoulliCone/Main.lean",
+         "line": 10,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/BernoulliCone/Main.lean",
+        "main": false
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "368",
+   "title": "The three-dimensional Ball–Evans approximation problem",
+   "description": "Resolves the three-dimensional Ball–Evans approximation problem: every $W^{1,p}$ homeomorphism between arbitrary bounded domains in ℝ$^{3}$, for $1\\le p\\lt \\infty$, is a strong $W^{1,p}$ limit of smooth diffeomorphisms onto the same target.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "Strong diffeomorphic approximation in three dimensions for 1≤p≤2",
+     "path": "preprints/Strong-diffeomorphic-approximation-in-three-dimensions-for-1-le-p-le-2-September-24-2026/main.pdf",
+     "note": "",
+     "abstract": "We resolve the three-dimensional Ball–Evans approximation problem for $1\\le p\\le2$. Every $W^{1,p}$ homeomorphism between arbitrary bounded domains in ℝ$^{3}$ is a strong $W^{1,p}$ limit of smooth diffeomorphisms onto the same target."
+    },
+    {
+     "title": "Strong diffeomorphic approximation in three dimensions for p>2",
+     "path": "preprints/Strong-diffeomorphic-approximation-in-three-dimensions-for-p-gt-2-September-24-2026/main.pdf",
+     "note": "",
+     "abstract": "We resolve the three-dimensional Ball–Evans approximation problem for every finite *p* > 2. Every $W^{1,p}$ homeomorphism between arbitrary bounded domains in ℝ$^{3}$ can be approximated strongly in $W^{1,p}$ by smooth diffeomorphisms onto the same target."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "369",
+   "title": "The hot spots conjecture for simply connected planar domains",
+   "description": "Proves a strict form of Burdzy's simply connected hot spots conjecture. On every smooth bounded simply connected planar domain, each nonzero eigenfunction for the first positive Neumann eigenvalue has no interior critical point, so all global extrema lie on the boundary. Eigenvalue multiplicity is allowed.",
+   "doc": "lean/docs/369.md",
+   "manuscripts": [
+    {
+     "title": "Strict hot spots and absence of interior critical points on smooth simply connected planar domains",
+     "path": "preprints/Strict-hot-spots-and-absence-of-interior-critical-points-on-smooth-simply-connected-planar-domains-September-24-2026/main.pdf",
+     "note": "",
+     "abstract": "We prove the strict hot spots conjecture for smooth bounded simply connected planar domains. More precisely, every nonzero eigenfunction for the first positive Neumann eigenvalue has nonvanishing gradient in the interior, so all its global maxima and minima lie on the boundary. This holds even when the eigenvalue is multiple."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/369.md",
+    "title": "The hot spots conjecture for simply connected planar domains",
+    "papers": [
+     "preprints/Strict-hot-spots-and-absence-of-interior-critical-points-on-smooth-simply-connected-planar-domains-September-24-2026/main.pdf"
+    ],
+    "scope": "The strict hot-spots conjecture asks whether extrema of a first nonconstant Neumann eigenfunction occur only on the boundary. The formalization proves the stronger interior statement on every nonempty smooth bounded simply connected planar domain: every nonzero eigenfunction in the first positive Neumann eigenspace has nonvanishing gradient throughout the interior. Consequently all global maxima and minima lie on the boundary. The conclusion applies to every eigenfunction even when the eigenvalue is multiple.",
+    "results": [
+     {
+      "label": "Strict hot spots and absence of interior critical points",
+      "challenge": "lean/ComparatorChallenges/HotSpots.lean",
+      "config": "lean/ComparatorChallenges/HotSpots.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.StrictHotSpots.main_theorem",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 49,
+        "statement": "theorem main_theorem (Ω : Set Plane) (hΩ : AdmissibleDomain Ω)\n    (u : Plane → ℝ) (hu : InFirstNeumannEigenspace Ω u)\n    (hne : ∃ x ∈ Ω, u x ≠ 0) : MainConclusion Ω u",
+        "proof": {
+         "file": "lean/OAI/Analysis/HotSpots/Main.lean",
+         "line": 78,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/HotSpots/Main.lean",
+        "main": false
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "370",
+   "title": "The Lane–Emden and Hénon–Lane–Emden conjectures",
+   "description": "Resolves the subcritical Lane–Emden conjecture and its weighted Hénon extension. For *n* ≥ 2, $p,q\\gt 0$ and real *A*, *B*, the system $-\\Delta u=|x|^A v^p$, $-\\Delta v=|x|^B u^q$ has no positive entire solution when $(n+A)/(p+1)+(n+B)/(q+1)\\gt n-2$, with solutions continuous at the origin and classical elsewhere. No symmetry or growth assumption is needed. Known radial existence gives the exact existence criterion for *n* ≥ 3 and $A,B\\gt -2$.",
+   "doc": "lean/docs/370.md",
+   "manuscripts": [
+    {
+     "title": "The Subcritical Hénon–Lane–Emden Conjecture",
+     "path": "preprints/The-Subcritical-Henon-Lane-Emden-Conjecture-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove the subcritical Hénon–Lane–Emden conjecture: for every dimension *n* ≥ 2, positive powers *p*, *q*, and real weights *A*, *B*, the system has no strictly positive entire solution when $(n+A)/(p+1)+(n+B)/(q+1)\\gt n-2$. Solutions need only be continuous at the origin and classical elsewhere, without a condition at infinity. For *n* ≥ 3 and $A,B\\gt -2$, combining this result with the radial existence theorem of Bidaut-Véron and Giacomini proves Phan's Conjecture C in full: a positive radial entire solution exists whenever the strict inequality fails."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/370.md",
+    "title": "The Lane–Emden and Hénon–Lane–Emden conjectures",
+    "papers": [
+     "preprints/The-Subcritical-Henon-Lane-Emden-Conjecture-September-24-2026/paper.pdf"
+    ],
+    "scope": "The formalized result proves nonexistence of positive entire solutions to the subcritical Hénon–Lane–Emden system. For $n\\ge2$, $p,q>0$, and real $A,B$ with $(n+A)/(p+1)+(n+B)/(q+1)>n-2$, there are no positive functions, continuous everywhere and $C^2$ off the origin, satisfying $-\\Delta u=|x|^A v^p$ and $-\\Delta v=|x|^B u^q$ away from the origin. It includes the globally $C^2$ unweighted case for $n\\ge3$. The critical equality case is not included.",
+    "results": [
+     {
+      "label": "Subcritical Hénon–Lane–Emden nonexistence",
+      "challenge": "lean/ComparatorChallenges/HenonEmden.lean",
+      "config": "lean/ComparatorChallenges/HenonEmden.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.HenonLaneEmden.main_nonexistence",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 24,
+        "statement": "theorem main_nonexistence (n : ℕ) (hn : 2 ≤ n) (p q A B : ℝ)\n    (hp : 0 < p) (hq : 0 < q) (hsub : Subcritical n p q A B) :\n    ¬ ∃ u v : Space n → ℝ, IsSolution n p q A B u v",
+        "proof": {
+         "file": "lean/OAI/Analysis/HenonEmden/Main.lean",
+         "line": 9,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/HenonEmden/Main.lean",
+        "main": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "371",
+   "title": "Stable blowup for the defocusing Schrödinger equation",
+   "description": "For a sufficiently large odd nonlinearity power, constructs a nonempty open set of initial data in $H^k(\\mathbb T^{12})$, with *k* > 8, whose solutions of the scalar defocusing nonlinear Schrödinger equation blow up in finite time. Thus finite-time blowup is stable under Sobolev perturbations in this supercritical regime.",
+   "doc": "lean/docs/371.md",
+   "manuscripts": [
+    {
+     "title": "Stable self-similar blowup for a supercritical defocusing Schrödinger equation on the torus",
+     "path": "preprints/Stable-Self-Similar-Blowup-for-a-Supercritical-Defocusing-Schrodinger-Equation-on-the-Torus-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove stable self-similar finite-time blowup for a supercritical defocusing nonlinear Schrödinger equation on the twelve-dimensional torus. For a sufficiently large odd power, the blowup initial data contain a nonempty open set in a high Sobolev space. As a consequence, Gaussian Fourier initial data of arbitrarily high Sobolev regularity can have positive probability of finite-time blowup."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/371.md",
+    "title": "Stable blowup for the defocusing Schrödinger equation",
+    "papers": [
+     "preprints/Stable-Self-Similar-Blowup-for-a-Supercritical-Defocusing-Schrodinger-Equation-on-the-Torus-September-24-2026/paper.pdf"
+    ],
+    "scope": "The formalization constructs stable self-similar finite-time blowup for defocusing nonlinear Schrödinger equations on the twelve-dimensional torus. For every prescribed lower bound on the power, it selects an odd power at least that large and a Sobolev index $k>8$ for which a nonempty open set of $H^k$ initial data has the stated classical blowup behavior. The selected quantifier gives arbitrarily large odd powers, rather than every sufficiently large odd power.\n\nFor each such construction, Gaussian Fourier data with decay exponent $\\alpha>k+6$ assign positive probability to the blowup set, and almost-sure global existence fails. The exponent $\\alpha$ may be arbitrarily large.",
+    "results": [
+     {
+      "label": "Stable self-similar blowup and positive-probability Gaussian blowup",
+      "challenge": "lean/ComparatorChallenges/DefocusingNLS.lean",
+      "config": "lean/ComparatorChallenges/DefocusingNLS.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.DefocusingNLS.stable_blowup",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 269,
+        "statement": "theorem stable_blowup (p₀ : ℕ) :\n    ∃ p k : ℕ, p₀ ≤ p ∧ Odd p ∧ 3 ≤ p ∧ ∃ hk : 8 < (k : ℝ),\n      ∃ U : Set FourierL2, U.Nonempty ∧ IsOpen U ∧ ∀ f ∈ U,\n        IsClassicalDefocusingFlow k (by linarith) ((p - 1) / 2) f ∧\n        HasFiniteTimeSelfSimilarBlowup k (by linarith) ((p - 1) / 2)\n          (1 / ((p : ℝ) - 1)) f",
+        "proof": {
+         "file": "lean/OAI/MathematicalPhysics/DefocusingNLS/MainTheorems.lean",
+         "line": 20,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/MathematicalPhysics/DefocusingNLS/MainTheorems.lean",
+        "main": false
+       },
+       {
+        "name": "OAI.DefocusingNLS.gaussian_blowup",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 279,
+        "statement": "theorem gaussian_blowup (p₀ : ℕ) :\n    ∃ p k : ℕ, p₀ ≤ p ∧ Odd p ∧ 3 ≤ p ∧ ∃ hk : 8 < (k : ℝ),\n      ∃ U : Set FourierL2, U.Nonempty ∧ IsOpen U ∧\n      (∀ f ∈ U, IsClassicalDefocusingFlow k (by linarith) ((p - 1) / 2) f ∧\n        HasFiniteTimeSelfSimilarBlowup k (by linarith) ((p - 1) / 2)\n          (1 / ((p : ℝ) - 1)) f) ∧\n      ∀ α : ℝ, (k : ℝ) + 6 < α →\n        (∀ᵐ g ∂fourierGaussianLaw, Memℓp (weightedGaussianCoefficient k α g) 2) ∧\n        (∀ᵐ g ∂fourierGaussianLaw, ∀ n,\n          sobolevFourierCoefficient k (weightedGaussianVector k α g) n =\n            (1 + ‖n‖ ^ 2) ^ (-α / 2) • g n) ∧\n        0 < weightedGaussianLaw k α U",
+        "proof": {
+         "file": "lean/OAI/MathematicalPhysics/DefocusingNLS/MainTheorems.lean",
+         "line": 30,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/MathematicalPhysics/DefocusingNLS/MainTheorems.lean",
+        "main": false
+       },
+       {
+        "name": "OAI.DefocusingNLS.gaussian_not_almost_sure_global",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 294,
+        "statement": "theorem gaussian_not_almost_sure_global (p₀ : ℕ) :\n    ∃ p k : ℕ, p₀ ≤ p ∧ Odd p ∧ 3 ≤ p ∧ ∃ hk : 8 < (k : ℝ),\n      ∀ α : ℝ, (k : ℝ) + 6 < α →\n        ¬ ∀ᵐ f ∂weightedGaussianLaw k α,\n          maximalSobolevInteractionDomain k (by linarith) ((p - 1) / 2) f = univ",
+        "proof": {
+         "file": "lean/OAI/MathematicalPhysics/DefocusingNLS/MainTheorems.lean",
+         "line": 45,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/MathematicalPhysics/DefocusingNLS/MainTheorems.lean",
+        "main": false
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "372",
+   "title": "Global uniqueness in smooth isotropic elasticity",
+   "description": "Proves that full static boundary displacement-to-traction data determine both smooth real Lamé moduli on every bounded connected smooth domain in ℝ$^{3}$, provided *μ* > 0 and $3\\lambda+2\\mu\\gt 0$ on the closure. Neither analyticity, proximity to constant coefficients nor prior knowledge near the boundary is required.",
+   "doc": "lean/docs/372.md",
+   "manuscripts": [
+    {
+     "title": "Global Uniqueness for the Smooth Isotropic Elasticity Inverse Problem",
+     "path": "preprints/Global-Uniqueness-for-the-Smooth-Isotropic-Elasticity-Inverse-Problem-September-24-2026/article.pdf",
+     "note": "",
+     "abstract": "We prove that the full static displacement-to-traction map uniquely determines both real smooth Lamé moduli on every bounded connected smooth domain in ℝ$^{3}$, provided *μ* > 0 and $3\\lambda+2\\mu\\gt 0$ on the closure. This resolves the smooth three-dimensional isotropic elastic Calderón uniqueness problem under these positivity assumptions."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/372.md",
+    "title": "Global uniqueness in smooth isotropic elasticity",
+    "papers": [
+     "preprints/Global-Uniqueness-for-the-Smooth-Isotropic-Elasticity-Inverse-Problem-September-24-2026/article.pdf"
+    ],
+    "scope": "The formalization proves global uniqueness in the three-dimensional static isotropic elasticity inverse problem. On a bounded connected smooth domain, let two pairs of smooth real Lamé moduli satisfy $\\mu>0$ and $3\\lambda+2\\mu>0$ on the closure. If their full displacement-to-traction maps agree, then both Lamé moduli agree throughout the domain. The selected statement is uniqueness; it does not supply a reconstruction algorithm.",
+    "results": [
+     {
+      "label": "Global uniqueness of smooth isotropic Lamé moduli",
+      "challenge": "lean/ComparatorChallenges/ElasticityUniqueness.lean",
+      "config": "lean/ComparatorChallenges/ElasticityUniqueness.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.Elasticity.global_uniqueness",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 103,
+        "statement": "theorem global_uniqueness : MainClaim",
+        "proof": {
+         "file": "lean/OAI/MathematicalPhysics/Elasticity/Uniqueness.lean",
+         "line": 94,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/MathematicalPhysics/Elasticity/Uniqueness.lean",
+        "main": false
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "373",
+   "title": "Nonattainment of the three-marginal Coulomb Monge problem",
+   "description": "An optimal three-particle Coulomb configuration need not be a deterministic function of the first particle, even for smooth identical spatial densities. The Monge and Kantorovich infima agree, but the Monge infimum is not attained. The same phenomenon occurs for every inverse-power Riesz exponent in each dimension at least two, with a suitable density in each case.",
+   "doc": "lean/docs/373.md",
+   "manuscripts": [
+    {
+     "title": "A counterexample to the Monge ansatz for the three-marginal Coulomb cost",
+     "path": "preprints/A-counterexample-to-the-Monge-ansatz-for-the-three-marginal-Coulomb-cost-September-25-2026/paper.pdf",
+     "note": "",
+     "abstract": "We construct a smooth compactly supported probability density on ℝ$^{3}$, with a smooth compactly supported square root, for which the three-marginal Coulomb transport minimum is not attained by any pair of measure-preserving Borel maps. Nevertheless, the Monge and Kantorovich infima agree: we construct preserving maps whose costs approach the Kantorovich minimum. For every *d* ≥ 2 and *s* > 0, we also construct a smooth identical marginal with the same nonattainment and equality-of-infima properties for the inverse-power interaction $\\sum_{i\\lt j}|x_i-x_j|^{-s}$ on ℝ$^{d}$."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/373.md",
+    "title": "Nonattainment of the three-marginal Coulomb Monge problem",
+    "papers": [
+     "preprints/A-counterexample-to-the-Monge-ansatz-for-the-three-marginal-Coulomb-cost-September-25-2026/paper.pdf"
+    ],
+    "scope": "The Monge ansatz asks whether an optimal multi-marginal transport plan can be induced by maps from one marginal. For the three-marginal Coulomb cost in $\\mathbb R^3$, the formalization constructs a smooth compactly supported probability density, with smooth compactly supported square root, for which no pair of measure-preserving Borel maps attains the Kantorovich minimum.\n\nNevertheless, the Monge and Kantorovich infima are equal: preserving maps with finite costs approach the minimum. This is the three-dimensional Coulomb result; the paper's inverse-power extensions in every dimension are outside this statement.",
+    "results": [
+     {
+      "label": "Coulomb Monge nonattainment with equality of infima",
+      "challenge": "lean/ComparatorChallenges/CoulombCounterexample.lean",
+      "config": "lean/ComparatorChallenges/CoulombCounterexample.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.Problem356.coulomb_counterexample_and_equal_infima",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 94,
+        "statement": "theorem coulomb_counterexample_and_equal_infima :\n    ∃ rho : E3 → ℝ, HasFullCoulombConclusion rho",
+        "proof": {
+         "file": "lean/OAI/Analysis/CoulombTransport/Conclusion.lean",
+         "line": 7,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/CoulombTransport/Main.lean",
+        "main": false
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "374",
+   "title": "Sharp one-third stability of Brenier maps",
+   "description": "For uniform source measure *ρ* on a compact convex body with interior in dimension at least two, quadratic optimal transport maps satisfy $\\|T_\\mu-T_\\nu\\|_{L^2(\\rho)}\\le C W_2(\\mu,\\nu)^{1/3}$ uniformly over targets in a fixed compact set. The exponent is sharp, even for three-atom targets, disproving Letrouit's conjectured square-root bound.",
+   "doc": "lean/docs/374.md",
+   "manuscripts": [
+    {
+     "title": "Sharp One-Third Stability of Brenier Maps",
+     "path": "preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/article.pdf",
+     "note": "",
+     "abstract": "For the uniform probability measure *ρ* on a compact convex body in ℝ$^{d}$, *d* ≥ 2, quadratic optimal transport maps are one-third Hölder continuous in $L^2(\\rho)$ with respect to the target's 2-Wasserstein distance. The constant is uniform over all targets supported in a fixed compact set, and the exponent is optimal. A three-atom family on a fixed cube disproves Letrouit's conjectured uniform square-root estimate."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/374.md",
+    "title": "Sharp one-third stability of Brenier maps",
+    "papers": [
+     "preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/article.pdf"
+    ],
+    "scope": "The formalization proves one-third Hölder stability of Brenier maps from the uniform measure on a compact convex body with nonempty interior in $\\mathbb R^d$, for every $d\\ge2$. For targets supported in one fixed nonempty compact set, the $L^2$ distance between the unique quadratic optimal maps is at most a constant times the one-third power of the targets' $2$-Wasserstein distance. The constant is uniform over those targets.\n\nIt also proves optimality of the exponent: on a fixed cube, pairs of three-atom target measures violate every analogous bound with exponent greater than $1/3$. In particular, the conjectured uniform square-root estimate fails.",
+    "results": [
+     {
+      "label": "One-third stability of Brenier maps and sharpness",
+      "challenge": "lean/ComparatorChallenges/Brenier.lean",
+      "config": "lean/ComparatorChallenges/Brenier.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.Problem358.one_third_stability",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 73,
+        "statement": "theorem one_third_stability :\n    ∀ (dimension : ℕ) (source container : Set (E dimension)),\n      2 ≤ dimension → IsCompact source → Convex ℝ source → (interior source).Nonempty →\n      IsCompact container → container.Nonempty →\n      ∃ constant : ℝ, 0 ≤ constant ∧\n        ∀ (first second : Measure (E dimension)),\n          IsProbabilityMeasure first → IsProbabilityMeasure second →\n          IsSupported first container → IsSupported second container →\n          ∃ firstMap secondMap : E dimension → E dimension,\n            IsUniqueQuadraticOptimalMap (uniformMeasure source) first firstMap ∧\n            IsUniqueQuadraticOptimalMap (uniformMeasure source) second secondMap ∧\n            mapL2Dist (uniformMeasure source) firstMap secondMap ≤\n              constant * Real.rpow (wasserstein2 first second) (1 / 3 : ℝ)",
+        "proof": {
+         "file": "lean/OAI/Analysis/Brenier/Stability.lean",
+         "line": 20,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/Brenier/Stability.lean",
+        "main": false
+       },
+       {
+        "name": "OAI.Problem358.one_third_exponent_is_sharp",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 88,
+        "statement": "theorem one_third_exponent_is_sharp :\n    ∀ (dimension : ℕ), 2 ≤ dimension → ∀ exponent : ℝ, (1 / 3 : ℝ) < exponent →\n      ∀ constant : ℝ, 0 < constant →\n        ∃ (first second : Measure (E dimension)) (firstMap secondMap : E dimension → E dimension),\n          IsProbabilityMeasure first ∧ IsProbabilityMeasure second ∧\n          IsSupported first (cube dimension) ∧ IsSupported second (cube dimension) ∧\n          HasExactlyThreeAtoms first (cube dimension) ∧\n          HasExactlyThreeAtoms second (cube dimension) ∧\n          first ≠ second ∧\n          IsUniqueQuadraticOptimalMap (uniformMeasure (cube dimension)) first firstMap ∧\n          IsUniqueQuadraticOptimalMap (uniformMeasure (cube dimension)) second secondMap ∧\n          0 < wasserstein2 first second ∧\n          constant * Real.rpow (wasserstein2 first second) exponent <\n            mapL2Dist (uniformMeasure (cube dimension)) firstMap secondMap",
+        "proof": {
+         "file": "lean/OAI/Analysis/Brenier/Stability.lean",
+         "line": 48,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/Brenier/Stability.lean",
+        "main": false
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "375",
+   "title": "De Giorgi's conjecture in dimension eight",
+   "description": "Proves De Giorgi's conjecture at its sharp dimension-eight endpoint: every entire $C^{2}$ solution $u:\\mathbb R^8\\to(-1,1)$ of $\\Delta u=u^3-u$ that is strictly increasing in one direction depends on only one linear coordinate. A stronger theorem classifies all stable entire solutions $v:\\mathbb R^7\\to[-1,1]$ as constant wells or planar transitions, without an energy-growth assumption.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "A positive resolution of De Giorgi's conjecture in dimension eight",
+     "path": "preprints/De-Giorgis-conjecture-in-dimension-eight-September-26-2026/article.pdf",
+     "note": "",
+     "abstract": "We resolve De Giorgi's conjecture positively in dimension eight: every entire $C^{2}$ solution $u:\\mathbb R^8\\to(-1,1)$ of $\\Delta u=u^3-u$ with an everywhere positive directional derivative is a planar heteroclinic. We prove that every stable solution $v:\\mathbb R^7\\to[-1,1]$ of this equation is a constant well or a planar heteroclinic, without an energy-growth assumption."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "376",
+   "title": "Universal computation in forced Navier–Stokes flows",
+   "description": "Constructs viscous incompressible flows starting from rest on a fixed flat three-dimensional domain that perform universal computation under smooth external forcing. A terminating compiler turns a Turing machine and input into a finite program for the force, so a designated particle reaches a fixed region exactly when the machine halts. The viscosity is fixed, positive and computable.",
+   "doc": "lean/docs/376.md",
+   "manuscripts": [
+    {
+     "title": "Finite Instructions and Solenoidal Shear Flows",
+     "path": "preprints/Finite-Instructions-and-Solenoidal-Shear-Flows-September-27-2026/manuscript.pdf",
+     "note": "",
+     "abstract": "We realize finite reciprocal affine instruction maps by smooth incompressible shear flows on a flat three-torus. Applied to a reversible one-head recorder with a finite transition table, this gives a complete machine-to-fluid construction: a fixed particle enters a fixed open strip exactly when a given machine halts, with zero initial velocity, zero pressure, and a solenoidal mean-zero force that is periodic after initialization. The construction acts on full closed rectangles and controls every intermediate trajectory. Separate heights resolve overlap between sources and targets, and an endpoint-size estimate controls all excursions independently of the reciprocal scaling factor."
+    },
+    {
+     "title": "A Fixed Particle Test for Computation in a Forced Viscous Flow",
+     "path": "preprints/A-Fixed-Particle-Test-for-Computation-in-a-Forced-Viscous-Flow-September-27-2026/manuscript.pdf",
+     "note": "",
+     "abstract": "We construct smooth external forces for incompressible Navier–Stokes flow on a fixed flat three-torus at any fixed positive computable viscosity, from zero initial velocity, such that a fixed particle enters a fixed open set exactly when a prescribed Turing machine halts. Every mixed derivative of the force and velocity is bounded and square-integrable in time in spatial supremum norm. The construction uses the machine's ordinary instructions, records their history in a third coordinate, and compensates for finer spatial gates by longer time steps."
+    },
+    {
+     "title": "Universal Computation with Eventually Stationary Navier–Stokes Forcing",
+     "path": "preprints/Universal-Computation-with-Eventually-Stationary-Navier-Stokes-Forcing-September-27-2026/manuscript.pdf",
+     "note": "",
+     "abstract": "At every fixed positive computable viscosity, we construct smooth mean-zero forces on the flat three-torus that become stationary after time one and make a fixed particle, initially in a fluid at rest, enter a fixed open set exactly when a prescribed Turing machine halts. The force has bounded derivatives of every order and a finite effective description. A reversible recording table is realized on whole planar rectangles by Hamiltonian motions, then driven by a mean-zero spatial clock. Separate choices give periodic forcing from time zero or a force whose derivatives are square-integrable in time."
+    },
+    {
+     "title": "Geometric Programs for Solenoidal Forcing",
+     "path": "preprints/Geometric-Programs-for-Solenoidal-Forcing-September-27-2026/manuscript.pdf",
+     "note": "",
+     "abstract": "We construct smooth solenoidal mean-zero forces, periodic from time zero, for which a fixed particle on a flat three-torus reaches a fixed open strip exactly when a given machine halts. The initial fluid velocity and the pressure are zero. We also realize positive diagonal maps on coding sheets by incompressible shears, with explicit normal compensation for changes of planar area, and reciprocal maps on whole boxes of positive thickness. Complete local inverses, initialization rules, and intermediate trajectory bounds connect these geometric constructions to finite computations."
+    },
+    {
+     "title": "Prefix Instructions and Incompressible Flows",
+     "path": "preprints/Prefix-Instructions-and-Incompressible-Flows-September-27-2026/manuscript.pdf",
+     "note": "",
+     "abstract": "Finite prefix instructions may change area and erase information. We give explicit history processors and smooth incompressible motions that retain that information and realize every instruction on its full domain. A first application assigns each machine and finite input a smooth mean-zero force on the flat unit three-torus, at any fixed positive computable viscosity. The solution starts from rest; a fixed particle enters a fixed open strip exactly when the machine halts. The force repeats with period one after an initial loading interval. We then prove alternative realizations using full boxes, normal compensation, invariant planes, and a spatial clock. The constructions specify their initialization, comparison class, derivative bounds, and continuous-time observation. Exact formulas and effective cutoffs provide finite descriptions of the fields and all their derivatives."
+    },
+    {
+     "title": "Computation under Rapidly Vanishing Navier–Stokes Forcing",
+     "path": "preprints/Computation-under-Rapidly-Vanishing-Navier-Stokes-Forcing-September-27-2026/manuscript.pdf",
+     "note": "",
+     "abstract": "At any fixed positive computable viscosity, smooth forces can make a fixed fluid particle detect the halting of an arbitrary machine, starting from rest, while every mixed derivative of the force and velocity decreases faster than every inverse power of time. We give three complete memory constructions: compact moving curls, alternating fractional coordinates, and a periodic lattice on the flat three-torus. Each machine step takes one unit of physical time. The constructions retain earlier records at separated spatial scales and use an exact open detector with a shrinking signal."
+    },
+    {
+     "title": "Velocity-Field Detection of Computation in Forced Navier–Stokes Flows",
+     "path": "preprints/Velocity-Field-Detection-of-Computation-in-Forced-Navier-Stokes-Flows-September-27-2026/manuscript.pdf",
+     "note": "",
+     "abstract": "We construct smooth forces for three-dimensional incompressible Navier–Stokes flow, from rest at any fixed positive computable viscosity, whose velocity field detects whether a prescribed machine halts. On the unit flat torus, a pointwise test of the third velocity component uses successively shorter stirring intervals in a fixed spatial region. On $\\mathbb R^2\\times\\mathbb T$, an integral test uses an expanding array of translation regions and a force with globally bounded mixed derivatives. The vertical velocity solves an advection–diffusion equation: short bursts control its pointwise error in the first construction, and a moving cutoff controls the total escaped mass in the second."
+    },
+    {
+     "title": "Scalar Potentials and Slow Clocks for Forced Fluid Computation",
+     "path": "preprints/Scalar-Potentials-and-Slow-Clocks-for-Forced-Fluid-Computation-September-27-2026/manuscript.pdf",
+     "note": "",
+     "abstract": "We construct smooth forces of fixed compact spatial support for three-dimensional incompressible Navier–Stokes flow from rest whose particle at the origin detects halting by entering a fixed half-space. Every mixed derivative of the force and velocity decays at rate $O((1+t)^{-1-j})$ for time order *j*. Three scalar potentials lift a coded rectangle, perform its instruction, and lower its image; an unbounded logarithmic clock supplies the decay. We also realize area-changing prefix instructions on an invariant torus plane, and construct a planar Hamiltonian processor admitting periodic forcing, stationary forcing after startup, and a velocity-field detector through a companion diffusion theorem."
+    },
+    {
+     "title": "Incompressible Box Transport and Finite Computation",
+     "path": "preprints/Incompressible-Box-Transport-and-Finite-Computation-October-6-2026/manuscript.pdf",
+     "note": "",
+     "abstract": "We realize finite positive diagonal affine maps of determinant one by effective smooth incompressible flows on neighborhoods of entire closed rational solid boxes. The source and target families are each disjoint, but may overlap each other. The construction uses localized curls, evacuation to storage and obstacle detours. A balanced three-stack recorder then assigns every machine and finite input a smooth Navier–Stokes force with one compact spatial support, periodic after a loading interval, at any fixed positive computable viscosity. The fluid starts at rest, and one fixed particle enters one fixed open cube exactly when the machine halts. Further constructions give fixed torus charts, periodicity from time zero, alternative history guards and bounded or slab observers. Onto slow clocks yield separate decaying forces. Each construction includes an all-time observation proof, effective derivative bounds and a stated pressure comparison class."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/376.md",
+    "title": "Universal computation in forced Navier–Stokes flows",
+    "papers": [
+     "preprints/Geometric-Programs-for-Solenoidal-Forcing-September-27-2026/manuscript.pdf",
+     "preprints/Computation-under-Rapidly-Vanishing-Navier-Stokes-Forcing-September-27-2026/manuscript.pdf",
+     "preprints/Velocity-Field-Detection-of-Computation-in-Forced-Navier-Stokes-Flows-September-27-2026/manuscript.pdf",
+     "preprints/Incompressible-Box-Transport-and-Finite-Computation-September-27-2026/manuscript.pdf"
+    ],
+    "scope": "The formalization realizes finite families of prescribed positive diagonal maps on coding sheets by smooth incompressible flows on a flat three-torus. At every positive computable viscosity, it supplies a solution starting from rest with zero pressure and a force that is divergence free, has spatial mean zero, and is one-periodic from time zero. Each map acts on every point of its source sheet, and the construction provides effective bounds for all mixed derivatives.\n\nThis selected statement covers the sheet programs. The paper's fixed-particle halting detector and its reciprocal maps on solid boxes are outside its scope.\n\nThe formalization proves that a fluid particle can detect arbitrary finite-machine halting using alternating-coordinate memory in smooth incompressible Navier–Stokes flows whose velocity and force decay faster than every inverse power of time, including every mixed derivative. For each fixed positive computable viscosity, the construction starts from rest and provides effective forces, unique material trajectories, and an exact equivalence between entering a fixed open detector and halting.\n\nThe velocity and force share one compact support for every machine and input. The solution-uniqueness assertion uses the stated energy comparison class.\n\nThe formalization constructs smooth forced three-dimensional Navier–Stokes flows from rest whose velocity fields detect whether a prescribed machine halts, at any positive computable viscosity. On the unit flat torus, halting is equivalent to the vertical velocity exceeding $1/2$ somewhere in a fixed observation strip. On $\\mathbb R^2\\times\\mathbb T$, it is equivalent to the integral of the nonnegative vertical velocity over the observation half-plane times the circle exceeding $1/2$.\n\nThe torus force is confined to a fixed horizontal region. The cylindrical force has globally bounded mixed derivatives and compact horizontal support on every finite time interval. Both constructions have effective descriptions and uniqueness within their respective smooth solution-comparison classes.\n\nThe formalization realizes finitely many positive diagonal affine maps of determinant one between rational solid boxes by a smooth compactly supported divergence-free flow. Source boxes are pairwise disjoint and target boxes are pairwise disjoint, while overlap between the two families is allowed. Each map holds on a neighborhood of the entire source box, and the velocity is supported in the middle half of the time interval.\n\nIt also encodes every finite machine and input in a smooth, compactly supported incompressible Navier–Stokes flow on $\\mathbb R^3$ starting from rest: the particle initially at $(4,0,0)$ enters the fixed open box $(-1,2)^3$ exactly when the machine halts. One velocity works for every viscosity $\\nu>0$, with zero pressure and force $f_0+\\nu f_1$. Velocity and force have bounded mixed derivatives and are one-periodic after time one; the repeated velocity depends only on the machine. The force is computable for computable $\\nu$. Velocity is unique among smooth zero-data solutions with $u\\in C_tH_x^2\\cap C_t^1L_x^2$, bounded $u$ and $\\nabla u$ on finite time intervals, and pressure modulo a function of time in $C_tH_x^1$.",
+    "results": [
+     {
+      "label": "Positive diagonal programs on incompressible coding sheets",
+      "challenge": "lean/ComparatorChallenges/SolenoidalSheetPrograms.lean",
+      "config": "lean/ComparatorChallenges/SolenoidalSheetPrograms.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.Solenoidal.sheet_theorem",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 175,
+        "statement": "theorem sheet_theorem {N : ℕ} (D : SheetData N) (ν : ℝ)\n    (hν : 0 < ν) (hνcomp : ComputableReal ν) :\n    ∃ f u : Field, ∃ X : ℝ → Space → Space,\n      SpatiallyPeriodic f ∧ SpatiallyPeriodic u ∧\n      Smooth f ∧ Smooth u ∧ Effective f ∧\n      MeanZero f ∧ DivergenceFree f ∧ OnePeriodic f ∧\n      ClassicalSolution ν f u (fun _ _ => 0) ∧\n      (∀ v : Field, ∀ p : Pressure, ClassicalSolution ν f v p →\n        ∀ t, 0 ≤ t → ∀ x, v t x = u t x ∧ p t x = 0) ∧\n      MaterialFlow u X ∧\n      (∀ i : Fin N, ∀ y ∈ (D.source i).carrier,\n        toTorus (X 1 (sheet y)) =\n          toTorus (sheet (diagonalMap (D.source i) (D.target i) (D.ratio i) y))) ∧\n      IntegerCollars u ∧ (∀ t x, advection u t x = 0) ∧\n      EffectiveBounds f ∧ EffectiveBounds u ∧\n      (N = 0 → f = 0 ∧ u = 0)",
+        "proof": {
+         "file": "lean/OAI/MathematicalPhysics/SheetFlows/SheetProgram.lean",
+         "line": 15,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/MathematicalPhysics/SheetFlows/SheetProgram.lean",
+        "main": false
+       }
+      ]
+     },
+     {
+      "label": "Rapidly decaying alternating-coordinate memory",
+      "challenge": "lean/ComparatorChallenges/NavierStokesAlternating.lean",
+      "config": "lean/ComparatorChallenges/NavierStokesAlternating.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.AlternatingNS.alternating",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 239,
+        "statement": "theorem alternating (ν : ℝ) (hν : 0 < ν) (hc : ComputableReal ν) :\n    AlternatingConclusion ν",
+        "proof": {
+         "file": "lean/OAI/MathematicalPhysics/AlternatingFlow/Main.lean",
+         "line": 11,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/MathematicalPhysics/AlternatingFlow/Development.lean",
+        "main": false
+       }
+      ]
+     },
+     {
+      "label": "Pointwise and integral velocity-field detection of halting",
+      "challenge": "lean/ComparatorChallenges/NavierStokesVelocity.lean",
+      "config": "lean/ComparatorChallenges/NavierStokesVelocity.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.VelocityDetection.main_result",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 1232,
+        "statement": "theorem main_result :\n    ∃ B : ℕ, 0 < B ∧\n      (∀ s : ℝ, |deriv (deriv SmoothBump.profile) s| ≤ (B:ℝ)) ∧\n    ∀ (ν : ℝ), 0 < ν → ComputableReal ν →\n    ∀ (b N : ℕ) [NeZero b] [NeZero N]\n      (M : TM0.Machine (Fin b) (Fin N)) (w : List (Fin b)),\n    ∃ (Ftor Fcyl : ℝ → VectorField 3),\n      (compile B M w).Represents .torus Ftor ∧\n      (compile B M w).Represents .cylinder Fcyl ∧\n      (ContDiff ℝ ∞ (uncurry (Ftor ν)) ∧\n        (∀ t, FactorsThrough (Ftor ν t) PeriodicSpace.cover) ∧\n        (∃ K : Set (Coord 2), IsCompact K ∧ (∀ X ∈ K, ∀ i, X i ∈ Ioo (0:ℝ) 1) ∧\n          ∀ t X, PeriodicSpace.cover (horizontal X) ∉ PeriodicSpace.cover '' K → Ftor ν t X = 0) ∧\n        (∀ T d, ∃ C : ℝ, 0 ≤ C ∧ ∀ t ∈ Icc (0:ℝ) T, ∀ X,\n          ‖iteratedFDeriv ℝ d (uncurry (Ftor ν)) (t,X)‖ ≤ C) ∧\n        ∃ u : VectorField 3,\n          ContDiff ℝ ∞ (uncurry u) ∧ TorusClass.ComparisonClass u (fun _ _ => 0) ∧\n          NavierStokes ν u (fun _ _ => 0) (Ftor ν) ∧\n          (Observation.torusEvent u ↔ (TM0.eval M w).Dom) ∧\n          ∀ (v : VectorField 3) (p : ScalarField 3), TorusClass.ComparisonClass v p →\n            NavierStokes ν v p (Ftor ν) →\n            ∀ t ≥ 0, (∀ X, v t X = u t X) ∧ (∀ X, p t X = 0)) ∧\n      (ContDiff ℝ ∞ (uncurry (Fcyl ν)) ∧\n        UniformDerivatives.Bounded (fun _ : Unit => uncurry (Fcyl ν)) ∧\n        (∀ t X z, Fcyl ν t (update X 2 z) = Fcyl ν t X) ∧\n        (∀ T : ℝ, ∃ K : Set (Coord 2), IsCompact K ∧ ∀ t ∈ Icc (0:ℝ) T,\n          ∀ X : Coord 3, horizontal X ∉ K → Fcyl ν t X = 0) ∧\n        ∃ u : VectorField 3,\n          ContDiff ℝ ∞ (uncurry u) ∧\n          Cylinder.ComparisonClass (fun t x => u t (Cylinder.join x)) (fun _ _ => 0) ∧\n          NavierStokes ν u (fun _ _ => 0) (Fcyl ν) ∧\n          (∀ t ≥ 0, (∀ x, 0 ≤ u t (Cylinder.join x) 2) ∧\n            Integrable (fun x => u t (Cylinder.join x) 2) Cylinder.measure) ∧\n          (Observation.planeEvent u ↔ (TM0.eval M w).Dom) ∧\n          ∀ (v : VectorField 3) (p : ScalarField 3),\n            Cylinder.ComparisonClass (fun t x => v t (Cylinder.join x))\n              (fun t x => p t (Cylinder.join x)) →\n            NavierStokes ν v p (Fcyl ν) →\n            ∀ t ≥ 0, (∀ X, v t X = u t X) ∧ (∀ X, p t X = 0))",
+        "proof": {
+         "file": "lean/OAI/MathematicalPhysics/NavierStokes/VelocityDetection/MainResult.lean",
+         "line": 11,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/MathematicalPhysics/NavierStokes/VelocityDetection/Main.lean",
+        "main": false
+       }
+      ]
+     },
+     {
+      "label": "Incompressible transport of solid boxes",
+      "challenge": "lean/ComparatorChallenges/BalancedBoxRouting.lean",
+      "config": "lean/ComparatorChallenges/BalancedBoxRouting.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.BoxTransport.Routing.balanced_box_routing",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 84,
+        "statement": "theorem balanced_box_routing\n    (n : ℕ) (a b h k : Fin n → RationalSpace)\n    (hh : ∀ i j, 0 < h i j) (hk : ∀ i j, 0 < k i j)\n    (ha : Pairwise fun i j => Disjoint (solidBox (a i) (h i)) (solidBox (a j) (h j)))\n    (hb : Pairwise fun i j => Disjoint (solidBox (b i) (k i)) (solidBox (b j) (k j)))\n    (hvol : ∀ i, ∏ j : Fin 3, k i j / h i j = 1) :\n    ∃ U : Field, ∃ Φ : ℝ → Space → Space,\n      AdmissibleField U ∧ IsGlobalFlow U Φ ∧ Delivers a b h k Φ",
+        "proof": {
+         "file": "lean/OAI/Analysis/BoxTransport/Routing.lean",
+         "line": 172,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/BoxTransport/Routing.lean",
+        "main": false
+       }
+      ]
+     },
+     {
+      "label": "Finite computation in a balanced zero-data fluid flow",
+      "challenge": "lean/ComparatorChallenges/BalancedThreeStack.lean",
+      "config": "lean/ComparatorChallenges/BalancedThreeStack.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.BalancedTransport.balanced_three_stack_realization",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 211,
+        "statement": "theorem balanced_three_stack_realization :\n    ∃ U f₀ f₁ : Family Velocity,\n    ∃ X : Family MaterialFlow,\n    ∃ repeated : FiniteMachine → Velocity,\n      EffectiveFamily U ∧ EffectiveFamily f₀ ∧ EffectiveFamily f₁ ∧\n      (∀ M, Function.Periodic (repeated M) 1) ∧\n      ∀ (M : FiniteMachine) (w : Input M),\n        Smooth (U M w) ∧ Smooth (f₀ M w) ∧ Smooth (f₁ M w) ∧\n        f₀ M w = inertialCoefficient (U M w) ∧\n        f₁ M w = viscousCoefficient (U M w) ∧\n        CommonCompactSupport (U M w) (f₀ M w) (f₁ M w) ∧\n        BoundedMixed (U M w) ∧\n        PeriodicAfterOne (U M w) ∧\n        (∀ t, 1 ≤ t → ∀ x, U M w t x = repeated M t x) ∧\n        ComparisonClass (U M w) (fun _ _ => 0) ∧\n        IsMaterialFlow (U M w) (X M w) ∧\n        ((∃ t : ℝ, 0 ≤ t ∧ X M w t fixedLabel ∈ observer) ↔ Halts M w) ∧\n        ∀ ν : ℝ, 0 < ν →\n          let f := affineForce (f₀ M w) (f₁ M w) ν\n          ZeroDataSolution ν f (U M w) (fun _ _ => 0) ∧\n          Smooth f ∧ BoundedMixed f ∧ PeriodicAfterOne f ∧\n          UniqueInComparison ν f (U M w) ∧\n          (ComputableReal ν → EffectiveFieldIn ∅ f) ∧\n          (∀ name : ℕ → ℚ, RealName name ν → EffectiveFieldIn {nameOracle name} f)",
+        "proof": {
+         "file": "lean/OAI/MathematicalPhysics/NavierStokes/BalancedTransport/MainResult.lean",
+         "line": 12,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/MathematicalPhysics/NavierStokes/BalancedTransport/MainResult.lean",
+        "main": false
+       }
+      ]
+     },
+     {
+      "label": "Effective finite computation detected by a fixed particle",
+      "challenge": "lean/ComparatorChallenges/ForcedNavierStokesComputation.lean",
+      "config": "lean/ComparatorChallenges/ForcedNavierStokesComputation.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.BalancedTransport.balanced_three_stack_realization",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 206,
+        "statement": "theorem balanced_three_stack_realization :\n    ∃ U f₀ f₁ : Family Velocity,\n    ∃ X : Family MaterialFlow,\n    ∃ repeated : FiniteMachine → Velocity,\n      EffectiveFamily U ∧ EffectiveFamily f₀ ∧ EffectiveFamily f₁ ∧\n      (∀ M, Function.Periodic (repeated M) 1) ∧\n      ∀ (M : FiniteMachine) (w : Input M),\n        Smooth (U M w) ∧ Smooth (f₀ M w) ∧ Smooth (f₁ M w) ∧\n        f₀ M w = inertialCoefficient (U M w) ∧\n        f₁ M w = viscousCoefficient (U M w) ∧\n        CommonCompactSupport (U M w) (f₀ M w) (f₁ M w) ∧\n        BoundedMixed (U M w) ∧\n        PeriodicAfterOne (U M w) ∧\n        (∀ t, 1 ≤ t → ∀ x, U M w t x = repeated M t x) ∧\n        ComparisonClass (U M w) (fun _ _ => 0) ∧\n        IsMaterialFlow (U M w) (X M w) ∧\n        ((∃ t : ℝ, 0 ≤ t ∧ X M w t fixedLabel ∈ observer) ↔ Halts M w) ∧\n        ∀ ν : ℝ, 0 < ν →\n          let f := affineForce (f₀ M w) (f₁ M w) ν\n          ZeroDataSolution ν f (U M w) (fun _ _ => 0) ∧\n          Smooth f ∧ BoundedMixed f ∧ PeriodicAfterOne f ∧\n          UniqueInComparison ν f (U M w) ∧\n          (ComputableReal ν → EffectiveFieldIn ∅ f) ∧\n          (∀ name : ℕ → ℚ, RealName name ν → EffectiveFieldIn {nameOracle name} f)",
+        "proof": {
+         "file": "lean/OAI/MathematicalPhysics/NavierStokes/BalancedTransport/MainResult.lean",
+         "line": 12,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/MathematicalPhysics/NavierStokes/BalancedTransport/MainResult.lean",
+        "main": false
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "377",
+   "title": "Interior $C^{1,\\alpha}$ regularity for infinity-harmonic functions",
+   "description": "Proves uniform interior $C^{1,\\alpha_d}$ regularity for bounded infinity-harmonic functions in every dimension *d* ≥ 3, for a positive exponent depending only on dimension. The gradient's supremum norm and Hölder seminorm on the half unit ball are bounded by a dimension-dependent constant times the oscillation on the unit ball. The exponent is not explicit.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "Uniform Interior $C^{1,\\alpha}$ Estimates for Infinity-Harmonic Functions",
+     "path": "preprints/Uniform-Interior-C1alpha-Estimates-for-Infinity-Harmonic-Functions-October-4-2026/interior-c1-infinity-harmonic.pdf",
+     "note": "",
+     "abstract": "We prove a uniform interior $C^{1,\\alpha_d}$ estimate for bounded infinity-harmonic functions in every dimension *d* ≥ 3. For some $\\alpha_d\\in(0,1/3]$ depending only on the dimension, the gradient's supremum norm and $α_{d}$-Hölder seminorm on $B_{1/2}$ are bounded by a dimension-dependent constant times the oscillation on $B_{1}$. The exponent is not explicit, and no endpoint or boundary regularity claim is made. In particular, infinity-harmonic functions are locally $C^{1}$ on every open subset of ℝ$^{d}$, for *d* ≥ 3."
+    }
+   ],
+   "lean": null
+  }
+ ]
+}

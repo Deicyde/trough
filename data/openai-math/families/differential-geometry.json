@@ -1,0 +1,1234 @@
+{
+ "schema": "trough-openai-math/v1",
+ "rev": "4eaee87548250b2682affda7d05d947c05554bae",
+ "families": [
+  {
+   "number": "333",
+   "title": "Smooth isometric immersions of surfaces into ℝ$^{4}$",
+   "description": "Every closed smooth Riemannian surface admits a smooth isometric immersion into ℝ$^{4}$, resolving the closed-surface form of the four-dimensional isometric-immersion problem. This includes nonorientable surfaces and metrics of arbitrary Gaussian curvature.",
+   "doc": "lean/docs/333.md",
+   "manuscripts": [
+    {
+     "title": "Smooth isometric immersions of closed surfaces into Euclidean four-space",
+     "path": "preprints/Smooth-isometric-immersions-of-closed-surfaces-into-Euclidean-four-space-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "Every closed smooth Riemannian surface admits a smooth isometric immersion into Euclidean four-space, without an orientability assumption. This resolves the closed-surface form of the classical four-dimensional isometric-immersion problem."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/333.md",
+    "title": "Smooth isometric immersions of surfaces into ℝ<sup>4</sup>",
+    "papers": [
+     "preprints/Smooth-isometric-immersions-of-closed-surfaces-into-Euclidean-four-space-September-23-2026/paper.pdf"
+    ],
+    "scope": "The formalization proves that every closed smooth Riemannian surface admits a smooth isometric immersion into $\\mathbb R^4$. The differential preserves the Riemannian inner product on every tangent space. No orientability assumption is imposed, and the statement asks for an immersion rather than an embedding.",
+    "results": [
+     {
+      "label": "Smooth isometric immersion of every closed surface into four-space",
+      "challenge": "lean/ComparatorChallenges/SurfaceImmersion.lean",
+      "config": "lean/ComparatorChallenges/SurfaceImmersion.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.ClosedSurfaceR4.FiniteOrderSmoothing.smooth_isometric_immersion",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 40,
+        "statement": "theorem smooth_isometric_immersion (g : SmoothMetric M) :\n    ∃ F : M → Space, IsSmoothIsometricImmersion M g F",
+        "proof": {
+         "file": "lean/OAI/Geometry/SurfaceImmersion/Main.lean",
+         "line": 16,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Geometry/SurfaceImmersion/Main.lean",
+        "main": false
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "334",
+   "title": "A smooth surface metric with no local isometric immersion in ℝ$^{3}$",
+   "description": "Constructs a smooth positive-definite metric on $(-1,1)^2$ for which no neighborhood of the origin admits a smooth isometric immersion into ℝ$^{3}$. This answers the unrestricted smooth local isometric realization problem for surfaces negatively, even after shrinking the neighborhood.",
+   "doc": "lean/docs/334.md",
+   "manuscripts": [
+    {
+     "title": "A Smooth Metric with No Local Isometric Immersion into Three-Space",
+     "path": "preprints/A-Smooth-Metric-with-No-Local-Isometric-Immersion-into-Three-Space-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "We construct a smooth positive-definite Riemannian metric on $(-1,1)^2$ that agrees with the Euclidean metric to every order at the origin, yet no neighborhood of the origin admits a smooth isometric immersion into Euclidean three-space. This gives a negative answer to the unrestricted smooth local isometric realization problem for surfaces."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/334.md",
+    "title": "A smooth surface metric with no local isometric immersion in ℝ<sup>3</sup>",
+    "papers": [
+     "preprints/A-Smooth-Metric-with-No-Local-Isometric-Immersion-into-Three-Space-September-24-2026/paper.pdf"
+    ],
+    "scope": "The local isometric-immersion problem asks whether every smooth surface metric can be realized locally in Euclidean three-space. The formalized counterexample is a smooth positive-definite metric on $(-1,1)^2$ for which no neighborhood of the origin admits a smooth isometric immersion into $\\mathbb R^3$. The obstruction applies to every smooth candidate map on every such neighborhood.",
+    "results": [
+     {
+      "label": "Smooth local isometric-immersion obstruction",
+      "challenge": "lean/ComparatorChallenges/IsometricImmersion.lean",
+      "config": "lean/ComparatorChallenges/IsometricImmersion.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.SmoothLocal.Geometry.exists_local_metric_without_local_immersion",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 46,
+        "statement": "theorem exists_local_metric_without_local_immersion :\n    ∃ g : coordinateSquareOpen → Matrix (Fin 2) (Fin 2) ℝ,\n      LocalSmoothPositive coordinateSquareOpen g ∧\n      ∀ U : Opens Coord, ∀ hUS : (U : Set Coord) ⊆ square,\n        (0 : Coord) ∈ U → ∀ F : U → Ambient,\n          ¬ (ContMDiff 𝓘(ℝ, Coord) 𝓘(ℝ, Ambient) ∞ F ∧\n            ∀ p : U, ∀ v w : Coord,\n              (inner ℝ : Ambient → Ambient → ℝ) (mfderiv 𝓘(ℝ, Coord) 𝓘(ℝ, Ambient) F p v)\n                (mfderiv 𝓘(ℝ, Coord) 𝓘(ℝ, Ambient) F p w) =\n                  v ⬝ᵥ (g ⟨p, hUS p.property⟩ *ᵥ w))",
+        "proof": {
+         "file": "lean/OAI/Geometry/IsometricImmersion/Main.lean",
+         "line": 49,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Geometry/IsometricImmersion/Main.lean",
+        "main": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "335",
+   "title": "Gromov’s integral scalar-curvature bound for simplicial volume",
+   "description": "Proves $\\int_M(\\mathrm{Scal}_g^-)^{n/2}\\,dV_g\\ge a_n\\lVert M\\rVert$ for every closed connected oriented smooth *n*-manifold, *n* ≥ 3, and every smooth metric, with $a_n\\gt 0$ depending only on dimension. Here $\\mathrm{Scal}_g^-=\\max\\{0,-\\mathrm{Scal}_g\\}$ and $\\lVert M\\rVert$ is real simplicial volume. Also proves rational inessentiality under positive scalar curvature, resolving the Gromov–Lawson conjecture; every nonnegative-scalar-curvature metric on a closed aspherical manifold is flat.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "An integral scalar curvature bound for real simplicial volume",
+     "path": "preprints/An-integral-scalar-curvature-bound-for-real-simplicial-volume-October-5-2026/v126-proof.pdf",
+     "note": "",
+     "abstract": "We prove the integral scalar-curvature inequality proposed by Gromov. For every dimension *n* ≥ 3, there is a constant $a_n\\gt 0$, depending only on *n*, such that\n\n$\\displaystyle \\int_M(\\mathop{\\mathrm{Scal}}\\nolimits _g^-)^{n/2}\\,dV_g\\ge a_n\\|M\\|$\n\nfor every closed connected oriented smooth *n*-manifold *M* and every smooth Riemannian metric *g*. Here $\\mathop{\\mathrm{Scal}}\\nolimits _g^-:=\\max\\{0,-\\mathop{\\mathrm{Scal}}\\nolimits _g\\}$, and $\\|M\\|$ is real simplicial volume. The proof uses the nonnegative-scalar-curvature vanishing theorem of the companion paper on rational inessentiality."
+    },
+    {
+     "title": "Positive scalar curvature forces rational inessentiality",
+     "path": "preprints/Positive-scalar-curvature-forces-rational-inessentiality-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove that every closed connected oriented smooth manifold admitting strictly positive scalar curvature is rationally inessential: its rational fundamental class maps to zero under the classifying map. No spin or fundamental-group hypothesis is needed, and there is no upper dimension bound. This proves the Gromov–Lawson aspherical conjecture; moreover, every nonnegative-scalar-curvature metric on a closed aspherical manifold is flat. We also show that every closed oriented smooth manifold of positive dimension with nonnegative scalar curvature has zero real simplicial volume, proving the qualitative vanishing consequence of Gromov's conjectural comparison."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "336",
+   "title": "Spectral scalar curvature, Urysohn width, and macroscopic dimension",
+   "description": "Every complete connected smooth boundaryless *n*-manifold, *n* ≥ 3, satisfying $-4\\Delta+\\mathrm{Scal}\\ge1$ as a quadratic-form inequality admits a continuous map to a simplicial complex of dimension at most $n-2$ whose entire fibers have diameter bounded only by *n* in the original metric. This strengthens Gromov's width conclusion to spectral scalar curvature. Universal covers of closed positive-scalar-curvature manifolds also have continuous macroscopic dimension at most $n-2$ for every *n* ≥ 2.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "Spectral scalar curvature and uniform Urysohn width",
+     "path": "preprints/Spectral-scalar-curvature-and-uniform-Urysohn-width-October-5-2026/main.pdf",
+     "note": "",
+     "abstract": "For every *n* ≥ 4, a complete connected smooth Riemannian *n*-manifold without boundary satisfying $-4\\Delta+\\mathop{\\mathrm{Scal}}\\nolimits \\ge1$ as a quadratic-form inequality admits a continuous map to a simplicial complex of dimension at most $n-2$ whose entire fibers have diameter bounded only in terms of *n*. The bound is measured in the original metric. This extends the uniform Urysohn width theorem from a pointwise scalar-curvature lower bound to a spectral lower bound."
+    },
+    {
+     "title": "Spectral scalar curvature and Urysohn width in dimension three",
+     "path": "preprints/Spectral-scalar-curvature-and-Urysohn-width-in-dimension-three-October-5-2026/spectral-urysohn-three-manifolds.pdf",
+     "note": "",
+     "abstract": "Every connected complete smooth Riemannian three-manifold without boundary satisfying $-4\\Delta+\\mathop{\\mathrm{Scal}}\\nolimits \\ge\\lambda\\gt 0$ as a quadratic-form inequality admits a continuous map to a graph whose entire fibers have diameter at most $500/\\sqrt\\lambda$ in the original metric. No orientability, spin, compactness, or bounded-geometry assumption is required."
+    },
+    {
+     "title": "Positive scalar curvature and uniform codimension-two width",
+     "path": "preprints/Positive-scalar-curvature-and-uniform-codimension-two-width-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove the quantitative continuous form of Gromov's scalar-curvature conjecture in every dimension *n* ≥ 4. Every complete connected smooth boundaryless *n*-manifold with scalar curvature at least one admits a continuous map to a simplicial complex of dimension at most $n-2$ whose entire fibers have diameter bounded only in terms of *n*. We also obtain the continuous macroscopic-dimension conclusion for universal covers of closed manifolds with positive scalar curvature in every dimension *n* ≥ 2."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "337",
+   "title": "Sharp Cartan–Hadamard isoperimetry and rigidity",
+   "description": "Proves generalized Cartan–Hadamard isoperimetry in every dimension: in a complete simply connected manifold with sectional curvature at most *κ* ≤ 0, every finite-volume finite-perimeter set satisfies the sharp comparison with the equal-volume model ball. Bounded positive-volume equality regions for *κ* = 0 are Euclidean balls. Also proves sharp Euclidean filling bounds for compactly supported integral *n*-cycles, *n* ≥ 2, in arbitrary proper CAT$(0)$ spaces.",
+   "doc": "lean/docs/337.md",
+   "manuscripts": [
+    {
+     "title": "Generalized Cartan–Hadamard isoperimetry and Euclidean equality rigidity",
+     "path": "preprints/Generalized-Cartan-Hadamard-isoperimetry-and-Euclidean-equality-rigidity-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We resolve the generalized Cartan–Hadamard isoperimetric conjecture in every dimension. In a complete simply connected smooth manifold with sectional curvature at most *κ* ≤ 0, every finite-volume set of finite ambient perimeter has perimeter at least that of the equal-volume ball in curvature *κ*. For bounded positive-volume sets, equality in the Euclidean comparison holds precisely when the set agrees up to null sets with an open region isometric, with its induced metric, to a round Euclidean ball."
+    },
+    {
+     "title": "Sharp integral fillings in CAT(0) spaces",
+     "path": "preprints/Sharp-integral-fillings-in-CAT(0)-spaces-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "Every compactly supported integral *n*-cycle, *n* ≥ 2, in a proper CAT(0) space bounds a compactly supported integral current with the sharp Euclidean mass bound. The theorem allows arbitrary integer multiplicities and unrestricted ambient dimension. In particular, we prove the Euclidean Cartan–Hadamard isoperimetric conjecture in dimensions at least three."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/337.md",
+    "title": "Sharp Cartan–Hadamard isoperimetry and rigidity",
+    "papers": [
+     "preprints/Sharp-integral-fillings-in-CAT(0)-spaces-September-23-2026/paper.pdf"
+    ],
+    "scope": "The formalization proves the sharp Euclidean filling inequality for every compactly supported integral $n$-cycle in a proper $\\mathrm{CAT}(0)$ space, for $n\\ge2$. It constructs a compactly supported integral filling whose mass is at most $C_n$ times the boundary mass to the power $(n+1)/n$, where $C_n$ is the Euclidean isoperimetric coefficient. Integer multiplicities and the ambient dimension are unrestricted.\n\nA second statement proves that this coefficient is optimal by giving, in Euclidean space, a cycle for which every compactly supported integral filling has at least that mass. This yields the selected integral-current form of the Cartan–Hadamard isoperimetric conjecture.",
+    "results": [
+     {
+      "label": "Optimality of the Euclidean filling coefficient",
+      "challenge": "lean/ComparatorChallenges/FillingCoefficient.lean",
+      "config": "lean/ComparatorChallenges/FillingCoefficient.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.SharpIntegralFillings.coefficient_optimal",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 120,
+        "statement": "theorem coefficient_optimal (n : ℕ) (hn : 2 ≤ n) :\n    ∃ T : IntegralCurrent (Euc (n + 1)) n,\n      CompactlySupported T.val ∧ IsCycle T.val ∧ 0 < mass T.val ∧\n      ∀ S : IntegralCurrent (Euc (n + 1)) (n + 1),\n        CompactlySupported S.val → boundarySucc S.val = T.val →\n        fillingCoefficient n * (mass T.val) ^ fillingPower n ≤ mass S.val",
+        "proof": {
+         "file": "lean/OAI/Geometry/IntegralFillings/Main.lean",
+         "line": 60,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Geometry/IntegralFillings/Main.lean",
+        "main": false
+       }
+      ]
+     },
+     {
+      "label": "Sharp integral fillings in proper $\\mathrm{CAT}(0)$ spaces",
+      "challenge": "lean/ComparatorChallenges/SharpCAT0Filling.lean",
+      "config": "lean/ComparatorChallenges/SharpCAT0Filling.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.CAT0Fillings.sharp_integral_filling",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 135,
+        "statement": "theorem sharp_integral_filling\n    (X : Type u) [MetricSpace X] [MeasurableSpace X] [BorelSpace X] [ProperSpace X]\n    (hX : IsCAT0 X) (n : ℕ) (hn : 2 ≤ n) (T : IntegralCurrent X n)\n    (hTc : CompactlySupported T.val) (hTz : IsCycle T.val) :\n    ∃ S : IntegralCurrent X (n + 1), CompactlySupported S.val ∧\n      boundarySucc S.val = T.val ∧\n      mass S.val ≤ fillingCoefficient n * (mass T.val) ^ fillingPower n",
+        "proof": {
+         "file": "lean/OAI/Geometry/CAT0Fillings/Main.lean",
+         "line": 111,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Geometry/CAT0Fillings/Main.lean",
+        "main": false
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "338",
+   "title": "Yau's uniformization conjecture",
+   "description": "Proves Yau's uniformization conjecture: every complete connected noncompact Kähler manifold with strictly positive holomorphic bisectional curvature is biholomorphic to ℂ$^{n}$.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "Uniformization of complete Kähler manifolds with positive bisectional curvature",
+     "path": "preprints/Uniformization-of-complete-Kahler-manifolds-with-positive-bisectional-curvature-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove that every complete connected noncompact Kähler manifold with strictly positive holomorphic bisectional curvature is biholomorphic to complex Euclidean space. This resolves Yau's uniformization conjecture positively in every complex dimension."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "339",
+   "title": "Katok's entropy rigidity conjecture",
+   "description": "Proves Katok's entropy rigidity conjecture for closed connected Riemannian manifolds of dimension at least three with strictly negative sectional curvature: normalized Liouville measure maximizes entropy for the geodesic flow if and only if the metric is locally symmetric.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "Entropy equality and local symmetry in negative curvature",
+     "path": "preprints/Entropy-equality-and-local-symmetry-in-negative-curvature-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "For every closed connected smooth Riemannian manifold of dimension at least three with strictly negative sectional curvature, we prove that normalized Liouville measure has maximal entropy for the unit-speed geodesic flow if and only if the metric is locally symmetric. This resolves Katok's entropy rigidity conjecture positively in these dimensions, including all rank-one symmetric types at arbitrary scale."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "340",
+   "title": "A counterexample to the nearby Lagrangian conjecture",
+   "description": "Disproves the unrestricted nearby Lagrangian conjecture. For some sufficiently large even *N*, constructs a closed exact embedded Lagrangian in $T^*(S^9\\times S^{N-1})$ that is diffeomorphic to the base but not Hamiltonian isotopic to its zero section.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "A counterexample to the nearby Lagrangian conjecture",
+     "path": "preprints/A-counterexample-to-the-nearby-Lagrangian-conjecture-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We disprove the unrestricted nearby Lagrangian conjecture. For some sufficiently large even integer *N*, we construct a closed exact smoothly embedded Lagrangian in $T^*(S^9\\times S^{N-1})$ that is diffeomorphic to the base but is not Hamiltonian isotopic to the zero section."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "341",
+   "title": "Donaldson's hypersymplectic deformation conjecture",
+   "description": "Proves Donaldson's hypersymplectic deformation conjecture in a cohomology-preserving form. Every positive triple of smooth closed two-forms on a closed connected oriented four-manifold, normalized by $\\int\\omega_i\\wedge\\omega_j=\\delta_{ij}$, deforms through positive closed triples to a hyperkähler triple while preserving all three cohomology classes. Any positive triple can first be normalized by a constant linear change.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "Deforming hypersymplectic four-manifolds to hyperkähler triples",
+     "path": "preprints/Deforming-hypersymplectic-four-manifolds-to-hyperkahler-triples-October-7-2026/paper.pdf",
+     "note": "",
+     "abstract": "Every smooth normalized positive triple of closed two-forms on a closed connected oriented four-manifold admits a smooth deformation, with each cohomology class fixed, to a hyperkähler triple. This resolves Donaldson's hypersymplectic deformation conjecture."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "342",
+   "title": "Donaldson's tamed-to-compatible conjecture",
+   "description": "Proves Donaldson's tamed-to-compatible conjecture: every smooth almost complex structure on a closed four-manifold that is tamed by a symplectic form admits a compatible symplectic form. The almost complex structure stays fixed; the form's cohomology class may change.",
+   "doc": "lean/docs/342.md",
+   "manuscripts": [
+    {
+     "title": "Taming implies compatibility on four-manifolds",
+     "path": "preprints/Taming-implies-compatibility-on-four-manifolds-October-6-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove that every smooth almost complex structure on a closed four-manifold which is tamed by a symplectic form is compatible with a symplectic form. This gives a positive solution to Donaldson's tamed-to-compatible conjecture. We also characterize the compatible cone by strict intersection positivity on the closure of the invariant part of the taming cone."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/342.md",
+    "title": "Donaldson's tamed-to-compatible conjecture",
+    "papers": [
+     "preprints/Taming-implies-compatibility-on-four-manifolds-September-23-2026/paper.pdf"
+    ],
+    "scope": "Donaldson's tamed-to-compatible conjecture asks whether an almost-complex structure tamed by a symplectic form also admits a compatible symplectic form. The formalized result establishes this for every closed connected smooth four-manifold, keeping the almost-complex structure fixed. No integrability assumption or prescribed cohomology class for the compatible form is required.",
+    "results": [
+     {
+      "label": "Taming implies compatibility",
+      "challenge": "lean/ComparatorChallenges/TamingCompatibility.lean",
+      "config": "lean/ComparatorChallenges/TamingCompatibility.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.TamingCompatibility.taming_implies_compatibility",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 58,
+        "statement": "theorem taming_implies_compatibility\n    [T2Space X] [SecondCountableTopology X] [CompactSpace X] [ConnectedSpace X]\n    (J : AlmostComplexStructure X)\n    (h : ∃ α : TwoForm X, IsSymplectic α ∧ Tames α J) :\n    ∃ η : TwoForm X, IsSymplectic η ∧ Compatible η J",
+        "proof": {
+         "file": "lean/OAI/Geometry/TamingCompatibility/Main.lean",
+         "line": 30,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Geometry/TamingCompatibility/Main.lean",
+        "main": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "343",
+   "title": "Symplectic ball packing in higher dimensions",
+   "description": "Resolves the Siegel–Yao conjecture for arbitrary capacities in every dimension $2n\\ge6$. Finitely many closed symplectic balls of capacities $R_1,\\ldots,R_k$ embed disjointly into an open ball of capacity *R* exactly when $\\sum_iR_i^n\\lt R^n$ and $R_i+R_j\\lt R$ for every distinct pair *i*, *j*.",
+   "doc": "lean/docs/343.md",
+   "manuscripts": [
+    {
+     "title": "Symplectic Ball Packings in Higher Dimensions",
+     "path": "preprints/Symplectic-Ball-Packings-in-Higher-Dimensions-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove that, for all integers *n* ≥ 3 and *k* ≥ 1 and all positive real capacities $R_1,\\ldots,R_k$, the closed standard symplectic $2n$-balls of these capacities embed disjointly into the interior of a ball of capacity *R* > 0 if and only if\n\n$\\displaystyle \\sum_{i=1}^k R_i^n\\lt R^n, \\qquad R_i+R_j\\lt R\\quad(i\\ne j).$\n\nCapacity is *π* times the squared Euclidean radius, and each embedding is defined on a neighborhood of its closed source ball. This proves Siegel and Yao's Conjecture A."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/343.md",
+    "title": "Symplectic ball packing in higher dimensions",
+    "papers": [
+     "preprints/Symplectic-Ball-Packings-in-Higher-Dimensions-September-23-2026/paper.pdf"
+    ],
+    "scope": "The formalization proves Siegel and Yao's ball-packing criterion in every symplectic dimension $2n$ with $n\\ge3$. For $k\\ge1$ closed standard balls of positive capacities $R_1,\\ldots,R_k$, disjoint symplectic embeddings into the interior of a ball of capacity $R$ exist exactly when\n$\\sum_i R_i^n<R^n$ and $R_i+R_j<R$ for all $i\\ne j$.\nCapacity is $\\pi$ times squared Euclidean radius, and each embedding is defined on a neighborhood of its closed source ball. The linked statements include both the full equivalence and the necessity direction.",
+    "results": [
+     {
+      "label": "Exact criterion for higher-dimensional symplectic ball packings",
+      "challenge": "lean/ComparatorChallenges/BallPacking.lean",
+      "config": "lean/ComparatorChallenges/BallPacking.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.HigherDimensionalBallPacking.main_theorem",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 36,
+        "statement": "theorem main_theorem (n k : ℕ) (hn : 3 ≤ n) (hk : 1 ≤ k)\n    (R : ℝ) (r : Fin k → ℝ) (hR : 0 < R) (hr : ∀ i, 0 < r i) :\n    HasPacking n k R r ↔ PackingInequalities n k R r",
+        "proof": {
+         "file": "lean/OAI/Geometry/BallPacking/Main.lean",
+         "line": 17,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Geometry/BallPacking/Main.lean",
+        "main": false
+       }
+      ]
+     },
+     {
+      "label": "Necessity of the volume and pairwise capacity inequalities",
+      "challenge": "lean/ComparatorChallenges/BallPackingNecessity.lean",
+      "config": "lean/ComparatorChallenges/BallPackingNecessity.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.HigherDimensionalBallPacking.packing_necessity",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 38,
+        "statement": "theorem packing_necessity (n k : ℕ) (hn : 3 ≤ n) (hk : 1 ≤ k)\n    (R : ℝ) (r : Fin k → ℝ) (hR : 0 < R) (hr : ∀ i, 0 < r i)\n    (hp : HasPacking n k R r) : PackingInequalities n k R r",
+        "proof": {
+         "file": "lean/OAI/Geometry/BallPacking/Necessity/PackingNecessity.lean",
+         "line": 402,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Geometry/BallPacking/Necessity/Main.lean",
+        "main": false
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "344",
+   "title": "The metric Blaschke conjecture",
+   "description": "Proves the metric Blaschke conjecture: every closed connected Riemannian manifold of positive dimension whose injectivity radius equals its diameter is, up to scaling, a standard compact rank-one symmetric space.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "The metric Blaschke theorem",
+     "path": "preprints/The-metric-Blaschke-theorem-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove the metric Blaschke conjecture: every connected closed smooth Riemannian manifold of positive dimension whose global injectivity radius equals its diameter is, up to scale, a standard compact rank-one symmetric space."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "345",
+   "title": "Infinitely many closed geodesics on Riemannian spheres and closed three-manifolds",
+   "description": "Proves that every smooth Riemannian metric on $S^{n}$, *n* ≥ 2, has infinitely many prime closed geodesics with pairwise distinct images. The same conclusion holds on every closed manifold admitting a finite smooth spherical cover and on every closed three-manifold, without orientability or nondegeneracy restrictions.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "Infinitely many closed geodesic images on every Riemannian sphere",
+     "path": "preprints/Infinitely-many-closed-geodesic-images-on-every-Riemannian-sphere-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "We resolve the sphere case of the closed-geodesic infinitude problem: every smooth Riemannian metric on the standard sphere $S^{n}$, *n* ≥ 2, has infinitely many prime closed geodesics with pairwise distinct images. The two-sphere case is classical; the result in higher dimensions includes degenerate metrics. Using finite covers and theorems of Perelman and Rademacher–Taimanov, we also obtain the same conclusion for every smooth Riemannian metric on a nonempty closed smooth three-manifold."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "346",
+   "title": "Sharp singular-set bounds for stationary integral varifolds",
+   "description": "Proves that every stationary integral *m*-varifold in a Euclidean open set has singular set of Hausdorff dimension at most $m-1$, a sharp bound in every positive dimension and codimension. On round spheres, the family also proves almost-everywhere regularity: the singular set has zero *m*-dimensional Hausdorff measure.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "A Codimension-One Bound for the Singular Set of a Stationary Integral Varifold",
+     "path": "preprints/A-Codimension-One-Bound-for-the-Singular-Set-of-a-Stationary-Integral-Varifold-October-5-2026/varifold-singular-dimension.pdf",
+     "note": "",
+     "abstract": "The singular set of every stationary integral *m*-varifold in an open Euclidean set has Hausdorff dimension at most $m-1$, in every positive dimension and codimension. This sharp bound proves the Euclidean singular-set conjecture recorded by Brena, Decio, and De Lellis."
+    },
+    {
+     "title": "Almost-everywhere regularity of stationary integral varifolds",
+     "path": "preprints/Almost-everywhere-regularity-of-stationary-integral-varifolds-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We resolve the almost-everywhere regularity conjecture of Brena, Decio, and De Lellis for stationary integral varifolds of arbitrary positive dimension and codimension in Euclidean open sets. The singular set has zero measure in the dimension of the varifold: near almost every support point, the varifold is a constant positive integer multiple of a smooth embedded minimal submanifold. The corresponding statement also holds on round spheres."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "347",
+   "title": "Counterexamples to stable-Morse and strong Arnold fixed-point bounds",
+   "description": "Disproves stable-Morse lower bounds for nondegenerate Hamiltonian fixed points: on simply connected closed Kähler manifolds of real dimension 22, the deficit below the stable Morse number is unbounded. A separate Hamiltonian diffeomorphism of the complex quadric threefold has exactly three fixed points, fewer than the four critical points required of every smooth function.",
+   "doc": "lean/docs/347.md",
+   "manuscripts": [
+    {
+     "title": "Hamiltonian Fixed Points Below the Stable Morse Number in Dimension Twenty-Two",
+     "path": "preprints/Hamiltonian-Fixed-Points-Below-the-Stable-Morse-Number-in-Dimension-Twenty-Two-October-5-2026/hamiltonian-fixed-points-below-stable-morse-number.pdf",
+     "note": "",
+     "abstract": "We disprove the stable Morse lower bound for nondegenerate Hamiltonian fixed points with examples in fixed real dimension twenty-two. For every integer *m* ≥ 1, we construct a simply connected closed Kähler manifold with stable Morse number $80+1968m$ and a Hamiltonian diffeomorphism with exactly $80+1952m$ fixed points, all nondegenerate and with contractible orbit loops. The deficit is therefore unbounded, and the fixed-point count is at most 127/128 of the stable Morse number."
+    },
+    {
+     "title": "Sharpness of the Cyclic Integral Floer Bound Below the Stable Morse Number",
+     "path": "preprints/Sharpness-of-the-Cyclic-Integral-Floer-Bound-Below-the-Stable-Morse-Number-October-5-2026/sharp-cyclic-integral-floer-bound-below-stable-morse-number.pdf",
+     "note": "",
+     "abstract": "We construct a simply connected closed Kähler manifold of real dimension 3332 and minimal Chern number one whose Hamiltonian fixed-point count attains the cyclic integral Floer bound while falling below the stable Morse number. The Hamiltonian diffeomorphism has exactly $1\\,872\\,232$ fixed points, all nondegenerate and with contractible orbit loops, whereas the stable Morse number is $1\\,872\\,264$. Thus the stronger stable Morse bound fails by exactly 32, even when the cyclic integral bound is sharp."
+    },
+    {
+     "title": "Hamiltonian Fixed Points Below the Stable Morse Number",
+     "path": "preprints/Hamiltonian-Fixed-Points-Below-the-Stable-Morse-Number-October-5-2026/paper.pdf",
+     "note": "",
+     "abstract": "We disprove the stable Morse lower bound for nondegenerate Hamiltonian fixed points by constructing a simply connected closed Kähler manifold with sixteen fewer fixed points than its stable Morse number. All the corresponding periodic orbits are contractible. The construction combines a Hamiltonian involution with integral homology torsion at two different primes; its proof uses finite-dimensional Morse theory and complex blowups."
+    },
+    {
+     "title": "A nondegenerate counterexample to the Morse-number Arnold bound",
+     "path": "preprints/A-nondegenerate-counterexample-to-the-Morse-number-Arnold-bound-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We construct a smooth one-periodic Hamiltonian on a closed symplectic twelve-manifold whose time-one map has fewer fixed points than the manifold's ordinary Morse number. Every fixed point is nondegenerate and has a contractible Hamiltonian trajectory. This disproves the Morse-number form of the Arnold conjecture. The deficit can be arbitrarily large among twelve-dimensional examples."
+    },
+    {
+     "title": "Three fixed points on the symplectic quadric threefold",
+     "path": "preprints/A-degenerate-counterexample-to-the-critical-number-Arnold-bound-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We construct a smooth Hamiltonian diffeomorphism of the complex quadric threefold with exactly three fixed points, at least one of which is degenerate. The critical number and the unit-inclusive rational cup length of this manifold are both four. Thus the example disproves the unrestricted critical-number and rational cup-length forms of the Arnold conjecture."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/347.md",
+    "title": "Counterexamples to stable-Morse and strong Arnold fixed-point bounds",
+    "papers": [
+     "preprints/A-degenerate-counterexample-to-the-critical-number-Arnold-bound-September-23-2026/paper.pdf"
+    ],
+    "scope": "The critical-number form of Arnold's fixed-point conjecture predicts at least as many fixed points as the minimum number of critical points of a smooth function. The formalized counterexample is a Hamiltonian diffeomorphism of the complex quadric threefold with exactly three fixed points, while every smooth function on that manifold has at least four critical points. At least one fixed point is degenerate. The separate nondegenerate Morse-number construction is not included.",
+    "results": [
+     {
+      "label": "Three-fixed-point Arnold counterexample",
+      "challenge": "lean/ComparatorChallenges/ArnoldCounterexample.lean",
+      "config": "lean/ComparatorChallenges/ArnoldCounterexample.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.ArnoldCounterexample.main",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 111,
+        "statement": "theorem main :\n    ∃ φ : Q3 ≃ Q3, IsHamiltonian φ ∧ (fixedSet φ).encard = 3 ∧\n      (3 : ℕ∞) < 4 ∧ 4 ≤ criticalNumber ∧ HasDegenerateFixedPoint φ",
+        "proof": {
+         "file": "lean/OAI/Geometry/Arnold/Main.lean",
+         "line": 14,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Geometry/Arnold/Main.lean",
+        "main": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "348",
+   "title": "Nonnegative-curvature Einstein classification and an $L^{2}$ topological gap",
+   "description": "Classifies closed connected Einstein four-manifolds with positive Einstein constant and nonnegative sectional curvature: up to scaling, their universal Riemannian covers are the round $S^{4}$, Fubini–Study $\\mathbb{CP}^2$, or a product of equal round two-spheres. A closed simply connected nonnegatively curved four-manifold is diffeomorphic to one of these whenever the scale-invariant $L^{2}$ norm of its trace-free Ricci curvature lies below a universal positive constant.",
+   "doc": "lean/docs/348.md",
+   "manuscripts": [
+    {
+     "title": "Zero-Plane Rigidity for Einstein Four-Manifolds",
+     "path": "preprints/Zero-Plane-Rigidity-for-Einstein-Four-Manifolds-October-4-2026/einstein-boundary.pdf",
+     "note": "",
+     "abstract": "We prove that a closed Einstein four-manifold with positive Einstein constant, nonnegative sectional curvature, and a zero-curvature plane has universal Riemannian cover isometric to a product of two round two-spheres. Under the normalization $\\mathop{\\mathrm{Ric}}\\nolimits =3g$, both spheres have radius $1/\\sqrt3$. The proof extends coupled estimates for the two Weyl curvature blocks to the boundary of the sectional-curvature cone and determines their equality case."
+    },
+    {
+     "title": "An L² Einstein Gap for Nonnegatively Curved Four-Manifolds",
+     "path": "preprints/An-L2-Einstein-Gap-for-Nonnegatively-Curved-Four-Manifolds-October-5-2026/einstein-gap.pdf",
+     "note": "",
+     "abstract": "We prove a universal, scale-invariant $L^{2}$ gap for the trace-free Ricci tensor on simply connected closed four-manifolds with nonnegative sectional curvature. If the trace-free Ricci energy is sufficiently small, the manifold is diffeomorphic to $S^{4}$, $\\mathbb{CP}^2$, or $S^2\\times S^2$. The proof uses the classification of positive-Einstein, nonnegatively curved four-manifolds supplied by the companion zero-plane rigidity theorem, stated explicitly as the classification premise of our result. No auxiliary curvature, volume, diameter, injectivity-radius, or Sobolev bound is required. The conclusion concerns the smooth manifold, not an isometry of the original metric."
+    },
+    {
+     "title": "Positively curved Einstein four-manifolds",
+     "path": "preprints/Positively-curved-Einstein-four-manifolds-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove the classification conjecture for connected smooth closed Einstein four-manifolds with strictly positive sectional curvature. Up to positive scaling and isometry, every such manifold is the round four-sphere, the complex projective plane with its Fubini–Study metric, or real projective four-space with its round metric. No orientability assumption is needed."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/348.md",
+    "title": "Nonnegative-curvature Einstein classification and an <i>L</i><sup>2</sup> topological gap",
+    "papers": [
+     "preprints/Positively-curved-Einstein-four-manifolds-September-23-2026/paper.pdf"
+    ],
+    "scope": "The formalization classifies connected smooth closed Einstein four-manifolds with strictly positive sectional curvature. Up to positive scaling and isometry, every such manifold is the round four-sphere, the complex projective plane with its Fubini–Study metric, or round real projective four-space. No orientability hypothesis is required. In the oriented case, only the sphere and complex projective plane occur.",
+    "results": [
+     {
+      "label": "Classification of positively curved Einstein four-manifolds",
+      "challenge": "lean/ComparatorChallenges/EinsteinFour.lean",
+      "config": "lean/ComparatorChallenges/EinsteinFour.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.PositiveEinsteinFour.orientedClassification",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 190,
+        "statement": "theorem orientedClassification (X : ClosedOrientedMetricFour.{u})\n    (hEinstein : IsEinstein X.metric) (hpositive : HasPositiveSectionalCurvature X.metric) :\n    ∃ a : ℝ, 0 < a ∧ (ScaledIsometricTo X.metric a roundDistance ∨\n      ScaledIsometricTo X.metric a fubiniStudyDistance)",
+        "proof": {
+         "file": "lean/OAI/Geometry/EinsteinFour/ActualModelIdentification.lean",
+         "line": 63,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Geometry/EinsteinFour/Classification.lean",
+        "main": false
+       },
+       {
+        "name": "OAI.PositiveEinsteinFour.classificationOn",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 202,
+        "statement": "theorem classificationOn : ClassificationOn M",
+        "proof": {
+         "file": "lean/OAI/Geometry/EinsteinFour/ActualModelIdentification.lean",
+         "line": 78,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Geometry/EinsteinFour/Classification.lean",
+        "main": false
+       },
+       {
+        "name": "OAI.PositiveEinsteinFour.classification",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 208,
+        "statement": "theorem classification (M : Type*) [TopologicalSpace M] [ChartedSpace FourSpace M]\n    [IsManifold I4 ∞ M] [T2Space M] [SecondCountableTopology M]\n    [CompactSpace M] [ConnectedSpace M] (g : SmoothMetric M)\n    (hEinstein : IsEinstein g) (hpositive : HasPositiveSectionalCurvature g) :\n    ∃ a : ℝ, 0 < a ∧\n      (ScaledIsometricTo g a roundDistance ∨\n        ScaledIsometricTo g a fubiniStudyDistance ∨\n        ScaledIsometricTo g a realProjectiveDistance)",
+        "proof": {
+         "file": "lean/OAI/Geometry/EinsteinFour/Classification.lean",
+         "line": 13,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Geometry/EinsteinFour/Classification.lean",
+        "main": false
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "349",
+   "title": "The Solomon–Yau least-volume conjecture",
+   "description": "Proves the Solomon–Yau least-volume conjecture for minimal hypersurfaces of round spheres. For every *m* ≥ 2, a closed connected minimal immersion into the unit sphere $S^{m+1}$ with non-totally-geodesic image has volume at least that of the smallest minimal Clifford product, counting covering multiplicity.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "The Solomon–Yau least-volume theorem",
+     "path": "preprints/The-Solomon-Yau-least-volume-theorem-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove the Solomon–Yau least-volume conjecture for minimal hypersurfaces of unit round spheres: in every dimension *m* ≥ 2, a closed connected minimal immersion with non-totally-geodesic image has volume at least the smallest *m*-dimensional minimal Clifford product. Volume is measured on the domain, so covering multiplicities are included."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "350",
+   "title": "Yau’s nodal bounds: surfaces and higher dimensions",
+   "description": "Proves the sharp $C\\sqrt\\lambda$ upper bound for nodal length on every fixed smooth closed surface, completing Yau's conjecture there. The upper bound fails for fixed smooth metrics in dimensions three and four, including metrics on $S^{3}$ arbitrarily close to round. In dimension five, nodal measure can grow faster than $\\lambda^{1/2+\\varepsilon_0}$ for some fixed $\\varepsilon_0\\gt 0$, ruling out even arbitrarily small power losses.",
+   "doc": "lean/docs/350.md",
+   "manuscripts": [
+    {
+     "title": "Sharp nodal length on smooth surfaces",
+     "path": "preprints/Sharp-nodal-length-on-smooth-surfaces-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove that a nonzero real Laplace eigenfunction with eigenvalue *λ* > 0 on a fixed smooth closed connected Riemannian surface has nodal length at most $C\\sqrt\\lambda$. Together with the known lower bound, this proves Yau's conjecture in this setting."
+    },
+    {
+     "title": "Smooth counterexamples to Yau's nodal upper bound in dimensions three and four",
+     "path": "preprints/Smooth-counterexamples-to-Yaus-nodal-upper-bound-in-dimensions-three-and-four-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We construct a smooth metric on the three-sphere, arbitrarily close to the round metric in the smooth topology, and a smooth metric on $S^2\\times\\mathbb T^2$ for which sequences of exact real Laplace eigenfunctions have unbounded nodal measure divided by the square root of the eigenvalue. Each sequence belongs to one fixed metric. Thus the upper-bound part of Yau's nodal conjecture fails for smooth metrics in dimensions three and four."
+    },
+    {
+     "title": "Power-law violations of Yau's nodal upper bound",
+     "path": "preprints/Power-law-violations-of-Yaus-nodal-upper-bound-September-23-2026/paper.pdf",
+     "note": "",
+     "abstract": "We construct a smooth Riemannian metric on $S^4\\times S^1$ and a sequence of real Laplace eigenfunctions whose nodal four-volume grows faster than $\\lambda^{1/2+\\epsilon_0}$ for one fixed $\\epsilon_0\\gt 0$. This disproves the smooth upper-bound assertion in Yau's nodal-set conjecture and the proposed bound with an arbitrarily small positive power loss."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/350.md",
+    "title": "Yau’s nodal bounds: surfaces and higher dimensions",
+    "papers": [
+     "preprints/Sharp-nodal-length-on-smooth-surfaces-September-23-2026/paper.pdf",
+     "preprints/Smooth-counterexamples-to-Yaus-nodal-upper-bound-in-dimensions-three-and-four-September-23-2026/paper.pdf",
+     "preprints/Power-law-violations-of-Yaus-nodal-upper-bound-September-23-2026/paper.pdf"
+    ],
+    "scope": "Yau's nodal-set conjecture predicts nodal size of order $\\sqrt\\lambda$ for Laplace eigenfunctions of eigenvalue $\\lambda$. The formalization proves the upper bound on every fixed smooth closed connected Riemannian surface: there is a surface-dependent constant $C$ such that the one-dimensional Hausdorff measure of the zero set of every nonzero real eigenfunction with $\\lambda>0$ is at most $C\\sqrt\\lambda$. The known lower bound is not part of this selected statement.\n\nThe formalized results contradict Yau's proposed $O(\\sqrt\\lambda)$ upper bound for nodal measure in dimensions three and four. On $S^3$, every prescribed smooth neighborhood of the round metric contains one fixed smooth metric with an eigenfunction sequence of unbounded nodal-measure ratio. A second fixed metric on $S^2\\times T^2$ has the same property. In both cases the eigenvalues tend to infinity and the intrinsic nodal measures are finite.\n\nYau's nodal upper-bound conjecture predicts that the nodal measure of an eigenfunction is bounded by a constant times the square root of its eigenvalue. The formalized counterexample fixes one smooth metric on $S^4\\times S^1$ and a sequence of nonzero smooth eigenfunctions whose positive eigenvalues tend to infinity, while the intrinsic four-dimensional nodal measures divided by the square roots of the eigenvalues tend to infinity. The metric is fixed throughout the sequence.",
+    "results": [
+     {
+      "label": "Sharp upper bound for nodal length on smooth surfaces",
+      "challenge": "lean/ComparatorChallenges/NodalLength.lean",
+      "config": "lean/ComparatorChallenges/NodalLength.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.SharpNodal.Main",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 52,
+        "statement": "theorem Main [CompactSpace M] [ConnectedSpace M]\n    [IsContMDiffRiemannianBundle 𝓘(ℝ,Plane) ∞ Plane\n      (fun x:M=>TangentSpace 𝓘(ℝ,Plane) x)]\n    [IsRiemannianManifold 𝓘(ℝ,Plane) M] : MainStatement M",
+        "proof": {
+         "file": "lean/OAI/Analysis/NodalLength/Main.lean",
+         "line": 377,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/NodalLength/Main.lean",
+        "main": false
+       }
+      ]
+     },
+     {
+      "label": "Nodal counterexamples in dimensions three and four",
+      "challenge": "lean/ComparatorChallenges/SmoothYau.lean",
+      "config": "lean/ComparatorChallenges/SmoothYau.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.YauCounterexamples.sphere_three",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 132,
+        "statement": "theorem sphere_three (gRound : SmoothMetric (Euclidean 3) (Sphere 3))\n    (hRound : IsRound gRound) :\n    ∀ N : Set (SmoothMetric (Euclidean 3) (Sphere 3)),\n      IsSmoothNeighborhood gRound N →\n      ∃ g ∈ N, HasUnboundedNodalRatio g 3",
+        "proof": {
+         "file": "lean/OAI/Geometry/SmoothYau/SphereMetric/ThreeSphere.lean",
+         "line": 12,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Geometry/SmoothYau/Main.lean",
+        "main": true
+       },
+       {
+        "name": "OAI.YauCounterexamples.sphere_two_torus_two",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 139,
+        "statement": "theorem sphere_two_torus_two :\n    ∃ g : SmoothMetric FourModel FourManifold,\n      HasUnboundedNodalRatio g 4",
+        "proof": {
+         "file": "lean/OAI/Geometry/SmoothYau/ProductMetric/SphereProduct.lean",
+         "line": 75,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Geometry/SmoothYau/Main.lean",
+        "main": true
+       }
+      ]
+     },
+     {
+      "label": "Unbounded nodal ratio on $S^4\\times S^1$",
+      "challenge": "lean/ComparatorChallenges/YauCounterexample.lean",
+      "config": "lean/ComparatorChallenges/YauCounterexample.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.Yau.Target.yau_nodal_set_upper_bound_counterexample",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 65,
+        "statement": "theorem yau_nodal_set_upper_bound_counterexample : MainTarget",
+        "proof": {
+         "file": "lean/OAI/Geometry/NodalSets/Main.lean",
+         "line": 8,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Geometry/NodalSets/Main.lean",
+        "main": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "351",
+   "title": "Scalar curvature and finite-time Ricci-flow singularities",
+   "description": "Proves that a smooth Ricci flow on a closed four-manifold extends past any finite time at which scalar curvature remains uniformly bounded. A higher-dimensional counterexample has bounded scalar curvature but unbounded full curvature at its finite maximal time, disproving the unrestricted scalar-curvature extension conjecture.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "A closed Ricci flow with bounded scalar curvature and finite-time curvature blowup",
+     "path": "preprints/A-closed-Ricci-flow-with-bounded-scalar-curvature-and-finite-time-curvature-blowup-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "We disprove the scalar-curvature extension conjecture in its unrestricted all-dimensions form. In sufficiently high dimension, we construct a Ricci flow on a closed manifold whose scalar curvature remains uniformly bounded while full curvature diverges at a finite maximal time. In one fixed sufficiently high dimension, the examples have two-sided power-law curvature blowup with arbitrarily large exponents."
+    },
+    {
+     "title": "Bounded scalar curvature and smooth extension of four-dimensional Ricci flow",
+     "path": "preprints/Bounded-scalar-curvature-and-smooth-extension-of-four-dimensional-Ricci-flow-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove that a smooth Ricci flow on a closed real four-manifold extends on the same manifold through every finite time at which its scalar curvature remains uniformly bounded. This resolves the scalar-curvature extension problem in dimension four."
+    },
+    {
+     "title": "Path selection and an elliptic inequality on degenerating Ricci-flat trees",
+     "path": "preprints/Path-selection-and-an-elliptic-inequality-on-degenerating-Ricci-flat-trees-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove a sequential elliptic inequality for the renormalized Einstein–Hilbert functional on a fixed finite tree of four-dimensional Ricci-flat spaces. As the joining lengths diverge and the scale-neutral weighted Ricci error *M* tends to zero, the functional satisfies $E=o(M)$. The root end has decay exponent greater than one, and every joined quotient group is nontrivial. We also prove the multivariable path-selection theorem for asymptotic expansions used to obtain this estimate."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "352",
+   "title": "A finite-time singularity of Calabi flow",
+   "description": "Disproves Chen's smooth long-time existence conjecture for Calabi flow by constructing a smooth $U(10)$-invariant Kähler metric on $\\mathbb{CP}^{10}$ whose flow develops a finite-time singularity. The metric lies in the Fubini–Study class, so the failure occurs even in a class containing a constant-scalar-curvature metric.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "A finite-time singularity of Calabi flow on projective space",
+     "path": "preprints/A-finite-time-singularity-of-Calabi-flow-on-projective-space-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "We construct a smooth Kähler metric in the Fubini–Study class of $\\mathbb{CP}^{10}$ whose Calabi flow develops unbounded scalar curvature in finite time. This disproves Chen's smooth long-time existence conjecture, even in a class containing a constant-scalar-curvature metric."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "353",
+   "title": "Affine Bernstein rigidity through dimension nine and a smooth dimension-ten counterexample",
+   "description": "Proves that every smooth locally uniformly convex affine-maximal graph of dimension three through nine, complete for its induced Euclidean metric, is an elliptic paraboloid. A smooth entire nonquadratic example in dimension ten makes this range sharp. In dimensions three through nine, the paraboloid classification also holds for connected open locally uniformly convex affine-maximal hypersurfaces complete for the affine Berwald–Blaschke metric.",
+   "doc": "lean/docs/353.md",
+   "manuscripts": [
+    {
+     "title": "A Smooth Nonquadratic Entire Affine Maximal Graph in Dimension Ten",
+     "path": "preprints/Smooth-Nonquadratic-Affine-Maximal-Graph-in-Dimension-Ten-October-5-2026/affine-maximal-dimension-ten.pdf",
+     "note": "",
+     "abstract": "We construct a smooth nonquadratic entire graph in dimension ten that solves the classical affine maximal equation and has positive-definite Hessian everywhere. This gives a smooth counterexample to the entire-graph affine Bernstein assertion in dimension ten. Hessian positivity is pointwise; no global uniform lower bound or completeness of the Berwald–Blaschke metric is asserted."
+    },
+    {
+     "title": "The affine Bernstein theorem in dimensions three through nine",
+     "path": "preprints/The-affine-Bernstein-theorem-in-dimensions-three-through-nine-September-24-2026/main.pdf",
+     "note": "",
+     "abstract": "We prove the Euclidean-complete affine Bernstein conjecture in dimensions three through nine: a smooth locally uniformly convex affine maximal graph is an elliptic paraboloid whenever its induced Euclidean metric is complete. The same conclusion holds, without an initial graph assumption, for connected smooth open (noncompact and without boundary) affine-complete locally uniformly convex immersed hypersurfaces that are classically affine maximal in these dimensions."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/353.md",
+    "title": "Affine Bernstein rigidity through dimension nine and a smooth dimension-ten counterexample",
+    "papers": [
+     "preprints/The-affine-Bernstein-theorem-in-dimensions-three-through-nine-September-24-2026/main.pdf"
+    ],
+    "scope": "The formalization proves the Euclidean-complete affine Bernstein theorem for graph dimensions $3\\le n\\le9$. If a smooth function on a nonempty open convex domain has positive-definite Hessian, satisfies the affine maximal equation, and its graph is complete in the induced Euclidean metric, then the domain is all of $\\mathbb R^n$ and the function is a positive-definite quadratic polynomial plus an affine term. Its graph is therefore an elliptic paraboloid.\n\nThe paper's extension to immersed hypersurfaces without an initial graph assumption is outside this selected statement.",
+    "results": [
+     {
+      "label": "Affine Bernstein classification for complete graphs in dimensions three through nine",
+      "challenge": "lean/ComparatorChallenges/AffineBernstein.lean",
+      "config": "lean/ComparatorChallenges/AffineBernstein.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.AffineBernstein.affine_bernstein",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 73,
+        "statement": "theorem affine_bernstein\n    (n : ℕ) (hn₃ : 3 ≤ n) (hn₉ : n ≤ 9)\n    (Ω : Set (Space n)) (hΩne : Ω.Nonempty) (hΩopen : IsOpen Ω)\n    (hΩconvex : Convex ℝ Ω) (u : Space n → ℝ)\n    (hu : ContDiffOn ℝ ∞ u Ω)\n    (hpos : ∀ x ∈ Ω, (hessian u x).PosDef)\n    (hmax : AffineMaximalOn Ω u)\n    (hcomplete : EuclideanGraphComplete Ω u) :\n    Ω = univ ∧\n      (∃ (A : Matrix (Fin n) (Fin n) ℝ) (b : Space n) (c : ℝ),\n        A.IsSymm ∧ A.PosDef ∧\n        ∀ x, u x = (1 / 2 : ℝ) * (∑ i : Fin n, ∑ j : Fin n, x i * A i j * x j)\n          + (∑ i : Fin n, b i * x i) + c) ∧\n      (∃ e : (Space n × ℝ) ≃ᵃ[ℝ] (Space n × ℝ),\n        e '' standardParaboloid n = graph Ω u)",
+        "proof": {
+         "file": "lean/OAI/Analysis/AffineBernstein/Main.lean",
+         "line": 18,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/AffineBernstein/Main.lean",
+        "main": false
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "354",
+   "title": "The isoperimetric profile of the cubic three-torus",
+   "description": "Determines the isoperimetric profile of the unit cubic flat three-torus and classifies every finite-perimeter minimizer: balls, circular tubes around shortest closed geodesics, coordinate slabs, and their complements. The transition volumes are $4\\pi/81$ and $1/\\pi$, with exactly the adjacent two types minimizing at each transition.",
+   "doc": "lean/docs/354.md",
+   "manuscripts": [
+    {
+     "title": "The Isoperimetric Conjecture for the Cubic Flat Three-Torus",
+     "path": "preprints/The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026/article.pdf",
+     "note": "",
+     "abstract": "We prove the isoperimetric conjecture for the cubic flat three-torus and classify all minimizers, including the equality cases at the transition volumes $4\\pi/81$ and $1/\\pi$. The minimizing regions are balls, circular tubes about shortest closed geodesics, coordinate slabs, and their complements."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/354.md",
+    "title": "The isoperimetric profile of the cubic three-torus",
+    "papers": [
+     "preprints/The-Isoperimetric-Conjecture-for-the-Cubic-Flat-Three-Torus-September-24-2026/article.pdf"
+    ],
+    "scope": "The formalization determines the isoperimetric profile and all minimizers in the unit cubic flat three-torus. At every volume $0<V<1$, a minimizer exists, and the minimizers, up to null-set changes, are exactly balls, circular tubes about shortest closed geodesics, coordinate slabs, and their complements in the appropriate volume ranges.\n\nThe classification includes all equality cases at the transition volumes $4\\pi/81$ and $1/\\pi$, and every minimizer has the stated candidate-profile perimeter.",
+    "results": [
+     {
+      "label": "Isoperimetric profile and all minimizers in the cubic flat three-torus",
+      "challenge": "lean/ComparatorChallenges/CubicTorus.lean",
+      "config": "lean/ComparatorChallenges/CubicTorus.json",
+      "main": false,
+      "statements": [
+       {
+        "name": "OAI.CubicTorus.unit_cubic_isoperimetric",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 88,
+        "statement": "theorem unit_cubic_isoperimetric (V : ℝ) (hV : V ∈ Ioo 0 1) :\n    (∃ E : Set Torus, IsMinimizerAt V E) ∧\n    (∀ E : Set Torus, IsMinimizerAt V E →\n      perimeter E = ENNReal.ofReal (candidateProfile V)) ∧\n    (∀ E : Set Torus, IsMinimizerAt V E ↔ StandardRegionAt V E)",
+        "proof": {
+         "file": "lean/OAI/Geometry/CubicTorus/Main.lean",
+         "line": 1103,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Geometry/CubicTorus/Main.lean",
+        "main": false
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "355",
+   "title": "Unique tangent flows at the first surface singularity",
+   "description": "Proves the first-singular-time case of tangent-flow uniqueness for smooth compact connected embedded surfaces without boundary in ℝ$^{3}$. At every singular point, all fixed-center backward tangent flows agree as area measures at every negative time in the original ambient coordinates, without mean-convexity or a prescribed tangent model.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "Uniqueness of tangent flows at the first singular time of embedded surface mean-curvature flow",
+     "path": "preprints/Tangent-flow-uniqueness-2026-09-24/paper.pdf",
+     "note": "",
+     "abstract": "We prove that, at each singular point of the first singular time of the mean-curvature flow of a smooth compact connected embedded surface without boundary in ℝ$^{3}$, all fixed-center rescalings converge locally smoothly on compact negative-time intervals to one multiplicity-one homothetic self-shrinker flow. The limit is unique in the original ambient coordinates, including its position and axes. No mean-convexity assumption or prescribed tangent model is required."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "356",
+   "title": "Gigli’s characterization of Alexandrov curvature",
+   "description": "Proves Gigli's conjecture: in every integer dimension *n* ≥ 2, Alexandrov curvature at least *κ* is characterized by the full-support $\\mathop{\\mathrm{RCD}}\\nolimits ((n-1)\\kappa,n)$ condition with reference measure $\\mathcal H^n$ and distributional sectional curvature at least *κ* in the original global test classes. The RCD condition is unreduced.",
+   "doc": "lean/docs/356.md",
+   "manuscripts": [
+    {
+     "title": "Gigli’s distributional curvature characterization of Alexandrov spaces",
+     "path": "preprints/Giglis-distributional-curvature-characterization-of-Alexandrov-spaces-September-24-2026/main.pdf",
+     "note": "",
+     "abstract": "For every integer *n* ≥ 2 and *κ* ∈ ℝ, we prove that a complete separable metric space is an *n*-dimensional Alexandrov space of curvature at least *κ* if and only if, with reference measure $\\mathcal H^n$, it is a full-support $\\mathrm{RCD}((n-1)\\kappa,n)$ space whose distributional sectional curvature is at least *κ* in Gigli's original global test classes. This resolves Gigli's characterization conjecture in dimensions at least two."
+    },
+    {
+     "title": "Weak Hessian bounds along every geodesic in RCD spaces",
+     "path": "preprints/Weak-Hessian-bounds-along-every-geodesic-in-RCD-spaces-September-24-2026/weak-hessian-geodesics.pdf",
+     "note": "",
+     "abstract": "On a full-support $\\mathrm{RCD}(K,N)$ space with $1\\lt N\\lt \\infty$, we prove that a bounded globally Lipschitz function whose distributional Hessian is bounded above by a bounded continuous function satisfies the corresponding second-derivative inequality along every minimizing geodesic."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/356.md",
+    "title": "Gigli’s characterization of Alexandrov curvature",
+    "papers": [
+     "preprints/Weak-Hessian-bounds-along-every-geodesic-in-RCD-spaces-September-24-2026/weak-hessian-geodesics.pdf"
+    ],
+    "scope": "The formalization transfers a weak Hessian upper bound to every prescribed minimizing geodesic in an $\\mathrm{RCD}(K,N)$ space with finite $N>1$. If a bounded globally Lipschitz function $F$ has weak Hessian bounded above by $G$ times the metric, where $G$ is bounded and continuous, then every constant-speed geodesic $\\gamma:[0,1]\\to X$ satisfies $(F\\circ\\gamma)''\\le G(\\gamma)\\,d(\\gamma(0),\\gamma(1))^2$ in the distributional sense. Constant geodesics are included. The space is complete and separable with full support and measure finite on bounded sets; compactness and metric nonbranching are not assumed.",
+    "results": [
+     {
+      "label": "Weak Hessian bounds along every geodesic",
+      "challenge": "lean/ComparatorChallenges/WeakHessian.lean",
+      "config": "lean/ComparatorChallenges/WeakHessian.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.WeakHessian.every_geodesic",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 220,
+        "statement": "theorem every_geodesic [CompleteSpace X] [TopologicalSpace.SeparableSpace X]\n    (m : Measure X) (K N : ℝ) (hN : 1 < N)\n    (hfull : FullSupport m) (hfinite : FiniteOnBoundedSets m) (hrcd : RCD m K N)\n    (F G : X → ℝ) (hFbound : BoundedFunction F) (hFlip : GloballyLipschitz F)\n    (hGbound : BoundedFunction G) (hGcont : Continuous G)\n    (hHess : WeakHessianUpperBound m F G)\n    (σ : Curve X) (hσ : IsGeodesic σ) : CurveSecondDerivativeBound F G σ",
+        "proof": {
+         "file": "lean/OAI/Geometry/WeakHessian/Main.lean",
+         "line": 38,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Geometry/WeakHessian/Main.lean",
+        "main": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "357",
+   "title": "Bi-Lipschitz coordinates at every regular RCD point",
+   "description": "Proves that every regular point of a noncollapsed $\\mathop{\\mathrm{RCD}}\\nolimits (K,n)$ space, for *K* ∈ ℝ and integer *n* ≥ 2, has an open neighborhood bi-Lipschitz to an open subset of ℝ$^{n}$. Regularity requires all pointed tangents to be Euclidean, the reference measure is exactly $\\mathcal H^n$, and the chart compares ambient distances with a point-dependent finite constant.",
+   "doc": null,
+   "manuscripts": [
+    {
+     "title": "Bi-Lipschitz Coordinates at Regular Points of Noncollapsed RCD Spaces",
+     "path": "preprints/Bi-Lipschitz-Coordinates-at-Regular-Points-of-Noncollapsed-RCD-Spaces-September-25-2026/paper.pdf",
+     "note": "",
+     "abstract": "We resolve the regular-point bi-Lipschitz conjecture in the noncollapsed setting. For every integer *n* ≥ 2 and every real *K*, every regular point of a noncollapsed $\\mathrm{RCD}(K,n)$ space has an open neighborhood bi-Lipschitz homeomorphic to an open subset of ℝ$^{n}$. The bi-Lipschitz constant depends only on *n*, and the neighborhood uses the restricted ambient distance."
+    }
+   ],
+   "lean": null
+  },
+  {
+   "number": "358",
+   "title": "A three-manifold without conjugate points or nonpositive curvature",
+   "description": "Constructs a closed connected orientable smooth three-manifold that admits a metric without conjugate points but no metric of nonpositive sectional curvature. This answers negatively, already in dimension three, whether the first metric-existence property implies the second.",
+   "doc": "lean/docs/358.md",
+   "manuscripts": [
+    {
+     "title": "A Three-Manifold Without Conjugate Points and Without a Nonpositively Curved Metric",
+     "path": "preprints/A-Three-Manifold-Without-Conjugate-Points-and-Without-a-Nonpositively-Curved-Metric-September-24-2026/paper.pdf",
+     "note": "",
+     "abstract": "We construct a closed connected orientable smooth three-manifold that admits a smooth Riemannian metric without conjugate points but admits no smooth Riemannian metric of nonpositive sectional curvature."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/358.md",
+    "title": "A three-manifold without conjugate points or nonpositive curvature",
+    "papers": [
+     "preprints/A-Three-Manifold-Without-Conjugate-Points-and-Without-a-Nonpositively-Curved-Metric-September-24-2026/paper.pdf"
+    ],
+    "scope": "The formalized result separates absence of conjugate points from nonpositive sectional curvature. It constructs a closed connected orientable smooth three-manifold with a smooth Riemannian metric having no conjugate points, while the same manifold admits no smooth metric of everywhere nonpositive sectional curvature. The no-conjugate-points assertion ranges over all geodesics and tangent-bundle Jacobi fields, including constant geodesics and unbounded time intervals. The separate no-focal-points and CAT(0) consequences are not included.",
+    "results": [
+     {
+      "label": "No conjugate points without a nonpositively curved metric",
+      "challenge": "lean/ComparatorChallenges/ConjugatePoints.lean",
+      "config": "lean/ComparatorChallenges/ConjugatePoints.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.ThreeManifold.main_theorem",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 109,
+        "statement": "theorem main_theorem : MainStatement",
+        "proof": {
+         "file": "lean/OAI/Geometry/ConjugatePoints/ThreeManifold.lean",
+         "line": 260,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Geometry/ConjugatePoints/ThreeManifold.lean",
+        "main": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "359",
+   "title": "Negative Kähler curvature without bounded holomorphic coordinates",
+   "description": "Constructs a contractible domain in ℂ$^{3}$ with a complete negatively pinched Kähler metric but no bounded holomorphic coordinates, disproving bounded-domain uniformization in this setting. A higher-dimensional example has sectional curvature at most −1 and only constant bounded holomorphic functions; its curvature is not bounded below.",
+   "doc": "lean/docs/359.md",
+   "manuscripts": [
+    {
+     "title": "A negatively pinched Kähler threefold without bounded holomorphic coordinates",
+     "path": "preprints/A-negatively-pinched-Kahler-threefold-without-bounded-holomorphic-coordinates-September-25-2026/paper.pdf",
+     "note": "",
+     "abstract": "We construct a contractible domain in complex dimension three with a complete Kähler metric whose real sectional curvatures lie between two finite negative constants. It admits no bounded holomorphic map to ℂ$^{3}$ with nowhere-vanishing Jacobian and is therefore not biholomorphic to a bounded domain. This gives a negative answer to the negatively pinched Kähler uniformization question."
+    },
+    {
+     "title": "One-sided negative sectional curvature and the holomorphic Liouville property",
+     "path": "preprints/One-sided-negative-sectional-curvature-and-the-holomorphic-Liouville-property-September-25-2026/paper.pdf",
+     "note": "",
+     "abstract": "We construct, in some sufficiently large fixed finite complex dimension *m*, a domain in ℂ$^{m}$ diffeomorphic to $\\mathbb R^{2m}$ that admits a complete Kähler metric with real sectional curvature at most −1 and has only constant bounded holomorphic functions. Its sectional curvatures are unbounded below. The construction gives a negative answer to the one-sided bounded-holomorphic-function question."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/359.md",
+    "title": "Negative Kähler curvature without bounded holomorphic coordinates",
+    "papers": [
+     "preprints/A-negatively-pinched-Kahler-threefold-without-bounded-holomorphic-coordinates-September-25-2026/paper.pdf"
+    ],
+    "scope": "The formalized result constructs a nonempty contractible complex threefold with a complete Kähler metric whose real sectional curvatures lie between two fixed negative constants. Nevertheless, it has no system of bounded holomorphic coordinates and is not biholomorphic to a bounded domain. The metric is obtained from an explicitly controlled potential. This is the negatively pinched construction; the different companion with only one-sided curvature control is separate.",
+    "results": [
+     {
+      "label": "Negatively pinched Kähler threefold without bounded coordinates",
+      "challenge": "lean/ComparatorChallenges/PinchedKahler.lean",
+      "config": "lean/ComparatorChallenges/PinchedKahler.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.PinchedHartogs.main_theorem",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 146,
+        "statement": "theorem main_theorem : MainTheorem",
+        "proof": {
+         "file": "lean/OAI/Geometry/Kahler/Main.lean",
+         "line": 38,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Geometry/Kahler/Main.lean",
+        "main": true
+       },
+       {
+        "name": "OAI.PinchedHartogs.controlled_potential",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 149,
+        "statement": "theorem controlled_potential : ControlledPotential",
+        "proof": {
+         "file": "lean/OAI/Geometry/Kahler/Main.lean",
+         "line": 23,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Geometry/Kahler/Main.lean",
+        "main": false
+       },
+       {
+        "name": "OAI.PinchedHartogs.metric_transfer",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 152,
+        "statement": "theorem metric_transfer : MetricTransfer",
+        "proof": {
+         "file": "lean/OAI/Geometry/Kahler/HartogsTransfer.lean",
+         "line": 22,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Geometry/Kahler/Main.lean",
+        "main": false
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "360",
+   "title": "Weak MTW curvature gives convexity and regular optimal transport",
+   "description": "On every closed connected Riemannian manifold of dimension at least two satisfying weak Ma–Trudinger–Wang curvature, all tangent injectivity domains are convex, resolving Villani’s conjecture in this setting. For squared-distance transport between measurable probability densities bounded above and away from zero, the optimal map and its inverse are Hölder continuous.",
+   "doc": "lean/docs/360.md",
+   "manuscripts": [
+    {
+     "title": "Global Support and Convex Injectivity Domains under Weak MTW",
+     "path": "preprints/Global-Support-and-Convex-Injectivity-Domains-under-Weak-MTW-September-25-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove that weak Ma–Trudinger–Wang curvature on a smooth, connected, compact Riemannian manifold of dimension at least two without boundary implies convexity of every tangent injectivity domain, resolving Villani's conjecture in this setting. Conjugate cut points are allowed. More generally, every ordinary subgradient of a squared-distance cost potential is a minimizing velocity with a global supporting mountain. No density hypothesis is used."
+    },
+    {
+     "title": "Uniform Bi-Holder Transport from Weak MTW",
+     "path": "preprints/Uniform-Bi-Holder-Transport-from-Weak-MTW-September-25-2026/paper.pdf",
+     "note": "",
+     "abstract": "We prove that the weak Ma–Trudinger–Wang condition on a fixed smooth connected compact boundaryless Riemannian manifold of dimension at least two implies a common Hölder estimate for optimal transport maps and their inverses over the entire class of probability densities with fixed positive upper and lower bounds. The maps have homeomorphic representatives, conjugate cut points are allowed, and no density regularity is assumed."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/360.md",
+    "title": "Weak MTW curvature gives convexity and regular optimal transport",
+    "papers": [
+     "preprints/Global-Support-and-Convex-Injectivity-Domains-under-Weak-MTW-September-25-2026/paper.pdf",
+     "preprints/Uniform-Bi-Holder-Transport-from-Weak-MTW-September-25-2026/paper.pdf"
+    ],
+    "scope": "On a compact connected smooth Riemannian manifold of dimension at least two, the formalized result proves that weak MTW curvature implies convexity of every open tangent injectivity domain. Prior convexity or nonfocality is not assumed. Additional formalized results give global support at ordinary subgradients, compact convex lifted gap sections with the stated diameter bound, and scale and local-injectivity estimates for finite target families. The latter finite-family result does not cover the paper's arbitrary-potential local-injectivity assertion.\n\nThe formalized result gives uniform bi-Hölder optimal transport for squared-distance cost on each fixed compact connected smooth Riemannian manifold of dimension at least two satisfying weak MTW. For probability densities between fixed positive lower and finite upper bounds, one exponent and constant work for every pair of densities. The optimal map is a homeomorphism, is unique almost everywhere, and both it and its inverse satisfy the global Hölder bound. The constants are uniform over the density class on the fixed manifold, not over varying metrics.",
+    "results": [
+     {
+      "label": "Convex injectivity domains under weak MTW",
+      "challenge": "lean/ComparatorChallenges/WeakMTWGlobalSupport.lean",
+      "config": "lean/ComparatorChallenges/WeakMTWGlobalSupport.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.WeakMTWGlobalSupport.current_main_convexity",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 63,
+        "statement": "theorem current_main_convexity\n    {n : ℕ} (hn : 2 ≤ n) {M : Type*}\n    [MetricSpace M] [ChartedSpace (WeakMTW.Model n) M]\n    [IsManifold (WeakMTW.model n) ∞ M]\n    [CompactSpace M] [ConnectedSpace M]\n    [RiemannianBundle (fun x : M => TangentSpace (WeakMTW.model n) x)]\n    [IsContMDiffRiemannianBundle (WeakMTW.model n) ∞ (WeakMTW.Model n)\n      (fun x : M => TangentSpace (WeakMTW.model n) x)]\n    [IsRiemannianManifold (WeakMTW.model n) M]\n    (hmtw : WeakMTW.HasWeakMTW (n := n) (M := M)) :\n    WeakMTW.MainConvexity (n := n) (M := M)",
+        "proof": {
+         "file": "lean/OAI/Geometry/WeakMTW/Convexity.lean",
+         "line": 65,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Geometry/WeakMTW/Main.lean",
+        "main": true
+       }
+      ]
+     },
+     {
+      "label": "Uniform bi-Hölder optimal transport",
+      "challenge": "lean/ComparatorChallenges/BiholderTransport.lean",
+      "config": "lean/ComparatorChallenges/BiholderTransport.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.WeakMTWTransport.uniform_biHolder_transport",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 100,
+        "statement": "theorem uniform_biHolder_transport\n    {n : ℕ} (hn : 2 ≤ n) {M : Type*}\n    [MetricSpace M] [CompactSpace M] [ConnectedSpace M]\n    [ChartedSpace (Model n) M] [IsManifold 𝓘(ℝ, Model n) ∞ M]\n    [RiemannianBundle (fun x : M => TangentSpace 𝓘(ℝ, Model n) x)]\n    [IsContMDiffRiemannianBundle 𝓘(ℝ, Model n) ∞ (Model n)\n      (fun x : M => TangentSpace 𝓘(ℝ, Model n) x)]\n    [IsRiemannianManifold 𝓘(ℝ, Model n) M]\n    [MeasurableSpace M] [BorelSpace M]\n    (hmtw : WeakMTW (n := n) (M := M))\n    (lam cap : ℝ) (hlam : 0 < lam) (hcap : lam ≤ cap)\n    (hclass : ∃ rho : M → ℝ, AdmissibleDensity (metricVolume n) lam cap rho) :\n    ∃ alpha C : ℝ, 0 < alpha ∧ alpha ≤ 1 ∧ 0 ≤ C ∧\n      ∀ rho0 rho1 : M → ℝ,\n        AdmissibleDensity (metricVolume n) lam cap rho0 →\n        AdmissibleDensity (metricVolume n) lam cap rho1 →\n        ∃ T : M ≃ₜ M,\n          IsOptimalMap (metricVolume n) rho0 rho1 T ∧\n          (∀ S : M → M, IsOptimalMap (metricVolume n) rho0 rho1 S →\n            S =ᵐ[densityMeasure (metricVolume n) rho0] T) ∧\n          BiHolderEstimate alpha C T",
+        "proof": {
+         "file": "lean/OAI/Analysis/BiholderTransport/Main.lean",
+         "line": 27,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Analysis/BiholderTransport/Main.lean",
+        "main": true
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "number": "361",
+   "title": "Failure of integer-degree harmonic dimension comparison",
+   "description": "Disproves Yau's proposed Euclidean dimension bound for harmonic functions of integer growth on manifolds with nonnegative Ricci curvature. For every sufficiently large integer *k*, a complete smooth metric on ℝ$^{3}$ has at least $(k+2)^2$ independent harmonic functions of growth at most *k*, exceeding the Euclidean count $(k+1)^2$. The metric may depend on *k*.",
+   "doc": "lean/docs/361.md",
+   "manuscripts": [
+    {
+     "title": "A counterexample to integer-degree harmonic dimension comparison",
+     "path": "preprints/A-counterexample-to-integer-degree-harmonic-dimension-comparison-September-25-2026/paper.pdf",
+     "note": "",
+     "abstract": "For some even *n* ≥ 8 and integer *k* ≥ 2, we construct a complete smooth metric on ℝ$^{n}$ with nonnegative Ricci curvature whose space of real harmonic functions of pointwise polynomial growth at most *k* has dimension larger than the Euclidean harmonic-polynomial dimension. The metric is Euclidean near the origin, has asymptotic volume ratio strictly between zero and one, and has nonunique tangent cones at infinity. This answers the integer-degree form of Yau's dimension comparison question in the negative."
+    },
+    {
+     "title": "A Three-Dimensional Counterexample to Integer-Degree Harmonic Dimension Comparison",
+     "path": "preprints/A-Three-Dimensional-Counterexample-to-Integer-Degree-Harmonic-Dimension-Comparison-September-26-2026/paper.pdf",
+     "note": "",
+     "abstract": "For every $4/9\\lt v\\lt 1$ and $1\\lt c\\lt 9v/4$, all sufficiently large integers *k* admit a complete smooth metric on ℝ$^{3}$ with nonnegative Ricci curvature, asymptotic volume ratio *v*, and at least $c(k+1)^2$ linearly independent real harmonic functions of pointwise growth at most *k*. This answers Yau's integer-degree dimension comparison question negatively in dimension three, with a fixed-factor excess over the Euclidean count. For each $1\\lt c\\lt 9/4$, these metrics can be chosen arbitrarily close to the Euclidean metric in global bi-Lipschitz distance. The metric may depend on *k*."
+    }
+   ],
+   "lean": {
+    "path": "lean/docs/361.md",
+    "title": "Failure of integer-degree harmonic dimension comparison",
+    "papers": [
+     "preprints/A-counterexample-to-integer-degree-harmonic-dimension-comparison-September-25-2026/paper.pdf"
+    ],
+    "scope": "The formalized result disproves the proposed Euclidean upper comparison for dimensions of harmonic functions with integer polynomial growth. It constructs one complete smooth metric with nonnegative Ricci curvature on an even-dimensional Euclidean space, Euclidean near the origin and with asymptotic volume ratio strictly between zero and one, admitting more independent harmonic functions of the prescribed growth degree than the Euclidean count. The construction uses dimension $16$ and degree $50000$. Separate tangent-cone and cone-spectrum conclusions are not included.",
+    "results": [
+     {
+      "label": "Counterexample to harmonic dimension comparison",
+      "challenge": "lean/ComparatorChallenges/HarmonicGrowth.lean",
+      "config": "lean/ComparatorChallenges/HarmonicGrowth.json",
+      "main": true,
+      "statements": [
+       {
+        "name": "OAI.HarmonicCounterexample.main",
+        "role": "theorem",
+        "kind": "theorem",
+        "line": 98,
+        "statement": "theorem main : MainClaim",
+        "proof": {
+         "file": "lean/OAI/Geometry/HarmonicGrowth/Main.lean",
+         "line": 475,
+         "kind": "theorem",
+         "sorry": false
+        },
+        "module": "lean/OAI/Geometry/HarmonicGrowth/Main.lean",
+        "main": true
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}
