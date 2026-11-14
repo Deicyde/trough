@@ -297,7 +297,7 @@ def generate() -> dict[Path, str]:
             previous = host.path.read_text(encoding="utf-8") if host.path.is_file() else None
             files[host.path] = render_container(host, VAULT, previous, not host.path.is_relative_to(ROADMAP / "mathlib"))
         boxes = ", ".join(f"[{page.title}](../roadmap/{page.path.relative_to(ROADMAP).as_posix()})"
-                          for _, page, _ in pages if page is not None)
+                          for _, page, _ in pages if page is not None and page.children)
         blueprint_rows.append((
             "Satellite projects", "DECOMPOSED",
             f"{sat_stats['cards']} project cards, each in a projects box on the page of the library it builds on "

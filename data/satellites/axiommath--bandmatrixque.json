@@ -52,90 +52,13 @@
  "declarations": 56396,
  "sorry_files": 3,
  "axioms": 0,
- "closure_files": 614,
+ "closure_files": 0,
  "closure_sorry": [],
  "closure_axioms": 0,
  "unclosed_files": 0,
- "headline_rule": "main",
- "headline_count": 214,
- "headlines": [
-  {
-   "name": "BlockBand.Critical.BoundaryMean.exactBoundaryMean_of_inputs",
-   "module": "BlockBand.Critical.BoundaryMean.Main",
-   "file": "BlockBand/Critical/BoundaryMean/Main.lean",
-   "line": 34,
-   "kind": "theorem",
-   "sorry": false,
-   "names": []
-  },
-  {
-   "name": "BlockBand.Critical.Herglotz.herglotzTail",
-   "module": "BlockBand.Critical.Herglotz.Main",
-   "file": "BlockBand/Critical/Herglotz/Main.lean",
-   "line": 38,
-   "kind": "theorem",
-   "sorry": false,
-   "names": []
-  },
-  {
-   "name": "BlockBand.Critical.MatrixClosing.middle_error_arith",
-   "module": "BlockBand.Critical.MatrixClosing.MiddleShift.Main",
-   "file": "BlockBand/Critical/MatrixClosing/MiddleShift/Main.lean",
-   "line": 30,
-   "kind": "theorem",
-   "sorry": false,
-   "names": []
-  },
-  {
-   "name": "BlockBand.Critical.MatrixClosing.mem_bulkInterval_half",
-   "module": "BlockBand.Critical.MatrixClosing.MiddleShift.Main",
-   "file": "BlockBand/Critical/MatrixClosing/MiddleShift/Main.lean",
-   "line": 100,
-   "kind": "theorem",
-   "sorry": false,
-   "names": []
-  },
-  {
-   "name": "BlockBand.Critical.MatrixClosing.bulkInterval_mono_half",
-   "module": "BlockBand.Critical.MatrixClosing.MiddleShift.Main",
-   "file": "BlockBand/Critical/MatrixClosing/MiddleShift/Main.lean",
-   "line": 106,
-   "kind": "theorem",
-   "sorry": false,
-   "names": []
-  },
-  {
-   "name": "BlockBand.Critical.MatrixClosing.strictMiddle_of_exactBoundaryMean",
-   "module": "BlockBand.Critical.MatrixClosing.MiddleShift.Main",
-   "file": "BlockBand/Critical/MatrixClosing/MiddleShift/Main.lean",
-   "line": 112,
-   "kind": "theorem",
-   "sorry": false,
-   "names": [
-    "Filter.Tendsto"
-   ]
-  },
-  {
-   "name": "BlockBand.Critical.MatrixClosing.middleKernel_radial",
-   "module": "BlockBand.Critical.MatrixClosing.MiddleShift.Main",
-   "file": "BlockBand/Critical/MatrixClosing/MiddleShift/Main.lean",
-   "line": 287,
-   "kind": "theorem",
-   "sorry": false,
-   "names": [
-    "Matrix"
-   ]
-  },
-  {
-   "name": "BlockBand.Critical.MatrixClosing.middleShiftBoundaryMean_of_exactBoundaryMean",
-   "module": "BlockBand.Critical.MatrixClosing.MiddleShift.Main",
-   "file": "BlockBand/Critical/MatrixClosing/MiddleShift/Main.lean",
-   "line": 299,
-   "kind": "theorem",
-   "sorry": false,
-   "names": []
-  }
- ],
+ "headline_rule": null,
+ "headline_count": 0,
+ "headlines": [],
  "mathlib_imports": {
   "Mathlib.Algebra.BigOperators.Fin": 1,
   "Mathlib.Algebra.BigOperators.Intervals": 2,
