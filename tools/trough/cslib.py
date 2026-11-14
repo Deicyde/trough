@@ -45,7 +45,9 @@ LIST_ITEM = re.compile(r"^[ \t]*(?:[-*+]|\d+[.)])[ \t]")
 PLAN_SENTENCE = re.compile(r"would be welcome|\bwe plan\b|reserved for future work|future work on|future design work|"
                            r"\bwill follow\b", re.I)
 UPSTREAMING = re.compile(r"should be upstreamed", re.I)
-SENTENCE = re.compile(r"(?<=[.!?])\s+")
+# Where a sentence ends: after its full stop, or before a list item, so that a list whose items have no full stops is
+# not one sentence.
+SENTENCE = re.compile(r"(?<=[.!?])\s+|\n(?=[ \t]*(?:[-*+]|\d+[.)])[ \t])")
 CUT = "\x00"  # where without_plans() cut, until it writes …
 # Definitions whose whole text is shown: their fields or constructors say what they are.
 WHOLE = ("structure", "class", "inductive")
@@ -54,8 +56,9 @@ WHOLE = ("structure", "class", "inductive")
 def without_plans(markdown: str) -> str:
     """The Markdown without what it says of plans and TODOs, each cut marked with …: a section headed plans, future
     work, TODO(s) or roadmap, up to the next heading of its level or above; a TODO, from where it stands to the end of
-    its paragraph (a blank line, a heading or the next list item); a sentence that plans or invites future work; a
-    paragraph saying code should be upstreamed; and a heading left with nothing but cuts under it."""
+    its paragraph (a blank line, a heading or the next list item); a sentence or list item that plans or invites future
+    work, with the list it introduces when it ends in a colon; a paragraph saying code should be upstreamed; and a
+    heading left with nothing but cuts under it."""
     out: list[str] = []
     skipping: int | None = None
     cutting = fence = False
@@ -98,7 +101,14 @@ def without_plans(markdown: str) -> str:
         elif PLAN_SENTENCE.search(paragraph):
             pieces = SENTENCE.split(paragraph)
             separators = SENTENCE.findall(paragraph)
-            kept = [CUT if PLAN_SENTENCE.search(piece) else piece for piece in pieces]
+            kept, lead_in = [], False
+            for piece in pieces:
+                # A cut lead-in, a sentence ending in a colon, takes the list it introduces with it.
+                if lead_in or PLAN_SENTENCE.search(piece):
+                    kept.append(CUT)
+                    lead_in = lead_in or (not LIST_ITEM.match(piece) and piece.rstrip().endswith(":"))
+                else:
+                    kept.append(piece)
             paragraphs[index] = "".join(piece + (separators[number] if number < len(separators) else "")
                                         for number, piece in enumerate(kept))
     text = drop_empty_headings("".join(paragraphs))
@@ -107,7 +117,7 @@ def without_plans(markdown: str) -> str:
 
 
 def drop_empty_headings(text: str) -> str:
-    """The text without a heading whose section, up to the next heading, holds only cuts."""
+    """The text without a heading whose section, up to the next heading of its level or above, holds only cuts."""
     lines = text.split("\n")
     kept: list[str] = []
     dropped = False
@@ -115,12 +125,15 @@ def drop_empty_headings(text: str) -> str:
         if dropped and not line.strip():
             continue
         dropped = False
-        if HEADING.match(line):
+        heading = HEADING.match(line)
+        if heading:
             section = []
             for later in lines[index + 1:]:
-                if HEADING.match(later):
+                inner = HEADING.match(later)
+                if inner and len(inner.group(1)) <= len(heading.group(1)):
                     break
-                section.append(later)
+                if not inner:
+                    section.append(later)
             if CUT in "".join(section) and not "".join(section).replace(CUT, "").strip():
                 dropped = True
                 continue

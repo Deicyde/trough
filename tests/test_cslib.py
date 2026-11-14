@@ -323,6 +323,24 @@ def test_todo_notes_and_plans_in_cslibs_docstrings_are_cut():
         "Kept.\n\n…\n\n## Next\n\nText.")
 
 
+def test_a_plan_in_a_list_item_cuts_that_item_and_a_plan_lead_in_its_list():
+    # A list with no full stops is not one sentence: only the item that plans goes.
+    assert cslib.without_plans("Notes:\n- `a` is defined here\n- a faster `a` would be welcome") == (
+        "Notes:\n- `a` is defined here\n…")
+    assert cslib.without_plans("- `a` is defined\n- `b` is defined\n- `c` will follow") == (
+        "- `a` is defined\n- `b` is defined\n…")
+    # A lead-in that invites work takes the items it introduces.
+    assert cslib.without_plans("Further results would be welcome:\n- a\n- b") == "…"
+
+
+def test_a_heading_stays_while_a_subsection_under_it_has_text():
+    text = "# Title\n\n## Main results\n\n### TODO\n\n- More.\n\n### Theorems\n\n- `foo`: a theorem."
+    assert cslib.without_plans(text) == "# Title\n\n## Main results\n\n…\n### Theorems\n\n- `foo`: a theorem."
+    # It goes when every subsection under it is cut.
+    assert cslib.without_plans("# Title\n\n## Later\n\n### TODO\n\n- More.\n\n## Next\n\nText.") == (
+        "# Title\n\n…\n## Next\n\nText.")
+
+
 def test_the_header_names_the_copyright_holders_and_the_authors():
     assert cslib.header(LTS) == {"copyright": "Fabrizio Montesi",
                                  "authors": "Fabrizio Montesi, Thomas Waring, Chris Henson"}
