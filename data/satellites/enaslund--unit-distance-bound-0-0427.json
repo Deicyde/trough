@@ -73,9 +73,12 @@
  "declarations": 30524,
  "sorry_files": 2,
  "axioms": 0,
+ "closure_files": 2316,
+ "closure_sorry": [],
+ "closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": "readme",
- "headline_count": 5,
+ "headline_count": 1,
  "headlines": [
   {
    "name": "UnitDistance.Sqrt241.V2.target_of_wide_zeta_bound",
@@ -87,42 +90,6 @@
    "names": [
     "Real.log"
    ]
-  },
-  {
-   "name": "UnitDistance.Sqrt241.Discriminant.Dyadic.Realization.u",
-   "module": "UnitDistance.Sqrt241.Discriminant.Dyadic",
-   "file": "lean/UnitDistance/Sqrt241/Discriminant/Dyadic.lean",
-   "line": 95,
-   "kind": "def",
-   "sorry": false,
-   "names": []
-  },
-  {
-   "name": "UnitDistance.Sqrt241.CanonicalGenus.radicandA",
-   "module": "UnitDistance.Sqrt241.CanonicalGenus",
-   "file": "lean/UnitDistance/Sqrt241/CanonicalGenus.lean",
-   "line": 46,
-   "kind": "def",
-   "sorry": false,
-   "names": []
-  },
-  {
-   "name": "UnitDistance.Sqrt241.CanonicalGenus.radicandB",
-   "module": "UnitDistance.Sqrt241.CanonicalGenus",
-   "file": "lean/UnitDistance/Sqrt241/CanonicalGenus.lean",
-   "line": 48,
-   "kind": "def",
-   "sorry": false,
-   "names": []
-  },
-  {
-   "name": "UnitDistance.Sqrt241.CanonicalWide.wideRadicand",
-   "module": "UnitDistance.Sqrt241.CanonicalWide",
-   "file": "lean/UnitDistance/Sqrt241/CanonicalWide.lean",
-   "line": 46,
-   "kind": "def",
-   "sorry": false,
-   "names": []
   }
  ],
  "mathlib_imports": {

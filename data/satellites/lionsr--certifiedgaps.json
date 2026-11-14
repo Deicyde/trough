@@ -69,6 +69,12 @@
  "declarations": 3288,
  "sorry_files": 9,
  "axioms": 0,
+ "closure_files": 59,
+ "closure_sorry": [
+  "code/lean/CertifiedGaps/Heisenberg/Main.lean",
+  "code/lean/CertifiedGaps/Models/SpinOneLargeD.lean"
+ ],
+ "closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": "blueprint",
  "headline_count": 47,

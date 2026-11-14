@@ -59,9 +59,12 @@
  "declarations": 7769,
  "sorry_files": 6,
  "axioms": 0,
+ "closure_files": 3,
+ "closure_sorry": [],
+ "closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": "readme",
- "headline_count": 2,
+ "headline_count": 1,
  "headlines": [
   {
    "name": "Usa2007P3.main",
@@ -75,15 +78,6 @@
     "Set",
     "main"
    ]
-  },
-  {
-   "name": "ProblemExtraction.extractProblems",
-   "module": "ProblemExtraction.Core",
-   "file": "ProblemExtraction/Core.lean",
-   "line": 203,
-   "kind": "def",
-   "sorry": false,
-   "names": []
   }
  ],
  "mathlib_imports": {

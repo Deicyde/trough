@@ -79,9 +79,12 @@
  "declarations": 2121,
  "sorry_files": 0,
  "axioms": 0,
+ "closure_files": 80,
+ "closure_sorry": [],
+ "closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": "readme",
- "headline_count": 4,
+ "headline_count": 3,
  "headlines": [
   {
    "name": "BBTheorems.bb5_literature",
@@ -107,15 +110,6 @@
    "file": "Busybeaver/Enumerate/Alg.lean",
    "line": 1014,
    "kind": "theorem",
-   "sorry": false,
-   "names": []
-  },
-  {
-   "name": "TM.Busybeaver.BBCompute",
-   "module": "Busybeaver.Enumerate.Alg",
-   "file": "Busybeaver/Enumerate/Alg.lean",
-   "line": 277,
-   "kind": "def",
    "sorry": false,
    "names": []
   }

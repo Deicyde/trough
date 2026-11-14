@@ -14,3 +14,4 @@
 - [Transcendental numbers](transcendental-numbers/README.md)
 - [Algebraic Number Theory](algebraic-number-theory/README.md)
 - [Representation theory](representation-theory/README.md)
+- [Projects building on General algebra (2)](projects/README.md)

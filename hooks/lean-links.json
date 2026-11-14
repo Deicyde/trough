@@ -51658,6 +51658,13 @@
   "unitDistNum_le_choose_two": "https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/Geometry/Metric.lean#L69",
   "unramified_pth_root_in_base_of_prime_spans_maximal_ideal": "https://github.com/Deicyde/atlas-lean/blob/035e1808ca0c8983682b74153a02628d616d77ce/MathlibExt/RingTheory/DiscreteValuationRing/CyclotomicRamification.lean#L217"
  },
+ "mathlib/overview/general-algebra/projects": {
+  "JPoints.Double.lt_nextUp_and_nextDown_lt_ofDyadic": "https://github.com/MichaelStollBayreuth/JPointsLean/blob/1152475138ed5b78d6a294f0bc7aa88417b15ef8/JPoints/Proof/Rounding.lean#L560",
+  "JPoints.Double.lt_nextUp_and_nextDown_lt_ofRatio": "https://github.com/MichaelStollBayreuth/JPointsLean/blob/1152475138ed5b78d6a294f0bc7aa88417b15ef8/JPoints/Proof/Rounding.lean#L518",
+  "JPoints.Program.exists_run_eq_of_readInput_eq_ok_of_quiet_eq_false": "https://github.com/MichaelStollBayreuth/JPointsLean/blob/1152475138ed5b78d6a294f0bc7aa88417b15ef8/JPoints/Proof/Main.lean#L258",
+  "JPoints.Program.mem_iff_isPoint_of_run_eq": "https://github.com/MichaelStollBayreuth/JPointsLean/blob/1152475138ed5b78d6a294f0bc7aa88417b15ef8/JPoints/Proof/Main.lean#L298",
+  "JPoints.Program.nodup_of_run_eq": "https://github.com/MichaelStollBayreuth/JPointsLean/blob/1152475138ed5b78d6a294f0bc7aa88417b15ef8/JPoints/Proof/Main.lean#L314"
+ },
  "mathlib/overview/linear-algebra/projects": {
   "CertifiedGaps.GapGT.lt_sub_of_monotone": "https://github.com/LionSR/CertifiedGaps/blob/d00eca060ecbaf0987d7f00e8b6c36ef4592d1c4/code/lean/CertifiedGaps/PurityCriterion.lean#L346",
   "CertifiedGaps.Spectral.antitone_exp_neg_mul": "https://github.com/LionSR/CertifiedGaps/blob/d00eca060ecbaf0987d7f00e8b6c36ef4592d1c4/code/lean/CertifiedGaps/Spectral/TraceBounds.lean#L194",
@@ -51668,31 +51675,29 @@
   "CertifiedGaps.gapGT_of_purities": "https://github.com/LionSR/CertifiedGaps/blob/d00eca060ecbaf0987d7f00e8b6c36ef4592d1c4/code/lean/CertifiedGaps/PurityCriterion.lean#L886",
   "CertifiedGaps.one_sub_squaredPurity_le_squaringDefect": "https://github.com/LionSR/CertifiedGaps/blob/d00eca060ecbaf0987d7f00e8b6c36ef4592d1c4/code/lean/CertifiedGaps/PurityCriterion.lean#L120"
  },
- "mathlib/overview/topology/projects": {
+ "mathlib/overview/analysis/projects": {
+  "ElevenTwelfths.actual_smoothedWeightedMobiusBound": "https://github.com/AlexKontorovich/quasi-rh/blob/d26d846d6f3129017f06b6fd3f78dd72d361d60b/ElevenTwelfths/Unconditional.lean#L106",
+  "ElevenTwelfths.outsideM_eq_idealRowSum": "https://github.com/AlexKontorovich/quasi-rh/blob/d26d846d6f3129017f06b6fd3f78dd72d361d60b/ElevenTwelfths/ConcreteFamily.lean#L111",
+  "ElevenTwelfths.outsideS_eq_idealRowSum_tsum": "https://github.com/AlexKontorovich/quasi-rh/blob/d26d846d6f3129017f06b6fd3f78dd72d361d60b/ElevenTwelfths/ConcreteFamily.lean#L180",
+  "ElevenTwelfths.outside_totient_moebius_bound_of_mean_square": "https://github.com/AlexKontorovich/quasi-rh/blob/d26d846d6f3129017f06b6fd3f78dd72d361d60b/ElevenTwelfths/SixthPowerMeanSquare.lean#L42",
+  "OAI.InitialMeanSquare.outside_mean_square_of_theta_models_pos": "https://github.com/AlexKontorovich/quasi-rh/blob/d26d846d6f3129017f06b6fd3f78dd72d361d60b/OAI/NumberTheory/DirichletL/MeanSquare/ThetaDensity.lean#L274",
   "classical_carleson": "https://github.com/fpvandoorn/carleson/blob/d4446d3cab5d096d936a94e998d24c413b2b017d/Carleson/Classical/ClassicalCarleson.lean#L131"
  },
  "mathlib/overview/probability-theory/projects": {
-  "BlockBand.Parameters.N": "https://github.com/AxiomMath/BandMatrixQUE/blob/ad59520033d1ed202d582b256232d5ead86fa735/BlockBand/Model/Parameters.lean#L32"
+  "BlockBand.Critical.BoundaryMean.exactBoundaryMean_of_inputs": "https://github.com/AxiomMath/BandMatrixQUE/blob/ad59520033d1ed202d582b256232d5ead86fa735/BlockBand/Critical/BoundaryMean/Main.lean#L34",
+  "BlockBand.Critical.Herglotz.herglotzTail": "https://github.com/AxiomMath/BandMatrixQUE/blob/ad59520033d1ed202d582b256232d5ead86fa735/BlockBand/Critical/Herglotz/Main.lean#L38",
+  "BlockBand.Critical.MatrixClosing.bulkInterval_mono_half": "https://github.com/AxiomMath/BandMatrixQUE/blob/ad59520033d1ed202d582b256232d5ead86fa735/BlockBand/Critical/MatrixClosing/MiddleShift/Main.lean#L106",
+  "BlockBand.Critical.MatrixClosing.mem_bulkInterval_half": "https://github.com/AxiomMath/BandMatrixQUE/blob/ad59520033d1ed202d582b256232d5ead86fa735/BlockBand/Critical/MatrixClosing/MiddleShift/Main.lean#L100",
+  "BlockBand.Critical.MatrixClosing.middleKernel_radial": "https://github.com/AxiomMath/BandMatrixQUE/blob/ad59520033d1ed202d582b256232d5ead86fa735/BlockBand/Critical/MatrixClosing/MiddleShift/Main.lean#L287",
+  "BlockBand.Critical.MatrixClosing.middleShiftBoundaryMean_of_exactBoundaryMean": "https://github.com/AxiomMath/BandMatrixQUE/blob/ad59520033d1ed202d582b256232d5ead86fa735/BlockBand/Critical/MatrixClosing/MiddleShift/Main.lean#L299",
+  "BlockBand.Critical.MatrixClosing.middle_error_arith": "https://github.com/AxiomMath/BandMatrixQUE/blob/ad59520033d1ed202d582b256232d5ead86fa735/BlockBand/Critical/MatrixClosing/MiddleShift/Main.lean#L30",
+  "BlockBand.Critical.MatrixClosing.strictMiddle_of_exactBoundaryMean": "https://github.com/AxiomMath/BandMatrixQUE/blob/ad59520033d1ed202d582b256232d5ead86fa735/BlockBand/Critical/MatrixClosing/MiddleShift/Main.lean#L112"
  },
  "mathlib/overview/combinatorics/projects": {
-  "UnitDistance.Sqrt241.CanonicalGenus.radicandA": "https://github.com/enaslund/unit-distance-bound-0.0427/blob/b43f0c5bfd7a3276597c6a47ad99b9e5b8d3d21f/lean/UnitDistance/Sqrt241/CanonicalGenus.lean#L46",
-  "UnitDistance.Sqrt241.CanonicalGenus.radicandB": "https://github.com/enaslund/unit-distance-bound-0.0427/blob/b43f0c5bfd7a3276597c6a47ad99b9e5b8d3d21f/lean/UnitDistance/Sqrt241/CanonicalGenus.lean#L48",
-  "UnitDistance.Sqrt241.CanonicalWide.wideRadicand": "https://github.com/enaslund/unit-distance-bound-0.0427/blob/b43f0c5bfd7a3276597c6a47ad99b9e5b8d3d21f/lean/UnitDistance/Sqrt241/CanonicalWide.lean#L46",
-  "UnitDistance.Sqrt241.Discriminant.Dyadic.Realization.u": "https://github.com/enaslund/unit-distance-bound-0.0427/blob/b43f0c5bfd7a3276597c6a47ad99b9e5b8d3d21f/lean/UnitDistance/Sqrt241/Discriminant/Dyadic.lean#L95",
   "UnitDistance.Sqrt241.V2.target_of_wide_zeta_bound": "https://github.com/enaslund/unit-distance-bound-0.0427/blob/b43f0c5bfd7a3276597c6a47ad99b9e5b8d3d21f/lean/UnitDistance/Sqrt241/V2/Final.lean#L84"
- },
- "mathlib/overview/data-structures/projects": {
-  "JPoints.Double.lt_nextUp_and_nextDown_lt_ofDyadic": "https://github.com/MichaelStollBayreuth/JPointsLean/blob/1152475138ed5b78d6a294f0bc7aa88417b15ef8/JPoints/Proof/Rounding.lean#L560",
-  "JPoints.Double.lt_nextUp_and_nextDown_lt_ofRatio": "https://github.com/MichaelStollBayreuth/JPointsLean/blob/1152475138ed5b78d6a294f0bc7aa88417b15ef8/JPoints/Proof/Rounding.lean#L518",
-  "JPoints.Program.exists_run_eq_of_readInput_eq_ok_of_quiet_eq_false": "https://github.com/MichaelStollBayreuth/JPointsLean/blob/1152475138ed5b78d6a294f0bc7aa88417b15ef8/JPoints/Proof/Main.lean#L258",
-  "JPoints.Program.mem_iff_isPoint_of_run_eq": "https://github.com/MichaelStollBayreuth/JPointsLean/blob/1152475138ed5b78d6a294f0bc7aa88417b15ef8/JPoints/Proof/Main.lean#L298",
-  "JPoints.Program.nodup_of_run_eq": "https://github.com/MichaelStollBayreuth/JPointsLean/blob/1152475138ed5b78d6a294f0bc7aa88417b15ef8/JPoints/Proof/Main.lean#L314",
-  "ProblemExtraction.extractProblems": "https://github.com/dwrensha/compfiles/blob/1745e6ced3e671bd74417548494b034eb2c87da8/ProblemExtraction/Core.lean#L203",
-  "Usa2007P3.main": "https://github.com/dwrensha/compfiles/blob/1745e6ced3e671bd74417548494b034eb2c87da8/Compfiles/Usa2007P3.lean#L139"
  },
  "mathlib/overview/logic-and-computation/projects": {
   "BBTheorems.bb5_literature": "https://github.com/mfornet/busybeaver/blob/732740ac71c8b1b8f58955aa2a2783e0490d8cd2/BBTheorems/BB5.lean#L28",
-  "TM.Busybeaver.BBCompute": "https://github.com/mfornet/busybeaver/blob/732740ac71c8b1b8f58955aa2a2783e0490d8cd2/Busybeaver/Enumerate/Alg.lean#L277",
   "TM.Busybeaver.BBCompute.correct_complete": "https://github.com/mfornet/busybeaver/blob/732740ac71c8b1b8f58955aa2a2783e0490d8cd2/Busybeaver/Enumerate/Alg.lean#L1014",
   "TM.Table.Machine.Isomorph.decide": "https://github.com/mfornet/busybeaver/blob/732740ac71c8b1b8f58955aa2a2783e0490d8cd2/Busybeaver/Enumerate/Quotient.lean#L111"
  },

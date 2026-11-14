@@ -18,7 +18,7 @@
   "title": "Formalization of a generalized Carleson's theorem",
   "excerpt": "A formalized proof of a generalized Carleson's theorem in the [Lean interactive theorem prover](https://lean-lang.org/)."
  },
- "lean_files": 129,
+ "lean_files": 127,
  "admitted": true,
  "folder": "",
  "toolchain": "v4.36.0-rc1",
@@ -52,6 +52,9 @@
  "declarations": 2883,
  "sorry_files": 2,
  "axioms": 0,
+ "closure_files": 105,
+ "closure_sorry": [],
+ "closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": "blueprint",
  "headline_count": 1,

@@ -18,7 +18,7 @@
   "title": "FABL: Formal Analysis of Boolean Functions in Lean",
   "excerpt": "FABL is a Lean 4 and Mathlib formalization of Ryan O'Donnell's [*Analysis of Boolean Functions*](https://arxiv.org/abs/2105.10386), following the May 2021 edition. It develops the book's results as a reusable theorem library while preserving the domains, normalizations, and hypotheses of the original statements."
  },
- "lean_files": 361,
+ "lean_files": 360,
  "admitted": true,
  "folder": "",
  "toolchain": "v4.32.0",
@@ -49,6 +49,9 @@
  "declarations": 9120,
  "sorry_files": 0,
  "axioms": 0,
+ "closure_files": 0,
+ "closure_sorry": [],
+ "closure_axioms": 0,
  "unclosed_files": 0,
  "headline_rule": null,
  "headline_count": 0,

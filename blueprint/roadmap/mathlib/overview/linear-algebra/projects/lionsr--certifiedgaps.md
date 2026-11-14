@@ -24,15 +24,15 @@ statement: formalized
 - [Invertibility](../matrices/invertibility.md)
 - [Matrix exponential](../../../undergraduate/linear-algebra/exponential/matrix-exponential.md)
 - [Complementary subspaces](../../../undergraduate/linear-algebra/fundamentals/complementary-subspaces.md)
-- [Normed vector space over a normed field](../../analysis/normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
 - [Permutation group of a type](../../general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
-- [The Triangle Inequality](../../../hundred-theorems/part-04/the-triangle-inequality.md)
+- [Normed vector space over a normed field](../../analysis/normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
 - [List](../../data-structures/list-like-structures/list.md)
+- [The Triangle Inequality](../../../hundred-theorems/part-04/the-triangle-inequality.md)
 - [The Binomial Theorem](../../../hundred-theorems/part-02/the-binomial-theorem.md)
 
 ## Main results
 
-Its Lean names are 8 of the 47 the Lean names of its blueprint's nodes that no other node uses, marked \leanok:
+Its Lean names are 8 of the 47 Lean names of the blueprint nodes that no other node uses, marked \leanok:
 
 - [`CertifiedGaps.GapGT.lt_sub_of_monotone`](https://github.com/LionSR/CertifiedGaps/blob/d00eca060ecbaf0987d7f00e8b6c36ef4592d1c4/code/lean/CertifiedGaps/PurityCriterion.lean#L346) (theorem)
 - [`CertifiedGaps.one_sub_squaredPurity_le_squaringDefect`](https://github.com/LionSR/CertifiedGaps/blob/d00eca060ecbaf0987d7f00e8b6c36ef4592d1c4/code/lean/CertifiedGaps/PurityCriterion.lean#L120) (theorem)
@@ -42,6 +42,8 @@ Its Lean names are 8 of the 47 the Lean names of its blueprint's nodes that no o
 - [`CertifiedGaps.Spectral.binned_le_sum`](https://github.com/LionSR/CertifiedGaps/blob/d00eca060ecbaf0987d7f00e8b6c36ef4592d1c4/code/lean/CertifiedGaps/Spectral/TraceBounds.lean#L169) (theorem)
 - [`CertifiedGaps.Spectral.antitone_exp_neg_mul`](https://github.com/LionSR/CertifiedGaps/blob/d00eca060ecbaf0987d7f00e8b6c36ef4592d1c4/code/lean/CertifiedGaps/Spectral/TraceBounds.lean#L194) (theorem)
 - [`CertifiedGaps.SpinOneHeisenberg.ThermalPacked.seamBand`](https://github.com/LionSR/CertifiedGaps/blob/d00eca060ecbaf0987d7f00e8b6c36ef4592d1c4/code/lean/CertifiedGaps/Heisenberg/ThermalPacked.lean#L96) (def)
+
+Of the files its headlines import, directly or not, `code/lean/CertifiedGaps/Heisenberg/Main.lean`, `code/lean/CertifiedGaps/Models/SpinOneLargeD.lean` hold `sorry` or `admit`.
 
 ## Project
 
@@ -56,11 +58,11 @@ Its Lean names are 8 of the 47 the Lean names of its blueprint's nodes that no o
 
 ## Placement
 
-3 of the 7 Mathlib concepts its headline statements name are in Linear algebra.
+Of its imports of Mathlib modules in an overview area, 20 of 86 are in Linear algebra, 4.3 times the average project's share, the most of the areas holding a tenth of its imports.
 
 ## Mathlib use
 
-Areas of its Mathlib imports by lift over the average project: Linear algebra (20 of 86 imports, 4.1×), Analysis (38 of 86 imports, 1.4×), Data structures (10 of 86 imports, 0.8×). *Proof depends on* names 8 of the 31 Mathlib concepts its files name, those named most often relative to the other projects.
+Areas of its Mathlib imports by lift over the average project: Linear algebra (20 of 86 imports, 4.3×), Analysis (38 of 86 imports, 1.3×), Data structures (10 of 86 imports, 0.9×). *Proof depends on* names 8 of the 31 Mathlib concepts its files name, those named most often relative to the other projects.
 
 ## Sources
 

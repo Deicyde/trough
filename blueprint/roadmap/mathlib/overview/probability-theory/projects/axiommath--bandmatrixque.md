@@ -1,7 +1,7 @@
 ---
-declaration: def
+declaration: theorem
 origin: cited
-lean: BlockBand.Parameters.N
+lean: BlockBand.Critical.BoundaryMean.exactBoundaryMean_of_inputs, BlockBand.Critical.Herglotz.herglotzTail, BlockBand.Critical.MatrixClosing.middle_error_arith, BlockBand.Critical.MatrixClosing.mem_bulkInterval_half, BlockBand.Critical.MatrixClosing.bulkInterval_mono_half, BlockBand.Critical.MatrixClosing.strictMiddle_of_exactBoundaryMean, BlockBand.Critical.MatrixClosing.middleKernel_radial, BlockBand.Critical.MatrixClosing.middleShiftBoundaryMean_of_exactBoundaryMean
 statement: formalized
 ---
 
@@ -15,24 +15,32 @@ statement: formalized
 
 ## Depends on
 
-Its headline statements name no Mathlib concept or declaration mapped elsewhere on this site.
+- [Limit of a map with respect to filters](../../topology/general-topology/part-01/limit-of-a-map-with-respect-to-filters.md)
+- [Ring-valued matrix](../../linear-algebra/matrices/ring-valued-matrix.md)
 
 ## Proof depends on
 
-- [Differentials (linear tangent functions)](../../../undergraduate/multivariable-calculus/differential-calculus/differentials-linear-tangent-functions.md)
 - [Stopping time](../stochastic-processes/stopping-time.md)
 - [Martingale](../stochastic-processes/martingale.md)
-- [Differentiable function between normed vector spaces](../../analysis/differentiability/differentiable-function-between-normed-vector-sp.md)
 - [Pointwise convergence](../../../undergraduate/single-variable-real-analysis/sequences-and-series-of-functions/pointwise-convergence.md)
 - [Invertible elements](../../../undergraduate/ring-theory/divisibility-in-integral-domains/invertible-elements.md)
-- [Unitary group](../../../undergraduate/group-theory/classical-automorphism-groups/unitary-group.md)
-- [Self-adjoint operator](../../analysis/hilbert-spaces/self-adjoint-operator.md)
+- [Dual of a normed space](../../analysis/normed-vector-spaces-banach-spaces/dual-of-a-normed-space.md)
+- [Moment of a random variable](../random-variables-and-their-laws/moment-of-a-random-variable.md)
+- [Chain rule](../../../undergraduate/multivariable-calculus/differential-calculus/chain-rule.md)
+- [Convergence in distribution](../convergence-of-a-sequence-of-random-variables/convergence-in-distribution.md)
 
 ## Main results
 
-Its Lean names are the the names its README sets in code that the project declares:
+Its Lean names are 8 of the 214 theorems of its module named Main, MainTheorem(s) or Statement(s):
 
-- [`BlockBand.Parameters.N`](https://github.com/AxiomMath/BandMatrixQUE/blob/ad59520033d1ed202d582b256232d5ead86fa735/BlockBand/Model/Parameters.lean#L32) (def)
+- [`BlockBand.Critical.BoundaryMean.exactBoundaryMean_of_inputs`](https://github.com/AxiomMath/BandMatrixQUE/blob/ad59520033d1ed202d582b256232d5ead86fa735/BlockBand/Critical/BoundaryMean/Main.lean#L34) (theorem)
+- [`BlockBand.Critical.Herglotz.herglotzTail`](https://github.com/AxiomMath/BandMatrixQUE/blob/ad59520033d1ed202d582b256232d5ead86fa735/BlockBand/Critical/Herglotz/Main.lean#L38) (theorem)
+- [`BlockBand.Critical.MatrixClosing.middle_error_arith`](https://github.com/AxiomMath/BandMatrixQUE/blob/ad59520033d1ed202d582b256232d5ead86fa735/BlockBand/Critical/MatrixClosing/MiddleShift/Main.lean#L30) (theorem)
+- [`BlockBand.Critical.MatrixClosing.mem_bulkInterval_half`](https://github.com/AxiomMath/BandMatrixQUE/blob/ad59520033d1ed202d582b256232d5ead86fa735/BlockBand/Critical/MatrixClosing/MiddleShift/Main.lean#L100) (theorem)
+- [`BlockBand.Critical.MatrixClosing.bulkInterval_mono_half`](https://github.com/AxiomMath/BandMatrixQUE/blob/ad59520033d1ed202d582b256232d5ead86fa735/BlockBand/Critical/MatrixClosing/MiddleShift/Main.lean#L106) (theorem)
+- [`BlockBand.Critical.MatrixClosing.strictMiddle_of_exactBoundaryMean`](https://github.com/AxiomMath/BandMatrixQUE/blob/ad59520033d1ed202d582b256232d5ead86fa735/BlockBand/Critical/MatrixClosing/MiddleShift/Main.lean#L112) (theorem)
+- [`BlockBand.Critical.MatrixClosing.middleKernel_radial`](https://github.com/AxiomMath/BandMatrixQUE/blob/ad59520033d1ed202d582b256232d5ead86fa735/BlockBand/Critical/MatrixClosing/MiddleShift/Main.lean#L287) (theorem)
+- [`BlockBand.Critical.MatrixClosing.middleShiftBoundaryMean_of_exactBoundaryMean`](https://github.com/AxiomMath/BandMatrixQUE/blob/ad59520033d1ed202d582b256232d5ead86fa735/BlockBand/Critical/MatrixClosing/MiddleShift/Main.lean#L299) (theorem)
 
 ## Project
 
@@ -46,11 +54,11 @@ Its Lean names are the the names its README sets in code that the project declar
 
 ## Placement
 
-Of its imports of Mathlib modules in an overview area, 268 of 2254 are in Probability Theory, 4.3 times the average project's share, the most of the areas holding a tenth of its imports.
+Of its imports of Mathlib modules in an overview area, 268 of 2254 are in Probability Theory, 4.7 times the average project's share, the most of the areas holding a tenth of its imports.
 
 ## Mathlib use
 
-Areas of its Mathlib imports by lift over the average project: Probability Theory (268 of 2254 imports, 4.3×), Analysis (1379 of 2254 imports, 2.0×). *Proof depends on* names 8 of the 152 Mathlib concepts its files name, those named most often relative to the other projects.
+Areas of its Mathlib imports by lift over the average project: Probability Theory (268 of 2254 imports, 4.7×), Analysis (1379 of 2254 imports, 1.8×). *Proof depends on* names 8 of the 152 Mathlib concepts its files name, those named most often relative to the other projects.
 
 ## Sources
 

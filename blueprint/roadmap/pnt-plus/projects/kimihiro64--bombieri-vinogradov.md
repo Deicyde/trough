@@ -3,6 +3,7 @@ declaration: theorem
 origin: cited
 lean: BombieriVinogradov.PrimeCountingConversion.weighted_to_prime_counting
 statement: formalized
+proof: formalized
 ---
 
 # Bombieri-Vinogradov in Lean
@@ -19,20 +20,22 @@ Its headline statements name no Mathlib concept or declaration mapped elsewhere 
 
 ## Proof depends on
 
-- [Arithmetic functions](../../mathlib/overview/general-algebra/number-theory/arithmetic-functions.md)
 - [Bochner integral](../../mathlib/overview/analysis/measures-and-integral-calculus/part-01/bochner-integral.md)
-- [Analytic function](../../mathlib/overview/analysis/differentiability/analytic-function.md)
-- [Complex number](../../mathlib/overview/general-algebra/numbers/complex-number.md)
-- [Convex subsets](../../mathlib/undergraduate/affine-and-euclidean-geometry/convexity/convex-subsets.md)
+- [Arithmetic functions](../../mathlib/overview/general-algebra/number-theory/arithmetic-functions.md)
 - [Natural number](../../mathlib/overview/general-algebra/numbers/natural-number.md)
-- [Real number](../../mathlib/overview/general-algebra/numbers/real-number.md)
 - [Logarithm](../../mathlib/overview/analysis/special-functions/logarithm.md)
+- [Complex number](../../mathlib/overview/general-algebra/numbers/complex-number.md)
+- [Real number](../../mathlib/overview/general-algebra/numbers/real-number.md)
+- [Intermediate value theorem](../../mathlib/overview/topology/topological-algebra/intermediate-value-theorem.md)
+- [Analytic function](../../mathlib/overview/analysis/differentiability/analytic-function.md)
 
 ## Main results
 
-Its Lean names are the the names its README sets in code that the project declares:
+Its Lean names are the theorems its README names in code:
 
 - [`BombieriVinogradov.PrimeCountingConversion.weighted_to_prime_counting`](https://github.com/kimihiro64/bombieri-vinogradov/blob/7a1748306e026825ed6a5555516cc2f28989b2ac/BombieriVinogradov/Assembly/PrimeCountingConversion/Main.lean#L24) (theorem)
+
+No file its headlines import, directly or not (819 files), holds `sorry`, `admit` or an axiom.
 
 ## Project
 
@@ -53,7 +56,7 @@ Its Lake manifest requires `PrimeNumberTheoremAnd`, a GitHub fork of AlexKontoro
 
 ## Mathlib use
 
-Areas of its Mathlib imports by lift over the average project: Data structures (599 of 2287 imports, 1.9×), General algebra (885 of 2287 imports, 1.1×), Analysis (667 of 2287 imports, 0.9×). *Proof depends on* names 8 of the 38 Mathlib concepts its files name, those named most often relative to the other projects.
+Areas of its Mathlib imports by lift over the average project: Data structures (599 of 2287 imports, 2.1×), General algebra (885 of 2287 imports, 1.1×), Analysis (667 of 2287 imports, 0.9×). *Proof depends on* names 8 of the 38 Mathlib concepts its files name, those named most often relative to the other projects.
 
 ## Sources
 
