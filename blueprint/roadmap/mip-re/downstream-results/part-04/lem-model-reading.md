@@ -1,0 +1,35 @@
+---
+declaration: lemma
+origin: cited
+lean: MIPRE.reindexStarAlgHomR_apply, MIPRE.smulKron_eq_diagonal_mul, MIPRE.compHom_smulKron_smulKron, MIPRE.compHom_smulKron_one, MIPRE.moveEquiv_apply, MIPRE.moveEquiv_symm_apply, MIPRE.basisVec_apply, MIPRE.basisVec_swap, MIPRE.norm_basisVec, MIPRE.BipartiteModel.recut_toStateModel, MIPRE.BipartiteModel.recut_πA_apply, MIPRE.BipartiteModel.recut_πB_apply, MIPRE.BipartiteModel.expand_πA_apply, MIPRE.BipartiteModel.expand_πB_apply, MIPRE.BipartiteModel.expand_πA_mul_πB_apply, MIPRE.BipartiteModel.recut_move_πA, MIPRE.BipartiteModel.recut_move_πB, MIPRE.BipartiteModel.recutAmpl, MIPRE.BipartiteModel.recutAmpl_apply, MIPRE.BipartiteModel.recutIsom, MIPRE.BipartiteModel.recutAmpl_recutIsom_W, MIPRE.BipartiteModel.recutIsom_ΦA, MIPRE.BipartiteModel.recutIsom_ΦB, MIPRE.BipartiteModel.recutIsom_W_ψ, MIPRE.BipartiteModel.recutIso, MIPRE.BipartiteModel.recutIso_ΦA, MIPRE.BipartiteModel.recutIso_ΦB, MIPRE.BipartiteModel.recutIso_toLocalIsometry, MIPRE.BipartiteModel.bornProb_expand_basisVec
+statement: formalized
+proof: formalized
+---
+
+# Readings of an extension
+
+1. All the readings of one extension have its state model, so their state norms and quadratic forms are the extension's; the entries of a reading's operators are those of the extension's, read through $\sigma$.
+2. Once the first player's outer register $\gamma$ is handed to the second player, an operator $X$ of the first player's remaining register is the extension's operator ${I}_\gamma \otimes X$, and an operator $Q \otimes Y$ of the second player, with $Q$ a scalar matrix on $\gamma$, is the product of the extension's first-player operator $Q \otimes {I}$ and second-player operator $Y$. Here $X \otimes P = (X \otimes {I})({I} \otimes P)$ for an element $X$ and a scalar matrix $P$, and an element tensored with a scalar matrix $P$ of an inner register and then with a scalar matrix $Q$ of an outer register is the element tensored with $Q \otimes P$ on the pair of registers.
+3. The reading along $\sigma$ is isomorphic to the extension in the regrouped vector $e \circ \sigma^{-1}$, by the reindexing of the $\ell^2$-sum, the players' algebras unchanged.
+4. In the extension in a product basis vector $|a_0 b_0\rangle$, which is a unit vector, the Born probability of $(X, Y)$ is the Born probability in $M$ of the reference entries $(X_{a_0 a_0}, Y_{b_0 b_0})$.
+
+## Depends on
+
+- [Readings of an extension](def-model-reading.md)
+- [Isomorphisms of bipartite models](def-model-iso.md)
+
+## Proof depends on
+
+- [Moving registers along local isometries](../part-03/lem-ancilla-isometries.md)
+
+## Proof
+
+An operator of an extension acts entrywise on the copies of the Hilbert space, and a reading permutes the copies, so items 1 to 3 compare entries of block matrices; in item 3 the reindexing of the $\ell^2$-sum carries the state to the state and has the inverse reindexing. In item 4 the state has one nonzero component, at $(a_0, b_0)$, so a product of the two players' operators acts on it through the entry at $(a_0, b_0)$ of each.
+
+## Lean
+
+Formalized as [`MIPRE.reindexStarAlgHomR_apply`](https://vidick.github.io/MIPRE-formalization/docs/find/#doc/MIPRE.reindexStarAlgHomR_apply), [`MIPRE.smulKron_eq_diagonal_mul`](https://vidick.github.io/MIPRE-formalization/docs/find/#doc/MIPRE.smulKron_eq_diagonal_mul), [`MIPRE.compHom_smulKron_smulKron`](https://vidick.github.io/MIPRE-formalization/docs/find/#doc/MIPRE.compHom_smulKron_smulKron), [`MIPRE.compHom_smulKron_one`](https://vidick.github.io/MIPRE-formalization/docs/find/#doc/MIPRE.compHom_smulKron_one), [`MIPRE.moveEquiv_apply`](https://vidick.github.io/MIPRE-formalization/docs/find/#doc/MIPRE.moveEquiv_apply), [`MIPRE.moveEquiv_symm_apply`](https://vidick.github.io/MIPRE-formalization/docs/find/#doc/MIPRE.moveEquiv_symm_apply), [`MIPRE.basisVec_apply`](https://vidick.github.io/MIPRE-formalization/docs/find/#doc/MIPRE.basisVec_apply), [`MIPRE.basisVec_swap`](https://vidick.github.io/MIPRE-formalization/docs/find/#doc/MIPRE.basisVec_swap), [`MIPRE.norm_basisVec`](https://vidick.github.io/MIPRE-formalization/docs/find/#doc/MIPRE.norm_basisVec), [`MIPRE.BipartiteModel.recut_toStateModel`](https://vidick.github.io/MIPRE-formalization/docs/find/#doc/MIPRE.BipartiteModel.recut_toStateModel), [`MIPRE.BipartiteModel.recut_πA_apply`](https://vidick.github.io/MIPRE-formalization/docs/find/#doc/MIPRE.BipartiteModel.recut_πA_apply), [`MIPRE.BipartiteModel.recut_πB_apply`](https://vidick.github.io/MIPRE-formalization/docs/find/#doc/MIPRE.BipartiteModel.recut_πB_apply), [`MIPRE.BipartiteModel.expand_πA_apply`](https://vidick.github.io/MIPRE-formalization/docs/find/#doc/MIPRE.BipartiteModel.expand_πA_apply), [`MIPRE.BipartiteModel.expand_πB_apply`](https://vidick.github.io/MIPRE-formalization/docs/find/#doc/MIPRE.BipartiteModel.expand_πB_apply), [`MIPRE.BipartiteModel.expand_πA_mul_πB_apply`](https://vidick.github.io/MIPRE-formalization/docs/find/#doc/MIPRE.BipartiteModel.expand_πA_mul_πB_apply), [`MIPRE.BipartiteModel.recut_move_πA`](https://vidick.github.io/MIPRE-formalization/docs/find/#doc/MIPRE.BipartiteModel.recut_move_πA), [`MIPRE.BipartiteModel.recut_move_πB`](https://vidick.github.io/MIPRE-formalization/docs/find/#doc/MIPRE.BipartiteModel.recut_move_πB), [`MIPRE.BipartiteModel.recutAmpl`](https://vidick.github.io/MIPRE-formalization/docs/find/#doc/MIPRE.BipartiteModel.recutAmpl), [`MIPRE.BipartiteModel.recutAmpl_apply`](https://vidick.github.io/MIPRE-formalization/docs/find/#doc/MIPRE.BipartiteModel.recutAmpl_apply), [`MIPRE.BipartiteModel.recutIsom`](https://vidick.github.io/MIPRE-formalization/docs/find/#doc/MIPRE.BipartiteModel.recutIsom), [`MIPRE.BipartiteModel.recutAmpl_recutIsom_W`](https://vidick.github.io/MIPRE-formalization/docs/find/#doc/MIPRE.BipartiteModel.recutAmpl_recutIsom_W), [`MIPRE.BipartiteModel.recutIsom_ΦA`](https://vidick.github.io/MIPRE-formalization/docs/find/#doc/MIPRE.BipartiteModel.recutIsom_ΦA), [`MIPRE.BipartiteModel.recutIsom_ΦB`](https://vidick.github.io/MIPRE-formalization/docs/find/#doc/MIPRE.BipartiteModel.recutIsom_ΦB), [`MIPRE.BipartiteModel.recutIsom_W_ψ`](https://vidick.github.io/MIPRE-formalization/docs/find/#doc/MIPRE.BipartiteModel.recutIsom_W_ψ), [`MIPRE.BipartiteModel.recutIso`](https://vidick.github.io/MIPRE-formalization/docs/find/#doc/MIPRE.BipartiteModel.recutIso), [`MIPRE.BipartiteModel.recutIso_ΦA`](https://vidick.github.io/MIPRE-formalization/docs/find/#doc/MIPRE.BipartiteModel.recutIso_ΦA), [`MIPRE.BipartiteModel.recutIso_ΦB`](https://vidick.github.io/MIPRE-formalization/docs/find/#doc/MIPRE.BipartiteModel.recutIso_ΦB), [`MIPRE.BipartiteModel.recutIso_toLocalIsometry`](https://vidick.github.io/MIPRE-formalization/docs/find/#doc/MIPRE.BipartiteModel.recutIso_toLocalIsometry), [`MIPRE.BipartiteModel.bornProb_expand_basisVec`](https://vidick.github.io/MIPRE-formalization/docs/find/#doc/MIPRE.BipartiteModel.bornProb_expand_basisVec).
+
+## Sources
+
+- [MIP* = RE blueprint: content/08_downstream.tex, line 2321](https://github.com/vidick/MIPRE-formalization/blob/5926bdff5db621f44682a101007ef2fe3ae8d970/blueprint/src/content/08_downstream.tex#L2321)

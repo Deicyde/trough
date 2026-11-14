@@ -1,0 +1,3 @@
+# This document and the Lean implementation
+
+This document is generated from a latex file written by the authors, thanks to the `leanblueprint` library developed by Patrick Massot (<https://github.com/PatrickMassot/leanblueprint>). It contains links to a Lean implementation of the results, but there is no technical guarantee that the results written here and the ones in the code match in any way. In particular, nothing in this document is automatically generated from the code. In summary, although the authors strive to make this document as close to the Lean implementation as possible, the only formally verified statements are those written in Lean.

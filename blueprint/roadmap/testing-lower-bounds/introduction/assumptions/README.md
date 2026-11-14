@@ -1,0 +1,5 @@
+# Assumptions
+
+Information divergences are usually considered for probability measures, but we will be more granular about the assumptions we impose on the measures. Since Radon-Nikodym derivatives don't have good properties unless the measures are sigma-finite and since those derivatives are the basic building block of all the information divergences we consider, every measure we consider will be supposed sigma-finite. Many results additionally need that the measures are finite, and some will be about probability measures specifically.
+
+In most results, the measures can be defined on a general measurable space, without additional assumptions. However some statements, notably those involving conditional divergences, will require the sigma-algebra to be countably generated or the space to be standard Borel. The countably generated assumption means that there is a countable set of sets that generates the sigma-algebra. This is the case for example in any standard Borel space, which covers the vast majority of applications.
