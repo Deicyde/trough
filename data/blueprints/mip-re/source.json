@@ -1,0 +1,9 @@
+{
+ "repo": "vidick/MIPRE-formalization",
+ "rev": "5926bdff5db621f44682a101007ef2fe3ae8d970",
+ "date": "2026-10-15T07:20:14+02:00",
+ "entry": "blueprint/src/web.tex",
+ "license": "Apache-2.0",
+ "text": true,
+ "nodes": 714
+}

@@ -1,0 +1,456 @@
+\section{Kullback-Leibler divergence}
+
+\begin{definition}[Kullback-Leibler divergence]
+  \label{def:KL}
+  \lean{InformationTheory.klDiv}
+  \mathlibok
+  %\uses{}
+  Let $\mu, \nu$ be two measures on $\mathcal X$. The Kullback-Leibler divergence between $\mu$ and $\nu$ is
+  \begin{align*}
+  \KL(\mu, \nu) = \mu\left[\log \frac{d \mu}{d \nu}\right]
+  \end{align*}
+  if $\mu \ll \nu$ and $x \mapsto \log \frac{d \mu}{d \nu}(x)$ is $\mu$-integrable and $+\infty$ otherwise.
+\end{definition}
+
+
+\begin{lemma}
+  \label{lem:kl_eq_fDiv}
+  \lean{ProbabilityTheory.klDiv_eq_fDiv}
+  \leanok
+  \uses{def:KL, def:fDiv, lem:fDiv_properties}
+  $\KL(\mu, \nu) = D_f(\mu, \nu)$ for $f: x \mapsto x \log x$.
+\end{lemma}
+
+\begin{proof}\leanok
+Simple computation.
+\end{proof}
+
+
+\begin{definition}[Conditional Kullback-Leibler divergence]
+  \label{def:condKL}
+  \lean{ProbabilityTheory.condKL}
+  \leanok
+  \uses{def:KL}
+  Let $\mu$ be a measure on $\mathcal X$ and $\kappa, \eta : \mathcal X \rightsquigarrow \mathcal Y$ be two kernels. The conditional Kullback-Leibler divergence between $\kappa$ and $\eta$ with respect to $\mu$ is
+  \begin{align*}
+  \KL(\kappa, \eta \mid \mu) = \mu\left[x \mapsto \KL(\kappa(x), \eta(x))\right]
+  \end{align*}
+  if $x \mapsto \KL(\kappa(x), \eta(x))$ is $\mu$-integrable and $+\infty$ otherwise.
+\end{definition}
+
+
+\begin{lemma}
+  \label{lem:condKL_eq_condFDiv}
+  \lean{ProbabilityTheory.klDiv_eq_fDiv}
+  \leanok
+  \uses{def:condKL, def:condFDiv, lem:condFDiv_properties}
+  $\KL(\kappa, \eta \mid \mu) = D_f(\kappa, \eta \mid \mu)$ for $f: x \mapsto x \log x$.
+\end{lemma}
+
+\begin{proof}\leanok
+Simple computation.
+\end{proof}
+
+
+
+\subsection{Properties inherited from f-divergences}
+
+Since $\KL$ is an f-divergence, every inequality for f-divergences can be translated to $\KL$.
+
+\begin{lemma}
+  \label{lem:kl_self}
+  \lean{InformationTheory.klDiv_self}
+  \mathlibok
+  \uses{def:KL}
+  $\KL(\mu, \mu) = 0$.
+\end{lemma}
+
+\begin{proof}\mathlibok
+  \uses{lem:kl_eq_fDiv, lem:fDiv_self}
+  KL is an f-divergence thanks to Lemma~\ref{lem:kl_eq_fDiv}, then apply Lemma~\ref{lem:fDiv_self}.
+\end{proof}
+
+\begin{lemma}
+  \label{lem:condKL_const}
+  \lean{ProbabilityTheory.condKL_const}
+  \leanok
+  \uses{def:KL, def:condKL}
+  Let $\mu, \nu$ be finite measures on $\mathcal X$, $\xi$ be a finite measure on $\mathcal Y$. 
+  Then $\KL(x \mapsto \mu, x \mapsto \nu \mid \xi) = \KL(\mu, \nu) \xi (\mathcal X)$.
+\end{lemma}
+
+\begin{proof} \leanok
+  \uses{lem:kl_eq_fDiv, lem:condFDiv_const, lem:condKL_eq_condFDiv}
+  KL is an f-divergence thanks to Lemma~\ref{lem:kl_eq_fDiv} and Lemma~\ref{lem:condKL_eq_condFDiv}, then apply Lemma~\ref{lem:condFDiv_const}.
+\end{proof}
+
+
+\begin{theorem}[Marginals]
+  \label{thm:kl_fst_le}
+  \lean{ProbabilityTheory.klDiv_fst_le, ProbabilityTheory.klDiv_snd_le}
+  \leanok
+  \uses{def:KL}
+  Let $\mu$ and $\nu$ be two measures on $\mathcal X \times \mathcal Y$, and let $\mu_X, \nu_X$ be their marginals on $\mathcal X$.
+  Then $\KL(\mu_X, \nu_X) \le \KL(\mu, \nu)$.
+  Similarly, for $\mu_Y, \nu_Y$ the marginals on $\mathcal Y$, $\KL(\mu_Y, \nu_Y) \le \KL(\mu, \nu)$.
+\end{theorem}
+
+\begin{proof} \leanok
+\uses{thm:fDiv_fst_le_2, lem:kl_eq_fDiv}
+Apply Theorem~\ref{thm:fDiv_fst_le_2}.
+\end{proof}
+
+
+\begin{theorem}[Data-processing]
+  \label{thm:kl_data_proc}
+  \lean{InformationTheory.klDiv_comp_right_le}
+  \mathlibok
+  \uses{def:KL}
+  Let $\mu, \nu$ be two measures on $\mathcal X$ and let $\kappa : \mathcal X \rightsquigarrow \mathcal Y$ be a Markov kernel.
+  Then $\KL(\kappa \circ \mu, \kappa \circ \nu) \le \KL(\mu, \nu)$.
+\end{theorem}
+
+\begin{proof}\mathlibok
+\uses{thm:fDiv_data_proc_2, lem:kl_eq_fDiv}
+Apply Theorem~\ref{thm:fDiv_data_proc_2}.
+\end{proof}
+
+
+\begin{lemma}
+  \label{lem:kl_ge}
+  \lean{InformationTheory.mul_log_le_klDiv}
+  \mathlibok
+  \uses{def:KL}
+  Let $\mu, \nu$ be two finite measures on $\mathcal X$. Then $\KL(\mu, \nu) \ge \mu(\mathcal X) \log \frac{\mu(\mathcal X)}{\nu(\mathcal X)}$.
+\end{lemma}
+
+\begin{proof}\mathlibok
+\uses{lem:le_fDiv, lem:kl_eq_fDiv}
+\end{proof}
+
+
+\begin{lemma}[Gibbs' inequality]
+  \label{lem:kl_nonneg}
+  %\lean{}
+  \leanok
+  \uses{def:KL}
+  Let $\mu, \nu$ be two probability measures. Then $\KL(\mu, \nu) \ge 0$.
+\end{lemma}
+
+\begin{proof}\leanok
+\uses{lem:kl_ge}
+Apply Lemma~\ref{lem:kl_ge} and use $\mu(\mathcal X) = \nu (\mathcal X)$.
+\end{proof}
+
+
+\begin{lemma}[Converse Gibbs' inequality]
+  \label{lem:kl_eq_zero_iff}
+  \lean{InformationTheory.klDiv_eq_zero_iff}
+  \mathlibok
+  \uses{def:KL}
+  Let $\mu, \nu$ be two probability measures. Then $\KL(\mu, \nu) = 0$ if and only if $\mu = \nu$.
+\end{lemma}
+
+\begin{proof}\mathlibok
+\uses{lem:kl_eq_fDiv, lem:fDiv_eq_zero_iff}
+KL is an f-divergence thanks to Lemma~\ref{lem:kl_eq_fDiv}, then apply Lemma~\ref{lem:fDiv_eq_zero_iff}.
+\end{proof}
+
+
+\begin{lemma}
+  \label{lem:kl_convex}
+  %\lean{}
+  %\leanok
+  \uses{def:KL}
+  $(\mu, \nu) \mapsto \KL(\mu, \nu)$ is convex.
+\end{lemma}
+
+\begin{proof}
+\uses{thm:fDiv_convex, lem:kl_eq_fDiv}
+Apply Theorem~\ref{thm:fDiv_convex}
+\end{proof}
+
+
+%TODO : this may be moved to another section about integrability
+\begin{lemma}
+  \label{lem:integrable_llr_compProd_iff}
+  \lean{ProbabilityTheory.integrable_llr_compProd_iff}
+  \leanok
+  \uses{}
+  Let $\mu, \nu$ be two finite measures on $\mathcal X$ and $\kappa, \eta : \mathcal X \rightsquigarrow \mathcal Y$ be two Markov kernels such that $\mu \otimes \kappa \ll \nu \otimes \eta$. Then $p \mapsto \log \frac{d \mu \otimes \kappa}{d \nu \otimes \eta}(p)$ is $\mu \otimes \kappa$-integrable if and only if the following hold:
+  \begin{enumerate}
+    \item $x \mapsto \log \frac{d \mu}{d \nu}(x)$ is $\mu$-integrable \label{:1}
+    \item $x \mapsto \int_y  \log \frac{d \kappa(x)}{d \eta(x)}(y) \partial \kappa(x)$ is $\mu$-integrable \label{:2}
+    \item for $\mu$-almost all $x$, $y \mapsto \log \frac{d \kappa(x)}{d \eta(x)}(y)$ is $\kappa(x)$-integrable \label{:3}
+  \end{enumerate}
+\end{lemma}
+
+\begin{proof}
+\uses{def:KL, lem:integrable_fDiv_compProd_iff}
+
+Note that from the hypothesis it easily follows that $\mu \ll \nu$ and $\mu$-a.e.\ $\kappa(x) \ll \eta(x)$.
+
+Applying Lemma~\ref{lem:integrable_fDiv_compProd_iff} we know that $\log \frac{d \mu \otimes \kappa}{d \nu \otimes \eta}$ is $\nu \otimes \eta$-integrable iff the following hold:
+
+\begin{enumerate}
+    \item[i.] for $\nu$-almost all $x$, $y \mapsto \frac{d \mu}{d \nu}(x) \frac{d \kappa(x)}{d \eta(x)}(y) \log \left(\frac{d \mu}{d \nu}(x) \frac{d \kappa(x)}{d \eta(x)}(y) \right) $ is $\eta(x)$-integrable \label{:i}
+    \item[ii.] $x \mapsto  \int_y \frac{d \mu}{d \nu}(x) \frac{d \kappa(x)}{d \eta(x)}(y) \log \left(\frac{d \mu}{d \nu}(x) \frac{d \kappa(x)}{d \eta(x)}(y) \right) \partial \eta (x)$ is $\nu$-integrable \label{:ii}
+\end{enumerate}
+
+{\bfseries(i.$\Leftarrow$)} 3.\ implies that $\nu$-a.e.\ $y \mapsto \frac{d \mu}{d \nu}(x) \log \frac{d \kappa(x)}{d \eta(x)}(y)$ is $\kappa(x)$-integrable, hence $y \mapsto \frac{d \mu}{d \nu}(x) \frac{d \kappa(x)}{d \eta(x)}(y) \log \frac{d \kappa(x)}{d \eta(x)}(y)$ is $\eta(x)$-integrable $\nu$-a.e.\ 
+Moreover $y \mapsto \frac{d \kappa(x)}{d \eta(x)}(y)$ is $\eta(x)$-integrable, then, since $\frac{d \mu}{d \nu}(x) \log \frac{d \mu}{d \nu}(x)$ is constant in $y$, $y \mapsto \frac{d \mu}{d \nu}(x) \frac{d \kappa(x)}{d \eta(x)}(y) \log \frac{d \mu}{d \nu}(x)$ is $\eta(x)$-integrable. 
+This allows us to conclude that $y \mapsto \frac{d \mu}{d \nu}(x) \frac{d \kappa(x)}{d \eta(x)}(y) \log \frac{d \kappa(x)}{d \eta(x)}(y) + \frac{d \mu}{d \nu}(x) \frac{d \kappa(x)}{d \eta(x)}(y) \log \frac{d \mu}{d \nu}(x) = \frac{d \mu}{d \nu}(x) \frac{d \kappa(x)}{d \eta(x)}(y) \log \left(\frac{d \mu}{d \nu}(x) \frac{d \kappa(x)}{d \eta(x)}(y) \right)$ is $\eta(x)$-integrable $\nu$-a.e.
+
+{\bfseries(ii.$\Leftarrow$)} 1.\ implies that $x \mapsto \frac{d \mu}{d \nu}(x) \log \frac{d \mu}{d \nu}(x)$ is $\nu$-integrable. 
+2.\ implies that $x \mapsto \frac{d \mu}{d \nu}(x) \int_y \frac{d \kappa(x)}{d \eta(x)}(y) \log \frac{d \kappa(x)}{d \eta(x)}(y) \partial \eta(x)$ is $\nu$-integrable. 
+Therefore $$x \mapsto \frac{d \mu}{d \nu}(x) \log \frac{d \mu}{d \nu}(x) + \frac{d \mu}{d \nu}(x) \int_y \frac{d \kappa(x)}{d \eta(x)}(y) \log \frac{d \kappa(x)}{d \eta(x)}(y) \partial \eta(x) = \int_y \frac{d \mu}{d \nu}(x) \frac{d \kappa(x)}{d \eta(x)}(y) \log \left(\frac{d \mu}{d \nu}(x) \frac{d \kappa(x)}{d \eta(x)}(y) \right) \partial \eta (x)$$ is $\nu$-integrable.
+
+{\bfseries($\Rightarrow$1.)} This follows from the hypothesis applying a more general Lemma for f divergences, see ProbabilityTheory.integrable\_f\_rnDeriv\_of\_integrable\_compProd' in the lean code.
+% TODO : add the lemma ProbabilityTheory.integrable_f_rnDeriv_of_integrable_compProd' to the blueprint and reference it here
+
+{\bfseries($\Rightarrow$3.)} i.\ implies that $\mu$-a.e.\ $y \mapsto \frac{d \kappa(x)}{d \eta(x)}(y) \log \left(\frac{d \mu}{d \nu}(x) \frac{d \kappa(x)}{d \eta(x)}(y) \right)$ is $\eta(x)$-integrable, hence $y \mapsto \log \left(\frac{d \mu}{d \nu}(x) \frac{d \kappa(x)}{d \eta(x)}(y) \right) = \log \frac{d \mu}{d \nu}(x) + \log \frac{d \kappa(x)}{d \eta(x)}(y)$ is $\kappa(x)$-integrable. Then, since $\log \frac{d \mu}{d \nu}(x)$ is constant in $y$ and $\kappa(x)$ is a finite measure, $y \mapsto \log \frac{d \kappa(x)}{d \eta(x)}(y)$ is $\kappa(x)$-integrable.
+
+{\bfseries($\Rightarrow$2.)} ii.\ implies that $x \mapsto  \int_y \frac{d \kappa(x)}{d \eta(x)}(y) \log \left(\frac{d \mu}{d \nu}(x) \frac{d \kappa(x)}{d \eta(x)}(y) \right) \partial \eta (x) = \int_y \log \left(\frac{d \mu}{d \nu}(x) \frac{d \kappa(x)}{d \eta(x)}(y) \right) \partial \kappa (x)$ is $\mu$-integrable. 
+Thanks to 3.\ we can split the integral:
+$$\int_y \log \left(\frac{d \mu}{d \nu}(x) \frac{d \kappa(x)}{d \eta(x)}(y) \right) \partial \kappa (x)
+= \int_y \log \frac{d \mu}{d \nu}(x) \partial \kappa (x) + \int_y \log \frac{d \kappa(x)}{d \eta(x)}(y) \partial \kappa (x) = \log \frac{d \mu}{d \nu}(x) + \int_y \log \frac{d \kappa(x)}{d \eta(x)}(y) \partial \kappa (x)$$
+Then using 1.\ we can conclude that $x \mapsto \int_y \log \frac{d \kappa(x)}{d \eta(x)}(y) \partial \kappa (x)$ is $\mu$-integrable.
+
+\end{proof}
+
+
+
+\subsection{Chain rule and tensorization}
+
+\begin{theorem}
+  \label{thm:kl_compProd_aux}
+  %\lean{}
+  %\leanok
+  \uses{def:KL}
+  Let $\mu, \nu$ be two finite measures on $\mathcal X$ and $\kappa, \eta : \mathcal X \rightsquigarrow \mathcal Y$ two Markov kernels.
+  Then $\KL(\mu \otimes \kappa, \nu \otimes \eta) = \KL(\mu, \nu) + \KL(\mu \otimes \kappa, \mu \otimes \eta)$.
+\end{theorem}
+
+\begin{proof}%\leanok
+\uses{thm:rnDeriv_chain_compProd, lem:integrable_llr_compProd_iff, lem:ac_compProd_iff}
+By Lemma~\ref{lem:ac_compProd_iff}, $\mu \otimes \kappa \ll \nu \otimes \eta \iff \left( \mu \ll \nu \ \wedge \ \mu \otimes \kappa \ll \mu \otimes \eta \right)$.
+Hence if any of the two sides of the equality is infinite due to a lack of absolute continuity, the other is as well.
+We now suppose that $\mu \otimes \kappa \ll \nu \otimes \eta$, $\mu \ll \nu$ and $\mu \otimes \kappa \ll \mu \otimes \eta$.
+
+TODO: deal with the non-integrable case, without using Lemma~\ref{lem:integrable_llr_compProd_iff} that requires countably generated sigma-algebras.
+
+Suppose then that all three log-likelihood ratios are integrable.
+We use the chain rule for Radon-Nikodym derivatives (Theorem~\ref{thm:rnDeriv_chain_compProd}).
+\begin{align*}
+\KL(\mu \otimes \kappa, \nu \otimes \eta)
+&= \int_p \log \frac{d(\mu \otimes \kappa)}{d(\nu \otimes \eta)}(p) \partial (\mu \otimes \kappa)
+\\
+&= \int_x \int_y\log \left(\frac{d\mu}{d \nu}(x)\frac{d(\mu \otimes \kappa)}{d (\mu \otimes \eta)}(x,y)\right) \partial \kappa(x) \partial\mu
+\\
+&= \int_x \int_y\log \left(\frac{d\mu}{d \nu}(x)\right) + \log \left(\frac{d(\mu \otimes \kappa)}{d (\mu \otimes \eta)}(x,y)\right) \partial \kappa(x) \partial\mu
+\\
+&= \int_x \log \left(\frac{d\mu}{d \nu}(x)\right)\partial\mu + \int_x \int_y\log \left(\frac{d(\mu \otimes \kappa)}{d (\mu \otimes \eta)}(x,y)\right) \partial \kappa(x) \partial\mu
+\\
+&= \int_x \log \left(\frac{d\mu}{d \nu}(x)\right)\partial\mu + \int_p\log \left(\frac{d(\mu \otimes \kappa)}{d (\mu \otimes \eta)}(p)\right) \partial (\mu \otimes \kappa)
+\\
+&= \KL(\mu, \nu) + \KL(\mu \otimes \kappa, \mu \otimes \eta)
+\: .
+\end{align*}
+\end{proof}
+
+
+\begin{theorem}[Chain rule, kernel version]
+  \label{thm:kl_compProd}
+  \lean{ProbabilityTheory.klDiv_compProd_eq_add_condKL}
+  \leanok
+  \uses{def:KL, def:condKL}
+  Let $\mu, \nu$ be two finite measures on $\mathcal X$ and $\kappa, \eta : \mathcal X \rightsquigarrow \mathcal Y$ two Markov kernels, with either $\mathcal X$ countable or $\mathcal{Y}$ countably generated.
+  Then $\KL(\mu \otimes \kappa, \nu \otimes \eta) = \KL(\mu, \nu) + \KL(\kappa, \eta \mid \mu)$.
+\end{theorem}
+
+\begin{proof} \leanok
+\uses{lem:rnDeriv_compProd, cor:rnDeriv_value, lem:integrable_llr_compProd_iff}
+Handle the case where $\mu \otimes \kappa$ is not absolutely continuous with respect to  $\nu \otimes \eta$ first, then the case where $p \mapsto \log \frac{d \mu \otimes \kappa}{d \nu \otimes \eta}(p)$ is not $\mu \otimes \kappa$-integrable using Lemma~\ref{lem:integrable_llr_compProd_iff}.
+
+For the case where $\mu \otimes \kappa \ll \nu \otimes \eta$ and $p \mapsto \log \frac{d \mu \otimes \kappa}{d \nu \otimes \eta}(p)$ is $\mu \otimes \kappa$-integrable use Lemma~\ref{lem:rnDeriv_compProd} and Corollary~\ref{cor:rnDeriv_value} in a computation:
+\begin{align*}
+\KL(\mu \otimes \kappa, \nu \otimes \eta)
+&= \int_p \log \frac{d(\mu \otimes \kappa)}{d(\nu \otimes \eta)}(p) \partial (\mu \otimes \kappa)
+\\
+&= \int_x \int_y\log \left(\frac{d\mu}{d \nu}(x)\frac{d\kappa}{d \eta}(x,y)\right) \partial \kappa(x) \partial\mu
+\\
+&= \int_x \int_y\log \left(\frac{d\mu}{d \nu}(x)\right) + \log \left(\frac{d\kappa}{d \eta}(x,y)\right) \partial \kappa(x) \partial\mu
+\\
+&= \int_x \log \left(\frac{d\mu}{d \nu}(x)\right)\partial\mu + \int_x \int_y\log \left(\frac{d\kappa}{d \eta}(x,y)\right) \partial \kappa(x) \partial\mu
+\\
+&= \int_x \log \left(\frac{d\mu}{d \nu}(x)\right)\partial\mu + \int_x \int_y\log \left(\frac{d\kappa(x)}{d \eta(x)}(y)\right) \partial \kappa(x) \partial\mu
+\\
+&= \KL(\mu, \nu) + \KL(\kappa, \eta \mid \mu)
+\: .
+\end{align*}
+
+\end{proof}
+
+
+\begin{theorem}[Chain rule, with Bayesian inverse]
+  \label{thm:kl_compProd_bayesInv}
+  %\lean{}
+  %\leanok
+  \uses{def:KL, def:condKL, def:bayesInv}
+  Let $\mu, \nu$ be two finite measures on $\mathcal X$ and $\kappa, \eta : \mathcal X \rightsquigarrow \mathcal Y$ two Markov kernels with Bayesian inverses $\kappa_\mu^\dagger$ and $\eta_\nu^\dagger$.
+  Then 
+  \begin{align*}
+  \KL(\mu \otimes \kappa, \nu \otimes \eta) = \KL(\kappa \circ \mu, \eta \circ \nu) + \KL(\kappa_\mu^\dagger, \eta_\nu^\dagger \mid \kappa \circ \mu)
+  \: .
+  \end{align*}
+\end{theorem}
+
+\begin{proof}%\leanok
+\uses{thm:kl_compProd}
+
+\end{proof}
+
+
+\begin{theorem}[Chain rule, product version]
+  \label{thm:kl_fst_add_condKL}
+  \lean{ProbabilityTheory.klDiv_fst_add_condKL}
+  \leanok
+  \uses{def:KL, def:condKL}
+  Let $\mu, \nu$ be two finite measures on $\mathcal X \times \mathcal Y$, where $\mathcal Y$ is standard Borel.
+  Then $\KL(\mu, \nu) = \KL(\mu_X, \nu_X) + \KL(\mu_{Y|X}, \nu_{Y|X} \mid \mu_X)$.
+\end{theorem}
+
+\begin{proof} \leanok
+\uses{thm:kl_compProd}
+Write $\mu = \mu_X \otimes \mu_{Y|X}$ and $\nu = \nu_X \otimes \nu_{Y|X}$, then use Theorem~\ref{thm:kl_compProd}.
+\end{proof}
+
+
+\begin{lemma}
+  \label{lem:kl_prod_two'}
+  \lean{ProbabilityTheory.klDiv_prod_two'}
+  \leanok
+  \uses{def:KL}
+  Let $\mu_1, \nu_1$ be finite measures on $\mathcal X$ and $\mu_2, \nu_2$ probability measures on $\mathcal{Y}$. Then
+  $$\KL(\mu_1\times \mu_2, \nu_1 \times \nu_2) = \KL(\mu_1, \nu_1) + \KL(\mu_2, \nu_2) \mu_1 (\mathcal X) \: .$$
+\end{lemma}
+
+\begin{proof} \leanok
+\uses{thm:kl_compProd, lem:condKL_const}
+Write $\mu_1 \times \mu_2$ and $\nu_1 \times \nu_2$ as composition products of a measure and a constant kernel, then apply the chain rule (Theorem~\ref{thm:kl_compProd}) and Lemma~\ref{lem:condKL_const}.
+\end{proof}
+ 
+
+\begin{theorem}[Tensorization]
+  \label{thm:kl_prod_two}
+  \lean{ProbabilityTheory.klDiv_prod_two}
+  \leanok
+  \uses{def:KL}
+  For $\mu_1$ a probability measure on $\mathcal X$, $\nu_1$ a finite measure on $\mathcal{X}$ and $\mu_2, \nu_2$ two probability measures on $\mathcal Y$,
+  \begin{align*}
+  \KL(\mu_1 \times \mu_2, \nu_1 \times \nu_2) = \KL(\mu_1, \nu_1) + \KL(\mu_2 \times \nu_2) \: .
+  \end{align*}
+\end{theorem}
+
+\begin{proof} \leanok
+\uses{lem:kl_prod_two'}
+This is a particular case of Lemma~\ref{lem:kl_prod_two'}.
+\end{proof}
+
+
+\begin{theorem}[Tensorization - finite product]
+  \label{thm:kl_pi}
+  \lean{ProbabilityTheory.klDiv_pi}
+  \leanok
+  \uses{def:KL}
+  Let $I$ be a finite index set. Let $(\mu_i)_{i \in I}, (\nu_i)_{i \in I}$ be probability measures on spaces $(\mathcal X_i)_{i \in I}$. Then
+  \begin{align*}
+  \KL(\prod_{i \in I} \mu_i, \prod_{i \in I} \nu_i) = \sum_{i \in I} \KL(\mu_i, \nu_i)
+  \: .
+  \end{align*}
+\end{theorem}
+
+\begin{proof} \leanok
+\uses{thm:kl_prod_two}
+Induction on the size of $I$, using Theorem~\ref{thm:kl_prod_two}.
+\end{proof}
+
+
+\begin{lemma}
+  \label{lem:kl_chain_rule_cond_event}
+  %\lean{}
+  %\leanok
+  \uses{def:KL}
+  Let $\mu, \nu$ be two measures and $E$ an event. Let $\mu_{|E}$ be the measure defined by $\mu_{|E}(A) = \frac{\mu(A \cap E)}{\mu(E)}$ and define $\nu_{|E}$, $\mu_{| E^c}$ and $\nu_{| E^c}$ similarly. Let $\kl(p,q) = p\log\frac{p}{q} + (1-p)\log\frac{1-p}{1-q}$ be the Kullback-Leibler divergence between Bernoulli distributions with means $p$ and $q$. Then
+  \begin{align*}
+  \KL(\mu, \nu) \ge \kl(\mu(E), \nu(E)) + \mu(E) \KL(\mu_{|E}, \nu_{|E}) + \mu(E^c) \KL(\mu_{|E^c}, \nu_{|E^c}) \: .
+  \end{align*}
+\end{lemma}
+
+\begin{proof}
+\uses{thm:kl_compProd, lem:fDiv_compProd_prod_eq}
+Let $\mu_E$ be the Bernoulli distribution with $\mu_E(\{1\}) = \mu(E)$, and define $\nu_E$ similarly.
+Let $\kappa : \{0,1\} \rightsquigarrow \mathcal X$ be the kernel defined by $\kappa(1) = \mu_{|E}$ and $\kappa(0) = \mu_{|E^c}$. Define a kernel $\eta$ similarly for $\nu$.
+Then $\mu = \kappa \circ \mu_E$ and $\nu = \eta \circ \nu_E$.
+
+$\mu_E \otimes \kappa$ is equal to the composition of $\mu$ and the deterministic kernel given by the function $f : x \mapsto (\mathbb{I}_E(x), x)$. By Lemma~\ref{lem:fDiv_compProd_prod_eq}, that gives $\KL(\mu_E \otimes \kappa, \nu_E \otimes \eta) = \KL(\mu, \nu)$.
+
+Using the chain rule (Theorem~\ref{thm:kl_compProd}),
+\begin{align*}
+\KL(\mu_E \otimes \kappa, \nu_E \otimes \eta)
+&= \KL(\mu_E, \nu_E) + \KL(\kappa, \eta \mid \mu_E)
+\\
+&= \KL(\mu_E, \nu_E) + \mu(E) \KL(\mu_{|E}, \nu_{|E}) + \mu(E^c) \KL(\mu_{|E^c}, \nu_{|E^c})
+\: .
+\end{align*}
+
+\end{proof}
+
+
+\begin{lemma}
+  \label{lem:expectation_llr_event}
+  %\lean{}
+  %\leanok
+  \uses{def:KL}
+  Let $\mu, \nu$ be two measures and $E$ an event. Then
+  $\mu(E)\log\frac{\mu(E)}{\nu(E)} \le \mu\left[\mathbb{I}(E)\log \frac{d \mu}{d \nu}\right]$ .
+\end{lemma}
+
+\begin{proof}
+\uses{lem:kl_ge}
+Apply Lemma~\ref{lem:kl_ge} to the measures $\mu$ and $\nu$ restricted to $E$. $\mu\left[\mathbb{I}(E)\log \frac{d \mu}{d \nu}\right]$ is the KL between those two distributions.
+\end{proof}
+
+
+
+
+TODO: find a way to hide the following dummy lemma
+\begin{lemma}[Dummy lemma: KL properties]
+  \label{lem:kl_properties}
+  %\lean{}
+  \leanok
+  \uses{def:KL, def:condKL}
+  Dummy node to summarize properties of the Kullback-Leibler divergence.
+\end{lemma}
+
+\begin{proof}\leanok
+\uses{
+  lem:kl_eq_fDiv,
+  lem:condKL_eq_condFDiv,
+  lem:kl_self,
+  lem:condKL_const,
+  thm:kl_fst_le,
+  thm:kl_data_proc,
+  lem:kl_ge,
+  lem:kl_nonneg,
+  lem:kl_eq_zero_iff,
+  lem:kl_convex,
+  thm:kl_compProd,
+  thm:kl_compProd_bayesInv,
+  thm:kl_fst_add_condKL,
+  lem:kl_prod_two',
+  thm:kl_prod_two,
+  thm:kl_pi,
+  lem:kl_chain_rule_cond_event
+}
+\end{proof}

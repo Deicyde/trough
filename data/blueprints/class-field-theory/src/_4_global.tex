@@ -1,0 +1,720 @@
+\chapter{Global Class Field Theory}
+
+In this chapter we let $l/k$ be a finite Galois extension of
+algebraic number fields. We shall consider the idele class group $\Cl_l = \A_l^\times / l^\times$
+as a module for the Galois group $\Gal(l/k)$ and we shall describe the construction of
+fundamental classes in $H^2(l/k, \Cl_l)$.
+These classes give rise to a reciprocity isomorphism
+\[
+	\Gal(l/k)^{\ab} \cong \Cl_k / N(\Cl_l).
+\]
+We would therefore like to prove for all intermediate fields $l / m / k$:
+\begin{itemize}
+	\item
+	$H^1(l/m, \Cl_l) = 0$,
+	\item
+	$H^2(l/m, \Cl_l)$ is cyclic of order $[l:m]$.
+\end{itemize}
+
+We note the following consequence of Hilbert's theorem 90:
+
+\begin{lemma} \label{lem:idele class invariants}
+	\uses{thm:hilbert 90}
+	Let $l/k$ be a finite Galois extension of number fields (or even global fields).
+	The map $\Cl_k \to \Cl_l ^ {\Gal(l/k)}$ is an isomorphism.
+\end{lemma}
+
+\begin{proof}
+	We have a short exact sequence
+	\[
+		0 \to l^\times \to \A_l^\times \to \Cl_l \to 0.
+	\]
+	Taking $\Gal(l/k)$-invariants gives a long exact sequence beginning with
+	\[
+		0 \to k^\times \to \A_k^\times \to \Cl_l^{\Gal(l/k)} \to H^1(l/k, l^\times).
+	\]
+	The last term is zero by \ref{thm:hilbert 90}. This implies the result.
+\end{proof}
+
+By the lemma, we may regard $H^0_{\Tate}(l/k,\Cl_l)$ as the quotient
+$\Cl_k / N_{l/k} \Cl_l$.
+Furthermore, the inflation map for a tower of Galois extensions $l/m/k$ takes the form
+\[
+	H^\bullet(m/k, \Cl_m) \to H^\bullet(l/k, \Cl_l).
+\]
+
+
+
+
+
+
+
+\section{Choice of \texorpdfstring{$S$}{S}}
+
+Let $S$ be a finite set of places of $k$, containing all of the infinite primes and all
+of the primes which ramify in $l$.
+We shall use the notation
+\[
+	\A_{l,S} = \prod_{v \in S} \prod_{w | v} l_w \times \prod_{v \notin S} \prod_{w | v} \cO_v.
+\]
+We also write $\cO_{l,S}$ for the ring $S$-integers in $l$:
+\[
+	\cO_{l,S} = \{x \in l, \forall v \not\in S, \forall w | v, |x|_v \le 1\} = l \cap \A_{l,S}.
+\]
+We regard $\cO_{l,S}$ as a subring of $\A_{l,S}$ and
+$\cO_{l,S}^\times$ as a subgroup of $\A_{l,S}^\times$.
+
+The quotient $\A_l^\times / \A_{l,S}^\times$ is naturally isomorphic to the
+group of non-zero fractional ideals of $\cO_{l,S}$.
+By adding more primes to $S$ if necessary, we may assume that $\cO_{k,S}$ and $\cO_{l,S}$ are both
+principal ideal domains (this can be achieved by adding to $S$ primes $P$ whose ideal classes
+generate the class groups of $k$ and $l$).
+With such a choice of $S$ we have:
+\[
+	\A_{l}^\times = \A_{l,S}^\times l^\times,
+	\qquad
+	\A_k^\times = \A_{k,S}^\times k^\times,
+\]
+and therefore
+\[
+	\Cl_{l} = \A_{l,S}^\times / \cO_{l,S}^\times, \qquad
+	\Cl_{k} = \A_{k,S}^\times / \cO_{k,S}^\times.
+\]
+The big advantage of working with $\A_{l,S}^\times$ and $\cO_{l,S}$ instead of $\A_l^\times$ and
+$l^\times$ is that $\A_{l,S}^\times$ and $\cO_{l,S}$ have finite cohomology groups,
+whereas the cohomology groups of $\A_l^\times$ and $l^\times$ are infinite.
+
+
+
+
+
+\section{The Herbrand quotient of the \texorpdfstring{$S$}{S}-ideles}
+
+Let $v$ be a place of $k$ and $\hat v$ a place of $l$ above $v$.
+We'll write $D_{\hat v}$ the decomposition group at $\hat v$.
+
+\begin{lemma} \label{lem:semi-local iso coind}
+	Then there are isomorphisms
+	\[
+		\prod_{w | v} l_w^\times
+		\cong
+		\coind_{D_{\hat v}}^{\Gal(l/k)} l_{\hat v}^\times,
+		\qquad
+		\prod_{w | v} \cO_w^\times
+		\cong
+		\coind_{D_{\hat v}}^{\Gal(l/k)} \cO_{\hat v}^\times.
+	\]
+\end{lemma}
+
+\begin{proof}
+	We'll write $x$ for an element of $\prod_{w | v} l_w^\times$ and $x_w$ for it's component in $l_w$.
+	Define a map $\Phi : \prod_{w | v} l_w^\times \to (\Gal(l/k) \to l_{\hat v}^\times)$ by
+	\[
+		\Phi (x)
+		=
+		(g \mapsto g \bullet x_{g^{-1} \hat v}).
+	\]
+	Note that for $h \in D_{\hat v}$ we have
+	\[
+		\Phi (x) (hg) = h \bullet (g \bullet x_{g^{-1} \hat v}) = h \bullet \Phi(x) (g).
+	\]
+	Therefore $\Phi(x)$ is in the subspace $\coind_{D_v} l_{\hat v}$, and it's
+	easy to check that $\Phi$ gives a group isomorphism
+	$\prod_{w | v} l_w^\times \cong \coind_{D_v} l_{\hat v}^\times$.
+	We'll check that this map intertwines the actions of $G$.
+	For $g \in G$, then element $g \bullet x$ has $w$-component
+	$g \bullet x_{g^{-1}\bullet w}$.
+	This implies
+	\[
+		\Phi( g \bullet x)(h)
+		=	h\bullet (g \bullet x)_{h^{-1} \bullet \hat v}
+		=	h g \bullet x_{(hg)^{-1} \bullet \hat v}
+		= \Phi (x) (hg).
+	\]
+	The proof of the isomorphism for $\prod_{w | v} \cO_w^\times$ is similar.
+\end{proof}
+
+\begin{lemma} \label{lem:cohomology S-ideles decomp}
+	\uses{lem:Shapiro,
+		lem:semi-local iso coind,
+		lem:unramified units trivial
+	}
+	There are isomorphisms for all $n > 0$
+	\[
+		H^n(l/k, \A_{S,l}^\times)
+		\cong
+		\prod_{v \in S} H^n(l_{\hat v} / k_v, l_{\hat v}^\times).
+	\]
+\end{lemma}
+
+\begin{proof}
+	We note that by \ref{lem:semi-local iso coind} we have
+	\[
+		\A_{S,l}^\times \cong \prod_{v \in S} \coind_{D_{\hat v}} l_{\hat v}^\times
+		\times
+		\prod_{v \not\in S} \coind_{D_{\hat v}} \cO_{\hat v}^\times
+	\]
+	By Shapiro's lemma (\ref{lem:Shapiro}) we have
+	\[
+		H^n(l/k,\A_{S,l}^\times) \cong
+		\prod_{v \in S} H^n(l_{\hat v}/k_v , l_{\hat v}^\times)
+		\times
+		\prod_{v \not\in S} H^n(l_{\hat v}/k_v , \cO_{\hat v}^\times)
+	\]
+	For $v \not\in S$, the extension $l_{\hat{v}}/l_v$ is unramified, so
+	by \ref{lem:unramified units trivial} $\cO_{\hat v}^\times$ has trivial cohomology.
+\end{proof}
+
+
+\begin{lemma} \label{lem:herbrand S-ideles}
+	\uses{lem:cohomology S-ideles decomp,
+		lem:herbrand local l*
+	}
+	If $l/k$ is a cyclic extension then we have
+	\[
+		h(l/k, \A_{S,l} ^\times )
+		=
+		\prod_{v \in S} |D_{\hat v}|.
+	\]
+\end{lemma}
+
+\begin{proof}
+	This follows from \ref{lem:cohomology S-ideles decomp} and
+	\ref{lem:herbrand local l*}.
+\end{proof}
+
+
+
+
+
+\section{The Herbrand quotient of the \texorpdfstring{$S$}{S}-units}
+
+Define the \emph{logarithmic space} $V_S$ to be the following finite dimensional vector space
+over the real numbers:
+\[
+	V_S = \prod_{v \in S} \prod_{w | v} \R.
+\]
+We consider $V_S$ as a representation of $\Gal(l/k)$, where the Galois action
+permutes the places $w$ lying above each $v \in S$.
+As a Galois representation we have
+\[
+	V_S \cong \prod_{v \in S} \ind_{D_{\hat v}}^{\Gal(l/k)} \R.
+\]
+Contained in $V_S$ we have a lattice $L_S$ consisting of vectors whose components are all in $\Z$.
+Here we are using the word ``lattice'' to mean the $\Z$-space of a basis for $V_S$.
+We have an isomorphism
+\[
+	L_S \cong \prod_{v \in S} \ind_{D_{\hat v}}^{\Gal(l/k)} \Z.
+\]
+
+\begin{lemma} \label{lem:herbrand L_S}
+	\uses{lem:Shapiro,
+		lem:H2 cyclic Z
+	}
+	If $l/k$ is a cyclic extension then
+	$h(l/k,L_S) = \prod_{v \in S} |D_{\hat v}|$.
+\end{lemma}
+
+\begin{proof}
+	This follows from Shapiro's lemma (\ref{lem:Shapiro})
+	together with the calculation
+	of the cohomology of a cyclic group with values in $\Z$ (\ref{lem:H2 cyclic Z}).
+\end{proof}
+
+\begin{lemma} \label{lem:herbrand log lattice}
+	\uses{lem:herbrand L_S,
+		lem:herbrand ses,
+		lem:herbrand finite
+	}
+	Let $l/k$ be cyclic and let $M$ be any Galois-invariant lattice in $V_S$.
+	Then $h(l/k,M) = \prod_{v \in S} |D_{\hat v}|$
+\end{lemma}
+
+\begin{proof}
+	The representations $M \otimes \Q$ and $L_S \otimes \Q$ have the same character
+	(this is just the character of the representation $V_S$).
+	Therefore the representations $M \otimes \Q$ and $L_S \otimes \Q$ are isomorphic.
+	Hence $M$ is isomorphic to subrepresentation of finite index in $L_S$,
+	so by \ref{lem:herbrand ses} and \ref{lem:herbrand finite}
+	they have the same Herbrand quotient.
+	The result then follows from \ref{lem:herbrand L_S}.
+\end{proof}
+
+
+The vector $(1,1,\ldots,1) \in V_S$ is fixed by all elements of $\Gal(l/k)$, so it spans
+a subrepresentation isomorphic to the trivial representation $\Z$.
+Recall the we have a logarithmic map
+\[
+	\log_S : \cO_S^\times \to V_S,
+\]
+where the $w$-component of $\log_S(x)$ is $\log |x|_w$.
+The kernel of $\log_S$ is the finite group of roots of unity in $k$.
+
+\begin{theorem} \label{thm:Dirichlet unit theorem}
+	%\lean{NumberField.Units.dirichletUnitTheorem.unitLattice_span_eq_top}
+	%\mathlibok
+	$\log_S(\cO_S^\times)$ has zero intersection with $\Span (1,1,\ldots,1)$.
+	The direct sum of these subrepresentations is a lattice in $V_S$.
+\end{theorem}
+
+\begin{proof}
+	%\mathlibok
+	An equivalent statement is already in Mathlib as
+	\texttt{NumberField.Units.dirichletUnitTheorem.unitLattice\_span\_eq\_top}.
+\end{proof}
+
+\begin{corollary} \label{lem:herbrand S-units}
+	\uses{thm:Dirichlet unit theorem,
+		lem:herbrand ses,
+		lem:herbrand finite,
+		lem:H2 cyclic Z,
+		lem:herbrand log lattice
+	}
+	Let $l/k$ be a cyclic extension. Then
+	\[
+		h(l/k,\cO_{l,S}^\times) = \frac{\prod_{v\in S} |D_{\hat v}|}{[l:k]}.
+	\]
+\end{corollary}
+
+\begin{proof}
+	Since $\log_S$ has finite kernel, the Herbrand quotient of $\cO_{l,S}^\times$ is
+	equal to that of $\log_S(\cO_S^\times)$.
+	By Dirichlet's unit theorem, $\log_S(\cO_S^\times) \oplus \Z$ is a lattice in
+	$V_S$.
+	We know the Herbrand quotient of $\log_S(\cO_S^\times) \oplus \Z$
+	from \ref{lem:herbrand log lattice}, and the Herbrand quotient of $\Z$ from \ref{lem:H2 cyclic Z}.
+\end{proof}
+
+\begin{corollary} \label{lem:herbrand idele class group}
+	\uses{lem:herbrand S-units,
+		lem:herbrand S-ideles,
+		lem:herbrand ses
+	}
+	If $l/k$ is cyclic then $h(l/k,\Cl_l) = [l:k]$.
+\end{corollary}
+
+\begin{proof}
+	Our choice of $S$ implies $\Cl_l \cong \A_{l,S}^\times / \cO_{l,S}^\times$.
+	We have calculated the Herbrand quotients of $\A_{l,S}^\times$ and $\cO_{l,S}^\times$
+	in \ref{lem:herbrand S-ideles} and \ref{lem:herbrand S-units}.
+\end{proof}
+
+
+
+
+
+\section{Dirichlet Density}
+
+\begin{definition} \label{def:Dirichlet density}
+	Let $M$ be a set of primes of $\cO_k$.
+	We'll say that $M$ has a \emph{Dirichlet density} $c \in \R$ if
+	\[
+		\sum_{P \in M} N(P)^{-s} \stackrel{s \to 1+}\sim c  \cdot \log\left(\frac{1}{s-1}\right).
+	\]
+	where $s$ tends to $1$ through the real numbers $s>1$.
+	The symbol $\sim$ denotes asymptotic equivalence, which means that the ratio of the left hand
+	side to the right hand side converges to $1$ as $s$ tends to $1$ from above.
+	Implied constants may depend of the set $M$ and the field $k$.
+\end{definition}
+
+
+\begin{lemma} \label{lem:Dirichlet density union}
+	\uses{def:Dirichlet density}
+	Suppose $M_1$ and $M_2$ are disjoint sets of primes of $\cO_l$.
+	If two of the sets $M_1, M_2, M_1 \cup M_2$ have a Dirichlet density, then so does the third
+	and we have
+	\[
+		\density(M_1 \cup M_2) = \density(M_1) + \density(M_2).
+	\]
+\end{lemma}
+
+\begin{proof}
+	This is trivial.
+\end{proof}
+
+\begin{lemma} \label{lem:Dirichlet density top}
+	\uses{def:Dirichlet density}
+	The set of all primes of $\cO_k$ has Dirichlet density $1$.
+\end{lemma}
+
+\begin{proof}
+	Let $P$ be a prime. For $s > 1$ we have
+	\[
+		\left|N(P)^{-s} - \log\left( \frac{1}{1-N(P)^{-s}}\right)\right| \ll N(P)^{-2s}
+	\]
+	Since $\sum N(P)^{-2s}$ is bounded in the region $s > 1$ (this follows from the convergence of the
+	Dedekind zeta function), we have
+	\[
+		\sum_P N(P)^{-s}
+		\sim
+		\sum_P \log\left( \frac{1}{1-N(P)^{-s}} \right)
+		=
+		\log \zeta_l(s),
+	\]
+	where $\zeta_l$ is the Dedekind zeta function (\texttt{NumberField.dedekindZeta}).
+	By the analytic class number formula (\verb!NumberField.tendsto_sub_one_mul_dedekindZeta_nhdsGT!)
+	there is a positive real number $r$ such that
+	\[
+		\zeta_l(s) = \frac{r}{s-1} + O(1) \qquad (s > 1).
+	\]
+	This implies
+	\[
+		\log(\zeta_l(s)) \sim \log\left( \frac{1}{s-1}\right).
+	\]
+\end{proof}
+
+
+
+\begin{lemma} \label{lem:Dirichlet density degree one}
+	\uses{lem:Dirichlet density top,
+		lem:Dirichlet density union
+	}
+	The set of primes of $\cO_l$ of degree one has Dirichlet density $1$.
+\end{lemma}
+
+\begin{proof}
+	Let $M$ be the set of primes of degree larger than one. It's sufficient to
+	prove that $M$ has Dirichlet density $0$.
+	We have
+	\[
+		\sum_{P \in M} N(P)^{-s}
+		= \sum_{n \in \N} A(n) n^{-s},
+	\]
+	Where $A$ is the number of primes of degree $>1$ with norm $n$.
+	Note that $A(n) \le [l:\Q]$. Also $A(n)=0$ unless $n=m^r$ for positive integer $m$ and
+	$1 \le r \le [l:Q]$.
+	This implies
+	\[
+		\sum_{P \in M} N(P)^{-s}
+		\le [l:\Q] \sum_{r=2}^{[l:\Q]} \sum_{m =1} ^\infty m^{-rs}
+		\le [l:\Q] (\zeta_\Q(2) + \cdots + \zeta_\Q([l:\Q]) ).
+	\]
+	Since the sum above is bounded on the region $s > 1$,
+	the set $M$ has Dirichlet density $0$.
+\end{proof}
+
+
+\begin{lemma} \label{lem:Dirichlet density split}
+	\uses{lem:Dirichlet density degree one}
+	Let $l/k$ be a finite Galois extension of number fields.
+	Then the set of degree $1$ primes of $k$ which split completely in $l$
+	has density $\frac{1}{[l:k]}$.
+\end{lemma}
+
+\begin{proof}
+	Let $M_k$ be the set of degree $1$ primes of $k$ and $M_l$ the set of degree $1$ primes of $l$.
+	Every prime $Q$ in $M_l$ lies above some prime $P \in M_k$.
+	If there is a prime $Q$ above $P$, then there are precisely $[l:k]$ of them; this happens when $P$
+	splits completely in $l$.
+
+	Let $M$ be the set of $P \in M_k$ which split completely in $l$.
+	Then we have
+	\[
+		\sum_{P \in M} N(P)^{-s}
+		=
+		\frac{1}{[l:k]} \sum_{Q \in M_l} N(Q)^{-s}
+		\sim \frac{1}{[l:k]} \log\left( \frac{1}{s-1}\right).
+	\]
+	Here we have used \ref{lem:Dirichlet density degree one}.
+\end{proof}
+
+
+
+
+
+\section{Some \texorpdfstring{$L$}{L}-functions}
+
+\begin{lemma} \label{lem:H0 idele class group finite}
+	$H^0_{\Tate}(l/k,\Cl_l)$ is finite.
+\end{lemma}
+
+\begin{proof}
+	We have
+	\begin{align*}
+		\Cl_{k} / N(\Cl_l)
+		& \cong \A_{k,S}^\times / \cO_{k,S}^\times N(\A_{l,S}^\times) \\
+		& \cong \left(\prod_{v \in S} k_v^\times / N(l_{\hat v}^\times)\right) / \cO_{k,S}^\times,
+	\end{align*}
+	where $\hat v$ is a place of $l$ lying above $v$.
+	The result follows because each of the groups $k_v^\times / N(l_w)$ is finite
+	(in fact by the local reciprocity isomorphism this is isomorphic to the abelianization of the
+	decomposition group at $\hat v$).
+\end{proof}
+
+Given any maximal ideal $P$ of $\cO_{k,S}$, we let $\pi_P$ be an idele whose
+$P$-component is a uniformizer in $k_P$, and whose other components are all $1$.
+The coset of $\pi_P$ in $H^0(l/k,\Cl_l)$ does not depend on the choice of uniformizer since
+all the local units at $P$ are local norms from $l_{Q}$ for any $Q|P$
+(because $P$ is unramified in $l$).
+Equivalently, if we choose a generator $P=(\pi)$ with $\pi \in \cO_{k,S}$
+then the coset of $\pi_P$ is the inverse of
+the image of $\pi$ in $\prod_{v \in S} k_v^\times / N(l_{\hat v}^\times)$.
+This clearly extends to a homomorphism
+\[
+	\iota : \textrm{non-zero fractional ideals of $\cO_{k,S}$}
+	\to
+	H^0_{\Tate}(l/k,\Cl_l),
+\]
+whose kernel is the subgroup of ideals with a generator which is a local norm at $v$ for
+all $v \in S$.
+
+\begin{definition} \label{def:L-function}
+	\uses{lem:H0 idele class group finite}
+	Let $\chi : H^0_{\Tate}(l/k,\Cl_l) \to \C^\times$ be a character.
+	For a non-zero ideal $I$ of $\cO_{k,S}$, we shall write $\chi(I)$ in place of $\chi(\iota(I))$.
+	We define the $L$-function of $\chi$ by
+	\[
+		L(s,\chi)
+		=
+		\sum_{I} \chi(I) \cdot N(I)^{-s}
+		=
+		\prod_{P} \frac{1}{1-\chi(P) \cdot N(P)^{-s}}.
+	\]
+	Here $s$ is a complex number with real part greater than $1$; both the product and the series
+	converge absolutely in that region.
+	In the sum, $I$ ranges over the non-zero ideals of $\cO_{k,S}$, and in the product $P$
+	ranges over the maximal ideals of $\cO_{k,S}$.
+
+	If $\chi$ is the trivial character, then $L(s,\chi)$ is
+	(up to finitely many Euler factors for primes in $S$)
+	equal to the Dedekind zeta function of $k$.
+\end{definition}
+
+
+It's known that $L(s,\chi)$ has a meromorphic continuation to $\C$
+and is entire if $\chi$ is non-trivial
+(see for example Tate's thesis, which is chapter XV of \cite{cassells frohlich}).
+We won't need such a strong result here; we can make do with the following:
+
+\begin{lemma}[Weak lemma] \label{lem:L-function bound}
+	\uses{def:L-function}
+	If $\chi$ is a non-trivial character then $L(s,\chi)$ is
+	bounded on the interval $(1,2)$.
+\end{lemma}
+
+\begin{lemma} \label{lem:density bound}
+	\uses{lem:L-function bound}
+	Let $M$ be a set of primes of $\cO_S$ whose image in $H^0_{\Tate}(l/k,\Cl_l)$ is zero.
+	There exists a real number $c$ depending only on the fields $k$ and $l$,
+	such that for all $s > 1$ we have:
+	\[
+		\sum_{p \in M} N(P)^{-s}
+		\le \frac{1}{|H^0_{\Tate}(l/k,\Cl_l)|} \log\left(\frac{1}{s-1}\right) + c.
+	\]
+\end{lemma}
+
+
+\begin{proof}
+	Let $s > 1$. All the series in the following calculation converge absolutely in this region.
+	The implied constants in the $O(1)$ terms do not depend on $s$.
+	\begin{align*}
+		\sum_{P \in M} |N(P)|^{-s}
+		&= \frac{1}{|H^0_{\Tate}(l/k,\Cl_l)|} \sum_P \sum_\chi \chi(P) N(P)^{-s}\\
+		&= \frac{1}{|H^0_{\Tate}(l/k,\Cl_l)|}
+		\sum_P \sum_\chi -\log(1-\chi(P) N(P)^{-s}) + O(1)\\
+		&= \frac{1}{|H^0_{\Tate}(l/k,\Cl_l)|}
+		\sum_P \sum_\chi -\log |1-\chi(P) N(P)^{-s}| + O(1)\\
+		&= \frac{1}{|H^0_{\Tate}(l/k,\Cl_l)|}
+		\sum_\chi \sum_P -\log |1-\chi(P) N(P)^{-s}| + O(1)\\
+		&= \frac{1}{|H^0_{\Tate}(l/k,\Cl_l)|} \log \left(\prod_\chi |L(s,\chi)| \right) + O(1)\\
+		&\le \frac{1}{|H^0_{\Tate}(l/k,\Cl_l)|} \log \left(\frac{1}{s-1}\right) + O(1).
+	\end{align*}
+	Interchanging the order of summation is justified because the series converge absolutely.
+	We need to be slightly careful about which branch of the logarithm we are using here.
+	In the expression $\log(1-\chi(P) N(P)^{-s})$ we shall mean the branch which is continuous
+	on the ball of radius $1$, centred about $1$.
+	The imaginary parts of $\log(1-\chi(P) N(P)^{-s})$ and $\log(1-\bar \chi(P) N(P)^{-s})$
+	cancel out; this justifies replacing $\log(1-\chi(P) N(P)^{-s})$ by $\log |1-\chi(P) N(P)^{-s}|$.
+\end{proof}
+
+\begin{remark}
+	In fact the density of the set $M$ in this lemma is precisely $\frac{1}{|H^0_{\Tate}(l/k,\Cl_l)|}$.
+	This can be proved by showing that each $L(s,\chi)$ has a continuation to a neighbourhood
+	of $s=1$, and is non-zero at $s=1$.
+	However, proving this is more difficult than the weak lemma above, and we only need the inequality
+	of the lemma.
+\end{remark}
+
+
+
+
+
+
+% \begin{lemma}
+% 	There is a meromorphic continuation of $L(s,\chi)$
+% 	to a neighbourhood of the interval $[\frac{1}{[l:k]},1]$.
+% 	the region $\Re s > 1-\frac{1}{[k:\Q]}$.
+% 	If $\chi=1$ then there is a simple pole at $s=1$ and no other poles in this region.
+% 	If $\chi \ne 1$ then there are no poles.
+% \end{lemma}
+
+
+% We also need the following purely analytic theorem of Landau:
+
+% \begin{theorem}
+% 	Suppose we have a Dirichlet series $D(s) = \sum_{n=0}^\infty a_n \cdot n^{-s}$ with
+% 	nonnegative real coefficients $a_n$.
+% 	Suppose $D(s)$ has absolute convergence abscissa $\sigma$, i.e. it converges absolutely for $\Re s > \sigma$
+% 	and not for $\Re s < \sigma$.
+% 	Then there is no analytic continuation of $D(s)$ to any neighbourhood of $\sigma$.
+% \end{theorem}
+
+% \begin{proof}
+% 	By rescaling the coefficients $a_n$ if necessary, we may assume that $\sigma=0$.
+% 	Let's suppose that there does exist an analytic continuation to some neighbourhood of $0$.
+% 	This implies that the power series expansion of $D(s)$ about $s=1$ converges on a disk or radius
+% 	greater than $1$. Let's assume that this power series converges absolutely one the closed
+% 	disk of radius $1+\epsilon$.
+% 	This power series expansion is:
+% 	\[
+% 		D(1+r)
+% 		= \sum_{m=0}^\infty \frac{D^{(m)}(1)}{m!} r^m
+% 		= \sum_{m=0}^\infty \left(\frac{\sum_{n=1}^\infty a_n (-m \log n )^m n^{-1}}{m!} r^m\right)
+% 	\]
+% 	Note that if $r < 0$ then every term in the double sum above is positive, so the order of
+% 	summation may be swapped.
+% 	Substituting $r = -1-\epsilon$ we get
+% 	\[
+% 		D(-\epsilon)
+% 		=\sum_{n=1}^\infty a_n n^{-1}
+% 		\left(\sum_{m=0}^\infty  \frac{(-m \log n )^m }{m!} (-1-\epsilon)^m\right).
+% 	\]
+% 	The inner series in the above expression is the power series expansion of $n^{-\epsilon}$,
+% 	which converges on the whole complex plane.
+% 	We therefore have
+% 	\[
+% 		D(-\epsilon)
+% 		=\sum_{n=1}^\infty a_n n^{-\epsilon}
+% 	\]
+% 	In particular the series on the right hand side converges,
+% 	and the convergence is absolute because all the terms are non-negative real numbers.
+% 	This implies absolute convergence of $D(s)$ in the half-place $\Re s > -\epsilon$, contradicting
+% 	our assumption.
+% \end{proof}
+
+
+% \begin{theorem}
+% 	For each non-trivial character $\chi$ we have $L(s,\chi) \ne 0$.
+% \end{theorem}
+
+% \begin{proof}
+% 	Consider the following Dirichlet series:
+% 	\[
+% 		D(s) = \prod_\chi L(s,\chi).
+% 	\]
+% 	By examining the Euler factors for each prime, we can check that all the coefficients
+% 	of $D(s)$ are nonnegative.
+% 	Furthermore if $I$ is an ideal of $\cO_S$, then $D(s)$ has a term $N(I)^{-[l:k] s}$.
+% 	This implies for real $s$ in the region of convergence
+% 	\[
+% 		D(s) \ge L(\chi_1,[l:k]s).
+% 	\]
+% 	If we assume that $L(1,\chi)=0$ for some $\chi$ then $D(s)$ is analytic
+% 	in a neighbourhood of $[\frac{1}{[l:k]},1]$.
+% 	Hence bu Landau's theorem, the Dirichlet seties for $D(s)$ converges absolutely on that region.
+% 	It follows that $L(\chi_1, [l:k]s)$ is converges absolutely on that region.
+% 	This contradicts the fact that $L(\chi_1, ds)$ has a pole at $\frac{1}{[l:k]}$
+% \end{proof}
+
+
+
+
+
+\section{The first inequality}
+
+\begin{theorem} \label{thm:first inequality}
+	\uses{lem:Dirichlet density split,
+		lem:density bound
+	}
+	For any finite Galois extension $l/k$ be have
+	\[
+		|H^0_{\Tate}(l/k, \Cl_{l}) | \le [l : k].
+	\]
+\end{theorem}
+
+\begin{proof}
+	Let $M_1$ be the set of degree $1$ primes of $\cO_{k,S}$ which split in $l$ and let $M_2$ be the
+	set of primes of $\cO_{k,S}$ whose image in $H^0_{\Tate}(l/k,\Cl_l)$ is zero.
+	Given $P \in M_1$, the norm map $l_{\hat v}^\times \to k_v^\times$ is the identity map, and is
+	in particular surjective. Hence the image of $P$ in $H^0_{\Tate}(l/k,\Cl_l)$ is zero.
+	This shows that $M_1 \subseteq M_2$.
+	This implies for $s> 1$:
+	\[
+		\sum_{P \in M_1} N(P)^{-s}
+		\le \sum_{P \in M_2} N(P)^{-s} .
+	\]
+	By \ref{lem:density bound} we have
+	\[
+		\sum_{P \in M_1} N(P)^{-s}
+		\le
+		\frac{1}{|H^0_{\Tate}(l/k,\Cl_l)|} \log \left(\frac{1}{1-s}\right) + O(1).
+	\]
+	By \ref{lem:Dirichlet density split} the left hand side is asymptotic to
+	$\frac{1}{[l:k]}\log \left(\frac{1}{1-s}\right)$.
+	Therefore $\frac{1}{[l:k]} \le \frac{1}{|H^0_{\Tate}(l/k,\Cl_l)|}$.
+\end{proof}
+
+
+\begin{corollary} \label{cor:H1 H2 cyclic idele class}
+	\uses{thm:first inequality,
+		lem:herbrand idele class group
+	}
+	If $l/k$ is cyclic then $|H^2(l/k, \Cl_{l})| = [l:k]$ and $H^1(l/k, \Cl_{l}) = 0$.
+\end{corollary}
+
+\begin{proof}
+	This follows immediately from (a) the first inequality, (b) the periodicity of
+	the cohomology for a cyclic group, and (c) the calculation of the Herbrand quotient
+	of $\Cl_{l}$.
+\end{proof}
+
+\begin{theorem} \label{thm:global cohomology bound}
+	\uses{cor:H1 H2 cyclic idele class,
+		thm:inflation restriction sequence,
+		cor:cohomology sub Sylow,
+		cor:cohomology G-torsion
+	}
+	If $l/k$ is any finite Galois extension then $H^1(l/k, \Cl_{l}) \cong 0$
+	and $|H^2(l/k, \Cl_{l})| \le [l:k]$.
+\end{theorem}
+
+
+\begin{proof}
+	For each prime number $p$ dividing $[l:k]$ we let $k_p$ be the fixed
+	field of a Sylow $p$-subgroup $S_p$ of $\Gal(l/k)$.
+	By \ref{cor:cohomology sub Sylow}, it's suffient to prove
+	\[
+		H^1(l/k_p, \Cl_{l}) = 0, \qquad
+		|H^2(l/k_p, \Cl_{l})| \le [l:k_p].
+	\]
+	Since $S_p$ is solvable, this reduces us to the case that $\Gal(l/k)$ is solvable.
+	We'll prove the result by induction on $k$ starting with $k=l$ and working downwards
+	in cyclic quotients.
+
+	Clearly the result holds for $k=l$.
+	Assume the result for a subfield $m$ of $l$ and let $m/k$ be cyclic.
+	We have an inflation restriction sequence:
+	\[
+		0 \to H^1(m/k, \Cl_{m}) \to H^1(l/k, \Cl_{l}) \to H^1(l/m,\Cl_{l}).
+	\]
+	The first term is zero by \ref{cor:H1 H2 cyclic idele class} and the last term is zero by
+	the inductive hypothesis.
+	Therefore $H^1(l/k,\Cl_l) \cong 0$.
+
+	Since $H^1(l/m,\Cl_l)$ is assumed to be zero, we also have an inflation-restriction sequence
+	in dimension 2:
+	\[
+		0 \to H^2(m/k, \Cl_m) \to H^2(l/k, \Cl_l) \to H^2(l/m,\Cl_l).
+	\]
+	By the inductive hypothesis we have $|H^2(l/m,\Cl_l)| \le [l:m]$
+	and by \ref{cor:H1 H2 cyclic idele class} we have $|H^2(m/k, \Cl_m)| = [m : k]$.
+	It follows that $|H^2(l/k,\Cl_l)| \le [l : k]$.
+\end{proof}
+
+
+To complete the construction of fundamental classes and the reciprocity isomorphism,
+we need only show that there is an element in $H^2(l/k,\Cl_l)$ of order $[l:k]$.
+Such an element is constructed first for a cyclic cyclotomic extension $l'/k$ with the same degree
+as $l/k$.
+It's then shown that the inflation of such a class to $ll'/k$ must split on $ll'/l$,
+and must therefore be the inflation of an element of order $[l:k]$ in $H^2(l/k,\Cl_l)$.

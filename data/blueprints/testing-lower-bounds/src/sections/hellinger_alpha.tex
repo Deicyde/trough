@@ -1,0 +1,172 @@
+\section{Hellinger alpha-divergences}
+
+\begin{definition}[Hellinger $\alpha$-divergence]
+  \label{def:hellingerAlpha}
+  \lean{ProbabilityTheory.hellingerDiv}
+  \leanok
+  \uses{def:KL, def:fDiv, lem:fDiv_properties, lem:kl_properties}
+  Let $\mu, \nu$ be two measures on $\mathcal X$. The Hellinger divergence of order $\alpha \in [0,+\infty)$ between $\mu$ and $\nu$ is
+  \begin{align*}
+  \He_\alpha(\mu, \nu) = \left\{
+  \begin{array}{ll}
+    \nu \{x \mid \frac{d\mu}{d\nu} (x) = 0\} & \text{for } \alpha = 0 \\
+    \KL(\mu, \nu) & \text{for } \alpha = 1
+    \\
+    D_{f_\alpha}(\mu, \nu) & \text{for } \alpha \in (0,+\infty) \backslash \{1\}
+  \end{array}\right.
+  \end{align*}
+  with $f_\alpha : x \mapsto \frac{x^{\alpha} - 1}{\alpha - 1}$.
+\end{definition}
+
+
+\begin{lemma}
+  \label{lem:hellingerAlpha_ne_top_of_lt_one}
+  \lean{ProbabilityTheory.hellingerDiv_ne_top_of_lt_one}
+  \leanok
+  \uses{def:hellingerAlpha}
+  For $\alpha \in [0, 1)$ and finite measures $\mu, \nu$, $\He_\alpha(\mu, \nu) < \infty$.
+\end{lemma}
+
+\begin{proof}\leanok
+\uses{}
+\end{proof}
+
+
+\begin{lemma}
+  \label{lem:hellingerAlpha_eq_integral}
+  %\lean{}
+  %\leanok
+  \uses{def:hellingerAlpha}
+  For $\alpha \in (0,1)\cup(1, \infty)$, $\mu$ a finite measure and $\nu$ a probability measure, if $\He_\alpha(\mu, \nu) < \infty$ then
+  \begin{align*}
+  \He_\alpha(\mu, \nu) = \frac{1}{\alpha - 1} \left( \int_x \left(\frac{d \mu}{d \nu}(x)\right)^\alpha \partial \nu - 1 \right)
+  \: .
+  \end{align*}
+\end{lemma}
+
+\begin{proof}%\leanok
+\uses{}
+\end{proof}
+
+
+\begin{lemma}
+  \label{lem:integral_rpow_rnDeriv_symm}
+  \lean{ProbabilityTheory.integral_rpow_rnDeriv_symm}
+  \leanok
+  \uses{}
+  For $\alpha \in (0,1)\cup(1, \infty)$, $\mu, \nu$ two sigma-finite measures,
+  \begin{align*}
+  \int_x \left(\frac{d \mu}{d \nu}(x)\right)^\alpha \partial \nu
+  = \int_x \left(\frac{d \nu}{d \mu}(x)\right)^{1 - \alpha} \partial \mu
+  \: .
+  \end{align*}
+\end{lemma}
+
+\begin{proof}\leanok
+\uses{}
+\begin{align*}
+  \int_x \left(\frac{d \mu}{d \nu}(x)\right)^\alpha \partial \nu
+  &= \int_x \left(\frac{d \mu}{d (\mu + \nu)}(x) \left(\frac{d \nu}{d (\mu + \nu)}(x)\right)^{-1} \right)^\alpha \partial \nu \\
+  &= \int_x \left(\frac{d \mu}{d (\mu + \nu)}(x) \left(\frac{d \nu}{d (\mu + \nu)}(x)\right)^{-1} \right)^\alpha \frac{d \nu}{d (\mu + \nu)}(x) \partial (\mu + \nu) \\
+  &= \int_x \left(\frac{d \mu}{d (\mu + \nu)}(x) \left(\frac{d \nu}{d (\mu + \nu)}(x)\right)^{-1} \right)^{\alpha - 1} \frac{d \mu}{d (\mu + \nu)}(x) \partial (\mu + \nu) \\
+  &= \int_x \left(\frac{d \mu}{d (\mu + \nu)}(x) \left(\frac{d \nu}{d (\mu + \nu)}(x)\right)^{-1} \right)^{\alpha - 1} \partial \mu \\
+  &= \int_x \left(\frac{d \nu}{d \mu}(x)\right)^{1 - \alpha} \partial \mu
+  \: .
+  \end{align*}
+\end{proof}
+
+
+\begin{lemma}
+  \label{lem:hellingerAlpha_symm}
+  \lean{ProbabilityTheory.hellingerDiv_symm}
+  \leanok
+  \uses{def:hellingerAlpha}
+  For $\alpha \in (0, 1)$ and finite measures $\mu, \nu$, $(1 - \alpha) \He_\alpha(\mu, \nu) = \alpha \He_{1 - \alpha}(\nu, \mu)$.
+\end{lemma}
+
+\begin{proof}\leanok
+\uses{lem:integral_rpow_rnDeriv_symm}
+Use Lemma~\ref{lem:integral_rpow_rnDeriv_symm}.
+\end{proof}
+
+
+\begin{definition}[Conditional Hellinger $\alpha$-divergence]
+  \label{def:condHellingerAlpha}
+  \lean{ProbabilityTheory.condHellingerDiv}
+  \leanok
+  \uses{def:condFDiv, lem:condFDiv_properties, lem:fDiv_properties}
+  Let $\mu$ be a measure on $\mathcal X$ and $\kappa, \eta : \mathcal X \rightsquigarrow \mathcal Y$ be two kernels. The conditional Hellinger divergence of order $\alpha \in (0,+\infty) \backslash \{1\}$ between $\kappa$ and $\eta$ conditionally to $\mu$ is
+  \begin{align*}
+  \He_\alpha(\kappa, \eta \mid \mu) = D_{f_\alpha}(\kappa, \eta \mid \mu) \: ,
+  \end{align*}
+  for $f_\alpha : x \mapsto \frac{x^{\alpha} - 1}{\alpha - 1}$.
+\end{definition}
+
+
+\subsection{Properties inherited from f-divergences}
+
+Since $\He_\alpha$ is an f-divergence, every inequality for f-divergences can be translated to $\He_\alpha$.
+
+\begin{theorem}[Data-processing]
+  \label{thm:hellingerAlpha_data_proc}
+  \lean{ProbabilityTheory.hellingerDiv_comp_right_le}
+  \leanok
+  \uses{def:hellingerAlpha}
+  Let $\alpha > 0$, $\mu, \nu$ be two finite measures on $\mathcal X$ and let $\kappa : \mathcal X \rightsquigarrow \mathcal Y$ be a Markov kernel.
+  Then $\He_\alpha(\kappa \circ \mu, \kappa \circ \nu) \le \He_\alpha(\mu, \nu)$.
+\end{theorem}
+
+\begin{proof} \leanok
+\uses{thm:fDiv_data_proc_2}
+Apply Theorem~\ref{thm:fDiv_data_proc_2}.
+\end{proof}
+
+
+\begin{lemma}
+  \label{lem:hellingerAlpha_nonneg}
+  %\lean{}
+  \leanok
+  \uses{def:hellingerAlpha}
+  Let $\mu, \nu$ be two probability measures. Then $\He_\alpha(\mu, \nu) \ge 0$.
+\end{lemma}
+
+\begin{proof} \leanok
+\uses{lem:fDiv_nonneg}
+Apply Lemma~\ref{lem:fDiv_nonneg}.
+\end{proof}
+
+
+\begin{lemma}
+  \label{lem:hellingerAlpha_convex}
+  %\lean{}
+  %\leanok
+  \uses{def:hellingerAlpha}
+  $(\mu, \nu) \mapsto \He_\alpha(\mu, \nu)$ is convex.
+\end{lemma}
+
+\begin{proof}
+\uses{thm:fDiv_convex}
+Apply Theorem~\ref{thm:fDiv_convex}
+\end{proof}
+
+
+
+TODO: find a way to hide the following dummy lemma
+\begin{lemma}[Dummy lemma: hellingerAlpha properties]
+  \label{lem:hellingerAlpha_properties}
+  %\lean{}
+  \leanok
+  \uses{def:hellingerAlpha, def:condHellingerAlpha}
+  Dummy node to summarize properties of the Hellinger $\alpha$-divergence.
+\end{lemma}
+
+\begin{proof}\leanok
+\uses{
+  lem:hellingerAlpha_ne_top_of_lt_one,
+  lem:hellingerAlpha_eq_integral,
+  lem:hellingerAlpha_symm,
+  thm:hellingerAlpha_data_proc,
+  lem:hellingerAlpha_nonneg,
+  lem:hellingerAlpha_convex
+}
+\end{proof}

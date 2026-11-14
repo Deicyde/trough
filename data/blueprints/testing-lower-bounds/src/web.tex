@@ -1,0 +1,32 @@
+% This file makes a web version of the blueprint
+% It should include all the \usepackage needed for this version.
+% The template includes standard AMS packages.
+% It is otherwise a very minimal preamble (you should probably at least
+% add cleveref and tikz-cd).
+
+\documentclass{report}
+
+\usepackage{tikz-cd}
+
+\usepackage{amssymb, amsthm, amsmath}
+\usepackage{hyperref}
+\usepackage[showmore, dep_graph]{blueprint}
+
+
+\input{macros/common}
+\input{macros/web}
+
+\graphcolor{mathlib}{purple}{The statement of this result is in Mathlib}
+
+\home{https://RemyDegenne.github.io/testing-lower-bounds}
+\github{https://github.com/RemyDegenne/testing-lower-bounds}
+\dochome{https://RemyDegenne.github.io/testing-lower-bounds/docs}
+
+\title{Lower bounds for hypothesis testing based on information theory}
+\author{Rémy Degenne, Lorenzo Luccioli}
+
+\begin{document}
+\maketitle
+\input{content}
+
+\end{document}

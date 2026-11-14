@@ -1,0 +1,121 @@
+% Top-level content for the online blueprint.
+
+\blueprintfrontmatter
+
+\begin{abstract}
+This document gives a proof of \textbf{Kummer's criterion}:
+\[
+  p \text{ is regular}
+  \quad\Longleftrightarrow\quad
+  \forall k,\ 1 \le k,\ 2k \le p - 3,\quad
+  p \nmid \operatorname{num}(B_{2k})
+\]
+for every odd prime $p$.
+
+The proof has four steps.  First, for a prime cyclotomic CM field $K$ and its
+maximal real subfield $K^+$, extension of ideals gives an injective class-group
+map
+\[
+  \Cl{\mathcal O_{K^+}} \longrightarrow \Cl{\mathcal O_K}.
+\]
+This proves $h^+ \mid h$ and allows the relative class number
+\[
+  h^- := h/h^+
+\]
+to be used as an actual natural number.
+
+Second, the relative class-number formula is reduced to a $p$-adic congruence
+and then to the Bernoulli numerator criterion:
+\[
+  p \mid h^- \quad\Longleftrightarrow\quad
+  \exists k,\ 1 \le k,\ 2k \le p-3,\quad
+  p \mid \operatorname{num}(B_{2k}).
+\]
+
+Third, the real cyclotomic units form a subgroup $C^+$ of the full unit group
+of $K^+$.  The Kummer logarithm matrix proves that Bernoulli numerator
+non-divisibility forces $C^+$ to be $p$-saturated, hence
+\[
+  p \nmid [\mathcal O_{K^+}^{\times}:C^+].
+\]
+The prime-conductor cyclotomic-unit index theorem identifies the odd-primary
+part of this index with $h^+$.
+
+Finally, these ingredients show that $p \mid h$ is equivalent to divisibility
+of one Bernoulli numerator in Kummer's range.  The definition of regular prime
+then gives the stated criterion.
+
+The Lean declaration corresponding to the final theorem is
+\texttt{KummerCriterion}.
+
+As an application of the criterion, a final chapter proves Carlitz's theorem
+that there are infinitely many irregular primes, via the unrestricted Kummer
+congruence for divided Bernoulli numbers.
+\end{abstract}
+
+\clearpage
+\setcounter{page}{2}
+\tableofcontents
+
+\blueprintmainmatter
+\chapter{Introduction}\label{ch:intro}
+\input{subsections/introduction}
+
+\pagebreak
+\chapter{Class numbers of the cyclotomic CM field}\label{ch:cm}
+\input{subsections/cm-splitting}
+
+\pagebreak
+\chapter{The minus class-number criterion}\label{ch:hminus-formula}
+\input{subsections/hminus-formula}
+
+\pagebreak
+\chapter{Cyclotomic units and Kummer logarithms}\label{ch:cyclotomic-units}
+\input{subsections/cyclotomic-units}
+
+\pagebreak
+\chapter{Final assembly}\label{ch:kummer-final}
+\input{subsections/final}
+
+\pagebreak
+\chapter{Infinitely many irregular primes}\label{ch:irregular-primes}
+\input{subsections/irregular-primes-carlitz}
+
+\begin{thebibliography}{9}
+
+\bibitem{carlitz1954}
+L.~Carlitz,
+\emph{Note on irregular primes},
+Proc. Amer. Math. Soc. \textbf{5} (1954), 329--331.
+
+\bibitem{ireland-rosen}
+K.~Ireland and M.~Rosen,
+\emph{A Classical Introduction to Modern Number Theory},
+2nd ed., Graduate Texts in Mathematics 84, Springer-Verlag, New York, 1990.
+
+\bibitem{jensen1915}
+K.~L.~Jensen,
+\emph{Om talteoretiske Egenskaber ved de Bernoulliske Tal},
+Nyt Tidsskrift for Matematik \textbf{26} (1915), 73--83.
+
+\bibitem{kummer1850}
+E.~E.~Kummer,
+\emph{Allgemeiner Beweis des Fermatschen Satzes, da{\ss} die Gleichung
+$x^\lambda + y^\lambda = z^\lambda$ durch ganze Zahlen unl\"osbar ist,
+f\"ur alle diejenigen Potenz-Exponenten $\lambda$, welche ungerade
+Primzahlen sind und in den Z\"ahlern der ersten $(\lambda-3)/2$
+Bernoullischen Zahlen als Factoren nicht vorkommen},
+J. Reine Angew. Math. \textbf{40} (1850), 130--138.
+
+\bibitem{sinnott1978}
+W.~Sinnott,
+\emph{On the Stickelberger ideal and the circular units of a cyclotomic
+field},
+Ann. of Math. (2) \textbf{108} (1978), 107--134.
+
+\bibitem{washington}
+L.~C.~Washington,
+\emph{Introduction to Cyclotomic Fields},
+2nd ed., Graduate Texts in Mathematics 83, Springer-Verlag, New York, 1997.
+
+\end{thebibliography}

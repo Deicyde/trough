@@ -1,0 +1,272 @@
+
+\section{Mutual information}
+
+\paragraph{Definitions}
+
+\begin{definition}
+  \label{def:mutualInfo}
+  %\lean{}
+  %\leanok
+  \uses{def:KL, lem:kl_properties}
+  The mutual information is, for $\rho \in \mathcal M(\mathcal X \times \mathcal Y)$~,
+  \begin{align*}
+  I(\rho) = \KL(\rho, \rho_X \times \rho_Y) \: .
+  \end{align*}
+\end{definition}
+
+
+\begin{definition}
+  \label{def:condMutualInfo}
+  %\lean{}
+  %\leanok
+  \uses{def:condKL, lem:kl_properties}
+  Let $\kappa : \mathcal Z \rightsquigarrow \mathcal X \times \mathcal Y$. The conditional mutual information of $\kappa$ with respect to $\nu \in \mathcal M(\mathcal Z)$ is
+  \begin{align*}
+  I(\kappa \mid \nu) = \KL(\kappa, \kappa_X \times \kappa_Y \mid \nu) \: .
+  \end{align*}
+\end{definition}
+
+
+\paragraph{Properties}
+
+\begin{lemma}
+  \label{lem:mutualInfo_eq_condKL}
+  %\lean{}
+  %\leanok
+  \uses{def:mutualInfo, def:KL, def:condKL}
+  For $\mu \in \mathcal M(\mathcal X)$ and $\kappa : \mathcal X \rightsquigarrow \mathcal Y$ a Markov kernel,
+  \begin{align*}
+  I(\mu \otimes \kappa)
+  = KL(\mu \otimes \kappa, \mu \times (\kappa \circ \mu))
+  = KL(\kappa, \kappa \circ \mu \mid \mu)
+  \: ,
+  \end{align*}
+  where in the conditional divergence the measure $\kappa \circ \mu$ should be understood as the constant kernel from $\mathcal X$ to $\mathcal Y$ with that value.
+\end{lemma}
+
+\begin{proof}%\leanok
+\uses{}
+The first equality is the definition of $I$, together with $(\mu \otimes \kappa)_X = \mu$ (since $\kappa$ is Markov) and $(\mu \otimes \kappa)_Y = \kappa \circ \mu$.
+The second equality is from $KL(\kappa, \eta \mid \mu) = KL(\mu \otimes \kappa, \mu \otimes \eta)$. (TODO: now from a lemma, soon by definition).
+\end{proof}
+
+
+\begin{lemma}
+  \label{lem:mutualInfo_symm}
+  %\lean{}
+  %\leanok
+  \uses{def:mutualInfo}
+  $I(\rho_\leftrightarrow) = I(\rho)$~.
+\end{lemma}
+
+\begin{proof}%\leanok
+\uses{lem:fDiv_map_measurableEmbedding}
+
+\end{proof}
+
+
+\begin{lemma}
+  \label{lem:mutualInfo_eq_jensenShannon}
+  %\lean{}
+  %\leanok
+  \uses{def:mutualInfo, def:jensenShannon}
+  Let $\mu, \nu \in \mathcal P(\mathcal X)$ and let $\alpha \in (0, 1)$. Let $\pi_\alpha = (\alpha, 1 - \alpha) \in \mathcal P(\{0,1\})$ and let $P : \{0,1\} \rightsquigarrow \mathcal X$ be the kernel with $P(0) = \mu$ and $P(1) = \nu$. Then
+  \begin{align*}
+  I(\pi_\alpha \otimes P) = \JS_\alpha(\mu, \nu) \: .
+  \end{align*}
+\end{lemma}
+
+\begin{proof}%\leanok
+\uses{lem:jensenShannon_eq_kl, lem:mutualInfo_eq_condKL}
+Use Lemma~\ref{lem:mutualInfo_eq_condKL} and Lemma~\ref{lem:jensenShannon_eq_kl}.
+\end{proof}
+
+
+\begin{theorem}[Data-processing]
+  \label{thm:mutualInfo_data_proc}
+  %\lean{}
+  %\leanok
+  \uses{def:mutualInfo}
+  For $\rho \in \mathcal M(\mathcal X \times \mathcal Y)$, $\kappa : \mathcal X \rightsquigarrow \mathcal X'$ and $\eta : \mathcal Y \rightsquigarrow \mathcal Y'$ two Markov kernels,
+  \begin{align*}
+  I((\kappa \parallel \eta) \circ \rho) \le I(\rho) \: .
+  \end{align*}
+\end{theorem}
+
+\begin{proof}%\leanok
+\uses{thm:kl_data_proc}
+$((\kappa \parallel \eta) \circ \rho)_{X'} = \kappa \circ \rho_X$ and $((\kappa \parallel \eta) \circ \rho)_{Y'} = \eta \circ \rho_Y$ hence
+\begin{align*}
+((\kappa \parallel \eta) \circ \rho)_{X'} \times ((\kappa \parallel \eta) \circ \rho)_{Y'}
+&= (\kappa \circ \rho_X) \times (\eta \circ \rho_Y)
+= (\kappa \parallel \eta) \circ (\rho_X \times \rho_Y)
+\: .
+\end{align*}
+
+By the data-processing inequality for $\KL$ (Theorem~\ref{thm:kl_data_proc}),
+\begin{align*}
+I((\kappa \parallel \eta) \circ \rho)
+&= \KL((\kappa \parallel \eta) \circ \rho, (\kappa \parallel \eta) \circ (\rho_X \times \rho_Y))
+\\
+&\le \KL(\rho, \rho_X \times \rho_Y)
+\\
+&= I(\rho)
+\: .
+\end{align*}
+\end{proof}
+
+\begin{corollary}
+  \label{cor:mutualInfo_compProd_le}
+  %\lean{}
+  %\leanok
+  \uses{def:mutualInfo}
+  For $\mu \in \mathcal X$, $\kappa : \mathcal X \rightsquigarrow \mathcal Y$ and $\eta : \mathcal Y \rightsquigarrow \mathcal Z$ two Markov kernels,
+  \begin{align*}
+  I(\mu \otimes (\eta \circ \kappa)) \le I(\mu \otimes \kappa)
+  \: .
+  \end{align*}
+\end{corollary}
+
+That corollary corresponds to the following situation: 3 random variables $X, Y, Z$ have the dependency structure $X \to Y \to Z$ and $\mu$ is the law of $X$, $\mu \otimes \kappa$ is the law of $(X, Y)$ and $\mu \otimes (\eta \circ \kappa)$ is the law of $(X, Z)$.
+With the usual $I(X, Y)$ notation, the corollary statement is $I(X, Z) \le I(X, Y)$~.
+
+\begin{proof}%\leanok
+\uses{thm:mutualInfo_data_proc}
+First, rewrite $\mu \otimes (\eta \circ \kappa) = (\mathrm{id} \parallel \eta) \circ (\mu \otimes \kappa)$. Then apply Theorem~\ref{thm:mutualInfo_data_proc}.
+\end{proof}
+
+
+
+
+\section{New definitions related to the mutual information}
+
+\begin{definition}
+  \label{def:mutualInfoLeft}
+  %\lean{}
+  %\leanok
+  \uses{def:fDiv, lem:fDiv_properties}
+  Let $D$ be a divergence between measures.
+  The left $D$-mutual information for a measure $\mu \in \mathcal M(\mathcal X)$ and a kernel $\kappa : \mathcal X \rightsquigarrow \mathcal Y$ is
+  \begin{align*}
+  I_D^L(\mu, \kappa) = \inf_{\xi \in \mathcal P(\mathcal Y)} D(\mu \times \xi, \mu \otimes \kappa) \: .
+  \end{align*}
+\end{definition}
+
+
+\begin{definition}
+  \label{def:mutualInfoRight}
+  %\lean{}
+  %\leanok
+  \uses{def:fDiv, lem:fDiv_properties}
+  Let $D$ be a divergence between measures.
+  The right $D$-mutual information for a measure $\mu \in \mathcal M(\mathcal X)$ and a kernel $\kappa : \mathcal X \rightsquigarrow \mathcal Y$ is
+  \begin{align*}
+  I_D^R(\mu, \kappa) = \inf_{\xi \in \mathcal P(\mathcal Y)} D(\mu \otimes \kappa, \mu \times \xi) \: .
+  \end{align*}
+\end{definition}
+
+
+\begin{lemma}
+  \label{lem:mutualInfoLeft_eq_renyi}
+  %\lean{}
+  %\leanok
+  \uses{def:mutualInfoLeft, def:Renyi}
+  For $\mu \in \mathcal P(\{0,1\})$ and $\kappa : \{0,1\} \rightsquigarrow \mathcal Y$,
+  \begin{align*}
+  I_{\KL}^L(\mu, \kappa) = (1 - \mu_0) R_{\mu_0}(\kappa_0, \kappa_1) \: .
+  \end{align*}
+\end{lemma}
+
+\begin{proof}%\leanok
+\uses{lem:renyi_eq_inf_kl}
+
+\end{proof}
+
+
+\begin{lemma}
+  \label{lem:mutualInfoRight_eq_mutualInfo}
+  %\lean{}
+  %\leanok
+  \uses{def:mutualInfoRight, def:mutualInfo}
+  For $\mu \in \mathcal P(\mathcal X)$ and $\kappa : \mathcal X \rightsquigarrow \mathcal Y$,
+  \begin{align*}
+  I_{\KL}^R(\mu, \kappa) = I(\mu \otimes \kappa) \: .
+  \end{align*}
+\end{lemma}
+
+\begin{proof}%\leanok
+\uses{}
+
+\end{proof}
+
+
+\begin{corollary}
+  \label{cor:mutualInfoRight_eq_jensenShannon}
+  %\lean{}
+  %\leanok
+  \uses{def:mutualInfoRight, def:jensenShannon}
+  For $\mu \in \mathcal P(\{0,1\})$ and $\kappa : \{0,1\} \rightsquigarrow \mathcal Y$,
+  \begin{align*}
+  I_{\KL}^R(\mu, \kappa) = \JS_{\mu_0}(\kappa_0, \kappa_1) \: .
+  \end{align*}
+\end{corollary}
+
+\begin{proof}%\leanok
+\uses{lem:mutualInfoRight_eq_mutualInfo, lem:mutualInfo_eq_jensenShannon}
+
+\end{proof}
+
+
+
+\paragraph{Data-processing inequality}
+
+
+\begin{theorem}
+  \label{thm:mutualInfoLeft_comp_le}
+  %\lean{}
+  %\leanok
+  \uses{def:mutualInfoLeft, def:mutualInfoRight}
+  If the divergence $D$ satisfies the data-processing inequality, then for all $\mu \in \mathcal M(\mathcal X)$, $\kappa : \mathcal X \rightsquigarrow \mathcal Y$ and all Markov kernels $\eta : \mathcal Y \rightsquigarrow \mathcal Z$ then
+  \begin{align*}
+  I_D^L(\mu, \eta \circ \kappa) \le I_D^L(\mu, \kappa)
+  \: , \\
+  I_D^R(\mu, \eta \circ \kappa) \le I_D^R(\mu, \kappa)
+  \: .
+  \end{align*}
+  
+\end{theorem}
+
+\begin{proof}%\leanok
+\uses{}
+
+\end{proof}
+
+
+\begin{lemma}
+  \label{lem:mutualInfoLeft_estimation_ge}
+  %\lean{}
+  %\leanok
+  \uses{def:mutualInfoLeft, def:mutualInfoRight, def:bayesRisk}
+  Let $\pi \in \mathcal P(\Theta)$ and $P : \Theta \rightsquigarrow \mathcal X$. Suppose that the loss $\ell'$ of an estimation task with kernel $P$ takes values in $[0,1]$. Then
+  \begin{align*}
+  I_{D_f}^L(\pi, P)
+  &\ge d_f(\mathcal R_\pi^{d_\Theta}, \mathcal R_\pi^P)
+  \: , \\
+  I_{D_f}^R(\pi, P)
+  &\ge d_f(\mathcal R_\pi^P, \mathcal R_\pi^{d_\Theta})
+  \: .
+  \end{align*}
+\end{lemma}
+
+\begin{proof}%\leanok
+\uses{lem:fDiv_estimation_ge}
+The left mutual information $I_D^L(\pi, P)$ is an infimum: $I_D^L(\pi, P) = \inf_{\xi \in \mathcal P(\mathcal X)} D(\pi \times \xi, \pi \otimes P)$.
+For all $\xi \in \mathcal P(\mathcal X)$, by Lemma~\ref{lem:fDiv_estimation_ge},
+\begin{align*}
+D_f(\pi \times \xi, \pi \otimes P) &\ge d_f(\mathcal R_\pi^{\theta \mapsto \xi}, \mathcal R_\pi^P) \: .
+\end{align*}
+The risk of a constant Markov kernel is equal to the risk of the discard kernel $d_\Theta$ (TODO ref).
+
+The proof for the right mutual information is similar.
+\end{proof}
+
