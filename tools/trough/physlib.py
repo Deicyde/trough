@@ -802,10 +802,11 @@ def chapter(data: dict, tauceti: Container | None = None) -> tuple[Built, dict[s
                  + ("; then " if here and below else "")
                  + (f"{plural(len(below), 'folder')} below it, a page each" if below else "")
                  + (f", {totals[folder]:,} modules in all." if below and totals[folder] > len(here) else ".")]
-        holders = {module["copyright"] for module in here}
-        if tauceti and len(holders) == 1 and (holder := holders.pop()).endswith(TAU_CETI):
-            prose.append(f"Its files' headers read “Copyright (c) {literal(holder)}”: the folder holds code of "
-                         "[Tau Ceti](trough:tauceti), which has a chapter of its own here.")
+        holders = Counter(module["copyright"] for module in here if module["copyright"].endswith(TAU_CETI))
+        if tauceti and holders and (top := holders.most_common(1)[0])[1] * 2 > len(here):
+            share = "Its files' headers read" if top[1] == len(here) else f"The headers of {top[1]} of its {len(here)} files read"
+            prose.append(f"{share} “Copyright (c) {literal(top[0])}”: the folder holds code of [Tau Ceti](trough:tauceti), "
+                         "which has a chapter of its own here.")
         if folder in maps and (text := api_map_prose(maps[folder], source, keys, set(containers))):
             prose.append(text)
             stats["api_maps_quoted"] += 1

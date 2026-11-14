@@ -963,6 +963,13 @@ def test_a_folder_of_tau_cetis_code_says_so_and_links_its_chapter(tmp_path):
     time = result.targets["physlib-folder-Physlib/SpaceAndTime/Time"]
     assert ("Its files' headers read “Copyright (c) 2026 The Tau Ceti contributors”: the folder holds code of "
             "[Tau Ceti](trough:tauceti), which has a chapter of its own here.") in time.prose
+    # Where some files have another holder, the page says how many have Tau Ceti's.
+    loaded["modules"][[module["file"] for module in loaded["modules"]].index("Physlib/SpaceAndTime/Time/Basic.lean")][
+        "copyright"] = "2026 Kitware, Inc"
+    with_units = [module for module in loaded["modules"] if module["file"].startswith("Physlib/SpaceAndTime/Time/")]
+    assert len(with_units) == 2
+    result, _ = physlib.chapter(loaded, Container("Tau Ceti", "tauceti"))
+    assert "Tau Ceti" not in result.targets["physlib-folder-Physlib/SpaceAndTime/Time"].prose
     assert "Tau Ceti" not in physlib.chapter(data(tmp_path / "plain", DEPS))[0].targets[
         "physlib-folder-Physlib/SpaceAndTime/Time"].prose
 
