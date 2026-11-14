@@ -30,7 +30,7 @@ import yaml
 
 from . import ff, formalization, leansource
 from .blueprints import Built, escape
-from .formal_conjectures import OPAQUE, REFERENCE_ENTITY, natural, plural
+from .formal_conjectures import OPAQUE, natural, plural
 from .vault import Container, Entry, Leaf, chunk, slugify
 
 SCHEMA = "trough-openai-math/v1"
@@ -63,8 +63,10 @@ UNESCAPED_BRACE = re.compile(r"(?<!\\)\{")
 HTML = re.compile(r"<(?:/?[a-zA-Z][^<>@ ]*(?: [^<>]*)?|!--(?:(?!<!--|-->).)*--|[?](?:(?!<[?]|[?]>).)*[?]|"
                   r"!\[CDATA\[(?:(?!<!\[CDATA\[|\]\]>).)*\]\])>", re.S)
 AUTOLINK = re.compile(r"<(?:(?:[Ff]|[Hh][Tt])[Tt][Pp][Ss]?://[^<>]*|[^<> !]+@[^@<> ]+)>")
-# An emphasized span of a title, from CONTENTS.md's <i>.
-EMPHASIS = re.compile(r"(\*[^*\s][^*\n]*\*)")
+# A character reference as AutoformBot's check reads one: a numeric one needs no semicolon.
+REFERENCE = re.compile(r"&(?:#[0-9]+;?|#[xX][0-9A-Fa-f]+;?|[A-Za-z][A-Za-z0-9]*;)")
+# A title's emphasis while it is converted, which a literal asterisk can't pair with.
+MARK = "\0"
 NO_DEPENDS = "No dependencies are recorded here: the chapter draws no edges between families."
 LEAN_NAMES = 8  # the names a card's Lean row shows
 # The bytes of article Markdown a listing page folds in before its next article starts a page.
@@ -73,7 +75,7 @@ PAGE_BUDGET = 300_000
 
 # Reading the collection.
 
-def markdown(text: str) -> str:
+def markdown(text: str, emphasis: str = "*") -> str:
     """CONTENTS.md's text as the site's Markdown: GitHub's $`...`$ formulas as $...$, superscripts and subscripts
     as formulas, italics as emphasis and character references as their characters, which the site requires."""
     def scripts(text: str) -> str:
@@ -83,7 +85,7 @@ def markdown(text: str) -> str:
     text = GITHUB_MATH.sub(lambda match: f"${match['tex'].strip()}$", text)
     text = SCRIPTED.sub(lambda match: f"${match['base']}{scripts(match['scripts'])}$", text)
     text = SCRIPT.sub(lambda match: f"${scripts(match.group())}$", text)
-    text = ITALIC.sub(lambda match: f"*{match['inner'].strip()}*", text)
+    text = ITALIC.sub(lambda match: f"{emphasis}{match['inner'].strip()}{emphasis}", text)
     text = ENTITY.sub(lambda match: chr(int(match["number"])) if match["number"] else NAMED[match["name"]], text)
     return text.strip()
 
@@ -92,7 +94,21 @@ def markup(text: str) -> list[str]:
     """The raw HTML and character references left in *text* outside code and formulas, which the site does not
     publish."""
     plain = AUTOLINK.sub(" ", OPAQUE.sub(" ", text))
-    return [match.group() for pattern in (HTML, REFERENCE_ENTITY) for match in pattern.finditer(plain)]
+    return [match.group() for pattern in (HTML, REFERENCE) for match in pattern.finditer(plain)]
+
+
+def outside_formulas(text: str, change) -> str:
+    """*text* with *change* made to its pieces outside code and formulas."""
+    pieces, last = [], 0
+    for match in OPAQUE.finditer(text):
+        pieces += [change(text[last : match.start()]), match.group()]
+        last = match.end()
+    return "".join(pieces) + change(text[last:])
+
+
+def title_markdown(text: str) -> str:
+    """A family's title as Markdown whose only emphasis is its <i>: a literal asterisk is escaped."""
+    return outside_formulas(markdown(text, MARK), lambda piece: piece.replace("*", r"\*")).replace(MARK, "*")
 
 
 def read_contents(text: str) -> tuple[list[dict], list[str]]:
@@ -108,7 +124,7 @@ def read_contents(text: str) -> tuple[list[dict], list[str]]:
             if any("lean/docs/" in link["target"] for link in LINK.finditer(description)):
                 problems.append(f"CONTENTS.md: family {family['number']} links its Lean page in a form this chapter "
                                 "does not read")
-            families.append({"number": family["number"], "title": markdown(family["title"]).rstrip("."),
+            families.append({"number": family["number"], "title": title_markdown(family["title"]).rstrip("."),
                              "description": markdown(description), "doc": lean["doc"] if lean else None,
                              "manuscripts": []})
         elif manuscript := MANUSCRIPT.fullmatch(cell):
@@ -531,7 +547,10 @@ def article(family: dict, data: dict, links: dict[str, str]) -> Leaf:
         parts += [result_block(result, source, seen) for result in lean["results"] if "config" in result]
     statements = [(result, statement) for result in (lean["results"] if lean else [])
                   for statement in result.get("statements", [])]
-    names = list(dict.fromkeys(statement["name"] for _, statement in statements))
+    # Names with a located proof come first, so that the cap drops unproved ones before them.
+    located = {statement["name"] for _, statement in statements if statement["proof"]}
+    names = sorted(dict.fromkeys(statement["name"] for _, statement in statements),
+                   key=lambda name: name not in located)
     fields = [("declaration", "section"), ("origin", "cited")]
     if names:
         shown = names[:LEAN_NAMES]
@@ -545,9 +564,9 @@ def article(family: dict, data: dict, links: dict[str, str]) -> Leaf:
                 links[statement["name"]] = (blob(source, proof["file"], proof["line"]) if proof
                                             else blob(source, result["challenge"], statement["line"]))
     title = f"{family['number']}. {family['title']}"
-    # The title's emphasis stays emphasis; the text around it is escaped.
-    label = "".join(f"*{escape(part[1:-1])}*" if EMPHASIS.fullmatch(part) else escape(part)
-                    for part in EMPHASIS.split(title))
+    # The title's emphasis stays emphasis; its other text is escaped, its literal asterisks too.
+    marked = outside_formulas(title, lambda piece: re.sub(r"(\\)?\*", lambda star: "*" if star[1] else MARK, piece))
+    label = escape(marked).replace(MARK, "*")
     leaf = Leaf(label, slugify(title), fields, "\n\n".join(parts), no_depends=NO_DEPENDS)
     leaf.sources = [(f"{source['repo']} at {source['rev'][:8]}: CONTENTS.md", blob(source, "CONTENTS.md"))]
     if lean:
