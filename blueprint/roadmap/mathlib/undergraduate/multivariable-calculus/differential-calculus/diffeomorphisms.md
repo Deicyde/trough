@@ -18,5 +18,5 @@ Structomorph.{u, u_5, u_6} {H : Type u} [TopologicalSpace H] (G : StructureGroup
 ## Sources
 
 - [Mathlib documentation: `Structomorph`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Geometry/Manifold/HasGroupoid.html#Structomorph)
-- [Source of `Structomorph` in Mathlib/Geometry/Manifold/HasGroupoid.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Geometry/Manifold/HasGroupoid.lean#L361)
-- [Mathlib undergraduate list: Multivariable calculus › Differential calculus](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L472)
+- [Source of `Structomorph` in Mathlib/Geometry/Manifold/HasGroupoid.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Geometry/Manifold/HasGroupoid.lean#L361)
+- [Mathlib undergraduate list: Multivariable calculus › Differential calculus](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/undergrad.yaml#L472)

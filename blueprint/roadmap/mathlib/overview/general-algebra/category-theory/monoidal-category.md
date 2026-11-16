@@ -122,5 +122,5 @@ morphism between any two objects; the strictification theorem is not formalized.
 ## Sources
 
 - [Mathlib documentation: `CategoryTheory.MonoidalCategory`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/CategoryTheory/Monoidal/Category.html#CategoryTheory.MonoidalCategory)
-- [Source of `CategoryTheory.MonoidalCategory` in Mathlib/CategoryTheory/Monoidal/Category.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/CategoryTheory/Monoidal/Category.lean#L152)
-- [Mathlib overview: General algebra › Category theory](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L15)
+- [Source of `CategoryTheory.MonoidalCategory` in Mathlib/CategoryTheory/Monoidal/Category.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/CategoryTheory/Monoidal/Category.lean#L152)
+- [Mathlib overview: General algebra › Category theory](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L15)

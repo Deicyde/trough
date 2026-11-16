@@ -29,9 +29,9 @@ Nat.bertrand (n : ℕ) (hn0 : n ≠ 0) : ∃ p, Nat.Prime p ∧ n < p ∧ p ≤ 
 ## Sources
 
 - [Mathlib documentation: `Nat.bertrand`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/Bertrand.html#Nat.bertrand)
-- [Source of `Nat.bertrand` in Mathlib/NumberTheory/Bertrand.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/NumberTheory/Bertrand.lean#L243)
-- [Freek Wiedijk's 100 theorems, no. 98](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/100.yaml#L506)
-- [1000+ theorems list: Q632546](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L647)
+- [Source of `Nat.bertrand` in Mathlib/NumberTheory/Bertrand.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/NumberTheory/Bertrand.lean#L243)
+- [Freek Wiedijk's 100 theorems, no. 98](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/100.yaml#L506)
+- [1000+ theorems list: Q632546](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/1000.yaml#L650)
 - [1000+ theorems project: Q632546](https://1000-plus.github.io/all.html?length=-1#Q632546)
 - [Wikipedia: Bertrand's postulate](https://en.wikipedia.org/wiki/Bertrand's_postulate)
 - [Wikidata: Q632546](https://www.wikidata.org/wiki/Q632546)

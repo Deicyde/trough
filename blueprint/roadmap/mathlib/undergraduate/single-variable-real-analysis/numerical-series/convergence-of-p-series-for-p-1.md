@@ -26,5 +26,5 @@ Real.summable_one_div_nat_rpow {p : ℝ} : (Summable fun n => 1 / ↑n ^ p) ↔ 
 ## Sources
 
 - [Mathlib documentation: `Real.summable_one_div_nat_rpow`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/PSeries.html#Real.summable_one_div_nat_rpow)
-- [Source of `Real.summable_one_div_nat_rpow` in Mathlib/Analysis/PSeries.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/PSeries.lean#L315)
-- [Mathlib undergraduate list: Single Variable Real Analysis › Numerical series](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L299)
+- [Source of `Real.summable_one_div_nat_rpow` in Mathlib/Analysis/PSeries.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Analysis/PSeries.lean#L313)
+- [Mathlib undergraduate list: Single Variable Real Analysis › Numerical series](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/undergrad.yaml#L299)

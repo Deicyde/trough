@@ -154,5 +154,5 @@ additive groups; the results specific to finite groups do not.
 ## Sources
 
 - [Mathlib documentation: `Group.IsNilpotent`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/Nilpotent.html#Group.IsNilpotent)
-- [Source of `Group.IsNilpotent` in Mathlib/GroupTheory/Nilpotent.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/GroupTheory/Nilpotent.lean#L229)
-- [Mathlib overview: General algebra › Group theory](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L52)
+- [Source of `Group.IsNilpotent` in Mathlib/GroupTheory/Nilpotent.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/GroupTheory/Nilpotent.lean#L228)
+- [Mathlib overview: General algebra › Group theory](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L52)

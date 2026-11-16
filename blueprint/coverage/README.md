@@ -7,7 +7,7 @@ Each library is a row. A mapped library has one row per source it is mapped from
 | Mathlib / Mathlib overview | `DECOMPOSED` | [512 of 512 list items](../roadmap/mathlib/overview/README.md) in Mathlib, one article per concept. |
 | Mathlib / Undergraduate mathematics | `DECOMPOSED` | [399 of 566 list items](../roadmap/mathlib/undergraduate/README.md) in Mathlib, one article per concept. |
 | Mathlib / Freek Wiedijk's 100 theorems | `DECOMPOSED` | [79 of 100 list items](../roadmap/mathlib/hundred-theorems/README.md) in Mathlib, one article per concept. |
-| Mathlib / 1000+ theorems | `DECOMPOSED` | [218 of 1,199 list items](../roadmap/mathlib/thousand-plus/README.md) in Mathlib, one article per concept. |
+| Mathlib / 1000+ theorems | `DECOMPOSED` | [219 of 1,199 list items](../roadmap/mathlib/thousand-plus/README.md) in Mathlib, one article per concept. |
 | Fermat's Last Theorem (Imperial) | `DECOMPOSED` | [172 blueprint nodes in Lean](../roadmap/flt/README.md), one article per node. |
 | PNT+ | `DECOMPOSED` | [383 blueprint nodes in Lean](../roadmap/pnt-plus/README.md), one article per node. |
 | Polynomial Freiman-Ruzsa | `DECOMPOSED` | [213 blueprint nodes in Lean](../roadmap/pfr/README.md), one article per node. |

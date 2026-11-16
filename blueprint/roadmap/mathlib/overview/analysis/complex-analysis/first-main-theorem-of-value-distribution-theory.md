@@ -28,5 +28,5 @@ ValueDistribution.characteristic_sub_characteristic_inv_le {f : ℂ → ℂ} {R 
 ## Sources
 
 - [Mathlib documentation: `ValueDistribution.characteristic_sub_characteristic_inv_le`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Complex/ValueDistribution/FirstMainTheorem.html#ValueDistribution.characteristic_sub_characteristic_inv_le)
-- [Source of `ValueDistribution.characteristic_sub_characteristic_inv_le` in Mathlib/Analysis/Complex/ValueDistribution/FirstMainTheorem.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/Complex/ValueDistribution/FirstMainTheorem.lean#L92)
-- [Mathlib overview: Analysis › Complex analysis](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L376)
+- [Source of `ValueDistribution.characteristic_sub_characteristic_inv_le` in Mathlib/Analysis/Complex/ValueDistribution/FirstMainTheorem.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Analysis/Complex/ValueDistribution/FirstMainTheorem.lean#L92)
+- [Mathlib overview: Analysis › Complex analysis](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L376)

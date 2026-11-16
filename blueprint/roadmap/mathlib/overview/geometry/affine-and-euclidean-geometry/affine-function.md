@@ -17,6 +17,6 @@ AffineMap.{u_1, u_2, u_3, u_4, u_5} (k : Type u_1) {V1 : Type u_2} (P1 : Type u_
 ## Sources
 
 - [Mathlib documentation: `AffineMap`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra/AffineSpace/AffineMap.html#AffineMap)
-- [Source of `AffineMap` in Mathlib/LinearAlgebra/AffineSpace/AffineMap.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/LinearAlgebra/AffineSpace/AffineMap.lean#L54)
-- [Mathlib overview: Geometry › Affine and Euclidean geometry](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L432)
-- [Mathlib undergraduate list: Affine and Euclidean Geometry › General definitions](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L245)
+- [Source of `AffineMap` in Mathlib/LinearAlgebra/AffineSpace/AffineMap.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/LinearAlgebra/AffineSpace/AffineMap.lean#L58)
+- [Mathlib overview: Geometry › Affine and Euclidean geometry](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L432)
+- [Mathlib undergraduate list: Affine and Euclidean Geometry › General definitions](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/undergrad.yaml#L245)

@@ -33,5 +33,5 @@ HasSum.{u_1, u_2} {α : Type u_1} {β : Type u_2} [AddCommMonoid α] [Topologica
 ## Sources
 
 - [Mathlib documentation: `HasSum`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/Algebra/InfiniteSum/Defs.html#HasSum)
-- [Source of `HasSum` in Mathlib/Topology/Algebra/InfiniteSum/Defs.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Topology/Algebra/InfiniteSum/Defs.lean#L90)
-- [Mathlib overview: Topology › Topological algebra](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L253)
+- [Source of `HasSum` in Mathlib/Topology/Algebra/InfiniteSum/Defs.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Topology/Algebra/InfiniteSum/Defs.lean#L89)
+- [Mathlib overview: Topology › Topological algebra](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L253)

@@ -23,8 +23,8 @@ Bernoulli.vonStaudt_clausen (k : ℕ) :
 ## Sources
 
 - [Mathlib documentation: `Bernoulli.vonStaudt_clausen`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/Bernoulli.html#Bernoulli.vonStaudt_clausen)
-- [Source of `Bernoulli.vonStaudt_clausen` in Mathlib/NumberTheory/Bernoulli.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/NumberTheory/Bernoulli.lean#L666)
-- [1000+ theorems list: Q3527230](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L2565)
+- [Source of `Bernoulli.vonStaudt_clausen` in Mathlib/NumberTheory/Bernoulli.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/NumberTheory/Bernoulli.lean#L666)
+- [1000+ theorems list: Q3527230](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/1000.yaml#L2568)
 - [1000+ theorems project: Q3527230](https://1000-plus.github.io/all.html?length=-1#Q3527230)
 - [Wikipedia: Von Staudt–Clausen theorem](https://en.wikipedia.org/wiki/Von_Staudt%E2%80%93Clausen_theorem)
 - [Wikidata: Q3527230](https://www.wikidata.org/wiki/Q3527230)

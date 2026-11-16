@@ -21,5 +21,5 @@ Ordinal.gamma.{u_1} : Ordinal.{u_1} → Ordinal.{u_1}
 ## Sources
 
 - [Mathlib documentation: `Ordinal.gamma`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/SetTheory/Ordinal/Veblen.html#Ordinal.gamma)
-- [Source of `Ordinal.gamma` in Mathlib/SetTheory/Ordinal/Veblen.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/SetTheory/Ordinal/Veblen.lean#L611)
-- [Mathlib overview: Logic and computation › Set theory › Ordinals](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L628)
+- [Source of `Ordinal.gamma` in Mathlib/SetTheory/Ordinal/Veblen.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/SetTheory/Ordinal/Veblen.lean#L611)
+- [Mathlib overview: Logic and computation › Set theory › Ordinals](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L628)

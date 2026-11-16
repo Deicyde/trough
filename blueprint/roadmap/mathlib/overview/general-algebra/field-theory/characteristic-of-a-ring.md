@@ -109,6 +109,6 @@ the statement about their characteristic covers $\mathbb{Z}$ as well.
 ## Sources
 
 - [Mathlib documentation: `ringChar`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/CharP/Defs.html#ringChar)
-- [Source of `ringChar` in Mathlib/Algebra/CharP/Defs.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Algebra/CharP/Defs.lean#L153)
-- [Mathlib overview: General algebra › Field theory](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L122)
-- [Mathlib undergraduate list: Ring Theory › Field Theory](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L172)
+- [Source of `ringChar` in Mathlib/Algebra/CharP/Defs.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Algebra/CharP/Defs.lean#L153)
+- [Mathlib overview: General algebra › Field theory](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L122)
+- [Mathlib undergraduate list: Ring Theory › Field Theory](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/undergrad.yaml#L172)

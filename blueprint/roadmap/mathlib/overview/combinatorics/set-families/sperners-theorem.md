@@ -21,9 +21,9 @@ IsAntichain.sperner.{u_2} {α : Type u_2} [Fintype α] {𝒜 : Finset (Finset α
 ## Sources
 
 - [Mathlib documentation: `IsAntichain.sperner`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Combinatorics/SetFamily/LYM.html#IsAntichain.sperner)
-- [Source of `IsAntichain.sperner` in Mathlib/Combinatorics/SetFamily/LYM.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Combinatorics/SetFamily/LYM.lean#L233)
-- [Mathlib overview: Combinatorics › Set families](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L514)
-- [1000+ theorems list: Q2226786](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L2094)
+- [Source of `IsAntichain.sperner` in Mathlib/Combinatorics/SetFamily/LYM.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Combinatorics/SetFamily/LYM.lean#L233)
+- [Mathlib overview: Combinatorics › Set families](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L514)
+- [1000+ theorems list: Q2226786](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/1000.yaml#L2097)
 - [1000+ theorems project: Q2226786](https://1000-plus.github.io/all.html?length=-1#Q2226786)
 - [Wikipedia: Sperner's theorem](https://en.wikipedia.org/wiki/Sperner's_theorem)
 - [Wikidata: Q2226786](https://www.wikidata.org/wiki/Q2226786)

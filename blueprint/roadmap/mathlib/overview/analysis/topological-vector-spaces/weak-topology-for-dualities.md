@@ -17,5 +17,5 @@ WeakBilin.instTopologicalSpace.{u_2, u_4, u_5} {𝕜 : Type u_2} {E : Type u_4} 
 ## Sources
 
 - [Mathlib documentation: `WeakBilin.instTopologicalSpace`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/Algebra/Module/Spaces/WeakBilin.html#WeakBilin.instTopologicalSpace)
-- [Source of `WeakBilin.instTopologicalSpace` in Mathlib/Topology/Algebra/Module/Spaces/WeakBilin.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Topology/Algebra/Module/Spaces/WeakBilin.lean#L93)
-- [Mathlib overview: Analysis › Topological vector spaces](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L276)
+- [Source of `WeakBilin.instTopologicalSpace` in Mathlib/Topology/Algebra/Module/Spaces/WeakBilin.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Topology/Algebra/Module/Spaces/WeakBilin.lean#L92)
+- [Mathlib overview: Analysis › Topological vector spaces](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L276)

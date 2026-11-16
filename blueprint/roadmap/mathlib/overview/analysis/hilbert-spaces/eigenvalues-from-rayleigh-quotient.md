@@ -31,5 +31,5 @@ IsSelfAdjoint.hasEigenvector_of_isLocalExtrOn.{u_1, u_2} {𝕜 : Type u_1} [RCLi
 ## Sources
 
 - [Mathlib documentation: `IsSelfAdjoint.hasEigenvector_of_isLocalExtrOn`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/InnerProductSpace/Rayleigh.html#IsSelfAdjoint.hasEigenvector_of_isLocalExtrOn)
-- [Source of `IsSelfAdjoint.hasEigenvector_of_isLocalExtrOn` in Mathlib/Analysis/InnerProductSpace/Rayleigh.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/InnerProductSpace/Rayleigh.lean#L266)
-- [Mathlib overview: Analysis › Hilbert spaces](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L302)
+- [Source of `IsSelfAdjoint.hasEigenvector_of_isLocalExtrOn` in Mathlib/Analysis/InnerProductSpace/Rayleigh.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Analysis/InnerProductSpace/Rayleigh.lean#L265)
+- [Mathlib overview: Analysis › Hilbert spaces](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L302)

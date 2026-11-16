@@ -23,5 +23,5 @@ Real.geom_mean_le_arith_mean_weighted.{u} {ι : Type u} (s : Finset ι) (w z : �
 ## Sources
 
 - [Mathlib documentation: `Real.geom_mean_le_arith_mean_weighted`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/MeanInequalities.html#Real.geom_mean_le_arith_mean_weighted)
-- [Source of `Real.geom_mean_le_arith_mean_weighted` in Mathlib/Analysis/MeanInequalities.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/MeanInequalities.lean#L127)
-- [Freek Wiedijk's 100 theorems, no. 38](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/100.yaml#L199)
+- [Source of `Real.geom_mean_le_arith_mean_weighted` in Mathlib/Analysis/MeanInequalities.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Analysis/MeanInequalities.lean#L126)
+- [Freek Wiedijk's 100 theorems, no. 38](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/100.yaml#L199)

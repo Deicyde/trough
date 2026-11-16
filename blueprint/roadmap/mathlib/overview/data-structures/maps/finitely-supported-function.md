@@ -15,5 +15,5 @@ Finsupp.{u_8, u_9} (α : Type u_8) (M : Type u_9) [Zero M] : Type (max u_8 u_9)
 ## Sources
 
 - [Mathlib documentation: `Finsupp`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Data/Finsupp/Defs.html#Finsupp)
-- [Source of `Finsupp` in Mathlib/Data/Finsupp/Defs.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Data/Finsupp/Defs.lean#L87)
-- [Mathlib overview: Data structures › Maps](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L589)
+- [Source of `Finsupp` in Mathlib/Data/Finsupp/Defs.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Data/Finsupp/Defs.lean#L86)
+- [Mathlib overview: Data structures › Maps](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L589)

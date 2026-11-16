@@ -45,6 +45,6 @@ Mathlib defines characteristic zero as a property of any additive monoid with a 
 ## Sources
 
 - [Mathlib documentation: `CharZero`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/CharZero/Defs.html#CharZero)
-- [Source of `CharZero` in Mathlib/Algebra/CharZero/Defs.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Algebra/CharZero/Defs.lean#L33)
-- [Mathlib overview: General algebra › Field theory](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L123)
-- [Mathlib undergraduate list: Ring Theory › Field Theory](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L173)
+- [Source of `CharZero` in Mathlib/Algebra/CharZero/Defs.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Algebra/CharZero/Defs.lean#L33)
+- [Mathlib overview: General algebra › Field theory](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L123)
+- [Mathlib undergraduate list: Ring Theory › Field Theory](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/undergrad.yaml#L173)

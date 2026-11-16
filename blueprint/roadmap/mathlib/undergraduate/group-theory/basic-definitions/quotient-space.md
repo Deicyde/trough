@@ -130,9 +130,9 @@ product formula for orbits and stabilizers assumes that the group is finite.
 ## Sources
 
 - [Mathlib documentation: `MulAction.orbitEquivQuotientStabilizer`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/GroupAction/Quotient.html#MulAction.orbitEquivQuotientStabilizer)
-- [Source of `MulAction.orbitEquivQuotientStabilizer` in Mathlib/GroupTheory/GroupAction/Quotient.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/GroupTheory/GroupAction/Quotient.lean#L167)
-- [Mathlib undergraduate list: Group Theory › Basic definitions](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L90)
-- [1000+ theorems list: Q288465](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L352)
+- [Source of `MulAction.orbitEquivQuotientStabilizer` in Mathlib/GroupTheory/GroupAction/Quotient.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/GroupTheory/GroupAction/Quotient.lean#L167)
+- [Mathlib undergraduate list: Group Theory › Basic definitions](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/undergrad.yaml#L90)
+- [1000+ theorems list: Q288465](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/1000.yaml#L352)
 - [1000+ theorems project: Q288465](https://1000-plus.github.io/all.html?length=-1#Q288465)
 - [Wikipedia: Orbit-stabilizer theorem](https://en.wikipedia.org/wiki/Orbit-stabilizer_theorem)
 - [Wikidata: Q288465](https://www.wikidata.org/wiki/Q288465)

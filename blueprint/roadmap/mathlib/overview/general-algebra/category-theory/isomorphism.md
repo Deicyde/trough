@@ -102,5 +102,5 @@ about epimorphisms.
 ## Sources
 
 - [Mathlib documentation: `CategoryTheory.Iso`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/CategoryTheory/Iso.html#CategoryTheory.Iso)
-- [Source of `CategoryTheory.Iso` in Mathlib/CategoryTheory/Iso.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/CategoryTheory/Iso.lean#L48)
-- [Mathlib overview: General algebra › Category theory](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L8)
+- [Source of `CategoryTheory.Iso` in Mathlib/CategoryTheory/Iso.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/CategoryTheory/Iso.lean#L48)
+- [Mathlib overview: General algebra › Category theory](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L8)

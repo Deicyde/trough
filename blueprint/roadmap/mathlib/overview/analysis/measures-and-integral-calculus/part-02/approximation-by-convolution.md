@@ -43,6 +43,6 @@ ContDiffBump.convolution_tendsto_right.{uG, uE', u_1} {G : Type uG} {E' : Type u
 ## Sources
 
 - [Mathlib documentation: `ContDiffBump.convolution_tendsto_right`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Calculus/BumpFunction/Convolution.html#ContDiffBump.convolution_tendsto_right)
-- [Source of `ContDiffBump.convolution_tendsto_right` in Mathlib/Analysis/Calculus/BumpFunction/Convolution.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/Calculus/BumpFunction/Convolution.lean#L77)
-- [Mathlib overview: Analysis › Measures and integral calculus](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L360)
-- [Mathlib undergraduate list: Measures and integral calculus › Integration](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L529)
+- [Source of `ContDiffBump.convolution_tendsto_right` in Mathlib/Analysis/Calculus/BumpFunction/Convolution.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Analysis/Calculus/BumpFunction/Convolution.lean#L77)
+- [Mathlib overview: Analysis › Measures and integral calculus](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L360)
+- [Mathlib undergraduate list: Measures and integral calculus › Integration](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/undergrad.yaml#L529)

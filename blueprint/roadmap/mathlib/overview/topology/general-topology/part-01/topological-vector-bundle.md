@@ -22,5 +22,5 @@ VectorBundle.{u_1, u_2, u_3, u_4} (R : Type u_1) {B : Type u_2} (F : Type u_3) (
 ## Sources
 
 - [Mathlib documentation: `VectorBundle`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/VectorBundle/Basic.html#VectorBundle)
-- [Source of `VectorBundle` in Mathlib/Topology/VectorBundle/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Topology/VectorBundle/Basic.lean#L371)
-- [Mathlib overview: Topology › General topology](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L234)
+- [Source of `VectorBundle` in Mathlib/Topology/VectorBundle/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Topology/VectorBundle/Basic.lean#L371)
+- [Mathlib overview: Topology › General topology](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L234)

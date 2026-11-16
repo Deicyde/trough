@@ -56,6 +56,6 @@ Mathlib defines subfields for any division ring, not only for fields, so its not
 ## Sources
 
 - [Mathlib documentation: `Subfield`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/Field/Subfield/Defs.html#Subfield)
-- [Source of `Subfield` in Mathlib/Algebra/Field/Subfield/Defs.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Algebra/Field/Subfield/Defs.lean#L128)
-- [Mathlib overview: General algebra › Field theory](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L121)
-- [Mathlib undergraduate list: Ring Theory › Field Theory](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L175)
+- [Source of `Subfield` in Mathlib/Algebra/Field/Subfield/Defs.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Algebra/Field/Subfield/Defs.lean#L128)
+- [Mathlib overview: General algebra › Field theory](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L121)
+- [Mathlib undergraduate list: Ring Theory › Field Theory](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/undergrad.yaml#L175)

@@ -160,6 +160,6 @@ direct sum replaced by a product.
 ## Sources
 
 - [Mathlib documentation: `AddCommGroup.equiv_free_prod_directSum_zmod`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/FiniteAbelian/Basic.html#AddCommGroup.equiv_free_prod_directSum_zmod)
-- [Source of `AddCommGroup.equiv_free_prod_directSum_zmod` in Mathlib/GroupTheory/FiniteAbelian/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/GroupTheory/FiniteAbelian/Basic.lean#L116)
-- [Mathlib overview: General algebra › Group theory](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L58)
-- [Mathlib undergraduate list: Group Theory › Abelian group](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L95)
+- [Source of `AddCommGroup.equiv_free_prod_directSum_zmod` in Mathlib/GroupTheory/FiniteAbelian/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/GroupTheory/FiniteAbelian/Basic.lean#L116)
+- [Mathlib overview: General algebra › Group theory](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L58)
+- [Mathlib undergraduate list: Group Theory › Abelian group](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/undergrad.yaml#L95)

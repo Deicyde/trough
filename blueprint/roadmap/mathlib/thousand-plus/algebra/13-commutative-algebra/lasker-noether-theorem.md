@@ -23,8 +23,8 @@ Submodule.isPrimary_decomposition_pairwise_ne_radical.{u_1, u_2} {R : Type u_1} 
 ## Sources
 
 - [Mathlib documentation: `Submodule.isPrimary_decomposition_pairwise_ne_radical`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/Lasker.html#Submodule.isPrimary_decomposition_pairwise_ne_radical)
-- [Source of `Submodule.isPrimary_decomposition_pairwise_ne_radical` in Mathlib/RingTheory/Lasker.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/RingTheory/Lasker.lean#L62)
-- [1000+ theorems list: Q172298](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L72)
+- [Source of `Submodule.isPrimary_decomposition_pairwise_ne_radical` in Mathlib/RingTheory/Lasker.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/RingTheory/Lasker.lean#L61)
+- [1000+ theorems list: Q172298](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/1000.yaml#L72)
 - [1000+ theorems project: Q172298](https://1000-plus.github.io/all.html?length=-1#Q172298)
 - [Wikipedia: Lasker–Noether theorem](https://en.wikipedia.org/wiki/Lasker%E2%80%93Noether_theorem)
 - [Wikidata: Q172298](https://www.wikidata.org/wiki/Q172298)

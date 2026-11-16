@@ -20,5 +20,5 @@ IsTopologicalGroup.{u_4} (G : Type u_4) [TopologicalSpace G] [Group G] : Prop
 ## Sources
 
 - [Mathlib documentation: `IsTopologicalGroup`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/Algebra/Group/Defs.html#IsTopologicalGroup)
-- [Source of `IsTopologicalGroup` in Mathlib/Topology/Algebra/Group/Defs.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Topology/Algebra/Group/Defs.lean#L103)
-- [Mathlib overview: Topology › Topological algebra](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L251)
+- [Source of `IsTopologicalGroup` in Mathlib/Topology/Algebra/Group/Defs.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Topology/Algebra/Group/Defs.lean#L103)
+- [Mathlib overview: Topology › Topological algebra](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L251)

@@ -25,8 +25,8 @@ Choose.lucas_theorem {n k p : ℕ} [Fact (Nat.Prime p)] {a : ℕ} (ha₁ : n < p
 ## Sources
 
 - [Mathlib documentation: `Choose.lucas_theorem`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Data/Nat/Choose/Lucas.html#Choose.lucas_theorem)
-- [Source of `Choose.lucas_theorem` in Mathlib/Data/Nat/Choose/Lucas.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Data/Nat/Choose/Lucas.lean#L102)
-- [1000+ theorems list: Q1186808](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L1487)
+- [Source of `Choose.lucas_theorem` in Mathlib/Data/Nat/Choose/Lucas.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Data/Nat/Choose/Lucas.lean#L102)
+- [1000+ theorems list: Q1186808](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/1000.yaml#L1490)
 - [1000+ theorems project: Q1186808](https://1000-plus.github.io/all.html?length=-1#Q1186808)
 - [Wikipedia: Lucas's theorem](https://en.wikipedia.org/wiki/Lucas's_theorem)
 - [Wikidata: Q1186808](https://www.wikidata.org/wiki/Q1186808)

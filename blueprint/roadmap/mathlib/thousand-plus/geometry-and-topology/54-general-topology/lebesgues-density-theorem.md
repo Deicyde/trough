@@ -33,8 +33,8 @@ Besicovitch.ae_tendsto_measure_inter_div.{u} {β : Type u} [MetricSpace β] [Mea
 ## Sources
 
 - [Mathlib documentation: `Besicovitch.ae_tendsto_measure_inter_div`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/Covering/Besicovitch.html#Besicovitch.ae_tendsto_measure_inter_div)
-- [Source of `Besicovitch.ae_tendsto_measure_inter_div` in Mathlib/MeasureTheory/Covering/Besicovitch.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/MeasureTheory/Covering/Besicovitch.lean#L1098)
-- [1000+ theorems list: Q842953](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L942)
+- [Source of `Besicovitch.ae_tendsto_measure_inter_div` in Mathlib/MeasureTheory/Covering/Besicovitch.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/MeasureTheory/Covering/Besicovitch.lean#L1098)
+- [1000+ theorems list: Q842953](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/1000.yaml#L945)
 - [1000+ theorems project: Q842953](https://1000-plus.github.io/all.html?length=-1#Q842953)
 - [Wikipedia: Lebesgue's density theorem](https://en.wikipedia.org/wiki/Lebesgue's_density_theorem)
 - [Wikidata: Q842953](https://www.wikidata.org/wiki/Q842953)

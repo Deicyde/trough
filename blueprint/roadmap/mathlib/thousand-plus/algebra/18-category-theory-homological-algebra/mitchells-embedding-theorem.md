@@ -30,8 +30,8 @@ CategoryTheory.Abelian.freyd_mitchell.{v, u} (C : Type u) [CategoryTheory.Catego
 ## Sources
 
 - [Mathlib documentation: `CategoryTheory.Abelian.freyd_mitchell`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/CategoryTheory/Abelian/FreydMitchell.html#CategoryTheory.Abelian.freyd_mitchell)
-- [Source of `CategoryTheory.Abelian.freyd_mitchell` in Mathlib/CategoryTheory/Abelian/FreydMitchell.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/CategoryTheory/Abelian/FreydMitchell.lean#L165)
-- [1000+ theorems list: Q1148215](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L1438)
+- [Source of `CategoryTheory.Abelian.freyd_mitchell` in Mathlib/CategoryTheory/Abelian/FreydMitchell.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/CategoryTheory/Abelian/FreydMitchell.lean#L165)
+- [1000+ theorems list: Q1148215](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/1000.yaml#L1441)
 - [1000+ theorems project: Q1148215](https://1000-plus.github.io/all.html?length=-1#Q1148215)
 - [Wikipedia: Mitchell's embedding theorem](https://en.wikipedia.org/wiki/Mitchell's_embedding_theorem)
 - [Wikidata: Q1148215](https://www.wikidata.org/wiki/Q1148215)

@@ -28,5 +28,5 @@ SimpleGraph.triangle_counting.{u_1} {α : Type u_1} (G : SimpleGraph α) [Decida
 ## Sources
 
 - [Mathlib documentation: `SimpleGraph.triangle_counting`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Combinatorics/SimpleGraph/Triangle/Counting.html#SimpleGraph.triangle_counting)
-- [Source of `SimpleGraph.triangle_counting` in Mathlib/Combinatorics/SimpleGraph/Triangle/Counting.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Combinatorics/SimpleGraph/Triangle/Counting.lean#L149)
-- [Mathlib overview: Combinatorics › Graph theory](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L531)
+- [Source of `SimpleGraph.triangle_counting` in Mathlib/Combinatorics/SimpleGraph/Triangle/Counting.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Combinatorics/SimpleGraph/Triangle/Counting.lean#L149)
+- [Mathlib overview: Combinatorics › Graph theory](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L531)

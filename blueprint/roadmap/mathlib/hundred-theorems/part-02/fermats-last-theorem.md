@@ -18,8 +18,8 @@ Its prerequisites are not mapped yet.
 
 ## Sources
 
-- [Freek Wiedijk's 100 theorems, no. 33](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/100.yaml#L168)
-- [1000+ theorems list: Q132469](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L51)
+- [Freek Wiedijk's 100 theorems, no. 33](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/100.yaml#L168)
+- [1000+ theorems list: Q132469](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/1000.yaml#L51)
 - [Outside Mathlib: result](https://github.com/anthropics/fermats-last-theorem/blob/6e837e75355538c7f80bab5b956861e86c4eacc2/FinalCheck.lean#L7)
 - [Outside Mathlib: attribution](https://github.com/anthropics/fermats-last-theorem/blob/6e837e75355538c7f80bab5b956861e86c4eacc2/NOTICE)
 - [1000+ theorems project: Q132469](https://1000-plus.github.io/all.html?length=-1#Q132469)

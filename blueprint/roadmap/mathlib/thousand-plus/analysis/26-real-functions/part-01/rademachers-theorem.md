@@ -49,8 +49,8 @@ LipschitzOnWith.ae_differentiableWithinAt.{u_1, u_2} {E : Type u_1} [NormedAddCo
 ## Sources
 
 - [Mathlib documentation: `LipschitzOnWith.ae_differentiableWithinAt`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Calculus/Rademacher.html#LipschitzOnWith.ae_differentiableWithinAt)
-- [Source of `LipschitzOnWith.ae_differentiableWithinAt` in Mathlib/Analysis/Calculus/Rademacher.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/Calculus/Rademacher.lean#L374)
-- [1000+ theorems list: Q132427](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L45)
+- [Source of `LipschitzOnWith.ae_differentiableWithinAt` in Mathlib/Analysis/Calculus/Rademacher.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Analysis/Calculus/Rademacher.lean#L374)
+- [1000+ theorems list: Q132427](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/1000.yaml#L45)
 - [1000+ theorems project: Q132427](https://1000-plus.github.io/all.html?length=-1#Q132427)
 - [Wikipedia: Rademacher's theorem](https://en.wikipedia.org/wiki/Rademacher's_theorem)
 - [Wikidata: Q132427](https://www.wikidata.org/wiki/Q132427)

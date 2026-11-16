@@ -110,5 +110,5 @@ over any nontrivial ring, and irreducibility is stated over $\mathbb{Q}$.
 ## Sources
 
 - [Mathlib documentation: `Complex.isPrimitiveRoot_iff`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/RootsOfUnity/Complex.html#Complex.isPrimitiveRoot_iff)
-- [Source of `Complex.isPrimitiveRoot_iff` in Mathlib/RingTheory/RootsOfUnity/Complex.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/RingTheory/RootsOfUnity/Complex.lean#L97)
-- [Mathlib undergraduate list: Group Theory › Abelian group](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L97)
+- [Source of `Complex.isPrimitiveRoot_iff` in Mathlib/RingTheory/RootsOfUnity/Complex.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/RingTheory/RootsOfUnity/Complex.lean#L96)
+- [Mathlib undergraduate list: Group Theory › Abelian group](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/undergrad.yaml#L97)

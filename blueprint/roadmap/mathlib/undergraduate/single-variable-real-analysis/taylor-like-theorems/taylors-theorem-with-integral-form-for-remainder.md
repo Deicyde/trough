@@ -34,5 +34,5 @@ taylor_integral_remainder_of_absolutelyContinuous {f : ℝ → ℝ} {x x₀ : �
 ## Sources
 
 - [Mathlib documentation: `taylor_integral_remainder_of_absolutelyContinuous`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Calculus/Taylor.html#taylor_integral_remainder_of_absolutelyContinuous)
-- [Source of `taylor_integral_remainder_of_absolutelyContinuous` in Mathlib/Analysis/Calculus/Taylor.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/Calculus/Taylor.lean#L503)
-- [Mathlib undergraduate list: Single Variable Real Analysis › Taylor-like theorems](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L326)
+- [Source of `taylor_integral_remainder_of_absolutelyContinuous` in Mathlib/Analysis/Calculus/Taylor.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Analysis/Calculus/Taylor.lean#L506)
+- [Mathlib undergraduate list: Single Variable Real Analysis › Taylor-like theorems](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/undergrad.yaml#L326)

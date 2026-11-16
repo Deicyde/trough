@@ -139,9 +139,9 @@ set is Diophantine nor the negative solution of Hilbert's tenth problem.
 ## Sources
 
 - [Mathlib documentation: `Pell.matiyasevic`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/NumberTheory/PellMatiyasevic.html#Pell.matiyasevic)
-- [Source of `Pell.matiyasevic` in Mathlib/NumberTheory/PellMatiyasevic.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/NumberTheory/PellMatiyasevic.lean#L725)
-- [Mathlib overview: General algebra › Number theory](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L146)
-- [1000+ theorems list: Q16251580](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L4085)
+- [Source of `Pell.matiyasevic` in Mathlib/NumberTheory/PellMatiyasevic.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/NumberTheory/PellMatiyasevic.lean#L724)
+- [Mathlib overview: General algebra › Number theory](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L146)
+- [1000+ theorems list: Q16251580](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/1000.yaml#L4088)
 - [1000+ theorems project: Q16251580](https://1000-plus.github.io/all.html?length=-1#Q16251580)
 - [Wikipedia: Matiyasevich's theorem](https://en.wikipedia.org/wiki/Matiyasevich's_theorem)
 - [Wikidata: Q16251580](https://www.wikidata.org/wiki/Q16251580)

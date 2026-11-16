@@ -26,9 +26,9 @@ AbelRuffini.exists_not_solvable_by_rad : ∃ x, IsAlgebraic ℚ x ∧ x ∉ solv
 ## Sources
 
 - [Mathlib documentation: `AbelRuffini.exists_not_solvable_by_rad`](https://leanprover-community.github.io/mathlib4_docs/Archive/Wiedijk100Theorems/AbelRuffini.html#AbelRuffini.exists_not_solvable_by_rad)
-- [Source of `AbelRuffini.exists_not_solvable_by_rad` in Archive/Wiedijk100Theorems/AbelRuffini.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Archive/Wiedijk100Theorems/AbelRuffini.lean#L169)
-- [Freek Wiedijk's 100 theorems, no. 16](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/100.yaml#L83)
-- [1000+ theorems list: Q657482](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L712)
+- [Source of `AbelRuffini.exists_not_solvable_by_rad` in Archive/Wiedijk100Theorems/AbelRuffini.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Archive/Wiedijk100Theorems/AbelRuffini.lean#L169)
+- [Freek Wiedijk's 100 theorems, no. 16](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/100.yaml#L83)
+- [1000+ theorems list: Q657482](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/1000.yaml#L715)
 - [1000+ theorems project: Q657482](https://1000-plus.github.io/all.html?length=-1#Q657482)
 - [Wikipedia: Abel–Ruffini theorem](https://en.wikipedia.org/wiki/Abel%E2%80%93Ruffini_theorem)
 - [Wikidata: Q657482](https://www.wikidata.org/wiki/Q657482)

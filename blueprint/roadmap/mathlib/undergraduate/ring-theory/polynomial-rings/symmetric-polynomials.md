@@ -16,5 +16,5 @@ MvPolynomial.IsSymmetric.{u_1, u_3} {σ : Type u_1} {R : Type u_3} [CommSemiring
 ## Sources
 
 - [Mathlib documentation: `MvPolynomial.IsSymmetric`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RingTheory/MvPolynomial/Symmetric/Defs.html#MvPolynomial.IsSymmetric)
-- [Source of `MvPolynomial.IsSymmetric` in Mathlib/RingTheory/MvPolynomial/Symmetric/Defs.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/RingTheory/MvPolynomial/Symmetric/Defs.lean#L109)
-- [Mathlib undergraduate list: Ring Theory › Polynomial rings](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L169)
+- [Source of `MvPolynomial.IsSymmetric` in Mathlib/RingTheory/MvPolynomial/Symmetric/Defs.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/RingTheory/MvPolynomial/Symmetric/Defs.lean#L108)
+- [Mathlib undergraduate list: Ring Theory › Polynomial rings](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/undergrad.yaml#L169)

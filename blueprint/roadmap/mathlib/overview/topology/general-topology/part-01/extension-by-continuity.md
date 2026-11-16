@@ -19,5 +19,5 @@ IsDenseInducing.extend.{u_1, u_2, u_3} {α : Type u_1} {β : Type u_2} {γ : Typ
 ## Sources
 
 - [Mathlib documentation: `IsDenseInducing.extend`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/DenseEmbedding.html#IsDenseInducing.extend)
-- [Source of `IsDenseInducing.extend` in Mathlib/Topology/DenseEmbedding.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Topology/DenseEmbedding.lean#L136)
-- [Mathlib overview: Topology › General topology](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L227)
+- [Source of `IsDenseInducing.extend` in Mathlib/Topology/DenseEmbedding.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Topology/DenseEmbedding.lean#L135)
+- [Mathlib overview: Topology › General topology](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L227)
