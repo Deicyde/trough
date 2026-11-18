@@ -563,7 +563,10 @@ follow") and a paragraph saying code should be upstreamed, each cut marked with
 An edge means that a module's declarations use another module's: "Depends on"
 lists the modules its statements use, the types of its declarations and the
 values of its definitions, and "Proof depends on" those only its proofs use; a
-dependency reached through another is left out.
+dependency reached through another is left out. `tools/trough/library.py`
+reads the modules and builds the chapter, as it will for other Lean libraries;
+`tools/trough/cslib.py` holds what is CSLib's own: its README's description,
+the maintainers GOVERNANCE.md names and the chapter's intro.
 
 1. `tools/refresh_cslib.py CHECKOUT` reads a checkout and writes
    `data/cslib/source.json`, the commit, its date, toolchain and Mathlib, and
