@@ -33,17 +33,11 @@
  "libraries": [
   {
    "name": "OAI",
-   "src": ".",
-   "roots": [
-    "OAI"
-   ]
+   "src": "."
   },
   {
    "name": "ElevenTwelfths",
-   "src": ".",
-   "roots": [
-    "ElevenTwelfths"
-   ]
+   "src": "."
   }
  ],
  "library_files": 305,
@@ -309,9 +303,7 @@
   "Mathlib.Topology.Order.ProjIcc": 1
  },
  "import_roots": {
-  "ElevenTwelfths": 12,
   "Mathlib": 8,
-  "OAI": 292,
   "RellichKondrachov": 1
  },
  "uses": {

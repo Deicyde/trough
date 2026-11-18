@@ -1,0 +1,128 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "mit-pdos/xv6iris",
+ "slug": "mit-pdos--xv6iris",
+ "rev": "5cb9df992c45829f6210b3e4176962d7b7a4c408",
+ "date": "2026-11-06T08:25:56Z",
+ "stable": "71122cb0dcebea6c8ff1fbd3244d4e8531e74889a0aaa45d14fe91d06ef8a7a2",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "MIT",
+  "file": "LICENSE",
+  "copyright": [
+   "Copyright (c) 2026 Massachusetts Institute of Technology"
+  ]
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "xv6iris (Lean) — verifying xv6-riscv in Lean 4 / Iris over the Sail RISC-V semantics",
+  "excerpt": "This project proves, in [Lean 4](https://lean-lang.org/) with the [iris-lean](https://github.com/leanprover-community/iris-lean) separation logic, that the [xv6-riscv](https://github.com/mit-pdos/xv6-riscv) kernel and its user programs are correct — reasoning about the *actual binaries*, instruction by instruction, against the official [Sail RISC-V](https://github.com/riscv/sail-riscv) ISA semantics compiled to Lean by Sail's own Lean backend (from the [zeldovich/sail-riscv](https://github.com/zeldovich/sail-riscv) fork; see \"Regenerating the Sail model\")."
+ },
+ "lean_files": 3035,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.32.2",
+ "mathlib": "",
+ "requirements": [
+  {
+   "name": "iris",
+   "url": "https://github.com/leanprover-community/iris-lean",
+   "rev": "728a17140939e49af9236f7cb0d037da9ec52435"
+  },
+  {
+   "name": "Lean_RV64D",
+   "url": "model/Lean_RV64D",
+   "rev": ""
+  },
+  {
+   "name": "Sail",
+   "url": "vendor/lean-sail",
+   "rev": ""
+  }
+ ],
+ "libraries": [
+  {
+   "name": "MachCSL",
+   "src": "."
+  },
+  {
+   "name": "Xv6",
+   "src": "."
+  },
+  {
+   "name": "Vtest",
+   "src": "vtest-lean"
+  }
+ ],
+ "library_files": 2883,
+ "capped": false,
+ "declarations": 41891,
+ "sorry_files": 2,
+ "axioms": 0,
+ "closure_files": 2390,
+ "closure_sorry": [
+  "Xv6/UShLexRedir.lean",
+  "Xv6/UserHeap.lean"
+ ],
+ "closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": "readme",
+ "headline_count": 3,
+ "headlines": [
+  {
+   "name": "Xv6.xv6FsAdequacy_closed",
+   "module": "Xv6.LinkSystemAdequacyClosed",
+   "file": "Xv6/LinkSystemAdequacyClosed.lean",
+   "line": 20,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "List",
+    "Nat"
+   ]
+  },
+  {
+   "name": "Xv6.unionAdequacyClosed",
+   "module": "Xv6.LinkUInitUnion",
+   "file": "Xv6/LinkUInitUnion.lean",
+   "line": 162,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "List",
+    "Nat"
+   ]
+  },
+  {
+   "name": "Xv6.unionSyncCutNeg",
+   "module": "Xv6.LinkUInitUnion",
+   "file": "Xv6/LinkUInitUnion.lean",
+   "line": 176,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "List",
+    "Nat"
+   ]
+  }
+ ],
+ "mathlib_imports": {},
+ "import_roots": {
+  "Iris": 18,
+  "Lean": 4,
+  "LeanRV64D": 12,
+  "Std": 8
+ },
+ "uses": {
+  "Array": 10,
+  "Int": 669,
+  "Language": 1,
+  "List": 1599,
+  "Nat": 2019,
+  "Rat": 4,
+  "Std.HashMap": 2
+ },
+ "ci": null
+}

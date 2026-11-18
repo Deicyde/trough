@@ -1,0 +1,104 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "BasisResearch/VeriDNS",
+ "slug": "basisresearch--veridns",
+ "rev": "74bb5f3f1454a8de2744e69f8af18fe48e0e9f2e",
+ "date": "2026-07-17T17:46:58Z",
+ "stable": "f2a0e1e272474516b0eeaeb965eb482470fdd038a604bc1403fdee28cefc2f8c",
+ "license": {
+  "files": [],
+  "spdx": null,
+  "file": null,
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "VeriDNS",
+  "excerpt": null
+ },
+ "lean_files": 127,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.31.0-rc2",
+ "mathlib": "",
+ "requirements": [],
+ "libraries": [
+  {
+   "name": "VeriDNS",
+   "src": "."
+  }
+ ],
+ "library_files": 126,
+ "capped": false,
+ "declarations": 4076,
+ "sorry_files": 0,
+ "axioms": 0,
+ "closure_files": 65,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": "readme",
+ "headline_count": 4,
+ "headlines": [
+  {
+   "name": "VeriDNS.Proof.NameTree.resolveWithIO_sound",
+   "module": "VeriDNS.Proof.NameTree",
+   "file": "VeriDNS/Proof/NameTree.lean",
+   "line": 2018,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Nat"
+   ]
+  },
+  {
+   "name": "VeriDNS.Spec.Net.scrubAnswer_no_foreign",
+   "module": "VeriDNS.Spec.AnswerAuthenticity",
+   "file": "VeriDNS/Spec/AnswerAuthenticity.lean",
+   "line": 158,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "List"
+   ]
+  },
+  {
+   "name": "VeriDNS.Impl.Resolver.scrubAnswerB_excludes_foreign",
+   "module": "VeriDNS.Proof.AnswerScrub",
+   "file": "VeriDNS/Proof/AnswerScrub.lean",
+   "line": 99,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Array"
+   ]
+  },
+  {
+   "name": "ioResumeLoop_sound",
+   "module": "VeriDNS.Proof.IoResumeSound",
+   "file": "VeriDNS/Proof/IoResumeSound.lean",
+   "line": 3571,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "List",
+    "Nat"
+   ]
+  }
+ ],
+ "mathlib_imports": {},
+ "import_roots": {
+  "Batteries": 36,
+  "Lean": 2,
+  "Pseudoprint": 35,
+  "Std": 35
+ },
+ "uses": {
+  "Array": 67,
+  "List": 42,
+  "Nat": 82,
+  "Set": 3,
+  "Std.HashMap": 1
+ },
+ "ci": "FAILURE"
+}

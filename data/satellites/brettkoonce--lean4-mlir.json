@@ -1,0 +1,256 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "brettkoonce/lean4-mlir",
+ "slug": "brettkoonce--lean4-mlir",
+ "rev": "26820779f0d87e88bfae89a81c3063aa58d050f1",
+ "date": "2026-11-17T22:09:29Z",
+ "stable": "bd0d8f65dfbb3582b4d4497a8c74b2fba783239b381dd43504e3c0ba2b52fb5c",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "BSD-3-Clause",
+  "file": "LICENSE",
+  "copyright": [
+   "Copyright (c) 2026, Brett Koonce"
+  ]
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Lean 4 → MLIR → GPU",
+  "excerpt": "**The book: [Verified Deep Learning with Lean 4](https://lean.brettkoonce.com/blueprint/)** — the interactive proof blueprint *is* the book: every theorem clickable, from the `pdiv` primitives to the whole-network backward passes."
+ },
+ "lean_files": 656,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.36.0",
+ "mathlib": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842",
+ "requirements": [],
+ "libraries": [
+  {
+   "name": "LeanMlir",
+   "src": "."
+  },
+  {
+   "name": "Proofs",
+   "src": "."
+  },
+  {
+   "name": "Certs",
+   "src": "."
+  },
+  {
+   "name": "CertsHeavy",
+   "src": "."
+  },
+  {
+   "name": "ProofsMinimal",
+   "src": "."
+  },
+  {
+   "name": "Reference",
+   "src": "."
+  },
+  {
+   "name": "Apps",
+   "src": "."
+  },
+  {
+   "name": "TestSupport",
+   "src": "."
+  },
+  {
+   "name": "ComparatorTests",
+   "src": "tests/comparator"
+  }
+ ],
+ "library_files": 446,
+ "capped": false,
+ "declarations": 15399,
+ "sorry_files": 3,
+ "axioms": 0,
+ "closure_files": 42,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": "blueprint",
+ "headline_count": 150,
+ "headlines": [
+  {
+   "name": "Proofs.LinFold.poc_train_step_tail_certified",
+   "module": "LeanMlir.Proofs.Nets.Small.LinearFold",
+   "file": "LeanMlir/Proofs/Nets/Small/LinearFold.lean",
+   "line": 98,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "Proofs.LinFoldB.lin_train_step_tiedB",
+   "module": "LeanMlir.Proofs.Nets.Small.LinearFoldB",
+   "file": "LeanMlir/Proofs/Nets/Small/LinearFoldB.lean",
+   "line": 174,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "Proofs.LinFoldB.lin_weight_meanlossB",
+   "module": "LeanMlir.Proofs.Nets.Small.LinearFoldB",
+   "file": "LeanMlir/Proofs/Nets/Small/LinearFoldB.lean",
+   "line": 191,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "Proofs.LinFold.linear_net_lossGrad",
+   "module": "LeanMlir.Proofs.Nets.Small.LinearParamGrad",
+   "file": "LeanMlir/Proofs/Nets/Small/LinearParamGrad.lean",
+   "line": 39,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "Proofs.LinFold.linear_net_lossGrad_CE",
+   "module": "LeanMlir.Proofs.Nets.Small.LinearParamGrad",
+   "file": "LeanMlir/Proofs/Nets/Small/LinearParamGrad.lean",
+   "line": 46,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "Proofs.mlpHasVJPAt_correct",
+   "module": "LeanMlir.Proofs.Foundation.MLP",
+   "file": "LeanMlir/Proofs/Foundation/MLP.lean",
+   "line": 398,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Nat"
+   ]
+  },
+  {
+   "name": "Proofs.mlpHasVJPAt",
+   "module": "LeanMlir.Proofs.Foundation.MLP",
+   "file": "LeanMlir/Proofs/Foundation/MLP.lean",
+   "line": 336,
+   "kind": "def",
+   "sorry": false,
+   "names": [
+    "Nat"
+   ]
+  },
+  {
+   "name": "Proofs.MlpFold.mlp_train_step_tied",
+   "module": "LeanMlir.Proofs.Nets.Small.MlpFold",
+   "file": "LeanMlir/Proofs/Nets/Small/MlpFold.lean",
+   "line": 177,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  }
+ ],
+ "mathlib_imports": {
+  "Mathlib.Algebra.BigOperators.Field": 3,
+  "Mathlib.Algebra.BigOperators.Fin": 1,
+  "Mathlib.Algebra.BigOperators.Group.Finset.Defs": 2,
+  "Mathlib.Algebra.Order.Algebra": 1,
+  "Mathlib.Algebra.Order.Archimedean.Real.Basic": 1,
+  "Mathlib.Algebra.Order.Star.Real": 3,
+  "Mathlib.Analysis.Calculus.ContDiff.Operations": 1,
+  "Mathlib.Analysis.Calculus.Deriv.Comp": 1,
+  "Mathlib.Analysis.Calculus.Deriv.Inv": 1,
+  "Mathlib.Analysis.Calculus.Deriv.MeanValue": 1,
+  "Mathlib.Analysis.Calculus.Deriv.Mul": 2,
+  "Mathlib.Analysis.Calculus.Deriv.Pow": 1,
+  "Mathlib.Analysis.Calculus.Deriv.Slope": 1,
+  "Mathlib.Analysis.Calculus.FDeriv.Mul": 1,
+  "Mathlib.Analysis.InnerProductSpace.Basic": 1,
+  "Mathlib.Analysis.InnerProductSpace.PiL2": 2,
+  "Mathlib.Analysis.Matrix.PosDef": 1,
+  "Mathlib.Analysis.Normed.Field.Basic": 1,
+  "Mathlib.Analysis.RCLike.Basic": 1,
+  "Mathlib.Analysis.Real.Pi.Bounds": 1,
+  "Mathlib.Analysis.SpecialFunctions.Bernstein": 1,
+  "Mathlib.Analysis.SpecialFunctions.Log.Basic": 2,
+  "Mathlib.Analysis.SpecialFunctions.Log.Deriv": 3,
+  "Mathlib.Analysis.SpecialFunctions.Pow.NNReal": 2,
+  "Mathlib.Analysis.SpecialFunctions.Sigmoid": 1,
+  "Mathlib.Analysis.SpecialFunctions.Sqrt": 1,
+  "Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic": 1,
+  "Mathlib.Analysis.SpecialFunctions.Trigonometric.DerivHyp": 186,
+  "Mathlib.Basic.Real.Basic": 3,
+  "Mathlib.Data.Fintype.Basic": 2,
+  "Mathlib.Data.Int.Log": 1,
+  "Mathlib.Data.List.GetD": 1,
+  "Mathlib.Data.Matrix.Mul": 2,
+  "Mathlib.Data.Rat.BigOperators": 1,
+  "Mathlib.Data.Rat.Cast.Order": 1,
+  "Mathlib.Data.String.Defs": 1,
+  "Mathlib.Data.Sym.Sym2.Init": 1,
+  "Mathlib.Dynamics.FixedPoints.Topology": 1,
+  "Mathlib.MeasureTheory.Integral.Bochner.Basic": 2,
+  "Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic": 1,
+  "Mathlib.MeasureTheory.Integral.IntervalIntegral.FundThmCalculus": 1,
+  "Mathlib.Probability.CDF": 3,
+  "Mathlib.Probability.Distributions.Binomial": 1,
+  "Mathlib.Probability.Distributions.Gaussian.Multivariate": 4,
+  "Mathlib.Probability.Distributions.Gaussian.Real": 2,
+  "Mathlib.Probability.Moments.SubGaussian": 1,
+  "Mathlib.Tactic.Measurability.Init": 2,
+  "Mathlib.Tactic.NormNum.GCD": 1,
+  "Mathlib.Tactic.Positivity.Finset": 11,
+  "Mathlib.Topology.Instances.Matrix": 1,
+  "Mathlib.Topology.MetricSpace.Pseudo.Defs": 1,
+  "Mathlib.Topology.Metrizable.Uniformity": 1
+ },
+ "import_roots": {
+  "Lean": 1,
+  "Mathlib": 224,
+  "Std": 2
+ },
+ "uses": {
+  "Array": 49,
+  "BorelSpace": 1,
+  "Continuous": 30,
+  "Differentiable": 56,
+  "Filter": 7,
+  "Filter.Tendsto": 1,
+  "FiniteDimensional": 1,
+  "Finset": 41,
+  "HasDerivAt": 7,
+  "HasFDerivAt": 7,
+  "InnerProductSpace": 2,
+  "Int": 6,
+  "LipschitzWith": 1,
+  "List": 169,
+  "Matrix": 6,
+  "Measurable": 6,
+  "MeasurableSet": 4,
+  "MeasurableSpace": 4,
+  "MeasureTheory.Integrable": 2,
+  "MeasureTheory.IsProbabilityMeasure": 3,
+  "MeasureTheory.Measure": 4,
+  "MeasureTheory.Measure.pi": 5,
+  "MeasureTheory.integral": 2,
+  "Nat": 328,
+  "NormedSpace": 2,
+  "ProbabilityTheory.binomial": 1,
+  "ProbabilityTheory.gaussianReal": 5,
+  "ProbabilityTheory.iIndepFun": 1,
+  "Real": 11,
+  "Real.exp": 21,
+  "Real.log": 3,
+  "Real.sinh": 1,
+  "Set": 4,
+  "Submodule.reflection": 1,
+  "TopologicalSpace": 1,
+  "fderiv": 13,
+  "fderiv_comp": 1,
+  "fderiv_mul": 1
+ },
+ "ci": "SUCCESS"
+}

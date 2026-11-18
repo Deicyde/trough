@@ -1,0 +1,98 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "Verified-zkEVM/evm-asm",
+ "slug": "verified-zkevm--evm-asm",
+ "rev": "7e65e4d024718f704226cd795f3d03d4e9aafe13",
+ "date": "2026-09-04T06:30:20Z",
+ "stable": "e4157e4cc1b89202b2dcbc43d3136b950ac2a36353cb54134e84b84dcdf6e704",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "MIT",
+  "file": "LICENSE",
+  "copyright": [
+   "Copyright (c) 2026 ZkSecurity"
+  ]
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "evm.asm: A Verified Macro Assembler for building zkEVM in Lean 4 (early experiment)",
+  "excerpt": "The formally verified [Pancake compiler looks promising](https://github.com/pirapira/stateless-pancaketh/tree/e86464f606c7afced09c67be058fc28147a27aa8). In light of that work, we are reconsidering the overall approach of this project. The current code and future contributions to **evm.asm** may not ultimately be used in the final implementation, so please treat ongoing work here as exploratory until the direction is settled."
+ },
+ "lean_files": 3120,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.33.0",
+ "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+ "requirements": [
+  {
+   "name": "«riscv-zkvm»",
+   "url": "https://github.com/Verified-zkEVM/riscv-zkvm",
+   "rev": "afcbc45e1c74c2d296e032b5606dd977a304e8ad"
+  }
+ ],
+ "libraries": [
+  {
+   "name": "EvmAsm",
+   "src": "."
+  }
+ ],
+ "library_files": 3104,
+ "capped": false,
+ "declarations": 40295,
+ "sorry_files": 0,
+ "axioms": 0,
+ "closure_files": 0,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": null,
+ "headline_count": 0,
+ "headlines": [],
+ "mathlib_imports": {
+  "Mathlib.Algebra.BigOperators.Group.List.Basic": 1,
+  "Mathlib.Algebra.Group.Nat.Defs": 2,
+  "Mathlib.Data.BitVec": 2,
+  "Mathlib.Data.Fin.VecNotation": 1,
+  "Mathlib.Data.Fintype.Basic": 3,
+  "Mathlib.Data.List.Basic": 1,
+  "Mathlib.Data.List.GetD": 5,
+  "Mathlib.Data.List.Induction": 1,
+  "Mathlib.Data.Nat.Basic": 2,
+  "Mathlib.Data.Nat.Bitwise": 2,
+  "Mathlib.Data.Nat.Choose.Basic": 1,
+  "Mathlib.Data.Nat.Factorial.Basic": 1,
+  "Mathlib.Data.Nat.Log": 2,
+  "Mathlib.Data.Nat.ModEq": 1,
+  "Mathlib.Data.Vector.Basic": 1,
+  "Mathlib.FieldTheory.Finite.Basic": 1,
+  "Mathlib.Tactic": 2,
+  "Mathlib.Tactic.FinCases": 6,
+  "Mathlib.Tactic.IntervalCases": 5,
+  "Mathlib.Tactic.Linarith": 5,
+  "Mathlib.Tactic.NormNum": 5,
+  "Mathlib.Tactic.NormNum.Basic": 1,
+  "Mathlib.Tactic.Positivity": 6,
+  "Mathlib.Tactic.Push": 1,
+  "Mathlib.Tactic.Ring": 21,
+  "Mathlib.Tactic.Set": 4,
+  "Mathlib.Tactic.SplitIfs": 1
+ },
+ "import_roots": {
+  "Batteries": 7,
+  "Init": 1,
+  "Lean": 31,
+  "Mathlib": 55,
+  "RiscvZkvm": 59
+ },
+ "uses": {
+  "Array": 8,
+  "Field": 3,
+  "Int": 22,
+  "List": 1154,
+  "Nat": 1505,
+  "Nat.ModEq.pow_totient": 1
+ },
+ "ci": "SUCCESS"
+}

@@ -1,0 +1,160 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "Verified-zkEVM/machine-checked",
+ "slug": "verified-zkevm--machine-checked",
+ "rev": "68314c8f378d3b5406da80d312e8763b66a3f033",
+ "date": "2026-11-17T11:16:35Z",
+ "stable": "b790bb9820844923bbb6a7176b6048dbc4377c825c1c44f25a772a50af0436d5",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "MachineChecked",
+  "excerpt": "Formally verify machine code directly in Lean."
+ },
+ "lean_files": 1230,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.36.0-rc2",
+ "mathlib": "9d581dfff2e41de989072ea63abf3daf69311520",
+ "requirements": [
+  {
+   "name": "arm64",
+   "url": "https://github.com/google-deepmind/code-verification",
+   "rev": "b0f729accbc21a0413e7ca4e1da43fa45b5f2e1b"
+  },
+  {
+   "name": "Flapjack",
+   "url": "https://github.com/pirapira/flapjack",
+   "rev": "af5c59c5ba5d6a9bc52658d429f24a117c9cbaee"
+  },
+  {
+   "name": "Kraken",
+   "url": "https://github.com/AeneasVerif/kraken",
+   "rev": "ebd10ebd800f61d1c7170e06b1eaea2bd9cdea66"
+  },
+  {
+   "name": "lprog",
+   "url": "lprog",
+   "rev": ""
+  },
+  {
+   "name": "«lprog-riscv»",
+   "url": "lprog-riscv",
+   "rev": ""
+  },
+  {
+   "name": "«riscv-zkvm»",
+   "url": "https://github.com/Verified-zkEVM/riscv-zkvm",
+   "rev": "d81a91030371d1b66ad1a5ff5d348077d3690d6a"
+  }
+ ],
+ "libraries": [
+  {
+   "name": "MachineChecked",
+   "src": "."
+  },
+  {
+   "name": "Tools",
+   "src": "."
+  },
+  {
+   "name": "Cases",
+   "src": "."
+  }
+ ],
+ "library_files": 1207,
+ "capped": false,
+ "declarations": 17118,
+ "sorry_files": 7,
+ "axioms": 0,
+ "closure_files": 0,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": null,
+ "headline_count": 0,
+ "headlines": [],
+ "mathlib_imports": {
+  "Mathlib.Algebra.Field.Basic": 2,
+  "Mathlib.Algebra.Field.ZMod": 2,
+  "Mathlib.Algebra.Group.Basic": 1,
+  "Mathlib.Algebra.Group.Defs": 1,
+  "Mathlib.Algebra.Order.Group.Nat": 2,
+  "Mathlib.Algebra.Order.Star.Basic": 1,
+  "Mathlib.AlgebraicGeometry.EllipticCurve.Affine.Point": 3,
+  "Mathlib.AlgebraicGeometry.EllipticCurve.NormalForms": 1,
+  "Mathlib.Analysis.Normed.Ring.Lemmas": 2,
+  "Mathlib.Combinatorics.Enumerative.Composition": 1,
+  "Mathlib.Control.Monad.Writer": 1,
+  "Mathlib.Data.Fin.Basic": 1,
+  "Mathlib.Data.Finsupp.Defs": 1,
+  "Mathlib.Data.List.Dedup": 1,
+  "Mathlib.Data.List.GetD": 1,
+  "Mathlib.Data.List.Infix": 1,
+  "Mathlib.Data.List.MinMax": 1,
+  "Mathlib.Data.List.Nodup": 2,
+  "Mathlib.Data.List.Pairwise": 1,
+  "Mathlib.Data.List.Perm.Basic": 2,
+  "Mathlib.Data.List.Prime": 2,
+  "Mathlib.Data.List.Sort": 2,
+  "Mathlib.Data.List.TakeDrop": 2,
+  "Mathlib.Data.Nat.Bitwise": 1,
+  "Mathlib.Data.Nat.Digits.Defs": 1,
+  "Mathlib.Data.Nat.Init": 3,
+  "Mathlib.Data.Vector.Defs": 1,
+  "Mathlib.Data.ZMod.Basic": 3,
+  "Mathlib.FieldTheory.Finite.Basic": 4,
+  "Mathlib.GroupTheory.OrderOfElement": 1,
+  "Mathlib.Init": 1,
+  "Mathlib.Lean.Meta.Simp": 1,
+  "Mathlib.NumberTheory.LegendreSymbol.Basic": 1,
+  "Mathlib.NumberTheory.LucasPrimality": 3,
+  "Mathlib.Tactic.FieldSimp": 6,
+  "Mathlib.Tactic.IntervalCases": 3,
+  "Mathlib.Tactic.Linarith": 5,
+  "Mathlib.Tactic.LinearCombination": 5,
+  "Mathlib.Tactic.NormNum": 7,
+  "Mathlib.Tactic.NormNum.Prime": 2,
+  "Mathlib.Tactic.Positivity": 2,
+  "Mathlib.Tactic.ReduceModChar": 1,
+  "Mathlib.Tactic.Ring": 9,
+  "Mathlib.Tactic.Set": 1,
+  "Mathlib.Util.AssertNoSorry": 1
+ },
+ "import_roots": {
+  "Arm64": 1,
+  "Batteries": 6,
+  "Flapjack": 1,
+  "Init": 1,
+  "Kraken": 1,
+  "Lean": 35,
+  "Lprog": 12,
+  "LprogRiscV": 7,
+  "Mathlib": 45,
+  "RiscvZkvm": 20,
+  "Std": 4
+ },
+ "uses": {
+  "Array": 125,
+  "Field": 25,
+  "Finset": 2,
+  "Int": 5,
+  "List": 995,
+  "Multiset": 2,
+  "Nat": 895,
+  "Ring": 1,
+  "Std.HashMap": 10,
+  "ZMod.pow_card_sub_one_eq_one": 4,
+  "closure": 5,
+  "orderOf": 1,
+  "ringChar": 1
+ },
+ "ci": "SUCCESS"
+}

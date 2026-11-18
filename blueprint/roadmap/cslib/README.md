@@ -30,3 +30,4 @@ The docstrings, Lean statements and README text are quoted from [leanprover/csli
 - [Probability](probability/README.md)
 - [Tactic](tactic/README.md)
 - [CSLib Initialization](init.md)
+- [Projects building on CSLib: the Lean Computer Science Library (2)](projects/README.md)

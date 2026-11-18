@@ -1,0 +1,115 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "CBirkbeck/uniform-sheafy-tate-domains-lean",
+ "slug": "cbirkbeck--uniform-sheafy-tate-domains-lean",
+ "rev": "2f45865e87d20dd460cc5a14d04850bf03be4570",
+ "date": "2026-08-22T23:35:43Z",
+ "stable": "6e500b8b53f603da38f0725eccd8a58d88756b2028c66ef4dcfac5dc2ce9b967",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Uniform sheafy Tate rings that are not stably uniform — the Lean formalisation",
+  "excerpt": "Lean 4 formalisation of the two counterexamples in **[*Uniform sheafy Tate rings that are not stably uniform*](https://cbirkbeck.github.io/uniform-sheafy-tate-domains/)** (Birkbeck–Torzewski)."
+ },
+ "lean_files": 398,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.33.0",
+ "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+ "requirements": [],
+ "libraries": [
+  {
+   "name": "«Adic spaces»",
+   "src": "."
+  },
+  {
+   "name": "Palomar",
+   "src": "."
+  }
+ ],
+ "library_files": 6,
+ "capped": false,
+ "declarations": 114,
+ "sorry_files": 1,
+ "axioms": 0,
+ "closure_files": 2,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": "readme",
+ "headline_count": 2,
+ "headlines": [
+  {
+   "name": "PalomarBridge.RestrictionFamily.ext'",
+   "module": "Palomar.Bridge",
+   "file": "Palomar/Bridge.lean",
+   "line": 198,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "PalomarBridge.isSheafy_iff",
+   "module": "Palomar.Bridge",
+   "file": "Palomar/Bridge.lean",
+   "line": 346,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  }
+ ],
+ "mathlib_imports": {
+  "Mathlib.Algebra.MonoidAlgebra.Basic": 2,
+  "Mathlib.Analysis.Normed.Field.Basic": 2,
+  "Mathlib.Analysis.Normed.Group.Completion": 2,
+  "Mathlib.Analysis.Normed.Group.Ultra": 2,
+  "Mathlib.Analysis.Normed.Module.Completion": 2,
+  "Mathlib.Analysis.Normed.Ring.Basic": 2,
+  "Mathlib.RingTheory.DiscreteValuationRing.Basic": 2,
+  "Mathlib.RingTheory.IntegralClosure.IsIntegral.Basic": 2,
+  "Mathlib.RingTheory.Localization.Away.Basic": 2,
+  "Mathlib.RingTheory.Noetherian.Defs": 2,
+  "Mathlib.RingTheory.Valuation.ValuativeRel.Basic": 2,
+  "Mathlib.Topology.Algebra.Nonarchimedean.AdicTopology": 2,
+  "Mathlib.Topology.Algebra.Ring.Basic": 2,
+  "Mathlib.Topology.Algebra.UniformRing": 2,
+  "Mathlib.Topology.Algebra.Valued.NormedValued": 2,
+  "Mathlib.Topology.Algebra.Valued.ValuedField": 2,
+  "Mathlib.Topology.Category.TopCommRingCat": 2,
+  "Mathlib.Topology.MetricSpace.Ultra.Basic": 2,
+  "Mathlib.Topology.Sheaves.Functors": 1,
+  "Mathlib.Topology.Sheaves.Sheaf": 2
+ },
+ "import_roots": {
+  "Mathlib": 3
+ },
+ "uses": {
+  "CategoryTheory.Category": 1,
+  "CompleteSpace": 6,
+  "Continuous": 5,
+  "Filter": 4,
+  "Filter.Tendsto": 4,
+  "Finset": 4,
+  "Ideal": 2,
+  "IsNoetherianRing": 2,
+  "IsTopologicalRing": 3,
+  "Metric.ball": 2,
+  "PowerSeries": 1,
+  "Set": 4,
+  "Subring": 5,
+  "T2Space": 1,
+  "TopCat": 3,
+  "TopologicalSpace": 3,
+  "UniformSpace": 3,
+  "UniformSpace.Completion": 2,
+  "closure": 1
+ },
+ "ci": null
+}

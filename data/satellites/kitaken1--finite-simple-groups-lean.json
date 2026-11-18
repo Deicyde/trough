@@ -1,0 +1,130 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "KitaKen1/finite-simple-groups-lean",
+ "slug": "kitaken1--finite-simple-groups-lean",
+ "rev": "7f09e33a9ceef6b59ce03e34cd4f0558c763e325",
+ "date": "2026-08-06T13:43:36Z",
+ "stable": "b4547aaa260ffe1b64d3e69611ecdb247eb2eb8099b61deef8983c481c7c4a72",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "FiniteSimpleGroups",
+  "excerpt": "Lean 4 / Mathlib formalizations of concrete finite simple groups. Each group is built as an explicit subgroup of `Equiv.Perm (Fin n)`, and both its order and its simplicity are proved inside Lean from kernel-checked certificates."
+ },
+ "lean_files": 4015,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.30.0",
+ "mathlib": "c5ea00351c28e24afc9f0f84379aa41082b1188f",
+ "requirements": [],
+ "libraries": [
+  {
+   "name": "FiniteSimpleGroups",
+   "src": "."
+  }
+ ],
+ "library_files": 3992,
+ "capped": false,
+ "declarations": 20021,
+ "sorry_files": 0,
+ "axioms": 0,
+ "closure_files": 17,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": "readme",
+ "headline_count": 2,
+ "headlines": [
+  {
+   "name": "Sporadic.L34.simple_L34",
+   "module": "FiniteSimpleGroups.Sporadic.M22.L34.Simplicity",
+   "file": "FiniteSimpleGroups/Sporadic/M22/L34/Simplicity.lean",
+   "line": 359,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "IsSimpleGroup"
+   ]
+  },
+  {
+   "name": "Sporadic.M22PointStabilizer.card_L34",
+   "module": "FiniteSimpleGroups.Sporadic.M22.PointStabilizer21",
+   "file": "FiniteSimpleGroups/Sporadic/M22/PointStabilizer21.lean",
+   "line": 207,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  }
+ ],
+ "mathlib_imports": {
+  "Mathlib.Algebra.BigOperators.Fin": 1,
+  "Mathlib.Algebra.Group.Subgroup.Basic": 1,
+  "Mathlib.Algebra.Group.Subgroup.Finite": 19,
+  "Mathlib.Algebra.Group.Subgroup.Lattice": 2,
+  "Mathlib.Data.Finset.Basic": 1,
+  "Mathlib.Data.Finset.Card": 1,
+  "Mathlib.Data.Finset.Image": 2,
+  "Mathlib.Data.Fintype.Basic": 1,
+  "Mathlib.Data.List.GetD": 1,
+  "Mathlib.Data.Nat.Bitwise": 2,
+  "Mathlib.Data.Set.Card.Arithmetic": 1,
+  "Mathlib.GroupTheory.Commutator.Basic": 7,
+  "Mathlib.GroupTheory.GroupAction.Basic": 1,
+  "Mathlib.GroupTheory.GroupAction.Blocks": 3,
+  "Mathlib.GroupTheory.GroupAction.Primitive": 3,
+  "Mathlib.GroupTheory.Index": 3,
+  "Mathlib.GroupTheory.OrderOfElement": 3,
+  "Mathlib.GroupTheory.Perm.Basic": 1,
+  "Mathlib.GroupTheory.Perm.Centralizer": 1,
+  "Mathlib.GroupTheory.Perm.Cycle.Basic": 1,
+  "Mathlib.GroupTheory.Perm.Cycle.Concrete": 19,
+  "Mathlib.GroupTheory.Perm.Cycle.Factors": 1,
+  "Mathlib.GroupTheory.Perm.Fin": 7,
+  "Mathlib.GroupTheory.Perm.Sign": 2,
+  "Mathlib.GroupTheory.Perm.Support": 1,
+  "Mathlib.GroupTheory.Perm.ViaEmbedding": 8,
+  "Mathlib.GroupTheory.QuotientGroup.Basic": 7,
+  "Mathlib.GroupTheory.SpecificGroups.Alternating": 5,
+  "Mathlib.GroupTheory.SpecificGroups.Alternating.Centralizer": 1,
+  "Mathlib.GroupTheory.Subgroup.Simple": 16,
+  "Mathlib.GroupTheory.Sylow": 8,
+  "Mathlib.Logic.Equiv.Fin.Basic": 1,
+  "Mathlib.Logic.OpClass": 1,
+  "Mathlib.Tactic.FinCases": 1,
+  "Mathlib.Tactic.Group": 1,
+  "Mathlib.Tactic.IntervalCases": 6,
+  "Mathlib.Tactic.NormNum.Prime": 3
+ },
+ "import_roots": {
+  "Mathlib": 76
+ },
+ "uses": {
+  "Equiv.Perm": 106,
+  "Equiv.Perm.sign": 15,
+  "Finset": 59,
+  "Group": 25,
+  "IsSimpleGroup": 56,
+  "List": 256,
+  "MulAction": 15,
+  "MulAction.orbit": 58,
+  "MulAction.stabilizer": 64,
+  "Multiset": 3,
+  "Nat": 58,
+  "Set": 65,
+  "Subgroup": 81,
+  "Subgroup.card_subgroup_dvd_card": 7,
+  "Subgroup.closure": 48,
+  "alternatingGroup": 7,
+  "card_sylow_modEq_one": 6,
+  "exists_prime_orderOf_dvd_card": 11,
+  "orderOf": 19
+ },
+ "ci": null
+}

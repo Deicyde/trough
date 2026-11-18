@@ -27,45 +27,27 @@
  "libraries": [
   {
    "name": "UnitDistance",
-   "src": ".",
-   "roots": [
-    "UnitDistance"
-   ]
+   "src": "."
   },
   {
    "name": "ChallengeZeta241",
-   "src": ".",
-   "roots": [
-    "ChallengeZeta241"
-   ]
+   "src": "."
   },
   {
    "name": "SolutionZeta241",
-   "src": ".",
-   "roots": [
-    "SolutionZeta241"
-   ]
+   "src": "."
   },
   {
    "name": "AuditSupport",
-   "src": ".",
-   "roots": [
-    "AuditSupport"
-   ]
+   "src": "."
   },
   {
    "name": "ChallengeZeta",
-   "src": ".",
-   "roots": [
-    "ChallengeZeta"
-   ]
+   "src": "."
   },
   {
    "name": "SolutionZeta",
-   "src": ".",
-   "roots": [
-    "SolutionZeta"
-   ]
+   "src": "."
   }
  ],
  "library_files": 2433,
@@ -822,9 +804,7 @@
  },
  "import_roots": {
   "Lean": 3,
-  "Mathlib": 964,
-  "SolutionZeta241": 1,
-  "UnitDistance": 2251
+  "Mathlib": 964
  },
  "uses": {
   "AdjoinRoot": 5,

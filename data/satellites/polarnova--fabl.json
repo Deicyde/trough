@@ -38,10 +38,7 @@
  "libraries": [
   {
    "name": "FABL",
-   "src": ".",
-   "roots": [
-    "FABL"
-   ]
+   "src": "."
   }
  ],
  "library_files": 293,
@@ -165,7 +162,6 @@
  },
  "import_roots": {
   "Cslib": 1,
-  "FABL": 286,
   "Mathlib": 67,
   "ProbabilityApproximation": 4
  },

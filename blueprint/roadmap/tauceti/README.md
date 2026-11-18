@@ -32,3 +32,5 @@ Each article's text is its declaration's docstring and signature, under Tau Ceti
 ## [Other Areas](part-02/README.md)
 
 - [Other Areas](part-02/other-areas/README.md)
+
+- [Projects building on Tau Ceti (1)](projects/README.md)

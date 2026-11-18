@@ -1,0 +1,206 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "AxiomMath/LogNarayana",
+ "slug": "axiommath--lognarayana",
+ "rev": "0dc63da69e510d52428ae4cbbe3c603ae63f082e",
+ "date": "2026-11-17T16:56:40Z",
+ "stable": "41b24e5b6db3c170e9973fd3ba525a6d618dbe9d28d2f24b6793a13af605547f",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Log-Concavity in Narayana Transforms and Stack-Sorting Fibers",
+  "excerpt": "This is a Lean formalization of log-concavity and real-rootedness for stack-sorting fibers and Narayana transforms."
+ },
+ "lean_files": 108,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.33.0",
+ "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+ "requirements": [],
+ "libraries": [
+  {
+   "name": "LogNarayana",
+   "src": "."
+  },
+  {
+   "name": "Challenge",
+   "src": "."
+  },
+  {
+   "name": "Solution",
+   "src": "."
+  }
+ ],
+ "library_files": 108,
+ "capped": false,
+ "declarations": 674,
+ "sorry_files": 1,
+ "axioms": 0,
+ "closure_files": 67,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": "readme",
+ "headline_count": 71,
+ "headlines": [
+  {
+   "name": "List.isUltraLogConcave_fiberDescentPolynomial",
+   "module": "LogNarayana.StackSorting.FiberMatroid.Basic",
+   "file": "LogNarayana/StackSorting/FiberMatroid/Basic.lean",
+   "line": 635,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Finset",
+    "List"
+   ]
+  },
+  {
+   "name": "List.isLogConcave_fiberDescentPolynomial",
+   "module": "LogNarayana.StackSorting.FiberMatroid.Basic",
+   "file": "LogNarayana/StackSorting/FiberMatroid/Basic.lean",
+   "line": 660,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Finset",
+    "List"
+   ]
+  },
+  {
+   "name": "List.exists_isLaminar_basisGeneratingPolynomial_eq_fiberTopPolynomial",
+   "module": "LogNarayana.StackSorting.FiberMatroid.Basic",
+   "file": "LogNarayana/StackSorting/FiberMatroid/Basic.lean",
+   "line": 480,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Finset",
+    "List"
+   ]
+  },
+  {
+   "name": "List.isLorentzian_fiberTopPolynomial",
+   "module": "LogNarayana.StackSorting.FiberMatroid.Basic",
+   "file": "LogNarayana/StackSorting/FiberMatroid/Basic.lean",
+   "line": 551,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Finset",
+    "List",
+    "MvPolynomial"
+   ]
+  },
+  {
+   "name": "isUltraLogConcave_finsum_prod_narayanaPolynomial",
+   "module": "LogNarayana.Nestohedron.NarayanaSum",
+   "file": "LogNarayana/Nestohedron/NarayanaSum.lean",
+   "line": 172,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Set"
+   ]
+  },
+  {
+   "name": "List.isLorentzian_fiberPeakPolynomial",
+   "module": "LogNarayana.StackSorting.Peaks",
+   "file": "LogNarayana/StackSorting/Peaks.lean",
+   "line": 304,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "List"
+   ]
+  },
+  {
+   "name": "MvPolynomial.IsHomogeneous.hasOnlyNegativeRoots_narayanaTransform",
+   "module": "LogNarayana.Narayana.RealRootedTransform.Basic",
+   "file": "LogNarayana/Narayana/RealRootedTransform/Basic.lean",
+   "line": 679,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "MvPolynomial"
+   ]
+  },
+  {
+   "name": "MvPolynomial.splits_narayanaTransform_of_isRealStable",
+   "module": "LogNarayana.Narayana.RealRootedTransform.Basic",
+   "file": "LogNarayana/Narayana/RealRootedTransform/Basic.lean",
+   "line": 695,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "MvPolynomial"
+   ]
+  }
+ ],
+ "mathlib_imports": {
+  "Mathlib.Algebra.MvPolynomial.Basic": 1,
+  "Mathlib.Algebra.Order.BigOperators.Group.Finset": 1,
+  "Mathlib.Analysis.Convex.Basic": 1,
+  "Mathlib.Analysis.SpecialFunctions.Pow.Real": 1,
+  "Mathlib.Combinatorics.Matroid.Basic": 1,
+  "Mathlib.Combinatorics.Matroid.IndepAxioms": 1,
+  "Mathlib.Data.Fintype.Powerset": 1,
+  "Mathlib.Data.Set.Finite.Lemmas": 1
+ },
+ "import_roots": {
+  "Lean": 1,
+  "Mathlib": 67
+ },
+ "uses": {
+  "Algebra": 21,
+  "BinaryTree": 20,
+  "CharZero": 3,
+  "Computable": 1,
+  "Continuous": 1,
+  "Convex": 5,
+  "Field": 12,
+  "Filter": 8,
+  "Filter.Tendsto": 7,
+  "Finset": 46,
+  "Finset.card_powersetCard": 2,
+  "Finsupp": 12,
+  "IsCompact": 6,
+  "IsOrderedRing": 8,
+  "LinearIndependent": 1,
+  "LinearMap.ker": 1,
+  "LinearMap.range": 2,
+  "List": 39,
+  "Matrix": 13,
+  "MeasurableSet": 1,
+  "MeasureTheory.Integrable": 1,
+  "MeasureTheory.integral_prod": 1,
+  "Module": 5,
+  "Multiset": 4,
+  "MvPolynomial": 57,
+  "Nat": 2,
+  "Polynomial": 47,
+  "Polynomial.derivative": 8,
+  "Polynomial.eval": 3,
+  "PowerSeries": 6,
+  "RatFunc": 2,
+  "Real.log": 2,
+  "Ring": 9,
+  "Set": 39,
+  "SimpleGraph": 1,
+  "StrongDual": 1,
+  "Submodule.span": 2,
+  "TopologicalSpace": 1,
+  "add_pow": 2,
+  "catalan": 6,
+  "convexHull": 6,
+  "intervalIntegral.integral_mul_deriv_eq_deriv_mul": 1
+ },
+ "ci": "SUCCESS"
+}

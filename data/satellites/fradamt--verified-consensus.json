@@ -1,0 +1,113 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "fradamt/verified-consensus",
+ "slug": "fradamt--verified-consensus",
+ "rev": "d379754762ccd69cec2fcaf94d18481a0600ef78",
+ "date": "2026-10-12T20:54:07Z",
+ "stable": "f71f80f89e3dd7bfa02d1f16e047d611b9dcdca719efd65ab113ee9c316fac48",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "CC0-1.0",
+  "file": "LICENSE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "verified-consensus",
+  "excerpt": "A Lean 4 model of the decoupled consensus protocol (Section 7 of the paper) and a machine-checked proof of its consensus guarantees."
+ },
+ "lean_files": 1047,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.34.1",
+ "mathlib": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+ "requirements": [],
+ "libraries": [
+  {
+   "name": "DecoupledConsensusModel",
+   "src": "."
+  },
+  {
+   "name": "DecoupledConsensusStatements",
+   "src": "."
+  },
+  {
+   "name": "DecoupledConsensusInternal",
+   "src": "."
+  },
+  {
+   "name": "DecoupledConsensusProofs",
+   "src": "."
+  },
+  {
+   "name": "DecoupledConsensusWitnesses",
+   "src": "."
+  }
+ ],
+ "library_files": 1044,
+ "capped": false,
+ "declarations": 6404,
+ "sorry_files": 0,
+ "axioms": 0,
+ "closure_files": 1031,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": "readme",
+ "headline_count": 1,
+ "headlines": [
+  {
+   "name": "DecoupledConsensusModel.Proofs.concreteConsensus",
+   "module": "DecoupledConsensusProofs.ReviewTheorem",
+   "file": "DecoupledConsensusProofs/ReviewTheorem.lean",
+   "line": 288,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  }
+ ],
+ "mathlib_imports": {
+  "Mathlib.Algebra.BigOperators.Group.Finset.Basic": 4,
+  "Mathlib.Algebra.Order.Archimedean.Basic": 2,
+  "Mathlib.Algebra.Order.BigOperators.Group.Finset": 3,
+  "Mathlib.Algebra.Order.Floor.Div": 1,
+  "Mathlib.Algebra.Order.Group.Int": 2,
+  "Mathlib.AlgebraicTopology.SimplexCategory.Basic": 1,
+  "Mathlib.Data.Finset.Basic": 4,
+  "Mathlib.Data.Finset.Card": 4,
+  "Mathlib.Data.Finset.Dedup": 2,
+  "Mathlib.Data.Finset.Lattice.Fold": 2,
+  "Mathlib.Data.Finset.Max": 5,
+  "Mathlib.Data.Finset.Sort": 1,
+  "Mathlib.Data.Finset.Union": 1,
+  "Mathlib.Data.Fintype.Basic": 2,
+  "Mathlib.Data.Int.Interval": 1,
+  "Mathlib.Data.Int.LeastGreatest": 4,
+  "Mathlib.Data.List.Count": 1,
+  "Mathlib.Data.Nat.Basic": 1,
+  "Mathlib.Data.Nat.Find": 2,
+  "Mathlib.Data.Prod.Lex": 4,
+  "Mathlib.Logic.Function.Basic": 1,
+  "Mathlib.Order.Basic": 1,
+  "Mathlib.Order.WithBot": 2,
+  "Mathlib.Tactic": 2,
+  "Mathlib.Tactic.FinCases": 3,
+  "Mathlib.Tactic.IntervalCases": 1,
+  "Mathlib.Tactic.Linarith": 1,
+  "Mathlib.Tactic.NormNum": 3,
+  "Mathlib.Tactic.Ring": 2
+ },
+ "import_roots": {
+  "Mathlib": 38
+ },
+ "uses": {
+  "Finset": 169,
+  "Int": 83,
+  "List": 139,
+  "Nat": 457,
+  "Set": 1
+ },
+ "ci": "SUCCESS"
+}

@@ -1,0 +1,210 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "hiloopai/silmaril-lean",
+ "slug": "hiloopai--silmaril-lean",
+ "rev": "f5cf7d914c50d51cc677d86f1f29c4aae38ebc13",
+ "date": "2026-11-18T07:53:55Z",
+ "stable": "7be86715c4b3e4560c2b8dc25b28676f9eadcb2823878099c86bfa53b462dddf",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "MIT",
+  "file": "LICENSE",
+  "copyright": [
+   "Copyright (c) 2026 Silmaril contributors"
+  ]
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Silmaril",
+  "excerpt": "Silmaril uses Lean 4 to model programs and prove properties about them. It includes a WebAssembly toolkit with Binaryen-style commands and a library of logics, models, lambda calculi and verified translations."
+ },
+ "lean_files": 23123,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "nightly-2026-11-05",
+ "mathlib": "569134c2fc750d92baa85d50cd925a7e20a93dd2",
+ "requirements": [
+  {
+   "name": "cslib",
+   "url": "https://github.com/leanprover/downstream-lean4",
+   "rev": "569134c2fc750d92baa85d50cd925a7e20a93dd2"
+  },
+  {
+   "name": "iris",
+   "url": "https://github.com/hiloopai/iris-lean",
+   "rev": "8b7e85ded4d5a9c560c042362cefdc2f1fb6d18d"
+  }
+ ],
+ "libraries": [
+  {
+   "name": "Silmaril",
+   "src": "."
+  },
+  {
+   "name": "SilmarilSpecTec",
+   "src": "."
+  },
+  {
+   "name": "SilmarilLogicGraphData",
+   "src": "."
+  },
+  {
+   "name": "SilmarilSpecTecMeta",
+   "src": "."
+  },
+  {
+   "name": "SilmarilWasmProject",
+   "src": "."
+  },
+  {
+   "name": "SilmarilWasiWit",
+   "src": "."
+  },
+  {
+   "name": "ProjectSelfTest",
+   "src": "examples/project"
+  },
+  {
+   "name": "WasmToolsCli",
+   "src": "tools/wasm-tools"
+  },
+  {
+   "name": "WasmAutoTests",
+   "src": "."
+  },
+  {
+   "name": "CerberusTests",
+   "src": "."
+  },
+  {
+   "name": "SysVTvExample",
+   "src": "examples/sysv-tv"
+  },
+  {
+   "name": "CompilesToExamples",
+   "src": "examples/compiles-to"
+  }
+ ],
+ "library_files": 5000,
+ "capped": true,
+ "declarations": 381318,
+ "sorry_files": 1,
+ "axioms": 0,
+ "closure_files": 0,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": null,
+ "headline_count": 0,
+ "headlines": [],
+ "mathlib_imports": {
+  "Mathlib.Algebra.BigOperators.Group.List.Basic": 1,
+  "Mathlib.Algebra.Group.Defs": 1,
+  "Mathlib.Algebra.Group.End": 1,
+  "Mathlib.Algebra.Group.Hom.Defs": 1,
+  "Mathlib.Algebra.Group.Int.Even": 1,
+  "Mathlib.Algebra.Group.Opposite": 1,
+  "Mathlib.Algebra.Order.BigOperators.Group.Finset": 1,
+  "Mathlib.Algebra.Order.Ring.Int": 1,
+  "Mathlib.Algebra.Ring.Int.Defs": 3,
+  "Mathlib.Algebra.Ring.Parity": 1,
+  "Mathlib.CategoryTheory.Category.Basic": 1,
+  "Mathlib.CategoryTheory.Category.Preorder": 5,
+  "Mathlib.CategoryTheory.Discrete.Basic": 6,
+  "Mathlib.CategoryTheory.EqToHom": 1,
+  "Mathlib.CategoryTheory.Equivalence": 1,
+  "Mathlib.CategoryTheory.InducedCategory": 1,
+  "Mathlib.CategoryTheory.Limits.Shapes.BinaryProducts.BinaryFan": 1,
+  "Mathlib.CategoryTheory.Monoidal.Cartesian.Basic": 1,
+  "Mathlib.CategoryTheory.Monoidal.Closed.Basic": 1,
+  "Mathlib.Computability.PartrecBasis": 1,
+  "Mathlib.Control.Fix": 1,
+  "Mathlib.Data.BitVec": 3,
+  "Mathlib.Data.Fin.VecNotation": 10,
+  "Mathlib.Data.Finmap": 1,
+  "Mathlib.Data.Finset.Basic": 2,
+  "Mathlib.Data.Finset.Card": 1,
+  "Mathlib.Data.Finset.Option": 2,
+  "Mathlib.Data.Finset.Prod": 1,
+  "Mathlib.Data.Finset.Sort": 2,
+  "Mathlib.Data.Finset.Union": 1,
+  "Mathlib.Data.Fintype.Basic": 4,
+  "Mathlib.Data.Fintype.Fin": 1,
+  "Mathlib.Data.Fintype.Order": 1,
+  "Mathlib.Data.Fintype.Pi": 1,
+  "Mathlib.Data.Fintype.Prod": 1,
+  "Mathlib.Data.Fintype.Sum": 1,
+  "Mathlib.Data.Int.Basic": 3,
+  "Mathlib.Data.Int.Bitwise": 1,
+  "Mathlib.Data.List.Basic": 1,
+  "Mathlib.Data.List.Chain": 1,
+  "Mathlib.Data.List.FinRange": 1,
+  "Mathlib.Data.List.GetD": 2,
+  "Mathlib.Data.List.Nodup": 1,
+  "Mathlib.Data.List.OfFn": 1,
+  "Mathlib.Data.List.Perm.Basic": 1,
+  "Mathlib.Data.List.ProdSigma": 1,
+  "Mathlib.Data.List.Rotate": 1,
+  "Mathlib.Data.Matrix.Mul": 1,
+  "Mathlib.Data.Nat.Factorial.Basic": 1,
+  "Mathlib.Data.Nat.PSub": 1,
+  "Mathlib.Data.Part": 1,
+  "Mathlib.Data.Set.Basic": 4,
+  "Mathlib.Data.Set.Image": 1,
+  "Mathlib.Data.Set.Insert": 2,
+  "Mathlib.Data.Set.Lattice.Indexed": 1,
+  "Mathlib.Data.Set.Lattice.Order": 1,
+  "Mathlib.Data.String.Basic": 2,
+  "Mathlib.Data.UInt": 1,
+  "Mathlib.Logic.Embedding.Basic": 1,
+  "Mathlib.Logic.Function.Basic": 2,
+  "Mathlib.Logic.Function.Iterate": 2,
+  "Mathlib.Logic.Relation": 7,
+  "Mathlib.Order.Basic": 1,
+  "Mathlib.Order.CompleteLattice.Basic": 3,
+  "Mathlib.Order.CompleteLattice.Lemmas": 1,
+  "Mathlib.Order.FixedPoints": 2,
+  "Mathlib.Order.Prod.Lex.Basic": 1,
+  "Mathlib.Order.Setoid.Basic": 1,
+  "Mathlib.Tactic": 2,
+  "Mathlib.Tactic.FinCases": 4,
+  "Mathlib.Tactic.IntervalCases": 1,
+  "Mathlib.Tactic.Linarith": 1,
+  "Mathlib.Tactic.NormNum": 1,
+  "Mathlib.Tactic.Ring": 3
+ },
+ "import_roots": {
+  "Batteries": 2,
+  "Cslib": 8,
+  "Init": 7,
+  "Lean": 15,
+  "Mathlib": 72,
+  "Std": 3
+ },
+ "uses": {
+  "Array": 40,
+  "CategoryTheory.Category": 16,
+  "CategoryTheory.Limits.IsLimit": 1,
+  "CategoryTheory.MonoidalCategory": 1,
+  "CategoryTheory.MonoidalClosed": 2,
+  "Equiv.Perm": 1,
+  "Field": 4,
+  "Finmap": 4,
+  "Finset": 10,
+  "Function.fixedPoints": 3,
+  "Group": 1,
+  "Int": 64,
+  "Language": 17,
+  "List": 990,
+  "Matrix": 1,
+  "Multiset": 1,
+  "Nat": 622,
+  "Real": 6,
+  "Representation": 1,
+  "Set": 60,
+  "closure": 1
+ },
+ "ci": "FAILURE"
+}

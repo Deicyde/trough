@@ -1,0 +1,172 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "VeriInfra-Lab/VeriTile",
+ "slug": "veriinfra-lab--veritile",
+ "rev": "725b16a5aa507a6fbcfb984c487be17ddb6d552b",
+ "date": "2026-11-16T09:37:21Z",
+ "stable": "1e234e3d9a936ae3e29ef5b5c802b986756832a9b8811dbd003d392fb5b483fe",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "MIT",
+  "file": "LICENSE",
+  "copyright": [
+   "Copyright (c) 2026 Zenan Li"
+  ]
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "VeriTile",
+  "excerpt": "📖 **Docs site:** [veriinfra-lab.github.io/VeriTile/](https://veriinfra-lab.github.io/VeriTile/) (bench cookbook, status, architecture). Run locally: `./site/scripts/dev.sh`."
+ },
+ "lean_files": 1001,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.29.0",
+ "mathlib": "8a178386ffc0f5fef0b77738bb5449d50efeea95",
+ "requirements": [],
+ "libraries": [
+  {
+   "name": "VeriTile",
+   "src": "."
+  },
+  {
+   "name": "VeriTileMath",
+   "src": "."
+  },
+  {
+   "name": "FPFrontendRegressions",
+   "src": "."
+  },
+  {
+   "name": "TritonBenchSpecExamples",
+   "src": "."
+  },
+  {
+   "name": "VeriTileFull",
+   "src": "."
+  },
+  {
+   "name": "FinalRegressions",
+   "src": "."
+  }
+ ],
+ "library_files": 994,
+ "capped": false,
+ "declarations": 10396,
+ "sorry_files": 8,
+ "axioms": 1,
+ "closure_files": 95,
+ "closure_sorry": [
+  "VeriTile/Triton/Memory/Flatten.lean",
+  "VeriTile/Triton/Memory/FlattenR.lean",
+  "VeriTile/Triton/Memory/Locality.lean",
+  "VeriTile/Triton/Memory/Typing/Checker.lean"
+ ],
+ "closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": "readme",
+ "headline_count": 1,
+ "headlines": [
+  {
+   "name": "VeriTile.Triton.ComputeRefine.Realizes.toRealizes_without_Rounding",
+   "module": "VeriTile.Triton.Float.Refine",
+   "file": "VeriTile/Triton/Float/Refine.lean",
+   "line": 267,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  }
+ ],
+ "mathlib_imports": {
+  "Mathlib.Algebra.BigOperators.Field": 4,
+  "Mathlib.Algebra.BigOperators.Fin": 4,
+  "Mathlib.Algebra.BigOperators.Group.Finset.Basic": 17,
+  "Mathlib.Algebra.BigOperators.Group.List.Defs": 1,
+  "Mathlib.Algebra.BigOperators.WithTop": 1,
+  "Mathlib.Algebra.Order.Floor.Ring": 1,
+  "Mathlib.Algebra.Order.Group.Nat": 1,
+  "Mathlib.Analysis.Calculus.MeanValue": 1,
+  "Mathlib.Analysis.Complex.ExponentialBounds": 1,
+  "Mathlib.Analysis.Complex.Trigonometric": 2,
+  "Mathlib.Analysis.Real.Pi.Bounds": 1,
+  "Mathlib.Analysis.SpecialFunctions.Exp": 6,
+  "Mathlib.Analysis.SpecialFunctions.Gaussian.GaussianIntegral": 1,
+  "Mathlib.Analysis.SpecialFunctions.Integrals.Basic": 1,
+  "Mathlib.Analysis.SpecialFunctions.Log.Basic": 3,
+  "Mathlib.Analysis.SpecialFunctions.Pow.Real": 5,
+  "Mathlib.Analysis.SpecialFunctions.Sigmoid": 11,
+  "Mathlib.Analysis.SpecialFunctions.Trigonometric.Arctan": 1,
+  "Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic": 4,
+  "Mathlib.Analysis.SpecialFunctions.Trigonometric.DerivHyp": 1,
+  "Mathlib.Data.BitVec": 1,
+  "Mathlib.Data.Fin.Rev": 7,
+  "Mathlib.Data.Fin.Tuple.Basic": 1,
+  "Mathlib.Data.Finset.Lattice.Fold": 4,
+  "Mathlib.Data.Fintype.Fin": 1,
+  "Mathlib.Data.Fintype.Pi": 1,
+  "Mathlib.Data.Int.DivMod": 2,
+  "Mathlib.Data.List.FinRange": 1,
+  "Mathlib.Data.List.Forall2": 2,
+  "Mathlib.Data.List.Nodup": 1,
+  "Mathlib.Data.List.Perm.Basic": 1,
+  "Mathlib.Data.List.Sort": 1,
+  "Mathlib.Data.Nat.Basic": 2,
+  "Mathlib.Data.Nat.Lattice": 1,
+  "Mathlib.Data.Rat.Defs": 2,
+  "Mathlib.Data.Rat.Floor": 1,
+  "Mathlib.Data.Rat.Lemmas": 1,
+  "Mathlib.Data.Real.Archimedean": 1,
+  "Mathlib.Data.Real.Basic": 9,
+  "Mathlib.Data.Real.Sign": 1,
+  "Mathlib.Data.Real.Sqrt": 2,
+  "Mathlib.Logic.Equiv.Defs": 1,
+  "Mathlib.MeasureTheory.Integral.IntegralEqImproper": 1,
+  "Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic": 2,
+  "Mathlib.MeasureTheory.Integral.IntervalIntegral.FundThmCalculus": 2,
+  "Mathlib.Order.WithBot": 1,
+  "Mathlib.Tactic": 17,
+  "Mathlib.Tactic.Attr.Register": 1,
+  "Mathlib.Tactic.FieldSimp": 3,
+  "Mathlib.Tactic.FinCases": 10,
+  "Mathlib.Tactic.IntervalCases": 1,
+  "Mathlib.Tactic.Linarith": 4,
+  "Mathlib.Tactic.NormNum": 19,
+  "Mathlib.Tactic.Ring": 6,
+  "Mathlib.Tactic.SplitIfs": 1
+ },
+ "import_roots": {
+  "Batteries": 1,
+  "Init": 2,
+  "Lean": 20,
+  "Mathlib": 109
+ },
+ "uses": {
+  "Algebra": 213,
+  "Array": 68,
+  "Continuous": 2,
+  "Differentiable": 1,
+  "Equiv.Perm": 6,
+  "Field": 3,
+  "Filter": 1,
+  "Filter.Tendsto": 1,
+  "Finset": 22,
+  "HasDerivAt": 3,
+  "Int": 188,
+  "List": 363,
+  "MeasureTheory.Integrable": 1,
+  "Nat": 662,
+  "Rat": 31,
+  "Real": 14,
+  "Real.exp": 35,
+  "Real.log": 8,
+  "Real.rpow": 4,
+  "Real.sin": 1,
+  "Real.sinh": 2,
+  "Set": 2,
+  "Std.HashMap": 1,
+  "closure": 1
+ },
+ "ci": "SUCCESS"
+}

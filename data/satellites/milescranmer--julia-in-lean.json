@@ -1,0 +1,60 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "MilesCranmer/julia-in-lean",
+ "slug": "milescranmer--julia-in-lean",
+ "rev": "de862b56ffbf2dd2ea210b82b3c235b0550624ec",
+ "date": "2026-11-07T21:13:24Z",
+ "stable": "0c540db76e0a9f9035419e996c2a4a28f9d5fa455c8e9c78936869f07c44dcbb",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Formalizing Julia in Lean",
+  "excerpt": "Julia source code modelled in Lean 4. Each modelled function has a Lean definition following the Julia source. Properties taken from a docstring, the manual, or an invariant are recorded as proven, refuted, or open. A refutation proves the negation of a property in the model; runtime evidence in the associated report establishes whether it is also a Julia bug."
+ },
+ "lean_files": 1821,
+ "admitted": true,
+ "folder": "dynamicexpressions",
+ "toolchain": "v4.34.1",
+ "mathlib": "",
+ "requirements": [],
+ "libraries": [
+  {
+   "name": "DynExpr",
+   "src": "."
+  }
+ ],
+ "library_files": 182,
+ "capped": false,
+ "declarations": 2909,
+ "sorry_files": 0,
+ "axioms": 0,
+ "closure_files": 0,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": null,
+ "headline_count": 0,
+ "headlines": [],
+ "mathlib_imports": {},
+ "import_roots": {
+  "Init": 3,
+  "Lean": 4,
+  "Std": 5
+ },
+ "uses": {
+  "Array": 4,
+  "Int": 19,
+  "List": 152,
+  "Nat": 132,
+  "Rat": 15,
+  "gradient": 2
+ },
+ "ci": null
+}

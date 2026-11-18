@@ -1,0 +1,165 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "w2ll2am/diagonal-ramsey",
+ "slug": "w2ll2am--diagonal-ramsey",
+ "rev": "c2875f33a9d5c89f71c68f51b5767550570b5603",
+ "date": "2026-10-08T16:54:12Z",
+ "stable": "265664757cbc513c7412c3ad9a79f727d1cb49f83a92d217947723e38daa6c70",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "MIT",
+  "file": "LICENSE",
+  "copyright": [
+   "Copyright (c) 2026 Zhipu Zhao, William Booth-Clibborn and Casper Schwahn"
+  ]
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "R(k,k) ≤ 3.4986238^k",
+  "excerpt": "**R(k,k) ≤ 3.4986238^k** (an e^{1.2523697k} bound) for all sufficiently large k, formally verified in Lean 4 (Mathlib)."
+ },
+ "lean_files": 82192,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.32.1",
+ "mathlib": "520045ab14e26149ee970e2e617ca04b09bde5d6",
+ "requirements": [
+  {
+   "name": "RamseyCurrent",
+   "url": "https://github.com/sichen-wang/diagonal-ramsey-numbers",
+   "rev": "5ec98f470c43be747ea638f796d1494f9b4c0177"
+  }
+ ],
+ "libraries": [
+  {
+   "name": "SharedDefinitions",
+   "src": "."
+  },
+  {
+   "name": "Definitions",
+   "src": "."
+  },
+  {
+   "name": "Bridge",
+   "src": "."
+  },
+  {
+   "name": "BridgeLines",
+   "src": "."
+  },
+  {
+   "name": "Lemmas",
+   "src": "."
+  },
+  {
+   "name": "Solutions",
+   "src": "."
+  },
+  {
+   "name": "SharpBound",
+   "src": "."
+  },
+  {
+   "name": "FinalCheck",
+   "src": "."
+  }
+ ],
+ "library_files": 5000,
+ "capped": true,
+ "declarations": 118949,
+ "sorry_files": 0,
+ "axioms": 0,
+ "closure_files": 4972,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": "readme",
+ "headline_count": 2,
+ "headlines": [
+  {
+   "name": "DiagRamsey.diagonal_le_3p4986238_pow",
+   "module": "SharpBound",
+   "file": "SharpBound.lean",
+   "line": 34,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "DiagRamsey.diagonal_le_exp_z",
+   "module": "SharpBound",
+   "file": "SharpBound.lean",
+   "line": 12,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Real.exp"
+   ]
+  }
+ ],
+ "mathlib_imports": {
+  "Mathlib.Algebra.BigOperators.Group.Finset.Piecewise": 1,
+  "Mathlib.Algebra.BigOperators.Ring.Finset": 2,
+  "Mathlib.Algebra.Order.BigOperators.Group.Finset": 2,
+  "Mathlib.Algebra.Order.Chebyshev": 1,
+  "Mathlib.Algebra.Order.Field.Basic": 2,
+  "Mathlib.Algebra.Order.Floor.Semiring": 1,
+  "Mathlib.Analysis.Complex.Exponential": 2,
+  "Mathlib.Analysis.Convex.SpecificFunctions.Basic": 1,
+  "Mathlib.Analysis.MeanInequalities": 1,
+  "Mathlib.Analysis.MeanInequalitiesPow": 2,
+  "Mathlib.Analysis.SpecialFunctions.Exp": 2,
+  "Mathlib.Analysis.SpecialFunctions.Integrability.Basic": 1,
+  "Mathlib.Analysis.SpecialFunctions.Integrals.Basic": 1,
+  "Mathlib.Analysis.SpecialFunctions.Log.Basic": 3,
+  "Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics": 1,
+  "Mathlib.Analysis.SpecialFunctions.Pow.Real": 13,
+  "Mathlib.Combinatorics.SimpleGraph.Basic": 2,
+  "Mathlib.Combinatorics.SimpleGraph.Clique": 5,
+  "Mathlib.Combinatorics.SimpleGraph.DegreeSum": 1,
+  "Mathlib.Combinatorics.SimpleGraph.Finite": 1,
+  "Mathlib.Combinatorics.SimpleGraph.Maps": 2,
+  "Mathlib.Data.Fintype.EquivFin": 1,
+  "Mathlib.Data.Fintype.Fin": 1,
+  "Mathlib.Data.Fintype.Perm": 1,
+  "Mathlib.Data.Fintype.Prod": 1,
+  "Mathlib.Data.Nat.Choose.Basic": 1,
+  "Mathlib.Data.Nat.Choose.Bounds": 1,
+  "Mathlib.Data.Nat.Choose.Cast": 1,
+  "Mathlib.Data.Rat.Defs": 2,
+  "Mathlib.Data.Rat.Floor": 2,
+  "Mathlib.Data.Rat.Lemmas": 1,
+  "Mathlib.Data.Real.Basic": 2,
+  "Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic": 1,
+  "Mathlib.Order.Filter.AtTopBot.Basic": 1,
+  "Mathlib.Order.Fin.Basic": 1,
+  "Mathlib.Tactic.Linarith": 1
+ },
+ "import_roots": {
+  "Batteries": 1,
+  "Mathlib": 36,
+  "RamseyCurrent": 8,
+  "RamseyLean": 1,
+  "RamseyRefinement": 1,
+  "Std": 1
+ },
+ "uses": {
+  "Continuous": 1,
+  "Equiv.Perm": 1,
+  "Filter": 6,
+  "Filter.Tendsto": 3,
+  "Finset": 32,
+  "Finset.card_powersetCard": 1,
+  "HasDerivAt": 4,
+  "List": 1947,
+  "Real": 5,
+  "Real.exp": 39,
+  "Real.log": 29,
+  "Set": 10,
+  "SimpleGraph": 26,
+  "tendsto_of_tendsto_of_tendsto_of_le_of_le'": 1
+ },
+ "ci": null
+}

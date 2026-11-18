@@ -16,10 +16,10 @@ Its headline statements name no Mathlib concept or declaration mapped elsewhere 
 
 ## Proof depends on
 
-- [Hash map](../../data-structures/maps/hash-map.md)
 - [Multiset](../../data-structures/sets/multiset.md)
 - [Array](../../data-structures/list-like-structures/array.md)
 - [Integer](../../general-algebra/numbers/integer.md)
+- [Hash map](../../data-structures/maps/hash-map.md)
 - [List](../../data-structures/list-like-structures/list.md)
 - [Natural number](../../general-algebra/numbers/natural-number.md)
 - [Finite set](../../data-structures/sets/finite-set.md)
@@ -49,11 +49,11 @@ No file its headlines import, directly or not (80 files), holds `sorry`, `admit`
 
 ## Placement
 
-Of its imports of Mathlib modules in an overview area, 2 of 13 are in Logic and computation, 7.0 times the average project's share, the most of the areas holding a tenth of its imports.
+Of its imports of Mathlib modules in an overview area, 2 of 13 are in Logic and computation, 14.4 times the average project's share, the most of the areas holding a tenth of its imports.
 
 ## Mathlib use
 
-Areas of its Mathlib imports by lift over the average project: Logic and computation (2 of 13 imports, 7.0×), Data structures (6 of 13 imports, 3.7×), General algebra (5 of 13 imports, 1.1×). *Proof depends on* names 8 of the 8 Mathlib concepts its files name, those named most often relative to the other projects.
+Areas of its Mathlib imports by lift over the average project: Logic and computation (2 of 13 imports, 14.4×), Data structures (6 of 13 imports, 3.2×), General algebra (5 of 13 imports, 1.1×). *Proof depends on* names 8 of the 8 Mathlib concepts its files name, those named most often relative to the other projects.
 
 ## Sources
 

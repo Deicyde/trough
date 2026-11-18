@@ -1,0 +1,203 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "LeanEconomics/MonetaryEconomics",
+ "slug": "leaneconomics--monetaryeconomics",
+ "rev": "982857516ec165beb174770444991f9123f7a252",
+ "date": "2026-11-12T08:22:43Z",
+ "stable": "340aeb03b50f59135aee5ce598045ceff1a2d9aaab6b813c29444279605c75fa",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Monetary Economics in Lean",
+  "excerpt": "Checked monetary economics, following three textbooks: Jordi Galí, *Monetary Policy, Inflation, and the Business Cycle: An Introduction to the New Keynesian Framework and Its Applications* (2nd ed., 2015); Michael Woodford, *Interest and Prices: Foundations of a Theory of Monetary Policy* (2003); and John H. Cochrane, *The Fiscal Theory of the Price Level* (Princeton University Press)."
+ },
+ "lean_files": 1404,
+ "admitted": true,
+ "folder": "Cochrane/AssetsRulesBalanceSheets",
+ "toolchain": "v4.34.0",
+ "mathlib": "5ed2965256430c3649e86755f9576b54eca72435",
+ "requirements": [],
+ "libraries": [
+  {
+   "name": "AssetsRulesBalanceSheets",
+   "src": "."
+  }
+ ],
+ "library_files": 45,
+ "capped": false,
+ "declarations": 1190,
+ "sorry_files": 0,
+ "axioms": 0,
+ "closure_files": 5,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": "readme",
+ "headline_count": 164,
+ "headlines": [
+  {
+   "name": "Cochrane.AssetsRulesBalanceSheets.PresentValue.flow_tvc_iff_pv",
+   "module": "AssetsRulesBalanceSheets.PresentValue",
+   "file": "Cochrane/AssetsRulesBalanceSheets/AssetsRulesBalanceSheets/PresentValue.lean",
+   "line": 121,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "Cochrane.AssetsRulesBalanceSheets.PresentValue.real_flow_tvc_iff",
+   "module": "AssetsRulesBalanceSheets.PresentValue",
+   "file": "Cochrane/AssetsRulesBalanceSheets/AssetsRulesBalanceSheets/PresentValue.lean",
+   "line": 165,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Filter.Tendsto"
+   ]
+  },
+  {
+   "name": "Cochrane.AssetsRulesBalanceSheets.PresentValue.tendsto_partialSums_of_tvc",
+   "module": "AssetsRulesBalanceSheets.PresentValue",
+   "file": "Cochrane/AssetsRulesBalanceSheets/AssetsRulesBalanceSheets/PresentValue.lean",
+   "line": 93,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Filter.Tendsto"
+   ]
+  },
+  {
+   "name": "Cochrane.AssetsRulesBalanceSheets.PresentValue.eq_zero_of_tvc",
+   "module": "AssetsRulesBalanceSheets.PresentValue",
+   "file": "Cochrane/AssetsRulesBalanceSheets/AssetsRulesBalanceSheets/PresentValue.lean",
+   "line": 137,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "Cochrane.AssetsRulesBalanceSheets.RealDebt.indexedFlow_price_free",
+   "module": "AssetsRulesBalanceSheets.RealDebt",
+   "file": "Cochrane/AssetsRulesBalanceSheets/AssetsRulesBalanceSheets/RealDebt.lean",
+   "line": 94,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "Cochrane.AssetsRulesBalanceSheets.RealDebt.indexed_pv_news_zero",
+   "module": "AssetsRulesBalanceSheets.RealDebt",
+   "file": "Cochrane/AssetsRulesBalanceSheets/AssetsRulesBalanceSheets/RealDebt.lean",
+   "line": 134,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "Cochrane.AssetsRulesBalanceSheets.RealDebt.nominalOutstanding_price_unique",
+   "module": "AssetsRulesBalanceSheets.RealDebt",
+   "file": "Cochrane/AssetsRulesBalanceSheets/AssetsRulesBalanceSheets/RealDebt.lean",
+   "line": 191,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "Cochrane.AssetsRulesBalanceSheets.RealDebt.foreign_default_required",
+   "module": "AssetsRulesBalanceSheets.RealDebt",
+   "file": "Cochrane/AssetsRulesBalanceSheets/AssetsRulesBalanceSheets/RealDebt.lean",
+   "line": 264,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  }
+ ],
+ "mathlib_imports": {
+  "Mathlib.Algebra.BigOperators.Field": 2,
+  "Mathlib.Algebra.BigOperators.Ring.Finset": 1,
+  "Mathlib.Algebra.Order.Pi": 1,
+  "Mathlib.Analysis.Calculus.Deriv.Add": 1,
+  "Mathlib.Analysis.Calculus.Deriv.Inv": 1,
+  "Mathlib.Analysis.Calculus.Deriv.Mul": 1,
+  "Mathlib.Analysis.Convex.Deriv": 1,
+  "Mathlib.Analysis.Distribution.AEEqOfIntegralContDiff": 1,
+  "Mathlib.Analysis.PSeries": 1,
+  "Mathlib.Analysis.Real.Cardinality": 1,
+  "Mathlib.Analysis.SpecialFunctions.Exp": 1,
+  "Mathlib.Analysis.SpecialFunctions.ExpDeriv": 1,
+  "Mathlib.Analysis.SpecialFunctions.Log.Basic": 1,
+  "Mathlib.Analysis.SpecialFunctions.Log.Deriv": 2,
+  "Mathlib.Analysis.SpecialFunctions.Pow.Continuity": 1,
+  "Mathlib.Analysis.SpecialFunctions.Pow.Real": 1,
+  "Mathlib.Analysis.SpecificLimits.Basic": 2,
+  "Mathlib.Analysis.SpecificLimits.Normed": 3,
+  "Mathlib.Data.Fintype.Prod": 1,
+  "Mathlib.Data.Setoid.Basic": 1,
+  "Mathlib.LinearAlgebra.Matrix.Determinant.Basic": 1,
+  "Mathlib.LinearAlgebra.Matrix.Trace": 1,
+  "Mathlib.MeasureTheory.Function.ConditionalExpectation.PullOut": 1,
+  "Mathlib.MeasureTheory.Function.ConditionalExpectation.Real": 1,
+  "Mathlib.MeasureTheory.Function.Floor": 1,
+  "Mathlib.MeasureTheory.Function.JacobianOneDim": 1,
+  "Mathlib.MeasureTheory.Integral.ExpDecay": 1,
+  "Mathlib.MeasureTheory.Integral.IntegralEqImproper": 1,
+  "Mathlib.MeasureTheory.Integral.IntervalIntegral.AbsolutelyContinuousFun": 1,
+  "Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic": 1,
+  "Mathlib.MeasureTheory.Measure.HasOuterApproxClosed": 1,
+  "Mathlib.MeasureTheory.Measure.OpenPos": 1,
+  "Mathlib.MeasureTheory.Measure.ProbabilityMeasure": 1,
+  "Mathlib.Probability.CondVar": 1,
+  "Mathlib.Probability.ConditionalExpectation": 1,
+  "Mathlib.Probability.Independence.InfinitePi": 1,
+  "Mathlib.Probability.Process.Adapted": 1,
+  "Mathlib.Probability.Process.Filtration": 1,
+  "Mathlib.Probability.ProductMeasure": 1,
+  "Mathlib.Tactic.FieldSimp": 1,
+  "Mathlib.Tactic.Linarith": 1,
+  "Mathlib.Topology.Algebra.InfiniteSum.NatInt": 1,
+  "Mathlib.Topology.Algebra.InfiniteSum.Order": 1,
+  "Mathlib.Topology.Algebra.InfiniteSum.Ring": 1,
+  "Mathlib.Topology.ContinuousMap.Weierstrass": 1,
+  "Mathlib.Topology.Order.IntermediateValue": 1
+ },
+ "import_roots": {
+  "Mathlib": 18
+ },
+ "uses": {
+  "Cardinal.not_countable_real": 1,
+  "ContDiff": 1,
+  "Continuous": 1,
+  "Filter": 39,
+  "Filter.Tendsto": 30,
+  "Finset": 3,
+  "HasDerivAt": 7,
+  "HasSum": 19,
+  "IsCompact": 2,
+  "Matrix": 2,
+  "Measurable": 11,
+  "MeasurableSet": 7,
+  "MeasurableSpace": 10,
+  "MeasurableSpace.pi": 1,
+  "MeasureTheory.Integrable": 13,
+  "MeasureTheory.IsProbabilityMeasure": 4,
+  "MeasureTheory.Measure": 8,
+  "MeasureTheory.ae": 2,
+  "Polynomial": 3,
+  "ProbabilityTheory.iIndep": 1,
+  "Real": 4,
+  "Real.exp": 7,
+  "Real.log": 6,
+  "Real.tendsto_sum_range_one_div_nat_succ_atTop": 1,
+  "Set": 8,
+  "intermediate_value_Icc": 2,
+  "norm_add_le": 1
+ },
+ "ci": "SUCCESS"
+}

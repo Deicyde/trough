@@ -1,0 +1,114 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "leanprover/con-ron",
+ "slug": "leanprover--con-ron",
+ "rev": "de06320fcdce1ee999bb7a751725e5840d54c3fe",
+ "date": "2026-11-17T22:15:16Z",
+ "stable": "d761fba476baec65b2a801ee98494ac1d1cfeec1f78dcc6206f81dedec9d30e4",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": null,
+  "file": null,
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "con-ron – con-leche in Rust",
+  "excerpt": null
+ },
+ "lean_files": 413,
+ "admitted": true,
+ "folder": "proof",
+ "toolchain": "v4.35.0",
+ "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+ "requirements": [
+  {
+   "name": "aeneas",
+   "url": "../_tmp/aeneas-lean-v4.35.0",
+   "rev": ""
+  },
+  {
+   "name": "«con-leche»",
+   "url": "https://github.com/leanprover/con-leche",
+   "rev": "600d3b583b769176e911b06d20ba16330c9a179b"
+  }
+ ],
+ "libraries": [
+  {
+   "name": "ConRon",
+   "src": "."
+  },
+  {
+   "name": "ConRonTools",
+   "src": "."
+  },
+  {
+   "name": "ConRonArena",
+   "src": "."
+  },
+  {
+   "name": "ConRonBridge",
+   "src": "."
+  },
+  {
+   "name": "ConRonRefine2",
+   "src": "."
+  },
+  {
+   "name": "ConRonCapstone",
+   "src": "."
+  }
+ ],
+ "library_files": 390,
+ "capped": false,
+ "declarations": 16648,
+ "sorry_files": 3,
+ "axioms": 6,
+ "closure_files": 366,
+ "closure_sorry": [
+  "proof/ConRon/Refine/HashMap2.lean"
+ ],
+ "closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": "readme",
+ "headline_count": 2,
+ "headlines": [
+  {
+   "name": "ConRon.Capstone.model_exists",
+   "module": "ConRon.Capstone",
+   "file": "proof/ConRon/Capstone.lean",
+   "line": 571,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "ConRon.Capstone.no_False_declaration",
+   "module": "ConRon.Capstone",
+   "file": "proof/ConRon/Capstone.lean",
+   "line": 619,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  }
+ ],
+ "mathlib_imports": {},
+ "import_roots": {
+  "Aeneas": 7,
+  "ConLeche": 117,
+  "Init": 7,
+  "Lean": 5,
+  "Std": 7
+ },
+ "uses": {
+  "Array": 106,
+  "Finset": 1,
+  "Int": 1,
+  "List": 249,
+  "Nat": 289,
+  "Std.HashMap": 63
+ },
+ "ci": "FAILURE"
+}

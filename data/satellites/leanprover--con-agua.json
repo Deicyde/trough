@@ -1,0 +1,108 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "leanprover/con-agua",
+ "slug": "leanprover--con-agua",
+ "rev": "22f938604abefbee97913e89745530fb37502ba7",
+ "date": "2026-11-16T19:33:27Z",
+ "stable": "6b8b1c33db4b9fea53e29038bf2778d4c2057334a1f0a49c18526182abc8d249",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": null,
+  "file": null,
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "con-agua – A Lean checker verified at the assembly level",
+  "excerpt": null
+ },
+ "lean_files": 2489,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "nightly-2026-10-20",
+ "mathlib": "",
+ "requirements": [
+  {
+   "name": "Kraken",
+   "url": "https://github.com/sgraf812/kraken",
+   "rev": "ba12834902fd19e837c97d0e5ea585d41348ee7e"
+  }
+ ],
+ "libraries": [
+  {
+   "name": "ConAgua",
+   "src": "."
+  },
+  {
+   "name": "ConAguaAsm",
+   "src": "."
+  },
+  {
+   "name": "ConLeche",
+   "src": "vendor/con-leche"
+  },
+  {
+   "name": "ConRonArena",
+   "src": "vendor/con-ron"
+  },
+  {
+   "name": "ConRonBridge",
+   "src": "vendor/con-ron"
+  }
+ ],
+ "library_files": 2284,
+ "capped": false,
+ "declarations": 41982,
+ "sorry_files": 8,
+ "axioms": 0,
+ "closure_files": 622,
+ "closure_sorry": [
+  "vendor/con-leche/ConLeche/Driver/OwnerParse.lean",
+  "vendor/con-leche/ConLeche/Frontend/Stream.lean"
+ ],
+ "closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": "main",
+ "headline_count": 2,
+ "headlines": [
+  {
+   "name": "ConLeche.main_no_False",
+   "module": "ConLeche.MainTheorem",
+   "file": "vendor/con-leche/ConLeche/MainTheorem.lean",
+   "line": 152,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "ConLeche.main_oleans_no_False",
+   "module": "ConLeche.MainTheorem",
+   "file": "vendor/con-leche/ConLeche/MainTheorem.lean",
+   "line": 166,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "List"
+   ]
+  }
+ ],
+ "mathlib_imports": {},
+ "import_roots": {
+  "Init": 43,
+  "Kraken": 26,
+  "Lean": 32,
+  "Std": 497
+ },
+ "uses": {
+  "Array": 443,
+  "Field": 3,
+  "Int": 24,
+  "List": 1675,
+  "Nat": 1799,
+  "Std.HashMap": 168,
+  "closure": 3
+ },
+ "ci": "SUCCESS"
+}

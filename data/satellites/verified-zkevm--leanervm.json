@@ -1,0 +1,219 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "Verified-zkEVM/leanerVM",
+ "slug": "verified-zkevm--leanervm",
+ "rev": "4bdd4e5a4c6e19536508fc9b9ca4038f6d979999",
+ "date": "2026-11-17T10:37:44Z",
+ "stable": "3eed4ae53c1affae7f1aa2e77b3333b1d037e86fa2998ff7040531a738afbb4b",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "leanerVM",
+  "excerpt": "`leanerVM` is a Lean 4 implementation and formalization of [leanVM](https://github.com/leanEthereum/leanVM), leanEthereum's minimal hash-based SNARK virtual machine for post-quantum signature aggregation. Current leanVM uses binary fields and BLAKE2s; the historical KoalaBear/Poseidon implementation remains available on its `koalabear` branch."
+ },
+ "lean_files": 436,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.35.0",
+ "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+ "requirements": [
+  {
+   "name": "Arklib",
+   "url": "https://github.com/Verified-zkEVM/ArkLib",
+   "rev": "011391e592df184540b4b52edc2c64ee300b00ab"
+  },
+  {
+   "name": "Clean",
+   "url": "https://github.com/Verified-zkEVM/clean",
+   "rev": "6a2e7bb92df0a4407e398318150677375acb6d08"
+  },
+  {
+   "name": "CompPoly",
+   "url": "https://github.com/Verified-zkEVM/CompPoly",
+   "rev": "e28da34817c3775cfb935376acf5d416f555d64f"
+  },
+  {
+   "name": "PolyFun",
+   "url": "https://github.com/Verified-zkEVM/PolyFun",
+   "rev": "d3ec3a414c233203e2050ed0f33fae8647f57eb7"
+  },
+  {
+   "name": "VCVio",
+   "url": "https://github.com/Verified-zkEVM/VCVio",
+   "rev": "fc54dd3d7691d6f5db7dc829e321a727f095bc2d"
+  }
+ ],
+ "libraries": [
+  {
+   "name": "LeanerVM",
+   "src": "."
+  },
+  {
+   "name": "LeanerVMTests",
+   "src": "tests"
+  },
+  {
+   "name": "LeanerVMBench",
+   "src": "bench"
+  }
+ ],
+ "library_files": 431,
+ "capped": false,
+ "declarations": 6663,
+ "sorry_files": 0,
+ "axioms": 0,
+ "closure_files": 49,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": "readme",
+ "headline_count": 4,
+ "headlines": [
+  {
+   "name": "LeanerVM.Arithmetization.constraintSoundness",
+   "module": "LeanerVM.Arithmetization.Soundness",
+   "file": "LeanerVM/Arithmetization/Soundness.lean",
+   "line": 322,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "LeanerVM.Arithmetization.traceOf_valid",
+   "module": "LeanerVM.Arithmetization.Soundness",
+   "file": "LeanerVM/Arithmetization/Soundness.lean",
+   "line": 271,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "LeanerVM.Arithmetization.constraintCompleteness",
+   "module": "LeanerVM.Arithmetization.Completeness.Theorem",
+   "file": "LeanerVM/Arithmetization/Completeness/Theorem.lean",
+   "line": 402,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "LeanerVM.Arithmetization.satisfiable_iff_valid",
+   "module": "LeanerVM.Arithmetization.Equivalence",
+   "file": "LeanerVM/Arithmetization/Equivalence.lean",
+   "line": 89,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  }
+ ],
+ "mathlib_imports": {
+  "Mathlib.Algebra.Algebra.ZMod": 1,
+  "Mathlib.Algebra.BigOperators.Fin": 3,
+  "Mathlib.Algebra.BigOperators.GroupWithZero.Action": 1,
+  "Mathlib.Algebra.BigOperators.Intervals": 1,
+  "Mathlib.Algebra.CharP.Defs": 1,
+  "Mathlib.Algebra.CharP.Lemmas": 2,
+  "Mathlib.Algebra.CharP.Reduced": 2,
+  "Mathlib.Algebra.CharP.Two": 6,
+  "Mathlib.Algebra.Field.Basic": 2,
+  "Mathlib.Algebra.Field.ZMod": 2,
+  "Mathlib.Algebra.Module.Pi": 1,
+  "Mathlib.Algebra.MvPolynomial.CommRing": 5,
+  "Mathlib.Algebra.MvPolynomial.Degrees": 1,
+  "Mathlib.Algebra.MvPolynomial.Eval": 1,
+  "Mathlib.Algebra.MvPolynomial.NoZeroDivisors": 1,
+  "Mathlib.Algebra.Polynomial.BigOperators": 3,
+  "Mathlib.Algebra.Polynomial.Degree.Defs": 1,
+  "Mathlib.Algebra.Polynomial.Eval.Algebra": 1,
+  "Mathlib.Algebra.Polynomial.Eval.Defs": 1,
+  "Mathlib.Algebra.Polynomial.OfFn": 1,
+  "Mathlib.Algebra.Polynomial.Roots": 3,
+  "Mathlib.Algebra.Ring.Ext": 2,
+  "Mathlib.Analysis.Complex.ExponentialBounds": 1,
+  "Mathlib.Control.Lawful": 3,
+  "Mathlib.Data.Fin.Tuple.Reflection": 1,
+  "Mathlib.Data.Fintype.Card": 1,
+  "Mathlib.Data.List.Destutter": 1,
+  "Mathlib.Data.List.FinRange": 1,
+  "Mathlib.Data.List.GetD": 2,
+  "Mathlib.Data.List.Induction": 2,
+  "Mathlib.Data.List.Iterate": 1,
+  "Mathlib.Data.List.Nodup": 2,
+  "Mathlib.Data.List.Perm.Basic": 2,
+  "Mathlib.Data.List.Perm.Subperm": 1,
+  "Mathlib.Data.List.Range": 1,
+  "Mathlib.Data.List.Sigma": 1,
+  "Mathlib.Data.List.Sort": 1,
+  "Mathlib.Data.List.Sublists": 1,
+  "Mathlib.Data.Nat.BitIndices": 1,
+  "Mathlib.Data.Nat.Log": 3,
+  "Mathlib.Data.Nat.Notation": 1,
+  "Mathlib.Data.Rat.Init": 1,
+  "Mathlib.Data.ZMod.Basic": 1,
+  "Mathlib.Data.ZMod.Defs": 3,
+  "Mathlib.FieldTheory.Finite.Basic": 1,
+  "Mathlib.GroupTheory.OrderOfElement": 1,
+  "Mathlib.Lean.Thunk": 2,
+  "Mathlib.LinearAlgebra.Lagrange": 1,
+  "Mathlib.LinearAlgebra.Matrix.ToLinearEquiv": 1,
+  "Mathlib.LinearAlgebra.StdBasis": 1,
+  "Mathlib.LinearAlgebra.Vandermonde": 1,
+  "Mathlib.Logic.Function.Basic": 1,
+  "Mathlib.Tactic.LinearCombination": 6,
+  "Mathlib.Tactic.Module": 1,
+  "Mathlib.Tactic.NoncommRing": 1,
+  "Mathlib.Tactic.NormNum.Prime": 1
+ },
+ "import_roots": {
+  "ArkLib": 23,
+  "Batteries": 4,
+  "Clean": 14,
+  "CompPoly": 33,
+  "Mathlib": 55,
+  "PolyFun": 3,
+  "Std": 2,
+  "ToMathlib": 1,
+  "VCVio": 19
+ },
+ "uses": {
+  "AdjoinRoot": 1,
+  "Algebra": 1,
+  "Array": 59,
+  "BinaryTree": 1,
+  "CharP": 8,
+  "Field": 41,
+  "FiniteDimensional": 1,
+  "Finset": 23,
+  "Finset.card_powersetCard": 1,
+  "Group": 3,
+  "Irreducible": 1,
+  "Lagrange.interpolate": 1,
+  "Language": 1,
+  "LinearIndependent": 2,
+  "List": 186,
+  "Matrix": 2,
+  "MeasurableSpace": 4,
+  "Module": 4,
+  "Multiset": 5,
+  "MvPolynomial": 3,
+  "Nat": 3,
+  "Polynomial": 9,
+  "Polynomial.eval": 2,
+  "Polynomial.roots": 1,
+  "Real.exp": 1,
+  "Real.log": 1,
+  "Ring": 3,
+  "Set": 50,
+  "Std.HashMap": 7,
+  "orderOf": 1,
+  "ringChar": 2
+ },
+ "ci": "SUCCESS"
+}

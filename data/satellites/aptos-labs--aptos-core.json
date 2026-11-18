@@ -1,0 +1,56 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "aptos-labs/aptos-core",
+ "slug": "aptos-labs--aptos-core",
+ "rev": "4cddc9f17e6a37e055edcd05f6873d1137dd7cfe",
+ "date": "2026-11-17T18:44:40Z",
+ "stable": "f3c8b3c67ca1668ecee0de4718b04b85af7e8856ef6a4888abc8c3c3ebb12f81",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": null,
+  "file": null,
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Getting Started",
+  "excerpt": null
+ },
+ "lean_files": 1322,
+ "admitted": true,
+ "folder": "aptos-move/framework",
+ "toolchain": "v4.32.2",
+ "mathlib": "",
+ "requirements": [
+  {
+   "name": "«verex-move»",
+   "url": "../../third_party/move/lean/verex-move",
+   "rev": ""
+  }
+ ],
+ "libraries": [],
+ "library_files": 16,
+ "capped": false,
+ "declarations": 12,
+ "sorry_files": 0,
+ "axioms": 0,
+ "closure_files": 0,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": null,
+ "headline_count": 0,
+ "headlines": [],
+ "mathlib_imports": {},
+ "import_roots": {
+  "VerexMove": 16
+ },
+ "uses": {
+  "Array": 1,
+  "Int": 6,
+  "List": 1
+ },
+ "ci": "SUCCESS"
+}

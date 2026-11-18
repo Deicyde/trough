@@ -27,41 +27,23 @@
  "libraries": [
   {
    "name": "CertifiedGaps",
-   "src": "code/lean",
-   "roots": [
-    "CertifiedGaps"
-   ]
+   "src": "code/lean"
   },
   {
    "name": "SeedKernel",
-   "src": "code/lean",
-   "roots": [
-    "SeedKernel",
-    "SeedKernel.Audit"
-   ]
+   "src": "code/lean"
   },
   {
    "name": "SeedKernelBench",
-   "src": "code/lean",
-   "roots": [
-    "SeedKernel.Bench",
-    "SeedKernelBench"
-   ]
+   "src": "code/lean"
   },
   {
    "name": "SeedKernelEval",
-   "src": "code/lean",
-   "roots": [
-    "SeedKernel.Eval",
-    "SeedKernelEval"
-   ]
+   "src": "code/lean"
   },
   {
    "name": "Leaderboard",
-   "src": "code/leaderboard",
-   "roots": [
-    "Leaderboard"
-   ]
+   "src": "code/leaderboard"
   }
  ],
  "library_files": 203,
@@ -225,11 +207,8 @@
   "Mathlib.Topology.MetricSpace.Sequences": 1
  },
  "import_roots": {
-  "CertifiedGaps": 127,
-  "Leaderboard": 14,
   "Lean": 2,
   "Mathlib": 37,
-  "SeedKernel": 59,
   "Std": 2
  },
  "uses": {

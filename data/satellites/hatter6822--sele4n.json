@@ -1,0 +1,77 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "hatter6822/seLe4n",
+ "slug": "hatter6822--sele4n",
+ "rev": "80f1eb0966edf542d4f95a67ede2cc06321a3f9c",
+ "date": "2026-11-17T19:31:09Z",
+ "stable": "fed364fd9241697570d2dd50bf9b5d8ba3fc1fdc20c71b90fb2638cbdd5d289c",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": null,
+  "file": null,
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "What is seLe4n?",
+  "excerpt": null
+ },
+ "lean_files": 713,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.28.0",
+ "mathlib": "",
+ "requirements": [],
+ "libraries": [
+  {
+   "name": "SeLe4n",
+   "src": "."
+  },
+  {
+   "name": "SeLe4nBoundaryProbes",
+   "src": "."
+  },
+  {
+   "name": "SeLe4nExerciser",
+   "src": "."
+  }
+ ],
+ "library_files": 640,
+ "capped": false,
+ "declarations": 31293,
+ "sorry_files": 2,
+ "axioms": 0,
+ "closure_files": 93,
+ "closure_sorry": [
+  "SeLe4n/Kernel/Capability/Operations.lean"
+ ],
+ "closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": "readme",
+ "headline_count": 1,
+ "headlines": [
+  {
+   "name": "SeLe4n.Kernel.enforcementBoundaryExtended_count",
+   "module": "SeLe4n.Kernel.InformationFlow.Enforcement.Soundness",
+   "file": "SeLe4n/Kernel/InformationFlow/Enforcement/Soundness.lean",
+   "line": 481,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  }
+ ],
+ "mathlib_imports": {},
+ "import_roots": {
+  "Lean": 12,
+  "Std": 3
+ },
+ "uses": {
+  "Array": 83,
+  "List": 263,
+  "Nat": 419,
+  "Std.HashMap": 2
+ },
+ "ci": "SUCCESS"
+}

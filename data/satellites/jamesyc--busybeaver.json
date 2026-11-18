@@ -1,0 +1,92 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "jamesyc/BusyBeaver",
+ "slug": "jamesyc--busybeaver",
+ "rev": "407cdc356f6b586635e71ac92be394255f4bfea4",
+ "date": "2026-11-12T12:27:45Z",
+ "stable": "c92b03bb98cf2cfdbcc33f1f3515dec32935e38a23ee3e338bb294990236147e",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "MIT",
+  "file": "LICENSE",
+  "copyright": [
+   "Copyright (c) 2026 James Chang"
+  ]
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Nonhalting and PA-independence for a 196-state Turing machine",
+  "excerpt": "PA196 is an explicit binary Turing machine that searches for a contradiction in ordinary first-order Peano arithmetic (PA). Lean 4 proves that it runs forever from a blank tape and that PA proves neither its exact arithmetic halting sentence nor its negation."
+ },
+ "lean_files": 2113,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.35.0",
+ "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+ "requirements": [
+  {
+   "name": "Foundation",
+   "url": "vendor/Foundation",
+   "rev": ""
+  }
+ ],
+ "libraries": [
+  {
+   "name": "M6",
+   "src": "."
+  },
+  {
+   "name": "M6PA",
+   "src": "."
+  },
+  {
+   "name": "Challenge",
+   "src": "."
+  },
+  {
+   "name": "PA196Bridge",
+   "src": "."
+  },
+  {
+   "name": "PA196",
+   "src": "."
+  }
+ ],
+ "library_files": 1968,
+ "capped": false,
+ "declarations": 11801,
+ "sorry_files": 1,
+ "axioms": 0,
+ "closure_files": 0,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": null,
+ "headline_count": 0,
+ "headlines": [],
+ "mathlib_imports": {
+  "Mathlib.Data.Finset.Image": 2,
+  "Mathlib.Data.Finset.Max": 2,
+  "Mathlib.Tactic.FinCases": 8,
+  "Mathlib.Tactic.Ring.Basic": 13
+ },
+ "import_roots": {
+  "Foundation": 49,
+  "Mathlib": 24,
+  "Std": 7
+ },
+ "uses": {
+  "Array": 33,
+  "Finset": 5,
+  "Int": 7,
+  "Language": 10,
+  "List": 568,
+  "Multiset": 11,
+  "Nat": 893,
+  "Ordinal": 285,
+  "closure": 5
+ },
+ "ci": "SUCCESS"
+}

@@ -1,0 +1,122 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "lfglabs-dev/verity",
+ "slug": "lfglabs-dev--verity",
+ "rev": "42cbb5de217c89538fc231a8f4b2ac423457e0ec",
+ "date": "2026-11-18T07:01:50Z",
+ "stable": "e9c9dc6c9df49e9db30fabb87ae6155a1086cccfa11dbda1db5002cd73bcc248",
+ "license": {
+  "files": [
+   "LICENSE.md"
+  ],
+  "spdx": "MIT",
+  "file": "LICENSE.md",
+  "copyright": [
+   "Copyright (c) 2025 Thomas Marchand"
+  ]
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Guarantees",
+  "excerpt": "A formally verified smart contract compiler for Ethereum, written in [Lean 4](https://lean-lang.org/). Write a contract in an embedded DSL (or import it from Solidity), prove properties about it, and compile it to EVM bytecode through a compiler whose layers are themselves proved. Documentation: [veritylang.com](https://veritylang.com) · Paper: [verity.pdf](https://lfglabs.dev/papers/verity.pdf) · MIT licensed."
+ },
+ "lean_files": 793,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.31.0",
+ "mathlib": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+ "requirements": [
+  {
+   "name": "evmyul",
+   "url": "https://github.com/lfglabs-dev/EVMYulLean.git",
+   "rev": "eb0b6ddfab7daacbc3963f8fbb765853fee6ccb0"
+  }
+ ],
+ "libraries": [
+  {
+   "name": "Verity",
+   "src": "."
+  },
+  {
+   "name": "Contracts",
+   "src": "."
+  },
+  {
+   "name": "SolidityImportSmoke",
+   "src": "."
+  },
+  {
+   "name": "Compiler",
+   "src": "."
+  },
+  {
+   "name": "AssuranceFixtures",
+   "src": "scripts/.assurance_fixtures"
+  },
+  {
+   "name": "Assurance",
+   "src": "scripts"
+  },
+  {
+   "name": "VerityUnionAxioms",
+   "src": "scripts"
+  },
+  {
+   "name": "PrintAxioms",
+   "src": "."
+  },
+  {
+   "name": "StorageLayoutReport",
+   "src": "."
+  }
+ ],
+ "library_files": 766,
+ "capped": false,
+ "declarations": 16200,
+ "sorry_files": 1,
+ "axioms": 8,
+ "closure_files": 0,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "unclosed_files": 13,
+ "headline_rule": null,
+ "headline_count": 0,
+ "headlines": [],
+ "mathlib_imports": {
+  "Mathlib.Algebra.Order.Group.Abs": 1,
+  "Mathlib.Algebra.Order.Group.Unbundled.Int": 1,
+  "Mathlib.Analysis.Complex.Exponential": 1,
+  "Mathlib.Analysis.Complex.ExponentialBounds": 1,
+  "Mathlib.Data.Finmap": 1,
+  "Mathlib.Data.List.Nodup": 1,
+  "Mathlib.Data.List.OfFn": 1,
+  "Mathlib.Data.Nat.Basic": 2,
+  "Mathlib.Data.Nat.Bitwise": 2,
+  "Mathlib.Tactic": 1,
+  "Mathlib.Tactic.Attr.Register": 1,
+  "Mathlib.Tactic.Linarith": 2,
+  "Mathlib.Tactic.Ring": 2,
+  "Mathlib.Tactic.SplitIfs": 1
+ },
+ "import_roots": {
+  "Batteries": 1,
+  "EvmYul": 11,
+  "Init": 5,
+  "Lean": 47,
+  "Mathlib": 11,
+  "Std": 10
+ },
+ "uses": {
+  "Array": 61,
+  "Field": 110,
+  "Finmap": 2,
+  "Int": 22,
+  "List": 474,
+  "Nat": 417,
+  "Real.exp": 1,
+  "Real.log": 1,
+  "Std.HashMap": 3,
+  "closure": 4
+ },
+ "ci": "SUCCESS"
+}

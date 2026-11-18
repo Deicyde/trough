@@ -1,0 +1,154 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "BasisResearch/ship-your-interpreter",
+ "slug": "basisresearch--ship-your-interpreter",
+ "rev": "fb07094cff916318c34b07494a7d739f1e53989b",
+ "date": "2026-10-01T19:15:08Z",
+ "stable": "8e66b9f3b292d633aff96ad237803faed5027db6ebf5ca0f4df7a9e63db06a53",
+ "license": {
+  "files": [],
+  "spdx": null,
+  "file": null,
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Ship your interpreter",
+  "excerpt": null
+ },
+ "lean_files": 1113,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.34.0",
+ "mathlib": "",
+ "requirements": [
+  {
+   "name": "iris",
+   "url": "https://github.com/leanprover-community/iris-lean",
+   "rev": "740e2c4a9c672c61d76ad2f9c478c922f7461cf6"
+  },
+  {
+   "name": "«lean-riscv»",
+   "url": "riscv-lean/lean_emulator",
+   "rev": ""
+  }
+ ],
+ "libraries": [
+  {
+   "name": "Vsa",
+   "src": "."
+  },
+  {
+   "name": "VsaIris",
+   "src": "."
+  },
+  {
+   "name": "VsaBoot",
+   "src": "."
+  }
+ ],
+ "library_files": 819,
+ "capped": false,
+ "declarations": 11276,
+ "sorry_files": 0,
+ "axioms": 0,
+ "closure_files": 661,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": "readme",
+ "headline_count": 30,
+ "headlines": [
+  {
+   "name": "Vsa.Sim.EndToEnd.endToEnd_refinement",
+   "module": "VsaIris.Interp.EndToEnd",
+   "file": "VsaIris/Interp/EndToEnd.lean",
+   "line": 159,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "Vsa.Sim.EndToEnd.endToEnd_refinement_loaded",
+   "module": "VsaIris.Interp.EndToEnd",
+   "file": "VsaIris/Interp/EndToEnd.lean",
+   "line": 153,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "Vsa.Sim.EndToEnd.endToEnd_trichotomy",
+   "module": "VsaIris.Interp.EndToEndTrichotomy",
+   "file": "VsaIris/Interp/EndToEndTrichotomy.lean",
+   "line": 61,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "Vsa.While.bigStep_not_err",
+   "module": "Vsa.While.Exclusive",
+   "file": "Vsa/While/Exclusive.lean",
+   "line": 1476,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "Vsa.While.bigStep_not_diverges",
+   "module": "Vsa.While.Exclusive",
+   "file": "Vsa/While/Exclusive.lean",
+   "line": 1483,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "Vsa.While.err_not_diverges",
+   "module": "Vsa.While.Exclusive",
+   "file": "Vsa/While/Exclusive.lean",
+   "line": 1491,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "Vsa.Sim.Boot.proofElf_halts",
+   "module": "Vsa.Sim.Boot.EndToEnd",
+   "file": "Vsa/Sim/Boot/EndToEnd.lean",
+   "line": 14,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "Vsa.While.Types.preservation",
+   "module": "Vsa.While.TypePreservation",
+   "file": "Vsa/While/TypePreservation.lean",
+   "line": 158,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  }
+ ],
+ "mathlib_imports": {},
+ "import_roots": {
+  "Iris": 6,
+  "Lean": 8,
+  "LeanRiscv": 2,
+  "Std": 4,
+  "Vsa": 3
+ },
+ "uses": {
+  "Array": 57,
+  "Int": 99,
+  "Language": 1,
+  "List": 510,
+  "Nat": 709,
+  "Ring": 6,
+  "Std.HashMap": 3,
+  "closure": 32
+ },
+ "ci": null
+}

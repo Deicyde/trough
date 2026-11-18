@@ -1,0 +1,129 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "danghica/hypernets-lean",
+ "slug": "danghica--hypernets-lean",
+ "rev": "001954abde1a19d6f244fc6d3e7e3950ff4c41a1",
+ "date": "2026-11-04T15:25:20Z",
+ "stable": "7d79ef18ccbc152c7e31374a67edd7c238057c23f2182ebc8ce1b6ff0ff870e5",
+ "license": {
+  "files": [],
+  "spdx": null,
+  "file": null,
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Hypernets in Lean 4",
+  "excerpt": null
+ },
+ "lean_files": 1168,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.35.0",
+ "mathlib": "",
+ "requirements": [],
+ "libraries": [
+  {
+   "name": "Hypernets",
+   "src": "."
+  }
+ ],
+ "library_files": 1168,
+ "capped": false,
+ "declarations": 10791,
+ "sorry_files": 0,
+ "axioms": 0,
+ "closure_files": 1114,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": "readme",
+ "headline_count": 27,
+ "headlines": [
+  {
+   "name": "Hypernets.Copying.Examples.proposition12_2",
+   "module": "Hypernets.Copying.PropositionComplete",
+   "file": "Hypernets/Copying/PropositionComplete.lean",
+   "line": 89,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "List"
+   ]
+  },
+  {
+   "name": "Hypernets.Linear.Unbounded.theorem6",
+   "module": "Hypernets.Graph.UnboundedTheorem",
+   "file": "Hypernets/Graph/UnboundedTheorem.lean",
+   "line": 110,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "Hypernets.SpecimenSystem.contextual_sufficiency",
+   "module": "Hypernets.LocalReasoning",
+   "file": "Hypernets/LocalReasoning.lean",
+   "line": 311,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "Hypernets.SpecimenSystem.contextual_sufficiency_converse",
+   "module": "Hypernets.LocalReasoning",
+   "file": "Hypernets/LocalReasoning.lean",
+   "line": 318,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "Hypernets.Machine.CountingSimulation.sound",
+   "module": "Hypernets.Simulation",
+   "file": "Hypernets/Simulation.lean",
+   "line": 24,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "Hypernets.SpecimenSystem.countingSimulation",
+   "module": "Hypernets.LocalReasoning",
+   "file": "Hypernets/LocalReasoning.lean",
+   "line": 104,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "Hypernets.Linear.ClassSafety.countingSimulation",
+   "module": "Hypernets.Graph.ClassSafety",
+   "file": "Hypernets/Graph/ClassSafety.lean",
+   "line": 86,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "Hypernets.Linear.ClassSafety.countingSimulation_converse",
+   "module": "Hypernets.Graph.ClassConverse",
+   "file": "Hypernets/Graph/ClassConverse.lean",
+   "line": 86,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  }
+ ],
+ "mathlib_imports": {},
+ "import_roots": {
+  "Std": 3
+ },
+ "uses": {
+  "List": 232,
+  "Nat": 624,
+  "Representation": 2,
+  "closure": 15
+ },
+ "ci": null
+}

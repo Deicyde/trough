@@ -1,0 +1,107 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "leanprover/LNSym",
+ "slug": "leanprover--lnsym",
+ "rev": "49f8a1d9e46f8dcfc345f4bc15d35b0ba845ff5c",
+ "date": "2026-11-06T22:20:42Z",
+ "stable": "60ddd9595465766109ce2a328184ee901889b73038fbdeee88bf2d382df6ed01",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": null,
+  "file": null,
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "LNSym: Native Code Symbolic Simulator in Lean",
+  "excerpt": null
+ },
+ "lean_files": 201,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.35.0",
+ "mathlib": "",
+ "requirements": [
+  {
+   "name": "ELFSage",
+   "url": "https://github.com/shigoel/ELFSage.git",
+   "rev": "5820b10ff6594100f736c4009278188e14e96535"
+  }
+ ],
+ "libraries": [
+  {
+   "name": "Arm",
+   "src": "."
+  },
+  {
+   "name": "Correctness",
+   "src": "."
+  },
+  {
+   "name": "Specs",
+   "src": "."
+  },
+  {
+   "name": "Tests",
+   "src": "."
+  },
+  {
+   "name": "AWSLCELFTests",
+   "src": "."
+  },
+  {
+   "name": "Proofs",
+   "src": "."
+  },
+  {
+   "name": "Tactics",
+   "src": "."
+  },
+  {
+   "name": "Doc",
+   "src": "."
+  },
+  {
+   "name": "Benchmarks",
+   "src": "."
+  }
+ ],
+ "library_files": 200,
+ "capped": false,
+ "declarations": 2056,
+ "sorry_files": 23,
+ "axioms": 1,
+ "closure_files": 0,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "unclosed_files": 1,
+ "headline_rule": null,
+ "headline_count": 0,
+ "headlines": [],
+ "mathlib_imports": {},
+ "import_roots": {
+  "ELFSage": 1,
+  "Init": 2,
+  "Lean": 28,
+  "Main": 1,
+  "Proofs": 5,
+  "Std": 10,
+  "Tests": 10,
+  "«Arm»": 1,
+  "«Correctness»": 1,
+  "«Proofs»": 2,
+  "«Specs»": 2,
+  "«Tactics»": 1,
+  "«Tests»": 5
+ },
+ "uses": {
+  "Array": 20,
+  "Int": 1,
+  "List": 52,
+  "Nat": 70,
+  "Std.HashMap": 4
+ },
+ "ci": "SUCCESS"
+}

@@ -1,0 +1,201 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "enaslund/linniks-constant-3.99",
+ "slug": "enaslund--linniks-constant-3-99",
+ "rev": "0400629d89408c41c545f1fa8b7265051aa079c7",
+ "date": "2026-10-02T05:06:03Z",
+ "stable": "114d3fc47e32beaa2958463ef17a04e508f2775794b6308b5744022c6ae07f11",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Linnik's constant is at most 3.99",
+  "excerpt": null
+ },
+ "lean_files": 86,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.35.0-rc3",
+ "mathlib": "c55e6e786f49471c72fbddbec5415808896aec1e",
+ "requirements": [],
+ "libraries": [
+  {
+   "name": "GradedNear",
+   "src": "."
+  },
+  {
+   "name": "Challenge",
+   "src": "."
+  },
+  {
+   "name": "Solution",
+   "src": "."
+  },
+  {
+   "name": "Samples",
+   "src": "."
+  },
+  {
+   "name": "CertCore",
+   "src": "."
+  },
+  {
+   "name": "IntervalCore",
+   "src": "."
+  },
+  {
+   "name": "LeafNumCore",
+   "src": "."
+  },
+  {
+   "name": "LeafMetaCore",
+   "src": "."
+  },
+  {
+   "name": "LeafCheckCore",
+   "src": "."
+  },
+  {
+   "name": "RowCheckCore",
+   "src": "."
+  }
+ ],
+ "library_files": 80,
+ "capped": false,
+ "declarations": 1203,
+ "sorry_files": 1,
+ "axioms": 0,
+ "closure_files": 36,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": "readme",
+ "headline_count": 66,
+ "headlines": [
+  {
+   "name": "GradedNear.LFunction_conj",
+   "module": "GradedNear.Conj",
+   "file": "GradedNear/Conj.lean",
+   "line": 97,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "GradedNear.Cert.checkLeaf_ofCore",
+   "module": "GradedNear.Cert.FastEq",
+   "file": "GradedNear/Cert/FastEq.lean",
+   "line": 327,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "GradedNear.Cert.Samples.bound_large_3_99",
+   "module": "GradedNear.Cert.Samples.Large",
+   "file": "GradedNear/Cert/Samples/Large.lean",
+   "line": 262,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "GradedNear.exists_prime_of_criterion",
+   "module": "GradedNear.Prime",
+   "file": "GradedNear/Prime.lean",
+   "line": 136,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "GradedNear.Kernel.exists_prime",
+   "module": "GradedNear.Kernel",
+   "file": "GradedNear/Kernel.lean",
+   "line": 77,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "GradedNear.Cert.leaf_relaxation",
+   "module": "GradedNear.Cert.Relaxation",
+   "file": "GradedNear/Cert/Relaxation.lean",
+   "line": 73,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "GradedNear.Cert.leaf_interpretation",
+   "module": "GradedNear.Cert.Semantics",
+   "file": "GradedNear/Cert/Semantics.lean",
+   "line": 116,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "GradedNear.certified_leaf_gives_prime",
+   "module": "GradedNear.LeafPrime",
+   "file": "GradedNear/LeafPrime.lean",
+   "line": 35,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  }
+ ],
+ "mathlib_imports": {
+  "Mathlib.Analysis.Complex.Exponential": 1,
+  "Mathlib.Analysis.Convex.Deriv": 1,
+  "Mathlib.Analysis.Convex.Segment": 1,
+  "Mathlib.Data.Nat.Cast.Order.Field": 1,
+  "Mathlib.Data.Rat.Cast.Order": 1,
+  "Mathlib.Tactic.FieldSimp": 1,
+  "Mathlib.Tactic.GCongr": 1,
+  "Mathlib.Tactic.Linarith": 1,
+  "Mathlib.Tactic.Positivity": 1
+ },
+ "import_roots": {
+  "Mathlib": 8,
+  "Std": 1
+ },
+ "uses": {
+  "AnalyticAt": 1,
+  "ArithmeticFunction": 1,
+  "Complex": 27,
+  "Complex.exp": 6,
+  "ContDiff": 2,
+  "Continuous": 6,
+  "Differentiable": 2,
+  "Filter": 10,
+  "Filter.Tendsto": 4,
+  "Finset": 34,
+  "HasDerivAt": 11,
+  "Int": 5,
+  "IsCompact": 1,
+  "IsCoprime": 1,
+  "List": 17,
+  "Measurable": 3,
+  "MeasureTheory.Integrable": 2,
+  "MeasureTheory.Measure": 1,
+  "Metric.ball": 1,
+  "Metric.tendsto_atTop": 1,
+  "Nat": 6,
+  "Nat.totient": 1,
+  "Rat": 6,
+  "Real.exp": 36,
+  "Real.log": 30,
+  "Real.sin": 2,
+  "Set": 17,
+  "Std.HashMap": 2,
+  "norm_add_le": 3
+ },
+ "ci": null
+}

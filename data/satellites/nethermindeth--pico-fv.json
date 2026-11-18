@@ -1,0 +1,85 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "NethermindEth/pico-fv",
+ "slug": "nethermindeth--pico-fv",
+ "rev": "a7f9a0976e245aeef89c3f02c51ae85023207b53",
+ "date": "2026-06-11T09:07:43Z",
+ "stable": "78979328d34f14dcc045998efde26163dce6b6e92549c70d86e340b1a366074d",
+ "license": {
+  "files": [
+   "LICENSE-APACHE",
+   "LICENSE-MIT"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE-APACHE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Formal verification of the Brevis Pico RISC-V zkVM",
+  "excerpt": "This repository contains a Lean 4 (v4.28.0-rc1) formalisation of the Brevis Pico RISC-V zkVM and end-to-end equivalence proofs between every Pico chip's constraint system and the corresponding [Official Lean RISC-V specification](https://github.com/NethermindEth/sail-riscv-lean/tree/v4.28.0-rc1)."
+ },
+ "lean_files": 274,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.28.0-rc1",
+ "mathlib": "5352afccd6866369be9de43f5b7ec47203555f44",
+ "requirements": [
+  {
+   "name": "LeanRV",
+   "url": "https://github.com/NethermindEth/sail-riscv-lean",
+   "rev": "bb1e7d45c6a158a5598705eea12cebfee4349b03"
+  },
+  {
+   "name": "LeanZKCircuit_Plonky3",
+   "url": "https://github.com/NethermindEth/LeanZKCircuit-Plonky3.git",
+   "rev": "d1f15357a7a999618b80dd110aba955c1f111cf6"
+  }
+ ],
+ "libraries": [
+  {
+   "name": "PicoFV",
+   "src": "."
+  },
+  {
+   "name": "PicoFV32",
+   "src": "."
+  },
+  {
+   "name": "PicoFV64",
+   "src": "."
+  }
+ ],
+ "library_files": 274,
+ "capped": false,
+ "declarations": 3106,
+ "sorry_files": 0,
+ "axioms": 0,
+ "closure_files": 0,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "unclosed_files": 36,
+ "headline_rule": null,
+ "headline_count": 0,
+ "headlines": [],
+ "mathlib_imports": {
+  "Mathlib.Data.List.Defs": 37,
+  "Mathlib.Tactic.LinearCombination": 2
+ },
+ "import_roots": {
+  "Lean": 4,
+  "LeanRV32D": 3,
+  "LeanRV64D": 3,
+  "LeanZKCircuit_Plonky3": 77,
+  "Mathlib": 81,
+  "PicoFV": 3,
+  "Sail": 2
+ },
+ "uses": {
+  "Field": 112,
+  "Int": 1,
+  "List": 170,
+  "Nat": 2
+ },
+ "ci": null
+}

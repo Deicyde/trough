@@ -16,18 +16,18 @@ proof: formalized
 
 ## Depends on
 
-Its headline statements name no Mathlib concept or declaration mapped elsewhere on this site.
+- [Projects building on PNT+ (3)](README.md)
 
 ## Proof depends on
 
-- [Bochner integral](../../mathlib/overview/analysis/measures-and-integral-calculus/part-01/bochner-integral.md)
-- [Arithmetic functions](../../mathlib/overview/general-algebra/number-theory/arithmetic-functions.md)
-- [Natural number](../../mathlib/overview/general-algebra/numbers/natural-number.md)
-- [Logarithm](../../mathlib/overview/analysis/special-functions/logarithm.md)
 - [Complex number](../../mathlib/overview/general-algebra/numbers/complex-number.md)
 - [Real number](../../mathlib/overview/general-algebra/numbers/real-number.md)
-- [Intermediate value theorem](../../mathlib/overview/topology/topological-algebra/intermediate-value-theorem.md)
-- [Analytic function](../../mathlib/overview/analysis/differentiability/analytic-function.md)
+- [Arithmetic functions](../../mathlib/overview/general-algebra/number-theory/arithmetic-functions.md)
+- [Logarithm](../../mathlib/overview/analysis/special-functions/logarithm.md)
+- [Bochner integral](../../mathlib/overview/analysis/measures-and-integral-calculus/part-01/bochner-integral.md)
+- [Finite](../../mathlib/overview/combinatorics/pigeonhole-principles/finite.md)
+- [Fourier transform as an integral](../../mathlib/overview/analysis/fourier-analysis/fourier-transform-as-an-integral.md)
+- [Natural number](../../mathlib/overview/general-algebra/numbers/natural-number.md)
 
 ## Main results
 
@@ -48,7 +48,7 @@ No file its headlines import, directly or not (819 files), holds `sorry`, `admit
 
 - Mathlib, at [0df444a3](https://github.com/leanprover-community/mathlib4/tree/0df444a360eaa60ab8c11dca51a86af692955474).
 - [PrimeNumberTheoremAnd](../README.md) at `0f15a38c`, a GitHub fork of AlexKontorovich/PrimeNumberTheoremAnd.
-- `Robin1984` (https://github.com/kimihiro64/Robin1984.git) at `bfa72aec`.
+- [Robin1984](README.md) at `bfa72aec`.
 
 ## Placement
 
@@ -56,7 +56,7 @@ Its Lake manifest requires `PrimeNumberTheoremAnd`, a GitHub fork of AlexKontoro
 
 ## Mathlib use
 
-Areas of its Mathlib imports by lift over the average project: Data structures (599 of 2287 imports, 2.1×), General algebra (885 of 2287 imports, 1.1×), Analysis (667 of 2287 imports, 0.9×). *Proof depends on* names 8 of the 38 Mathlib concepts its files name, those named most often relative to the other projects.
+Areas of its Mathlib imports by lift over the average project: Data structures (599 of 2287 imports, 1.8×), General algebra (885 of 2287 imports, 1.1×), Analysis (667 of 2287 imports, 1.1×). *Proof depends on* names 8 of the 38 Mathlib concepts its files name, those named most often relative to the other projects.
 
 ## Sources
 

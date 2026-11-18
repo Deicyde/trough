@@ -1,0 +1,125 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "argumentcomputer/ix",
+ "slug": "argumentcomputer--ix",
+ "rev": "bdd4304fa7db1404fd897927f1647db6ad8b300f",
+ "date": "2026-11-07T15:00:42Z",
+ "stable": "a91952e4193c4679aff2f365aba2f8b5fb329bb7624aed2c5af5b4da31119b95",
+ "license": {
+  "files": [
+   "LICENSE-APACHE",
+   "LICENSE-MIT"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE-APACHE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Ix: a zero-knowledge proof-carrying code platform",
+  "excerpt": "The Ix platform enables the compilation of [Lean 4](https://github.com/leanprover/lean4) programs into zero-knowledge succinct non-interactive arguments of knowledge (zk-SNARKs). This allows the execution and typechecking of any Lean program to be verified by performing a sub-100-millisecond operation against an approximately 1 kilobyte certificate, regardless of the size of the original Lean program."
+ },
+ "lean_files": 1616,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.34.1",
+ "mathlib": "",
+ "requirements": [
+  {
+   "name": "Blake3",
+   "url": "https://github.com/argumentcomputer/Blake3.lean",
+   "rev": "3f8b805614a0bae1c033469ff893a8f0ee85f601"
+  },
+  {
+   "name": "LSpec",
+   "url": "https://github.com/argumentcomputer/LSpec",
+   "rev": "d8eb3e0d9a8e33fc116e6700df0418a1d8114508"
+  },
+  {
+   "name": "«ix-kernel»",
+   "url": "IxC",
+   "rev": ""
+  }
+ ],
+ "libraries": [
+  {
+   "name": "MultiStark",
+   "src": "."
+  },
+  {
+   "name": "Ix",
+   "src": "."
+  },
+  {
+   "name": "Tests",
+   "src": "."
+  },
+  {
+   "name": "EntryCaseFixtures",
+   "src": "."
+  },
+  {
+   "name": "TruthMinesSpec",
+   "src": "."
+  },
+  {
+   "name": "Apps",
+   "src": "."
+  },
+  {
+   "name": "IxSharingVerify",
+   "src": "."
+  },
+  {
+   "name": "KernelEntry",
+   "src": "."
+  }
+ ],
+ "library_files": 812,
+ "capped": false,
+ "declarations": 16041,
+ "sorry_files": 10,
+ "axioms": 8,
+ "closure_files": 85,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": "readme",
+ "headline_count": 1,
+ "headlines": [
+  {
+   "name": "Ix.CompileCert.UniversePipeline.TablesSound.primary",
+   "module": "Ix.CompileCert.UniversePipeline",
+   "file": "Ix/CompileCert/UniversePipeline.lean",
+   "line": 96,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  }
+ ],
+ "mathlib_imports": {},
+ "import_roots": {
+  "Batteries": 10,
+  "Blake3": 10,
+  "Cli": 33,
+  "Init": 17,
+  "IxC": 125,
+  "LSpec": 79,
+  "Lean": 47,
+  "Std": 39
+ },
+ "uses": {
+  "Array": 524,
+  "Distribution": 6,
+  "Field": 2,
+  "Group": 31,
+  "Int": 41,
+  "List": 517,
+  "Nat": 554,
+  "Set": 9,
+  "Std.HashMap": 188,
+  "closure": 55,
+  "orderOf": 5
+ },
+ "ci": "FAILURE"
+}

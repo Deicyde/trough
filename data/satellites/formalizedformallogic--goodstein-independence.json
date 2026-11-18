@@ -1,0 +1,115 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "FormalizedFormalLogic/goodstein-independence",
+ "slug": "formalizedformallogic--goodstein-independence",
+ "rev": "cc0bfad5a26d1fb134834352859e4be9cebfac68",
+ "date": "2026-10-06T23:25:10Z",
+ "stable": "9200faf9dbe37f9c56247c9ea76ed4d454c2fa6723f6a6de3edb5398ada3f0eb",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Goodstein independence over PA",
+  "excerpt": "**Experimental. Not maintained or reviewed by FFL.**"
+ },
+ "lean_files": 187,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.34.0",
+ "mathlib": "5ed2965256430c3649e86755f9576b54eca72435",
+ "requirements": [
+  {
+   "name": "AlphaCentauri",
+   "url": "https://github.com/FormalizedFormalLogic/AlphaCentauri.git",
+   "rev": "a633ba63cdebffabd00f793f6e19deb53adfad0a"
+  },
+  {
+   "name": "Forgive",
+   "url": "https://github.com/FormalizedFormalLogic/forgive",
+   "rev": "727e3a364c4228cf493761b64fcefc81e9933601"
+  },
+  {
+   "name": "Foundation",
+   "url": "https://github.com/FormalizedFormalLogic/Foundation.git",
+   "rev": "33f9f6859650a440dad9fd14aaa300553ba65e44"
+  }
+ ],
+ "libraries": [
+  {
+   "name": "GoodsteinPA",
+   "src": "."
+  }
+ ],
+ "library_files": 94,
+ "capped": false,
+ "declarations": 1503,
+ "sorry_files": 0,
+ "axioms": 0,
+ "closure_files": 54,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": "blueprint",
+ "headline_count": 1,
+ "headlines": [
+  {
+   "name": "GoodsteinPA.peano_not_proves_goodstein",
+   "module": "GoodsteinPA.Statement",
+   "file": "GoodsteinPA/Statement.lean",
+   "line": 55,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  }
+ ],
+ "mathlib_imports": {
+  "Mathlib.Combinatorics.Colex": 1,
+  "Mathlib.Combinatorics.Compactness": 1,
+  "Mathlib.Computability.RE": 1,
+  "Mathlib.Data.ENat.Lattice": 1,
+  "Mathlib.Data.Finset.Max": 1,
+  "Mathlib.Data.Finset.Sort": 1,
+  "Mathlib.Data.Fintype.Pi": 1,
+  "Mathlib.Data.Fintype.Pigeonhole": 1,
+  "Mathlib.Data.Fintype.Powerset": 1,
+  "Mathlib.Data.Multiset.Basic": 1,
+  "Mathlib.Data.Nat.Pairing": 1,
+  "Mathlib.Data.Set.Finite.Lattice": 1,
+  "Mathlib.Logic.Hydra": 1,
+  "Mathlib.Order.Interval.Finset.Nat": 2,
+  "Mathlib.Order.Interval.Set.Infinite": 1,
+  "Mathlib.Order.Lattice.Nat": 1,
+  "Mathlib.SetTheory.Ordinal.Notation": 1,
+  "Mathlib.SetTheory.Ordinal.Rank": 1,
+  "Mathlib.SetTheory.Ordinal.Veblen": 1,
+  "Mathlib.Tactic.Abel": 1,
+  "Mathlib.Tactic.Order": 1,
+  "Mathlib.Tactic.Ring": 1,
+  "Mathlib.Tactic.Ring.RingNF": 1
+ },
+ "import_roots": {
+  "AlphaCentauri": 7,
+  "Foundation": 8,
+  "Mathlib": 13,
+  "Std": 5
+ },
+ "uses": {
+  "Computable": 1,
+  "Finite.exists_infinite_fiber": 1,
+  "Finset": 43,
+  "Language": 1,
+  "List": 10,
+  "Multiset": 1,
+  "Ordinal": 49,
+  "Primrec": 4,
+  "Set": 3,
+  "norm_add_le": 1
+ },
+ "ci": "SUCCESS"
+}

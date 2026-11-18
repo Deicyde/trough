@@ -1,0 +1,204 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "powdr-labs/yul-compiler",
+ "slug": "powdr-labs--yul-compiler",
+ "rev": "330923e0be35fc02c6cdb325e737003bb79230a8",
+ "date": "2026-09-04T14:47:33Z",
+ "stable": "fd230eac28b64d1c3643618ec0f88cd6b284d5277118759452aa46d491ffb8fd",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "yul-evm-compiler",
+  "excerpt": "A **verified non-optimizing compiler for a fragment of Yul to EVM bytecode**, written in Lean 4. \"Non-optimizing\" describes the *core*: code generation is direct and its correctness never depends on any optimization. Two separately verified optimizers do run in front of and below it — a Yul→Yul pipeline (`Optimizer/`) and an Asm→Asm peephole (`AsmPeephole.lean`), each with its own soundness contract composed into the end-to-end theorem. See **Optimization** below."
+ },
+ "lean_files": 248,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.33.0",
+ "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+ "requirements": [
+  {
+   "name": "evm_semantics",
+   "url": "https://github.com/powdr-labs/evm-semantics",
+   "rev": "2f8714d6ba960a3de67720019b54513f5bc1a2e3"
+  },
+  {
+   "name": "«yul-semantics»",
+   "url": "https://github.com/powdr-labs/yul-semantics",
+   "rev": "c9914c13df47efe026376723acd632bc33bc16e3"
+  }
+ ],
+ "libraries": [
+  {
+   "name": "YulEvmCompiler",
+   "src": "."
+  },
+  {
+   "name": "YulParser",
+   "src": "."
+  },
+  {
+   "name": "YulCApi",
+   "src": "."
+  },
+  {
+   "name": "YulEvmCompilerTests",
+   "src": "."
+  },
+  {
+   "name": "YulIR",
+   "src": "."
+  },
+  {
+   "name": "YulIRBench",
+   "src": "."
+  }
+ ],
+ "library_files": 236,
+ "capped": false,
+ "declarations": 7342,
+ "sorry_files": 2,
+ "axioms": 0,
+ "closure_files": 130,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": "readme",
+ "headline_count": 21,
+ "headlines": [
+  {
+   "name": "YulEvmCompiler.SsaCfg.CseAgree.jump",
+   "module": "YulEvmCompiler.SsaCfg.Implementation.PassesSound.CseRuntime",
+   "file": "YulEvmCompiler/SsaCfg/Implementation/PassesSound/CseRuntime.lean",
+   "line": 1124,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "List"
+   ]
+  },
+  {
+   "name": "YulEvmCompiler.Optimizer.MemorySpillControlSound.CodeOrigin.call",
+   "module": "YulEvmCompiler.Optimizer.Implementation.MemorySpillControlSound",
+   "file": "YulEvmCompiler/Optimizer/Implementation/MemorySpillControlSound.lean",
+   "line": 770,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "List"
+   ]
+  },
+  {
+   "name": "YulEvmCompiler.compileObject_correct",
+   "module": "YulEvmCompiler.ObjectCompile",
+   "file": "YulEvmCompiler/ObjectCompile.lean",
+   "line": 1059,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Nat"
+   ]
+  },
+  {
+   "name": "YulEvmCompiler.compileObject_consistent",
+   "module": "YulEvmCompiler.ObjectCompile",
+   "file": "YulEvmCompiler/ObjectCompile.lean",
+   "line": 1031,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "YulParser.parse_canon_block",
+   "module": "YulParser.Stmt",
+   "file": "YulParser/Stmt.lean",
+   "line": 314,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "List"
+   ]
+  },
+  {
+   "name": "YulParser.parse_canon_obj",
+   "module": "YulParser.Obj",
+   "file": "YulParser/Obj.lean",
+   "line": 142,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "YulEvmCompiler.Optimizer.LocalPass.optimize_then_compile_correct",
+   "module": "YulEvmCompiler.Optimizer.Spec.Backend",
+   "file": "YulEvmCompiler/Optimizer/Spec/Backend.lean",
+   "line": 40,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "List",
+    "Nat"
+   ]
+  },
+  {
+   "name": "YulEvmCompiler.Optimizer.optimizerPipelineObject_correct",
+   "module": "YulEvmCompiler.Optimizer.Implementation.Pipeline",
+   "file": "YulEvmCompiler/Optimizer/Implementation/Pipeline.lean",
+   "line": 435,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Nat"
+   ]
+  }
+ ],
+ "mathlib_imports": {
+  "Mathlib.Algebra.Divisibility.Basic": 1,
+  "Mathlib.Algebra.Group.Defs": 1,
+  "Mathlib.Algebra.GroupWithZero.Basic": 1,
+  "Mathlib.Algebra.Order.GroupWithZero.Basic": 1,
+  "Mathlib.Data.BitVec": 2,
+  "Mathlib.Data.Char": 1,
+  "Mathlib.Data.List.Basic": 1,
+  "Mathlib.Data.List.Forall2": 2,
+  "Mathlib.Data.List.Nodup": 1,
+  "Mathlib.Data.List.TakeWhile": 1,
+  "Mathlib.Data.Multiset.AddSub": 1,
+  "Mathlib.Data.Multiset.Basic": 1,
+  "Mathlib.Data.Multiset.OrderedMonoid": 1,
+  "Mathlib.Data.Nat.SuccPred": 2,
+  "Mathlib.Tactic.ByContra": 1,
+  "Mathlib.Tactic.FinCases": 2,
+  "Mathlib.Tactic.IntervalCases": 2,
+  "Mathlib.Tactic.NormNum.Basic": 2,
+  "Mathlib.Tactic.NormNum.Ineq": 1,
+  "Mathlib.Tactic.Positivity": 1,
+  "Mathlib.Tactic.Push": 1,
+  "Mathlib.Tactic.Ring": 1,
+  "Mathlib.Tactic.Tauto": 1
+ },
+ "import_roots": {
+  "Batteries": 4,
+  "EvmSemantics": 8,
+  "Init": 1,
+  "Mathlib": 13,
+  "Std": 6,
+  "YulSemantics": 37
+ },
+ "uses": {
+  "Array": 42,
+  "Int": 2,
+  "List": 200,
+  "Nat": 149,
+  "Std.HashMap": 17,
+  "closure": 10
+ },
+ "ci": "FAILURE"
+}

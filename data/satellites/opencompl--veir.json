@@ -1,0 +1,77 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "opencompl/veir",
+ "slug": "opencompl--veir",
+ "rev": "6d939bcb034bfd5ef2bb42b00de18423dc813028",
+ "date": "2026-11-17T20:33:13Z",
+ "stable": "652598dfe9074965bb3b1b34541424a5145602e825bca2a780a8912c357fe682",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": null,
+  "file": null,
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Verified Intermediate Representation",
+  "excerpt": null
+ },
+ "lean_files": 445,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.35.0-rc4",
+ "mathlib": "",
+ "requirements": [
+  {
+   "name": "ExArray",
+   "url": "ExArray",
+   "rev": ""
+  },
+  {
+   "name": "«lean-ctrees»",
+   "url": "lean-ctrees",
+   "rev": ""
+  }
+ ],
+ "libraries": [
+  {
+   "name": "Veir",
+   "src": "."
+  },
+  {
+   "name": "UnitTest",
+   "src": "."
+  }
+ ],
+ "library_files": 374,
+ "capped": false,
+ "declarations": 10114,
+ "sorry_files": 7,
+ "axioms": 8,
+ "closure_files": 0,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": null,
+ "headline_count": 0,
+ "headlines": [],
+ "mathlib_imports": {},
+ "import_roots": {
+  "CTree": 4,
+  "Init": 3,
+  "Lean": 19,
+  "Std": 34
+ },
+ "uses": {
+  "Array": 124,
+  "Int": 66,
+  "List": 41,
+  "Nat": 164,
+  "Rat": 6,
+  "Set": 4,
+  "Std.HashMap": 70
+ },
+ "ci": "PENDING"
+}

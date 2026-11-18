@@ -1,0 +1,66 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "Verilean/hesper",
+ "slug": "verilean--hesper",
+ "rev": "38fba72000a0d39a0421c5911378df9d28f6aca9",
+ "date": "2026-08-30T05:26:02Z",
+ "stable": "c0df6a515e0929e4c873f8c91eb6eea3b977e21eebe31af38b8eaa2abba8a3d9",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Hesper",
+  "excerpt": "**Write GPU programs in Lean 4. Prove them correct. Run on WebGPU or CUDA.**"
+ },
+ "lean_files": 441,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.28.0",
+ "mathlib": "",
+ "requirements": [
+  {
+   "name": "LSpec",
+   "url": "https://github.com/argumentcomputer/LSpec.git",
+   "rev": "fdf848d6cda9f080a09e49e760e2d6f70878800b"
+  }
+ ],
+ "libraries": [
+  {
+   "name": "Hesper",
+   "src": "."
+  }
+ ],
+ "library_files": 174,
+ "capped": false,
+ "declarations": 2270,
+ "sorry_files": 1,
+ "axioms": 2,
+ "closure_files": 0,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": null,
+ "headline_count": 0,
+ "headlines": [],
+ "mathlib_imports": {},
+ "import_roots": {
+  "Lean": 1,
+  "Std": 5
+ },
+ "uses": {
+  "Array": 88,
+  "Differentiable": 4,
+  "Int": 12,
+  "List": 42,
+  "Module": 1,
+  "Nat": 148,
+  "Std.HashMap": 7
+ },
+ "ci": "SUCCESS"
+}

@@ -29,6 +29,7 @@ from __future__ import annotations
 import hashlib
 import json
 import math
+import posixpath
 import re
 import tomllib
 from collections import Counter
@@ -696,6 +697,16 @@ def home(record: dict, live: dict[str, tuple[str, str]], hosts: dict, overrides:
     return OVERVIEW, "It builds on Mathlib, but neither its statements, imports nor names point to one overview area."
 
 
+RELATIVE = re.compile(r"(\]\(|(?:src|href)=\")(?![a-z][a-z0-9+.-]*:|#|/)([^)\"\s]+)", re.I)
+
+
+def absolute(record: dict, text: str) -> str:
+    """The README's relative links, pointed at the repository at the pinned commit."""
+    folder = posixpath.dirname(record["readme"]["file"])
+    return RELATIVE.sub(lambda match: match.group(1) + blob(record, posixpath.normpath(posixpath.join(folder, match.group(2)))),
+                        text)
+
+
 def blob(record: dict, path: str, line: int | None = None) -> str:
     return f"{GITHUB}/{record['repo']}/blob/{record['rev']}/{path}" + (f"#L{line}" if line else "")
 
@@ -736,7 +747,7 @@ def card(record: dict, depends: list[Leaf], uses: list[Leaf], named: int, placem
     body = f"[{record['repo']}]({GITHUB}/{record['repo']}) at commit {at(record)}, {record['date'][:10]}."
     excerpt = record["readme"].get("excerpt")
     if excerpt and record["license"]["spdx"]:
-        body += (f"\n\n> {safe(excerpt)}\n\n*Quoted from [{record['readme']['file']}]"
+        body += (f"\n\n> {safe(absolute(record, excerpt))}\n\n*Quoted from [{record['readme']['file']}]"
                  f"({blob(record, record['readme']['file'])}), {notice(record)}.*")
     count = (f"{len(heads)} of the {record['headline_count']}" if record["headline_count"] > len(heads)
              else "the")

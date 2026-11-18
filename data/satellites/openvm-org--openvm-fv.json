@@ -1,0 +1,73 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "openvm-org/openvm-fv",
+ "slug": "openvm-org--openvm-fv",
+ "rev": "7523c23a3148100a0f201b33385c0f8e01b2c858",
+ "date": "2026-07-15T03:35:37Z",
+ "stable": "09bec1297ac0fcf2e455d221f8707fab4d2e1d735badc872f74161b3640cd1ef",
+ "license": {
+  "files": [
+   "LICENSE-APACHE",
+   "LICENSE-MIT"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE-APACHE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Formal verification of the OpenVM RISC-V zkVM",
+  "excerpt": "This repository contains an infrastructure for formal verification of OpenVM RISC-V chips in Lean (v4.26.0), together with Lean proofs that the OpenVM implementations of all 45 of the RISC-V RV32IM opcodes satisfy their RISC-V specifications, as per the [Official Lean RISC-V specification](https://github.com/opencompl/sail-riscv-lean)."
+ },
+ "lean_files": 345,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.26.0",
+ "mathlib": "2df2f0150c275ad53cb3c90f7c98ec15a56a1a67",
+ "requirements": [
+  {
+   "name": "LeanRV",
+   "url": "https://github.com/NethermindEth/sail-riscv-lean",
+   "rev": "a0bf6df1ddd5c22821edc310acff37bbfc2b9f9a"
+  },
+  {
+   "name": "LeanZKCircuit",
+   "url": "https://github.com/NethermindEth/leanzkcircuit.git",
+   "rev": "8631b11de51c68288b519e8032019524b84a365f"
+  }
+ ],
+ "libraries": [
+  {
+   "name": "OpenvmFv",
+   "src": "."
+  }
+ ],
+ "library_files": 166,
+ "capped": false,
+ "declarations": 1593,
+ "sorry_files": 0,
+ "axioms": 0,
+ "closure_files": 0,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "unclosed_files": 40,
+ "headline_rule": null,
+ "headline_count": 0,
+ "headlines": [],
+ "mathlib_imports": {
+  "Mathlib.Algebra.Field.Basic": 17
+ },
+ "import_roots": {
+  "LeanRV32D": 3,
+  "LeanZKCircuit": 89,
+  "Mathlib": 55,
+  "OpenvmFv": 1
+ },
+ "uses": {
+  "Field": 96,
+  "Int": 1,
+  "List": 43,
+  "Nat": 2
+ },
+ "ci": "SUCCESS"
+}

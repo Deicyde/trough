@@ -38,24 +38,15 @@
  "libraries": [
   {
    "name": "BombieriVinogradov",
-   "src": ".",
-   "roots": [
-    "BombieriVinogradov"
-   ]
+   "src": "."
   },
   {
    "name": "Challenge",
-   "src": ".",
-   "roots": [
-    "Challenge"
-   ]
+   "src": "."
   },
   {
    "name": "Solution",
-   "src": ".",
-   "roots": [
-    "Solution"
-   ]
+   "src": "."
   }
  ],
  "library_files": 852,
@@ -302,7 +293,6 @@
   "Mathlib.Topology.Order.IntermediateValue": 2
  },
  "import_roots": {
-  "BombieriVinogradov": 685,
   "Mathlib": 616,
   "PrimeNumberTheoremAnd": 77,
   "Robin1984": 2

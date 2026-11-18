@@ -1,0 +1,164 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "skbaek/blanc",
+ "slug": "skbaek--blanc",
+ "rev": "251128de090c5b14c655d9be5dfbc7dd35076a92",
+ "date": "2026-11-14T19:52:43Z",
+ "stable": "3c8be8c038e9f19efc22fe10129f1ffe8f0796d14687af1ef83e05894b50a69e",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "MIT",
+  "file": "LICENSE",
+  "copyright": [
+   "Copyright (c) 2024 skbaek"
+  ]
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Blanc: A Verification Stack for EVM Smart Contracts in Lean 4",
+  "excerpt": "**[skbaek.github.io/blanc](https://skbaek.github.io/blanc/)** — the guided tour: what Blanc proves about bytecode already deployed on mainnet, how, and on which premises; the Blanc language and its contracts; and what none of it claims. **[Jaune](https://github.com/skbaek/jaune)** ([site](https://skbaek.github.io/jaune/)) — the EVM semantics every theorem here is stated against."
+ },
+ "lean_files": 1001,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.35.0",
+ "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+ "requirements": [
+  {
+   "name": "jaune",
+   "url": "https://github.com/skbaek/jaune.git",
+   "rev": "730aae6533a986edcc02910ca33216bf3da37f3f"
+  }
+ ],
+ "libraries": [
+  {
+   "name": "Blanc",
+   "src": "."
+  }
+ ],
+ "library_files": 982,
+ "capped": false,
+ "declarations": 15615,
+ "sorry_files": 15,
+ "axioms": 0,
+ "closure_files": 41,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": "readme",
+ "headline_count": 8,
+ "headlines": [
+  {
+   "name": "Blanc.ContractSpec.sound_of_dispatch",
+   "module": "Blanc.Ladder",
+   "file": "Blanc/Ladder.lean",
+   "line": 704,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "List",
+    "Nat"
+   ]
+  },
+  {
+   "name": "Blanc.Prog.runCompiled_iff_exec",
+   "module": "Blanc.Compiled",
+   "file": "Blanc/Compiled.lean",
+   "line": 1658,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "Blanc.correct",
+   "module": "Blanc.CommonCore",
+   "file": "Blanc/CommonCore.lean",
+   "line": 2119,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "Blanc.correct_core",
+   "module": "Blanc.CommonCore",
+   "file": "Blanc/CommonCore.lean",
+   "line": 1986,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "List"
+   ]
+  },
+  {
+   "name": "Blanc.Prog.exec_of_runCompiled",
+   "module": "Blanc.Compiled",
+   "file": "Blanc/Compiled.lean",
+   "line": 1620,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "Blanc.Devm.withRefundCounter_getStor",
+   "module": "Blanc.CommonProofs.Base",
+   "file": "Blanc/CommonProofs/Base.lean",
+   "line": 662,
+   "kind": "lemma",
+   "sorry": false,
+   "names": [
+    "Int"
+   ]
+  },
+  {
+   "name": "Blanc.Devm.addLog_getStor",
+   "module": "Blanc.CommonProofs.Base",
+   "file": "Blanc/CommonProofs/Base.lean",
+   "line": 666,
+   "kind": "lemma",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "Blanc.Lift.Witness.AccKeep.setMach",
+   "module": "Blanc.Lift.WitnessArms",
+   "file": "Blanc/Lift/WitnessArms.lean",
+   "line": 32,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  }
+ ],
+ "mathlib_imports": {
+  "Mathlib.Algebra.BigOperators.Group.Finset.Basic": 1,
+  "Mathlib.Data.Int.ModEq": 1,
+  "Mathlib.Data.List.Lemmas": 1,
+  "Mathlib.Data.Nat.Basic": 1,
+  "Mathlib.Data.Nat.Bitwise": 1,
+  "Mathlib.Data.Nat.Find": 1,
+  "Mathlib.Data.Nat.Prime.Basic": 1,
+  "Mathlib.Data.Vector.Basic": 1,
+  "Mathlib.Tactic.Clear_": 1,
+  "Mathlib.Tactic.Have": 1,
+  "Mathlib.Tactic.Linarith": 1,
+  "Mathlib.Tactic.Ring": 2,
+  "Mathlib.Util.Notation3": 1
+ },
+ "import_roots": {
+  "Batteries": 19,
+  "Init": 4,
+  "Jaune": 61,
+  "JauneConsensus": 29,
+  "Lean": 2,
+  "Mathlib": 6
+ },
+ "uses": {
+  "Array": 18,
+  "Finset": 2,
+  "Int": 33,
+  "List": 625,
+  "Nat": 733
+ },
+ "ci": "FAILURE"
+}

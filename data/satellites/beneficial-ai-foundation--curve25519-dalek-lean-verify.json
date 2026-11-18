@@ -1,0 +1,104 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "Beneficial-AI-Foundation/curve25519-dalek-lean-verify",
+ "slug": "beneficial-ai-foundation--curve25519-dalek-lean-verify",
+ "rev": "52cad87d054943c96c984d99d9ea9e5d043b0d65",
+ "date": "2026-11-05T10:23:19Z",
+ "stable": "7c6706738e70163ba4f68a84a7bbc592fe94fe2d9565eb6726fc565afa838af3",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Verify Dalek elliptic curve cryptography using Lean",
+  "excerpt": "⚠️ The latest development is now happening at https://github.com/Beneficial-AI-Foundation/curve25519-dalek-fork/ (because that's a fork and this repo isn't). When the upstreaming work is finalized this repo will be updated and then archived."
+ },
+ "lean_files": 244,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.31.0",
+ "mathlib": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+ "requirements": [
+  {
+   "name": "aeneas",
+   "url": "https://github.com/AeneasVerif/aeneas.git",
+   "rev": "6e167c9b63a4dafd66d0e0edd9d94669f957ff7b"
+  },
+  {
+   "name": "PrimeCert",
+   "url": "https://github.com/b-mehta/PrimeCert.git",
+   "rev": "f699a3e5d3efb381b9ddfb61a1ca51be25f456bd"
+  }
+ ],
+ "libraries": [
+  {
+   "name": "Curve25519Dalek",
+   "src": "."
+  },
+  {
+   "name": "Utils",
+   "src": "."
+  },
+  {
+   "name": "Tests",
+   "src": "."
+  }
+ ],
+ "library_files": 244,
+ "capped": false,
+ "declarations": 1450,
+ "sorry_files": 4,
+ "axioms": 18,
+ "closure_files": 0,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": null,
+ "headline_count": 0,
+ "headlines": [],
+ "mathlib_imports": {
+  "Mathlib.Algebra.BigOperators.Ring.Finset": 1,
+  "Mathlib.Algebra.Field.ZMod": 3,
+  "Mathlib.Algebra.Order.BigOperators.Group.Finset": 1,
+  "Mathlib.AlgebraicGeometry.EllipticCurve.Affine.Point": 1,
+  "Mathlib.Data.Int.ModEq": 2,
+  "Mathlib.Data.Nat.Digits.Lemmas": 1,
+  "Mathlib.Data.Nat.ModEq": 7,
+  "Mathlib.Data.ZMod.Basic": 2,
+  "Mathlib.FieldTheory.Finite.Basic": 1,
+  "Mathlib.NumberTheory.LegendreSymbol.Basic": 2,
+  "Mathlib.Tactic": 6,
+  "Mathlib.Tactic.GCongr": 1,
+  "Mathlib.Tactic.IntervalCases": 2,
+  "Mathlib.Tactic.LinearCombination": 1,
+  "Mathlib.Tactic.Linter": 2,
+  "Mathlib.Tactic.MkIffOfInductiveProp": 1,
+  "Mathlib.Tactic.NormNum.LegendreSymbol": 2
+ },
+ "import_roots": {
+  "Aeneas": 10,
+  "Cli": 2,
+  "Lean": 9,
+  "Mathlib": 25,
+  "Plausible": 1,
+  "PrimeCert": 1,
+  "Std": 3
+ },
+ "uses": {
+  "Array": 62,
+  "Field": 5,
+  "Int": 5,
+  "Invertible": 1,
+  "List": 25,
+  "Nat": 32,
+  "ZMod.pow_card_sub_one_eq_one": 1,
+  "orderOf": 1,
+  "ringChar": 1
+ },
+ "ci": "SUCCESS"
+}

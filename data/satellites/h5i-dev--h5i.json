@@ -1,0 +1,117 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "h5i-dev/h5i",
+ "slug": "h5i-dev--h5i",
+ "rev": "cc54fa89690c2d3c630b5ba670b30d8dbd93d88e",
+ "date": "2026-11-17T22:27:31Z",
+ "stable": "9fca5f934bf98f1b169ae16f06fa936aff6717e11807549379137a057bf66d45",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "h5i",
+  "excerpt": "**h5i** (pronounced *high-five*) is an Axum-based Rust web framework built around application kernels that can be formally verified with Lean 4 and executed on servers, bare-metal embedded devices, and GPUs. It also provides integrated development infrastructure for red-teaming, security regression testing, and sandboxed AI agents."
+ },
+ "lean_files": 119,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.31.0",
+ "mathlib": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+ "requirements": [
+  {
+   "name": "aeneas",
+   "url": "https://github.com/AeneasVerif/aeneas",
+   "rev": "b86120db3183b0107eb5f2637b11c424cd06ef1c"
+  }
+ ],
+ "libraries": [
+  {
+   "name": "H5iAppLib",
+   "src": "crates/h5i-app-core/proofs"
+  },
+  {
+   "name": "H5iAppStdGenerated",
+   "src": "crates/h5i-app-std/proofs/generated"
+  },
+  {
+   "name": "H5iAppStdProofs",
+   "src": "crates/h5i-app-std/proofs"
+  },
+  {
+   "name": "H5iAppJsonGenerated",
+   "src": "crates/h5i-app-json/proofs/generated"
+  },
+  {
+   "name": "H5iAppJsonProofs",
+   "src": "crates/h5i-app-json/proofs"
+  },
+  {
+   "name": "H5iAppTokenGenerated",
+   "src": "crates/h5i-app-token/proofs/generated"
+  },
+  {
+   "name": "H5iAppTokenProofs",
+   "src": "crates/h5i-app-token/proofs"
+  },
+  {
+   "name": "H5iAppH1Generated",
+   "src": "crates/h5i-app-h1/proofs/generated"
+  },
+  {
+   "name": "H5iAppH1Proofs",
+   "src": "crates/h5i-app-h1/proofs"
+  },
+  {
+   "name": "H5iAppSqlGenerated",
+   "src": "crates/h5i-app-sql/proofs/generated"
+  },
+  {
+   "name": "H5iAppSqlProofs",
+   "src": "crates/h5i-app-sql/proofs"
+  },
+  {
+   "name": "H5iAppPgsqlGenerated",
+   "src": "crates/h5i-app-pgsql/proofs/generated"
+  },
+  {
+   "name": "H5iAppPgsqlProofs",
+   "src": "crates/h5i-app-pgsql/proofs"
+  }
+ ],
+ "library_files": 56,
+ "capped": false,
+ "declarations": 1948,
+ "sorry_files": 0,
+ "axioms": 0,
+ "closure_files": 0,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": null,
+ "headline_count": 0,
+ "headlines": [],
+ "mathlib_imports": {
+  "Mathlib.Data.List.DropRight": 1,
+  "Mathlib.Data.Nat.Digits.Lemmas": 1,
+  "Mathlib.Tactic": 1
+ },
+ "import_roots": {
+  "Aeneas": 10,
+  "Mathlib": 3
+ },
+ "uses": {
+  "Array": 6,
+  "Field": 3,
+  "Filter": 1,
+  "Int": 3,
+  "List": 43,
+  "Nat": 37
+ },
+ "ci": "SUCCESS"
+}

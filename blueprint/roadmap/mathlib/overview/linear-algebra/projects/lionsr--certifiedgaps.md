@@ -21,14 +21,14 @@ statement: formalized
 
 ## Proof depends on
 
-- [Invertibility](../matrices/invertibility.md)
 - [Matrix exponential](../../../undergraduate/linear-algebra/exponential/matrix-exponential.md)
 - [Complementary subspaces](../../../undergraduate/linear-algebra/fundamentals/complementary-subspaces.md)
-- [Permutation group of a type](../../general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
-- [Normed vector space over a normed field](../../analysis/normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
-- [List](../../data-structures/list-like-structures/list.md)
-- [The Triangle Inequality](../../../hundred-theorems/part-04/the-triangle-inequality.md)
+- [Invertibility](../matrices/invertibility.md)
+- [Real number](../../general-algebra/numbers/real-number.md)
 - [The Binomial Theorem](../../../hundred-theorems/part-02/the-binomial-theorem.md)
+- [Normed vector space over a normed field](../../analysis/normed-vector-spaces-banach-spaces/normed-vector-space-over-a-normed-field.md)
+- [The Triangle Inequality](../../../hundred-theorems/part-04/the-triangle-inequality.md)
+- [Permutation group of a type](../../general-algebra/group-theory/part-02/permutation-group-of-a-type.md)
 
 ## Main results
 
@@ -58,11 +58,11 @@ Of the files its headlines import, directly or not, `code/lean/CertifiedGaps/Hei
 
 ## Placement
 
-Of its imports of Mathlib modules in an overview area, 20 of 86 are in Linear algebra, 4.3 times the average project's share, the most of the areas holding a tenth of its imports.
+Of its imports of Mathlib modules in an overview area, 20 of 86 are in Linear algebra, 4.0 times the average project's share, the most of the areas holding a tenth of its imports.
 
 ## Mathlib use
 
-Areas of its Mathlib imports by lift over the average project: Linear algebra (20 of 86 imports, 4.3×), Analysis (38 of 86 imports, 1.3×), Data structures (10 of 86 imports, 0.9×). *Proof depends on* names 8 of the 31 Mathlib concepts its files name, those named most often relative to the other projects.
+Areas of its Mathlib imports by lift over the average project: Linear algebra (20 of 86 imports, 4.0×), Analysis (38 of 86 imports, 1.6×), Data structures (10 of 86 imports, 0.8×). *Proof depends on* names 8 of the 31 Mathlib concepts its files name, those named most often relative to the other projects.
 
 ## Sources
 

@@ -1,0 +1,294 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "longfellow-zk/longfellow-zk",
+ "slug": "longfellow-zk--longfellow-zk",
+ "rev": "1c0662989b919fe7b53a209a0a96f61f0e1b45c7",
+ "date": "2026-11-03T14:03:09Z",
+ "stable": "2bcfe5933d91d3752c156b31324c14dc6c92d54acd7ab295ebbde6facc045520",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": null,
+  "file": null,
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Longfellow ZK",
+  "excerpt": null
+ },
+ "lean_files": 829,
+ "admitted": true,
+ "folder": "formal",
+ "toolchain": "v4.31.0",
+ "mathlib": "",
+ "requirements": [],
+ "libraries": [
+  {
+   "name": "ReedSolomon",
+   "src": "ligero"
+  },
+  {
+   "name": "CodingTheory",
+   "src": "ligero"
+  },
+  {
+   "name": "AffineAgreement",
+   "src": "ligero"
+  },
+  {
+   "name": "SelectedMCA",
+   "src": "ligero"
+  },
+  {
+   "name": "LigeroFamily",
+   "src": "ligero"
+  },
+  {
+   "name": "Ligero",
+   "src": "ligero"
+  },
+  {
+   "name": "JBAgreement",
+   "src": "ligero"
+  },
+  {
+   "name": "examples",
+   "src": "ligero"
+  },
+  {
+   "name": "LigeroLocalCounts",
+   "src": "ligero"
+  },
+  {
+   "name": "SumcheckV1",
+   "src": "sumcheck-v1"
+  },
+  {
+   "name": "SumcheckV2",
+   "src": "sumcheck-v2"
+  },
+  {
+   "name": "Merkle",
+   "src": "merkle"
+  },
+  {
+   "name": "Bcs",
+   "src": "bcs"
+  },
+  {
+   "name": "LfzkV1",
+   "src": "lfzk-v1"
+  },
+  {
+   "name": "LfzkV2",
+   "src": "lfzk-v2"
+  },
+  {
+   "name": "ECDSA",
+   "src": "circuits"
+  },
+  {
+   "name": "pk_circuit",
+   "src": "circuits/tests/ec"
+  },
+  {
+   "name": "RecursivePolygero",
+   "src": "."
+  },
+  {
+   "name": "RuntimeHahn",
+   "src": "parameters/hahn"
+  },
+  {
+   "name": "RustPolygeroProfiles",
+   "src": "parameters/polygero"
+  }
+ ],
+ "library_files": 828,
+ "capped": false,
+ "declarations": 8025,
+ "sorry_files": 0,
+ "axioms": 0,
+ "closure_files": 2,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": "main",
+ "headline_count": 4,
+ "headlines": [
+  {
+   "name": "JBAgreement.RSeval_apply",
+   "module": "JBAgreement.Main",
+   "file": "formal/ligero/JBAgreement/Main.lean",
+   "line": 26,
+   "kind": "lemma",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "JBAgreement.RSeval_line",
+   "module": "JBAgreement.Main",
+   "file": "formal/ligero/JBAgreement/Main.lean",
+   "line": 30,
+   "kind": "lemma",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "JBAgreement.correlatedAgreement_of_branch",
+   "module": "JBAgreement.Main",
+   "file": "formal/ligero/JBAgreement/Main.lean",
+   "line": 43,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Finset"
+   ]
+  },
+  {
+   "name": "JBAgreement.card_correlatedAgreement_set_ge",
+   "module": "JBAgreement.Main",
+   "file": "formal/ligero/JBAgreement/Main.lean",
+   "line": 57,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Finset"
+   ]
+  }
+ ],
+ "mathlib_imports": {
+  "Mathlib.Algebra.BigOperators.Field": 1,
+  "Mathlib.Algebra.BigOperators.Fin": 1,
+  "Mathlib.Algebra.BigOperators.Group.Finset.Piecewise": 1,
+  "Mathlib.Algebra.BigOperators.Intervals": 1,
+  "Mathlib.Algebra.BigOperators.Module": 1,
+  "Mathlib.Algebra.BigOperators.Ring.Finset": 9,
+  "Mathlib.Algebra.BigOperators.Ring.List": 1,
+  "Mathlib.Algebra.CharP.Lemmas": 1,
+  "Mathlib.Algebra.Group.Action.Defs": 2,
+  "Mathlib.Algebra.Module.Pi": 1,
+  "Mathlib.Algebra.Module.Submodule.Basic": 1,
+  "Mathlib.Algebra.Order.Archimedean.Real.Basic": 1,
+  "Mathlib.Algebra.Order.BigOperators.Group.Finset": 8,
+  "Mathlib.Algebra.Order.BigOperators.Ring.Finset": 1,
+  "Mathlib.Algebra.Order.Chebyshev": 1,
+  "Mathlib.Algebra.Order.Field.Basic": 1,
+  "Mathlib.Algebra.Order.Field.Rat": 4,
+  "Mathlib.Algebra.Order.Floor.Semiring": 1,
+  "Mathlib.Algebra.Order.Ring.Nat": 1,
+  "Mathlib.Algebra.Polynomial.BigOperators": 1,
+  "Mathlib.Algebra.Polynomial.Bivariate": 1,
+  "Mathlib.Algebra.Polynomial.Degree.Defs": 1,
+  "Mathlib.Algebra.Polynomial.Degree.SmallDegree": 1,
+  "Mathlib.Algebra.Polynomial.Degree.Support": 1,
+  "Mathlib.Algebra.Polynomial.Div": 2,
+  "Mathlib.Algebra.Polynomial.Eval.Defs": 1,
+  "Mathlib.Algebra.Polynomial.Eval.SMul": 1,
+  "Mathlib.Algebra.Polynomial.Expand": 1,
+  "Mathlib.Algebra.Polynomial.HasseDeriv": 1,
+  "Mathlib.Algebra.Polynomial.Identities": 1,
+  "Mathlib.Algebra.Polynomial.Roots": 5,
+  "Mathlib.Algebra.Polynomial.Taylor": 1,
+  "Mathlib.Combinatorics.Pigeonhole": 1,
+  "Mathlib.Data.Fin.Basic": 1,
+  "Mathlib.Data.Fin.Tuple.Basic": 1,
+  "Mathlib.Data.Finset.Card": 2,
+  "Mathlib.Data.Finset.Sort": 2,
+  "Mathlib.Data.Fintype.BigOperators": 6,
+  "Mathlib.Data.Fintype.Card": 4,
+  "Mathlib.Data.Fintype.EquivFin": 1,
+  "Mathlib.Data.Fintype.Fin": 1,
+  "Mathlib.Data.Fintype.Prod": 2,
+  "Mathlib.Data.Int.ConditionallyCompleteOrder": 1,
+  "Mathlib.Data.List.Basic": 1,
+  "Mathlib.Data.List.OfFn": 1,
+  "Mathlib.Data.Nat.Cast.Order.Field": 1,
+  "Mathlib.Data.Nat.Log": 1,
+  "Mathlib.Data.Nat.ModEq": 1,
+  "Mathlib.Data.Nat.SuccPred": 1,
+  "Mathlib.Data.Rat.BigOperators": 1,
+  "Mathlib.Data.Rat.Cast.Order": 5,
+  "Mathlib.Data.Rat.Floor": 1,
+  "Mathlib.Data.Real.Basic": 1,
+  "Mathlib.Data.Tree.Basic": 1,
+  "Mathlib.Data.ZMod.Basic": 1,
+  "Mathlib.FieldTheory.Finite.Extension": 1,
+  "Mathlib.FieldTheory.Finite.GaloisField": 1,
+  "Mathlib.FieldTheory.Finiteness": 2,
+  "Mathlib.LinearAlgebra.Basis.VectorSpace": 1,
+  "Mathlib.LinearAlgebra.Dimension.Finrank": 1,
+  "Mathlib.LinearAlgebra.FiniteDimensional.Lemmas": 1,
+  "Mathlib.LinearAlgebra.Lagrange": 8,
+  "Mathlib.LinearAlgebra.Quotient.Basic": 1,
+  "Mathlib.Logic.Equiv.Fin.Basic": 1,
+  "Mathlib.Logic.Equiv.Prod": 1,
+  "Mathlib.NumberTheory.LucasPrimality": 1,
+  "Mathlib.Order.Interval.Finset.Nat": 2,
+  "Mathlib.RingTheory.Ideal.Operations": 1,
+  "Mathlib.RingTheory.Nilpotent.Basic": 1,
+  "Mathlib.RingTheory.Polynomial.Basic": 1,
+  "Mathlib.RingTheory.Polynomial.DegreeLT": 1,
+  "Mathlib.RingTheory.Polynomial.GaussLemma": 1,
+  "Mathlib.RingTheory.Polynomial.Pochhammer": 1,
+  "Mathlib.RingTheory.Polynomial.Resultant.Basic": 1,
+  "Mathlib.Tactic": 10,
+  "Mathlib.Tactic.Abel": 1,
+  "Mathlib.Tactic.Common": 1,
+  "Mathlib.Tactic.DeriveFintype": 1,
+  "Mathlib.Tactic.FieldSimp": 7,
+  "Mathlib.Tactic.Linarith": 10,
+  "Mathlib.Tactic.Linarith.Frontend": 1,
+  "Mathlib.Tactic.LinearCombination": 3,
+  "Mathlib.Tactic.Module": 1,
+  "Mathlib.Tactic.NormNum": 1,
+  "Mathlib.Tactic.NormNum.Ineq": 1,
+  "Mathlib.Tactic.NormNum.Prime": 1,
+  "Mathlib.Tactic.Positivity": 3,
+  "Mathlib.Tactic.Ring": 9,
+  "Mathlib.Tactic.Ring.RingNF": 2,
+  "Mathlib.Tactic.SetNotationForOrder": 2,
+  "Mathlib.Topology.Defs.Basic": 1
+ },
+ "import_roots": {
+  "Init": 1,
+  "Lean": 9,
+  "Mathlib": 103
+ },
+ "uses": {
+  "Algebra": 1,
+  "CharP": 1,
+  "Field": 378,
+  "FiniteDimensional": 7,
+  "Finset": 374,
+  "Finset.card_powersetCard": 6,
+  "Ideal": 1,
+  "Irreducible": 5,
+  "IsCoprime": 3,
+  "Lagrange.interpolate": 4,
+  "Language": 1,
+  "LinearMap.ker": 6,
+  "LinearMap.range": 8,
+  "List": 388,
+  "Matrix": 1,
+  "Module": 7,
+  "MulAction": 1,
+  "Multiset": 1,
+  "MvPolynomial": 2,
+  "Nat": 23,
+  "Polynomial": 111,
+  "Polynomial.derivative": 1,
+  "Polynomial.dvd_iff_isRoot": 2,
+  "Polynomial.eval": 6,
+  "Polynomial.roots": 1,
+  "Prime": 2,
+  "Set": 8,
+  "Submodule.span": 4,
+  "UniqueFactorizationMonoid": 1,
+  "closure": 6,
+  "ringChar": 3
+ },
+ "ci": "SUCCESS"
+}

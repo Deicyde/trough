@@ -1,0 +1,113 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "Verified-zkEVM/clean",
+ "slug": "verified-zkevm--clean",
+ "rev": "71cd9a32ce2aa35a14115fa6b7a42377c58fb602",
+ "date": "2026-11-13T20:13:09Z",
+ "stable": "4573086ef6ac0bedc6f7b5a467699053ccf05e4da3381878ee1725b92ad646b3",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "MIT",
+  "file": "LICENSE",
+  "copyright": [
+   "Copyright (c) 2024-2025 zkSecurity, LLC"
+  ]
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Development",
+  "excerpt": null
+ },
+ "lean_files": 221,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.35.0",
+ "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+ "requirements": [
+  {
+   "name": "CompPoly",
+   "url": "https://github.com/Verified-zkEVM/CompPoly.git",
+   "rev": "06686e4c70939af82203af21516f8ab8a21a8051"
+  }
+ ],
+ "libraries": [
+  {
+   "name": "Clean",
+   "src": "."
+  },
+  {
+   "name": "CleanTests",
+   "src": "."
+  }
+ ],
+ "library_files": 220,
+ "capped": false,
+ "declarations": 3967,
+ "sorry_files": 1,
+ "axioms": 0,
+ "closure_files": 0,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": null,
+ "headline_count": 0,
+ "headlines": [],
+ "mathlib_imports": {
+  "Mathlib.Algebra.BigOperators.Fin": 1,
+  "Mathlib.Algebra.BigOperators.Group.Finset.Basic": 1,
+  "Mathlib.Algebra.BigOperators.Group.Finset.Piecewise": 1,
+  "Mathlib.Algebra.BigOperators.Ring.Finset": 1,
+  "Mathlib.Algebra.Field.Basic": 2,
+  "Mathlib.Algebra.Field.ZMod": 2,
+  "Mathlib.Algebra.Group.Nat.Defs": 1,
+  "Mathlib.Algebra.MvPolynomial.CommRing": 1,
+  "Mathlib.Algebra.MvPolynomial.NoZeroDivisors": 1,
+  "Mathlib.Algebra.Order.BigOperators.Group.Finset": 1,
+  "Mathlib.Algebra.Order.Star.Basic": 1,
+  "Mathlib.Analysis.Normed.Ring.Lemmas": 3,
+  "Mathlib.Basic.Logic.Basic": 1,
+  "Mathlib.Combinatorics.Enumerative.Composition": 1,
+  "Mathlib.Control.Monad.Writer": 1,
+  "Mathlib.Data.Fin.Basic": 2,
+  "Mathlib.Data.Finset.Basic": 1,
+  "Mathlib.Data.Finsupp.Defs": 1,
+  "Mathlib.Data.Fintype.Basic": 1,
+  "Mathlib.Data.Fintype.Prod": 1,
+  "Mathlib.Data.Int.Basic": 1,
+  "Mathlib.Data.Int.GCD": 1,
+  "Mathlib.Data.List.Basic": 1,
+  "Mathlib.Data.List.Sort": 1,
+  "Mathlib.Data.Nat.Basic": 1,
+  "Mathlib.Data.Nat.Bitwise": 4,
+  "Mathlib.Data.Nat.Prime.Defs": 1,
+  "Mathlib.Data.ZMod.Basic": 5,
+  "Mathlib.Init": 2,
+  "Mathlib.Lean.Meta.Simp": 1
+ },
+ "import_roots": {
+  "Batteries": 3,
+  "Clean": 1,
+  "CompPoly": 2,
+  "Init": 2,
+  "Lean": 17,
+  "Mathlib": 26,
+  "Std": 2
+ },
+ "uses": {
+  "Array": 35,
+  "Field": 8,
+  "Finset": 2,
+  "Int": 1,
+  "List": 68,
+  "Matrix": 2,
+  "Module": 3,
+  "MvPolynomial": 1,
+  "Nat": 7,
+  "Ring": 2,
+  "Std.HashMap": 3,
+  "ringChar": 3
+ },
+ "ci": "SUCCESS"
+}

@@ -1,0 +1,194 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "gdanezis/lean-dag",
+ "slug": "gdanezis--lean-dag",
+ "rev": "48aa36cc90afdf41b5cd64b92ebd5d2676a0c8fa",
+ "date": "2026-11-13T19:21:20Z",
+ "stable": "c4a3e52c2330031b9af2dff4bfeb1b0962896957ab66ed94da86514d99d883cc",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "MIT",
+  "file": "LICENSE",
+  "copyright": [
+   "Copyright (c) 2026 George Danezis (University College London)"
+  ]
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "lean-dag",
+  "excerpt": "A Lean 4 + Mathlib formalization of uncertified DAG consensus in the style of Mysticeti: the DAG itself, the commit rule, and machine-checked safety and liveness — together with further developments built on the same foundation, each in its own module consuming the core read-only."
+ },
+ "lean_files": 806,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.32.2",
+ "mathlib": "905b95818eb32af7874a58b427f50c1711a5e96c",
+ "requirements": [],
+ "libraries": [
+  {
+   "name": "LeanDag",
+   "src": "."
+  },
+  {
+   "name": "LeanDagTest",
+   "src": "."
+  }
+ ],
+ "library_files": 804,
+ "capped": false,
+ "declarations": 6878,
+ "sorry_files": 0,
+ "axioms": 0,
+ "closure_files": 72,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": "readme",
+ "headline_count": 17,
+ "headlines": [
+  {
+   "name": "LeanDag.ViewPace.commits_recur_local",
+   "module": "LeanDag.Mysticeti.ViewPace",
+   "file": "LeanDag/Mysticeti/ViewPace.lean",
+   "line": 534,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "LeanDag.dos_resistance",
+   "module": "LeanDag.DoS.Novelty",
+   "file": "LeanDag/DoS/Novelty.lean",
+   "line": 729,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Finset"
+   ]
+  },
+  {
+   "name": "LeanDag.ViewPace.exists_honest_floor",
+   "module": "LeanDag.Mysticeti.ViewPace",
+   "file": "LeanDag/Mysticeti/ViewPace.lean",
+   "line": 661,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "LeanDag.PaceCore.viewAt_ids",
+   "module": "LeanDag.Mysticeti.ViewPace",
+   "file": "LeanDag/Mysticeti/ViewPace.lean",
+   "line": 261,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "LeanDag.ViewPace.heldOf_inj",
+   "module": "LeanDag.Mysticeti.PaceDelivery",
+   "file": "LeanDag/Mysticeti/PaceDelivery.lean",
+   "line": 57,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Finset"
+   ]
+  },
+  {
+   "name": "LeanDag.ViewPace.dos_resistance_of_pace",
+   "module": "LeanDag.Mysticeti.PaceDelivery",
+   "file": "LeanDag/Mysticeti/PaceDelivery.lean",
+   "line": 151,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Finset"
+   ]
+  },
+  {
+   "name": "LeanDag.Barnacle.Agreement.holds",
+   "module": "LeanDag.Barnacle.Agreement.Proof",
+   "file": "LeanDag/Barnacle/Agreement/Proof.lean",
+   "line": 16,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "LeanDag.Barnacle.Progress.holds",
+   "module": "LeanDag.Barnacle.Progress.Proof",
+   "file": "LeanDag/Barnacle/Progress/Proof.lean",
+   "line": 17,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  }
+ ],
+ "mathlib_imports": {
+  "Mathlib.Algebra.BigOperators.Group.Finset.Basic": 2,
+  "Mathlib.Algebra.Group.Action.Defs": 5,
+  "Mathlib.Algebra.Order.BigOperators.Group.Finset": 6,
+  "Mathlib.Analysis.SpecificLimits.Basic": 4,
+  "Mathlib.Combinatorics.Enumerative.DoubleCounting": 4,
+  "Mathlib.Data.Fin.Basic": 1,
+  "Mathlib.Data.Fin.VecNotation": 2,
+  "Mathlib.Data.Finset.Basic": 2,
+  "Mathlib.Data.Finset.Card": 6,
+  "Mathlib.Data.Finset.Image": 1,
+  "Mathlib.Data.Finset.Lattice.Fold": 7,
+  "Mathlib.Data.Finset.Max": 11,
+  "Mathlib.Data.Finset.Powerset": 2,
+  "Mathlib.Data.Finset.Prod": 3,
+  "Mathlib.Data.Finset.Sort": 4,
+  "Mathlib.Data.Finset.Union": 3,
+  "Mathlib.Data.Fintype.BigOperators": 1,
+  "Mathlib.Data.Fintype.Card": 7,
+  "Mathlib.Data.Fintype.EquivFin": 1,
+  "Mathlib.Data.Fintype.Fin": 4,
+  "Mathlib.Data.Fintype.Powerset": 2,
+  "Mathlib.Data.List.Nodup": 2,
+  "Mathlib.Data.Nat.Basic": 2,
+  "Mathlib.Data.Nat.Choose.Basic": 1,
+  "Mathlib.Data.Nat.Find": 1,
+  "Mathlib.Data.Nat.Log": 1,
+  "Mathlib.Data.Nat.ModEq": 1,
+  "Mathlib.Data.Prod.Lex": 7,
+  "Mathlib.Data.Rat.BigOperators": 1,
+  "Mathlib.Data.Rat.Cast.Order": 1,
+  "Mathlib.Data.ZMod.Basic": 2,
+  "Mathlib.Logic.Function.Basic": 1,
+  "Mathlib.Logic.Relation": 2,
+  "Mathlib.Order.Basic": 1,
+  "Mathlib.Order.Filter.Basic": 1,
+  "Mathlib.Order.Interval.Finset.Nat": 12,
+  "Mathlib.Order.Monotone.Basic": 1,
+  "Mathlib.Probability.Distributions.Uniform": 6,
+  "Mathlib.Probability.ProductMeasure": 1,
+  "Mathlib.Tactic.ByContra": 1,
+  "Mathlib.Tactic.FinCases": 7,
+  "Mathlib.Tactic.IntervalCases": 16,
+  "Mathlib.Tactic.Linarith": 4,
+  "Mathlib.Tactic.Push": 1,
+  "Mathlib.Tactic.Ring": 6,
+  "Mathlib.Topology.Instances.ENNReal.Lemmas": 2
+ },
+ "import_roots": {
+  "Mathlib": 103
+ },
+ "uses": {
+  "Equiv.Perm": 9,
+  "Filter": 11,
+  "Filter.Tendsto": 8,
+  "Finset": 469,
+  "List": 52,
+  "MeasurableSet": 1,
+  "MeasurableSpace": 7,
+  "MeasureTheory.Measure": 1,
+  "Set": 7,
+  "ack": 5
+ },
+ "ci": "SUCCESS"
+}

@@ -1,0 +1,91 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "schildep/verified-3d-mesh-intersection",
+ "slug": "schildep--verified-3d-mesh-intersection",
+ "rev": "c537025f69511110108acc9608dc1cdb19025057",
+ "date": "2026-07-28T12:43:12Z",
+ "stable": "39bf0622e9570a74099104bf9e2d50b6b3cf426627f0d5608a36c956288dc19f",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "MIT",
+  "file": "LICENSE",
+  "copyright": [
+   "Copyright (c) 2026 P Schilde"
+  ]
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Formally verified 3D mesh intersection - trust 93 lines of spec, not 1000+ lines of AI-written code",
+  "excerpt": "To my knowledge, this is the first formally verified implementation of a 3D constructive solid geometry (CSG) operation: mesh intersection, implemented in Lean 4 and verified against [a concise specification](#background-and-formalization) that pins down the surface of the resulting mesh exactly and guarantees practical well-formedness conditions on the triangulation. (See also [related work](#related-work).)"
+ },
+ "lean_files": 200,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.15.0",
+ "mathlib": "e9ae2a61ef5c99d6edac84f0d04f6324c5d97f67",
+ "requirements": [],
+ "libraries": [
+  {
+   "name": "CSG",
+   "src": "."
+  },
+  {
+   "name": "Web",
+   "src": "."
+  }
+ ],
+ "library_files": 200,
+ "capped": false,
+ "declarations": 4244,
+ "sorry_files": 0,
+ "axioms": 0,
+ "closure_files": 0,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": null,
+ "headline_count": 0,
+ "headlines": [],
+ "mathlib_imports": {},
+ "import_roots": {
+  "Batteries": 1,
+  "Mathlib": 147,
+  "Std": 2
+ },
+ "uses": {
+  "AffineSubspace": 2,
+  "Array": 92,
+  "Continuous": 1,
+  "Convex": 23,
+  "Convex.helly_theorem": 1,
+  "FiniteDimensional": 2,
+  "Finset": 33,
+  "Fintype.exists_ne_map_eq_of_card_lt": 2,
+  "Int": 41,
+  "LinearIndependent": 11,
+  "LinearMap.ker": 8,
+  "LinearMap.range": 5,
+  "List": 70,
+  "Matrix": 16,
+  "Matrix.det": 1,
+  "Matrix.rank": 1,
+  "Module": 1,
+  "Module.Dual": 1,
+  "Multiset": 6,
+  "Nat": 53,
+  "Polynomial": 1,
+  "Rat": 24,
+  "Set": 59,
+  "Set.extremePoints": 4,
+  "Std.HashMap": 6,
+  "Submodule.span": 10,
+  "affineSpan": 7,
+  "closure": 1,
+  "convexHull": 18,
+  "convexHull_eq_union": 2,
+  "crossProduct": 10
+ },
+ "ci": null
+}

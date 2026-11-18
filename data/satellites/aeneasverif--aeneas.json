@@ -1,0 +1,100 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "AeneasVerif/aeneas",
+ "slug": "aeneasverif--aeneas",
+ "rev": "1dc8ad31b1b062a77c50e29144a6c7bba955fa09",
+ "date": "2026-11-14T20:28:16Z",
+ "stable": "072eb993075f95fbe2ce021fcebed8e0d3f69307781f2db085fd2ac803a92bbe",
+ "license": {
+  "files": [
+   "LICENSE.md"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE.md",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Aeneas",
+  "excerpt": "Aeneas (pronunced [Eh-nee-as]) is a verification toolchain for Rust programs. It relies on a translation from Rust's MIR internal language to a pure lambda calculus. It is intended to be used in combination with [Charon](https://github.com/AeneasVerif/charon), which compiles Rust programs to an intermediate representation called LLBC. It currently has backends for [F\\*](https://www.fstar-lang.org), [Coq](https://coq.inria.fr/), [HOL4](https://hol-theorem-prover.org/) and [LEAN](https://leanprover.github.io/)."
+ },
+ "lean_files": 418,
+ "admitted": true,
+ "folder": "backends/lean",
+ "toolchain": "v4.36.0-rc2",
+ "mathlib": "9d581dfff2e41de989072ea63abf3daf69311520",
+ "requirements": [],
+ "libraries": [
+  {
+   "name": "Aeneas",
+   "src": "."
+  },
+  {
+   "name": "AeneasMeta",
+   "src": "."
+  }
+ ],
+ "library_files": 272,
+ "capped": false,
+ "declarations": 3810,
+ "sorry_files": 8,
+ "axioms": 7,
+ "closure_files": 0,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "unclosed_files": 2,
+ "headline_rule": null,
+ "headline_count": 0,
+ "headlines": [],
+ "mathlib_imports": {
+  "Mathlib.Algebra.Algebra.ZMod": 2,
+  "Mathlib.Algebra.Group.Basic": 2,
+  "Mathlib.Algebra.Order.Floor.Div": 1,
+  "Mathlib.Algebra.Order.Ring.Canonical": 1,
+  "Mathlib.Algebra.Order.Sub.Basic": 1,
+  "Mathlib.Algebra.Order.Sub.Defs": 1,
+  "Mathlib.Control.Monad.Cont": 1,
+  "Mathlib.Data.BitVec": 10,
+  "Mathlib.Data.Fin.Basic": 1,
+  "Mathlib.Data.Int.Cast.Basic": 2,
+  "Mathlib.Data.Int.GCD": 1,
+  "Mathlib.Data.Int.Init": 1,
+  "Mathlib.Data.List.GetD": 1,
+  "Mathlib.Data.List.Monad": 1,
+  "Mathlib.Data.Nat.Basic": 4,
+  "Mathlib.Data.Nat.Bitwise": 3,
+  "Mathlib.Data.Nat.Cast.Basic": 1,
+  "Mathlib.Data.Nat.Log": 3,
+  "Mathlib.Data.ZMod.Basic": 1,
+  "Mathlib.Order.Basic": 2,
+  "Mathlib.Order.FixedPoints": 1,
+  "Mathlib.RingTheory.Int.Basic": 1,
+  "Mathlib.Tactic.Attr.Register": 2,
+  "Mathlib.Tactic.Basic": 2,
+  "Mathlib.Tactic.Core": 1,
+  "Mathlib.Tactic.DefEqTransformations": 1,
+  "Mathlib.Tactic.Linarith": 4,
+  "Mathlib.Tactic.OfNat": 1,
+  "Mathlib.Tactic.Ring": 1,
+  "Mathlib.Tactic.Ring.RingNF": 4,
+  "Mathlib.Tactic.Simproc.ExistsAndEq": 2,
+  "Mathlib.Tactic.Tauto": 1
+ },
+ "import_roots": {
+  "Batteries": 1,
+  "Init": 15,
+  "Lean": 57,
+  "Mathlib": 41,
+  "Std": 1
+ },
+ "uses": {
+  "Array": 48,
+  "Field": 1,
+  "Int": 25,
+  "List": 45,
+  "Nat": 96,
+  "Set": 2,
+  "Std.HashMap": 7
+ },
+ "ci": "SUCCESS"
+}

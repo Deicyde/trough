@@ -27,24 +27,15 @@
  "libraries": [
   {
    "name": "BlockBand",
-   "src": ".",
-   "roots": [
-    "BlockBand"
-   ]
+   "src": "."
   },
   {
    "name": "BlockBandChallenge",
-   "src": "Challenge",
-   "roots": [
-    "BlockBandChallenge"
-   ]
+   "src": "Challenge"
   },
   {
    "name": "BlockBandSolution",
-   "src": "Solution",
-   "roots": [
-    "BlockBandSolution"
-   ]
+   "src": "Solution"
   }
  ],
  "library_files": 5000,
@@ -592,7 +583,6 @@
   "Mathlib.Topology.UrysohnsLemma": 1
  },
  "import_roots": {
-  "BlockBand": 4773,
   "Lean": 10,
   "Mathlib": 955
  },

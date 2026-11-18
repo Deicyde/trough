@@ -27,31 +27,19 @@
  "libraries": [
   {
    "name": "JPointsModel",
-   "src": ".",
-   "roots": [
-    "JPoints.Model"
-   ]
+   "src": "."
   },
   {
    "name": "JPoints",
-   "src": ".",
-   "roots": [
-    "JPoints"
-   ]
+   "src": "."
   },
   {
    "name": "Challenge",
-   "src": "comparator",
-   "roots": [
-    "Challenge"
-   ]
+   "src": "comparator"
   },
   {
    "name": "Solution",
-   "src": "comparator",
-   "roots": [
-    "Solution"
-   ]
+   "src": "comparator"
   }
  ],
  "library_files": 128,
@@ -62,7 +50,7 @@
  "closure_files": 122,
  "closure_sorry": [],
  "closure_axioms": 0,
- "unclosed_files": 1,
+ "unclosed_files": 0,
  "headline_rule": "blueprint",
  "headline_count": 5,
  "headlines": [
@@ -208,7 +196,6 @@
   "Mathlib.Topology.Order.IntermediateValue": 1
  },
  "import_roots": {
-  "JPoints": 94,
   "Mathlib": 78,
   "Std": 35
  },

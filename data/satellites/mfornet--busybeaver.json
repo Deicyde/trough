@@ -33,45 +33,27 @@
  "libraries": [
   {
    "name": "Busybeaver",
-   "src": ".",
-   "roots": [
-    "Busybeaver"
-   ]
+   "src": "."
   },
   {
    "name": "Witness",
-   "src": ".",
-   "roots": [
-    "Witness"
-   ]
+   "src": "."
   },
   {
    "name": "BBTheorems",
-   "src": ".",
-   "roots": [
-    "BBTheorems"
-   ]
+   "src": "."
   },
   {
    "name": "Skelet1Fast",
-   "src": ".",
-   "roots": [
-    "Skelet1Fast"
-   ]
+   "src": "."
   },
   {
    "name": "Skelet1Kernel",
-   "src": ".",
-   "roots": [
-    "Skelet1Kernel"
-   ]
+   "src": "."
   },
   {
    "name": "Skelet1Cert",
-   "src": ".",
-   "roots": [
-    "Skelet1Cert"
-   ]
+   "src": "."
   }
  ],
  "library_files": 94,
@@ -132,9 +114,7 @@
   "Mathlib.Tactic.Ring": 8
  },
  "import_roots": {
-  "BBTheorems": 5,
   "Batteries": 1,
-  "Busybeaver": 84,
   "Cli": 1,
   "Init": 1,
   "Lean": 3,
@@ -142,8 +122,7 @@
   "Mathlib": 13,
   "SQLite": 1,
   "Skelet1Cert": 1,
-  "Std": 4,
-  "Witness": 3
+  "Std": 4
  },
  "uses": {
   "Array": 16,

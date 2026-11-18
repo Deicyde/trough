@@ -1,0 +1,99 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "LayerZero-Labs/jolt-qed",
+ "slug": "layerzero-labs--jolt-qed",
+ "rev": "abd88dfdf64833469c5bfc9b3a0f9647b2d61633",
+ "date": "2026-11-17T16:40:49Z",
+ "stable": "276b692fd7589e824bee725f33233589193d6ba6f5988bf00f028de85b1bae88",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Jolt Qed: Formally Verifying The Jolt Zk-VM",
+  "excerpt": "This repository contains proofs written using the Lean theorem proving assistant, towards formally verifying the completeness and soundness of the [Jolt zk-VM](https://github.com/a16z/jolt). The project is _still on-going_, and as Jolt is relatively complex, we logically decompose the task of formally verifying Jolt into the components shown below. Blocks in green are complete. Blocks in yellow are in-progress and, greyed out boxes are not yet started. Explicit details about each component, trust assumptions, and current progress can be found [here](https://randomwalks.xyz/blog/jolt-qed/)."
+ },
+ "lean_files": 726,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.35.0",
+ "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+ "requirements": [
+  {
+   "name": "Sail",
+   "url": "https://github.com/rems-project/lean-sail",
+   "rev": "1e5b216bf881ef08da160db63b44ecda430802d6"
+  }
+ ],
+ "libraries": [
+  {
+   "name": "JoltBytecode",
+   "src": "."
+  },
+  {
+   "name": "JoltConstraints",
+   "src": "."
+  },
+  {
+   "name": "LeanRV64D",
+   "src": "."
+  }
+ ],
+ "library_files": 725,
+ "capped": false,
+ "declarations": 8122,
+ "sorry_files": 7,
+ "axioms": 75,
+ "closure_files": 0,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": null,
+ "headline_count": 0,
+ "headlines": [],
+ "mathlib_imports": {
+  "Mathlib.Algebra.BigOperators.Group.Finset.Basic": 23,
+  "Mathlib.Algebra.BigOperators.Group.Finset.Piecewise": 2,
+  "Mathlib.Algebra.BigOperators.GroupWithZero.Finset": 1,
+  "Mathlib.Algebra.BigOperators.Ring.Finset": 1,
+  "Mathlib.Algebra.CharP.Basic": 1,
+  "Mathlib.Algebra.CharP.Defs": 2,
+  "Mathlib.Algebra.Field.Defs": 77,
+  "Mathlib.Data.BitVec": 3,
+  "Mathlib.Data.Fin.Basic": 1,
+  "Mathlib.Data.Fintype.Basic": 1,
+  "Mathlib.Data.Fintype.BigOperators": 1,
+  "Mathlib.Data.Fintype.Card": 2,
+  "Mathlib.Data.Fintype.EquivFin": 1,
+  "Mathlib.Data.Fintype.Fin": 4,
+  "Mathlib.Data.Int.Cast.Lemmas": 1,
+  "Mathlib.Data.Nat.Bitwise": 4,
+  "Mathlib.Data.Nat.GCD.Basic": 1,
+  "Mathlib.Data.Nat.Log": 3,
+  "Mathlib.Tactic": 6,
+  "Mathlib.Tactic.DeriveFintype": 2,
+  "Mathlib.Tactic.FinCases": 1,
+  "Mathlib.Tactic.IntervalCases": 3,
+  "Mathlib.Tactic.Ring": 2
+ },
+ "import_roots": {
+  "Batteries": 3,
+  "Init": 1,
+  "Mathlib": 105,
+  "Sail": 53
+ },
+ "uses": {
+  "Array": 63,
+  "Field": 308,
+  "Int": 94,
+  "List": 37,
+  "Nat": 249,
+  "ringChar": 82
+ },
+ "ci": "SUCCESS"
+}

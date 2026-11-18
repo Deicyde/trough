@@ -1,0 +1,102 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "AxiomMath/HigherDyson3",
+ "slug": "axiommath--higherdyson3",
+ "rev": "1ac34d8d93279abed3204f7a63e87d8236599346",
+ "date": "2026-11-07T06:24:59Z",
+ "stable": "6eee22c2535828fd4b3d28a89816fb7f05aae22fabe916f3a14c29327e322af3",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Beyond Mock Modularity: Elliptic Corrections for Higher Dyson Ranks",
+  "excerpt": "This is a Lean formalization of the paper of Alfes, Ono and Swaminathan on higher Dyson ranks and the elliptic corrections to their generating functions. Every numbered result of the paper is proved; the main results are listed below."
+ },
+ "lean_files": 151,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.34.0",
+ "mathlib": "5ed2965256430c3649e86755f9576b54eca72435",
+ "requirements": [],
+ "libraries": [
+  {
+   "name": "HigherDyson3",
+   "src": "."
+  },
+  {
+   "name": "Challenge",
+   "src": "."
+  },
+  {
+   "name": "Solution",
+   "src": "."
+  }
+ ],
+ "library_files": 151,
+ "capped": false,
+ "declarations": 681,
+ "sorry_files": 1,
+ "axioms": 0,
+ "closure_files": 0,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": null,
+ "headline_count": 0,
+ "headlines": [],
+ "mathlib_imports": {
+  "Mathlib.Analysis.Complex.LocallyUniformLimit": 1,
+  "Mathlib.Analysis.SpecialFunctions.Log.Summable": 1
+ },
+ "import_roots": {
+  "Mathlib": 7
+ },
+ "uses": {
+  "AnalyticAt": 6,
+  "CompleteSpace": 2,
+  "Complex": 61,
+  "Complex.exp": 6,
+  "Complex.two_pi_I_inv_smul_circleIntegral_sub_inv_smul_of_differentiable_on_off_countable": 1,
+  "Continuous": 15,
+  "Differentiable": 16,
+  "DifferentiableOn": 48,
+  "DifferentiableOn.analyticAt": 1,
+  "Filter": 46,
+  "Filter.Tendsto": 38,
+  "Finset": 64,
+  "HasDerivAt": 2,
+  "HasSum": 7,
+  "Int.ModEq": 1,
+  "IsCompact": 29,
+  "LinearIndependent": 1,
+  "Matrix": 1,
+  "Matrix.mulVec_cramer": 1,
+  "MeasureTheory.Integrable": 1,
+  "MeasureTheory.Measure": 1,
+  "Metric.ball": 38,
+  "Metric.isOpen_iff": 2,
+  "MetricSpace": 1,
+  "Module": 1,
+  "Multiset": 5,
+  "Polynomial": 14,
+  "Polynomial.cyclotomic": 1,
+  "Polynomial.eval": 1,
+  "PowerSeries": 15,
+  "Real.exp": 13,
+  "Real.log": 2,
+  "Set": 48,
+  "Submodule.span": 1,
+  "Summable.of_norm": 3,
+  "closure": 2,
+  "fourierCoeff": 1,
+  "norm_add_le": 5,
+  "tsum_geometric_of_norm_lt_one": 2
+ },
+ "ci": "SUCCESS"
+}

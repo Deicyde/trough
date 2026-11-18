@@ -1,0 +1,89 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "reilabs/lampe",
+ "slug": "reilabs--lampe",
+ "rev": "3d7668f749711083425e1905d4dd1850c0b39f52",
+ "date": "2026-10-21T12:02:15Z",
+ "stable": "cfbad1941a4aadf9e2792d09edebb43500b258537f2125326514dd2665e4a32d",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Lampe",
+  "excerpt": "This project contains a model of [Noir's](https://noir-lang.org) semantics in the [Lean](https://lean-lang.org) programming language and theorem prover. The aim is to support the formal verification of both the Noir language semantics and the properties of programs written in Noir."
+ },
+ "lean_files": 365,
+ "admitted": true,
+ "folder": "Lampe",
+ "toolchain": "v4.29.1",
+ "mathlib": "5e932f97dd25535344f80f9dd8da3aab83df0fe6",
+ "requirements": [],
+ "libraries": [
+  {
+   "name": "Lampe",
+   "src": "."
+  },
+  {
+   "name": "Tests",
+   "src": "."
+  }
+ ],
+ "library_files": 100,
+ "capped": false,
+ "declarations": 1208,
+ "sorry_files": 2,
+ "axioms": 0,
+ "closure_files": 0,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": null,
+ "headline_count": 0,
+ "headlines": [],
+ "mathlib_imports": {
+  "Mathlib.Algebra.Algebra.ZMod": 1,
+  "Mathlib.Algebra.Field.ZMod": 4,
+  "Mathlib.Algebra.PEmptyInstances": 1,
+  "Mathlib.AlgebraicGeometry.EllipticCurve.Affine.Point": 1,
+  "Mathlib.Data.Finmap": 1,
+  "Mathlib.Data.Fintype.Basic": 1,
+  "Mathlib.Data.Vector.Defs": 1,
+  "Mathlib.Data.Vector.Snoc": 1,
+  "Mathlib.FieldTheory.Finite.Basic": 2,
+  "Mathlib.NumberTheory.LucasPrimality": 3,
+  "Mathlib.Order.Defs.LinearOrder": 1,
+  "Mathlib.Tactic": 1,
+  "Mathlib.Tactic.CasesM": 1,
+  "Mathlib.Tactic.FinCases": 1,
+  "Mathlib.Tactic.Lemma": 2,
+  "Mathlib.Tactic.Linarith": 1,
+  "Mathlib.Tactic.NormNum.Prime": 3,
+  "Mathlib.Tactic.Ring": 2,
+  "Mathlib.Tactic.Tauto": 1,
+  "Mathlib.Tactic.Use": 1
+ },
+ "import_roots": {
+  "Batteries": 1,
+  "Lean": 16,
+  "Mathlib": 19,
+  "Qq": 1,
+  "Std": 1
+ },
+ "uses": {
+  "Array": 19,
+  "Field": 13,
+  "Finmap": 3,
+  "Int": 5,
+  "List": 25,
+  "Nat": 37,
+  "Prime": 29,
+  "ringChar": 1
+ },
+ "ci": "SUCCESS"
+}

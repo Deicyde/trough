@@ -19,3 +19,4 @@ The docstrings, Lean statements, API maps and README text are quoted from [leanp
 - [Physlib](physlib/README.md)
 - [PhyslibAlpha](physlibalpha/README.md)
 - [QuantumInfo](quantuminfo/README.md)
+- [Projects building on Physlib: The Lean Physics Library (1)](projects/README.md)

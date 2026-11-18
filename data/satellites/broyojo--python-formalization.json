@@ -1,0 +1,65 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "Broyojo/python-formalization",
+ "slug": "broyojo--python-formalization",
+ "rev": "6eaf6979bc96a9041346dcc8f6c982a5669c6ba0",
+ "date": "2026-11-17T22:27:38Z",
+ "stable": "d0d133b05cecf1593c6442a1ed37f4605374418fea8d6028d3512c611f11474e",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "python-formalization",
+  "excerpt": "A Lean 4 model of CPython 3.15.2, written by AI agents, tested against the real interpreter, and reviewed function by function. Along the way it found hundreds of bugs in CPython."
+ },
+ "lean_files": 1544,
+ "admitted": true,
+ "folder": "lean",
+ "toolchain": "v4.35.0",
+ "mathlib": "",
+ "requirements": [],
+ "libraries": [
+  {
+   "name": "PyLean",
+   "src": "."
+  }
+ ],
+ "library_files": 1541,
+ "capped": false,
+ "declarations": 46334,
+ "sorry_files": 15,
+ "axioms": 0,
+ "closure_files": 0,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": null,
+ "headline_count": 0,
+ "headlines": [],
+ "mathlib_imports": {},
+ "import_roots": {
+  "Lean": 6
+ },
+ "uses": {
+  "Array": 103,
+  "Complex": 1,
+  "Field": 5,
+  "Filter": 6,
+  "Group": 1,
+  "Int": 1036,
+  "List": 1242,
+  "Module": 1,
+  "Nat": 1313,
+  "Rat": 70,
+  "Real": 1,
+  "Set": 1,
+  "closure": 3
+ },
+ "ci": "SUCCESS"
+}

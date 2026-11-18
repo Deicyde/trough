@@ -1,0 +1,166 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "mit-pdos/perennial",
+ "slug": "mit-pdos--perennial",
+ "rev": "6d365ee1aac396061ed93e644a7f5aa53228ced9",
+ "date": "2026-11-17T19:40:27Z",
+ "stable": "1b00193775a5b760e45c42829a3963c7e86e4eb7693d8a200cea35c254def39a",
+ "license": {
+  "files": [],
+  "spdx": null,
+  "file": null,
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Perennial",
+  "excerpt": null
+ },
+ "lean_files": 1682,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.34.1",
+ "mathlib": "",
+ "requirements": [
+  {
+   "name": "iris",
+   "url": "https://github.com/leanprover-community/iris-lean",
+   "rev": "6d6544a4394c1f89ce43b26a35f09de9b2158bc9"
+  }
+ ],
+ "libraries": [
+  {
+   "name": "Perennial",
+   "src": "."
+  },
+  {
+   "name": "PerennialMeta",
+   "src": "."
+  }
+ ],
+ "library_files": 1645,
+ "capped": false,
+ "declarations": 30246,
+ "sorry_files": 15,
+ "axioms": 3722,
+ "closure_files": 332,
+ "closure_sorry": [
+  "Perennial/GeneratedProof/strings.lean"
+ ],
+ "closure_axioms": 21,
+ "unclosed_files": 0,
+ "headline_rule": "readme",
+ "headline_count": 10,
+ "headlines": [
+  {
+   "name": "Perennial.goose_crash_adequacy",
+   "module": "Perennial.GooseLang.CrashAdequacy",
+   "file": "Perennial/GooseLang/CrashAdequacy.lean",
+   "line": 440,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "List",
+    "Nat"
+   ]
+  },
+  {
+   "name": "Perennial.github_com.mit_pdos.perennial.goose.testdata.examples.crashfs.crash_safety",
+   "module": "Perennial.Proof.github_com.mit_pdos.perennial.goose.testdata.examples.crashfs.Results",
+   "file": "Perennial/Proof/github_com/mit_pdos/perennial/goose/testdata/examples/crashfs/Results.lean",
+   "line": 143,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "List",
+    "Nat"
+   ]
+  },
+  {
+   "name": "Perennial.goose_dist_adequacy",
+   "module": "Perennial.GooseLang.DistAdequacy",
+   "file": "Perennial/GooseLang/DistAdequacy.lean",
+   "line": 466,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "List",
+    "Nat"
+   ]
+  },
+  {
+   "name": "Perennial.goose_dist_crash_adequacy",
+   "module": "Perennial.GooseLang.DistAdequacy",
+   "file": "Perennial/GooseLang/DistAdequacy.lean",
+   "line": 744,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "List",
+    "Nat"
+   ]
+  },
+  {
+   "name": "Perennial.github_com.mit_pdos.perennial.goose.testdata.examples.netfs.netfs_crash_safety",
+   "module": "Perennial.Proof.github_com.mit_pdos.perennial.goose.testdata.examples.netfs.Results",
+   "file": "Perennial/Proof/github_com/mit_pdos/perennial/goose/testdata/examples/netfs/Results.lean",
+   "line": 329,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "List",
+    "Nat"
+   ]
+  },
+  {
+   "name": "Perennial.TimeReceiptsTest.wp_clock_incr",
+   "module": "Perennial.ProgramLogic.TimeReceiptsTest",
+   "file": "Perennial/ProgramLogic/TimeReceiptsTest.lean",
+   "line": 74,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Nat"
+   ]
+  },
+  {
+   "name": "Perennial.ThreadTokensTest.wp_counter_register",
+   "module": "Perennial.ProgramLogic.ThreadTokensTest",
+   "file": "Perennial/ProgramLogic/ThreadTokensTest.lean",
+   "line": 106,
+   "kind": "theorem",
+   "sorry": false,
+   "names": [
+    "Nat"
+   ]
+  },
+  {
+   "name": "Perennial.strings.wp_Join",
+   "module": "Perennial.Proof.strings.Link",
+   "file": "Perennial/Proof/strings/Link.lean",
+   "line": 38,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  }
+ ],
+ "mathlib_imports": {},
+ "import_roots": {
+  "Batteries": 1,
+  "Iris": 30,
+  "Lean": 9,
+  "Perennial": 16,
+  "Std": 1
+ },
+ "uses": {
+  "Array": 10,
+  "Int": 143,
+  "Language": 1,
+  "List": 294,
+  "Nat": 162,
+  "Prime": 1,
+  "Rat": 8,
+  "Std.HashMap": 4
+ },
+ "ci": null
+}

@@ -1,0 +1,308 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "dpwoodru/general-courtade-kumar-lean",
+ "slug": "dpwoodru--general-courtade-kumar-lean",
+ "rev": "68cd46b433a1003f06a5c3ee39df2af1a4a314e1",
+ "date": "2026-10-15T12:47:38Z",
+ "stable": "efede62ca733d734c52b8a193aacd0f486911f2248241cb56bc37adc75193e53",
+ "license": {
+  "files": [
+   "LICENSE",
+   "LICENSES/Apache-2.0.txt"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "The General Courtade–Kumar theorem in Lean 4",
+  "excerpt": "This repository contains a complete, machine-checked Lean 4 proof of the general Courtade–Kumar inequality: for every n, every Boolean function f on {0,1}ⁿ and every crossover probability p ∈ [0, 1], the mutual information between f(X) and the output Y of a binary symmetric channel with crossover p satisfies I(f(X); Y) ≤ 1 − H(p)."
+ },
+ "lean_files": 45510,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.33.1",
+ "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+ "requirements": [],
+ "libraries": [
+  {
+   "name": "CKLaneA",
+   "src": "."
+  },
+  {
+   "name": "CKLaneA1",
+   "src": "."
+  },
+  {
+   "name": "CKLaneA2",
+   "src": "."
+  },
+  {
+   "name": "CKLaneA3V",
+   "src": "."
+  },
+  {
+   "name": "CKLaneA3W",
+   "src": "."
+  },
+  {
+   "name": "CKLaneA3X",
+   "src": "."
+  },
+  {
+   "name": "CKLaneA4",
+   "src": "."
+  },
+  {
+   "name": "CKLaneA5",
+   "src": "."
+  },
+  {
+   "name": "CKLaneC",
+   "src": "."
+  },
+  {
+   "name": "CKLaneC2",
+   "src": "."
+  },
+  {
+   "name": "CKLaneC2R",
+   "src": "."
+  },
+  {
+   "name": "CKLaneC3",
+   "src": "."
+  },
+  {
+   "name": "CKLaneD",
+   "src": "."
+  },
+  {
+   "name": "CKLaneE",
+   "src": "."
+  },
+  {
+   "name": "CKLaneG1",
+   "src": "."
+  },
+  {
+   "name": "CKLaneG3",
+   "src": "."
+  },
+  {
+   "name": "CKLaneM03",
+   "src": "."
+  },
+  {
+   "name": "CKLaneM04",
+   "src": "."
+  },
+  {
+   "name": "CKLaneM05",
+   "src": "."
+  },
+  {
+   "name": "CKLaneM06",
+   "src": "."
+  },
+  {
+   "name": "CKLaneM07",
+   "src": "."
+  },
+  {
+   "name": "CKLaneM08",
+   "src": "."
+  },
+  {
+   "name": "CKLaneM09",
+   "src": "."
+  },
+  {
+   "name": "CKLaneM1",
+   "src": "."
+  },
+  {
+   "name": "CKLaneM10",
+   "src": "."
+  },
+  {
+   "name": "CKLaneM11",
+   "src": "."
+  },
+  {
+   "name": "CKLaneM2",
+   "src": "."
+  },
+  {
+   "name": "CKLaneN1",
+   "src": "."
+  },
+  {
+   "name": "CKLaneN1b",
+   "src": "."
+  },
+  {
+   "name": "CKLaneN1c",
+   "src": "."
+  },
+  {
+   "name": "CKLaneN23",
+   "src": "."
+  },
+  {
+   "name": "CKLaneN4",
+   "src": "."
+  },
+  {
+   "name": "CKLaneN6",
+   "src": "."
+  },
+  {
+   "name": "CKLaneP",
+   "src": "."
+  },
+  {
+   "name": "CKLaneR2",
+   "src": "."
+  },
+  {
+   "name": "CKRoute",
+   "src": "."
+  },
+  {
+   "name": "E8BoundedArgumentJets",
+   "src": "."
+  },
+  {
+   "name": "E8CompactCertificate",
+   "src": "."
+  },
+  {
+   "name": "E8CompactInterval",
+   "src": "."
+  },
+  {
+   "name": "E8CompactQuadraticSign",
+   "src": "."
+  },
+  {
+   "name": "E8CompactTaylor",
+   "src": "."
+  },
+  {
+   "name": "E8EntropyQuotientBound",
+   "src": "."
+  },
+  {
+   "name": "E8GlobalRatioCertificate",
+   "src": "."
+  },
+  {
+   "name": "E8InitialInterval",
+   "src": "."
+  },
+  {
+   "name": "E8LargeTFinal",
+   "src": "."
+  },
+  {
+   "name": "E8MiddleCertificate",
+   "src": "."
+  },
+  {
+   "name": "E8PadeAnalyticHelpers",
+   "src": "."
+  },
+  {
+   "name": "E8PadeTail",
+   "src": "."
+  },
+  {
+   "name": "E8QuadraticThreshold",
+   "src": "."
+  },
+  {
+   "name": "E8RatioFactor",
+   "src": "."
+  },
+  {
+   "name": "E8RatioMonotonicity",
+   "src": "."
+  },
+  {
+   "name": "E8StableRatio",
+   "src": "."
+  },
+  {
+   "name": "E8TailElevenNineAlgebra",
+   "src": "."
+  },
+  {
+   "name": "E8TailElevenNineDerivatives",
+   "src": "."
+  },
+  {
+   "name": "E8TailElevenNineParameters",
+   "src": "."
+  },
+  {
+   "name": "E8TightArgumentJets",
+   "src": "."
+  },
+  {
+   "name": "GeneralCK",
+   "src": "."
+  },
+  {
+   "name": "FinalCheck",
+   "src": "."
+  },
+  {
+   "name": "CKChallenge",
+   "src": "verification/comparator"
+  }
+ ],
+ "library_files": 5000,
+ "capped": true,
+ "declarations": 338936,
+ "sorry_files": 0,
+ "axioms": 0,
+ "closure_files": 0,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": null,
+ "headline_count": 0,
+ "headlines": [],
+ "mathlib_imports": {
+  "Mathlib.Analysis.Calculus.SmoothSeries": 1,
+  "Mathlib.Analysis.Complex.ExponentialBounds": 1,
+  "Mathlib.Analysis.Convex.Deriv": 1,
+  "Mathlib.Analysis.SpecialFunctions.Log.Base": 1,
+  "Mathlib.Analysis.SpecialFunctions.Log.Basic": 2,
+  "Mathlib.Analysis.SpecialFunctions.Log.Deriv": 3,
+  "Mathlib.Analysis.SpecialFunctions.Pow.Real": 1,
+  "Mathlib.Analysis.SpecialFunctions.Trigonometric.ArctanDeriv": 1,
+  "Mathlib.Analysis.SpecialFunctions.Trigonometric.DerivHyp": 1,
+  "Mathlib.Analysis.SpecificLimits.Normed": 1,
+  "Mathlib.Tactic": 1
+ },
+ "import_roots": {
+  "Mathlib": 15
+ },
+ "uses": {
+  "ConvexOn": 2,
+  "Finset": 14,
+  "HasDerivAt": 20,
+  "HasSum": 1,
+  "Int": 8,
+  "List": 1153,
+  "Nat": 1,
+  "Real": 3,
+  "Real.exp": 2,
+  "Real.log": 99,
+  "Set": 34
+ },
+ "ci": null
+}

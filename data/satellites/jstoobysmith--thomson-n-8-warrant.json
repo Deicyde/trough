@@ -1,0 +1,156 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "jstoobysmith/Thomson-N-8-Warrant",
+ "slug": "jstoobysmith--thomson-n-8-warrant",
+ "rev": "2c35d62e07d72686931da4bc3e062d668e858eda",
+ "date": "2026-09-28T09:11:56Z",
+ "stable": "676b2463573d6a375b78f11cc4d73af58df4ee6d34ca00522957b8cd519b4ad0",
+ "license": {
+  "files": [],
+  "spdx": null,
+  "file": null,
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "A warrant for the N = 8 Thomson problem, in Lean 4",
+  "excerpt": null
+ },
+ "lean_files": 837,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.33.0",
+ "mathlib": "db584cd6d46c92f209a44c0f1c829460d327499d",
+ "requirements": [],
+ "libraries": [
+  {
+   "name": "Thomson",
+   "src": "."
+  },
+  {
+   "name": "Pivots",
+   "src": "."
+  },
+  {
+   "name": "PSD",
+   "src": "."
+  },
+  {
+   "name": "Pair",
+   "src": "."
+  },
+  {
+   "name": "TriangleLocal",
+   "src": "."
+  },
+  {
+   "name": "TriangleGlobal",
+   "src": "."
+  },
+  {
+   "name": "Complete",
+   "src": "."
+  },
+  {
+   "name": "Thomson8",
+   "src": "."
+  },
+  {
+   "name": "Challenge",
+   "src": "."
+  },
+  {
+   "name": "Solution",
+   "src": "."
+  }
+ ],
+ "library_files": 836,
+ "capped": false,
+ "declarations": 39381,
+ "sorry_files": 1,
+ "axioms": 0,
+ "closure_files": 133,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": "main",
+ "headline_count": 5,
+ "headlines": [
+  {
+   "name": "Thomson.thomson_eight_lower_of_cert",
+   "module": "Thomson.Main",
+   "file": "Thomson/Main.lean",
+   "line": 16,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "Thomson.thomson_eight_lower_of_tasks",
+   "module": "Thomson.Main",
+   "file": "Thomson/Main.lean",
+   "line": 37,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "Thomson.thomson_eight_of_tasks",
+   "module": "Thomson.Main",
+   "file": "Thomson/Main.lean",
+   "line": 42,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "Thomson.thomsonInf_mem_Ioc",
+   "module": "Thomson.Main",
+   "file": "Thomson/Main.lean",
+   "line": 48,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  },
+  {
+   "name": "Thomson.thomson_eight_gap",
+   "module": "Thomson.Main",
+   "file": "Thomson/Main.lean",
+   "line": 54,
+   "kind": "theorem",
+   "sorry": false,
+   "names": []
+  }
+ ],
+ "mathlib_imports": {},
+ "import_roots": {
+  "Mathlib": 21
+ },
+ "uses": {
+  "Array": 1,
+  "ContDiff": 4,
+  "Continuous": 3,
+  "Differentiable": 5,
+  "Equiv.Perm": 8,
+  "Filter": 1,
+  "FiniteDimensional": 1,
+  "Finset": 37,
+  "HasDerivAt": 20,
+  "HasFDerivAt": 4,
+  "InnerProductSpace": 2,
+  "IsCompact": 1,
+  "IsSelfAdjoint": 1,
+  "LinearIndependent": 1,
+  "LinearMap.ker": 1,
+  "LinearMap.range": 1,
+  "List": 67,
+  "Matrix": 24,
+  "Module": 1,
+  "NormedSpace": 1,
+  "Real.sin": 1,
+  "Set": 14,
+  "add_pow": 1,
+  "fderiv": 4
+ },
+ "ci": null
+}

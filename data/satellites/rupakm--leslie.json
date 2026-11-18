@@ -1,0 +1,105 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "rupakm/leslie",
+ "slug": "rupakm--leslie",
+ "rev": "58e58b2502b2a570e4ce4fdb6b40748c3cb30e5d",
+ "date": "2026-06-08T23:17:21Z",
+ "stable": "97dd649eb0a30a67a433dc42fe056adab94ffc3e3b5d109f031ec7d56deac1d5",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "Leslie: TLA in Lean 4",
+  "excerpt": "Leslie is a shallow embedding of the Temporal Logic of Actions (TLA) in Lean 4. It provides a framework for specifying and verifying concurrent and distributed systems with machine-checked proofs."
+ },
+ "lean_files": 166,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.27.0",
+ "mathlib": "a3a10db0e9d66acbebf76c5e6a135066525ac900",
+ "requirements": [
+  {
+   "name": "lintLlmProofs",
+   "url": "https://github.com/jessealama/lint-llm-proofs",
+   "rev": "d1d57fbca40375c670790ff472ea34caad60586e"
+  }
+ ],
+ "libraries": [
+  {
+   "name": "Leslie",
+   "src": "."
+  }
+ ],
+ "library_files": 166,
+ "capped": false,
+ "declarations": 3312,
+ "sorry_files": 3,
+ "axioms": 0,
+ "closure_files": 0,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": null,
+ "headline_count": 0,
+ "headlines": [],
+ "mathlib_imports": {
+  "Mathlib.Algebra.Field.Basic": 1,
+  "Mathlib.Algebra.Polynomial.Basic": 1,
+  "Mathlib.Data.Countable.Basic": 5,
+  "Mathlib.Data.Countable.Defs": 4,
+  "Mathlib.Data.Fintype.Basic": 4,
+  "Mathlib.Data.Fintype.Card": 1,
+  "Mathlib.Data.Fintype.EquivFin": 1,
+  "Mathlib.Data.Fintype.Pi": 5,
+  "Mathlib.Data.Fintype.Sigma": 5,
+  "Mathlib.Data.Fintype.Sum": 5,
+  "Mathlib.Data.Set.Basic": 1,
+  "Mathlib.LinearAlgebra.Lagrange": 1,
+  "Mathlib.MeasureTheory.Integral.Marginal": 1,
+  "Mathlib.MeasureTheory.Measure.GiryMonad": 1,
+  "Mathlib.Probability.Distributions.Uniform": 2,
+  "Mathlib.Probability.Kernel.IonescuTulcea.Traj": 5,
+  "Mathlib.Probability.Martingale.Basic": 1,
+  "Mathlib.Probability.Martingale.Convergence": 1,
+  "Mathlib.Probability.ProbabilityMassFunction.Constructions": 1,
+  "Mathlib.Probability.Process.Filtration": 1,
+  "Mathlib.Probability.ProductMeasure": 3
+ },
+ "import_roots": {
+  "Aesop": 1,
+  "Batteries": 4,
+  "Lean": 9,
+  "Mathlib": 16,
+  "«Leslie»": 1
+ },
+ "uses": {
+  "Array": 4,
+  "Field": 8,
+  "Filter": 4,
+  "Filter.Tendsto": 1,
+  "Finset": 11,
+  "Int": 1,
+  "Lagrange.interpolate": 1,
+  "List": 47,
+  "Measurable": 12,
+  "MeasurableSet": 7,
+  "MeasurableSpace": 17,
+  "MeasureTheory.IsProbabilityMeasure": 15,
+  "MeasureTheory.Measure": 16,
+  "MeasureTheory.Measure.pi": 1,
+  "Nat": 116,
+  "PMF": 12,
+  "Polynomial": 2,
+  "Polynomial.eval": 2,
+  "ProbabilityTheory.Kernel.traj": 2,
+  "Set": 14,
+  "ack": 1
+ },
+ "ci": null
+}

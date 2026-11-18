@@ -1,0 +1,193 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "google-deepmind/code-verification",
+ "slug": "google-deepmind--code-verification",
+ "rev": "b0f729accbc21a0413e7ca4e1da43fa45b5f2e1b",
+ "date": "2026-11-11T15:43:55Z",
+ "stable": "963944231b478302edd86c385f75a56716c7910b00d10b62241620bf4173244e",
+ "license": {
+  "files": [
+   "LICENSE"
+  ],
+  "spdx": null,
+  "file": null,
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "License",
+  "excerpt": null
+ },
+ "lean_files": 11370,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.34.0",
+ "mathlib": "5ed2965256430c3649e86755f9576b54eca72435",
+ "requirements": [
+  {
+   "name": "dylean",
+   "url": "https://github.com/BobDyLean/dylean",
+   "rev": "74b1b2db1f188ba97d84d87637a6d2709a4e7508"
+  },
+  {
+   "name": "VCVio",
+   "url": "https://github.com/Verified-zkEVM/VCVio",
+   "rev": "967fdf2eae87e86127ca309cc941745c8334f6fe"
+  },
+  {
+   "name": "«arm64-semantics»",
+   "url": "arm64-semantics",
+   "rev": ""
+  },
+  {
+   "name": "«cv-input-facet»",
+   "url": "scripts/lake-facets",
+   "rev": ""
+  }
+ ],
+ "libraries": [
+  {
+   "name": "LibsignalBinary",
+   "src": "."
+  },
+  {
+   "name": "LibsignalBinaryCryptoGames",
+   "src": "."
+  },
+  {
+   "name": "Symbolic",
+   "src": "."
+  },
+  {
+   "name": "LibsignalSpqrV1Spec",
+   "src": "."
+  },
+  {
+   "name": "LibsignalSpqrV1Proofs",
+   "src": "."
+  },
+  {
+   "name": "LibsignalSymbolic",
+   "src": "."
+  },
+  {
+   "name": "ExplanationTightness",
+   "src": "."
+  },
+  {
+   "name": "LibsignalRefinement",
+   "src": "."
+  },
+  {
+   "name": "BugInjection",
+   "src": "."
+  },
+  {
+   "name": "BugInjectionDisproofs",
+   "src": "."
+  },
+  {
+   "name": "GeneratedLean",
+   "src": "."
+  },
+  {
+   "name": "Computational",
+   "src": "."
+  },
+  {
+   "name": "ComputationalTests",
+   "src": "."
+  },
+  {
+   "name": "ComputationalCryptoGames",
+   "src": "."
+  },
+  {
+   "name": "LibsignalTestVectors",
+   "src": "third_party/libsignal/test-vectors"
+  },
+  {
+   "name": "ComparatorChallenge",
+   "src": "comparator"
+  },
+  {
+   "name": "ComparatorSolution",
+   "src": "comparator"
+  },
+  {
+   "name": "ComputationalKat",
+   "src": "."
+  },
+  {
+   "name": "CliElfLib",
+   "src": "."
+  }
+ ],
+ "library_files": 5000,
+ "capped": true,
+ "declarations": 96663,
+ "sorry_files": 0,
+ "axioms": 0,
+ "closure_files": 0,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "unclosed_files": 1,
+ "headline_rule": null,
+ "headline_count": 0,
+ "headlines": [],
+ "mathlib_imports": {
+  "Mathlib.Algebra.Group.Int.Defs": 1,
+  "Mathlib.Algebra.Group.Nat.Defs": 6,
+  "Mathlib.Algebra.Order.Ring.Star": 6,
+  "Mathlib.Control.Monad.Writer": 1,
+  "Mathlib.Data.List.Dedup": 1,
+  "Mathlib.Data.List.Forall2": 2,
+  "Mathlib.Data.Nat.Log": 2,
+  "Mathlib.Data.Nat.Notation": 2,
+  "Mathlib.MeasureTheory.Integral.Bochner.Basic": 80,
+  "Mathlib.MeasureTheory.Integral.Lebesgue.Add": 2,
+  "Mathlib.NumberTheory.LucasPrimality": 1,
+  "Mathlib.Tactic.Attr.Core": 3,
+  "Mathlib.Tactic.Attr.Register": 1,
+  "Mathlib.Tactic.Basic": 7,
+  "Mathlib.Tactic.Linarith": 5,
+  "Mathlib.Tactic.NormNum.Prime": 1,
+  "Mathlib.Tactic.Ring": 8,
+  "Mathlib.Tactic.Simps": 4,
+  "Mathlib.Tactic.ToAdditive": 12,
+  "Mathlib.Tactic.ToDual": 17
+ },
+ "import_roots": {
+  "Aesop": 21,
+  "Arm64": 1087,
+  "GeneratedLean": 912,
+  "Init": 114,
+  "Lean": 131,
+  "Mathlib": 107,
+  "ProofLib": 1773,
+  "Std": 11,
+  "ToMathlib": 8,
+  "VCVio": 433,
+  "VerifiedLibraries": 82
+ },
+ "uses": {
+  "Array": 101,
+  "Finset": 21,
+  "Finset.sum_range_id": 1,
+  "Ideal": 2,
+  "Int": 19,
+  "List": 3691,
+  "Measurable": 1,
+  "MeasurableSet": 3,
+  "MeasurableSpace": 76,
+  "MeasureTheory.IsProbabilityMeasure": 13,
+  "MeasureTheory.Measure": 27,
+  "MeasureTheory.ae": 12,
+  "Nat": 2568,
+  "Set": 16,
+  "Std.HashMap": 8,
+  "ack": 11,
+  "closure": 1
+ },
+ "ci": null
+}

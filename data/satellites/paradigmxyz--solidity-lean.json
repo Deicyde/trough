@@ -1,0 +1,79 @@
+{
+ "schema": "trough-satellites/v1",
+ "repo": "paradigmxyz/solidity-lean",
+ "slug": "paradigmxyz--solidity-lean",
+ "rev": "3db5032a35a104dec14602169aea927936f82f19",
+ "date": "2026-11-15T10:02:20Z",
+ "stable": "13b06124041abda94535b581cb085019fc9b4964d8b46cffa0f6e7a1ac6fde52",
+ "license": {
+  "files": [
+   "LICENSE-APACHE",
+   "LICENSE-MIT"
+  ],
+  "spdx": "Apache-2.0",
+  "file": "LICENSE-APACHE",
+  "copyright": []
+ },
+ "readme": {
+  "file": "README.md",
+  "title": "solidity-lean — a machine-checked Solidity semantics (SolidCore)",
+  "excerpt": "**SolidCore** is an executable, machine-checked semantics of Solidity written in [Lean 4](https://lean-lang.org/). It typechecks, lowers, and *runs* real single-contract Solidity programs inside Lean, and its behavior is continuously validated against the reference toolchain: **pinned `solc` 0.8.35 + the real EVM** (via [Foundry](https://github.com/foundry-rs/foundry))."
+ },
+ "lean_files": 231,
+ "admitted": true,
+ "folder": "",
+ "toolchain": "v4.28.0",
+ "mathlib": "8f9d9cff6bd728b17a24e163c9402775d9e6a365",
+ "requirements": [
+  {
+   "name": "evmyul",
+   "url": "https://github.com/danrobinson/EVMYulLean.git",
+   "rev": "b08573c65e33feb5331abe2b7c1d76be89bb8eff"
+  },
+  {
+   "name": "«evm-interaction»",
+   "url": "https://github.com/danrobinson/evm-interaction.git",
+   "rev": "c939817c55f966dab97e1ba8df05ceca1fdfbdb2"
+  }
+ ],
+ "libraries": [
+  {
+   "name": "SolidCore",
+   "src": "."
+  },
+  {
+   "name": "SolidCoreStatementLowering",
+   "src": "."
+  },
+  {
+   "name": "SolidCoreWitness",
+   "src": "."
+  }
+ ],
+ "library_files": 224,
+ "capped": false,
+ "declarations": 11442,
+ "sorry_files": 2,
+ "axioms": 0,
+ "closure_files": 0,
+ "closure_sorry": [],
+ "closure_axioms": 0,
+ "unclosed_files": 0,
+ "headline_rule": null,
+ "headline_count": 0,
+ "headlines": [],
+ "mathlib_imports": {},
+ "import_roots": {
+  "EvmInteraction": 1,
+  "EvmYul": 3,
+  "Std": 1
+ },
+ "uses": {
+  "Array": 2,
+  "Int": 7,
+  "List": 134,
+  "Nat": 58,
+  "Std.HashMap": 1
+ },
+ "ci": null
+}
