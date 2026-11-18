@@ -28,8 +28,8 @@ EuclideanGeometry.mul_dist_eq_mul_dist_of_cospherical_of_angle_eq_zero.{u_1, u_2
 ## Sources
 
 - [Mathlib documentation: `EuclideanGeometry.mul_dist_eq_mul_dist_of_cospherical_of_angle_eq_zero`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Geometry/Euclidean/Sphere/Power.html#EuclideanGeometry.mul_dist_eq_mul_dist_of_cospherical_of_angle_eq_zero)
-- [Source of `EuclideanGeometry.mul_dist_eq_mul_dist_of_cospherical_of_angle_eq_zero` in Mathlib/Geometry/Euclidean/Sphere/Power.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Geometry/Euclidean/Sphere/Power.lean#L208)
-- [1000+ theorems list: Q1727461](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L1854)
+- [Source of `EuclideanGeometry.mul_dist_eq_mul_dist_of_cospherical_of_angle_eq_zero` in Mathlib/Geometry/Euclidean/Sphere/Power.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Geometry/Euclidean/Sphere/Power.lean#L208)
+- [1000+ theorems list: Q1727461](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/1000.yaml#L1857)
 - [1000+ theorems project: Q1727461](https://1000-plus.github.io/all.html?length=-1#Q1727461)
 - [Wikipedia: Intersecting secants theorem](https://en.wikipedia.org/wiki/Intersecting_secants_theorem)
 - [Wikidata: Q1727461](https://www.wikidata.org/wiki/Q1727461)

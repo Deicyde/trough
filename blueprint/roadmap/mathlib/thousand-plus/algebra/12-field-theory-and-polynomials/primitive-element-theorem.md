@@ -26,8 +26,8 @@ Field.exists_primitive_element.{u_1, u_2} (F : Type u_1) (E : Type u_2) [Field F
 ## Sources
 
 - [Mathlib documentation: `Field.exists_primitive_element`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/FieldTheory/PrimitiveElement.html#Field.exists_primitive_element)
-- [Source of `Field.exists_primitive_element` in Mathlib/FieldTheory/PrimitiveElement.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/FieldTheory/PrimitiveElement.lean#L206)
-- [1000+ theorems list: Q2093886](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L2007)
+- [Source of `Field.exists_primitive_element` in Mathlib/FieldTheory/PrimitiveElement.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/FieldTheory/PrimitiveElement.lean#L205)
+- [1000+ theorems list: Q2093886](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/1000.yaml#L2010)
 - [1000+ theorems project: Q2093886](https://1000-plus.github.io/all.html?length=-1#Q2093886)
 - [Wikipedia: Primitive element theorem](https://en.wikipedia.org/wiki/Primitive_element_theorem)
 - [Wikidata: Q2093886](https://www.wikidata.org/wiki/Q2093886)

@@ -27,5 +27,5 @@ fderiv_mul.{u_1, u_2, u_5} {𝕜 : Type u_1} [NontriviallyNormedField 𝕜] {E :
 ## Sources
 
 - [Mathlib documentation: `fderiv_mul`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Calculus/FDeriv/Mul.html#fderiv_mul)
-- [Source of `fderiv_mul` in Mathlib/Analysis/Calculus/FDeriv/Mul.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/Calculus/FDeriv/Mul.lean#L266)
-- [Mathlib overview: Analysis › Differentiability](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L314)
+- [Source of `fderiv_mul` in Mathlib/Analysis/Calculus/FDeriv/Mul.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Analysis/Calculus/FDeriv/Mul.lean#L266)
+- [Mathlib overview: Analysis › Differentiability](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L314)

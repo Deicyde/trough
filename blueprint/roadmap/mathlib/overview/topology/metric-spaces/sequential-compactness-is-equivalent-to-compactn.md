@@ -22,6 +22,6 @@ isCompact_iff_isSeqCompact.{u_1} {X : Type u_1} [TopologicalSpace X]
 ## Sources
 
 - [Mathlib documentation: `isCompact_iff_isSeqCompact`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/Sequences.html#isCompact_iff_isSeqCompact)
-- [Source of `isCompact_iff_isSeqCompact` in Mathlib/Topology/Sequences.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Topology/Sequences.lean#L413)
-- [Mathlib overview: Topology › Metric spaces](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L262)
-- [Mathlib undergraduate list: Topology › Topology and Metric Spaces](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L413)
+- [Source of `isCompact_iff_isSeqCompact` in Mathlib/Topology/Sequences.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Topology/Sequences.lean#L413)
+- [Mathlib overview: Topology › Metric spaces](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L262)
+- [Mathlib undergraduate list: Topology › Topology and Metric Spaces](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/undergrad.yaml#L413)

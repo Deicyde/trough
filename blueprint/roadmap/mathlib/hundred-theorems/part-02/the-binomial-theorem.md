@@ -15,9 +15,9 @@ add_pow.{u_1} {R : Type u_1} [CommSemiring R] (x y : R) (n : ℕ) :
 ## Sources
 
 - [Mathlib documentation: `add_pow`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Data/Nat/Choose/Sum.html#add_pow)
-- [Source of `add_pow` in Mathlib/Data/Nat/Choose/Sum.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Data/Nat/Choose/Sum.lean#L75)
-- [Freek Wiedijk's 100 theorems, no. 44](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/100.yaml#L235)
-- [1000+ theorems list: Q26708](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L22)
+- [Source of `add_pow` in Mathlib/Data/Nat/Choose/Sum.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Data/Nat/Choose/Sum.lean#L75)
+- [Freek Wiedijk's 100 theorems, no. 44](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/100.yaml#L235)
+- [1000+ theorems list: Q26708](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/1000.yaml#L22)
 - [1000+ theorems project: Q26708](https://1000-plus.github.io/all.html?length=-1#Q26708)
 - [Wikipedia: Binomial theorem](https://en.wikipedia.org/wiki/Binomial_theorem)
 - [Wikidata: Q26708](https://www.wikidata.org/wiki/Q26708)

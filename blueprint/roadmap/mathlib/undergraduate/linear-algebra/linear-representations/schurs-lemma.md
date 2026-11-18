@@ -28,5 +28,5 @@ FDRep.finrank_hom_simple_simple.{u, v} {k : Type u} {G : Type v} [Field k] [Mono
 ## Sources
 
 - [Mathlib documentation: `FDRep.finrank_hom_simple_simple`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/RepresentationTheory/FDRep.html#FDRep.finrank_hom_simple_simple)
-- [Source of `FDRep.finrank_hom_simple_simple` in Mathlib/RepresentationTheory/FDRep.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/RepresentationTheory/FDRep.lean#L155)
-- [Mathlib undergraduate list: Linear algebra › Linear representations](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L70)
+- [Source of `FDRep.finrank_hom_simple_simple` in Mathlib/RepresentationTheory/FDRep.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/RepresentationTheory/FDRep.lean#L154)
+- [Mathlib undergraduate list: Linear algebra › Linear representations](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/undergrad.yaml#L70)

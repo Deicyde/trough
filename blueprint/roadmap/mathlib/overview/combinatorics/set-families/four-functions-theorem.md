@@ -22,9 +22,9 @@ four_functions_theorem.{u_1, u_2} {α : Type u_1} {β : Type u_2} [DistribLattic
 ## Sources
 
 - [Mathlib documentation: `four_functions_theorem`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Combinatorics/SetFamily/FourFunctions.html#four_functions_theorem)
-- [Source of `four_functions_theorem` in Mathlib/Combinatorics/SetFamily/FourFunctions.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Combinatorics/SetFamily/FourFunctions.lean#L302)
-- [Mathlib overview: Combinatorics › Set families](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L509)
-- [1000+ theorems list: Q4695203](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L2776)
+- [Source of `four_functions_theorem` in Mathlib/Combinatorics/SetFamily/FourFunctions.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Combinatorics/SetFamily/FourFunctions.lean#L302)
+- [Mathlib overview: Combinatorics › Set families](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L509)
+- [1000+ theorems list: Q4695203](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/1000.yaml#L2779)
 - [1000+ theorems project: Q4695203](https://1000-plus.github.io/all.html?length=-1#Q4695203)
 - [Wikipedia: Four functions theorem](https://en.wikipedia.org/wiki/Four_functions_theorem)
 - [Wikidata: Q4695203](https://www.wikidata.org/wiki/Q4695203)

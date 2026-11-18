@@ -25,5 +25,5 @@ QuadraticForm.equivalent_weightedSumSquares_of_isAlgClosed.{u_2, u_3} {K : Type 
 ## Sources
 
 - [Mathlib documentation: `QuadraticForm.equivalent_weightedSumSquares_of_isAlgClosed`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra/QuadraticForm/AlgClosed.html#QuadraticForm.equivalent_weightedSumSquares_of_isAlgClosed)
-- [Source of `QuadraticForm.equivalent_weightedSumSquares_of_isAlgClosed` in Mathlib/LinearAlgebra/QuadraticForm/AlgClosed.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/LinearAlgebra/QuadraticForm/AlgClosed.lean#L50)
-- [Mathlib undergraduate list: Bilinear and Quadratic Forms Over a Vector Space › Orthogonality](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L212)
+- [Source of `QuadraticForm.equivalent_weightedSumSquares_of_isAlgClosed` in Mathlib/LinearAlgebra/QuadraticForm/AlgClosed.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/LinearAlgebra/QuadraticForm/AlgClosed.lean#L50)
+- [Mathlib undergraduate list: Bilinear and Quadratic Forms Over a Vector Space › Orthogonality](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/undergrad.yaml#L212)

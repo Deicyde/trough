@@ -15,5 +15,5 @@ ChartedSpace.discreteTopology.{u, u_2} (H : Type u) (M : Type u_2) [TopologicalS
 ## Sources
 
 - [Mathlib documentation: `ChartedSpace.discreteTopology`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Geometry/Manifold/ChartedSpace.html#ChartedSpace.discreteTopology)
-- [Source of `ChartedSpace.discreteTopology` in Mathlib/Geometry/Manifold/ChartedSpace.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Geometry/Manifold/ChartedSpace.lean#L318)
-- [Mathlib overview: Geometry › Differentiable manifolds](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L464)
+- [Source of `ChartedSpace.discreteTopology` in Mathlib/Geometry/Manifold/ChartedSpace.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Geometry/Manifold/ChartedSpace.lean#L318)
+- [Mathlib overview: Geometry › Differentiable manifolds](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L464)

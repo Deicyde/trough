@@ -22,8 +22,8 @@ EuclideanGeometry.dist_sq_mul_dist_add_dist_sq_mul_dist.{u_1, u_2} {V : Type u_1
 ## Sources
 
 - [Mathlib documentation: `EuclideanGeometry.dist_sq_mul_dist_add_dist_sq_mul_dist`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Geometry/Euclidean/Triangle.html#EuclideanGeometry.dist_sq_mul_dist_add_dist_sq_mul_dist)
-- [Source of `EuclideanGeometry.dist_sq_mul_dist_add_dist_sq_mul_dist` in Mathlib/Geometry/Euclidean/Triangle.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Geometry/Euclidean/Triangle.lean#L382)
-- [1000+ theorems list: Q739403](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L815)
+- [Source of `EuclideanGeometry.dist_sq_mul_dist_add_dist_sq_mul_dist` in Mathlib/Geometry/Euclidean/Triangle.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Geometry/Euclidean/Triangle.lean#L381)
+- [1000+ theorems list: Q739403](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/1000.yaml#L818)
 - [1000+ theorems project: Q739403](https://1000-plus.github.io/all.html?length=-1#Q739403)
 - [Wikipedia: Stewart's theorem](https://en.wikipedia.org/wiki/Stewart's_theorem)
 - [Wikidata: Q739403](https://www.wikidata.org/wiki/Q739403)

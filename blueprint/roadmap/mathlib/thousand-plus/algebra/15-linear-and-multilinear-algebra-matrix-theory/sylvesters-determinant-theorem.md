@@ -20,8 +20,8 @@ Matrix.det_one_add_mul_comm.{u_2, u_3, u_4} {m : Type u_2} {n : Type u_3} {α : 
 ## Sources
 
 - [Mathlib documentation: `Matrix.det_one_add_mul_comm`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra/Matrix/SchurComplement.html#Matrix.det_one_add_mul_comm)
-- [Source of `Matrix.det_one_add_mul_comm` in Mathlib/LinearAlgebra/Matrix/SchurComplement.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/LinearAlgebra/Matrix/SchurComplement.lean#L398)
-- [1000+ theorems list: Q7660749](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L3879)
+- [Source of `Matrix.det_one_add_mul_comm` in Mathlib/LinearAlgebra/Matrix/SchurComplement.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/LinearAlgebra/Matrix/SchurComplement.lean#L397)
+- [1000+ theorems list: Q7660749](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/1000.yaml#L3882)
 - [1000+ theorems project: Q7660749](https://1000-plus.github.io/all.html?length=-1#Q7660749)
 - [Wikipedia: Sylvester's determinant theorem](https://en.wikipedia.org/wiki/Sylvester's_determinant_theorem)
 - [Wikidata: Q7660749](https://www.wikidata.org/wiki/Q7660749)

@@ -17,5 +17,5 @@ Its statement uses no other concept on these lists.
 ## Sources
 
 - [Mathlib documentation: `Set`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Data/Set/Defs.html#Set)
-- [Source of `Set` in Mathlib/Data/Set/Defs.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Data/Set/Defs.lean#L42)
-- [Mathlib overview: Data structures › Sets](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L579)
+- [Source of `Set` in Mathlib/Data/Set/Defs.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Data/Set/Defs.lean#L41)
+- [Mathlib overview: Data structures › Sets](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L579)

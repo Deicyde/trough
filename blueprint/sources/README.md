@@ -4,7 +4,7 @@ Trough reads these sources. The catalog of libraries is `catalog/libraries.toml`
 
 ## Mathlib's curated lists
 
-- `data/mathlib/yaml/`: docs/overview.yaml, docs/undergrad.yaml, docs/100.yaml and docs/1000.yaml from [leanprover-community/mathlib4 at 9bac2d06](https://github.com/leanprover-community/mathlib4/tree/9bac2d0692944a775113f7c130fd5e5b4608a854/docs), Apache-2.0.
+- `data/mathlib/yaml/`: docs/overview.yaml, docs/undergrad.yaml, docs/100.yaml and docs/1000.yaml from [leanprover-community/mathlib4 at 15cf10d1](https://github.com/leanprover-community/mathlib4/tree/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs), Apache-2.0.
 - `data/mathlib/concept-deps.json`: each listed declaration's kind, docstring, signature and nearest listed dependencies, written by `lean/ConceptDeps.lean` in GitHub Actions.
 - `data/thousand-plus.json`: subject classification and Wikipedia pages of the 1000+ theorems, from [1000-plus/1000-plus.github.io](https://github.com/1000-plus/1000-plus.github.io) at 8e04b97d, released into the public domain.
 

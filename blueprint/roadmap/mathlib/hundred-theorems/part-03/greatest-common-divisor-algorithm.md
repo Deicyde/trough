@@ -31,9 +31,9 @@ EuclideanDomain.dvd_gcd.{u} {R : Type u} [EuclideanDomain R] [DecidableEq R] {a 
 ## Sources
 
 - [Mathlib documentation: `EuclideanDomain.gcd`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/EuclideanDomain/Defs.html#EuclideanDomain.gcd)
-- [Source of `EuclideanDomain.gcd` in Mathlib/Algebra/EuclideanDomain/Defs.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Algebra/EuclideanDomain/Defs.lean#L178)
+- [Source of `EuclideanDomain.gcd` in Mathlib/Algebra/EuclideanDomain/Defs.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Algebra/EuclideanDomain/Defs.lean#L178)
 - [Mathlib documentation: `EuclideanDomain.gcd_dvd`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/EuclideanDomain/Basic.html#EuclideanDomain.gcd_dvd)
-- [Source of `EuclideanDomain.gcd_dvd` in Mathlib/Algebra/EuclideanDomain/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Algebra/EuclideanDomain/Basic.lean#L137)
+- [Source of `EuclideanDomain.gcd_dvd` in Mathlib/Algebra/EuclideanDomain/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Algebra/EuclideanDomain/Basic.lean#L136)
 - [Mathlib documentation: `EuclideanDomain.dvd_gcd`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Algebra/EuclideanDomain/Basic.html#EuclideanDomain.dvd_gcd)
-- [Source of `EuclideanDomain.dvd_gcd` in Mathlib/Algebra/EuclideanDomain/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Algebra/EuclideanDomain/Basic.lean#L157)
-- [Freek Wiedijk's 100 theorems, no. 69](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/100.yaml#L347)
+- [Source of `EuclideanDomain.dvd_gcd` in Mathlib/Algebra/EuclideanDomain/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Algebra/EuclideanDomain/Basic.lean#L156)
+- [Freek Wiedijk's 100 theorems, no. 69](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/100.yaml#L347)

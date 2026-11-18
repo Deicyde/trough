@@ -36,10 +36,10 @@ MeasureTheory.AddContent.measure_eq.{u_1} {α : Type u_1} {C : Set (Set α)} {s 
 ## Sources
 
 - [Mathlib documentation: `MeasureTheory.AddContent.measure`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/OuterMeasure/OfAddContent.html#MeasureTheory.AddContent.measure)
-- [Source of `MeasureTheory.AddContent.measure` in Mathlib/MeasureTheory/OuterMeasure/OfAddContent.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/MeasureTheory/OuterMeasure/OfAddContent.lean#L160)
+- [Source of `MeasureTheory.AddContent.measure` in Mathlib/MeasureTheory/OuterMeasure/OfAddContent.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/MeasureTheory/OuterMeasure/OfAddContent.lean#L160)
 - [Mathlib documentation: `MeasureTheory.AddContent.measure_eq`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/MeasureTheory/OuterMeasure/OfAddContent.html#MeasureTheory.AddContent.measure_eq)
-- [Source of `MeasureTheory.AddContent.measure_eq` in Mathlib/MeasureTheory/OuterMeasure/OfAddContent.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/MeasureTheory/OuterMeasure/OfAddContent.lean#L169)
-- [1000+ theorems list: Q2631152](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L2274)
+- [Source of `MeasureTheory.AddContent.measure_eq` in Mathlib/MeasureTheory/OuterMeasure/OfAddContent.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/MeasureTheory/OuterMeasure/OfAddContent.lean#L169)
+- [1000+ theorems list: Q2631152](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/1000.yaml#L2277)
 - [1000+ theorems project: Q2631152](https://1000-plus.github.io/all.html?length=-1#Q2631152)
 - [Wikipedia: Carathéodory's extension theorem](https://en.wikipedia.org/wiki/Carath%C3%A9odory's_extension_theorem)
 - [Wikidata: Q2631152](https://www.wikidata.org/wiki/Q2631152)

@@ -19,6 +19,6 @@ Lagrange.interpolate.{u_1, u_2} {F : Type u_1} [Field F] {ι : Type u_2} [Decida
 ## Sources
 
 - [Mathlib documentation: `Lagrange.interpolate`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra/Lagrange.html#Lagrange.interpolate)
-- [Source of `Lagrange.interpolate` in Mathlib/LinearAlgebra/Lagrange.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/LinearAlgebra/Lagrange.lean#L294)
-- [Mathlib undergraduate list: Numerical Analysis › Approximation of numerical functions](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L666)
-- [Mathlib undergraduate list: Numerical Analysis › Approximation of numerical functions](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L667)
+- [Source of `Lagrange.interpolate` in Mathlib/LinearAlgebra/Lagrange.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/LinearAlgebra/Lagrange.lean#L294)
+- [Mathlib undergraduate list: Numerical Analysis › Approximation of numerical functions](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/undergrad.yaml#L666)
+- [Mathlib undergraduate list: Numerical Analysis › Approximation of numerical functions](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/undergrad.yaml#L667)

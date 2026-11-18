@@ -20,8 +20,8 @@ Order.iso_of_countable_dense.{u_1, u_2} (α : Type u_1) (β : Type u_2) [LinearO
 ## Sources
 
 - [Mathlib documentation: `Order.iso_of_countable_dense`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Order/CountableDenseLinearOrder.html#Order.iso_of_countable_dense)
-- [Source of `Order.iso_of_countable_dense` in Mathlib/Order/CountableDenseLinearOrder.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Order/CountableDenseLinearOrder.lean#L244)
-- [1000+ theorems list: Q107710112](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L4292)
+- [Source of `Order.iso_of_countable_dense` in Mathlib/Order/CountableDenseLinearOrder.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Order/CountableDenseLinearOrder.lean#L244)
+- [1000+ theorems list: Q107710112](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/1000.yaml#L4295)
 - [1000+ theorems project: Q107710112](https://1000-plus.github.io/all.html?length=-1#Q107710112)
 - [Wikipedia: Cantor's isomorphism theorem](https://en.wikipedia.org/wiki/Cantor's_isomorphism_theorem)
 - [Wikidata: Q107710112](https://www.wikidata.org/wiki/Q107710112)

@@ -17,8 +17,8 @@ This is the prime ideal separation theorem for (bounded) distributive lattices, 
 ## Sources
 
 - [Mathlib documentation: `DistribLattice.prime_ideal_of_disjoint_filter_ideal`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Order/PrimeSeparator.html#DistribLattice.prime_ideal_of_disjoint_filter_ideal)
-- [Source of `DistribLattice.prime_ideal_of_disjoint_filter_ideal` in Mathlib/Order/PrimeSeparator.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Order/PrimeSeparator.lean#L46)
-- [1000+ theorems list: Q872088](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L1025)
+- [Source of `DistribLattice.prime_ideal_of_disjoint_filter_ideal` in Mathlib/Order/PrimeSeparator.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Order/PrimeSeparator.lean#L46)
+- [1000+ theorems list: Q872088](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/1000.yaml#L1028)
 - [1000+ theorems project: Q872088](https://1000-plus.github.io/all.html?length=-1#Q872088)
 - [Wikipedia: Boolean prime ideal theorem](https://en.wikipedia.org/wiki/Boolean_prime_ideal_theorem)
 - [Wikidata: Q872088](https://www.wikidata.org/wiki/Q872088)

@@ -34,6 +34,6 @@ LinearMap.IsSymmetric.eigenvectorBasis_apply_self_apply.{u_1, u_2} {𝕜 : Type 
 ## Sources
 
 - [Mathlib documentation: `LinearMap.IsSymmetric.eigenvectorBasis_apply_self_apply`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/InnerProductSpace/Spectrum.html#LinearMap.IsSymmetric.eigenvectorBasis_apply_self_apply)
-- [Source of `LinearMap.IsSymmetric.eigenvectorBasis_apply_self_apply` in Mathlib/Analysis/InnerProductSpace/Spectrum.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/InnerProductSpace/Spectrum.lean#L323)
-- [Mathlib overview: Linear algebra › Finite-dimensional inner product spaces (see also Hilbert spaces, below)](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L211)
-- [Mathlib undergraduate list: Bilinear and Quadratic Forms Over a Vector Space › Endomorphisms](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/undergrad.yaml#L229)
+- [Source of `LinearMap.IsSymmetric.eigenvectorBasis_apply_self_apply` in Mathlib/Analysis/InnerProductSpace/Spectrum.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Analysis/InnerProductSpace/Spectrum.lean#L322)
+- [Mathlib overview: Linear algebra › Finite-dimensional inner product spaces (see also Hilbert spaces, below)](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L211)
+- [Mathlib undergraduate list: Bilinear and Quadratic Forms Over a Vector Space › Endomorphisms](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/undergrad.yaml#L229)

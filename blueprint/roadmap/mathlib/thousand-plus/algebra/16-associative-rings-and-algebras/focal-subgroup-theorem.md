@@ -29,8 +29,8 @@ Subgroup.commutator_inf_eq_focalSubgroup.{u_1} {G : Type u_1} [Group G] {p : ℕ
 ## Sources
 
 - [Mathlib documentation: `Subgroup.commutator_inf_eq_focalSubgroup`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/Focal.html#Subgroup.commutator_inf_eq_focalSubgroup)
-- [Source of `Subgroup.commutator_inf_eq_focalSubgroup` in Mathlib/GroupTheory/Focal.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/GroupTheory/Focal.lean#L210)
-- [1000+ theorems list: Q5463860](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L3216)
+- [Source of `Subgroup.commutator_inf_eq_focalSubgroup` in Mathlib/GroupTheory/Focal.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/GroupTheory/Focal.lean#L210)
+- [1000+ theorems list: Q5463860](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/1000.yaml#L3219)
 - [1000+ theorems project: Q5463860](https://1000-plus.github.io/all.html?length=-1#Q5463860)
 - [Wikipedia: Focal subgroup theorem](https://en.wikipedia.org/wiki/Focal_subgroup_theorem)
 - [Wikidata: Q5463860](https://www.wikidata.org/wiki/Q5463860)

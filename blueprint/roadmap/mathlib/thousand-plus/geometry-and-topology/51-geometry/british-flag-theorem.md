@@ -23,8 +23,8 @@ EuclideanGeometry.dist_sq_add_dist_sq_eq_dist_sq_add_dist_sq_of_angle_eq_pi_div_
 ## Sources
 
 - [Mathlib documentation: `EuclideanGeometry.dist_sq_add_dist_sq_eq_dist_sq_add_dist_sq_of_angle_eq_pi_div_two`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Geometry/Euclidean/BritishFlag.html#EuclideanGeometry.dist_sq_add_dist_sq_eq_dist_sq_add_dist_sq_of_angle_eq_pi_div_two)
-- [Source of `EuclideanGeometry.dist_sq_add_dist_sq_eq_dist_sq_add_dist_sq_of_angle_eq_pi_div_two` in Mathlib/Geometry/Euclidean/BritishFlag.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Geometry/Euclidean/BritishFlag.lean#L100)
-- [1000+ theorems list: Q4971339](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L2965)
+- [Source of `EuclideanGeometry.dist_sq_add_dist_sq_eq_dist_sq_add_dist_sq_of_angle_eq_pi_div_two` in Mathlib/Geometry/Euclidean/BritishFlag.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Geometry/Euclidean/BritishFlag.lean#L99)
+- [1000+ theorems list: Q4971339](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/1000.yaml#L2968)
 - [1000+ theorems project: Q4971339](https://1000-plus.github.io/all.html?length=-1#Q4971339)
 - [Wikipedia: British flag theorem](https://en.wikipedia.org/wiki/British_flag_theorem)
 - [Wikidata: Q4971339](https://www.wikidata.org/wiki/Q4971339)

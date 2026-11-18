@@ -15,5 +15,5 @@ DyckWord : Type
 ## Sources
 
 - [Mathlib documentation: `DyckWord`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Combinatorics/Enumerative/DyckWord.html#DyckWord)
-- [Source of `DyckWord` in Mathlib/Combinatorics/Enumerative/DyckWord.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Combinatorics/Enumerative/DyckWord.lean#L62)
-- [Mathlib overview: Combinatorics › Enumerative combinatorics](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L506)
+- [Source of `DyckWord` in Mathlib/Combinatorics/Enumerative/DyckWord.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Combinatorics/Enumerative/DyckWord.lean#L62)
+- [Mathlib overview: Combinatorics › Enumerative combinatorics](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L506)

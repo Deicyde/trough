@@ -30,5 +30,5 @@ IsRiemannianManifold.{u_1, u_2, u_3} {E : Type u_1} [NormedAddCommGroup E] [Norm
 ## Sources
 
 - [Mathlib documentation: `IsRiemannianManifold`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Geometry/Manifold/Riemannian/Basic.html#IsRiemannianManifold)
-- [Source of `IsRiemannianManifold` in Mathlib/Geometry/Manifold/Riemannian/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Geometry/Manifold/Riemannian/Basic.lean#L71)
-- [Mathlib overview: Geometry › Riemannian manifolds](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L478)
+- [Source of `IsRiemannianManifold` in Mathlib/Geometry/Manifold/Riemannian/Basic.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Geometry/Manifold/Riemannian/Basic.lean#L71)
+- [Mathlib overview: Geometry › Riemannian manifolds](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L478)

@@ -31,7 +31,7 @@ numDerangements_sum (n : ℕ) :
 ## Sources
 
 - [Mathlib documentation: `card_derangements_eq_numDerangements`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Combinatorics/Derangements/Finite.html#card_derangements_eq_numDerangements)
-- [Source of `card_derangements_eq_numDerangements` in Mathlib/Combinatorics/Derangements/Finite.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Combinatorics/Derangements/Finite.lean#L102)
+- [Source of `card_derangements_eq_numDerangements` in Mathlib/Combinatorics/Derangements/Finite.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Combinatorics/Derangements/Finite.lean#L102)
 - [Mathlib documentation: `numDerangements_sum`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Combinatorics/Derangements/Finite.html#numDerangements_sum)
-- [Source of `numDerangements_sum` in Mathlib/Combinatorics/Derangements/Finite.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Combinatorics/Derangements/Finite.lean#L107)
-- [Freek Wiedijk's 100 theorems, no. 88](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/100.yaml#L451)
+- [Source of `numDerangements_sum` in Mathlib/Combinatorics/Derangements/Finite.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Combinatorics/Derangements/Finite.lean#L107)
+- [Freek Wiedijk's 100 theorems, no. 88](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/100.yaml#L451)

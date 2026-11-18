@@ -31,5 +31,5 @@ Complex.norm_le_norm_of_mapsTo_ball.{u_1, u_2} {E : Type u_1} {F : Type u_2} [No
 ## Sources
 
 - [Mathlib documentation: `Complex.norm_le_norm_of_mapsTo_ball`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Complex/Schwarz.html#Complex.norm_le_norm_of_mapsTo_ball)
-- [Source of `Complex.norm_le_norm_of_mapsTo_ball` in Mathlib/Analysis/Complex/Schwarz.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/Complex/Schwarz.lean#L230)
-- [Mathlib overview: Analysis › Complex analysis](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L372)
+- [Source of `Complex.norm_le_norm_of_mapsTo_ball` in Mathlib/Analysis/Complex/Schwarz.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Analysis/Complex/Schwarz.lean#L230)
+- [Mathlib overview: Analysis › Complex analysis](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L372)

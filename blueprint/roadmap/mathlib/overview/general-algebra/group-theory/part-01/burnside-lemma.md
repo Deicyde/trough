@@ -104,5 +104,5 @@ $0$, so it is trivially true for infinite groups.
 ## Sources
 
 - [Mathlib documentation: `MulAction.sum_card_fixedBy_eq_card_orbits_mul_card_group`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/GroupTheory/GroupAction/Quotient.html#MulAction.sum_card_fixedBy_eq_card_orbits_mul_card_group)
-- [Source of `MulAction.sum_card_fixedBy_eq_card_orbits_mul_card_group` in Mathlib/GroupTheory/GroupAction/Quotient.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/GroupTheory/GroupAction/Quotient.lean#L260)
-- [Mathlib overview: General algebra › Group theory](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L37)
+- [Source of `MulAction.sum_card_fixedBy_eq_card_orbits_mul_card_group` in Mathlib/GroupTheory/GroupAction/Quotient.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/GroupTheory/GroupAction/Quotient.lean#L260)
+- [Mathlib overview: General algebra › Group theory](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L37)

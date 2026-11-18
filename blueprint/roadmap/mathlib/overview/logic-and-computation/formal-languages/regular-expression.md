@@ -20,5 +20,5 @@ Its statement uses no other concept on these lists.
 ## Sources
 
 - [Mathlib documentation: `RegularExpression`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Computability/RegularExpressions.html#RegularExpression)
-- [Source of `RegularExpression` in Mathlib/Computability/RegularExpressions.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Computability/RegularExpressions.lean#L39)
-- [Mathlib overview: Logic and computation › Formal languages](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L619)
+- [Source of `RegularExpression` in Mathlib/Computability/RegularExpressions.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Computability/RegularExpressions.lean#L39)
+- [Mathlib overview: Logic and computation › Formal languages](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L619)

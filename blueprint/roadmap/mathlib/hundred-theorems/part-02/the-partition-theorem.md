@@ -19,9 +19,9 @@ Nat.Partition.card_odds_eq_card_distincts (n : ℕ) :
 ## Sources
 
 - [Mathlib documentation: `Nat.Partition.card_odds_eq_card_distincts`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Combinatorics/Enumerative/Partition/Glaisher.html#Nat.Partition.card_odds_eq_card_distincts)
-- [Source of `Nat.Partition.card_odds_eq_card_distincts` in Mathlib/Combinatorics/Enumerative/Partition/Glaisher.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Combinatorics/Enumerative/Partition/Glaisher.lean#L159)
-- [Freek Wiedijk's 100 theorems, no. 45](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/100.yaml#L239)
-- [1000+ theorems list: Q1082910](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L1340)
+- [Source of `Nat.Partition.card_odds_eq_card_distincts` in Mathlib/Combinatorics/Enumerative/Partition/Glaisher.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Combinatorics/Enumerative/Partition/Glaisher.lean#L159)
+- [Freek Wiedijk's 100 theorems, no. 45](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/100.yaml#L239)
+- [1000+ theorems list: Q1082910](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/1000.yaml#L1343)
 - [1000+ theorems project: Q1082910](https://1000-plus.github.io/all.html?length=-1#Q1082910)
 - [Wikipedia: Integer partition § Odd parts and distinct parts](https://en.wikipedia.org/wiki/Integer_partition#Odd_parts_and_distinct_parts)
 - [Wikidata: Q1082910](https://www.wikidata.org/wiki/Q1082910)

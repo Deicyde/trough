@@ -20,5 +20,5 @@ UniformSpace.{u} (α : Type u) : Type u
 ## Sources
 
 - [Mathlib documentation: `UniformSpace`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Topology/UniformSpace/Defs.html#UniformSpace)
-- [Source of `UniformSpace` in Mathlib/Topology/UniformSpace/Defs.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Topology/UniformSpace/Defs.lean#L187)
-- [Mathlib overview: Topology › Uniform notions](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L238)
+- [Source of `UniformSpace` in Mathlib/Topology/UniformSpace/Defs.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Topology/UniformSpace/Defs.lean#L187)
+- [Mathlib overview: Topology › Uniform notions](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L238)

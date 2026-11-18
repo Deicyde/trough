@@ -24,9 +24,9 @@ convexHull_eq_union.{u, u_1} {𝕜 : Type u_1} {E : Type u} [Field 𝕜] [Linear
 ## Sources
 
 - [Mathlib documentation: `convexHull_eq_union`](https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Convex/Caratheodory.html#convexHull_eq_union)
-- [Source of `convexHull_eq_union` in Mathlib/Analysis/Convex/Caratheodory.lean](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/Mathlib/Analysis/Convex/Caratheodory.lean#L105)
-- [Mathlib overview: Analysis › Convexity](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/overview.yaml#L326)
-- [1000+ theorems list: Q2471737](https://github.com/leanprover-community/mathlib4/blob/9bac2d0692944a775113f7c130fd5e5b4608a854/docs/1000.yaml#L2220)
+- [Source of `convexHull_eq_union` in Mathlib/Analysis/Convex/Caratheodory.lean](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/Mathlib/Analysis/Convex/Caratheodory.lean#L104)
+- [Mathlib overview: Analysis › Convexity](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/overview.yaml#L326)
+- [1000+ theorems list: Q2471737](https://github.com/leanprover-community/mathlib4/blob/15cf10d19dfd4cdee9602318e271fa3ce99c454d/docs/1000.yaml#L2223)
 - [1000+ theorems project: Q2471737](https://1000-plus.github.io/all.html?length=-1#Q2471737)
 - [Wikipedia: Carathéodory's theorem (convex hull)](https://en.wikipedia.org/wiki/Carath%C3%A9odory's_theorem_%28convex_hull%29)
 - [Wikidata: Q2471737](https://www.wikidata.org/wiki/Q2471737)

@@ -29,6 +29,7 @@
 - [Niven's theorem](part-02/nivens-theorem.md)
 - [Ostrowski's theorem](part-02/ostrowskis-theorem.md)
 - [Pentagonal number theorem](part-02/pentagonal-number-theorem.md)
+- [Prime number theorem](part-02/prime-number-theorem.md)
 - [Quadratic reciprocity theorem](../../overview/general-algebra/number-theory/quadratic-reciprocity.md)
 - [Solutions to Pell's equation](../../hundred-theorems/part-02/solutions-to-pells-equation.md)
 - [Sylvester's law of inertia](../../undergraduate/bilinear-and-quadratic-forms-over-a-vector-space/orthogonality/sylvesters-law-of-inertia-existence.md)
