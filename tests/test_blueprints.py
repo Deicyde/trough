@@ -648,3 +648,12 @@ def test_a_proof_that_is_only_notes_is_no_proof(tmp_path):
     assert dict(leaves["c"].notes)["Proof"] == "One proof is by induction. …"
     assert dict(leaves["d"].notes)["Proof"] == "To do so, use C."
 
+
+def test_macro_glue_keeps_control_words_apart():
+    macros = tex.definitions(r"\newcommand{\bra}[1]{\langle#1|}\newcommand{\degree}{d}")
+    assert tex.expand(r"\bra{u} \bra{\psi} 0\le\degree", macros) == r"\langle u| \langle\psi| 0\le d"
+
+
+def test_formulas_lose_what_mathjax_does_not_define():
+    assert tex.math_text(r"\mathsf{V}^{\textsc{Compr}} = b. \qedhere", True) == r"\mathsf{V}^{\text{Compr}} = b."
+    assert tex.math_text(r"\sum\displaylimits_{x} {\larger[2] f} \qed", False) == r"\sum\limits_{x} { f}"

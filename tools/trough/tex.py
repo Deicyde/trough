@@ -193,8 +193,11 @@ def definitions(text: str, macros: dict[str, Macro] | None = None) -> dict[str, 
 
 
 def substitute(body: str, args: list[str]) -> str:
-    out = re.sub(r"#([1-9])", lambda m: args[int(m.group(1)) - 1] if int(m.group(1)) <= len(args) else "", body)
-    return out.replace("##", "#")
+    def argument_at(m: re.Match) -> str:
+        arg = args[int(m.group(1)) - 1] if int(m.group(1)) <= len(args) else ""
+        # A control word ends at the first non-letter: keep "\langle#1" with u from becoming "\langleu".
+        return " " + arg if arg[:1].isalpha() and re.search(r"\\[A-Za-z]+$", body[:m.start()]) else arg
+    return re.sub(r"#([1-9])", argument_at, body).replace("##", "#")
 
 
 def expand(text: str, macros: dict[str, Macro], depth: int = 0) -> str:
@@ -265,6 +268,9 @@ def expand(text: str, macros: dict[str, Macro], depth: int = 0) -> str:
         # A control word ends at the first non-letter: keep "\op x" from becoming "\diamondx".
         if re.search(r"\\[A-Za-z]+$", body) and j < len(text) and text[j].isalpha():
             body += " "
+        # And keep "\le\degree", \degree being d, from becoming "\led".
+        if body[:1].isalpha() and out and re.search(r"\\[A-Za-z]+$", out[-1]):
+            body = " " + body
         out.append(body)
         i = j
     return "".join(out)
@@ -295,7 +301,7 @@ QUIET = {"leanok", "mathlibok", "notready", "noindent", "indent", "medskip", "bi
          "relax", "protect", "nobreak", "allowbreak", "quad", "qquad", "enspace", "thinspace", "normalfont",
          "rm", "sf", "sc", "upshape", "mdseries", "small", "footnotesize", "scriptsize", "tiny", "normalsize",
          "large", "Large", "LARGE", "huge", "Huge", "maketitle", "tableofcontents", "displaystyle", "hfill",
-         "vfill", "break", "ignorespaces", "unskip", "xspace", "/", "item"}
+         "vfill", "break", "ignorespaces", "unskip", "xspace", "/", "item", "qed", "qedhere"}
 SWITCHES = {"bf": "strong", "bfseries": "strong", "it": "em", "itshape": "em", "em": "em", "sl": "em",
             "slshape": "em", "tt": None, "ttfamily": None}
 REFS = {"ref", "cref", "Cref", "autoref", "nameref", "eqref", "cpageref", "Cpageref", "pageref", "vref", "Vref",
@@ -397,6 +403,10 @@ def math_text(tex: str, display: bool) -> str:
     tex = re.sub(r"\\(?:nonumber|notag)(?![A-Za-z])", "", tex)
     tex = re.sub(r"\\ensuremath(?![A-Za-z])", "", tex)
     tex = re.sub(r"\\bm(?![A-Za-z])", r"\\boldsymbol", tex)
+    # What MathJax does not define: small capitals as plain text, a size change and a proof's end mark dropped.
+    tex = re.sub(r"\\textsc(?![A-Za-z])", r"\\text", tex)
+    tex = re.sub(r"\\displaylimits(?![A-Za-z])", r"\\limits", tex)
+    tex = re.sub(r"\\(?:qedhere|qed)(?![A-Za-z])|\\larger(?![A-Za-z])(?:\s*\[[^\]]*\])?", "", tex)
     lines = [line.strip() for line in tex.splitlines()]
     lines = [line for line in lines if line]
     return "\n".join(lines) if display else " ".join(lines).strip()
