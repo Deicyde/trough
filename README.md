@@ -625,7 +625,10 @@ plans or inviting work, each cut marked with …; the docstrings of Physlib's ow
 tooling under `Physlib/Meta/`, which define and count TODO items, keep their
 mentions of them. An article depends on the modules whose declarations its
 statements use, and its proof on those that only its proofs use, each without
-what another of them reaches.
+what another of them reaches. `tools/trough/physlib.py` builds the chapter and
+takes from `tools/trough/library.py` what Physlib shares with CSLib: links at
+the pin, the guards, the docstring filter, the quoting of docstrings and the
+edges, configured for Physlib.
 
 1. `tools/refresh_physlib.py CHECKOUT` reads a checkout and writes
    `data/physlib/`: `source.json`, the commit, its date, toolchain and Mathlib,
