@@ -140,7 +140,7 @@ def refresh(projects: list[dict], newest_too: bool, out: Path) -> list[str]:
                 record = read(project, rev, work, heads, names)
                 kept = old if old and old["rev"] == rev else None
                 record["ci"] = kept.get("ci") if kept else ci_state(project["repo"], rev)
-            except (subprocess.CalledProcessError, OSError, ValueError) as error:
+            except Exception as error:  # noqa: BLE001 - one project's problem must not stop the others
                 detail = error.stderr.strip() if isinstance(error, subprocess.CalledProcessError) else str(error)
                 problems.append(f"{project['repo']}: {detail}")
                 continue

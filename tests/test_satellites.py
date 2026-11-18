@@ -432,3 +432,8 @@ def test_only_a_top_level_main_module_names_headlines(tmp_path):
     assert satellites.headlines(tmp_path, [], [""], nested) == (None, [], 0)
     top = nested | {"A.Main.t": declared("A.Main"), "A.Main.d": declared("A.Main", "def")}
     assert satellites.headlines(tmp_path, [], [""], top) == ("main", ["A.Main.t"], 1)
+
+
+def test_a_project_with_a_chapter_of_its_own_is_left_out(tmp_path):
+    placed, stats = placements([record("card"), record("chapter", repo="AlexKontorovich/PrimeNumberTheoremAnd")], tmp_path)
+    assert "chapter" not in placed and stats["covered"] == 1

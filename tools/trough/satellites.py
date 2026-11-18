@@ -794,11 +794,14 @@ def chapter(records: list[dict], packages: dict, overrides: dict, libraries: lis
     live |= {key: (package["chapter"], package.get("reason", "")) for key, package in packages.items()}
     areas = Areas({key.removeprefix("mathlib:"): host for key, host in hosts.items()
                    if key.startswith("mathlib:") and key != OVERVIEW})
-    admitted = [record for record in records if record.get("admitted")]
+    # A project with a chapter of its own is covered there, not a satellite.
+    chapters = {repo_key(library["repo"]) for library in libraries}
+    covered = [record for record in records if repo_key(record["repo"]) in chapters]
+    admitted = [record for record in records if record.get("admitted") and record not in covered]
     baseline = baselines(admitted, areas)
     by_repo = {record["repo"].lower(): record for record in admitted}
     by_slug = {record["slug"]: record for record in admitted}
-    stats: Counter = Counter(projects=len(records), admitted=len(admitted))
+    stats: Counter = Counter(projects=len(records), admitted=len(admitted), covered=len(covered))
     placed: dict[str, list[tuple[dict, list[Leaf], list[Leaf], int, str, list, list]]] = {}
     for record in admitted:
         statement = []
