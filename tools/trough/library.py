@@ -37,9 +37,11 @@ GITHUB = "https://github.com"
 COPYRIGHT = re.compile(r"^Copyright \(c\) \d{4}(?:[-–]\d{4})? (?P<holders>.+?)\.? All rights reserved\.?$", re.M)
 AUTHORS = re.compile(r"^Authors?:[ \t]*(?P<authors>.+(?:\n(?![A-Z][a-z]+:)[ \t]*\S.*)*)", re.M)
 # A sentence about what is planned, wanted or welcome, not about what the library has. Not "not yet", "remains to be",
-# "in the future" or "upstream", which say what the library has or are its subject (temporal logic, physics).
+# "in the future" or "upstream", which say what the library has or are its subject (temporal logic, physics), nor
+# "has to be added", which says what a construction needs.
 PLANS = re.compile(r"\b(?:underway|under way|planned|we plan|plans? to|welcome|reserved for future work|future work on|"
-                   r"future design work|be upstreamed|will follow|to be added|we would want|we should show|"
+                   r"future design work|be upstreamed|accepted upstream|will follow|(?<!has )(?<!have )(?<!needs )to be added|"
+                   r"we would want|we should show|"
                    r"will eventually|near future|one day|be deprecated|with the intention|eventually we will|"
                    r"long term aim)\b", re.I)
 # A README opening that speaks of plans, as a placeholder for later work does.

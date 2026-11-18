@@ -315,9 +315,11 @@ def test_todo_notes_and_plans_in_cslibs_docstrings_are_cut():
     assert cut(VENDING) == "We then prove the classical example that the two are not bisimilar.\n\n…"
     assert cut(OPERATORS) == OPERATORS.split("\n")[0] + "\n…"
     assert cut(LOCAL) == "The module is currently developed with minimality in mind. …"
-    # The sentence on upstreaming goes; the attribution under the same heading stays.
+    # The sentences on upstreaming go; the attribution under the same heading stays.
     pmf = cut(PMF)
-    assert "They should be upstreamed" not in pmf and "structure. … Once accepted upstream" in pmf
+    assert "upstream" not in pmf and "domain-specific\nstructure. …\n\nThe uniform samplers" in pmf
+    # "Has to be added" says what a construction needs, not what is planned.
+    assert cut("The empty list has to be added explicitly.") == "The empty list has to be added explicitly."
     assert "under the Apache 2.0 license.\nOriginal sampler copyright (c) 2024 Josha Dekker." in pmf
     # A section on limitations stays, without its sentence on what will follow.
     assert cut(LIMITATIONS) == LIMITATIONS.split(" Its semantics")[0] + " …"
