@@ -839,12 +839,17 @@ def chapter(records: list[dict], packages: dict, overrides: dict, libraries: lis
                                            area_lifts(record, areas, baseline)))
     out = []
     targets: dict[str, Leaf | Container] = {}
+    # A requirement on a project the map holds back is named, not linked.
+    on_map = {record["slug"] for members in placed.values() for record, *_ in members}
+    unlink = re.compile(r"\[([^\]]*)\]\(trough:satellite:([^)]+)\)")
     for key, host in hosts.items():
         members = placed.get(key)
         if not members:
             continue
         cards, links, without = [], {}, []
         for record, statement, uses, named, placement, builds_on, lifts in members:
+            builds_on = [unlink.sub(lambda match: match.group(0) if match.group(2) in on_map else f"`{match.group(1)}`",
+                                    line) for line in builds_on]
             # A corpus collects many problems or theorems: none is its main result.
             if not record["headlines"] or record["kind"] == "corpus":
                 without.append(record)
@@ -872,6 +877,8 @@ def chapter(records: list[dict], packages: dict, overrides: dict, libraries: lis
                 projects.tail = listing
             else:
                 projects.prose += "\n\n" + listing
+        for record in without:
+            targets[f"satellite:{record['slug']}"] = projects
         chunk(projects, budget=300_000)
         out.append((host, projects, links))
         stats["homes"] += 1

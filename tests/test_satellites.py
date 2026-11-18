@@ -437,3 +437,21 @@ def test_only_a_top_level_main_module_names_headlines(tmp_path):
 def test_a_project_with_a_chapter_of_its_own_is_left_out(tmp_path):
     placed, stats = placements([record("card"), record("chapter", repo="AlexKontorovich/PrimeNumberTheoremAnd")], tmp_path)
     assert "chapter" not in placed and stats["covered"] == 1
+
+
+def test_a_requirement_on_another_project_links_its_card_or_its_listing_or_names_it(tmp_path):
+    def needs(*repos):
+        return [{"name": repo.split("/")[1], "url": f"https://github.com/{repo}", "rev": REV} for repo in repos]
+    records = [record("user", requirements=needs("o/carded", "o/bare", "o/lean3", "o/alone")), record("carded"),
+               record("alone", mathlib=None, import_roots={}),
+               record("bare", headlines=[], headline_rule=None, headline_count=0),
+               record("lean3", admitted=False, reason="no lakefile")]
+    root, hosts, heads = mathlib_fixture(tmp_path)
+    pages, _, targets = satellites.chapter(records, {}, {}, LIBRARIES, hosts, heads, {})
+    user = next(node for _, projects, _ in pages for node in walk(projects) if node.slug == "user")
+    builds = dict(user.notes)["Builds on"]
+    assert "(trough:satellite:carded)" in builds and "(trough:satellite:bare)" in builds
+    assert "`lean3`" in builds and "satellite:lean3" not in builds
+    assert "`alone`" in builds and "satellite:alone" not in builds and "satellite:alone" not in targets
+    assert isinstance(targets["satellite:carded"], Leaf) and isinstance(targets["satellite:bare"], Container)
+    assert targets["satellite:carded"] in user.depends
