@@ -135,6 +135,7 @@ lemma helper : True := trivial
 end Demo
 """
 OTHER = """import Mathlib.Combinatorics.SimpleGraph.Basic
+import Demo.Main
 
 open SimpleGraph
 
@@ -169,13 +170,13 @@ def test_a_project_record_reads_its_libraries_requirements_and_uses(tmp_path):
     project = {"repo": "ada/demo", "slug": "ada--demo", "kind": "research-project"}
     record = satellites.read_project(checkout, project, REV, "2026-11-01T00:00:00Z", paths, HEADS, {"Other.thing"})
     assert record["admitted"] and record["folder"] == ""
-    assert record["libraries"] == [{"name": "Demo", "src": "src", "roots": ["Demo"]},
-                                   {"name": "Extra", "src": "src", "roots": ["Extra"]}]
+    assert record["libraries"] == [{"name": "Demo", "src": "src"}, {"name": "Extra", "src": "src"}]
     assert record["library_files"] == 2 and record["lean_files"] == 3
     assert record["mathlib"] == MATHLIB_REV
     assert [package["name"] for package in record["requirements"]] == ["PrimeNumberTheoremAnd"]
     assert record["mathlib_imports"] == {"Mathlib.Analysis.Fourier.AddCircle": 1, "Mathlib.Combinatorics.SimpleGraph.Basic": 1,
                                          "Mathlib.MeasureTheory.Integral.Bochner": 1}
+    # Its own modules are not counted among the packages it imports.
     assert record["import_roots"] == {"Mathlib": 2, "PrimeNumberTheoremAnd": 1}
     assert (record["sorry_files"], record["axioms"]) == (1, 1)
     # The headline's file imports no file of the project; the axiom is in another file.
@@ -284,7 +285,7 @@ def mathlib_fixture(vault: Path) -> tuple[Container, dict[str, Container], dict[
 def record(slug: str, **changes) -> dict:
     base = {"schema": satellites.SCHEMA, "repo": f"o/{slug}", "slug": slug, "rev": REV, "date": "2026-11-01T00:00:00Z",
             "admitted": True, "kind": "research-project", "folder": "", "toolchain": "v4.25.0", "mathlib": MATHLIB_REV,
-            "requirements": [], "libraries": [{"name": "X", "src": ".", "roots": ["X"]}], "library_files": 10,
+            "requirements": [], "libraries": [{"name": "X", "src": "."}], "library_files": 10,
             "capped": False, "lean_files": 10, "declarations": 50, "sorry_files": 0, "axioms": 0, "unclosed_files": 0,
             "closure_files": 3, "closure_sorry": [], "closure_axioms": 0,
             "license": {"files": ["LICENSE"], "spdx": "Apache-2.0", "file": "LICENSE", "copyright": []},

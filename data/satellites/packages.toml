@@ -11,3 +11,13 @@ reason = "a GitHub fork of AlexKontorovich/PrimeNumberTheoremAnd"
 url = "https://github.com/smmercuri/PrimeNumberTheoremAnd"
 chapter = "pnt-plus"
 reason = "a GitHub fork of AlexKontorovich/PrimeNumberTheoremAnd"
+
+[[package]]
+url = "https://github.com/Vilin97/TauCeti"
+chapter = "tauceti"
+reason = "a GitHub fork of TauCetiProject/TauCeti"
+
+[[package]]
+url = "https://github.com/vasnesterov/cslib"
+chapter = "cslib"
+reason = "a GitHub fork of leanprover/cslib"

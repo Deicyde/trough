@@ -242,6 +242,11 @@ def lean_libraries(project: Path) -> list[dict]:
     return libraries
 
 
+def library_names(libraries: list[dict], shown: int = 6) -> str:
+    names = [f"`{library['name']}`" for library in libraries]
+    return ", ".join(names[:shown]) + (f" and {len(names) - shown} more" if len(names) > shown else "")
+
+
 def join(*parts: str) -> str:
     joined = "/".join(part.strip("/") for part in parts if part.strip("/") not in ("", "."))
     return joined or "."
@@ -472,7 +477,8 @@ def read_project(checkout: Path, project: dict, rev: str, date: str, paths: list
     libraries = lean_libraries(checkout / folder)
     files = library_files(paths, folder, libraries)
     record.update(folder=folder, toolchain=toolchain.split(":")[-1], mathlib=mathlib, requirements=required,
-                  libraries=libraries, library_files=min(len(files), MAX_FILES), capped=len(files) > MAX_FILES)
+                  libraries=[{"name": library["name"], "src": library["src"]} for library in libraries],
+                  library_files=min(len(files), MAX_FILES), capped=len(files) > MAX_FILES)
     declared: dict[str, tuple[str, str, leansource.Declaration]] = {}
     twice: set[str] = set()
     imports: Counter = Counter()
@@ -484,12 +490,14 @@ def read_project(checkout: Path, project: dict, rev: str, date: str, paths: list
     sorry_paths: set[str] = set()
     axioms: dict[str, int] = {}
     head_index = index(heads)
+    own = set(files.values())
     for path in sorted(files)[:MAX_FILES]:
         text = read_text(checkout / path)
         code = leansource.blank(text)
         imported = {module for line in IMPORT.findall(code) for module in line.split() if leansource.is_name(module)}
         imports.update(module for module in imported if module.startswith("Mathlib."))
-        roots.update({module.split(".")[0] for module in imported})
+        # The roots of the modules it imports from other packages.
+        roots.update({module.split(".")[0] for module in imported if module not in own})
         file_imports[path] = imported
         if leansource.SORRY.search(code):
             sorry_paths.add(path)
@@ -744,7 +752,7 @@ def card(record: dict, depends: list[Leaf], uses: list[Leaf], named: int, placem
              + (f", Mathlib at [{record['mathlib'][:8]}]({MATHLIB_REPO}/tree/{record['mathlib']})"
                 if re.fullmatch(r"[0-9a-f]{40}", record.get("mathlib") or "") else "") + ".",
              f"- {record['lean_files']:,} .lean files; "
-             + (f"its Lean libraries {', '.join(f'`{library['name']}`' for library in record['libraries'])} hold "
+             + (f"its Lean libraries {library_names(record['libraries'])} hold "
                 if record["libraries"] else "the project folder holds ")
              + f"{record['library_files']:,}{' (the first read)' if record['capped'] else ''}, declaring "
              f"{record['declarations']:,} names, with `sorry` in {plural(record['sorry_files'], 'file')} and "
