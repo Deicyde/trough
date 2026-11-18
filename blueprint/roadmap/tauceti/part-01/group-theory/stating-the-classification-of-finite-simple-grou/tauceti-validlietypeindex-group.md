@@ -20,7 +20,7 @@ TauCeti.ValidLieTypeIndex.Group (d : TauCeti.ValidLieTypeIndex) : Type
 
 ## Proof depends on
 
-- [Cauchy--Binet for `2 × 2` minors](../../linear-algebra/matrix/cauchy-binet-for-2-2-minors.md)
+- [Cauchy--Binet for `2 × 2` minors](../../linear-algebra/part-01/matrix/cauchy-binet-for-2-2-minors.md)
 
 ## Lean
 
@@ -29,5 +29,5 @@ Formalized in Tau Ceti as [`TauCeti.ValidLieTypeIndex.Group`](https://taucetipro
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.ValidLieTypeIndex.Group`](https://taucetiproject.org/docs/TauCeti/GroupTheory/SpecificGroups/CFSG/Assembly/LieType.html#TauCeti.ValidLieTypeIndex.Group)
-- [Source of `TauCeti.ValidLieTypeIndex.Group` in TauCeti/GroupTheory/SpecificGroups/CFSG/Assembly/LieType.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/GroupTheory/SpecificGroups/CFSG/Assembly/LieType.lean#L204)
-- [Tau Ceti roadmap status: Stating the classification of finite simple groups](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/CFSGStatement/STATUS.md)
+- [Source of `TauCeti.ValidLieTypeIndex.Group` in TauCeti/GroupTheory/SpecificGroups/CFSG/Assembly/LieType.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/GroupTheory/SpecificGroups/CFSG/Assembly/LieType.lean#L256)
+- [Tau Ceti roadmap status: Stating the classification of finite simple groups](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/CFSGStatement/STATUS.md)

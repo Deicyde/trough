@@ -23,7 +23,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Euler–Poincaré for cubes](../../algebra/part-02/homology/euler-poincare-for-cubes.md)
+- [Euler–Poincaré for cubes](../khovanov-homology-of-classical-links/euler-poincare-for-cubes.md)
 
 ## Lean
 
@@ -32,4 +32,4 @@ Formalized in Tau Ceti as [`TauCeti.OddComponentGridDiagram.alexanderHomologyEul
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.OddComponentGridDiagram.alexanderHomologyEulerChar_eq_alexanderEulerChar`](https://taucetiproject.org/docs/TauCeti/KnotTheory/Grid/Homology/EulerCharacteristic.html#TauCeti.OddComponentGridDiagram.alexanderHomologyEulerChar_eq_alexanderEulerChar)
-- [Source of `TauCeti.OddComponentGridDiagram.alexanderHomologyEulerChar_eq_alexanderEulerChar` in TauCeti/KnotTheory/Grid/Homology/EulerCharacteristic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/KnotTheory/Grid/Homology/EulerCharacteristic.lean#L308)
+- [Source of `TauCeti.OddComponentGridDiagram.alexanderHomologyEulerChar_eq_alexanderEulerChar` in TauCeti/KnotTheory/Grid/Homology/EulerCharacteristic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/KnotTheory/Grid/Homology/EulerCharacteristic.lean#L308)

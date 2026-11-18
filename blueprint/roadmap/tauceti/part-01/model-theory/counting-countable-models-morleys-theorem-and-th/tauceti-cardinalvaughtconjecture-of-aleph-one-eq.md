@@ -31,5 +31,5 @@ Formalized in Tau Ceti as [`TauCeti.cardinalVaughtConjecture_of_aleph_one_eq_con
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.cardinalVaughtConjecture_of_aleph_one_eq_continuum`](https://taucetiproject.org/docs/TauCeti/ModelTheory/Counting/Vaught.html#TauCeti.cardinalVaughtConjecture_of_aleph_one_eq_continuum)
-- [Source of `TauCeti.cardinalVaughtConjecture_of_aleph_one_eq_continuum` in TauCeti/ModelTheory/Counting/Vaught.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/ModelTheory/Counting/Vaught.lean#L183)
-- [Tau Ceti roadmap status: Counting countable models: Morley's theorem and the Vaught toolkit](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/CountableModelCounting/STATUS.md)
+- [Source of `TauCeti.cardinalVaughtConjecture_of_aleph_one_eq_continuum` in TauCeti/ModelTheory/Counting/Vaught.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/ModelTheory/Counting/Vaught.lean#L360)
+- [Tau Ceti roadmap status: Counting countable models: Morley's theorem and the Vaught toolkit](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/CountableModelCounting/STATUS.md)

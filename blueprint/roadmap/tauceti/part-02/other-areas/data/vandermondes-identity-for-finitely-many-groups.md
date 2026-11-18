@@ -39,4 +39,4 @@ Finset.sum_filter_piAntidiag_prod_choose_fiberwise.{u_1, u_2} {ι : Type u_1} [D
 ## Sources
 
 - [Tau Ceti documentation: `Finset.sum_piAntidiag_prod_choose`](https://taucetiproject.org/docs/TauCeti/Data/Nat/Choose/Vandermonde.html#Finset.sum_piAntidiag_prod_choose)
-- [Source of `Finset.sum_piAntidiag_prod_choose` in TauCeti/Data/Nat/Choose/Vandermonde.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Data/Nat/Choose/Vandermonde.lean#L45)
+- [Source of `Finset.sum_piAntidiag_prod_choose` in TauCeti/Data/Nat/Choose/Vandermonde.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Data/Nat/Choose/Vandermonde.lean#L45)

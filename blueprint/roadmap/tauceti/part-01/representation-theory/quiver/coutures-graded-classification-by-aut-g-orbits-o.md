@@ -39,4 +39,4 @@ Formalized in Tau Ceti as [`TauCeti.SkewZigzagParameter.exists_firstCohomologyRe
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.SkewZigzagParameter.exists_firstCohomologyRelabel_eq_iff_exists_graded_algEquiv`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/Quiver/Zigzag/Skew/Classification.html#TauCeti.SkewZigzagParameter.exists_firstCohomologyRelabel_eq_iff_exists_graded_algEquiv)
-- [Source of `TauCeti.SkewZigzagParameter.exists_firstCohomologyRelabel_eq_iff_exists_graded_algEquiv` in TauCeti/RepresentationTheory/Quiver/Zigzag/Skew/Classification.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RepresentationTheory/Quiver/Zigzag/Skew/Classification.lean#L78)
+- [Source of `TauCeti.SkewZigzagParameter.exists_firstCohomologyRelabel_eq_iff_exists_graded_algEquiv` in TauCeti/RepresentationTheory/Quiver/Zigzag/Skew/Classification.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RepresentationTheory/Quiver/Zigzag/Skew/Classification.lean#L78)

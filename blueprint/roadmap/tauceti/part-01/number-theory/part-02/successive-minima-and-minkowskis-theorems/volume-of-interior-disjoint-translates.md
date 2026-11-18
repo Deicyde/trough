@@ -32,5 +32,5 @@ Formalized in Tau Ceti as [`Convex.addHaar_iUnion_vadd`](https://taucetiproject.
 ## Sources
 
 - [Tau Ceti documentation: `Convex.addHaar_iUnion_vadd`](https://taucetiproject.org/docs/TauCeti/Analysis/Convex/Measure.html#Convex.addHaar_iUnion_vadd)
-- [Source of `Convex.addHaar_iUnion_vadd` in TauCeti/Analysis/Convex/Measure.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Convex/Measure.lean#L192)
-- [Tau Ceti roadmap status: Successive minima and Minkowski's theorems](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/SuccessiveMinima/STATUS.md)
+- [Source of `Convex.addHaar_iUnion_vadd` in TauCeti/Analysis/Convex/Measure.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Convex/Measure.lean#L201)
+- [Tau Ceti roadmap status: Successive minima and Minkowski's theorems](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/SuccessiveMinima/STATUS.md)

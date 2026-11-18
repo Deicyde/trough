@@ -1,0 +1,98 @@
+---
+declaration: theorem
+origin: cited
+lean: ContDiffBump.exists_lintegral_lintegral_enorm_inner_halfWavePropagator_sub_littlewoodPaley_le, TauCeti.exists_lintegral_lintegral_enorm_inner_schrodingerPropagator_sub_le
+statement: formalized
+proof: formalized
+---
+
+# The bilinear Strichartz estimate for the frequency-localized wave equation
+
+Let `E` have
+dimension `n`, let `ψⱼ` be the Littlewood–Paley cutoffs built from `φ`, and let `Pⱼ` be the `L²`
+Fourier multiplier with symbol `ψⱼ`. Let `(q, r)` be sharp wave-admissible,
+`2 / q + (n - 1) / r = (n - 1) / 2`, with `2 < q < ∞`, let `p` and `r'` be the Hölder conjugates
+of `q` and `r`, and let `γ = n / 2 - n / r - 1 / q`. There is `C` such that for every `j ∈ ℤ` and
+all almost everywhere strongly measurable `F, G : ℝ → L²(E)`,
+
+`∫∫ |⟪W₊(t - s) Pⱼ Pⱼ F(s), G(t)⟫| ds dt ≤ C 2^{2jγ} ‖F‖_{L^p_t L^{r'}_x} ‖G‖_{L^p_t L^{r'}_x}`.
+
+Since the integrand is the absolute value of the Duhamel pairing, the bound also controls the
+integral over any part of the `(s, t)` plane, such as the retarded region `s < t`.
+
+```lean
+ContDiffBump.exists_lintegral_lintegral_enorm_inner_halfWavePropagator_sub_littlewoodPaley_le.{u_1}
+  {E : Type u_1} [NormedAddCommGroup E] [InnerProductSpace ℝ E] [FiniteDimensional ℝ E]
+  [MeasurableSpace E] [BorelSpace E] (φ : ContDiffBump 0) {p q : NNReal} {r r' : ENNReal}
+  [r'.HolderConjugate r] (hq : 2 < q) (hpq : p.HolderConjugate q)
+  (hqr : 2 / ↑q + (↑(Module.finrank ℝ E) - 1) * r⁻¹.toReal = (↑(Module.finrank ℝ E) - 1) / 2) :
+  ∃ C,
+    ∀ (j : ℤ) (m : ↥(MeasureTheory.Lp ℂ ⊤ MeasureTheory.volume)),
+      (↑↑m =ᵐ[MeasureTheory.volume] fun ξ => ↑(φ.littlewoodPaley j ξ)) →
+        ∀ (F G : ℝ → ↥(MeasureTheory.Lp ℂ 2 MeasureTheory.volume)),
+          MeasureTheory.AEStronglyMeasurable F MeasureTheory.volume →
+            MeasureTheory.AEStronglyMeasurable G MeasureTheory.volume →
+              ∫⁻ (t : ℝ) (s : ℝ),
+                  ‖inner ℂ
+                      ((TauCeti.halfWavePropagator ℂ (t - s))
+                        ((MeasureTheory.Lp.fourierMultiplierCLM ℂ m)
+                          ((MeasureTheory.Lp.fourierMultiplierCLM ℂ m) (F s))))
+                      (G t)‖ₑ ≤
+                ↑C *
+                      ENNReal.ofReal
+                        ((2 ^ j) ^
+                          (2 *
+                            (↑(Module.finrank ℝ E) / 2 - ↑(Module.finrank ℝ E) * r⁻¹.toReal -
+                              (↑q)⁻¹))) *
+                    MeasureTheory.eLpNorm
+                      (fun s => MeasureTheory.eLpNorm (↑↑(F s)) r' MeasureTheory.volume) (↑p)
+                      MeasureTheory.volume *
+                  MeasureTheory.eLpNorm
+                    (fun t => MeasureTheory.eLpNorm (↑↑(G t)) r' MeasureTheory.volume) (↑p)
+                    MeasureTheory.volume
+```
+
+## Depends on
+
+Its statement uses no other declaration mapped here.
+
+## Proof depends on
+
+- [The Hardy–Littlewood–Sobolev inequality](../../../../measure-theory/integral/part-01/the-hardy-littlewood-sobolev-inequality.md)
+- [Hölder's inequality for disjoint pieces](../../../../measure-theory/function/part-01/holders-inequality-for-disjoint-pieces.md)
+- [Plancherel bound for Fourier multipliers](../../../part-03/fourier/part-01/plancherel-bound-for-fourier-multipliers.md)
+- [The Riesz–Thorin interpolation theorem](../../../../measure-theory/integral/part-02/the-riesz-thorin-interpolation-theorem.md)
+- [Young's inequality `L¹ ⋆ L² ⊆ L²`](../../../part-03/convolution/youngs-inequality-l1-l2-l2.md)
+
+## Lean
+
+Formalized in Tau Ceti as [`ContDiffBump.exists_lintegral_lintegral_enorm_inner_halfWavePropagator_sub_littlewoodPaley_le`](https://taucetiproject.org/docs/TauCeti/Analysis/PDE/Wave/Strichartz.html#ContDiffBump.exists_lintegral_lintegral_enorm_inner_halfWavePropagator_sub_littlewoodPaley_le).
+
+## Other forms
+
+**The bilinear Strichartz estimate for the Schrödinger equation in every dimension `n`, at a non-endpoint admissible pair.** Formalized in Tau Ceti as [`TauCeti.exists_lintegral_lintegral_enorm_inner_schrodingerPropagator_sub_le`](https://taucetiproject.org/docs/TauCeti/Analysis/PDE/Schrodinger/Strichartz.html#TauCeti.exists_lintegral_lintegral_enorm_inner_schrodingerPropagator_sub_le).
+
+```lean
+TauCeti.exists_lintegral_lintegral_enorm_inner_schrodingerPropagator_sub_le.{u_1} {E : Type u_1}
+  [NormedAddCommGroup E] [InnerProductSpace ℝ E] [FiniteDimensional ℝ E] [MeasurableSpace E]
+  [BorelSpace E] {p q : NNReal} {r r' : ENNReal} [r'.HolderConjugate r] (hq : 2 < q)
+  (hpq : p.HolderConjugate q)
+  (hqr : 2 / ↑q + ↑(Module.finrank ℝ E) * r⁻¹.toReal = ↑(Module.finrank ℝ E) / 2) :
+  ∃ C,
+    ∀ (F G : ℝ → ↥(MeasureTheory.Lp ℂ 2 MeasureTheory.volume)),
+      MeasureTheory.AEStronglyMeasurable F MeasureTheory.volume →
+        MeasureTheory.AEStronglyMeasurable G MeasureTheory.volume →
+          ∫⁻ (t : ℝ) (s : ℝ), ‖inner ℂ ((TauCeti.schrodingerPropagator ℂ (t - s)) (F s)) (G t)‖ₑ ≤
+            ↑C *
+                MeasureTheory.eLpNorm
+                  (fun s => MeasureTheory.eLpNorm (↑↑(F s)) r' MeasureTheory.volume) (↑p)
+                  MeasureTheory.volume *
+              MeasureTheory.eLpNorm
+                (fun t => MeasureTheory.eLpNorm (↑↑(G t)) r' MeasureTheory.volume) (↑p)
+                MeasureTheory.volume
+```
+
+## Sources
+
+- [Tau Ceti documentation: `ContDiffBump.exists_lintegral_lintegral_enorm_inner_halfWavePropagator_sub_littlewoodPaley_le`](https://taucetiproject.org/docs/TauCeti/Analysis/PDE/Wave/Strichartz.html#ContDiffBump.exists_lintegral_lintegral_enorm_inner_halfWavePropagator_sub_littlewoodPaley_le)
+- [Source of `ContDiffBump.exists_lintegral_lintegral_enorm_inner_halfWavePropagator_sub_littlewoodPaley_le` in TauCeti/Analysis/PDE/Wave/Strichartz.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/PDE/Wave/Strichartz.lean#L296)

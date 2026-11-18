@@ -44,4 +44,4 @@ TauCeti.IsRegularLocalRing.of_globalDimension_lt_top.{v, u} {R : Type u} [CommRi
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.IsRegularLocalRing.of_hasProjectiveDimensionLE`](https://taucetiproject.org/docs/TauCeti/RingTheory/RegularLocalRing/ProjectiveDimension.html#TauCeti.IsRegularLocalRing.of_hasProjectiveDimensionLE)
-- [Source of `TauCeti.IsRegularLocalRing.of_hasProjectiveDimensionLE` in TauCeti/RingTheory/RegularLocalRing/ProjectiveDimension.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RingTheory/RegularLocalRing/ProjectiveDimension.lean#L332)
+- [Source of `TauCeti.IsRegularLocalRing.of_hasProjectiveDimensionLE` in TauCeti/RingTheory/RegularLocalRing/ProjectiveDimension.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RingTheory/RegularLocalRing/ProjectiveDimension.lean#L332)

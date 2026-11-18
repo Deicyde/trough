@@ -28,5 +28,5 @@ Formalized in Tau Ceti as [`Setoid.isSmooth_iff_countablySeparated`](https://tau
 ## Sources
 
 - [Tau Ceti documentation: `Setoid.isSmooth_iff_countablySeparated`](https://taucetiproject.org/docs/TauCeti/SetTheory/Descriptive/BorelReducibility.html#Setoid.isSmooth_iff_countablySeparated)
-- [Source of `Setoid.isSmooth_iff_countablySeparated` in TauCeti/SetTheory/Descriptive/BorelReducibility.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/SetTheory/Descriptive/BorelReducibility.lean#L250)
-- [Tau Ceti roadmap status: Borel equivalence relations, the G₀ dichotomy and Silver's theorem](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/BorelEquivalenceRelations/STATUS.md)
+- [Source of `Setoid.isSmooth_iff_countablySeparated` in TauCeti/SetTheory/Descriptive/BorelReducibility.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/SetTheory/Descriptive/BorelReducibility.lean#L250)
+- [Tau Ceti roadmap status: Borel equivalence relations, the G₀ dichotomy and Silver's theorem](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/BorelEquivalenceRelations/STATUS.md)

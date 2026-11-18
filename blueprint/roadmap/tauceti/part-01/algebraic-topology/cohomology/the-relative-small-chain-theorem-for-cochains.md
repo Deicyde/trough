@@ -34,4 +34,4 @@ Formalized in Tau Ceti as [`TopPair.quasiIso_cochainComplexMap_restrictι_smallS
 ## Sources
 
 - [Tau Ceti documentation: `TopPair.quasiIso_cochainComplexMap_restrictι_smallSingularSubcomplex`](https://taucetiproject.org/docs/TauCeti/AlgebraicTopology/Cohomology/Excision.html#TopPair.quasiIso_cochainComplexMap_restrict%CE%B9_smallSingularSubcomplex)
-- [Source of `TopPair.quasiIso_cochainComplexMap_restrictι_smallSingularSubcomplex` in TauCeti/AlgebraicTopology/Cohomology/Excision.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/AlgebraicTopology/Cohomology/Excision.lean#L76)
+- [Source of `TopPair.quasiIso_cochainComplexMap_restrictι_smallSingularSubcomplex` in TauCeti/AlgebraicTopology/Cohomology/Excision.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/AlgebraicTopology/Cohomology/Excision.lean#L76)

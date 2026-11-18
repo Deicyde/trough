@@ -68,4 +68,4 @@ WeierstrassCurve.Affine.pow_rank_add_one_le_prod.{u_1} {F : Type u_1} [Field F] 
 ## Sources
 
 - [Tau Ceti documentation: `WeierstrassCurve.Affine.pow_rank_le_card_selmerGroup₂`](https://taucetiproject.org/docs/TauCeti/AlgebraicGeometry/EllipticCurve/MordellWeil/RankBound.html#WeierstrassCurve.Affine.pow_rank_le_card_selmerGroup%E2%82%82)
-- [Source of `WeierstrassCurve.Affine.pow_rank_le_card_selmerGroup₂` in TauCeti/AlgebraicGeometry/EllipticCurve/MordellWeil/RankBound.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/AlgebraicGeometry/EllipticCurve/MordellWeil/RankBound.lean#L127)
+- [Source of `WeierstrassCurve.Affine.pow_rank_le_card_selmerGroup₂` in TauCeti/AlgebraicGeometry/EllipticCurve/MordellWeil/RankBound.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/AlgebraicGeometry/EllipticCurve/MordellWeil/RankBound.lean#L127)

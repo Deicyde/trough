@@ -31,4 +31,4 @@ Formalized in Tau Ceti as [`CoxeterSystem.IsMinimalCosetRep.simple_mul_or_exists
 ## Sources
 
 - [Tau Ceti documentation: `CoxeterSystem.IsMinimalCosetRep.simple_mul_or_exists_eq_mul_simple`](https://taucetiproject.org/docs/TauCeti/GroupTheory/Coxeter/Parabolic.html#CoxeterSystem.IsMinimalCosetRep.simple_mul_or_exists_eq_mul_simple)
-- [Source of `CoxeterSystem.IsMinimalCosetRep.simple_mul_or_exists_eq_mul_simple` in TauCeti/GroupTheory/Coxeter/Parabolic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/GroupTheory/Coxeter/Parabolic.lean#L484)
+- [Source of `CoxeterSystem.IsMinimalCosetRep.simple_mul_or_exists_eq_mul_simple` in TauCeti/GroupTheory/Coxeter/Parabolic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/GroupTheory/Coxeter/Parabolic.lean#L484)

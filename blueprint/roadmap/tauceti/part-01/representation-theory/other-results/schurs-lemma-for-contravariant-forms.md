@@ -48,4 +48,4 @@ Representation.eq_zero_of_isEmpty_equiv.{u_1, u_2, u_3, u_4} {𝕜 : Type u_1} {
 ## Sources
 
 - [Tau Ceti documentation: `Representation.exists_forall_apply_eq_mul_apply`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/ContravariantForm.html#Representation.exists_forall_apply_eq_mul_apply)
-- [Source of `Representation.exists_forall_apply_eq_mul_apply` in TauCeti/RepresentationTheory/ContravariantForm.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RepresentationTheory/ContravariantForm.lean#L79)
+- [Source of `Representation.exists_forall_apply_eq_mul_apply` in TauCeti/RepresentationTheory/ContravariantForm.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RepresentationTheory/ContravariantForm.lean#L79)

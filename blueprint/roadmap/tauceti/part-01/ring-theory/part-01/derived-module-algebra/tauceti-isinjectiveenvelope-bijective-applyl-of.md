@@ -30,5 +30,5 @@ Formalized in Tau Ceti as [`TauCeti.IsInjectiveEnvelope.bijective_applyₗ_of_fi
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.IsInjectiveEnvelope.bijective_applyₗ_of_finite`](https://taucetiproject.org/docs/TauCeti/RingTheory/MatlisDuality/Finite.html#TauCeti.IsInjectiveEnvelope.bijective_apply%E2%82%97_of_finite)
-- [Source of `TauCeti.IsInjectiveEnvelope.bijective_applyₗ_of_finite` in TauCeti/RingTheory/MatlisDuality/Finite.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RingTheory/MatlisDuality/Finite.lean#L78)
-- [Tau Ceti roadmap status: Derived module algebra](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/DerivedModuleAlgebra/STATUS.md)
+- [Source of `TauCeti.IsInjectiveEnvelope.bijective_applyₗ_of_finite` in TauCeti/RingTheory/MatlisDuality/Finite.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RingTheory/MatlisDuality/Finite.lean#L78)
+- [Tau Ceti roadmap status: Derived module algebra](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/DerivedModuleAlgebra/STATUS.md)

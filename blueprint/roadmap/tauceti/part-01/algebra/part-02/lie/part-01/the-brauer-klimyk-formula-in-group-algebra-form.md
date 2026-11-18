@@ -38,7 +38,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Cauchy-Schwarz against a majorant](../../../../linear-algebra/bilinear-form/cauchy-schwarz-against-a-majorant.md)
+- [Cauchy-Schwarz against a majorant](../../../../linear-algebra/part-01/bilinear-form/cauchy-schwarz-against-a-majorant.md)
 - [Freudenthal's multiplicity formula](freudenthals-multiplicity-formula.md)
 - [The lattice form of Weyl's theorem](the-lattice-form-of-weyls-theorem.md)
 - [Schur's lemma for Lie modules](../part-02/schurs-lemma-for-lie-modules.md)
@@ -71,4 +71,4 @@ TauCeti.isotypicMultiplicity_tensor_eq_sum_weylSign_mul_formalCharacter_coeff.{u
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.isotypicMultiplicity_tensor_eq_coeff_formalCharacter_mul_weylNumerator`](https://taucetiproject.org/docs/TauCeti/Algebra/Lie/HighestWeight/RacahSpeiser.html#TauCeti.isotypicMultiplicity_tensor_eq_coeff_formalCharacter_mul_weylNumerator)
-- [Source of `TauCeti.isotypicMultiplicity_tensor_eq_coeff_formalCharacter_mul_weylNumerator` in TauCeti/Algebra/Lie/HighestWeight/RacahSpeiser.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/Lie/HighestWeight/RacahSpeiser.lean#L71)
+- [Source of `TauCeti.isotypicMultiplicity_tensor_eq_coeff_formalCharacter_mul_weylNumerator` in TauCeti/Algebra/Lie/HighestWeight/RacahSpeiser.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/Lie/HighestWeight/RacahSpeiser.lean#L71)

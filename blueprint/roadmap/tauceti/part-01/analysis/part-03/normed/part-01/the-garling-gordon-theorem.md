@@ -25,7 +25,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [John's theorem](../../inner-product-space/part-02/johns-theorem.md)
+- [John's theorem](../../../part-01/banach-space-theory/part-01/johns-theorem.md)
 
 ## Lean
 
@@ -34,4 +34,4 @@ Formalized in Tau Ceti as [`Submodule.exists_isIdempotentElem_ker_eq_norm_le_sqr
 ## Sources
 
 - [Tau Ceti documentation: `Submodule.exists_isIdempotentElem_ker_eq_norm_le_sqrt_finrank_add`](https://taucetiproject.org/docs/TauCeti/Analysis/Normed/Module/KadecSnobar.html#Submodule.exists_isIdempotentElem_ker_eq_norm_le_sqrt_finrank_add)
-- [Source of `Submodule.exists_isIdempotentElem_ker_eq_norm_le_sqrt_finrank_add` in TauCeti/Analysis/Normed/Module/KadecSnobar.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Normed/Module/KadecSnobar.lean#L105)
+- [Source of `Submodule.exists_isIdempotentElem_ker_eq_norm_le_sqrt_finrank_add` in TauCeti/Analysis/Normed/Module/KadecSnobar.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Normed/Module/KadecSnobar.lean#L105)

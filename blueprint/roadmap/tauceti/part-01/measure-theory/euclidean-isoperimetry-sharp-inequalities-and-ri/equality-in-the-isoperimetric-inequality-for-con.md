@@ -30,7 +30,7 @@ Its statement uses no other declaration mapped here.
 
 - [Brunn's concavity principle](brunns-concavity-principle.md)
 - [Prékopa–Leindler inequality for the minimum on `ℝ`](../integral/part-02/prekopa-leindler-inequality-for-the-minimum-on-r.md)
-- [Rademacher's theorem for locally Lipschitz functions](../../analysis/part-02/calculus/part-02/rademachers-theorem-for-locally-lipschitz-functi.md)
+- [Rademacher's theorem for locally Lipschitz functions](../../analysis/part-03/calculus/part-02/rademachers-theorem-for-locally-lipschitz-functi.md)
 
 ## Lean
 
@@ -39,5 +39,5 @@ Formalized in Tau Ceti as [`ConvexBody.perimeter_pow_eq_iff_exists_eq_closedBall
 ## Sources
 
 - [Tau Ceti documentation: `ConvexBody.perimeter_pow_eq_iff_exists_eq_closedBall`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Measure/Lebesgue/BrunnMinkowski/Isoperimetric.html#ConvexBody.perimeter_pow_eq_iff_exists_eq_closedBall)
-- [Source of `ConvexBody.perimeter_pow_eq_iff_exists_eq_closedBall` in TauCeti/MeasureTheory/Measure/Lebesgue/BrunnMinkowski/Isoperimetric.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/Measure/Lebesgue/BrunnMinkowski/Isoperimetric.lean#L133)
-- [Tau Ceti roadmap status: Euclidean isoperimetry, sharp inequalities, and rigidity](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/Isoperimetry/STATUS.md)
+- [Source of `ConvexBody.perimeter_pow_eq_iff_exists_eq_closedBall` in TauCeti/MeasureTheory/Measure/Lebesgue/BrunnMinkowski/Isoperimetric.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/Measure/Lebesgue/BrunnMinkowski/Isoperimetric.lean#L133)
+- [Tau Ceti roadmap status: Euclidean isoperimetry, sharp inequalities, and rigidity](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/Isoperimetry/STATUS.md)

@@ -27,5 +27,5 @@ Formalized in Tau Ceti as [`TauCeti.IsRegularLocalRing.globalDimension_eq_ringKr
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.IsRegularLocalRing.globalDimension_eq_ringKrullDim`](https://taucetiproject.org/docs/TauCeti/RingTheory/RegularLocalRing/ProjectiveDimension.html#TauCeti.IsRegularLocalRing.globalDimension_eq_ringKrullDim)
-- [Source of `TauCeti.IsRegularLocalRing.globalDimension_eq_ringKrullDim` in TauCeti/RingTheory/RegularLocalRing/ProjectiveDimension.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RingTheory/RegularLocalRing/ProjectiveDimension.lean#L219)
-- [Tau Ceti roadmap status: Purity of the branch locus](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/PurityOfBranchLocus/STATUS.md)
+- [Source of `TauCeti.IsRegularLocalRing.globalDimension_eq_ringKrullDim` in TauCeti/RingTheory/RegularLocalRing/ProjectiveDimension.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RingTheory/RegularLocalRing/ProjectiveDimension.lean#L219)
+- [Tau Ceti roadmap status: Purity of the branch locus](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/PurityOfBranchLocus/STATUS.md)

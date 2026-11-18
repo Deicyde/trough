@@ -27,7 +27,7 @@ TauCeti.isMorseOneForm_iff_surjective_sectionLinearization.{u_1, u_2, u_3} {E : 
 
 ## Proof depends on
 
-- [The Poincaré lemma on manifolds](../../../geometry/part-02/manifold/part-02/the-poincare-lemma-on-manifolds.md)
+- [The Poincaré lemma on manifolds](../../../geometry/part-02/manifold/part-03/the-poincare-lemma-on-manifolds.md)
 
 ## Lean
 
@@ -36,5 +36,5 @@ Formalized in Tau Ceti as [`TauCeti.isMorseOneForm_iff_surjective_sectionLineari
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.isMorseOneForm_iff_surjective_sectionLinearization`](https://taucetiproject.org/docs/TauCeti/Geometry/Manifold/Morse/OneForm/Linearization.html#TauCeti.isMorseOneForm_iff_surjective_sectionLinearization)
-- [Source of `TauCeti.isMorseOneForm_iff_surjective_sectionLinearization` in TauCeti/Geometry/Manifold/Morse/OneForm/Linearization.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/Manifold/Morse/OneForm/Linearization.lean#L97)
-- [Tau Ceti roadmap status: Morse–Novikov homology and dynamical Reidemeister torsion](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/MorseNovikov/STATUS.md)
+- [Source of `TauCeti.isMorseOneForm_iff_surjective_sectionLinearization` in TauCeti/Geometry/Manifold/Morse/OneForm/Linearization.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/Manifold/Morse/OneForm/Linearization.lean#L97)
+- [Tau Ceti roadmap status: Morse–Novikov homology and dynamical Reidemeister torsion](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/MorseNovikov/STATUS.md)

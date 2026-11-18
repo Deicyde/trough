@@ -34,7 +34,6 @@ TauCeti.Multiquadratic.isSquare_iff_forall_genusCharFunNarrowClassGroupHom_eq_on
 
 ## Depends on
 
-- [The genus character on the narrow class group](../../part-01/multiquadratic-fields-and-genus-theory/the-genus-character-on-the-narrow-class-group.md)
 - [NumberField.NarrowClassGroup](../../part-01/multiquadratic-fields-and-genus-theory/numberfield-narrowclassgroup.md)
 
 ## Proof depends on
@@ -49,4 +48,4 @@ Formalized in Tau Ceti as [`TauCeti.Multiquadratic.isSquare_iff_forall_genusChar
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Multiquadratic.isSquare_iff_forall_genusCharFunNarrowClassGroupHom_eq_one`](https://taucetiproject.org/docs/TauCeti/NumberTheory/Multiquadratic/Quadratic/GenusCharacter/PrincipalGenus.html#TauCeti.Multiquadratic.isSquare_iff_forall_genusCharFunNarrowClassGroupHom_eq_one)
-- [Source of `TauCeti.Multiquadratic.isSquare_iff_forall_genusCharFunNarrowClassGroupHom_eq_one` in TauCeti/NumberTheory/Multiquadratic/Quadratic/GenusCharacter/PrincipalGenus.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/Multiquadratic/Quadratic/GenusCharacter/PrincipalGenus.lean#L143)
+- [Source of `TauCeti.Multiquadratic.isSquare_iff_forall_genusCharFunNarrowClassGroupHom_eq_one` in TauCeti/NumberTheory/Multiquadratic/Quadratic/GenusCharacter/PrincipalGenus.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/Multiquadratic/Quadratic/GenusCharacter/PrincipalGenus.lean#L143)

@@ -37,4 +37,4 @@ TauCeti.FiniteField.exists_pow_eq_iff_pow_card_sub_one_div_eq_one.{u_1} {F : Typ
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.FiniteField.pow_card_div_two_eq_neg_one`](https://taucetiproject.org/docs/TauCeti/FieldTheory/Finite/EulerCriterion.html#TauCeti.FiniteField.pow_card_div_two_eq_neg_one)
-- [Source of `TauCeti.FiniteField.pow_card_div_two_eq_neg_one` in TauCeti/FieldTheory/Finite/EulerCriterion.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/FieldTheory/Finite/EulerCriterion.lean#L59)
+- [Source of `TauCeti.FiniteField.pow_card_div_two_eq_neg_one` in TauCeti/FieldTheory/Finite/EulerCriterion.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/FieldTheory/Finite/EulerCriterion.lean#L59)

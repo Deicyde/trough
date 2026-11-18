@@ -65,4 +65,4 @@ TauCeti.ClassFieldTheory.localEulerCharacteristicK0_eq_localCardNormK0_iff {n : 
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.ClassFieldTheory.forall_localEulerCharacteristic_eq_localCardNorm_iff`](https://taucetiproject.org/docs/TauCeti/NumberTheory/ClassFieldTheory/Local/EulerCharacteristic/GrothendieckGroup.html#TauCeti.ClassFieldTheory.forall_localEulerCharacteristic_eq_localCardNorm_iff)
-- [Source of `TauCeti.ClassFieldTheory.forall_localEulerCharacteristic_eq_localCardNorm_iff` in TauCeti/NumberTheory/ClassFieldTheory/Local/EulerCharacteristic/GrothendieckGroup.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/ClassFieldTheory/Local/EulerCharacteristic/GrothendieckGroup.lean#L195)
+- [Source of `TauCeti.ClassFieldTheory.forall_localEulerCharacteristic_eq_localCardNorm_iff` in TauCeti/NumberTheory/ClassFieldTheory/Local/EulerCharacteristic/GrothendieckGroup.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/ClassFieldTheory/Local/EulerCharacteristic/GrothendieckGroup.lean#L195)

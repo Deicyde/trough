@@ -28,4 +28,4 @@ Formalized in Tau Ceti as [`ProbabilityTheory.Kernel.pow_apply_singleton_mul_le_
 ## Sources
 
 - [Tau Ceti documentation: `ProbabilityTheory.Kernel.pow_apply_singleton_mul_le_pow_add_apply`](https://taucetiproject.org/docs/TauCeti/Probability/Kernel/Composition/Power.html#ProbabilityTheory.Kernel.pow_apply_singleton_mul_le_pow_add_apply)
-- [Source of `ProbabilityTheory.Kernel.pow_apply_singleton_mul_le_pow_add_apply` in TauCeti/Probability/Kernel/Composition/Power.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Probability/Kernel/Composition/Power.lean#L107)
+- [Source of `ProbabilityTheory.Kernel.pow_apply_singleton_mul_le_pow_add_apply` in TauCeti/Probability/Kernel/Composition/Power.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Probability/Kernel/Composition/Power.lean#L107)

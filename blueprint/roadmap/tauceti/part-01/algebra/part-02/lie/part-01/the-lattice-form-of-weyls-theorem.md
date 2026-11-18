@@ -33,4 +33,4 @@ Formalized in Tau Ceti as [`TauCeti.complementedLattice_lieSubmodule_of_isKillin
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.complementedLattice_lieSubmodule_of_isKilling`](https://taucetiproject.org/docs/TauCeti/Algebra/Lie/HighestWeight/CompleteReducibility.html#TauCeti.complementedLattice_lieSubmodule_of_isKilling)
-- [Source of `TauCeti.complementedLattice_lieSubmodule_of_isKilling` in TauCeti/Algebra/Lie/HighestWeight/CompleteReducibility.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/Lie/HighestWeight/CompleteReducibility.lean#L268)
+- [Source of `TauCeti.complementedLattice_lieSubmodule_of_isKilling` in TauCeti/Algebra/Lie/HighestWeight/CompleteReducibility.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/Lie/HighestWeight/CompleteReducibility.lean#L268)

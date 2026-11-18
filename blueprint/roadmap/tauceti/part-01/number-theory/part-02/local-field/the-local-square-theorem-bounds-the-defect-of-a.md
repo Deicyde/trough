@@ -30,4 +30,4 @@ Formalized in Tau Ceti as [`TauCeti.defectExponent_le_two_mul_natCastValuation`]
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.defectExponent_le_two_mul_natCastValuation`](https://taucetiproject.org/docs/TauCeti/NumberTheory/LocalField/QuadraticForm/Defect/Basic.html#TauCeti.defectExponent_le_two_mul_natCastValuation)
-- [Source of `TauCeti.defectExponent_le_two_mul_natCastValuation` in TauCeti/NumberTheory/LocalField/QuadraticForm/Defect/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/LocalField/QuadraticForm/Defect/Basic.lean#L499)
+- [Source of `TauCeti.defectExponent_le_two_mul_natCastValuation` in TauCeti/NumberTheory/LocalField/QuadraticForm/Defect/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/LocalField/QuadraticForm/Defect/Basic.lean#L507)

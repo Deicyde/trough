@@ -34,4 +34,4 @@ Formalized in Tau Ceti as [`TauCeti.not_forall_alternatingGroup_le_of_isPreprimi
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.not_forall_alternatingGroup_le_of_isPreprimitive_of_isCycle_mem_of_card_support_eq`](https://taucetiproject.org/docs/TauCeti/GroupTheory/Perm/Jordan/Counterexamples.html#TauCeti.not_forall_alternatingGroup_le_of_isPreprimitive_of_isCycle_mem_of_card_support_eq)
-- [Source of `TauCeti.not_forall_alternatingGroup_le_of_isPreprimitive_of_isCycle_mem_of_card_support_eq` in TauCeti/GroupTheory/Perm/Jordan/Counterexamples.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/GroupTheory/Perm/Jordan/Counterexamples.lean#L46)
+- [Source of `TauCeti.not_forall_alternatingGroup_le_of_isPreprimitive_of_isCycle_mem_of_card_support_eq` in TauCeti/GroupTheory/Perm/Jordan/Counterexamples.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/GroupTheory/Perm/Jordan/Counterexamples.lean#L46)

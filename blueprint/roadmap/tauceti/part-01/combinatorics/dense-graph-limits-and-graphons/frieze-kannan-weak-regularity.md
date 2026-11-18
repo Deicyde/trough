@@ -38,5 +38,5 @@ Formalized in Tau Ceti as [`TauCeti.DenseGraphLimits.weak_regularity_frieze_kann
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.DenseGraphLimits.weak_regularity_frieze_kannan`](https://taucetiproject.org/docs/TauCeti/Combinatorics/DenseGraphLimits/StepGraphon/Regularity.html#TauCeti.DenseGraphLimits.weak_regularity_frieze_kannan)
-- [Source of `TauCeti.DenseGraphLimits.weak_regularity_frieze_kannan` in TauCeti/Combinatorics/DenseGraphLimits/StepGraphon/Regularity.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Combinatorics/DenseGraphLimits/StepGraphon/Regularity.lean#L157)
-- [Tau Ceti roadmap status: Dense graph limits and graphons](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/Completed/DenseGraphLimits/STATUS.md)
+- [Source of `TauCeti.DenseGraphLimits.weak_regularity_frieze_kannan` in TauCeti/Combinatorics/DenseGraphLimits/StepGraphon/Regularity.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Combinatorics/DenseGraphLimits/StepGraphon/Regularity.lean#L157)
+- [Tau Ceti roadmap status: Dense graph limits and graphons](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/Completed/DenseGraphLimits/STATUS.md)

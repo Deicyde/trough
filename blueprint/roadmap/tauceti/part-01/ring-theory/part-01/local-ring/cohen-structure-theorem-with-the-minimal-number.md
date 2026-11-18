@@ -55,4 +55,4 @@ TauCeti.exists_surjective_mvPowerSeries_of_span_eq_maximalIdeal.{u_1, u_2, u_3} 
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.exists_surjective_mvPowerSeries_spanFinrank`](https://taucetiproject.org/docs/TauCeti/RingTheory/LocalRing/CoefficientField.html#TauCeti.exists_surjective_mvPowerSeries_spanFinrank)
-- [Source of `TauCeti.exists_surjective_mvPowerSeries_spanFinrank` in TauCeti/RingTheory/LocalRing/CoefficientField.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RingTheory/LocalRing/CoefficientField.lean#L160)
+- [Source of `TauCeti.exists_surjective_mvPowerSeries_spanFinrank` in TauCeti/RingTheory/LocalRing/CoefficientField.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RingTheory/LocalRing/CoefficientField.lean#L159)

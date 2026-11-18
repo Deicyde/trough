@@ -40,4 +40,4 @@ TauCeti.riesz_lemma_of_norm_lt_of_lt.{u_1, u_2} {𝕜 : Type u_1} {E : Type u_2}
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.riesz_lemma_translate`](https://taucetiproject.org/docs/TauCeti/Analysis/Normed/Module/RieszLemma.html#TauCeti.riesz_lemma_translate)
-- [Source of `TauCeti.riesz_lemma_translate` in TauCeti/Analysis/Normed/Module/RieszLemma.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Normed/Module/RieszLemma.lean#L42)
+- [Source of `TauCeti.riesz_lemma_translate` in TauCeti/Analysis/Normed/Module/RieszLemma.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Normed/Module/RieszLemma.lean#L42)

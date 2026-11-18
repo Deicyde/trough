@@ -24,7 +24,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Krein–Šmulian theorem](../part-01/krein-smulian-theorem.md)
+- [Krein–Šmulian theorem](krein-smulian-theorem.md)
 
 ## Lean
 
@@ -33,4 +33,4 @@ Formalized in Tau Ceti as [`Submodule.isClosed_iff_isClosed_inter_closedBall_zer
 ## Sources
 
 - [Tau Ceti documentation: `Submodule.isClosed_iff_isClosed_inter_closedBall_zero_one`](https://taucetiproject.org/docs/TauCeti/Analysis/Normed/Module/Dual/KreinSmulian.html#Submodule.isClosed_iff_isClosed_inter_closedBall_zero_one)
-- [Source of `Submodule.isClosed_iff_isClosed_inter_closedBall_zero_one` in TauCeti/Analysis/Normed/Module/Dual/KreinSmulian.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Normed/Module/Dual/KreinSmulian.lean#L284)
+- [Source of `Submodule.isClosed_iff_isClosed_inter_closedBall_zero_one` in TauCeti/Analysis/Normed/Module/Dual/KreinSmulian.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Normed/Module/Dual/KreinSmulian.lean#L280)

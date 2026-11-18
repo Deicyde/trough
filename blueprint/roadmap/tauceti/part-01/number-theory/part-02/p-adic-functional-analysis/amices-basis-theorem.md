@@ -23,7 +23,7 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [Amice's theorem](amices-theorem.md)
-- [Legendre's formula for `(pᵏ)!`](../padics/legendres-formula-for-pk.md)
+- [Legendre's formula for `(pᵏ)!`](../../part-03/padics/legendres-formula-for-pk.md)
 
 ## Lean
 
@@ -32,4 +32,4 @@ Formalized in Tau Ceti as [`TauCeti.AnalyticStage.isOrthonormalBasis_amiceTerm`]
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.AnalyticStage.isOrthonormalBasis_amiceTerm`](https://taucetiproject.org/docs/TauCeti/NumberTheory/Padics/Distribution/Amice/Isometry.html#TauCeti.AnalyticStage.isOrthonormalBasis_amiceTerm)
-- [Source of `TauCeti.AnalyticStage.isOrthonormalBasis_amiceTerm` in TauCeti/NumberTheory/Padics/Distribution/Amice/Isometry.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/Padics/Distribution/Amice/Isometry.lean#L198)
+- [Source of `TauCeti.AnalyticStage.isOrthonormalBasis_amiceTerm` in TauCeti/NumberTheory/Padics/Distribution/Amice/Isometry.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/Padics/Distribution/Amice/Isometry.lean#L198)

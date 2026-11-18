@@ -35,7 +35,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The Morse--Sard theorem](../../part-02/calculus/part-01/the-morse-sard-theorem.md)
+- [The Morse--Sard theorem](the-morse-sard-theorem.md)
 
 ## Lean
 
@@ -71,5 +71,5 @@ TauCeti.exists_mem_nhds_isClosed_isNowhereDense_image_criticalPoints.{u_1, u_2} 
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.isMeagre_image_criticalPoints_of_isFredholm`](https://taucetiproject.org/docs/TauCeti/Analysis/Fredholm/SardSmale.html#TauCeti.isMeagre_image_criticalPoints_of_isFredholm)
-- [Source of `TauCeti.isMeagre_image_criticalPoints_of_isFredholm` in TauCeti/Analysis/Fredholm/SardSmale.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Fredholm/SardSmale.lean#L480)
-- [Tau Ceti roadmap status: Analytic Heegaard Floer homology](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/HeegaardFloer/STATUS.md)
+- [Source of `TauCeti.isMeagre_image_criticalPoints_of_isFredholm` in TauCeti/Analysis/Fredholm/SardSmale.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Fredholm/SardSmale.lean#L480)
+- [Tau Ceti roadmap status: Analytic Heegaard Floer homology](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/HeegaardFloer/STATUS.md)

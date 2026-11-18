@@ -40,5 +40,5 @@ IsSimpleModule.algebraMap_end_bijective_of_completeSpace.{u_1, u_2} {A : Type u_
 ## Sources
 
 - [Tau Ceti documentation: `LinearMap.existsUnique_eq_smul_of_isSimpleModule`](https://taucetiproject.org/docs/TauCeti/Analysis/Normed/Module/Simple.html#LinearMap.existsUnique_eq_smul_of_isSimpleModule)
-- [Source of `LinearMap.existsUnique_eq_smul_of_isSimpleModule` in TauCeti/Analysis/Normed/Module/Simple.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Normed/Module/Simple.lean#L97)
-- [Tau Ceti roadmap status: Banach algebras](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/BanachAlgebras/STATUS.md)
+- [Source of `LinearMap.existsUnique_eq_smul_of_isSimpleModule` in TauCeti/Analysis/Normed/Module/Simple.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Normed/Module/Simple.lean#L97)
+- [Tau Ceti roadmap status: Banach algebras](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/BanachAlgebras/STATUS.md)

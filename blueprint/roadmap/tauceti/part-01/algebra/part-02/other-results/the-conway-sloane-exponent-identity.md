@@ -32,4 +32,4 @@ Formalized in Tau Ceti as [`Finset.two_mul_sum_range_choose_add_sum_sum_tsub`](h
 ## Sources
 
 - [Tau Ceti documentation: `Finset.two_mul_sum_range_choose_add_sum_sum_tsub`](https://taucetiproject.org/docs/TauCeti/Algebra/BigOperators/Finset/LayerCake.html#Finset.two_mul_sum_range_choose_add_sum_sum_tsub)
-- [Source of `Finset.two_mul_sum_range_choose_add_sum_sum_tsub` in TauCeti/Algebra/BigOperators/Finset/LayerCake.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/BigOperators/Finset/LayerCake.lean#L72)
+- [Source of `Finset.two_mul_sum_range_choose_add_sum_sum_tsub` in TauCeti/Algebra/BigOperators/Finset/LayerCake.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/BigOperators/Finset/LayerCake.lean#L72)

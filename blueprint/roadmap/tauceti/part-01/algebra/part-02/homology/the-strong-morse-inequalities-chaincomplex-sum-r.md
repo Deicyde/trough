@@ -31,4 +31,4 @@ Formalized in Tau Ceti as [`ChainComplex.sum_range_neg_one_pow_mul_finrank_homol
 ## Sources
 
 - [Tau Ceti documentation: `ChainComplex.sum_range_neg_one_pow_mul_finrank_homology_le`](https://taucetiproject.org/docs/TauCeti/Algebra/Homology/EulerCharacteristic/MorseInequalities.html#ChainComplex.sum_range_neg_one_pow_mul_finrank_homology_le)
-- [Source of `ChainComplex.sum_range_neg_one_pow_mul_finrank_homology_le` in TauCeti/Algebra/Homology/EulerCharacteristic/MorseInequalities.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/Homology/EulerCharacteristic/MorseInequalities.lean#L171)
+- [Source of `ChainComplex.sum_range_neg_one_pow_mul_finrank_homology_le` in TauCeti/Algebra/Homology/EulerCharacteristic/MorseInequalities.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/Homology/EulerCharacteristic/MorseInequalities.lean#L171)

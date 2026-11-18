@@ -57,4 +57,4 @@ TauCeti.frobenius_reciprocity_resFDRep.{u, v} {k : Type u} {G : Type v} [Field k
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.frobenius_reciprocity_classFunction`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/Induction/FrobeniusReciprocity.html#TauCeti.frobenius_reciprocity_classFunction)
-- [Source of `TauCeti.frobenius_reciprocity_classFunction` in TauCeti/RepresentationTheory/Induction/FrobeniusReciprocity.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RepresentationTheory/Induction/FrobeniusReciprocity.lean#L266)
+- [Source of `TauCeti.frobenius_reciprocity_classFunction` in TauCeti/RepresentationTheory/Induction/FrobeniusReciprocity.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RepresentationTheory/Induction/FrobeniusReciprocity.lean#L266)

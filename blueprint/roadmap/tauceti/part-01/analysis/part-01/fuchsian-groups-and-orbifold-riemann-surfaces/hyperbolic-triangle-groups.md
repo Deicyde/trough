@@ -30,11 +30,11 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The angle condition of Poincaré's theorem](../../part-02/complex/part-01/the-angle-condition-of-poincares-theorem.md)
-- [The cusp condition of Poincaré's theorem](../../part-02/complex/part-01/the-cusp-condition-of-poincares-theorem.md)
-- [The Gauss–Bonnet formula](../../part-02/complex/part-01/the-gauss-bonnet-formula.md)
+- [The angle condition of Poincaré's theorem](../../part-03/complex/part-01/the-angle-condition-of-poincares-theorem.md)
+- [The cusp condition of Poincaré's theorem](../../part-03/complex/part-01/the-cusp-condition-of-poincares-theorem.md)
+- [The Gauss–Bonnet formula](../../part-03/complex/part-02/the-gauss-bonnet-formula.md)
 - [The Möbius difference formula](../../../algebra/part-02/other-results/the-mobius-difference-formula.md)
-- [Poincaré's presentation theorem](../../part-02/complex/part-03/poincares-presentation-theorem.md)
+- [Poincaré's presentation theorem](../../part-03/complex/part-03/poincares-presentation-theorem.md)
 
 ## Lean
 
@@ -43,5 +43,5 @@ Formalized in Tau Ceti as [`TauCeti.TriangleOrder.IsHyperbolic.exists_isCofinite
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.TriangleOrder.IsHyperbolic.exists_isCofinite_triangleGroup`](https://taucetiproject.org/docs/TauCeti/Analysis/Complex/Fuchsian/TriangleOrder/Group.html#TauCeti.TriangleOrder.IsHyperbolic.exists_isCofinite_triangleGroup)
-- [Source of `TauCeti.TriangleOrder.IsHyperbolic.exists_isCofinite_triangleGroup` in TauCeti/Analysis/Complex/Fuchsian/TriangleOrder/Group.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Complex/Fuchsian/TriangleOrder/Group.lean#L465)
-- [Tau Ceti roadmap status: Fuchsian groups and orbifold Riemann surfaces](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/FuchsianOrbifolds/STATUS.md)
+- [Source of `TauCeti.TriangleOrder.IsHyperbolic.exists_isCofinite_triangleGroup` in TauCeti/Analysis/Complex/Fuchsian/TriangleOrder/Group.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Complex/Fuchsian/TriangleOrder/Group.lean#L465)
+- [Tau Ceti roadmap status: Fuchsian groups and orbifold Riemann surfaces](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/FuchsianOrbifolds/STATUS.md)

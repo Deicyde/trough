@@ -55,4 +55,4 @@ TauCeti.resolventSextic_X_pow_five_add_C_mul_X_add_C (a b : ℤ) :
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.quinticF20Spec_specialize_X_pow_five_add_C_mul_X_add_C`](https://taucetiproject.org/docs/TauCeti/FieldTheory/GaloisGroups/Resolvent/Quintic/Trinomial.html#TauCeti.quinticF20Spec_specialize_X_pow_five_add_C_mul_X_add_C)
-- [Source of `TauCeti.quinticF20Spec_specialize_X_pow_five_add_C_mul_X_add_C` in TauCeti/FieldTheory/GaloisGroups/Resolvent/Quintic/Trinomial.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/FieldTheory/GaloisGroups/Resolvent/Quintic/Trinomial.lean#L347)
+- [Source of `TauCeti.quinticF20Spec_specialize_X_pow_five_add_C_mul_X_add_C` in TauCeti/FieldTheory/GaloisGroups/Resolvent/Quintic/Trinomial.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/FieldTheory/GaloisGroups/Resolvent/Quintic/Trinomial.lean#L347)

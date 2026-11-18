@@ -73,4 +73,4 @@ MeasureTheory.Measure.ae_tendsto_setLAverage_ball.{u_1} {E : Type u_1} [NormedAd
 ## Sources
 
 - [Tau Ceti documentation: `Besicovitch.ae_tendsto_average_closedBall`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Covering/Besicovitch.html#Besicovitch.ae_tendsto_average_closedBall)
-- [Source of `Besicovitch.ae_tendsto_average_closedBall` in TauCeti/MeasureTheory/Covering/Besicovitch.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/Covering/Besicovitch.lean#L134)
+- [Source of `Besicovitch.ae_tendsto_average_closedBall` in TauCeti/MeasureTheory/Covering/Besicovitch.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/Covering/Besicovitch.lean#L130)

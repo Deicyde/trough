@@ -1,15 +1,15 @@
 # Random matrices
 
-The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/RandomMatrices/README.md) names as Tau Ceti has them at commit [a6027b1d](https://github.com/TauCetiProject/TauCeti/tree/a6027b1d24fcb935c53bd5b50d11b40991cda418).
+The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/RandomMatrices/README.md) names, and the other results named in the modules where only this status names declarations, or in folders below the areas where only it names 2 or more, as Tau Ceti has them at commit [cd41bffc](https://github.com/TauCetiProject/TauCeti/tree/cd41bffcb343151b3e58c89392e206b11fe78c1c).
 
 - [TauCeti.Probability.marchenkoPastur](tauceti-probability-marchenkopastur.md)
-- [Noncrossing-partition moment formula for the Marchenko–Pastur law](noncrossing-partition-moment-formula-for-the-mar.md)
-- [TauCeti.Probability.eq_resolventTransform_marchenkoPastur_iff](tauceti-probability-eq-resolventtransform-marche.md)
+- [TauCeti.Probability.map_sq_quarterCircle](tauceti-probability-map-sq-quartercircle.md)
 - [Stieltjes inversion](stieltjes-inversion.md)
-- [MeasureTheory.Measure.ext_of_resolventTransform](measuretheory-measure-ext-of-resolventtransform.md)
 - [The Hoffman–Wielandt inequality for Hermitian matrices](the-hoffman-wielandt-inequality-for-hermitian-ma.md)
-- [The singular-value Hoffman–Wielandt inequality for same-shaped rectangular matrices](the-singular-value-hoffman-wielandt-inequality-f.md)
+- [TauCeti.Probability.poincareInequality_stdGaussian_iff](tauceti-probability-poincareinequality-stdgaussi.md)
+- [TauCeti.Probability.not_logSobolevInequality_gaussianReal](tauceti-probability-not-logsobolevinequality-gau.md)
 - [TauCeti.Probability.empiricalFiniteMeasure](tauceti-probability-empiricalfinitemeasure.md)
-- [Matrix.tendsto_spectralMeasure_iff_of_rank_sub_div_card_tendsto_zero](matrix-tendsto-spectralmeasure-iff-of-rank-sub-d.md)
-- [TauCeti.Probability.semicircleReal](tauceti-probability-semicirclereal.md)
 - [TauCeti.wignerMatrix](tauceti-wignermatrix.md)
+- [TauCeti.TreeWalk.card_closedTreeWalk](tauceti-treewalk-card-closedtreewalk.md)
+- [TauCeti.Probability.circularLaw](tauceti-probability-circularlaw.md)
+- [The singular-value Hoffman–Wielandt inequality for same-shaped rectangular matrices](the-singular-value-hoffman-wielandt-inequality-f.md)

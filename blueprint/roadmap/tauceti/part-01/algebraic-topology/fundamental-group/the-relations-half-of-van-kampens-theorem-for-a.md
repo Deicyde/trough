@@ -31,4 +31,4 @@ Formalized in Tau Ceti as [`TauCeti.ker_vanKampenWideLift`](https://taucetiproje
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.ker_vanKampenWideLift`](https://taucetiproject.org/docs/TauCeti/AlgebraicTopology/FundamentalGroup/VanKampen/Presentation/Basic.html#TauCeti.ker_vanKampenWideLift)
-- [Source of `TauCeti.ker_vanKampenWideLift` in TauCeti/AlgebraicTopology/FundamentalGroup/VanKampen/Presentation/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/AlgebraicTopology/FundamentalGroup/VanKampen/Presentation/Basic.lean#L241)
+- [Source of `TauCeti.ker_vanKampenWideLift` in TauCeti/AlgebraicTopology/FundamentalGroup/VanKampen/Presentation/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/AlgebraicTopology/FundamentalGroup/VanKampen/Presentation/Basic.lean#L241)

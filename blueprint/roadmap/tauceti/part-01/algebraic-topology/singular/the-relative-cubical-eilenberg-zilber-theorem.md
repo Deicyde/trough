@@ -21,7 +21,7 @@ TauCeti.quasiIso_cubicalCrossProductRel.{u} (k : Type u) [CommRing k] (X : TopCa
 
 Its statement uses no other declaration mapped here.
 
-## Proof depends on
+## Informally uses
 
 - [The cubical Eilenberg–Zilber theorem](the-cubical-eilenberg-zilber-theorem.md)
 
@@ -32,4 +32,4 @@ Formalized in Tau Ceti as [`TauCeti.quasiIso_cubicalCrossProductRel`](https://ta
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.quasiIso_cubicalCrossProductRel`](https://taucetiproject.org/docs/TauCeti/AlgebraicTopology/Singular/Cubical/Kunneth/Relative.html#TauCeti.quasiIso_cubicalCrossProductRel)
-- [Source of `TauCeti.quasiIso_cubicalCrossProductRel` in TauCeti/AlgebraicTopology/Singular/Cubical/Kunneth/Relative.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/AlgebraicTopology/Singular/Cubical/Kunneth/Relative.lean#L219)
+- [Source of `TauCeti.quasiIso_cubicalCrossProductRel` in TauCeti/AlgebraicTopology/Singular/Cubical/Kunneth/Relative.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/AlgebraicTopology/Singular/Cubical/Kunneth/Relative.lean#L253)

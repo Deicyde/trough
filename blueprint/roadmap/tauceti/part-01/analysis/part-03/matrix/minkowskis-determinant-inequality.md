@@ -41,4 +41,4 @@ LinearMap.IsPositive.det_rpow_add_det_rpow_le.{u_1} {E : Type u_1} [NormedAddCom
 ## Sources
 
 - [Tau Ceti documentation: `Matrix.PosSemidef.det_rpow_add_det_rpow_le`](https://taucetiproject.org/docs/TauCeti/Analysis/Matrix/MinkowskiDeterminant.html#Matrix.PosSemidef.det_rpow_add_det_rpow_le)
-- [Source of `Matrix.PosSemidef.det_rpow_add_det_rpow_le` in TauCeti/Analysis/Matrix/MinkowskiDeterminant.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Matrix/MinkowskiDeterminant.lean#L81)
+- [Source of `Matrix.PosSemidef.det_rpow_add_det_rpow_le` in TauCeti/Analysis/Matrix/MinkowskiDeterminant.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Matrix/MinkowskiDeterminant.lean#L81)

@@ -9,7 +9,7 @@ proof: formalized
 # Quantitative finite de Finetti bound, exchangeable law to empirical mixture
 
 If the first
-`n` coordinates of a process are exchangeable and `m ≤ n`, then every measurable event under the
+`n` coordinates of a process are exchangeable and `m ≤ n`, then every event under the
 `m`-prefix law has mass at most its mass under sampling `m` entries with replacement from the first
 `n` coordinates, plus `choose m 2 / n`. For `n > 0` that sample is the mixture of `m`-fold products
 of the empirical distribution of the first `n` coordinates.
@@ -19,7 +19,7 @@ TauCeti.Probability.ExchangeableAt.prefixLaw_le_sampleWithReplacement_add.{u_1, 
   [MeasurableSpace α] {Ω : Type u_2} [MeasurableSpace Ω] {μ : MeasureTheory.Measure Ω}
   [MeasureTheory.IsProbabilityMeasure μ] {X : ℕ → Ω → α} {m n : ℕ}
   (h : TauCeti.Probability.ExchangeableAt μ X n) (hmn : m ≤ n)
-  (hX : ∀ (i : Fin n), AEMeasurable (X ↑i) μ) {A : Set (Fin m → α)} (hA : MeasurableSet A) :
+  (hX : ∀ (i : Fin n), AEMeasurable (X ↑i) μ) (A : Set (Fin m → α)) :
   (TauCeti.Probability.prefixLaw μ X m) A ≤
     (TauCeti.Probability.sampleWithReplacement (TauCeti.Probability.prefixLaw μ X n)) A +
       ↑(m.choose 2) / ↑n
@@ -46,7 +46,7 @@ TauCeti.Probability.ExchangeableAt.sampleWithReplacement_le_prefixLaw_add.{u_1, 
   [MeasurableSpace α] {Ω : Type u_2} [MeasurableSpace Ω] {μ : MeasureTheory.Measure Ω}
   [MeasureTheory.IsProbabilityMeasure μ] {X : ℕ → Ω → α} {m n : ℕ}
   (h : TauCeti.Probability.ExchangeableAt μ X n) (hmn : m ≤ n)
-  (hX : ∀ (i : Fin n), AEMeasurable (X ↑i) μ) {A : Set (Fin m → α)} (hA : MeasurableSet A) :
+  (hX : ∀ (i : Fin n), AEMeasurable (X ↑i) μ) (A : Set (Fin m → α)) :
   (TauCeti.Probability.sampleWithReplacement (TauCeti.Probability.prefixLaw μ X n)) A ≤
     (TauCeti.Probability.prefixLaw μ X m) A + ↑(m.choose 2) / ↑n
 ```
@@ -54,4 +54,4 @@ TauCeti.Probability.ExchangeableAt.sampleWithReplacement_le_prefixLaw_add.{u_1, 
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Probability.ExchangeableAt.prefixLaw_le_sampleWithReplacement_add`](https://taucetiproject.org/docs/TauCeti/Probability/Exchangeability/FiniteDeFinetti.html#TauCeti.Probability.ExchangeableAt.prefixLaw_le_sampleWithReplacement_add)
-- [Source of `TauCeti.Probability.ExchangeableAt.prefixLaw_le_sampleWithReplacement_add` in TauCeti/Probability/Exchangeability/FiniteDeFinetti.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Probability/Exchangeability/FiniteDeFinetti.lean#L158)
+- [Source of `TauCeti.Probability.ExchangeableAt.prefixLaw_le_sampleWithReplacement_add` in TauCeti/Probability/Exchangeability/FiniteDeFinetti.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Probability/Exchangeability/FiniteDeFinetti.lean#L154)

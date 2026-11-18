@@ -34,7 +34,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [CAD lifting by Lazard delineations in a reordered base](cad-lifting-by-lazard-delineations-in-a-reordere.md)
+- [The analytic implicit root theorem](../../../analysis/part-03/analytic/the-analytic-implicit-root-theorem.md)
 - [Lazard lifting of a family](lazard-lifting-of-a-family.md)
 
 ## Lean
@@ -44,5 +44,5 @@ Formalized in Tau Ceti as [`TauCeti.exists_isCAD_lazardValuationReindex_eq`](htt
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.exists_isCAD_lazardValuationReindex_eq`](https://taucetiproject.org/docs/TauCeti/Geometry/RealAlgebraic/CAD/Lazard/Existence.html#TauCeti.exists_isCAD_lazardValuationReindex_eq)
-- [Source of `TauCeti.exists_isCAD_lazardValuationReindex_eq` in TauCeti/Geometry/RealAlgebraic/CAD/Lazard/Existence.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/RealAlgebraic/CAD/Lazard/Existence.lean#L59)
-- [Tau Ceti roadmap status: Real algebraic geometry: sign determination and cylindrical decomposition](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/Completed/RealAlgebraicGeometry/STATUS.md)
+- [Source of `TauCeti.exists_isCAD_lazardValuationReindex_eq` in TauCeti/Geometry/RealAlgebraic/CAD/Lazard/Existence.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/RealAlgebraic/CAD/Lazard/Existence.lean#L59)
+- [Tau Ceti roadmap status: Real algebraic geometry: sign determination and cylindrical decomposition](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/Completed/RealAlgebraicGeometry/STATUS.md)

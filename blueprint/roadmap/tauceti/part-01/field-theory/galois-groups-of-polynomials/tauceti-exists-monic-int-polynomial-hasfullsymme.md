@@ -35,5 +35,5 @@ Formalized in Tau Ceti as [`TauCeti.exists_monic_int_polynomial_hasFullSymmetric
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.exists_monic_int_polynomial_hasFullSymmetricGaloisGroup`](https://taucetiproject.org/docs/TauCeti/FieldTheory/GaloisGroups/Symmetric/Realization.html#TauCeti.exists_monic_int_polynomial_hasFullSymmetricGaloisGroup)
-- [Source of `TauCeti.exists_monic_int_polynomial_hasFullSymmetricGaloisGroup` in TauCeti/FieldTheory/GaloisGroups/Symmetric/Realization.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/FieldTheory/GaloisGroups/Symmetric/Realization.lean#L42)
-- [Tau Ceti roadmap status: Galois groups of polynomials](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/Completed/PolynomialGaloisGroups/STATUS.md)
+- [Source of `TauCeti.exists_monic_int_polynomial_hasFullSymmetricGaloisGroup` in TauCeti/FieldTheory/GaloisGroups/Symmetric/Realization.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/FieldTheory/GaloisGroups/Symmetric/Realization.lean#L42)
+- [Tau Ceti roadmap status: Galois groups of polynomials](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/Completed/PolynomialGaloisGroups/STATUS.md)

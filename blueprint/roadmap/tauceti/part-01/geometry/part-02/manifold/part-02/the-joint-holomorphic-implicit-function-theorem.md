@@ -45,7 +45,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The joint holomorphic implicit function theorem](../../../../analysis/part-02/complex/part-02/the-joint-holomorphic-implicit-function-theorem.md)
+- [The joint holomorphic implicit function theorem](../../../../analysis/part-03/complex/part-02/the-joint-holomorphic-implicit-function-theorem.md)
 
 ## Lean
 
@@ -54,4 +54,4 @@ Formalized in Tau Ceti as [`TauCeti.exists_jointImplicitFunction_of_eventually_m
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.exists_jointImplicitFunction_of_eventually_mdifferentiableAt`](https://taucetiproject.org/docs/TauCeti/Geometry/Manifold/Complex/ImplicitFunction.html#TauCeti.exists_jointImplicitFunction_of_eventually_mdifferentiableAt)
-- [Source of `TauCeti.exists_jointImplicitFunction_of_eventually_mdifferentiableAt` in TauCeti/Geometry/Manifold/Complex/ImplicitFunction.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/Manifold/Complex/ImplicitFunction.lean#L44)
+- [Source of `TauCeti.exists_jointImplicitFunction_of_eventually_mdifferentiableAt` in TauCeti/Geometry/Manifold/Complex/ImplicitFunction.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/Manifold/Complex/ImplicitFunction.lean#L44)

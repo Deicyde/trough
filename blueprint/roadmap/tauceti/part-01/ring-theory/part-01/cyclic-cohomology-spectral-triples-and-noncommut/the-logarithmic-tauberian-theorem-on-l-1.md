@@ -29,9 +29,9 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Ky Fan triangle inequality](../../../analysis/part-03/operator-ideal/ky-fan-triangle-inequality.md)
-- [Ky Fan two-sided ideal inequality](../../../analysis/part-03/operator-ideal/ky-fan-two-sided-ideal-inequality.md)
-- [The logarithmic Tauberian theorem](../../../analysis/part-03/specific-limits/the-logarithmic-tauberian-theorem.md)
+- [Ky Fan triangle inequality](../../../analysis/part-04/operator-ideal/ky-fan-triangle-inequality.md)
+- [Ky Fan two-sided ideal inequality](../../../analysis/part-04/operator-ideal/ky-fan-two-sided-ideal-inequality.md)
+- [The logarithmic Tauberian theorem](../../../analysis/part-04/specific-limits/the-logarithmic-tauberian-theorem.md)
 
 ## Lean
 
@@ -40,4 +40,4 @@ Formalized in Tau Ceti as [`TauCeti.tendsto_kyFanLogMean_iff_tendsto_sub_one_mul
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.tendsto_kyFanLogMean_iff_tendsto_sub_one_mul_tsum_rpow`](https://taucetiproject.org/docs/TauCeti/Analysis/OperatorIdeal/Family/DixmierTrace/Basic.html#TauCeti.tendsto_kyFanLogMean_iff_tendsto_sub_one_mul_tsum_rpow)
-- [Source of `TauCeti.tendsto_kyFanLogMean_iff_tendsto_sub_one_mul_tsum_rpow` in TauCeti/Analysis/OperatorIdeal/Family/DixmierTrace/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/OperatorIdeal/Family/DixmierTrace/Basic.lean#L311)
+- [Source of `TauCeti.tendsto_kyFanLogMean_iff_tendsto_sub_one_mul_tsum_rpow` in TauCeti/Analysis/OperatorIdeal/Family/DixmierTrace/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/OperatorIdeal/Family/DixmierTrace/Basic.lean#L311)

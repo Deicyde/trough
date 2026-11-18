@@ -43,7 +43,7 @@ Its statement uses no other declaration mapped here.
 - [The dual Noether isomorphism](../../category-theory/exact/the-dual-noether-isomorphism.md)
 - [The Krull-Schmidt theorem](../../ring-theory/part-01/krull-schmidt/the-krull-schmidt-theorem.md)
 - [The Noether isomorphism for exact categories](../../category-theory/exact/the-noether-isomorphism-for-exact-categories.md)
-- [Schur's lemma, vanishing form](../../ring-theory/part-01/semisimple/schurs-lemma-vanishing-form.md)
+- [Schur's lemma, vanishing form](../../ring-theory/part-02/semisimple/schurs-lemma-vanishing-form.md)
 
 ## Lean
 
@@ -52,4 +52,4 @@ Formalized in Tau Ceti as [`TauCeti.cartanMatrix_transpose_mul_extEulerMatrix_eq
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.cartanMatrix_transpose_mul_extEulerMatrix_eq_diagonal`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/GrothendieckGroup/ExtEulerMatrix.html#TauCeti.cartanMatrix_transpose_mul_extEulerMatrix_eq_diagonal)
-- [Source of `TauCeti.cartanMatrix_transpose_mul_extEulerMatrix_eq_diagonal` in TauCeti/RepresentationTheory/GrothendieckGroup/ExtEulerMatrix.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RepresentationTheory/GrothendieckGroup/ExtEulerMatrix.lean#L84)
+- [Source of `TauCeti.cartanMatrix_transpose_mul_extEulerMatrix_eq_diagonal` in TauCeti/RepresentationTheory/GrothendieckGroup/ExtEulerMatrix.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RepresentationTheory/GrothendieckGroup/ExtEulerMatrix.lean#L84)

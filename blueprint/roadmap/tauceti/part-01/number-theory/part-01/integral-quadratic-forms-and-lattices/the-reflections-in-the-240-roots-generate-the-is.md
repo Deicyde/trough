@@ -18,7 +18,7 @@ TauCeti.IntegralLattice.weylGroup_typeE₈RootLattice_eq_top :
 
 ## Depends on
 
-- [TauCeti.IntegralLattice](../../../linear-algebra/integral-lattices-discriminant-forms-and-overlat/tauceti-integrallattice.md)
+- [TauCeti.IntegralLattice](../../../linear-algebra/part-01/integral-lattices-discriminant-forms-and-overlat/tauceti-integrallattice.md)
 
 ## Lean
 
@@ -27,5 +27,5 @@ Formalized in Tau Ceti as [`TauCeti.IntegralLattice.weylGroup_typeE₈RootLattic
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.IntegralLattice.weylGroup_typeE₈RootLattice_eq_top`](https://taucetiproject.org/docs/TauCeti/LinearAlgebra/IntegralLattice/RootLattice/TypeE/WeylGroup.html#TauCeti.IntegralLattice.weylGroup_typeE%E2%82%88RootLattice_eq_top)
-- [Source of `TauCeti.IntegralLattice.weylGroup_typeE₈RootLattice_eq_top` in TauCeti/LinearAlgebra/IntegralLattice/RootLattice/TypeE/WeylGroup.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/LinearAlgebra/IntegralLattice/RootLattice/TypeE/WeylGroup.lean#L240)
-- [Tau Ceti roadmap status: Integral quadratic forms and lattices](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/IntegralLattices/STATUS.md)
+- [Source of `TauCeti.IntegralLattice.weylGroup_typeE₈RootLattice_eq_top` in TauCeti/LinearAlgebra/IntegralLattice/RootLattice/TypeE/WeylGroup.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/LinearAlgebra/IntegralLattice/RootLattice/TypeE/WeylGroup.lean#L296)
+- [Tau Ceti roadmap status: Integral quadratic forms and lattices](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/IntegralLattices/STATUS.md)

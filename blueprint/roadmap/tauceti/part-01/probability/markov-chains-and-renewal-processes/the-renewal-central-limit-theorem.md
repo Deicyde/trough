@@ -84,5 +84,5 @@ TauCeti.Probability.tendstoInDistribution_renewalCountNat_toNNReal_sub_div.{u_1,
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Probability.tendstoInDistribution_renewalCountNat_sub_div`](https://taucetiproject.org/docs/TauCeti/Probability/Renewal/CentralLimitTheorem.html#TauCeti.Probability.tendstoInDistribution_renewalCountNat_sub_div)
-- [Source of `TauCeti.Probability.tendstoInDistribution_renewalCountNat_sub_div` in TauCeti/Probability/Renewal/CentralLimitTheorem.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Probability/Renewal/CentralLimitTheorem.lean#L362)
-- [Tau Ceti roadmap status: Markov chains and renewal processes](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/MarkovChainsAndRenewal/STATUS.md)
+- [Source of `TauCeti.Probability.tendstoInDistribution_renewalCountNat_sub_div` in TauCeti/Probability/Renewal/CentralLimitTheorem.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Probability/Renewal/CentralLimitTheorem.lean#L358)
+- [Tau Ceti roadmap status: Markov chains and renewal processes](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/MarkovChainsAndRenewal/STATUS.md)

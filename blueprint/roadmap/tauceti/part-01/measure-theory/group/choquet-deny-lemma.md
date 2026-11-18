@@ -31,4 +31,4 @@ Formalized in Tau Ceti as [`TauCeti.periodic_of_forall_eq_integral_sub`](https:/
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.periodic_of_forall_eq_integral_sub`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Group/ChoquetDeny.html#TauCeti.periodic_of_forall_eq_integral_sub)
-- [Source of `TauCeti.periodic_of_forall_eq_integral_sub` in TauCeti/MeasureTheory/Group/ChoquetDeny.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/Group/ChoquetDeny.lean#L127)
+- [Source of `TauCeti.periodic_of_forall_eq_integral_sub` in TauCeti/MeasureTheory/Group/ChoquetDeny.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/Group/ChoquetDeny.lean#L127)

@@ -40,4 +40,4 @@ Formalized in Tau Ceti as [`TauCeti.IsCoupling.klDiv_eq_klDiv_add_klDiv_of_eq_wi
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.IsCoupling.klDiv_eq_klDiv_add_klDiv_of_eq_withDensity`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/OptimalTransport/Entropic/Basic.html#TauCeti.IsCoupling.klDiv_eq_klDiv_add_klDiv_of_eq_withDensity)
-- [Source of `TauCeti.IsCoupling.klDiv_eq_klDiv_add_klDiv_of_eq_withDensity` in TauCeti/MeasureTheory/OptimalTransport/Entropic/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/OptimalTransport/Entropic/Basic.lean#L321)
+- [Source of `TauCeti.IsCoupling.klDiv_eq_klDiv_add_klDiv_of_eq_withDensity` in TauCeti/MeasureTheory/OptimalTransport/Entropic/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/OptimalTransport/Entropic/Basic.lean#L321)

@@ -30,4 +30,4 @@ Formalized in Tau Ceti as [`TauCeti.CommHopfAlgCat.kernelFppfQuotientIso`](https
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.CommHopfAlgCat.kernelFppfQuotientIso`](https://taucetiproject.org/docs/TauCeti/Algebra/AlgebraicGroup/Fppf/Quotient/Kernel.html#TauCeti.CommHopfAlgCat.kernelFppfQuotientIso)
-- [Source of `TauCeti.CommHopfAlgCat.kernelFppfQuotientIso` in TauCeti/Algebra/AlgebraicGroup/Fppf/Quotient/Kernel.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/AlgebraicGroup/Fppf/Quotient/Kernel.lean#L201)
+- [Source of `TauCeti.CommHopfAlgCat.kernelFppfQuotientIso` in TauCeti/Algebra/AlgebraicGroup/Fppf/Quotient/Kernel.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/AlgebraicGroup/Fppf/Quotient/Kernel.lean#L201)

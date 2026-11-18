@@ -31,4 +31,4 @@ Formalized in Tau Ceti as [`TauCeti.AInfinityRightModule.yonedaHomotopyEquiv`](h
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.AInfinityRightModule.yonedaHomotopyEquiv`](https://taucetiproject.org/docs/TauCeti/Algebra/Homology/AInfinity/Module/Right/Yoneda.html#TauCeti.AInfinityRightModule.yonedaHomotopyEquiv)
-- [Source of `TauCeti.AInfinityRightModule.yonedaHomotopyEquiv` in TauCeti/Algebra/Homology/AInfinity/Module/Right/Yoneda.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/Homology/AInfinity/Module/Right/Yoneda.lean#L584)
+- [Source of `TauCeti.AInfinityRightModule.yonedaHomotopyEquiv` in TauCeti/Algebra/Homology/AInfinity/Module/Right/Yoneda.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/Homology/AInfinity/Module/Right/Yoneda.lean#L584)

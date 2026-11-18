@@ -26,7 +26,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [TauCeti.residualUpdate](../finite-graph-connectivity-and-network-flows/part-01/tauceti-residualupdate.md)
+- [TauCeti.residualUpdate](../finite-graph-connectivity-and-network-flows/tauceti-residualupdate.md)
 
 ## Lean
 
@@ -35,4 +35,4 @@ Formalized in Tau Ceti as [`TauCeti.SetFlow.exists_val_eq_arrowSum`](https://tau
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.SetFlow.exists_val_eq_arrowSum`](https://taucetiproject.org/docs/TauCeti/Combinatorics/Network/SetFlow.html#TauCeti.SetFlow.exists_val_eq_arrowSum)
-- [Source of `TauCeti.SetFlow.exists_val_eq_arrowSum` in TauCeti/Combinatorics/Network/SetFlow.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Combinatorics/Network/SetFlow.lean#L512)
+- [Source of `TauCeti.SetFlow.exists_val_eq_arrowSum` in TauCeti/Combinatorics/Network/SetFlow.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Combinatorics/Network/SetFlow.lean#L614)

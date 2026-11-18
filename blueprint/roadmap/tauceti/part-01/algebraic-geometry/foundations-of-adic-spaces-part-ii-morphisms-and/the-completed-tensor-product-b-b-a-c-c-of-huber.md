@@ -32,5 +32,5 @@ Formalized in Tau Ceti as [`TauCeti.Huber.Pair.completedTensor`](https://tauceti
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Huber.Pair.completedTensor`](https://taucetiproject.org/docs/TauCeti/RingTheory/Huber/TensorProduct/Pair.html#TauCeti.Huber.Pair.completedTensor)
-- [Source of `TauCeti.Huber.Pair.completedTensor` in TauCeti/RingTheory/Huber/TensorProduct/Pair.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RingTheory/Huber/TensorProduct/Pair.lean#L150)
-- [Tau Ceti roadmap status: Foundations of adic spaces, part II — morphisms and analytification](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/AdicSpacesPartII/STATUS.md)
+- [Source of `TauCeti.Huber.Pair.completedTensor` in TauCeti/RingTheory/Huber/TensorProduct/Pair.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RingTheory/Huber/TensorProduct/Pair.lean#L150)
+- [Tau Ceti roadmap status: Foundations of adic spaces, part II — morphisms and analytification](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/AdicSpacesPartII/STATUS.md)

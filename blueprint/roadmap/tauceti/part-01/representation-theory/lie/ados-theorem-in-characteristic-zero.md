@@ -27,7 +27,7 @@ Its statement uses no other declaration mapped here.
 - [The Krull intersection theorem for an extended ideal](../../ring-theory/part-01/ideal/the-krull-intersection-theorem-for-an-extended-i.md)
 - [Levi's theorem](../../algebra/part-02/lie/part-01/levis-theorem.md)
 - [The linear-independence half of the Poincaré--Birkhoff--Witt theorem](../../algebra/part-02/lie/part-01/the-linear-independence-half-of-the-poincare-bir.md)
-- [The Poincaré--Birkhoff--Witt theorem](../../algebra/part-02/lie/part-01/the-poincare-birkhoff-witt-theorem.md)
+- [The Poincaré--Birkhoff--Witt theorem](../../algebra/part-02/lie/part-02/the-poincare-birkhoff-witt-theorem.md)
 
 ## Lean
 
@@ -56,4 +56,4 @@ TauCeti.adoCharP.{u, v} (K : Type u) (L : Type v) [Field K] [LieRing L] [LieAlge
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.adoCharZero`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/Lie/Ado/CharacteristicZero.html#TauCeti.adoCharZero)
-- [Source of `TauCeti.adoCharZero` in TauCeti/RepresentationTheory/Lie/Ado/CharacteristicZero.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RepresentationTheory/Lie/Ado/CharacteristicZero.lean#L324)
+- [Source of `TauCeti.adoCharZero` in TauCeti/RepresentationTheory/Lie/Ado/CharacteristicZero.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RepresentationTheory/Lie/Ado/CharacteristicZero.lean#L324)

@@ -40,4 +40,4 @@ Formalized in Tau Ceti as [`ContinuousLinearMap.IsRowCompact.one_sub_smul_pow_su
 ## Sources
 
 - [Tau Ceti documentation: `ContinuousLinearMap.IsRowCompact.one_sub_smul_pow_succ_mul_inverse_smul_resolventHasseDerivAt`](https://taucetiproject.org/docs/TauCeti/Analysis/Normed/Operator/Nonarchimedean/Resolvent.html#ContinuousLinearMap.IsRowCompact.one_sub_smul_pow_succ_mul_inverse_smul_resolventHasseDerivAt)
-- [Source of `ContinuousLinearMap.IsRowCompact.one_sub_smul_pow_succ_mul_inverse_smul_resolventHasseDerivAt` in TauCeti/Analysis/Normed/Operator/Nonarchimedean/Resolvent.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Normed/Operator/Nonarchimedean/Resolvent.lean#L590)
+- [Source of `ContinuousLinearMap.IsRowCompact.one_sub_smul_pow_succ_mul_inverse_smul_resolventHasseDerivAt` in TauCeti/Analysis/Normed/Operator/Nonarchimedean/Resolvent.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Normed/Operator/Nonarchimedean/Resolvent.lean#L590)

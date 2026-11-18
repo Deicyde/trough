@@ -1,7 +1,7 @@
 ---
 declaration: theorem
 origin: cited
-lean: TauCeti.exists_diffeomorph_eventually_compContinuousLinearMap_fderiv_eq_smul
+lean: TauCeti.exists_diffeomorph_eventually_compContinuousLinearMap_fderiv_eq_smul, TauCeti.SmoothForm.IsContactForm.exists_strictDarbouxChart, TauCeti.SmoothForm.IsContactForm.exists_strictDarbouxChart_of_finrank_eq
 statement: formalized
 proof: formalized
 ---
@@ -37,13 +37,60 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
+- [Cartan's magic formula](../manifold/part-01/cartans-magic-formula.md)
+- [The contact Darboux theorem](../symplectic-geometry-and-hamiltonian-mechanics/the-contact-darboux-theorem.md)
 - [The contact Moser lemma, local form](the-contact-moser-lemma-local-form.md)
+- [Darboux's theorem](../symplectic/part-01/darbouxs-theorem.md)
+- [The inverse function theorem for manifolds](../manifold/part-02/the-inverse-function-theorem-for-manifolds.md)
+- [The Poincaré lemma on manifolds](../manifold/part-03/the-poincare-lemma-on-manifolds.md)
 
 ## Lean
 
-Formalized in Tau Ceti as [`TauCeti.exists_diffeomorph_eventually_compContinuousLinearMap_fderiv_eq_smul`](https://taucetiproject.org/docs/TauCeti/Geometry/Contact/Darboux.html#TauCeti.exists_diffeomorph_eventually_compContinuousLinearMap_fderiv_eq_smul).
+Formalized in Tau Ceti as [`TauCeti.exists_diffeomorph_eventually_compContinuousLinearMap_fderiv_eq_smul`](https://taucetiproject.org/docs/TauCeti/Geometry/Contact/Darboux/Basic.html#TauCeti.exists_diffeomorph_eventually_compContinuousLinearMap_fderiv_eq_smul).
+
+## Other forms
+
+**The Darboux theorem for contact forms.** Formalized in Tau Ceti as [`TauCeti.SmoothForm.IsContactForm.exists_strictDarbouxChart`](https://taucetiproject.org/docs/TauCeti/Geometry/Contact/Darboux/Strict.html#TauCeti.SmoothForm.IsContactForm.exists_strictDarbouxChart).
+
+```lean
+TauCeti.SmoothForm.IsContactForm.exists_strictDarbouxChart.{u_1, u_2, u_3} {E : Type u_1}
+  {H : Type u_2} {M : Type u_3} [NormedAddCommGroup E] [NormedSpace ℝ E] [FiniteDimensional ℝ E]
+  [TopologicalSpace H] {I : ModelWithCorners ℝ E H} [I.Boundaryless] [TopologicalSpace M]
+  [ChartedSpace H M] [T2Space M] [IsManifold I (↑⊤) M] {α : TauCeti.SmoothForm I M ℝ 1}
+  (hα : α.IsContactForm) (x₀ : M) :
+  ∃ n chart,
+    Module.finrank ℝ E = 2 * n + 1 ∧
+      x₀ ∈ chart.source ∧
+        ↑chart.toPartialEquiv x₀ = 0 ∧
+          ∀ x ∈ chart.source,
+            ∀ (v : TangentSpace I x),
+              (↑(TauCeti.innerProductContactForm (EuclideanSpace ℝ (Fin n)))
+                    (↑chart.toPartialEquiv x))
+                  ![(d% ↑chart.toPartialEquiv x) v] =
+                (↑α x) ![v]
+```
+
+**The Darboux theorem for contact forms, in dimension `2 n + 1`.** Formalized in Tau Ceti as [`TauCeti.SmoothForm.IsContactForm.exists_strictDarbouxChart_of_finrank_eq`](https://taucetiproject.org/docs/TauCeti/Geometry/Contact/Darboux/Strict.html#TauCeti.SmoothForm.IsContactForm.exists_strictDarbouxChart_of_finrank_eq).
+
+```lean
+TauCeti.SmoothForm.IsContactForm.exists_strictDarbouxChart_of_finrank_eq.{u_1, u_2, u_3}
+  {E : Type u_1} {H : Type u_2} {M : Type u_3} [NormedAddCommGroup E] [NormedSpace ℝ E]
+  [FiniteDimensional ℝ E] [TopologicalSpace H] {I : ModelWithCorners ℝ E H} [I.Boundaryless]
+  [TopologicalSpace M] [ChartedSpace H M] [T2Space M] [IsManifold I (↑⊤) M]
+  {α : TauCeti.SmoothForm I M ℝ 1} (hα : α.IsContactForm) {n : ℕ}
+  (hn : Module.finrank ℝ E = 2 * n + 1) (x₀ : M) :
+  ∃ chart,
+    x₀ ∈ chart.source ∧
+      ↑chart.toPartialEquiv x₀ = 0 ∧
+        ∀ x ∈ chart.source,
+          ∀ (v : TangentSpace I x),
+            (↑(TauCeti.innerProductContactForm (EuclideanSpace ℝ (Fin n)))
+                  (↑chart.toPartialEquiv x))
+                ![(d% ↑chart.toPartialEquiv x) v] =
+              (↑α x) ![v]
+```
 
 ## Sources
 
-- [Tau Ceti documentation: `TauCeti.exists_diffeomorph_eventually_compContinuousLinearMap_fderiv_eq_smul`](https://taucetiproject.org/docs/TauCeti/Geometry/Contact/Darboux.html#TauCeti.exists_diffeomorph_eventually_compContinuousLinearMap_fderiv_eq_smul)
-- [Source of `TauCeti.exists_diffeomorph_eventually_compContinuousLinearMap_fderiv_eq_smul` in TauCeti/Geometry/Contact/Darboux.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/Contact/Darboux.lean#L294)
+- [Tau Ceti documentation: `TauCeti.exists_diffeomorph_eventually_compContinuousLinearMap_fderiv_eq_smul`](https://taucetiproject.org/docs/TauCeti/Geometry/Contact/Darboux/Basic.html#TauCeti.exists_diffeomorph_eventually_compContinuousLinearMap_fderiv_eq_smul)
+- [Source of `TauCeti.exists_diffeomorph_eventually_compContinuousLinearMap_fderiv_eq_smul` in TauCeti/Geometry/Contact/Darboux/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/Contact/Darboux/Basic.lean#L302)

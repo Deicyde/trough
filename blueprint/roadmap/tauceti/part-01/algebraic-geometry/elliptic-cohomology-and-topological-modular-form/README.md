@@ -1,6 +1,6 @@
 # Elliptic cohomology and topological modular forms
 
-The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/EllipticCohomology/README.md) names, and the other results named in the modules where only this status names declarations, or in folders below the areas where only it names 2 or more, as Tau Ceti has them at commit [a6027b1d](https://github.com/TauCetiProject/TauCeti/tree/a6027b1d24fcb935c53bd5b50d11b40991cda418).
+The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/EllipticCohomology/README.md) names, and the other results named in the modules where only this status names declarations, or in folders below the areas where only it names 2 or more, as Tau Ceti has them at commit [cd41bffc](https://github.com/TauCetiProject/TauCeti/tree/cd41bffcb343151b3e58c89392e206b11fe78c1c).
 
 - [The ring of integral modular forms](the-ring-of-integral-modular-forms.md)
 - [WeierstrassCurve.ker_aeval_c₄_c₆_Δ](weierstrasscurve-ker-aeval-c4-c6.md)
@@ -9,7 +9,7 @@ The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiPr
 - [Integral modular forms are the invariants of the Weierstrass Hopf algebroid](integral-modular-forms-are-the-invariants-of-the.md)
 - [WeierstrassCurve.isSupersingular_iff_height_formalGroup_eq_two_of_char_three](weierstrasscurve-issupersingular-iff-height-form.md)
 - [The height-one criterion for `Ê`](the-height-one-criterion-for-e.md)
-- [Coassociativity `(Δ ⊗ id) Δ = (id ⊗ Δ) Δ` of the coproduct (`TauCeti.WeierstrassHopfAlgebroid.coproduct_coassoc`)](coassociativity-id-id-of-the-coproduct-tauceti-w.md)
+- [Coassociativity `(Δ ⊗ id) Δ = (id ⊗ Δ) Δ` of the coproduct](coassociativity-id-id-of-the-coproduct.md)
 - [TauCeti.WeierstrassHopfAlgebroid.smoothOfRelativeDimension_source](tauceti-weierstrasshopfalgebroid-smoothofrelativ.md)
 - [WeierstrassCurve.VariableChange.semidirectProductEquiv](weierstrasscurve-variablechange-semidirectproduc.md)
 - [WeierstrassCurve.Universal.height_span_c₄_Δ](weierstrasscurve-universal-height-span-c4.md)

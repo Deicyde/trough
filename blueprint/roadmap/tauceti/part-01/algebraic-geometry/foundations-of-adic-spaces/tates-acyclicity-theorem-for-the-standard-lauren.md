@@ -52,10 +52,9 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [A finite module over a complete noetherian Tate ring has a strict finite presentation](a-finite-module-over-a-complete-noetherian-tate.md)
-- [The first isomorphism theorem for a surjective strict homomorphism of topological groups](../../topology/algebra/part-01/the-first-isomorphism-theorem-for-a-surjective-s.md)
-- [Henkel's theorem in quotient form](../../topology/algebra/part-01/henkels-theorem-in-quotient-form.md)
-- [Ideals contained in supports](ideals-contained-in-supports.md)
-- [Kedlaya's Hilbert basis theorem for restricted power series](../../ring-theory/part-01/restricted-power-series-and-tate-algebras/part-01/kedlayas-hilbert-basis-theorem-for-restricted-po.md)
+- [A rational localisation of a strongly noetherian Tate ring is strongly noetherian](a-rational-localisation-of-a-strongly-noetherian.md)
+- [Henkel's theorem in quotient form](../../../part-02/topology/algebra/part-01/henkels-theorem-in-quotient-form.md)
+- [Kedlaya's Hilbert basis theorem for restricted power series](../../ring-theory/part-01/restricted-power-series-and-tate-algebras/kedlayas-hilbert-basis-theorem-for-restricted-po.md)
 - [The open mapping theorem over a Tate ring](the-open-mapping-theorem-over-a-tate-ring.md)
 
 ## Lean
@@ -65,4 +64,4 @@ Formalized in Tau Ceti as [`TauCeti.ValuationSpectrum.quasiIso_cechAugmentation_
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.ValuationSpectrum.quasiIso_cechAugmentation_closedDisc_spaBasicOpen`](https://taucetiproject.org/docs/TauCeti/AlgebraicGeometry/AdicSpace/Spa/Polydisc/LaurentCover.html#TauCeti.ValuationSpectrum.quasiIso_cechAugmentation_closedDisc_spaBasicOpen)
-- [Source of `TauCeti.ValuationSpectrum.quasiIso_cechAugmentation_closedDisc_spaBasicOpen` in TauCeti/AlgebraicGeometry/AdicSpace/Spa/Polydisc/LaurentCover.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/AlgebraicGeometry/AdicSpace/Spa/Polydisc/LaurentCover.lean#L79)
+- [Source of `TauCeti.ValuationSpectrum.quasiIso_cechAugmentation_closedDisc_spaBasicOpen` in TauCeti/AlgebraicGeometry/AdicSpace/Spa/Polydisc/LaurentCover.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/AlgebraicGeometry/AdicSpace/Spa/Polydisc/LaurentCover.lean#L79)

@@ -43,4 +43,4 @@ TauCeti.isTotallyReflexive_of_ext_transpose_eq_zero.{u} {A : Type u} [Ring A] {M
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.isTotallyReflexive_iff_isGorensteinProjective`](https://taucetiproject.org/docs/TauCeti/Algebra/Homology/GorensteinProjective/TotallyReflexive.html#TauCeti.isTotallyReflexive_iff_isGorensteinProjective)
-- [Source of `TauCeti.isTotallyReflexive_iff_isGorensteinProjective` in TauCeti/Algebra/Homology/GorensteinProjective/TotallyReflexive.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/Homology/GorensteinProjective/TotallyReflexive.lean#L260)
+- [Source of `TauCeti.isTotallyReflexive_iff_isGorensteinProjective` in TauCeti/Algebra/Homology/GorensteinProjective/TotallyReflexive.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/Homology/GorensteinProjective/TotallyReflexive.lean#L260)

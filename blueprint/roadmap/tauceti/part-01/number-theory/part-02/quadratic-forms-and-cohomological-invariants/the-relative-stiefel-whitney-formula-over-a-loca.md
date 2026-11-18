@@ -35,14 +35,14 @@ TauCeti.galoisEvens_kummerClass_eq_zero_iff_localHasse_eq.{u} {K L : Type u} [Fi
 - [The cup-norm theorem](../../../field-theory/other-results/the-cup-norm-theorem.md)
 - [Hensel's lemma for the norm](../../../ring-theory/part-02/other-results/part-01/hensels-lemma-for-the-norm.md)
 - [The Kummer isomorphism](../../../representation-theory/continuous-cohomology-of-profinite-groups/the-kummer-isomorphism.md)
+- [The local square theorem bounds the defect of a unit](../local-field/the-local-square-theorem-bounds-the-defect-of-a.md)
 - [Serre's formula for the Evens norm of a Kummer class (Serre, Théorème 1′ at `n = 2`)](../../../field-theory/other-results/serres-formula-for-the-evens-norm-of-a-kummer-cl.md)
 - [The Skolem-Noether theorem](../../../algebra/part-02/central-simple/the-skolem-noether-theorem.md)
 - [The splitting criterion for quaternion algebras](the-splitting-criterion-for-quaternion-algebras.md)
-- [TauCeti.algebraicExtensionNormedField](../../part-01/local-fields-and-ramification/tauceti-algebraicextensionnormedfield.md)
-- [TauCeti.multiplicativeSquareClassEquiv](../../../linear-algebra/orthogonal-and-spin-groups/tauceti-multiplicativesquareclassequiv.md)
+- [TauCeti.multiplicativeSquareClassEquiv](../../../linear-algebra/part-01/orthogonal-and-spin-groups/tauceti-multiplicativesquareclassequiv.md)
 - [Wedderburn-Artin for central simple algebras](../../../algebra/part-02/central-simple/wedderburn-artin-for-central-simple-algebras.md)
-- [Witt decomposition](../../../linear-algebra/quadratic-form/witt-decomposition.md)
-- [Witt's chain theorem in its nontrivial range](../../../linear-algebra/quadratic-form/witts-chain-theorem-in-its-nontrivial-range.md)
+- [Witt decomposition](../../../linear-algebra/part-01/quadratic-form/witt-decomposition.md)
+- [Witt's chain theorem in its nontrivial range](../../../linear-algebra/part-01/quadratic-form/witts-chain-theorem-in-its-nontrivial-range.md)
 
 ## Lean
 
@@ -51,4 +51,4 @@ Formalized in Tau Ceti as [`TauCeti.galoisEvens_kummerClass_eq_zero_iff_localHas
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.galoisEvens_kummerClass_eq_zero_iff_localHasse_eq`](https://taucetiproject.org/docs/TauCeti/NumberTheory/LocalField/QuadraticForm/StiefelWhitney/Transfer.html#TauCeti.galoisEvens_kummerClass_eq_zero_iff_localHasse_eq)
-- [Source of `TauCeti.galoisEvens_kummerClass_eq_zero_iff_localHasse_eq` in TauCeti/NumberTheory/LocalField/QuadraticForm/StiefelWhitney/Transfer.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/LocalField/QuadraticForm/StiefelWhitney/Transfer.lean#L127)
+- [Source of `TauCeti.galoisEvens_kummerClass_eq_zero_iff_localHasse_eq` in TauCeti/NumberTheory/LocalField/QuadraticForm/StiefelWhitney/Transfer.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/LocalField/QuadraticForm/StiefelWhitney/Transfer.lean#L127)

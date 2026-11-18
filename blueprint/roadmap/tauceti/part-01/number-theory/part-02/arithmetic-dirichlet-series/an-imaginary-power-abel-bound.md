@@ -31,4 +31,4 @@ Formalized in Tau Ceti as [`TauCeti.norm_summatory_mul_cpow_le_of_summatory_le`]
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.norm_summatory_mul_cpow_le_of_summatory_le`](https://taucetiproject.org/docs/TauCeti/NumberTheory/ArithmeticDirichletSeries/AbelSummation.html#TauCeti.norm_summatory_mul_cpow_le_of_summatory_le)
-- [Source of `TauCeti.norm_summatory_mul_cpow_le_of_summatory_le` in TauCeti/NumberTheory/ArithmeticDirichletSeries/AbelSummation.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/ArithmeticDirichletSeries/AbelSummation.lean#L287)
+- [Source of `TauCeti.norm_summatory_mul_cpow_le_of_summatory_le` in TauCeti/NumberTheory/ArithmeticDirichletSeries/AbelSummation.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/ArithmeticDirichletSeries/AbelSummation.lean#L287)

@@ -41,4 +41,4 @@ Formalized in Tau Ceti as [`TauCeti.hasCentralRadical_iff_isCompl_center_derived
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.hasCentralRadical_iff_isCompl_center_derivedSeries`](https://taucetiproject.org/docs/TauCeti/Algebra/Lie/Reductive/Basic.html#TauCeti.hasCentralRadical_iff_isCompl_center_derivedSeries)
-- [Source of `TauCeti.hasCentralRadical_iff_isCompl_center_derivedSeries` in TauCeti/Algebra/Lie/Reductive/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/Lie/Reductive/Basic.lean#L467)
+- [Source of `TauCeti.hasCentralRadical_iff_isCompl_center_derivedSeries` in TauCeti/Algebra/Lie/Reductive/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/Lie/Reductive/Basic.lean#L478)

@@ -9,7 +9,7 @@ proof: formalized
 # The Christoffel formula of the first kind
 
 If the Riemannian metric of the model space
-`F` is the field of bilinear forms `g`, differentiable at `x`, then the Levi-Civita derivative of
+`F` is the field of bilinear forms `g`, then the Levi-Civita derivative of
 a vector field `V` differentiable at `x` satisfies
 `2 g(∇_u V, w) = 2 g(DV(u), w) + (Dg(u))(V, w) + (Dg(V))(w, u) - (Dg(w))(u, V)`.
 Tangent vectors are read in the model space through `tangentSpaceCastModel`.
@@ -26,7 +26,7 @@ TauCeti.Manifold.two_mul_leviCivitaConnection_model_space.{u_1} {F : Type u_1}
       inner ℝ v w =
         ((g y) ((tangentSpaceCastModel (modelWithCornersSelf ℝ F) y) v))
           ((tangentSpaceCastModel (modelWithCornersSelf ℝ F) y) w))
-  (hgx : DifferentiableAt ℝ g x) (hV : DifferentiableAt ℝ V x) (u w : F) :
+  (hV : DifferentiableAt ℝ V x) (u w : F) :
   2 *
       ((g x)
           ((tangentSpaceCastModel (modelWithCornersSelf ℝ F) x)
@@ -45,7 +45,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The Koszul formula](../part-02/the-koszul-formula.md)
+- [The Koszul formula](../part-03/the-koszul-formula.md)
 
 ## Lean
 
@@ -54,4 +54,4 @@ Formalized in Tau Ceti as [`TauCeti.Manifold.two_mul_leviCivitaConnection_model_
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Manifold.two_mul_leviCivitaConnection_model_space`](https://taucetiproject.org/docs/TauCeti/Geometry/Manifold/VectorBundle/CovariantDerivative/LeviCivita/VectorSpace.html#TauCeti.Manifold.two_mul_leviCivitaConnection_model_space)
-- [Source of `TauCeti.Manifold.two_mul_leviCivitaConnection_model_space` in TauCeti/Geometry/Manifold/VectorBundle/CovariantDerivative/LeviCivita/VectorSpace.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/Manifold/VectorBundle/CovariantDerivative/LeviCivita/VectorSpace.lean#L77)
+- [Source of `TauCeti.Manifold.two_mul_leviCivitaConnection_model_space` in TauCeti/Geometry/Manifold/VectorBundle/CovariantDerivative/LeviCivita/VectorSpace.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/Manifold/VectorBundle/CovariantDerivative/LeviCivita/VectorSpace.lean#L77)

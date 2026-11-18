@@ -39,4 +39,4 @@ Formalized in Tau Ceti as [`TauCeti.UpperHalfPlane.ConvexPolygon.SidePairing.isF
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.UpperHalfPlane.ConvexPolygon.SidePairing.isFundamentalDomain_carrier_of_isParabolic`](https://taucetiproject.org/docs/TauCeti/Analysis/Complex/Fuchsian/Polygon/Poincare.html#TauCeti.UpperHalfPlane.ConvexPolygon.SidePairing.isFundamentalDomain_carrier_of_isParabolic)
-- [Source of `TauCeti.UpperHalfPlane.ConvexPolygon.SidePairing.isFundamentalDomain_carrier_of_isParabolic` in TauCeti/Analysis/Complex/Fuchsian/Polygon/Poincare.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Complex/Fuchsian/Polygon/Poincare.lean#L71)
+- [Source of `TauCeti.UpperHalfPlane.ConvexPolygon.SidePairing.isFundamentalDomain_carrier_of_isParabolic` in TauCeti/Analysis/Complex/Fuchsian/Polygon/Poincare.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Complex/Fuchsian/Polygon/Poincare.lean#L71)

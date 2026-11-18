@@ -44,4 +44,4 @@ TauCeti.aestronglyMeasurable_strongDual_iff_forall_apply.{u_1, u_2, u_3} {α : T
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.aestronglyMeasurable_iff_forall_inner`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Function/StronglyMeasurable/Pettis.html#TauCeti.aestronglyMeasurable_iff_forall_inner)
-- [Source of `TauCeti.aestronglyMeasurable_iff_forall_inner` in TauCeti/MeasureTheory/Function/StronglyMeasurable/Pettis.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/Function/StronglyMeasurable/Pettis.lean#L67)
+- [Source of `TauCeti.aestronglyMeasurable_iff_forall_inner` in TauCeti/MeasureTheory/Function/StronglyMeasurable/Pettis.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/Function/StronglyMeasurable/Pettis.lean#L67)

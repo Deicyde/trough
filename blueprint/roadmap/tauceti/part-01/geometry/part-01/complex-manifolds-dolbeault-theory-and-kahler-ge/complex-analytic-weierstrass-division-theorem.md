@@ -40,4 +40,4 @@ Formalized in Tau Ceti as [`AnalyticAt.exists_weierstrassDivision`](https://tauc
 ## Sources
 
 - [Tau Ceti documentation: `AnalyticAt.exists_weierstrassDivision`](https://taucetiproject.org/docs/TauCeti/Analysis/Complex/Weierstrass.html#AnalyticAt.exists_weierstrassDivision)
-- [Source of `AnalyticAt.exists_weierstrassDivision` in TauCeti/Analysis/Complex/Weierstrass.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Complex/Weierstrass.lean#L605)
+- [Source of `AnalyticAt.exists_weierstrassDivision` in TauCeti/Analysis/Complex/Weierstrass.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Complex/Weierstrass.lean#L478)

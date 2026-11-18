@@ -39,8 +39,8 @@ Its statement uses no other declaration mapped here.
 - [The dual Noether isomorphism](../../../category-theory/exact/the-dual-noether-isomorphism.md)
 - [The Krull-Schmidt theorem](../../../ring-theory/part-01/krull-schmidt/the-krull-schmidt-theorem.md)
 - [The Noether isomorphism for exact categories](../../../category-theory/exact/the-noether-isomorphism-for-exact-categories.md)
-- [The resolution theorem for modules](../category/the-resolution-theorem-for-modules.md)
-- [The resolution theorem for modules admitting finite resolutions by finitely generated projectives](../category/the-resolution-theorem-for-modules-admitting-fin.md)
+- [The resolution theorem for modules](../../part-02/category/the-resolution-theorem-for-modules.md)
+- [The resolution theorem for modules admitting finite resolutions by finitely generated projectives](../../part-02/category/the-resolution-theorem-for-modules-admitting-fin.md)
 
 ## Lean
 
@@ -49,5 +49,5 @@ Formalized in Tau Ceti as [`TauCeti.cartanMatrix_det_eq_one_or_neg_one`](https:/
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.cartanMatrix_det_eq_one_or_neg_one`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/GrothendieckGroup/UnimodularCartanMatrix.html#TauCeti.cartanMatrix_det_eq_one_or_neg_one)
-- [Source of `TauCeti.cartanMatrix_det_eq_one_or_neg_one` in TauCeti/RepresentationTheory/GrothendieckGroup/UnimodularCartanMatrix.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RepresentationTheory/GrothendieckGroup/UnimodularCartanMatrix.lean#L149)
-- [Tau Ceti roadmap status: Grothendieck groups, Cartan maps, and Euler forms](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/GrothendieckEulerForms/STATUS.md)
+- [Source of `TauCeti.cartanMatrix_det_eq_one_or_neg_one` in TauCeti/RepresentationTheory/GrothendieckGroup/UnimodularCartanMatrix.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RepresentationTheory/GrothendieckGroup/UnimodularCartanMatrix.lean#L149)
+- [Tau Ceti roadmap status: Grothendieck groups, Cartan maps, and Euler forms](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/GrothendieckEulerForms/STATUS.md)

@@ -44,4 +44,4 @@ Formalized in Tau Ceti as [`TauCeti.isLUB_kantorovichDualValue_of_lowerSemiconti
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.isLUB_kantorovichDualValue_of_lowerSemicontinuous_residual_bddBelow`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/OptimalTransport/Duality/BoundedBelow.html#TauCeti.isLUB_kantorovichDualValue_of_lowerSemicontinuous_residual_bddBelow)
-- [Source of `TauCeti.isLUB_kantorovichDualValue_of_lowerSemicontinuous_residual_bddBelow` in TauCeti/MeasureTheory/OptimalTransport/Duality/BoundedBelow.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/OptimalTransport/Duality/BoundedBelow.lean#L103)
+- [Source of `TauCeti.isLUB_kantorovichDualValue_of_lowerSemicontinuous_residual_bddBelow` in TauCeti/MeasureTheory/OptimalTransport/Duality/BoundedBelow.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/OptimalTransport/Duality/BoundedBelow.lean#L103)

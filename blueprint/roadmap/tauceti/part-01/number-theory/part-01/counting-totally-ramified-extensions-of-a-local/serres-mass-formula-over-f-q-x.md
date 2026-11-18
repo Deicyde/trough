@@ -28,12 +28,12 @@ TauCeti.tsum_one_div_natCard_pow_wildExponent_laurentSeries.{u_1} (F : Type u_1)
 ## Proof depends on
 
 - [Dedekind's different theorem, the tame case](../../part-02/local-field/dedekinds-different-theorem-the-tame-case.md)
-- [Euler's theorem on an `n`-th root of unity](../../../group-theory/other-results/eulers-theorem-on-an-n-th-root-of-unity.md)
+- [Euler's theorem on an `n`-th root of unity](../../../group-theory/other-results/part-01/eulers-theorem-on-an-n-th-root-of-unity.md)
 - [The first half of Dedekind's different theorem](../../part-02/local-field/the-first-half-of-dedekinds-different-theorem.md)
 - [Serre's first mass formula](serres-first-mass-formula.md)
-- [Serre's formula for the Artin conductor](../local-fields-and-ramification/serres-formula-for-the-artin-conductor.md)
+- [Serre's formula for the Artin conductor](../../part-02/local-field/serres-formula-for-the-artin-conductor.md)
 - [The splitting criterion for quaternion algebras](../../part-02/quadratic-forms-and-cohomological-invariants/the-splitting-criterion-for-quaternion-algebras.md)
-- [TauCeti.multiplicativeSquareClassEquiv](../../../linear-algebra/orthogonal-and-spin-groups/tauceti-multiplicativesquareclassequiv.md)
+- [TauCeti.multiplicativeSquareClassEquiv](../../../linear-algebra/part-01/orthogonal-and-spin-groups/tauceti-multiplicativesquareclassequiv.md)
 
 ## Lean
 
@@ -71,4 +71,4 @@ TauCeti.tsum_one_div_pow_wildExponent_two_padicTwo :
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.tsum_one_div_natCard_pow_wildExponent_laurentSeries`](https://taucetiproject.org/docs/TauCeti/NumberTheory/LocalField/MassFormula/LaurentSeries.html#TauCeti.tsum_one_div_natCard_pow_wildExponent_laurentSeries)
-- [Source of `TauCeti.tsum_one_div_natCard_pow_wildExponent_laurentSeries` in TauCeti/NumberTheory/LocalField/MassFormula/LaurentSeries.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/LocalField/MassFormula/LaurentSeries.lean#L63)
+- [Source of `TauCeti.tsum_one_div_natCard_pow_wildExponent_laurentSeries` in TauCeti/NumberTheory/LocalField/MassFormula/LaurentSeries.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/LocalField/MassFormula/LaurentSeries.lean#L63)

@@ -49,22 +49,25 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Carathéodory's continuity theorem](../../part-02/complex/part-01/caratheodorys-continuity-theorem.md)
-- [Carathéodory's theorem for the inside of a Jordan curve](../../part-02/complex/part-01/caratheodorys-theorem-for-the-inside-of-a-jordan.md)
-- [Cauchy estimate](../../part-02/complex/part-01/cauchy-estimate.md)
-- [The converse of Cauchy's theorem](../../../number-theory/part-01/bounded-laplace-and-ordered-dirichlet-boundary-c/the-converse-of-cauchys-theorem.md)
+- [Carathéodory's continuity theorem](../../part-03/complex/part-01/caratheodorys-continuity-theorem.md)
+- [Carathéodory's theorem for the inside of a Jordan curve](../../part-03/complex/part-01/caratheodorys-theorem-for-the-inside-of-a-jordan.md)
+- [Cauchy estimate](../../part-03/complex/part-01/cauchy-estimate.md)
+- [The converse of Cauchy's theorem](../../part-03/contour/the-converse-of-cauchys-theorem.md)
 - [Generalized winding number (HW Def 2.1)](../contour-integration-and-the-hungerbuhler-wasem-g/generalized-winding-number-hw-def-2-1.md)
-- [The homology Cauchy theorem (roadmap `homologyCauchyTheorem`, Layer 3)](../contour-integration-and-the-hungerbuhler-wasem-g/the-homology-cauchy-theorem-roadmap-homologycauc.md)
-- [Hurwitz's theorem](../../part-02/complex/part-01/hurwitzs-theorem.md)
-- [Janiszewski's theorem](../../part-02/complex/part-02/janiszewskis-theorem.md)
+- [The homology Cauchy theorem](../contour-integration-and-the-hungerbuhler-wasem-g/the-homology-cauchy-theorem.md)
+- [Hurwitz's theorem](../../part-03/complex/part-02/hurwitzs-theorem.md)
+- [Janiszewski's theorem](../../part-03/complex/part-02/janiszewskis-theorem.md)
 - [The Jordan curve theorem](the-jordan-curve-theorem.md)
-- [The Jordan separation theorem](../../part-02/complex/part-02/the-jordan-separation-theorem.md)
-- [Montel's selection theorem](../../part-02/complex/part-02/montels-selection-theorem.md)
-- [Poincaré defect identity (norm form)](../../part-02/complex/part-03/poincare-defect-identity-norm-form.md)
+- [The Jordan separation theorem](../../part-03/complex/part-02/the-jordan-separation-theorem.md)
+- [The Jordan–Brouwer separation theorem](../../../algebraic-topology/singular/the-jordan-brouwer-separation-theorem.md)
+- [Montel's selection theorem](../../part-03/complex/part-03/montels-selection-theorem.md)
+- [Piecewise `C¹` on the interval between `a` and `b`](../contour-integration-and-the-hungerbuhler-wasem-g/piecewise-c1-on-the-interval-between-a-and-b.md)
+- [Poincaré defect identity (norm form)](../../part-03/complex/part-03/poincare-defect-identity-norm-form.md)
 - [The Riemann mapping theorem](the-riemann-mapping-theorem.md)
-- [Rouché's theorem for a disc, classical form](../../part-02/complex/part-03/rouches-theorem-for-a-disc-classical-form.md)
+- [Rouché's theorem for a disc, classical form](../../part-03/complex/part-04/rouches-theorem-for-a-disc-classical-form.md)
 - [The Schwarz--Christoffel formula](the-schwarz-christoffel-formula.md)
-- [Strict Schwarz lemma](../../part-02/complex/part-03/strict-schwarz-lemma.md)
+- [Strict Schwarz lemma](../../part-03/complex/part-04/strict-schwarz-lemma.md)
+- [TauCeti.IsJordanCurve.eq_filledHull_sdiff_of_isOpen_of_isBounded](tauceti-isjordancurve-eq-filledhull-sdiff-of-iso.md)
 
 ## Lean
 
@@ -175,5 +178,5 @@ TauCeti.exists_bijOn_const_mul_schwarzChristoffelPrimitive_add_of_isJordanCurve_
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.exists_bijOn_const_mul_schwarzChristoffelPrimitive_add_of_isJordanCurve_frontier`](https://taucetiproject.org/docs/TauCeti/Analysis/Complex/Conformal/SchwarzChristoffel/JordanPolygon.html#TauCeti.exists_bijOn_const_mul_schwarzChristoffelPrimitive_add_of_isJordanCurve_frontier)
-- [Source of `TauCeti.exists_bijOn_const_mul_schwarzChristoffelPrimitive_add_of_isJordanCurve_frontier` in TauCeti/Analysis/Complex/Conformal/SchwarzChristoffel/JordanPolygon.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Complex/Conformal/SchwarzChristoffel/JordanPolygon.lean#L109)
-- [Tau Ceti roadmap status: Conformal mapping and the geometric theory of holomorphic functions](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/Completed/ConformalMapping/STATUS.md)
+- [Source of `TauCeti.exists_bijOn_const_mul_schwarzChristoffelPrimitive_add_of_isJordanCurve_frontier` in TauCeti/Analysis/Complex/Conformal/SchwarzChristoffel/JordanPolygon.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Complex/Conformal/SchwarzChristoffel/JordanPolygon.lean#L108)
+- [Tau Ceti roadmap status: Conformal mapping and the geometric theory of holomorphic functions](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/Completed/ConformalMapping/STATUS.md)

@@ -27,7 +27,7 @@ TauCeti.quotientWildInertiaSubgroupEquiv.{u_1} (K : Type u_1) [Field K] [Valuati
 ## Proof depends on
 
 - [Dedekind's different theorem, the tame case](../../part-02/local-field/dedekinds-different-theorem-the-tame-case.md)
-- [Euler's theorem on an `n`-th root of unity](../../../group-theory/other-results/eulers-theorem-on-an-n-th-root-of-unity.md)
+- [Euler's theorem on an `n`-th root of unity](../../../group-theory/other-results/part-01/eulers-theorem-on-an-n-th-root-of-unity.md)
 - [The first half of Dedekind's different theorem](../../part-02/local-field/the-first-half-of-dedekinds-different-theorem.md)
 - [TauCeti.algebraicExtensionNormedField](tauceti-algebraicextensionnormedfield.md)
 
@@ -38,5 +38,5 @@ Formalized in Tau Ceti as [`TauCeti.quotientWildInertiaSubgroupEquiv`](https://t
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.quotientWildInertiaSubgroupEquiv`](https://taucetiproject.org/docs/TauCeti/NumberTheory/LocalField/Tame/Character.html#TauCeti.quotientWildInertiaSubgroupEquiv)
-- [Source of `TauCeti.quotientWildInertiaSubgroupEquiv` in TauCeti/NumberTheory/LocalField/Tame/Character.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/LocalField/Tame/Character.lean#L564)
-- [Tau Ceti roadmap status: Local fields and ramification](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/Completed/LocalFieldsRamification/STATUS.md)
+- [Source of `TauCeti.quotientWildInertiaSubgroupEquiv` in TauCeti/NumberTheory/LocalField/Tame/Character.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/LocalField/Tame/Character.lean#L564)
+- [Tau Ceti roadmap status: Local fields and ramification](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/Completed/LocalFieldsRamification/STATUS.md)

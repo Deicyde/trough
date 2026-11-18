@@ -34,4 +34,4 @@ Formalized in Tau Ceti as [`TauCeti.Divisor.IsRiemannRochDivisor.indexOfSpecialt
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Divisor.IsRiemannRochDivisor.indexOfSpecialty_eq`](https://taucetiproject.org/docs/TauCeti/FieldTheory/FunctionField/RiemannRoch/Uniqueness.html#TauCeti.Divisor.IsRiemannRochDivisor.indexOfSpecialty_eq)
-- [Source of `TauCeti.Divisor.IsRiemannRochDivisor.indexOfSpecialty_eq` in TauCeti/FieldTheory/FunctionField/RiemannRoch/Uniqueness.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/FieldTheory/FunctionField/RiemannRoch/Uniqueness.lean#L156)
+- [Source of `TauCeti.Divisor.IsRiemannRochDivisor.indexOfSpecialty_eq` in TauCeti/FieldTheory/FunctionField/RiemannRoch/Uniqueness.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/FieldTheory/FunctionField/RiemannRoch/Uniqueness.lean#L156)

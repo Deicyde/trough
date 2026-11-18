@@ -15,7 +15,7 @@ almost everywhere with the given operator.
 
 ```lean
 ContinuousLinearMap.exists_strongTypeExtension_of_setLIntegral_compl_closedBall_le.{u_1, u_2, u_3}
-  {ι : Type u_1} [Fintype ι] [Nonempty ι] {H : Type u_2} {K : Type u_3} [NormedAddCommGroup H]
+  {ι : Type u_1} [Fintype ι] {H : Type u_2} {K : Type u_3} [NormedAddCommGroup H]
   [InnerProductSpace ℝ H] [CompleteSpace H] [NormedAddCommGroup K] [InnerProductSpace ℝ K]
   [CompleteSpace K] {p : ENNReal} [Fact (1 ≤ p)]
   (T :
@@ -57,4 +57,4 @@ Formalized in Tau Ceti as [`ContinuousLinearMap.exists_strongTypeExtension_of_se
 ## Sources
 
 - [Tau Ceti documentation: `ContinuousLinearMap.exists_strongTypeExtension_of_setLIntegral_compl_closedBall_le`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Integral/CalderonZygmund/Extension.html#ContinuousLinearMap.exists_strongTypeExtension_of_setLIntegral_compl_closedBall_le)
-- [Source of `ContinuousLinearMap.exists_strongTypeExtension_of_setLIntegral_compl_closedBall_le` in TauCeti/MeasureTheory/Integral/CalderonZygmund/Extension.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/Integral/CalderonZygmund/Extension.lean#L40)
+- [Source of `ContinuousLinearMap.exists_strongTypeExtension_of_setLIntegral_compl_closedBall_le` in TauCeti/MeasureTheory/Integral/CalderonZygmund/Extension.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/Integral/CalderonZygmund/Extension.lean#L40)

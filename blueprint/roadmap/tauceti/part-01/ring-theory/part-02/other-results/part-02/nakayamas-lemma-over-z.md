@@ -57,4 +57,4 @@ Submodule.eq_bot_of_forall_isMaximal_le_smul.{u_1, u_2} {R : Type u_1} {M : Type
 ## Sources
 
 - [Tau Ceti documentation: `Submodule.eq_bot_of_forall_prime_le_smul`](https://taucetiproject.org/docs/TauCeti/RingTheory/Finiteness/Nakayama.html#Submodule.eq_bot_of_forall_prime_le_smul)
-- [Source of `Submodule.eq_bot_of_forall_prime_le_smul` in TauCeti/RingTheory/Finiteness/Nakayama.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RingTheory/Finiteness/Nakayama.lean#L116)
+- [Source of `Submodule.eq_bot_of_forall_prime_le_smul` in TauCeti/RingTheory/Finiteness/Nakayama.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RingTheory/Finiteness/Nakayama.lean#L116)

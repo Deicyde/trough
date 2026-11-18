@@ -51,5 +51,5 @@ TauCeti.LFunctions.isBigO_primePowerSummatory_div_sub_log.{u_1} (K : Type u_1) [
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.LFunctions.isBigO_primeSummatory_log_absNorm_div_sub_log`](https://taucetiproject.org/docs/TauCeti/NumberTheory/LFunctions/Mertens.html#TauCeti.LFunctions.isBigO_primeSummatory_log_absNorm_div_sub_log)
-- [Source of `TauCeti.LFunctions.isBigO_primeSummatory_log_absNorm_div_sub_log` in TauCeti/NumberTheory/LFunctions/Mertens.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/LFunctions/Mertens.lean#L416)
-- [Tau Ceti roadmap status: L-functions — completions and functional equations](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/LFunctions/STATUS.md)
+- [Source of `TauCeti.LFunctions.isBigO_primeSummatory_log_absNorm_div_sub_log` in TauCeti/NumberTheory/LFunctions/Mertens.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/LFunctions/Mertens.lean#L422)
+- [Tau Ceti roadmap status: L-functions — completions and functional equations](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/LFunctions/STATUS.md)

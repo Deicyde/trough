@@ -31,5 +31,5 @@ Formalized in Tau Ceti as [`Subgroup.prod_ncard_orbit_mul_card_stabilizerChain`]
 ## Sources
 
 - [Tau Ceti documentation: `Subgroup.prod_ncard_orbit_mul_card_stabilizerChain`](https://taucetiproject.org/docs/TauCeti/GroupTheory/GroupAction/Stabilizer/Chain.html#Subgroup.prod_ncard_orbit_mul_card_stabilizerChain)
-- [Source of `Subgroup.prod_ncard_orbit_mul_card_stabilizerChain` in TauCeti/GroupTheory/GroupAction/Stabilizer/Chain.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/GroupTheory/GroupAction/Stabilizer/Chain.lean#L116)
-- [Tau Ceti roadmap status: Orders of the sporadic groups from permutation representations](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/SporadicOrders/STATUS.md)
+- [Source of `Subgroup.prod_ncard_orbit_mul_card_stabilizerChain` in TauCeti/GroupTheory/GroupAction/Stabilizer/Chain.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/GroupTheory/GroupAction/Stabilizer/Chain.lean#L134)
+- [Tau Ceti roadmap status: Orders of the sporadic groups from permutation representations](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/SporadicOrders/STATUS.md)

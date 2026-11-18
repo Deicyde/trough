@@ -35,11 +35,7 @@ TauCeti.Contour.IsPwC1ImmersionOn.exists_crossingDecomposition {γ : ℝ → ℂ
 ## Depends on
 
 - [Generalized winding number (HW Def 2.1)](generalized-winding-number-hw-def-2-1.md)
-
-## Proof depends on
-
-- [The exact local angle contribution of one exit-time cap window](the-exact-local-angle-contribution-of-one-exit-t.md)
-- [First exit time at radius `ε` (left side)](first-exit-time-at-radius-left-side.md)
+- [Piecewise `C¹` on the interval between `a` and `b`](piecewise-c1-on-the-interval-between-a-and-b.md)
 
 ## Lean
 
@@ -48,5 +44,5 @@ Formalized in Tau Ceti as [`TauCeti.Contour.IsPwC1ImmersionOn.exists_crossingDec
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Contour.IsPwC1ImmersionOn.exists_crossingDecomposition`](https://taucetiproject.org/docs/TauCeti/Analysis/Contour/Crossing/ImmersionDecomposition.html#TauCeti.Contour.IsPwC1ImmersionOn.exists_crossingDecomposition)
-- [Source of `TauCeti.Contour.IsPwC1ImmersionOn.exists_crossingDecomposition` in TauCeti/Analysis/Contour/Crossing/ImmersionDecomposition.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Contour/Crossing/ImmersionDecomposition.lean#L187)
-- [Tau Ceti roadmap status: Contour integration and the Hungerbühler–Wasem generalized residue theorem](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/Completed/ContourIntegration/STATUS.md)
+- [Source of `TauCeti.Contour.IsPwC1ImmersionOn.exists_crossingDecomposition` in TauCeti/Analysis/Contour/Crossing/ImmersionDecomposition.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Contour/Crossing/ImmersionDecomposition.lean#L186)
+- [Tau Ceti roadmap status: Contour integration and the Hungerbühler–Wasem generalized residue theorem](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/Completed/ContourIntegration/STATUS.md)

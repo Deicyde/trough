@@ -30,4 +30,4 @@ Formalized in Tau Ceti as [`TauCeti.Cocharacter.exists_mem_unipotent_mem_levi`](
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Cocharacter.exists_mem_unipotent_mem_levi`](https://taucetiproject.org/docs/TauCeti/Algebra/AlgebraicGroup/Dynamic/Parabolic.html#TauCeti.Cocharacter.exists_mem_unipotent_mem_levi)
-- [Source of `TauCeti.Cocharacter.exists_mem_unipotent_mem_levi` in TauCeti/Algebra/AlgebraicGroup/Dynamic/Parabolic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/AlgebraicGroup/Dynamic/Parabolic.lean#L584)
+- [Source of `TauCeti.Cocharacter.exists_mem_unipotent_mem_levi` in TauCeti/Algebra/AlgebraicGroup/Dynamic/Parabolic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/AlgebraicGroup/Dynamic/Parabolic.lean#L584)

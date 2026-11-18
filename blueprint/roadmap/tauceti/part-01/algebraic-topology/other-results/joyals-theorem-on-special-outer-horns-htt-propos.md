@@ -32,4 +32,4 @@ Formalized in Tau Ceti as [`SSet.Quasicategory.hornFilling_zero`](https://taucet
 ## Sources
 
 - [Tau Ceti documentation: `SSet.Quasicategory.hornFilling_zero`](https://taucetiproject.org/docs/TauCeti/AlgebraicTopology/Quasicategory/OuterHorn.html#SSet.Quasicategory.hornFilling_zero)
-- [Source of `SSet.Quasicategory.hornFilling_zero` in TauCeti/AlgebraicTopology/Quasicategory/OuterHorn.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/AlgebraicTopology/Quasicategory/OuterHorn.lean#L117)
+- [Source of `SSet.Quasicategory.hornFilling_zero` in TauCeti/AlgebraicTopology/Quasicategory/OuterHorn.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/AlgebraicTopology/Quasicategory/OuterHorn.lean#L117)

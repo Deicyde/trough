@@ -51,4 +51,4 @@ TauCeti.MemVMO.exists_tendsto_bmoSeminorm_sub.{u_1, u_2} {E : Type u_1} {F : Typ
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.memVMO_iff_exists_tendsto_bmoSeminorm_sub`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Function/BoundedMeanOscillation/Sarason.html#TauCeti.memVMO_iff_exists_tendsto_bmoSeminorm_sub)
-- [Source of `TauCeti.memVMO_iff_exists_tendsto_bmoSeminorm_sub` in TauCeti/MeasureTheory/Function/BoundedMeanOscillation/Sarason.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/Function/BoundedMeanOscillation/Sarason.lean#L541)
+- [Source of `TauCeti.memVMO_iff_exists_tendsto_bmoSeminorm_sub` in TauCeti/MeasureTheory/Function/BoundedMeanOscillation/Sarason.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/Function/BoundedMeanOscillation/Sarason.lean#L541)

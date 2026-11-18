@@ -137,4 +137,4 @@ TauCeti.fderiv_neg_of_laplacian_nonpos_of_gt_closedBall.{u_1} {E : Type u_1} [No
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.fderiv_pos_of_laplacian_nonneg_of_lt_ball_of_le_sphere`](https://taucetiproject.org/docs/TauCeti/Analysis/InnerProductSpace/Laplacian/HopfLemma.html#TauCeti.fderiv_pos_of_laplacian_nonneg_of_lt_ball_of_le_sphere)
-- [Source of `TauCeti.fderiv_pos_of_laplacian_nonneg_of_lt_ball_of_le_sphere` in TauCeti/Analysis/InnerProductSpace/Laplacian/HopfLemma.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/InnerProductSpace/Laplacian/HopfLemma.lean#L413)
+- [Source of `TauCeti.fderiv_pos_of_laplacian_nonneg_of_lt_ball_of_le_sphere` in TauCeti/Analysis/InnerProductSpace/Laplacian/HopfLemma.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/InnerProductSpace/Laplacian/HopfLemma.lean#L413)

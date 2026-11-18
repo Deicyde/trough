@@ -74,4 +74,4 @@ TauCeti.Comodule.exists_fixed_mem_of_isClosed_of_isSolvable.{u} {k H M : Type u}
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Comodule.exists_projectiveOrbitMap_eq_identity_of_isClosed_of_isSolvable`](https://taucetiproject.org/docs/TauCeti/Algebra/AlgebraicGroup/Representation/ProjectiveOrbit/FixedPoint/Existence.html#TauCeti.Comodule.exists_projectiveOrbitMap_eq_identity_of_isClosed_of_isSolvable)
-- [Source of `TauCeti.Comodule.exists_projectiveOrbitMap_eq_identity_of_isClosed_of_isSolvable` in TauCeti/Algebra/AlgebraicGroup/Representation/ProjectiveOrbit/FixedPoint/Existence.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/AlgebraicGroup/Representation/ProjectiveOrbit/FixedPoint/Existence.lean#L49)
+- [Source of `TauCeti.Comodule.exists_projectiveOrbitMap_eq_identity_of_isClosed_of_isSolvable` in TauCeti/Algebra/AlgebraicGroup/Representation/ProjectiveOrbit/FixedPoint/Existence.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/AlgebraicGroup/Representation/ProjectiveOrbit/FixedPoint/Existence.lean#L49)

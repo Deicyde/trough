@@ -31,4 +31,4 @@ Formalized in Tau Ceti as [`TauCeti.exists_nonneg_sum_smul_eq_zero_and_coeff_add
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.exists_nonneg_sum_smul_eq_zero_and_coeff_add_dual_pos_at`](https://taucetiproject.org/docs/TauCeti/Geometry/Convex/Cone/Alternative.html#TauCeti.exists_nonneg_sum_smul_eq_zero_and_coeff_add_dual_pos_at)
-- [Source of `TauCeti.exists_nonneg_sum_smul_eq_zero_and_coeff_add_dual_pos_at` in TauCeti/Geometry/Convex/Cone/Alternative.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/Convex/Cone/Alternative.lean#L130)
+- [Source of `TauCeti.exists_nonneg_sum_smul_eq_zero_and_coeff_add_dual_pos_at` in TauCeti/Geometry/Convex/Cone/Alternative.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/Convex/Cone/Alternative.lean#L130)

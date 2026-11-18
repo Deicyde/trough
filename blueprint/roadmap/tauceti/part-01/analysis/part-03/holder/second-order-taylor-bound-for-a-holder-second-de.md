@@ -37,4 +37,4 @@ Formalized in Tau Ceti as [`HolderOnWith.norm_image_sub_sub_sub_le_of_hasFDerivW
 ## Sources
 
 - [Tau Ceti documentation: `HolderOnWith.norm_image_sub_sub_sub_le_of_hasFDerivWithinAt`](https://taucetiproject.org/docs/TauCeti/Analysis/Holder/Interpolation.html#HolderOnWith.norm_image_sub_sub_sub_le_of_hasFDerivWithinAt)
-- [Source of `HolderOnWith.norm_image_sub_sub_sub_le_of_hasFDerivWithinAt` in TauCeti/Analysis/Holder/Interpolation.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Holder/Interpolation.lean#L253)
+- [Source of `HolderOnWith.norm_image_sub_sub_sub_le_of_hasFDerivWithinAt` in TauCeti/Analysis/Holder/Interpolation.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Holder/Interpolation.lean#L253)

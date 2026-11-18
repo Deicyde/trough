@@ -39,5 +39,5 @@ Formalized in Tau Ceti as [`TauCeti.Probability.etvDist_sampleWithoutReplacement
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Probability.etvDist_sampleWithoutReplacement_sampleWithReplacement_dirac_eq`](https://taucetiproject.org/docs/TauCeti/Probability/PopulationSampling/Distinct.html#TauCeti.Probability.etvDist_sampleWithoutReplacement_sampleWithReplacement_dirac_eq)
-- [Source of `TauCeti.Probability.etvDist_sampleWithoutReplacement_sampleWithReplacement_dirac_eq` in TauCeti/Probability/PopulationSampling/Distinct.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Probability/PopulationSampling/Distinct.lean#L106)
-- [Tau Ceti roadmap status: Sampling with and without replacement, exact discrepancy for finite populations](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/FiniteSamplingDiscrepancy/STATUS.md)
+- [Source of `TauCeti.Probability.etvDist_sampleWithoutReplacement_sampleWithReplacement_dirac_eq` in TauCeti/Probability/PopulationSampling/Distinct.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Probability/PopulationSampling/Distinct.lean#L106)
+- [Tau Ceti roadmap status: Sampling with and without replacement, exact discrepancy for finite populations](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/FiniteSamplingDiscrepancy/STATUS.md)

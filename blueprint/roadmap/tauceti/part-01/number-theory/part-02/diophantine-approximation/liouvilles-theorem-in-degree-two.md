@@ -37,4 +37,4 @@ TauCeti.badlyApproximable_of_natDegree_minpoly_eq_two {ξ : ℝ} (h : (minpoly �
 ## Sources
 
 - [Tau Ceti documentation: `Irrational.badlyApproximable_of_aeval_eq_zero`](https://taucetiproject.org/docs/TauCeti/NumberTheory/DiophantineApproximation/BadlyApproximable.html#Irrational.badlyApproximable_of_aeval_eq_zero)
-- [Source of `Irrational.badlyApproximable_of_aeval_eq_zero` in TauCeti/NumberTheory/DiophantineApproximation/BadlyApproximable.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/DiophantineApproximation/BadlyApproximable.lean#L207)
+- [Source of `Irrational.badlyApproximable_of_aeval_eq_zero` in TauCeti/NumberTheory/DiophantineApproximation/BadlyApproximable.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/DiophantineApproximation/BadlyApproximable.lean#L203)

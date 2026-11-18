@@ -33,4 +33,4 @@ Formalized in Tau Ceti as [`TauCeti.limsup_setLIntegral_le`](https://taucetiproj
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.limsup_setLIntegral_le`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Integral/Lebesgue/DominatedConvergence.html#TauCeti.limsup_setLIntegral_le)
-- [Source of `TauCeti.limsup_setLIntegral_le` in TauCeti/MeasureTheory/Integral/Lebesgue/DominatedConvergence.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/Integral/Lebesgue/DominatedConvergence.lean#L119)
+- [Source of `TauCeti.limsup_setLIntegral_le` in TauCeti/MeasureTheory/Integral/Lebesgue/DominatedConvergence.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/Integral/Lebesgue/DominatedConvergence.lean#L122)

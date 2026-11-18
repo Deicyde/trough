@@ -32,4 +32,4 @@ Formalized in Tau Ceti as [`TauCeti.dgYonedaEquiv`](https://taucetiproject.org/d
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.dgYonedaEquiv`](https://taucetiproject.org/docs/TauCeti/CategoryTheory/DG/Representable.html#TauCeti.dgYonedaEquiv)
-- [Source of `TauCeti.dgYonedaEquiv` in TauCeti/CategoryTheory/DG/Representable.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/CategoryTheory/DG/Representable.lean#L432)
+- [Source of `TauCeti.dgYonedaEquiv` in TauCeti/CategoryTheory/DG/Representable.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/CategoryTheory/DG/Representable.lean#L432)

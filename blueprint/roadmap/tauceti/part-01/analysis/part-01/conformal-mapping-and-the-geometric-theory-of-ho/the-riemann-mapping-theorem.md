@@ -25,13 +25,13 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Cauchy estimate](../../part-02/complex/part-01/cauchy-estimate.md)
-- [Hurwitz's theorem](../../part-02/complex/part-01/hurwitzs-theorem.md)
-- [Montel's selection theorem](../../part-02/complex/part-02/montels-selection-theorem.md)
-- [Poincaré defect identity (norm form)](../../part-02/complex/part-03/poincare-defect-identity-norm-form.md)
-- [Rouché's theorem for a disc, classical form](../../part-02/complex/part-03/rouches-theorem-for-a-disc-classical-form.md)
-- [Strict Schwarz lemma](../../part-02/complex/part-03/strict-schwarz-lemma.md)
-- [Uniqueness in the Riemann mapping theorem, up to a disc automorphism](../../part-02/complex/part-03/uniqueness-in-the-riemann-mapping-theorem-up-to.md)
+- [Cauchy estimate](../../part-03/complex/part-01/cauchy-estimate.md)
+- [Hurwitz's theorem](../../part-03/complex/part-02/hurwitzs-theorem.md)
+- [Montel's selection theorem](../../part-03/complex/part-03/montels-selection-theorem.md)
+- [Poincaré defect identity (norm form)](../../part-03/complex/part-03/poincare-defect-identity-norm-form.md)
+- [Rouché's theorem for a disc, classical form](../../part-03/complex/part-04/rouches-theorem-for-a-disc-classical-form.md)
+- [Strict Schwarz lemma](../../part-03/complex/part-04/strict-schwarz-lemma.md)
+- [Uniqueness in the Riemann mapping theorem, up to a disc automorphism](../../part-03/complex/part-04/uniqueness-in-the-riemann-mapping-theorem-up-to.md)
 
 ## Lean
 
@@ -93,5 +93,5 @@ TauCeti.riemannMapping_normalized {Ω : Set ℂ} {z₀ : ℂ} (hΩo : IsOpen Ω)
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.riemannMapping`](https://taucetiproject.org/docs/TauCeti/Analysis/Complex/Conformal/RiemannMapping/Existence.html#TauCeti.riemannMapping)
-- [Source of `TauCeti.riemannMapping` in TauCeti/Analysis/Complex/Conformal/RiemannMapping/Existence.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Complex/Conformal/RiemannMapping/Existence.lean#L84)
-- [Tau Ceti roadmap status: Conformal mapping and the geometric theory of holomorphic functions](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/Completed/ConformalMapping/STATUS.md)
+- [Source of `TauCeti.riemannMapping` in TauCeti/Analysis/Complex/Conformal/RiemannMapping/Existence.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Complex/Conformal/RiemannMapping/Existence.lean#L84)
+- [Tau Ceti roadmap status: Conformal mapping and the geometric theory of holomorphic functions](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/Completed/ConformalMapping/STATUS.md)

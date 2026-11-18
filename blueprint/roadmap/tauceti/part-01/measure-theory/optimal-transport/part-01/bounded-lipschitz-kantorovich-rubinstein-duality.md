@@ -16,8 +16,7 @@ convention, not their sum.
 ```lean
 TauCeti.isGreatest_ofReal_integral_sub_integral_boundedLipschitz.{u} {X : Type u}
   [MeasurableSpace X] {μ ν : MeasureTheory.Measure X} [PseudoMetricSpace X] {R : ℝ} [PolishSpace X]
-  [BorelSpace X] [MeasureTheory.IsFiniteMeasure μ] [MeasureTheory.IsFiniteMeasure ν] (hR : 0 ≤ R)
-  (hmass : μ Set.univ = ν Set.univ) :
+  [BorelSpace X] [MeasureTheory.IsFiniteMeasure μ] (hR : 0 ≤ R) (hmass : μ Set.univ = ν Set.univ) :
   IsGreatest
     {r |
       ∃ f,
@@ -41,4 +40,4 @@ Formalized in Tau Ceti as [`TauCeti.isGreatest_ofReal_integral_sub_integral_boun
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.isGreatest_ofReal_integral_sub_integral_boundedLipschitz`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/OptimalTransport/Wasserstein/KantorovichRubinstein.html#TauCeti.isGreatest_ofReal_integral_sub_integral_boundedLipschitz)
-- [Source of `TauCeti.isGreatest_ofReal_integral_sub_integral_boundedLipschitz` in TauCeti/MeasureTheory/OptimalTransport/Wasserstein/KantorovichRubinstein.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/OptimalTransport/Wasserstein/KantorovichRubinstein.lean#L505)
+- [Source of `TauCeti.isGreatest_ofReal_integral_sub_integral_boundedLipschitz` in TauCeti/MeasureTheory/OptimalTransport/Wasserstein/KantorovichRubinstein.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/OptimalTransport/Wasserstein/KantorovichRubinstein.lean#L518)

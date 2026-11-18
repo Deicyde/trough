@@ -30,5 +30,5 @@ Formalized in Tau Ceti as [`TauCeti.CosetTable.index_eq_iff_injective`](https://
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.CosetTable.index_eq_iff_injective`](https://taucetiproject.org/docs/TauCeti/GroupTheory/Coset/Table.html#TauCeti.CosetTable.index_eq_iff_injective)
-- [Source of `TauCeti.CosetTable.index_eq_iff_injective` in TauCeti/GroupTheory/Coset/Table.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/GroupTheory/Coset/Table.lean#L284)
-- [Tau Ceti roadmap status: Finiteness and simplicity of the groups on the CFSG list](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/CFSGBasicProperties/STATUS.md)
+- [Source of `TauCeti.CosetTable.index_eq_iff_injective` in TauCeti/GroupTheory/Coset/Table.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/GroupTheory/Coset/Table.lean#L294)
+- [Tau Ceti roadmap status: Finiteness and simplicity of the groups on the CFSG list](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/CFSGBasicProperties/STATUS.md)

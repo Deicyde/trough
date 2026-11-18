@@ -37,4 +37,4 @@ Formalized in Tau Ceti as [`TauCeti.modularArtin_exists_nsmul_mem_indCyclicCopri
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.modularArtin_exists_nsmul_mem_indCyclicCoprimeK0`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/Induction/Artin/Spanning.html#TauCeti.modularArtin_exists_nsmul_mem_indCyclicCoprimeK0)
-- [Source of `TauCeti.modularArtin_exists_nsmul_mem_indCyclicCoprimeK0` in TauCeti/RepresentationTheory/Induction/Artin/Spanning.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RepresentationTheory/Induction/Artin/Spanning.lean#L84)
+- [Source of `TauCeti.modularArtin_exists_nsmul_mem_indCyclicCoprimeK0` in TauCeti/RepresentationTheory/Induction/Artin/Spanning.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RepresentationTheory/Induction/Artin/Spanning.lean#L84)

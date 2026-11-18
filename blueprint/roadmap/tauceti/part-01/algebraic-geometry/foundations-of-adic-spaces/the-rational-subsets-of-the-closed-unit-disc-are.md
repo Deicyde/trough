@@ -35,5 +35,5 @@ Formalized in Tau Ceti as [`TauCeti.ValuationSpectrum.mem_spaRationalFamily_iff_
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.ValuationSpectrum.mem_spaRationalFamily_iff_isHoledDiscUnion`](https://taucetiproject.org/docs/TauCeti/AlgebraicGeometry/AdicSpace/Spa/Polydisc/PolynomialDomain.html#TauCeti.ValuationSpectrum.mem_spaRationalFamily_iff_isHoledDiscUnion)
-- [Source of `TauCeti.ValuationSpectrum.mem_spaRationalFamily_iff_isHoledDiscUnion` in TauCeti/AlgebraicGeometry/AdicSpace/Spa/Polydisc/PolynomialDomain.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/AlgebraicGeometry/AdicSpace/Spa/Polydisc/PolynomialDomain.lean#L489)
-- [Tau Ceti roadmap status: Foundations of adic spaces](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/Completed/AdicSpaces/STATUS.md)
+- [Source of `TauCeti.ValuationSpectrum.mem_spaRationalFamily_iff_isHoledDiscUnion` in TauCeti/AlgebraicGeometry/AdicSpace/Spa/Polydisc/PolynomialDomain.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/AlgebraicGeometry/AdicSpace/Spa/Polydisc/PolynomialDomain.lean#L489)
+- [Tau Ceti roadmap status: Foundations of adic spaces](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/Completed/AdicSpaces/STATUS.md)

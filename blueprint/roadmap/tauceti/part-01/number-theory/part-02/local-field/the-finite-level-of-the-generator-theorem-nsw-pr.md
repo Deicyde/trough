@@ -30,22 +30,22 @@ TauCeti.exists_generating_tuple_quotient (p : ℕ) [Fact (Nat.Prime p)] (K : Typ
 
 - [Artin's theorem](../../../field-theory/galois/artins-theorem.md)
 - [Artin's theorem for a finite group of automorphisms](../../../representation-theory/continuous-cohomology-of-profinite-groups/artins-theorem-for-a-finite-group-of-automorphis.md)
-- [Cayley–Hamilton in size two](../../../linear-algebra/matrix/cayley-hamilton-in-size-two.md)
+- [Cayley–Hamilton in size two](../../../linear-algebra/part-01/matrix/cayley-hamilton-in-size-two.md)
 - [Corestriction through Shapiro's lemma](../../../representation-theory/homological/corestriction-through-shapiros-lemma.md)
 - [Dedekind's different theorem, the tame case](dedekinds-different-theorem-the-tame-case.md)
 - [Dimension shifting in every positive degree](../../../representation-theory/continuous-cohomology-of-profinite-groups/dimension-shifting-in-every-positive-degree.md)
-- [Euler's theorem on an `n`-th root of unity](../../../group-theory/other-results/eulers-theorem-on-an-n-th-root-of-unity.md)
+- [Euler's theorem on an `n`-th root of unity](../../../group-theory/other-results/part-01/eulers-theorem-on-an-n-th-root-of-unity.md)
 - [Existence of the Tate module of a finite layer (NSW (5.6.5) and the proof of (7.4.1))](../../part-01/local-galois-groups-of-p-adic-fields/existence-of-the-tate-module-of-a-finite-layer-n.md)
 - [The first half of Dedekind's different theorem](the-first-half-of-dedekinds-different-theorem.md)
-- [The first isomorphism theorem for a surjective strict homomorphism of topological groups](../../../topology/algebra/part-01/the-first-isomorphism-theorem-for-a-surjective-s.md)
+- [The first isomorphism theorem for a surjective strict homomorphism of topological groups](../../../../part-02/topology/algebra/part-01/the-first-isomorphism-theorem-for-a-surjective-s.md)
 - [Fitting's lemma](../../../ring-theory/part-01/krull-schmidt/fittings-lemma.md)
 - [Hensel's lemma for the norm](../../../ring-theory/part-02/other-results/part-01/hensels-lemma-for-the-norm.md)
 - [The Kummer isomorphism](../../../representation-theory/continuous-cohomology-of-profinite-groups/the-kummer-isomorphism.md)
-- [The local class formation](../../part-01/class-field-theory/the-local-class-formation.md)
 - [The local invariant](../../part-01/class-field-theory/the-local-invariant.md)
 - [Local reciprocity for `A(L)`](../../part-01/local-galois-groups-of-p-adic-fields/local-reciprocity-for-a-l.md)
 - [Local Tate duality in degree one](../class-field-theory/local-tate-duality-in-degree-one.md)
-- [Lyndon's theorem for the relation module (NSW (5.6.6))](../../../topology/algebra/part-01/lyndons-theorem-for-the-relation-module-nsw-5-6.md)
+- [The logarithm is Galois-equivariant](../../part-01/local-fields-and-ramification/the-logarithm-is-galois-equivariant.md)
+- [Lyndon's theorem for the relation module (NSW (5.6.6))](../../../../part-02/topology/algebra/part-01/lyndons-theorem-for-the-relation-module-nsw-5-6.md)
 - [Maschke's theorem after base change](../../../ring-theory/part-02/other-results/part-02/maschkes-theorem-after-base-change.md)
 - [Nakayama's lemma for an idempotent](../../../ring-theory/part-02/other-results/part-02/nakayamas-lemma-for-an-idempotent.md)
 - [Restriction through Shapiro's lemma](../../../representation-theory/homological/restriction-through-shapiros-lemma.md)
@@ -57,8 +57,9 @@ TauCeti.exists_generating_tuple_quotient (p : ℕ) [Fact (Nat.Prime p)] (K : Typ
 - [Tate's theorem for a class formation, in every integer degree](../../part-01/class-field-theory/tates-theorem-for-a-class-formation-in-every-int.md)
 - [TauCeti.algebraicExtensionNormedField](../../part-01/local-fields-and-ramification/tauceti-algebraicextensionnormedfield.md)
 - [TauCeti.ClassFieldTheory.tateTheorem](../../part-01/class-field-theory/tauceti-classfieldtheory-tatetheorem.md)
-- [The third isomorphism theorem for coset spaces](../../../group-theory/other-results/the-third-isomorphism-theorem-for-coset-spaces.md)
-- [Zariski's main theorem, global form](../../../ring-theory/part-02/other-results/part-03/zariskis-main-theorem-global-form.md)
+- [The third isomorphism theorem for coset spaces](../../../group-theory/other-results/part-02/the-third-isomorphism-theorem-for-coset-spaces.md)
+- [Wild inertia, through radicals](../../part-01/local-fields-and-ramification/wild-inertia-through-radicals.md)
+- [Zariski's main theorem, global form](../../../ring-theory/part-02/other-results/part-02/zariskis-main-theorem-global-form.md)
 
 ## Lean
 
@@ -67,4 +68,4 @@ Formalized in Tau Ceti as [`TauCeti.exists_generating_tuple_quotient`](https://t
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.exists_generating_tuple_quotient`](https://taucetiproject.org/docs/TauCeti/NumberTheory/LocalField/Generation/FiniteQuotient.html#TauCeti.exists_generating_tuple_quotient)
-- [Source of `TauCeti.exists_generating_tuple_quotient` in TauCeti/NumberTheory/LocalField/Generation/FiniteQuotient.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/LocalField/Generation/FiniteQuotient.lean#L59)
+- [Source of `TauCeti.exists_generating_tuple_quotient` in TauCeti/NumberTheory/LocalField/Generation/FiniteQuotient.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/LocalField/Generation/FiniteQuotient.lean#L59)

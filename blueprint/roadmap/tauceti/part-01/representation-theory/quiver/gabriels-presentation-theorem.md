@@ -49,4 +49,4 @@ TauCeti.IsBasic.exists_surjective_pathAlgebra_isAdmissibleIdeal_ker.{u, w} {k : 
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.exists_quiver_admissibleIdeal_morita`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/Quiver/AdmissibleIdeal/Presentation.html#TauCeti.exists_quiver_admissibleIdeal_morita)
-- [Source of `TauCeti.exists_quiver_admissibleIdeal_morita` in TauCeti/RepresentationTheory/Quiver/AdmissibleIdeal/Presentation.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RepresentationTheory/Quiver/AdmissibleIdeal/Presentation.lean#L224)
+- [Source of `TauCeti.exists_quiver_admissibleIdeal_morita` in TauCeti/RepresentationTheory/Quiver/AdmissibleIdeal/Presentation.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RepresentationTheory/Quiver/AdmissibleIdeal/Presentation.lean#L229)

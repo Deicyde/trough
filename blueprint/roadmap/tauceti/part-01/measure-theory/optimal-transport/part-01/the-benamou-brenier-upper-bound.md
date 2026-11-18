@@ -45,4 +45,4 @@ Formalized in Tau Ceti as [`TauCeti.exists_isContinuityEquation_map_smul_fst_add
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.exists_isContinuityEquation_map_smul_fst_add_smul_snd_of_isOptimalCoupling_le`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/OptimalTransport/ContinuityEquation/PlanInterpolation.html#TauCeti.exists_isContinuityEquation_map_smul_fst_add_smul_snd_of_isOptimalCoupling_le)
-- [Source of `TauCeti.exists_isContinuityEquation_map_smul_fst_add_smul_snd_of_isOptimalCoupling_le` in TauCeti/MeasureTheory/OptimalTransport/ContinuityEquation/PlanInterpolation.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/OptimalTransport/ContinuityEquation/PlanInterpolation.lean#L209)
+- [Source of `TauCeti.exists_isContinuityEquation_map_smul_fst_add_smul_snd_of_isOptimalCoupling_le` in TauCeti/MeasureTheory/OptimalTransport/ContinuityEquation/PlanInterpolation.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/OptimalTransport/ContinuityEquation/PlanInterpolation.lean#L209)

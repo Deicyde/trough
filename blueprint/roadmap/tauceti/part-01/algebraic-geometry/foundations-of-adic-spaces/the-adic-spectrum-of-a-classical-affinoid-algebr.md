@@ -31,13 +31,18 @@ TauCeti.ValuationSpectrum.isAdic_presentationLimitPreAdicSpace_of_isAffinoidAlge
 ## Proof depends on
 
 - [A finite module over a complete noetherian Tate ring has a strict finite presentation](a-finite-module-over-a-complete-noetherian-tate.md)
-- [The first isomorphism theorem for a surjective strict homomorphism of topological groups](../../topology/algebra/part-01/the-first-isomorphism-theorem-for-a-surjective-s.md)
-- [Henkel's open mapping theorem](../../topology/algebra/part-01/henkels-open-mapping-theorem.md)
-- [Henkel's theorem in quotient form](../../topology/algebra/part-01/henkels-theorem-in-quotient-form.md)
-- [Ideals contained in supports](ideals-contained-in-supports.md)
-- [Kedlaya's Hilbert basis theorem for restricted power series](../../ring-theory/part-01/restricted-power-series-and-tate-algebras/part-01/kedlayas-hilbert-basis-theorem-for-restricted-po.md)
+- [A rational localisation of a strongly noetherian Tate ring is strongly noetherian](a-rational-localisation-of-a-strongly-noetherian.md)
+- [The first isomorphism theorem for a surjective strict homomorphism of topological groups](../../../part-02/topology/algebra/part-01/the-first-isomorphism-theorem-for-a-surjective-s.md)
+- [Henkel's open mapping theorem](../../../part-02/topology/algebra/part-01/henkels-open-mapping-theorem.md)
+- [Henkel's theorem in quotient form](../../../part-02/topology/algebra/part-01/henkels-theorem-in-quotient-form.md)
+- [Kedlaya's Hilbert basis theorem for restricted power series](../../ring-theory/part-01/restricted-power-series-and-tate-algebras/kedlayas-hilbert-basis-theorem-for-restricted-po.md)
 - [The open mapping theorem over a Tate ring](the-open-mapping-theorem-over-a-tate-ring.md)
-- [TauCeti.IsAffinoidAlgebra.continuous_algHom](../../ring-theory/part-01/rigid-analytic-geometry/tauceti-isaffinoidalgebra-continuous-alghom.md)
+- [Strong noetherianness passes to an algebra topologically of finite type over a Tate ring](strong-noetherianness-passes-to-an-algebra-topol.md)
+- [TauCeti.IsNormMulUnit](../../ring-theory/part-01/restricted-power-series-and-tate-algebras/tauceti-isnormmulunit.md)
+- [TauCeti.MvPowerSeries.IsRestrictedFamily](../../ring-theory/part-01/restricted-power-series-and-tate-algebras/tauceti-mvpowerseries-isrestrictedfamily.md)
+- [TauCeti.PowerSeries.IsMulDistinguished](../../ring-theory/part-01/restricted-power-series-and-tate-algebras/tauceti-powerseries-ismuldistinguished.md)
+- [The Weierstrass division estimate (Bosch–Güntzer–Remmert §5.2.1, Theorem 2)](../../ring-theory/part-01/restricted-power-series-and-tate-algebras/the-weierstrass-division-estimate-bosch-guntzer.md)
+- [The Weierstrass division identity](../../ring-theory/part-02/power-series/the-weierstrass-division-identity.md)
 
 ## Lean
 
@@ -46,5 +51,5 @@ Formalized in Tau Ceti as [`TauCeti.ValuationSpectrum.isAdic_presentationLimitPr
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.ValuationSpectrum.isAdic_presentationLimitPreAdicSpace_of_isAffinoidAlgebra`](https://taucetiproject.org/docs/TauCeti/AlgebraicGeometry/AdicSpace/PreAdicSpace/StronglyNoetherian.html#TauCeti.ValuationSpectrum.isAdic_presentationLimitPreAdicSpace_of_isAffinoidAlgebra)
-- [Source of `TauCeti.ValuationSpectrum.isAdic_presentationLimitPreAdicSpace_of_isAffinoidAlgebra` in TauCeti/AlgebraicGeometry/AdicSpace/PreAdicSpace/StronglyNoetherian.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/AlgebraicGeometry/AdicSpace/PreAdicSpace/StronglyNoetherian.lean#L110)
-- [Tau Ceti roadmap status: Foundations of adic spaces](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/Completed/AdicSpaces/STATUS.md)
+- [Source of `TauCeti.ValuationSpectrum.isAdic_presentationLimitPreAdicSpace_of_isAffinoidAlgebra` in TauCeti/AlgebraicGeometry/AdicSpace/PreAdicSpace/StronglyNoetherian.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/AlgebraicGeometry/AdicSpace/PreAdicSpace/StronglyNoetherian.lean#L110)
+- [Tau Ceti roadmap status: Foundations of adic spaces](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/Completed/AdicSpaces/STATUS.md)

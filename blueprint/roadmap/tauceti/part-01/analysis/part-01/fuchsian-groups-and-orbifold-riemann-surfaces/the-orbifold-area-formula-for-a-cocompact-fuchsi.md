@@ -31,12 +31,12 @@ Subgroup.covolume_eq_two_pi_mul_neg_eulerChar_add
 
 ## Proof depends on
 
-- [Euler--Poincaré for cellular chains](../../../algebraic-topology/cellular/euler-poincare-for-cellular-chains.md)
-- [The Gauss–Bonnet formula](../../part-02/complex/part-01/the-gauss-bonnet-formula.md)
+- [Euler--Poincaré for cellular chains](../../../algebraic-topology/other-results/euler-poincare-for-cellular-chains.md)
+- [The Gauss–Bonnet formula](../../part-03/complex/part-02/the-gauss-bonnet-formula.md)
 - [The Möbius difference formula](../../../algebra/part-02/other-results/the-mobius-difference-formula.md)
 - [Osgood's lemma](../../../geometry/part-01/complex-manifolds-dolbeault-theory-and-kahler-ge/osgoods-lemma.md)
 - [The quotient of a cocompact Fuchsian group has finite CW type](the-quotient-of-a-cocompact-fuchsian-group-has-f.md)
-- [Shimizu's inequality at two cusps](../../part-02/complex/part-03/shimizus-inequality-at-two-cusps.md)
+- [Shimizu's inequality at two cusps](../../part-03/complex/part-04/shimizus-inequality-at-two-cusps.md)
 
 ## Lean
 
@@ -45,5 +45,5 @@ Formalized in Tau Ceti as [`Subgroup.covolume_eq_two_pi_mul_neg_eulerChar_add`](
 ## Sources
 
 - [Tau Ceti documentation: `Subgroup.covolume_eq_two_pi_mul_neg_eulerChar_add`](https://taucetiproject.org/docs/TauCeti/Analysis/Complex/Fuchsian/Compactification/EulerCharacteristic.html#Subgroup.covolume_eq_two_pi_mul_neg_eulerChar_add)
-- [Source of `Subgroup.covolume_eq_two_pi_mul_neg_eulerChar_add` in TauCeti/Analysis/Complex/Fuchsian/Compactification/EulerCharacteristic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Complex/Fuchsian/Compactification/EulerCharacteristic.lean#L112)
-- [Tau Ceti roadmap status: Fuchsian groups and orbifold Riemann surfaces](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/FuchsianOrbifolds/STATUS.md)
+- [Source of `Subgroup.covolume_eq_two_pi_mul_neg_eulerChar_add` in TauCeti/Analysis/Complex/Fuchsian/Compactification/EulerCharacteristic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Complex/Fuchsian/Compactification/EulerCharacteristic.lean#L112)
+- [Tau Ceti roadmap status: Fuchsian groups and orbifold Riemann surfaces](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/FuchsianOrbifolds/STATUS.md)

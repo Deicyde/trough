@@ -32,7 +32,7 @@ Its statement uses no other declaration mapped here.
 - [Hochschild's strengthening of Ado's theorem in characteristic zero](hochschilds-strengthening-of-ados-theorem-in-cha.md)
 - [The Krull intersection theorem for an extended ideal](../../ring-theory/part-01/ideal/the-krull-intersection-theorem-for-an-extended-i.md)
 - [The linear-independence half of the Poincaré--Birkhoff--Witt theorem](../../algebra/part-02/lie/part-01/the-linear-independence-half-of-the-poincare-bir.md)
-- [The Poincaré--Birkhoff--Witt theorem](../../algebra/part-02/lie/part-01/the-poincare-birkhoff-witt-theorem.md)
+- [The Poincaré--Birkhoff--Witt theorem](../../algebra/part-02/lie/part-02/the-poincare-birkhoff-witt-theorem.md)
 
 ## Lean
 
@@ -41,4 +41,4 @@ Formalized in Tau Ceti as [`TauCeti.exists_faithful_preserving_ad_nilpotence`](h
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.exists_faithful_preserving_ad_nilpotence`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/Lie/Ado/ArbitraryField.html#TauCeti.exists_faithful_preserving_ad_nilpotence)
-- [Source of `TauCeti.exists_faithful_preserving_ad_nilpotence` in TauCeti/RepresentationTheory/Lie/Ado/ArbitraryField.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RepresentationTheory/Lie/Ado/ArbitraryField.lean#L87)
+- [Source of `TauCeti.exists_faithful_preserving_ad_nilpotence` in TauCeti/RepresentationTheory/Lie/Ado/ArbitraryField.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RepresentationTheory/Lie/Ado/ArbitraryField.lean#L87)

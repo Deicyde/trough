@@ -9,9 +9,10 @@ proof: formalized
 # Artin–Rees for a finitely generated submodule
 
 If `N₀` is a finitely generated submodule
-over a noetherian ring, there is a shift `k` such that `I ^ (n + k) • N₀ ⊓ L` equals
-`I ^ n • (I ^ k • N₀ ⊓ L)` for every submodule `L` and every `n`. The ambient module need not be
-finite: only `N₀` is, so Mathlib's `Ideal.exists_pow_inf_eq_pow_smul` is applied inside `N₀`.
+over a noetherian ring and `L` is any submodule, there is a shift `k`, depending on `I`, `N₀`
+and `L`, such that `I ^ (n + k) • N₀ ⊓ L` equals `I ^ n • (I ^ k • N₀ ⊓ L)` for every `n`.
+The ambient module need not be finite: only `N₀` is, so Mathlib's
+`Ideal.exists_pow_inf_eq_pow_smul` is applied inside `N₀`.
 In particular `I ^ (n + k) • N₀ ⊓ L ≤ I ^ n • L`; when `L ≤ N₀`, this shows that the
 filtration `N₀` induces on `L` is cofinal in the `I`-adic filtration of `L`.
 
@@ -33,4 +34,4 @@ Formalized in Tau Ceti as [`Ideal.exists_pow_add_smul_inf_eq_pow_smul`](https://
 ## Sources
 
 - [Tau Ceti documentation: `Ideal.exists_pow_add_smul_inf_eq_pow_smul`](https://taucetiproject.org/docs/TauCeti/RingTheory/Ideal/ArtinRees.html#Ideal.exists_pow_add_smul_inf_eq_pow_smul)
-- [Source of `Ideal.exists_pow_add_smul_inf_eq_pow_smul` in TauCeti/RingTheory/Ideal/ArtinRees.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RingTheory/Ideal/ArtinRees.lean#L124)
+- [Source of `Ideal.exists_pow_add_smul_inf_eq_pow_smul` in TauCeti/RingTheory/Ideal/ArtinRees.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RingTheory/Ideal/ArtinRees.lean#L113)

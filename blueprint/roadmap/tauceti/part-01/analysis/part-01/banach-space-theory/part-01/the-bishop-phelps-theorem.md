@@ -63,4 +63,4 @@ Convex.frontier_subset_closure_setOf_isMaxOn_re.{u_1, u_2} {𝕜 : Type u_1} {E 
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.dense_setOf_exists_norm_apply_eq_norm`](https://taucetiproject.org/docs/TauCeti/Analysis/Normed/Module/Dual/BishopPhelps.html#TauCeti.dense_setOf_exists_norm_apply_eq_norm)
-- [Source of `TauCeti.dense_setOf_exists_norm_apply_eq_norm` in TauCeti/Analysis/Normed/Module/Dual/BishopPhelps.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Normed/Module/Dual/BishopPhelps.lean#L326)
+- [Source of `TauCeti.dense_setOf_exists_norm_apply_eq_norm` in TauCeti/Analysis/Normed/Module/Dual/BishopPhelps.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Normed/Module/Dual/BishopPhelps.lean#L326)

@@ -44,4 +44,4 @@ TauCeti.fixingSubgroup_discrField.{u, v} {F : Type u} [Field F] {E : Type v} [Fi
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.fixedField_evenAutSubgroup`](https://taucetiproject.org/docs/TauCeti/FieldTheory/GaloisGroups/Discriminant/Field.html#TauCeti.fixedField_evenAutSubgroup)
-- [Source of `TauCeti.fixedField_evenAutSubgroup` in TauCeti/FieldTheory/GaloisGroups/Discriminant/Field.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/FieldTheory/GaloisGroups/Discriminant/Field.lean#L327)
+- [Source of `TauCeti.fixedField_evenAutSubgroup` in TauCeti/FieldTheory/GaloisGroups/Discriminant/Field.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/FieldTheory/GaloisGroups/Discriminant/Field.lean#L341)

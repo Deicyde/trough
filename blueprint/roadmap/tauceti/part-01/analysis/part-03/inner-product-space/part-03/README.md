@@ -2,9 +2,8 @@
 navigation: transparent
 ---
 
-# The rectangular double-angle… to Weyl's lemma for continuous…
+# Reflected cross-block Gram… to Young's inequality for inner…
 
-- [The rectangular double-angle Gram identity](the-rectangular-double-angle-gram-identity.md)
 - [Reflected cross-block Gram identity for linear blocks](reflected-cross-block-gram-identity-for-linear-b.md)
 - [The residual Davis–Kahan `sin Θ` theorem](the-residual-davis-kahan-sin-theorem.md)
 - [The reverse separated Sylvester bound](the-reverse-separated-sylvester-bound.md)
@@ -12,7 +11,7 @@ navigation: transparent
 - [The Schwarz reflection principle](the-schwarz-reflection-principle.md)
 - [The separated Sylvester bound](the-separated-sylvester-bound.md)
 - [The simultaneous Ky Fan estimate for the Sylvester equation](the-simultaneous-ky-fan-estimate-for-the-sylvest.md)
-- [The singular-value Hoffman–Wielandt inequality](the-singular-value-hoffman-wielandt-inequality.md)
+- [The singular-value Hoffman–Wielandt inequality for arbitrary finite-dimensional maps](the-singular-value-hoffman-wielandt-inequality-f.md)
 - [The spectral theorem for compact normal operators](the-spectral-theorem-for-compact-normal-operator.md)
 - [The spectral theorem for the solution operator](the-spectral-theorem-for-the-solution-operator.md)
 - [Sylvester bound from a disc and the exterior of a larger disc](sylvester-bound-from-a-disc-and-the-exterior-of.md)
@@ -24,3 +23,4 @@ navigation: transparent
 - [Weyl's additive inequality, upper form](weyls-additive-inequality-upper-form.md)
 - [Weyl's inequality](weyls-inequality.md)
 - [Weyl's lemma for continuous functions](weyls-lemma-for-continuous-functions.md)
+- [Young's inequality for inner products](youngs-inequality-for-inner-products.md)

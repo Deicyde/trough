@@ -46,4 +46,4 @@ Formalized in Tau Ceti as [`LinearMap.IsSymmetric.le_sum_sq_eigenvalues_sub`](ht
 ## Sources
 
 - [Tau Ceti documentation: `LinearMap.IsSymmetric.le_sum_sq_eigenvalues_sub`](https://taucetiproject.org/docs/TauCeti/Analysis/InnerProductSpace/DavisEigenvalueChange.html#LinearMap.IsSymmetric.le_sum_sq_eigenvalues_sub)
-- [Source of `LinearMap.IsSymmetric.le_sum_sq_eigenvalues_sub` in TauCeti/Analysis/InnerProductSpace/DavisEigenvalueChange.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/InnerProductSpace/DavisEigenvalueChange.lean#L57)
+- [Source of `LinearMap.IsSymmetric.le_sum_sq_eigenvalues_sub` in TauCeti/Analysis/InnerProductSpace/DavisEigenvalueChange.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/InnerProductSpace/DavisEigenvalueChange.lean#L57)

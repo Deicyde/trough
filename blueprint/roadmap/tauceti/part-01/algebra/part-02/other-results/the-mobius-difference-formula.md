@@ -30,4 +30,4 @@ Formalized in Tau Ceti as [`TauCeti.moebius_sub_moebius`](https://taucetiproject
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.moebius_sub_moebius`](https://taucetiproject.org/docs/TauCeti/Algebra/Field/LinearFractional.html#TauCeti.moebius_sub_moebius)
-- [Source of `TauCeti.moebius_sub_moebius` in TauCeti/Algebra/Field/LinearFractional.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/Field/LinearFractional.lean#L50)
+- [Source of `TauCeti.moebius_sub_moebius` in TauCeti/Algebra/Field/LinearFractional.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/Field/LinearFractional.lean#L50)

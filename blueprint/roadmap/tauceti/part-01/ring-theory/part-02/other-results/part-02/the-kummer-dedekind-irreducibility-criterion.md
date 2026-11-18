@@ -31,4 +31,4 @@ Formalized in Tau Ceti as [`TauCeti.KummerDedekind.Ideal.irreducible_map_iff_irr
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.KummerDedekind.Ideal.irreducible_map_iff_irreducible_minpoly`](https://taucetiproject.org/docs/TauCeti/RingTheory/DedekindDomain/KummerDedekind.html#TauCeti.KummerDedekind.Ideal.irreducible_map_iff_irreducible_minpoly)
-- [Source of `TauCeti.KummerDedekind.Ideal.irreducible_map_iff_irreducible_minpoly` in TauCeti/RingTheory/DedekindDomain/KummerDedekind.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RingTheory/DedekindDomain/KummerDedekind.lean#L228)
+- [Source of `TauCeti.KummerDedekind.Ideal.irreducible_map_iff_irreducible_minpoly` in TauCeti/RingTheory/DedekindDomain/KummerDedekind.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RingTheory/DedekindDomain/KummerDedekind.lean#L210)

@@ -29,5 +29,5 @@ Formalized in Tau Ceti as [`MeasureTheory.Measure.volume_restrict_setOf_lt_decre
 ## Sources
 
 - [Tau Ceti documentation: `MeasureTheory.Measure.volume_restrict_setOf_lt_decreasingRearrangement`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Function/DecreasingRearrangement.html#MeasureTheory.Measure.volume_restrict_setOf_lt_decreasingRearrangement)
-- [Source of `MeasureTheory.Measure.volume_restrict_setOf_lt_decreasingRearrangement` in TauCeti/MeasureTheory/Function/DecreasingRearrangement.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/Function/DecreasingRearrangement.lean#L292)
-- [Tau Ceti roadmap status: Noncommutative integration and martingale inequalities](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/NoncommutativeIntegration/STATUS.md)
+- [Source of `MeasureTheory.Measure.volume_restrict_setOf_lt_decreasingRearrangement` in TauCeti/MeasureTheory/Function/DecreasingRearrangement.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/Function/DecreasingRearrangement.lean#L293)
+- [Tau Ceti roadmap status: Noncommutative integration and martingale inequalities](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/NoncommutativeIntegration/STATUS.md)

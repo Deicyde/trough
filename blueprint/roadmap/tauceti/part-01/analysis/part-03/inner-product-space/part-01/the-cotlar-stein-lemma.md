@@ -48,4 +48,4 @@ TauCeti.norm_sum_le_of_almost_orthogonal.{u_1, u_2, u_3, u_4} {𝕜 : Type u_1} 
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.exists_hasSum_apply_of_almost_orthogonal`](https://taucetiproject.org/docs/TauCeti/Analysis/InnerProductSpace/CotlarStein.html#TauCeti.exists_hasSum_apply_of_almost_orthogonal)
-- [Source of `TauCeti.exists_hasSum_apply_of_almost_orthogonal` in TauCeti/Analysis/InnerProductSpace/CotlarStein.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/InnerProductSpace/CotlarStein.lean#L281)
+- [Source of `TauCeti.exists_hasSum_apply_of_almost_orthogonal` in TauCeti/Analysis/InnerProductSpace/CotlarStein.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/InnerProductSpace/CotlarStein.lean#L281)

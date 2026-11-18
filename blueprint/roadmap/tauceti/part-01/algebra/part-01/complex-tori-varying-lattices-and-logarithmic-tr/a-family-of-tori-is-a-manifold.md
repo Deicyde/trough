@@ -35,5 +35,5 @@ Formalized in Tau Ceti as [`TauCeti.isManifold_torusFamily`](https://taucetiproj
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.isManifold_torusFamily`](https://taucetiproject.org/docs/TauCeti/Algebra/Module/ZLattice/Family/Manifold.html#TauCeti.isManifold_torusFamily)
-- [Source of `TauCeti.isManifold_torusFamily` in TauCeti/Algebra/Module/ZLattice/Family/Manifold.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/Module/ZLattice/Family/Manifold.lean#L183)
-- [Tau Ceti roadmap status: Complex tori: varying lattices and logarithmic transforms](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/ComplexTori/STATUS.md)
+- [Source of `TauCeti.isManifold_torusFamily` in TauCeti/Algebra/Module/ZLattice/Family/Manifold.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/Module/ZLattice/Family/Manifold.lean#L183)
+- [Tau Ceti roadmap status: Complex tori: varying lattices and logarithmic transforms](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/ComplexTori/STATUS.md)

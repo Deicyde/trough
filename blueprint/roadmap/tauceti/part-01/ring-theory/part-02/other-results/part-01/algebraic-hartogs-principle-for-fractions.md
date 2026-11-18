@@ -34,4 +34,4 @@ Formalized in Tau Ceti as [`IsLocalRing.mem_range_algebraMap_of_two_le_depth`](h
 ## Sources
 
 - [Tau Ceti documentation: `IsLocalRing.mem_range_algebraMap_of_two_le_depth`](https://taucetiproject.org/docs/TauCeti/RingTheory/Depth/Basic.html#IsLocalRing.mem_range_algebraMap_of_two_le_depth)
-- [Source of `IsLocalRing.mem_range_algebraMap_of_two_le_depth` in TauCeti/RingTheory/Depth/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RingTheory/Depth/Basic.lean#L625)
+- [Source of `IsLocalRing.mem_range_algebraMap_of_two_le_depth` in TauCeti/RingTheory/Depth/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RingTheory/Depth/Basic.lean#L664)

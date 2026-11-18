@@ -50,5 +50,5 @@ Formalized in Tau Ceti as [`Bundle.ContMDiffRiemannianMetric.connectedSum`](http
 ## Sources
 
 - [Tau Ceti documentation: `Bundle.ContMDiffRiemannianMetric.connectedSum`](https://taucetiproject.org/docs/TauCeti/Geometry/Manifold/Riemannian/ConnectedSum.html#Bundle.ContMDiffRiemannianMetric.connectedSum)
-- [Source of `Bundle.ContMDiffRiemannianMetric.connectedSum` in TauCeti/Geometry/Manifold/Riemannian/ConnectedSum.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/Manifold/Riemannian/ConnectedSum.lean#L431)
-- [Tau Ceti roadmap status: Positive scalar curvature, surgery and bordism](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/PositiveScalarCurvature/STATUS.md)
+- [Source of `Bundle.ContMDiffRiemannianMetric.connectedSum` in TauCeti/Geometry/Manifold/Riemannian/ConnectedSum.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/Manifold/Riemannian/ConnectedSum.lean#L431)
+- [Tau Ceti roadmap status: Positive scalar curvature, surgery and bordism](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/PositiveScalarCurvature/STATUS.md)

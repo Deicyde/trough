@@ -40,5 +40,5 @@ Formalized in Tau Ceti as [`TauCeti.CurrentAlgebra.lie_vacuumTranslation_ncoeff_
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.CurrentAlgebra.lie_vacuumTranslation_ncoeff_currentField`](https://taucetiproject.org/docs/TauCeti/Algebra/Lie/Current/Vacuum/VectorField.html#TauCeti.CurrentAlgebra.lie_vacuumTranslation_ncoeff_currentField)
-- [Source of `TauCeti.CurrentAlgebra.lie_vacuumTranslation_ncoeff_currentField` in TauCeti/Algebra/Lie/Current/Vacuum/VectorField.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/Lie/Current/Vacuum/VectorField.lean#L225)
-- [Tau Ceti roadmap status: Affine Lie algebras, smooth modules and completed centers](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/AffineLieAlgebras/STATUS.md)
+- [Source of `TauCeti.CurrentAlgebra.lie_vacuumTranslation_ncoeff_currentField` in TauCeti/Algebra/Lie/Current/Vacuum/VectorField.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/Lie/Current/Vacuum/VectorField.lean#L225)
+- [Tau Ceti roadmap status: Affine Lie algebras, smooth modules and completed centers](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/AffineLieAlgebras/STATUS.md)

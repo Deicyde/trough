@@ -10,8 +10,7 @@ proof: formalized
 
 An absolute Galois automorphism
 is wild exactly when its restriction to every finite Galois subextension belongs to `G₁`,
-using the local-field structures induced from the base field. This is the canonical finite-Galois
-criterion prescribed in `TauCetiRoadmap/LocalFieldsRamification`, Layer 4.
+using the local-field structures induced from the base field.
 
 ```lean
 TauCeti.mem_wildInertiaSubgroup_iff_forall_restrictNormal_mem_finiteGaloisLowerRamificationGroup.{u_1}
@@ -28,6 +27,10 @@ TauCeti.mem_wildInertiaSubgroup_iff_forall_restrictNormal_mem_finiteGaloisLowerR
 - [TauCeti.algebraicExtensionNormedField](tauceti-algebraicextensionnormedfield.md)
 - [The wild inertia subgroup](the-wild-inertia-subgroup.md)
 
+## Proof depends on
+
+- [Wild inertia, through radicals](wild-inertia-through-radicals.md)
+
 ## Lean
 
 Formalized in Tau Ceti as [`TauCeti.mem_wildInertiaSubgroup_iff_forall_restrictNormal_mem_finiteGaloisLowerRamificationGroup`](https://taucetiproject.org/docs/TauCeti/NumberTheory/LocalField/WildInertia.html#TauCeti.mem_wildInertiaSubgroup_iff_forall_restrictNormal_mem_finiteGaloisLowerRamificationGroup).
@@ -35,5 +38,5 @@ Formalized in Tau Ceti as [`TauCeti.mem_wildInertiaSubgroup_iff_forall_restrictN
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.mem_wildInertiaSubgroup_iff_forall_restrictNormal_mem_finiteGaloisLowerRamificationGroup`](https://taucetiproject.org/docs/TauCeti/NumberTheory/LocalField/WildInertia.html#TauCeti.mem_wildInertiaSubgroup_iff_forall_restrictNormal_mem_finiteGaloisLowerRamificationGroup)
-- [Source of `TauCeti.mem_wildInertiaSubgroup_iff_forall_restrictNormal_mem_finiteGaloisLowerRamificationGroup` in TauCeti/NumberTheory/LocalField/WildInertia.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/LocalField/WildInertia.lean#L412)
-- [Tau Ceti roadmap status: Local fields and ramification](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/Completed/LocalFieldsRamification/STATUS.md)
+- [Source of `TauCeti.mem_wildInertiaSubgroup_iff_forall_restrictNormal_mem_finiteGaloisLowerRamificationGroup` in TauCeti/NumberTheory/LocalField/WildInertia.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/LocalField/WildInertia.lean#L412)
+- [Tau Ceti roadmap status: Local fields and ramification](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/Completed/LocalFieldsRamification/STATUS.md)

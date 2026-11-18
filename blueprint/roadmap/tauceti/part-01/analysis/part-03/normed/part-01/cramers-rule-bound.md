@@ -13,7 +13,8 @@ variables: the determinant `D = a b' - b a'` satisfies
 `‖D‖ max(‖x‖, ‖y‖) ≤ (‖a‖ + ‖b‖ + ‖a'‖ + ‖b'‖) (‖L‖ + ‖L'‖)`.
 
 ```lean
-TauCeti.norm_det_mul_max_norm_le.{u_1} {𝕜 : Type u_1} [NormedField 𝕜] (a b a' b' x y : 𝕜) :
+TauCeti.norm_det_mul_max_norm_le.{u_1} {R : Type u_1} [SeminormedCommRing R] [NormMulClass R]
+  (a b a' b' x y : R) :
   ‖a * b' - b * a'‖ * max ‖x‖ ‖y‖ ≤
     (‖a‖ + ‖b‖ + ‖a'‖ + ‖b'‖) * (‖a * x + b * y‖ + ‖a' * x + b' * y‖)
 ```
@@ -24,9 +25,9 @@ Its statement uses no other declaration mapped here.
 
 ## Lean
 
-Formalized in Tau Ceti as [`TauCeti.norm_det_mul_max_norm_le`](https://taucetiproject.org/docs/TauCeti/Analysis/Normed/Field/LinearForms.html#TauCeti.norm_det_mul_max_norm_le).
+Formalized in Tau Ceti as [`TauCeti.norm_det_mul_max_norm_le`](https://taucetiproject.org/docs/TauCeti/Analysis/Normed/Ring/LinearForms.html#TauCeti.norm_det_mul_max_norm_le).
 
 ## Sources
 
-- [Tau Ceti documentation: `TauCeti.norm_det_mul_max_norm_le`](https://taucetiproject.org/docs/TauCeti/Analysis/Normed/Field/LinearForms.html#TauCeti.norm_det_mul_max_norm_le)
-- [Source of `TauCeti.norm_det_mul_max_norm_le` in TauCeti/Analysis/Normed/Field/LinearForms.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Normed/Field/LinearForms.lean#L47)
+- [Tau Ceti documentation: `TauCeti.norm_det_mul_max_norm_le`](https://taucetiproject.org/docs/TauCeti/Analysis/Normed/Ring/LinearForms.html#TauCeti.norm_det_mul_max_norm_le)
+- [Source of `TauCeti.norm_det_mul_max_norm_le` in TauCeti/Analysis/Normed/Ring/LinearForms.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Normed/Ring/LinearForms.lean#L44)

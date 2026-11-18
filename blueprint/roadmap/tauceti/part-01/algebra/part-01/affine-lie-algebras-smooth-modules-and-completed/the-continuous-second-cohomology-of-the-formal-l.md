@@ -14,8 +14,8 @@ nondegenerate, for instance a simple Lie algebra; the residue class of the Killi
 
 ```lean
 TauCeti.CurrentAlgebra.finrank_continuousSecondCohomology_eq_one.{u_4, u_5} (K : Type u_4)
-  (L : Type u_5) [Field K] [CharZero K] [LieRing L] [LieAlgebra K L] [FiniteDimensional K L]
-  [LieAlgebra.IsKilling K L] [IsAlgClosed K] [LieModule.IsIrreducible K L L] :
+  (L : Type u_5) [Field K] [CharZero K] [LieRing L] [LieAlgebra K L] [LieAlgebra.IsKilling K L]
+  [IsAlgClosed K] [LieModule.IsIrreducible K L L] :
   Module.finrank K
       (TauCeti.LieModule.Cohomology.continuousSecondCohomology K (TauCeti.currentAlgebra K L)
         (TrivialLieModule K (TauCeti.currentAlgebra K L) K)) =
@@ -38,5 +38,5 @@ Formalized in Tau Ceti as [`TauCeti.CurrentAlgebra.finrank_continuousSecondCohom
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.CurrentAlgebra.finrank_continuousSecondCohomology_eq_one`](https://taucetiproject.org/docs/TauCeti/Algebra/Lie/Current/ContinuousCohomology.html#TauCeti.CurrentAlgebra.finrank_continuousSecondCohomology_eq_one)
-- [Source of `TauCeti.CurrentAlgebra.finrank_continuousSecondCohomology_eq_one` in TauCeti/Algebra/Lie/Current/ContinuousCohomology.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/Lie/Current/ContinuousCohomology.lean#L552)
-- [Tau Ceti roadmap status: Affine Lie algebras, smooth modules and completed centers](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/AffineLieAlgebras/STATUS.md)
+- [Source of `TauCeti.CurrentAlgebra.finrank_continuousSecondCohomology_eq_one` in TauCeti/Algebra/Lie/Current/ContinuousCohomology.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/Lie/Current/ContinuousCohomology.lean#L570)
+- [Tau Ceti roadmap status: Affine Lie algebras, smooth modules and completed centers](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/AffineLieAlgebras/STATUS.md)

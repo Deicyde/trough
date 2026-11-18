@@ -8,8 +8,8 @@ statement: formalized
 # The arithmetic Frobenius `σ` of `Breve E`
 
 the continuous extension to `Breve E` of the
-arithmetic Frobenius of `E^{ur}/E`. It raises every root of every polynomial `X^{q^n} − X` to the
-`q`-th power (`frobenius_coe_of_pow_natCard_pow_eq_self`).
+arithmetic Frobenius of `E^{ur}/E`. It raises every root of every polynomial `X^{q^n} − X` with
+`n ≠ 0` to the `q`-th power (`frobenius_coe_of_pow_natCard_pow_eq_self`).
 
 ```lean
 TauCeti.MaxUnramifiedCompletion.frobenius.{u_1} (E : Type u_1) [Field E] [ValuativeRel E]
@@ -34,5 +34,5 @@ Formalized in Tau Ceti as [`TauCeti.MaxUnramifiedCompletion.frobenius`](https://
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.MaxUnramifiedCompletion.frobenius`](https://taucetiproject.org/docs/TauCeti/NumberTheory/LocalField/Unramified/Completion.html#TauCeti.MaxUnramifiedCompletion.frobenius)
-- [Source of `TauCeti.MaxUnramifiedCompletion.frobenius` in TauCeti/NumberTheory/LocalField/Unramified/Completion.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/LocalField/Unramified/Completion.lean#L205)
-- [Tau Ceti roadmap status: Reductive algebraic groups, part II — local structure and arithmetic models](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/ReductiveGroupsPartII/STATUS.md)
+- [Source of `TauCeti.MaxUnramifiedCompletion.frobenius` in TauCeti/NumberTheory/LocalField/Unramified/Completion.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/LocalField/Unramified/Completion.lean#L205)
+- [Tau Ceti roadmap status: Reductive algebraic groups, part II — local structure and arithmetic models](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/ReductiveGroupsPartII/STATUS.md)

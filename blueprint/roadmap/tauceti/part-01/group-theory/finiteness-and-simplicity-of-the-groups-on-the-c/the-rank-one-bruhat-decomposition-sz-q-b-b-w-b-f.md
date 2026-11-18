@@ -23,8 +23,8 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Cauchy--Binet for `2 × 2` minors](../../linear-algebra/matrix/cauchy-binet-for-2-2-minors.md)
-- [The finite-field generation theorem](../other-results/the-finite-field-generation-theorem.md)
+- [Cauchy--Binet for `2 × 2` minors](../../linear-algebra/part-01/matrix/cauchy-binet-for-2-2-minors.md)
+- [The finite-field generation theorem](../other-results/part-01/the-finite-field-generation-theorem.md)
 
 ## Lean
 
@@ -33,4 +33,4 @@ Formalized in Tau Ceti as [`TauCeti.Suzuki.mem_borelSubgroupOf_or_mem_doubleCose
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Suzuki.mem_borelSubgroupOf_or_mem_doubleCoset`](https://taucetiproject.org/docs/TauCeti/GroupTheory/SpecificGroups/CFSG/Suzuki/Simple.html#TauCeti.Suzuki.mem_borelSubgroupOf_or_mem_doubleCoset)
-- [Source of `TauCeti.Suzuki.mem_borelSubgroupOf_or_mem_doubleCoset` in TauCeti/GroupTheory/SpecificGroups/CFSG/Suzuki/Simple.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/GroupTheory/SpecificGroups/CFSG/Suzuki/Simple.lean#L83)
+- [Source of `TauCeti.Suzuki.mem_borelSubgroupOf_or_mem_doubleCoset` in TauCeti/GroupTheory/SpecificGroups/CFSG/Suzuki/Simple.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/GroupTheory/SpecificGroups/CFSG/Suzuki/Simple.lean#L83)

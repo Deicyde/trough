@@ -35,7 +35,7 @@ TauCeti.exists_openPartialHomeomorph_of_forall_isNashAt.{u_1, u_2} {σ : Type u_
 
 ## Proof depends on
 
-- [The analytic inverse function theorem](../../../analysis/part-02/analytic/the-analytic-inverse-function-theorem.md)
+- [The analytic inverse function theorem](../../../analysis/part-03/analytic/the-analytic-inverse-function-theorem.md)
 - [The local Nash graph criterion](the-local-nash-graph-criterion.md)
 - [The Tarski–Seidenberg theorem](../complex-morse-theory-affine-topology-and-weak-le/the-tarski-seidenberg-theorem.md)
 
@@ -46,4 +46,4 @@ Formalized in Tau Ceti as [`TauCeti.exists_openPartialHomeomorph_of_forall_isNas
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.exists_openPartialHomeomorph_of_forall_isNashAt`](https://taucetiproject.org/docs/TauCeti/Geometry/RealAlgebraic/Nash/Inverse.html#TauCeti.exists_openPartialHomeomorph_of_forall_isNashAt)
-- [Source of `TauCeti.exists_openPartialHomeomorph_of_forall_isNashAt` in TauCeti/Geometry/RealAlgebraic/Nash/Inverse.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/RealAlgebraic/Nash/Inverse.lean#L42)
+- [Source of `TauCeti.exists_openPartialHomeomorph_of_forall_isNashAt` in TauCeti/Geometry/RealAlgebraic/Nash/Inverse.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/RealAlgebraic/Nash/Inverse.lean#L42)

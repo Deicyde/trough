@@ -29,10 +29,10 @@ Its statement uses no other declaration mapped here.
 
 ## Lean
 
-Formalized in Tau Ceti as [`TauCeti.exact_cyclicTotalHomologyPeriodicity_homologyMap_cyclicTotalComplexToHochschild`](https://taucetiproject.org/docs/TauCeti/RingTheory/CyclicCohomology/Periodicity.html#TauCeti.exact_cyclicTotalHomologyPeriodicity_homologyMap_cyclicTotalComplexToHochschild).
+Formalized in Tau Ceti as [`TauCeti.exact_cyclicTotalHomologyPeriodicity_homologyMap_cyclicTotalComplexToHochschild`](https://taucetiproject.org/docs/TauCeti/RingTheory/CyclicCohomology/Periodicity/Basic.html#TauCeti.exact_cyclicTotalHomologyPeriodicity_homologyMap_cyclicTotalComplexToHochschild).
 
 ## Sources
 
-- [Tau Ceti documentation: `TauCeti.exact_cyclicTotalHomologyPeriodicity_homologyMap_cyclicTotalComplexToHochschild`](https://taucetiproject.org/docs/TauCeti/RingTheory/CyclicCohomology/Periodicity.html#TauCeti.exact_cyclicTotalHomologyPeriodicity_homologyMap_cyclicTotalComplexToHochschild)
-- [Source of `TauCeti.exact_cyclicTotalHomologyPeriodicity_homologyMap_cyclicTotalComplexToHochschild` in TauCeti/RingTheory/CyclicCohomology/Periodicity.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RingTheory/CyclicCohomology/Periodicity.lean#L494)
-- [Tau Ceti roadmap status: Cyclic cohomology, spectral triples and noncommutative tori](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/NoncommutativeGeometry/STATUS.md)
+- [Tau Ceti documentation: `TauCeti.exact_cyclicTotalHomologyPeriodicity_homologyMap_cyclicTotalComplexToHochschild`](https://taucetiproject.org/docs/TauCeti/RingTheory/CyclicCohomology/Periodicity/Basic.html#TauCeti.exact_cyclicTotalHomologyPeriodicity_homologyMap_cyclicTotalComplexToHochschild)
+- [Source of `TauCeti.exact_cyclicTotalHomologyPeriodicity_homologyMap_cyclicTotalComplexToHochschild` in TauCeti/RingTheory/CyclicCohomology/Periodicity/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RingTheory/CyclicCohomology/Periodicity/Basic.lean#L495)
+- [Tau Ceti roadmap status: Cyclic cohomology, spectral triples and noncommutative tori](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/NoncommutativeGeometry/STATUS.md)

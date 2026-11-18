@@ -35,4 +35,4 @@ Formalized in Tau Ceti as [`WeierstrassCurve.formalThirdRootEval_relation`](http
 ## Sources
 
 - [Tau Ceti documentation: `WeierstrassCurve.formalThirdRootEval_relation`](https://taucetiproject.org/docs/TauCeti/AlgebraicGeometry/EllipticCurve/FormalGroup/PairEval.html#WeierstrassCurve.formalThirdRootEval_relation)
-- [Source of `WeierstrassCurve.formalThirdRootEval_relation` in TauCeti/AlgebraicGeometry/EllipticCurve/FormalGroup/PairEval.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/AlgebraicGeometry/EllipticCurve/FormalGroup/PairEval.lean#L300)
+- [Source of `WeierstrassCurve.formalThirdRootEval_relation` in TauCeti/AlgebraicGeometry/EllipticCurve/FormalGroup/PairEval.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/AlgebraicGeometry/EllipticCurve/FormalGroup/PairEval.lean#L299)

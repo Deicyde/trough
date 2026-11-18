@@ -29,7 +29,7 @@ TauCeti.puiseuxField.absoluteGaloisGroupEquivZHat.{u, u_1} (K : Type u_1) [Field
 
 ## Proof depends on
 
-- [The profinite power](../../../topology/profinite-integers-profinite-powers-and-continuo/the-profinite-power.md)
+- [The profinite power](../../../../part-02/topology/profinite-integers-profinite-powers-and-continuo/the-profinite-power.md)
 
 ## Lean
 
@@ -38,5 +38,5 @@ Formalized in Tau Ceti as [`TauCeti.puiseuxField.absoluteGaloisGroupEquivZHat`](
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.puiseuxField.absoluteGaloisGroupEquivZHat`](https://taucetiproject.org/docs/TauCeti/RingTheory/LaurentSeries/Puiseux/AbsoluteGalois.html#TauCeti.puiseuxField.absoluteGaloisGroupEquivZHat)
-- [Source of `TauCeti.puiseuxField.absoluteGaloisGroupEquivZHat` in TauCeti/RingTheory/LaurentSeries/Puiseux/AbsoluteGalois.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RingTheory/LaurentSeries/Puiseux/AbsoluteGalois.lean#L254)
-- [Tau Ceti roadmap status: Formal Laurent fields, Puiseux expansions and continuous differential calculus](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/FormalLaurentPuiseux/STATUS.md)
+- [Source of `TauCeti.puiseuxField.absoluteGaloisGroupEquivZHat` in TauCeti/RingTheory/LaurentSeries/Puiseux/AbsoluteGalois.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RingTheory/LaurentSeries/Puiseux/AbsoluteGalois.lean#L254)
+- [Tau Ceti roadmap status: Formal Laurent fields, Puiseux expansions and continuous differential calculus](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/FormalLaurentPuiseux/STATUS.md)

@@ -57,4 +57,4 @@ TauCeti.exists_eLpNorm_rieszPotential_le.{u_1, u_2} {E : Type u_1} {F : Type u_2
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.exists_eLpNorm_integral_norm_sub_rpow_smul_le`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Integral/RieszPotential.html#TauCeti.exists_eLpNorm_integral_norm_sub_rpow_smul_le)
-- [Source of `TauCeti.exists_eLpNorm_integral_norm_sub_rpow_smul_le` in TauCeti/MeasureTheory/Integral/RieszPotential.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/Integral/RieszPotential.lean#L915)
+- [Source of `TauCeti.exists_eLpNorm_integral_norm_sub_rpow_smul_le` in TauCeti/MeasureTheory/Integral/RieszPotential.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/Integral/RieszPotential.lean#L915)

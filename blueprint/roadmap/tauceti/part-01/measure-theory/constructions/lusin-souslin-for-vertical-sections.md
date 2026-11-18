@@ -30,4 +30,4 @@ Formalized in Tau Ceti as [`MeasurableSet.measurableEmbedding_domRestrict_fst`](
 ## Sources
 
 - [Tau Ceti documentation: `MeasurableSet.measurableEmbedding_domRestrict_fst`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Constructions/Polish/Graph.html#MeasurableSet.measurableEmbedding_domRestrict_fst)
-- [Source of `MeasurableSet.measurableEmbedding_domRestrict_fst` in TauCeti/MeasureTheory/Constructions/Polish/Graph.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/Constructions/Polish/Graph.lean#L83)
+- [Source of `MeasurableSet.measurableEmbedding_domRestrict_fst` in TauCeti/MeasureTheory/Constructions/Polish/Graph.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/Constructions/Polish/Graph.lean#L83)

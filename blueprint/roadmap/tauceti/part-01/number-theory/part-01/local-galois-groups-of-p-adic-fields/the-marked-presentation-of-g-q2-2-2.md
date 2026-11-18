@@ -54,17 +54,17 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Burnside's basis theorem, cardinal form](../../../topology/algebra/part-01/burnsides-basis-theorem-cardinal-form.md)
-- [Burnside's criterion modulo `λ_1`](../../../topology/algebra/part-01/burnsides-criterion-modulo-1.md)
-- [The constrained successive-approximation theorem](../../../topology/profinite-and-pro-p-groups/part-01/the-constrained-successive-approximation-theorem.md)
+- [Burnside's basis theorem, cardinal form](../../../../part-02/topology/algebra/part-01/burnsides-basis-theorem-cardinal-form.md)
+- [Burnside's criterion modulo `λ_1`](../../../../part-02/topology/algebra/part-01/burnsides-criterion-modulo-1.md)
+- [The constrained successive-approximation theorem](../../../../part-02/topology/profinite-and-pro-p-groups/the-constrained-successive-approximation-theorem.md)
 - [Dedekind's modular law](../../../algebra/part-02/other-results/dedekinds-modular-law.md)
-- [The Demushkin predicate](../../../topology/profinite-and-pro-p-groups/part-01/the-demushkin-predicate.md)
+- [The Demushkin predicate](../../../../part-02/topology/profinite-and-pro-p-groups/the-demushkin-predicate.md)
 - [Demushkin's theorem](demushkins-theorem.md)
-- [The first isomorphism theorem for a surjective strict homomorphism of topological groups](../../../topology/algebra/part-01/the-first-isomorphism-theorem-for-a-surjective-s.md)
+- [The first isomorphism theorem for a surjective strict homomorphism of topological groups](../../../../part-02/topology/algebra/part-01/the-first-isomorphism-theorem-for-a-surjective-s.md)
 - [The Kummer isomorphism](../../../representation-theory/continuous-cohomology-of-profinite-groups/the-kummer-isomorphism.md)
-- [Labute's classification of the closed subgroups of `ℤ_2ˣ`](../../part-02/padics/labutes-classification-of-the-closed-subgroups-o.md)
-- [Labute's criterion](../../../topology/profinite-and-pro-p-groups/part-01/labutes-criterion.md)
-- [Labute's Theorem 4: a Demushkin group has exactly one continuous character with the prescription property](../../../topology/algebra/part-01/labutes-theorem-4-a-demushkin-group-has-exactly.md)
+- [Labute's classification of the closed subgroups of `ℤ_2ˣ`](../../part-03/padics/labutes-classification-of-the-closed-subgroups-o.md)
+- [Labute's criterion](../../../../part-02/topology/profinite-and-pro-p-groups/labutes-criterion.md)
+- [Labute's Theorem 4: a Demushkin group has exactly one continuous character with the prescription property](../../../../part-02/topology/algebra/part-01/labutes-theorem-4-a-demushkin-group-has-exactly.md)
 - [Shapiro's lemma in degree one](../../../representation-theory/homological/shapiros-lemma-in-degree-one.md)
 - [TauCeti.algebraicExtensionNormedField](../local-fields-and-ramification/tauceti-algebraicextensionnormedfield.md)
 
@@ -75,5 +75,5 @@ Formalized in Tau Ceti as [`TauCeti.absoluteGaloisGroupProP_two_ratPadicSqrtNegT
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.absoluteGaloisGroupProP_two_ratPadicSqrtNegTwo_marked`](https://taucetiproject.org/docs/TauCeti/NumberTheory/LocalField/ProP/SqrtNegTwo.html#TauCeti.absoluteGaloisGroupProP_two_ratPadicSqrtNegTwo_marked)
-- [Source of `TauCeti.absoluteGaloisGroupProP_two_ratPadicSqrtNegTwo_marked` in TauCeti/NumberTheory/LocalField/ProP/SqrtNegTwo.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/LocalField/ProP/SqrtNegTwo.lean#L223)
-- [Tau Ceti roadmap status: Local Galois groups of p-adic fields](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/Completed/LocalGaloisGroups/STATUS.md)
+- [Source of `TauCeti.absoluteGaloisGroupProP_two_ratPadicSqrtNegTwo_marked` in TauCeti/NumberTheory/LocalField/ProP/SqrtNegTwo.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/LocalField/ProP/SqrtNegTwo.lean#L223)
+- [Tau Ceti roadmap status: Local Galois groups of p-adic fields](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/Completed/LocalGaloisGroups/STATUS.md)

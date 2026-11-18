@@ -49,4 +49,4 @@ TauCeti.schurPoly_mul_alternant.{u_1, u_2} {R : Type u_1} [CommRing R] {σ : Typ
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.diagramSchurPoly_mul_alternant`](https://taucetiproject.org/docs/TauCeti/RingTheory/MvPolynomial/Symmetric/Schur/Bialternant.html#TauCeti.diagramSchurPoly_mul_alternant)
-- [Source of `TauCeti.diagramSchurPoly_mul_alternant` in TauCeti/RingTheory/MvPolynomial/Symmetric/Schur/Bialternant.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RingTheory/MvPolynomial/Symmetric/Schur/Bialternant.lean#L266)
+- [Source of `TauCeti.diagramSchurPoly_mul_alternant` in TauCeti/RingTheory/MvPolynomial/Symmetric/Schur/Bialternant.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RingTheory/MvPolynomial/Symmetric/Schur/Bialternant.lean#L266)

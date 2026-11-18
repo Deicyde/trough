@@ -30,7 +30,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Kolchin's common fixed vector theorem](../../../linear-algebra/other-results/kolchins-common-fixed-vector-theorem.md)
+- [Kolchin's common fixed vector theorem](../../../linear-algebra/part-02/other-results/kolchins-common-fixed-vector-theorem.md)
 
 ## Lean
 
@@ -137,4 +137,4 @@ TauCeti.Comodule.hasNonzeroWeightVector_of_isSolvable.{u, v, w} {k : Type u} {H 
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Comodule.exists_basis_coefficientMatrix_isUpperTriangular_of_isSolvable`](https://taucetiproject.org/docs/TauCeti/Algebra/AlgebraicGroup/Solvable/LieKolchin.html#TauCeti.Comodule.exists_basis_coefficientMatrix_isUpperTriangular_of_isSolvable)
-- [Source of `TauCeti.Comodule.exists_basis_coefficientMatrix_isUpperTriangular_of_isSolvable` in TauCeti/Algebra/AlgebraicGroup/Solvable/LieKolchin.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/AlgebraicGroup/Solvable/LieKolchin.lean#L420)
+- [Source of `TauCeti.Comodule.exists_basis_coefficientMatrix_isUpperTriangular_of_isSolvable` in TauCeti/Algebra/AlgebraicGroup/Solvable/LieKolchin.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/AlgebraicGroup/Solvable/LieKolchin.lean#L420)

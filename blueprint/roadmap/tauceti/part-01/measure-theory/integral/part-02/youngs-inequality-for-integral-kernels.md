@@ -36,7 +36,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Hölder's inequality for Young's exponents](../part-01/holders-inequality-for-youngs-exponents.md)
+- [Hölder's inequality with a bounded weight](holders-inequality-with-a-bounded-weight.md)
 
 ## Lean
 
@@ -45,4 +45,4 @@ Formalized in Tau Ceti as [`TauCeti.lintegral_rpow_lintegral_mul_le_of_inv_add_i
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.lintegral_rpow_lintegral_mul_le_of_inv_add_inv_eq`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Integral/SchurTest.html#TauCeti.lintegral_rpow_lintegral_mul_le_of_inv_add_inv_eq)
-- [Source of `TauCeti.lintegral_rpow_lintegral_mul_le_of_inv_add_inv_eq` in TauCeti/MeasureTheory/Integral/SchurTest.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/Integral/SchurTest.lean#L131)
+- [Source of `TauCeti.lintegral_rpow_lintegral_mul_le_of_inv_add_inv_eq` in TauCeti/MeasureTheory/Integral/SchurTest.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/Integral/SchurTest.lean#L135)

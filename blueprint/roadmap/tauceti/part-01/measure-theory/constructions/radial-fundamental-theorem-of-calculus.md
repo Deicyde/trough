@@ -34,4 +34,4 @@ Formalized in Tau Ceti as [`TauCeti.integral_norm_rpow_neg_finrank_mul_fderiv_ap
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.integral_norm_rpow_neg_finrank_mul_fderiv_apply_self`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Constructions/HaarToSphere.html#TauCeti.integral_norm_rpow_neg_finrank_mul_fderiv_apply_self)
-- [Source of `TauCeti.integral_norm_rpow_neg_finrank_mul_fderiv_apply_self` in TauCeti/MeasureTheory/Constructions/HaarToSphere.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/Constructions/HaarToSphere.lean#L307)
+- [Source of `TauCeti.integral_norm_rpow_neg_finrank_mul_fderiv_apply_self` in TauCeti/MeasureTheory/Constructions/HaarToSphere.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/Constructions/HaarToSphere.lean#L328)

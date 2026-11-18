@@ -32,4 +32,4 @@ Formalized in Tau Ceti as [`TauCeti.tfae_forall_exists_dvd_sub_pow`](https://tau
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.tfae_forall_exists_dvd_sub_pow`](https://taucetiproject.org/docs/TauCeti/RingTheory/AdicCompletion/Frobenius.html#TauCeti.tfae_forall_exists_dvd_sub_pow)
-- [Source of `TauCeti.tfae_forall_exists_dvd_sub_pow` in TauCeti/RingTheory/AdicCompletion/Frobenius.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RingTheory/AdicCompletion/Frobenius.lean#L132)
+- [Source of `TauCeti.tfae_forall_exists_dvd_sub_pow` in TauCeti/RingTheory/AdicCompletion/Frobenius.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RingTheory/AdicCompletion/Frobenius.lean#L136)

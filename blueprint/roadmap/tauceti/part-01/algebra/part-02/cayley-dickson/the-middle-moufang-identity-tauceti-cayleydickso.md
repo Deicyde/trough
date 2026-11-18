@@ -26,4 +26,4 @@ Formalized in Tau Ceti as [`TauCeti.CayleyDickson.moufang_middle`](https://tauce
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.CayleyDickson.moufang_middle`](https://taucetiproject.org/docs/TauCeti/Algebra/CayleyDickson/Artin.html#TauCeti.CayleyDickson.moufang_middle)
-- [Source of `TauCeti.CayleyDickson.moufang_middle` in TauCeti/Algebra/CayleyDickson/Artin.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/CayleyDickson/Artin.lean#L163)
+- [Source of `TauCeti.CayleyDickson.moufang_middle` in TauCeti/Algebra/CayleyDickson/Artin.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/CayleyDickson/Artin.lean#L163)

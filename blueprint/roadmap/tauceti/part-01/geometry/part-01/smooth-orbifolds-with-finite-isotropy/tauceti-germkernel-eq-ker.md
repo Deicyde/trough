@@ -24,7 +24,7 @@ TauCeti.germKernel_eq_ker.{u_1, u_2, u_3, u_4, u_5} {𝕜 : Type u_1} {E : Type 
 
 ## Depends on
 
-- [TauCeti.MulAction.germKernel](tauceti-mulaction-germkernel.md)
+Its statement uses no other declaration mapped here.
 
 ## Lean
 
@@ -33,5 +33,5 @@ Formalized in Tau Ceti as [`TauCeti.germKernel_eq_ker`](https://taucetiproject.o
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.germKernel_eq_ker`](https://taucetiproject.org/docs/TauCeti/Geometry/Manifold/GroupAction/GermKernel.html#TauCeti.germKernel_eq_ker)
-- [Source of `TauCeti.germKernel_eq_ker` in TauCeti/Geometry/Manifold/GroupAction/GermKernel.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/Manifold/GroupAction/GermKernel.lean#L224)
-- [Tau Ceti roadmap status: Smooth orbifolds with finite isotropy](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/Orbifolds/STATUS.md)
+- [Source of `TauCeti.germKernel_eq_ker` in TauCeti/Geometry/Manifold/GroupAction/GermKernel.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/Manifold/GroupAction/GermKernel.lean#L224)
+- [Tau Ceti roadmap status: Smooth orbifolds with finite isotropy](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/Orbifolds/STATUS.md)

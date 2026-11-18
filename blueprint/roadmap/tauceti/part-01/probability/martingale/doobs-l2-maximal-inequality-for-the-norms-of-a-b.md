@@ -43,4 +43,4 @@ MeasureTheory.Submartingale.integral_sq_partialSups_le.{u_1} {Î© : Type u_1} {mÎ
 ## Sources
 
 - [Tau Ceti documentation: `MeasureTheory.Martingale.integral_sq_partialSups_norm_le`](https://taucetiproject.org/docs/TauCeti/Probability/Martingale/MaximalInequality/L2.html#MeasureTheory.Martingale.integral_sq_partialSups_norm_le)
-- [Source of `MeasureTheory.Martingale.integral_sq_partialSups_norm_le` in TauCeti/Probability/Martingale/MaximalInequality/L2.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Probability/Martingale/MaximalInequality/L2.lean#L122)
+- [Source of `MeasureTheory.Martingale.integral_sq_partialSups_norm_le` in TauCeti/Probability/Martingale/MaximalInequality/L2.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Probability/Martingale/MaximalInequality/L2.lean#L119)

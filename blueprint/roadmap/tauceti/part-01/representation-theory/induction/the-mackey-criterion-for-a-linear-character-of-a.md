@@ -37,4 +37,4 @@ Formalized in Tau Ceti as [`TauCeti.simple_indFDRep_ofLinearCharacter_iff_of_con
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.simple_indFDRep_ofLinearCharacter_iff_of_conj_eq_inv`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/Induction/Mackey/LinearCharacter.html#TauCeti.simple_indFDRep_ofLinearCharacter_iff_of_conj_eq_inv)
-- [Source of `TauCeti.simple_indFDRep_ofLinearCharacter_iff_of_conj_eq_inv` in TauCeti/RepresentationTheory/Induction/Mackey/LinearCharacter.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RepresentationTheory/Induction/Mackey/LinearCharacter.lean#L127)
+- [Source of `TauCeti.simple_indFDRep_ofLinearCharacter_iff_of_conj_eq_inv` in TauCeti/RepresentationTheory/Induction/Mackey/LinearCharacter.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RepresentationTheory/Induction/Mackey/LinearCharacter.lean#L122)

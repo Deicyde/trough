@@ -45,4 +45,4 @@ Formalized in Tau Ceti as [`LinearMap.IsSymmetric.sinThetaFrobenius_eigenvectorS
 ## Sources
 
 - [Tau Ceti documentation: `LinearMap.IsSymmetric.sinThetaFrobenius_eigenvectorSpan_le`](https://taucetiproject.org/docs/TauCeti/Analysis/InnerProductSpace/YuWangSamworth/SinTheta.html#LinearMap.IsSymmetric.sinThetaFrobenius_eigenvectorSpan_le)
-- [Source of `LinearMap.IsSymmetric.sinThetaFrobenius_eigenvectorSpan_le` in TauCeti/Analysis/InnerProductSpace/YuWangSamworth/SinTheta.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/InnerProductSpace/YuWangSamworth/SinTheta.lean#L116)
+- [Source of `LinearMap.IsSymmetric.sinThetaFrobenius_eigenvectorSpan_le` in TauCeti/Analysis/InnerProductSpace/YuWangSamworth/SinTheta.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/InnerProductSpace/YuWangSamworth/SinTheta.lean#L116)

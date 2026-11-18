@@ -1,7 +1,7 @@
 ---
 declaration: theorem
 origin: cited
-lean: TauCeti.LFunctions.tendsto_primeSummatory_inv_absNorm_sub_log_log, TauCeti.LFunctions.isBigO_primeSummatory_inv_absNorm_sub_log_log_sub_mertensConstant
+lean: TauCeti.LFunctions.tendsto_primeSummatory_inv_absNorm_sub_log_log, TauCeti.LFunctions.isBigO_primeSummatory_inv_absNorm_sub_log_log_sub_mertensConstant, TauCeti.LFunctions.abs_sum_primesLE_one_div_sub_log_log_sub_mertensConstant_le
 statement: formalized
 proof: formalized
 ---
@@ -27,6 +27,7 @@ Its statement uses no other declaration mapped here.
 ## Proof depends on
 
 - [Mertens' first theorem for a number field](mertens-first-theorem-for-a-number-field.md)
+- [Mertens' second theorem](../../part-02/chebyshev/mertens-second-theorem.md)
 
 ## Lean
 
@@ -45,8 +46,17 @@ TauCeti.LFunctions.isBigO_primeSummatory_inv_absNorm_sub_log_log_sub_mertensCons
     fun x => (Real.log x)⁻¹
 ```
 
+**Mertens' second theorem for the rational primes, with its constant.** Formalized in Tau Ceti as [`TauCeti.LFunctions.abs_sum_primesLE_one_div_sub_log_log_sub_mertensConstant_le`](https://taucetiproject.org/docs/TauCeti/NumberTheory/LFunctions/Mertens.html#TauCeti.LFunctions.abs_sum_primesLE_one_div_sub_log_log_sub_mertensConstant_le).
+
+```lean
+TauCeti.LFunctions.abs_sum_primesLE_one_div_sub_log_log_sub_mertensConstant_le {x : ℝ}
+  (hx : 2 ≤ x) :
+  |∑ p ∈ ⌊x⌋₊.primesLE, 1 / ↑p - Real.log (Real.log x) - TauCeti.LFunctions.mertensConstant ℚ| ≤
+    2 * (Real.log 4 + 4) / Real.log x
+```
+
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.LFunctions.tendsto_primeSummatory_inv_absNorm_sub_log_log`](https://taucetiproject.org/docs/TauCeti/NumberTheory/LFunctions/Mertens.html#TauCeti.LFunctions.tendsto_primeSummatory_inv_absNorm_sub_log_log)
-- [Source of `TauCeti.LFunctions.tendsto_primeSummatory_inv_absNorm_sub_log_log` in TauCeti/NumberTheory/LFunctions/Mertens.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/LFunctions/Mertens.lean#L605)
-- [Tau Ceti roadmap status: L-functions — completions and functional equations](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/LFunctions/STATUS.md)
+- [Source of `TauCeti.LFunctions.tendsto_primeSummatory_inv_absNorm_sub_log_log` in TauCeti/NumberTheory/LFunctions/Mertens.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/LFunctions/Mertens.lean#L543)
+- [Tau Ceti roadmap status: L-functions — completions and functional equations](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/LFunctions/STATUS.md)

@@ -39,5 +39,5 @@ Formalized in Tau Ceti as [`RootPairing.Base.neg_inv_two_smul_killingForm_eq_neg
 ## Sources
 
 - [Tau Ceti documentation: `RootPairing.Base.neg_inv_two_smul_killingForm_eq_neg_smul`](https://taucetiproject.org/docs/TauCeti/Algebra/Lie/Killing/DualCoxeterNumber.html#RootPairing.Base.neg_inv_two_smul_killingForm_eq_neg_smul)
-- [Source of `RootPairing.Base.neg_inv_two_smul_killingForm_eq_neg_smul` in TauCeti/Algebra/Lie/Killing/DualCoxeterNumber.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/Lie/Killing/DualCoxeterNumber.lean#L209)
-- [Tau Ceti roadmap status: Affine Lie algebras, smooth modules and completed centers](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/AffineLieAlgebras/STATUS.md)
+- [Source of `RootPairing.Base.neg_inv_two_smul_killingForm_eq_neg_smul` in TauCeti/Algebra/Lie/Killing/DualCoxeterNumber.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/Lie/Killing/DualCoxeterNumber.lean#L209)
+- [Tau Ceti roadmap status: Affine Lie algebras, smooth modules and completed centers](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/AffineLieAlgebras/STATUS.md)

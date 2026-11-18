@@ -18,8 +18,8 @@ Trough reads these sources. The catalog of libraries is `catalog/libraries.toml`
 
 ## Tau Ceti
 
-- `data/tauceti/roadmaps.json`: each roadmap's title and the declarations its STATUS.md names under its named results and notable definitions, from [TauCetiProject/TauCetiRoadmap at 9f7c032a](https://github.com/TauCetiProject/TauCetiRoadmap/tree/9f7c032adaf1b838e8183d63ff3cfa886d061cb3), Apache-2.0.
-- `data/tauceti/deps.json`: each named declaration's kind, docstring, signature and nearest named dependencies in [TauCetiProject/TauCeti at a6027b1d](https://github.com/TauCetiProject/TauCeti/tree/a6027b1d24fcb935c53bd5b50d11b40991cda418), Apache-2.0, written by `lean/tauceti/TauCetiDeps.lean` in GitHub Actions.
+- `data/tauceti/roadmaps.json`: each roadmap's title and the declarations its STATUS.md names under its named results and notable definitions, from [TauCetiProject/TauCetiRoadmap at 612845ab](https://github.com/TauCetiProject/TauCetiRoadmap/tree/612845ab80fb9c2b9bee724a156756ee78031591), Apache-2.0.
+- `data/tauceti/deps.json`: each named declaration's kind, docstring, signature and nearest named dependencies in [TauCetiProject/TauCeti at cd41bffc](https://github.com/TauCetiProject/TauCeti/tree/cd41bffcb343151b3e58c89392e206b11fe78c1c), Apache-2.0, written by `lean/tauceti/TauCetiDeps.lean` in GitHub Actions.
 
 ## Formal Frontier
 

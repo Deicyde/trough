@@ -41,7 +41,7 @@ TauCeti.Manifold.IsJacobiFieldOn.exists_geodesicVariation_of_isCompact.{u_1, u_2
 
 ## Proof depends on
 
-- [The Koszul formula](../../part-02/manifold/part-02/the-koszul-formula.md)
+- [The Koszul formula](../../part-02/manifold/part-03/the-koszul-formula.md)
 
 ## Lean
 
@@ -50,5 +50,5 @@ Formalized in Tau Ceti as [`TauCeti.Manifold.IsJacobiFieldOn.exists_geodesicVari
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Manifold.IsJacobiFieldOn.exists_geodesicVariation_of_isCompact`](https://taucetiproject.org/docs/TauCeti/Geometry/Manifold/Riemannian/Jacobi/Realization.html#TauCeti.Manifold.IsJacobiFieldOn.exists_geodesicVariation_of_isCompact)
-- [Source of `TauCeti.Manifold.IsJacobiFieldOn.exists_geodesicVariation_of_isCompact` in TauCeti/Geometry/Manifold/Riemannian/Jacobi/Realization.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/Manifold/Riemannian/Jacobi/Realization.lean#L84)
-- [Tau Ceti roadmap status: Curvature, Jacobi fields, submanifolds, and Bochner geometry](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/RiemannianGeometry/STATUS.md)
+- [Source of `TauCeti.Manifold.IsJacobiFieldOn.exists_geodesicVariation_of_isCompact` in TauCeti/Geometry/Manifold/Riemannian/Jacobi/Realization.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/Manifold/Riemannian/Jacobi/Realization.lean#L84)
+- [Tau Ceti roadmap status: Curvature, Jacobi fields, submanifolds, and Bochner geometry](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/RiemannianGeometry/STATUS.md)

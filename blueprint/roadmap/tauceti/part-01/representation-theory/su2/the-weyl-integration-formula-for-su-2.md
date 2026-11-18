@@ -41,4 +41,4 @@ Formalized in Tau Ceti as [`TauCeti.SU2.weyl_integration_formula`](https://tauce
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.SU2.weyl_integration_formula`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/SU2/Weyl/Integration.html#TauCeti.SU2.weyl_integration_formula)
-- [Source of `TauCeti.SU2.weyl_integration_formula` in TauCeti/RepresentationTheory/SU2/Weyl/Integration.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RepresentationTheory/SU2/Weyl/Integration.lean#L138)
+- [Source of `TauCeti.SU2.weyl_integration_formula` in TauCeti/RepresentationTheory/SU2/Weyl/Integration.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RepresentationTheory/SU2/Weyl/Integration.lean#L138)

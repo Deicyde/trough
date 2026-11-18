@@ -39,4 +39,4 @@ Formalized in Tau Ceti as [`TauCeti.differentExponent_le_ramificationIndex_sub_o
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.differentExponent_le_ramificationIndex_sub_one_add_natCastValuation`](https://taucetiproject.org/docs/TauCeti/NumberTheory/LocalField/Different/Wild.html#TauCeti.differentExponent_le_ramificationIndex_sub_one_add_natCastValuation)
-- [Source of `TauCeti.differentExponent_le_ramificationIndex_sub_one_add_natCastValuation` in TauCeti/NumberTheory/LocalField/Different/Wild.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/LocalField/Different/Wild.lean#L59)
+- [Source of `TauCeti.differentExponent_le_ramificationIndex_sub_one_add_natCastValuation` in TauCeti/NumberTheory/LocalField/Different/Wild.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/LocalField/Different/Wild.lean#L59)

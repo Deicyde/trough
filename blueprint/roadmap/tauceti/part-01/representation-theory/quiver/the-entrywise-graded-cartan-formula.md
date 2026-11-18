@@ -30,4 +30,4 @@ Formalized in Tau Ceti as [`TauCeti.zigzagGradedCartanMatrix_apply`](https://tau
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.zigzagGradedCartanMatrix_apply`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/Quiver/Zigzag/CartanMatrix.html#TauCeti.zigzagGradedCartanMatrix_apply)
-- [Source of `TauCeti.zigzagGradedCartanMatrix_apply` in TauCeti/RepresentationTheory/Quiver/Zigzag/CartanMatrix.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RepresentationTheory/Quiver/Zigzag/CartanMatrix.lean#L509)
+- [Source of `TauCeti.zigzagGradedCartanMatrix_apply` in TauCeti/RepresentationTheory/Quiver/Zigzag/CartanMatrix.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RepresentationTheory/Quiver/Zigzag/CartanMatrix.lean#L509)

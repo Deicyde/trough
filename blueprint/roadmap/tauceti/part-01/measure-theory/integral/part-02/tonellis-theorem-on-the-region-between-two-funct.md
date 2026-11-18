@@ -46,4 +46,4 @@ MeasureTheory.setLIntegral_regionBetween_symm.{u_1} {α : Type u_1} [MeasurableS
 ## Sources
 
 - [Tau Ceti documentation: `MeasureTheory.setLIntegral_regionBetween`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Integral/RegionBetween.html#MeasureTheory.setLIntegral_regionBetween)
-- [Source of `MeasureTheory.setLIntegral_regionBetween` in TauCeti/MeasureTheory/Integral/RegionBetween.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/Integral/RegionBetween.lean#L38)
+- [Source of `MeasureTheory.setLIntegral_regionBetween` in TauCeti/MeasureTheory/Integral/RegionBetween.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/Integral/RegionBetween.lean#L38)

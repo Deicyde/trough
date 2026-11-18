@@ -81,4 +81,4 @@ TauCeti.ramificationIdx_le_multiplicity_differentIdeal_iff.{u_1, u_2} (A : Type 
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.multiplicity_differentIdeal_eq_ramificationIdx_sub_one_iff`](https://taucetiproject.org/docs/TauCeti/RingTheory/DedekindDomain/Different.html#TauCeti.multiplicity_differentIdeal_eq_ramificationIdx_sub_one_iff)
-- [Source of `TauCeti.multiplicity_differentIdeal_eq_ramificationIdx_sub_one_iff` in TauCeti/RingTheory/DedekindDomain/Different.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RingTheory/DedekindDomain/Different.lean#L186)
+- [Source of `TauCeti.multiplicity_differentIdeal_eq_ramificationIdx_sub_one_iff` in TauCeti/RingTheory/DedekindDomain/Different.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RingTheory/DedekindDomain/Different.lean#L186)

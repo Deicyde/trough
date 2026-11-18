@@ -35,4 +35,4 @@ Formalized in Tau Ceti as [`ContinuousLinearMap.IsFredholm.range_precomp_eq_orth
 ## Sources
 
 - [Tau Ceti documentation: `ContinuousLinearMap.IsFredholm.range_precomp_eq_orthogonalBilin_ker`](https://taucetiproject.org/docs/TauCeti/Analysis/Fredholm/Transpose.html#ContinuousLinearMap.IsFredholm.range_precomp_eq_orthogonalBilin_ker)
-- [Source of `ContinuousLinearMap.IsFredholm.range_precomp_eq_orthogonalBilin_ker` in TauCeti/Analysis/Fredholm/Transpose.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Fredholm/Transpose.lean#L87)
+- [Source of `ContinuousLinearMap.IsFredholm.range_precomp_eq_orthogonalBilin_ker` in TauCeti/Analysis/Fredholm/Transpose.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Fredholm/Transpose.lean#L87)

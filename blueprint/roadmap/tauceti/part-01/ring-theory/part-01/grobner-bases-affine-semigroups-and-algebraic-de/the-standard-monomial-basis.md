@@ -29,5 +29,5 @@ Formalized in Tau Ceti as [`MonomialOrder.IsGroebnerBasis.basisQuotient`](https:
 ## Sources
 
 - [Tau Ceti documentation: `MonomialOrder.IsGroebnerBasis.basisQuotient`](https://taucetiproject.org/docs/TauCeti/RingTheory/MvPolynomial/Groebner/NormalForm.html#MonomialOrder.IsGroebnerBasis.basisQuotient)
-- [Source of `MonomialOrder.IsGroebnerBasis.basisQuotient` in TauCeti/RingTheory/MvPolynomial/Groebner/NormalForm.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RingTheory/MvPolynomial/Groebner/NormalForm.lean#L174)
-- [Tau Ceti roadmap status: Gröbner bases, affine semigroups and algebraic degenerations](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/GroebnerGeometry/STATUS.md)
+- [Source of `MonomialOrder.IsGroebnerBasis.basisQuotient` in TauCeti/RingTheory/MvPolynomial/Groebner/NormalForm.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RingTheory/MvPolynomial/Groebner/NormalForm.lean#L174)
+- [Tau Ceti roadmap status: Gröbner bases, affine semigroups and algebraic degenerations](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/GroebnerGeometry/STATUS.md)

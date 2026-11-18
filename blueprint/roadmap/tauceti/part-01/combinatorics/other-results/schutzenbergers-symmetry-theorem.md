@@ -28,4 +28,4 @@ Formalized in Tau Ceti as [`Equiv.Perm.rsk_inv`](https://taucetiproject.org/docs
 ## Sources
 
 - [Tau Ceti documentation: `Equiv.Perm.rsk_inv`](https://taucetiproject.org/docs/TauCeti/Combinatorics/Young/Schensted/Symmetry.html#Equiv.Perm.rsk_inv)
-- [Source of `Equiv.Perm.rsk_inv` in TauCeti/Combinatorics/Young/Schensted/Symmetry.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Combinatorics/Young/Schensted/Symmetry.lean#L364)
+- [Source of `Equiv.Perm.rsk_inv` in TauCeti/Combinatorics/Young/Schensted/Symmetry.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Combinatorics/Young/Schensted/Symmetry.lean#L364)

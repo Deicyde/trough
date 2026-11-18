@@ -31,4 +31,4 @@ Formalized in Tau Ceti as [`Submodule.orthogonalBilin_orthogonalBilin_topDualPai
 ## Sources
 
 - [Tau Ceti documentation: `Submodule.orthogonalBilin_orthogonalBilin_topDualPairing_eq_topologicalClosure`](https://taucetiproject.org/docs/TauCeti/Analysis/Normed/Module/Annihilator.html#Submodule.orthogonalBilin_orthogonalBilin_topDualPairing_eq_topologicalClosure)
-- [Source of `Submodule.orthogonalBilin_orthogonalBilin_topDualPairing_eq_topologicalClosure` in TauCeti/Analysis/Normed/Module/Annihilator.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Normed/Module/Annihilator.lean#L125)
+- [Source of `Submodule.orthogonalBilin_orthogonalBilin_topDualPairing_eq_topologicalClosure` in TauCeti/Analysis/Normed/Module/Annihilator.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Normed/Module/Annihilator.lean#L125)

@@ -43,12 +43,11 @@ NormedSpace.isBigO_exp_mul_exp_sub_one_sub_quadratic.{u_1} (A : Type u_1) [Norme
 
 ```lean
 NormedSpace.isBigO_log_one_add_sub_quadratic.{u_1, u_2} (𝕂 : Type u_1) (A : Type u_2)
-  [NontriviallyNormedField 𝕂] [NormedRing A] [NormedAlgebra 𝕂 A] [CharZero 𝕂] [ContinuousSMul ℚ≥0 𝕂]
-  [CompleteSpace A] :
+  [NontriviallyNormedField 𝕂] [NormedRing A] [NormedAlgebra 𝕂 A] [CompleteSpace A] [CharZero 𝕂] :
   (fun u => NormedSpace.log (1 + u) - (u - 2⁻¹ • u ^ 2)) =O[nhds 0] fun u => ‖u‖ ^ 3
 ```
 
 ## Sources
 
 - [Tau Ceti documentation: `NormedSpace.isBigO_exp_sub_quadratic`](https://taucetiproject.org/docs/TauCeti/Analysis/Normed/Algebra/Exponential.html#NormedSpace.isBigO_exp_sub_quadratic)
-- [Source of `NormedSpace.isBigO_exp_sub_quadratic` in TauCeti/Analysis/Normed/Algebra/Exponential.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Normed/Algebra/Exponential.lean#L100)
+- [Source of `NormedSpace.isBigO_exp_sub_quadratic` in TauCeti/Analysis/Normed/Algebra/Exponential.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Normed/Algebra/Exponential.lean#L101)

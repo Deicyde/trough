@@ -33,4 +33,4 @@ Formalized in Tau Ceti as [`TauCeti.groupCohomology.map_resCoindToHom_comp_coind
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.groupCohomology.map_resCoindToHom_comp_coindIso_hom`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/Homological/GroupCohomology/Shapiro.html#TauCeti.groupCohomology.map_resCoindToHom_comp_coindIso_hom)
-- [Source of `TauCeti.groupCohomology.map_resCoindToHom_comp_coindIso_hom` in TauCeti/RepresentationTheory/Homological/GroupCohomology/Shapiro.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RepresentationTheory/Homological/GroupCohomology/Shapiro.lean#L136)
+- [Source of `TauCeti.groupCohomology.map_resCoindToHom_comp_coindIso_hom` in TauCeti/RepresentationTheory/Homological/GroupCohomology/Shapiro.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RepresentationTheory/Homological/GroupCohomology/Shapiro.lean#L136)

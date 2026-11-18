@@ -33,4 +33,4 @@ Formalized in Tau Ceti as [`Submodule.two_pow_finrank_le_volume_setOf_forall_abs
 ## Sources
 
 - [Tau Ceti documentation: `Submodule.two_pow_finrank_le_volume_setOf_forall_abs_le_one`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Measure/Lebesgue/CubeSlice.html#Submodule.two_pow_finrank_le_volume_setOf_forall_abs_le_one)
-- [Source of `Submodule.two_pow_finrank_le_volume_setOf_forall_abs_le_one` in TauCeti/MeasureTheory/Measure/Lebesgue/CubeSlice.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/Measure/Lebesgue/CubeSlice.lean#L331)
+- [Source of `Submodule.two_pow_finrank_le_volume_setOf_forall_abs_le_one` in TauCeti/MeasureTheory/Measure/Lebesgue/CubeSlice.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/Measure/Lebesgue/CubeSlice.lean#L344)

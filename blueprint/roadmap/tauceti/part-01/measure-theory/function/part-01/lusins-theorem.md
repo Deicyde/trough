@@ -10,14 +10,14 @@ proof: formalized
 
 A measurable map `f` from a weakly regular measure space into a
 second-countable topological space is continuous on a closed set `F ⊆ s` with `μ (s \ F) < ε`,
-for every measurable set `s` of finite measure and every `ε > 0`.
+for every null measurable set `s` of finite measure and every `ε > 0`.
 
 ```lean
 Measurable.exists_isClosed_measure_sdiff_lt_continuousOn.{u_1, u_2} {X : Type u_1} {Y : Type u_2}
   [TopologicalSpace X] [MeasurableSpace X] [OpensMeasurableSpace X] [TopologicalSpace Y]
   [SecondCountableTopology Y] [MeasurableSpace Y] [OpensMeasurableSpace Y]
   {μ : MeasureTheory.Measure X} [μ.WeaklyRegular] {f : X → Y} {s : Set X} {ε : ENNReal}
-  (hf : Measurable f) (hs : MeasurableSet s) (hμs : μ s ≠ ⊤) (hε : ε ≠ 0) :
+  (hf : Measurable f) (hs : MeasureTheory.NullMeasurableSet s μ) (hμs : μ s ≠ ⊤) (hε : ε ≠ 0) :
   ∃ F ⊆ s, IsClosed F ∧ μ (s \ F) < ε ∧ ContinuousOn f F
 ```
 
@@ -38,7 +38,7 @@ AEMeasurable.exists_isClosed_measure_sdiff_lt_continuousOn.{u_1, u_2} {X : Type 
   [TopologicalSpace X] [MeasurableSpace X] [OpensMeasurableSpace X] [TopologicalSpace Y]
   [SecondCountableTopology Y] [MeasurableSpace Y] [OpensMeasurableSpace Y]
   {μ : MeasureTheory.Measure X} [μ.WeaklyRegular] {f : X → Y} {s : Set X} {ε : ENNReal}
-  (hf : AEMeasurable f μ) (hs : MeasurableSet s) (hμs : μ s ≠ ⊤) (hε : ε ≠ 0) :
+  (hf : AEMeasurable f μ) (hs : MeasureTheory.NullMeasurableSet s μ) (hμs : μ s ≠ ⊤) (hε : ε ≠ 0) :
   ∃ F ⊆ s, IsClosed F ∧ μ (s \ F) < ε ∧ ContinuousOn f F
 ```
 
@@ -49,8 +49,8 @@ MeasureTheory.AEStronglyMeasurable.exists_isClosed_measure_sdiff_lt_continuousOn
   {X : Type u_1} [TopologicalSpace X] [MeasurableSpace X] [OpensMeasurableSpace X]
   {μ : MeasureTheory.Measure X} [μ.WeaklyRegular] {s : Set X} {ε : ENNReal} {Z : Type u_3}
   [TopologicalSpace Z] [TopologicalSpace.PseudoMetrizableSpace Z] {g : X → Z}
-  (hg : MeasureTheory.AEStronglyMeasurable g μ) (hs : MeasurableSet s) (hμs : μ s ≠ ⊤)
-  (hε : ε ≠ 0) : ∃ F ⊆ s, IsClosed F ∧ μ (s \ F) < ε ∧ ContinuousOn g F
+  (hg : MeasureTheory.AEStronglyMeasurable g μ) (hs : MeasureTheory.NullMeasurableSet s μ)
+  (hμs : μ s ≠ ⊤) (hε : ε ≠ 0) : ∃ F ⊆ s, IsClosed F ∧ μ (s \ F) < ε ∧ ContinuousOn g F
 ```
 
 **Lusin's theorem for a strongly measurable map into a pseudometrizable space.** Formalized in Tau Ceti as [`MeasureTheory.StronglyMeasurable.exists_isClosed_measure_sdiff_lt_continuousOn`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Function/Lusin.html#MeasureTheory.StronglyMeasurable.exists_isClosed_measure_sdiff_lt_continuousOn).
@@ -60,11 +60,11 @@ MeasureTheory.StronglyMeasurable.exists_isClosed_measure_sdiff_lt_continuousOn.{
   {X : Type u_1} [TopologicalSpace X] [MeasurableSpace X] [OpensMeasurableSpace X]
   {μ : MeasureTheory.Measure X} [μ.WeaklyRegular] {s : Set X} {ε : ENNReal} {Z : Type u_3}
   [TopologicalSpace Z] [TopologicalSpace.PseudoMetrizableSpace Z] {g : X → Z}
-  (hg : MeasureTheory.StronglyMeasurable g) (hs : MeasurableSet s) (hμs : μ s ≠ ⊤) (hε : ε ≠ 0) :
-  ∃ F ⊆ s, IsClosed F ∧ μ (s \ F) < ε ∧ ContinuousOn g F
+  (hg : MeasureTheory.StronglyMeasurable g) (hs : MeasureTheory.NullMeasurableSet s μ)
+  (hμs : μ s ≠ ⊤) (hε : ε ≠ 0) : ∃ F ⊆ s, IsClosed F ∧ μ (s \ F) < ε ∧ ContinuousOn g F
 ```
 
 ## Sources
 
 - [Tau Ceti documentation: `Measurable.exists_isClosed_measure_sdiff_lt_continuousOn`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Function/Lusin.html#Measurable.exists_isClosed_measure_sdiff_lt_continuousOn)
-- [Source of `Measurable.exists_isClosed_measure_sdiff_lt_continuousOn` in TauCeti/MeasureTheory/Function/Lusin.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/Function/Lusin.lean#L94)
+- [Source of `Measurable.exists_isClosed_measure_sdiff_lt_continuousOn` in TauCeti/MeasureTheory/Function/Lusin.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/Function/Lusin.lean#L104)

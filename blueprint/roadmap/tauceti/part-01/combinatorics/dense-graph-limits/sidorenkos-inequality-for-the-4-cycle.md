@@ -31,4 +31,4 @@ Formalized in Tau Ceti as [`TauCeti.DenseGraphLimits.sidorenko_cycleGraph_four`]
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.DenseGraphLimits.sidorenko_cycleGraph_four`](https://taucetiproject.org/docs/TauCeti/Combinatorics/DenseGraphLimits/Applications.html#TauCeti.DenseGraphLimits.sidorenko_cycleGraph_four)
-- [Source of `TauCeti.DenseGraphLimits.sidorenko_cycleGraph_four` in TauCeti/Combinatorics/DenseGraphLimits/Applications.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Combinatorics/DenseGraphLimits/Applications.lean#L429)
+- [Source of `TauCeti.DenseGraphLimits.sidorenko_cycleGraph_four` in TauCeti/Combinatorics/DenseGraphLimits/Applications.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Combinatorics/DenseGraphLimits/Applications.lean#L429)

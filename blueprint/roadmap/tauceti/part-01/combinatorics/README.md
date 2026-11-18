@@ -9,4 +9,5 @@ Results in Tau Ceti's `TauCeti.Combinatorics` modules, and the roadmaps whose ar
 - [Dense Graph Limits](dense-graph-limits/README.md)
 - [Graph](graph/README.md)
 - [Network](network/README.md)
+- [Simple Graph](simple-graph/README.md)
 - [Other results](other-results/README.md)

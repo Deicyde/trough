@@ -29,7 +29,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The Morse form of Łojasiewicz's gradient inequality](../../../../analysis/part-02/calculus/part-01/the-morse-form-of-ojasiewiczs-gradient-inequalit.md)
+- [The Morse form of Łojasiewicz's gradient inequality](../../../../analysis/part-03/calculus/part-01/the-morse-form-of-ojasiewiczs-gradient-inequalit.md)
 
 ## Lean
 
@@ -38,4 +38,4 @@ Formalized in Tau Ceti as [`TauCeti.IsManifoldNondegenerateCriticalPoint.exists_
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.IsManifoldNondegenerateCriticalPoint.exists_mul_abs_sub_le_norm_mgradient_sq`](https://taucetiproject.org/docs/TauCeti/Geometry/Manifold/Morse/ExponentialConvergence.html#TauCeti.IsManifoldNondegenerateCriticalPoint.exists_mul_abs_sub_le_norm_mgradient_sq)
-- [Source of `TauCeti.IsManifoldNondegenerateCriticalPoint.exists_mul_abs_sub_le_norm_mgradient_sq` in TauCeti/Geometry/Manifold/Morse/ExponentialConvergence.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/Manifold/Morse/ExponentialConvergence.lean#L114)
+- [Source of `TauCeti.IsManifoldNondegenerateCriticalPoint.exists_mul_abs_sub_le_norm_mgradient_sq` in TauCeti/Geometry/Manifold/Morse/ExponentialConvergence.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/Manifold/Morse/ExponentialConvergence.lean#L114)

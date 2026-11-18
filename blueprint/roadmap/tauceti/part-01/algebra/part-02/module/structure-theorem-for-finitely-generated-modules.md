@@ -31,4 +31,4 @@ Formalized in Tau Ceti as [`TauCeti.Module.equiv_pi_prod_pi_quotient_span_pow`](
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Module.equiv_pi_prod_pi_quotient_span_pow`](https://taucetiproject.org/docs/TauCeti/Algebra/Module/DiscreteValuationRing.html#TauCeti.Module.equiv_pi_prod_pi_quotient_span_pow)
-- [Source of `TauCeti.Module.equiv_pi_prod_pi_quotient_span_pow` in TauCeti/Algebra/Module/DiscreteValuationRing.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/Module/DiscreteValuationRing.lean#L36)
+- [Source of `TauCeti.Module.equiv_pi_prod_pi_quotient_span_pow` in TauCeti/Algebra/Module/DiscreteValuationRing.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/Module/DiscreteValuationRing.lean#L36)

@@ -43,4 +43,4 @@ TauCeti.SU2.character_symPower_torusExp_eq_sin_div_sin (d : ℕ) {θ : ℝ} (hθ
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.SU2.character_symPower_torusHom_eq_div`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/SU2/Weyl/Character.html#TauCeti.SU2.character_symPower_torusHom_eq_div)
-- [Source of `TauCeti.SU2.character_symPower_torusHom_eq_div` in TauCeti/RepresentationTheory/SU2/Weyl/Character.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RepresentationTheory/SU2/Weyl/Character.lean#L115)
+- [Source of `TauCeti.SU2.character_symPower_torusHom_eq_div` in TauCeti/RepresentationTheory/SU2/Weyl/Character.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RepresentationTheory/SU2/Weyl/Character.lean#L110)

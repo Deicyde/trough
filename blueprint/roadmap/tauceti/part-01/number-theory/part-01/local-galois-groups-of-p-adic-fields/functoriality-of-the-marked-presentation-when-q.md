@@ -88,5 +88,5 @@ Formalized in Tau Ceti as [`TauCeti.absoluteGaloisGroupProP_marked_of_q_ne_two_c
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.absoluteGaloisGroupProP_marked_of_q_ne_two_congr`](https://taucetiproject.org/docs/TauCeti/NumberTheory/LocalField/ProP/Marked/Functoriality.html#TauCeti.absoluteGaloisGroupProP_marked_of_q_ne_two_congr)
-- [Source of `TauCeti.absoluteGaloisGroupProP_marked_of_q_ne_two_congr` in TauCeti/NumberTheory/LocalField/ProP/Marked/Functoriality.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/LocalField/ProP/Marked/Functoriality.lean#L284)
-- [Tau Ceti roadmap status: Local Galois groups of p-adic fields](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/Completed/LocalGaloisGroups/STATUS.md)
+- [Source of `TauCeti.absoluteGaloisGroupProP_marked_of_q_ne_two_congr` in TauCeti/NumberTheory/LocalField/ProP/Marked/Functoriality.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/LocalField/ProP/Marked/Functoriality.lean#L274)
+- [Tau Ceti roadmap status: Local Galois groups of p-adic fields](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/Completed/LocalGaloisGroups/STATUS.md)

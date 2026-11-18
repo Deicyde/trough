@@ -58,5 +58,5 @@ Matrix.re_det_gram_le_pow.{u_1, u_2, u_3} {𝕜 : Type u_1} {E : Type u_2} {ι :
 ## Sources
 
 - [Tau Ceti documentation: `OrthonormalBasis.norm_det_le_prod_norm`](https://taucetiproject.org/docs/TauCeti/Analysis/InnerProductSpace/Gram/Hadamard.html#OrthonormalBasis.norm_det_le_prod_norm)
-- [Source of `OrthonormalBasis.norm_det_le_prod_norm` in TauCeti/Analysis/InnerProductSpace/Gram/Hadamard.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/InnerProductSpace/Gram/Hadamard.lean#L74)
-- [Tau Ceti roadmap status: Successive minima and Minkowski's theorems](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/SuccessiveMinima/STATUS.md)
+- [Source of `OrthonormalBasis.norm_det_le_prod_norm` in TauCeti/Analysis/InnerProductSpace/Gram/Hadamard.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/InnerProductSpace/Gram/Hadamard.lean#L91)
+- [Tau Ceti roadmap status: Successive minima and Minkowski's theorems](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/SuccessiveMinima/STATUS.md)

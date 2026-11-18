@@ -34,4 +34,4 @@ Formalized in Tau Ceti as [`TauCeti.Delineation.root_notMem_uIcc_of_sign_eval_eq
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Delineation.root_notMem_uIcc_of_sign_eval_eq`](https://taucetiproject.org/docs/TauCeti/Geometry/RealAlgebraic/Stack/Delineation.html#TauCeti.Delineation.root_notMem_uIcc_of_sign_eval_eq)
-- [Source of `TauCeti.Delineation.root_notMem_uIcc_of_sign_eval_eq` in TauCeti/Geometry/RealAlgebraic/Stack/Delineation.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/RealAlgebraic/Stack/Delineation.lean#L434)
+- [Source of `TauCeti.Delineation.root_notMem_uIcc_of_sign_eval_eq` in TauCeti/Geometry/RealAlgebraic/Stack/Delineation.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/RealAlgebraic/Stack/Delineation.lean#L496)

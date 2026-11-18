@@ -32,8 +32,8 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Green's first identity on a manifold without boundary](../part-01/greens-first-identity-on-a-manifold-without-boun.md)
-- [The Koszul formula](the-koszul-formula.md)
+- [Green's first identity on a manifold without boundary](greens-first-identity-on-a-manifold-without-boun.md)
+- [The Koszul formula](../part-03/the-koszul-formula.md)
 
 ## Lean
 
@@ -42,4 +42,4 @@ Formalized in Tau Ceti as [`TauCeti.Manifold.SobolevH1.inner_ofSmooth_right`](ht
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Manifold.SobolevH1.inner_ofSmooth_right`](https://taucetiproject.org/docs/TauCeti/Geometry/Manifold/Riemannian/Sobolev/H1.html#TauCeti.Manifold.SobolevH1.inner_ofSmooth_right)
-- [Source of `TauCeti.Manifold.SobolevH1.inner_ofSmooth_right` in TauCeti/Geometry/Manifold/Riemannian/Sobolev/H1.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/Manifold/Riemannian/Sobolev/H1.lean#L364)
+- [Source of `TauCeti.Manifold.SobolevH1.inner_ofSmooth_right` in TauCeti/Geometry/Manifold/Riemannian/Sobolev/H1.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/Manifold/Riemannian/Sobolev/H1.lean#L364)

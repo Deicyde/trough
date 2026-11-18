@@ -36,4 +36,5 @@ Formalized in Tau Ceti as [`TauCeti.isPotentiallyONable_of_discrete_norm`](https
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.isPotentiallyONable_of_discrete_norm`](https://taucetiproject.org/docs/TauCeti/Analysis/Normed/Module/Bases/DiscreteNorm.html#TauCeti.isPotentiallyONable_of_discrete_norm)
-- [Source of `TauCeti.isPotentiallyONable_of_discrete_norm` in TauCeti/Analysis/Normed/Module/Bases/DiscreteNorm.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Analysis/Normed/Module/Bases/DiscreteNorm.lean#L63)
+- [Source of `TauCeti.isPotentiallyONable_of_discrete_norm` in TauCeti/Analysis/Normed/Module/Bases/DiscreteNorm.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Analysis/Normed/Module/Bases/DiscreteNorm.lean#L63)
+- [Tau Ceti roadmap status: P-adic functional analysis](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/PadicFunctionalAnalysis/STATUS.md)

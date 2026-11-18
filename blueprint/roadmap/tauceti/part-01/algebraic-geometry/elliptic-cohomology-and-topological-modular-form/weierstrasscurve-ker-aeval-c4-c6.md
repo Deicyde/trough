@@ -30,5 +30,5 @@ Formalized in Tau Ceti as [`WeierstrassCurve.ker_aeval_c₄_c₆_Δ`](https://ta
 ## Sources
 
 - [Tau Ceti documentation: `WeierstrassCurve.ker_aeval_c₄_c₆_Δ`](https://taucetiproject.org/docs/TauCeti/AlgebraicGeometry/EllipticCurve/Invariants/Presentation.html#WeierstrassCurve.ker_aeval_c%E2%82%84_c%E2%82%86_%CE%94)
-- [Source of `WeierstrassCurve.ker_aeval_c₄_c₆_Δ` in TauCeti/AlgebraicGeometry/EllipticCurve/Invariants/Presentation.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/AlgebraicGeometry/EllipticCurve/Invariants/Presentation.lean#L91)
-- [Tau Ceti roadmap status: Elliptic cohomology and topological modular forms](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/EllipticCohomology/STATUS.md)
+- [Source of `WeierstrassCurve.ker_aeval_c₄_c₆_Δ` in TauCeti/AlgebraicGeometry/EllipticCurve/Invariants/Presentation.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/AlgebraicGeometry/EllipticCurve/Invariants/Presentation.lean#L91)
+- [Tau Ceti roadmap status: Elliptic cohomology and topological modular forms](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/EllipticCohomology/STATUS.md)

@@ -31,5 +31,5 @@ Formalized in Tau Ceti as [`TauCeti.DualGraph.nonempty_iso_of_reflTransGen_of_is
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.DualGraph.nonempty_iso_of_reflTransGen_of_isStable`](https://taucetiproject.org/docs/TauCeti/AlgebraicGeometry/Curves/DualGraph/Stabilization.html#TauCeti.DualGraph.nonempty_iso_of_reflTransGen_of_isStable)
-- [Source of `TauCeti.DualGraph.nonempty_iso_of_reflTransGen_of_isStable` in TauCeti/AlgebraicGeometry/Curves/DualGraph/Stabilization.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/AlgebraicGeometry/Curves/DualGraph/Stabilization.lean#L613)
-- [Tau Ceti roadmap status: Stable reduction of curves and stable maps](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/StableReduction/STATUS.md)
+- [Source of `TauCeti.DualGraph.nonempty_iso_of_reflTransGen_of_isStable` in TauCeti/AlgebraicGeometry/Curves/DualGraph/Stabilization.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/AlgebraicGeometry/Curves/DualGraph/Stabilization.lean#L613)
+- [Tau Ceti roadmap status: Stable reduction of curves and stable maps](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/StableReduction/STATUS.md)

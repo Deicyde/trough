@@ -26,5 +26,5 @@ Formalized in Tau Ceti as [`TauCeti.singularCubicalHomologyNatIso`](https://tauc
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.singularCubicalHomologyNatIso`](https://taucetiproject.org/docs/TauCeti/AlgebraicTopology/Singular/Cubical/Comparison/Basic.html#TauCeti.singularCubicalHomologyNatIso)
-- [Source of `TauCeti.singularCubicalHomologyNatIso` in TauCeti/AlgebraicTopology/Singular/Cubical/Comparison/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/AlgebraicTopology/Singular/Cubical/Comparison/Basic.lean#L461)
-- [Tau Ceti roadmap status: Morse and Floer homology with DG local coefficients](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/DGFloer/STATUS.md)
+- [Source of `TauCeti.singularCubicalHomologyNatIso` in TauCeti/AlgebraicTopology/Singular/Cubical/Comparison/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/AlgebraicTopology/Singular/Cubical/Comparison/Basic.lean#L461)
+- [Tau Ceti roadmap status: Morse and Floer homology with DG local coefficients](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/DGFloer/STATUS.md)

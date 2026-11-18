@@ -1,9 +1,8 @@
 # Foundations of adic spaces, part IV — étale sites, families and dagger geometry
 
-The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/AdicSpacesPartIV/README.md) names as Tau Ceti has them at commit [a6027b1d](https://github.com/TauCetiProject/TauCeti/tree/a6027b1d24fcb935c53bd5b50d11b40991cda418).
+The declarations the status of Tau Ceti's [roadmap](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/AdicSpacesPartIV/README.md) names as Tau Ceti has them at commit [cd41bffc](https://github.com/TauCetiProject/TauCeti/tree/cd41bffcb343151b3e58c89392e206b11fe78c1c).
 
-- [Unique overconvergent Weierstrass division](unique-overconvergent-weierstrass-division.md)
-- [TauCeti.Dagger.washnitzerAlgebra.existsUnique_isUnit_isMonicOfDegree_mul_eq](tauceti-dagger-washnitzeralgebra-existsunique-is.md)
+- [Unique overconvergent Weierstrass preparation](unique-overconvergent-weierstrass-preparation.md)
 - [Monsky–Washnitzer algebras are noetherian](monsky-washnitzer-algebras-are-noetherian.md)
 - [Monsky–Washnitzer algebras are unique factorisation domains](monsky-washnitzer-algebras-are-unique-factorisat.md)
 - [Krull dimension of the Monsky–Washnitzer algebra](krull-dimension-of-the-monsky-washnitzer-algebra.md)

@@ -1,7 +1,7 @@
 ---
 declaration: theorem
 origin: cited
-lean: MvPolynomial.harmonicSubmodule_sup_map_mulLeft_normSq, MvPolynomial.disjoint_ker_laplacian_map_mulLeft_normSq
+lean: MvPolynomial.harmonicSubmodule_sup_map_mulLeft_normSq, MvPolynomial.disjoint_ker_laplacian_range_mulLeft_normSq
 statement: formalized
 proof: formalized
 ---
@@ -10,11 +10,11 @@ proof: formalized
 
 every homogeneous polynomial of degree `e + 2` is the sum of a
 harmonic one and `r²` times a homogeneous polynomial of degree `e`. The sum is direct by
-`MvPolynomial.disjoint_ker_laplacian_map_mulLeft_normSq`.
+`MvPolynomial.disjoint_ker_laplacian_range_mulLeft_normSq`.
 
 ```lean
 MvPolynomial.harmonicSubmodule_sup_map_mulLeft_normSq.{u_1, u_3} {σ : Type u_1} {K : Type u_3}
-  [Field K] [Fintype σ] [CharZero K] [Nonempty σ] (e : ℕ) :
+  [Field K] [Fintype σ] [CharZero K] (e : ℕ) :
   MvPolynomial.harmonicSubmodule σ K (e + 2) ⊔
       Submodule.map (LinearMap.mulLeft K (MvPolynomial.normSq σ K))
         (MvPolynomial.homogeneousSubmodule σ K e) =
@@ -31,17 +31,15 @@ Formalized in Tau Ceti as [`MvPolynomial.harmonicSubmodule_sup_map_mulLeft_normS
 
 ## Other forms
 
-**The Fischer decomposition, disjointness.** Formalized in Tau Ceti as [`MvPolynomial.disjoint_ker_laplacian_map_mulLeft_normSq`](https://taucetiproject.org/docs/TauCeti/RingTheory/MvPolynomial/Harmonic.html#MvPolynomial.disjoint_ker_laplacian_map_mulLeft_normSq).
+**The Fischer decomposition, disjointness.** Formalized in Tau Ceti as [`MvPolynomial.disjoint_ker_laplacian_range_mulLeft_normSq`](https://taucetiproject.org/docs/TauCeti/RingTheory/MvPolynomial/Harmonic.html#MvPolynomial.disjoint_ker_laplacian_range_mulLeft_normSq).
 
 ```lean
-MvPolynomial.disjoint_ker_laplacian_map_mulLeft_normSq.{u_1, u_3} {σ : Type u_1} {K : Type u_3}
-  [Field K] [Fintype σ] [CharZero K] [Nonempty σ] (e : ℕ) :
-  Disjoint MvPolynomial.laplacian.ker
-    (Submodule.map (LinearMap.mulLeft K (MvPolynomial.normSq σ K))
-      (MvPolynomial.homogeneousSubmodule σ K e))
+MvPolynomial.disjoint_ker_laplacian_range_mulLeft_normSq.{u_1, u_2} {σ : Type u_1} {R : Type u_2}
+  [CommSemiring R] [Fintype σ] [HasUniqueDiv R] :
+  Disjoint MvPolynomial.laplacian.ker (LinearMap.mulLeft R (MvPolynomial.normSq σ R)).range
 ```
 
 ## Sources
 
 - [Tau Ceti documentation: `MvPolynomial.harmonicSubmodule_sup_map_mulLeft_normSq`](https://taucetiproject.org/docs/TauCeti/RingTheory/MvPolynomial/Harmonic.html#MvPolynomial.harmonicSubmodule_sup_map_mulLeft_normSq)
-- [Source of `MvPolynomial.harmonicSubmodule_sup_map_mulLeft_normSq` in TauCeti/RingTheory/MvPolynomial/Harmonic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RingTheory/MvPolynomial/Harmonic.lean#L307)
+- [Source of `MvPolynomial.harmonicSubmodule_sup_map_mulLeft_normSq` in TauCeti/RingTheory/MvPolynomial/Harmonic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RingTheory/MvPolynomial/Harmonic.lean#L347)

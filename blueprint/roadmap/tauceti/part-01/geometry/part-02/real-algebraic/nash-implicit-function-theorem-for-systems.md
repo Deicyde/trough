@@ -28,7 +28,7 @@ HasStrictFDerivAt.isNashAt_implicitFunctionOfProdDomain.{u_1, u_2, u_3} {σ : Ty
 
 ## Proof depends on
 
-- [The analytic implicit function theorem](../../../analysis/part-02/analytic/the-analytic-implicit-function-theorem.md)
+- [The analytic implicit function theorem](../../../analysis/part-03/analytic/the-analytic-implicit-function-theorem.md)
 - [The local Nash graph criterion](../../part-01/real-analytic-geometry-and-semianalytic-triangul/the-local-nash-graph-criterion.md)
 - [The Tarski–Seidenberg theorem](../../part-01/complex-morse-theory-affine-topology-and-weak-le/the-tarski-seidenberg-theorem.md)
 
@@ -39,4 +39,4 @@ Formalized in Tau Ceti as [`HasStrictFDerivAt.isNashAt_implicitFunctionOfProdDom
 ## Sources
 
 - [Tau Ceti documentation: `HasStrictFDerivAt.isNashAt_implicitFunctionOfProdDomain`](https://taucetiproject.org/docs/TauCeti/Geometry/RealAlgebraic/Nash/Implicit/System.html#HasStrictFDerivAt.isNashAt_implicitFunctionOfProdDomain)
-- [Source of `HasStrictFDerivAt.isNashAt_implicitFunctionOfProdDomain` in TauCeti/Geometry/RealAlgebraic/Nash/Implicit/System.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/RealAlgebraic/Nash/Implicit/System.lean#L100)
+- [Source of `HasStrictFDerivAt.isNashAt_implicitFunctionOfProdDomain` in TauCeti/Geometry/RealAlgebraic/Nash/Implicit/System.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/RealAlgebraic/Nash/Implicit/System.lean#L100)

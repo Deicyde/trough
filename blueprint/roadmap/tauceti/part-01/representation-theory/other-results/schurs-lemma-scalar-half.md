@@ -48,4 +48,4 @@ ContRepresentation.eq_zero_of_isEmpty_equiv.{u_1, u_2, u_3, u_4} {𝕜 : Type u_
 ## Sources
 
 - [Tau Ceti documentation: `ContRepresentation.exists_eq_smul_one_of_isIrreducible`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/Continuous/Schur.html#ContRepresentation.exists_eq_smul_one_of_isIrreducible)
-- [Source of `ContRepresentation.exists_eq_smul_one_of_isIrreducible` in TauCeti/RepresentationTheory/Continuous/Schur.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RepresentationTheory/Continuous/Schur.lean#L83)
+- [Source of `ContRepresentation.exists_eq_smul_one_of_isIrreducible` in TauCeti/RepresentationTheory/Continuous/Schur.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RepresentationTheory/Continuous/Schur.lean#L83)

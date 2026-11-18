@@ -26,10 +26,10 @@ Its statement uses no other declaration mapped here.
 
 ## Lean
 
-Formalized in Tau Ceti as [`TauCeti.Sporadic.card_M22`](https://taucetiproject.org/docs/TauCeti/GroupTheory/SpecificGroups/Sporadic/Mathieu/TwentyTwo.html#TauCeti.Sporadic.card_M22).
+Formalized in Tau Ceti as [`TauCeti.Sporadic.card_M22`](https://taucetiproject.org/docs/TauCeti/GroupTheory/SpecificGroups/Sporadic/Mathieu/TwentyTwo/Basic.html#TauCeti.Sporadic.card_M22).
 
 ## Sources
 
-- [Tau Ceti documentation: `TauCeti.Sporadic.card_M22`](https://taucetiproject.org/docs/TauCeti/GroupTheory/SpecificGroups/Sporadic/Mathieu/TwentyTwo.html#TauCeti.Sporadic.card_M22)
-- [Source of `TauCeti.Sporadic.card_M22` in TauCeti/GroupTheory/SpecificGroups/Sporadic/Mathieu/TwentyTwo.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/GroupTheory/SpecificGroups/Sporadic/Mathieu/TwentyTwo.lean#L509)
-- [Tau Ceti roadmap status: Orders of the sporadic groups from permutation representations](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/SporadicOrders/STATUS.md)
+- [Tau Ceti documentation: `TauCeti.Sporadic.card_M22`](https://taucetiproject.org/docs/TauCeti/GroupTheory/SpecificGroups/Sporadic/Mathieu/TwentyTwo/Basic.html#TauCeti.Sporadic.card_M22)
+- [Source of `TauCeti.Sporadic.card_M22` in TauCeti/GroupTheory/SpecificGroups/Sporadic/Mathieu/TwentyTwo/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/GroupTheory/SpecificGroups/Sporadic/Mathieu/TwentyTwo/Basic.lean#L539)
+- [Tau Ceti roadmap status: Orders of the sporadic groups from permutation representations](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/SporadicOrders/STATUS.md)

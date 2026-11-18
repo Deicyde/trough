@@ -40,4 +40,4 @@ Matrix.ShellLieAlgebra.leibniz_lie.{u_1} {I : Type u_1} [Fintype I] {B : Matrix 
 ## Sources
 
 - [Tau Ceti documentation: `Matrix.FullShellLieAlgebra.leibniz_lie`](https://taucetiproject.org/docs/TauCeti/Algebra/Lie/NormTwoShell/FullCartan/Basic.html#Matrix.FullShellLieAlgebra.leibniz_lie)
-- [Source of `Matrix.FullShellLieAlgebra.leibniz_lie` in TauCeti/Algebra/Lie/NormTwoShell/FullCartan/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/Lie/NormTwoShell/FullCartan/Basic.lean#L467)
+- [Source of `Matrix.FullShellLieAlgebra.leibniz_lie` in TauCeti/Algebra/Lie/NormTwoShell/FullCartan/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/Lie/NormTwoShell/FullCartan/Basic.lean#L386)

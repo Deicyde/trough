@@ -27,4 +27,4 @@ Formalized in Tau Ceti as [`TauCeti.DyadicJordanProfile.nQ_eq_nM_add_densityExpo
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.DyadicJordanProfile.nQ_eq_nM_add_densityExponent`](https://taucetiproject.org/docs/TauCeti/NumberTheory/IntegralLattice/Dyadic/DensityExponent/Basic.html#TauCeti.DyadicJordanProfile.nQ_eq_nM_add_densityExponent)
-- [Source of `TauCeti.DyadicJordanProfile.nQ_eq_nM_add_densityExponent` in TauCeti/NumberTheory/IntegralLattice/Dyadic/DensityExponent/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/IntegralLattice/Dyadic/DensityExponent/Basic.lean#L251)
+- [Source of `TauCeti.DyadicJordanProfile.nQ_eq_nM_add_densityExponent` in TauCeti/NumberTheory/IntegralLattice/Dyadic/DensityExponent/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/IntegralLattice/Dyadic/DensityExponent/Basic.lean#L251)

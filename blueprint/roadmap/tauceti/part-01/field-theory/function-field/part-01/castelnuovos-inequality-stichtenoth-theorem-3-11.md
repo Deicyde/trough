@@ -38,7 +38,7 @@ Its statement uses no other declaration mapped here.
 - [The fundamental inequality (Stichtenoth, Theorem 3.1.11)](the-fundamental-inequality-stichtenoth-theorem-3.md)
 - [Kummer's theorem (Stichtenoth, Corollary 3.3.8)](kummers-theorem-stichtenoth-corollary-3-3-8.md)
 - [Riemann's theorem](../part-02/riemanns-theorem.md)
-- [The Riemann–Roch theorem (Stichtenoth, Theorem 1.5.15), for the divisor `(ω)` itself](../../../algebraic-geometry/algebraic-curves-function-fields-divisors-and-ri/the-riemann-roch-theorem-stichtenoth-theorem-1-5.md)
+- [The Riemann–Roch theorem (Stichtenoth, Theorem 1.5.15), for the divisor `(ω)` itself](../../algebraic-curves-function-fields-divisors-and-ri/the-riemann-roch-theorem-stichtenoth-theorem-1-5.md)
 - [The weak approximation theorem](../part-02/the-weak-approximation-theorem.md)
 
 ## Lean
@@ -89,4 +89,4 @@ TauCeti.genus_le_finrank_mul_genus_add_finrank_mul_genus_add_of_perfectField.{u_
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.genus_le_finrank_mul_genus_add_finrank_mul_genus_add`](https://taucetiproject.org/docs/TauCeti/FieldTheory/FunctionField/Consequences/Castelnuovo.html#TauCeti.genus_le_finrank_mul_genus_add_finrank_mul_genus_add)
-- [Source of `TauCeti.genus_le_finrank_mul_genus_add_finrank_mul_genus_add` in TauCeti/FieldTheory/FunctionField/Consequences/Castelnuovo.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/FieldTheory/FunctionField/Consequences/Castelnuovo.lean#L550)
+- [Source of `TauCeti.genus_le_finrank_mul_genus_add_finrank_mul_genus_add` in TauCeti/FieldTheory/FunctionField/Consequences/Castelnuovo.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/FieldTheory/FunctionField/Consequences/Castelnuovo.lean#L550)

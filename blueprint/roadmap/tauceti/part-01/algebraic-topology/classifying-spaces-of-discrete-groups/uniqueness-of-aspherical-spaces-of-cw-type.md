@@ -32,8 +32,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The cellular and the simplicial classifying spaces agree](the-cellular-and-the-simplicial-classifying-spac.md)
-- [The cellular classifying space is a CW complex](the-cellular-classifying-space-is-a-cw-complex.md)
+- [Every group has a cellular classifying space](every-group-has-a-cellular-classifying-space.md)
 - [The isomorphism `π₁(S¹) ≃* ℤ` is the degree](../universal-covers/the-isomorphism-1-s1-z-is-the-degree.md)
 - [The Seifert--van Kampen theorem for a family with a common pairwise intersection](../fundamental-group/the-seifert-van-kampen-theorem-for-a-family-with.md)
 - [Whitehead's theorem (Hatcher, Theorem 4.5)](../algebraic-topology-of-spaces-and-manifolds/whiteheads-theorem-hatcher-theorem-4-5.md)
@@ -45,5 +44,5 @@ Formalized in Tau Ceti as [`TauCeti.IsAspherical.exists_homotopyEquiv`](https://
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.IsAspherical.exists_homotopyEquiv`](https://taucetiproject.org/docs/TauCeti/AlgebraicTopology/ClassifyingSpace/Uniqueness.html#TauCeti.IsAspherical.exists_homotopyEquiv)
-- [Source of `TauCeti.IsAspherical.exists_homotopyEquiv` in TauCeti/AlgebraicTopology/ClassifyingSpace/Uniqueness.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/AlgebraicTopology/ClassifyingSpace/Uniqueness.lean#L66)
-- [Tau Ceti roadmap status: Classifying spaces of discrete groups](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/ClassifyingSpaces/STATUS.md)
+- [Source of `TauCeti.IsAspherical.exists_homotopyEquiv` in TauCeti/AlgebraicTopology/ClassifyingSpace/Uniqueness.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/AlgebraicTopology/ClassifyingSpace/Uniqueness.lean#L78)
+- [Tau Ceti roadmap status: Classifying spaces of discrete groups](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/ClassifyingSpaces/STATUS.md)

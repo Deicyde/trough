@@ -33,4 +33,4 @@ Formalized in Tau Ceti as [`TauCeti.natCard_nsmul_one_eq_sum_artinCoeff_indK0`](
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.natCard_nsmul_one_eq_sum_artinCoeff_indK0`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/GrothendieckGroup/GroupAlgebra/Artin.html#TauCeti.natCard_nsmul_one_eq_sum_artinCoeff_indK0)
-- [Source of `TauCeti.natCard_nsmul_one_eq_sum_artinCoeff_indK0` in TauCeti/RepresentationTheory/GrothendieckGroup/GroupAlgebra/Artin.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RepresentationTheory/GrothendieckGroup/GroupAlgebra/Artin.lean#L121)
+- [Source of `TauCeti.natCard_nsmul_one_eq_sum_artinCoeff_indK0` in TauCeti/RepresentationTheory/GrothendieckGroup/GroupAlgebra/Artin.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RepresentationTheory/GrothendieckGroup/GroupAlgebra/Artin.lean#L121)

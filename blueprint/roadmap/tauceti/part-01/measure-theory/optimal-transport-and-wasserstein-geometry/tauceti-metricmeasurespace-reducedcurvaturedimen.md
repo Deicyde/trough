@@ -33,5 +33,5 @@ Formalized in Tau Ceti as [`TauCeti.MetricMeasureSpace.ReducedCurvatureDimension
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.MetricMeasureSpace.ReducedCurvatureDimension`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/OptimalTransport/MetricMeasure/CurvatureDimension/Finite.html#TauCeti.MetricMeasureSpace.ReducedCurvatureDimension)
-- [Source of `TauCeti.MetricMeasureSpace.ReducedCurvatureDimension` in TauCeti/MeasureTheory/OptimalTransport/MetricMeasure/CurvatureDimension/Finite.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/OptimalTransport/MetricMeasure/CurvatureDimension/Finite.lean#L131)
-- [Tau Ceti roadmap status: Optimal transport and Wasserstein geometry](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/OptimalTransport/STATUS.md)
+- [Source of `TauCeti.MetricMeasureSpace.ReducedCurvatureDimension` in TauCeti/MeasureTheory/OptimalTransport/MetricMeasure/CurvatureDimension/Finite.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/OptimalTransport/MetricMeasure/CurvatureDimension/Finite.lean#L131)
+- [Tau Ceti roadmap status: Optimal transport and Wasserstein geometry](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/OptimalTransport/STATUS.md)

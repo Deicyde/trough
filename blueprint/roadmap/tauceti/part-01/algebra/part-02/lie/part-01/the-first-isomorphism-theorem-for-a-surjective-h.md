@@ -27,4 +27,4 @@ Formalized in Tau Ceti as [`LieHom.quotKerEquivOfSurjective`](https://taucetipro
 ## Sources
 
 - [Tau Ceti documentation: `LieHom.quotKerEquivOfSurjective`](https://taucetiproject.org/docs/TauCeti/Algebra/Lie/Quotient.html#LieHom.quotKerEquivOfSurjective)
-- [Source of `LieHom.quotKerEquivOfSurjective` in TauCeti/Algebra/Lie/Quotient.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Algebra/Lie/Quotient.lean#L243)
+- [Source of `LieHom.quotKerEquivOfSurjective` in TauCeti/Algebra/Lie/Quotient.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Algebra/Lie/Quotient.lean#L277)

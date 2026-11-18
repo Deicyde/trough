@@ -22,7 +22,7 @@ TauCeti.ValidLieTypeIndex.finite (d : TauCeti.ValidLieTypeIndex) : Finite d.Grou
 ## Proof depends on
 
 - [The ambient group of a valid Lie-type index](../stating-the-classification-of-finite-simple-grou/the-ambient-group-of-a-valid-lie-type-index.md)
-- [Cauchy--Binet for `2 × 2` minors](../../linear-algebra/matrix/cauchy-binet-for-2-2-minors.md)
+- [Cauchy--Binet for `2 × 2` minors](../../linear-algebra/part-01/matrix/cauchy-binet-for-2-2-minors.md)
 - [The finite-coordinate fixed-point criterion](the-finite-coordinate-fixed-point-criterion.md)
 - [TauCeti.F4ShortRoot.PrimeField.specialIsogeny_specialIsogeny](../stating-the-classification-of-finite-simple-grou/tauceti-f4shortroot-primefield-specialisogeny-sp.md)
 
@@ -33,5 +33,5 @@ Formalized in Tau Ceti as [`TauCeti.ValidLieTypeIndex.finite`](https://taucetipr
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.ValidLieTypeIndex.finite`](https://taucetiproject.org/docs/TauCeti/GroupTheory/SpecificGroups/CFSG/BasicProperties/LieTypeFinite.html#TauCeti.ValidLieTypeIndex.finite)
-- [Source of `TauCeti.ValidLieTypeIndex.finite` in TauCeti/GroupTheory/SpecificGroups/CFSG/BasicProperties/LieTypeFinite.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/GroupTheory/SpecificGroups/CFSG/BasicProperties/LieTypeFinite.lean#L144)
-- [Tau Ceti roadmap status: Finiteness and simplicity of the groups on the CFSG list](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/CFSGBasicProperties/STATUS.md)
+- [Source of `TauCeti.ValidLieTypeIndex.finite` in TauCeti/GroupTheory/SpecificGroups/CFSG/BasicProperties/LieTypeFinite.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/GroupTheory/SpecificGroups/CFSG/BasicProperties/LieTypeFinite.lean#L144)
+- [Tau Ceti roadmap status: Finiteness and simplicity of the groups on the CFSG list](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/CFSGBasicProperties/STATUS.md)

@@ -31,4 +31,4 @@ Formalized in Tau Ceti as [`TauCeti.exists_measurable_forall_mem`](https://tauce
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.exists_measurable_forall_mem`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/MeasurableSpace/Selection.html#TauCeti.exists_measurable_forall_mem)
-- [Source of `TauCeti.exists_measurable_forall_mem` in TauCeti/MeasureTheory/MeasurableSpace/Selection.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/MeasurableSpace/Selection.lean#L148)
+- [Source of `TauCeti.exists_measurable_forall_mem` in TauCeti/MeasureTheory/MeasurableSpace/Selection.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/MeasurableSpace/Selection.lean#L148)

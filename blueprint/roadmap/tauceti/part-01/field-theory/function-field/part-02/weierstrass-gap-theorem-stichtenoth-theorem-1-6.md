@@ -23,7 +23,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The Riemann–Roch theorem (Stichtenoth, Theorem 1.5.15), for the divisor `(ω)` itself](../../../algebraic-geometry/algebraic-curves-function-fields-divisors-and-ri/the-riemann-roch-theorem-stichtenoth-theorem-1-5.md)
+- [The Riemann–Roch theorem (Stichtenoth, Theorem 1.5.15), for the divisor `(ω)` itself](../../algebraic-curves-function-fields-divisors-and-ri/the-riemann-roch-theorem-stichtenoth-theorem-1-5.md)
 
 ## Lean
 
@@ -32,4 +32,4 @@ Formalized in Tau Ceti as [`TauCeti.Place.card_weierstrassGaps`](https://tauceti
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Place.card_weierstrassGaps`](https://taucetiproject.org/docs/TauCeti/FieldTheory/FunctionField/Consequences/WeierstrassGaps.html#TauCeti.Place.card_weierstrassGaps)
-- [Source of `TauCeti.Place.card_weierstrassGaps` in TauCeti/FieldTheory/FunctionField/Consequences/WeierstrassGaps.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/FieldTheory/FunctionField/Consequences/WeierstrassGaps.lean#L301)
+- [Source of `TauCeti.Place.card_weierstrassGaps` in TauCeti/FieldTheory/FunctionField/Consequences/WeierstrassGaps.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/FieldTheory/FunctionField/Consequences/WeierstrassGaps.lean#L301)

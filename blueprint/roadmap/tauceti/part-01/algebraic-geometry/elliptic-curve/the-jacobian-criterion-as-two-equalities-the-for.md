@@ -26,4 +26,4 @@ Formalized in Tau Ceti as [`WeierstrassCurve.Affine.isSingular_iff`](https://tau
 ## Sources
 
 - [Tau Ceti documentation: `WeierstrassCurve.Affine.isSingular_iff`](https://taucetiproject.org/docs/TauCeti/AlgebraicGeometry/EllipticCurve/Affine/Singular.html#WeierstrassCurve.Affine.isSingular_iff)
-- [Source of `WeierstrassCurve.Affine.isSingular_iff` in TauCeti/AlgebraicGeometry/EllipticCurve/Affine/Singular.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/AlgebraicGeometry/EllipticCurve/Affine/Singular.lean#L135)
+- [Source of `WeierstrassCurve.Affine.isSingular_iff` in TauCeti/AlgebraicGeometry/EllipticCurve/Affine/Singular.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/AlgebraicGeometry/EllipticCurve/Affine/Singular.lean#L135)

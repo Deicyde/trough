@@ -45,4 +45,4 @@ Polynomial.rootMultiplicity_mul_logHeight₁_le.{u_1} {K : Type u_1} [Field K] [
 ## Sources
 
 - [Tau Ceti documentation: `MvPolynomial.weightedIndex_toMvPolynomial_le`](https://taucetiproject.org/docs/TauCeti/NumberTheory/Height/Polynomial/RootMultiplicity.html#MvPolynomial.weightedIndex_toMvPolynomial_le)
-- [Source of `MvPolynomial.weightedIndex_toMvPolynomial_le` in TauCeti/NumberTheory/Height/Polynomial/RootMultiplicity.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/Height/Polynomial/RootMultiplicity.lean#L83)
+- [Source of `MvPolynomial.weightedIndex_toMvPolynomial_le` in TauCeti/NumberTheory/Height/Polynomial/RootMultiplicity.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/Height/Polynomial/RootMultiplicity.lean#L83)

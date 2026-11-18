@@ -46,4 +46,4 @@ Formalized in Tau Ceti as [`TauCeti.ClassFieldTheory.dualTensorHom_kummerH1ConjR
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.ClassFieldTheory.dualTensorHom_kummerH1ConjRepresentationEquiv`](https://taucetiproject.org/docs/TauCeti/NumberTheory/ClassFieldTheory/Local/EulerCharacteristic/Kummer/Basic.html#TauCeti.ClassFieldTheory.dualTensorHom_kummerH1ConjRepresentationEquiv)
-- [Source of `TauCeti.ClassFieldTheory.dualTensorHom_kummerH1ConjRepresentationEquiv` in TauCeti/NumberTheory/ClassFieldTheory/Local/EulerCharacteristic/Kummer/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/ClassFieldTheory/Local/EulerCharacteristic/Kummer/Basic.lean#L247)
+- [Source of `TauCeti.ClassFieldTheory.dualTensorHom_kummerH1ConjRepresentationEquiv` in TauCeti/NumberTheory/ClassFieldTheory/Local/EulerCharacteristic/Kummer/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/ClassFieldTheory/Local/EulerCharacteristic/Kummer/Basic.lean#L247)

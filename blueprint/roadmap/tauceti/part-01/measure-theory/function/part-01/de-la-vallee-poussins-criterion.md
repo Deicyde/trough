@@ -44,4 +44,4 @@ TauCeti.exists_setLIntegral_enorm_le_mul_add.{u_1, u_2, u_3} {α : Type u_1} {F 
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.unifIntegrable_of_lintegral_ofReal_le`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Function/DeLaValleePoussin.html#TauCeti.unifIntegrable_of_lintegral_ofReal_le)
-- [Source of `TauCeti.unifIntegrable_of_lintegral_ofReal_le` in TauCeti/MeasureTheory/Function/DeLaValleePoussin.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/Function/DeLaValleePoussin.lean#L196)
+- [Source of `TauCeti.unifIntegrable_of_lintegral_ofReal_le` in TauCeti/MeasureTheory/Function/DeLaValleePoussin.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/Function/DeLaValleePoussin.lean#L196)

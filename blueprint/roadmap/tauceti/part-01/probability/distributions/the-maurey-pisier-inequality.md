@@ -33,4 +33,4 @@ Formalized in Tau Ceti as [`ProbabilityTheory.IsGaussian.lintegral_exp_mul_sub_l
 ## Sources
 
 - [Tau Ceti documentation: `ProbabilityTheory.IsGaussian.lintegral_exp_mul_sub_le`](https://taucetiproject.org/docs/TauCeti/Probability/Distributions/Gaussian/Concentration.html#ProbabilityTheory.IsGaussian.lintegral_exp_mul_sub_le)
-- [Source of `ProbabilityTheory.IsGaussian.lintegral_exp_mul_sub_le` in TauCeti/Probability/Distributions/Gaussian/Concentration.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Probability/Distributions/Gaussian/Concentration.lean#L123)
+- [Source of `ProbabilityTheory.IsGaussian.lintegral_exp_mul_sub_le` in TauCeti/Probability/Distributions/Gaussian/Concentration.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Probability/Distributions/Gaussian/Concentration.lean#L122)

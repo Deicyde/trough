@@ -38,5 +38,5 @@ Formalized in Tau Ceti as [`TauCeti.Lie.IsMaximalTorus.exists_map_conj_eq`](http
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Lie.IsMaximalTorus.exists_map_conj_eq`](https://taucetiproject.org/docs/TauCeti/Geometry/Lie/Subgroup/Torus/Conjugacy.html#TauCeti.Lie.IsMaximalTorus.exists_map_conj_eq)
-- [Source of `TauCeti.Lie.IsMaximalTorus.exists_map_conj_eq` in TauCeti/Geometry/Lie/Subgroup/Torus/Conjugacy.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/Lie/Subgroup/Torus/Conjugacy.lean#L128)
-- [Tau Ceti roadmap status: Representation theory](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/RepresentationTheory/STATUS.md)
+- [Source of `TauCeti.Lie.IsMaximalTorus.exists_map_conj_eq` in TauCeti/Geometry/Lie/Subgroup/Torus/Conjugacy.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/Lie/Subgroup/Torus/Conjugacy.lean#L136)
+- [Tau Ceti roadmap status: Representation theory](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/RepresentationTheory/STATUS.md)

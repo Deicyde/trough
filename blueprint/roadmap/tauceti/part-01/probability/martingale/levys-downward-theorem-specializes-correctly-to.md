@@ -33,4 +33,4 @@ Formalized in Tau Ceti as [`TauCeti.Probability.tendsto_ae_condExp_of_eventually
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Probability.tendsto_ae_condExp_of_eventually_const`](https://taucetiproject.org/docs/TauCeti/Probability/Martingale/LevyDownwardEventuallyConst.html#TauCeti.Probability.tendsto_ae_condExp_of_eventually_const)
-- [Source of `TauCeti.Probability.tendsto_ae_condExp_of_eventually_const` in TauCeti/Probability/Martingale/LevyDownwardEventuallyConst.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Probability/Martingale/LevyDownwardEventuallyConst.lean#L88)
+- [Source of `TauCeti.Probability.tendsto_ae_condExp_of_eventually_const` in TauCeti/Probability/Martingale/LevyDownwardEventuallyConst.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Probability/Martingale/LevyDownwardEventuallyConst.lean#L86)

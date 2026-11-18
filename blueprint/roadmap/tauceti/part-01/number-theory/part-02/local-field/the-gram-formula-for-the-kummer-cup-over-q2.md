@@ -25,14 +25,15 @@ TauCeti.kummerCup_padicTwo (x y : TauCeti.SquareClassGroup ℚ_[2]) :
 ## Depends on
 
 - [The Kummer isomorphism](../../../representation-theory/continuous-cohomology-of-profinite-groups/the-kummer-isomorphism.md)
-- [TauCeti.multiplicativeSquareClassEquiv](../../../linear-algebra/orthogonal-and-spin-groups/tauceti-multiplicativesquareclassequiv.md)
+- [TauCeti.multiplicativeSquareClassEquiv](../../../linear-algebra/part-01/orthogonal-and-spin-groups/tauceti-multiplicativesquareclassequiv.md)
 
 ## Proof depends on
 
 - [A Kummer cup over a local field is its Hilbert symbol times a fixed nonzero cup](../quadratic-forms-and-cohomological-invariants/a-kummer-cup-over-a-local-field-is-its-hilbert-s.md)
-- [Serre's formula for the Artin conductor](../../part-01/local-fields-and-ramification/serres-formula-for-the-artin-conductor.md)
+- [Hensel's lemma for the norm](../../../ring-theory/part-02/other-results/part-01/hensels-lemma-for-the-norm.md)
+- [The local square theorem bounds the defect of a unit](the-local-square-theorem-bounds-the-defect-of-a.md)
+- [Serre's formula for the Artin conductor](serres-formula-for-the-artin-conductor.md)
 - [The splitting criterion for quaternion algebras](../quadratic-forms-and-cohomological-invariants/the-splitting-criterion-for-quaternion-algebras.md)
-- [TauCeti.algebraicExtensionNormedField](../../part-01/local-fields-and-ramification/tauceti-algebraicextensionnormedfield.md)
 
 ## Lean
 
@@ -41,4 +42,4 @@ Formalized in Tau Ceti as [`TauCeti.kummerCup_padicTwo`](https://taucetiproject.
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.kummerCup_padicTwo`](https://taucetiproject.org/docs/TauCeti/NumberTheory/LocalField/QuadraticForm/Cup/PadicTwo.html#TauCeti.kummerCup_padicTwo)
-- [Source of `TauCeti.kummerCup_padicTwo` in TauCeti/NumberTheory/LocalField/QuadraticForm/Cup/PadicTwo.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/LocalField/QuadraticForm/Cup/PadicTwo.lean#L71)
+- [Source of `TauCeti.kummerCup_padicTwo` in TauCeti/NumberTheory/LocalField/QuadraticForm/Cup/PadicTwo.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/LocalField/QuadraticForm/Cup/PadicTwo.lean#L71)

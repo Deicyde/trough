@@ -18,12 +18,7 @@ TauCeti.SymmetricSpectrum : Type 1
 
 ## Depends on
 
-- [TauCeti.PointedSSet.instBraidedFiniteBijectionSmashPowFunctor](tauceti-pointedsset-instbraidedfinitebijectionsm.md)
-- [TauCeti.SymmetricSequence](tauceti-symmetricsequence.md)
-
-## Proof depends on
-
-- [TauCeti.PointedSSet.monoidalClosed](tauceti-pointedsset-monoidalclosed.md)
+Its statement uses no other declaration mapped here.
 
 ## Lean
 
@@ -32,5 +27,5 @@ Formalized in Tau Ceti as [`TauCeti.SymmetricSpectrum`](https://taucetiproject.o
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.SymmetricSpectrum`](https://taucetiproject.org/docs/TauCeti/AlgebraicTopology/Spectra/SymmetricSpectrum.html#TauCeti.SymmetricSpectrum)
-- [Source of `TauCeti.SymmetricSpectrum` in TauCeti/AlgebraicTopology/Spectra/SymmetricSpectrum.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/AlgebraicTopology/Spectra/SymmetricSpectrum.lean#L88)
-- [Tau Ceti roadmap status: Generalized cohomology, spectra and orientations](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/TauCetiRoadmap/GeneralizedCohomology/STATUS.md)
+- [Source of `TauCeti.SymmetricSpectrum` in TauCeti/AlgebraicTopology/Spectra/SymmetricSpectrum.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/AlgebraicTopology/Spectra/SymmetricSpectrum.lean#L88)
+- [Tau Ceti roadmap status: Generalized cohomology, spectra and orientations](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/TauCetiRoadmap/GeneralizedCohomology/STATUS.md)

@@ -24,7 +24,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Gordan's lemma](../../part-02/other-results/gordans-lemma.md)
+- [Gordan's lemma for lattice points](../scattering-diagrams-wall-crossing-and-theta-func/gordans-lemma-for-lattice-points.md)
 - [Tucker's theorem](../../part-02/convex/tuckers-theorem.md)
 
 ## Lean
@@ -34,5 +34,5 @@ Formalized in Tau Ceti as [`TauCeti.Toric.Fan.algebraicAnalyticEquiv_smul`](http
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.Toric.Fan.algebraicAnalyticEquiv_smul`](https://taucetiproject.org/docs/TauCeti/Geometry/Toric/Analytic/Fan/Comparison/TorusAction.html#TauCeti.Toric.Fan.algebraicAnalyticEquiv_smul)
-- [Source of `TauCeti.Toric.Fan.algebraicAnalyticEquiv_smul` in TauCeti/Geometry/Toric/Analytic/Fan/Comparison/TorusAction.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/Toric/Analytic/Fan/Comparison/TorusAction.lean#L381)
-- [Tau Ceti roadmap status: Analytic toric geometry](https://github.com/TauCetiProject/TauCetiRoadmap/blob/9f7c032adaf1b838e8183d63ff3cfa886d061cb3/Completed/AnalyticToricGeometry/STATUS.md)
+- [Source of `TauCeti.Toric.Fan.algebraicAnalyticEquiv_smul` in TauCeti/Geometry/Toric/Analytic/Fan/Comparison/TorusAction.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/Toric/Analytic/Fan/Comparison/TorusAction.lean#L381)
+- [Tau Ceti roadmap status: Analytic toric geometry](https://github.com/TauCetiProject/TauCetiRoadmap/blob/612845ab80fb9c2b9bee724a156756ee78031591/Completed/AnalyticToricGeometry/STATUS.md)

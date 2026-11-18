@@ -32,7 +32,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Jacobi's formula for a determinant, in row form](../../linear-algebra/other-results/jacobis-formula-for-a-determinant-in-row-form.md)
+- [Jacobi's formula for a determinant, in row form](../../linear-algebra/part-02/other-results/jacobis-formula-for-a-determinant-in-row-form.md)
 
 ## Lean
 
@@ -41,4 +41,4 @@ Formalized in Tau Ceti as [`TauCeti.standardCount_mul_prod_factorial_betaNumber`
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.standardCount_mul_prod_factorial_betaNumber`](https://taucetiproject.org/docs/TauCeti/Combinatorics/Young/HookLength/Formula.html#TauCeti.standardCount_mul_prod_factorial_betaNumber)
-- [Source of `TauCeti.standardCount_mul_prod_factorial_betaNumber` in TauCeti/Combinatorics/Young/HookLength/Formula.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Combinatorics/Young/HookLength/Formula.lean#L260)
+- [Source of `TauCeti.standardCount_mul_prod_factorial_betaNumber` in TauCeti/Combinatorics/Young/HookLength/Formula.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Combinatorics/Young/HookLength/Formula.lean#L260)

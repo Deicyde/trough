@@ -37,4 +37,4 @@ Formalized in Tau Ceti as [`TauCeti.subsingleton_setOf_mem_contactSet`](https://
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.subsingleton_setOf_mem_contactSet`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/OptimalTransport/Twist/Basic.html#TauCeti.subsingleton_setOf_mem_contactSet)
-- [Source of `TauCeti.subsingleton_setOf_mem_contactSet` in TauCeti/MeasureTheory/OptimalTransport/Twist/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/OptimalTransport/Twist/Basic.lean#L155)
+- [Source of `TauCeti.subsingleton_setOf_mem_contactSet` in TauCeti/MeasureTheory/OptimalTransport/Twist/Basic.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/OptimalTransport/Twist/Basic.lean#L155)

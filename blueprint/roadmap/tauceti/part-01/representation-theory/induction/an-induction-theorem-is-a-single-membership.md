@@ -33,4 +33,4 @@ Formalized in Tau Ceti as [`TauCeti.ClassFunction.indVirtualCharacters_eq_virtua
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.ClassFunction.indVirtualCharacters_eq_virtualCharacters_iff`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/Induction/Ideal.html#TauCeti.ClassFunction.indVirtualCharacters_eq_virtualCharacters_iff)
-- [Source of `TauCeti.ClassFunction.indVirtualCharacters_eq_virtualCharacters_iff` in TauCeti/RepresentationTheory/Induction/Ideal.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RepresentationTheory/Induction/Ideal.lean#L378)
+- [Source of `TauCeti.ClassFunction.indVirtualCharacters_eq_virtualCharacters_iff` in TauCeti/RepresentationTheory/Induction/Ideal.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RepresentationTheory/Induction/Ideal.lean#L378)

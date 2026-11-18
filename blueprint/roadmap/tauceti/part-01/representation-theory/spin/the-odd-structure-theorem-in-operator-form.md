@@ -46,4 +46,4 @@ TauCeti.SpinPolarizationData.cliffordEquivEndProd.{u, v} {F : Type u} [Field F] 
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.SpinPolarizationData.evenCliffordEquivEnd`](https://taucetiproject.org/docs/TauCeti/RepresentationTheory/Spin/OddStructure.html#TauCeti.SpinPolarizationData.evenCliffordEquivEnd)
-- [Source of `TauCeti.SpinPolarizationData.evenCliffordEquivEnd` in TauCeti/RepresentationTheory/Spin/OddStructure.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RepresentationTheory/Spin/OddStructure.lean#L292)
+- [Source of `TauCeti.SpinPolarizationData.evenCliffordEquivEnd` in TauCeti/RepresentationTheory/Spin/OddStructure.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RepresentationTheory/Spin/OddStructure.lean#L312)

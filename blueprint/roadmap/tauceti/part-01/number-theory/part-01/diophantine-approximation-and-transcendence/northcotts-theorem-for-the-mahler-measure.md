@@ -22,7 +22,7 @@ TauCeti.finite_setOf_mahlerMeasure_le.{u_1} {F : Type u_1} [Field F] [CharZero F
 
 ## Proof depends on
 
-- [Gauss's lemma at a nonarchimedean absolute value](../../../ring-theory/part-01/polynomial/gausss-lemma-at-a-nonarchimedean-absolute-value.md)
+- [Gauss's lemma at a nonarchimedean absolute value](../../../ring-theory/part-02/polynomial/gausss-lemma-at-a-nonarchimedean-absolute-value.md)
 
 ## Lean
 
@@ -56,4 +56,4 @@ TauCeti.finite_setOf_naiveHeight_le.{u_1} {F : Type u_1} [Field F] [CharZero F] 
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.finite_setOf_mahlerMeasure_le`](https://taucetiproject.org/docs/TauCeti/NumberTheory/Height/MahlerMeasure.html#TauCeti.finite_setOf_mahlerMeasure_le)
-- [Source of `TauCeti.finite_setOf_mahlerMeasure_le` in TauCeti/NumberTheory/Height/MahlerMeasure.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/NumberTheory/Height/MahlerMeasure.lean#L186)
+- [Source of `TauCeti.finite_setOf_mahlerMeasure_le` in TauCeti/NumberTheory/Height/MahlerMeasure.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/NumberTheory/Height/MahlerMeasure.lean#L185)

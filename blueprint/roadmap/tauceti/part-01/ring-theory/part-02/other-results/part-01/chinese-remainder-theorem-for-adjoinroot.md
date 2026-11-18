@@ -27,4 +27,4 @@ Formalized in Tau Ceti as [`AdjoinRoot.equivPiFactors`](https://taucetiproject.o
 ## Sources
 
 - [Tau Ceti documentation: `AdjoinRoot.equivPiFactors`](https://taucetiproject.org/docs/TauCeti/RingTheory/AdjoinRoot/Factors.html#AdjoinRoot.equivPiFactors)
-- [Source of `AdjoinRoot.equivPiFactors` in TauCeti/RingTheory/AdjoinRoot/Factors.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/RingTheory/AdjoinRoot/Factors.lean#L107)
+- [Source of `AdjoinRoot.equivPiFactors` in TauCeti/RingTheory/AdjoinRoot/Factors.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/RingTheory/AdjoinRoot/Factors.lean#L105)

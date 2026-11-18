@@ -41,4 +41,4 @@ Formalized in Tau Ceti as [`FirstOrder.Language.Theory.exists_countable_model_om
 ## Sources
 
 - [Tau Ceti documentation: `FirstOrder.Language.Theory.exists_countable_model_omitting`](https://taucetiproject.org/docs/TauCeti/ModelTheory/ModelExistence/OmittingTypes.html#FirstOrder.Language.Theory.exists_countable_model_omitting)
-- [Source of `FirstOrder.Language.Theory.exists_countable_model_omitting` in TauCeti/ModelTheory/ModelExistence/OmittingTypes.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/ModelTheory/ModelExistence/OmittingTypes.lean#L160)
+- [Source of `FirstOrder.Language.Theory.exists_countable_model_omitting` in TauCeti/ModelTheory/ModelExistence/OmittingTypes.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/ModelTheory/ModelExistence/OmittingTypes.lean#L160)

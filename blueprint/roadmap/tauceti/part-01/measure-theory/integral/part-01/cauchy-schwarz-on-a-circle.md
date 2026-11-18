@@ -26,7 +26,7 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [Hölder's inequality for the integral of a product](../../function/part-01/holders-inequality-for-the-integral-of-a-product.md)
+- [Hölder's inequality for disjoint pieces](../../function/part-01/holders-inequality-for-disjoint-pieces.md)
 
 ## Lean
 
@@ -35,4 +35,4 @@ Formalized in Tau Ceti as [`TauCeti.circleLIntegral_sq_le`](https://taucetiproje
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.circleLIntegral_sq_le`](https://taucetiproject.org/docs/TauCeti/MeasureTheory/Integral/Circle/LIntegral.html#TauCeti.circleLIntegral_sq_le)
-- [Source of `TauCeti.circleLIntegral_sq_le` in TauCeti/MeasureTheory/Integral/Circle/LIntegral.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/MeasureTheory/Integral/Circle/LIntegral.lean#L305)
+- [Source of `TauCeti.circleLIntegral_sq_le` in TauCeti/MeasureTheory/Integral/Circle/LIntegral.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/MeasureTheory/Integral/Circle/LIntegral.lean#L305)

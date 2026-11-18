@@ -31,8 +31,8 @@ Its statement uses no other declaration mapped here.
 
 ## Proof depends on
 
-- [The Frobenius theorem for total differential equations](../../../../analysis/part-03/ode/the-frobenius-theorem-for-total-differential-equ.md)
-- [The local Frobenius theorem (`TauCeti.exists_eventually_hasFDerivAt_of_isFrobeniusIntegrableAt`)](../../../../analysis/part-03/ode/the-local-frobenius-theorem-tauceti-exists-event.md)
+- [The Frobenius theorem for total differential equations](../../../../analysis/part-04/ode/the-frobenius-theorem-for-total-differential-equ.md)
+- [The local Frobenius theorem (`TauCeti.exists_eventually_hasFDerivAt_of_isFrobeniusIntegrableAt`)](../../../../analysis/part-04/ode/the-local-frobenius-theorem-tauceti-exists-event.md)
 
 ## Lean
 
@@ -70,4 +70,4 @@ TauCeti.IsInvolutiveDistribution.exists_eventually_eq_graph_fderiv.{u} {E F : Ty
 ## Sources
 
 - [Tau Ceti documentation: `TauCeti.IsInvolutiveDistribution.exists_eventually_hasFDerivAt`](https://taucetiproject.org/docs/TauCeti/Geometry/Manifold/Distribution/Graph.html#TauCeti.IsInvolutiveDistribution.exists_eventually_hasFDerivAt)
-- [Source of `TauCeti.IsInvolutiveDistribution.exists_eventually_hasFDerivAt` in TauCeti/Geometry/Manifold/Distribution/Graph.lean](https://github.com/TauCetiProject/TauCeti/blob/a6027b1d24fcb935c53bd5b50d11b40991cda418/TauCeti/Geometry/Manifold/Distribution/Graph.lean#L239)
+- [Source of `TauCeti.IsInvolutiveDistribution.exists_eventually_hasFDerivAt` in TauCeti/Geometry/Manifold/Distribution/Graph.lean](https://github.com/TauCetiProject/TauCeti/blob/cd41bffcb343151b3e58c89392e206b11fe78c1c/TauCeti/Geometry/Manifold/Distribution/Graph.lean#L239)
