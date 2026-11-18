@@ -9,7 +9,7 @@ statement: formalized
 
 [AxiomMath/TernaryPoly](https://github.com/AxiomMath/TernaryPoly) at commit [28679d7c](https://github.com/AxiomMath/TernaryPoly/tree/28679d7cad438a91a732422d4ab1b184ae17e532), 2026-10-16.
 
-> Lean 4 formalization of *Ternary polynomial relations and periods of cusp forms* by Vasily Ilin and Ken Ono, developed with AxiomProver at Axiom Math. [Read the paper](paper/paper.pdf).
+> Lean 4 formalization of *Ternary polynomial relations and periods of cusp forms* by Vasily Ilin and Ken Ono, developed with AxiomProver at Axiom Math. [Read the paper](https://github.com/AxiomMath/TernaryPoly/blob/28679d7cad438a91a732422d4ab1b184ae17e532/paper/paper.pdf).
 
 *Quoted from [README.md](https://github.com/AxiomMath/TernaryPoly/blob/28679d7cad438a91a732422d4ab1b184ae17e532/README.md), Apache-2.0.*
 

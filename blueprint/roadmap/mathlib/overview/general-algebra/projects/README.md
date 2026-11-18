@@ -1,4 +1,4 @@
-# Projects building on General algebra (35)
+# Projects building on General algebra (33)
 
 Lean projects outside the libraries mapped here that build on Mathlib, placed by their use of its general algebra, read at a pinned commit without Lean, one card each.
 

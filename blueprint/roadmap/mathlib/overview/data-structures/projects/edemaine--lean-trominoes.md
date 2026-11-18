@@ -9,7 +9,7 @@ statement: formalized
 
 [edemaine/lean-trominoes](https://github.com/edemaine/lean-trominoes) at commit [6d5b36c1](https://github.com/edemaine/lean-trominoes/tree/6d5b36c15cec6cb18d30137b7f1c7fb92ea24332), 2026-10-20.
 
-> Lean formalization of [*Undecidability of Tiling with a Tromino*](https://arxiv.org/abs/2509.07906) by the MIT--ULB CompGeom Group, Zachary Abel, Hugo Akitaya, Lily Chung, Erik D. Demaine, Jenny Diomidova, Della Hendrickson, Stefan Langerman, and Jayson Lynch. The working paper is included as [PDF](trominoes.pdf) and [source](trominoes.texlish). Use the checked-in source as the reference for theorem statements and proofs in this formalization.
+> Lean formalization of [*Undecidability of Tiling with a Tromino*](https://arxiv.org/abs/2509.07906) by the MIT--ULB CompGeom Group, Zachary Abel, Hugo Akitaya, Lily Chung, Erik D. Demaine, Jenny Diomidova, Della Hendrickson, Stefan Langerman, and Jayson Lynch. The working paper is included as [PDF](https://github.com/edemaine/lean-trominoes/blob/6d5b36c15cec6cb18d30137b7f1c7fb92ea24332/trominoes.pdf) and [source](https://github.com/edemaine/lean-trominoes/blob/6d5b36c15cec6cb18d30137b7f1c7fb92ea24332/trominoes.texlish). Use the checked-in source as the reference for theorem statements and proofs in this formalization.
 
 *Quoted from [README.md](https://github.com/edemaine/lean-trominoes/blob/6d5b36c15cec6cb18d30137b7f1c7fb92ea24332/README.md), Apache-2.0.*
 

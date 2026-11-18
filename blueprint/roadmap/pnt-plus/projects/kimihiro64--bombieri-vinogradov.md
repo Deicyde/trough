@@ -16,7 +16,7 @@ proof: formalized
 
 ## Depends on
 
-- [Projects building on PNT+ (3)](README.md)
+- [Projects building on PNT+ (5)](README.md)
 
 ## Proof depends on
 

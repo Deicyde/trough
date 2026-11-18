@@ -10,8 +10,6 @@ navigation: transparent
 ## Projects without a named main result
 
 - [AxiomMath/ClusterAlgebras](https://github.com/AxiomMath/ClusterAlgebras) at [c597eceb](https://github.com/AxiomMath/ClusterAlgebras/tree/c597eceb9b394614005208ea9c62fd4cfff7b589): 505 .lean files, 15,026 declarations.
-- [AxiomMath/PrimeGapsLib](https://github.com/AxiomMath/PrimeGapsLib) at [1faa7b14](https://github.com/AxiomMath/PrimeGapsLib/tree/1faa7b14e82ddebc2772dfb9153922f01b106477): 420 .lean files, 3,249 declarations.
-- [AxiomMath/Zeta5Irrational](https://github.com/AxiomMath/Zeta5Irrational) at [ac05f15d](https://github.com/AxiomMath/Zeta5Irrational/tree/ac05f15d9eb58a190361f7461e794f539db041ff): 504 .lean files, 2,117 declarations.
 - [Beneficial-AI-Foundation/curve25519-dalek-lean-verify](https://github.com/Beneficial-AI-Foundation/curve25519-dalek-lean-verify) at [52cad87d](https://github.com/Beneficial-AI-Foundation/curve25519-dalek-lean-verify/tree/52cad87d054943c96c984d99d9ea9e5d043b0d65): 244 .lean files, 1,450 declarations.
 - [eohjelle/feit-thompson-odd-order-theorem](https://github.com/eohjelle/feit-thompson-odd-order-theorem) at [9cd5890d](https://github.com/eohjelle/feit-thompson-odd-order-theorem/tree/9cd5890db35dbaf88c62f414bc9f37bf17da1b16): 998 .lean files, 114 declarations.
 - [LayerZero-Labs/jolt-qed](https://github.com/LayerZero-Labs/jolt-qed) at [abd88dfd](https://github.com/LayerZero-Labs/jolt-qed/tree/abd88dfdf64833469c5bfc9b3a0f9647b2d61633): 726 .lean files, 8,122 declarations.

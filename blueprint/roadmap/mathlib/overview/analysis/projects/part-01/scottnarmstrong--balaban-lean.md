@@ -9,7 +9,7 @@ statement: formalized
 
 [scottnarmstrong/balaban-lean](https://github.com/scottnarmstrong/balaban-lean) at commit [493e9eb9](https://github.com/scottnarmstrong/balaban-lean/tree/493e9eb97292ebf6070c1c217a09bcf1adc23857), 2026-10-22.
 
-> This repository is a formalization in progress, in [Lean 4](https://lean-lang.org/) with [Mathlib](https://github.com/leanprover-community/mathlib4), of Tadeusz Balaban's renormalization-group analysis of the classical O(N) spin model at low temperature. The papers it follows were published in 1995–1999, the last two with Michael O'Carroll; [docs/PAPERS.md](docs/PAPERS.md) lists them.
+> This repository is a formalization in progress, in [Lean 4](https://lean-lang.org/) with [Mathlib](https://github.com/leanprover-community/mathlib4), of Tadeusz Balaban's renormalization-group analysis of the classical O(N) spin model at low temperature. The papers it follows were published in 1995–1999, the last two with Michael O'Carroll; [docs/PAPERS.md](https://github.com/scottnarmstrong/balaban-lean/blob/493e9eb97292ebf6070c1c217a09bcf1adc23857/docs/PAPERS.md) lists them.
 
 *Quoted from [README.md](https://github.com/scottnarmstrong/balaban-lean/blob/493e9eb97292ebf6070c1c217a09bcf1adc23857/README.md), Apache-2.0.*
 

@@ -9,7 +9,7 @@ statement: formalized
 
 [mrdouglasny/jacobian-challenge](https://github.com/mrdouglasny/jacobian-challenge) at commit [8ce1ec28](https://github.com/mrdouglasny/jacobian-challenge/tree/8ce1ec28aed1c78b3b39d0bae26e2858c82f5143), 2026-06-17.
 
-> *Blow-by-blow discharge history lives in [`docs/history.md`](docs/history.md); this file keeps the current state and the ideas.*
+> *Blow-by-blow discharge history lives in [`docs/history.md`](https://github.com/mrdouglasny/jacobian-challenge/blob/8ce1ec28aed1c78b3b39d0bae26e2858c82f5143/docs/history.md); this file keeps the current state and the ideas.*
 
 *Quoted from [README.md](https://github.com/mrdouglasny/jacobian-challenge/blob/8ce1ec28aed1c78b3b39d0bae26e2858c82f5143/README.md), Apache-2.0.*
 

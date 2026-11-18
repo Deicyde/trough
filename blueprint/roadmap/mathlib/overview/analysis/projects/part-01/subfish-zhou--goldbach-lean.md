@@ -10,7 +10,7 @@ proof: formalized
 
 [subfish-zhou/goldbach-lean](https://github.com/subfish-zhou/goldbach-lean) at commit [9d4c3a40](https://github.com/subfish-zhou/goldbach-lean/tree/9d4c3a4010d42aedd9e7231bf94386019cfffccc), 2026-10-28.
 
-> A Lean 4 project formalizing progress toward **Goldbach's conjecture** and building reusable analytic number theory, with **Chen's 1+2 theorem** and **Li–Liu's 1+1.9 theorem** formalized. The separate [Wu04/Wu08 development](research/wu2008/README.md) derives **1+1.8938**; its full source build, statement and axiom checks, and final module kernel replay have passed.
+> A Lean 4 project formalizing progress toward **Goldbach's conjecture** and building reusable analytic number theory, with **Chen's 1+2 theorem** and **Li–Liu's 1+1.9 theorem** formalized. The separate [Wu04/Wu08 development](https://github.com/subfish-zhou/goldbach-lean/blob/9d4c3a4010d42aedd9e7231bf94386019cfffccc/research/wu2008/README.md) derives **1+1.8938**; its full source build, statement and axiom checks, and final module kernel replay have passed.
 
 *Quoted from [README.md](https://github.com/subfish-zhou/goldbach-lean/blob/9d4c3a4010d42aedd9e7231bf94386019cfffccc/README.md), Apache-2.0.*
 

@@ -10,7 +10,7 @@ proof: formalized
 
 [deancureton/sphere-six-complex](https://github.com/deancureton/sphere-six-complex) at commit [b783b990](https://github.com/deancureton/sphere-six-complex/tree/b783b990d46c5f5ce02a4ecbbb2c02408b452cde), 2026-10-08.
 
-> A Lean formalization of the construction in [the paper](https://alpo.ge/s6.pdf) ([local copy](references/s6.pdf)): a compact complex threefold diffeomorphic to the standard smooth six-sphere.
+> A Lean formalization of the construction in [the paper](https://alpo.ge/s6.pdf) ([local copy](https://github.com/deancureton/sphere-six-complex/blob/b783b990d46c5f5ce02a4ecbbb2c02408b452cde/references/s6.pdf)): a compact complex threefold diffeomorphic to the standard smooth six-sphere.
 
 *Quoted from [README.md](https://github.com/deancureton/sphere-six-complex/blob/b783b990d46c5f5ce02a4ecbbb2c02408b452cde/README.md), Apache-2.0.*
 

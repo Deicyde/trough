@@ -9,7 +9,7 @@ statement: formalized
 
 [MingchenXia/envelope-property-lean](https://github.com/MingchenXia/envelope-property-lean) at commit [bb713041](https://github.com/MingchenXia/envelope-property-lean/tree/bb7130411c5594e951c5923f8b82c021ce3d6c8d), 2026-10-30.
 
-> A Lean 4 / Mathlib formalization of the main results of Yanbo Fang, Jiyuan Han and Mingchen Xia, *The envelope property for unibranch projective varieties* ([paper and bibliography](paper/)).
+> A Lean 4 / Mathlib formalization of the main results of Yanbo Fang, Jiyuan Han and Mingchen Xia, *The envelope property for unibranch projective varieties* ([paper and bibliography](https://github.com/MingchenXia/envelope-property-lean/blob/bb7130411c5594e951c5923f8b82c021ce3d6c8d/paper)).
 
 *Quoted from [README.md](https://github.com/MingchenXia/envelope-property-lean/blob/bb7130411c5594e951c5923f8b82c021ce3d6c8d/README.md), Apache-2.0.*
 
