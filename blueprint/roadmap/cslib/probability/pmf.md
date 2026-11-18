@@ -11,7 +11,8 @@ proof: formalized
 
 > ## NB: This module is temporary
 >
-> …
+> The bind/pure and posterior lemmas here have no dependence on any domain-specific
+> structure. …
 >
 > The uniform samplers retain the PMF interface removed in
 > [mathlib#42909](https://github.com/leanprover-community/mathlib4/pull/42909),

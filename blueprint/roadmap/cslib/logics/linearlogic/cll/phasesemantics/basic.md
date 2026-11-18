@@ -38,6 +38,7 @@ proof: formalized
 > Several lemmas about facts and orthogonality useful in the proof of soundness are proven here.
 >
 > …
+>
 > ## References
 >
 > * [J.-Y. Girard, *Linear logic*][Girard1987]

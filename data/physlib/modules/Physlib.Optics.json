@@ -1,0 +1,210 @@
+{
+ "schema": "trough-physlib/v1",
+ "rev": "2a1dfe43134b49b643642f13d33031754021bb5d",
+ "modules": [
+  {
+   "file": "Physlib/Optics/Basic.lean",
+   "module": "Physlib.Optics.Basic",
+   "title": "Optics",
+   "doc": "This directory is currently a place holder.\nPlease feel free to contribute!\n\nSome directories which are NOT currently place holders are:\n- Mathematics\n- Meta\n- Particles\n- QFT\n- Quantum Mechanics\n- Relativity",
+   "copyright": "2025 Joseph Tooby-Smith",
+   "sections": [],
+   "declarations": [],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/Optics/Frequency.lean",
+   "module": "Physlib.Optics.Frequency",
+   "title": "Frequency",
+   "doc": "In this module we define the type `Frequency`, corresponding to the frequency of a wave\ncarrying the dimension of inverse time.\n\n## i. Overview\n\nThe type `Frequency` is `WithDim T𝓭⁻¹ ℝ≥0`, i.e., a nonnegative real number tagged with\nthe dimension of inverse time.\n\n## ii. Key results\n\n- `Frequency` : The type of frequencies of waves.\n\n## iii. Table of contents\n\n- A. The Frequency type\n\n## iv. References\n\n- https://en.wikipedia.org/wiki/Frequency\n- https://en.wikipedia.org/wiki/Wavelength",
+   "copyright": "2026 Samyak Rai",
+   "sections": [
+    {
+     "line": 41,
+     "text": "## A. The Frequency type"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "Frequency",
+     "kind": "abbrev",
+     "line": 50,
+     "doc": "The type `Frequency` represents the measure of of how often sinusodial components\nof a wave repeat per unit time, i.e. a nonnegative real number carrying the dimension\nof inverse time, in a given (but arbitrary) set of units.",
+     "statement": "abbrev Frequency : Type",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/Optics/Polarization/Basic.lean",
+   "module": "Physlib.Optics.Polarization.Basic",
+   "title": "Polarization",
+   "doc": "In this file the real representation is used to develop representations of polarizations\nsuch as the polarization ellipse, Stokes parameters and the Poincaré sphere for monochromatic\ntime-harmonic electromagnetic plane waves.\n\nMore general definitions that can be applied to a wider range of situations will be shown to\nbe equivalent to the definitions in this file where appropriate.\n\nThe material that was in this file has been moved to\n`Physlib.Electromagnetism.Vacuum.HarmonicWave` for better organization.\nThis file is kept because there is still some material to be added here in the future.",
+   "copyright": "2025 Zhi Kai Pong",
+   "sections": [],
+   "declarations": [],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/Optics/Wavelength.lean",
+   "module": "Physlib.Optics.Wavelength",
+   "title": "Wavelength",
+   "doc": "In this module we define the type `Wavelength`, corresponding to the wavelength of a wave\ncarrying the dimension of length, and relate it to the type `Frequency` through the\npropagation speed of the wave via the relation `c = λ * ν`.\n\n## i. Overview\n\nThe type `Wavelength` is `WithDim L𝓭 ℝ≥0`, i.e., a nonnegative real number tagged with\nthe dimension of length.\n\nFor a wave of frequency `ν > 0` propagating at a speed `c` (e.g. the speed of light),\nthe associated wavelength is `λ = c / ν`, and conversely a wave of wavelength `λ > 0`\nhas frequency `ν = c / λ`. These two constructions are inverse to one another.\n\n## ii. Key results\n\n- `Wavelength` : The type of wavelengths of waves.\n- `Wavelength.ofFrequency` : The wavelength `c / ν` associated with a positive frequency.\n- `Frequency.ofWavelength` : The frequency `c / λ` associated with a positive wavelength.\n- `Wavelength.ofFrequency_mul` : The relation `λ * ν = c`.\n- `Frequency.ofWavelength_mul` : The relation `ν * λ = c`.\n- `Wavelength.ofFrequency_ofWavelength` and `Frequency.ofWavelength_ofFrequency` : The\n  two constructions are inverse to one another.\n- `Wavelength.ofFrequency_scaleUnit` and `Frequency.ofWavelength_scaleUnit` : The\n  constructions commute with changes of units.\n- `speedEqWavelengthMulFrequency_isDimensionallyCorrect` : The relation `c = λ * ν` is\n  dimensionally correct.\n\n## iii. Table of contents\n\n- A. The Wavelength type\n- B. Wavelength from frequency\n- C. Frequency from wavelength\n- D. Round trips\n- E. Dimensional correctness\n\n## iv. References\n\n- https://en.wikipedia.org/wiki/Wavelength",
+   "copyright": "2026 Samyak Rai",
+   "sections": [
+    {
+     "line": 60,
+     "text": "## A. The Wavelength type"
+    },
+    {
+     "line": 74,
+     "text": "## B. Wavelength from frequency"
+    },
+    {
+     "line": 115,
+     "text": "## C. Frequency from wavelength"
+    },
+    {
+     "line": 153,
+     "text": "## D. Round trips"
+    },
+    {
+     "line": 185,
+     "text": "## E. Dimensional correctness"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "Wavelength",
+     "kind": "abbrev",
+     "line": 70,
+     "doc": "The type `Wavelength` represents the distance between consecutive\ncorresponding points of the same phase on the wave, such as two adjacent\ncrests, troughs, or zero crossings, i.e. a nonnegative real number\ncarrying the dimension of length.",
+     "statement": "abbrev Wavelength : Type",
+     "sorry": false
+    },
+    {
+     "name": "Wavelength.ofFrequency",
+     "kind": "def",
+     "line": 82,
+     "doc": "The wavelength of a wave of frequency `ν` propagating at a speed `c`,\ngiven by `λ = c / ν`.",
+     "statement": "noncomputable def ofFrequency (c : WithDim (L𝓭 * T𝓭⁻¹) ℝ≥0) (ν : Frequency) (_ν_pos : 0 < ν.val) :\n    Wavelength",
+     "sorry": false
+    },
+    {
+     "name": "Wavelength.ofFrequency_val",
+     "kind": "lemma",
+     "line": 86,
+     "doc": "",
+     "statement": "lemma ofFrequency_val (c : WithDim (L𝓭 * T𝓭⁻¹) ℝ≥0) (ν : Frequency) (hν : 0 < ν.val) :\n    (ofFrequency c ν hν).val = c.val / ν.val",
+     "sorry": false
+    },
+    {
+     "name": "Wavelength.ofFrequency_pos",
+     "kind": "lemma",
+     "line": 91,
+     "doc": "Positivity of the wavelength associated with a positive frequency and a positive\nspeed.",
+     "statement": "lemma ofFrequency_pos (c : WithDim (L𝓭 * T𝓭⁻¹) ℝ≥0) (hc : 0 < c.val) (ν : Frequency)\n    (hν : 0 < ν.val) : 0 < (ofFrequency c ν hν).val",
+     "sorry": false
+    },
+    {
+     "name": "Wavelength.ofFrequency_mul",
+     "kind": "lemma",
+     "line": 96,
+     "doc": "The wavelength associated with a frequency satisfies `λ * ν = c`.",
+     "statement": "lemma ofFrequency_mul (c : WithDim (L𝓭 * T𝓭⁻¹) ℝ≥0) (ν : Frequency) (hν : 0 < ν.val) :\n    (ofFrequency c ν hν).val * ν.val = c.val",
+     "sorry": false
+    },
+    {
+     "name": "Wavelength.ofFrequency_scaleUnit",
+     "kind": "lemma",
+     "line": 103,
+     "doc": "The wavelength associated with a frequency scales with units as a wavelength should:\nchanging the units from `u1` to `u2` rescales the resulting wavelength by the scale factor\nof the dimension of length.",
+     "statement": "lemma ofFrequency_scaleUnit (c : WithDim (L𝓭 * T𝓭⁻¹) ℝ≥0) (ν : Frequency) (hν : 0 < ν.val)\n    (u1 u2 : LTMCTUnitChoices) :\n    ofFrequency (scaleUnit u1 u2 c) (scaleUnit u1 u2 ν) (WithDim.scaleUnit_val_pos ν hν u1 u2) =\n      scaleUnit u1 u2 (ofFrequency c ν hν)",
+     "sorry": false
+    },
+    {
+     "name": "Frequency.ofWavelength",
+     "kind": "def",
+     "line": 123,
+     "doc": "The frequency of a wave of wavelength `w` propagating at a speed `c`,\ngiven by `ν = c / w`. We can't use `λ` due to Lean anon function.",
+     "statement": "noncomputable def ofWavelength (c : WithDim (L𝓭 * T𝓭⁻¹) ℝ≥0) (w : Wavelength) (_w_pos : 0 < w.val) :\n    Frequency",
+     "sorry": false
+    },
+    {
+     "name": "Frequency.ofWavelength_val",
+     "kind": "lemma",
+     "line": 127,
+     "doc": "",
+     "statement": "lemma ofWavelength_val (c : WithDim (L𝓭 * T𝓭⁻¹) ℝ≥0) (w : Wavelength) (w_pos : 0 < w.val) :\n    (ofWavelength c w w_pos).val = c.val / w.val",
+     "sorry": false
+    },
+    {
+     "name": "Frequency.ofWavelength_pos",
+     "kind": "lemma",
+     "line": 132,
+     "doc": "Positivity of the frequency associated with a positive wavelength and a positive\nspeed.",
+     "statement": "lemma ofWavelength_pos (c : WithDim (L𝓭 * T𝓭⁻¹) ℝ≥0) (c_pos : 0 < c.val) (w : Wavelength)\n    (hw : 0 < w.val) : 0 < (ofWavelength c w hw).val",
+     "sorry": false
+    },
+    {
+     "name": "Frequency.ofWavelength_mul",
+     "kind": "lemma",
+     "line": 137,
+     "doc": "The frequency associated with a wavelength satisfies `ν * λ = c`.",
+     "statement": "lemma ofWavelength_mul (c : WithDim (L𝓭 * T𝓭⁻¹) ℝ≥0) (w : Wavelength) (w_pos : 0 < w.val) :\n    (ofWavelength c w w_pos).val * w.val = c.val",
+     "sorry": false
+    },
+    {
+     "name": "Frequency.ofWavelength_scaleUnit",
+     "kind": "lemma",
+     "line": 144,
+     "doc": "The frequency associated with a wavelength scales with units as a frequency should:\nchanging the units from `u1` to `u2` rescales the resulting frequency by the scale factor\nof the dimension of inverse time.",
+     "statement": "lemma ofWavelength_scaleUnit (c : WithDim (L𝓭 * T𝓭⁻¹) ℝ≥0) (w : Wavelength) (w_pos : 0 < w.val)\n    (u1 u2 : LTMCTUnitChoices) :\n    ofWavelength (scaleUnit u1 u2 c) (scaleUnit u1 u2 w)\n      (WithDim.scaleUnit_val_pos w w_pos u1 u2) =\n      scaleUnit u1 u2 (ofWavelength c w w_pos)",
+     "sorry": false
+    },
+    {
+     "name": "Frequency.ofWavelength_ofFrequency",
+     "kind": "lemma",
+     "line": 161,
+     "doc": "Converting a wavelength to a frequency and back recovers the wavelength.",
+     "statement": "lemma ofWavelength_ofFrequency (c : WithDim (L𝓭 * T𝓭⁻¹) ℝ≥0) (hc : 0 < c.val)\n    (ν : Frequency) (hν : 0 < ν.val) :\n    ofWavelength c (Wavelength.ofFrequency c ν hν)\n      (Wavelength.ofFrequency_pos c hc ν hν) = ν",
+     "sorry": false
+    },
+    {
+     "name": "Wavelength.ofFrequency_ofWavelength",
+     "kind": "lemma",
+     "line": 175,
+     "doc": "Converting a frequency to a wavelength and back recovers the frequency.",
+     "statement": "lemma ofFrequency_ofWavelength (c : WithDim (L𝓭 * T𝓭⁻¹) ℝ≥0) (hc : 0 < c.val)\n    (w : Wavelength) (hw : 0 < w.val) :\n    ofFrequency c (Frequency.ofWavelength c w hw)\n      (Frequency.ofWavelength_pos c hc w hw) = w",
+     "sorry": false
+    },
+    {
+     "name": "SpeedEqWavelengthMulFrequency",
+     "kind": "def",
+     "line": 194,
+     "doc": "The relation `c = λ * ν` between a speed `c`, a wavelength `λ` and a frequency `ν`,\nstated on real-valued quantities carrying the dimensions of speed, length and inverse time\nrespectively.",
+     "statement": "def SpeedEqWavelengthMulFrequency (c : WithDim (L𝓭 * T𝓭⁻¹) ℝ) (w : WithDim L𝓭 ℝ)\n    (ν : WithDim T𝓭⁻¹ ℝ) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "speedEqWavelengthMulFrequency_isDimensionallyCorrect",
+     "kind": "lemma",
+     "line": 200,
+     "doc": "The relation `c = λ * ν` is dimensionally correct: it holds in one system of units if and\nonly if it holds in every system of units.",
+     "statement": "lemma speedEqWavelengthMulFrequency_isDimensionallyCorrect :\n    IsDimensionallyCorrect SpeedEqWavelengthMulFrequency",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  }
+ ]
+}
