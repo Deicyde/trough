@@ -1,0 +1,1224 @@
+{
+ "schema": "trough-physlib/v1",
+ "rev": "2a1dfe43134b49b643642f13d33031754021bb5d",
+ "modules": [
+  {
+   "file": "Physlib/CondensedMatter/BandTheory/Basic.lean",
+   "module": "Physlib.CondensedMatter.BandTheory.Basic",
+   "title": "A. Band theory",
+   "doc": "This module provides a home for the theory of Bloch Hamiltonians and states, band projectors,\nenergy bands and gaps, and band geometry. Generic quantum-mechanical infrastructure should be\nreused from Physlib rather than redefined here.",
+   "copyright": "2026 Wahaj Ayub",
+   "sections": [],
+   "declarations": [],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/CondensedMatter/Basic.lean",
+   "module": "Physlib.CondensedMatter.Basic",
+   "title": "A. Condensed matter",
+   "doc": "Condensed matter physics studies the collective behavior of matter, from crystalline structure\nand lattice models to interacting phases, topology, and material response.\n\n## A.1. Scope\n\n- `Crystal` covers crystal structures, reciprocal-space descriptions, symmetries, and dynamics.\n- `LatticeModels` covers Hamiltonian models whose degrees of freedom live on lattices.\n- `BandTheory` covers Bloch descriptions, energy bands, gaps, and band geometry.\n- `ManyBody` covers correlations, quasiparticles, Green functions, and interacting matter.\n- `Topology` covers topological phases and invariants in condensed matter systems.\n- `Response` covers transport and the linear, optical, and nonlinear response of materials.\n\n## A.2. Existing modules\n\nExisting condensed-matter modules currently include `TightBindingChain` and `Thermoelectric`.\nThey remain in their existing locations and have not been reorganized into the scopes above.",
+   "copyright": "2025 Joseph Tooby-Smith",
+   "sections": [],
+   "declarations": [],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/CondensedMatter/Crystal/Basic.lean",
+   "module": "Physlib.CondensedMatter.Crystal.Basic",
+   "title": "Crystals, cells and sites",
+   "doc": "A crystal is a finite unit cell repeated periodically.\n\n## i. Overview\n\nThe goal is to construct crystals such as the square, hexagonal, fcc, bcc and hcp lattices. The\nstandard starting point is a unit cell repeated by translations; see the reference below. We\nstart combinatorially, with a unit cell that repeats many times over. This periodicity is modeled\nby a finitely generated abelian group `G`, written additively, with `ℤᵈ` as the prototypical\nexample. Each unit cell consists of finitely many things, such as atoms, spins or orbitals, which\nare labeled by a type `F`. Repeating the cell gives one site `⟨n, i⟩` for every cell `n : G` and\nlabel `i : F`. Translation acts only on the cell:\n\n`a +ᵥ ⟨n, i⟩ = ⟨a + n, i⟩`.\n\nA crystal with one site per cell has a single label, while the honeycomb and hcp lattices have two.\nA species assignment gives each label a species, for example a chemical element.\n\nFor `ℤᵈ` the sites form an infinite array, and for `(ℤ/mℤ)ᵈ` a finite array with periodic\nboundary conditions. Coordinates in space, and with them distances and angles, are not part of this\ndescription and is added in other files.\n\n## ii. Key results\n\n- `Crystal` : a finitely generated abelian translation group with a finite, nonempty unit cell.\n- `Crystal.ofUnitCell` : the crystal obtained by repeating a labeled unit cell.\n- `Crystal.Site` : a site given by its cell and unit-cell label.\n- `Crystal.Site.ref` : the site with a given label in the reference cell.\n- `Crystal.Species` : a species assignment, one species for each unit-cell label.\n- `Crystal.Site.mem_orbit_iff_label_eq` : the translates of a site are exactly the sites with the\n  same label.\n\n## iii. Table of contents\n\n- A. The unit cell\n- B. Constructing a crystal from a unit cell\n- C. Sites and their finiteness\n- D. Translation symmetry\n- E. Species\n\n## iv. References\n\n* F. Göhmann, *Introduction to Solid State Physics*, lecture L3, Section 3.1, for the standard\n  description of a crystal as translated copies of a unit cell. [ref: goehmann_solid_state_2021]",
+   "copyright": "2026 Tom Ole Diem",
+   "sections": [
+    {
+     "line": 64,
+     "text": "## A. The unit cell"
+    },
+    {
+     "line": 80,
+     "text": "## B. Constructing a crystal from a unit cell"
+    },
+    {
+     "line": 90,
+     "text": "## C. Sites and their finiteness"
+    },
+    {
+     "line": 132,
+     "text": "## D. Translation symmetry"
+    },
+    {
+     "line": 168,
+     "text": "## E. Species"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "Physlib.CondensedMatter.Crystal",
+     "kind": "structure",
+     "line": 68,
+     "doc": "A crystal with finitely generated abelian translation group `G` and a finite, nonempty unit\ncell. The sites are one copy of each unit-cell label in every translated cell.",
+     "statement": "structure Crystal (G : Type*) [AddCommGroup G] [AddGroup.FG G] where\n  /-- The labels of the things in one unit cell, such as atoms, spins or orbitals. -/\n  UnitCell : Type*\n  /-- The unit cell has finitely many labels. -/\n  [finiteUnitCell : Finite UnitCell]\n  /-- The unit cell has at least one label. -/\n  [nonemptyUnitCell : Nonempty UnitCell]",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.ofUnitCell",
+     "kind": "abbrev",
+     "line": 84,
+     "doc": "Construct a crystal by repeating a unit cell with labels `F`.\nThe group `G` indexes translated cells; `⟨n, i⟩` is the site with label `i` in cell `n`.",
+     "statement": "abbrev ofUnitCell (G : Type*) (F : Type*) [AddCommGroup G] [AddGroup.FG G]\n    [Finite F] [Nonempty F] : Crystal G",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Site",
+     "kind": "structure",
+     "line": 93,
+     "doc": "A site of `C`, with label `i` in cell `n`.",
+     "statement": "structure Site (C : Crystal G) where\n  /-- The cell containing this site. -/\n  cell : G\n  /-- The label of this site within its cell. -/\n  label : C.UnitCell",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Site.ref",
+     "kind": "abbrev",
+     "line": 100,
+     "doc": "The site with label `i` in the reference cell, the cell `0`.",
+     "statement": "abbrev Site.ref {C : Crystal G} (i : C.UnitCell) : C.Site",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Site.cell_ref",
+     "kind": "lemma",
+     "line": 103,
+     "doc": "The reference site lies in the cell `0`.",
+     "statement": "lemma Site.cell_ref {C : Crystal G} (i : C.UnitCell) : (Site.ref i).cell = 0",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Site.label_ref",
+     "kind": "lemma",
+     "line": 106,
+     "doc": "The reference site has the label `i`.",
+     "statement": "lemma Site.label_ref {C : Crystal G} (i : C.UnitCell) : (Site.ref i).label = i",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.siteEquiv",
+     "kind": "def",
+     "line": 109,
+     "doc": "A site is a pair of its unit-cell label and its cell.",
+     "statement": "def siteEquiv (C : Crystal G) : C.Site ≃ C.UnitCell × G",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 116,
+     "doc": "Sites can be compared when cells and unit-cell labels can be compared.",
+     "statement": "instance (C : Crystal G) [DecidableEq G] [DecidableEq C.UnitCell] : DecidableEq C.Site",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 120,
+     "doc": "A finite set of cells and a finite unit cell give a finite set of sites.",
+     "statement": "instance (C : Crystal G) [Fintype G] [Fintype C.UnitCell] : Fintype C.Site",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 124,
+     "doc": "A finite translation group, as for periodic boundary conditions, gives a finite crystal.",
+     "statement": "instance (C : Crystal G) [Finite G] : Finite C.Site",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 128,
+     "doc": "Every crystal has a site in its reference cell.",
+     "statement": "instance (C : Crystal G) : Nonempty C.Site",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 135,
+     "doc": "Translate a site to another cell, preserving its unit-cell label.",
+     "statement": "instance (C : Crystal G) : AddAction G C.Site",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Site.vadd_def",
+     "kind": "lemma",
+     "line": 141,
+     "doc": "Translation changes a site's cell and preserves its label.",
+     "statement": "lemma Site.vadd_def {C : Crystal G} (a : G) (x : C.Site) :\n    a +ᵥ x = ⟨a + x.cell, x.label⟩",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Site.cell_vadd",
+     "kind": "lemma",
+     "line": 145,
+     "doc": "The cell of a translated site is the translated cell.",
+     "statement": "lemma Site.cell_vadd {C : Crystal G} (a : G) (x : C.Site) :\n    (a +ᵥ x).cell = a + x.cell",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Site.label_vadd",
+     "kind": "lemma",
+     "line": 149,
+     "doc": "Translation preserves the label of a site.",
+     "statement": "lemma Site.label_vadd {C : Crystal G} (a : G) (x : C.Site) :\n    (a +ᵥ x).label = x.label",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 154,
+     "doc": "Translation acts freely: translations are injective on sites, and different translations move\na site to different sites.",
+     "statement": "instance (C : Crystal G) : IsCancelVAdd G C.Site",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Site.mem_orbit_iff_label_eq",
+     "kind": "lemma",
+     "line": 159,
+     "doc": "The translates of a site are exactly the sites with the same label.",
+     "statement": "lemma Site.mem_orbit_iff_label_eq {C : Crystal G} (x y : C.Site) :\n    y ∈ AddAction.orbit G x ↔ x.label = y.label",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Species",
+     "kind": "abbrev",
+     "line": 172,
+     "doc": "A species assignment gives each label of the unit cell a species in `Q`, for example a chemical\nelement. The same assignment holds in every cell.",
+     "statement": "abbrev Species (C : Crystal G) (Q : Type*)",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/CondensedMatter/Crystal/Bonds.lean",
+   "module": "Physlib.CondensedMatter.Crystal.Bonds",
+   "title": "Bonds in a crystal",
+   "doc": "A bond connects sites in two unit cells of a crystal.\n\n## i. Overview\n\nA bond `⟨i, j, d⟩` joins the site with label `i` in cell `n` to the site with label `j`\nin cell `n + d`. Translating both endpoints gives another copy of the same bond.\n\n## ii. Key results\n\n- `Bond` : a source label, a target label and the displacement between their cells.\n- `Bond.Links` : the relation between sites connected by a bond.\n\n## iii. Table of contents\n\n- A. Bonds in a unit cell\n\n## iv. References\n\n* F. Göhmann, *Introduction to Solid State Physics*, lecture L3, Section 3.1, for the standard\n  description of a crystal. [ref: goehmann_solid_state_2021]",
+   "copyright": "2026 Tom Ole Diem",
+   "sections": [
+    {
+     "line": 42,
+     "text": "## A. Bonds in a unit cell"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Bond",
+     "kind": "structure",
+     "line": 45,
+     "doc": "A bond from `source` in one cell to `target` in the cell displaced by `displacement`.",
+     "statement": "structure Bond (C : Crystal G) where\n  /-- The site label at the start of the bond. -/\n  source : C.UnitCell\n  /-- The site label at the end of the bond. -/\n  target : C.UnitCell\n  /-- Translation from the source cell to the target cell. -/\n  displacement : G",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 54,
+     "doc": "Bonds can be compared when cells and unit-cell labels can be compared.",
+     "statement": "instance {C : Crystal G} [DecidableEq G] [DecidableEq C.UnitCell] : DecidableEq (Bond C)",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Bond.Links",
+     "kind": "def",
+     "line": 62,
+     "doc": "Site `x` is the source and site `y` is the target of this bond.",
+     "statement": "def Links (b : Bond C) (x y : C.Site) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Bond.links_reference",
+     "kind": "lemma",
+     "line": 66,
+     "doc": "Every bond links the reference site of its source to the site its displacement points to.",
+     "statement": "lemma links_reference (b : Bond C) : b.Links (Site.ref b.source) ⟨b.displacement, b.target⟩",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Bond.eq_of_links",
+     "kind": "lemma",
+     "line": 70,
+     "doc": "Two bonds linking the same pair of sites are equal.",
+     "statement": "lemma eq_of_links {b b' : Bond C} {x y : C.Site} (h : b.Links x y) (h' : b'.Links x y) :\n    b = b'",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Bond.links_vadd",
+     "kind": "lemma",
+     "line": 79,
+     "doc": "Translating the endpoints gives another copy of the same bond.",
+     "statement": "lemma links_vadd (b : Bond C) (a : G) (x y : C.Site) :\n    b.Links (a +ᵥ x) (a +ᵥ y) ↔ b.Links x y",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 84,
+     "doc": "The source and target of a bond can be checked from their site addresses.",
+     "statement": "instance [DecidableEq G] [DecidableEq C.UnitCell] (b : Bond C) : DecidableRel b.Links",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/CondensedMatter/Crystal/Bravais/Basic.lean",
+   "module": "Physlib.CondensedMatter.Crystal.Bravais.Basic",
+   "title": "Bravais lattices",
+   "doc": "A Bravais lattice with one site per cell, repeated by `d` independent translations, and its\nembedding given by `d` primitive vectors.\n\n## i. Overview\n\nA Bravais lattice of dimension `d` is the crystal with translation group `ℤᵈ` and a unit cell with\na single site. Its embedding in a normed space `E` is fixed by the `d` primitive vectors, one for\neach generator of `ℤᵈ`: the cell `n` goes to the integer combination of these vectors with\ncoefficients `n j`, and the single site sits at the origin of its cell. The different lattice types\ndiffer only in these vectors, so the general facts are proved here once.\n\n## ii. Key results\n\n- `Crystal.bravais` : the crystal with translation group `ℤᵈ` and one site per cell.\n- `Crystal.Embedding.ofVectors` : the embedding of `Crystal.bravais d` given by `d` primitive\n  vectors.\n- `Crystal.Embedding.position_ofVectors` : the position of a site is the integer combination of\n  the primitive vectors given by its cell.\n- `Crystal.Embedding.isSpaceFilling_ofVectors_iff` : the embedding is space filling exactly when the\n  primitive vectors span the space.\n- `Crystal.Embedding.position_ofVectors_injective` : linearly independent primitive vectors give\n  distinct positions to distinct sites.\n- `Crystal.Embedding.finrank_eq_of_ofVectors` : a space-filling embedding with linearly\n  independent primitive vectors lives in a space of dimension `d`.\n\n## iii. Table of contents\n\n- A. The crystal\n- B. The embedding\n- C. Spanning and independence\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Eduardo Nava-Hernandez",
+   "sections": [
+    {
+     "line": 54,
+     "text": "## A. The crystal"
+    },
+    {
+     "line": 64,
+     "text": "## B. The embedding"
+    },
+    {
+     "line": 80,
+     "text": "## C. Spanning and independence"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "Physlib.CondensedMatter.Crystal.bravais",
+     "kind": "def",
+     "line": 58,
+     "doc": "The Bravais lattice of dimension `d`: the translation group is `ℤᵈ` and the unit cell has a\nsingle site.",
+     "statement": "def bravais (d : ℕ) : Crystal (Fin d → ℤ)",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Embedding.ofVectors",
+     "kind": "def",
+     "line": 67,
+     "doc": "The embedding of the Bravais lattice of dimension `d` given by `d` primitive vectors.",
+     "statement": "def ofVectors (v : Fin d → E) : Embedding (bravais d) E",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Embedding.position_ofVectors",
+     "kind": "lemma",
+     "line": 76,
+     "doc": "The position of a site is the integer combination of the primitive vectors given by its\ncell.",
+     "statement": "lemma position_ofVectors (v : Fin d → E) (x : (bravais d).Site) :\n    (ofVectors v).position x = ∑ j, x.cell j • v j",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Embedding.isSpaceFilling_ofVectors_iff",
+     "kind": "lemma",
+     "line": 86,
+     "doc": "The embedding of a Bravais lattice is space filling exactly when the primitive vectors span\nthe space.",
+     "statement": "lemma isSpaceFilling_ofVectors_iff (v : Fin d → E) :\n    (ofVectors v).IsSpaceFilling ↔ Submodule.span ℝ (Set.range v) = ⊤",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Embedding.position_ofVectors_injective",
+     "kind": "lemma",
+     "line": 96,
+     "doc": "Linearly independent primitive vectors give distinct positions to distinct sites.",
+     "statement": "lemma position_ofVectors_injective {v : Fin d → E} (hv : LinearIndependent ℝ v) :\n    Function.Injective (ofVectors v).position",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Embedding.finrank_eq_of_ofVectors",
+     "kind": "lemma",
+     "line": 110,
+     "doc": "A space-filling embedding of a Bravais lattice with linearly independent primitive vectors\nlives in a space of dimension `d`.",
+     "statement": "lemma finrank_eq_of_ofVectors {v : Fin d → E} (hv : LinearIndependent ℝ v)\n    (h : (ofVectors v).IsSpaceFilling) : Module.finrank ℝ E = d",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/CondensedMatter/Crystal/Embedding.lean",
+   "module": "Physlib.CondensedMatter.Crystal.Embedding",
+   "title": "A crystal in space",
+   "doc": "Embedding of a crystal into a space.\n\n## i. Overview\n\nGiven a normed additive commutative group `E`, an embedding sends each translation of the crystal to\na vector in `E` and each site of the reference cell to a point in `E`. The site `(n, i)` is then\nplaced at the vector of `n` plus the point of `i`. The embedding is space filling if the vectors of\nthe translations span `E`.\n\n## ii. Key results\n\n- `Crystal.Embedding` : the vectors `ρ` of the translations and the positions `p` of the\n  sites of the reference cell, in a normed group.\n- `Crystal.Embedding.positionHom` : the positions commute with the translations, as an equivariant\n  map of the sites.\n- `Crystal.Embedding.position_vadd` : translating a site translates its position.\n- `Crystal.Embedding.dist_position_vadd` : translating two sites does not change the\n  distance between their positions.\n- `Crystal.Embedding.IsSpaceFilling` : the vectors of the translations span the space.\n- `Crystal.Embedding.isSpaceFilling_iff` : space filling can be checked on a generating set.\n- `Crystal.Embedding.IsSpaceFilling.finiteDimensional` : a space-filling embedding lies in a\n  finite-dimensional space.\n- `Crystal.Embedding.IsSpaceFilling.finrank_eq_rank` : the dimension of the space equals the rank\n  of the translation group when the vectors of a basis of the group are linearly independent.\n\n## iii. Table of contents\n\n- A. Vectors and positions\n- B. Filling the space\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Tom Ole Diem",
+   "sections": [
+    {
+     "line": 59,
+     "text": "## A. Vectors and positions"
+    },
+    {
+     "line": 95,
+     "text": "## B. Filling the space"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Embedding",
+     "kind": "structure",
+     "line": 63,
+     "doc": "An embedding of a crystal in a normed group `E`. It assigns a vector to each translation and a\nposition to each site of the reference cell.",
+     "statement": "structure Embedding (C : Crystal G) (E : Type*) [NormedAddCommGroup E] where\n  /-- The vector of a translation. -/\n  vector : G →+ E\n  /-- The position of the site with a given label in the reference cell. -/\n  basis : C.UnitCell → E",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Embedding.position",
+     "kind": "def",
+     "line": 74,
+     "doc": "The site `(n, i)` sits at the vector of `n` plus the position of the label `i`.",
+     "statement": "def position (x : C.Site) : E",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Embedding.position_vadd",
+     "kind": "lemma",
+     "line": 77,
+     "doc": "Translating a site by `a` translates its position by the vector of `a`.",
+     "statement": "lemma position_vadd (a : G) (x : C.Site) : R.position (a +ᵥ x) = R.vector a + R.position x",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Embedding.action",
+     "kind": "abbrev",
+     "line": 81,
+     "doc": "The translation group acts on the space by its vectors.",
+     "statement": "abbrev action : AddAction G E",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Embedding.positionHom",
+     "kind": "def",
+     "line": 84,
+     "doc": "The positions commute with the translations.",
+     "statement": "def positionHom : letI := R.action; AddActionHom (id : G → G) C.Site E",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Embedding.dist_position_vadd",
+     "kind": "lemma",
+     "line": 90,
+     "doc": "Translating two sites does not change the distance between their positions.",
+     "statement": "lemma dist_position_vadd (a : G) (x y : C.Site) :\n    Dist.dist (R.position (a +ᵥ x)) (R.position (a +ᵥ y)) =\n      Dist.dist (R.position x) (R.position y)",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Embedding.IsSpaceFilling",
+     "kind": "def",
+     "line": 101,
+     "doc": "The embedding is space filling if the vectors of the translations span the space, so that the\ncrystal repeats in every direction.",
+     "statement": "def IsSpaceFilling : Prop",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Embedding.isSpaceFilling_iff",
+     "kind": "lemma",
+     "line": 105,
+     "doc": "An embedding fills the space exactly when the vectors of a generating set of the translation\ngroup span it.",
+     "statement": "lemma isSpaceFilling_iff {S : Set G} (hS : AddSubgroup.closure S = ⊤) :\n    R.IsSpaceFilling ↔ Submodule.span ℝ (R.vector '' S) = ⊤",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Embedding.IsSpaceFilling.finiteDimensional",
+     "kind": "lemma",
+     "line": 118,
+     "doc": "A space-filling embedding is in a finite-dimensional space.",
+     "statement": "lemma IsSpaceFilling.finiteDimensional (h : R.IsSpaceFilling) : FiniteDimensional ℝ E",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.Embedding.IsSpaceFilling.finrank_eq_rank",
+     "kind": "lemma",
+     "line": 124,
+     "doc": "The dimension equals the rank of the translation group when the vectors of a basis of the\ngroup are linearly independent over `ℝ`.",
+     "statement": "lemma IsSpaceFilling.finrank_eq_rank (h : R.IsSpaceFilling) {ι : Type*} [Fintype ι]\n    (B : Module.Basis ι ℤ G) (hB : LinearIndependent ℝ (R.vector ∘ B)) :\n    Module.finrank ℝ E = Module.finrank ℤ G",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/CondensedMatter/Crystal/PeriodicGraph.lean",
+   "module": "Physlib.CondensedMatter.Crystal.PeriodicGraph",
+   "title": "Periodic graphs of crystals",
+   "doc": "A finite set of bonds, repeated in every unit cell, gives the connections of a crystal.\n\n## i. Overview\n\nA crystal is a set of sites with a translation action. Connections between sites, such as the\nnearest-neighbor links of a square lattice, give it a graph. Since the crystal is periodic, so is\nits graph: translating both ends of a connection preserves adjacency,\n\n`Adj (a +ᵥ x) (a +ᵥ y) ↔ Adj x y`.\n\nIt is enough to list the connections once. A finite set of bonds gives a periodic graph, and\nconversely every periodic graph in which each site has finitely many neighbors comes from finitely\nmany bonds.\n\n## ii. Key results\n\n- `PeriodicGraph` : a graph on the sites that is invariant under translation and has finitely\n  many neighbors at each site.\n- `PeriodicGraph.ofBonds` : the periodic graph generated by a finite set of bonds.\n- `PeriodicGraph.eq_ofBonds` : every periodic graph is generated by finitely many bonds.\n- `PeriodicGraph.degree_vadd` : every copy of a site has the same number of neighbors.\n- `PeriodicGraph.graphAutomorphisms` : the adjacency-preserving permutations of the sites.\n\n## iii. Table of contents\n\n- A. Translation-invariant connectivity\n- B. Building the graph from bonds\n- C. Adjacency depends on cell differences\n- D. The periodic graph of a finite set of bonds\n- E. Every periodic graph comes from bonds\n- F. Graph automorphisms\n\n## iv. References\n\n* F. Göhmann, *Introduction to Solid State Physics*, lecture L3, Section 3.1, for the standard\n  description of a crystal. [ref: goehmann_solid_state_2021]",
+   "copyright": "2026 Tom Ole Diem",
+   "sections": [
+    {
+     "line": 59,
+     "text": "## A. Translation-invariant connectivity"
+    },
+    {
+     "line": 100,
+     "text": "## B. Building the graph from bonds"
+    },
+    {
+     "line": 116,
+     "text": "## C. Adjacency depends on cell differences"
+    },
+    {
+     "line": 127,
+     "text": "## D. The periodic graph of a finite set of bonds"
+    },
+    {
+     "line": 163,
+     "text": "## E. Every periodic graph comes from bonds"
+    },
+    {
+     "line": 208,
+     "text": "## F. Graph automorphisms"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "Physlib.CondensedMatter.Crystal.PeriodicGraph",
+     "kind": "structure",
+     "line": 63,
+     "doc": "A periodic pattern of undirected connections between crystal sites, with finitely many\nneighbors at each site.",
+     "statement": "structure PeriodicGraph (C : Crystal G) where\n  /-- The undirected connections between crystal sites. -/\n  toSimpleGraph : SimpleGraph C.Site\n  /-- Translating both sites preserves their connection. -/\n  adj_vadd : ∀ (a : G) (x y : C.Site),\n    toSimpleGraph.Adj (a +ᵥ x) (a +ᵥ y) ↔ toSimpleGraph.Adj x y\n  /-- Each site is connected to only finitely many other sites. -/\n  [locallyFinite : toSimpleGraph.LocallyFinite]",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.PeriodicGraph.ext",
+     "kind": "lemma",
+     "line": 77,
+     "doc": "Periodic graphs are equal when their underlying graphs are.",
+     "statement": "lemma ext {g g' : PeriodicGraph C} (h : g.toSimpleGraph = g'.toSimpleGraph) : g = g'",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.PeriodicGraph.translateIso",
+     "kind": "def",
+     "line": 84,
+     "doc": "A translation is an automorphism of the graph.",
+     "statement": "def translateIso (g : PeriodicGraph C) (a : G) : g.toSimpleGraph ≃g g.toSimpleGraph",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.PeriodicGraph.degree_vadd",
+     "kind": "lemma",
+     "line": 89,
+     "doc": "The degree, the number of neighbors, is the same for all translates of a site.",
+     "statement": "lemma degree_vadd (g : PeriodicGraph C) (a : G) (x : C.Site) :\n    g.toSimpleGraph.degree (a +ᵥ x) = g.toSimpleGraph.degree x",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.PeriodicGraph.degree_cell",
+     "kind": "lemma",
+     "line": 95,
+     "doc": "The degree of a site depends only on its label.",
+     "statement": "lemma degree_cell (g : PeriodicGraph C) (n : G) (i : C.UnitCell) :\n    g.toSimpleGraph.degree ⟨n, i⟩ = g.toSimpleGraph.degree (Site.ref i)",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.PeriodicGraph.graphOfBonds",
+     "kind": "def",
+     "line": 103,
+     "doc": "The undirected graph generated by translating every bond in the set.",
+     "statement": "def graphOfBonds (bonds : Finset (Bond C)) : SimpleGraph C.Site",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.PeriodicGraph.adj_graphOfBonds",
+     "kind": "lemma",
+     "line": 107,
+     "doc": "Two sites are adjacent when they are different and joined by a bond in either direction.",
+     "statement": "lemma adj_graphOfBonds (bonds : Finset (Bond C)) (x y : C.Site) :\n    (graphOfBonds bonds).Adj x y ↔ x ≠ y ∧ ∃ b ∈ bonds, b.Links x y ∨ b.Links y x",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.PeriodicGraph.graphOfBonds_adj_vadd",
+     "kind": "lemma",
+     "line": 112,
+     "doc": "Adjacency generated by bonds is unchanged by a common cell translation.",
+     "statement": "lemma graphOfBonds_adj_vadd (bonds : Finset (Bond C)) (a : G) (x y : C.Site) :\n    (graphOfBonds bonds).Adj (a +ᵥ x) (a +ᵥ y) ↔ (graphOfBonds bonds).Adj x y",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.PeriodicGraph.adj_iff",
+     "kind": "lemma",
+     "line": 119,
+     "doc": "Adjacency depends only on the labels of the sites and the difference of their cells.",
+     "statement": "lemma adj_iff (g : PeriodicGraph C) (x y : C.Site) :\n    g.toSimpleGraph.Adj x y ↔\n      g.toSimpleGraph.Adj (Site.ref x.label) ⟨y.cell - x.cell, y.label⟩",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 132,
+     "doc": "Connections generated by a finite set of bonds can be decided.",
+     "statement": "instance (bonds : Finset (Bond C)) : DecidableRel (graphOfBonds bonds).Adj",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.PeriodicGraph.candidates",
+     "kind": "def",
+     "line": 136,
+     "doc": "The sites reached from `x` by following a bond forwards or backwards.",
+     "statement": "def candidates (bonds : Finset (Bond C)) (x : C.Site) : Finset C.Site",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.PeriodicGraph.neighborsOfBonds",
+     "kind": "def",
+     "line": 140,
+     "doc": "The neighbors of a site in the graph generated by finitely many bonds.",
+     "statement": "def neighborsOfBonds (bonds : Finset (Bond C)) (x : C.Site) : Finset C.Site",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.PeriodicGraph.mem_neighborsOfBonds",
+     "kind": "lemma",
+     "line": 144,
+     "doc": "The enumerated neighbors are exactly the adjacent sites.",
+     "statement": "lemma mem_neighborsOfBonds (bonds : Finset (Bond C)) (x y : C.Site) :\n    y ∈ neighborsOfBonds bonds x ↔ (graphOfBonds bonds).Adj x y",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.PeriodicGraph.ofBonds",
+     "kind": "def",
+     "line": 153,
+     "doc": "The periodic graph obtained by repeating the given bonds in every cell.",
+     "statement": "def ofBonds (bonds : Finset (Bond C)) : PeriodicGraph C",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.PeriodicGraph.adj_ofBonds",
+     "kind": "lemma",
+     "line": 159,
+     "doc": "Two sites are adjacent in the graph from bonds when they are joined by one of the bonds.",
+     "statement": "lemma adj_ofBonds (bonds : Finset (Bond C)) (x y : C.Site) :\n    (ofBonds bonds).toSimpleGraph.Adj x y ↔ x ≠ y ∧ ∃ b ∈ bonds, b.Links x y ∨ b.Links y x",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.PeriodicGraph.bonds",
+     "kind": "def",
+     "line": 169,
+     "doc": "The bonds that join a site of the reference cell to one of its neighbors.",
+     "statement": "def bonds (g : PeriodicGraph C) : Finset (Bond C)",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.PeriodicGraph.mem_bonds",
+     "kind": "lemma",
+     "line": 174,
+     "doc": "A bond of `g.bonds` joins a site of the reference cell to one of its neighbors.",
+     "statement": "lemma mem_bonds (g : PeriodicGraph C) (b : Bond C) :\n    b ∈ g.bonds ↔ g.toSimpleGraph.Adj (Site.ref b.source) ⟨b.displacement, b.target⟩",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.PeriodicGraph.adj_of_links",
+     "kind": "lemma",
+     "line": 181,
+     "doc": "Sites joined by a bond of `g.bonds` are adjacent in `g`.",
+     "statement": "lemma adj_of_links (g : PeriodicGraph C) {b : Bond C} (hb : b ∈ g.bonds) {x y : C.Site}\n    (h : b.Links x y) : g.toSimpleGraph.Adj x y",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.PeriodicGraph.adj_iff_mem_bonds",
+     "kind": "lemma",
+     "line": 187,
+     "doc": "Sites joined by a bond are adjacent exactly when the bond is one of `g.bonds`.",
+     "statement": "lemma adj_iff_mem_bonds (g : PeriodicGraph C) {b : Bond C} {x y : C.Site} (h : b.Links x y) :\n    g.toSimpleGraph.Adj x y ↔ b ∈ g.bonds",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.PeriodicGraph.toSimpleGraph_eq_graphOfBonds",
+     "kind": "lemma",
+     "line": 192,
+     "doc": "Every periodic graph is generated by the finitely many bonds leaving the reference cell.",
+     "statement": "lemma toSimpleGraph_eq_graphOfBonds (g : PeriodicGraph C) :\n    g.toSimpleGraph = graphOfBonds g.bonds",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.PeriodicGraph.eq_ofBonds",
+     "kind": "lemma",
+     "line": 203,
+     "doc": "Every periodic graph is generated by the finitely many bonds leaving the reference\ncell.",
+     "statement": "lemma eq_ofBonds (g : PeriodicGraph C) : g = ofBonds g.bonds",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CondensedMatter.Crystal.PeriodicGraph.graphAutomorphisms",
+     "kind": "def",
+     "line": 211,
+     "doc": "The automorphism group of the underlying graph, without requiring crystal symmetry.",
+     "statement": "def graphAutomorphisms (g : PeriodicGraph C) : Subgroup (Equiv.Perm C.Site)",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/CondensedMatter/LatticeModels/Basic.lean",
+   "module": "Physlib.CondensedMatter.LatticeModels.Basic",
+   "title": "A. Lattice models",
+   "doc": "This module provides a home for hopping Hamiltonians, tight-binding and Hubbard-type models,\nand spin lattice models. A future design issue is the relation between real-space lattice\nHamiltonians and momentum-space Bloch Hamiltonians.",
+   "copyright": "2026 Wahaj Ayub",
+   "sections": [],
+   "declarations": [],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/CondensedMatter/ManyBody/Basic.lean",
+   "module": "Physlib.CondensedMatter.ManyBody.Basic",
+   "title": "A. Many-body physics",
+   "doc": "This module provides a home for correlation functions, quasiparticles, Green functions,\nmean-field descriptions, and interacting quantum matter.",
+   "copyright": "2026 Wahaj Ayub",
+   "sections": [],
+   "declarations": [],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/CondensedMatter/Response/Basic.lean",
+   "module": "Physlib.CondensedMatter.Response.Basic",
+   "title": "A. Response",
+   "doc": "This module provides a home for electrical and thermal transport, linear and thermoelectric\nresponse, optical response, and nonlinear response.",
+   "copyright": "2026 Wahaj Ayub",
+   "sections": [],
+   "declarations": [],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/CondensedMatter/Thermoelectric/Basic.lean",
+   "module": "Physlib.CondensedMatter.Thermoelectric.Basic",
+   "title": "Thermoelectric figure of merit",
+   "doc": "## i. Overview\n\nA thermoelectric material converts a temperature difference into electrical\npower. In the linear-response (Onsager) regime, the coupled transport of\ncharge and heat in an isotropic material is governed by the constitutive\nrelations\n\n  J = σ (E − S ∇T),        q = T S J − κ ∇T,\n\nso a thermoelectric material is characterized by exactly four transport\ncoefficients: the Seebeck coefficient `S`, the electrical conductivity `σ`,\nand the thermal conductivity `κ = κl + κe`, split into its lattice (phonon)\nand electronic contributions because the two channels respond independently\nto material design. These four coefficients are collected in the structure\n`ThermoelectricMaterial`, and everything in this file is stated on it.\n\nThe performance of the material at absolute temperature `T` is captured by\nthe dimensionless figure of merit\n\n  zT = σ S² T / (κl + κe),\n\nwhose numerator groups into the power factor `PF = σ S²`. Temperature is a\nstate variable, not a material property, so `T` enters as an argument rather\nthan a field. The four coefficients of a real material are themselves\ntemperature-dependent, so a `ThermoelectricMaterial` should be read as a\nmaterial at an operating point, its coefficients evaluated at the same\ntemperature at which `zT` is evaluated.\n\nIn this file all quantities are real numbers in a fixed consistent system of\nunits, following the convention of `Physlib.Thermodynamics.IdealGas.Basic`.\n\n## ii. Key results\n\n- `ThermoelectricMaterial`: the four linear-response transport coefficients\n  of a thermoelectric material, with their physical sign constraints.\n- `powerFactor`: the thermoelectric power factor `σ S²`.\n- `totalThermalConductivity`: the total thermal conductivity `κl + κe`.\n- `figureOfMerit`: the dimensionless figure of merit `zT`.\n- `figureOfMerit_eq`: the flat form `zT = σ S² T / (κl + κe)`.\n- `figureOfMerit_pos`: positivity of `zT` for a material with a nonzero\n  Seebeck coefficient at positive temperature.\n- `figureOfMerit_le_of_le`: lowering the lattice thermal conductivity raises\n  `zT`, the phonon-glass electron-crystal design principle.\n\n## iii. Table of contents\n\n- A. The thermoelectric material\n- B. The power factor\n- C. The total thermal conductivity\n- D. The figure of merit\n  - D.1. Equalities for the figure of merit\n  - D.2. Positivity of the figure of merit\n  - D.3. Monotonicity in the lattice thermal conductivity\n\n## iv. References\n\n* Ioffe, A.F., Semiconductor Thermoelements and Thermoelectric Cooling, Infosearch (1957).\n  [ref: ioffe_1957]\n* Snyder, G.J., Toberer, E.S., Complex thermoelectric materials, Nature Materials 7, 105–114\n  (2008). [ref: snyder_toberer_2008]",
+   "copyright": "2026 Giuseppe Barbalinardo",
+   "sections": [
+    {
+     "line": 83,
+     "text": "## A. The thermoelectric material\n\nThe four fields are the complete set of linear-response coefficients for\ncoupled charge and heat transport in an isotropic material: no further\nmaterial parameter enters the steady-state thermoelectric equations, and\n`zT` is a function of exactly these four together with the temperature.\nThe sign constraints are physical: a thermoelectric material conducts\ncharge (`0 < σ`) and its lattice conducts heat (`0 < κl`), while the\nelectronic heat channel can be negligible but never negative (`0 ≤ κe`).\nThe Seebeck coefficient is unconstrained: its sign records the carrier\ntype (negative for electrons, positive for holes), and it vanishes at\ncompensation points."
+    },
+    {
+     "line": 118,
+     "text": "## B. The power factor"
+    },
+    {
+     "line": 135,
+     "text": "## C. The total thermal conductivity"
+    },
+    {
+     "line": 150,
+     "text": "## D. The figure of merit"
+    },
+    {
+     "line": 161,
+     "text": "### D.1. Equalities for the figure of merit"
+    },
+    {
+     "line": 174,
+     "text": "### D.2. Positivity of the figure of merit"
+    },
+    {
+     "line": 187,
+     "text": "### D.3. Monotonicity in the lattice thermal conductivity"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "CondensedMatter.ThermoelectricMaterial",
+     "kind": "structure",
+     "line": 102,
+     "doc": "A thermoelectric material in the linear-response regime, characterized by\nits four transport coefficients.",
+     "statement": "structure ThermoelectricMaterial where\n  /-- The Seebeck coefficient `S`: the voltage developed per unit temperature\n  difference. Its sign records the dominant carrier type. -/\n  S : ℝ\n  /-- The electrical conductivity `σ`. -/\n  σ : ℝ\n  /-- The lattice (phonon) contribution `κl` to the thermal conductivity. -/\n  κl : ℝ\n  /-- The electronic contribution `κe` to the thermal conductivity. -/\n  κe : ℝ\n  σ_pos : 0 < σ\n  κl_pos : 0 < κl\n  κe_nonneg : 0 ≤ κe",
+     "sorry": false
+    },
+    {
+     "name": "CondensedMatter.ThermoelectricMaterial.powerFactor",
+     "kind": "def",
+     "line": 125,
+     "doc": "The thermoelectric power factor `PF = σ S²` of a material.",
+     "statement": "def powerFactor (M : ThermoelectricMaterial) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "CondensedMatter.ThermoelectricMaterial.powerFactor_pos",
+     "kind": "lemma",
+     "line": 128,
+     "doc": "The power factor is positive when the Seebeck coefficient is nonzero.",
+     "statement": "lemma powerFactor_pos {M : ThermoelectricMaterial} (hS : M.S ≠ 0) :\n    0 < M.powerFactor",
+     "sorry": false
+    },
+    {
+     "name": "CondensedMatter.ThermoelectricMaterial.totalThermalConductivity",
+     "kind": "def",
+     "line": 143,
+     "doc": "The total thermal conductivity `κl + κe` of a material, the sum of the\nlattice (phonon) and electronic contributions.",
+     "statement": "def totalThermalConductivity (M : ThermoelectricMaterial) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "CondensedMatter.ThermoelectricMaterial.totalThermalConductivity_pos",
+     "kind": "lemma",
+     "line": 146,
+     "doc": "The total thermal conductivity is positive.",
+     "statement": "lemma totalThermalConductivity_pos (M : ThermoelectricMaterial) :\n    0 < M.totalThermalConductivity",
+     "sorry": false
+    },
+    {
+     "name": "CondensedMatter.ThermoelectricMaterial.figureOfMerit",
+     "kind": "def",
+     "line": 158,
+     "doc": "The dimensionless thermoelectric figure of merit\n`zT = PF · T / (κl + κe)` of a material at absolute temperature `T`.",
+     "statement": "def figureOfMerit (M : ThermoelectricMaterial) (T : ℝ) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "CondensedMatter.ThermoelectricMaterial.figureOfMerit_eq",
+     "kind": "lemma",
+     "line": 169,
+     "doc": "The figure of merit in its standard flat form\n`zT = σ S² T / (κl + κe)`.",
+     "statement": "lemma figureOfMerit_eq (M : ThermoelectricMaterial) (T : ℝ) :\n    M.figureOfMerit T = M.σ * M.S ^ 2 * T / (M.κl + M.κe)",
+     "sorry": false
+    },
+    {
+     "name": "CondensedMatter.ThermoelectricMaterial.figureOfMerit_pos",
+     "kind": "lemma",
+     "line": 182,
+     "doc": "The figure of merit is positive at positive temperature when the Seebeck\ncoefficient is nonzero.",
+     "statement": "lemma figureOfMerit_pos {M : ThermoelectricMaterial} {T : ℝ}\n    (hS : M.S ≠ 0) (hT : 0 < T) :\n    0 < M.figureOfMerit T",
+     "sorry": false
+    },
+    {
+     "name": "CondensedMatter.ThermoelectricMaterial.figureOfMerit_le_of_le",
+     "kind": "lemma",
+     "line": 200,
+     "doc": "Lowering the lattice thermal conductivity raises the figure of merit: if\n`M.κl ≤ κl'` then the material with lattice conductivity `κl'` (all other\ncoefficients equal) has the smaller `zT`. This is the phonon-glass\nelectron-crystal design principle: scatter phonons without degrading\nelectronic transport. Note the hypotheses: no condition on the Seebeck\ncoefficient is needed, since monotonicity only requires the numerator\n`σ S² T` to be nonnegative.",
+     "statement": "lemma figureOfMerit_le_of_le (M : ThermoelectricMaterial) {κl' T : ℝ}\n    (hpos : 0 < κl') (h : M.κl ≤ κl') (hT : 0 ≤ T) :\n    figureOfMerit { M with κl := κl', κl_pos := hpos } T ≤ M.figureOfMerit T",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/CondensedMatter/TightBindingChain/Basic.lean",
+   "module": "Physlib.CondensedMatter.TightBindingChain.Basic",
+   "title": "The tight binding chain",
+   "doc": "## i. Overview\n\nThe tight binding chain corresponds to an electron in motion\nin a 1d solid with the assumption the electron can sit only on the atoms of the solid.\n\nThe solid is assumed to consist of `N` sites with a separation of `a` between them\n\nMathematically, the tight binding chain corresponds to a\nQM problem located on a lattice with only self and nearest neighbour interactions,\nwith periodic boundary conditions.\n\n## ii. Key results\n\n- `TightBindingChain` : The physical parameters making up the tight binding chain.\n- `localizedState` : The orthonormal basis of localized states.\n- `hamiltonian` : The Hamiltonian of the tight binding chain.\n- `BrillouinZone` : The Brillouin zone of the tight binding chain.\n- `QuantaWaveNumber` : The quantized wavenumbers of the energy eigenstates.\n- `energyEigenstate` : The energy eigenstates of the tight binding chain.\n- `energyEigenbasis` : The orthonormal basis of normalized energy eigenstates.\n- `energyEigenvalue` : The energy eigenvalues of the tight binding chain.\n- `hamiltonian_energyEigenstate` : The Hamiltonian acting on an energy eigenstate\n  gives the corresponding energy eigenvalue times the energy eigenstate.\n- `hasEigenvalue_hamiltonian_iff` : The eigenvalues of the Hamiltonian are exactly the\n  energy eigenvalues.\n\n## iii. Table of contents\n\n- A. The setup\n  - A.1. The input data for the tight binding chain\n  - A.2. The Hilbert space\n- B. The localized states\n  - B.1. The orthonormal basis of localized states\n  - B.2. Notation for localized states\n  - B.3. Orthonormality of the localized states\n- C. The operator `|m⟩⟨n|`\n  - C.1. Definition of the operator `|m⟩⟨n|`\n  - C.2. Notation for the operator `|m⟩⟨n|`\n  - C.3. The operator `|m⟩⟨n|` applied to a localized state\n- D. The Hamiltonian of the tight binding chain\n  - D.1. Hermiticity of the Hamiltonian\n  - D.2. Hamiltonian applied to a localized state\n  - D.3. Mean energy of a localized state\n- E. The Brillouin zone and quantized wavenumbers\n  - E.1. The Brillouin zone\n  - E.2. The quantized wavenumbers of the energy eigenstates\n  - E.3. Wavenumbers lie in the Brillouin zone\n  - E.4. Expotentials related to the quantized wavenumbers\n- F. The energy eigenstates and eigenvalues\n  - F.1. The energy eigenstates\n  - F.2. Orthonormality of the energy eigenstates\n  - F.3. The energy eigenvalues\n  - F.4. The time-independent Schrodinger equation\n  - F.5. The spectrum of the Hamiltonian\n\n## iv. References\n\n* https://www.damtp.cam.ac.uk/user/tong/aqm/aqmtwo.pdf. [ref: tong_statistical_physics]",
+   "copyright": "2025 Joseph Tooby-Smith",
+   "sections": [
+    {
+     "line": 79,
+     "text": "## A. The setup"
+    },
+    {
+     "line": 85,
+     "text": "### A.1. The input data for the tight binding chain"
+    },
+    {
+     "line": 110,
+     "text": "### A.2. The Hilbert space"
+    },
+    {
+     "line": 125,
+     "text": "## B. The localized states\n\nLocalized states correspond to the electron being located on a specific site in the chain."
+    },
+    {
+     "line": 133,
+     "text": "### B.1. The orthonormal basis of localized states"
+    },
+    {
+     "line": 144,
+     "text": "### B.2. Notation for localized states"
+    },
+    {
+     "line": 156,
+     "text": "### B.3. Orthonormality of the localized states"
+    },
+    {
+     "line": 169,
+     "text": "## C. The operator `|m⟩⟨n|`"
+    },
+    {
+     "line": 175,
+     "text": "### C.1. Definition of the operator `|m⟩⟨n|`"
+    },
+    {
+     "line": 188,
+     "text": "### C.2. Notation for the operator `|m⟩⟨n|`"
+    },
+    {
+     "line": 197,
+     "text": "### C.3. The operator `|m⟩⟨n|` applied to a localized state"
+    },
+    {
+     "line": 214,
+     "text": "## D. The Hamiltonian of the tight binding chain"
+    },
+    {
+     "line": 227,
+     "text": "### D.1. Hermiticity of the Hamiltonian"
+    },
+    {
+     "line": 247,
+     "text": "### D.2. Hamiltonian applied to a localized state"
+    },
+    {
+     "line": 263,
+     "text": "### D.3. Mean energy of a localized state"
+    },
+    {
+     "line": 279,
+     "text": "## E. The Brillouin zone and quantized wavenumbers"
+    },
+    {
+     "line": 285,
+     "text": "### E.1. The Brillouin zone"
+    },
+    {
+     "line": 295,
+     "text": "### E.2. The quantized wavenumbers of the energy eigenstates"
+    },
+    {
+     "line": 318,
+     "text": "### E.3. Wavenumbers lie in the Brillouin zone"
+    },
+    {
+     "line": 344,
+     "text": "### E.4. Expotentials related to the quantized wavenumbers"
+    },
+    {
+     "line": 408,
+     "text": "## F. The energy eigenstates and eigenvalues"
+    },
+    {
+     "line": 414,
+     "text": "### F.1. The energy eigenstates"
+    },
+    {
+     "line": 446,
+     "text": "### F.2. Orthonormality of the energy eigenstates"
+    },
+    {
+     "line": 547,
+     "text": "### F.3. The energy eigenvalues"
+    },
+    {
+     "line": 558,
+     "text": "### F.4. The time-independent Schrodinger equation"
+    },
+    {
+     "line": 607,
+     "text": "### F.5. The spectrum of the Hamiltonian"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "CondensedMatter.TightBindingChain",
+     "kind": "structure",
+     "line": 92,
+     "doc": "The physical parameters making up the tight binding chain.",
+     "statement": "structure TightBindingChain where\n  /-- The number of sites, or atoms, in the chain -/\n  N : Nat\n  [N_ne_zero : NeZero N]\n  /-- The distance between the sites -/\n  a : ℝ\n  a_pos : 0 < a\n  /-- The energy associate with a particle sitting at a fixed site. -/\n  E0 : ℝ\n  /-- The hopping parameter. -/\n  t : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 108,
+     "doc": "",
+     "statement": "instance : NeZero T.N",
+     "sorry": false
+    },
+    {
+     "name": "CondensedMatter.TightBindingChain.HilbertSpace",
+     "kind": "abbrev",
+     "line": 118,
+     "doc": "The Hilbert space of a `TightBindingchain` is the `N`-dimensional finite dimensional\nHilbert space.",
+     "statement": "abbrev HilbertSpace",
+     "sorry": false
+    },
+    {
+     "name": "CondensedMatter.TightBindingChain.finrank_hilbertSpace",
+     "kind": "lemma",
+     "line": 121,
+     "doc": "The Hilbert space of the chain has dimension `N`.",
+     "statement": "lemma finrank_hilbertSpace : Module.finrank ℂ T.HilbertSpace = T.N",
+     "sorry": false
+    },
+    {
+     "name": "CondensedMatter.TightBindingChain.localizedState",
+     "kind": "def",
+     "line": 140,
+     "doc": "The eigenstate corresponding to the particle been located on the `n`th site.",
+     "statement": "noncomputable def localizedState {T : TightBindingChain} :\n    OrthonormalBasis (Fin T.N) ℂ (HilbertSpace T)",
+     "sorry": false
+    },
+    {
+     "name": "CondensedMatter.TightBindingChain.localizedState_orthonormal",
+     "kind": "lemma",
+     "line": 163,
+     "doc": "The localized states are normalized.",
+     "statement": "lemma localizedState_orthonormal : Orthonormal ℂ (localizedState (T := T))",
+     "sorry": false
+    },
+    {
+     "name": "CondensedMatter.TightBindingChain.localizedState_orthonormal_eq_ite",
+     "kind": "lemma",
+     "line": 166,
+     "doc": "",
+     "statement": "lemma localizedState_orthonormal_eq_ite (m n : Fin T.N) :\n    ⟨m|n⟩ = if m = n then 1 else 0",
+     "sorry": false
+    },
+    {
+     "name": "CondensedMatter.TightBindingChain.localizedComp",
+     "kind": "def",
+     "line": 182,
+     "doc": "The linear map `|m⟩⟨n|` for `⟨n|` localized states.",
+     "statement": "noncomputable def localizedComp {T : TightBindingChain} (m n : Fin T.N) :\n    T.HilbertSpace →ₗ[ℂ] T.HilbertSpace",
+     "sorry": false
+    },
+    {
+     "name": "CondensedMatter.TightBindingChain.localizedComp_apply_localizedState",
+     "kind": "lemma",
+     "line": 202,
+     "doc": "",
+     "statement": "lemma localizedComp_apply_localizedState (m n p : Fin T.N) :",
+     "sorry": false
+    },
+    {
+     "name": "CondensedMatter.TightBindingChain.localizedComp_adjoint",
+     "kind": "lemma",
+     "line": 208,
+     "doc": "The adjoint of localizedComp |m⟩⟨n| is |n⟩⟨m|.",
+     "statement": "lemma localizedComp_adjoint (m n : Fin T.N) (ψ φ : T.HilbertSpace) :\n    ⟪|m⟩⟨n| ψ, φ⟫_ℂ = ⟪ψ, |n⟩⟨m| φ⟫_ℂ := by\n  simp only [localizedComp, LinearMap.coe_mk, AddHom.coe_mk, inner_smul_left, inner_smul_right,\n    inner_conj_symm]\n  ring",
+     "sorry": false
+    },
+    {
+     "name": "CondensedMatter.TightBindingChain.hamiltonian",
+     "kind": "def",
+     "line": 224,
+     "doc": "The Hamiltonian of the tight binding chain with periodic\nboundary conditions is given by `E₀ ∑ n, |n⟩⟨n| - t ∑ n, (|n⟩⟨n + 1| + |n + 1⟩⟨n|)`.\nThe periodic boundary conditions is manifested by the `+` in `n + 1` being\nwithin `Fin T.N` (that is modulo `T.N`).",
+     "statement": "noncomputable def hamiltonian : T.HilbertSpace →ₗ[ℂ] T.HilbertSpace",
+     "sorry": false
+    },
+    {
+     "name": "CondensedMatter.TightBindingChain.hamiltonian_hermitian",
+     "kind": "lemma",
+     "line": 234,
+     "doc": "The hamiltonian of the tight binding chain is hermitian.",
+     "statement": "lemma hamiltonian_hermitian (ψ φ : T.HilbertSpace) :\n    ⟪T.hamiltonian ψ, φ⟫_ℂ = ⟪ψ, T.hamiltonian φ⟫_ℂ",
+     "sorry": false
+    },
+    {
+     "name": "CondensedMatter.TightBindingChain.hamiltonian_apply_localizedState",
+     "kind": "lemma",
+     "line": 255,
+     "doc": "The Hamiltonian applied to the localized state `|n⟩` gives\n`T.E0 • |n⟩ - T.t • (|n + 1⟩ + |n - 1⟩)`.",
+     "statement": "lemma hamiltonian_apply_localizedState (n : Fin T.N) :\n    T.hamiltonian |n⟩ = (T.E0 : ℂ) • |n⟩ - (T.t : ℂ) • (|n + 1⟩ + |n - 1⟩) := by\n  simp only [hamiltonian, LinearMap.sub_apply, LinearMap.smul_apply, LinearMap.coe_sum,\n    Finset.sum_apply, LinearMap.add_apply, smul_add, Finset.sum_add_distrib,\n    localizedComp_apply_localizedState, ← eq_sub_iff_add_eq, Finset.sum_ite_eq', Finset.mem_univ,\n    ite_true]\n  module",
+     "sorry": false
+    },
+    {
+     "name": "CondensedMatter.TightBindingChain.energy_localizedState",
+     "kind": "lemma",
+     "line": 272,
+     "doc": "The energy of a localized state in the tight binding chain is `E0`.\nThis lemma assumes that there is more then one site in the chain otherwise the\nresult is not true.",
+     "statement": "lemma energy_localizedState (n : Fin T.N) (htn : 1 < T.N) : ⟪|n⟩, T.hamiltonian |n⟩⟫_ℂ = T.E0 := by\n  rw [hamiltonian_apply_localizedState]\n  simp only [smul_add, inner_sub_right, inner_add_right, inner_smul_right,\n    localizedState_orthonormal_eq_ite, ↓reduceIte, mul_one, left_eq_add, eq_sub_iff_add_eq,\n    add_eq_left, Fin.one_eq_zero_iff, mul_ite, mul_zero, sub_eq_self]\n  simp [show T.N ≠ 1 from by omega]",
+     "sorry": false
+    },
+    {
+     "name": "CondensedMatter.TightBindingChain.BrillouinZone",
+     "kind": "def",
+     "line": 293,
+     "doc": "The Brillouin zone of the tight binding model is `[-π/a, π/a)`.\nThis is the set in which wave functions are uniquely defined.",
+     "statement": "noncomputable def BrillouinZone : Set ℝ",
+     "sorry": false
+    },
+    {
+     "name": "CondensedMatter.TightBindingChain.QuantaWaveNumber",
+     "kind": "def",
+     "line": 304,
+     "doc": "The wavenumbers associated with the energy eigenstates.\nThis corresponds to the set `2 π / (a N) * (n - ⌊N/2⌋)` for `n : Fin T.N`.\nIt is defined as such so it sits in the Brillouin zone.",
+     "statement": "def QuantaWaveNumber : Set ℝ",
+     "sorry": false
+    },
+    {
+     "name": "CondensedMatter.TightBindingChain.quantaWaveNumber",
+     "kind": "def",
+     "line": 308,
+     "doc": "The quantized wavenumber `2 π / (a N) * (n - ⌊N/2⌋)` of the index `n`.",
+     "statement": "noncomputable def quantaWaveNumber (n : Fin T.N) : T.QuantaWaveNumber",
+     "sorry": false
+    },
+    {
+     "name": "CondensedMatter.TightBindingChain.quantaWaveNumber_injective",
+     "kind": "lemma",
+     "line": 311,
+     "doc": "Distinct indices give distinct quantized wavenumbers.",
+     "statement": "lemma quantaWaveNumber_injective : Function.Injective T.quantaWaveNumber",
+     "sorry": false
+    },
+    {
+     "name": "CondensedMatter.TightBindingChain.quantaWaveNumber_subset_brillouinZone",
+     "kind": "lemma",
+     "line": 325,
+     "doc": "The quantized wavenumbers form a subset of the `BrillouinZone`.",
+     "statement": "lemma quantaWaveNumber_subset_brillouinZone : T.QuantaWaveNumber ⊆ T.BrillouinZone",
+     "sorry": false
+    },
+    {
+     "name": "CondensedMatter.TightBindingChain.quantaWaveNumber_exp_N",
+     "kind": "lemma",
+     "line": 350,
+     "doc": "",
+     "statement": "lemma quantaWaveNumber_exp_N (n : ℕ) (k : T.QuantaWaveNumber) :\n    Complex.exp (Complex.I * k * n * T.N * T.a) = 1",
+     "sorry": false
+    },
+    {
+     "name": "CondensedMatter.TightBindingChain.quantaWaveNumber_exp_sub_one",
+     "kind": "lemma",
+     "line": 361,
+     "doc": "",
+     "statement": "lemma quantaWaveNumber_exp_sub_one (n : Fin T.N) (k : T.QuantaWaveNumber) :\n    Complex.exp (Complex.I * k * (n - 1).val * T.a) =\n    Complex.exp (Complex.I * k * n * T.a) * Complex.exp (- Complex.I * k * T.a)",
+     "sorry": false
+    },
+    {
+     "name": "CondensedMatter.TightBindingChain.quantaWaveNumber_exp_add_one",
+     "kind": "lemma",
+     "line": 400,
+     "doc": "",
+     "statement": "lemma quantaWaveNumber_exp_add_one (n : Fin T.N) (k : T.QuantaWaveNumber) :\n    Complex.exp (Complex.I * k * (n + 1).val * T.a) =\n    Complex.exp (Complex.I * k * n * T.a) * Complex.exp (Complex.I * k * T.a)",
+     "sorry": false
+    },
+    {
+     "name": "CondensedMatter.TightBindingChain.energyEigenstate",
+     "kind": "def",
+     "line": 422,
+     "doc": "The energy eigenstates of the tight binding chain They are given by\n`∑ n, exp (I * k * n * T.a) • |n⟩`.",
+     "statement": "noncomputable def energyEigenstate (k : T.QuantaWaveNumber) : T.HilbertSpace",
+     "sorry": false
+    },
+    {
+     "name": "CondensedMatter.TightBindingChain.energyEigenstate_ne_zero",
+     "kind": "lemma",
+     "line": 426,
+     "doc": "An energy eigenstate is not zero.",
+     "statement": "lemma energyEigenstate_ne_zero (k : T.QuantaWaveNumber) : T.energyEigenstate k ≠ 0",
+     "sorry": false
+    },
+    {
+     "name": "CondensedMatter.TightBindingChain.energyEigenstate_inner_self",
+     "kind": "lemma",
+     "line": 433,
+     "doc": "The inner product of an energy eigenstate with itself is `N`.",
+     "statement": "lemma energyEigenstate_inner_self (k : T.QuantaWaveNumber) :\n    ⟪T.energyEigenstate k, T.energyEigenstate k⟫_ℂ = T.N",
+     "sorry": false
+    },
+    {
+     "name": "CondensedMatter.TightBindingChain.energyEigenstate_orthogonal",
+     "kind": "lemma",
+     "line": 460,
+     "doc": "The energy eigenstates of the tight binding chain are orthogonal.\n\nThis is a fundamental quantum mechanical result: eigenstates of a Hermitian operator\n(the Hamiltonian) with distinct eigenvalues are orthogonal. Here we prove it directly\nusing the periodic boundary conditions which quantize the wavenumbers.\n\nThe key physical insight is that different wavenumbers k₁ ≠ k₂ give rise to different\nN-th roots of unity exp(i(k₂-k₁)a), and the sum of all N-th roots of unity equals zero.",
+     "statement": "lemma energyEigenstate_orthogonal :\n    Pairwise fun k1 k2 => ⟪T.energyEigenstate k1, T.energyEigenstate k2⟫_ℂ = 0",
+     "sorry": false
+    },
+    {
+     "name": "CondensedMatter.TightBindingChain.energyEigenstate_linearIndependent",
+     "kind": "lemma",
+     "line": 497,
+     "doc": "The energy eigenstates are linearly independent.",
+     "statement": "lemma energyEigenstate_linearIndependent :\n    LinearIndependent ℂ (fun n : Fin T.N => T.energyEigenstate (T.quantaWaveNumber n))",
+     "sorry": false
+    },
+    {
+     "name": "CondensedMatter.TightBindingChain.energyEigenstate_span",
+     "kind": "lemma",
+     "line": 504,
+     "doc": "The energy eigenstates span the Hilbert space.",
+     "statement": "lemma energyEigenstate_span :\n    ⊤ ≤ Submodule.span ℂ (Set.range fun n : Fin T.N =>\n      T.energyEigenstate (T.quantaWaveNumber n))",
+     "sorry": false
+    },
+    {
+     "name": "CondensedMatter.TightBindingChain.energyEigenstate_orthonormal",
+     "kind": "lemma",
+     "line": 511,
+     "doc": "The normalized energy eigenstates `N ^ (-1/2) • energyEigenstate k` are orthonormal.",
+     "statement": "lemma energyEigenstate_orthonormal :\n    Orthonormal ℂ (fun n : Fin T.N =>\n      (((Real.sqrt T.N)⁻¹ : ℝ) : ℂ) • T.energyEigenstate (T.quantaWaveNumber n))",
+     "sorry": false
+    },
+    {
+     "name": "CondensedMatter.TightBindingChain.energyEigenbasis",
+     "kind": "def",
+     "line": 533,
+     "doc": "The normalized energy eigenstates form an orthonormal basis of the Hilbert space.",
+     "statement": "noncomputable def energyEigenbasis : OrthonormalBasis (Fin T.N) ℂ T.HilbertSpace",
+     "sorry": false
+    },
+    {
+     "name": "CondensedMatter.TightBindingChain.energyEigenbasis_apply",
+     "kind": "lemma",
+     "line": 542,
+     "doc": "The `n`-th vector of the basis is the normalized energy eigenstate of the `n`-th\nwavenumber.",
+     "statement": "lemma energyEigenbasis_apply (n : Fin T.N) :\n    T.energyEigenbasis n =\n      (((Real.sqrt T.N)⁻¹ : ℝ) : ℂ) • T.energyEigenstate (T.quantaWaveNumber n)",
+     "sorry": false
+    },
+    {
+     "name": "CondensedMatter.TightBindingChain.energyEigenvalue",
+     "kind": "def",
+     "line": 555,
+     "doc": "The energy eigenvalue of the tight binding chain for a `k` in `QuantaWaveNumber` is\n`E0 - 2 * t * Real.cos (k * T.a)`.",
+     "statement": "noncomputable def energyEigenvalue (k : T.QuantaWaveNumber) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "CondensedMatter.TightBindingChain.hamiltonian_energyEigenstate",
+     "kind": "lemma",
+     "line": 565,
+     "doc": "The energy eigenstates satisfy the time-independent Schrodinger equation.",
+     "statement": "lemma hamiltonian_energyEigenstate (k : T.QuantaWaveNumber) :\n    T.hamiltonian (T.energyEigenstate k) = T.energyEigenvalue k• T.energyEigenstate k",
+     "sorry": false
+    },
+    {
+     "name": "CondensedMatter.TightBindingChain.hasEigenvalue_hamiltonian_iff",
+     "kind": "lemma",
+     "line": 615,
+     "doc": "The eigenvalues of the Hamiltonian are exactly the energies `E0 - 2 t cos (k a)` of the\nquantized wavenumbers.",
+     "statement": "lemma hasEigenvalue_hamiltonian_iff (E : ℂ) :\n    Module.End.HasEigenvalue T.hamiltonian E ↔\n      ∃ k : T.QuantaWaveNumber, E = T.energyEigenvalue k",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/CondensedMatter/Topology/Basic.lean",
+   "module": "Physlib.CondensedMatter.Topology.Basic",
+   "title": "A. Topological condensed matter",
+   "doc": "This module provides a home for topological invariants of bands, Chern and topological\ninsulators, Weyl and nodal semimetals, topological superconductors, symmetry-protected phases,\nand interacting topological phases. It distinguishes local band geometry from global\ntopological invariants.",
+   "copyright": "2026 Wahaj Ayub",
+   "sections": [],
+   "declarations": [],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  }
+ ]
+}

@@ -1,0 +1,4329 @@
+{
+ "schema": "trough-physlib/v1",
+ "rev": "2a1dfe43134b49b643642f13d33031754021bb5d",
+ "modules": [
+  {
+   "file": "Physlib/Units/Basic.lean",
+   "module": "Physlib.Units.Basic",
+   "title": "Dimensions and unit",
+   "doc": "A unit in physics arises from choice of something in physics which is non-canonical.\nAn example is the choice of translationally-invariant metric on the time manifold `TimeMan`.\n\nA dimension is a property of a quantity related to how it changes with respect to a\nchange in the unit.\n\nThe fundamental choices one has in physics are related to:\n- Time\n- Length\n- Mass\n- Charge\n- Temperature\n\n(In fact temperature is not really a fundamental choice, however we leave this as a `TODO`.)\n\nFrom these fundamental choices one can construct all other units and dimensions.\n\n## Implementation details\n\nUnits within Physlib are implemented with the following convention:\n- The fundamental units, and the choices they correspond to, are defined within the\n  appropriate physics directory, in particular:\n  - `Physlib/SpaceAndTime/Time/TimeUnit.lean`\n  - `Physlib/SpaceAndTime/Space/LengthUnit.lean`\n  - `Physlib/ClassicalMechanics/Mass/MassUnit.lean`\n  - `Physlib/Electromagnetism/Charge/ChargeUnit.lean`\n  - `Physlib/Thermodynamics/Temperature/TemperatureUnit.lean`\n- In this `Units` directory, we define the necessary structures and properties\n  to work derived units and dimensions.\n\n## References\n\nZulip chats discussing units:\n\n* https://leanprover.zulipchat.com/#narrow/channel/479953-Physlib/topic/physical.20units.\n* https://leanprover.zulipchat.com/#narrow/channel/116395-maths/topic/Dimensional.20Analysis.20Revisited/with/530238303.\n\n## Note\n\nA lot of the results around units is still experimental and should be adapted based on needs.\n\n## Other implementations of units\n\nThere are other implementations of units in Lean, in particular:\n1. https://github.com/ATOMSLab/LeanDimensionalAnalysis/tree/main\n2. https://github.com/teorth/analysis/blob/main/analysis/Analysis/Misc/SI.lean\n3. https://github.com/ecyrbe/lean-units\nEach of these have their own advantages and specific use-cases.\nFor example both (1) and (3) allow for or work in Floats, allowing computability and the use\nof `#eval`. This is currently not possible with the more theoretical implementation here\nin Physlib which is based exclusively on Reals.",
+   "copyright": "2025 Joseph Tooby-Smith",
+   "sections": [
+    {
+     "line": 76,
+     "text": "## Units"
+    },
+    {
+     "line": 330,
+     "text": "## Types carrying dimensions\n\nDimensions are assigned to types with the following type-classes\n\n- `HasDim` for any type `M` with an associated dimension\n- `CarriesDimension` for a type that also has an instance of `MulAction ℝ≥0ˣ M`, that is an\n  action of the strictly positive reals\n\nChanging units rescales a quantity by a strictly positive factor: a length in metres is the same\nlength in feet times `0.3048`, and no change of units ever scales by zero. The strictly positive\nreals `ℝ≥0ˣ` are therefore the natural scalars here, and `LTMCTUnitChoices.dimScaleUnits` records\nthe factor. Taking them rather than `ℝ≥0` is what lets a type whose elements are strictly\npositive, such as `SpeedOfLight`, carry a dimension: on such a type a scaling compatible with\nthe magnitude, that is one satisfying `val (a • x) = a * val x`, cannot exist at `a = 0`, since\n`val` is strictly positive.\n\nA type with an action of `ℝ≥0`, such as `ℝ` or any real vector space, obtains the action of\n`ℝ≥0ˣ` by restriction, and so carries a dimension as soon as it has a `HasDim` instance. A\ndeclaration about such types should assume `[HasDim M]` and `[MulAction ℝ≥0 M]`, never\n`[CarriesDimension M]` and `[MulAction ℝ≥0 M]` together: the latter pair puts two unrelated\nactions of `ℝ≥0ˣ` in scope and proofs about the scaling get stuck. Where both actions genuinely\ncoexist, as on `Dimensionful M` below, the declared one and the one restricted from `ℝ≥0` agree\ndefinitionally.\n\nSeveral statements below therefore come in two forms: the plain name carries the `ℝ≥0` statement,\nwhich the concrete unit calculations use, and the suffix `_units` the `ℝ≥0ˣ` statement, which\nholds for every type carrying a dimension."
+    },
+    {
+     "line": 374,
+     "text": "## Terms of the current dimension\n\nGiven a type `M` which carries a dimension `d`,\nwe are interested in elements of `M` which depend on a choice of units, i.e. functions\n`LTMCTUnitChoices → M`.\n\nWe define both a proposition\n- `HasDimension f` which says that `f` scales correctly with units,\nand a type\n- `Dimensionful M` which is the subtype of functions which `HasDimension`."
+    }
+   ],
+   "declarations": [
+    {
+     "name": "LTMCTUnitChoices",
+     "kind": "structure",
+     "line": 85,
+     "doc": "The choice of units.",
+     "statement": "structure LTMCTUnitChoices where\n  /-- The length unit. -/\n  length : LengthUnit\n  /-- The time unit. -/\n  time : TimeUnit\n  /-- The mass unit. -/\n  mass : MassUnit\n  /-- The charge unit. -/\n  charge : ChargeUnit\n  /-- The temperature unit. -/\n  temperature : TemperatureUnit",
+     "sorry": false
+    },
+    {
+     "name": "LTMCTUnitChoices.dimScale",
+     "kind": "def",
+     "line": 102,
+     "doc": "Given two choices of units `u1` and `u2` and a dimension `d`, the\nelement of `ℝ≥0` corresponding to the scaling (by definition) of a quantity of dimension `d`\nwhen changing from units `u1` to `u2`.",
+     "statement": "noncomputable def dimScale (u1 u2 : LTMCTUnitChoices) :Dimension LTMCTDimensionBase →* ℝ≥0",
+     "sorry": false
+    },
+    {
+     "name": "LTMCTUnitChoices.dimScale_apply",
+     "kind": "lemma",
+     "line": 117,
+     "doc": "",
+     "statement": "lemma dimScale_apply (u1 u2 : LTMCTUnitChoices) (d : Dimension LTMCTDimensionBase) :\n    dimScale u1 u2 d =\n      (u1.length / u2.length) ^ (d.length : ℝ) *\n      (u1.time / u2.time) ^ (d.time : ℝ) *\n      (u1.mass / u2.mass) ^ (d.mass : ℝ) *\n      (u1.charge / u2.charge) ^ (d.charge : ℝ) *\n      (u1.temperature / u2.temperature) ^ (d.temperature : ℝ)",
+     "sorry": false
+    },
+    {
+     "name": "LTMCTUnitChoices.dimScale_self",
+     "kind": "lemma",
+     "line": 126,
+     "doc": "",
+     "statement": "lemma dimScale_self (u : LTMCTUnitChoices) (d : Dimension LTMCTDimensionBase) :\n    dimScale u u d = 1",
+     "sorry": false
+    },
+    {
+     "name": "LTMCTUnitChoices.dimScale_one",
+     "kind": "lemma",
+     "line": 131,
+     "doc": "",
+     "statement": "lemma dimScale_one (u1 u2 : LTMCTUnitChoices) :\n    dimScale u1 u2 1 = 1",
+     "sorry": false
+    },
+    {
+     "name": "LTMCTUnitChoices.dimScale_L𝓭",
+     "kind": "lemma",
+     "line": 136,
+     "doc": "The scale factor of the dimension of length is the ratio of the length units.",
+     "statement": "lemma dimScale_L𝓭 (u1 u2 : LTMCTUnitChoices) :\n    dimScale u1 u2 Dimension.L𝓭 = u1.length / u2.length",
+     "sorry": false
+    },
+    {
+     "name": "LTMCTUnitChoices.dimScale_T𝓭",
+     "kind": "lemma",
+     "line": 141,
+     "doc": "The scale factor of the dimension of time is the ratio of the time units.",
+     "statement": "lemma dimScale_T𝓭 (u1 u2 : LTMCTUnitChoices) :\n    dimScale u1 u2 Dimension.T𝓭 = u1.time / u2.time",
+     "sorry": false
+    },
+    {
+     "name": "LTMCTUnitChoices.dimScale_M𝓭",
+     "kind": "lemma",
+     "line": 146,
+     "doc": "The scale factor of the dimension of mass is the ratio of the mass units.",
+     "statement": "lemma dimScale_M𝓭 (u1 u2 : LTMCTUnitChoices) :\n    dimScale u1 u2 Dimension.M𝓭 = u1.mass / u2.mass",
+     "sorry": false
+    },
+    {
+     "name": "LTMCTUnitChoices.dimScale_Θ𝓭",
+     "kind": "lemma",
+     "line": 151,
+     "doc": "The scale factor of the dimension of temperature is the ratio of the temperature units.",
+     "statement": "lemma dimScale_Θ𝓭 (u1 u2 : LTMCTUnitChoices) :\n    dimScale u1 u2 Dimension.Θ𝓭 = u1.temperature / u2.temperature",
+     "sorry": false
+    },
+    {
+     "name": "LTMCTUnitChoices.dimScale_transitive",
+     "kind": "lemma",
+     "line": 155,
+     "doc": "",
+     "statement": "lemma dimScale_transitive (u1 u2 u3 : LTMCTUnitChoices) (d : Dimension LTMCTDimensionBase) :\n    dimScale u1 u2 d * dimScale u2 u3 d = dimScale u1 u3 d",
+     "sorry": false
+    },
+    {
+     "name": "LTMCTUnitChoices.dimScale_mul_symm",
+     "kind": "lemma",
+     "line": 171,
+     "doc": "",
+     "statement": "lemma dimScale_mul_symm (u1 u2 : LTMCTUnitChoices) (d : Dimension LTMCTDimensionBase) :\n    dimScale u1 u2 d * dimScale u2 u1 d = 1",
+     "sorry": false
+    },
+    {
+     "name": "LTMCTUnitChoices.dimScale_coe_mul_symm",
+     "kind": "lemma",
+     "line": 176,
+     "doc": "",
+     "statement": "lemma dimScale_coe_mul_symm (u1 u2 : LTMCTUnitChoices) (d : Dimension LTMCTDimensionBase) :\n    (toReal (dimScale u1 u2 d)) * (toReal (dimScale u2 u1 d)) = 1",
+     "sorry": false
+    },
+    {
+     "name": "LTMCTUnitChoices.dimScale_ne_zero",
+     "kind": "lemma",
+     "line": 183,
+     "doc": "",
+     "statement": "lemma dimScale_ne_zero (u1 u2 : LTMCTUnitChoices) (d : Dimension LTMCTDimensionBase) :\n    dimScale u1 u2 d ≠ 0",
+     "sorry": false
+    },
+    {
+     "name": "LTMCTUnitChoices.dimScale_symm",
+     "kind": "lemma",
+     "line": 187,
+     "doc": "",
+     "statement": "lemma dimScale_symm (u1 u2 : LTMCTUnitChoices) (d : Dimension LTMCTDimensionBase) :\n    dimScale u1 u2 d = (dimScale u2 u1 d)⁻¹",
+     "sorry": false
+    },
+    {
+     "name": "LTMCTUnitChoices.dimScale_of_inv_eq_swap",
+     "kind": "lemma",
+     "line": 197,
+     "doc": "",
+     "statement": "lemma dimScale_of_inv_eq_swap (u1 u2 : LTMCTUnitChoices) (d : Dimension LTMCTDimensionBase) :\n    dimScale u1 u2 d⁻¹ = dimScale u2 u1 d",
+     "sorry": false
+    },
+    {
+     "name": "LTMCTUnitChoices.smul_dimScale_injective",
+     "kind": "lemma",
+     "line": 203,
+     "doc": "",
+     "statement": "lemma smul_dimScale_injective {M : Type} [MulAction ℝ≥0 M] (u1 u2 : LTMCTUnitChoices)\n    (d : Dimension LTMCTDimensionBase) (m1 m2 : M) :\n    (u1.dimScale u2 d) • m1 = (u1.dimScale u2 d) • m2 ↔ m1 = m2",
+     "sorry": false
+    },
+    {
+     "name": "LTMCTUnitChoices.dimScale_pos",
+     "kind": "lemma",
+     "line": 212,
+     "doc": "",
+     "statement": "lemma dimScale_pos (u1 u2 : LTMCTUnitChoices) (d : Dimension LTMCTDimensionBase) :\n    0 < (dimScale u1 u2 d)",
+     "sorry": false
+    },
+    {
+     "name": "LTMCTUnitChoices.dimScaleUnits",
+     "kind": "def",
+     "line": 230,
+     "doc": "The scaling factor `dimScale u1 u2 d` regarded as a unit of `ℝ≥0`, that is as a strictly\npositive real. Dimensionful quantities are scaled by this rather than by `dimScale u1 u2 d`\nitself, so that a type whose elements are strictly positive, such as `SpeedOfLight`, can carry\na dimension: no action of `ℝ≥0` on such a type can be compatible with the magnitude, since\ncompatibility at `a = 0` would give `val (0 • m) = 0` while `val` is strictly positive.",
+     "statement": "noncomputable def dimScaleUnits (u1 u2 : LTMCTUnitChoices) (d : Dimension LTMCTDimensionBase) :\n    ℝ≥0ˣ",
+     "sorry": false
+    },
+    {
+     "name": "LTMCTUnitChoices.dimScaleUnits_coe",
+     "kind": "lemma",
+     "line": 235,
+     "doc": "",
+     "statement": "lemma dimScaleUnits_coe (u1 u2 : LTMCTUnitChoices) (d : Dimension LTMCTDimensionBase) :\n    ((dimScaleUnits u1 u2 d : ℝ≥0)) = dimScale u1 u2 d",
+     "sorry": false
+    },
+    {
+     "name": "LTMCTUnitChoices.dimScaleUnits_transitive",
+     "kind": "lemma",
+     "line": 239,
+     "doc": "",
+     "statement": "lemma dimScaleUnits_transitive (u1 u2 u3 : LTMCTUnitChoices)\n    (d : Dimension LTMCTDimensionBase) :\n    dimScaleUnits u1 u2 d * dimScaleUnits u2 u3 d = dimScaleUnits u1 u3 d",
+     "sorry": false
+    },
+    {
+     "name": "LTMCTUnitChoices.dimScaleUnits_smul",
+     "kind": "lemma",
+     "line": 247,
+     "doc": "Scaling by `dimScaleUnits` agrees with scaling by `dimScale` whenever the type also carries\nan action of `ℝ≥0`, so that statements phrased either way normalise to the same form.",
+     "statement": "lemma dimScaleUnits_smul {M : Type} [MulAction ℝ≥0 M] (u1 u2 : LTMCTUnitChoices)\n    (d : Dimension LTMCTDimensionBase) (m : M) :\n    dimScaleUnits u1 u2 d • m = dimScale u1 u2 d • m",
+     "sorry": false
+    },
+    {
+     "name": "LTMCTUnitChoices.dimScaleUnits_mul_dim",
+     "kind": "lemma",
+     "line": 252,
+     "doc": "",
+     "statement": "lemma dimScaleUnits_mul_dim (u1 u2 : LTMCTUnitChoices)\n    (d1 d2 : Dimension LTMCTDimensionBase) :\n    dimScaleUnits u1 u2 (d1 * d2) = dimScaleUnits u1 u2 d1 * dimScaleUnits u1 u2 d2",
+     "sorry": false
+    },
+    {
+     "name": "LTMCTUnitChoices.dimScaleUnits_self",
+     "kind": "lemma",
+     "line": 259,
+     "doc": "",
+     "statement": "lemma dimScaleUnits_self (u : LTMCTUnitChoices) (d : Dimension LTMCTDimensionBase) :\n    dimScaleUnits u u d = 1",
+     "sorry": false
+    },
+    {
+     "name": "LTMCTUnitChoices.SI",
+     "kind": "def",
+     "line": 274,
+     "doc": "The choice of units corresponding to SI units, that is\n- meters,\n- seconds,\n- kilograms,\n- coulombs,\n- kelvin.",
+     "statement": "noncomputable def SI : LTMCTUnitChoices",
+     "sorry": false
+    },
+    {
+     "name": "LTMCTUnitChoices.SI_length",
+     "kind": "lemma",
+     "line": 282,
+     "doc": "",
+     "statement": "lemma SI_length : SI.length = LengthUnit.meters",
+     "sorry": false
+    },
+    {
+     "name": "LTMCTUnitChoices.SI_time",
+     "kind": "lemma",
+     "line": 285,
+     "doc": "",
+     "statement": "lemma SI_time : SI.time = TimeUnit.seconds",
+     "sorry": false
+    },
+    {
+     "name": "LTMCTUnitChoices.SI_mass",
+     "kind": "lemma",
+     "line": 288,
+     "doc": "",
+     "statement": "lemma SI_mass : SI.mass = MassUnit.kilograms",
+     "sorry": false
+    },
+    {
+     "name": "LTMCTUnitChoices.SI_charge",
+     "kind": "lemma",
+     "line": 291,
+     "doc": "",
+     "statement": "lemma SI_charge : SI.charge = ChargeUnit.coulombs",
+     "sorry": false
+    },
+    {
+     "name": "LTMCTUnitChoices.SI_temperature",
+     "kind": "lemma",
+     "line": 294,
+     "doc": "",
+     "statement": "lemma SI_temperature : SI.temperature = TemperatureUnit.kelvin",
+     "sorry": false
+    },
+    {
+     "name": "LTMCTUnitChoices.SIPrimed",
+     "kind": "def",
+     "line": 299,
+     "doc": "A `LTMCTUnitChoices` which is related to `SI` by a prime scaling of each\nof the underlying units. This is useful in proving that a result is not\ndimensionally correct.",
+     "statement": "noncomputable def SIPrimed : LTMCTUnitChoices",
+     "sorry": false
+    },
+    {
+     "name": "LTMCTUnitChoices.dimScale_SI_SIPrimed",
+     "kind": "lemma",
+     "line": 307,
+     "doc": "",
+     "statement": "lemma dimScale_SI_SIPrimed (d : Dimension LTMCTDimensionBase) :\n    dimScale SI SIPrimed d =\n      (2⁻¹ : ℝ≥0) ^ (d.length : ℝ) *\n      (3⁻¹ : ℝ≥0) ^ (d.time : ℝ) *\n      (5⁻¹ : ℝ≥0) ^ (d.mass : ℝ) *\n      (7⁻¹ : ℝ≥0) ^ (d.charge : ℝ) *\n      (11⁻¹ : ℝ≥0) ^ (d.temperature : ℝ)",
+     "sorry": false
+    },
+    {
+     "name": "LTMCTUnitChoices.dimScale_SIPrimed_SI",
+     "kind": "lemma",
+     "line": 318,
+     "doc": "",
+     "statement": "lemma dimScale_SIPrimed_SI (d : Dimension LTMCTDimensionBase) :\n    dimScale SIPrimed SI d =\n      (2 : ℝ≥0) ^ (d.length : ℝ) *\n      (3 : ℝ≥0) ^ (d.time : ℝ) *\n      (5 : ℝ≥0) ^ (d.mass : ℝ) *\n      (7 : ℝ≥0) ^ (d.charge : ℝ) *\n      (11 : ℝ≥0) ^ (d.temperature : ℝ)",
+     "sorry": false
+    },
+    {
+     "name": "HasDim",
+     "kind": "class",
+     "line": 364,
+     "doc": "This typeclass indicates that there is a dimension `dim M : Dimension`\nassociated with the type `M`.",
+     "statement": "class HasDim (M : Type) where\n  /-- The dimension associated with a type `M`. -/\n  d : Dimension LTMCTDimensionBase",
+     "sorry": false
+    },
+    {
+     "name": "dim",
+     "kind": "alias",
+     "line": 368,
+     "doc": "",
+     "statement": "alias dim",
+     "sorry": false
+    },
+    {
+     "name": "CarriesDimension",
+     "kind": "class",
+     "line": 372,
+     "doc": "A type `M` carries a dimension `d` if every element of `M` is supposed to have\nthis dimension. For example, the type `Time` will carry a dimension `T𝓭`.",
+     "statement": "class abbrev CarriesDimension (M : Type) := HasDim M, MulAction ℝ≥0ˣ M",
+     "sorry": false
+    },
+    {
+     "name": "HasDimension",
+     "kind": "def",
+     "line": 392,
+     "doc": "A quantity of type `M` which depends on a choice of units `LTMCTUnitChoices` is said to be\nof dimension `d` if it scales by `LTMCTUnitChoices.dimScaleUnits u1 u2 d` under a change in\nunits.",
+     "statement": "def HasDimension {M : Type} [CarriesDimension M] (f : LTMCTUnitChoices → M) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "hasDimension_iff",
+     "kind": "lemma",
+     "line": 395,
+     "doc": "",
+     "statement": "lemma hasDimension_iff {M : Type} [CarriesDimension M] (f : LTMCTUnitChoices → M) :\n    HasDimension f ↔ ∀ u1 u2 : LTMCTUnitChoices, f u2 =\n    LTMCTUnitChoices.dimScaleUnits u1 u2 (dim M) • f u1",
+     "sorry": false
+    },
+    {
+     "name": "Dimensionful",
+     "kind": "def",
+     "line": 402,
+     "doc": "The subtype of functions `LTMCTUnitChoices → M`, for which `M` carries a dimension,\nwhich `HasDimension`.",
+     "statement": "def Dimensionful (M : Type) [CarriesDimension M]",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 404,
+     "doc": "",
+     "statement": "instance {M : Type} [CarriesDimension M] :\n    CoeFun (Dimensionful M) (fun _ => LTMCTUnitChoices → M)",
+     "sorry": false
+    },
+    {
+     "name": "Dimensionful.ext",
+     "kind": "lemma",
+     "line": 409,
+     "doc": "",
+     "statement": "lemma Dimensionful.ext {M : Type} [CarriesDimension M] (f1 f2 : Dimensionful M)\n    (h : f1.val = f2.val) : f1 = f2",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 412,
+     "doc": "",
+     "statement": "instance {M : Type} [CarriesDimension M] : MulAction ℝ≥0ˣ (Dimensionful M)",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 427,
+     "doc": "When `M` itself carries an action of `ℝ≥0`, a dimensionful quantity of `M` may be scaled by\nany non-negative real, not only by a strictly positive one.",
+     "statement": "instance {M : Type} [HasDim M] [MulAction ℝ≥0 M] :\n    MulAction ℝ≥0 (Dimensionful M)",
+     "sorry": false
+    },
+    {
+     "name": "Dimensionful.smul_apply",
+     "kind": "lemma",
+     "line": 444,
+     "doc": "The value of a non-negative real scaling of a dimensionful quantity.",
+     "statement": "lemma Dimensionful.smul_apply {M : Type} [HasDim M] [MulAction ℝ≥0 M]\n    (a : ℝ≥0) (f : Dimensionful M) (u : LTMCTUnitChoices) :\n    (a • f).1 u = a • f.1 u",
+     "sorry": false
+    },
+    {
+     "name": "Dimensionful.smul_apply_units",
+     "kind": "lemma",
+     "line": 449,
+     "doc": "",
+     "statement": "lemma Dimensionful.smul_apply_units {M : Type} [CarriesDimension M]\n    (a : ℝ≥0ˣ) (f : Dimensionful M) (u : LTMCTUnitChoices) :\n    (a • f).1 u = a • f.1 u",
+     "sorry": false
+    },
+    {
+     "name": "CarriesDimension.toDimensionful",
+     "kind": "def",
+     "line": 455,
+     "doc": "For `M` carrying a dimension `d`, the equivalence between `M` and `Dimension M`,\ngiven a choice of units.",
+     "statement": "noncomputable def CarriesDimension.toDimensionful {M : Type} [CarriesDimension M]\n    (u : LTMCTUnitChoices) :\n    M ≃ Dimensionful M",
+     "sorry": false
+    },
+    {
+     "name": "CarriesDimension.toDimensionful_apply_apply_units",
+     "kind": "lemma",
+     "line": 473,
+     "doc": "The value of `toDimensionful`, scaled by `dimScaleUnits`. This is the general form, holding\nfor every type carrying a dimension.",
+     "statement": "lemma CarriesDimension.toDimensionful_apply_apply_units\n    {M : Type} [CarriesDimension M] (u1 u2 : LTMCTUnitChoices) (m : M) :\n    (toDimensionful u1 m).1 u2 = (u1.dimScaleUnits u2 (dim M)) • m",
+     "sorry": false
+    },
+    {
+     "name": "CarriesDimension.toDimensionful_apply_apply",
+     "kind": "lemma",
+     "line": 480,
+     "doc": "The value of `toDimensionful` for a type which also carries an action of `ℝ≥0`, phrased with\n`dimScale` in place of `dimScaleUnits`. This is the form the concrete unit calculations use.",
+     "statement": "lemma CarriesDimension.toDimensionful_apply_apply\n    {M : Type} [HasDim M] [MulAction ℝ≥0 M] (u1 u2 : LTMCTUnitChoices) (m : M) :\n    (toDimensionful u1 m).1 u2 = (u1.dimScale u2 (dim M)) • m",
+     "sorry": false
+    },
+    {
+     "name": "CarriesDimension.toDimensionful_apply_self",
+     "kind": "lemma",
+     "line": 487,
+     "doc": "Reading a quantity built by `toDimensionful u` back in the same unit choice `u` returns the\nvalue it was built from.",
+     "statement": "lemma CarriesDimension.toDimensionful_apply_self\n    {M : Type} [CarriesDimension M] (u : LTMCTUnitChoices) (m : M) :\n    toDimensionful u m u = m",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 2
+  },
+  {
+   "file": "Physlib/Units/Constants.lean",
+   "module": "Physlib.Units.Constants",
+   "title": "Physical constants",
+   "doc": "An index of the physical constants in Physlib, and the format of their files.\n\n## i. Overview\n\nEach constant has its own file, which this module imports. Use these constants instead of defining\nnew ones or writing out their values: a result in any units takes the type, such as\n`c : SpeedOfLight`, and the value in our world is `speedOfLight`. A new constant gets a file in the\nformat of section A, an import above, a row in the table below and an `example` in section B.\n\n## ii. Key results\n\n| Constant | Dimension | Value in SI units |\n|---|---|---|\n| `speedOfLight` | `L T⁻¹` | `299792458 m s⁻¹`, exact |\n| `boltzmannConstant` | `M L² T⁻² Θ⁻¹` | `1.380649 × 10⁻²³ J K⁻¹`, exact |\n\nNot yet in this format: `Constants.h`, `Constants.ℏ` and `ChargeUnit.elementaryCharge`.\n\n- `exists_units_constants_eq_one` : There are units in which the speed of light and the Boltzmann\n  constant are `1`.\n\n## iii. Table of contents\n\n- A. The format of a constant\n- B. Checked values\n- C. Planck units\n\n## iv. References\n\n* The defining constants of the SI. [ref: bipm_si_brochure_2019]\n\n## A. The format of a constant\n\nThe file of a constant with type `X` and value `x` has these sections, as in\n`Physlib/Relativity/SpeedOfLight.lean`.\n\n| Section | Contents |\n|---|---|\n| A. The type | `structure X` with fields `val : ℝ` and `pos : 0 < val` |\n| B. Instances | `X.instPositiveRealUnitCore`, `Coe X ℝ`, `X.positiveRealUnitCore_val` |\n| C. Positivity | `X.val_pos`, `X.val_nonneg`, `X.val_ne_zero` |\n| D. The dimension | `X.instHasDim` |\n| E. The value in our world | `x : Dimensionful X` and `x_in_SI` |\n| F. Specific to this constant | Optional, for example `One` or other forms of the constant |\n\nThe value `x` is `X` in lower camel case, defined by `toDimensionful SI`, and `x_in_SI` is proved by\n`toDimensionful_apply_self`. The docstring of `x` gives the number with its SI unit, followed by\n`exact` or, for a measured constant, the CODATA edition.",
+   "copyright": "2026 Jinzheng Li",
+   "sections": [
+    {
+     "line": 69,
+     "text": "## B. Checked values\n\nOne `example` for each row of the table, giving the dimension and the value in SI units. Lean\nchecks these against the definitions; it does not read the table."
+    },
+    {
+     "line": 88,
+     "text": "## C. Planck units\n\nPlanck units are units in which `c`, `ℏ`, `G` and `k_B` are all `1`; so far the lemma below covers\n`c` and `k_B`. Constants with independent dimensions can always be `1` together, while constants\nwith dependent dimensions can only if their dimensionless ratios are `1`. So the lemma does not\nextend to every constant: `h` cannot join `ℏ`, and the electron mass cannot join `c`, `ℏ` and `G`."
+    }
+   ],
+   "declarations": [
+    {
+     "name": "exists_units_constants_eq_one",
+     "kind": "lemma",
+     "line": 100,
+     "doc": "There are units in which the speed of light and the Boltzmann constant are `1`.",
+     "statement": "lemma exists_units_constants_eq_one : ∃ u : LTMCTUnitChoices,\n    (speedOfLight u).val = 1 ∧ (boltzmannConstant u).val = 1",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 1
+  },
+  {
+   "file": "Physlib/Units/Dimension.lean",
+   "module": "Physlib.Units.Dimension",
+   "title": "Dimension",
+   "doc": "In this module we define the type `Dimension` which carries the dimension\nof a physical quantity.\n\nA `Dimension B` is parameterised by a *basis* `B` of base dimensions equipped with a\n`DimensionBasis` representation. Each representation is additively equivalent to assigning an\n`Exponent` to every base dimension `b : B`. The parameterisation is purely in\nthe dimensional *algebra*: `Dimension B` is a `CommGroup` for every represented basis `B`\n(multiplication adds exponents, inversion negates them), so quantities can be typed by\ndimensions over any basis. The commutative-group, `Exponent`- and `ℚ`-power structures, decidable\nequality (`DecidableEq`), the base vectors `single b`, and the change-of-basis map\n`extend` are all generic in `B`.\n\nPhysLib's default basis is `LTMCTDimensionBase` — length, time, mass, charge,\ntemperature — whose projections and named generators (`L𝓭`, `T𝓭`, …) live in\n`Physlib.Units.LTMCTDimensionBase`. It is *charge*-based with five generators, so it\nis **not** the SI/ISQ base-quantity set; the ISQ set is `ISQDimensionBase`, and other\nsystems (Gaussian–CGS, natural units, …) are equally expressible as `Dimension B` for\na suitable basis `B`.",
+   "copyright": "2025 Joseph Tooby-Smith",
+   "sections": [
+    {
+     "line": 37,
+     "text": "## Defining dimensions"
+    },
+    {
+     "line": 196,
+     "text": "## Dimension-preserving maps between bases\n\nA cross-basis map of dimensions is only admissible if it preserves the dimensional\n*algebra*. We record the two truth-preserving directions as bundled data:\n\n* an `Embedding B B'` is an **injective** `MonoidHom (Dimension B) (Dimension B')` — a\n  faithful, dimension-preserving inclusion of one basis into another; and\n* a `Projection B' B` is a **surjective** `MonoidHom (Dimension B') (Dimension B)` — a\n  truth-preserving *reduction* of a richer basis onto a coarser one.\n\nBeing a `MonoidHom` is what makes either map dimension-preserving (it respects\nproducts, inverses and rational powers); the injectivity / surjectivity side condition\ndistinguishes the two directions. Cross-basis dimension maps should be produced as one\nof these, so that dimension-preservation holds by construction — a bare relabelling\nthat sends a base dimension to an inequivalent one is *not* expressible as either."
+    }
+   ],
+   "declarations": [
+    {
+     "name": "DimensionBasis",
+     "kind": "class",
+     "line": 45,
+     "doc": "A choice of exponent-tuple representation for a basis `B`. Native addition on `Exponents`\nis used for dimension multiplication, while `exponentEquiv` provides the basis-generic API.",
+     "statement": "class DimensionBasis (B : Type) where\n  /-- The native tuple of exponents for this basis. -/\n  Exponents : Type\n  /-- The additive structure on native exponent tuples. -/\n  [addCommGroup : AddCommGroup Exponents]\n  /-- Native exponent tuples are additively equivalent to exponent functions on the basis. -/\n  exponentEquiv : Exponents ≃+ (B → Dimension.Exponent)",
+     "sorry": false
+    },
+    {
+     "name": "DimensionBasis.pi",
+     "kind": "def",
+     "line": 58,
+     "doc": "The function-backed exponent representation for a basis without a specialized tuple.",
+     "statement": "def pi (B : Type) : DimensionBasis B",
+     "sorry": false
+    },
+    {
+     "name": "Dimension",
+     "kind": "structure",
+     "line": 67,
+     "doc": "A dimension over a represented basis `B`. PhysLib's default basis is\n`LTMCTDimensionBase`.",
+     "statement": "structure Dimension (B : Type) [DimensionBasis B] where\n  /-- The dimension's native exponent tuple. -/\n  exponents : DimensionBasis.Exponents B",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.exponent",
+     "kind": "def",
+     "line": 76,
+     "doc": "The exponent of a dimension at a base dimension.",
+     "statement": "def exponent (d : Dimension B) : B → Exponent",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.ofFunction",
+     "kind": "def",
+     "line": 80,
+     "doc": "Construct a dimension from an exponent function.",
+     "statement": "def ofFunction (f : B → Exponent) : Dimension B",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.ofFunction_exponent",
+     "kind": "lemma",
+     "line": 84,
+     "doc": "",
+     "statement": "lemma ofFunction_exponent (f : B → Exponent) (b : B) : (ofFunction f).exponent b = f b",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.ext",
+     "kind": "lemma",
+     "line": 88,
+     "doc": "",
+     "statement": "lemma ext {d1 d2 : Dimension B} (h : ∀ b, d1.exponent b = d2.exponent b) : d1 = d2",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 96,
+     "doc": "",
+     "statement": "instance : Mul (Dimension B)",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.mul_exponent",
+     "kind": "lemma",
+     "line": 100,
+     "doc": "",
+     "statement": "lemma mul_exponent (d1 d2 : Dimension B) (b : B) :\n    (d1 * d2).exponent b = d1.exponent b + d2.exponent b",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 104,
+     "doc": "",
+     "statement": "instance : One (Dimension B)",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.one_exponent",
+     "kind": "lemma",
+     "line": 108,
+     "doc": "",
+     "statement": "lemma one_exponent (b : B) : (1 : Dimension B).exponent b = 0",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 111,
+     "doc": "",
+     "statement": "instance : CommGroup (Dimension B)",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.inv_exponent",
+     "kind": "lemma",
+     "line": 132,
+     "doc": "",
+     "statement": "lemma inv_exponent (d : Dimension B) (b : B) : d⁻¹.exponent b = -d.exponent b",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.div_exponent",
+     "kind": "lemma",
+     "line": 136,
+     "doc": "",
+     "statement": "lemma div_exponent (d1 d2 : Dimension B) (b : B) :\n    (d1 / d2).exponent b = d1.exponent b - d2.exponent b",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.npow_exponent",
+     "kind": "lemma",
+     "line": 141,
+     "doc": "",
+     "statement": "lemma npow_exponent (d : Dimension B) (n : ℕ) (b : B) :\n    (d ^ n).exponent b = n • d.exponent b",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 147,
+     "doc": "",
+     "statement": "instance : Pow (Dimension B) ℚ",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.qpow_exponent",
+     "kind": "lemma",
+     "line": 151,
+     "doc": "",
+     "statement": "lemma qpow_exponent (d : Dimension B) (q : ℚ) (b : B) :\n    (d ^ q).exponent b = d.exponent b * Exponent.ofRat q",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 158,
+     "doc": "Raising a dimension to an `Exponent` power. Unlike the `ℚ`-valued power, this preserves\nreducible arithmetic for concrete fractional exponents.",
+     "statement": "instance : Pow (Dimension B) Exponent",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.epow_exponent",
+     "kind": "lemma",
+     "line": 162,
+     "doc": "",
+     "statement": "lemma epow_exponent (d : Dimension B) (c : Exponent) (b : B) :\n    (d ^ c).exponent b = d.exponent b * c",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 167,
+     "doc": "Decidable equality of dimensions over a finite basis `B`.",
+     "statement": "instance [Fintype B] : DecidableEq (Dimension B)",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.single",
+     "kind": "def",
+     "line": 173,
+     "doc": "The base-dimension vector for `b : B`: exponent `1` at `b`, `0` elsewhere. This\nis the generic analogue of the named generators `L𝓭`, `T𝓭`, …",
+     "statement": "def single [DecidableEq B] (b : B) : Dimension B",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.single_exponent",
+     "kind": "lemma",
+     "line": 176,
+     "doc": "",
+     "statement": "lemma single_exponent [DecidableEq B] (b b' : B) :\n    (single b).exponent b' = if b' = b then 1 else 0",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.extend",
+     "kind": "def",
+     "line": 184,
+     "doc": "Change of basis along a map `f : B → B'` of base dimensions: reindex a dimension\nover `B` into one over `B'` by placing each exponent at its image. For an embedding\n`f` (injective) this preserves every exponent (`extend_exponent_apply`), so a\ndimension in one system re-expresses faithfully in an extending one.",
+     "statement": "def extend {B' : Type} [DimensionBasis B'] [Fintype B] [DecidableEq B']\n    (f : B → B') (d : Dimension B) : Dimension B'",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.extend_exponent_apply",
+     "kind": "lemma",
+     "line": 189,
+     "doc": "",
+     "statement": "lemma extend_exponent_apply {B' : Type} [DimensionBasis B'] [Fintype B] [DecidableEq B']\n    {f : B → B'} (hf : Function.Injective f) (d : Dimension B) (b : B) :\n    (extend f d).exponent (f b) = d.exponent b",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.extendHom",
+     "kind": "def",
+     "line": 217,
+     "doc": "`extend f` packaged as a monoid homomorphism of dimensions.",
+     "statement": "def extendHom {B' : Type} [DimensionBasis B'] [Fintype B] [DecidableEq B'] (f : B → B') :\n    Dimension B →* Dimension B'",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.Embedding",
+     "kind": "structure",
+     "line": 233,
+     "doc": "A **dimension embedding** `B ↪ B'`: an injective monoid homomorphism of\ndimensions. As a `MonoidHom` it is dimension-preserving (it respects products,\ninverses and rational powers); injectivity makes it a faithful inclusion of the basis\n`B` into `B'`. Cross-basis dimension injections are produced as `Embedding`s so that\ndimension-preservation holds by construction.",
+     "statement": "structure Embedding (B B' : Type) [DimensionBasis B] [DimensionBasis B'] where\n  /-- The underlying dimension-preserving homomorphism. -/\n  toHom : Dimension B →* Dimension B'\n  /-- The homomorphism is injective (a faithful embedding). -/\n  inj : Function.Injective toHom",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.Projection",
+     "kind": "structure",
+     "line": 243,
+     "doc": "A **dimension projection** `B' ↠ B`: a surjective monoid homomorphism of\ndimensions. As a `MonoidHom` it is truth-preserving, but it is lossy — it reduces a\nricher basis `B'` onto a coarser basis `B`, collapsing the base dimensions that `B`\ndoes not track.",
+     "statement": "structure Projection (B' B : Type) [DimensionBasis B'] [DimensionBasis B] where\n  /-- The underlying dimension-preserving homomorphism. -/\n  toHom : Dimension B' →* Dimension B\n  /-- The homomorphism is surjective (the reduction hits every dimension of `B`). -/\n  surj : Function.Surjective toHom",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.Embedding.ofBasis",
+     "kind": "def",
+     "line": 252,
+     "doc": "An injective *basis* map `f : B → B'` induces a dimension embedding, via `extend`.\nThis is the label-level case: it sends each base dimension of `B` to a base dimension\nof `B'`, so it is automatically dimension-preserving and faithful.",
+     "statement": "def Embedding.ofBasis {B B' : Type} [DimensionBasis B] [DimensionBasis B']\n    [Fintype B] [DecidableEq B']\n    (f : B → B') (hf : Function.Injective f) : Embedding B B'",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/Units/Examples.lean",
+   "module": "Physlib.Units.Examples",
+   "title": "Examples of units in Physlib",
+   "doc": "In this module we give some examples of how to use the units system in Physlib.\nThis module should not be imported into any other module, and the results here\nshould not be used in the proofs of any other results other then those in this file.",
+   "copyright": "2025 Joseph Tooby-Smith",
+   "sections": [
+    {
+     "line": 25,
+     "text": "## Defining a length dependent on units"
+    },
+    {
+     "line": 43,
+     "text": "## Proving propositions are dimensionally correct"
+    },
+    {
+     "line": 49,
+     "text": "## Cases with only WithDim"
+    },
+    {
+     "line": 124,
+     "text": "## Cases with Dimensionful"
+    },
+    {
+     "line": 155,
+     "text": "## Examples of using `isDimensionallyCorrect`\n\nWe now explore the consequences of `energyMass_isDimensionallyCorrect` and how we can use it."
+    },
+    {
+     "line": 177,
+     "text": "## Examples with other functions"
+    },
+    {
+     "line": 189,
+     "text": "## An example involving derivatives"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "UnitExamples.meters400",
+     "kind": "def",
+     "line": 32,
+     "doc": "The length corresponding to 400 meters.",
+     "statement": "noncomputable def meters400 : Dimensionful (WithDim L𝓭 ℝ)",
+     "sorry": false
+    },
+    {
+     "name": "UnitExamples.EnergyMassWithDim'",
+     "kind": "def",
+     "line": 58,
+     "doc": "An example of dimensions corresponding to `E = m c^2` using `WithDim`.",
+     "statement": "def EnergyMassWithDim' (m : WithDim M𝓭 ℝ) (E : WithDim (M𝓭 * L𝓭 * L𝓭 * T𝓭⁻¹ * T𝓭⁻¹) ℝ)\n    (c : WithDim (L𝓭 * T𝓭⁻¹) ℝ) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "UnitExamples.energyMassWithDim'_isDimensionallyCorrect",
+     "kind": "lemma",
+     "line": 61,
+     "doc": "",
+     "statement": "lemma energyMassWithDim'_isDimensionallyCorrect :\n    IsDimensionallyCorrect EnergyMassWithDim'",
+     "sorry": false
+    },
+    {
+     "name": "UnitExamples.NewtonsSecondWithDim'",
+     "kind": "def",
+     "line": 65,
+     "doc": "An example of dimensions corresponding to `F = m a` using `WithDim`.",
+     "statement": "def NewtonsSecondWithDim' (m : WithDim M𝓭 ℝ) (F : WithDim (M𝓭 * L𝓭 * T𝓭⁻¹ * T𝓭⁻¹) ℝ)\n    (a : WithDim (L𝓭 * T𝓭⁻¹ * T𝓭⁻¹) ℝ) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "UnitExamples.newtonsSecondWithDim'_isDimensionallyCorrect",
+     "kind": "lemma",
+     "line": 69,
+     "doc": "",
+     "statement": "lemma newtonsSecondWithDim'_isDimensionallyCorrect :\n    IsDimensionallyCorrect NewtonsSecondWithDim'",
+     "sorry": false
+    },
+    {
+     "name": "UnitExamples.SpeedEq",
+     "kind": "def",
+     "line": 73,
+     "doc": "An example of dimensions corresponding to `s = d/t` using `WithDim`.",
+     "statement": "def SpeedEq (s : WithDim (L𝓭 * T𝓭⁻¹) ℝ) (d : WithDim L𝓭 ℝ) (t : WithDim T𝓭 ℝ) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "UnitExamples.speedEq_isDimensionallyCorrect",
+     "kind": "lemma",
+     "line": 76,
+     "doc": "",
+     "statement": "lemma speedEq_isDimensionallyCorrect : IsDimensionallyCorrect SpeedEq",
+     "sorry": false
+    },
+    {
+     "name": "UnitExamples.OddDimensions",
+     "kind": "def",
+     "line": 80,
+     "doc": "An example with complicated dimensions.",
+     "statement": "def OddDimensions (m1 m2 : WithDim (M𝓭) ℝ)\n    (θ : WithDim Θ𝓭 ℝ) (I1 I2 : WithDim (C𝓭/T𝓭) ℝ) (d : WithDim L𝓭 ℝ) (t : WithDim T𝓭 ℝ)\n    (X : WithDim (L𝓭 * T𝓭⁻¹ ^ 3 * Θ𝓭⁻¹ * C𝓭 ^2) ℝ) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "UnitExamples.oddDimensions_isDimensionallyCorrect",
+     "kind": "lemma",
+     "line": 85,
+     "doc": "",
+     "statement": "lemma oddDimensions_isDimensionallyCorrect : IsDimensionallyCorrect OddDimensions",
+     "sorry": false
+    },
+    {
+     "name": "UnitExamples.EnergyMassWithDim",
+     "kind": "def",
+     "line": 89,
+     "doc": "An example of dimensions corresponding to `E = m c^2` using `WithDim` with `.val`.",
+     "statement": "def EnergyMassWithDim (m : WithDim M𝓭 ℝ) (E : WithDim (M𝓭 * L𝓭 * L𝓭 * T𝓭⁻¹ * T𝓭⁻¹) ℝ)\n    (c : WithDim (L𝓭 * T𝓭⁻¹) ℝ) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "UnitExamples.energyMassWithDim_isDimensionallyCorrect",
+     "kind": "lemma",
+     "line": 93,
+     "doc": "",
+     "statement": "lemma energyMassWithDim_isDimensionallyCorrect : IsDimensionallyCorrect EnergyMassWithDim",
+     "sorry": false
+    },
+    {
+     "name": "UnitExamples.NewtonsSecondWithDim",
+     "kind": "def",
+     "line": 99,
+     "doc": "An example of dimensions corresponding to `F = m a` using `WithDim` with `.val`.",
+     "statement": "def NewtonsSecondWithDim (m : WithDim M𝓭 ℝ) (F : WithDim (M𝓭 * L𝓭 * T𝓭⁻¹ * T𝓭⁻¹) ℝ)\n    (a : WithDim (L𝓭 * T𝓭⁻¹ * T𝓭⁻¹) ℝ) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "UnitExamples.newtonsSecondWithDim_isDimensionallyCorrect",
+     "kind": "lemma",
+     "line": 103,
+     "doc": "",
+     "statement": "lemma newtonsSecondWithDim_isDimensionallyCorrect :\n    IsDimensionallyCorrect NewtonsSecondWithDim",
+     "sorry": false
+    },
+    {
+     "name": "UnitExamples.EnergyMassWithDimNot",
+     "kind": "def",
+     "line": 111,
+     "doc": "An example of dimensions corresponding to `E = m c` using `WithDim` with `.val`,\nwhich is not dimensionally correct.",
+     "statement": "def EnergyMassWithDimNot (m : WithDim M𝓭 ℝ) (E : WithDim (M𝓭 * L𝓭 * L𝓭 * T𝓭⁻¹ * T𝓭⁻¹) ℝ)\n    (c : WithDim (L𝓭 * T𝓭⁻¹) ℝ) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "UnitExamples.energyMassWithDimNot_not_isDimensionallyCorrect",
+     "kind": "lemma",
+     "line": 115,
+     "doc": "",
+     "statement": "lemma energyMassWithDimNot_not_isDimensionallyCorrect :\n    ¬ IsDimensionallyCorrect EnergyMassWithDimNot",
+     "sorry": false
+    },
+    {
+     "name": "UnitExamples.EnergyMass",
+     "kind": "def",
+     "line": 132,
+     "doc": "The equation `E = m c^2`, in this equation we `E` and `m` are implicitly in the\nunits `u`, while the speed of light is explicitly written in those units.",
+     "statement": "def EnergyMass (m : WithDim M𝓭 ℝ) (E : WithDim (M𝓭 * L𝓭 * L𝓭 * T𝓭⁻¹ * T𝓭⁻¹) ℝ)\n    (u : LTMCTUnitChoices) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "UnitExamples.EnergyMass'",
+     "kind": "def",
+     "line": 138,
+     "doc": "The equation `E = m c^2`, in this version everything is written explicitly in\nterms of a choice of units.",
+     "statement": "def EnergyMass' (m : Dimensionful (WithDim M𝓭 ℝ))\n    (E : Dimensionful (WithDim (M𝓭 * L𝓭 * L𝓭 * T𝓭⁻¹ * T𝓭⁻¹) ℝ))\n    (u : LTMCTUnitChoices) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "UnitExamples.energyMass_isDimensionallyCorrect",
+     "kind": "lemma",
+     "line": 144,
+     "doc": "The lemma that the proposition `EnergyMass` is dimensionally correct",
+     "statement": "lemma energyMass_isDimensionallyCorrect :\n    IsDimensionallyCorrect EnergyMass",
+     "sorry": false
+    },
+    {
+     "name": "UnitExamples.example1_energyMass",
+     "kind": "lemma",
+     "line": 163,
+     "doc": "",
+     "statement": "lemma example1_energyMass : EnergyMass ⟨2⟩ ⟨2 * 299792458 ^ 2⟩ SI",
+     "sorry": false
+    },
+    {
+     "name": "UnitExamples.example2_energyMass",
+     "kind": "lemma",
+     "line": 169,
+     "doc": "",
+     "statement": "lemma example2_energyMass (u : LTMCTUnitChoices) :\n    EnergyMass (scaleUnit SI u ⟨2⟩) (scaleUnit SI u ⟨2 * 299792458 ^ 2⟩) u",
+     "sorry": false
+    },
+    {
+     "name": "UnitExamples.CosDim",
+     "kind": "def",
+     "line": 183,
+     "doc": "An example of a dimensionally correct result using functions.",
+     "statement": "def CosDim (t : WithDim T𝓭 ℝ) (ω : WithDim T𝓭⁻¹ ℝ) (a : ℝ) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "UnitExamples.cosDim_isDimensionallyCorrect",
+     "kind": "lemma",
+     "line": 186,
+     "doc": "",
+     "statement": "lemma cosDim_isDimensionallyCorrect : IsDimensionallyCorrect CosDim",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/Units/Exponent.lean",
+   "module": "Physlib.Units.Exponent",
+   "title": "Reducible rational arithmetic for dimension exponents",
+   "doc": "This module defines `Exponent`, a wrapper around the rational numbers whose arithmetic is\nreducible. This lets concrete arithmetic on dimension exponents hold by definitional equality.\n\nThe corresponding rational operations are irreducible in Lean. Locally unsealing them does not\nexport their reducibility to downstream modules, while globally changing the reducibility of an\nimported declaration requires `allowUnsafeReducibility`. The wrapper instead owns transparent\noperations while remaining equivalent to `ℚ`.\n\nThe reducibility guarantee applies to the custom addition, subtraction, multiplication, inversion,\nand division below. Other operations supplied by the `Field` instance are transferred from `ℚ`.\nIn particular, rational scalar multiplication and negative integer powers may require propositional\nreasoning rather than `rfl`.",
+   "copyright": "2026 Raunak Chhatwal",
+   "sections": [
+    {
+     "line": 35,
+     "text": "## A. Definition"
+    },
+    {
+     "line": 110,
+     "text": "## B. Arithmetic"
+    },
+    {
+     "line": 176,
+     "text": "## C. Field structure"
+    },
+    {
+     "line": 265,
+     "text": "## D. Definitional equality tests"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "Dimension.Exponent",
+     "kind": "structure",
+     "line": 42,
+     "doc": "A rational dimension exponent with reducible arithmetic.",
+     "statement": "structure Exponent where\n  /-- The rational number represented by the exponent. -/\n  toRat : ℚ\nderiving DecidableEq",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 49,
+     "doc": "",
+     "statement": "instance : Repr Exponent",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.Exponent.equivRat",
+     "kind": "def",
+     "line": 55,
+     "doc": "The equivalence between `Exponent` and the rational numbers.",
+     "statement": "def equivRat : Exponent ≃ ℚ",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.Exponent.ofRat",
+     "kind": "def",
+     "line": 59,
+     "doc": "Regard a rational number as a dimension exponent.",
+     "statement": "def ofRat (q : ℚ) : Exponent",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.Exponent.ofRat_toRat",
+     "kind": "lemma",
+     "line": 62,
+     "doc": "",
+     "statement": "lemma ofRat_toRat (q : ℚ) : (ofRat q).toRat = q",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.Exponent.gcdAux",
+     "kind": "def",
+     "line": 65,
+     "doc": "Fuel-bounded Euclidean algorithm used to make exponent normalization reducible.",
+     "statement": "def gcdAux : Nat → Nat → Nat → Nat",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.Exponent.gcd",
+     "kind": "def",
+     "line": 80,
+     "doc": "Reducible greatest common divisor used when normalizing an exponent.",
+     "statement": "def gcd (m n : Nat) : Nat",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.Exponent.gcd_eq_nat_gcd",
+     "kind": "lemma",
+     "line": 84,
+     "doc": "The reducible exponent GCD agrees with `Nat.gcd`.",
+     "statement": "lemma gcd_eq_nat_gcd (m n : Nat) : gcd m n = Nat.gcd m n",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.Exponent.normalize",
+     "kind": "def",
+     "line": 88,
+     "doc": "Construct an exponent by normalizing a numerator and a nonzero denominator.",
+     "statement": "def normalize (num : Int) (den : Nat) (den_ne_zero : den ≠ 0) : Exponent",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.Exponent.normalize_toRat",
+     "kind": "lemma",
+     "line": 97,
+     "doc": "",
+     "statement": "lemma normalize_toRat (num : Int) (den : Nat) (den_ne_zero : den ≠ 0) :\n    (normalize num den den_ne_zero).toRat = Rat.normalize num den den_ne_zero",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.Exponent.num",
+     "kind": "def",
+     "line": 103,
+     "doc": "The normalized numerator of an exponent.",
+     "statement": "def num (x : Exponent) : Int",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.Exponent.den",
+     "kind": "def",
+     "line": 107,
+     "doc": "The normalized denominator of an exponent.",
+     "statement": "def den (x : Exponent) : Nat",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.Exponent.add",
+     "kind": "def",
+     "line": 117,
+     "doc": "Reducible addition of dimension exponents.",
+     "statement": "def add (a b : Exponent) : Exponent",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 121,
+     "doc": "",
+     "statement": "instance : Add Exponent",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.Exponent.add_equiv",
+     "kind": "lemma",
+     "line": 123,
+     "doc": "",
+     "statement": "lemma add_equiv (a b : Exponent) : equivRat (add a b) = equivRat a + equivRat b",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.Exponent.sub",
+     "kind": "def",
+     "line": 128,
+     "doc": "Reducible subtraction of dimension exponents.",
+     "statement": "def sub (a b : Exponent) : Exponent",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 131,
+     "doc": "",
+     "statement": "instance : Sub Exponent",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.Exponent.sub_equiv",
+     "kind": "lemma",
+     "line": 133,
+     "doc": "",
+     "statement": "lemma sub_equiv (a b : Exponent) : equivRat (sub a b) = equivRat a - equivRat b",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.Exponent.mul",
+     "kind": "def",
+     "line": 138,
+     "doc": "Reducible multiplication of dimension exponents.",
+     "statement": "def mul (a b : Exponent) : Exponent",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 142,
+     "doc": "",
+     "statement": "instance : Mul Exponent",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.Exponent.mul_equiv",
+     "kind": "lemma",
+     "line": 144,
+     "doc": "",
+     "statement": "lemma mul_equiv (a b : Exponent) : equivRat (mul a b) = equivRat a * equivRat b",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.Exponent.inv",
+     "kind": "def",
+     "line": 149,
+     "doc": "Reducible inversion of a dimension exponent, with `0⁻¹ = 0`.",
+     "statement": "def inv (a : Exponent) : Exponent",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 159,
+     "doc": "",
+     "statement": "instance : Inv Exponent",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.Exponent.inv_equiv",
+     "kind": "lemma",
+     "line": 161,
+     "doc": "",
+     "statement": "lemma inv_equiv (a : Exponent) : equivRat (inv a) = (equivRat a)⁻¹",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.Exponent.div",
+     "kind": "def",
+     "line": 168,
+     "doc": "Reducible division of dimension exponents.",
+     "statement": "def div (a b : Exponent) : Exponent",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 171,
+     "doc": "",
+     "statement": "instance : Div Exponent",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.Exponent.div_equiv",
+     "kind": "lemma",
+     "line": 173,
+     "doc": "",
+     "statement": "lemma div_equiv (a b : Exponent) : equivRat (div a b) = equivRat a / equivRat b",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.Exponent.instField",
+     "kind": "instance",
+     "line": 182,
+     "doc": "",
+     "statement": "instance instField : Field Exponent",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.Exponent.ringEquivRat",
+     "kind": "def",
+     "line": 196,
+     "doc": "The ring equivalence between dimension exponents and rational numbers.",
+     "statement": "def ringEquivRat : Exponent ≃+* ℚ",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 202,
+     "doc": "Regard a dimension exponent as a rational number.",
+     "statement": "instance : Coe Exponent ℚ",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.Exponent.coe_inj",
+     "kind": "lemma",
+     "line": 205,
+     "doc": "",
+     "statement": "lemma coe_inj {a b : Exponent} : (a : ℚ) = b ↔ a = b",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.Exponent.coe_zero",
+     "kind": "lemma",
+     "line": 209,
+     "doc": "",
+     "statement": "lemma coe_zero : ((0 : Exponent) : ℚ) = 0",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.Exponent.coe_one",
+     "kind": "lemma",
+     "line": 212,
+     "doc": "",
+     "statement": "lemma coe_one : ((1 : Exponent) : ℚ) = 1",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.Exponent.coe_ofNat",
+     "kind": "lemma",
+     "line": 215,
+     "doc": "",
+     "statement": "lemma coe_ofNat (n : ℕ) [n.AtLeastTwo] : ((ofNat(n) : Exponent) : ℚ) = ofNat(n)",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.Exponent.coe_add",
+     "kind": "lemma",
+     "line": 219,
+     "doc": "",
+     "statement": "lemma coe_add (a b : Exponent) : ((a + b : Exponent) : ℚ) = a + b",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.Exponent.coe_sub",
+     "kind": "lemma",
+     "line": 223,
+     "doc": "",
+     "statement": "lemma coe_sub (a b : Exponent) : ((a - b : Exponent) : ℚ) = a - b",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.Exponent.coe_neg",
+     "kind": "lemma",
+     "line": 227,
+     "doc": "",
+     "statement": "lemma coe_neg (a : Exponent) : ((-a : Exponent) : ℚ) = -a",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.Exponent.coe_mul",
+     "kind": "lemma",
+     "line": 231,
+     "doc": "",
+     "statement": "lemma coe_mul (a b : Exponent) : ((a * b : Exponent) : ℚ) = a * b",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.Exponent.coe_inv",
+     "kind": "lemma",
+     "line": 235,
+     "doc": "",
+     "statement": "lemma coe_inv (a : Exponent) : ((a⁻¹ : Exponent) : ℚ) = (a : ℚ)⁻¹",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.Exponent.coe_div",
+     "kind": "lemma",
+     "line": 239,
+     "doc": "",
+     "statement": "lemma coe_div (a b : Exponent) : ((a / b : Exponent) : ℚ) = (a : ℚ) / b",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 242,
+     "doc": "",
+     "statement": "instance : LinearOrder Exponent",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.Exponent.coe_le_coe",
+     "kind": "lemma",
+     "line": 245,
+     "doc": "",
+     "statement": "lemma coe_le_coe {a b : Exponent} : (a : ℚ) ≤ b ↔ a ≤ b",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.Exponent.coe_lt_coe",
+     "kind": "lemma",
+     "line": 248,
+     "doc": "",
+     "statement": "lemma coe_lt_coe {a b : Exponent} : (a : ℚ) < b ↔ a < b",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 250,
+     "doc": "",
+     "statement": "instance : IsStrictOrderedRing Exponent",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 255,
+     "doc": "",
+     "statement": "instance : CharZero Exponent",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.Exponent.add_eq_instField_add",
+     "kind": "lemma",
+     "line": 259,
+     "doc": "",
+     "statement": "lemma add_eq_instField_add : add = instField.add",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.Exponent.sub_eq_instField_sub",
+     "kind": "lemma",
+     "line": 260,
+     "doc": "",
+     "statement": "lemma sub_eq_instField_sub : sub = instField.sub",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.Exponent.inv_eq_instField_inv",
+     "kind": "lemma",
+     "line": 261,
+     "doc": "",
+     "statement": "lemma inv_eq_instField_inv : inv = instField.inv",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.Exponent.mul_eq_instField_mul",
+     "kind": "lemma",
+     "line": 262,
+     "doc": "",
+     "statement": "lemma mul_eq_instField_mul : mul = instField.mul",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.Exponent.div_eq_instField_div",
+     "kind": "lemma",
+     "line": 263,
+     "doc": "",
+     "statement": "lemma div_eq_instField_div : div = instField.div",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.Exponent.tuple_arithmetic_defeq",
+     "kind": "lemma",
+     "line": 271,
+     "doc": "",
+     "statement": "lemma tuple_arithmetic_defeq :\n    let Length : Exponent × Exponent := (1, 0)\n    let Time : Exponent × Exponent := (0, 1)\n    let Speed := Length - Time\n    Length = Time + Speed",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.Exponent.rational_arithmetic_defeq",
+     "kind": "lemma",
+     "line": 277,
+     "doc": "",
+     "statement": "lemma rational_arithmetic_defeq :\n    ((2 / 3 + 5 / 7) * (11 / 13 - 1 / 2) : Exponent) = 87 / 182",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.Exponent.inverse_arithmetic_defeq",
+     "kind": "lemma",
+     "line": 280,
+     "doc": "",
+     "statement": "lemma inverse_arithmetic_defeq : ((-3 / 4 : Exponent)⁻¹ + 5 / 6) = -1 / 2",
+     "sorry": false
+    }
+   ],
+   "private": 1,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/Units/FDeriv.lean",
+   "module": "Physlib.Units.FDeriv",
+   "title": "Dimensional invariance of fderiv",
+   "doc": "In this module we prove that the derivative is dimensionally correct.\nThat is to say for a function `f : M1 → M2` where `M1` carries dimensions `d1` and `M2` carries\ndimension `d2` such that `f` has the correct dimension, then\n`fderiv ℝ f : M1 → M1 →L[ℝ] M2` has the correct dimensions.\n\nTo give an explicit example let us say `M1` has dimension `L𝓭` and `M2` has dimension\n`L𝓭 * L𝓭` and `f : M1 → M2 : x ↦ x ^ 2`, this is dimensionally correct.\nThe `fderiv` of this `fderiv ℝ f : M1 → M1 →L[ℝ] M2` takes\n`x dx ↦ dx • (2 * x)` which is still dimensionally correct. Here `dx` is the direction\nin which the derivative is taken.",
+   "copyright": "2025 Joseph Tooby-Smith",
+   "sections": [],
+   "declarations": [
+    {
+     "name": "fderiv_apply_scaleUnit",
+     "kind": "lemma",
+     "line": 38,
+     "doc": "",
+     "statement": "lemma fderiv_apply_scaleUnit (u1 u2 : LTMCTUnitChoices) (x dm : M1)\n    (f : M1 → M2) (hf : IsDimensionallyCorrect f) (f_diff : Differentiable ℝ f) :\n    fderiv ℝ f (scaleUnit u2 u1 x) dm =\n    u2.dimScale u1 (dim M2) • u1.dimScale u2 (dim M1) • fderiv ℝ f x dm",
+     "sorry": false
+    },
+    {
+     "name": "fderiv_isDimensionallyCorrect",
+     "kind": "lemma",
+     "line": 51,
+     "doc": "If a function is dimensionally valid then so is it's derivative.",
+     "statement": "lemma fderiv_isDimensionallyCorrect (f : M1 → M2) (hf : IsDimensionallyCorrect f)\n    (f_diff : Differentiable ℝ f) :\n    IsDimensionallyCorrect (fderiv ℝ f)",
+     "sorry": false
+    },
+    {
+     "name": "fderiv_dimension_const_direction",
+     "kind": "lemma",
+     "line": 67,
+     "doc": "The expression `fderiv ℝ f x dm = v.1` for a fixed `dm` and for\n`v` with dimension `d M2 * (d M1)⁻¹` is dimensionally correct. This is the\nordinary manifestation of dimensions of a derivative, usually `dm` is taken as e.g. `1`.\n\nThis result also shows that dimensional correctness does depend on what\nquantities are considered dimensionful.",
+     "statement": "lemma fderiv_dimension_const_direction (dm : M1) (f : M1 → M2) (hf : IsDimensionallyCorrect f)\n    (f_diff : Differentiable ℝ f) :\n    IsDimensionallyCorrect (fun x (v : WithDim (dim M2 * (dim M1)⁻¹) M2) =>\n      fderiv ℝ f x dm = v.1)",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/Units/Integral.lean",
+   "module": "Physlib.Units.Integral",
+   "title": "Dimensional invariance of the integral",
+   "doc": "In this module we prove that the dimensional properties of the integral.",
+   "copyright": "2025 Joseph Tooby-Smith",
+   "sections": [],
+   "declarations": [
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 26,
+     "doc": "",
+     "statement": "noncomputable instance (M : Type)\n    [NormedAddCommGroup M] [NormedSpace ℝ M] [HasDim M]\n    [MeasurableSpace M] [self : MeasurableConstSMul ℝ M] :\n      MulUnitDependent (MeasureTheory.Measure M)",
+     "sorry": false
+    },
+    {
+     "name": "scaleUnit_measure",
+     "kind": "lemma",
+     "line": 57,
+     "doc": "",
+     "statement": "lemma scaleUnit_measure (u1 u2 : LTMCTUnitChoices) (μ : MeasureTheory.Measure M) :\n    scaleUnit u1 u2 μ = μ.map (fun m => scaleUnit u1 u2 m)",
+     "sorry": false
+    },
+    {
+     "name": "integral_isDimensionallyCorrect",
+     "kind": "lemma",
+     "line": 72,
+     "doc": "The statement that for a measure `μ` of dimension `d`, and a function\n  `f : M → G` of dimension `(CarriesDimension.d G * d⁻¹)` (where `CarriesDimension.d G`\n  is the dimension associated with terms of type `G`), then\n  `∫ x, f x ∂μ `\n  has the correct dimension, namely `CarriesDimension.d G`.\n\n  In other words, the function:\n```\nfun (μ : DimSet (MeasureTheory.Measure M) d)\n    (f : DimSet (M → G) (CarriesDimension.d G * d⁻¹)) ↦ ∫ x, f.1 x ∂μ.1\n```\n  is dimensionally correct.",
+     "statement": "lemma integral_isDimensionallyCorrect (d : Dimension LTMCTDimensionBase) :\n    IsDimensionallyCorrect (fun (μ : DimSet (MeasureTheory.Measure M) d)\n      (f : DimSet (M → G) (dim G * d⁻¹)) ↦ ∫ x, f.1 x ∂μ.1)",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/Units/ISQBridge.lean",
+   "module": "Physlib.Units.ISQBridge",
+   "title": "Bridging PhysLib's default basis and the ISQ basis",
+   "doc": "`LTMCTDimensionBase` (length, time, mass, charge, temperature) and `ISQDimensionBase`\n(the seven ISO/IEC 80000-1 base quantities) make different base/derived choices. This\nmodule relates them by the two truth-preserving directions of `Dimension.Embedding`\nand `Dimension.Projection`:\n\n* `ltmctToISQ : Dimension.Embedding LTMCTDimensionBase ISQDimensionBase` — the\n  dimension-preserving **inclusion** of PhysLib dimensions into ISQ dimensions. It\n  sends the charge generator to the *derived* ISQ charge `I · T` (`toISQHom_C𝓭`), so it\n  is faithful (`toISQHom_injective`) and physically correct, not a bare relabelling.\n* `isqToLTMCT : Dimension.Projection ISQDimensionBase LTMCTDimensionBase` — the\n  truth-preserving **reduction** of ISQ dimensions onto PhysLib's. It reads electric\n  current as charge/time and forgets amount of substance and luminous intensity (the\n  base quantities PhysLib does not track).\n\nThe two fit together as a retraction, `isqToLTMCT ∘ ltmctToISQ = id`\n(`isqToLTMCT_comp_ltmctToISQ`): PhysLib's basis embeds faithfully into ISQ and is\nrecovered exactly by the projection — but the reverse composite is *not* the identity,\nbecause amount of substance and luminous intensity cannot be recovered once dropped.\nThat is the asymmetry: one can reduce ISQ to LTMCT, but not conjure the extra base\nquantities back without *adding* them.",
+   "copyright": "2026 Nicolas Rouquette",
+   "sections": [],
+   "declarations": [
+    {
+     "name": "Dimension.toISQFun",
+     "kind": "def",
+     "line": 46,
+     "doc": "The function underlying `toISQHom`: fix length, mass, time and temperature, and\nsend PhysLib's charge generator to the derived ISQ charge `I · T` (the current\nexponent is the charge exponent, and the time exponent absorbs it).",
+     "statement": "def toISQFun (d : Dimension LTMCTDimensionBase) : Dimension ISQDimensionBase",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.toISQHom",
+     "kind": "def",
+     "line": 57,
+     "doc": "The dimension-preserving embedding of PhysLib dimensions into the ISQ dimensions.",
+     "statement": "def toISQHom : Dimension LTMCTDimensionBase →* Dimension ISQDimensionBase",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.toISQHom_apply",
+     "kind": "lemma",
+     "line": 66,
+     "doc": "`toISQHom` applied to a dimension is `toISQFun`.",
+     "statement": "lemma toISQHom_apply (d : Dimension LTMCTDimensionBase) : toISQHom d = toISQFun d",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.fromISQFun",
+     "kind": "def",
+     "line": 71,
+     "doc": "The function underlying `fromISQHom`: fix length, mass and temperature, read\nelectric current as charge/time (the charge exponent is the current exponent, and the\ntime exponent subtracts it), and drop amount of substance and luminous intensity.",
+     "statement": "def fromISQFun (d : Dimension ISQDimensionBase) : Dimension LTMCTDimensionBase",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.fromISQHom",
+     "kind": "def",
+     "line": 80,
+     "doc": "The truth-preserving reduction of ISQ dimensions onto PhysLib's.",
+     "statement": "def fromISQHom : Dimension ISQDimensionBase →* Dimension LTMCTDimensionBase",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.fromISQHom_apply",
+     "kind": "lemma",
+     "line": 89,
+     "doc": "`fromISQHom` applied to a dimension is `fromISQFun`.",
+     "statement": "lemma fromISQHom_apply (d : Dimension ISQDimensionBase) : fromISQHom d = fromISQFun d",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.fromISQHom_comp_toISQHom",
+     "kind": "lemma",
+     "line": 93,
+     "doc": "The projection recovers PhysLib's basis from its image under the embedding:\n`fromISQHom ∘ toISQHom = id`.",
+     "statement": "lemma fromISQHom_comp_toISQHom :\n    fromISQHom.comp toISQHom = MonoidHom.id (Dimension LTMCTDimensionBase)",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.toISQHom_injective",
+     "kind": "lemma",
+     "line": 101,
+     "doc": "`toISQHom` is injective: PhysLib dimensions include faithfully into ISQ.",
+     "statement": "lemma toISQHom_injective : Function.Injective toISQHom",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.fromISQHom_surjective",
+     "kind": "lemma",
+     "line": 121,
+     "doc": "`fromISQHom` is surjective: every PhysLib dimension is the reduction of some ISQ\ndimension (namely its own embedding).",
+     "statement": "lemma fromISQHom_surjective : Function.Surjective fromISQHom",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.ltmctToISQ",
+     "kind": "def",
+     "line": 125,
+     "doc": "PhysLib's dimensions embed into the ISQ dimensions (charge ↦ `I · T`).",
+     "statement": "def ltmctToISQ : Embedding LTMCTDimensionBase ISQDimensionBase",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.isqToLTMCT",
+     "kind": "def",
+     "line": 131,
+     "doc": "The ISQ dimensions project onto PhysLib's, reading current as charge/time and\nforgetting amount of substance and luminous intensity.",
+     "statement": "def isqToLTMCT : Projection ISQDimensionBase LTMCTDimensionBase",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.isqToLTMCT_comp_ltmctToISQ",
+     "kind": "lemma",
+     "line": 138,
+     "doc": "The projection is a retraction of the embedding: `isqToLTMCT ∘ ltmctToISQ = id`. So\nPhysLib's basis embeds faithfully into ISQ and is recovered by the projection, but not\nconversely — amount of substance and luminous intensity cannot be recovered.",
+     "statement": "lemma isqToLTMCT_comp_ltmctToISQ :\n    isqToLTMCT.toHom.comp ltmctToISQ.toHom = MonoidHom.id (Dimension LTMCTDimensionBase)",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.toISQHom_C𝓭",
+     "kind": "lemma",
+     "line": 144,
+     "doc": "The embedding is physically faithful on charge: PhysLib's charge generator `C𝓭`\nmaps to the *derived* ISQ charge `I · T`.",
+     "statement": "lemma toISQHom_C𝓭 : toISQHom C𝓭 = ISQDimensionBase.charge",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/Units/ISQDimensionBase.lean",
+   "module": "Physlib.Units.ISQDimensionBase",
+   "title": "The ISQ base quantities",
+   "doc": "The International System of Quantities (ISQ), specified in ISO/IEC 80000-1 and\ndescribed in the International Vocabulary of Metrology (VIM, 3rd edition,\nJCGM 200:2012), fixes seven mutually independent *base quantities*: length, mass,\ntime, electric current, thermodynamic temperature, amount of substance, and\nluminous intensity.\n\n`ISQDimensionBase` is that seven-element basis, realised as an instantiation\n`Dimension ISQDimensionBase` of the parametric dimensional algebra. It differs from\nPhysLib's default `LTMCTDimensionBase` in two ways:\n\n* the electromagnetic base quantity is *electric current*, so electric charge is a\n  *derived* dimension (`Q = I · T`, `ISQDimensionBase.charge`); and\n* *amount of substance* and *luminous intensity* are additional independent base\n  quantities.\n\n## References\n\n* ISO/IEC 80000-1:2009, Quantities and units — Part 1: General. [ref: iso_80000_1_2009]\n* JCGM 200:2012, International vocabulary of metrology — Basic and general concepts and associated\n  terms (VIM, 3rd edition). [ref: jcgm_200_2012]",
+   "copyright": "2026 Nicolas Rouquette",
+   "sections": [],
+   "declarations": [
+    {
+     "name": "ISQDimensionBase",
+     "kind": "inductive",
+     "line": 44,
+     "doc": "The seven ISQ base quantities (ISO/IEC 80000-1; VIM 3rd edition). Unlike\n`LTMCTDimensionBase`, electric current is the electromagnetic base quantity (so\ncharge is derived), and amount of substance and luminous intensity are further\nbase quantities.",
+     "statement": "inductive ISQDimensionBase where\n  /-- The length base quantity. -/\n  | length\n  /-- The mass base quantity. -/\n  | mass\n  /-- The time base quantity. -/\n  | time\n  /-- The electric-current base quantity. -/\n  | current\n  /-- The thermodynamic-temperature base quantity. -/\n  | temperature\n  /-- The amount-of-substance base quantity. -/\n  | amount\n  /-- The luminous-intensity base quantity. -/\n  | luminousIntensity\nderiving DecidableEq",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 61,
+     "doc": "",
+     "statement": "instance : Fintype ISQDimensionBase",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 65,
+     "doc": "",
+     "statement": "instance : DimensionBasis ISQDimensionBase",
+     "sorry": false
+    },
+    {
+     "name": "ISQDimensionBase.card_eq_seven",
+     "kind": "lemma",
+     "line": 70,
+     "doc": "The ISQ has seven base quantities.",
+     "statement": "lemma card_eq_seven : Fintype.card ISQDimensionBase = 7",
+     "sorry": false
+    },
+    {
+     "name": "ISQDimensionBase.charge",
+     "kind": "def",
+     "line": 73,
+     "doc": "Electric charge is a *derived* dimension in the ISQ: `Q = I · T`.",
+     "statement": "def charge : Dimension ISQDimensionBase",
+     "sorry": false
+    },
+    {
+     "name": "ISQDimensionBase.charge_exponent_current",
+     "kind": "lemma",
+     "line": 76,
+     "doc": "The derived charge dimension has electric-current exponent `1`.",
+     "statement": "lemma charge_exponent_current : charge.exponent .current = 1",
+     "sorry": false
+    },
+    {
+     "name": "ISQDimensionBase.charge_exponent_time",
+     "kind": "lemma",
+     "line": 80,
+     "doc": "The derived charge dimension has time exponent `1`.",
+     "statement": "lemma charge_exponent_time : charge.exponent .time = 1",
+     "sorry": false
+    },
+    {
+     "name": "ISQDimensionBase.charge_exponent_mass",
+     "kind": "lemma",
+     "line": 84,
+     "doc": "The derived charge dimension has mass exponent `0`.",
+     "statement": "lemma charge_exponent_mass : charge.exponent .mass = 0",
+     "sorry": false
+    },
+    {
+     "name": "ISQDimensionBase.single_amount_ne_one",
+     "kind": "lemma",
+     "line": 89,
+     "doc": "Amount of substance is an independent base dimension (absent from\n`LTMCTDimensionBase`).",
+     "statement": "lemma single_amount_ne_one : single (.amount : ISQDimensionBase) ≠ 1",
+     "sorry": false
+    },
+    {
+     "name": "ISQDimensionBase.single_luminousIntensity_ne_one",
+     "kind": "lemma",
+     "line": 96,
+     "doc": "Luminous intensity is an independent base dimension (absent from\n`LTMCTDimensionBase`).",
+     "statement": "lemma single_luminousIntensity_ne_one :\n    single (.luminousIntensity : ISQDimensionBase) ≠ 1",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/Units/LTMCTDimensionBase.lean",
+   "module": "Physlib.Units.LTMCTDimensionBase",
+   "title": "PhysLib's default dimension basis",
+   "doc": "`LTMCTDimensionBase` is PhysLib's default basis of base dimensions — length, time,\nmass, charge and temperature. `Dimension LTMCTDimensionBase` is the familiar\nfive-exponent dimension, and this module provides the concrete API on top of the\ngeneric `Dimension B`:\n\n* the `.length`, `.time`, `.mass`, `.charge`, `.temperature` exponent projections;\n* the `ofLTMCTDimensionBase` constructor from five exponents; and\n* the named generators `L𝓭`, `T𝓭`, `M𝓭`, `C𝓭`, `Θ𝓭`, shown to be the generic\n  `single` base vectors.\n\nThis basis is *charge*-based with five generators, so it is deliberately **not** the\nSI/ISQ base-quantity set (which takes electric current as base and adds amount of\nsubstance and luminous intensity); see `ISQDimensionBase`.",
+   "copyright": "2025 Joseph Tooby-Smith",
+   "sections": [
+    {
+     "line": 72,
+     "text": "## The LTMCTDimensionBase projections\n\nThe five base-dimension exponents of a `Dimension LTMCTDimensionBase`, provided so that\nthe familiar `.length`, `.time`, `.mass`, `.charge`, `.temperature` API is available."
+    },
+    {
+     "line": 347,
+     "text": "## The named generators are the base vectors\n\nEach named generator `L𝓭`, `T𝓭`, … is the generic `single` base vector at the\ncorresponding base dimension, exhibiting them as instances of the basis-generic API."
+    }
+   ],
+   "declarations": [
+    {
+     "name": "LTMCTDimensionBase",
+     "kind": "inductive",
+     "line": 34,
+     "doc": "PhysLib's default basis of base dimensions — `length`, `time`, `mass`,\n`charge`, `temperature`. Note this is *charge*-based, so it is not the SI/ISQ\nbase-quantity set; see `Dimension`.",
+     "statement": "inductive LTMCTDimensionBase where\n  /-- The length base dimension. -/\n  | length\n  /-- The time base dimension. -/\n  | time\n  /-- The mass base dimension. -/\n  | mass\n  /-- The charge base dimension. -/\n  | charge\n  /-- The temperature base dimension. -/\n  | temperature\nderiving DecidableEq",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 49,
+     "doc": "",
+     "statement": "instance : Fintype LTMCTDimensionBase",
+     "sorry": false
+    },
+    {
+     "name": "LTMCTDimensionBase.Exponents",
+     "kind": "abbrev",
+     "line": 55,
+     "doc": "The fixed five-component exponent tuple for PhysLib's default dimension basis.",
+     "statement": "abbrev Exponents",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 57,
+     "doc": "",
+     "statement": "instance : DimensionBasis LTMCTDimensionBase",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.length",
+     "kind": "def",
+     "line": 82,
+     "doc": "The length exponent of a `LTMCTDimensionBase` dimension.",
+     "statement": "def length (d : Dimension LTMCTDimensionBase) : Exponent",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.time",
+     "kind": "def",
+     "line": 84,
+     "doc": "The time exponent of a `LTMCTDimensionBase` dimension.",
+     "statement": "def time (d : Dimension LTMCTDimensionBase) : Exponent",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.mass",
+     "kind": "def",
+     "line": 86,
+     "doc": "The mass exponent of a `LTMCTDimensionBase` dimension.",
+     "statement": "def mass (d : Dimension LTMCTDimensionBase) : Exponent",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.charge",
+     "kind": "def",
+     "line": 88,
+     "doc": "The charge exponent of a `LTMCTDimensionBase` dimension.",
+     "statement": "def charge (d : Dimension LTMCTDimensionBase) : Exponent",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.temperature",
+     "kind": "def",
+     "line": 90,
+     "doc": "The temperature exponent of a `LTMCTDimensionBase` dimension.",
+     "statement": "def temperature (d : Dimension LTMCTDimensionBase) : Exponent",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.exponent_length",
+     "kind": "lemma",
+     "line": 93,
+     "doc": "",
+     "statement": "lemma exponent_length (d : Dimension LTMCTDimensionBase) : d.exponent .length = d.length",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.exponent_time",
+     "kind": "lemma",
+     "line": 96,
+     "doc": "",
+     "statement": "lemma exponent_time (d : Dimension LTMCTDimensionBase) : d.exponent .time = d.time",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.exponent_mass",
+     "kind": "lemma",
+     "line": 99,
+     "doc": "",
+     "statement": "lemma exponent_mass (d : Dimension LTMCTDimensionBase) : d.exponent .mass = d.mass",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.exponent_charge",
+     "kind": "lemma",
+     "line": 102,
+     "doc": "",
+     "statement": "lemma exponent_charge (d : Dimension LTMCTDimensionBase) : d.exponent .charge = d.charge",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.exponent_temperature",
+     "kind": "lemma",
+     "line": 105,
+     "doc": "",
+     "statement": "lemma exponent_temperature (d : Dimension LTMCTDimensionBase) :\n    d.exponent .temperature = d.temperature",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.ofLTMCTDimensionBase",
+     "kind": "def",
+     "line": 110,
+     "doc": "Build a `LTMCTDimensionBase` dimension from its five exponents, in the order\n`⟨length, time, mass, charge, temperature⟩`.",
+     "statement": "def ofLTMCTDimensionBase (length time mass charge temperature : Exponent) :\n    Dimension LTMCTDimensionBase",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.ofLTMCTDimensionBase_length",
+     "kind": "lemma",
+     "line": 115,
+     "doc": "",
+     "statement": "lemma ofLTMCTDimensionBase_length (l t m c θ : Exponent) :\n    (ofLTMCTDimensionBase l t m c θ).length = l",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.ofLTMCTDimensionBase_time",
+     "kind": "lemma",
+     "line": 119,
+     "doc": "",
+     "statement": "lemma ofLTMCTDimensionBase_time (l t m c θ : Exponent) :\n    (ofLTMCTDimensionBase l t m c θ).time = t",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.ofLTMCTDimensionBase_mass",
+     "kind": "lemma",
+     "line": 123,
+     "doc": "",
+     "statement": "lemma ofLTMCTDimensionBase_mass (l t m c θ : Exponent) :\n    (ofLTMCTDimensionBase l t m c θ).mass = m",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.ofLTMCTDimensionBase_charge",
+     "kind": "lemma",
+     "line": 127,
+     "doc": "",
+     "statement": "lemma ofLTMCTDimensionBase_charge (l t m c θ : Exponent) :\n    (ofLTMCTDimensionBase l t m c θ).charge = c",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.ofLTMCTDimensionBase_temperature",
+     "kind": "lemma",
+     "line": 131,
+     "doc": "",
+     "statement": "lemma ofLTMCTDimensionBase_temperature (l t m c θ : Exponent) :\n    (ofLTMCTDimensionBase l t m c θ).temperature = θ",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.time_mul",
+     "kind": "lemma",
+     "line": 135,
+     "doc": "",
+     "statement": "lemma time_mul (d1 d2 : Dimension LTMCTDimensionBase) :\n    (d1 * d2).time = d1.time + d2.time",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.length_mul",
+     "kind": "lemma",
+     "line": 139,
+     "doc": "",
+     "statement": "lemma length_mul (d1 d2 : Dimension LTMCTDimensionBase) :\n    (d1 * d2).length = d1.length + d2.length",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.mass_mul",
+     "kind": "lemma",
+     "line": 143,
+     "doc": "",
+     "statement": "lemma mass_mul (d1 d2 : Dimension LTMCTDimensionBase) :\n    (d1 * d2).mass = d1.mass + d2.mass",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.charge_mul",
+     "kind": "lemma",
+     "line": 147,
+     "doc": "",
+     "statement": "lemma charge_mul (d1 d2 : Dimension LTMCTDimensionBase) :\n    (d1 * d2).charge = d1.charge + d2.charge",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.temperature_mul",
+     "kind": "lemma",
+     "line": 151,
+     "doc": "",
+     "statement": "lemma temperature_mul (d1 d2 : Dimension LTMCTDimensionBase) :\n    (d1 * d2).temperature = d1.temperature + d2.temperature",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.one_length",
+     "kind": "lemma",
+     "line": 155,
+     "doc": "",
+     "statement": "lemma one_length : (1 : Dimension LTMCTDimensionBase).length = 0",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.one_time",
+     "kind": "lemma",
+     "line": 157,
+     "doc": "",
+     "statement": "lemma one_time : (1 : Dimension LTMCTDimensionBase).time = 0",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.one_mass",
+     "kind": "lemma",
+     "line": 160,
+     "doc": "",
+     "statement": "lemma one_mass : (1 : Dimension LTMCTDimensionBase).mass = 0",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.one_charge",
+     "kind": "lemma",
+     "line": 163,
+     "doc": "",
+     "statement": "lemma one_charge : (1 : Dimension LTMCTDimensionBase).charge = 0",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.one_temperature",
+     "kind": "lemma",
+     "line": 166,
+     "doc": "",
+     "statement": "lemma one_temperature : (1 : Dimension LTMCTDimensionBase).temperature = 0",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.inv_length",
+     "kind": "lemma",
+     "line": 169,
+     "doc": "",
+     "statement": "lemma inv_length (d : Dimension LTMCTDimensionBase) : d⁻¹.length = -d.length",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.inv_time",
+     "kind": "lemma",
+     "line": 172,
+     "doc": "",
+     "statement": "lemma inv_time (d : Dimension LTMCTDimensionBase) : d⁻¹.time = -d.time",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.inv_mass",
+     "kind": "lemma",
+     "line": 175,
+     "doc": "",
+     "statement": "lemma inv_mass (d : Dimension LTMCTDimensionBase) : d⁻¹.mass = -d.mass",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.inv_charge",
+     "kind": "lemma",
+     "line": 178,
+     "doc": "",
+     "statement": "lemma inv_charge (d : Dimension LTMCTDimensionBase) : d⁻¹.charge = -d.charge",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.inv_temperature",
+     "kind": "lemma",
+     "line": 181,
+     "doc": "",
+     "statement": "lemma inv_temperature (d : Dimension LTMCTDimensionBase) : d⁻¹.temperature = -d.temperature",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.component_epow",
+     "kind": "lemma",
+     "line": 192,
+     "doc": "",
+     "statement": "lemma component_epow (component : Dimension LTMCTDimensionBase → Exponent)\n    (b : LTMCTDimensionBase) (h : ∀ d, d.exponent b = component d)\n    (d : Dimension LTMCTDimensionBase) (c : Exponent) :\n    component (d ^ c) = component d * c",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.div_length",
+     "kind": "lemma",
+     "line": 202,
+     "doc": "",
+     "statement": "lemma div_length (d1 d2 : Dimension LTMCTDimensionBase) :\n    (d1 / d2).length = d1.length - d2.length",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.div_time",
+     "kind": "lemma",
+     "line": 206,
+     "doc": "",
+     "statement": "lemma div_time (d1 d2 : Dimension LTMCTDimensionBase) : (d1 / d2).time = d1.time - d2.time",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.div_mass",
+     "kind": "lemma",
+     "line": 209,
+     "doc": "",
+     "statement": "lemma div_mass (d1 d2 : Dimension LTMCTDimensionBase) : (d1 / d2).mass = d1.mass - d2.mass",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.div_charge",
+     "kind": "lemma",
+     "line": 212,
+     "doc": "",
+     "statement": "lemma div_charge (d1 d2 : Dimension LTMCTDimensionBase) :\n    (d1 / d2).charge = d1.charge - d2.charge",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.div_temperature",
+     "kind": "lemma",
+     "line": 216,
+     "doc": "",
+     "statement": "lemma div_temperature (d1 d2 : Dimension LTMCTDimensionBase) :\n    (d1 / d2).temperature = d1.temperature - d2.temperature",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.npow_length",
+     "kind": "lemma",
+     "line": 220,
+     "doc": "",
+     "statement": "lemma npow_length (d : Dimension LTMCTDimensionBase) (n : ℕ) : (d ^ n).length = n • d.length",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.npow_time",
+     "kind": "lemma",
+     "line": 224,
+     "doc": "",
+     "statement": "lemma npow_time (d : Dimension LTMCTDimensionBase) (n : ℕ) : (d ^ n).time = n • d.time",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.npow_mass",
+     "kind": "lemma",
+     "line": 228,
+     "doc": "",
+     "statement": "lemma npow_mass (d : Dimension LTMCTDimensionBase) (n : ℕ) : (d ^ n).mass = n • d.mass",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.npow_charge",
+     "kind": "lemma",
+     "line": 232,
+     "doc": "",
+     "statement": "lemma npow_charge (d : Dimension LTMCTDimensionBase) (n : ℕ) : (d ^ n).charge = n • d.charge",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.npow_temperature",
+     "kind": "lemma",
+     "line": 236,
+     "doc": "",
+     "statement": "lemma npow_temperature (d : Dimension LTMCTDimensionBase) (n : ℕ) :\n    (d ^ n).temperature = n • d.temperature",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.epow_length",
+     "kind": "lemma",
+     "line": 244,
+     "doc": "The length component of an `Exponent` power. Since `Pow (Dimension B) Exponent` is the\ndefault instance, an unascribed numeric exponent elaborates to this power rather than to\nthe `ℕ` one, so `npow_length` does not apply to it and this lemma is what `simp` needs.",
+     "statement": "lemma epow_length (d : Dimension LTMCTDimensionBase) (c : Exponent) :\n    (d ^ c).length = d.length * c",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.epow_time",
+     "kind": "lemma",
+     "line": 250,
+     "doc": "The time component of an `Exponent` power.",
+     "statement": "lemma epow_time (d : Dimension LTMCTDimensionBase) (c : Exponent) :\n    (d ^ c).time = d.time * c",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.epow_mass",
+     "kind": "lemma",
+     "line": 256,
+     "doc": "The mass component of an `Exponent` power.",
+     "statement": "lemma epow_mass (d : Dimension LTMCTDimensionBase) (c : Exponent) :\n    (d ^ c).mass = d.mass * c",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.epow_charge",
+     "kind": "lemma",
+     "line": 262,
+     "doc": "The charge component of an `Exponent` power.",
+     "statement": "lemma epow_charge (d : Dimension LTMCTDimensionBase) (c : Exponent) :\n    (d ^ c).charge = d.charge * c",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.epow_temperature",
+     "kind": "lemma",
+     "line": 268,
+     "doc": "The temperature component of an `Exponent` power.",
+     "statement": "lemma epow_temperature (d : Dimension LTMCTDimensionBase) (c : Exponent) :\n    (d ^ c).temperature = d.temperature * c",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.L𝓭",
+     "kind": "def",
+     "line": 273,
+     "doc": "The dimension corresponding to length.",
+     "statement": "def L𝓭 : Dimension LTMCTDimensionBase",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.L𝓭_length",
+     "kind": "lemma",
+     "line": 276,
+     "doc": "",
+     "statement": "lemma L𝓭_length : L𝓭.length = 1",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.L𝓭_time",
+     "kind": "lemma",
+     "line": 279,
+     "doc": "",
+     "statement": "lemma L𝓭_time : L𝓭.time = 0",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.L𝓭_mass",
+     "kind": "lemma",
+     "line": 282,
+     "doc": "",
+     "statement": "lemma L𝓭_mass : L𝓭.mass = 0",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.L𝓭_charge",
+     "kind": "lemma",
+     "line": 285,
+     "doc": "",
+     "statement": "lemma L𝓭_charge : L𝓭.charge = 0",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.L𝓭_temperature",
+     "kind": "lemma",
+     "line": 288,
+     "doc": "",
+     "statement": "lemma L𝓭_temperature : L𝓭.temperature = 0",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.T𝓭",
+     "kind": "def",
+     "line": 291,
+     "doc": "The dimension corresponding to time.",
+     "statement": "def T𝓭 : Dimension LTMCTDimensionBase",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.T𝓭_length",
+     "kind": "lemma",
+     "line": 294,
+     "doc": "",
+     "statement": "lemma T𝓭_length : T𝓭.length = 0",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.T𝓭_time",
+     "kind": "lemma",
+     "line": 297,
+     "doc": "",
+     "statement": "lemma T𝓭_time : T𝓭.time = 1",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.T𝓭_mass",
+     "kind": "lemma",
+     "line": 300,
+     "doc": "",
+     "statement": "lemma T𝓭_mass : T𝓭.mass = 0",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.T𝓭_charge",
+     "kind": "lemma",
+     "line": 303,
+     "doc": "",
+     "statement": "lemma T𝓭_charge : T𝓭.charge = 0",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.T𝓭_temperature",
+     "kind": "lemma",
+     "line": 306,
+     "doc": "",
+     "statement": "lemma T𝓭_temperature : T𝓭.temperature = 0",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.M𝓭",
+     "kind": "def",
+     "line": 309,
+     "doc": "The dimension corresponding to mass.",
+     "statement": "def M𝓭 : Dimension LTMCTDimensionBase",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.M𝓭_length",
+     "kind": "lemma",
+     "line": 312,
+     "doc": "",
+     "statement": "lemma M𝓭_length : M𝓭.length = 0",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.M𝓭_time",
+     "kind": "lemma",
+     "line": 315,
+     "doc": "",
+     "statement": "lemma M𝓭_time : M𝓭.time = 0",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.M𝓭_mass",
+     "kind": "lemma",
+     "line": 318,
+     "doc": "",
+     "statement": "lemma M𝓭_mass : M𝓭.mass = 1",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.M𝓭_charge",
+     "kind": "lemma",
+     "line": 321,
+     "doc": "",
+     "statement": "lemma M𝓭_charge : M𝓭.charge = 0",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.M𝓭_temperature",
+     "kind": "lemma",
+     "line": 324,
+     "doc": "",
+     "statement": "lemma M𝓭_temperature : M𝓭.temperature = 0",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.C𝓭",
+     "kind": "def",
+     "line": 327,
+     "doc": "The dimension corresponding to charge.",
+     "statement": "def C𝓭 : Dimension LTMCTDimensionBase",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.Θ𝓭",
+     "kind": "def",
+     "line": 330,
+     "doc": "The dimension corresponding to temperature.",
+     "statement": "def Θ𝓭 : Dimension LTMCTDimensionBase",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.Θ𝓭_length",
+     "kind": "lemma",
+     "line": 333,
+     "doc": "",
+     "statement": "lemma Θ𝓭_length : Θ𝓭.length = 0",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.Θ𝓭_time",
+     "kind": "lemma",
+     "line": 336,
+     "doc": "",
+     "statement": "lemma Θ𝓭_time : Θ𝓭.time = 0",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.Θ𝓭_mass",
+     "kind": "lemma",
+     "line": 339,
+     "doc": "",
+     "statement": "lemma Θ𝓭_mass : Θ𝓭.mass = 0",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.Θ𝓭_charge",
+     "kind": "lemma",
+     "line": 342,
+     "doc": "",
+     "statement": "lemma Θ𝓭_charge : Θ𝓭.charge = 0",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.Θ𝓭_temperature",
+     "kind": "lemma",
+     "line": 345,
+     "doc": "",
+     "statement": "lemma Θ𝓭_temperature : Θ𝓭.temperature = 1",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.L𝓭_eq_single",
+     "kind": "lemma",
+     "line": 356,
+     "doc": "",
+     "statement": "lemma L𝓭_eq_single : L𝓭 = single .length",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.T𝓭_eq_single",
+     "kind": "lemma",
+     "line": 358,
+     "doc": "",
+     "statement": "lemma T𝓭_eq_single : T𝓭 = single .time",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.M𝓭_eq_single",
+     "kind": "lemma",
+     "line": 360,
+     "doc": "",
+     "statement": "lemma M𝓭_eq_single : M𝓭 = single .mass",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.C𝓭_eq_single",
+     "kind": "lemma",
+     "line": 362,
+     "doc": "",
+     "statement": "lemma C𝓭_eq_single : C𝓭 = single .charge",
+     "sorry": false
+    },
+    {
+     "name": "Dimension.Θ𝓭_eq_single",
+     "kind": "lemma",
+     "line": 364,
+     "doc": "",
+     "statement": "lemma Θ𝓭_eq_single : Θ𝓭 = single .temperature",
+     "sorry": false
+    }
+   ],
+   "private": 1,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/Units/ParametricDimensionExamples.lean",
+   "module": "Physlib.Units.ParametricDimensionExamples",
+   "title": "Examples: parametric dimensions and comparing dimensioned quantities",
+   "doc": "`Dimension B` is parameterised by a basis `B` of base dimensions. This module\nillustrates two consequences.\n\n## Comparing a length with a velocity times a time\n\nA recurring question is how to compare a quantity of dimension `length` with a\nproduct of a quantity of dimension `length / time` and a quantity of dimension\n`time`. In the fixed-tuple representation of `LTMCTDimensionBase`, reducible exponent\narithmetic makes this concrete cancellation a definitional equality:\n\n* `(L𝓭 / T𝓭) * T𝓭 = L𝓭` is closed by `rfl`.\n* `WithDim ((L𝓭 / T𝓭) * T𝓭) ℝ` and `WithDim L𝓭 ℝ` are therefore definitionally\n  equal types.\n\nConsequently a bare `x = v * t` is well-typed for these concrete dimensions. For a\nrepresentation where the same cancellation holds only propositionally, `WithDim.cast`\nbridges the two dimension-indexed types.\n\n## A non-standard basis\n\nBecause `Dimension` is parametric, the same dimensional algebra and `cast`-based\ncomparison are available over any represented basis, not just the physical\n`LTMCTDimensionBase`. The unit-scaling layer (`LTMCTUnitChoices`, `dimScale`) is not\nneeded for either the algebra or the comparison, so neither is referenced here.\n\nThis module is illustrative and should not be imported by other modules.",
+   "copyright": "2026 Nicolas Rouquette",
+   "sections": [
+    {
+     "line": 75,
+     "text": "## The same comparison over a non-standard basis\n\nA basis with two base dimensions of its own — `bit` and `symbol` — that\n`LTMCTDimensionBase` does not have. Nothing in the standard units system is involved."
+    }
+   ],
+   "declarations": [
+    {
+     "name": "ParametricDimensionExamples.Info",
+     "kind": "inductive",
+     "line": 83,
+     "doc": "A basis of information-theoretic base dimensions.",
+     "statement": "inductive Info\n  /-- The information base dimension (bits). -/\n  | bit\n  /-- The symbol base dimension. -/\n  | symbol",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 89,
+     "doc": "",
+     "statement": "instance : DimensionBasis Info",
+     "sorry": false
+    },
+    {
+     "name": "ParametricDimensionExamples.bitDim",
+     "kind": "def",
+     "line": 92,
+     "doc": "The `bit` base dimension.",
+     "statement": "def bitDim : Dimension Info",
+     "sorry": false
+    },
+    {
+     "name": "ParametricDimensionExamples.symbolDim",
+     "kind": "def",
+     "line": 95,
+     "doc": "The `symbol` base dimension.",
+     "statement": "def symbolDim : Dimension Info",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/Units/ParametricUnits.lean",
+   "module": "Physlib.Units.ParametricUnits",
+   "title": "The unit side, parametrised in the same basis",
+   "doc": "The dimension basis is parametric (`Dimension B`), but the *unit* side of the\nbridge is hardwired in parallel: `LTMCTUnitChoices` has five named unit fields and\n`LTMCTUnitChoices.dimScale` folds over exactly those five. This module provides the\ngeneric twin, parametrised in the same basis `B`.\n\nEvery PhysLib base unit (`LengthUnit`, `TimeUnit`, …) is, structurally, a positive\nreal (`{ val : ℝ // 0 < val }`); the typed names carry no extra algebraic content.\nSo a unit choice over a basis `B` is a positive real per base dimension, and the\nscaling homomorphism folds the per-base unit ratio over `B`:\n\n* `UnitScale B` — a positive-real magnitude for each `b : B`.\n* `UnitScale.dimScale : UnitScale B → UnitScale B → Dimension B →* ℝ≥0` — the\n  `MonoidHom` `d ↦ ∏ b, (u₁ b / u₂ b) ^ d.exponent b`, generic in `B`.\n\nThe current five-field `LTMCTUnitChoices.dimScale` is the `LTMCTDimensionBase` instance of this\nfold, written out by hand; `LTMCTUnitChoices.toScale` exhibits the correspondence.",
+   "copyright": "2026 Nicolas Rouquette",
+   "sections": [
+    {
+     "line": 90,
+     "text": "## The current five-field `LTMCTUnitChoices` is the `LTMCTDimensionBase` instance\n\n`LTMCTUnitChoices.toScale` reads the five typed units as a `UnitScale LTMCTDimensionBase`,\nexhibiting the existing bespoke `dimScale` as the `LTMCTDimensionBase` case of the generic\nfold."
+    }
+   ],
+   "declarations": [
+    {
+     "name": "UnitScale",
+     "kind": "structure",
+     "line": 40,
+     "doc": "A choice of unit for each base dimension of `B`: a positive-real magnitude per\nbase. This is the basis-generic form of `LTMCTUnitChoices`.",
+     "statement": "structure UnitScale (B : Type) where\n  /-- The positive-real magnitude of the chosen unit at each base dimension. -/\n  scale : B → ℝ≥0\n  /-- Each chosen unit has a positive magnitude. -/\n  scale_pos : ∀ b, 0 < scale b",
+     "sorry": false
+    },
+    {
+     "name": "UnitScale.ratio_ne_zero",
+     "kind": "lemma",
+     "line": 50,
+     "doc": "",
+     "statement": "lemma ratio_ne_zero (u1 u2 : UnitScale B) (b : B) : u1.scale b / u2.scale b ≠ 0",
+     "sorry": false
+    },
+    {
+     "name": "UnitScale.dimScale",
+     "kind": "def",
+     "line": 57,
+     "doc": "The dimension-scaling homomorphism, generic in the basis `B`: a quantity of\ndimension `d` rescales by `∏ b, (u1 b / u2 b) ^ d.exponent b` when changing the\nunit choice from `u1` to `u2`. This is the basis-generic form of\n`LTMCTUnitChoices.dimScale`.",
+     "statement": "noncomputable def dimScale [DimensionBasis B] [Fintype B]\n    (u1 u2 : UnitScale B) : Dimension B →* ℝ≥0",
+     "sorry": false
+    },
+    {
+     "name": "UnitScale.dimScale_self",
+     "kind": "lemma",
+     "line": 68,
+     "doc": "",
+     "statement": "lemma dimScale_self [DimensionBasis B] [Fintype B] (u : UnitScale B) (d : Dimension B) :\n    dimScale u u d = 1",
+     "sorry": false
+    },
+    {
+     "name": "UnitScale.dimScale_one",
+     "kind": "lemma",
+     "line": 75,
+     "doc": "",
+     "statement": "lemma dimScale_one [DimensionBasis B] [Fintype B] (u1 u2 : UnitScale B) :\n    dimScale u1 u2 1 = 1",
+     "sorry": false
+    },
+    {
+     "name": "UnitScale.dimScale_transitive",
+     "kind": "lemma",
+     "line": 79,
+     "doc": "The scaling is transitive (a cocycle in the unit choices).",
+     "statement": "lemma dimScale_transitive [DimensionBasis B] [Fintype B]\n    (u1 u2 u3 : UnitScale B) (d : Dimension B) :\n    dimScale u1 u2 d * dimScale u2 u3 d = dimScale u1 u3 d",
+     "sorry": false
+    },
+    {
+     "name": "LTMCTUnitChoices.toScale",
+     "kind": "def",
+     "line": 101,
+     "doc": "Read a five-field `LTMCTUnitChoices` as a `UnitScale` over `LTMCTDimensionBase`.",
+     "statement": "noncomputable def toScale (u : LTMCTUnitChoices) : UnitScale LTMCTDimensionBase",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/Units/PositiveRealUnit.lean",
+   "module": "Physlib.Units.PositiveRealUnit",
+   "title": "A. Shared arithmetic for positive-real unit types",
+   "doc": "`PositiveRealUnitCore` records a unit magnitude and its inverse construction.\nEach concrete unit declares this instance explicitly and keeps its own structure.\nThe inhabited and same-type division instances, rescaling operation, and arithmetic\nlaws are provided generically. No command or type-specific lemma wrappers are needed.\n\nThe arithmetic is adapted from the existing unit modules by Joseph Tooby-Smith.\nThis interface describes an individual unit type, independently of the selection\nand combination of units by `UnitMagnitudeCatalog` and `UnitSystem`.",
+   "copyright": "2025 Joseph Tooby-Smith",
+   "sections": [
+    {
+     "line": 28,
+     "text": "## A.1. Representation and instances"
+    },
+    {
+     "line": 65,
+     "text": "## A.2. Unit ratios"
+    },
+    {
+     "line": 107,
+     "text": "## A.3. Positive rescaling"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "PositiveRealUnitCore",
+     "kind": "class",
+     "line": 33,
+     "doc": "Common representation API for unit types whose magnitude is a positive real.",
+     "statement": "class PositiveRealUnitCore (U : Type) where\n  /-- The underlying real magnitude of a unit. -/\n  val : U → ℝ\n  /-- Every unit has a strictly positive magnitude. -/\n  pos : ∀ x, 0 < val x\n  /-- Construct a unit from a positive real magnitude. -/\n  ofVal : (r : ℝ) → 0 < r → U\n  /-- Construction preserves the supplied magnitude. -/\n  val_ofVal : ∀ r hr, val (ofVal r hr) = r\n  /-- Reconstructing a unit from its magnitude returns that unit. -/\n  ofVal_val : ∀ x, ofVal (val x) (pos x) = x",
+     "sorry": false
+    },
+    {
+     "name": "PositiveRealUnitCore.instInhabited",
+     "kind": "instance",
+     "line": 50,
+     "doc": "The unit of magnitude one supplies a default unit.",
+     "statement": "instance (priority := 100) instInhabited : Inhabited U",
+     "sorry": false
+    },
+    {
+     "name": "PositiveRealUnitCore.val_ne_zero",
+     "kind": "lemma",
+     "line": 54,
+     "doc": "",
+     "statement": "lemma val_ne_zero (x : U) : val x ≠ 0",
+     "sorry": false
+    },
+    {
+     "name": "PositiveRealUnitCore.ratio",
+     "kind": "def",
+     "line": 58,
+     "doc": "The ratio of the magnitudes of two units of the same type.",
+     "statement": "noncomputable def ratio (x y : U) : NNReal",
+     "sorry": false
+    },
+    {
+     "name": "PositiveRealUnitCore.instHDiv",
+     "kind": "instance",
+     "line": 62,
+     "doc": "Division of two units of the same type is their nonnegative real ratio.",
+     "statement": "noncomputable instance (priority := 100) instHDiv : HDiv U U NNReal",
+     "sorry": false
+    },
+    {
+     "name": "PositiveRealUnitCore.div_eq_val",
+     "kind": "lemma",
+     "line": 70,
+     "doc": "Unit division agrees with the ratio of the two magnitudes.",
+     "statement": "lemma div_eq_val (x y : U) :\n    x / y = (⟨val x / val y, _root_.div_nonneg (pos x).le (pos y).le⟩ : NNReal)",
+     "sorry": false
+    },
+    {
+     "name": "PositiveRealUnitCore.div_pos",
+     "kind": "lemma",
+     "line": 74,
+     "doc": "",
+     "statement": "lemma div_pos (x y : U) : (0 : NNReal) < x / y",
+     "sorry": false
+    },
+    {
+     "name": "PositiveRealUnitCore.div_ne_zero",
+     "kind": "lemma",
+     "line": 80,
+     "doc": "",
+     "statement": "lemma div_ne_zero (x y : U) : x / y ≠ (0 : NNReal)",
+     "sorry": false
+    },
+    {
+     "name": "PositiveRealUnitCore.div_self",
+     "kind": "lemma",
+     "line": 84,
+     "doc": "",
+     "statement": "lemma div_self (x : U) : x / x = (1 : NNReal)",
+     "sorry": false
+    },
+    {
+     "name": "PositiveRealUnitCore.div_symm",
+     "kind": "lemma",
+     "line": 89,
+     "doc": "",
+     "statement": "lemma div_symm (x y : U) : x / y = (y / x : NNReal)⁻¹",
+     "sorry": false
+    },
+    {
+     "name": "PositiveRealUnitCore.div_mul_div",
+     "kind": "lemma",
+     "line": 95,
+     "doc": "Unit ratios compose along an intermediate choice of unit.",
+     "statement": "lemma div_mul_div (x y z : U) : (x / y : NNReal) * (y / z) = x / z",
+     "sorry": false
+    },
+    {
+     "name": "PositiveRealUnitCore.div_mul_div_coe",
+     "kind": "lemma",
+     "line": 102,
+     "doc": "",
+     "statement": "lemma div_mul_div_coe (x y z : U) :\n    (x / y : ℝ) * (y / z : ℝ) = x / z",
+     "sorry": false
+    },
+    {
+     "name": "PositiveRealUnitCore.scale",
+     "kind": "def",
+     "line": 112,
+     "doc": "Rescale a unit by a strictly positive real factor.",
+     "statement": "def scale (r : ℝ) (x : U) (hr : 0 < r := by norm_num) : U",
+     "sorry": false
+    },
+    {
+     "name": "PositiveRealUnitCore.scale_val",
+     "kind": "lemma",
+     "line": 116,
+     "doc": "",
+     "statement": "lemma scale_val (r : ℝ) (x : U) (hr : 0 < r) :\n    val (scale r x hr) = r * val x",
+     "sorry": false
+    },
+    {
+     "name": "PositiveRealUnitCore.ext",
+     "kind": "lemma",
+     "line": 121,
+     "doc": "Units with equal magnitudes are equal.",
+     "statement": "lemma ext {x y : U} (h : val x = val y) : x = y",
+     "sorry": false
+    },
+    {
+     "name": "PositiveRealUnitCore.unitsSMul",
+     "kind": "def",
+     "line": 128,
+     "doc": "The rescaling of a unit magnitude by a strictly positive real, given as a unit of `ℝ≥0`.\nThis is `scale` at a factor known to be positive, so the `scale` lemmas may be applied to\n`u • x` after rewriting with `units_smul_eq_scale`.",
+     "statement": "def unitsSMul (u : ℝ≥0ˣ) (x : U) : U",
+     "sorry": false
+    },
+    {
+     "name": "PositiveRealUnitCore.instMulActionUnitsNNReal",
+     "kind": "instance",
+     "line": 137,
+     "doc": "A unit magnitude may be rescaled by a strictly positive real, that is by a unit of `ℝ≥0`.\nNo action of `ℝ≥0` on `U` can be compatible with the magnitude: taking `a > 0` and `b = 0` in\n`mul_smul` would force `0 • x` to be a fixed point of every rescaling, and no element of `U`\nis.",
+     "statement": "instance instMulActionUnitsNNReal : MulAction ℝ≥0ˣ U",
+     "sorry": false
+    },
+    {
+     "name": "PositiveRealUnitCore.units_smul_eq_scale",
+     "kind": "lemma",
+     "line": 152,
+     "doc": "A rescaling by a unit of `ℝ≥0` is the rescaling by its underlying positive factor. Rewriting\nwith this makes the `scale` lemmas applicable; `simp` does not see through `HSMul.hSMul` on its\nown.",
+     "statement": "lemma units_smul_eq_scale (u : ℝ≥0ˣ) (x : U) :\n    u • x = scale ((u : ℝ≥0) : ℝ) x (by\n      have hu : ((u : ℝ≥0) : ℝ) ≠ 0 := by simp [Units.ne_zero u]\n      exact lt_of_le_of_ne (by positivity) (Ne.symm hu))",
+     "sorry": false
+    },
+    {
+     "name": "PositiveRealUnitCore.val_units_smul",
+     "kind": "lemma",
+     "line": 159,
+     "doc": "The magnitude of a rescaling by a unit of `ℝ≥0`.",
+     "statement": "lemma val_units_smul (u : ℝ≥0ˣ) (x : U) :\n    val (u • x) = ((u : ℝ≥0) : ℝ) * val x",
+     "sorry": false
+    },
+    {
+     "name": "PositiveRealUnitCore.scale_div_self",
+     "kind": "lemma",
+     "line": 165,
+     "doc": "The ratio of a rescaled unit to the original is the scaling factor.",
+     "statement": "lemma scale_div_self (x : U) (r : ℝ) (hr : 0 < r) :\n    scale r x hr / x = (⟨r, le_of_lt hr⟩ : NNReal)",
+     "sorry": false
+    },
+    {
+     "name": "PositiveRealUnitCore.self_div_scale",
+     "kind": "lemma",
+     "line": 174,
+     "doc": "The reverse ratio is the reciprocal of the scaling factor.",
+     "statement": "lemma self_div_scale (x : U) (r : ℝ) (hr : 0 < r) :\n    x / scale r x hr =\n      (⟨1 / r, _root_.div_nonneg (by simp) (le_of_lt hr)⟩ : NNReal)",
+     "sorry": false
+    },
+    {
+     "name": "PositiveRealUnitCore.scale_one",
+     "kind": "lemma",
+     "line": 183,
+     "doc": "",
+     "statement": "lemma scale_one (x : U) : scale 1 x = x",
+     "sorry": false
+    },
+    {
+     "name": "PositiveRealUnitCore.scale_div_scale",
+     "kind": "lemma",
+     "line": 189,
+     "doc": "Rescaling two units multiplies their ratio by the ratio of the factors.",
+     "statement": "lemma scale_div_scale (x1 x2 : U) {r1 r2 : ℝ} (hr1 : 0 < r1) (hr2 : 0 < r2) :\n    scale r1 x1 hr1 / scale r2 x2 hr2 =\n      (⟨r1, le_of_lt hr1⟩ / ⟨r2, le_of_lt hr2⟩ : NNReal) * (x1 / x2)",
+     "sorry": false
+    },
+    {
+     "name": "PositiveRealUnitCore.scale_scale",
+     "kind": "lemma",
+     "line": 200,
+     "doc": "Successive rescalings compose by multiplication of their factors.",
+     "statement": "lemma scale_scale (x : U) (r1 r2 : ℝ) (hr1 : 0 < r1) (hr2 : 0 < r2) :\n    scale r1 (scale r2 x hr2) hr1 =\n      scale (r1 * r2) x (mul_pos hr1 hr2)",
+     "sorry": false
+    },
+    {
+     "name": "PositiveRealUnitCore.scale_div",
+     "kind": "lemma",
+     "line": 208,
+     "doc": "Rescaling a unit by the ratio to a target unit produces that target.",
+     "statement": "lemma scale_div (x y : U) (hr : 0 < (y / x : ℝ)) :\n    scale (y / x) x hr = y",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/Units/SIUnitChoices.lean",
+   "module": "Physlib.Units.SIUnitChoices",
+   "title": "A typed unit choice over the ISQ base quantities (the SI units)",
+   "doc": "`LTMCTUnitChoices` is the typed unit choice over PhysLib's default dimension basis\n`LTMCTDimensionBase`. This module gives the *second* typed unit choice — over the\nseven ISQ base quantities `ISQDimensionBase` — realised through the basis-generic\n`UnitMagnitudeCatalog` / `UnitSystem` machinery of `Physlib.Units.UnitSystem`. It is the concrete\npayoff of parametrising the unit side: the same generic layer produces a fully *typed*\nunit choice over a different basis, and the scaling homomorphism comes for free from\n`UnitScale.dimScale` — nothing is re-proved by hand.\n\nThe ISQ base quantities are length, mass, time, electric current, thermodynamic\ntemperature, amount of substance and luminous intensity. Four of the corresponding typed\nunit types already exist (`LengthUnit`, `MassUnit`, `TimeUnit`, `TemperatureUnit`); the\nremaining three — `CurrentUnit`, `AmountUnit`, `LuminousIntensityUnit` — are introduced\nhere. They follow the `LengthUnit` convention of a positive-real magnitude and support\nrescaling and unit-ratio laws through `PositiveRealUnitCore`. Following PhysLib's\nlayout, these types may ultimately live under the relevant physics directories.\n\n`SIUnitChoices := UnitSystem ISQDimensionBase` is then the typed SI unit choice, and\n`SIUnitChoices.SI` is the coherent SI choice (metre, kilogram, second, ampere, kelvin,\nmole, candela). Contrast `SIUnitChoices` (current-based, seven typed slots) with\n`LTMCTUnitChoices` (charge-based, five typed slots): the machinery supports both, and the\n`Dimension.ltmctToISQ` / `Dimension.isqToLTMCT` bridge relates their bases.",
+   "copyright": "2026 Nicolas Rouquette",
+   "sections": [
+    {
+     "line": 43,
+     "text": "## Typed unit types for the ISQ base quantities not already present"
+    },
+    {
+     "line": 122,
+     "text": "## The ISQ `UnitMagnitudeCatalog` instance\n\nEach ISQ base quantity is assigned its typed unit type; the magnitude layer is the\npositive-real `val`, exactly as for the `LTMCTDimensionBase` instance."
+    },
+    {
+     "line": 149,
+     "text": "## Folding over the ISQ base quantities"
+    },
+    {
+     "line": 169,
+     "text": "## `SIUnitChoices`"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "CurrentUnit",
+     "kind": "structure",
+     "line": 51,
+     "doc": "A unit of electric current — a choice of positive-real magnitude. The SI coherent\nchoice is the ampere.",
+     "statement": "structure CurrentUnit where\n  /-- The underlying scale of the unit. -/\n  val : ℝ\n  property : 0 < val",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 56,
+     "doc": "",
+     "statement": "instance : PositiveRealUnitCore CurrentUnit",
+     "sorry": false
+    },
+    {
+     "name": "CurrentUnit.amperes",
+     "kind": "def",
+     "line": 68,
+     "doc": "The SI coherent unit of electric current, the ampere.",
+     "statement": "def amperes : CurrentUnit",
+     "sorry": false
+    },
+    {
+     "name": "CurrentUnit.milliamperes",
+     "kind": "def",
+     "line": 71,
+     "doc": "One milliampere, equal to `10⁻³` amperes.",
+     "statement": "noncomputable def milliamperes : CurrentUnit",
+     "sorry": false
+    },
+    {
+     "name": "AmountUnit",
+     "kind": "structure",
+     "line": 78,
+     "doc": "A unit of amount of substance — a choice of positive-real magnitude. The SI coherent\nchoice is the mole.",
+     "statement": "structure AmountUnit where\n  /-- The underlying scale of the unit. -/\n  val : ℝ\n  property : 0 < val",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 83,
+     "doc": "",
+     "statement": "instance : PositiveRealUnitCore AmountUnit",
+     "sorry": false
+    },
+    {
+     "name": "AmountUnit.moles",
+     "kind": "def",
+     "line": 95,
+     "doc": "The SI coherent unit of amount of substance, the mole.",
+     "statement": "def moles : AmountUnit",
+     "sorry": false
+    },
+    {
+     "name": "LuminousIntensityUnit",
+     "kind": "structure",
+     "line": 101,
+     "doc": "A unit of luminous intensity — a choice of positive-real magnitude. The SI coherent\nchoice is the candela.",
+     "statement": "structure LuminousIntensityUnit where\n  /-- The underlying scale of the unit. -/\n  val : ℝ\n  property : 0 < val",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 106,
+     "doc": "",
+     "statement": "instance : PositiveRealUnitCore LuminousIntensityUnit",
+     "sorry": false
+    },
+    {
+     "name": "LuminousIntensityUnit.candelas",
+     "kind": "def",
+     "line": 118,
+     "doc": "The SI coherent unit of luminous intensity, the candela.",
+     "statement": "def candelas : LuminousIntensityUnit",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 131,
+     "doc": "",
+     "statement": "noncomputable instance : UnitMagnitudeCatalog ISQDimensionBase",
+     "sorry": false
+    },
+    {
+     "name": "prod_univ_ISQDimensionBase",
+     "kind": "lemma",
+     "line": 159,
+     "doc": "The product over the seven ISQ base quantities, in canonical enumeration order — the\n`ISQDimensionBase` companion to `prod_univ_LTMCTDimensionBase`, a reusable fact about the\n`Fintype` enumeration for folding `Finset.prod` over the ISQ basis.",
+     "statement": "lemma prod_univ_ISQDimensionBase {M : Type} [CommMonoid M] (f : ISQDimensionBase → M) :\n    ∏ b, f b = f .length * f .mass * f .time * f .current * f .temperature\n      * f .amount * f .luminousIntensity",
+     "sorry": false
+    },
+    {
+     "name": "SIUnitChoices",
+     "kind": "abbrev",
+     "line": 178,
+     "doc": "A **typed SI unit choice**: a typed unit at every ISQ base quantity. This is the\nseven-slot, current-based sibling of the five-slot, charge-based `LTMCTUnitChoices`,\nproduced by the same basis-generic `UnitSystem` / `UnitMagnitudeCatalog` machinery.",
+     "statement": "abbrev SIUnitChoices",
+     "sorry": false
+    },
+    {
+     "name": "SIUnitChoices.SI",
+     "kind": "def",
+     "line": 183,
+     "doc": "The coherent SI unit choice: metre, kilogram, second, ampere, kelvin, mole, candela.",
+     "statement": "noncomputable def SI : SIUnitChoices",
+     "sorry": false
+    },
+    {
+     "name": "SIUnitChoices.dimScale",
+     "kind": "def",
+     "line": 194,
+     "doc": "The dimension-scaling homomorphism over the ISQ basis, obtained *for free* from the\ngeneric `UnitScale.dimScale` fold — no per-basis hand-rolling.",
+     "statement": "noncomputable def dimScale (u1 u2 : SIUnitChoices) : Dimension ISQDimensionBase →* ℝ≥0",
+     "sorry": false
+    },
+    {
+     "name": "SIUnitChoices.dimScale_self",
+     "kind": "lemma",
+     "line": 202,
+     "doc": "A quantity of ISQ dimension does not rescale between a unit choice and itself.",
+     "statement": "lemma dimScale_self (u : SIUnitChoices) (d : Dimension ISQDimensionBase) :\n    dimScale u u d = 1",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/Units/UnitDependent.lean",
+   "module": "Physlib.Units.UnitDependent",
+   "title": "",
+   "doc": "## Types which depend on dimensions\n\nIn addition to types which carry a dimension, we also have types whose elements\ndepend on a choice of a units. For example a function\n`f : M1 → M2` between two types `M1` and `M2` which carry dimensions does not itself\ncarry a dimensions, but is dependent on a choice of units.\n\nWe define three versions\n- `UnitDependent M` having a function `scaleUnit : LTMCTUnitChoices → LTMCTUnitChoices → M → M`\n  subject to two conditions `scaleUnit_trans` and `scaleUnit_id`\n- `LinearUnitDependent M` extends `UnitDependent M` with additional linearity conditions\n  on `scaleUnit`.\n- `ContinuousLinearUnitDependent M` extends `LinearUnitDependent M` with an additional\n  continuity condition on `scaleUnit`.",
+   "copyright": "2025 Joseph Tooby-Smith",
+   "sections": [
+    {
+     "line": 78,
+     "text": "## Basic properties of scaleUnit"
+    },
+    {
+     "line": 96,
+     "text": "### Variations on the map scaleUnit"
+    },
+    {
+     "line": 162,
+     "text": "### Instances of the type classes\n\nWe construct instance of the `UnitDependent`, `LinearUnitDependent` and\n  `ContinuousLinearUnitDependent` type classes based on `CarriesDimension`\n  and functions."
+    },
+    {
+     "line": 265,
+     "text": "### Functions"
+    },
+    {
+     "line": 427,
+     "text": "### isDimensionallyCorrect"
+    },
+    {
+     "line": 470,
+     "text": "## Some type classes to help track dimensions"
+    },
+    {
+     "line": 493,
+     "text": "## Dim Subtype"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "UnitDependent",
+     "kind": "class",
+     "line": 40,
+     "doc": "A type carries the instance `UnitDependent M` if it depends on a choice of units.\nThis dependence is manifested in `scaleUnit u1 u2` which describes how elements of `M` change\nunder a scaling of units which would take `u1` to `u2`.\n\nThis type is used for functions, and propositions etc.",
+     "statement": "class UnitDependent (M : Type) where\n  /-- `scaleUnit u1 u2` is the map transforming elements of `M` under a\n    scaling of units which would take the unit `u1` to the unit `u2`. This is not\n    to say that in `scaleUnit u1 u2 m` that `m` should be interpreted as being in the units `u1`,\n    although this is often the case.\n  -/\n  scaleUnit : LTMCTUnitChoices → LTMCTUnitChoices → M → M\n  scaleUnit_trans : ∀ u1 u2 u3 m, scaleUnit u2 u3 (scaleUnit u1 u2 m) = scaleUnit u1 u3 m\n  scaleUnit_trans' : ∀ u1 u2 u3 m, scaleUnit u1 u2 (scaleUnit u2 u3 m) = scaleUnit u1 u3 m\n  scaleUnit_id : ∀ u m, scaleUnit u u m = m",
+     "sorry": false
+    },
+    {
+     "name": "MulUnitDependent",
+     "kind": "class",
+     "line": 55,
+     "doc": "A type `M` with an instance of `UnitDependent M` such that `scaleUnit u1 u2` is compatible\nwith the `MulAction ℝ≥0 M` instance on `M`.",
+     "statement": "class MulUnitDependent (M : Type) [MulAction ℝ≥0 M] extends\n    UnitDependent M where\n  scaleUnit_mul : ∀ u1 u2 (r : ℝ≥0) m,\n    scaleUnit u1 u2 (r • m) = r • scaleUnit u1 u2 m",
+     "sorry": false
+    },
+    {
+     "name": "LinearUnitDependent",
+     "kind": "class",
+     "line": 64,
+     "doc": "A type `M` with an instance of `UnitDependent M` such that `scaleUnit u1 u2` is compatible\nwith the `Module ℝ M` instance on `M`.",
+     "statement": "class LinearUnitDependent (M : Type) [AddCommMonoid M] [Module ℝ M] extends UnitDependent M where\n  scaleUnit_add : ∀ u1 u2 m1 m2,\n    scaleUnit u1 u2 (m1 + m2) = scaleUnit u1 u2 m1 + scaleUnit u1 u2 m2\n  scaleUnit_smul : ∀ u1 u2 (r : ℝ) m,\n    scaleUnit u1 u2 (r • m) = r • scaleUnit u1 u2 m",
+     "sorry": false
+    },
+    {
+     "name": "ContinuousLinearUnitDependent",
+     "kind": "class",
+     "line": 74,
+     "doc": "A type `M` with an instance of `UnitDependent M` such that `scaleUnit u1 u2` is compatible\nwith the `Module ℝ M` instance on `M`, and is continuous.",
+     "statement": "class ContinuousLinearUnitDependent (M : Type) [AddCommMonoid M] [Module ℝ M]\n    [TopologicalSpace M] extends LinearUnitDependent M where\n  scaleUnit_cont : ∀ u1 u2, Continuous (scaleUnit u1 u2)",
+     "sorry": false
+    },
+    {
+     "name": "UnitDependent.scaleUnit_symm_apply",
+     "kind": "lemma",
+     "line": 85,
+     "doc": "",
+     "statement": "lemma UnitDependent.scaleUnit_symm_apply {M : Type} [UnitDependent M]\n    (u1 u2 : LTMCTUnitChoices) (m : M) :\n    scaleUnit u2 u1 (scaleUnit u1 u2 m) = m",
+     "sorry": false
+    },
+    {
+     "name": "UnitDependent.scaleUnit_injective",
+     "kind": "lemma",
+     "line": 91,
+     "doc": "",
+     "statement": "lemma UnitDependent.scaleUnit_injective {M : Type} [UnitDependent M]\n    (u1 u2 : LTMCTUnitChoices) (m1 m2 : M) :\n    scaleUnit u1 u2 m1 = scaleUnit u1 u2 m2 ↔ m1 = m2",
+     "sorry": false
+    },
+    {
+     "name": "UnitDependent.scaleUnitEquiv",
+     "kind": "def",
+     "line": 104,
+     "doc": "For an `M` with an instance of `UnitDependent M`, `scaleUnit u1 u2` as an equivalence.",
+     "statement": "def UnitDependent.scaleUnitEquiv {M : Type} [UnitDependent M]\n    (u1 u2 : LTMCTUnitChoices) : M ≃ M",
+     "sorry": false
+    },
+    {
+     "name": "LinearUnitDependent.scaleUnitLinear",
+     "kind": "def",
+     "line": 113,
+     "doc": "For an `M` with an instance of `LinearUnitDependent M`, `scaleUnit u1 u2` as a\nlinear map.",
+     "statement": "def LinearUnitDependent.scaleUnitLinear\n    {M : Type} [AddCommMonoid M] [Module ℝ M] [LinearUnitDependent M]\n    (u1 u2 : LTMCTUnitChoices) :\n    M →ₗ[ℝ] M",
+     "sorry": false
+    },
+    {
+     "name": "LinearUnitDependent.scaleUnitLinearEquiv",
+     "kind": "def",
+     "line": 123,
+     "doc": "For an `M` with an instance of `LinearUnitDependent M`, `scaleUnit u1 u2` as a\nlinear equivalence.",
+     "statement": "def LinearUnitDependent.scaleUnitLinearEquiv {M : Type} [AddCommMonoid M]\n    [Module ℝ M] [LinearUnitDependent M] (u1 u2 : LTMCTUnitChoices) :\n    M ≃ₗ[ℝ] M",
+     "sorry": false
+    },
+    {
+     "name": "ContinuousLinearUnitDependent.scaleUnitContLinear",
+     "kind": "def",
+     "line": 132,
+     "doc": "For an `M` with an instance of `ContinuousLinearUnitDependent M`, `scaleUnit u1 u2` as a\ncontinuous linear map.",
+     "statement": "def ContinuousLinearUnitDependent.scaleUnitContLinear {M : Type} [AddCommMonoid M] [Module ℝ M]\n    [TopologicalSpace M] [ContinuousLinearUnitDependent M]\n    (u1 u2 : LTMCTUnitChoices) : M →L[ℝ] M",
+     "sorry": false
+    },
+    {
+     "name": "ContinuousLinearUnitDependent.scaleUnitContLinearEquiv",
+     "kind": "def",
+     "line": 140,
+     "doc": "For an `M` with an instance of `ContinuousLinearUnitDependent M`, `scaleUnit u1 u2` as a\ncontinuous linear equivalence.",
+     "statement": "def ContinuousLinearUnitDependent.scaleUnitContLinearEquiv {M : Type} [AddCommMonoid M] [Module ℝ M]\n    [TopologicalSpace M] [ContinuousLinearUnitDependent M]\n    (u1 u2 : LTMCTUnitChoices) : M ≃L[ℝ] M",
+     "sorry": false
+    },
+    {
+     "name": "ContinuousLinearUnitDependent.scaleUnitContLinearEquiv_apply",
+     "kind": "lemma",
+     "line": 148,
+     "doc": "",
+     "statement": "lemma ContinuousLinearUnitDependent.scaleUnitContLinearEquiv_apply\n    {M : Type} [AddCommGroup M] [Module ℝ M] [TopologicalSpace M]\n    [ContinuousLinearUnitDependent M]\n    (u1 u2 : LTMCTUnitChoices) (m : M) :\n    (ContinuousLinearUnitDependent.scaleUnitContLinearEquiv u1 u2) m =\n      scaleUnit u1 u2 m",
+     "sorry": false
+    },
+    {
+     "name": "ContinuousLinearUnitDependent.scaleUnitContLinearEquiv_symm_apply",
+     "kind": "lemma",
+     "line": 156,
+     "doc": "",
+     "statement": "lemma ContinuousLinearUnitDependent.scaleUnitContLinearEquiv_symm_apply\n    {M : Type} [AddCommGroup M] [Module ℝ M] [TopologicalSpace M]\n    [ContinuousLinearUnitDependent M]\n    (u1 u2 : LTMCTUnitChoices) (m : M) :\n    (ContinuousLinearUnitDependent.scaleUnitContLinearEquiv u1 u2).symm m =\n      scaleUnit u2 u1 m",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 174,
+     "doc": "",
+     "statement": "noncomputable instance : UnitDependent LTMCTUnitChoices",
+     "sorry": false
+    },
+    {
+     "name": "LTMCTUnitChoices.scaleUnit_apply_fst",
+     "kind": "lemma",
+     "line": 193,
+     "doc": "",
+     "statement": "lemma LTMCTUnitChoices.scaleUnit_apply_fst (u1 u2 : LTMCTUnitChoices) :\n    (scaleUnit u1 u2 u1) = u2",
+     "sorry": false
+    },
+    {
+     "name": "LTMCTUnitChoices.dimScale_scaleUnit",
+     "kind": "lemma",
+     "line": 198,
+     "doc": "",
+     "statement": "lemma LTMCTUnitChoices.dimScale_scaleUnit {u1 u2 u : LTMCTUnitChoices}\n    (d : Dimension LTMCTDimensionBase) :\n    u.dimScale (scaleUnit u1 u2 u) d = u1.dimScale u2 d",
+     "sorry": false
+    },
+    {
+     "name": "LTMCTUnitChoices.dimScaleUnits_scaleUnit",
+     "kind": "lemma",
+     "line": 205,
+     "doc": "",
+     "statement": "lemma LTMCTUnitChoices.dimScaleUnits_scaleUnit {u1 u2 u : LTMCTUnitChoices}\n    (d : Dimension LTMCTDimensionBase) :\n    u.dimScaleUnits (scaleUnit u1 u2 u) d = u1.dimScaleUnits u2 d",
+     "sorry": false
+    },
+    {
+     "name": "Dimensionful.of_scaleUnit_units",
+     "kind": "lemma",
+     "line": 211,
+     "doc": "",
+     "statement": "lemma Dimensionful.of_scaleUnit_units {M : Type} [CarriesDimension M] {u1 u2 u : LTMCTUnitChoices}\n    (c : Dimensionful M) :\n    c.1 (scaleUnit u1 u2 u) =\n    u1.dimScaleUnits u2 (dim M) • c.1 (u)",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 217,
+     "doc": "",
+     "statement": "noncomputable instance {M1 : Type} [CarriesDimension M1] : UnitDependent M1",
+     "sorry": false
+    },
+    {
+     "name": "HasDim.scaleUnit_apply_units",
+     "kind": "lemma",
+     "line": 229,
+     "doc": "",
+     "statement": "lemma HasDim.scaleUnit_apply_units {M : Type} [CarriesDimension M]\n    (u1 u2 : LTMCTUnitChoices) (m : M) :\n    scaleUnit u1 u2 m = (u1.dimScaleUnits u2 (dim M)) • m",
+     "sorry": false
+    },
+    {
+     "name": "HasDim.scaleUnit_apply",
+     "kind": "lemma",
+     "line": 236,
+     "doc": "The scaling of a type carrying a dimension which also has an action of `ℝ≥0`, phrased with\n`dimScale` in place of `dimScaleUnits`.",
+     "statement": "lemma HasDim.scaleUnit_apply {M : Type} [HasDim M] [MulAction ℝ≥0 M]\n    (u1 u2 : LTMCTUnitChoices) (m : M) :\n    scaleUnit u1 u2 m = (u1.dimScale u2 (dim M)) • m",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 244,
+     "doc": "A type carrying a dimension which also has a `MulAction ℝ≥0` compatible with the scaling by\nunits is `MulUnitDependent`. A type whose elements are strictly positive carries no action of\n`ℝ≥0` compatible with its magnitude, and so is `UnitDependent` only.",
+     "statement": "noncomputable instance {M1 : Type} [HasDim M1] [MulAction ℝ≥0 M1] : MulUnitDependent M1",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 249,
+     "doc": "",
+     "statement": "noncomputable instance {M : Type} [AddCommMonoid M] [Module ℝ M] [HasDim M] :\n    LinearUnitDependent M",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 254,
+     "doc": "",
+     "statement": "noncomputable instance {M : Type} [AddCommMonoid M] [Module ℝ M]\n    [HasDim M] [TopologicalSpace M]\n    [ContinuousConstSMul ℝ M] : ContinuousLinearUnitDependent M",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 271,
+     "doc": "",
+     "statement": "noncomputable instance {M1 M2 : Type} [UnitDependent M2] :\n    UnitDependent (M1 → M2)",
+     "sorry": false
+    },
+    {
+     "name": "UnitDependent.scaleUnit_apply_fun_right",
+     "kind": "lemma",
+     "line": 285,
+     "doc": "",
+     "statement": "lemma UnitDependent.scaleUnit_apply_fun_right {M1 M2 : Type} [UnitDependent M2]\n    (u1 u2 : LTMCTUnitChoices) (f : M1 → M2) (m1 : M1) :\n    scaleUnit u1 u2 f m1 = scaleUnit u1 u2 (f m1)",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 290,
+     "doc": "",
+     "statement": "noncomputable instance {M1 M2 : Type} [AddCommMonoid M1] [Module ℝ M1]\n    [AddCommMonoid M2] [Module ℝ M2] [LinearUnitDependent M2] :\n    LinearUnitDependent (M1 →ₗ[ℝ] M2)",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 314,
+     "doc": "",
+     "statement": "noncomputable instance {M1 M2 : Type} [AddCommGroup M1] [Module ℝ M1]\n    [TopologicalSpace M1]\n    [AddCommGroup M2] [Module ℝ M2] [TopologicalSpace M2] [ContinuousConstSMul ℝ M2]\n    [IsTopologicalAddGroup M2]\n    [ContinuousLinearUnitDependent M2] :\n    ContinuousLinearUnitDependent (M1 →L[ℝ] M2)",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 337,
+     "doc": "",
+     "statement": "noncomputable instance {M1 M2 : Type} [UnitDependent M1] :\n    UnitDependent (M1 → M2)",
+     "sorry": false
+    },
+    {
+     "name": "UnitDependent.scaleUnit_apply_fun_left",
+     "kind": "lemma",
+     "line": 351,
+     "doc": "",
+     "statement": "lemma UnitDependent.scaleUnit_apply_fun_left {M1 M2 : Type} [UnitDependent M1]\n    (u1 u2 : LTMCTUnitChoices) (f : M1 → M2) (m1 : M1) :\n    scaleUnit u1 u2 f m1 = f (scaleUnit u2 u1 m1)",
+     "sorry": false
+    },
+    {
+     "name": "instUnitDependentTwoSided",
+     "kind": "instance",
+     "line": 355,
+     "doc": "",
+     "statement": "noncomputable instance instUnitDependentTwoSided\n    {M1 M2 : Type} [UnitDependent M1] [UnitDependent M2] :\n    UnitDependent (M1 → M2)",
+     "sorry": false
+    },
+    {
+     "name": "UnitDependent.scaleUnit_apply_fun",
+     "kind": "lemma",
+     "line": 370,
+     "doc": "",
+     "statement": "lemma UnitDependent.scaleUnit_apply_fun {M1 M2 : Type} [UnitDependent M1]\n    [UnitDependent M2] (u1 u2 : LTMCTUnitChoices) (f : M1 → M2) (m1 : M1) :\n    scaleUnit u1 u2 f m1 = scaleUnit u1 u2 (f (scaleUnit u2 u1 m1))",
+     "sorry": false
+    },
+    {
+     "name": "instUnitDependentTwoSidedMul",
+     "kind": "instance",
+     "line": 374,
+     "doc": "",
+     "statement": "noncomputable instance instUnitDependentTwoSidedMul\n    {M1 M2 : Type} [UnitDependent M1] [MulAction ℝ≥0 M2] [MulUnitDependent M2] :\n    MulUnitDependent (M1 → M2)",
+     "sorry": false
+    },
+    {
+     "name": "instContinuousLinearUnitDependentMap",
+     "kind": "instance",
+     "line": 392,
+     "doc": "",
+     "statement": "noncomputable instance instContinuousLinearUnitDependentMap\n    {M1 M2 : Type} [AddCommGroup M1] [Module ℝ M1]\n    [TopologicalSpace M1] [ContinuousLinearUnitDependent M1]\n    [AddCommGroup M2] [Module ℝ M2] [TopologicalSpace M2] [ContinuousConstSMul ℝ M2]\n    [IsTopologicalAddGroup M2]\n    [ContinuousLinearUnitDependent M2] :\n    ContinuousLinearUnitDependent (M1 →L[ℝ] M2)",
+     "sorry": false
+    },
+    {
+     "name": "ContinuousLinearUnitDependent.scaleUnit_apply_fun",
+     "kind": "lemma",
+     "line": 417,
+     "doc": "",
+     "statement": "lemma ContinuousLinearUnitDependent.scaleUnit_apply_fun {M1 M2 : Type}\n    [AddCommGroup M1] [Module ℝ M1]\n    [TopologicalSpace M1] [ContinuousLinearUnitDependent M1]\n    [AddCommGroup M2] [Module ℝ M2] [TopologicalSpace M2] [ContinuousConstSMul ℝ M2]\n    [IsTopologicalAddGroup M2]\n    [ContinuousLinearUnitDependent M2]\n    (u1 u2 : LTMCTUnitChoices) (f : M1 →L[ℝ] M2) (m1 : M1) :\n    scaleUnit u1 u2 f m1 =\n      scaleUnit u1 u2 (f (scaleUnit u2 u1 m1))",
+     "sorry": false
+    },
+    {
+     "name": "IsDimensionallyCorrect",
+     "kind": "def",
+     "line": 443,
+     "doc": "A term of type `M` carrying an instance of `UnitDependent M` is said to be\ndimensionally correct if under a change of units it remains the same.\n\nMore colloquially, something is dimensionally correct if it (e.g. it's value or its truth\nfor a proposition) does not depend on the units it is written in.\n\nFor the case of `m : M` with `CarriesDimension M` then `IsDimensionallyCorrect m`\ncorresponds to the statement that `m` does not depend on units, e.g. is zero\nor the dimension of `M` is zero.",
+     "statement": "def IsDimensionallyCorrect {M : Type} [UnitDependent M] (m : M) : Prop",
+     "sorry": false
+    },
+    {
+     "name": "isDimensionallyCorrect_iff",
+     "kind": "lemma",
+     "line": 446,
+     "doc": "",
+     "statement": "lemma isDimensionallyCorrect_iff {M : Type} [UnitDependent M] (m : M) :\n    IsDimensionallyCorrect m ↔ ∀ u1 u2 : LTMCTUnitChoices,\n      scaleUnit u1 u2 m = m",
+     "sorry": false
+    },
+    {
+     "name": "isDimensionallyCorrect_fun_iff",
+     "kind": "lemma",
+     "line": 451,
+     "doc": "",
+     "statement": "lemma isDimensionallyCorrect_fun_iff {M1 M2 : Type} [UnitDependent M1] [UnitDependent M2]\n    {f : M1 → M2} :\n    IsDimensionallyCorrect f ↔\n    ∀ u1 u2 : LTMCTUnitChoices, ∀ m, scaleUnit u1 u2 (f (scaleUnit u2 u1 m)) = f m",
+     "sorry": false
+    },
+    {
+     "name": "isDimensionallyCorrect_fun_left",
+     "kind": "lemma",
+     "line": 458,
+     "doc": "",
+     "statement": "lemma isDimensionallyCorrect_fun_left {M1 M2 : Type} [UnitDependent M1]\n    {f : M1 → M2} :\n    IsDimensionallyCorrect f ↔\n    ∀ u1 u2 : LTMCTUnitChoices, ∀ m, (f (scaleUnit u2 u1 m)) = f m",
+     "sorry": false
+    },
+    {
+     "name": "isDimensionallyCorrect_fun_right",
+     "kind": "lemma",
+     "line": 465,
+     "doc": "",
+     "statement": "lemma isDimensionallyCorrect_fun_right {M1 M2 : Type} [UnitDependent M2]\n    {f : M1 → M2} :\n    IsDimensionallyCorrect f ↔\n    ∀ u1 u2 : LTMCTUnitChoices, ∀ m, scaleUnit u1 u2 (f m) = f m",
+     "sorry": false
+    },
+    {
+     "name": "DMul",
+     "kind": "class",
+     "line": 478,
+     "doc": "The multiplication of an element of `M1` with an element of `M2` to get an element\nof `M3` in such a way that dimensions are preserved.",
+     "statement": "class DMul (M1 M2 M3 : Type) [CarriesDimension M1] [CarriesDimension M2] [CarriesDimension M3]\n    extends HMul M1 M2 M3 where\n  mul_dim : ∀ (m1 : Dimensionful M1) (m2 : Dimensionful M2),\n    HasDimension (fun u => hMul (m1.1 u) (m2.1 u))",
+     "sorry": false
+    },
+    {
+     "name": "DMul.hMul_scaleUnit",
+     "kind": "lemma",
+     "line": 484,
+     "doc": "",
+     "statement": "lemma DMul.hMul_scaleUnit {M1 M2 M3 : Type} [CarriesDimension M1] [CarriesDimension M2]\n    [CarriesDimension M3]\n    [DMul M1 M2 M3] (m1 : M1) (m2 : M2) (u1 u2 : LTMCTUnitChoices) :\n    (scaleUnit u1 u2 m1) * (scaleUnit u1 u2 m2) =\n    scaleUnit u1 u2 (m1 * m2)",
+     "sorry": false
+    },
+    {
+     "name": "DimSet",
+     "kind": "def",
+     "line": 501,
+     "doc": "Given a type `M` that depends on units, e.g. the function type `M1 → M2` between two types\ncarrying a dimension, the subtype of `M` which scales according to the dimension `d`.",
+     "statement": "def DimSet (M : Type) [MulAction ℝ≥0 M] [MulUnitDependent M] (d : Dimension LTMCTDimensionBase) :\n    Set M",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 505,
+     "doc": "",
+     "statement": "instance (M : Type) [MulAction ℝ≥0 M] [MulUnitDependent M] (d : Dimension LTMCTDimensionBase) :\n    MulAction ℝ≥0 (DimSet M d)",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 519,
+     "doc": "",
+     "statement": "instance (M : Type) [MulAction ℝ≥0 M] [MulUnitDependent M] (d : Dimension LTMCTDimensionBase) :\n    CarriesDimension (DimSet M d)",
+     "sorry": false
+    },
+    {
+     "name": "scaleUnit_dimSet_val",
+     "kind": "lemma",
+     "line": 524,
+     "doc": "",
+     "statement": "lemma scaleUnit_dimSet_val {M : Type} [MulAction ℝ≥0 M] [MulUnitDependent M]\n    (d : Dimension LTMCTDimensionBase) (m : DimSet M d) (u1 u2 : LTMCTUnitChoices) :\n    (scaleUnit u1 u2 m).1 = scaleUnit u1 u2 m.1",
+     "sorry": false
+    },
+    {
+     "name": "DimSet.mem_iff",
+     "kind": "lemma",
+     "line": 528,
+     "doc": "",
+     "statement": "lemma DimSet.mem_iff {M : Type} [MulAction ℝ≥0 M] [MulUnitDependent M]\n    (d : Dimension LTMCTDimensionBase) (m : M) :\n    m ∈ DimSet M d ↔ ∀ u1 u2, scaleUnit u1 u2 m = (LTMCTUnitChoices.dimScale u1 u2 d) • m",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/Units/UnitSystem.lean",
+   "module": "Physlib.Units.UnitSystem",
+   "title": "Unit systems, parametrised in a dimension basis",
+   "doc": "A **unit system** is the everyday physics object: a rule fixing one concrete unit for\neach base quantity. SI fixes the metre for length, the second for time, the kilogram for\nmass, …; CGS fixes the centimetre, second and gram. Choosing a system gives every quantity\na numerical value; changing systems rescales those values.\n\nThis module makes that notion work for *any* dimension basis `B` (matching the\nbasis-generic `Dimension B`), while keeping units *typed*: the unit in the length slot has\ntype `LengthUnit`, the one in the time slot `TimeUnit`, so the checker rejects a mass unit\nin a length slot.\n\n* `UnitMagnitudeCatalog B` — the **menu** for basis `B`. For each base dimension `b : B` it\n  gives a *type* `Unit b` of admissible units — so a dimension may offer many (length: metre,\n  kilometre, micrometre, …) — and a *function* `mag` assigning each unit its one positive-real\n  magnitude. The menu lists the options and picks none; many unit systems share one catalog.\n* `UnitSystem B` — the **pick**: a function choosing *exactly one* unit per base dimension. A\n  single unit system therefore fixes one length unit — metre *or* kilometre, never both — so\n  metre and kilometre are two menu entries selected by two different `UnitSystem`s over the\n  same catalog. SI and CGS are two such picks.\n* `UnitSystem.toScale : UnitSystem B → UnitScale B` — forget the unit *types*, keep only\n  the magnitudes, landing in the bare magnitude layer `UnitScale B` where the scaling\n  homomorphism `UnitScale.dimScale` is proved once.\n\n**Menu vs. pick.** The catalog is a menu, not a choice: it says which units exist and what\neach weighs, but selects none — a `UnitSystem` makes the selection. And in PhysLib a base\nunit *is* a positive real (`{ val : ℝ // 0 < val }`), i.e. its own magnitude, so the\nmagnitude comes fixed with the unit; there is no separate \"assign a magnitude\" step. Hence\nmetre, micrometre and kilometre are three *different* units on the one length menu, and\n\"SI in metres\" versus \"the same in micrometres\" are two different `UnitSystem`s over the\n**same** catalog — related by `UnitScale.dimScale`, which computes the 10⁶ factor between\nthem. (The multiplicity one might expect from \"many magnitudes\" lives here, among the unit\nsystems, not in many catalogs.)\n\nThe `LTMCTDimensionBase` catalog recovers PhysLib's five named unit types, and\n`LTMCTUnitChoices ≃ UnitSystem LTMCTDimensionBase` exhibits the bespoke five-field record\nas that instance. Scaling laws are **not** re-proved here — they live once on `UnitScale B`,\nand the typed layer is a thin faithful wrapper projecting onto it via `toScale`.\n\nThis is the typed, basis-generic layer discussed as \"Option D\" in the review of the\ndimension-parametrisation PR; it is the only design that keeps *both* basis-genericity and\ntyped-unit safety.",
+   "copyright": "2026 Nicolas Rouquette",
+   "sections": [
+    {
+     "line": 101,
+     "text": "## The `LTMCTDimensionBase` catalog\n\nThe default basis's `UnitMagnitudeCatalog` recovers exactly PhysLib's five named typed unit\ntypes, so `UnitSystem LTMCTDimensionBase` is the typed five-slot unit system and\n`u .length : LengthUnit`, `LengthUnit.meters`, … all still work — and a `MassUnit` cannot\nbe placed in the length slot."
+    },
+    {
+     "line": 137,
+     "text": "## `LTMCTUnitChoices` is `UnitSystem LTMCTDimensionBase`\n\nThe bespoke five-field record and the generic unit system over the default basis carry\nthe same data."
+    },
+    {
+     "line": 177,
+     "text": "## The bespoke scaling law is the generic fold\n\n`LTMCTUnitChoices.dimScale` — the five explicit `rpow` factors written out by hand in\n`Basic.lean` — is exactly the generic `UnitScale.dimScale` fold (a `Finset.prod` over the\nbasis) at the `LTMCTDimensionBase` instance, applied to `toScale`. This is what makes the\ntyped layer a *faithful* wrapper rather than a second, independent statement of the\nscaling law: there is one source of truth, the generic fold on `UnitScale B`."
+    }
+   ],
+   "declarations": [
+    {
+     "name": "UnitMagnitudeCatalog",
+     "kind": "class",
+     "line": 66,
+     "doc": "A **menu of typed units** for a basis `B`: for each base dimension `b : B`, a *type*\n`Unit b` of admissible units (a dimension may offer several — metre, kilometre, …) and a\n*function* `mag` giving each its single positive-real magnitude. It lists the options and\npicks none — a `UnitSystem` makes the pick. One catalog underlies many unit systems (SI,\nCGS, …); the magnitude is the data `toScale` reads to drive rescaling.",
+     "statement": "class UnitMagnitudeCatalog (B : Type) where\n  /-- The typed unit type at each base dimension. -/\n  Unit : B → Type\n  /-- The positive-real magnitude of a typed unit. -/\n  mag : {b : B} → Unit b → ℝ≥0\n  /-- Every typed unit has a positive magnitude. -/\n  mag_pos : ∀ {b : B} (u : Unit b), 0 < mag u",
+     "sorry": false
+    },
+    {
+     "name": "UnitSystem",
+     "kind": "def",
+     "line": 78,
+     "doc": "A **unit system** over a basis `B` with a `UnitMagnitudeCatalog`: one typed unit chosen\nper base dimension — the pick off the catalog's menu, and the formal counterpart of SI,\nCGS, …. Over the default basis, `u .length : LengthUnit`, and a `MassUnit` cannot be\nplaced in the length slot.",
+     "statement": "def UnitSystem (B : Type) [UnitMagnitudeCatalog B]",
+     "sorry": false
+    },
+    {
+     "name": "UnitSystem.ext",
+     "kind": "theorem",
+     "line": 87,
+     "doc": "Two unit systems agree once they pick the same unit at every base dimension: `UnitSystem`\nis extensional, as befits a choice-per-dimension.",
+     "statement": "theorem ext {u v : UnitSystem B} (h : ∀ b, u b = v b) : u = v",
+     "sorry": false
+    },
+    {
+     "name": "UnitSystem.toScale",
+     "kind": "def",
+     "line": 91,
+     "doc": "Forget a unit system to its magnitude layer `UnitScale B`: keep each chosen unit's\nmagnitude, drop its type — the layer where `UnitScale.dimScale` is already proved.",
+     "statement": "noncomputable def toScale (u : UnitSystem B) : UnitScale B",
+     "sorry": false
+    },
+    {
+     "name": "UnitSystem.toScale_scale",
+     "kind": "lemma",
+     "line": 96,
+     "doc": "",
+     "statement": "lemma toScale_scale (u : UnitSystem B) (b : B) :\n    (toScale u).scale b = UnitMagnitudeCatalog.mag (u b)",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 112,
+     "doc": "",
+     "statement": "noncomputable instance : UnitMagnitudeCatalog LTMCTDimensionBase",
+     "sorry": false
+    },
+    {
+     "name": "LTMCTUnitChoices.equivUnitSystem",
+     "kind": "def",
+     "line": 150,
+     "doc": "The bespoke five-field `LTMCTUnitChoices` and the generic `UnitSystem LTMCTDimensionBase`\nare the same data.",
+     "statement": "def equivUnitSystem : LTMCTUnitChoices ≃ UnitSystem LTMCTDimensionBase",
+     "sorry": false
+    },
+    {
+     "name": "LTMCTUnitChoices.toScale_equivUnitSystem",
+     "kind": "lemma",
+     "line": 169,
+     "doc": "The typed generic projection agrees with the bespoke `LTMCTUnitChoices.toScale`: reading\n`LTMCTUnitChoices` as a `UnitSystem` and forgetting to the magnitude layer is the same as\nthe bespoke `toScale`.",
+     "statement": "lemma toScale_equivUnitSystem (u : LTMCTUnitChoices) :\n    (equivUnitSystem u).toScale = u.toScale",
+     "sorry": false
+    },
+    {
+     "name": "prod_univ_LTMCTDimensionBase",
+     "kind": "lemma",
+     "line": 193,
+     "doc": "The product over the five default base quantities, in canonical enumeration order — a\nreusable fact about the `Fintype` enumeration of `LTMCTDimensionBase`, for folding\n`Finset.prod` over the default basis (e.g. in a hand-rolled scaling law).",
+     "statement": "lemma prod_univ_LTMCTDimensionBase {M : Type} [CommMonoid M]\n    (f : LTMCTDimensionBase → M) :\n    ∏ b, f b = f .length * f .time * f .mass * f .charge * f .temperature",
+     "sorry": false
+    },
+    {
+     "name": "LTMCTUnitChoices.dimScale_eq_toScale_dimScale",
+     "kind": "lemma",
+     "line": 227,
+     "doc": "The hand-rolled five-factor `LTMCTUnitChoices.dimScale` equals the basis-generic\n`UnitScale.dimScale` fold at `LTMCTDimensionBase`, applied to `toScale`. The scaling law\ntherefore has a single source of truth on the magnitude layer `UnitScale B`.",
+     "statement": "lemma dimScale_eq_toScale_dimScale (u1 u2 : LTMCTUnitChoices) (d : Dimension LTMCTDimensionBase) :\n    u1.dimScale u2 d = UnitScale.dimScale u1.toScale u2.toScale d",
+     "sorry": false
+    }
+   ],
+   "private": 5,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/Units/WithDim/Analysis.lean",
+   "module": "Physlib.Units.WithDim.Analysis",
+   "title": "A. Analysis of dimension-tagged quantities",
+   "doc": "The numerical value of `WithDim d M` identifies it with `M`. We use that explicit\nidentification to induce a norm on the existing additive group, not to replace\nits addition, natural/integer scalar multiplication, or the existing `NNReal` action.\n\nThe norm measures a numerical representation in fixed units. It is not asserted to\nbe invariant under a change of units. The coordinate equivalence is explicit: no\ncoercion silently discards a dimension tag. No `Ring` or `Field` on a nontrivial\nphysical dimension is introduced.\n\n`transport` and `transportLinearMap` lift a function and its derivative between tagged\ncoordinates. They do not assert that the function is dimensionally correct. In particular,\nchanging the units of model parameters is a separate question. `hasFDerivAt_transport`\nuses the existing calculus of continuous linear equivalences.",
+   "copyright": "2026 Hirotaka Monya",
+   "sections": [
+    {
+     "line": 38,
+     "text": "## A.1. Coordinates and the induced norm"
+    },
+    {
+     "line": 91,
+     "text": "## A.2. Transport of existing functions and derivatives"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "WithDim.toValueAddEquiv",
+     "kind": "def",
+     "line": 43,
+     "doc": "Forget the dimension tag by an explicit additive equivalence of numerical values.",
+     "statement": "def toValueAddEquiv (d : Dimension B) (M : Type) [AddCommMonoid M] :\n    WithDim d M ≃+ M",
+     "sorry": false
+    },
+    {
+     "name": "WithDim.instNormedAddCommGroup",
+     "kind": "instance",
+     "line": 52,
+     "doc": "The existing additive group carries the norm of its numerical representation.",
+     "statement": "instance instNormedAddCommGroup (d : Dimension B) (M : Type) [NormedAddCommGroup M] :\n    NormedAddCommGroup (WithDim d M)",
+     "sorry": false
+    },
+    {
+     "name": "WithDim.toValueLinearEquiv",
+     "kind": "def",
+     "line": 58,
+     "doc": "The numerical-value coordinates are linear over dimensionless real scalars.",
+     "statement": "def toValueLinearEquiv (d : Dimension B) (M : Type) [AddCommMonoid M] [Module ℝ M] :\n    WithDim d M ≃ₗ[ℝ] M",
+     "sorry": false
+    },
+    {
+     "name": "WithDim.instNormedSpace",
+     "kind": "instance",
+     "line": 68,
+     "doc": "The induced norm is compatible with the existing real scalar multiplication.",
+     "statement": "instance instNormedSpace (d : Dimension B) (M : Type) [NormedAddCommGroup M]\n    [NormedSpace ℝ M] : NormedSpace ℝ (WithDim d M)",
+     "sorry": false
+    },
+    {
+     "name": "WithDim.norm_eq",
+     "kind": "lemma",
+     "line": 73,
+     "doc": "",
+     "statement": "lemma norm_eq {d : Dimension B} {M : Type} [NormedAddCommGroup M] (x : WithDim d M) :\n    ‖x‖ = ‖x.val‖",
+     "sorry": false
+    },
+    {
+     "name": "WithDim.toValueLinearIsometryEquiv",
+     "kind": "def",
+     "line": 77,
+     "doc": "Numerical-value coordinates form a linear isometry for a fixed unit representation.",
+     "statement": "def toValueLinearIsometryEquiv (d : Dimension B) (M : Type) [NormedAddCommGroup M]\n    [NormedSpace ℝ M] : WithDim d M ≃ₗᵢ[ℝ] M",
+     "sorry": false
+    },
+    {
+     "name": "WithDim.toValueLinearIsometryEquiv_apply",
+     "kind": "lemma",
+     "line": 82,
+     "doc": "",
+     "statement": "lemma toValueLinearIsometryEquiv_apply (d : Dimension B) (M : Type)\n    [NormedAddCommGroup M] [NormedSpace ℝ M] (x : WithDim d M) :\n    toValueLinearIsometryEquiv d M x = x.val",
+     "sorry": false
+    },
+    {
+     "name": "WithDim.toValueLinearIsometryEquiv_symm_apply",
+     "kind": "lemma",
+     "line": 87,
+     "doc": "",
+     "statement": "lemma toValueLinearIsometryEquiv_symm_apply (d : Dimension B) (M : Type)\n    [NormedAddCommGroup M] [NormedSpace ℝ M] (x : M) :\n    (toValueLinearIsometryEquiv d M).symm x = (⟨x⟩ : WithDim d M)",
+     "sorry": false
+    },
+    {
+     "name": "WithDim.transport",
+     "kind": "def",
+     "line": 97,
+     "doc": "Express a numerical function in explicitly chosen input and output dimensions.\nThis definition by itself makes no claim of dimensional correctness.",
+     "statement": "def transport {M N : Type} (d e : Dimension B) (f : M → N) :\n    WithDim d M → WithDim e N",
+     "sorry": false
+    },
+    {
+     "name": "WithDim.transport_val",
+     "kind": "lemma",
+     "line": 101,
+     "doc": "",
+     "statement": "lemma transport_val {M N : Type} (d e : Dimension B) (f : M → N) (x : WithDim d M) :\n    (transport d e f x).val = f x.val",
+     "sorry": false
+    },
+    {
+     "name": "WithDim.transportLinearMap",
+     "kind": "def",
+     "line": 105,
+     "doc": "Express a continuous linear map between tagged numerical coordinates.",
+     "statement": "def transportLinearMap {M N : Type} [NormedAddCommGroup M] [NormedSpace ℝ M]\n    [NormedAddCommGroup N] [NormedSpace ℝ N] (d e : Dimension B) (f : M →L[ℝ] N) :\n    WithDim d M →L[ℝ] WithDim e N",
+     "sorry": false
+    },
+    {
+     "name": "WithDim.transportLinearMap_val",
+     "kind": "lemma",
+     "line": 112,
+     "doc": "",
+     "statement": "lemma transportLinearMap_val {M N : Type} [NormedAddCommGroup M] [NormedSpace ℝ M]\n    [NormedAddCommGroup N] [NormedSpace ℝ N] (d e : Dimension B) (f : M →L[ℝ] N)\n    (x : WithDim d M) : (transportLinearMap d e f x).val = f x.val",
+     "sorry": false
+    },
+    {
+     "name": "WithDim.hasFDerivAt_transport",
+     "kind": "lemma",
+     "line": 117,
+     "doc": "Reuse a derivative in numerical coordinates for the corresponding tagged function.",
+     "statement": "lemma hasFDerivAt_transport {M N : Type} [NormedAddCommGroup M] [NormedSpace ℝ M]\n    [NormedAddCommGroup N] [NormedSpace ℝ N] (d e : Dimension B) {f : M → N}\n    {f' : M →L[ℝ] N} {x : WithDim d M} (h : HasFDerivAt f f' x.val) :\n    HasFDerivAt (transport d e f) (transportLinearMap d e f') x",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/Units/WithDim/Area.lean",
+   "module": "Physlib.Units.WithDim.Area",
+   "title": "Area",
+   "doc": "In this module we define the dimensionful type corresponding to an area.\nWe define specific instances of areas, such as square meters, square feet, etc.",
+   "copyright": "2025 Joseph Tooby-Smith",
+   "sections": [
+    {
+     "line": 30,
+     "text": "## Basic areas"
+    },
+    {
+     "line": 59,
+     "text": "## Area in SI units"
+    },
+    {
+     "line": 101,
+     "text": "## Relations between areas"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "DimArea",
+     "kind": "abbrev",
+     "line": 24,
+     "doc": "The type of areas in the absence of a choice of unit.",
+     "statement": "abbrev DimArea : Type",
+     "sorry": false
+    },
+    {
+     "name": "DimArea.squareMeter",
+     "kind": "def",
+     "line": 39,
+     "doc": "The dimensional area corresponding to 1 square meter.",
+     "statement": "noncomputable def squareMeter : DimArea",
+     "sorry": false
+    },
+    {
+     "name": "DimArea.squareFoot",
+     "kind": "def",
+     "line": 42,
+     "doc": "The dimensional area corresponding to 1 square foot.",
+     "statement": "noncomputable def squareFoot : DimArea",
+     "sorry": false
+    },
+    {
+     "name": "DimArea.squareMile",
+     "kind": "def",
+     "line": 46,
+     "doc": "The dimensional area corresponding to 1 square mile.",
+     "statement": "noncomputable def squareMile : DimArea",
+     "sorry": false
+    },
+    {
+     "name": "DimArea.are",
+     "kind": "def",
+     "line": 50,
+     "doc": "The dimensional area corresponding to 1 are (100 square meters).",
+     "statement": "noncomputable def are : DimArea",
+     "sorry": false
+    },
+    {
+     "name": "DimArea.hectare",
+     "kind": "def",
+     "line": 53,
+     "doc": "The dimensional area corresponding to 1 hectare (10,000 square meters).",
+     "statement": "noncomputable def hectare : DimArea",
+     "sorry": false
+    },
+    {
+     "name": "DimArea.acre",
+     "kind": "def",
+     "line": 56,
+     "doc": "The dimensional area corresponding to 1 acre (1/640 square miles).",
+     "statement": "noncomputable def acre : DimArea",
+     "sorry": false
+    },
+    {
+     "name": "DimArea.squareMeter_in_SI",
+     "kind": "lemma",
+     "line": 66,
+     "doc": "",
+     "statement": "lemma squareMeter_in_SI : squareMeter.1 SI = ⟨1⟩",
+     "sorry": false
+    },
+    {
+     "name": "DimArea.squareFoot_in_SI",
+     "kind": "lemma",
+     "line": 71,
+     "doc": "",
+     "statement": "lemma squareFoot_in_SI : squareFoot.1 SI = ⟨0.09290304⟩",
+     "sorry": false
+    },
+    {
+     "name": "DimArea.squareMile_in_SI",
+     "kind": "lemma",
+     "line": 79,
+     "doc": "",
+     "statement": "lemma squareMile_in_SI : squareMile.1 SI = ⟨2589988.110336⟩",
+     "sorry": false
+    },
+    {
+     "name": "DimArea.are_in_SI",
+     "kind": "lemma",
+     "line": 86,
+     "doc": "",
+     "statement": "lemma are_in_SI : are.1 SI = ⟨100⟩",
+     "sorry": false
+    },
+    {
+     "name": "DimArea.hectare_in_SI",
+     "kind": "lemma",
+     "line": 90,
+     "doc": "",
+     "statement": "lemma hectare_in_SI : hectare.1 SI = ⟨10000⟩",
+     "sorry": false
+    },
+    {
+     "name": "DimArea.acre_in_SI",
+     "kind": "lemma",
+     "line": 95,
+     "doc": "",
+     "statement": "lemma acre_in_SI : acre.1 SI = ⟨4046.8564224⟩",
+     "sorry": false
+    },
+    {
+     "name": "DimArea.acre_eq_mul_squareFeet",
+     "kind": "lemma",
+     "line": 109,
+     "doc": "One acre is exactly `43560` square feet.",
+     "statement": "lemma acre_eq_mul_squareFeet : acre = (43560 : ℝ≥0) • squareFoot",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/Units/WithDim/Basic.lean",
+   "module": "Physlib.Units.WithDim.Basic",
+   "title": "",
+   "doc": "## WithDim\n\nWithDim is the type `M` which carrying the dimension `d`.\n\nThe dimension `d : Dimension B` may be taken over any basis `B` of base dimensions.\nThe *algebraic* structure of `WithDim d M` (its additive, order, scalar-action,\nmultiplication, division and casting instances) is available for every basis `B`.\nThe *unit-scaling* structure (`HasDim`, `DMul`, and the `scaleUnit` lemmas), which\nroutes through `LTMCTUnitChoices.dimScale`, is provided for the standard basis\n`LTMCTDimensionBase`.\n\nReal scalar multiplication acts on numerical values. Import\n`Physlib.Units.WithDim.Analysis` for the normed-space structures and explicit\ncoordinate equivalences used to reuse existing analytic results.",
+   "copyright": "2025 Joseph Tooby-Smith",
+   "sections": [
+    {
+     "line": 54,
+     "text": "## Inherited instances"
+    },
+    {
+     "line": 311,
+     "text": "## Division"
+    },
+    {
+     "line": 349,
+     "text": "## Casting"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "WithDim",
+     "kind": "structure",
+     "line": 33,
+     "doc": "The type `M` carrying an instance of a dimension `d`.",
+     "statement": "structure WithDim {B : Type} [DimensionBasis B] (d : Dimension B) (M : Type) where\n  /-- The underlying value of `M`. -/\n  val : M",
+     "sorry": false
+    },
+    {
+     "name": "WithDim.ext",
+     "kind": "lemma",
+     "line": 40,
+     "doc": "",
+     "statement": "lemma ext {B : Type} [DimensionBasis B] {d : Dimension B} {M}\n    (x1 x2 : WithDim d M) (h : x1.val = x2.val) :\n    x1 = x2",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 47,
+     "doc": "",
+     "statement": "instance (d : Dimension LTMCTDimensionBase) (M : Type) : HasDim (WithDim d M)",
+     "sorry": false
+    },
+    {
+     "name": "WithDim.dim_apply",
+     "kind": "lemma",
+     "line": 51,
+     "doc": "",
+     "statement": "lemma dim_apply (d : Dimension LTMCTDimensionBase) (M : Type) :\n    dim (WithDim d M) = d",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 58,
+     "doc": "",
+     "statement": "instance {B : Type} [DimensionBasis B] (d : Dimension B) (M : Type) [Inhabited M] :\n    Inhabited (WithDim d M)",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 62,
+     "doc": "",
+     "statement": "instance {B : Type} [DimensionBasis B] (d : Dimension B) (M : Type) [Zero M] :\n    Zero (WithDim d M)",
+     "sorry": false
+    },
+    {
+     "name": "WithDim.val_zero",
+     "kind": "lemma",
+     "line": 67,
+     "doc": "",
+     "statement": "lemma val_zero {B : Type} [DimensionBasis B] {d : Dimension B} {M : Type} [Zero M] :\n    (0 : WithDim d M).val = 0",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 70,
+     "doc": "",
+     "statement": "instance {B : Type} [DimensionBasis B] (d : Dimension B) (M : Type) [Add M] :\n    Add (WithDim d M)",
+     "sorry": false
+    },
+    {
+     "name": "WithDim.val_add",
+     "kind": "lemma",
+     "line": 75,
+     "doc": "",
+     "statement": "lemma val_add {B : Type} [DimensionBasis B] {d : Dimension B} {M : Type} [Add M]\n    (m1 m2 : WithDim d M) :\n    (m1 + m2).val = m1.val + m2.val",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 79,
+     "doc": "",
+     "statement": "instance {B : Type} [DimensionBasis B] (d : Dimension B) (M : Type) [Neg M] :\n    Neg (WithDim d M)",
+     "sorry": false
+    },
+    {
+     "name": "WithDim.val_neg",
+     "kind": "lemma",
+     "line": 84,
+     "doc": "",
+     "statement": "lemma val_neg {B : Type} [DimensionBasis B] {d : Dimension B} {M : Type} [Neg M]\n    (m : WithDim d M) :\n    (-m).val = -m.val",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 88,
+     "doc": "",
+     "statement": "instance {B : Type} [DimensionBasis B] (d : Dimension B) (M : Type) [Sub M] :\n    Sub (WithDim d M)",
+     "sorry": false
+    },
+    {
+     "name": "WithDim.val_sub",
+     "kind": "lemma",
+     "line": 93,
+     "doc": "",
+     "statement": "lemma val_sub {B : Type} [DimensionBasis B] {d : Dimension B} {M : Type} [Sub M]\n    (m1 m2 : WithDim d M) :\n    (m1 - m2).val = m1.val - m2.val",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 97,
+     "doc": "",
+     "statement": "instance {B : Type} [DimensionBasis B] (d : Dimension B) (M : Type) [AddSemigroup M] :\n    AddSemigroup (WithDim d M)",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 103,
+     "doc": "",
+     "statement": "instance {B : Type} [DimensionBasis B] (d : Dimension B) (M : Type) [AddCommSemigroup M] :\n    AddCommSemigroup (WithDim d M)",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 109,
+     "doc": "",
+     "statement": "instance {B : Type} [DimensionBasis B] (d : Dimension B) (M : Type) [AddMonoid M] :\n    AddMonoid (WithDim d M)",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 119,
+     "doc": "",
+     "statement": "instance {B : Type} [DimensionBasis B] (d : Dimension B) (M : Type) [AddCommMonoid M] :\n    AddCommMonoid (WithDim d M)",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 125,
+     "doc": "",
+     "statement": "instance {B : Type} [DimensionBasis B] (d : Dimension B) (M : Type) [AddGroup M] :\n    AddGroup (WithDim d M)",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 135,
+     "doc": "",
+     "statement": "instance {B : Type} [DimensionBasis B] (d : Dimension B) (M : Type) [AddCommGroup M] :\n    AddCommGroup (WithDim d M)",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 141,
+     "doc": "",
+     "statement": "instance {B : Type} [DimensionBasis B] (d : Dimension B) (M : Type) [LE M] :\n    LE (WithDim d M)",
+     "sorry": false
+    },
+    {
+     "name": "WithDim.le_def",
+     "kind": "lemma",
+     "line": 146,
+     "doc": "",
+     "statement": "lemma le_def {B : Type} [DimensionBasis B] {d : Dimension B} {M : Type} [LE M]\n    (m1 m2 : WithDim d M) :\n    m1 ≤ m2 ↔ m1.val ≤ m2.val",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 150,
+     "doc": "",
+     "statement": "instance {B : Type} [DimensionBasis B] (d : Dimension B) (M : Type) [LT M] :\n    LT (WithDim d M)",
+     "sorry": false
+    },
+    {
+     "name": "WithDim.lt_def",
+     "kind": "lemma",
+     "line": 155,
+     "doc": "",
+     "statement": "lemma lt_def {B : Type} [DimensionBasis B] {d : Dimension B} {M : Type} [LT M]\n    (m1 m2 : WithDim d M) :\n    m1 < m2 ↔ m1.val < m2.val",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 159,
+     "doc": "",
+     "statement": "instance {B : Type} [DimensionBasis B] (d : Dimension B) (M : Type) [Preorder M] :\n    Preorder (WithDim d M)",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 170,
+     "doc": "",
+     "statement": "instance {B : Type} [DimensionBasis B] (d : Dimension B) (M : Type) [PartialOrder M] :\n    PartialOrder (WithDim d M)",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 176,
+     "doc": "",
+     "statement": "instance {B : Type} [DimensionBasis B] (d : Dimension B) (M : Type) [MulAction ℝ≥0 M] :\n    MulAction ℝ≥0 (WithDim d M)",
+     "sorry": false
+    },
+    {
+     "name": "WithDim.smul_val",
+     "kind": "lemma",
+     "line": 185,
+     "doc": "",
+     "statement": "lemma smul_val {B : Type} [DimensionBasis B] {d : Dimension B} {M : Type} [MulAction ℝ≥0 M]\n    (a : ℝ≥0) (m : WithDim d M) :\n    (a • m).val = a • m.val",
+     "sorry": false
+    },
+    {
+     "name": "WithDim.smul_val_units",
+     "kind": "lemma",
+     "line": 191,
+     "doc": "The underlying value of a scaling by a unit of `ℝ≥0`, that is by a strictly positive real.",
+     "statement": "lemma smul_val_units {B : Type} [DimensionBasis B] {d : Dimension B} {M : Type}\n    [MulAction ℝ≥0 M] (a : ℝ≥0ˣ) (m : WithDim d M) :\n    (a • m).val = (a : ℝ≥0) • m.val",
+     "sorry": false
+    },
+    {
+     "name": "WithDim.ofPositiveRealUnit",
+     "kind": "def",
+     "line": 198,
+     "doc": "A positive-real quantity which carries a dimension, regarded as a dimension-tagged real, so\nthat it can be used alongside the other dimension-tagged quantities. The dimension is read off\nthe `HasDim` instance, so the two cannot drift apart.",
+     "statement": "def ofPositiveRealUnit {U : Type} [PositiveRealUnitCore U] [HasDim U] (x : U) :\n    WithDim (dim U) ℝ",
+     "sorry": false
+    },
+    {
+     "name": "WithDim.ofPositiveRealUnit_val",
+     "kind": "lemma",
+     "line": 203,
+     "doc": "",
+     "statement": "lemma ofPositiveRealUnit_val {U : Type} [PositiveRealUnitCore U] [HasDim U] (x : U) :\n    (ofPositiveRealUnit x).val = PositiveRealUnitCore.val x",
+     "sorry": false
+    },
+    {
+     "name": "WithDim.ofPositiveRealUnit_units_smul",
+     "kind": "lemma",
+     "line": 207,
+     "doc": "",
+     "statement": "lemma ofPositiveRealUnit_units_smul {U : Type} [PositiveRealUnitCore U] [HasDim U]\n    (a : ℝ≥0ˣ) (x : U) :\n    ofPositiveRealUnit (a • x) = a • ofPositiveRealUnit x",
+     "sorry": false
+    },
+    {
+     "name": "WithDim.ofPositiveRealUnit_of_scaleUnit",
+     "kind": "lemma",
+     "line": 216,
+     "doc": "A dimensionful positive-real quantity, such as the speed of light, may be tagged with its\ndimension either before or after a change of units: `ofPositiveRealUnit` commutes with\n`scaleUnit`.",
+     "statement": "lemma ofPositiveRealUnit_of_scaleUnit {U : Type} [PositiveRealUnitCore U] [HasDim U]\n    {u1 u2 u : LTMCTUnitChoices} (c : Dimensionful U) :\n    ofPositiveRealUnit (c.1 (UnitDependent.scaleUnit u1 u2 u)) =\n    UnitDependent.scaleUnit u1 u2 (ofPositiveRealUnit (c.1 u))",
+     "sorry": false
+    },
+    {
+     "name": "WithDim.instModuleReal",
+     "kind": "instance",
+     "line": 232,
+     "doc": "Dimensionless real scalars act on the numerical value of a tagged quantity.",
+     "statement": "instance instModuleReal {B : Type} [DimensionBasis B] (d : Dimension B) (M : Type)\n    [AddCommMonoid M] [Module ℝ M] : Module ℝ (WithDim d M)",
+     "sorry": false
+    },
+    {
+     "name": "WithDim.real_smul_val",
+     "kind": "lemma",
+     "line": 243,
+     "doc": "",
+     "statement": "lemma real_smul_val {B : Type} [DimensionBasis B] {d : Dimension B} {M : Type}\n    [AddCommMonoid M] [Module ℝ M] (r : ℝ) (x : WithDim d M) :\n    (r • x).val = r • x.val",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 247,
+     "doc": "",
+     "statement": "instance {B : Type} [DimensionBasis B] {d1 d2 : Dimension B} :\n    HMul (WithDim d1 ℝ) (WithDim d2 ℝ) (WithDim (d1 * d2) ℝ)",
+     "sorry": false
+    },
+    {
+     "name": "WithDim.withDim_hMul_val",
+     "kind": "lemma",
+     "line": 251,
+     "doc": "",
+     "statement": "lemma withDim_hMul_val {B : Type} [DimensionBasis B] {d1 d2 : Dimension B}\n    (m1 : WithDim d1 ℝ) (m2 : WithDim d2 ℝ) :\n    (m1 * m2).val = m1.val * m2.val",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 255,
+     "doc": "",
+     "statement": "instance {d1 d2 : Dimension LTMCTDimensionBase} :\n    DMul (WithDim d1 ℝ) (WithDim d2 ℝ) (WithDim (d1 * d2) ℝ)",
+     "sorry": false
+    },
+    {
+     "name": "WithDim.val_mul_eq_mul",
+     "kind": "lemma",
+     "line": 272,
+     "doc": "",
+     "statement": "lemma val_mul_eq_mul {B : Type} [DimensionBasis B] {d1 d2 : Dimension B}\n    (m1 : WithDim d1 ℝ) (m2 : WithDim d2 ℝ) :\n    m1.val * m2.val = (m1 * m2).val",
+     "sorry": false
+    },
+    {
+     "name": "WithDim.val_pow_two_eq_mul",
+     "kind": "lemma",
+     "line": 278,
+     "doc": "",
+     "statement": "lemma val_pow_two_eq_mul {B : Type} [DimensionBasis B] {d1 : Dimension B}\n    (m1 : WithDim d1 ℝ) :\n    m1.val ^ 2 = (m1 * m1).val",
+     "sorry": false
+    },
+    {
+     "name": "WithDim.scaleUnit_val_eq_scaleUnit_val",
+     "kind": "lemma",
+     "line": 285,
+     "doc": "",
+     "statement": "lemma scaleUnit_val_eq_scaleUnit_val {d : Dimension LTMCTDimensionBase} (M : Type) [MulAction ℝ≥0 M]\n    (u1 u2 : LTMCTUnitChoices) (m1 m2 : WithDim d M) :\n    (scaleUnit u1 u2 m1).val = (scaleUnit u1 u2 m2).val ↔ m1.val = m2.val",
+     "sorry": false
+    },
+    {
+     "name": "WithDim.scaleUnit_val_eq_scaleUnit_val_of_dim_eq",
+     "kind": "lemma",
+     "line": 292,
+     "doc": "",
+     "statement": "lemma scaleUnit_val_eq_scaleUnit_val_of_dim_eq {d1 d2 : Dimension LTMCTDimensionBase} {M : Type}\n    [MulAction ℝ≥0 M]\n    {u1 u2 : LTMCTUnitChoices} {m1 : WithDim d1 M} {m2 : WithDim d2 M}\n    (h : d1 = d2 := by ext <;> {simp; try ring}) :\n    (scaleUnit u1 u2 m1).val = (scaleUnit u1 u2 m2).val ↔ m1.val = m2.val",
+     "sorry": false
+    },
+    {
+     "name": "WithDim.scaleUnit_val",
+     "kind": "lemma",
+     "line": 300,
+     "doc": "",
+     "statement": "lemma scaleUnit_val {d : Dimension LTMCTDimensionBase} (M : Type) [MulAction ℝ≥0 M]\n    (u1 u2 : LTMCTUnitChoices) (m1 : WithDim d M) :\n    (scaleUnit u1 u2 m1).val = u1.dimScale u2 d • m1.val",
+     "sorry": false
+    },
+    {
+     "name": "WithDim.scaleUnit_val_pos",
+     "kind": "lemma",
+     "line": 306,
+     "doc": "Scaling by a change of units preserves positivity of the value of a dimensionful\nquantity.",
+     "statement": "lemma scaleUnit_val_pos {d : Dimension LTMCTDimensionBase} (m : WithDim d ℝ≥0) (hm : 0 < m.val)\n    (u1 u2 : LTMCTUnitChoices) : 0 < (scaleUnit u1 u2 m).val",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 317,
+     "doc": "",
+     "statement": "noncomputable instance {B : Type} [DimensionBasis B] (d1 d2 : Dimension B) :\n    HDiv (WithDim d1 ℝ) (WithDim d2 ℝ) (WithDim (d1 * d2⁻¹) ℝ)",
+     "sorry": false
+    },
+    {
+     "name": "WithDim.val_div_val",
+     "kind": "lemma",
+     "line": 322,
+     "doc": "",
+     "statement": "lemma val_div_val {B : Type} [DimensionBasis B] {d1 d2 : Dimension B}\n    (m1 : WithDim d1 ℝ) (m2 : WithDim d2 ℝ) :\n    (m1.val / m2.val) = (m1 / m2).val",
+     "sorry": false
+    },
+    {
+     "name": "WithDim.div_scaleUnit",
+     "kind": "lemma",
+     "line": 327,
+     "doc": "",
+     "statement": "lemma div_scaleUnit {d1 d2 : Dimension LTMCTDimensionBase} (m1 : WithDim d1 ℝ) (m2 : WithDim d2 ℝ)\n    (u1 u2 : LTMCTUnitChoices) :\n    (scaleUnit u1 u2 m1) / (scaleUnit u1 u2 m2) = scaleUnit u1 u2 (m1 / m2)",
+     "sorry": false
+    },
+    {
+     "name": "WithDim.scaleUnit_dim_eq_zero",
+     "kind": "lemma",
+     "line": 341,
+     "doc": "",
+     "statement": "lemma scaleUnit_dim_eq_zero {d : Dimension LTMCTDimensionBase} (m : WithDim d ℝ)\n    (u1 u2 : LTMCTUnitChoices) (h : d = 1 := by ext <;> {simp; try ring}) :\n    scaleUnit u1 u2 m = m",
+     "sorry": false
+    },
+    {
+     "name": "WithDim.cast",
+     "kind": "def",
+     "line": 356,
+     "doc": "The casting from `WithDim d M` to `WithDim d2 M` when `d = d2`.",
+     "statement": "def cast {B : Type} [DimensionBasis B] {d d2 : Dimension B} {M : Type} (m : WithDim d M)\n    (h : d = d2 := by ext <;> {simp; try ring}) : WithDim d2 M",
+     "sorry": false
+    },
+    {
+     "name": "WithDim.cast_refl",
+     "kind": "lemma",
+     "line": 360,
+     "doc": "",
+     "statement": "lemma cast_refl {B : Type} [DimensionBasis B] {d : Dimension B} {M : Type} (m : WithDim d M) :\n    cast m rfl = m",
+     "sorry": false
+    },
+    {
+     "name": "WithDim.cast_scaleUnit",
+     "kind": "lemma",
+     "line": 364,
+     "doc": "",
+     "statement": "lemma cast_scaleUnit {d d2 : Dimension LTMCTDimensionBase} {M : Type} [MulAction ℝ≥0 M]\n    (m : WithDim d M)\n    (h : d = d2) (u1 u2 : LTMCTUnitChoices) :\n    cast (scaleUnit u1 u2 m) h = scaleUnit u1 u2 (cast m h)",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 1
+  },
+  {
+   "file": "Physlib/Units/WithDim/Energy.lean",
+   "module": "Physlib.Units.WithDim.Energy",
+   "title": "Energy",
+   "doc": "In this module we define the dimensionful type corresponding to an energy.\nWe define specific instances of energy.",
+   "copyright": "2025 Joseph Tooby-Smith",
+   "sections": [],
+   "declarations": [
+    {
+     "name": "DimEnergy",
+     "kind": "abbrev",
+     "line": 24,
+     "doc": "Energy as a dimensional quantity with dimension `MLT⁻2`..",
+     "statement": "abbrev DimEnergy : Type",
+     "sorry": false
+    },
+    {
+     "name": "DimEnergy.joule",
+     "kind": "def",
+     "line": 30,
+     "doc": "The dimensional energy corresponding to 1 joule, J.",
+     "statement": "noncomputable def joule : DimEnergy",
+     "sorry": false
+    },
+    {
+     "name": "DimEnergy.electronVolt",
+     "kind": "def",
+     "line": 33,
+     "doc": "The dimensional energy corresponding to 1 electron volt, 1.602176634×10−19 J.",
+     "statement": "noncomputable def electronVolt : DimEnergy",
+     "sorry": false
+    },
+    {
+     "name": "DimEnergy.calorie",
+     "kind": "def",
+     "line": 36,
+     "doc": "The dimensional energy corresponding to 1 calorie, 4.184 J.",
+     "statement": "noncomputable def calorie : DimEnergy",
+     "sorry": false
+    },
+    {
+     "name": "DimEnergy.kilowattHour",
+     "kind": "def",
+     "line": 39,
+     "doc": "The dimensional energy corresponding to 1 kilowatt-hours, (3,600,000 J).",
+     "statement": "noncomputable def kilowattHour : DimEnergy",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/Units/WithDim/Mass.lean",
+   "module": "Physlib.Units.WithDim.Mass",
+   "title": "Mass",
+   "doc": "In this module we define the type `Mass`, which represents the mass of a particle,\nin an arbitrary (but given) set of units.",
+   "copyright": "2025 Joseph Tooby-Smith",
+   "sections": [],
+   "declarations": [],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/Units/WithDim/Momentum.lean",
+   "module": "Physlib.Units.WithDim.Momentum",
+   "title": "Momentum",
+   "doc": "In this module we define the type `Momentum`, which represents the momentum of a particle\nin `d`-dimensional space, in an arbitrary (but given) set of units.",
+   "copyright": "2025 Joseph Tooby-Smith",
+   "sections": [],
+   "declarations": [
+    {
+     "name": "Momentum",
+     "kind": "abbrev",
+     "line": 23,
+     "doc": "Momentum in `d`-dimensional space in an arbitrary, but given, set of units.\nIn `(3+1)d` space time this corresponds to `3`-momentum not `4`-momentum.",
+     "statement": "abbrev Momentum (d : ℕ := 3) : Type",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/Units/WithDim/Pressure.lean",
+   "module": "Physlib.Units.WithDim.Pressure",
+   "title": "Pressure",
+   "doc": "In this module we define the dimensionful type corresponding to an pressure.\nWe define specific instances of pressure.",
+   "copyright": "2025 Joseph Tooby-Smith",
+   "sections": [],
+   "declarations": [
+    {
+     "name": "DimPressure",
+     "kind": "abbrev",
+     "line": 24,
+     "doc": "Pressure as a dimensional quantity with dimension `ML⁻¹T⁻2`..",
+     "statement": "abbrev DimPressure : Type",
+     "sorry": false
+    },
+    {
+     "name": "DimPressure.pascal",
+     "kind": "def",
+     "line": 30,
+     "doc": "The dimensional pressure corresponding to 1 pascal, Pa.",
+     "statement": "noncomputable def pascal : DimPressure",
+     "sorry": false
+    },
+    {
+     "name": "DimPressure.millimeterOfMercury",
+     "kind": "def",
+     "line": 33,
+     "doc": "The dimensional pressure corresponding to 1 millimeter of mercury (133.322387415 pascals).",
+     "statement": "noncomputable def millimeterOfMercury : DimPressure",
+     "sorry": false
+    },
+    {
+     "name": "DimPressure.bar",
+     "kind": "def",
+     "line": 36,
+     "doc": "The dimensional pressure corresponding to 1 bar (100,000 pascals).",
+     "statement": "noncomputable def bar : DimPressure",
+     "sorry": false
+    },
+    {
+     "name": "DimPressure.standardAtmosphere",
+     "kind": "def",
+     "line": 39,
+     "doc": "The dimensional pressure corresponding to 1 standard atmosphere (101,325 pascals).",
+     "statement": "noncomputable def standardAtmosphere : DimPressure",
+     "sorry": false
+    },
+    {
+     "name": "DimPressure.torr",
+     "kind": "def",
+     "line": 42,
+     "doc": "The dimensional pressure corresponding to 1 torr (1/760 of standard atmosphere pressure).",
+     "statement": "noncomputable def torr : DimPressure",
+     "sorry": false
+    },
+    {
+     "name": "DimPressure.psi",
+     "kind": "def",
+     "line": 45,
+     "doc": "The dimensional pressure corresponding to 1 pound per square inch.",
+     "statement": "noncomputable def psi : DimPressure",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/Units/WithDim/Speed.lean",
+   "module": "Physlib.Units.WithDim.Speed",
+   "title": "Speed",
+   "doc": "In this module we define the dimensionful type corresponding to an speed.\nWe define specific instances of speed, such as miles per hour, kilometers per hour, etc.",
+   "copyright": "2025 Joseph Tooby-Smith",
+   "sections": [
+    {
+     "line": 30,
+     "text": "## Basic speeds"
+    },
+    {
+     "line": 52,
+     "text": "## Speed in SI units"
+    },
+    {
+     "line": 90,
+     "text": "## Relations between speeds"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "DimSpeed",
+     "kind": "abbrev",
+     "line": 24,
+     "doc": "The type of speeds in the absence of a choice of unit.",
+     "statement": "abbrev DimSpeed : Type",
+     "sorry": false
+    },
+    {
+     "name": "DimSpeed.oneMeterPerSecond",
+     "kind": "def",
+     "line": 38,
+     "doc": "The dimensional speed corresponding to 1 meter per second.",
+     "statement": "noncomputable def oneMeterPerSecond : DimSpeed",
+     "sorry": false
+    },
+    {
+     "name": "DimSpeed.oneMilePerHour",
+     "kind": "def",
+     "line": 41,
+     "doc": "The dimensional speed corresponding to 1 mile per hour.",
+     "statement": "noncomputable def oneMilePerHour : DimSpeed",
+     "sorry": false
+    },
+    {
+     "name": "DimSpeed.oneKilometerPerHour",
+     "kind": "def",
+     "line": 45,
+     "doc": "The dimensional speed corresponding to 1 kilometer per hour.",
+     "statement": "noncomputable def oneKilometerPerHour : DimSpeed",
+     "sorry": false
+    },
+    {
+     "name": "DimSpeed.oneKnot",
+     "kind": "def",
+     "line": 49,
+     "doc": "The dimensional speed corresponding to 1 knot, aka, one nautical mile per hour.",
+     "statement": "noncomputable def oneKnot : DimSpeed",
+     "sorry": false
+    },
+    {
+     "name": "DimSpeed.oneMeterPerSecond_in_SI",
+     "kind": "lemma",
+     "line": 59,
+     "doc": "",
+     "statement": "lemma oneMeterPerSecond_in_SI : oneMeterPerSecond SI = ⟨1⟩",
+     "sorry": false
+    },
+    {
+     "name": "DimSpeed.oneMilePerHour_in_SI",
+     "kind": "lemma",
+     "line": 64,
+     "doc": "",
+     "statement": "lemma oneMilePerHour_in_SI : oneMilePerHour SI = ⟨0.44704⟩",
+     "sorry": false
+    },
+    {
+     "name": "DimSpeed.oneKilometerPerHour_in_SI",
+     "kind": "lemma",
+     "line": 72,
+     "doc": "",
+     "statement": "lemma oneKilometerPerHour_in_SI :\n    oneKilometerPerHour SI = ⟨5/18⟩",
+     "sorry": false
+    },
+    {
+     "name": "DimSpeed.oneKnot_in_SI",
+     "kind": "lemma",
+     "line": 83,
+     "doc": "",
+     "statement": "lemma oneKnot_in_SI : oneKnot SI = ⟨463/900⟩",
+     "sorry": false
+    },
+    {
+     "name": "DimSpeed.oneKnot_eq_mul_oneKilometerPerHour",
+     "kind": "lemma",
+     "line": 97,
+     "doc": "",
+     "statement": "lemma oneKnot_eq_mul_oneKilometerPerHour :\n    oneKnot = (1.852 : ℝ≥0) • oneKilometerPerHour",
+     "sorry": false
+    },
+    {
+     "name": "DimSpeed.oneKilometerPerHour_eq_mul_oneKnot",
+     "kind": "lemma",
+     "line": 104,
+     "doc": "",
+     "statement": "lemma oneKilometerPerHour_eq_mul_oneKnot:\n    oneKilometerPerHour = (250/463 : ℝ≥0) • oneKnot",
+     "sorry": false
+    },
+    {
+     "name": "DimSpeed.oneMeterPerSecond_eq_mul_oneMilePerHour",
+     "kind": "lemma",
+     "line": 111,
+     "doc": "",
+     "statement": "lemma oneMeterPerSecond_eq_mul_oneMilePerHour :\n    oneMeterPerSecond = (3125/1397 : ℝ≥0) • oneMilePerHour",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/Units/WithDim/Velocity.lean",
+   "module": "Physlib.Units.WithDim.Velocity",
+   "title": "Velocity",
+   "doc": "In this module we define the type `Velocity`, which represents the velocity of a particle\nin `d`-dimensional space, in an arbitrary (but given) set of units.",
+   "copyright": "2025 Joseph Tooby-Smith",
+   "sections": [],
+   "declarations": [],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  }
+ ]
+}
