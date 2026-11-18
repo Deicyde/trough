@@ -2,14 +2,16 @@
 
 A library is configured by a Library value: its repository, the folder its modules live under, its intro and the
 files it reads besides its modules. The reader takes each module's title, docstrings, the authors its header names
-and its declarations, as trough.leansource reads them, without its TODO notes and its text about plans; a Lean run
+and its declarations, as trough.leansource reads them, and the chapter quotes the docstrings without their TODO notes
+and their text about plans (doc_text, doc_markdown); a Lean run
 over the built library (for CSLib, lean/cslib/CslibDeps.lean) says which names are public and which modules each
 module's statements and proofs use. The chapter has a part per folder under the library's root, a page per folder
 below and an article per module, with a block per public declaration in file order.
 
 Physlib's chapter (trough.physlib) keeps its own record, pages and blocks, and takes from here its links at the pin,
-its guards, its docstring filter, its quoting of docstrings and its edges. Its filter cuts at rendering, where CSLib's
-cuts at reading; the two filters are kept apart until they are made one.
+its guards, the docstring filter, the quoting of docstrings and its edges. The filter cuts when the chapter is built,
+not when the source is read: the data keep the docstrings as the source writes them, so a change to the filter needs
+no new reading of the library, and its tests and the data check one another.
 """
 
 from __future__ import annotations
@@ -34,23 +36,15 @@ GITHUB = "https://github.com"
 # A header's copyright holders and its optional list of authors, which AUTHORS.md says name a file's authors.
 COPYRIGHT = re.compile(r"^Copyright \(c\) \d{4}(?:[-–]\d{4})? (?P<holders>.+?)\.? All rights reserved\.?$", re.M)
 AUTHORS = re.compile(r"^Authors?:[ \t]*(?P<authors>.+(?:\n(?![A-Z][a-z]+:)[ \t]*\S.*)*)", re.M)
-# A section of a README or docstring that says what the library plans, not what it has.
-PLANS = re.compile(r"^(?:plans?|future work|todos?|roadmap)\b", re.I)
+# A sentence about what is planned, wanted or welcome, not about what the library has. Not "not yet", "remains to be",
+# "in the future" or "upstream", which say what the library has or are its subject (temporal logic, physics).
+PLANS = re.compile(r"\b(?:underway|under way|planned|we plan|plans? to|welcome|reserved for future work|future work on|"
+                   r"future design work|be upstreamed|will follow|to be added|we would want|we should show|"
+                   r"will eventually|near future|one day|be deprecated|with the intention|eventually we will|"
+                   r"long term aim)\b", re.I)
+# A README opening that speaks of plans, as a placeholder for later work does.
 PLANNED = re.compile(r"\b(?:plan(?:s|ned)?|placeholder|upstream(?:ing)?)\b", re.I)
 HEADING = re.compile(r"^(#{1,6})[ \t]+(.+?)[ \t]*#*[ \t]*$")
-TODO = re.compile(r"\bTODO\b")
-CODE_SPAN = re.compile(r"`[^`\n]*`")
-# A line that starts a list item, which ends the paragraph a TODO cut runs to.
-LIST_ITEM = re.compile(r"^[ \t]*(?:[-*+]|\d+[.)])[ \t]")
-# A sentence that plans or invites future work, and a paragraph about moving code elsewhere; kept narrow, as words such
-# as "in the future" or "not yet" also describe what a module has (BTL's temporal modalities).
-PLAN_SENTENCE = re.compile(r"would be welcome|\bwe plan\b|reserved for future work|future work on|future design work|"
-                           r"\bwill follow\b", re.I)
-UPSTREAMING = re.compile(r"should be upstreamed", re.I)
-# Where a sentence ends: after its full stop, or before a list item, so that a list whose items have no full stops is
-# not one sentence.
-SENTENCE = re.compile(r"(?<=[.!?])\s+|\n(?=[ \t]*(?:[-*+]|\d+[.)])[ \t])")
-CUT = "\x00"  # where without_plans() cut, until it writes …
 # Definitions whose whole text is shown: their fields or constructors say what they are.
 WHOLE = ("structure", "class", "inductive")
 KIND_WORDS = {"theorem": "theorem", "lemma": "lemma", "def": "definition", "abbrev": "abbreviation",
@@ -73,10 +67,8 @@ class Library:
     extras: Callable[[Path], dict] = lambda checkout: {}
     # The bytes of article Markdown a folder's page folds in before its next article starts a page.
     page_budget: int = 200_000
-    # What without_plans() cuts: headings over plans, sentences that plan or invite work, paragraphs on moving code.
-    plan_headings: re.Pattern = PLANS
-    plan_sentences: re.Pattern = PLAN_SENTENCE
-    plan_moving: re.Pattern = UPSTREAMING
+    # The sentences the docstring filter cuts, about what is planned or invited rather than what the library has.
+    plans: re.Pattern = PLANS
     # The folders its modules live under when there are several; else its root alone.
     roots: tuple[str, ...] = ()
     # What its credit line says is quoted.
@@ -84,102 +76,13 @@ class Library:
     # The folders whose docstrings keep their TODO notes, as they describe a TODO command.
     todo_exempt: tuple[str, ...] = ()
 
-    def without_plans(self, markdown: str) -> str:
-        return without_plans(markdown, self.plan_headings, self.plan_sentences, self.plan_moving)
+    def notes(self, file: str) -> bool:
+        """Whether the filter cuts the TODO notes of the module at *file*: not in the folders the library exempts."""
+        return not file.startswith(self.todo_exempt) if file else True
 
     def without_todos(self, markdown: str, file: str = "") -> str:
         """without_todos() with the library's plan phrases, keeping TODO notes in the folders it exempts."""
-        return without_todos(markdown, self.plan_sentences, notes=not file.startswith(self.todo_exempt) if file else True)
-
-
-def without_plans(markdown: str, headings: re.Pattern = PLANS, sentences: re.Pattern = PLAN_SENTENCE,
-                  moving: re.Pattern = UPSTREAMING) -> str:
-    """The Markdown without what it says of plans and TODOs, each cut marked with …: a section headed plans, future
-    work, TODO(s) or roadmap, up to the next heading of its level or above; a TODO, from where it stands to the end of
-    its paragraph (a blank line, a heading or the next list item); a sentence or list item that plans or invites future
-    work, with the list it introduces when it ends in a colon; a paragraph saying code should be upstreamed; and a
-    heading left with nothing but cuts under it. *headings*, *sentences* and *moving* match the headings, sentences
-    and paragraphs to cut."""
-    out: list[str] = []
-    skipping: int | None = None
-    cutting = fence = False
-    for line in markdown.split("\n"):
-        is_fence = line.lstrip().startswith(("```", "~~~"))
-        if is_fence:
-            fence = not fence
-        heading = None if fence or is_fence else HEADING.match(line)
-        if heading and skipping is not None and len(heading.group(1)) <= skipping:
-            skipping = None
-        if skipping is not None:
-            continue
-        if cutting and (not line.strip() or heading or is_fence or LIST_ITEM.match(line)):
-            cutting = False
-        if cutting:
-            continue
-        if heading and headings.match(heading.group(2).strip("*_ ")):
-            skipping = len(heading.group(1))
-            out.append(CUT)
-            continue
-        todo = None if fence or is_fence else next(
-            (match for match in TODO.finditer(line)
-             if not any(span.start() < match.start() < span.end() for span in CODE_SPAN.finditer(line))), None)
-        if todo:
-            before = line[:todo.start()].rstrip()
-            out.append(f"{before} {CUT}" if before and not LIST_ITEM.match(before + " ") else CUT)
-            cutting = True
-            continue
-        out.append(line)
-    paragraphs = re.split(r"(\n[ \t]*\n)", "\n".join(out))
-    fence = False
-    for index in range(0, len(paragraphs), 2):
-        paragraph = paragraphs[index]
-        inside = fence or paragraph.lstrip().startswith(("```", "~~~"))
-        fence ^= paragraph.count("```") % 2 == 1
-        if inside or HEADING.match(paragraph.strip()):
-            continue
-        if moving.search(paragraph):
-            paragraphs[index] = CUT
-        elif sentences.search(paragraph):
-            pieces = SENTENCE.split(paragraph)
-            separators = SENTENCE.findall(paragraph)
-            kept, lead_in = [], False
-            for piece in pieces:
-                # A cut lead-in, a sentence ending in a colon, takes the list it introduces with it.
-                if lead_in or sentences.search(piece):
-                    kept.append(CUT)
-                    lead_in = lead_in or (not LIST_ITEM.match(piece) and piece.rstrip().endswith(":"))
-                else:
-                    kept.append(piece)
-            paragraphs[index] = "".join(piece + (separators[number] if number < len(separators) else "")
-                                        for number, piece in enumerate(kept))
-    text = drop_empty_headings("".join(paragraphs))
-    # Consecutive cuts are one.
-    return re.sub(rf"{CUT}(?:\s*{CUT})+", CUT, text).strip().replace(CUT, "…")
-
-
-def drop_empty_headings(text: str) -> str:
-    """The text without a heading whose section, up to the next heading of its level or above, holds only cuts."""
-    lines = text.split("\n")
-    kept: list[str] = []
-    dropped = False
-    for index, line in enumerate(lines):
-        if dropped and not line.strip():
-            continue
-        dropped = False
-        heading = HEADING.match(line)
-        if heading:
-            section = []
-            for later in lines[index + 1:]:
-                inner = HEADING.match(later)
-                if inner and len(inner.group(1)) <= len(heading.group(1)):
-                    break
-                if not inner:
-                    section.append(later)
-            if CUT in "".join(section) and not "".join(section).replace(CUT, "").strip():
-                dropped = True
-                continue
-        kept.append(line)
-    return "\n".join(kept)
+        return without_todos(markdown, self.plans, notes=self.notes(file))
 
 
 def header(text: str) -> dict:
@@ -238,9 +141,10 @@ def whole(text: str, line: int, header_only: bool = False) -> str:
 def read_module(text: str, path: str, library: Library | None = None) -> dict:
     """A module's record: its title, docstrings and public declarations in file order; `items` is None when its
     scopes don't close as they open. The module docstring is the first `/-! ... -/` before any declaration; each
-    later one is an item of its own, where the file writes it."""
+    later one is an item of its own, where the file writes it. Docstrings are kept as the source writes them, and a
+    `class abbrev` keeps its own name, where leansource reads `abbrev`."""
     found = leansource.declarations(text, relaxed=True)
-    cut = library.without_plans if library else without_plans
+    source = text.split("\n")
     record = {"module": module_name(path), "file": path, **header(text), "title": "", "doc": "", "items": None}
     if found is None:
         return record
@@ -256,11 +160,11 @@ def read_module(text: str, path: str, library: Library | None = None) -> dict:
             title = HEADING.match(doc.split("\n", 1)[0])
             if title and len(title.group(1)) == 1:
                 record["title"], doc = title.group(2), doc.split("\n", 1)[1] if "\n" in doc else ""
-            record["doc"] = cut(doc)
-        elif note := cut(doc):
-            notes.append({"line": line, "note": note})
-    declarations = [{"name": declaration.name, "kind": declaration.kind, "line": declaration.line,
-                     "doc": cut(declaration.doc), "statement": statement_of(text, declaration),
+            record["doc"] = doc.strip()
+        elif doc:
+            notes.append({"line": line, "note": doc})
+    declarations = [{"name": declared_name(declaration, source), "kind": declaration.kind, "line": declaration.line,
+                     "doc": declaration.doc, "statement": statement_of(text, declaration),
                      "sorry": declaration.proof_sorry if declaration.statement is not None else declaration.sorry}
                     for declaration in found if declaration.name and not declaration.private]
     record["items"] = sorted(notes + declarations, key=lambda item: item["line"])
@@ -406,27 +310,37 @@ def declarations(module: dict) -> list[dict]:
     return [item for item in module["items"] if "name" in item]
 
 
-def block(library: Library, item: dict, file: str, rev: str) -> str:
+def quoted_doc(library: Library, text: str, file: str, keys: dict[str, str]) -> str:
+    """A docstring of the module at *file* as a block quotes it: filtered by doc_text(), a link to another module
+    pointing at its article, as quoted_prose() keeps links; nothing when nothing is left."""
+    kept = doc_text(text, library.plans, library.notes(file))
+    return quoted_prose(kept, file, keys, escape=False) if kept else ""
+
+
+def block(library: Library, item: dict, file: str, rev: str, keys: dict[str, str]) -> str:
     """A declaration's name, kind and line, its docstring and its Lean statement; or a note the module writes there."""
     if "note" in item:
-        return quote(item["note"])
+        return quoted_doc(library, item["note"], file, keys)
     where = f"[line {item['line']}]({blob(library, rev, file, item['line'])})"
     head = f"`{item['name']}` ({KIND_WORDS.get(item['kind'], item['kind'])}, {where})"
     if item["sorry"]:
         head += ". Its value holds `sorry`."
-    return "\n\n".join([head] + ([quote(item["doc"])] if item["doc"] else []) + [fence(item["statement"])])
+    doc = quoted_doc(library, item["doc"], file, keys)
+    return "\n\n".join([head] + ([doc] if doc else []) + [fence(item["statement"])])
 
 
-def article(library: Library, module: dict, title: str, rev: str, links: dict[str, str]) -> Leaf:
+def article(library: Library, module: dict, title: str, rev: str, links: dict[str, str], keys: dict[str, str]) -> Leaf:
     """A module's article: where it is and who wrote it, its docstring, and a block per public declaration and per
-    later note, in file order."""
+    later note, in file order; notes cut whole one after another show one cut mark."""
     names = [item["name"] for item in declarations(module)]
     authors = module["authors"] or module["copyright"]
     opening = f"`{module['module']}`, in [{module['file']}]({blob(library, rev, module['file'])})" + (f", by {authors}." if authors else ".")
     if not names:
         opening += " It declares nothing public by name."
-    parts = [opening] + ([quote(module["doc"])] if module["doc"] else [])
-    parts += [block(library, item, module["file"], rev) for item in module["items"]]
+    doc = quoted_doc(library, module["doc"], module["file"], keys)
+    parts = [opening] + ([doc] if doc else [])
+    parts += [part for item in module["items"] if (part := block(library, item, module["file"], rev, keys))]
+    parts = one_cut(parts)
     fields = [("catalog", "module")]
     if names:
         fields += [("lean", ", ".join(names)), ("statement", "formalized")]
@@ -467,6 +381,8 @@ def chapter(library: Library, data: dict) -> tuple[Built, dict[str, str]]:
     # Lean decides which of the names read from the source are public: one private to its module, or one Lean does not
     # have, is left out.
     private, missing = (set(deps.get("private", [])), set(deps.get("missing", []))) if deps else (set(), set())
+    check_names(library, {item["name"] for module in data["modules"] for item in module["items"] or [] if "name" in item},
+                missing)
     modules = []
     for module in data["modules"]:
         stats["private"] += sum(item.get("name") in private for item in module["items"])
@@ -474,6 +390,7 @@ def chapter(library: Library, data: dict) -> tuple[Built, dict[str, str]]:
         modules.append({**module, "items": [item for item in module["items"]
                                             if item.get("name") not in private | missing or "name" not in item]})
     named = titles(modules)
+    keys = {module["file"]: f"{library.id}-{module['module']}" for module in modules}  # each article's key, by file
     targets: dict[str, Leaf | Container] = {}
     links: dict[str, str] = {}
     leaves: dict[str, Leaf] = {}
@@ -487,7 +404,7 @@ def chapter(library: Library, data: dict) -> tuple[Built, dict[str, str]]:
             if is_folder:
                 entries.append(Entry(build(child_name, child, f"{path}/{child_name}", False)))
             else:
-                leaf = article(library, child, named[child["module"]], rev, links)
+                leaf = article(library, child, named[child["module"]], rev, links, keys)
                 leaves[child["module"]] = leaf
                 targets[f"{library.id}-{child['module']}"] = leaf
                 stats["articles"] += 1
@@ -500,7 +417,7 @@ def chapter(library: Library, data: dict) -> tuple[Built, dict[str, str]]:
                 ", which declares nothing public by name.")
         lines = [f"{plural(len(inside), 'module')} under `{path}/`{held}"]
         if path in data["folders"]:
-            lines.append(f"Its [README]({blob(library, rev, path + '/README.md')}) opens:\n\n{quote(data['folders'][path])}")
+            lines.append(f"Its [README]({blob(library, rev, path + '/README.md')}) opens:\n\n{quote(pinned(library, data['folders'][path], rev))}")
         if part:
             lines.append(credit(library, rev))
         container.prose = "\n\n".join(lines)
@@ -512,7 +429,7 @@ def chapter(library: Library, data: dict) -> tuple[Built, dict[str, str]]:
     parts = [Entry(build(name, child, f"{library.root}/{name}", True)) for name, child in sorted(top["folders"].items())]
     stats["parts"] = len(parts)
     for module in top["modules"]:
-        leaf = article(library, module, named[module["module"]], rev, links)
+        leaf = article(library, module, named[module["module"]], rev, links, keys)
         leaves[module["module"]] = leaf
         targets[f"{library.id}-{module['module']}"] = leaf
         stats["articles"] += 1
@@ -587,6 +504,7 @@ SENTENCE_END = re.compile(r"(?<=[.!?])\s+")
 ABBREVIATION = re.compile(r"\b(?:e\.g|i\.e|cf|resp|vs)\.$")
 BULLET = re.compile(r"^[ \t]*[-*+][ \t]")
 FENCE = re.compile(r"^ {0,3}(?:`{3,}|~{3,})")
+FENCED = re.compile(r"^ {0,3}(`{3,}|~{3,}).*?(?:^ {0,3}\1[ \t]*$|\Z)", re.M | re.S)
 INLINE_LINK = re.compile(r"(?<!!)\[((?:[^\[\]\n]|\[[^\[\]\n]*\])*)\]\(([^()\s]+)\)")
 SCHEME = re.compile(r"^(?:[a-zA-Z][a-zA-Z0-9+.-]*:|#)")
 CUT_MARKS = ("…", "> …")  # a cut mark, as a paragraph and quoted
@@ -642,12 +560,14 @@ def without_todos(markdown: str, plans: re.Pattern, notes: bool = True) -> str:
     """Quoted Markdown without its TODO notes and its sentences about plans (those *plans* matches), each cut marked
     with …. A paragraph that starts with a TODO note, or whose first sentence is about plans, goes with the list it
     introduces and every paragraph after it up to the next heading. Otherwise a list item that mentions a TODO item or
-    plans goes whole, and in a paragraph a sentence about plans goes, and so does a sentence that mentions a TODO item
-    with the rest of its paragraph. The map records what the library has, not what it plans. Without *notes*, TODO
-    items are not cut, for text that describes a TODO command."""
+    plans goes whole, the line that introduces the list staying, and in a paragraph a sentence about plans goes, and so
+    does a sentence that mentions a TODO item with the rest of its paragraph. Code in a fenced block is not read for
+    TODOs or plans. The map records what the library has, not what it plans. Without *notes*, TODO items are not cut,
+    for text that describes a TODO command."""
     todos = TODOS if notes else re.compile(r"(?!)")
     out, cutting = [], False
     for block in re.split(r"\n[ \t]*\n", markdown.strip()):
+        prose = FENCED.sub("", block)
         if HEADING_START.match(block):
             cutting = False
         elif cutting:
@@ -661,7 +581,7 @@ def without_todos(markdown: str, plans: re.Pattern, notes: bool = True) -> str:
                 out.append("…")
                 cutting = True
                 continue
-        if not (todos.search(block) or plans.search(block)):
+        if not (todos.search(prose) or plans.search(prose)):
             out.append(block)
             continue
         items: list[list[str]] = []
@@ -670,18 +590,23 @@ def without_todos(markdown: str, plans: re.Pattern, notes: bool = True) -> str:
                 items.append([line])
             else:
                 items[-1].append(line)
-        if len(items) > 1 and all(BULLET.match(item[0]) for item in items):
-            kept = [line for item in items if not (todos.search(text := "\n".join(item)) or plans.search(text))
+        # A list, after the line that introduces it when that line neither plans nor mentions a TODO.
+        intro = [] if BULLET.match(items[0][0]) else items[0]
+        listed = items[1:] if intro else items
+        if (len(listed) > (0 if intro else 1) and all(BULLET.match(item[0]) for item in listed)
+                and not (todos.search(text := FENCED.sub("", "\n".join(intro))) or plans.search(text))):
+            kept = [line for item in listed
+                    if not (todos.search(text := FENCED.sub("", "\n".join(item))) or plans.search(text))
                     for line in item]
-            out.append("\n".join(kept) + "\n\n…" if kept else "…")
+            out.append("\n".join(intro + kept) + "\n\n…" if intro or kept else "…")
         else:
             out.append(without_cut_sentences(block, plans, todos))
     return re.sub(r"…(?:\n\n…)+", "…", "\n\n".join(out)).strip()
 
 
-def quoted_prose(markdown: str, here: str = "", keys: dict[str, str] | None = None) -> str:
-    """Prose of the module at *here*, quoted: escaped as literal() escapes it, its inline links kept whole, so an
-    underscore in a link's target stays one. With *keys*, each article's key by file, a link to one of the
+def quoted_prose(markdown: str, here: str = "", keys: dict[str, str] | None = None, escape: bool = True) -> str:
+    """Prose of the module at *here*, quoted: with *escape*, escaped as literal() escapes it, its inline links kept
+    whole, so an underscore in a link's target stays one. With *keys*, each article's key by file, a link to one of the
     repository's files, written relative to the module, points at the article of that module here; a link to another
     path, which is no module of the commit, keeps only its label. A link out of the repository is left for quote() to
     make text."""
@@ -703,26 +628,27 @@ def quoted_prose(markdown: str, here: str = "", keys: dict[str, str] | None = No
             if path not in keys:
                 return label
             target = f"trough:{keys[path]}"
-        links.append(f"[{literal(label)}]({target})")
+        links.append(f"[{literal(label) if escape else label}]({target})")
         return f"\x00{len(links) - 1}\x00"
 
-    text = literal(INLINE_LINK.sub(keep, markdown))
+    text = INLINE_LINK.sub(keep, markdown)
+    text = literal(text) if escape else text
     return quote(re.sub(r"\x00(\d+)\x00", lambda match: links[int(match.group(1))], text))
 
 
-def doc_markdown(text: str, quoted: Callable[[str], str], plans: re.Pattern) -> list[str]:
-    """A docstring as an article shows it: its headings as the article's, from `##` down, and its prose quoted. A
-    table of contents, which the article's own headings give, is left out, and so is a section headed by a TODO or by
-    plans (Future work, Roadmap), with the TODO notes and sentences about plans without_todos cuts, each such cut
-    marked with …."""
-    parts: list[str] = []
+def doc_sections(text: str, plans: re.Pattern, notes: bool = True) -> list[tuple]:
+    """A docstring's headings and prose, filtered: ("heading", level, words, line) for a heading it keeps, ("cut",)
+    for a section headed by a TODO or by plans (Future work, Roadmap), left out with the headings under it, and
+    ("prose", kept, written) for the text between headings, with the TODO notes and sentences about plans
+    without_todos cuts and the text as written. A table of contents, which an article's own headings give, is left out
+    unmarked, as ("contents",)."""
+    out: list[tuple] = []
     prose: list[str] = []
     skipping, fenced = 0, False
 
     def flush() -> None:
-        kept = without_todos("\n".join(prose), plans)
-        if kept:
-            parts.append(quoted(kept))
+        written = "\n".join(prose)
+        out.append(("prose", without_todos(written, plans, notes), written))
         prose.clear()
 
     for line in text.split("\n"):
@@ -740,11 +666,39 @@ def doc_markdown(text: str, quoted: Callable[[str], str], plans: re.Pattern) -> 
         planned = bool(TODOS.search(words) or PLAN_HEADING.match(words))
         skipping = level if "table of contents" in words.casefold() or planned else 0
         if planned:
-            parts.append("…")
-        elif not skipping:
-            parts.append("#" * min(max(level, 2), 6) + " " + comment(words))
+            out.append(("cut",))
+        elif skipping:
+            out.append(("contents",))
+        else:
+            out.append(("heading", level, words, line))
     flush()
+    return out
+
+
+def doc_markdown(text: str, quoted: Callable[[str], str], plans: re.Pattern) -> list[str]:
+    """A docstring as an article shows it, from doc_sections(): its headings as the article's, from `##` down, its
+    prose quoted, and each section cut marked with …."""
+    parts: list[str] = []
+    for section in doc_sections(text, plans):
+        if section[0] == "heading":
+            parts.append("#" * min(max(section[1], 2), 6) + " " + comment(section[2]))
+        elif section[0] == "cut":
+            parts.append("…")
+        elif section[0] == "prose" and section[1]:
+            parts.append(quoted(section[1]))
     return parts
+
+
+def doc_text(text: str, plans: re.Pattern, notes: bool = True) -> str:
+    """A docstring as one block quotes it, from doc_sections(): as written where nothing is cut; else its headings as
+    written, each section cut and each run of cuts marked with one …, and its paragraphs a blank line apart."""
+    sections = doc_sections(text, plans, notes)
+    if all(section[0] == "heading" or (section[0] == "prose" and section[1].split() == section[2].split())
+           for section in sections):
+        return text.strip()
+    blocks = [section[3] if section[0] == "heading" else "…" if section[0] == "cut" else
+              section[1] if section[0] == "prose" else "" for section in sections]
+    return re.sub(r"…(?:\n\n…)+", "…", "\n\n".join(block for block in blocks if block)).strip()
 
 
 def one_cut(parts: list[str]) -> list[str]:
