@@ -1,0 +1,709 @@
+{
+ "schema": "trough-physlib/v1",
+ "rev": "2a1dfe43134b49b643642f13d33031754021bb5d",
+ "modules": [
+  {
+   "file": "QuantumInfo/ResourceTheory/FreeState.lean",
+   "module": "QuantumInfo.ResourceTheory.FreeState",
+   "title": "",
+   "doc": "",
+   "copyright": "2025 Alex Meiburg",
+   "sections": [],
+   "declarations": [
+    {
+     "name": "ResourcePretheory",
+     "kind": "class",
+     "line": 25,
+     "doc": "A `ResourcePretheory` is a family of Hilbert spaces closed under tensor products, with an\n  instance of `Fintype` and `DecidableEq` for each. It forms a pre-structure then on which to\n  discuss resource theories. For instance, to talk about \"two-party scenarios\", we could write\n  `ResourcePretheory (ℕ × ℕ)`, with `H (a,b) := (Fin a) × (Fin b)`.\n\nThe `Semigroup ι` structure means we have a way to take products of our labels of Hilbert spaces\nin a way that is associative (with actual equality). The `prodEquiv` lets us reinterpret between\na product-labelled Hilbert spaces, and an actual pair of Hilbert spaces.",
+     "statement": "class ResourcePretheory (ι : Type*) extends Semigroup ι where\n  /-- The indexing of each Hilbert space -/\n  H : ι → Type*\n  /-- Each space is finite -/\n  [FinH : ∀ i, Fintype (H i)]\n  /-- Each object has decidable equality -/\n  [DecEqH : ∀ i, DecidableEq (H i)]\n  /-- Each space is nonempty (dimension at least 1) -/\n  [NonemptyH : ∀ i, Nonempty (H i)]\n  /-- The product structure induces an isomorphism of Hilbert spaces -/\n  prodEquiv i j : H (i * j) ≃ (H i) × (H j)\n  --Possible we want some fact like the associativity of `prod` or the existence of an identity space,\n  -- which would then imply MonoidalCategory structure later (instead of just Category). For now we\n  -- take the (logically equivalent, in the appropriate model) assumption that the associator is\n  -- actually an equality. This is captured in the `Semigroup ι` assumption. If we wanted to turn\n  -- this into something more flexible, we would replace that with `Mul ι` (dropping `mul_assoc`)\n  -- and get an appropriate associator `Equiv` here.\n  hAssoc i j k :\n    ((prodEquiv (i * j) k).trans <|\n      ((prodEquiv i j).prodCongr (Equiv.refl (H k))).trans <|\n      (Equiv.prodAssoc _ _ _).trans <|\n      ((Equiv.refl (H i)).prodCongr ((prodEquiv j k).symm)).trans\n      (prodEquiv i (j * k)).symm\n    )\n     = Equiv.cast (congrArg H <| mul_assoc i j k)",
+     "sorry": false
+    },
+    {
+     "name": "ResourcePretheory.prodRelabel",
+     "kind": "def",
+     "line": 63,
+     "doc": "The `prod` operation of `ResourcePretheory` gives the natural product operation on `MState`s\nthat puts us in a new Hilbert space of the category. Accessible by the notation `ρ₁ ⊗ᵣ ρ₂`.",
+     "statement": "noncomputable def prodRelabel (ρ₁ : MState (H i)) (ρ₂ : MState (H j)) : MState (H (i * j))",
+     "sorry": false
+    },
+    {
+     "name": "ResourcePretheory.prodRelabel_assoc",
+     "kind": "lemma",
+     "line": 69,
+     "doc": "",
+     "statement": "lemma prodRelabel_assoc (ρ₁ : MState (H i)) (ρ₂ : MState (H j)) (ρ₃ : MState (H k)) :\n    ρ₁ ⊗ᵣ ρ₂ ⊗ᵣ ρ₃ ≍ ρ₁ ⊗ᵣ (ρ₂ ⊗ᵣ ρ₃)",
+     "sorry": false
+    },
+    {
+     "name": "ResourcePretheory.prodRelabel_relabel_cast_prod",
+     "kind": "theorem",
+     "line": 86,
+     "doc": "A `MState.relabel` can be distributed across a `prodRelabel`, if you have proofs that the factors\ncorrespond correctly.",
+     "statement": "theorem prodRelabel_relabel_cast_prod\n    (ρ₁ : MState (H i)) (ρ₂ : MState (H j))\n    (h : H (k * l) = H (i * j)) (hik : k = i) (hlj : l = j) :\n    (ρ₁ ⊗ᵣ ρ₂).relabel (Equiv.cast h) =\n    (ρ₁.relabel (Equiv.cast (congrArg H hik))) ⊗ᵣ (ρ₂.relabel (Equiv.cast (congrArg H hlj)))",
+     "sorry": false
+    },
+    {
+     "name": "ResourcePretheory.prodCPTPMap",
+     "kind": "def",
+     "line": 97,
+     "doc": "The `prod` operation of `ResourcePretheory` gives the natural product operation on `CPTPMap`s. Accessible\nby the notation `M₁ ⊗ᶜᵖᵣ M₂`.",
+     "statement": "noncomputable def prodCPTPMap (M₁ : CPTPMap (H i) (H j)) (M₂ : CPTPMap (H k) (H l)) :\n    CPTPMap (H (i * k)) (H (j * l))",
+     "sorry": false
+    },
+    {
+     "name": "ResourcePretheory.PosDef.prod",
+     "kind": "lemma",
+     "line": 105,
+     "doc": "",
+     "statement": "lemma PosDef.prod {ρ : MState (H i)} {σ : MState (H j)} (hρ : ρ.m.PosDef) (hσ : σ.m.PosDef)\n    : (ρ ⊗ᵣ σ).m.PosDef",
+     "sorry": false
+    },
+    {
+     "name": "ResourcePretheory.qRelEntropy_prodRelabel",
+     "kind": "lemma",
+     "line": 143,
+     "doc": "",
+     "statement": "lemma qRelEntropy_prodRelabel (ρ₁ ρ₂ : MState (H i)) (σ₁ σ₂ : MState (H j)):\n    𝐃(ρ₁ ⊗ᵣ σ₁‖ρ₂ ⊗ᵣ σ₂) = 𝐃(ρ₁‖ρ₂) + 𝐃(σ₁‖σ₂)",
+     "sorry": false
+    },
+    {
+     "name": "ResourcePretheory.sandwichedRelRentropy_prodRelabel",
+     "kind": "lemma",
+     "line": 148,
+     "doc": "",
+     "statement": "lemma sandwichedRelRentropy_prodRelabel {α : ℝ} (ρ₁ ρ₂ : MState (H i)) (σ₁ σ₂ : MState (H j)):\n    D̃_ α(ρ₁ ⊗ᵣ σ₁‖ρ₂ ⊗ᵣ σ₂) = D̃_ α(ρ₁‖ρ₂) + D̃_ α(σ₁‖σ₂)",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPretheory",
+     "kind": "class",
+     "line": 157,
+     "doc": "A ResourcePretheory is `Unital` if it has a Hilbert space of size 1, i.e. `ℂ`.",
+     "statement": "class UnitalPretheory (ι : Type*) extends ResourcePretheory ι, MulOneClass ι, Unique (H 1) where\n  prod_default {i} (ρ : MState (H i)) :\n    (toResourcePretheory.prodRelabel ρ (Inhabited.default : MState (H 1))) ≍ ρ\n  default_prod {i} (ρ : MState (H i)) :\n    (toResourcePretheory.prodRelabel (Inhabited.default : MState (H 1)) ρ) ≍ ρ",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 167,
+     "doc": "",
+     "statement": "instance : Monoid ι",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPretheory.spacePow",
+     "kind": "def",
+     "line": 176,
+     "doc": "Powers of spaces.\n\nWe define it for `Nat` in a `UnitalPretheory`. In principal this could be done for any\n`ResourcePretheory` and be defined for `PNat` so that we don't have zeroth powers. In\nanticipation that we might some day want that, and that we might do everything with a\nnon-equality associator, we keep this as its own definition and keep our own names for\nrewriting theorems where possible.",
+     "statement": "noncomputable def spacePow (i : ι) (n : ℕ) : ι",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPretheory.spacePow_zero",
+     "kind": "lemma",
+     "line": 184,
+     "doc": "",
+     "statement": "lemma spacePow_zero (i : ι) : i ^ 0 = 1",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPretheory.spacePow_one",
+     "kind": "lemma",
+     "line": 188,
+     "doc": "",
+     "statement": "lemma spacePow_one (i : ι) : i ^ 1 = i",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPretheory.spacePow_succ",
+     "kind": "lemma",
+     "line": 191,
+     "doc": "",
+     "statement": "lemma spacePow_succ (i : ι) (n : ℕ) : i ^ (n + 1) = (i ^ n) * i",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPretheory.spacePow_add",
+     "kind": "lemma",
+     "line": 194,
+     "doc": "",
+     "statement": "lemma spacePow_add (m n : ℕ) :\n    i ^ (m + n) = (i ^ m) * (i ^ n)",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPretheory.spacePow_mul",
+     "kind": "lemma",
+     "line": 201,
+     "doc": "",
+     "statement": "lemma spacePow_mul (m n : ℕ) :\n    i ^ (m * n) = (i ^ m) ^ n",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPretheory.statePow",
+     "kind": "def",
+     "line": 207,
+     "doc": "Powers of states, using the resource theory's notion of product. Accessible via the notation\n`ρ ⊗ᵣ^[n]`.",
+     "statement": "noncomputable def statePow (ρ : MState (H i)) (n : ℕ) : MState (H (i ^ n))",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPretheory.statePow_zero",
+     "kind": "lemma",
+     "line": 214,
+     "doc": "",
+     "statement": "lemma statePow_zero (ρ : MState (H i)) : ρ ⊗ᵣ^[0] = default",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPretheory.statePow_one",
+     "kind": "lemma",
+     "line": 218,
+     "doc": "",
+     "statement": "lemma statePow_one (ρ : MState (H i)) : ρ ⊗ᵣ^[1] ≍ ρ",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPretheory.statePow_succ",
+     "kind": "lemma",
+     "line": 224,
+     "doc": "",
+     "statement": "lemma statePow_succ (ρ : MState (H i)) (n : ℕ) : ρ ⊗ᵣ^[n + 1] = ρ ⊗ᵣ^[n] ⊗ᵣ ρ",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPretheory.statePow_add",
+     "kind": "lemma",
+     "line": 227,
+     "doc": "",
+     "statement": "lemma statePow_add (ρ : MState (H i)) (m n : ℕ) : ρ ⊗ᵣ^[m + n] ≍ ρ ⊗ᵣ^[m] ⊗ᵣ ρ ⊗ᵣ^[n]",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPretheory.statePow_add_relabel",
+     "kind": "lemma",
+     "line": 240,
+     "doc": "",
+     "statement": "lemma statePow_add_relabel (ρ : MState (H i)) (m n : ℕ) :\n    ρ ⊗ᵣ^[m + n] = (ρ ⊗ᵣ^[m] ⊗ᵣ ρ ⊗ᵣ^[n]).relabel (Equiv.cast (by congr; exact pow_add i m n))",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPretheory.statePow_mul",
+     "kind": "lemma",
+     "line": 248,
+     "doc": "",
+     "statement": "lemma statePow_mul (ρ : MState (H i)) (m n : ℕ) : ρ ⊗ᵣ^[m * n] ≍ (ρ ⊗ᵣ^[m]) ⊗ᵣ^[n]",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPretheory.statePow_mul_relabel",
+     "kind": "lemma",
+     "line": 273,
+     "doc": "",
+     "statement": "lemma statePow_mul_relabel {i : ι} (ρ : MState (H i)) (m n : ℕ) :\n   ρ ⊗ᵣ^[m * n] = (ρ ⊗ᵣ^[m]) ⊗ᵣ^[n].relabel (Equiv.cast (congrArg H (pow_mul i m n)))",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPretheory.PosDef.npow",
+     "kind": "lemma",
+     "line": 281,
+     "doc": "",
+     "statement": "lemma PosDef.npow {ρ : MState (H i)} (hρ : ρ.m.PosDef) (n : ℕ)\n    : (ρ ⊗ᵣ^[n]).m.PosDef",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPretheory.statePow_rw",
+     "kind": "lemma",
+     "line": 288,
+     "doc": "",
+     "statement": "lemma statePow_rw {n m : ℕ} (h : n = m) (ρ : MState (H i)) :\n    ρ ⊗ᵣ^[n] = (ρ ⊗ᵣ^[m]).relabel (Equiv.cast (by congr))",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPretheory.qRelEntropy_statePow",
+     "kind": "lemma",
+     "line": 295,
+     "doc": "",
+     "statement": "lemma qRelEntropy_statePow (ρ σ : MState (H i)) (n : ℕ) :\n    𝐃(ρ ⊗ᵣ^[n] ‖ σ  ⊗ᵣ^[n]) = n * 𝐃(ρ‖σ)",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPretheory.sInf_spectrum_rprod",
+     "kind": "lemma",
+     "line": 303,
+     "doc": "",
+     "statement": "lemma sInf_spectrum_rprod {j : ι} (ρ : MState (H i)) (σ : MState (H j)) :\n    sInf (spectrum ℝ (ρ ⊗ᵣ σ).m) = sInf (spectrum ℝ ρ.m) * sInf (spectrum ℝ σ.m)",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPretheory.sInf_spectrum_spacePow",
+     "kind": "lemma",
+     "line": 308,
+     "doc": "",
+     "statement": "lemma sInf_spectrum_spacePow (σ : MState (H i)) (n : ℕ) :\n    sInf (spectrum ℝ (σ ⊗ᵣ^[n]).m) = sInf (spectrum ℝ σ.m) ^ n",
+     "sorry": false
+    },
+    {
+     "name": "UnitalPretheory.sandwichedRelRentropy_statePow",
+     "kind": "lemma",
+     "line": 323,
+     "doc": "",
+     "statement": "lemma sandwichedRelRentropy_statePow {α : ℝ} (ρ σ : MState (H i)) (n : ℕ) :\n    D̃_ α(ρ ⊗ᵣ^[n] ‖ σ ⊗ᵣ^[n]) = n * D̃_ α(ρ‖σ)",
+     "sorry": false
+    },
+    {
+     "name": "FreeStateTheory",
+     "kind": "class",
+     "line": 342,
+     "doc": "A `FreeStateTheory` is a collection of mixed states (`MState`s) in a `ResourcePretheory` that obeys\nsome necessary axioms:\n * For each Hilbert space `H i`, the free states are a closed, convex set\n * For each Hilbert space `H i`, there is a free state of full rank\n * If `ρᵢ ∈ H i` and `ρⱼ ∈ H j` are free, then `ρᵢ ⊗ ρⱼ` is free in `H (prod i j)`.",
+     "statement": "class FreeStateTheory (ι : Type*) extends ResourcePretheory ι where\n  /-- The set of states we're calling \"free\" -/\n  IsFree : Set (MState (toResourcePretheory.H i))\n  /-- The set F(H) of free states is closed -/\n  free_closed : IsClosed (@IsFree i)\n  /-- The set F(H) of free states is convex (more precisely, their matrices are) -/\n  free_convex : Convex ℝ (MState.M '' (@IsFree i))\n  /-- The set of free states is closed under tensor product -/\n  free_prod {ρ₁ : MState (H i)} {ρ₂ : MState (H j)} (h₁ : ρ₁ ∈ IsFree) (h₂ : ρ₂ ∈ IsFree) : (ρ₁ ⊗ᵣ ρ₂) ∈ IsFree\n  /-- The set F(H) of free states contains a full-rank state `ρfull`, equivalently `ρfull` is positive definite. -/\n  free_fullRank (i : ι) : open ComplexOrder in ∃ (ρ : MState (H i)), ρ.m.PosDef ∧ ρ ∈ IsFree",
+     "sorry": false
+    },
+    {
+     "name": "FreeStateTheory.Inhabited_IsFree",
+     "kind": "instance",
+     "line": 358,
+     "doc": "",
+     "statement": "noncomputable instance Inhabited_IsFree : Inhabited (IsFree (i := i))",
+     "sorry": false
+    },
+    {
+     "name": "FreeStateTheory.IsFree.of_unique",
+     "kind": "lemma",
+     "line": 361,
+     "doc": "",
+     "statement": "lemma IsFree.of_unique [Unique (H i)] (ρ : MState (H i)) : ρ ∈ IsFree",
+     "sorry": false
+    },
+    {
+     "name": "FreeStateTheory.IsCompact_IsFree",
+     "kind": "theorem",
+     "line": 367,
+     "doc": "The set of free states is compact because it's a closed subset of a compact space.",
+     "statement": "theorem IsCompact_IsFree : IsCompact (IsFree (i := i))",
+     "sorry": false
+    },
+    {
+     "name": "FreeStateTheory.IsFree.mix",
+     "kind": "lemma",
+     "line": 373,
+     "doc": "",
+     "statement": "lemma IsFree.mix {ι : Type*} [FreeStateTheory ι] {i : ι} {σ₁ σ₂ : MState (H i)}\n    (hσ₁ : σ₁ ∈ IsFree) (hσ₂ : σ₂ ∈ IsFree) (p : Prob) : (p [σ₁ ↔ σ₂]) ∈ IsFree",
+     "sorry": false
+    },
+    {
+     "name": "UnitalFreeStateTheory",
+     "kind": "class",
+     "line": 385,
+     "doc": "",
+     "statement": "class UnitalFreeStateTheory (ι : Type*) extends FreeStateTheory ι, UnitalPretheory ι",
+     "sorry": false
+    },
+    {
+     "name": "FreeStateTheory.IsFree.npow",
+     "kind": "lemma",
+     "line": 394,
+     "doc": "",
+     "statement": "lemma _root_.FreeStateTheory.IsFree.npow {i : ι} {ρ : MState (H i)}\n    (hρ : ρ ∈ IsFree) (n : ℕ) : (ρ ⊗ᵣ^[n]) ∈ IsFree",
+     "sorry": false
+    },
+    {
+     "name": "UnitalFreeStateTheory.relabel_cast_isFree",
+     "kind": "lemma",
+     "line": 403,
+     "doc": "",
+     "statement": "lemma relabel_cast_isFree {i j : ι} (ρ : MState (H i)) (h : j = i) {h' : H j = H i}:\n    ρ.relabel (Equiv.cast h') ∈ IsFree ↔ ρ ∈ IsFree",
+     "sorry": false
+    },
+    {
+     "name": "UnitalFreeStateTheory.relativeEntResource_ne_top",
+     "kind": "lemma",
+     "line": 413,
+     "doc": "In a `FreeStateTheory`, we have free states of full rank, therefore the minimum relative entropy\nof any state `ρ` to a free state is finite.",
+     "statement": "lemma relativeEntResource_ne_top (ρ : MState (H i)) : ⨅ σ ∈ IsFree, 𝐃(ρ‖σ) ≠ ⊤",
+     "sorry": false
+    },
+    {
+     "name": "UnitalFreeStateTheory.RelativeEntResource",
+     "kind": "def",
+     "line": 426,
+     "doc": "",
+     "statement": "noncomputable def RelativeEntResource : MState (H i) → ℝ≥0",
+     "sorry": false
+    },
+    {
+     "name": "UnitalFreeStateTheory.exists_isFree_relativeEntResource",
+     "kind": "lemma",
+     "line": 432,
+     "doc": "",
+     "statement": "lemma exists_isFree_relativeEntResource (ρ : MState (H i)) :\n    ∃ σ ∈ IsFree, 𝐃(ρ‖σ) = 𝑅ᵣ ρ",
+     "sorry": false
+    },
+    {
+     "name": "UnitalFreeStateTheory.RelativeEntResource.Subadditive",
+     "kind": "lemma",
+     "line": 441,
+     "doc": "",
+     "statement": "lemma RelativeEntResource.Subadditive (ρ : MState (H i)) :\n    Subadditive fun n ↦ (𝑅ᵣ (ρ ⊗ᵣ^[n]) : ℝ)",
+     "sorry": false
+    },
+    {
+     "name": "UnitalFreeStateTheory.RegularizedRelativeEntResource",
+     "kind": "def",
+     "line": 461,
+     "doc": "",
+     "statement": "noncomputable def RegularizedRelativeEntResource (ρ : MState (H i)) : ℝ≥0",
+     "sorry": false
+    },
+    {
+     "name": "UnitalFreeStateTheory.RelativeEntResource.tendsto",
+     "kind": "theorem",
+     "line": 471,
+     "doc": "Lemma 5",
+     "statement": "theorem RelativeEntResource.tendsto (ρ : MState (H i)) :\n    Filter.atTop.Tendsto (fun n ↦ 𝑅ᵣ (ρ ⊗ᵣ^[n]) / n) (𝓝 (𝑅ᵣ∞ ρ))",
+     "sorry": false
+    },
+    {
+     "name": "UnitalFreeStateTheory.RelativeEntResource.tendsto_ennreal",
+     "kind": "theorem",
+     "line": 481,
+     "doc": "Alternate version of Lemma 5 which states the convergence with the `ENNReal`\nexpression for `RelativeEntResource`, as opposed its `untop`-ped `NNReal` value.",
+     "statement": "theorem RelativeEntResource.tendsto_ennreal (ρ : MState (H i)) :\n    Filter.atTop.Tendsto (fun n ↦ (⨅ σ ∈ IsFree, 𝐃(ρ ⊗ᵣ^[n]‖σ)) / ↑n) (𝓝 (𝑅ᵣ∞ ρ))",
+     "sorry": false
+    },
+    {
+     "name": "UnitalFreeStateTheory.GlobalRobustness",
+     "kind": "def",
+     "line": 490,
+     "doc": "",
+     "statement": "noncomputable def GlobalRobustness {i : ι} : MState (H i) → ℝ≥0",
+     "sorry": false
+    },
+    {
+     "name": "UnitalFreeStateTheory.IsAsymptoticallyNongenerating",
+     "kind": "def",
+     "line": 497,
+     "doc": "A sequence of operations `f_n` is asymptotically nongenerating if `lim_{n→∞} RG(f_n(ρ_n)) = 0`, where\nRG is `GlobalRobustness` and `ρ_n` is any sequence of free states. Equivalently, we can take the `max` (\nover operations and states) on the left-hand side inside the limit.",
+     "statement": "def IsAsymptoticallyNongenerating (dI dO : ι) (f : (n : ℕ) → CPTPMap (H (dI⊗^H[n])) (H (dO⊗^H[n]))) : Prop",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "QuantumInfo/ResourceTheory/HypothesisTesting.lean",
+   "module": "QuantumInfo.ResourceTheory.HypothesisTesting",
+   "title": "",
+   "doc": "Defines `OptimalHypothesisRate`, the optimal rate of distinguishing an `MState` ρ from a set of other\nmixed states `S`, with at most Type I error ε.\n\nThat is to say: take a projective measurement (a `POVM`) with elements `{T, 1-T}`, where measuring `T`\nwill mean we conclude our unknown state was ρ, and measuring `1-T` will mean we think the state was\nsomething in `S`. We only accept T's such that `Tr[(1-T)ρ] ≤ ε`, that is, we have at most an ε\nprobability of incorrectly concluding it was ρ. The Type II error associated to this T is then\n`max_{σ ∈ S} Tr[T σ]`, that is, the (worst possible, over possible states) chance of incorrectly\nconcluding our state was in `S`. Optimize over `T` to get the lowest possible Type II error rate,\nand the resulting error rate is `OptimalHypothesisRate ρ ε S`.\n\nWe make this accessible through the notation `β_ ε(ρ‖S)`.\n\nSee [The tangled state of quantum hypothesis testing](https://doi.org/10.1038/s41567-023-02289-9) by\nMario Berta et al. for a broader overview.",
+   "copyright": "2025 Alex Meiburg",
+   "sections": [],
+   "declarations": [
+    {
+     "name": "OptimalHypothesisRate",
+     "kind": "def",
+     "line": 45,
+     "doc": "The optimal hypothesis testing rate, for a tolerance ε: given a state ρ and a set of states S,\nthe optimum distinguishing rate that allows a probability ε of errors.",
+     "statement": "noncomputable def OptimalHypothesisRate (ρ : MState d) (ε : Prob) (S : Set (MState d)) : Prob",
+     "sorry": false
+    },
+    {
+     "name": "OptimalHypothesisRate.iInf_Inhabited",
+     "kind": "instance",
+     "line": 54,
+     "doc": "The space of strategies `T` in `OptimalHypothesisRate` is inhabited, we always have some valid strategy.",
+     "statement": "instance iInf_Inhabited (ρ : MState d) (ε : Prob) :\n    Inhabited { m // ρ.exp_val (1 - m) ≤ ε ∧ 0 ≤ m ∧ m ≤ 1 }",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 58,
+     "doc": "",
+     "statement": "instance (ρ : MState d) (ε : Prob) : Inhabited {m | ρ.exp_val (1 - m) ≤ ε ∧ 0 ≤ m ∧ m ≤ 1}",
+     "sorry": false
+    },
+    {
+     "name": "OptimalHypothesisRate.iInf_IsCompact",
+     "kind": "theorem",
+     "line": 62,
+     "doc": "The space of strategies `T` in `OptimalHypothesisRate` is compact.",
+     "statement": "theorem iInf_IsCompact (ρ : MState d) (ε : Prob) : IsCompact { m | ρ.exp_val (1 - m) ≤ ε ∧ 0 ≤ m ∧ m ≤ 1 }",
+     "sorry": false
+    },
+    {
+     "name": "OptimalHypothesisRate.iInf_IsConvex",
+     "kind": "theorem",
+     "line": 73,
+     "doc": "The space of strategies `T` in `OptimalHypothesisRate` is convex.",
+     "statement": "theorem iInf_IsConvex (ρ : MState d) (ε : Prob) : Convex ℝ { m | ρ.exp_val (1 - m) ≤ ε ∧ 0 ≤ m ∧ m ≤ 1 }",
+     "sorry": false
+    },
+    {
+     "name": "OptimalHypothesisRate.of_empty",
+     "kind": "theorem",
+     "line": 92,
+     "doc": "When `S` is empty, the optimal hypothesis testing rate is zero.",
+     "statement": "theorem of_empty {ρ : MState d} (ε : Prob) : β_ ε(ρ‖∅) = 0",
+     "sorry": false
+    },
+    {
+     "name": "OptimalHypothesisRate.le_sup_exp_val",
+     "kind": "lemma",
+     "line": 97,
+     "doc": "",
+     "statement": "lemma le_sup_exp_val {ρ : MState d} (ε : Prob) {S : Set (MState d)}\n    (m : HermitianMat d ℂ) (hExp : ρ.exp_val (1 - m) ≤ ε) (hm : 0 ≤ m ∧ m ≤ 1) :\n    β_ ε(ρ‖S) ≤ ⨆ σ ∈ S, ⟨_, σ.exp_val_prob hm⟩",
+     "sorry": false
+    },
+    {
+     "name": "OptimalHypothesisRate.le_of_subset",
+     "kind": "lemma",
+     "line": 104,
+     "doc": "",
+     "statement": "lemma le_of_subset (ρ : MState d) (ε : Prob) {S1 S2 : Set (MState d)} (h : S1 ⊆ S2) :\n    β_ ε(ρ‖S1) ≤ β_ ε(ρ‖S2)",
+     "sorry": false
+    },
+    {
+     "name": "OptimalHypothesisRate.of_singleton",
+     "kind": "lemma",
+     "line": 108,
+     "doc": "",
+     "statement": "lemma of_singleton {ρ σ : MState d} {ε : Prob} :\n    β_ ε(ρ‖{σ}) =\n      ⨅ T : { m : HermitianMat d ℂ // ρ.exp_val (1 - m) ≤ ε ∧ 0 ≤ m ∧ m ≤ 1},\n        ⟨_, σ.exp_val_prob T.2.right⟩",
+     "sorry": false
+    },
+    {
+     "name": "OptimalHypothesisRate.negLog_le_singleton",
+     "kind": "lemma",
+     "line": 115,
+     "doc": "",
+     "statement": "lemma negLog_le_singleton (ρ : MState d) (ε : Prob) (S : Set (MState d))\n    (σ : MState d) (h : σ ∈ S) : —log β_ ε(ρ‖S) ≤ —log β_ ε(ρ‖{σ})",
+     "sorry": false
+    },
+    {
+     "name": "OptimalHypothesisRate.singleton_le_exp_val",
+     "kind": "lemma",
+     "line": 122,
+     "doc": "",
+     "statement": "lemma singleton_le_exp_val {ρ σ : MState d} {ε : Prob} (m : HermitianMat d ℂ)\n    (hExp : ρ.exp_val (1 - m) ≤ ε) (hm : 0 ≤ m ∧ m ≤ 1) :\n  β_ ε(ρ‖{σ}) ≤ ⟨_, σ.exp_val_prob hm⟩",
+     "sorry": false
+    },
+    {
+     "name": "OptimalHypothesisRate.exists_min'",
+     "kind": "theorem",
+     "line": 133,
+     "doc": "There exists an optimal T for the hypothesis testing, that is, it's a minimum\nand not just an infimum. This states we have `1 - ε ≤ ρ.exp_val T`, but we can always\n\"worsen\" T to make that bound tight, which is `exists_min`.",
+     "statement": "theorem exists_min' (ρ : MState d) (ε : Prob) (S : Set (MState d)):\n    ∃ (T : { m : HermitianMat d ℂ // ρ.exp_val (1 - m) ≤ ε ∧ 0 ≤ m ∧ m ≤ 1}),\n      (⨆ σ ∈ S, ⟨_, σ.exp_val_prob T.prop.right⟩ = β_ ε(ρ‖S))\n      ∧ 1 - ε ≤ ρ.exp_val T",
+     "sorry": false
+    },
+    {
+     "name": "OptimalHypothesisRate.exists_min",
+     "kind": "theorem",
+     "line": 176,
+     "doc": "There exists an optimal T for the hypothesis testing, that is, it's a minimum and\nnot just an infimum. This tightens the `T` from `exists_min'` to a `⟪ρ,T⟫ = 1 - ε` bound.",
+     "statement": "theorem exists_min (ρ : MState d) (ε : Prob) (S : Set (MState d)):\n    ∃ (T : { m : HermitianMat d ℂ // ρ.exp_val (1 - m) ≤ ε ∧ 0 ≤ m ∧ m ≤ 1}),\n      (⨆ σ ∈ S, ⟨_, σ.exp_val_prob T.prop.right⟩ = β_ ε(ρ‖S))\n      ∧ ρ.exp_val T = 1 - ε",
+     "sorry": false
+    },
+    {
+     "name": "OptimalHypothesisRate.pos_of_lt_one",
+     "kind": "theorem",
+     "line": 231,
+     "doc": "When the allowed Type I error `ε` is less than 1 (so, we have some limit on our errors),\nand the kernel of the state `ρ` contains the kernel of some element in `S`, then the optimal\nhypothesis rate is positive - there is some lower bound on the type II errors we'll see. In\nother words, under these conditions, we cannot completely avoid type II errors.",
+     "statement": "theorem pos_of_lt_one {ρ : MState d} (S : Set (MState d))\n  (hρ : ∃ σ ∈ S, σ.M.ker ≤ ρ.M.ker)\n  {ε : Prob} (hε : ε < 1) : 0 < β_ ε(ρ‖S)",
+     "sorry": false
+    },
+    {
+     "name": "OptimalHypothesisRate.Lemma3",
+     "kind": "lemma",
+     "line": 261,
+     "doc": "",
+     "statement": "lemma Lemma3 {ρ : MState d} (ε : Prob) {S : Set (MState d)} (hS₁ : IsCompact S)\n    (hS₂ : Convex ℝ (MState.M '' S)) : ⨆ σ ∈ S, β_ ε(ρ‖{σ}) = β_ ε(ρ‖S)",
+     "sorry": false
+    },
+    {
+     "name": "OptimalHypothesisRate.ker_diagonal_prob_eq_bot",
+     "kind": "lemma",
+     "line": 304,
+     "doc": "",
+     "statement": "lemma ker_diagonal_prob_eq_bot {q : Prob} (hq₁ : 0 < q) (hq₂ : q < 1) :\n    HermitianMat.ker (.diagonal ℂ (ProbDistribution.coin q ·)) = ⊥",
+     "sorry": false
+    },
+    {
+     "name": "OptimalHypothesisRate.optimalHypothesisRate_antitone",
+     "kind": "theorem",
+     "line": 326,
+     "doc": "Lemma S1",
+     "statement": "theorem optimalHypothesisRate_antitone (ρ σ : MState d) (ℰ : CPTPMap d d₂) (ε : Prob) :\n    β_ ε(ρ‖{σ}) ≤ β_ ε(ℰ ρ‖{ℰ σ})",
+     "sorry": false
+    },
+    {
+     "name": "OptimalHypothesisRate.Ref81Lem5",
+     "kind": "theorem",
+     "line": 357,
+     "doc": "This is from [Strong converse exponents for a quantum channel discrimination problem\nand quantum-feedback-assisted communication](https://doi.org/10.1007/s00220-016-2645-4), Lemma 5.\n\nIt seems like this is actually true for all 0 < α (with appropriate modifications at α = 1), but we only need\nit for the case of 1 < α.",
+     "statement": "theorem Ref81Lem5 (ρ σ : MState d) (ε : Prob) (hε : ε < 1) (α : ℝ) (hα : 1 < α) :\n    —log β_ ε(ρ‖{σ}) ≤ D̃_ α(ρ‖σ) + —log (1 - ε) *\n      (.ofNNReal ⟨α, zero_le_one.trans hα.le⟩) / (.ofNNReal ⟨α - 1, sub_nonneg_of_le hα.le⟩)",
+     "sorry": false
+    },
+    {
+     "name": "OptimalHypothesisRate.rate_pos_of_smul_pos",
+     "kind": "lemma",
+     "line": 524,
+     "doc": "",
+     "statement": "lemma rate_pos_of_smul_pos {ε : Prob} {d : Type*} [Fintype d] [DecidableEq d] {ρ σ₁ σ₂ : MState d}\n    (hσ₂ : 0 < β_ ε(ρ‖{σ₂})) {c : ℝ} (hc : 0 < c) (hσ : c • σ₂ ≤ σ₁.M) : 0 < β_ ε(ρ‖{σ₁})",
+     "sorry": false
+    },
+    {
+     "name": "OptimalHypothesisRate.rate_Continuous_singleton",
+     "kind": "lemma",
+     "line": 542,
+     "doc": "",
+     "statement": "lemma rate_Continuous_singleton {ε : Prob} {d : Type*} [Fintype d] [DecidableEq d] (ρ : MState d) :\n    Continuous fun σ ↦ β_ ε(ρ‖{σ})",
+     "sorry": false
+    },
+    {
+     "name": "OptimalHypothesisRate.optimalHypothesisRate_unique",
+     "kind": "theorem",
+     "line": 554,
+     "doc": "On the 1D Hilbert space, the optimal hypothesis testing rate is simply 1 - ε,\nsince there's nothing to learn. (More generally this would hold whenever ρ=σ.) -",
+     "statement": "theorem optimalHypothesisRate_unique {d : Type*} [Fintype d] [DecidableEq d]\n    (ε : Prob) (ρ σ : MState d) [Unique d] : β_ ε(ρ‖{σ}) = 1 - ε",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "QuantumInfo/ResourceTheory/SteinsLemma.lean",
+   "module": "QuantumInfo.ResourceTheory.SteinsLemma",
+   "title": "",
+   "doc": "",
+   "copyright": "2025 Alex Meiburg",
+   "sections": [],
+   "declarations": [
+    {
+     "name": "SteinsLemma.Lemma6_σn",
+     "kind": "def",
+     "line": 29,
+     "doc": "The \\tilde{σ}_n defined in Lemma 6, also in equation (S40) in Lemma 7.",
+     "statement": "noncomputable def Lemma6_σn (m : ℕ) (σf : MState (H i)) (σₘ : MState (H (i ^ m))) : (n : ℕ) → MState (H (i ^ n))",
+     "sorry": false
+    },
+    {
+     "name": "SteinsLemma.Lemma6_σn_IsFree",
+     "kind": "lemma",
+     "line": 34,
+     "doc": "",
+     "statement": "lemma Lemma6_σn_IsFree {σ₁ : MState (H i)} {σₘ : (m : ℕ) → MState (H (i ^ m))} (hσ₁_free : σ₁ ∈ IsFree)\n    (hσₘ : ∀ (m : ℕ), σₘ m ∈ IsFree) (m n : ℕ) : Lemma6_σn m σ₁ (σₘ m) n ∈ IsFree",
+     "sorry": false
+    },
+    {
+     "name": "SteinsLemma.LemmaS2liminf",
+     "kind": "lemma",
+     "line": 192,
+     "doc": "",
+     "statement": "lemma LemmaS2liminf {ε3 : Prob} {ε4 : ℝ≥0} (hε4 : 0 < ε4)\n  {d : ℕ → Type*} [∀ n, Fintype (d n)] [∀ n, DecidableEq (d n)] (ρ : (n : ℕ) → MState (d n)) (σ : (n : ℕ) → MState (d n))\n  {Rinf : ℝ≥0} (hRinf : Rinf ≥ Filter.atTop.liminf (fun (n : ℕ) ↦ —log β_ ε3(ρ n‖{σ n}) / n))\n  :\n  (Filter.atTop.liminf (fun (n : ℕ) ↦ ⟪{(ρ n).M ≥ₚ (Real.exp (n * (Rinf + ε4))) • (σ n).M}, (ρ n).M⟫) ≤ 1 - ε3)",
+     "sorry": false
+    },
+    {
+     "name": "SteinsLemma.LemmaS2limsup",
+     "kind": "lemma",
+     "line": 260,
+     "doc": "",
+     "statement": "lemma LemmaS2limsup {ε3 : Prob} {ε4 : ℝ≥0} (hε4 : 0 < ε4)\n  {d : ℕ → Type*} [∀ n, Fintype (d n)] [∀ n, DecidableEq (d n)] (ρ : (n : ℕ) → MState (d n)) (σ : (n : ℕ) → MState (d n))\n  {Rsup : ℝ≥0} (hRsup : Rsup ≥ Filter.atTop.limsup (fun (n : ℕ) ↦ —log β_ ε3(ρ n‖{σ n}) / n))\n  :\n  (Filter.atTop.limsup (fun (n : ℕ) ↦ ⟪{ρ n ≥ₚ (Real.exp (n * (Rsup + ε4))) • (σ n).M}, ρ n⟫) ≤ 1 - ε3)",
+     "sorry": false
+    },
+    {
+     "name": "SteinsLemma.R1",
+     "kind": "def",
+     "line": 412,
+     "doc": "",
+     "statement": "noncomputable def R1 (ρ : MState (H i)) (ε : Prob) : ℝ≥0∞",
+     "sorry": false
+    },
+    {
+     "name": "SteinsLemma.R2",
+     "kind": "def",
+     "line": 415,
+     "doc": "",
+     "statement": "noncomputable def R2 (ρ : MState (H i)) : ((n : ℕ) → IsFree (i := i ^ n)) → ℝ≥0∞",
+     "sorry": false
+    },
+    {
+     "name": "SteinsLemma.σ₁",
+     "kind": "def",
+     "line": 677,
+     "doc": "",
+     "statement": "def σ₁ : MState (H i)",
+     "sorry": false
+    },
+    {
+     "name": "SteinsLemma.σ₁_mineig",
+     "kind": "def",
+     "line": 680,
+     "doc": "",
+     "statement": "def σ₁_mineig",
+     "sorry": false
+    },
+    {
+     "name": "SteinsLemma.σ₁_c",
+     "kind": "def",
+     "line": 684,
+     "doc": "The sequence c_n given in (S44). In order to handle when c = 0, we've replaced the\n(Real.log 3) / n term with (Real.log 3) / (max n 1).",
+     "statement": "def σ₁_c (n : ℕ) : ℝ",
+     "sorry": false
+    },
+    {
+     "name": "SteinsLemma.σ₁_c_littleO",
+     "kind": "lemma",
+     "line": 767,
+     "doc": "",
+     "statement": "lemma σ₁_c_littleO : (fun n : ℕ ↦ σ₁_c i n + Real.log 3) =o[Filter.atTop] (fun x ↦ (x : ℝ))",
+     "sorry": false
+    },
+    {
+     "name": "SteinsLemma.Lemma7",
+     "kind": "theorem",
+     "line": 1752,
+     "doc": "Lemma 7 from the paper. We write `ε'` for their `\\tilde{ε}`.",
+     "statement": "theorem Lemma7 (ρ : MState (H i)) {ε : Prob} (hε : 0 < ε ∧ ε < 1) (σ : (n : ℕ) → IsFree (i := i ^ n)) :\n    (R2 ρ σ ≥ R1 ρ ε) →\n    ∀ ε' : Prob, (hε' : 0 < ε' ∧ ε' < ε) → -- ε' is written as \\tilde{ε} in the paper.\n    ∃ σ' : (n : ℕ) → IsFree (i := i ^ n),\n    R2 ρ σ' - R1 ρ ε ≤ .ofNNReal (1 - ε' : Prob) * (R2 ρ σ - R1 ρ ε)",
+     "sorry": false
+    },
+    {
+     "name": "SteinsLemma.Lemma7_improver",
+     "kind": "def",
+     "line": 1953,
+     "doc": "Lemma 7 gives us a way to repeatedly \"improve\" a sequence σ to one with a smaller gap between R2 and R1.\nThe paper paints this as pretty much immediate from Lemma7, but we need to handle the case where R2 is below\nR1.",
+     "statement": "noncomputable def Lemma7_improver (ρ : MState (H i)) {ε : Prob} (hε : 0 < ε ∧ ε < 1) {ε' : Prob} (hε' : 0 < ε' ∧ ε' < ε) :\n    --The parameters above are the \"fixed\" parameters that we'll improve\n    --It takes one sequence of free states, `(n : ℕ) → IsFree (i := i ^ n)`, and gives a new one\n    ((n : ℕ) → IsFree (i := i ^ n)) → ((n : ℕ) → IsFree (i := i ^ n))",
+     "sorry": false
+    },
+    {
+     "name": "SteinsLemma.Lemma7_gap",
+     "kind": "theorem",
+     "line": 1964,
+     "doc": "The Lemma7_improver does its job at shrinking the gap.",
+     "statement": "theorem Lemma7_gap (ρ : MState (H i)) {ε : Prob} (hε : 0 < ε ∧ ε < 1) {ε' : Prob} (hε' : 0 < ε' ∧ ε' < ε) :\n    ∀ σ,\n      letI σ' := Lemma7_improver ρ hε hε' σ;\n      R2 ρ σ' - R1 ρ ε ≤ .ofNNReal (1 - ε' : Prob) * (R2 ρ σ - R1 ρ ε)",
+     "sorry": false
+    },
+    {
+     "name": "SteinsLemma.GeneralizedQSteinsLemma",
+     "kind": "theorem",
+     "line": 1980,
+     "doc": "Theorem 1 in https://arxiv.org/pdf/2408.02722v3",
+     "statement": "theorem GeneralizedQSteinsLemma {i : ι} (ρ : MState (H i)) {ε : Prob} (hε : 0 < ε ∧ ε < 1) :\n    Filter.atTop.Tendsto (fun n ↦ —log β_ ε(ρ ⊗ᵣ^[n]‖IsFree) / n) (𝓝 (𝑅ᵣ∞ ρ))",
+     "sorry": false
+    },
+    {
+     "name": "SteinsLemma.limit_hypotesting_eq_limit_rel_entropy",
+     "kind": "theorem",
+     "line": 2114,
+     "doc": "Theorem 4, which is also called the Generalized quantum Stein's lemma in Hayashi & Yamasaki.\nWhat they state as an equality of limits, which don't exist per se in Mathlib, we state as the existence\nof a number (which happens to be `RegularizedRelativeEntResource`) to which both sides converge.",
+     "statement": "theorem limit_hypotesting_eq_limit_rel_entropy (ρ : MState (H i)) (ε : Prob) (hε : 0 < ε ∧ ε < 1) :\n    ∃ d : ℝ≥0,\n      Filter.atTop.Tendsto (fun n ↦ —log β_ ε(ρ ⊗ᵣ^[n]‖IsFree) / n) (𝓝 d)\n      ∧\n      Filter.atTop.Tendsto (fun n ↦ (⨅ σ ∈ IsFree, 𝐃(ρ ⊗ᵣ^[n]‖σ)) / n) (𝓝 d)",
+     "sorry": false
+    }
+   ],
+   "private": 44,
+   "aliases": 0,
+   "informal": 0
+  }
+ ]
+}

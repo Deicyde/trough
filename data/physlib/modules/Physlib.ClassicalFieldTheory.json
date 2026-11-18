@@ -1,0 +1,390 @@
+{
+ "schema": "trough-physlib/v1",
+ "rev": "2a1dfe43134b49b643642f13d33031754021bb5d",
+ "modules": [
+  {
+   "file": "Physlib/ClassicalFieldTheory/GaugeTheory/LocalGaugeData/Basic.lean",
+   "module": "Physlib.ClassicalFieldTheory.GaugeTheory.LocalGaugeData.Basic",
+   "title": "Local gauge data",
+   "doc": "The jets of gauge transformations at a point, as the data a local Lagrangian sees.\n\n## i. Overview\n\nThe full gauge group of a theory is some class of functions from spacetime to a global gauge\ngroup `G₀` with Lie algebra `𝔤`; for the Standard Model `G₀ = SU(3) × SU(2) × U(1)`, ignoring\ndiscrete quotients. Physicists are usually agnostic about which class, because a local\nLagrangian only sees how a gauge transformation acts on the fields and finitely many of their\nderivatives at a point `x`, and that depends only on the Taylor series of the gauge transformation\nat `x`. If every smooth function is an allowed gauge transformation — the one assumption made\nabout the class — then by Borel's theorem every Taylor series compatible with the group\narises, convergent or not. These Taylor series, the *jets* at `x`, form the group `GJ`, and\ntheir infinitesimal counterparts the Lie algebra `𝔤J` over `ℝ`.\n\nHow best to present `GJ` depends on `G₀`, so it is taken as input rather than constructed.\nFor a matrix group such as `SU(2)`, the jet of a gauge transformation is a matrix with entries\nin `SpaceTimeAlgebra`, the formal Taylor series at `x`. The Taylor series of a product is the\nproduct of the Taylor series, so the group law is still matrix multiplication, and `GJ` is cut\nout by the same equations `U† U = 1` and `det U = 1` read over `SpaceTimeAlgebra`; likewise\n`𝔤J` is the traceless self-adjoint matrices over `SpaceTimeAlgebra` with the usual bracket\n` ⁅A, B⁆ = i(AB − BA)`.\n\n\n## ii. Key results\n\n- `LocalGaugeData` : the structure.\n- `LocalGaugeData.adjoint_bracket` : the adjoint action of `G₀` on `𝔤` is by Lie algebra\n  automorphisms, from the jet-level law applied to constants.\n- `LocalGaugeData.iteratedDeriv` : the iterated derivative `∂_s` on `𝔤J` along a multiset\n  of directions, with `iteratedDeriv_cons`, `iteratedDeriv_add` and the iterated Leibniz\n  rule `iteratedDeriv_bracket`.\n- `LocalGaugeData.evalLie_iteratedDeriv_mulCoord` : the coordinate multiplication identity\n- `LocalGaugeData.Hom` : a morphism of local gauge data, with `Hom.id` and `Hom.comp`.\n\n## iii. Table of contents\n\n- A. The structure\n- B. Simple derived properties\n- C. The iterated derivative on the jet Lie algebra\n  - C.1. Commutativity of derivatives\n  - C.2. Definition of the iterated derivative\n  - C.3. Properties of the iterated derivative\n- D. Morphisms\n  - D.1. The adjoint action\n  - D.2. Relation to iterated derivatives\n  - D.3. Identity morphisms\n  - D.4. Composition of morphisms\n\n## iv. References",
+   "copyright": "2026 Joseph Tooby-Smith",
+   "sections": [
+    {
+     "line": 69,
+     "text": "## A. The structure\n\nWe package this local information of a gauge group into the structure `LocalGaugeData G₀ 𝔤 GJ 𝔤J`.\nAlongside the four carriers, it records the operations that the transformation laws of gauge fields\nand matter fields are built from, and the coordinates that place a jet around the base point.\nIt consists of:\n\n* the inclusion of constants and evaluation at the base point, on the group and on the\n  Lie algebra;\n* the formal spacetime derivatives `deriv μ` on `𝔤J`, commuting, satisfying the Leibniz\n  rule for the bracket, and killing constants;\n* multiplication by the coordinates `mulCoord μ`, vanishing at the base point and central for\n  the bracket, with `∂_μ (x_ν a) = x_ν ∂_μ a + δ_{μν} a`;\n* the adjoint action of `GJ` on `𝔤J`, by Lie algebra automorphisms, evaluating at the base\n  point to the adjoint action of `G₀` on `𝔤`;\n* the Maurer–Cartan form `maurerCartan U μ = i (∂_μ U) U⁻¹`, with its cocycle law, its\n  flatness equation `maurerCartan_structure` and the Leibniz rule `deriv_adjointJ` for the\n  adjoint action."
+    },
+    {
+     "line": 158,
+     "text": "## B. Simple derived properties"
+    },
+    {
+     "line": 190,
+     "text": "## C. The iterated derivative on the jet Lie algebra"
+    },
+    {
+     "line": 196,
+     "text": "### C.1. Commutativity of derivatives"
+    },
+    {
+     "line": 209,
+     "text": "### C.2. Definition of the iterated derivative"
+    },
+    {
+     "line": 219,
+     "text": "### C.3. Properties of the iterated derivative"
+    },
+    {
+     "line": 317,
+     "text": "## D. Morphisms"
+    },
+    {
+     "line": 354,
+     "text": "### D.1. The adjoint action"
+    },
+    {
+     "line": 368,
+     "text": "### D.2. Relation to iterated derivatives"
+    },
+    {
+     "line": 383,
+     "text": "### D.3. Identity morphisms"
+    },
+    {
+     "line": 404,
+     "text": "### D.4. Composition of morphisms"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "LocalGaugeData",
+     "kind": "structure",
+     "line": 96,
+     "doc": "Local gauge data. A gauge group `G₀` with Lie algebra `𝔤`, its group of jets `GJ` with\nLie algebra of jets `𝔤J`, evaluation at the base point, formal derivatives, the adjoint\naction and the Maurer–Cartan form, subject to the identities used by the transformation\nlaws of gauge and matter fields.",
+     "statement": "structure LocalGaugeData (G₀ : Type) [Group G₀] (𝔤 : Type) [LieRing 𝔤] [LieAlgebra ℝ 𝔤]\n    (GJ : Type) [Group GJ] (𝔤J : Type) [LieRing 𝔤J] [LieAlgebra ℝ 𝔤J] where\n  /-- Evaluation of a gauge jet at the base point. -/\n  eval : GJ →* G₀\n  /-- A constant gauge transformation as a jet. -/\n  ofConstant : G₀ →* GJ\n  eval_ofConstant : ∀ g, eval (ofConstant g) = g\n  /-- Evaluation of a Lie algebra jet at the base point. -/\n  evalLie : 𝔤J →ₗ⁅ℝ⁆ 𝔤\n  /-- A constant Lie algebra element as a jet. -/\n  ofConstantLie : 𝔤 →ₗ⁅ℝ⁆ 𝔤J\n  evalLie_ofConstantLie : ∀ a, evalLie (ofConstantLie a) = a\n  /-- The formal derivative in the direction `μ`. -/\n  deriv : (Fin 1 ⊕ Fin 3) → 𝔤J →ₗ[ℝ] 𝔤J\n  deriv_comm : ∀ (μ ν : Fin 1 ⊕ Fin 3) (a : 𝔤J), deriv μ (deriv ν a) = deriv ν (deriv μ a)\n  deriv_bracket : ∀ (μ : Fin 1 ⊕ Fin 3) (x y : 𝔤J),\n    deriv μ ⁅x, y⁆ = ⁅deriv μ x, y⁆ + ⁅x, deriv μ y⁆\n  deriv_ofConstantLie : ∀ (μ : Fin 1 ⊕ Fin 3) (a : 𝔤), deriv μ (ofConstantLie a) = 0\n  /-- Multiplication of a jet by the spacetime coordinate `x_μ`. -/\n  mulCoord : (Fin 1 ⊕ Fin 3) → 𝔤J →ₗ[ℝ] 𝔤J\n  /-- The Leibniz rule for a coordinate: `∂_μ (x_ν a) = x_ν ∂_μ a + δ_{μν} a`. -/\n  deriv_mulCoord : ∀ (μ ν : Fin 1 ⊕ Fin 3) (a : 𝔤J),\n    deriv μ (mulCoord ν a) = mulCoord ν (deriv μ a) + if μ = ν then a else 0\n  /-- A multiple of a coordinate vanishes at the base point. -/\n  evalLie_mulCoord : ∀ (μ : Fin 1 ⊕ Fin 3) (a : 𝔤J), evalLie (mulCoord μ a) = 0\n  /-- Multiplication by a coordinate commutes with the bracket. -/\n  mulCoord_bracket : ∀ (μ : Fin 1 ⊕ Fin 3) (a b : 𝔤J), ⁅mulCoord μ a, b⁆ = mulCoord μ ⁅a, b⁆\n  /-- The adjoint action of the jet group on the jet Lie algebra. -/\n  adjointJ : Representation ℝ GJ 𝔤J\n  adjointJ_bracket : ∀ (U : GJ) (x y : 𝔤J), adjointJ U ⁅x, y⁆ = ⁅adjointJ U x, adjointJ U y⁆\n  /-- The adjoint representation of the value group on its Lie algebra. -/\n  adjoint : Representation ℝ G₀ 𝔤\n  /-- At the base point the adjoint action of a jet is the adjoint action of its value. -/\n  evalLie_adjointJ : ∀ (U : GJ) (x : 𝔤J), evalLie (adjointJ U x) = adjoint (eval U) (evalLie x)\n  /-- The Maurer–Cartan form `i (∂_μ U) U⁻¹` of a gauge jet. -/\n  maurerCartan : GJ → (Fin 1 ⊕ Fin 3) → 𝔤J\n  /-- A constant gauge transformation has vanishing Maurer–Cartan form: it has no\n    spacetime dependence to differentiate. -/\n  maurerCartan_ofConstant : ∀ (g : G₀) (μ : Fin 1 ⊕ Fin 3), maurerCartan (ofConstant g) μ = 0\n  /-- The Maurer–Cartan form is a cocycle for the adjoint action. -/\n  maurerCartan_cocycle : ∀ (U V : GJ) (μ : Fin 1 ⊕ Fin 3),\n    maurerCartan (U * V) μ = maurerCartan U μ + adjointJ U (maurerCartan V μ)\n  /-- The Maurer–Cartan form is flat. -/\n  maurerCartan_structure : ∀ (U : GJ) (μ ν : Fin 1 ⊕ Fin 3),\n    deriv μ (maurerCartan U ν) - deriv ν (maurerCartan U μ)\n      + ⁅maurerCartan U μ, maurerCartan U ν⁆ = 0\n  /-- The Leibniz rule for the adjoint action. -/\n  deriv_adjointJ : ∀ (U : GJ) (μ : Fin 1 ⊕ Fin 3) (x : 𝔤J),\n    deriv μ (adjointJ U x) = adjointJ U (deriv μ x) - ⁅maurerCartan U μ, adjointJ U x⁆",
+     "sorry": false
+    },
+    {
+     "name": "LocalGaugeData.eval_surjective",
+     "kind": "lemma",
+     "line": 165,
+     "doc": "Every global gauge transformation is the value of a jet, namely its constant jet.",
+     "statement": "lemma eval_surjective : Function.Surjective jets.eval",
+     "sorry": false
+    },
+    {
+     "name": "LocalGaugeData.ofConstant_injective",
+     "kind": "lemma",
+     "line": 168,
+     "doc": "",
+     "statement": "lemma ofConstant_injective : Function.Injective jets.ofConstant",
+     "sorry": false
+    },
+    {
+     "name": "LocalGaugeData.evalLie_surjective",
+     "kind": "lemma",
+     "line": 171,
+     "doc": "",
+     "statement": "lemma evalLie_surjective : Function.Surjective jets.evalLie",
+     "sorry": false
+    },
+    {
+     "name": "LocalGaugeData.ofConstantLie_injective",
+     "kind": "lemma",
+     "line": 174,
+     "doc": "",
+     "statement": "lemma ofConstantLie_injective : Function.Injective jets.ofConstantLie",
+     "sorry": false
+    },
+    {
+     "name": "LocalGaugeData.adjoint_bracket",
+     "kind": "lemma",
+     "line": 177,
+     "doc": "",
+     "statement": "lemma adjoint_bracket (g : G₀) (a b : 𝔤) :\n    jets.adjoint g ⁅a, b⁆ = ⁅jets.adjoint g a, jets.adjoint g b⁆",
+     "sorry": false
+    },
+    {
+     "name": "LocalGaugeData.deriv_adjointJ_ofConstant",
+     "kind": "lemma",
+     "line": 185,
+     "doc": "",
+     "statement": "lemma deriv_adjointJ_ofConstant (g : G₀) (μ : Fin 1 ⊕ Fin 3) (x : 𝔤J) :\n    jets.deriv μ (jets.adjointJ (jets.ofConstant g) x) =\n      jets.adjointJ (jets.ofConstant g) (jets.deriv μ x)",
+     "sorry": false
+    },
+    {
+     "name": "LocalGaugeData.instRightCommutativeCompDeriv",
+     "kind": "instance",
+     "line": 203,
+     "doc": "Post-composition with `deriv` is right-commutative.",
+     "statement": "instance instRightCommutativeCompDeriv : RightCommutative\n    (fun (D : 𝔤J →ₗ[ℝ] 𝔤J) (μ : Fin 1 ⊕ Fin 3) => D.comp (jets.deriv μ))",
+     "sorry": false
+    },
+    {
+     "name": "LocalGaugeData.iteratedDeriv",
+     "kind": "def",
+     "line": 216,
+     "doc": "The iterated formal derivative on the jet Lie algebra.",
+     "statement": "noncomputable def iteratedDeriv (μs : Multiset (Fin 1 ⊕ Fin 3)) : 𝔤J →ₗ[ℝ] 𝔤J",
+     "sorry": false
+    },
+    {
+     "name": "LocalGaugeData.iteratedDeriv_zero",
+     "kind": "lemma",
+     "line": 226,
+     "doc": "",
+     "statement": "lemma iteratedDeriv_zero : jets.iteratedDeriv (0 : Multiset (Fin 1 ⊕ Fin 3)) = LinearMap.id",
+     "sorry": false
+    },
+    {
+     "name": "LocalGaugeData.iteratedDeriv_cons",
+     "kind": "lemma",
+     "line": 229,
+     "doc": "",
+     "statement": "lemma iteratedDeriv_cons (μ : Fin 1 ⊕ Fin 3) (μs : Multiset (Fin 1 ⊕ Fin 3)) :\n    jets.iteratedDeriv (μ ::ₘ μs) = (jets.deriv μ).comp (jets.iteratedDeriv μs)",
+     "sorry": false
+    },
+    {
+     "name": "LocalGaugeData.iteratedDeriv_add",
+     "kind": "lemma",
+     "line": 244,
+     "doc": "The iterated derivative is additive in the multiset.",
+     "statement": "lemma iteratedDeriv_add (s t : Multiset (Fin 1 ⊕ Fin 3)) :\n    jets.iteratedDeriv (s + t) = (jets.iteratedDeriv s).comp (jets.iteratedDeriv t)",
+     "sorry": false
+    },
+    {
+     "name": "LocalGaugeData.iteratedDeriv_singleton",
+     "kind": "lemma",
+     "line": 253,
+     "doc": "",
+     "statement": "lemma iteratedDeriv_singleton (μ : Fin 1 ⊕ Fin 3) :\n    jets.iteratedDeriv ({μ} : Multiset (Fin 1 ⊕ Fin 3)) = jets.deriv μ",
+     "sorry": false
+    },
+    {
+     "name": "LocalGaugeData.iteratedDeriv_cons_eq_comp_deriv",
+     "kind": "lemma",
+     "line": 258,
+     "doc": "",
+     "statement": "lemma iteratedDeriv_cons_eq_comp_deriv (μ : Fin 1 ⊕ Fin 3) (s : Multiset (Fin 1 ⊕ Fin 3)) :\n    jets.iteratedDeriv (μ ::ₘ s) = (jets.iteratedDeriv s).comp (jets.deriv μ)",
+     "sorry": false
+    },
+    {
+     "name": "LocalGaugeData.iteratedDeriv_bracket",
+     "kind": "lemma",
+     "line": 265,
+     "doc": "The iterated Leibniz rule for the bracket.",
+     "statement": "lemma iteratedDeriv_bracket (s : Multiset (Fin 1 ⊕ Fin 3)) (a b : 𝔤J) :\n    jets.iteratedDeriv s ⁅a, b⁆ =\n      (s.antidiagonal.map fun p =>\n        ⁅jets.iteratedDeriv p.1 a, jets.iteratedDeriv p.2 b⁆).sum",
+     "sorry": false
+    },
+    {
+     "name": "LocalGaugeData.iteratedDeriv_ofConstantLie_of_ne_zero",
+     "kind": "lemma",
+     "line": 287,
+     "doc": "",
+     "statement": "lemma iteratedDeriv_ofConstantLie_of_ne_zero {p : Multiset (Fin 1 ⊕ Fin 3)} (hp : p ≠ 0)\n    (a : 𝔤) : jets.iteratedDeriv p (jets.ofConstantLie a) = 0",
+     "sorry": false
+    },
+    {
+     "name": "LocalGaugeData.iteratedDeriv_adjointJ_ofConstant",
+     "kind": "lemma",
+     "line": 297,
+     "doc": "",
+     "statement": "lemma iteratedDeriv_adjointJ_ofConstant (g : G₀) (s : Multiset (Fin 1 ⊕ Fin 3)) (x : 𝔤J) :\n    jets.iteratedDeriv s (jets.adjointJ (jets.ofConstant g) x) =\n      jets.adjointJ (jets.ofConstant g) (jets.iteratedDeriv s x)",
+     "sorry": false
+    },
+    {
+     "name": "LocalGaugeData.evalLie_iteratedDeriv_mulCoord",
+     "kind": "lemma",
+     "line": 304,
+     "doc": "",
+     "statement": "lemma evalLie_iteratedDeriv_mulCoord (μ : Fin 1 ⊕ Fin 3) (s : Multiset (Fin 1 ⊕ Fin 3)) (a : 𝔤J) :\n    jets.evalLie (jets.iteratedDeriv s (jets.mulCoord μ a)) =\n      s.count μ • jets.evalLie (jets.iteratedDeriv (s.erase μ) a)",
+     "sorry": false
+    },
+    {
+     "name": "LocalGaugeData.Hom",
+     "kind": "structure",
+     "line": 329,
+     "doc": "A morphism of local gauge data.\n\n`Hom` is the standard name for a morphism in Lean.",
+     "statement": "structure Hom (jets : LocalGaugeData G₀ 𝔤 GJ 𝔤J) (jets' : LocalGaugeData G₀' 𝔤' GJ' 𝔤J') where\n  /-- The map of gauge groups. -/\n  group : G₀ →* G₀'\n  /-- The map of jet groups. -/\n  groupJ : GJ →* GJ'\n  eval_groupJ : ∀ U, jets'.eval (groupJ U) = group (jets.eval U)\n  groupJ_ofConstant : ∀ g, groupJ (jets.ofConstant g) = jets'.ofConstant (group g)\n  /-- The map of Lie algebras. -/\n  lie : 𝔤 →ₗ⁅ℝ⁆ 𝔤'\n  /-- The map of Lie algebras of jets. -/\n  lieJ : 𝔤J →ₗ⁅ℝ⁆ 𝔤J'\n  lieJ_ofConstantLie : ∀ c, lieJ (jets.ofConstantLie c) = jets'.ofConstantLie (lie c)\n  evalLie_lieJ : ∀ a, jets'.evalLie (lieJ a) = lie (jets.evalLie a)\n  lieJ_deriv : ∀ μ a, lieJ (jets.deriv μ a) = jets'.deriv μ (lieJ a)\n  lieJ_mulCoord : ∀ μ a, lieJ (jets.mulCoord μ a) = jets'.mulCoord μ (lieJ a)\n  lieJ_adjointJ : ∀ U a, lieJ (jets.adjointJ U a) = jets'.adjointJ (groupJ U) (lieJ a)\n  lieJ_maurerCartan : ∀ U μ, lieJ (jets.maurerCartan U μ) = jets'.maurerCartan (groupJ U) μ",
+     "sorry": false
+    },
+    {
+     "name": "LocalGaugeData.Hom.lie_adjoint",
+     "kind": "lemma",
+     "line": 361,
+     "doc": "A morphism intertwines the adjoint actions of the gauge groups.",
+     "statement": "lemma lie_adjoint (g : G₀) (x : 𝔤) :\n    f.lie (jets.adjoint g x) = jets'.adjoint (f.group g) (f.lie x)",
+     "sorry": false
+    },
+    {
+     "name": "LocalGaugeData.Hom.lieJ_iteratedDeriv",
+     "kind": "lemma",
+     "line": 375,
+     "doc": "A morphism commutes with iterated derivatives.",
+     "statement": "lemma lieJ_iteratedDeriv (s : Multiset (Fin 1 ⊕ Fin 3)) (a : 𝔤J) :\n    f.lieJ (jets.iteratedDeriv s a) = jets'.iteratedDeriv s (f.lieJ a)",
+     "sorry": false
+    },
+    {
+     "name": "LocalGaugeData.Hom.id",
+     "kind": "def",
+     "line": 390,
+     "doc": "The identity morphism of local gauge data.",
+     "statement": "protected def id (jets : LocalGaugeData G₀ 𝔤 GJ 𝔤J) : Hom jets jets",
+     "sorry": false
+    },
+    {
+     "name": "LocalGaugeData.Hom.comp",
+     "kind": "def",
+     "line": 415,
+     "doc": "The composite `g ∘ f` of morphisms of local gauge data.",
+     "statement": "def comp (g : Hom jets' jets'') : Hom jets jets''",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 3
+  },
+  {
+   "file": "Physlib/ClassicalFieldTheory/Local/Variation.lean",
+   "module": "Physlib.ClassicalFieldTheory.Local.Variation",
+   "title": "Admissible local variations",
+   "doc": "## i. Overview\n\nThis module packages the admissible variations used in the local first-variation problem.\n\nFor the first local stage, a variation is admissible if it is a smooth compactly supported map\n`Space d → U` for a real normed vector space `U`. This reuses the existing `IsTestFunction`\npredicate rather than introducing a second support calculus.\n\n## ii. Key results\n\n- `ClassicalFieldTheory.Local.AdmissibleVariation` : compactly supported smooth variations.\n\n## iii. Table of contents\n\n- A. Admissible variations\n- B. Basic operations on admissible variations\n\n## iv. References\n\n* None.",
+   "copyright": "2026 Juan Jose Fernandez Morales",
+   "sections": [
+    {
+     "line": 42,
+     "text": "## A. Admissible variations"
+    },
+    {
+     "line": 58,
+     "text": "## B. Basic operations on admissible variations"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "ClassicalFieldTheory.Local.AdmissibleVariation",
+     "kind": "structure",
+     "line": 48,
+     "doc": "An admissible local variation is a smooth compactly supported map `Space d → U`.",
+     "statement": "structure AdmissibleVariation (d : ℕ) (U : Type*) [NormedAddCommGroup U] [NormedSpace ℝ U] where\n  /-- The underlying variation function. -/\n  toFun : Space d → U\n  /-- Smoothness and compact support of the variation. -/\n  isTestFunction : IsTestFunction toFun",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 63,
+     "doc": "",
+     "statement": "instance : CoeFun (AdmissibleVariation d U) (fun _ => Space d → U)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalFieldTheory.Local.AdmissibleVariation.hasCompactSupport",
+     "kind": "lemma",
+     "line": 69,
+     "doc": "An admissible variation has compact support.",
+     "statement": "lemma hasCompactSupport (η : AdmissibleVariation d U) : HasCompactSupport (η.toFun)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalFieldTheory.Local.AdmissibleVariation.toCompactlySupportedContinuousMap",
+     "kind": "def",
+     "line": 73,
+     "doc": "View an admissible variation as a compactly supported continuous map.",
+     "statement": "noncomputable def toCompactlySupportedContinuousMap (η : AdmissibleVariation d U) :\n    CompactlySupportedContinuousMap (Space d) U",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 77,
+     "doc": "",
+     "statement": "noncomputable instance : Zero (AdmissibleVariation d U)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalFieldTheory.Local.AdmissibleVariation.zero_apply",
+     "kind": "lemma",
+     "line": 83,
+     "doc": "",
+     "statement": "lemma zero_apply (x : Space d) : (0 : AdmissibleVariation d U) x = 0",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 85,
+     "doc": "",
+     "statement": "noncomputable instance : Neg (AdmissibleVariation d U)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalFieldTheory.Local.AdmissibleVariation.neg_apply",
+     "kind": "lemma",
+     "line": 91,
+     "doc": "",
+     "statement": "lemma neg_apply (η : AdmissibleVariation d U) (x : Space d) : (-η) x = -η x",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 93,
+     "doc": "",
+     "statement": "noncomputable instance : Add (AdmissibleVariation d U)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalFieldTheory.Local.AdmissibleVariation.add_apply",
+     "kind": "lemma",
+     "line": 99,
+     "doc": "",
+     "statement": "lemma add_apply (η ξ : AdmissibleVariation d U) (x : Space d) : (η + ξ) x = η x + ξ x",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 101,
+     "doc": "",
+     "statement": "noncomputable instance : Sub (AdmissibleVariation d U)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalFieldTheory.Local.AdmissibleVariation.sub_apply",
+     "kind": "lemma",
+     "line": 107,
+     "doc": "",
+     "statement": "lemma sub_apply (η ξ : AdmissibleVariation d U) (x : Space d) : (η - ξ) x = η x - ξ x",
+     "sorry": false
+    },
+    {
+     "name": "",
+     "kind": "instance",
+     "line": 109,
+     "doc": "",
+     "statement": "noncomputable instance : SMul ℝ (AdmissibleVariation d U)",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalFieldTheory.Local.AdmissibleVariation.smul_apply",
+     "kind": "lemma",
+     "line": 116,
+     "doc": "",
+     "statement": "lemma smul_apply (c : ℝ) (η : AdmissibleVariation d U) (x : Space d) :\n    (c • η) x = c • η x",
+     "sorry": false
+    },
+    {
+     "name": "ClassicalFieldTheory.Local.AdmissibleVariation.coord",
+     "kind": "lemma",
+     "line": 120,
+     "doc": "",
+     "statement": "lemma coord {m : ℕ} (η : AdmissibleVariation d (Space m)) (a : Fin m) :\n    IsTestFunction (fun x => (η.toFun x).coord a)",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  }
+ ]
+}

@@ -91,6 +91,9 @@ def test_scopes_that_do_not_close_as_they_open_declare_nothing():
     # `end A.B` closes namespaces A and B opened one at a time.
     assert set(leansource.scan("namespace A\nnamespace B\ntheorem x : True := trivial\nend A.B\ntheorem y : True := trivial\n")) == {
         "A.B.x", "y"}
+    # `end section` is `end`, then a new `section`: `section` is a keyword, not a name.
+    assert set(leansource.scan("namespace A\nsection\nend section\ntheorem x : True := trivial\nend\nend A\n")) == {"A.x"}
+    assert leansource.scan("namespace A\nend section\n") is None
 
 
 def test_a_name_on_the_line_after_its_keyword_is_not_read():
@@ -118,6 +121,9 @@ def test_mutual_blocks_and_named_sections_close():
     assert set(leansource.scan(text)) == {"A.even", "A.odd", "A.inner", "after"}
     # A section named with a dot closes at the top level too.
     assert set(leansource.scan("section A.B\ntheorem x : True := trivial\nend A.B\n")) == {"x"}
+    # The module system's `public meta section`, which holds a module's metaprograms, closes with `end` too.
+    text = "namespace A\npublic meta section\ndef elab : Nat := 0\nend\ntheorem after : True := trivial\nend A\n"
+    assert set(leansource.scan(text)) == {"A.elab", "A.after"}
 
 
 def test_nothing_after_exit_is_read():

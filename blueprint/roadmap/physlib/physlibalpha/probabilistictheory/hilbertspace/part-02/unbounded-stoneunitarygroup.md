@@ -1,0 +1,217 @@
+---
+declaration: module
+origin: cited
+lean: ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expFunction, ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expFunction_measurable, ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expFunction_bounded, ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expFunction_modulus, ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expFunction_neg_eq_star, ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expFunction_diff_bounded, ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expFunction_add, ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expIntegral
+statement: formalized
+proof: formalized
+---
+
+# The unitary group of a spectral measure
+
+The module `PhyslibAlpha.ProbabilisticTheory.HilbertSpace.Unbounded.StoneUnitaryGroup`, [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/StoneUnitaryGroup.lean](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/StoneUnitaryGroup.lean): 23 declarations (1 instance with no name), 4 with a docstring.
+
+> The strongly continuous unitary group `t ↦ exp(i t T)` obtained from a spectral measure on `ℝ`.
+
+## i. Overview
+
+> For a spectral measure `μ` on `ℝ`, integrating `λ ↦ exp(i t λ)` gives unitaries `exp(i t T)` with
+> `exp(i (t + s) T) = exp(i t T) exp(i s T)`, strongly continuous in `t`.
+
+## ii. Key results
+
+> - `expFunction` : the bounded function `λ ↦ exp(i t λ)`.
+> - `expIntegral` : the unitary `exp(i t T)`.
+> - `expIntegral_add` : `exp(i (t + s) T) = exp(i t T) exp(i s T)`.
+> - `expIntegral_mem_unitary` : each `exp(i t T)` is unitary.
+> - `expIntegral_continuous` : `t ↦ exp(i t T) x` is continuous.
+> - `StrongUnitaryOneParameterGroup` : a strongly continuous one-parameter unitary group.
+> - `expUnitaryGroup` : the unitary group of a spectral measure.
+
+## iv. References
+
+> * None.
+
+## A. The exponential multiplier
+
+**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expFunction`**, a def, [line 60](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/StoneUnitaryGroup.lean#L60).
+
+> The exponential multiplier `x ↦ exp(itx)`, at real time `t`.
+
+```lean
+def expFunction (t : ℝ) : ℝ → ℂ
+```
+
+**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expFunction_measurable`**, a lemma, [line 63](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/StoneUnitaryGroup.lean#L63).
+
+```lean
+lemma expFunction_measurable (t : ℝ) : Measurable (expFunction t)
+```
+
+**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expFunction_bounded`**, a lemma, [line 67](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/StoneUnitaryGroup.lean#L67).
+
+```lean
+lemma expFunction_bounded (t : ℝ) : ∃ C, ∀ x, ‖expFunction t x‖ ≤ C
+```
+
+**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expFunction_modulus`**, a lemma, [line 71](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/StoneUnitaryGroup.lean#L71).
+
+```lean
+lemma expFunction_modulus (t : ℝ) : ∀ x, ‖expFunction t x‖ = 1
+```
+
+**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expFunction_neg_eq_star`**, a lemma, [line 75](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/StoneUnitaryGroup.lean#L75).
+
+```lean
+lemma expFunction_neg_eq_star (t : ℝ) : expFunction (-t) = star (expFunction t)
+```
+
+**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expFunction_diff_bounded`**, a lemma, [line 83](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/StoneUnitaryGroup.lean#L83).
+
+```lean
+lemma expFunction_diff_bounded (t s : ℝ) :
+    ∃ C, ∀ x, ‖expFunction t x - expFunction s x‖ ≤ C
+```
+
+**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expFunction_add`**, a lemma, [line 91](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/StoneUnitaryGroup.lean#L91).
+
+```lean
+lemma expFunction_add (t s : ℝ) : expFunction (t + s) = expFunction t * expFunction s
+```
+
+## B. The unitary group and its strong continuity
+
+**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expIntegral`**, a def, [line 105](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/StoneUnitaryGroup.lean#L105).
+
+> The unitary group generated by `μS`'s self-adjoint operator: `expIntegral μS t = exp(itT)`.
+
+```lean
+noncomputable def expIntegral (μS : WOTSpectralMeasure ℝ H) (t : ℝ) : H →WOT[ℂ] H
+```
+
+**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expIntegral_add`**, a lemma, [line 108](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/StoneUnitaryGroup.lean#L108).
+
+```lean
+lemma expIntegral_add (μS : WOTSpectralMeasure ℝ H) (t s : ℝ) :
+    expIntegral μS (t + s) = expIntegral μS t * expIntegral μS s
+```
+
+**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expIntegral_zero`**, a lemma, [line 131](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/StoneUnitaryGroup.lean#L131).
+
+```lean
+lemma expIntegral_zero (μS : WOTSpectralMeasure ℝ H) :
+    expIntegral μS 0 = (1 : H →WOT[ℂ] H)
+```
+
+**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expIntegral_neg_mul`**, a lemma, [line 146](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/StoneUnitaryGroup.lean#L146).
+
+```lean
+lemma expIntegral_neg_mul (μS : WOTSpectralMeasure ℝ H) (t : ℝ) :
+    expIntegral μS (-t) * expIntegral μS t = (1 : H →WOT[ℂ] H)
+```
+
+**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expIntegral_mul_neg`**, a lemma, [line 154](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/StoneUnitaryGroup.lean#L154).
+
+```lean
+lemma expIntegral_mul_neg (μS : WOTSpectralMeasure ℝ H) (t : ℝ) :
+    expIntegral μS t * expIntegral μS (-t) = (1 : H →WOT[ℂ] H)
+```
+
+**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expIntegral_star`**, a lemma, [line 162](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/StoneUnitaryGroup.lean#L162).
+
+```lean
+lemma expIntegral_star (μS : WOTSpectralMeasure ℝ H) (t : ℝ) :
+    star (expIntegral μS t) = expIntegral μS (-t)
+```
+
+**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expIntegral_mem_unitary`**, a lemma, [line 184](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/StoneUnitaryGroup.lean#L184).
+
+```lean
+lemma expIntegral_mem_unitary (μS : WOTSpectralMeasure ℝ H) (t : ℝ) :
+    expIntegral μS t ∈ unitary (H →WOT[ℂ] H)
+```
+
+**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expIntegral_sub_eq_boundedIntegral_diff`**, a lemma, [line 196](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/StoneUnitaryGroup.lean#L196).
+
+```lean
+lemma expIntegral_sub_eq_boundedIntegral_diff [Nonempty H] (μS : WOTSpectralMeasure ℝ H)
+    (t s : ℝ) (x : H) :
+    expIntegral μS t x - expIntegral μS s x =
+    boundedIntegral μS (fun z => expFunction t z - expFunction s z)
+        ((expFunction_measurable t).sub (expFunction_measurable s))
+        (expFunction_diff_bounded t s) x
+```
+
+**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expIntegral_continuous`**, a lemma, [line 214](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/StoneUnitaryGroup.lean#L214).
+
+```lean
+lemma expIntegral_continuous (μS : WOTSpectralMeasure ℝ H) (x : H) :
+    Continuous (fun t => expIntegral μS t x)
+```
+
+**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.StrongUnitaryOneParameterGroup`**, a structure, [line 302](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/StoneUnitaryGroup.lean#L302).
+
+> A strongly continuous one-parameter group of unitaries.
+
+```lean
+structure StrongUnitaryOneParameterGroup
+    (H : Type*) [NormedAddCommGroup H] [InnerProductSpace ℂ H] [CompleteSpace H] where
+  /-- The unitary at each real time. -/
+  toFun : ℝ → H →WOT[ℂ] H
+  mem_unitary : ∀ t, toFun t ∈ unitary (H →WOT[ℂ] H)
+  map_zero : toFun 0 = 1
+  map_add : ∀ t s, toFun (t + s) = toFun t * toFun s
+  strong_continuous : ∀ x, Continuous (fun t => toFun t x)
+```
+
+**An instance with no name**, [line 315](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/StoneUnitaryGroup.lean#L315).
+
+```lean
+instance : CoeFun (StrongUnitaryOneParameterGroup H)
+    (fun _ => ℝ → H →WOT[ℂ] H)
+```
+
+**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.StrongUnitaryOneParameterGroup.zero`**, a lemma, [line 319](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/StoneUnitaryGroup.lean#L319).
+
+```lean
+lemma zero (G : StrongUnitaryOneParameterGroup H) : G 0 = 1
+```
+
+**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.StrongUnitaryOneParameterGroup.add`**, a lemma, [line 321](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/StoneUnitaryGroup.lean#L321).
+
+```lean
+lemma add (G : StrongUnitaryOneParameterGroup H) (t s : ℝ) : G (t + s) = G t * G s
+```
+
+**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.StrongUnitaryOneParameterGroup.unitary`**, a lemma, [line 324](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/StoneUnitaryGroup.lean#L324).
+
+```lean
+lemma unitary (G : StrongUnitaryOneParameterGroup H) (t : ℝ) : G t ∈ unitary (H →WOT[ℂ] H)
+```
+
+**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.StrongUnitaryOneParameterGroup.continuous_apply`**, a lemma, [line 327](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/StoneUnitaryGroup.lean#L327).
+
+```lean
+lemma continuous_apply (G : StrongUnitaryOneParameterGroup H) (x : H) :
+    Continuous (fun t => G t x)
+```
+
+**`ProbabilisticTheory.QuantumMechanics.WOTSpectralMeasure.expUnitaryGroup`**, a def, [line 333](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/StoneUnitaryGroup.lean#L333).
+
+> The unitary group obtained by exponentiating a bounded real spectral integral.
+
+```lean
+noncomputable def expUnitaryGroup (μS : WOTSpectralMeasure ℝ H) :
+    StrongUnitaryOneParameterGroup H
+```
+
+## Depends on
+
+- [Integrating bounded functions against a spectral measure](unbounded-boundedintegral.md)
+
+## Proof depends on
+
+- [The bounded functional calculus of a spectral measure](unbounded-boundedintegralalgebra.md)
+
+## Sources
+
+- [PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/StoneUnitaryGroup.lean at 2a1dfe43](https://github.com/leanprover-community/physlib/blob/2a1dfe43134b49b643642f13d33031754021bb5d/PhyslibAlpha/ProbabilisticTheory/HilbertSpace/Unbounded/StoneUnitaryGroup.lean)

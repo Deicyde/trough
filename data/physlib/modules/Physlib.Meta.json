@@ -1,0 +1,1043 @@
+{
+ "schema": "trough-physlib/v1",
+ "rev": "2a1dfe43134b49b643642f13d33031754021bb5d",
+ "modules": [
+  {
+   "file": "Physlib/Meta/AllFilePaths.lean",
+   "module": "Physlib.Meta.AllFilePaths",
+   "title": "",
+   "doc": "## Getting an array of all file paths in Physlib.",
+   "copyright": "2024 Joseph Tooby-Smith",
+   "sections": [],
+   "declarations": [
+    {
+     "name": "allFilePaths.go",
+     "kind": "def",
+     "line": 19,
+     "doc": "The recursive function underlying `allFilePaths`.",
+     "statement": "partial def allFilePaths.go (prev : Array FilePath)\n  (root : String) (path : FilePath) : IO (Array FilePath)",
+     "sorry": false
+    },
+    {
+     "name": "getFilePaths",
+     "kind": "def",
+     "line": 30,
+     "doc": "Gets an array of all file paths in the supplied directory.",
+     "statement": "partial def getFilePaths (moduleName : String) : IO (Array FilePath)",
+     "sorry": false
+    },
+    {
+     "name": "allFilePaths",
+     "kind": "def",
+     "line": 34,
+     "doc": "Gets an array of all file paths in `Physlib`.",
+     "statement": "partial def allFilePaths : IO (Array FilePath)",
+     "sorry": false
+    },
+    {
+     "name": "allPhyslibModules",
+     "kind": "def",
+     "line": 38,
+     "doc": "Gets an array of all module names in `Physlib`.",
+     "statement": "def allPhyslibModules : IO (Array Lean.Name)",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/Meta/Basic.lean",
+   "module": "Physlib.Meta.Basic",
+   "title": "",
+   "doc": "## Basic Lean meta programming commands",
+   "copyright": "2024 Joseph Tooby-Smith",
+   "sections": [
+    {
+     "line": 27,
+     "text": "## Imports"
+    },
+    {
+     "line": 89,
+     "text": "## Name"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "Array.flatSize",
+     "kind": "def",
+     "line": 18,
+     "doc": "The size of a flattened array of arrays.",
+     "statement": "def Array.flatSize {α} : Array (Array α) → Nat",
+     "sorry": false
+    },
+    {
+     "name": "Array.flatFilterSizeM",
+     "kind": "def",
+     "line": 22,
+     "doc": "The size of a flattened array of arrays after applying an element-wise filter.",
+     "statement": "def Array.flatFilterSizeM {α m} [Monad m] (p : α → m Bool) : Array (Array α) → m Nat",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.allImports",
+     "kind": "def",
+     "line": 34,
+     "doc": "Gets all imports within Physlib and QuantumInfo..",
+     "statement": "def Physlib.allImports : IO (Array Import)",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.noImports",
+     "kind": "def",
+     "line": 52,
+     "doc": "Number of files within Physlib.",
+     "statement": "def Physlib.noImports : IO Nat",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.Imports.getConsts",
+     "kind": "def",
+     "line": 57,
+     "doc": "Gets all constants from an import.",
+     "statement": "def Physlib.Imports.getConsts (imp : Import) : IO (Array ConstantInfo)",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.Imports.getUserConsts",
+     "kind": "def",
+     "line": 63,
+     "doc": "Gets all user defined constants from an import.",
+     "statement": "def Physlib.Imports.getUserConsts (imp : Import) : CoreM (Array ConstantInfo)",
+     "sorry": false
+    },
+    {
+     "name": "Lean.Name.toFilePath",
+     "kind": "def",
+     "line": 81,
+     "doc": "Turns a name into a system file path.",
+     "statement": "def Lean.Name.toFilePath (c : Name) : System.FilePath",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.Imports.getLines",
+     "kind": "def",
+     "line": 85,
+     "doc": "Lines from import.",
+     "statement": "def Physlib.Imports.getLines (imp : Import) : IO (Array String)",
+     "sorry": false
+    },
+    {
+     "name": "Lean.Name.toRelativeFilePath",
+     "kind": "def",
+     "line": 98,
+     "doc": "Turns a name into a Lean file.",
+     "statement": "def toRelativeFilePath (c : Name) : System.FilePath",
+     "sorry": false
+    },
+    {
+     "name": "Lean.Name.toGitHubLink",
+     "kind": "def",
+     "line": 102,
+     "doc": "Turns a name, which represents a module, into a link to github.",
+     "statement": "def toGitHubLink (c : Name) (line : Nat) : String",
+     "sorry": false
+    },
+    {
+     "name": "Lean.Name.lineNumber",
+     "kind": "def",
+     "line": 106,
+     "doc": "Given a name, returns the line number.",
+     "statement": "def lineNumber (c : Name) : m Nat",
+     "sorry": false
+    },
+    {
+     "name": "Lean.Name.fileName",
+     "kind": "def",
+     "line": 112,
+     "doc": "Given a name, returns the file name corresponding to that declaration.",
+     "statement": "def fileName (c : Name) : m Name",
+     "sorry": false
+    },
+    {
+     "name": "Lean.Name.location",
+     "kind": "def",
+     "line": 120,
+     "doc": "Returns the location of a name.",
+     "statement": "def location (c : Name) : m String",
+     "sorry": false
+    },
+    {
+     "name": "Lean.Name.hasPos",
+     "kind": "def",
+     "line": 129,
+     "doc": "Determines if a name has a location.",
+     "statement": "def hasPos (c : Name) : m Bool",
+     "sorry": false
+    },
+    {
+     "name": "Lean.Name.hasDocString",
+     "kind": "def",
+     "line": 134,
+     "doc": "Determines if a name has a doc string.",
+     "statement": "def hasDocString (c : Name) : CoreM Bool",
+     "sorry": false
+    },
+    {
+     "name": "Lean.Name.getDocString",
+     "kind": "def",
+     "line": 139,
+     "doc": "The doc string from a name.",
+     "statement": "def getDocString (c : Name) : CoreM String",
+     "sorry": false
+    },
+    {
+     "name": "Lean.Name.getDeclString",
+     "kind": "def",
+     "line": 147,
+     "doc": "Given a name, returns the source code defining that name, including doc strings.",
+     "statement": "def getDeclString (name : Name) : CoreM String",
+     "sorry": false
+    },
+    {
+     "name": "Lean.Name.getDeclStringNoDoc",
+     "kind": "def",
+     "line": 163,
+     "doc": "Given a name, returns the source code defining that name,\nstarting with the def ... or lemma... etc.",
+     "statement": "def getDeclStringNoDoc (name : Name) : CoreM String",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.noDefs",
+     "kind": "def",
+     "line": 180,
+     "doc": "Number of definitions.",
+     "statement": "def noDefs : CoreM Nat",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.noLemmas",
+     "kind": "def",
+     "line": 186,
+     "doc": "Number of definitions.",
+     "statement": "def noLemmas : CoreM Nat",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.allDocStrings",
+     "kind": "def",
+     "line": 192,
+     "doc": "All docstrings present in Physlib.",
+     "statement": "def allDocStrings : CoreM (Array String)",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.noDefsNoDocString",
+     "kind": "def",
+     "line": 200,
+     "doc": "Number of definitions without a doc-string.",
+     "statement": "def noDefsNoDocString : CoreM Nat",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.noLemmasNoDocString",
+     "kind": "def",
+     "line": 207,
+     "doc": "Number of definitions without a doc-string.",
+     "statement": "def noLemmasNoDocString : CoreM Nat",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.noLines",
+     "kind": "def",
+     "line": 214,
+     "doc": "The number of lines in Physlib.",
+     "statement": "def noLines : IO Nat",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.noTODOs",
+     "kind": "def",
+     "line": 220,
+     "doc": "The number of TODO items.",
+     "statement": "def noTODOs : IO Nat",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.noFilesWithTODOs",
+     "kind": "def",
+     "line": 226,
+     "doc": "The number of files with a TODO item.",
+     "statement": "def noFilesWithTODOs : IO Nat",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.allUserConsts",
+     "kind": "def",
+     "line": 233,
+     "doc": "All user defined declarations.",
+     "statement": "def allUserConsts : CoreM (Array ConstantInfo)",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/Meta/Informal/Basic.lean",
+   "module": "Physlib.Meta.Informal.Basic",
+   "title": "",
+   "doc": "## Informal definitions and lemmas\n\nThis file contains the necessary structures that must be imported into a file for it to contain\ninformal definitions and lemmas.\n\nEverything else about informal definitions and lemmas are in the `Informal.Post` module.",
+   "copyright": "2024 Joseph Tooby-Smith",
+   "sections": [
+    {
+     "line": 40,
+     "text": "## Syntax\n\nUsing macros for syntax rewriting works better with the language server compared to\n`Lake.DSL.LeanLibDecl`. Hovering over any definition of `informal_definition` or `informal_lemma`\ngives a proper type hint like any proper definition using `def` whereas definitions of `lake_lib`\nand `lake_exe` don't show docstrings and infer the type `Lean.Name`."
+    }
+   ],
+   "declarations": [
+    {
+     "name": "InformalDefinition",
+     "kind": "structure",
+     "line": 23,
+     "doc": "The structure representing an informal definition.",
+     "statement": "structure InformalDefinition where\n  /-- The names of top-level commands we expect this definition to depend on. -/\n  deps : List Lean.Name\n  /-- The tag of the informal definition. This should be unique amongst informal results\n    and todo items. -/\n  tag : String",
+     "sorry": false
+    },
+    {
+     "name": "InformalLemma",
+     "kind": "structure",
+     "line": 31,
+     "doc": "The structure representing an informal lemma.",
+     "statement": "structure InformalLemma where\n  /-- The names of top-level commands we expect this lemma to depend on. -/\n  deps : List Lean.Name\n  /-- The tag of the informal lemma. This should be unique amongst informal results\n    and todo items. -/\n  tag : String",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/Meta/Informal/Post.lean",
+   "module": "Physlib.Meta.Informal.Post",
+   "title": "",
+   "doc": "## Informal definitions and lemmas",
+   "copyright": "2024 Joseph Tooby-Smith",
+   "sections": [],
+   "declarations": [
+    {
+     "name": "Informal.isInformal",
+     "kind": "def",
+     "line": 23,
+     "doc": "Is true if and only if a `ConstantInfo` corresponds to an `InformalLemma` or a\n`InformalDefinition`.",
+     "statement": "def isInformal : ConstantInfo → Bool",
+     "sorry": false
+    },
+    {
+     "name": "Informal.isInformalLemma",
+     "kind": "def",
+     "line": 28,
+     "doc": "Is true if and only if a `ConstantInfo` corresponds to an `InformalLemma`.",
+     "statement": "def isInformalLemma : ConstantInfo → Bool",
+     "sorry": false
+    },
+    {
+     "name": "Informal.isInformalDef",
+     "kind": "def",
+     "line": 33,
+     "doc": "Is true if and only if a `ConstantInfo` corresponds to an `InformalDefinition`.",
+     "statement": "def isInformalDef : ConstantInfo → Bool",
+     "sorry": false
+    },
+    {
+     "name": "Informal.constantInfoToInformalLemma",
+     "kind": "def",
+     "line": 39,
+     "doc": "Takes a `ConstantInfo` corresponding to a `InformalLemma` and returns\nthe corresponding `InformalLemma`.",
+     "statement": "unsafe def constantInfoToInformalLemma (c : ConstantInfo) : CoreM InformalLemma",
+     "sorry": false
+    },
+    {
+     "name": "Informal.constantInfoToInformalDefinition",
+     "kind": "def",
+     "line": 46,
+     "doc": "Takes a `ConstantInfo` corresponding to a `InformalDefinition` and returns\nthe corresponding `InformalDefinition`.",
+     "statement": "unsafe def constantInfoToInformalDefinition (c : ConstantInfo) : CoreM InformalDefinition",
+     "sorry": false
+    },
+    {
+     "name": "Informal.getTag",
+     "kind": "def",
+     "line": 53,
+     "doc": "Gets the tag associated with an informal definition or lemma.",
+     "statement": "unsafe def getTag (c : ConstantInfo) : CoreM String",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.noInformalLemmas",
+     "kind": "def",
+     "line": 68,
+     "doc": "The number of informal lemmas in Physlib.",
+     "statement": "def noInformalLemmas : CoreM Nat",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.noInformalDefs",
+     "kind": "def",
+     "line": 74,
+     "doc": "The number of informal definitions in Physlib.",
+     "statement": "def noInformalDefs : CoreM Nat",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.AllInformal",
+     "kind": "def",
+     "line": 80,
+     "doc": "All informal results.",
+     "statement": "def AllInformal : CoreM (Array ConstantInfo)",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/Meta/Informal/SemiFormal.lean",
+   "module": "Physlib.Meta.Informal.SemiFormal",
+   "title": "Semiformal results",
+   "doc": "Semiformal results sit in between informal and formal results. There type or proposition is\ndefined, by the proof or definition is not.\n\n## Note\n\nThe code here is modified from the `Util.ProofWanted` module of the Batteries library.\nReleased under the Apache 2.0 license, copyright 2023 Lean FRO, authored by\nDavid Thrane Christiansen.",
+   "copyright": "2025 Joseph Tooby-Smith",
+   "sections": [],
+   "declarations": [
+    {
+     "name": "WantedInfo",
+     "kind": "structure",
+     "line": 31,
+     "doc": "The information from a `TODO ...` command.",
+     "statement": "structure WantedInfo where\n  /-- The content of the note. -/\n  content : String\n  /-- Name of result. -/\n  name : Name\n  /-- The file name where the note came from. -/\n  fileName : Name\n  /-- The line from where the note came from. -/\n  line : Nat\n  /-- The tag of the TODO item -/\n  tag : String",
+     "sorry": false
+    },
+    {
+     "name": "«semiformal_result»",
+     "kind": "def",
+     "line": 61,
+     "doc": "A semiformal result is either a\n- definition in which the type is given but not the definition.\n- proof in which the proposition is given but not the proof.\nSemiformal results cannot be used in further code. They are essentially\nforgot about after made.\n\nWith minor modification they act in a similar way to `proof_wanted`, however\nthey appear in Physlib's TODO list and must be tagged accordingly.\nThey must also always have a doc-string.",
+     "statement": "meta def «semiformal_result»",
+     "sorry": false
+    },
+    {
+     "name": "elabLemmaWanted",
+     "kind": "def",
+     "line": 66,
+     "doc": "The elaborator for semiformal results.",
+     "statement": "meta def elabLemmaWanted : CommandElab",
+     "sorry": false
+    },
+    {
+     "name": "helper",
+     "kind": "axiom",
+     "line": 90,
+     "doc": "",
+     "statement": "axiom helper {α : Sort _} : α\n$doc:docComment noncomputable def $name $args* : $res",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/Meta/Linters/DefsWithUnderscore.lean",
+   "module": "Physlib.Meta.Linters.DefsWithUnderscore",
+   "title": "Physlib exemptions for the `defsWithUnderscore` linter",
+   "doc": "Mathlib's `defsWithUnderscore` environment linter reports every definition whose name contains\nan underscore. Four families of Physlib declaration trip it even though the offending name is\neither generated by Lean or belongs to a declaration that is not user-facing:\n\n* `informal_definition` and `informal_lemma` elaborate to `def`s of type `InformalDefinition`\n  and `InformalLemma`. They stand in for results that are not yet formalised, and they carry the\n  snake_case name of the statement rather than of a definition.\n* `syntax`, `notation` and `macro` declarations, together with the parenthesizer and formatter\n  that Lean generates beside them. Mathlib exempts the names Lean invents for these, but Physlib\n  names many of them explicitly.\n* Anonymous instances whose generated name carries the suffix Lean appends to keep it unique\n  across projects, `_physlib` for a declaration in `Physlib` and so on. Mathlib exempts its own\n  `_mathlib` suffix in the same way.\n* Anonymous instances that Lean disambiguates with a trailing number. Mathlib exempts `_1` and\n  `_2` but not higher numbers such as `_3` and `_4`.\n\n`withDefsWithUnderscoreExemptions` wraps the linter so that these pass; every other declaration\nis reported as before.",
+   "copyright": "2026 Robert Sneiderman",
+   "sections": [],
+   "declarations": [
+    {
+     "name": "Physlib.parserDeclTypes",
+     "kind": "def",
+     "line": 48,
+     "doc": "The types of the declarations that `syntax`, `notation` and `macro` commands produce, along\nwith the pretty-printer declarations generated beside them. These hold parser data rather than\na mathematical definition, so their names are exempt from the naming convention.",
+     "statement": "def parserDeclTypes : List Name",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.projectSuffix",
+     "kind": "def",
+     "line": 56,
+     "doc": "The suffix Lean appends to the generated name of an anonymous instance to keep it unique\nacross projects, for example `_physlib` for a declaration of the `Physlib` project. This\nmirrors `Lean.Elab.Command.NameGen.mkBaseNameWithSuffix`.",
+     "statement": "def projectSuffix (env : Environment) (declName : Name) : Option String",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.hasNumericSuffix",
+     "kind": "def",
+     "line": 62,
+     "doc": "Whether the final component of `declName` ends in an underscore followed by a number, the\nsuffix Lean adds when the name it generated for an anonymous instance is already taken.",
+     "statement": "def hasNumericSuffix (declName : Name) : Bool",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.defsWithUnderscoreExempt",
+     "kind": "def",
+     "line": 67,
+     "doc": "Whether the `defsWithUnderscore` linter should pass over `declName`.",
+     "statement": "def defsWithUnderscoreExempt (declName : Name) : CoreM Bool",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.withDefsWithUnderscoreExemptions",
+     "kind": "def",
+     "line": 79,
+     "doc": "`withDefsWithUnderscoreExemptions linter` behaves like `linter` except that it passes over\nthe declarations selected by `defsWithUnderscoreExempt`.",
+     "statement": "def withDefsWithUnderscoreExemptions (linter : NamedLinter) : NamedLinter",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/Meta/Linters/Pseudo.lean",
+   "module": "Physlib.Meta.Linters.Pseudo",
+   "title": "The `pseudo` attribute",
+   "doc": "The attribute marking declarations which depend on the `Lean.ofReduceBool` axiom.\n\n## i. Overview\n\nThis module defines the attribute `pseudo`, marking declarations that depend on the\n`Lean.ofReduceBool` axiom, and the environment extension `pseudoExtension` recording them.\nThe check that the attribute is correctly applied is `Physlib.pseudoTest` in\n`Physlib.Meta.Pseudo`.\n\n## ii. Key results\n\n- `pseudoExtension` : The environment extension recording the declarations attributed `pseudo`.\n- `Pseudo_attr` : The `pseudo` attribute.\n\n## iii. Table of contents\n\n- A. The `pseudo` environment extension\n- B. The `pseudo` attribute\n\n## iv. References\n\n* None.",
+   "copyright": "2025 Joseph Tooby-Smith",
+   "sections": [
+    {
+     "line": 42,
+     "text": "## A. The `pseudo` environment extension"
+    },
+    {
+     "line": 67,
+     "text": "## B. The `pseudo` attribute"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "PseudoInfo",
+     "kind": "structure",
+     "line": 49,
+     "doc": "The information stored for a declaration marked with `pseudo`.",
+     "statement": "structure PseudoInfo where\n  /-- Name of result. -/\n  name : Name",
+     "sorry": false
+    },
+    {
+     "name": "addPseudofulEntry",
+     "kind": "def",
+     "line": 63,
+     "doc": "Adds an entry to `pseudoExtension`.",
+     "statement": "def addPseudofulEntry {m : Type → Type} [MonadEnv m]\n    (declName : Name) : m Unit",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/Meta/Notes/Basic.lean",
+   "module": "Physlib.Meta.Notes.Basic",
+   "title": "",
+   "doc": "## Underlying structure for notes\n\nThis file contains the necessary structures that must be imported into a file\nfor it to be turned into a Lean note.\n\nIt allows for the\n- `note ...` command to be used to add notes to a Lean file\n- `note_attr` attribute to be used to display formally verified commands within a note.\n- `note_attr_informal` attribute to be used to display informal commands within a note.\n\nOther results relating to notes are in other files.",
+   "copyright": "2024 Joseph Tooby-Smith",
+   "sections": [
+    {
+     "line": 71,
+     "text": "## Note attribute"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "Physlib.NoteInfo",
+     "kind": "structure",
+     "line": 32,
+     "doc": "The information from a `note ...` command. To be used in a note file",
+     "statement": "structure NoteInfo where\n  /-- The content of the note. -/\n  content : String\n  /-- The file name where the note came from. -/\n  fileName : Name\n  /-- The line from where the note came from. -/\n  line : Nat",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.elabNote",
+     "kind": "def",
+     "line": 53,
+     "doc": "Elaborator for the `note ...` command",
+     "statement": "meta def elabNote : Lean.Elab.Command.CommandElab",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/Meta/Notes/HTMLNote.lean",
+   "module": "Physlib.Meta.Notes.HTMLNote",
+   "title": "",
+   "doc": "## Turns a declaration into a html note structure.",
+   "copyright": "2024 Joseph Tooby-Smith",
+   "sections": [],
+   "declarations": [
+    {
+     "name": "Physlib.HTMLNote",
+     "kind": "structure",
+     "line": 25,
+     "doc": "A `HTMLNote` is a structure containing the html information from\nindividual contributions (commands, informal commands, note ..) etc. to a note file.",
+     "statement": "structure HTMLNote where\n  /-- The name of the file the contribution came from. -/\n  fileName : Name\n  /-- The html contribution of the content. -/\n  content : String\n  /-- The line in the file where the contribution came from. -/\n  line : Nat",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.HTMLNote.ofNodeInfo",
+     "kind": "def",
+     "line": 34,
+     "doc": "Converts a note info into a HTMLNote.",
+     "statement": "def HTMLNote.ofNodeInfo (ni : NoteInfo) : HTMLNote",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.HTMLNote.ofFormal",
+     "kind": "def",
+     "line": 38,
+     "doc": "An formal definition or lemma to html for a note.",
+     "statement": "def HTMLNote.ofFormal (name : Name) : CoreM HTMLNote",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.HTMLNote.ofInformal",
+     "kind": "def",
+     "line": 51,
+     "doc": "An informal definition or lemma to html for a note.",
+     "statement": "unsafe def HTMLNote.ofInformal (name : Name) : CoreM HTMLNote",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/Meta/Notes/NoteFile.lean",
+   "module": "Physlib.Meta.Notes.NoteFile",
+   "title": "Note file",
+   "doc": "A note file is a structure which contains the information to go into a note.",
+   "copyright": "2024 Joseph Tooby-Smith",
+   "sections": [],
+   "declarations": [
+    {
+     "name": "Physlib.NoteFile",
+     "kind": "structure",
+     "line": 23,
+     "doc": "A note consists of a title and a list of Lean files which make up the note.",
+     "statement": "structure NoteFile where\n  /-- The overall title of the note. -/\n  title : String\n  /-- The abstract of the note. -/\n  abstract : String\n  /-- A list of authors. -/\n  authors : List String\n  /-- The files making up the note in the order in which they should appear. -/\n  files : List Name",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.NoteFile.imports",
+     "kind": "def",
+     "line": 38,
+     "doc": "All imports associated to a note.",
+     "statement": "def imports : Array Import",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/Meta/Notes/ToHTML.lean",
+   "module": "Physlib.Meta.Notes.ToHTML",
+   "title": "",
+   "doc": "## Turns a declaration into a html note structure.",
+   "copyright": "2024 Joseph Tooby-Smith",
+   "sections": [],
+   "declarations": [
+    {
+     "name": "Physlib.NoteFile.sortLE",
+     "kind": "def",
+     "line": 26,
+     "doc": "Sorts `NoteInfo`'s by file name then by line number.",
+     "statement": "meta def sortLE (ni1 ni2 : HTMLNote) : Bool",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.NoteFile.getNodeInfo",
+     "kind": "def",
+     "line": 33,
+     "doc": "Returns a sorted list of NodeInfos for a file system.",
+     "statement": "meta unsafe def getNodeInfo : CoreM (List HTMLNote)",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.NoteFile.codeBlockHTML",
+     "kind": "def",
+     "line": 45,
+     "doc": "The HTML code needed to have syntax highlighting.",
+     "statement": "meta def codeBlockHTML : String",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.NoteFile.informalDefStyle",
+     "kind": "def",
+     "line": 73,
+     "doc": "The html styles for informal definitions.",
+     "statement": "meta def informalDefStyle : String",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.NoteFile.codeButton",
+     "kind": "def",
+     "line": 108,
+     "doc": "The html styles for code button.",
+     "statement": "meta def codeButton : String",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.NoteFile.mathJaxScript",
+     "kind": "def",
+     "line": 135,
+     "doc": "HTML allowing the use of mathjax.",
+     "statement": "meta def mathJaxScript : String",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.NoteFile.headerHTML",
+     "kind": "def",
+     "line": 151,
+     "doc": "The header to the html code.",
+     "statement": "meta def headerHTML : String",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.NoteFile.titleHTML",
+     "kind": "def",
+     "line": 162,
+     "doc": "The html code corresponding to the title, abstract and authors.",
+     "statement": "meta def titleHTML : String",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.NoteFile.leanNote",
+     "kind": "def",
+     "line": 168,
+     "doc": "The html code corresponding to a note about Lean and its use.",
+     "statement": "meta def leanNote : String",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.NoteFile.footerHTML",
+     "kind": "def",
+     "line": 184,
+     "doc": "The footer of the html file.",
+     "statement": "meta def footerHTML : String",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.NoteFile.toHTMLString",
+     "kind": "def",
+     "line": 189,
+     "doc": "The html file associated to a NoteFile string.",
+     "statement": "meta unsafe def toHTMLString : MetaM String",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/Meta/Pseudo.lean",
+   "module": "Physlib.Meta.Pseudo",
+   "title": "Meta results regarding the `pseudo` attribution",
+   "doc": "## i. Overview\n\nThe purpose of this module is to collect all results which depend on the `Lean.ofReduceBool`\naxiom, and check that they are exactly the results attributed `pseudo`.\n\n## ii. Key results\n\n- `pseudoTest` : A test, over given libraries, that the results attributed `pseudo` are exactly\n  those depending on the `Lean.ofReduceBool` axiom.\n\n## iii. Table of contents\n\n- A. Collecting results depending on `Lean.ofReduceBool`\n  - A.1. The state information to be collected\n  - A.2. The monad for collecting names\n  - A.3. The collection function\n  - A.4. Given an array updating the state with all names depending on axioms\n  - A.5. Given an array getting all names depending on axioms\n  - A.6. Getting all names depending on axioms from all user defined constants\n- B. Collecting all names attributed `pseudo`\n- C. Testing that the `pseudo` attribution is correctly applied\n\n## iv. References\n\n* Adapted from `Lean.Util.CollectAxioms`, copyright (c) 2020 Microsoft\n  Corporation, authored by Leonardo de Moura.",
+   "copyright": "2025 Joseph Tooby-Smith",
+   "sections": [
+    {
+     "line": 49,
+     "text": "## A. Collecting results depending on `Lean.ofReduceBool`"
+    },
+    {
+     "line": 57,
+     "text": "### A.1. The state information to be collected"
+    },
+    {
+     "line": 71,
+     "text": "### A.2. The monad for collecting names"
+    },
+    {
+     "line": 81,
+     "text": "### A.3. The collection function"
+    },
+    {
+     "line": 121,
+     "text": "### A.4. Given an array updating the state with all names depending on axioms"
+    },
+    {
+     "line": 134,
+     "text": "### A.5. Given an array getting all names depending on axioms"
+    },
+    {
+     "line": 147,
+     "text": "### A.6. Getting all names depending on axioms from all user defined constants"
+    },
+    {
+     "line": 167,
+     "text": "## B. Collecting all names attributed `pseudo`"
+    },
+    {
+     "line": 179,
+     "text": "## C. Testing that the `pseudo` attribution is correctly applied"
+    }
+   ],
+   "declarations": [
+    {
+     "name": "Physlib.CollectOfReduceBool.State",
+     "kind": "structure",
+     "line": 65,
+     "doc": "A structure used for collecting names of results dependent on the\n`Lean.ofReduceBool` axiom.",
+     "statement": "structure State where\n  /-- The names which have already been visited as part of the state. -/\n  visited : NameSet := {}\n  /-- The names which depend on the `Lean.ofReduceBool` axiom. -/\n  containsOfReduceBool : NameSet := {}",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CollectOfReduceBool.M",
+     "kind": "abbrev",
+     "line": 79,
+     "doc": "A monad used for collecting names of results dependent on the\n`Lean.ofReduceBool` axiom.",
+     "statement": "abbrev M",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CollectOfReduceBool.collect",
+     "kind": "def",
+     "line": 89,
+     "doc": "Given a `c : Name` updating the monad `M` based on which results which `c` uses\ndepend on the `Lean.ofReduceBool` axiom.",
+     "statement": "partial def collect (c : Name) (parents : NameSet) : M Unit",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.CollectOfReduceBool.allOfReduceBool",
+     "kind": "def",
+     "line": 129,
+     "doc": "Given a `c : Array Name` updating the monad `M` based on which results\ndepend on the `Lean.ofReduceBool` axiom.",
+     "statement": "partial def allOfReduceBool (c : Array Name) : M Unit",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.collectOfReduceBool",
+     "kind": "def",
+     "line": 142,
+     "doc": "Given a `c : Array Name` the names of all results used to defined\nthe results in `c` with the `Lean.ofReduceBool` axiom.",
+     "statement": "def collectOfReduceBool (c : Array Name) : CoreM (Array Name)",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.libraryImports",
+     "kind": "def",
+     "line": 154,
+     "doc": "The files of the libraries with root modules `libs`, as the imports of those roots.",
+     "statement": "def libraryImports (libs : Array Name) : IO (Array Import)",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.libraryUserConsts",
+     "kind": "def",
+     "line": 159,
+     "doc": "The user defined constants of the libraries with root modules `libs`.",
+     "statement": "def libraryUserConsts (libs : Array Name) : CoreM (Array ConstantInfo)",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.allWithOfReduceBool",
+     "kind": "def",
+     "line": 164,
+     "doc": "The user defined constants of the libraries `libs` depending on the\n`Lean.ofReduceBool` axiom.",
+     "statement": "def allWithOfReduceBool (libs : Array Name) : CoreM (Array Name)",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.allPseudoAttributed",
+     "kind": "def",
+     "line": 174,
+     "doc": "All names which are attributed `pseudo`.",
+     "statement": "unsafe def allPseudoAttributed : CoreM (Array Name)",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.pseudoTest",
+     "kind": "def",
+     "line": 188,
+     "doc": "Checks, over the libraries with root modules `libs`, that the results attributed `pseudo`\nare exactly those depending on the `Lean.ofReduceBool` axiom. Returns whether the test\npassed.",
+     "statement": "unsafe def pseudoTest (libs : Array Name) : MetaM Bool",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/Meta/Remark/Basic.lean",
+   "module": "Physlib.Meta.Remark.Basic",
+   "title": "",
+   "doc": "## Underlying structure for remarks",
+   "copyright": "2024 Joseph Tooby-Smith",
+   "sections": [],
+   "declarations": [
+    {
+     "name": "Physlib.RemarkInfo",
+     "kind": "structure",
+     "line": 21,
+     "doc": "The information from a `remark ...` command. To be used in a note file",
+     "statement": "structure RemarkInfo where\n  /-- The content of the remark. -/\n  content : String\n  /-- The file name where the remark came from. -/\n  fileName : Name\n  /-- The line from where the remark came from. -/\n  line : Nat\n  /-- The name of the remark. -/\n  name : Name\n  /-- The namespace of the remark. -/\n  nameSpace : Name",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.elabRemark",
+     "kind": "def",
+     "line": 46,
+     "doc": "Elaborator for the `note ...` command",
+     "statement": "meta def elabRemark : Elab.Command.CommandElab",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/Meta/Remark/Properties.lean",
+   "module": "Physlib.Meta.Remark.Properties",
+   "title": "",
+   "doc": "## Underlying structure for remarks",
+   "copyright": "2024 Joseph Tooby-Smith",
+   "sections": [],
+   "declarations": [
+    {
+     "name": "Physlib.allRemarkInfo",
+     "kind": "def",
+     "line": 23,
+     "doc": "All remarks in the environment.",
+     "statement": "meta def allRemarkInfo : m (Array RemarkInfo)",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.RemarkInfo.toFullName",
+     "kind": "def",
+     "line": 28,
+     "doc": "The full name of a remark (name and namespace).",
+     "statement": "meta def RemarkInfo.toFullName (r : RemarkInfo) : Name",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.RemarkInfo.IsRemark",
+     "kind": "def",
+     "line": 35,
+     "doc": "A Bool which is true if a name corresponds to a remark.",
+     "statement": "meta def RemarkInfo.IsRemark (n : Name) : m Bool",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.RemarkInfo.getRemarkInfo",
+     "kind": "def",
+     "line": 41,
+     "doc": "Gets the remarkInfo from a name corresponding to a remark..",
+     "statement": "meta def RemarkInfo.getRemarkInfo (n : Name) : m RemarkInfo",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/Meta/TODO/Basic.lean",
+   "module": "Physlib.Meta.TODO.Basic",
+   "title": "Basic underlying structure for TODOs.",
+   "doc": "",
+   "copyright": "2024 Joseph Tooby-Smith",
+   "sections": [],
+   "declarations": [
+    {
+     "name": "Physlib.todoInfo",
+     "kind": "structure",
+     "line": 22,
+     "doc": "The information from a `TODO ...` command.",
+     "statement": "structure todoInfo where\n  /-- The content of the note. -/\n  content : String\n  /-- The file name where the note came from. -/\n  fileName : Name\n  /-- The line from where the note came from. -/\n  line : Nat\n  /-- The tag of the TODO item -/\n  tag : String",
+     "sorry": false
+    },
+    {
+     "name": "Physlib.elabTODO",
+     "kind": "def",
+     "line": 45,
+     "doc": "Elaborator for the `TODO ...` command",
+     "statement": "meta def elabTODO : Elab.Command.CommandElab",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 0
+  },
+  {
+   "file": "Physlib/Meta/TODO/Global.lean",
+   "module": "Physlib.Meta.TODO.Global",
+   "title": "Global TODO items",
+   "doc": "This module contains global TODO items, which are not specific to any particular module,\nbut are still important for the development of Physlib.",
+   "copyright": "2026 Joseph Tooby-Smith",
+   "sections": [],
+   "declarations": [],
+   "private": 0,
+   "aliases": 0,
+   "informal": 3
+  },
+  {
+   "file": "Physlib/Meta/TransverseTactics.lean",
+   "module": "Physlib.Meta.TransverseTactics",
+   "title": "",
+   "doc": "This file enables us to transverse tactics and test for conditions.\n\n## References\n\nThe content of this file is based on the following sources (released under the Apache 2.0\nlicense), with modifications made to the original content here.\n\n* https://github.com/dwrensha/tryAtEachStep/blob/main/tryAtEachStep.lean.\n  [ref: github_tryateachstep]\n* https://github.com/lean-dojo/LeanDojo/blob/main/src/lean_dojo/data_extraction/ExtractData.lean.\n  [ref: github_leandojo_extractdata]\n* See also: https://leanprover.zulipchat.com/#narrow/stream/270676-lean4/topic/Memory.20increase.20in.20loops.2E.",
+   "copyright": "2024 Joseph Tooby-Smith",
+   "sections": [],
+   "declarations": [
+    {
+     "name": "transverseTactics.processCommands",
+     "kind": "def",
+     "line": 34,
+     "doc": "Takes in a file and returns the infostates of commands and the corresponding\nenvironment before the command is processed.",
+     "statement": "partial def processCommands : Frontend.FrontendM (List (Environment × InfoState))",
+     "sorry": false
+    },
+    {
+     "name": "transverseTactics.visitInfo",
+     "kind": "def",
+     "line": 59,
+     "doc": "Tests if a given `info` is `ofTacticInfo` and if so runs `visitTacticInfo`.",
+     "statement": "def visitInfo (file : FilePath) (env : Environment)\n    (visitTacticInfo : FilePath → ContextInfo → TacticInfo → MetaM Unit) (ci : ContextInfo)\n    (info : Info) (acc : List (IO Unit)) : List (IO Unit)",
+     "sorry": false
+    },
+    {
+     "name": "transverseTactics.traverseForest",
+     "kind": "def",
+     "line": 72,
+     "doc": "Applies `visitInfo` to each node of the info trees.",
+     "statement": "def traverseForest (file : FilePath)\n    (visitTacticInfo : FilePath → ContextInfo → TacticInfo → MetaM Unit)\n    (steps : List (Environment × InfoState)) : List (IO Unit)",
+     "sorry": false
+    },
+    {
+     "name": "transverseTactics",
+     "kind": "def",
+     "line": 87,
+     "doc": "Applies `visitTacticInfo` to each tactic in a file.",
+     "statement": "unsafe def transverseTactics (file : FilePath)\n  (visitTacticInfo : FilePath → ContextInfo → TacticInfo → MetaM Unit) : IO Unit",
+     "sorry": false
+    }
+   ],
+   "private": 0,
+   "aliases": 0,
+   "informal": 1
+  }
+ ]
+}

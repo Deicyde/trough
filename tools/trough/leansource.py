@@ -9,7 +9,8 @@ declaration counts only when its command names it on the keyword's line, names
 Lean makes itself (constructors, fields, `ext` lemmas, an anonymous instance's
 name) are not read, a `private` declaration counts as not declared (Lean renames
 it), and nothing after `#exit` is read. An indented `end` inside a declaration
-is part of it, as a notation may use the word. One risk remains: a declaration
+is part of it, as a notation may use the word, and `end section` closes a scope
+and opens a section, as Lean reads it. One risk remains: a declaration
 written inside a syntax quotation, as a macro may build one, reads as the file's
 own.
 
@@ -53,7 +54,7 @@ def declaration_pattern(kinds: dict[str, str]) -> re.Pattern:
 DECLARATION = declaration_pattern(KINDS)
 DECLARATION_WANTED = declaration_pattern(KINDS | WANTED_KINDS)
 NAMESPACE = re.compile(rf"^[ \t]*namespace[ \t]+(?P<name>{NAME})[ \t]*$")
-SECTION = re.compile(rf"^[ \t]*(?:(?:noncomputable|public)[ \t]+)*section(?:[ \t]+(?P<name>{NAME}))?[ \t]*$")
+SECTION = re.compile(rf"^[ \t]*(?:(?:noncomputable|public|meta)[ \t]+)*section(?:[ \t]+(?P<name>{NAME}))?[ \t]*$")
 MUTUAL = re.compile(r"^[ \t]*mutual[ \t]*$")
 END = re.compile(rf"^[ \t]*end(?:[ \t]+(?P<name>{NAME}))?[ \t]*$")
 # A line at column 0 that starts a command ends the declaration before it.
@@ -252,7 +253,12 @@ def declarations(text: str, relaxed: bool = False, wanted: bool = False) -> list
             continue
         if (match := END.match(line)) and not (open_decl and line[:1].isspace()):
             close()
-            if match["name"]:
+            if match["name"] == "section":
+                # `section` is a keyword, not a name, so Lean reads `end section` as `end`, then a new `section`.
+                if not scopes or scopes.pop()[1]:
+                    return None
+                scopes.append(("section", ""))
+            elif match["name"]:
                 # `end A.B` closes a section named A.B, or namespaces A and B.
                 if scopes and scopes[-1] == ("section", match["name"]):
                     scopes.pop()
