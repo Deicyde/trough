@@ -1,7 +1,7 @@
 ---
 declaration: section
 origin: cited
-lean: OAI.CKSSourceExterior.area_controlled_end_replacement, OAI.CKSMain.schwarzschild_equality_examples
+lean: OAI.CKSMain.schwarzschild_equality_examples, OAI.CKSSourceExterior.area_controlled_end_replacement
 statement: formalized
 ---
 

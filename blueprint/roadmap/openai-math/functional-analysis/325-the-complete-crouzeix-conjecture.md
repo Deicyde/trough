@@ -1,7 +1,7 @@
 ---
 declaration: section
 origin: cited
-lean: OAI.DirectCrouzeix.complete_crouzeix, OAI.DirectCrouzeix.uniform_sharpness, OAI.CompleteCrouzeix.main, OAI.StructuralCrouzeixReference.challenge, OAI.CrouzeixHilbert.hilbert, OAI.HilbertCrouzeix.numericalClosure_geometry, OAI.HilbertCrouzeix.exists_finite_compression, OAI.HilbertCrouzeix.rational_denominator_isUnit
+lean: OAI.DirectCrouzeix.complete_crouzeix, OAI.DirectCrouzeix.uniform_sharpness, OAI.CompleteCrouzeix.main, OAI.StructuralCrouzeixReference.challenge, OAI.CrouzeixHilbert.hilbert, OAI.HilbertCrouzeix.rational_denominator_isUnit, OAI.HilbertCrouzeix.zeroConclusion, OAI.HilbertCrouzeix.numericalClosure_geometry
 statement: formalized
 ---
 

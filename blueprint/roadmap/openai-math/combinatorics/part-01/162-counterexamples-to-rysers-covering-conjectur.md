@@ -1,7 +1,7 @@
 ---
 declaration: section
 origin: cited
-lean: OAI.Balanced.main_result, OAI.RyserCoveringCounterexample.exists_prime_eventually_counterexampleRank, OAI.RyserOdd.eventualOddFailures_and_infinite
+lean: OAI.RyserCoveringCounterexample.exists_prime_eventually_counterexampleRank, OAI.RyserOdd.eventualOddFailures_and_infinite, OAI.Balanced.main_result
 statement: formalized
 ---
 

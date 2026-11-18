@@ -1,7 +1,7 @@
 ---
 declaration: section
 origin: cited
-lean: OAI.MatchingFPRAS.thm_main, OAI.MatchingEntropy.entropy_main, OAI.BinaryMatching.deterministic_approximate_counting, OAI.LoopMatching.fullEndpoint, OAI.MatchingEntropyBounds.Refined.pointwise_entropy, OAI.TriangleFace198.triangle_expansion_face
+lean: OAI.MatchingFPRAS.thm_main, OAI.MatchingEntropy.entropy_main, OAI.BinaryMatching.deterministic_approximate_counting, OAI.LoopMatching.fullEndpoint, OAI.TriangleFace198.triangle_expansion_face, OAI.MatchingEntropyBounds.Refined.pointwise_entropy
 statement: formalized
 ---
 
